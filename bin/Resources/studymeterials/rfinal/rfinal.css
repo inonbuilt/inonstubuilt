@@ -3,7 +3,7 @@ div.fullm {
     display: block;
     box-sizing: border-box;
     width: 100%;
-    max-width: 350px; /* reasonable max on larger screens */
+    max-width: 280px; /* reasonable max on larger screens */
     min-width: 140px; /* keep content readable */
     height: auto;
     max-height: 60vh; /* avoid overflowing the viewport */
@@ -269,4 +269,5 @@ button.fullm a {
 @media (max-width: 420px){
   .cell-no{ flex-basis: 44px; height: 44px; font-size: 0.95rem; }
   .cell-view{ flex-basis: auto; }
+
 }
