@@ -1,0 +1,102 @@
+/* Body and general styling */
+body {
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #1f2937;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 32px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+/* Books section */
+.books {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 20px;
+    border: 2px solid #1e3a8a;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #1e3a8a;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.books:hover {
+    background-color: #2563eb;
+}
+
+.books a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: 500;
+}
+
+/* Case scenarios section */
+.case {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 20px;
+    border: 2px solid #71cd16;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: #71cd16;
+    transition: background-color 0.3s ease;
+}
+
+.case:hover {
+    background-color: #16ae11;
+}
+
+.case a {
+    text-decoration: none;
+    color: #1e3a8a;
+    display: block;
+    font-weight: 500;
+}
+
+
+/* Ammendments CSS */
+.amendments {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 20px;
+    border: 2px solid #ff710b;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: #ff710b;
+    transition: background-color 0.3s ease;
+}
+
+.amendments:hover {
+    background-color: #d26218;
+}
+
+.amendments a {
+    text-decoration: none;
+    color: #1e3a8a;
+    display: block;
+    font-weight: 500;
+}
