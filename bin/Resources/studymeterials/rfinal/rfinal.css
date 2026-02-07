@@ -1,179 +1,45 @@
-/* Scoped styles: apply to DIVs and BUTTONs only. Avoid affecting tables or other elements. */
+/* ---------- FULL MATERIAL BOX ---------- */
+
 div.fullm {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
   max-width: 280px;
-  /* reasonable max on larger screens */
   min-width: 140px;
-  /* keep content readable */
-  height: auto;
-  max-height: 60vh;
-  /* avoid overflowing the viewport */
-  overflow: auto;
-  /* left-aligned on larger screens; becomes full-width on small screens */
   margin: 1rem 0 1rem 1rem;
   padding: 0.75rem 1rem;
   background-color: #2c54ab;
   color: #f9fafb;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.4;
-  transition: box-shadow 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
 }
 
-div.fullm:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
-  transform: translateY(-2px);
-}
-
-@media (max-width: 600px) {
-  div.fullm {
-    max-width: calc(100% - 2rem);
-    margin: 1rem;
-    padding: 0.75rem 0.9rem;
-    border-radius: 6px;
-  }
-
-  /* Make the button span full width on small screens for easier tapping */
-  div.fullm button,
-  button.fullm {
-    width: 100%;
-    box-sizing: border-box;
-  }
-}
-
-/* Allow styling buttons that either have the `fullm` class or are placed inside a `div.fullm`. */
-div.fullm button,
-button.fullm {
-  display: inline-block;
-  padding: 0.5rem 0.9rem;
-  background-color: #1E3A8A;
-  color: #FFFFFF;
+div.fullm button {
+  margin-top: 0.6rem;
+  width: 100%;
+  padding: 0.5rem;
+  background: #1E3A8A;
   border: none;
   border-radius: 6px;
+  color: white;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: 600;
-  font-size: 0.95rem;
-  line-height: 1;
-  transition: background-color 0.15s ease, transform 0.08s ease, box-shadow 0.12s ease;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset;
 }
 
-div.fullm button:hover,
-button.fullm:hover {
-  background-color: #162F6D;
-  transform: translateY(-1px);
+div.fullm button:hover {
+  background:#162F6D;
 }
 
-div.fullm button:active,
-button.fullm:active {
-  transform: translateY(0);
-  box-shadow: none;
-}
+/* ---------- GRID LAYOUT ---------- */
 
-div.fullm button:focus,
-button.fullm:focus {
-  outline: 2px solid rgba(59, 130, 246, 0.6);
-  outline-offset: 2px;
-}
-
-div.fullm button[disabled],
-div.fullm button:disabled,
-button.fullm[disabled],
-button.fullm:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
-}
-
-/* Ensure links inside buttons look correct if present */
-div.fullm button a,
-button.fullm a {
-  color: inherit;
-  text-decoration: none;
-  display: inline-block;
-}
-
-/* Professional, readable table styles (responsive) */
-.table-responsive {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  margin: 1rem 0;
-}
-
-.table-responsive table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 720px;
-  /* allows horizontal scroll on small viewports */
-  background: #ffffff;
-  color: #0f1724;
-  box-shadow: 0 1px 0 rgba(16, 24, 40, 0.03);
-}
-
-.table-responsive caption {
-  caption-side: top;
-  text-align: left;
-  padding: 0.5rem 0.25rem;
-  font-weight: 600;
-  color: #111827;
-}
-
-.table-responsive thead th {
-  position: sticky;
-  top: 0;
-  background: #1E3A8A;
-  /* match button color for consistent palette */
-  color: #FFFFFF;
-  padding: 0.75rem 1rem;
-  text-align: left;
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.table-responsive tbody td {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid #e6e9ef;
-  vertical-align: top;
-  font-size: 0.95rem;
-}
-
-.table-responsive tbody tr:nth-child(odd) {
-  background: #fbfdff;
-}
-
-.table-responsive tbody tr:hover {
-  background: #eef6ff;
-}
-
-@media (max-width: 720px) {
-  .table-responsive table {
-    min-width: 600px;
-  }
-
-  .table-responsive thead th,
-  .table-responsive tbody td {
-    padding: 0.6rem 0.75rem;
-  }
-}
-
-@media (max-width: 420px) {
-  .table-responsive table {
-    min-width: 520px;
-  }
-}
-
-/* Card-style list: each row becomes a block card with graphical chapter number */
 .table-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 1rem;
-  width: 100%;
-  background: transparent;
 }
+
+/* ---------- CARD ROW ---------- */
 
 .table-row {
   display: flex;
@@ -182,158 +48,127 @@ button.fullm a {
   padding: 1rem 1.25rem;
   background: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(16, 24, 40, 0.06);
-  border: 1px solid rgba(15, 23, 42, 0.04);
-  transition: transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 180ms ease;
-  transform-origin: center;
-  will-change: transform;
+  box-shadow: 0 4px 14px rgba(16,24,40,0.06);
+  border: 1px solid rgba(15,23,42,0.04);
+  transition: 0.2s;
 }
 
 .table-row:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 12px 30px rgba(16, 24, 40, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(16,24,40,0.12);
 }
 
-.table-head {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.6rem 1rem;
-  background: transparent;
-  margin-bottom: 0.5rem;
-}
-
-.cell {
-  padding: 0;
-  border: none;
-}
+/* ---------- CHAPTER NUMBER ---------- */
 
 .cell-no {
-  flex: 0 0 48px;
+  width: 48px;
   height: 48px;
-  background: linear-gradient(180deg, #1E3A8A 0%, #16306f 100%);
-  color: #ffffff;
+  min-width: 48px;
+  min-height: 48px;
+  flex-shrink: 0;
+
   border-radius: 50%;
-  display: inline-flex;
+  background: linear-gradient(180deg,#1E3A8A,#16306f);
+  color: white;
+  font-weight: 800;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  font-size: 1rem;
-  box-shadow: 0 6px 18px rgba(30, 58, 138, 0.12);
 }
+
+/* ---------- CHAPTER NAME ---------- */
 
 .cell-name {
-  flex: 1 1 auto;
-  font-size: 1.12rem;
-  font-weight: 800;
+  flex: 1;
+  font-size: 1.1rem;
+  font-weight: 700;
   color: black;
-  /* prominent readable red */
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
-.cell-name+.cell-name-sub {
-  display: block;
-  margin-top: 0.25rem;
-  font-weight: 400;
-  color: #475569;
-  font-size: 0.92rem;
-}
+/* ---------- VIEW BUTTON ---------- */
 
 .cell-view {
-  flex: 0 0 96px;
-  text-align: right;
+  flex: 0 0 auto;
 }
+
+/* Anchor button */
 
 .cell-view a {
   display: inline-block;
   padding: 0.45rem 0.9rem;
-  background: transparent;
-  color: #1E3A8A;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 700;
-  border: 1px solid rgba(30, 58, 138, 0.12);
+  color: #1E3A8A;
+  border: 1px solid rgba(30,58,138,0.15);
+  background: transparent;
+  transition: 0.2s;
 }
 
 .cell-view a:hover {
-  background: #1E3A8A;
-  color: #fff;
-  border-color: #16306f;
+  background:#1E3A8A;
+  color:white;
 }
+
+/* ---------- SELECT BUTTON (MATCH VIEW) ---------- */
 
 .cell-view select {
   padding: 0.45rem 0.9rem;
-  background: transparent;
-  color: #1E3A8A;
   border-radius: 8px;
-  text-decoration: none;
   font-weight: 700;
-  border: 1px solid rgba(30, 58, 138, 0.12);
+  color: #1E3A8A;
+  border: 1px solid rgba(30,58,138,0.15);
+  background: transparent;
   cursor: pointer;
-  font-size: 0.95rem;
+  appearance: none;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cell-view select:hover {
-  background: #1E3A8A;
-  color: #fff;
-  border-color: #16306f;
+  background:#1E3A8A;
+  color:white;
 }
 
-.cell-view select:focus {
-  outline: 2px solid rgba(59, 130, 246, 0.6);
-  outline-offset: 2px;
-}
+/* ---------- MOBILE ---------- */
 
-/* Separator line under title for emphasis */
-.table-row .cell-name::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background: #e6e9ef;
-  margin: 0.6rem 0 0;
-}
-
-@media (max-width: 1024px) {
-  .table-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width:1024px){
+  .table-grid{
+    grid-template-columns: repeat(2,1fr);
   }
 }
 
-@media (max-width: 680px) {
-  .table-grid {
-    grid-template-columns: 1fr;
+@media (max-width:680px){
+
+  .table-grid{
+    grid-template-columns:1fr;
   }
 
-  .table-row {
+  .table-row{
     flex-direction: column;
-    align-items: flex-start;
+    align-items:flex-start;
+    gap:0.6rem;
   }
 
-  .cell-no {
-    margin-bottom: 0.5rem;
+  .cell-view{
+    width:100%;
   }
 
-  .cell-view {
-    width: 100%;
-    text-align: left;
-    margin-top: 0.5rem;
-  }
-
-  /* Disable zoom/translate on small screens to avoid layout shifts */
-  .table-row:hover {
-    transform: none;
-    box-shadow: 0 4px 14px rgba(16, 24, 40, 0.06);
-  }
 }
 
-@media (max-width: 420px) {
-  .cell-no {
-    flex-basis: 44px;
-    height: 44px;
-    font-size: 0.95rem;
+/* Extra small phone */
+
+@media (max-width:420px){
+
+  .cell-no{
+    width:42px;
+    height:42px;
+    min-width:42px;
+    min-height:42px;
+    font-size:0.9rem;
   }
 
-  .cell-view {
-    flex-basis: auto;
-  }
 }
