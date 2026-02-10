@@ -1,0 +1,141 @@
+/* ===============================
+   Design System (Refined Contrast)
+================================ */
+:root {
+    --bg: #f4f6fb;
+    --card: #ffffff;              /* PURE WHITE */
+    --text-main: #0f172a;          /* DARKER TEXT */
+    --text-muted: #475569;
+    --accent: #2563eb;
+    --accent-soft: #eef2ff;
+    --radius: 14px;
+    --shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+    --shadow-hover: 0 10px 26px rgba(15, 23, 42, 0.12);
+    --transition: all 0.25s ease;
+}
+
+/* ===============================
+   Reset
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text-main);
+    padding: 32px 24px 60px;
+}
+
+/* ===============================
+   Headings
+================================ */
+h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+h2 {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-bottom: 28px;
+}
+
+/* ===============================
+   Grid Container
+================================ */
+.table-responsive {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.table-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+/* ===============================
+   Chapter Card
+================================ */
+.table-row {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.table-row:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* ===============================
+   Chapter Number
+================================ */
+.cell-no {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 4px 10px;
+    border-radius: 20px;
+    width: fit-content;
+    letter-spacing: 0.3px;
+}
+
+/* ===============================
+   Chapter Name (CLEAR & READABLE)
+================================ */
+.cell-name {
+    font-size: 0.98rem;
+    font-weight: 600;              /* STRONGER */
+    color: var(--text-main);       /* DARK */
+    line-height: 1.5;
+}
+
+/* ===============================
+   View Button
+================================ */
+.cell-view {
+    margin-top: auto;
+}
+
+.cell-view a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    transition: var(--transition);
+}
+
+.cell-view a:hover {
+    background: var(--accent);
+    color: #ffffff;
+}
+
+/* ===============================
+   Mobile
+================================ */
+@media (max-width: 640px) {
+    .table-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    .cell-name {
+        font-size: 0.95rem;
+    }
+}
