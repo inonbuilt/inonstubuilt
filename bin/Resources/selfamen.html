@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amendments</title>
+    <link rel="icon" href="../../fevicol.png">
+    <style>
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* Body */
+body{
+font-family: Arial, Helvetica, sans-serif;
+background: rgb(155, 192, 248);
+padding:40px 20px;
+}
+
+/* Heading */
+h1{
+text-align:center;
+margin-bottom:40px;
+font-weight:600;
+}
+
+/* Cards Wrapper */
+.cards{
+display:flex;
+flex-wrap:wrap;           /* allows wrapping */
+justify-content:center;   /* center cards */
+gap:25px;
+}
+
+/* Card */
+.card{
+flex: 1 1 300px;          /* responsive width */
+max-width:320px;
+padding:20px;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
+border-radius:18px;
+border:1px solid rgba(255,255,255,0.3);
+box-shadow:0 8px 24px rgba(0,0,0,0.15);
+transition:0.3s;
+display:flex;
+flex-direction:column;
+}
+
+/* Hover */
+.card:hover{
+transform:translateY(-8px);
+background:rgba(255,255,255,0.25);
+}
+
+/* Date */
+.date{
+font-weight:700;
+margin-bottom:10px;
+font-size:14px;
+}
+
+/* Title */
+.title{
+font-size:16px;
+font-weight:600;
+margin-bottom:20px;
+}
+
+/* Button */
+.card a{
+display:inline-block;
+padding:8px 16px;
+background:rgba(255,255,255,0.3);
+border-radius:8px;
+text-decoration:none;
+color:#000;
+border:1px solid rgba(255,255,255,0.4);
+font-weight:500;
+text-align:center;
+transition:0.3s;
+}
+
+.card a:hover{
+background:rgba(255,255,255,0.5);
+transform:scale(1.05);
+}
+
+/* -------------------------
+   Tablet (768px and below)
+--------------------------*/
+@media (max-width: 992px){
+body{
+padding:30px 15px;
+}
+
+.card{
+flex: 1 1 45%;   /* 2 cards per row */
+max-width:45%;
+}
+}
+
+/* -------------------------
+   Mobile (480px and below)
+--------------------------*/
+@media (max-width: 600px){
+.card{
+flex: 1 1 100%;  /* 1 card per row */
+max-width:100%;
+}
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Self Paced Online Modules</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="date">June 2025</div>
+            <div class="title">SET A: Corporate and Economic Law</div>
+            <div>
+                <a href="https://resource.cdn.icai.org/83835bos67607.pdf" target="_blank">View</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="date">June 2025</div>
+            <div class="title">SET C: The Insolvency and Bankruptcy Code, 2016</div>
+            <div>
+                <a href="https://resource.cdn.icai.org/85381bos-aps192-setc-relevent.pdf" target="_blank">View</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
