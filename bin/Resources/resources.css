@@ -55,13 +55,13 @@ h2 {
     display: inline-block;
     margin: 20px;
     padding: 15px 20px;
-    background-color: #048de7;
-    border: 2px solid ;
+    background-color: #0f598a;
+    border: 2px solid #0f598a;
     width: 200px;
     text-align: center;
     font-size: 18px;
     border-radius: 6px;
-    background-color: #048de7;
+    background-color: #0f598a;
     transition: background-color 0.3s ease;
 }
 
@@ -82,17 +82,17 @@ h2 {
     display: inline-block;
     margin: 20px;
     padding: 15px 20px;
-    border: 2px solid #ff710b;
+    border: 2px solid #3e94a3;
     width: 200px;
     text-align: center;
     font-size: 18px;
     border-radius: 6px;
-    background-color: #ff710b;
+    background-color: #3e94a3;
     transition: background-color 0.3s ease;
 }
 
 .amendments:hover {
-    background-color: #d26218;
+    background-color: #1b6f7e;
 }
 
 .amendments a {
