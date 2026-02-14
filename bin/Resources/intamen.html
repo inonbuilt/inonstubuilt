@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intermediate Amendments</title>
+<link rel="icon" href="../../fevicol.png">
+
+<style>
+
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* Body */
+body{
+font-family: Arial, Helvetica, sans-serif;
+background: rgb(155, 192, 248);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+padding:40px;
+}
+
+/* Glass Container */
+.container{
+width:100%;
+max-width:900px;
+backdrop-filter:blur(15px);
+background:rgba(255,255,255,0.15);
+border-radius:18px;
+padding:35px;
+box-shadow:0 8px 32px rgba(0,0,0,0.25);
+border:1px solid rgba(255,255,255,0.3);
+color:#000;
+}
+
+h1{
+text-align:center;
+margin-bottom:30px;
+}
+
+/* Header Row */
+.header-row{
+display:grid;
+grid-template-columns: 1fr 1fr 120px;
+padding:10px 0;
+font-weight:600;
+border-bottom:1px solid rgba(0,0,0,0.15);
+}
+
+/* Attempt Section */
+.attempt{
+text-align:center;
+font-weight:600;
+margin:20px 0 10px;
+padding:8px;
+background:rgba(255,255,255,0.35);
+border-radius:8px;
+}
+
+/* Data Row */
+.row{
+display:grid;
+grid-template-columns: 1fr 1fr 120px;
+align-items:center;
+padding:10px 0;
+border-bottom:1px solid rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.row:hover{
+background:rgba(255,255,255,0.25);
+border-radius:8px;
+}
+
+/* Link Column */
+.row div:last-child{
+text-align:center;
+}
+
+/* Glass Button */
+.view-btn{
+display:inline-block;
+padding:6px 14px;
+background:rgba(255,255,255,0.25);
+border-radius:8px;
+text-decoration:none;
+color:#000;
+border:1px solid rgba(255,255,255,0.4);
+transition:0.3s;
+}
+
+.view-btn:hover{
+background:rgba(255,255,255,0.45);
+transform:scale(1.05);
+}
+
+@media(max-width:600px){
+.header-row,
+.row{
+grid-template-columns: 1fr;
+gap:6px;
+}
+
+.row div:last-child{
+text-align:left;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Intermediate Amendments</h1>
+
+<div class="header-row">
+<div>Type</div>
+<div>Paper</div>
+<div>Link</div>
+</div>
+
+<div class="attempt">MAY 2026</div>
+
+<div class="row">
+<div>Amendment</div>
+<div>Law</div>
+<div><a href="https://resource.cdn.icai.org/90715bos-aps4085.pdf" target="_blank" class="view-btn">View</a></div>
+</div>
+
+<div class="row">
+<div>Statutory Update</div>
+<div>GST</div>
+<div><a href="https://resource.cdn.icai.org/90106bos-aps3737.pdf" target="_blank" class="view-btn">View</a></div>
+</div>
+
+<div class="attempt">JAN 2026</div>
+
+<div class="row">
+<div>Amendment</div>
+<div>Law</div>
+<div><a href="https://resource.cdn.icai.org/88993bos-aps2830.pdf" target="_blank" class="view-btn">View</a></div>
+</div>
+
+<div class="row">
+<div>Statutory Update</div>
+<div>GST</div>
+<div><a href="https://resource.cdn.icai.org/87641bos-aps2131.pdf" target="_blank" class="view-btn">View</a></div>
+</div>
+
+</div>
+
+</body>
+</html>
