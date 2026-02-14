@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amendments</title>
+    <link rel="icon" href="../../fevicol.png">
+
+    <style>
+
+        /* Background Gradient */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 40px;
+            min-height: 100vh;
+            background: rgb(155, 192, 248);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        /* Glass Container */
+        .container {
+            width: 800px;
+            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgb(0, 0, 0);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        /* Header Row */
+        .table-header {
+            display: grid;
+            grid-template-columns: 80px 1fr 120px;
+            padding: 12px;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+
+        /* Table Rows */
+        .table-row {
+            display: grid;
+            grid-template-columns: 80px 1fr 120px;
+            padding: 14px 12px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+            transition: 0.3s;
+        }
+
+        .table-row:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+        }
+
+        /* Glass Button */
+        .view-btn {
+            display: inline-block;
+            padding: 8px 18px;
+            background: rgba(255, 255, 255, 0.2);
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .view-btn:hover {
+            background: rgba(255, 255, 255, 0.35);
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Amendments JAN 2026</h1>
+
+        <div class="table-header">
+            <div>S NO</div>
+            <div>Title</div>
+            <div>Link</div>
+        </div>
+
+        <div class="table-row">
+            <div>1</div>
+            <div>Judicial Update</div>
+            <div>
+                <a href="https://resource.cdn.icai.org/90669bos-aps4077-ju-may2026.pdf" class="view-btn" target="_blank">View</a>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div>2</div>
+            <div>Paper 4 Direct Tax</div>
+            <div>
+                <a href="https://resource.cdn.icai.org/86345bos-aps947-statutory-fnl-sep2025.pdf" class="view-btn" target="_blank">View</a>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div>3</div>
+            <div>Paper 5 Indirect Tax</div>
+            <div>
+                <a href="https://resource.cdn.icai.org/88620bos-final-statutory-update-jan2025.pdf" class="view-btn" target="_blank">View</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
