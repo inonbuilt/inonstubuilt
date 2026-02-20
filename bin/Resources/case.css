@@ -1,4 +1,6 @@
-/* Reset */
+/* ========================= */
+/* 🔄 Reset */
+/* ========================= */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,9 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Background */
+/* ========================= */
+/* 🌌 Background */
+/* ========================= */
 body {
     min-height: 100vh;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -16,7 +20,9 @@ body {
     padding: 40px 20px;
 }
 
-/* Heading */
+/* ========================= */
+/* 🏷 Heading */
+/* ========================= */
 h1 {
     color: #ffffff;
     margin-bottom: 40px;
@@ -25,12 +31,14 @@ h1 {
     letter-spacing: 1px;
 }
 
-/* Container Style */
+/* ========================= */
+/* 📦 Card Container */
+/* ========================= */
 body > div {
     width: 100%;
     max-width: 900px;
     display: grid;
-    grid-template-columns: 80px 1fr 120px;
+    grid-template-columns: 80px 1fr 160px;
     align-items: center;
     gap: 15px;
     margin-bottom: 20px;
@@ -53,7 +61,9 @@ body > div:hover {
     background: rgba(255, 255, 255, 0.15);
 }
 
-/* Number Column */
+/* ========================= */
+/* 🔢 Number Column */
+/* ========================= */
 body > div div:nth-child(1) {
     font-size: 1.4rem;
     font-weight: bold;
@@ -61,13 +71,17 @@ body > div div:nth-child(1) {
     text-align: center;
 }
 
-/* Subject Column */
+/* ========================= */
+/* 📘 Subject Column */
+/* ========================= */
 body > div div:nth-child(2) {
     font-size: 1.1rem;
     color: #ffffff;
 }
 
-/* Button */
+/* ========================= */
+/* 🔘 Button (Anchor) */
+/* ========================= */
 a {
     text-decoration: none;
     background: linear-gradient(45deg, #00eaff, #00b3ff);
@@ -78,6 +92,7 @@ a {
     transition: 0.3s ease;
     display: inline-block;
     text-align: center;
+    cursor: pointer;
 }
 
 a:hover {
@@ -86,9 +101,36 @@ a:hover {
 }
 
 /* ========================= */
+/* 🔽 Styled Select Dropdown */
+/* ========================= */
+select {
+    background: linear-gradient(45deg, #00eaff, #00b3ff);
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select:hover {
+    background: linear-gradient(45deg, #00b3ff, #00eaff);
+    transform: scale(1.05);
+}
+
+select:focus {
+    outline: none;
+}
+
+/* ========================= */
 /* 📱 Mobile Responsive */
 /* ========================= */
-
 @media (max-width: 768px) {
 
     h1 {
@@ -110,7 +152,8 @@ a:hover {
         font-size: 1rem;
     }
 
-    a {
+    a,
+    select {
         width: 100%;
         padding: 10px;
     }
