@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcium Notes</title>
-
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./fevicol.png" type="image/png">
+
+    <!-- 3D Model Viewer -->
+    <script type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
@@ -23,16 +27,29 @@
 
     <div class="page">
 
-        <!-- Logo -->
+        <!-- 3D LOGO -->
         <div class="logo">
-            <img src="./LOGO PCt1 .png" alt="Calcium Notes Logo">
+            
+                <model-viewer 
+                    class="floating-logo"
+                    src="./logo.glb"
+                    auto-rotate
+                    auto-rotate-delay="0"
+                    rotation-per-second="20deg"
+                    camera-controls
+                    disable-zoom
+                    exposure="1.4"
+                    shadow-intensity="1.5"
+                    style="width: 650px; height: 400px;">
+                </model-viewer>
+            
         </div>
 
-        <!-- Navigation -->
-        <div class="nav-buttons">
-            <a href="./bin/exam/exam.html" class="nav-btn">EXAM</a>
-            <a href="./bin/notes/notes.html" class="nav-btn">NOTES</a>
-            <a href="./bin/Resources/resources.html" class="nav-btn">RESOURCES</a>
+        <!-- BUTTONS -->
+        <div class="button">
+            <a href="./bin/exam/exam.html">EXAM</a>
+            <a href="./bin/notes/notes.html">NOTES</a>
+            <a href="./bin/Resources/resources.html">RESOURCES</a>
         </div>
 
         <!-- Notice -->
