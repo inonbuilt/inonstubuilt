@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instructions</title>
+    <title>Exam Instructions</title>
     <link rel="icon" href="../../../../fevicol.png">
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
@@ -13,9 +13,200 @@
     gtag('js', new Date());
     gtag('config', 'G-YYJ8R39EXM');
     </script>
+    <style>
+        :root {
+            --neon-blue: #00d2ff;
+            --danger-red: #ff4d4d;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* MODAL OVERLAY */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(15px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        /* MODAL CONTENT */
+        .modal-content {
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid var(--neon-blue);
+            padding: 40px;
+            border-radius: 30px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 0 50px rgba(0, 210, 255, 0.2);
+            text-align: center;
+        }
+
+        h3 {
+            color: var(--neon-blue);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .instructions-body {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .inst-section h4 {
+            color: var(--neon-blue);
+            margin: 15px 0 10px;
+            border-left: 4px solid var(--neon-blue);
+            padding-left: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            color: #cbd5e1;
+        }
+
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.95rem;
+        }
+
+        /* THE BIG RED WARNING */
+        .warning-box {
+            background: rgba(255, 77, 77, 0.1);
+            border: 2px solid var(--danger-red);
+            padding: 15px;
+            border-radius: 12px;
+            margin: 20px 0;
+            text-align: center;
+            animation: pulse 2s infinite;
+        }
+
+        .warning-text {
+            color: var(--danger-red);
+            font-size: 1.2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0px rgba(255, 77, 77, 0); }
+            50% { box-shadow: 0 0 20px rgba(255, 77, 77, 0.4); }
+            100% { box-shadow: 0 0 0px rgba(255, 77, 77, 0); }
+        }
+
+        /* BUTTONS */
+        .btn-group { display: flex; gap: 15px; }
+        
+        .btn {
+            flex: 1;
+            padding: 15px;
+            border-radius: 12px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn-back { background: rgba(255,255,255,0.1); color: white; }
+        
+        .btn-start { 
+            background: linear-gradient(90deg, #3b82f6, #00d2ff); 
+            color: white;
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-start:hover { transform: scale(1.02); filter: brightness(1.1); }
+    </style>
 </head>
 <body>
-    <h1>SET A Computer based Exam</h1>
-    <a href="./exama.html">Start the exam</a>
+
+    <div id="instruction-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3 id="selected-set-title">SET SELECTION</h3>
+            
+            <div class="instructions-body">
+                <div class="warning-box">
+                    <span class="warning-text">⚠️ DO NOT REFRESH (F5) OR CLOSE THIS TAB</span>
+                    <p style="color: #ffbaba; font-size: 0.8rem; margin-top: 5px;">Your exam progress will be permanently lost.</p>
+                </div>
+
+                <div class="inst-section">
+                    <h4>📋 Exam Pattern</h4>
+                    <ul>
+                        <li><strong>Questions:</strong> 50 Multiple Choice Questions (MCQs).</li>
+                        <li><strong>Total Marks:</strong> 100 Marks (2 marks per question).</li>
+                        <li><strong>Time Limit:</strong> 180 Minutes (3 Hours).</li>
+                    </ul>
+                </div>
+
+                <div class="inst-section">
+                    <h4>🎮 Navigation</h4>
+                    <ul>
+                        <li><span style="color:#22c55e">●</span> Answered | <span style="color:#ef4444">●</span> Not Visited | <span style="color:#a855f7">●</span> Review</li>
+                        <li>The exam will <strong>Auto-Submit</strong> when the timer hits zero.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-back" onclick="closeModal()">Back</button>
+                <button class="btn btn-start" onclick="startExam()">Accept & Start Exam</button>
+            </div>
+        </div>
+    </div>
+<script>
+    // 1. BACK BUTTON: Closes the modal and returns to the selection wheel
+    function closeModal() {
+        // Option A: If this is a separate HTML file, go back to the index
+        window.location.href = "../espom.html"; 
+        
+        // Option B: If this is a modal inside the same page, hide it
+        const modal = document.getElementById('instruction-modal');
+        if (modal) modal.style.display = 'none';
+    }
+
+    // 2. START BUTTON: Redirects to the actual exam
+    function startExam() {
+        // Get the title to know which subject was picked
+        const subjectTitle = document.getElementById('selected-set-title').innerText;
+        
+        // Trigger Fullscreen (Optional but professional for exams)
+        if (document.documentElement.requestFullscreen) {
+            document.documentElement.requestFullscreen();
+        }
+
+        // Redirect to exam.html and pass the subject name in the URL
+        // This allows exam.html to load the correct Question Bank
+        const targetPage = "./exama.html"; 
+        window.location.href = targetPage + "?subject=" + encodeURIComponent(subjectTitle);
+    }
+
+    // 3. SECURING THE PAGE (Optional)
+    // Prevents the "Back" button on the browser from messing up the session
+    window.history.pushState(null, null, window.location.href);
+    window.onpopstate = function () {
+        window.history.go(1);
+    };
+</script>
 </body>
 </html>
