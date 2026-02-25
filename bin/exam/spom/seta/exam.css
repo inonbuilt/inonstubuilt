@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+/* HEADER */
+.header {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* TIMER */
+#timer {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background: black;
+    color: #00ffcc;
+    padding: 15px;
+    letter-spacing: 3px;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left { flex: 3; }
+.right { flex: 1; }
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* CASE BOX */
+.case-box {
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* OPTIONS */
+.option {
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #f9f9f9;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: #e6f0ff;
+}
+
+.option.selected {
+    background: #2563eb;
+    color: white;
+    border-color: #1e40af;
+}
+
+/* BUTTONS */
+.btn-area {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.primary { background: #2563eb; color: white; }
+.warning { background: #f59e0b; color: white; }
+.success { background: #16a34a; color: white; }
+
+/* GRID */
+.q-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.q-grid button {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: #e5e7eb; /* default grey */
+}
+
+/* Red = Visited not answered */
+.q-grid button.not-attempted {
+    background: #ef4444;
+    color: white;
+}
+
+/* Green = Answered */
+.q-grid button.answered {
+    background: #22c55e;
+    color: white;
+}
+
+/* Yellow = Review */
+.q-grid button.review {
+    background: #facc15;
+    color: black;
+}
+
+/* Blue border = Current */
+.q-grid button.current {
+    border: 2px solid #2563eb;
+}
+
+/* RESULT */
+#resultArea {
+    padding: 30px;
+}
+
+.reviewBox {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}
