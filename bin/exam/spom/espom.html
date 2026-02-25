@@ -140,14 +140,7 @@
     border-color: #3b82f6;
     background: rgba(59, 130, 246, 0.2);
 }
-@media (max-width: 480px) {
-    .card:nth-child(1) { transform: rotateY(0deg) translateZ(250px); }
-    .card:nth-child(2) { transform: rotateY(90deg) translateZ(250px); }
-    .card:nth-child(3) { transform: rotateY(180deg) translateZ(250px); }
-    .card:nth-child(4) { transform: rotateY(270deg) translateZ(250px); }
-    
-    .fixed-header h1 { font-size: 2rem; letter-spacing: 5px; }
-}
+
     </style>
     
 </head>
@@ -203,55 +196,65 @@
     </div>
 
     <script>
-        // Configuration
-const carousel = document.getElementById('carousel');
-let currentRotation = 0;
-let lastTouchX = 0;
-const sensitivity = 0.5; // Adjust this to make it faster/slower
 
-// 1. SCROLL HANDLER (Desktop)
+// Use 'passive: true' for better scroll performance
+
 window.addEventListener('scroll', () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollFraction = scrollTop / maxScroll;
-    
-    // Sync currentRotation with scroll for consistency
-    currentRotation = scrollFraction * 360;
-    applyRotation();
-}, { passive: true });
 
-// 2. TOUCH HANDLERS (Mobile Swipe)
-window.addEventListener('touchstart', (e) => {
-    lastTouchX = e.touches[0].clientX;
-}, { passive: true });
+const carousel = document.getElementById('carousel');
 
-window.addEventListener('touchmove', (e) => {
-    const touchX = e.touches[0].clientX;
-    const deltaX = touchX - lastTouchX;
-    
-    // Update rotation based on swipe distance
-    currentRotation -= deltaX * sensitivity;
-    
-    applyRotation();
-    lastTouchX = touchX;
-}, { passive: true });
 
-// Helper to update the CSS
-function applyRotation() {
-    if (carousel) {
-        carousel.style.transform = `rotateY(${-currentRotation}deg)`;
-    }
+// Get current scroll position
+
+const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+
+// Get total scrollable height
+
+const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+
+// Calculate percentage
+
+const scrollFraction = scrollTop / maxScroll;
+
+
+// Rotate 360 degrees
+
+const rotation = scrollFraction * 360;
+
+
+// Apply rotation
+
+if (carousel) {
+
+carousel.style.transform = `rotateY(${-rotation}deg)`;
+
 }
 
-// Keep your existing openModal function
+}, { passive: true });
+
 function openModal(setName, subjectName = "") {
-    const titleElement = document.getElementById('selected-set-title');
-    if(titleElement) {
-        titleElement.innerText = subjectName ? `SET ${setName}: ${subjectName}` : `SET ${setName}: Instructions`;
-    }
-    const modal = document.getElementById('instruction-modal');
-    if(modal) modal.style.display = 'flex';
+
+const titleElement = document.getElementById('selected-set-title');
+
+
+if(subjectName) {
+
+titleElement.innerText = `SET ${setName}: ${subjectName}`;
+
+} else {
+
+titleElement.innerText = `SET ${setName}: Instructions`;
+
 }
-    </script>
+
+
+document.getElementById('instruction-modal').style.display = 'flex';
+
+}
+
+</script>
 </body>
+
 </html>
