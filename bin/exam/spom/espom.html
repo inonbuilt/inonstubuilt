@@ -26,7 +26,8 @@
             background: #0f172a; 
             color: white;
             /* This height is CRITICAL for scrolling to work */
-            height: 500vh; 
+            height: 500vh;
+            touch-action: none;   /* 🔥 important */
             overflow-x: hidden;
         }
 
@@ -159,7 +160,7 @@
                 <span class="exam-label">PRE-FINAL</span>
                 <span class="exam-label">click to write Exam</span>
             </a>
-            <a href="./setb/instructions.html" class="card">
+            <a href="" class="card">
                 <span class="set-label">B</span>
                 <span class="exam-label">PRE-FINAL</span>
                 <span class="exam-label">click to Write Exam</span>
@@ -224,7 +225,7 @@ window.addEventListener('scroll', () => {
 
 
 /* =========================
-   MOBILE - HORIZONTAL SWIPE
+   MOBILE - HORIZONTAL SWIPE (FIXED)
 ========================= */
 
 let startX = 0;
@@ -232,28 +233,29 @@ let isSwiping = false;
 
 carousel.addEventListener('touchstart', (e) => {
     if (window.innerWidth > 1024) return;
+
     startX = e.touches[0].clientX;
     isSwiping = true;
-});
+}, { passive: false });
 
 carousel.addEventListener('touchmove', (e) => {
     if (!isSwiping || window.innerWidth > 1024) return;
 
+    e.preventDefault(); // 🔥 prevents page scroll
+
     let currentX = e.touches[0].clientX;
     let diff = currentX - startX;
 
-    // Adjust sensitivity here
-    currentRotation += diff * 0.4;
+    currentRotation += diff * 0.5; // adjust sensitivity
 
     carousel.style.transform = `rotateY(${currentRotation}deg)`;
 
     startX = currentX;
-});
+}, { passive: false });
 
 carousel.addEventListener('touchend', () => {
     isSwiping = false;
 });
-
 
 /* =========================
    YOUR EXISTING FUNCTION
