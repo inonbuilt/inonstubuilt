@@ -51,6 +51,22 @@
             <a href="./bin/notes/notes.html">NOTES</a>
             <a href="./bin/Resources/resources.html">RESOURCES</a>
         </div>
+        <!-- UPdates Banner -->
+        <div class="update-banner" id="updateBanner">
+
+    <div class="update-left">
+        <span class="update-badge">NEW</span>
+        <span class="update-message" id="updateMessage">
+            SPOM Set C & D Updates Released!
+        </span>
+    </div>
+
+    <div class="update-actions">
+        <a href="#" id="updateLink" class="update-link">View Update</a>
+        <span class="update-close" onclick="closeUpdate()">✕</span>
+    </div>
+
+</div>
 
         <!-- Notice -->
         <div class="notice">
@@ -117,6 +133,43 @@
         Contact Us <br>
         EMAIL: <a href="mailto:calciumnotes@gmail.com">calciumnotes@gmail.com</a>
     </footer>
+    <script>
+const banner = document.getElementById("updateBanner");
+const message = document.getElementById("updateMessage");
+const link = document.getElementById("updateLink");
+
+/* ===== YOUR UPDATES ===== */
+const updates = [
+    {
+        text: "SPOM Set A & B Prefinal",
+        url: "./bin/exam/spom/espom.html"
+    }
+];
+
+let currentIndex = 0;
+
+/* Show banner */
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        banner.classList.add("show");
+        showUpdate();
+        setInterval(showUpdate, 3000); // 🔥 Infinite rotation
+    }, 500);
+});
+
+/* Change update */
+function showUpdate(){
+    message.textContent = updates[currentIndex].text;
+    link.href = updates[currentIndex].url;
+
+    currentIndex = (currentIndex + 1) % updates.length;
+}
+
+/* Close manually */
+function closeUpdate(){
+    banner.classList.remove("show");
+}
+</script>
 
 </body>
 </html>
