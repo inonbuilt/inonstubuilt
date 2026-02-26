@@ -27,6 +27,7 @@
             color: white;
             /* This height is CRITICAL for scrolling to work */
             height: 500vh;
+            overflow-x: hidden;
         }
 
         /* FIXED TITLES */
@@ -139,24 +140,39 @@
     border-color: #3b82f6;
     background: rgba(59, 130, 246, 0.2);
 }
-
 /* =========================
-   MOBILE HORIZONTAL SCROLL
+   ENHANCED EFFECTS
 ========================= */
 
-@media (max-width: 1024px) {
+/* Smooth animation */
+.carousel {
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
 
-    body {
-        height: 100vh;
-        width: 500vw;          /* horizontal scroll space */
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
+/* Blur & depth effect */
+.card {
+    transition: transform 0.6s ease, filter 0.6s ease, opacity 0.6s ease;
+}
 
-    .scene-wrapper {
-        position: fixed;
-    }
+/* Scroll indicator */
+.scroll-indicator {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 4px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+}
 
+.scroll-progress {
+    height: 100%;
+    width: 0%;
+    background: #3b82f6;
+    transition: width 0.2s ease;
 }
 
     </style>
@@ -177,7 +193,7 @@
                 <span class="exam-label">PRE-FINAL</span>
                 <span class="exam-label">click to write Exam</span>
             </a>
-            <a href="" class="card">
+            <a href="./setb/instructions.html" class="card">
                 <span class="set-label">B</span>
                 <span class="exam-label">PRE-FINAL</span>
                 <span class="exam-label">click to Write Exam</span>
@@ -214,51 +230,103 @@
         </div>
     </div>
 
-    <script>
+    
+<div class="scroll-indicator">
+    <div class="scroll-progress" id="scrollProgress"></div>
+</div>
+<script>
+const carousel = document.getElementById("carousel");
+const cards = document.querySelectorAll(".card");
+const progressBar = document.getElementById("scrollProgress");
 
-const carousel = document.getElementById('carousel');
+const totalCards = cards.length;
+const angleStep = 360 / totalCards;
+
 let currentRotation = 0;
+let targetRotation = 0;
+let velocity = 0;
+let isScrolling = false;
 
 /* =========================
-   DESKTOP - VERTICAL SCROLL
+   SCROLL HANDLER
 ========================= */
 
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
 
-    if (window.innerWidth > 1024) {
+    const scrollTop = window.pageYOffset;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const fraction = scrollTop / maxScroll;
+    targetRotation = fraction * 360;
 
-        const scrollFraction = scrollTop / maxScroll;
-        currentRotation = scrollFraction * 360;
+    progressBar.style.width = (fraction * 100) + "%";
 
-        carousel.style.transform = `rotateY(${-currentRotation}deg)`;
-    }
-
+    velocity = (targetRotation - currentRotation) * 0.15;
+    isScrolling = true;
 });
-
 
 /* =========================
-   MOBILE - HORIZONTAL SCROLL
+   ANIMATION LOOP
 ========================= */
 
-window.addEventListener('scroll', () => {
+function animate(){
 
-    if (window.innerWidth <= 1024) {
+    if(isScrolling){
+        currentRotation += velocity;
+        velocity *= 0.92;
 
-        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-        const maxScrollX = document.documentElement.scrollWidth - window.innerWidth;
-
-        const scrollFraction = scrollLeft / maxScrollX;
-        currentRotation = scrollFraction * 360;
-
-        carousel.style.transform = `rotateY(${-currentRotation}deg)`;
+        if(Math.abs(velocity) < 0.05){
+            snapToCard();
+            isScrolling = false;
+        }
     }
 
-});
+    carousel.style.transform = `rotateY(${-currentRotation}deg)`;
+    updateCards();
 
+    requestAnimationFrame(animate);
+}
+
+animate();
+
+/* =========================
+   SNAP TO NEAREST CARD
+========================= */
+
+function snapToCard(){
+    const snapIndex = Math.round(currentRotation / angleStep);
+    currentRotation = snapIndex * angleStep;
+}
+
+/* =========================
+   BLUR + CENTER FOCUS
+========================= */
+
+function updateCards(){
+
+    const normalized = ((currentRotation % 360) + 360) % 360;
+
+    cards.forEach((card, index)=>{
+
+        const cardAngle = index * angleStep;
+        const diff = Math.abs(cardAngle - normalized);
+
+        if(diff < angleStep/2){
+            card.style.filter = "blur(0px)";
+            card.style.opacity = "1";
+            card.style.transform = 
+                `rotateY(${cardAngle}deg) translateZ(350px) scale(1.1)`;
+        } else {
+            card.style.filter = "blur(3px)";
+            card.style.opacity = "0.5";
+            card.style.transform = 
+                `rotateY(${cardAngle}deg) translateZ(350px) scale(1)`;
+        }
+
+    });
+}
 </script>
+
 </body>
 
 </html>
