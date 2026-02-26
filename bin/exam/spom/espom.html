@@ -15,157 +15,141 @@
     gtag('config', 'G-YYJ8R39EXM');
     </script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 
-        body {
-            background: #0f172a; 
-            color: white;
-            /* This height is CRITICAL for scrolling to work */
-            height: 500vh;
-            overflow-x: hidden;
-        }
-
-        /* FIXED TITLES */
-        .fixed-header {
-            position: fixed;
-            top: 60px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            z-index: 1000;
-            width: 100%;
-            pointer-events: none;
-        }
-
-        .fixed-header h1 {
-            font-size: 3.5rem;
-            font-weight: 900;
-            letter-spacing: 12px;
-            margin: 0;
-            text-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
-        }
-
-        .fixed-header h2 {
-            font-size: 0.9rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            color: #3b82f6;
-            margin-top: 10px;
-        }
-
-        /* 3D SCENE */
-        .scene-wrapper {
-            position: fixed; /* Keeps the "camera" still while we scroll the body */
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            perspective: 2000px;
-        }
-
-        .carousel {
-            position: relative;
-            width: 160px;
-            height: 220px;
-            transform-style: preserve-3d;
-            /* Transition set to 0.1s for a responsive, "heavy" feel */
-            transition: transform 0.1s linear;
-        }
-
-        .card {
-            position: absolute;
-            width: 160px;
-            height: 220px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            color: white;
-            backface-visibility: visible; 
-            transition: border-color 0.3s, background 0.3s, box-shadow 0.3s;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-
-        /* Circular Positioning */
-        .card:nth-child(1) { transform: rotateY(0deg) translateZ(350px); }
-        .card:nth-child(2) { transform: rotateY(90deg) translateZ(350px); }
-        .card:nth-child(3) { transform: rotateY(180deg) translateZ(350px); }
-        .card:nth-child(4) { transform: rotateY(270deg) translateZ(350px); }
-
-        .card:hover {
-            border-color: #3b82f6;
-            background: rgba(59, 130, 246, 0.2);
-            box-shadow: 0 0 40px rgba(59, 130, 246, 0.5);
-            z-index: 50;
-        }
-
-        .set-label { font-size: 4rem; font-weight: 900; }
-        .exam-label { font-size: 0.6rem; letter-spacing: 2px; color: #94a3b8; font-weight: bold; }
-
-        .set-dropdown {
-    margin-top: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+body {
+    background: #0f172a;
     color: white;
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 0.7rem;
-    width: 85%;
-    outline: none;
-    cursor: pointer;
-    backdrop-filter: blur(10px);
+    min-height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-.set-dropdown option {
-    background: #1e293b; /* Dark background for the list items */
-    color: white;
+/* HEADER */
+.fixed-header {
+    position: sticky;
+    top: 0;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #0f172a 80%, transparent);
+    z-index: 1000;
 }
 
-/* Ensure the dropdown card doesn't flip away too fast when interacting */
-.dropdown-card:focus-within {
-    border-color: #3b82f6;
-    background: rgba(59, 130, 246, 0.2);
+.fixed-header h1 {
+    font-size: 2.6rem;
+    font-weight: 900;
+    letter-spacing: 6px;
 }
-/* =========================
-   ENHANCED EFFECTS
-========================= */
 
-/* Smooth animation */
+.fixed-header h2 {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #3b82f6;
+    margin-top: 8px;
+}
+
+/* STACK LAYOUT */
+.scene-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 120px;
+    perspective: 1000px;
+}
+
 .carousel {
-    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    width: 100%;
+    max-width: 360px; /* smaller */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    transform-style: preserve-3d;
 }
 
-/* Blur & depth effect */
+/* CARD STYLE (SMALLER) */
 .card {
-    transition: transform 0.6s ease, filter 0.6s ease, opacity 0.6s ease;
+    width: 100%;
+    height: 150px; /* reduced */
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: 
+        transform 0.4s ease,
+        opacity 0.6s ease,
+        box-shadow 0.4s ease,
+        filter 0.4s ease;
+    opacity: 0;
+    transform: translateY(50px);
 }
 
-/* Scroll indicator */
+/* Reveal animation */
+.card.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Hover */
+.card:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 0 25px rgba(59,130,246,0.5);
+    transform: scale(1.04);
+}
+
+/* Slight bend illusion */
+.card.bend {
+    transform: translateY(var(--offset)) scale(0.97);
+    filter: brightness(0.85);
+}
+
+/* Labels */
+.set-label {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.exam-label {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    color: #94a3b8;
+}
+
+/* Dropdown */
+.set-dropdown {
+    margin-top: 12px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 0.65rem;
+    width: 85%;
+}
+
+/* Progress Bar */
 .scroll-indicator {
     position: fixed;
-    bottom: 30px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
+    width: 180px;
     height: 4px;
     background: rgba(255,255,255,0.1);
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
-    z-index: 1000;
 }
 
 .scroll-progress {
@@ -175,7 +159,7 @@
     transition: width 0.2s ease;
 }
 
-    </style>
+</style>
     
 </head>
 <body>
@@ -235,96 +219,37 @@
     <div class="scroll-progress" id="scrollProgress"></div>
 </div>
 <script>
-const carousel = document.getElementById("carousel");
 const cards = document.querySelectorAll(".card");
 const progressBar = document.getElementById("scrollProgress");
 
-const totalCards = cards.length;
-const angleStep = 360 / totalCards;
+/* Reveal animation on scroll */
+function revealCards() {
+    const trigger = window.innerHeight * 0.85;
 
-let currentRotation = 0;
-let targetRotation = 0;
-let velocity = 0;
-let isScrolling = false;
-
-/* =========================
-   SCROLL HANDLER
-========================= */
-
-window.addEventListener("scroll", () => {
-
-    const scrollTop = window.pageYOffset;
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-
-    const fraction = scrollTop / maxScroll;
-    targetRotation = fraction * 360;
-
-    progressBar.style.width = (fraction * 100) + "%";
-
-    velocity = (targetRotation - currentRotation) * 0.15;
-    isScrolling = true;
-});
-
-/* =========================
-   ANIMATION LOOP
-========================= */
-
-function animate(){
-
-    if(isScrolling){
-        currentRotation += velocity;
-        velocity *= 0.92;
-
-        if(Math.abs(velocity) < 0.05){
-            snapToCard();
-            isScrolling = false;
+    cards.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+        if (top < trigger) {
+            card.classList.add("visible");
         }
-    }
-
-    carousel.style.transform = `rotateY(${-currentRotation}deg)`;
-    updateCards();
-
-    requestAnimationFrame(animate);
-}
-
-animate();
-
-/* =========================
-   SNAP TO NEAREST CARD
-========================= */
-
-function snapToCard(){
-    const snapIndex = Math.round(currentRotation / angleStep);
-    currentRotation = snapIndex * angleStep;
-}
-
-/* =========================
-   BLUR + CENTER FOCUS
-========================= */
-
-function updateCards(){
-
-    const normalized = ((currentRotation % 360) + 360) % 360;
-
-    cards.forEach((card, index)=>{
-
-        const cardAngle = index * angleStep;
-        const diff = Math.abs(cardAngle - normalized);
-
-        if(diff < angleStep/2){
-            card.style.filter = "blur(0px)";
-            card.style.opacity = "1";
-            card.style.transform = 
-                `rotateY(${cardAngle}deg) translateZ(350px) scale(1.1)`;
-        } else {
-            card.style.filter = "blur(3px)";
-            card.style.opacity = "0.5";
-            card.style.transform = 
-                `rotateY(${cardAngle}deg) translateZ(350px) scale(1)`;
-        }
-
     });
 }
+
+/* Scroll progress */
+function updateProgress() {
+    const scrollTop = window.pageYOffset;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const percent = (scrollTop / maxScroll) * 100;
+    progressBar.style.width = percent + "%";
+}
+
+window.addEventListener("scroll", () => {
+    revealCards();
+    updateProgress();
+});
+
+/* Initial check */
+revealCards();
+updateProgress();
 </script>
 
 </body>
