@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Set B Exam</title>
+<link rel="stylesheet" href="../seta/exam.css">
+<link rel="icon" href="../../../../fevicol.png" type="image/png">
+<!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
+    </script>
+
+
+</head>
+
+<body>
+
+<div class="header">
+    Calcium Notes - Premium CBT Practice
+</div>
+
+<div id="timer"></div>
+
+<div class="container" id="examArea">
+
+    <div class="left card">
+        <div class="case-box" id="caseBox"></div>
+
+        <h4 id="questionNumber"></h4> <!-- FIXED -->
+
+        <h3 id="questionText"></h3>
+        <div id="options"></div>
+
+        <div class="btn-area">
+            <button class="primary" onclick="prevQuestion()">Previous</button>
+            <button class="primary" onclick="nextQuestion()">Next</button>
+            <button class="warning" onclick="toggleReview()">Mark for Review</button> <!-- FIXED -->
+            <button class="success" onclick="submitExam()">Submit</button>
+        </div>
+    </div>
+
+    <div class="right card">
+        <h3>Questions</h3>
+        <div id="questionGrid" class="q-grid"></div>
+    </div>
+
+</div>
+
+<div id="resultArea" style="display:none;"></div>
+
+<script src="./quessetb.js"></script>
+<script src="../seta/examset.js"></script>
+
+</body>
+</html>

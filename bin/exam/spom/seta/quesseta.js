@@ -629,7 +629,7 @@ questions:[{question:"The appointment of Anil, Badal, Chanchal and Damodar by a 
         "Four Directors",
         "Two Directors"],answer:1}
     ]
-},
+}
 
 // {
 // caseText:"",    
