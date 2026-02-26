@@ -27,8 +27,6 @@
             color: white;
             /* This height is CRITICAL for scrolling to work */
             height: 500vh;
-            touch-action: none;   /* 🔥 important */
-            overflow-x: hidden;
         }
 
         /* FIXED TITLES */
@@ -208,7 +206,6 @@ let currentRotation = 0;
 
 window.addEventListener('scroll', () => {
 
-    // Disable scroll rotation on tablets & mobiles
     if (window.innerWidth <= 1024) return;
 
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -217,62 +214,44 @@ window.addEventListener('scroll', () => {
     const scrollFraction = scrollTop / maxScroll;
     currentRotation = scrollFraction * 360;
 
-    if (carousel) {
-        carousel.style.transform = `rotateY(${-currentRotation}deg)`;
-    }
+    carousel.style.transform = `rotateY(${-currentRotation}deg)`;
 
 }, { passive: true });
 
 
+
 /* =========================
-   MOBILE - HORIZONTAL SWIPE (FIXED)
+   MOBILE - SWIPE ROTATION
 ========================= */
 
 let startX = 0;
-let isSwiping = false;
+let isDragging = false;
 
 carousel.addEventListener('touchstart', (e) => {
     if (window.innerWidth > 1024) return;
 
     startX = e.touches[0].clientX;
-    isSwiping = true;
-}, { passive: false });
-
-carousel.addEventListener('touchmove', (e) => {
-    if (!isSwiping || window.innerWidth > 1024) return;
-
-    e.preventDefault(); // 🔥 prevents page scroll
-
-    let currentX = e.touches[0].clientX;
-    let diff = currentX - startX;
-
-    currentRotation += diff * 0.5; // adjust sensitivity
-
-    carousel.style.transform = `rotateY(${currentRotation}deg)`;
-
-    startX = currentX;
-}, { passive: false });
-
-carousel.addEventListener('touchend', () => {
-    isSwiping = false;
+    isDragging = true;
 });
 
-/* =========================
-   YOUR EXISTING FUNCTION
-========================= */
+carousel.addEventListener('touchmove', (e) => {
+    if (!isDragging || window.innerWidth > 1024) return;
 
-function openModal(setName, subjectName = "") {
+    const currentX = e.touches[0].clientX;
+    const diff = currentX - startX;
 
-    const titleElement = document.getElementById('selected-set-title');
-
-    if(subjectName) {
-        titleElement.innerText = `SET ${setName}: ${subjectName}`;
-    } else {
-        titleElement.innerText = `SET ${setName}: Instructions`;
+    // rotate only if horizontal movement is strong
+    if (Math.abs(diff) > 5) {
+        currentRotation += diff * 0.4;
+        carousel.style.transform = `rotateY(${currentRotation}deg)`;
+        startX = currentX;
     }
 
-    document.getElementById('instruction-modal').style.display = 'flex';
-}
+}, { passive: true });
+
+carousel.addEventListener('touchend', () => {
+    isDragging = false;
+});
 
 </script>
 </body>
