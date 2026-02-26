@@ -140,6 +140,25 @@
     background: rgba(59, 130, 246, 0.2);
 }
 
+/* =========================
+   MOBILE HORIZONTAL SCROLL
+========================= */
+
+@media (max-width: 1024px) {
+
+    body {
+        height: 100vh;
+        width: 500vw;          /* horizontal scroll space */
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .scene-wrapper {
+        position: fixed;
+    }
+
+}
+
     </style>
     
 </head>
@@ -201,56 +220,42 @@ const carousel = document.getElementById('carousel');
 let currentRotation = 0;
 
 /* =========================
-   DESKTOP - SCROLL ROTATION
+   DESKTOP - VERTICAL SCROLL
 ========================= */
 
 window.addEventListener('scroll', () => {
 
-    if (window.innerWidth <= 1024) return;
+    if (window.innerWidth > 1024) {
 
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
-    const scrollFraction = scrollTop / maxScroll;
-    currentRotation = scrollFraction * 360;
+        const scrollFraction = scrollTop / maxScroll;
+        currentRotation = scrollFraction * 360;
 
-    carousel.style.transform = `rotateY(${-currentRotation}deg)`;
+        carousel.style.transform = `rotateY(${-currentRotation}deg)`;
+    }
 
-}, { passive: true });
-
+});
 
 
 /* =========================
-   MOBILE - SWIPE ROTATION
+   MOBILE - HORIZONTAL SCROLL
 ========================= */
 
-let startX = 0;
-let isDragging = false;
+window.addEventListener('scroll', () => {
 
-carousel.addEventListener('touchstart', (e) => {
-    if (window.innerWidth > 1024) return;
+    if (window.innerWidth <= 1024) {
 
-    startX = e.touches[0].clientX;
-    isDragging = true;
-});
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        const maxScrollX = document.documentElement.scrollWidth - window.innerWidth;
 
-carousel.addEventListener('touchmove', (e) => {
-    if (!isDragging || window.innerWidth > 1024) return;
+        const scrollFraction = scrollLeft / maxScrollX;
+        currentRotation = scrollFraction * 360;
 
-    const currentX = e.touches[0].clientX;
-    const diff = currentX - startX;
-
-    // rotate only if horizontal movement is strong
-    if (Math.abs(diff) > 5) {
-        currentRotation += diff * 0.4;
-        carousel.style.transform = `rotateY(${currentRotation}deg)`;
-        startX = currentX;
+        carousel.style.transform = `rotateY(${-currentRotation}deg)`;
     }
 
-}, { passive: true });
-
-carousel.addEventListener('touchend', () => {
-    isDragging = false;
 });
 
 </script>
