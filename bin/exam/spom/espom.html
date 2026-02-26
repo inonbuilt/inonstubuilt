@@ -198,61 +198,78 @@
 
     <script>
 
-// Use 'passive: true' for better scroll performance
+const carousel = document.getElementById('carousel');
+let currentRotation = 0;
+
+/* =========================
+   DESKTOP - SCROLL ROTATION
+========================= */
 
 window.addEventListener('scroll', () => {
 
-const carousel = document.getElementById('carousel');
+    // Disable scroll rotation on tablets & mobiles
+    if (window.innerWidth <= 1024) return;
 
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
-// Get current scroll position
+    const scrollFraction = scrollTop / maxScroll;
+    currentRotation = scrollFraction * 360;
 
-const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-
-// Get total scrollable height
-
-const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-
-
-// Calculate percentage
-
-const scrollFraction = scrollTop / maxScroll;
-
-
-// Rotate 360 degrees
-
-const rotation = scrollFraction * 360;
-
-
-// Apply rotation
-
-if (carousel) {
-
-carousel.style.transform = `rotateY(${-rotation}deg)`;
-
-}
+    if (carousel) {
+        carousel.style.transform = `rotateY(${-currentRotation}deg)`;
+    }
 
 }, { passive: true });
 
+
+/* =========================
+   MOBILE - HORIZONTAL SWIPE
+========================= */
+
+let startX = 0;
+let isSwiping = false;
+
+carousel.addEventListener('touchstart', (e) => {
+    if (window.innerWidth > 1024) return;
+    startX = e.touches[0].clientX;
+    isSwiping = true;
+});
+
+carousel.addEventListener('touchmove', (e) => {
+    if (!isSwiping || window.innerWidth > 1024) return;
+
+    let currentX = e.touches[0].clientX;
+    let diff = currentX - startX;
+
+    // Adjust sensitivity here
+    currentRotation += diff * 0.4;
+
+    carousel.style.transform = `rotateY(${currentRotation}deg)`;
+
+    startX = currentX;
+});
+
+carousel.addEventListener('touchend', () => {
+    isSwiping = false;
+});
+
+
+/* =========================
+   YOUR EXISTING FUNCTION
+========================= */
+
 function openModal(setName, subjectName = "") {
 
-const titleElement = document.getElementById('selected-set-title');
+    const titleElement = document.getElementById('selected-set-title');
 
+    if(subjectName) {
+        titleElement.innerText = `SET ${setName}: ${subjectName}`;
+    } else {
+        titleElement.innerText = `SET ${setName}: Instructions`;
+    }
 
-if(subjectName) {
-
-titleElement.innerText = `SET ${setName}: ${subjectName}`;
-
-} else {
-
-titleElement.innerText = `SET ${setName}: Instructions`;
-
-}
-
-
-document.getElementById('instruction-modal').style.display = 'flex';
-
+    document.getElementById('instruction-modal').style.display = 'flex';
 }
 
 </script>
