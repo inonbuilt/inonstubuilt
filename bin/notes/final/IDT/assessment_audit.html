@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment & Audit</title>
+    <link rel="stylesheet" href="../../assets/template.css">
+</head>
+<body>
+    
+    <!-- Top Bar -->
+    <header class="topbar">
+        <button class="toggle-btn" onclick="toggleSidebar()">✖ Close</button>
+        <div class="chapter-title">Chapter 17 – Assessment & Audit</div>
+
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+
+        
+    </header>
+
+    <!-- Main Layout -->
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <h3>Index</h3>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#asment">Assessment</a></li>
+                <li><a href="#audit">Audit</a></li>
+                <li><a href="#misc">Other Provisions</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content -->
+        <main class="content">
+
+            <!-- introduction -->
+            <div class="card section" id="intro">
+                <h2>Introduction</h2>
+                <p></p>
+            </div>
+
+            <!-- Assessment -->
+            <div class="card section" id="asment" >
+                <h2>Assessment Under GST</h2>
+                <table class="table-container">
+                    <tr>
+                        <th>Sec NO</th>
+                        <th>Sec 59</th>
+                        <th>Sec 60</th>
+                        <th>Sec 61</th>
+                        <th>Sec 62</th>
+                        <th>Sec 63</th>
+                        <th>Sec 64</th>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <th>Self Assessment</th>
+                        <th>Provisional Assessment</th>
+                        <th>Scrutiny Assessment</th>
+                        <th colspan="2">Best Judgement Assessment</th>
+                        <!-- <th>Best Judgement Assessment</th> -->
+                        <th>Summary Assessment</th>
+                    </tr>
+                    <tr>
+                        <th>Assessed by</th>
+                        <td>Registered person</td>
+                        <td>Proper officer</td>
+                        <td>Proper officer</td>
+                        <td>Proper officer</td>
+                        <td>Proper officer</td>
+                        <td>Proper officer</td>
+                    </tr>
+
+                    <tr>
+                        <th>Situation <br> (When)</th>
+                        <td>Every Registered Person has to assess the Tax and furnish the return </td>
+                        <td>When Register person is unable to <br> i. Determine the value of goods or service or goods or both or/& <br>ii. Determine the Tax Rate</td>
+                        <td>To verify Correctness of return</td>
+                        <td>A <strong>Registered Person </strong> Fails to Furnish Return</td>
+                        <td>A person label to get Register still not registered or <br> Whose <strong>Registration has been canceled</strong></td>
+                        <td>To protect the Interest of the Revenue <br> officer <strong>has evidence</strong> that the taxable person has incurred the liability <strong>AND </strong> has <strong>sufficient grounds to believe that delay in passing a assessment order may adverse effect the interest of revenue</strong></td>
+                    </tr>
+
+                    <tr>
+                        <th>Time Limit</th>
+                        <td>Refer Return Chapter</td>
+                        <td>With in 90 days from the receipt of such request by resisted person</td>
+                        <td>N/A</td>
+                        <td colspan="2">With in <strong> 5 Years </strong>from due date of filing of annual return to which tax not paid relates</td>
+                        <td>N/A</td>
+                    </tr>
+
+                    <tr>
+                        <th>opportunity of being heard</th>
+                        <td>NO</td>
+                        <td>NO</td>
+                        <td>Yes</td>
+                        <td>Notice GSTR 3A</td>
+                        <td>YES</td>
+                        <td>NO</td>
+                    </tr>
+
+                    <tr>
+                        <th> Whether Proper Officer Needs Permission</th>
+                        <td>NO</td>
+                        <td>NO</td>
+                        <td>NO</td>
+                        <td>NO</td>
+                        <td>NO</td>
+                        <td>Yes <br>(from commissioner)</td>
+                    </tr>
+
+                    <tr>
+                        <th>OUTCOME</th>
+                        <td>N/A</td>
+                        <td> Interest to be payable for the different in Provisional and final order @ 18% pa. <strong>Refer Note 1 for More </strong> <br> If any excess paid in PAO refund with interest 18% from 61th day From FAO </td>
+                        <td>When assessee fails to reply with in 30 days from notice the PO may initiate <br>Departmental Audit u/s 65 or <br>Specific Audit u/s 66 or <br>Inspection u/s 67 or <br>Demand and recovery u/s 74,74A & 73 </td>
+                        <td>Interest to be paid form due date of filing  to date of filling <strong>Normal interest</strong> + if return of not filed with in 60 Days from date of order u/s 62 <strong> 100 per day <br> (additional interest) </strong> Refer Note 2</td>
+                        <td>Pay as per Assessment order or <br>Go for appeal</td>
+                        <td>Pay as per assessment Order or <br> if order is erroneous - <br> Taxable person may request the PO to follow the procedure  u/s 73,74 & 74A (Demand and recovery) <strong>With in 30 days from receipt of order or <br> </strong> The PO may withdraw such order aan follow the procedure u/s 73,74 & 74A </td>
+                    </tr>
+
+                    <tr>
+                        <th>Withdrawal of Order</th>
+                        <td>N/A</td>
+                        <td>NO</td>
+                        <td>NO</td>
+                        <td>YES</td>
+                        <td>NO</td>
+                        <td>Yes</td>
+                    </tr>
+
+                    
+                </table>
+            <h3>Note 1 :- Procedure for Provisional Registration</h3>
+            <table>
+                <tr>
+                    <th>Form</th>
+                    <th>Procedure</th>
+                </tr>
+                <tr>
+                    <td>Form GST ASMT - 01</td>
+                    <td>Application for Provisional Assessment</td>
+                </tr>
+                <tr>
+                    <td>Form GST ASMT - 02</td>
+                    <td>Notice for Intimation or Documents</td>
+                </tr>
+                <tr>
+                    <td>Form GST ASMT - 03</td>
+                    <td>Reply to Notice</td>
+                </tr>
+                <tr>
+                    <td>Form GST ASMT - 04</td>
+                    <td>Provisional Assessment order with in 90 days from ASMT 01</td>
+                </tr>
+                <tr>
+                    <td>Form GST ASMT - 05</td>
+                    <td>Bond to be executed between Assessee and IT</td>
+                </tr>
+                <tr>
+                    <td>Form GST ASMT - 06</td>
+                    <td>Notice for Final Assessment</td>
+                </tr>
+                <tr>
+                    <td>Form GST ASMT - 07</td>
+                    <td>Final Assessment Order with in 6M from PAO + 6M by Additional/ joint commissioner + 4 Years by commissioner <br> (may take 6m to 5 Years) </td>
+                </tr>
+                <tr>
+                    <td>Form GST ASMT - 08</td>
+                    <td>Application for release of Bond</td>
+                </tr>
+                <tr>
+                    <td>Form GST ASMT - 09</td>
+                    <td>Order for Release of Bons</td>
+                    <td></td>
+                </tr>
+            </table>
+            <h4>Illustration on computation of interest involved in Provisional Registration</h4>
+            <object data="./interest on PAO.svg" type="image/svg+xml"></object>
+            <!-- Interest computation Table -->
+            <table>
+                <tr>
+                    <th>Particulars</th>
+                    <th>Sec 50</th>
+                    <th>Sec 60</th>
+                </tr>
+                <tr>
+                    <td>Amount</td>
+                    <td>4,00,000</td>
+                    <td>2,00,000</td>
+                </tr>
+                <tr>
+                    <td>Rate</td>
+                    <td>18%</td>
+                    <td>18%</td>
+                </tr>
+                <tr>
+                    <td>No of Days</td>
+                    <td>From 21/09/20XX to 26/10/20XX <br> 36 Days</td>
+                    <td>From 21/09/20XX to 20/01/20XX <br> 122 Days</td>
+                </tr>
+                <tr>
+                    <td>Interest Computation</td>
+                    <td>4,00,000 X 18 X 36/365 = <br> RS 7,101</td>
+                    <td>2,00,000 X 18% X 122/365 = <br>RS 12,033</td>
+                </tr>
+                
+            </table>
+            <h3>Note 2 :- Calculation of late fee for filing return after Best Judgement Order</h3>
+            <object data="./interest on BJA.svg" type="image/svg+xml"></object>
+            </div>
+
+            <!-- Audit-->
+            <div class="card section" id="audit">
+                <h2>Audit Under GST</h2>
+                <table>
+                    <tr>
+                        <th>Particulars</th>
+                        <th>Departmental Audit</th>
+                        <th>Special Audit</th>
+                    </tr>
+                    <tr>
+                        <td>Section</td>
+                        <td>65</td>
+                        <td>66</td>
+                    </tr>
+                    <tr>
+                        <td>Applicability</td>
+                        <td>Based on Turnover <br>(Not Notified)</td>
+                        <td>During the inquiry/ investigation, it os to found that <br>i. value nor correctly declared or <br>ii. ITC availed incorrectly  </td>
+                    </tr>
+                    <tr>
+                        <td>Time Limit</td>
+                        <td>With in 3M by PAO + 6M by commissioner from Date of commencement of Audit</td>
+                        <td>With in 90 Days (additional 90 Days by approval form AC/DC) form date of commencement audit</td>
+                    </tr>
+                    <tr>
+                        <td>Submission for audit report </td>
+                        <td> To Register person & commissioner <br>With in 30 days of completion of audit</td>
+                        <td>To AC/DC</td>
+                    </tr>
+                    <tr>
+                        <td>Expenses of audit born by</td>
+                        <td>GST Department</td>
+                        <td>GST Department</td>
+                    </tr>
+                    <tr>
+                        <td>Scope</td>
+                        <td>All Books of Accounts</td>
+                        <td>i. value of taxable supplies made & <br>ii. ITC availed and utilized during the period of Audit</td>
+                    </tr>
+                </table>
+                <p></p>
+            </div>
+            <!-- Misc -->
+            <div class="card section" id="misc">
+                <h2>Other Provisions</h2>
+                <h3>Sec 85 liability in case of transfer of business</h3>
+                <p><i>Dues Before transfer</i>:- <br> Both transferor and transferee are jointly and severally liable <br> <i>Dues After Transfer </i>:- Only Transferee is liable</p>
+
+                <h3>Sec 86 Liability if Agent and Principle</h3>
+                <p>Both Agent and Principle are jointly and severally liable only when agent made supply or received on behalf of principal </p>
+
+                <h3>Sec 87 Liability in case of Amalgamation/ Merger</h3>
+                <p>Due Before Date of Amalgamation - Past company is liable <br> Dues after the Date of amalgamation - New company is liable</p>
+
+                <h3>Sec 89 Liability of Directors</h3>
+                <p>Private Company - Directors are  Joint and severally label</p>
+                <p>Public Company - Directors are not Joint and severally label</p>
+
+                <p>As per <strong>Sec 90</strong> Partners of a firm are joint and severally liable . If any Partner is retired same to be communicated to commissioner with in 30 days form date of retirement</p>
+
+                <p>In case of <strong>death of the partner</strong> the legal representative will still be liable upto the extent of Estate received from Deceased partner</p>
+
+                <h3>Sec 91 Liability of Guardians and trustee </h3>
+                <p>Guardians or trustee of Minor are liable for the dues of Minor</p>
+                
+            </div>
+            
+
+        </main>
+
+    </div>
+<script src="../../assets/template.js"></script>
+</body>
+</html>
