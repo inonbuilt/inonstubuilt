@@ -51,6 +51,15 @@
             <a href="./bin/notes/notes.html">NOTES</a>
             <a href="./bin/Resources/resources.html">RESOURCES</a>
         </div>
+
+        <!-- MOTIVATIONAL ROSTER -->
+    <div class="motivation-box">
+        <p id="motivationText">
+            <span id="quote"></span><br>
+            <span id="motivationAuthor"></span>
+        </p>
+    </div>
+    
         <!-- UPdates Banner -->
         <div class="update-banner" id="updateBanner">
 
@@ -169,6 +178,32 @@ function showUpdate(){
 function closeUpdate(){
     banner.classList.remove("show");
 }
+/* ===== MOTIVATION ROSTER ===== */
+
+const quote = document.getElementById("quote");
+const motivationAuthor = document.getElementById("motivationAuthor");
+
+const quotes = [
+    { text: "Push yourself, because no one else is going to do it for you.", author: "Unknown" },
+    { text: "Success doesn't come from what you do occasionally, it comes from consistency.", author: "Marie Forleo" },
+    { text: "Don’t watch the clock; do what it does. Keep going.", author: "Sam Levenson" },
+    { text: "Small progress is still progress.", author: "Unknown" },
+    { text: "Discipline is choosing between what you want now and what you want most.", author: "Abraham Lincoln" },
+    { text: "Dream big. Start small. Act now.", author: "Robin Sharma" }
+];
+
+/* Random quote generator */
+function showRandomQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    quote.textContent = quotes[randomIndex].text;
+    motivationAuthor.textContent = " — " + quotes[randomIndex].author;
+}
+
+/* Run on load */
+window.addEventListener("load", showRandomQuote);
+
+
+
 </script>
 
 </body>

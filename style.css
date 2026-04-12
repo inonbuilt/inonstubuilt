@@ -213,3 +213,45 @@ footer {
         bottom:20px;
     }
 }
+
+/* ===== MOTIVATION BOX ===== */
+
+.motivation-box{
+    width: 85%;
+    max-width: 800px;
+
+    padding: 8px 16px;   /* compact height */
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, rgba(59,130,246,0.12), rgba(15,23,42,0.6));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(59,130,246,0.25);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: #e2e8f0;
+
+    margin: 12px auto;
+}
+
+/* Quote text (tight spacing) */
+#motivationText{
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* Author (next line, right aligned, minimal gap) */
+#motivationAuthor{
+    display: block;          /* full width */
+    text-align: right;       /* move to right */
+
+    font-size: 13px;
+    color: #93c5fd;
+    font-style: italic;
+
+    margin-top: 2px;         /* very small gap */
+}
