@@ -4,7 +4,7 @@
 const TOTAL_QUESTIONS = 50;
 const MARK_PER_QUESTION = 2;
 const PASS_MARK = 50;
-const TOTAL_TIME = 3 * 60 * 60; // 3 hours
+const TOTAL_TIME = 3 * 60 * 60;
 
 // ==========================
 // GLOBAL VARIABLES
@@ -16,6 +16,9 @@ let markedForReview = [];
 let visitedQuestions = [];
 let timeLeft = TOTAL_TIME;
 let timerInterval;
+
+// 🔥 NEW (fix for case switching)
+let lastCase = null;
 
 // ==========================
 // SHUFFLE FUNCTION
@@ -32,27 +35,32 @@ function shuffleArray(array) {
 // ==========================
 function initExam() {
 
-    let flatQuestions = [];
+    let shuffledCases = [...caseStudies];
+    shuffleArray(shuffledCases);
 
-caseStudies.forEach(cs => {
-    if (!cs.questions) return; // Safety check
+    selectedQuestions = [];
 
-    cs.questions.forEach(q => {
-        // Only push questions that have required fields
-        if (!q.question || !q.options || q.answer === undefined) return;
+    for (let cs of shuffledCases) {
 
-        flatQuestions.push({
-            caseContent: cs.caseText || "",
-            question: q.question,
-            options: q.options,
-            correct: q.answer,
-            solution: q.solution || "No reason provided"
-        });
-    });
-});
+        if (!cs.questions) continue;
 
-    shuffleArray(flatQuestions);
-    selectedQuestions = flatQuestions.slice(0, TOTAL_QUESTIONS);
+        for (let q of cs.questions) {
+
+            if (selectedQuestions.length >= TOTAL_QUESTIONS) break;
+
+            if (!q.question || !q.options || q.answer === undefined) continue;
+
+            selectedQuestions.push({
+                caseContent: cs.caseText || "",
+                question: q.question,
+                options: q.options,
+                correct: q.answer,
+                solution: q.solution || "No reason provided"
+            });
+        }
+
+        if (selectedQuestions.length >= TOTAL_QUESTIONS) break;
+    }
 
     const total = selectedQuestions.length;
 
@@ -66,7 +74,7 @@ caseStudies.forEach(cs => {
 }
 
 // ==========================
-// LOAD QUESTION
+// LOAD QUESTION (FIXED)
 // ==========================
 function loadQuestion() {
 
@@ -76,7 +84,12 @@ function loadQuestion() {
 
     const q = selectedQuestions[currentQuestion];
 
-    document.getElementById("caseBox").innerHTML = q.caseContent;
+    // ✅ FIXED: Always update case correctly
+    if (lastCase !== q.caseContent) {
+        document.getElementById("caseBox").innerHTML = q.caseContent;
+        lastCase = q.caseContent;
+    }
+
     document.getElementById("questionText").innerText = q.question;
     document.getElementById("questionNumber").innerText =
         `Question ${currentQuestion + 1} of ${selectedQuestions.length}`;
@@ -124,8 +137,10 @@ function prevQuestion() {
     }
 }
 
+// 🔥 FIXED jump navigation
 function goToQuestion(index) {
     currentQuestion = index;
+    lastCase = null; // force case reload
     loadQuestion();
 }
 
@@ -151,17 +166,13 @@ function updateGrid() {
         const btn = document.createElement("button");
         btn.innerText = i + 1;
 
-        // Answered → Green
         if (userAnswers[i] !== null) {
             btn.classList.add("answered");
         }
-        // Visited but not answered → Red
         else if (visitedQuestions[i]) {
             btn.classList.add("not-attempted");
         }
-        // Not visited → Grey (default)
 
-        // Review overrides
         if (markedForReview[i]) {
             btn.classList.remove("answered");
             btn.classList.remove("not-attempted");
@@ -247,7 +258,7 @@ function showResult(score, percentage, grade, correctCount, wrongCount, unanswer
     const resultDiv = document.getElementById("resultArea");
     resultDiv.style.display = "block";
 
-    resultDiv.innerHTML = `
+    let html = `
         <h2>Exam Result</h2>
         <p><strong>Total Marks:</strong> ${score} / ${selectedQuestions.length * MARK_PER_QUESTION}</p>
         <p><strong>Percentage:</strong> ${percentage}%</p>
@@ -263,7 +274,7 @@ function showResult(score, percentage, grade, correctCount, wrongCount, unanswer
     `;
 
     selectedQuestions.forEach((q, index) => {
-        resultDiv.innerHTML += `
+        html += `
             <div class="reviewBox">
                 <p><strong>Q${index + 1}:</strong> ${q.question}</p>
                 <p>Your Answer: ${
@@ -277,6 +288,9 @@ function showResult(score, percentage, grade, correctCount, wrongCount, unanswer
             </div>
         `;
     });
+
+    resultDiv.innerHTML = html;
 }
 
+// ==========================
 initExam();
