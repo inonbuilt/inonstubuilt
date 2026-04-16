@@ -155,3 +155,21 @@ button {
         flex-direction: column;
     }
 }
+
+
+.case-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.case-box th,
+.case-box td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.case-box th {
+    background: #f3f4f6;
+}
