@@ -223,201 +223,279 @@
     </div>
 
     <script>
-        /* =========================================
-        GLOBAL STATE & UPDATES
-        ========================================= */
-        const banner = document.getElementById("updateBanner");
-        const message = document.getElementById("updateMessage");
-        const link = document.getElementById("updateLink");
-        let audioCtx = null;
+    /* =========================================
+       GLOBAL STATE & UPDATES
+    ========================================= */
+    const banner = document.getElementById("updateBanner");
+    const message = document.getElementById("updateMessage");
+    const link = document.getElementById("updateLink");
+    let audioCtx = null;
 
-        const updates = [
-            { text: "SPOM Set A & B Prefinal Exams Are Now Available!", url: "./bin/exam/spom/espom.html" }
-        ];
-        let currentIndex = 0;
+    const updates = [
+        { text: "SPOM Set A & B Prefinal Exams Are Now Available!", url: "./bin/exam/spom/espom.html" }
+    ];
+    let currentIndex = 0;
 
-        window.addEventListener("load", () => {
-            setTimeout(() => {
-                banner.classList.add("show");
-                showUpdate();
-                if (updates.length > 1) { 
-                    setInterval(showUpdate, 3000); 
-                }
-            }, 500);
-        });
+    /* ── STARTUP LOADER (The Brain) ── */
+    window.addEventListener("load", () => {
+        // 1. Show Banner
+        setTimeout(() => {
+            banner.classList.add("show");
+            showUpdate();
+            if (updates.length > 1) { 
+                setInterval(showUpdate, 3000); 
+            }
+        }, 500);
 
-        function showUpdate(){
-            message.textContent = updates[currentIndex].text;
-            link.href = updates[currentIndex].url;
-            currentIndex = (currentIndex + 1) % updates.length;
-        }
-
-        function closeUpdate(){ banner.classList.remove("show"); }
-
-        /* =========================================
-        MOTIVATION LOGIC
-        ========================================= */
-        const quotes = [
-            { text: "Of the Adityas I am Visnu, of lights i am the radiant sun, of the maruts i am Marici, and amoung the stars i am the Moon", author: "Sri Krishna" },
-            { text: "Success doesn't come from what you do occasionally, it comes from consistency.", author: "Marie Forleo" },
-            { text: "Discipline is choosing between what you want now and what you want most.", author: "Abraham Lincoln" },
-            { text: "Dream big. Start small. Act now.", author: "Robin Sharma" },
-            { text: "You can sleep When you are Dead.", author: "Max Verstappen"}
-        ];
-
-        function showRandomQuote() {
-            const randomIndex = Math.floor(Math.random() * quotes.length);
-            document.getElementById("quote").textContent = quotes[randomIndex].text;
-            document.getElementById("motivationAuthor").textContent = " — " + quotes[randomIndex].author;
-        }
-        window.addEventListener("load", showRandomQuote);
-
-        /* =========================================
-        READ MODE CONTROLS
-        ========================================= */
-        const overlay = document.getElementById("readModeOverlay");
-
-        function openReadMode() { 
-            if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-            if (audioCtx.state === 'suspended') audioCtx.resume();
-            overlay.classList.add("rm-active");
-            setTimeout(() => overlay.classList.add("rm-visible"), 10);
-            document.body.style.overflow = "hidden";
+        // 2. Load Notes
+        const savedNotes = localStorage.getItem("cn_notes");
+        if (savedNotes !== null) {
+            document.getElementById("noteArea").value = savedNotes;
+            if(document.getElementById("noteChars")) {
+                document.getElementById("noteChars").textContent = savedNotes.length + " chars";
+            }
         }
 
-        function closeReadMode() {
-            overlay.classList.remove("rm-visible");
-            setTimeout(() => { overlay.classList.remove("rm-active"); document.body.style.overflow = ""; }, 350);
-        }
-
-        /* ── CLOCK ── */
-        function tickClock() {
-            const now = new Date();
-            const H = String(now.getHours()).padStart(2,'0'), M = String(now.getMinutes()).padStart(2,'0'), S = String(now.getSeconds()).padStart(2,'0');
-            document.getElementById("rmClockHM").textContent = H + ":" + M;
-            document.getElementById("rmClockSec").textContent = ":" + S;
-            document.getElementById("rmClockDate").textContent = now.toDateString();
-            const h = now.getHours();
-            document.getElementById("rmGreeting").textContent = h < 12 ? "Good Morning ☀️" : h < 17 ? "Good Afternoon ⚡" : h < 21 ? "Good Evening 🌙" : "Night Study 🌟";
-            alarmCheck(H + ":" + M);
-        }
-        setInterval(tickClock, 1000);
-
-        /* ── TIMER & STOPWATCH ── */
-        let timerIv = null, timerLeft = 0, timerOn = false;
-        function setTimerTab(t) {
-            document.getElementById("timerSection").style.display = t === "timer" ? "block" : "none";
-            document.getElementById("swSection").style.display = t === "sw" ? "block" : "none";
-            document.getElementById("ttabTimer").classList.toggle("on", t === "timer");
-            document.getElementById("ttabSW").classList.toggle("on", t === "sw");
-        }
-        function getTimerSecs() {
-            return (parseInt(document.getElementById("tHr").value) || 0) * 3600 + (parseInt(document.getElementById("tMin").value) || 0) * 60 + (parseInt(document.getElementById("tSec").value) || 0);
-        }
-        function fmtTime(s) {
-            const h = Math.floor(s/3600), m = Math.floor((s%3600)/60), sec = s%60;
-            return h ? String(h).padStart(2,'0')+":"+String(m).padStart(2,'0')+":"+String(sec).padStart(2,'0') : String(m).padStart(2,'0')+":"+String(sec).padStart(2,'0');
-        }
-        function timerStart() {
-            if (timerOn) return;
-            if (!timerLeft) timerLeft = getTimerSecs();
-            if (!timerLeft) return;
-            timerOn = true;
-            timerIv = setInterval(() => {
-                if (--timerLeft <= 0) { clearInterval(timerIv); timerOn = false; beep(); toastShow("⏰ Done!", "Study session complete."); }
-                document.getElementById("timerDisp").textContent = fmtTime(timerLeft);
-            }, 1000);
-        }
-        function timerPause() { clearInterval(timerIv); timerOn = false; }
-        function timerReset() { timerPause(); updateTimerDisplay(); 
-        }
-
-        let swOn = false, swIv = null, swMs = 0, swLaps = [];
-        function swStart() {
-            if (swOn) return; swOn = true;
-            const t0 = Date.now() - swMs;
-            swIv = setInterval(() => { swMs = Date.now() - t0; document.getElementById("swDisp").textContent = fmtSW(swMs); }, 100);
-        }
-        function fmtSW(ms) {
-            const m = Math.floor(ms/60000), s = Math.floor((ms%60000)/1000), t = Math.floor((ms%1000)/100);
-            return String(m).padStart(2,'0')+":"+String(s).padStart(2,'0')+"."+t;
-        }
-        function swPause() { clearInterval(swIv); swOn = false; }
-        function swReset() { swPause(); swMs = 0; swLaps = []; document.getElementById("swDisp").textContent = "00:00.0"; document.getElementById("swLaps").innerHTML = ""; }
-        function swLap() { swLaps.push(fmtSW(swMs)); document.getElementById("swLaps").innerHTML = swLaps.map((l,i) => `<div>Lap ${i+1}: ${l}</div>`).join(''); }
-        function updateTimerDisplay() {
-        if (timerOn) return; // Don't interrupt if it's already running
-        const h = parseInt(document.getElementById("tHr").value) || 0;
-        const m = parseInt(document.getElementById("tMin").value) || 0;
-        const s = parseInt(document.getElementById("tSec").value) || 0;
-        timerLeft = (h * 3600) + (m * 60) + s;
-        document.getElementById("timerDisp").textContent = fmtTime(timerLeft);
-        }
-
-        /* ── ALARMS & TASKS ── */
-        let alarms = [], alarmFired = {}, tasks = [];
-        function alarmAdd() {
-            const t = document.getElementById("alTime").value;
-            if (t) { alarms.push({time: t, label: document.getElementById("alLabel").value || "Alarm", id: Date.now()}); renderAlarms(); }
-        }
-        function alarmDel(id) { alarms = alarms.filter(a => a.id !== id); renderAlarms(); }
-        function renderAlarms() {
-            document.getElementById("alarmList").innerHTML = alarms.map(a => `<div class="al-item" style="padding:10px; border-bottom:1px solid rgba(255,255,255,0.05);">${a.time} - ${a.label} <button onclick="alarmDel(${a.id})" style="background:none; border:none; cursor:pointer;">🗑</button></div>`).join('');
-        }
-        function alarmCheck(hm) {
-            alarms.forEach(a => {
-                if (a.time === hm && !alarmFired[a.id]) { alarmFired[a.id] = true; renderAlarms(); beep(); toastShow("🔔 " + a.label, "Time: " + a.time); setTimeout(() => delete alarmFired[a.id], 60000); }
-            });
-        }
-
-        function taskAdd() {
-            const txt = document.getElementById("tkInput").value.trim();
-            if (txt) { tasks.push({txt, pri: document.getElementById("tkPri").value, done: false, id: Date.now()}); document.getElementById("tkInput").value = ""; renderTasks(); }
-        }
-        function taskToggle(id) { const t = tasks.find(x => x.id === id); if (t) t.done = !t.done; renderTasks(); }
-        function taskDel(id) { tasks = tasks.filter(x => x.id !== id); renderTasks(); }
-        function renderTasks() {
-            document.getElementById("tkTotal").textContent = tasks.length;
-            document.getElementById("tkDone").textContent = tasks.filter(x => x.done).length;
-            document.getElementById("tkPend").textContent = tasks.length - tasks.filter(x => x.done).length;
-            document.getElementById("taskList").innerHTML = tasks.map(t => `
-                <div class="tk-item" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-                    <span style="${t.done ? 'text-decoration:line-through; color:gray;' : ''}" onclick="taskToggle(${t.id})">${t.done ? '✅' : '⬜'} ${t.txt} [${t.pri}]</span>
-                    <button onclick="taskDel(${t.id})" style="background:none; border:none; cursor:pointer;">🗑</button>
-                </div>`).join('');
-        }
-
-        /* ── TOAST LOGIC ── */
-        function toastShow(title, label) {
-            const toast = document.getElementById("alarmToast");
-            document.getElementById("toastTitle").textContent = title;
-            document.getElementById("toastLabel").textContent = label;
-            toast.style.display = "flex";
-            setTimeout(() => { toast.classList.add("show"); }, 10);
-            setTimeout(toastDismiss, 10000);
-        }
-        function toastDismiss() { 
-            const toast = document.getElementById("alarmToast");
-            toast.classList.remove("show");
-            setTimeout(() => { toast.style.display = "none"; }, 400);
-        }
-
-        /* ── NOTES & PERSISTENCE ── */
-        function noteSave() { localStorage.setItem("cn_notes", document.getElementById("noteArea").value); }
-        window.onload = () => { 
-            document.getElementById("noteArea").value = localStorage.getItem("cn_notes") || ""; 
+        // 3. Load Tasks
+        const savedTasks = localStorage.getItem("cn_tasks");
+        if (savedTasks) {
+            tasks = JSON.parse(savedTasks);
             renderTasks();
-            showRandomQuote();
-        };
-
-        function beep() {
-            if (!audioCtx) return;
-            const osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
-            osc.connect(gain); gain.connect(audioCtx.destination);
-            osc.frequency.value = 880; osc.start(); 
-            gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1);
-            osc.stop(audioCtx.currentTime + 1);
         }
-    </script>
+
+        // 4. Load Alarms
+        const savedAlarms = localStorage.getItem("cn_alarms");
+        if (savedAlarms) {
+            alarms = JSON.parse(savedAlarms);
+            renderAlarms();
+        }
+
+        showRandomQuote();
+        tickClock();
+    });
+
+    function showUpdate(){
+        message.textContent = updates[currentIndex].text;
+        link.href = updates[currentIndex].url;
+        currentIndex = (currentIndex + 1) % updates.length;
+    }
+
+    function closeUpdate(){ banner.classList.remove("show"); }
+
+    /* =========================================
+       MOTIVATION LOGIC
+    ========================================= */
+    const quotes = [
+        { text: "Of the Adityas I am Visnu, of lights i am the radiant sun, of the maruts i am Marici, and amoung the stars i am the Moon", author: "Sri Krishna" },
+        { text: "Success doesn't come from what you do occasionally, it comes from consistency.", author: "Marie Forleo" },
+        { text: "Discipline is choosing between what you want now and what you want most.", author: "Abraham Lincoln" },
+        { text: "Dream big. Start small. Act now.", author: "Robin Sharma" },
+        { text: "You can sleep When you are Dead.", author: "Max Verstappen"}
+    ];
+
+    function showRandomQuote() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        document.getElementById("quote").textContent = quotes[randomIndex].text;
+        document.getElementById("motivationAuthor").textContent = " — " + quotes[randomIndex].author;
+    }
+
+    /* =========================================
+       READ MODE CONTROLS
+    ========================================= */
+    const overlay = document.getElementById("readModeOverlay");
+
+    function openReadMode() { 
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        overlay.classList.add("rm-active");
+        setTimeout(() => overlay.classList.add("rm-visible"), 10);
+        document.body.style.overflow = "hidden";
+    }
+
+    function closeReadMode() {
+        overlay.classList.remove("rm-visible");
+        setTimeout(() => { overlay.classList.remove("rm-active"); document.body.style.overflow = ""; }, 350);
+    }
+
+    /* ── CLOCK ── */
+    function tickClock() {
+        const now = new Date();
+        const H = String(now.getHours()).padStart(2,'0'), M = String(now.getMinutes()).padStart(2,'0'), S = String(now.getSeconds()).padStart(2,'0');
+        document.getElementById("rmClockHM").textContent = H + ":" + M;
+        document.getElementById("rmClockSec").textContent = ":" + S;
+        document.getElementById("rmClockDate").textContent = now.toDateString();
+        const h = now.getHours();
+        document.getElementById("rmGreeting").textContent = h < 12 ? "Good Morning ☀️" : h < 17 ? "Good Afternoon ⚡" : h < 21 ? "Good Evening 🌙" : "Night Study 🌟";
+        alarmCheck(H + ":" + M);
+    }
+    setInterval(tickClock, 1000);
+
+    /* ── TIMER & STOPWATCH ── */
+    let timerIv = null, timerLeft = 0, timerOn = false;
+
+    function setTimerTab(t) {
+        document.getElementById("timerSection").style.display = t === "timer" ? "block" : "none";
+        document.getElementById("swSection").style.display = t === "sw" ? "block" : "none";
+        document.getElementById("ttabTimer").classList.toggle("on", t === "timer");
+        document.getElementById("ttabSW").classList.toggle("on", t === "sw");
+    }
+
+    function getTimerSecs() {
+        return (parseInt(document.getElementById("tHr").value) || 0) * 3600 + (parseInt(document.getElementById("tMin").value) || 0) * 60 + (parseInt(document.getElementById("tSec").value) || 0);
+    }
+
+    function fmtTime(s) {
+        const h = Math.floor(s/3600), m = Math.floor((s%3600)/60), sec = s%60;
+        return h ? String(h).padStart(2,'0')+":"+String(m).padStart(2,'0')+":"+String(sec).padStart(2,'0') : String(m).padStart(2,'0')+":"+String(sec).padStart(2,'0');
+    }
+
+    function updateTimerDisplay() {
+        if (timerOn) return; 
+        timerLeft = getTimerSecs();
+        document.getElementById("timerDisp").textContent = fmtTime(timerLeft);
+    }
+
+    function timerStart() {
+        if (timerOn) return;
+        if (!timerLeft) timerLeft = getTimerSecs();
+        if (!timerLeft) return;
+        timerOn = true;
+        timerIv = setInterval(() => {
+            if (--timerLeft <= 0) { 
+                clearInterval(timerIv); 
+                timerOn = false; 
+                beep(); 
+                toastShow("⏰ Done!", "Study session complete."); 
+            }
+            document.getElementById("timerDisp").textContent = fmtTime(timerLeft);
+        }, 1000);
+    }
+
+    function timerPause() { clearInterval(timerIv); timerOn = false; }
+    
+    function timerReset() { 
+        timerPause(); 
+        updateTimerDisplay(); 
+    }
+
+    let swOn = false, swIv = null, swMs = 0, swLaps = [];
+    function swStart() {
+        if (swOn) return; swOn = true;
+        const t0 = Date.now() - swMs;
+        swIv = setInterval(() => { swMs = Date.now() - t0; document.getElementById("swDisp").textContent = fmtSW(swMs); }, 100);
+    }
+
+    function fmtSW(ms) {
+        const m = Math.floor(ms/60000), s = Math.floor((ms%60000)/1000), t = Math.floor((ms%1000)/100);
+        return String(m).padStart(2,'0')+":"+String(s).padStart(2,'0')+"."+t;
+    }
+
+    function swPause() { clearInterval(swIv); swOn = false; }
+    function swReset() { swPause(); swMs = 0; swLaps = []; document.getElementById("swDisp").textContent = "00:00.0"; document.getElementById("swLaps").innerHTML = ""; }
+    function swLap() { swLaps.push(fmtSW(swMs)); document.getElementById("swLaps").innerHTML = swLaps.map((l,i) => `<div>Lap ${i+1}: ${l}</div>`).join(''); }
+
+    /* ── ALARMS & TASKS ── */
+    let alarms = [], alarmFired = {}, tasks = [];
+
+    function alarmAdd() {
+        const t = document.getElementById("alTime").value;
+        if (t) { 
+            alarms.push({time: t, label: document.getElementById("alLabel").value || "Alarm", id: Date.now()}); 
+            localStorage.setItem("cn_alarms", JSON.stringify(alarms));
+            renderAlarms(); 
+        }
+    }
+
+    function alarmDel(id) { 
+        alarms = alarms.filter(a => a.id !== id); 
+        localStorage.setItem("cn_alarms", JSON.stringify(alarms));
+        renderAlarms(); 
+    }
+
+    function renderAlarms() {
+        document.getElementById("alarmList").innerHTML = alarms.map(a => `<div class="al-item" style="padding:10px; border-bottom:1px solid rgba(255,255,255,0.05);">${a.time} - ${a.label} <button onclick="alarmDel(${a.id})" style="background:none; border:none; cursor:pointer;">🗑</button></div>`).join('');
+    }
+
+    function alarmCheck(hm) {
+        alarms.forEach(a => {
+            if (a.time === hm && !alarmFired[a.id]) { 
+                alarmFired[a.id] = true; 
+                beep(); 
+                toastShow("🔔 " + a.label, "Time: " + a.time); 
+                setTimeout(() => delete alarmFired[a.id], 60000); 
+            }
+        });
+    }
+
+    function taskAdd() {
+        const txt = document.getElementById("tkInput").value.trim();
+        if (txt) { 
+            tasks.push({txt, pri: document.getElementById("tkPri").value, done: false, id: Date.now()}); 
+            document.getElementById("tkInput").value = ""; 
+            localStorage.setItem("cn_tasks", JSON.stringify(tasks));
+            renderTasks(); 
+        }
+    }
+
+    function taskToggle(id) { 
+        const t = tasks.find(x => x.id === id); 
+        if (t) t.done = !t.done; 
+        localStorage.setItem("cn_tasks", JSON.stringify(tasks));
+        renderTasks(); 
+    }
+
+    function taskDel(id) { 
+        tasks = tasks.filter(x => x.id !== id); 
+        localStorage.setItem("cn_tasks", JSON.stringify(tasks));
+        renderTasks(); 
+    }
+
+    function renderTasks() {
+        document.getElementById("tkTotal").textContent = tasks.length;
+        document.getElementById("tkDone").textContent = tasks.filter(x => x.done).length;
+        document.getElementById("tkPend").textContent = tasks.length - tasks.filter(x => x.done).length;
+        document.getElementById("taskList").innerHTML = tasks.map(t => `
+            <div class="tk-item" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <span style="${t.done ? 'text-decoration:line-through; color:gray;' : ''}" onclick="taskToggle(${t.id})">${t.done ? '✅' : '⬜'} ${t.txt} [${t.pri}]</span>
+                <button onclick="taskDel(${t.id})" style="background:none; border:none; cursor:pointer;">🗑</button>
+            </div>`).join('');
+    }
+
+    /* ── TOAST LOGIC ── */
+    function toastShow(title, label) {
+        const toast = document.getElementById("alarmToast");
+        document.getElementById("toastTitle").textContent = title;
+        document.getElementById("toastLabel").textContent = label;
+        toast.style.display = "flex";
+        setTimeout(() => { toast.classList.add("show"); }, 10);
+        setTimeout(toastDismiss, 10000);
+    }
+
+    function toastDismiss() { 
+        const toast = document.getElementById("alarmToast");
+        toast.classList.remove("show");
+        setTimeout(() => { toast.style.display = "none"; }, 400);
+    }
+
+    /* ── NOTES & PERSISTENCE (Auto-Save) ── */
+    function noteSave() {
+        const noteContent = document.getElementById("noteArea").value;
+        localStorage.setItem("cn_notes", noteContent);
+
+        if(document.getElementById("noteChars")) {
+            document.getElementById("noteChars").textContent = noteContent.length + " chars";
+        }
+    }
+
+    function beep() {
+        if (!audioCtx) return;
+        const osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
+        osc.connect(gain); gain.connect(audioCtx.destination);
+        osc.frequency.value = 880; osc.start(); 
+        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1);
+        osc.stop(audioCtx.currentTime + 1);
+    }
+</script>
+
 </body>
 </html>
