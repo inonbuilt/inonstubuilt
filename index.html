@@ -223,7 +223,7 @@
 
     <script>
     /* =========================================
-       GLOBAL STATE & UPDATES
+    GLOBAL STATE & UPDATES
     ========================================= */
     const banner = document.getElementById("updateBanner");
     const message = document.getElementById("updateMessage");
@@ -235,9 +235,8 @@
     ];
     let currentIndex = 0;
 
-    /* ── STARTUP LOADER (The Brain) ── */
+    /* ── STARTUP LOADER ── */
     window.addEventListener("load", () => {
-        // 1. Show Banner
         setTimeout(() => {
             banner.classList.add("show");
             showUpdate();
@@ -246,23 +245,20 @@
             }
         }, 500);
 
-        // 2. Load Notes
+        // Load Notes
         const savedNotes = localStorage.getItem("cn_notes");
         if (savedNotes !== null) {
             document.getElementById("noteArea").value = savedNotes;
-            if(document.getElementById("noteChars")) {
-                document.getElementById("noteChars").textContent = savedNotes.length + " chars";
-            }
         }
 
-        // 3. Load Tasks
+        // Load Tasks
         const savedTasks = localStorage.getItem("cn_tasks");
         if (savedTasks) {
             tasks = JSON.parse(savedTasks);
             renderTasks();
         }
 
-        // 4. Load Alarms
+        // Load Alarms
         const savedAlarms = localStorage.getItem("cn_alarms");
         if (savedAlarms) {
             alarms = JSON.parse(savedAlarms);
@@ -282,7 +278,7 @@
     function closeUpdate(){ banner.classList.remove("show"); }
 
     /* =========================================
-       MOTIVATION LOGIC
+    MOTIVATION LOGIC
     ========================================= */
     const quotes = [
         { text: "Of the Adityas I am Visnu, of lights i am the radiant sun, of the maruts i am Marici, and amoung the stars i am the Moon", author: "Sri Krishna" },
@@ -299,7 +295,7 @@
     }
 
     /* =========================================
-       READ MODE CONTROLS
+    READ MODE CONTROLS
     ========================================= */
     const overlay = document.getElementById("readModeOverlay");
 
@@ -371,11 +367,7 @@
     }
 
     function timerPause() { clearInterval(timerIv); timerOn = false; }
-    
-    function timerReset() { 
-        timerPause(); 
-        updateTimerDisplay(); 
-    }
+    function timerReset() { timerPause(); updateTimerDisplay(); }
 
     let swOn = false, swIv = null, swMs = 0, swLaps = [];
     function swStart() {
@@ -396,6 +388,15 @@
     /* ── ALARMS & TASKS ── */
     let alarms = [], alarmFired = {}, tasks = [];
 
+    // Formats Railway Time (17:30) to AM/PM (5:30 PM) for the list
+    function fmtAlarmListTime(t24) {
+        const [h, m] = t24.split(':');
+        const hr = parseInt(h);
+        const suffix = hr >= 12 ? 'PM' : 'AM';
+        const displayHr = ((hr + 11) % 12 + 1);
+        return displayHr + ":" + m + " " + suffix;
+    }
+
     function alarmAdd() {
         const t = document.getElementById("alTime").value;
         if (t) { 
@@ -412,7 +413,11 @@
     }
 
     function renderAlarms() {
-        document.getElementById("alarmList").innerHTML = alarms.map(a => `<div class="al-item" style="padding:10px; border-bottom:1px solid rgba(255,255,255,0.05);">${a.time} - ${a.label} <button onclick="alarmDel(${a.id})" style="background:none; border:none; cursor:pointer;">🗑</button></div>`).join('');
+        document.getElementById("alarmList").innerHTML = alarms.map(a => `
+            <div class="al-item" style="padding:10px; border-bottom:1px solid rgba(255,255,255,0.05); display:flex; justify-content:space-between; align-items:center;">
+                <span><strong>${fmtAlarmListTime(a.time)}</strong> - ${a.label}</span>
+                <button onclick="alarmDel(${a.id})" style="background:none; border:none; cursor:pointer;">🗑</button>
+            </div>`).join('');
     }
 
     function alarmCheck(hm) {
@@ -420,7 +425,7 @@
             if (a.time === hm && !alarmFired[a.id]) { 
                 alarmFired[a.id] = true; 
                 beep(); 
-                toastShow("🔔 " + a.label, "Time: " + a.time); 
+                toastShow("🔔 " + a.label, "Time: " + fmtAlarmListTime(a.time)); 
                 setTimeout(() => delete alarmFired[a.id], 60000); 
             }
         });
@@ -476,14 +481,9 @@
         setTimeout(() => { toast.style.display = "none"; }, 400);
     }
 
-    /* ── NOTES & PERSISTENCE (Auto-Save) ── */
+    /* ── NOTES & PERSISTENCE ── */
     function noteSave() {
-        const noteContent = document.getElementById("noteArea").value;
-        localStorage.setItem("cn_notes", noteContent);
-
-        if(document.getElementById("noteChars")) {
-            document.getElementById("noteChars").textContent = noteContent.length + " chars";
-        }
+        localStorage.setItem("cn_notes", document.getElementById("noteArea").value);
     }
 
     function beep() {
@@ -495,6 +495,5 @@
         osc.stop(audioCtx.currentTime + 1);
     }
 </script>
-
 </body>
 </html>
