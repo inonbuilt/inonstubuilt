@@ -146,11 +146,12 @@
 
                 <div id="timerSection">
                     <div class="t-inputs">
-                        <input class="t-num" type="number" id="tHr" value="00" min="0" max="23">
-                        <span class="t-sep">:</span>
-                        <input class="t-num" type="number" id="tMin" value="25" min="0" max="59">
-                        <span class="t-sep">:</span>
-                        <input class="t-num" type="number" id="tSec" value="00" min="0" max="59">
+
+                    <input class="t-num" type="number" id="tHr" value="00" min="0" max="23" oninput="updateTimerDisplay()">
+                    <span class="t-sep">:</span>
+                    <input class="t-num" type="number" id="tMin" value="25" min="0" max="59" oninput="updateTimerDisplay()">
+                    <span class="t-sep">:</span>
+                    <input class="t-num" type="number" id="tSec" value="00" min="0" max="59" oninput="updateTimerDisplay()">
                     </div>
                     <div class="t-display" id="timerDisp">25:00</div>
                     <div class="t-btns">
@@ -328,7 +329,8 @@
             }, 1000);
         }
         function timerPause() { clearInterval(timerIv); timerOn = false; }
-        function timerReset() { timerPause(); timerLeft = getTimerSecs(); document.getElementById("timerDisp").textContent = fmtTime(timerLeft); }
+        function timerReset() { timerPause(); updateTimerDisplay(); 
+        }
 
         let swOn = false, swIv = null, swMs = 0, swLaps = [];
         function swStart() {
@@ -343,6 +345,14 @@
         function swPause() { clearInterval(swIv); swOn = false; }
         function swReset() { swPause(); swMs = 0; swLaps = []; document.getElementById("swDisp").textContent = "00:00.0"; document.getElementById("swLaps").innerHTML = ""; }
         function swLap() { swLaps.push(fmtSW(swMs)); document.getElementById("swLaps").innerHTML = swLaps.map((l,i) => `<div>Lap ${i+1}: ${l}</div>`).join(''); }
+        function updateTimerDisplay() {
+        if (timerOn) return; // Don't interrupt if it's already running
+        const h = parseInt(document.getElementById("tHr").value) || 0;
+        const m = parseInt(document.getElementById("tMin").value) || 0;
+        const s = parseInt(document.getElementById("tSec").value) || 0;
+        timerLeft = (h * 3600) + (m * 60) + s;
+        document.getElementById("timerDisp").textContent = fmtTime(timerLeft);
+        }
 
         /* ── ALARMS & TASKS ── */
         let alarms = [], alarmFired = {}, tasks = [];
