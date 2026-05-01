@@ -101,3 +101,77 @@ h2 {
     display: block;
     font-weight: 500;
 }
+
+/* about resources */
+
+/* 1. ROOT VARIABLES (The "Elemental" Palette) */
+:root {
+    --primary-blue: #3b82f6;
+    --light-blue: #93c5fd;
+    --dark-blue: #1e3a8a;
+    --bg-dark: #0f172a;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --transition: 0.3s ease;
+}
+
+/* 2. UNIFIED UTILITY CLASSES */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.center-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* 3. UPDATED RESOURCE STYLING (Unified) */
+.resource-directory {
+    /* Inherits from .center-container in HTML */
+}
+
+.resource-grid ul {
+    list-style-type: '⚡ ';
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.resource-grid li {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    transition: var(--transition);
+}
+
+.resource-grid li:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: var(--primary-blue);
+    transform: translateY(-3px); /* Unify with button hover feel */
+}
+
+.resource-grid li strong {
+    color: var(--light-blue);
+}
+
+/* 4. REFINING HEADERS (Unified for index & resources) */
+.in, .dis {
+    text-align: center;
+    color: var(--light-blue);
+    letter-spacing: 1px;
+}
+
+.in {
+    font-size: 1.8rem;
+    border-bottom: 1px solid rgba(147, 197, 253, 0.2);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
