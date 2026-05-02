@@ -689,3 +689,36 @@ footer {
     }
     .rm-header { padding: 12px 16px; }
 }
+/* Update .rm-card to .rm-panel so it affects all cards including Spotify */
+.rm-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* Crucial for iPad Safari */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Update .card-title to .rm-panel-label to match your Alarms/Notes titles */
+.rm-panel-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* This is perfect for cleaning up the Spotify iframe */
+iframe {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 200px;
+}
+.panel-spotify {
+    border-left: 3px solid #1DB954; /* Adds a thin Spotify-green strip on the left */
+}

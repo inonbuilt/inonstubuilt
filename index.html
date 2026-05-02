@@ -129,109 +129,162 @@
         Contact Us <br>
         EMAIL: <a href="mailto:calciumnotes@gmail.com">calciumnotes@gmail.com</a>
     </footer>
+<!-- Main Overlay Container for Read Mode -->
+<div id="readModeOverlay">
+    <!-- Header Section: Contains Branding and Exit Button -->
+    <div class="rm-header">
+        <div class="rm-brand">📖 Calcium <span>Read Mode</span></div>
+        <button class="rm-exit-btn" onclick="closeReadMode()">✕ Exit Read Mode</button>
+    </div>
 
-    <div id="readModeOverlay">
-        <div class="rm-header">
-            <div class="rm-brand">📖 Calcium <span>Read Mode</span></div>
-            <button class="rm-exit-btn" onclick="closeReadMode()">✕ Exit Read Mode</button>
+    <!-- Body Section: Main Grid/Scroll Container for all Panels -->
+    <div class="rm-body">
+        
+        <!-- Panel 1: Live Clock Display -->
+        <div class="rm-panel panel-clock">
+            <div class="rm-panel-label">🕐 Live Clock</div>
+            <div class="clock-wrap">
+                <div>
+                    <!-- Hours and Minutes -->
+                    <span class="clock-hm" id="rmClockHM">00:00</span>
+                    <!-- Seconds Display -->
+                    <span class="clock-sec" id="rmClockSec">:00</span>
+                </div>
+                <!-- Date String (e.g., Mon May 02 2026) -->
+                <div class="clock-date-str" id="rmClockDate"></div>
+                <!-- Dynamic Greeting (Morning/Afternoon/Evening) -->
+                <div class="clock-greeting" id="rmGreeting"></div>
+            </div>
         </div>
 
-        <div class="rm-body">
-            <div class="rm-panel panel-clock">
-                <div class="rm-panel-label">🕐 Live Clock</div>
-                <div class="clock-wrap">
-                    <div>
-                        <span class="clock-hm" id="rmClockHM">00:00</span>
-                        <span class="clock-sec" id="rmClockSec">:00</span>
-                    </div>
-                    <div class="clock-date-str" id="rmClockDate"></div>
-                    <div class="clock-greeting" id="rmGreeting"></div>
-                </div>
+        <!-- Panel 2: Timer and Stopwatch Logic -->
+        <div class="rm-panel panel-timer">
+            <div class="rm-panel-label">⏱ Timer & Stopwatch</div>
+            <!-- Tab Switchers for Timer/Stopwatch -->
+            <div class="t-tabs">
+                <button class="t-tab on" id="ttabTimer" onclick="setTimerTab('timer')">⏲ Timer</button>
+                <button class="t-tab" id="ttabSW" onclick="setTimerTab('sw')">⏱ Stopwatch</button>
             </div>
 
-            <div class="rm-panel panel-timer">
-                <div class="rm-panel-label">⏱ Timer & Stopwatch</div>
-                <div class="t-tabs">
-                    <button class="t-tab on" id="ttabTimer" onclick="setTimerTab('timer')">⏲ Timer</button>
-                    <button class="t-tab" id="ttabSW" onclick="setTimerTab('sw')">⏱ Stopwatch</button>
-                </div>
-
-                <div id="timerSection">
-                    <div class="t-inputs">
-
+            <!-- Timer Interface -->
+            <div id="timerSection">
+                <div class="t-inputs">
+                    <!-- Timer Inputs: Hours, Minutes, Seconds -->
                     <input class="t-num" type="number" id="tHr" value="00" min="0" max="23" oninput="updateTimerDisplay()">
                     <span class="t-sep">:</span>
                     <input class="t-num" type="number" id="tMin" value="25" min="0" max="59" oninput="updateTimerDisplay()">
                     <span class="t-sep">:</span>
                     <input class="t-num" type="number" id="tSec" value="00" min="0" max="59" oninput="updateTimerDisplay()">
-                    </div>
-                    <div class="t-display" id="timerDisp">25:00</div>
-                    <div class="t-btns">
-                        <button class="t-btn go" onclick="timerStart()">▶ Start</button>
-                        <button class="t-btn stop" onclick="timerPause()">⏸ Pause</button>
-                        <button class="t-btn rst" onclick="timerReset()">↺ Reset</button>
-                    </div>
                 </div>
-
-                <div id="swSection" style="display:none">
-                    <div class="t-display" id="swDisp">00:00.0</div>
-                    <div class="t-btns">
-                        <button class="t-btn go" onclick="swStart()">▶ Start</button>
-                        <button class="t-btn stop" onclick="swPause()">⏸ Pause</button>
-                        <button class="t-btn rst" onclick="swReset()">↺ Reset</button>
-                    </div>
-                    <button class="t-btn rst" style="width:100%;margin-top:8px" onclick="swLap()">🏁 Lap</button>
-                    <div class="sw-laps" id="swLaps"></div>
+                <!-- Main Timer Countdown Display -->
+                <div class="t-display" id="timerDisp">25:00</div>
+                <!-- Timer Control Buttons -->
+                <div class="t-btns">
+                    <button class="t-btn go" onclick="timerStart()">▶ Start</button>
+                    <button class="t-btn stop" onclick="timerPause()">⏸ Pause</button>
+                    <button class="t-btn rst" onclick="timerReset()">↺ Reset</button>
                 </div>
             </div>
 
-            <div class="rm-panel panel-alarm">
-                <div class="rm-panel-label">🔔 Alarms</div>
-                <div class="al-form">
-                    <input type="time" class="al-input" id="alTime">
-                    <input type="text" class="al-input" id="alLabel" placeholder="Label">
-                    <button class="al-add" onclick="alarmAdd()">+ Set Alarm</button>
+            <!-- Stopwatch Interface (Hidden by default) -->
+            <div id="swSection" style="display:none">
+                <div class="t-display" id="swDisp">00:00.0</div>
+                <div class="t-btns">
+                    <button class="t-btn go" onclick="swStart()">▶ Start</button>
+                    <button class="t-btn stop" onclick="swPause()">⏸ Pause</button>
+                    <button class="t-btn rst" onclick="swReset()">↺ Reset</button>
                 </div>
-                <div class="al-list" id="alarmList"></div>
-            </div>
-
-            <div class="rm-panel panel-tasks">
-                <div class="rm-panel-label">✅ Tasks</div>
-                <div class="tk-stats">
-                    <div>Total: <b id="tkTotal">0</b></div>
-                    <div>Done: <b id="tkDone">0</b></div>
-                    <div>Pending: <b id="tkPend">0</b></div>
-                </div>
-                <div class="tk-form">
-                    <input type="text" class="tk-input" id="tkInput" placeholder="Add a task…" onkeydown="if(event.key==='Enter') { event.preventDefault(); taskAdd(); }">
-                    <select class="tk-pri" id="tkPri">
-                        <option value="high">🔴 High</option>
-                        <option value="med" selected>🟡 Medium</option>
-                        <option value="low">🟢 Low</option>
-                    </select>
-                    <button class="tk-add" onclick="taskAdd()">+</button>
-                </div>
-                <div class="tk-list" id="taskList"></div>
-            </div>
-
-            <div class="rm-panel panel-notes">
-                <div class="rm-panel-label">📝 Quick Notes</div>
-                <textarea class="note-area" id="noteArea" placeholder="Jot formulas, key points..." oninput="noteSave()"></textarea>
-                <div class="note-footer">
-                    <span id="noteChars">0 chars</span>
-                </div>
+                <!-- Lap Button for Stopwatch -->
+                <button class="t-btn rst" style="width:100%;margin-top:8px" onclick="swLap()">🏁 Lap</button>
+                <!-- Container for recorded Lap Times -->
+                <div class="sw-laps" id="swLaps"></div>
             </div>
         </div>
-    </div>
 
-    <div class="alarm-toast" id="alarmToast">
-        <div class="toast-icon">🔔</div>
-        <div class="toast-body">
-            <h4 id="toastTitle">Alarm!</h4>
-            <p id="toastLabel">Time's up.</p>
+        <!-- Panel 3: Alarm Management -->
+        <div class="rm-panel panel-alarm">
+            <div class="rm-panel-label">🔔 Alarms</div>
+            <!-- Form to add new alarms -->
+            <div class="al-form">
+                <input type="time" class="al-input" id="alTime">
+                <input type="text" class="al-input" id="alLabel" placeholder="Label">
+                <button class="al-add" onclick="alarmAdd()">+ Set Alarm</button>
+            </div>
+            <!-- List where saved alarms are rendered -->
+            <div class="al-list" id="alarmList"></div>
         </div>
-        <button class="toast-dismiss" onclick="toastDismiss()">Dismiss</button>
+
+        <!-- Panel 4: Task List and Statistics -->
+        <div class="rm-panel panel-tasks">
+            <div class="rm-panel-label">✅ Tasks</div>
+            <!-- Quick overview of task counts -->
+            <div class="tk-stats">
+                <div>Total: <b id="tkTotal">0</b></div>
+                <div>Done: <b id="tkDone">0</b></div>
+                <div>Pending: <b id="tkPend">0</b></div>
+            </div>
+            <!-- Input field for adding new tasks -->
+            <div class="tk-form">
+                <input type="text" class="tk-input" id="tkInput" placeholder="Add a task…" onkeydown="if(event.key==='Enter') { event.preventDefault(); taskAdd(); }">
+                <!-- Priority Selector -->
+                <select class="tk-pri" id="tkPri">
+                    <option value="high">🔴 High</option>
+                    <option value="med" selected>🟡 Medium</option>
+                    <option value="low">🟢 Low</option>
+                </select>
+                <button class="tk-add" onclick="taskAdd()">+</button>
+            </div>
+            <!-- List where tasks are rendered -->
+            <div class="tk-list" id="taskList"></div>
+        </div>
+
+        <!-- Panel 5: Quick Notes (Auto-saving) -->
+        <div class="rm-panel panel-notes">
+            <div class="rm-panel-label">📝 Quick Notes</div>
+            <!-- Main writing area: triggers noteSave() on every keystroke -->
+            <textarea class="note-area" id="noteArea" placeholder="Jot formulas, key points..." oninput="noteSave()"></textarea>
+            <div class="note-footer">
+                <!-- Character counter -->
+                <span id="noteChars">0 chars</span>
+            </div>
+        </div>
+
+    
+        <!-- Panel 6: Spotify Focus Music -->
+<div class="rm-panel panel-spotify">
+    <div class="rm-panel-label">🎵 Focus Music</div>
+    
+    <div style="margin-top: 10px;">
+        <!-- 
+        STRICT RULE: The URL must start with /embed/ 
+        NOT /login/ or accounts.spotify.com
+        -->
+        <iframe 
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRvui9Df7q?utm_source=generator&theme=0" 
+            width="100%" 
+            height="80" 
+            frameBorder="0" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            style="border-radius: 12px; background: transparent; border: none;"
+            loading="lazy">
+        </iframe>
     </div>
+</div>
+
+
+    </div> <!-- End of rm-body -->
+</div> <!-- End of readModeOverlay -->
+
+<!-- Alarm Notification Toast: Pops up when a timer or alarm finishes -->
+<div class="alarm-toast" id="alarmToast">
+    <div class="toast-icon">🔔</div>
+    <div class="toast-body">
+        <h4 id="toastTitle">Alarm!</h4>
+        <p id="toastLabel">Time's up.</p>
+    </div>
+    <!-- Button to close the notification -->
+    <button class="toast-dismiss" onclick="toastDismiss()">Dismiss</button>
+</div>
 
     <script>
     /* =========================================
