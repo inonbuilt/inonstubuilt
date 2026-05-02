@@ -581,9 +581,29 @@
         osc.stop(audioCtx.currentTime + 1);
     }
     // Custom music player
-let mediaFiles = [];
+    let mediaFiles = [];
 let currentIdx = 0;
-let engine, playButton, seekSlider, videoBox;
+let engine, playButton, seekSlider, videoBox, db;
+
+// 1. Initialize Database with better error handling
+const dbRequest = indexedDB.open("CalciumMediaDB", 1);
+
+dbRequest.onupgradeneeded = (e) => {
+    let database = e.target.result;
+    if (!database.objectStoreNames.contains("playlist")) {
+        database.createObjectStore("playlist", { keyPath: "id", autoIncrement: true });
+    }
+};
+
+dbRequest.onsuccess = (e) => {
+    db = e.target.result;
+    console.log("Database opened successfully");
+    loadPlaylistFromDB(); // Automatically load saved songs on refresh
+};
+
+dbRequest.onerror = (e) => {
+    console.error("Database error:", e.target.error);
+};
 
 window.addEventListener("DOMContentLoaded", () => {
     engine = document.getElementById("mediaEngine");
@@ -592,6 +612,8 @@ window.addEventListener("DOMContentLoaded", () => {
     videoBox = document.getElementById("vContainer");
 
     engine.onended = () => mediaNext();
+    
+    // Smooth seek bar updates
     engine.ontimeupdate = () => {
         if (!isNaN(engine.duration)) {
             seekSlider.max = engine.duration;
@@ -602,51 +624,103 @@ window.addEventListener("DOMContentLoaded", () => {
     };
 });
 
+// 2. Fixed: Handle and Save Files
 function handleMediaFiles(files) {
-    // Revoke old URLs to prevent iPad memory leaks
-    mediaFiles.forEach(f => URL.revokeObjectURL(f.url));
-    
-    mediaFiles = Array.from(files).map(f => ({
-        name: f.name,
-        url: URL.createObjectURL(f),
-        isVid: f.type.includes('video') || f.name.toLowerCase().endsWith('.mov')
-    }));
-    
-    if (mediaFiles.length > 0) {
-        currentIdx = 0;
-        loadMedia(0);
-        drawPlaylist();
+    if (!db) {
+        alert("Database not ready yet. Please wait a second.");
+        return;
     }
+
+    const transaction = db.transaction(["playlist"], "readwrite");
+    const store = transaction.objectStore("playlist");
+
+    // Process each file
+    for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const entry = {
+            name: file.name,
+            data: file, // The actual MP3/MOV data
+            type: file.type
+        };
+        store.add(entry);
+    }
+
+    transaction.oncomplete = () => {
+        console.log("All files saved to iPad storage.");
+        loadPlaylistFromDB(); // Refresh the UI list
+    };
+
+    transaction.onerror = (e) => {
+        console.error("Transaction error:", e.target.error);
+    };
 }
 
-function loadMedia(idx) {
+// 3. Load from iPad Storage
+function loadPlaylistFromDB() {
+    if (!db) return;
+
+    const transaction = db.transaction(["playlist"], "readonly");
+    const store = transaction.objectStore("playlist");
+    const getRequest = store.getAll();
+
+    getRequest.onsuccess = () => {
+        // Clear current URLs to free up memory
+        mediaFiles.forEach(f => URL.revokeObjectURL(f.url));
+
+        mediaFiles = getRequest.result.map(item => ({
+            name: item.name,
+            url: URL.createObjectURL(item.data),
+            isVid: item.type.includes('video') || item.name.toLowerCase().endsWith('.mov')
+        }));
+
+        if (mediaFiles.length > 0) {
+            drawPlaylist();
+            loadMedia(0, false); // Load first track but don't auto-play on refresh
+        }
+    };
+}
+
+// ── Player Controls ──
+
+function loadMedia(idx, shouldPlay = true) {
     if (!mediaFiles[idx]) return;
     currentIdx = idx;
     engine.pause();
     
-    // Switch between 'Audio Mode' and 'Video Mode'
     videoBox.style.display = mediaFiles[idx].isVid ? "block" : "none";
-
     engine.src = mediaFiles[idx].url;
-    engine.load(); // Forces iPad to recognize the new file type
+    engine.load(); 
     
     document.getElementById("mName").textContent = mediaFiles[idx].name;
     drawPlaylist();
 
-    engine.play().then(() => { playButton.textContent = "⏸"; })
-                 .catch(() => { playButton.textContent = "▶"; });
+    if (shouldPlay) {
+        engine.play().then(() => { playButton.textContent = "⏸"; })
+                     .catch(() => { playButton.textContent = "▶"; });
+    }
 }
 
 function mediaToggle() {
-    if (engine.paused) { engine.play(); playButton.textContent = "⏸"; } 
-    else { engine.pause(); playButton.textContent = "▶"; }
+    if (engine.paused) { 
+        engine.play(); 
+        playButton.textContent = "⏸"; 
+    } else { 
+        engine.pause(); 
+        playButton.textContent = "▶"; 
+    }
 }
 
-function mediaNext() { if(mediaFiles.length) loadMedia((currentIdx + 1) % mediaFiles.length); }
-function mediaPrev() { if(mediaFiles.length) loadMedia((currentIdx - 1 + mediaFiles.length) % mediaFiles.length); }
+function mediaNext() { 
+    if(mediaFiles.length) loadMedia((currentIdx + 1) % mediaFiles.length); 
+}
+
+function mediaPrev() { 
+    if(mediaFiles.length) loadMedia((currentIdx - 1 + mediaFiles.length) % mediaFiles.length); 
+}
 
 function drawPlaylist() {
-    document.getElementById("mPlaylist").innerHTML = mediaFiles.map((m, i) => `
+    const list = document.getElementById("mPlaylist");
+    list.innerHTML = mediaFiles.map((m, i) => `
         <div class="p-item ${i === currentIdx ? 'active' : ''}" onclick="loadMedia(${i})">
             ${i + 1}. ${m.name}
         </div>
@@ -654,9 +728,17 @@ function drawPlaylist() {
 }
 
 function mediaSeekChange() { engine.currentTime = seekSlider.value; }
+
 function fmt(s) {
     const min = Math.floor(s / 60), sec = Math.floor(s % 60);
     return String(min).padStart(2,'0') + ":" + String(sec).padStart(2,'0');
+}
+
+// ── Clear Feature ──
+function clearPlaylist() {
+    const transaction = db.transaction(["playlist"], "readwrite");
+    transaction.objectStore("playlist").clear();
+    transaction.oncomplete = () => location.reload();
 }
 
 </script>
