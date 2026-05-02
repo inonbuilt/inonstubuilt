@@ -249,27 +249,48 @@
             </div>
         </div>
 
+<!-- custom media player -->
+<div class="rm-panel panel-media">
+    <div class="rm-panel-label">🎵 Universal Media</div>
     
-        <!-- Panel 6: Spotify Focus Music -->
-<div class="rm-panel panel-spotify">
-    <div class="rm-panel-label">🎵 Focus Music</div>
-    
-    <div style="margin-top: 10px;">
-        <!-- 
-        STRICT RULE: The URL must start with /embed/ 
-        NOT /login/ or accounts.spotify.com
-        -->
-        <iframe 
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRvui9Df7q?utm_source=generator&theme=0" 
-            width="100%" 
-            height="80" 
-            frameBorder="0" 
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            style="border-radius: 12px; background: transparent; border: none;"
-            loading="lazy">
-        </iframe>
+    <div class="media-controls-top">
+        <!-- We use a wide accept filter to stop iPad from greying out MP3s -->
+        <label for="mediaBrowse" class="media-btn browse-btn">📂 Browse All Media</label>
+        <input type="file" id="mediaBrowse" multiple accept=".mp3,.mov,.wav,.mp4,audio/*,video/*" style="display:none" onchange="handleMediaFiles(this.files)">
     </div>
+
+    <!-- Hybrid Screen: Plays the video for MOV files, stays hidden for MP3s -->
+    <div id="vContainer" style="display:none; margin-bottom:12px; background:#000; border-radius:12px; overflow:hidden;">
+        <video id="mediaEngine" playsinline style="width:100%; max-height:220px;"></video>
+    </div>
+
+    <div class="player-ui">
+        <div style="text-align:center; margin-bottom:10px;">
+            <div id="mName" style="font-weight:bold; font-size:0.9rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">No file selected</div>
+            <div id="mTime" style="font-size:0.7rem; opacity:0.5;">00:00 / 00:00</div>
+        </div>
+        
+        <div style="display:flex; justify-content:center; gap:20px; align-items:center;">
+            <button class="p-btn" onclick="mediaPrev()">⏮</button>
+            <button id="pBtn" class="p-btn play-main" onclick="mediaToggle()">▶</button>
+            <button class="p-btn" onclick="mediaNext()">⏭</button>
+        </div>
+        
+        <input type="range" id="mSeek" value="0" step="0.1" oninput="mediaSeekChange()" style="width:100%; margin-top:15px;">
+    </div>
+
+    <div id="mPlaylist" style="margin-top:15px; border-top:1px solid rgba(255,255,255,0.1); max-height:140px; overflow-y:auto;"></div>
 </div>
+
+<style>
+/* Keeping your 'Calcium' Dashboard style consistent */
+.media-btn { display: block; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff; padding: 10px; text-align: center; font-size: 0.8rem; cursor: pointer; margin-bottom: 12px; }
+.play-main { background: white !important; color: black !important; width: 42px; height: 42px; border-radius: 50%; border: none; font-size: 1rem; cursor: pointer; }
+.p-btn { background: none; border: none; color: white; font-size: 1.6rem; cursor: pointer; opacity: 0.8; }
+.p-item { padding: 10px; font-size: 0.75rem; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.p-item.active { color: #1DB954; background: rgba(255,255,255,0.05); }
+</style>
+
 
 
     </div> <!-- End of rm-body -->
@@ -559,6 +580,85 @@
         gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1);
         osc.stop(audioCtx.currentTime + 1);
     }
+    // Custom music player
+let mediaFiles = [];
+let currentIdx = 0;
+let engine, playButton, seekSlider, videoBox;
+
+window.addEventListener("DOMContentLoaded", () => {
+    engine = document.getElementById("mediaEngine");
+    playButton = document.getElementById("pBtn");
+    seekSlider = document.getElementById("mSeek");
+    videoBox = document.getElementById("vContainer");
+
+    engine.onended = () => mediaNext();
+    engine.ontimeupdate = () => {
+        if (!isNaN(engine.duration)) {
+            seekSlider.max = engine.duration;
+            seekSlider.value = engine.currentTime;
+            document.getElementById("mTime").textContent = 
+                fmt(engine.currentTime) + " / " + fmt(engine.duration);
+        }
+    };
+});
+
+function handleMediaFiles(files) {
+    // Revoke old URLs to prevent iPad memory leaks
+    mediaFiles.forEach(f => URL.revokeObjectURL(f.url));
+    
+    mediaFiles = Array.from(files).map(f => ({
+        name: f.name,
+        url: URL.createObjectURL(f),
+        isVid: f.type.includes('video') || f.name.toLowerCase().endsWith('.mov')
+    }));
+    
+    if (mediaFiles.length > 0) {
+        currentIdx = 0;
+        loadMedia(0);
+        drawPlaylist();
+    }
+}
+
+function loadMedia(idx) {
+    if (!mediaFiles[idx]) return;
+    currentIdx = idx;
+    engine.pause();
+    
+    // Switch between 'Audio Mode' and 'Video Mode'
+    videoBox.style.display = mediaFiles[idx].isVid ? "block" : "none";
+
+    engine.src = mediaFiles[idx].url;
+    engine.load(); // Forces iPad to recognize the new file type
+    
+    document.getElementById("mName").textContent = mediaFiles[idx].name;
+    drawPlaylist();
+
+    engine.play().then(() => { playButton.textContent = "⏸"; })
+                 .catch(() => { playButton.textContent = "▶"; });
+}
+
+function mediaToggle() {
+    if (engine.paused) { engine.play(); playButton.textContent = "⏸"; } 
+    else { engine.pause(); playButton.textContent = "▶"; }
+}
+
+function mediaNext() { if(mediaFiles.length) loadMedia((currentIdx + 1) % mediaFiles.length); }
+function mediaPrev() { if(mediaFiles.length) loadMedia((currentIdx - 1 + mediaFiles.length) % mediaFiles.length); }
+
+function drawPlaylist() {
+    document.getElementById("mPlaylist").innerHTML = mediaFiles.map((m, i) => `
+        <div class="p-item ${i === currentIdx ? 'active' : ''}" onclick="loadMedia(${i})">
+            ${i + 1}. ${m.name}
+        </div>
+    `).join('');
+}
+
+function mediaSeekChange() { engine.currentTime = seekSlider.value; }
+function fmt(s) {
+    const min = Math.floor(s / 60), sec = Math.floor(s % 60);
+    return String(min).padStart(2,'0') + ":" + String(sec).padStart(2,'0');
+}
+
 </script>
 </body>
 </html>
