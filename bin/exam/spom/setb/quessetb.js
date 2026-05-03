@@ -622,38 +622,33 @@ questions:[{question:"Which feature most clearly qualifies YOYO’s model as hyp
         "Creation of strong entry barriers",
         "Reduction in customer acquisition costs permanently"],answer:1}
     ]
-}
+},
 
-// Case 21
-// {
-// caseText:"<p>VServeU connects customers who require home services to service providers. Services provided include electrical, plumbing and similar home repair services at the customer&rsquo;s doorstep. The company owns the digital platform that uses algorithms to matches users to service providers in the required locality. The working of the business model is relatively simple. The consumer in need of services, uses VServeU&rsquo;s application that is available on both Andriod and IoS phones. By specifying their requirement, they place a request through the app. The company&rsquo;s algorithm then matches the request with service providers who are registered with the company. Once a match is made with respect to the requirement, locality and cost, the service provider is despatched to the customer&rsquo;s home for providing the services.</p><p>In general, customers have safety concerns about using the services of unknown professionals at home. To address this problem, VServeU has taken the onus of doing through background check and police verification of all service providers to ensure the safety of the customer. The other challenge is to keep the standard of service delivery uniform across service providers. This is vital for the company to ensure that the quality of service is as per standard irrespective of whichever service provider is deployed for the request. For this, the service providers are given training and are groomed for the service. They are also provided full equipment and other tools so that the customer gets an enhanced experience of getting service with least inconvenience.</p><p>Each time a service request is placed on the application, the customer makes an upfront payment. VServeU retains a part of it as commission for its service and the balance is passed onto the service provider. This commission-based revenue forms a large chunk of its revenue source.</p>",    
-// questions:[{question:"Which is the business model that VServeU follows?",
-//     options:["Experience model",
-//         "Service ecosystem model",
-//         "Subscription model",
-//         "On Demand model"],answer:},
-// {question:"Who form the customer segment of VServeU on the business model canvas?",
-//     options:["Customers who need the service",
-//         "Service providers who provide the service",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:}
-//     ]
-// },
+// Case 21 unpades
+{
+caseText:"<p>VServeU connects customers who require home services to service providers. Services provided include electrical, plumbing and similar home repair services at the customer&rsquo;s doorstep. The company owns the digital platform that uses algorithms to matches users to service providers in the required locality. The working of the business model is relatively simple. The consumer in need of services, uses VServeU&rsquo;s application that is available on both Andriod and IoS phones. By specifying their requirement, they place a request through the app. The company&rsquo;s algorithm then matches the request with service providers who are registered with the company. Once a match is made with respect to the requirement, locality and cost, the service provider is despatched to the customer&rsquo;s home for providing the services.</p><p>In general, customers have safety concerns about using the services of unknown professionals at home. To address this problem, VServeU has taken the onus of doing through background check and police verification of all service providers to ensure the safety of the customer. The other challenge is to keep the standard of service delivery uniform across service providers. This is vital for the company to ensure that the quality of service is as per standard irrespective of whichever service provider is deployed for the request. For this, the service providers are given training and are groomed for the service. They are also provided full equipment and other tools so that the customer gets an enhanced experience of getting service with least inconvenience.</p><p>Each time a service request is placed on the application, the customer makes an upfront payment. VServeU retains a part of it as commission for its service and the balance is passed onto the service provider. This commission-based revenue forms a large chunk of its revenue source.</p>",    
+questions:[{question:"Which is the business model that VServeU follows?",
+    options:["Experience model",
+        "Service ecosystem model",
+        "Subscription model",
+        "On Demand model"],answer:3},
+{question:"Who form the customer segment of VServeU on the business model canvas?",
+    options:["Customers who need the service",
+        "Service providers who provide the service",
+        "Both customers and service providers",
+        "All current and future customers"],answer:2},
+{question:"Which of the following are the value propositions for VServeU as per business model canvas?<br> i. Providing quality home services on demand to customers conveniently at their doorstep.<br> ii Expanding the service reach of the service provider <br> iii Getting access to training and tools to provide the service effectively. <br> iv Providing service at cost efficient rates ",
+    options:["only i",
+        "i and ii",
+        "i,ii and iii",
+        "i,ii and iv"],answer:2},
+{question:"Which is the key resource for VServeU as per the business model canvas?",
+    options:["The digital platform operating on applications",
+        "The service providers",
+        "The customers",
+        "Both customers and service providers"],answer:0},
+    ]
+}
 
 // {
 // caseText:"",    
