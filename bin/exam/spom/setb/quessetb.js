@@ -648,6 +648,37 @@ questions:[{question:"Which is the business model that VServeU follows?",
         "The customers",
         "Both customers and service providers"],answer:0},
     ]
+},
+
+// Case 22
+{
+caseText:"<p>&ldquo;Be Informed&rdquo; is a monthly magazine that focuses on current affairs, economics, international business, technology and culture. Few college students pursuing their course in Mass Communication had started this as a summer project. During the course of their project, they realized that there was a gap in the news media sector for in depth analysis on the afore-stated topics. Hence, this project was scaled up to become a regular business which has continued successfully for the last 5 years. The magazine has both a print edition and an online edition. Readers of the print edition pay an annual fee; the magazine is posted to their correspondence address each month during the year.</p><p>Due to ongoing economic slowdown, advertisement spend by companies have reduced across all mediums. Accordingly, advertisement revenue from the print version has been on the decline over the last 2 years. The annual fee income from readers alone will not be sufficient to support the print version of the magazine in the long run. To address this, the publishers decided to offer the online edition of the magazine. Readers of the online version create a login on their website, sharing personal details and reading preferences. They can access up to 5 articles each month free of cost. Beyond this the reader has to pay a subscription fee to access articles. A reader may be willing to pay for these articles because of the insight these in-depth analytical articles offer.</p>",    
+questions:[{question:"Identify the business model that is followed for the print edition of “Be Informed”. ",
+    options:["Freemium model",
+        "Subscription model",
+        "Advertising model (Hidden Revenue model)",
+        "Cross Subsidisation model"],answer:1},
+{question:"Identify the business model that is followed for the online edition of “Be Informed”.",
+    options:["Freemium model",
+        "Subscription model",
+        "Advertising model (Hidden Revenue model)",
+        "Cross Subsidisation model"],answer:0},
+{question:"What would be an appropriate Key Performance Indicator to determine if the business model of the online version of “Be Informed” is successful?",
+    options:["Number of readers creating their user account on the website",
+        "Number of readers reading the 5 articles each month free of cost",
+        "Number of users upgrading their account to access further online articles",
+        "Advertisement revenue increase for the online version of the magazine"],answer:2},
+{question:"What is the objective of publishers following the business model as described in the question for their online edition of the magazine?\n i To reduce the reliance on advertisement as an income stream for the online edition \n ii Corporate social responsibility of offering few articles for free to a user who creates an account on their website \n iii To charge a premium for the value that the magazine is creating for the reader in the form of insights from its in depth analysis \n iv To popularise and increase the readership of the magazine",
+    options:["i, ii and iv",
+        "iii and iv",
+        "i and iv",
+        "i iii and iv"],answer:3},
+{question:"“Be Informed” is a monthly magazine that provides an analytical viewpoint of on various subjects. The accuracy and relevance of these analytical write up would fall under which attribute of the Kano Model?",
+    options:["Threshold Attribute",
+        "Excitement Attribute",
+        "Reverse Quality",
+        "Indifferent Quality"],answer:0}
+    ]
 }
 
 // {
@@ -679,6 +710,131 @@ questions:[{question:"Which is the business model that VServeU follows?",
 //         ""],answer:}
 //     ]
 // },
+
+
+// {
+// caseText:"",    
+// questions:[{question:" ",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:}
+//     ]
+// },
+
+
+// {
+// caseText:"",    
+// questions:[{question:" ",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:}
+//     ]
+// },
+
+
+// {
+// caseText:"",    
+// questions:[{question:" ",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:}
+//     ]
+// },
+
+
+// {
+// caseText:"",    
+// questions:[{question:" ",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:},
+// {question:"",
+//     options:["",
+//         "",
+//         "",
+//         ""],answer:}
+//     ]
+// },
+
 
 // {
 // caseText:"",    
