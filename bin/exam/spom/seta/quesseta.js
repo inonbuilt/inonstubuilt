@@ -777,37 +777,37 @@ questions:[{question:"According to the case scenario, Deb expressed his desire t
         "Three independent Directors.",
         "Four independent Directors."],answer:2}
     ]
-}
+},
 // case 26
-// {
-// caseText:"",    
-// questions:[{question:" ",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1}
-//     ]
-// }
+{
+caseText:"<p>Shri Hari Textiles Limited was incorporated in the year 2010. Its Registered Office is situated in Connaught Place, New Delhi. It filed its audited annual financial statements for the financial year 2020-21 well within time with the jurisdictional Registrar of Companies. The Registrar inspected the statements and after reviewing them, felt the need to seek clarifications on certain matters. Accordingly, a written notice was sent by the Registrar to the company and its officials directing them to comply with the notice within thirty days of its receipt. However, the company and its officials failed to reply within the time specified in the notice.</p> <p>The Registrar initiated the inquiry and proceeded further for inspecting all the documents of the company. While conducting the inquiry, the Registrar on prudent grounds believed that some of the documents and other vital information in relation to the company would be destroyed or altered by the official of the company. With a view to safeguard the documents, the Registrar obtained an order from the Special Court and thereafter, seized all such material.</p> <p>While inspecting some of the documents the Registrar came to know that the Board of Directors had passed a resolution in a Board Meeting held on 10-07- 2020 and thereby, increased the remuneration payable to the Directors including two whole-time Directors and Managing Director to 12℅ of the net profits of the company which was a sharp increase of 5% from the preceding financial year.</p> <p>Prior to the inquiry, two Directors of the company, namely, Mr. Alex and Mr. Disouza got retired. The Registrar found from the inspection of the documents that they were involved in certain dealings which included selling of the assets of the company. On the basis of such information gathered from the inspected documents, the Registrar sought some clarifications from both of them regarding the dubious transactions. However, both Mr. Alex and Mr. Disouza refused to appear before him showing their non-availability in the town and also represented through a common representative that they were no more a part of the Board of Directors of Shri Hari Textiles Limited.</p> <p>After the completion of inspection and inquiry, the Registrar submitted a written report to the Central Government in respect of his findings against the company. The reports mentioned that there were major discrepancies in the assets and liabilities as well as profit and loss statements filed by the company.</p> <p>On receipt of report from the Registrar, the Central Government considered it necessary to investigate the affairs of the company by the Serious Fraud Investigation Office (SFIO). Accordingly, by an order SFIO was directed to conduct the investigation of Shri Hari Textiles Limited and submit its report within the stipulated time. As instructed by the Central Government, SFIO authorised some of its inspectors to investigate the affairs of the company. The team deputed by the SFIO included experts in the field of cost accounting, financial accounting, taxation, law and forensic auditing.</p> <p>While inspecting the company, the team of SFIO came to know that the Income- tax authorities had already initiated investigation against Shri Hari Textiles Limited.</p>",    
+questions:[{question:"Shri Hari Textiles Limited and its officials failed to submit any reply to the written notice issued by the Registrar within the time specified in the notice. How much fine can be imposed for such failure?",
+    options:["The Company and every defaulting officer shall be punishable with a fine up to ` 1,00,000 and in case of continuing failure, with an additional fine up to ` 500 for every day after the first during which the failure continues.",
+        "The Company and every defaulting officer shall be punishable with a fine up to ` 1,50,000 and in case of continuing failure, with an additional fine up to `1,000 for every day after the first during which the failure continues ",
+        "The Company and every defaulting officer shall be punishable with a fine up to ` 1,00,000 and in case of continuing failure, with an additional fine up to ` 5,000 for every day after the first during which the failure continues.",
+        "The Company and every defaulting officer shall be punishable with a fine up to ` 2,00,000 and in case of continuing failure, with an additional fine up to ` 5,000 for every day after the first during which the failure continues."],answer:0},
+{question:"From the case scenario, it is observed that the Registrar seized certain important documents in the course of inquiry. After inspection what procedure is to follow pertaining to such documents?",
+    options:["The Registrar is required to submit such documents in the Special Court which permitted seizure.",
+        "The Registrar is required to forward all such documents along with the inquiry report to the Central Government.",
+        "The Registrar is required to return such documents back to the company after making, if considered necessary, the copies of them.",
+        "The Registrar is required to retain such documents till instructed further by the Special Court."],answer:2},
+{question:"From the case scenario, it is noticed that the Board of Directors of Shri Hari Textiles Limited had passed a resolution in a Board Meeting held on 10- 07-2020 increasing the remuneration payable to the Directors including two whole-time Directors and Managing Director to 12% of the net profits of the company. What is the requirement for increasing the remuneration of Directors including Whole-Time Directors and Managing Director to the extent of 12% so that the increased remuneration shall be in accordance with the relevant provisions of the Companies, Act, 2013?",
+    options:["Board Resolution increasing the remuneration to 12% needs to be authorised at the General Meeting and thereafter, duly sanctioned by the ROC.",
+        "Board Resolution increasing the remuneration to 12% needs to be authorised at the General Meeting and thereafter, duly sanctioned by the Tribunal.",
+        "Board Resolution increasing the remuneration to 12% needs to be authorised at the General Meeting subject to Schedule V.",
+        "Board Resolution increasing the remuneration to 12% needs to be authorised at the General Meeting and thereafter, duly sanctioned by the Central Government through Regional Director."],answer:2},
+{question:"The case scenario states that the Registrar of Companies had called ex- Directors of Shri Hari Textiles Limited i.e. Mr. Alex and Mr. Disouza for examining them during the inquiry. Regarding power of the Registrar to call the ex-Directors and requirement of ex-directors to respond. Find the correct statement.",
+    options:["The ex-Directors of Shri Hari Textiles Limited i.e. Mr. Alex and Mr. Disouza, is not bound to response to Registrar; in case.",
+        "The ex-Directors of Shri Hari Textiles Limited i.e. Mr. Alex and Mr. Disouza bond to response to notice issued by registrar, call the for seeking the requisite information.",
+        "The ex-Directors of Shri Hari Textiles Limited i.e. Mr. Alex and Mr. Disouza bond to response only in case the Registrar is appointed by the Central Government to conduct investigation, even then only registrar can call requisite information from ex- Directors of Shri Hari Textiles Limited.",
+        "Except the Tribunal, no other authority is empowered to call ex- Directors of a company for any examination."],answer:1},
+{question:"According to the case scenario, while inspecting the company, the team of SFIO came to know that the Income-tax authorities had already initiated investigation against the company. From the given options, choose the correct one that indicates as to how amidst such a situation SFIO will be continuing with the investigation.",
+    options:["SFIO has to put its investigation on hold so long as the company is being investigated by Income-tax authorities.",
+        "SFIO will proceed with its investigation on the basis of report submitted by Income-tax authorities.",
+        "SFIO will proceed with its investigation while Income-tax authorities shall keep on hold its investigation.",
+        "SFIO will simultaneously continue its investigation along with the Income-tax authorities."],answer:2}
+    ]
+}
 
 // {
 // caseText:"",    
