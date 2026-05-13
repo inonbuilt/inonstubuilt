@@ -685,7 +685,6 @@ questions:[{question:"According to the case scenario, small shareholders got app
         "Three",
         "Four",
         "Five"],answer:2},
-
 {question:"The above case scenario reveals that Rohan, one of the Directors, had drawn remuneration in excess of the limit prescribed by the relevant provisions. As regards recovery of the excess remuneration drawn by him, which of the following options is applicable:",
     options:["The company shall not waive recovery of excess remuneration paid unless approved by a special resolution within one year from the date the sum becomes refundable.",
         "The company shall not waive recovery of excess remuneration paid unless approved by a special resolution within two years from the date the sum becomes refundable.",
@@ -694,14 +693,14 @@ questions:[{question:"According to the case scenario, small shareholders got app
     ]
 },
 
-// Case 22
+// Case 23
 {
-caseText:"<p>Hibiscus Powergear Limited (HPL), an unlisted company, is "One Stop Shop" for all the custom-built electrical switchboards, battery chargers and bus ducts. It manufactures comprehensive range of products from small industrial distribution boards to the large state-of-the-art intelligent motor and power control centers. The Registered Office of the company is located in Belthangadi and two manufacturing plants are situated at Dabaspet Industrial Area near Bengaluru.</p><p>HPL has been incurring huge losses for the last three years. There were accumulated losses to the extent of ₹ 19 Crore as on 31.03.2020. The Board of Directors had been evaluating all the possible options to bring the company back on the track. One of the options considered was Corporate Debt Restructuring (CDR) with the creditors, through Compromise.</p><p>Following data was extracted from the latest Audited Financial Statements of HPL as on 31.03.2020:</p><table><tbody><tr><td>S NO</td><td>Particulars</td><td>Amount (₹ in Crore)</td></tr><tr><td>1</td><td>Secured Creditors (a) 8% Debentures (Secured by creating Charge on Freehold Property)</td><td>20.00</td></tr><tr><td></td><td>(b) Accrued Interest on 8% Debentures</td><td>1.60</td></tr><tr><td></td><td>(c) Cash Credit (availed from National Commercial Bank against hypothecation of stocks and book debts)</td><td>15.00</td></tr><tr><td>2</td><td>Unsecured Creditors</td><td></td></tr><tr><td></td><td>Loans from Directors @ 8% p.a.</td><td>30.00</td></tr><tr><td></td><td>Trade Payables</td><td>18.00</td></tr><tr><td></td><td>Other creditors</td><td>0.40</td></tr><tr><td></td><td>Total Outstanding Debt payable by HPL</td><td>85.00</td></tr></tbody></table><p>After deliberations, a Scheme of Corporate Debt Restructuring was consented by 78% of the secured creditors and all other stake holders. Brief outlines of the Scheme are given below:</p><p>(a) 8% Debenture-holders were to take over the Freehold Property at the current valuation of ₹ 12 Crore (book value ₹ 8 Crore) in part payment of their dues and to provide additional ₹ 10 Crore @ 9% p.a. secured by a floating charge on the assets of HPL. Interest accrued on Debentures was to be paid immediately</p><p>(b) National Commercial Bank agreed to reduce interest rate from 11% p.a. to 8% p.a. on Cash Credit till next one year. It also in-principle agreed to provide ₹ 3 Crore as non-fund based limits for a period of two years.</p><p>(c) Directors were to waive off all the outstanding interest payable to them upto 31.3.2020 and also had no objection if interest rate on their loans was reduced to 6% p.a.</p><p>(d) Suppliers and other creditors consented to waiving off their debts to the extent of all the amounts outstanding for a period beyond 2 years as on 31.03.2020. In essence, HPL was required to pay only for the last 2 years to the suppliers and other creditors.</p><p>(e) Patents and goodwill were to be written off to the extent of ₹ 0.50 Crore. Value of obsolete items in the inventory was quantified to ₹ 0.80 Crore and was to be written off.</p><p>(f) Bad debts identified to the extent of ₹ 0.75 Crore were to be written off.</p><p>(g) Remaining Freehold property worth ₹ 15 Crore was revalued at ₹ 23 crore.</p><p>After the above exercise, an application for the Compromise was filed by HPL with the jurisdictional National Company Law Tribunal (hereinafter referred to as ‘Tribunal’) and made the necessary disclosures by filing an Affidavit. The disclosures contained all the material facts in respect of HPL, a copy of the Scheme of Corporate Debt Structuring as consented to by the creditors, methodology on the basis of which creditors had been identified, creditors’ responsibility statement in the prescribed form, safeguards for the protection of other secured and unsecured creditors, Auditor’s Report, Valuation Report, etc.</p><p>After hearing the Application, the Tribunal gave necessary directions in respect of conducting of the meeting of the creditors, fixed the date and place of the meeting, gave directions for the appointment of the Chairperson and scrutinizer, fixed the quorum, stated the procedure to be followed at the meeting including methodology of voting which could be either in person or by proxy or by postal ballot or by voting through electronic means, the time within which the Chairperson was required to report the result of the meeting to the Tribunal, etc.</p><p>To ensure transparency that may facilitate all the stakeholders to take proper decisions, extensive disclosures were made by HPL along with the Notice for the Meeting and then the company, as per the directions of the Tribunal, sent Notices to all the creditors and to all those who were entitled to receive it. Further, it was also sent to all the relevant Regulators seeking their representations. In addition, the Notice was advertised in English in Times of India and in the local Kannada Newspaper Udayavani in Kannada language. The company also published the Notice on its website.</p><p>It is worth noting that United Belts Private Limited (UBPL), supplying some of the components to HPL, had raised objections to the proposed Scheme of Compromise after receiving the Notice. As on 31.03.2020, HPL was required to pay ₹ 0.80 Crore to UBPL for the supply of various components.</p><p>The Meeting was duly convened and the majority representing 78% of the value of creditors agreed to the Scheme of Compromise. The Tribunal provided for the protection of minority creditors and by an Order sanctioned the Scheme of Compromise relating to Corporate Debt Structuring (CDR), after considering the Certificate issued by the Auditor of HPL. The order of the Tribunal was filed with the Registrar by HPL within the specified period of the receipt of the order.</p><p>However, in the due course of time, HPL faced many practical hurdles in the implementation of the Scheme of Compromise sanctioned by the Tribunal.</p>",
+caseText:"<p>Hibiscus Powergear Limited (HPL), an unlisted company, is One stop Shop for all the custom-built electrical switchboards, battery chargers and bus ducts. It manufactures comprehensive range of products from small industrial distribution boards to the large state-of-the-art intelligent motor and power control centers. The Registered Office of the company is located in Belthangadi and two manufacturing plants are situated at Dabaspet Industrial Area near Bengaluru.</p><p>HPL has been incurring huge losses for the last three years. There were accumulated losses to the extent of ₹ 19 Crore as on 31.03.2020. The Board of Directors had been evaluating all the possible options to bring the company back on the track. One of the options considered was Corporate Debt Restructuring (CDR) with the creditors, through Compromise.</p><p>Following data was extracted from the latest Audited Financial Statements of HPL as on 31.03.2020:</p><table><tbody><tr><td>S NO</td><td>Particulars</td><td>Amount (₹ in Crore)</td></tr><tr><td>1</td><td>Secured Creditors (a) 8% Debentures (Secured by creating Charge on Freehold Property)</td><td>20.00</td></tr><tr><td></td><td>(b) Accrued Interest on 8% Debentures</td><td>1.60</td></tr><tr><td></td><td>(c) Cash Credit (availed from National Commercial Bank against hypothecation of stocks and book debts)</td><td>15.00</td></tr><tr><td>2</td><td>Unsecured Creditors</td><td></td></tr><tr><td></td><td>Loans from Directors @ 8% p.a.</td><td>30.00</td></tr><tr><td></td><td>Trade Payables</td><td>18.00</td></tr><tr><td></td><td>Other creditors</td><td>0.40</td></tr><tr><td></td><td>Total Outstanding Debt payable by HPL</td><td>85.00</td></tr></tbody></table><p>After deliberations, a Scheme of Corporate Debt Restructuring was consented by 78% of the secured creditors and all other stake holders. Brief outlines of the Scheme are given below:</p><p>(a) 8% Debenture-holders were to take over the Freehold Property at the current valuation of ₹ 12 Crore (book value ₹ 8 Crore) in part payment of their dues and to provide additional ₹ 10 Crore @ 9% p.a. secured by a floating charge on the assets of HPL. Interest accrued on Debentures was to be paid immediately</p><p>(b) National Commercial Bank agreed to reduce interest rate from 11% p.a. to 8% p.a. on Cash Credit till next one year. It also in-principle agreed to provide ₹ 3 Crore as non-fund based limits for a period of two years.</p><p>(c) Directors were to waive off all the outstanding interest payable to them upto 31.3.2020 and also had no objection if interest rate on their loans was reduced to 6% p.a.</p><p>(d) Suppliers and other creditors consented to waiving off their debts to the extent of all the amounts outstanding for a period beyond 2 years as on 31.03.2020. In essence, HPL was required to pay only for the last 2 years to the suppliers and other creditors.</p><p>(e) Patents and goodwill were to be written off to the extent of ₹ 0.50 Crore. Value of obsolete items in the inventory was quantified to ₹ 0.80 Crore and was to be written off.</p><p>(f) Bad debts identified to the extent of ₹ 0.75 Crore were to be written off.</p><p>(g) Remaining Freehold property worth ₹ 15 Crore was revalued at ₹ 23 crore.</p><p>After the above exercise, an application for the Compromise was filed by HPL with the jurisdictional National Company Law Tribunal (hereinafter referred to as ‘Tribunal’) and made the necessary disclosures by filing an Affidavit. The disclosures contained all the material facts in respect of HPL, a copy of the Scheme of Corporate Debt Structuring as consented to by the creditors, methodology on the basis of which creditors had been identified, creditors’ responsibility statement in the prescribed form, safeguards for the protection of other secured and unsecured creditors, Auditor’s Report, Valuation Report, etc.</p><p>After hearing the Application, the Tribunal gave necessary directions in respect of conducting of the meeting of the creditors, fixed the date and place of the meeting, gave directions for the appointment of the Chairperson and scrutinizer, fixed the quorum, stated the procedure to be followed at the meeting including methodology of voting which could be either in person or by proxy or by postal ballot or by voting through electronic means, the time within which the Chairperson was required to report the result of the meeting to the Tribunal, etc.</p><p>To ensure transparency that may facilitate all the stakeholders to take proper decisions, extensive disclosures were made by HPL along with the Notice for the Meeting and then the company, as per the directions of the Tribunal, sent Notices to all the creditors and to all those who were entitled to receive it. Further, it was also sent to all the relevant Regulators seeking their representations. In addition, the Notice was advertised in English in Times of India and in the local Kannada Newspaper Udayavani in Kannada language. The company also published the Notice on its website.</p><p>It is worth noting that United Belts Private Limited (UBPL), supplying some of the components to HPL, had raised objections to the proposed Scheme of Compromise after receiving the Notice. As on 31.03.2020, HPL was required to pay ₹ 0.80 Crore to UBPL for the supply of various components.</p><p>The Meeting was duly convened and the majority representing 78% of the value of creditors agreed to the Scheme of Compromise. The Tribunal provided for the protection of minority creditors and by an Order sanctioned the Scheme of Compromise relating to Corporate Debt Structuring (CDR), after considering the Certificate issued by the Auditor of HPL. The order of the Tribunal was filed with the Registrar by HPL within the specified period of the receipt of the order.</p><p>However, in the due course of time, HPL faced many practical hurdles in the implementation of the Scheme of Compromise sanctioned by the Tribunal.</p>",
 questions:[{question:"The case scenario states that an Application for Compromise was filed by HPL with the jurisdictional National Company Law Tribunal (NCLT) along with all the necessary documents including Auditor’s Report. From the following options, choose the one which the auditor must include in the Auditor’s Report when the Application for Compromise relates to the Scheme of Corporate Debt Restructuring (CDR):",
     options:["That all the Fixed Assets of HPL have been properly revalued by the Registered Valuer for the purpose of Compromise and the Valuation Report being submitted to the Tribunal is true and correct;",
         "That the total value of creditors shown in the financial statements of HPL as on 31.03.2020 is true and correct and there are no material discrepancies.",
         "That the fund requirements of HPL after the corporate debt restructuring as approved shall conform to the liquidity test, based upon the estimates provided to the auditor by the Board of HPL.",
-        "That all the contents of the Application and other documents submitted to the Tribunal are true and correct to the best of his knowledge and belief and reflect a true and fair position of HPL as on the date of submission of Application to the Tribunal."],answer:1},
+        "That all the contents of the Application and other documents submitted to the Tribunal are true and correct to the best of his knowledge and belief and reflect a true and fair position of HPL as on the date of submission of Application to the Tribunal."],answer:2},
 {question:"According to the case scenario, with a view to ensure transparency that might facilitate all the stakeholders to take proper decisions, extensive disclosures were made by HPL along with the Notice for the Meeting and the notices were sent to all the creditors and all those who were entitled to receive it. As regards the adoption of the Compromise, the Notice needs to provide that the persons to whom the notice is sent may vote in the meeting either themselves or through proxies or by postal ballot:",
     options:["Within 21 days from the date of receipt of such Notice.",
         "Within one month from the date of receipt of such Notice.",
@@ -716,50 +715,70 @@ questions:[{question:"The case scenario states that an Application for Compromis
     options:["Representation needs to be made within 10 days from the date of receipt of notice.",
         "Representation needs to be made within 15 days from the date of receipt of notice.",
         "Representation needs to be made within 30 days from the date of receipt of notice.",
-        "Representation needs to be made within 45 days from the date of receipt of notice."],answer:1},
+        "Representation needs to be made within 45 days from the date of receipt of notice."],answer:2},
 {question:"According to the case scenario, the Tribunal while providing for the protection of minority creditors, sanctioned by an order the Scheme of Compromise relating to Corporate Debt Structuring (CDR), after considering the Certificate issued by the Auditor of HPL. The Auditor’s Certificate at the Sanctioning stage shall be to the effect that:",
     options:["HPL has duly followed all the procedure required for the Compromise as required under the Companies Act 2013 and the relevant Rules thereunder.",
         "All the documents submitted by HPL to the Tribunal for the purpose of Compromise are true and correct and the Auditors have duly verified them.",
         "The accounting treatment, if any, proposed in the Scheme of Compromise by HPL is in conformity with the prescribed accounting standards.",
-        "The Auditors have reasonable grounds to believe that HPL will continue its business as a going concern after the implementation of Compromise."],answer:1},
+        "The Auditors have reasonable grounds to believe that HPL will continue its business as a going concern after the implementation of Compromise."],answer:2},
 {question:"The given case scenario states that in due course of time, HPL faced many practical hurdles in the implementation of the Scheme of Compromise sanctioned by the Tribunal. Which of the following options is applicable, if the Tribunal is satisfied that the sanctioned Compromise cannot be implemented satisfactorily with or without modifications, and the company is unable to pay its debts as per the Scheme:",
     options:["HPL and every officer of HPL who was in default shall be liable for fine of minimum ` one lac and maximum of ` ten lacs.",
-        "",
-        "",
-        ""],answer:1}
+        "The Tribunal may make an order for winding up of HPL.",
+        "he company shall be liable to pay fine of ` twenty-five lacs and every Director and the defaulting officers of HPL shall be liable for imprisonment ranging between one year and 5 years and also fine not exceeding ` five lacs.",
+        "The Tribunal may order for confiscation and sale of properties of HPL to settle the debts to the creditors."],answer:1}
     ]
 },
-
+// case 25
 {
-caseText:"",    
-questions:[{question:" ",
-    options:["",
-        "",
-        "",
-        ""],answer:1},
-{question:"",
-    options:["",
-        "",
-        "",
-        ""],answer:1},
-{question:"",
-    options:["",
-        "",
-        "",
-        ""],answer:1},
-{question:"",
-    options:["",
-        "",
-        "",
-        ""],answer:1},
-{question:"",
-    options:["",
-        "",
-        "",
-        ""],answer:1}
+caseText:"<p>XYZ Auto Limited, an unlisted Company is engaged in the manufacturing of auto components and spare parts. Its Registered Office is situated in Chennai, Tamil Nadu and its branches are located in Metropolitan cities i.e. Delhi, Mumbai and Kolkata. Following information is available from its audited financial statements:</p> <table> <tr><td>Particulars</td><td>FY 2018-19 (in Lakhs)</td><td>FY 2019-20 (in Lakhs)</td><td>FY 2020-21 (in Lakhs)</td></tr> <tr><td>Paid-up Share Capital</td><td>1500</td><td>1500</td><td>1500</td></tr> <tr><td>Turnover</td><td>8000</td><td>9000</td><td>9500</td></tr> <tr><td>Outstanding Loans</td><td>1500</td><td>1300</td><td>1100</td></tr> <tr><td>Debentures</td><td>1200</td><td>1100</td><td>1000</td></tr> </table> <p>ABC Transporters Limited, an unlisted company, is engaged in the business of transport and logistics and has its Registered Office in Mumbai. ABC Transporters Limited purchased all the shares of XYZ Auto Limited in February, 2020 and became its holding company. It is to be noted that ABC Transporters Limited has 900 shareholders and 400 debenture-holders.</p> <p>Following information is available from the audited financial statements of ABC Transporters Limited:</p> <table> <tr><td>Particulars</td><td>FY 2018-19 (in Lakhs)</td><td>FY 2019-20 (in Lakhs)</td><td>FY 2020-21 (in Lakhs)</td></tr> <tr><td>Paid-up Share Capital</td><td>5000</td><td>5000</td><td>5000</td></tr> <tr><td>Turnover</td><td>35000</td><td>40000</td><td>45000</td></tr> <tr><td>Secured Loans from Super Commercial Bank and Other Unsecured Loans</td><td>3500</td><td>4000</td><td>4500</td></tr> <tr><td>Debentures</td><td>1000</td><td>1000</td><td>1000</td></tr> </table> <p>Sumit and Sumedh, the Directors of ABC Transporters Limited also happened to be the Directors of EFG Lights Limited, an unlisted company. However, in June, 2020, they exited from EFG Lights Limited as Directors. The turnover of EFG Lights Limited amounted to 110 crore, 99 crore, 95 crore and 91 crore respectively in FY 2017-18, FY 2018-19, FY 2019-20 and FY 2020-21. The gradual decline in turnover is on account of inadequate marketing of the products and improper campaigning. Employees’ unrest from time to time is also responsible for falling turnover. The aggregate outstanding loans, debentures and deposits amounted to 42.54 crore at the end of FY 2020-21. The total paid-up share capital of EFG Lights Limited is 9.50 crore throughout the period. EFG Lights Limited is continuing with an Audit Committee which was constituted earli...",    
+questions:[{question:"In respect of constitution of Audit Committee by XYZ Auto Limited, out of the following options, which one is applicable?",
+    options:["XYZ Auto Limited, being not a private company, is required to constitute an Audit Committee.",
+        "Having paid-up share capital above the threshold limit, XYZ Auto Limited is required to constitute an Audit committee.",
+        "Based on the threshold limits, since ABC Transporters Limited has constituted its Audit Committee, XYZ Auto Limited, being wholly owned subsidiary of ABC Transporters Limited, is not required to constitute an Audit Committee.",
+        "In view of the average turnover and paid-up share capital of last three financial years exceeding the threshold limit, XYZ Auto Limited is required to constitute an Audit committee."],answer:2},
+{question:"Is it permissible for EFG Lights Limited to discontinue its Audit Committee in the FY 2021-22?",
+    options:["Yes. EFG Lights Limited can discontinue its Audit Committee in the FY 2021-22, since both the Directors of ABC Limited have left the Directorship in EFG Limited.",
+        "Yes. EFG Lights Limited can discontinue its Audit Committee in the FY 2021-22, since it did not exceed the threshold limit.",
+        "No. EFG Lights Limited cannot discontinue its Audit Committee in the FY 2021-22, since its aggregate turnover in the last three financial years exceeds ` 100 crore.",
+        "No. EFG Lights Limited cannot discontinue its Audit Committee in the FY 2021-22, since its paid-up share capital is more than ` 5.00 crore."],answer:1},
+{question:"Suppose ABC Transporters Limited did not constitute Vigil Mechanism as required by Section 177 (9) of the Companies Act, 2013. Out of the following four options, which one correctly states the penalty that is leviable on the company for contravening this provision?",
+    options:["The company is liable to pay minimum fine of ` 50,000 and maximum of ` 1,00,000.",
+        "The company is liable to pay minimum fine of ` 1,00,000 and maximum of ` 5,00,000.",
+        "The company is liable to pay fine of ` 5,00,000.",
+        "The company is liable to pay fine of ` 1,00,000."],answer:2},
+{question:"As regards Stakeholders Relationship Committee, whether ABC Transporters Limited is required to form such a Committee as per the relevant provisions of the Companies Act, 2013:",
+    options:["No. ABC Limited is not required to form a Stakeholders Relationship Committee since its shareholders are limited to 900.",
+        "No. ABC Limited is not required to form a Stakeholders Relationship Committee since its debenture-holders are limited to 400.",
+        "Yes. ABC Limited is required to form a Stakeholders Relationship Committee since its shareholders and debenture-holders total upto 1300.",
+        "No. ABC Limited is not required to form a Stakeholders Relationship Committee since the combined strength of its shareholders and debenture-holders does not exceed 1500."],answer:2}
+    ]
+},
+// case 24
+{
+caseText:"<p>Blessed with both artistic and business approach, Deb, Debosmita and Divyanshi, putting their best foot forward entered India&rsquo;s ` 2,000 crore fragrance market by floating Daffodils Perfumes and Scent Limited (DPSL) in the year 2009 with an Authorised Capital of ` 30.00 crore. Along with them, there were ten other family members who became subscribers to the Memorandum of Association. It goes without saying that the trio were the first Directors of the company. Having Registered Office at Kannauj, the perfume capital of India, Uttar Pradesh, DPSL focused on natural fragrances and made perfumes from flowers, camphor, saffron and other aromatic substances.</p> <p>In the very next year, during April, 2010, Anirudh, a qualified Chartered Accountant and financial advisor was appointed to head the Finance Department of the company. After the promulgation of the Companies Act, 2013, his appointment was regularised as Chief Financial Officer (CFO) under the relevant provisions requiring appointment of Key Managerial Personnel (KMP).</p> <p>Knowing the fact that perfumes have emerged as an essential product, driven by growing trend of personal care and forming part of everyone&rsquo;s pride as well as confidence, they roped in Devpriya, a smart market analyst, and Divya, an IT Professional, as Directors at the time of conducting Annual General Meeting (AGM) on 25th September, 2011. The company was doing well and its yearly turnover was increasing gradually.</p> <p>As on 31-03-2020, DPSL, yet to be listed, had paid-up share capital of ` 15.00 crore with 355 shareholders and its free reserves as on that date were ` 12.00 crore. DPSL also had secured and unsecured debts aggregating to ` 2.00 crore. Its turnover for the financial year 2019-20 was ` 85.00 crore. Based on the audited financial statements as on 31-03-2020 when paid-up capital exceeded the threshold limit, four independent Directors, namely, Rajan, Rahul, Ranjit and Raima were appointed in April, 2020.</p> <p>Prior to the above development, Anirudh, the CFO of the company took early retirement in December, 2019. However, in one of the Board Meetings held on 25th June, 2020, Deb expressed his desire to again engage Anirudh by appointing him as independent Director during the current year 2020, in addition to the already appointed four independent Directors. As of now, the Articles of Association provide for the payment of sitting fee of ` 40,000 to each of the non-independent Directors of the company for attending every Board or Committee Meeting.</p> <p>The Audited financial results as on 31-03-2020 also required constitution of an Audit Committee. Accordingly, an Audit Committee was constituted which comprised Deb and Debosmita as non-independent Directors besides certain independent Directors.</p> <p>It came to light that the company was sitting on crore of rupees in terms of cash and bank balance. Due to the pandemic COVID-19 and subsequent lockdown in the country, the production almost came to a standstill and the demand dived southwards. As there was not much to invest in terms of any new projects, the Board of Directors thought to provide investors an opportunity to exit from their investment in the company. Accordingly, in a duly convened Board Meeting which was held on 25-03-2021, the Directors proposed buy-back of equity shares keeping in view the relevant clause of the Articles providing for the said buy- back</p>",    
+questions:[{question:"According to the case scenario, Deb expressed his desire to again engage Anirudh by appointing him as independent Director during the current year 2020. Which of the following options is applicable with respect to the appointment of Anirudh as an independent Director of DPSL in the year 2020:",
+    options:["Anirudh can be appointed as an independent Director of DPSL at a Board Meeting where all the Directors present at the meeting agree to such appointment.",
+        "Anirudh cannot be appointed as an independent Director of DPSL.",
+        "Anirudh can be appointed as an independent Director of DPSL by passing an ordinary resolution at a meeting of the shareholders.",
+        "Anirudh can be appointed as an independent Director of DPSL by passing a special resolution at a meeting of the shareholders."],answer:1},
+{question:"It is observed from the case scenario that the non-independent Directors are being paid sitting fee of ` 40,000 for attending every Board/Committee Meeting. From the following options, choose the one which indicates the sitting fee payable to the independent Directors for attending a Board or Committee Meeting:",
+    options:["Sitting fees payable to independent Directors per meeting shall not be less than ` 40,000.",
+        "Sitting fees payable to independent Directors per meeting shall not be less than 75% of ` 40,000.",
+        "Sitting fees payable to independent Directors per meeting shall not be less than 60% of ` 40,000.",
+        "Sitting fees payable to independent Directors per meeting shall not be less than 50% of ` 40,000."],answer:0},
+{question:"The case scenario states that in a duly convened Board Meeting which was held on 25-03-2021, the Directors of DPSL proposed buy-back of equity shares keeping in view the relevant clause of the Articles providing for the said buy-back. In case the Articles of the company did not contain any clause providing for buy-back, then which of the following options is applicable in such a situation:",
+    options:["The Articles of DPSL are required to be altered for including a clause which authorises buy-back.",
+        "There is no need to alter the Articles to provide for buy-back if any two Directors attending the related Board Meeting vote in favour of buy-back.",
+        "There is no need to alter the Articles to provide for buy-back if any three Directors attending the related Board Meeting vote in favour of buy-back.",
+        "There is no need to alter the Articles to provide for buy-back if all the Directors attending the related Board Meeting vote in favour of buy-back."],answer:0},
+{question:"According to the case scenario, the Audit Committee constituted at DPSL comprises Deb and Debosmita as non-independent Directors besides certain independent Directors. Minimum how many independent Directors might have been included in the Audit Committee if there were two non-independent Directors in it.",
+    options:["One independent Director.",
+        "Two independent Directors.",
+        "Three independent Directors.",
+        "Four independent Directors."],answer:2}
     ]
 }
-
+// case 26
 // {
 // caseText:"",    
 // questions:[{question:" ",
@@ -788,37 +807,7 @@ questions:[{question:" ",
 //         "",
 //         ""],answer:1}
 //     ]
-// },
-
-// {
-// caseText:"",    
-// questions:[{question:" ",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1}
-//     ]
-// },
+// }
 
 // {
 // caseText:"",    
