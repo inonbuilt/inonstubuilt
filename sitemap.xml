@@ -27,12 +27,15 @@
   <url><loc>https://www.calciumnotes.com/bin/exam/spom/setb/examb.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.calciumnotes.com/bin/exam/spom/setb/instructions.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.calciumnotes.com/bin/exam/final/feinal.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.calciumnotes.com/bin/exam/final/fr/efr.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.calciumnotes.com/bin/exam/final/fr/pffr.html</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.calciumnotes.com/bin/exam/fond/efon.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.calciumnotes.com/bin/exam/int/eint.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <url><loc>https://www.calciumnotes.com/bin/notes/notes.html</loc><lastmod>2026-02-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.calciumnotes.com/bin/notes/notes/dtnotes.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.calciumnotes.com/bin/notes/notes/idtnotes.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.calciumnotes.com/bin/notes/final/IDT/assessment_audit.html</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <url><loc>https://www.calciumnotes.com/bin/Resources/resources.html</loc><lastmod>2026-02-25</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.calciumnotes.com/bin/Resources/caseinter.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
