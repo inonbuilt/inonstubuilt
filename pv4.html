@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Study Reactor | Universal CA Planner</title>
+    <link rel="stylesheet" href="./pv4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="background: #050a10; color-scheme: dark;"></body>
+
+    <div class="dashboard-container">
+        <header class="top-grid">
+            <div class="header-card calendar-card">
+                <div class="actual-calendar">
+                    <div class="cal-header" id="cal-month-year"></div>
+                    <div class="cal-weekdays">
+                        <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                    </div>
+                    <div class="cal-days" id="cal-days"></div>
+                </div>
+            </div>
+            
+            <div class="header-right-group">
+                <div class="header-card center-section">
+                    <h1>Study Reactor</h1>
+                    <select id="ca-level-select" class="subject-select" style="width: 120px; height: 34px; padding: 0 10px; font-size: 14px; font-weight: 700; background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border: 1px solid rgba(59, 130, 246, 0.4); border-radius: 8px; margin-top: 6px; cursor: pointer; text-align: center;" onchange="changeLevel(this.value)">
+                        <option value="foundation">Foundation</option>
+                        <option value="inter">Inter</option>
+                        <option value="final">Final</option>
+                    </select>
+                </div>
+                
+                <div class="header-card right-section">
+                    <div id="current-date-display" class="date-hero"></div>
+                    <div id="current-time-display" class="time-hero"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-layout">
+            <aside class="timeline-sidebar glass-card">
+                <div class="card-title">Daily Timeline</div>
+                <div class="timeline-container" id="timeline-container">
+                    <div class="current-time-line" id="current-time-line"></div>
+                    <div id="hour-blocks"></div>
+                </div>
+            </aside>
+
+            <main class="reactor-main">
+                <div class="glass-card">
+                    <div class="card-title">Variance Tracker</div>
+                    <div class="table-scroll">
+                        <table class="time-table">
+                            <thead>
+                                <tr>
+                                    <th>TIME SLOT (FROM - TO)</th>
+                                    <th>CA SUBJECT</th>
+                                    <th>EST. (HRS)</th>
+                                    <th>ACTUAL (HRS)</th>
+                                    <th>VARIANCE</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="planner-body"></tbody>
+                        </table>
+                        
+                        <button class="add-row-btn" title="Add Study Block">+ Add New Study Slot</button>
+                    </div>
+                </div>
+
+                <div class="analytics-grid">
+                    <div class="glass-card stat-card">
+                        <div class="summary-label">DAILY EFFICIENCY</div>
+                        <div class="summary-value" id="efficiency-val">0%</div>
+                        <div class="purity-meter"><div class="purity-fill" id="purity-bar"></div></div>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <div class="summary-label">TOTAL ACTUAL STUDY</div>
+                        <div class="summary-value" id="total-actual-val">0h</div>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-section">
+                    <div class="chart-header">
+                        <div class="card-title" style="margin:0;">Performance Trends</div>
+                        <select id="chart-timeframe" class="subject-select" style="width: 140px;" onchange="updateChart()">
+                            <option value="days">Last 7 Days</option>
+                            <option value="weeks">Last 4 Weeks</option>
+                            <option value="months">Last 6 Months</option>
+                        </select>
+                    </div>
+                    <div class="canvas-wrapper">
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./pv4.js"></script>
+</body>
+</html>

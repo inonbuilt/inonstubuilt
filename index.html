@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcium Notes</title>
+    <title>Calcium Notes | CA Final 2026</title>
+    
+    <!-- External Assets: Link to your local CSS and Model Viewer for 3D elements -->
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./fevicol.png" type="image/png">
-
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
+    <!-- Google Analytics: Tracking user engagement -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -17,14 +19,35 @@
         gtag('js', new Date());
         gtag('config', 'G-YYJ8R39EXM');
     </script>
+
+    <!-- Metadata for planning -->
+        <meta name="description" content="Calcium Notes & Study Reactor: A precision-engineered dashboard and planner for CA Foundation, Inter, and Final students.">
+    <meta name="author" content="Calcium Notes">
+
+    <meta name="theme-color" content="#050a10"> 
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="./fevicol.png"> <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Calcium">
+    <link rel="apple-touch-icon" href="./fevicol.png"> <meta property="og:title" content="Study Reactor | Calcium Notes">
+    <meta property="og:description" content="Precision study tracking, 24-hour timeline, and variance intelligence for CA students.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./fevicol.png">
 </head>
 
 <body>
-    <button class="read-mode-trigger" onclick="openReadMode()">
-        <span>📖</span> Read Mode
-    </button>
+    <!-- Top Navigation: Entry points for the specialized study overlays -->
+    <div class="mode-toggles">
+        <button class="read-mode-trigger" onclick="openReadMode()">
+            <span>📖</span> Read Mode
+        </button>
+        <button class="plan-mode-trigger" onclick="openPlanningMode()">
+            <span>📅</span> Planning Mode
+        </button>
+    </div>
 
     <div class="page">
+        <!-- Hero Section: Featuring the 3D .glb Logo -->
         <div class="logo">
             <model-viewer 
                 class="floating-logo"
@@ -40,12 +63,14 @@
             </model-viewer>
         </div>
 
+        <!-- Main Navigation Links -->
         <div class="button">
             <a href="./bin/exam/examcover.html">EXAM</a>
             <a href="./bin/notes/notes.html">NOTES</a>
             <a href="./bin/Resources/resources.html">RESOURCES</a>
         </div>
 
+        <!-- Dynamic Motivation Quote Box -->
         <div class="motivation-box">
             <p id="motivationText">
                 <span id="quote"></span><br>
@@ -53,6 +78,7 @@
             </p>
         </div>
     
+        <!-- Dynamic Update Banner: Slides in via JS -->
         <div class="update-banner" id="updateBanner">
             <div class="update-left">
                 <span class="update-badge">NEW</span>
@@ -66,290 +92,214 @@
             </div>
         </div>
 
+        <!-- Legal and Educational Notice Section -->
         <div class="notice">
             <h1 class="in">IMPORTANT NOTICE</h1>
             <p>
                 <strong>Calcium Notes</strong> is a website designed to provide lucid and focused workbooks that assist
                 students in understanding the subject matter. It covers all important topics to enhance the quality
-                of learning in <strong>Financial Reporting, Financial Management, and Taxation</strong>, including
-                the fundamental concepts of these subjects.
+                of learning in <strong>Financial Reporting, Financial Management, and Taxation</strong>.
             </p>
 
             <h2 class="dis">DISCLAIMER</h2>
-            <p>
-                The contents of this publication do not necessarily constitute or imply endorsement, recommendation,
-                or favouring by any institution.
-            </p>
-            <p>This publication is intended solely for general reading and educational purposes.</p>
-            <p>
-                The statements, explanations, and concepts presented are of a general nature and may not take into
-                account the specific objectives, needs, circumstances, or situations of any individual user, reader,
-                organization, or institution. Accordingly, Calcium Notes shall not be responsible for any decision,
-                action, or outcome arising from reliance on the information contained herein.
-            </p>
-            <p>
-                This publication may include information, statements, opinions, statistics, and materials obtained
-                from sources believed to be reliable. While every effort has been made to ensure accuracy and avoid
-                errors, no guarantees or warranties of any kind are provided regarding the completeness or correctness
-                of the content.
-            </p>
-            <p>
-                As continuous research and updates are taking place across these knowledge streams, Calcium Notes does
-                not warrant the absolute accuracy, adequacy, or completeness of the information and expressly
-                disclaims any liability for errors or omissions.
-            </p>
-            <p>
-                Calcium Notes shall not accept any legal liability whatsoever arising from the use of the information
-                contained in this publication.
-            </p>
-            <p>
-                While the content of Calcium Notes is largely based on ICAI study material, Calcium Notes does not
-                guarantee that all topics of ICAI material are fully or completely covered.
-            </p>
+            <p>The contents of this publication do not necessarily constitute or imply endorsement by any institution.</p>
+            <p>Content is largely based on ICAI study material but does not guarantee 100% coverage.</p>
 
             <div class="footer-note">
                 © 2026 Calcium Notes. No Rights Reserved. Content may be used freely for educational purposes.
             </div>
         </div>
+        
+        <!-- Precision Engineering Box: Branding for CA Students -->
+        <div class="motivation-box" style="margin-top: 30px; border: 1px solid rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.08);">
+            <h2 style="color: #93c5fd; font-size: 1.4rem; margin-bottom: 10px;">Precision-Engineered for CA Success</h2>
+            <p style="text-align: center; font-size: 0.9rem; line-height: 1.5; color: #e2e8f0; margin-bottom: 15px;">
+                Specialized lab for CA Final students under the 2026 New Scheme. Bridging the gap between ICAI material and exam precision.
+            </p>
+            <a href="./aboutca.html" style="color: #3b82f6; font-weight: 700; text-decoration: none; border-bottom: 2px solid #3b82f6; padding-bottom: 2px; font-size: 0.85rem;">
+                Learn More About the CA Journey →
+            </a>
         </div>
-            <div class="motivation-box" style="margin-top: 30px; border: 1px solid rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.08);">
-        <h2 style="color: #93c5fd; font-size: 1.4rem; margin-bottom: 10px;">Precision-Engineered for CA Success</h2>
-        <p style="text-align: center; font-size: 0.9rem; line-height: 1.5; color: #e2e8f0; margin-bottom: 15px;">
-            <strong>Calcium Notes</strong> is a specialized lab designed for CA Final students navigating the 2026 New Scheme. 
-            We bridge the gap between heavy study material and exam-ready precision. From mastering <strong>SPOM (Self-Paced Online Modules)</strong> 
-            to conquering core subjects, our resources are structured to be 99.2% pure.
-        </p>
-        <a href="./aboutca.html" style="color: #3b82f6; font-weight: 700; text-decoration: none; border-bottom: 2px solid #3b82f6; padding-bottom: 2px; font-size: 0.85rem;">
-            Learn More About the CA Journey & Our Mission →
-        </a>
-        </div>
-
+    </div>
 
     <footer>
         Contact Us <br>
         EMAIL: <a href="mailto:calciumnotes@gmail.com">calciumnotes@gmail.com</a>
     </footer>
-<!-- Main Overlay Container for Read Mode -->
-<div id="readModeOverlay">
-    <!-- Header Section: Contains Branding and Exit Button -->
-    <div class="rm-header">
-        <div class="rm-brand">📖 Calcium <span>Read Mode</span></div>
-        <button class="rm-exit-btn" onclick="closeReadMode()">✕ Exit Read Mode</button>
-    </div>
 
-    <!-- Body Section: Main Grid/Scroll Container for all Panels -->
-    <div class="rm-body">
-        
-        <!-- Panel 1: Live Clock Display -->
-        <div class="rm-panel panel-clock">
-            <div class="rm-panel-label">🕐 Live Clock</div>
-            <div class="clock-wrap">
-                <div>
-                    <!-- Hours and Minutes -->
-                    <span class="clock-hm" id="rmClockHM">00:00</span>
-                    <!-- Seconds Display -->
-                    <span class="clock-sec" id="rmClockSec">:00</span>
-                </div>
-                <!-- Date String (e.g., Mon May 02 2026) -->
-                <div class="clock-date-str" id="rmClockDate"></div>
-                <!-- Dynamic Greeting (Morning/Afternoon/Evening) -->
-                <div class="clock-greeting" id="rmGreeting"></div>
-            </div>
+    <!-- READ MODE OVERLAY: Study productivity tools (Clock, Timer, Media, Tasks) -->
+    <div id="readModeOverlay">
+        <div class="rm-header">
+            <div class="rm-brand">📖 Calcium <span>Read Mode</span></div>
+            <button class="rm-exit-btn" onclick="closeReadMode()">✕ Exit Read Mode</button>
         </div>
-
-        <!-- Panel 2: Timer and Stopwatch Logic -->
-        <div class="rm-panel panel-timer">
-            <div class="rm-panel-label">⏱ Timer & Stopwatch</div>
-            <!-- Tab Switchers for Timer/Stopwatch -->
-            <div class="t-tabs">
-                <button class="t-tab on" id="ttabTimer" onclick="setTimerTab('timer')">⏲ Timer</button>
-                <button class="t-tab" id="ttabSW" onclick="setTimerTab('sw')">⏱ Stopwatch</button>
-            </div>
-
-            <!-- Timer Interface -->
-            <div id="timerSection">
-                <div class="t-inputs">
-                    <!-- Timer Inputs: Hours, Minutes, Seconds -->
-                    <input class="t-num" type="number" id="tHr" value="00" min="0" max="23" oninput="updateTimerDisplay()">
-                    <span class="t-sep">:</span>
-                    <input class="t-num" type="number" id="tMin" value="25" min="0" max="59" oninput="updateTimerDisplay()">
-                    <span class="t-sep">:</span>
-                    <input class="t-num" type="number" id="tSec" value="00" min="0" max="59" oninput="updateTimerDisplay()">
-                </div>
-                <!-- Main Timer Countdown Display -->
-                <div class="t-display" id="timerDisp">25:00</div>
-                <!-- Timer Control Buttons -->
-                <div class="t-btns">
-                    <button class="t-btn go" onclick="timerStart()">▶ Start</button>
-                    <button class="t-btn stop" onclick="timerPause()">⏸ Pause</button>
-                    <button class="t-btn rst" onclick="timerReset()">↺ Reset</button>
+        <div class="rm-body">
+            <!-- 1. Live Clock & Greeting -->
+            <div class="rm-panel panel-clock">
+                <div class="rm-panel-label">🕐 Live Clock</div>
+                <div class="clock-wrap">
+                    <div>
+                        <span class="clock-hm" id="rmClockHM">00:00</span>
+                        <span class="clock-sec" id="rmClockSec">:00</span>
+                    </div>
+                    <div class="clock-date-str" id="rmClockDate"></div>
+                    <div class="clock-greeting" id="rmGreeting"></div>
                 </div>
             </div>
 
-            <!-- Stopwatch Interface (Hidden by default) -->
-            <div id="swSection" style="display:none">
-                <div class="t-display" id="swDisp">00:00.0</div>
-                <div class="t-btns">
-                    <button class="t-btn go" onclick="swStart()">▶ Start</button>
-                    <button class="t-btn stop" onclick="swPause()">⏸ Pause</button>
-                    <button class="t-btn rst" onclick="swReset()">↺ Reset</button>
+            <!-- 2. Productivity: Timer & Stopwatch -->
+            <div class="rm-panel panel-timer">
+                <div class="rm-panel-label">⏱ Timer & Stopwatch</div>
+                <div class="t-tabs">
+                    <button class="t-tab on" id="ttabTimer" onclick="setTimerTab('timer')">⏲ Timer</button>
+                    <button class="t-tab" id="ttabSW" onclick="setTimerTab('sw')">⏱ Stopwatch</button>
                 </div>
-                <!-- Lap Button for Stopwatch -->
-                <button class="t-btn rst" style="width:100%;margin-top:8px" onclick="swLap()">🏁 Lap</button>
-                <!-- Container for recorded Lap Times -->
-                <div class="sw-laps" id="swLaps"></div>
+                <div id="timerSection">
+                    <div class="t-inputs">
+                        <input class="t-num" type="number" id="tHr" value="00" min="0" max="23" oninput="updateTimerDisplay()">
+                        <span class="t-sep">:</span>
+                        <input class="t-num" type="number" id="tMin" value="25" min="0" max="59" oninput="updateTimerDisplay()">
+                        <span class="t-sep">:</span>
+                        <input class="t-num" type="number" id="tSec" value="00" min="0" max="59" oninput="updateTimerDisplay()">
+                    </div>
+                    <div class="t-display" id="timerDisp">25:00</div>
+                    <div class="t-btns">
+                        <button class="t-btn go" onclick="timerStart()">▶ Start</button>
+                        <button class="t-btn stop" onclick="timerPause()">⏸ Pause</button>
+                        <button class="t-btn rst" onclick="timerReset()">↺ Reset</button>
+                    </div>
+                </div>
+                <div id="swSection" style="display:none">
+                    <div class="t-display" id="swDisp">00:00.0</div>
+                    <div class="t-btns">
+                        <button class="t-btn go" onclick="swStart()">▶ Start</button>
+                        <button class="t-btn stop" onclick="swPause()">⏸ Pause</button>
+                        <button class="t-btn rst" onclick="swReset()">↺ Reset</button>
+                    </div>
+                    <button class="t-btn rst" style="width:100%;margin-top:8px" onclick="swLap()">🏁 Lap</button>
+                    <div class="sw-laps" id="swLaps"></div>
+                </div>
             </div>
-        </div>
 
-        <!-- Panel 3: Alarm Management -->
-        <div class="rm-panel panel-alarm">
-            <div class="rm-panel-label">🔔 Alarms</div>
-            <!-- Form to add new alarms -->
-            <div class="al-form">
-                <input type="time" class="al-input" id="alTime">
-                <input type="text" class="al-input" id="alLabel" placeholder="Label">
-                <button class="al-add" onclick="alarmAdd()">+ Set Alarm</button>
+            <!-- 3. Alarms -->
+            <div class="rm-panel panel-alarm">
+                <div class="rm-panel-label">🔔 Alarms</div>
+                <div class="al-form">
+                    <input type="time" class="al-input" id="alTime">
+                    <input type="text" class="al-input" id="alLabel" placeholder="Label">
+                    <button class="al-add" onclick="alarmAdd()">+ Set Alarm</button>
+                </div>
+                <div class="al-list" id="alarmList"></div>
             </div>
-            <!-- List where saved alarms are rendered -->
-            <div class="al-list" id="alarmList"></div>
-        </div>
 
-        <!-- Panel 4: Task List and Statistics -->
-        <div class="rm-panel panel-tasks">
-            <div class="rm-panel-label">✅ Tasks</div>
-            <!-- Quick overview of task counts -->
-            <div class="tk-stats">
-                <div>Total: <b id="tkTotal">0</b></div>
-                <div>Done: <b id="tkDone">0</b></div>
-                <div>Pending: <b id="tkPend">0</b></div>
+            <!-- 4. To-Do List with Status Indicators -->
+            <div class="rm-panel panel-tasks">
+                <div class="rm-panel-label">✅ Tasks</div>
+                <div class="tk-stats">
+                    <div>Total: <b id="tkTotal">0</b></div>
+                    <div>Done: <b id="tkDone">0</b></div>
+                    <div>Pending: <b id="tkPend">0</b></div>
+                </div>
+                <div class="tk-form">
+                    <input type="text" class="tk-input" id="tkInput" placeholder="Add a task…" onkeydown="if(event.key==='Enter') { event.preventDefault(); taskAdd(); }">
+                    <select class="tk-pri" id="tkPri">
+                        <option value="high">🔴 High</option>
+                        <option value="med" selected>🟡 Medium</option>
+                        <option value="low">🟢 Low</option>
+                    </select>
+                    <button class="tk-add" onclick="taskAdd()">+</button>
+                </div>
+                <div class="tk-list" id="taskList"></div>
             </div>
-            <!-- Input field for adding new tasks -->
-            <div class="tk-form">
-                <input type="text" class="tk-input" id="tkInput" placeholder="Add a task…" onkeydown="if(event.key==='Enter') { event.preventDefault(); taskAdd(); }">
-                <!-- Priority Selector -->
-                <select class="tk-pri" id="tkPri">
-                    <option value="high">🔴 High</option>
-                    <option value="med" selected>🟡 Medium</option>
-                    <option value="low">🟢 Low</option>
-                </select>
-                <button class="tk-add" onclick="taskAdd()">+</button>
-            </div>
-            <!-- List where tasks are rendered -->
-            <div class="tk-list" id="taskList"></div>
-        </div>
 
-        <!-- Panel 5: Quick Notes (Auto-saving) -->
-        <div class="rm-panel panel-notes">
-            <div class="rm-panel-label">📝 Quick Notes</div>
-            <!-- Main writing area: triggers noteSave() on every keystroke -->
-            <textarea class="note-area" id="noteArea" placeholder="Jot formulas, key points..." oninput="noteSave()"></textarea>
-            <div class="note-footer">
-                <!-- Character counter -->
-                <span id="noteChars">0 chars</span>
+            <!-- 5. Persistence: Quick Notes -->
+            <div class="rm-panel panel-notes">
+                <div class="rm-panel-label">📝 Quick Notes</div>
+                <textarea class="note-area" id="noteArea" placeholder="Jot formulas, key points..." oninput="noteSave()"></textarea>
+                <div class="note-footer">
+                    <span id="noteChars">0 chars</span>
+                </div>
             </div>
-        </div>
 
-<!-- custom media player -->
-<div class="rm-panel panel-media">
-    <div class="rm-panel-label">🎵 Universal Media</div>
-    
-    <div class="media-controls-top">
-        <!-- We use a wide accept filter to stop iPad from greying out MP3s -->
-        <label for="mediaBrowse" class="media-btn browse-btn">📂 Browse All Media</label>
-        <input type="file" id="mediaBrowse" multiple accept=".mp3,.mov,.wav,.mp4,audio/*,video/*" style="display:none" onchange="handleMediaFiles(this.files)">
+            <!-- 6. Universal Media Player: Supports Video/Audio via IndexedDB -->
+            <div class="rm-panel panel-media">
+                <div class="rm-panel-label">🎵 Universal Media</div>
+                <div class="media-controls-top">
+                    <label for="mediaBrowse" class="media-btn browse-btn">📂 Browse All Media</label>
+                    <input type="file" id="mediaBrowse" multiple accept=".mp3,.mov,.wav,.mp4,audio/*,video/*" style="display:none" onchange="handleMediaFiles(this.files)">
+                </div>
+                <div id="vContainer" style="display:none; margin-bottom:12px; background:#000; border-radius:12px; overflow:hidden;">
+                    <video id="mediaEngine" playsinline style="width:100%; max-height:220px;"></video>
+                </div>
+                <div class="player-ui">
+                    <div style="text-align:center; margin-bottom:10px;">
+                        <div id="mName" style="font-weight:bold; font-size:0.9rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">No file selected</div>
+                        <div id="mTime" style="font-size:0.7rem; opacity:0.5;">00:00 / 00:00</div>
+                    </div>
+                    <div style="display:flex; justify-content:center; gap:20px; align-items:center;">
+                        <button class="p-btn" onclick="mediaPrev()">⏮</button>
+                        <button id="pBtn" class="p-btn play-main" onclick="mediaToggle()">▶</button>
+                        <button class="p-btn" onclick="mediaNext()">⏭</button>
+                    </div>
+                    <input type="range" id="mSeek" value="0" step="0.1" oninput="mediaSeekChange()" style="width:100%; margin-top:15px;">
+                </div>
+                <div id="mPlaylist" style="margin-top:15px; border-top:1px solid rgba(255,255,255,0.1); max-height:140px; overflow-y:auto;"></div>
+            </div>
+        </div> 
+    </div> 
+
+    <!-- PLANNING MODE OVERLAY: Iframe to load planning module -->
+    <div id="planningModeOverlay">
+        <div class="rm-header">
+            <div class="rm-brand">📅 Calcium <span>Planning Mode</span></div>
+            <button class="rm-exit-btn" onclick="closePlanningMode()">✕ Exit Planning Mode</button>
+        </div>
+        <div class="rm-body" style="padding: 0; overflow: hidden; display: block;">
+            <iframe src="./pv4.html" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
     </div>
 
-    <!-- Hybrid Screen: Plays the video for MOV files, stays hidden for MP3s -->
-    <div id="vContainer" style="display:none; margin-bottom:12px; background:#000; border-radius:12px; overflow:hidden;">
-        <video id="mediaEngine" playsinline style="width:100%; max-height:220px;"></video>
-    </div>
-
-    <div class="player-ui">
-        <div style="text-align:center; margin-bottom:10px;">
-            <div id="mName" style="font-weight:bold; font-size:0.9rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">No file selected</div>
-            <div id="mTime" style="font-size:0.7rem; opacity:0.5;">00:00 / 00:00</div>
+    <!-- Toast Notification for Alarms and Timers -->
+    <div class="alarm-toast" id="alarmToast">
+        <div class="toast-icon">🔔</div>
+        <div class="toast-body">
+            <h4 id="toastTitle">Alarm!</h4>
+            <p id="toastLabel">Time's up.</p>
         </div>
-        
-        <div style="display:flex; justify-content:center; gap:20px; align-items:center;">
-            <button class="p-btn" onclick="mediaPrev()">⏮</button>
-            <button id="pBtn" class="p-btn play-main" onclick="mediaToggle()">▶</button>
-            <button class="p-btn" onclick="mediaNext()">⏭</button>
-        </div>
-        
-        <input type="range" id="mSeek" value="0" step="0.1" oninput="mediaSeekChange()" style="width:100%; margin-top:15px;">
+        <button class="toast-dismiss" onclick="toastDismiss()">Dismiss</button>
     </div>
-
-    <div id="mPlaylist" style="margin-top:15px; border-top:1px solid rgba(255,255,255,0.1); max-height:140px; overflow-y:auto;"></div>
-</div>
-
-<style>
-/* Keeping your 'Calcium' Dashboard style consistent */
-.media-btn { display: block; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: #fff; padding: 10px; text-align: center; font-size: 0.8rem; cursor: pointer; margin-bottom: 12px; }
-.play-main { background: white !important; color: black !important; width: 42px; height: 42px; border-radius: 50%; border: none; font-size: 1rem; cursor: pointer; }
-.p-btn { background: none; border: none; color: white; font-size: 1.6rem; cursor: pointer; opacity: 0.8; }
-.p-item { padding: 10px; font-size: 0.75rem; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0.05); }
-.p-item.active { color: #1DB954; background: rgba(255,255,255,0.05); }
-</style>
-
-
-
-    </div> <!-- End of rm-body -->
-</div> <!-- End of readModeOverlay -->
-
-<!-- Alarm Notification Toast: Pops up when a timer or alarm finishes -->
-<div class="alarm-toast" id="alarmToast">
-    <div class="toast-icon">🔔</div>
-    <div class="toast-body">
-        <h4 id="toastTitle">Alarm!</h4>
-        <p id="toastLabel">Time's up.</p>
-    </div>
-    <!-- Button to close the notification -->
-    <button class="toast-dismiss" onclick="toastDismiss()">Dismiss</button>
-</div>
 
     <script>
     /* =========================================
-    GLOBAL STATE & UPDATES
+    STATE & INITIALIZATION
     ========================================= */
     const banner = document.getElementById("updateBanner");
     const message = document.getElementById("updateMessage");
     const link = document.getElementById("updateLink");
-    let audioCtx = null;
+    let audioCtx = null; // Used for beep sounds
 
     const updates = [
         { text: "SPOM Set A & B Prefinal Exams Are Now Available!", url: "./bin/exam/spom/espom.html" }
     ];
     let currentIndex = 0;
 
-    /* ── STARTUP LOADER ── */
+    // Load data on window startup
     window.addEventListener("load", () => {
         setTimeout(() => {
             banner.classList.add("show");
             showUpdate();
-            if (updates.length > 1) { 
-                setInterval(showUpdate, 3000); 
-            }
+            if (updates.length > 1) { setInterval(showUpdate, 3000); }
         }, 500);
 
-        // Load Notes
+        // Persistent data recovery from LocalStorage
         const savedNotes = localStorage.getItem("cn_notes");
-        if (savedNotes !== null) {
-            document.getElementById("noteArea").value = savedNotes;
-        }
+        if (savedNotes !== null) { document.getElementById("noteArea").value = savedNotes; }
 
-        // Load Tasks
         const savedTasks = localStorage.getItem("cn_tasks");
-        if (savedTasks) {
-            tasks = JSON.parse(savedTasks);
-            renderTasks();
-        }
+        if (savedTasks) { tasks = JSON.parse(savedTasks); renderTasks(); }
 
-        // Load Alarms
         const savedAlarms = localStorage.getItem("cn_alarms");
-        if (savedAlarms) {
-            alarms = JSON.parse(savedAlarms);
-            renderAlarms();
-        }
+        if (savedAlarms) { alarms = JSON.parse(savedAlarms); renderAlarms(); }
 
         showRandomQuote();
         tickClock();
@@ -360,21 +310,16 @@
         link.href = updates[currentIndex].url;
         currentIndex = (currentIndex + 1) % updates.length;
     }
-
     function closeUpdate(){ banner.classList.remove("show"); }
 
     /* =========================================
     MOTIVATION LOGIC
     ========================================= */
     const quotes = [
-        { text: "Of the Adityas I am Visnu, of lights i am the radiant sun, of the maruts i am Marici, and amoung the stars i am the Moon", author: "Sri Krishna" },
+        { text: "Of the Adityas I am Visnu, of lights i am the radiant sun...", author: "Sri Krishna" },
         { text: "Success doesn't come from what you do occasionally, it comes from consistency.", author: "Marie Forleo" },
         { text: "Discipline is choosing between what you want now and what you want most.", author: "Abraham Lincoln" },
-        { text: "Dream big. Start small. Act now.", author: "Robin Sharma" },
-        { text: "You can sleep When you are Dead.", author: "Max Verstappen"},
-        { text: "Nothing is easy when your lazy and everything is easy when you are crazy", author: "Swami Vivekananda"},
-        { text: "Life is 10 % what happens and 90% how you react", author: "Charles R. Swindoll"},
-        { text: "reset, reset, refocus", author: "Gaur Gopal Das"}
+        { text: "You can sleep When you are Dead.", author: "Max Verstappen"}
     ];
 
     function showRandomQuote() {
@@ -384,37 +329,53 @@
     }
 
     /* =========================================
-    READ MODE CONTROLS
+    OVERLAY & CLOCK CONTROLS
     ========================================= */
-    const overlay = document.getElementById("readModeOverlay");
+    const readOverlay = document.getElementById("readModeOverlay");
+    const planOverlay = document.getElementById("planningModeOverlay");
 
     function openReadMode() { 
+        // Resume Audio Context for beeps (required by modern browsers)
         if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         if (audioCtx.state === 'suspended') audioCtx.resume();
-        overlay.classList.add("rm-active");
-        setTimeout(() => overlay.classList.add("rm-visible"), 10);
-        document.body.style.overflow = "hidden";
+        readOverlay.classList.add("rm-active");
+        setTimeout(() => readOverlay.classList.add("rm-visible"), 10);
+        document.body.style.overflow = "hidden"; // Prevent background scroll
     }
 
     function closeReadMode() {
-        overlay.classList.remove("rm-visible");
-        setTimeout(() => { overlay.classList.remove("rm-active"); document.body.style.overflow = ""; }, 350);
+        readOverlay.classList.remove("rm-visible");
+        setTimeout(() => { readOverlay.classList.remove("rm-active"); document.body.style.overflow = ""; }, 350);
     }
 
-    /* ── CLOCK ── */
+    function openPlanningMode() {
+        planOverlay.classList.add("rm-active");
+        setTimeout(() => planOverlay.classList.add("rm-visible"), 10);
+        document.body.style.overflow = "hidden";
+    }
+
+    function closePlanningMode() {
+        planOverlay.classList.remove("rm-visible");
+        setTimeout(() => { planOverlay.classList.remove("rm-active"); document.body.style.overflow = ""; }, 350);
+    }
+
     function tickClock() {
         const now = new Date();
         const H = String(now.getHours()).padStart(2,'0'), M = String(now.getMinutes()).padStart(2,'0'), S = String(now.getSeconds()).padStart(2,'0');
         document.getElementById("rmClockHM").textContent = H + ":" + M;
         document.getElementById("rmClockSec").textContent = ":" + S;
         document.getElementById("rmClockDate").textContent = now.toDateString();
+        
+        // Greeting Logic based on hour
         const h = now.getHours();
         document.getElementById("rmGreeting").textContent = h < 12 ? "Good Morning ☀️" : h < 17 ? "Good Afternoon ⚡" : h < 21 ? "Good Evening 🌙" : "Night Study 🌟";
         alarmCheck(H + ":" + M);
     }
     setInterval(tickClock, 1000);
 
-    /* ── TIMER & STOPWATCH ── */
+    /* =========================================
+    TIMER & STOPWATCH LOGIC
+    ========================================= */
     let timerIv = null, timerLeft = 0, timerOn = false;
 
     function setTimerTab(t) {
@@ -458,6 +419,7 @@
     function timerPause() { clearInterval(timerIv); timerOn = false; }
     function timerReset() { timerPause(); updateTimerDisplay(); }
 
+    // Stopwatch Logic
     let swOn = false, swIv = null, swMs = 0, swLaps = [];
     function swStart() {
         if (swOn) return; swOn = true;
@@ -474,10 +436,11 @@
     function swReset() { swPause(); swMs = 0; swLaps = []; document.getElementById("swDisp").textContent = "00:00.0"; document.getElementById("swLaps").innerHTML = ""; }
     function swLap() { swLaps.push(fmtSW(swMs)); document.getElementById("swLaps").innerHTML = swLaps.map((l,i) => `<div>Lap ${i+1}: ${l}</div>`).join(''); }
 
-    /* ── ALARMS & TASKS ── */
+    /* =========================================
+    ALARMS & TASKS HANDLERS
+    ========================================= */
     let alarms = [], alarmFired = {}, tasks = [];
 
-    // Formats Railway Time (17:30) to AM/PM (5:30 PM) for the list
     function fmtAlarmListTime(t24) {
         const [h, m] = t24.split(':');
         const hr = parseInt(h);
@@ -520,6 +483,7 @@
         });
     }
 
+    // Task Logic
     function taskAdd() {
         const txt = document.getElementById("tkInput").value.trim();
         if (txt) { 
@@ -554,7 +518,9 @@
             </div>`).join('');
     }
 
-    /* ── TOAST LOGIC ── */
+    /* =========================================
+    NOTIFICATIONS & MEDIA PLAYER
+    ========================================= */
     function toastShow(title, label) {
         const toast = document.getElementById("alarmToast");
         document.getElementById("toastTitle").textContent = title;
@@ -570,7 +536,6 @@
         setTimeout(() => { toast.style.display = "none"; }, 400);
     }
 
-    /* ── NOTES & PERSISTENCE ── */
     function noteSave() {
         localStorage.setItem("cn_notes", document.getElementById("noteArea").value);
     }
@@ -583,167 +548,109 @@
         gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1);
         osc.stop(audioCtx.currentTime + 1);
     }
-    // Custom music player
+    
+    // IndexedDB Media Storage (Allows users to keep a playlist after refresh)
     let mediaFiles = [];
-let currentIdx = 0;
-let engine, playButton, seekSlider, videoBox, db;
+    let currentIdx = 0;
+    let engine, playButton, seekSlider, videoBox, db;
 
-// 1. Initialize Database with better error handling
-const dbRequest = indexedDB.open("CalciumMediaDB", 1);
-
-dbRequest.onupgradeneeded = (e) => {
-    let database = e.target.result;
-    if (!database.objectStoreNames.contains("playlist")) {
-        database.createObjectStore("playlist", { keyPath: "id", autoIncrement: true });
-    }
-};
-
-dbRequest.onsuccess = (e) => {
-    db = e.target.result;
-    console.log("Database opened successfully");
-    loadPlaylistFromDB(); // Automatically load saved songs on refresh
-};
-
-dbRequest.onerror = (e) => {
-    console.error("Database error:", e.target.error);
-};
-
-window.addEventListener("DOMContentLoaded", () => {
-    engine = document.getElementById("mediaEngine");
-    playButton = document.getElementById("pBtn");
-    seekSlider = document.getElementById("mSeek");
-    videoBox = document.getElementById("vContainer");
-
-    engine.onended = () => mediaNext();
-    
-    // Smooth seek bar updates
-    engine.ontimeupdate = () => {
-        if (!isNaN(engine.duration)) {
-            seekSlider.max = engine.duration;
-            seekSlider.value = engine.currentTime;
-            document.getElementById("mTime").textContent = 
-                fmt(engine.currentTime) + " / " + fmt(engine.duration);
+    const dbRequest = indexedDB.open("CalciumMediaDB", 1);
+    dbRequest.onupgradeneeded = (e) => {
+        let database = e.target.result;
+        if (!database.objectStoreNames.contains("playlist")) {
+            database.createObjectStore("playlist", { keyPath: "id", autoIncrement: true });
         }
     };
-});
+    dbRequest.onsuccess = (e) => {
+        db = e.target.result;
+        loadPlaylistFromDB(); 
+    };
 
-// 2. Fixed: Handle and Save Files
-function handleMediaFiles(files) {
-    if (!db) {
-        alert("Database not ready yet. Please wait a second.");
-        return;
-    }
+    window.addEventListener("DOMContentLoaded", () => {
+        engine = document.getElementById("mediaEngine");
+        playButton = document.getElementById("pBtn");
+        seekSlider = document.getElementById("mSeek");
+        videoBox = document.getElementById("vContainer");
 
-    const transaction = db.transaction(["playlist"], "readwrite");
-    const store = transaction.objectStore("playlist");
-
-    // Process each file
-    for (let i = 0; i < files.length; i++) {
-        const file = files[i];
-        const entry = {
-            name: file.name,
-            data: file, // The actual MP3/MOV data
-            type: file.type
+        engine.onended = () => mediaNext();
+        engine.ontimeupdate = () => {
+            if (!isNaN(engine.duration)) {
+                seekSlider.max = engine.duration;
+                seekSlider.value = engine.currentTime;
+                document.getElementById("mTime").textContent = fmt(engine.currentTime) + " / " + fmt(engine.duration);
+            }
         };
-        store.add(entry);
-    }
+    });
 
-    transaction.oncomplete = () => {
-        console.log("All files saved to iPad storage.");
-        loadPlaylistFromDB(); // Refresh the UI list
-    };
-
-    transaction.onerror = (e) => {
-        console.error("Transaction error:", e.target.error);
-    };
-}
-
-// 3. Load from iPad Storage
-function loadPlaylistFromDB() {
-    if (!db) return;
-
-    const transaction = db.transaction(["playlist"], "readonly");
-    const store = transaction.objectStore("playlist");
-    const getRequest = store.getAll();
-
-    getRequest.onsuccess = () => {
-        // Clear current URLs to free up memory
-        mediaFiles.forEach(f => URL.revokeObjectURL(f.url));
-
-        mediaFiles = getRequest.result.map(item => ({
-            name: item.name,
-            url: URL.createObjectURL(item.data),
-            isVid: item.type.includes('video') || item.name.toLowerCase().endsWith('.mov')
-        }));
-
-        if (mediaFiles.length > 0) {
-            drawPlaylist();
-            loadMedia(0, false); // Load first track but don't auto-play on refresh
+    function handleMediaFiles(files) {
+        if (!db) return alert("Database not ready.");
+        const transaction = db.transaction(["playlist"], "readwrite");
+        const store = transaction.objectStore("playlist");
+        for (let i = 0; i < files.length; i++) {
+            store.add({ name: files[i].name, data: files[i], type: files[i].type });
         }
-    };
-}
-
-// ── Player Controls ──
-
-function loadMedia(idx, shouldPlay = true) {
-    if (!mediaFiles[idx]) return;
-    currentIdx = idx;
-    engine.pause();
-    
-    videoBox.style.display = mediaFiles[idx].isVid ? "block" : "none";
-    engine.src = mediaFiles[idx].url;
-    engine.load(); 
-    
-    document.getElementById("mName").textContent = mediaFiles[idx].name;
-    drawPlaylist();
-
-    if (shouldPlay) {
-        engine.play().then(() => { playButton.textContent = "⏸"; })
-                     .catch(() => { playButton.textContent = "▶"; });
+        transaction.oncomplete = () => loadPlaylistFromDB(); 
     }
-}
 
-function mediaToggle() {
-    if (engine.paused) { 
-        engine.play(); 
-        playButton.textContent = "⏸"; 
-    } else { 
-        engine.pause(); 
-        playButton.textContent = "▶"; 
+    function loadPlaylistFromDB() {
+        if (!db) return;
+        const transaction = db.transaction(["playlist"], "readonly");
+        const getRequest = transaction.objectStore("playlist").getAll();
+
+        getRequest.onsuccess = () => {
+            // Revoke old URLs to prevent memory leaks
+            mediaFiles.forEach(f => URL.revokeObjectURL(f.url));
+            mediaFiles = getRequest.result.map(item => ({
+                name: item.name,
+                url: URL.createObjectURL(item.data),
+                isVid: item.type.includes('video') || item.name.toLowerCase().endsWith('.mov')
+            }));
+
+            if (mediaFiles.length > 0) {
+                drawPlaylist();
+                loadMedia(0, false); 
+            }
+        };
     }
-}
 
-function mediaNext() { 
-    if(mediaFiles.length) loadMedia((currentIdx + 1) % mediaFiles.length); 
-}
+    function loadMedia(idx, shouldPlay = true) {
+        if (!mediaFiles[idx]) return;
+        currentIdx = idx;
+        engine.pause();
+        
+        videoBox.style.display = mediaFiles[idx].isVid ? "block" : "none";
+        engine.src = mediaFiles[idx].url;
+        engine.load(); 
+        
+        document.getElementById("mName").textContent = mediaFiles[idx].name;
+        drawPlaylist();
 
-function mediaPrev() { 
-    if(mediaFiles.length) loadMedia((currentIdx - 1 + mediaFiles.length) % mediaFiles.length); 
-}
+        if (shouldPlay) {
+            engine.play().then(() => { playButton.textContent = "⏸"; })
+                         .catch(() => { playButton.textContent = "▶"; });
+        }
+    }
 
-function drawPlaylist() {
-    const list = document.getElementById("mPlaylist");
-    list.innerHTML = mediaFiles.map((m, i) => `
-        <div class="p-item ${i === currentIdx ? 'active' : ''}" onclick="loadMedia(${i})">
-            ${i + 1}. ${m.name}
-        </div>
-    `).join('');
-}
+    function mediaToggle() {
+        if (engine.paused) { engine.play(); playButton.textContent = "⏸"; } 
+        else { engine.pause(); playButton.textContent = "▶"; }
+    }
 
-function mediaSeekChange() { engine.currentTime = seekSlider.value; }
+    function mediaNext() { if(mediaFiles.length) loadMedia((currentIdx + 1) % mediaFiles.length); }
+    function mediaPrev() { if(mediaFiles.length) loadMedia((currentIdx - 1 + mediaFiles.length) % mediaFiles.length); }
 
-function fmt(s) {
-    const min = Math.floor(s / 60), sec = Math.floor(s % 60);
-    return String(min).padStart(2,'0') + ":" + String(sec).padStart(2,'0');
-}
+    function drawPlaylist() {
+        document.getElementById("mPlaylist").innerHTML = mediaFiles.map((m, i) => `
+            <div class="p-item ${i === currentIdx ? 'active' : ''}" onclick="loadMedia(${i})">
+                ${i + 1}. ${m.name}
+            </div>`).join('');
+    }
 
-// ── Clear Feature ──
-function clearPlaylist() {
-    const transaction = db.transaction(["playlist"], "readwrite");
-    transaction.objectStore("playlist").clear();
-    transaction.oncomplete = () => location.reload();
-}
-
-</script>
+    function mediaSeekChange() { engine.currentTime = seekSlider.value; }
+    function fmt(s) {
+        const min = Math.floor(s / 60), sec = Math.floor(s % 60);
+        return String(min).padStart(2,'0') + ":" + String(sec).padStart(2,'0');
+    }
+    </script>
 </body>
 </html>
