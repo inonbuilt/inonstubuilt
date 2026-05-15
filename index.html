@@ -125,6 +125,14 @@
     <footer>
         Contact Us <br>
         EMAIL: <a href="mailto:calciumnotes@gmail.com">calciumnotes@gmail.com</a>
+        <div class="social-container" style="text-align: center; margin-top: 10px; align-items: center; justify-content: center; display: flex; gap: 15px;">
+            <a href="https://www.instagram.com/calciumnotes" class="btn instagram" target="_blank">
+            Instagram
+            </a>
+            <a href="https://www.twitter.com/@Calciumnotes" class="btn twitter" target="_blank">
+            Twitter
+            </a>
+        </div>
     </footer>
 
     <!-- READ MODE OVERLAY: Study productivity tools (Clock, Timer, Media, Tasks) -->
@@ -627,7 +635,7 @@
 
         if (shouldPlay) {
             engine.play().then(() => { playButton.textContent = "⏸"; })
-                         .catch(() => { playButton.textContent = "▶"; });
+                        .catch(() => { playButton.textContent = "▶"; });
         }
     }
 
