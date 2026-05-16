@@ -935,9 +935,2003 @@ questions:[{question:"Mr. Sunil was recently appointed as independent Director o
         "The required quorum in this case is participation of minimum five directors in the Board Meeting.",
         "The required quorum in this case is participation of minimum fourdirectors in the Board Meeting."],answer:2}
     ]
+},
+
+// Case 31
+{
+    caseText: "<p>Listed with BSE Limited and National Stock Exchange of India Limited, Superfast Motors Limited is a top player in the category of car dealers. The company, established in 2016 at New Delhi, always endeavored to achieve highest level of customer satisfaction and improving the buyers' experience for its customers. The company not only sells cars manufactured by Metro Motors Limited but also deals in used cars, insurance and finance. The company has showrooms in ten major cities of India. In addition, Superfast Motors Limited is also a leading original equipment manufacturer (OEM) offering an extensive range of integrated, smart and e-mobility solutions.</p><p>Superfast Motors Limited was planning for expansion in India and overseas. Accordingly, it negotiated with Jupiter Mauritius Auto Limited, a company registered in Mauritius, for merger with itself. Further, it also proposed a merger plan with Mars Ltd. of Kolkata, a company engaged in the business of manufacturing and distribution of tyre and auto accessories. Mars Ltd. is listed with BSE Limited and National Stock Exchange of India Limited and has a paid-up share capital of 40 crore. Superfast Motors Limited called a Board Meeting to draft the agreements for the merger of the aforesaid Jupiter Mauritius Auto Limited and Mars Ltd.</p><p>The paid-up share capital of Superfast Motors Limited is 90 crore consisting of 9000 members. As per the order of the National Company Law Tribunal (NCLT), the company called the general meeting of the members for the merger of Mars Ltd. with itself. The meeting was attended by 4400 members in person while 600 members appointed proxies in place of themselves to attend the said general meeting. Remaining 4000 members holding 15.00 crore worth of shares remained absent. It is noteworthy that 3200 members representing shares of the value of 50.40 crore and 600 proxies representing shares of the value of 7.00 crore who attended the meeting, voted in favor of the scheme of merger. Thereafter, Mars Ltd. was successfully merged with Superfast Motors Limited as per the applicable laws. However, 3,000 absentee members of Superfast Motors Limited wanted the merger to be annulled because it was not valid. There was, however, not much resistance exerted by the members of Mars Ltd. against the merger and it was approved by 93% of majority of members holding shares 94% in value.</p><p>A number of directors, officers and employees of Mars Ltd. lost their assignments after the merger of Mars Ltd. with Superfast Motors Limited. Mr. Ramneek the Managing Director, Mr. Lokesh, the Whole-time Director, Mr. Botham and Mr. Srikant, the other two non-executive directors of Mars Ltd. approached the company for compensation due to the loss of their respective offices. However, the company denied compensation but in case of Mr. Lokesh who, on the basis of his outstanding record, was given appointment as Manager in Superfast Motors Limited. Certain members of Mars Ltd. were of the opinion that transfer of funds and assets of the company would be affecting their interest. Accordingly, members numbering 110 out of 2000 members decided to file an application before NCLT.</p><p>Mr. Rakesh, one of the Directors of Superfast Motors Limited, in a Board Meeting pointed out that Mr. Bhaskar, another Director, was holding directorships in 21 companies, out of which 11 were private companies including Bright Cycles Pvt. Ltd. which was subsidiary of Zeta Mechanical Products Limited and 10 other public companies. The Board asked Mr. Bhaskar to resign from his office of directorship either in Superfast Motors Limited or any other company of his choice since the number of directorships in his case was exceeding the maximum limit.</p><p>In response to the direction given by the Board to resign from directorship, Mr. Bhaskar averred that he had not violated the provisions relating to holding of maximum number of directorships. In fact, out of 10 public companies in which he was holding the office of directorships, one was a dormant company. Further, in one of the companies out of 11 private companies, he was appointed as an alternate Director. So far as his knowledge was concerned, directorship in dormant company as well as alternate directorship were not includible while counting the maximum number of directorships. Rather, he was eligible to hold directorship in one more company because he held effective directorships in only 19 companies. Therefore, in no way, he had violated the provisions relating to holding of maximum number of 20 directorships in different companies. In view of the above facts, he stressed that he would not tender resignation in any company including Superfast Motors Limited and if the Board still wanted him to remove from the office of director, it was at liberty to do so. The Board of Directors of Superfast Motors Limited agreed with the averments advanced by Mr. Bhaskar and dropped the idea of asking him to resign or moving a resolution for his removal from holding the office of director.</p>",
+    questions: [
+        {
+            question: "From the case scenario, it is noticed that the Board of Directors of Superfast Motors Limited agreed with the averments advanced by Mr. Bhaskar and dropped the idea of asking him to resign or moving a resolution for his removal from holding the office of director. Whether the decision of the Board is valid? Choose the correct option from those stated hereunder:",
+            options: [
+                "The decision of the Board of Directors of Superfast Motors Limited to drop the idea of asking Mr. Bhaskar to resign or to move a resolution for his removal is valid because alternate directorship is not includible while counting the number of 20 companies.",
+                "The decision of the Board of Directors of Superfast Motors Limited to drop the idea of asking Mr. Bhaskar to resign or to move a resolution for his removal is valid because directorship in a dormant company is not includible while counting the number of 20 companies.",
+                "The decision of the Board of Directors of Superfast Motors Limited to drop the idea of asking Mr. Bhaskar to resign or to move a resolution for his removal is not valid because while counting the number of 10 public companies, directorship in a private company which is subsidiary of a public company is also includible.",
+                "The decision of the Board of Directors of Superfast Motors Limited to drop the idea of asking Mr. Bhaskar to resign or to move a resolution for his removal is valid because he holds effective directorships in only 19 companies after excluding alternate directorship and directorship in a dormant company."
+            ],
+            answer: 1
+        },
+        {
+            question: "In response to demand for compensation made by Mr. Ramneek, Mr. Lokesh, Mr. Botham and Mr. Srikant, Mars Ltd. was not keen to compensate them. Whether such denial by Mars Ltd. is valid? Select the correct answer from the following options:",
+            options: [
+                "Denial for compensation by Mars Ltd. is valid because compensation for loss of office is not available in case of merger or amalgamation.",
+                "Absolute denial for compensation by Mars Ltd. is not valid because Mr. Ramneek and Mr. Lokesh are eligible for compensation for loss of office as Managing Director and Whole-time director respectively.",
+                "Absolute denial for compensation by Mars Ltd. is not valid in case of Mr. Ramneek since only he is eligible for compensation for loss of office as Managing Director.",
+                "Absolute denial for compensation by Mars Ltd. is not valid because Mr. Ramneek, Mr. Botham and Mr. Srikant are eligible for compensation for loss of office as Managing Director and non-executive directors respectively."
+            ],
+            answer: 2
+        },
+        {
+            question: "Choose the correct statement from those stated below:",
+            options: [
+                "Jupiter Mauritius Auto Limited can get merged with Superfast Motors Limited but only after obtaining prior approval of Reserve bank of India (RBI).",
+                "Jupiter Mauritius Auto Limited can get merged with Superfast Motors Limited but only after obtaining prior approval of Securities and Exchange Board of India (SEBI).",
+                "Jupiter Mauritius Auto Limited can get merged with Superfast Motors Limited but only after obtaining prior approval of National Company Law Tribunal (NCLT).",
+                "Jupiter Mauritius Auto Limited can get merged with Superfast Motors Limited but only obtaining prior approval of Ministry of Finance."
+            ],
+            answer: 0
+        },
+        {
+            question: "The case scenario states that Mars Ltd. was merged with Superfast Motors Limited. However, 3,000 absentee members of Superfast Motors Limited wanted the merger to be annulled because it was not valid. You are required to advise these members whether the approval accorded by the members of Superfast Motors Limited for the merger was valid or not. Select the correct alternative from those given hereunder:",
+            options: [
+                "The approval accorded by the members of Superfast Motors Limited for the merger was valid because the majority of members representing requisite value of shareholding voted in favour of the scheme of merger.",
+                "The approval accorded by the members of Superfast Motors Limited for the merger was not valid because the majority of the members who voted in favour of the scheme of merger must hold 80% or more worth of shares in value considering the total value of shares held by the members who attended the general meeting.",
+                "The approval accorded by the members of Superfast Motors Limited for the merger was not valid because the majority of the members who voted in favour of the scheme of merger must hold 90% or more worth of shares in value considering the total value of shares held by the members who attended the general meeting.",
+                "The approval accorded by the members of Superfast Motors Limited for the merger was not valid because only 3800 members out of total 9000 members voted in favour of the scheme of merger and it was not a majority."
+            ],
+            answer: 0
+        },
+        {
+            question: "Whether the petition filed by 110 members of Mars Ltd. with National Company Law Tribunal (NCLT) would be maintainable assuming the proposal made by Superfast Motors Limited to Mars Ltd. was a takeover offer and not a merger offer? Choose the correct option from the following alternatives.",
+            options: [
+                "Petition filed by 110 members of Mars Ltd. with National Company Law Tribunal (NCLT) would be maintainable because more than 100 members can apply for relief against oppression and mismanagement prevailing in a company.",
+                "Petition filed by 110 members of Mars Ltd. with National Company Law Tribunal (NCLT) would not be maintainable because less than 1/10th of total number of members have applied for relief against oppression and mismanagement.",
+                "Petition filed by 110 members of Mars Ltd. with National Company Law Tribunal (NCLT) would be maintainable because 100 members or 1/10th of total number of members, whichever is lower, can apply for relief against oppression and mismanagement.",
+                "Petition filed by 110 members of Mars Ltd. with National Company Law Tribunal (NCLT) would not be maintainable because these members cannot file a case for redressal of their grievances to NCLT in case of takeover offer."
+            ],
+            answer: 3
+        }
+    ]
+},
+
+// Case 32
+{
+    caseText: "<p>SportsPoint Manufacturers and Traders Limited, having registered office at Meerut, Uttar Pradesh, was incorporated under the Companies Act, 1956, in the month of August, 1990. The company manufactures sports coaching equipments like bags, clipboards, pinnies, referee uniforms, whistles of different types, etc., and game equipments like goals, posts, nets, etc., of the finest quality and sells its products to various schools, colleges, clubs and other institutions pan India directly as well as through its dealers.</p><p>The issued, subscribed and paid-up equity share capital of SportsPoint Manufacturers and Traders Limited as on 31st March, 2021 is 25 crore, consisting of 2.50 crore equity shares of the face value of 10 each. These shares are listed both on the BSE Limited and National Stock Exchange of India Limited. The company planned to issue bonus debentures to its shareholders as a reward since it is a known fact that the shareholders invariably welcome bonus debentures wholeheartedly simply because of the reason that they get regular interest during the tenure of the debentures.</p><p>Accordingly, after following the due procedure, SportsPoint Manufacturers and Traders Limited filed a scheme of arrangement before the jurisdictional National Company Law Tribunal (NCLT) for issue of secured, non-convertible and redeemable fully paid-up 9% Debentures by way of bonus to its members as on the record date out of the accumulated profits lying to the credit of Profit & Loss Account under Sections 230 to 232 and other applicable provisions of the Companies Act, 2013.</p><p>The scheme of arrangement filed by SportsPoint Manufacturers and Traders Limited with the National Company Law Tribunal (NCLT) stipulates for issue and allotment by way of bonus, one fully paid-up 9% Debenture of the face value of 150 each by utilizing its accumulated profits, for every one fully paid-up equity share of face value of 10 each held by total 1,25,000 members as on the record date. The 9% Debentures shall be redeemed after ten years from the date of allotment. As regards payment of interest on debentures, the same shall be paid at intervals of twelve months from the date of allotment.</p><p>Pursuant to the order, dated 14th July, 2021, passed by the Hon'ble National Company Law Tribunal (NCLT), a meeting of the equity shareholders of SportsPoint Manufacturers and Traders Limited was convened at the registered office of the company at Meerut, on Monday, August 23, 2021, at 1:00 P.M. In accordance with the provisions of Sections 230 to 232 of the Companies Act, 2013, the scheme was agreed to by a requisite majority of shareholders who had required value of shareholding. The equity shareholders either voted themselves or through proxies or by postal ballot or through electronic means.</p>",
+    questions: [
+        {
+            question: "What is the amount, which SportsPoint Manufacturers and Traders Limited intends to utilise out of accumulated profits for issue of bonus debentures?",
+            options: [
+                "SportsPoint Manufacturers and Traders Limited intends to utilise accumulated profits to the extent of 150 crore for issue of bonus debentures.",
+                "SportsPoint Manufacturers and Traders Limited intends to utilise accumulated profits to the extent of 200 crore for issue of bonus debentures.",
+                "SportsPoint Manufacturers and Traders Limited intends to utilise accumulated profits to the extent of 375 crore for issue of bonus debentures.",
+                "SportsPoint Manufacturers and Traders Limited intends to utilise accumulated profits to the extent of 250 crore for issue of bonus debentures."
+            ],
+            answer: 2
+        },
+        {
+            question: "The case scenario states that the scheme of arrangement envisaging issue of bonus debentures in a particular ratio was agreed to by a requisite majority of shareholders who had required shareholding in value. Which kind of majority is required for approving the scheme of arrangement as presented by SportsPoint Manufacturers and Traders Limited in the meeting of the shareholders?",
+            options: [
+                "The shareholders of SportsPoint Manufacturers and Traders Limited must have approved the scheme of arrangement envisaging issue of bonus debentures in a particular ratio by passing an ordinary resolution.",
+                "The shareholders of SportsPoint Manufacturers and Traders Limited must have approved the scheme of arrangement envisaging issue of bonus debentures in a particular ratio by passing a special resolution.",
+                "The shareholders of SportsPoint Manufacturers and Traders Limited must have approved the scheme of arrangement envisaging issue of bonus debentures in a particular ratio by simple majority of members who had minimum shareholding of three-fourths in value.",
+                "The shareholders of SportsPoint Manufacturers and Traders Limited must have approved the scheme of arrangement envisaging issue of bonus debentures in a particular ratio by simple majority of members who had minimum shareholding of two-third in value."
+            ],
+            answer: 2
+        },
+        {
+            question: "Minimum how many equity shares are required to be held by the shareholders of SportsPoint Manufacturers and Traders Limited voting in favour of the scheme of arrangement envisaging issue of bonus debentures in a particular ratio for its approval?",
+            options: [
+                "Minimum 1.275 crore equity shares are required to be held by the shareholders of SportsPoint Manufacturers and Traders Limited to consider the scheme of arrangement as approved.",
+                "Minimum 1.50 crore equity shares are required to be held by the shareholders of SportsPoint Manufacturers and Traders Limited to consider the scheme of arrangement as approved.",
+                "Minimum 1.75 crore equity shares are required to be held by the shareholders of SportsPoint Manufacturers and Traders Limited to consider the scheme of arrangement as approved.",
+                "Minimum 1.875 crore equity shares are required to be held by the shareholders of SportsPoint Manufacturers and Traders Limited to consider the scheme of arrangement as approved."
+            ],
+            answer: 3
+        },
+        {
+            question: "Minimum how many members of SportsPoint Manufacturers and Traders Limited must have agreed to the scheme of arrangement envisaging issue of bonus debentures in a particular ratio, if 40% of the total members had attended and 30% of the total members had voted at the meeting?",
+            options: [
+                "Minimum 18,751 members of SportsPoint Manufacturers and Traders Limited must have agreed to the scheme of arrangement.",
+                "Minimum 22,500 members of SportsPoint Manufacturers and Traders Limited must have agreed to the scheme of arrangement.",
+                "Minimum 20,625 members of SportsPoint Manufacturers and Traders Limited must have agreed to the scheme of arrangement.",
+                "Minimum 24,375 members of SportsPoint Manufacturers and Traders Limited must have agreed to the scheme of arrangement."
+            ],
+            answer: 0
+        },
+        {
+            question: "Assuming that 40% of the total members of SportsPoint Manufacturers and Traders Limited had attended the meeting to consider the scheme of arrangement envisaging issue of bonus debentures in a particular ratio and 30% of the total members had voted at the meeting, then minimum how much shareholding in value was held by the minimum members who voted in favour of the scheme in order that the scheme was considered as approved:",
+            options: [
+                "Minimum shareholding in value that was held by the minimum members who voted in favour of the scheme in order that the scheme was considered as approved must have been 4.5 crore.",
+                "Minimum shareholding in value that was held by the minimum members who voted in favour of the scheme in order that the scheme was considered as approved must have been 6.0 crore.",
+                "Minimum shareholding in value that was held by the minimum members who voted in favour of the scheme in order that the scheme was considered as approved must have been 5.25 crore.",
+                "Minimum shareholding in value that was held by the minimum members who voted in favour of the scheme in order that the scheme was considered as approved must have been 5.625 crore."
+            ],
+            answer: 3
+        }
+    ]
+},
+
+// Case 33
+{
+    caseText: "<p>Pure Pharma Limited, incorporated under the Companies Act, 1956, is a pharmaceutical company located at Hyderabad, Andhra Pradesh. Founded by Annand Reddy and his family in the year 1971, it manufactures and markets a wide range of pharmaceuticals in India. The company has over 100 medications, above 30 active pharmaceutical ingredients for drug manufacture, various diagnostic kits and bio-technology products.</p><p>The issued, subscribed and paid-up equity share capital of Pure Pharma Limited as on 31st March, 2021, is 30 crore consisting of 30 crore equity shares of 1 each, which are listed on BSE Limited and National Stock Exchange of India Limited. Earlier, there were 3 crore equity shares of the face value of 10 each but after the stock split, the face value was reduced to Re. 1 per share, thus increasing the number of shares to 30 crore i.e. 10 times in the hands of shareholders.</p><p>In order to optimally utilise surplus reserves, Pure Pharma Limited intended to issue bonus debentures to its equity shareholders by restructuring the general reserves. These bonus debentures, when listed, would have the dual benefit of avoiding, on the one hand, an upfront cash outflow for the company while offering, on the other, the option of immediate liquidity for the shareholders.</p><p>Accordingly, Pure Pharma Limited formulated a scheme of arrangement for issue and allotment by way of bonus, one fully paid-up 8% Debenture of the face value of 20 each, by utilizing its free reserves, for every one fully paid-up equity share of face value of 1 each held by total 50,000 members as on the record date. So far as the issue of bonus debentures out of free reserves was concerned, there was no arrangement with the creditors of Pure Pharma Limited. Consequently, no compromise was offered under the scheme of arrangement to any of the creditors of the company. The liability of the creditors under the scheme, was neither being reduced nor being extinguished.</p><p>In pursuance of the so formulated scheme of arrangement, Pure Pharma Limited filed the said scheme with the National Company Law Tribunal (NCLT) for issue of secured non-convertible redeemable fully paid-up 8% Debentures by way of bonus to its members as on the record date out of the free reserves lying to the credit of General Reserve Account under Sections 230 to 232 and other applicable provisions of the Companies Act, 2013.</p><p>Pursuant to the Order passed by the Hon'ble National Company Law Tribunal (NCLT), a meeting of the equity shareholders of the company was convened at the registered office of the company. In accordance with the provisions of Sections 230 to 232 of the Companies Act, 2013, the scheme was agreed to by the requisite members. The Order, dated 2nd August 2021, passed by the Hon'ble National Company Law Tribunal (NCLT) approving the scheme of arrangement was received by Pure Pharma Limited on 6th August 2021 and thereafter, the same was filed with the jurisdictional Registrar of Companies.</p>",
+    questions: [
+        {
+            question: "How many 8% Debentures are required to be issued by Pure Pharma Limited in pursuance of the scheme of arrangement as approved by the NCLT?",
+            options: [
+                "25 crore 8% Debentures",
+                "30 crore 8% Debentures",
+                "50 crore 8% Debentures",
+                "50,000 8% Debentures"
+            ],
+            answer: 1
+        },
+        {
+            question: "What is the amount that Pure Pharma Limited intends to utilise out of accumulated profits for issue of bonus debentures as per the scheme of arrangement?",
+            options: [
+                "30 crore",
+                "50 crore",
+                "25 crore",
+                "600 crore"
+            ],
+            answer: 3
+        },
+        {
+            question: "What is the last date for filing the Order of NCLT which approved the scheme of arrangement with the Registrar of Companies?",
+            options: [
+                "1st September, 2021",
+                "5th September, 2021",
+                "21st August, 2021",
+                "17th August, 2021"
+            ],
+            answer: 1
+        },
+        {
+            question: "Minimum how much equity shareholding in value is required to be held by the specified majority of members voting in favour of the scheme for approving the said scheme of arrangement, if all the members attend and vote at the meeting?",
+            options: [
+                "Minimum shareholding of 16.5 crore.",
+                "Minimum shareholding of 18.0 crore.",
+                "Minimum shareholding of 21.0 crore.",
+                "Minimum shareholding of 22.50 crore."
+            ],
+            answer: 3
+        },
+        {
+            question: "Minimum how many members of Pure Pharma Limited must agree to the scheme of arrangement, if 50% of total members of the company attend and 40% of the total members vote at the meeting?",
+            options: [
+                "Minimum 10,001 members.",
+                "Minimum 37,500 members.",
+                "Minimum 25,001 members.",
+                "Minimum 37,501 members."
+            ],
+            answer: 0
+        }
+    ]
+},
+
+// Case 34
+{
+    caseText: "<p>Healthy Bakeries Limited, founded by Avdhesh Sinha and his six cousins in the year 1980 under the Companies Act, 1956 and having its Registered Office at Lucknow, is one of India's leading food company. Over the years, it has become one of the most trusted food brands which includes a variety of biscuits, breads, cakes and dairy products in its product portfolio. Its products are available across the country in close to 25,00,000 retail outlets and reach over 40% of Indian homes.</p><p>The issued, subscribed and paid-up equity share capital of Healthy Bakeries Limited as on 31 March, 2021 is 50 crore consisting of 50 crore equity shares of 1 each, which are listed on BSE Limited and National Stock Exchange of India Limited. Some years back, Healthy Bakeries Limited had resorted to stock split and changed the face value of each share from 10 to Re. 1, which increased the total number of shares ten times. Accordingly, the number of shares increased to 50 crore from the earlier 5 crore.</p><p>The Board of Directors of Healthy Bakeries Limited was keen to reward its shareholders for their support and belief in the company. In pursuance to this objective, a scheme of arrangement was designed for issue and allotment by way of bonus, one fully paid-up 8.5% Debenture of the face value of 10 each, by utilizing its accumulated profits, for every one fully paid-up equity share of face value of 1 each held by total 60,000 members as on the record date.</p><p>After formulating the scheme of arrangement, Healthy Bakeries Limited filed the same with the jurisdictional National Company Law Tribunal (NCLT) for issue of secured, non-convertible, redeemable, fully paid-up 8.5% Debentures by way of bonus to its members as on record date out of the accumulated profits lying to the credit of Profit & Loss Account, under Sections 230 to 232 and other applicable provisions of the Companies Act, 2013.</p><p>Pursuant to the Order passed by the National Company Law Tribunal (NCLT), a meeting of the equity shareholders of Healthy Bakeries Limited was convened at its Registered Office. In accordance with the provisions of Sections 230 to 232 of the Companies Act, 2013, the scheme was agreed to by the requisite members.</p><p>It is worth noting that the Certificate furnished by BLR & Co., LLP, Statutory Auditors, as regards the accounting treatment proposed in the scheme of arrangement, was in conformity with the accounting standards prescribed under Section 133 of the Companies Act, 2013. The said Certificate was filed with the National Company Law Tribunal (NCLT) and was kept open for inspection by the equity shareholders of the company at its Registered Office between 10.00 A.M. to 2.00 P.M. on all days (except Saturdays, Sundays and public holidays) up to the date of the meeting.</p>",
+    questions: [
+        {
+            question: "How many 8.5% Debentures shall be issued by Healthy Bakeries Limited in pursuance of the scheme of arrangement?",
+            options: [
+                "In pursuance of the scheme of arrangement, Healthy Bakeries Limited shall issue 50 crore 8.5% Debentures.",
+                "In pursuance of the scheme of arrangement, Healthy Bakeries Limited shall issue 30 crore 8.5% Debentures.",
+                "In pursuance of the scheme of arrangement, Healthy Bakeries Limited shall issue 5 crore 8.5% Debentures.",
+                "In pursuance of the scheme of arrangement, Healthy Bakeries Limited shall issue 60,000 8.5% Debentures."
+            ],
+            answer: 0
+        },
+        {
+            question: "Select the correct option from those given below that indicates the amount which Healthy Bakeries Limited shall utilize out of accumulated profits for issue of bonus debentures?",
+            options: [
+                "50 crore of accumulated profits.",
+                "500 crore of accumulated profits.",
+                "25 crore of accumulated profits.",
+                "600 crore of accumulated profits."
+            ],
+            answer: 1
+        },
+        {
+            question: "Is it incumbent upon Healthy Bakeries Limited to obtain and file with NCLT, the Certificate as regards to the conformity of accounting treatment with the Accounting Standards prescribed under Section 133 of the Act, proposed in the scheme from statutory auditors?",
+            options: [
+                "It is not incumbent upon Healthy Bakeries Limited to file the said Certificate.",
+                "From the point of view of good corporate governance, Healthy Bakeries Limited may file the said Certificate.",
+                "Healthy Bakeries Limited may obtain the said Certificate from any practicing Chartered Accountant and not necessarily from statutory auditors, since it is just a formality to file it.",
+                "Healthy Bakeries Limited is required to obtain the said Certificate only from the statutory auditors for filing it with the NCLT."
+            ],
+            answer: 3
+        },
+        {
+            question: "Minimum how much equity shareholding in value is required to be held by the specified majority of members voting in favour of the scheme of arrangement for approving it, if all the members attend and vote at the meeting?",
+            options: [
+                "In the above situation, minimum 30.0 crore of shareholding is required to be held by the specified majority of members voting in favour of the scheme of arrangement for approving it.",
+                "In the above situation, minimum 32.50 crore of shareholding is required to be held by the specified majority of members voting in favour of the scheme of arrangement for approving it.",
+                "In the above situation, minimum 35.0 crore of shareholding is required to be held by the specified majority of members voting in favour of the scheme of arrangement for approving it.",
+                "In the above situation, minimum 37.50 crore of shareholding is required to be held by the specified majority of members voting in favour of the scheme of arrangement for approving it."
+            ],
+            answer: 3
+        },
+        {
+            question: "Minimum how many members of Healthy Bakeries Limited must have agreed to the scheme of arrangement, if 30% of total members of the company had attended the meeting and 20% of the total members had voted at the meeting?",
+            options: [
+                "Minimum 6,001 members.",
+                "Minimum 9,001 members.",
+                "Minimum 45,000 members.",
+                "Minimum 30,001 members."
+            ],
+            answer: 0
+        }
+    ]
+},
+
+// Case 35
+{
+    caseText: "<p>Oriental Bakers Private Limited, having its Registered Office at Connaught Place, New Delhi, was incorporated on 25.04.2003 under the Companies Act, 1956. It is a Wholly-owned Subsidiary (WoS) of JKL Industries Limited and is currently engaged in the business of manufacturing, retailing and institutional sales of regular breads as well as a wide range of premium gourmet bakery products. As against the Authorised Capital of 11.00 crore divided into 1.10 crore equity shares of 10 each, the issued, subscribed and paid-up capital of Oriental Bakers Private Limited is 10 crore divided into one crore equity shares of 10 each as at 31.03.2021.</p><p>JKL Industries Limited, having its Registered Office at Bhikaji Cama Place, New Delhi, was incorporated on 25.04.2000 under the provisions of the Companies Act, 1956 and is a leading food company in India. Its Authorised Capital is 50 crore divided into 5 crore equity shares of 10 each. As at 31.03.2021, the authorised share capital is fully issued and subscribed by the shareholders.</p><p>As regards demerger of some of the divisions of Oriental Bakers Private Limited into JKL Industries Limited, negotiations were going on for quite some time. The end result was that a scheme of arrangement was finally agreed upon between both the companies. Accordingly, a scheme of arrangement was presented to the jurisdictional National Company Law Tribunal (NCLT) pursuant to Sections 230 to 232 and other applicable provisions of the Companies Act, 2013, for demerger of the Manufacturing Business division and Retail Sales Business division of Oriental Bakers Private Limited into JKL Industries Limited. The Institutional Sales business shall, as hitherto, continue to belong to and be vested in and be continued to be owned and managed by Oriental Bakers Private Limited.</p><p>The appointed date of the scheme as set out in its present form with any modification or modifications and as approved or imposed or directed by National Company Law Tribunal (NCLT) shall be 01.04.2021. Pursuant to the Order passed by the National Company Law Tribunal (NCLT), meetings of the equity shareholders of the both companies were called and held at their respective Registered Offices and the requisite members agreed to the scheme of arrangement on 30.04.2021. National Company Law Tribunal (NCLT) passed the Order approving the scheme of arrangement between Oriental Bakers Private Limited and JKL Industries Limited on 05.07.2021, and the copy of the order was filed with the jurisdictional Registrar of Companies on 11.07.2021. This is the date on which the presently approved scheme of arrangement shall come into effect.</p>",
+    questions: [
+        {
+            question: "In accordance with the scheme of arrangement agreed upon between Oriental Bakers Private Limited and JKL Industries Limited, which type of company Oriental Bakers Private Limited shall be:",
+            options: [
+                "A transferee company.",
+                "A transferor company.",
+                "Neither transferee nor transferor company.",
+                "Both transferee and transferor company."
+            ],
+            answer: 1
+        },
+        {
+            question: "In accordance with the scheme of arrangement agreed upon between Oriental Bakers Private Limited and JKL Industries Limited, which type of company JKL Industries Limited shall be:",
+            options: [
+                "A transferee company.",
+                "A transferor company.",
+                "Neither transferee nor transferor company.",
+                "Both transferee and transferor company."
+            ],
+            answer: 0
+        },
+        {
+            question: "Taking cue from the above case scenario, how shall the consideration be payable by JKL Industries Limited to Oriental Bakers Private Limited for transfer of latter company's Manufacturing Business division and Retail Sales Business division?",
+            options: [
+                "The consideration shall be payable by JKL Industries Limited through issue of adequate number of shares to cover the value of net assets transferred.",
+                "The consideration shall be payable by JKL Industries Limited in cash or its equivalent to be calculated in accordance with the value of net assets transferred.",
+                "The consideration shall be payable by JKL Industries Limited through issue of adequate number of shares to cover the value of gross assets transferred.",
+                "No consideration shall be payable by JKL Industries Limited since Oriental Bakers Private Limited is its Wholly owned Subsidiary."
+            ],
+            answer: 3
+        },
+        {
+            question: "Out of the following options, choose the correct date from which the scheme of arrangement agreed upon between Oriental Bakers Private Limited and JKL Industries Limited shall be effective:",
+            options: [
+                "30.04.2021",
+                "01.04.2021",
+                "05.07.2021",
+                "11.07.2021"
+            ],
+            answer: 1
+        },
+        {
+            question: "Choose the correct alternative from those stated below as to whether Oriental Bakers Private Limited shall be dissolved without winding up by virtue of approval of scheme of arrangement by National Company law Tribunal (NCLT):",
+            options: [
+                "Since Oriental Bakers Private Limited is getting demerged into JKL Industries Limited, it shall be dissolved without winding up.",
+                "Since Institutional Sales business of Oriental Bakers Private Limited is going to be owned and continued by itself, it shall not be dissolved.",
+                "Since Manufacturing Business division and Retail Sales Business division of Oriental Bakers Private Limited are going to be transferred it shall be dissolved without winding up.",
+                "Since Oriental Bakers Private Limited is a Wholly-owned Subsidiary of JKL Industries Limited, it shall be dissolved without winding up."
+            ],
+            answer: 1
+        }
+    ]
+},
+
+// Case 36
+{
+    caseText: "<p>Arihant Furniture Private Limited, having its Registered Office at Janakpuri, New Delhi and incorporated in the year 2011 under the provisions of the Companies Act, 1956, is a top player in the category of office furniture. The company, a Wholly-owned Subsidiary of Banka Industries Limited, manufactures all kinds of high-quality office steel furniture like cabin-desks, work-stations, almirahs, lockers, etc. In addition to manufacturing, it is also engaged in retailing and institutional sale of its products.</p><p>On the other hand, Banka Industries Limited, having its Registered Office in Dwarka, New Delhi was incorporated in the year 2009 under the provisions of the Companies Act, 1956. Being a leading furniture company in India, it manufactures luxury furniture that matches the comfort and increases the beauty of the houses of the high-class buyers. It makes trendy furniture that fit for modern life at homes. The equity shares of Banka Industries Limited are listed on BSE Limited and National Stock Exchange of India Limited.</p><p>Demerger of business of Arihant Furniture Private Limited often engaged the attention of both the companies. A time came when a Scheme of Arrangement was formulated pursuant to Sections 230 to 232 and other applicable provisions of the Companies Act, 2013, for demerger of the Manufacturing Business division and Retail Sales Business division of Arihant Furniture Private Limited into Banka Industries Limited. The Institutional Sales business shall continue to belong to and be vested in and be continued to be owned and carried on by Arihant Furniture Private Limited as going concern.</p><p>The Scheme of Arrangement as formulated between Arihant Furniture Private Limited and Banka Industries Limited was presented before the jurisdictional National Company Law Tribunal (NCLT) which directed both the companies to hold the meetings of their equity shareholders respectively. The notices of the meetings along with required documents, inter-alia, were also sent to the Income Tax Department on 05-06-2021, requiring their representation, if any, on the scheme of arrangement, which was received by the Department on 09-06-2021.</p><p>Accordingly, as per the orders of NCLT, the respective meetings of both the companies were called and held on 30-07-2021 at their respective Registered Offices and the requisite number of members agreed to the scheme of arrangement. The appointed date of the scheme set out in its present form with any modification or modifications approved or imposed or directed by the National Company Law Tribunal (NCLT) was fixed as 01-09-2021 whereas it approved the said scheme of arrangement between the companies by order dated 03-09-2021. The copy of the order was filed with the jurisdictional Registrar of Companies on 10-09-2021 which shall be the date on which the scheme of arrangement comes into effect.</p>",
+    questions: [
+        {
+            question: "In accordance with the scheme of arrangement agreed upon between Arihant Furniture Private Limited and Banka Industries Limited, in which category, Arihant Furniture Private Limited shall fall:",
+            options: [
+                "Arihant Furniture Private Limited shall fall within the category of a transferor company.",
+                "Arihant Furniture Private Limited shall fall within the category of a transferee company.",
+                "Arihant Furniture Private Limited shall fall within the category of both transferor and transferee companies.",
+                "Arihant Furniture Private Limited shall fall within the category of neither transferor nor transferee company."
+            ],
+            answer: 0
+        },
+        {
+            question: "In accordance with the scheme of arrangement agreed upon between Arihant Furniture Private Limited and Banka Industries Limited, in which category, the latter company Banka Industries Limited shall fall:",
+            options: [
+                "Banka Industries Limited shall fall within the category of a transferee company.",
+                "Banka Industries Limited shall fall within the category of a transferor company.",
+                "Banka Industries Limited shall fall within the category of neither transferee nor transferor company.",
+                "Banka Industries Limited shall fall within the category of a both transferee and transferor company."
+            ],
+            answer: 0
+        },
+        {
+            question: "Considering the above case scenario, how shall the consideration be payable by Banka Industries Limited to Arihant Furniture Private Limited for transfer of latter company's Manufacturing Business division and Retail Sales Business division in pursuance of scheme of arrangement as approved by NCLT?",
+            options: [
+                "The consideration shall be payable by Banka Industries Limited through issue of sufficient number of shares to cover the value of net assets transferred.",
+                "The consideration shall be payable by Banka Industries Limited in cash or its equivalent to cover the value of net assets transferred.",
+                "The consideration shall be payable by Banka Industries Limited through issue of sufficient number of shares to cover the value of gross assets transferred.",
+                "No consideration shall be payable by Banka Industries Limited since Arihant Furniture Private Limited is Wholly-owned Subsidiary of Banka Industries Limited."
+            ],
+            answer: 3
+        },
+        {
+            question: "Which option do you think is correct as regards the date from which the scheme of arrangement agreed upon between Arihant Furniture Private Limited and Banka Industries Limited shall be effective?",
+            options: [
+                "30-07-2021",
+                "01-09-2021",
+                "03-09-2021",
+                "10-09-2021"
+            ],
+            answer: 1
+        },
+        {
+            question: "Select the correct option from those given below as to the time period within which the Income Tax Department is required to make representation on the scheme of arrangement sent by Arihant Furniture Private Limited and Banka Industries Limited?",
+            options: [
+                "Income Tax Department is permitted to make its representation within 30 days from the date of notice sent by Arihant Furniture Private Limited and Banka Industries Limited.",
+                "Income Tax Department is permitted to make its representation within 30 days from the date of receipt of notice sent by Arihant Furniture Private Limited and Banka Industries Limited.",
+                "Income Tax Department is permitted to make its representation within 45 days from the date of notice sent by Arihant Furniture Private Limited and Banka Industries Limited.",
+                "Income Tax Department is permitted to make its representation within 45 days from the date of receipt of notice sent by Arihant Furniture Private Limited and Banka Industries Limited."
+            ],
+            answer: 1
+        }
+    ]
+},
+
+// Case 37
+{
+    caseText: "<p>Oak Tree Software Limited, incorporated in Singapore, deals in development and distribution of software and related services. On establishing a place of business in India at Chennai, Tamil Nadu, the company prepared the following documents for submission to the Registrar having appropriate jurisdiction:</p><ol><li>A certified true copy of the company's constitution originally framed in English.</li><li>Full address of the registered office of the company.</li><li>A list of the Directors and Secretary of the company containing the prescribed particulars.</li><li>The names and addresses of three persons resident in India authorised to accept on behalf of the company service of process and any notices or other documents required to be served on the company.</li><li>Full address of the office of the company in Chennai, Tamil Nadu. This office is deemed to be its principal place of business in India.</li><li>A signed declaration that none of the Directors of the company had ever been convicted or debarred from formation of companies and management in India or abroad.</li><li>A declaration that Oak Tree Software Limited was establishing a place of business in India for the first time and therefore, no particulars were available as regards opening and closing of a place of business in India on earlier occasions.</li></ol><p>Following are the names of Directors and Company Secretary:</p><table><tr><th>Directors</th><th>Company Secretary</th></tr><tr><td>1. Mr. Bob</td><td>Vipul Shah</td></tr><tr><td>2. Mr. Thomas</td><td></td></tr><tr><td>3. Mr. Sumedh Soni</td><td></td></tr><tr><td>4. Mr. Anuj Subhash</td><td></td></tr><tr><td>5. Mrs. Alka Rege</td><td></td></tr><tr><td>6. Mrs. Vandana Vinit</td><td></td></tr><tr><td>7. Mr. Anvay Harshe</td><td></td></tr><tr><td>8. Mr. Ashok Tripathi</td><td></td></tr><tr><td>9. Mr. Ashish Tyagi</td><td></td></tr></table><p>Mr. Bob is non-resident and 49 years of age. Mr. Thomas is also non-resident and only 20 years of age. Mr. Sumedh Soni had business interests in London. He left India for London on 1st September, 2020 for the purpose of looking after his business. He came back to India on 2nd December, 2020 to spend some time with his parents and left India on 5th February, 2021 and went back to London for carrying on his business on a large scale. He again visited India on 5th March, 2021 for attending certain meetings relating to his business and exploring other business opportunities which would enhance his marketing business in London and stayed in India till 15th November, 2021.</p><p>In fact, Mr. Sumedh Soni was not at all interested in the software business of Oak Tree Software Limited and due to his non-availability he had serious management disputes. Accordingly, he was prevailed upon by the other Directors to resign from his Directorship in Oak Tree and in his place Mr. Somnath was appointed as Director, who just returned to India from state after serving a reputed MNC there for 15 years. Mr. Somnath returned to India with intent to do occupation and finally settle in India only. Later on, Mr. Somnath was designated as Managing Director of Oak Tree. Accordingly, the documents sent earlier to the office of the Registrar of Companies were altered.</p><p>Mr. Somnath is responsible for gathering business opportunities so that software business of Oak Tree gets flourished. He often travels abroad for business purpose. The entire team of Oak Tree is putting its best efforts to scale up the business operations in Singapore, India and other prominent countries.</p>",
+    questions: [
+        {
+            question: "Which one of the following options specifies the applicable Form and time period within which the Oak Tree Software Limited is required to submit the prescribed documents to the Jurisdictional Registrar of Companies on establishment of its place of business in Chennai, Tamil Nadu:",
+            options: [
+                "Oak Tree Software Limited is required to submit Form GNL-1 within 30 days of establishment of its place of business in Chennai, Tamil Nadu to the ROC having jurisdiction over Kolkata.",
+                "Oak Tree Software Limited is required to submit Form FC-1 within 30 days of establishment of its place of business in Chennai, Tamil Nadu to the ROC having jurisdiction over New Delhi.",
+                "Oak Tree Software Limited is required to submit Form FC-2 within 60 days of establishment of its place of business in Chennai, Tamil Nadu to ROC having jurisdiction over Mumbai.",
+                "Oak Tree Software Limited is required to submit Form FC-1 within 30 days of establishment of its place of business in Chennai, Tamil Nadu to ROC having jurisdiction over Chennai."
+            ],
+            answer: 1
+        },
+        {
+            question: "Suppose Oak Tree Software Limited after establishment of a place of business in Chennai, Tamil Nadu fails to deliver the required documents to the jurisdictional Registrar of Companies within the prescribed time. From the following options, choose the one which is applicable in the given situation:",
+            options: [
+                "Oak Tree Software Limited shall be punishable with minimum fine of 3,00,000 and maximum of 5,00,000 and in case of continuing offence with an additional fine up to 50,000 for every day after the first during which the contravention continues and every officer of this foreign company who is in default shall be punishable with minimum fine of 50,000 and maximum of five lakhs.",
+                "Oak Tree Software Limited shall be punishable with minimum fine of 50,000 and maximum of 5,00,000 and in case of continuing offence with an additional fine up to 25,000 for every day after the first during which the contravention continues and every officer of this foreign company who is in default shall be punishable with minimum fine of 25,000 and maximum of 3,00,000.",
+                "Oak Tree Software Limited shall be punishable with minimum fine of 2,00,000 and maximum of 5,00,000 and in case of continuing offence with an additional fine up to 50,000 for every day after the first during which the contravention continues and every officer of this foreign company who is in default shall be punishable with minimum fine of 1,00,000 and maximum of 3,00,000.",
+                "Oak Tree Software Limited shall be punishable with minimum fine of 1,00,000 and maximum of 3,00,000 and in case of continuing offence with an additional fine up to 50,000 for every day after the first during which the contravention continues and every officer of this foreign company who is in default shall be punishable with minimum fine of 25,000 and maximum of 5,00,000."
+            ],
+            answer: 3
+        },
+        {
+            question: "The case scenario states that there was change in Directorship with the appointment of Mr. Somnath in place of Mr. Sumedh Soni. Which one of the following options correctly specifies the Form and time period within which Oak Tree Software Limited is required to intimate the jurisdictional Registrar in respect of such alteration in the documents filed earlier?",
+            options: [
+                "Oak Tree Software Limited is required to intimate in respect of alteration in the documents filed earlier in Form FC-2 within 30 days of alteration.",
+                "Oak Tree Software Limited is required to intimate in respect of alteration in the documents filed earlier in Form FC-2 within 60 days of alteration.",
+                "Oak Tree Software Limited is required to intimate in respect of such alteration in the documents filed earlier in Form FC-3 within 30 days of alteration.",
+                "Oak Tree Software Limited is required to intimate in respect of alteration in the documents filed earlier in Form FC-3 within 60 days of alteration."
+            ],
+            answer: 0
+        },
+        {
+            question: "Regarding the documents to be submitted by Oak Tree Software Limited for registration, choose the correct statement out of followings:",
+            options: [
+                "All the documents required to be filed with the Registrar by the foreign companies can be any language.",
+                "All the documents required to be filed with the Registrar by the foreign companies shall be in language of territory to which such foreign company belongs to.",
+                "All the documents required to be filed with the Registrar by the foreign companies shall be in English language and where any such document is not in English language, there shall be attached a translation thereof in English language duly certified to be correct.",
+                "All the documents required to be filed with the Registrar by the foreign companies shall be in language of territory to which such foreign company belongs to and where any such document is not in said language, there shall be attached a translation thereof in said language duly certified to be correct."
+            ],
+            answer: 2
+        },
+        {
+            question: "Regarding the appointment of MD by Oak Tree Software Limited, which of the following statements is correct?",
+            options: [
+                "Any person whether resident in India or non-resident, who completed 21 year of age can be appointed as MD by Oak Tree Software Limited; hence Mr. Bob can be MD; but Mr. Thomas can't.",
+                "Since Oak Tree Software Limited is foreign company hence only non-resident can be appointed as MD. Only Mr. Bob can be appointed as MD.",
+                "Any director other than Mr. Bob, Mr. Thomas, and Mr. Somnath can be appointed as MD.",
+                "Mr. Somnath can be appointed as MD."
+            ],
+            answer: 3
+        }
+    ]
+},
+
+// Case 38
+{
+    caseText: "<p>Mr. Shyam, Managing Director (Whole-time Key Managerial Personnel) of Aloevera Products Ltd., was removed by the Board of Directors of the company with the agreement that he shall be compensated for his early vacation of his office. Mr. Shyam vacated the office of Managing Director on 31.05.2021 though his original tenure of appointment with Aloevera Products Ltd. was to continue upto 31.12.2023.</p><p>The remuneration drawn by Mr. Shyam since the date of his joining the office is as follows:</p><table><tr><th>Financial Year</th><th>Remuneration (in lakhs)</th></tr><tr><td>2019-20</td><td>55</td></tr><tr><td>2020-21</td><td>62</td></tr><tr><td>2021-22 (upto 31-05-2021)</td><td>13</td></tr></table><p>The data collected from the Balance Sheet of Aloevera Products Ltd. as on 31.03.2021 is as follows:</p><table><tr><th>Particulars</th><th>(in lakhs)</th></tr><tr><td>Paid-up Share Capital</td><td>1000</td></tr><tr><td>Share Application Money</td><td>200</td></tr><tr><td>General Reserve</td><td>500</td></tr><tr><td>Revaluation Reserve</td><td>250</td></tr><tr><td>Securities Premium</td><td>300</td></tr><tr><td>Long term loans</td><td>400</td></tr><tr><td>Funded Interest Term Loan (Payable after 1 year)</td><td>100</td></tr><tr><td>Working capital loan</td><td>200</td></tr><tr><td>Mutual Fund Investments</td><td>350</td></tr><tr><td>Miscellaneous Expenditure not written off</td><td>50</td></tr></table><p>Mr. Tushar was appointed as the new Managing Director of Aloevera Products Ltd. on 31.07.2021 in place of Mr. Shyam. The company decided to pay remuneration to Mr. Tushar as per Section 197 (4) of the Companies Act, 2013. Mr. Jay, one of the members of Aloevera Products Ltd., wanted to inspect contract of service entered into by Aloevera Products Ltd. with Mr. Tushar for assigning him the office of Managing Director but he was denied to have such inspection on the grounds that the contract with Mr. Tushar was not in writing.</p>",
+    questions: [
+        {
+            question: "The maximum amount of compensation to which Mr. Shyam is entitled for premature termination of his office as Managing Director shall be -",
+            options: [
+                "1.1194 crore",
+                "1.51125 crore",
+                "1.80 crore",
+                "1.55 crore"
+            ],
+            answer: 3
+        },
+        {
+            question: "Choose from the following options, 'effective capital' of Aloevera Products Ltd. as on 31.03.2021:",
+            options: [
+                "18 crore",
+                "21 crore",
+                "19 crore",
+                "16 crore"
+            ],
+            answer: 2
+        },
+        {
+            question: "Regarding the request of Mr. Jay to inspect the contract of service entered by company with Mr. Tushar, MD, identify the incorrect statement out of followings; i. Member can inspect the contract of service with MD or WTD only if authorised by Article. ii. Member may inspect the contract of service only after payment of prescribed fee. iii. Such contract of service shall kept at registered office of the company.",
+            options: [
+                "i, ii, and iii",
+                "i and ii",
+                "i and iii",
+                "ii and iii"
+            ],
+            answer: 1
+        },
+        {
+            question: "What was the last date till which Mr. Tushar should have been appointed, in case he was not appointed on 31.07.2021?",
+            options: [
+                "31.08.2021",
+                "30.11.2021",
+                "30.11.2021",
+                "31.08.2021"
+            ],
+            answer: 1
+        },
+        {
+            question: "Whether contention of Aloevera Products Ltd. for denying inspection to Mr. Jay was correct and if not, what are the consequences of the same?",
+            options: [
+                "Not correct, as contract of service with a Managing Director should have been made in writing and kept at registered office of the company. Aloevera Products Ltd. is liable to pay 25,000 and every officer in default is liable to pay 5,000 for each default, as a penalty.",
+                "Partially correct, the member has no right to inspect copy of contract of service entered into with Managing Director but Aloevera Products Ltd. has defaulted in not making the contract in writing and accordingly is liable to pay 25,000 and every officer in default is liable to pay 5,000 for each default, as a penalty.",
+                "Not correct, if contract of service is not in writing then a written memorandum should have been prepared by Aloevera Products Ltd. depicting the terms of contract of service with Mr. Tushar and kept at Registered Office of the company. Aloevera Products Ltd. is liable to pay 25,000 and every officer in default is liable to pay 5,000 for each default, as a penalty.",
+                "Correct, if contract is not in writing then member cannot ask for inspection of the same and accordingly there are no consequences on Aloevera Products Ltd. for such denial."
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 39
+{
+    caseText: "<p>Energy Food and Beverages Limited (EFBL), having its Registered Office at Bhikaji Cama Place, New Delhi, is a reputed manufacturer and exporter of different kinds of energy food, drinks and beverages. The market base of its products in India is much wider in comparison to so many other competitors. It is exploring more and more export markets all over the world. The Board of Directors of EFBL comprises following Directors:</p><table><tr><th>Additional Directors</th><th>Independent Directors</th></tr><tr><td>Praveen Kumar, Managing Director</td><td>Hruta Varad</td></tr><tr><td>Ananya Vibor</td><td>Vartika Soni</td></tr><tr><td>Jay Doshi</td><td>Shashi Vidur</td></tr><tr><td>Geetika Devi</td><td>Aniruddha</td></tr><tr><td>Amol Udit</td><td></td></tr><tr><td>Abhimanyu</td><td></td></tr><tr><td>Fernandis</td><td></td></tr><tr><td>Robert</td><td></td></tr></table><p>Mr. Anil Kumar, well versed in legal and regulatory matters, is the Company Secretary of the company. The information relating to foreign exchange earnings of EFBL in the previous four financial years is as under are:</p><table><tr><th>Financial Year</th><th>Foreign Exchange Earnings (in USD)</th></tr><tr><td>2017-18</td><td>2,400,000</td></tr><tr><td>2018-19</td><td>2,500,000</td></tr><tr><td>2019-20</td><td>3,600,000</td></tr><tr><td>2020-21</td><td>4,000,000</td></tr></table><p>With a view to enhance the production of beverages, EFBL imported a machinery costing 60,00,000 from a reputed manufacturer of Singapore. In accordance with the terms of payment, EFBL was required to repay the cost of machinery in five equal monthly installments which the company did satisfactorily. The machinery was delivered and thereafter, installed at the new factory site at Noida, UP.</p><p>The company is proposing to incur an amount of USD 7,500 on advertisement in foreign print media for the purpose of promotion of its beverages business globally. The company is also planning to donate USD 200,000 to a technical institution established in Chicago at USA for conducting advanced research in the field of beverages.</p><p>Mr. Jay Doshi along with his family had gone to Bhutan on a private visit. While returning to India, he is desirous of bringing with him Reserve Bank of India notes amounting to 75,000 in denomination of 100.</p><p>Ms. Geetika Devi often visits her son Swapnil who is settled in Michigan, USA. She came back to India from Michigan on July 02, 2019, spent some time with her younger son Kartik and her mother in New Delhi and left India again on September 05, 2019. She came back to India on November 30, 2019 but left for Michigan with her mother on December, 04, 2019 to get her medically treated. After her mother recovered from the ailment she was suffering, Ms. Geetika Devi came back to India on August 30, 2020 and remained with her family in New Delhi till date.</p>",
+    questions: [
+        {
+            question: "From the case scenario, it is evident that EFBL imported a machinery costing 60,00,000 from a reputed manufacturer of Singapore and repaid the cost of imported machinery in five equal monthly installments. From the following options, choose the one which will apply in the given circumstances:",
+            options: [
+                "Import of machinery is a 'Capital Account Transaction' since the imported machinery is a fixed asset and shall be used for a long period by EFBL.",
+                "Import of machinery is a 'Current Account Transaction' since machinery shall be used in the production of saleable items like beverages, etc. by EFBL.",
+                "Import of machinery is a 'Current Account Transaction' since a short-term credit facility in the ordinary course of business was availed by EFBL.",
+                "Import of machinery is a 'Capital Account Transaction' since a long-term credit facility was availed by EFBL and the payment was made in more than three months."
+            ],
+            answer: 2
+        },
+        {
+            question: "According to the case scenario, Mr. Jay Doshi, while returning to India, is desirous of bringing with him Reserve Bank of India notes amounting to 75,000 in denomination of 100. Out of the following four options, which one is applicable in the given circumstances?",
+            options: [
+                "Mr. Jay Doshi is permitted to bring into India from Bhutan, Reserve Bank of India notes amounting to 75,000 in denomination of 100.",
+                "Mr. Jay Doshi is not permitted to bring into India from Bhutan, Reserve Bank of India notes exceeding 25,000 in denomination of 100.",
+                "Mr. Jay Doshi is permitted to bring into India from Bhutan, Reserve Bank of India notes of any amount without limit but only in denomination of 500.",
+                "Mr. Jay Doshi is not permitted to bring into India from Bhutan, Reserve Bank of India notes exceeding 10,000 in denomination of 100."
+            ],
+            answer: 0
+        },
+        {
+            question: "It is noticed from the case scenario that Ms. Geetika Devi, one of the Directors of EFBL, remained in India and also outside India on various dates. Which of the following options correctly determines her residential status in terms of the relevant provisions of the Foreign Exchange Management Act, 1999:",
+            options: [
+                "Ms. Geetika Devi is a person resident outside India for FY 2020-21 and a person resident in India for the FY 2021-22.",
+                "Ms. Geetika Devi is a person resident outside India for the FY 2020-21 and also for the FY 2021-22.",
+                "Ms. Geetika Devi is a person resident in India for the FY 2020-21 and also for the FY 2021-22.",
+                "Ms. Geetika Devi is a person resident in India for FY 2020-21 and a person resident outside India for the FY 2021-22."
+            ],
+            answer: 0
+        },
+        {
+            question: "Suppose EFBL is a Public Sector Undertaking and it desires to spend USD 7,500 for advertisement in foreign print media so that it may promote its beverages business globally. Out of the following four options, which one is applicable in the above-mentioned situation?",
+            options: [
+                "EFBL is permitted to spend USD 7,500 for advertisement in foreign print media relating to the stated purpose but only with the prior approval of the Reserve Bank of India.",
+                "EFBL is permitted to spend USD 7,500 for advertisement in foreign print media relating to the stated purpose without seeking any approval.",
+                "EFBL is permitted to spend USD 7,500 for advertisement in foreign print media relating to the stated purpose with the prior approval of the Ministry of Finance, Department of Economic Affairs.",
+                "EFBL is permitted to spend USD 7,500 for advertisement in foreign print media relating to the stated purpose with the prior approval of the Central Government through Regional Director."
+            ],
+            answer: 1
+        },
+        {
+            question: "From the case scenario, it is evident that EFBL is planning to donate USD 200,000 to a technical institution established in Chicago at USA for conducting advanced research in the field of beverages. From the following options, choose the one which is applicable in the given situation:",
+            options: [
+                "EFBL, not being a Government Company, is not permitted to donate any amount outside India.",
+                "EFBL is not permitted to donate more than USD 50,000 in a financial year even after seeking approval of the Reserve Bank of India.",
+                "EFBL is permitted to donate USD 200,000 but only with the prior approval of the Reserve Bank of India.",
+                "EFBL is not permitted to donate more than USD 75,000 in a financial year even after seeking approval of the Reserve Bank of India."
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 40
+{
+    caseText: "<p>Simran Software Solutions Ltd., a listed company, is subsidiary of Hardik Tech Ltd which is an unlisted company. As on 31st March, 2021, Simran Software Solutions Ltd. had paid-up share capital of 100 crore while Hardik Tech Ltd. had a paid-up share capital of 150 crore.</p><p>Recently, it emerged that Hardik Tech Ltd was interested in amalgamating Simran Software Solutions Ltd. in itself. After various rounds of negotiations, it was decided between both the companies to go for this kind of restructuring. An application was made to the jurisdictional National Company Law Tribunal (NCLT) for the amalgamation of Simran Software Solutions Ltd. with Hardik Tech Ltd. The scheme of arrangement as enunciated in the application proposed such amalgamation.</p><p>Application to the National Company Law Tribunal (NCLT) for amalgamation was submitted in Form No. NCLT-1 along with the following documents:<br>(a) A notice of admission in Form No. NCLT-2.<br>(b) An affidavit in Form No. NCLT-6.<br>(c) A copy of Scheme of Merger and Amalgamation.<br>(d) A disclosure of all the material facts relating to the company.<br>Note: It was also disclosed in the application filed with the National Company Law Tribunal (NCLT) that each class of members or creditors had been identified for the purposes of approval of the scheme.</p><p>Consequently, a meeting was called in pursuance of the Order of the National Company Law Tribunal (NCLT). The notice of such meeting was sent to all the creditors including debenture holders and to all the members of the company, individually, at the addresses registered with the company accompanied by a statement disclosing the details of the scheme of amalgamation, a copy of valuation report and explaining the effect of such arrangement on creditors including debenture holders, Key Managerial Personnel, promoters and Directors.</p><p>It is worth noting that Mr. Manjit, who was appointed as Managing Director (MD) of Simran Software Solutions Ltd. on 1st January, 2020, for a period of five years was going to lose his office due to the amalgamation of Simran Software Solutions Limited with Hardik Tech Ltd.</p><p>Similarly, Mr. Rhitam was appointed as a Whole-time Director (WTD) of Simran Software Solutions Ltd. on 1st April, 2020 for a period of five years. In lieu of his current assignment as Whole-time Director of Simran Software Solutions Ltd., he was offered to be appointed as Manager in Hardik Tech Ltd., to which he sought some time to ponder over the whole issue. After discussing matter with his family, he decided to join Hardik Tech Ltd. as Manager after the completion of amalgamation.</p><p>Since both Mr. Manjit and Mr. Rhitam were to lose their assignments before completion of their terms, the company decided to compensate them. At the meeting, it was decided to pay both of them the average compensation for the remaining unexpired term based on the remuneration received by them till the effective date of amalgamation between both the companies.</p><p>Some of the shareholders of Simran Software Solutions Ltd. equalling 5% of total members were not satisfied with the scheme of amalgamation as finalised between their company and Hardik Tech Ltd. and accordingly, they decided to opt out of their company. Consequently, NCLT ordered to pay such dissenting shareholders the value of shares held by them and the valuation of such shares was to be arrived at as per the pre-determined price formula.</p><p>Simran Software Solutions Ltd. had submitted to the NCLT, full details about a pending legal case against Mr. Mohan, one of the directors of the company, who was removed as director and was sued for having caused a loss of over 20 lakh to the company through various bogus transactions. Mr. Mohan was being prosecuted under Sections 447 and 452 of the Companies Act, 2013. These facts were also in the knowledge of Hardik Tech Ltd.</p><p>The NCLT, after satisfying itself that the procedures specified in the Companies Act, 2013, were duly followed, sanctioned the scheme of amalgamation. It was decided that 14th January, 2022, shall be the effective date for amalgamation. The NCLT ordered Simran Software Solutions Ltd. to transfer the whole of the undertaking, property and its liabilities to Hardik Tech Ltd. as per the terms of the amalgamation.</p><p>It was also held by the NCLT that after dissolution of Simran Software Solutions Ltd., the fees, if any, paid by it on its authorised capital shall be set-off against any fees payable by Hardik Tech Ltd. on its authorised capital, subsequent to the amalgamation. Both the companies, in relation to such order were required to submit a certified copy of the order as prescribed, to the Registrar of Companies for registration within thirty days of the receipt of a copy thereof.</p>",
+    questions: [
+        {
+            question: "The National Company Law Tribunal (NCLT) ordered that Simran Software Solutions Ltd. would pay its 5% dissenting shareholders the value of shares held by them and the valuation of such shares was to be arrived at as per the pre-determined price formula. According to the provisions of the Companies Act, 2013, what is the basic criteria which should be considered while deciding the valuation of shares?",
+            options: [
+                "The valuation of the shares should not be less than the value calculated by a practicing Chartered Accountant having minimum fifteen years of experience.",
+                "The valuation of the shares should not be less than what has been specified by the Securities and Exchange Board of India.",
+                "The valuation of the shares should not be less than that of the value of shares of Hardik Tech Ltd calculated by a practicing Chartered Accountant having minimum fifteen years of experience.",
+                "The valuation of the shares should not be less than the market price prevailing on the date when the amalgamation process will commence."
+            ],
+            answer: 1
+        },
+        {
+            question: "As regards listing, what will be the consequences of amalgamation of Simran Software Solutions Ltd., a listed company with Hardik Tech Ltd. that is an unlisted company? Choose the correct answer from those stated below:",
+            options: [
+                "Amalgamation of Simran Software Solutions Ltd., a listed company, with Hardik Tech Ltd., an unlisted company, would by itself convert Hardik Tech Ltd. into a listed company.",
+                "Amalgamation of Simran Software Solutions Ltd., a listed company, with Hardik Tech Ltd., an unlisted company, would not by itself convert Hardik Tech Ltd. into a listed company.",
+                "Amalgamation of Simran Software Solutions Ltd., a listed company, with Hardik Tech Ltd., an unlisted company, would convert Hardik Tech Ltd. into a listed company but only after the expiry of 15 days from the date of completion of amalgamation.",
+                "Amalgamation of Simran Software Solutions Ltd., a listed company, with Hardik Tech Ltd., an unlisted company, would convert Hardik Tech Ltd. into a listed company but only after the expiry of 30 days from the date of completion of amalgamation."
+            ],
+            answer: 1
+        },
+        {
+            question: "According to the provisions of this Companies Act, 2013, what is the legal obligation imposed on the company which it is required to fulfill until the completion of the scheme of amalgamation?",
+            options: [
+                "To file a prescribed statement within the prescribed time with the Registrar of Companies, certified by auditors of the companies, that the scheme of amalgamation is complied with as per the directions of the National Company Law Tribunal (NCLT).",
+                "To file a prescribed statement within the prescribed time with the Registrar of Companies, certified by a Chartered Accountant or Cost Accountant or Company Secretary in practice, that the scheme of amalgamation is complied with as per the directions of the National Company Law Tribunal (NCLT).",
+                "To file the quarterly audited annual financial statements along with a prescribed statement within the prescribed time with the Registrar of Companies, certified by a Chartered Accountant or Cost Accountant or Company Secretary in practice that the scheme of amalgamation is complied with as per the directions of the National Company Law Tribunal (NCLT).",
+                "To file a prescribed statement within the prescribed time with the Registrar of Companies, certified by an Advocate who is practicing in the High Court that the scheme of amalgamation is complied with as per the directions of the National Company Law Tribunal (NCLT)."
+            ],
+            answer: 1
+        },
+        {
+            question: "According to the provisions of the Companies Act, 2013, whether both Mr. Manjit and Mr. Rhitam are eligible for receiving the compensation for the loss of their respective offices as Managing Director and Whole-time Director? Select the correct statement from the following four options:",
+            options: [
+                "Only Mr. Rhitam is eligible for receiving the compensation for the loss of his office as Whole-time Director of Simran Software Solutions Ltd.",
+                "Only Mr. Manjit is eligible for receiving the compensation for the loss of his office as Managing Director of Simran Software Solutions Ltd.",
+                "Both Mr. Manjit and Mr. Rhitam are eligible for receiving the compensation for the loss of their respective offices as Managing Director and Whole-time Director of Simran Software Solutions Ltd.",
+                "Neither Mr. Manjit nor Mr. Rhitam are eligible for receiving the compensation for the loss of their respective offices as Managing Director and Whole-time Director of Simran Software Solutions Ltd."
+            ],
+            answer: 1
+        },
+        {
+            question: "Mr. Mohan was removed as a Director of Simran Software Solution Ltd. for the alleged fraud committed while being holding the office of Director. How would the ongoing amalgamation process of the companies impact the pending legal proceedings against Mr. Mohan? I. The pending legal case will be continued as before between Mr. Mohan and Simran Software Solutions Limited. II. The pending legal case will be continued as before against Mr. Mohan though not with Simran Software Solutions Limited but with Hardik Tech Ltd. after amalgamation. III. Mr. Mohan was holding the office of Director in Simran Software Solutions Limited, the transferor company and therefore, till the time the pending legal case is not finally decided, the process of amalgamation cannot be completed between Simran Software Solutions Limited and Hardik Tech Ltd. IV. The ongoing legal case against Mr. Mohan would not affect the amalgamation of Simran Software Solutions Limited with Hardik Tech Ltd.",
+            options: [
+                "I & III.",
+                "II & III.",
+                "II & IV.",
+                "I & IV."
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 41
+{
+    caseText: "<p>Minerva Fabrics Limited, incorporated by Padam Kishore in the year 1985 in Bombay (now Mumbai), Maharashtra, under the Companies Act, 1956, has over 60% market share in suiting and shirting in India. It is also one of the biggest woolen fabric maker having a distribution network of more than 2,000 outlets.</p><p>Interested in increasing the growth rate of the company and to diversify into new product line, Yuvraj Kishore, dynamic son of Padam Kishore, currently designated as Chief Executive Officer (CEO), planned to takeover Swati Garments Limited. This company, having its Registered Office in Gandhi Nagar, Gujarat, was run by Patel family since 2015 whose 'He' - a premium casual wear brand brought customers a range of semi-formal and casual clothes for men.</p><p>Initiating the move of taking over, the shareholders of Swati Garments Limited were given an offer by Minerva Fabrics Limited to acquire their shares in exchange for issue of shares as well as cash. The purchase offer was approved by the shareholders holding ninety one percent in value of the shares. After approval, the said offer was remained open for a period of four months and was availed by the shareholders who approved it. Thereafter, a notice for acquisition of the shares of dissenting shareholders of Swati Garments Limited was issued to them by Minerva Fabrics Limited.</p><p>The dissenting shareholders within one month from the date on which the notice was served on them, made an application to the National Company Law Tribunal (NCLT) against the acquisition of their shares by Minerva Fabrics Limited. After considering the application, the NCLT disposed of the said application giving order in favour of Minerva Fabrics Limited. As per the order, the shares of the dissenting shareholders were to be transferred to Minerva Fabrics Limited.</p><p>Minerva Fabrics Limited, thereupon, sent a copy of the notice to the Swati Garments Limited together with an instrument of transfer, to be executed on behalf of the dissenting shareholders by a person appointed by Swati Garments Limited. Minerva Fabrics Limited paid to Swati Garments Limited, the consideration representing the price payable by it, for the shares of the dissenting shareholders which it was entitled to acquire.</p><p>On receipt of notice together with an instrument of transfer, Swati Garments Limited registered the name of Minerva Fabrics Limited as the holder of those shares in its Register of Members and informed the dissenting shareholders about such registration and of the receipt of the amount of consideration representing the price payable to them by Minerva Fabrics Limited. The amount of consideration so received by Swati Garments Limited from Minerva Fabrics Limited was parked in a separate bank account and the said consideration was held by Swati Garments Limited as a trustee for the dissenting shareholders and was disbursed to them within the prescribed time limit.</p><p>Mr. Manoj was holding the office of Managing Director in Swati Garments Limited after being appointed on 15th April, 2016. Due to expertise in finance and better track records, the company had re-appointed Mr. Manoj on 1st April, 2021, for the next five years with an understanding that he will be compensated due to early vacation of office as Managing Director in case of merger or amalgamation or takeover. Because of such developments relating to takeover, Mr. Manoj lost his office as Managing Director and therefore, Swati Garments Limited wanted to compensate him as per the agreement.</p><p>Mr. Manoj had received following remuneration during the last five financial years.</p><table><tr><th>Financial Years</th><th>Amount of Remuneration (in)</th></tr><tr><td>2016-17</td><td>20,00,000</td></tr><tr><td>2017-18</td><td>25,00,000</td></tr><tr><td>2018-19</td><td>30,00,000</td></tr><tr><td>2019-20</td><td>35,00,000</td></tr><tr><td>2020-21</td><td>40,00,000</td></tr></table><p>Mr. Rishabh, close friend of Mr. Manoj, is one of the Directors in TopGears Limited, an Indian automotive company that manufactures motorcycles, scooters and three-wheelers. The company is headquartered in Chennai, Tamil Nadu and owned by Ramachandran Swami. It is one of the leading motorcycle companies in India.</p><p>The retirement of Mr. Pranav, the current Managing Director of TopGears Limited, is on the cards and he will get superannuated after two months. Since Mr. Manoj was no more holding the office of Managing Director in Swati Garments Limited, Mr. Rishabh with the consent of his friend, discussed the matter of appointment of Mr. Manoj as Managing Director with the Board of Directors of TopGears Limited. The terms and conditions as well as the remuneration payable with respect to Mr. Manoj's appointment were got approved by the Board subject to the approval of shareholders of TopGears Limited at its next General Meeting. Mr. Manoj was finally appointed as the Managing Director since shareholders of TopGears Limited approved his appointment by passing a resolution at the General Meeting of the company.</p><p>With the inclusion Mr. Manoj, the total strength of Directors of TopGears Limited has reached 14 including two independent Directors. After some time, TopGears Limited felt the need to raise funds from the market. Accordingly, it floated its 'share issue' through issuing a prospectus and was able to raise funds to the tune of 300 crore from the public at large. Its equity shares got listed on BSE Limited and National Stock Exchange of India Ltd.</p>",
+    questions: [
+        {
+            question: "According to the case scenario, the offer of acquisition of shares of Swati Garments Limited was approved by 91% shareholders and the offer remained open for four months but the dissenting shareholders did not avail the said offer. As per the provisions of the Companies Act, 2013, maximum within how much time, Minerva Fabrics Limited is required to send a notice to the dissenting shareholders indicating its intention to acquire their shares? Select the correct answer from the following options:",
+            options: [
+                "Maximum within one month after the expiry of first four months during which the offer of acquisition of shares was open, Minerva Fabrics Limited is required to give notice to the dissenting shareholders signifying its desire to acquire their shares.",
+                "Maximum within two months after the expiry of first four months during which the offer of acquisition of shares was open, Minerva Fabrics Limited is required to give notice to the dissenting shareholders signifying its desire to acquire their shares.",
+                "Maximum within three months after the expiry of first four months during which the offer of acquisition of shares was open, Minerva Fabrics Limited is required to give notice to the dissenting shareholders signifying its desire to acquire their shares.",
+                "Maximum within five months after the expiry of first four months during which the offer of acquisition of shares was open, Minerva Fabrics Limited is required to give notice to the dissenting shareholders signifying its desire to acquire their shares."
+            ],
+            answer: 1
+        },
+        {
+            question: "Swati Garments Limited needs to park the funds received from Minerva Fabrics Limited on behalf of the dissenting shareholders in a separate bank account. According to the provisions of the Companies Act, 2013, within how many days, the said funds shall be disbursed to the dissenting shareholders?",
+            options: [
+                "30 days",
+                "40 days",
+                "60 days",
+                "90 days"
+            ],
+            answer: 2
+        },
+        {
+            question: "Due to the takeover of Swati Garments Limited by Minerva Fabrics Limited, Mr. Manoj lost his office as Managing Director in Swati Garments Limited. Since Swati Garments Limited wants to compensate him, how much compensation becomes payable to him:",
+            options: [
+                "75 lakhs.",
+                "105 lakhs.",
+                "120 lakhs.",
+                "130 lakhs."
+            ],
+            answer: 1
+        },
+        {
+            question: "According to the case scenario, appointment of Mr. Manoj as Managing Director of TopGears Limited was approved by the shareholders by passing a resolution at the General Meeting of the company. In such a situation, as per the provisions of the Companies Act, 2013, maximum within how much time the prescribed return in MR-1 is required to be filed with the Registrar of Companies? Choose the correct answer from the following options:",
+            options: [
+                "Maximum within 30 days.",
+                "Maximum within 45 days.",
+                "Maximum within 60 days.",
+                "Maximum within 90 days."
+            ],
+            answer: 2
+        },
+        {
+            question: "TopGears Limited got its shares listed on BSE Ltd. and National Stock Exchange of India Ltd. After becoming a listed company what changes, if any, are required to be made by TopGears Limited so far as the strength of its Board of Directors is concerned? Select the correct alternative from those given below:",
+            options: [
+                "After getting listed with BSE Ltd. and National Stock Exchange of India Ltd., TopGears Limited is required to appoint one more Independent Director.",
+                "After getting listed with BSE Ltd. and National Stock Exchange of India Ltd., TopGears Limited is required to appoint two more Independent Directors.",
+                "After getting listed with BSE Ltd. and National Stock Exchange of India Ltd., TopGears Limited is required to appoint three more Independent Directors.",
+                "There is need to appoint any new Independent Director since TopGears Limited already has two independent Directors."
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 42
+{
+    caseText: "<p>GenTech Engineering and Consultancy Limited (GECL), having its Registered Office in Kolkata, West Bengal, was incorporated way back in January, 2011. The Central Government holds 21% of its paid-up share capital while the State Government of Gujarat and Navyug Engineering Limited, a government company, hold 23% and 10% respectively.</p><p>As GECL was interested in ascertaining the market value of its assets, it invited tenders and after thorough scrutiny it shortlisted the following Registered Valuers:<br>(1) Mr. Anant: He has set up his valuation practice in London for the last 5 years. He came to visit India on December 24, 2021, for a short span of around one month during which, in terms of the tender submitted by him, he was proposed by GECL to undertake the assignment relating to valuation of its assets.<br>(2) Mr. Aloknath: He is a valuer member of a registered valuers' organisation and is one of the partners of M/s ALP & Associates, a Kolkata based valuation firm. Mr. Aloknath was given second preference by GECL if Mr. Anant refused the assignment relating to the valuation of assets.<br>(3) M/s MNC Valuers & Associates, LLP: It is a Limited Liability Partnership, based at Kolkata, and all the partners of the firm are valuer members of a registered valuers' organisation. It was given third preference by GECL for undertaking the valuation of its assets.</p><p>GECL holds 15% paid-up share capital of Prayas Marketing Limited (PML). However, the jurisdictional Registrar of Companies (RoC), having reasonable cause to believe that the PML was not carrying on any business or operations, ordered a physical verification of the Registered Office of PML.</p><p>After physical verification of the Registered Office of PML, the Registrar formed an opinion that the company, in actuality, was not carrying on any business or operations and therefore, he issued a notice to the company and all of its Directors indicating his intention to remove the name of the company from the Register of Companies, if no explanation along with copies of relevant documents were filed within a period of 30 days from the date of the notice. Since no cause to the contrary was shown by the company and its Directors, the Registrar, after following the requisite procedure, removed the name of the PML from the Register of Companies and a notice dated 30.10.2021 to this effect was published in the Official Gazette.</p><p>On publication of this notice in the Official Gazette and also its placement on the official website of the Ministry of Corporate affairs, PML was dissolved. After dissolution as above of the PML effective from 30.10.2021 under Section 248 of the Companies Act, 2013, it ceased to operate as a company and Certificate of Incorporation was deemed to have been cancelled from such date.</p>",
+    questions: [
+        {
+            question: "From the case scenario, it is observed that the share of the Central Government in the paid-up share capital of GECL is 21% while the State Government of Gujarat and Navyug Engineering Limited, a government company, respectively hold 23% and 10% of its paid-up capital. Which one of the following options is applicable in such a situation:",
+            options: [
+                "GECL is a Government Company since both the Central Government and the State Government of Gujarat hold more than 25% of its paid-up share capital.",
+                "GECL is not a Government Company since the Central Government, the State Government of Gujarat and Navyug Engineering Limited, a Government Company, hold only 54% of its paid-up share capital which is less than the threshold limit of 55%.",
+                "GECL is a Government Company since the Central Government, the State Government of Gujarat and Navyug Engineering Limited, a Government Company, hold 54% of its paid-up share capital which is more than the threshold limit of 51%.",
+                "GECL is not a Government Company since the Central Government and the State Government of Gujarat together hold 44% of its paid-up share capital which is less than the threshold limit of 51%."
+            ],
+            answer: 3
+        },
+        {
+            question: "Which one of the following options is applicable in case Mr. Anant was preferred to be given the valuation assignment of valuing the assets of GECL.",
+            options: [
+                "Mr. Anant cannot act as a valuer being a person not resident in India.",
+                "Mr. Anant cannot act as a valuer since process of valuation of goodwill is a tedious and time-consuming task.",
+                "Mr. Anant can act as a valuer being a valuer member of a registered valuers' organisation in London and is more knowledgeable than others.",
+                "Mr. Anant can act as a valuer being a valuer member of a registered valuers' organisation in London and is out of India for less than seven years."
+            ],
+            answer: 0
+        },
+        {
+            question: "In case PML is aggrieved by the order dated 30-10-2021 of the Registrar of Companies that led to the removal of its name from the Register of Companies and its dissolution and therefore, it desires to file an appeal to the National Company Law Tribunal (NCLT), which one of the following options shall be applicable in such a situation:",
+            options: [
+                "PML is permitted to file an appeal to the National Company Law Tribunal (NCLT) within a period of one year from the date of the order of the Registrar of Companies.",
+                "PML is permitted to file an appeal to the National Company Law Tribunal (NCLT) within a period of two years from the date of the order of the Registrar of Companies.",
+                "PML is permitted to file an appeal to the National Company Law Tribunal (NCLT) within a period of three years from the date of the order of the Registrar of Companies.",
+                "PML is permitted to file an appeal to the National Company Law Tribunal (NCLT) within a period of five years from the date of the order of the Registrar of Companies."
+            ],
+            answer: 2
+        },
+        {
+            question: "Which one of the following options is applicable in case PML denies to discharge its liabilities and other obligations contending that after dissolution it has ceased to operate?",
+            options: [
+                "The contention of the PML is valid since after dissolution it cannot enter into any contract.",
+                "The contention of the PML is valid since once the company stands dissolved, the shareholders of the company are liable to discharge all its liabilities and obligations.",
+                "The contention of the PML is invalid since the dissolution shall not affect the realisation of amount due to it and for the discharge of its liabilities or obligations.",
+                "The contention of the PML is valid because once the company stands dissolved, it is not liable to discharge any of its liabilities and obligations because the shareholders of the company are to be given back the money invested by them as shareholders."
+            ],
+            answer: 2
+        },
+        {
+            question: "Suppose PML, on its own, decides to file an application to the Registrar of Companies for removal of its name from the Register of Companies. From the given options, choose the one which shall be applicable in such a situation:",
+            options: [
+                "PML is not permitted to file an application to the Registrar of Companies for removal of its name from the Register of Companies.",
+                "All the Directors of PML at the Board Meeting can pass a resolution to file an application to the Registrar of Companies for removal of name of PML from the Register of Companies but only after extinguishing all the liabilities of PML.",
+                "PML after extinguishing all its liabilities and by passing an ordinary resolution or by obtaining consent of 51% of its members in terms of paid-up share capital may file an application to the Registrar of Companies for removal of its name from the Register of Companies.",
+                "PML after extinguishing all its liabilities and by passing a special resolution or by obtaining consent of 75% of its members in terms of paid-up share capital may file an application to the Registrar of Companies for removal of its name from the Register of Companies."
+            ],
+            answer: 3
+        }
+    ]
+},
+
+// Case 43
+{
+    caseText: "<p>The Board of Directors of Binjoy Textiles Limited, incorporated in the year 2010 under the Companies Act, 1956, comprises of six Directors including Mr. Raman Singh functioning as Managing Director. Based in Maharashtra, the company was in full swing with its different kinds of fabrics like cotton, polyester, nylon, etc., and was reaching the farthest corners of the country.</p><p>The Authorised Capital of Binjoy Textiles Limited was 5,00,00,000 divided into 50,00,000 equity shares of 10 each. The issued and subscribed capital as at 31-03-2021 was 4,00,00,000 of which paid-up capital was 3,40,00,000. In fact, 500 shareholders out of total 1000 shareholders, had not paid the last call of 3 per share. It is noteworthy that these 500 shareholders were holding 20,00,000 equity shares.</p><p>Not known to others, two directors of Binjoy Textiles Limited, Mr. Manav and Mr. Kundan, were involved in mismanagement of the company bringing its downfall day-by-day. They were clandestinely withdrawing huge sums of money on regular basis on one pretext or the other for their personal use. The company started incurring losses year-after-year. There was unrest among the stakeholders. Mr. Raman, Managing Director, was also a silent party to such fraud since he did not try to put a brake on the fraudulent deeds of Mr. Manav and Mr. Kundan, thus showing his gross negligence that led the company to head sharply southwards.</p><p>In order to get rid of mismanagement, the contributories presented a petition for winding up to the National Company Law Tribunal (NCLT) on the grounds of mismanagement and fraud committed by these two directors of the company. The long list of contributories also contained the names of Mr. Rohan and Mr. Sharad who inherited 2,000 partly paid-up shares whose paid-up value was 14,000 (Face Value 20,000) after the untimely death of their father Mr. Mool Chand just three months ago. Mr. Mool Chand had held these shares for the past two years. After inheriting 1000 shares each from their deceased father, Mr. Rohan and Mr. Sharad became the shareholders of Binjoy Textiles Limited and therefore, they also signed the petition for winding up of the company.</p><p>On being satisfied, the National Company Law Tribunal (NCLT) passed an Order for winding up of Binjoy Textiles Limited. Due to the impending winding up, Binjoy Textiles Limited was contemplating on the notion to compensate Mr. Raman Singh for the loss of his office as Managing Director. Had there been no winding up as ordered by the National Company Law Tribunal (NCLT), Mr. Raman Singh would have retired in the year 2023. As per his retirement date, Mr. Raman Singh was supposed to receive minimum one year's remuneration, which he would have earned if he had been in the office for the remainder of his term. Accordingly, Mr. Raman Singh was looking forward to receive his dues at the time of winding up.</p><p>For the purposes of winding up of Binjoy Textiles Limited, the National Company Law Tribunal (NCLT) appointed a Company Liquidator, Mr. Dilip, on 21st December, 2021. However, Mr. Dilip had conflict of interest with the company. Therefore, as per the relevant provisions of the Companies Act, 2013, on appointment as Company Liquidator, he filed a declaration in the prescribed form with the National Company Law Tribunal (NCLT), effective from the date of his appointment, disclosing the conflict of his interest with the company.</p><p>To take the matter ahead, following the provisions of the Companies Act, 2013, the National Company Law Tribunal (NCLT) duly sent an intimation of winding up to Mr. Dilip and the Registrar of Companies.</p><p>As per Section 281 of the Companies Act, 2013, the Liquidator of the company Mr. Dilip submitted to the National Company Law Tribunal (NCLT), a report containing chiefly the following particulars:</p><ul><li>The nature and details of the assets of the company including their location and value, stating separately the cash balance in hand and in the bank and the negotiable securities held by the company. A report on the valuation of the assets was obtained from the registered valuer, Mrs. Sapna Singh.</li><li>Details of amount of share capital issued, subscribed and paid-up.</li><li>The existing and contingent liabilities of the company including names, addresses and occupations of its creditors, stating separately the amount of secured and unsecured debts.</li><li>All the details of secured debts including their value and the dates on which they were given.</li><li>The debts due to any company or persons from whom they were due and the amount likely to be realised on account thereof.</li><li>Guarantees extended by the company.</li><li>List of contributories and dues payable by them and details of the unpaid calls.</li><li>Details of subsisting contracts.</li><li>Details of legal cases filed by or against the company.</li></ul><p>The National Company Law Tribunal (NCLT), then settled the list of contributories and caused rectification of Register of Members in all cases where rectification was required. The NCLT reviewed all the assets of the company to be applied for the discharge of the winding up liability. While settling the list of contributories, the NCLT included every person, who was or had been a member and who would be liable to contribute to the assets of the company an amount sufficient for payment of the debts and liabilities and the costs, charges and expenses of winding up, and for the adjustment of the rights of the contributories among themselves.</p><p>As noticed earlier, there were total 1000 members of which 500 members had paid 70% of the amount due on their shares. A final call of 3 per was still due from them. It was estimated that the company could clear its entire debt, if the unpaid amount was received from these 500 members. However, out of the 500 members who held partly paid-up shares, 350 members paid their unpaid contributions but remaining 150 shareholders were yet to pay the amount due from them.</p>",
+    questions: [
+        {
+            question: "From the case scenario, it is evident that Mr. Rohan and Mr. Sharad inherited 2,000 shares after the death of their father Mr. Mool Chand and irrespective of their eligibility, both had signed the winding up petition as the contributories of Binjoy Textiles Limited. According to the provisions of the Companies Act, 2013, whether they were eligible to sign the petition?",
+            options: [
+                "Mr. Rohan and Mr. Sharad, after becoming contributories due to inheriting of 2,000 shares from their father Mr. Mool Chand, were legally eligible to sign the winding up petition, only if the shares held by them were fully paid-up and not otherwise.",
+                "Mr. Rohan and Mr. Sharad were eligible to sign the winding up petition only if they had held the shares in their names for at least six months after inheriting them from their deceased father, Mr. Mool Chand.",
+                "Mr. Rohan and Mr. Sharad were eligible to sign the winding up petition only if they had held the shares in their names for at least nine months after inheriting them from their deceased father, Mr. Mool Chand.",
+                "Mr. Rohan and Mr. Sharad were eligible to sign the winding up petition as the shares due to which they were contributories had devolved upon them on the death of their father, Mr. Mool Chand, a former holder."
+            ],
+            answer: 3
+        },
+        {
+            question: "From the case scenario it is noticed that out of the 500 members who held partly paid-up shares, only 350 members paid their unpaid contributions and remaining 150 shareholders were yet to pay the amount due from them. Select the correct option from those given below as to whether payment made by 350 members would absolve the remaining 150 members from their liabilities:",
+            options: [
+                "In case the amount required to settle the debts of Binjoy Textiles Limited is collected from 350 members, then the remaining 150 members are not required to pay their dues.",
+                "All the shareholders holding partly paid-up shares of Binjoy Textiles Limited are required to respond individually to the demand notice whether they wish to pay the unpaid amount due from them or not.",
+                "It is within the discretion of National Company Law Tribunal to require the remaining 150 shareholders of Binjoy Textiles Limited whether to pay or not to pay the unpaid amount due from them.",
+                "Every unpaid shareholder of Binjoy Textiles Limited, being a contributory, is liable to pay to the extent of unpaid amount on his shares, irrespective of his shareholding."
+            ],
+            answer: 3
+        },
+        {
+            question: "Binjoy Textiles Limited wanted to compensate Mr. Raman Singh since he had to lose office of Managing Director before the completion of his term. Is it justified for the company to pay compensation to Mr. Raman Singh?",
+            options: [
+                "Binjoy Textiles Limited is permitted to compensate its Managing Director Mr. Raman Singh for the loss of office before the completion of his term.",
+                "Binjoy Textiles Limited is not permitted to compensate its Managing Director Mr. Raman Singh for the loss of office before the completion of his term since the company is being wound up by the National Company Law Tribunal and the negligence of Mr. Raman Singh was involved.",
+                "Binjoy Textiles Limited is permitted to compensate its Managing Director Mr. Raman Singh for the loss of office before the completion of his term after the shareholders passed an ordinary resolution.",
+                "Binjoy Textiles Limited is permitted to compensate its Managing Director Mr. Raman Singh for the loss of office before the completion of his term after the shareholders passed a special resolution."
+            ],
+            answer: 1
+        },
+        {
+            question: "The Company Liquidator Mr. Dilip, appointed by the National Company Law Tribunal, had some conflict of interest with Binjoy Textiles Limited. Choose the correct date from the following options, by which Mr. Dilip was required to file declaration with NCLT:",
+            options: [
+                "28th December, 2021.",
+                "31st December, 2021.",
+                "5th January, 2022.",
+                "10th January, 2022."
+            ],
+            answer: 0
+        },
+        {
+            question: "Out of the following four options, select the one which correctly indicates the role of Registrar of Companies on receipt of intimation of order from the National Company Law Tribunal for winding up of Binjoy Textiles Limited:",
+            options: [
+                "The Registrar of Companies will keep a vigilance over the winding up process initiated against Binjoy Textiles Limited.",
+                "The Registrar of Companies will assist the Company Liquidator Mr. Dilip in the winding up process initiated against Binjoy Textiles Limited.",
+                "The Registrar of Companies shall make an endorsement to that effect in his records relating to Binjoy Textiles Limited and notify it in the Official Gazette.",
+                "The Registrar of Companies will strike off the name of Binjoy Textiles Limited from the Register of Companies."
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 44
+{
+    caseText: "<p>Three close friends, Mr. Singh, Mr. Khurana and Mr. Dhillon, all residents of Delhi, wanted to start their own venture and accordingly in the year 2014, after leaving their respective concerns, incorporated a company by the name New Age Automobiles Private Limited. Prior to this venture, Mr. Singh worked in National Commercial Bank Limited as Chief Manager and had gained rich experience of over twenty-two years dealing with different tough situations and also with seasoned businessmen as well as customers coming from all walks of life. In the year 2014, he took voluntary retirement under the 'Voluntary Retirement Scheme' announced by National Commercial Bank Limited which was applicable to the officers who had to their credit twenty years of service or more as on 31st December, 2013. Mr. Khurana is an experienced finance professional [MBA (Finance) from Faculty of Management Studies, University of Delhi] and in the last fifteen years he has served a number of finance companies gaining extensive knowledge of finance. Mr. Dhillon, an engineer, worked in a reputed auto company for the last fourteen years.</p><p>After two years of the formation of New Age Automobiles Private Limited, Mr. Rawat, one of the esteemed customers of National Commercial Bank Limited, who had an 'Overdraft Account' in the branch in which Mr. Singh worked as Chief Manager, wanted to have some stake in the company. Accordingly, he purchased 6% equity shares of New Age Automobiles Private Limited. After transferring 6% equity shares to Mr. Rawat, the original promoters held remaining 94% of equity shares.</p><p>Thereafter, in the year 2019, Jagat Electricals Limited having its Registered Office at Rajendra Place, New Delhi and having reputable presence pan-India for manufacturing quality products, acquired 60% stake in New Age Automobiles Private Limited by way of shareholders' agreement. As per the agreement, the remaining 34% shares were to be held by Mr. Khurana, Mr. Singh, and Mr. Dhillon in the ratio in which they were held by them when the company was incorporated in 2014 and other 6% by Mr. Rawat.</p><p>Mr. Rawat was a diabetic patient for the last seven years or so which had an adverse impact on both of his kidneys. As his kidney problem became serious by and by leading to dialysis on weekly basis, his nephrologist advised him for kidney transplant. In order to get kidney transplant done at a specialised hospital, Mr. Rawat decided to go to Seattle, USA, where his son Saaransh Rawat, holder of Green Card, was serving a Multi-National Company (MNC) at a senior position. Before going to Seattle, Mr. Rawat sold his 6% stake in New Age Automobiles Private Limited to Jagat Electricals Limited which increased the aggregate shareholding of Jagat Electricals Limited to 66%.</p><p>Over a period of time, Jagat Electricals Limited gradually started increasing its stake in New Age Automobiles Private Limited and ultimately it reached to a level of 92%. The stake of 92% was achieved by way of various agreements made with Mr. Singh, Mr. Khurana and Mr. Dhillon and by now, these three friends were left with only 8% shareholding in New Age Automobiles Private Limited.</p><p>Being the owner of 92% equity shares of New Age Automobiles Private Limited, Jagat Electricals Limited was running the affairs of the company in the manner that suited it; and Mr. Singh, Mr. Khurana and Mr. Dhillon, though minority shareholders, could not digest this phenomenon. As a consequence of 'thought-to-be' mismanagement in New Age Automobiles Private Limited, Mr. Khurana, Mr. Singh and Mr. Dhillon decided to file an application with the jurisdictional National Company Law Tribunal (NCLT) against oppression and mismanagement in the company.</p><p>Later on, Jagat Electricals Limited wanted to execute an agreement with Mr. Khurana, Mr. Singh and Mr. Dhillon for purchasing their remaining shareholding of 8%. Pursuant to this, Jagat Electricals Limited had sent a notice to Mr. Khurana, Mr. Singh and Mr. Dhillon to sell their shares based on a particular 'sale consideration' rather than on the basis of an agreed price. As there was no response, Jagat Electricals Limited sent another notice to these friends invoking the previous notice, offering them to sell their shareholdings at an agreed price which was to be decided in accordance with the valuation done by a Practicing Chartered Accountant.</p><p>Thereafter, Jagat Electricals Limited issued a notice to New Age Automobiles Private Limited for purchasing the minority shareholding as per Section 236 of the Companies Act, 2013. Accordingly, New Age Automobiles Private Limited issued a notice to Mr. Khurana, Mr. Singh and Mr. Dhillon asking them to deliver their shares. However, Mr. Khurana, Mr. Singh and Mr. Dhillon refused to transfer their shares.</p><p>Mrs. Usha Singh, wife of Mr. Singh, owns a finance company by the name Singh Finance Company Private Limited whose turnover is 5 crore. In addition to Mrs. Usha Singh, Mr. Singh is also a Director in Singh Finance Company Private Limited. The sole purpose of the company is to give loans to other companies and corporate houses for business purposes. Some three years before, Charan Singh Auto Parts Pvt. Limited took 10 lakhs as loan from Singh Finance Company Private Limited of which 6 lakhs along with interest has been repaid. As on date, the outstanding dues of Charan Singh Auto Parts Pvt. Limited towards Singh Finance Company Private Limited are 4 lakhs.</p><p>An investigation was conducted into the affairs of Charan Singh Auto Parts Pvt. Limited, for it came to the knowledge of Central Government that the business of this company was being done in an unfair and fraudulent manner. Singh Finance Company Private Limited and one other company called Arpita Traders Private Limited decided to file an application with the jurisdictional National Company Law Tribunal (NCLT) to impose restrictions on Charan Singh Auto Parts Pvt. Limited since it was likely to transfer its assets in a manner that would prejudicially affect their interests. It is noteworthy that Singh Finance Company Private Limited is a secured creditor whereas Arpita Traders is an unsecured creditor. Charan Singh Auto Parts Pvt. Limited is required to repay 75,000 to Arpita Traders Private Limited.</p><p>Mr. Hritik, son of Mr. Khurana, is working as Chief Financial Officer (CFO) in Yatin Mechanical Apparatus Private Limited for the last two years. The Central Government has appointed inspectors to investigate into the affairs of Yatin Mechanical Apparatus Private Limited, after receiving an intimation through special resolution passed by the company that the affairs of Yatin Mechanical Apparatus Private Limited ought to be investigated under Section 210 of the Companies Act, 2013. The main aim of the investigation is to obtain any evidence or facts regarding any malpractice in the course of conducting of business and also to identify its profits and losses correctly. During the ongoing investigation, Yatin Mechanical Apparatus Private Limited desired to discharge Mr. Hritik from his job as Chief Financial Officer (CFO).</p>",
+    questions: [
+        {
+            question: "Mr. Khurana, Mr. Singh and Mr. Dhillon had filed an application with the National Company Law Tribunal against oppression and mismanagement prevailing in New Age Automobiles Private Limited in which Jagat Electric Limited is the majority shareholder. Choose the correct option as to whether the said application is maintainable with NCLT:",
+            options: [
+                "Application filed with NCLT against oppression and mismanagement prevailing in New Age Automobiles Private Limited cannot be maintained, as Mr. Khurana, Mr. Singh and Mr. Dhillon together hold less than 10% shares.",
+                "The application filed with NCLT by Mr. Khurana, Mr. Singh and Mr. Dhillon against oppression and mismanagement prevailing in New Age Automobiles Private Limited is maintainable.",
+                "It is within the discretion of NCLT whether to entertain the application or not.",
+                "Application filed with NCLT against oppression and mismanagement prevailing in New Age Automobiles Private Limited cannot be maintained, as Mr. Khurana, Mr. Singh and Mr. Dhillon together hold less than 9% shares."
+            ],
+            answer: 1
+        },
+        {
+            question: "Jagat Electricals Limited sent again a notice after invoking the previous notice to Mr. Khurana, Mr. Singh and Mr. Dhillon, respectively, offering them to sell their shares at an agreed price to be decided by a Practicing Chartered Accountant. Do you think the minority shareholders are liable to sell their shares to the majority shareholders in such a situation?",
+            options: [
+                "Since price is based on the valuation done by a Practicing Chartered Accountant who has both legal as well as financial knowledge, minority shareholders are liable to sell their shares to the majority shareholders.",
+                "It is optional for the minority shareholders to sell their shares to the majority shareholders but the price needs to be determined on the basis of valuation carried out by a Registered Valuer.",
+                "It is optional for the minority shareholders to sell their shares to the majority shareholders but the price needs to be determined on the basis of valuation carried out by a Practicing Company Secretary.",
+                "In the given situation, the minority shareholders have no option but to sell their shares to the majority shareholders irrespective of which professional carries out the valuation of shares."
+            ],
+            answer: 1
+        },
+        {
+            question: "From the case scenario it is evident that Mr. Singh, Mr. Khurana and Mr. Dhillon being minority shareholders refused to sell their shareholdings of 8% to Jagat Electricals Limited. In case the trio agrees to the proposal, then maximum within how much time the amount of consideration shall be disbursed to them after it is deposited by Jagat Electricals Limited in a separate bank account to be operated by New Age Automobiles Private Limited.",
+            options: [
+                "Maximum within 15 days, the amount of consideration shall be disbursed to Mr. Singh, Mr. Khurana and Mr. Dhillon by New Age Automobiles Private Limited for selling their shareholdings of 8% to Jagat Electricals Limited.",
+                "Maximum within 30 days, the amount of consideration shall be disbursed to Mr. Singh, Mr. Khurana and Mr. Dhillon by New Age Automobiles Private Limited for selling their shareholdings of 8% to Jagat Electricals Limited.",
+                "Maximum within 60 days, the amount of consideration shall be disbursed to Mr. Singh, Mr. Khurana and Mr. Dhillon by New Age Automobiles Private Limited for selling their shareholdings of 8% to Jagat Electricals Limited.",
+                "Maximum within 90 days, the amount of consideration shall be disbursed to Mr. Singh, Mr. Khurana and Mr. Dhillon by New Age Automobiles Private Limited for selling their shareholdings of 8% to Jagat Electricals Limited."
+            ],
+            answer: 2
+        },
+        {
+            question: "Singh Finance Company Private Limited and Arpita Traders Private Limited were of the view that Charan Singh Auto Parts Pvt. Limited is likely to transfer its assets in a manner that will prejudicially affect their interests. In the capacity as creditors of Charan Singh Auto Parts Pvt. Limited, whether they are eligible to file such an application with the NCLT:",
+            options: [
+                "Both Singh Finance Company Private Limited and Arpita Traders Private Limited in their individual capacity as creditors are eligible to file the application with NCLT against Charan Singh Auto Parts Pvt. Limited.",
+                "Only Singh Finance Company Private Limited in its capacity as creditor is eligible to file the application with NCLT against Charan Singh Auto Parts Pvt. Limited.",
+                "Only Arpita Traders Private Limited in its capacity as creditor is eligible to file the application with NCLT against Charan Singh Auto Parts Pvt. Limited.",
+                "Since Singh Finance Company Private Limited is a secured creditor and Arpita Traders Private Limited is not a secured creditor, hence only Singh Finance Company Private Limited is eligible to file the application with NCLT against Charan Singh Auto Parts Pvt. Limited."
+            ],
+            answer: 1
+        },
+        {
+            question: "The investigation being pending, Yatin Mechanical Apparatus Private Limited is desirous of discharging Mr. Hritik from his from his job as Chief Financial Officer (CFO). Select the correct option from those given below whether Yatin Mechanical Apparatus Private Limited can so discharge Mr. Hritik:",
+            options: [
+                "Yatin Mechanical Apparatus Private Limited cannot discharge Mr. Hritik from his job as Chief Financial Officer (CFO) till the expiry of 15 days from the completion of ongoing investigation because he falls in the category of Key Managerial Personnel.",
+                "Yatin Mechanical Apparatus Private Limited is required to seek approval of the NCLT before discharging Mr. Hritik from his job as Chief Financial Officer (CFO).",
+                "Yatin Mechanical Apparatus Private Limited is required to seek approval of the inspectors conducting investigation before discharging Mr. Hritik from his job as Chief Financial Officer (CFO).",
+                "Yatin Mechanical Apparatus Private Limited cannot discharge Mr. Hritik from his job as Chief Financial Officer (CFO) till the expiry of thirty days from the completion of ongoing investigation because he falls in the category of Key Managerial Personnel."
+            ],
+            answer: 1
+        }
+    ]
+},
+
+// Case 45
+{
+    caseText: "<p>Mumbai based Vishakha Tours and Travels Limited (VTTL) is a part of a new generation of tour operators which specialises in unique, instant and exceptional tours in Maharashtra. The mission of the Directors Vallabh, Vibhor and Sapna is to provide a hassle-free experience to their customers. There are four more Directors (closely related to the first three Directors) who look after internal departments of the company.</p><p>The first three Directors i.e. Vallabh, Vibhor and Sapna had twelve years of experience and during this period they arranged various categories of tours like sightseeing tours, luxury tours, walking tours, sports and games, rock climbing, horse riding and the like. To name a few, the places often visited included Pawna Lake Camping, Alibaugh, Bhandardara, Lohagad Valley, camping and rafting at Koland, etc. They had provided the touring services to approximately 3.5 lacs persons on annual basis. While travelling with them, the tourists would enjoy in-depth experience, wisest guides, the closest wilderness encounters to ensure best moments of their lives. The USP of the company is \"Best Price Guaranteed\".</p><p>According to the audited financial statements, the paid-up share capital of VTTL as on 31st March, 2021 was 6.00 crore (60,00,000 equity shares of 10 each) and the reserves and surplus amounted to 2.50 crore. The turnover of the company for the Financial Year 2020-21 was 55.00 crore.</p><p>As the company had surplus funds, Vallabh thought of investing 50.00 lacs in equity shares of reputed companies as a part of investment plan. A Board Meeting was called which was attended by five Directors. However, only three Directors out of five agreed to the investment plan.</p><p>Vallabh and Vibhor were keen to diversify the activities of the company into certain other areas as well. They were of the opinion to buy a big plot of land in Lonavala and construct a theme park for fun and frolic on weekend getaways. It was supposed to provide all amenities and comforts including 5 acres of Water Park, 2 roller coasters and 50 other attractions. Their aim was to ensure that their guests enjoy exclusive privileges, novel experience with most competitive prices.</p><p>To deliberate on the issue, VTTL called a Board Meeting on 10th September, 2021 at 3:00 p.m. at its Registered Office at Worli, Mumbai. However, no business could be undertaken for want of quorum and the meeting was adjourned.</p>",
+    questions: [
+        {
+            question: "In the above case scenario, one of the Directors Vallabh wanted to invest surplus funds of VTTL amounting to 50.00 lakhs in equity shares of reputed companies as a part of investment plan. It is noticed that five Directors out of total seven Directors attended the Board Meeting in which this proposal was discussed and only three Directors consented to the proposal. Which one of the following options is applicable in the given situation?",
+            options: [
+                "VTTL can go ahead with such investment plan since majority of the Directors present at the Board Meeting agreed to the proposal of investing funds amounting to 50.00 lakhs in equity shares of reputed companies.",
+                "VTTL cannot invest funds amounting to 50.00 lakhs in equity shares of reputed companies since all the five Directors present at the meeting did not agree to such investment plan.",
+                "VTTL cannot invest funds amounting to 50.00 lakhs in equity shares of reputed companies since the total strength of seven Directors must attend the Board Meeting and all must consent to such investment plan.",
+                "VTTL cannot invest funds amounting to 50.00 lakhs in equity shares of reputed companies since the investment plan did not receive the consent of 3/4th majority of the Directors present (i.e. four out of five present)."
+            ],
+            answer: 1
+        },
+        {
+            question: "From the case scenario, it is evident that VTTL called a Board Meeting on 10th September, 2021, at 3:00 p.m. at its Registered Office at Worli, Mumbai to deliberate on the issue of expanding its activities into certain other areas as well. However, no business could be undertaken for want of quorum and the meeting was adjourned. From the following options, choose the one which indicates the correct date, time and place for holding such adjourned meeting if no contrary provisions are contained in the Articles of Association of VTTL.",
+            options: [
+                "The adjourned Board Meeting needs to be held on 13th September, 2021, at 3:00 p.m. at the Registered Office of VTTL at Worli, Mumbai.",
+                "The adjourned Board Meeting needs to be held on 15th September, 2021, at 3:00 p.m. at the Registered Office of VTTL at Worli, Mumbai.",
+                "The adjourned Board Meeting needs to be held on 17th September, 2021, at 3:00 p.m. at the Registered Office of VTTL at Worli, Mumbai.",
+                "The adjourned Board Meeting needs to be held on 20th September, 2021, at 3:00 p.m. at the Registered Office of VTTL at Worli, Mumbai."
+            ],
+            answer: 2
+        },
+        {
+            question: "The case scenario does not speak about the appointment of any Independent Director. From the following four options choose the one, which indicates the number of Independent Directors that VTTL is required to appoint based on the financial results as on 31-03-2021:",
+            options: [
+                "VTTL is required to appoint minimum two Independent Directors.",
+                "VTTL is required to appoint minimum one Independent Director.",
+                "VTTL is not required to appoint an Independent Director.",
+                "VTTL is required to appoint minimum three Independent Directors."
+            ],
+            answer: 2
+        },
+        {
+            question: "From the options given below, choose the one which indicates the maximum amount which VTTL can invest for acquiring by way of purchase the securities of any other body corporate without passing a special resolution in a General Meeting:",
+            options: [
+                "VTTL can invest maximum up to 6.00 crore for acquiring by way of purchase the securities of any other body corporate.",
+                "VTTL can invest maximum up to 5.95 crore for acquiring by way of purchase the securities of any other body corporate.",
+                "VTTL can invest maximum up to 3.60 crore for acquiring by way of purchase the securities of any other body corporate.",
+                "VTTL can invest maximum up to 5.10 crore for acquiring by way of purchase the securities of any other body corporate."
+            ],
+            answer: 3
+        }
+    ]
+},
+
+// Case 46
+{
+    caseText: "<p>Having keen interest in watching planets and stars, Ebhanan, Ilesh, Ina and Idhan thought of manufacturing optical instruments like telescopes and binoculars and to achieve their objects, they formed Iris Engineering Limited (IEL) way back in the year 1992 with some of their close relatives. Based in Mumbai, the products manufactured by IEL allow the observers to delve deeper into the beauty of space with full range of comfortable view. In particular, telescopes made by the company are light-weight, portable as well as elegant and are used by private observatories, educational institutions, Government organisations, etc., both in India and abroad. The products of IEL carry a pre-eminent reputation for crystal clear optics for every outdoor activity. They are extremely popular for bird-watching, hiking, star-gazing, marine observation, astronomy and the like. The company has made a good place for itself in the market giving a tough competition to its rivals.</p><p>From time to time, Ebhanan, Ilesh, Ina and Idhan have inducted certain other eminent persons as directors who have in-depth knowledge and relevant experience in the field in which the company is engaged. Further, Ina was given the responsibility to search talent from outside India also. Accordingly, she established contacts with two USA based physicists Isa and Ivaan who had specialised knowledge in the field of optics and optic materials. To extract as much of their expertise, she proposed to rope them in as directors in the company to which other directors agreed without any resistance and thus, Isa and Ivaan were appointed as directors taking the count of directors to fifteen which is the maximum strength as per the Articles of the company. However, there occurred four vacancies in the office of directorship in May, 2021 because of covid related deaths of four directors and such vacancies are yet to be filled.</p><p>To make matter easier for Isa and Ivaan, an option was provided to all the directors to attend Board Meetings through Video Conferencing. Further, the company started sending the notice of Board Meeting by e-mail though no such provision was included in the Articles of Association.</p><p>The net profits/loss of the company for the last few financial years are as under:</p><table><tr><th>Net Profit/(Loss)</th><th>FY 2017-18 (₹)</th><th>FY 2018-19 (₹)</th><th>FY 2019-20 (₹)</th><th>FY 2020-21 (₹)</th></tr><tr><td></td><td>1,92,00,000</td><td>2,55,00,000</td><td>2,85,00,000</td><td>(36,00,000)</td></tr></table><p>Note: During the FY 2020-21, loss was incurred because of disturbance in operation due to continuing pandemic.</p><p>The company was considering to import Optical Tube Assemblies (OTA), Mirrors and Lenses of fine quality for improving the production capacity. In order to purchase these items, Isa started negotiations with one of the reputed suppliers M/s John Optical Tubes & Glass Company, Inc., based at New York, USA and the deal was finalised for US$ 200,000. Isa further negotiated with M/s John Optical Tubes & Glass Company, Inc., to supply these items for a credit period of four months to which the exporter agreed.</p>",
+    questions: [
+        {
+            question: "The case scenario states that IEL started sending the notice of Board Meeting by e-mail though no such provision was included in the Articles of Association. Whether action of IEL to opt for sending of the said Notice by e-mail is valid?",
+            options: [
+                "Action of IEL to opt for sending the notice of the Board Meeting by e-mail is not valid since its Articles of Association do not contain such provision.",
+                "Action of IEL to opt for sending the notice of the Board Meeting by e-mail is not valid since such notice is permitted to be sent by post only.",
+                "Action of IEL to opt for sending the notice of the Board Meeting by e-mail is not valid since such notice is permitted to be sent by post or conveyed through telephonic call.",
+                "Action of IEL to opt for sending the notice of the Board Meeting by e-mail is valid since such notice is permitted to be sent by hand delivery or by post or by electronic means."
+            ],
+            answer: 3
+        },
+        {
+            question: "What shall be the quorum for the meeting of the Board of Directors if the directors of IEL including Isa and Ivaan who are citizens of USA are given the option to attend the meeting through video conferencing:",
+            options: [
+                "Quorum for the Board Meeting shall be five directors.",
+                "Quorum for the Board Meeting shall be four directors.",
+                "Quorum for the Board Meeting shall be nine directors.",
+                "Quorum for the Board Meeting shall be two directors."
+            ],
+            answer: 1
+        },
+        {
+            question: "What shall be the maximum amount of contribution if IEL decides to contribute certain sum of money to a bona-fide charitable trust with the approval of the Board during the FY 2021-22:",
+            options: [
+                "IEL can contribute maximum 8,70,000 to a bona-fide charitable trust with the approval of the Board.",
+                "IEL can contribute maximum 8,40,000 to a bona-fide charitable trust with the approval of the Board.",
+                "IEL can contribute maximum 6,22,500 to a bona-fide charitable trust with the approval of the Board.",
+                "IEL cannot contribute any amount to a bona-fide charitable trust with the approval of the Board since it has incurred loss in the immediately preceding Financial Year."
+            ],
+            answer: 1
+        },
+        {
+            question: "Regarding filling the casual vacancies vacate on account if death of 4. directors due to COVID, find the correct combination of statements; i. Casual Vacancy can be filled by board but only through resolution at board meeting not be circulations. ii. Director appointed against casual vacancy shall hold office till next AGM only. iii. Board can fill only those casual vacancies wherein original directors in such place was appointed at AGM.",
+            options: [
+                "Only i and ii are correct",
+                "Only ii and iii are correct",
+                "Only i and iii are correct",
+                "All of I, ii, iii are correct"
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 47
+{
+    caseText: "<p>Malhotra Ispat Limited (MIL), founded in 1984, had a significant presence in the steel manufacturing sector. Led by Abhay Malhotra, the company's success story was scripted essentially by its resolve to innovate, set new standards, enhance capabilities, and enrich lives to ensure that it stayed true to its cherished value system. Over the years, under his outstanding leadership, MIL had grown into a large and profitable enterprise and also aspired for global presence. The company was continuously scaling its capacity utilisation and efficiencies to capture suitable and timely opportunities.</p><p>As on March 31, 2017, the company had a paid-up capital of 20 crore with 1150 shareholders and after-tax net profit to the tune of 10.25 crore. However, a shocking event took place in May 2017 which led to the downfall of the company. It so happened that due to severe neuro problem, Abhay Malhotra was unable to manage the rising business and consequently, the reins of the business slipped into the hands of his two young but inexperienced sons Virat and Sambhav.</p><p>In an attempt to raise the company to further heights, the Gen-Next management took a heavy loan of 70 crore from Prabhat Development Bank Limited. The funds so borrowed were not properly utilised due to the weak managerial skills of the new leadership and for want of guidance from Abhay Malhotra; and it caused the company to nosedive to such an extent that in just four years after Abhay Malhotra's illness it was felt expedient to go for some kind of compromise or arrangement if the company had to survive in the near future.</p><p>After lengthy discussions at the top management level, the company decided to provide for the following scheme of arrangement: \"Sale of a part of plant and machinery and also a vacant plot for appropriating the proceeds so received for repayment of 70% of the outstanding term loan availed from Prabhat Development Bank Limited. The remaining 30% of loan shall be rescheduled for repayment in installments spread over next five years.\" It is noteworthy that Prabhat Development Bank Limited had given in-principle approval to the above repayment plan, if sanctioned.</p><p>Accordingly, MIL made an application in the specified Format along with requisite documents to the jurisdictional National Company Law Tribunal (NCLT). The Tribunal ordered for a meeting of the shareholders to be held on 10 October, 2021 at 11.00 A.M. at the registered office of the company situated at Connaught Place, New Delhi and the company was directed to issue a suitable notice for conducting the meeting of the shareholders. Some of the shareholders raised objections against the said arrangement.</p>",
+    questions: [
+        {
+            question: "The Case Scenario states that some of the shareholders raised objections against the said arrangement. Since the compromise or arrangement is to be agreed by some kind of majority of persons (without considering the value) who attend and vote at the meeting through specified modes, then which kind of majority is required for approval:",
+            options: [
+                "Simple majority where votes cast in favour of compromise or arrangement exceed the votes cast against it.",
+                "Sixty percent or more majority where votes cast in favour of compromise or arrangement are 60% or more.",
+                "Seventy five percent or more majority where votes cast in favour of compromise or arrangement are 75% or more.",
+                "Full majority where all the votes are cast in favour of compromise or arrangement."
+            ],
+            answer: 0
+        },
+        {
+            question: "It is observed from the above Case Scenario that the Tribunal has ordered for a meeting of the shareholders to consider the scheme of arrangement. The notice of such meeting shall provide that the persons to whom the notice is sent may vote on the scheme of compromise or arrangement:",
+            options: [
+                "Only by themselves keeping in view the importance of meeting.",
+                "By themselves or through proxies appointed by them.",
+                "By themselves or through proxies appointed by them but any such appointed proxy must hold minimum one share in the company.",
+                "By themselves or through proxies appointed by them or by postal ballot."
+            ],
+            answer: 3
+        },
+        {
+            question: "According to the Case Scenario some of the shareholders raised objections against the said arrangement. Since the compromise or arrangement is to be agreed by specified majority of persons (considering the value they hold) who attend and vote at the meeting through specified modes, then which kind of majority in value is required for approval of the scheme:",
+            options: [
+                "Specified majority of persons who cast votes in favour of compromise or arrangement must hold fifty one percent or more in value.",
+                "Specified majority of persons who cast votes in favour of compromise or arrangement must hold sixty percent or more in value.",
+                "Specified majority of persons who cast votes in favour of compromise or arrangement must hold seventy five percent or more in value.",
+                "Specified majority of persons who cast votes in favour of compromise or arrangement must hold ninty percent or more in value."
+            ],
+            answer: 2
+        },
+        {
+            question: "A reading of the above Case Scenario reveals that some of the shareholders raised objections against the said arrangement. From the legal point of view who is eligible to raise an objection to the scheme of compromise or arrangement if he is a shareholder of the company:",
+            options: [
+                "Persons holding not less than 10% of the shareholding as per the latest audited financial statement.",
+                "Persons holding not less than 5% of the shareholding as per the latest audited financial statement.",
+                "Persons holding not less than 7.5% of the shareholding as per the latest audited financial statement.",
+                "Persons holding not less than 15% of the shareholding as per the latest audited financial statement."
+            ],
+            answer: 0
+        }
+    ]
+},
+
+// Case 48
+{
+    caseText: "<p>Roopak Leathers Limited offers quality leather products in the latest styles, catering to the choice of present generation. Their portfolio includes leather shoes, leather bags, wallets, belts and accessories. Incorporated in the year 2002 at Naubasta, Kanpur, the company with over 1000 showrooms in northern India, has maintained a stable position catering to all kinds of income groups. It is a profit-making company and has paid-up share capital of 70 crore (70,00,000 equity shares of 100 each).</p><p>Ambuj, CMD and also one of the four promoters of Roopak Leathers Limited and his team of directors, is interested in having their presence felt in Maharashtra and Gujarat as well. To accomplish their objective, they are thinking of raising funds through public issue of its securities by issuing a prospectus. The equity shares are proposed to be listed on the BSE Limited and National Stock Exchange of India Limited (popularly called NSE).</p><p>For the purpose of valuation of its equity shares, the name of Perfect Valuation Services, LLP, was suggested by one of the directors Manu Kulkarni. In fact, Manu knew CA Promila, one of the partners in Perfect Valuation Services, LLP through his cousin Tanishk who was her class-fellow in school. Ambuj liked the idea and accordingly, Perfect Valuation Services, LLP was duly appointed by the Audit Committee of Roopak Leathers Limited.</p><p>IBBI registered Perfect Valuation Services, LLP, started by twins CA Promila and CA Prachi in the year 2019 and supported by qualified and experienced staff, takes up valuation of 'Securities and Financial Assets' which includes submission of valuation reports for issue of shares and securities, valuation of intangibles, related party transactions, ESOP valuation, etc. The services provided by this firm help in determining the fair value of clients' business through application of complex and in-depth models enabling them to maximise their economic potential and helps them in making informed decision-makers.</p><p>Within the assigned time, Perfect Valuation Services, LLP, valued the equity shares of Roopak Leathers Limited and submitted the valuation report to the company and charged pre-decided fees. Based on the valuation report and other legal formalities, Roopak Leathers Limited floated the public issue which was oversubscribed five times within three hours of opening. Thereafter, the company got its shares successfully listed on BSE Limited and National Stock Exchange of India Limited.</p>",
+    questions: [
+        {
+            question: "While making an application to the Insolvency and Bankruptcy Board of India (IBBI) for registration as a registered valuer in the year 2019, how much non-refundable application fee Perfect Valuation Services, LLP must have paid? Choose the correct alternative from the following options:",
+            options: [
+                "Perfect Valuation Services, LLP must have paid five thousand as non-refundable application fee while making application for registration as a registered valuer.",
+                "Perfect Valuation Services, LLP must have paid ten thousand as non-refundable application fee while making application for registration as a registered valuer.",
+                "Perfect Valuation Services, LLP must have paid fifteen thousand as non-refundable application fee while making application for registration as a registered valuer.",
+                "Perfect Valuation Services, LLP must have paid twenty thousand as non-refundable application fee while making application for registration as a registered valuer."
+            ],
+            answer: 1
+        },
+        {
+            question: "After considering the application, had IBBI been of the prima facie opinion that the registration ought not to be granted to Perfect Valuation Services, LLP, and the reasons for forming such an opinion were communicated to the LLP, then after the receipt of such communication, maximum how much time would have been allowed to Perfect Valuation Services, LLP for submission of an explanation as to why its application should be accepted:",
+            options: [
+                "In such a situation, Perfect Valuation Services, LLP would have been allowed maximum five days for submission of an explanation as to why its application should be accepted.",
+                "In such a situation, Perfect Valuation Services, LLP would have been allowed maximum fifteen days for submission of an explanation as to why its application should be accepted.",
+                "In such a situation, Perfect Valuation Services, LLP would have been allowed maximum twenty-one days for submission of an explanation as to why its application should be accepted.",
+                "In such a situation, Perfect Valuation Services, LLP would have been allowed maximum thirty days for submission of an explanation as to why its application should be accepted."
+            ],
+            answer: 1
+        },
+        {
+            question: "The case scenario states that the Audit Committee of Roopak Leathers Limited appointed Perfect Valuation Services, LLP, to value its equity shares. Had there been no Audit Committee constituted by Roopak Leathers Limited, which other authority in the company would have appointed Perfect Valuation Services, LLP? Choose the correct answer from the following options:",
+            options: [
+                "In the absence of Audit Committee, Ambuj, the Managing Director of Roopak Leathers Limited would have appointed Perfect Valuation Services, LLP.",
+                "In the absence of Audit Committee, the promoters of Roopak Leathers Limited would have appointed Perfect Valuation Services, LLP.",
+                "In the absence of Audit Committee, the Board of Directors of Roopak Leathers Limited would have appointed Perfect Valuation Services, LLP.",
+                "In the absence of Audit Committee, the shareholders of Roopak Leathers Limited would have appointed Perfect Valuation Services, LLP by passing a resolution in the General Meeting."
+            ],
+            answer: 2
+        },
+        {
+            question: "Suppose CA Promila, before becoming partner of Perfect Valuation Services, LLP, was levied a penalty under Section 271J of Income-tax Act, 1961 and such penalty had been confirmed by the Income-tax Appellate Tribunal, then in such a situation when would she become eligible to be a registered valuer:",
+            options: [
+                "Two years must be elapsed after levy of penalty under Section 271J of Income-tax Act, 1961, before CA Promila becomes eligible to be a registered valuer.",
+                "Three years must be elapsed after levy of penalty under Section 271J of Income-tax Act, 1961, before CA Promila becomes eligible to be a registered valuer.",
+                "Five years must be elapsed after levy of penalty under Section 271J of Income-tax Act, 1961, before CA Promila becomes eligible to be a registered valuer.",
+                "Seven years must be elapsed after levy of penalty under Section 271J of Income-tax Act, 1961, before CA Promila becomes eligible to be a registered valuer."
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 49
+{
+    caseText: "<p>Having met each other while working for an IT organisation during 2014, Adarsh and Aadhav teamed up to enter online grocery and vegetable delivery space and founded Harekrishna Daily Needs Limited with the Head Office in Gurgaon (currently called Gurugram) in the beginning of the year 2016. Initially the company had ten subscribers who were related to both Adarsh and Aadhav. They launched 'Groceve a Mobile App portmanteau of groceries and vegetables' through which the consumers could order their daily requirements against online payments and get quick doorstep deliveries of various daily need items. By and by, the company started catering to the northern India. As on 31st March, 2021, it had paid-up share capital of 200 lacs (20 lacs equity shares of 10 each) held by 500 shareholders.</p><p>As Harekrishna Daily Needs Limited was in need of a Managing Director, it appointed Gyanendra Singh as its MD in April 2019. Earlier, Gyanendra Singh worked as General Manager of Vyom Financial Services Limited, a non-banking financial company (NBFC). Habitual of working according to his own whims and caprices, he acted the same way in this company also. He, in his own style, started ordering the employees to supply groceries to the retailers as well as wholesalers at concessional rates which, in fact, was against the policy of the company, for the policy was to supply goods directly to consumers after obtaining online payments. In addition, he offered two months' and three months' debt collection period to the retailers and wholesalers respectively after receiving kickbacks from them. Further, no cash security was deposited by the retailers and wholesalers to cover late payments. Most of the retailers and also wholesalers did not clear their outstanding dues resulting in bad debts. At the end of the financial year 2021-21, the company suffered heavy bad debts which had to be written off at the time of finanalising the annual accounts.</p><p>Aggrieved by these wrongful and undesirable acts, 10 members of Harekrishna Daily Needs Limited made an application before the jurisdictional National Company Law Tribunal (NCLT) praying that the affairs of the company were being conducted in a manner prejudicial to the interests of the members as well as the company and requested NCLT for termination of the service agreement of the Managing Director, Mr. Gyanendra Singh.</p><p>The National Company Law Tribunal (NCLT), however, did not entertain the application filed by 10 members stating that the members making the application were not eligible to apply. When Dharmesh, one of the shareholders, came to know about rejection of the application by National Company Law Tribunal (NCLT), he, on his own, filed the application afresh with the NCLT on the similar grounds of mismanagement and making the company and Managing Director Gyanendra Singh as respondents.</p><p>In fact, Dharmesh through his representative also brought to the knowledge of NCLT that Gyanendra Singh, during his earlier assignment as General Manager with Vyom Financial Services Limited, was involved in sanctioning big loans without insisting on adequate security to dubious borrowers and therefore, many such loan accounts turned non-performing assets (NPA) and irrecoverable. It is to be noted that the National Company Law Tribunal (NCLT) after accepting the application filed by Dharmesh and after hearing both the parties, observed that Gyanendra Singh, the Managing Director of Harekrishna Daily Needs Limited was involved in malpractices and mismanagement, on the basis of his past track record and the current handling of affairs of Harekrishna Daily Needs Limited. The NCLT, therefore, ordered termination of the service agreement by which he was appointed as Managing Director. Gyanendra Singh demanded compensation from the company for the remaining period of his service since his term as Managing Director was yet to expire.</p>",
+    questions: [
+        {
+            question: "In the above case scenario, an application was filed by 10 members of Harekrishna Daily Needs Limited citing the prevalence of mismanagement in the company but it was rejected by the National Company Law Tribunal (NCLT) stating that 10 shareholders were ineligible to apply. In the given situation, how many members irrespective of their shareholdings need to apply to the NCLT?",
+            options: [
+                "Minimum 100 members of Harekrishna Daily Needs Limited, irrespective of their shareholdings, are required to file an application with NCLT against mismanagement in the company.",
+                "Minimum 75 members of Harekrishna Daily Needs Limited, irrespective of their shareholdings, are required to file an application with NCLT against mismanagement in the company.",
+                "Minimum 50 members of Harekrishna Daily Needs Limited, irrespective of their shareholdings, are required to file an application with NCLT against mismanagement in the company.",
+                "Minimum 25 members of Harekrishna Daily Needs Limited, irrespective of their shareholdings, are required to file an application with NCLT against mismanagement in the company."
+            ],
+            answer: 2
+        },
+        {
+            question: "After rejection of application filed by 10 members of Harekrishna Daily Needs Limited, Dharmesh, one of the shareholders of the company, filed the application afresh on the similar grounds of mismanagement which was accepted by the National Company Law Tribunal (NCLT). If conditions for making application u/s 241 not waived/relaxed by NCTL then what could be the reason because of which application filed by Dharmesh was accepted by the NCLT?",
+            options: [
+                "Application filed by Dharmesh was accepted by the NCLT because he must be the holder of minimum 1,00,000 shares of the face value of 10 each amounting to 10 lacs.",
+                "Application filed by Dharmesh was accepted by the NCLT because he must be the holder of minimum 2,00,000 shares of the face value of 10 each amounting to 20 lacs.",
+                "Application filed by Dharmesh was accepted by the NCLT because he must be the holder of minimum 2,50,000 shares of the face value of 10 each amounting to 25 lacs.",
+                "Application filed by Dharmesh was accepted by the NCLT because he must be the holder of minimum 3,00,000 shares of the face value of 10 each amounting to 30 lacs."
+            ],
+            answer: 1
+        },
+        {
+            question: "According to the case scenario, Gyanendra Singh demanded compensation from Harekrishna Daily Needs Limited for the remaining period of his service since his term as Managing Director was yet to expire. Whether the company is liable to pay him compensation in view of the fact that his service agreement was terminated by National Company Law Tribunal (NCLT)?",
+            options: [
+                "Harekrishna Daily Needs Limited, irrespective of termination of his service agreement by the NCLT, is required to compensate Gyanendra Singh by paying him remuneration equal to the remaining period of his service but such compensation must not exceed three years of remuneration.",
+                "Harekrishna Daily Needs Limited, irrespective of termination of his service agreement by the NCLT, is required to compensate Gyanendra Singh by paying him remuneration equal to the remaining period of his service but such compensation must not exceed two years of remuneration.",
+                "Harekrishna Daily Needs Limited, irrespective of termination of his service agreement by the NCLT, is required to compensate Gyanendra Singh by paying him remuneration equal to the remaining period of his service but such compensation must not exceed fifteen months of remuneration.",
+                "Harekrishna Daily Needs Limited is not required to compensate Gyanendra Singh, for his service agreement was terminated by the NCLT."
+            ],
+            answer: 3
+        },
+        {
+            question: "The case scenario mentions that National Company Law Tribunal (NCLT) ordered termination of the service agreement by which he was appointed as Managing Director of Harekrishna Daily Needs Limited. Whether Gyanendra Singh, after being terminated, can be offered the office of Managing Director or director or manager by the company?",
+            options: [
+                "Gyanendra Singh, after termination of the service agreement as Managing Director by NCLT, cannot be offered the office of Managing Director or director or manager by the company for a period of one year from the date of the order of NCLT without the leave of NCLT.",
+                "Gyanendra Singh, after termination of the service agreement as Managing Director by NCLT, cannot be offered the office of Managing Director or director or manager by the company for a period of three years from the date of the order of NCLT without the leave of NCLT.",
+                "Gyanendra Singh, after termination of the service agreement as Managing Director by NCLT, cannot be offered the office of Managing Director or director or manager by the company for a period of five years from the date of the order of NCLT without the leave of NCLT.",
+                "Gyanendra Singh, after termination of the service agreement as Managing Director by NCLT, cannot be offered the office of Managing Director or director or manager by the company for a period of seven years from the date of the order of NCLT without the leave of NCLT."
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 50
+{
+    caseText: "<p>Belonging to the non-banking finance category, Purvi Savings and Investments Nidhi Ltd. was incorporated as a Nidhi for the purpose of inculcating thrift and savings amongst its members, receiving deposits from, and lending to, its members only, for their mutual benefit. It educates its members to use money in a wise manner and insists upon that the money saved today will help them in facing adverse days, if any, tomorrow.</p><p>With its Registered Office situated at Mathura, Uttar Pradesh, it was incorporated on 6th April, 2021 by Krishna Bihari, Brij Mohan, Ram Lal, Sunder, Sriniwas, Laxmi and Purab who were all residents of Mathura and also held the directorships in the company. Being the senior most member, Krishna Bihari was appointed as Managing Director for a period of five years. At the time of incorporation, the Authorised Share Capital of Purvi Savings and Investments Nidhi Ltd. was 30 lacs divided into 3,00,000 equity shares of 10 each. Initially, it issued 1,30,000 shares and therefore, its paid-up share capital was 13,00,000.</p><p>The Term Deposits Plans of Purvi Savings and Investments Nidhi Ltd. include Dhanlaxmi Fixed Deposit Scheme where the enrolled members will get attractive and assured returns with impeccable services. In fact, the deposit amount (minimum 1,000 and further in multiples of 100) will fetch maximum rate of interest @ 6.5% p.a. if the tenure of deposit exceeds thirty-six months. The company also issues Kisan Nidhi Bonds of 12 months where the rate of interest payable is 5% p.a.</p><p>Catering to the financial needs of its members, Purvi Savings and Investments Nidhi Ltd. extends loans as per the norms prescribed by Nidhi Rules, 2014. The lending is in the form of Purvi Nidhi Gold Loan, Purvi Nidhi Silver Loan, Purvi Nidhi Mortgage Loan, Purvi Jewellery Loan and Purvi Kisan Crop Loan. Depending upon the tenure and amount of the loan advanced to its members, Purvi Savings and Investments Nidhi Ltd. charges applicable rate of interest. The members are also fully aware about the fact that the repayment of loans must be made as per the repayment schedule agreed at the time of sanctioning of loan because this is the only way by which the company will flourish and prosper in future.</p><p>After nine months from the date of its incorporation, Purvi Savings and Investments Nidhi Ltd. had 150 members.</p>",
+    questions: [
+        {
+            question: "The case scenario states that after nine months from the date of incorporation, Purvi Savings and Investments Nidhi Ltd. had 150 members. How many more members should be added by it so as to reach the required limit of minimum members within a period of one year from the date of its incorporation? Select the correct alternative from the following options:",
+            options: [
+                "Purvi Savings and Investments Nidhi Ltd. must add minimum 50 members more so as to reach the required limit of minimum members within a period of one year from the date of its incorporation.",
+                "Purvi Savings and Investments Nidhi Ltd. must add minimum 150 members more so as to reach the required limit of minimum members within a period of one year from the date of its incorporation.",
+                "Purvi Savings and Investments Nidhi Ltd. must add minimum 250 members more so as to reach the required limit of minimum members within a period of one year from the date of its incorporation.",
+                "Purvi Savings and Investments Nidhi Ltd. must add minimum 350 members more so as to reach the required limit of minimum members within a period of one year from the date of its incorporation."
+            ],
+            answer: 0
+        },
+        {
+            question: "Suppose after nine months from the date of incorporation, Purvi Savings and Investments Nidhi Ltd. had Net Owned Funds (NOF) of 15 lacs and at the same time deposits mobilised from members were to the tune of 375 lacs, which gave ratio of NOF to deposits as 1:25, then in order to reach the prescribed minimum ratio of NOF to deposits within a period of one year from the date of its incorporation, how much more amount is required to be added by the Nidhi to the current figure of NOF of 15 lacs, assuming that deposits would remain stagnant at 375 lacs:",
+            options: [
+                "In the given situation, Purvi Savings and Investments Nidhi Ltd. is required to add 12.50 lacs to the current figure of NOF of 15 lacs so as to reach the prescribed minimum ratio of NOF to deposits within a period of one year from the date of its incorporation.",
+                "In the given situation, Purvi Savings and Investments Nidhi Ltd. is required to add 10 lacs to the current figure of NOF of 15 lacs so as to reach the prescribed minimum ratio of NOF to deposits within a period of one year from the date of its incorporation.",
+                "In the given situation, Purvi Savings and Investments Nidhi Ltd. is required to add 3.75 lacs to the current figure of NOF of 15 lacs so as to reach the prescribed minimum ratio of NOF to deposits within a period of one year from the date of its incorporation.",
+                "In the given situation, Purvi Savings and Investments Nidhi Ltd. is not required to add any amount to the current figure of NOF of 15 lacs because the ratio of 1:25 is the prescribed minimum ratio which needs to be reached within a period of one year from the date of its incorporation."
+            ],
+            answer: 2
+        },
+        {
+            question: "According to the case scenario, Purvi Savings and Investments Nidhi Ltd. has issued 1,30,000 shares and therefore, its paid-up share capital stood at 13,00,000. Minimum how many shares are required to be allotted to each deposit holder? Choose the correct option from those given below:",
+            options: [
+                "Purvi Savings and Investments Nidhi Ltd. is required to allot minimum five equity shares to each deposit holder.",
+                "Purvi Savings and Investments Nidhi Ltd. is required to allot minimum ten equity shares to each deposit holder.",
+                "Purvi Savings and Investments Nidhi Ltd. is required to allot minimum twenty equity shares to each deposit holder.",
+                "Purvi Savings and Investments Nidhi Ltd. is required to allot minimum twenty-five equity shares to each deposit holder."
+            ],
+            answer: 1
+        },
+        {
+            question: "The case scenario mentions that the rate of interest of 6.5% p.a. is the highest which is being offered by Purvi Savings and Investments Nidhi Ltd. on deposits of more than three years. What is the maximum rate of interest it can charge on any loan advanced by it to its members? Select the correct alternative from the given options:",
+            options: [
+                "Maximum rate of interest which Purvi Savings and Investments Nidhi Ltd. can charge on any loan advanced by it to its members shall not exceed 10.0% p.a.",
+                "Maximum rate of interest which Purvi Savings and Investments Nidhi Ltd. can charge on any loan advanced by it to its members shall not exceed 12.0% p.a.",
+                "Maximum rate of interest which Purvi Savings and Investments Nidhi Ltd. can charge on any loan advanced by it to its members shall not exceed 14.0% p.a.",
+                "Maximum rate of interest which Purvi Savings and Investments Nidhi Ltd. can charge on any loan advanced by it to its members shall not exceed 16.0% p.a."
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 51
+{
+    caseText: "<p>Krishna Toy Limited (KTL) is a manufacturer and trader of a wide variety of toys ranging from soft toys to wooden toys, from console or panel-based games to battery-operated games, and from mechanical toys to electronic toys including video games, etc. Currently, it caters to the needs of children or adolescents falling in the age group of 3 years or older to 15 years. KTL enjoys dominance over the toy market and is willing to maintain it. The increasing trend of online gaming dents the dominance of KTL; therefore, to sustain its position as the market leader in the toy or gaming industry, the management of KTL decided at its board meeting to restructure its business and cater to the youngster age group between the ages of 15 and 20, and even above that.</p><p>KTL started exploring the opportunities for expansion and diversification through inorganic means. Mr. Gopal, who is Executive Director at KTL and aware of the expansion plan, started making the necessary arrangements for raising debt to finance the M&A. Mr. Gopal is willing to tell Mr. John and Mr. Jain about this plan. Mr. John holds a manager-level position at KTL and is responsible for managing logistics and supply chain, while Mr. Jain is an insider at KTL. Ms. Iqbal Kaur, who is responsible for availing a credit rating from a credit rating agency and preparing the documents for statutory filling, should seek clarification from Mr. Gopal on the purpose of seeking a fresh credit rating.</p><p>Mr. Vidyanath vacated the office of MD around three months ago because he assumed the office of WTD in Gamers Limited, which is expected to be in competition with KTL; hence, a conflict of interest may exist if he does not vacate the office at KTL. Ms. Mahira is appointed as the new MD. She is unaware of the meeting of the board wherein the resolution regarding the preliminary decision on expansion was moved and the road map laid down. She asked Mr. Gopal to brief her on why he is engaged in arrangements for raising funds.</p><p>In the next board meeting the periodical (quarterly) financial statements need to be presented/adopted and the interim dividend is expected to be declared in addition to certain other agenda items including resolution on the mode of expansion as well as determining the criteria for selection of possible targets.</p>",
+    questions: [
+        {
+            question: "Advice Mr. Gopal with whom (out of Ms. Mahira, Mr. John, Ms. Iqbal Kaur, and Mr. Jain) he can share the information pertaining to expansion plan of KTL which he possess;",
+            options: [
+                "With all or any of them.",
+                "With Mr. Jain as he is insider to KTL.",
+                "With Ms. Mahira only as she is MD.",
+                "With Ms. Mahira and Ms. Iqbal Kaur only."
+            ],
+            answer: 3
+        },
+        {
+            question: "In light of agenda established for next board meeting at KTL, out of following three set of informations, which are to be classified as price sensitive information? i. Quarterly Financial Results ii. Declaration of interim dividend iii. Proposed expansion of business",
+            options: [
+                "i and ii only.",
+                "ii and iii only.",
+                "i and iii only.",
+                "All of i, ii and iii."
+            ],
+            answer: 3
+        },
+        {
+            question: "In the case of KTL there are some who may access the unpublished price sensitive information through either Mr. Gopal or being in an influential position themselves and some others likewise Mr. Gopal already in possession of such information, according to you who shall be considered as Insider as per Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations, 2015;",
+            options: [
+                "Everyone who so ever is in possession or having access of the unpublished price sensitive information",
+                "Everyone who so ever is in possession of the unpublished price sensitive information",
+                "Everyone who so ever having access to the unpublished price sensitive information",
+                "Everyone who is either on board or hold position of KMP"
+            ],
+            answer: 0
+        },
+        {
+            question: "Which of following statements is true in regard to Mr. Vidyanath who vacated the office of MD at KTL;",
+            options: [
+                "He is a connected person but not the insider",
+                "He is an insider but not the connected person",
+                "He is a connected person as well as an insider",
+                "He is neither the connected person nor the insider"
+            ],
+            answer: 2
+        },
+        {
+            question: "Assuming Mr. Gopal himself traded in shares of selected target company based upon the unpublished price sensitive information he possess in capacity of insider and made gain of INRs 6.25 crore, while value of total trade performed by him is 40 crore. What shall be the maximum penalty that can be imposed upon Mr. Gopal?",
+            options: [
+                "40.00 crore rupee",
+                "25.00 crore rupee",
+                "18.25 crore rupee",
+                "6.25 crore rupee"
+            ],
+            answer: 1
+        }
+    ]
+},
+
+// Case 52
+{
+    caseText: "<p>Chiranjeev, equipped with MBA Finance, always dreamt of setting up a small finance business company with a vision to contribute to the Indian economy to the maximum possible extent by using his limited efforts. After discussing the matter with his relatives and friends he decided to start a Nidhi company as this was the most easy and affordable way to start a loan business in India which required only seven members with easy documentation. No approval, whatsoever, was also required from Reserve Bank of India as in the case of other finance companies. Further, the Nidhi Company would be able to accept deposits from members and lend to them as well besides earning periodical interests on loans while its main expenditure would be to pay interests on deposits and establishment charges, etc.</p><p>In order to fulfil his dream, Chiranjeev along with his six other trusted friends and relatives incorporated a Nidhi company under the name Shri Murugan Wealth Nidhi Limited, on 20th August, 2015 at Kanchipuram, Tamil Nadu, which was duly notified as Nidhi in the Official Gazette. It was mentioned in the Memorandum that as Nidhi, the company would cultivate the habit of thrift and savings amongst its members, receive deposits from and lend to, its members only, for their mutual benefit and it shall comply with Nidhi Rules, 2014. The authorised capital of the company was 1,00,00,000 divided into 10,00,000 equity shares of 10 each.</p><p>All the members of the Board of Shri Murugan Wealth Nidhi Limited possessed a very strong background in terms of financial stability as also expertise in business. Chiranjeev was throughout supported by the extraneous efforts of his younger brother, Chinnamani who was the executive president of Shri Murugan Wealth Nidhi Limited and possessed administrative talent to govern the organisation without compromising ethical practices. With a dedicated team of staff, the company was on its growth path with utmost courteous services rendered with able management. The company encouraged rural savings habit and believed in rendering all financial assistance to its members by receiving both short-term and long-term deposits.</p><p>The deposits raised by Shri Murugan Wealth Nidhi Limited were in the form of fixed deposits, recurring deposits and savings deposits. While extending loans to its members, the Nidhi provided Shri Murugan Jewel Loan against pledge of gold jewellery for productive and consumption purposes with minimum documentation and utmost safety of their gold. It also provided mortgage loans and loans against deposits. In addition, it provided locker facilities to its members.</p><p>As on 31st March 2023, the issued, subscribed and paid-up share capital of Shri Murugan Wealth Nidhi Limited was 95,00,000 (9,50,000 equity shares of 10 each). Its deposits were to the extent of 315 crore with 12,000 members. The loans aggregated to 275 crore. Keeping in view the sufficiency of profits, the company declared a dividend of Re. one per share. In near future, Shri Murugan Wealth Nidhi Limited has plans to open more branches which proves the fact that they are securing trust of more and more members as the years go by.</p>",
+    questions: [
+        {
+            question: "It is evident from the case scenario that Shri Murugan Wealth Nidhi Limited started with paid-up share capital of 95,00,000. Keeping in view the minimum paid-up share capital with which a Nidhi can be started, how much is the excess paid-up share capital Shri Murugan Wealth Nidhi Limited had when it started its operations with effect from 20th August, 2015:",
+            options: [
+                "Shri Murugan Wealth Nidhi Limited had excess paid-up share capital of 75,00,000 when it started its operations with effect from 20th August, 2015.",
+                "Shri Murugan Wealth Nidhi Limited had excess paid-up share capital of 80,00,000 when it started its operations with effect from 20th August, 2015.",
+                "Shri Murugan Wealth Nidhi Limited had excess paid-up share capital of 90,00,000 when it started its operations with effect from 20th August, 2015.",
+                "Shri Murugan Wealth Nidhi Limited had excess paid-up share capital of 93,00,000 when it started its operations with effect from 20th August, 2015."
+            ],
+            answer: 2
+        },
+        {
+            question: "For the Financial Year 2022-23, Shri Murugan Wealth Nidhi Limited declared a dividend of Re. one share. What is the maximum amount of dividend it is permitted to declare? Choose the correct option from those given below:",
+            options: [
+                "Since Shri Murugan Wealth Nidhi Limited has declared maximum permitted dividend of Re. one per share, it cannot declare dividend in excess of Re. one per share.",
+                "Shri Murugan Wealth Nidhi Limited can declare maximum permitted dividend of two per share.",
+                "Shri Murugan Wealth Nidhi Limited can declare maximum permitted dividend of two and fifty paise per share.",
+                "Shri Murugan Wealth Nidhi Limited can declare maximum permitted dividend of three per share."
+            ],
+            answer: 2
+        },
+        {
+            question: "The case scenario states that Shri Murugan Wealth Nidhi Limited also provided locker facilities to its members. What is the maximum rental income that the company can generate from locker facilities provided to its members.",
+            options: [
+                "Shri Murugan Wealth Nidhi Limited can generate rental income from locker facilities provided to its members maximum upto ten per cent of its gross income at any point of time during a financial year.",
+                "Shri Murugan Wealth Nidhi Limited can generate rental income from locker facilities provided to its members maximum upto twenty per cent of its gross income at any point of time during a financial year.",
+                "Shri Murugan Wealth Nidhi Limited can generate rental income from locker facilities provided to its members maximum upto twenty-five per cent of its gross income at any point of time during a financial year.",
+                "Shri Murugan Wealth Nidhi Limited can generate rental income from locker facilities provided to its members maximum upto thirty per cent of its gross income at any point of time during a financial year."
+            ],
+            answer: 1
+        },
+        {
+            question: "By declaring dividend of Re. one per share, Shri Murugan Wealth Nidhi Limited is required to pay 9,50,000 as dividend amount to its members.. How much amount it is required to transfer to General Reserve when it declares dividend of 9,50,000? Select the correct alternative from the following options:",
+            options: [
+                "Shri Murugan Wealth Nidhi Limited is not required to transfer any amount to General Reserve when it declares dividend of 9,50,000.",
+                "Shri Murugan Wealth Nidhi Limited is required to transfer minimum 9,50,000 (i.e. 100% of 9,50,000) to General Reserve when it declares dividend of 9,50,000.",
+                "Shri Murugan Wealth Nidhi Limited is required to transfer minimum 4,75,000 (i.e. 50% of 9,50,000) to General Reserve when it declares dividend of 9,50,000.",
+                "Shri Murugan Wealth Nidhi Limited is required to transfer minimum 14,25,000 (i.e. 150% of 9,50,000) to General Reserve when it declares dividend of 9,50,000."
+            ],
+            answer: 0
+        }
+    ]
+},
+
+// Case 53
+{
+    caseText: "<p>Marigold Stationers Limited, incorporated in April 2014 by Pratham and Utkarsh as well as their close friends, has its Registered Office situated in Rajendra Place, New Delhi. Its manufacturing units are located in Chandigarh and Sangrur. The Company, in its infancy, manufactured smorgasbord of paper stationery like, Note Books of different sizes, Long Books, Note Pads, Registers, Account Books, etc., but moved on to add certain non-paper stationery products like Calculators, Rubber Stamp Kits, Gel-Pens, HB Pencils, Geometry Boxes, Drawing Colours, etc., in another five years' time. The company had a tie-up with stationery wholesalers for selling and distribution of its products.</p><p>As per the latest audited financial statements i.e. as on 31st March, 2021, the paid-up share capital of Marigold Stationers Limited was 300 crore and its turnover was 500 crore. As regards the number of directors, there are twelve directors in this stationery manufacturing company. Out of these, Vishesh and Vinayak are independent directors whereas Pallavi and Bhavasrija are women directors. Further, leaving independent and women directors, out of remaining eight directors, six are executive directors. The Articles of Association of the company are silent on the issue of retirement of the directors at every Annual General Meeting.</p><p>Vallabh, one of the executive directors of Marigold Stationers Limited, recently shifted to his newly constructed house in Greater Kailash- after vacating rented accommodation in Punjabi Bagh. He got his Aadhar card changed to accommodate new residential address. Since, DIR-3, earlier filed by him, contains his old residential address, he is desirous of changing his address in the records of Registrar of Companies.</p><p>In the immediate previous financial year, Marigold Stationers Limited had contributed a total 25,00,000 to two prominent political parties of the country, namely Nitya Vikas Party and Nav Bhor Party. In the current financial year, it is contemplating to contribute 50,00,000 to both the parties in the same proportion as was done in the financial year just gone by.</p><p>Lotus Stationery Limited, incorporated in June, 2015 by Kabir and Vishvender and their close relatives, has its Registered Office in Thane, Mumbai and is a subsidiary of Marigold Stationers Limited. It is into the manufacturing of computer stationery, computer paper, inkjet cartridges, Pen Drives of different capacities and the like. It is managed by seven directors of which two are independent directors. Its issued and paid-up capital is 30 crore. In the immediate previous financial year, its turnover reached 90 crore.</p><p>Due to imminent expansion plans, Lotus Stationery Limited is desirous of appointing Anirudh, a well-qualified and experienced personality, as a director to strengthen its Board. It is noteworthy that Anirudh is already holding directorships in Marigold Stationers Limited, seven other public companies, six private limited companies of which two are subsidiaries of public limited companies and alternate directorship in Kitab Literacy Publishers Private Limited.</p>",
+    questions: [
+        {
+            question: "There are twelve directors in Marigold Stationers Limited. Considering the applicable provisions, choose the correct answer from the following options that indicates the number of directors who are liable for retirement by rotation and the actual number of directors who shall get retired:",
+            options: [
+                "Out of twelve directors in Marigold Stationers Limited, seven are liable for retirement by rotation whereas actual number of directors to be retired shall be two.",
+                "Out of twelve directors in Marigold Stationers Limited, six are liable for retirement by rotation whereas actual number of directors to be retired shall be two.",
+                "Out of twelve directors in Marigold Stationers Limited, eight are liable for retirement by rotation whereas actual number of directors to be retired shall be three.",
+                "Out of twelve directors in Marigold Stationers Limited, eight are liable for retirement by rotation whereas actual number of directors to be retired shall be two."
+            ],
+            answer: 0
+        },
+        {
+            question: "It is stated in the case scenario that Vallabh, one of the directors of Marigold Stationers Limited, recently changed his residence from Punjabi Bagh to Greater Kailash-I. In order to change his residential particulars already filled in DIR-3, through which Form Vallabh shall intimate the MCA (Central Government) and in how many days:",
+            options: [
+                "Vallabh is required to fill Form DIR-3A in 30 days with the MCA.",
+                "Vallabh is required to fill Form DIR-3A in 15 days with the MCA.",
+                "Vallabh is required to fill Form DIR-6 in 30 days with the MCA.",
+                "Vallabh is required to fill Form DIR-6 in 15 days with the MCA."
+            ],
+            answer: 2
+        },
+        {
+            question: "Lotus Stationery Limited is desirous of appointing Anirudh as a director to strengthen its Board. Anirudh is already holding directorships in Marigold Stationers Limited, seven other public companies, six private limited companies of which two are subsidiaries of public limited companies and alternate directorship in Kitab Literacy Publishers Private Limited. Select the correct option from those stated below whether Anirudh, keeping in view his directorships in other companies, can be appointed as a director in Lotus Stationery Limited:",
+            options: [
+                "Anirudh can be appointed as a director in Lotus Stationery Limited since he is permitted to hold directorships in maximum 20 companies whereas currently he is holding directorships in only 15 companies.",
+                "Anirudh cannot be appointed as a director in Lotus Stationery Limited since he is holding directorships in eight public companies and two private limited companies which are subsidiaries of public limited companies.",
+                "Anirudh cannot be appointed as a director in Lotus Stationery Limited since he is already holding directorships in maximum permitted 15 companies.",
+                "Anirudh can be appointed as a director in Lotus Stationery Limited since he is holding directorships only in eight public companies as against maximum permitted ten public companies."
+            ],
+            answer: 1
+        },
+        {
+            question: "In the current financial year, Marigold Stationers Limited is contemplating to contribute 50,00,000 to two political parties whom they contributed 25,00,000 in the previous financial year. Is it possible for Marigold Stationers Limited to make such contribution of 50,00,00? Choose the correct answer from the following options:",
+            options: [
+                "Marigold Stationers Limited can contribute to both the political parties maximum upto 125% of 25,00,000 which was contributed in the immediate previous financial year and such amount works out to 31,25,000.",
+                "Marigold Stationers Limited can contribute to both the political parties maximum upto 150% of ₹25,00,000 which was contributed in the immediate previous financial year and such amount works out to 37,50,000.",
+                "Marigold Stationers Limited can contribute to both the political parties maximum upto 175% of 25,00,000 which was contributed in the immediate previous financial year and such amount works out to 43,75,000.",
+                "Marigold Stationers Limited can contribute any amount to both the political parties irrespective of what was contributed in the immediate previous financial year."
+            ],
+            answer: 3
+        }
+    ]
+},
+
+// Case 54
+{
+    caseText: "<p>Sitting over the fence, Shelly opted to face dynamism of consumer preferences, razor-cut competition and changing Government policies to fulfill her inherent passion for exotic make-up brands by launching a beauty product company in Bombay (now Mumbai), supported by her advocate father Bhimsen, elder brother Ashutosh and younger brother Soumit as well as ten close friends, way back in 1984 under the then Companies Act, 1956, much before the air of liberalisation, privatisation and globalisation touched the soil of our country. The company M/s Beauty Products Limited with an Authorised Capital of 30,00,000 divided into 3,00,000 shares of 10 each (paid-up capital 25,00,000) and under the brand 'Angelic' began manufacturing cosmetic products like Nail-enamel, Foundation Cream, Compact, Mascara, Eye-pencil, etc. Its products had an international touch and captured the Indian market at a time when the elite class was splurging on imported cosmetics.</p><p>This unlisted company, under the strong and able leadership of Shelly, Ashutosh and Soumit, had not only observed a growth trend in terms of its turnover and profitability but had also earned name and fame in the hearts of consumers as well as cosmetic industry. Ashutosh directed the company in the capacity as Managing Director up to the satisfaction of all.</p><p>In 2015, M/s Beauty Products Limited felt the need, decided and raised its Authorised Capital to 20,00,00,000. Through private placements from time to time, it pumped in more capital and its paid-up capital reached to a level of 19,50,00,000 as on 31st March, 2021. At this juncture, its turnover was 850 crore.</p><p>The secretarial audit of M/s Beauty Products Limited was started in the year 2018 as the company had crossed the threshold limit relating to turnover as per the audited financial statements as on 31st March, 2017. M/s Keshav and Kaustubh & Associates, a firm of practicing company secretaries, was engaged to carry out the secretarial audit.</p><p>In the beginning of the current financial year, the total strength of directors of M/s Beauty Products Limited had reached eleven which included two independent directors. Some of the directors of the company were desirous of appointing Mr. Soumit as Managing Director of the company in place of Mr. Ashutosh, who wanted to leave the office of Managing Director due to intense family pressure. It is to be noted that Mr. Soumit was also holding the office of Managing Director in M/s Glow and Glow Cosmetics Limited which was run by his father-in-law along with his relatives. For the appointment of Mr. Soumit as Managing Director of M/s Beauty Products Limited, a Board Meeting was convened by giving a specific notice of such meeting and of the resolution to be moved thereat, to all the directors then in India. At the Board Meeting, five out of nine directors present in the meeting consented to Mr. Soumit becoming as Managing Director.</p><p>By now, M/s Beauty Products Limited had over 150 products catering to every kind of consumer. Included in its diverse portfolio were moisturisers, aloe-vera gels, lip balms, deodorants and a variety of nail-paints to meet the demand of teenagers. After some time, keeping in view the future expansion, M/s Beauty Products Limited wanted to appoint Mr. Amba Prasad, 74 years of age, as a Whole-time director with the approval of the Board. He had sharp business acumen and wide experience by working at a very senior position in Rich Bank Limited from where he superannuated 14 years back. At a Board Meeting, the proposal to appoint Mr. Amba Prasad as Whole-time director was approved with full majority of eight directors attending the Meeting. No further action was taken in this regard.</p>",
+    questions: [
+        {
+            question: "As per the case scenario, some of the directors of M/s Beauty Products Limited were desirous of appointing Mr. Soumit as Managing Director of the company, who was also acting as Managing Director in M/s Glow and Glow Limited. At the Board Meeting convened in this respect, five out of nine directors present in the meeting consented to his becoming as Managing Director. Considering the applicable provisions, choose the correct alternative from those given below as to whether or not Mr. Soumit was appointed as Managing Director of M/s Beauty Products Limited?",
+            options: [
+                "Since more than half directors (i.e. five out of nine directors) attending the Board Meeting consented to Mr. Soumit becoming the Managing Director, he must have been appointed as the Managing Director of M/s Beauty Products Limited.",
+                "Since minimum two-third directors (i.e. six out of nine directors) attending the Board Meeting must consent to Mr. Soumit becoming the Managing Director, he could not have been appointed as the Managing Director of M/s Beauty Products Limited.",
+                "Since minimum three-fourth directors (i.e. seven out of nine directors) attending the Board Meeting must consent to Mr. Soumit becoming the Managing Director, he could not have been appointed as the Managing Director of M/s Beauty Products Limited.",
+                "Since all the directors attending the Board Meeting must consent to Mr. Soumit becoming the Managing Director, he could not have been appointed as the Managing Director of M/s Beauty Products Limited."
+            ],
+            answer: 3
+        },
+        {
+            question: "It is evident from the case scenario that the proposal to appoint Mr. Amba Prasad, aged 74 years, as Whole-time Director was approved by the Board of Directors of M/s Beauty Products Limited. Select the correct alternative from the following options that indicates the validity or invalidity of appointment of Mr. Amba Prasad as a Whole-time Director of the company after approval of proposal by the Board:",
+            options: [
+                "In view of the fact that Mr. Amba Prasad has crossed the age of 70 years, his appointment as a Whole-time Director would be considered as valid only when an ordinary resolution is passed and thereafter, sanction of National Company Law Tribunal is sought.",
+                "Even if Mr. Amba Prasad has crossed the age of 70 years, his appointment as a Whole-time Director would be considered as valid since it was approved by all the eight directors who attended the Board Meeting.",
+                "In view of the fact that Mr. Amba Prasad has crossed the age of 70 years, his appointment as a Whole-time Director would not be considered as valid since it was not approved by all the eleven directors.",
+                "In view of the fact that Mr. Amba Prasad has crossed the age of 70 years, his appointment as a Whole-time Director would be considered as valid only when a special resolution is passed and if no such special resolution is passed, but the votes cast in favour of motion exceed the votes, if any, cast against the motion and the Central Government approves such appointment."
+            ],
+            answer: 3
+        },
+        {
+            question: "Suppose Mr. Amba Prasad, after due formalities, is appointed as Whole-time Director of M/s Beauty Products Limited, then what would be the maximum term for which he can be so appointed:",
+            options: [
+                "The appointment of Mr. Amba Prasad as Whole-time Director of M/s Beauty Products Limited would be for a maximum term of three years.",
+                "The appointment of Mr. Amba Prasad as Whole-time Director of M/s Beauty Products Limited would be for a maximum term of five years.",
+                "The appointment of Mr. Amba Prasad as Whole-time Director of M/s Beauty Products Limited would be for a maximum term of seven years.",
+                "The appointment of Mr. Amba Prasad as Whole-time Director of M/s Beauty Products Limited would be for a maximum term of ten years."
+            ],
+            answer: 1
+        },
+        {
+            question: "The case scenario mentions that in the year 2018, secretarial audit of M/s Beauty Products Limited was started as the company had crossed the threshold limit relating to turnover. At that time, what could be the threshold limit relating to turnover which necessitated starting of secretarial audit:",
+            options: [
+                "At the time starting secretarial audit in the year 2018, the turnover of M/s Beauty Products Limited must have been 300 crore or more.",
+                "At the time starting secretarial audit in the year 2018, the turnover of M/s Beauty Products Limited must have been 250 crore or more.",
+                "At the time starting secretarial audit in the year 2018, the turnover of M/s Beauty Products Limited must have been 150 crore or more.",
+                "At the time starting secretarial audit in the year 2018, the turnover of M/s Beauty Products Limited must have been 100 crore or more."
+            ],
+            answer: 1
+        }
+    ]
+},
+
+// Case 55
+{
+    caseText: "<p>To provide banking services to the people living in Emakulam, Kerala, which still was a far off location and devoid of accessing finance from nationalised banks and Non-Banking Financial Companies (NBFCs), Nagarajan, his close friends Krishnamurti, Raghunath, Govindam, Radhakrishnan, Vijay Krishnan and Chaitanya, who were experienced and dedicated persons from the field of business, trade and industry, thought of opening a Nidhi company which would act as the safest and cheapest way of inviting deposits from them and granting them loans. Vinayak Strotram Nidhi Limited was thus incorporated by Nagarajan along with this group of close friends on 10th July, 2014 in Emakulam District of Kerala.</p><p>The Authorised Capital of this Nidhi, which wanted to nurture the habit of caution and savings among the members by receiving deposits from them and lending money to them only for their mutual benefit, was 70,00,000 divided into 7,00,000 equity shares of 10 each while issued and paid-up capital stood at a figure of 60,00,000 with just eight employees. Through this Nidhi, savings could be deposited in the form of Savings Account, Recurring Deposit Account, Fixed Deposit Account and Daily Deposit Accounts while Vinayak Strotram Nidhi Limited granted loans to the members only against securities of immovable properties and movables such as gold, silver, jewellery, deposits, National Saving Certificates, life insurance policies and other Government securities as per the prescribed rules for Nidhi companies.</p><p>Customer centricity was at the core of Managing Director Nagarajan and three executive directors Krishnamurti, Raghunath and Govindam and it was this belief that had led the business to build long term relationships. Since its inception, the Nidhi was earning profits year by year. In anticipation of growing and rendering better services to their members and stabilizing it as a profit centre, Nagarajan and his dedicated team felt that there was a demand for opening some branches in the district itself. Thus, Vinayak Strotram Nidhi Limited opened three more branches at Aluva, Kanayannur and Kothamanglam in Emakulam district of Kerala. These branches were inaugurated with more focus on deposit mobilization and lending which was a core business of this Nidhi.</p><p>The Nidhi brought within its fold experienced persons like retired senior executives from national and multi-national banks to seek guidance and build it as the pioneer in rendering best services by adopting latest technology. By the end of March, 2021, Vinayak Strotram Nidhi Limited had 11,000 members and 200 employees. In the track of fast growth and with foresightedness in mind, Nagarajan desired to open a new branch in another district of Kerala. He chose Kannaur district since he had a special bonding with this place because he was an alumnus of Kannaur University, having graduated in commerce from this famous University. But instead of doing that way, he opened another Nidhi company by the name Vinayak Strotram Kannaur Nidhi Limited in Kannaur district of Kerala.</p>",
+    questions: [
+        {
+            question: "Kartikay, a resident of Aluva, is desirous of opening a Savings Account with Vinayak Strotram Nidhi Limited but before opening such account he must be a member of this Nidhi. How many minimum shares must be issued to him so that he becomes a member?",
+            options: [
+                "Kartikay must be issued minimum one share to become member of Vinayak Strotram Nidhi Limited so that he is able to open a Savings Account.",
+                "Kartikay must be issued minimum three shares to become member of Vinayak Strotram Nidhi Limited so that he is able to open a Savings Account.",
+                "Kartikay must be issued minimum five shares to become a member of Vinayak Strotram Nidhi Limited so that he is able to open a Savings Account.",
+                "Kartikay must be issued minimum ten shares to become member of Vinayak Strotram Nidhi Limited so that he is able to open a Savings Account."
+            ],
+            answer: 0
+        },
+        {
+            question: "Suppose Krishnamurti, one of the directors of Vinayak Strotram Nidhi Limited, were to hold office of director for a term upto ten consecutive years, then when shall he be eligible for re-appointment as director? Choose the correct alternative from those stated below:",
+            options: [
+                "After expiry of six months of ceasing to be director of Vinayak Strotram Nidhi Limited, he shall be eligible for re-appointment as director.",
+                "After expiry of one year of ceasing to be director of Vinayak Strotram Nidhi Limited, he shall be eligible for re-appointment as director.",
+                "After expiry of two years of ceasing to be director of Vinayak Strotram Nidhi Limited, he shall be eligible for re-appointment as director.",
+                "After expiry of three years of ceasing to be director of Vinayak Strotram Nidhi Limited, he shall be eligible for re-appointment as director."
+            ],
+            answer: 2
+        },
+        {
+            question: "Maximum how much interest Vinayak Strotram Nidhi Limited can offer on fixed and recurring deposits accepted from its members? Select the correct option from those mentioned below:",
+            options: [
+                "Vinayak Strotram Nidhi Limited is permitted to offer interest on fixed and recurring deposits at a rate not exceeding the maximum rate of interest that a Non-Banking Financial Company can pay on its public deposits.",
+                "Vinayak Strotram Nidhi Limited is permitted to offer interest on fixed and recurring deposits at a rate not exceeding the maximum rate of interest that a nationalised bank can pay on its public deposits.",
+                "Vinayak Strotram Nidhi Limited is permitted to offer interest on fixed and recurring deposits at a rate not exceeding the maximum rate of interest that a Rural Regional Bank can pay on its public deposits.",
+                "Vinayak Strotram Nidhi Limited is permitted to offer interest on fixed and recurring deposits at a rate not exceeding the maximum rate of interest that a Co-operative Bank can pay on its public deposits."
+            ],
+            answer: 0
+        },
+        {
+            question: "In which year at the earliest, Vinayak Strotram Nidhi Limited would have got the approval to open branches at Aluva, Kanayannur and Kothamanglam in Emakulam district of Kerala.",
+            options: [
+                "At the earliest, after 9th July, 2015, Vinayak Strotram Nidhi Limited would have got the approval to open branches at Aluva, Kanayannur and Kothamanglam in Emakulam district of Kerala.",
+                "At the earliest, after 9th July, 2016, Vinayak Strotram Nidhi Limited would have got the approval to open branches at Aluva, Kanayannur and Kothamanglam in Emakulam district of Kerala.",
+                "At the earliest, after 9th July, 2017, Vinayak Strotram Nidhi Limited would have got the approval to open branches at Aluva, Kanayannur and Kothamanglam in Emakulam district of Kerala.",
+                "At the earliest, after 9th July, 2018, Vinayak Strotram Nidhi Limited would have got the approval to open branches at Aluva, Kanayannur and Kothamanglam in Emakulam district of Kerala."
+            ],
+            answer: 2
+        },
+        {
+            question: "Nagarajan, Managing Director of Vinayak Strotram Nidhi Limited, desired to open a branch in Kannaur district but changed his plan and rather opened a new Nidhi by the name Vinayak Strotram Kannaur Nidhi Limited. What could be the reason for change of his mind? Choose the appropriate option from those given below:",
+            options: [
+                "Nagarajan, Managing Director of Vinayak Strotram Nidhi Limited, could not open a new branch in another district because he did not get permission from the Registrar of Companies.",
+                "Nagarajan, Managing Director of Vinayak Strotram Nidhi Limited, could not open a new branch in another district because he did not get permission from the Regional Director.",
+                "Nagarajan, Managing Director of Vinayak Strotram Nidhi Limited, could not open a new branch in another district because he did not get permission from the State Government.",
+                "Nagarajan, Managing Director of Vinayak Strotram Nidhi Limited, could not open a new branch in another district because he did not get permission from the Reserve Bank of India."
+            ],
+            answer: 1
+        }
+    ]
+},
+
+// Case 56
+{
+    caseText: "<p>Supported by the latest technology, supply chain management, product development, robust research and development, Akhil and Bharat Nandan along with other trusted persons incorporated Chai Garden Limited in 2014 with its Registered Office situated in Mumbai to transform every day's chai experience of the people living in Maharashtra, Gujarat and Karnataka by adopting business model of online tea ordering. Their business was a great success because of game changing heat retaining disposable cardboard flasks that enabled the company to deliver the brew fresh to the consumers across the cities. Its orders for chai peaked between 9.30 AM to noon and then between 4.00 PM to 8.00 PM.</p><p>Seeing the growth of the company Akhil and Bharat Nandan roped in four of their trusted friends, namely, Rohan, Rahul, Raunit and Raman as directors to head finance, marketing, Research and Development and operations. Akhil was the MD of the company. The hard work put in by them and their team of employees paid good dividends. By and by, the demand started spilling to week-ends as well showing that consumers were ordering tea from their cozy homes. By June, 2022, with over 1000 employees in 250 hubs across six cities viz. Mumbai, Pune, Surat, Vadodara, Bangalore and Mysore, the company was serving more than 2,00,000 cups per day.</p><p>The directors Akhil and Bharat Nandan thought of including healthy breakfast and snacks like poha, idly, cucumber sandwiches, egg sandwiches, atta cookies and the like that could perfectly complement existing business of chai. This diversification needed infusion of additional capital to buy high-tech machines, development of infrastructure, working capital for day-to-day operations. They were toying with the idea of availing loan from Top Bank Limited or private placement of shares. Therefore, four more directors, namely, Nandish, Nandini, Nevil and Nandita were added to the Board of Directors after following due process of law.</p><p>According to the Articles of the company, maximum directors can be up to twelve. However, keeping in view the future expansion plans, the Articles of Association were amended so that the company could appoint maximum of twenty directors. In November, 2023, a meeting of the Board of Directors was called to ponder upon various issues including that of making provision in respect of healthy breakfast and snacks. It is noteworthy that one week before the meeting of the Board of Directors, Avinash, one of the shareholders holding 1000 equity shares, requested the company to furnish him a copy of the Register of Directors and Key Managerial Personnel (KMPs).</p><p>In the Board meeting, everyone voted in favour of diversification and a Board Resolution was passed in this regard. This was followed by an intense discussion on whether to avail term loan or raise funds through private placement. However, all the directors assented to the private placement since the same seemed to be more beneficial. Consequently, the strength of the shareholders also increased from 600 to 900 and thereafter to 1500 by March, 2024. There was no looking back.</p>",
+    questions: [
+        {
+            question: "According to the case scenario, Avinash, one of the shareholders holding 1000 equity shares, requested the company to furnish him a copy of the Register of Directors and Key Managerial Personnel (KMPs). What is the maximum time period within which the copy of said Register needs to be provided to a member? Choose the correct option from those given below:",
+            options: [
+                "When requested by a shareholder, a copy of the Register of Directors and Key Managerial Personnel (KMPs) needs to be provided maximum within seven days.",
+                "When requested by a shareholder, a copy of the Register of Directors and Key Managerial Personnel (KMPs) needs to be provided maximum within fifteen days.",
+                "When requested by a shareholder, a copy of the Register of Directors and Key Managerial Personnel (KMPs) needs to be provided maximum within thirty days.",
+                "When requested by a shareholder, a copy of the Register of Directors and Key Managerial Personnel (KMPs) needs to be provided maximum within forty-five days."
+            ],
+            answer: 2
+        },
+        {
+            question: "Suppose, Chai Garden Limited decides to appoint total strength of twenty directors as allowed by its Articles of Association as against the maximum fifteen directors permitted by the Companies Act, 2013. Which way can the company appoint twenty directors? Choose the correct option from those given below:",
+            options: [
+                "Chai Garden Limited can appoint twenty directors as allowed by the Articles of Association as against the maximum fifteen directors permitted by the Companies Act, 2013 by passing an ordinary resolution.",
+                "Chai Garden Limited can appoint twenty directors as allowed by the Articles of Association as against the maximum fifteen directors permitted by the Companies Act, 2013 by passing a special resolution.",
+                "Chai Garden Limited can appoint twenty directors as allowed by the Articles of Association as against the maximum fifteen directors permitted by the Companies Act, 2013 by passing an ordinary resolution and thereafter, it shall be required to seek approval of the Registrar of Companies.",
+                "Chai Garden Limited can appoint twenty directors as allowed by the Articles of Association as against the maximum fifteen directors permitted by the Companies Act, 2013 by passing an special resolution and thereafter, it shall be required to seek approval of the Regional Director."
+            ],
+            answer: 1
+        },
+        {
+            question: "Is it mandatory for Chai Garden Limited to form a Stakeholders Relationship Committee keeping in view the current strength of the shareholders? Select the correct option from those given below:",
+            options: [
+                "It is not mandatory for Chai Garden Limited to form a Stakeholders Relationship Committee because it does not have more than 2000 shareholders.",
+                "It mandatory for Chai Garden Limited to form a Stakeholders Relationship Committee because it has more than 1000 shareholders.",
+                "It is not mandatory for Chai Garden Limited to form a Stakeholders Relationship Committee because it does not have more than 2500 shareholders.",
+                "It is not mandatory for Chai Garden Limited to form a Stakeholders Relationship Committee because it does not have more than 3000 shareholders."
+            ],
+            answer: 1
+        },
+        {
+            question: "The Audit Report of F.Y. 2022-23 pointed out that Raman in the capacity as director received excess remuneration than the prescribed limit to the extent of 2,10,000. In case Chai Garden Limited decides to waive the recovery of excess remuneration from Raman, which kind of resolution the company shall pass:",
+            options: [
+                "For waiving the recovery of excess remuneration from Raman, Chai Garden Limited shall pass a Board Resolution.",
+                "For waiving the recovery of excess remuneration from Raman, Chai Garden Limited shall pass an ordinary resolution.",
+                "For waiving the recovery of excess remuneration from Raman, Chai Garden Limited shall pass an ordinary resolution but thereafter, it shall seek approval of the Central Government through Registrar of Companies.",
+                "For waiving the recovery of excess remuneration from Raman, Chai Garden Limited shall pass a special resolution."
+            ],
+            answer: 3
+        },
+        {
+            question: "It is noticed that Raman in the capacity as director had received excess remuneration than the prescribed limit to the extent of 2,10,000. It is assumed that Chai Garden Limited passed the required resolution for waiving the recovery of excess remuneration from Raman. Choose from the following options the maximum time limit within which the required resolution must be passed:",
+            options: [
+                "The required resolution approving the waiver of recovery of excess remuneration from Raman must be passed within two years from the date the sum becomes refundable.",
+                "The required resolution approving the waiver of recovery of excess remuneration from Raman must be passed within three years from the date the sum becomes refundable.",
+                "The required resolution approving the waiver of recovery of excess remuneration from Raman must be passed within four years from the date the sum becomes refundable.",
+                "The required resolution approving the waiver of recovery of excess remuneration from Raman must be passed within five years from the date the sum becomes refundable."
+            ],
+            answer: 0
+        }
+    ]
+},
+
+// Case 57
+{
+    caseText: "<p>With a view to revolutionise every day's tea experience of tea lovers, Sarthak, Vignesh, Kishore and his friend Shashank, all alumnus of IIT, Mumbai, along with some of their close relatives opened brick and mortar retail chain stores in Bangalore and Mumbai. Besides normal and 'kadak' tea, they served a wide range of tea including shahi tea, pahari tea, ginger tea, jaggery tea, aamras tea, to name a few. The company, Tea Point Limited earned a name of one of the largest organised tea retailer bringing a perfectly brewed cup of tea made with fresh natural ingredients.</p><p>This was six years back. The authorised capital of the company was 20,00,00,000 (2,00,00,000 equity shares of 10 each) and there were ten directors namely, Sarthak, Vignesh, Kishore, Shashank, Avinash, Avantika, Uttara, Urmimala, Shantanu and Vibhore. Slowly and gradually, their business grew and they wanted to open retail stores in six more cities. They decided to appoint Sridhar as Director (Operations). Three years passed on. The company had over 500 employees in eighty service hubs across eight cities.</p><p>The directors convened a Board Meeting to discuss about future plans. It was convened on Friday, the 19th January, 2024 at 10.30 AM at Head Office of the company situated at Bandra, Mumbai. On that day, the required quorum was not present. The meeting was adjourned and no business could be conducted on that day. There was no mention of this topic i.e. adjournment of meeting in the Articles of Association. However, the adjourned meeting was conducted on the scheduled time. Sarthak highlighted the necessity of opening of online tea-ordering business. Vibhore, another director, appreciated the idea and opined that for most of the white collared workers, to sip hot tea generally meant to step out of office to the nearest chai shop or walking to a tea vendor machine which could be avoided if online tea-ordering came into existence. All the directors present at the meeting agreed to the proposal.</p><p>In order to generate funds to the extent of One crore for sustaining online tea-ordering business they identified seventy-five persons who could be issued shares through private placement. It may be mentioned that Vignesh is also a partner in a firm, namely, M/s. Sooraj and Aakash Tea Distributers. In fact, in addition to Vignesh, his wife Sheela, his sons Sooraj and Aakash as well as Sooraj's close friend Rahul are also partners in this firm. Vignesh is desirous that a loan of 30,00,000 be granted to M/s. Sooraj and Aakash Tea Distributers by Tea Point Limited for furthering the business of the partnership firm.</p><p>Tea Point Limited has a wholly owned subsidiary, namely, Green Leaves Marketing and Exports Limited. This subsidiary company is involved in marketing full range of loose and packaged teas to meet the needs of the tea industry, domestic as well as overseas. With an aim of expansion, the directors of Tea Point Limited decided for merger of Green Leaves Marketing and Exports Limited after considering vital facts that such merger would result in economies of scale and economies of scope in production, distribution and financing.</p><p>Avinash, Director (HR) took a loan of 50,00,000 from the company to buy a readymade flat. After making repayment for first six years, Avinash wanted his repayment period of remaining four years to increase by another two years and he, therefore, made a written request to the Board of Directors.</p>",
+    questions: [
+        {
+            question: "As per Case Scenario, Avinash, Director (HR) who took a loan of 50,00,000 to buy a readymade flat wanted his repayment period of remaining four years to extend by another two years and he, therefore, made a written request to the Board of Directors. Which of the following options is applicable in the given situation:",
+            options: [
+                "The repayment period in case of Avinash, Director (HR), can be increased at a meeting of the Board if minimum two directors (apart from Avinash) agree to such proposal.",
+                "The repayment period in case of Avinash, Director (HR), can be increased at a meeting of the Board if minimum three directors (apart from Avinash) agree to such proposal.",
+                "The repayment period in case of Avinash, Director (HR), can be increased by passing an ordinary resolution.",
+                "The repayment period in case of Avinash, Director (HR), can be increased by passing a special resolution."
+            ],
+            answer: 3
+        },
+        {
+            question: "In the case scenario, there is mention of Board Meeting which was to be held on Friday, the 19th January, 2024 at 10.30 AM at Head Office of the company situated at Bandra, Mumbai but the same was to be adjourned for want of quorum. When do you think such adjourned meeting was held afterwards. Choose the correct option from the following:",
+            options: [
+                "On Tuesday, the 23rd January, 2024 at 10.30 AM at Head Office situated at Bandra, Mumbai.",
+                "On Friday, the 26th January, 2024 at 10.30 AM at Head Office situated at Bandra, Mumbai.",
+                "On Saturday, the 27th January, 2024 at 10.30 AM at Head Office situated at Bandra, Mumbai.",
+                "On Monday, the 29th January, 2024 at 10.30 AM at Head Office situated at Bandra, Mumbai."
+            ],
+            answer: 2
+        },
+        {
+            question: "Vignesh, one of the directors of Tea Point Ltd. is desirous that a loan of 30,00,000 be granted to M/s. Sooraj and Aakash Tea Distributers by Tea Point Limited for furthering the business of the partnership firm.",
+            options: [
+                "No loan can be granted by Tea Point Ltd. to M/s. Sooraj and Aakash Tea Distributers in which Vignesh, one of its directors, is partner.",
+                "A maximum loan of 5,00,000 can be granted by Tea Point Ltd. to M/s. Sooraj and Aakash Tea Distributers in which Vignesh, one of its directors, is a partner, by passing a special resolution.",
+                "A maximum loan of 10,00,000 can be granted by Tea Point Ltd. to M/s. Sooraj and Aakash Tea Distributers in which Vignesh, one of its directors, is a partner, by passing a special resolution.",
+                "A maximum loan of 20,00,000 can be granted by Tea Point Ltd. to M/s. Sooraj and Aakash Tea Distributers in which Vignesh, one of its directors, is a partner, by passing a special resolution."
+            ],
+            answer: 0
+        },
+        {
+            question: "The case scenario states that Tea Point Limited is desirous of merging its wholly owned subsidiary Green Leaves Marketing and Exports Limited. To proceed further, it is required that a notice of the proposed scheme of merger inviting objections or suggestions from the Registrar and Official Liquidators where the registered office of the respective companies are situated needs to be issued. Maximum within how much time such notice is required to be issued. Choose the correct option from those given below:",
+            options: [
+                "The required notice of the proposed scheme of merger needs to be issued within fifteen days.",
+                "The required notice of the proposed scheme of merger needs to be issued within thirty days.",
+                "The required notice of the proposed scheme of merger needs to be issued within sixty days.",
+                "The required notice of the proposed scheme of merger needs to be issued within ninety days."
+            ],
+            answer: 1
+        },
+        {
+            question: "It is assumed that certain suggestions were received in response to the notice of the proposed scheme of merger and the same were considered by the companies in their respective general meetings including other matters relating to merger. Thereafter, the scheme of merger was approved by the members. Choose the appropriate option from those given hereunder as to the minimum share-holding, the members had who approved the proposed scheme of merger:",
+            options: [
+                "The members who approved the proposed scheme of merger must be holding at least sixty percent of the total number of shares.",
+                "The members who approved the proposed scheme of merger must be holding at least seventy five percent of the total number of shares.",
+                "The members who approved the proposed scheme of merger must be holding at least ninety percent of the total number of shares.",
+                "The members who approved the proposed scheme of merger must be holding at least ninety five percent of the total number of shares."
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 58
+{
+    caseText: "<p>Venus Limited is a listed company that manufactures and trades in perfumes, attars, essential oils, natural extracts, and fragrance-based cosmetic and personal care items. It has the largest manufacturing plant for rose water extractions in Kannauj, the perfume capital of India and often referred to as the Grasse (France) of the East. Venus Limited has 12 directors on its board, and Mr. Vinod Kapadia was appointed as managing director just a month ago. Mars Limited, another listed company, holds 12% of the equity shares and paid-up share capital of Venus Limited.</p><p>An audit committee was constituted, consisting of six directors, of whom three are independent and one is non-executive. Ms. Krishna, who is an independent director, was appointed as the chairperson of the audit committee. The audit committee of Venus Limited during 2022-2023 and 2023-2024 met on the following dates:</p><table><tr><th>Meeting</th><th>Date & Place of the meeting</th><th>No. of member of committee, who attended the meeting</th></tr><tr><td>A</td><td>18th May 2022, RO</td><td>All 6 members</td></tr><tr><td>B</td><td>10th August 2022, RO</td><td>All 6 members</td></tr><tr><td>C</td><td>30th October 2023, RO</td><td>5 members including 3 independent directors</td></tr><tr><td>D</td><td>10th Jan 2023, RO</td><td>All 6 members</td></tr><tr><td>E</td><td>15th March 2023, RO</td><td>All 6 members</td></tr><tr><td>1</td><td>12th April 2023, RO</td><td>All 6 members</td></tr><tr><td>2</td><td>17th June 2023, RO</td><td>5 members including 3 independent directors</td></tr><tr><td>3</td><td>8th July 2023, Shimla (HP India)</td><td>4 members including 2 independent directors</td></tr><tr><td>4</td><td>11th Nov 2023, RO</td><td>5 members including 2 independent and 1 non-executive directors</td></tr><tr><td>5</td><td>28th December 2023, Kannuaj (UP, India)</td><td>3 director including 1 independent and 1 non-executive directors</td></tr><tr><td>6</td><td>13th Jan 2024, Grasse (France)</td><td>All 6 members</td></tr><tr><td>7</td><td>10th March 2024, RO</td><td>1 independent and 1 non-executive director only</td></tr></table><p>Since Mr. Vinod Kapadia is appointed as MD recently hence he is willing to know about the time within which the quarterly results need to be reported from end of the quarter in ordinary course of business.</p>",
+    questions: [
+        {
+            question: "Whether constitution of Audit Committee is in order in case of Venus Limited?",
+            options: [
+                "No, because audit committee shall consist of at least 3 directors with independent directors forming a majority.",
+                "No, because audit committee shall consist of at least 3 directors out of which at least 2/3 shall be independent directors.",
+                "Yes, because audit committee shall consist of at least 3 directors out of which at least 1/3 shall be independent directors.",
+                "Yes, because audit committee shall consist of at least 3 directors with at least 2 independent directors and/or non-executive directors."
+            ],
+            answer: 1
+        },
+        {
+            question: "Which of following is the correct option that represents those meetings of audit committee convened during 2022-23, which was supposed to be adjourned for want of quorum?",
+            options: [
+                "Only 7th meeting.",
+                "5th and 7th meetings only.",
+                "3rd, 5th and 7th meeting only.",
+                "None of the meeting."
+            ],
+            answer: 1
+        },
+        {
+            question: "How many instances of default by Venus Limited in context to number of meetings of audit committee and time gap between such meetings took place during 2022-23 and 2023-24;",
+            options: [
+                "Not even once in both the years",
+                "Once each during 2022-23 and 2023-24",
+                "Once only in 2022-23",
+                "Once only in 2023-24"
+            ],
+            answer: 3
+        },
+        {
+            question: "Financial results of first quarter of 2024-25 need to be reported to stock exchange by Venus Limited within;",
+            options: [
+                "15th July 2024",
+                "30th July 2024",
+                "14th August 2024",
+                "29th August 2024"
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 59
+{
+    caseText: "<p>Ms. Pray, Ms. Soul, Mr. Blessing and Mr. Boon went to Budapest, Hungary after their CA Final exams on May 26th 2016. All four decided to return to India before declaration of Result. Result was declared on 26th July 2016 and all four cleared their exam and became Qualified CA. As decided, Ms. Pray and Ms. Soul went back to India on 16th of July and 25th July 2016 respectively. Mr. Blessing got highly inspired by his grandfather, Mr. Benedict who has also studied and remained in Budapest for 40 years and earned lot of money, fame and respect. Mr. Benedict converted his all earning in foreign securities and died in the year 2006 leaving behind his legacy to his son. Following him, his grandson also decided to pursue Certified Public Accountant (CPA) and came to India on 26th July 2016, to comply with other formalities required by the Institute of Chartered Accountants of India and Foreign Exchange Management Act (FEMA, 1999) and other regulatory authorities.</p><p>He again went to Budapest on Dec 6th 2016 for further studies. Mr. Boon also first decided to pursue CPA but then circumstances made him to return to his home on 06th January 2017 discontinuing his further studies. Mr. Blessing joined the course and started to work there as an Intern to meet his daily and other expenses. On 26th Dec 2016, his father, Mr. Sacred drew foreign exchange of USD 196000 for his admission and USD 76000 on 06th April 2017 for his other ancillary expenses. As a qualified CA and a CPA student and an intern as well, he gave consultancy in respect of incorporation of company in US to a client in India named Veni Vidi Vici, Chartered Accountants (a partnership firm) for which the firm paid USD 100000 to him.</p><p>Before coming to Budapest, he also purchased a lottery ticket and fortunately won prize of 10 Lacs. He wants to use that amount for facilitating his higher studies and other expenses and making arrangement of withdrawal of the same. Mr. Sacred sold all the foreign securities which he inherited from his father and purchased a flat in Budapest exclusively from the fund received from sale proceed of securities. Mr. Blessing is planning to settle their permanently and decided to marry a citizen of the Budapest. He also became the member of P & I club there. Considering the current situation, Mr. Sacred is also going to settle with his son there along with the family and looking for an agent who can sell his Villa.</p><p>Finally, he outsourced this work to one company called Pious & co who with their agent in Singapore sold that villa to resident of Singapore planning to settle in India, against the commission amounting to USD 96000 paid by Pious & co. The villa was sold for USD 40 Lacs. They left India on Nov 26th 2019.</p><p>In the year 2021, on 16th Nov, Mr. Blessing and his wife got a job opportunity in Microsoft in Bangalore and joined the office in Dec 2021. They send money to their family abroad from Resident Foreign Currency Account (RFC). Further the membership money of P & I club is also remitted using RFC account.</p>",
+    questions: [
+        {
+            question: "What will be the Residential status of Ms. Pray, Ms. Soul, Mr. Blessing and Mr. Boon as per applicable provisions of FEMA Act, 1999? In other words, mention who all are Person Resident in India (PRII) and who all are Person Resident Outside India (PROI) for financial year 2017-18 as per the FEMA Act, 1999?",
+            options: [
+                "Ms. Pray and Ms. Soul are PRII and Mr. Blessing and Mr. Boon are PROI",
+                "Ms. Pray, Ms. Soul and Mr. Boon are PRII and Mr. Blessing is PROI",
+                "Ms. Pray, Ms. Soud and Mr. Blessing are PRII and Mr. Boon is PROI",
+                "Ms. Pray is PRII and Ms. Soul, Mr. Blessing and Mr. Boon are PROI"
+            ],
+            answer: 0
+        },
+        {
+            question: "\"Further the membership money of P & I club is also remitted using RFC account\" Elucidate the nature of transaction from below mentioned options.",
+            options: [
+                "Current account transaction which is prohibited",
+                "Current account transaction which requires prior approval from Reserve Bank of India",
+                "Current account transaction which is permissible and does not require any approval",
+                "Current Account transaction which requires prior approval of Government of India, Ministry of Finance but when the said remittance is done from RFC account no approval is required."
+            ],
+            answer: 3
+        },
+        {
+            question: "Below are the various current account transactions undertaken. Some of them are permissible and does not require prior approval of Government of India or Reserve Bank of India and some of them require prior approval.\n1. Withdrawal by Mr. Sacred on two different dates (26th Dec 2016 for USD 176000 and 07th April 2017 for USD 76000) for the purpose of studies abroad of his son.\n2. Payment of consultancy fees by Veni Vidi Vici to Mr. Blessing in Budapest for USD 100000\n3. Withdrawal from lottery winnings\n4. Payment of Commission of USD 96000 against inward remittance of USD 4000000 by Pious & co to agent in Singapore for selling Villa.\n5. Payment of membership of P & I club from RFC account.\nMention which of the above transactions can be freely taken and does not require prior approval of RBI/GOI",
+            options: [
+                "1, 2, 3 and 4",
+                "1, 2, 4 and 5",
+                "2, 3, 4 and 5",
+                "1, 3, 4 and 5"
+            ],
+            answer: 1
+        },
+        {
+            question: "Out of following transactions, which one is permissible capital account transaction?",
+            options: [
+                "Withdrawal of Foreign exchange by Mr. Sacred for admission and other expenses of his son, Mr. Blessing",
+                "Payment of consultancy fees by Veni Vidi Vici to Mr. Blessing in Budapest",
+                "Payment of Commission by Mr. sacred to agent in Singapore for selling Villa",
+                "Purchase of Flat in Budapest by Mr. Sacred."
+            ],
+            answer: 3
+        },
+        {
+            question: "What is permissible limit of payment of commission to agent abroad for sale of residential flats in India?",
+            options: [
+                "USD 25000",
+                "USD 100000",
+                "USD 25000 or 5% of Inward remittance whichever is higher",
+                "USD 250000"
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 60
+{
+    caseText: "<p>M/s. Sahashtravali Private Limited is a Real Estate company registered under companies Act having its registered office in Chennai, represented and administered by Board of directors having two directors. It is running its project in all metropolitan cities. In Chennai, the company is constructing a society under the name of \"Kailash Niwas\" comprising of 96 villas. Each villa cost 2 crore. Construction has been started in the year June 2019 and 76% advance has been taken by villa buyers. The company promised, by way of legal instrument, to handover the homes by the end of June 2023. It however handed over 46 villas to respective buyers in time. But company is not handing over the same to other allottees in spite of legal reminders by them. The following is the extract of Balance sheet of M/s. Sahashtravali Private limited</p><p>Balance Sheet (Extract) as on 31.12.2023</p><table><tr><th>Liabilities</th><th>Amount (in Lacs)</th></tr><tr><td><strong>Secured Loan</strong></td><td></td></tr><tr><td>Bank of Maharashtra</td><td>98.00</td></tr><tr><td>Bank of Baroda</td><td>108.00</td></tr><tr><td><strong>Sundry Creditors</strong></td><td></td></tr><tr><td>Creditors For Raw Material (Due for more than a year)</td><td></td></tr><tr><td>Achyutam Builders</td><td>116.00</td></tr><tr><td>Mangalam Ceramics</td><td>86.00</td></tr><tr><td>Others</td><td>56.00</td></tr></table><p>One allotee named Somam commercials along with other 16 allotees who have not been allotted villas have jointly filed an application against M/s. Sahashtravali Private Limited to initiate Corporate Insolvency Resolution Process (CIRP) before NCLT in accordance with the provisions contained in Insolvency and Bankruptcy code, 2016. Copy of such application has been forwarded to registered office of the company and to the Board along with record of the default and other information on 16.01.2023. NCLT has rejected the application and gave notice to applicant to rectify the defects in the application. The mistake in the application has been duly rectified by applicants on 31st Jan 2023. Following the rectification of mistake, Order of admission of application has been given on 01.02.2023 to both Somam Commercials and M/s. Sahashtravali Private Limited.</p><p>Mr. Achyutam being an Interim Resolution Professional who has also been awarded best employee of the year 2021 by the firm of secretarial Auditors of M/s. Sahashtravali Private Limited has made public announcement as required under sec 15 of Insolvency and Bankruptcy Code, 2016 with all the particulars on 09.02.2023. All the allottees except two submitted their claims with proof before 16.02.2023 as it was the last date to submit claim. Other two submitted their claim on 26.04.2023. Committee of Creditors (CoC) has been formed comprising 15 allottees. First meeting of CoC was duly convened and they have decided with votes of 76% that IRP being ineligible has to be replaced with new Resolution Professional and application in this regard has been filed along with the name of Proposed Resolution Professional (RP) Mr. Hansam.</p><p>Following the comprehensive process of CIRP, Mr. Hansam prepared Information memorandum on 26th Mar 2023. He then invited Expression of Interest from prospective resolution applicants to submit Resolution Plan. Most appropriate plan has been presented to CoC for their approval. The Resolution Plan was approved by CoC with majority votes. Further the resolution plan was also approved by NCLT on 28.7.2023. Finally, Resolution plan was implemented. This news of resolution plan provoked Achyutam builder and other creditors. On 01.02.2024 they again filed an application to NCLT for Corporate Insolvency Resolution Process.</p>",
+    questions: [
+        {
+            question: "As per the important definitions defined U/s. 3 and 5 of Insolvency and Bankruptcy code, 2016, which of the following option is correct?",
+            options: [
+                "Corporate Debtor: M/s. Sahashtravali Private Limited, Financial Creditor: Allottees of Kailash Niwas, Secured Loan, Operational Creditor: Creditors for Raw Material",
+                "Corporate Debtor: Achyutam Builders, Financial Creditor: Allottees of Kailash Niwas, Secured Loan, Operational Creditor: M/s Sahashtravali Private Limited",
+                "Corporate Debtor: M/s. Sahashtravali Private Limited, Financial Creditor: Creditors for Raw Material, Operational Creditor: Secured Loan",
+                "Corporate Debtor: Allottees of Kailash Niwas, Financial Creditor: Creditors for Raw Material, Operational Creditor: M/s. Sahashtravali Private Limited"
+            ],
+            answer: 0
+        },
+        {
+            question: "In the above cases scenario, Somam Commercial being financial creditor has initiated corporate insolvency resolution process (CIRP) against M/s. Sahashtravali Private Limited. As referred to clauses (a) and (b) of subsection (6A) of section 21 of the Act, an application for initiating Corporate Insolvency Resolution Process (CIRP) against the corporate debtor shall be filed jointly by not less than ............... of such financial creditor in the same class or not less than ....... of the total number of such creditor in the same class, whichever is less. Fill in the above blanks with correct option.",
+            options: [
+                "50, 10%",
+                "100, 10%",
+                "50, 5%",
+                "100, 5%"
+            ],
+            answer: 1
+        },
+        {
+            question: "After choosing the correct option from above, why do you think that Somam Commercials has met the requirement of clauses (a) and (b) of subsection (6A) of section 21 of the Act.",
+            options: [
+                "Min 50 or 10% of 50 allotees who have not been allotted i.e. 5. Application filed by 17. So Somam Commercial has met the requirement",
+                "Min 100 or 10% of total 96 allotees i.e.10. Application filed by 17. So Somam Commercial has met the requirement",
+                "Min 50 or 5% of total 50 allotees who have not been allotted i.e.3. Application filed by 17. So Somam Commercial has met the requirement",
+                "Min 100 or 5% of total 96 allotees i.e. 5. Application filed by 17. So Somam Commercial has met the requirement"
+            ],
+            answer: 1
+        },
+        {
+            question: "NCLT, at first, has rejected the application of financial creditors and ordered them to rectify the defect. Why was application defective as per the provisions of IBC, 2016?",
+            options: [
+                "Adjudicating Authority has not ascertained the existence of default.",
+                "The amount of default is less than one crore rupees.",
+                "The name of the Insolvency professional to act as an interim resolution professional was not proposed.",
+                "The application has been filed by less than minimum number of applicants as required u/s 21 (6A) of the Code, IBC 2016."
+            ],
+            answer: 2
+        },
+        {
+            question: "Why the appointment of Mr. Achyutam was ineligible and replaced by CoC?",
+            options: [
+                "He made public announcement after the due date",
+                "Mr. Achyutam was a related party of corporate Debtor",
+                "He is not eligible to be appointed as independent director of the corporate debtor.",
+                "Mr. Achyutam was an employee of the firm of secretarial auditors of the M/s Sahashtravali Private Limited in the last three years"
+            ],
+            answer: 3
+        },
+        {
+            question: "Regulation 40B of the CIRP regulations require an IRP/RP to file set of forms from CIRP 1 to CIRP 6 within seven days of completion of specific activities. If specific activity is not completed then there would be no filing of CIRP 1 to 6. This makes monitoring of progress difficult. So, the regulation requires filing of form CIRP 7 within three days of due date of completion of any activity. On the basis of above regulation, please identify which of the activities require filing of CIRP 7.",
+            options: [
+                "Specified date of making public announcement is upto 3rd day of Insolvency commencement date so CIRP 7 need to be filed",
+                "Information memorandum required to be issued within 51 days of public announcement so CIRP 7 need to be filed.",
+                "CIRP need to completed by 180th day of Insolvency commencement day so CIRP 7 need to be filed",
+                "Two creditors submitted their claim after the date mentioned in public announcement so CIRP 7 need to be filed"
+            ],
+            answer: 0
+        },
+        {
+            question: "Can Achyutam builders initiate Corporate Insolvency Resolution Process against M/s. Sahashtravali Private Limited?",
+            options: [
+                "Yes, as the Achyutam builder is Operational creditor",
+                "No, Achyutam builder is not financial creditor",
+                "No, as resolution plan has already been approved for M/s. Sahashtravali Private Limited, 12 months preceding the date of making application by Achyutam builders",
+                "Yes, as 6 months has lapsed since when last resolution plan has been approved"
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 61
+{
+    caseText: "<p>Mr. Ayur and Mr. Veda are planning to float a company under the name of M/s. Ayurveda limited. Being the promoter and founder of the company, Mr. Ayur is thinking of becoming Managing director of the Company. Mr. Ayur is 24-year-old and did MBA from IIM. He has been convicted of an offence involving moral turpitude and sentenced to imprisonment for 6 month 16 days in the year May 2009. Mr. Veda is planning to become Whole time Director. The company duly registered and incorporated in the year Jan 2016. Mr. Ayur and Mr. Veda appointed Mr. Peace as an independent director. Three more directors have been added to the board. They also appointed Mrs. Pink as women director. Finally, Ayurveda limited constituted its board with 7 directors including 1 independent and 1 woman director. Managerial remuneration was paid as per sec 197 of the act.</p><p>By virtue of the articles of the company, Mr. Ayur and Mr. Veda has substantial powers to manages the company's budget and allocate its resources, interact with client and company shareholders. Mr. Ayur also creates strategic business plans for meeting the company's goals and affix the common seal of the company to some documents without any authorization by the board. Perseverance and devotion of the directors toward the company was the driving force to reappoint them in the board for another next term of five years in the AGM. Now, Mr. Ayur, Mr. Veda, Mrs. Pink, Mr. Healthy and Mr. Peace got their reappointment in Jan 2021. As Mr. Veda is going to turn 70 in 2023, he wants Board to reappoint them again for next five years. Board denied the request. Since then, he is irregular in attending board meeting but since Nov 2022, he did not attend any meeting of board without seeking leave of absence.</p><p>The company has recorded the highest turnover of 146 crore in 2022. In view of increasing turnover and added responsibilities, Mr. Peace inform the board that it is mandatory now to appoint Company Secretary for smooth functioning of company. In Dec 2023, the company received offer of amalgamation with the renowned company of the same line of business. Offer was accepted by board and shareholders as well. In that amalgamation, Mr. Ayur has become Whole time director of the resultant company, Mr. Peace has been elected as an independent director and Mrs. Pink again as woman director. Mr. Veda and Mr. Healthy had to vacate the office. Mr. Veda and Mr. Healthy are asking for compensation for loss of the office as per sec 202 of Companies Act, 2013.</p><p>Following is the extract of Audited Balance sheet of the M/s. Ayurveda Limited as on</p><table><tr><th>Particulars (Liabilities)</th><th>31.12.2024 Amount (Crore)</th><th>31.12.2023 Amount (Crore)</th></tr><tr><td>Paid up Share Capital</td><td>26.00</td><td>16.00</td></tr><tr><td>Loan from Banks</td><td>106.00</td><td>116.00</td></tr></table><p>Following is the Audited Profit & Loss Account of M/s. Ayurveda limited for the year ended</p><table><tr><th>Particulars Income</th><th>31.12.2024 Amount (₹)</th><th>31.12.2023 Amount (₹)</th></tr><tr><td>Turnover</td><td>160.00 Cr</td><td>146.00 Cr</td></tr><tr><td>Gross Profit</td><td>60,26,000</td><td></td></tr><tr><td>Subsidy from State Govt</td><td>1,60,000</td><td></td></tr><tr><td>Total Income</td><td>61,86,000</td><td></td></tr><tr><td>Salaries and Wages</td><td>6,60,000</td><td></td></tr><tr><td>Depreciation</td><td>4,90,000</td><td></td></tr><tr><td>Managerial Rem</td><td>5,60,000</td><td></td></tr><tr><td>Total</td><td>17,10,000</td><td></td></tr><tr><td>Net Profit</td><td>44,76,000</td><td></td></tr></table><p>Depreciation as per the Companies Act was 3,96,000.00.</p>",
+    questions: [
+        {
+            question: "As per the fact given in above case study, Mr. Ayur has been convicted of an offence involving moral turpitude and sentenced to imprisonment for 6 month 16 days in the year 2009. Though he has been imprisoned for more than 6 months, he is not disqualified for appointment as per sec 164 of companies act, 2013. Why?",
+            options: [
+                "Because as per sec 164 of the act, 5 years has been elapsed from the date of expiry of the sentence.",
+                "Because as per sec 164 of the act, imprisonment was for less than 5 yrs.",
+                "Because as per sec 164 of the act, 7 years has been elapsed from the date of expiry of the sentence.",
+                "Because as per sec 164 of the act, imprisonment was for less than 7 yrs."
+            ],
+            answer: 0
+        },
+        {
+            question: "Mr. Ayur has been entrusted with substantial powers of management. Which of the act undertaken by Ayur shall not be deemed to include the power to do such administrative acts of routine nature as per sec 2(54) of the Act?",
+            options: [
+                "To manages the company's budget and allocate its resources",
+                "To interact with client and company shareholders",
+                "To creates strategic business plans for meeting the company's goals",
+                "To affix the common seal of the company to some documents"
+            ],
+            answer: 3
+        },
+        {
+            question: "How many directors were required to retire by rotation in the above scenario in Jan 2021?",
+            options: [
+                "2",
+                "1",
+                "4",
+                "3"
+            ],
+            answer: 1
+        },
+        {
+            question: "Are Mr. Veda and Mr. Healthy eligible to get compensate for loss of office in accordance with sec 202 of the Companies Act?",
+            options: [
+                "Mr. Veda: Eligible, He is Whole Time Director and Act provide compensation for loss of office of WTD.",
+                "Mr. Veda: Not Eligible, He absents himself from all the meeting of the Board of directors during a period of 12 months (Nov 2032-Dec 2024). Mr. Healthy: Not Eligible, He is other than MD, WTD or Manager",
+                "Mr. Veda: Eligible, He has been in the board for more than 5 years. Mr. Healthy: Not Eligible",
+                "Mr. Healthy: Eligible, He is other than MD, WTD or Manager He has not resigned but retired due to amalgamation."
+            ],
+            answer: 1
+        },
+        {
+            question: "On which basis does sec 204 of the Act containing provision for secretarial Audit and sec 203 containing provision for appointment of Key managerial personnel are applicable to Ayurveda Limited?",
+            options: [
+                "Sec 203-Appointment of CS - Public company having paid up share capital of 15 crore, Sec 204 Secretarial Audit -Every company having outstanding loans or borrowings from bank of 50 crore rupees or more",
+                "Sec 203 - Appointment of CS - Public company having paid up share capital of 5 crore, Sec 204 - Secretarial Audit -Every company having turnover of 100 crore rupees or more",
+                "Sec 203 - Appointment of CS - Public company having paid up share capital of 6 crore, Sec 204 Secretarial Audit -Every company having paid up share capital of 100 crore",
+                "Sec 203-Appointment of CS - Public company having paid up share capital of 10 crore or more, Sec 204 Secretarial Audit -Every company having outstanding loans or borrowings from bank of 100 crore rupees or more"
+            ],
+            answer: 3
+        },
+        {
+            question: "Calculate the maximum limits of the managerial remuneration as per Companies Act, 2013",
+            options: [
+                "560000",
+                "492360",
+                "564300",
+                "447600"
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 62
+{
+    caseText: "<p><strong>Background</strong></p><p>Company Name: Gamma Electronics Pvt. Ltd.</p><p>Creditor: Delta Components Ltd.</p><p>Industry: Gamma Electronics manufactures electronic gadgets. Delta Components supplies microchips required for these gadgets.</p><p>Contractual Relationship: On June 1, 2023, Gamma Electronics and Delta Components entered into a contract for the supply of microchips. Delta Components agreed to deliver 50,000 microchips monthly at 1,000 per chip. Payment terms: Net 45 days from the date of invoice.</p><p><strong>Facts of the Case</strong></p><p>Supply and Invoicing: Delta Components delivered microchips as per the agreement from June to October 2023. Total invoiced amount for these months: 2.5 crore. Payments for the months of August, September, and October, amounting to 1.5 crore, remained unpaid as of December 31, 2023.</p><p>Initial Communication: On January 10, 2024, Delta Components sent a reminder email to Gamma Electronics requesting payment of the overdue amount. Gamma Electronics replied on January 15, 2024, stating financial constraints and requested a deferred payment plan.</p><p>Demand Notice: Delta Components issued a Demand Notice under Section 8 of the IBC on February 1, 2024, demanding payment of 1.5 crore along with accrued interest. The notice was sent in the prescribed Form 3.</p><p>Response to Demand Notice: On February 10, 2024, Gamma Electronics responded, alleging that the microchips supplied in September and October were defective, causing production losses. They claimed a set-off of 1 crore for the alleged defective goods.</p><p>Creditor's Rebuttal: Delta Components refuted the defect claims, asserting that Gamma Electronics had not raised any quality concerns at the time of delivery or within the stipulated period in the contract. Delta Components claimed that the alleged defects were fabricated excuses to delay payment.</p><p><strong>Action Taken</strong></p><p>Filing of Application: On March 1, 2024, Delta Components filed an application under Section 9 of the IBC with the National Company Law Tribunal (NCLT), Bengaluru Bench, to initiate a Corporate Insolvency Resolution Process (CIRP) against Gamma Electronics. The application included details of the contract, invoices, the demand notice, and all communications.</p><p>Tribunal's Deliberation: The NCLT considered whether the debt was due and if there was any substantial dispute regarding the defects claimed by Gamma Electronics.</p><p><strong>Tribunal's Decision</strong></p><p>Outcome: The NCLT determined that the defect claims were not raised within the appropriate time and lacked credible evidence. The tribunal admitted the application, commencing the CIRP against Gamma Electronics, and appointed an Interim Resolution Professional (IRP).</p><p>Moratorium: A moratorium was declared under Section 14 of the IBC, freezing all claims and proceedings against Gamma Electronics.</p>",
+    questions: [
+        {
+            question: "When did Delta Components issue the Demand Notice to Gamma Electronics?",
+            options: [
+                "January 15, 2024",
+                "February 1, 2024",
+                "March 1, 2024",
+                "December 31, 2023"
+            ],
+            answer: 1
+        },
+        {
+            question: "What was the primary reason for Gamma Electronics' non-payment, according to their response?",
+            options: [
+                "Financial constraints",
+                "Disputed quantity of goods",
+                "Alleged defects in the microchips",
+                "Change in contract terms"
+            ],
+            answer: 2
+        },
+        {
+            question: "Under which section of the IBC did Delta Components file the application to initiate CIRP?",
+            options: [
+                "Section 7",
+                "Section 8",
+                "Section 9",
+                "Section 14"
+            ],
+            answer: 2
+        },
+        {
+            question: "What was the total outstanding amount Delta Components claimed in the Demand Notice?",
+            options: [
+                "1 crore",
+                "2 crore",
+                "2.5 crore",
+                "1.5 crore"
+            ],
+            answer: 3
+        },
+        {
+            question: "Which document was essential for Delta Components to file under Section 9 of the IBC?",
+            options: [
+                "Financial statements of Gamma Electronics",
+                "Demand Notice in Form 3",
+                "Certificate of Incorporation of Gamma Electronics",
+                "Contract between the parties"
+            ],
+            answer: 1
+        },
+        {
+            question: "What role did the NCLT play in this scenario?",
+            options: [
+                "Approved the new payment plan proposed by Gamma Electronics",
+                "Rejected the claims of Delta Components",
+                "Determined the presence of a genuine dispute and dismissed the application",
+                "Commenced CIRP and appointed an IRP"
+            ],
+            answer: 3
+        },
+        {
+            question: "What is a key requirement under Section 9 of the IBC for an operational creditor before filing an application?",
+            options: [
+                "Prove the financial incapacity of the debtor",
+                "Issue a Demand Notice and wait for the debtor's response",
+                "Obtain approval from other creditors",
+                "File a police complaint against the debtor"
+            ],
+            answer: 1
+        },
+        {
+            question: "Why did the NCLT reject Gamma Electronics' defense regarding the defects?",
+            options: [
+                "Lack of evidence and delay in raising the issue",
+                "The contract did not allow claims for defects",
+                "The NCLT found the microchips to be of high quality",
+                "Delta Components admitted the defects"
+            ],
+            answer: 0
+        }
+    ]
+},
+
+// Case 63
+{
+    caseText: "<p>Born and brought up in the environs of the magnificent Kanchanchanga amidst the idyllic and scenic surroundings of hills and the tea plantations of Darjeeling, Samanvay who successfully completed his MBA from Sikkim University, has over the years developed a deep passion for God's gift for mankind - Darjeeling hills, Darjeeling Tea and Golden Leaves Private Limited, the company founded by his grandfather at the time when tea estates were sold to business houses by the Britishers soon after India's independence. The tea estate, owned by Golden Leaves Private Limited, is presently managed by Samanvay's father Harendra who is company's Chairman and Managing Director (CMD). In addition, following persons are acting as directors of the company:</p><ol><li>Parmendra (Elder paternal uncle of Samanvay);</li><li>Yogendra (Younger paternal uncle of Samanvay);</li><li>Shailesh and Nilesh (Sons of Parmendra);</li><li>Shubhasheesh and Shubham (Sons of Yogendra);</li><li>Viswas (College friend of Nilesh).</li></ol><p>Samanvay also joined as director of the company in May, 2021. The Authorised capital of Golden Leaves Private Limited is 15,00,00,000 (divided into 1,50,00,000 equity shares of 10 each). Its paid-up capital was increased from 8,00,00,000 (80,00,000 equity shares of 10 each) to 12,00,00,000 (divided into 1,20,00,000 of 10 each) when equity shares worth 4,00,00,000 were allotted to the existing members in the month of April, 2023.</p><p>The tea estate is spread over 180 hectares at a height of 2100 mts. above sea level. The range of teas cultivated by the company includes black tea, white tea, green tea, etc. The directors of the company make sure that their teas are as fresh as in the gardens when they reach their clients. Their tea plantation is hand-cultivated and produced with a tremendous level of care, experience and expertise in handling and manufacture of pure Darjeeling tea leaves. The tea cultivated by the company, after due process, is sold in packs of 10 gms, 20 gms, 50 gms, 100 gms, 250 gms, 500 gms and 1000 gms. Their tea business is a flourishing one. Samanvay wants to take the golden legacy forward by popularising the concept of the finest and most exotic tea from Darjeeling across the world in countries like Japan, Canada, Germany, etc. Currently, the company is registered with Tea Board of India.</p><p>The business is growing by and by. However, it was noticed that Viswas, one of the directors of Golden Leaves Private Limited, was involved in certain activities which were not conducive to the growth of the company and accordingly, it was decided to ask Viswas to resign from the office of director. Though Viswas resigned but he demanded compensation for loss of office as director. On patriotic front, Golden Leaves Private Limited always wanted to do something for the nation as a whole. In the current financial year 2023-24, Samanvay’s father Harendra, CMD, is desirous of contributing 8,00,000 to the National Defence Fund though his elder brother Parmendra is of the view that the company can contribute maximum upto 5,00,000 to the said Fund.</p><p>It is noteworthy that Golden Leaves Private Limited is mulling upon the issue of merger of Big Horizon Marketing Private Limited with itself. For this purpose, it is contemplating filing a petition with the jurisdictional National Company Law Tribunal (NCLT). Amrit is Production Manager of Golden Leaves Private Limited. He has applied for a loan of 15,00,000 for the marriage of his daughter Sneha. However, according to Akhil, the Finance Manager of the company, limits provided under Section 186 (2) in respect of loan etc. have already been exceeded.</p>",
+    questions: [
+        {
+            question: "According to the case scenario, Viswas resigned as director since it was noticed that his activities were not conducive to the growth of the company. However, he demanded compensation for loss of office as director. Which option do you think is correct:",
+            options: [
+                "Being an ordinary director, Viswas would not be paid any compensation for loss of office as director.",
+                "Since Viswas was asked by the company to resign as director, he would be compensated for loss of office as director maximum upto 50% of the amount payable to other directors during the remaining tenure of Viswas after his resignation.",
+                "Since Viswas was asked by the company to resign as director, he would be compensated for loss of office as director maximum upto 60% of the amount payable to other directors during the remaining tenure of Viswas after his resignation.",
+                "Since Viswas was asked by the company to resign as director, he would be compensated for loss of office as director maximum upto 75% of the amount payable to other directors during the remaining tenure of Viswas after his resignation."
+            ],
+            answer: 0
+        },
+        {
+            question: "The case scenario does not state about the appointment of a whole-time company secretary by Golden Leaves Private Limited. Is it necessary for the company to appoint a whole-time company secretary? Choose the correct option from those given below:",
+            options: [
+                "Golden Leaves Private Limited is a private company and therefore, it is not necessary for it to appoint a whole-time company secretary.",
+                "Golden Leaves Private Limited is required to appoint a whole-time company secretary since its paid-up capital has exceeded the threshold limit of 10,00,00,000.",
+                "Golden Leaves Private Limited is not required to appoint a whole-time company secretary since its paid-up capital has not exceeded the threshold limit of 15,00,00,000.",
+                "Golden Leaves Private Limited is not required to appoint a whole-time company secretary since its Authorised capital has not exceeded the threshold limit of 20,00,00,000."
+            ],
+            answer: 1
+        },
+        {
+            question: "The case scenario states that Amrit, the Production Manager of Golden Leaves Private Limited has applied for a loan of 15,00,000 for the marriage of his daughter Sneha. However, according to Akhil, the Finance Manager, limits provided under Section 186 (2) in respect of loan etc. have already been exceeded Select the correct option from those given hereunder:",
+            options: [
+                "Keeping in view that limits provided under Section 186 (2) in respect of loan etc. have already been exceeded, a special resolution needs to be passed for granting loan of 15,00,000 to Amrit.",
+                "Though limits provided under Section 186 (2) in respect of loan etc. have already been exceeded, yet there is no need to pass a special resolution for granting loan of 15,00,000 to Amrit.",
+                "Keeping in view that limits provided under Section 186 (2) in respect of loan etc. have already been exceeded, an ordinary resolution needs to be passed for granting loan of 15,00,000 to Amrit.",
+                "Keeping in view that limits provided under Section 186 (2) in respect of loan etc. have already been exceeded, prior permission of jurisdictional Registrar of Companies needs to be obtained for granting loan of 15,00,000 to Amrit."
+            ],
+            answer: 1
+        },
+        {
+            question: "On the question of making contribution to the National Defence Fund, there is some controversy between Harendra, CMD and his elder brother Parmendra, one of the directors of the company. You are required to select the correct option from those given below:",
+            options: [
+                "It is within the discretion of the company to contribute such amount as it thinks fit to the National Defence Fund.",
+                "Parmendra’s view point that the company can contribute maximum upto 5,00,000 to the National Defence Fund is correct.",
+                "Parmendra’s view point would have been correct if he had advised for contribution of maximum 6,00,000 to the National Defence Fund.",
+                "Parmendra’s view point would have been correct if he had advised for contribution of maximum 7,50,000 to the National Defence Fund."
+            ],
+            answer: 0
+        },
+        {
+            question: "According to the case scenario, the company is mulling upon the issue of merger of Big Horizon Marketing Private Limited with itself. Select the correct option which you think is applicable:",
+            options: [
+                "The company will be required to alter its Memorandum of Association to get empowered for merger of Big Horizon Marketing Private Limited with itself.",
+                "The company will not be required to alter its Memorandum of Association for merger of Big Horizon Marketing Private Limited with itself.",
+                "The company will be required to alter its Memorandum of Association and to seek permission from jurisdictional Registrar of Companies to get empowered for merger of Big Horizon Marketing Private Limited with itself.",
+                "The company will be required to add a specific clause in the Articles of Association in respect of merger."
+            ],
+            answer: 1
+        }
+    ]
+},
+
+// Case 64
+{
+    caseText: "<p><strong>Background</strong></p><p>Company Name: Omega Constructions Ltd.<br>Applicant: Epsilon Bank Ltd.<br>Industry: Omega Constructions Ltd. is a large construction company involved in various infrastructure projects.</p><p><strong>Financial Situation:</strong></p><ul><li>Omega Constructions borrowed 200 crore from Epsilon Bank in 2021 for the development of a commercial real estate project.</li><li>Due to economic downturns and project delays, Omega Constructions defaulted on its loan repayments in November 2023.</li></ul><p><strong>Facts of the Case</strong></p><p>1. Initiation of CIRP:<br>Epsilon Bank issued a demand notice under Section 7 of the Insolvency and Bankruptcy Code (IBC), 2016, and subsequently filed an application with the National Company Law Tribunal (NCLT), Delhi Bench, on February 15, 2024, to initiate a Corporate Insolvency Resolution Process (CIRP) against Omega Constructions.</p><p>2. Admission of Application:<br>The NCLT admitted the application on March 15, 2024, based on the evidence of default provided by Epsilon Bank. The tribunal appointed an Interim Resolution Professional (IRP) and declared a moratorium under Section 14 of the IBC, 2016.</p><p>3. Moratorium Provisions:<br>As per Section 14, the moratorium period began immediately upon admission of the application. The provisions included:</p><ul><li>Prohibition on Institution of Suits: No new legal proceedings against Omega Constructions can be initiated.</li><li>Stay on Existing Proceedings: All existing legal proceedings against Omega Constructions are stayed.</li><li>Prohibition on Transfer of Assets: Omega Constructions is prohibited from transferring, encumbering, or disposing of any assets.</li><li>No Recovery Actions: Creditors cannot recover or enforce any security interest against the assets of Omega Constructions during the moratorium.</li></ul><p>4. Challenges Faced During Moratorium:<br>Legal Proceedings: A subcontractor, Zeta Services Ltd., had a pending arbitration against Omega Constructions for non-payment of 10 crore for services rendered. The arbitration was stayed as per the moratorium.<br>Recovery Actions: Delta Finance Ltd., which holds a charge on Omega Constructions’ machinery, attempted to repossess the machinery due to loan default but was barred by the moratorium.<br>Operational Issues: Omega Constructions' suppliers demanded immediate payment for ongoing supplies but were informed that payments could not be made due to the moratorium.</p><p>5. Interim Resolution Professional's Actions:<br>The IRP took control of Omega Constructions' operations, ensured continuity of essential projects, and negotiated with suppliers to provide goods and services on a credit basis during the moratorium.</p><p>6. Lifting of Moratorium:<br>The moratorium will end upon approval of a resolution plan or upon passing an order for liquidation by the NCLT if no viable resolution plan is approved within the stipulated time frame.</p><p><strong>Tribunal's Deliberation and Actions</strong></p><p>Tribunal’s Consideration:<br>The NCLT evaluated the compliance of the IRP’s actions with the moratorium provisions and addressed various creditors' concerns regarding their inability to take enforcement actions during this period. The NCLT reinforced the importance of the moratorium to ensure a fair and equitable resolution process without disruption from individual creditor actions.</p><p>Outcome:<br>The NCLT maintained the moratorium, upheld the IRP’s actions, and continued the CIRP proceedings.</p>",
+    questions: [
+        {
+            question: "What was the primary purpose of the moratorium imposed on Omega Constructions Ltd.?",
+            options: [
+                "To allow creditors to recover dues",
+                "To enable Omega Constructions to sell assets freely",
+                "To protect the interests of creditors and ensure a structured resolution process",
+                "To allow Omega Constructions to merge with another company"
+            ],
+            answer: 2
+        },
+        {
+            question: "When did the NCLT admit the application for CIRP against Omega Constructions?",
+            options: [
+                "February 15, 2024",
+                "March 15, 2024",
+                "November 15, 2023",
+                "December 15, 2023"
+            ],
+            answer: 1
+        },
+        {
+            question: "Which action is NOT prohibited under the moratorium declared under Section 14?",
+            options: [
+                "Initiating new legal proceedings against Omega Constructions",
+                "Transferring assets of Omega Constructions",
+                "Enforcing security interests against Omega Constructions' assets",
+                "Continuing essential business operations of Omega Constructions"
+            ],
+            answer: 3
+        },
+        {
+            question: "What happens to existing legal proceedings against Omega Constructions during the moratorium?",
+            options: [
+                "They continue as usual",
+                "They are dismissed automatically",
+                "They are stayed until the moratorium ends",
+                "They are transferred to the IRP for resolution"
+            ],
+            answer: 2
+        },
+        {
+            question: "Which party took control of Omega Constructions’ operations during the moratorium?",
+            options: [
+                "The original management of Omega Constructions",
+                "Epsilon Bank Ltd.",
+                "The Interim Resolution Professional (IRP)",
+                "The NCLT"
+            ],
+            answer: 2
+        },
+        {
+            question: "How did the moratorium affect Delta Finance Ltd.’s attempt to repossess machinery from Omega Constructions?",
+            options: [
+                "Delta Finance Ltd. successfully repossessed the machinery",
+                "Delta Finance Ltd. was prohibited from repossessing the machinery",
+                "Delta Finance Ltd. sold the machinery to recover dues",
+                "Delta Finance Ltd. received payment in full during the moratorium"
+            ],
+            answer: 1
+        },
+        {
+            question: "When does the moratorium period typically end according to the IBC, 2016?",
+            options: [
+                "When the IRP completes its term",
+                "Upon approval of a resolution plan or order for liquidation by the NCLT",
+                "After one year from the date of imposition",
+                "When all creditors are paid off"
+            ],
+            answer: 1
+        },
+        {
+            question: "Which entity is responsible for ensuring compliance with the moratorium provisions?",
+            options: [
+                "The original management of the debtor company",
+                "The creditors of the debtor company",
+                "The Interim Resolution Professional (IRP)",
+                "The NCLT directly"
+            ],
+            answer: 2
+        }
+    ]
+},
+
+// Case 65
+{
+    caseText: "<p>Toastea Ltd. is a company engaged in activities that were registered under the Foreign Contribution (Regulation) Act (FCRA), 2010. The Central Government, after providing Toastea Ltd. an opportunity to be heard, has canceled its certification of registration on the grounds that such cancellation was in the public interest. This cancellation occurred two and a half years ago. The company has since submitted a written declaration stating that it will not engage in such activities again and is now requesting the restoration of its FCRA registration.</p><p>In light of the Foreign Contribution (Regulation) Act, 2010, Toastea Ltd. wishes to know whether it is eligible to re-register or if it can obtain prior permission for receiving foreign contributions despite the previous cancellation of registration. Meanwhile, other scenarios require an examination of the FCRA, 2010 provisions, particularly concerning the receipt of foreign contributions in various situations. These scenarios involve:</p><ul><li>M/s KG & Co., a partnership firm, obtaining a loan from a club registered in London.</li><li>Hello FM, a registered association, receiving funds from a foreign company to establish a radio station.</li><li>Mr. Happy, who receives a wristwatch as a gift from his uncle, a citizen of the USA, and whether it qualifies as foreign contribution.</li><li>Mr. Ramakant Hathi, an IAS officer, who receives foreign hospitality in the form of medical treatment while in Germany.</li><li>XYZ Foundation, a society under the Societies Registration Act, 1860, which received foreign contribution and is now considering investing its proceeds in mutual funds.</li></ul>",
+    questions: [
+        {
+            question: "Can Toastea Ltd. apply for re-registration under the FCRA after its registration was canceled 2.5 years ago?",
+            options: [
+                "Yes, without any restrictions",
+                "Yes, only if the company provides a valid reason for its non-compliance with the FCRA rules during the past period",
+                "No, it can never apply for re-registration",
+                "Yes, but it must apply for prior permission before receiving foreign contributions"
+            ],
+            answer: 3
+        },
+        {
+            question: "M/s KG & Co., a partnership firm, obtains a loan from a foreign club registered in London. Is this loan considered a foreign contribution under the FCRA, 2010?",
+            options: [
+                "Yes, since it is a foreign loan",
+                "No, loans do not qualify as foreign contributions under the FCRA",
+                "Yes, it qualifies as foreign contribution if the loan is provided for business purposes",
+                "No, because loans are not typically given under the FCRA"
+            ],
+            answer: 1
+        },
+        {
+            question: "Is Hello FM, a registered association, permitted to receive funds from a foreign company for establishing a Frequency Modulation (FM) radio station to broadcast audio news?",
+            options: [
+                "Yes, since Hello FM is a registered association under FCRA",
+                "No, as broadcasting is a restricted activity under FCRA",
+                "Yes, if the foreign company is not engaged in prohibited activities",
+                "No, as foreign companies cannot contribute to broadcasting projects under the FCRA"
+            ],
+            answer: 1
+        },
+        {
+            question: "Mr. Happy receives a wristwatch worth ` 25,000 from his uncle, a citizen of the USA, as a marriage anniversary gift. Does this qualify as foreign contribution under the FCRA?",
+            options: [
+                "Yes, as it is a gift from a foreign source",
+                "No, personal gifts from relatives do not qualify as foreign contributions",
+                "Yes, it is considered a foreign contribution since the sender is a foreign citizen",
+                "No, since the value is below ` 50,000, it is not foreign contribution"
+            ],
+            answer: 1
+        },
+        {
+            question: "Mr. Ramakant Hathi, an IAS officer, received foreign hospitality of INR 65,000 during his visit to Germany. Does he need to report this under the FCRA, 2010?",
+            options: [
+                "Yes, as the amount exceeds INR 25,000",
+                "No, since he is an official of the Indian government",
+                "Yes, since it is foreign hospitality received during an official visit",
+                "No, foreign hospitality is not reportable under FCRA"
+            ],
+            answer: 3
+        },
+        {
+            question: "XYZ Foundation, registered under the Societies Registration Act, 1860, received foreign contributions from Mala Company LLC, a company incorporated in Singapore. The Foundation intends to invest the maturity proceeds of the deposits in mutual funds. Is this permissible under the FCRA?",
+            options: [
+                "Yes, XYZ Foundation can invest in mutual funds as long as the funds are from foreign contributions",
+                "No, foreign contributions cannot be invested in mutual funds under the FCRA",
+                "Yes, but only if the mutual funds are part of an approved government scheme",
+                "No, because the funds were deposited in a bank and earned interest, which is restricted under the FCRA"
+            ],
+            answer: 1
+        }
+    ]
 }
 
-
 // {
 // caseText:"",    
 // questions:[{question:" ",
@@ -996,251 +2990,6 @@ questions:[{question:"Mr. Sunil was recently appointed as independent Director o
 //         "",
 //         "",
 //         ""],answer:1}
-//     ]
-// },
-
-// {
-// caseText:"",    
-// questions:[{question:" ",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:1}
-//     ]
-// },
-
-
-// {
-// caseText:"",    
-// questions:[{question:" ",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:}
-//     ]
-// },
-
-// {
-// caseText:"",    
-// questions:[{question:" ",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:}
-//     ]
-// },
-
-
-// {
-// caseText:"",    
-// questions:[{question:" ",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:}
-//     ]
-// },
-
-
-// {
-// caseText:"",    
-// questions:[{question:" ",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:}
-//     ]
-// },
-
-
-// {
-// caseText:"",    
-// questions:[{question:" ",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:}
-//     ]
-// },
-
-// {
-// caseText:"",    
-// questions:[{question:" ",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:}
-//     ]
-// },
-
-
-// {
-// caseText:"",    
-// questions:[{question:" ",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:},
-// {question:"",
-//     options:["",
-//         "",
-//         "",
-//         ""],answer:}
 //     ]
 // },
 
