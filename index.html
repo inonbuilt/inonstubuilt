@@ -1,609 +1,947 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calcium Notes | CA Final 2026</title>
-    
+
     <!-- External Assets: Link to your local CSS and Model Viewer for 3D elements -->
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./fevicol.png" type="image/png">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./fevicol.png" type="image/png" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
 
     <!-- Google Analytics: Tracking user engagement -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-YYJ8R39EXM');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-YYJ8R39EXM");
     </script>
 
     <!-- Metadata for planning -->
-        <meta name="description" content="Calcium Notes & Study Reactor: A precision-engineered dashboard and planner for CA Foundation, Inter, and Final students.">
-    <meta name="author" content="Calcium Notes">
+    <meta
+      name="description"
+      content="Calcium Notes & Study Reactor: A precision-engineered dashboard and planner for CA Foundation, Inter, and Final students."
+    />
+    <meta name="author" content="Calcium Notes" />
 
-    <meta name="theme-color" content="#050a10"> 
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="./fevicol.png"> <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Calcium">
-    <link rel="apple-touch-icon" href="./fevicol.png"> <meta property="og:title" content="Study Reactor | Calcium Notes">
-    <meta property="og:description" content="Precision study tracking, 24-hour timeline, and variance intelligence for CA students.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="./fevicol.png">
-</head>
+    <meta name="theme-color" content="#050a10" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="icon" sizes="192x192" href="./fevicol.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Calcium" />
+    <link rel="apple-touch-icon" href="./fevicol.png" />
+    <meta property="og:title" content="Study Reactor | Calcium Notes" />
+    <meta
+      property="og:description"
+      content="Precision study tracking, 24-hour timeline, and variance intelligence for CA students."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./fevicol.png" />
+  </head>
 
-<body>
+  <body>
     <!-- Top Navigation: Entry points for the specialized study overlays -->
     <div class="mode-toggles">
-        <button class="read-mode-trigger" onclick="openReadMode()">
-            <span>📖</span> Read Mode
-        </button>
-        <button class="plan-mode-trigger" onclick="openPlanningMode()">
-            <span>📅</span> Planning Mode
-        </button>
+      <button class="read-mode-trigger" onclick="openReadMode()">
+        <span>📖</span> Read Mode
+      </button>
+      <button class="plan-mode-trigger" onclick="openPlanningMode()">
+        <span>📅</span> Planning Mode
+      </button>
     </div>
 
     <div class="page">
-        <!-- Hero Section: Featuring the 3D .glb Logo -->
-        <div class="logo">
-            <model-viewer 
-                class="floating-logo"
-                src="./logo.glb"
-                auto-rotate
-                auto-rotate-delay="0"
-                rotation-per-second="20deg"
-                camera-controls
-                disable-zoom
-                exposure="1.4"
-                shadow-intensity="1.5"
-                style="width: 650px; height: 400px;">
-            </model-viewer>
-        </div>
+      <!-- Hero Section: Featuring the 3D .glb Logo -->
+      <div class="logo">
+        <model-viewer
+          class="floating-logo"
+          src="./logo.glb"
+          auto-rotate
+          auto-rotate-delay="0"
+          rotation-per-second="20deg"
+          camera-controls
+          disable-zoom
+          exposure="1.4"
+          shadow-intensity="1.5"
+          style="width: 650px; height: 400px"
+        >
+        </model-viewer>
+      </div>
 
-        <!-- Main Navigation Links -->
-        <div class="button">
-            <a href="./bin/exam/examcover.html">EXAM</a>
-            <a href="./bin/notes/notes.html">NOTES</a>
-            <a href="./bin/Resources/resources.html">RESOURCES</a>
-        </div>
+      <!-- Main Navigation Links -->
+      <div class="button">
+        <a href="./bin/exam/examcover.html">EXAM</a>
+        <a href="./bin/notes/notes.html">NOTES</a>
+        <a href="./bin/Resources/resources.html">RESOURCES</a>
+      </div>
 
-        <!-- Dynamic Motivation Quote Box -->
-        <div class="motivation-box">
-            <p id="motivationText">
-                <span id="quote"></span><br>
-                <span id="motivationAuthor"></span>
-            </p>
-        </div>
-    
-        <!-- Dynamic Update Banner: Slides in via JS -->
-        <div class="update-banner" id="updateBanner">
-            <div class="update-left">
-                <span class="update-badge">NEW</span>
-                <span class="update-message" id="updateMessage">
-                    SPOM Set C & D Updates Released!
-                </span>
-            </div>
-            <div class="update-actions">
-                <a href="#" id="updateLink" class="update-link">View Update</a>
-                <span class="update-close" onclick="closeUpdate()">✕</span>
-            </div>
-        </div>
+      <!-- Dynamic Motivation Quote Box -->
+      <div class="motivation-box">
+        <p id="motivationText">
+          <span id="quote"></span><br />
+          <span id="motivationAuthor"></span>
+        </p>
+      </div>
 
-        <!-- Legal and Educational Notice Section -->
-        <div class="notice">
-            <h1 class="in">IMPORTANT NOTICE</h1>
-            <p>
-                <strong>Calcium Notes</strong> is a website designed to provide lucid and focused workbooks that assist
-                students in understanding the subject matter. It covers all important topics to enhance the quality
-                of learning in <strong>Financial Reporting, Financial Management, and Taxation</strong>, including
-                the fundamental concepts of these subjects.
-            </p>
-
-            <h2 class="dis">DISCLAIMER</h2>
-            <p>
-                The contents of this publication do not necessarily constitute or imply endorsement, recommendation,
-                or favouring by any institution.
-            </p>
-            <p>This publication is intended solely for general reading and educational purposes.</p>
-            <p>
-                The statements, explanations, and concepts presented are of a general nature and may not take into
-                account the specific objectives, needs, circumstances, or situations of any individual user, reader,
-                organization, or institution. Accordingly, Calcium Notes shall not be responsible for any decision,
-                action, or outcome arising from reliance on the information contained herein.
-            </p>
-            <p>
-                This publication may include information, statements, opinions, statistics, and materials obtained
-                from sources believed to be reliable. While every effort has been made to ensure accuracy and avoid
-                errors, no guarantees or warranties of any kind are provided regarding the completeness or correctness
-                of the content.
-            </p>
-            <p>
-                As continuous research and updates are taking place across these knowledge streams, Calcium Notes does
-                not warrant the absolute accuracy, adequacy, or completeness of the information and expressly
-                disclaims any liability for errors or omissions.
-            </p>
-            <p>
-                Calcium Notes shall not accept any legal liability whatsoever arising from the use of the information
-                contained in this publication.
-            </p>
-            <p>
-                While the content of Calcium Notes is largely based on ICAI study material, Calcium Notes does not
-                guarantee that all topics of ICAI material are fully or completely covered.
-            </p>
-
-            <div class="footer-note">
-                © 2026 Calcium Notes. No Rights Reserved. Content may be used freely for educational purposes.
-            </div>
+      <!-- Dynamic Update Banner: Slides in via JS -->
+      <div class="update-banner" id="updateBanner">
+        <div class="update-left">
+          <span class="update-badge">NEW</span>
+          <span class="update-message" id="updateMessage">
+            SPOM Set C & D Updates Released!
+          </span>
         </div>
-        
-        <!-- Precision Engineering Box: Branding for CA Students -->
-        <div class="motivation-box" style="margin-top: 30px; border: 1px solid rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.08);">
-            <h2 style="color: #93c5fd; font-size: 1.4rem; margin-bottom: 10px;">Precision-Engineered for CA Success</h2>
-            <p style="text-align: center; font-size: 0.9rem; line-height: 1.5; color: #e2e8f0; margin-bottom: 15px;">
-                Specialized lab for CA Final students under the 2026 New Scheme. Bridging the gap between ICAI material and exam precision.
-            </p>
-            <a href="./aboutca.html" style="color: #3b82f6; font-weight: 700; text-decoration: none; border-bottom: 2px solid #3b82f6; padding-bottom: 2px; font-size: 0.85rem;">
-                Learn More About the CA Journey →
-            </a>
+        <div class="update-actions">
+          <a href="#" id="updateLink" class="update-link">View Update</a>
+          <span class="update-close" onclick="closeUpdate()">✕</span>
         </div>
+      </div>
+
+      <!-- Legal and Educational Notice Section -->
+      <div class="notice">
+        <h1 class="in">IMPORTANT NOTICE</h1>
+        <p>
+          <strong>Calcium Notes</strong> is a website designed to provide lucid
+          and focused workbooks that assist students in understanding the
+          subject matter. It covers all important topics to enhance the quality
+          of learning in
+          <strong
+            >Financial Reporting, Financial Management, and Taxation</strong
+          >, including the fundamental concepts of these subjects.
+        </p>
+
+        <h2 class="dis">DISCLAIMER</h2>
+        <p>
+          The contents of this publication do not necessarily constitute or
+          imply endorsement, recommendation, or favouring by any institution.
+        </p>
+        <p>
+          This publication is intended solely for general reading and
+          educational purposes.
+        </p>
+        <p>
+          The statements, explanations, and concepts presented are of a general
+          nature and may not take into account the specific objectives, needs,
+          circumstances, or situations of any individual user, reader,
+          organization, or institution. Accordingly, Calcium Notes shall not be
+          responsible for any decision, action, or outcome arising from reliance
+          on the information contained herein.
+        </p>
+        <p>
+          This publication may include information, statements, opinions,
+          statistics, and materials obtained from sources believed to be
+          reliable. While every effort has been made to ensure accuracy and
+          avoid errors, no guarantees or warranties of any kind are provided
+          regarding the completeness or correctness of the content.
+        </p>
+        <p>
+          As continuous research and updates are taking place across these
+          knowledge streams, Calcium Notes does not warrant the absolute
+          accuracy, adequacy, or completeness of the information and expressly
+          disclaims any liability for errors or omissions.
+        </p>
+        <p>
+          Calcium Notes shall not accept any legal liability whatsoever arising
+          from the use of the information contained in this publication.
+        </p>
+        <p>
+          While the content of Calcium Notes is largely based on ICAI study
+          material, Calcium Notes does not guarantee that all topics of ICAI
+          material are fully or completely covered.
+        </p>
+
+        <div class="footer-note">
+          © 2026 Calcium Notes. Rights Reserved. Content may be used freely for
+          educational purposes.
+        </div>
+      </div>
+
+      <!-- Precision Engineering Box: Branding for CA Students -->
+      <div
+        class="motivation-box"
+        style="
+          margin-top: 30px;
+          border: 1px solid rgba(59, 130, 246, 0.4);
+          background: rgba(59, 130, 246, 0.08);
+        "
+      >
+        <h2 style="color: #93c5fd; font-size: 1.4rem; margin-bottom: 10px">
+          Precision-Engineered for CA Success
+        </h2>
+        <p
+          style="
+            text-align: center;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #e2e8f0;
+            margin-bottom: 15px;
+          "
+        >
+          Specialized lab for CA Final students under the 2026 New Scheme.
+          Bridging the gap between ICAI material and exam precision.
+        </p>
+        <a
+          href="./aboutca.html"
+          style="
+            color: #3b82f6;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 2px;
+            font-size: 0.85rem;
+          "
+        >
+          Learn More About the CA Journey →
+        </a>
+      </div>
     </div>
 
     <footer>
-        Contact Us <br>
-        EMAIL: <a href="mailto:calciumnotes@gmail.com">calciumnotes@gmail.com</a>
-        <div class="social-container" style="text-align: center; margin-top: 10px; align-items: center; justify-content: center; display: flex; gap: 15px;">
-            <a href="https://www.instagram.com/calciumnotes" class="btn instagram" target="_blank">
-            Instagram
-            </a>
-            <a href="https://www.twitter.com/@Calciumnotes" class="btn twitter" target="_blank">
-            Twitter
-            </a>
-        </div>
+      Contact Us <br />
+      EMAIL: <a href="mailto:calciumnotes@gmail.com">calciumnotes@gmail.com</a>
+      <div
+        class="social-container"
+        style="
+          text-align: center;
+          margin-top: 10px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          gap: 15px;
+        "
+      >
+        <a
+          href="https://www.instagram.com/calciumnotes"
+          class="btn instagram"
+          target="_blank"
+        >
+          Instagram
+        </a>
+        <a
+          href="https://www.twitter.com/@Calciumnotes"
+          class="btn twitter"
+          target="_blank"
+        >
+          Twitter
+        </a>
+      </div>
+      <div>
+        <a href="./about-us.html">About US</a>
+        <a href="./privacy-policy.html">Privacy Policy</a>
+      </div>
     </footer>
 
     <!-- READ MODE OVERLAY: Study productivity tools (Clock, Timer, Media, Tasks) -->
     <div id="readModeOverlay">
-        <div class="rm-header">
-            <div class="rm-brand">📖 Calcium <span>Read Mode</span></div>
-            <button class="rm-exit-btn" onclick="closeReadMode()">✕ Exit Read Mode</button>
+      <div class="rm-header">
+        <div class="rm-brand">📖 Calcium <span>Read Mode</span></div>
+        <button class="rm-exit-btn" onclick="closeReadMode()">
+          ✕ Exit Read Mode
+        </button>
+      </div>
+      <div class="rm-body">
+        <!-- 1. Live Clock & Greeting -->
+        <div class="rm-panel panel-clock">
+          <div class="rm-panel-label">🕐 Live Clock</div>
+          <div class="clock-wrap">
+            <div>
+              <span class="clock-hm" id="rmClockHM">00:00</span>
+              <span class="clock-sec" id="rmClockSec">:00</span>
+            </div>
+            <div class="clock-date-str" id="rmClockDate"></div>
+            <div class="clock-greeting" id="rmGreeting"></div>
+          </div>
         </div>
-        <div class="rm-body">
-            <!-- 1. Live Clock & Greeting -->
-            <div class="rm-panel panel-clock">
-                <div class="rm-panel-label">🕐 Live Clock</div>
-                <div class="clock-wrap">
-                    <div>
-                        <span class="clock-hm" id="rmClockHM">00:00</span>
-                        <span class="clock-sec" id="rmClockSec">:00</span>
-                    </div>
-                    <div class="clock-date-str" id="rmClockDate"></div>
-                    <div class="clock-greeting" id="rmGreeting"></div>
-                </div>
-            </div>
 
-            <!-- 2. Productivity: Timer & Stopwatch -->
-            <div class="rm-panel panel-timer">
-                <div class="rm-panel-label">⏱ Timer & Stopwatch</div>
-                <div class="t-tabs">
-                    <button class="t-tab on" id="ttabTimer" onclick="setTimerTab('timer')">⏲ Timer</button>
-                    <button class="t-tab" id="ttabSW" onclick="setTimerTab('sw')">⏱ Stopwatch</button>
-                </div>
-                <div id="timerSection">
-                    <div class="t-inputs">
-                        <input class="t-num" type="number" id="tHr" value="00" min="0" max="23" oninput="updateTimerDisplay()">
-                        <span class="t-sep">:</span>
-                        <input class="t-num" type="number" id="tMin" value="25" min="0" max="59" oninput="updateTimerDisplay()">
-                        <span class="t-sep">:</span>
-                        <input class="t-num" type="number" id="tSec" value="00" min="0" max="59" oninput="updateTimerDisplay()">
-                    </div>
-                    <div class="t-display" id="timerDisp">25:00</div>
-                    <div class="t-btns">
-                        <button class="t-btn go" onclick="timerStart()">▶ Start</button>
-                        <button class="t-btn stop" onclick="timerPause()">⏸ Pause</button>
-                        <button class="t-btn rst" onclick="timerReset()">↺ Reset</button>
-                    </div>
-                </div>
-                <div id="swSection" style="display:none">
-                    <div class="t-display" id="swDisp">00:00.0</div>
-                    <div class="t-btns">
-                        <button class="t-btn go" onclick="swStart()">▶ Start</button>
-                        <button class="t-btn stop" onclick="swPause()">⏸ Pause</button>
-                        <button class="t-btn rst" onclick="swReset()">↺ Reset</button>
-                    </div>
-                    <button class="t-btn rst" style="width:100%;margin-top:8px" onclick="swLap()">🏁 Lap</button>
-                    <div class="sw-laps" id="swLaps"></div>
-                </div>
+        <!-- 2. Productivity: Timer & Stopwatch -->
+        <div class="rm-panel panel-timer">
+          <div class="rm-panel-label">⏱ Timer & Stopwatch</div>
+          <div class="t-tabs">
+            <button
+              class="t-tab on"
+              id="ttabTimer"
+              onclick="setTimerTab('timer')"
+            >
+              ⏲ Timer
+            </button>
+            <button class="t-tab" id="ttabSW" onclick="setTimerTab('sw')">
+              ⏱ Stopwatch
+            </button>
+          </div>
+          <div id="timerSection">
+            <div class="t-inputs">
+              <input
+                class="t-num"
+                type="number"
+                id="tHr"
+                value="00"
+                min="0"
+                max="23"
+                oninput="updateTimerDisplay()"
+              />
+              <span class="t-sep">:</span>
+              <input
+                class="t-num"
+                type="number"
+                id="tMin"
+                value="25"
+                min="0"
+                max="59"
+                oninput="updateTimerDisplay()"
+              />
+              <span class="t-sep">:</span>
+              <input
+                class="t-num"
+                type="number"
+                id="tSec"
+                value="00"
+                min="0"
+                max="59"
+                oninput="updateTimerDisplay()"
+              />
             </div>
+            <div class="t-display" id="timerDisp">25:00</div>
+            <div class="t-btns">
+              <button class="t-btn go" onclick="timerStart()">▶ Start</button>
+              <button class="t-btn stop" onclick="timerPause()">⏸ Pause</button>
+              <button class="t-btn rst" onclick="timerReset()">↺ Reset</button>
+            </div>
+          </div>
+          <div id="swSection" style="display: none">
+            <div class="t-display" id="swDisp">00:00.0</div>
+            <div class="t-btns">
+              <button class="t-btn go" onclick="swStart()">▶ Start</button>
+              <button class="t-btn stop" onclick="swPause()">⏸ Pause</button>
+              <button class="t-btn rst" onclick="swReset()">↺ Reset</button>
+            </div>
+            <button
+              class="t-btn rst"
+              style="width: 100%; margin-top: 8px"
+              onclick="swLap()"
+            >
+              🏁 Lap
+            </button>
+            <div class="sw-laps" id="swLaps"></div>
+          </div>
+        </div>
 
-            <!-- 3. Alarms -->
-            <div class="rm-panel panel-alarm">
-                <div class="rm-panel-label">🔔 Alarms</div>
-                <div class="al-form">
-                    <input type="time" class="al-input" id="alTime">
-                    <input type="text" class="al-input" id="alLabel" placeholder="Label">
-                    <button class="al-add" onclick="alarmAdd()">+ Set Alarm</button>
-                </div>
-                <div class="al-list" id="alarmList"></div>
-            </div>
+        <!-- 3. Alarms -->
+        <div class="rm-panel panel-alarm">
+          <div class="rm-panel-label">🔔 Alarms</div>
+          <div class="al-form">
+            <input type="time" class="al-input" id="alTime" />
+            <input
+              type="text"
+              class="al-input"
+              id="alLabel"
+              placeholder="Label"
+            />
+            <button class="al-add" onclick="alarmAdd()">+ Set Alarm</button>
+          </div>
+          <div class="al-list" id="alarmList"></div>
+        </div>
 
-            <!-- 4. To-Do List with Status Indicators -->
-            <div class="rm-panel panel-tasks">
-                <div class="rm-panel-label">✅ Tasks</div>
-                <div class="tk-stats">
-                    <div>Total: <b id="tkTotal">0</b></div>
-                    <div>Done: <b id="tkDone">0</b></div>
-                    <div>Pending: <b id="tkPend">0</b></div>
-                </div>
-                <div class="tk-form">
-                    <input type="text" class="tk-input" id="tkInput" placeholder="Add a task…" onkeydown="if(event.key==='Enter') { event.preventDefault(); taskAdd(); }">
-                    <select class="tk-pri" id="tkPri">
-                        <option value="high">🔴 High</option>
-                        <option value="med" selected>🟡 Medium</option>
-                        <option value="low">🟢 Low</option>
-                    </select>
-                    <button class="tk-add" onclick="taskAdd()">+</button>
-                </div>
-                <div class="tk-list" id="taskList"></div>
-            </div>
+        <!-- 4. To-Do List with Status Indicators -->
+        <div class="rm-panel panel-tasks">
+          <div class="rm-panel-label">✅ Tasks</div>
+          <div class="tk-stats">
+            <div>Total: <b id="tkTotal">0</b></div>
+            <div>Done: <b id="tkDone">0</b></div>
+            <div>Pending: <b id="tkPend">0</b></div>
+          </div>
+          <div class="tk-form">
+            <input
+              type="text"
+              class="tk-input"
+              id="tkInput"
+              placeholder="Add a task…"
+              onkeydown="
+                if (event.key === 'Enter') {
+                  event.preventDefault();
+                  taskAdd();
+                }
+              "
+            />
+            <select class="tk-pri" id="tkPri">
+              <option value="high">🔴 High</option>
+              <option value="med" selected>🟡 Medium</option>
+              <option value="low">🟢 Low</option>
+            </select>
+            <button class="tk-add" onclick="taskAdd()">+</button>
+          </div>
+          <div class="tk-list" id="taskList"></div>
+        </div>
 
-            <!-- 5. Persistence: Quick Notes -->
-            <div class="rm-panel panel-notes">
-                <div class="rm-panel-label">📝 Quick Notes</div>
-                <textarea class="note-area" id="noteArea" placeholder="Jot formulas, key points..." oninput="noteSave()"></textarea>
-                <div class="note-footer">
-                    <span id="noteChars">0 chars</span>
-                </div>
-            </div>
+        <!-- 5. Persistence: Quick Notes -->
+        <div class="rm-panel panel-notes">
+          <div class="rm-panel-label">📝 Quick Notes</div>
+          <textarea
+            class="note-area"
+            id="noteArea"
+            placeholder="Jot formulas, key points..."
+            oninput="noteSave()"
+          ></textarea>
+          <div class="note-footer">
+            <span id="noteChars">0 chars</span>
+          </div>
+        </div>
 
-            <!-- 6. Universal Media Player: Supports Video/Audio via IndexedDB -->
-            <div class="rm-panel panel-media">
-                <div class="rm-panel-label">🎵 Universal Media</div>
-                <div class="media-controls-top">
-                    <label for="mediaBrowse" class="media-btn browse-btn">📂 Browse All Media</label>
-                    <input type="file" id="mediaBrowse" multiple accept=".mp3,.mov,.wav,.mp4,audio/*,video/*" style="display:none" onchange="handleMediaFiles(this.files)">
-                </div>
-                <div id="vContainer" style="display:none; margin-bottom:12px; background:#000; border-radius:12px; overflow:hidden;">
-                    <video id="mediaEngine" playsinline style="width:100%; max-height:220px;"></video>
-                </div>
-                <div class="player-ui">
-                    <div style="text-align:center; margin-bottom:10px;">
-                        <div id="mName" style="font-weight:bold; font-size:0.9rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">No file selected</div>
-                        <div id="mTime" style="font-size:0.7rem; opacity:0.5;">00:00 / 00:00</div>
-                    </div>
-                    <div style="display:flex; justify-content:center; gap:20px; align-items:center;">
-                        <button class="p-btn" onclick="mediaPrev()">⏮</button>
-                        <button id="pBtn" class="p-btn play-main" onclick="mediaToggle()">▶</button>
-                        <button class="p-btn" onclick="mediaNext()">⏭</button>
-                    </div>
-                    <input type="range" id="mSeek" value="0" step="0.1" oninput="mediaSeekChange()" style="width:100%; margin-top:15px;">
-                </div>
-                <div id="mPlaylist" style="margin-top:15px; border-top:1px solid rgba(255,255,255,0.1); max-height:140px; overflow-y:auto;"></div>
+        <!-- 6. Universal Media Player: Supports Video/Audio via IndexedDB -->
+        <div class="rm-panel panel-media">
+          <div class="rm-panel-label">🎵 Universal Media</div>
+          <div class="media-controls-top">
+            <label for="mediaBrowse" class="media-btn browse-btn"
+              >📂 Browse All Media</label
+            >
+            <input
+              type="file"
+              id="mediaBrowse"
+              multiple
+              accept=".mp3,.mov,.wav,.mp4,audio/*,video/*"
+              style="display: none"
+              onchange="handleMediaFiles(this.files)"
+            />
+          </div>
+          <div
+            id="vContainer"
+            style="
+              display: none;
+              margin-bottom: 12px;
+              background: #000;
+              border-radius: 12px;
+              overflow: hidden;
+            "
+          >
+            <video
+              id="mediaEngine"
+              playsinline
+              style="width: 100%; max-height: 220px"
+            ></video>
+          </div>
+          <div class="player-ui">
+            <div style="text-align: center; margin-bottom: 10px">
+              <div
+                id="mName"
+                style="
+                  font-weight: bold;
+                  font-size: 0.9rem;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                "
+              >
+                No file selected
+              </div>
+              <div id="mTime" style="font-size: 0.7rem; opacity: 0.5">
+                00:00 / 00:00
+              </div>
             </div>
-        </div> 
-    </div> 
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                align-items: center;
+              "
+            >
+              <button class="p-btn" onclick="mediaPrev()">⏮</button>
+              <button id="pBtn" class="p-btn play-main" onclick="mediaToggle()">
+                ▶
+              </button>
+              <button class="p-btn" onclick="mediaNext()">⏭</button>
+            </div>
+            <input
+              type="range"
+              id="mSeek"
+              value="0"
+              step="0.1"
+              oninput="mediaSeekChange()"
+              style="width: 100%; margin-top: 15px"
+            />
+          </div>
+          <div
+            id="mPlaylist"
+            style="
+              margin-top: 15px;
+              border-top: 1px solid rgba(255, 255, 255, 0.1);
+              max-height: 140px;
+              overflow-y: auto;
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
 
     <!-- PLANNING MODE OVERLAY: Iframe to load planning module -->
     <div id="planningModeOverlay">
-        <div class="rm-header">
-            <div class="rm-brand">📅 Calcium <span>Planning Mode</span></div>
-            <button class="rm-exit-btn" onclick="closePlanningMode()">✕ Exit Planning Mode</button>
-        </div>
-        <div class="rm-body" style="padding: 0; overflow: hidden; display: block;">
-            <iframe src="./pv4.html" style="width: 100%; height: 100%; border: none;"></iframe>
-        </div>
+      <div class="rm-header">
+        <div class="rm-brand">📅 Calcium <span>Planning Mode</span></div>
+        <button class="rm-exit-btn" onclick="closePlanningMode()">
+          ✕ Exit Planning Mode
+        </button>
+      </div>
+      <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
+        <iframe
+          src="./pv4.html"
+          style="width: 100%; height: 100%; border: none"
+        ></iframe>
+      </div>
     </div>
 
     <!-- Toast Notification for Alarms and Timers -->
     <div class="alarm-toast" id="alarmToast">
-        <div class="toast-icon">🔔</div>
-        <div class="toast-body">
-            <h4 id="toastTitle">Alarm!</h4>
-            <p id="toastLabel">Time's up.</p>
-        </div>
-        <button class="toast-dismiss" onclick="toastDismiss()">Dismiss</button>
+      <div class="toast-icon">🔔</div>
+      <div class="toast-body">
+        <h4 id="toastTitle">Alarm!</h4>
+        <p id="toastLabel">Time's up.</p>
+      </div>
+      <button class="toast-dismiss" onclick="toastDismiss()">Dismiss</button>
     </div>
 
     <script>
-    /* =========================================
+      /* =========================================
     STATE & INITIALIZATION
     ========================================= */
-    const banner = document.getElementById("updateBanner");
-    const message = document.getElementById("updateMessage");
-    const link = document.getElementById("updateLink");
-    let audioCtx = null; // Used for beep sounds
+      const banner = document.getElementById("updateBanner");
+      const message = document.getElementById("updateMessage");
+      const link = document.getElementById("updateLink");
+      let audioCtx = null; // Used for beep sounds
 
-    const updates = [
-        { text: "SPOM Set A & B Prefinal Exams Are Now Available!", url: "./bin/exam/spom/espom.html" }
-    ];
-    let currentIndex = 0;
+      const updates = [
+        {
+          text: "SPOM Set A & B Prefinal Exams Are Now Available!",
+          url: "./bin/exam/spom/espom.html",
+        },
+      ];
+      let currentIndex = 0;
 
-    // Load data on window startup
-    window.addEventListener("load", () => {
+      // Load data on window startup
+      window.addEventListener("load", () => {
         setTimeout(() => {
-            banner.classList.add("show");
-            showUpdate();
-            if (updates.length > 1) { setInterval(showUpdate, 3000); }
+          banner.classList.add("show");
+          showUpdate();
+          if (updates.length > 1) {
+            setInterval(showUpdate, 3000);
+          }
         }, 500);
 
         // Persistent data recovery from LocalStorage
         const savedNotes = localStorage.getItem("cn_notes");
-        if (savedNotes !== null) { document.getElementById("noteArea").value = savedNotes; }
+        if (savedNotes !== null) {
+          document.getElementById("noteArea").value = savedNotes;
+        }
 
         const savedTasks = localStorage.getItem("cn_tasks");
-        if (savedTasks) { tasks = JSON.parse(savedTasks); renderTasks(); }
+        if (savedTasks) {
+          tasks = JSON.parse(savedTasks);
+          renderTasks();
+        }
 
         const savedAlarms = localStorage.getItem("cn_alarms");
-        if (savedAlarms) { alarms = JSON.parse(savedAlarms); renderAlarms(); }
+        if (savedAlarms) {
+          alarms = JSON.parse(savedAlarms);
+          renderAlarms();
+        }
 
         showRandomQuote();
         tickClock();
-    });
+      });
 
-    function showUpdate(){
+      function showUpdate() {
         message.textContent = updates[currentIndex].text;
         link.href = updates[currentIndex].url;
         currentIndex = (currentIndex + 1) % updates.length;
-    }
-    function closeUpdate(){ banner.classList.remove("show"); }
+      }
+      function closeUpdate() {
+        banner.classList.remove("show");
+      }
 
-    /* =========================================
+      /* =========================================
     MOTIVATION LOGIC
     ========================================= */
-    const quotes = [
-        { text: "Of the Adityas I am Visnu, of lights i am the radiant sun...", author: "Sri Krishna" },
-        { text: "Success doesn't come from what you do occasionally, it comes from consistency.", author: "Marie Forleo" },
-        { text: "Discipline is choosing between what you want now and what you want most.", author: "Abraham Lincoln" },
-        { text: "You can sleep When you are Dead.", author: "Max Verstappen"}
-    ];
+      const quotes = [
+        {
+          text: "Of the Adityas I am Visnu, of lights i am the radiant sun...",
+          author: "Sri Krishna",
+        },
+        {
+          text: "Success doesn't come from what you do occasionally, it comes from consistency.",
+          author: "Marie Forleo",
+        },
+        {
+          text: "Discipline is choosing between what you want now and what you want most.",
+          author: "Abraham Lincoln",
+        },
+        { text: "You can sleep When you are Dead.", author: "Max Verstappen" },
+      ];
 
-    function showRandomQuote() {
+      function showRandomQuote() {
         const randomIndex = Math.floor(Math.random() * quotes.length);
         document.getElementById("quote").textContent = quotes[randomIndex].text;
-        document.getElementById("motivationAuthor").textContent = " — " + quotes[randomIndex].author;
-    }
+        document.getElementById("motivationAuthor").textContent =
+          " — " + quotes[randomIndex].author;
+      }
 
-    /* =========================================
+      /* =========================================
     OVERLAY & CLOCK CONTROLS
     ========================================= */
-    const readOverlay = document.getElementById("readModeOverlay");
-    const planOverlay = document.getElementById("planningModeOverlay");
+      const readOverlay = document.getElementById("readModeOverlay");
+      const planOverlay = document.getElementById("planningModeOverlay");
 
-    function openReadMode() { 
+      function openReadMode() {
         // Resume Audio Context for beeps (required by modern browsers)
-        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        if (audioCtx.state === 'suspended') audioCtx.resume();
+        if (!audioCtx)
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        if (audioCtx.state === "suspended") audioCtx.resume();
         readOverlay.classList.add("rm-active");
         setTimeout(() => readOverlay.classList.add("rm-visible"), 10);
         document.body.style.overflow = "hidden"; // Prevent background scroll
-    }
+      }
 
-    function closeReadMode() {
+      function closeReadMode() {
         readOverlay.classList.remove("rm-visible");
-        setTimeout(() => { readOverlay.classList.remove("rm-active"); document.body.style.overflow = ""; }, 350);
-    }
+        setTimeout(() => {
+          readOverlay.classList.remove("rm-active");
+          document.body.style.overflow = "";
+        }, 350);
+      }
 
-    function openPlanningMode() {
+      function openPlanningMode() {
         planOverlay.classList.add("rm-active");
         setTimeout(() => planOverlay.classList.add("rm-visible"), 10);
         document.body.style.overflow = "hidden";
-    }
+      }
 
-    function closePlanningMode() {
+      function closePlanningMode() {
         planOverlay.classList.remove("rm-visible");
-        setTimeout(() => { planOverlay.classList.remove("rm-active"); document.body.style.overflow = ""; }, 350);
-    }
+        setTimeout(() => {
+          planOverlay.classList.remove("rm-active");
+          document.body.style.overflow = "";
+        }, 350);
+      }
 
-    function tickClock() {
+      function tickClock() {
         const now = new Date();
-        const H = String(now.getHours()).padStart(2,'0'), M = String(now.getMinutes()).padStart(2,'0'), S = String(now.getSeconds()).padStart(2,'0');
+        const H = String(now.getHours()).padStart(2, "0"),
+          M = String(now.getMinutes()).padStart(2, "0"),
+          S = String(now.getSeconds()).padStart(2, "0");
         document.getElementById("rmClockHM").textContent = H + ":" + M;
         document.getElementById("rmClockSec").textContent = ":" + S;
         document.getElementById("rmClockDate").textContent = now.toDateString();
-        
+
         // Greeting Logic based on hour
         const h = now.getHours();
-        document.getElementById("rmGreeting").textContent = h < 12 ? "Good Morning ☀️" : h < 17 ? "Good Afternoon ⚡" : h < 21 ? "Good Evening 🌙" : "Night Study 🌟";
+        document.getElementById("rmGreeting").textContent =
+          h < 12
+            ? "Good Morning ☀️"
+            : h < 17
+              ? "Good Afternoon ⚡"
+              : h < 21
+                ? "Good Evening 🌙"
+                : "Night Study 🌟";
         alarmCheck(H + ":" + M);
-    }
-    setInterval(tickClock, 1000);
+      }
+      setInterval(tickClock, 1000);
 
-    /* =========================================
+      /* =========================================
     TIMER & STOPWATCH LOGIC
     ========================================= */
-    let timerIv = null, timerLeft = 0, timerOn = false;
+      let timerIv = null,
+        timerLeft = 0,
+        timerOn = false;
 
-    function setTimerTab(t) {
-        document.getElementById("timerSection").style.display = t === "timer" ? "block" : "none";
-        document.getElementById("swSection").style.display = t === "sw" ? "block" : "none";
-        document.getElementById("ttabTimer").classList.toggle("on", t === "timer");
+      function setTimerTab(t) {
+        document.getElementById("timerSection").style.display =
+          t === "timer" ? "block" : "none";
+        document.getElementById("swSection").style.display =
+          t === "sw" ? "block" : "none";
+        document
+          .getElementById("ttabTimer")
+          .classList.toggle("on", t === "timer");
         document.getElementById("ttabSW").classList.toggle("on", t === "sw");
-    }
+      }
 
-    function getTimerSecs() {
-        return (parseInt(document.getElementById("tHr").value) || 0) * 3600 + (parseInt(document.getElementById("tMin").value) || 0) * 60 + (parseInt(document.getElementById("tSec").value) || 0);
-    }
+      function getTimerSecs() {
+        return (
+          (parseInt(document.getElementById("tHr").value) || 0) * 3600 +
+          (parseInt(document.getElementById("tMin").value) || 0) * 60 +
+          (parseInt(document.getElementById("tSec").value) || 0)
+        );
+      }
 
-    function fmtTime(s) {
-        const h = Math.floor(s/3600), m = Math.floor((s%3600)/60), sec = s%60;
-        return h ? String(h).padStart(2,'0')+":"+String(m).padStart(2,'0')+":"+String(sec).padStart(2,'0') : String(m).padStart(2,'0')+":"+String(sec).padStart(2,'0');
-    }
+      function fmtTime(s) {
+        const h = Math.floor(s / 3600),
+          m = Math.floor((s % 3600) / 60),
+          sec = s % 60;
+        return h
+          ? String(h).padStart(2, "0") +
+              ":" +
+              String(m).padStart(2, "0") +
+              ":" +
+              String(sec).padStart(2, "0")
+          : String(m).padStart(2, "0") + ":" + String(sec).padStart(2, "0");
+      }
 
-    function updateTimerDisplay() {
-        if (timerOn) return; 
+      function updateTimerDisplay() {
+        if (timerOn) return;
         timerLeft = getTimerSecs();
         document.getElementById("timerDisp").textContent = fmtTime(timerLeft);
-    }
+      }
 
-    function timerStart() {
+      function timerStart() {
         if (timerOn) return;
         if (!timerLeft) timerLeft = getTimerSecs();
         if (!timerLeft) return;
         timerOn = true;
         timerIv = setInterval(() => {
-            if (--timerLeft <= 0) { 
-                clearInterval(timerIv); 
-                timerOn = false; 
-                beep(); 
-                toastShow("⏰ Done!", "Study session complete."); 
-            }
-            document.getElementById("timerDisp").textContent = fmtTime(timerLeft);
+          if (--timerLeft <= 0) {
+            clearInterval(timerIv);
+            timerOn = false;
+            beep();
+            toastShow("⏰ Done!", "Study session complete.");
+          }
+          document.getElementById("timerDisp").textContent = fmtTime(timerLeft);
         }, 1000);
-    }
+      }
 
-    function timerPause() { clearInterval(timerIv); timerOn = false; }
-    function timerReset() { timerPause(); updateTimerDisplay(); }
+      function timerPause() {
+        clearInterval(timerIv);
+        timerOn = false;
+      }
+      function timerReset() {
+        timerPause();
+        updateTimerDisplay();
+      }
 
-    // Stopwatch Logic
-    let swOn = false, swIv = null, swMs = 0, swLaps = [];
-    function swStart() {
-        if (swOn) return; swOn = true;
+      // Stopwatch Logic
+      let swOn = false,
+        swIv = null,
+        swMs = 0,
+        swLaps = [];
+      function swStart() {
+        if (swOn) return;
+        swOn = true;
         const t0 = Date.now() - swMs;
-        swIv = setInterval(() => { swMs = Date.now() - t0; document.getElementById("swDisp").textContent = fmtSW(swMs); }, 100);
-    }
+        swIv = setInterval(() => {
+          swMs = Date.now() - t0;
+          document.getElementById("swDisp").textContent = fmtSW(swMs);
+        }, 100);
+      }
 
-    function fmtSW(ms) {
-        const m = Math.floor(ms/60000), s = Math.floor((ms%60000)/1000), t = Math.floor((ms%1000)/100);
-        return String(m).padStart(2,'0')+":"+String(s).padStart(2,'0')+"."+t;
-    }
+      function fmtSW(ms) {
+        const m = Math.floor(ms / 60000),
+          s = Math.floor((ms % 60000) / 1000),
+          t = Math.floor((ms % 1000) / 100);
+        return (
+          String(m).padStart(2, "0") +
+          ":" +
+          String(s).padStart(2, "0") +
+          "." +
+          t
+        );
+      }
 
-    function swPause() { clearInterval(swIv); swOn = false; }
-    function swReset() { swPause(); swMs = 0; swLaps = []; document.getElementById("swDisp").textContent = "00:00.0"; document.getElementById("swLaps").innerHTML = ""; }
-    function swLap() { swLaps.push(fmtSW(swMs)); document.getElementById("swLaps").innerHTML = swLaps.map((l,i) => `<div>Lap ${i+1}: ${l}</div>`).join(''); }
+      function swPause() {
+        clearInterval(swIv);
+        swOn = false;
+      }
+      function swReset() {
+        swPause();
+        swMs = 0;
+        swLaps = [];
+        document.getElementById("swDisp").textContent = "00:00.0";
+        document.getElementById("swLaps").innerHTML = "";
+      }
+      function swLap() {
+        swLaps.push(fmtSW(swMs));
+        document.getElementById("swLaps").innerHTML = swLaps
+          .map((l, i) => `<div>Lap ${i + 1}: ${l}</div>`)
+          .join("");
+      }
 
-    /* =========================================
+      /* =========================================
     ALARMS & TASKS HANDLERS
     ========================================= */
-    let alarms = [], alarmFired = {}, tasks = [];
+      let alarms = [],
+        alarmFired = {},
+        tasks = [];
 
-    function fmtAlarmListTime(t24) {
-        const [h, m] = t24.split(':');
+      function fmtAlarmListTime(t24) {
+        const [h, m] = t24.split(":");
         const hr = parseInt(h);
-        const suffix = hr >= 12 ? 'PM' : 'AM';
-        const displayHr = ((hr + 11) % 12 + 1);
+        const suffix = hr >= 12 ? "PM" : "AM";
+        const displayHr = ((hr + 11) % 12) + 1;
         return displayHr + ":" + m + " " + suffix;
-    }
+      }
 
-    function alarmAdd() {
+      function alarmAdd() {
         const t = document.getElementById("alTime").value;
-        if (t) { 
-            alarms.push({time: t, label: document.getElementById("alLabel").value || "Alarm", id: Date.now()}); 
-            localStorage.setItem("cn_alarms", JSON.stringify(alarms));
-            renderAlarms(); 
+        if (t) {
+          alarms.push({
+            time: t,
+            label: document.getElementById("alLabel").value || "Alarm",
+            id: Date.now(),
+          });
+          localStorage.setItem("cn_alarms", JSON.stringify(alarms));
+          renderAlarms();
         }
-    }
+      }
 
-    function alarmDel(id) { 
-        alarms = alarms.filter(a => a.id !== id); 
+      function alarmDel(id) {
+        alarms = alarms.filter((a) => a.id !== id);
         localStorage.setItem("cn_alarms", JSON.stringify(alarms));
-        renderAlarms(); 
-    }
+        renderAlarms();
+      }
 
-    function renderAlarms() {
-        document.getElementById("alarmList").innerHTML = alarms.map(a => `
+      function renderAlarms() {
+        document.getElementById("alarmList").innerHTML = alarms
+          .map(
+            (a) => `
             <div class="al-item" style="padding:10px; border-bottom:1px solid rgba(255,255,255,0.05); display:flex; justify-content:space-between; align-items:center;">
                 <span><strong>${fmtAlarmListTime(a.time)}</strong> - ${a.label}</span>
                 <button onclick="alarmDel(${a.id})" style="background:none; border:none; cursor:pointer;">🗑</button>
-            </div>`).join('');
-    }
+            </div>`,
+          )
+          .join("");
+      }
 
-    function alarmCheck(hm) {
-        alarms.forEach(a => {
-            if (a.time === hm && !alarmFired[a.id]) { 
-                alarmFired[a.id] = true; 
-                beep(); 
-                toastShow("🔔 " + a.label, "Time: " + fmtAlarmListTime(a.time)); 
-                setTimeout(() => delete alarmFired[a.id], 60000); 
-            }
+      function alarmCheck(hm) {
+        alarms.forEach((a) => {
+          if (a.time === hm && !alarmFired[a.id]) {
+            alarmFired[a.id] = true;
+            beep();
+            toastShow("🔔 " + a.label, "Time: " + fmtAlarmListTime(a.time));
+            setTimeout(() => delete alarmFired[a.id], 60000);
+          }
         });
-    }
+      }
 
-    // Task Logic
-    function taskAdd() {
+      // Task Logic
+      function taskAdd() {
         const txt = document.getElementById("tkInput").value.trim();
-        if (txt) { 
-            tasks.push({txt, pri: document.getElementById("tkPri").value, done: false, id: Date.now()}); 
-            document.getElementById("tkInput").value = ""; 
-            localStorage.setItem("cn_tasks", JSON.stringify(tasks));
-            renderTasks(); 
+        if (txt) {
+          tasks.push({
+            txt,
+            pri: document.getElementById("tkPri").value,
+            done: false,
+            id: Date.now(),
+          });
+          document.getElementById("tkInput").value = "";
+          localStorage.setItem("cn_tasks", JSON.stringify(tasks));
+          renderTasks();
         }
-    }
+      }
 
-    function taskToggle(id) { 
-        const t = tasks.find(x => x.id === id); 
-        if (t) t.done = !t.done; 
+      function taskToggle(id) {
+        const t = tasks.find((x) => x.id === id);
+        if (t) t.done = !t.done;
         localStorage.setItem("cn_tasks", JSON.stringify(tasks));
-        renderTasks(); 
-    }
+        renderTasks();
+      }
 
-    function taskDel(id) { 
-        tasks = tasks.filter(x => x.id !== id); 
+      function taskDel(id) {
+        tasks = tasks.filter((x) => x.id !== id);
         localStorage.setItem("cn_tasks", JSON.stringify(tasks));
-        renderTasks(); 
-    }
+        renderTasks();
+      }
 
-    function renderTasks() {
+      function renderTasks() {
         document.getElementById("tkTotal").textContent = tasks.length;
-        document.getElementById("tkDone").textContent = tasks.filter(x => x.done).length;
-        document.getElementById("tkPend").textContent = tasks.length - tasks.filter(x => x.done).length;
-        document.getElementById("taskList").innerHTML = tasks.map(t => `
+        document.getElementById("tkDone").textContent = tasks.filter(
+          (x) => x.done,
+        ).length;
+        document.getElementById("tkPend").textContent =
+          tasks.length - tasks.filter((x) => x.done).length;
+        document.getElementById("taskList").innerHTML = tasks
+          .map(
+            (t) => `
             <div class="tk-item" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-                <span style="${t.done ? 'text-decoration:line-through; color:gray;' : ''}" onclick="taskToggle(${t.id})">${t.done ? '✅' : '⬜'} ${t.txt} [${t.pri}]</span>
+                <span style="${t.done ? "text-decoration:line-through; color:gray;" : ""}" onclick="taskToggle(${t.id})">${t.done ? "✅" : "⬜"} ${t.txt} [${t.pri}]</span>
                 <button onclick="taskDel(${t.id})" style="background:none; border:none; cursor:pointer;">🗑</button>
-            </div>`).join('');
-    }
+            </div>`,
+          )
+          .join("");
+      }
 
-    /* =========================================
+      /* =========================================
     NOTIFICATIONS & MEDIA PLAYER
     ========================================= */
-    function toastShow(title, label) {
+      function toastShow(title, label) {
         const toast = document.getElementById("alarmToast");
         document.getElementById("toastTitle").textContent = title;
         document.getElementById("toastLabel").textContent = label;
         toast.style.display = "flex";
-        setTimeout(() => { toast.classList.add("show"); }, 10);
+        setTimeout(() => {
+          toast.classList.add("show");
+        }, 10);
         setTimeout(toastDismiss, 10000);
-    }
+      }
 
-    function toastDismiss() { 
+      function toastDismiss() {
         const toast = document.getElementById("alarmToast");
         toast.classList.remove("show");
-        setTimeout(() => { toast.style.display = "none"; }, 400);
-    }
+        setTimeout(() => {
+          toast.style.display = "none";
+        }, 400);
+      }
 
-    function noteSave() {
-        localStorage.setItem("cn_notes", document.getElementById("noteArea").value);
-    }
+      function noteSave() {
+        localStorage.setItem(
+          "cn_notes",
+          document.getElementById("noteArea").value,
+        );
+      }
 
-    function beep() {
+      function beep() {
         if (!audioCtx) return;
-        const osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
-        osc.connect(gain); gain.connect(audioCtx.destination);
-        osc.frequency.value = 880; osc.start(); 
-        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1);
+        const osc = audioCtx.createOscillator(),
+          gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.frequency.value = 880;
+        osc.start();
+        gain.gain.exponentialRampToValueAtTime(
+          0.0001,
+          audioCtx.currentTime + 1,
+        );
         osc.stop(audioCtx.currentTime + 1);
-    }
-    
-    // IndexedDB Media Storage (Allows users to keep a playlist after refresh)
-    let mediaFiles = [];
-    let currentIdx = 0;
-    let engine, playButton, seekSlider, videoBox, db;
+      }
 
-    const dbRequest = indexedDB.open("CalciumMediaDB", 1);
-    dbRequest.onupgradeneeded = (e) => {
+      // IndexedDB Media Storage (Allows users to keep a playlist after refresh)
+      let mediaFiles = [];
+      let currentIdx = 0;
+      let engine, playButton, seekSlider, videoBox, db;
+
+      const dbRequest = indexedDB.open("CalciumMediaDB", 1);
+      dbRequest.onupgradeneeded = (e) => {
         let database = e.target.result;
         if (!database.objectStoreNames.contains("playlist")) {
-            database.createObjectStore("playlist", { keyPath: "id", autoIncrement: true });
+          database.createObjectStore("playlist", {
+            keyPath: "id",
+            autoIncrement: true,
+          });
         }
-    };
-    dbRequest.onsuccess = (e) => {
+      };
+      dbRequest.onsuccess = (e) => {
         db = e.target.result;
-        loadPlaylistFromDB(); 
-    };
+        loadPlaylistFromDB();
+      };
 
-    window.addEventListener("DOMContentLoaded", () => {
+      window.addEventListener("DOMContentLoaded", () => {
         engine = document.getElementById("mediaEngine");
         playButton = document.getElementById("pBtn");
         seekSlider = document.getElementById("mSeek");
@@ -611,83 +949,115 @@
 
         engine.onended = () => mediaNext();
         engine.ontimeupdate = () => {
-            if (!isNaN(engine.duration)) {
-                seekSlider.max = engine.duration;
-                seekSlider.value = engine.currentTime;
-                document.getElementById("mTime").textContent = fmt(engine.currentTime) + " / " + fmt(engine.duration);
-            }
+          if (!isNaN(engine.duration)) {
+            seekSlider.max = engine.duration;
+            seekSlider.value = engine.currentTime;
+            document.getElementById("mTime").textContent =
+              fmt(engine.currentTime) + " / " + fmt(engine.duration);
+          }
         };
-    });
+      });
 
-    function handleMediaFiles(files) {
+      function handleMediaFiles(files) {
         if (!db) return alert("Database not ready.");
         const transaction = db.transaction(["playlist"], "readwrite");
         const store = transaction.objectStore("playlist");
         for (let i = 0; i < files.length; i++) {
-            store.add({ name: files[i].name, data: files[i], type: files[i].type });
+          store.add({
+            name: files[i].name,
+            data: files[i],
+            type: files[i].type,
+          });
         }
-        transaction.oncomplete = () => loadPlaylistFromDB(); 
-    }
+        transaction.oncomplete = () => loadPlaylistFromDB();
+      }
 
-    function loadPlaylistFromDB() {
+      function loadPlaylistFromDB() {
         if (!db) return;
         const transaction = db.transaction(["playlist"], "readonly");
         const getRequest = transaction.objectStore("playlist").getAll();
 
         getRequest.onsuccess = () => {
-            // Revoke old URLs to prevent memory leaks
-            mediaFiles.forEach(f => URL.revokeObjectURL(f.url));
-            mediaFiles = getRequest.result.map(item => ({
-                name: item.name,
-                url: URL.createObjectURL(item.data),
-                isVid: item.type.includes('video') || item.name.toLowerCase().endsWith('.mov')
-            }));
+          // Revoke old URLs to prevent memory leaks
+          mediaFiles.forEach((f) => URL.revokeObjectURL(f.url));
+          mediaFiles = getRequest.result.map((item) => ({
+            name: item.name,
+            url: URL.createObjectURL(item.data),
+            isVid:
+              item.type.includes("video") ||
+              item.name.toLowerCase().endsWith(".mov"),
+          }));
 
-            if (mediaFiles.length > 0) {
-                drawPlaylist();
-                loadMedia(0, false); 
-            }
+          if (mediaFiles.length > 0) {
+            drawPlaylist();
+            loadMedia(0, false);
+          }
         };
-    }
+      }
 
-    function loadMedia(idx, shouldPlay = true) {
+      function loadMedia(idx, shouldPlay = true) {
         if (!mediaFiles[idx]) return;
         currentIdx = idx;
         engine.pause();
-        
+
         videoBox.style.display = mediaFiles[idx].isVid ? "block" : "none";
         engine.src = mediaFiles[idx].url;
-        engine.load(); 
-        
+        engine.load();
+
         document.getElementById("mName").textContent = mediaFiles[idx].name;
         drawPlaylist();
 
         if (shouldPlay) {
-            engine.play().then(() => { playButton.textContent = "⏸"; })
-                         .catch(() => { playButton.textContent = "▶"; });
+          engine
+            .play()
+            .then(() => {
+              playButton.textContent = "⏸";
+            })
+            .catch(() => {
+              playButton.textContent = "▶";
+            });
         }
-    }
+      }
 
-    function mediaToggle() {
-        if (engine.paused) { engine.play(); playButton.textContent = "⏸"; } 
-        else { engine.pause(); playButton.textContent = "▶"; }
-    }
+      function mediaToggle() {
+        if (engine.paused) {
+          engine.play();
+          playButton.textContent = "⏸";
+        } else {
+          engine.pause();
+          playButton.textContent = "▶";
+        }
+      }
 
-    function mediaNext() { if(mediaFiles.length) loadMedia((currentIdx + 1) % mediaFiles.length); }
-    function mediaPrev() { if(mediaFiles.length) loadMedia((currentIdx - 1 + mediaFiles.length) % mediaFiles.length); }
+      function mediaNext() {
+        if (mediaFiles.length) loadMedia((currentIdx + 1) % mediaFiles.length);
+      }
+      function mediaPrev() {
+        if (mediaFiles.length)
+          loadMedia((currentIdx - 1 + mediaFiles.length) % mediaFiles.length);
+      }
 
-    function drawPlaylist() {
-        document.getElementById("mPlaylist").innerHTML = mediaFiles.map((m, i) => `
-            <div class="p-item ${i === currentIdx ? 'active' : ''}" onclick="loadMedia(${i})">
+      function drawPlaylist() {
+        document.getElementById("mPlaylist").innerHTML = mediaFiles
+          .map(
+            (m, i) => `
+            <div class="p-item ${i === currentIdx ? "active" : ""}" onclick="loadMedia(${i})">
                 ${i + 1}. ${m.name}
-            </div>`).join('');
-    }
+            </div>`,
+          )
+          .join("");
+      }
 
-    function mediaSeekChange() { engine.currentTime = seekSlider.value; }
-    function fmt(s) {
-        const min = Math.floor(s / 60), sec = Math.floor(s % 60);
-        return String(min).padStart(2,'0') + ":" + String(sec).padStart(2,'0');
-    }
+      function mediaSeekChange() {
+        engine.currentTime = seekSlider.value;
+      }
+      function fmt(s) {
+        const min = Math.floor(s / 60),
+          sec = Math.floor(s % 60);
+        return (
+          String(min).padStart(2, "0") + ":" + String(sec).padStart(2, "0")
+        );
+      }
     </script>
-</body>
+  </body>
 </html>
