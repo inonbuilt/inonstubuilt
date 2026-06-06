@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CA Final FR Mock Exam</title>
+    <title>CA Final FR | 3D Interactive Exam | Calcium Notes</title>
     <link rel="stylesheet" href="./pffr.css">
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YYJ8R39EXM');
-    </script>
 </head>
 <body>
 
-    <div class="exam-paper" id="exam-container">
-        <h1>CA Final - Financial Reporting - <strong style="color: red;">Testing Phase</strong> </h1>
+    <button id="prev-btn" class="nav-btn" title="Previous Page">&#10094;</button>
+    <button id="next-btn" class="nav-btn" title="Next Page">&#10095;</button>
+
+    <div class="book-wrapper">
+        <div class="book-container">
+            <div class="book" id="book"></div>
         </div>
 
+        <div class="controls">
+            <div class="hint">Click and drag pages left or right to flip</div>
+            <button id="home-btn" class="finish-exam-btn" style="display:none; background:#0f172a; color:white; margin-top:15px;" onclick="window.location.href='./efr.html'">Return to Home</button>
+        </div>
+    </div>
+
+    <script src="./pffrmcq.js"></script>
     <script src="./pffrquestions.js"></script>
     <script src="./pffr.js"></script>
-
 </body>
 </html>
