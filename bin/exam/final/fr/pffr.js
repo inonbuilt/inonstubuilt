@@ -5,7 +5,10 @@ let rawExamElements = [];
 let selectedOptions = new Set(); 
 let examCompleted = false;
 let physicsBound = false;
-let selectedMCQs = []; // FIXED: Added this to store the exact shuffled MCQs
+let selectedMCQs = []; 
+let selectedDescriptive = []; // MUST be declared globally here!
+
+const TEXT_CHUNK_LIMIT = 90;
 
 function shuffleArray(array) {
     let shuffled = [...array];
@@ -24,6 +27,72 @@ function debounce(func, wait) {
     };
 }
 
+function getCurrentExamDate() {
+    const today = new Date();
+    const day = String(today.getDate()).padStart(2, '0');
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const year = today.getFullYear();
+    return `${day}-${month}-${year}`;
+}
+
+function readCssPx(styles, propertyName, fallbackValue) {
+    const value = parseFloat(styles.getPropertyValue(propertyName));
+    return Number.isFinite(value) ? value : fallbackValue;
+}
+
+function splitPlainTextForPagination(text) {
+    if (/<[^>]+>/.test(text)) return [text];
+
+    const chunks = [];
+    const softParts = text
+        .replace(/([,;:])\s+/g, '$1 [SOFT_SPLIT]')
+        .split('[SOFT_SPLIT]');
+
+    softParts.forEach(part => {
+        const trimmed = part.trim();
+        if (!trimmed) return;
+
+        if (trimmed.length <= TEXT_CHUNK_LIMIT) {
+            chunks.push(trimmed);
+            return;
+        }
+
+        let current = "";
+        trimmed.split(/\s+/).forEach(word => {
+            const next = current ? `${current} ${word}` : word;
+
+            if (next.length > TEXT_CHUNK_LIMIT && current) {
+                chunks.push(current);
+                current = word;
+            } else {
+                current = next;
+            }
+        });
+
+        if (current) chunks.push(current);
+    });
+
+    return chunks.length ? chunks : [text];
+}
+
+function splitTableIntoElements(tableNode) {
+    return [tableNode.outerHTML];
+}
+
+function splitListIntoElements(listNode) {
+    const items = Array.from(listNode.children).filter(item => item.tagName === 'LI');
+    if (items.length <= 2) return [listNode.outerHTML];
+
+    return items.map((item, index) => {
+        const list = listNode.cloneNode(false);
+        list.style.margin = "4px 0";
+        list.style.paddingLeft = "22px";
+        if (list.tagName === 'OL') list.start = index + 1;
+        list.appendChild(item.cloneNode(true));
+        return list.outerHTML;
+    });
+}
+
 function splitHtmlIntoElements(htmlString) {
     const temp = document.createElement('div');
     temp.innerHTML = htmlString;
@@ -31,7 +100,11 @@ function splitHtmlIntoElements(htmlString) {
 
     Array.from(temp.childNodes).forEach(node => {
         if (node.nodeType === 1) { 
-            if (node.querySelector('table, ul, ol') || node.tagName === 'TABLE' || node.tagName === 'UL') {
+            if (node.tagName === 'TABLE') {
+                elements = elements.concat(splitTableIntoElements(node));
+            } else if (node.tagName === 'UL' || node.tagName === 'OL') {
+                elements = elements.concat(splitListIntoElements(node));
+            } else if (node.querySelector('table, ul, ol')) {
                 elements.push(node.outerHTML);
             } else {
                 let safeHtml = node.innerHTML
@@ -40,11 +113,13 @@ function splitHtmlIntoElements(htmlString) {
                 
                 let sentences = safeHtml.split('[SPLIT]');
                 sentences.forEach((sentence) => {
-                    if (sentence.trim() === "") return;
-                    let clone = node.cloneNode(false);
-                    clone.innerHTML = sentence.trim() + " "; 
-                    clone.style.display = "inline"; 
-                    elements.push(clone.outerHTML);
+                    splitPlainTextForPagination(sentence).forEach(chunk => {
+                        if (chunk.trim() === "") return;
+                        let clone = node.cloneNode(false);
+                        clone.innerHTML = chunk.trim() + " "; 
+                        clone.style.display = "inline"; 
+                        elements.push(clone.outerHTML);
+                    });
                 });
                 
                 let spacer = document.createElement('div');
@@ -53,16 +128,74 @@ function splitHtmlIntoElements(htmlString) {
                 elements.push(spacer.outerHTML);
             }
         } else if (node.nodeType === 3 && node.textContent.trim() !== '') {
-            elements.push(`<span class="desc-q-text" style="display:inline;">${node.textContent.trim()} </span>`);
+            splitPlainTextForPagination(node.textContent).forEach(chunk => {
+                elements.push(`<span class="desc-q-text" style="display:inline;">${chunk.trim()} </span>`);
+            });
         }
     });
     return elements;
+}
+
+// Sub-setting algorithm to ensure marks always equal 14 perfectly
+function getRandomCombinationForMarks(questions, targetMarks) {
+    let validCombinations = [];
+
+    function findCombos(startIndex, currentCombo, currentSum) {
+        if (currentSum === targetMarks) {
+            validCombinations.push([...currentCombo]);
+            return;
+        }
+        if (currentSum > targetMarks) return;
+
+        for (let i = startIndex; i < questions.length; i++) {
+            currentCombo.push(questions[i]);
+            // Number() ensures strings like "8" become integers, preventing math errors
+            findCombos(i + 1, currentCombo, currentSum + (Number(questions[i].marks) || 0));
+            currentCombo.pop();
+        }
+    }
+
+    findCombos(0, [], 0);
+
+    if (validCombinations.length > 0) {
+        const randomIndex = Math.floor(Math.random() * validCombinations.length);
+        return shuffleArray(validCombinations[randomIndex]); 
+    } else {
+        // Fallback: Greedy approach if no perfect combination exists
+        let greedyCombo = [];
+        let sum = 0;
+        let shuffled = shuffleArray(questions);
+        for (let q of shuffled) {
+            let m = Number(q.marks) || 0;
+            if (sum + m <= targetMarks) {
+                greedyCombo.push(q);
+                sum += m;
+            }
+        }
+        return greedyCombo;
+    }
 }
 
 // ==========================================
 // 2. INITIALIZATION & GENERATION
 // ==========================================
 document.addEventListener("DOMContentLoaded", () => {
+    // 1. Fetch & Shuffle MCQs
+    if (typeof mcqData !== 'undefined') {
+        selectedMCQs = shuffleArray(mcqData).slice(0, 3);
+    }
+
+    // 2. Fetch, Subset, & Shuffle Descriptive
+    if (typeof descriptiveQuestions !== 'undefined') {
+        const uniquePlacements = [...new Set(descriptiveQuestions.map(q => q.placement))].sort((a,b) => a-b);
+        uniquePlacements.forEach(num => {
+            let availableParts = descriptiveQuestions.filter(q => q.placement === num);
+            let selectedParts = getRandomCombinationForMarks(availableParts, 14);
+            selectedDescriptive.push({ placement: num, parts: selectedParts });
+        });
+    }
+
+    // 3. Build & Render
     generateExamData(); 
     renderBookPages();  
     
@@ -72,9 +205,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function generateExamData() {
+    rawExamElements = []; 
+
+    const examDate = getCurrentExamDate();
+
     rawExamElements.push(`
         <div class="watermark">CAM2</div>
-        <div class="header-center">FINAL EXAM<br>PAPER - 1<br>DATE <br>FINANCIAL REPORTING - Testing (Alpha) </div>
+        <div class="header-center">FINAL EXAM<br>PAPER - 1<br>${examDate}<br>FINANCIAL REPORTING - Testing (Alpha) </div>
         <div style="text-align: right; font-weight: bold; margin: 10px 0;">Maximum Marks - 100</div>
         <div class="header-center" style="margin-top: 10px; text-decoration: underline;">GENERAL INSTRUCTIONS</div>
         <ul class="instructions">
@@ -84,49 +221,62 @@ function generateExamData() {
         </ul>
     `);
 
-    if (typeof mcqData !== 'undefined') {
-        // FIXED: Store the shuffled subset into our new global variable
-        selectedMCQs = shuffleArray(mcqData).slice(0, 3);
+    // --- MCQ GENERATION ---
+    if (selectedMCQs.length > 0) {
         selectedMCQs.forEach((block, bIdx) => {
             rawExamElements.push(`<h3 style="color:#2563eb; border-bottom:1px solid #ccc; padding-bottom:5px; margin-top:15px; display:block;">Case Study ${bIdx + 1}</h3>`);
             rawExamElements = rawExamElements.concat(splitHtmlIntoElements(block.caseText));
 
             block.questions.forEach((q, qIdx) => {
-                let mcqBlock = `<div class="mcq-item" data-qid="${q.question_id}" style="margin-top:20px; margin-bottom:15px; display:block; break-inside: avoid;">`;
-                mcqBlock += `<p><strong>Q${qIdx+1}:</strong> ${q.question}</p>`;
-                q.options.forEach((opt, i) => {
-                    mcqBlock += `<div class="mcq-option" onclick="selectOption(this)" id="q-${bIdx}-${qIdx}-${i}">${opt}</div>`;
+                rawExamElements.push(`<div class="mcq-item" data-qid="${q.question_id}" style="height:14px; display:block;"></div>`);
+                splitPlainTextForPagination(q.question).forEach((chunk, chunkIdx) => {
+                    const label = chunkIdx === 0 ? `<strong>Q${qIdx+1}:</strong> ` : "";
+                    rawExamElements.push(`<span class="mcq-question-text" data-qid="${q.question_id}" style="display:inline; line-height:1.5; font-size:calc(15px * var(--font-scale));">${label}${chunk} </span>`);
                 });
-                mcqBlock += `<div class="solution-box" id="sol-q-${bIdx}-${qIdx}" style="margin-bottom:10px; display:none;">Correct Answer: ${q.options[q.answer]}</div>`;
-                mcqBlock += `</div>`;
-                rawExamElements.push(mcqBlock);
+
+                q.options.forEach((opt, i) => {
+                    const isCorrect = examCompleted && (i === q.answer) ? "correct-ans" : "";
+                    const optionHtml = `<div class="mcq-option ${isCorrect}" data-qid="${q.question_id}" onclick="selectOption(this)" id="q-${bIdx}-${qIdx}-${i}">${opt}</div>`;
+                    rawExamElements.push(optionHtml);
+                });
+
+                if (examCompleted) {
+                    rawExamElements.push(`<div class="solution-box" style="margin-bottom:15px; display:block;">Correct Answer: ${q.options[q.answer]}</div>`);
+                }
             });
         });
     }
 
-    if (typeof descriptiveQuestions !== 'undefined') {
-        const uniquePlacements = [...new Set(descriptiveQuestions.map(q => q.placement))].sort((a,b) => a-b);
-        uniquePlacements.forEach(num => {
-            rawExamElements.push(`<h3 style="color:#2563eb; border-bottom:1px solid #ccc; padding-bottom:5px; margin-top:25px; display:block;">Question ${num}</h3>`);
-            let parts = descriptiveQuestions.filter(q => q.placement === num);
-            parts = shuffleArray(parts);
+    // --- DESCRIPTIVE GENERATION ---
+    if (selectedDescriptive.length > 0) {
+        selectedDescriptive.forEach(group => {
+            rawExamElements.push(`<h3 style="color:#2563eb; border-bottom:1px solid #ccc; padding-bottom:5px; margin-top:25px; display:block;">Question ${group.placement}</h3>`);
             
-            parts.forEach((part, index) => {
-                const label = parts.length > 1 ? `<strong>(${String.fromCharCode(97 + index)})</strong> ` : "";
+            group.parts.forEach((part, index) => {
+                const label = group.parts.length > 1 ? `<strong>(${String.fromCharCode(97 + index)})</strong> ` : "";
 
-                rawExamElements.push(`<div class="marks desc-q-text" style="margin-top:15px; font-weight:bold; display:block;">[${part.marks} Marks]</div>`);
-                const wrappedHtml = `<div class="desc-q-text">${label}${part.question_html}</div>`;
-                rawExamElements = rawExamElements.concat(splitHtmlIntoElements(wrappedHtml));
-                rawExamElements.push(`<div class="solution-box" style="margin-bottom:25px; display:none;">${part.solution_html}</div>`);
+                if (!examCompleted) {
+                    rawExamElements.push(`<div class="marks desc-q-text" style="margin-top:15px; font-weight:bold; display:block;">[${part.marks} Marks]</div>`);
+                    const wrappedHtml = `<div class="desc-q-text">${label}${part.question_html}</div>`;
+                    rawExamElements = rawExamElements.concat(splitHtmlIntoElements(wrappedHtml));
+                } else {
+                    rawExamElements.push(`<div class="marks" style="margin-top:15px; font-weight:bold; display:block;">[Solution for Q${group.placement} ${label}]</div>`);
+                    rawExamElements.push(`<div style="color:#166534; font-weight:bold; margin-bottom: 10px; display:block;">Answer:</div>`);
+                    rawExamElements = rawExamElements.concat(splitHtmlIntoElements(part.solution_html));
+                }
             });
         });
     }
 
     rawExamElements.push(`
         <div class="header-center" style="margin-top: 30%; color: #999; display:block;">[End of Booklet]</div>
-        <button id="finish-btn" class="finish-exam-btn" style="display:block;" onclick="revealAnswers()">Finish & Show Solutions</button>
-        <button id="home-btn" class="finish-exam-btn" style="display:none; background:#0f172a; color:white; margin-top:15px;" onclick="window.location.href='./efr.html'">Return to Home</button>
     `);
+
+    if (!examCompleted) {
+        rawExamElements.push(`<button id="finish-btn" class="finish-exam-btn" style="display:block;" onclick="revealAnswers()">Finish & Show Solutions</button>`);
+    } else {
+        rawExamElements.push(`<button id="home-btn" class="finish-exam-btn" style="display:block; background:#0f172a; color:white; margin-top:15px;" onclick="window.location.href='./efr.html'">Return to Home</button>`);
+    }
 }
 
 // ==========================================
@@ -139,8 +289,9 @@ function renderBookPages() {
 
     const rootStyles = getComputedStyle(document.documentElement);
     const tapeWidth = rootStyles.getPropertyValue('--page-width').trim() || '450px';
-    const safeHeightVar = rootStyles.getPropertyValue('--safe-height').trim();
-    const SAFE_HEIGHT = safeHeightVar ? parseInt(safeHeightVar) : 540; 
+    const pageHeight = readCssPx(rootStyles, '--page-height', 636);
+    const pageSafetyMargin = Math.max(12, Math.min(22, pageHeight * 0.025));
+    const SAFE_HEIGHT = pageHeight - pageSafetyMargin;
 
     const tape = document.createElement('div');
     tape.className = "front"; 
@@ -187,27 +338,6 @@ function renderBookPages() {
         if (el) el.style.borderColor = '#2563eb';
     });
 
-    if (examCompleted) {
-        document.querySelectorAll(".solution-box").forEach(box => box.style.display = "block");
-        document.querySelectorAll(".desc-q-text").forEach(text => text.style.display = "none");
-        
-        const finishBtn = document.getElementById("finish-btn");
-        if (finishBtn) finishBtn.style.display = "none";
-        
-        const homeBtn = document.getElementById("home-btn");
-        if (homeBtn) homeBtn.style.display = "block";
-
-        // FIXED: Now we loop through 'selectedMCQs' to apply the green glow properly
-        if (selectedMCQs.length > 0) {
-            selectedMCQs.forEach((block, bIdx) => {
-                block.questions.forEach((q, qIdx) => {
-                    const correctElement = document.getElementById(`q-${bIdx}-${qIdx}-${q.answer}`);
-                    if (correctElement) correctElement.classList.add("correct-ans");
-                });
-            });
-        }
-    }
-
     initBookPhysics();
 }
 
@@ -218,8 +348,12 @@ let timerInterval;
 
 function selectOption(el) {
     if (examCompleted) return; 
-    const parent = el.parentElement;
-    parent.querySelectorAll('.mcq-option').forEach(opt => {
+    const qid = el.dataset.qid;
+    const options = qid 
+        ? Array.from(document.querySelectorAll('.mcq-option')).filter(opt => opt.dataset.qid === qid)
+        : Array.from(el.parentElement.querySelectorAll('.mcq-option'));
+
+    options.forEach(opt => {
         opt.style.borderColor = '#cbd5e1';
         selectedOptions.delete(opt.id); 
     });
@@ -230,6 +364,8 @@ function selectOption(el) {
 function revealAnswers() {
     examCompleted = true;
     clearInterval(timerInterval);
+    
+    generateExamData(); 
     renderBookPages(); 
     
     document.querySelectorAll('.page.flipped').forEach(page => {
