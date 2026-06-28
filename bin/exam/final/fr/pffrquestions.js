@@ -1,12 +1,12 @@
 const descriptiveQuestions = [
   {
-  question_id: "FR_MTPMAR24_1",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Business Combination (Ind AS 103)",
-  placement: 1,
-  marks: 14,
+    question_id: "FR_MTPMAR24_1",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Business Combination (Ind AS 103)",
+    placement: 1,
+    marks: 14,
 
-  question_html: `
+    question_html: `
     <p>
       On 1st April 20X1, J Ltd. acquired a new subsidiary, B Ltd., purchasing all
       150 million shares of B Ltd. The terms of the sale agreement included the
@@ -69,7 +69,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>Solution:</strong><br><br>
 
     <strong>Calculation of Purchase Consideration</strong>
@@ -174,16 +174,16 @@ const descriptiveQuestions = [
     <br><br>
 
     <strong>Goodwill on Consolidation = ₹950 million</strong>
-  `
-},
+  `,
+  },
   {
-  question_id: "FR_MTPMAR24_2A",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Ind AS 109 - Embedded Derivatives",
-  placement: 2,
-  marks: 10,
+    question_id: "FR_MTPMAR24_2A",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Ind AS 109 - Embedded Derivatives",
+    placement: 2,
+    marks: 10,
 
-  question_html: `
+    question_html: `
     <p>
       Company A, an Indian company whose functional currency is ₹, enters into a contract
       to purchase machinery from an unrelated local supplier, Company B. The functional
@@ -242,7 +242,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>Solution:</strong><br><br>
 
     The USD contract for purchase of machinery entered into by Company A includes
@@ -361,16 +361,16 @@ const descriptiveQuestions = [
       qualifies as an embedded derivative under Ind AS 109 and must be separated
       from the host contract and accounted for at Fair Value Through Profit or Loss (FVTPL).
     </p>
-  `
-},
+  `,
+  },
   {
-  question_id: "FR_MTPMAR24_2B",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Ind AS 1 - Presentation of Financial Statements",
-  placement: 2,
-  marks: 4,
+    question_id: "FR_MTPMAR24_2B",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Ind AS 1 - Presentation of Financial Statements",
+    placement: 2,
+    marks: 4,
 
-  question_html: `
+    question_html: `
     <p>
       In December 20X1, an entity entered into a loan agreement with a bank.
       The loan is repayable in three equal annual instalments starting from
@@ -409,7 +409,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>Solution:</strong><br><br>
 
     <strong>(i) Classification as on 31st March 20X2</strong>
@@ -482,16 +482,16 @@ const descriptiveQuestions = [
         <td>Non-Current Liability</td>
       </tr>
     </table>
-  `
-},
-{
-  question_id: "FR_MTPMAR24_3A",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Ind AS 23 - Borrowing Costs",
-  placement: 3,
-  marks: 8,
+  `,
+  },
+  {
+    question_id: "FR_MTPMAR24_3A",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Ind AS 23 - Borrowing Costs",
+    placement: 3,
+    marks: 8,
 
-  question_html: `
+    question_html: `
     <p>
       LT Ltd. is in the process of constructing a building. The construction
       process is expected to take about 18 months from 1st January 20X1 to
@@ -543,7 +543,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>Solution:</strong><br><br>
 
     As per paragraph 17 of Ind AS 23, capitalization of borrowing costs begins
@@ -683,16 +683,16 @@ const descriptiveQuestions = [
       <li>FY 20X1-20X2 : ₹ 1.875 Crores</li>
       <li>FY 20X2-20X3 : ₹ 1.125 Crores</li>
     </ul>
-  `
-},
-{
-  question_id: "FR_MTPMAR24_3B",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Ind AS 109 - FVTOCI Foreign Currency Bond",
-  placement: 3,
-  marks: 6,
+  `,
+  },
+  {
+    question_id: "FR_MTPMAR24_3B",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Ind AS 109 - FVTOCI Foreign Currency Bond",
+    placement: 3,
+    marks: 6,
 
-  question_html: `
+    question_html: `
     <p>
       An Indian entity, whose functional currency is Rupees, purchases a USD
       denominated bond at its fair value of USD 1,000.
@@ -749,7 +749,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>Solution:</strong><br><br>
 
     <strong>Computation of Amounts Recognised in P&L and OCI</strong>
@@ -886,16 +886,16 @@ const descriptiveQuestions = [
       <li>Exchange Gain (P&L) = ₹ 5,300</li>
       <li>Fair Value Gain (OCI) = ₹ 855</li>
     </ul>
-  `
-},
-{
-  question_id: "FR_MTPMAR24_4A",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Employee Benefits (Ind AS 19)",
-  placement: 4,
-  marks: 6,
+  `,
+  },
+  {
+    question_id: "FR_MTPMAR24_4A",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Employee Benefits (Ind AS 19)",
+    placement: 4,
+    marks: 6,
 
-  question_html: `
+    question_html: `
     <p>
       AJ Ltd is engaged in the business of trading of chemicals having a net worth of
       ₹ 150 crores. The company’s profitability is good and hence the company has
@@ -945,7 +945,7 @@ const descriptiveQuestions = [
     </ul>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>Solution:</strong><br><br>
 
     <strong>(i) Computation of benefit attributed to prior years and current year</strong>
@@ -1107,16 +1107,16 @@ const descriptiveQuestions = [
         <td>131</td>
       </tr>
     </table>
-  `
-},
-{
-  question_id: "FR_MTPMAR24_4B",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Ind AS 102 - Share Based Payment",
-  placement: 4,
-  marks: 8,
+  `,
+  },
+  {
+    question_id: "FR_MTPMAR24_4B",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Ind AS 102 - Share Based Payment",
+    placement: 4,
+    marks: 8,
 
-  question_html: `
+    question_html: `
     <p>
       P Ltd. granted 400 stock appreciation rights (SAR) each to 75 employees on
       1st April 20X1 with a fair value ₹ 200. The terms of the award require the
@@ -1150,7 +1150,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>Solution:</strong><br><br>
 
     <strong>Journal Entries in the books of P Ltd. (Without Modification of Service Period)</strong>
@@ -1295,16 +1295,16 @@ const descriptiveQuestions = [
       <br>
       = ₹20,50,000
     </p>
-  `
-},
-{
-  question_id: "FR_MTPMAR24_5A",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Ind AS 115 - Revenue from Contracts with Customers",
-  placement: 5,
-  marks: 6,
+  `,
+  },
+  {
+    question_id: "FR_MTPMAR24_5A",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Ind AS 115 - Revenue from Contracts with Customers",
+    placement: 5,
+    marks: 6,
 
-  question_html: `
+    question_html: `
     <p>
       ABC Ltd. enters into a contract with a customer for sale of goods where the
       transaction price varies depending on the volume purchased by the customer
@@ -1360,7 +1360,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>Solution:</strong><br><br>
 
     <strong>(i) Determination of Revenue using Expected Value Method</strong>
@@ -1451,16 +1451,17 @@ const descriptiveQuestions = [
 
     For subsequent sale of 15,950 units, contract liability is accrued at
     ₹0.87 per unit (₹80 − ₹79.13) and revenue will be deferred.
-  `
-},
-{
-  question_id: "FR_MTPMAR24_5B",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Ind AS 115 - Revenue Recognition with Deferred Consideration",
-  placement: 5,
-  marks: 4,
+  `,
+  },
+  {
+    question_id: "FR_MTPMAR24_5B",
+    source: "ICAI MTP March 2024",
+    chapter_name:
+      "Ind AS 115 - Revenue Recognition with Deferred Consideration",
+    placement: 5,
+    marks: 4,
 
-  question_html: `
+    question_html: `
     <p>
       A company sold goods for ₹10,00,000. The customer paid ₹3,33,333 immediately
       and agreed to pay the balance in two equal annual instalments of ₹3,33,333
@@ -1477,7 +1478,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>Solution:</strong><br><br>
 
     The revenue from sale of goods shall be recognised at the fair value of the
@@ -1591,23 +1592,23 @@ const descriptiveQuestions = [
         <td>16,947</td>
       </tr>
     </table>
-  `
-},
-{
-  question_id: "FR_MTPMAR24_5C_I",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Conceptual Framework",
-  placement: 5,
-  marks: 4,
+  `,
+  },
+  {
+    question_id: "FR_MTPMAR24_5C_I",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Conceptual Framework",
+    placement: 5,
+    marks: 4,
 
-  question_html: `
+    question_html: `
     <p>
       How can one enhance the usefulness of financial information by applying four enhancing
       qualitative characteristics?
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <p>
       <strong>Comparability:</strong> Information about a reporting entity is more useful if it can
       be compared with similar information about other entities and with similar information about
@@ -1637,23 +1638,23 @@ const descriptiveQuestions = [
       diligently. At times, even well-informed and diligent users may need to seek the aid of an
       adviser to understand information about complex economic phenomena.
     </p>
-  `
-},
-{
-  question_id: "FR_MTPMAR24_5C_II",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Ind AS Applicability",
-  placement: 5,
-  marks: 4,
+  `,
+  },
+  {
+    question_id: "FR_MTPMAR24_5C_II",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Ind AS Applicability",
+    placement: 5,
+    marks: 4,
 
-  question_html: `
+    question_html: `
     <p>
       Which entities are required to prepare their financial statements mandatorily on the basis of
       Indian Accounting Standards (Ind AS)?
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <p>
       Following entities are mandatorily required to prepare their financial statements based on
       Indian Accounting Standards:
@@ -1669,16 +1670,16 @@ const descriptiveQuestions = [
       <li>All NBFCs</li>
       <li>MF schemes</li>
     </ul>
-  `
-},
-{
-  question_id: "FR_MTPMAR24_6A",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Ethics and Financial Reporting",
-  placement: 6,
-  marks: 4,
+  `,
+  },
+  {
+    question_id: "FR_MTPMAR24_6A",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Ethics and Financial Reporting",
+    placement: 6,
+    marks: 4,
 
-  question_html: `
+    question_html: `
     <p>
       Sunshine Ltd., a listed company in the cosmetics industry, has debt covenants attached to some
       of its borrowings which are included in Financial Liabilities in the Balance Sheet. These
@@ -1711,7 +1712,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>Lease agreement substance presentation</strong>
 
     <p>
@@ -1784,16 +1785,16 @@ const descriptiveQuestions = [
       As per the Guidelines issued by the Council, a member of the Institute who is an employee shall
       exercise due diligence and shall not be grossly negligent in the conduct of his duties.
     </p>
-  `
-},
-{
-  question_id: "FR_MTPMAR24_6B",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Ind AS 38 - Intangible Assets",
-  placement: 6,
-  marks: 8,
+  `,
+  },
+  {
+    question_id: "FR_MTPMAR24_6B",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Ind AS 38 - Intangible Assets",
+    placement: 6,
+    marks: 8,
 
-  question_html: `
+    question_html: `
     <p>
       X Pharmaceutical Ltd. seeks your opinion in respect of following accounting transactions:
     </p>
@@ -1838,7 +1839,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>X Pharmaceutical Ltd. is advised as under:</strong>
 
     <ol>
@@ -1904,16 +1905,16 @@ const descriptiveQuestions = [
         off since technological feasibility has not yet established.
       </li>
     </ol>
-  `
-},
-{
-  question_id: "FR_MTPMAR24_6C",
-  source: "ICAI MTP March 2024",
-  chapter_name: "Valuation",
-  placement: 6,
-  marks: 8,
+  `,
+  },
+  {
+    question_id: "FR_MTPMAR24_6C",
+    source: "ICAI MTP March 2024",
+    chapter_name: "Valuation",
+    placement: 6,
+    marks: 8,
 
-  question_html: `
+    question_html: `
     <p>
       You are a senior consultant of your firm and are in process of determining the valuation of
       KK Ltd. You have determined the valuation of the company by two approaches i.e. Market
@@ -1965,7 +1966,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>Equity Valuation of KK Ltd.</strong>
 
     <table border="1" cellspacing="0" cellpadding="5">
@@ -2029,16 +2030,16 @@ const descriptiveQuestions = [
         <th>375.72</th>
       </tr>
     </table>
-  `
-},
-{
-  question_id: "FR_MTPMAY24II_1",
-  source: "ICAI MTP May 2024 Series II",
-  chapter_name: "Business Combination (Ind AS 103)",
-  placement: 1,
-  marks: 14,
+  `,
+  },
+  {
+    question_id: "FR_MTPMAY24II_1",
+    source: "ICAI MTP May 2024 Series II",
+    chapter_name: "Business Combination (Ind AS 103)",
+    placement: 1,
+    marks: 14,
 
-  question_html: `
+    question_html: `
     <p>
       On 1st April 20X1, J Ltd. acquired a new subsidiary, B Ltd., purchasing all 150 million shares of B Ltd.
       The terms of the sale agreement included the exchange of four shares in J Ltd. for every three shares
@@ -2091,7 +2092,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <strong>Calculation of purchase consideration:</strong>
 
     <table border="1" cellspacing="0" cellpadding="5">
@@ -2238,17 +2239,17 @@ const descriptiveQuestions = [
       Therefore, the goodwill appearing in the consolidated balance sheet of J Ltd. at
       31st March 20X2 will remain <strong>₹950 million</strong>.
     </p>
-  `
-},
-{
-  question_id: "FR_MTPAPR24II_2A",
-  source: "ICAI MTP April 2024 Series II",
-  chapter_name: "Financial Instruments / Ind AS 109",
-  placement: 2,
-  marks: 10,
+  `,
+  },
+  {
+    question_id: "FR_MTPAPR24II_2A",
+    source: "ICAI MTP April 2024 Series II",
+    chapter_name: "Financial Instruments / Ind AS 109",
+    placement: 2,
+    marks: 10,
 
-  question_html: `
-    <p>(a)</p>
+    question_html: `
+    
 
     <p>
       D Limited has a policy of providing subsidized loans to its employees for their personal purposes.
@@ -2287,7 +2288,7 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
+    solution_html: `
     <p><strong>Journal Entries</strong></p>
 
     <table border="1" cellspacing="0" cellpadding="5">
@@ -2329,17 +2330,17 @@ const descriptiveQuestions = [
         <td>3,00,000</td>
       </tr>
     </table>
-  `
-},
-{
-  question_id: "FR_MTPAPR24II_2B",
-  source: "ICAI MTP April 2024 Series II",
-  chapter_name: "Ind AS 12 - Income Taxes (Interim Tax Reporting)",
-  placement: 2,
-  marks: 4,
+  `,
+  },
+  {
+    question_id: "FR_MTPAPR24II_2B",
+    source: "ICAI MTP April 2024 Series II",
+    chapter_name: "Ind AS 12 - Income Taxes (Interim Tax Reporting)",
+    placement: 2,
+    marks: 4,
 
-  question_html: `
-    <p>(b)</p>
+    question_html: `
+    
 
     <p>
       An entity’s accounting year ends is 31st December, but its tax year end is 31st March.
@@ -2353,8 +2354,8 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
-    <p><strong>Solution</strong></p>
+    solution_html: `
+    
 
     <p>
       Since the entity’s accounting year is not same as the tax year, more than one tax rate might apply
@@ -2415,18 +2416,18 @@ const descriptiveQuestions = [
     <p>
       Since different tax rates apply across periods, the effective tax rate approach is applied as per Ind AS 34.
     </p>
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPAPR24II_3A",
-  source: "ICAI MTP April 2024 Series II",
-  chapter_name: "Ind AS 103 - Business Combinations (Goodwill & NCI)",
-  placement: 3,
-  marks: 8,
+  {
+    question_id: "FR_MTPAPR24II_3A",
+    source: "ICAI MTP April 2024 Series II",
+    chapter_name: "Ind AS 103 - Business Combinations (Goodwill & NCI)",
+    placement: 3,
+    marks: 8,
 
-  question_html: `
-    <p>(a)</p>
+    question_html: `
+    
 
     <p>
       B Ltd. prepares consolidated financial statements upto 31st March each year.
@@ -2477,8 +2478,8 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
-    <p><strong>Solution</strong></p>
+    solution_html: `
+    
 
     <table border="1" cellspacing="0" cellpadding="5">
       <tr>
@@ -2559,18 +2560,19 @@ const descriptiveQuestions = [
         <th>34,000</th>
       </tr>
     </table>
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPAPR24II_3B",
-  source: "ICAI MTP April 2024 Series II",
-  chapter_name: "Ind AS 37 - Provisions, Contingent Liabilities and Contingent Assets (Onerous Contracts)",
-  placement: 3,
-  marks: 6,
+  {
+    question_id: "FR_MTPAPR24II_3B",
+    source: "ICAI MTP April 2024 Series II",
+    chapter_name:
+      "Ind AS 37 - Provisions, Contingent Liabilities and Contingent Assets (Onerous Contracts)",
+    placement: 3,
+    marks: 6,
 
-  question_html: `
-    <p>(b)</p>
+    question_html: `
+    
 
     <p>
       An entity has a contract to purchase one million units of gas at 23p per unit,
@@ -2604,8 +2606,8 @@ const descriptiveQuestions = [
     </ol>
   `,
 
-  solution_html: `
-    <p><strong>Solution</strong></p>
+    solution_html: `
+    
 
     <p><strong>(i)</strong></p>
 
@@ -2635,18 +2637,19 @@ const descriptiveQuestions = [
       Rs 50,000, being the lower of the cost of fulfilling the contract and
       the penalty cost of cancellation (Rs 55,000).
     </p>
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPAPR24II_4A",
-  source: "ICAI MTP April 2024 Series II",
-  chapter_name: "Ind AS 28 - Investments in Associates and Joint Ventures (Equity Method)",
-  placement: 4,
-  marks: 5,
+  {
+    question_id: "FR_MTPAPR24II_4A",
+    source: "ICAI MTP April 2024 Series II",
+    chapter_name:
+      "Ind AS 28 - Investments in Associates and Joint Ventures (Equity Method)",
+    placement: 4,
+    marks: 5,
 
-  question_html: `
-    <p>(a)</p>
+    question_html: `
+    
 
     <p>
       On 1st April 20X1, Investor Ltd. acquires 35% interest in XYZ Ltd.
@@ -2679,8 +2682,8 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
-    <p><strong>Solution</strong></p>
+    solution_html: `
+    
 
     <table border="1" cellspacing="0" cellpadding="5">
       <tr>
@@ -2747,18 +2750,18 @@ const descriptiveQuestions = [
         <th>47,15,000</th>
       </tr>
     </table>
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPAPR24II_4B",
-  source: "ICAI MTP April 2024 Series II",
-  chapter_name: "Ind AS 33 - Earnings Per Share (Basic & Diluted EPS)",
-  placement: 4,
-  marks: 9,
+  {
+    question_id: "FR_MTPAPR24II_4B",
+    source: "ICAI MTP April 2024 Series II",
+    chapter_name: "Ind AS 33 - Earnings Per Share (Basic & Diluted EPS)",
+    placement: 4,
+    marks: 9,
 
-  question_html: `
-    <p>(b)</p>
+    question_html: `
+    
 
     <p>Following are the facts given for X Ltd.:</p>
 
@@ -2782,8 +2785,8 @@ const descriptiveQuestions = [
     </ol>
   `,
 
-  solution_html: `
-    <p><strong>Solution</strong></p>
+    solution_html: `
+    
 
     <p><strong>(a) Calculation of Basic EPS</strong></p>
 
@@ -2884,18 +2887,18 @@ const descriptiveQuestions = [
       discontinued operations and net income would not be reported because of
       the loss from continuing operations.
     </p>
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPAPR24II_5A",
-  source: "ICAI MTP April 2024 Series II",
-  chapter_name: "Ind AS 115 - Revenue from Contracts with Customers",
-  placement: 5,
-  marks: 9,
+  {
+    question_id: "FR_MTPAPR24II_5A",
+    source: "ICAI MTP April 2024 Series II",
+    chapter_name: "Ind AS 115 - Revenue from Contracts with Customers",
+    placement: 5,
+    marks: 9,
 
-  question_html: `
-    <p>(a)</p>
+    question_html: `
+    
 
     <p>
       A Ltd. is a company which is in the business of manufacturing engineering
@@ -2951,8 +2954,8 @@ const descriptiveQuestions = [
     </ol>
   `,
 
-  solution_html: `
-    <p><strong>Solution</strong></p>
+    solution_html: `
+    
 
     <p><strong>(i)</strong></p>
 
@@ -3150,18 +3153,19 @@ const descriptiveQuestions = [
         <td>4,00,000</td>
       </tr>
     </table>
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPAPR24II_5B",
-  source: "ICAI MTP April 2024 Series II",
-  chapter_name: "Ind AS 101 - First-time Adoption of Indian Accounting Standards (Share-based Payment Exemption)",
-  placement: 5,
-  marks: 5,
+  {
+    question_id: "FR_MTPAPR24II_5B",
+    source: "ICAI MTP April 2024 Series II",
+    chapter_name:
+      "Ind AS 101 - First-time Adoption of Indian Accounting Standards (Share-based Payment Exemption)",
+    placement: 5,
+    marks: 5,
 
-  question_html: `
-    <p>(b)</p>
+    question_html: `
+    
 
     <p>
       X Ltd. is a first-time adopter of Ind AS.
@@ -3176,8 +3180,8 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
-    <p><strong>Solution</strong></p>
+    solution_html: `
+    
 
     <p>
       Ind AS 101 provides that a first-time adopter is encouraged, but not required,
@@ -3224,18 +3228,19 @@ const descriptiveQuestions = [
         X Ltd. will need to account for the same as per Ind AS 102.
       </li>
     </ul>
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPAPR24II_6A",
-  source: "ICAI MTP April 2024 Series II",
-  chapter_name: "Ind AS 105 - Non-current Assets Held for Sale and Discontinued Operations (with Ethics)",
-  placement: 6,
-  marks: 5,
+  {
+    question_id: "FR_MTPAPR24II_6A",
+    source: "ICAI MTP April 2024 Series II",
+    chapter_name:
+      "Ind AS 105 - Non-current Assets Held for Sale and Discontinued Operations (with Ethics)",
+    placement: 6,
+    marks: 5,
 
-  question_html: `
-    <p>(a)</p>
+    question_html: `
+    
 
     <p>
       As at 31 March 20X4, M Ltd. had a plan to dispose off its 75%
@@ -3311,8 +3316,7 @@ const descriptiveQuestions = [
     </ol>
   `,
 
-  solution_html: `
-    <p><strong>Solution</strong></p>
+    solution_html: `
 
     <p><strong>(i) Accounting Treatment</strong></p>
 
@@ -3466,17 +3470,16 @@ const descriptiveQuestions = [
       Institute who is an employee shall exercise due diligence and
       shall not be grossly negligent in the conduct of his duties.
     </p>
-  `
-},
-{
-  question_id: "FR_MTPAPR24II_6B",
-  source: "ICAI MTP April 2024 Series II",
-  chapter_name: "Ind AS 12 - Income Taxes (Deferred Tax)",
-  placement: 6,
-  marks: 5,
+  `,
+  },
+  {
+    question_id: "FR_MTPAPR24II_6B",
+    source: "ICAI MTP April 2024 Series II",
+    chapter_name: "Ind AS 12 - Income Taxes (Deferred Tax)",
+    placement: 6,
+    marks: 5,
 
-  question_html: `
-    <p><strong>(b)</strong></p>
+    question_html: `
 
     <p>
       P Ltd., a manufacturing company, prepares consolidated financial statements to
@@ -3531,8 +3534,8 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
-    <p><strong>Solution</strong></p>
+    solution_html: `
+    
 
     <p><strong>Impact on consolidated balance sheet of P Ltd. group at 31st March, 20X2</strong></p>
 
@@ -3570,17 +3573,18 @@ const descriptiveQuestions = [
         (Rs 7,80,000 × 30%).
       </li>
     </ul>
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPAPR24II_6C",
-  source: "ICAI MTP April 2024 Series II",
-  chapter_name: "Ind AS 8 - Accounting Policies, Changes in Accounting Estimates and Errors / Ind AS 10 - Events after the Reporting Period",
-  placement: 6,
-  marks: 4,
+  {
+    question_id: "FR_MTPAPR24II_6C",
+    source: "ICAI MTP April 2024 Series II",
+    chapter_name:
+      "Ind AS 8 - Accounting Policies, Changes in Accounting Estimates and Errors / Ind AS 10 - Events after the Reporting Period",
+    placement: 6,
+    marks: 4,
 
-  question_html: `
+    question_html: `
 
     <p>
       Entity ABC acquired a building for its administrative purposes and presented
@@ -3629,8 +3633,8 @@ const descriptiveQuestions = [
     </p>
   `,
 
-  solution_html: `
-    <p><strong>Solution</strong></p>
+    solution_html: `
+    
 
     <p>
       Paragraph 16(a) of Ind AS 8 provides that the application of an accounting
@@ -3713,7 +3717,6 @@ const descriptiveQuestions = [
       Hence, the management's view that 20th April, 20X2 should be considered
       as the end of the period after the reporting period is <strong>incorrect</strong>.
     </p>
-  `
-}
-
+  `,
+  },
 ];
