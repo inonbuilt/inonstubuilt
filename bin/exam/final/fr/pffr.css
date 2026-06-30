@@ -5,8 +5,7 @@
     /* 3% Reduced dimensions from the 600x848 size */
     --page-width: 582px;
     --page-height: 822px;
-    --safe-height: 726px; /* Perfect math: 822px - 70px vertical padding - 26px safety margin */
-    --book-shift: 291px;  /* Half of 582px */
+    --page-padding: 35px; /* Added dynamic padding */
     --font-scale: 1.02;   
 }
 
@@ -15,7 +14,7 @@
     :root {
         --page-width: 450px;
         --page-height: 636px;
-        --safe-height: 540px; 
+        --page-padding: 25px; /* Scaled down padding */
         --book-shift: 225px; 
         --font-scale: 1;
     }
@@ -25,7 +24,7 @@
     :root {
         --page-width: 360px;
         --page-height: 540px;
-        --safe-height: 450px;
+        --page-padding: 20px; /* Scaled down padding */
         --book-shift: 180px;
         --font-scale: 0.95;
     }
@@ -35,7 +34,7 @@
     :root {
         --page-width: 280px;
         --page-height: 440px;
-        --safe-height: 350px;
+        --page-padding: 15px; /* Scaled down padding */
         --book-shift: 140px;
         --font-scale: 0.85;
     }
@@ -75,7 +74,7 @@ body {
 .front, .back {
     position: absolute; width: 100%; height: 100%; backface-visibility: hidden;
     background-color: #faf9f6; 
-    padding: 35px 35px; 
+    padding: var(--page-padding); /* Bound to responsive variable */
     box-sizing: border-box; overflow: hidden; border: 1px solid #c8d6e5; user-select: none; -webkit-user-select: none;
 }
 
@@ -133,7 +132,6 @@ th { background-color: #f1f5f9; font-weight: bold; color: #1e293b; }
 .nav-btn:hover {
     background: #ffffff;
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-    /* translateY is needed here again so it doesn't snap to the top when hovered */
     transform: translateY(-50%) scale(1.1); 
 }
 
@@ -141,11 +139,9 @@ th { background-color: #f1f5f9; font-weight: bold; color: #1e293b; }
     transform: translateY(-50%) scale(0.95);
 }
 
-/* Position Left and Right buttons */
 #prev-btn { left: 40px; }
 #next-btn { right: 40px; }
 
-/* On extremely small mobile screens, move buttons slightly closer to edges */
 @media (max-width: 768px) {
     #prev-btn { left: 10px; width: 40px; height: 40px; font-size: 18px; }
     #next-btn { right: 10px; width: 40px; height: 40px; font-size: 18px; }

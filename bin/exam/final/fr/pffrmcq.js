@@ -529,4 +529,829 @@ const mcqData = [
       },
     ],
   },
+
+  {
+    case_id: "FR_MTPAPR24II_CS1",
+    case_chapter: ["Ind AS 1", "Ind AS 2", "Ind AS 115"],
+    caseText: `
+    <p>
+      ABC Ltd. is a diversified business group operating in multiple business
+      segments across different parts of the world. It maintains its books of
+      accounts and publishes its annual financial statements under Indian
+      Accounting Standards.
+    </p>
+
+    <p>
+      The finance team has been working on closing the books of accounts and
+      generating financial statements for the year ended 31st March, 20X3 and
+      are facing issues in the following transactions while finalization of
+      financial statements:
+    </p>
+
+    <p>
+      <strong>(i)</strong> One of the businesses of ABC Ltd. is manufacturing sugar and
+      chemicals. The company has taken a term loan of
+      <strong>₹ 5 crores</strong> from State Bank to purchase plant and machinery during
+      the year ended 31st March, 20X2. The loan is repayable over a period of
+      five years.
+    </p>
+
+    <p>
+      The loan agreement requires the company to maintain:
+    </p>
+
+    <ul>
+      <li>Current Ratio = <strong>1.33 : 1</strong></li>
+      <li>Debt-Equity Ratio = <strong>1 : 2</strong></li>
+    </ul>
+
+    <p>
+      If these covenants are breached, the bank has the right to recall the
+      entire loan.
+    </p>
+
+    <p>
+      The loan outstanding as on 31st March, 20X3 was
+      <strong>₹ 4.25 crores</strong>. The current ratio was
+      <strong>1 : 1</strong> and the debt-equity ratio was
+      <strong>0.5 : 2</strong>.
+    </p>
+
+    <p>
+      State Bank issued a notice on <strong>5th April, 20X3</strong> demanding repayment
+      due to breach of the loan covenants. The financial statements were signed
+      on <strong>10th May, 20X3</strong>.
+    </p>
+
+    <p>
+      After receiving the notice, the CFO negotiated with the bank and the breach
+      was rectified. On <strong>25th April, 20X3</strong>, the bank agreed not to recall
+      the loan and allowed the company time up to <strong>20X5</strong> to achieve the
+      contracted ratios.
+    </p>
+
+    <p>
+      <strong>(ii)</strong> ABC Ltd. has inventory of raw material Y comprising
+      <strong>10,000 units</strong> as at 31st March, 20X4 with a carrying amount of
+      <strong>₹ 100 per unit</strong>. The current market value is
+      <strong>₹ 95 per unit</strong>.
+    </p>
+
+    <p>
+      The raw material will be used to manufacture a component.
+      Conversion cost is estimated at <strong>₹ 130 per unit</strong>.
+      Costs to complete and sell are estimated at
+      <strong>₹ 50 per unit</strong> and the estimated selling price of the finished
+      component is <strong>₹ 290 per unit</strong>.
+    </p>
+
+    <p>
+      <strong>(iii)</strong> ABC Ltd. sold Machinery Z for
+      <strong>₹ 900 thousand</strong>.
+      To establish a long-term relationship with the customer, the sale includes
+      after-sales service for the next three years free of cost.
+    </p>
+
+    <p>
+      The company also sells the same service contract separately after the
+      warranty period for <strong>₹ 100 thousand</strong>.
+    </p>
+
+    <p><strong>
+      Analyze the transactions mentioned above and choose the most appropriate
+      option in the following questions in line with the relevant Ind AS.
+    </strong></p>
+  `,
+    questions: [
+      {
+        question_id: "FR_MTPAPR24II_CS1_1",
+        chapter_name: ["Ind AS 1"],
+        question:
+          "How should the long-term loan from State Bank be classified in the financial statements for the year ended 31st March, 20X3 if ABC Ltd. had not negotiated with the bank for rectification of the breach?",
+        options: [
+          "Other current liabilities",
+          "Current financial liability",
+          "Non-current financial liability",
+          "Other non-current liability",
+        ],
+        answer: 1,
+      },
+      {
+        question_id: "FR_MTPAPR24II_CS1_2",
+        chapter_name: ["Ind AS 1"],
+        question:
+          "After negotiation with State Bank, how should the long-term loan be classified in the financial statements for the year ended 31st March, 20X3?",
+        options: [
+          "Other current liabilities",
+          "Current financial liability",
+          "Non-current financial liability",
+          "Other non-current liability",
+        ],
+        answer: 1,
+      },
+      {
+        question_id: "FR_MTPAPR24II_CS1_3",
+        chapter_name: ["Ind AS 2"],
+        question:
+          "At what value should Raw Material Y be measured in the books of ABC Ltd. as per the applicable Ind AS?",
+        options: [
+          "₹ 950 thousand",
+          "₹ 1,100 thousand",
+          "₹ 1,000 thousand",
+          "₹ 1,600 thousand",
+        ],
+        answer: 2,
+      },
+      {
+        question_id: "FR_MTPAPR24II_CS1_4",
+        chapter_name: ["Ind AS 115"],
+        question:
+          "How should the revenue be recognised in the books of account for the sale of Machinery Z?",
+        options: [
+          "₹ 900 thousand is to be recognised as revenue in the year of sale.",
+          "₹ 900 thousand is to be recognised at the end of three years after sale.",
+          "₹ 900 thousand is to be recognised in the year of sale and ₹ 100 thousand to be spread over the next three years.",
+          "₹ 810 thousand is to be recognised in the year of sale and ₹ 90 thousand to be spread over the next three years.",
+        ],
+        answer: 3,
+      },
+    ],
+  },
+
+  {
+    case_id: "FR_MTPAPR24II_CS2",
+    case_chapter: ["Ind AS 105", "Ind AS 20"],
+    caseText: `
+    <p>
+      DEF Ltd. is a globally diversified business conglomerate with operations
+      spanning across various business sectors worldwide. The company adheres
+      to Indian Accounting Standards for maintaining its financial records and
+      annually releases its financial statements.
+    </p>
+
+    <p>
+      As the finance team progresses towards finalizing the financial statements
+      for the financial year ended 31st March, 20X3, the team is facing issues in
+      accounting for the following transactions:
+    </p>
+
+    <p>
+      <strong>(i)</strong> On 1st June, 20X2, DEF Ltd. decided to dispose of the business
+      and current and non-current assets of one of its divisions relating to the
+      specialty chemicals business which had been acquired several years ago.
+      This disposal does not involve DEF Ltd. withdrawing from a particular
+      market sector.
+    </p>
+
+    <p>
+      The carrying values of the assets on 1st June, 20X2 were as follows:
+    </p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ in Million</th>
+      </tr>
+      <tr>
+        <td>Goodwill</td>
+        <td>10.0</td>
+      </tr>
+      <tr>
+        <td>Property, Plant and Equipment</td>
+        <td>20.0</td>
+      </tr>
+      <tr>
+        <td>Patents and Trademarks</td>
+        <td>8.0</td>
+      </tr>
+      <tr>
+        <td>Inventories</td>
+        <td>15.0</td>
+      </tr>
+      <tr>
+        <td>Trade Receivables</td>
+        <td>10.0</td>
+      </tr>
+    </table>
+
+    <p>
+      None of the assets had suffered impairment as on 1st June, 20X2.
+      At that date, inventories and trade receivables were already stated at no
+      more than their recoverable amounts.
+    </p>
+
+    <p>
+      DEF Ltd. offered the business for sale at
+      <strong>₹ 46.5 million</strong>, which was considered reasonably achievable.
+      The estimated direct cost of selling the business was
+      <strong>₹ 0.5 million</strong>.
+      These estimates remained unchanged and the business is expected to be
+      sold by <strong>31st March, 20X3</strong>.
+    </p>
+
+    <p>
+      <strong>(ii)</strong> The Government provided DEF Ltd. with a grant of
+      <strong>₹ 21 million</strong> to assist in the development of a factory.
+    </p>
+
+    <p>
+      The grant was received in two parts:
+    </p>
+
+    <ol>
+      <li>
+        <strong>₹ 6 million</strong> was paid as an inducement to begin developing
+        the factory. No conditions were attached to this part of the grant.
+      </li>
+      <li>
+        <strong>₹ 15 million</strong> related to the construction of the factory,
+        which cost <strong>₹ 60 million</strong>.
+        The land was leased, therefore the entire factory cost is depreciable over
+        its estimated useful life of <strong>40 years</strong>.
+      </li>
+    </ol>
+
+    <p><strong>
+      Analyze the transactions mentioned above and choose the most appropriate
+      option in the following questions in line with the relevant Ind AS.
+    </strong></p>
+  `,
+    questions: [
+      {
+        question_id: "FR_MTPAPR24II_CS2_1",
+        chapter_name: ["Ind AS 105"],
+        question:
+          "Compute the value of the specialty chemicals division's goodwill at the date of classification after re-measurement.",
+        options: ["₹ 7.3 million", "₹ 10 million", "₹ Nil", "₹ 8 million"],
+        answer: 2,
+      },
+      {
+        question_id: "FR_MTPAPR24II_CS2_2",
+        chapter_name: ["Ind AS 105"],
+        question:
+          "Calculate the closing balance of the specialty chemicals division's Property, Plant and Equipment at the period end.",
+        options: [
+          "₹ 21 million",
+          "₹ 17.36 million",
+          "₹ 6 million",
+          "₹ 15 million",
+        ],
+        answer: 3,
+      },
+      {
+        question_id: "FR_MTPAPR24II_CS2_3",
+        chapter_name: ["Ind AS 20"],
+        question:
+          "What would be the accounting treatment for the grant of ₹ 15 million related to the construction of the factory?",
+        options: [
+          "Recognise the ₹ 15 million grant immediately in the Statement of Profit and Loss since the company is certain to build the factory.",
+          "Deduct the grant received from the cost of the asset and depreciate the net carrying value over its useful economic life.",
+          "Show the grant as a deferred credit and release it to the Statement of Profit and Loss at the end of 40 years.",
+          "Recognise ₹ 0.375 million each year in the Statement of Profit and Loss over 40 years as deferred grant income.",
+        ],
+        answer: 1,
+      },
+      {
+        question_id: "FR_MTPAPR24II_CS2_4",
+        chapter_name: ["Ind AS 20"],
+        question:
+          "What would be the accounting treatment of the grant of ₹ 6 million received as an inducement to begin developing the factory?",
+        options: [
+          "Grant relating to an inducement to begin developing the factory can be recognised immediately in the Statement of Profit and Loss.",
+          "₹ 0.15 million should be credited each year in the Statement of Profit and Loss over 40 years.",
+          "₹ 1.2 million should be credited each year in the Statement of Profit and Loss over 40 years.",
+          "Net off the grant received against the cost of the asset and depreciate the net figure over its useful economic life.",
+        ],
+        answer: 0,
+      },
+    ],
+  },
+
+  {
+    case_id: "FR_MTPAPR24II_CS3",
+    case_chapter: ["Ind AS 109", "Ind AS 111", "Ind AS 16", "Ind AS 23"],
+    caseText: `
+    <p>
+      HIJ Ltd. is a globally diversified business conglomerate with operations
+      spanning multiple business segments across various regions worldwide.
+      For maintaining its financial records, the company follows Indian
+      Accounting Standards.
+    </p>
+
+    <p>
+      As the finance team diligently finalizes the books of accounts and prepares
+      the financial statements for the financial year ended
+      <strong>31st March, 20X2</strong>, it requires insights and accounting
+      suggestions on the following transactions:
+    </p>
+
+    <p>
+      <strong>(i)</strong> On <strong>1st October, 20X1</strong>, HIJ Ltd. subscribed for
+      <strong>40 million ₹1 loan notes</strong> in Z Ltd.
+      The loan notes were issued at <strong>90 paise</strong> and were redeemable at
+      <strong>₹1.20</strong> on <strong>30th September, 20X6</strong>.
+      Interest is payable on 30th September each year in arrears at
+      <strong>4% of par value</strong>.
+      This represents an effective annual rate of return of
+      <strong>9.9%</strong>.
+      HIJ Ltd.'s intention is to hold the loan notes until redemption.
+    </p>
+
+    <p>
+      <strong>(ii)</strong> On <strong>1st April, 20X1</strong>, HIJ Ltd. commenced joint
+      construction of a property with G Ltd.
+      An agreement provides for joint operation and ownership of the property.
+      All ongoing expenditure, comprising maintenance and borrowing costs,
+      is to be shared equally.
+    </p>
+
+    <p>
+      The construction was completed on
+      <strong>30th September, 20X1</strong> and utilisation of the property started on
+      <strong>1st January, 20X2</strong>, when the estimated useful life was
+      determined to be <strong>20 years</strong>.
+    </p>
+
+    <p>
+      The total cost of construction was
+      <strong>₹40 crores</strong>.
+      Besides internal accruals, part of the cost was funded through a loan of
+      <strong>₹10 crores</strong> taken on
+      <strong>1st January, 20X1</strong> carrying interest at
+      <strong>10% per annum</strong>, payable annually on
+      <strong>31st December</strong>.
+      The company also incurred
+      <strong>₹4,00,000</strong> towards maintenance of the property.
+    </p>
+
+    <p>
+      HIJ Ltd. has recorded the entire amount paid as
+      <strong>Investment in Joint Venture</strong> in its books of account.
+      Suggest the suitable accounting treatment as per the applicable Ind AS.
+    </p>
+
+    <p><strong>
+      Analyze the transactions mentioned above and choose the most appropriate
+      option in the following questions in line with the relevant Ind AS.
+    </strong></p>
+  `,
+    questions: [
+      {
+        question_id: "FR_MTPAPR24II_CS3_1",
+        chapter_name: ["Ind AS 109"],
+        question:
+          "What would be the initial measurement of the financial instrument representing the subscription to loan notes in Z Ltd.?",
+        options: [
+          "₹40 million",
+          "₹37.782 million",
+          "₹38.4 million",
+          "₹36 million",
+        ],
+        answer: 3,
+      },
+      {
+        question_id: "FR_MTPAPR24II_CS3_2",
+        chapter_name: ["Ind AS 109"],
+        question:
+          "What would be the closing balance of the financial instrument (loan notes in Z Ltd.) as on 31st March, 20X2?",
+        options: [
+          "₹37.6 million",
+          "₹34.218 million",
+          "₹37.782 million",
+          "₹36.182 million",
+        ],
+        answer: 2,
+      },
+      {
+        question_id: "FR_MTPAPR24II_CS3_3",
+        chapter_name: ["Ind AS 111"],
+        question:
+          "With respect to point (ii), what is the nature of the agreement?",
+        options: [
+          "Agreement is in the nature of Joint Venture",
+          "Agreement is in the nature of Joint Operations",
+          "Agreement is in the nature of Holding-Subsidiary relationship",
+          "Agreement is in the nature of Associate",
+        ],
+        answer: 1,
+      },
+      {
+        question_id: "FR_MTPAPR24II_CS3_4",
+        chapter_name: ["Ind AS 16", "Ind AS 23", "Ind AS 111"],
+        question:
+          "What will be the initial cost of Property, Plant and Equipment appearing in the books of HIJ Ltd.?",
+        options: [
+          "₹40,50,00,000",
+          "₹40,00,00,000",
+          "₹20,25,00,000",
+          "₹20,00,00,000",
+        ],
+        answer: 2,
+      },
+      {
+        question_id: "FR_MTPAPR24II_CS3_5",
+        chapter_name: ["Ind AS 16"],
+        question:
+          "Calculate the depreciation charge for the year ended 31st March, 20X2 to be charged by G Ltd. in its books.",
+        options: ["₹50,62,500", "₹1,01,25,000", "₹1,00,00,000", "₹50,00,000"],
+        answer: 0,
+      },
+    ],
+  },
+
+  {
+    case_id: "FR_MTPSEP24I_CS1",
+    case_chapter: ["Ind AS 113", "Ind AS 115", "Ind AS 23"],
+    caseText: `
+    <p>
+      A Ltd. is a diversified business group operating in multiple business segments
+      across different parts of the world. It maintains its books of accounts and
+      publishes its annual financial statements under Indian Accounting Standards.
+    </p>
+
+    <p>
+      The finance team has been working on closing the books of accounts and
+      generating financial statements for the year ended
+      <strong>31st March, 20X2</strong> and are facing issues in the following
+      transactions while finalization of financial statements:
+    </p>
+
+    <p>
+      <strong>(i)</strong>
+      A Ltd. owns <strong>250 ordinary shares</strong> in X Ltd., an unquoted company.
+      X Ltd. has a total share capital of <strong>5,000 shares</strong> with nominal
+      value of <strong>₹10</strong>. X Ltd.'s after-tax maintainable profits are estimated
+      at <strong>₹70,000 per year</strong>. An appropriate price/earnings ratio determined
+      from published industry data is <strong>15</strong> (before lack of marketability
+      adjustment). A Ltd.'s management estimates that the discount for the lack of
+      marketability of X Ltd.'s shares and restrictions on their transfer is
+      <strong>20%</strong>. A Ltd. values its holding in X Ltd.'s shares based on earnings.
+    </p>
+
+    <p>
+      <strong>(ii)</strong>
+      A Ltd. has a telecom segment. It entered into an agreement with B Ltd.
+      which is engaged in generation and supply of power. The agreement
+      provided that A Ltd. will provide <strong>1,00,000 minutes</strong> of talk time to
+      employees of B Ltd. in exchange for getting power equivalent to
+      <strong>20,000 units</strong>. A Ltd. normally charges
+      <strong>₹0.50 per minute</strong> and B Ltd. charges
+      <strong>₹2.50 per unit</strong>.
+    </p>
+
+    <p>
+      <strong>(iii)</strong>
+      A Ltd. began construction of a new building at an estimated cost of
+      <strong>₹7 lakh</strong> on <strong>1st April, 20X1</strong>.
+      To finance construction of the building it obtained a specific loan of
+      <strong>₹2 lakh</strong> from a financial institution at an interest rate of
+      <strong>9% per annum</strong>.
+    </p>
+
+    <p>
+      The company's other outstanding loans were:
+    </p>
+
+    <table>
+      <tr>
+        <th>Amount</th>
+        <th>Rate of Interest per annum</th>
+      </tr>
+      <tr>
+        <td>₹7,00,000</td>
+        <td>12%</td>
+      </tr>
+      <tr>
+        <td>₹9,00,000</td>
+        <td>11%</td>
+      </tr>
+    </table>
+
+    <p>
+      The expenditure incurred on the construction was:
+    </p>
+
+    <table>
+      <tr>
+        <td>April, 20X1</td>
+        <td>₹1,50,000</td>
+      </tr>
+      <tr>
+        <td>August, 20X1</td>
+        <td>₹2,00,000</td>
+      </tr>
+      <tr>
+        <td>October, 20X1</td>
+        <td>₹3,50,000</td>
+      </tr>
+      <tr>
+        <td>January, 20X2</td>
+        <td>₹1,00,000</td>
+      </tr>
+    </table>
+
+    <p>
+      The construction of building was completed by
+      <strong>31st January, 20X2</strong>.
+    </p>
+
+    <p>
+      The construction of building started on
+      <strong>1st April, 20X1</strong> and all the expenditures on construction of
+      building had been incurred at the beginning of the respective month.
+    </p>
+
+    <p>
+      Analyze the transactions mentioned above and choose the most
+      appropriate option in the below questions 1 to 6 in line with relevant
+      Ind AS:
+    </p>
+  `,
+    questions: [
+      {
+        question_id: "FR_MTPSEP24I_CS1_1",
+        chapter_name: ["Ind AS 113"],
+        question: "What is the value of a share of X Ltd.?",
+        options: ["₹8,40,000", "₹10,50,000", "₹8,00,000", "₹10,00,000"],
+        answer: 0,
+      },
+      {
+        question_id: "FR_MTPSEP24I_CS1_2",
+        chapter_name: ["Ind AS 113"],
+        question:
+          "What is the fair value of A Ltd.'s investment in X Ltd.'s shares?",
+        options: ["₹50,000", "₹42,000", "₹10,50,000", "₹10,00,000"],
+        answer: 1,
+      },
+      {
+        question_id: "FR_MTPSEP24I_CS1_3",
+        chapter_name: ["Ind AS 115"],
+        question:
+          "By what amount the revenue be measured and recognised by A Ltd. in case of telecom segment?",
+        options: ["₹10,000", "₹2,50,000", "₹2,00,000", "₹50,000"],
+        answer: 3,
+      },
+      {
+        question_id: "FR_MTPSEP24I_CS1_4",
+        chapter_name: ["Ind AS 23"],
+        question:
+          "What will be the capitalization rate for computation of borrowing cost on the building based on general borrowings?",
+        options: ["9%", "11%", "11.4375%", "12%"],
+        answer: 2,
+      },
+      {
+        question_id: "FR_MTPSEP24I_CS1_5",
+        chapter_name: ["Ind AS 23"],
+        question:
+          "What will be the total amount of borrowing cost on specific borrowing?",
+        options: ["₹11,250", "₹13,500", "₹15,000", "₹37,875"],
+        answer: 2,
+      },
+      {
+        question_id: "FR_MTPSEP24I_CS1_6",
+        chapter_name: ["Ind AS 23"],
+        question:
+          "What will be the total amount of borrowing cost on general borrowing?",
+        options: ["₹22,875", "₹15,000", "₹37,875", "₹13,500"],
+        answer: 0,
+      },
+    ],
+  },
+
+  {
+    case_id: "FR_MTPSEP24I_CS2",
+    case_chapter: ["Ind AS 41", "Ind AS 32"],
+    caseText: `
+    <p>
+      D Ltd. is a globally diversified business conglomerate with operations spanning
+      across various business sectors worldwide. The company adheres to Indian
+      Accounting Standards for maintaining its financial records and annually releases
+      its financial statements. As the finance team progresses towards finalizing the
+      financial statements for the fiscal year ending on <strong>31st March 20X2</strong>,
+      the team is stuck up in the accounting of the following transactions:
+    </p>
+
+    <p>
+      <strong>(i)</strong> D Ltd., for its dairy business, purchased cattle at an auction on
+      <strong>30th June 20X1</strong>.
+    </p>
+
+    <table>
+      <tr>
+        <td>Purchase price at 30th June 20X1</td>
+        <td><strong>₹1,00,000</strong></td>
+      </tr>
+      <tr>
+        <td>Costs of transporting the cattle back to the entity’s farm</td>
+        <td><strong>₹1,000</strong></td>
+      </tr>
+      <tr>
+        <td>Sales price of the cattle at 31st March, 20X2</td>
+        <td><strong>₹1,10,000</strong></td>
+      </tr>
+    </table>
+
+    <p>
+      The company would have to incur similar transportation costs if it were to
+      sell the cattle at auction, in addition to an auctioneer’s fee of
+      <strong>2% of sales price</strong>. The auctioneer charges
+      <strong>2% of the selling price</strong>, from both, the buyer as well as the seller.
+    </p>
+
+    <p>
+      Calculate the amount at which cattle is to be recognised in books on initial
+      recognition and at year end <strong>31st March, 20X2</strong>.
+      Show corresponding journal entries.
+    </p>
+
+    <p>
+      <strong>(ii)</strong> D Ltd. has certain financial instruments:
+    </p>
+
+    <ul>
+      <li>
+        Irredeemable preference shares with face value of
+        <strong>₹10 each</strong> and premium of <strong>₹90</strong>.
+        These shares carry dividend @ <strong>8% per annum</strong>,
+        however dividend is paid only when D Ltd declares dividend on equity shares.
+      </li>
+
+      <li>
+        Borrowings from Z Ltd. for <strong>₹10,00,000</strong> with settlement against
+        issue of a certain number of equity shares of D Ltd. whose value equals
+        <strong>₹10,00,000</strong>. Fair value per share (to determine total number of
+        equity shares to be issued) be determined based on the market price of the
+        shares of D Ltd. at a future date, upon settlement of the contract.
+      </li>
+    </ul>
+
+    <p><strong>
+      Analyze the transactions mentioned above and choose the most appropriate
+      option in the below questions in line with relevant Ind AS.
+    </strong></p>
+  `,
+    questions: [
+      {
+        question_id: "FR_MTPSEP24I_CS2_1",
+        chapter_name: ["Ind AS 41"],
+        question:
+          "What will be the gain/(loss) on initial recognition of biological asset i.e. cattle at the time of purchase on 30th June 20X1?",
+        options: [
+          "Gain on initial recognition of biological asset ₹9,800",
+          "Loss on initial recognition of biological asset ₹9,800",
+          "Gain on initial recognition of biological asset ₹6,000",
+          "Loss on initial recognition of biological asset ₹6,000",
+        ],
+        answer: 3,
+        solution:
+          "Fair value less costs to sell on initial recognition = ₹1,00,000 – ₹2,000 (buyer auction fee ignored for seller; costs to sell = transport ₹1,000 + seller auction fee ₹2,000) = ₹95,000. Purchase cost including transport = ₹1,01,000. Initial loss = ₹1,01,000 – ₹95,000 = ₹6,000. Therefore, the correct answer is Option (d).",
+      },
+      {
+        question_id: "FR_MTPSEP24I_CS2_2",
+        chapter_name: ["Ind AS 41"],
+        question:
+          "What will be the gain/(loss) on remeasurement of biological asset i.e. cattle at the time of sale on 31st March 20X2?",
+        options: [
+          "Gain on remeasurement of biological asset ₹9,800",
+          "Loss on remeasurement of biological asset ₹9,800",
+          "Gain on remeasurement of biological asset ₹6,000",
+          "Loss on remeasurement of biological asset ₹6,000",
+        ],
+        answer: 0,
+        solution:
+          "Fair value less costs to sell at 31st March 20X2 = ₹1,10,000 – Transport ₹1,000 – Auction fee (2% × ₹1,10,000 = ₹2,200) = ₹1,06,800. Carrying amount after initial recognition = ₹97,000. Gain on remeasurement = ₹1,06,800 – ₹97,000 = ₹9,800. Therefore, the correct answer is Option (a).",
+      },
+      {
+        question_id: "FR_MTPSEP24I_CS2_3",
+        chapter_name: ["Ind AS 32"],
+        question:
+          "Irredeemable preference shares would be accounted for in the books of D Ltd. as",
+        options: [
+          "Financial Asset",
+          "Financial Liability",
+          "Equity",
+          "Will not be accounted for in the books",
+        ],
+        answer: 2,
+        solution:
+          "The preference shares are irredeemable and dividend is payable only when declared by the company. There is no contractual obligation to deliver cash or another financial asset. Hence, the instrument is classified as Equity under Ind AS 32. Therefore, the correct answer is Option (c).",
+      },
+      {
+        question_id: "FR_MTPSEP24I_CS2_4",
+        chapter_name: ["Ind AS 32"],
+        question:
+          "Borrowings from Z Ltd. for ₹10,00,000 with settlement against issue of a certain number of equity shares of D Ltd. would be accounted for in the books of D Ltd. as",
+        options: [
+          "Financial Asset",
+          "Financial Liability",
+          "Equity",
+          "Will not be accounted for in the books",
+        ],
+        answer: 1,
+        solution:
+          "The contract requires settlement by issuing a variable number of equity shares whose value equals ₹10,00,000. Since the 'fixed-for-fixed' criterion is not met, the instrument is classified as a Financial Liability under Ind AS 32. Therefore, the correct answer is Option (b).",
+      },
+    ],
+  },
+
+  {
+    case_id: "FR_MTPSEP24I_CS3",
+    case_chapter: ["Ind AS 28", "Ind AS 110", "Ind AS 111"],
+    caseText: `
+    <p>
+      H Ltd. is a globally diversified business conglomerate with operations spanning
+      multiple business segments across various regions worldwide. For maintaining
+      its financial records, the company follows Indian Accounting Standards.
+      As the finance team diligently finalizes the books of accounts and prepares the
+      financial statements for the financial year ending on
+      <strong>31st March 20X2</strong>, it requires insights and accounting suggestions
+      on the following transactions:
+    </p>
+
+    <p>
+      <strong>(i)</strong> H Ltd. holds <strong>12%</strong> of the voting shares in
+      Z Ltd. Z Ltd.'s board comprises of eight members and two of these members
+      are appointed by H Ltd. casting significant influence. Each board member has
+      one vote at the meeting.
+    </p>
+
+    <p>
+      <strong>(ii)</strong> H Ltd. holds <strong>10%</strong> of the voting power of
+      G Ltd. The balance <strong>90%</strong> voting power is held by nine other
+      investors each holding <strong>10%</strong>.
+    </p>
+
+    <p>
+      The decisions about the relevant activities (except decision about taking
+      borrowings) of G Ltd. are taken by the members holding majority of the voting
+      power. The decisions about taking borrowings are required to be taken by
+      unanimous consent of all the investors. Further, decisions about taking
+      borrowing are not the decisions that most significantly affect the returns of
+      G Ltd.
+    </p>
+
+    <p>
+      <strong>(iii)</strong> H Ltd. is also engaged in the business of
+      pharmaceuticals. It has invested in the share capital of Y Ltd. and is holding
+      <strong>15%</strong> of Y Ltd.’s total voting power. Y Ltd. is engaged in the
+      business of producing packing materials for pharmaceutical entities.
+    </p>
+
+    <p>
+      One of the incentives for H Ltd. to invest in Y Ltd. was the fact that
+      Y Ltd. is engaged in the business of producing packing materials which is
+      also useful for H Ltd. Since last many years, almost
+      <strong>90%</strong> of the output of Y Ltd. is procured by H Ltd.
+    </p>
+
+    <p><strong>
+      Analyze the transactions mentioned above and choose the most appropriate
+      option in the below questions in line with relevant Ind AS.
+    </strong></p>
+  `,
+    questions: [
+      {
+        question_id: "FR_MTPSEP24I_CS3_1",
+        chapter_name: ["Ind AS 28"],
+        question: "What is the relationship of Z Ltd. with H Ltd.?",
+        options: [
+          "Z Ltd. is a subsidiary of H Ltd.",
+          "Z Ltd. is an associate of H Ltd.",
+          "Z Ltd. is in joint arrangement with H Ltd.",
+          "H Ltd. has invested in Z Ltd. with no further relationship as subsidiary, associate or joint arrangement.",
+        ],
+        answer: 1,
+        solution:
+          "Although H Ltd. holds only 12% voting rights, it appoints 2 out of 8 board members and is able to exercise significant influence over Z Ltd. Significant influence is the key criterion for classification as an associate under Ind AS 28. Therefore, the correct answer is Option (b).",
+      },
+      {
+        question_id: "FR_MTPSEP24I_CS3_2",
+        chapter_name: ["Ind AS 28", "Ind AS 110"],
+        question: "What is the relationship of G Ltd. with H Ltd.?",
+        options: [
+          "G Ltd. is a subsidiary of H Ltd.",
+          "G Ltd. is an associate of H Ltd.",
+          "G Ltd. is in joint arrangement with H Ltd.",
+          "H Ltd. has invested in G Ltd. with no further relationship as subsidiary, associate or joint arrangement.",
+        ],
+        answer: 1,
+        solution:
+          "H Ltd. holds 10% voting rights. Decisions relating to relevant activities are taken by majority voting, while unanimous consent is required only for borrowing decisions, which are not the relevant activities. Hence, H Ltd. has significant influence but neither control nor joint control. Therefore, G Ltd. is an associate. The correct answer is Option (b).",
+      },
+      {
+        question_id: "FR_MTPSEP24I_CS3_3",
+        chapter_name: ["Ind AS 28"],
+        question: "What is the relationship of Y Ltd. with H Ltd.?",
+        options: [
+          "Y Ltd. is a subsidiary of H Ltd.",
+          "Y Ltd. is an associate of H Ltd.",
+          "Y Ltd. is in joint arrangement with H Ltd.",
+          "H Ltd. has invested in Y Ltd. with no further relationship as subsidiary, associate or joint arrangement.",
+        ],
+        answer: 1,
+        solution:
+          "H Ltd. owns 15% voting rights in Y Ltd. and procures approximately 90% of Y Ltd.'s output. The significant economic dependence together with the business relationship indicates significant influence under Ind AS 28. Accordingly, Y Ltd. is an associate of H Ltd. Therefore, the correct answer is Option (b).",
+      },
+    ],
+  },
 ];
