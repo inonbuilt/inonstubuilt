@@ -1103,7 +1103,7 @@ const mcqData = [
         question_id: "FR_MTPSEP24I_CS1_5",
         chapter_name: ["Ind AS 23"],
         question:
-          "What will be the total amount of borrowing cost on specific borrowing?",
+          "What will be  the total amount of borrowing cost on specific borrowing?",
         options: ["₹11,250", "₹13,500", "₹15,000", "₹37,875"],
         answer: 2,
       },
