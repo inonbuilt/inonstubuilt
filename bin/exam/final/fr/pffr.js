@@ -1,5 +1,5 @@
 // ==========================================
-// 1.  GLOBAL STATE & UTILITIES
+// 1. GLOBAL STATE & UTILITIES
 // ==========================================
 let rawExamElements = [];
 let selectedOptions = new Set(); 
