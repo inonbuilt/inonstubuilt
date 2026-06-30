@@ -259,6 +259,18 @@ function showResult(score, percentage, grade, correctCount, wrongCount, unanswer
     resultDiv.style.display = "block";
 
     let html = `
+        <div class="social-updates-box">
+            <p>For more updates, follow us on:</p>
+            <div class="social-btn-group">
+                <a href="https://www.instagram.com/calciumnotes" class="social-btn instagram-btn" target="_blank">
+                    Instagram
+                </a>
+                <a href="https://x.com/Calciumnotes" class="social-btn twitter-btn" target="_blank">
+                    Twitter
+                </a>
+            </div>
+        </div>
+
         <h2>Exam Result</h2>
         <p><strong>Total Marks:</strong> ${score} / ${selectedQuestions.length * MARK_PER_QUESTION}</p>
         <p><strong>Percentage:</strong> ${percentage}%</p>
@@ -273,6 +285,7 @@ function showResult(score, percentage, grade, correctCount, wrongCount, unanswer
         <h3>Detailed Solution Review</h3>
     `;
 
+    // Leave the remaining selectedQuestions.forEach loop exactly as it is below this line...
     selectedQuestions.forEach((q, index) => {
         html += `
             <div class="reviewBox">

@@ -173,3 +173,59 @@ button {
 .case-box th {
     background: #f3f4f6;
 }
+
+/* SOCIAL MEDIA UPDATES BAR */
+.social-updates-box {
+    background: #ffffff;
+    border: 2px dashed #e5e7eb;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.social-updates-box p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 12px;
+}
+
+.social-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+}
+
+.twitter-btn {
+    background: #000000;
+}
+
+.twitter-btn:hover {
+    background: #262626;
+}
+
+.instagram-btn {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.instagram-btn:hover {
+    opacity: 0.9;
+}
