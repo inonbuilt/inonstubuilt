@@ -1354,4 +1354,473 @@ const mcqData = [
       },
     ],
   },
+
+  {
+  case_id: "FR_MTPMAR24I_CS1",
+  case_chapter: [
+    "Ind AS 37",
+    "Ind AS 111",
+    "Ind AS 116",
+    "Ind AS 33",
+    "Ind AS 28",
+    "Ind AS 103"
+  ],
+  caseText: `
+    <p>
+      U Ltd. is engaged in mining and many other industries and prepares its
+      financial statements following Indian Accounting Standards and follows
+      April-March as their financial year. During the year
+      <strong>20X2-20X3</strong>, the company has faced some issues and for
+      their solution seeks your professional advice.
+    </p>
+
+    <p>
+      <strong>(i)</strong> U Ltd. and F Ltd. are partners of a joint operation
+      engaged in the business of mining precious metals. The entity uses a
+      jointly owned drilling plant in its operations. During the year ended
+      <strong>31st March 20X3</strong>, an inspection was conducted by the
+      government authorities in the mining fields. The inspection authorities
+      concluded that adequate safety measures were not followed by the entity.
+      As a consequence, a case was filed and a penalty of
+      <strong>₹50 crores</strong> has been demanded from U Ltd.
+    </p>
+
+    <p>
+      The legal counsel of the company has assessed the demand and opined that
+      appeals may not be useful, and the appeal orders will be unfavourable to
+      the joint arrangement. Out of <strong>₹50 crores</strong> (to be paid by
+      U Ltd.), <strong>₹30 crores</strong> will be reimbursed by F Ltd. later,
+      as per the terms of the Joint Operation Agreement. At the year end,
+      actual reimbursement was not received from F Ltd.
+    </p>
+
+    <p>
+      <strong>(ii)</strong> On <strong>1st April 20X2</strong>, U Ltd. leased a
+      machine from D Ltd. on a three-year lease. The expected future economic
+      life of the machine on 1st April 20X2 was eight years. If the machine
+      breaks down, then under the terms of the lease, D Ltd. would be required
+      to repair the machine or provide a replacement.
+    </p>
+
+    <p>
+      D Ltd. agreed to allow U Ltd. to use the machine for the first six months
+      of the lease without the payment of any rental as an incentive to U Ltd.
+      to sign the lease agreement. After this initial period, lease rentals of
+      <strong>₹2,10,000</strong> were payable six-monthly in arrears, the first
+      payment falling due on <strong>31st March 20X3</strong>.
+    </p>
+
+    <p>
+      <strong>(iii)</strong> U Ltd. has issued
+      <strong>10,00,000, 9% cumulative preference shares</strong>. The Company
+      has arrears of <strong>₹15 crores</strong> of preference dividend as on
+      <strong>31st March 20X3</strong>, including current year arrears of
+      <strong>₹1.75 crores</strong>. The Company did not declare any dividend
+      for equity shareholders as well as for preference shareholders.
+    </p>
+
+    <p>
+      Further, U Ltd. has also issued certain optionally convertible debentures,
+      which are outstanding as at the year end.
+    </p>
+
+    <p>
+      <strong>(iv)</strong> On <strong>1st January 20X3</strong>, U Ltd.
+      acquired <strong>30%</strong> of the shares of T Ltd. The investment was
+      accounted for as an associate in U Ltd.'s consolidated financial
+      statements. Both U Ltd. and T Ltd. have an accounting year end of
+      <strong>31st March 20X3</strong>. U Ltd. has no other investments in
+      associates.
+    </p>
+
+    <p>
+      Net profit for the year in T Ltd.'s income statement for the year ended
+      <strong>31st March 20X3</strong> was <strong>₹0.23 crores</strong>. It
+      declared and paid dividend of <strong>₹0.10 crore</strong> on
+      <strong>1st March 20X3</strong>. No other dividends were paid in the
+      year.
+    </p>
+
+    <p>
+      <strong>(v)</strong> On <strong>1st January 20X3</strong>, U Ltd. also
+      acquired a <strong>60%</strong> stake in S Ltd. The cash consideration
+      payable was <strong>₹1 crore</strong> to be paid immediately, and
+      <strong>₹1.21 crores</strong> after two years. The fair value of net
+      assets of S Ltd. at acquisition date was
+      <strong>₹3 crores</strong>. U Ltd. has calculated that its cost of
+      capital is <strong>10%</strong>. Non-controlling interest is measured at
+      the proportionate share of identifiable net assets.
+    </p>
+
+    <p><strong>
+      Analyze the transactions mentioned above and choose the most appropriate
+      option in the below questions in line with relevant Ind AS.
+    </strong></p>
+  `,
+
+  questions: [
+    {
+      question_id: "FR_MTPMAR24I_CS1_1",
+      chapter_name: ["Ind AS 37", "Ind AS 111"],
+      question:
+        "With respect to a joint operation engaged in the business of mining precious metals, how will the liability be disclosed in the books of U Ltd.?",
+      options: [
+        "Provision for ₹20 crores and a contingent liability for ₹30 crores.",
+        "Contingent liability for ₹50 crores.",
+        "Provision for ₹30 crores and a contingent liability for ₹20 crores.",
+        "Provision for ₹50 crores."
+      ],
+      answer: 3,
+      solution:
+        "The legal obligation exists and an outflow of resources is probable. Accordingly, U Ltd. recognizes a provision for the entire obligation of ₹50 crores. The reimbursement receivable from F Ltd. is recognized separately as a reimbursement asset when it is virtually certain and does not reduce the provision. Therefore, the correct answer is Option (d)."
+    },
+
+    {
+      question_id: "FR_MTPMAR24I_CS1_2",
+      chapter_name: ["Ind AS 116"],
+      question:
+        "Calculate the current liability of leased machine from D Ltd. to be shown in the balance sheet as at 31st March 20X3.",
+      options: [
+        "₹70,000",
+        "₹1,40,000",
+        "₹3,50,000",
+        "₹4,20,000"
+      ],
+      answer: 0,
+      solution:
+        "The six months rent-free period is treated as a lease incentive and lease payments are straight-lined over the lease term. Accordingly, the current portion of the lease liability outstanding as at 31st March 20X3 is ₹70,000. Therefore, the correct answer is Option (a)."
+    },
+
+    {
+      question_id: "FR_MTPMAR24I_CS1_3",
+      chapter_name: ["Ind AS 33"],
+      question:
+        "What is the amount of preference dividend to be reduced from profit or loss for the year for calculating Basic Earnings Per Share?",
+      options: [
+        "₹15 crores",
+        "₹1.75 crores",
+        "₹13.25 crores",
+        "Nothing, as no dividend has been declared by the entity."
+      ],
+      answer: 1,
+      solution:
+        "For cumulative preference shares, the current year's preference dividend is deducted while computing Basic EPS irrespective of whether it has been declared. Therefore, ₹1.75 crores is deducted. The correct answer is Option (b)."
+    },
+
+    {
+      question_id: "FR_MTPMAR24I_CS1_4",
+      chapter_name: ["Ind AS 28", "Ind AS 7"],
+      question:
+        "What amount will be shown as an inflow in respect of earnings from the associate in the statement of cash flows of U Ltd. for the year ended 31st March 20X3?",
+      options: [
+        "₹0.020 crores",
+        "₹0.026 crores",
+        "₹0.030 crores",
+        "₹0.046 crores"
+      ],
+      answer: 2,
+      solution:
+        "Only dividends received from an associate are presented as cash inflows in the statement of cash flows. U Ltd.'s share of dividend equals 30% × ₹0.10 crore = ₹0.03 crore. Therefore, the correct answer is Option (c)."
+    },
+
+    {
+      question_id: "FR_MTPMAR24I_CS1_5",
+      chapter_name: ["Ind AS 103"],
+      question:
+        "Calculate the amount of goodwill / gain on bargain purchase arising upon acquisition of S Ltd.",
+      options: [
+        "₹1 crore gain on bargain purchase.",
+        "₹80 lakhs gain on bargain purchase.",
+        "₹20 lakhs goodwill.",
+        "₹41 lakhs goodwill."
+      ],
+      answer: 2,
+      solution:
+        "The deferred consideration is discounted to present value using the 10% cost of capital. Total consideration equals ₹2 crores (₹1 crore immediate + present value of ₹1.21 crores payable after two years = ₹1 crore). NCI is measured at proportionate share (40% × ₹3 crores = ₹1.2 crores). Goodwill = ₹2 crores + ₹1.2 crores − ₹3 crores = ₹0.2 crore (₹20 lakhs). Therefore, the correct answer is Option (c)."
+    }
+  ]
+},
+
+{
+  case_id: "FR_MTPMAR24I_CS2",
+  case_chapter: ["Ind AS 101", "Ind AS 115", "Ind AS 110"],
+  caseText: `
+    <p>
+      G Ltd. is a multi-national company and prepares and presents its financial
+      statements following Indian Accounting Standards as its securities are
+      listed on National Stock Exchange. G Ltd. has a number of business
+      segments.
+    </p>
+
+    <p>
+      <strong>(i)</strong> H Ltd. is one of the recently acquired Indian
+      subsidiary of G Ltd. It has to adopt Ind AS for the first time as at
+      <strong>31st March, 20X4</strong>, with
+      <strong>1st April, 20X2</strong> as the date of transition. As at
+      <strong>31st March, 20X2</strong>, the value of raw material inventories
+      was incorrectly reported due to an error. The amounts are significant.
+    </p>
+
+    <p>
+      <strong>(ii)</strong> G Ltd. is also engaged in software development. It
+      enters into a contract with a customer to transfer a software license,
+      perform an installation service and provide unspecified software updates
+      and technical support (online and telephone) for a two-year period.
+      G Ltd. sells the license, installation service and technical support
+      separately. The installation service includes changing the web screen for
+      each type of user (for example, marketing, inventory management and
+      information technology). The installation service is routinely performed
+      by other entities and does not significantly modify the software. The
+      software remains functional without the updates and the technical support.
+    </p>
+
+    <p>
+      <strong>(iii)</strong> G Ltd. sells a <strong>20%</strong> interest in a
+      wholly owned subsidiary K Ltd. to outside investors for
+      <strong>₹100 lakh</strong> in cash. The carrying value of K Ltd.'s net
+      assets is <strong>₹300 lakh</strong>, including goodwill of
+      <strong>₹65 lakh</strong> from the subsidiary's initial acquisition.
+    </p>
+
+    <p><strong>
+      Analyze the transactions mentioned above and choose the most appropriate
+      option in the below questions in line with relevant Ind AS.
+    </strong></p>
+  `,
+
+  questions: [
+    {
+      question_id: "FR_MTPMAR24I_CS2_1",
+      chapter_name: ["Ind AS 101"],
+      question:
+        "With respect to H Ltd. state whether the error should be reported in the Ind AS financial statements and how to rectify it.",
+      options: [
+        "H Ltd. shall report the impact of the error as a correction to Statement of Profit and Loss for the comparative period i.e., the year ended 31st March, 20X3.",
+        "The correction shall be reflected in a reconciliation as at the end of the first Ind AS reporting period i.e., as at 31st March, 20X3.",
+        "The impact of the correction is significant and it shall be amortized on a rational and systematic basis in the first two periods of Ind AS reporting i.e., years ended 31st March, 20X3 and 31st March, 20X4.",
+        "The first Ind AS financial statements shall distinguish the correction of errors from changes in accounting policies and reported as part of the reconciliations as at 1st April, 20X2."
+      ],
+      answer: 3,
+      solution:
+        "As per Ind AS 101, the first Ind AS financial statements shall distinguish the correction of errors from changes in accounting policies and report them as part of the reconciliations as at the date of transition (1st April, 20X2). Therefore, the correct answer is Option (d)."
+    },
+
+    {
+      question_id: "FR_MTPMAR24I_CS2_2",
+      chapter_name: ["Ind AS 115"],
+      question:
+        "How many performance obligations G Ltd. has, with respect to the contract with the customer to transfer software license?",
+      options: [
+        "4 performance obligations",
+        "3 performance obligations",
+        "2 performance obligations",
+        "1 performance obligation"
+      ],
+      answer: 0,
+      solution:
+        "The contract contains four distinct performance obligations: (i) software licence, (ii) installation service, (iii) software updates and (iv) technical support. Therefore, the correct answer is Option (a)."
+    },
+
+    {
+      question_id: "FR_MTPMAR24I_CS2_3",
+      chapter_name: ["Ind AS 110"],
+      question:
+        "What is the amount of gain on sale of interest in subsidiary K Ltd.?",
+      options: [
+        "₹100 lakhs",
+        "₹60 lakhs",
+        "₹53 lakhs",
+        "₹40 lakhs"
+      ],
+      answer: 3,
+      solution:
+        "Since control is retained, the transaction is accounted for as an equity transaction under Ind AS 110. The carrying amount of the 20% interest transferred is ₹60 lakhs (20% × ₹300 lakhs). Gain recognised in equity = Consideration ₹100 lakhs − Carrying amount ₹60 lakhs = ₹40 lakhs. Therefore, the correct answer is Option (d)."
+    }
+  ]
+},
+
+{
+  case_id: "FR_MTPMAR24I_CS3",
+  case_chapter: ["Ind AS 7", "Ind AS 34", "Ind AS 16", "Ind AS 12", "Ind AS 32"],
+  caseText: `
+    <p>
+      A Ltd. is a diversified business group operating in multiple business
+      segments across different parts of the world. It maintains its books of
+      accounts and publishes its annual consolidated financial statements under
+      Indian Accounting Standards.
+    </p>
+
+    <p>
+      The central finance team has been working on closing the books of accounts
+      and generating consolidated financial statements for the year ended on
+      <strong>31st March 20X3</strong>. You are the Finance Controller and your
+      assistants want your views on following transactions for finalization of
+      financial statements:
+    </p>
+
+    <p>
+      <strong>(i)</strong> B Ltd., one of the subsidiaries of A Ltd., reported
+      net income of <strong>₹25 lakhs</strong>, which equals the company's
+      comprehensive income. The company has no outstanding debt. Following is
+      the information from the comprehensive balance sheet
+      (<strong>₹ in lakhs</strong>) related to cash flows:
+    </p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Extract of Balance Sheet</th>
+          <th>31.03.20X2</th>
+          <th>31.03.20X3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Equity share capital</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Further issue of equity shares</td>
+          <td>100</td>
+          <td>140</td>
+        </tr>
+        <tr>
+          <td>Retained earnings</td>
+          <td>100</td>
+          <td>115</td>
+        </tr>
+        <tr>
+          <td><strong>Total shareholders' equity</strong></td>
+          <td><strong>300</strong></td>
+          <td><strong>357</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      <strong>(ii)</strong> A Limited also operates in the travel industry and
+      incurs costs unevenly through the financial year. Advertising costs of
+      <strong>₹40 lakhs</strong> were incurred on
+      <strong>1st July 20X2</strong>, and staff bonuses are paid at year-end
+      based on sales. Staff bonuses are expected to be around
+      <strong>₹400 lakhs</strong> for the year; of that a sum of
+      <strong>₹60 lakhs</strong> would relate to the period ending
+      <strong>30th September 20X2</strong>.
+    </p>
+
+    <p>
+      <strong>(iii)</strong> An item of equipment X was acquired by A Ltd. on
+      <strong>1st April 20X1</strong> for <strong>₹1,00,000</strong> having an
+      estimated useful life of <strong>10 years</strong>, with a residual value
+      of zero. The asset is depreciated on a straight-line basis. The asset was
+      revalued to <strong>₹1,04,000</strong> on
+      <strong>31st March 20X3</strong>.
+    </p>
+
+    <p>
+      <strong>(iv)</strong> A Ltd. has spent <strong>₹15,00,000</strong> in
+      developing a new product during the year ended
+      <strong>31st March, 20X3</strong>. The development costs incurred were
+      recognised as an intangible asset as per Ind AS 38. For the purposes of
+      computing the taxable income, these expenses are allowable in full in the
+      year of incurring the expenses. At the year end, the Company recognised
+      an impairment loss of <strong>₹75,000</strong> against the intangible
+      asset.
+    </p>
+
+    <p>
+      <strong>(v)</strong> The company has issued preference shares that are
+      redeemable at the option of the holder. Three months before the end of
+      the year, it was probable that the holders would require redemption.
+    </p>
+
+    <p><strong>
+      Analyze the transactions mentioned above and choose the most appropriate
+      option in the below questions in line with relevant Ind AS.
+    </strong></p>
+  `,
+
+  questions: [
+    {
+      question_id: "FR_MTPMAR24I_CS3_1",
+      chapter_name: ["Ind AS 7"],
+      question:
+        "What cashflow should B Ltd. report, as financing activity in the statement of cash flows?",
+      options: [
+        "Issuance of equity shares ₹240 million; dividends paid ₹10 million",
+        "Issuance of equity shares ₹100 million; dividends paid ₹10 million",
+        "Issuance of equity shares ₹140 million; dividends paid ₹10 million",
+        "Issuance of equity shares ₹40 million; dividends paid ₹10 million"
+      ],
+      answer: 3,
+      solution:
+        "The further issue of equity shares during the year is ₹40 lakhs (₹140 lakhs − ₹100 lakhs). Dividends paid amount to ₹10 lakhs. Therefore, financing cash flows include issuance of equity shares of ₹40 lakhs and dividends paid of ₹10 lakhs. Hence, the correct answer is Option (d)."
+    },
+
+    {
+      question_id: "FR_MTPMAR24I_CS3_2",
+      chapter_name: ["Ind AS 34"],
+      question:
+        "With respect to point (ii), what costs should be included in the entity's financial report for the quarter ended 30th September 20X3?",
+      options: [
+        "Advertising costs ₹40 lacs; staff bonuses ₹100 lacs",
+        "Advertising costs ₹10 lacs; staff bonuses ₹100 lacs",
+        "Advertising costs ₹10 lacs: staff bonuses ₹60 lacs",
+        "Advertising costs ₹40 lacs; staff bonuses ₹60 lacs"
+      ],
+      answer: 3,
+      solution:
+        "Advertising costs are recognised when incurred and are not spread over interim periods. Staff bonuses are accrued based on the period to which they relate. Accordingly, advertising costs of ₹40 lakhs and staff bonuses of ₹60 lakhs are recognised. Therefore, the correct answer is Option (d)."
+    },
+
+    {
+      question_id: "FR_MTPMAR24I_CS3_3",
+      chapter_name: ["Ind AS 16"],
+      question:
+        "What will be the annual depreciation charge on equipment X for years 3 to 10 and the amount of the revaluation surplus that can be transferred to retained earnings annually?",
+      options: [
+        "Annual depreciation charge will be ₹10,000 and an annual transfer of ₹3,000 can be made from revaluation surplus to retained earnings.",
+        "Annual depreciation charge will be ₹10,000, however, annual transfer from revaluation surplus to retained earnings is not permitted.",
+        "Annual depreciation charge will be ₹13,000 and an annual transfer of ₹3,000 may be made from revaluation surplus to retained earnings.",
+        "Annual depreciation charge will be ₹13,000, however, annual transfer from revaluation surplus to retained earnings is not permitted."
+      ],
+      answer: 2,
+      solution:
+        "After revaluation, the depreciable amount is based on the revalued carrying amount. Annual depreciation for the remaining useful life is ₹13,000 and the excess depreciation of ₹3,000 may be transferred annually from revaluation surplus to retained earnings. Therefore, the correct answer is Option (c)."
+    },
+
+    {
+      question_id: "FR_MTPMAR24I_CS3_4",
+      chapter_name: ["Ind AS 12"],
+      question:
+        "With respect to point (iii), What is the tax base of the intangible asset?",
+      options: [
+        "₹15,00,000",
+        "₹75,000",
+        "₹14,25,000",
+        "₹0"
+      ],
+      answer: 3,
+      solution:
+        "Since the development expenditure has already been fully deducted for tax purposes in the year incurred, no future tax deduction will be available. Hence, the tax base of the intangible asset is Nil. Therefore, the correct answer is Option (d)."
+    },
+
+    {
+      question_id: "FR_MTPMAR24I_CS3_5",
+      chapter_name: ["Ind AS 32"],
+      question:
+        "Which one of the following is the appropriate classification for the annual payment of ₹12,000 to preference shareholders at year-end?",
+      options: [
+        "Dividend ₹12,000",
+        "Interest expense ₹12,000",
+        "Dividend ₹3,000, interest expense ₹9,000",
+        "Dividend ₹9,000, interest expense ₹3,000"
+      ],
+      answer: 1,
+      solution:
+        "Preference shares redeemable at the option of the holder are classified as financial liabilities under Ind AS 32. Accordingly, payments made on such instruments are recognised as finance costs (interest expense) rather than dividends. Therefore, the correct answer is Option (b)."
+    }
+  ]
+}
 ];

@@ -225,3 +225,74 @@ MOBILE
         width:100%;
     }
 }
+/* =========================
+SEO & USER CONTENT BLOCK
+========================= */
+.seo-content-block {
+    max-width: 980px;
+    margin: 60px auto 40px auto;
+    padding: 35px 40px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 22px;
+    color: #cbd5e1;
+    line-height: 1.7;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.seo-content-block h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.seo-content-block h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #60a5fa; /* Blue accent to match buttons */
+    margin: 25px 0 15px 0;
+}
+
+.seo-content-block p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.seo-content-block ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.seo-content-block li {
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.seo-content-block li strong {
+    color: #e2e8f0;
+}
+
+/* Mobile Adjustments for SEO Block */
+@media(max-width: 768px) {
+    .seo-content-block {
+        padding: 25px 20px;
+        margin-top: 40px;
+    }
+    
+    .seo-content-block h2 {
+        font-size: 20px;
+    }
+    
+    .seo-content-block h3 {
+        font-size: 16px;
+    }
+    
+    .seo-content-block p, 
+    .seo-content-block li {
+        font-size: 14px;
+    }
+}
