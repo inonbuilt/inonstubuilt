@@ -1703,5 +1703,1433 @@ const descriptiveQuestions = [
     <p>Since Certainty-Equivalent (C.E.) Co-efficient of <strong>Project M (2.0)</strong> is lower than <strong>Project N (2.4)</strong>, Project M is riskier than Project N and as "higher the riskiness of a cash flow, the lower will be the CE factor". Thus, if Risk Adjusted Discount Rate (RADR) method is used, <strong>Project M would be analysed with a higher discount rate.</strong></p>
   `
 },
+{
+  question_id: "AFM_MTPAPR24II_Q1A",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Derivatives Analysis and Valuation",
+  placement: 1,
+  marks: 6,
+  question_html: `
+    <p><strong>(a)</strong> You as an investor had purchased a 4-month call option on the equity shares of ABC Ltd. of ₹ 10, of which the current market price is ₹ 660 per share and the exercise price ₹ 750. You expect the price to range between ₹ 600 to ₹ 950. The expected share price of ABC Ltd. and related probability is given below:</p>
+    
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
+        <tbody>
+          <tr>
+            <th style="text-align: left;">Expected Price (₹)</th>
+            <td>600</td>
+            <td>700</td>
+            <td>800</td>
+            <td>900</td>
+            <td>950</td>
+          </tr>
+          <tr>
+            <th style="text-align: left;">Probability</th>
+            <td>0.05</td>
+            <td>0.20</td>
+            <td>0.50</td>
+            <td>0.10</td>
+            <td>0.15</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p>Evaluate the following:</p>
+    <ol type="i">
+      <li>Expected Share price at the end of 4 months.</li>
+      <li>Value of Call Option at the end of 4 months if the exercise price prevails.</li>
+      <li>In case the option is held to its maturity, estimate expected value of the call option?</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    <ol type="i">
+      <li><strong>Expected Share Price</strong><br>
+      = ₹ 600 &times; 0.05 + ₹ 700 &times; 0.20 + ₹ 800 &times; 0.50 + ₹ 900 &times; 0.10 + ₹ 950 &times; 0.15<br>
+      = ₹ 30 + ₹ 140 + ₹ 400 + ₹ 90 + ₹ 142.50 = <strong>₹ 802.50</strong></li>
+      <br>
+      
+      <li><strong>Value of Call Option</strong><br>
+      = ₹ 750 - ₹ 750 = <strong>Nil</strong></li>
+      <br>
+      
+      <li><strong>If the option is held till maturity the expected Value of Call Option:</strong><br><br>
+      <div style="overflow-x:auto;">
+        <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
+          <thead>
+            <tr>
+              <th>Expected price (X)</th>
+              <th>Value of call (C)</th>
+              <th>Probability (P)</th>
+              <th>CP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>₹ 600</td>
+              <td>0</td>
+              <td>0.05</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>₹ 700</td>
+              <td>0</td>
+              <td>0.20</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>₹ 800</td>
+              <td>₹ 50</td>
+              <td>0.50</td>
+              <td>₹ 25</td>
+            </tr>
+            <tr>
+              <td>₹ 900</td>
+              <td>₹ 150</td>
+              <td>0.10</td>
+              <td>₹ 15</td>
+            </tr>
+            <tr>
+              <td>₹ 950</td>
+              <td>₹ 200</td>
+              <td>0.15</td>
+              <td>₹ 30</td>
+            </tr>
+            <tr style="font-weight: bold;">
+              <td colspan="3" style="text-align:right; padding-right: 15px;">Total</td>
+              <td>₹ 70</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+      <p><em>* If the stock price goes below ₹ 750, option is not exercised at all.</em></p>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPAPR24II_Q1B",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Security Valuation",
+  placement: 1,
+  marks: 4,
+  question_html: `
+    <p><strong>(b)</strong> Share of Beta Ltd. is being quoted at a Price-Earning ratio of 10 times. In the coming year the company is expected to retain ₹ 10 per share which is 45% of its Earning Per Share.</p>
+    <p>You are required to evaluate:</p>
+    <ol type="i">
+      <li>The cost of equity to the company if the market expects a growth rate of 10% p.a.</li>
+      <li>If the anticipated growth rate is 12% per annum, calculate the indicative market price with the same cost of capital.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    <ol type="i">
+      <li><strong>Cost of equity capital</strong><br>
+      <div style="overflow-x:auto;">
+        <table border="0" cellpadding="4" cellspacing="0" style="width: 100%; max-width: 400px;">
+          <tbody>
+            <tr>
+              <td>Retained earnings (45%)</td>
+              <td>₹ 10.00 per share</td>
+            </tr>
+            <tr>
+              <td>Dividend (55%)</td>
+              <td>₹ 12.22 per share</td>
+            </tr>
+            <tr>
+              <td>EPS (100%)</td>
+              <td>₹ 22.22 per share</td>
+            </tr>
+            <tr>
+              <td>P/E Ratio</td>
+              <td>10 times</td>
+            </tr>
+            <tr>
+              <td>Market price</td>
+              <td>₹ 22.22 &times; 10 = <strong>₹ 222.20</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+      <p>Cost of equity capital<br>
+      = [ (Dividend / Price) &times; 100 ] + Growth %<br>
+      = [ (12.22 / 222.20) &times; 100 ] + 10% = <strong>15.50%</strong></p>
+      </li>
+      <br>
+      
+      <li><strong>Indicative market price with the same cost of capital</strong><br>
+      <p>Market Price = Dividend / [Cost of Capital (%) - Growth Rate (%)]<br>
+      = ₹ 12.22 / (15.50% - 12.00%)<br>
+      = ₹ 12.22 / 3.50% = <strong>₹ 349.14 per share</strong></p>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPAPR24II_Q2A",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Foreign Exchange Exposure and Risk Management",
+  placement: 1,
+  marks: 6,
+  question_html: `
+    <p><strong>(a)</strong> On January 28, 2023, an importer customer requested a Bank to remit Singapore Dollar (SGD) 2,500,000 under an irrevocable Letter of Credit (LC). However, due to unavoidable factors, the Bank could affect the remittances only on February 4, 2023. The inter-bank market rates were as follows:</p>
+    
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: left;">
+        <thead>
+          <tr>
+            <th>Currency Pair</th>
+            <th>January 28, 2023</th>
+            <th>February 4, 2023</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>US$ 1 =</td>
+            <td>₹ 80.91 / 80.97</td>
+            <td>₹ 80.85 / 80.90</td>
+          </tr>
+          <tr>
+            <td>GBP &pound; 1 =</td>
+            <td>US$ 1.7765 / 1.7775</td>
+            <td>US$ 1.7840 / 1.7850</td>
+          </tr>
+          <tr>
+            <td>GBP &pound; 1 =</td>
+            <td>SGD 2.1380 / 2.1390</td>
+            <td>SGD 2.1575 / 2.1590</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p>The Bank wishes to retain an exchange margin of 0.125% on ₹ / SGD.</p>
+    <p><strong>Required:</strong><br>
+    Estimate how much does the customer stand to gain or lose due to the delay?</p>
+    <p><em>(Note: Calculate the rate in multiples of 0.0001)</em></p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    <p>On January 28, 2023, the importer customer requested to remit SGD 25 lakhs.</p>
+    <p><strong>To consider sell rate for the bank (January 28, 2023):</strong></p>
+    <ul>
+      <li>US$ 1 = ₹ 80.97</li>
+      <li>Pound &pound; 1 = US$ 1.7775</li>
+      <li>Pound &pound; 1 = SGD 2.1380</li>
+    </ul>
+    <p>Therefore, SGD 1 = (₹ 80.97 &times; 1.7775) / SGD 2.1380</p>
+    <p>SGD 1 = ₹ 67.3172<br>
+    Add: Exchange margin (0.125%) = ₹ 0.0841<br>
+    <strong>Total Rate on Jan 28 = ₹ 67.4013</strong></p>
+    <br>
+    <p><strong>On February 4, 2023 the rates are:</strong></p>
+    <ul>
+      <li>US$ 1 = ₹ 80.90</li>
+      <li>Pound &pound; 1 = US$ 1.7850</li>
+      <li>Pound &pound; 1 = SGD 2.1575</li>
+    </ul>
+    <p>Therefore, SGD 1 = (₹ 80.90 &times; 1.7850) / SGD 2.1575</p>
+    <p>SGD 1 = ₹ 66.9323<br>
+    Add: Exchange margin (0.125%) = ₹ 0.0837<br>
+    <strong>Total Rate on Feb 4 = ₹ 67.0160</strong></p>
+    <br>
+    <p><strong>Hence, Gain to the importer:</strong><br>
+    = SGD 25,00,000 &times; (₹ 67.4013 &ndash; ₹ 67.0160)<br>
+    = SGD 25,00,000 &times; 0.3853<br>
+    = <strong>₹ 9,63,250</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPAPR24II_Q2B",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Interest Rate Risk Management",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p><strong>(b)</strong> Bank A enter into a Repo for 14 days with Bank B in 10% Government of India Bonds 2028 @ 5.65% for ₹ 8 crore. Assuming that clean price (the price that does not have accrued interest) be ₹ 99.42 and initial Margin be 3% and days of accrued interest be 272 days.</p>
+    <p>You are required to calculate:</p>
+    <ol type="i">
+      <li>Dirty Price</li>
+      <li>Approximate Repayment amount at maturity.</li>
+    </ol>
+    <p><em>Note: (1) Consider 360 days in a year. (2) Round off calculations upto 2 decimals points.</em></p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    <ol type="i">
+      <li><strong>Dirty Price</strong><br>
+      = Clean Price + Interest Accrued<br>
+      = 99.42 + [100 &times; (10 / 100) &times; (272 / 360)]<br>
+      = 99.42 + 7.5555...<br>
+      = <strong>106.98</strong></li>
+      <br>
+      
+      <li><strong>Approximate Repayment amount at maturity</strong><br>
+      <p><u>First Leg (Start Proceed)</u><br>
+      = Nominal Value &times; (Dirty Price / 100) &times; [(100 - Initial Margin) / 100]<br>
+      = ₹ 8,00,00,000 &times; (106.98 / 100) &times; [(100 - 3) / 100]<br>
+      = ₹ 8,00,00,000 &times; 1.0698 &times; 0.97<br>
+      = <strong>₹ 8,30,16,480</strong></p>
+      
+      <p><u>Second Leg (Repayment at Maturity)</u><br>
+      = Start Proceed &times; [1 + (Repo rate &times; No. of days / 360)]<br>
+      = ₹ 8,30,16,480 &times; [1 + (0.0565 &times; 14 / 360)]<br>
+      = <strong>₹ 8,31,98,885.65 (Approx.)</strong></p>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPAPR24II_Q2C",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Foreign Exchange Exposure and Risk Management",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p><strong>(c)</strong> What are the parameters to identify currency risk? List out the ways to minimize such risk.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    <p><strong>Some of the parameters to identify the currency risk are as follows:</strong></p>
+    <ol type="i">
+      <li><strong>Government Action:</strong> The Government action of any country has visual impact in its currency. For example, the UK Govt. decision to divorce from European Union i.e. Brexit brought the pound to its lowest since 1980’s.</li>
+      <li><strong>Nominal Interest Rate:</strong> As per interest rate parity (IRP) the currency exchange rate depends on the nominal interest of that country.</li>
+      <li><strong>Inflation Rate:</strong> Purchasing power parity theory discussed in later chapters impact the value of currency.</li>
+      <li><strong>Natural Calamities:</strong> Any natural calamity can have negative impact.</li>
+      <li><strong>War, Coup, Rebellion etc.:</strong> All these actions can have far reaching impact on currency’s exchange rates.</li>
+      <li><strong>Change of Government:</strong> The change of government and its attitude towards foreign investment also helps to identify the currency risk.</li>
+    </ol>
+    <br>
+    <p><strong>Ways to minimize such risk are:</strong></p>
+    <ol>
+      <li>Money Market Hedging.</li>
+      <li>Currency Options.</li>
+      <li>Forward Contract.</li>
+      <li>Make Invoice in Home Currency.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPAPR24II_Q1C",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Financial Policy and Corporate Strategy",
+  placement: 1,
+  marks: 4,
+  question_html: `
+    <p><strong>(c)</strong> Why is there a need for succession planning in business? Explain.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    <p>Need for succession planning in business is explained below:</p>
+    <ul>
+      <li><strong>Risk mitigation</strong> &ndash; If existing leader quits, then searches can take six-nine months for suitable candidate to close. Keeping an organization without leader can invite disruption, uncertainty, conflict and endangers future competitiveness.</li>
+      <li><strong>Cause removal</strong> &ndash; If the existing leader is culpable of gross negligence, fraud, willful misconduct, or material breach while discharging duties and has been barred from undertaking further activities by court, arbitral tribunal, management, stakeholders or any other agency.</li>
+      <li><strong>Talent pipeline</strong> &ndash; Succession planning keep employees motivated and determined as it can help them obtaining more visibility around career paths expected, which would help in retaining the knowledge bank created by company over a period of time and leverage upon the same.</li>
+      <li><strong>Conflict Resolution Mechanism</strong> &ndash; This planning is very helpful in promoting open and transparent communication and settlement of conflicts.</li>
+      <li><strong>Aligning</strong> &ndash; In family owned business succession planning helps to align with the culture, vision, direction and values of the business.</li>
+    </ul>
+  `
+},
+{
+  question_id: "AFM_MTPAPR24II_Q3C",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Startup Finance / Mutual Funds",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p><strong>(c) Either</strong><br>
+    Briefly explain Blockchain transaction. List the risks associated with Blockchain.</p>
+    <p style="text-align: center; font-weight: bold;">Or</p>
+    <p><strong>(c) Or</strong><br>
+    Explain briefly the financial measures that help in evaluation of performance of any Mutual Fund.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    
+    <p><u><strong>Either</strong></u></p>
+    <p>Blockchain, sometimes referred to as Distributed Ledger Technology (DLT) is a shared, peer-to-peer, and decentralized open ledger of transactions system with no trusted third parties in between. This ledger database has every entry as permanent as it is an append-only database which cannot be changed or altered. All transactions are fully irreversible with any change in the transaction being recorded as a new transaction.</p>
+    <p><strong>Some of the risk associated with the use blockchain technology are as follows:</strong></p>
+    <ol type="i">
+      <li>With the use of blockchain, organizations need to consider risks with a wider perspective as different members of a particular blockchain may have different risk appetite/risk tolerances that may further lead to conflict when monitoring controls are designed for a blockchain. There may be questions about who is responsible for managing risks if no one party is in-charge, and how proper accountability is to be achieved in a blockchain.</li>
+      <li>The reliability of financial transactions is dependent on the underlying technology and if this underlying consensus mechanism has been tampered with, it could render the financial information stored in the ledger to be inaccurate and unreliable.</li>
+      <li>In the absence of any central authority to administer and enforce protocol amendments, there could be a challenge in the development and maintenance of process control activities and in such case, users of public blockchains find difficult to obtain an understanding of the general IT controls implemented and the effectiveness of these controls.</li>
+      <li>As blockchain involves humongous data getting updated frequently, risk related to information overload could potentially challenge the level of monitoring required. Furthermore, to find competent people to design and perform effective monitoring controls may again prove to be difficult.</li>
+    </ol>
+    
+    <hr style="margin: 20px 0;">
+    
+    <p><u><strong>OR</strong></u></p>
+    <p><strong>Financial Measures: -</strong> There are some financial measures that help in evaluation of performance of any Mutual Fund which are as follows:</p>
+    <ol type="a">
+      <li><strong>Expense Ratio:</strong> Discussed in earlier section, it ultimately impacts the return of a Mutual Fund Scheme.</li>
+      <li><strong>Sharpe Ratio:</strong> As discussed in the chapter on Portfolio Management, this ratio measures the Mutual Fund’s performance measured against the total risk (both systematic and unsystematic) taken.</li>
+      <li><strong>Treynor Ratio:</strong> As discussed in the chapter on Portfolio Management, beta measures the volatility of return of a security vis-&agrave;-vis to the market, in mutual funds the Beta of a mutual fund measures volatility of a fund’s return to return from its Benchmark. Treynor Ratio measures performance of a mutual fund against the systematic risk it has taken.</li>
+      <li><strong>Sortino Ratio:</strong> A variation of Sharpe Ratio that considers and uses downside deviation instead of total standard deviation in denominator.</li>
+    </ol>
+  `
+},
+
+{
+  question_id: "AFM_MTPAPR24II_Q3B",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Portfolio Management",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p><strong>(b)</strong> An investor has two portfolios known to be on minimum variance set for a population of three securities X, Y and Z having below mentioned weights:</p>
+    
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
+        <thead>
+          <tr>
+            <th>Portfolio</th>
+            <th>W<sub>X</sub></th>
+            <th>W<sub>Y</sub></th>
+            <th>W<sub>Z</sub></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left;">Portfolio A</td>
+            <td>0.30</td>
+            <td>0.40</td>
+            <td>0.30</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Portfolio B</td>
+            <td>0.20</td>
+            <td>0.50</td>
+            <td>0.30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p>Calculate the weight for each stock for a portfolio constructed by investing ₹ 10,00,000 in portfolio A and ₹ 6,00,000 in portfolio B.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    <p>Investment committed to each security would be:</p>
+    
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: right;">
+        <thead>
+          <tr>
+            <th style="text-align: left;">Particulars</th>
+            <th style="text-align: center;">X (₹)</th>
+            <th style="text-align: center;">Y (₹)</th>
+            <th style="text-align: center;">Z (₹)</th>
+            <th style="text-align: center;">Total (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left;">Portfolio A (₹ 10L)</td>
+            <td>3,00,000</td>
+            <td>4,00,000</td>
+            <td>3,00,000</td>
+            <td>10,00,000</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Portfolio B (₹ 6L)</td>
+            <td>1,20,000</td>
+            <td>3,00,000</td>
+            <td>1,80,000</td>
+            <td>6,00,000</td>
+          </tr>
+          <tr style="font-weight: bold;">
+            <td style="text-align: left;">Combined Portfolio</td>
+            <td>4,20,000</td>
+            <td>7,00,000</td>
+            <td>4,80,000</td>
+            <td>16,00,000</td>
+          </tr>
+          <tr>
+            <td style="text-align: left; font-weight: bold;">&therefore; Stock weights</td>
+            <td><strong>0.2625</strong><br>(Or 0.26)</td>
+            <td><strong>0.4375</strong><br>(Or 0.44)</td>
+            <td><strong>0.3000</strong><br>(Or 0.30)</td>
+            <td><strong>1.00</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  `
+},
+{
+  question_id: "AFM_MTPAPR24II_Q3A",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Portfolio Management",
+  placement: 1,
+  marks: 6,
+  question_html: `
+    <p><strong>(a)</strong> Suppose that economy A is growing rapidly, and you are managing a global equity fund and so far you have invested only in developed-country stocks only. Now you have decided to add stocks of economy A to your portfolio. The table below shows the expected rates of return, standard deviations, and correlation coefficients (all estimates are for aggregate stock market of developed countries and stock market of Economy A).</p>
+    
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
+        <thead>
+          <tr>
+            <th style="text-align: left;">Particulars</th>
+            <th>Developed Country Stocks</th>
+            <th>Stocks of Economy A</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left;">Expected rate of return (annualized percentage)</td>
+            <td>20</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Risk [Annualized Standard Deviation (%)]</td>
+            <td>16</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Correlation Coefficient (&rho;) between stock of two economies</td>
+            <td colspan="2">0.30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p>Assuming the risk-free interest rate to be 6%, you are required to determine:</p>
+    <ol type="i">
+      <li>What percentage of your portfolio should you allocate to stocks of Economy A if you want to increase the expected rate of return on your portfolio by 1%?</li>
+      <li>What will be the standard deviation of your portfolio assuming that stocks of Economy A are included in the portfolio as calculated above?</li>
+      <li>Also show how well the Fund will be compensated for the risk undertaken due to inclusion of stocks of Economy A in the portfolio?</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    <ol type="i">
+      <li><strong>Percentage allocation to stocks of Economy A:</strong><br>
+      Let the weight of stocks of Economy A be expressed as w, then:<br>
+      (1 - w) &times; 20% + w &times; 30% = 21%<br>
+      20 - 20w + 30w = 21<br>
+      10w = 1<br>
+      i.e. w = 0.1 or <strong>10%</strong>.</li>
+      <br>
+      
+      <li><strong>Standard deviation of the portfolio:</strong><br>
+      Variance of portfolio shall be:<br>
+      = (w<sub>1</sub>)<sup>2</sup>(&sigma;<sub>1</sub>)<sup>2</sup> + (w<sub>2</sub>)<sup>2</sup>(&sigma;<sub>2</sub>)<sup>2</sup> + 2(w<sub>1</sub>)(w<sub>2</sub>)(&sigma;<sub>1</sub>)(&sigma;<sub>2</sub>)(&rho;)<br>
+      = (0.9)<sup>2</sup>(0.16)<sup>2</sup> + (0.1)<sup>2</sup>(0.30)<sup>2</sup> + 2(0.9)(0.1)(0.16)(0.30)(0.30)<br>
+      = 0.020736 + 0.0009 + 0.002592 = <strong>0.02423</strong><br>
+      Standard deviation is (0.02423)<sup>1/2</sup> = 0.15565 or <strong>15.56%</strong>.</li>
+      <br>
+      
+      <li><strong>Compensation for risk undertaken (Sharpe Ratio):</strong><br>
+      <p>Sharpe Ratio = (Expected Return - Risk Free Rate of Return) / Standard Deviation</p>
+      <p><u>Investment in stock of developed countries only:</u><br>
+      = (20 &minus; 6) / 16 = <strong>0.875</strong></p>
+      <p><u>Investment with inclusion of stocks of Economy A:</u><br>
+      = (21 &minus; 6) / 15.56 = <strong>0.964</strong></p>
+      <p>The Sharpe ratio will improve by approximately <strong>0.09</strong>, showing better compensation for the risk undertaken.</p>
+      </li>
+    </ol>
+  `
+},
+
+{
+  question_id: "AFM_MTPAPR24II_Q4A",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Portfolio Management",
+  placement: 1,
+  marks: 6,
+  question_html: `
+    <p><strong>(a)</strong> Your client is holding the following securities:</p>
+    
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
+        <thead>
+          <tr>
+            <th style="text-align: left;">Particulars of Securities</th>
+            <th>Cost (₹)</th>
+            <th>Dividends / Interest (₹)</th>
+            <th>Market price at the end of holding period (₹)</th>
+            <th>Beta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left; font-weight: bold;" colspan="5">Equity Shares:</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">G Ltd.</td>
+            <td>20,000</td>
+            <td>1,450</td>
+            <td>19,600</td>
+            <td>0.6</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">S Ltd.</td>
+            <td>30,000</td>
+            <td>1,000</td>
+            <td>30,400</td>
+            <td>0.8</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">B Ltd.</td>
+            <td>28,000</td>
+            <td>1,400</td>
+            <td>32,000</td>
+            <td>0.6</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">GOI Bonds</td>
+            <td>72,000</td>
+            <td>5,060</td>
+            <td>71,980</td>
+            <td>0.01</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p>Evaluate:</p>
+    <ol type="i">
+      <li>Risk free rate of return.</li>
+      <li>Expected rate of return of each security (except GOI Bond), using the Capital Asset Pricing Model (CAPM).</li>
+    </ol>
+    <p><em>Note: (1) Use weighted average Beta in calculations. (2) Round off calculations upto 3 decimal points.</em></p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: right;">
+        <thead>
+          <tr>
+            <th style="text-align: left;">Particulars of Securities</th>
+            <th style="text-align: center;">Cost (₹)</th>
+            <th style="text-align: center;">Market Price (₹)</th>
+            <th style="text-align: center;">Capital gain (₹)</th>
+            <th style="text-align: center;">Dividend / Interest (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left;">G Ltd.</td>
+            <td>20,000</td>
+            <td>19,600</td>
+            <td>-400</td>
+            <td>1,450</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">S Ltd.</td>
+            <td>30,000</td>
+            <td>30,400</td>
+            <td>400</td>
+            <td>1,000</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">B Ltd.</td>
+            <td>28,000</td>
+            <td>32,000</td>
+            <td>4,000</td>
+            <td>1,400</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">GOI Bonds</td>
+            <td>72,000</td>
+            <td>71,980</td>
+            <td>-20</td>
+            <td>5,060</td>
+          </tr>
+          <tr style="font-weight: bold;">
+            <td style="text-align: left;">Total</td>
+            <td>1,50,000</td>
+            <td>1,53,980</td>
+            <td>3,980</td>
+            <td>8,910</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    
+    <ol type="i">
+      <li><strong>Risk free rate of return [Return on Govt. Security (GOI Bond)]</strong><br>
+      = [ 5,060 + (72,000 &ndash; 71,980) ] / 72,000<br>
+      = <strong>7%</strong></li>
+      <br>
+      
+      <li><strong>Expected rate of return of each security (CAPM)</strong><br>
+      <p><u>Weighted Average of Beta</u><br>
+      = [0.6 &times; (19,600 / 1,53,980)] + [0.8 &times; (30,400 / 1,53,980)] + [0.60 &times; (32,000 / 1,53,980)] + [0.01 &times; (71,980 / 1,53,980)]<br>
+      = 0.076 + 0.158 + 0.125 + 0.005 = <strong>0.364</strong></p>
+      
+      <p><u>Average Return on Portfolio</u><br>
+      = (8,910 + 3,980) / 1,50,000 &times; 100% = <strong>8.593%</strong></p>
+      
+      <p><u>Market Return</u><br>
+      8.593% = 7% + (Rm &ndash; 7%) &times; 0.364<br>
+      Rm = <strong>11.376%</strong></p>
+      
+      <p><u>Expected Rate of Return for each security (Rate of Return = Rf + &beta; (Rm &ndash; Rf))</u><br>
+      <strong>G Ltd.</strong> = 7.000% + 0.6 (11.376% &ndash; 7.000%) = <strong>9.626%</strong><br>
+      <strong>S Ltd.</strong> = 7.000% + 0.8 (11.376% &ndash; 7.000%) = <strong>10.501%</strong><br>
+      <strong>B Ltd.</strong> = 7.000% + 0.6 (11.376% &ndash; 7.000%) = <strong>9.626%</strong></p>
+      </li>
+    </ol>
+  `
+},
+
+{
+  question_id: "AFM_MTPAPR24II_Q4B",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Mutual Funds",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p><strong>(b)</strong> XYZ Plan, a hedge fund currently has assets of ₹ 40 crore. Mr. A, the manager of fund charges fee of 0.10% of portfolio asset. In addition to it he charges an incentive fee of 2%. The incentive will be linked to gross return each year in excess of the portfolio maximum value since the inception of fund. The maximum value the fund achieved so far since inception of fund about one and half year ago was ₹ 42 crores.</p>
+    <p>Evaluate:</p>
+    <ol type="i">
+      <li>Benchmark Return to make Mr. A eligible for incentive fee.</li>
+      <li>The fee payable to Mr. A if return on the fund this year turns out to be:
+        <ol type="1">
+          <li>29%</li>
+          <li>4.5%</li>
+        </ol>
+      </li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    <ol type="i">
+      <li><strong>Benchmark Return</strong><br>
+      = (42 crore - 40 crore) / 40 crore &times; 100%<br>
+      = <strong>5%</strong></li>
+      <br>
+      
+      <li><strong>Fee payable to Mr. A:</strong><br>
+      <p><strong>(1) If return is 29%</strong></p>
+      <div style="overflow-x:auto;">
+        <table border="0" cellpadding="4" cellspacing="0" style="width: 100%; max-width: 500px;">
+          <tbody>
+            <tr>
+              <td>Fixed fee (A) 0.10% of ₹ 40 crore</td>
+              <td style="text-align: right;">₹ 4,00,000</td>
+            </tr>
+            <tr>
+              <td>New Fund Value (1.29 &times; ₹ 40 crore)</td>
+              <td style="text-align: right;">₹ 51.60 crore</td>
+            </tr>
+            <tr>
+              <td>Excess Value of best achieved (51.60 crore &ndash; 42.00 crore)</td>
+              <td style="text-align: right;">₹ 9.60 crore</td>
+            </tr>
+            <tr>
+              <td>Incentive Fee (2% of 9.60 crores) (B)</td>
+              <td style="text-align: right;">₹ 19,20,000</td>
+            </tr>
+            <tr style="font-weight: bold;">
+              <td>Total Fee (A) + (B)</td>
+              <td style="text-align: right;">₹ 23,20,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+      
+      <p><strong>(2) If return is 4.5%</strong></p>
+      <div style="overflow-x:auto;">
+        <table border="0" cellpadding="4" cellspacing="0" style="width: 100%; max-width: 500px;">
+          <tbody>
+            <tr>
+              <td>Fixed (A) 0.10% of ₹ 40 crore</td>
+              <td style="text-align: right;">₹ 4,00,000</td>
+            </tr>
+            <tr>
+              <td>New Fund Value (1.045 &times; ₹ 40 crore)</td>
+              <td style="text-align: right;">₹ 41.80 crore</td>
+            </tr>
+            <tr>
+              <td>Excess Value of best achieved (41.80 crore &ndash; 42.00 crore)</td>
+              <td style="text-align: right;">(₹ 0.20 crore)</td>
+            </tr>
+            <tr>
+              <td>Incentive Fee (as does not exceed best achieved) (B)</td>
+              <td style="text-align: right;">Nil</td>
+            </tr>
+            <tr style="font-weight: bold;">
+              <td>Total Fee (A) + (B)</td>
+              <td style="text-align: right;">₹ 4,00,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </li>
+    </ol>
+  `
+},
+
+{
+  question_id: "AFM_MTPAPR24II_Q4C",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Financial Policy and Corporate Strategy",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p><strong>(c)</strong> What do you mean by Corporate Level Strategy. Also explain three basic questions Corporate Level Strategy should be able to answer.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    <p>Corporate level strategy fundamentally is concerned with selection of businesses in which a company should compete and with the development and coordination of that portfolio of businesses.</p>
+    <p><strong>Corporate level strategy should be able to answer three basic questions:</strong></p>
+    
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tbody>
+          <tr>
+            <td style="font-weight: bold; width: 20%;">Suitability</td>
+            <td>Whether the strategy would work for the accomplishment of common objective of the company.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; width: 20%;">Feasibility</td>
+            <td>Determines the kind and number of resources required to formulate and implement the strategy.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; width: 20%;">Acceptability</td>
+            <td>It is concerned with the stakeholders’ satisfaction and can be financial and non-financial.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  `
+},
+{
+  question_id: "AFM_MTPAPR24II_Q5A",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+  placement: 1,
+  marks: 6,
+  question_html: `
+    <p><strong>(a)</strong> T plc wants to acquire L plc. The balance sheet of L plc as on 31st March 2022 is as follows:</p>
+    
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <thead>
+          <tr>
+            <th style="text-align: left;">Liabilities</th>
+            <th style="text-align: right;">&pound;</th>
+            <th style="text-align: left;">Assets</th>
+            <th style="text-align: right;">&pound;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Equity Capital (35,00,000 shares)</td>
+            <td style="text-align: right;">35,00,000</td>
+            <td>Cash</td>
+            <td style="text-align: right;">2,50,000</td>
+          </tr>
+          <tr>
+            <td>Retained earnings</td>
+            <td style="text-align: right;">15,00,000</td>
+            <td>Debtors</td>
+            <td style="text-align: right;">3,50,000</td>
+          </tr>
+          <tr>
+            <td>12% Debentures</td>
+            <td style="text-align: right;">15,00,000</td>
+            <td>Inventories</td>
+            <td style="text-align: right;">10,00,000</td>
+          </tr>
+          <tr>
+            <td>Creditors and other liabilities</td>
+            <td style="text-align: right;">16,00,000</td>
+            <td>Plants &amp; Eqpt.</td>
+            <td style="text-align: right;">65,00,000</td>
+          </tr>
+          <tr style="font-weight: bold;">
+            <td>Total</td>
+            <td style="text-align: right;">81,00,000</td>
+            <td>Total</td>
+            <td style="text-align: right;">81,00,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p><strong>Additional Information:</strong></p>
+    <ol type="i">
+      <li>Shareholders of L plc will get one share in T plc for every two shares. External liabilities are expected to be settled at &pound; 2.50 Million. Shares of T plc would be issued at its current price of &pound; 1.50 per share. Debenture holders will get 13% convertible debentures in the purchasing company for the same amount. Debtors and inventories are expected to realize &pound; 1 Million.</li>
+      <li>T plc has decided to operate the business of L plc as a separate division. The division is likely to give cash flows (after tax) to the extent of &pound; 2.50 Million per year for 6 years. T plc has planned that, after 6 years, this division would be demerged and disposed of for &pound; 1 Million.</li>
+      <li>The company’s cost of capital is 16%.</li>
+    </ol>
+    <p>Advise the Board of the company about the financial feasibility of this acquisition.</p>
+    <p>Net present values for 16% for &pound; 1 are as follows:</p>
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
+        <tbody>
+          <tr>
+            <th>Years</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th>PV</th>
+            <td>0.862</td>
+            <td>0.743</td>
+            <td>0.641</td>
+            <td>0.552</td>
+            <td>0.476</td>
+            <td>0.410</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    <p><strong>Calculation of Purchase Consideration</strong></p>
+    <div style="overflow-x:auto;">
+      <table border="0" cellpadding="4" cellspacing="0" style="width: 100%; max-width: 500px;">
+        <tbody>
+          <tr>
+            <td>Issue of Share 17,50,000 x &pound;1.50</td>
+            <td style="text-align: right;">26,25,000</td>
+          </tr>
+          <tr>
+            <td>External Liabilities settled</td>
+            <td style="text-align: right;">25,00,000</td>
+          </tr>
+          <tr>
+            <td>13% Debentures</td>
+            <td style="text-align: right;"><u>15,00,000</u></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style="text-align: right;"><strong>66,25,000</strong></td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>Less:</strong> Realization of Debtors and Inventories</td>
+          </tr>
+          <tr>
+            <td>Debtors &amp; Inventories</td>
+            <td style="text-align: right;">(10,00,000)</td>
+          </tr>
+          <tr>
+            <td>Cash</td>
+            <td style="text-align: right;"><u>(2,50,000)</u></td>
+          </tr>
+          <tr style="font-weight: bold;">
+            <td>Net Cash Outflow</td>
+            <td style="text-align: right;">&pound; 53,75,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p>Net Present Value = PV of Cash Inflow + PV of Demerger of L plc &ndash; Cash Outflow<br>
+    = &pound; 25,00,000 &times; PVAF(16%, 6) + &pound; 10,00,000 &times; PVF(16%, 6) &ndash; &pound; 53,75,000<br>
+    = &pound; 25,00,000 &times; 3.684 + &pound; 10,00,000 &times; 0.410 &ndash; &pound; 53,75,000<br>
+    = &pound; 92,10,000 + &pound; 4,10,000 &ndash; &pound; 53,75,000<br>
+    = <strong>&pound; 42,45,000</strong></p>
+    <br>
+    <p>Since NPV of the decision is positive it is advantageous to acquire L plc.</p>
+  `
+},
+{
+  question_id: "AFM_MTPAPR24II_Q5B",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Mutual Funds",
+  placement: 2,
+  marks: 8,
+  question_html: `
+    <p><strong>(b)</strong> A mutual fund company introduces two schemes i.e. Dividend plan (Plan-D) and Bonus plan (Plan-B). The face value of the unit is ₹ 10. On 1-4-2018 Mr. K invested ₹ 2,00,000 each in Plan-D and Plan-B when the NAV was ₹ 38.20 and ₹ 35.60 respectively. Both the plans matured on 31-3-2023.</p>
+    <p>Particulars of dividend and bonus declared over the period are as follows:</p>
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Dividend %</th>
+            <th>Bonus Ratio</th>
+            <th colspan="2">Net Asset Value (₹)</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>Plan D</th>
+            <th>Plan B</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>30-09-2018</td>
+            <td>10</td>
+            <td>--</td>
+            <td>39.10</td>
+            <td>35.60</td>
+          </tr>
+          <tr>
+            <td>30-06-2019</td>
+            <td>--</td>
+            <td>1:5</td>
+            <td>41.15</td>
+            <td>36.25</td>
+          </tr>
+          <tr>
+            <td>31-03-2020</td>
+            <td>15</td>
+            <td>--</td>
+            <td>44.20</td>
+            <td>33.10</td>
+          </tr>
+          <tr>
+            <td>15-09-2021</td>
+            <td>13</td>
+            <td>--</td>
+            <td>45.05</td>
+            <td>37.25</td>
+          </tr>
+          <tr>
+            <td>30-10-2021</td>
+            <td>--</td>
+            <td>1:8</td>
+            <td>42.70</td>
+            <td>38.30</td>
+          </tr>
+          <tr>
+            <td>27-03-2022</td>
+            <td>16</td>
+            <td>--</td>
+            <td>44.80</td>
+            <td>39.10</td>
+          </tr>
+          <tr>
+            <td>11-04-2022</td>
+            <td>--</td>
+            <td>1:10</td>
+            <td>40.25</td>
+            <td>38.90</td>
+          </tr>
+          <tr>
+            <td>31-03-2023</td>
+            <td>--</td>
+            <td>--</td>
+            <td>40.40</td>
+            <td>39.70</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p>Evaluate the Effective Yield Per Annum in respect of the above two plans.</p>
+    <p><strong>Note:</strong><br>
+    1. Use following PV Factors:<br>
+    PVIF (2%,5) = 0.9057, PVIF (4%,5) = 0.8219, PVIF (8%,5) = 0.6806, PVIF (13%,5) = 0.5428<br>
+    2. Round off calculations upto 2 decimal points.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    
+    <p><strong><u>Plan &ndash; D</u></strong></p>
+    <p>Units acquired = 2,00,000 / 38.20 = <strong>5235.60</strong></p>
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Units held</th>
+            <th>Dividend %</th>
+            <th>Amount (₹)</th>
+            <th>Reinvestment Rate (₹)</th>
+            <th>New Units</th>
+            <th>Total Units</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01.04.2018</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>5235.60</td>
+          </tr>
+          <tr>
+            <td>30.09.2018</td>
+            <td>5235.60</td>
+            <td>10</td>
+            <td>5235.60</td>
+            <td>39.10</td>
+            <td>133.90</td>
+            <td>5369.50</td>
+          </tr>
+          <tr>
+            <td>31.03.2020</td>
+            <td>5369.50</td>
+            <td>15</td>
+            <td>8054.25</td>
+            <td>44.20</td>
+            <td>182.22</td>
+            <td>5551.72</td>
+          </tr>
+          <tr>
+            <td>15.09.2021</td>
+            <td>5551.72</td>
+            <td>13</td>
+            <td>7217.24</td>
+            <td>45.05</td>
+            <td>160.20</td>
+            <td>5711.92</td>
+          </tr>
+          <tr>
+            <td>27.03.2022</td>
+            <td>5711.92</td>
+            <td>16</td>
+            <td>9139.07</td>
+            <td>44.80</td>
+            <td>204.00</td>
+            <td>5915.92</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p>31.03.2023 Maturity Value (₹ 40.40 &times; 5915.92) = <strong>₹ 2,39,003.17</strong><br>
+    Less: Cost of Acquisition = ₹ 2,00,000.00<br>
+    <strong>Total Gain = ₹ 39,003.17</strong></p>
+    
+    <p>&therefore; Approximate Effective Yield = (₹ 39,003.17 / ₹ 2,00,000) &times; (1 / 5) &times; 100 = <strong>3.90%</strong></p>
+    
+    <p>Now more accurate effective yield can be computed by using the IRR method as follows:<br>
+    NPV at 4% = - ₹ 2,00,000 + ₹ 1,96,436.71 = - ₹ 3,563.29<br>
+    NPV at 2% = - ₹ 2,00,000 + ₹ 2,16,465.17 = ₹ 16,465.17</p>
+    <p>IRR = LR + [ NPV at LR / (NPV at LR - NPV at HR) ] &times; (HR - LR)<br>
+    = 2% + [ 16465.17 / (16465.17 &ndash; (-3563.29)) ] &times; (4% - 2%)<br>
+    = <strong>3.64%</strong></p>
+    
+    <hr style="margin: 20px 0;">
+    
+    <p><strong><u>Plan &ndash; B</u></strong></p>
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: left;">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Particulars</th>
+            <th>Calculation Working</th>
+            <th>No. of Units</th>
+            <th>NAV (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01.04.2018</td>
+            <td>Investment</td>
+            <td>₹ 2,00,000 / 35.60 =</td>
+            <td>5617.98</td>
+            <td>35.60</td>
+          </tr>
+          <tr>
+            <td>30.06.2019</td>
+            <td>Bonus</td>
+            <td>5617.98 / 5 =</td>
+            <td><u>1123.60</u><br>6741.58</td>
+            <td>36.25</td>
+          </tr>
+          <tr>
+            <td>30.10.2021</td>
+            <td>Bonus</td>
+            <td>6741.58 / 8 =</td>
+            <td><u>842.70</u><br>7584.28</td>
+            <td>38.30</td>
+          </tr>
+          <tr>
+            <td>11.04.2022</td>
+            <td>Bonus</td>
+            <td>7584.28 / 10 =</td>
+            <td><u>758.43</u><br>8342.71</td>
+            <td>38.90</td>
+          </tr>
+          <tr>
+            <td>31.03.2023</td>
+            <td>Maturity Value</td>
+            <td>8342.71 &times; ₹ 39.70 =</td>
+            <td></td>
+            <td><strong>3,31,205.59</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p>Less: Investment = ₹ 2,00,000.00<br>
+    <strong>Gain = ₹ 1,31,205.59</strong></p>
+    
+    <p>&therefore; Approximate Effective Yield = (1,31,205.59 / 2,00,000) &times; (1 / 5) &times; 100 = <strong>13.12%</strong></p>
+    
+    <p>Now more accurate effective yield can be computed by using the IRR method as follows:<br>
+    NPV at 13% = - ₹ 2,00,000 + ₹ 1,79,778.39 = - ₹ 20,221.61<br>
+    NPV at 8% = - ₹ 2,00,000 + ₹ 2,25,418.52 = ₹ 25,418.52</p>
+    <p>IRR = LR + [ NPV at LR / (NPV at LR - NPV at HR) ] &times; (HR - LR)<br>
+    = 8% + [ 25418.52 / (25418.52 &ndash; (-20221.61)) ] &times; (13% - 8%)<br>
+    = <strong>10.78%</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPAPR24II_Q6A",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Advanced Capital Budgeting Decisions",
+  placement: 1,
+  marks: 8,
+  question_html: `
+    <p><strong>(a)</strong> R Ltd. is considering a project with the following Cash flows:</p>
+    <p style="text-align: right; padding-right: 20px;">in ₹</p>
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
+        <thead>
+          <tr>
+            <th>Years</th>
+            <th>Cost of Plant</th>
+            <th>Recurring Cost</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>20,00,000</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>&mdash;</td>
+            <td>8,000</td>
+            <td>24,000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>&mdash;</td>
+            <td>10,000</td>
+            <td>28,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p>The cost of capital is 9%.</p>
+    <p>Evaluate the sensitivity of the project in respect of all factors except time such that:</p>
+    <ol type="i">
+      <li>NPV become zero and</li>
+      <li>adversely varying factors value by 10%.</li>
+    </ol>
+    <p>The P.V. factor at 9% are as under:</p>
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 50%; max-width: 300px; text-align: center;">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Factor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>0.917</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>0.842</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p><em>Note: Round off calculation upto 2 decimal points.</em></p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    <p><strong>Working Note: Base Case Net Present Value (NPV) Calculation</strong></p>
+    <ul>
+      <li><strong>Year 0 Outflow (Plant Cost):</strong> ₹ 20,000 &times; 1 = (₹ 20,000)</li>
+      <li><strong>Year 1 Present Values:</strong><br>
+        &bull; Recurring Cost = ₹ 8,000 &times; 0.917 = (₹ 7,336)<br>
+        &bull; Savings = ₹ 24,000 &times; 0.917 = ₹ 22,008
+      </li>
+      <li><strong>Year 2 Present Values:</strong><br>
+        &bull; Recurring Cost = ₹ 10,000 &times; 0.842 = (₹ 8,420)<br>
+        &bull; Savings = ₹ 28,000 &times; 0.842 = ₹ 23,576
+      </li>
+    </ul>
+    <p><strong>Summary of Present Values:</strong><br>
+    &bull; Total PV of Savings = ₹ 22,008 + ₹ 23,576 = ₹ 45,584<br>
+    &bull; Total PV of Recurring Costs = ₹ 7,336 + ₹ 8,420 = ₹ 15,756<br>
+    &bull; PV of Outflow = ₹ 20,000<br>
+    <strong>Base NPV</strong> = PV of Savings &minus; PV of Recurring Costs &minus; PV of Outflow<br>
+    = ₹ 45,584 &minus; ₹ 15,756 &minus; ₹ 20,000 = <strong>₹ 9,828</strong></p>
+    <br>
+
+    <ol type="i">
+      <li><strong>Sensitivity Analysis (by making NPV Zero)</strong><br><br>
+        <ul>
+          <li><strong>(1) Increase of Plant Value by ₹ 9,828:</strong><br>
+            Percentage Change = (9,828 / 20,000) &times; 100 = <strong>49.14%</strong>
+          </li>
+          <br>
+          <li><strong>(2) Increase of Running Cost by ₹ 9,828:</strong><br>
+            Percentage Change = 9,828 / (7,336 + 8,420) = 9,828 / 15,756 &times; 100 = <strong>62.38%</strong>
+          </li>
+          <br>
+          <li><strong>(3) Fall in Savings by ₹ 9,828:</strong><br>
+            Percentage Change = 9,828 / (22,008 + 23,576) = 9,828 / 45,584 &times; 100 = <strong>21.56%</strong>
+          </li>
+        </ul>
+        <br>
+        <p><em>Conclusion: Savings factor is the most sensitive to affect the acceptability of the project as in comparison of other two factors a slight % change in this factor shall more affect the NPV than others.</em></p>
+      </li>
+      <br>
+
+      <li><strong>Sensitivity Analysis if there is a variation of 10% in the factors:</strong><br><br>
+        <ul>
+          <li><strong>(1) If the initial project cost is varied adversely by 10%:</strong><br>
+            Revised Outflow = ₹ 20,000 &times; 1.10 = ₹ 22,000<br>
+            NPV (Revised) = ₹ 9,828 &minus; ₹ 2,000 = ₹ 7,828<br>
+            Percentage Change in NPV = (₹ 9,828 &minus; ₹ 7,828) / ₹ 9,828 = <strong>20.35%</strong>
+          </li>
+          <br>
+          <li><strong>(2) If Annual Running Cost is varied adversely by 10%:</strong><br>
+            NPV (Revised) = ₹ 9,828 &minus; (₹ 800 &times; 0.917) &minus; (₹ 1,000 &times; 0.842)<br>
+            = ₹ 9,828 &minus; ₹ 733.60 &minus; ₹ 842.00 = ₹ 8,252.40<br>
+            Percentage Change in NPV = (₹ 9,828 &minus; ₹ 8,252.40) / ₹ 9,828 = <strong>16.03%</strong>
+          </li>
+          <br>
+          <li><strong>(3) If Savings are varied adversely by 10%:</strong><br>
+            NPV (Revised) = ₹ 9,828 &minus; (₹ 2,400 &times; 0.917) &minus; (₹ 2,800 &times; 0.842)<br>
+            = ₹ 9,828 &minus; ₹ 2,200.80 &minus; ₹ 2,357.60 = ₹ 5,269.60<br>
+            Percentage Change in NPV = (₹ 9,828 &minus; ₹ 5,269.60) / ₹ 9,828 &times; 100% = <strong>46.38%</strong>
+          </li>
+        </ul>
+        <br>
+        <p><em>Conclusion: Savings factor is the most sensitive to affect the acceptability of the project.</em></p>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPAPR24II_Q6B",
+  source: "ICAI Mock Test Paper - Series II, April 2024",
+  chapter_name: "Interest Rate Risk Management",
+  placement: 2,
+  marks: 6,
+  question_html: `
+    <p><strong>(b)</strong> Bank entered a plain vanilla swap through on OIS (Overnight Index Swap) on a principal of ₹ 20 crores and agreed to receive MIBOR overnight floating rate for a fixed payment on the principal. The swap was entered into on Monday, 2nd August 2020 and was to commence on 3rd August 2020 and run for a period of 7 days.</p>
+    <p>Respective MIBOR rates for Tuesday to Monday were:<br>
+    7.75%, 8.15%, 8.12%, 7.95%, 7.98% and 8.15%.</p>
+    <p>If Bank received ₹ 634 net on settlement, calculate the applicable Fixed rate for the same swap period.</p>
+    <p><em>Notes:<br>
+    (i) Sunday is Holiday.<br>
+    (ii) Work in rounded rupees and avoid decimal working.<br>
+    (iii) Consider 365 days a year.</em></p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+    
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Principal (₹)</th>
+            <th>MIBOR (%)</th>
+            <th>Interest (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left;">Tuesday</td>
+            <td>20,00,00,000</td>
+            <td>7.75</td>
+            <td>42,466</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Wednesday</td>
+            <td>20,00,42,466</td>
+            <td>8.15</td>
+            <td>44,667</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Thursday</td>
+            <td>20,00,87,133</td>
+            <td>8.12</td>
+            <td>44,513</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Friday</td>
+            <td>20,01,31,646</td>
+            <td>7.95</td>
+            <td>43,590</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Saturday &amp; Sunday (*)</td>
+            <td>20,01,75,236</td>
+            <td>7.98</td>
+            <td>87,529</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Monday</td>
+            <td>20,02,62,765</td>
+            <td>8.15</td>
+            <td>44,716</td>
+          </tr>
+          <tr style="font-weight: bold;">
+            <td style="text-align: left;" colspan="3">Total Interest @ Floating</td>
+            <td>3,07,481</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <p><em>(*) Note: Saturday &amp; Sunday interest covers two days on the compounded principal balance at Friday's closing MIBOR rate.</em></p>
+    <br>
+
+    <div style="overflow-x:auto;">
+      <table border="0" cellpadding="4" cellspacing="0" style="width: 100%; max-width: 500px;">
+        <tbody>
+          <tr>
+            <td>Total Interest under Floating rate</td>
+            <td style="text-align: right;">₹ 3,07,481</td>
+          </tr>
+          <tr>
+            <td>Less: Net Amount Received by Bank</td>
+            <td style="text-align: right;">₹ 634</td>
+          </tr>
+          <tr style="font-weight: bold;">
+            <td>Expected Interest under Fixed rate</td>
+            <td style="text-align: right;">₹ 3,06,847</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+
+    <p><strong>Calculation of Fixed Rate of Interest:</strong></p>
+    <p>Fixed Interest = Principal &times; Fixed Rate &times; (Days / 365)<br>
+    ₹ 3,06,847 = ₹ 20,00,00,000 &times; Fixed Rate &times; (7 / 365)<br>
+    Fixed Rate = (3,06,847 &times; 365) / (20,00,00,000 &times; 7)<br>
+    Fixed Rate = 111,999,155 / 1,400,00,000<br>
+    Fixed Rate = 0.079999... or <strong>0.08</strong></p>
+    
+    <p>Thus, Fixed Rate of Interest shall be approx. <strong>8% p.a.</strong></p>
+  `
+}
 
 ];
