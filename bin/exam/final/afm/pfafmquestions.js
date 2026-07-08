@@ -3130,6 +3130,1579 @@ const descriptiveQuestions = [
     
     <p>Thus, Fixed Rate of Interest shall be approx. <strong>8% p.a.</strong></p>
   `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q1A",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Value at Risk (VaR)",
+  placement: 1,
+  marks: 8,
+  question_html: `
+    <p><strong>(a)</strong> On Tuesday morning (before opening of the capital market) an investor, while going through his bank statement, has observed that an amount of ₹ 7 lakhs is lying in his bank account. This amount is available for use from Tuesday till Friday. The Bank requires a minimum balance of ₹ 1,000 all the time. The investor desires to take a maximum possible exposure in the market where Value at Risk (VaR) should not exceed the balance lying in his bank account. The standard deviation of index of the same market is 1.5% per day. The required confidence level is 99%.</p>
+
+    <p><strong>Given:</strong></p>
+
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;text-align:center;">
+        <thead>
+          <tr>
+            <th>z</th>
+            <th>0.00</th>
+            <th>0.01</th>
+            <th>0.02</th>
+            <th>0.03</th>
+            <th>0.04</th>
+            <th>0.05</th>
+            <th>0.06</th>
+            <th>0.07</th>
+            <th>0.08</th>
+            <th>0.09</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>2.2</strong></td>
+            <td>.9861</td>
+            <td>.9864</td>
+            <td>.9868</td>
+            <td>.9871</td>
+            <td>.9875</td>
+            <td>.9878</td>
+            <td>.9881</td>
+            <td>.9884</td>
+            <td>.9887</td>
+            <td>.9890</td>
+          </tr>
+          <tr>
+            <td><strong>2.3</strong></td>
+            <td>.9893</td>
+            <td>.9896</td>
+            <td>.9898</td>
+            <td>.9901</td>
+            <td>.9904</td>
+            <td>.9906</td>
+            <td>.9909</td>
+            <td>.9911</td>
+            <td>.9913</td>
+            <td>.9916</td>
+          </tr>
+          <tr>
+            <td><strong>2.4</strong></td>
+            <td>.9918</td>
+            <td>.9920</td>
+            <td>.9922</td>
+            <td>.9923</td>
+            <td>.9925</td>
+            <td>.9929</td>
+            <td>.9931</td>
+            <td>.9932</td>
+            <td>.9934</td>
+            <td>.9936</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br>
+
+    <p>You are required to determine the maximum possible exposure investor can take in the market.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Particulars</th>
+            <th style="text-align:right;">Amount (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Amount available in bank account</td>
+            <td style="text-align:right;">7,00,000</td>
+          </tr>
+          <tr>
+            <td>Minimum balance to be kept</td>
+            <td style="text-align:right;">1,000</td>
+          </tr>
+          <tr>
+            <td>Available amount which can be used for potential exposure in market for 4 days</td>
+            <td style="text-align:right;">6,99,000</td>
+          </tr>
+          <tr>
+            <td>Maximum Loss for 4 days at 99% level</td>
+            <td style="text-align:right;">6,99,000</td>
+          </tr>
+          <tr>
+            <td>Maximum Loss for 1 day at 99% level = Maximum Loss for 4 days / √No. of days = 6,99,000 / √4</td>
+            <td style="text-align:right;">3,49,500</td>
+          </tr>
+          <tr>
+            <td>Z Score at 99% Level</td>
+            <td style="text-align:right;">2.33</td>
+          </tr>
+          <tr>
+            <td>Volatility in terms of Rupees (Maximum Loss / Z Score at 99% level) = 3,49,500 / 2.33</td>
+            <td style="text-align:right;">1,50,000</td>
+          </tr>
+          <tr>
+            <td>Maximum Possible Exposure (Volatility in Rupees / Standard Deviation) = 1,50,000 / 0.015</td>
+            <td style="text-align:right;"><strong>1,00,00,000</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br>
+
+    <p><strong>Maximum Possible Exposure = ₹ 1,00,00,000</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q1B",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Dividend Valuation Model (Multi-Stage Growth Model)",
+  placement: 1,
+  marks: 2,
+  question_html: `
+    <p><strong>(b)</strong> MNP Ltd. has declared and paid annual dividend of ₹ 4 per share. It is expected to grow @ 20% for the next two years and 10% thereafter. The required rate of return of equity investors is 15%.</p>
+
+    <p>Compute the current price at which equity shares should sell.</p>
+
+    <p><em>Note: Use PVF upto 4 decimal points and round off calculation upto 2 decimal points.</em></p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p>
+      D<sub>0</sub> = ₹ 4
+    </p>
+
+    <p>
+      D<sub>1</sub> = ₹ 4 × (1.20) = <strong>₹ 4.80</strong>
+    </p>
+
+    <p>
+      D<sub>2</sub> = ₹ 4 × (1.20)<sup>2</sup> = <strong>₹ 5.76</strong>
+    </p>
+
+    <p>
+      D<sub>3</sub> = ₹ 4 × (1.20)<sup>2</sup> × (1.10) = <strong>₹ 6.34</strong>
+    </p>
+
+    <p>
+      Terminal Value (TV) =
+      <strong>D<sub>3</sub> / (K<sub>e</sub> − g)</strong>
+    </p>
+
+    <p>
+      = 6.34 / (0.15 − 0.10)
+    </p>
+
+    <p>
+      = <strong>₹ 126.80</strong>
+    </p>
+
+    <p>
+      P =
+      D<sub>1</sub>/(1 + K<sub>e</sub>)
+      +
+      D<sub>2</sub>/(1 + K<sub>e</sub>)<sup>2</sup>
+      +
+      TV/(1 + K<sub>e</sub>)<sup>2</sup>
+    </p>
+
+    <p>
+      = 4.80/(1 + 0.15)
+      +
+      5.76/(1 + 0.15)<sup>2</sup>
+      +
+      126.80/(1 + 0.15)<sup>2</sup>
+    </p>
+
+    <p>
+      = ₹ 4.80 × 0.8696
+      + ₹ 5.76 × 0.7561
+      + ₹ 126.80 × 0.7561
+    </p>
+
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Particulars</th>
+            <th style="text-align:right;">Amount (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Present Value of D₁</td>
+            <td style="text-align:right;">4.17</td>
+          </tr>
+          <tr>
+            <td>Present Value of D₂</td>
+            <td style="text-align:right;">4.36</td>
+          </tr>
+          <tr>
+            <td>Present Value of Terminal Value</td>
+            <td style="text-align:right;">95.87</td>
+          </tr>
+          <tr style="font-weight:bold;">
+            <td>Current Price of Equity Share</td>
+            <td style="text-align:right;">104.40</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br>
+
+    <p><strong>Current Price of Equity Share = ₹ 104.40</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q1C",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Venture Capital Financing",
+  placement: 1,
+  marks: 4,
+  question_html: `
+    <p><strong>(c)</strong> Explain the concept of Unicorn.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p>A <strong>Unicorn</strong> is a privately held start-up company which has achieved a valuation of <strong>US$ 1 billion</strong>. This term was coined by venture capitalist <strong>Aileen Lee</strong>, first time in 2013. Unicorn, a mythical animal, represents the statistical rarity of successful ventures.</p>
+
+    <p>A start-up is referred as a Unicorn if it has following features:</p>
+
+    <ol type="i">
+      <li>A privately held start-up.</li>
+      <li>Valuation of start-up reaches <strong>US$ 1 Billion</strong>.</li>
+      <li>Emphasis is on the rarity of success of such start-up.</li>
+      <li>Other common features are new ideas, disruptive innovation, consumer focus, high on technology etc.</li>
+    </ol>
+
+    <p>However, it is important to note that in case the valuation of any start-up slips below <strong>US$ 1 billion</strong>, it can lose its status of <strong>'Unicorn'</strong>. Hence, a start-up may be Unicorn at one point of time and may not be at another point of time.</p>
+
+    <p>In September 2011, <strong>InMobi</strong>, an ad-tech startup, became the first Unicorn of India. SoftBank invested <strong>US$ 200 million</strong> in InMobi valuing the mobile advertising company at over <strong>US$ 1 billion</strong>, making it India's first unicorn. InMobi was founded in 2007 and took four years to achieve the Unicorn status in 2011.</p>
+
+    <p>In 2018, <strong>Udaan</strong>, a B2B e-commerce marketplace, became the fastest growing startup by becoming a Unicorn in just over two years' time.</p>
+  `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q2A",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Foreign Exchange Risk Management",
+  placement: 2,
+  marks: 6,
+  question_html: `
+    <p><strong>(a)</strong> Mr. H as Treasure for your bank working under you sold HK$ 10 million value Spot to your customer at ₹ 10.53/ HK$ and covered yourself in the London market on the same day when the exchange rates were:</p>
+
+    <p><strong>US$ 1 = H.K.$ 7.8880 / 7.8920</strong></p>
+
+    <p><strong>Local interbank market rates for US$ were:</strong></p>
+
+    <p><strong>Spot US$ 1 = ₹ 82.70 / 82.85</strong></p>
+
+    <p><strong>Required:</strong></p>
+
+    <ol type="i">
+      <li>Calculate Cover Rate.</li>
+      <li>Calculate Profit or loss in the transaction.</li>
+      <li>Do you agree with the views of the Internal Auditor that Mr. H has a speculative nature?</li>
+    </ol>
+
+    <p><em>Note: Ignore brokerage.</em></p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p><strong>(i) Calculation of Cover Rate</strong></p>
+
+    <p>
+      <strong>Rupee – Dollar Selling Rate</strong> = ₹ 82.85
+    </p>
+
+    <p>
+      <strong>Dollar – Hong Kong Dollar Buying Rate</strong> = HK$ 7.8880
+    </p>
+
+    <p>
+      <strong>Hong Kong Dollar (Selling) Cross Rate</strong>
+    </p>
+
+    <p>
+      = ₹ 82.85 ÷ 7.8880
+    </p>
+
+    <p>
+      = <strong>₹ 10.5033 per HK$</strong>
+    </p>
+
+    <br>
+
+    <p><strong>(ii) Profit / Loss to the Bank</strong></p>
+
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Particulars</th>
+            <th style="text-align:right;">Amount (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Amount received from customer (HK$ 10 million × ₹ 10.55)</td>
+            <td style="text-align:right;">10,55,00,000</td>
+          </tr>
+          <tr>
+            <td>Amount paid on cover deal (HK$ 10 million × ₹ 10.5033)</td>
+            <td style="text-align:right;">10,50,33,000</td>
+          </tr>
+          <tr style="font-weight:bold;">
+            <td>Profit to Bank</td>
+            <td style="text-align:right;">₹ 4,67,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br>
+
+    <p><strong>(iii) Comment on Internal Auditor's Observation</strong></p>
+
+    <p>
+      To some extent, we agree with the views of the Internal Auditor as the gain on the same transaction is bit lesser keeping in view the amount involved.
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q2B",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Real Options Analysis",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p><strong>(b)</strong> PFL is already in production of Fertilizer is considering a proposal of building a new plant to produce pesticides. The Net Present Value of proposal is ₹ 200 crore without the abandonment option.</p>
+
+    <p>However, if market conditions for pesticide turns out to be favourable the NPV of proposal shall increase by 30%. On the other hand, market conditions remain sluggish the NPV of the proposal shall be reduced by 40%. In case company is not interested in continuation of the project it can be disposed of for ₹ 160 crore.</p>
+
+    <p>If the risk-free rate of interest is 8% then what will be value of abandonment option.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p><strong>Decision Tree showing Payoff</strong></p>
+
+    <div style="overflow-x:auto;">
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; width:100%; text-align:center;">
+        <thead>
+          <tr>
+            <th>Year 0</th>
+            <th>Year 1</th>
+            <th>Payoff (₹ Crore)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">200</td>
+            <td>260</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>120</td>
+            <td>160 − 120 = 40</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br>
+
+    <p>First of all we shall calculate probability of high demand (<strong>p</strong>) using risk neutral method as follows:</p>
+
+    <p>
+      8% = p × 30% + (1 − p) × (−40%)
+    </p>
+
+    <p>
+      0.08 = 0.30p − 0.40 + 0.40p
+    </p>
+
+    <p>
+      p = 0.48 / 0.70 = <strong>0.686</strong>
+    </p>
+
+    <br>
+
+    <p><strong>Value of Abandonment Option</strong></p>
+
+    <p>
+      Expected Payoff at Year 1
+    </p>
+
+    <p>
+      = p × 0 + [(1 − p) × 40]
+    </p>
+
+    <p>
+      = 0.686 × 0 + (0.314 × 40)
+    </p>
+
+    <p>
+      = <strong>₹ 12.56 crore</strong>
+    </p>
+
+    <p>
+      Since expected payoff at Year 1 is ₹ 12.56 crore, Present Value of expected payoff will be:
+    </p>
+
+    <p>
+      = 12.56 / 1.08
+    </p>
+
+    <p>
+      = <strong>₹ 11.63 crore</strong>
+    </p>
+
+    <br>
+
+    <p>Therefore, the <strong>value of abandonment option (Put Option)</strong> is:</p>
+
+    <p><strong>₹ 11.63 crore</strong></p>
+  `
+},
+
+{
+  question_id: "AFM_MTPSEP24I_Q2C",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Mutual Funds",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p><strong>(c)</strong> Explain the various Qualitative factors that need to be taken into account in addition to Quantitative Factors to evaluate the performance of any Mutual Fund.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p>Some of the <strong>Qualitative factors</strong> that need to be taken into account in addition to Quantitative Factors are as follows:</p>
+
+    <ol>
+      <li>
+        <strong>Quality of Portfolio:</strong>
+        <p>Quality of stocks and securities in the portfolio of the Mutual Funds is an important qualitative parameter. The reason is that the quality of the portfolio plays a big role in achieving superior returns.</p>
+
+        <p>The qualitative characteristic of portfolio of Equity Mutual Fund involves allocation of funds in top Blue-chip companies, large companies and how diversified is the portfolio. The style followed can be growth, value or blend of the same.</p>
+
+        <p>In Debt Funds, the quality of portfolio is measured on the basis of credit quality, average maturity and modified duration of the fixed asset securities.</p>
+
+        <p>Not only that it is necessary that Mutual Fund should hold good quality stocks or securities, but it is also necessary the investment should be as per the objective of the Fund. Under normal circumstances, the fund having lower Portfolio Turnover Ratio is considered to be better.</p>
+      </li>
+
+      <li>
+        <strong>Track Record and Competence of Fund Manager:</strong>
+        <p>Since Fund Manager decides about the selection of securities and takes investment decisions, his/her competence and conviction plays a very big role. The competence of a Fund Manager is assessed from his/her knowledge and ability to manage in addition to past performance.</p>
+      </li>
+
+      <li>
+        <strong>Credibility of Fund House Team:</strong>
+        <p>Team of Fund House also plays a big role towards the investors' interest. In addition to investment decisions, there are some other administrative tasks also such as redemption of units, crediting of dividend, providing adequate information etc. which play a crucial role in qualitative assessment of any Mutual Fund House.</p>
+      </li>
+    </ol>
+  `
+},
+
+{
+  question_id: "AFM_MTPSEP24I_Q3A",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Portfolio Management",
+  placement: 1,
+  marks: 6,
+  question_html: `
+    <p><strong>(a)</strong> Mr. A owns a portfolio with the following characteristics:</p>
+    
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Particulars</th>
+          <th style="text-align: center;">Security X</th>
+          <th style="text-align: center;">Security Y</th>
+          <th style="text-align: center;">Risk Free security</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Factor 1 sensitivity (&lambda;<sub>1</sub>)</td>
+          <td style="text-align: center;">0.80</td>
+          <td style="text-align: center;">1.50</td>
+          <td style="text-align: center;">0</td>
+        </tr>
+        <tr>
+          <td>Factor 2 sensitivity (&lambda;<sub>2</sub>)</td>
+          <td style="text-align: center;">0.60</td>
+          <td style="text-align: center;">1.20</td>
+          <td style="text-align: center;">0</td>
+        </tr>
+        <tr>
+          <td>Expected Return*</td>
+          <td style="text-align: center;">15%</td>
+          <td style="text-align: center;">20%</td>
+          <td style="text-align: center;">10%</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p><em>* Generated by a two-factor model.</em></p>
+    
+    <p><strong>Required:</strong></p>
+    <ol style="list-style-type: lower-roman;">
+      <li>Compute the sensitivity of Mr. A&rsquo;s portfolio to the two factors if Mr. A has ₹ 3,00,000 to invest and sells short ₹ 1,50,000 of security Y and purchases ₹ 4,50,000 of security X.</li>
+      <li>Compute the sensitivity of the portfolio to the two factors if Mr. A borrows ₹ 3,00,000 at the risk free rate and invests the amount he borrows along with the original amount of ₹ 3,00,000 in security X and Y in the same proportion as described in part (i).</li>
+      <li>Suppose Mr. D, one of the friend of Mr. A says the expected return premium of factor 2 is zero. Do you agree with this statement. Substantiate your answer with required calculations.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <ol style="list-style-type: lower-roman;">
+      <li>
+        <p>Mr. A&rsquo;s position in the two securities are +1.50 in security X and -0.50 in security Y. Hence the portfolio sensitivities to the two factors:</p>
+        <p>&lambda;<sub>1</sub> = 1.50 &times; 0.80 + (-0.50 &times; 1.50) = 0.45</p>
+        <p>&lambda;<sub>2</sub> = 1.50 &times; 0.60 + (-0.50 &times; 1.20) = 0.30</p>
+      </li>
+
+      <li>
+        <p>Mr. A&rsquo;s revised position:</p>
+        <ul>
+          <li>Security X = ₹ 9,00,000 / ₹ 3,00,000 = 3</li>
+          <li>Security Y = -₹ 3,00,000 / ₹ 3,00,000 = -1</li>
+          <li>Risk free asset = -₹ 3,00,000 / ₹ 3,00,000 = -1</li>
+        </ul>
+        <p>&lambda;<sub>1</sub> = 3.0 &times; 0.80 + (-1 &times; 1.50) + (-1 &times; 0) = 0.90</p>
+        <p>&lambda;<sub>2</sub> = 3.0 &times; 0.60 + (-1 &times; 1.20) + (-1 &times; 0) = 0.60</p>
+      </li>
+
+      <li>
+        <p>Expected Return = Risk Free Rate of Return + Risk Premium for each sensitivity factor</p>
+        <p>Accordingly,</p>
+        <p>15 = 10 + 0.80&lambda;<sub>1</sub> + 0.60&lambda;<sub>2</sub></p>
+        <p>20 = 10 + 1.50&lambda;<sub>1</sub> + 1.20&lambda;<sub>2</sub></p>
+        <p>On solving equation, the value of &lambda;<sub>1</sub> = 0</p>
+        <p>Yes, Mr. D is correct in his observation.</p>
+      </li>
+    </ol>
+  `
+},
+
+{
+  question_id: "AFM_MTPSEP24I_Q3B",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Corporate Valuation",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p><strong>(b)</strong> There is a privately held company X Pvt. Ltd that is operating into the retail space, and is now scouting for angel investors. The unleveraged beta based on the industry in which it operates is 1.8, and the average debt to equity ratio of X Pvt. Ltd. is hovering at 40:60. The rate of return provided by risk free GOI Bonds is 5%. The rate of market return for the industry is 11%. The FCFs for the next 3 years are as follows:</p>
+    
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Free Cash Flows (₹ Crore)</th>
+          <th style="text-align: center;">Year 1</th>
+          <th style="text-align: center;">Year 2</th>
+          <th style="text-align: center;">Year 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td style="text-align: center;">10</td>
+          <td style="text-align: center;">12</td>
+          <td style="text-align: center;">15</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>The pre-tax cost of debt is 12%. Assume a tax regime of 30%.</p>
+    <p>Determine the potential value to be placed for X Pvt. Ltd, based on above-mentioned FCFs.</p>
+    <p><em>Note: Use PVF and round off calculations upto 3 decimal points.</em></p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p>To compute the value of X Pvt. Ltd. first, we shall calculate WACC of the company. Since its share is not trading in the market, we shall use proxy beta to calculate the cost of equity. Since the unlevered beta of the industry is 1.8 the levered beta of the company will be:</p>
+    
+    <p>Levered &beta; = 1.8 [1 + (1 - 0.3) &times; 40 / 60)] = 2.64</p>
+    
+    <p>The Cost of equity in accordance with CAPM = R<sub>f</sub> + &beta; (R<sub>m</sub> &ndash; R<sub>f</sub>)</p>
+    <p>= 5% + 2.64 (11% - 5%) = 20.84%</p>
+    
+    <p>The WACC = Cost of Equity + Cost of Debt</p>
+    <p>= 20.84 (60 / 100) + 12.0 (1 - 0.3) (40 / 100) = 15.864%</p>
+    
+    <p>Finally, the free cash flows can be discounted at the WACC obtained above as under &ndash;</p>
+
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Particulars</th>
+          <th style="text-align: center;">Year 1</th>
+          <th style="text-align: center;">Year 2</th>
+          <th style="text-align: center;">Year 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Free Cash Flows</td>
+          <td style="text-align: center;">10</td>
+          <td style="text-align: center;">12</td>
+          <td style="text-align: center;">15</td>
+        </tr>
+        <tr>
+          <td>Discount factor (15.864%)</td>
+          <td style="text-align: center;">0.863</td>
+          <td style="text-align: center;">0.745</td>
+          <td style="text-align: center;">0.643</td>
+        </tr>
+        <tr>
+          <td>PVs of cash flows</td>
+          <td style="text-align: center;">8.630</td>
+          <td style="text-align: center;">8.940</td>
+          <td style="text-align: center;">9.645</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p><strong>Value of X Pvt. Ltd. (₹ Crore) = 27.215</strong></p>
+  `
+},
+
+{
+  question_id: "AFM_MTPSEP24I_Q3C",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Derivatives Analysis and Valuation / Portfolio Management",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p><strong>(c) Either</strong></p>
+    <p>Explain various types of Swaps.</p>
+    
+    <p><strong>Or</strong></p>
+    <p>Explain briefly principles of an Active Portfolio Strategy (APS).</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p><strong>The various types of Swaps are as follows:</strong></p>
+    <ol style="list-style-type: lower-roman;">
+      <li>
+        <strong>Plain Vanilla Swap:</strong> 
+        <p>Also called Generic Swap or Coupon Swap and it involves the exchange of a fixed rate loan to a floating rate loan over a period of time and that too on notional principal. Floating rate basis can be LIBOR, MIBOR, Prime Lending Rate etc.</p>
+        <p>For example, Fixed interest payments on a generic swap are calculated assuming each month has 30 days and the quoted interest rate is based on a 360-day year. Given an All-In-Cost of the swap, the semi-annual fixed-rate payment would be:</p>
+        <p><strong>(N)(AIC)(180/360)</strong></p>
+        <p>Where,</p>
+        <ul>
+          <li><strong>N</strong> denotes the notional principal amount of the agreement.</li>
+          <li><strong>AIC</strong> denotes the fixed rate.</li>
+        </ul>
+        <p>Then, the floating-rate receipt is determined by the formula:</p>
+        <p><strong>(N)(R)(dt/360)</strong></p>
+        <p>Where,</p>
+        <ul>
+          <li><strong>dt</strong> denotes the number of days since the last settlement date.</li>
+          <li><strong>R</strong> denotes the reference rate such as LIBOR, MIBOR etc.</li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Basis Rate Swap:</strong> 
+        <p>Also, called Non-Generic Swap. Similar to plain vanilla swap with the difference that payments are based on the difference between two different variable rates. For example, one rate may be 1 month LIBOR and other may be 3-month LIBOR. In other words, two legs of swap are floating but measured against different benchmarks.</p>
+      </li>
+
+      <li>
+        <strong>Asset Swap:</strong> 
+        <p>Like plain vanilla swaps with the difference that it is the exchange fixed rate investments such as bonds which pay a guaranteed coupon rate with floating rate investments such as an index.</p>
+      </li>
+
+      <li>
+        <strong>Amortising Swap:</strong> 
+        <p>An interest rate swap in which the notional principal for the interest payments declines during the life of the swap. They are particularly useful for borrowers who have issued redeemable bonds or debentures. It enables them to do interest rate risk hedging attached with redemption profile of bonds or debentures.</p>
+      </li>
+    </ol>
+
+    <hr style="margin: 20px 0;">
+
+    <p><strong>OR</strong></p>
+
+    <p><strong>There are four principles of an Active Portfolio Strategy (APS). These are:</strong></p>
+    <ol style="list-style-type: lower-roman;">
+      <li>
+        <strong>Market Timing:</strong> 
+        <p>This involves departing from the normal i.e., strategy for long run asset mix to reflect assessment of the prospect of various assets in the near future. Market timing is based on an explicit or implicit forecast of general market movement. In most cases investors may go largely by their market sense. Those who reveal the fluctuation in the market may be tempted to play the game of market timing but few will succeed in this game. Further an investment manager has to forecast the market correctly and 75% of the time he is only able to break even after taking into account the cost of errors and cost of transactions.</p>
+      </li>
+
+      <li>
+        <strong>Sector Rotation:</strong> 
+        <p>Sector or group rotation may apply to both stock and bond component of the portfolio. It is used more compulsorily with respect to strategy. The components of the portfolio are used when it involves shifting. The weighting for various industry sectors is based on their asset outlook.</p>
+        <p>With respect to bond portfolio sector rotation it implies a shift in the composition of the bond portfolio in terms of quality as reflected in credit rating, coupon rate, term of maturity etc.</p>
+      </li>
+
+      <li>
+        <strong>Security Selection:</strong> 
+        <p>Security selection involves a search for under-priced security. If one has to resort to active stock selection he may employ fundamental / technical analysis to identify stocks which seems to promise superior return and concentrate the stock components of portfolio on them.</p>
+        <p>As far as bonds are concerned security selection calls for choosing bonds which offer the highest yields to maturity and at a given level of risk.</p>
+      </li>
+
+      <li>
+        <strong>Use of Specialised Investment Concept:</strong> 
+        <p>To achieve superior return, one has to employ a specialised concept/philosophy particularly with respect to investment in stocks. The concept which have been exploited successfully are growth stock, neglected or out of favour stocks, asset stocks, technology stocks and cyclical stocks.</p>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q4A",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Foreign Exchange Exposure and Risk Management",
+  placement: 1,
+  marks: 8,
+  question_html: `
+    <p><strong>(a)</strong> BDR Ltd. is an Indian export business house. The company prepares invoice in customers' currency. It has debtors amounting US$ 10 Million which are due to be received on April 1, 2023.</p>
+    
+    <p>Market information as at January 1, 2023 is:</p>
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <thead>
+        <tr>
+          <th style="text-align: left;" colspan="2">Exchange rates US$/INR</th>
+          <th style="text-align: left;" colspan="2">Currency Futures US$/INR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Spot</td>
+          <td style="text-align: center;">0.012500</td>
+          <td>Contract size:</td>
+          <td style="text-align: center;">₹ 32,816,474</td>
+        </tr>
+        <tr>
+          <td>1-month forward</td>
+          <td style="text-align: center;">0.012422</td>
+          <td>1-month</td>
+          <td style="text-align: center;">0.012417</td>
+        </tr>
+        <tr>
+          <td>3-months forward</td>
+          <td style="text-align: center;">0.012195</td>
+          <td>3-month</td>
+          <td style="text-align: center;">0.012189</td>
+        </tr>
+        <tr>
+          <th style="text-align: left;" colspan="2">Initial Margin</th>
+          <th style="text-align: left;" colspan="2">Interest rates in India</th>
+        </tr>
+        <tr>
+          <td>1-Month</td>
+          <td style="text-align: center;">₹ 22,500</td>
+          <td style="text-align: center;" colspan="2">6.5%</td>
+        </tr>
+        <tr>
+          <td>3-Months</td>
+          <td style="text-align: center;">₹ 27,500</td>
+          <td style="text-align: center;" colspan="2">7%</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>On April 1, 2023, the spot rate US$/INR is 0.012199 and Currency Futures rate is 0.012198.</p>
+    
+    <p>Advise which of the following methods would be most advantageous to BDR Ltd. or keep the exposure unhedged.</p>
+    <ol style="list-style-type: lower-roman;">
+      <li>Using forward contract</li>
+      <li>Using currency futures.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <ol style="list-style-type: lower-roman;">
+      <li>
+        <p><strong>Receipts using a Forward Contract</strong> = US$ 10 Million / 0.012195</p>
+        <p>= <strong>₹ 820,008,200</strong></p>
+      </li>
+
+      <li>
+        <p><strong>Receipts using Currency Futures</strong></p>
+        <p>The number of contracts needed is (US$ 10 Million / 0.012189) / 32,816,474 = 25 contracts</p>
+        <p>Initial margin payable is 25 contracts &times; ₹ 27,500 = ₹ 687,500</p>
+        <p>On April 1, 2023 Close at 0.012198</p>
+        <p>Receipts = US$ 10 Million / 0.012199 = ₹ 819,739,323</p>
+        <p>Variation Margin = [(0.012198 &ndash; 0.012189) &times; 25 &times; 32,816,474] / 0.012199</p>
+        <p>OR</p>
+        <p>(0.000009 &times; 25 &times; 32,816,474) / 0.012199</p>
+        <p>= 7383.71 / 0.012199 = ₹ 605,271</p>
+        
+        <table border="0" cellpadding="3" cellspacing="0" style="width: 100%; max-width: 400px;">
+          <tbody>
+            <tr>
+              <td>Receipts</td>
+              <td style="text-align: right;">₹ 819,739,323</td>
+            </tr>
+            <tr>
+              <td>Add: Variation Margin</td>
+              <td style="text-align: right;">₹ 605,271</td>
+            </tr>
+            <tr>
+              <td>Less: Interest Cost (₹ 687,500 &times; 0.07 &times; 3/12)</td>
+              <td style="text-align: right;">(₹ 12,031)</td>
+            </tr>
+            <tr>
+              <td><strong>Net Receipts</strong></td>
+              <td style="text-align: right;"><strong>₹ 820,332,563</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+
+      <li>
+        <p><strong>Receipt if exposure is kept unhedged</strong></p>
+        <p>US$ 10 Million / 0.012199 = <strong>₹ 819,739,323</strong></p>
+      </li>
+    </ol>
+    
+    <p><strong>Advise:</strong> The most advantageous option would be to hedge with <strong>Futures</strong> because it yields the highest net receipt.</p>
+  `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q4B",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Security Valuation",
+  placement: 2,
+  marks: 2,
+  question_html: `
+    <p><strong>(b)</strong> A convertible bond with a face value of ₹ 5,000 is issued at ₹ 6,750 with a coupon rate of 10.5%. The conversion rate is 14 shares per bond. The current market price of the bond and share is ₹ 7,375 and ₹ 400 respectively.</p>
+    
+    <p>Determine:</p>
+    <ol style="list-style-type: lower-roman;">
+      <li>Stock Value of Bond.</li>
+      <li>The premium over conversion value.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <ol style="list-style-type: lower-roman;">
+      <li>
+        <p>Conversion rate is 14 shares per bond and Market price of share is ₹ 400, then</p>
+        <p><strong>Stock Value of Bond</strong> shall be: 14 &times; ₹ 400 = <strong>₹ 5,600</strong></p>
+      </li>
+      <li>
+        <p><strong>Premium over Conversion Value</strong> = (₹ 7,375 - ₹ 5,600) / ₹ 5,600 &times; 100</p>
+        <p>= 1,775 / 5,600 &times; 100 = <strong>31.70%</strong></p>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q4C",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Securitization",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p><strong>(c)</strong> Although rating agency is secondary to the process of securitization but it plays a vital role. Explain.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p>Yes, this statement is correct since the securitization is based on the pools of assets rather than the originators, the assets must be assessed in terms of its credit quality and credit support available. Rating agency assesses the following:</p>
+    <ul>
+      <li>Strength of the Cash Flow.</li>
+      <li>Mechanism to ensure timely payment of interest and principle repayment.</li>
+      <li>Credit quality of obligors.</li>
+      <li>Liquidity support.</li>
+      <li>Strength of legal framework.</li>
+    </ul>
+  `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q5A",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+  placement: 1,
+  marks: 10,
+  question_html: `
+    <p><strong>(a)</strong> During the audit of the Weak Bank (W), RBI suggested that the Bank should either merge with another bank or may close down. Strong Bank (S) has submitted a proposal for the merger of Weak Bank with itself. The relevant information and Balance Sheets of both the companies are as follows:</p>
+    
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Particulars</th>
+          <th style="text-align: center;">Weak Bank (W)</th>
+          <th style="text-align: center;">Strong Bank (S)</th>
+          <th style="text-align: center;">Assigned Weights (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gross NPA (%)</td>
+          <td style="text-align: center;">8</td>
+          <td style="text-align: center;">1</td>
+          <td style="text-align: center;">30%</td>
+        </tr>
+        <tr>
+          <td>Capital Adequacy Ratio (CAR)</td>
+          <td style="text-align: center;">5</td>
+          <td style="text-align: center;">16</td>
+          <td style="text-align: center;">28%</td>
+        </tr>
+        <tr>
+          <td>Market price per Share (MPS) (₹)</td>
+          <td style="text-align: center;">12</td>
+          <td style="text-align: center;">96</td>
+          <td style="text-align: center;">32%</td>
+        </tr>
+        <tr>
+          <td>Book value</td>
+          <td style="text-align: center;"></td>
+          <td style="text-align: center;"></td>
+          <td style="text-align: center;">10%</td>
+        </tr>
+        <tr>
+          <td>Trading on Stock Exchange</td>
+          <td style="text-align: center;">Irregular</td>
+          <td style="text-align: center;">Frequent</td>
+          <td style="text-align: center;"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Balance Sheets (₹ in Lakhs)</strong></p>
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Particulars</th>
+          <th style="text-align: right;">Weak Bank (W)</th>
+          <th style="text-align: right;">Strong Bank (S)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paid-up Share Capital (₹ 10/share)</td>
+          <td style="text-align: right;">300</td>
+          <td style="text-align: right;">1000</td>
+        </tr>
+        <tr>
+          <td>Reserves & Surplus</td>
+          <td style="text-align: right;">160</td>
+          <td style="text-align: right;">11000</td>
+        </tr>
+        <tr>
+          <td>Deposits</td>
+          <td style="text-align: right;">8000</td>
+          <td style="text-align: right;">88000</td>
+        </tr>
+        <tr>
+          <td>Other Liabilities</td>
+          <td style="text-align: right;">1780</td>
+          <td style="text-align: right;">5000</td>
+        </tr>
+        <tr>
+          <td><strong>Total Liabilities</strong></td>
+          <td style="text-align: right;"><strong>10240</strong></td>
+          <td style="text-align: right;"><strong>105000</strong></td>
+        </tr>
+        <tr>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Cash in Hand & with RBI</td>
+          <td style="text-align: right;">800</td>
+          <td style="text-align: right;">5000</td>
+        </tr>
+        <tr>
+          <td>Balance with Other Banks</td>
+          <td style="text-align: right;">-</td>
+          <td style="text-align: right;">4000</td>
+        </tr>
+        <tr>
+          <td>Investments</td>
+          <td style="text-align: right;">2200</td>
+          <td style="text-align: right;">38000</td>
+        </tr>
+        <tr>
+          <td>Advances</td>
+          <td style="text-align: right;">7000</td>
+          <td style="text-align: right;">54000</td>
+        </tr>
+        <tr>
+          <td>Other Assets</td>
+          <td style="text-align: right;">140</td>
+          <td style="text-align: right;">4000</td>
+        </tr>
+        <tr>
+          <td>Preliminary Expenses</td>
+          <td style="text-align: right;">100</td>
+          <td style="text-align: right;">-</td>
+        </tr>
+        <tr>
+          <td><strong>Total Assets</strong></td>
+          <td style="text-align: right;"><strong>10240</strong></td>
+          <td style="text-align: right;"><strong>105000</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>You are required to prepare the Balance Sheet after the merger duly supported by adequate workings.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p><strong>Working Notes:</strong></p>
+    <p>To prepare Revised Balance Sheet we need to calculate swap ratio, number of shares to be issued to Weak Bank and Capital Reserve or Goodwill on merger as follows:</p>
+
+    <p><strong>(1) Calculation of Book Value per Share</strong></p>
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Particulars</th>
+          <th style="text-align: right;">Weak Bank (W)</th>
+          <th style="text-align: right;">Strong Bank (S)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Share Capital (₹ Lakhs)</td>
+          <td style="text-align: right;">300</td>
+          <td style="text-align: right;">1,000</td>
+        </tr>
+        <tr>
+          <td>Reserves & Surplus (₹ Lakhs)</td>
+          <td style="text-align: right;">160</td>
+          <td style="text-align: right;">11,000</td>
+        </tr>
+        <tr>
+          <td>Less: Preliminary Expenses (₹ Lakhs)</td>
+          <td style="text-align: right;">100</td>
+          <td style="text-align: right;">--</td>
+        </tr>
+        <tr>
+          <td><strong>Net Worth or Book Value (₹ Lakhs)</strong></td>
+          <td style="text-align: right;"><strong>360</strong></td>
+          <td style="text-align: right;"><strong>12,000</strong></td>
+        </tr>
+        <tr>
+          <td>No. of Outstanding Shares (Lakhs)</td>
+          <td style="text-align: right;">30</td>
+          <td style="text-align: right;">100</td>
+        </tr>
+        <tr>
+          <td><strong>Book Value Per Share (₹)</strong></td>
+          <td style="text-align: right;"><strong>12</strong></td>
+          <td style="text-align: right;"><strong>120</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(2) Swap Ratio</strong></p>
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Particulars</th>
+          <th style="text-align: center;">Ratio</th>
+          <th style="text-align: center;">Weight</th>
+          <th style="text-align: center;">Product</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gross NPA</td>
+          <td style="text-align: center;">1:8</td>
+          <td style="text-align: center;">1/8 &times; 30%</td>
+          <td style="text-align: center;">0.0375</td>
+        </tr>
+        <tr>
+          <td>CAR</td>
+          <td style="text-align: center;">5:16</td>
+          <td style="text-align: center;">5/16 &times; 28%</td>
+          <td style="text-align: center;">0.0875</td>
+        </tr>
+        <tr>
+          <td>Market Price</td>
+          <td style="text-align: center;">12:96</td>
+          <td style="text-align: center;">12/96 &times; 32%</td>
+          <td style="text-align: center;">0.0400</td>
+        </tr>
+        <tr>
+          <td>Book Value Per Share</td>
+          <td style="text-align: center;">12:120</td>
+          <td style="text-align: center;">12/120 &times; 10%</td>
+          <td style="text-align: center;">0.0100</td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: right;"><strong>Total Swap Ratio</strong></td>
+          <td style="text-align: center;"><strong>0.1750</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Thus, for every share of Weak Bank, 0.1750 share of Strong Bank shall be issued.</p>
+
+    <p><strong>(3) No. of equity shares to be issued:</strong></p>
+    <p>(300 / 10) &times; 0.1750 = <strong>5.25 lakh shares</strong></p>
+
+    <p><strong>(4) Calculation of Capital Reserve</strong></p>
+    <table border="0" cellpadding="3" cellspacing="0" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
+      <tbody>
+        <tr>
+          <td>Book Value of Shares</td>
+          <td style="text-align: right;">₹ 360.00 lac</td>
+        </tr>
+        <tr>
+          <td>Less: Value of Shares issued (5.25 &times; ₹ 10)</td>
+          <td style="text-align: right;">₹ 52.50 lac</td>
+        </tr>
+        <tr>
+          <td><strong>Capital Reserve</strong></td>
+          <td style="text-align: right;"><strong>₹ 307.50 lac</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Balance Sheet after Merger</strong></p>
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Liabilities</th>
+          <th style="text-align: right;">₹ lac</th>
+          <th style="text-align: left;">Assets</th>
+          <th style="text-align: right;">₹ lac</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paid up Share Capital (1000 + 52.50)</td>
+          <td style="text-align: right;">1052.50</td>
+          <td>Cash in Hand & RBI (800 + 5000)</td>
+          <td style="text-align: right;">5800.00</td>
+        </tr>
+        <tr>
+          <td>Reserves & Surplus</td>
+          <td style="text-align: right;">11000.00</td>
+          <td>Balance with other banks (0 + 4000)</td>
+          <td style="text-align: right;">4000.00</td>
+        </tr>
+        <tr>
+          <td>Capital Reserve</td>
+          <td style="text-align: right;">307.50</td>
+          <td>Investment (2200 + 38000)</td>
+          <td style="text-align: right;">40200.00</td>
+        </tr>
+        <tr>
+          <td>Deposits (8000 + 88000)</td>
+          <td style="text-align: right;">96000.00</td>
+          <td>Advances (7000 + 54000)</td>
+          <td style="text-align: right;">61000.00</td>
+        </tr>
+        <tr>
+          <td>Other Liabilities (1780 + 5000)</td>
+          <td style="text-align: right;">6780.00</td>
+          <td>Other Assets (140 + 4000)</td>
+          <td style="text-align: right;">4140.00</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td style="text-align: right;"><strong>115140.00</strong></td>
+          <td><strong>Total</strong></td>
+          <td style="text-align: right;"><strong>115140.00</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q5B",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Foreign Exchange Exposure and Risk Management",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p><strong>(b)</strong> The SWIFT plays an important role in Foreign Exchange dealings. Explain.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p>The SWIFT plays an important role in Foreign Exchange dealings because of the following reasons:</p>
+    <ul>
+      <li>In addition to validation statements and documentation it is a form of quick settlement as messaging takes place within seconds.</li>
+      <li>Because of security and reliability helps to reduce Operational Risk.</li>
+      <li>Since it enables its customers to standardise transaction it brings operational efficiencies and reduced costs.</li>
+      <li>It also ensures full backup and recovery system.</li>
+      <li>Acts as a catalyst that brings financial agencies to work together in a collaborative manner for mutual interest.</li>
+    </ul>
+  `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q6A",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Advanced Capital Budgeting Decisions",
+  placement: 1,
+  marks: 6,
+  question_html: `
+    <p><strong>(a)</strong> XYZ Ltd. is considering taking up one of the two projects-Project-X and Project-Y. Both the projects having same life require equal investment of ₹ 1600 lakhs each. Both are estimated to have almost the same yield. As the company is new to this type of business, the cash flow arising from the projects cannot be estimated with certainty. An attempt was therefore, made to use probability to analyse the pattern of cash flow from other projects during the first year of operations. This pattern is likely to continue during the life of these projects. The results of the analysis are as follows:</p>
+    
+    <p><strong>Project X</strong></p>
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 400px; margin-bottom: 20px;">
+      <thead>
+        <tr>
+          <th style="text-align: center;">Cash Flow (in ₹ Lakh)</th>
+          <th style="text-align: center;">Probability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="text-align: center;">220</td><td style="text-align: center;">0.10</td></tr>
+        <tr><td style="text-align: center;">260</td><td style="text-align: center;">0.20</td></tr>
+        <tr><td style="text-align: center;">300</td><td style="text-align: center;">0.40</td></tr>
+        <tr><td style="text-align: center;">340</td><td style="text-align: center;">0.20</td></tr>
+        <tr><td style="text-align: center;">380</td><td style="text-align: center;">0.10</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>Project Y</strong></p>
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 400px; margin-bottom: 20px;">
+      <thead>
+        <tr>
+          <th style="text-align: center;">Cash Flow (in ₹ Lakh)</th>
+          <th style="text-align: center;">Probability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="text-align: center;">180</td><td style="text-align: center;">0.10</td></tr>
+        <tr><td style="text-align: center;">260</td><td style="text-align: center;">0.25</td></tr>
+        <tr><td style="text-align: center;">340</td><td style="text-align: center;">0.30</td></tr>
+        <tr><td style="text-align: center;">420</td><td style="text-align: center;">0.25</td></tr>
+        <tr><td style="text-align: center;">500</td><td style="text-align: center;">0.10</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>Required:</strong></p>
+    <p>Evaluate which of the two projects bears more risk for every percent of expected return.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p>To determine which of the two projects bears more risk for every percent of expected return first we shall calculate Variance and Standard Deviation of both the projects.</p>
+
+    <ol style="list-style-type: lower-roman;">
+      <li>
+        <p><strong>Project X</strong></p>
+        <p>Expected Net Cash Flow<br>
+        = (0.10 &times; 220) + (0.20 &times; 260) + (0.40 &times; 300) + (0.20 &times; 340) + (0.10 &times; 380)<br>
+        = 22 + 52 + 120 + 68 + 38 = <strong>300</strong></p>
+        
+        <p>&sigma;<sup>2</sup> = 0.10(220 &ndash; 300)<sup>2</sup> + 0.20(260 &ndash; 300)<sup>2</sup> + 0.40(300 &ndash; 300)<sup>2</sup> + 0.20(340 &ndash; 300)<sup>2</sup> + 0.10(380 &ndash; 300)<sup>2</sup><br>
+        = 640 + 320 + 0 + 320 + 640 = <strong>1920</strong></p>
+        
+        <p>&sigma; = &radic;1920 = <strong>43.82</strong></p>
+      </li>
+
+      <li>
+        <p><strong>Project Y</strong></p>
+        <p>Expected Net Cash Flow<br>
+        = (0.10 &times; 180) + (0.25 &times; 260) + (0.30 &times; 340) + (0.25 &times; 420) + (0.10 &times; 500)<br>
+        = 18 + 65 + 102 + 105 + 50 = <strong>340</strong></p>
+        
+        <p>&sigma;<sup>2</sup> = 0.10(180 &ndash; 340)<sup>2</sup> + 0.25(260 &ndash; 340)<sup>2</sup> + 0.30(340 &ndash; 340)<sup>2</sup> + 0.25(420 &ndash; 340)<sup>2</sup> + 0.10(500 &ndash; 340)<sup>2</sup><br>
+        = 2560 + 1600 + 0 + 1600 + 2560 = <strong>8320</strong></p>
+        
+        <p>&sigma; = &radic;8320 = <strong>91.21</strong></p>
+      </li>
+    </ol>
+
+    <p>Now we shall calculate Coefficient of Variation</p>
+    <p>Coefficient of Variation = Standard Deviation / Mean</p>
+    <ul>
+      <li>Project X = 43.82 / 300 = <strong>0.146 or 14.61%</strong></li>
+      <li>Project Y = 91.21 / 340 = <strong>0.268 or 26.83%</strong></li>
+    </ul>
+    
+    <p><strong>Project Y bears more risk for every percent of expected return.</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q6B",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Corporate Valuation",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p><strong>(b)</strong> The following data pertains to HPS Inc. engaged in software consultancy business as on 31 December 2023:</p>
+    
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 400px; margin-bottom: 20px;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Particulars</th>
+          <th style="text-align: right;">($ Million)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Income from consultancy</td>
+          <td style="text-align: right;">1870.00</td>
+        </tr>
+        <tr>
+          <td>EBIT</td>
+          <td style="text-align: right;">360.00</td>
+        </tr>
+        <tr>
+          <td>Less: Interest on Loan</td>
+          <td style="text-align: right;">36.00</td>
+        </tr>
+        <tr>
+          <td>EBT</td>
+          <td style="text-align: right;">324.00</td>
+        </tr>
+        <tr>
+          <td>Tax @ 35%</td>
+          <td style="text-align: right;">113.40</td>
+        </tr>
+        <tr>
+          <td><strong>Net Income</strong></td>
+          <td style="text-align: right;"><strong>210.60</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Balance Sheet</strong></p>
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Liabilities</th>
+          <th style="text-align: right;">Amount ($ Million)</th>
+          <th style="text-align: left;">Assets</th>
+          <th style="text-align: right;">Amount ($ Million)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Equity Stock (20 million share @ $ 10 each)</td>
+          <td style="text-align: right;">200</td>
+          <td>Land and Building</td>
+          <td style="text-align: right;">400</td>
+        </tr>
+        <tr>
+          <td>Reserves & Surplus</td>
+          <td style="text-align: right;">650</td>
+          <td>Computers & Softwares</td>
+          <td style="text-align: right;">590</td>
+        </tr>
+        <tr>
+          <td>Loans</td>
+          <td style="text-align: right;">360</td>
+          <td><strong>Current Assets:</strong></td>
+          <td style="text-align: right;"></td>
+        </tr>
+        <tr>
+          <td>Current Liabilities</td>
+          <td style="text-align: right;">360</td>
+          <td>Debtors</td>
+          <td style="text-align: right;">300</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="text-align: right;"></td>
+          <td>Bank</td>
+          <td style="text-align: right;">200</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="text-align: right;"></td>
+          <td>Cash</td>
+          <td style="text-align: right;">80</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td style="text-align: right;"><strong>1570</strong></td>
+          <td><strong>Total</strong></td>
+          <td style="text-align: right;"><strong>1570</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>With the above information and following assumption you are required to compute:</p>
+    <ol style="list-style-type: lower-roman;">
+      <li>Economic Value Added</li>
+      <li>Market Value Added.</li>
+    </ol>
+    <p><strong>Assuming that:</strong></p>
+    <ol>
+      <li>WACC is 12%.</li>
+      <li>The share of company currently quoted at $ 50 each.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p><strong>(i) Determination of Economic Value Added (EVA)</strong></p>
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 500px; margin-bottom: 20px;">
+      <tbody>
+        <tr>
+          <td>EBIT</td>
+          <td style="text-align: right;">$ 360.00 Million</td>
+        </tr>
+        <tr>
+          <td>Less: Taxes @ 35%</td>
+          <td style="text-align: right;">$ 126.00 Million</td>
+        </tr>
+        <tr>
+          <td><strong>Net Operating Profit after Tax (NOPAT)</strong></td>
+          <td style="text-align: right;"><strong>$ 234.00 Million</strong></td>
+        </tr>
+        <tr>
+          <td>Less: Cost of Capital Employed [W. No.1]</td>
+          <td style="text-align: right;">$ 145.20 Million</td>
+        </tr>
+        <tr>
+          <td><strong>Economic Value Added</strong></td>
+          <td style="text-align: right;"><strong>$ 88.80 Million</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(ii) Determination of Market Value Added (MVA)</strong></p>
+    <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 500px; margin-bottom: 20px;">
+      <tbody>
+        <tr>
+          <td>Market value of Equity Stock [W. No. 2]</td>
+          <td style="text-align: right;">$ 1000 Million</td>
+        </tr>
+        <tr>
+          <td>Less: Equity Fund [W. No. 3]</td>
+          <td style="text-align: right;">$ 850 Million</td>
+        </tr>
+        <tr>
+          <td><strong>Market Value Added</strong></td>
+          <td style="text-align: right;"><strong>$ 150 Million</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr style="margin: 20px 0;">
+
+    <p><strong>Working Notes:</strong></p>
+
+    <p><strong>(1) Total Capital Employed</strong></p>
+    <table border="0" cellpadding="3" cellspacing="0" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
+      <tbody>
+        <tr>
+          <td>Equity Stock</td>
+          <td style="text-align: right;">$ 200 Million</td>
+        </tr>
+        <tr>
+          <td>Reserves and Surplus</td>
+          <td style="text-align: right;">$ 650 Million</td>
+        </tr>
+        <tr>
+          <td>Loan</td>
+          <td style="text-align: right;">$ 360 Million</td>
+        </tr>
+        <tr>
+          <td><strong>Total Capital Employed</strong></td>
+          <td style="text-align: right;"><strong>$ 1210 Million</strong></td>
+        </tr>
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr>
+          <td>WACC</td>
+          <td style="text-align: right;">12%</td>
+        </tr>
+        <tr>
+          <td><strong>Cost of Capital employed</strong> ($ 1210 Million &times; 12%)</td>
+          <td style="text-align: right;"><strong>$ 145.20 Million</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(2) Market Price and Value of Equity</strong></p>
+    <table border="0" cellpadding="3" cellspacing="0" style="width: 100%; max-width: 400px; margin-bottom: 20px;">
+      <tbody>
+        <tr>
+          <td>Market Price per equity share (A)</td>
+          <td style="text-align: right;">$ 50</td>
+        </tr>
+        <tr>
+          <td>No. of equity share outstanding (B)</td>
+          <td style="text-align: right;">20 Million</td>
+        </tr>
+        <tr>
+          <td><strong>Market value of equity stock (A) &times; (B)</strong></td>
+          <td style="text-align: right;"><strong>$ 1000 Million</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(3) Equity Fund</strong></p>
+    <table border="0" cellpadding="3" cellspacing="0" style="width: 100%; max-width: 400px;">
+      <tbody>
+        <tr>
+          <td>Equity Stock</td>
+          <td style="text-align: right;">$ 200 Million</td>
+        </tr>
+        <tr>
+          <td>Reserves & Surplus</td>
+          <td style="text-align: right;">$ 650 Million</td>
+        </tr>
+        <tr>
+          <td><strong>Total Equity Fund</strong></td>
+          <td style="text-align: right;"><strong>$ 850 Million</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  `
+},
+{
+  question_id: "AFM_MTPSEP24I_Q6C",
+  source: "ICAI Mock Test Paper - Series I, September 2024",
+  chapter_name: "Startup Finance",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p><strong>(c)</strong> Explain Venture Capital Method of valuing Startups.</p>
+  `,
+  solution_html: `
+    <p><strong>Solution:</strong></p>
+
+    <p>The <strong>Venture Capital (VC) Method</strong> is a popular valuation method primarily used for early-stage and pre-revenue startups where traditional valuation methods (like DCF) are difficult to apply due to lack of historical data and uncertain cash flows. It works backwards from an expected exit value to determine the current valuation and the equity stake the investor should get.</p>
+    
+    <p>The method involves the following key steps:</p>
+    
+    <ol>
+      <li>
+        <strong>Estimate the Exit Valuation (Terminal Value):</strong> 
+        <p>Determine the expected value of the startup at the time the venture capitalist plans to exit the investment (usually in 5 to 8 years). This is typically estimated using industry multiples, such as Price-to-Earnings (P/E) or Price-to-Sales multiples, applied to the projected financial metrics of the exit year.</p>
+      </li>
+      <li>
+        <strong>Determine the Target Return on Investment (ROI):</strong> 
+        <p>Identify the required rate of return expected by the VC. Since early-stage investments carry high risk, VCs usually demand a very high expected rate of return (often ranging between 30% to 50% or even higher, depending on the stage of the startup).</p>
+      </li>
+      <li>
+        <strong>Calculate the Post-Money Valuation:</strong> 
+        <p>Discount the estimated Exit Valuation back to its present value using the VC's Target ROI. This gives the valuation of the company immediately <em>after</em> the VC's investment.</p>
+        <p><em>Post-Money Valuation = Exit Valuation / (1 + Target ROI)<sup>n</sup></em></p>
+        <p>(where 'n' is the number of years until the expected exit).</p>
+      </li>
+      <li>
+        <strong>Calculate the Pre-Money Valuation:</strong> 
+        <p>Deduct the investment amount from the Post-Money Valuation to find out what the startup is worth today, immediately <em>before</em> the investment is made.</p>
+        <p><em>Pre-Money Valuation = Post-Money Valuation &ndash; Investment Amount</em></p>
+      </li>
+      <li>
+        <strong>Determine the Equity Stake:</strong> 
+        <p>Calculate the percentage of ownership the VC will require in exchange for their investment.</p>
+        <p><em>VC Ownership % = Investment Amount / Post-Money Valuation</em></p>
+      </li>
+    </ol>
+  `
 }
 
 ];

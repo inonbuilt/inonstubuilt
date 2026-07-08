@@ -617,4 +617,248 @@ const mcqData = [
     }
   ]
 },
+
+{
+  case_id: "afm_mtpsep24i_cs1",
+  case_chapter: ["Financial Markets and Instruments"],
+  caseText: `
+    <p>Bank A is in need of fund for a period of 14 days. To meet this financial need on 20th September 2023, Bank A enters into an agreement with Bank B under which it will sell 10% Government of India Bonds issued on 1st January 2023 @ 5.65% for ₹ 8 crore (Face value is ₹ 10,000 per Bond).</p>
+
+    <p>The clean price of the same Bond is ₹ 9,942 and the Initial Margin is 2%. The maturity date of the Bond is 31st December 2028.</p>
+
+    <p><em>Note: Consider 360 days in a year and interest is payable annually.</em></p>
+
+    <p><strong>Based on the above case scenario, choose the most appropriate answer to the following:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_mtpsep24i_cs1_1",
+      chapter_name: ["Financial Markets and Instruments"],
+      question: "The arrangement entered into between Bank A and Bank B will be called…………",
+      options: [
+        "Call Money Arrangement",
+        "Commercial Bill Arrangement",
+        "Commercial Paper",
+        "Repurchase Option"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "afm_mtpsep24i_cs1_2",
+      chapter_name: ["Financial Markets and Instruments"],
+      question: "Dirty Price of the Bond will approximately be…………",
+      options: [
+        "₹ 10,353",
+        "₹ 10,670",
+        "₹ 10,499",
+        "₹ 10,816"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_mtpsep24i_cs1_3",
+      chapter_name: ["Financial Markets and Instruments"],
+      question: "The start proceeds of the transaction shall be approximately…………",
+      options: [
+        "₹ 8,38,36,804",
+        "₹ 8,36,53,000",
+        "₹ 8,58,36,804",
+        "₹ 8,48,52,585"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_mtpsep24i_cs1_4",
+      chapter_name: ["Financial Markets and Instruments"],
+      question: "The second leg of the transaction shall be approximately…………",
+      options: [
+        "₹ 8,38,36,804",
+        "₹ 8,36,53,000",
+        "₹ 8,58,36,804",
+        "₹ 8,48,52,585"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "afm_mtpsep24i_cs1_5",
+      chapter_name: ["Financial Markets and Instruments"],
+      question: "The amount of Accrued Interest per Bond shall be approximately…………",
+      options: [
+        "₹ 728",
+        "₹ 720",
+        "₹ 734",
+        "₹ 714"
+      ],
+      answer: 0
+    }
+  ]
+},
+{
+  case_id: "afm_mtpsep24i_cs2",
+  case_chapter: ["Mutual Funds"],
+  caseText: `
+    <p>The Asset Management Company (AMC) of a Mutual Fund has declared a dividend of 9.98% on the units under the dividend reinvestment plan for the year ended 31st March 2021. The investors are issued additional units for the dividend at the closing Net Asset Value (NAV) for the year as per the conditions of the scheme.</p>
+
+    <p>The closing NAV was ₹ 24.95 as on 31st March 2021. An investor, Mr. X, holding 20,800 units at the year-end had made the investment before the declaration of dividend at the rate of opening NAV plus an entry load of ₹ 0.04. The NAV appreciated by 25% during the year.</p>
+
+    <p><em>Note: Assume the face value of each unit is ₹ 10.00.</em></p>
+
+    <p><strong>Based on the above case scenario, choose the most appropriate answer to the following:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_mtpsep24i_cs2_1",
+      chapter_name: ["Mutual Funds"],
+      question: "The Opening NAV of the Asset Management Company shall be…………",
+      options: [
+        "₹ 20.24",
+        "₹ 19.96",
+        "₹ 18.75",
+        "₹ 17.65"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_mtpsep24i_cs2_2",
+      chapter_name: ["Mutual Funds"],
+      question: "The number of units purchased shall be…………",
+      options: [
+        "18,750",
+        "17,500",
+        "20,450",
+        "20,000"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "afm_mtpsep24i_cs2_3",
+      chapter_name: ["Mutual Funds"],
+      question: "Original amount of the investment shall be…………",
+      options: [
+        "₹ 4,00,000",
+        "₹ 6,50,000",
+        "₹ 3,55,000",
+        "₹ 5,65,000"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "afm_mtpsep24i_cs2_4",
+      chapter_name: ["Mutual Funds"],
+      question: "Which of the following statement(s) about Expense Ratio is/are incorrect?<br><br>(i) It is the percentage of income that is spent to run a Mutual Fund.<br>(ii) It includes advisory fees, travel costs, registrar fees, custodian fees, etc.<br>(iii) It includes brokerage costs for trading of portfolio.<br>(iv) High Expense Ratio can seriously undermine the performance of a Mutual Fund scheme.",
+      options: [
+        "(i), (ii), (iii)",
+        "(i), (iii)",
+        "Only (iii)",
+        "Only (i)"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_mtpsep24i_cs2_5",
+      chapter_name: ["Mutual Funds"],
+      question: "……………… considers and uses downside deviation instead of total standard deviation in the denominator.",
+      options: [
+        "Expense Ratio",
+        "Sharpe Ratio",
+        "Treynor Ratio",
+        "Sortino Ratio"
+      ],
+      answer: 3
+    }
+  ]
+},
+
+{
+  case_id: "afm_mtpsep24i_cs3",
+  case_chapter: ["Derivatives"],
+  caseText: `
+    <p>You, as an investor, purchased a 4-month European Call Option on the equity shares of X Ltd. for a premium of ₹ 10 per share. The current market price of the share is ₹ 132 per share and the exercise price is ₹ 150 per share. You expect the share price at maturity to range between ₹ 120 and ₹ 190.</p>
+
+    <p>The expected share prices of X Ltd. at the end of 4 months and their related probabilities are as follows:</p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <th>Expected Price (₹)</th>
+        <td>120</td>
+        <td>140</td>
+        <td>160</td>
+        <td>180</td>
+        <td>190</td>
+      </tr>
+      <tr>
+        <th>Probability</th>
+        <td>0.05</td>
+        <td>0.20</td>
+        <td>0.50</td>
+        <td>0.10</td>
+        <td>0.15</td>
+      </tr>
+    </table>
+
+    <p><strong>Based on the above case scenario, choose the most appropriate answer to the following:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_mtpsep24i_cs3_1",
+      chapter_name: ["Derivatives"],
+      question: "Expected price of the share of X Ltd. at the end of 4 months shall be…………",
+      options: [
+        "₹ 160.00",
+        "₹ 160.50",
+        "₹ 158.00",
+        "₹ 140.00"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_mtpsep24i_cs3_2",
+      chapter_name: ["Derivatives"],
+      question: "Suppose the exercise price prevails at the end of 4 months. The value of the Call Option shall be…………",
+      options: [
+        "₹ 0",
+        "₹ 18",
+        "₹ 10",
+        "₹ 14"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "afm_mtpsep24i_cs3_3",
+      chapter_name: ["Derivatives"],
+      question: "In case the option is held till maturity, the expected value of the Call Option shall be…………",
+      options: [
+        "₹ 0",
+        "₹ 18",
+        "₹ 10",
+        "₹ 14"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "afm_mtpsep24i_cs3_4",
+      chapter_name: ["Derivatives"],
+      question: "In the given different scenarios of expected share prices of X Ltd. at the time of maturity, the option shall be in-the-money in…………scenarios.",
+      options: [
+        "Two",
+        "Three",
+        "Five",
+        "In none of the scenarios"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_mtpsep24i_cs3_5",
+      chapter_name: ["Derivatives"],
+      question: "In the given different scenarios of expected share prices of X Ltd. at the time of maturity, the option shall be at-the-money in…………scenarios.",
+      options: [
+        "Two",
+        "Three",
+        "Five",
+        "In none of the scenarios"
+      ],
+      answer: 3
+    }
+  ]
+}
 ];
