@@ -414,5 +414,210 @@ const mcqData = [
       "answer": 1
     }
   ]
-}
+},
+{
+  "case_id": "AUD_MTPSEP24I_cs1",
+  "case_chapter": [
+    "SA 501 – Audit Evidence",
+    "SA 510 – Initial Audit Engagements – Opening Balances",
+    "SA 570 (Revised) – Going Concern",
+    "CARO 2020",
+    "Companies (Audit and Auditors) Rules, 2014 – Rule 11(g)"
+  ],
+  "caseText": "MNO Ltd., incorporated in the financial year 1980-81, is a distinguished company specialising in the manufacturing of nickel-based batteries. As one of the oldest manufacturing companies in this sector, MNO Ltd. operates with two manufacturing plants and a comprehensive distribution network that spans across India. Remarkably, MNO Ltd. was among the first companies to be listed on the stock exchange, underscoring its longstanding presence in the market. The company has consistently adhered to the Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015, ensuring compliance with all regulatory standards.\n\nM/s KP & Co. were the statutory auditor in the previous year and resigned from the role of statutory auditor. M/s JKL & Co. has been appointed as a statutory auditor of MNO Ltd. in the FY 2023-24. In conducting initial audit engagement, M/s JKL & Co. has simply placed reliance on the closing balances of preceding period.\n\nDuring the audit, the auditor observed that the company is unable to pay its creditors on time. The company is also not able to properly comply with the terms of the loan agreement with the banks. Moreover, several key ratios are also adverse. In view of the above, the auditor asked management to provide assessment of going concern, however the management did not provide the same. Despite following up, the management did not provide the requested assessment. As a result, the auditor documented the request and follow-up regarding the going concern assessment in the working papers.\n\nApart from the above, the company has one accounting software for maintaining its books of accounts, which does not have any feature of edit log (Audit Trail). Accordingly, the auditor reported the said fact of not having the facility of edit log under the heading Other Legal & Regulatory Requirements – Rule 11(g) of the Companies (Audit and Auditors) Rules, 2014 in the main audit report.\n\nApart from above facts, the several important financial information of MNO Limited during the year ended 31st March 2024 are tabulated as below: (₹ in Crore)\n\n1. Paid Up Share Capital – ₹ 10 Crore.\n2. Deficit balance in Profit & Loss Account – ₹ 11.47 Crore.\n3. Turnover – ₹ 85 Crore.\n4. Inventory – ₹ 15 Crore.\n5. Cash Loss – ₹ 2.95 Crore.\n6. Operating Loss – ₹ 1.97 Crore.\n\nOut of total inventory as above, inventory amounting to ₹ 12.35 Crore are lying with third party.",
+  "questions": [
+    {
+      "question_id": "AUD_MTPSEP24I_cs1_1",
+      "chapter_name": [
+        "SA 570 (Revised) – Going Concern"
+      ],
+      "question": "As per the requirement of SA 570, how auditor should deal in the matter of unwillingness of management to provide for the assessment relating to going concern?",
+      "options": [
+        "Auditor should report such matters in the section of Key Audit Matter.",
+        "The auditor should properly document evidence relating to asking management and its subsequent follow up with the management for assessment on going concern and accordingly should express unmodified opinion.",
+        "Auditor should report such matters in Emphasis of Matter Paragraph Section.",
+        "Auditor should express modified opinion in his audit report."
+      ],
+      "answer": 3
+    },
+    {
+      "question_id": "AUD_MTPSEP24I_cs1_2",
+      "chapter_name": [
+        "SA 501 – Audit Evidence"
+      ],
+      "question": "As per SA 501, what is the correct audit procedure to be followed regarding the existence and condition of inventory wherein an inventory valued ₹ 12.35 crore is lying with the third party?",
+      "options": [
+        "The auditor should rely on the management explanation regarding the inventory lying with the third party.",
+        "The auditor should request confirmation from third party as to the quantities and condition of the inventory held with them or perform inspection or other audit procedures as appropriate.",
+        "The auditor should verify the inventory lying with the company.",
+        "The auditor should take written representation only from the management regarding the inventory lying with the third party."
+      ],
+      "answer": 1
+    },
+    {
+      "question_id": "AUD_MTPSEP24I_cs1_3",
+      "chapter_name": [
+        "CARO 2020"
+      ],
+      "question": "State the amount required to be reported by the auditor of MNL Ltd., under clause 3(xvii) of Para 3 of CARO, 2020 on account of losses during the year under consideration.",
+      "options": [
+        "₹ 4.92 Crore",
+        "₹ 1.97 Crore",
+        "₹ 2.95 Crore",
+        "₹ 11.47 Crore"
+      ],
+      "answer": 2
+    },
+    {
+      "question_id": "AUD_MTPSEP24I_cs1_4",
+      "chapter_name": [
+        "SA 510 – Initial Audit Engagements – Opening Balances"
+      ],
+      "question": "According to SA 510, which of the following audit procedures can be implemented by M/s JKL & Co. to obtain sufficient and appropriate audit evidence on the opening balances about whether it contain any material misstatement that could affect financial statements of current year?\n\n(i) Closing balances of the preceding period have been correctly brought forward to the current period.\n(ii) Performing specific audit procedures to obtain evidence regarding its opening balances.\n(iii) Determining whether the opening balances reflects the application of appropriate accounting policies.",
+      "options": [
+        "Only (i)",
+        "Only (iii)",
+        "Only (i) and (iii)",
+        "(i), (ii) and (iii)"
+      ],
+      "answer": 3
+    }
+  ]
+},
+{
+  "case_id": "AUD_MTPSEP24I_cs2",
+  "case_chapter": [
+    "CARO 2020 – NBFC Reporting Requirements",
+    "SA 510 – Initial Audit Engagements – Opening Balances",
+    "SA 250 – Consideration of Laws and Regulations in an Audit of Financial Statements",
+    "SA 505 – External Confirmations"
+  ],
+  "caseText": "EFG Ltd., incorporated in 1984-85, has distinguished itself as one of the most rapidly growing non-banking financial companies (NBFCs) having principal business of granting loans. Its head office is situated in Pune, a city renowned for its dynamic financial and industrial sectors. Remarkably, EFG Ltd. holds the notable achievement of being among the first NBFCs to be listed on the stock exchange, which underscores its longstanding and influential presence in the financial market. Over the years, the company has demonstrated an unwavering commitment to regulatory compliance by consistently adhering to the Securities and Exchange Board of India's (SEBI) Listing Obligations and Disclosure Requirements Regulations of 2015. This steadfast adherence ensures that all its operations align with the rigorous standards set by regulatory authorities, thereby reinforcing its credibility and trustworthiness among investors and stakeholders.\n\nM/s SDS & Co. thoroughly obtained the knowledge and background of the company, including an understanding of the legal and regulatory requirements applicable to the company.\n\nDuring the audit of the financial statements, auditor observed that, the company has violated one of the prudential guidelines of RBI as applicable to the company relating to the acceptance of public deposit. Since the company was non deposit-taking, and in one case during the year under consideration, the company had accepted the public deposit. In this regard, the management has also provided a detailed note in the financial statements and subsequently also repaid the said deposit in the next financial year. Considering the said note, the auditor feels that the matter is important and required attention of the users of the financial statements.\n\nThe auditor of EFG Ltd. sent confirmation requests to 14 debtors (to whom loan has been granted) to confirm the year-end balances as per SA 505. The said requests were designed in such a way that debtors will directly respond to the auditor only when they disagree with the same.",
+  "questions": [
+    {
+      "question_id": "AUD_MTPSEP24I_cs2_1",
+      "chapter_name": [
+        "CARO 2020 – NBFC Reporting Requirements"
+      ],
+      "question": "Considering the nature of the business, which Reporting clauses of CARO, 2020 would be applicable from below:\n\n(i) Whether the company has conducted any Non-Banking Financial or Housing Finance activities without a valid Certificate of Registration (CoR) from the Reserve Bank of India as per the Reserve Bank of India Act, 1934.\n\n(ii) In respect of loans and advances in the nature of loans, whether the schedule of repayment of principal and payment of interest has been stipulated and whether the repayments or receipts are regular.\n\n(iii) Whether the company is required to be registered under section 45-IA of the Reserve Bank of India Act, 1934 and if so, whether the registration has been obtained.\n\n(iv) Whether the company has provided any loans, guarantee or provided security to any other entity.",
+      "options": [
+        "Only (i) and (iii)",
+        "Only (i), (ii) and (iii)",
+        "Only (i) and (ii)",
+        "Only (i), (ii) and (iv)"
+      ],
+      "answer": 1
+    },
+    {
+      "question_id": "AUD_MTPSEP24I_cs2_2",
+      "chapter_name": [
+        "SA 510 – Initial Audit Engagements – Opening Balances"
+      ],
+      "question": "What is the auditor’s responsibility when the audit of EFG Ltd. for the previous year has not been conducted by the current auditor i.e. M/s SDS & Co.?",
+      "options": [
+        "The auditor needs to report such matters in the other matter paragraph in the main audit report and shall be responsible for obtaining sufficient and appropriate audit evidence that the opening balances does not contain any material misstatement.",
+        "The auditor needs to report such matter in the emphasis of matter paragraph and shall be responsible for obtaining sufficient and appropriate audit evidence that the opening balances does not contain any material misstatement.",
+        "The auditor needs to report such matter in the emphasis of matter paragraph only.",
+        "The auditor needs to report such matters in the other matter paragraph only."
+      ],
+      "answer": 0
+    },
+    {
+      "question_id": "AUD_MTPSEP24I_cs2_3",
+      "chapter_name": [
+        "SA 250 – Consideration of Laws and Regulations in an Audit of Financial Statements"
+      ],
+      "question": "In the given case, what is the reporting requirement in relation to SA 250, on the part of auditor, with reference to violating guidelines by the company relating to the acceptance of public deposit?",
+      "options": [
+        "The auditor is required to report such matters in the main audit report under the head other matter paragraph section only.",
+        "The auditor is required to report such matters in the main audit report under the head Emphasis of Matter paragraph section only.",
+        "Apart from reporting under the Emphasis of Matter paragraph, the auditor is also required to report to RBI.",
+        "Apart from reporting under the Other Matter paragraph, the auditor is also required to report to RBI."
+      ],
+      "answer": 2
+    }
+  ]
+},
+{
+  "case_id": "AUD_MTPSEP24I_cs3",
+  "case_chapter": [
+    "Professional Ethics – Chartered Accountants Act, 1949",
+    "Business Responsibility and Sustainability Reporting (BRSR)",
+    "National Guidelines on Responsible Business Conduct (NGRBC)",
+    "Code of Ethics – Permitted Activities for Members in Practice"
+  ],
+  "caseText": "CA Ram and CA Lakshman are close friends and are into practice as sole proprietors. Both decided to expand their focus on taking up more assignments in the field of Goods & Services Tax. On back of the same, they both decided to conduct a joint training session for their clients on GST and decided to share the total fee collected thereof. They invited another CA from their professional circle to join the initiative, however, the person declined the same informing that this act was against professional ethics and will lead to disciplinary action from ICAI.\n\nThe partner of M/s AK & Associates is a close friend of CA Ram. The firm was involved in an audit of a listed company which was required to submit Business Responsibility and Sustainability Report (BRSR). The company being audited was into thermal energy production business in India. They had submitted details about the total emissions from its production outlets during the year and a detailed energy consumption plan which it had devised for the upcoming years. Since CA Ram had undergone a course on Sustainability Reporting, he was approached for getting advice on what needs to be reported in the BRSR of the company. As a gesture for helping the firm, the partner of the firm suggested CA Ram’s name to the post of becoming a member in the Board of Management of KYC Co-operative Bank, a Primary (Urban) Co-operative Bank and a client of AK & Associates. Upon hearing the same, CA Lakshman requested Ram not to take up the post as it would lead to professional misconduct.\n\nCA Ram was acting as an internal auditor of PL Technologies Private Limited. The company decided to raise more funds for expanding its business across the country by including new age technological services such as AI. Ram was observing the business model and the way in which the company was operating for quite some time, and he was keen on investing in the company. As a result, he decided to invest in the company’s shares and ended up acquiring 9.75% of the shares (total face value of the shares acquired was ₹ 4.75 lakhs) of the company during the financial year. CA Lakshman got to know about this information, and he immediately urged Ram to resign from being the internal auditor of PL Technologies Private Limited, for the reason that an internal auditor cannot hold any shares in the company, and it will lead to professional misconduct and also failure to comply with the provisions of the Companies Act, 1949. However, Ram did not accept the argument of Lakshman, and he said that nothing will happen because of him acquiring 9.75% shares in the company and continuing to act as its internal auditor.\n\nCA Lakshman was the statutory auditor for GH Finance Private Limited, a NBFC headquartered in India. The company’s treasury department had undergone changes in the recent past and the current set of team members did not have much experience in handling the treasury functions. Due to this situation, the company reached out to their auditor CA Lakshman who was also into equity research advisory apart from CA practice, to support the company and the members of its treasury department for a brief period by giving Investment Advisory Services, to ensure efficient utilization and management of the funds of the company. Before committing anything on the offer, CA Lakshman wanted to consult with CA Ram as to whether the service requested by the NBFC can be performed by him.",
+  "questions": [
+    {
+      "question_id": "AUD_MTPSEP24I_cs3_1",
+      "chapter_name": [
+        "Professional Ethics – Chartered Accountants Act, 1949"
+      ],
+      "question": "Whether the act of conducting joint training session on GST by CA Ram & Lakshman and sharing of the fee collected leads to professional misconduct as per the Chartered Accountants Act, 1949?",
+      "options": [
+        "Yes, as per clause 2 of Part I of First Schedule, a CA in practice is allowed only to pay / share the commission or brokerage or profits from his professional business only with another practicing CA. It does not allow sharing of any fee collected from joint training sessions. Hence both CA Ram & Lakshman are guilty of professional misconduct.",
+        "Yes, CA Ram & Lakshman will be held guilty of professional misconduct for conducting the joint training session on GST as per Part IV (other misconduct) of the First Schedule of the Chartered Accountants Act, 1949.",
+        "Yes, this is a case of solicitation of client whereby, CA Ram can influence clients of CA Lakshman and vice-versa. Hence the conduct of the joint training session will lead to being guilty of professional misconduct as per clause 6 of Part I of First Schedule.",
+        "No, as per the recent decisions of Ethical Standards Board, it is permissible for 2 or more CA in practice collectively to have joint training session for their clients on GST, and share the fee collected from the clients thereof."
+      ],
+      "answer": 3
+    },
+    {
+      "question_id": "AUD_MTPSEP24I_cs3_2",
+      "chapter_name": [
+        "Business Responsibility and Sustainability Reporting (BRSR)"
+      ],
+      "question": "With regards to the BRSR reporting on the data of total emissions & the future energy consumption plans of the company, how do you treat them?",
+      "options": [
+        "The details of the emission forms part of the Essential Indicators and need to be mandatorily disclosed. However, the plan for future energy consumption is only a Leadership Indicator and is considered as optional disclosure.",
+        "Both the details of the emission & future energy consumption plans form part of the Essential Indicators and needs to be mandatorily disclosed in the BRSR.",
+        "The details of the emission are a Leadership Indicator and is considered as optional disclosure, whereas the plan for future energy consumption is an Essential Indicator and needs to be mandatorily disclosed in the BRSR.",
+        "Both the details of the emission & future energy consumption plans form part of the Leadership Indicators and are considered as optional disclosure."
+      ],
+      "answer": 0
+    },
+    {
+      "question_id": "AUD_MTPSEP24I_cs3_3",
+      "chapter_name": [
+        "National Guidelines on Responsible Business Conduct (NGRBC)"
+      ],
+      "question": "The futuristic plan which the company has for its energy consumption can be categorized under which principle of National Guidelines on responsible business conduct?",
+      "options": [
+        "Principle 1 – Ethics, Transparency and Accountability",
+        "Principle 6 – Protection and Restoration of Environment",
+        "Principle 4 – Respect for Stakeholder’s Interests and Responsiveness",
+        "Principle 7 – Influence on Public and Regulatory Policy"
+      ],
+      "answer": 1
+    },
+    {
+      "question_id": "AUD_MTPSEP24I_cs3_4",
+      "chapter_name": [
+        "Professional Ethics – Chartered Accountants Act, 1949"
+      ],
+      "question": "By accepting the offer to become a member of the Board of Management of KYC Co-operative Bank, do you think that CA Ram would be held guilty of professional misconduct?",
+      "options": [
+        "Yes. As per clause 11 of Part I of First Schedule CA Ram would be held guilty of professional misconduct for engaging in another profession/occupation without the permission of ICAI.",
+        "It is permissible for a CA in practice to become a member of the board of management in primary (Rural) co-operative banks. Hence, CA Ram would be held guilty of professional misconduct if he accepts the offer.",
+        "It is permissible for a CA in practice to become a member of the Board of management in primary (urban) co-operative banks. Hence, CA Ram would not be held guilty of professional misconduct if he accepts the offer.",
+        "Yes. CA Ram would be held guilty of professional misconduct under Part III (other misconduct in relation to members of the Institute generally) of Second Schedule, as Ram is getting this offer as a reciprocation for helping AK & Associates."
+      ],
+      "answer": 2
+    },
+    {
+      "question_id": "AUD_MTPSEP24I_cs3_5",
+      "chapter_name": [
+        "Professional Ethics – Permitted Activities for Members in Practice"
+      ],
+      "question": "In the given case, it is mentioned that CA Lakshman is a practicing CA and is also engaged as an Equity Research Advisor. Do you think that CA Lakshman will be held guilty of professional misconduct as per the provisions of the Chartered Accountants Act, 1949?",
+      "options": [
+        "No. A CA in practice may be an equity research advisor, but he cannot publish retail reports as it would amount to other business or occupation. Thus, if CA Lakshman doesn’t publish any reports, he will not be held guilty of professional misconduct.",
+        "Yes. As per clause 11 of Part I of First Schedule CA Ram would be held guilty of professional misconduct for engaging in another profession/occupation without the permission of ICAI.",
+        "A CA in practice cannot be an Equity Research Advisor, for his existing clients or for any other person. Hence, CA Lakshman will be held guilty of professional misconduct.",
+        "Yes. As per clause 11 of Part I of First Schedule read with Part III of Second Schedule, CA Ram would be held guilty of professional misconduct for engaging in another profession/occupation without the permission of ICAI."
+      ],
+      "answer": 0
+    }
+  ]
+},
 ];
