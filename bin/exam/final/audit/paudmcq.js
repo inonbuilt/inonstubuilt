@@ -620,4 +620,297 @@ const mcqData = [
     }
   ]
 },
+{
+  "case_id": "AUD_MTPSEP24II_cs1",
+  "case_chapter": [
+    "SA 570 – Going Concern",
+    "SA 540 – Auditing Accounting Estimates and Related Disclosures",
+    "SA 250 – Consideration of Laws and Regulations in an Audit",
+    "SA 705 – Modifications to the Opinion in the Independent Auditor’s Report",
+    "CARO 2020 – Utilisation of Term Loans"
+  ],
+  "caseText": `
+    <p>
+      GROSS Ltd., an unlisted company in Jamshedpur, is engaged in the business of
+      spices. Total paid up capital of the company is ₹ 10 Crore. Details of annual turnover
+      and profit of the company for the last 3 years are given below:
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Year ended</th>
+        <th>Turnover (₹ in crore)</th>
+        <th>Profit (loss) before tax (₹ in crore)</th>
+      </tr>
+      <tr>
+        <td>31-03-2022</td>
+        <td>475.20 (Audited)</td>
+        <td>65.75</td>
+      </tr>
+      <tr>
+        <td>31-03-2023</td>
+        <td>278.35 (Audited)</td>
+        <td>01.32</td>
+      </tr>
+      <tr>
+        <td>31-03-2024</td>
+        <td>108.25 (provisional)</td>
+        <td>(06.25)</td>
+      </tr>
+    </table>
+
+    <p>
+      The company is using conventional method for preparing spices. This requires more
+      human intervention and hence, cost of production is high as compared to innovative
+      method used by other new companies. Though the company had significant growth
+      in the past years, it has not done well over the last two financial years due to
+      competition.
+    </p>
+
+    <p>
+      A new competitor viz, Spice Herbs Ltd., had come in the market during the year 2022
+      and by the end of March, 2023, they captured around 75% of market share by
+      offering the product at a reduced price. They use new machinery which allows
+      minimizing manual steps and reducing cost of labour.
+    </p>
+
+    <p>
+      In order to reduce cost of production and thereby re-capture the market, the
+      management of GROSS Ltd. has planned to erect a new plant with an automatic
+      machine. The estimated cost of plant & machinery is ₹ 75 lakh. The company
+      approached IDN Bank Ltd. for a term loan of ₹ 70 lakh which would be repaid in 5
+      years. On 28-12-2023, the bank had sanctioned the loan; and disbursed ₹ 35 lakh
+      till 31st March, 2024.
+    </p>
+
+    <p>
+      GROSS Ltd. has appointed M/s Hook & Crook, Chartered Accountants, as auditors of
+      the company at its AGM held on 15-08-2023 for a period of 5 years. As agreed,
+      the audit team commenced their audit work for the year 2023-24 in February, 2024
+      and completed the work by the end of May, 2024. The audit team submitted following
+      findings to the engagement partner:
+    </p>
+
+    <ul>
+      <li>
+        PX Ltd., one of the material suppliers, filed a case against the company on
+        10-08-2023 for a compensation of ₹ 2.5 crore.
+      </li>
+      <li>
+        Company has made an estimate for allowance of debtors @8%.
+      </li>
+      <li>
+        65% of the value of inventory was only covered in physical verification during
+        the year 2023 due to fire.
+      </li>
+      <li>
+        Company got a show cause notice from State Pollution Control Board for the
+        contravention of the provisions of Hazardous and Waste Management Rule.
+      </li>
+      <li>
+        Three incidences of fraud noticed (Total ₹ 1.25 crore)- fraud committed by the
+        Purchase manager ₹ 90 Lakh, by Accounts manager ₹ 15 Lakh and by a cashier
+        ₹ 20 Lakh.
+      </li>
+    </ul>
+
+    <p>
+      Based on the above facts, answer the following MCQs:
+    </p>
+  `,
+  "questions": [
+    {
+      "question_id": "AUD_MTPSEP24II_cs1_1",
+      "chapter_name": [
+        "SA 570 – Going Concern"
+      ],
+      "question": "Though the company had significant growth in the past years, it has not done well over the last two financial years. As per SA 570, there are certain events or conditions that individually or collectively may cast significant doubt about the going concern assumptions. In order to assess whether GROSS Ltd. is a going concern or not, which of the following audit procedures should not be performed?",
+      "options": [
+        "Analyse and discuss with the management of the company to find out whether installation of new plant and machinery would enable the company to reduce cost of production.",
+        "Inquire the company’s legal counsel regarding existence of legal litigation and claim against the company, reasonableness of management assessments of their outcome and estimate of their financial implication.",
+        "Evaluating management’s future plan and strategy to increase market share of product.",
+        "Analyse and discuss the company’s cash flow and profit of the previous years with the projected accounts."
+      ],
+      "answer": 3
+    },
+    {
+      "question_id": "AUD_MTPSEP24II_cs1_2",
+      "chapter_name": [
+        "SA 540 – Auditing Accounting Estimates and Related Disclosures"
+      ],
+      "question": "Company has made an estimate for allowance of debtors @8%. Some financial statement items cannot be measured precisely but can only be estimated. The nature and reliability of information available to management to support the making of an accounting estimate varies widely, which thereby affects the degree of estimating uncertainty associated with accounting estimates. Please advise which among the following may have higher estimate uncertainty and higher risk as per SA 540?",
+      "options": [
+        "Judgments about the outcome of pending litigation with PX Ltd. against the company.",
+        "Estimates made for inventory obsolescence that are frequently made and updated.",
+        "A model used to measure the accounting estimates is well known and the assumptions to the model are observable in marketplace.",
+        "Accounting estimate made for allowance for doubtful debts where the result of the auditors’ review of similar accounting estimates made in the prior period financial statements do not indicate any substantial difference between the original accounting estimate and the actual outcome."
+      ],
+      "answer": 0
+    },
+    {
+      "question_id": "AUD_MTPSEP24II_cs1_3",
+      "chapter_name": [
+        "SA 705 – Modifications to the Opinion in the Independent Auditor’s Report"
+      ],
+      "question": "The company in the notes accompanying its financial statements disclosed the existence of suit filed against the company with full details. Based on the audit evidence obtained, it is necessary to draw user’s attention to the matter presented in the financial statement by way of clear additional communication as there is an uncertainty relating to the future outcome of the litigation. In this situation, which of the following reporting option would be correct if auditor is satisfied with the conclusions reached by the management and this matter is fundamental to the reader of financial statements?",
+      "options": [
+        "Include an Emphasis of Matter paragraph in Auditors report having a clear reference to the matter being emphasized and issue a qualified opinion.",
+        "Include in the Basis for Adverse opinion paragraph and issue an adverse opinion having a clear reference to the matter referred in the notes on accounts.",
+        "Include in the Basis for Disclaimer of opinion paragraph having a clear reference to the matter and issue a disclaimer opinion.",
+        "Include an Emphasis of Matter Paragraph in Auditors report having a clear reference to the matter being emphasized and to where relevant disclosures that fully describe the matter can be found in the financial statement."
+      ],
+      "answer": 3
+    },
+    {
+      "question_id": "AUD_MTPSEP24II_cs1_4",
+      "chapter_name": [
+        "SA 250 – Consideration of Laws and Regulations in an Audit"
+      ],
+      "question": "Company got a show cause notice from State Pollution Control Board. As per SA 250, the auditor shall perform the audit procedures to help identify instances of non-compliance with other laws and regulations that may have a material effect on the financial statements. As the audit team of the company became aware of information concerning an instance of non-compliance with law, what would NOT be the audit procedure to be performed?",
+      "options": [
+        "Understand the nature of the act and circumstances in which it has occurred and obtain further information to evaluate the possible effect on the financial statement.",
+        "Discuss the matter with management and if they do not provide sufficient information; and if the effect of non-compliance seems to be material, legal advice may be obtained.",
+        "Monitoring legal requirement and compliance with code of conduct and ensuring that operating procedures are designed to assist in the prevention of non-compliance with law and regulation and report accordingly.",
+        "Evaluate the implication of non-compliance in relation to other aspects of audit including risk assessment and reliability of written representation and take appropriate action."
+      ],
+      "answer": 2
+    },
+    {
+      "question_id": "AUD_MTPSEP24II_cs1_5",
+      "chapter_name": [
+        "CARO 2020 – Utilisation of Term Loans"
+      ],
+      "question": "The company had availed some amount of loan for new plant and machinery during the year under audit. Out of the total loan sanctioned, an amount of ₹ 35 lakh was earmarked for the purchase of the machinery - Spice Grinder; but the company has acquired an improved model of machinery, viz, Spice grinder and mixer instead. State which of the reporting option would be correct.",
+      "options": [
+        "State the fact in CARO report that out of term loan taken for machinery-spice grinder, ₹ 35 Lakh was not utilized for acquiring the machinery for which it was sanctioned.",
+        "Ask the management to change terms and condition of term loan as the company has acquired a different machinery. Report under CARO, if the management does not agree to the demand.",
+        "State the fact in CARO report that the term loan taken has been applied for the purpose for which it was sanctioned.",
+        "State the fact in CARO report that the term loan taken has not been applied for the purpose for which it was sanctioned. Also qualify the report as there are misstatements that are material but not pervasive."
+      ],
+      "answer": 2
+    }
+  ]
+},
+{
+  "case_id": "AUD_MTPSEP24II_cs2",
+  "case_chapter": [
+    "Bank Audit – Concurrent Audit",
+    "Professional Ethics – Chartered Accountants Act, 1949",
+    "Audit of Banks"
+  ],
+  "caseText": "The UNCO Bank Ltd. was having 145 branches all over India by the year ending 31st March 2023. Twelve branches of the bank were already covered for concurrent audit and the Bank’s Audit Committee decided to include the below mentioned branches for concurrent audit from the year 2023-24.\n\n(i) Udaipur branch which deals in treasury functions like investments and interbank borrowings but not in bill re-discounting.\n\n(ii) Varanasi branch which started foreign exchange business from February 2024.\n\n(iii) Chandigarh branch whose aggregate deposits were more than 35% of the aggregate deposits of the bank.\n\nGlobe and Associates, Chartered Accountants were appointed as the stock auditors by the Bank’s audit committee for four branches for year 2022-23. The Bank’s management appointed and fixed the remuneration of Globe and Associates, Chartered Accountants as the statutory auditors also for the year 2022-23, for the same five branches for which they were given the assignment of stock audit.\n\nAt the Kolkata branch of the bank there were high value cash deposits in one of the current accounts during April 2023. Your firm has been appointed as the concurrent auditors for the Kolkata branch for the year 2023-24. The cash collected by the branch was remitted to currency chest on the very same day but, during the concurrent audit for the month of April 2023 itself the auditor noticed that the branch was unable to show intimations sent via e-mail to currency chest for the cash remittance.",
+  "questions": [
+    {
+      "question_id": "AUD_MTPSEP24II_cs2_1",
+      "chapter_name": [
+        "Professional Ethics – Chartered Accountants Act, 1949"
+      ],
+      "question": "Globe and Associates, Chartered Accountants were already appointed for stock audit by the audit committee for the four branches, so whether Globe and Associates, Chartered Accountants are authorised to accept the appointment as statutory auditors for the same branches?",
+      "options": [
+        "Globe and Associates, Chartered Accountants cannot accept the appointment as it was not offered by the audit committee and Bank’s management is not authorised to appoint the auditors.",
+        "Globe and Associates, Chartered Accountants can accept the appointment as they were already appointed for the stock audit of those branches by the audit committee.",
+        "Globe and Associates, Chartered Accountants can accept the appointment as they have been appointed statutory auditors for the same five branches for which they were conducting stock audit.",
+        "Globe and Associates, Chartered Accountants cannot accept the appointment as the audit firms should not undertake statutory audit assignment while they are associated with internal assignments in the Bank during the same year."
+      ],
+      "answer": 3
+    },
+    {
+      "question_id": "AUD_MTPSEP24II_cs2_2",
+      "chapter_name": [
+        "Audit of Banks"
+      ],
+      "question": "Whether the Bank’s Management is authorised to appoint and fix the remuneration of statutory auditors without consulting the Audit Committee of the Board of Directors or members in Annual General Meeting?",
+      "options": [
+        "Bank’s Management cannot appoint or fix the remuneration of the statutory auditor unless the same is passed by a resolution in the Annual General Meeting of the Bank.",
+        "Bank’s Management can appoint and fix the remuneration of statutory auditors only in consultation with the Audit Committee of the Board of Directors.",
+        "Globe and Associates, Chartered Accountants were already appointed for stock audit by the audit committee, therefore only audit committee was authorised to appoint or fix their remuneration as statutory auditors.",
+        "Globe and Associates, Chartered Accountants were already appointed for stock audit by the audit committee, so the Bank’s Management is authorised to appoint the same firm as the statutory auditors without consulting the audit committee or members in the Annual General Meeting."
+      ],
+      "answer": 0
+    },
+    {
+      "question_id": "AUD_MTPSEP24II_cs2_3",
+      "chapter_name": [
+        "Concurrent Audit of Banks"
+      ],
+      "question": "How the discrepancy of not preserving the intimations of cash remittances to currency chest by Kolkata branch of the bank should be dealt by the concurrent auditor in his audit report?",
+      "options": [
+        "The auditor should report the matter as a major irregularity in his audit report to the management.",
+        "The auditor should verify the details from e-mail sent to currency chest and close the matter.",
+        "As it is a minor irregularity the auditor can ignore the same.",
+        "The auditor should discuss the importance of preserving the hard / soft copy of e-mail sent for cash remittance with the Branch Manager and check for its compliance in the next audit period."
+      ],
+      "answer": 3
+    }
+  ]
+},
+{
+  "case_id": "AUD_MTP_OCT24_CS3",
+  "case_chapter": [
+    "SA 200 – Overall Objectives of the Independent Auditor",
+    "SA 580 – Written Representations",
+    "Professional Ethics – Chartered Accountants Act, 1949"
+  ],
+  "caseText": "M/s AIM & Co. Chartered Accountants is a newly started firm. Their first assignment was to conduct a statutory audit of M/s DM Crackers Ltd. (a cracker manufacturing company). Since it was their first audit, the partners immediately accepted the work, without paying attention to the relevant procedures. They started their audit work from 25th May 2023 for the financial year ended 31st March 2023.\n\nDuring the course of audit, the auditors requested for the financials of the preceding previous year, along with the details of transactions till 25th May of the current year. The management argued that both the details were out of the scope of audit. However, after repeated requests, they finally provided the details in September 2023.\n\nIt was suspected that the senior accountant could have indulged in a fraud amounting to ₹115 lakh. However, on further investigation by management it was found that there was a gross mistake on part of the accountant amounting to ₹17 lakh. The company provided proper and correct evidence for the balance amount; hence the auditors were convinced that no fraud had taken place. Due to absence of audit committee, auditors suggested to the director (finance) to replace the existing accountant as he was poor in basic accounting skills.\n\nInitially, the company thought of handing over tax audit work to the previous auditor. However, due to a bad experience regarding contents of tax audit report, especially disclosure of key ratios, AIM & Co. was appointed as tax auditors also.\n\nAfter conclusion of audit, Mr. Shyam, one of the partners of the firm, was confused as to whether the firm could be held guilty of professional misconduct for violation of any provisions of Chartered Accountants Act, 1949.\n\nLater, M/s Hire (P) Ltd., a recruitment agency contacted Mr. Shyam regarding a vacancy in a leading manufacturing company. Mr. Shyam resigned as partner of AIM & Co. and joined the company. The agency raised an invoice for service rendered amounting to 0.2% of CTC offered. Mr. Shyam agreed to pay the amount but received full discount on invoice since his friend was a manager at the agency.\n\nMr. Ghanshyam filed a complaint with ICAI stating that Mr. Shyam violated provisions of Chartered Accountants Act. In retaliation, Mr. Shyam filed a complaint against Mr. Ghanshyam stating that he was guilty of misconduct for acting as Registration Authority for obtaining digital signatures for clients.",
+  "questions": [
+    {
+      "question_id": "AUD_MTP_OCT24_CS3_12",
+      "chapter_name": [
+        "SA 200 – Overall Objectives of the Independent Auditor",
+        "Audit Evidence"
+      ],
+      "question": "What can you infer from the situation given in Point I?",
+      "options": [
+        "Management was right. Both the details asked by the auditors were out of the scope of audit.",
+        "The auditors have the right to ask only the details of preceding previous year and not the details of transactions till 15th May of current year.",
+        "Both the auditors and the management have the right to ask both the details and the right to not provide both the details.",
+        "The auditors have the right to ask both the details. The management’s contention that it is out of the scope of audit is wrong."
+      ],
+      "answer": 3
+    },
+    {
+      "question_id": "AUD_MTP_OCT24_CS3_13",
+      "chapter_name": [
+        "Professional Ethics – Chartered Accountants Act, 1949"
+      ],
+      "question": "Is M/s AIM & Co. guilty of professional misconduct for violating any of the provisions of the Chartered Accountants Act, 1949? If so, as per which clause?",
+      "options": [
+        "Yes, as per Clause 1 of Part I of Second Schedule.",
+        "Yes, as per Clause 8 of Part I of First Schedule.",
+        "Yes, as per Clause 2 of Part II of Second Schedule.",
+        "No. The firm has not violated any of the provisions and hence not guilty of professional misconduct."
+      ],
+      "answer": 1
+    },
+    {
+      "question_id": "AUD_MTP_OCT24_CS3_14",
+      "chapter_name": [
+        "Professional Ethics – Chartered Accountants Act, 1949"
+      ],
+      "question": "Is Mr. Shyam guilty of professional misconduct, if so, as per which clause?",
+      "options": [
+        "Yes, as per Clause 1 of Part I of First Schedule.",
+        "Yes, as per Clause 2 of Part II of Second Schedule.",
+        "No. Mr. Shyam is not guilty of professional misconduct.",
+        "Yes, as per Clause 1 of Part II of First Schedule."
+      ],
+      "answer": 3
+    },
+    {
+      "question_id": "AUD_MTP_OCT24_CS3_15",
+      "chapter_name": [
+        "Professional Ethics – Chartered Accountants Act, 1949"
+      ],
+      "question": "Is Mr. Ghanshyam guilty of professional misconduct, if so, under which clause?",
+      "options": [
+        "No. Mr. Ghanshyam is not guilty of professional misconduct.",
+        "Yes, as per Clause 11 of Part I of First Schedule.",
+        "Yes, as per Part III of Second Schedule.",
+        "Yes, as per Clause 1 of Part II of First Schedule."
+      ],
+      "answer": 0
+    }
+  ]
+}
+
 ];

@@ -6,7 +6,7 @@ const descriptiveQuestions = [
     placement: 1,
     marks: 5,
     question_html: `
-      <p><strong>(a)</strong> While conducting the statutory audit of Tasty Foods Limited, CA. Careful has planned attendance at physical inventory count of the company from 29<sup>th</sup> March to 31<sup>st</sup> March 2024.</p>
+      <p> While conducting the statutory audit of Tasty Foods Limited, CA. Careful has planned attendance at physical inventory count of the company from 29<sup>th</sup> March to 31<sup>st</sup> March 2024.</p>
 
       <p>The company is engaged in the business of extracting rice from paddy grains and caters to domestic as well as international market particularly in Gulf region. It has its plant spread in an area of about 20 acres located in National Capital Region (NCR). Paddy contained in jute bags of nearly standard sizes is purchased from dealers/agents. It is stored in heaps on pallets (kind of wooden structures) in open area covered by protective sheets and in steel silos (silos are huge steel containers with measuring strain gauges) in company’s premises.</p>
 
@@ -100,7 +100,7 @@ const descriptiveQuestions = [
     placement: 1,
     marks: 5,
     question_html: `
-      <p><strong>(b)</strong> While conducting audit of CGX Limited, a listed company, for year 2022-23, CA. Srishti notices that company has extinguished following material liabilities unilaterally without entering into settlement with creditors and reported these amounts as gains under <strong>“Other income”</strong>. The details in this respect are as under:</p>
+      <p> While conducting audit of CGX Limited, a listed company, for year 2022-23, CA. Srishti notices that company has extinguished following material liabilities unilaterally without entering into settlement with creditors and reported these amounts as gains under <strong>“Other income”</strong>. The details in this respect are as under:</p>
 
       <table border="1" cellspacing="0" cellpadding="5">
         <tr>
@@ -176,7 +176,7 @@ const descriptiveQuestions = [
     placement: 1,
     marks: 4,
     question_html: `
-      <p><strong>(c)</strong> FAB Limited is availing the services of Atiya Private Limited for its payroll operations. Payroll cost accounts for <strong>63%</strong> of total cost for FAB Limited. Atiya Private Limited has provided the <strong>Type 2 Report</strong> as specified under SA 402 for its description, design and operating effectiveness of controls.</p>
+      <p> FAB Limited is availing the services of Atiya Private Limited for its payroll operations. Payroll cost accounts for <strong>63%</strong> of total cost for FAB Limited. Atiya Private Limited has provided the <strong>Type 2 Report</strong> as specified under SA 402 for its description, design and operating effectiveness of controls.</p>
 
       <p>Atiya Private Limited has also outsourced a material part of payroll operation to <strong>M/s RST & Associates</strong> in such a way that M/s RST & Associates is a <strong>sub-service organisation</strong> to FAB Limited. The Type 2 Report which was provided by Atiya Private Limited was based on the <strong>carve-out method</strong> as specified under SA 402.</p>
 
@@ -203,7 +203,7 @@ const descriptiveQuestions = [
     placement: 2,
     marks: 5,
     question_html: `
-      <p><strong>(a)</strong> TPX & Co., Chartered Accountants is a large audit firm. It maintains audit documentation both electronically and in physical form (hard files). The physical files are neither scanned and incorporated into electronic files nor cross-referenced to the electronic files.</p>
+      <p> TPX & Co., Chartered Accountants is a large audit firm. It maintains audit documentation both electronically and in physical form (hard files). The physical files are neither scanned and incorporated into electronic files nor cross-referenced to the electronic files.</p>
 
       <p>Further, there are many instances where audit working papers do not contain details as to whether information was obtained from client or prepared by engagement team.</p>
 
@@ -244,7 +244,7 @@ const descriptiveQuestions = [
     placement: 2,
     marks: 4,
     question_html: `
-      <p><strong>(b)</strong> IT dependencies also arise due to <strong>“system generated reports”</strong> and <strong>“interfaces”</strong>.</p>
+      <p> IT dependencies also arise due to <strong>“system generated reports”</strong> and <strong>“interfaces”</strong>.</p>
 
       <p><strong>How do such IT dependencies arise? Why is it important to identify IT dependencies to develop an effective and efficient audit approach?</strong></p>
     `,
@@ -279,7 +279,7 @@ const descriptiveQuestions = [
     placement: 2,
     marks: 5,
     question_html: `
-      <p><strong>(c)</strong> CA. Gyan is a Chartered Accountant in practice and also an engineer by qualification. He wants to pursue a registered valuer course and work as a registered valuer for <strong>Plant and Machinery</strong> under the <strong>Companies Act, 2013</strong>.</p>
+      <p> CA. Gyan is a Chartered Accountant in practice and also an engineer by qualification. He wants to pursue a registered valuer course and work as a registered valuer for <strong>Plant and Machinery</strong> under the <strong>Companies Act, 2013</strong>.</p>
 
       <p><strong>Comment on the above with reference to the provisions of the Chartered Accountants Act, 1949.</strong></p>
     `,
@@ -306,7 +306,7 @@ const descriptiveQuestions = [
     placement: 3,
     marks: 4,
     question_html: `
-      <p><strong>(a)</strong> Jagdish Pvt. Ltd. is engaged in the business of real estate. The auditor of the company requested the information from the management to review the outcome of accounting estimates (like estimated costs considered for percentage completion etc.) included in the prior period financial statements and their subsequent re-estimation for the purpose of the current period.</p>
+      <p> Jagdish Pvt. Ltd. is engaged in the business of real estate. The auditor of the company requested the information from the management to review the outcome of accounting estimates (like estimated costs considered for percentage completion etc.) included in the prior period financial statements and their subsequent re-estimation for the purpose of the current period.</p>
 
       <p>The management has refused the information to the auditor saying that the review of prior period information should not be done by the auditor.</p>
 
@@ -345,7 +345,7 @@ const descriptiveQuestions = [
     placement: 3,
     marks: 5,
     question_html: `
-      <p><strong>(b)</strong> RML & Associates are one of the joint auditors of IND Bank for the year 2022-23. While auditing IND Bank, they are analysing industry data relating to NPAs in select public sector banks as part of risk assessment procedures:</p>
+      <p> RML & Associates are one of the joint auditors of IND Bank for the year 2022-23. While auditing IND Bank, they are analysing industry data relating to NPAs in select public sector banks as part of risk assessment procedures:</p>
 
       <table border="1" cellspacing="0" cellpadding="5">
         <tr>
@@ -411,7 +411,7 @@ const descriptiveQuestions = [
     placement: 3,
     marks: 5,
     question_html: `
-      <p><strong>(c)</strong> Mr. Mohit is a Chartered Accountant in practice. He has recently been appointed as the GST Auditor of Smart India Private Limited under the provisions of the Goods and Services Tax Act.</p>
+      <p> Mr. Mohit is a Chartered Accountant in practice. He has recently been appointed as the GST Auditor of Smart India Private Limited under the provisions of the Goods and Services Tax Act.</p>
 
       <p><strong>Briefly explain the duties of the auditor while conducting audit under the GST law.</strong></p>
     `,
@@ -701,9 +701,9 @@ const descriptiveQuestions = [
 
       <p>When the auditor’s report on the audited financial statements contains a qualified opinion, but the auditor is satisfied that the summary financial statements are consistent, in all material respects, with or are a fair summary of the audited financial statements, in accordance with the applied criteria, the auditor’s report on the summary financial statements shall, in addition to the elements of auditor’s report on summary financial statements described in SA 810:-</p>
 
-      <p><strong>(a)</strong> State that the auditor’s report on the audited financial statements contains a qualified opinion and</p>
+      <p> State that the auditor’s report on the audited financial statements contains a qualified opinion and</p>
 
-      <p><strong>(b)</strong> Describe:</p>
+      <p> Describe:</p>
 
       <ol type="i">
       <li>The basis for the qualified opinion on the audited financial statements, and that qualified opinion; and</li>
@@ -812,7 +812,7 @@ const descriptiveQuestions = [
     "placement": 1,
     "marks": 5,
     "question_html": `
-      <p><strong>(a)</strong> Nandini Ltd., a chemical manufacturing company having its factory located at Kanawali Village, for the year 2022-23 appointed Vasu & Co. as their statutory auditors. During the course of the audit, Vasu & Co. identified that Nandini Ltd. received a show cause notice from the National Green Tribunal based on the investigation performed by the regional forest department for violating environmental laws.</p>
+      <p> Nandini Ltd., a chemical manufacturing company having its factory located at Kanawali Village, for the year 2022-23 appointed Vasu & Co. as their statutory auditors. During the course of the audit, Vasu & Co. identified that Nandini Ltd. received a show cause notice from the National Green Tribunal based on the investigation performed by the regional forest department for violating environmental laws.</p>
       <p>Upon gathering a further understanding of the said matter, it was identified that Nandini Ltd. was dumping toxic solid waste, without treating it, on the nearby grounds, and because of this, the nearby water bodies were getting polluted. Based on the preliminary investigation performed by the regional forest department under the directions of the National Green Tribunal, it was identified that these practices were carried out since 2009 and a lot of damage has been done to the environment by Nandini Ltd. A show cause notice was already issued to Nandini Ltd. by the National Green Tribunal for levying the penalty of an amount of ₹700 crore.</p>
       <p>The unaudited profit for the financial year 2022-23 of Nandini Ltd. was ₹49 crore and the unaudited turnover was ₹120 crore. Upon inquiry it was identified that Nandini Ltd. has disclosed this matter in the financial statements by way of footnote, the extract of which is provided below:</p>
       <p><em>“The company has received a show cause notice from the National Green Tribunal for some potential violation of environmental laws and the company’s legal department has assessed and found that the judgment would be in favour of the company. Accordingly, no provision has been created for such notices.”</em></p>
@@ -845,7 +845,7 @@ const descriptiveQuestions = [
     "placement": 2,
     "marks": 4,
     "question_html": `
-      <p><strong>(b)</strong> Pine & Associates is the statutory auditor of BB Ltd., a listed company and started its operations 6 years ago. The fieldwork during the audit of the financial statements of the company for the year ended 31st March, 2023 was completed on 1st May, 2023. The auditor’s report was dated 15th May, 2023. During the documentation review of the engagement, it was observed that the engagement quality control review was completed on 18th May, 2023. The engagement partner had completed his reviews in entirety by 12th May, 2023. Comment.</p>
+      <p> Pine & Associates is the statutory auditor of BB Ltd., a listed company and started its operations 6 years ago. The fieldwork during the audit of the financial statements of the company for the year ended 31st March, 2023 was completed on 1st May, 2023. The auditor’s report was dated 15th May, 2023. During the documentation review of the engagement, it was observed that the engagement quality control review was completed on 18th May, 2023. The engagement partner had completed his reviews in entirety by 12th May, 2023. Comment.</p>
     `,
     "solution_html": `
       
@@ -875,7 +875,7 @@ const descriptiveQuestions = [
     "placement": 3,
     "marks": 5,
     "question_html": `
-      <p><strong>(c)</strong> Aditya Ltd. was engaged in the business of owning and managing hotels and resorts, selling tourism packages and performing airline bookings for corporate and individuals. It appointed Sanjay & Co. as its statutory auditor for the financial year 2022-23. While planning the audit, the audit team decided that the risk of improper revenue recognition from hotel business should not be treated as a fraud risk. This conclusion was based on the assessment of earlier years, wherein no fraud was identified in revenue recorded from such business.</p>
+      <p> Aditya Ltd. was engaged in the business of owning and managing hotels and resorts, selling tourism packages and performing airline bookings for corporate and individuals. It appointed Sanjay & Co. as its statutory auditor for the financial year 2022-23. While planning the audit, the audit team decided that the risk of improper revenue recognition from hotel business should not be treated as a fraud risk. This conclusion was based on the assessment of earlier years, wherein no fraud was identified in revenue recorded from such business.</p>
       <p>While testing the internal financial controls over the process of revenue recognition, it was identified that the controls are not properly designed to mitigate the risk of fraud and risk of improper revenue recognition. As a result, the audit team decided to perform additional substantive testing. However, the audit team still arrived at the conclusion that there is no risk of fraud in revenue recognition.</p>
       <p>During the course of substantive testing, it was identified that the management did not account for revenue received from corporate hotel bookings amounting to ₹43 crore. These amounts were partially received in the company’s bank accounts and partially received in the CFO’s personal account. The amounts received in the bank account of the company were disclosed as advances received against future bookings.</p>
       <p>In the light of above scenario, kindly guide the statutory auditors with respect to their responsibility relating to fraud in an audit of a financial statement.</p>
@@ -905,7 +905,7 @@ const descriptiveQuestions = [
     "placement": 4,
     "marks": 5,
     "question_html": `
-      <p><strong>(a)</strong> Suneel was appointed as the auditor of PCM Ltd. for the financial year 2022-23. During the course of planning for the audit, CA. Suneel intends to apply the concept of materiality for the financial statements as a whole. Please guide him with respect to the factors that may affect the identification of an appropriate benchmark for this purpose.</p>
+      <p> Suneel was appointed as the auditor of PCM Ltd. for the financial year 2022-23. During the course of planning for the audit, CA. Suneel intends to apply the concept of materiality for the financial statements as a whole. Please guide him with respect to the factors that may affect the identification of an appropriate benchmark for this purpose.</p>
       <p>What benchmark should be adopted by CA. Suneel, if PCM Ltd. is engaged in:</p>
       <p><strong>(i)</strong> the manufacture and sale of air conditioners and is having regular profits.</p>
       <p><strong>(ii)</strong> the construction of large infrastructure projects and incurred losses in the previous two financial years, due to pandemic.</p>
@@ -935,7 +935,7 @@ const descriptiveQuestions = [
     "placement": 5,
     "marks": 4,
     "question_html": `
-      <p><strong>(b)</strong> Gravity Ltd. is a medium-sized manufacturing company that is planning to implement a new digital system to streamline its production processes and improve efficiency. The company appointed Mr. Ravi as IT manager. However, he is aware that merging technologies can bring significant benefits but also pose various risks to the organization. In this context, he needs to identify examples of technological risks associated with the implementation of the new digital system and the control considerations necessary to mitigate these risks effectively.</p>
+      <p> Gravity Ltd. is a medium-sized manufacturing company that is planning to implement a new digital system to streamline its production processes and improve efficiency. The company appointed Mr. Ravi as IT manager. However, he is aware that merging technologies can bring significant benefits but also pose various risks to the organization. In this context, he needs to identify examples of technological risks associated with the implementation of the new digital system and the control considerations necessary to mitigate these risks effectively.</p>
     `,
     "solution_html": `
       
@@ -965,7 +965,7 @@ const descriptiveQuestions = [
     "placement": 6,
     "marks": 5,
     "question_html": `
-      <p><strong>(c)</strong> Mr. S is a practising Chartered Accountant based out of Chennai. During the weekends, he involved himself in equity research and used to advise his friends, relatives and other known people who are not his clients. Apart from this, he was also involved as a paper-setter for Accountancy subject in the school in which he studied. He also owned agricultural land and was doing agriculture during his free time. During the year 20X1, heavy losses were incurred in agricultural activity due to natural calamities and misfortune, and he lost almost all of his wealth and became undischarged insolvent. After a few court hearings, finally, in the year 20X3, he was declared discharged insolvent and obtained a certificate from the court stating that his insolvency was caused by misfortune without any misconduct on his part. You are required to comment on the above situation with reference to the Chartered Accountants Act, 1949 and Schedules thereto.</p>
+      <p> Mr. S is a practising Chartered Accountant based out of Chennai. During the weekends, he involved himself in equity research and used to advise his friends, relatives and other known people who are not his clients. Apart from this, he was also involved as a paper-setter for Accountancy subject in the school in which he studied. He also owned agricultural land and was doing agriculture during his free time. During the year 20X1, heavy losses were incurred in agricultural activity due to natural calamities and misfortune, and he lost almost all of his wealth and became undischarged insolvent. After a few court hearings, finally, in the year 20X3, he was declared discharged insolvent and obtained a certificate from the court stating that his insolvency was caused by misfortune without any misconduct on his part. You are required to comment on the above situation with reference to the Chartered Accountants Act, 1949 and Schedules thereto.</p>
     `,
     "solution_html": `
       
@@ -1002,7 +1002,7 @@ const descriptiveQuestions = [
     "placement": 7,
     "marks": 4,
     "question_html": `
-      <p><strong>(a)</strong> BPMR and Associates, a renowned audit firm in the field of CA practice for the past three decades, was appointed to conduct the statutory audit of Rexlon Ltd., an unlisted company engaged in the business of paper manufacturing. The firm decided to commence the audit for the recently concluded financial year. After making significant progress in the audit, the auditors made the following observations:</p>
+      <p> BPMR and Associates, a renowned audit firm in the field of CA practice for the past three decades, was appointed to conduct the statutory audit of Rexlon Ltd., an unlisted company engaged in the business of paper manufacturing. The firm decided to commence the audit for the recently concluded financial year. After making significant progress in the audit, the auditors made the following observations:</p>
       <p><strong>Observation 1:</strong> The management had disclosed in the financials that, during the year, one of the warehouses of the Company was affected due to a major flood. As a result of the same, the Company had incurred some losses. But the management was of the view that it was not material.</p>
       <p><strong>Observation 2:</strong> Due to the flood, few records maintained by the Company with respect to a particular transaction was completely destroyed and there was no duplicate record maintained by the Company. However, those details were not pervasive, but material.</p>
       <p>You are required to advise whether BPMR and Associates should report Observation 1 and 2 in its audit report? If so, under which heading should it be reported?</p>
@@ -1030,7 +1030,7 @@ const descriptiveQuestions = [
     "placement": 8,
     "marks": 5,
     "question_html": `
-      <p><strong>(b)</strong> NRF Bank Ltd. is suffering from huge number of NPAs. During the month of April 2023, the management of the bank decided to sell some of its NPAs. Bank is doing this exercise for the first time. The management has selected following NPA accounts for sale:</p>
+      <p> NRF Bank Ltd. is suffering from huge number of NPAs. During the month of April 2023, the management of the bank decided to sell some of its NPAs. Bank is doing this exercise for the first time. The management has selected following NPA accounts for sale:</p>
       <table border="1" cellpadding="5" cellspacing="0" style="border-collapse:collapse; text-align:left; max-width:500px;">
         <thead>
           <tr style="background-color:#f2f2f2;">
@@ -1106,7 +1106,7 @@ const descriptiveQuestions = [
     "placement": 9,
     "marks": 5,
     "question_html": `
-      <p><strong>(c)</strong> A special notice has been issued for a resolution at 4th annual general meeting of TRIM Ltd., providing expressly that CA. Lucky shall not be re-appointed as an auditor of the company. Consequently, CA. Lucky submitted a representation in writing to the company with a request to circulate to the members. In the detailed representation, CA. Lucky included the contributions made by him in strengthening the control procedures of the company during his association with the company and also indicated his willingness to continue as an auditor if reappointed by the shareholders of the company. Comment with reference to the Chartered Accountants Act, 1949 and schedules thereto.</p>
+      <p> A special notice has been issued for a resolution at 4th annual general meeting of TRIM Ltd., providing expressly that CA. Lucky shall not be re-appointed as an auditor of the company. Consequently, CA. Lucky submitted a representation in writing to the company with a request to circulate to the members. In the detailed representation, CA. Lucky included the contributions made by him in strengthening the control procedures of the company during his association with the company and also indicated his willingness to continue as an auditor if reappointed by the shareholders of the company. Comment with reference to the Chartered Accountants Act, 1949 and schedules thereto.</p>
     `,
     "solution_html": `
       
@@ -1132,7 +1132,7 @@ const descriptiveQuestions = [
     "placement": 10,
     "marks": 5,
     "question_html": `
-      <p><strong>(a)</strong> Naveen Ltd. is a chair manufacturing company having its corporate office in Maharashtra. The company is in the process of expansion and has acquired five companies during the year. Soni & Co. is the principal auditor of the company while the audit of all the companies acquired during the year is being conducted by Rahul K & Associates. During the course of audit, CA. Soni, the engagement partner asked the management of Naveen Ltd. at the corporate office that in order to conduct the audit of the consolidated financial statements, his audit firm is required to conduct audit of the financial statements of all the components also (Companies acquired during the year).</p>
+      <p> Naveen Ltd. is a chair manufacturing company having its corporate office in Maharashtra. The company is in the process of expansion and has acquired five companies during the year. Soni & Co. is the principal auditor of the company while the audit of all the companies acquired during the year is being conducted by Rahul K & Associates. During the course of audit, CA. Soni, the engagement partner asked the management of Naveen Ltd. at the corporate office that in order to conduct the audit of the consolidated financial statements, his audit firm is required to conduct audit of the financial statements of all the components also (Companies acquired during the year).</p>
       <p>To this, the management asked CA. Soni to consider the audit reports of the component auditor already provided to his audit team and to communicate with the component auditor for any discussion they wish to have. CA. Soni contended that for the purpose of audit of consolidated financial statements either his firm is required to conduct an audit of all the component’s financial statements, or he needs the working papers of the component auditors. Is the contention of CA. Soni correct?</p>
     `,
     "solution_html": `
@@ -1159,7 +1159,7 @@ const descriptiveQuestions = [
     "placement": 11,
     "marks": 4,
     "question_html": `
-      <p><strong>(b)</strong> You have recently joined a listed company after qualifying CA final exams through campus placement programme conducted by ICAI. The company you have joined is not amongst top 1000 listed companies in the country. However, it wants to include “Sustainability reporting” in accordance with Global Reporting Initiative framework (GRI) in its annual report on voluntary basis. “Sustainability reporting” seems to be new buzzword in corporate circles and you are assigned responsibility for collating all the information required for such reporting.</p>
+      <p> You have recently joined a listed company after qualifying CA final exams through campus placement programme conducted by ICAI. The company you have joined is not amongst top 1000 listed companies in the country. However, it wants to include “Sustainability reporting” in accordance with Global Reporting Initiative framework (GRI) in its annual report on voluntary basis. “Sustainability reporting” seems to be new buzzword in corporate circles and you are assigned responsibility for collating all the information required for such reporting.</p>
       <p>In above context, dwell upon what is your understanding of “Sustainability reporting”? You are also required to list its expected benefits.</p>
     `,
     "solution_html": `
@@ -1185,7 +1185,7 @@ const descriptiveQuestions = [
     "placement": 12,
     "marks": 5,
     "question_html": `
-      <p><strong>(c)</strong> STU & Associates have been the statutory auditors of the listed company "First and Last Ltd.," operating in the petrochemical industry, for the past three years. CA. K, the engagement partner, had designed certain substantive procedures on some selected assertions in response to the assessed risk of material misstatements for the year under audit. These particular assertions were not examined by him in previous years due to materiality or risk considerations.</p>
+      <p> STU & Associates have been the statutory auditors of the listed company "First and Last Ltd.," operating in the petrochemical industry, for the past three years. CA. K, the engagement partner, had designed certain substantive procedures on some selected assertions in response to the assessed risk of material misstatements for the year under audit. These particular assertions were not examined by him in previous years due to materiality or risk considerations.</p>
       <p>Mr. X leads the internal audit department of the company and reports to the company’s audit committee. During the course of audit, a senior member of the engagement team decides to engage Mr. X for providing direct assistance in performing the above substantive procedures. Comment with respect to the relevant Standards on Auditing. Also, indicate the activities to be performed by the statutory auditor prior to using internal auditor for providing direct assistance.</p>
     `,
     "solution_html": `
@@ -1211,7 +1211,7 @@ const descriptiveQuestions = [
     "placement": 13,
     "marks": 5,
     "question_html": `
-      <p><strong>(a)</strong> Jinchandra & Co., Chartered Accountants, has been appointed statutory auditor of Gurudeva Ltd. for the F.Y. 2022-23. The audit team has completed the audit and is in the process of preparing the audit report. Management of the company has also prepared draft annual report.</p>
+      <p> Jinchandra & Co., Chartered Accountants, has been appointed statutory auditor of Gurudeva Ltd. for the F.Y. 2022-23. The audit team has completed the audit and is in the process of preparing the audit report. Management of the company has also prepared draft annual report.</p>
       <p>The audit in-charge was going through the draft annual report and observed that the company has included an item in its annual report indicating a downward trend in market prices of key commodities/raw material as compared to the previous year. However, the actual profit margin of the company as reported in financial statements has gone in the reverse direction. The Audit Manager discussed this issue with a partner of the firm who in reply said that auditors are not covered with such disclosures made by the management in its annual report, it being the responsibility of the management.</p>
       <p>Do you think that the partner is correct in his approach on this issue? Discuss with reference to the relevant Standard on Auditing the Auditor's duties with regard to reporting.</p>
     `,
@@ -1241,7 +1241,7 @@ const descriptiveQuestions = [
     "placement": 14,
     "marks": 5,
     "question_html": `
-      <p><strong>(b)</strong> During the course of an audit of a state government department, the Office of the Comptroller & Auditor General of India (CAG) observed that the prescribed law in the state defined a "flat" based on the following two criteria in a premises:</p>
+      <p> During the course of an audit of a state government department, the Office of the Comptroller & Auditor General of India (CAG) observed that the prescribed law in the state defined a "flat" based on the following two criteria in a premises:</p>
       <ul>
         <li>Dwelling units exceeding a threshold limit</li>
         <li>Buildings with a total area surpassing a threshold limit</li>
@@ -1275,7 +1275,7 @@ const descriptiveQuestions = [
     "placement": 15,
     "marks": 4,
     "question_html": `
-      <p><strong>(c)</strong> CA. Evan has been in practice for two years and runs his proprietorship firm in the name of “Evan & Co.” He maintains notes in his mobile where he records the fees received from various clients. Using these records, he prepares and files his income tax return. Comment with respect to the provisions of the Chartered Accountant Act, 1949.</p>
+      <p> CA. Evan has been in practice for two years and runs his proprietorship firm in the name of “Evan & Co.” He maintains notes in his mobile where he records the fees received from various clients. Using these records, he prepares and files his income tax return. Comment with respect to the provisions of the Chartered Accountant Act, 1949.</p>
     `,
     "solution_html": `
       
@@ -1304,7 +1304,7 @@ const descriptiveQuestions = [
     "placement": 16,
     "marks": 5,
     "question_html": `
-      <p><strong>(a)</strong> You have been appointed to compile the financial statements of the Kings & Company (a partnership firm) for tax purposes. During the course of your work, you discover that the inventory is grossly understated, and the company has failed to apply applicable standards on accounting. On pointing out the same, the partners of the Kings & Co., inform you that it is outside your scope since you are not conducting an audit and the said figures duly certified by the firm should be accepted. Comment.</p>
+      <p> You have been appointed to compile the financial statements of the Kings & Company (a partnership firm) for tax purposes. During the course of your work, you discover that the inventory is grossly understated, and the company has failed to apply applicable standards on accounting. On pointing out the same, the partners of the Kings & Co., inform you that it is outside your scope since you are not conducting an audit and the said figures duly certified by the firm should be accepted. Comment.</p>
     `,
     "solution_html": `
       
@@ -1367,7 +1367,7 @@ const descriptiveQuestions = [
     "placement": 18,
     "marks": 4,
     "question_html": `
-      <p><strong>(b)</strong> The manager of Miskin (P) Ltd. approached CA. Rahul in need of a certificate in respect of a consumption statement of raw material. Without having certificate of practice (CoP), CA. Rahul issued the certificate to the manager of the company, acting as a CA in practice and applied for the CoP to the Institute on very next day to avoid any dispute.</p>
+      <p> The manager of Miskin (P) Ltd. approached CA. Rahul in need of a certificate in respect of a consumption statement of raw material. Without having certificate of practice (CoP), CA. Rahul issued the certificate to the manager of the company, acting as a CA in practice and applied for the CoP to the Institute on very next day to avoid any dispute.</p>
     `,
     "solution_html": `
       
@@ -1392,7 +1392,7 @@ const descriptiveQuestions = [
     "placement": 19,
     "marks": 5,
     "question_html": `
-      <p><strong>(c)</strong> Mr. Rajat, while reviewing the anti-fraud controls for a construction company, found that the company has witnessed a few frauds in the past mainly in the nature of material theft from the sites and fake expense vouchers.</p>
+      <p> Mr. Rajat, while reviewing the anti-fraud controls for a construction company, found that the company has witnessed a few frauds in the past mainly in the nature of material theft from the sites and fake expense vouchers.</p>
       <p>Mr. Rajat is evaluating options for verifying the process to reveal fraud and the corrective action to be taken in such cases. As an expert in fraud prevention, you have been asked to brief Mr. Rajat about the inventory fraud and verification procedure with respect to defalcation of inventory?</p>
     `,
     "solution_html": `
@@ -1422,7 +1422,7 @@ const descriptiveQuestions = [
   "placement": 1,
   "marks": 5,
   "question_html": `
-    <p><strong>(a)</strong> Spice Ltd., FMCG company, having its tea gardens in northeastern states of the country is exclusively dealing in blending, processing, packing and selling of various brands of tea. During the year under audit, the company entered into joint venture for purchasing Tea Gardens in South Africa and Vietnam. M/s Dharam & Associates are the statutory auditors of the company for the financial year 2023-24. During the audit, the audit team was unable to obtain sufficient appropriate evidence about a single element of the consolidated financial statements being Joint venture investment in Croptop Ltd. representing over 89% of the group’s net assets having both material and pervasive possible effect to the consolidated financial statements. The group’s investment in Croptop Ltd. is carried at ₹ 120 crore in the group’s consolidated balance sheet.</p>
+    <p> Spice Ltd., FMCG company, having its tea gardens in northeastern states of the country is exclusively dealing in blending, processing, packing and selling of various brands of tea. During the year under audit, the company entered into joint venture for purchasing Tea Gardens in South Africa and Vietnam. M/s Dharam & Associates are the statutory auditors of the company for the financial year 2023-24. During the audit, the audit team was unable to obtain sufficient appropriate evidence about a single element of the consolidated financial statements being Joint venture investment in Croptop Ltd. representing over 89% of the group’s net assets having both material and pervasive possible effect to the consolidated financial statements. The group’s investment in Croptop Ltd. is carried at ₹ 120 crore in the group’s consolidated balance sheet.</p>
 
     <p>Draft the opinion paragraph and basis of opinion paragraph to be included in the Independent Auditor’s report.</p>
   `,
@@ -1451,7 +1451,7 @@ const descriptiveQuestions = [
   "placement": 2,
   "marks": 5,
   "question_html": `
-    <p><strong>(b)</strong> As auditor of Growth Limited, you have sent positive confirmation requests to 45 creditors of the company in March 2024. All of the creditors in the informal sector are small concerns. You choose to send positive confirmation requests to all the above parties at their business addresses stated on respective bills after discussing the matter with the CFO of the company. The CFO is cooperative and does not raise any hassles in the matter.</p>
+    <p> As auditor of Growth Limited, you have sent positive confirmation requests to 45 creditors of the company in March 2024. All of the creditors in the informal sector are small concerns. You choose to send positive confirmation requests to all the above parties at their business addresses stated on respective bills after discussing the matter with the CFO of the company. The CFO is cooperative and does not raise any hassles in the matter.</p>
 
     <p>Responses to confirmation requests are received within a week’s time. Your articled clerk informs you that out of above 45 creditors, GST registrations of 38 concerns have been cancelled during financial year 2023-24 itself by collating information from GST portal. He further informs you that there are no fresh registrations pertaining to PANs of these parties.</p>
 
@@ -1483,7 +1483,7 @@ const descriptiveQuestions = [
   "placement": 3,
   "marks": 4,
   "question_html": `
-    <p><strong>(c)</strong> CA Shobit is conducting an audit of XYZ Ltd. for the year 2023-24. The company is engaged in the export of handicraft items in Europe. The audit is nearing completion in the month of July 2024. However, it becomes known to CA Shobit that one of overseas buyers has made a legal claim against the company on 1st June 2024 for injury caused to a customer of one European buyer due to sub-standard dyes used in rugs of one lot of order shipped in August 2023. The management of the company has decided to agree to an out of court settlement of ₹ 4 crore to protect its reputation. The financial statements of the company are silent on this issue. Discuss, how, CA Shobit should proceed to deal with above issue.</p>
+    <p> CA Shobit is conducting an audit of XYZ Ltd. for the year 2023-24. The company is engaged in the export of handicraft items in Europe. The audit is nearing completion in the month of July 2024. However, it becomes known to CA Shobit that one of overseas buyers has made a legal claim against the company on 1st June 2024 for injury caused to a customer of one European buyer due to sub-standard dyes used in rugs of one lot of order shipped in August 2023. The management of the company has decided to agree to an out of court settlement of ₹ 4 crore to protect its reputation. The financial statements of the company are silent on this issue. Discuss, how, CA Shobit should proceed to deal with above issue.</p>
   `,
   "solution_html": `
     
@@ -1504,7 +1504,7 @@ const descriptiveQuestions = [
   "placement": 4,
   "marks": 5,
   "question_html": `
-    <p><strong>(a)</strong> CA J is the statutory auditor of branch of a nationalized bank. During the audit, he is also focusing upon verification of Current Accounts & Savings Accounts (CASA) maintained at the branch. Suggest a few audit procedures he should follow.</p>
+    <p> CA J is the statutory auditor of branch of a nationalized bank. During the audit, he is also focusing upon verification of Current Accounts & Savings Accounts (CASA) maintained at the branch. Suggest a few audit procedures he should follow.</p>
   `,
   "solution_html": `
 
@@ -1532,7 +1532,7 @@ const descriptiveQuestions = [
   "placement": 5,
   "marks": 5,
   "question_html": `
-    <p><strong>(b)</strong> Mr. Aditya, a Chartered Accountant was the auditor of 'DRAW Limited'. During the financial year 2023-24, the investment appeared in the Balance Sheet of the company of ₹ 23 lakh and was the same amount as in the last year. Later on, it was found that the company's investments were only ₹ 76,000, but the value of investments was inflated for the purpose of obtaining higher amount of Bank loan.</p>
+    <p> Mr. Aditya, a Chartered Accountant was the auditor of 'DRAW Limited'. During the financial year 2023-24, the investment appeared in the Balance Sheet of the company of ₹ 23 lakh and was the same amount as in the last year. Later on, it was found that the company's investments were only ₹ 76,000, but the value of investments was inflated for the purpose of obtaining higher amount of Bank loan.</p>
 
     <p>Comment with reference to the provisions of the Chartered Accountants Act, 1949 and Schedules thereto.</p>
   `,
@@ -1562,7 +1562,7 @@ const descriptiveQuestions = [
   "placement": 6,
   "marks": 4,
   "question_html": `
-    <p><strong>(c)</strong> CA Kabir, an auditor assigned to conduct a remote audit of Beetal Limited. The audit will be conducted virtually using online platforms, with the client sharing documents and participating in video conferences. What key considerations should CA Kabir address to ensure the effectiveness and security of the remote audit?</p>
+    <p> CA Kabir, an auditor assigned to conduct a remote audit of Beetal Limited. The audit will be conducted virtually using online platforms, with the client sharing documents and participating in video conferences. What key considerations should CA Kabir address to ensure the effectiveness and security of the remote audit?</p>
   `,
   "solution_html": `
     <p><strong>Key considerations that CA Kabir should address for effectiveness and security of the remote audits are:</strong></p>
@@ -1594,7 +1594,7 @@ const descriptiveQuestions = [
   "placement": 7,
   "marks": 4,
   "question_html": `
-    <p><strong>(a)</strong> Deepti & Co., Chartered Accountants, during the audit of a Magma Ltd. found that certain machinery had been imported for production of new product. Although the auditors have applied the concept of materiality to the financial statements as a whole, they now want to re-evaluate the materiality concept for the said transaction involving foreign exchange. Give your views in this regard?</p>
+    <p> Deepti & Co., Chartered Accountants, during the audit of a Magma Ltd. found that certain machinery had been imported for production of new product. Although the auditors have applied the concept of materiality to the financial statements as a whole, they now want to re-evaluate the materiality concept for the said transaction involving foreign exchange. Give your views in this regard?</p>
   `,
   "solution_html": `
     <p>As per <strong>SA 320, “Materiality in Planning and Performing an Audit”</strong>, when establishing the overall audit strategy, the auditor shall determine materiality for the financial statements as a whole. If, in the specific circumstances of the entity, there is one or more particular classes of transactions, account balances or disclosures for which misstatements of lesser amounts than the materiality for the financial statements as a whole could reasonably be expected to influence the economic decisions of users taken on the basis of the financial statements, the auditor shall also determine the materiality level or levels to be applied to those particular classes of transactions, account balances or disclosures.</p>
@@ -1615,7 +1615,7 @@ const descriptiveQuestions = [
   "placement": 8,
   "marks": 5,
   "question_html": `
-    <p><strong>(b)</strong> Singh Ltd. is a company registered under the Companies Act, 2013. The company is engaged in the business of loans and advances, acquisition of shares / stocks / bonds / debentures / securities issued by government or local authorities. For the year ended 31st March 2024 following are some extracts from the financial statements:</p>
+    <p> Singh Ltd. is a company registered under the Companies Act, 2013. The company is engaged in the business of loans and advances, acquisition of shares / stocks / bonds / debentures / securities issued by government or local authorities. For the year ended 31st March 2024 following are some extracts from the financial statements:</p>
 
     <table border="1" cellspacing="0" cellpadding="6">
       <tr>
@@ -1696,7 +1696,7 @@ const descriptiveQuestions = [
   "placement": 9,
   "marks": 5,
   "question_html": `
-    <p><strong>(c)</strong> CA Shubh, a Chartered Accountant in practice specializing in the field of Information Systems Audit. He is considered to be one of the experts in this field because of his command over the subject. ZX Limited, a company engaged in rendering management consultancy offered him to appoint as its managing director. CA Shubh accepted the position of managing director without obtaining prior permission from the Institute. One of his friends, CA Varun informed him that now he cannot retain full time certificate of practice, thus cannot do attestation function and train articled assistants.</p>
+    <p> CA Shubh, a Chartered Accountant in practice specializing in the field of Information Systems Audit. He is considered to be one of the experts in this field because of his command over the subject. ZX Limited, a company engaged in rendering management consultancy offered him to appoint as its managing director. CA Shubh accepted the position of managing director without obtaining prior permission from the Institute. One of his friends, CA Varun informed him that now he cannot retain full time certificate of practice, thus cannot do attestation function and train articled assistants.</p>
 
     <p>Comment with reference to the provisions of the Chartered Accountants Act, 1949 and Schedules thereto.</p>
   `,
@@ -1725,7 +1725,7 @@ const descriptiveQuestions = [
   "placement": 10,
   "marks": 5,
   "question_html": `
-    <p><strong>(a)</strong> Discuss the reporting responsibilities of statutory auditor in the following situations for year 2023-24 under CARO, 2020:</p>
+    <p> Discuss the reporting responsibilities of statutory auditor in the following situations for year 2023-24 under CARO, 2020:</p>
 
     <p><strong>(i)</strong> In the financial year 2023-2024, Candy Ltd. decided to upgrade its registered office, located at a prime spot in Bangalore. As a part of this upgrade, the company sought to acquire an adjacent plot of land owned by Mr. Sidhant, who is also a director of Candy Ltd. Initially hesitant to sell, Mr. Sidhant was persuaded to transfer his property to the company in exchange for a larger plot owned by Candy Ltd. This plot, located on a nearby street, is double the size of Mr. Sidhant’s land.</p>
 
@@ -1760,7 +1760,7 @@ const descriptiveQuestions = [
   "placement": 11,
   "marks": 5,
   "question_html": `
-    <p><strong>(b)</strong> One of the independent directors sought information regarding the appointment of internal auditors for the following Group Companies in accordance with the Companies Act, 2013 of which certain financial information are given below:</p>
+    <p> One of the independent directors sought information regarding the appointment of internal auditors for the following Group Companies in accordance with the Companies Act, 2013 of which certain financial information are given below:</p>
 
     <p>Figures are in ₹ crore and correspond to the previous year.</p>
 
@@ -1848,7 +1848,7 @@ const descriptiveQuestions = [
   "placement": 12,
   "marks": 4,
   "question_html": `
-    <p><strong>(c)</strong> Pitch Private Limited requested CA Angad, a practicing Chartered Accountant, to digitally sign the form related to resignation of Mr. Ravi, one of the Director of Pitch Private Limited, along with the copy of resignation letter to be uploaded on the website of Registrar of Companies. The signature of Mr. Ravi was simply copied and pasted by another Director of Pitch Private Limited. CA Angad, without verifying the genuineness of the resignation letter, digitally signed the form and the said form was uploaded on the website of Registrar of Companies.</p>
+    <p> Pitch Private Limited requested CA Angad, a practicing Chartered Accountant, to digitally sign the form related to resignation of Mr. Ravi, one of the Director of Pitch Private Limited, along with the copy of resignation letter to be uploaded on the website of Registrar of Companies. The signature of Mr. Ravi was simply copied and pasted by another Director of Pitch Private Limited. CA Angad, without verifying the genuineness of the resignation letter, digitally signed the form and the said form was uploaded on the website of Registrar of Companies.</p>
 
     <p>Comment with reference to the provisions of the Chartered Accountants Act, 1949 and Schedules thereto.</p>
   `,
@@ -1871,7 +1871,7 @@ const descriptiveQuestions = [
   "placement": 13,
   "marks": 5,
   "question_html": `
-    <p><strong>(a)</strong> SPS & Associates, Chartered Accountants, are statutory auditors of Grec Limited for the last two years. Grec Limited is engaged in the manufacturing and marketing of pharmaceutical goods in India. During the year 2023-24, the company has diversified and commenced providing software solutions in "e-commerce" in India as well as in certain African countries. SPS & Associates, while carrying out the audit, noticed that the company has expanded its operations into a new segment as well as in a new country. SPS & Associates does not possess the necessary expertise and infrastructure to carry out the audit of these diversified business activities and accordingly wishes to withdraw from the engagement and client relationship. Discuss the issues that need to be addressed before deciding to withdraw.</p>
+    <p> SPS & Associates, Chartered Accountants, are statutory auditors of Grec Limited for the last two years. Grec Limited is engaged in the manufacturing and marketing of pharmaceutical goods in India. During the year 2023-24, the company has diversified and commenced providing software solutions in "e-commerce" in India as well as in certain African countries. SPS & Associates, while carrying out the audit, noticed that the company has expanded its operations into a new segment as well as in a new country. SPS & Associates does not possess the necessary expertise and infrastructure to carry out the audit of these diversified business activities and accordingly wishes to withdraw from the engagement and client relationship. Discuss the issues that need to be addressed before deciding to withdraw.</p>
   `,
   "solution_html": `
     <p>As per SQC 1, “Quality Control for Firms that Perform Audits and Reviews of Historical Financial Information, and Other Assurance and Related Services Engagements”, the firm should establish policies and procedures for the acceptance and continuance of client relationships and specific engagements, designed to provide it with reasonable assurance that it will undertake or continue relationships and engagements only where it is competent to perform the engagement and has the capabilities, time and resources to do so.</p>
@@ -1898,7 +1898,7 @@ const descriptiveQuestions = [
   "placement": 15,
   "marks": 5,
   "question_html": `
-    <p><strong>(b)</strong> CA H was appointed as a Statutory Auditor of MNL Limited, a listed company, which has three subsidiaries namely M Ltd., N Ltd., L Ltd. and also 15 branches across India. The Auditors are duly appointed for all the subsidiaries and branches.</p>
+    <p> CA H was appointed as a Statutory Auditor of MNL Limited, a listed company, which has three subsidiaries namely M Ltd., N Ltd., L Ltd. and also 15 branches across India. The Auditors are duly appointed for all the subsidiaries and branches.</p>
 
     <p>What should be the considerations of CA H regarding determination of materiality during the audit of consolidated financial statements? How he should deal in his report if there are observations (for instance modification and/or emphasis of matter paragraph in accordance with SA 705/706) made by component auditors?</p>
   `,
@@ -1929,7 +1929,7 @@ const descriptiveQuestions = [
   "placement": 16,
   "marks": 4,
   "question_html": `
-    <p><strong>(c)</strong> During the audit of Indo Limited, CA Harish observed that processing of accounting data was given to a third party on account of certain considerations like cost reduction, own computer working to full capacity. Indo Limited used a service organisation to record transactions and process related data.</p>
+    <p> During the audit of Indo Limited, CA Harish observed that processing of accounting data was given to a third party on account of certain considerations like cost reduction, own computer working to full capacity. Indo Limited used a service organisation to record transactions and process related data.</p>
 
     <p>What factors should CA Harish consider regarding the nature and extent of activities undertaken by the service organisation so as to determine whether those activities are relevant to the audit and, if so, to assess their effect on audit risk. Discuss with reference to the relevant Standards on Auditing.</p>
   `,
@@ -1956,7 +1956,7 @@ const descriptiveQuestions = [
   "placement": 17,
   "marks": 5,
   "question_html": `
-    <p><strong>(a)</strong> You are engaged by M/s Viva Limited to examine and report on prospective financial information which the management of the company has prepared for presentation at an Investor meet program organized by a State Government to attract investment in their state.</p>
+    <p> You are engaged by M/s Viva Limited to examine and report on prospective financial information which the management of the company has prepared for presentation at an Investor meet program organized by a State Government to attract investment in their state.</p>
 
     <p>The company in its vision document described various plans and proposals of the company with projected financial goals and means to achieve the same and various benefits accruing to the economic development of the State.</p>
 
@@ -1989,7 +1989,7 @@ const descriptiveQuestions = [
   "placement": 18,
   "marks": 5,
   "question_html": `
-    <p><strong>(b)</strong> Shri Limited, a listed Company, having its registered office at Mumbai is engaged in manufacturing of various types of yarns to be supplied to the textile mills. The Company has installed pollution control equipment for processing the pollutants so that before discharge of effluents outside the factory, the level of pollution is kept at a level below the prescribed standard.</p>
+    <p> Shri Limited, a listed Company, having its registered office at Mumbai is engaged in manufacturing of various types of yarns to be supplied to the textile mills. The Company has installed pollution control equipment for processing the pollutants so that before discharge of effluents outside the factory, the level of pollution is kept at a level below the prescribed standard.</p>
 
     <p>The company managed to get the pollution clearance certificate by unfair means, while still there continues to be breach of pollution control laws in matters of discharge of polluting effluents. The amount of ₹ 18.75 Lacs had been incurred for arranging clearance certificate and the amount incurred unlawfully had been booked as pollution recycling expenditure. The matter had not reached those in governance, and the Director-Finance, who is a Chartered Accountant, came to know of these matters on review of major expenditure incurred during the period.</p>
 
@@ -2026,7 +2026,7 @@ const descriptiveQuestions = [
   "placement": 19,
   "marks": 4,
   "question_html": `
-    <p><strong>(c)</strong> Vicky is a financial analyst working for a large corporation that is considering the acquisition of a mid-sized manufacturing company. The initial financial statements provided by the target company appear to be in order, showing profits and a solid asset base. However, his team is concerned about potential risks that may not be immediately visible in the financial documents provided.</p>
+    <p> Vicky is a financial analyst working for a large corporation that is considering the acquisition of a mid-sized manufacturing company. The initial financial statements provided by the target company appear to be in order, showing profits and a solid asset base. However, his team is concerned about potential risks that may not be immediately visible in the financial documents provided.</p>
 
     <p>Guide Vicky on what specific aspects should be focused during due diligence to ensure that there are no hidden liabilities in this deal?</p>
 
@@ -2083,6 +2083,599 @@ const descriptiveQuestions = [
       <li>Describe the basis for that adverse opinion or disclaimer of opinion; and</li>
 
       <li>State that, as a result of the adverse opinion or disclaimer of opinion, it is inappropriate to express an opinion on the summary financial statements.</li>
+    </ol>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_1A",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "SA 710 – Comparative Information",
+  "placement": 1,
+  "marks": 5,
+  "question_html": `
+    <p> Neptune Ltd. is a company that holds significant investments in a portfolio of equity securities. Due to a decline in market values, the company's investments have suffered a notable diminution in value. For the financial year ended 31st March 2023, the audit report of Neptune Ltd. included a qualification regarding the non-provision of ₹ 70 lakh for the diminution in the value of these investments. As the auditor for the financial year 2023-24, how would you report in the following situations:</p>
+
+    <p>(i) If the company does not make a provision for the diminution in the value of investments in the year 2023-24?</p>
+
+    <p>(ii) If the company makes an adequate provision for the diminution in the year 2023-24?</p>
+  `,
+  "solution_html": `
+    <p>As per SA 710, <strong>“Comparative Information – Corresponding Figures and Comparative Financial Statements”</strong>, when the auditor’s report on the prior period, as previously issued, included a qualified opinion, a disclaimer of opinion, or an adverse opinion and the matter which gave rise to the modified opinion is resolved and properly accounted for or disclosed in the financial statements in accordance with the applicable financial reporting framework, the auditor’s opinion on the current period need not refer to the previous modification.</p>
+
+    <p>SA 710 further states that if the auditor’s report on the prior period, as previously issued, included a qualified opinion and the matter which gave rise to the modification is unresolved, the auditor shall modify the auditor’s opinion on the current period’s financial statements. In the Basis for Modification paragraph in the auditor’s report, the auditor shall either:</p>
+
+    <ol type="i">
+      <li>Refer to both the current period’s figures and the corresponding figures in the description of the matter giving rise to the modification when the effects or possible effects of the matter on the current period’s figures are material; or</li>
+
+      <li>In other cases, explain that the audit opinion has been modified because of the effects or possible effects of the unresolved matter on the comparability of the current period’s figures and the corresponding figures.</li>
+    </ol>
+
+    <p>In the instant case, if Neptune Ltd. does not make provision for diminution in the value of investment to the extent of ₹ 70 lakh, the auditor will have to modify his report for both the current and previous year’s figures as mentioned above. If, however, the provision is made, the auditor need not refer to the earlier year’s modification.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_1B",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "SA 570 – Going Concern; SA 705 – Modifications to the Opinion in the Independent Auditor’s Report",
+  "placement": 2,
+  "marks": 5,
+  "question_html": `
+    <p> Pratibha Ltd. is a company engaged in the manufacturing of iron doors. JLN & Associates are the statutory auditors of Pratibha Ltd. for the Financial Year 2023-24. During the course of audit, CA Shiv, the engagement partner, found that the Company’s financing arrangements have expired, and the amount outstanding was payable on March 31, 2024. The Company has been unable to re-negotiate or obtain replacement financing and is considering filing for bankruptcy. These events indicate a material uncertainty that may cast significant doubt on the Company’s ability to continue as a going concern and therefore it may be unable to realize its assets and discharge its liabilities in the normal course of business. The financial statements (and notes thereto) do not disclose this fact. What opinion should CA Shiv express in case of Pratibha Ltd.?</p>
+  `,
+  "solution_html": `
+    <p>In the present case based on the audit evidence obtained, CA Shiv has concluded that a material uncertainty exists related to the outcome of the legal dispute, which is uncertain, but if it results in an unfavorable judgment, it could severely impact the Company’s financial position and cash flows. In such circumstances, CA Shiv should express an adverse opinion because the effects on the financial statements of such omission are material and pervasive.</p>
+
+    <p><strong>The relevant extract of the Adverse Opinion Paragraph and Basis for Adverse Opinion paragraph is as under:</strong></p>
+
+    <p><strong>Adverse Opinion</strong></p>
+
+    <p>In our opinion, because of the omission of the information mentioned in the Basis for Adverse Opinion section of our report, the accompanying financial statements do not present fairly, the financial position of the entity as at March 31, 2024, and of its financial performance and its cash flows for the year then ended in accordance with the Accounting Standards issued by the Institute of Chartered Accountants of India.</p>
+
+    <p><strong>Basis for Adverse Opinion</strong></p>
+
+    <p>The financing arrangements of Pratibha Ltd. has expired, and the amount outstanding was payable on March 31, 2024. The entity has been unable to conclude re-negotiations or obtain replacement financing and is considering filing for bankruptcy. This situation indicates that a material uncertainty exists that may cast significant doubt on the Company’s ability to continue as a going concern. The financial statements do not adequately disclose this fact.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_1C",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "Companies Act, 2013 – Section 143(12); Reporting of Fraud by Auditor; CARO 2020",
+  "placement": 3,
+  "marks": 4,
+  "question_html": `
+    <p> During the course of audit of PEC Limited, CA Guru has reason to believe that a fraud involving Rs.75 lakhs has been committed in the company by its employees. Is CA Guru under statutory obligation to report the above matter to Central government by filing prescribed form on MCA Portal? How should he proceed to report above said matter?</p>
+  `,
+  "solution_html": `
+    <p>As per section 143(12) of the Companies Act, 2013 read with Rule 13 of the Companies (Audit and Auditors) Rules, 2014, if an auditor of a company in the course of the performance of his duties as auditor, has reason to believe that an offence of fraud, which involves or is expected to involve individually an amount of ₹ 1 crore or above, is being or has been committed in the company by its officers or employees, the auditor shall report the matter to the Central Government within such time and in such manner as prescribed.</p>
+
+    <p>In the given case, CA Guru has reason to believe that a fraud involving ₹ 75 lakhs has been committed in the company by its employees. Therefore, he is under no statutory obligation to report this matter to Central Government by filing prescribed Form (ADT-4) on MCA portal.</p>
+
+    <p>In case of a fraud involving lesser than the specified amount [i.e. less than ₹ 1 crore], the auditor shall report the matter to the audit committee constituted under section 177 or to the Board in other cases within such time and in such manner as prescribed. Besides, auditor has obligation to report matters pertaining to fraud under clause (xi) of paragraph 3 of CARO, 2020.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_2A",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "SA 701 – Communicating Key Audit Matters in the Independent Auditor’s Report",
+  "placement": 4,
+  "marks": 5,
+  "question_html": `
+    <p> Mr. Arjun was appointed as the engagement partner for conducting the audit of Kurukshetra Tech Ltd. for financial year 2023-24, on behalf of NEMI & Associates. Mr. Krishna was appointed as the engagement quality control reviewer (EQCR) by the firm for the said audit.</p>
+
+    <p>During financial year 2023-24, Kurukshetra Tech Ltd. implemented an ERP system in phases, leading to the automation of certain business processes. This implementation had a substantial impact on the auditor's overall audit strategy. Mr. Arjun discussed the implementation of such a system with Mr. Krishna and also told him that such matter may be a key audit matter to be reported in the audit report.</p>
+
+    <p>Mr. Krishna considered the significance of said matter, however, he was of the opinion that ERP implementation did not appear to link with the matters disclosed in the financial statements and so there was no need to disclose such matter as a key audit matter.</p>
+
+    <p>Whether the contention of Mr. Krishna is appropriate with respect to the matters to be communicated as a key audit matter?</p>
+  `,
+  "solution_html": `
+    <p>As per SA 701, <strong>‘Communicating Key Audit Matters in the Independent Auditor’s Report’</strong>, the auditor shall determine, from the matters communicated with those charged with governance, those matters that required significant auditor attention in performing the audit. In making this determination, the auditor shall take into account the following:</p>
+
+    <ol type="i">
+      <li>Areas of higher assessed risk of material misstatement, or significant risks identified in accordance with SA 315.</li>
+
+      <li>Significant auditor judgments relating to areas in the financial statements that involved significant management judgment, including accounting estimates that have been identified as having high estimation uncertainty.</li>
+
+      <li>The effect on the audit of significant events or transactions that occurred during the period.</li>
+    </ol>
+
+    <p>The auditor shall determine which of the aforesaid matters considered were of most significance in the audit of the financial statements of the current period and therefore are the key audit matters.</p>
+
+    <p>These aforesaid considerations focus on the nature of matters communicated with those charged with governance. Such matters are often linked to matters disclosed in the financial statements and are intended to reflect areas of the audit of the financial statements that may be of particular interest to intended users.</p>
+
+    <p>The fact that these considerations are required is not intended to imply that matters related to them are always key audit matters; rather, matters related to such specific considerations are key audit matters only if they are determined to be of most significance in the audit.</p>
+
+    <p>In addition to matters that relate to the specific required considerations, there may be other matters communicated with those charged with governance that required significant auditor attention and that therefore may be determined to be key audit matters. Such matters may include, for example, matters relevant to the audit that was performed that may not be required to be disclosed in the financial statements. For example, the implementation of a new IT system (or significant changes to an existing IT system) during the period may be an area of significant auditor attention, in particular if such a change had a significant effect on the auditor’s overall audit strategy or related to a significant risk (e.g., changes to a system affecting revenue recognition).</p>
+
+    <p>In the given case, there was implementation of ERP system in the company due to which some of its business processes got automated and which had a significant effect on the auditor’s overall audit strategy during the period.</p>
+
+    <p>As per Mr. Arjun, Engagement Partner, above mentioned matter can be considered as a key audit matter and should be reported in the audit report since it requires significant attention that had affected his overall audit strategy. Mr. Krishna, EQCR, considered the significance of said matter, however, he was of the opinion that ERP implementation did not appear to link with the matters disclosed in the financial statements, therefore, no need to disclose such matter as a key audit matter.</p>
+
+    <p>In view of the above, the contention of Mr. Krishna is not appropriate as matters that do not link with the matters disclosed in the financial statements can also be considered as a key audit matter, if it requires significant attention.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_2B",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "Chartered Accountants Act, 1949 – Clause 11 of Part I of First Schedule",
+  "placement": 5,
+  "marks": 5,
+  "question_html": `
+    <p> CA. Kapila, in practice, is desirous of filling Multi-purpose Empanelment Form (MEF) for inclusion of her name in panel for allotment of statutory audit of bank branches web hosted by Professional Development Committee (PDC) of ICAI for financial year 2023-24. The form requires applicants to upload XML files of their personal income tax returns along with computation of income. During relevant year for which information is being sought for by PDC, CA. Kapila has transacted in futures and options derivatives (equity) and has reflected income from such transactions in her return of income as “Business Income”. Analyse the above situation with reference to the provisions of the Chartered Accountants Act, 1949.</p>
+
+    <p>Would it make any difference if CA. Kapila had earned income from transacting in currency derivatives and commodity derivatives?</p>
+  `,
+  "solution_html": `
+    <p>Clause 11 of Part I of First Schedule to the Chartered Accountants Act, 1949 states that a Chartered Accountant in practice shall be deemed to be guilty of professional misconduct, if he engages in any business or occupation other than the profession of Chartered Accountants unless permitted by the Council so to engage.</p>
+
+    <p>Provided that nothing contained herein shall disentitle a Chartered accountant from being a director of a Company, (not being a managing director or a whole-time director), unless he or any of his partners is interested in such company as an auditor.</p>
+
+    <p>Ethical Standards Board of ICAI has announced that it is permissible for a member in practice to engage in derivative transactions in his personal capacity but not in professional capacity i.e. for clients. Such engagements in derivatives are not violative of provisions of Clause 11 of Part I of First Schedule to the Chartered Accountants Act, 1949.</p>
+
+    <p>Further, members are allowed to transact in equity and currency derivatives. There is no requirement to take permission of Council in this matter.</p>
+
+    <p>Therefore, there is no difference if CA. Kapila had earned income from currency derivatives. However, in accordance with announcement of Ethical Standards Board of ICAI, it is not permissible for members in practice to transact in commodity derivative transactions. In such a case, CA. Kapila would be held guilty of professional misconduct for engaging in business other than profession of Chartered Accountancy.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_2C",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "Remote Audit",
+  "placement": 6,
+  "marks": 4,
+  "question_html": `
+    <p> Remote audit is an audit where the auditor uses the online or electronic means to conduct the same. It could be partially or completely virtual, auditor engages using technology to obtain the audit evidence or to perform documentation review with the participation of the auditee. For example, an auditor might use video conferencing and cloud-based file sharing to review financial records remotely. What are the advantages and disadvantages of remote auditing?</p>
+  `,
+  "solution_html": `
+    <p><strong>Advantages and Disadvantages of Remote Audit:</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>ADVANTAGES</th>
+          <th>DISADVANTAGES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cost and time effective: No travel time and travel costs involved.</td>
+          <td>Due to network issues, interviews and meetings can be interrupted.</td>
+        </tr>
+        <tr>
+          <td>Comfort and flexibility to the audit team as they would be working from home environment.</td>
+          <td>Limited or no ability to visualize facility culture of the organization, and the body language of the auditees. Time zone issues could also affect the efficiency of remote audit session.</td>
+        </tr>
+        <tr>
+          <td>Time required to gather evidence can spread over several weeks, instead of concentrated into a small period that takes personnel from their daily activities.</td>
+          <td>The opportunity to present doctored documents and to omit relevant information is increased. This may call for additional planning, some additional/different audit procedures, Security and confidentiality violation.</td>
+        </tr>
+        <tr>
+          <td>Auditor can get first-hand evidence directly from the IT system as direct access may be provided.</td>
+          <td>Remote access to sensitive IT systems may not be allowed. Security aspects related to remote access and privacy needs to be assessed.</td>
+        </tr>
+        <tr>
+          <td>Widens the selection of auditors from global network of experts.</td>
+          <td>Cultural challenges for the auditor. Lack of knowledge for local laws and regulations could impact audit. Audit procedures like physical verification of assets and stock taking cannot be performed.</td>
+        </tr>
+      </tbody>
+    </table>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_3A",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "SA 299 – Joint Audit of Financial Statements",
+  "placement": 7,
+  "marks": 5,
+  "question_html": `
+    <p> Studio Ltd. appointed AB & Associates and CD & Co. as joint auditors for conducting the audit for the year ending on 31st March 2024.</p>
+
+    <p>During the audit, it was observed that there is a significant understatement in the value of trade receivables. The trade receivable valuation work was looked after by AB & Associates, however, there was no documentation outlining the division of the work between the joint auditors.</p>
+
+    <p>Comment on the above situation with respect to the allocation of responsibilities among joint auditors as per relevant Standards on Auditing.</p>
+  `,
+  "solution_html": `
+    <p><strong>Responsibility and Co-ordination among Joint Auditors:</strong> As per SA 299, <strong>“Joint Audit of Financial Statements”</strong>, where joint auditors are appointed, they should, by mutual discussion, divide the audit work among themselves. The division of the work would usually be in terms of audit identifiable units or specified area. In some cases, due to the nature of the business entity under audit, such a division of the work may not be possible. In such situations, the division of the work may be with reference to items of assets or liabilities or income or expenditure or with reference to period of time. The division of the work among joint auditors as well as the areas of work to be covered by all of them should be adequately documented and preferably communicated to the entity.</p>
+
+    <p>In respect of the audit work divided among the joint auditors, each joint auditor is responsible only for the work allocated to him, whether or not he has prepared a separate audit of the work performed by him. On the other hand all the joint auditors are jointly and severally responsible –</p>
+
+    <ol type="i">
+      <li>The audit work which is not divided among the joint auditors and is carried out by all joint auditors;</li>
+
+      <li>Decisions taken by all the joint auditors under audit planning phase concerning the nature, timing and extant of the audit procedure to be performed by each of the auditor;</li>
+
+      <li>Matters which are bought to the notice of the joint auditors by any one of them and on which there is an agreement among the joint auditors;</li>
+
+      <li>Examining that the financial statements of the entity comply with the requirements of the relevant statute;</li>
+
+      <li>Presentation and disclosure of financial statements as required by the applicable financial reporting framework;</li>
+
+      <li>Ensuring that the audit report complies with the requirements of the relevant statutes, the applicable Standards on Auditing and the other relevant pronouncements issued by ICAI;</li>
+    </ol>
+
+    <p>The joint auditors shall also discuss and document the nature, timing, and the extent of the audit procedures for common and specific allotted areas of audit to be performed by each of the joint auditors and the same shall be communicated to those charged with governance. After identification and allocation of work among the joint auditors, the work allocation document shall be signed by all the joint auditors and the same shall be communicated to those charged with governance of the entity.</p>
+
+    <p>Hence, in respect of audit work divided among the joint auditors, each joint auditor shall be responsible only for the work allocated to such joint auditor including proper execution of the audit procedures.</p>
+
+    <p>In the instant case, Studio Ltd. appointed two CA Firms AB & Associates and CD & Co. as joint auditors for conducting audit. As observed during the course of audit that there is a significant understatement in the value of trade receivable and valuation of trade receivable work was looked after by AB & Associates.</p>
+
+    <p>In view of SA 299, AB & Associate will be held responsible for the same as trade receivable valuation work was looked after by AB & Associates only. Further, there is violation of SA 299 as the division of work has not been documented.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_3B",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "CARO 2020 – Clause (xvi); RBI Act, 1934 – Section 45-IA; NBFC Audit",
+  "placement": 8,
+  "marks": 5,
+  "question_html": `
+    <p> Manu Finance Ltd. is a Non-Banking Finance Company and was in the business of accepting public deposits and giving loans since 2019. The company was having net owned funds of ₹ 1,75,00,000/- (one crore seventy five lakhs) and was not having registration certificate from RBI and applied for it on 29th March 2024. The company appointed Mr. Yuvan as its statutory auditors for the year 2023-24. Advise the auditor with reference to auditor procedures to be taken and reporting requirements on the same in view of CARO 2020?</p>
+  `,
+  "solution_html": `
+    <p>As per Clause (xvi) of Paragraph 3 of CARO 2020, the auditor is required to report that “whether the company is required to be registered under section 45-IA of the Reserve Bank of India Act, 1934 and if so, whether the registration has been obtained.”</p>
+
+    <p>The auditor is required to examine whether the company is engaged in the business which attracts the requirement of the registration. The registration is required where the financing activity is a principal business of the company. The RBI restrict companies from carrying on the business of a non-banking financial institution without obtaining the certificate of registration.</p>
+
+    <p><strong>Audit Procedures and Reporting:</strong></p>
+
+    <ol type="i">
+      <li>The auditor should examine the transactions of the company with relation to the activities covered under the RBI Act and directions related to the Non-Banking Financial Companies.</li>
+
+      <li>The financial statements should be examined to ascertain whether company’s financial assets constitute more than 50 per cent of the total assets and income from financial assets constitute more than 50 per cent of the gross income.</li>
+
+      <li>Whether the company has net owned funds as required for the registration as NBFC.</li>
+
+      <li>Whether the company has obtained the registration as NBFC, if not, the reasons should be sought from the management and documented.</li>
+
+      <li>The auditor should report incorporating the following:
+        <ol>
+          <li>Whether the registration is required under section 45-IA of the RBI Act, 1934.</li>
+          <li>If so, whether it has obtained the registration.</li>
+          <li>If the registration not obtained, reasons thereof.</li>
+        </ol>
+      </li>
+    </ol>
+
+    <p>In the given case, Manu Finance Ltd. is a Non-Banking Finance Company and was in the business of accepting public deposits and giving loans since 2019. The company was having net owned funds of ₹ 1,75,00,000/- (one crore seventy five lakhs) which is less in comparison to the prescribed limit i.e. 2 crore rupees and was also not having registration certificate from RBI (though applied for it on 29th March 2024). The auditor is required to report on the same as per Clause (xvi) of Paragraph 3 of CARO 2020.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_3C",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "Chartered Accountants Act, 1949 – Clause (7) of Part I of Second Schedule",
+  "placement": 9,
+  "marks": 4,
+  "question_html": `
+    <p> DIGI & Associates. conducted Stock Audit of PQR Ltd. as per instructions issued by ASG Bank. However instead of visiting the site where the stock was lying, the firm relied on the Management Information Systems report along with inspections reports and photographs of Stock taken by the employees of PQR Ltd. The photographs were also carrying the date and time printed on them.</p>
+
+    <p>Comment with reference to the Chartered Accountants Act, 1949 and Schedules thereon.</p>
+  `,
+  "solution_html": `
+    <p>According to Clause (7) of Part I of Second Schedule to the Chartered Accountants Act, 1949, a Chartered Accountant in practice is deemed to be guilty of professional misconduct if he “does not exercise due diligence or is grossly negligent in the conduct of his professional duties”.</p>
+
+    <p>It is a vital clause which usually gets attracted whenever it is necessary to judge whether the accountant has honestly and reasonably discharged his duties. The expression negligence covers a wide field and extends from the frontiers of fraud to collateral minor negligence.</p>
+
+    <p>In the instant case, DIGI & Associate did not exercise due diligence and is grossly negligent in the conduct of his professional duties since it did not visit the site where the stock was lying and instead the firm relied on the MIS report along with inspection reports and photographs of stock taken by the employees of PQR Ltd, which is incorrect.</p>
+
+    <p>To conduct stock audit, ascertainment of existence and physical condition of stocks, cross tallying the stock with Stock statement submitted by bank borrower, correct classification of stocks for valuation purpose etc. is essential. Further submitting stock audit report without physically verifying the stock amounts to gross negligence.</p>
+
+    <p>From the above, it can be concluded that DIGI & Associate is guilty of professional misconduct under Clause (7) of Part I of Second Schedule to the Chartered Accountants Act, 1949.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_4A",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "Ind AS 110 – Consolidated Financial Statements; Companies Act, 2013",
+  "placement": 10,
+  "marks": 5,
+  "question_html": `
+    <p> Girdhar Ltd. owns 61% voting power in Meera Ltd. It however, holds and discloses all the shares as "Stock-in-trade" in its accounts. The shares are held exclusively with a view to their subsequent disposal in the near future. Girdhar Ltd. represents that while preparing Consolidated Financial Statements, Meera Ltd. can be excluded from the consolidation. As a Statutory Auditor, how would you deal?</p>
+  `,
+  "solution_html": `
+    <p><strong>Consolidation of Financial Statement:</strong> As per Ind AS 110, there is no such exemption for ‘temporary control’, or “for operation under severe long-term funds transfer restrictions” and consolidation is mandatory for Ind AS compliant financial statement in this case. Paragraph 20 of Ind AS 110 states that “Consolidation of an investee shall begin from the date the investor obtains control of the investee and cease when the investor loses control of the investee”.</p>
+
+    <p>However, as per Section 129(3) of the Companies Act, 2013 read with rule 6 of the Companies (Accounts) Rules, 2014, where a company having subsidiary, which is not required to prepare consolidated financial statements under the Accounting Standards, it shall be sufficient if the company complies with the provisions on consolidated financial statements provided in Schedule III to the Act.</p>
+
+    <p>In the given case, Girdhar Ltd.’s intention is disposal of the shares in the near future as shares are being held as stock in trade and it is quite clear that the control is temporary. Therefore, Girdhar Ltd. is required to prepare Consolidated Financial Statements in accordance with Ind AS 110 as exemption for ‘temporary control’ is not available in the same.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_4B",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "Government Company Audit – Companies Act, 2013",
+  "placement": 11,
+  "marks": 5,
+  "question_html": `
+    <p> Abhinandan Ltd., a company wholly owned by Delhi government was disinvested during the previous year, resulting in 38% of the shares being held by public. The shares were also listed on the NSE. Since the shares were listed, all the listing requirements were applicable, including publication of quarterly results, submission of information to the NSE etc. Paras, the Finance Manager of the company is of the opinion that now the company is subject to stringent control by NSE and the markets, therefore the auditing requirements of a limited company in private sector under the Companies Act, 2013 would be applicable to the company and the C&AG will not have any role to play. Comment.</p>
+  `,
+  "solution_html": `
+    <p>Section 2(45) of the Companies Act, 2013, defines a “Government Company” as a company in which not less than 51% of the paid-up share capital is held by the Central Government or by any State Government or Governments or partly by the Central Government and partly by one or more State Governments, and includes a company which is a subsidiary company of such a Government company.</p>
+
+    <p>The auditors of these government companies are firms of Chartered Accountants, appointed by the Comptroller & Auditor General, who gives the auditor directions on the manner in which the audit should be conducted by them.</p>
+
+    <p>In the given situation, Abhinandan Ltd. is a company wholly owned by Delhi Government was disinvested during the previous year, resulting in 38% of the shares being held by public. The shares were also listed on the NSE. The listing of company’s shares on a stock exchange is irrelevant for this purpose and hence, opinion of finance manager Paras is not correct.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_4C",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "Chartered Accountants Act, 1949 – Section 2(2)(iv); Regulation 191",
+  "placement": 12,
+  "marks": 4,
+  "question_html": `
+    <p> CA Ram, a practicing chartered accountant, is well known for his expertise in handling Goods and Services Tax (GST) cases at the GST Tribunal and he does not provide any assurance services. Given his long-standing reputation in the field, CA Ram is approached by DEF Limited to file an appeal in the Tribunal against a GST demand of ₹ 6 crore, which was imposed by the Commissioner (Appeals), and to represent DEF Limited in the matter. CA Ram offers to accept a fee of ₹ 3,50,000 for filing the appeal and pleading at the GST Tribunal.</p>
+
+    <p>Comment on the act of CA Ram in terms of the Chartered Accountant Act, 1949 and Schedules thereon.</p>
+  `,
+  "solution_html": `
+    <p>Under Section 2(2)(iv) of the Chartered Accountants Act, 1949, a member of the Institute shall be deemed “to be in practice” when individually or in partnership with Chartered Accountants in practice, he, in consideration of remuneration received or to be received renders such other services as, in the opinion of the Council, are or may be rendered by a Chartered Accountant in practice.</p>
+
+    <p>Pursuant to Section 2(2)(iv) of the Chartered Accountants Act, 1949, read with Regulation 191 of Chartered Accountants Regulations, 1988 a member shall be deemed to be in practice if he, in his professional capacity and neither in his personal capacity nor in his capacity as an employee, acts as representative for taxation matters.</p>
+
+    <p>In the given situation, CA Ram, a practicing Chartered Accountant, provides non-assurance services. He is approached by DEF Limited, a non-audit client, to file an appeal in GST Tribunal against GST Demand of ₹ 6 crore, which was imposed by the Commissioner (Appeals) and to plead on behalf of DEF Limited in the matter. CA Ram offers to accept the case and agrees to charge fees of ₹ 3,50,000.</p>
+
+    <p>Therefore, CA Ram is not guilty of professional misconduct.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_5a",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "Investigation – Due Diligence / Investigation of Audited Financial Statements",
+  "placement": 16,
+  "marks": 5,
+  "question_html": `
+    <p> Quality Ltd. is engaged in the business of manufacturing and distribution of various Ready to cook products like vegetables, Noodles etc. The government made certain changes in rules and regulations relating to this sector, consequently management decided to go for expansion.</p>
+
+    <p>Management was looking for some financial investor who can fund some part of the proposed expansion. Mr. Aman is interested in the venture and appoints you to act as an advisor to the proposed investment in the business of Quality Ltd.</p>
+
+    <p>You have to investigate the audited financial statements and ensure that the valuation of shares of the company on the basis of audited financial statements is appropriate.</p>
+
+    <p>What process will be used for checking and can reliance be placed on the already audited statement of accounts?</p>
+  `,
+  "solution_html": `
+    
+
+    <p>In the instant case, Quality Ltd. is engaged in the business of manufacturing and distribution of various ready-to-cook products like vegetables, noodles etc. Further, management was looking for some financial investor to fund some part of the proposed expansion. Aman is interested in funding; therefore, he initiated investigation of audited financial statements to ensure the appropriateness of the valuation of the shares.</p>
+
+    <p>For initiating the same it may be considered that if the investigation has been launched because of some doubt in the audited statement of account, no question of reliance on the audited statement of account arises.</p>
+
+    <p>However, if the investigator has been requested to establish value of a business or a share or the amount of goodwill payable by an incoming partner, ordinarily the investigator would be entitled to put reliance on audited materials made available to him unless, in the course of his test verification, he finds the audit to have been carried on very casually or unless his terms of appointment clearly require to test everything afresh.</p>
+
+    <ul>
+      <li>If the statements of account produced before the investigator were not audited by a qualified accountant, then of course there arises a natural duty to get the figures in the accounts properly checked and verified.</li>
+
+      <li>However, when the accounts produced to the investigator have been specially prepared by a professional accountant, who knows or ought to have known that these were prepared for purposes of the investigation, he could accept them as correct relying on the principle of liability to third parties.</li>
+
+      <li>It would be prudent to see first that such accounts were prepared with objectivity and that no bias has crept in to give advantage to the person on whose behalf these were prepared.</li>
+    </ul>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_5b",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "SA 320 – Materiality in Planning and Performing an Audit / SA 450 – Evaluation of Misstatements Identified during the Audit",
+  "placement": 17,
+  "marks": 5,
+  "question_html": `
+    <p> While assessing the impact of uncorrected misstatements in the audit of MINI Builders Private Limited, Mr. Gautam encountered a significant issue related to the calculation of materiality on revenue. The initial materiality calculation was based on estimated figures provided by the management.</p>
+
+    <p>Management, to estimate full-year revenue, extrapolated the sales for 11 months to arrive at a figure for 12 months. However, given the nature of MINI Builders as a company in the construction sector, where monthly sales exhibit substantial variations, a unique challenge emerged.</p>
+
+    <p>The actual sales for the last month deviated significantly from the estimated sales due to an unexpected slowdown in project completions. As a result, the last month's actual sales represented only 30% of the estimated sales.</p>
+
+    <p>Now, Mr. Gautam is confronted with a dilemma regarding the appropriate approach to evaluate uncorrected misstatements using the previously calculated materiality.</p>
+
+    <p>Kindly Guide Mr. Gautam in the light of relevant Standards on Auditing.</p>
+  `,
+  "solution_html": `
+    
+
+    <p>As per SA 450, <strong>“Evaluation of Misstatements Identified during the Audit”</strong>, the auditor is required to reassess materiality, in accordance with SA 320 <strong>“Materiality in Planning and Performing an Audit”</strong>, before evaluating the impact of uncorrected misstatements. This reassessment is crucial to confirm the ongoing appropriateness of materiality in light of the entity's actual financial results.</p>
+
+    <p>The determination of materiality under SA 320 often relies on estimates of the entity's financial results, given that the actual results may not be known during the early stages of the audit. Therefore, before the auditor proceeds to assess the effect of uncorrected misstatements, it becomes necessary to adjust the materiality calculated under SA 320 based on the now available actual financial results.</p>
+
+    <p>SA 320 outlines that, as the audit progresses, materiality may be revised for the financial statements as a whole or for specific classes of transactions, account balances, or disclosures. This revision is prompted by the auditor's awareness of information that would have led to a different initial determination.</p>
+
+    <p>Typically, significant revisions occur before the evaluation of uncorrected misstatements. However, if the reassessment of materiality under SA 320 results in a lower amount, the auditor must reconsider performance materiality and the appropriateness of the audit procedures' nature, timing, and extent. This is crucial for obtaining sufficient and appropriate audit evidence on which to base the audit opinion.</p>
+
+    <p>In the present case involving MINI Builders Private Limited, it has been identified that the materiality calculated at the beginning of the audit for revenue was based on estimates provided by the management. The management extrapolated sales for the full year using the actual amount of 11 months, but since the company experiences significant monthly variations in sales, the actual sales for the last month were only 30% of the estimated figure. This discrepancy arose due to an unexpected slowdown in project completions.</p>
+
+    <p>In this audit scenario, Mr. Gautam, the auditor, must re-assess the materiality initially determined under SA 320 to ensure its continued validity in light of the actual financial results.</p>
+
+    <p>If the re-assessed materiality is lower than the previously calculated amount, Mr. Gautam must reconsider performance materiality and the appropriateness of the nature, timing, and extent of further audit procedures. This meticulous approach is essential to gather sufficient and appropriate audit evidence, enabling Mr. Gautam to form an independent and objective opinion on the financial statements of MINI Builders Private Limited.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_5c",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "Integrated Reporting (IR) – Six Capitals",
+  "placement": 18,
+  "marks": 4,
+  "question_html": `
+    <p> Consistent Enterprises Ltd., a listed company, has been voluntarily preparing and disclosing its sustainability report based on the internationally accepted <strong>“Integrated Reporting”</strong> framework for some years, even before BRSR reporting became mandatory. Even after BRSR reporting became mandatory, it is cross-referencing disclosures made under such reporting to disclosures sought under BRSR. The key focus of Integrated Reporting is how the company creates value over the short, medium, and long term.</p>
+
+    <p>Following further information is provided in respect of the above company:</p>
+
+    <p><strong>(i)</strong> It has secured a loan to expand its operations and invests the funds in purchasing raw materials and machinery. The loan, along with revenue generated from existing sales, contributes to the pool of resources available for production.</p>
+
+    <p><strong>(ii)</strong> It has increased the number of beneficiaries under its flagship CSR programmes from previous 10000 to 75000. It has provided value for communities and provided sustainable livelihood to them.</p>
+
+    <p>Discussing the above information, identify which of the capitals of <strong>“Integrated Reporting”</strong> are being referred to at <strong>[i]</strong> and <strong>[ii]</strong> respectively?</p>
+  `,
+  "solution_html": `
+    
+
+    <p>The information given in situation <strong>[i]</strong> states that the company has secured a loan to expand its operations and invests the funds in purchasing raw materials and machinery. The loan, along with revenue generated from existing sales, contributes to the pool of resources available for production.</p>
+
+    <p>Therefore, it involves a pool of funds that is available to the organization for use in the production of goods or provision of services. Further, it is obtained through financing, such as debt, equity, or grants, or generated through operations or investments.</p>
+
+    <p>The capital referred to at <strong>[i]</strong> is <strong>“Financial Capital”.</strong></p>
+
+    <hr>
+
+    <p>Further, situation <strong>[ii]</strong> describes an increase in the number of beneficiaries under flagship CSR programmes, providing value for communities and sustainable livelihood.</p>
+
+    <p>This is an example of relationships established within and between each community, group of stakeholders and other networks to enhance individual and collective well-being.</p>
+
+    <p>The capital referred to at <strong>[ii]</strong> is <strong>“Social and Relationship Capital”.</strong></p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_6a",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "SA 500 – Audit Evidence / Auditor’s Expert – Evaluation of Objectivity",
+  "placement": 19,
+  "marks": 5,
+  "question_html": `
+    <p> Mr. Atharv, while conducting the audit of Black Mountain Mining Ltd., which is involved in phosphate mining, decided to engage an auditor’s expert to assess environmental liabilities and site clean-up costs.</p>
+
+    <p>Black Mountain Mining Ltd. re-appointed Mr. Aman as an independent expert for this task. For the past five years, the management has consistently re-appointed Mr. Aman. He calculated the environmental liabilities for both completed mining sites and sites scheduled for closure in the near future, including provisions for clean-up costs. Management accepted his assessment.</p>
+
+    <p>Mr. Atharv, after performing the inquiries with management, was of the opinion that the objectivity of the independent expert cannot be questioned just because he was appointed by management as their expert. Hence, there is no need to raise a question on the objectivity of Mr. Aman or on his work performed for the company.</p>
+
+    <p>However, the audit partner was of the opinion that the audit team needs to evaluate the objectivity of an expert engaged by the entity, irrespective of the fact that he was appointed as an independent expert.</p>
+
+    <p>Guide the audit partner and Mr. Atharv with respect to requirements pertaining to evaluating the objectivity of the management expert.</p>
+  `,
+  "solution_html": `
+    <p><strong>Solution:</strong></p>
+
+    <p>As per SA 500 <strong>“Audit Evidence”</strong>, when information to be used as audit evidence has been prepared using the work of a management’s expert, the auditor shall, to the extent necessary, have regard to the significance of that expert’s work for the auditor’s purposes and evaluate the competence, capabilities and objectivity of that expert.</p>
+
+    <p>A broad range of circumstances may threaten objectivity, for example:</p>
+
+    <ul>
+      <li>Self-interest threats</li>
+      <li>Advocacy threats</li>
+      <li>Familiarity threats</li>
+      <li>Self-review threats</li>
+      <li>Intimidation threats</li>
+    </ul>
+
+    <p>Safeguards may reduce such threats and may be created either by external structures (for example, the management expert’s profession, legislation or regulation), or by the management expert’s work environment (for example, quality control policies and procedures).</p>
+
+    <p>Although safeguards cannot eliminate all threats to a management expert’s objectivity, threats such as intimidation threats may be of less significance to an expert engaged by the entity than to an expert employed by the entity.</p>
+
+    <p>When evaluating the objectivity of an expert engaged by the entity, it may be relevant to discuss with management and that expert any interests and relationships that may create threats to the expert’s objectivity and any applicable safeguards, including any professional requirements that apply to the expert.</p>
+
+    <p>Interests and relationships creating threats may include:</p>
+
+    <ul>
+      <li>Financial interests.</li>
+      <li>Business and personal relationships.</li>
+      <li>Provision of other services.</li>
+    </ul>
+
+    <p>In the current case, Black Mountain Mining Ltd. re-appointed Mr. Aman for this engagement as an independent expert. The audit team was of the view that the objectivity of the independent expert cannot be questioned just because he was appointed by management as their expert.</p>
+
+    <p>However, the audit partner had a contrary view. The audit team should evaluate the objectivity of an expert engaged by the entity as the threat to objectivity, created by being an employee of the entity, will always be present.</p>
+
+    <p>An expert appointed by the entity cannot ordinarily be regarded as being more likely to be objective than other employees of the entity.</p>
+
+    <p>Therefore, the view of the audit partner is correct and the audit team needs to evaluate the objectivity of Mr. Aman before relying on his work.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_6b",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "Chartered Accountants Act, 1949 – Delegation of Authority / Professional Misconduct",
+  "placement": 20,
+  "marks": 5,
+  "question_html": `
+    <p><strong>(b)</strong> Mr. Jay is a practicing Chartered Accountant working as proprietor of M/s Adhya & Co. He went abroad for 4 months. He delegated the authority to Mr. Vijay a Chartered Accountant his employee for taking care of routine matters of his office. During his absence, Mr. Vijay has conducted the under mentioned jobs in the name of M/s Adhya & Co.</p>
+
+    <p>(i) Asking for information or issue of questionnaire.</p>
+
+    <p>(ii) Initiating and stamping of vouchers and of schedules prepared for the purpose of audit.</p>
+
+    <p>(iii) Acknowledging and carrying on routine correspondence with clients.</p>
+
+    <p>Comment on eligibility of Mr. Vijay for conducting such jobs in name of M/s Adhya & Co. and liability of Mr. Jay under the Chartered Accountants Act, 1949.</p>
+  `,
+  "solution_html": `
+    <p>Delegation of Authority to the Employee: As per Clause (12) of Part I of the First Schedule of the Chartered Accountants Act, 1949, a Chartered Accountant in practice is deemed to be guilty of professional misconduct “if he allows a person not being a member of the Institute in practice or a member not being his partner to sign on his behalf or on behalf of his firm, any balance sheet, profit and loss account, report or financial statements”.</p>
+
+    <p>In this case CA Jay proprietor of M/s Adhya & Co., went to abroad and delegated the authority to another Chartered Accountant Mr. Vijay, his employee, for taking care of routine matters of his office who is not a partner but a member of the Institute of Chartered Accountants of India.</p>
+
+    <p>The Council has clarified that the power to sign routine documents on which a professional opinion or authentication is not required to be expressed may be delegated and such delegation will not attract provisions of this clause.</p>
+
+    <p>In the given case, Mr. Vijay, a Chartered Accountant being employee of M/s Adhya & Co. has asked for information or issued questionnaire. He has also proceeded for initiating and stamping of vouchers and of schedules prepared for the purpose of audit. Apart from the same, he acknowledged and carried out routine correspondence with clients.</p>
+
+    <p>Here Vijay is right in doing the same, since the same falls under routine work which can be delegated by the auditor.</p>
+
+    <p>Therefore, there is no misconduct in this case as per Clause (12) of Part I of First Schedule to the Act.</p>
+  `
+},
+{
+  "question_id": "AUD_MTPSEP24II_6c",
+  "source": "ICAI Mock Test Paper - Series II, October 2024",
+  "chapter_name": "SRS 4410 – Compilation Engagement",
+  "placement": 21,
+  "marks": 4,
+  "question_html": `
+    <p><strong>(c)</strong> The practitioner shall not accept the compilation engagement unless the practitioner has agreed the terms of engagement with management, and the engaging party if different.</p>
+
+    <p>In view of the above, mention the responsibilities of the management to be agreed on for the compilation engagement in accordance with SRS 4410.</p>
+
+    <p><strong>OR</strong></p>
+
+    <p>A review of financial statements includes consideration of the entity’s ability to continue as a going concern. If, during the performance of the review, the practitioner becomes aware of events or conditions that may cast significant doubt about the entity’s ability to continue as a going concern.</p>
+
+    <p>Enumerate the steps to be taken by the practitioner for the same.</p>
+  `,
+  "solution_html": `
+    <p>The practitioner shall not accept the compilation engagement unless the practitioner has agreed the terms of engagement with management, and the engaging party if different.</p>
+
+    <p>In accordance with SRS 4410, <strong>“Compilation Engagement”</strong>, the responsibilities of the management to be agreed on for the compilation engagement are that:</p>
+
+    <ol>
+      <li>
+        <p>The financial information, and for the preparation and presentation thereof, in accordance with a financial reporting framework that is acceptable in view of the intended use of the financial information and the intended users.</p>
+      </li>
+
+      <li>
+        <p>Design, implementation and maintenance of such internal control as management determines is necessary to enable the preparation of financial statements that are free from material misstatement, whether due to fraud or error.</p>
+      </li>
+
+      <li>
+        <p>The accuracy and completeness of the records, documents, explanations and other information provided by management for the compilation engagement.</p>
+      </li>
+
+      <li>
+        <p>Judgments needed in the preparation and presentation of the financial information, including those for which the practitioner may provide assistance in the course of the compilation engagement.</p>
+      </li>
+    </ol>
+
+    <hr>
+
+    <p><strong>OR</strong></p>
+
+    <p>As per SRE 2400, <strong>“Engagements to Review Historical Financial Statements”</strong>, a review of financial statements includes consideration of the entity’s ability to continue as a going concern.</p>
+
+    <p>If, during the performance of the review, the practitioner becomes aware of events or conditions that may cast significant doubt about the entity’s ability to continue as a going concern, the practitioner shall:</p>
+
+    <ol>
+      <li>
+        <p>Inquire of management about plans for future actions affecting the entity’s ability to continue as a going concern and about the feasibility of those plans, and also whether management believes that the outcome of those plans will improve the situation regarding the entity’s ability to continue as a going concern.</p>
+      </li>
+
+      <li>
+        <p>Evaluate the results of those inquiries, to consider whether management’s responses provide a sufficient basis to:</p>
+
+        <ol type="a">
+          <li>
+            <p>Continue to present the financial statements on the going concern basis if the applicable financial reporting framework includes the assumption of an entity’s continuance as a going concern; or</p>
+          </li>
+
+          <li>
+            <p>Conclude whether the financial statements are materially misstated or are otherwise misleading regarding the entity’s ability to continue as a going concern.</p>
+          </li>
+        </ol>
+      </li>
+
+      <li>
+        <p>Consider management’s responses in light of all relevant information of which the practitioner is aware as a result of the review.</p>
+      </li>
     </ol>
   `
 },
