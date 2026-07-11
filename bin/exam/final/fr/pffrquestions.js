@@ -3855,7 +3855,7 @@ const descriptiveQuestions = [
     source: "ICAI MTP September 2024 Series I",
     chapter_name:
       "Ind AS 109 - Financial Instruments / Ind AS 113 - Fair Value Measurement",
-    placement: "2",
+    placement: 2 ,
     marks: 10,
 
     question_html: `
@@ -4192,7 +4192,7 @@ const descriptiveQuestions = [
     question_id: "FR_MTPSEP24S1_2B",
     source: "ICAI MTP September 2024 Series I",
     chapter_name: "Ind AS 24 - Related Party Disclosures",
-    placement: "2",
+    placement: 2 ,
     marks: 4,
 
     question_html: `
@@ -4278,7 +4278,7 @@ const descriptiveQuestions = [
     question_id: "FR_MTPSEP24S1_2C",
     source: "ICAI MTP September 2024 Series I",
     chapter_name: "Ind AS 108 - Operating Segments",
-    placement: "2",
+    placement: 2 ,
     marks: 4,
 
     question_html: `
@@ -7136,7 +7136,7 @@ const descriptiveQuestions = [
   question_id: "FR_MTPSEP24II_3A",
   source: "ICAI MTP September 2024 Series II",
   chapter_name: "Ind AS 105 - Non-current Assets Held for Sale and Discontinued Operations",
-  placement: "3",
+  placement: 3 ,
   marks: 8,
   question_html: `
 
@@ -7407,7 +7407,7 @@ const descriptiveQuestions = [
   question_id: "FR_MTPSEP24II_3B",
   source: "ICAI MTP September 2024 Series II",
   chapter_name: "Ind AS 21 - The Effects of Changes in Foreign Exchange Rates",
-  placement: "3",
+  placement: 3,
   marks: 6,
   question_html: `
 
@@ -7620,7 +7620,7 @@ const descriptiveQuestions = [
   question_id: "FR_MTPSEP24II_4A",
   source: "ICAI MTP September 2024 Series II",
   chapter_name: "Ind AS 16 - Property, Plant and Equipment",
-  placement: "4",
+  placement: 4,
   marks: 6,
   question_html: `<p>A Ltd. purchased some Property, Plant and Equipment on <strong>1st April, 20X1</strong>, and estimated their useful lives for the purpose of financial statements prepared on the basis of Ind AS. Following were the original cost, and useful life of the various components of property, plant, and equipment assessed on 1st April, 20X1:</p>
 
@@ -7675,7 +7675,7 @@ const descriptiveQuestions = [
   question_id: "FR_MTPSEP24II_4B",
   source: "ICAI MTP September 2024 Series II",
   chapter_name: "Ind AS 102 - Share-based Payment",
-  placement: "4",
+  placement: 4 ,
   marks: 8,
   question_html: `<p>P Ltd. granted <strong>400 stock appreciation rights (SAR)</strong> each to <strong>75 employees</strong> on <strong>1st April 20X1</strong> with a fair value of <strong>₹ 200</strong>. The terms of the award require the employee to provide service for <strong>four years</strong> in order to earn the award.</p>
 
@@ -7791,7 +7791,7 @@ const descriptiveQuestions = [
   question_id: "FR_MTPSEP24II_5A",
   source: "ICAI MTP September 2024 Series II",
   chapter_name: "Ind AS 115 - Revenue from Contracts with Customers",
-  placement: "5",
+  placement: 5,
   marks: 6,
 
   question_html: `<p>AST Limited enters into a contract with a customer to build a manufacturing facility. The entity determines that the contract contains <strong>one performance obligation satisfied over time.</strong></p>
@@ -7897,7 +7897,7 @@ const descriptiveQuestions = [
   question_id: "FR_MTPSEP24II_5B",
   source: "ICAI MTP September 2024 Series II",
   chapter_name: "Ind AS 38 - Intangible Assets; Ind AS 105 - Non-current Assets Held for Sale and Discontinued Operations; Ind AS 36 - Impairment of Assets; Ind AS 10 - Events after the Reporting Period",
-  placement: "5",
+  placement: 5 ,
   marks: 4,
 
   question_html: `<p><strong>Mumbai Challengers Ltd.</strong>, a listed entity, is a sports organization owning several cricket and hockey teams. The issues below pertain to the reporting period ending <strong>31st March 20X2</strong>.</p>
@@ -7972,7 +7972,7 @@ const descriptiveQuestions = [
   question_id: "FR_MTPSEP24II_5C",
   source: "ICAI MTP September 2024 Series II",
   chapter_name: "Code of Ethics – Fundamental Principles of Ethics",
-  placement: "5",
+  placement: 5 ,
   marks: 4,
 
   question_html: `<p><strong>Explain the five fundamental principles of ethics for Chartered Accountants.</strong></p>`,
@@ -8000,7 +8000,7 @@ const descriptiveQuestions = [
   question_id: "FR_MTPSEP24II_6A",
   source: "ICAI MTP September 2024 Series II",
   chapter_name: "Ind AS 113 – Fair Value Measurement",
-  placement: "6",
+  placement: 6 ,
   marks: 5,
 
   question_html: `<p><strong>(i)</strong> Entity A owns <strong>250 ordinary shares</strong> in company XYZ, an unquoted company. Company XYZ has a total share capital of <strong>5,000 shares</strong> with nominal value of <strong>₹ 10</strong>. Entity XYZ’s after-tax maintainable profits are estimated at <strong>₹ 70,000 per year</strong>. An appropriate <strong>price/earnings ratio</strong> determined from published industry data is <strong>15</strong> (before lack of marketability adjustment). Entity A’s management estimates that the <strong>discount for the lack of marketability</strong> of company XYZ’s shares and restrictions on their transfer is <strong>20%</strong>. Entity A values its holding in company XYZ’s shares based on earnings.</p>
@@ -8050,7 +8050,7 @@ const descriptiveQuestions = [
   question_id: "FR_MTPSEP24II_6B",
   source: "ICAI MTP September 2024 Series II",
   chapter_name: "Ind AS Roadmap; Ind AS 109 - Financial Instruments (Derecognition)",
-  placement: "6",
+  placement: 6 ,
   marks: 5,
 
   question_html: `<p><strong>Answer either of the following:</strong></p>
@@ -8190,7 +8190,7 @@ const descriptiveQuestions = [
   question_id: "FR_MTPSEP24II_6C",
   source: "ICAI MTP September 2024 Series II",
   chapter_name: "Ind AS 37 - Provisions, Contingent Liabilities and Contingent Assets",
-  placement: "6",
+  placement: 6 ,
   marks: 4,
 
   question_html: `<p>Under new legislation, an entity is required to fit smoke filters to its factories by <strong>30th September, 20X1</strong>. The entity has not fitted the smoke filters. It is assumed that a reliable estimate can be made of any outflows expected.</p>
