@@ -3512,13 +3512,13 @@ const descriptiveQuestions = [
   },
 
   {
-  question_id: "FR_MTPSEP24S1_1",
-  source: "ICAI MTP September 2024 Series I",
-  chapter_name: "Ind AS 103 - Business Combinations (Reverse Acquisition)",
-  placement: 1,
-  marks: 14,
+    question_id: "FR_MTPSEP24S1_1",
+    source: "ICAI MTP September 2024 Series I",
+    chapter_name: "Ind AS 103 - Business Combinations (Reverse Acquisition)",
+    placement: 1,
+    marks: 14,
 
-  question_html: `
+    question_html: `
 
     <p>
       On <strong>31st December, 20X1</strong>, Entity A issues
@@ -3651,7 +3651,7 @@ const descriptiveQuestions = [
 
   `,
 
-  solution_html: `
+    solution_html: `
 
     <p><strong>Identifying the Acquirer</strong></p>
 
@@ -3847,17 +3847,18 @@ const descriptiveQuestions = [
       issued by the legal parent to effect the combination.
     </p>
 
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPSEP24S1_2A",
-  source: "ICAI MTP September 2024 Series I",
-  chapter_name: "Ind AS 109 - Financial Instruments / Ind AS 113 - Fair Value Measurement",
-  placement: "2",
-  marks: 10,
+  {
+    question_id: "FR_MTPSEP24S1_2A",
+    source: "ICAI MTP September 2024 Series I",
+    chapter_name:
+      "Ind AS 109 - Financial Instruments / Ind AS 113 - Fair Value Measurement",
+    placement: "2",
+    marks: 10,
 
-  question_html: `
+    question_html: `
 
     <p>
       XYZ Ltd. is a company incorporated in India. It provides an
@@ -3888,7 +3889,7 @@ const descriptiveQuestions = [
 
   `,
 
-  solution_html: `
+    solution_html: `
 
     <p>
       Ind AS 109 requires that financial assets and financial liabilities
@@ -4184,17 +4185,17 @@ const descriptiveQuestions = [
 
     </table>
 
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPSEP24S1_2B",
-  source: "ICAI MTP September 2024 Series I",
-  chapter_name: "Ind AS 24 - Related Party Disclosures",
-  placement: "2",
-  marks: 4,
+  {
+    question_id: "FR_MTPSEP24S1_2B",
+    source: "ICAI MTP September 2024 Series I",
+    chapter_name: "Ind AS 24 - Related Party Disclosures",
+    placement: "2",
+    marks: 4,
 
-  question_html: `
+    question_html: `
 
     <p>
       One of the directors of <strong>Buildwell Ltd.</strong>,
@@ -4231,7 +4232,7 @@ const descriptiveQuestions = [
 
   `,
 
-  solution_html: `
+    solution_html: `
 
     <p>
       In accordance with <strong>Ind AS 24 – Related Party Disclosures</strong>,
@@ -4271,16 +4272,16 @@ const descriptiveQuestions = [
       during the current accounting period.
     </p>
 
-  `
-},
-{
-  question_id: "FR_MTPSEP24S1_2C",
-  source: "ICAI MTP September 2024 Series I",
-  chapter_name: "Ind AS 108 - Operating Segments",
-  placement: "2",
-  marks: 4,
+  `,
+  },
+  {
+    question_id: "FR_MTPSEP24S1_2C",
+    source: "ICAI MTP September 2024 Series I",
+    chapter_name: "Ind AS 108 - Operating Segments",
+    placement: "2",
+    marks: 4,
 
-  question_html: `
+    question_html: `
 
     <p>
       An entity uses the <strong>weighted average cost formula</strong> to
@@ -4303,7 +4304,7 @@ const descriptiveQuestions = [
 
   `,
 
-  solution_html: `
+    solution_html: `
 
     <p>
       As per <strong>Ind AS 108 - Operating Segments</strong>, segment
@@ -4332,17 +4333,17 @@ const descriptiveQuestions = [
       the financial statements.
     </p>
 
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPSEP24S1_3A",
-  source: "ICAI MTP September 2024 Series I",
-  chapter_name: "Ind AS 7 - Statement of Cash Flows",
-  placement: 3,
-  marks: 8,
+  {
+    question_id: "FR_MTPSEP24S1_3A",
+    source: "ICAI MTP September 2024 Series I",
+    chapter_name: "Ind AS 7 - Statement of Cash Flows",
+    placement: 3,
+    marks: 8,
 
-  question_html: `
+    question_html: `
 
     <p>
       One of the subsidiaries of B Ltd. submitted to Central Finance its
@@ -4534,7 +4535,7 @@ const descriptiveQuestions = [
 
   `,
 
-  solution_html: `
+    solution_html: `
 
     <p><strong>Statement of Cash Flows for the year ended 31st March, 20X3 (Indirect Method)</strong></p>
 
@@ -4803,17 +4804,17 @@ const descriptiveQuestions = [
 
     </table>
 
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPSEP24S1_3B",
-  source: "ICAI MTP September 2024 Series I",
-  chapter_name: "Ind AS 19 - Employee Benefits",
-  placement: 3,
-  marks: 6,
+  {
+    question_id: "FR_MTPSEP24S1_3B",
+    source: "ICAI MTP September 2024 Series I",
+    chapter_name: "Ind AS 19 - Employee Benefits",
+    placement: 3,
+    marks: 6,
 
-  question_html: `
+    question_html: `
 
     <p>
       SA Pvt. Ltd. is engaged in the business of retail having 100 retail outlets
@@ -4897,7 +4898,7 @@ const descriptiveQuestions = [
 
   `,
 
-  solution_html: `
+    solution_html: `
 
     <p>
       As per <strong>Ind AS 19 – Employee Benefits</strong>,
@@ -4993,17 +4994,17 @@ const descriptiveQuestions = [
 
     </table>
 
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPSEP24S1_4A",
-  source: "ICAI MTP September 2024 Series I",
-  chapter_name: "Ind AS 12 - Income Taxes",
-  placement: 4,
-  marks: 8,
+  {
+    question_id: "FR_MTPSEP24S1_4A",
+    source: "ICAI MTP September 2024 Series I",
+    chapter_name: "Ind AS 12 - Income Taxes",
+    placement: 4,
+    marks: 8,
 
-  question_html: `
+    question_html: `
 
     <p>
       PQR Ltd., a manufacturing company, prepares consolidated financial
@@ -5085,7 +5086,7 @@ const descriptiveQuestions = [
 
   `,
 
-  solution_html: `
+    solution_html: `
 
     <p>
       <strong>Impact on Consolidated Balance Sheet of PQR Ltd. Group as at
@@ -5253,17 +5254,17 @@ const descriptiveQuestions = [
 
     </table>
 
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPSEP24S1_4B",
-  source: "ICAI MTP September 2024 Series I",
-  chapter_name: "Ind AS 115 - Revenue from Contracts with Customers",
-  placement: 4,
-  marks: 6,
+  {
+    question_id: "FR_MTPSEP24S1_4B",
+    source: "ICAI MTP September 2024 Series I",
+    chapter_name: "Ind AS 115 - Revenue from Contracts with Customers",
+    placement: 4,
+    marks: 6,
 
-  question_html: `
+    question_html: `
 
     <p>
       An entity enters into a contract with a customer on
@@ -5306,7 +5307,7 @@ const descriptiveQuestions = [
 
   `,
 
-  solution_html: `
+    solution_html: `
 
     <p>
       In the facts provided above, the entity has made sale of
@@ -5435,18 +5436,18 @@ const descriptiveQuestions = [
       basis</strong>.
     </p>
 
-  `
-},
+  `,
+  },
 
-{
-  question_id: "FR_MTPSEP24S1_5A",
-  source: "ICAI MTP September 2024 Series I",
-  chapter_name:
-    "Ind AS 20 - Accounting for Government Grants and Disclosure of Government Assistance / Ind AS 101 - First-time Adoption of Indian Accounting Standards",
-  placement: 5,
-  marks: 4,
+  {
+    question_id: "FR_MTPSEP24S1_5A",
+    source: "ICAI MTP September 2024 Series I",
+    chapter_name:
+      "Ind AS 20 - Accounting for Government Grants and Disclosure of Government Assistance / Ind AS 101 - First-time Adoption of Indian Accounting Standards",
+    placement: 5,
+    marks: 4,
 
-  question_html: `
+    question_html: `
 
     <p>
       ABC Ltd is a government company and is a first-time adopter of Ind AS.
@@ -5472,7 +5473,7 @@ const descriptiveQuestions = [
 
   `,
 
-  solution_html: `
+    solution_html: `
 
     <p>
       Paragraph 2 of Ind AS 20, <strong>Accounting for Government Grants and
@@ -5553,16 +5554,15 @@ const descriptiveQuestions = [
     </p>
 
   `,
-},
-{
-  question_id: "FR_MTPSEP24S1_5B",
-  source: "ICAI MTP September 2024 Series I",
-  chapter_name:
-    "Ind AS 116 - Leases",
-  placement: 5,
-  marks: 10,
+  },
+  {
+    question_id: "FR_MTPSEP24S1_5B",
+    source: "ICAI MTP September 2024 Series I",
+    chapter_name: "Ind AS 116 - Leases",
+    placement: 5,
+    marks: 10,
 
-  question_html: `
+    question_html: `
 
     <p>
       Feel Fresh Limited (the Company) is into manufacturing and retailing
@@ -5708,7 +5708,7 @@ const descriptiveQuestions = [
 
   `,
 
-  solution_html: `
+    solution_html: `
 
     <p><strong>Identification of the contract (by applying paragraph 9 of Ind AS 116)</strong></p>
 
@@ -5892,16 +5892,16 @@ const descriptiveQuestions = [
     </p>
 
   `,
-},
-{
-  question_id: "FR_MTPSEP24S1_6A",
-  source: "ICAI MTP September 2024 Series I",
-  chapter_name:
-    "Ind AS 1 - Presentation of Financial Statements / Ind AS 16 - Property, Plant and Equipment / Ind AS 40 - Investment Property",
-  placement: 6,
-  marks: 9,
+  },
+  {
+    question_id: "FR_MTPSEP24S1_6A",
+    source: "ICAI MTP September 2024 Series I",
+    chapter_name:
+      "Ind AS 1 - Presentation of Financial Statements / Ind AS 16 - Property, Plant and Equipment / Ind AS 40 - Investment Property",
+    placement: 6,
+    marks: 9,
 
-  question_html: `
+    question_html: `
 
     <p>
       Venus Ltd. is a multinational entity that owns three properties.
@@ -5974,7 +5974,7 @@ const descriptiveQuestions = [
 
   `,
 
-  solution_html: `
+    solution_html: `
 
     <p>
       The above issue needs to be examined in the light of the provisions of
@@ -6142,16 +6142,14 @@ const descriptiveQuestions = [
     </p>
 
   `,
-},
-{
-  question_id: "FR_MTPSEP24S1_6B",
-  source: "ICAI MTP September 2024 Series I",
-  chapter_name:
-    "Ethics in Financial Reporting / Ind AS 19 - Employee Benefits",
-  placement: 6,
-  marks: 5,
-
-  question_html: `
+  },
+  {
+    question_id: "FR_MTPSEP24S1_6B",
+    source: "ICAI MTP September 2024 Series I",
+    chapter_name: "Ethics in Financial Reporting / Ind AS 19 - Employee Benefits",
+    placement: 6,
+    marks: 5,
+    question_html: `
 
     <p>
       Infostar Ltd. is a listed company engaged in the provision of IT
@@ -6243,8 +6241,7 @@ const descriptiveQuestions = [
     </p>
 
   `,
-
-  solution_html: `
+    solution_html: `
 
     <p><strong>Ethical Considerations</strong></p>
 
@@ -6314,33 +6311,1914 @@ const descriptiveQuestions = [
     </p>
 
     <p>
-      It would be unethical for a Chartered Accountant to guide the
-      management on matters which may result in any kind of disadvantage
+      It would be unethical for a Chartered Accountant to guide the management on matters which may result in any kind of disadvantage
       (including non-financial matters) to the stakeholders.
     </p>
 
+    <p> Further, a distinguishing mark of the accountancy profession is its acceptance of the responsibility to act in the public interest. A Chartered Accountant's responsibility is not exclusively to satisfy the needs of an individual client or employing organization. </p>
+
+    <p> Therefore, the Code contains requirements and application material to enable Chartered Accountants to meet their responsibility to act in the public interest. </p>
+
+  `,
+  },
+  {
+    question_id: "FR_MTPSEP24S2_1",
+    source: "ICAI MTP September 2024 Series II",
+    chapter_name: "Consolidated Financial Statements / Ind AS 110 & 103",
+    placement: 1,
+    marks: 14,
+    question_html: `<p>DEF Ltd. acquired 100% ordinary shares of ₹ 100 each of XYZ Ltd. on 1st October 20X1. On 31st March, 20X2 the summarised Balance Sheets of the two companies were as given below:</p>
+
+    <table>
+      <tr>
+        <th></th>
+        <th>DEF Ltd.</th>
+        <th>XYZ Ltd.</th>
+      </tr>
+      <tr>
+        <td><strong>Assets</strong></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Property Plant Equipment</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Land & Buildings</td>
+        <td>15,00,000</td>
+        <td>18,00,000</td>
+      </tr>
+      <tr>
+        <td>Plant & Machinery</td>
+        <td>24,00,000</td>
+        <td>13,50,000</td>
+      </tr>
+      <tr>
+        <td>Investment in XYZ Ltd.</td>
+        <td>34,00,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Inventory</td>
+        <td>12,00,000</td>
+        <td>3,64,000</td>
+      </tr>
+      <tr>
+        <td>Financial Assets</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Trade Receivable</td>
+        <td>5,98,000</td>
+        <td>4,00,000</td>
+      </tr>
+      <tr>
+        <td>Cash</td>
+        <td>1,45,000</td>
+        <td>80,000</td>
+      </tr>
+      <tr>
+        <td><strong>Total</strong></td>
+        <td><strong>92,43,000</strong></td>
+        <td><strong>39,94,000</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Equity & Liabilities</strong></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Equity Capital (Shares of ₹ 100 each fully paid)</td>
+        <td>50,00,000</td>
+        <td>20,00,000</td>
+      </tr>
+      <tr>
+        <td>Other Equity</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Other reserves</td>
+        <td>24,00,000</td>
+        <td>10,00,000</td>
+      </tr>
+      <tr>
+        <td>Retained Earnings</td>
+        <td>5,72,000</td>
+        <td>8,20,000</td>
+      </tr>
+      <tr>
+        <td>Financial Liabilities</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Bank Overdraft</td>
+        <td>-</td>
+        <td>8,00,000</td>
+      </tr>
+      <tr>
+        <td>Trade Payable</td>
+        <td>1,74,000</td>
+        <td>4,71,000</td>
+      </tr>
+      <tr>
+        <td><strong>Total</strong></td>
+        <td><strong>92,43,000</strong></td>
+        <td><strong>39,94,000</strong></td>
+      </tr>
+    </table>
+
+    <p>The retained earnings of XYZ Ltd. showed a credit balance of ₹ 3,00,000 on 1st April 20X1 out of which a dividend of 10% was paid on 1st November; DEF Ltd. has recognised the dividend received to profit or loss account; Fair Value of P&M as on 1st October 20X1 was ₹ 20,00,000. The rate of depreciation on plant & machinery is 10%.</p>
+
+    <p>Following are the increases on comparison of fair value as per respective Ind AS with book value as on 1st October 20X1 which are to be considered while consolidating the Balance Sheets.</p>
+
+    <table>
+      <tr>
+        <th>Liabilities</th>
+        <th>Amount (₹)</th>
+        <th>Assets</th>
+        <th>Amount (₹)</th>
+      </tr>
+      <tr>
+        <td>Trade Payables</td>
+        <td>1,00,000</td>
+        <td>Land & Buildings</td>
+        <td>10,00,000</td>
+      </tr>
+      <tr>
+        <td>Inventories</td>
+        <td>1,50,000</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <p><strong>Notes:</strong></p>
+    <ol type="a">
+      <li>It may be assumed that the inventory is still unsold on balance sheet date and the Trade Payables are also not yet settled.</li>
+      <li>Also assume that the Other Reserves of both the companies as on 31st March 20X2 are the same as was on 1st April 20X1.</li>
+      <li>All fair value adjustments have not yet started impacting consolidated post-acquisition profits.</li>
+    </ol>
+
+    <p>Prepare Consolidated Balance Sheet as at 31st March, 20X2.</p>
+  `,
+    solution_html: ` <p><strong>Consolidated Balance Sheet of DEF Ltd. and its subsidiary, XYZ Ltd. as at 31st March, 20X2</strong></p>
+
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>Note No.</th>
+        <th>₹</th>
+      </tr>
+      <tr>
+        <td><strong>I. Assets</strong></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>(1) Non-current assets</strong></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>(i) Property Plant & Equipment</td>
+        <td>1</td>
+        <td>86,00,000</td>
+      </tr>
+      <tr>
+        <td><strong>(2) Current Assets</strong></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>(i) Inventories</td>
+        <td>2</td>
+        <td>17,14,000</td>
+      </tr>
+      <tr>
+        <td>(ii) Financial Assets</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>(a) Trade Receivables</td>
+        <td>3</td>
+        <td>9,98,000</td>
+      </tr>
+      <tr>
+        <td>(b) Cash & Cash equivalents</td>
+        <td>4</td>
+        <td>2,25,000</td>
+      </tr>
+      <tr>
+        <td><strong>Total Assets</strong></td>
+        <td></td>
+        <td><strong>1,15,37,000</strong></td>
+      </tr>
+      <tr>
+        <td><strong>II. Equity and Liabilities</strong></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>(1) Equity</strong></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>(i) Equity Share Capital</td>
+        <td>5</td>
+        <td>50,00,000</td>
+      </tr>
+      <tr>
+        <td>(ii) Other Equity</td>
+        <td>6</td>
+        <td>49,92,000</td>
+      </tr>
+      <tr>
+        <td><strong>(2) Current Liabilities</strong></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>(i) Financial Liabilities</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>(a) Trade Payables</td>
+        <td>7</td>
+        <td>7,45,000</td>
+      </tr>
+      <tr>
+        <td>(b) Short term borrowings</td>
+        <td>8</td>
+        <td>8,00,000</td>
+      </tr>
+      <tr>
+        <td><strong>Total Equity & Liabilities</strong></td>
+        <td></td>
+        <td><strong>1,15,37,000</strong></td>
+      </tr>
+    </table>
+
+    <p><strong>Notes to Accounts</strong></p>
+    <table>
+      <tr>
+        <th>Note</th>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Property Plant & Equipment<br>Land & Building<br>Plant & Machinery</td>
+        <td><br>43,00,000<br>43,00,000<br><strong>86,00,000</strong></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Inventories<br>DEF Ltd.<br>XYZ Ltd.</td>
+        <td><br>12,00,000<br>5,14,000<br><strong>17,14,000</strong></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Trade Receivables<br>DEF Ltd.<br>XYZ Ltd.</td>
+        <td><br>5,98,000<br>4,00,000<br><strong>9,98,000</strong></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Cash & Cash equivalents<br>DEF Ltd.<br>XYZ Ltd.</td>
+        <td><br>1,45,000<br>80,000<br><strong>2,25,000</strong></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Trade payable<br>DEF Ltd.<br>XYZ Ltd.</td>
+        <td><br>4,71,000<br>2,74,000<br><strong>7,45,000</strong></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Shorter-term borrowings<br>Bank overdraft</td>
+        <td><br><strong>8,00,000</strong></td>
+      </tr>
+    </table>
+
+    <p><strong>Statement of Changes in Equity:</strong></p>
+    <p><strong>1. Equity share Capital</strong></p>
+    <table>
+      <tr>
+        <th>Balance at the beginning of the reporting period</th>
+        <th>Changes in Equity share capital during the year</th>
+        <th>Balance at the end of the reporting period</th>
+      </tr>
+      <tr>
+        <td>50,00,000</td>
+        <td>0</td>
+        <td>50,00,000</td>
+      </tr>
+    </table>
+
+    <p><strong>2. Other Equity</strong></p>
+    <table>
+      <tr>
+        <th></th>
+        <th>Reserves & Surplus</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>Capital reserve</th>
+        <th>Other Reserves</th>
+        <th>Retained Earnings</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>Balance at the beginning</td>
+        <td>0</td>
+        <td>24,00,000</td>
+        <td>0</td>
+        <td>24,00,000</td>
+      </tr>
+      <tr>
+        <td>Total comprehensive income for the year</td>
+        <td>0</td>
+        <td>0</td>
+        <td>5,72,000</td>
+        <td>5,72,000</td>
+      </tr>
+      <tr>
+        <td>Dividends</td>
+        <td>0</td>
+        <td>0</td>
+        <td>(2,00,000)</td>
+        <td>(2,00,000)</td>
+      </tr>
+      <tr>
+        <td>Total comprehensive income attributable to parent</td>
+        <td></td>
+        <td></td>
+        <td>3,35,000</td>
+        <td>3,35,000</td>
+      </tr>
+      <tr>
+        <td>Gain on Bargain purchase</td>
+        <td>18,85,000</td>
+        <td></td>
+        <td></td>
+        <td>18,85,000</td>
+      </tr>
+      <tr>
+        <td><strong>Balance at the end of reporting period</strong></td>
+        <td><strong>18,85,000</strong></td>
+        <td><strong>24,00,000</strong></td>
+        <td><strong>7,07,000</strong></td>
+        <td><strong>49,92,000</strong></td>
+      </tr>
+    </table>
+
+    <p><em>It is assumed that there exists no clear evidence for classifying the acquisition of the subsidiary as a bargain purchase and, hence, the bargain purchase gain has been recognized directly in capital reserve. If, however, there exists such a clear evidence, the bargain purchase gain would be recognized in other comprehensive income and then accumulated in capital reserve. In both the cases, closing balance of capital reserve will be ₹ 18,85,000.</em></p>
+
+    <p><strong>Working Notes:</strong></p>
+    <p><strong>1. Adjustments of Fair Value</strong><br>
+    The Plant & Machinery of XYZ Ltd. would stand in the books at ₹ 14,25,000 on 1st October, 20X1, considering only six months’ depreciation on ₹ 15,00,000 total depreciation being ₹ 1,50,000. The value put on the assets being ₹ 20,00,000 there is an appreciation to the extent of ₹ 5,75,000.</p>
+
+    <p><strong>2. Acquisition date profits of XYZ Ltd.</strong></p>
+    <table>
+      <tr><td>Reserves on 1.4.20X1</td><td>10,00,000</td></tr>
+      <tr><td>Profit & Loss Account Balance on 1.4. 20X1</td><td>3,00,000</td></tr>
+      <tr><td>Profit for 20X2:<br>Total ₹ 8,20,000 less ₹ 1,00,000 (3,00,000 – 2,00,000) i.e. ₹ 7,20,000; for 6 months i.e. up to 1.10.20X1</td><td>3,60,000</td></tr>
+      <tr><td>Total Appreciation including machinery appreciation<br>(10,00,000 + 1,50,000 + 5,75,000 – 1,00,000)</td><td>16,25,000</td></tr>
+      <tr><td><strong>Share of DEF Ltd.</strong></td><td><strong>32,85,000</strong></td></tr>
+    </table>
+
+    <p><strong>3. Post-acquisition profits of XYZ Ltd.</strong></p>
+    <table>
+      <tr><td>Profit after 1.10. 20X1 [8,20,000 - 1,00,000] x 6/12</td><td>3,60,000</td></tr>
+      <tr><td>Less: 10% depreciation on ₹ 20,00,000 for 6 months less depreciation already charged for 2nd half of 20X1-20X2 on ₹ 15,00,000 (1,00,000 - 75,000)</td><td>(25,000)</td></tr>
+      <tr><td><strong>Share of DEF Ltd.</strong></td><td><strong>3,35,000</strong></td></tr>
+    </table>
+
+    <p><strong>4. Consolidated total comprehensive income</strong></p>
+    <table>
+      <tr><td><strong>DEF Ltd.</strong></td><td></td></tr>
+      <tr><td>Retained earnings on 31.3.20X2</td><td>5,72,000</td></tr>
+      <tr><td>Less: Retained earnings as on 1.4.20X1</td><td>(0)</td></tr>
+      <tr><td>Profits for the year 20X1-20X2</td><td>5,72,000</td></tr>
+      <tr><td>Less: Elimination of intra-group dividend</td><td>(2,00,000)</td></tr>
+      <tr><td>Adjusted profit for the year</td><td>3,72,000</td></tr>
+      <tr><td><strong>XYZ Ltd.</strong></td><td></td></tr>
+      <tr><td>Adjusted profit attributable to DEF Ltd. (W.N.3)</td><td>3,35,000</td></tr>
+      <tr><td><strong>Consolidated profit or loss for the year</strong></td><td><strong>7,07,000</strong></td></tr>
+    </table>
+    <p><em>No Non-controlling Interest as 100% shares of XYZ Ltd. are held by DEF Ltd.</em></p>
+
+    <p><strong>5. Gain on Bargain Purchase</strong></p>
+    <table>
+      <tr><td>Amount paid for 20,000 shares</td><td>34,00,000</td></tr>
+      <tr><td>Par value of shares</td><td>20,00,000</td></tr>
+      <tr><td>DEF Ltd.’s share in acquisition date profits of XYZ Ltd.</td><td>32,85,000</td></tr>
+      <tr><td></td><td>(52,85,000)</td></tr>
+      <tr><td><strong>Gain on Bargain Purchase</strong></td><td><strong>18,85,000</strong></td></tr>
+    </table>
+
+    <p><strong>6. Value of Plant & Machinery</strong></p>
+    <table>
+      <tr><td><strong>DEF Ltd.</strong></td><td><strong>24,00,000</strong></td></tr>
+      <tr><td><strong>XYZ Ltd.</strong></td><td>13,50,000</td></tr>
+      <tr><td>Add: Appreciation on 1.10. 20X1</td><td>5,75,000</td></tr>
+      <tr><td></td><td>19,25,000</td></tr>
+      <tr><td>Add: Depreciation for 2nd half charged on pre-revalued value</td><td>75,000</td></tr>
+      <tr><td>Less: Depreciation on ₹ 20,00,000 for 6 months</td><td>(1,00,000)</td></tr>
+      <tr><td></td><td><strong>19,00,000</strong></td></tr>
+      <tr><td><strong>Total</strong></td><td><strong>43,00,000</strong></td></tr>
+    </table>
+
+    <p><strong>7. Consolidated retained earnings</strong></p>
+    <table>
+      <tr>
+        <th></th>
+        <th>DEF Ltd.</th>
+        <th>XYZ Ltd.</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>As given</td>
+        <td>5,72,000</td>
+        <td>8,20,000</td>
+        <td>13,92,000</td>
+      </tr>
+      <tr>
+        <td><strong>Consolidation Adjustments:</strong></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>(i) Elimination of pre-acquisition element [3,00,000 + 3,60,000]</td>
+        <td>0</td>
+        <td>(6,60,000)</td>
+        <td>(6,60,000)</td>
+      </tr>
+      <tr>
+        <td>(ii) Elimination of intra-group dividend</td>
+        <td>(2,00,000)</td>
+        <td>2,00,000</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>(iii) Impact of fair value adjustments</td>
+        <td>0</td>
+        <td>(25,000)</td>
+        <td>(25,000)</td>
+      </tr>
+      <tr>
+        <td><strong>Adjusted consolidated retained earnings</strong></td>
+        <td><strong>3,72,000</strong></td>
+        <td><strong>3,35,000</strong></td>
+        <td><strong>7,07,000</strong></td>
+      </tr>
+    </table>
+
+    <p><strong>Assumptions:</strong></p>
+    <ol>
+      <li>Investment in XYZ Ltd is carried at cost in the separate financial statements of DEF Ltd.</li>
+      <li>Appreciation of ₹10 lakhs in land & buildings is entirely attributable to land element only.</li>
+      <li>Depreciation on plant and machinery is on WDV method.</li>
+      <li>Acquisition-date fair value adjustment to inventories of XYZ Ltd. existing at the balance sheet date does not result in need for any write-down.</li>
+    </ol>`,
+  },
+
+{
+    "question_id": "FR_MTPSEP24S2_2A",
+    "source": "ICAI MTP September 2024 Series II",
+    "chapter_name": "Financial Instruments / Ind AS 109",
+    "placement": 2,
+    "marks": 10,
+    "question_html": `
+    <p>Wheel Co. Limited borrowed ₹ 500,000,000 from a bank on 1 January 20X1. The original terms of the loan were as follows:</p>
+    <ul>
+      <li>Interest rate: 11%</li>
+      <li>Repayment of principal in 5 equal instalments</li>
+      <li>Payment of interest annually on accrual basis</li>
+      <li>Upfront processing fee: ₹ 5,870,096</li>
+    </ul>
+    <p>Effective interest rate on loan: 11.50%</p>
+    <p>On 31 December 20X2, Wheel Co. Limited approached the bank citing liquidity issues in meeting the cash flows required for immediate instalments and re-negotiated the terms of the loan with banks as follows:</p>
+    <ul>
+      <li>Interest rate 15%</li>
+      <li>Repayment of outstanding principal in 10 equal instalments starting 31 December 20X3</li>
+      <li>Payment of interest on an annual basis</li>
+    </ul>
+    <p>Record journal entries in the books of Wheel Co. Limited till 31 December 20X3, after giving effect of the changes in the terms of the loan on 31 December 20X2</p>
+  `,
+    "solution_html": `
+    <p>On the date of initial recognition, the effective interest rate of the loan shall be computed keeping in view the contractual cash flows and upfront processing fee paid. The following table shows the amortisation of loan based on effective interest rate:</p>
+
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Cash flows (principal)</th>
+        <th>Cash flows (interest and fee)</th>
+        <th>Amortised cost <br> (opening + interest – cash flows)</th>
+        <th>Interest @ EIR (11.50%)</th>
+      </tr>
+      <tr>
+        <td>1-Jan-20X1</td>
+        <td>(500,000,000)</td>
+        <td>5,870,096</td>
+        <td>494,129,904</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>31-Dec-20X1</td>
+        <td>100,000,000</td>
+        <td>55,000,000</td>
+        <td>395,954,843</td>
+        <td>56,824,939</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20X2</td>
+        <td>100,000,000</td>
+        <td>44,000,000</td>
+        <td>297,489,650</td>
+        <td>45,534,807</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20X3</td>
+        <td>100,000,000</td>
+        <td>33,000,000</td>
+        <td>198,700,959</td>
+        <td>34,211,310</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20X4</td>
+        <td>100,000,000</td>
+        <td>22,000,000</td>
+        <td>99,551,570</td>
+        <td>22,850,610</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20X5</td>
+        <td>100,000,000</td>
+        <td>11,000,000</td>
+        <td>(0)</td>
+        <td>11,448,430</td>
+      </tr>
+    </table>
+
+    <p><strong>a. 1 January 20X1 –</strong></p>
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>(₹)</th>
+        <th>(₹)</th>
+      </tr>
+      <tr>
+        <td>Bank A/c Dr.</td>
+        <td>494,129,904</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>To Loan from bank A/c</td>
+        <td></td>
+        <td>494,129,904</td>
+      </tr>
+      <tr>
+        <td><em>(Being loan recorded at its fair value less transaction costs on the initial recognition date)</em></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <p><strong>b. 31 December 20X1 –</strong></p>
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>(₹)</th>
+        <th>(₹)</th>
+      </tr>
+      <tr>
+        <td>Loan from bank A/c Dr.</td>
+        <td>98,175,061</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Interest expense (profit and loss) Dr.</td>
+        <td>56,824,939</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>To Bank A/c</td>
+        <td></td>
+        <td>155,000,000</td>
+      </tr>
+      <tr>
+        <td><em>(Being first instalment of loan and payment of interest accounted for as an adjustment to the amortised cost of loan)</em></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <p><strong>c. 31 December 20X2 – Before Wheel Co. Limited approached the bank –</strong></p>
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>(₹)</th>
+        <th>(₹)</th>
+      </tr>
+      <tr>
+        <td>Interest expense (profit and loss Dr.</td>
+        <td>45,534,807</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>To Loan from bank A/c</td>
+        <td></td>
+        <td>1,534,807</td>
+      </tr>
+      <tr>
+        <td>To Bank A/c</td>
+        <td></td>
+        <td>44,000,000</td>
+      </tr>
+      <tr>
+        <td><em>(Being loan payment of interest recorded by the Company before it approached the Bank for deferment of principal)</em></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <p>Upon receiving the new terms of the loan, Wheel Co. Limited, re-computed the carrying value of the loan by discounting the new cash flows with the original effective interest rate and comparing the same with the current carrying value of the loan. As per requirements of Ind AS 109, any change of more than 10% shall be considered a substantial modification, resulting in fresh accounting for the new loan:</p>
+
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Cash flows (principal)</th>
+        <th>Interest outflow @ 15%</th>
+        <th>Discount factor</th>
+        <th>PV of cash flows</th>
+      </tr>
+      <tr>
+        <td>31-Dec-20X2</td>
+        <td>(400,000,000)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>31-Dec-20X3</td>
+        <td>40,000,000</td>
+        <td>60,000,000</td>
+        <td>0.8969</td>
+        <td>89,686,099</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20X4</td>
+        <td>40,000,000</td>
+        <td>54,000,000</td>
+        <td>0.8044</td>
+        <td>75,609,805</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20X5</td>
+        <td>40,000,000</td>
+        <td>48,000,000</td>
+        <td>0.7214</td>
+        <td>63,483,092</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20X6</td>
+        <td>40,000,000</td>
+        <td>42,000,000</td>
+        <td>0.6470</td>
+        <td>53,053,542</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20X7</td>
+        <td>40,000,000</td>
+        <td>36,000,000</td>
+        <td>0.5803</td>
+        <td>44,100,068</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20X8</td>
+        <td>40,000,000</td>
+        <td>30,000,000</td>
+        <td>0.5204</td>
+        <td>36,429,133</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20X9</td>
+        <td>40,000,000</td>
+        <td>24,000,000</td>
+        <td>0.4667</td>
+        <td>29,871,422</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20Y0</td>
+        <td>40,000,000</td>
+        <td>18,000,000</td>
+        <td>0.4186</td>
+        <td>24,278,903</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20Y1</td>
+        <td>40,000,000</td>
+        <td>12,000,000</td>
+        <td>0.3754</td>
+        <td>19,522,235</td>
+      </tr>
+      <tr>
+        <td>31-Dec-20Y3</td>
+        <td>40,000,000</td>
+        <td>6,000,000</td>
+        <td>0.3367</td>
+        <td>15,488,493</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>PV of new contractual cash flows discounted at 11.50%</td>
+        <td>451,522,791</td>
+      </tr>
+      <tr>
+        <td>Carrying amount of loan</td>
+        <td>397,489,650</td>
+      </tr>
+      <tr>
+        <td>Difference</td>
+        <td>54,033,141</td>
+      </tr>
+      <tr>
+        <td>Percentage of carrying amount</td>
+        <td>13.59%</td>
+      </tr>
+    </table>
+
+    <p><em>Note: Calculation done above is on full decimal, though in the table discount factor is limited to 4 decimals.</em></p>
+
+    <p>Considering a more than 10% change in PV of cash flows compared to the carrying value of the loan, the existing loan shall be considered to have been extinguished and the new loan shall be accounted for as a separate financial liability. The accounting entries for the same are included below:</p>
+
+    <p><strong>d. 31 December 20X2 – accounting for extinguishment</strong></p>
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>(₹)</th>
+        <th>(₹)</th>
+      </tr>
+      <tr>
+        <td>Loan from bank (old) A/c Dr.</td>
+        <td>397,489,650</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Loss on modification of loan (profit and loss) Dr.</td>
+        <td>2,510,350</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>To Loan from bank (new) A/c</td>
+        <td></td>
+        <td>400,000,000</td>
+      </tr>
+      <tr>
+        <td><em>(Being new loan accounted for at its principal amount in absence of any transaction costs directly related to such loan and correspondingly a de-recognition of existing loan)</em></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <p><strong>e. 31 December 20X3</strong></p>
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>(₹)</th>
+        <th>(₹)</th>
+      </tr>
+      <tr>
+        <td>Loan from bank A/c Dr.</td>
+        <td>40,000,000</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Interest expense (profit and loss) Dr.</td>
+        <td>60,000,000</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>To Bank A/c</td>
+        <td></td>
+        <td>100,000,000</td>
+      </tr>
+      <tr>
+        <td><em>(Being first instalment of the new loan and payment of interest accounted for as an adjustment to the amortised cost of loan)</em></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  `
+},
+{
+  "question_id": "FR_MTPSEP24S2_2B",
+  "source": "ICAI MTP September 2024 Series II",
+  "chapter_name": "Presentation of Financial Statements / Ind AS 1",
+  "placement": 2,
+  "marks": 4,
+  "question_html": "\n    <p>An entity manufactures passenger vehicles. The time between purchasing of underlying raw materials to manufacture the passenger vehicles and the date the entity completes the production and delivers to its customers is 11 months. Customers settle the dues after a period of 8 months from the date of sale.</p>\n    <ol type=\"i\">\n      <li>Will the inventory and the trade receivables be current in nature?</li>\n      <li>Assuming that the production time was say 15 months and the time lag between the date of sale and collection from customers is 13 months, will the answer be different?</li>\n    </ol>\n  ",
+  "solution_html": "\n    <p>Inventory and debtors need to be classified in accordance with the requirement of Ind AS 1, which provides that an asset shall be classified as current if an entity expects to realise the same or intends to sell or consume it in its normal operating cycle.</p>\n    <ol type=\"a\">\n      <li>In this case, time lag between the purchase of inventory and its realisation into cash is 19 months [11 months + 8 months]. Both inventory and the debtors would be classified as current if the entity expects to realise these assets in its normal operating cycle.</li>\n      <li>No, the answer will be the same as the classification of debtors and inventory depends on the expectation of the entity to realise the same in the normal operating cycle. In this case, time lag between the purchase of inventory and its realisation into cash is 28 months [15 months + 13 months]. Both inventory and debtors would be classified as current if the entity expects to realise these assets in the normal operating cycle.</li>\n    </ol>\n  "
+},
+{
+  question_id: "FR_MTPSEP24II_3A",
+  source: "ICAI MTP September 2024 Series II",
+  chapter_name: "Ind AS 105 - Non-current Assets Held for Sale and Discontinued Operations",
+  placement: "3",
+  marks: 8,
+  question_html: `
+
     <p>
-      Further, a distinguishing mark of the accountancy profession is its
-      acceptance of the responsibility to act in the public interest.
-      A Chartered Accountant's responsibility is not exclusively to satisfy
-      the needs of an individual client or employing organization.
+      On 1st September, 20X1, entity X plans to sell a group of assets and
+      liabilities, which is classified as a disposal group.
     </p>
 
     <p>
-      Therefore, the Code contains requirements and application material
-      to enable Chartered Accountants to meet their responsibility to act
-      in the public interest.
+      On 31st October, 20X1, the Board of Directors approves and becomes
+      committed to the plan to sell the manufacturing unit by entering into
+      a firm purchase commitment with entity Y.
     </p>
 
     <p>
-      Hence, it is essential for a Chartered Accountant to uphold the
-      professional standards and act in accordance with the ethical
-      principles by ensuring transparency and accuracy in financial
-      reporting.
+      However, since the manufacturing unit is regulated, the approval from
+      the regulator is needed for sale. The approval from the regulator is
+      customary and highly probable to be received by
+      <strong>30th February, 20X2</strong> and the sale is expected to be
+      completed by <strong>30th June, 20X2</strong>.
+    </p>
+
+    <p>
+      The assets and liabilities attributable to this manufacturing unit are
+      as under:
+    </p>
+
+    <table>
+      <tr>
+        <th rowspan="2">Particulars</th>
+        <th>Carrying value as on</th>
+        <th>Carrying value as on</th>
+      </tr>
+      <tr>
+        <th>31st March, 20X1</th>
+        <th>31st October, 20X1</th>
+      </tr>
+      <tr>
+        <td>Goodwill</td>
+        <td>500</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>Plant and Machinery</td>
+        <td>1,000</td>
+        <td>900</td>
+      </tr>
+      <tr>
+        <td>Building</td>
+        <td>2,000</td>
+        <td>1,850</td>
+      </tr>
+      <tr>
+        <td>Debtors</td>
+        <td>850</td>
+        <td>1,050</td>
+      </tr>
+      <tr>
+        <td>Inventory</td>
+        <td>700</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>Creditors</td>
+        <td>(300)</td>
+        <td>(250)</td>
+      </tr>
+      <tr>
+        <td>Loans</td>
+        <td>(2,000)</td>
+        <td>(1,850)</td>
+      </tr>
+      <tr>
+        <th>Total</th>
+        <th>2,750</th>
+        <th>2,600</th>
+      </tr>
+    </table>
+
+    <p>
+      The fair value of the manufacturing unit as on
+      <strong>31st March, 20X1</strong> is <strong>₹ 2,000</strong> and as on
+      <strong>31st October, 20X1</strong> is <strong>₹ 1,850</strong>.
+      The cost to sell is <strong>₹ 100</strong> on both these dates.
+    </p>
+
+    <p>
+      The disposal group is not sold at the period end i.e.,
+      <strong>31st March, 20X2</strong>. The fair value as on
+      <strong>31st March, 20X2</strong> is lower than the carrying value of
+      the disposal group as on that date.
+    </p>
+
+    <p>Answer the following:</p>
+
+    <ol>
+      <li>
+        Assess whether the manufacturing unit can be classified as held for
+        sale and reasons therefor. If yes, then at which date?
+      </li>
+      <li>
+        Measure the manufacturing unit on the date of classification as held
+        for sale.
+      </li>
+      <li>
+        Measure the manufacturing unit at the end of the financial year.
+      </li>
+    </ol>
+
+  `,
+  solution_html: `
+
+    <p><strong>1. Assessing whether the manufacturing unit can be classified as held for sale</strong></p>
+
+    <p>
+      The manufacturing unit can be classified as held for sale due to the
+      following reasons:
+    </p>
+
+    <ol type="i">
+      <li>
+        The disposal group is available for immediate sale and in its present
+        condition. The regulatory approval is customary and it is expected to
+        be received in one year. The date at which the disposal group must be
+        classified as held for sale is <strong>31st October, 20X1</strong>,
+        i.e., the date at which management becomes committed to the plan.
+      </li>
+
+      <li>
+        The sale is highly probable as the appropriate level of management,
+        i.e., Board of Directors in this case, have approved the plan.
+      </li>
+
+      <li>
+        A firm purchase agreement has been entered with the buyer.
+      </li>
+
+      <li>
+        The sale is expected to be completed by
+        <strong>30th June, 20X2</strong>, i.e., within one year from the date
+        of classification.
+      </li>
+    </ol>
+
+    <p><strong>2. Measurement of the manufacturing unit as on the date of classification as held for sale</strong></p>
+
+    <p>
+      <strong>Step 1:</strong> Immediately before the initial classification of
+      the asset (or disposal group) as held for sale, the carrying amounts of
+      the asset (or all the assets and liabilities in the group) shall be
+      measured in accordance with applicable Ind AS.
+    </p>
+
+    <p>
+      The carrying value of the disposal group as on
+      <strong>31st October, 20X1</strong> is determined at
+      <strong>₹ 2,600</strong>. The difference between the carrying value as
+      on 31st March, 20X1 and 31st October, 20X1 is accounted for as per the
+      relevant Ind AS.
+    </p>
+
+    <p>
+      <strong>Step 2:</strong> An entity shall measure a non-current asset (or
+      disposal group) classified as held for sale at the
+      <strong>lower of its carrying amount and fair value less costs to sell.</strong>
+    </p>
+
+    <p>
+      The fair value less cost to sell of the disposal group as on
+      31st October, 20X1 is <strong>₹ 1,750</strong>
+      (₹ 1,850 − ₹ 100). This is lower than the carrying value of
+      <strong>₹ 2,600</strong>.
+    </p>
+
+    <p>
+      Thus, an impairment loss needs to be recognised and allocated first
+      towards goodwill and thereafter pro-rata between non-current assets of
+      the disposal group which are within the scope of Ind AS 105 based on
+      their carrying value.
+    </p>
+
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>Carrying value (31st Oct., 20X1)</th>
+        <th>Impairment</th>
+        <th>Carrying value as per Ind AS 105 (31st Oct., 20X1)</th>
+      </tr>
+      <tr>
+        <td>Goodwill</td>
+        <td>500</td>
+        <td>(500)</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Plant and Machinery</td>
+        <td>900</td>
+        <td>(115)</td>
+        <td>785</td>
+      </tr>
+      <tr>
+        <td>Building</td>
+        <td>1,850</td>
+        <td>(235)</td>
+        <td>1,615</td>
+      </tr>
+      <tr>
+        <td>Debtors</td>
+        <td>1,050</td>
+        <td>-</td>
+        <td>1,050</td>
+      </tr>
+      <tr>
+        <td>Inventory</td>
+        <td>400</td>
+        <td>-</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>Creditors</td>
+        <td>(250)</td>
+        <td>-</td>
+        <td>(250)</td>
+      </tr>
+      <tr>
+        <td>Loans</td>
+        <td>(1,850)</td>
+        <td>-</td>
+        <td>(1,850)</td>
+      </tr>
+      <tr>
+        <th>Total</th>
+        <th>2,600</th>
+        <th>(850)</th>
+        <th>1,750</th>
+      </tr>
+    </table>
+
+    <p><strong>3. Measurement of the manufacturing unit at the end of the financial year</strong></p>
+
+    <p>
+      The measurement as at the end of the financial year shall be on similar
+      lines as done above.
+    </p>
+
+    <p>
+      The assets and liabilities in the disposal group not within the scope
+      of this Standard are measured as per the respective Standards.
+    </p>
+
+    <p>
+      The fair value less cost to sell of the disposal group as a whole is
+      calculated. This fair value less cost to sell as at the year-end shall
+      be compared with the carrying value as at the date of classification as
+      held for sale.
+    </p>
+
+    <p>
+      It is provided that the fair value as on the year end is less than the
+      carrying amount as on that date. Thus, the impairment loss shall be
+      allocated in the same way between the assets of the disposal group
+      falling within the scope of this Standard as shown above.
     </p>
 
   `,
-}
+},
+{
+  question_id: "FR_MTPSEP24II_3B",
+  source: "ICAI MTP September 2024 Series II",
+  chapter_name: "Ind AS 21 - The Effects of Changes in Foreign Exchange Rates",
+  placement: "3",
+  marks: 6,
+  question_html: `
 
+    <p>
+      On 30th January, 20X1, A Ltd. purchased a machinery for
+      <strong>$ 5,000</strong> from USA supplier on credit basis.
+      A Ltd.’s functional currency is Rupees.
+    </p>
+
+    <p>
+      The exchange rate on the date of transaction is
+      <strong>1 $ = ₹ 60</strong>.
+    </p>
+
+    <p>
+      The fair value of the machinery determined on
+      <strong>31st March, 20X1</strong> is
+      <strong>$ 5,500</strong>.
+    </p>
+
+    <p>
+      The exchange rate on <strong>31st March, 20X1</strong> is
+      <strong>1 $ = ₹ 65</strong>.
+    </p>
+
+    <p>
+      The payment to overseas supplier done on
+      <strong>31st March, 20X2</strong> and the exchange rate on
+      <strong>31st March, 20X2</strong> is
+      <strong>1 $ = ₹ 67</strong>.
+    </p>
+
+    <p>
+      The fair value of the machinery remains unchanged for the year ended
+      on <strong>31st March, 20X2</strong>.
+    </p>
+
+    <p>
+      Tax rate is <strong>30%</strong>.
+    </p>
+
+    <p>
+      A Ltd. follows revaluation method in respect of Plant & Machinery.
+    </p>
+
+    <p>
+      Pass the Journal entries for the year ended on
+      <strong>31st March, 20X1</strong> and year
+      <strong>20X2</strong> according to Ind AS 21.
+    </p>
+
+  `,
+  solution_html: `
+
+    <p><strong>Journal Entries</strong></p>
+
+    <p><strong>Purchase of Machinery on credit basis on 30th January, 20X1:</strong></p>
+
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>
+          Machinery A/c ($ 5,000 × ₹ 60) <br>
+          Dr.
+          <br><br>
+          To Creditors-Machinery A/c
+          <br><br>
+          <em>(Initial transaction will be recorded at exchange rate on the date of transaction)</em>
+        </td>
+        <td>3,00,000</td>
+        <td>3,00,000</td>
+      </tr>
+    </table>
+
+    <p><strong>Exchange difference arising on translating monetary item on 31st March, 20X1:</strong></p>
+
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>
+          Profit & Loss A/c
+          [($ 5,000 × ₹ 65) – ($ 5,000 × ₹ 60)] <br>
+          Dr.
+          <br><br>
+          To Creditors-Machinery A/c
+        </td>
+        <td>25,000</td>
+        <td>25,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Machinery A/c <br>
+          Dr.
+          <br><br>
+          To Revaluation Surplus (OCI)
+          <br><br>
+          <em>
+          [Being Machinery revalued to USD 5,500;
+          (₹ 60 × ($ 5,500 - $ 5,000))]
+          </em>
+        </td>
+        <td>30,000</td>
+        <td>30,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Machinery A/c <br>
+          Dr.
+          <br><br>
+          To Revaluation Surplus (OCI)
+          <br><br>
+          <em>
+          (Being Machinery measured at the exchange rate on 31.3.20X1
+          [$ 5,500 × (₹ 65 - ₹ 60)])
+          </em>
+        </td>
+        <td>27,500</td>
+        <td>27,500</td>
+      </tr>
+
+      <tr>
+        <td>
+          Revaluation Surplus (OCI) <br>
+          Dr.
+          <br><br>
+          To Deferred Tax Liability
+          <br><br>
+          <em>
+          (DTL created @ of 30% of the total OCI amount)
+          </em>
+        </td>
+        <td>17,250</td>
+        <td>17,250</td>
+      </tr>
+    </table>
+
+    <p><strong>Exchange difference arising on translating monetary item and settlement of creditors on 31st March, 20X2:</strong></p>
+
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+
+      <tr>
+        <td>
+          Creditors-Machinery A/c
+          ($ 5,000 × ₹ 65) <br>
+          Dr.
+          <br><br>
+          Profit & Loss A/c
+          [(5,000 × (₹ 67 - ₹ 65))] <br>
+          Dr.
+          <br><br>
+          To Bank A/c
+        </td>
+        <td>
+          3,25,000
+          <br><br>
+          10,000
+        </td>
+        <td>
+          3,35,000
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Machinery A/c
+          [{$ 5,500 × (₹ 67 - ₹ 65)}] <br>
+          Dr.
+          <br><br>
+          To Revaluation Surplus (OCI)
+        </td>
+        <td>11,000</td>
+        <td>11,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Revaluation Surplus (OCI) <br>
+          Dr.
+          <br><br>
+          To Deferred Tax Liability
+          <br><br>
+          <em>
+          (DTL created @ of 30% of the total OCI amount)
+          </em>
+        </td>
+        <td>3,300</td>
+        <td>3,300</td>
+      </tr>
+
+    </table>
+
+  `,
+},
+{
+  question_id: "FR_MTPSEP24II_4A",
+  source: "ICAI MTP September 2024 Series II",
+  chapter_name: "Ind AS 16 - Property, Plant and Equipment",
+  placement: "4",
+  marks: 6,
+  question_html: `<p>A Ltd. purchased some Property, Plant and Equipment on <strong>1st April, 20X1</strong>, and estimated their useful lives for the purpose of financial statements prepared on the basis of Ind AS. Following were the original cost, and useful life of the various components of property, plant, and equipment assessed on 1st April, 20X1:</p>
+
+<table>
+<tr><th>Property, Plant and Equipment</th><th>Original Cost</th><th>Estimated useful life</th></tr>
+<tr><td>Buildings</td><td>₹ 15,000,000</td><td>15 years</td></tr>
+<tr><td>Plant and machinery</td><td>₹ 10,000,000</td><td>10 years</td></tr>
+<tr><td>Furniture and fixtures</td><td>₹ 3,500,000</td><td>7 years</td></tr>
+</table>
+
+<p>A Ltd. uses the straight-line method of depreciation.</p>
+
+<p>On <strong>1st April, 20X4</strong>, the entity reviewed the following useful lives of the property, plant, and equipment through an external valuation expert:</p>
+
+<table>
+<tr><td>Buildings</td><td>10 years</td></tr>
+<tr><td>Plant and machinery</td><td>7 years</td></tr>
+<tr><td>Furniture and fixtures</td><td>5 years</td></tr>
+</table>
+
+<p>There were no salvage values for the three components of the property, plant, and equipment either initially or at the time the useful lives were revised.</p>
+
+<p><strong>Examine the impact of revaluation of useful life on the Statement of Profit and Loss for the year ending 31st March, 20X5.</strong></p>`,
+
+  solution_html: `<p>The annual depreciation charges prior to the change in useful life were:</p>
+
+<table>
+<tr><th>Asset</th><th>Calculation</th><th>Depreciation</th></tr>
+<tr><td>Buildings</td><td>₹ 1,50,00,000 ÷ 15</td><td>₹ 10,00,000</td></tr>
+<tr><td>Plant and machinery</td><td>₹ 1,00,00,000 ÷ 10</td><td>₹ 10,00,000</td></tr>
+<tr><td>Furniture and fixtures</td><td>₹ 35,00,000 ÷ 7</td><td>₹ 5,00,000</td></tr>
+<tr><th colspan="2">Total (A)</th><th>₹ 25,00,000</th></tr>
+</table>
+
+<p>The revised annual depreciation for the year ending <strong>31st March, 20X5</strong> would be:</p>
+
+<table>
+<tr><th>Asset</th><th>Calculation</th><th>Depreciation</th></tr>
+<tr><td>Buildings</td><td>[₹ 1,50,00,000 – (₹ 10,00,000 × 3)] ÷ 10</td><td>₹ 12,00,000</td></tr>
+<tr><td>Plant and machinery</td><td>[₹ 1,00,00,000 – (₹ 10,00,000 × 3)] ÷ 7</td><td>₹ 10,00,000</td></tr>
+<tr><td>Furniture and fixtures</td><td>[₹ 35,00,000 – (₹ 5,00,000 × 3)] ÷ 5</td><td>₹ 4,00,000</td></tr>
+<tr><th colspan="2">Total (B)</th><th>₹ 26,00,000</th></tr>
+</table>
+
+<p>The impact on Statement of Profit and Loss for the year ending <strong>31st March, 20X5</strong> = <strong>₹ 26,00,000 – ₹ 25,00,000 = ₹ 1,00,000</strong>.</p>
+
+<p>This is a change in accounting estimate which is adjusted prospectively in the period in which the estimate is amended and, if relevant, to future periods if they are also affected.</p>
+
+<p>Accordingly, from 20X4-20X5 onward, excess of <strong>₹ 1,00,000</strong> will be charged in the Statement of Profit and Loss every year till the time there is any further revision.</p>`,
+},
+{
+  question_id: "FR_MTPSEP24II_4B",
+  source: "ICAI MTP September 2024 Series II",
+  chapter_name: "Ind AS 102 - Share-based Payment",
+  placement: "4",
+  marks: 8,
+  question_html: `<p>P Ltd. granted <strong>400 stock appreciation rights (SAR)</strong> each to <strong>75 employees</strong> on <strong>1st April 20X1</strong> with a fair value of <strong>₹ 200</strong>. The terms of the award require the employee to provide service for <strong>four years</strong> in order to earn the award.</p>
+
+<p>The fair value of each SAR at each reporting date is as follows:</p>
+
+<table>
+<tr><th>Date</th><th>Fair Value</th></tr>
+<tr><td>31st March 20X2</td><td>₹ 210</td></tr>
+<tr><td>31st March 20X3</td><td>₹ 220</td></tr>
+<tr><td>31st March 20X4</td><td>₹ 215</td></tr>
+<tr><td>31st March 20X5</td><td>₹ 218</td></tr>
+</table>
+
+<p><strong>What would be the difference if at the end of the second year of service (i.e. at 31st March 20X3), P Ltd. modifies the terms of the award to require only three years of service?</strong></p>`,
+
+  solution_html: `<p><strong>Journal entries in the books of P Ltd. (without modification of service period of Stock Appreciation Rights)</strong></p>
+
+<table>
+<tr><th>Date</th><th>Particulars</th><th>Debit (₹ in lakhs)</th><th>Credit (₹ in lakhs)</th></tr>
+
+<tr>
+<td>31.03.20X2</td>
+<td>Profit and Loss Account Dr.<br>To Liability against SARs<br><em>(Being expenses liability for stock appreciation rights recognised)</em></td>
+<td>15.75</td>
+<td>15.75</td>
+</tr>
+
+<tr>
+<td>31.03.20X3</td>
+<td>Profit and Loss Account Dr.<br>To Liability for SARs<br><em>(Being expenses liability for stock appreciation rights recognised)</em></td>
+<td>17.25</td>
+<td>17.25</td>
+</tr>
+
+<tr>
+<td>31.03.20X4</td>
+<td>Profit and Loss Account Dr.<br>To Liability for SARs<br><em>(Being expenses liability for stock appreciation rights recognised)</em></td>
+<td>15.38</td>
+<td>15.38</td>
+</tr>
+
+<tr>
+<td>31.03.20X5</td>
+<td>Profit and Loss Account Dr.<br>To Liability for SARs<br><em>(Being expenses liability for stock appreciation rights recognised)</em></td>
+<td>17.02</td>
+<td>17.02</td>
+</tr>
+</table>
+
+<p><strong>Journal entries in the books of P Ltd. (with modification of service period of Stock Appreciation Rights)</strong></p>
+
+<table>
+<tr><th>Date</th><th>Particulars</th><th>Debit (₹ in lakhs)</th><th>Credit (₹ in lakhs)</th></tr>
+
+<tr>
+<td>31.03.20X2</td>
+<td>Profit and Loss Account Dr.<br>To Liability for SARs<br><em>(Being expenses liability for stock appreciation rights recognised)</em></td>
+<td>15.75</td>
+<td>15.75</td>
+</tr>
+
+<tr>
+<td>31.03.20X3</td>
+<td>Profit and Loss Account Dr.<br>To Liability for SARs<br><em>(Being expenses liability for stock appreciation rights recognised)</em></td>
+<td>28.25</td>
+<td>28.25</td>
+</tr>
+
+<tr>
+<td>31.03.20X4</td>
+<td>Profit and Loss Account Dr.<br>To Liability for SARs<br><em>(Being expenses liability for stock appreciation rights recognised)</em></td>
+<td>20.50</td>
+<td>20.50</td>
+</tr>
+</table>
+
+<p><strong>Working Notes:</strong></p>
+
+<p><strong>Calculation of expenses for issue of Stock Appreciation Rights without modification of service period</strong></p>
+
+<p><strong>For the year ended 31st March 20X2</strong></p>
+<p>= ₹ 210 × 400 awards × 75 employees × 1 year / 4 years of service</p>
+<p>= <strong>₹ 15,75,000</strong></p>
+
+<p><strong>For the year ended 31st March 20X3</strong></p>
+<p>= ₹ 220 × 400 awards × 75 employees × 2 years / 4 years of service − ₹ 15,75,000 previously recognised</p>
+<p>= ₹ 33,00,000 − ₹ 15,75,000 = <strong>₹ 17,25,000</strong></p>
+
+<p><strong>For the year ended 31st March 20X4</strong></p>
+<p>= ₹ 215 × 400 awards × 75 employees × 3 years / 4 years of service − ₹ 33,00,000 previously recognised</p>
+<p>= ₹ 48,37,500 − ₹ 33,00,000 = <strong>₹ 15,37,500</strong></p>
+
+<p><strong>For the year ended 31st March 20X5</strong></p>
+<p>= ₹ 218 × 400 awards × 75 employees × 4 years / 4 years of service − ₹ 48,37,500 previously recognised</p>
+<p>= ₹ 65,40,000 − ₹ 48,37,500 = <strong>₹ 17,02,500</strong></p>
+
+<p><strong>Calculation of expenses for issue of Stock Appreciation Rights with modification of service period</strong></p>
+
+<p><strong>For the year ended 31st March 20X2</strong></p>
+<p>= ₹ 210 × 400 awards × 75 employees × 1 year / 4 years of service</p>
+<p>= <strong>₹ 15,75,000</strong></p>
+
+<p><strong>For the year ended 31st March 20X3</strong></p>
+<p>= ₹ 220 × 400 awards × 75 employees × 2 years / 3 years of service − ₹ 15,75,000 previously recognised</p>
+<p>= ₹ 44,00,000 − ₹ 15,75,000 = <strong>₹ 28,25,000</strong></p>
+
+<p><strong>For the year ended 31st March 20X4</strong></p>
+<p>= ₹ 215 × 400 awards × 75 employees × 3 years / 3 years of service − ₹ 44,00,000 previously recognised</p>
+<p>= ₹ 64,50,000 − ₹ 44,00,000 = <strong>₹ 20,50,000</strong>.</p>`,
+},
+
+{
+  question_id: "FR_MTPSEP24II_5A",
+  source: "ICAI MTP September 2024 Series II",
+  chapter_name: "Ind AS 115 - Revenue from Contracts with Customers",
+  placement: "5",
+  marks: 6,
+
+  question_html: `<p>AST Limited enters into a contract with a customer to build a manufacturing facility. The entity determines that the contract contains <strong>one performance obligation satisfied over time.</strong></p>
+
+<p>Construction is scheduled to be completed by the end of the <strong>36th month</strong> for an agreed-upon price of <strong>₹ 25 crore</strong>.</p>
+
+<p>The entity has the opportunity to earn a performance bonus for early completion as follows:</p>
+
+<ul>
+<li>15% bonus of the contract price if completed by the 30th month (25% likelihood)</li>
+<li>10% bonus if completed by the 32nd month (40% likelihood)</li>
+<li>5% bonus if completed by the 34th month (15% likelihood)</li>
+</ul>
+
+<p>In addition to the potential performance bonus for early completion, AST Limited is entitled to a <strong>quality bonus of ₹ 2 crore</strong> if a health and safety inspector assigns the facility a gold star rating as defined by the agency in the terms of the contract. AST Limited concludes that it is <strong>60% likely</strong> that it will receive the quality bonus.</p>
+
+<p><strong>Determine the transaction price.</strong></p>`,
+
+  solution_html: `<p><strong>In determining the transaction price, AST Limited separately estimates variable consideration for each element of variability i.e. the early completion bonus and the quality bonus.</strong></p>
+
+<p>AST Limited decides to use the <strong>expected value method</strong> to estimate the variable consideration associated with the early completion bonus because there is a range of possible outcomes, and the entity has experience with a large number of similar contracts that provide a reasonable basis to predict future outcomes. Therefore, the entity expects this method to best predict the amount of variable consideration associated with the early completion bonus.</p>
+
+<p><strong>Expected value of Early Completion Bonus:</strong></p>
+
+<table>
+<tr>
+<th>Bonus %</th>
+<th>Amount of Bonus (₹ crore)</th>
+<th>Probability</th>
+<th>Probability-weighted Amount (₹ crore)</th>
+</tr>
+
+<tr>
+<td>15%</td>
+<td>3.75</td>
+<td>25%</td>
+<td>0.9375</td>
+</tr>
+
+<tr>
+<td>10%</td>
+<td>2.50</td>
+<td>40%</td>
+<td>1.0000</td>
+</tr>
+
+<tr>
+<td>5%</td>
+<td>1.25</td>
+<td>15%</td>
+<td>0.1875</td>
+</tr>
+
+<tr>
+<td>0%</td>
+<td>-</td>
+<td>20%</td>
+<td>-</td>
+</tr>
+
+<tr>
+<th colspan="3">Expected Early Completion Bonus</th>
+<th>₹ 2.125 crore</th>
+</tr>
+</table>
+
+<p>AST Limited decides to use the <strong>most likely amount method</strong> to estimate the variable consideration associated with the potential quality bonus because there are only two possible outcomes (₹ 2 crore or Nil) and this method would best predict the amount of consideration associated with the quality bonus.</p>
+
+<p>AST Limited believes the most likely amount of the quality bonus is <strong>₹ 2 crore.</strong></p>
+
+<p><strong>Transaction Price:</strong></p>
+
+<table>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹ crore)</th>
+</tr>
+
+<tr>
+<td>Fixed Contract Price</td>
+<td>25.000</td>
+</tr>
+
+<tr>
+<td>Add: Expected Early Completion Bonus</td>
+<td>2.125</td>
+</tr>
+
+<tr>
+<td>Add: Quality Bonus</td>
+<td>2.000</td>
+</tr>
+
+<tr>
+<th>Total Transaction Price</th>
+<th>29.125</th>
+</tr>
+</table>
+
+<p><strong>Therefore, the transaction price is ₹ 29.125 crore.</strong></p>`
+},
+{
+  question_id: "FR_MTPSEP24II_5B",
+  source: "ICAI MTP September 2024 Series II",
+  chapter_name: "Ind AS 38 - Intangible Assets; Ind AS 105 - Non-current Assets Held for Sale and Discontinued Operations; Ind AS 36 - Impairment of Assets; Ind AS 10 - Events after the Reporting Period",
+  placement: "5",
+  marks: 4,
+
+  question_html: `<p><strong>Mumbai Challengers Ltd.</strong>, a listed entity, is a sports organization owning several cricket and hockey teams. The issues below pertain to the reporting period ending <strong>31st March 20X2</strong>.</p>
+
+<p>Mumbai Challengers Ltd. acquires and sells players’ registrations on a regular basis. For a player to play for its team, Mumbai Challengers Ltd. must purchase registrations for that player. These player registrations are contractual obligations between the player and the company. The costs of acquiring player registrations include transfer fees, league levy fees, and player agents’ fees incurred by the club.</p>
+
+<p>At the end of each season, which also happens to be the reporting period end for Mumbai Challengers Ltd., the club reviews its contracts with the players and makes decisions as to whether they wish to sell/transfer any players’ registrations. The company actively markets these registrations by circulating with other clubs a list of players’ registrations and their estimated selling price.</p>
+
+<p>Players’ registrations are also sold during the season, often with performance conditions attached. In some cases, it becomes clear that a player will not play for the club again because of, for example, a player sustaining a career-threatening injury or being permanently removed from the playing squad for any other reason.</p>
+
+<p>The playing registrations of certain players were sold after the year end for total proceeds, net of associated costs, of <strong>₹ 175 crores</strong>. These registrations had a <strong>net book value of ₹ 49 crores</strong>.</p>
+
+<p><strong>Mumbai Challengers Ltd. seeks your advice on the treatment of the acquisition, extension, review and sale of players’ registrations in the circumstances outlined above.</strong></p>`,
+
+  solution_html: `<p><strong>Players' Registrations</strong></p>
+
+<p><strong>Acquisition</strong></p>
+
+<p>As per <strong>Ind AS 38 – Intangible Assets</strong>, the costs associated with the acquisition of players' registrations should be capitalised at the amount of cash or cash equivalents paid or the fair value of other consideration given to acquire such registrations.</p>
+
+<p>The costs capitalised include:</p>
+
+<ul>
+<li>Transfer fees</li>
+<li>League levy fees</li>
+<li>Player agents' fees</li>
+<li>Other directly attributable costs, if any</li>
+</ul>
+
+<p>The capitalised amount should be fully amortised over the period covered by the player's contract.</p>
+
+<p><strong>Sale of Registrations</strong></p>
+
+<p>Player registrations should be classified as <strong>Assets Held for Sale</strong> under <strong>Ind AS 105 – Non-current Assets Held for Sale and Discontinued Operations</strong> when their carrying amount is expected to be recovered principally through a sale transaction and the sale is highly probable.</p>
+
+<p>A sale is considered highly probable when:</p>
+
+<ul>
+<li>The registrations are actively marketed for sale at a reasonable price.</li>
+<li>Management is committed to a plan to sell.</li>
+<li>The asset is available for immediate sale.</li>
+<li>An active programme to locate a buyer is in place.</li>
+<li>It is unlikely that the plan will be significantly changed or withdrawn.</li>
+</ul>
+
+<p>To satisfy these conditions, it is prudent to classify only those registrations as held for sale for which unconditional offers have been received before the reporting date.</p>
+
+<p>Once classified as held for sale, the player registrations should be measured at the <strong>lower of carrying amount and fair value less costs to sell</strong>, after first measuring them under Ind AS 38.</p>
+
+<p>Profit or loss on sale of player registrations is computed as the difference between the fair value of consideration receivable (net of transaction costs) and the carrying amount of the registrations.</p>
+
+<p>If a portion of the consideration is contingent upon future performance conditions, such contingent consideration should be recognised in the Statement of Profit and Loss only when those conditions are satisfied.</p>
+
+<p>The players' registrations sold after the reporting date for <strong>₹ 175 crores</strong>, having a carrying amount of <strong>₹ 49 crores</strong>, should be disclosed as a <strong>non-adjusting event</strong> in accordance with <strong>Ind AS 10 – Events after the Reporting Period</strong>.</p>
+
+<p><strong>Impairment Review</strong></p>
+
+<p>Under <strong>Ind AS 36 – Impairment of Assets</strong>, player registrations should be tested annually for impairment.</p>
+
+<p>An asset is impaired when its carrying amount exceeds its recoverable amount, being the higher of:</p>
+
+<ul>
+<li>Fair value less costs to sell; and</li>
+<li>Value in use.</li>
+</ul>
+
+<p>Normally, an individual player cannot generate independent cash flows and therefore forms part of the respective team's Cash-Generating Unit (CGU).</p>
+
+<p>However, where it becomes evident that a player will not play for the club again, such as due to a career-threatening injury or permanent removal from the squad, the carrying amount of that player's registration should be compared with its estimated fair value less costs to sell. Any excess carrying amount should be recognised as an <strong>impairment loss in the Statement of Profit and Loss.</strong></p>`
+},
+{
+  question_id: "FR_MTPSEP24II_5C",
+  source: "ICAI MTP September 2024 Series II",
+  chapter_name: "Code of Ethics – Fundamental Principles of Ethics",
+  placement: "5",
+  marks: 4,
+
+  question_html: `<p><strong>Explain the five fundamental principles of ethics for Chartered Accountants.</strong></p>`,
+
+  solution_html: `<p>The <strong>five fundamental principles of ethics</strong> for Chartered Accountants are:</p>
+
+<ul>
+<li><strong>Integrity</strong> – To be straightforward and honest in all professional and business relationships.</li>
+
+<li><strong>Objectivity</strong> – Not to compromise professional or business judgments because of bias, conflict of interest or undue influence of others.</li>
+
+<li><strong>Professional Competence and Due Care</strong> – To:
+  <ol type="i">
+    <li>Attain and maintain professional knowledge and skill at the level required to ensure that a client or employing organization receives competent professional service, based on current technical and professional standards and relevant legislation; and</li>
+    <li>Act diligently and in accordance with applicable technical and professional standards.</li>
+  </ol>
+</li>
+
+<li><strong>Confidentiality</strong> – To respect the confidentiality of information acquired as a result of professional and business relationships.</li>
+
+<li><strong>Professional Behaviour</strong> – To comply with relevant laws and regulations and avoid any conduct that the Chartered Accountant knows or should know might discredit the profession.</li>
+</ul>`
+},
+{
+  question_id: "FR_MTPSEP24II_6A",
+  source: "ICAI MTP September 2024 Series II",
+  chapter_name: "Ind AS 113 – Fair Value Measurement",
+  placement: "6",
+  marks: 5,
+
+  question_html: `<p><strong>(i)</strong> Entity A owns <strong>250 ordinary shares</strong> in company XYZ, an unquoted company. Company XYZ has a total share capital of <strong>5,000 shares</strong> with nominal value of <strong>₹ 10</strong>. Entity XYZ’s after-tax maintainable profits are estimated at <strong>₹ 70,000 per year</strong>. An appropriate <strong>price/earnings ratio</strong> determined from published industry data is <strong>15</strong> (before lack of marketability adjustment). Entity A’s management estimates that the <strong>discount for the lack of marketability</strong> of company XYZ’s shares and restrictions on their transfer is <strong>20%</strong>. Entity A values its holding in company XYZ’s shares based on earnings.</p>
+
+<p><strong>Determine the fair value of Entity A’s investment in XYZ’s shares.</strong></p>
+
+<p><strong>(ii)</strong> Based on the facts given in the aforementioned part (i), assume that Entity A estimates the fair value of the shares it owns in company XYZ using a <strong>net asset valuation technique</strong>. The fair value of company XYZ’s net assets including those recognised in its balance sheet and those that are not recognised is <strong>₹ 8,50,000</strong>.</p>
+
+<p><strong>Determine the fair value of Entity A’s investment in XYZ’s shares.</strong></p>`,
+
+  solution_html: `<p><strong>(i) Earnings-based valuation</strong></p>
+
+<table border="1" cellspacing="0" cellpadding="6">
+<tr>
+<th>Particulars</th>
+<th>Amount</th>
+</tr>
+<tr>
+<td>Entity XYZ’s after-tax maintainable profits (A)</td>
+<td>₹ 70,000</td>
+</tr>
+<tr>
+<td>Price/Earnings ratio (B)</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Adjusted discount factor (C) = (1 − 20%)</td>
+<td>0.80</td>
+</tr>
+<tr>
+<td><strong>Value of Company XYZ = (A × B × C)</strong></td>
+<td><strong>₹ 8,40,000</strong></td>
+</tr>
+</table>
+
+<p>Value per share = ₹ 8,40,000 ÷ 5,000 shares = <strong>₹ 168</strong>.</p>
+
+<p>Therefore, the fair value of Entity A’s investment = <strong>250 shares × ₹ 168 = ₹ 42,000.</strong></p>
+
+<p><strong>(ii) Net asset valuation technique</strong></p>
+
+<p>Value per share = ₹ 8,50,000 ÷ 5,000 shares = <strong>₹ 170</strong>.</p>
+
+<p>Therefore, the fair value of Entity A’s investment = <strong>250 shares × ₹ 170 = ₹ 42,500.</strong></p>`
+},
+{
+  question_id: "FR_MTPSEP24II_6B",
+  source: "ICAI MTP September 2024 Series II",
+  chapter_name: "Ind AS Roadmap; Ind AS 109 - Financial Instruments (Derecognition)",
+  placement: "6",
+  marks: 5,
+
+  question_html: `<p><strong>Answer either of the following:</strong></p>
+
+<p><strong>(i)</strong> Following is a snapshot of the audited Balance Sheet of <strong>Company A</strong> as at <strong>31st March, 2014</strong>. Company A’s equity shares are listed on the Bombay Stock Exchange since 2010.</p>
+
+<table border="1" cellspacing="0" cellpadding="5">
+<tr>
+<th>Liabilities</th>
+<th>₹ in crores</th>
+<th>Assets</th>
+<th>₹ in crores</th>
+</tr>
+<tr>
+<td>Equity Share Capital</td>
+<td>160</td>
+<td>Fixed Assets</td>
+<td>455</td>
+</tr>
+<tr>
+<td>Securities Premium</td>
+<td>200</td>
+<td>Investments</td>
+<td>200</td>
+</tr>
+<tr>
+<td>General Reserve</td>
+<td>150</td>
+<td>Current Assets</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Revaluation Reserve</td>
+<td>40</td>
+<td>Miscellaneous Expenditure not written off</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Profit and Loss Account</td>
+<td>75</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Liabilities</td>
+<td>160</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>Total</th>
+<th>785</th>
+<th>Total</th>
+<th>785</th>
+</tr>
+</table>
+
+<p>As per the Ind AS roadmap, identify the phase in which Company A falls. Will your answer change if Company A is an unlisted company?</p>
+
+<p><strong>OR</strong></p>
+
+<p><strong>(ii)</strong> As at <strong>31st March 20X2</strong>, <strong>Natasha Ltd.</strong> carried trade receivables of <strong>₹ 280 crores</strong> in its Balance Sheet. At that date, Natasha Ltd. entered into a factoring agreement with <strong>Samantha Ltd.</strong>, a financial institution, according to which it transferred the trade receivables in exchange for an immediate cash payment of <strong>₹ 250 crores</strong>.</p>
+
+<p>As per the factoring agreement, any shortfall between the amount collected and <strong>₹ 250 crores</strong> will be reimbursed by Natasha Ltd. to Samantha Ltd. Once the trade receivables have been collected, any amounts above <strong>₹ 250 crores</strong>, less interest on this amount, will be repaid to Natasha Ltd.</p>
+
+<p>The directors of Natasha Ltd. are of the opinion that the trade receivables should be derecognized.</p>
+
+<p><strong>You are required to explain the appropriate accounting treatment of this transaction in the financial statements for the year ending 31st March 20X2, and also evaluate this transaction in the context of the Conceptual Framework.</strong>`,
+
+  solution_html: `<p><strong>Answer (i) — Ind AS Roadmap</strong></p>
+
+<p><strong>Calculation of Net Worth:</strong></p>
+
+<table border="1" cellspacing="0" cellpadding="5">
+<tr>
+<th>Particulars</th>
+<th>₹ in crores</th>
+</tr>
+<tr>
+<td>Equity Share Capital</td>
+<td>160</td>
+</tr>
+<tr>
+<td>Securities Premium</td>
+<td>200</td>
+</tr>
+<tr>
+<td>General Reserve</td>
+<td>150</td>
+</tr>
+<tr>
+<td>Profit and Loss Account</td>
+<td>75</td>
+</tr>
+<tr>
+<td>Less: Miscellaneous Expenditure not written off</td>
+<td>(80)</td>
+</tr>
+<tr>
+<th>Net Worth as per Section 2(57) of the Companies Act, 2013</th>
+<th>505</th>
+</tr>
+</table>
+
+<p><strong>Note:</strong> Revaluation Reserve is not included while computing Net Worth under Section 2(57) of the Companies Act, 2013.</p>
+
+<p>Since Company A is a <strong>listed company</strong> having a <strong>Net Worth of ₹ 505 crores</strong>, it falls under <strong>Phase I</strong> of the Ind AS Roadmap. Accordingly, <strong>Ind AS is applicable for accounting periods beginning on or after 1st April, 2016.</strong></p>
+
+<p>Even if Company A is an <strong>unlisted company</strong>, the answer remains the same because its Net Worth exceeds <strong>₹ 500 crores</strong>. Therefore, it is also covered under <strong>Phase I</strong>, and Ind AS shall be applicable from accounting periods beginning on or after <strong>1st April, 2016.</strong>
+
+<hr>
+
+<p><strong>Answer (ii) — Factoring Arrangement (Ind AS 109)</strong></p>
+
+<p>Trade receivables are financial assets within the scope of <strong>Ind AS 109 – Financial Instruments</strong>. Therefore, it must be assessed whether the receivables qualify for derecognition.</p>
+
+<p>As per paragraphs <strong>3.2.3 to 3.2.6 of Ind AS 109</strong>, a financial asset is derecognized only when:</p>
+
+<ul>
+<li>The contractual rights to receive the cash flows expire; or</li>
+<li>The financial asset is transferred and substantially all the risks and rewards of ownership are transferred.</li>
+</ul>
+
+<p>In the present case, the contractual rights to receive cash flows have not expired because the receivables are still outstanding.</p>
+
+<p>Further, Natasha Ltd. continues to bear the credit risk because any shortfall below <strong>₹ 250 crores</strong> has to be reimbursed to Samantha Ltd. At the same time, Natasha Ltd. also retains the potential rewards because any collections in excess of <strong>₹ 250 crores</strong> (after deducting interest) will be returned to it.</p>
+
+<p>Accordingly, substantially all the risks and rewards of ownership continue to remain with Natasha Ltd. Therefore, the trade receivables <strong>should not be derecognized</strong>.</p>
+
+<p>The immediate cash received of <strong>₹ 250 crores</strong> should be recognised as a <strong>financial liability</strong>, while the trade receivables should continue to be presented in the Balance Sheet.</p>
+
+<p><strong>Conceptual Framework:</strong></p>
+
+<p>The accounting treatment reflects the <strong>substance over legal form</strong> principle. Although the receivables have been legally transferred, Natasha Ltd. continues to retain substantially all the risks and rewards associated with them. Therefore, faithful representation requires the receivables to remain recognised and the cash received to be presented as a borrowing (financial liability).</p>`
+},
+{
+  question_id: "FR_MTPSEP24II_6C",
+  source: "ICAI MTP September 2024 Series II",
+  chapter_name: "Ind AS 37 - Provisions, Contingent Liabilities and Contingent Assets",
+  placement: "6",
+  marks: 4,
+
+  question_html: `<p>Under new legislation, an entity is required to fit smoke filters to its factories by <strong>30th September, 20X1</strong>. The entity has not fitted the smoke filters. It is assumed that a reliable estimate can be made of any outflows expected.</p>
+
+<p>Determine whether any provision is required to be made by the entity on:</p>
+
+<ol type="a">
+<li><strong>At 31st March, 20X1</strong>, the end of the reporting period.</li>
+<li><strong>At 31st March, 20X2</strong>, the end of the reporting period.</li>
+</ol>`,
+
+  solution_html: `<p><strong>(a) At 31st March, 20X1</strong></p>
+
+<p><strong>Present obligation as a result of a past obligating event:</strong> There is no obligation because there is no obligating event either for the costs of fitting smoke filters or for fines under the legislation.</p>
+
+<p><strong>Conclusion:</strong> <strong>No provision</strong> is recognised for the cost of fitting the smoke filters.</p>
+
+<hr>
+
+<p><strong>(b) At 31st March, 20X2</strong></p>
+
+<p><strong>Present obligation as a result of a past obligating event:</strong> There is still no obligation for the costs of fitting smoke filters because no obligating event has occurred (the fitting of the filters).</p>
+
+<p>However, an obligation might arise to pay fines or penalties under the legislation because the obligating event has occurred (the non-compliant operation of the factory).</p>
+
+<p><strong>An outflow of resources embodying economic benefits in settlement:</strong> Assessment of the probability of incurring fines and penalties due to non-compliant operation depends on the details of the legislation and the stringency of the enforcement regime.</p>
+
+<p><strong>Conclusion:</strong> No provision is recognised for the costs of fitting smoke filters. However, a <strong>provision is recognised for the best estimate of any fines and penalties</strong> that are more likely than not to be imposed.</p>`
+}
 
 ];

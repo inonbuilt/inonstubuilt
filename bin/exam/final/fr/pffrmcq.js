@@ -1822,5 +1822,381 @@ const mcqData = [
         "Preference shares redeemable at the option of the holder are classified as financial liabilities under Ind AS 32. Accordingly, payments made on such instruments are recognised as finance costs (interest expense) rather than dividends. Therefore, the correct answer is Option (b)."
     }
   ]
-}
+},
+{
+  case_id: "FR_MTPSEP24II_CS1",
+  case_chapter: ["Ind AS 34", "Ind AS 115", "Ind AS 40"],
+
+  caseText: `
+    <p>
+      ABC Ltd. maintains its accounts and prepares its annual financial statements
+      in accordance with Indian Accounting Standards (Ind AS). It is a diversified
+      global business group with operations spanning multiple sectors. The finance
+      team while working on finalizing the books for the year ending
+      <strong>31st March, 20X3</strong>, encountered challenges with the following
+      transactions:
+    </p>
+
+    <p>
+      <strong>(i)</strong> ABC Ltd. manufactures automobile parts. It has shown a
+      net profit of <strong>₹20,00,000</strong> for the third quarter of
+      20X2-20X3.
+      Following adjustments are made while computing the net profit:
+    </p>
+
+    <ol>
+      <li>
+        Bad debts of <strong>₹1,00,000</strong> incurred during the quarter.
+        50% of the bad debts have been deferred to the next quarter.
+      </li>
+
+      <li>
+        <strong>₹5,00,000</strong> expenditure on account of administrative
+        expenses pertaining to the third quarter is deferred on the argument
+        that the fourth quarter will have more sales; therefore, fourth quarter
+        should be debited by higher expenditure. The expenditures are uniform
+        throughout all quarters.
+      </li>
+    </ol>
+
+    <p>
+      <strong>(ii)</strong> ABC Ltd. enters into a contract to build a power plant
+      for a customer. The entity will be responsible for the overall management
+      of the project including services to be provided like engineering, site
+      clearance, foundation, procurement, construction of the structure, piping
+      and wiring, installation of equipment and finishing.
+    </p>
+
+    <p>
+      <strong>(iii)</strong> ABC Ltd. acquired a property consisting of
+      <strong>6 identical houses</strong> each with separate legal title including
+      the land on which it is built.
+    </p>
+
+    <ul>
+      <li>
+        On 1st April, 20X2 - Purchase cost of the property ₹1,80,00,000
+      </li>
+      <li>
+        On 1st April, 20X2 - Non-refundable transfer taxes ₹20,00,000
+      </li>
+      <li>
+        On 2nd April, 20X2 - Legal cost related to property acquisition ₹5,00,000
+      </li>
+      <li>
+        On 6th April, 20X2 - Advertisement campaign to attract tenants ₹3,00,000
+      </li>
+      <li>
+        On 8th April, 20X2 - Opening ceremony function for starting business
+        ₹1,50,000
+      </li>
+    </ul>
+
+    <p>
+      Throughout 20X2-20X3, ABC Ltd. incurred ₹1,00,000 towards day-to-day
+      repair, maintenance and other administrative expenses.
+    </p>
+
+    <p>
+      ABC Ltd. uses one of the six houses for office and accommodation of its
+      few staffs. The other five houses are rented to various independent third
+      parties.
+    </p>
+  `,
+
+
+  questions: [
+
+    {
+      question_id: "FR_MTPSEP24II_CS1_1",
+
+      chapter_name: ["Ind AS 34"],
+
+      question:
+        "What will be the treatment of bad debts incurred during the third quarter?",
+
+      options: [
+        "Bad debts expenses incurred during third quarter should be recognised in the same quarter. Accordingly, ₹50,000 should be deducted from ₹20,00,000.",
+        "Bad debts expenses incurred during third quarter should be recognised equally in the third and fourth quarter. Accordingly, the treatment done in the books is correct.",
+        "Bad debts expenses incurred during third quarter should be recognised at the end of the financial year in the last quarter. Accordingly, ₹50,000 already deducted should be added back from ₹20,00,000.",
+        "No bad debt accounted in the interim financial statements in any of the quarter."
+      ],
+
+      answer: 0,
+
+      solution:
+        "As per Ind AS 34, expenses incurred during an interim reporting period should be recognised in that interim period itself. Therefore, entire bad debts of ₹1,00,000 should be recognised in the third quarter. Since only 50% has been recognised, additional ₹50,000 should be deducted from profit. Hence, Option (a) is correct."
+    },
+
+
+    {
+      question_id: "FR_MTPSEP24II_CS1_2",
+
+      chapter_name: ["Ind AS 34"],
+
+      question:
+        "The correct net profits to be shown in Interim Financial Report of the third quarter shall be",
+
+      options: [
+        "₹15,00,000",
+        "₹20,00,000",
+        "₹19,50,000",
+        "₹14,50,000"
+      ],
+
+      answer: 3,
+
+      solution:
+        "Reported profit = ₹20,00,000. Administrative expenses of ₹5,00,000 cannot be deferred and must be recognised in Q3. Additional bad debt adjustment of ₹50,000 is also required. Correct profit = ₹20,00,000 − ₹5,00,000 − ₹50,000 = ₹14,50,000. Hence, Option (d) is correct."
+    },
+
+
+    {
+      question_id: "FR_MTPSEP24II_CS1_3",
+
+      chapter_name: ["Ind AS 115"],
+
+      question:
+        "How many performance obligations does the entity have?",
+
+      options: [
+        "Three performance obligations",
+        "Two performance obligations",
+        "A single performance obligation",
+        "More than three performance obligations"
+      ],
+
+      answer: 2,
+
+      solution:
+        "The construction activities including engineering, procurement, construction and installation are highly interrelated and together create a single integrated output. Therefore, the contract contains a single performance obligation. Hence, Option (c) is correct."
+    },
+
+
+    {
+      question_id: "FR_MTPSEP24II_CS1_4",
+
+      chapter_name: ["Ind AS 40"],
+
+      question:
+        "What is the cost of the entire property?",
+
+      options: [
+        "₹1,80,000,000",
+        "₹2,05,00,000",
+        "₹2,06,00,000",
+        "₹1,85,00,000"
+      ],
+
+      answer: 1,
+
+      solution:
+        "Cost of property includes purchase cost, non-refundable transfer taxes and directly attributable legal costs. Calculation: ₹1,80,00,000 + ₹20,00,000 + ₹5,00,000 = ₹2,05,00,000. Advertisement, opening ceremony and routine expenses are not included. Hence, Option (b) is correct."
+    },
+
+
+    {
+      question_id: "FR_MTPSEP24II_CS1_5",
+
+      chapter_name: ["Ind AS 40"],
+
+      question:
+        "What is the cost of the investment property?",
+
+      options: [
+        "₹1,70,83,333",
+        "₹2,05,00,000",
+        "₹34,16,667",
+        "₹1,80,00,000"
+      ],
+
+      answer: 0,
+
+      solution:
+        "Total cost of property = ₹2,05,00,000. Five houses are rented to independent third parties and qualify as investment properties. Cost per house = ₹2,05,00,000 ÷ 6 = ₹34,16,667. Cost of investment property = 5 × ₹34,16,667 = ₹1,70,83,333. Hence, Option (a) is correct."
+    },
+
+
+    {
+      question_id: "FR_MTPSEP24II_CS1_6",
+
+      chapter_name: ["Ind AS 16", "Ind AS 40"],
+
+      question:
+        "What is the cost of the owner-occupied property?",
+
+      options: [
+        "₹1,70,83,333",
+        "₹2,05,00,000",
+        "₹34,16,667",
+        "₹1,80,00,000"
+      ],
+
+      answer: 2,
+
+      solution:
+        "One house is used by ABC Ltd. for office and staff accommodation and therefore qualifies as owner-occupied property. Cost per house = ₹2,05,00,000 ÷ 6 = ₹34,16,667. Hence, Option (c) is correct."
+    }
+
+  ]
+},
+{
+  case_id: "FR_MTPSEP24II_CS2",
+  case_chapter: ["Ind AS 33", "Ind AS 109", "Ind AS 32"],
+  caseText:
+    "<p>DEF Ltd. is a diversified business group operating in multiple business segments across different parts of the world with multiple subsidiaries. It maintains its books of accounts and publishes its annual financial statements under Indian Accounting Standards. The finance team has been working on closing the books of accounts and generating financial statements for the year ended 31st March 20X1 and are facing issues in the following transactions while finalization of financial statements:</p>" +
+    "<p>(i) Profit attributable to ordinary equity holders of the parent entity for year 20X1 is ₹ 12,00,000. Weighted average number of ordinary shares outstanding during year 20X1 is 5,00,000 shares. Average market price of one ordinary share during year 20X1 is ₹ 20.00. Weighted average number of shares under option during year 20X1 is 1,00,000 shares. Exercise price for shares under option during year 20X1 is ₹ 15.00.</p>" +
+    "<p>(ii) DEF Ltd. enters into a contract to buy 100 tonnes of cocoa beans at ₹ 1,000 per tonne for delivery in 12 months. On the settlement date, the market price for cocoa beans is ₹ 1,500 per tonne. The contract cannot be settled net in cash and is entered for delivery of cocoa beans in line with DEF Ltd.'s expected purchase/usage requirements.</p>" +
+    "<p>(iii) DEF Ltd. invests in compulsorily convertible preference shares (CCPS) issued by its subsidiary B Ltd. at ₹ 1,000 each (₹ 10 face value + ₹ 990 premium). Under the terms of the instrument, each CCPS is compulsorily convertible into one equity share of B Ltd at the end of 5 years. Such CCPS carry dividend @ 12% per annum, payable only when declared at the discretion of B Ltd.</p>" +
+    "<p><strong>Analyze the transactions mentioned above and choose the most appropriate option in the below questions 7 to 10 in line with relevant Ind AS:</strong></p>",
+
+  questions: [
+    {
+      question_id: "FR_MTPSEP24II_CS2_Q7",
+      chapter_name: ["Ind AS 33"],
+      question:
+        "Based on the facts given in scenario (i), what will be basic EPS of the entity?",
+      options: [
+        "2.29",
+        "2.40",
+        "2.00",
+        "1.77"
+      ],
+      answer: 1,
+    },
+
+    {
+      question_id: "FR_MTPSEP24II_CS2_Q8",
+      chapter_name: ["Ind AS 33"],
+      question:
+        "Based on the facts given in scenario (i), what will be diluted EPS of the entity?",
+      options: [
+        "2.29",
+        "2.40",
+        "2.00",
+        "1.77"
+      ],
+      answer: 0,
+    },
+
+    {
+      question_id: "FR_MTPSEP24II_CS2_Q9",
+      chapter_name: ["Ind AS 32", "Ind AS 109"],
+      question:
+        "What is the nature of the contract entered into for cocoa beans?",
+      options: [
+        "Cash contract",
+        "Non-executory and derivative contract",
+        "Derivative contract",
+        "Executory and non-derivative contract"
+      ],
+      answer: 3,
+    },
+
+    {
+      question_id: "FR_MTPSEP24II_CS2_Q10",
+      chapter_name: ["Ind AS 32"],
+      question:
+        "What is the nature of the financial instrument mentioned in point (iii)?",
+      options: [
+        "Financial Asset",
+        "Financial Liability",
+        "Equity",
+        "Not a financial instrument"
+      ],
+      answer: 2,
+    }
+  ]
+},
+{
+  case_id: "FR_MTPSEP24II_CS3",
+  case_chapter: ["Ind AS 28", "Ind AS 110", "Ind AS 103", "Ind AS 101"],
+  caseText:
+    "<p>PQR Ltd. is required to adopt Ind AS from 1st April, 20X1, with comparatives for one year, i.e., for 20X0-20X1. On 1st April, 20X1, PQR Ltd. acquired 30% of the voting ordinary shares of XYZ Ltd. for ₹ 8,000 crore. PQR Ltd. accounts its investment in XYZ Ltd. using equity method as prescribed under Ind AS 28.</p>" +
+    "<p>At 31st March, 20X2, PQR Ltd. recognised its share of the net asset changes of XYZ Ltd. using equity accounting as follows:</p>" +
+    "<ul>" +
+    "<li>Share of profit or loss - ₹ 700 crore</li>" +
+    "<li>Share of exchange difference in OCI - ₹ 100 crore</li>" +
+    "<li>Share of revaluation reserve of PPE in OCI - ₹ 50 crore</li>" +
+    "</ul>" +
+    "<p>The carrying amount of the investment in the associate on 31st March, 20X2 was therefore ₹ 8,850 crore (₹ 8,000 + ₹ 700 + ₹ 100 + ₹ 50).</p>" +
+    "<p>On 1st April, 20X2, PQR Ltd. acquired the remaining 70% of XYZ Ltd. for cash ₹ 25,000 crore. The following additional information is relevant at that date:</p>" +
+    "<ul>" +
+    "<li>Fair value of the 30% interest already owned - ₹ 9,000 crore</li>" +
+    "<li>Fair value of XYZ's identifiable net assets - ₹ 30,000 crore</li>" +
+    "</ul>" +
+    "<p><strong>Analyze the transactions mentioned above and choose the most appropriate option in the below questions 11 to 15 in line with relevant Ind AS:</strong></p>",
+
+  questions: [
+    {
+      question_id: "FR_MTPSEP24II_CS3_Q11",
+      chapter_name: ["Ind AS 103"],
+      question:
+        "What is the fair value of the total consideration transferred by PQR Ltd. to XYZ Ltd.?",
+      options: [
+        "₹ 34,000 crores",
+        "₹ 33,850 crores",
+        "₹ 33,000 crores",
+        "₹ 25,000 crores"
+      ],
+      answer: 0,
+    },
+
+    {
+      question_id: "FR_MTPSEP24II_CS3_Q12",
+      chapter_name: ["Ind AS 103"],
+      question:
+        "What is the amount of goodwill in the said business combination?",
+      options: [
+        "₹ 3,000 crores",
+        "₹ 4,000 crores",
+        "₹ 2,150 crores",
+        "₹ 3,850 crores"
+      ],
+      answer: 1,
+    },
+
+    {
+      question_id: "FR_MTPSEP24II_CS3_Q13",
+      chapter_name: ["Ind AS 103", "Ind AS 28"],
+      question:
+        "What is the gain on previously held interest in XYZ Ltd. recognised in profit or loss?",
+      options: [
+        "₹ 150 crores",
+        "₹ 100 crores",
+        "₹ 250 crores",
+        "Nil"
+      ],
+      answer: 2,
+    },
+
+    {
+      question_id: "FR_MTPSEP24II_CS3_Q14",
+      chapter_name: ["Ind AS 101"],
+      question:
+        "What is the transition date for PQR Ltd. for adopting Ind AS?",
+      options: [
+        "1st April, 20X0",
+        "1st April, 20X1",
+        "1st April, 20X2",
+        "1st April, 20X3"
+      ],
+      answer: 0,
+    },
+
+    {
+      question_id: "FR_MTPSEP24II_CS3_Q15",
+      chapter_name: ["Ind AS 101"],
+      question:
+        "PQR Ltd. present its comparative financial statements for the year-",
+      options: [
+        "20X1-20X2",
+        "20X2-20X3",
+        "20X0-20X3",
+        "20X0-20X1"
+      ],
+      answer: 3,
+    }
+  ]
+},
 ];
