@@ -860,5 +860,338 @@ const mcqData = [
       answer: 3
     }
   ]
+},
+
+{
+  case_id: "AFM_MTPNOV24II_CS1",
+  case_chapter: ["Credit Default Swaps"],
+  caseText: `
+    <p>Suppose you are a risk manager at a financial institution, and your company has loaned a significant amount of ₹ 500 crore to a company X Ltd. for a period of 3 years at 6-month MCLR plus 200 bps. You are concerned about X Ltd.'s ability to repay the debt due to recent market volatility. To protect your institution from potential default, you decide to purchase a Credit Default Swap (CDS) from ABC Bank Ltd. for the same notional amount at a premium quoted at 1% per year through cash settlement.</p>
+
+    <p>On the respective reset dates for the same period actual MCLR interest rate comes out as follows:</p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Reset</th>
+          <th>MCLR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>9.75%</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>10.00%</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>10.25%</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>10.35%</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>10.50%</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>10.60%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Based on the above case scenario, choose the most appropriate answer to the following:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "AFM_MTPNOV24II_CS1_1",
+      chapter_name: ["Credit Default Swaps"],
+      question: "The primary purpose of a Credit Default Swap (CDS) is...................",
+      options: [
+        "to increase the value of bonds.",
+        "to protect against default risk of a debt obligation.",
+        "to provide guaranteed profit to the buyer.",
+        "to create a new form of loan."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "AFM_MTPNOV24II_CS1_2",
+      chapter_name: ["Credit Default Swaps"],
+      question: "Which of the following statements is true about CDS contracts?",
+      options: [
+        "CDS contracts cannot be used for speculation.",
+        "CDS contracts are governed by government regulations.",
+        "CDS contracts are private agreements between two parties.",
+        "CDS contracts eliminate all risks for the buyer."
+      ],
+      answer: 2
+    },
+    {
+      question_id: "AFM_MTPNOV24II_CS1_3",
+      chapter_name: ["Credit Default Swaps"],
+      question: "Which organization publishes the guidelines and rules for conducting Credit Default Swap transactions?",
+      options: [
+        "Federal Reserve",
+        "International Swap and Derivative Association (ISDA)",
+        "Securities and Exchange Commission (SEC)",
+        "World Trade Organization (WTO)"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "AFM_MTPNOV24II_CS1_4",
+      chapter_name: ["Credit Default Swaps"],
+      question: "Assuming no default occurs, the total premium your company will pay during the designated loan period shall be........",
+      options: [
+        "₹ 5 crore",
+        "₹ 10 crore",
+        "₹ 15 crore",
+        "₹ 30 crore"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "AFM_MTPNOV24II_CS1_5",
+      chapter_name: ["Credit Default Swaps"],
+      question: "Suppose if the lender defaults somewhere in the beginning of third year of loan (after payment of interest upto 2 years) and the market value of a reference loan falls to 75% of its par value, then ABC Bank will pay your company ...........in a cash settlement.",
+      options: [
+        "₹ 15 crore",
+        "₹ 30 crore",
+        "₹ 125 crore",
+        "₹ 500 crore"
+      ],
+      answer: 2
+    }
+  ]
+},
+{
+  case_id: "AFM_MTPNOV24II_CS2",
+  case_chapter: ["Capital Budgeting"],
+  caseText: `
+    <p>XYZ Ltd. is a mid-sized manufacturing company that produces industrial equipment. The company is considering a new investment project—a state-of-the-art automated production line, which is expected to improve production efficiency.</p>
+
+    <p>The details of the project are as follows:</p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <tbody>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td>Initial Cost of the Project</td>
+          <td>₹ 10,00,000</td>
+        </tr>
+        <tr>
+          <td>Sales Price per Unit</td>
+          <td>₹ 60</td>
+        </tr>
+        <tr>
+          <td>Cost per Unit</td>
+          <td>₹ 40</td>
+        </tr>
+        <tr>
+          <td>Sales Volume - Year 1</td>
+          <td>20,000 units</td>
+        </tr>
+        <tr>
+          <td>Sales Volume - Year 2</td>
+          <td>30,000 units</td>
+        </tr>
+        <tr>
+          <td>Sales Volume - Year 3</td>
+          <td>30,000 units</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The applicable discount rate is <strong>10% p.a.</strong></p>
+
+    <p><strong>Based on the above case scenario, choose the most appropriate answer to the following:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "AFM_MTPNOV24II_CS2_1",
+      chapter_name: ["Capital Budgeting"],
+      question: "Sensitivity analysis helps to identify…………………..",
+      options: [
+        "the exact profitability of the project.",
+        "the break-even point.",
+        "the degree to which a change in each variable affects the NPV.",
+        "the amount of investment required."
+      ],
+      answer: 2
+    },
+    {
+      question_id: "AFM_MTPNOV24II_CS2_2",
+      chapter_name: ["Capital Budgeting"],
+      question: "The sale price per unit so that the project would break even with zero NPV shall be approximately…………..",
+      options: [
+        "₹ 40.00",
+        "₹ 55.28",
+        "₹ 60.00",
+        "₹ 44.74"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "AFM_MTPNOV24II_CS2_3",
+      chapter_name: ["Capital Budgeting"],
+      question: "The cost per unit so that the project would break even with zero NPV shall be approximately…………..",
+      options: [
+        "₹ 40.00",
+        "₹ 55.28",
+        "₹ 60.00",
+        "₹ 44.74"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "AFM_MTPNOV24II_CS2_4",
+      chapter_name: ["Capital Budgeting"],
+      question: "Overall ………… in the sale volume will lead to the project to break even with zero NPV.",
+      options: [
+        "increase of 23.68%",
+        "fall of 23.68%",
+        "increase of 31.03%",
+        "fall of 31.03%"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "AFM_MTPNOV24II_CS2_5",
+      chapter_name: ["Capital Budgeting"],
+      question: "A/an ………… in the initial outlay will lead to the project to break even with zero NPV.",
+      options: [
+        "increase of 23.68%",
+        "fall of 23.68%",
+        "increase of 31.03%",
+        "fall of 31.03%"
+      ],
+      answer: 2
+    }
+  ]
+},
+{
+  case_id: "AFM_MTPNOV24II_CS3",
+  case_chapter: ["Fixed Income Securities"],
+  caseText: `
+    <p>You are an investment analyst working for a financial advisory firm. You have been asked to analyze the bond market's yield curve to assist your clients in making investment decisions. The yield curve represents the relationship between the interest rates (yield) and the time to maturity for debt securities, usually government bonds.</p>
+
+    <p>For simplicity, assume the following yield data for government bonds over various maturities (measured in years):</p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Maturity (Years)</th>
+          <th>Yield (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1 Year</td>
+          <td>3.00%</td>
+        </tr>
+        <tr>
+          <td>2 Years</td>
+          <td>4.00%</td>
+        </tr>
+        <tr>
+          <td>3 Years</td>
+          <td>5.00%</td>
+        </tr>
+        <tr>
+          <td>5 Years</td>
+          <td>6.00%</td>
+        </tr>
+        <tr>
+          <td>7 Years</td>
+          <td>6.40%</td>
+        </tr>
+        <tr>
+          <td>10 Years</td>
+          <td>7.00%</td>
+        </tr>
+        <tr>
+          <td>15 Years</td>
+          <td>7.40%</td>
+        </tr>
+        <tr>
+          <td>30 Years</td>
+          <td>7.60%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Based on the above case scenario, choose the most appropriate answer to the following:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "AFM_MTPNOV24II_CS3_1",
+      chapter_name: ["Fixed Income Securities"],
+      question: "The main characteristic of a normal yield curve is……………….",
+      options: [
+        "Short-term yields are higher than long-term yields.",
+        "Short-term yields are lower than long-term yields.",
+        "Yields remain the same across all maturities.",
+        "Yields fluctuate randomly over different maturities."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "AFM_MTPNOV24II_CS3_2",
+      chapter_name: ["Fixed Income Securities"],
+      question: "Based on the revised yield data, what is the yield spread between the 10-year bond and the 1-year bond?",
+      options: [
+        "2.0%",
+        "3.5%",
+        "4.0%",
+        "5.0%"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "AFM_MTPNOV24II_CS3_3",
+      chapter_name: ["Fixed Income Securities"],
+      question: "An inverted yield curve typically indicates………………",
+      options: [
+        "Economic growth",
+        "Economic uncertainty",
+        "An upcoming recession",
+        "Inflationary pressure"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "AFM_MTPNOV24II_CS3_4",
+      chapter_name: ["Fixed Income Securities"],
+      question: "If an investor is looking to invest for 2 years starting 3 years from now, the forward rate he would expect shall be………",
+      options: [
+        "7.41%",
+        "7.52%",
+        "7.76%",
+        "7.93%"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "AFM_MTPNOV24II_CS3_5",
+      chapter_name: ["Fixed Income Securities"],
+      question: "If an investor is looking to invest for 2 years starting 5 years from now, the forward rate he would expect shall be………",
+      options: [
+        "7.41%",
+        "7.52%",
+        "7.76%",
+        "7.93%"
+      ],
+      answer: 0
+    }
+  ]
 }
 ];

@@ -6,7 +6,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 6,
   question_html: `
-    <p><strong>(a)</strong> XYZ Ltd. an Indian firm needs to pay JAPANESE YEN (JY) 1 crore on 30<sup>th</sup> June. In order to hedge the risk involved in foreign currency transaction, the firm is considering two alternative methods i.e. forward market cover and currency option contract.</p>
+    <p> XYZ Ltd. an Indian firm needs to pay JAPANESE YEN (JY) 1 crore on 30<sup>th</sup> June. In order to hedge the risk involved in foreign currency transaction, the firm is considering two alternative methods i.e. forward market cover and currency option contract.</p>
 
     <p>On 1<sup>st</sup> April, following quotations (JY/INR) are made available:</p>
 
@@ -48,7 +48,7 @@ const descriptiveQuestions = [
 
     <br>
 
-    <p><strong>(b)</strong> The expected returns and Beta of three stocks are given below</p>
+    <p> The expected returns and Beta of three stocks are given below</p>
 
     <table border="1" cellspacing="0" cellpadding="5">
       <tr>
@@ -75,12 +75,12 @@ const descriptiveQuestions = [
 
     <br>
 
-    <p><strong>(c)</strong> What do you mean by the term Unicorn? State the features a Start-up should possess to be referred as a Unicorn?</p>
+    <p> What do you mean by the term Unicorn? State the features a Start-up should possess to be referred as a Unicorn?</p>
   `,
   solution_html: `
     <strong>Solution:</strong><br><br>
 
-    <strong>(a)</strong><br><br>
+    <br><br>
 
     <strong>(i) Forward Cover</strong><br>
 
@@ -117,7 +117,7 @@ const descriptiveQuestions = [
 
     <br>
 
-    <strong>(b)</strong><br><br>
+    <br><br>
 
     <p>Required Rate of Return is given by:</p>
 
@@ -162,7 +162,7 @@ const descriptiveQuestions = [
 
     <br>
 
-    <strong>(c)</strong><br><br>
+    <br><br>
 
     <p>A Unicorn is a privately held start-up company which has achieved a valuation US$ 1 billion. This term was coined by venture capitalist Aileen Lee, first time in 2013. Unicorn, a mythical animal represents the statistical rarity of successful ventures.</p>
 
@@ -1710,7 +1710,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 6,
   question_html: `
-    <p><strong>(a)</strong> You as an investor had purchased a 4-month call option on the equity shares of ABC Ltd. of ₹ 10, of which the current market price is ₹ 660 per share and the exercise price ₹ 750. You expect the price to range between ₹ 600 to ₹ 950. The expected share price of ABC Ltd. and related probability is given below:</p>
+    <p> You as an investor had purchased a 4-month call option on the equity shares of ABC Ltd. of ₹ 10, of which the current market price is ₹ 660 per share and the exercise price ₹ 750. You expect the price to range between ₹ 600 to ₹ 950. The expected share price of ABC Ltd. and related probability is given below:</p>
     
     <div style="overflow-x:auto;">
       <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
@@ -1743,7 +1743,7 @@ const descriptiveQuestions = [
     </ol>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     <ol type="i">
       <li><strong>Expected Share Price</strong><br>
       = ₹ 600 &times; 0.05 + ₹ 700 &times; 0.20 + ₹ 800 &times; 0.50 + ₹ 900 &times; 0.10 + ₹ 950 &times; 0.15<br>
@@ -1816,7 +1816,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 4,
   question_html: `
-    <p><strong>(b)</strong> Share of Beta Ltd. is being quoted at a Price-Earning ratio of 10 times. In the coming year the company is expected to retain ₹ 10 per share which is 45% of its Earning Per Share.</p>
+    <p> Share of Beta Ltd. is being quoted at a Price-Earning ratio of 10 times. In the coming year the company is expected to retain ₹ 10 per share which is 45% of its Earning Per Share.</p>
     <p>You are required to evaluate:</p>
     <ol type="i">
       <li>The cost of equity to the company if the market expects a growth rate of 10% p.a.</li>
@@ -1824,7 +1824,7 @@ const descriptiveQuestions = [
     </ol>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     <ol type="i">
       <li><strong>Cost of equity capital</strong><br>
       <div style="overflow-x:auto;">
@@ -1875,7 +1875,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 6,
   question_html: `
-    <p><strong>(a)</strong> On January 28, 2023, an importer customer requested a Bank to remit Singapore Dollar (SGD) 2,500,000 under an irrevocable Letter of Credit (LC). However, due to unavoidable factors, the Bank could affect the remittances only on February 4, 2023. The inter-bank market rates were as follows:</p>
+    <p> On January 28, 2023, an importer customer requested a Bank to remit Singapore Dollar (SGD) 2,500,000 under an irrevocable Letter of Credit (LC). However, due to unavoidable factors, the Bank could affect the remittances only on February 4, 2023. The inter-bank market rates were as follows:</p>
     
     <div style="overflow-x:auto;">
       <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: left;">
@@ -1912,7 +1912,7 @@ const descriptiveQuestions = [
     <p><em>(Note: Calculate the rate in multiples of 0.0001)</em></p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     <p>On January 28, 2023, the importer customer requested to remit SGD 25 lakhs.</p>
     <p><strong>To consider sell rate for the bank (January 28, 2023):</strong></p>
     <ul>
@@ -1949,7 +1949,7 @@ const descriptiveQuestions = [
   placement: 2,
   marks: 4,
   question_html: `
-    <p><strong>(b)</strong> Bank A enter into a Repo for 14 days with Bank B in 10% Government of India Bonds 2028 @ 5.65% for ₹ 8 crore. Assuming that clean price (the price that does not have accrued interest) be ₹ 99.42 and initial Margin be 3% and days of accrued interest be 272 days.</p>
+    <p> Bank A enter into a Repo for 14 days with Bank B in 10% Government of India Bonds 2028 @ 5.65% for ₹ 8 crore. Assuming that clean price (the price that does not have accrued interest) be ₹ 99.42 and initial Margin be 3% and days of accrued interest be 272 days.</p>
     <p>You are required to calculate:</p>
     <ol type="i">
       <li>Dirty Price</li>
@@ -1958,7 +1958,7 @@ const descriptiveQuestions = [
     <p><em>Note: (1) Consider 360 days in a year. (2) Round off calculations upto 2 decimals points.</em></p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     <ol type="i">
       <li><strong>Dirty Price</strong><br>
       = Clean Price + Interest Accrued<br>
@@ -1989,10 +1989,10 @@ const descriptiveQuestions = [
   placement: 3,
   marks: 4,
   question_html: `
-    <p><strong>(c)</strong> What are the parameters to identify currency risk? List out the ways to minimize such risk.</p>
+    <p> What are the parameters to identify currency risk? List out the ways to minimize such risk.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     <p><strong>Some of the parameters to identify the currency risk are as follows:</strong></p>
     <ol type="i">
       <li><strong>Government Action:</strong> The Government action of any country has visual impact in its currency. For example, the UK Govt. decision to divorce from European Union i.e. Brexit brought the pound to its lowest since 1980’s.</li>
@@ -2019,10 +2019,10 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 4,
   question_html: `
-    <p><strong>(c)</strong> Why is there a need for succession planning in business? Explain.</p>
+    <p> Why is there a need for succession planning in business? Explain.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     <p>Need for succession planning in business is explained below:</p>
     <ul>
       <li><strong>Risk mitigation</strong> &ndash; If existing leader quits, then searches can take six-nine months for suitable candidate to close. Keeping an organization without leader can invite disruption, uncertainty, conflict and endangers future competitiveness.</li>
@@ -2047,7 +2047,7 @@ const descriptiveQuestions = [
     Explain briefly the financial measures that help in evaluation of performance of any Mutual Fund.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     
     <p><u><strong>Either</strong></u></p>
     <p>Blockchain, sometimes referred to as Distributed Ledger Technology (DLT) is a shared, peer-to-peer, and decentralized open ledger of transactions system with no trusted third parties in between. This ledger database has every entry as permanent as it is an append-only database which cannot be changed or altered. All transactions are fully irreversible with any change in the transaction being recorded as a new transaction.</p>
@@ -2079,7 +2079,7 @@ const descriptiveQuestions = [
   placement: 2,
   marks: 4,
   question_html: `
-    <p><strong>(b)</strong> An investor has two portfolios known to be on minimum variance set for a population of three securities X, Y and Z having below mentioned weights:</p>
+    <p> An investor has two portfolios known to be on minimum variance set for a population of three securities X, Y and Z having below mentioned weights:</p>
     
     <div style="overflow-x:auto;">
       <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
@@ -2111,7 +2111,7 @@ const descriptiveQuestions = [
     <p>Calculate the weight for each stock for a portfolio constructed by investing ₹ 10,00,000 in portfolio A and ₹ 6,00,000 in portfolio B.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     <p>Investment committed to each security would be:</p>
     
     <div style="overflow-x:auto;">
@@ -2166,7 +2166,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 6,
   question_html: `
-    <p><strong>(a)</strong> Suppose that economy A is growing rapidly, and you are managing a global equity fund and so far you have invested only in developed-country stocks only. Now you have decided to add stocks of economy A to your portfolio. The table below shows the expected rates of return, standard deviations, and correlation coefficients (all estimates are for aggregate stock market of developed countries and stock market of Economy A).</p>
+    <p> Suppose that economy A is growing rapidly, and you are managing a global equity fund and so far you have invested only in developed-country stocks only. Now you have decided to add stocks of economy A to your portfolio. The table below shows the expected rates of return, standard deviations, and correlation coefficients (all estimates are for aggregate stock market of developed countries and stock market of Economy A).</p>
     
     <div style="overflow-x:auto;">
       <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
@@ -2204,7 +2204,7 @@ const descriptiveQuestions = [
     </ol>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     <ol type="i">
       <li><strong>Percentage allocation to stocks of Economy A:</strong><br>
       Let the weight of stocks of Economy A be expressed as w, then:<br>
@@ -2241,7 +2241,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 6,
   question_html: `
-    <p><strong>(a)</strong> Your client is holding the following securities:</p>
+    <p> Your client is holding the following securities:</p>
     
     <div style="overflow-x:auto;">
       <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
@@ -2298,7 +2298,7 @@ const descriptiveQuestions = [
     <p><em>Note: (1) Use weighted average Beta in calculations. (2) Round off calculations upto 3 decimal points.</em></p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     
     <div style="overflow-x:auto;">
       <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: right;">
@@ -2386,7 +2386,7 @@ const descriptiveQuestions = [
   placement: 2,
   marks: 4,
   question_html: `
-    <p><strong>(b)</strong> XYZ Plan, a hedge fund currently has assets of ₹ 40 crore. Mr. A, the manager of fund charges fee of 0.10% of portfolio asset. In addition to it he charges an incentive fee of 2%. The incentive will be linked to gross return each year in excess of the portfolio maximum value since the inception of fund. The maximum value the fund achieved so far since inception of fund about one and half year ago was ₹ 42 crores.</p>
+    <p> XYZ Plan, a hedge fund currently has assets of ₹ 40 crore. Mr. A, the manager of fund charges fee of 0.10% of portfolio asset. In addition to it he charges an incentive fee of 2%. The incentive will be linked to gross return each year in excess of the portfolio maximum value since the inception of fund. The maximum value the fund achieved so far since inception of fund about one and half year ago was ₹ 42 crores.</p>
     <p>Evaluate:</p>
     <ol type="i">
       <li>Benchmark Return to make Mr. A eligible for incentive fee.</li>
@@ -2399,7 +2399,7 @@ const descriptiveQuestions = [
     </ol>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     <ol type="i">
       <li><strong>Benchmark Return</strong><br>
       = (42 crore - 40 crore) / 40 crore &times; 100%<br>
@@ -2475,10 +2475,10 @@ const descriptiveQuestions = [
   placement: 3,
   marks: 4,
   question_html: `
-    <p><strong>(c)</strong> What do you mean by Corporate Level Strategy. Also explain three basic questions Corporate Level Strategy should be able to answer.</p>
+    <p> What do you mean by Corporate Level Strategy. Also explain three basic questions Corporate Level Strategy should be able to answer.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     <p>Corporate level strategy fundamentally is concerned with selection of businesses in which a company should compete and with the development and coordination of that portfolio of businesses.</p>
     <p><strong>Corporate level strategy should be able to answer three basic questions:</strong></p>
     
@@ -2509,7 +2509,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 6,
   question_html: `
-    <p><strong>(a)</strong> T plc wants to acquire L plc. The balance sheet of L plc as on 31st March 2022 is as follows:</p>
+    <p> T plc wants to acquire L plc. The balance sheet of L plc as on 31st March 2022 is as follows:</p>
     
     <div style="overflow-x:auto;">
       <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
@@ -2590,7 +2590,7 @@ const descriptiveQuestions = [
     </div>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     <p><strong>Calculation of Purchase Consideration</strong></p>
     <div style="overflow-x:auto;">
       <table border="0" cellpadding="4" cellspacing="0" style="width: 100%; max-width: 500px;">
@@ -2646,7 +2646,7 @@ const descriptiveQuestions = [
   placement: 2,
   marks: 8,
   question_html: `
-    <p><strong>(b)</strong> A mutual fund company introduces two schemes i.e. Dividend plan (Plan-D) and Bonus plan (Plan-B). The face value of the unit is ₹ 10. On 1-4-2018 Mr. K invested ₹ 2,00,000 each in Plan-D and Plan-B when the NAV was ₹ 38.20 and ₹ 35.60 respectively. Both the plans matured on 31-3-2023.</p>
+    <p> A mutual fund company introduces two schemes i.e. Dividend plan (Plan-D) and Bonus plan (Plan-B). The face value of the unit is ₹ 10. On 1-4-2018 Mr. K invested ₹ 2,00,000 each in Plan-D and Plan-B when the NAV was ₹ 38.20 and ₹ 35.60 respectively. Both the plans matured on 31-3-2023.</p>
     <p>Particulars of dividend and bonus declared over the period are as follows:</p>
     <div style="overflow-x:auto;">
       <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
@@ -2733,7 +2733,7 @@ const descriptiveQuestions = [
     2. Round off calculations upto 2 decimal points.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     
     <p><strong><u>Plan &ndash; D</u></strong></p>
     <p>Units acquired = 2,00,000 / 38.20 = <strong>5235.60</strong></p>
@@ -2887,7 +2887,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 8,
   question_html: `
-    <p><strong>(a)</strong> R Ltd. is considering a project with the following Cash flows:</p>
+    <p> R Ltd. is considering a project with the following Cash flows:</p>
     <p style="text-align: right; padding-right: 20px;">in ₹</p>
     <div style="overflow-x:auto;">
       <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
@@ -2957,7 +2957,7 @@ const descriptiveQuestions = [
     <p><em>Note: Round off calculation upto 2 decimal points.</em></p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     <p><strong>Working Note: Base Case Net Present Value (NPV) Calculation</strong></p>
     <ul>
       <li><strong>Year 0 Outflow (Plant Cost):</strong> ₹ 20,000 &times; 1 = (₹ 20,000)</li>
@@ -3031,7 +3031,7 @@ const descriptiveQuestions = [
   placement: 2,
   marks: 6,
   question_html: `
-    <p><strong>(b)</strong> Bank entered a plain vanilla swap through on OIS (Overnight Index Swap) on a principal of ₹ 20 crores and agreed to receive MIBOR overnight floating rate for a fixed payment on the principal. The swap was entered into on Monday, 2nd August 2020 and was to commence on 3rd August 2020 and run for a period of 7 days.</p>
+    <p> Bank entered a plain vanilla swap through on OIS (Overnight Index Swap) on a principal of ₹ 20 crores and agreed to receive MIBOR overnight floating rate for a fixed payment on the principal. The swap was entered into on Monday, 2nd August 2020 and was to commence on 3rd August 2020 and run for a period of 7 days.</p>
     <p>Respective MIBOR rates for Tuesday to Monday were:<br>
     7.75%, 8.15%, 8.12%, 7.95%, 7.98% and 8.15%.</p>
     <p>If Bank received ₹ 634 net on settlement, calculate the applicable Fixed rate for the same swap period.</p>
@@ -3041,7 +3041,7 @@ const descriptiveQuestions = [
     (iii) Consider 365 days a year.</em></p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
     
     <div style="overflow-x:auto;">
       <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: center;">
@@ -3138,7 +3138,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 8,
   question_html: `
-    <p><strong>(a)</strong> On Tuesday morning (before opening of the capital market) an investor, while going through his bank statement, has observed that an amount of ₹ 7 lakhs is lying in his bank account. This amount is available for use from Tuesday till Friday. The Bank requires a minimum balance of ₹ 1,000 all the time. The investor desires to take a maximum possible exposure in the market where Value at Risk (VaR) should not exceed the balance lying in his bank account. The standard deviation of index of the same market is 1.5% per day. The required confidence level is 99%.</p>
+    <p> On Tuesday morning (before opening of the capital market) an investor, while going through his bank statement, has observed that an amount of ₹ 7 lakhs is lying in his bank account. This amount is available for use from Tuesday till Friday. The Bank requires a minimum balance of ₹ 1,000 all the time. The investor desires to take a maximum possible exposure in the market where Value at Risk (VaR) should not exceed the balance lying in his bank account. The standard deviation of index of the same market is 1.5% per day. The required confidence level is 99%.</p>
 
     <p><strong>Given:</strong></p>
 
@@ -3208,7 +3208,7 @@ const descriptiveQuestions = [
     <p>You are required to determine the maximum possible exposure investor can take in the market.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <div style="overflow-x:auto;">
       <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;">
@@ -3267,14 +3267,14 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 2,
   question_html: `
-    <p><strong>(b)</strong> MNP Ltd. has declared and paid annual dividend of ₹ 4 per share. It is expected to grow @ 20% for the next two years and 10% thereafter. The required rate of return of equity investors is 15%.</p>
+    <p> MNP Ltd. has declared and paid annual dividend of ₹ 4 per share. It is expected to grow @ 20% for the next two years and 10% thereafter. The required rate of return of equity investors is 15%.</p>
 
     <p>Compute the current price at which equity shares should sell.</p>
 
     <p><em>Note: Use PVF upto 4 decimal points and round off calculation upto 2 decimal points.</em></p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p>
       D<sub>0</sub> = ₹ 4
@@ -3369,10 +3369,10 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 4,
   question_html: `
-    <p><strong>(c)</strong> Explain the concept of Unicorn.</p>
+    <p> Explain the concept of Unicorn.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p>A <strong>Unicorn</strong> is a privately held start-up company which has achieved a valuation of <strong>US$ 1 billion</strong>. This term was coined by venture capitalist <strong>Aileen Lee</strong>, first time in 2013. Unicorn, a mythical animal, represents the statistical rarity of successful ventures.</p>
 
@@ -3399,7 +3399,7 @@ const descriptiveQuestions = [
   placement: 2,
   marks: 6,
   question_html: `
-    <p><strong>(a)</strong> Mr. H as Treasure for your bank working under you sold HK$ 10 million value Spot to your customer at ₹ 10.53/ HK$ and covered yourself in the London market on the same day when the exchange rates were:</p>
+    <p> Mr. H as Treasure for your bank working under you sold HK$ 10 million value Spot to your customer at ₹ 10.53/ HK$ and covered yourself in the London market on the same day when the exchange rates were:</p>
 
     <p><strong>US$ 1 = H.K.$ 7.8880 / 7.8920</strong></p>
 
@@ -3418,7 +3418,7 @@ const descriptiveQuestions = [
     <p><em>Note: Ignore brokerage.</em></p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p><strong>(i) Calculation of Cover Rate</strong></p>
 
@@ -3487,14 +3487,14 @@ const descriptiveQuestions = [
   placement: 2,
   marks: 4,
   question_html: `
-    <p><strong>(b)</strong> PFL is already in production of Fertilizer is considering a proposal of building a new plant to produce pesticides. The Net Present Value of proposal is ₹ 200 crore without the abandonment option.</p>
+    <p> PFL is already in production of Fertilizer is considering a proposal of building a new plant to produce pesticides. The Net Present Value of proposal is ₹ 200 crore without the abandonment option.</p>
 
     <p>However, if market conditions for pesticide turns out to be favourable the NPV of proposal shall increase by 30%. On the other hand, market conditions remain sluggish the NPV of the proposal shall be reduced by 40%. In case company is not interested in continuation of the project it can be disposed of for ₹ 160 crore.</p>
 
     <p>If the risk-free rate of interest is 8% then what will be value of abandonment option.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p><strong>Decision Tree showing Payoff</strong></p>
 
@@ -3584,10 +3584,10 @@ const descriptiveQuestions = [
   placement: 2,
   marks: 4,
   question_html: `
-    <p><strong>(c)</strong> Explain the various Qualitative factors that need to be taken into account in addition to Quantitative Factors to evaluate the performance of any Mutual Fund.</p>
+    <p> Explain the various Qualitative factors that need to be taken into account in addition to Quantitative Factors to evaluate the performance of any Mutual Fund.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p>Some of the <strong>Qualitative factors</strong> that need to be taken into account in addition to Quantitative Factors are as follows:</p>
 
@@ -3623,7 +3623,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 6,
   question_html: `
-    <p><strong>(a)</strong> Mr. A owns a portfolio with the following characteristics:</p>
+    <p> Mr. A owns a portfolio with the following characteristics:</p>
     
     <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
       <thead>
@@ -3666,7 +3666,7 @@ const descriptiveQuestions = [
     </ol>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <ol style="list-style-type: lower-roman;">
       <li>
@@ -3705,7 +3705,7 @@ const descriptiveQuestions = [
   placement: 2,
   marks: 4,
   question_html: `
-    <p><strong>(b)</strong> There is a privately held company X Pvt. Ltd that is operating into the retail space, and is now scouting for angel investors. The unleveraged beta based on the industry in which it operates is 1.8, and the average debt to equity ratio of X Pvt. Ltd. is hovering at 40:60. The rate of return provided by risk free GOI Bonds is 5%. The rate of market return for the industry is 11%. The FCFs for the next 3 years are as follows:</p>
+    <p> There is a privately held company X Pvt. Ltd that is operating into the retail space, and is now scouting for angel investors. The unleveraged beta based on the industry in which it operates is 1.8, and the average debt to equity ratio of X Pvt. Ltd. is hovering at 40:60. The rate of return provided by risk free GOI Bonds is 5%. The rate of market return for the industry is 11%. The FCFs for the next 3 years are as follows:</p>
     
     <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
       <thead>
@@ -3731,7 +3731,7 @@ const descriptiveQuestions = [
     <p><em>Note: Use PVF and round off calculations upto 3 decimal points.</em></p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p>To compute the value of X Pvt. Ltd. first, we shall calculate WACC of the company. Since its share is not trading in the market, we shall use proxy beta to calculate the cost of equity. Since the unlevered beta of the industry is 1.8 the levered beta of the company will be:</p>
     
@@ -3794,7 +3794,7 @@ const descriptiveQuestions = [
     <p>Explain briefly principles of an Active Portfolio Strategy (APS).</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p><strong>The various types of Swaps are as follows:</strong></p>
     <ol style="list-style-type: lower-roman;">
@@ -3870,7 +3870,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 8,
   question_html: `
-    <p><strong>(a)</strong> BDR Ltd. is an Indian export business house. The company prepares invoice in customers' currency. It has debtors amounting US$ 10 Million which are due to be received on April 1, 2023.</p>
+    <p> BDR Ltd. is an Indian export business house. The company prepares invoice in customers' currency. It has debtors amounting US$ 10 Million which are due to be received on April 1, 2023.</p>
     
     <p>Market information as at January 1, 2023 is:</p>
     <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
@@ -3925,7 +3925,7 @@ const descriptiveQuestions = [
     </ol>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <ol style="list-style-type: lower-roman;">
       <li>
@@ -3982,7 +3982,7 @@ const descriptiveQuestions = [
   placement: 2,
   marks: 2,
   question_html: `
-    <p><strong>(b)</strong> A convertible bond with a face value of ₹ 5,000 is issued at ₹ 6,750 with a coupon rate of 10.5%. The conversion rate is 14 shares per bond. The current market price of the bond and share is ₹ 7,375 and ₹ 400 respectively.</p>
+    <p> A convertible bond with a face value of ₹ 5,000 is issued at ₹ 6,750 with a coupon rate of 10.5%. The conversion rate is 14 shares per bond. The current market price of the bond and share is ₹ 7,375 and ₹ 400 respectively.</p>
     
     <p>Determine:</p>
     <ol style="list-style-type: lower-roman;">
@@ -3991,7 +3991,7 @@ const descriptiveQuestions = [
     </ol>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <ol style="list-style-type: lower-roman;">
       <li>
@@ -4012,10 +4012,10 @@ const descriptiveQuestions = [
   placement: 3,
   marks: 4,
   question_html: `
-    <p><strong>(c)</strong> Although rating agency is secondary to the process of securitization but it plays a vital role. Explain.</p>
+    <p> Although rating agency is secondary to the process of securitization but it plays a vital role. Explain.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p>Yes, this statement is correct since the securitization is based on the pools of assets rather than the originators, the assets must be assessed in terms of its credit quality and credit support available. Rating agency assesses the following:</p>
     <ul>
@@ -4034,7 +4034,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 10,
   question_html: `
-    <p><strong>(a)</strong> During the audit of the Weak Bank (W), RBI suggested that the Bank should either merge with another bank or may close down. Strong Bank (S) has submitted a proposal for the merger of Weak Bank with itself. The relevant information and Balance Sheets of both the companies are as follows:</p>
+    <p> During the audit of the Weak Bank (W), RBI suggested that the Bank should either merge with another bank or may close down. Strong Bank (S) has submitted a proposal for the merger of Weak Bank with itself. The relevant information and Balance Sheets of both the companies are as follows:</p>
     
     <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
       <thead>
@@ -4158,7 +4158,7 @@ const descriptiveQuestions = [
     <p>You are required to prepare the Balance Sheet after the merger duly supported by adequate workings.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p><strong>Working Notes:</strong></p>
     <p>To prepare Revised Balance Sheet we need to calculate swap ratio, number of shares to be issued to Weak Bank and Capital Reserve or Goodwill on merger as follows:</p>
@@ -4328,10 +4328,10 @@ const descriptiveQuestions = [
   placement: 2,
   marks: 4,
   question_html: `
-    <p><strong>(b)</strong> The SWIFT plays an important role in Foreign Exchange dealings. Explain.</p>
+    <p> The SWIFT plays an important role in Foreign Exchange dealings. Explain.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p>The SWIFT plays an important role in Foreign Exchange dealings because of the following reasons:</p>
     <ul>
@@ -4350,7 +4350,7 @@ const descriptiveQuestions = [
   placement: 1,
   marks: 6,
   question_html: `
-    <p><strong>(a)</strong> XYZ Ltd. is considering taking up one of the two projects-Project-X and Project-Y. Both the projects having same life require equal investment of ₹ 1600 lakhs each. Both are estimated to have almost the same yield. As the company is new to this type of business, the cash flow arising from the projects cannot be estimated with certainty. An attempt was therefore, made to use probability to analyse the pattern of cash flow from other projects during the first year of operations. This pattern is likely to continue during the life of these projects. The results of the analysis are as follows:</p>
+    <p> XYZ Ltd. is considering taking up one of the two projects-Project-X and Project-Y. Both the projects having same life require equal investment of ₹ 1600 lakhs each. Both are estimated to have almost the same yield. As the company is new to this type of business, the cash flow arising from the projects cannot be estimated with certainty. An attempt was therefore, made to use probability to analyse the pattern of cash flow from other projects during the first year of operations. This pattern is likely to continue during the life of these projects. The results of the analysis are as follows:</p>
     
     <p><strong>Project X</strong></p>
     <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 400px; margin-bottom: 20px;">
@@ -4390,7 +4390,7 @@ const descriptiveQuestions = [
     <p>Evaluate which of the two projects bears more risk for every percent of expected return.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p>To determine which of the two projects bears more risk for every percent of expected return first we shall calculate Variance and Standard Deviation of both the projects.</p>
 
@@ -4437,7 +4437,7 @@ const descriptiveQuestions = [
   placement: 2,
   marks: 4,
   question_html: `
-    <p><strong>(b)</strong> The following data pertains to HPS Inc. engaged in software consultancy business as on 31 December 2023:</p>
+    <p> The following data pertains to HPS Inc. engaged in software consultancy business as on 31 December 2023:</p>
     
     <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 400px; margin-bottom: 20px;">
       <thead>
@@ -4542,7 +4542,7 @@ const descriptiveQuestions = [
     </ol>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p><strong>(i) Determination of Economic Value Added (EVA)</strong></p>
     <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 500px; margin-bottom: 20px;">
@@ -4667,10 +4667,10 @@ const descriptiveQuestions = [
   placement: 3,
   marks: 4,
   question_html: `
-    <p><strong>(c)</strong> Explain Venture Capital Method of valuing Startups.</p>
+    <p> Explain Venture Capital Method of valuing Startups.</p>
   `,
   solution_html: `
-    <p><strong>Solution:</strong></p>
+    
 
     <p>The <strong>Venture Capital (VC) Method</strong> is a popular valuation method primarily used for early-stage and pre-revenue startups where traditional valuation methods (like DCF) are difficult to apply due to lack of historical data and uncertain cash flows. It works backwards from an expected exit value to determine the current valuation and the equity stake the investor should get.</p>
     
@@ -4703,6 +4703,2016 @@ const descriptiveQuestions = [
       </li>
     </ol>
   `
-}
+},
+{
+  question_id: "AFM_MTPNOV24II_Q1A",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "Startup Finance",
+  placement: 1,
+  marks: 8,
+  question_html: `
+    <p> The ABC Startup has the following expected profits under different scenarios along respective probabilities:</p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th rowspan="2">Year</th>
+          <th colspan="2">Best Case</th>
+          <th colspan="2">Base Case</th>
+          <th colspan="2">Worst Case</th>
+        </tr>
+        <tr>
+          <th>Revenue</th>
+          <th>Expenses</th>
+          <th>Revenue</th>
+          <th>Expenses</th>
+          <th>Revenue</th>
+          <th>Expenses</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>₹ 100,00,000</td>
+          <td>₹ 80,00,000</td>
+          <td>₹ 100,00,000</td>
+          <td>₹ 90,00,000</td>
+          <td>₹ 100,00,000</td>
+          <td>₹ 95,00,000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>₹ 120,00,000</td>
+          <td>₹ 92,40,000</td>
+          <td>₹ 110,00,000</td>
+          <td>₹ 95,70,000</td>
+          <td>₹ 102,00,000</td>
+          <td>₹ 98,94,000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>₹ 144,00,000</td>
+          <td>₹ 108,00,000</td>
+          <td>₹ 121,00,000</td>
+          <td>₹ 102,85,000</td>
+          <td>₹ 104,04,000</td>
+          <td>₹ 101,95,920</td>
+        </tr>
+        <tr>
+          <td><strong>Probability</strong></td>
+          <td colspan="2" align="center">30%</td>
+          <td colspan="2" align="center">60%</td>
+          <td colspan="2" align="center">10%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>You are required to suggest the value of ABC Startup using <strong>First Chicago Method</strong> assuming that:</p>
+
+    <ol type="i">
+      <li>Applicable discounting rate is 20%.</li>
+      <li>Startup is located in Tax-free Zone.</li>
+      <li>The multiple for Terminal is 10.</li>
+      <li>No depreciable assets are held by the ABC Startup.</li>
+    </ol>
+
+    <p><strong>Note:</strong></p>
+
+    <p><strong>1. Present Value Factor (PVF)</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>PVF @ 20%</strong></td>
+          <td>0.8333</td>
+          <td>0.6944</td>
+          <td>0.5787</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>2. Round off the calculation to whole numbers.</p>
+  `,
+  solution_html: `
+    
+
+    <p><strong>Valuation of Startup under different scenarios:</strong></p>
+
+    <p><strong>(i) Best Case Scenario</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Year 1</th>
+          <th>Year 2</th>
+          <th>Year 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Revenue</td>
+          <td>₹ 100,00,000</td>
+          <td>₹ 120,00,000</td>
+          <td>₹ 144,00,000</td>
+        </tr>
+        <tr>
+          <td>Expenses</td>
+          <td>₹ 80,00,000</td>
+          <td>₹ 92,40,000</td>
+          <td>₹ 108,00,000</td>
+        </tr>
+        <tr>
+          <td>Cash Flow / Earnings</td>
+          <td>₹ 20,00,000</td>
+          <td>₹ 27,60,000</td>
+          <td>₹ 36,00,000</td>
+        </tr>
+        <tr>
+          <td>Terminal Value</td>
+          <td>-</td>
+          <td>-</td>
+          <td>₹ 3,60,00,000</td>
+        </tr>
+        <tr>
+          <td>PVF @ 20%</td>
+          <td>0.8333</td>
+          <td>0.6944</td>
+          <td>0.5787</td>
+        </tr>
+        <tr>
+          <td>PV of Cash Flow</td>
+          <td>₹ 16,66,600</td>
+          <td>₹ 19,16,544</td>
+          <td>₹ 20,83,320</td>
+        </tr>
+        <tr>
+          <td>PV of Terminal Value</td>
+          <td>-</td>
+          <td>-</td>
+          <td>₹ 2,08,33,200</td>
+        </tr>
+        <tr>
+          <td><strong>Value of Startup</strong></td>
+          <td colspan="3"><strong>₹ 2,64,99,664</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(ii) Base Case Scenario</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Year 1</th>
+          <th>Year 2</th>
+          <th>Year 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Revenue</td>
+          <td>₹ 100,00,000</td>
+          <td>₹ 110,00,000</td>
+          <td>₹ 121,00,000</td>
+        </tr>
+        <tr>
+          <td>Expenses</td>
+          <td>₹ 90,00,000</td>
+          <td>₹ 95,70,000</td>
+          <td>₹ 102,85,000</td>
+        </tr>
+        <tr>
+          <td>Cash Flow / Earnings</td>
+          <td>₹ 10,00,000</td>
+          <td>₹ 14,30,000</td>
+          <td>₹ 18,15,000</td>
+        </tr>
+        <tr>
+          <td>Terminal Value</td>
+          <td>-</td>
+          <td>-</td>
+          <td>₹ 1,81,50,000</td>
+        </tr>
+        <tr>
+          <td>PVF @ 20%</td>
+          <td>0.8333</td>
+          <td>0.6944</td>
+          <td>0.5787</td>
+        </tr>
+        <tr>
+          <td>PV of Cash Flow</td>
+          <td>₹ 8,33,300</td>
+          <td>₹ 9,92,992</td>
+          <td>₹ 10,50,341</td>
+        </tr>
+        <tr>
+          <td>PV of Terminal Value</td>
+          <td>-</td>
+          <td>-</td>
+          <td>₹ 1,05,03,405</td>
+        </tr>
+        <tr>
+          <td><strong>Value of Startup</strong></td>
+          <td colspan="3"><strong>₹ 1,33,80,038</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(iii) Worst Case Scenario</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Year 1</th>
+          <th>Year 2</th>
+          <th>Year 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Revenue</td>
+          <td>₹ 100,00,000</td>
+          <td>₹ 102,00,000</td>
+          <td>₹ 104,04,000</td>
+        </tr>
+        <tr>
+          <td>Expenses</td>
+          <td>₹ 95,00,000</td>
+          <td>₹ 98,94,000</td>
+          <td>₹ 101,95,920</td>
+        </tr>
+        <tr>
+          <td>Cash Flow / Earnings</td>
+          <td>₹ 5,00,000</td>
+          <td>₹ 3,06,000</td>
+          <td>₹ 2,08,080</td>
+        </tr>
+        <tr>
+          <td>Terminal Value</td>
+          <td>-</td>
+          <td>-</td>
+          <td>₹ 20,80,800</td>
+        </tr>
+        <tr>
+          <td>PVF @ 20%</td>
+          <td>0.8333</td>
+          <td>0.6944</td>
+          <td>0.5787</td>
+        </tr>
+        <tr>
+          <td>PV of Cash Flow</td>
+          <td>₹ 4,16,650</td>
+          <td>₹ 2,12,486</td>
+          <td>₹ 1,20,416</td>
+        </tr>
+        <tr>
+          <td>PV of Terminal Value</td>
+          <td>-</td>
+          <td>-</td>
+          <td>₹ 12,04,159</td>
+        </tr>
+        <tr>
+          <td><strong>Value of Startup</strong></td>
+          <td colspan="3"><strong>₹ 19,53,711</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Value of ABC Startup as per First Chicago Method</strong></p>
+
+    <p>
+      = 0.30 × ₹ 2,64,99,664 + 0.60 × ₹ 1,33,80,038 + 0.10 × ₹ 19,53,711
+    </p>
+
+    <p>
+      = ₹ 79,49,899 + ₹ 80,28,023 + ₹ 1,95,371
+    </p>
+
+    <p>
+      <strong>= ₹ 1,61,73,293</strong>
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV24II_Q1B",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "Startup Finance",
+  placement: 1,
+  marks: 6,
+  question_html: `
+    <p> List out the points to be kept in mind while preparing a Pitch Presentation. What are the basic documents that are included in financial projections that make up a business’s financial statement.</p>
+  `,
+  solution_html: `
+    
+
+    <p><strong>Some points to be kept in mind while preparing a Pitch Presentation are as follows:</strong></p>
+
+    <ol type="i">
+      <li>Introduction</li>
+      <li>Team</li>
+      <li>Problem</li>
+      <li>Solution</li>
+      <li>Marketing/Sales</li>
+      <li>Projections or Milestones</li>
+      <li>Competition</li>
+      <li>Business Model</li>
+    </ol>
+
+    <p><strong>Financial projections include three basic documents that make up a business’s financial statements.</strong></p>
+
+    <ul>
+      <li>
+        <p><strong>Income statement:</strong> This estimate how much money the business will generate by projecting income and expenses. It will show:</p>
+
+        <ul>
+          <li>How much revenue did the business generate?</li>
+          <li>How much did it cost to generate and support that revenue?</li>
+          <li>How much did the business pay its employees?</li>
+          <li>How much did it pay towards rent?</li>
+        </ul>
+
+        <p>For your first year in business, you’ll want to create a monthly income statement. For the second year, quarterly statements will suffice. For the following years, you’ll just need an annual income statement.</p>
+      </li>
+
+      <li>
+        <p><strong>Cash flow statement:</strong> A projected cash flow statement will depict how much cash will be coming into the business and how much cash will be utilized. At the end of each period (e.g. monthly, quarterly, annually), one can tally it all up to show either the cash burn or the cash generated during the period and the cash balance remaining at the end of the period.</p>
+      </li>
+
+      <li>
+        <p><strong>Balance sheet:</strong> The balance sheet shows the business’s overall finances including assets, liabilities and equity. Typically, one will create an annual balance sheet for one’s financial projections. It shows:</p>
+
+        <ul>
+          <li>How much cash is in the bank?</li>
+          <li>How much money does the company owe to suppliers?</li>
+          <li>How much money has been invested in the company?</li>
+        </ul>
+      </li>
+    </ul>
+  `
+},
+{
+  question_id: "AFM_MTPNOV24II_Q2A",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "Business Valuation",
+  placement: 2,
+  marks: 6,
+  question_html: `
+    <p> Calculate the value of one equity share of X Ltd. from the following Information:</p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <tbody>
+        <tr>
+          <td>Profit of the company (Before tax)</td>
+          <td>₹ 8000 crores</td>
+        </tr>
+        <tr>
+          <td>Equity share capital of the Company</td>
+          <td>₹ 19000 crores</td>
+        </tr>
+        <tr>
+          <td>No. of Equity Shares</td>
+          <td>380 crores</td>
+        </tr>
+        <tr>
+          <td>Long run growth rate of the company</td>
+          <td>7%</td>
+        </tr>
+        <tr>
+          <td>Risk free Rate of Return</td>
+          <td>9.50%</td>
+        </tr>
+        <tr>
+          <td>Beta of the company</td>
+          <td>0.1</td>
+        </tr>
+        <tr>
+          <td>Market Risk Premium</td>
+          <td>3.10%</td>
+        </tr>
+        <tr>
+          <td>Total Capital expenditure</td>
+          <td>₹ 20140 crore</td>
+        </tr>
+        <tr>
+          <td>Chargeable Depreciation</td>
+          <td>₹ 17100 crore</td>
+        </tr>
+        <tr>
+          <td>Total Increase in working capital</td>
+          <td>₹ 1755.60 crore</td>
+        </tr>
+        <tr>
+          <td>New Debt to be issued for funding</td>
+          <td>₹ 2062.108 crore</td>
+        </tr>
+        <tr>
+          <td>Tax Rate</td>
+          <td>30%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Note:</strong> All calculation to rounded off upto 4 decimal points and final value of equity share to be rounded off upto 2 decimal points.</p>
+  `,
+  solution_html: `
+    
+
+    <p>
+      <strong>Profit After Tax (PAT) or Net Income</strong><br>
+      = ₹ 8000 crores (1 − 0.30)<br>
+      = <strong>₹ 5600 crores</strong>
+    </p>
+
+    <p>
+      <strong>Free Cash Flow to Equity (FCFE)</strong> = Net Income − Capital Expenditures + Depreciation −/+ Change in Net Working Capital + New Debt Issued − Debt Repayments + Net issue of Preference Shares − Preference Share Dividends
+    </p>
+
+    <p>
+      FCFE = ₹ 5600 crores − ₹ 20140 crore + ₹ 17100 crore − ₹ 1755.60 crore + ₹ 2062.108 crore
+    </p>
+
+    <p>
+      <strong>FCFE = ₹ 2866.508 crore</strong>
+    </p>
+
+    <p>
+      <strong>Cost of Equity (K<sub>e</sub>)</strong> = R<sub>f</sub> + β (R<sub>m</sub> − R<sub>f</sub>)<br>
+      or R<sub>f</sub> + β × Market Risk Premium
+    </p>
+
+    <p>
+      = 9.50% + 0.1 × 3.10%<br>
+      = <strong>9.81%</strong>
+    </p>
+
+    <p>
+      <strong>Value of Equity</strong>
+    </p>
+
+    <p>
+      = FCFE (1 + g) / (K<sub>e</sub> − g)
+    </p>
+
+    <p>
+      = ₹ 2866.508 crore (1.07) / (0.0981 − 0.07)
+    </p>
+
+    <p>
+      = ₹ 3067.1636 crore / 0.0281
+    </p>
+
+    <p>
+      = <strong>₹ 109151.7295 crore</strong>
+    </p>
+
+    <p>
+      <strong>Value of one Equity Share</strong>
+    </p>
+
+    <p>
+      = ₹ 109151.7295 crore / 380 crore
+    </p>
+
+    <p>
+      = <strong>₹ 287.24</strong>
+    </p>
+
+    <p><strong>Alternatively, it can also be calculated by using per share basis as follows:</strong></p>
+
+    <p>
+      <strong>FCFE per share</strong>
+    </p>
+
+    <p>
+      = FCFE / No. of Equity Shares
+    </p>
+
+    <p>
+      = ₹ 2866.508 crore / 380 crore
+    </p>
+
+    <p>
+      = <strong>₹ 7.5434</strong>
+    </p>
+
+    <p>
+      <strong>Value of per equity share</strong>
+    </p>
+
+    <p>
+      = FCFE (1 + g) / (K<sub>e</sub> − g)
+    </p>
+
+    <p>
+      = 7.5434 (1.07) / (0.0981 − 0.07)
+    </p>
+
+    <p>
+      = 8.0714 / 0.0281
+    </p>
+
+    <p>
+      = <strong>₹ 287.24</strong>
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV24II_Q2B",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "Capital Budgeting",
+  placement: 2,
+  marks: 8,
+  question_html: `
+    <p> A multinational company is planning to set up a subsidiary company in India (where hitherto it was exporting) in view of growing demand for its product and competition from other MNCs. The initial project cost (consisting of Plant and Machinery including installation) is estimated to be US$ 500 million. The net working capital requirements are estimated at US$ 50 million. The company follows straight line method of depreciation. Presently, the company is exporting two million units every year at a unit price of US$ 80, its variable cost per unit being US$ 40.</p>
+
+    <p>The Chief Financial Officer has estimated the following operating cost and other data in respect of proposed project:</p>
+
+    <ol type="i">
+      <li>Variable operating cost will be US$ 20 per unit of production;</li>
+      <li>Additional cash fixed cost will be US$ 30 million p.a. and project's share of allocated fixed cost will be US$ 3 million p.a. based on principle of ability to share;</li>
+      <li>Production capacity of the proposed project in India will be 5 million units;</li>
+      <li>Expected useful life of the proposed plant is five years with no salvage value;</li>
+      <li>Existing working capital investment for production &amp; sale of two million units through exports was US$ 15 million;</li>
+      <li>Export of the product in the coming year will decrease to 1.5 million units in case the company does not open subsidiary company in India, in view of the presence of competing MNCs that are in the process of setting up their subsidiaries in India;</li>
+      <li>Applicable Corporate Income Tax rate is 35%; and</li>
+      <li>Required rate of return for such project is 12%.</li>
+    </ol>
+
+    <p>Assuming that there will be no variation in the exchange rate of two currencies and all profits will be repatriated, as there will be no withholding tax, estimate <strong>Net Present Value (NPV)</strong> of the proposed project in India.</p>
+
+    <p><strong>Present Value Interest Factors (PVIF) @ 12% for five years are as below:</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>PVIF</strong></td>
+          <td>0.8929</td>
+          <td>0.7972</td>
+          <td>0.7118</td>
+          <td>0.6355</td>
+          <td>0.5674</td>
+        </tr>
+      </tbody>
+    </table>
+  `,
+  solution_html: `
+    
+
+    <p><strong>Financial Analysis whether to set up the manufacturing units in India or not may be carried using NPV technique as follows:</strong></p>
+
+    <p><strong>I. Incremental Cash Outflows</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>US$ Million</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cost of Plant and Machinery</td>
+          <td>500.00</td>
+        </tr>
+        <tr>
+          <td>Working Capital</td>
+          <td>50.00</td>
+        </tr>
+        <tr>
+          <td>Less: Release of existing Working Capital</td>
+          <td>(15.00)</td>
+        </tr>
+        <tr>
+          <td><strong>Total Initial Outflow</strong></td>
+          <td><strong>535.00</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>II. Incremental Cash Inflow after Tax (CFAT)</strong></p>
+
+    <p><strong>(1) Generated by investment in India for 5 years</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>US$ Million</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sales Revenue (5 Million × US$ 80)</td>
+          <td>400.00</td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Less: Costs</strong></td>
+        </tr>
+        <tr>
+          <td>Variable Cost (5 Million × US$ 20)</td>
+          <td>100.00</td>
+        </tr>
+        <tr>
+          <td>Fixed Cost</td>
+          <td>30.00</td>
+        </tr>
+        <tr>
+          <td>Depreciation (US$ 500 Million ÷ 5)</td>
+          <td>100.00</td>
+        </tr>
+        <tr>
+          <td>EBIT</td>
+          <td>170.00</td>
+        </tr>
+        <tr>
+          <td>Taxes @ 35%</td>
+          <td>59.50</td>
+        </tr>
+        <tr>
+          <td>EAT</td>
+          <td>110.50</td>
+        </tr>
+        <tr>
+          <td>Add: Depreciation</td>
+          <td>100.00</td>
+        </tr>
+        <tr>
+          <td><strong>CFAT (Years 1–5)</strong></td>
+          <td><strong>210.50</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(2) Cash flow at the end of the 5 years (Release of Working Capital)</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>US$ Million</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Release of Working Capital</td>
+          <td>35.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(3) Cash generation by exports (Opportunity Cost)</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>US$ Million</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sales Revenue (1.5 Million × US$ 80)</td>
+          <td>120.00</td>
+        </tr>
+        <tr>
+          <td>Less: Variable Cost (1.5 Million × US$ 40)</td>
+          <td>60.00</td>
+        </tr>
+        <tr>
+          <td>Contribution before tax</td>
+          <td>60.00</td>
+        </tr>
+        <tr>
+          <td>Tax @ 35%</td>
+          <td>21.00</td>
+        </tr>
+        <tr>
+          <td><strong>CFAT (Years 1–5)</strong></td>
+          <td><strong>39.00</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(4) Additional CFAT attributable to Foreign Investment</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>US$ Million</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Through setting up subsidiary in India</td>
+          <td>210.50</td>
+        </tr>
+        <tr>
+          <td>Less: Through Exports in India</td>
+          <td>39.00</td>
+        </tr>
+        <tr>
+          <td><strong>CFAT (Years 1–5)</strong></td>
+          <td><strong>171.50</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>III. Determination of NPV</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>CFAT (US$ Million)</th>
+          <th>PVF @ 12%</th>
+          <th>PV (US$ Million)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1–5</td>
+          <td>171.50</td>
+          <td>3.6048</td>
+          <td>618.2232</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>35.00</td>
+          <td>0.5674</td>
+          <td>19.8590</td>
+        </tr>
+        <tr>
+          <td colspan="3"><strong>Total Present Value of Cash Inflows</strong></td>
+          <td><strong>638.0822</strong></td>
+        </tr>
+        <tr>
+          <td colspan="3">Less: Initial Outflow</td>
+          <td>535.0000</td>
+        </tr>
+        <tr>
+          <td colspan="3"><strong>Net Present Value (NPV)</strong></td>
+          <td><strong>103.0822</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Since NPV is positive, the proposal should be accepted.</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV24II_Q3A",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "Security Analysis & Portfolio Management",
+  placement: 3,
+  marks: 10,
+  question_html: `
+    <p> Following are the details of a portfolio consisting of three shares:</p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Share</th>
+          <th>Portfolio Weight</th>
+          <th>Beta</th>
+          <th>Expected Return (%)</th>
+          <th>Total Variance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td>0.20</td>
+          <td>0.40</td>
+          <td>14</td>
+          <td>0.015</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>0.50</td>
+          <td>0.50</td>
+          <td>15</td>
+          <td>0.025</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>0.30</td>
+          <td>1.10</td>
+          <td>21</td>
+          <td>0.100</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Standard Deviation of Market Portfolio Returns = 10%</strong></p>
+
+    <p>You are given the following additional data:</p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <tbody>
+        <tr>
+          <td>Covariance (A, B)</td>
+          <td>0.030</td>
+        </tr>
+        <tr>
+          <td>Covariance (A, C)</td>
+          <td>0.020</td>
+        </tr>
+        <tr>
+          <td>Covariance (B, C)</td>
+          <td>0.040</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Calculate the following:</p>
+
+    <ol type="i">
+      <li>The Portfolio Beta</li>
+      <li>Residual variance of each of the three shares</li>
+      <li>Portfolio variance using Sharpe Index Model</li>
+      <li>Portfolio variance (on the basis of modern portfolio theory given by Markowitz)</li>
+    </ol>
+  `,
+  solution_html: `
+    
+
+    <p><strong>(i) Portfolio Beta</strong></p>
+
+    <p>
+      = (0.20 × 0.40) + (0.50 × 0.50) + (0.30 × 1.10)
+    </p>
+
+    <p>
+      = 0.08 + 0.25 + 0.33
+    </p>
+
+    <p>
+      <strong>= 0.66</strong>
+    </p>
+
+    <p><strong>(ii) Residual Variance</strong></p>
+
+    <p>To determine Residual Variance first of all we shall compute the Systematic Risk as follows:</p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Share</th>
+          <th>Systematic Risk (β<sup>2</sup> × σ<sub>M</sub><sup>2</sup>)</th>
+          <th>Residual Variance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td>(0.40)<sup>2</sup> × (0.01) = 0.0016</td>
+          <td>0.015 − 0.0016 = <strong>0.0134</strong></td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>(0.50)<sup>2</sup> × (0.01) = 0.0025</td>
+          <td>0.025 − 0.0025 = <strong>0.0225</strong></td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>(1.10)<sup>2</sup> × (0.01) = 0.0121</td>
+          <td>0.100 − 0.0121 = <strong>0.0879</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(iii) Portfolio Variance using Sharpe Index Model</strong></p>
+
+    <p>
+      Systematic Variance of Portfolio
+      = (0.10)<sup>2</sup> × (0.66)<sup>2</sup>
+      = <strong>0.004356</strong>
+    </p>
+
+    <p>
+      Unsystematic Variance of Portfolio
+      = 0.0134 × (0.20)<sup>2</sup>
+      + 0.0225 × (0.50)<sup>2</sup>
+      + 0.0879 × (0.30)<sup>2</sup>
+      = <strong>0.014072</strong>
+    </p>
+
+    <p>
+      Total Variance
+      = 0.004356 + 0.014072
+      = <strong>0.018428</strong>
+    </p>
+
+    <p><strong>(iv) Portfolio Variance on the basis of Markowitz Theory</strong></p>
+
+    <p>
+      = (w<sub>A</sub> × w<sub>A</sub> × σ<sub>A</sub><sup>2</sup>)
+      + (w<sub>A</sub> × w<sub>B</sub> × Cov<sub>AB</sub>)
+      + (w<sub>A</sub> × w<sub>C</sub> × Cov<sub>AC</sub>)
+      + (w<sub>B</sub> × w<sub>A</sub> × Cov<sub>AB</sub>)
+      + (w<sub>B</sub> × w<sub>B</sub> × σ<sub>B</sub><sup>2</sup>)
+      + (w<sub>B</sub> × w<sub>C</sub> × Cov<sub>BC</sub>)
+      + (w<sub>C</sub> × w<sub>A</sub> × Cov<sub>CA</sub>)
+      + (w<sub>C</sub> × w<sub>B</sub> × Cov<sub>CB</sub>)
+      + (w<sub>C</sub> × w<sub>C</sub> × σ<sub>C</sub><sup>2</sup>)
+    </p>
+
+    <p>
+      = (0.20 × 0.20 × 0.015)
+      + (0.20 × 0.50 × 0.030)
+      + (0.20 × 0.30 × 0.020)
+      + (0.20 × 0.50 × 0.030)
+      + (0.50 × 0.50 × 0.025)
+      + (0.50 × 0.30 × 0.040)
+      + (0.30 × 0.20 × 0.020)
+      + (0.30 × 0.50 × 0.040)
+      + (0.30 × 0.30 × 0.100)
+    </p>
+
+    <p>
+      = 0.0006
+      + 0.0030
+      + 0.0012
+      + 0.0030
+      + 0.00625
+      + 0.0060
+      + 0.0012
+      + 0.0060
+      + 0.0090
+    </p>
+
+    <p>
+      <strong>= 0.0363</strong>
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV24II_Q3B",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "Risk Management",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p><strong>(b) Either</strong></p>
+
+    <p>Explain briefly various types of interest rate risk faced by companies/banks.</p>
+  `,
+  solution_html: `
+    
+
+    <p><strong>Various types of Interest rate risk faced by companies/banks are as follows:</strong></p>
+
+    <ol>
+      <li>
+        <p><strong>Gap Exposure:</strong> A gap or mismatch risk arises from holding assets and liabilities and off-balance sheet items with different principal amounts, maturity dates or re-pricing dates, thereby creating exposure to unexpected changes in the level of market interest rates. This exposure is more important in relation to banking business.</p>
+      </li>
+
+      <li>
+        <p><strong>Basis Risk:</strong> Market interest rates of various instruments seldom change by the same degree during a given period of time. The risk that the interest rate of different assets, liabilities and off-balance sheet items may change in different magnitude is termed as basis risk. For example, while assets may be benchmarked to Fixed Rate of Interest, liabilities may be benchmarked to floating rate of interest. The degree of basis risk is fairly high in respect of banks that create composite assets out of composite liabilities.</p>
+      </li>
+
+      <li>
+        <p><strong>Embedded Option Risk:</strong> Significant changes in market interest rates create another source of risk to banks’ profitability by encouraging prepayment of cash credit/demand loans/term loans and exercise of call/put options on bonds/debentures and/or premature withdrawal of term deposits before their stated maturities.</p>
+      </li>
+
+      <li>
+        <p><strong>Yield Curve Risk:</strong> The movements in yield curve are rather frequent when the economy moves through business cycles. Thus, banks should evaluate the movement in yield curves and its impact on the portfolio values and income.</p>
+      </li>
+
+      <li>
+        <p><strong>Price Risk:</strong> Price risk occurs when assets are sold before their stated maturities. In the financial market, bond prices and yields are inversely related. The price risk is closely associated with the trading book, which is created for making profit out of short-term movements in interest rates.</p>
+
+        <p>Banks which have an active trading book should, therefore, formulate policies to limit the portfolio size, holding period, duration, defeasance period, stop loss limits, marking to market, etc.</p>
+      </li>
+
+      <li>
+        <p><strong>Reinvestment Risk:</strong> Uncertainty with regard to interest rate at which the future cash flows could be reinvested is called reinvestment risk. Any mismatches in cash flows would expose the banks to variations in NII as the market interest rates move in different directions.</p>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPNOV24II_Q3B_OR",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "FinTech",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p><strong>(b) Or</strong></p>
+
+    <p>Explain the various areas where Blockchain can be applied.</p>
+  `,
+  solution_html: `
+    
+
+    <p><strong>Some of the areas where the Blockchain can be applied are as follows:</strong></p>
+
+    <ol type="i">
+      <li>
+        <p><strong>Financial Services:</strong> Blockchain can be used to provide an automated trade lifecycle in terms of the transaction log of any transaction of asset or property - whether physical or digital such as laptops, smartphones, automobiles, real estate, etc. from one person to another.</p>
+      </li>
+
+      <li>
+        <p><strong>Healthcare:</strong> Blockchain provides secure sharing of data in healthcare industry by increasing the privacy, security, and interoperability of the data by eliminating the interference of third party and avoiding the overhead costs.</p>
+      </li>
+
+      <li>
+        <p><strong>Government:</strong> At the government front, there are instances where the technical decentralization is necessary but politically should be governed by governments like land registration, vehicle registration and management, e-voting etc. Blockchain improves the transparency and provides a better way to monitor and audit the transactions in these systems.</p>
+      </li>
+
+      <li>
+        <p><strong>Travel Industry:</strong> Blockchain can be applied in money transactions and in storing important documents like passports/other identification cards, reservations and managing travel insurance, loyalty, and rewards thus, changing the working of travel and hospitality industry.</p>
+      </li>
+
+      <li>
+        <p><strong>Economic Forecasts:</strong> Blockchain makes possible the financial and economic forecasts based on decentralized prediction markets, decentralized voting, and stock trading, thus enabling the organizations to plan and shape their businesses.</p>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPNOV24II_Q4A",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "Mutual Funds",
+  placement: 4,
+  marks: 10,
+  question_html: `
+    <p> On 1st April, an open ended scheme of mutual fund had 300 lakh units outstanding with Net Assets Value (NAV) of ₹ 18.75. At the end of April, it issued 6 lakh units at opening NAV plus 2% load, adjusted for dividend equalization. At the end of May, 3 lakh units were repurchased at opening NAV less 2% exit load adjusted for dividend equalization. At the end of June, 70% of its available income was distributed.</p>
+
+    <p>In respect of April-June quarter, the following additional information are available:</p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>₹ in lakh</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Portfolio value appreciation</td>
+          <td>425.47</td>
+        </tr>
+        <tr>
+          <td>Income of April</td>
+          <td>22.950</td>
+        </tr>
+        <tr>
+          <td>Income for May</td>
+          <td>34.425</td>
+        </tr>
+        <tr>
+          <td>Income for June</td>
+          <td>45.450</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>You are required to calculate:</p>
+
+    <ol type="i">
+      <li>Income available for distribution;</li>
+      <li>Issue price at the end of April;</li>
+      <li>Repurchase price at the end of May; and</li>
+      <li>Net Asset Value (NAV) as on 30th June.</li>
+    </ol>
+  `,
+  solution_html: `
+    
+
+    <p><strong>(i) Calculation of Income available for Distribution</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Units (Lakh)</th>
+          <th>Per Unit (₹)</th>
+          <th>Total (₹ in lakh)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Income from April</td>
+          <td>300</td>
+          <td>0.0765</td>
+          <td>22.9500</td>
+        </tr>
+        <tr>
+          <td>Add: Dividend equalization collected on issue</td>
+          <td>6</td>
+          <td>0.0765</td>
+          <td>0.4590</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>306</td>
+          <td>0.0765</td>
+          <td>23.4090</td>
+        </tr>
+        <tr>
+          <td>Add: Income from May</td>
+          <td>306</td>
+          <td>0.1125</td>
+          <td>34.4250</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>306</td>
+          <td>0.1890</td>
+          <td>57.8340</td>
+        </tr>
+        <tr>
+          <td>Less: Dividend equalization paid on repurchase</td>
+          <td>3</td>
+          <td>0.1890</td>
+          <td>(0.5670)</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>303</td>
+          <td>0.1890</td>
+          <td>57.2670</td>
+        </tr>
+        <tr>
+          <td>Add: Income from June</td>
+          <td>303</td>
+          <td>0.1500</td>
+          <td>45.4500</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>303</td>
+          <td>0.3390</td>
+          <td>102.7170</td>
+        </tr>
+        <tr>
+          <td>Less: Dividend Paid</td>
+          <td>303</td>
+          <td>0.2373</td>
+          <td>(71.9019)</td>
+        </tr>
+        <tr>
+          <td><strong>Income available for distribution</strong></td>
+          <td>303</td>
+          <td>0.1017</td>
+          <td><strong>30.8151</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(ii) Calculation of Issue Price at the end of April</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <tbody>
+        <tr>
+          <td>Opening NAV</td>
+          <td>18.750</td>
+        </tr>
+        <tr>
+          <td>Add: Entry Load (2% of ₹ 18.750)</td>
+          <td>0.375</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>19.125</td>
+        </tr>
+        <tr>
+          <td>Add: Dividend Equalization paid on Issue Price</td>
+          <td>0.0765</td>
+        </tr>
+        <tr>
+          <td><strong>Issue Price</strong></td>
+          <td><strong>19.2015</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(iii) Calculation of Repurchase Price at the end of May</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <tbody>
+        <tr>
+          <td>Opening NAV</td>
+          <td>18.750</td>
+        </tr>
+        <tr>
+          <td>Less: Exit Load (2% of ₹ 18.750)</td>
+          <td>(0.375)</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>18.375</td>
+        </tr>
+        <tr>
+          <td>Add: Dividend Equalization paid on Issue Price</td>
+          <td>0.1890</td>
+        </tr>
+        <tr>
+          <td><strong>Repurchase Price</strong></td>
+          <td><strong>18.5640</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(iv) Closing NAV</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>₹ (Lakh)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Opening Net Asset Value (₹ 18.75 × 300)</td>
+          <td>5625.0000</td>
+        </tr>
+        <tr>
+          <td>Portfolio Value Appreciation</td>
+          <td>425.4700</td>
+        </tr>
+        <tr>
+          <td>Issue of Fresh Units (6 × 19.2015)</td>
+          <td>115.2090</td>
+        </tr>
+        <tr>
+          <td>Income Received (22.950 + 34.425 + 45.450)</td>
+          <td>102.8250</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>6268.5040</td>
+        </tr>
+        <tr>
+          <td>Less: Units repurchased (3 × 18.564)</td>
+          <td>(55.6920)</td>
+        </tr>
+        <tr>
+          <td>Income Distributed</td>
+          <td>(71.9019)</td>
+        </tr>
+        <tr>
+          <td><strong>Closing Net Asset Value</strong></td>
+          <td><strong>6140.9101</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Closing Units = (300 + 6 − 3) lakh = <strong>303 lakh</strong>
+    </p>
+
+    <p>
+      <strong>Closing NAV as on 30th June</strong><br>
+      = ₹ 6140.9101 lakh / 303 lakh<br>
+      = <strong>₹ 20.2670</strong>
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV24II_Q4B",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "Foreign Exchange Risk Management",
+  placement: 4,
+  marks: 4,
+  question_html: `
+    <p> Followings are the spot exchange rates quoted at three different forex markets:</p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Currency Pair</th>
+          <th>Spot Exchange Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>USD/INR</td>
+          <td>48.30 in Mumbai</td>
+        </tr>
+        <tr>
+          <td>GBP/INR</td>
+          <td>77.52 in London</td>
+        </tr>
+        <tr>
+          <td>GBP/USD</td>
+          <td>1.6231 in New York</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The arbitrageur has <strong>USD 1,00,00,000</strong>. Assuming that there are no transaction costs, explain whether there is any arbitrage gain possible from the quoted spot exchange rates.</p>
+  `,
+  solution_html: `
+    
+
+    <p>The arbitrageur can proceed as stated below to realize arbitrage gains.</p>
+
+    <p><strong>(i) Buy ₹ from USD 10,000,000 at Mumbai</strong></p>
+
+    <p>
+      ₹ = 48.30 × 10,000,000
+    </p>
+
+    <p>
+      <strong>₹ 483,000,000</strong>
+    </p>
+
+    <p><strong>(ii) Convert these ₹ to GBP at London</strong></p>
+
+    <p>
+      GBP = ₹ 483,000,000 / ₹ 77.52
+    </p>
+
+    <p>
+      <strong>GBP 6,230,650.155</strong>
+    </p>
+
+    <p><strong>(iii) Convert GBP to USD at New York</strong></p>
+
+    <p>
+      USD = GBP 6,230,650.155 × 1.6231
+    </p>
+
+    <p>
+      <strong>USD 10,112,968.26</strong>
+    </p>
+
+    <p>
+      <strong>Net Arbitrage Gain</strong>
+    </p>
+
+    <p>
+      = USD 10,112,968.26 − USD 10,000,000
+    </p>
+
+    <p>
+      = <strong>USD 112,968.26</strong>
+    </p>
+
+    <p><strong>Hence, there is an arbitrage gain of USD 112,968.26.</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV24II_Q5A",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "Corporate Restructuring",
+  placement: 5,
+  marks: 10,
+  question_html: `
+    <p>ICL is proposing to take over SVL with an objective to diversify. While ICL growth rate is 18%, the SVL growth rate is 15%. Both the companies pay dividend regularly. The summarized Profit &amp; Loss Account of both the companies are as follows:</p>
+
+    <p><strong>₹ in Crores</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>ICL</th>
+          <th>SVL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Net Sales</td>
+          <td>9090</td>
+          <td>3000</td>
+        </tr>
+        <tr>
+          <td>PBIT</td>
+          <td>5960</td>
+          <td>1440</td>
+        </tr>
+        <tr>
+          <td>Interest</td>
+          <td>1500</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Provision for Tax</td>
+          <td>2880</td>
+          <td>890</td>
+        </tr>
+        <tr>
+          <td>PAT</td>
+          <td>1580</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Dividends</td>
+          <td>470</td>
+          <td>304.35</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>ICL</th>
+          <th>SVL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Land &amp; Building (Net)</td>
+          <td>1440</td>
+          <td>380</td>
+        </tr>
+        <tr>
+          <td>Plant &amp; Machinery (Net)</td>
+          <td>1800</td>
+          <td>700</td>
+        </tr>
+        <tr>
+          <td>Furniture &amp; Fixtures (Net)</td>
+          <td>60</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td><strong>Fixed Assets</strong></td>
+          <td>3300</td>
+          <td>1100</td>
+        </tr>
+        <tr>
+          <td>Current Assets</td>
+          <td>1550</td>
+          <td>470</td>
+        </tr>
+        <tr>
+          <td><strong>Total Assets</strong></td>
+          <td>4850</td>
+          <td>1570</td>
+        </tr>
+        <tr>
+          <td>Creditors</td>
+          <td>460</td>
+          <td>260</td>
+        </tr>
+        <tr>
+          <td>Overdrafts</td>
+          <td>70</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Provision for Tax</td>
+          <td>290</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Provision for Dividends</td>
+          <td>120</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td><strong>Current Liabilities</strong></td>
+          <td>940</td>
+          <td>480</td>
+        </tr>
+        <tr>
+          <td><strong>Net Assets</strong></td>
+          <td>3910</td>
+          <td>1090</td>
+        </tr>
+        <tr>
+          <td>Paid up Share Capital (₹ 10 per share)</td>
+          <td>500</td>
+          <td>250</td>
+        </tr>
+        <tr>
+          <td>Reserves and Surplus</td>
+          <td>2100</td>
+          <td>1310</td>
+        </tr>
+        <tr>
+          <td>Borrowing</td>
+          <td>1310</td>
+          <td>210</td>
+        </tr>
+        <tr>
+          <td><strong>Capital Employed</strong></td>
+          <td>3910</td>
+          <td>1780</td>
+        </tr>
+        <tr>
+          <td>Market Price per Share (₹)</td>
+          <td>175</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>Cost of Equity</td>
+          <td>25%</td>
+          <td>20%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>ICL’s Land &amp; Buildings are stated at current prices. SVL’s Land &amp; Buildings are revalued three years ago. There has been an increase of 7.65% per year in the value of Land &amp; Buildings.</p>
+
+    <p>SVL is expected to grow @ 18% each year, after merger.</p>
+
+    <p>ICL is interested to do justice to the shareholders of both the Companies. For the swap ratio weights are assigned to different parameters by the Board of Directors as follows:</p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <tbody>
+        <tr>
+          <td>Net Worth Per Share*</td>
+          <td>25%</td>
+        </tr>
+        <tr>
+          <td>EPS (Earning per share)</td>
+          <td>30%</td>
+        </tr>
+        <tr>
+          <td>Share price as per Dividend Growth Model</td>
+          <td>20%</td>
+        </tr>
+        <tr>
+          <td>Market Price per share</td>
+          <td>25%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>* After required adjustment.</p>
+
+    <p>You are required to suggest the swap ratio based on above weights and total number of shares.</p>
+
+    <p><strong>Note:</strong> Round off calculations upto two decimal points.</p>
+  `,
+  solution_html: `
+    <p><strong>Working Notes:</strong></p>
+
+    <p><strong>(i) Computation of Net Worth Per Share of SVL</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <tbody>
+        <tr>
+          <td>Total Assets (Fixed Assets + Current Assets)</td>
+          <td>₹ 2260 Crores</td>
+        </tr>
+        <tr>
+          <td>Less: Liabilities (Current Liabilities + Borrowings)</td>
+          <td>(₹ 690 Crores)</td>
+        </tr>
+        <tr>
+          <td>Net Assets Value</td>
+          <td>₹ 1570 Crores</td>
+        </tr>
+        <tr>
+          <td>Current Value of Land after growing for three years @ 7.65% p.a.</td>
+          <td>₹ 474.05 Crores*</td>
+        </tr>
+        <tr>
+          <td>Less: Book Value</td>
+          <td>(₹ 380.00 Crores)</td>
+        </tr>
+        <tr>
+          <td>Increase in Value of Land</td>
+          <td>₹ 94.05 Crores</td>
+        </tr>
+        <tr>
+          <td>Adjusted NAV</td>
+          <td>₹ 1664.05 Crores</td>
+        </tr>
+        <tr>
+          <td>No. of Shares</td>
+          <td>25 Crores</td>
+        </tr>
+        <tr>
+          <td><strong>Net Worth Per Share</strong></td>
+          <td><strong>₹ 66.56</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><em>* Alternatively, this value can also be computed as ₹ 475 Crores.</em></p>
+
+    <p><strong>(ii) Computation of Net Worth Per Share of ICL</strong></p>
+
+    <p>
+      Share Capital + Reserves &amp; Surplus = ₹ 2600 Crores<br>
+      Total Number of Shares = 50 Crores
+    </p>
+
+    <p>
+      <strong>Net Worth Per Share = ₹ 2600 Crores / 50 Crores = ₹ 52.00</strong>
+    </p>
+
+    <p><strong>(iii) Earnings Per Share (EPS)</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>ICL</th>
+          <th>SVL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PAT</td>
+          <td>₹ 1580 Crores</td>
+          <td>₹ 500 Crores</td>
+        </tr>
+        <tr>
+          <td>No. of Shares</td>
+          <td>50 Crores</td>
+          <td>25 Crores</td>
+        </tr>
+        <tr>
+          <td><strong>EPS</strong></td>
+          <td><strong>₹ 31.60</strong></td>
+          <td><strong>₹ 20.00</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(iv) Share Price as per Dividend Growth Model</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>ICL</th>
+          <th>SVL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Total Dividend</td>
+          <td>₹ 470 Crores</td>
+          <td>₹ 304.35 Crores</td>
+        </tr>
+        <tr>
+          <td>No. of Shares</td>
+          <td>50 Crores</td>
+          <td>25 Crores</td>
+        </tr>
+        <tr>
+          <td>Dividend Per Share (D₀)</td>
+          <td>₹ 9.40</td>
+          <td>₹ 12.17</td>
+        </tr>
+        <tr>
+          <td>Expected Dividend (D₁)</td>
+          <td>₹ 9.40 × (1 + 0.18) = ₹ 11.09</td>
+          <td>₹ 12.17 × (1 + 0.15) = ₹ 14.00</td>
+        </tr>
+        <tr>
+          <td>Value per Share</td>
+          <td>11.09 / (0.25 − 0.18) = <strong>₹ 158.43</strong></td>
+          <td>14.00 / (0.20 − 0.15) = <strong>₹ 280.00</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Calculation of Swap Ratio</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Basis</th>
+          <th>Swap Ratio</th>
+          <th>Weighted Ratio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Net Worth Per Share</td>
+          <td>1 : 1.28</td>
+          <td>0.32</td>
+        </tr>
+        <tr>
+          <td>EPS</td>
+          <td>1 : 0.63</td>
+          <td>0.19</td>
+        </tr>
+        <tr>
+          <td>Share Price as per Dividend Growth Model</td>
+          <td>1 : 1.77</td>
+          <td>0.35</td>
+        </tr>
+        <tr>
+          <td>Market Price</td>
+          <td>1 : 0.56</td>
+          <td>0.14</td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Total</strong></td>
+          <td><strong>1.00</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Swap ratio is for every one share of SVL, to issue 1 share of ICL.</strong></p>
+
+    <p><strong>Hence, total number of shares to be issued = 25 crores.</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV24II_Q5B",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "International Finance",
+  placement: 5,
+  marks: 4,
+  question_html: `
+    <p>Explain the characteristics of Global Depository Receipts (GDRs).</p>
+  `,
+  solution_html: `
+    <p>The characteristics of Global Depository Receipts (GDRs) are as follows:</p>
+
+    <ol type="i">
+      <li>
+        Holders of GDRs participate in the economic benefits of being ordinary shareholders, though they do not have voting rights.
+      </li>
+
+      <li>
+        GDRs are settled through <strong>CEDEL</strong> &amp; <strong>Euro-clear</strong> international book entry systems.
+      </li>
+
+      <li>
+        GDRs are listed on the <strong>Luxemburg Stock Exchange</strong>.
+      </li>
+
+      <li>
+        Trading takes place between professional market makers on an <strong>OTC (Over the Counter)</strong> basis.
+      </li>
+
+      <li>
+        The instruments are freely traded.
+      </li>
+
+      <li>
+        They are marketed globally without being confined to borders of any market or country, as they can be traded in more than one currency.
+      </li>
+
+      <li>
+        Investors earn fixed income by way of dividends which are paid in the issuer's currency, converted into dollars by the depository and paid to investors. Hence, the exchange risk is borne by the investor.
+      </li>
+
+      <li>
+        As far as the case of liquidation of GDRs is concerned, an investor may get the GDR cancelled any time after a cooling period of 45 days. A non-resident holder of GDRs may ask the overseas bank (depository) to redeem (cancel) the GDRs. In that case, the overseas depository bank shall request the domestic custodian bank to cancel the GDR and to get the corresponding underlying shares released in favour of the non-resident investor. The price of the ordinary shares of the issuing company prevailing on the Bombay Stock Exchange or the National Stock Exchange on the date of advice of redemption shall be taken as the cost of acquisition of the underlying ordinary share.
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPNOV24II_Q6A",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "Derivatives",
+  placement: 6,
+  marks: 8,
+  question_html: `
+    <p>Sensex futures are traded at a multiple of 50. Consider the following quotations of Sensex futures in the 10 trading days during February, 2009:</p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>High</th>
+          <th>Low</th>
+          <th>Closing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>4-2-09</td>
+          <td>3306.4</td>
+          <td>3290.00</td>
+          <td>3296.50</td>
+        </tr>
+        <tr>
+          <td>5-2-09</td>
+          <td>3298.00</td>
+          <td>3262.50</td>
+          <td>3294.40</td>
+        </tr>
+        <tr>
+          <td>6-2-09</td>
+          <td>3256.20</td>
+          <td>3227.00</td>
+          <td>3230.40</td>
+        </tr>
+        <tr>
+          <td>7-2-09</td>
+          <td>3233.00</td>
+          <td>3201.50</td>
+          <td>3212.30</td>
+        </tr>
+        <tr>
+          <td>10-2-09</td>
+          <td>3281.50</td>
+          <td>3256.00</td>
+          <td>3267.50</td>
+        </tr>
+        <tr>
+          <td>11-2-09</td>
+          <td>3283.50</td>
+          <td>3260.00</td>
+          <td>3263.80</td>
+        </tr>
+        <tr>
+          <td>12-2-09</td>
+          <td>3315.00</td>
+          <td>3286.30</td>
+          <td>3292.00</td>
+        </tr>
+        <tr>
+          <td>14-2-09</td>
+          <td>3315.00</td>
+          <td>3257.10</td>
+          <td>3309.30</td>
+        </tr>
+        <tr>
+          <td>17-2-09</td>
+          <td>3278.00</td>
+          <td>3249.50</td>
+          <td>3257.80</td>
+        </tr>
+        <tr>
+          <td>18-2-09</td>
+          <td>3118.00</td>
+          <td>3091.40</td>
+          <td>3102.60</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Abshishek bought one Sensex Futures contract on February, 04. The average daily absolute change in the value of contract is ₹ 10,000 and standard deviation of these changes is ₹ 2,000. The maintenance margin is 75% of initial margin.</p>
+
+    <p>You are required to determine the daily balances in the margin account and payment on margin calls, if any.</p>
+  `,
+  solution_html: `
+    <p><strong>Initial Margin</strong></p>
+
+    <p>
+      Initial Margin = μ + 3σ
+    </p>
+
+    <p>Where,</p>
+
+    <p>
+      μ = Daily Absolute Change
+    </p>
+
+    <p>
+      σ = Standard Deviation
+    </p>
+
+    <p>
+      Initial Margin = ₹ 10,000 + ₹ 6,000 = <strong>₹ 16,000</strong>
+    </p>
+
+    <p>
+      Maintenance Margin = ₹ 16,000 × 0.75 = <strong>₹ 12,000</strong>
+    </p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Changes in Future Values (₹)</th>
+          <th>Margin A/c (₹)</th>
+          <th>Call Money (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>4/2/09</td>
+          <td>50 × (3294.40 − 3296.50) = -105</td>
+          <td>16,000</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>5/2/09</td>
+          <td>50 × (3230.40 − 3294.40) = -3,200</td>
+          <td>15,895</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>6/2/09</td>
+          <td>50 × (3212.30 − 3230.40) = -905</td>
+          <td>12,695</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>7/2/09</td>
+          <td>50 × (3267.50 − 3212.30) = 2,760</td>
+          <td>16,000</td>
+          <td>4,210</td>
+        </tr>
+        <tr>
+          <td>10/2/09</td>
+          <td>50 × (3263.80 − 3267.50) = -185</td>
+          <td>18,760</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>11/2/09</td>
+          <td>50 × (3292.00 − 3263.80) = 1,410</td>
+          <td>18,575</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>12/2/09</td>
+          <td>50 × (3309.30 − 3292.00) = 865</td>
+          <td>19,985</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>14/2/09</td>
+          <td>50 × (3257.80 − 3309.30) = -2,575</td>
+          <td>20,850</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>17/2/09</td>
+          <td>50 × (3102.60 − 3257.80) = -7,760</td>
+          <td>18,275</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>18/2/09</td>
+          <td>-</td>
+          <td>16,000</td>
+          <td>5,485</td>
+        </tr>
+      </tbody>
+    </table>
+  `
+},
+{
+  question_id: "AFM_MTPNOV24II_Q6B",
+  source: "ICAI Mock Test Paper - Series II, October 2024",
+  chapter_name: "Security Analysis",
+  placement: 6,
+  marks: 6,
+  question_html: `
+    <p>“Technical Analysis has several supporters as well several critics.” Explain this statement.</p>
+  `,
+  solution_html: `
+    <p>To some extent this statement is correct. The advocates of technical analysis offer the following interrelated arguments in their favour:</p>
+
+    <ol type="i">
+      <li>
+        Under the influence of crowd psychology, trends persist for some time. Tools of technical analysis help in identifying these trends early and assist in investment decision making.
+      </li>
+
+      <li>
+        Shift in demand and supply are gradual rather than instantaneous. Technical analysis helps in detecting this shift rather early and hence provides clues to future price movements.
+      </li>
+
+      <li>
+        Fundamental information about a company is observed and assimilated by the market over a period of time. Hence, price movement tends to continue more or less in the same direction till the information is fully assimilated in the stock price.
+      </li>
+    </ol>
+
+    <p>Detractors of technical analysis believe that it is a useless exercise. Their arguments are as follows:</p>
+
+    <ol type="i">
+      <li>
+        Most technical analysts are not able to offer a convincing explanation for the tools employed by them.
+      </li>
+
+      <li>
+        Empirical evidence in support of the Random Walk Hypothesis casts its shadow over the usefulness of technical analysis.
+      </li>
+
+      <li>
+        By the time an uptrend or downtrend may have been signalled by technical analysis, it may already have taken place.
+      </li>
+
+      <li>
+        Ultimately, technical analysis must be a self-defeating proposition. With more and more people employing it, the value of such analysis tends to decline.
+      </li>
+    </ol>
+  `
+},
 
 ];
