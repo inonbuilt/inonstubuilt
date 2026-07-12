@@ -6,32 +6,136 @@
     font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-/* Page */
+/* Page Configuration */
 body {
     background: linear-gradient(180deg, #f8fafc, #eef2f7);
     color: #0f172a;
     min-height: 100vh;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
-/* Title */
-h1 {
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: 600;
-    margin-bottom: 40px;
-}
-
-/* Container */
-.notes-container {
+/* Base Wrapper Elements */
+.notes-wrapper {
     max-width: 900px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    align-items: center;
 }
 
-/* Card */
+/* Typography Enhancements */
+.main-heading {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.sub-heading {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #475569;
+    max-width: 750px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Status Timeline Banner */
+.availability-banner {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px 24px;
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+    border: 1px solid #e2e8f0;
+}
+
+.status-line p {
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.5;
+}
+
+.status-icon {
+    margin-right: 6px;
+}
+
+.banner-divider {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 15px 0;
+}
+
+.waitlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.waitlist-form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 360px;
+}
+
+.waitlist-input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+    font-size: 0.9rem;
+    outline: none;
+    color: #0f172a;
+    transition: border-color 0.2s;
+}
+
+.waitlist-input:focus {
+    border-color: #0f172a;
+}
+
+.waitlist-submit {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    background: #0f172a;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.waitlist-submit:hover {
+    background: #1e293b;
+}
+
+/* Container */
+.notes-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+/* Card Rules */
 .note-card {
     background: #ffffff;
     border-radius: 14px;
@@ -39,16 +143,17 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
     transition: all 0.25s ease;
+    border: 1px solid rgba(226, 232, 240, 0.8);
 }
 
 .note-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+    transform: translateY(-3px);
+    box-shadow: 0 16px 35px rgba(15, 23, 42, 0.09);
 }
 
-/* Left Section */
+/* Left Section Positioning Rules */
 .note-left {
     display: flex;
     align-items: center;
@@ -56,8 +161,8 @@ h1 {
 }
 
 .note-no {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: #0f172a;
     color: #ffffff;
@@ -66,40 +171,27 @@ h1 {
     justify-content: center;
     font-weight: 600;
     font-size: 0.95rem;
+    flex-shrink: 0;
 }
 
 .note-title {
     font-size: 1.05rem;
     font-weight: 500;
     line-height: 1.4;
+    color: #0f172a;
 }
 
-/* Status */
+/* Status Elements */
 .note-status {
     font-size: 0.85rem;
-    color: #64748b;
+    color: #475569;
     background: #f1f5f9;
-    padding: 6px 14px;
+    padding: 8px 16px;
     border-radius: 20px;
     white-space: nowrap;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    .note-card {
-        padding: 16px;
-    }
-
-    .note-title {
-        font-size: 0.95rem;
-    }
-}
-
-/* Button Base */
+/* Button Configuration Blocks */
 .note-btn {
     border: none;
     outline: none;
@@ -116,22 +208,105 @@ h1 {
     white-space: nowrap;
 }
 
-/* Disabled (Coming Soon) */
-.note-btn.disabled {
-    background: #f1f5f9;
-    color: #94a3b8;
-    cursor: not-allowed;
-}
-
-/* Active (Open Notes) */
 .note-btn.active {
     background: #0f172a;
     color: #ffffff;
 }
 
-/* Hover only for active */
 .note-btn.active:hover {
     background: #020617;
     transform: translateY(-1px);
     box-shadow: 0 6px 16px rgba(2, 6, 23, 0.25);
+}
+
+/* SEO Feature Section Blocks */
+.seo-section {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.feature-card {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.feature-card h3 {
+    font-size: 1.15rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* SEO Footer Description Block */
+.seo-footer {
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.seo-footer p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.7;
+}
+
+/* Global Transition Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Scaling Constraints */
+@media (max-width: 768px) {
+    body {
+        padding: 40px 15px;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .sub-heading {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+
+    .waitlist-form {
+        max-width: 100%;
+    }
+
+    .note-card {
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .note-status {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .note-btn {
+        width: 100%;
+    }
 }
