@@ -9,58 +9,66 @@
 }
 
 body {
-    min-height: 100vh;
-    /* Allow scrolling vertically, hide horizontal scroll */
+    background: linear-gradient(135deg, #f6c1b5, #f7d8bd, #f9e6cf);
     overflow-x: hidden;
     overflow-y: auto; 
-    background: linear-gradient(
-        135deg,
-        #f6c1b5,
-        #f7d8bd,
-        #f9e6cf
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
 }
 
 /* ============================= */
 /* PARTICLE CANVAS (Background) */
 /* ============================= */
 #particles {
-    position: fixed; /* Stays in place while scrolling */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
-    pointer-events: none; /* Allows clicking through to cards */
+    pointer-events: none; 
 }
 
 /* ============================= */
-/* MAIN CONTAINER */
+/* MAIN STRUCTURAL CONTAINERS */
 /* ============================= */
 .main-container {
     position: relative;
     z-index: 2;
-    text-align: center;
     width: 100%;
-    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hero viewport block */
+.hero-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Scroll content block */
+.content-section {
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px 20px 80px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /* ============================= */
-/* 3D LOGO SECTION */
+/* 3D LOGO CONFIGURATION */
 /* ============================= */
 .logo-container {
     width: 100%;
-    max-width: 450px;
-    height: 300px;
-    margin: 0 auto 20px;
+    max-width: 550px; 
+    height: 350px;    
+    margin: 0 auto 10px;
 }
 
 model-viewer {
@@ -75,44 +83,59 @@ model-viewer {
 .main-heading {
     font-size: 42px;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #3a2e2a;
     margin-bottom: 10px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .sub-heading {
     font-size: 16px;
     color: #5a4a44;
-    margin-bottom: 50px;
-    max-width: 600px;
-    line-height: 1.5;
+    margin-bottom: 35px;
+    max-width: 700px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #3a2e2a;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 /* ============================= */
-/* CARD LAYOUT */
+/* REUSABLE GLASSMORPHIC STRUCT */
+/* ============================= */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(15px); 
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* ============================= */
+/* NAVIGATION CONTAINER & LINK CARDS */
 /* ============================= */
 .card-container {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
-    flex-wrap: wrap; /* Essential for mobile stacking */
+    flex-wrap: wrap; 
     width: 100%;
 }
 
-/* ============================= */
-/* GLASS CARDS */
-/* ============================= */
 .glass-card {
-    width: 180px;
-    height: 110px;
+    width: 160px;
+    height: 100px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.4);
-    
-    /* These two lines create the glass effect */
     -webkit-backdrop-filter: blur(15px); 
     backdrop-filter: blur(15px);
-
     border: 1px solid rgba(255, 255, 255, 0.6);
     display: flex;
     justify-content: center;
@@ -125,55 +148,182 @@ model-viewer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Hover Effect */
 .glass-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     background: rgba(255, 255, 255, 0.6);
     border-color: rgba(255, 255, 255, 1);
     color: #000;
 }
 
 /* ============================= */
-/* ANIMATIONS */
+/* STATUS BANNER & WAITLIST ELEMENTS */
 /* ============================= */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.availability-banner {
+    padding: 20px 25px;
+    margin-bottom: 40px;
+    text-align: left;
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+}
+
+.availability-banner p {
+    font-size: 16px;
+    color: #3a2e2a;
+}
+
+.status-icon {
+    margin-right: 8px;
+}
+
+.banner-divider {
+    border: 0;
+    height: 1px;
+    background: rgba(58, 46, 42, 0.1);
+    margin: 15px 0;
+}
+
+.waitlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.waitlist-form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.waitlist-input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(58, 46, 42, 0.2);
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    outline: none;
+    color: #3a2e2a;
+}
+
+.waitlist-input::placeholder {
+    color: #8a7a74;
+}
+
+.waitlist-submit {
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    background: #3a2e2a;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.waitlist-submit:hover {
+    background: #5a4a44;
 }
 
 /* ============================= */
-/* MOBILE RESPONSIVE (Phones) */
+/* FEATURES STORAGE INFRASTRUCTURE */
+/* ============================= */
+.seo-section {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.feature-card {
+    padding: 25px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    color: #3a2e2a;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    font-size: 14.5px;
+    color: #5a4a44;
+    line-height: 1.6;
+}
+
+/* ============================= */
+/* CRAWLER DOCK / FOOTER FOOTPRINT */
+/* ============================= */
+.seo-footer {
+    padding: 30px;
+    text-align: left;
+    width: 100%;
+}
+
+.seo-footer p {
+    font-size: 15px;
+    color: #5a4a44;
+    line-height: 1.7;
+}
+
+/* ============================= */
+/* GLOBAL ANIMATIONS */
+/* ============================= */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================= */
+/* TARGETED DEVICE SCREEN MEDIA QUERIES */
 /* ============================= */
 @media (max-width: 768px) {
     .logo-container {
-        height: 200px; /* Smaller logo on phones */
+        max-width: 100%;
+        height: 250px; 
     }
 
     .main-heading {
         font-size: 28px;
-        letter-spacing: 1px;
     }
 
     .sub-heading {
         font-size: 14px;
-        margin-bottom: 30px;
-        padding: 0 10px;
+        margin-bottom: 25px;
     }
 
-    .card-container {
-        gap: 15px;
+    .section-title {
+        font-size: 22px;
     }
 
     .glass-card {
-        width: 145px; /* Fits two-per-row on most phones */
-        height: 95px;
+        width: 46%; 
+        height: 90px;
         font-size: 16px;
+    }
+
+    .waitlist-form {
+        max-width: 100%;
+    }
+
+    .content-section {
+        padding: 20px 15px 50px 15px;
     }
 }
