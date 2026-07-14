@@ -8,7 +8,6 @@ const mcqData = [
       "Electronic Commerce Operator",
     ],
     caseText: `
-    <p><strong>Case Scenario-I</strong></p>
     <p>&lsquo;Galgotia Travels Ltd.&rsquo; (GTL) is established on 3rd April in the city of Bangalore (Karnataka) and the primary objective of the company is to provide air-conditioned contract-based passenger transportation services at affordable fares. The company obtains the voluntary registration under GST from 1st May. On 1st July, the company purchased motor vehicles of various seating capacities as follows:</p>
     <table border="1" cellpadding="5" style="border-collapse: collapse; width: 100%; text-align: center;">
       <thead>
@@ -244,7 +243,6 @@ const mcqData = [
       "Payment of Tax",
     ],
     caseText: `
-    <p><strong>Case Scenario-II</strong></p>
     <p>Dhairya Ltd., a supplier registered under GST in Gujarat, is exclusively engaged in manufacturing textile products. It has opted to pay tax under composition scheme under sub-sections (1) and (2) of section 10 of the CGST Act, 2017.</p>
     <p>The following information is available in relation to Dhairya Ltd. for the current financial year:</p>
     <ol>
@@ -312,7 +310,6 @@ const mcqData = [
       "Supply Without Consideration",
     ],
     caseText: `
-    <p><strong>Case Scenario-III</strong></p>
     <p>Mr. Bindusaar, a practicing Chartered Accountant, based in Hyderabad, is registered under GST in the State of Telangana.</p>
     <p>He undertook following transactions/activities during the current financial year:</p>
     <p><strong>(1)</strong> He provided consultancy services to Edward Tours, a UK based entity engaged in the business of e-commerce in the field of tour and travels, having its office at UK. Edward Tours paid a sum of Euro 95,000 to Mr. Bindusaar billed @ 75 per Euro. Mr. Bindusaar made travel to UK several times during the year and incurred Euro 5,000 @ ₹ 75 as incidental expenses (including VAT paid ₹ 10,000) which was ultimately charged from Edward Tours. Edward Tours also paid a sum of EURO 5,000 @ ₹ 75 to Mr. Bindusaar as interest on account of delay in payment of agreed consideration.</p>
