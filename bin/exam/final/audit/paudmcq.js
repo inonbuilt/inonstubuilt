@@ -911,6 +911,204 @@ const mcqData = [
       "answer": 0
     }
   ]
-}
+},
+{
+  "case_id": "AUD_MTPMAR25_I_CS1",
+  "case_chapter": [
+    "Audit Sampling (SA 530)",
+    "Internal Controls",
+    "Audit of Items of Financial Statements"
+  ],
+  "caseText": "\n    <p><strong>Simran Edible Oil Limited</strong> is a public company which has the business of manufacturing cooking oil. The company is in this particular business since last 25 years. The financial results of the company for the previous year FY 2022-23 are as under:</p>\n\n    <table border=\"1\" cellspacing=\"0\" cellpadding=\"5\" style=\"border-collapse: collapse; width: 100%;\">\n      <thead>\n        <tr>\n          <th style=\"text-align: center;\">Sr. No.</th>\n          <th style=\"text-align: left;\">Particulars</th>\n          <th style=\"text-align: right;\">Amount</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td style=\"text-align: center;\">1.</td>\n          <td>Aggregate Outstanding Loans, debentures and deposits</td>\n          <td style=\"text-align: right;\">&#8377; 10 crore</td>\n        </tr>\n        <tr>\n          <td style=\"text-align: center;\">2.</td>\n          <td>Turnover of the company</td>\n          <td style=\"text-align: right;\">&#8377; 100 crore</td>\n        </tr>\n        <tr>\n          <td style=\"text-align: center;\">3.</td>\n          <td>Paid-up capital of the company</td>\n          <td style=\"text-align: right;\">&#8377; 50 crore</td>\n        </tr>\n        <tr>\n          <td style=\"text-align: center;\">4.</td>\n          <td>Net Profit (after tax) of the company</td>\n          <td style=\"text-align: right;\">&#8377; 5 crore</td>\n        </tr>\n      </tbody>\n    </table>\n\n    <p>For the year 2022-23, M/s Pesh & Associates were the auditors of the Company. The auditors found significant deficiencies in internal control and misrepresentation of amounts in the area of Trade Payables. Therefore, the Auditor issued qualified Audit Report.</p>\n\n    <p>Next year, management did not wish to re-appoint the same auditors, hence, Board of Director recommended <strong>Ms. Mansi</strong> as the Statutory Auditor for FY 2023-24 to the members of the Company.</p>\n\n    <p>After the appointment, Ms. Mansi went through previous year financials statements, audit report etc. and emphasised the understatement of Trade Payable balance as a significant audit risk. The auditor set the materiality at <strong>&#8377; 15,00,000</strong> for conducting audit of the year 2023-24.</p>\n\n    <p>Further, Ms. Mansi is in process of selecting the samples for testing so as to get the samples on which Vendor Balance Reconciliations can be performed, she is considering the following for the same:</p>\n    <ol type=\"i\">\n      <li>Major Vendors where the confirmation balances agrees to General Ledger.</li>\n      <li>Vendors which have high volume of business with Simran Edible Oil Limited.</li>\n      <li>Vendors with balances of &#8377; 15,00,000 or more outstanding at the year end.</li>\n      <li>Vendors with balances of &#8377; 15,00,000 or less outstanding at the year-end.</li>\n    </ol>\n\n    <p>As at March 31st, 2024, the balance of two vendor as per company's General Ledger and as per the balance of the External Confirmation which are received from vendors are as under:</p>\n\n    <table border=\"1\" cellspacing=\"0\" cellpadding=\"5\" style=\"border-collapse: collapse; width: 100%;\">\n      <thead>\n        <tr>\n          <th style=\"text-align: left;\">Vendor Name</th>\n          <th style=\"text-align: right;\">Balance as per General Ledger</th>\n          <th style=\"text-align: right;\">Balance as per External Confirmation</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>Pakhi Groundnut Seeds Limited</td>\n          <td style=\"text-align: right;\">&#8377; 15,00,000</td>\n          <td style=\"text-align: right;\">&#8377; 20,00,000</td>\n        </tr>\n        <tr>\n          <td>Krishi Sunflower Seeds Limited</td>\n          <td style=\"text-align: right;\">&#8377; 65,00,000</td>\n          <td style=\"text-align: right;\">&#8377; 80,00,000</td>\n        </tr>\n      </tbody>\n    </table>\n\n    <p><strong>Pakhi Groundnut Seeds Ltd.:</strong><br>\n    The difference in the balance is due to one of the order received by the Company. This order is under dispute as the Company claims that the received raw material is of sub-standard quality. The consignment received was sent back to the vendor on March 30, 2023.</p>\n\n    <p><strong>Krishi Sunflower Seeds Ltd.:</strong><br>\n    The difference in the balance is due to the reason of two invoices of &#8377; 10,00,000 and &#8377; 5,00,000 dated March 25, 2024 & March 27, 2024 respectively. As per the Accounts Payable Executive, both the invoices were received on April 03rd, 2024 and therefore, those were not recorded in the financial statement for the year ended March 31st, 2024.</p>\n\n    <p>Ms. Mansi took the samples to verify Trade payable balances, which covered 30% of population. During the Audit, she came across 2 errors amounting to <strong>&#8377; 12,00,000</strong>:</p>\n    <ul>\n      <li><strong>&#8377; 4,00,000</strong> was due to one invoice not being recorded due to weak inefficient control mechanism; and</li>\n      <li><strong>&#8377; 8,00,000</strong> error was made by Mr. Dhruv, an executive who came as a temporary replacement for one week in the place of Ms. Kamini, who is permanent accountant of the company. The mistake was clerical in nature.</li>\n    </ul>\n  ",
+  "questions": [
+    {
+      "question_id": "AUD_MTPMAR25_I_CS1_4",
+      "chapter_name": [
+        "Audit Sampling (SA 530)"
+      ],
+      "question": "Which items should Ms. Mansi select for testing so as to get the samples on which Vendor Balance Reconciliations can be performed?\n<br><br>(i) Major Vendors where the confirmation balances agrees to General Ledger.\n<br>(ii) Vendors which have high volume of business with Simran Edible Oil Limited.\n<br>(iii) Vendors with balances of ₹ 15,00,000 or more outstanding at the year end.\n<br>(iv) Vendors with balances of ₹ 15,00,000 or less outstanding at the year-end.",
+      "options": [
+        "i & iii.",
+        "ii, iii, & iv.",
+        "i & ii.",
+        "i, ii & iii."
+      ],
+      "answer": 1
+    },
+    {
+      "question_id": "AUD_MTPMAR25_I_CS1_5",
+      "chapter_name": [
+        "Internal Controls"
+      ],
+      "question": "How can Ms. Mansi audit the operating effectiveness of internal control around the accounting of Trade payables?",
+      "options": [
+        "Recalculating ageing of Trade Payables to identify the balances which may not be agreeing with the audit evidence.",
+        "Select samples from the supplier balance based on scientific Random Sampling approach & verify the third-party evidence.",
+        "Input a fake purchase invoice into the client system to see if it is processed accurately.",
+        "Calculate Trade Payables’ days to use in the analytical procedures."
+      ],
+      "answer": 2
+    },
+    {
+      "question_id": "AUD_MTPMAR25_I_CS1_6",
+      "chapter_name": [
+        "Audit of Items of Financial Statements"
+      ],
+      "question": "What are the audit procedures that Ms. Mansi should perform to verify whether the payable balances of Krishi Sunflower Seeds Ltd. are correctly recorded in the financial statements?",
+      "options": [
+        "Send a confirmation to Krishi Sunflower Seeds Ltd. to request to confirm the outstanding balance as at March 31, 2024.",
+        "Verify the bank payments for the period of post March 31, 2024, for any evidence of payment of invoice.",
+        "Review the listing of purchase order to confirm whether it pertains to the current year 2023-24 or it pertains to the next financial year.",
+        "Inspect the Goods Receipt Note to determine the date of receipt of raw material."
+      ],
+      "answer": 3
+    },
+    {
+      "question_id": "AUD_MTPMAR25_I_CS1_7",
+      "chapter_name": [
+        "Audit Sampling (SA 530)"
+      ],
+      "question": "What would be proper course of action to be taken by Ms. Mansi for two errors amounting to ₹ 4,00,000 and ₹ 8,00,000 in the given scenario?",
+      "options": [
+        "The total amount of error is below the materiality and therefore it should not be considered or further work upon.",
+        "Ms. Mansi should ask Simran Edible Oil Ltd. to adjust ₹ 12,00,000 in the Payable balance and rectify the same.",
+        "Different set of samples representing the same amount should be selected to check whether same errors are getting repeated, if it is not, then the observation should be waived off.",
+        "The impact of errors noted in the audit of samples (test of details), should be projected and extrapolated across the whole population."
+      ],
+      "answer": 3
+    }
+  ]
+},
+{
+  "case_id": "AUD_MTPMAR25_I_CS2",
+  "case_chapter": [
+    "Due Diligence, Investigation and Forensic Accounting"
+  ],
+  "caseText": "\n    <p><strong>Karma Ltd.</strong> got incorporated in 1980s as a private limited company and started its business into two segments &ndash; printing and construction. The two business activities were completely different but those were managed very well and the company grew significantly over a period of time. In year 2001, the company got converted into a public company and in 2008, the company also got listed on Bombay Stock Exchange.</p>\n\n    <p>The turnover of the company was increasing, however, the margins were not increasing as per the expectations of the management and the management analysed this aspect and realized that the margins were not so high in case of printing segment.</p>\n\n    <p>The company decided to focus more on construction business and included infrastructure in its line of business. This was also because of the fact that the government policies were favourable towards the infrastructure sector. Eventually, the company decided to sell its printing segment in 2020.</p>\n\n    <p>The new investor (i.e. buyer) for the printing segment carried out a due diligence of the printing business involving various aspects and the company sold this segment in January 2021.</p>\n\n    <p>Since the business of the company included infrastructure and it involved transactions with government officials also, the management suspected certain suspicious transactions for which it decided to carry out forensic accounting in the financial year 2021-22. During the audit, certain transactions were identified highly risky, on which the management discussed and set up certain new processes and stringent controls so that the business can function in an efficient manner.</p>\n\n    <p>For the financial year ended 31st March 2024, Due Diligence was done for the company, which impacted the company significantly in terms of its reputation and business. The company lost some significant contracts during the process of investigation itself.</p>\n\n    <p>At the time of due diligence review, the reviewer assessed the business feasibility also so as to assess whether the current business would be more beneficial in future or not. The management of Karma Ltd. did not understand this perspective. The management argued that the reviewer has no powers to assess the business feasibility, as the company was running a profitable business from many years.</p>\n\n    <p>The company had various litigations going on including those related to matter of taxation. The company had taken consultations in respect of those litigations from professionals and renowned legal/ tax consultants. The reviewer for due diligence reviewed these consultation documents and also asked for the documents related to these matters. Further, he also suggested that the decision taken by the company in some matters was not correct.</p>\n\n    <p>At the time of investigation, the reviewer asked about the background of the promoters of the company. The management explained that there was no need for this investigation. Further, the management explained that the company has already gone through the processes of due diligence and forensic accounting in the previous years and there was no doubt raised on promoters of the company. So, the background of promoters cannot be shared with the reviewer.</p>\n  ",
+  "questions": [
+    {
+      "question_id": "AUD_MTPMAR25_I_CS2_8",
+      "chapter_name": [
+        "Due Diligence, Investigation and Forensic Accounting"
+      ],
+      "question": "The management argued that the reviewer has no powers to assess the business feasibility, as the company has been running a profitable business from many years. Which of the following statement should be correct?",
+      "options": [
+        "The contention of the management was correct.",
+        "Reviewer was correct, as due diligence covers assessment of business feasibility as well.",
+        "Reviewer was correct as due diligence covers assessment of business feasibility as well, however, as the company was doing this business for decades it should not have been carried out by the reviewer.",
+        "Management was correct; however, it should have discussed the same with the investor as part of the sale contract."
+      ],
+      "answer": 1
+    },
+    {
+      "question_id": "AUD_MTPMAR25_I_CS2_9",
+      "chapter_name": [
+        "Due Diligence, Investigation and Forensic Accounting"
+      ],
+      "question": "The due diligence reviewer was given audited financial statement of the company for his financial review for the year ended March 2024. However, the reviewer asked for financial statements for the year ended 31st March 2023, which was already audited by the statutory auditors of the company and the management of the company declined this request.",
+      "options": [
+        "The management is correct.",
+        "Reviewer can ask for documents even for the period for which audit is completed.",
+        "Reviewer can ask for financial statements for the period for which audit is completed but he cannot give any statement on them. He can collect the same for his documentation purpose only as per the requirements of the auditing standards.",
+        "Reviewer has no right to review the financial statements of the period other than the period under review."
+      ],
+      "answer": 1
+    },
+    {
+      "question_id": "AUD_MTPMAR25_I_CS2_10",
+      "chapter_name": [
+        "Due Diligence, Investigation and Forensic Accounting"
+      ],
+      "question": "The reviewer for due diligence reviewed the consultation documents pertaining to various litigations going on including those related to matter of taxation and also asked for the documents related to these matters. Further, he also suggested that the decision taken by the company in some matters was not correct.",
+      "options": [
+        "The reviewer needs to have independent assessment of legal/ tax cases and any outcome needs to be discussed with the management.",
+        "The company should not have provided the documents as those are confidential.",
+        "The reviewer can study the tax consultation document but cannot give his opinion as the company already took the opinion from professional consultant.",
+        "Tax and legal matters are not a part of review of due diligence exercise."
+      ],
+      "answer": 0
+    },
+    {
+      "question_id": "AUD_MTPMAR25_I_CS2_11",
+      "chapter_name": [
+        "Due Diligence, Investigation and Forensic Accounting"
+      ],
+      "question": "The management may refuse to share the details of promoters. Comment on this.",
+      "options": [
+        "Since the company has already went through due diligence and forensic accounting in the previous years, the management may refuse to provide promoters details to the reviewer.",
+        "As the background of promoters has no bearing on the financials of the company, the reviewer should not ask for the details of promoters and the management may refuse to provide the same.",
+        "Since the company went through processes of forensic accounting in the past, and set up new processes and internal controls, the reviewer should not investigate into the background of promoters.",
+        "The contention of the management is not correct."
+      ],
+      "answer": 3
+    }
+  ]
+},
+{
+  "case_id": "AUD_MTPMAR25_I_CS3",
+  "case_chapter": [
+    "Professional Ethics"
+  ],
+  "caseText": "\n    <p><strong>CA Harman</strong>, a practicing Chartered Accountant, intends to fill out the Multi-purpose Empanelment Form (MEF) to be included in the panel for the statutory audit of bank branches for the financial year 2023-24, as hosted by the Professional Development Committee (PDC) of ICAI. The application process requires the submission of XML files of personal income tax returns along with the computation of income. During the relevant financial year for which the information is sought, CA Harman had engaged in currency and commodity derivatives transactions, declaring the resulting income under “Business Income” in her tax return.</p>\n\n    <p>Additionally, <strong>Pitch Private Limited</strong> approached CA Harman to digitally sign and upload a resignation form related to Mr. Rohit, one of its directors, on the Registrar of Companies (ROC) portal. However, the signature of Mr. Rohit had been copied and pasted by another director of the company. Without verifying the authenticity of the resignation letter, CA Harman digitally signed the form, which was then uploaded to the ROC portal.</p>\n\n    <p>Subsequently, CA Harman's actions were brought under scrutiny when the Director (Discipline) of the Institute of Chartered Accountants of India (ICAI) received complaints regarding alleged misconduct. Upon investigation, he was found guilty of misconduct, and the competent authority imposed the appropriate penalty in accordance with the provisions of the Chartered Accountants Act, 1949.</p>\n  ",
+  "questions": [
+    {
+      "question_id": "AUD_MTPMAR25_I_CS3_12",
+      "chapter_name": [
+        "Professional Ethics"
+      ],
+      "question": "Whether CA Harman will be held guilty for reflecting income from currency and commodity derivatives as \"Business Income\". If yes, under which clause?",
+      "options": [
+        "Yes, CA Harman will be held guilty for professional misconduct for reflecting income from currency and commodity derivatives as \"Business Income\" under Clause (11) of Part I of the First Schedule of the Chartered Accountants Act, 1949.",
+        "Yes, CA Harman will be held guilty for professional misconduct for reflecting income from currency and commodity derivatives as \"Business Income” under Clause (6) of Part I of the First Schedule of the Chartered Accountants Act, 1949.",
+        "No, CA Harman will not be held guilty for professional misconduct for reflecting income from currency and commodity derivatives as \"Business Income” under the Chartered Accountants Act, 1949.",
+        "Yes, CA Harman will be held guilty for professional misconduct for reflecting income from currency and commodity derivatives as \"Business Income” under Clause (2) of Part I of the Second Schedule of the Chartered Accountants Act, 1949."
+      ],
+      "answer": 0
+    },
+    {
+      "question_id": "AUD_MTPMAR25_I_CS3_13",
+      "chapter_name": [
+        "Professional Ethics"
+      ],
+      "question": "Whether CA Harman will be held liable for misconduct for uploading the digitally signed resignation letter. If yes, under which clause of the Chartered Accountants Act, 1949?",
+      "options": [
+        "Yes, CA Harman will be liable for misconduct under Clause (2) of Part I of the Second Schedule of the Chartered Accountants Act, 1949.",
+        "Yes, CA Harman will be liable for misconduct under Clause (7) of Part I of the Second Schedule of the Chartered Accountants Act, 1949.",
+        "Yes, CA Harman will be liable for misconduct under Clause (5) of Part I of the First Schedule of the Chartered Accountants Act, 1949.",
+        "Yes, CA Harman will be liable for misconduct under Clause (7) of Part I of the First Schedule of the Chartered Accountants Act, 1949."
+      ],
+      "answer": 1
+    },
+    {
+      "question_id": "AUD_MTPMAR25_I_CS3_14",
+      "chapter_name": [
+        "Professional Ethics"
+      ],
+      "question": "Before which authority would CA Harman’s misconduct case be placed for disciplinary proceedings?",
+      "options": [
+        "The High Court.",
+        "The Board of Discipline.",
+        "The Disciplinary Committee.",
+        "The Appellate Authority."
+      ],
+      "answer": 2
+    },
+    {
+      "question_id": "AUD_MTPMAR25_I_CS3_15",
+      "chapter_name": [
+        "Professional Ethics"
+      ],
+      "question": "What is the minimum punishment that could have been imposed on CA Harman under the Chartered Accountants Act, 1949?",
+      "options": [
+        "Reprimand the member.",
+        "Removal of name from the register of members permanently or for a specified period and fine up to ₹ 5,00,000.",
+        "Suspension of practice for up to 3 months.",
+        "Warning and fine up to ₹ 50,000."
+      ],
+      "answer": 0
+    }
+  ]
+},
+
 
 ];

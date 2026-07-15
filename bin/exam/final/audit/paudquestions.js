@@ -2679,4 +2679,684 @@ const descriptiveQuestions = [
     </ol>
   `
 },
+{
+  question_id: "AUD_MTPMAR25_I_1A",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Audit Considerations Relating to an Entity Using a Service Organisation (SA 402)",
+  placement: "1",
+  marks: 5,
+  question_html: `
+    <p><strong>Joseph Retail Pvt. Ltd.</strong> is a well-known luxury fashion retailer in Delhi, recognised for its premium collection of designer clothing and accessories. The company has recently implemented an advanced inventory management system, which tracks product availability, pricing, sales, and customer transactions in real time. This system has been developed and is managed by <strong>RealTrend Solutions</strong>, a third-party IT service provider.</p>
+    
+    <p><strong>CA Roop</strong>, the statutory auditor of Joseph Retail Pvt. Ltd., became aware of this system while conducting the audit. Concerned about whether the internal controls at TrendTech Solutions are operating effectively, <strong>CA Z</strong> requests an assurance report from a practicing Chartered Accountant regarding the description of TrendTech Solutions’ system and the effectiveness of its controls.</p>
+    
+    <p><strong>Which type of report should CA Z obtain in accordance with the relevant Standard on Auditing?</strong></p>
+    <p><strong>What aspects should CA Z consider while using such an assurance report as audit evidence to determine whether controls at TrendTech Solutions are operating effectively?</strong></p>
+  `,
+  solution_html: `
+    <strong>Solution:</strong><br><br>
+    
+    <p><strong>Type of Report to be Obtained:</strong><br>
+    In the given scenario, CA Z, as the statutory auditor of Joseph Retail Pvt. Ltd., is concerned about the operational effectiveness of controls at the service organisation. To address this concern, he should obtain a <strong>Type 2 Report</strong> as per <strong>SA 402, "Audit Considerations Relating to an Entity Using a Service Organisation"</strong>. A Type 2 report provides a description of the service organisation's system, the design of controls, and an opinion on the operating effectiveness of those controls over a specified period.</p>
+    
+    <p><strong>Aspects to Consider when Using a Type 2 Report as Audit Evidence:</strong><br>
+    If the user auditor plans to use a Type 2 report as audit evidence that controls at the service organisation are operating effectively, the user auditor shall determine whether the service auditor’s report provides sufficient appropriate audit evidence about the effectiveness of the controls to support the user auditor’s risk assessment by:</p>
+    
+    <ul>
+      <li><strong>Appropriateness of Period:</strong> Evaluating whether the description, design, and operating effectiveness of controls at the service organisation is at a date or for a period that is appropriate for the user auditor’s purposes;</li>
+      <li><strong>Complementary User Entity Controls:</strong> Determining whether complementary user entity controls identified by the service organisation are relevant to the user entity and, if so, obtaining an understanding of whether the user entity has designed and implemented such controls and, if so, testing their operating effectiveness;</li>
+      <li><strong>Time Period and Elapsed Time:</strong> Evaluating the adequacy of the time period covered by the tests of controls and the time elapsed since the performance of the tests of controls; and</li>
+      <li><strong>Relevance to Financial Statement Assertions:</strong> Evaluating whether the tests of controls performed by the service auditor and the results thereof, as described in the service auditor’s report, are relevant to the assertions in the user entity’s financial statements and provide sufficient appropriate audit evidence to support the user auditor’s risk assessment.</li>
+    </ul>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_1B",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Going Concern (SA 570)",
+  placement: "1",
+  marks: 5,
+  question_html: `
+    <p><strong>Fun Fiesta Ltd.</strong>, an entertainment company that operates a traveling circus, has been facing a significant decline in popularity over the past few years, with attendance reportedly dropping by as much as <strong>75%</strong> in the current financial year. The circus has also been continuously targeted by animal rights activists for its use of animals like elephants in performances. The CEO observed that audiences were shifting to other entertainment options, making the business model unsustainable due to the high costs of moving the show from city to city.</p>
+    
+    <p>As a result, several key managerial personnel resigned, there were delays in the payment of wages and salaries, and the bank from which the company had obtained funds decided not to extend further financing or fund additional working capital requirements.</p>
+    
+    <p>During discussions with management, the statutory auditor understood that Fun Fiesta Ltd. had no action plan to address these financial difficulties, making the use of the going concern assumption inappropriate. However, these critical circumstances were not disclosed in the company’s financial statements.</p>
+    
+    <p><strong>What course of action should the statutory auditor take in the auditor’s report in such situation? Discuss with reference to the applicable Standards on Auditing.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Core Framework (SA 570):</strong><br>
+    <strong>SA 570, "Going Concern"</strong> deals with the auditor’s responsibilities in the audit of financial statements relating to going concern and the implications for the auditor’s report. The auditor’s responsibilities are to obtain sufficient appropriate audit evidence regarding, and conclude on, the appropriateness of management’s use of the going concern basis of accounting in the preparation of the financial statements, and to conclude, based on the audit evidence obtained, whether a material uncertainty exists about the entity’s ability to continue as a going concern.</p>
+    
+    <p><strong>Inappropriate Use of Going Concern Basis:</strong><br>
+    If the financial statements have been prepared using the going concern basis of accounting but in the auditor’s judgment, management’s use of the going concern basis of accounting in the preparation of the financial statements is inappropriate, the auditor shall express an <strong>adverse opinion</strong>.</p>
+    
+    <p>Also, when adequate disclosure of a material uncertainty is not made in the financial statements, the auditor shall express a qualified opinion or adverse opinion, as appropriate, in accordance with <strong>SA 705 (Revised)</strong>; and in the Basis for Qualified (Adverse) Opinion section of the auditor’s report, state that a material uncertainty exists that may cast significant doubt on the entity’s ability to continue as a going concern and that the financial statements do not adequately disclose this matter.</p>
+    
+    <p><strong>Analysis of Indicators in the Present Case:</strong><br>
+    The following circumstances clearly point towards the inability of Fun Fiesta Ltd. to continue as a going concern:
+    <ul>
+      <li>Losing popularity over the past few years (attendance dropped by 75%).</li>
+      <li>Animal Rights activists continuously targeting the circus.</li>
+      <li>Audience abandoning the circus due to expanding entertainment alternatives.</li>
+      <li>High cost of moving the show from city to city making the current business model untenable.</li>
+      <li>Resignation of key managerial personnel.</li>
+      <li>Delays in payment of wages and salaries.</li>
+      <li>Banks deciding not to extend further finance or fund working capital requirements.</li>
+      <li>Complete non-availability of a sound action plan by management to mitigate these circumstances.</li>
+    </ul>
+    </p>
+    
+    <p><strong>Required Course of Action:</strong><br>
+    Considering the above factors, it is evident that the going concern basis is entirely inappropriate for the company. Furthermore, these circumstances are not reflected/disclosed in the financial statements of the company. As such, the statutory auditor of Fun Fiesta Ltd. should:
+    <ol>
+      <li>Express an <strong>adverse opinion</strong> in accordance with SA 705 (Revised).</li>
+      <li>In the <strong>Basis for Adverse Opinion</strong> paragraph of the auditor’s report, state that a material uncertainty exists that may cast significant doubt on the entity’s ability to continue as a going concern and that the financial statements do not adequately disclose this matter.</li>
+    </ol>
+    </p>
+    
+    <p><strong>Reporting under CARO 2020:</strong><br>
+    The auditor is also required to report as per <strong>Clause (xix) of CARO 2020</strong> that on the basis of the financial ratios, ageing and expected dates of realisation of financial assets and payment of financial liabilities, other information accompanying the financial statements, the auditor’s knowledge of the Board of Directors and management plans, whether the auditor is of the opinion that no material uncertainty exists as on the date of the audit report that company is capable of meeting its liabilities existing at the date of balance sheet as and when they fall due within a period of one year from the balance sheet date.</p>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_1C",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Auditing Accounting Estimates, Including Fair Value Accounting Estimates, and Related Disclosures (SA 540)",
+  placement: "1",
+  marks: 4,
+  question_html: `
+    <p><strong>CA Raj</strong> has been appointed as the auditor of <strong>MARCO Pvt. Ltd.</strong>, a private real estate company. During the audit, he requested information from the management to review the outcome of accounting estimates—such as estimated costs considered for percentage completion—used in the prior period financial statements. His objective was to assess their subsequent re-estimation for the current period.</p>
+    
+    <p>However, the management refused to provide the requested information, arguing that the auditor should not review prior period estimates.</p>
+    
+    <p><strong>Please advise how should Raj deal with this situation?</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Review of Prior Period Accounting Estimates (SA 540):</strong><br>
+    As per <strong>SA 540, "Auditing Accounting Estimates, Including Fair Value Accounting Estimates, and Related Disclosures"</strong>, the auditor shall review the outcome of accounting estimates included in the prior period financial statements, or, where applicable, their subsequent re-estimation for the purpose of the current period. The nature and extent of the auditor’s review takes account of the nature of the accounting estimates, and whether the information obtained from the review would be relevant to identifying and assessing risks of material misstatement of accounting estimates made in the current period financial statements.</p>
+    
+    <p><strong>Purpose of the Review:</strong><br>
+    The outcome of an accounting estimate will often differ from the accounting estimate recognised in the prior period financial statements. By performing risk assessment procedures to identify and understand the reasons for such differences, the auditor may obtain:</p>
+    
+    <ul>
+      <li>Information regarding the <strong>effectiveness of management’s prior period estimation process</strong>, from which the auditor can judge the likely effectiveness of management’s current process.</li>
+      <li>Audit evidence that is <strong>pertinent to the re-estimation</strong>, in the current period, of prior period accounting estimates.</li>
+      <li>Audit evidence of matters, such as <strong>estimation uncertainty</strong>, that may be required to be disclosed in the financial statements.</li>
+    </ul>
+    
+    <p><strong>Identifying Management Bias:</strong><br>
+    The review of prior period accounting estimates may also assist the auditor, in the current period, in identifying circumstances or conditions that increase the susceptibility of accounting estimates to, or indicate the presence of, possible <strong>management bias</strong>. The auditor’s professional skepticism assists in identifying such circumstances or conditions and in determining the nature, timing and extent of further audit procedures.</p>
+    
+    <p><em>Note: However, the review is not intended to call into question the judgments made in the prior periods that were based on information available at that time.</em></p>
+    
+    <p><strong>Conclusion:</strong><br>
+    In the given case, the management's argument that the auditor should not review prior period estimates is invalid. Therefore, the <strong>management is not correct</strong> in refusing the relevant information to the auditor, and CA Raj should communicate this requirement to them, evaluating the impact on his audit report if the information is continually withheld (limitation on scope).</p>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_2A",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Digital Auditing and Assurance",
+  placement: "2",
+  marks: 5,
+  question_html: `
+    <p><strong>ABC Bank</strong> recently faced a cyber-attack where hackers attempted to steal customer data. This raised concerns about their cybersecurity measures. Regulators now require financial institutions to assess their cyber risk management and improve their defence against such threats.</p>
+    
+    <p>To handle cyber risks effectively, it is important to understand its key stages. <strong>Elucidate the stages of cyber risks that any organisations should focus on?</strong></p>
+  `,
+  solution_html: `
+    <p>There are 3 Stages of cyber risk:</p>
+    
+    <p><strong>Stage 1 - Assessing the cyber risk:</strong><br>
+    No organisation is completely immune to a cyber risk. Different clients will have different levels of risks, even with the same industry. Every organisation should consider at least the common threats:</p>
+    <ul>
+      <li>Ransomware disabling their organisation (including their plants and manufacturing facilities).</li>
+      <li>Common criminals using email phishing and hacks for fraud and theft.</li>
+      <li>Insiders committing malicious activities or accidental activities resulting in unintended discourse of information theft and frauds.</li>
+    </ul>
+    
+    <p><strong>Stage 2 - Impact of cyber risk:</strong><br>
+    Cyber-attack can impact one, two or more types of risks. The impact of the attack would vary from organisation to organisation and most importantly from attack to attack. Some of the indicative areas can be:</p>
+    <ul>
+      <li>Regulatory costs.</li>
+      <li>Business interruptions causing an operational challenge for an organisation.</li>
+      <li>Data loss, reputational loss and litigation.</li>
+      <li>Ransomware - more common these days where entire systems are encrypted.</li>
+      <li>Intellectual property theft which may not only take the competitive advantage, but we may also result in any impairment/impediment charge because of the loss of IP.</li>
+      <li>Incident response cost which could be for investigations & remediations.</li>
+      <li>Breach of Privacy, if personal data of a consumer is hacked it could have a significant impact on the organisation.</li>
+      <li>Fines and penalties.</li>
+    </ul>
+    
+    <p><strong>Stage 3 - Managing cyber risk:</strong><br>
+    A strategic approach to cyber risk management can help an organisation to:</p>
+    <ul>
+      <li>Gain a holistic understanding of the cyber risks, threats facing their organisation and other financial institutions.</li>
+      <li>Assess existing IT and cybersecurity program and capabilities against the relevant regulatory requirements.</li>
+      <li>Align cybersecurity and IT transformation initiatives with strategic objectives and critical risks.</li>
+      <li>Understand accepted risks & documented compensating controls.</li>
+    </ul>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_2B",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Review Engagements (SRE 2400)",
+  placement: "2",
+  marks: 5,
+  question_html: `
+    <p><strong>Adboot & Co.</strong>, a firm of Chartered Accountants, has been approached by <strong>Mix Ltd.</strong> to conduct a review engagement of its financial statements for the year ending 31st March 2024. Before accepting the engagement, the engagement partner, <strong>CA Jai</strong>, wants to ensure that the necessary preconditions for a review engagement are met.</p>
+    
+    <p><strong>What preconditions should CA Jai evaluate before accepting the engagement? Discuss the responsibilities of Mix Ltd.'s management in this context and the necessary agreements that must be obtained from them.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Preconditions for Accepting a Review Engagement:</strong><br>
+    Prior to accepting a review engagement, the practitioner shall evaluate and ensure the following preconditions are met:</p>
+    
+    <ol>
+      <li><strong>Determine Acceptability of Framework:</strong> Determine whether the financial reporting framework applied in the preparation of the financial statements is acceptable including, in the case of special purpose financial statements, obtaining an understanding of the purpose for which the financial statements are prepared and of the intended users.</li>
+      <li><strong>Obtain Management's Agreement:</strong> Obtain the agreement of management that it acknowledges and understands its responsibilities:
+        <ul>
+          <li>For the <strong>preparation of the financial statements</strong> in accordance with the applicable financial reporting framework, including, where relevant, their fair presentation.</li>
+          <li>For such <strong>internal control</strong> as management determines is necessary to enable the preparation of financial statements that are free from material misstatement, whether due to fraud or error; and</li>
+          <li>To <strong>provide the practitioner with</strong>:
+            <ol type="a">
+              <li>Access to all information of which management is aware that is relevant to the preparation of the financial statements, such as records, documentation and other matters;</li>
+              <li>Additional information that the practitioner may request from management for the purpose of the review; and</li>
+              <li>Unrestricted access to persons within the entity from whom the practitioner determines it necessary to obtain evidence.</li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_2C",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Due Diligence, Investigation and Forensic Accounting",
+  placement: "2",
+  marks: 4,
+  question_html: `
+    <p><strong>PMP Bank Ltd.</strong>, received an application from a pharmaceutical company for the takeover of their outstanding term loans secured on its assets, availed from and outstanding with a nationalised bank. PMP Bank Ltd., requires <strong>CA Arpan</strong> to conduct due diligence for valuation aspect of assets of the pharmaceutical company.</p>
+    
+    <p><strong>State the areas of analysis in order to ensure that the assets are not overvalued.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Areas of analysis in order to ensure that the assets are not stated at overvalued amounts:</strong></p>
+    <ul>
+      <li>Uncollected/uncollectable receivables.</li>
+      <li>Obsolete, slow non-moving inventories or inventories valued above NRV, huge inventories of packing materials etc. with name of company.</li>
+      <li>Underused or obsolete Plant and Machinery and their spares; asset values which have been impaired due to sudden fall in market value etc.</li>
+      <li>Assets carried at much more than current market value due to capitalization of expenditure/foreign exchange fluctuation, or capitalization of expenditure mainly in the nature of revenue.</li>
+      <li>Litigated assets and property.</li>
+      <li>Investments carried at cost though realizable value is much lower.</li>
+      <li>Investments carrying a very low rate of income / return.</li>
+      <li>Infructuous project expenditure/deferred revenue expenditure etc.</li>
+      <li>Group Company balances under reconciliation etc.</li>
+      <li>Intangible assets of no value.</li>
+    </ul>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_3A",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Professional Ethics",
+  placement: "3",
+  marks: 5,
+  question_html: `
+    <p><strong>Veda Ltd.</strong>, a listed company having headquarter in Delhi, is engaged in the production and supply of unique chemicals to various industries. To comply with environmental regulations, the company installed pollution control equipment to process and treat waste before its discharge. However, despite regulatory requirements, the company continued to violate pollution control laws regarding the disposal of industrial waste.</p>
+    
+    <p>To obtain the necessary environmental clearance certificate, the company resorted to unethical means. An amount of &#8377; 43.85 lakhs was unlawfully spent to secure the clearance, which was then misrepresented in the financial records as an environmental compliance expense. This matter had not been brought to the attention of those charged with governance. However, during a periodic financial review, the Director of Finance, <strong>CA Rohan</strong>, discovered the irregularities.</p>
+    
+    <p><strong>What actions should CA Rohan take in response to this situation, considering the applicable provisions of responses for NOCLAR (Non-Compliance with Laws and Regulations) under the Code of Ethics?</strong></p>
+  `,
+  solution_html: `
+    <p>In the given situation, Veda Ltd., a listed company, has installed pollution control equipment to process industrial waste and ensure compliance with environmental regulations. However, despite these measures, the company continues to violate pollution control laws regarding the disposal of industrial waste. To obtain an environmental clearance certificate, the company resorted to unethical means, unlawfully incurring &#8377; 43.85 lakhs, which was misrepresented in the financial records as an environmental compliance expense.</p>
+    
+    <p>CA Rohan, Director Finance, came to know about these matters on review of the same during the period.</p>
+    
+    <p><strong>Applicability of NOCLAR:</strong><br>
+    NOCLAR, under the Code of Ethics, is applicable on professional accountants in service, and in practice. Among those in practice, it applies to Auditors, as well as professional services other than Audit.<br>
+    It is applicable to <strong>Senior Professional Accountants in service</strong>, being employees of listed entities. Senior professional accountants in service ("senior professional accountants") includes directors.</p>
+    
+    <p>NOCLAR takes into account non-compliance that causes substantial harm resulting in serious consequences in financial or non-financial terms.</p>
+    
+    <p>As per NOCLAR, in exceptional circumstances, the professional accountant might become aware of an imminent breach of a law or regulation that would cause substantial harm to investors, creditors, employees or the general public. Having first considered whether it would be appropriate to discuss the matter with management or those charged with governance of the company, the accountant shall exercise professional judgment and determine whether to disclose the matter immediately to an appropriate authority in order to prevent or mitigate the consequences of such imminent breach. If disclosure is made, that disclosure is permitted.</p>
+    
+    <p><strong>Actions to be taken by CA Rohan:</strong><br>
+    CA Rohan, Director-Finance is expected of taking the following action/responses:</p>
+    <ul>
+      <li>Obtaining an understanding of the Matter.</li>
+      <li>Addressing the matter.</li>
+      <li>Seeking advice.</li>
+      <li>Determining whether further action is needed.</li>
+      <li>Determining whether to disclose the matter to an Appropriate Authority.</li>
+      <li>Imminent breach.</li>
+      <li>Documentation.</li>
+    </ul>
+    
+    <p>By following these steps, CA Rohan can ensure ethical compliance while upholding professional integrity under the NOCLAR framework.</p>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_3B",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Initial Audit Engagements - Opening Balances (SA 510)",
+  placement: "3",
+  marks: 5,
+  question_html: `
+    <p><strong>CA. Jin</strong>, a recently qualified practicing Chartered Accountant, got his first audit assignment of <strong>Ordinary (P) Ltd.</strong> for the financial year 2023-24. He obtained all the relevant appropriate audit evidence for the items related to Statement of Profit and Loss. However, while auditing the Balance Sheet items, CA. Jin left failed to obtain sufficient audit evidence, such as confirmations, for the outstanding Accounts Receivable amounting to <strong>&#8377; 250 lakhs</strong>, continued as it is from the last year, on the affirmation of the management that there is no receipts and further credits during the year.</p>
+    
+    <p>Relying merely on the management’s affirmation that there were no receipts or further credits during the year, CA Rohan excluded the audit of accounts receivable from his audit program, assuming that the amount pertained to the prior year, which had already been audited by the predecessor auditor. <strong>Comment on the appropriateness of CA Rohan’s approach.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Verification of Accounts Receivable (SA 510):</strong><br>
+    As per <strong>SA 510, "Initial Audit Engagements – Opening Balances"</strong>, while conducting an initial audit engagement, the objective of the auditor with respect to opening balances is to obtain sufficient appropriate audit evidence about whether:</p>
+    <ul>
+      <li>Opening balances contain misstatements that materially affect the current period’s financial statements; and</li>
+      <li>Appropriate accounting policies reflected in the opening balances have been consistently applied in the current period’s financial statements, or changes thereto are properly accounted for and adequately presented and disclosed in accordance with the applicable financial reporting framework.</li>
+    </ul>
+    
+    <p>When the financial statements for the preceding period were audited by another auditor, the current auditor may be able to obtain sufficient appropriate audit evidence regarding opening balances by perusing the copies of the audited financial statements.</p>
+    
+    <p>Ordinarily, the current auditor can place reliance on the closing balances contained in the financial statements for the preceding period, except when during the performance of audit procedures for the current period the possibility of misstatements in opening balances is indicated.</p>
+    
+    <p>For current assets and liabilities, some audit evidence about opening balances may be obtained as part of the current period’s audit procedures, say, the collection of opening accounts receivable during the current period will provide some audit evidence of their existence, rights and obligations, completeness and valuation at the beginning of the period.</p>
+    
+    <p><strong>Written Representations (SA 580):</strong><br>
+    In addition, according to <strong>SA 580, "Written Representations"</strong>, the auditor may consider it necessary to request management to provide written representations about specific assertions in the financial statements; in particular, to support an understanding that the auditor has obtained from other audit evidence of management’s judgment or intent in relation to, or the completeness of, a specific assertion. Although such written representations provide necessary audit evidence, they <strong>do not provide sufficient appropriate audit evidence on their own</strong> for that assertion.</p>
+    
+    <p><strong>Conclusion:</strong><br>
+    In the given case, the management of Ordinary (P) Ltd. has restrained CA. Jin, its auditor, from obtaining appropriate audit evidence for balances of Accounts Receivable outstanding as it is from the preceding year. CA. Jin, on believing that the preceding year balances have already been audited and on the statement of the management that there are no receipts and credits during the current year, therefore excluded the verification of Accounts Receivable from his audit programme.</p>
+    
+    <p>Thus, CA. Jin should have requested the management to provide written representation for their views and expressions; and he should also <strong>not exclude the audit procedure of closing balances of Accounts Receivable</strong> from his audit programme. Consequently, CA. Jin shall also be held guilty for <strong>professional misconduct</strong> for not exercising due diligence, or being grossly negligent in the conduct of his professional duties as per the Code of Ethics.</p>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_3C",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Using the Work of Internal Auditors (SA 610)",
+  placement: "3",
+  marks: 4,
+  question_html: `
+    <p><strong>Rajveer & Associates</strong> have been the statutory auditors of <strong>Ish and Vish Ltd.</strong>, a listed company. <strong>CA Vishav</strong>, the engagement partner, had designed certain substantive procedures on some selected assertions in response to the assessed risk of material misstatements for the year under audit. These assertions were not examined by him in previous years due to materiality or risk considerations.</p>
+    
+    <p><strong>Mr. Yug</strong> leads the internal audit department of the company and reports to the company’s audit committee. During the audit, a senior member of the engagement team decides to engage Mr. Yug to provide direct assistance in performing the above substantive procedures. <strong>Comment with respect to the relevant Standards on Auditing.</strong></p>
+    
+    <p><strong>Also, indicate the activities to be performed by the statutory auditor prior to using internal auditor for providing direct assistance.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Activities Prior to Using Internal Auditor for Direct Assistance (SA 610):</strong><br>
+    As per <strong>SA 610, "Using the Work of Internal Auditors"</strong>, prior to using internal auditors to provide direct assistance for purposes of the audit, the external auditor shall:</p>
+    <ol type="i">
+      <li>Obtain <strong>written agreement from an authorized representative of the entity</strong> that the internal auditors will be allowed to follow the external auditor’s instructions, and that the entity will not intervene in the work the internal auditor performs for the external auditor; and</li>
+      <li>Obtain <strong>written agreement from the internal auditors</strong> that they will keep confidential specific matters as instructed by the external auditor and inform the external auditor of any threat to their objectivity.</li>
+    </ol>
+    
+    <p><strong>Evaluating Objectivity and Competence:</strong><br>
+    If using internal auditors to provide direct assistance is not prohibited by law or regulation, and the external auditor plans to use internal auditors to provide direct assistance on the audit, the external auditor shall evaluate the existence and significance of threats to objectivity and the level of competence of the internal auditors who will be providing such assistance. </p>
+    <p>The external auditor shall <strong>not</strong> use an internal auditor to provide direct assistance if:
+      <ol type="a">
+        <li>There are significant threats to the objectivity of the internal auditor; or</li>
+        <li>The internal auditor lacks sufficient competence to perform the proposed work.</li>
+      </ol>
+    </p>
+    
+    <p><strong>Analysis and Conclusion:</strong><br>
+    In the current scenario, Rajveer & Associates are the statutory auditors of Ish and Vish Ltd., a listed company. CA Vishav designed certain substantive procedures on some selected assertions in response to the assessed risks of material misstatements for the year, which were not previously examined. A senior audit team member decides to involve Mr. Yug (head of the internal audit department) in performing these substantive procedures.</p>
+    
+    <p>As a result, Rajveer & Associates is required to obtain written agreements from both the entity and the internal auditors regarding their cooperation and confidentiality. Further, using an internal auditor to provide direct assistance on areas with <strong>assessed risks of material misstatement</strong> (especially on assertions not examined previously) could prove to be counter-productive and defeat the very purpose of designing such substantive procedures.</p>
+    
+    <p>Hence, the decision of the senior engagement team member to use Mr. Yug to provide direct assistance on the above-said matters is <strong>not in order</strong> as it is not in accordance with SA 610.</p>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_4A",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Audit of Non-Banking Financial Companies (NBFCs)",
+  placement: "4",
+  marks: 5,
+  question_html: `
+    <p><strong>Qura Capital Ltd.</strong>, a Non-Banking Financial Company (NBFC) classified under the Scale-Based Regulation framework, is required to maintain a minimum capital ratio of <strong>15%</strong> of its aggregate risk-weighted assets (RWA) and risk-adjusted off-balance sheet items. The company has provided the following financial data for computing of its Tier 1 and Tier 2 capital as per the RBI Master Directions:</p>
+    
+    <table border="1" cellspacing="0" cellpadding="5" style="border-collapse: collapse; width: 100%;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Particulars</th>
+          <th style="text-align: right;">Amount in &#8377;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Owned Fund</td>
+          <td style="text-align: right;">1,000 crore</td>
+        </tr>
+        <tr>
+          <td>Investment in shares of other NBFCs and in group companies (exceeding 10% of owned fund)</td>
+          <td style="text-align: right;">150 crore</td>
+        </tr>
+        <tr>
+          <td>Perpetual Debt Instruments issued by Qura Finance Ltd.</td>
+          <td style="text-align: right;">120 crore</td>
+        </tr>
+        <tr>
+          <td>Preference Shares (not compulsorily convertible into equity)</td>
+          <td style="text-align: right;">80 crore</td>
+        </tr>
+        <tr>
+          <td>Revaluation Reserves</td>
+          <td style="text-align: right;">200 crore</td>
+        </tr>
+        <tr>
+          <td>General Provisions & Loss Reserves</td>
+          <td style="text-align: right;">50 crore</td>
+        </tr>
+        <tr>
+          <td>Hybrid Debt Capital Instruments</td>
+          <td style="text-align: right;">90 crore</td>
+        </tr>
+        <tr>
+          <td>Subordinated Debt</td>
+          <td style="text-align: right;">140 crore</td>
+        </tr>
+        <tr>
+          <td>Risk-Weighted Assets (RWA)</td>
+          <td style="text-align: right;">8,000 crore</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p>Considering that Qura Finance Ltd. is neither an NBFC-MFI nor primarily engaged in lending against gold jewellery, compute the following:</p>
+    <ul>
+      <li>Tier 1 capital of Qura Finance Ltd. as per RBI guidelines.</li>
+      <li>Tier 2 capital, ensuring it does not exceed the Tier 1 capital.</li>
+    </ul>
+    <p><strong>Also, determine whether Qura Finance Ltd. meets the minimum capital adequacy requirement of 15% of RWA.</strong></p>
+  `,
+  solution_html: `
+    <p>To determine whether Qura Capital Ltd. meets the capital adequacy requirement, we need to compute its Tier 1 Capital, Tier 2 Capital and compare the total capital ratio against the required 15% of Risk-Weighted Assets (RWA).</p>
+    
+    <p><strong>Step 1: Computation of Tier 1 Capital</strong><br>
+    Tier 1 Capital = Owned Fund &ndash; Investments in Group Entities + Eligible Perpetual Debt Instruments.<br>
+    Tier 1 Capital = 1,000 - 150 + 120 = <strong>&#8377; 970 crore</strong></p>
+    <p><em>Note: The perpetual debt instruments are limited to 15% of the previous year's Tier 1 capital. Assuming &#8377; 120 crore qualifies, we include it in Tier 1 capital.</em></p>
+    
+    <p><strong>Step 2: Computation of Tier 2 Capital</strong><br>
+    Tier 2 Capital = Sum of:</p>
+    <ul>
+      <li>Preference Shares = &#8377; 80 crore</li>
+      <li>Revaluation Reserves at 55% discount = &#8377; 200 crore &times; 45% (Wait, 55% discount means taken at 45%? The RBI rule says revaluation reserves are treated as Tier 2 capital at a discount of 55%. So inclusion is 45%. Wait, let's look at the ICAI suggested answer: 200 * 55% = 110. The wording in the answer key is "at 55% discount", meaning 200 - 55% discount = 45% inclusion, which is 90? No, ICAI answer computes it as 200 &times; 55% = 110 crore. Let's follow the official answer exact wording: <em>Revaluation Reserves at 55% discount = &#8377; 200 crore &times; 55% = &#8377; 110 crore</em>)</li>
+      <li>General Provisions (Limited to 1.25% of RWA) = 1.25% of &#8377; 8,000 crore = &#8377; 100 crore (Since actual general provisions are &#8377; 50 crore, we take &#8377; 50 crore)</li>
+      <li>Hybrid Debt Capital Instruments = &#8377; 90 crore</li>
+      <li>Subordinated Debt = &#8377; 140 crore</li>
+      <li>Perpetual Debt Instruments exceeding Tier 1 Limit = &#8377; 0 crore (As &#8377; 120 crore is already within Tier 1 limit)</li>
+    </ul>
+    <p>Tier 2 Capital = 80 + 110 + 50 + 90 + 140 + 0 = <strong>&#8377; 470 crore</strong>.</p>
+    <p><em>Note: Tier 2 Capital cannot exceed Tier 1 Capital. Since &#8377; 470 crore is within the &#8377; 970 crore Tier 1 limit, it is fully eligible.</em></p>
+    
+    <p><strong>Step 3: Compute Capital Adequacy Ratio (CAR)</strong><br>
+    Total Capital = Tier 1 Capital + Tier 2 Capital.<br>
+    Total Capital = 970 + 470 = <strong>&#8377; 1,440 crore</strong></p>
+    <p>Capital Adequacy Ratio (CAR) = (Total Capital / Risk-Weighted Assets) &times; 100<br>
+    CAR = (1440 / 8000) &times; 100 = <strong>18%</strong></p>
+    
+    <p><strong>Step 4: Conclusion</strong></p>
+    <ul>
+      <li>Minimum required capital ratio = 15%</li>
+      <li>Actual Capital Adequacy Ratio (CAR) = 18%</li>
+    </ul>
+    <p>Since Qura Capital Ltd.&rsquo;s CAR (18%) is higher than the minimum requirement of 15%, <strong>it meets the regulatory capital adequacy norms.</strong></p>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_4B",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Business Responsibility and Sustainability Reporting (BRSR)",
+  placement: "4",
+  marks: 5,
+  question_html: `
+    <p><strong>Pink Ltd.</strong>, a leading manufacturing company, is expanding its operations globally. However, the company has received multiple complaints from stakeholders regarding misleading advertisements and a lack of transparent grievance redressal mechanisms.</p>
+    
+    <p>As part of its Business Responsibility and Sustainability Reporting (BRSR) compliance, which principle is the company required to adhere to? This principle emphasizes engaging with and providing value to consumers responsibly and transparently.</p>
+    
+    <p><strong>What are the key consumer protection aspects that Pink Ltd. should focus on under this principle of BRSR?</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Applicable BRSR Principle:</strong><br>
+    Pink Ltd. shall adhere to <strong>Principle 9 of BRSR</strong> which focuses on <em>Providing Value to the Consumers in a Responsible Manner</em>.</p>
+    
+    <p>The primary purpose of any business is to create or provide useful products and services to the customer in exchange of reasonable profits.</p>
+    
+    <p><strong>Key Consumer Protection Aspects (Core Elements associated with Principle 9):</strong></p>
+    <ul>
+      <li><strong>Minimizing Negative Impacts:</strong> Entities should put in their efforts to reduce the negative impacts of their products and services on consumers, natural environment, and society at large.</li>
+      <li><strong>Freedom of Choice:</strong> When conceptualizing, designing, and marketing their products, the organisation should not in any manner prevent the freedom of choice and fair competition.</li>
+      <li><strong>Transparent Disclosure:</strong> The entities should transparently and accurately disclose all kinds of adverse impacts to the user, planet, society, on the biodiversity from their products.</li>
+      <li><strong>Data Privacy:</strong> When handling customer data, the right to privacy of the customer needs to be maintained.</li>
+      <li><strong>Responsible Usage and Disposal:</strong> Entities should inform the customers on the safe and responsible ways of usage, reuse, recycling, and disposal of their products, and ways to eliminate over-consumption.</li>
+      <li><strong>Truthful Advertising:</strong> When advertising about their products, the organisations should ensure that misleading and confusing information is not exposed to the customers about their products or its usage.</li>
+      <li><strong>Grievance Redressal:</strong> Business enterprises should make available transparent and accessible grievance redressal and feedback management system for their customers to raise their voices or to seek clarifications.</li>
+      <li><strong>Universal Access:</strong> Entities, when in the business of providing essential goods and services (e.g., Utilities), should enable universal access, including to those whose services have been discontinued for any reason, in a non-discriminatory and responsible manner.</li>
+    </ul>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_4C",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Professional Ethics",
+  placement: "4",
+  marks: 4,
+  question_html: `
+    <p><strong>CA Dhanush</strong> is the auditor of <strong>Jivi Limited</strong> having a turnover of more than <strong>&#8377; 300 Crores</strong>. The audit fee for the year is fixed at <strong>&#8377; 2.25 crore</strong>. During the year, the company offers CA Dhanush an assignment of representation before Income-tax Appellate Tribunal for certain matter for remuneration of <strong>&#8377; 2.85 crores</strong>. CA Dhanush accepted the assignment.</p>
+    
+    <p><strong>Discuss action of CA Dhanush with reference to the provisions of the Chartered Accountants (Amendment) Act, 2006 and Schedules thereto.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Council General Guidelines, 2008 (Chapter IX - Appointment as Statutory Auditor):</strong><br>
+    As per the guidelines, a member of the Institute in practice shall not accept the appointment as a statutory auditor of a PSU/Government company/Listed company and other public company having a turnover of <strong>&#8377; 50 crores or more</strong> in a year and where he accepts any other work(s) or assignment(s) or service(s) in regard to the same undertaking on a remuneration which in total <strong>exceeds the fee payable for carrying out the statutory audit</strong> of the same undertaking.</p>
+    
+    <p>For this purpose, the "other work/services" include Management Consultancy and all other professional services permitted by the Council, <strong>excluding</strong>:</p>
+    <ul>
+      <li>Audit under any other statute.</li>
+      <li>Certification work required to be done by the statutory auditor.</li>
+      <li><strong>Any representation before an authority.</strong></li>
+    </ul>
+    
+    <p><strong>Analysis:</strong><br>
+    In the given case, the company offers CA Dhanush, the statutory auditor, an assignment of representation before the Income Tax Appellate Tribunal for a remuneration of &#8377; 2.85 Crores, which exceeds the fees payable for the audit (&#8377; 2.25 crore).</p>
+    
+    <p><strong>Conclusion:</strong><br>
+    In view of the above provision, it would <strong>not be a misconduct</strong> on CA Dhanush’s part if he accepts the assignment of representation before the Income Tax Appellate Tribunal for a remuneration of &#8377; 2.85 crore, since "representation before an authority" is <strong>covered under the exceptions</strong>.</p>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_5A",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Quality Control (SQC 1 & SA 220)",
+  placement: "5",
+  marks: 5,
+  question_html: `
+    <p><strong>Rajni Ltd.</strong>, a listed company, has appointed <strong>M/s Amit & Co.</strong> as its statutory auditor. <strong>CA Sunil</strong>, who recently joined the firm, has been appointed as the engagement partner for the first time. While preparing for the audit, he realises the importance of ensuring the audit team’s independence, as required by standard audit practices. However, when reviewing the firm’s framework, he is unable to find any documented policies or procedures addressing independence compliance.</p>
+    
+    <p><strong>What steps should CA Sunil take to ensure compliance with independence requirements for the audit engagement? Why is it necessary for an audit firm to have well-documented policies and procedures to maintain independence? Discuss with reference to the relevant Standards on Auditing.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Firm's Responsibility for Independence (SQC 1):</strong><br>
+    As per <strong>SQC 1, "Quality Control for Firms that Perform Audits and Reviews of Historical Financial Information, and Other Assurance and Related Services Engagements,"</strong> the firm should establish policies and procedures designed to provide it with reasonable assurance that the firm, its personnel and, where applicable, others subject to independence requirements (including experts contracted by the firm and network firm personnel), maintain independence where required by the Code. Such policies and procedures should enable the firm to:</p>
+    <ul>
+      <li>Communicate its independence requirements to its personnel and, where applicable, to others subject to them; and</li>
+      <li>Identify and evaluate circumstances and relationships that create threats to independence, and to take appropriate action to eliminate those threats or reduce them to an acceptable level by applying safeguards, or, if considered appropriate, to withdraw from the engagement.</li>
+    </ul>
+    
+    <p><strong>Engagement Partner's Responsibility (SA 220):</strong><br>
+    Further, as per <strong>SA 220, "Quality Control for an Audit of Financial Statements,"</strong> the engagement partner shall form a conclusion on compliance with independence requirements that apply to the audit engagement.</p>
+    
+    <p>In doing so, the engagement partner (CA Sunil) shall:</p>
+    <ol type="i">
+      <li><strong>Obtain relevant information</strong> from the firm and, where applicable, network firms, to identify and evaluate circumstances and relationships that create threats to independence;</li>
+      <li><strong>Evaluate information on identified breaches</strong>, if any, of the firm’s independence policies and procedures to determine whether they create a threat to independence for the audit engagement; and</li>
+      <li><strong>Take appropriate action</strong> to eliminate such threats or reduce them to an acceptable level by applying safeguards, or, if considered appropriate, to withdraw from the audit engagement, where withdrawal is permitted by law or regulation. The engagement partner shall promptly report to the firm any inability to resolve the matter for appropriate action.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_5B",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "The Auditor's Responsibility in Relation to Other Information (SA 720)",
+  placement: "5",
+  marks: 5,
+  question_html: `
+    <p><strong>Kailash & Co.</strong>, Chartered Accountants, has been appointed as statutory auditor of <strong>Diksha Ltd.</strong> for the F.Y. 2023-24. The audit team has completed the audit and is in the process of preparing the audit report. The management of the company has also prepared a draft annual report.</p>
+    
+    <p>The audit in-charge was going through the draft annual report and observed that the company has included an item in its annual report indicating a downward trend in market prices of key commodities/raw material as compared to the previous year. However, the actual profit margin of the company as reported in financial statements has gone in the reverse direction. The Audit Manager discussed this issue with a partner of the firm who replied that auditors are not covered with such disclosures made by the management in their annual report, it being the responsibility of the management.</p>
+    
+    <p><strong>Is the partner's approach appropriate in this situation? Analyse the issue with reference to the relevant Standard on Auditing and the auditor's duties with regard to reporting.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Responding When the Auditor Concludes That a Material Misstatement of the Other Information Exists (SA 720):</strong><br>
+    As per <strong>SA 720, "The Auditor’s Responsibility in Relation to Other Information"</strong>, descriptions of trends in market prices of key commodities or raw materials is an example of amounts or other items that may be included in the other information.</p>
+    
+    <p>The auditor’s discussion with management about a material inconsistency (or other information that appears to be materially misstated) may include requesting management to provide support for the basis of management’s statements in the other information. Based on management’s further information or explanations, the auditor may be satisfied that the other information is not materially misstated. For example, management explanations may indicate reasonable and sufficient grounds for valid differences of judgment.</p>
+    
+    <p><strong>Auditor’s duties with regard to reporting:</strong><br>
+    As per SA 720, if the auditor concludes that a material misstatement of the other information exists, the auditor shall request management to correct the other information. If management:</p>
+    <ol>
+      <li><strong>Agrees</strong> to make the correction, the auditor shall determine that the correction has been made; or</li>
+      <li><strong>Refuses</strong> to make the correction, the auditor shall communicate the matter with those charged with governance and request that the correction be made.</li>
+    </ol>
+    
+    <p><strong>Analysis and Conclusion:</strong><br>
+    In the given case, while reviewing the draft annual report, the audit in-charge noticed that the company reported a decline in market prices of key raw materials compared to the previous year. However, the company's reported profit margins in the financial statements showed an increasing trend (material inconsistency). The Audit Manager discussed this issue with a partner of the firm who replied that auditors are not covered with such disclosures made by the management in their annual report, it being the responsibility of the management.</p>
+    
+    <p>Therefore, it can be concluded that the <strong>partner's approach is not appropriate</strong>. The auditor has specific responsibilities towards identifying and resolving material inconsistencies in "Other Information" under SA 720.</p>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_5C",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Professional Ethics",
+  placement: "5",
+  marks: 4,
+  question_html: `
+    <p><strong>Hitesh</strong>, a Chartered Accountant, applied for obtaining a Certificate of Practice. However, while filling out the application form, he intentionally did not fill the section requiring disclosure of any engagement in other occupations or businesses. Hitesh was actively involved in a business, making this non-disclosure a case of withholding crucial information that was explicitly sought by the Institute.</p>
+    
+    <p><strong>Analyse whether Hitesh’s actions amount to professional misconduct as per the provision of the Chartered Accountants Act, 1949.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Disclosure of Information:</strong><br>
+    As per <strong>Clause (2) of Part III of First Schedule</strong> to the Chartered Accountants Act, 1949, a member shall be held guilty if a Chartered Accountant, in practice or not, does not supply the information called for, or does not comply with the requirements asked for, by the Institute, Council or any of its Committees, Director (Discipline), Board of Discipline, Disciplinary Committee, Quality Review Board or the Appellate Authority.</p>
+    
+    <p><strong>Analysis:</strong><br>
+    In the given case, Hitesh, a Chartered Accountant, while applying for a certificate of practice, did not fill in the columns which solicit information about his engagement in other occupation or business, while he was indeed engaged in a business. Details of engagement in business need to be disclosed while applying for the certificate of practice as was the information called for in the application by the Institute.</p>
+    
+    <p><strong>Conclusion:</strong><br>
+    Thus, Hitesh will be held guilty of professional misconduct under <strong>Clause (2) of Part III of First Schedule</strong> of the Chartered Accountants Act, 1949.</p>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_6A",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Professional Ethics",
+  placement: "6",
+  marks: 5,
+  question_html: `
+    <p><strong>Mr. Chetan</strong>, a practicing Chartered Accountant, was involved in a family dispute over ancestral property. To gain an undue advantage, he allegedly forged the will of his late uncle, presenting it as a genuine document during legal proceedings. The forgery was later uncovered, and legal action was initiated against him. Although the act was committed in his personal capacity and not in the course of his professional duties, a complaint was filed with the disciplinary committee of the Institute of Chartered Accountants of India (ICAI).</p>
+    
+    <p><strong>Analyse whether Mr. Chetan would be held liable for misconduct as per the provisions of the Chartered Accountants Act, 1949.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Disrepute to the Profession:</strong><br>
+    As per <strong>Clause (2) of Part IV of First Schedule</strong> to the Chartered Accountants Act, 1949, a member of the Institute, whether in practice or not, shall be deemed to be guilty of other misconduct, if he, in the opinion of the Council, brings disrepute to the profession or the Institute as a result of his action whether or not related to his professional work. Here the Chartered Accountant is expected to maintain the highest standards of integrity even in his personal affairs and any deviation from these standards calls for disciplinary action.</p>
+    
+    <p><strong>Analysis:</strong><br>
+    In the present case, Mr. Chetan allegedly forged the will of his late uncle, presenting it as a genuine document during legal proceedings, to gain an undue advantage. This brings disrepute to the profession of a Chartered Accountant.</p>
+    
+    <p><strong>Conclusion:</strong><br>
+    Therefore, CA Chetan will be held guilty of other misconduct under <strong>Clause (2) of Part IV of First Schedule</strong> to the Chartered Accountants Act, 1949.</p>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_6B",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Emphasis of Matter Paragraphs and Other Matter Paragraphs in the Independent Auditor's Report (SA 706)",
+  placement: "6",
+  marks: 5,
+  question_html: `
+    <p><strong>Groof Limited</strong> is engaged in the business of executing construction contracts for its clients. As on 31st March, 2024, the company’s financial statements reflect non-current receivables outstanding amount of <strong>&#8377; 500 crore</strong>. Such amounts arise from claims raised by the company on its clients due to cost overruns caused by project delays, change in work specifications and related matters. Besides negotiations, the company has also gone for arbitration in some of the said cases. The management has stated in the notes to account that these amounts are fully recoverable.</p>
+    
+    <p><strong>CA Arohan</strong>, auditor of the company, has relied only upon management representation in this regard. Additionally, he has decided to include this matter in “Emphasis of Matter Paragraph” in audit report.</p>
+    
+    <p><strong>Evaluate the appropriateness of the auditor’s decision to include this matter in “Emphasis of Matter Paragraph”?</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Emphasis of Matter Paragraph (SA 706):</strong><br>
+    In accordance with <strong>SA 706</strong>, an Emphasis of Matter Paragraph is a paragraph included in the auditor’s report that refers to a matter appropriately presented or disclosed in the financial statements that, in the auditor’s judgment, is of such importance that it is fundamental to users’ understanding of the financial statements.</p>
+    
+    <p>As per SA 706, the objective of the auditor, having formed an opinion on the financial statements, is to draw users’ attention, when in the auditor’s judgment it is necessary to do so, by way of clear additional communication in the auditor’s report, to:</p>
+    <ol type="a">
+      <li>A matter, although appropriately presented or disclosed in the financial statements, that is of such importance that it is fundamental to users’ understanding of the financial statements or</li>
+      <li>As appropriate, any other matter that is relevant to users’ understanding of the audit, the auditor’s responsibilities or the auditor’s report.</li>
+    </ol>
+    
+    <p>Further, the auditor shall include an Emphasis of Matter paragraph in the auditor’s report provided the auditor <strong>would not be required to modify the opinion</strong> in accordance with SA 705 as a result of the matter.</p>
+    
+    <p><strong>Analysis:</strong><br>
+    In the given situation, the auditor has relied upon the management representation letter only. He has not performed any other audit procedures like verifying contracts with customers, status of arbitration proceedings, etc. Since management representations by themselves do not constitute sufficient appropriate audit evidence, performing necessary audit procedures may lead the auditor to conclude that a modification in opinion is necessary. In such circumstances, the matter cannot be simply included in the Emphasis of Matter Paragraph.</p>
+    
+    <p><strong>Conclusion:</strong><br>
+    Therefore, CA Arohan should form his opinion by performing necessary audit procedures and obtaining sufficient appropriate evidence. It is <strong>only when he concludes that modification of opinion is not required</strong> as a result of the said matter in terms of SA 705, that the said matter may be included in the Emphasis of Matter paragraph. Thus, his current decision is <strong>not appropriate</strong>.</p>
+  `
+},
+{
+  question_id: "AUD_MTPMAR25_I_6C",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Internal Controls / Audit of Public Sector Undertakings",
+  placement: "6",
+  marks: 4,
+  question_html: `
+    <p><strong>Joy World Pvt. Ltd.</strong> operates five amusement centres that offer recreational activities for families, especially children and young adults. These centres are spread across different locations within a 250-kilometer radius. Since ticket sales and ride fees are collected primarily in cash, ensuring proper control over collections is crucial to prevent fraud, mismanagement, and revenue leakage.</p>
+    
+    <p><strong>To maintain transparency and accuracy in cash handling, what internal control measures should Joy World Pvt. Ltd. implement for ticket sales and collections?</strong></p>
+    
+    <p style="text-align: center;"><strong>OR</strong></p>
+    
+    <p><strong>DBH & Associates</strong> are the statutory auditors of <strong>MBPC Limited</strong>, a public sector undertaking in the power sector. It is engaged in constructing large sized thermal power stations to accelerate development of the power sector in the country. One of the financial committees of Parliament has decided to examine its physical and financial performance. It has also examined the audit findings of C&AG in respect of which action is yet to be taken by the said PSU. The committee also proposes to include in its report the performance of the company in various operational matters.</p>
+    
+    <p><strong>Which financial committee of Parliament deals with such matters? Outline its main functions.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Control System over Selling and Collection of Tickets:</strong><br>
+    In order to achieve proper internal control over the sale of tickets and its collection by Joy World Pvt. Ltd., the following system should be adopted:</p>
+    <ol type="i">
+      <li><strong>Printing of tickets:</strong> Serially numbered pre-printed tickets should be used and designed in such a way that any type of ticket used cannot be duplicated by others in order to avoid forgery. Serial numbers should not be repeated during a reasonable period, say a month or year depending on the turnover. The separate series of the serial should be used for such denomination.</li>
+      <li><strong>Ticket sales:</strong> The sale of tickets should take place from the Central ticket office at each of the 5 centres, preferably through machines. There should be proper control over the keys of the machines.</li>
+      <li><strong>Daily cash reconciliation:</strong> Cash collection at each office and machine should be reconciled with the number of tickets sold. Serial number of tickets for each entertainment activity/denomination will facilitate the reconciliation.</li>
+      <li><strong>Daily banking:</strong> Each day’s collection should be deposited in the bank on the next working day of the bank. Till that time, the cash should be in the custody of properly authorized person preferably in joint custody for which the daily cash in hand report should be signed by the authorized persons.</li>
+      <li><strong>Entrance ticket:</strong> Entrance tickets should be cancelled at the entrance gate when the public enters the centre.</li>
+      <li><strong>Advance booking:</strong> If advance booking of facility is made available, the system should ensure that all advance booked tickets are paid for.</li>
+      <li><strong>Discounts and free pass:</strong> The discount policy of the Joy World Pvt. Ltd. should be such that the concessional rates, say, for group booking should be properly authorized and signed forms for such authorization should be preserved.</li>
+      <li><strong>Surprise checks:</strong> Internal audit system should carry out periodic surprise checks for cash counts, daily banking, reconciliation and stock of unsold tickets etc.</li>
+    </ol>
+    
+    <p style="text-align: center;"><strong>OR</strong></p>
+    
+    <p><strong>Financial Committee of Parliament dealing with PSUs:</strong><br>
+    The said matters are dealt with by the <strong>Committee on Public Undertakings (COPU)</strong>.</p>
+    
+    <p><strong>The functions of the Committee are:</strong></p>
+    <ol type="i">
+      <li>To examine the reports and accounts of public undertakings.</li>
+      <li>To examine the reports of the C&AG on public undertakings.</li>
+      <li>To examine the autonomy and efficiency of public undertakings and to see whether they are being managed in accordance with sound business principles and prudent commercial practices.</li>
+      <li>To exercise such other functions vested in the Public Accounts Committee (PAC) and the Estimates Committee as are not covered above and as may be allotted by the Speaker from time to time.</li>
+    </ol>
+    
+    <p>The examination of public enterprises by the Committee takes the form of comprehensive appraisal or evaluation of performance of the undertaking. It involves a thorough examination, including evaluation of the policies, programmes and financial working of the undertaking.</p>
+  `
+},
+
+
 ];
