@@ -999,7 +999,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q3A",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "Audit Reporting Standards (SA 705 & SA 706)",
-    "placement": 7,
+    "placement": 3,
     "marks": 4,
     "question_html": `
       <p> BPMR and Associates, a renowned audit firm in the field of CA practice for the past three decades, was appointed to conduct the statutory audit of Rexlon Ltd., an unlisted company engaged in the business of paper manufacturing. The firm decided to commence the audit for the recently concluded financial year. After making significant progress in the audit, the auditors made the following observations:</p>
@@ -1027,7 +1027,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q3B",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "Audit of Banks",
-    "placement": 8,
+    "placement": 3,
     "marks": 5,
     "question_html": `
       <p> NRF Bank Ltd. is suffering from huge number of NPAs. During the month of April 2023, the management of the bank decided to sell some of its NPAs. Bank is doing this exercise for the first time. The management has selected following NPA accounts for sale:</p>
@@ -1103,7 +1103,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q3C",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "Professional Ethics & CA Act, 1949",
-    "placement": 9,
+    "placement": 3,
     "marks": 5,
     "question_html": `
       <p> A special notice has been issued for a resolution at 4th annual general meeting of TRIM Ltd., providing expressly that CA. Lucky shall not be re-appointed as an auditor of the company. Consequently, CA. Lucky submitted a representation in writing to the company with a request to circulate to the members. In the detailed representation, CA. Lucky included the contributions made by him in strengthening the control procedures of the company during his association with the company and also indicated his willingness to continue as an auditor if reappointed by the shareholders of the company. Comment with reference to the Chartered Accountants Act, 1949 and schedules thereto.</p>
@@ -1129,7 +1129,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q4A",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "Using the Work of Another Auditor (SA 600) & Audit Documentation (SA 230)",
-    "placement": 10,
+    "placement": 4,
     "marks": 5,
     "question_html": `
       <p> Naveen Ltd. is a chair manufacturing company having its corporate office in Maharashtra. The company is in the process of expansion and has acquired five companies during the year. Soni & Co. is the principal auditor of the company while the audit of all the companies acquired during the year is being conducted by Rahul K & Associates. During the course of audit, CA. Soni, the engagement partner asked the management of Naveen Ltd. at the corporate office that in order to conduct the audit of the consolidated financial statements, his audit firm is required to conduct audit of the financial statements of all the components also (Companies acquired during the year).</p>
@@ -1156,7 +1156,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q4B",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "Sustainability Reporting",
-    "placement": 11,
+    "placement": 4,
     "marks": 4,
     "question_html": `
       <p> You have recently joined a listed company after qualifying CA final exams through campus placement programme conducted by ICAI. The company you have joined is not amongst top 1000 listed companies in the country. However, it wants to include “Sustainability reporting” in accordance with Global Reporting Initiative framework (GRI) in its annual report on voluntary basis. “Sustainability reporting” seems to be new buzzword in corporate circles and you are assigned responsibility for collating all the information required for such reporting.</p>
@@ -1182,7 +1182,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q4C",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "Using the Work of Internal Auditors (SA 610)",
-    "placement": 12,
+    "placement": 4,
     "marks": 5,
     "question_html": `
       <p> STU & Associates have been the statutory auditors of the listed company "First and Last Ltd.," operating in the petrochemical industry, for the past three years. CA. K, the engagement partner, had designed certain substantive procedures on some selected assertions in response to the assessed risk of material misstatements for the year under audit. These particular assertions were not examined by him in previous years due to materiality or risk considerations.</p>
@@ -1208,7 +1208,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q5A",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "The Auditor's Responsibility Relating to Other Information (SA 720)",
-    "placement": 13,
+    "placement": 5,
     "marks": 5,
     "question_html": `
       <p> Jinchandra & Co., Chartered Accountants, has been appointed statutory auditor of Gurudeva Ltd. for the F.Y. 2022-23. The audit team has completed the audit and is in the process of preparing the audit report. Management of the company has also prepared draft annual report.</p>
@@ -1238,7 +1238,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q5B",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "Audit of Public Sector Undertakings (PSU / Government Audit)",
-    "placement": 14,
+    "placement": 5,
     "marks": 5,
     "question_html": `
       <p> During the course of an audit of a state government department, the Office of the Comptroller & Auditor General of India (CAG) observed that the prescribed law in the state defined a "flat" based on the following two criteria in a premises:</p>
@@ -1272,7 +1272,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q5C",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "Professional Ethics & CA Act, 1949",
-    "placement": 15,
+    "placement": 5,
     "marks": 4,
     "question_html": `
       <p> CA. Evan has been in practice for two years and runs his proprietorship firm in the name of “Evan & Co.” He maintains notes in his mobile where he records the fees received from various clients. Using these records, he prepares and files his income tax return. Comment with respect to the provisions of the Chartered Accountant Act, 1949.</p>
@@ -1301,7 +1301,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q6A_MAIN",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "Compilation Engagements (SRS 4410)",
-    "placement": 16,
+    "placement": 6,
     "marks": 5,
     "question_html": `
       <p> You have been appointed to compile the financial statements of the Kings & Company (a partnership firm) for tax purposes. During the course of your work, you discover that the inventory is grossly understated, and the company has failed to apply applicable standards on accounting. On pointing out the same, the partners of the Kings & Co., inform you that it is outside your scope since you are not conducting an audit and the said figures duly certified by the firm should be accepted. Comment.</p>
@@ -1332,7 +1332,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q6A_OR",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "Prospective Financial Information (SAE 3400)",
-    "placement": 17,
+    "placement": 6,
     "marks": 5,
     "question_html": `
       <p><strong>OR (a)</strong> SAE 3400 explains that prospective financial information can take the form of a forecast, a projection, or a combination of both. In this context, how do you differentiate a forecast from a projection? Also provide an example. Additionally, explain the nature of assurance provided by the practitioner regarding prospective financial information in accordance with SAE 3400.</p>
@@ -1364,7 +1364,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q6B",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "Professional Ethics & CA Act, 1949",
-    "placement": 18,
+    "placement": 6,
     "marks": 4,
     "question_html": `
       <p> The manager of Miskin (P) Ltd. approached CA. Rahul in need of a certificate in respect of a consumption statement of raw material. Without having certificate of practice (CoP), CA. Rahul issued the certificate to the manager of the company, acting as a CA in practice and applied for the CoP to the Institute on very next day to avoid any dispute.</p>
@@ -1389,7 +1389,7 @@ const descriptiveQuestions = [
     "question_id": "AUD_MTPAPR24II_Q6C",
     "source": "ICAI Mock Test Paper - Series II, April 2024",
     "chapter_name": "Fraud Investigation & Defalcation of Inventory",
-    "placement": 19,
+    "placement": 6,
     "marks": 5,
     "question_html": `
       <p> Mr. Rajat, while reviewing the anti-fraud controls for a construction company, found that the company has witnessed a few frauds in the past mainly in the nature of material theft from the sites and fake expense vouchers.</p>
@@ -1448,7 +1448,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q1B",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "SA 505 – External Confirmations",
-  "placement": 2,
+  "placement": 1,
   "marks": 5,
   "question_html": `
     <p> As auditor of Growth Limited, you have sent positive confirmation requests to 45 creditors of the company in March 2024. All of the creditors in the informal sector are small concerns. You choose to send positive confirmation requests to all the above parties at their business addresses stated on respective bills after discussing the matter with the CFO of the company. The CFO is cooperative and does not raise any hassles in the matter.</p>
@@ -1480,7 +1480,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q1C",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "SA 560 – Subsequent Events",
-  "placement": 3,
+  "placement": 1,
   "marks": 4,
   "question_html": `
     <p> CA Shobit is conducting an audit of XYZ Ltd. for the year 2023-24. The company is engaged in the export of handicraft items in Europe. The audit is nearing completion in the month of July 2024. However, it becomes known to CA Shobit that one of overseas buyers has made a legal claim against the company on 1st June 2024 for injury caused to a customer of one European buyer due to sub-standard dyes used in rugs of one lot of order shipped in August 2023. The management of the company has decided to agree to an out of court settlement of ₹ 4 crore to protect its reputation. The financial statements of the company are silent on this issue. Discuss, how, CA Shobit should proceed to deal with above issue.</p>
@@ -1501,7 +1501,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q2A",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "Audit of Banks – Verification of Current Accounts and Savings Accounts (CASA)",
-  "placement": 4,
+  "placement": 2,
   "marks": 5,
   "question_html": `
     <p> CA J is the statutory auditor of branch of a nationalized bank. During the audit, he is also focusing upon verification of Current Accounts & Savings Accounts (CASA) maintained at the branch. Suggest a few audit procedures he should follow.</p>
@@ -1529,7 +1529,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q2B",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "Professional Misconduct – Clauses (2), (7) & (8) of Part I of the Second Schedule",
-  "placement": 5,
+  "placement": 2,
   "marks": 5,
   "question_html": `
     <p> Mr. Aditya, a Chartered Accountant was the auditor of 'DRAW Limited'. During the financial year 2023-24, the investment appeared in the Balance Sheet of the company of ₹ 23 lakh and was the same amount as in the last year. Later on, it was found that the company's investments were only ₹ 76,000, but the value of investments was inflated for the purpose of obtaining higher amount of Bank loan.</p>
@@ -1559,7 +1559,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q2C",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "Remote Audit",
-  "placement": 6,
+  "placement": 2,
   "marks": 4,
   "question_html": `
     <p> CA Kabir, an auditor assigned to conduct a remote audit of Beetal Limited. The audit will be conducted virtually using online platforms, with the client sharing documents and participating in video conferences. What key considerations should CA Kabir address to ensure the effectiveness and security of the remote audit?</p>
@@ -1591,7 +1591,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q3A",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "SA 320 – Materiality in Planning and Performing an Audit",
-  "placement": 7,
+  "placement": 3,
   "marks": 4,
   "question_html": `
     <p> Deepti & Co., Chartered Accountants, during the audit of a Magma Ltd. found that certain machinery had been imported for production of new product. Although the auditors have applied the concept of materiality to the financial statements as a whole, they now want to re-evaluate the materiality concept for the said transaction involving foreign exchange. Give your views in this regard?</p>
@@ -1612,7 +1612,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q3B",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "Audit of NBFCs – Principal Business Criteria",
-  "placement": 8,
+  "placement": 3,
   "marks": 5,
   "question_html": `
     <p> Singh Ltd. is a company registered under the Companies Act, 2013. The company is engaged in the business of loans and advances, acquisition of shares / stocks / bonds / debentures / securities issued by government or local authorities. For the year ended 31st March 2024 following are some extracts from the financial statements:</p>
@@ -1693,7 +1693,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q3C",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "Professional Ethics – Corporate Form of Practice",
-  "placement": 9,
+  "placement": 3,
   "marks": 5,
   "question_html": `
     <p> CA Shubh, a Chartered Accountant in practice specializing in the field of Information Systems Audit. He is considered to be one of the experts in this field because of his command over the subject. ZX Limited, a company engaged in rendering management consultancy offered him to appoint as its managing director. CA Shubh accepted the position of managing director without obtaining prior permission from the Institute. One of his friends, CA Varun informed him that now he cannot retain full time certificate of practice, thus cannot do attestation function and train articled assistants.</p>
@@ -1722,7 +1722,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q4A",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "CARO, 2020",
-  "placement": 10,
+  "placement": 4,
   "marks": 5,
   "question_html": `
     <p> Discuss the reporting responsibilities of statutory auditor in the following situations for year 2023-24 under CARO, 2020:</p>
@@ -1757,7 +1757,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q4B",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "Internal Audit – Section 138 of the Companies Act, 2013",
-  "placement": 11,
+  "placement": 4,
   "marks": 5,
   "question_html": `
     <p> One of the independent directors sought information regarding the appointment of internal auditors for the following Group Companies in accordance with the Companies Act, 2013 of which certain financial information are given below:</p>
@@ -1845,7 +1845,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q4C",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "Professional Misconduct – Due Diligence",
-  "placement": 12,
+  "placement": 4,
   "marks": 4,
   "question_html": `
     <p> Pitch Private Limited requested CA Angad, a practicing Chartered Accountant, to digitally sign the form related to resignation of Mr. Ravi, one of the Director of Pitch Private Limited, along with the copy of resignation letter to be uploaded on the website of Registrar of Companies. The signature of Mr. Ravi was simply copied and pasted by another Director of Pitch Private Limited. CA Angad, without verifying the genuineness of the resignation letter, digitally signed the form and the said form was uploaded on the website of Registrar of Companies.</p>
@@ -1868,7 +1868,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q5A",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "SQC 1 – Acceptance and Continuance of Client Relationships",
-  "placement": 13,
+  "placement": 5,
   "marks": 5,
   "question_html": `
     <p> SPS & Associates, Chartered Accountants, are statutory auditors of Grec Limited for the last two years. Grec Limited is engaged in the manufacturing and marketing of pharmaceutical goods in India. During the year 2023-24, the company has diversified and commenced providing software solutions in "e-commerce" in India as well as in certain African countries. SPS & Associates, while carrying out the audit, noticed that the company has expanded its operations into a new segment as well as in a new country. SPS & Associates does not possess the necessary expertise and infrastructure to carry out the audit of these diversified business activities and accordingly wishes to withdraw from the engagement and client relationship. Discuss the issues that need to be addressed before deciding to withdraw.</p>
@@ -1895,7 +1895,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q5B",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "SA 600 – Using the Work of Another Auditor (Consolidated Financial Statements)",
-  "placement": 15,
+  "placement": 5,
   "marks": 5,
   "question_html": `
     <p> CA H was appointed as a Statutory Auditor of MNL Limited, a listed company, which has three subsidiaries namely M Ltd., N Ltd., L Ltd. and also 15 branches across India. The Auditors are duly appointed for all the subsidiaries and branches.</p>
@@ -1926,7 +1926,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q5C",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "SA 402 – Audit Considerations Relating to an Entity Using a Service Organisation",
-  "placement": 16,
+  "placement": 5,
   "marks": 4,
   "question_html": `
     <p> During the audit of Indo Limited, CA Harish observed that processing of accounting data was given to a third party on account of certain considerations like cost reduction, own computer working to full capacity. Indo Limited used a service organisation to record transactions and process related data.</p>
@@ -1953,7 +1953,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q6A",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "SAE 3400 – The Examination of Prospective Financial Information",
-  "placement": 17,
+  "placement": 6,
   "marks": 5,
   "question_html": `
     <p> You are engaged by M/s Viva Limited to examine and report on prospective financial information which the management of the company has prepared for presentation at an Investor meet program organized by a State Government to attract investment in their state.</p>
@@ -1986,7 +1986,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q6B",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "Code of Ethics – NOCLAR (Non-Compliance with Laws and Regulations)",
-  "placement": 18,
+  "placement": 6,
   "marks": 5,
   "question_html": `
     <p> Shri Limited, a listed Company, having its registered office at Mumbai is engaged in manufacturing of various types of yarns to be supplied to the textile mills. The Company has installed pollution control equipment for processing the pollutants so that before discharge of effluents outside the factory, the level of pollution is kept at a level below the prescribed standard.</p>
@@ -2023,7 +2023,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24I_Q6C",
   "source": "ICAI Mock Test Paper - Series I, September 2024",
   "chapter_name": "Due Diligence / SA 810 – Engagements to Report on Summary Financial Statements",
-  "placement": 19,
+  "placement": 6,
   "marks": 4,
   "question_html": `
     <p> Vicky is a financial analyst working for a large corporation that is considering the acquisition of a mid-sized manufacturing company. The initial financial statements provided by the target company appear to be in order, showing profits and a solid asset base. However, his team is concerned about potential risks that may not be immediately visible in the financial documents provided.</p>
@@ -2117,7 +2117,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_1B",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "SA 570 – Going Concern; SA 705 – Modifications to the Opinion in the Independent Auditor’s Report",
-  "placement": 2,
+  "placement": 1,
   "marks": 5,
   "question_html": `
     <p> Pratibha Ltd. is a company engaged in the manufacturing of iron doors. JLN & Associates are the statutory auditors of Pratibha Ltd. for the Financial Year 2023-24. During the course of audit, CA Shiv, the engagement partner, found that the Company’s financing arrangements have expired, and the amount outstanding was payable on March 31, 2024. The Company has been unable to re-negotiate or obtain replacement financing and is considering filing for bankruptcy. These events indicate a material uncertainty that may cast significant doubt on the Company’s ability to continue as a going concern and therefore it may be unable to realize its assets and discharge its liabilities in the normal course of business. The financial statements (and notes thereto) do not disclose this fact. What opinion should CA Shiv express in case of Pratibha Ltd.?</p>
@@ -2140,7 +2140,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_1C",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "Companies Act, 2013 – Section 143(12); Reporting of Fraud by Auditor; CARO 2020",
-  "placement": 3,
+  "placement": 1,
   "marks": 4,
   "question_html": `
     <p> During the course of audit of PEC Limited, CA Guru has reason to believe that a fraud involving Rs.75 lakhs has been committed in the company by its employees. Is CA Guru under statutory obligation to report the above matter to Central government by filing prescribed form on MCA Portal? How should he proceed to report above said matter?</p>
@@ -2157,7 +2157,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_2A",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "SA 701 – Communicating Key Audit Matters in the Independent Auditor’s Report",
-  "placement": 4,
+  "placement": 2,
   "marks": 5,
   "question_html": `
     <p> Mr. Arjun was appointed as the engagement partner for conducting the audit of Kurukshetra Tech Ltd. for financial year 2023-24, on behalf of NEMI & Associates. Mr. Krishna was appointed as the engagement quality control reviewer (EQCR) by the firm for the said audit.</p>
@@ -2198,7 +2198,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_2B",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "Chartered Accountants Act, 1949 – Clause 11 of Part I of First Schedule",
-  "placement": 5,
+  "placement": 2,
   "marks": 5,
   "question_html": `
     <p> CA. Kapila, in practice, is desirous of filling Multi-purpose Empanelment Form (MEF) for inclusion of her name in panel for allotment of statutory audit of bank branches web hosted by Professional Development Committee (PDC) of ICAI for financial year 2023-24. The form requires applicants to upload XML files of their personal income tax returns along with computation of income. During relevant year for which information is being sought for by PDC, CA. Kapila has transacted in futures and options derivatives (equity) and has reflected income from such transactions in her return of income as “Business Income”. Analyse the above situation with reference to the provisions of the Chartered Accountants Act, 1949.</p>
@@ -2221,7 +2221,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_2C",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "Remote Audit",
-  "placement": 6,
+  "placement": 2,
   "marks": 4,
   "question_html": `
     <p> Remote audit is an audit where the auditor uses the online or electronic means to conduct the same. It could be partially or completely virtual, auditor engages using technology to obtain the audit evidence or to perform documentation review with the participation of the auditee. For example, an auditor might use video conferencing and cloud-based file sharing to review financial records remotely. What are the advantages and disadvantages of remote auditing?</p>
@@ -2265,7 +2265,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_3A",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "SA 299 – Joint Audit of Financial Statements",
-  "placement": 7,
+  "placement": 3,
   "marks": 5,
   "question_html": `
     <p> Studio Ltd. appointed AB & Associates and CD & Co. as joint auditors for conducting the audit for the year ending on 31st March 2024.</p>
@@ -2306,7 +2306,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_3B",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "CARO 2020 – Clause (xvi); RBI Act, 1934 – Section 45-IA; NBFC Audit",
-  "placement": 8,
+  "placement": 3,
   "marks": 5,
   "question_html": `
     <p> Manu Finance Ltd. is a Non-Banking Finance Company and was in the business of accepting public deposits and giving loans since 2019. The company was having net owned funds of ₹ 1,75,00,000/- (one crore seventy five lakhs) and was not having registration certificate from RBI and applied for it on 29th March 2024. The company appointed Mr. Yuvan as its statutory auditors for the year 2023-24. Advise the auditor with reference to auditor procedures to be taken and reporting requirements on the same in view of CARO 2020?</p>
@@ -2343,7 +2343,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_3C",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "Chartered Accountants Act, 1949 – Clause (7) of Part I of Second Schedule",
-  "placement": 9,
+  "placement": 3,
   "marks": 4,
   "question_html": `
     <p> DIGI & Associates. conducted Stock Audit of PQR Ltd. as per instructions issued by ASG Bank. However instead of visiting the site where the stock was lying, the firm relied on the Management Information Systems report along with inspections reports and photographs of Stock taken by the employees of PQR Ltd. The photographs were also carrying the date and time printed on them.</p>
@@ -2366,7 +2366,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_4A",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "Ind AS 110 – Consolidated Financial Statements; Companies Act, 2013",
-  "placement": 10,
+  "placement": 4,
   "marks": 5,
   "question_html": `
     <p> Girdhar Ltd. owns 61% voting power in Meera Ltd. It however, holds and discloses all the shares as "Stock-in-trade" in its accounts. The shares are held exclusively with a view to their subsequent disposal in the near future. Girdhar Ltd. represents that while preparing Consolidated Financial Statements, Meera Ltd. can be excluded from the consolidation. As a Statutory Auditor, how would you deal?</p>
@@ -2383,7 +2383,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_4B",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "Government Company Audit – Companies Act, 2013",
-  "placement": 11,
+  "placement": 4,
   "marks": 5,
   "question_html": `
     <p> Abhinandan Ltd., a company wholly owned by Delhi government was disinvested during the previous year, resulting in 38% of the shares being held by public. The shares were also listed on the NSE. Since the shares were listed, all the listing requirements were applicable, including publication of quarterly results, submission of information to the NSE etc. Paras, the Finance Manager of the company is of the opinion that now the company is subject to stringent control by NSE and the markets, therefore the auditing requirements of a limited company in private sector under the Companies Act, 2013 would be applicable to the company and the C&AG will not have any role to play. Comment.</p>
@@ -2400,7 +2400,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_4C",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "Chartered Accountants Act, 1949 – Section 2(2)(iv); Regulation 191",
-  "placement": 12,
+  "placement": 4,
   "marks": 4,
   "question_html": `
     <p> CA Ram, a practicing chartered accountant, is well known for his expertise in handling Goods and Services Tax (GST) cases at the GST Tribunal and he does not provide any assurance services. Given his long-standing reputation in the field, CA Ram is approached by DEF Limited to file an appeal in the Tribunal against a GST demand of ₹ 6 crore, which was imposed by the Commissioner (Appeals), and to represent DEF Limited in the matter. CA Ram offers to accept a fee of ₹ 3,50,000 for filing the appeal and pleading at the GST Tribunal.</p>
@@ -2421,7 +2421,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_5a",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "Investigation – Due Diligence / Investigation of Audited Financial Statements",
-  "placement": 16,
+  "placement": 5,
   "marks": 5,
   "question_html": `
     <p> Quality Ltd. is engaged in the business of manufacturing and distribution of various Ready to cook products like vegetables, Noodles etc. The government made certain changes in rules and regulations relating to this sector, consequently management decided to go for expansion.</p>
@@ -2454,7 +2454,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_5b",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "SA 320 – Materiality in Planning and Performing an Audit / SA 450 – Evaluation of Misstatements Identified during the Audit",
-  "placement": 17,
+  "placement": 5,
   "marks": 5,
   "question_html": `
     <p> While assessing the impact of uncorrected misstatements in the audit of MINI Builders Private Limited, Mr. Gautam encountered a significant issue related to the calculation of materiality on revenue. The initial materiality calculation was based on estimated figures provided by the management.</p>
@@ -2489,7 +2489,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_5c",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "Integrated Reporting (IR) – Six Capitals",
-  "placement": 18,
+  "placement": 5,
   "marks": 4,
   "question_html": `
     <p> Consistent Enterprises Ltd., a listed company, has been voluntarily preparing and disclosing its sustainability report based on the internationally accepted <strong>“Integrated Reporting”</strong> framework for some years, even before BRSR reporting became mandatory. Even after BRSR reporting became mandatory, it is cross-referencing disclosures made under such reporting to disclosures sought under BRSR. The key focus of Integrated Reporting is how the company creates value over the short, medium, and long term.</p>
@@ -2524,7 +2524,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_6a",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "SA 500 – Audit Evidence / Auditor’s Expert – Evaluation of Objectivity",
-  "placement": 19,
+  "placement": 6,
   "marks": 5,
   "question_html": `
     <p> Mr. Atharv, while conducting the audit of Black Mountain Mining Ltd., which is involved in phosphate mining, decided to engage an auditor’s expert to assess environmental liabilities and site clean-up costs.</p>
@@ -2579,7 +2579,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_6b",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "Chartered Accountants Act, 1949 – Delegation of Authority / Professional Misconduct",
-  "placement": 20,
+  "placement": 6,
   "marks": 5,
   "question_html": `
     <p><strong>(b)</strong> Mr. Jay is a practicing Chartered Accountant working as proprietor of M/s Adhya & Co. He went abroad for 4 months. He delegated the authority to Mr. Vijay a Chartered Accountant his employee for taking care of routine matters of his office. During his absence, Mr. Vijay has conducted the under mentioned jobs in the name of M/s Adhya & Co.</p>
@@ -2610,7 +2610,7 @@ const descriptiveQuestions = [
   "question_id": "AUD_MTPSEP24II_6c",
   "source": "ICAI Mock Test Paper - Series II, October 2024",
   "chapter_name": "SRS 4410 – Compilation Engagement",
-  "placement": 21,
+  "placement": 6,
   "marks": 4,
   "question_html": `
     <p><strong>(c)</strong> The practitioner shall not accept the compilation engagement unless the practitioner has agreed the terms of engagement with management, and the engaging party if different.</p>
