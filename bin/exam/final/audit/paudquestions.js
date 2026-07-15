@@ -458,7 +458,7 @@ const descriptiveQuestions = [
     placement: 4,
     marks: 5,
     question_html: `
-      <h3>Question 4(a)</h3>
+      
 
       <p>The audit report of <strong>Rare (P) Ltd.</strong> for F.Y. 2022-23 was issued by <strong>SRM & Co.</strong> on <strong>23rd July, 2023</strong>. However, a case was filed against Rare (P) Ltd. on <strong>9th August, 2023</strong>, with the Civil Court, with respect to an incident caused in its factory on <strong>24th January, 2023</strong>, the future outcome of which may result into paying heavy penalty by Rare (P) Ltd., which was informed to Mr. Rishabh Pandey, the partner of SRM & Co.</p>
 
@@ -519,7 +519,7 @@ const descriptiveQuestions = [
     placement: 4,
     marks: 4,
     question_html: `
-      <h3>Question 4(b)</h3>
+      
 
       <p>CTO Limited is engaged in the fintech business. It is a member of few prominent industry chambers and trade associations and has come under mandatory purview of Business Responsibility and Sustainability Reporting (BRSR) for year 2022-23.</p>
 
@@ -552,7 +552,7 @@ const descriptiveQuestions = [
     placement: 4,
     marks: 5,
     question_html: `
-      <h3>Question 4(c)</h3>
+      
 
       <p>CA. Navya is the statutory auditor of Lakshay Ltd. for the Financial year 2022-23. In respect of loans and advances of ₹ 75 Lakh given to Hariharan Pvt. Ltd., the Company has not furnished any agreement to CA. Navya and in the absence of the same, he is unable to verify the terms of repayment, chargeability of interest and other terms.</p>
 
@@ -583,7 +583,7 @@ const descriptiveQuestions = [
     placement: 5,
     marks: 5,
     question_html: `
-      <h3>Question 5(a)</h3>
+      
 
       <p>Naresh & Co., Chartered Accountants, have been appointed Statutory Auditors of Suchi Ltd. for the F.Y. 2022-23. The audit team has completed the audit and is in the process of preparing audit report. Management of the company has also prepared draft annual report.</p>
 
@@ -620,7 +620,7 @@ const descriptiveQuestions = [
     placement: 5,
     marks: 5,
     question_html: `
-      <h3>Question 5(b)</h3>
+      
 
       <p>Direct Benefit Transfer (DBT) is a major reform initiative of the Government of India to ensure better and timely delivery of benefits from Government to people. It marks a paradigm shift in the process of delivering benefits like wage payments, fuel subsidies, food grain subsidies, etc. directly into the bank accounts of the beneficiaries removing leakages and enhancing financial inclusion.</p>
 
@@ -653,7 +653,7 @@ const descriptiveQuestions = [
     placement: 5,
     marks: 4,
     question_html: `
-      <h3>Question 5(c)</h3>
+      
 
       <p>GeM (e-market place) is a public procurement portal which provides opportunities to start-ups, entrepreneurs etc. to showcase their innovative products and services to government buyers and engage in public procurement. The Government e Marketplace Special Purpose Vehicle (GeM SPV), a 100% Government owned and Section 8 (Non-Profit) company under the Ministry of Commerce, Government of India has been incorporated under the Companies Act, 2013 to develop, manage and maintain GeM platform.</p>
 
@@ -680,7 +680,7 @@ const descriptiveQuestions = [
     placement: 6,
     marks: 5,
     question_html: `
-      <h3>Question 6(a)</h3>
+      
 
       <p>When auditor’s report on the audited financial statements contains a qualified opinion, but the auditor is satisfied that the summary financial statements are a fair summary of the audited financial statements, in accordance with the applied criteria, which other matters shall the auditor’s report on the summary financial statements contain in addition to elements of auditor’s report described in SA 810?</p>
 
@@ -750,7 +750,7 @@ const descriptiveQuestions = [
     placement: 6,
     marks: 5,
     question_html: `
-      <h3>Question 6(b)</h3>
+      
 
       <p>CA. Z, in practice, is desirous of filling Multi-purpose Empanelment Form (MEF) for inclusion of his name in panel for allotment of statutory audit of bank branches web hosted by Professional Development Committee (PDC) of ICAI for financial year 2023-24. The form requires applicants to upload XML files of their personal income tax returns along with computation of income.</p>
 
@@ -783,7 +783,7 @@ const descriptiveQuestions = [
     placement: 6,
     marks: 4,
     question_html: `
-      <h3>Question 6(c)</h3>
+      
 
       <p>CA. Puranjay is performing a forensic accounting engagement involving gathering of evidence in relation to suspected fraud of substantial amount in a company. He has been appointed under terms of a contractual agreement with the company.</p>
 
@@ -3017,7 +3017,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_4A",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Audit of Non-Banking Financial Companies (NBFCs)",
-  placement: "4",
+  placement: 4,
   marks: 5,
   question_html: `
     <p><strong>Qura Capital Ltd.</strong>, a Non-Banking Financial Company (NBFC) classified under the Scale-Based Regulation framework, is required to maintain a minimum capital ratio of <strong>15%</strong> of its aggregate risk-weighted assets (RWA) and risk-adjusted off-balance sheet items. The company has provided the following financial data for computing of its Tier 1 and Tier 2 capital as per the RBI Master Directions:</p>
@@ -3115,7 +3115,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_4B",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Business Responsibility and Sustainability Reporting (BRSR)",
-  placement: "4",
+  placement: 4,
   marks: 5,
   question_html: `
     <p><strong>Pink Ltd.</strong>, a leading manufacturing company, is expanding its operations globally. However, the company has received multiple complaints from stakeholders regarding misleading advertisements and a lack of transparent grievance redressal mechanisms.</p>
@@ -3147,7 +3147,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_4C",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Professional Ethics",
-  placement: "4",
+  placement: 4,
   marks: 4,
   question_html: `
     <p><strong>CA Dhanush</strong> is the auditor of <strong>Jivi Limited</strong> having a turnover of more than <strong>&#8377; 300 Crores</strong>. The audit fee for the year is fixed at <strong>&#8377; 2.25 crore</strong>. During the year, the company offers CA Dhanush an assignment of representation before Income-tax Appellate Tribunal for certain matter for remuneration of <strong>&#8377; 2.85 crores</strong>. CA Dhanush accepted the assignment.</p>
@@ -3176,7 +3176,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_5A",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Quality Control (SQC 1 & SA 220)",
-  placement: "5",
+  placement: 5,
   marks: 5,
   question_html: `
     <p><strong>Rajni Ltd.</strong>, a listed company, has appointed <strong>M/s Amit & Co.</strong> as its statutory auditor. <strong>CA Sunil</strong>, who recently joined the firm, has been appointed as the engagement partner for the first time. While preparing for the audit, he realises the importance of ensuring the audit team’s independence, as required by standard audit practices. However, when reviewing the firm’s framework, he is unable to find any documented policies or procedures addressing independence compliance.</p>
@@ -3206,7 +3206,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_5B",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "The Auditor's Responsibility in Relation to Other Information (SA 720)",
-  placement: "5",
+  placement: 5,
   marks: 5,
   question_html: `
     <p><strong>Kailash & Co.</strong>, Chartered Accountants, has been appointed as statutory auditor of <strong>Diksha Ltd.</strong> for the F.Y. 2023-24. The audit team has completed the audit and is in the process of preparing the audit report. The management of the company has also prepared a draft annual report.</p>
@@ -3238,7 +3238,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_5C",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Professional Ethics",
-  placement: "5",
+  placement: 5,
   marks: 4,
   question_html: `
     <p><strong>Hitesh</strong>, a Chartered Accountant, applied for obtaining a Certificate of Practice. However, while filling out the application form, he intentionally did not fill the section requiring disclosure of any engagement in other occupations or businesses. Hitesh was actively involved in a business, making this non-disclosure a case of withholding crucial information that was explicitly sought by the Institute.</p>
@@ -3260,7 +3260,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_6A",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Professional Ethics",
-  placement: "6",
+  placement: 6,
   marks: 5,
   question_html: `
     <p><strong>Mr. Chetan</strong>, a practicing Chartered Accountant, was involved in a family dispute over ancestral property. To gain an undue advantage, he allegedly forged the will of his late uncle, presenting it as a genuine document during legal proceedings. The forgery was later uncovered, and legal action was initiated against him. Although the act was committed in his personal capacity and not in the course of his professional duties, a complaint was filed with the disciplinary committee of the Institute of Chartered Accountants of India (ICAI).</p>
@@ -3282,7 +3282,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_6B",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Emphasis of Matter Paragraphs and Other Matter Paragraphs in the Independent Auditor's Report (SA 706)",
-  placement: "6",
+  placement: 6,
   marks: 5,
   question_html: `
     <p><strong>Groof Limited</strong> is engaged in the business of executing construction contracts for its clients. As on 31st March, 2024, the company’s financial statements reflect non-current receivables outstanding amount of <strong>&#8377; 500 crore</strong>. Such amounts arise from claims raised by the company on its clients due to cost overruns caused by project delays, change in work specifications and related matters. Besides negotiations, the company has also gone for arbitration in some of the said cases. The management has stated in the notes to account that these amounts are fully recoverable.</p>
@@ -3314,7 +3314,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_6C",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Internal Controls / Audit of Public Sector Undertakings",
-  placement: "6",
+  placement: 6,
   marks: 4,
   question_html: `
     <p><strong>Joy World Pvt. Ltd.</strong> operates five amusement centres that offer recreational activities for families, especially children and young adults. These centres are spread across different locations within a 250-kilometer radius. Since ticket sales and ride fees are collected primarily in cash, ensuring proper control over collections is crucial to prevent fraud, mismanagement, and revenue leakage.</p>
