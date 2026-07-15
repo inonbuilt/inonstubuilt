@@ -2683,7 +2683,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_1A",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Audit Considerations Relating to an Entity Using a Service Organisation (SA 402)",
-  placement: "1",
+  placement: 1,
   marks: 5,
   question_html: `
     <p><strong>Joseph Retail Pvt. Ltd.</strong> is a well-known luxury fashion retailer in Delhi, recognised for its premium collection of designer clothing and accessories. The company has recently implemented an advanced inventory management system, which tracks product availability, pricing, sales, and customer transactions in real time. This system has been developed and is managed by <strong>RealTrend Solutions</strong>, a third-party IT service provider.</p>
@@ -2714,7 +2714,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_1B",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Going Concern (SA 570)",
-  placement: "1",
+  placement: 1,
   marks: 5,
   question_html: `
     <p><strong>Fun Fiesta Ltd.</strong>, an entertainment company that operates a traveling circus, has been facing a significant decline in popularity over the past few years, with attendance reportedly dropping by as much as <strong>75%</strong> in the current financial year. The circus has also been continuously targeted by animal rights activists for its use of animals like elephants in performances. The CEO observed that audiences were shifting to other entertainment options, making the business model unsustainable due to the high costs of moving the show from city to city.</p>
@@ -2764,7 +2764,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_1C",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Auditing Accounting Estimates, Including Fair Value Accounting Estimates, and Related Disclosures (SA 540)",
-  placement: "1",
+  placement: 1,
   marks: 4,
   question_html: `
     <p><strong>CA Raj</strong> has been appointed as the auditor of <strong>MARCO Pvt. Ltd.</strong>, a private real estate company. During the audit, he requested information from the management to review the outcome of accounting estimates—such as estimated costs considered for percentage completion—used in the prior period financial statements. His objective was to assess their subsequent re-estimation for the current period.</p>
@@ -2799,7 +2799,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_2A",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Digital Auditing and Assurance",
-  placement: "2",
+  placement: 2,
   marks: 5,
   question_html: `
     <p><strong>ABC Bank</strong> recently faced a cyber-attack where hackers attempted to steal customer data. This raised concerns about their cybersecurity measures. Regulators now require financial institutions to assess their cyber risk management and improve their defence against such threats.</p>
@@ -2844,7 +2844,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_2B",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Review Engagements (SRE 2400)",
-  placement: "2",
+  placement: 2,
   marks: 5,
   question_html: `
     <p><strong>Adboot & Co.</strong>, a firm of Chartered Accountants, has been approached by <strong>Mix Ltd.</strong> to conduct a review engagement of its financial statements for the year ending 31st March 2024. Before accepting the engagement, the engagement partner, <strong>CA Jai</strong>, wants to ensure that the necessary preconditions for a review engagement are met.</p>
@@ -2877,7 +2877,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_2C",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Due Diligence, Investigation and Forensic Accounting",
-  placement: "2",
+  placement: 2,
   marks: 4,
   question_html: `
     <p><strong>PMP Bank Ltd.</strong>, received an application from a pharmaceutical company for the takeover of their outstanding term loans secured on its assets, availed from and outstanding with a nationalised bank. PMP Bank Ltd., requires <strong>CA Arpan</strong> to conduct due diligence for valuation aspect of assets of the pharmaceutical company.</p>
@@ -2904,7 +2904,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_3A",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Professional Ethics",
-  placement: "3",
+  placement: 3,
   marks: 5,
   question_html: `
     <p><strong>Veda Ltd.</strong>, a listed company having headquarter in Delhi, is engaged in the production and supply of unique chemicals to various industries. To comply with environmental regulations, the company installed pollution control equipment to process and treat waste before its discharge. However, despite regulatory requirements, the company continued to violate pollution control laws regarding the disposal of industrial waste.</p>
@@ -2945,7 +2945,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_3B",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Initial Audit Engagements - Opening Balances (SA 510)",
-  placement: "3",
+  placement: 3,
   marks: 5,
   question_html: `
     <p><strong>CA. Jin</strong>, a recently qualified practicing Chartered Accountant, got his first audit assignment of <strong>Ordinary (P) Ltd.</strong> for the financial year 2023-24. He obtained all the relevant appropriate audit evidence for the items related to Statement of Profit and Loss. However, while auditing the Balance Sheet items, CA. Jin left failed to obtain sufficient audit evidence, such as confirmations, for the outstanding Accounts Receivable amounting to <strong>&#8377; 250 lakhs</strong>, continued as it is from the last year, on the affirmation of the management that there is no receipts and further credits during the year.</p>
@@ -2979,7 +2979,7 @@ const descriptiveQuestions = [
   question_id: "AUD_MTPMAR25_I_3C",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Using the Work of Internal Auditors (SA 610)",
-  placement: "3",
+  placement: 3,
   marks: 4,
   question_html: `
     <p><strong>Rajveer & Associates</strong> have been the statutory auditors of <strong>Ish and Vish Ltd.</strong>, a listed company. <strong>CA Vishav</strong>, the engagement partner, had designed certain substantive procedures on some selected assertions in response to the assessed risk of material misstatements for the year under audit. These assertions were not examined by him in previous years due to materiality or risk considerations.</p>
