@@ -1193,5 +1193,325 @@ const mcqData = [
       answer: 0
     }
   ]
-}
+},
+{
+  case_id: "afm_MAR25_I_cs1",
+  case_chapter: ["Mutual Funds", "Tracking Error", "Side Pocketing"],
+  caseText: `
+    <p>Mr. Ramesh, a 40-year-old investor, has invested ₹ 10,00,000 in an actively managed Equity Mutual Fund. The fund has an Expense Ratio of 2.50% and follows the Nifty 50 Index as its benchmark.</p>
+
+    <p>Upon analyzing the Fund details, he comes across the concept of Tracking Error (TE) and finds out that the same Fund has a Tracking Error (TE) of 3.20%.</p>
+
+    <p>A few months later, Mr. Ramesh receives a notification that the Fund has implemented Side Pocketing. The Fund has an exposure of 15% of his investment in a debt instrument of XYZ Ltd., a company facing a severe financial crisis. Since XYZ Ltd. has defaulted on its payments, the Fund Manager has moved this portion into a side pocket.</p>
+
+    <p>Following the decision of Fund Manager, Mr. Ramesh decides to reconsider any of the following options:</p>
+
+    <ol>
+      <li>Should he stay invested in this Fund and wait for the Side-Pocketed assets to recover?</li>
+      <li>Should he switch to a Passive Index Fund that has a lower Tracking Error and lower Expense Ratio?</li>
+      <li>Should he redeem his remaining liquid holdings and invest in a better-performing actively managed Fund?</li>
+    </ol>
+
+    <p><strong>Based on the above scenario and given his current situation, choose the most appropriate answer for the following multiple-choice questions.</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_mcq_cs1_1",
+      chapter_name: ["Mutual Funds"],
+      question: "Is it necessary for investors to pay close attention to the Expense Ratio of a Mutual Fund because………………..",
+      options: [
+        "a high expense ratio can significantly reduce net returns over time.",
+        "a higher expense ratio always guarantees better fund performance.",
+        "the expense ratio only matters in the first year of investment.",
+        "funds with higher expense ratios are always risk-free."
+      ],
+      answer: 0
+    },
+    {
+      question_id: "afm_mcq_cs1_2",
+      chapter_name: ["Tracking Error"],
+      question: "The Fund has been ……………… in replicating return on Nifty 50.",
+      options: [
+        "Successful",
+        "Unsuccessful",
+        "Can't say",
+        "Data is insufficient"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_mcq_cs1_3",
+      chapter_name: ["Side Pocketing"],
+      question: "After the decision of Fund Manager for side-pocketing, the equivalent portion of Mr. Ramesh's investment shall _____",
+      options: [
+        "remains illiquid until the Fund Manager decides to sell it or the company recovers.",
+        "be immediately written off, and Mr. Ramesh loses that portion.",
+        "be returned to Mr. Ramesh in proportion to his holdings.",
+        "be moved into a different Mutual Fund Scheme with no risk."
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_mcq_cs1_4",
+      chapter_name: ["Mutual Funds"],
+      question: "If Mr. Ramesh switches to a Passive Index Fund with an expense ratio of 0.8%, then he will save annually compared to his current Expense Ratio of 2.50%?",
+      options: [
+        "₹ 8,000",
+        "₹ 10,000",
+        "₹ 17,000",
+        "₹ 18,000"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_mcq_cs1_5",
+      chapter_name: ["Passive Investing"],
+      question: "The advantage for Mr. Ramesh to switch over to a Passive Index Fund shall be _____",
+      options: [
+        "lower expense ratio and lower tracking error.",
+        "guaranteed recovery of side-pocketed assets.",
+        "higher risk exposure compared to active funds.",
+        "avoiding capital gains tax on redemption."
+      ],
+      answer: 1
+    }
+  ]
+},
+{
+  case_id: "afm_MAR25_I_cs2",
+  case_chapter: ["Foreign Exchange Management", "NOSTRO Account"],
+  caseText: `
+    <p>On 20.10.2024, the credit balance of an Indian bank in NOSTRO account with LMN Bank in London was £ 1,60,000 and the overbought position was £ 1,00,000.</p>
+
+    <p>During the day, the following transactions have taken place:</p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <th>Time</th>
+        <th>Events</th>
+        <th>Amount (£)</th>
+      </tr>
+      <tr>
+        <td>11:08</td>
+        <td>DD Purchased</td>
+        <td>50,000</td>
+      </tr>
+      <tr>
+        <td>11:50</td>
+        <td>Purchased a bill on London</td>
+        <td>150,000</td>
+      </tr>
+      <tr>
+        <td>13:15</td>
+        <td>Sold forward TT</td>
+        <td>100,000</td>
+      </tr>
+      <tr>
+        <td>13:55</td>
+        <td>Forward purchased contract cancelled</td>
+        <td>50,000</td>
+      </tr>
+      <tr>
+        <td>14:45</td>
+        <td>Remitted by TT</td>
+        <td>85,000</td>
+      </tr>
+      <tr>
+        <td>15:00</td>
+        <td>Draft in London cancelled</td>
+        <td>40,000</td>
+      </tr>
+    </table>
+
+    <p><strong>Based on the above scenario, choose the most appropriate answer for the following multiple-choice questions.</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_mcq_cs2_0",
+      chapter_name: ["Foreign Exchange Management"],
+      question: "How much was the total amount of purchase commitments made during the day by the Indian Bank?",
+      options: [
+        "£ 2,00,000",
+        "£ 1,50,000",
+        "£ 3,40,000",
+        "£ 50,000"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "afm_mcq_cs2_1",
+      chapter_name: ["NOSTRO Account"],
+      question: "The final cash balance in the NOSTRO account at the end of 20.10.2024 stands at ………….",
+      options: [
+        "£ 85,000",
+        "£ 75,000",
+        "£ 20,000",
+        "£ 1,60,000"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_mcq_cs2_2",
+      chapter_name: ["Foreign Exchange Management"],
+      question: "The transaction took place at ………. shall affect both exchange and cash position of the bank with LMN Bank.",
+      options: [
+        "11:08",
+        "11:50",
+        "14:45",
+        "15:00"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_mcq_cs2_3",
+      chapter_name: ["NOSTRO Account"],
+      question: "If at the end of day bank is required to maintain a credit balance of £ 20,000 in the NOSTRO account, then it ………….",
+      options: [
+        "shall buy forward £ 15,000",
+        "shall sell spot TT £ 55,000",
+        "shall buy spot TT £ 55,000",
+        "shall sell forward £ 55,000"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_mcq_cs2_4",
+      chapter_name: ["Foreign Exchange Management"],
+      question: "If bank takes required steps to maintain a credit balance of £ 20,000 in the NOSTRO account, then what additional step was required to achieve the overbought position of £ 65,000?",
+      options: [
+        "Buying forward £ 15,000",
+        "Selling forward £ 65,000",
+        "Buying forward £ 60,000",
+        "Selling forward £ 15,000"
+      ],
+      answer: 0
+    }
+  ]
+},
+{
+  case_id: "afm_MAR25_I_cs3",
+  case_chapter: ["Corporate Valuation", "Dividend Discount Model", "Sustainable Growth Rate"],
+  caseText: `
+    <p>Following financial data are available for PQR Ltd. for the financial year ending 2023:</p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ in lakh</th>
+      </tr>
+      <tr>
+        <td>8% Debentures</td>
+        <td>125</td>
+      </tr>
+      <tr>
+        <td>10% Bonds (2022)</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Equity Shares (₹ 10 each)</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Reserves and Surplus</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td>Total Assets</td>
+        <td>600</td>
+      </tr>
+      <tr>
+        <td>Assets Turnover Ratio</td>
+        <td>1.1</td>
+      </tr>
+      <tr>
+        <td>Effective Interest Rate</td>
+        <td>8%</td>
+      </tr>
+      <tr>
+        <td>Effective Tax Rate</td>
+        <td>40%</td>
+      </tr>
+      <tr>
+        <td>Operating Margin</td>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <td>Dividend Payout Ratio</td>
+        <td>16.67%</td>
+      </tr>
+      <tr>
+        <td>Current Market Price per Share</td>
+        <td>₹ 14</td>
+      </tr>
+      <tr>
+        <td>Required Rate of Return of Investors</td>
+        <td>15%</td>
+      </tr>
+    </table>
+
+    <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_mcq_cs3_0",
+      chapter_name: ["Corporate Valuation"],
+      question: "Amount of retained earnings for the financial year 2023 approximately is…………..",
+      options: [
+        "₹ 26.00 lakh",
+        "₹ 5.20 lakh",
+        "₹ 52.00 lakh",
+        "₹ 31.20 lakh"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "afm_mcq_cs3_1",
+      chapter_name: ["Corporate Finance"],
+      question: "10% Bonds must have been issued in the month of…………….",
+      options: [
+        "July 2022",
+        "June 2022",
+        "August 2022",
+        "May 2022"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_mcq_cs3_2",
+      chapter_name: ["Dividend Discount Model"],
+      question: "Fair price of share of PQR Ltd. using Dividend Discount Model shall be approximately………….",
+      options: [
+        "₹ 6.12",
+        "₹ 6.51",
+        "₹ 10.00",
+        "₹ 14.00"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_mcq_cs3_3",
+      chapter_name: ["Sustainable Growth Rate"],
+      question: "Sustainable Growth Rate of PQR Ltd. shall be approximately…………..",
+      options: [
+        "10.00%",
+        "6.50%",
+        "15.00%",
+        "7.80%"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_mcq_cs3_4",
+      chapter_name: ["Return on Equity"],
+      question: "Return on Equity (ROE) of PQR Ltd. is…………..",
+      options: [
+        "7.80%",
+        "6.50%",
+        "10.00%",
+        "15.00%"
+      ],
+      answer: 0
+    }
+  ]
+},
 ];

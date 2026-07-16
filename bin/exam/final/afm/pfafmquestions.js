@@ -78,7 +78,7 @@ const descriptiveQuestions = [
     <p> What do you mean by the term Unicorn? State the features a Start-up should possess to be referred as a Unicorn?</p>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <br><br>
 
@@ -212,7 +212,7 @@ const descriptiveQuestions = [
     <p>If the risk-free rate is 9% and the expected rate of return on the market portfolio is 14%, examine which of the above stocks are over, under or correctly valued in the market? What shall be the strategy?</p>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <p><strong>Required Rate of Return is given by:</strong></p>
 
@@ -270,7 +270,7 @@ const descriptiveQuestions = [
     <p>What do you mean by the term Unicorn? State the features a Start-up should possess to be referred as a Unicorn?</p>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <p>A Unicorn is a privately held start-up company which has achieved a valuation US$ 1 billion. This term was coined by venture capitalist Aileen Lee, first time in 2013. Unicorn, a mythical animal represents the statistical rarity of successful ventures.</p>
 
@@ -339,7 +339,7 @@ const descriptiveQuestions = [
     <p><strong>Note:</strong> Except rates show all calculations in Billion upto four decimal points.</p>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <strong>Working Notes:</strong><br><br>
 
@@ -548,7 +548,7 @@ const descriptiveQuestions = [
     </ol>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <strong>(i) Present Value of the Stock of ABC Ltd.</strong><br><br>
 
@@ -648,7 +648,7 @@ const descriptiveQuestions = [
     <p>Explain the concept of Sustainable Growth Rate and also state assumptions of Sustainable growth model.</p>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <p>The sustainable growth rate (SGR), concept by Robert C. Higgins, of a firm is the maximum rate of growth in sales that can be achieved, given the firm's profitability, asset utilization, and desired dividend payout and debt (financial leverage) ratios. The sustainable growth rate is a measure of how much a firm can grow without borrowing more money. After the firm has passed this rate, it must borrow funds from another source to facilitate growth. Variables typically include the net profit margin on new and existing revenues; the asset turnover ratio, which is the ratio of sales revenues to total assets; the assets to equity ratio; and the retention rate, which is defined as the fraction of earnings retained in the business.</p>
 
@@ -719,7 +719,7 @@ const descriptiveQuestions = [
     </ol>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <strong>Working Notes:</strong><br><br>
 
@@ -856,7 +856,7 @@ const descriptiveQuestions = [
     <p>While in securitization the securities issued by SPV are backed by the loans and receivables, the CDOs are backed by pool of bonds, asset backed securities, REITs, and other CDOs. Describe the main types of risk associated with investment in CDOs.</p>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <strong>Either</strong><br><br>
 
@@ -912,7 +912,7 @@ const descriptiveQuestions = [
     <p><strong>Note:</strong> Carry out calculations in ₹ Million and round off calculations upto 4 decimal points.</p>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <strong>(i) Calculation of Initial Outlay:</strong>
 
@@ -1019,7 +1019,7 @@ const descriptiveQuestions = [
     <p>Assume the option size is 100 shares of D Ltd.</p>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <p><strong>Total premium paid on purchasing a Call and Put option</strong></p>
 
@@ -1085,7 +1085,7 @@ const descriptiveQuestions = [
     <p>List out the areas where the concept of Value at Risk (VAR) can be applied?</p>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <p>VAR can be applied in the following areas:</p>
 
@@ -1173,7 +1173,7 @@ const descriptiveQuestions = [
     <p><strong>Note:</strong> Carry out calculation in ₹ Crore and round off figures upto two decimal points.</p>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <strong>Determination of Forecasted Free Cash Flow to the Firm (FCFF)</strong>
 
@@ -1349,7 +1349,7 @@ const descriptiveQuestions = [
     </ol>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <strong>(i) Current Portfolio Beta</strong>
 
@@ -1452,7 +1452,7 @@ const descriptiveQuestions = [
     <p><strong>Generic swap is based on 30/360 days basis.</strong></p>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <strong>(i) Semi-annual Fixed Payment</strong>
 
@@ -1592,7 +1592,7 @@ const descriptiveQuestions = [
     </ol>
   `,
   solution_html: `
-    <strong>Solution:</strong><br><br>
+    
 
     <strong>(i) Statement Showing the Net Present Value of Project M</strong>
 
@@ -6714,5 +6714,2344 @@ const descriptiveQuestions = [
     </ol>
   `
 },
+{
+  question_id: "AFM_MTPMAR25_I_Q1A",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Portfolio Theory",
+  placement: 1,
+  marks: 8,
+  question_html: `
+    <p>Following are the details of a portfolio consisting of three shares:</p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Share</th>
+        <th>Portfolio Weight</th>
+        <th>Beta</th>
+        <th>Expected Return (%)</th>
+        <th>Total Variance</th>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td>0.20</td>
+        <td>0.40</td>
+        <td>14</td>
+        <td>0.015</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td>0.50</td>
+        <td>0.50</td>
+        <td>15</td>
+        <td>0.025</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>0.30</td>
+        <td>1.10</td>
+        <td>21</td>
+        <td>0.100</td>
+      </tr>
+    </table>
+
+    <p>Standard Deviation of Market Portfolio Returns = 10%</p>
+
+    <p>You are given the following additional data:</p>
+
+    <p>Covariance (A, B) = 0.030</p>
+    <p>Covariance (A, C) = 0.020</p>
+    <p>Covariance (B, C) = 0.040</p>
+
+    <p>Calculate the following:</p>
+
+    <ol type="i">
+      <li>The Portfolio Beta</li>
+      <li>Residual variance of each of the three shares</li>
+      <li>Portfolio variance using Sharpe Index Model</li>
+      <li>Portfolio variance (on the basis of modern portfolio theory given by Markowitz)</li>
+    </ol>
+  `,
+  solution_html: `
+    
+
+    <p><strong>(i) Portfolio Beta</strong></p>
+
+    <p>
+      Portfolio Beta = (0.20 × 0.40) + (0.50 × 0.50) + (0.30 × 1.10)
+    </p>
+
+    <p>
+      = 0.08 + 0.25 + 0.33
+    </p>
+
+    <p>
+      = <strong>0.66</strong>
+    </p>
+
+    <p><strong>(ii) Residual Variance of each share</strong></p>
+
+    <p>To determine Residual Variance, first compute the Systematic Risk:</p>
+
+    <p>
+      β²A × σ²M = (0.40)² × (0.10)²
+      = 0.16 × 0.01
+      = 0.0016
+    </p>
+
+    <p>
+      β²B × σ²M = (0.50)² × (0.10)²
+      = 0.25 × 0.01
+      = 0.0025
+    </p>
+
+    <p>
+      β²C × σ²M = (1.10)² × (0.10)²
+      = 1.21 × 0.01
+      = 0.0121
+    </p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Share</th>
+        <th>Total Variance</th>
+        <th>Systematic Variance</th>
+        <th>Residual Variance</th>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td>0.0150</td>
+        <td>0.0016</td>
+        <td>0.0134</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td>0.0250</td>
+        <td>0.0025</td>
+        <td>0.0225</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>0.1000</td>
+        <td>0.0121</td>
+        <td>0.0879</td>
+      </tr>
+    </table>
+
+    <p><strong>(iii) Portfolio Variance using Sharpe Index Model</strong></p>
+
+    <p>
+      Systematic Variance of Portfolio
+      = (0.10)² × (0.66)²
+      = 0.01 × 0.4356
+      = <strong>0.004356</strong>
+    </p>
+
+    <p>
+      Unsystematic Variance of Portfolio
+      = (0.0134 × 0.20²)
+      + (0.0225 × 0.50²)
+      + (0.0879 × 0.30²)
+    </p>
+
+    <p>
+      = (0.0134 × 0.04)
+      + (0.0225 × 0.25)
+      + (0.0879 × 0.09)
+    </p>
+
+    <p>
+      = 0.000536 + 0.005625 + 0.007911
+      = <strong>0.014072</strong>
+    </p>
+
+    <p>
+      Total Variance
+      = 0.004356 + 0.014072
+      = <strong>0.018428</strong>
+    </p>
+
+    <p><strong>(iv) Portfolio Variance as per Markowitz Theory</strong></p>
+
+    <p>
+      Portfolio Variance =
+      (wA × wA × σ²A)
+      + (wA × wB × CovAB)
+      + (wA × wC × CovAC)
+      + (wB × wA × CovAB)
+      + (wB × wB × σ²B)
+      + (wB × wC × CovBC)
+      + (wC × wA × CovCA)
+      + (wC × wB × CovCB)
+      + (wC × wC × σ²C)
+    </p>
+
+    <p>
+      = (0.20 × 0.20 × 0.015)
+      + (0.20 × 0.50 × 0.030)
+      + (0.20 × 0.30 × 0.020)
+      + (0.20 × 0.50 × 0.030)
+      + (0.50 × 0.50 × 0.025)
+      + (0.50 × 0.30 × 0.040)
+      + (0.30 × 0.20 × 0.020)
+      + (0.30 × 0.50 × 0.040)
+      + (0.30 × 0.30 × 0.100)
+    </p>
+
+    <p>
+      = 0.0006 + 0.0030 + 0.0012 + 0.0030 + 0.00625 + 0.0060 + 0.0012 + 0.0060 + 0.0090
+    </p>
+
+    <p>
+      = 0.03625 ≈ <strong>0.0363</strong>
+    </p>
+
+    <p><strong>Answer:</strong></p>
+
+    <ol type="i">
+      <li>Portfolio Beta = <strong>0.66</strong></li>
+      <li>
+        Residual Variance:
+        <ul>
+          <li>A = <strong>0.0134</strong></li>
+          <li>B = <strong>0.0225</strong></li>
+          <li>C = <strong>0.0879</strong></li>
+        </ul>
+      </li>
+      <li>Portfolio Variance using Sharpe Index Model = <strong>0.018428</strong></li>
+      <li>Portfolio Variance using Markowitz Theory = <strong>0.0363</strong></li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q1B",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Risk Management - Value at Risk (VaR)",
+  placement: 1,
+  marks: 4,
+  question_html: `
+    <p>Consider a portfolio consisting of a ₹ 200,00,000 investment in share XYZ and a ₹ 2,00,00,000 investment in share ABC. The daily standard deviation of both shares is 1% and that the coefficient of correlation between them is 0.3.</p>
+
+    <p>You are required to determine the <strong>10-day 99% Value at Risk (VaR)</strong> for the portfolio.</p>
+  `,
+  solution_html: `
+
+    <p>
+      Investment in XYZ = ₹ 200 lakh<br>
+      Investment in ABC = ₹ 200 lakh<br>
+      Total Portfolio Value = ₹ 400 lakh
+    </p>
+
+    <p>
+      Daily Standard Deviation of each share = 1%
+    </p>
+
+    <p>
+      Correlation Coefficient (ρ) = 0.3
+    </p>
+
+    <p><strong>Step 1: Calculate Portfolio Variance</strong></p>
+
+    <p>
+      Standard deviation of daily change in investment of each asset:
+    </p>
+
+    <p>
+      = 1% × ₹ 200 lakh
+    </p>
+
+    <p>
+      = ₹ 2 lakh
+    </p>
+
+    <p>
+      Portfolio Variance (V)
+    </p>
+
+    <p>
+      = 2² + 2² + 2 × 0.3 × 2 × 2
+    </p>
+
+    <p>
+      = 4 + 4 + 2.4
+    </p>
+
+    <p>
+      = 10.4
+    </p>
+
+    <p>
+      Portfolio Standard Deviation
+    </p>
+
+    <p>
+      = √10.4
+    </p>
+
+    <p>
+      = <strong>₹ 3.22 lakh</strong>
+    </p>
+
+    <p><strong>Alternative Computation</strong></p>
+
+    <p>
+      Portfolio Variance (%)
+    </p>
+
+    <p>
+      = (1)²(0.50)² + (1)²(0.50)² + 2(1)(1)(0.3)(0.50)(0.50)
+    </p>
+
+    <p>
+      = 0.25 + 0.25 + 0.15
+    </p>
+
+    <p>
+      = 0.65%
+    </p>
+
+    <p>
+      Portfolio Standard Deviation
+    </p>
+
+    <p>
+      = √0.65
+    </p>
+
+    <p>
+      = 0.80623%
+    </p>
+
+    <p>
+      Standard Deviation in Amount
+    </p>
+
+    <p>
+      = ₹ 400 lakh × 0.80623%
+    </p>
+
+    <p>
+      = <strong>₹ 3.22 lakh</strong>
+    </p>
+
+    <p><strong>Step 2: Calculate 10-Day Standard Deviation</strong></p>
+
+    <p>
+      10-Day Standard Deviation
+    </p>
+
+    <p>
+      = ₹ 3.22 lakh × √10
+    </p>
+
+    <p>
+      = <strong>₹ 10.18 lakh</strong>
+    </p>
+
+    <p><strong>Step 3: Calculate 10-Day 99% VaR</strong></p>
+
+    <p>
+      Z-score for 99% confidence level = 2.33
+    </p>
+
+    <p>
+      VaR = Z × Standard Deviation
+    </p>
+
+    <p>
+      = 2.33 × ₹ 10.18 lakh
+    </p>
+
+    <p>
+      = <strong>₹ 23.72 lakh</strong>
+    </p>
+
+    <p>
+      Therefore, the <strong>10-day 99% Value at Risk (VaR)</strong> for the portfolio is:
+    </p>
+
+    <p>
+      <strong>₹ 23.72 lakh</strong>
+    </p>
+  `
+},
+
+{
+  question_id: "AFM_MTPMAR25_I_Q1C",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Securitization",
+  placement: 1,
+  marks: 2,
+  question_html: `
+    <p>The pricing of securitized instruments is an important aspect of securitization. Explain this statement.</p>
+  `,
+  solution_html: `
+    <p>Pricing of securitized instruments is an important aspect of securitization. While pricing the instruments, it is important that it should be acceptable to both originators as well as to the investors. On the same basis pricing of securities can be divided into following two categories:</p>
+
+    <p><strong>(i) From Originator’s Angle</strong></p>
+
+    <p>From originator’s point of view, the instruments can be priced at a rate at which originator has to incur an outflow and if that outflow can be amortized over a period of time by investing the amount raised through securitization.</p>
+
+    <p><strong>(ii) From Investor’s Angle</strong></p>
+
+    <p>From an investor’s angle security price can be determined by discounting best estimate of expected future cash flows using rate of yield to maturity of a comparable security with respect to credit quality and average life of the securities.</p>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q2A",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Capital Budgeting - Sensitivity Analysis",
+  placement: 2,
+  marks: 6,
+  question_html: `
+    <p>JKL Ltd. is considering a project for which the following estimates are available:</p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <td>Initial Cost of the Project</td>
+        <td>₹ 20,00,00,000</td>
+      </tr>
+      <tr>
+        <td>Sales Price per Unit</td>
+        <td>₹ 800</td>
+      </tr>
+      <tr>
+        <td>Cost per Unit</td>
+        <td>₹ 500</td>
+      </tr>
+    </table>
+
+    <p><strong>Sales Volumes:</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Year</th>
+        <th>Units</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>4,00,000</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>6,00,000</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>6,00,000</td>
+      </tr>
+    </table>
+
+    <p>Discount Rate = 12% p.a.</p>
+
+    <p>You are required to measure the sensitivity (based on break-even approach) of the project in relation to each of the following parameters:</p>
+
+    <ol type="i">
+      <li>Sales Price per Unit</li>
+      <li>Unit Cost</li>
+      <li>Sales Volume</li>
+      <li>Initial Outlay</li>
+    </ol>
+
+    <p><strong>Notes:</strong></p>
+    <ol type="i">
+      <li>Taxation may be ignored.</li>
+      <li>
+        PVF Table:
+        <table border="1" cellpadding="5" cellspacing="0">
+          <tr>
+            <th>Year</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+          </tr>
+          <tr>
+            <td>PVF @ 12%</td>
+            <td>0.893</td>
+            <td>0.797</td>
+            <td>0.712</td>
+          </tr>
+        </table>
+      </li>
+      <li>Assume 360 days in a year.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>Calculation of NPV</strong></p>
+
+    <p>
+      NPV = -20,00,00,000 + (4,00,000 × 300 × 0.893)
+      + (6,00,000 × 300 × 0.797)
+      + (6,00,000 × 300 × 0.712)
+    </p>
+
+    <p>
+      = -20,00,00,000 + 10,71,60,000 + 14,34,60,000 + 12,81,60,000
+    </p>
+
+    <p>
+      = 37,87,80,000 - 20,00,00,000
+    </p>
+
+    <p>
+      = ₹ 17,87,80,000
+    </p>
+
+    <p><strong>Measurement of Sensitivity</strong></p>
+
+    <p><strong>(i) Sales Price per Unit</strong></p>
+
+    <p>
+      Let the Sales Price per Unit be S so that the project breaks even at NPV = 0.
+    </p>
+
+    <p>
+      20,00,00,000 =
+      4,00,000(S - 500)(0.893)
+      + 6,00,000(S - 500)(0.797)
+      + 6,00,000(S - 500)(0.712)
+    </p>
+
+    <p>
+      20,00,00,000 = 12,62,600(S - 500)
+    </p>
+
+    <p>
+      S - 500 = 20,00,00,000 ÷ 12,62,600
+    </p>
+
+    <p>
+      S - 500 = ₹ 158.40
+    </p>
+
+    <p>
+      S = ₹ 658.40
+    </p>
+
+    <p>
+      Percentage fall in Sales Price
+      = (800 - 658.40) ÷ 800 × 100
+    </p>
+
+    <p>
+      = <strong>17.70%</strong>
+    </p>
+
+    <p><strong>(ii) Unit Cost</strong></p>
+
+    <p>
+      Let the Cost per Unit be C so that the project breaks even at NPV = 0.
+    </p>
+
+    <p>
+      20,00,00,000 =
+      4,00,000(800 - C)(0.893)
+      + 6,00,000(800 - C)(0.797)
+      + 6,00,000(800 - C)(0.712)
+    </p>
+
+    <p>
+      20,00,00,000 = 12,62,600(800 - C)
+    </p>
+
+    <p>
+      800 - C = 20,00,00,000 ÷ 12,62,600
+    </p>
+
+    <p>
+      800 - C = ₹ 158.40
+    </p>
+
+    <p>
+      C = ₹ 641.60
+    </p>
+
+    <p>
+      Percentage increase in Cost
+      = (641.60 - 500) ÷ 500 × 100
+    </p>
+
+    <p>
+      = <strong>28.32%</strong>
+    </p>
+
+    <p><strong>(iii) Sales Volume</strong></p>
+
+    <p>
+      Required percentage fall in sales volume
+    </p>
+
+    <p>
+      = NPV ÷ Present Value of Inflows × 100
+    </p>
+
+    <p>
+      = 17,87,80,000 ÷ 37,87,80,000 × 100
+    </p>
+
+    <p>
+      = <strong>47.20%</strong>
+    </p>
+
+    <p><strong>(iv) Initial Outlay</strong></p>
+
+    <p>
+      Since the present value of inflows remains at ₹ 37,87,80,000,
+      the initial outlay can increase up to this amount.
+    </p>
+
+    <p>
+      Percentage increase in Initial Outlay
+    </p>
+
+    <p>
+      = 17,87,80,000 ÷ 20,00,00,000 × 100
+    </p>
+
+    <p>
+      = <strong>89.39%</strong>
+    </p>
+
+    <p><strong>Answer:</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Parameter</th>
+        <th>Sensitivity (%)</th>
+      </tr>
+      <tr>
+        <td>Sales Price per Unit (Decrease)</td>
+        <td>17.70%</td>
+      </tr>
+      <tr>
+        <td>Unit Cost (Increase)</td>
+        <td>28.32%</td>
+      </tr>
+      <tr>
+        <td>Sales Volume (Decrease)</td>
+        <td>47.20%</td>
+      </tr>
+      <tr>
+        <td>Initial Outlay (Increase)</td>
+        <td>89.39%</td>
+      </tr>
+    </table>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q2B",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Security Valuation",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p>The risk free rate of return (Rf) is 9 percent. The expected rate of return on the market portfolio (Rm) is 13 percent. The expected rate of growth for the dividend of Platinum Ltd. is 7 percent. The last dividend paid on the equity stock of Platinum Ltd. was ₹ 2.00. The beta of Platinum Ltd. equity stock is 1.2.</p>
+
+    <p>Required:</p>
+
+    <ol type="i">
+      <li>What is the equilibrium price of the equity stock of Platinum Ltd.?</li>
+      <li>
+        How would the equilibrium price change when changes (in absolute terms) in various parameters takes place as follows:
+        <ul>
+          <li>The inflation premium increases by 2 percent;</li>
+          <li>The expected growth rate increases by 3 percent; and</li>
+          <li>The equity beta of Platinum Ltd. rises to 1.3.</li>
+        </ul>
+      </li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>(i) Equilibrium Price of Equity using CAPM</strong></p>
+
+    <p>
+      Cost of Equity (Ke)
+      = Rf + β(Rm − Rf)
+    </p>
+
+    <p>
+      = 9% + 1.20(13% − 9%)
+    </p>
+
+    <p>
+      = 9% + 4.80%
+    </p>
+
+    <p>
+      = 13.80%
+    </p>
+
+    <p>
+      Expected Dividend (D₁)
+      = D₀(1 + g)
+    </p>
+
+    <p>
+      = 2.00(1.07)
+    </p>
+
+    <p>
+      = ₹ 2.14
+    </p>
+
+    <p>
+      Price of Share (P)
+      = D₁ / (Ke − g)
+    </p>
+
+    <p>
+      = 2.14 / (0.138 − 0.07)
+    </p>
+
+    <p>
+      = 2.14 / 0.068
+    </p>
+
+    <p>
+      = <strong>₹ 31.47</strong>
+    </p>
+
+    <p><strong>(ii) Revised Equilibrium Price after Changes</strong></p>
+
+    <p>
+      Revised Risk-free Rate
+      = 9% + 2%
+      = 11%
+    </p>
+
+    <p>
+      Revised Market Return
+      = 13% + 2%
+      = 15%
+    </p>
+
+    <p>
+      Revised Growth Rate
+      = 7% + 3%
+      = 10%
+    </p>
+
+    <p>
+      Revised Beta
+      = 1.30
+    </p>
+
+    <p>
+      Revised Cost of Equity (Ke)
+      = 11% + 1.30(15% − 11%)
+    </p>
+
+    <p>
+      = 11% + 5.20%
+    </p>
+
+    <p>
+      = 16.20%
+    </p>
+
+    <p>
+      Revised Expected Dividend (D₁)
+      = 2.00(1.10)
+    </p>
+
+    <p>
+      = ₹ 2.20
+    </p>
+
+    <p>
+      Revised Price of Share (P)
+      = 2.20 / (0.162 − 0.10)
+    </p>
+
+    <p>
+      = 2.20 / 0.062
+    </p>
+
+    <p>
+      = <strong>₹ 35.48</strong>
+    </p>
+
+    <p><strong>Answer:</strong></p>
+
+    <ol type="i">
+      <li>Equilibrium Price of Equity Stock = <strong>₹ 31.47</strong></li>
+      <li>Revised Equilibrium Price = <strong>₹ 35.48</strong></li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q3A",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Mutual Funds",
+  placement: 3,
+  marks: 6,
+  question_html: `
+    <p>On 1st April 2023 Fair Return Mutual Fund has 8,00,000 units and is having the following assets with respective prices at 4.00 p.m.</p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Shares</th>
+        <th>No. of Shares</th>
+        <th>Market Price Per Share (₹)</th>
+      </tr>
+      <tr>
+        <td>A Ltd.</td>
+        <td>20,000</td>
+        <td>19.70</td>
+      </tr>
+      <tr>
+        <td>B Ltd.</td>
+        <td>1,00,000</td>
+        <td>482.60</td>
+      </tr>
+      <tr>
+        <td>C Ltd.</td>
+        <td>20,000</td>
+        <td>264.40</td>
+      </tr>
+      <tr>
+        <td>D Ltd.</td>
+        <td>2,00,000</td>
+        <td>675.17</td>
+      </tr>
+      <tr>
+        <td>E Ltd.</td>
+        <td>60,000</td>
+        <td>25.00</td>
+      </tr>
+    </table>
+
+    <p>Required:</p>
+
+    <ol type="i">
+      <li>Calculate NAV per unit of the Fund on 1st April 2023.</li>
+      <li>
+        Assuming that on 1st April 2023, Mr. X, a HNI, transfers an amount of ₹ 50,00,100 to the Fund and Fund Manager immediately purchases shares of E Ltd. and balance is held in bank. Advise Fund Manager:
+        <ol type="A">
+          <li>Number of units to be issued to Mr. X.</li>
+          <li>The number of shares of E Ltd. to be purchased if a cash balance of ₹ 4,76,000 is required to be maintained to meet some cash expenses.</li>
+        </ol>
+      </li>
+      <li>
+        Now suppose on 2nd April 2023 at 4.00 p.m. the market price of shares is as follows:
+        <table border="1" cellpadding="5" cellspacing="0">
+          <tr>
+            <th>Shares</th>
+            <th>Price (₹)</th>
+          </tr>
+          <tr>
+            <td>A Ltd.</td>
+            <td>20.30</td>
+          </tr>
+          <tr>
+            <td>B Ltd.</td>
+            <td>513.70</td>
+          </tr>
+          <tr>
+            <td>C Ltd.</td>
+            <td>290.80</td>
+          </tr>
+          <tr>
+            <td>D Ltd.</td>
+            <td>671.90</td>
+          </tr>
+          <tr>
+            <td>E Ltd.</td>
+            <td>44.00</td>
+          </tr>
+        </table>
+
+        Determine the new NAV per unit.
+      </li>
+    </ol>
+
+    <p><em>Note: Round off calculations upto 2 decimal points.</em></p>
+  `,
+  solution_html: `
+    <p><strong>(i) NAV per Unit on 1st April 2023</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr><th>Particulars</th><th>Amount (₹)</th></tr>
+      <tr><td>A Ltd. (20,000 × 19.70)</td><td>3,94,000</td></tr>
+      <tr><td>B Ltd. (1,00,000 × 482.60)</td><td>4,82,60,000</td></tr>
+      <tr><td>C Ltd. (20,000 × 264.40)</td><td>52,88,000</td></tr>
+      <tr><td>D Ltd. (2,00,000 × 675.17)</td><td>13,50,34,000</td></tr>
+      <tr><td>E Ltd. (60,000 × 25)</td><td>15,00,000</td></tr>
+      <tr><th>Total Assets</th><th>19,04,76,000</th></tr>
+    </table>
+
+    <p>
+      NAV per Unit = 19,04,76,000 ÷ 8,00,000
+    </p>
+
+    <p>
+      = ₹ 238.095 ≈ <strong>₹ 238.10</strong>
+    </p>
+
+    <p><strong>(ii)(A) Number of Units to be issued to Mr. X</strong></p>
+
+    <p>
+      Units = 50,00,100 ÷ 238.10
+    </p>
+
+    <p>
+      = <strong>21,000 Units</strong>
+    </p>
+
+    <p><strong>(ii)(B) Number of Shares of E Ltd. to be purchased</strong></p>
+
+    <p>
+      Amount received from Mr. X = ₹ 50,00,100
+    </p>
+
+    <p>
+      Less: Cash balance to be maintained = ₹ 4,76,000
+    </p>
+
+    <p>
+      Amount available for purchase of E Ltd. shares
+      = ₹ 45,24,100
+    </p>
+
+    <p>
+      Number of shares to be purchased
+      = 45,24,100 ÷ 25
+    </p>
+
+    <p>
+      = <strong>1,80,964 Shares</strong>
+    </p>
+
+    <p><strong>(iii) NAV per Unit on 2nd April 2023</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Particulars</th>
+        <th>Amount (₹)</th>
+      </tr>
+      <tr>
+        <td>A Ltd. (20,000 × 20.30)</td>
+        <td>4,06,000</td>
+      </tr>
+      <tr>
+        <td>B Ltd. (1,00,000 × 513.70)</td>
+        <td>5,13,70,000</td>
+      </tr>
+      <tr>
+        <td>C Ltd. (20,000 × 290.80)</td>
+        <td>58,16,000</td>
+      </tr>
+      <tr>
+        <td>D Ltd. (2,00,000 × 671.90)</td>
+        <td>13,43,80,000</td>
+      </tr>
+      <tr>
+        <td>E Ltd. (2,40,964 × 44)</td>
+        <td>1,06,02,416</td>
+      </tr>
+      <tr>
+        <td>Cash</td>
+        <td>4,76,000</td>
+      </tr>
+      <tr>
+        <th>Total Net Assets</th>
+        <th>20,30,50,416</th>
+      </tr>
+    </table>
+
+    <p>
+      Total Units = 8,00,000 + 21,000 = 8,21,000 Units
+    </p>
+
+    <p>
+      NAV per Unit = 20,30,50,416 ÷ 8,21,000
+    </p>
+
+    <p>
+      = <strong>₹ 247.32 per unit</strong>
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q3B",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Startup Valuation",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p>There is a privately held company X Pvt. Ltd that is operating into the retail space, and is now scouting for angel investors. The details pertinent to valuing X Pvt. Ltd are as follows:</p>
+
+    <p>The company has achieved break even this year and has an EBITDA of ₹ 90 crore. The unleveraged beta based on the industry in which it operates is 1.8, and the average debt to equity ratio is hovering at 40:60. The rate of return provided by risk free liquid bonds is 5%. The EV is to be taken at a multiple of 5 on EBITDA.</p>
+
+    <p>The accountant has informed that the EBITDA of ₹ 90 crore includes an extraordinary gain of ₹ 10 crore for the year, and a potential write off of preliminary sales promotion costs of ₹ 20 crore are still pending.</p>
+
+    <p>The internal assessment of rate of market return for the industry is 11%. The FCFs for the next 3 years are as follows:</p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Year</th>
+        <th>FCF (₹ crore)</th>
+      </tr>
+      <tr>
+        <td>Y1</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Y2</td>
+        <td>120</td>
+      </tr>
+      <tr>
+        <td>Y3</td>
+        <td>150</td>
+      </tr>
+    </table>
+
+    <p>Post-tax Cost of Debt = 8.40%</p>
+    <p>Tax Rate = 30%</p>
+
+    <p>What is the potential value to be placed on X Pvt. Ltd?</p>
+
+    <p><em>Note: While PV Factors values are to be rounded off to 3 decimal points, other calculations should be rounded off to 2 decimal points.</em></p>
+  `,
+  solution_html: `
+    <p><strong>Levered Beta</strong></p>
+
+    <p>
+      βL = 1.8[1 + (1 - 0.30)(40/60)]
+    </p>
+
+    <p>
+      = 1.8[1 + 0.4667]
+    </p>
+
+    <p>
+      = <strong>2.64</strong>
+    </p>
+
+    <p><strong>Adjusted EBITDA</strong></p>
+
+    <p>
+      EBITDA = ₹ 90 crore
+    </p>
+
+    <p>
+      Less: Extraordinary Gain = ₹ 10 crore
+    </p>
+
+    <p>
+      Less: Pending Write-off = ₹ 20 crore
+    </p>
+
+    <p>
+      Adjusted EBITDA = <strong>₹ 60 crore</strong>
+    </p>
+
+    <p><strong>Enterprise Value</strong></p>
+
+    <p>
+      EV = 5 × ₹ 60 crore
+    </p>
+
+    <p>
+      = <strong>₹ 300 crore</strong>
+    </p>
+
+    <p><strong>Cost of Equity (CAPM)</strong></p>
+
+    <p>
+      Ke = Rf + β(Rm − Rf)
+    </p>
+
+    <p>
+      = 5% + 2.64(11% − 5%)
+    </p>
+
+    <p>
+      = 5% + 15.84%
+    </p>
+
+    <p>
+      = <strong>20.84%</strong>
+    </p>
+
+    <p><strong>Weighted Average Cost of Capital (WACC)</strong></p>
+
+    <p>
+      WACC = (20.84 × 60/100) + (8.40 × 40/100)
+    </p>
+
+    <p>
+      = 12.504 + 3.36
+    </p>
+
+    <p>
+      = <strong>15.864%</strong>
+    </p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Year</th>
+        <th>FCF (₹ crore)</th>
+        <th>Discount Factor</th>
+        <th>PV (₹ crore)</th>
+      </tr>
+      <tr>
+        <td>Y1</td>
+        <td>100</td>
+        <td>0.863</td>
+        <td>86.30</td>
+      </tr>
+      <tr>
+        <td>Y2</td>
+        <td>120</td>
+        <td>0.745</td>
+        <td>89.40</td>
+      </tr>
+      <tr>
+        <td>Y3</td>
+        <td>150</td>
+        <td>0.643</td>
+        <td>96.45</td>
+      </tr>
+    </table>
+
+    <p>
+      Value of Firm = 86.30 + 89.40 + 96.45
+    </p>
+
+    <p>
+      = <strong>₹ 272.15 crore</strong>
+    </p>
+
+    <p>
+      Therefore, the <strong>potential value of X Pvt. Ltd. is ₹ 272.15 crore.</strong>
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q3C",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Technical Analysis",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p>Describe briefly the Dow Theory for technical analysis and how it classifies the market movements.</p>
+
+    <p><strong>OR</strong></p>
+
+    <p>Explain briefly the concept of the Efficient Frontier. If an investor's portfolio is not efficient, then what action should he/she take as per this concept.</p>
+  `,
+  solution_html: `
+    <p><strong>Either</strong></p>
+
+    <p><strong>Dow Theory</strong></p>
+
+    <p>The Dow Theory’s purpose is to determine where the market is and where it is going, although not how far or how high. The theory states that if the cyclical swings of the stock market averages are successively higher and the successive lows are higher, then the market trend is upward and a bullish market exists. Conversely, if the successive highs and successive lows are lower, then the market trend is downward and a bearish market exists.</p>
+
+    <p>The Dow Theory is based upon the movements of two indices constructed by Charles Dow:</p>
+
+    <ol>
+      <li>Dow Jones Industrial Average (DJIA)</li>
+      <li>Dow Jones Transportation Average (DJTA)</li>
+    </ol>
+
+    <p>The movements of the market are divided into three classifications:</p>
+
+    <ol type="i">
+      <li><strong>Primary Movement:</strong> The main trend of the market lasting from one year to thirty-six months or longer. It is commonly known as a bull market or bear market.</li>
+      <li><strong>Secondary Movement:</strong> A shorter movement opposite in direction to the primary trend. It generally lasts from two weeks to a month or more.</li>
+      <li><strong>Daily Fluctuations:</strong> Narrow day-to-day market movements.</li>
+    </ol>
+
+    <hr>
+
+    <p><strong>OR</strong></p>
+
+    <p><strong>Efficient Frontier</strong></p>
+
+    <p>Markowitz formalized the risk-return relationship and developed the concept of the Efficient Frontier using the Mean-Variance Dominance Principle. For portfolio selection, comparison among alternative portfolios is essential.</p>
+
+    <p>A portfolio dominates another portfolio if there exists another portfolio with:</p>
+
+    <ol type="a">
+      <li>A higher expected return with the same level of risk, or</li>
+      <li>A lower risk with the same level of expected return.</li>
+    </ol>
+
+    <p>Markowitz defined diversification as the process of combining assets that are less than perfectly positively correlated in order to reduce portfolio risk without sacrificing expected return.</p>
+
+    <p>If an investor’s portfolio is not efficient, he/she may:</p>
+
+    <ol type="i">
+      <li>Increase the expected return without increasing risk.</li>
+      <li>Decrease risk without decreasing expected return.</li>
+      <li>Achieve a combination of higher expected return and lower risk.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q4A",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "International Capital Budgeting",
+  placement: 4,
+  marks: 8,
+  question_html: `
+    <p>A multinational company is planning to set up a subsidiary company in India (where hitherto it was exporting) in view of growing demand for its product and competition from other MNCs.</p>
+
+    <p>The initial project cost (consisting of Plant and Machinery including installation) is estimated to be US$ 500 million. The net working capital requirements are estimated at US$ 50 million. The company follows straight line method of depreciation.</p>
+
+    <p>Presently, the company is exporting two million units every year at a unit price of US$ 80, its variable cost per unit being US$ 40.</p>
+
+    <p>The Chief Financial Officer has estimated the following operating cost and other data in respect of proposed project:</p>
+
+    <ol type="i">
+      <li>Variable operating cost will be US$ 20 per unit of production.</li>
+      <li>Additional cash fixed cost will be US$ 30 million p.a. and project's share of allocated fixed cost will be US$ 3 million p.a. based on principle of ability to share.</li>
+      <li>Production capacity of the proposed project in India will be 5 million units.</li>
+      <li>Expected useful life of the proposed plant is five years with no salvage value.</li>
+      <li>Existing working capital investment for production and sale of two million units through exports was US$ 15 million.</li>
+      <li>Export of the product in the coming year will decrease to 1.5 million units in case the company does not open subsidiary company in India, in view of the presence of competing MNCs.</li>
+      <li>Applicable Corporate Income Tax rate is 35%.</li>
+      <li>Required rate of return for such project is 12%.</li>
+    </ol>
+
+    <p>Assuming that there will be no variation in the exchange rate of two currencies and all profits will be repatriated, as there will be no withholding tax, estimate the Net Present Value (NPV) of the proposed project in India.</p>
+
+    <p>Present Value Interest Factors (PVIF) @ 12%:</p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Year</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+      </tr>
+      <tr>
+        <td>PVIF</td>
+        <td>0.8929</td>
+        <td>0.7972</td>
+        <td>0.7118</td>
+        <td>0.6355</td>
+        <td>0.5674</td>
+      </tr>
+    </table>
+  `,
+  solution_html: `
+    <p><strong>I. Incremental Cash Outflows</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Particulars</th>
+        <th>US$ Million</th>
+      </tr>
+      <tr>
+        <td>Cost of Plant and Machinery</td>
+        <td>500.00</td>
+      </tr>
+      <tr>
+        <td>Working Capital Requirement</td>
+        <td>50.00</td>
+      </tr>
+      <tr>
+        <td>Less: Release of Existing Working Capital</td>
+        <td>(15.00)</td>
+      </tr>
+      <tr>
+        <th>Net Initial Outflow</th>
+        <th>535.00</th>
+      </tr>
+    </table>
+
+    <p><strong>II. Incremental Cash Inflow after Tax (CFAT)</strong></p>
+
+    <p><strong>(a) Generated by Investment in India</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Particulars</th>
+        <th>US$ Million</th>
+      </tr>
+      <tr>
+        <td>Sales Revenue (5 Million × $80)</td>
+        <td>400.00</td>
+      </tr>
+      <tr>
+        <td>Less: Variable Cost (5 Million × $20)</td>
+        <td>100.00</td>
+      </tr>
+      <tr>
+        <td>Less: Fixed Cost</td>
+        <td>30.00</td>
+      </tr>
+      <tr>
+        <td>Less: Depreciation (500/5)</td>
+        <td>100.00</td>
+      </tr>
+      <tr>
+        <td>EBIT</td>
+        <td>170.00</td>
+      </tr>
+      <tr>
+        <td>Less: Tax @ 35%</td>
+        <td>59.50</td>
+      </tr>
+      <tr>
+        <td>EAT</td>
+        <td>110.50</td>
+      </tr>
+      <tr>
+        <td>Add: Depreciation</td>
+        <td>100.00</td>
+      </tr>
+      <tr>
+        <th>CFAT (Years 1-5)</th>
+        <th>210.50</th>
+      </tr>
+    </table>
+
+    <p><strong>(b) Recovery of Working Capital at end of Year 5</strong></p>
+
+    <p>US$ 35 Million</p>
+
+    <p><strong>(c) Opportunity Cost - Export Contribution Forgone</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Particulars</th>
+        <th>US$ Million</th>
+      </tr>
+      <tr>
+        <td>Sales Revenue (1.5 Million × $80)</td>
+        <td>120.00</td>
+      </tr>
+      <tr>
+        <td>Less: Variable Cost (1.5 Million × $40)</td>
+        <td>60.00</td>
+      </tr>
+      <tr>
+        <td>Contribution before Tax</td>
+        <td>60.00</td>
+      </tr>
+      <tr>
+        <td>Less: Tax @ 35%</td>
+        <td>21.00</td>
+      </tr>
+      <tr>
+        <th>CFAT (Years 1-5)</th>
+        <th>39.00</th>
+      </tr>
+    </table>
+
+    <p><strong>(d) Additional CFAT attributable to Foreign Investment</strong></p>
+
+    <p>
+      CFAT from Indian Subsidiary = US$ 210.50 Million
+    </p>
+
+    <p>
+      Less: CFAT from Exports = US$ 39.00 Million
+    </p>
+
+    <p>
+      Additional CFAT = <strong>US$ 171.50 Million</strong>
+    </p>
+
+    <p><strong>III. Determination of NPV</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Year</th>
+        <th>Cash Flow (US$ Million)</th>
+        <th>PV Factor @12%</th>
+        <th>Present Value (US$ Million)</th>
+      </tr>
+      <tr>
+        <td>1-5</td>
+        <td>171.50</td>
+        <td>3.6048</td>
+        <td>618.2232</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>35.00</td>
+        <td>0.5674</td>
+        <td>19.8590</td>
+      </tr>
+      <tr>
+        <th colspan="3">Total PV of Inflows</th>
+        <th>638.0822</th>
+      </tr>
+      <tr>
+        <th colspan="3">Less: Initial Outflow</th>
+        <th>535.0000</th>
+      </tr>
+      <tr>
+        <th colspan="3">NPV</th>
+        <th>103.0822</th>
+      </tr>
+    </table>
+
+    <p>
+      Since the NPV is positive, the proposal should be accepted.
+    </p>
+
+    <p>
+      <strong>Net Present Value (NPV) = US$ 103.0822 Million</strong>
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q4B",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Portfolio Hedging using Index Futures",
+  placement: 4,
+  marks: 6,
+  question_html: `
+    <p>Details about portfolio of shares of an investor are as below:</p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Shares</th>
+        <th>No. of Shares (Lakh)</th>
+        <th>Price per Share (₹)</th>
+        <th>Beta</th>
+      </tr>
+      <tr>
+        <td>A Ltd.</td>
+        <td>3.00</td>
+        <td>500</td>
+        <td>1.40</td>
+      </tr>
+      <tr>
+        <td>B Ltd.</td>
+        <td>4.00</td>
+        <td>750</td>
+        <td>1.20</td>
+      </tr>
+      <tr>
+        <td>C Ltd.</td>
+        <td>2.00</td>
+        <td>250</td>
+        <td>1.60</td>
+      </tr>
+    </table>
+
+    <p>The investor thinks that the risk of portfolio is very high and wants to reduce the portfolio beta to 0.91.</p>
+
+    <p>He is considering two alternatives:</p>
+
+    <ol type="i">
+      <li>Dispose off a part of his existing portfolio to acquire risk free securities; or</li>
+      <li>Take appropriate position on Nifty Futures which are currently traded at 8,125 and each Nifty point is worth ₹ 200.</li>
+    </ol>
+
+    <p>You are required to determine:</p>
+
+    <ol>
+      <li>Portfolio Beta</li>
+      <li>The value of risk free securities to be acquired</li>
+      <li>The number of shares of each company to be disposed off</li>
+      <li>The number of Nifty contracts to be bought/sold</li>
+      <li>The value of portfolio beta for 2% rise in Nifty</li>
+    </ol>
+  `,
+  solution_html: `
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Shares</th>
+        <th>No. of Shares (Lakh)</th>
+        <th>Price per Share (₹)</th>
+        <th>Value (₹ Lakh)</th>
+        <th>Weight (w)</th>
+        <th>Beta (β)</th>
+        <th>wβ</th>
+      </tr>
+      <tr>
+        <td>A Ltd.</td>
+        <td>3.00</td>
+        <td>500</td>
+        <td>1,500</td>
+        <td>0.30</td>
+        <td>1.40</td>
+        <td>0.42</td>
+      </tr>
+      <tr>
+        <td>B Ltd.</td>
+        <td>4.00</td>
+        <td>750</td>
+        <td>3,000</td>
+        <td>0.60</td>
+        <td>1.20</td>
+        <td>0.72</td>
+      </tr>
+      <tr>
+        <td>C Ltd.</td>
+        <td>2.00</td>
+        <td>250</td>
+        <td>500</td>
+        <td>0.10</td>
+        <td>1.60</td>
+        <td>0.16</td>
+      </tr>
+      <tr>
+        <th colspan="3">Total</th>
+        <th>5,000</th>
+        <th>1.00</th>
+        <th></th>
+        <th>1.30</th>
+      </tr>
+    </table>
+
+    <p><strong>(1) Portfolio Beta</strong></p>
+
+    <p>
+      Portfolio Beta = <strong>1.30</strong>
+    </p>
+
+    <p><strong>(2) Value of Risk Free Securities to be Acquired</strong></p>
+
+    <p>
+      Let proportion invested in Risk Free Securities = p
+    </p>
+
+    <p>
+      0.91 = 0 × p + 1.30(1 − p)
+    </p>
+
+    <p>
+      p = 0.30
+    </p>
+
+    <p>
+      Therefore, 30% of the portfolio should be invested in risk free securities.
+    </p>
+
+    <p>
+      Value = 30% × ₹ 5,000 lakh
+    </p>
+
+    <p>
+      = <strong>₹ 1,500 lakh</strong>
+    </p>
+
+    <p><strong>(3) Number of Shares to be Disposed Off</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Shares</th>
+        <th>Weight</th>
+        <th>Amount to be Sold (₹ Lakh)</th>
+        <th>Price per Share (₹)</th>
+        <th>Shares to be Sold (Lakh)</th>
+      </tr>
+      <tr>
+        <td>A Ltd.</td>
+        <td>0.30</td>
+        <td>450</td>
+        <td>500</td>
+        <td>0.90</td>
+      </tr>
+      <tr>
+        <td>B Ltd.</td>
+        <td>0.60</td>
+        <td>900</td>
+        <td>750</td>
+        <td>1.20</td>
+      </tr>
+      <tr>
+        <td>C Ltd.</td>
+        <td>0.10</td>
+        <td>150</td>
+        <td>250</td>
+        <td>0.60</td>
+      </tr>
+    </table>
+
+    <p><strong>(4) Number of Nifty Futures Contracts to be Sold</strong></p>
+
+    <p>
+      Contracts = [(1.30 − 0.91) × ₹ 5,000 lakh]
+      ÷ (8,125 × 200)
+    </p>
+
+    <p>
+      = <strong>120 Contracts</strong>
+    </p>
+
+    <p>
+      Since beta is to be reduced, Nifty Futures should be <strong>sold</strong>.
+    </p>
+
+    <p><strong>(5) Portfolio Beta for 2% Rise in Nifty</strong></p>
+
+    <p>
+      Rise in Portfolio Value = 2% × 1.30 = 2.6%
+    </p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ Lakh</th>
+      </tr>
+      <tr>
+        <td>Current Portfolio Value</td>
+        <td>5,000</td>
+      </tr>
+      <tr>
+        <td>Value after 2.6% Rise</td>
+        <td>5,130</td>
+      </tr>
+      <tr>
+        <td>Less: MTM Loss on Futures (8125 × 2% × 200 × 120)</td>
+        <td>39</td>
+      </tr>
+      <tr>
+        <td>Net Portfolio Value</td>
+        <td>5,091</td>
+      </tr>
+    </table>
+
+    <p>
+      Percentage Change = (5,091 − 5,000) ÷ 5,000 × 100
+    </p>
+
+    <p>
+      = 1.82%
+    </p>
+
+    <p>
+      Beta = 1.82% ÷ 2%
+    </p>
+
+    <p>
+      = <strong>0.91</strong>
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q5A",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Merger & Acquisition",
+  placement: 5,
+  marks: 10,
+  question_html: `
+    <p>BA Ltd. and DA Ltd. both operate in the same industry. The Financial Statements of both companies for the current financial year are as follows:</p>
+
+    <p><strong>Balance Sheet</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Particulars</th>
+        <th>BA Ltd. (₹)</th>
+        <th>DA Ltd. (₹)</th>
+      </tr>
+      <tr>
+        <td>Current Assets</td>
+        <td>14,00,000</td>
+        <td>10,00,000</td>
+      </tr>
+      <tr>
+        <td>Fixed Assets (Net)</td>
+        <td>10,00,000</td>
+        <td>5,00,000</td>
+      </tr>
+      <tr>
+        <td><strong>Total Assets</strong></td>
+        <td><strong>24,00,000</strong></td>
+        <td><strong>15,00,000</strong></td>
+      </tr>
+      <tr>
+        <td>Equity Capital (₹10 each)</td>
+        <td>10,00,000</td>
+        <td>8,00,000</td>
+      </tr>
+      <tr>
+        <td>Retained Earnings</td>
+        <td>2,00,000</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>14% Long-term Debt</td>
+        <td>5,00,000</td>
+        <td>3,00,000</td>
+      </tr>
+      <tr>
+        <td>Current Liabilities</td>
+        <td>7,00,000</td>
+        <td>4,00,000</td>
+      </tr>
+      <tr>
+        <td><strong>Total</strong></td>
+        <td><strong>24,00,000</strong></td>
+        <td><strong>15,00,000</strong></td>
+      </tr>
+    </table>
+
+    <p><strong>Income Statement</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Particulars</th>
+        <th>BA Ltd. (₹)</th>
+        <th>DA Ltd. (₹)</th>
+      </tr>
+      <tr>
+        <td>Net Sales</td>
+        <td>34,50,000</td>
+        <td>17,00,000</td>
+      </tr>
+      <tr>
+        <td>Cost of Goods Sold</td>
+        <td>27,60,000</td>
+        <td>13,60,000</td>
+      </tr>
+      <tr>
+        <td>Gross Profit</td>
+        <td>6,90,000</td>
+        <td>3,40,000</td>
+      </tr>
+      <tr>
+        <td>Operating Expenses</td>
+        <td>2,00,000</td>
+        <td>1,00,000</td>
+      </tr>
+      <tr>
+        <td>Interest</td>
+        <td>70,000</td>
+        <td>42,000</td>
+      </tr>
+      <tr>
+        <td>Earnings Before Tax</td>
+        <td>4,20,000</td>
+        <td>1,98,000</td>
+      </tr>
+      <tr>
+        <td>Tax @ 50%</td>
+        <td>2,10,000</td>
+        <td>99,000</td>
+      </tr>
+      <tr>
+        <td>Earnings After Tax (EAT)</td>
+        <td>2,10,000</td>
+        <td>99,000</td>
+      </tr>
+      <tr>
+        <td>No. of Equity Shares</td>
+        <td>1,00,000</td>
+        <td>80,000</td>
+      </tr>
+      <tr>
+        <td>Dividend Payout Ratio</td>
+        <td>40%</td>
+        <td>60%</td>
+      </tr>
+      <tr>
+        <td>Market Price per Share</td>
+        <td>₹ 40</td>
+        <td>₹ 15</td>
+      </tr>
+    </table>
+
+    <p>Assume that both companies are negotiating a merger through an exchange of equity shares. You are required to:</p>
+
+    <ol type="i">
+      <li>Decompose the share price of both companies into EPS and P/E components and segregate EPS into ROE and Book Value per Share components.</li>
+      <li>Estimate future EPS growth rates for each company.</li>
+      <li>Develop a range of justifiable equity share exchange ratios.</li>
+      <li>Calculate post-merger EPS based on exchange ratio of 0.4:1 and indicate EPS accretion/dilution.</li>
+      <li>Estimate post-merger market price and resulting accretion/dilution.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>(i) Determination of EPS, P/E Ratio, ROE and BVPS</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Particulars</th>
+        <th>BA Ltd.</th>
+        <th>DA Ltd.</th>
+      </tr>
+      <tr>
+        <td>EAT</td>
+        <td>₹ 2,10,000</td>
+        <td>₹ 99,000</td>
+      </tr>
+      <tr>
+        <td>No. of Shares</td>
+        <td>1,00,000</td>
+        <td>80,000</td>
+      </tr>
+      <tr>
+        <td>EPS</td>
+        <td>₹ 2.10</td>
+        <td>₹ 1.2375</td>
+      </tr>
+      <tr>
+        <td>Market Price per Share</td>
+        <td>₹ 40</td>
+        <td>₹ 15</td>
+      </tr>
+      <tr>
+        <td>P/E Ratio</td>
+        <td>19.05</td>
+        <td>12.12</td>
+      </tr>
+      <tr>
+        <td>Equity Funds</td>
+        <td>₹ 12,00,000</td>
+        <td>₹ 8,00,000</td>
+      </tr>
+      <tr>
+        <td>BVPS</td>
+        <td>₹ 12</td>
+        <td>₹ 10</td>
+      </tr>
+      <tr>
+        <td>ROE</td>
+        <td>17.50%</td>
+        <td>12.37%</td>
+      </tr>
+    </table>
+
+    <p><strong>(ii) Estimation of Growth Rate in EPS</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Particulars</th>
+        <th>BA Ltd.</th>
+        <th>DA Ltd.</th>
+      </tr>
+      <tr>
+        <td>Retention Ratio</td>
+        <td>0.60</td>
+        <td>0.40</td>
+      </tr>
+      <tr>
+        <td>Growth Rate = ROE × Retention Ratio</td>
+        <td>10.50%</td>
+        <td>4.95%</td>
+      </tr>
+    </table>
+
+    <p><strong>(iii) Justifiable Equity Share Exchange Ratio</strong></p>
+
+    <p>
+      Based on Intrinsic Value:
+    </p>
+
+    <p>
+      = ₹ 20 ÷ ₹ 40
+    </p>
+
+    <p>
+      = <strong>0.50 : 1 (Upper Limit)</strong>
+    </p>
+
+    <p>
+      Based on Market Price:
+    </p>
+
+    <p>
+      = ₹ 15 ÷ ₹ 40
+    </p>
+
+    <p>
+      = <strong>0.375 : 1 (Lower Limit)</strong>
+    </p>
+
+    <p>
+      Since BA Ltd. has higher EPS, ROE, P/E Ratio and Growth Rate, the negotiated ratio is expected to be closer to the lower limit.
+    </p>
+
+    <p><strong>(iv) Post-Merger EPS and EPS Accretion/Dilution</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Particulars</th>
+        <th>BA Ltd.</th>
+        <th>DA Ltd.</th>
+        <th>Combined</th>
+      </tr>
+      <tr>
+        <td>EAT (₹)</td>
+        <td>2,10,000</td>
+        <td>99,000</td>
+        <td>3,09,000</td>
+      </tr>
+      <tr>
+        <td>Shares Outstanding</td>
+        <td>1,00,000</td>
+        <td>80,000</td>
+        <td>1,32,000</td>
+      </tr>
+      <tr>
+        <td>EPS (₹)</td>
+        <td>2.10</td>
+        <td>1.2375</td>
+        <td>2.341</td>
+      </tr>
+    </table>
+
+    <p>
+      EPS Accretion to BA Shareholders
+      = ₹ 2.341 − ₹ 2.10
+      = <strong>₹ 0.241</strong>
+    </p>
+
+    <p>
+      EPS available to DA Shareholders
+      = ₹ 2.341 × 0.40
+      = ₹ 0.936
+    </p>
+
+    <p>
+      EPS Dilution to DA Shareholders
+      = ₹ 1.2375 − ₹ 0.936
+      = <strong>₹ 0.301</strong>
+    </p>
+
+    <p><strong>(v) Post-Merger Market Price and Accretion/Dilution</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Particulars</th>
+        <th>BA Ltd.</th>
+        <th>DA Ltd.</th>
+        <th>Combined</th>
+      </tr>
+      <tr>
+        <td>EPS (₹)</td>
+        <td>2.10</td>
+        <td>1.2375</td>
+        <td>2.341</td>
+      </tr>
+      <tr>
+        <td>P/E Ratio</td>
+        <td>19.05</td>
+        <td>12.12</td>
+        <td>19.05</td>
+      </tr>
+      <tr>
+        <td>Market Price (₹)</td>
+        <td>40.00</td>
+        <td>15.00</td>
+        <td>44.60</td>
+      </tr>
+    </table>
+
+    <p>
+      Accretion to BA Shareholders
+      = ₹ 44.60 − ₹ 40.00
+      = <strong>₹ 4.60</strong>
+    </p>
+
+    <p>
+      Value available to DA Shareholders
+      = ₹ 44.60 × 0.40
+      = ₹ 17.84
+    </p>
+
+    <p>
+      Accretion to DA Shareholders
+      = ₹ 17.84 − ₹ 15.00
+      = <strong>₹ 2.84</strong>
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q5B",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Forward Rate Agreement (FRA)",
+  placement: 5,
+  marks: 4,
+  question_html: `
+    <p>TM Fincorp has bought a 6 × 9 ₹ 100 crore Forward Rate Agreement (FRA) at 5.25%.</p>
+
+    <p>On fixing date, the reference rate (MIBOR) is as follows:</p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Period</th>
+        <th>Rate (%)</th>
+      </tr>
+      <tr>
+        <td>3 Months</td>
+        <td>5.50</td>
+      </tr>
+      <tr>
+        <td>6 Months</td>
+        <td>5.70</td>
+      </tr>
+      <tr>
+        <td>9 Months</td>
+        <td>5.85</td>
+      </tr>
+    </table>
+
+    <p>You are required to determine:</p>
+
+    <ol type="i">
+      <li>Profit/Loss to TM Fincorp in terms of basis points.</li>
+      <li>The settlement amount.</li>
+    </ol>
+
+    <p><em>Assume 360 days in a year.</em></p>
+  `,
+  solution_html: `
+    <p><strong>(i) Profit/Loss in Basis Points</strong></p>
+
+    <p>
+      A 6 × 9 FRA is a contract on the 3-month interest rate commencing after 6 months.
+    </p>
+
+    <p>
+      Relevant Reference Rate = 3-Month MIBOR = 5.50%
+    </p>
+
+    <p>
+      FRA Rate = 5.25%
+    </p>
+
+    <p>
+      Difference = 5.50% − 5.25%
+    </p>
+
+    <p>
+      = 0.25%
+    </p>
+
+    <p>
+      = <strong>25 Basis Points Profit</strong>
+    </p>
+
+    <p><strong>(ii) Settlement Amount</strong></p>
+
+    <p>
+      Settlement Amount =
+    </p>
+
+    <p>
+      [N(RR − FR)(dtm/360)]
+      ÷ [1 + RR(dtm/360)]
+    </p>
+
+    <p>Where:</p>
+
+    <ul>
+      <li>N = Notional Principal Amount</li>
+      <li>RR = Reference Rate</li>
+      <li>FR = FRA Rate</li>
+      <li>dtm = FRA Period in Days</li>
+    </ul>
+
+    <p>
+      = [100 crore × (5.50% − 5.25%) × (90/360)]
+      ÷ [1 + 0.055 × (90/360)]
+    </p>
+
+    <p>
+      = <strong>₹ 6,16,523</strong>
+    </p>
+
+    <p>
+      Therefore, TM Fincorp will receive a profit of <strong>₹ 6,16,523</strong>.
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q6A",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Technical Analysis - Exponential Moving Average (EMA)",
+  placement: 6,
+  marks: 6,
+  question_html: `
+    <p>Closing values of NSE Nifty from 6th to 17th day of January 2020 were as follows:</p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Day</th>
+        <th>Date</th>
+        <th>Day</th>
+        <th>Sensex</th>
+      </tr>
+      <tr><td>1</td><td>6</td><td>THU</td><td>14522</td></tr>
+      <tr><td>2</td><td>7</td><td>FRI</td><td>14925</td></tr>
+      <tr><td>3</td><td>8</td><td>SAT</td><td>No Trading</td></tr>
+      <tr><td>4</td><td>9</td><td>SUN</td><td>No Trading</td></tr>
+      <tr><td>5</td><td>10</td><td>MON</td><td>15222</td></tr>
+      <tr><td>6</td><td>11</td><td>TUE</td><td>16000</td></tr>
+      <tr><td>7</td><td>12</td><td>WED</td><td>16400</td></tr>
+      <tr><td>8</td><td>13</td><td>THU</td><td>17000</td></tr>
+      <tr><td>9</td><td>14</td><td>FRI</td><td>No Trading</td></tr>
+      <tr><td>10</td><td>15</td><td>SAT</td><td>No Trading</td></tr>
+      <tr><td>11</td><td>16</td><td>SUN</td><td>No Trading</td></tr>
+      <tr><td>12</td><td>17</td><td>MON</td><td>18000</td></tr>
+    </table>
+
+    <p>Calculate Exponential Moving Average (EMA) of Sensex during the above period. The previous day EMA of Sensex can be assumed as 15,000.</p>
+
+    <p>The value of exponent for 31 days EMA is 0.062.</p>
+
+    <p>Give detailed analysis on the basis of your calculations.</p>
+
+    <p><em>Note: Round off final calculations upto 3 decimal points.</em></p>
+  `,
+  solution_html: `
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Date</th>
+        <th>Sensex</th>
+        <th>Previous EMA</th>
+        <th>Difference (1-2)</th>
+        <th>Difference × 0.062</th>
+        <th>New EMA</th>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>14522</td>
+        <td>15000.000</td>
+        <td>(478.000)</td>
+        <td>(29.636)</td>
+        <td>14970.364</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>14925</td>
+        <td>14970.364</td>
+        <td>(45.364)</td>
+        <td>(2.812)</td>
+        <td>14967.552</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>15222</td>
+        <td>14967.552</td>
+        <td>254.448</td>
+        <td>15.776</td>
+        <td>14983.328</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>16000</td>
+        <td>14983.328</td>
+        <td>1016.672</td>
+        <td>63.034</td>
+        <td>15046.362</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>16400</td>
+        <td>15046.362</td>
+        <td>1353.638</td>
+        <td>83.926</td>
+        <td>15130.288</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>17000</td>
+        <td>15130.288</td>
+        <td>1869.712</td>
+        <td>115.922</td>
+        <td>15246.210</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>18000</td>
+        <td>15246.210</td>
+        <td>2753.790</td>
+        <td>170.735</td>
+        <td>15416.945</td>
+      </tr>
+    </table>
+
+    <p><strong>Conclusion:</strong></p>
+
+    <p>
+      The market is <strong>bullish</strong>. The market is likely to remain bullish in the short term to medium term if other factors remain unchanged.
+    </p>
+
+    <p>
+      On the basis of EMA indicator, investors and brokers can take a <strong>long position</strong>.
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q6B",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Foreign Exchange Risk Management",
+  placement: 6,
+  marks: 4,
+  question_html: `
+    <p>Sun Ltd. is planning to import equipment from Japan at a cost of 3,400 lakh yen.</p>
+
+    <p>The company may avail loans at 18% per annum with quarterly rests with which it can import the equipment.</p>
+
+    <p>The company has also an offer from Osaka branch of an India based bank extending credit of 180 days at 2% per annum against opening of an irrevocable letter of credit.</p>
+
+    <p><strong>Additional Information:</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <td>Present Exchange Rate</td>
+        <td>₹ 100 = 340 Yen</td>
+      </tr>
+      <tr>
+        <td>180 Days Forward Rate</td>
+        <td>₹ 100 = 345 Yen</td>
+      </tr>
+      <tr>
+        <td>Commission Charges for Letter of Credit</td>
+        <td>2% p.a.</td>
+      </tr>
+    </table>
+
+    <p>Advise the company whether the offer from the foreign branch should be accepted.</p>
+  `,
+  solution_html: `
+    <p><strong>Option I: Finance Purchase through Domestic Loan</strong></p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ in Lakh</th>
+      </tr>
+      <tr>
+        <td>Cost of Equipment (3400 lakh yen at ₹100 = 340 yen)</td>
+        <td>1,000.00</td>
+      </tr>
+      <tr>
+        <td>Add: Interest @ 4.5% for First Quarter</td>
+        <td>45.00</td>
+      </tr>
+      <tr>
+        <td>Add: Interest @ 4.5% for Second Quarter on ₹1,045 lakh</td>
+        <td>47.03</td>
+      </tr>
+      <tr>
+        <th>Total Outflow</th>
+        <th>1,092.03</th>
+      </tr>
+    </table>
+
+    <p>
+      Alternatively:
+    </p>
+
+    <p>
+      ₹ 1,000 × (1.045)² = ₹ 1,092.03 lakh
+    </p>
+
+    <p><strong>Option II: Accept Foreign Branch Offer</strong></p>
+
+    <p><strong>(A) Cost of Letter of Credit</strong></p>
+
+    <p>
+      Commission @ 1% (for 180 days)
+    </p>
+
+    <p>
+      = 3400 lakh yen × (₹100 / 340 yen) × 1%
+    </p>
+
+    <p>
+      = ₹ 10.00 lakh
+    </p>
+
+    <p>
+      Add: Interest for 2 Quarters = ₹ 0.90 lakh
+    </p>
+
+    <p>
+      Total (A) = <strong>₹ 10.90 lakh</strong>
+    </p>
+
+    <p><strong>(B) Payment after 180 Days</strong></p>
+
+    <p>
+      Principal = 3400 lakh yen
+    </p>
+
+    <p>
+      Interest = 3400 × 2% × (180/365)
+    </p>
+
+    <p>
+      = 33.53 lakh yen
+    </p>
+
+    <p>
+      Amount payable = 3433.53 lakh yen
+    </p>
+
+    <p>
+      Converted at Forward Rate:
+    </p>
+
+    <p>
+      = (3433.53 ÷ 345) × 100
+    </p>
+
+    <p>
+      = ₹ 995.23 lakh
+    </p>
+
+    <p>
+      Total Cost = (A) + (B)
+    </p>
+
+    <p>
+      = ₹ 10.90 lakh + ₹ 995.23 lakh
+    </p>
+
+    <p>
+      = <strong>₹ 1,006.13 lakh</strong>
+    </p>
+
+    <p><strong>Advice:</strong></p>
+
+    <p>
+      Cost under Option I = ₹ 1,092.03 lakh
+    </p>
+
+    <p>
+      Cost under Option II = ₹ 1,006.13 lakh
+    </p>
+
+    <p>
+      Savings = ₹ 85.90 lakh
+    </p>
+
+    <p>
+      Therefore, the company should <strong>accept the offer from the foreign branch</strong> as it is cheaper by <strong>₹ 85.90 lakh</strong>.
+    </p>
+  `
+},
+{
+  question_id: "AFM_MTPMAR25_I_Q6C",
+  source: "ICAI Mock Test Paper - Series I, March 2025",
+  chapter_name: "Startup Financing",
+  placement: 6,
+  marks: 4,
+  question_html: `
+    <p>Why do traditional lenders like banks hesitate to finance startups? List out the alternative financing options available to entrepreneurs.</p>
+  `,
+  solution_html: `
+    <p>Traditional lenders such as banks are generally reluctant to finance startups because, at the initial stage, startups usually do not possess sufficient assets to offer as security and do not have a stable operating history or predictable cash flows. As a result, lenders find it difficult to assess repayment capacity and investment risk with certainty.</p>
+
+    <p>In such situations, entrepreneurs often explore alternative sources of finance.</p>
+
+    <p><strong>Alternative Financing Options Available to Entrepreneurs:</strong></p>
+
+    <ol type="i">
+      <li>Personal Financing</li>
+      <li>Personal Credit Lines</li>
+      <li>Family and Friends</li>
+      <li>Peer-to-Peer Lending</li>
+      <li>Crowdfunding</li>
+    </ol>
+  `
+},
+
 
 ];
