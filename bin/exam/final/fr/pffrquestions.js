@@ -8219,6 +8219,2533 @@ const descriptiveQuestions = [
 <p><strong>An outflow of resources embodying economic benefits in settlement:</strong> Assessment of the probability of incurring fines and penalties due to non-compliant operation depends on the details of the legislation and the stringency of the enforcement regime.</p>
 
 <p><strong>Conclusion:</strong> No provision is recognised for the costs of fitting smoke filters. However, a <strong>provision is recognised for the best estimate of any fines and penalties</strong> that are more likely than not to be imposed.</p>`
-}
+},
+{
+    question_id: "FR_MTPMAR25_I_1",
+    source: "ICAI MTP March 2025",
+    chapter_name: "Ind AS 111 - Joint Arrangements",
+    placement: 1,
+    marks: 14,
+
+    question_html: `
+    <p>
+      A Ltd. and B Ltd. are companies registered under the Companies Act, 2013. A Ltd. is
+      an Ind AS compliant entity and follows year ended March as its financial reporting period.
+    </p>
+
+    <p>
+      On 1st April 20X1, they entered into an agreement to jointly engage in the hospitality
+      business. For this purpose, they formed a partnership firm with the name of
+      M/s. Star Hotel ("the Firm"). Under the relevant laws, the partners and the Firm are not
+      considered as separate legal entities.
+    </p>
+
+    <p>
+      To regulate the operations of the Firm, A Ltd. and B Ltd. entered into a partnership deed
+      whose relevant terms and conditions are as follows:
+    </p>
+
+    <ul>
+      <li>A Ltd. and B Ltd. shall be the partners of the Firm.</li>
+      <li>
+        Consent of both partners shall be required for taking decisions on any matter
+        which may affect the returns of the business.
+      </li>
+      <li>
+        The Firm shall operate a three-storied hotel as follows:
+      </li>
+    </ul>
+
+    <table border="1">
+      <tr>
+        <th>Floor</th>
+        <th>Rights and obligations relating to the floor</th>
+      </tr>
+      <tr>
+        <td>
+          Ground floor (Reception, lobby, restaurant, laundry division and
+          general administration office)
+        </td>
+        <td>
+          Both partners shall jointly and equally own the legal and beneficial ownership
+          of the ground floor including all of its assets and related liabilities.
+          All the costs relating to the operation of the ground floor shall be jointly and
+          equally shared by both the partners.
+        </td>
+      </tr>
+      <tr>
+        <td>First floor (Indian themed rooms for customers)</td>
+        <td>
+          A Ltd. shall have legal and beneficial ownership of the first floor including
+          all of its assets and related liabilities.
+          The net profit for the period attributable to the renting of rooms of first floor
+          shall accrue solely to the account of A Ltd.
+        </td>
+      </tr>
+      <tr>
+        <td>Second floor (Italian themed rooms for customers)</td>
+        <td>
+          B Ltd. shall have legal and beneficial ownership of the second floor including
+          all of its assets and related liabilities.
+          The net profit for the period attributable to the renting of rooms of second floor
+          shall accrue solely to the account of B Ltd.
+        </td>
+      </tr>
+      <tr>
+        <td>Third floor (Banquet hall)</td>
+        <td>
+          Both the partners shall jointly and equally own legal and beneficial ownership
+          of the third floor including all of its assets and related liabilities.
+          The net profit for the period attributable to the renting of the banquet hall shall
+          accrue equally to the account of both the partners.
+        </td>
+      </tr>
+    </table>
+
+    <p>
+      During the first year of operation of the hotel, A Ltd. many times doubted and objected
+      to the manner in which the guests were preferentially convinced by the reception desk
+      to occupy the Italian-themed rooms of the second floor.
+    </p>
+
+    <p>
+      To avoid repetitive disputes, on 1st April 20X2, A Ltd. and B Ltd. converted the
+      partnership firm into a company named Star Hotel Pvt. Ltd. ("the Company").
+      Under the relevant laws, the shareholders and the Company are considered as
+      separate legal entities.
+    </p>
+
+    <p>
+      To regulate the operations of the Company, A Ltd. and B Ltd. entered into a
+      shareholders’ agreement with the following relevant terms and conditions:
+    </p>
+
+    <ol type="i">
+      <li>
+        A Ltd. and B Ltd. shall transfer their individual rights regarding the respective
+        floors of the hotel in favour of the Company such that the Company becomes
+        the legal and beneficial owner thereof.
+      </li>
+      <li>
+        The Company shall assume all the liabilities of A Ltd. and B Ltd. in relation to
+        the hotel business.
+      </li>
+      <li>
+        In consideration of transfer of rights and obligations by A Ltd. and B Ltd. in favour
+        of the Company, A Ltd. and B Ltd. shall receive equity shares of the Company in
+        equal proportion.
+      </li>
+      <li>
+        Each equity share shall entitle the holder thereof one vote in the general meetings
+        of the Company.
+      </li>
+      <li>
+        The Company's Board shall consist of 6 directors. All matters relating to operations,
+        except reserved matters, shall be decided by simple majority. In case of equality of
+        votes, the chairman shall have a casting vote.
+      </li>
+      <li>
+        Reserved matters requiring unanimous consent:
+        <ol type="a">
+          <li>Approval of the operating plan for each financial year.</li>
+          <li>Capital expenditure exceeding ₹20 crore in a year.</li>
+          <li>
+            Borrowings equal to or more than 30% of the Company's net worth.
+          </li>
+          <li>Any matter which may affect the returns of the business.</li>
+        </ol>
+      </li>
+      <li>
+        A Ltd. and B Ltd. shall have the right to nominate 3 directors each and replace them.
+        The chairman shall be nominated by A Ltd.
+      </li>
+      <li>
+        Profits may be distributed as dividends approved by simple majority in a general meeting.
+      </li>
+      <li>
+        Shareholders shall be entitled to dividends in proportion to share capital held.
+      </li>
+      <li>
+        Upon liquidation, net assets after liabilities shall be distributed in proportion to share capital held.
+      </li>
+      <li>
+        During the period 1st April, 20X2 to 31st March, 20X7, A Ltd. shall have the right
+        to sell all its shares to B Ltd. at a price 10% above fair value determined by an
+        independent valuer. If exercised, B Ltd. shall be obliged to purchase the shares.
+      </li>
+    </ol>
+
+    <p><strong>Required:</strong></p>
+
+    <p>
+      How should the arrangement with B Ltd. be classified and recognised in the
+      financial statements of A Ltd. for the year ended 31st March, 20X2?
+      Explain the basis of your conclusion.
+    </p>
+
+    <p>
+      Additionally, describe the changes, if any, to the classification and recognition
+      in the consolidated financial statements of A Ltd. for the year ended
+      31st March, 20X3.
+    </p>
+    `,
+
+    solution_html: `
+    <p>
+      As per the terms and conditions of the partnership deed, consent of both partners
+      is required for decisions affecting the returns of the business. Therefore,
+      A Ltd. and B Ltd. have <strong>joint control</strong> over the arrangement as defined
+      in Ind AS 111 and the arrangement is a <strong>joint arrangement</strong>.
+    </p>
+
+    <h4>Classification for the year ended 31st March, 20X2</h4>
+
+    <p>
+      As per Ind AS 111, classification of a joint arrangement depends on:
+    </p>
+
+    <ol type="a">
+      <li>The structure of the joint arrangement;</li>
+      <li>
+        If structured through a separate vehicle:
+        <ol type="i">
+          <li>The legal form of the separate vehicle;</li>
+          <li>The terms of the contractual arrangement; and</li>
+          <li>Other relevant facts and circumstances.</li>
+        </ol>
+      </li>
+    </ol>
+
+    <p>
+      The arrangement is conducted through M/s. Star Hotel, a partnership firm whose
+      legal form does not create separation between the partners and the firm.
+      Assets and liabilities of the firm are effectively assets and liabilities of the partners.
+    </p>
+
+    <p>
+      The contractual arrangement also provides rights to assets and obligations for liabilities.
+      Therefore, the arrangement is a <strong>Joint Operation</strong> as per Ind AS 111.
+    </p>
+
+    <h4>Recognition in A Ltd.'s Financial Statements for FY 20X1-20X2</h4>
+
+    <p>
+      As a joint operator, A Ltd. shall recognise:
+    </p>
+
+    <ul>
+      <li>Its share of assets and liabilities relating to the arrangement.</li>
+      <li>Its share of revenues and expenses arising from the arrangement.</li>
+    </ul>
+
+    <p>
+      Specific treatment:
+    </p>
+
+    <ul>
+      <li>
+        <strong>First Floor:</strong>
+        A Ltd. has exclusive legal and beneficial ownership.
+        Therefore, A Ltd. shall recognise all related assets, liabilities,
+        income and expenses.
+      </li>
+
+      <li>
+        <strong>Ground Floor and Third Floor:</strong>
+        Jointly owned and controlled.
+        A Ltd. shall recognise 50% share of related assets, liabilities,
+        income and expenses.
+      </li>
+
+      <li>
+        <strong>Second Floor:</strong>
+        Owned and controlled by B Ltd.
+        A Ltd. shall not recognise any assets, liabilities,
+        income or expenses relating to this floor.
+      </li>
+    </ul>
+
+    <p>
+      Recognition shall be done line-by-line based on the relevant Ind AS applicable
+      to each asset, liability, income and expense.
+    </p>
+
+    <h4>Reclassification for the year ended 31st March, 20X3</h4>
+
+    <p>
+      On 1st April, 20X2, the partnership firm was converted into
+      Star Hotel Pvt. Ltd.
+    </p>
+
+    <p>
+      The legal form of a company creates separation between shareholders
+      and the company. Assets and liabilities belong to the company and not
+      directly to the shareholders.
+    </p>
+
+    <p>
+      The shareholders' agreement provides rights only to the net assets
+      of the company through dividends and liquidation proceeds.
+      It does not provide direct rights to specific assets or obligations
+      for specific liabilities.
+    </p>
+
+    <p>
+      Therefore, the arrangement is reclassified as a
+      <strong>Joint Venture</strong> under Ind AS 111.
+    </p>
+
+    <h4>Recognition in Consolidated Financial Statements of A Ltd.
+    for FY 20X2-20X3</h4>
+
+    <p>
+      As per paragraph 24 of Ind AS 111, a joint venturer shall recognise
+      its interest in a joint venture as an investment and account for it
+      using the <strong>equity method</strong> in accordance with Ind AS 28,
+      unless exempted.
+    </p>
+
+    <p>
+      Accordingly, A Ltd. shall recognise its interest in
+      Star Hotel Pvt. Ltd. as an investment and account for it using
+      the equity method.
+    </p>
+
+    <p>
+      The put option available to A Ltd. to sell shares to B Ltd.
+      does not affect the assessment of joint control because the right
+      rests with A Ltd. and does not provide B Ltd. with substantive
+      potential voting rights.
+    </p>
+    `,
+},
+{
+    question_id: "FR_MTPMAR25_I_2A",
+    source: "ICAI MTP March 2025",
+    chapter_name: "Ind AS 32 - Financial Instruments: Presentation",
+    placement: 2,
+    marks: 10,
+
+    question_html: `
+    <p>
+      ABC Ltd. issues 4% 1,00,000 OCPS at a face value of ₹100 per share on
+      1st April, 20X1 and these are redeemable after 5 years, i.e., on
+      31st March, 20X6.
+    </p>
+
+    <p>
+      Dividend is non-cumulative. Each preference share entitles the holder
+      to 10 equity shares and the preference shares are optionally convertible
+      by the holder at any time until maturity.
+    </p>
+
+    <p><strong>Required:</strong></p>
+
+    <p>
+      How will the preference shares be classified at initial recognition
+      assuming that a comparable instrument carries a market interest rate of 7%?
+      Provide journal entries for year 1.
+    </p>
+
+    <p>
+      Will this classification be changed subsequently in case there is a
+      likelihood that OCPS will be encashed at the end of the maturity period?
+    </p>
+    `,
+
+    solution_html: `
+    <p>
+      The OCPS are redeemable at the end of five years and therefore contain
+      a <strong>financial liability component</strong>.
+    </p>
+
+    <p>
+      Since the dividend is non-cumulative and payable at the discretion of
+      the issuer, it forms part of the <strong>equity component</strong>.
+    </p>
+
+    <p>
+      Further, the holder has an option to convert the preference shares into
+      a fixed number of equity shares. Therefore, in accordance with
+      <strong>Ind AS 32</strong>, the instrument is a
+      <strong>compound financial instrument</strong> containing both liability
+      and equity components.
+    </p>
+
+    <h4>Initial Measurement</h4>
+
+    <p>
+      The liability component is measured first by determining the present value
+      of a similar liability without the conversion feature.
+    </p>
+
+    <p>
+      Fair value of liability component:
+    </p>
+
+    <p>
+      = 1,00,000 × ₹100 × (1 / 1.07⁵)
+      <br>
+      = ₹71,29,862
+    </p>
+
+    <p>
+      Equity component (Residual):
+    </p>
+
+    <p>
+      = ₹1,00,00,000 − ₹71,29,862
+      <br>
+      = ₹28,70,138
+    </p>
+
+    <h4>Classification at Initial Recognition</h4>
+
+    <table border="1">
+      <tr>
+        <th>Component</th>
+        <th>Amount (₹)</th>
+      </tr>
+      <tr>
+        <td>Financial Liability Component</td>
+        <td>71,29,862</td>
+      </tr>
+      <tr>
+        <td>Equity Component</td>
+        <td>28,70,138</td>
+      </tr>
+      <tr>
+        <td>Total Issue Proceeds</td>
+        <td>1,00,00,000</td>
+      </tr>
+    </table>
+
+    <h4>Journal Entries - Year 1</h4>
+
+    <p><strong>1st April, 20X1 - Initial Recognition</strong></p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Bank A/c Dr.</td>
+        <td>1,00,00,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To OCPS (Financial Liability)</td>
+        <td>-</td>
+        <td>71,29,862</td>
+      </tr>
+      <tr>
+        <td>To OCPS (Equity Component)</td>
+        <td>-</td>
+        <td>28,70,138</td>
+      </tr>
+    </table>
+
+    <p>
+      (Being issue of OCPS recognised as a compound financial instrument)
+    </p>
+
+    <p><strong>31st March, 20X2 - Unwinding of Discount</strong></p>
+
+    <p>
+      Interest Expense = ₹71,29,862 × 7%
+      = ₹4,99,090
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Interest Expense A/c Dr.</td>
+        <td>4,99,090</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To OCPS (Financial Liability)</td>
+        <td>-</td>
+        <td>4,99,090</td>
+      </tr>
+    </table>
+
+    <p>
+      (Being finance cost recognised using effective interest rate method)
+    </p>
+
+    <h4>Amortised Cost Schedule of Financial Liability</h4>
+
+    <table border="1">
+      <tr>
+        <th>Year</th>
+        <th>Opening Balance (₹)</th>
+        <th>Interest @ 7% (₹)</th>
+        <th>Closing Balance (₹)</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>71,29,862</td>
+        <td>4,99,090</td>
+        <td>76,28,952</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>76,28,952</td>
+        <td>5,34,027</td>
+        <td>81,62,979</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>81,62,979</td>
+        <td>5,71,409</td>
+        <td>87,34,388</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>87,34,388</td>
+        <td>6,11,407</td>
+        <td>93,45,795</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>93,45,795</td>
+        <td>6,54,206</td>
+        <td>1,00,00,000</td>
+      </tr>
+    </table>
+
+    <h4>Subsequent Change in Likelihood of Conversion</h4>
+
+    <p>
+      As per paragraph 30 of Ind AS 32, the classification of the liability
+      and equity components of a compound financial instrument is
+      <strong>not revised</strong> due to a change in the likelihood of the
+      conversion option being exercised.
+    </p>
+
+    <p>
+      Therefore, even if it becomes likely that the OCPS will be redeemed
+      in cash on maturity instead of being converted into equity shares,
+      the original classification between liability and equity components
+      remains unchanged.
+    </p>
+
+    <p>
+      The equity component recognised on initial recognition continues to
+      remain in equity and is not reclassified subsequently.
+    </p>
+    `,
+},
+{
+    question_id: "FR_MTPMAR25_I_2B",
+    source: "ICAI MTP March 2025",
+    chapter_name: "Ind AS Applicability",
+    placement: 2,
+    marks: 4,
+
+    question_html: `
+    <p>
+      ABC Inc., incorporated in a foreign country has a net worth of ₹700 crores.
+      It has two Indian subsidiaries X Ltd. whose net worth as on 31st March 2014 is
+      ₹600 crores and Y Ltd. whose net worth is ₹150 crores.
+    </p>
+
+    <p>
+      Whether X Ltd. and Y Ltd. would be required to follow Ind AS from the accounting
+      period commencing on or after 1st April 2016 on the basis of their own net worth
+      or on the basis of the net worth of ABC Inc.?
+    </p>
+    `,
+
+    solution_html: `
+    <p>
+      As per Rule 4(1)(ii)(a) of the Companies (Indian Accounting Standards) Rules, 2015,
+      X Ltd., having a net worth of ₹600 crores at the end of the financial year 2015-16,
+      would be required to prepare its financial statements for the accounting periods
+      commencing from 1st April, 2016 in accordance with the Companies (Indian Accounting
+      Standards) Rules, 2015.
+    </p>
+
+    <p>
+      However, Y Ltd., having a net worth of ₹150 crores in the financial year 2015-16,
+      would not fall within the mandatory phase of Ind AS applicability and would continue
+      to prepare its financial statements in accordance with the Companies (Accounting
+      Standards) Rules, 2006.
+    </p>
+
+    <p>
+      ABC Inc. is a foreign company incorporated outside India and is not a company
+      incorporated under the Companies Act, 2013 or the earlier Companies Act, 1956.
+      Therefore, ABC Inc. is not required to prepare its financial statements in accordance
+      with the Companies (Indian Accounting Standards) Rules, 2015.
+    </p>
+
+    <p>
+      Since the foreign company ABC Inc. is not required to prepare financial statements
+      under Ind AS, the net worth of ABC Inc. will not be considered for determining the
+      applicability of Ind AS to its Indian subsidiaries.
+    </p>
+
+    <p>
+      Accordingly, the applicability of Ind AS for X Ltd. and Y Ltd. shall be determined
+      based on their own net worth and not on the basis of the net worth of ABC Inc.
+    </p>
+
+    <p>
+      Therefore:
+    </p>
+
+    <ul>
+      <li>
+        <strong>X Ltd.</strong> (Net Worth ₹600 crores) – Required to prepare financial
+        statements as per Ind AS from accounting periods commencing on or after
+        1st April, 2016.
+      </li>
+      <li>
+        <strong>Y Ltd.</strong> (Net Worth ₹150 crores) – Not mandatorily required to
+        adopt Ind AS on the basis of the given facts.
+      </li>
+    </ul>
+    `,
+},
+{
+    question_id: "FR_MTPMAR25_I_3A",
+    source: "ICAI MTP March 2025",
+    chapter_name: "Ind AS 116 - Leases and Ind AS 21 - The Effects of Changes in Foreign Exchange Rates",
+    placement: 3,
+    marks: 8,
+
+    question_html: `
+    <p>
+      X Ltd. has taken a plant on lease from Y Ltd. for 5 years to use in its
+      manufacturing process for which it has to pay annual rentals in arrears
+      of USD 10,000 every year.
+    </p>
+
+    <p>
+      On the commencement date, exchange rate was USD = ₹68.
+      The average rate for Year 1 was ₹69 and at the end of year 1,
+      the exchange rate was ₹70.
+    </p>
+
+    <p>
+      The incremental borrowing rate of X Ltd. on commencement of the lease
+      for a USD borrowing was 5% p.a.
+    </p>
+
+    <p>
+      How will entity X measure the right of use (ROU) asset and lease liability
+      initially and at the end of Year 1?
+    </p>
+    `,
+
+    solution_html: `
+    <h4>Initial Measurement of Lease Liability and Right-of-Use Asset</h4>
+
+    <table border="1">
+      <tr>
+        <th>Year</th>
+        <th>Lease Payments (USD)</th>
+        <th>Present Value Factor @ 5%</th>
+        <th>Present Value of Lease Payment (USD)</th>
+        <th>Exchange Rate (₹)</th>
+        <th>INR Value (₹)</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>10,000</td>
+        <td>0.952</td>
+        <td>9,520</td>
+        <td>68</td>
+        <td>6,47,360</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>10,000</td>
+        <td>0.907</td>
+        <td>9,070</td>
+        <td>68</td>
+        <td>6,16,760</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>10,000</td>
+        <td>0.864</td>
+        <td>8,640</td>
+        <td>68</td>
+        <td>5,87,520</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>10,000</td>
+        <td>0.823</td>
+        <td>8,230</td>
+        <td>68</td>
+        <td>5,59,640</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>10,000</td>
+        <td>0.784</td>
+        <td>7,840</td>
+        <td>68</td>
+        <td>5,33,120</td>
+      </tr>
+      <tr>
+        <th colspan="3">Total</th>
+        <th>43,300</th>
+        <th></th>
+        <th>29,44,400</th>
+      </tr>
+    </table>
+
+    <p>
+      Accordingly, on the commencement date:
+    </p>
+
+    <ul>
+      <li>Lease Liability = ₹29,44,400</li>
+      <li>Right-of-Use Asset = ₹29,44,400</li>
+    </ul>
+
+    <p>
+      As per Ind AS 21, monetary assets and liabilities are restated at the
+      closing rate on each reporting date and exchange differences are
+      recognised in profit and loss.
+    </p>
+
+    <p>
+      Non-monetary assets measured at historical cost are not restated.
+      Therefore, the ROU asset will not be restated whereas the lease liability
+      will be restated at the closing exchange rate.
+    </p>
+
+    <h4>Measurement of Lease Liability at the End of Year 1</h4>
+
+    <table border="1">
+      <tr>
+        <th>Year</th>
+        <th>Opening Value (USD)</th>
+        <th>Lease Payment (USD)</th>
+        <th>Interest @ 5% (USD)</th>
+        <th>Closing Value (USD)</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>43,300</td>
+        <td>10,000</td>
+        <td>2,165</td>
+        <td>35,465</td>
+      </tr>
+    </table>
+
+    <p>
+      Interest expense recognised in profit and loss:
+    </p>
+
+    <p>
+      USD 2,165 × ₹69 = ₹1,49,385
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Interest Expense A/c Dr.</td>
+        <td>1,49,385</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Lease Liability</td>
+        <td>-</td>
+        <td>1,49,385</td>
+      </tr>
+    </table>
+
+    <p>
+      Lease payment at reporting date exchange rate:
+    </p>
+
+    <p>
+      USD 10,000 × ₹70 = ₹7,00,000
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Lease Liability Dr.</td>
+        <td>7,00,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Cash</td>
+        <td>-</td>
+        <td>7,00,000</td>
+      </tr>
+    </table>
+
+    <p>
+      Lease liability at year-end:
+    </p>
+
+    <p>
+      35,465 USD × ₹70 = ₹24,82,550
+    </p>
+
+    <p>
+      Exchange difference recognised in profit and loss:
+    </p>
+
+    <p>
+      ₹24,82,550 − (₹29,44,400 + ₹1,49,385 − ₹7,00,000)
+      = ₹88,765
+    </p>
+
+    <h4>Measurement of Right-of-Use Asset at End of Year 1</h4>
+
+    <table border="1">
+      <tr>
+        <th>Year</th>
+        <th>Opening Balance (₹)</th>
+        <th>Depreciation (₹)</th>
+        <th>Closing Balance (₹)</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>29,44,400</td>
+        <td>5,88,880</td>
+        <td>23,55,520</td>
+      </tr>
+    </table>
+
+    <p>
+      Therefore, at the end of Year 1:
+    </p>
+
+    <ul>
+      <li>Lease Liability = ₹24,82,550</li>
+      <li>ROU Asset = ₹23,55,520</li>
+    </ul>
+    `,
+},
+{
+    question_id: "FR_MTPMAR25_I_3B",
+    source: "ICAI MTP March 2025",
+    chapter_name: "Ind AS 21 - The Effects of Changes in Foreign Exchange Rates",
+    placement: 3,
+    marks: 6,
+
+    question_html: `
+    <p>
+      Infotech Global Ltd. has a functional currency of USD and needs to
+      translate its financial statements into the functional and presentation
+      currency of Infotech Inc. (L$).
+    </p>
+
+    <p>
+      The following balances appear in the books of Infotech Global Ltd.
+      at the year-end prior to translation:
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>USD</th>
+        <th>L$</th>
+      </tr>
+      <tr>
+        <td>Property, plant and equipment</td>
+        <td>50,000</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Receivables</td>
+        <td>9,35,000</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Total assets</td>
+        <td>9,85,000</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Issued capital</td>
+        <td>50,000</td>
+        <td>30,055</td>
+      </tr>
+      <tr>
+        <td>Opening retained earnings</td>
+        <td>28,000</td>
+        <td>15,274</td>
+      </tr>
+      <tr>
+        <td>Profit for the year</td>
+        <td>20,000</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Accounts payable</td>
+        <td>8,40,000</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Accrued liabilities</td>
+        <td>47,000</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Total equity and liabilities</td>
+        <td>9,85,000</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <p>
+      Translate the above balances of Infotech Global Ltd. into L$ ready for
+      consolidation by Infotech Inc. (Share capital and opening retained
+      earnings have been pre-populated.)
+    </p>
+
+    <p>
+      Prepare a working of the cumulative balance of the foreign currency
+      translation reserve.
+    </p>
+
+    <p>
+      Additional Information:
+    </p>
+
+    <ul>
+      <li>Rate at beginning of the year: L$1 = USD 1.22</li>
+      <li>Average rate for the year: L$1 = USD 1.175</li>
+      <li>Rate at end of the year: L$1 = USD 1.13</li>
+    </ul>
+    `,
+
+    solution_html: `
+    <h4>Translation of Balances for Consolidation</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>USD</th>
+        <th>Rate</th>
+        <th>L$</th>
+      </tr>
+      <tr>
+        <td>Property, plant and equipment</td>
+        <td>50,000</td>
+        <td>1.13</td>
+        <td>44,248</td>
+      </tr>
+      <tr>
+        <td>Receivables</td>
+        <td>9,35,000</td>
+        <td>1.13</td>
+        <td>8,27,434</td>
+      </tr>
+      <tr>
+        <th>Total Assets</th>
+        <th>9,85,000</th>
+        <th></th>
+        <th>8,71,682</th>
+      </tr>
+      <tr>
+        <td>Issued Capital</td>
+        <td>50,000</td>
+        <td>-</td>
+        <td>30,055</td>
+      </tr>
+      <tr>
+        <td>Opening Retained Earnings</td>
+        <td>28,000</td>
+        <td>-</td>
+        <td>15,274</td>
+      </tr>
+      <tr>
+        <td>Profit for the Year</td>
+        <td>20,000</td>
+        <td>1.175</td>
+        <td>17,021</td>
+      </tr>
+      <tr>
+        <td>Accounts Payable</td>
+        <td>8,40,000</td>
+        <td>1.13</td>
+        <td>7,43,363</td>
+      </tr>
+      <tr>
+        <td>Accrued Liabilities</td>
+        <td>47,000</td>
+        <td>1.13</td>
+        <td>41,593</td>
+      </tr>
+      <tr>
+        <td>Total Equity & Liabilities before FCTR</td>
+        <td>9,85,000</td>
+        <td></td>
+        <td>8,47,306</td>
+      </tr>
+      <tr>
+        <td>Foreign Currency Translation Reserve (FCTR)</td>
+        <td>-</td>
+        <td>-</td>
+        <td>24,376</td>
+      </tr>
+      <tr>
+        <th>Total Equity & Liabilities</th>
+        <th></th>
+        <th></th>
+        <th>8,71,682</th>
+      </tr>
+    </table>
+
+    <h4>Working Note 1: Computation of FCTR</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Actual Translated Amount (L$)</th>
+        <th>Translated Amount if Closing Rate Applied (L$)</th>
+        <th>Difference (L$)</th>
+      </tr>
+      <tr>
+        <td>Issued Capital</td>
+        <td>30,055</td>
+        <td>44,248</td>
+        <td>14,193</td>
+      </tr>
+      <tr>
+        <td>Opening Retained Earnings</td>
+        <td>15,274</td>
+        <td>24,779</td>
+        <td>9,505</td>
+      </tr>
+      <tr>
+        <td>Profit for the Year</td>
+        <td>17,021</td>
+        <td>17,699</td>
+        <td>678</td>
+      </tr>
+      <tr>
+        <th>Total FCTR</th>
+        <th>62,350</th>
+        <th>86,726</th>
+        <th>24,376</th>
+      </tr>
+    </table>
+
+    <h4>Working Note 2: Translation Using Closing Rate</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>USD</th>
+        <th>Rate</th>
+        <th>Translated Amount (L$)</th>
+      </tr>
+      <tr>
+        <td>Issued Capital</td>
+        <td>50,000</td>
+        <td>1.13</td>
+        <td>44,248</td>
+      </tr>
+      <tr>
+        <td>Opening Retained Earnings</td>
+        <td>28,000</td>
+        <td>1.13</td>
+        <td>24,779</td>
+      </tr>
+      <tr>
+        <td>Profit for the Year</td>
+        <td>20,000</td>
+        <td>1.13</td>
+        <td>17,699</td>
+      </tr>
+      <tr>
+        <th>Total</th>
+        <th>98,000</th>
+        <th></th>
+        <th>86,726</th>
+      </tr>
+    </table>
+    `,
+},
+{
+    question_id: "FR_MTPMAR25_I_4A",
+    source: "ICAI MTP March 2025",
+    chapter_name: "Ind AS 102 - Share Based Payment",
+    placement: 4,
+    marks: 8,
+
+    question_html: `
+    <p>
+      To reward its employees, the Company had launched a scheme effective
+      1st April, 20X1, in which the employees will be granted equity shares of the
+      Company at below market price subject to certain conditions.
+    </p>
+
+    <p>Following details are provided:</p>
+
+    <ol type="i">
+      <li>
+        As per the scheme, each employee has an option to purchase
+        100 equity shares of the Company at ₹30 per share if the employee
+        does not leave the Company for 3 years from the date of launch of the
+        scheme i.e. 31st March, 20X4.
+      </li>
+
+      <li>
+        Once 3 years are completed by an employee, he/she can exercise the
+        option within 1 year i.e. by 31st March, 20X5.
+      </li>
+
+      <li>
+        The closing share price on stock exchange as at 1st April, 20X1 is
+        ₹62 per share with face value of ₹10 per share. The Company had
+        appointed a registered valuer who derived the price of option at ₹50
+        using the Black Scholes model of option pricing.
+      </li>
+
+      <li>
+        There are a total of 300 employees eligible for the scheme.
+        As at 31st March, 20X2, 10 employees left the Company and further
+        14 employees are expected to leave over the next 2 years.
+        During the year 20X2-20X3, a multi-national company entered into
+        the retail industry which is hiring experienced workforce and therefore
+        a high attrition is observed in the retail industry. 110 employees left
+        the Company during the year ended 31st March, 20X3 and further
+        54 employees are expected to leave in the next one year.
+        As at 31st March, 20X4, only 160 employees are remaining with the
+        Company out of 300.
+      </li>
+
+      <li>
+        Only 150 employees exercise the option to purchase the equity shares
+        during the year ended 31st March, 20X5.
+      </li>
+    </ol>
+
+    <p><strong>Required:</strong></p>
+
+    <p>
+      Provide necessary accounting entries during the life of share-based
+      payment scheme to account for the scheme implemented by the Company.
+      Provide working notes.
+    </p>
+    `,
+
+    solution_html: `
+    <h4>Journal Entries</h4>
+
+    <p><strong>31st March, 20X2</strong></p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Employee Benefits Expense A/c Dr.</td>
+        <td>4,60,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Share Based Payment Reserve (Equity)</td>
+        <td>-</td>
+        <td>4,60,000</td>
+      </tr>
+    </table>
+
+    <p>
+      (Being expense recognised to the extent of 1/3rd of expected vested
+      equity instruments value)
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Profit and Loss A/c Dr.</td>
+        <td>4,60,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Employee Benefits Expense A/c</td>
+        <td>-</td>
+        <td>4,60,000</td>
+      </tr>
+    </table>
+
+    <p>(Being expenses transferred to Profit and Loss Account)</p>
+
+    <p><strong>31st March, 20X3</strong></p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Share Based Payment Reserve (Equity) Dr.</td>
+        <td>40,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Employee Benefits Expense A/c</td>
+        <td>-</td>
+        <td>40,000</td>
+      </tr>
+    </table>
+
+    <p>
+      (Being reversal of excess expense recognised on revision of vesting estimate)
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Employee Benefits Expense A/c Dr.</td>
+        <td>40,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Profit and Loss A/c</td>
+        <td>-</td>
+        <td>40,000</td>
+      </tr>
+    </table>
+
+    <p>(Being transfer of revised employee benefit expense)</p>
+
+    <p><strong>31st March, 20X4</strong></p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Employee Benefits Expense A/c Dr.</td>
+        <td>3,80,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Share Based Payment Reserve (Equity)</td>
+        <td>-</td>
+        <td>3,80,000</td>
+      </tr>
+    </table>
+
+    <p>(Being final vested equity instruments value recognised)</p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Profit and Loss A/c Dr.</td>
+        <td>3,80,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Employee Benefits Expense A/c</td>
+        <td>-</td>
+        <td>3,80,000</td>
+      </tr>
+    </table>
+
+    <p>(Being expenses transferred to Profit and Loss Account)</p>
+
+    <p><strong>31st March, 20X5</strong></p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Share Based Payment Reserve (Equity) Dr.</td>
+        <td>8,00,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Bank A/c Dr. (150 × 100 × ₹30)</td>
+        <td>4,50,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Share Capital A/c [150 × 100 × ₹10]</td>
+        <td>-</td>
+        <td>1,50,000</td>
+      </tr>
+      <tr>
+        <td>To Securities Premium A/c [150 × 100 × (₹50 + ₹20)]</td>
+        <td>-</td>
+        <td>10,50,000</td>
+      </tr>
+      <tr>
+        <td>To Retained Earnings A/c (10 × 100 × ₹50)</td>
+        <td>-</td>
+        <td>50,000</td>
+      </tr>
+    </table>
+
+    <p>
+      (Being 150 options exercised and 10 vested options lapsed)
+    </p>
+
+    <h4>Working Note - Calculation of Employee Benefits Expense</h4>
+
+    <table border="1">
+      <tr>
+        <th>Year Ended</th>
+        <th>Calculation</th>
+        <th>Expense for Period (₹)</th>
+        <th>Cumulative Expense (₹)</th>
+      </tr>
+
+      <tr>
+        <td>31st March, 20X2</td>
+        <td>
+          (300 − 10 − 14) employees × 100 shares × ₹50 × 1/3
+        </td>
+        <td>4,60,000</td>
+        <td>4,60,000</td>
+      </tr>
+
+      <tr>
+        <td>31st March, 20X3</td>
+        <td>
+          {[(300 − 10 − 110 − 54) employees × 100 shares × ₹50 × 2/3]}
+          − ₹4,60,000
+        </td>
+        <td>(40,000)</td>
+        <td>4,20,000</td>
+      </tr>
+
+      <tr>
+        <td>31st March, 20X4</td>
+        <td>
+          (160 employees × 100 shares × ₹50) − ₹4,20,000
+        </td>
+        <td>3,80,000</td>
+        <td>8,00,000</td>
+      </tr>
+    </table>
+    `,
+},
+{
+    question_id: "FR_MTPMAR25_I_4B",
+    source: "ICAI MTP March 2025",
+    chapter_name: "Ind AS 23 - Borrowing Costs",
+    placement: 4,
+    marks: 6,
+
+    question_html: `
+    <p>
+      On 1st April, 20X1, A Ltd. contracted for the construction of a building
+      for ₹22,00,000. The land under the building is regarded as a separate asset
+      and is not part of the qualifying asset.
+    </p>
+
+    <p>
+      The building was completed at the end of March, 20X2 and during the period
+      the following payments were made to the contractor:
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Payment Date</th>
+        <th>Amount (₹ '000)</th>
+      </tr>
+      <tr>
+        <td>1st April, 20X1</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>30th June, 20X1</td>
+        <td>600</td>
+      </tr>
+      <tr>
+        <td>31st December, 20X1</td>
+        <td>1,200</td>
+      </tr>
+      <tr>
+        <td>31st March, 20X2</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <th>Total</th>
+        <th>2,200</th>
+      </tr>
+    </table>
+
+    <p>
+      A Ltd.'s borrowings at 31st March, 20X2 were:
+    </p>
+
+    <ol type="a">
+      <li>
+        10% 4-year note with simple interest payable annually,
+        specifically relating to the project.
+        Debt outstanding on 31st March, 20X2 amounted to ₹7,00,000.
+        Interest incurred during the year was ₹65,000 and interest income
+        earned on temporary investment of these borrowings was ₹20,000.
+      </li>
+
+      <li>
+        12.5% 10-year note with simple interest payable annually;
+        debt outstanding at 1st April, 20X1 amounted to ₹10,00,000
+        and remained unchanged during the year.
+      </li>
+
+      <li>
+        10% 10-year note with simple interest payable annually;
+        debt outstanding at 1st April, 20X1 amounted to ₹15,00,000
+        and remained unchanged during the year.
+      </li>
+    </ol>
+
+    <p>
+      Determine the amount of borrowing costs which can be capitalised
+      at the year end as per relevant Ind AS.
+    </p>
+    `,
+
+    solution_html: `
+    <p>
+      As per Ind AS 23, when funds are borrowed specifically for obtaining
+      a qualifying asset, borrowing costs eligible for capitalisation are
+      the actual borrowing costs incurred less any investment income earned
+      on temporary investment of those borrowings.
+    </p>
+
+    <p>
+      Where funds are borrowed generally, borrowing costs eligible for
+      capitalisation are determined using the weighted average
+      capitalisation rate applied to expenditures incurred on the qualifying asset.
+    </p>
+
+    <h4>Analysis of Expenditure</h4>
+
+    <table border="1">
+      <tr>
+        <th>Date</th>
+        <th>Expenditure (₹ '000)</th>
+        <th>Allocated to General Borrowings (₹ '000)</th>
+        <th>Weighted for Period Outstanding (₹ '000)</th>
+      </tr>
+
+      <tr>
+        <td>1st April, 20X1</td>
+        <td>200</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td>30th June, 20X1</td>
+        <td>600</td>
+        <td>100*</td>
+        <td>100 × 9/12 = 75</td>
+      </tr>
+
+      <tr>
+        <td>31st December, 20X1</td>
+        <td>1,200</td>
+        <td>1,200</td>
+        <td>1,200 × 3/12 = 300</td>
+      </tr>
+
+      <tr>
+        <td>31st March, 20X2</td>
+        <td>200</td>
+        <td>200</td>
+        <td>200 × 0/12 = 0</td>
+      </tr>
+
+      <tr>
+        <th>Total</th>
+        <th>2,200</th>
+        <th></th>
+        <th>375</th>
+      </tr>
+    </table>
+
+    <p>
+      * Specific borrowings of ₹7,00,000 were fully utilised on 1st April and
+      on 30th June to the extent of ₹5,00,000. Hence the balance expenditure
+      of ₹1,00,000 was allocated to general borrowings.
+    </p>
+
+    <h4>Capitalisation Rate on General Borrowings</h4>
+
+    <p>
+      Capitalisation Rate =
+    </p>
+
+    <p>
+      [(₹10,00,000 × 12.5%) + (₹15,00,000 × 10%)]
+      ÷ (₹10,00,000 + ₹15,00,000)
+    </p>
+
+    <p>
+      = 11%
+    </p>
+
+    <h4>Borrowing Cost Eligible for Capitalisation</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Amount (₹)</th>
+      </tr>
+
+      <tr>
+        <td>Borrowing Cost on Specific Loan</td>
+        <td>65,000</td>
+      </tr>
+
+      <tr>
+        <td>Borrowing Cost on General Borrowings (₹3,75,000 × 11%)</td>
+        <td>41,250</td>
+      </tr>
+
+      <tr>
+        <th>Total Borrowing Cost</th>
+        <th>1,06,250</th>
+      </tr>
+
+      <tr>
+        <td>Less: Interest Income on Specific Borrowings</td>
+        <td>(20,000)</td>
+      </tr>
+
+      <tr>
+        <th>Borrowing Cost Eligible for Capitalisation</th>
+        <th>86,250</th>
+      </tr>
+    </table>
+
+    <p>
+      Therefore, the amount of borrowing costs that can be capitalised
+      as per Ind AS 23 is <strong>₹86,250</strong>.
+    </p>
+    `,
+},
+{
+    question_id: "FR_MTPMAR25_I_5A",
+    source: "ICAI MTP March 2025",
+    chapter_name: "Ind AS 115 - Revenue from Contracts with Customers",
+    placement: 5,
+    marks: 10,
+
+    question_html: `
+    <p>
+      A Ltd. is a company which is in the business of manufacturing engineering
+      machines and providing after sales services.
+    </p>
+
+    <p>
+      The company entered into a contract with Mr. Anik to supply and install
+      a machine, namely 'model pi' on 1st April 20X1 and to service this machine
+      on 30th September 20X1 and 1st April 20X2.
+    </p>
+
+    <p>
+      The cost of manufacturing the machine to A Ltd. was ₹1,60,000.
+      It is possible for a customer to purchase both the machine 'model pi'
+      and the maintenance services separately.
+    </p>
+
+    <p>
+      Mr. Anik is contractually obliged to pay A Ltd. ₹4,00,000 on 1st April, 20X2.
+    </p>
+
+    <p>
+      The prevailing rate for one-year credit granted to trade customers in
+      the industry is 5 percent per six-month period.
+    </p>
+
+    <p>
+      As per experience, the servicing of the machine 'model pi' sold to
+      Mr. Anik is expected to cost A Ltd. ₹30,000 to perform the first service
+      and ₹50,000 to perform the second service. Assume actual costs equal
+      expected costs.
+    </p>
+
+    <p>
+      When A Ltd. provides machine services to customers in a separate
+      transaction it earns a margin of 50% on cost.
+    </p>
+
+    <p>
+      On 1st April, 20X1, the cash selling price of the machine 'model pi'
+      sold to Mr. Anik is ₹2,51,927.
+    </p>
+
+    <p><strong>Required:</strong></p>
+
+    <ol type="i">
+      <li>
+        Segregate the components of the transaction that A Ltd. shall apply
+        to the revenue recognition criteria separately as per Ind AS 115.
+      </li>
+      <li>
+        Calculate the amount of revenue which A Ltd. must allocate to each
+        component of the transaction.
+      </li>
+      <li>
+        Prepare journal entries to record the information set out above in
+        the books of accounts of A Ltd. for the years ended 31st March, 20X2
+        and 31st March, 20X3.
+      </li>
+    </ol>
+    `,
+
+    solution_html: `
+    <h4>(i) Identification of Separate Components of the Contract</h4>
+
+    <p>
+      As per paragraph 27 of Ind AS 115, a promised good or service is distinct if:
+    </p>
+
+    <ol type="a">
+      <li>
+        The customer can benefit from the good or service either on its own
+        or together with other readily available resources.
+      </li>
+      <li>
+        The promise to transfer the good or service is separately identifiable
+        from other promises in the contract.
+      </li>
+    </ol>
+
+    <p>
+      Indicators that goods or services are separately identifiable include:
+    </p>
+
+    <ol type="a">
+      <li>
+        Significant integration services are not provided.
+      </li>
+      <li>
+        The goods or services do not significantly modify or customise
+        each other.
+      </li>
+      <li>
+        The goods or services are not highly inter-dependent or highly
+        interrelated.
+      </li>
+    </ol>
+
+    <p>
+      Accordingly, on 1st April, 20X1, A Ltd. entered into a transaction
+      containing the following separately identifiable components:
+    </p>
+
+    <ol>
+      <li>Sale of machine 'model pi'.</li>
+      <li>
+        Rendering of maintenance services on:
+        <ul>
+          <li>30th September, 20X1</li>
+          <li>1st April, 20X2</li>
+        </ul>
+      </li>
+      <li>
+        Financing component arising due to extended credit period.
+      </li>
+    </ol>
+
+    <h4>(ii) Allocation of Revenue</h4>
+
+    <table border="1">
+      <tr>
+        <th>Date</th>
+        <th>Opening Balance (₹)</th>
+        <th>Finance Income (₹)</th>
+        <th>Goods (₹)</th>
+        <th>Services (₹)</th>
+        <th>Payment Received (₹)</th>
+        <th>Closing Balance (₹)</th>
+      </tr>
+
+      <tr>
+        <td>1st April, 20X1</td>
+        <td>-</td>
+        <td>-</td>
+        <td>2,51,927</td>
+        <td>-</td>
+        <td>-</td>
+        <td>2,51,927</td>
+      </tr>
+
+      <tr>
+        <td>30th September, 20X1</td>
+        <td>2,51,927</td>
+        <td>12,596</td>
+        <td>-</td>
+        <td>45,000</td>
+        <td>-</td>
+        <td>3,09,523</td>
+      </tr>
+
+      <tr>
+        <td>31st March, 20X2</td>
+        <td>3,09,523</td>
+        <td>15,477</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>3,25,000</td>
+      </tr>
+
+      <tr>
+        <td>1st April, 20X2</td>
+        <td>3,25,000</td>
+        <td>-</td>
+        <td>-</td>
+        <td>75,000</td>
+        <td>(4,00,000)</td>
+        <td>-</td>
+      </tr>
+    </table>
+
+    <p><strong>Note 1:</strong></p>
+    <p>
+      Finance income on 30th September, 20X1
+      = 5% × ₹2,51,927
+      = ₹12,596
+    </p>
+
+    <p><strong>Note 2:</strong></p>
+    <p>
+      Finance income on 31st March, 20X2
+      = 5% × ₹3,09,523
+      = ₹15,477
+    </p>
+
+    <h4>(iii) Journal Entries</h4>
+
+    <p><strong>1st April, 20X1</strong></p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Mr. Anik A/c Dr.</td>
+        <td>2,51,927</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Revenue - Sale of Goods (P&L)</td>
+        <td>-</td>
+        <td>2,51,927</td>
+      </tr>
+    </table>
+
+    <p>(Being revenue recognised from sale of machine on credit)</p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Cost of Goods Sold (P&L) Dr.</td>
+        <td>1,60,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Inventory</td>
+        <td>-</td>
+        <td>1,60,000</td>
+      </tr>
+    </table>
+
+    <p>(Being cost of machine sold recognised)</p>
+
+    <p><strong>30th September, 20X1</strong></p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Mr. Anik A/c Dr.</td>
+        <td>12,596</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Finance Income (P&L)</td>
+        <td>-</td>
+        <td>12,596</td>
+      </tr>
+    </table>
+
+    <p>(Being finance income recognised)</p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Mr. Anik A/c Dr.</td>
+        <td>45,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Revenue - Rendering of Services (P&L)</td>
+        <td>-</td>
+        <td>45,000</td>
+      </tr>
+    </table>
+
+    <p>(Being revenue recognised from first maintenance service)</p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Cost of Services (P&L) Dr.</td>
+        <td>30,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Cash / Bank / Payables</td>
+        <td>-</td>
+        <td>30,000</td>
+      </tr>
+    </table>
+
+    <p>(Being cost of first maintenance service recognised)</p>
+
+    <p><strong>31st March, 20X2</strong></p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Mr. Anik A/c Dr.</td>
+        <td>15,477</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Finance Income (P&L)</td>
+        <td>-</td>
+        <td>15,477</td>
+      </tr>
+    </table>
+
+    <p>(Being finance income recognised)</p>
+
+    <p><strong>1st April, 20X2</strong></p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Mr. Anik A/c Dr.</td>
+        <td>75,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Revenue - Rendering of Services (P&L)</td>
+        <td>-</td>
+        <td>75,000</td>
+      </tr>
+    </table>
+
+    <p>(Being revenue recognised from second maintenance service)</p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Cost of Services (P&L) Dr.</td>
+        <td>50,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Cash / Bank / Payables</td>
+        <td>-</td>
+        <td>50,000</td>
+      </tr>
+    </table>
+
+    <p>(Being cost of second maintenance service recognised)</p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+      <tr>
+        <td>Bank A/c Dr.</td>
+        <td>4,00,000</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>To Mr. Anik A/c</td>
+        <td>-</td>
+        <td>4,00,000</td>
+      </tr>
+    </table>
+
+    <p>(Being receipt from customer recognised)</p>
+    `,
+},
+{
+    question_id: "FR_MTPMAR25_I_5B",
+    source: "ICAI MTP March 2025",
+    chapter_name: "Ind AS 19 - Employee Benefits / Ind AS 1 - Presentation of Financial Statements",
+    placement: 5,
+    marks: 4,
+
+    question_html: `
+    <p><strong>Either</strong></p>
+
+    <p>
+      A post-employment medical plan reimburses 10 percent of an employee's
+      post-employment medical costs if the employee leaves after more than
+      ten and less than twenty years of service and 50 percent of those costs
+      if the employee leaves after twenty or more years of service.
+    </p>
+
+    <p>
+      Determine how will the benefit be attributed to the years of service.
+    </p>
+
+    <p><strong>OR</strong></p>
+
+    <p>
+      XYZ Limited ('the Company') is into the manufacturing of tractor parts
+      and mainly supplying components to Original Equipment Manufacturers (OEMs).
+      The Company does not have any subsidiary, joint venture or associate company.
+    </p>
+
+    <p>
+      During preparation of financial statements for the year ended
+      31st March, 20X1, the accounts department is not sure about the treatment /
+      presentation of the following matters:
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>S. No.</th>
+        <th>Matters</th>
+      </tr>
+      <tr>
+        <td>(i)</td>
+        <td>
+          There are qualifications in the audit report of the Company with
+          reference to two Ind AS.
+        </td>
+      </tr>
+      <tr>
+        <td>(ii)</td>
+        <td>
+          Is it mandatory to add the word "standalone" before each of the
+          components of financial statements?
+        </td>
+      </tr>
+      <tr>
+        <td>(iii)</td>
+        <td>
+          The Company is an Indian company and preparing and presenting its
+          financial statements in ₹. Is it necessary to write in the financial
+          statements that the financial statements have been presented in ₹?
+        </td>
+      </tr>
+      <tr>
+        <td>(iv)</td>
+        <td>
+          The Company had sales transactions with 10 related parties during
+          previous year. However, during current year, there are no transactions
+          with 4 related parties out of the aforesaid 10 related parties.
+          Hence, the Company is of the view that it need not disclose sales
+          transactions with these 4 parties because there are no transactions
+          during the current year.
+        </td>
+      </tr>
+    </table>
+
+    <p>
+      Evaluate the above matters with respect to preparation and presentation
+      of general purpose financial statements.
+    </p>
+    `,
+
+    solution_html: `
+    <h4>Either - Post Employment Medical Plan</h4>
+
+    <ol>
+      <li>
+        Service in later years will lead to a materially higher level of benefit
+        than in earlier years. Therefore, for employees expected to leave after
+        20 or more years, the entity should attribute benefit on a straight-line
+        basis in accordance with paragraph 71 of Ind AS 19.
+      </li>
+
+      <li>
+        Service beyond 20 years will lead to no material additional benefit.
+        Hence, the benefit attributed to each of the first 20 years will be:
+        <br>
+        50% ÷ 20 years = 2.5% of the present value of expected medical costs.
+      </li>
+
+      <li>
+        For employees expected to leave between 10 and 20 years,
+        the benefit attributed to each of the first 10 years will be:
+        <br>
+        10% ÷ 10 years = 1% of the present value of expected medical costs.
+      </li>
+
+      <li>
+        For such employees, no benefit is attributed to service between the end
+        of the tenth year and the expected date of leaving.
+      </li>
+
+      <li>
+        For employees expected to leave within ten years,
+        no benefit is attributed.
+      </li>
+
+      <li>
+        The current service cost in each year reflects the probability that the
+        employee may not complete the required service period to earn part or
+        all of the benefits.
+      </li>
+    </ol>
+
+    <hr>
+
+    <h4>OR - Presentation of Financial Statements</h4>
+
+    <p><strong>(i) Qualifications in Audit Report</strong></p>
+
+    <p>
+      Yes. An entity whose financial statements comply with Ind AS shall make
+      an explicit and unreserved statement of such compliance in the notes.
+      An entity shall not describe financial statements as complying with
+      Ind AS unless they comply with all requirements of Ind AS.
+      (Refer Para 16 of Ind AS 1)
+    </p>
+
+    <p><strong>(ii) Use of the word "Standalone"</strong></p>
+
+    <p>
+      No. However, the entity should disclose that these are the individual
+      financial statements of the Company.
+      (Refer Para 51(b) of Ind AS 1)
+    </p>
+
+    <p><strong>(iii) Disclosure of Presentation Currency</strong></p>
+
+    <p>
+      Yes. Paragraph 51(d) of Ind AS 1 requires an entity to display the
+      presentation currency prominently and repeat it when necessary for the
+      information presented to be understandable.
+    </p>
+
+    <p><strong>(iv) Comparative Related Party Disclosures</strong></p>
+
+    <p>
+      No. As per Paragraph 38 of Ind AS 1, except where an Ind AS permits or
+      requires otherwise, an entity shall present comparative information for
+      all amounts reported in the current period's financial statements.
+    </p>
+
+    <p>
+      Comparative information shall also be provided for narrative and
+      descriptive information where relevant for understanding the current
+      period's financial statements.
+    </p>
+
+    <p>
+      Therefore, related party sales transactions disclosed in the previous
+      period with those 4 related parties shall continue to appear as
+      comparative information, even though no transactions occurred during
+      the current year.
+    </p>
+    `,
+},
+{
+    question_id: "FR_MTPMAR25_I_6A",
+    source: "ICAI MTP March 2025",
+    chapter_name: "Ind AS 116 - Leases / Code of Ethics",
+    placement: 6,
+    marks: 5,
+
+    question_html: `
+    <p>
+      Sunshine Ltd., a listed company in the cosmetics industry, has debt covenants
+      attached to some of its borrowings which are included in Financial Liabilities
+      in the Balance Sheet. These covenants mandate the company to repay the debt
+      in full if Sunshine Ltd. fails to maintain a liquidity ratio and operating margin
+      above the specified limit.
+    </p>
+
+    <p>
+      The directors alongwith the CFO of the Company who is a chartered accountant
+      are considering entering into a fresh five-year leasing arrangement but are
+      concerned about the negative impact any potential lease obligations may have
+      on the above-mentioned covenants.
+    </p>
+
+    <p>
+      Accordingly, the directors and CFO propose that the lease agreement be drafted
+      in such a way that it is a series of six ten-month leases rather than a single
+      five-year lease in order to utilize the short-term lease exemption available
+      under Ind AS 116, Leases. This would then enable accounting for the leases
+      in their legal form.
+    </p>
+
+    <p>
+      The directors believe that this treatment will meet the requirements of the
+      debt covenant, though such treatment may be contrary to the accounting
+      standards.
+    </p>
+
+    <p><strong>Required:</strong></p>
+
+    <p>
+      Discuss the ethical and accounting implications of the above issue from the
+      perspective of CFO.
+    </p>
+    `,
+
+    solution_html: `
+    <h4>Lease agreement substance presentation</h4>
+
+    <p>
+      Stakeholders make informed and accurate decisions based on the information
+      presented in the financial statements and as such, ensuring the financial
+      statements are reliable and of utmost importance.
+    </p>
+
+    <p>
+      The directors of Sunshine Ltd. are ethically responsible to produce financial
+      statements that comply with Ind AS and are transparent and free from material
+      error.
+    </p>
+
+    <p>
+      Lenders often attach covenants to the terms of the agreement in order to
+      protect their interests in an entity. They would also be of crucial importance
+      to potential debt and equity investors when assessing the risks and returns
+      from any future investment in the entity.
+    </p>
+
+    <p>
+      The proposed action by Sunshine Ltd. appears to be a deliberate attempt to
+      circumvent the terms of the covenants.
+    </p>
+
+    <p>
+      The legal form would require treatment as a series of short-term leases which
+      would be recorded in the profit or loss, without any right-of-use asset and
+      lease liability being recognized as required by Ind AS 116, Leases.
+    </p>
+
+    <p>
+      This would be a form of ‘off-balance sheet finance’ and would not report the
+      true assets and obligations of Sunshine Ltd.
+    </p>
+
+    <p>
+      As a result of this proposed action, the liquidity ratios would be adversely
+      misrepresented.
+    </p>
+
+    <p>
+      Further, the operating profit margins would also be adversely affected, as
+      the expenses associated with the lease are likely to be higher than the
+      depreciation charge if a leased asset was recognized, hence the proposal may
+      actually be detrimental to the operating profit covenant.
+    </p>
+
+    <p>
+      Sunshine Ltd. is aware that the proposed treatment may be contrary to Ind AS.
+      Such manipulation would be a clear breach of the fundamental principles of
+      objectivity and integrity as outlined in the Code of Ethics.
+    </p>
+
+    <p>
+      It is important for a chartered accountant to exercise professional behaviour
+      and due care at all times.
+    </p>
+
+    <p>
+      The proposals by Sunshine Ltd. are likely to mislead the stakeholders in the
+      entity. This could discredit the profession by creating a lack of confidence
+      within the profession.
+    </p>
+
+    <p>
+      The directors of Sunshine Ltd. must be reminded of their ethical
+      responsibilities and persuaded that the accounting treatment must fully
+      comply with the Ind AS and principles outlined within the framework should
+      they proceed with the financing agreement.
+    </p>
+
+    <p>
+      However, if the CFO fails to comply with his professional duties, he will be
+      subject to professional misconduct under Clause 1 of Part II of the Second
+      Schedule of the Chartered Accountants Act, 1949.
+    </p>
+
+    <p>
+      Clause 1 states that a member of the Institute, whether in practice or not,
+      shall be deemed to be guilty of professional misconduct if he contravenes
+      any of the provisions of this Act or the regulations made thereunder or any
+      guidelines issued by the Council.
+    </p>
+
+    <p>
+      As per the Guidelines issued by the Council, a member of the Institute who
+      is an employee shall exercise due diligence and shall not be grossly negligent
+      in the conduct of his duties.
+    </p>
+    `,
+},
+{
+    question_id: "FR_MTPMAR25_I_6B",
+    source: "ICAI MTP March 2025",
+    chapter_name: "Ind AS 101 - First-time Adoption of Indian Accounting Standards",
+    placement: 6,
+    marks: 5,
+
+    question_html: `
+    <p>
+      Mathur India Private Limited has to present its first financials under
+      Ind AS for the year ended 31st March, 20X3. The transition date is
+      1st April, 20X1.
+    </p>
+
+    <p>The following adjustments were made upon transition to Ind AS:</p>
+
+    <ol type="i">
+      <li>
+        The Company opted to fair value its land as on the date on transition.
+        The fair value of the land as on 1st April, 20X1 was ₹10 crores.
+        The carrying amount as on 1st April, 20X1 under the existing GAAP
+        was ₹4.5 crores.
+      </li>
+
+      <li>
+        The Company has recognised a provision for proposed dividend of
+        ₹60 lacs and related dividend distribution tax of ₹18 lacs during the
+        year ended 31st March, 20X1. It was written back as on opening
+        balance sheet date.
+      </li>
+
+      <li>
+        The Company fair values its investments in equity shares on the date
+        of transition. The increase on account of fair valuation of shares is
+        ₹75 lacs.
+      </li>
+
+      <li>
+        The Company has an Equity Share Capital of ₹80 crores and
+        Redeemable Preference Share Capital of ₹25 crores.
+      </li>
+
+      <li>
+        The reserves and surplus as on 1st April, 20X1 before transition to
+        Ind AS was ₹95 crores representing ₹40 crores of general reserve and
+        ₹5 crores of capital reserve acquired out of business combination and
+        balance is surplus in the retained earnings.
+      </li>
+
+      <li>
+        The company identified that the preference shares were in nature of
+        financial liabilities.
+      </li>
+    </ol>
+
+    <p>
+      What is the balance of total equity (Equity and other equity) as on
+      1st April, 20X1 after transition to Ind AS?
+    </p>
+
+    <p>
+      Show reconciliation between total equity as per AS (Accounting Standards)
+      and as per Ind AS to be presented in the opening balance sheet as on
+      1st April, 20X1.
+    </p>
+
+    <p><strong>Ignore deferred tax impact.</strong></p>
+    `,
+
+    solution_html: `
+    <h4>Computation of balance total equity as on 1st April, 20X1 after transition to Ind AS</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ in crore</th>
+      </tr>
+      <tr>
+        <td>Share Capital - Equity Share Capital</td>
+        <td>80.00</td>
+      </tr>
+      <tr>
+        <td colspan="2"><strong>Other Equity</strong></td>
+      </tr>
+      <tr>
+        <td>General Reserve</td>
+        <td>40.00</td>
+      </tr>
+      <tr>
+        <td>Capital Reserve</td>
+        <td>5.00</td>
+      </tr>
+      <tr>
+        <td>Retained Earnings (95 - 5 - 40)</td>
+        <td>50.00</td>
+      </tr>
+      <tr>
+        <td>Add: Increase in value of land (10 - 4.5)</td>
+        <td>5.50</td>
+      </tr>
+      <tr>
+        <td>Add: De-recognition of proposed dividend (0.60 + 0.18)</td>
+        <td>0.78</td>
+      </tr>
+      <tr>
+        <td>Add: Increase in value of investment</td>
+        <td>0.75</td>
+      </tr>
+      <tr>
+        <td><strong>Balance total equity after transition</strong></td>
+        <td><strong>182.03</strong></td>
+      </tr>
+    </table>
+
+    <h4>Reconciliation between Total Equity as per AS and Ind AS</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ in crore</th>
+      </tr>
+      <tr>
+        <td>Equity Share Capital</td>
+        <td>80.00</td>
+      </tr>
+      <tr>
+        <td>Redeemable Preference Share Capital</td>
+        <td>25.00</td>
+      </tr>
+      <tr>
+        <td><strong>Total Share Capital</strong></td>
+        <td><strong>105.00</strong></td>
+      </tr>
+      <tr>
+        <td>Reserves and Surplus</td>
+        <td>95.00</td>
+      </tr>
+      <tr>
+        <td><strong>Total Equity as per AS</strong></td>
+        <td><strong>200.00</strong></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><strong>Adjustments</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Preference Share Capital classified as Financial Liability
+        </td>
+        <td>(25.00)</td>
+      </tr>
+
+      <tr>
+        <td>
+          Proposed dividend not considered as liability on 1st April, 20X1
+        </td>
+        <td>0.78</td>
+      </tr>
+
+      <tr>
+        <td>
+          Increase in value of land due to remeasurement at fair value
+        </td>
+        <td>5.50</td>
+      </tr>
+
+      <tr>
+        <td>
+          Increase in value of investment due to remeasurement at fair value
+        </td>
+        <td>0.75</td>
+      </tr>
+
+      <tr>
+        <td><strong>Total Adjustments</strong></td>
+        <td><strong>6.25</strong></td>
+      </tr>
+
+      <tr>
+        <td><strong>Equity after transition to Ind AS</strong></td>
+        <td><strong>182.03</strong></td>
+      </tr>
+    </table>
+    `,
+},
+{
+    question_id: "FR_MTPMAR25_I_6C",
+    source: "ICAI MTP March 2025",
+    chapter_name: "Ind AS 113 - Fair Value Measurement",
+    placement: 6,
+    marks: 4,
+
+    question_html: `
+    <p>
+      ABC Ltd. acquired 5% equity shares of XYZ Ltd. for ₹10 crores in the
+      year 20X1-20X2.
+    </p>
+
+    <p>
+      The company is in process of preparing the financial statements for the
+      year 20X2-20X3 and is assessing the fair value at subsequent measurement
+      of the investment made in XYZ Ltd.
+    </p>
+
+    <p>
+      Based on the observable input, ABC Ltd. identified a similar nature of
+      transaction in which PQR Ltd. acquired 20% equity shares in XYZ Ltd.
+      for ₹60 crores.
+    </p>
+
+    <p>
+      The price of such transaction was determined on the basis of Comparable
+      Companies Method (CCM) - Enterprise Value (EV) / EBITDA which was 8.
+    </p>
+
+    <p>
+      For the current year, the EBITDA of XYZ Ltd. is ₹40 crores.
+    </p>
+
+    <p>
+      At the time of acquisition, the valuation was determined after considering
+      5% liquidity discount and 5% non-controlling stake discount.
+    </p>
+
+    <p>
+      What will be the fair value of ABC Ltd.'s investment in XYZ Ltd. as on
+      the balance sheet date?
+    </p>
+    `,
+
+    solution_html: `
+    <h4>Determination of Enterprise Value of XYZ Ltd.</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ in crore</th>
+      </tr>
+      <tr>
+        <td>EBITDA as on the measurement date</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td>EV / EBITDA Multiple</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td><strong>Enterprise Value of XYZ Ltd.</strong></td>
+        <td><strong>320</strong></td>
+      </tr>
+    </table>
+
+    <h4>Determination of Subsequent Measurement of Investment</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ in crore</th>
+      </tr>
+      <tr>
+        <td>Enterprise Value of XYZ Ltd.</td>
+        <td>320</td>
+      </tr>
+      <tr>
+        <td>ABC Ltd.'s share based on 5% holding (5% × 320)</td>
+        <td>16.0</td>
+      </tr>
+      <tr>
+        <td>
+          Less: Liquidity Discount and Non-controlling Stake Discount
+          (5% + 5% = 10%)
+        </td>
+        <td>(1.6)</td>
+      </tr>
+      <tr>
+        <td><strong>Fair Value of Investment</strong></td>
+        <td><strong>14.4</strong></td>
+      </tr>
+    </table>
+
+    <p>
+      Therefore, the fair value of ABC Ltd.'s investment in XYZ Ltd.
+      as on the balance sheet date is <strong>₹14.4 crores</strong>.
+    </p>
+    `,
+},
+
 
 ];

@@ -2199,4 +2199,288 @@ const mcqData = [
     }
   ]
 },
+{
+  case_id: "FR_MTP25_I_CS1",
+  case_chapter: [
+    "Ind AS 2 - Inventories",
+    "Ind AS 34 - Interim Financial Reporting",
+    "Ind AS 115 - Revenue from Contracts with Customers",
+    "Ind AS 41 - Agriculture"
+  ],
+  caseText: `
+    <p>M Ltd. is engaged in production and agricultural activities. It also runs a chain of gyms. M Ltd. prepares its financial statements following Indian Accounting Standards and follows April-March as its financial year.</p>
+
+    <p>During the year 20X1-20X2, the company has faced following issues and seeks professional advice:</p>
+
+    <p><strong>(i) Production Overheads</strong></p>
+
+    <p>Fixed production overheads for the financial year are ₹10,000. Normal expected production for the year, after considering planned maintenance, normal breakdown and future demand, is 2,000 MT. There are no quarterly or seasonal variations. Therefore, normal expected production for each quarter is 500 MT and fixed production overheads for each quarter are ₹2,500.</p>
+
+    <table border="1">
+      <tr>
+        <th>Quarter</th>
+        <th>Actual Production (MT)</th>
+      </tr>
+      <tr>
+        <td>First Quarter</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>Second Quarter</td>
+        <td>600</td>
+      </tr>
+      <tr>
+        <td>Third Quarter</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>Fourth Quarter</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>1,900</td>
+      </tr>
+    </table>
+
+    <p><strong>(ii) Gym Memberships</strong></p>
+
+    <p>On 1st April, 20X1, M Ltd. sells gym memberships for ₹7,500 per member for the first year to 100 customers, with an option to renew at a discounted price in the second and third year at ₹6,000 per year. M Ltd. estimates an annual attrition rate of 50% each year.</p>
+
+    <p><strong>(iii) Biological Assets</strong></p>
+
+    <p>On 1st November, 20X1, M Ltd. purchased 100 goats of a special breed from a market for ₹10,00,000 with transaction costs of 2%. The fair value of the goats decreased from ₹10,00,000 to ₹9,00,000 as on 31st March, 20X2.</p>
+
+    <p><strong>On the basis of the above information, choose the most appropriate answer to Questions 1 to 5.</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "FR_MTP25_I_CS1_Q1",
+      chapter_name: "Ind AS 2 / Ind AS 34",
+      question: "As per Ind AS 34 read with Ind AS 2, what will be the amount of fixed production overhead allocated to actual production and the amount of expense debited/credited to profit and loss account by the end of first quarter?",
+      options: [
+        "₹2,000 capitalised to inventory; ₹500 debited to Profit & Loss Account",
+        "₹2,500 capitalised to inventory; No amount debited/credited to Profit & Loss Account",
+        "Nothing capitalised to inventory; ₹2,500 debited to Profit & Loss Account",
+        "₹500 capitalised to inventory; ₹2,000 debited to Profit & Loss Account"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "FR_MTP25_I_CS1_Q2",
+      chapter_name: "Ind AS 2 / Ind AS 34",
+      question: "As per Ind AS 34 read with Ind AS 2, what will be the amount of fixed production overhead allocated to actual production and the amount of expense debited/credited to profit and loss account by the end of second quarter?",
+      options: [
+        "₹5,000 capitalised to inventory; No amount debited/credited to Profit & Loss Account",
+        "₹5,000 capitalised to inventory; ₹500 credited to Profit & Loss Account",
+        "₹5,000 capitalised to inventory; ₹500 debited to Profit & Loss Account",
+        "₹3,000 capitalised to inventory; ₹500 credited to Profit & Loss Account"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "FR_MTP25_I_CS1_Q3",
+      chapter_name: "Ind AS 115",
+      question: "What is the amount of revenue to be recognised per membership in the first year and the amount of contract liability per membership against the option given to the customer for renewing the membership at discount?",
+      options: [
+        "₹7,500; Nil",
+        "₹6,500; ₹1,000",
+        "₹6,857; ₹643",
+        "₹7,500; ₹12,000"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "FR_MTP25_I_CS1_Q4",
+      chapter_name: "Ind AS 41",
+      question: "What is the amount of biological asset recognised on the date of purchase?",
+      options: [
+        "₹10,00,000",
+        "₹9,00,000",
+        "₹10,20,000",
+        "₹9,80,000"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "FR_MTP25_I_CS1_Q5",
+      chapter_name: "Ind AS 41",
+      question: "What is the amount of gain or loss recognised on fair valuation of biological asset as on 31st March, 20X2?",
+      options: [
+        "₹1,00,000",
+        "₹18,000",
+        "₹1,20,000",
+        "₹98,000"
+      ],
+      answer: 3
+    }
+  ]
+},
+{
+  case_id: "FR_MTP25_I_CS2",
+  case_chapter: [
+    "Ind AS 2 - Inventories",
+    "Ind AS 109 - Financial Instruments"
+  ],
+  caseText: `
+    <p>P Ltd. is a multinational company and prepares and presents its financial statements following Indian Accounting Standards as its securities are listed on the National Stock Exchange.</p>
+
+    <p>The company requires guidance on the following matters:</p>
+
+    <p><strong>(i) Inventory Valuation</strong></p>
+
+    <table border="1">
+      <tr><th>Particulars</th><th>Kg.</th><th>₹</th></tr>
+      <tr><td>Opening Inventory - Finished Goods</td><td>1,000</td><td>25,000</td></tr>
+      <tr><td>Opening Inventory - Raw Materials</td><td>1,100</td><td>11,000</td></tr>
+      <tr><td>Purchases</td><td>10,000</td><td>1,00,000</td></tr>
+      <tr><td>Labour</td><td>-</td><td>76,500</td></tr>
+      <tr><td>Overheads (Fixed)</td><td>-</td><td>75,000</td></tr>
+      <tr><td>Sales</td><td>10,000</td><td>2,80,000</td></tr>
+      <tr><td>Closing Inventory - Raw Materials</td><td>900</td><td>-</td></tr>
+      <tr><td>Closing Inventory - Finished Goods</td><td>1,200</td><td>-</td></tr>
+    </table>
+
+    <p>The expected production for the year was 15,000 kg of finished goods. Due to fall in market demand, the sales price for finished goods was ₹20 per kg and replacement cost for raw materials was ₹9.50 per kg on the closing date.</p>
+
+    <p><strong>(ii) Security Deposit</strong></p>
+
+    <table border="1">
+      <tr><th>Particulars</th><th>Details</th></tr>
+      <tr><td>Date of Deposit</td><td>1-Apr-20X1</td></tr>
+      <tr><td>Date of Maturity</td><td>31-Mar-20X6</td></tr>
+      <tr><td>Description</td><td>Lease</td></tr>
+      <tr><td>Lease Period</td><td>5 Years</td></tr>
+      <tr><td>Discount Rate</td><td>12%</td></tr>
+      <tr><td>Security Deposit</td><td>₹10,00,000</td></tr>
+      <tr><td>PV Factor (Year 5)</td><td>0.567427</td></tr>
+    </table>
+
+    <p>The market interest rate for a deposit of similar period is 12% per annum.</p>
+
+    <p><strong>On the basis of the above information, choose the most appropriate answer to Questions 6 to 10.</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "FR_MTP25_I_CS2_Q6",
+      chapter_name: "Ind AS 2",
+      question: "What is the total cost of production during the year?",
+      options: [
+        "₹2,62,500",
+        "₹2,51,500",
+        "₹2,53,500",
+        "₹2,29,500"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "FR_MTP25_I_CS2_Q7",
+      chapter_name: "Ind AS 2",
+      question: "What is the value of closing inventory of finished goods at the end of the year?",
+      options: [
+        "₹27,000",
+        "₹29,823",
+        "₹24,000",
+        "₹32,550"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "FR_MTP25_I_CS2_Q8",
+      chapter_name: "Ind AS 2",
+      question: "What is the value of closing inventory of raw materials at the end of the year?",
+      options: [
+        "₹8,550",
+        "₹9,000",
+        "₹18,000",
+        "₹32,550"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "FR_MTP25_I_CS2_Q9",
+      chapter_name: "Ind AS 109",
+      question: "Security deposit will be initially recognised at:",
+      options: [
+        "₹10,00,000",
+        "₹5,67,427",
+        "₹4,32,573",
+        "Nil"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "FR_MTP25_I_CS2_Q10",
+      chapter_name: "Ind AS 109",
+      question: "Prepaid lease payment will be initially recognised at:",
+      options: [
+        "₹10,00,000",
+        "₹5,67,427",
+        "₹4,32,573",
+        "Nil"
+      ],
+      answer: 2
+    }
+  ]
+},
+{
+  case_id: "FR_MTP25_I_CS3",
+  case_chapter: [
+    "Ind AS 103 - Business Combinations",
+    "Ind AS 37 - Provisions, Contingent Liabilities and Contingent Assets"
+  ],
+  caseText: `
+    <p>ABC Ltd. acquires XYZ Ltd. in a business combination on 15th January, 20X1.</p>
+
+    <p>A few days before the acquisition, one of XYZ Ltd.'s customers claimed that certain amounts were due from XYZ Ltd. under penalty clauses for completion delays included in a contract.</p>
+
+    <p>ABC Ltd. evaluated the dispute based on information available at the acquisition date and concluded that XYZ Ltd. was responsible for at least some of the delays. Based on this evaluation, ABC Ltd. recognised ₹1 crore towards this liability as the best estimate of the fair value at acquisition date.</p>
+
+    <p>In October 20X1 (within the measurement period), the customer presented additional information. ABC Ltd. then concluded that the fair value of the liability at acquisition date was ₹2 crores.</p>
+
+    <p>ABC Ltd. continued to receive and evaluate information after October 20X1. Its evaluation did not change until February 20X2 (after the measurement period), when it concluded that the fair value of the liability at acquisition date was ₹1.9 crores.</p>
+
+    <p>ABC Ltd. determined that the amount that would be recognised under Ind AS 37 as at February 20X2 was ₹2.2 crores.</p>
+
+    <p><strong>On the basis of the above information, choose the most appropriate answer to Questions 11 to 13.</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "FR_MTP25_I_CS3_Q11",
+      chapter_name: "Ind AS 103",
+      question: "At what amount should the contingent liability relating to the customer claim be included in the consolidated balance sheet as on 31st March, 20X1 on acquisition of XYZ Ltd.?",
+      options: [
+        "₹1 crore",
+        "₹2 crores",
+        "₹1.90 crores",
+        "₹2.20 crores"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "FR_MTP25_I_CS3_Q12",
+      chapter_name: "Ind AS 103",
+      question: "At what amount should the contingent liability be valued after making the measurement period adjustment and in what account should the difference be adjusted?",
+      options: [
+        "₹1 crore; adjustment to retained earnings by ₹1 crore",
+        "₹2 crores; adjustment to goodwill account by ₹1 crore",
+        "₹1.90 crores; adjustment to goodwill account by ₹0.90 crore",
+        "₹2.20 crores; adjustment to retained earnings by ₹1.20 crore"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "FR_MTP25_I_CS3_Q13",
+      chapter_name: "Ind AS 103 / Ind AS 37",
+      question: "At what amount should the contingent liability be valued in the consolidated balance sheet as on 31st March, 20X2 and how should the difference be adjusted?",
+      options: [
+        "₹1 crore; adjustment to goodwill by ₹1 crore",
+        "₹2 crores; adjustment to retained earnings by ₹1 crore",
+        "₹1.90 crores; credit retained earnings by ₹0.10 crore",
+        "₹2.20 crores; debit retained earnings by ₹0.20 crore"
+      ],
+      answer: 3
+    }
+  ]
+},
 ];
