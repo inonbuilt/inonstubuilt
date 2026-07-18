@@ -1109,6 +1109,320 @@ const mcqData = [
     }
   ]
 },
+{
+  case_id: "AUD_MTPAPR25_II_CS1",
+  case_chapter: [
+    "SA 620 - Using the Work of an Auditor's Expert",
+    "SA 320 - Materiality in Planning and Performing an Audit",
+    "SA 530 - Audit Sampling",
+    "SA 505 - External Confirmations",
+    "SA 705 - Modifications to the Opinion in the Independent Auditor's Report",
+    "Joint Audit",
+    "Professional Ethics - Communication with Previous Auditor"
+  ],
+  caseText: `
+    <p>Chartered Accountant Firms <strong>Tink &amp; Co.</strong>, <strong>Llyods &amp; Co.</strong> and <strong>Manohar &amp; Co.</strong> respectively, were appointed as the joint auditors for conducting the statutory audit for the financial year <strong>2023-24</strong> of <strong>Anitya Ltd.</strong></p>
+
+    <p>They were having difference of opinion with regards to the following points:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Reasons for Differences in Opinion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Manohar &amp; Co. wanted to refer to the work of the auditor’s expert, <strong>Mr. Tanmay</strong> in the audit report but the other joint auditors were not agreeing on the same as such reference was not relevant to an understanding in the final audit opinion and also it was not required by any statute.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Certain misstatements affected information to be included in <strong>'Management Discussion and Analysis'</strong> of Anitya Ltd.'s annual report but as they were lower than materiality set for the financial statements as a whole and so according to the <strong>Llyods &amp; Co.</strong>, there was no requirement to perform any audit procedures on the same but the other joint auditors were not agreeing on the same for the reason that the information may reasonably be expected to influence the economic decisions of the users of the financial statements.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>For a selected item, the joint auditors were not able to apply the designed audit procedures or suitable alternate procedures and <strong>Llyods &amp; Co.</strong> wanted to treat that item as a misstatement in the case of test of controls as well as in the case of test of details but the other joint auditors were not agreeing on the said treatment.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Manohar &amp; Co.</strong> had determined for a particular account balance positive confirmation request was necessary to obtain sufficient and appropriate audit evidence but as it had not obtained such confirmation and alternate audit evidence would not have sufficed its requirements, Manohar &amp; Co. wanted to determine its implications on the audit opinion but the other joint auditors were not agreeing on the same.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The differences in opinion in the case of <strong>Tink &amp; Co.</strong> and <strong>Llyods &amp; Co.</strong> were resolved but there remained disagreement with one of the opinions of <strong>Manohar &amp; Co.</strong> due to which <strong>Manohar &amp; Co.</strong> expressed its opinion in a separate audit report.</p>
+
+    <p>Further, <strong>Manohar &amp; Co.</strong> resigned and filed the required statement with respect to its resignation with <strong>Anitya Ltd.</strong> as well as the Registrar, respectively.</p>
+
+    <p>The Board of Directors of <strong>Anitya Ltd.</strong> appointed <strong>Namo &amp; Co.</strong> as a joint auditor in place of <strong>Manohar &amp; Co.</strong> which was later approved by members in the general meeting of the company.</p>
+
+    <p><strong>Namo &amp; Co.</strong> before getting appointed, as aforesaid, had:</p>
+
+    <ol type="i">
+      <li>Communicated vide a registered post acknowledgment due to the previous joint auditor, <strong>Manohar &amp; Co.</strong> but the said post was received back with the remarks <strong>"Office Found Locked"</strong>.</li>
+      <li>Ascertained that the requirements of <strong>Section 139</strong> and <strong>Section 140</strong> of the Companies Act, 2013, with respect to its appointment had been duly complied with or not by <strong>Anitya Ltd.</strong>.</li>
+    </ol>
+  `,
+  questions: [
+    {
+      question_id: "AUD_MTPAPR25_II_CS1_4",
+      chapter_name: [
+        "SA 620 - Using the Work of an Auditor's Expert"
+      ],
+      question: "Whether the opinion of Manohar & Co. for referring the work of the auditor’s expert, Mr. Tanmay in the audit report, can be considered as valid?",
+      options: [
+        "No, as such reference was not relevant to an understanding in the final audit opinion and also it was not required by any law or regulation.",
+        "Yes, such a reference in the auditor’s opinion was relevant to the understanding of the users of the financial statement.",
+        "No, as such reference was not required by any law or regulation.",
+        "Yes, if such reference was relevant to any 'Key Audit Matter' as per SA 701 even though it was not required by any law or regulation."
+      ],
+      answer: 0
+    },
+    {
+      question_id: "AUD_MTPAPR25_II_CS1_5",
+      chapter_name: [
+        "SA 530 - Audit Sampling"
+      ],
+      question: "Whether the opinion of Llyods & Co. for treating the item as a misstatement in the case of test of controls as well in the case of test of details for which the joint auditors were not able to apply the designed audit procedures or suitable alternate procedures, can be considered as valid?",
+      options: [
+        "No, as such item shall be as a misstatement only in the case of test of controls and for test of details such item shall be treated as a deviation.",
+        "Yes, as such item shall be treated as a misstatement in the case of test of controls and test of details.",
+        "No, as such item shall be treated as a deviation in the case of test of controls and test of details.",
+        "No, as such item shall be treated as a misstatement only in the case of test of details and for test of controls such item shall be treated as a deviation."
+      ],
+      answer: 3
+    },
+    {
+      question_id: "AUD_MTPAPR25_II_CS1_6",
+      chapter_name: [
+        "SA 505 - External Confirmations",
+        "SA 705 - Modifications to the Opinion in the Independent Auditor's Report"
+      ],
+      question: "Whether the insistence by Manohar & Co. for determining implications of not obtaining response to positive confirmation request on the audit opinion can be considered as valid?",
+      options: [
+        "No, because in such a case the auditor should have enquired the reasons for the same from the management in writing and included the same as a 'Key Audit Matter' as per SA 701.",
+        "Yes, because in such a case the auditor should have determined implications for the audit and the auditor’s opinion in accordance with SA 705.",
+        "No, because in such a case the auditor should have obtained and relied upon a written representation as per SA 580 in this regard.",
+        "No, because in such a case the auditor should have determined the need to include an 'Emphasis of Matter' paragraph in the audit report as per SA 706 after considering the implications on the audit."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "AUD_MTPAPR25_II_CS1_7",
+      chapter_name: [
+        "Professional Ethics - Communication with Previous Auditor"
+      ],
+      question: "Whether Namo & Co. would be considered to have satisfied the requirements of communicating with the previous auditor?",
+      options: [
+        "No, as the communication through registered post acknowledgment due could not be done, Namo & Co. should have tried an alternative form of communication as prescribed by the Council of the ICAI for the same.",
+        "Yes, as it would be deemed that such post was delivered.",
+        "No, because in such a case Namo & Co. should have informed the Council of the ICAI with respect to the non-delivery of post to the previous auditor along with the reasons for the same.",
+        "No, however, Namo & Co. can commence the audit of Anitya Ltd. but should try to satisfy the requirement of communicating with the previous auditor at least before signing of the audit report."
+      ],
+      answer: 1
+    }
+  ]
+},
+{
+  case_id: "AUD_MTPAPR25_II_CS2",
+  case_chapter: [
+    "SA 706 - Emphasis of Matter Paragraphs and Other Matter Paragraphs",
+    "SA 402 - Audit Considerations Relating to an Entity Using a Service Organization",
+    "Companies Act, 2013 - Section 143(1)",
+    "SA 260 - Communication with Those Charged with Governance",
+    "UDIN"
+  ],
+  caseText: `
+    <p><strong>CA Kamlesh</strong> was appointed as the engagement partner on behalf of <strong>Dutta &amp; Associates</strong> for conducting the statutory audit for the <strong>3rd consecutive year</strong> of <strong>Pramat Limited</strong>, an unlisted public company, with a turnover of <strong>₹ 35 crore</strong> during <strong>F.Y. 2022-23</strong>.</p>
+
+    <p>From <strong>F.Y. 2023-24</strong> onwards, <strong>Pramat Limited</strong> had voluntarily adopted to prepare its financial statements as per <strong>Division II of Schedule III of the Companies Act, 2013</strong>, due to which <strong>Dutta &amp; Associates</strong> had revised the terms of audit engagement for the current audit engagement. As per the revised terms, it was decided that the auditor's report on the financial statements will incorporate a paragraph in accordance with <strong>SA 706</strong>, drawing users' attention to the additional disclosures. Moreover, it was decided that management will also present appropriate disclosures in the financial statements with respect to this change.</p>
+
+    <p>While auditing the entity, <strong>CA Kamlesh</strong> came across a business policy of <strong>Pramat Limited</strong> that required to invest some portion of its money earned in its business in securities of different blue-chip companies and due to this reason, almost <strong>55%</strong> of Pramat Limited's total assets consisted of such investments. These securities transactions were handled by its broker company, <strong>River Securities Private Limited (RSPL)</strong>. RSPL was also performing necessary investment account reconciliations and was also preparing the MTM gain and loss calculation for the entity. Pramat Limited used to rely upon the calculations performed by RSPL and based on that they pass the MTM entry for their current investments every month. Pramat Limited relying on the controls presents in RSPL for the preparation of this entry. They also listed controls present in RSPL in their Risk Control Matrix as key controls.</p>
+
+    <p>The engagement quality reviewer, <strong>CA Tushar</strong>, recommended CA Kamlesh to obtain a <strong>Type 2 report</strong> from the management of RSPL to which CA Kamlesh said that it was not required to do so as management was already comfortable with the controls present in RSPL.</p>
+
+    <p>Further while conducting the audit, CA Kamlesh observed that investments in certain securities were sold at a price less than at which they were acquired and he didn't report on such matter as per <strong>Section 143(1)</strong> of the Companies Act, 2013, without even considering to inquire into the propriety aspect of the same.</p>
+
+    <p>While finalising the audit report, CA Kamlesh prepared a letter containing key important points to be communicated to <strong>Those Charged with the Governance</strong> and <strong>Audit Committee</strong> of the entity. This letter was prepared in addition to the audit report. The audit team was of the view that for the above-mentioned letter the audit team is required to generate <strong>UDIN</strong>.</p>
+  `,
+  questions: [
+    {
+      question_id: "AUD_MTPAPR25_II_CS2_8",
+      chapter_name: [
+        "SA 706 - Emphasis of Matter Paragraphs and Other Matter Paragraphs"
+      ],
+      question: "While finalising the audit report CA Kamlesh decided to present the early adoption of IND AS under the 'Other Matter Paragraph' as in the auditor's judgment, is relevant to users' understanding of the audit, the auditor's responsibilities or the auditor's report. Kindly guide CA Kamlesh with respect to correct reporting in the Audit Report as per SA 706:",
+      options: [
+        "No disclosure is required as it is voluntary adoption of Division II of Schedule III of the Companies Act, 2013.",
+        "The Audit team should report the change in the 'Emphasis of Matter Paragraph' because, in the auditor's judgment, it is of such importance that it is fundamental to users' understanding of the financial statements.",
+        "The Audit team should report the change in the 'Other Matter Paragraph' because, in the auditor's judgment, it is of such importance that it is fundamental to users' understanding of the financial statements.",
+        "The Audit team should qualify as per SA 705 the said change as it was not required to be implemented and this will create unnecessary confusion for the reader."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "AUD_MTPAPR25_II_CS2_9",
+      chapter_name: [
+        "SA 402 - Audit Considerations Relating to an Entity Using a Service Organization"
+      ],
+      question: "CA Kamlesh's risk assessment includes an expectation that controls at the service organization are operating effectively and he contended that there was no requirement to obtain a Type 2 report. Kindly guide CA Kamlesh with respect to the requirement of SA 402.",
+      options: [
+        "CA Kamlesh's contention is correct as Management has comfort over the controls at service organization for the transactions and activities which are processed there.",
+        "When the user auditor's risk assessment includes an expectation that controls at the service organization are operating effectively, the user auditor shall obtain audit evidence about the operating effectiveness of those controls which may include by obtaining Type 2 report.",
+        "It depends upon the auditor's judgment and the recommendation of the engagement quality reviewer is not binding upon Audit team. As a result, CA Kamlesh's decision will be considered correct and appropriate.",
+        "As no services are outsourced to the broker company and hence there is no need to obtain the Type 2 report."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "AUD_MTPAPR25_II_CS2_10",
+      chapter_name: [
+        "Companies Act, 2013 - Section 143(1)"
+      ],
+      question: "Whether it is justifiable that CA Kamlesh didn't report on the matter with respect to sale of investments even without inquiring for the same?",
+      options: [
+        "No, as at least CA Kamlesh should have inquired into such a propriety matter in order to satisfy that such sales were bonafide.",
+        "Yes, as it is not mandatory for the auditor to report on the matters prescribed under the said section.",
+        "No, he should have at least consulted CA Tushar before doing so.",
+        "Yes, as the relevant clause for the reporting is not applicable in case of Pramat Limited."
+      ],
+      answer: 3
+    },
+    {
+      question_id: "AUD_MTPAPR25_II_CS2_11",
+      chapter_name: [
+        "UDIN",
+        "SA 260 - Communication with Those Charged with Governance"
+      ],
+      question: "CA Kamlesh was not sure with respect to the UDIN requirement for the letter to Those Charged with Governance containing important audit topics and findings for discussion. Kindly guide CA Kamlesh with respect to UDIN requirements for this letter.",
+      options: [
+        "Separate UDINs are to be generated for the Statutory audit report and Letter to Those Charged with Governance.",
+        "UDIN is only required for the Statutory Audit Report, but it is not required for the communication performed by Auditor as per SA 260 and SA 265.",
+        "One single UDIN is required to be generated for all items for this Client. UDINs are required to be generated Client wise instead of report-wise.",
+        "One single UDIN will be generated for the whole year for this engagement which may include various communication by auditor to management and Those Charged with Governance."
+      ],
+      answer: 1
+    }
+  ]
+},
+{
+  case_id: "AUD_MTPAPR25_II_CS3",
+  case_chapter: [
+    "Professional Ethics - Independence",
+    "NBFC Audit",
+    "RBI Prudential Norms - Provisioning for NPAs"
+  ],
+  caseText: `
+    <p><strong>CA Mridul</strong>, a practicing Chartered Accountant, has been appointed as the statutory auditor of <strong>PQT Limited</strong>, a reputed listed company engaged in manufacturing electronic products, as per the provisions of the Companies Act, 2013.</p>
+
+    <p>In addition to his audit responsibilities, he is actively involved in advising the government on proposed legislation aimed at attracting investments and advanced technology in the electronic products sector. He has publicly advocated the proposed policy in TV debates, articles in business newspapers, and advisory submissions to the government. In all such public appearances, he has disclosed his role as the auditor of <strong>PQT Limited</strong>.</p>
+
+    <p>Meanwhile, <strong>CA Mridul</strong> is also the statutory auditor of <strong>Fincorp Limited</strong>, a non-banking financial company, for the financial year <strong>2023-24</strong>. While reviewing the financial statements, he observes that the company has made the following provisioning in compliance with the Reserve Bank of India (RBI) Prudential Norms for Asset Classification as of <strong>31st March, 2024</strong>:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Asset Category</th>
+          <th>Balance Outstanding (₹ crores)</th>
+          <th>Provision for F.Y. 2023-24 (₹ crores)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Standard Assets</td>
+          <td>200</td>
+          <td>NIL</td>
+        </tr>
+        <tr>
+          <td>Sub-standard Assets (Fully secured)</td>
+          <td>15</td>
+          <td>1.00</td>
+        </tr>
+        <tr>
+          <td>Doubtful Assets (1-3 years) (Fully secured)</td>
+          <td>8</td>
+          <td>2.00</td>
+        </tr>
+        <tr>
+          <td>Loss Assets</td>
+          <td>2</td>
+          <td>2.00</td>
+        </tr>
+        <tr>
+          <td><strong>Total Provision for NPA</strong></td>
+          <td></td>
+          <td><strong>5.00 crores</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Upon review, <strong>CA Mridul</strong> is of the opinion that the company has not done the provisioning correctly and expresses concerns regarding non-compliance with RBI guidelines.</p>
+  `,
+  questions: [
+    {
+      question_id: "AUD_MTPAPR25_II_CS3_12",
+      chapter_name: [
+        "Professional Ethics - Independence"
+      ],
+      question: "Which of the following statements is likely to be correct in regard to PQT Limited?",
+      options: [
+        "The described situation can involve self-interest threats to the independence of the auditor.",
+        "The described situation can involve familiarity threats to the independence of the auditor.",
+        "The described situation can involve advocacy threats to the independence of the auditor.",
+        "The described situation can involve self-review threats to the independence of the auditor."
+      ],
+      answer: 2
+    },
+    {
+      question_id: "AUD_MTPAPR25_II_CS3_13",
+      chapter_name: [
+        "NBFC Audit",
+        "RBI Prudential Norms"
+      ],
+      question: "Is the provision for Loss Assets of ₹ 2 crores correct as per RBI norms?",
+      options: [
+        "Yes, because the provision should be 100% of the outstanding amount.",
+        "No, the provision should be only 50% as it is secured.",
+        "No, the provision should be NIL if the asset is secured.",
+        "Yes, but only if the RBI has classified it as a fraud-related asset."
+      ],
+      answer: 0
+    },
+    {
+      question_id: "AUD_MTPAPR25_II_CS3_14",
+      chapter_name: [
+        "NBFC Audit",
+        "RBI Prudential Norms"
+      ],
+      question: "Fincorp Limited has classified ₹ 15 crores of loans as sub-standard assets. As per RBI norms, what should be the minimum provision required for this category?",
+      options: [
+        "₹ 1.50 crores",
+        "₹ 3.00 crores",
+        "₹ 0.75 crores",
+        "₹ 1.00 crores"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "AUD_MTPAPR25_II_CS3_15",
+      chapter_name: [
+        "NBFC Audit",
+        "RBI Prudential Norms"
+      ],
+      question: "Fincorp Limited has ₹ 8 crores in doubtful assets (one to three years) and has provided ₹ 2.00 crores. What is the shortfall in provisioning as per RBI norms?",
+      options: [
+        "₹ 0.40 crores",
+        "₹ 1.00 crores",
+        "₹ 0.80 crores",
+        "No shortfall"
+      ],
+      answer: 0
+    }
+  ]
+},
+
 
 
 ];

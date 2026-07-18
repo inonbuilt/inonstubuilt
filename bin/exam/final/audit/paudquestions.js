@@ -3357,6 +3357,762 @@ const descriptiveQuestions = [
     <p>The examination of public enterprises by the Committee takes the form of comprehensive appraisal or evaluation of performance of the undertaking. It involves a thorough examination, including evaluation of the policies, programmes and financial working of the undertaking.</p>
   `
 },
+{
+  question_id: "AUD_MTPAPR25_II_1A",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "SA 580 - Written Representations",
+  placement: 1,
+  marks: 5,
+
+  question_html: `
+    <p>
+      CA Ashish is carrying out an audit of restated financial statements of Krop Limited
+      for past 3 financial years i.e. 2023-24, 2022-23 and 2021-22 for onward submission
+      to SEBI pursuant to their upcoming IPO (Initial Public Offer).
+    </p>
+
+    <p>
+      CA Ashish is planning to issue an Audit Report on 2nd August, 2024 covering these
+      restated financial statements. Before issuing the audit report, CA Ashish requested
+      a Management Representation Letter from the management of the company for this
+      assignment. The management of the company provided Management Representation
+      Letter dated 1st April, 2024 covering the period of financial year 2023-24 only as
+      they were not in position to provide for the financial year 2022-23 and 2021-22
+      because they were not in place during that period.
+    </p>
+
+    <p>
+      <strong>
+        How would CA Ashish deal with the above situation as per relevant Standard on
+        Auditing?
+      </strong>
+    </p>
+  `,
+
+  solution_html: `
+    <p>
+      According to <strong>SA 580, "Written Representations"</strong>, written
+      representations are necessary audit evidence, the auditor’s opinion cannot be
+      expressed, and the auditor’s report cannot be dated before the date of the written
+      representations.
+    </p>
+
+    <p>
+      Further, as per <strong>SA 560, "Subsequent Events"</strong>, the auditor is
+      concerned with events occurring up to the date of the auditor’s report that may
+      require adjustment to or disclosure in the financial statements, the written
+      representations are dated as near as practicable to, but not after, the date of the
+      auditor’s report on the financial statements.
+    </p>
+
+    <p>
+      In some circumstances it may be appropriate for the auditor to obtain a written
+      representation about a specific assertion in the financial statements during the
+      audit. Where this is the case, it may be necessary to request an updated written
+      representation.
+    </p>
+
+    <p>
+      The written representations are for all periods referred to in the auditor’s report
+      because management needs to reaffirm that the written representations it previously
+      made with respect to the prior periods remain appropriate. The auditor and
+      management may agree to a form of written representation that updates written
+      representations relating to the prior periods by addressing whether there are any
+      changes to such written representations and, if so, what they are.
+    </p>
+
+    <p>
+      Situations may arise where current management was not present during all the
+      periods referred to in the auditor’s report. Such persons may assert that they are
+      not in a position to provide some or all the written representations because they
+      were not in place during the period. This fact, however, does not diminish such
+      persons’ responsibilities for the financial statements as a whole.
+    </p>
+
+    <p>
+      In the given situation, CA Ashish is carrying out an audit of restated financial
+      statements of Krop Limited for the past 3 financial years i.e., 2023-24, 2022-23
+      and 2021-22 so he requested a Management Representation Letter from the
+      management of the Company for this assignment before issuance of the report.
+      The management of the Company provided the Management Representation Letter
+      only for the financial year 2023-24 as they were not in place during that period.
+    </p>
+
+    <p>
+      Accordingly, the requirement for the auditor to request from them written
+      representations that cover the whole of the relevant period(s) still applies.
+      Therefore, as per the above requirement of SA 580, CA Ashish should take written
+      representation letter from management of Krop Limited for the financial year
+      2022-23 and 2021-22 also.
+    </p>
+
+    <p>
+      In case the management of Krop Limited does not provide written representation as
+      requested, the auditor shall discuss with the management, re-evaluate the integrity
+      of management, and take appropriate actions including the impact on the audit
+      report as per SA 705.
+    </p>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_6C",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Emphasis of Matter / Other Matter Paragraph",
+  placement: 6,
+  marks: 4,
+  question_html: `
+    <p><strong>Act Pharma Limited</strong> is engaged in manufacturing of active pharmaceutical ingredients. Due to changes in laws and regulations, every company engaged in manufacturing active pharmaceutical ingredients now requires a production capacity licence, which restricts the production capacity of such companies.</p>
+
+    <p>The management assessed the impact of the change in law on the financial position of the company and appropriately disclosed the same in the financial statements. The audit team evaluated the disclosure and found it appropriate and sufficient.</p>
+
+    <p>However, considering the matter to be most important and fundamental to users' understanding of the financial statements, the audit team decided to disclose the same under the <strong>Other Matter Paragraph</strong> in the auditor's report.</p>
+
+    <p><strong>You, as the Engagement Partner, are required to guide the audit team regarding the appropriate reporting of the above matter in the auditor's report.</strong></p>
+
+    <p style="text-align:center;"><strong>OR</strong></p>
+
+    <p><strong>Dheer &amp; Co.</strong>, a sole proprietorship Chartered Accountancy firm, has its office in a busy area of a city. The proprietor experienced difficulty in regularly attending to the consultancy requirements of clients located in an industrial cluster situated 26 kilometres away from the office.</p>
+
+    <p>To facilitate client servicing, a facilitation centre was opened in the industrial cluster. The proprietor personally managed both the main office and the facilitation centre. However, no intimation regarding the facilitation centre was given to the Institute of Chartered Accountants of India.</p>
+
+    <p><strong>Examine whether there is any professional misconduct in this respect.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>As per SA 706, "Emphasis of Matter Paragraphs and Other Matter Paragraphs in the Independent Auditor's Report",</strong> if the auditor considers it necessary to draw users' attention to a matter that is appropriately presented or disclosed in the financial statements and is of such importance that it is fundamental to users' understanding of the financial statements, the auditor shall include an <strong>Emphasis of Matter</strong> paragraph, provided:</p>
+
+    <ol type="i">
+      <li>The auditor is not required to modify the opinion under SA 705; and</li>
+      <li>Where SA 701 applies, the matter has not been determined to be a Key Audit Matter.</li>
+    </ol>
+
+    <p>In the present case, the impact of the regulatory change has already been appropriately assessed and disclosed by the management, and the audit team has found the disclosure to be adequate.</p>
+
+    <p>Since the matter is fundamental to users' understanding of the financial statements, it should be reported under an <strong>Emphasis of Matter Paragraph</strong> and <strong>not</strong> under an Other Matter Paragraph.</p>
+
+    <p>Therefore, the audit team's proposed reporting under the Other Matter Paragraph is not appropriate.</p>
+
+    <p style="text-align:center;"><strong>OR</strong></p>
+
+    <p><strong>Section 27 of the Chartered Accountants Act, 1949</strong> provides that where a Chartered Accountant in practice has more than one office in India, each office shall be in the separate charge of a member of the Institute.</p>
+
+    <p>However, a member may personally be in charge of two offices if:</p>
+
+    <ul>
+      <li>both offices are situated in the same premises or city; or</li>
+      <li>the second office is situated within <strong>50 kilometres</strong> from the municipal limits of the city where the first office is located.</li>
+    </ul>
+
+    <p>The member must also declare which office is the main office and intimate the Institute accordingly.</p>
+
+    <p>In the present case, although the facilitation centre is situated within the permissible distance of 50 kilometres and is personally managed by the proprietor, no intimation was given to ICAI.</p>
+
+    <p>Accordingly, <strong>Dheer &amp; Co. will be guilty of professional misconduct</strong> for failure to intimate the Institute regarding the facilitation centre and the main office.</p>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_6B",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Audit Evidence – Specific Considerations for Selected Items (SA 501)",
+  placement: 6,
+  marks: 5,
+  question_html: `
+    <p><strong>The Engagement Partner of the audit team of High Inventory Limited</strong> assessed that the inventory is material with respect to the audit of the financial statements for the current period.</p>
+
+    <p>Upon inquiring with the management, the Engagement Partner identified that the management will be performing an annual physical inventory count at all the warehouses where the entity stores and maintains its inventory. Moreover, management confirmed in its written representation that they will be performing a <strong>100% physical count</strong> of inventory for the current period.</p>
+
+    <p>As a result, the Engagement Partner decided <strong>not to perform any physical count of inventory</strong> as it would be a duplication of the work. Further, he concluded that the written representation from management stating that <em>"the inventory exists and is in appropriate physical condition"</em> would constitute sufficient and appropriate audit evidence to conclude that the inventory balance in the financial statements is free from any material misstatement.</p>
+
+    <p><strong>In the light of SA 501, evaluate whether the decision taken by the Engagement Partner is appropriate or not.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>As per SA 501, "Audit Evidence – Specific Considerations for Selected Items",</strong> when inventory is material to the financial statements, the auditor shall obtain sufficient appropriate audit evidence regarding the existence and condition of inventory by:</p>
+
+    <ol type="i">
+      <li><strong>Attendance at physical inventory counting</strong>, unless impracticable, to:
+        <ol type="1">
+          <li>Evaluate management's instructions and procedures for recording and controlling the results of the entity's physical inventory counting.</li>
+          <li>Observe the performance of management's count procedures.</li>
+          <li>Inspect the inventory.</li>
+          <li>Perform test counts.</li>
+        </ol>
+      </li>
+      <li>Performing audit procedures over the entity's final inventory records to determine whether they accurately reflect actual inventory count results.</li>
+    </ol>
+
+    <p><strong>Attendance at physical inventory counting involves:</strong></p>
+
+    <ol type="i">
+      <li>Inspecting the inventory to ascertain its existence, evaluate its condition and perform test counts.</li>
+      <li>Observing compliance with management's instructions and the performance of procedures for recording and controlling the results of the physical inventory count.</li>
+      <li>Obtaining audit evidence as to the reliability of management's count procedures.</li>
+    </ol>
+
+    <p>Hence, in the given case, the decision of the Engagement Partner is <strong>not appropriate</strong>. Since inventory is material to the financial statements, the auditor cannot merely rely on the management's written representation stating that the inventory exists and is in appropriate physical condition. The auditor is required to attend the physical inventory count (unless impracticable) and perform the audit procedures prescribed under SA 501 to obtain sufficient appropriate audit evidence regarding the existence and condition of inventory.</p>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_6A",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Quality Control – Acceptance and Continuance of Client Relationships (SQC 1 & SA 220)",
+  placement: 6,
+  marks: 5,
+  question_html: `
+    <p><strong>Sun & Associates</strong> are the statutory auditors of a large unlisted company engaged in the manufacturing of auto components. Subsequent to their re-appointment in the Annual General Meeting, the company shared the appointment letter with Sun & Associates seeking acknowledgement and acceptance.</p>
+
+    <p><strong>CA S</strong>, the Engagement Partner, is planning to issue the acceptance letter. During the current financial year, the following matters came to his notice:</p>
+
+    <ul>
+      <li>The company was subjected to a search by the Income-tax Authorities and certain accounting records were seized for verification.</li>
+      <li>Based on information available on social media, CA S noted that the promoters' brother is contemplating to contest the ensuing elections under the banner of a political party.</li>
+      <li>One of the current senior engagement team managers, who had been associated with this audit engagement till last year, has left Sun & Associates and is planning to provide accounting services to one of the associate companies.</li>
+      <li>Sun & Associates are yet to recruit another senior manager having adequate experience in audits of clients engaged in the automotive sector.</li>
+    </ul>
+
+    <p><strong>Elaborate the matters to be considered by Sun & Associates with respect to acceptance and continuance of client relationships considering the above issues.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>As per SQC 1, "Quality Control for Firms that Perform Audits and Reviews of Historical Financial Information, and Other Assurance and Related Services Engagements",</strong> before accepting or continuing a client relationship, the firm should obtain sufficient information to evaluate:</p>
+
+    <ul>
+      <li>Integrity of the client, promoters and key managerial personnel.</li>
+      <li>Competence, capabilities, time and resources to perform the engagement.</li>
+      <li>Compliance with ethical requirements.</li>
+    </ul>
+
+    <p>The firm should obtain the necessary information before accepting a new engagement, deciding whether to continue an existing engagement, or accepting a new engagement with an existing client. Where issues are identified and the firm decides to accept or continue the engagement, the manner in which those issues were resolved should be documented.</p>
+
+    <p><strong>Further, as per SA 220, "Quality Control for an Audit of Financial Statements",</strong> the Engagement Partner shall form a conclusion on compliance with independence requirements applicable to the audit engagement by obtaining relevant information from the firm and, where applicable, network firms, to identify and evaluate threats to independence.</p>
+
+    <p>Accordingly, Sun & Associates should consider the following matters:</p>
+
+    <ol type="i">
+      <li>Follow the firm's policies and procedures for client acceptance and continuance by evaluating the integrity of the client, assessing engagement risks and ensuring that the firm possesses the necessary competence and resources. The engagement team should also assess whether the company is involved in any funding activities relating to political parties and evaluate the associated risks.</li>
+
+      <li>Communicate clearly with the client regarding the scope of the engagement, the responsibilities of both parties and any limitations on the services to be provided.</li>
+
+      <li>Maintain independence and objectivity throughout the engagement. Since the former senior engagement manager intends to provide accounting services to one of the associate companies, the Engagement Partner should assess whether this creates any independence or ethical threats and evaluate compliance with the applicable ethical requirements.</li>
+
+      <li>Continually monitor the client relationship for significant developments. The Income-tax search should be evaluated to determine the risk of material misstatement and the possibility of undisclosed tax disputes or liabilities requiring appropriate audit attention.</li>
+
+      <li>Ensure that the engagement team possesses adequate competence and capabilities. Since an experienced senior manager has left the firm, the Engagement Partner should evaluate whether sufficient experienced resources are available or whether recruitment of another suitable senior manager is necessary before commencement of the audit.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_5C",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Professional Ethics – Signing of Certificates",
+  placement: 5,
+  marks: 4,
+  question_html: `
+    <p><strong>CA Meet</strong>, a practicing Chartered Accountant, was on a foreign tour between <strong>12-08-2024 and 27-08-2024</strong>. On <strong>20-08-2024</strong>, he received a message from one of his clients requesting a <strong>stock certificate</strong> to be produced before a bank on or before <strong>22-08-2024</strong>.</p>
+
+    <p>Considering the urgency, CA Meet instructed his assistant, who is also a Chartered Accountant, to sign and issue the stock certificate on his behalf after carrying out due verification.</p>
+
+    <p><strong>Examine whether CA Meet is liable for professional misconduct under the Chartered Accountants Act, 1949.</strong></p>
+  `,
+  solution_html: `
+    <p>As per <strong>Clause (12) of Part I of the First Schedule to the Chartered Accountants Act, 1949</strong>, a Chartered Accountant in practice is deemed to be guilty of professional misconduct if he allows a person, not being a member of the Institute in practice or a member not being his partner, to sign on his behalf or on behalf of his firm any balance sheet, profit and loss account, report or financial statements.</p>
+
+    <p>In the present case, although CA Meet's assistant is a member of the Institute, he is <strong>not a partner</strong> of CA Meet. By directing his assistant to sign and issue the stock certificate on his behalf, CA Meet has permitted a member who is not his partner to sign on his behalf.</p>
+
+    <p>Accordingly, <strong>CA Meet is guilty of professional misconduct</strong> under <strong>Clause (12) of Part I of the First Schedule to the Chartered Accountants Act, 1949.</strong></p>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_5B",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "External Confirmations (SA 505)",
+  placement: 5,
+  marks: 5,
+  question_html: `
+    <p><strong>During the audit of Goldy Ltd.</strong>, a company engaged in the production of paper, the auditor obtained external confirmations for the balances of trade payables outstanding in the balance sheet by using <strong>Negative Confirmation Requests</strong>.</p>
+
+    <p>Among the trade payables, there were several small outstanding balances and one old outstanding balance of <strong>₹ 20 lakhs</strong> for which no confirmation was received.</p>
+
+    <p><strong>Comment with reference to the relevant Standard on Auditing relating to the confirmation process and explain how the auditor should deal with the non-receipt of confirmation.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>As per SA 505, "External Confirmations",</strong> a <strong>negative confirmation request</strong> is a request that asks the confirming party to respond directly to the auditor <strong>only if the confirming party disagrees</strong> with the information provided in the request.</p>
+
+    <p>Negative confirmations provide <strong>less persuasive audit evidence</strong> than positive confirmations.</p>
+
+    <p>The failure to receive a response to a negative confirmation request does not explicitly indicate that the intended confirming party has received the confirmation request or verified the accuracy of the information contained in the request.</p>
+
+    <p>Accordingly, the failure of a confirming party to respond to a negative confirmation request provides <strong>significantly less persuasive audit evidence</strong> than a response to a positive confirmation request.</p>
+
+    <p>Confirming parties may also be more likely to respond when they disagree with the information contained in the confirmation request and less likely to respond when they agree with it.</p>
+
+    <p>In the given case, the auditor used negative confirmation requests for trade payables. Since no confirmation was received for the old outstanding balance of <strong>₹ 20 lakhs</strong>, the auditor should perform <strong>alternative audit procedures</strong>, such as:</p>
+
+    <ul>
+      <li>Examining subsequent cash disbursements.</li>
+      <li>Reviewing correspondence from the supplier or other third parties.</li>
+      <li>Examining goods received notes and other supporting records.</li>
+    </ul>
+
+    <p>Further, non-response to a negative confirmation request <strong>does not by itself indicate a misstatement</strong>, since a negative confirmation requires a response only when the confirming party disagrees with the information provided.</p>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_5A",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Concurrent Audit of Banks – Foreign Exchange Transactions",
+  placement: 5,
+  marks: 5,
+  question_html: `
+    <p>You have been appointed as the <strong>Concurrent Auditor</strong> of a branch of <strong>Silver Bank Ltd.</strong>, which primarily deals in foreign exchange transactions.</p>
+
+    <p>During the audit, you noticed discrepancies in certain inward and outward remittances, as well as unusual fluctuations in <strong>Nostro account balances</strong>.</p>
+
+    <p><strong>What audit procedures would you implement to verify the accuracy and compliance of foreign exchange transactions of this branch?</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Suggested audit procedures to be performed by the Concurrent Auditor for verifying foreign exchange transactions of the branch are as follows:</strong></p>
+
+    <ol type="i">
+      <li><strong>Foreign bills:</strong> Check foreign bills negotiated under letters of credit.</li>
+
+      <li><strong>Non-resident accounts:</strong> Verify FCNR and other non-resident accounts to ensure that the debits and credits are permissible under the applicable rules.</li>
+
+      <li><strong>Remittances:</strong> Check whether inward and outward remittances have been properly accounted for.</li>
+
+      <li><strong>Forward contracts:</strong> Examine extension and cancellation of forward contracts for purchase and sale of foreign currency. Ensure that such transactions are duly authorised and the necessary charges have been recovered.</li>
+
+      <li><strong>Nostro accounts:</strong> Ensure that balances in Nostro accounts in different foreign currencies are maintained within the limits prescribed by the bank.</li>
+
+      <li><strong>Overbought/Oversold position:</strong> Verify that the overbought and oversold positions maintained in different currencies are reasonable, considering the volume of foreign exchange operations.</li>
+
+      <li><strong>RBI/Head Office guidelines:</strong> Ensure adherence to the guidelines issued by the RBI and the Head Office of the bank regarding dealing room operations.</li>
+
+      <li><strong>Nostro and Vostro reconciliation:</strong> Ensure timely verification and reconciliation of Nostro and Vostro account transactions and balances.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_4C",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Materiality in Planning and Performing an Audit (SA 320)",
+  placement: 4,
+  marks: 4,
+  question_html: `
+    <p><strong>Ananya &amp; Co., Chartered Accountants</strong>, during the audit of <strong>Krishna Ltd.</strong>, found that certain machinery had been imported for the production of a new product.</p>
+
+    <p>Although the auditors have applied the concept of materiality to the financial statements as a whole, they now want to re-evaluate the materiality concept for the said transaction involving foreign exchange.</p>
+
+    <p><strong>Give your views in this regard.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>As per SA 320, “Materiality in Planning and Performing an Audit”,</strong> when establishing the overall audit strategy, the auditor shall determine materiality for the financial statements as a whole. If, in the specific circumstances of the entity, there is one or more particular classes of transactions, account balances or disclosures for which misstatements of lesser amounts than the materiality for the financial statements as a whole could reasonably be expected to influence the economic decisions of users taken on the basis of the financial statements, the auditor shall also determine the materiality level or levels to be applied to those particular classes of transactions, account balances or disclosures.</p>
+
+    <p>The auditor shall revise materiality for the financial statements as a whole (and, if applicable, the materiality level or levels for particular classes of transactions, account balances or disclosures) in the event of becoming aware of information during the audit that would have caused the auditor to have determined a different amount (or amounts) initially.</p>
+
+    <p>If the auditor concludes a lower materiality for the same, he shall determine whether it is necessary to revise performance materiality and whether the nature, timing and extent of the further audit procedures remain appropriate.</p>
+
+    <p>In the given case, <strong>Ananya &amp; Co.</strong>, as an auditor has applied the concept of materiality for the financial statements as a whole. But they want to re-evaluate the materiality concept on the basis of additional information of import of machinery for production of new product which draws attention to a particular aspect of the company’s business.</p>
+
+    <p>Thus, <strong>Ananya &amp; Co.</strong> can re-evaluate the materiality concepts after considering the necessity of such revision.</p>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_4B",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Integrated Reporting",
+  placement: 4,
+  marks: 5,
+  question_html: `
+    <p><strong>Miger Ltd.</strong> is a multinational corporation that prides itself on sustainable business practices and holistic value creation. During a recent board meeting, the CEO emphasised the importance of disclosing not just financial performance but also non-financial aspects that contribute to long-term success.</p>
+
+    <p>The company’s sustainability team highlighted their investments in cutting-edge research, employee skill development, strong supplier relationships, and eco-friendly infrastructure.</p>
+
+    <p>To ensure a well-rounded and transparent report, the company’s Chief Financial Officer (CFO) suggested adopting <strong>Integrated Reporting</strong>. The board members, however, were unfamiliar with the concept and asked for a clear breakdown of its key elements.</p>
+
+    <p><strong>As a consultant, how would you explain the essential components of Integrated Reporting to the board?</strong></p>
+  `,
+  solution_html: `
+    <p><strong>There are 6 Cs of Integrated Reporting – also known as 6 Capitals:</strong></p>
+
+    <ol type="i">
+      <li>
+        <p><strong>Financial Capital:</strong></p>
+        <ul>
+          <li>Pool of funds that is available to the organization for use in the production of goods or provision of services.</li>
+          <li>Obtained through financing, such as debt, equity, or grants, or generated through operations or investments.</li>
+        </ul>
+      </li>
+
+      <li>
+        <p><strong>Manufactured Capital:</strong></p>
+        <ul>
+          <li>Seen as human-created, production-oriented equipment and tools.</li>
+          <li>Available to the organization for use in the production of goods or the provision of services, including buildings, equipment, infrastructure (such as roads, ports, bridges &amp; waste, and water treatment plants).</li>
+        </ul>
+      </li>
+
+      <li>
+        <p><strong>Natural Capital:</strong></p>
+        <ul>
+          <li>Is an input to the production of goods or the provision of services.</li>
+          <li>An organization’s activities also impact, positively or negatively, on natural capital.</li>
+          <li>Includes water, land, minerals and forests, biodiversity, and ecosystem health.</li>
+        </ul>
+      </li>
+
+      <li>
+        <p><strong>Human Capital:</strong></p>
+        <p>People’s skills and experience, their capacity, and motivations to innovate, including their:</p>
+        <ul>
+          <li>Alignment with and support of the organization’s governance framework &amp; ethical values such as its recognition of human rights.</li>
+          <li>Ability to understand and implement an organization’s strategy.</li>
+          <li>Loyalties and motivations for improving processes, goods, and services, including their ability to lead and to collaborate.</li>
+        </ul>
+      </li>
+
+      <li>
+        <p><strong>Social Capital:</strong></p>
+        <ul>
+          <li>Institutions and relationships established within and between each community, group of stakeholders and other networks to enhance individual and collective well-being.</li>
+          <li>Includes:
+            <ul>
+              <li>Common values and behaviour.</li>
+              <li>Key relationships, the trust and loyalty that an organization has developed and strives to build and protect with customers, suppliers, and business partners.</li>
+              <li>An organization’s social license to operate.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p><strong>Intellectual Capital:</strong></p>
+        <p>Key element in an organization’s future earning potential, with a tight link and contingency between investment in R&amp;D, innovation, human resources, and external relationships, which can determine the organization’s competitive advantage.</p>
+      </li>
+    </ol>
+
+    <p><strong>Note:</strong> Asia Pacific region continues to dominate in presenting sustainability data in annual reports. Approximately 60% of companies reported in 2022. Integrated reporting is also strong in the Middle East.</p>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_4A",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Professional Misconduct – Gross Negligence (Clause 7 of Part I of Second Schedule) / SA 240",
+  placement: 4,
+  marks: 5,
+  question_html: `
+    <p>The <strong>Cashier of a company</strong> committed a fraud and absconded with the proceeds thereof. The <strong>Chief Accountant</strong> of the company also did not know when the fraud had occurred.</p>
+
+    <p>During the audit, the auditor failed to discover the fraud. However, the fraud was discovered by the Chief Accountant after the audit was completed.</p>
+
+    <p>Investigation made at that time indicated that the auditor did not exercise proper skill and care and performed his work in a desultory and haphazard manner.</p>
+
+    <p>With this background, the Directors of the company intend to file disciplinary proceedings against the auditor.</p>
+
+    <p><strong>Comment with reference to the Chartered Accountants Act, 1949 and the Schedules thereto.</strong></p>
+  `,
+  solution_html: `
+    <p>According to <strong>Clause (7) of Part I of the Second Schedule to the Chartered Accountants Act, 1949</strong>, a Chartered Accountant in practice is deemed to be guilty of professional misconduct if he <strong>“does not exercise due diligence or is grossly negligent in the conduct of his professional duties”.</strong></p>
+
+    <p>As per <strong>SA 240, "The Auditor's Responsibilities Relating to Fraud in an Audit of Financial Statements"</strong>, it can be concluded that the auditor did not plan and perform the audit with an attitude of professional skepticism. Thus, having regard to this and a fraud that has actually taken place during the year committed by the absconding cashier, it is reasonable to think that prima facie there is a case against the auditor for gross negligence.</p>
+
+    <p>In the given case, the auditor failed to discover the fraud during the audit. It is clearly given that the investigation indicated that the auditor did not exercise reasonable skill and care and performed his work in a casual and unmethodical manner.</p>
+
+    <p>From the facts given in the case and by applying <strong>Clause (7)</strong> and <strong>SA 240</strong>, it can be concluded that the auditor is guilty of professional misconduct and the directors can file disciplinary proceedings against the auditor.</p>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_3C",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Professional Ethics – Other Occupation (Clause 11 of Part I of First Schedule)",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p><strong>CA Yug</strong>, a practicing Chartered Accountant, is a <strong>promoter director of CDS Pvt. Ltd.</strong> and is also a <strong>sleeping partner in his family’s garments manufacturing business.</strong></p>
+
+    <p><strong>Is CA Yug liable for professional misconduct as per the Chartered Accountants Act, 1949?</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Clause (11) of Part I of the First Schedule to the Chartered Accountants Act, 1949</strong> debars a Chartered Accountant in practice from engaging in any business or occupation other than the profession of Chartered Accountancy unless permitted by the Council of the Institute so to engage.</p>
+
+    <p>There is no bar for a member to be a <strong>promoter/signatory to the Memorandum and Articles of Association of any company.</strong> There is also no bar for such a promoter/signatory to be a <strong>Director Simplicitor</strong> of that company irrespective of whether the object of the company includes areas which fall within the scope of the profession of Chartered Accountants. Therefore, members are not required to obtain specific permission from the Council in such cases.</p>
+
+    <p>Further, members of the Institute in practice may engage, <strong>after obtaining the specific and prior approval of the Council</strong>, in case of interest in family business concerns (including such interest devolving on the members as a result of inheritance/succession/partition of the family business) or concerns in which interest has been acquired as a result of relationships and in the management of which no active part is taken.</p>
+
+    <p>In the given case, CA Yug is a promoter director of CDS Pvt. Ltd. and also a sleeping partner in his family business of garments manufacturing firm.</p>
+
+    <p>Applying the above to the given case, it can be concluded that CA Yug:</p>
+
+    <ul>
+      <li><strong>As Promoter Director</strong> – Not guilty of professional misconduct under the Chartered Accountants Act, 1949.</li>
+      <li><strong>As Sleeping Partner</strong> – Guilty of professional misconduct under the Chartered Accountants Act, 1949, as he did not obtain prior approval of the Council.</li>
+    </ul>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_3B",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "SRS 4410 (Revised) – Compilation Engagements (Engagement Level Quality Control)",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p><strong>KSN and Co., Chartered Accountants</strong>, have been appointed by <strong>Nature Ltd.</strong> to assist management in the preparation and presentation of financial information in accordance with an applicable financial reporting framework and issuing a report.</p>
+
+    <p><strong>CA L</strong> has been appointed as the engagement partner for the assignment.</p>
+
+    <p><strong>What are the responsibilities of CA L and which documentation requirements related to Engagement Level Quality Control should CA L ensure compliance with in such an engagement?</strong></p>
+  `,
+  solution_html: `
+    <p><strong>The engagement partner shall take responsibility for:</strong></p>
+
+    <ol type="i">
+      <li>The overall quality of each compilation engagement to which that partner is assigned.</li>
+      <li>The engagement being performed in accordance with the firm’s quality control policies and procedures.</li>
+    </ol>
+
+    <p><strong>The practitioner shall include in the engagement documentation:</strong></p>
+
+    <ol type="i">
+      <li>Significant matters arising during the compilation engagement and how those matters were addressed by the practitioner.</li>
+
+      <li>A record of how the compiled financial information reconciles with the underlying records, documents, explanations and other information provided by management.</li>
+
+      <li>A copy of the final version of the compiled financial information for which management or those charged with governance, as appropriate, has acknowledged their responsibility, and the practitioner’s report.</li>
+    </ol>
+
+    <p><strong>The practitioner may consider also including in the engagement documentation:</strong></p>
+
+    <ul>
+      <li>A copy of the entity’s trial balance.</li>
+      <li>Summary of significant accounting records.</li>
+      <li>Other information that the practitioner used to perform the compilation.</li>
+    </ul>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_3A",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Consolidated Financial Statements – Investment Entity (Section 129 & Ind AS 110)",
+  placement: 3,
+  marks: 5,
+  question_html: `
+    <p><strong>L &amp; K Investments Ltd.</strong> is a company having paid up share capital of <strong>₹ 1 Crore</strong>, it has a subsidiary, <strong>Wealth Fund Management Ltd.</strong> The primary business of L &amp; K Investments Ltd. is to pool funds from investors on a collective basis and invest this money in various financial instruments. The company pooled <strong>₹ 12 Crore</strong> from a number of clients, which represent the company's shareholders.</p>
+
+    <p>During the audit of <strong>L &amp; K Investments Ltd.</strong>, <strong>CA Shiv</strong> observed that whole amount of <strong>₹ 12 Crore</strong> pooled has been invested in shares and debentures of various companies and profit earned due to appreciation of the prices of these shares has been distributed to various shareholders of the company.</p>
+
+    <p><strong>CA Shiv</strong> raised an issue while auditing financial statements of <strong>L &amp; K Investments Ltd.</strong> whether the consolidated financial statements are required as per <strong>Section 129(3) of the Companies Act, 2013</strong>? Analyse the above issue and give your opinion.</p>
+  `,
+  solution_html: `
+    <p>According to <strong>Section 129(3) of the Companies Act, 2013</strong>, where a company has one or more subsidiaries, including associate company and joint venture, it shall, in addition to its own financial statements prepare a consolidated financial statement of the company and of all the subsidiaries in the same form and manner as that of its own.</p>
+
+    <p>As per sub-section (6) of <strong>Section 129</strong> of the Companies Act, 2013, the Central Government may, on its own or on an application by a class or classes of companies, by notification, exempt any class or classes of companies from complying with any of the requirements of Section 129 or the rules made thereunder.</p>
+
+    <p>An <strong>investment entity</strong> is an entity that:</p>
+
+    <ol type="i">
+      <li>obtains funds from one or more investors for the purpose of providing those investor(s) with investment management services;</li>
+      <li>commits to its investor(s) that its business purpose is to invest funds solely for returns from capital appreciation, investment income, or both; and</li>
+      <li>measures and evaluates the performance of substantially all of its investments on a fair value basis.</li>
+    </ol>
+
+    <p>An investment entity need not present consolidated financial statements if it is required, in accordance with <strong>Paragraph 31 of Ind AS 110</strong>, to measure all of its subsidiaries at fair value through profit or loss. A parent shall determine whether it is an investment entity.</p>
+
+    <p>However, as per <strong>Paragraph 33 of Ind AS 110</strong>, parent of an investment entity shall consolidate all entities that it controls, including those controlled through an investment entity subsidiary, unless the parent itself is an investment entity.</p>
+
+    <p>Applying the above to the given case of <strong>L &amp; K Investment Ltd.</strong>, which fulfils all the conditions stated above, it is an investment entity. By applying <strong>Para 31 and 33 of Ind AS 110</strong>, it can be concluded that <strong>L &amp; K Investment Ltd. is not required to consolidate as per Section 129(3) of the Companies Act, 2013.</strong></p>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_2C",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Professional Ethics – Confidential Information (Clause 1 of Part I of Second Schedule)",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p><strong>DND and Associates</strong> are the statutory auditor of <strong>XYZ Ltd.</strong> Audit of the company is pending for <strong>F.Y. 2022-23</strong> and <strong>2023-24</strong> due to a dispute between auditor and company with respect to certain proposed remarks by the auditor in the audit report for <strong>F.Y. 2022-23</strong>.</p>
+
+    <p>The company removed the auditor on <strong>06.05.2024</strong> in shareholders meeting complying with all legal formalities.</p>
+
+    <p><strong>DND and Associates</strong> after coming to know about the removal, intimated the <strong>Registrar of Companies (ROC)</strong> through letter highlighting the points of dispute including non-existence of fixed assets, bogus creditors etc.</p>
+
+    <p><strong>XYZ Ltd.</strong> complained to ICAI against <strong>DND and Associates</strong> for their above letter to ROC.</p>
+
+    <p><strong>Comment with reference to the Chartered Accountants Act, 1949 and Schedules thereto.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Clause (1) of Part I of the Second Schedule to the Chartered Accountants Act, 1949</strong> states that a Chartered Accountant in practice shall be deemed to be guilty of professional misconduct, if he discloses information acquired in the course of his professional engagement to any person other than his client so engaging him, without the consent of his client or otherwise than as required by any law for the time being in force.</p>
+
+    <p>An accountant, in public practice, has access to a great deal of information of his client which is of a highly confidential character. It is important for the work of an accountant and for maintaining the dignity and status of the profession that he should treat such information as having been provided to him, only to facilitate the performance of his professional duties for which his services have been engaged.</p>
+
+    <p>The Code of Ethics further clarifies that such a duty continues even after completion of the assignment.</p>
+
+    <p>In the given situation, <strong>DND &amp; Associates</strong> complained to the <strong>Registrar of Companies (ROC)</strong> through letter highlighting the points of dispute including non-existence of fixed assets, bogus creditors, etc. after coming to know about the removal. <strong>DND &amp; Associates</strong> made voluntary disclosure of the information acquired during the professional engagement without the consent of the client and without there being any requirement in law to disclose the same.</p>
+
+    <p>Thus, <strong>DND &amp; Associates</strong> will be held guilty of professional misconduct under <strong>Clause (1) of Part I of the Second Schedule to the Chartered Accountants Act, 1949.</strong></p>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_2B",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Comprehensive Audit of Public Sector Enterprises",
+  placement: 2,
+  marks: 5,
+  question_html: `
+    <p>The <strong>Comptroller and Auditor General of India</strong> has appointed a Chartered Accountant firm to conduct the <strong>comprehensive audit</strong> of <strong>Saras Company Limited</strong>, a listed government company, handling major Railway project of the metropolitan city for the period ending <strong>31-03-2024</strong>.</p>
+
+    <p>The work to be conducted under <strong>Project A</strong> handled by the Saras Company Limited was of laying down railway line of <strong>130 kilometers</strong>.</p>
+
+    <p>During the audit, the firm reviewed the internal audit report and observed the shortcoming reported about the performance of Project A regarding the understatement of the <strong>Current liabilities</strong> and <strong>Capital work in progress</strong> by <strong>₹ 75.32 crore</strong>.</p>
+
+    <p><strong>What key aspects should the chartered accountant firm focus on while conducting the comprehensive audit of Saras Company Limited?</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Matters to be undertaken by the CA Firm while conducting the comprehensive audit of Saras Company Limited are:</strong></p>
+
+    <ol type="i">
+      <li>How does the overall capital cost of the project compare with the approved planned costs? Were there any substantial increases and, if so, what are these and whether there is evidence of extravagance or unnecessary expenditure?</li>
+
+      <li>Have the accepted production or operational output been achieved? Has there been under-utilisation of installed capacity or shortfall in performance and, if so, what has caused it?</li>
+
+      <li>Has the planned rate of return been achieved?</li>
+
+      <li>Are the systems of project formulation and execution sound? Are there inadequacies? What has been the effect on the gestation period and capital cost?</li>
+
+      <li>Are cost control measures adequate and are there inefficiencies, wastages in raw materials consumption, etc.?</li>
+
+      <li>Are the purchase policies adequate? Or have they led to piling up of inventory resulting in redundancy in stores and spares?</li>
+
+      <li>Does the enterprise have research and development programmes? What has been the performance in adopting new processes, technologies, improving profits and in reducing costs through technological progress?</li>
+
+      <li>If the enterprise has an adequate system of repairs and maintenance?</li>
+
+      <li>Are procedures effective and economical?</li>
+
+      <li>Is there any poor or insufficient or inefficient project planning?</li>
+    </ol>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_2A",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "IT Environment – Risks and Control Considerations",
+  placement: 2,
+  marks: 5,
+  question_html: `
+    <p><strong>Focus Ltd.</strong> is a manufacturing company that is planning to implement a new digital system to streamline its production processes and improve efficiency.</p>
+
+    <p>The company appointed <strong>Mr. Raman</strong> as IT manager. However, he is aware that merging technologies can bring significant benefits but also pose various risks to the organisation.</p>
+
+    <p>In this context, he needs to identify examples of technological risks associated with the implementation of the new digital system and the control considerations necessary to mitigate these risks effectively.</p>
+  `,
+  solution_html: `
+    <p><strong>Some examples of technology risks where Mr. Raman should test the appropriate controls for relying on the digital systems:</strong></p>
+
+    <ul>
+      <li>Reliance on systems or programs that are inaccurately processing data, processing inaccurate data, or both.</li>
+
+      <li>Unauthorized access to data that might result in destruction of data or improper changes to data, including the recording of unauthorized or non-existent transactions or inaccurate recording of transactions (specific risks might arise when multiple users access a common database).</li>
+
+      <li>The possibility of information technology personnel gaining access privileges beyond those necessary to perform their assigned duties, thereby leading to insufficient segregation of duties.</li>
+
+      <li>Unauthorized or erroneous changes to data in master files.</li>
+
+      <li>Unauthorized changes to systems or programs.</li>
+
+      <li>Failure to make necessary or appropriate changes to systems or programs.</li>
+
+      <li>Inappropriate manual intervention.</li>
+
+      <li>Potential loss of data or inability to access data as required.</li>
+
+      <li>Risks introduced when using third-party service providers.</li>
+
+      <li>Cybersecurity risks.</li>
+    </ul>
+
+    <p><strong>Mr. Raman should focus on the following control considerations to mitigate risks effectively:</strong></p>
+
+    <ol>
+      <li>Auditors should gain a holistic understanding of changes in the industry and the information technology environment to effectively evaluate management’s process for initiating, processing, and recording transactions and then design appropriate auditing procedures.</li>
+
+      <li>Auditors, as appropriate, should consider risks resulting from the implementation of new technologies and how those risks may differ from those that arise from more traditional, legacy systems.</li>
+
+      <li>Auditors should consider whether digital upskilling or specialists are necessary to determine the impact of new technologies and to assist in the risk assessment and understanding of the design, implementation, and operating effectiveness of controls. E.g., cybersecurity control experts, IT specialists in the team etc.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_1B",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Modified Opinion in the Independent Auditor's Report (SA 705)",
+  placement: 1,
+  marks: 5,
+  question_html: `
+    <p><strong>CA Ram</strong> is the Statutory Auditor of <strong>RJ Ltd.</strong> for the financial year <strong>2023-24</strong>. The company is engaged in the production of electronic products.</p>
+
+    <p>During the audit, CA Ram obtained certain audit evidence of incorrect disclosure of related party transactions and structured finance deals which was not considered with the affirmation leading to misstatement in the financial statements.</p>
+
+    <p><strong>Discuss how CA Ram should deal with the situation in the auditor's report and the different options which can be considered?</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Auditor’s duties in case of inconsistency in Audit evidence:</strong> <strong>SA 705, “Modifications to the Opinion in the Independent Auditor’s Report”</strong>, deals with auditor’s responsibility to issue an appropriate report in circumstances when, in forming an opinion in accordance with SA 700 (Revised), the auditor concludes that a modification to the auditor’s opinion on the financial statements is necessary.</p>
+
+    <p>The decision regarding which type of modified opinion is appropriate depends upon:</p>
+
+    <ol type="i">
+      <li>The nature of the matter giving rise to the modification, that is, whether the financial statements are materially misstated or, in the case of an inability to obtain sufficient appropriate audit evidence, may be materially misstated; and</li>
+
+      <li>The auditor’s judgement about the pervasiveness of the effects or possible effects of the matter on the financial statements.</li>
+    </ol>
+
+    <p>Further, the auditor shall modify the opinion in the auditor’s report when the auditor concludes that based on the audit evidence obtained, that the financial statements as a whole are not free from material misstatement.</p>
+
+    <p>In the present case, during the audit, CA Ram obtained certain audit evidence which was not consistent with the affirmation made in financial statements. Therefore, CA Ram should modify his report in accordance with SA 705.</p>
+
+    <p>Since CA Ram has obtained audit evidence which is inconsistent with the affirmations made in the financial statements, CA Ram should modify his opinion as per the circumstances of the case.</p>
+
+    <ul>
+      <li><strong>CA Ram shall express Qualified opinion</strong> when, having obtained sufficient appropriate audit evidence, he concludes that misstatements, individually or in the aggregate, are material, but not pervasive, to the financial statements.</li>
+
+      <li><strong>CA Ram shall express an Adverse opinion</strong>, where the auditor, having obtained sufficient appropriate evidence, concludes that misstatements, individually, or in the aggregate, are both material and pervasive to the financial statements.</li>
+    </ul>
+  `
+},
+{
+  question_id: "AUD_MTPAPR25_II_1C",
+  source: "ICAI Mock Test Paper - Series II, April 2025",
+  chapter_name: "Auditing Accounting Estimates (SA 540)",
+  placement: 1,
+  marks: 4,
+  question_html: `
+    <p><strong>Surya Pvt. Ltd.</strong>, engaged in the business of real estate, appointed <strong>CA Amit</strong> as the auditor for <strong>F.Y. 2023-24</strong>.</p>
+
+    <p>During the audit, CA Amit requested the information from the management to review the outcome of accounting estimates (like estimated costs considered for percentage completion etc.) included in the prior period financial statements and their subsequent re-estimation for the purpose of the current period.</p>
+
+    <p>The management has refused the information to the auditor saying that the review of prior period information should not be done by the auditor.</p>
+
+    <p><strong>Please advise.</strong></p>
+  `,
+  solution_html: `
+    <p>As per <strong>SA 540, “Auditing Accounting Estimates, Including Fair Value Accounting Estimates, and Related Disclosures”</strong>, the auditor shall review the outcome of accounting estimates included in the prior period financial statements, or, where applicable, their subsequent re-estimation for the purpose of the current period.</p>
+
+    <p>The nature and extent of the auditor’s review takes account of the nature of the accounting estimates, and whether the information obtained from the review would be relevant to identifying and assessing risks of material misstatement of accounting estimates made in the current period financial statements.</p>
+
+    <p>The outcome of an accounting estimate will often differ from the accounting estimate recognised in the prior period financial statements. By performing risk assessment procedures to identify and understand the reasons for such differences, the auditor may obtain:</p>
+
+    <ul>
+      <li>Information regarding the effectiveness of management’s prior period estimation process, from which the auditor can judge the likely effectiveness of management’s current process.</li>
+
+      <li>Audit evidence that is pertinent to the re-estimation, in the current period, of prior period accounting estimates.</li>
+
+      <li>Audit evidence of matters, such as estimation uncertainty, that may be required to be disclosed in the financial statements.</li>
+    </ul>
+
+    <p>The review of prior period accounting estimates may also assist the auditor, in the current period, in identifying circumstances or conditions that increase the susceptibility of accounting estimates to, or indicate the presence of, possible management bias. The auditor’s professional skepticism assists in identifying such circumstances or conditions and in determining the nature, timing and extent of further audit procedures.</p>
+
+    <p>However, the review is not intended to call into question the judgments made in the prior periods that were based on information available at that time.</p>
+
+    <p>In the given case, the management is not correct in refusing the relevant information to the auditor.</p>
+  `
+},
+
 
 
 ];
