@@ -10746,6 +10746,2281 @@ const descriptiveQuestions = [
     </p>
     `,
 },
+{
+    question_id: "FR_MTPAPR25_II_1",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 103 - Business Combinations",
+    placement: 1,
+    marks: 14,
+
+    question_html: `
+    <p>
+      The balance sheet of <strong>Professional Ltd.</strong> and
+      <strong>Dynamic Ltd.</strong> as on <strong>31st March, 20X2</strong>
+      is given below:
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Assets</th>
+        <th>Professional Ltd.<br>(₹ in lakhs)</th>
+        <th>Dynamic Ltd.<br>(₹ in lakhs)</th>
+      </tr>
+      <tr>
+        <td>Property, Plant and Equipment</td>
+        <td>300</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>Investment</td>
+        <td>400</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Inventories</td>
+        <td>250</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <td>Trade Receivables</td>
+        <td>450</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td>Cash and Cash Equivalents</td>
+        <td>200</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Others</td>
+        <td>400</td>
+        <td>230</td>
+      </tr>
+      <tr>
+        <th>Total Assets</th>
+        <th>2,000</th>
+        <th>1,380</th>
+      </tr>
+    </table>
+
+    <br>
+
+    <table border="1">
+      <tr>
+        <th>Equity & Liabilities</th>
+        <th>Professional Ltd.<br>(₹ in lakhs)</th>
+        <th>Dynamic Ltd.<br>(₹ in lakhs)</th>
+      </tr>
+
+      <tr>
+        <td>Equity Share Capital</td>
+        <td>500</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>Other Equity</td>
+        <td>810</td>
+        <td>225</td>
+      </tr>
+      <tr>
+        <td>Long-term Borrowings</td>
+        <td>250</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Long-term Provisions</td>
+        <td>50</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>Deferred Tax</td>
+        <td>40</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>Short-term Borrowings</td>
+        <td>100</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <td>Trade Payables</td>
+        <td>250</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <th>Total Equity & Liabilities</th>
+        <th>2,000</th>
+        <th>1,380</th>
+      </tr>
+    </table>
+
+    <p><strong>Additional Information:</strong></p>
+
+    <ol>
+      <li>
+        Professional Ltd. acquired 70% shares of Dynamic Ltd. on
+        1st April, 20X2 by issuing one share of Professional Ltd.
+        for every two shares of Dynamic Ltd.
+        Fair value of Professional Ltd.'s share = ₹40 per share.
+      </li>
+
+      <li>
+        Fair value adjustments:
+        <ol type="a">
+          <li>Fair value of PPE = ₹350 lakhs.</li>
+
+          <li>
+            Additional consideration is higher of ₹35 lakhs or
+            25% of excess profits over previous year's profits.
+            Amount payable after two years.
+            Previous year's profit = ₹10 lakhs.
+            Expected profit = ₹20 lakhs.
+          </li>
+
+          <li>
+            ₹20 lakhs payable to one founder shareholder provided
+            he continues employment for two years after acquisition.
+          </li>
+
+          <li>
+            Dynamic Ltd.'s equity settled share-based payment award
+            was replaced by Professional Ltd.'s award.
+            <ul>
+              <li>Original vesting period = 4 years</li>
+              <li>Service completed = 2 years</li>
+              <li>New vesting period = 1 year from acquisition</li>
+              <li>Fair value of original award = ₹5 lakhs</li>
+              <li>Fair value of replacement award = ₹8 lakhs</li>
+            </ul>
+          </li>
+
+          <li>
+            Dynamic Ltd. had a lawsuit pending.
+            Claim amount = ₹50 lakhs.
+            Fair value of liability = ₹5 lakhs.
+          </li>
+        </ol>
+      </li>
+
+      <li>
+        Applicable tax rate = 30%.
+      </li>
+    </ol>
+
+    <p>
+      <strong>Required:</strong><br>
+      Prepare the Opening Consolidated Balance Sheet of
+      Professional Ltd. as on 1st April, 20X2.
+      Assume discount rate of 10%.
+    </p>
+    `,
+
+    solution_html: `
+    <h4>Opening Consolidated Balance Sheet of Professional Ltd. as on 1st April, 20X2</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ in lakhs</th>
+      </tr>
+
+      <tr>
+        <td colspan="2"><strong>Assets</strong></td>
+      </tr>
+
+      <tr>
+        <td>Property, Plant & Equipment</td>
+        <td>650.00</td>
+      </tr>
+
+      <tr>
+        <td>Investment</td>
+        <td>500.00</td>
+      </tr>
+
+      <tr>
+        <td>Inventories</td>
+        <td>400.00</td>
+      </tr>
+
+      <tr>
+        <td>Trade Receivables</td>
+        <td>750.00</td>
+      </tr>
+
+      <tr>
+        <td>Cash & Cash Equivalents</td>
+        <td>300.00</td>
+      </tr>
+
+      <tr>
+        <td>Other Assets</td>
+        <td>630.00</td>
+      </tr>
+
+      <tr>
+        <th>Total Assets</th>
+        <th>3,230.00</th>
+      </tr>
+
+      <tr>
+        <td colspan="2"><strong>Equity & Liabilities</strong></td>
+      </tr>
+
+      <tr>
+        <td>Share Capital</td>
+        <td>514.00</td>
+      </tr>
+
+      <tr>
+        <td>Other Equity</td>
+        <td>1,128.62</td>
+      </tr>
+
+      <tr>
+        <td>Non-controlling Interest</td>
+        <td>154.95</td>
+      </tr>
+
+      <tr>
+        <td>Long-term Borrowings</td>
+        <td>450.00</td>
+      </tr>
+
+      <tr>
+        <td>Long-term Provisions</td>
+        <td>148.93</td>
+      </tr>
+
+      <tr>
+        <td>Deferred Tax</td>
+        <td>28.50</td>
+      </tr>
+
+      <tr>
+        <td>Short-term Borrowings</td>
+        <td>250.00</td>
+      </tr>
+
+      <tr>
+        <td>Trade Payables</td>
+        <td>550.00</td>
+      </tr>
+
+      <tr>
+        <td>Provision for Lawsuit</td>
+        <td>5.00</td>
+      </tr>
+
+      <tr>
+        <th>Total Equity & Liabilities</th>
+        <th>3,230.00</th>
+      </tr>
+    </table>
+
+    <h4>Working Notes</h4>
+
+    <ol>
+      <li>Computation of Purchase Consideration.</li>
+      <li>Fair value adjustment of identifiable net assets.</li>
+      <li>Deferred consideration discounted at 10%.</li>
+      <li>Replacement share-based payment award allocation as per Ind AS 103.</li>
+      <li>Recognition of contingent liability at fair value.</li>
+      <li>Deferred tax recognised on fair value adjustments.</li>
+      <li>Calculation of Non-controlling Interest.</li>
+      <li>Calculation of Capital Reserve arising on acquisition.</li>
+    </ol>
+
+    <p><strong>Important Notes:</strong></p>
+
+    <ul>
+      <li>PPE is recognised at fair value.</li>
+      <li>Deferred consideration is discounted to present value.</li>
+      <li>Minimum deferred payment is treated as deferred consideration, whereas contingent element has nil fair value.</li>
+      <li>Founder payment is post-combination employee compensation and is not part of purchase consideration.</li>
+      <li>Replacement award attributable to pre-combination service forms part of consideration.</li>
+      <li>Lawsuit is recognised as contingent liability at fair value.</li>
+    </ul>
+    `,
+},
+{
+    question_id: "FR_MTPAPR25_II_2A",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 109 - Financial Instruments",
+    placement: 2,
+    marks: 10,
+
+    question_html: `
+    <p>
+      Company A, an Indian company whose functional currency is ₹, enters into
+      a contract to purchase machinery from an unrelated local supplier,
+      Company B.
+    </p>
+
+    <p>
+      The functional currency of Company B is also ₹. However, the contract is
+      denominated in USD, since the machinery is sourced by Company B from a
+      US-based supplier.
+    </p>
+
+    <p>
+      Payment is due to Company B on delivery of the machinery.
+    </p>
+
+    <p><strong>Key terms of the contract are as follows:</strong></p>
+
+    <table border="1">
+      <tr>
+        <th>Contractual Features</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Contract / Order Date</td>
+        <td>9 September 20X1</td>
+      </tr>
+      <tr>
+        <td>Delivery / Payment Date</td>
+        <td>31 December 20X1</td>
+      </tr>
+      <tr>
+        <td>Purchase Price</td>
+        <td>USD 1,000,000</td>
+      </tr>
+      <tr>
+        <td>USD/₹ Forward Rate on 9 September 20X1 for 31 December 20X1 maturity</td>
+        <td>67.8</td>
+      </tr>
+      <tr>
+        <td>USD/₹ Spot Rate on 9 September 20X1</td>
+        <td>66.4</td>
+      </tr>
+      <tr>
+        <td>USD/₹ Forward Rate on 30 September 20X1</td>
+        <td>67.5</td>
+      </tr>
+      <tr>
+        <td>USD/₹ Spot Rate on 31 December 20X1</td>
+        <td>67.0</td>
+      </tr>
+    </table>
+
+    <p>
+      <strong>Required:</strong>
+    </p>
+
+    <p>
+      Analyse whether the contract for purchase of machinery (a capital asset)
+      from Company B contains an embedded derivative and whether it should be
+      separately accounted for in accordance with <strong>Ind AS 109 -
+      Financial Instruments</strong>.
+    </p>
+
+    <p>
+      Also pass the necessary journal entries for accounting the same.
+    </p>
+    `,
+
+    solution_html: `
+    <h4>Analysis as per Ind AS 109</h4>
+
+    <p>
+      The contract for purchase of machinery contains an
+      <strong>embedded foreign currency derivative</strong> which is required
+      to be separated from the host purchase contract and accounted for
+      separately because:
+    </p>
+
+    <ul>
+      <li>
+        The host contract is a purchase contract for a non-financial asset and
+        is not measured at Fair Value Through Profit or Loss (FVTPL).
+      </li>
+
+      <li>
+        The foreign currency feature satisfies the definition of a standalone
+        derivative since settlement is required in USD at a future date.
+      </li>
+
+      <li>
+        USD is not the functional currency of either Company A or Company B.
+      </li>
+
+      <li>
+        Machinery is not an item that is routinely denominated in USD in
+        commercial transactions around the world.
+      </li>
+
+      <li>
+        USD is not a commonly used currency for domestic commercial
+        transactions in India.
+      </li>
+    </ul>
+
+    <p>
+      Therefore, Company A shall separate the embedded foreign currency
+      derivative from the host contract and account for it as a derivative under
+      Ind AS 109.
+    </p>
+
+    <p>
+      The embedded derivative is a forward contract to exchange
+      USD 1,000,000 at the contracted forward rate of ₹67.8.
+    </p>
+
+    <p>
+      Since the contracted forward rate equals the market forward rate on the
+      contract date, the derivative has an initial fair value of <strong>Nil</strong>.
+    </p>
+
+    <h4>Accounting Entries</h4>
+
+    <table border="1">
+      <tr>
+        <th>Date</th>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+
+      <tr>
+        <td>09-Sep-20X1</td>
+        <td>
+          Initial recognition of forward contract.<br>
+          (No entry since initial fair value is Nil.)
+        </td>
+        <td>Nil</td>
+        <td>Nil</td>
+      </tr>
+
+      <tr>
+        <td>30-Sep-20X1</td>
+        <td>
+          Derivative Asset A/c Dr.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;To Profit or Loss A/c
+        </td>
+        <td>3,00,000</td>
+        <td>3,00,000</td>
+      </tr>
+
+      <tr>
+        <td>31-Dec-20X1</td>
+        <td>
+          Derivative Asset A/c Dr.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;To Profit or Loss A/c
+        </td>
+        <td>5,00,000</td>
+        <td>5,00,000</td>
+      </tr>
+
+      <tr>
+        <td>31-Dec-20X1</td>
+        <td>
+          Property, Plant and Equipment A/c Dr.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;To Derivative Asset A/c<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;To Creditor / Bank A/c
+        </td>
+        <td>6,78,00,000</td>
+        <td>
+          8,00,000<br>
+          6,70,00,000
+        </td>
+      </tr>
+    </table>
+
+    <h4>Working Note</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Amount (₹)</th>
+      </tr>
+
+      <tr>
+        <td>
+          Fair value gain on 30 September 20X1<br>
+          (67.8 − 67.5) × 10,00,000
+        </td>
+        <td>3,00,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Total fair value on 31 December 20X1<br>
+          (67.8 − 67.0) × 10,00,000
+        </td>
+        <td>8,00,000</td>
+      </tr>
+
+      <tr>
+        <td>Additional gain recognised on 31 December 20X1</td>
+        <td>5,00,000</td>
+      </tr>
+
+      <tr>
+        <td>Machinery recognised at contracted forward value</td>
+        <td>6,78,00,000</td>
+      </tr>
+    </table>
+    `,
+},
+{
+    question_id: "FR_MTPAPR25_II_2B",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 115 - Revenue from Contracts with Customers",
+    placement: 2,
+    marks: 4,
+
+    question_html: `
+    <p>
+      Sports Team D enters into a three-year agreement to license its team
+      name and logo to Apparel Maker M.
+    </p>
+
+    <p>
+      The licence permits M to use the team name and logo on its products,
+      including display products, and in its advertising and marketing
+      materials.
+    </p>
+
+    <p>
+      <strong>Required:</strong>
+    </p>
+
+    <ol type="i">
+      <li>
+        Determine the nature of the licence in the above case.
+      </li>
+
+      <li>
+        Modify the above facts by assuming that Sports Team D has not played
+        games for many years and the licensor is Brand Collector B, an entity
+        that acquires intellectual property (IP) such as old team names and
+        logos from defunct entities or financially distressed entities.
+      </li>
+    </ol>
+
+    <p>
+      Brand Collector B's business model is to license the IP or obtain
+      settlements from entities that use the IP without permission, without
+      undertaking any ongoing activities to promote or support the IP.
+    </p>
+
+    <p>
+      Would your answer be different in this situation?
+    </p>
+    `,
+
+    solution_html: `
+    <h4>(i) Nature of Licence</h4>
+
+    <p>
+      The licence granted by Sports Team D is a
+      <strong>Right to Access Intellectual Property</strong>.
+      Accordingly, revenue from the licence shall be
+      <strong>recognised over time</strong>.
+    </p>
+
+    <p>
+      This conclusion is based on the following facts:
+    </p>
+
+    <ul>
+      <li>
+        Apparel Maker M reasonably expects Sports Team D to continue
+        undertaking activities that support and maintain the value of its team
+        name and logo by continuing to play games and field a competitive
+        team throughout the licence period.
+      </li>
+
+      <li>
+        These ongoing activities significantly affect the value of the licensed
+        intellectual property and the economic benefits that M derives from the
+        licence.
+      </li>
+
+      <li>
+        Sports Team D's activities directly expose Apparel Maker M to both
+        positive and negative effects, since the popularity and performance of
+        the team directly influence the sale of products bearing the team name
+        and logo.
+      </li>
+
+      <li>
+        The ongoing activities performed by Sports Team D do not transfer any
+        separate goods or services to Apparel Maker M as they occur.
+      </li>
+    </ul>
+
+    <p>
+      Therefore, the licence provides a <strong>right to access the intellectual
+      property</strong>, and revenue is recognised
+      <strong>over the licence period</strong>.
+    </p>
+
+    <hr>
+
+    <h4>(ii) Modified Situation</h4>
+
+    <p>
+      In the modified case, the answer is
+      <strong>different</strong>.
+    </p>
+
+    <p>
+      Since Brand Collector B merely licenses the intellectual property and
+      does not undertake any activities to promote, maintain or enhance its
+      value, Apparel Maker M does not reasonably expect any ongoing activities
+      that would significantly affect the licensed IP.
+    </p>
+
+    <p>
+      Accordingly, the nature of the licence is a
+      <strong>Right to Use Intellectual Property</strong> as it exists at the
+      point in time when the licence is granted.
+    </p>
+
+    <p>
+      Therefore, revenue from the licence shall be
+      <strong>recognised at a point in time</strong> when control of the licence
+      is transferred to the customer.
+    </p>
+    `,
+},
+{
+    question_id: "FR_MTPAPR25_II_3A",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 7 - Statement of Cash Flows",
+    placement: 3,
+    marks: 10,
+
+    question_html: `
+    <p>
+      Following is the Balance Sheet of <strong>Kuber Limited</strong> for the year ended
+      <strong>31st March, 20X2</strong>:
+    </p>
+
+    <table border="1">
+      <tr>
+        <th rowspan="2">Assets</th>
+        <th>20X2</th>
+        <th>20X1</th>
+      </tr>
+      <tr>
+        <th>₹ in lakhs</th>
+        <th>₹ in lakhs</th>
+      </tr>
+
+      <tr><td><strong>Non-current Assets</strong></td><td></td><td></td></tr>
+      <tr><td>Property, Plant and Equipment</td><td>13,000</td><td>12,500</td></tr>
+      <tr><td>Intangible Assets</td><td>50</td><td>30</td></tr>
+      <tr><td>Other Financial Assets</td><td>145</td><td>170</td></tr>
+      <tr><td>Deferred Tax Asset (Net)</td><td>855</td><td>750</td></tr>
+      <tr><td>Other Non-current Assets</td><td>800</td><td>770</td></tr>
+      <tr><th>Total Non-current Assets</th><th>14,850</th><th>14,220</th></tr>
+
+      <tr><td><strong>Current Assets</strong></td><td></td><td></td></tr>
+      <tr><td>Investments</td><td>2,300</td><td>2,500</td></tr>
+      <tr><td>Cash and Cash Equivalents</td><td>220</td><td>460</td></tr>
+      <tr><td>Other Current Assets</td><td>195</td><td>85</td></tr>
+      <tr><th>Total Current Assets</th><th>2,715</th><th>3,045</th></tr>
+
+      <tr><th>Total Assets</th><th>17,565</th><th>17,265</th></tr>
+    </table>
+
+    <br>
+
+    <table border="1">
+      <tr>
+        <th rowspan="2">Equity and Liabilities</th>
+        <th>20X2</th>
+        <th>20X1</th>
+      </tr>
+      <tr>
+        <th>₹ in lakhs</th>
+        <th>₹ in lakhs</th>
+      </tr>
+
+      <tr><td><strong>Equity</strong></td><td></td><td></td></tr>
+      <tr><td>Equity Share Capital</td><td>300</td><td>300</td></tr>
+      <tr><td>Other Equity</td><td>12,000</td><td>8,000</td></tr>
+      <tr><th>Total Equity</th><th>12,300</th><th>8,300</th></tr>
+
+      <tr><td><strong>Non-current Liabilities</strong></td><td></td><td></td></tr>
+      <tr><td>Long-term Borrowings</td><td>2,000</td><td>5,000</td></tr>
+      <tr><td>Other Non-current Liabilities</td><td>2,740</td><td>3,615</td></tr>
+      <tr><th>Total Non-current Liabilities</th><th>4,740</th><th>8,615</th></tr>
+
+      <tr><td><strong>Current Liabilities</strong></td><td></td><td></td></tr>
+      <tr><td>Trade Payables</td><td>150</td><td>90</td></tr>
+      <tr><td>Bank Overdraft</td><td>75</td><td>60</td></tr>
+      <tr><td>Other Current Liabilities</td><td>300</td><td>200</td></tr>
+      <tr><th>Total Current Liabilities</th><th>525</th><th>350</th></tr>
+
+      <tr><th>Total Liabilities</th><th>5,265</th><th>8,965</th></tr>
+
+      <tr><th>Total Equity and Liabilities</th><th>17,565</th><th>17,265</th></tr>
+    </table>
+
+    <p><strong>Additional Information:</strong></p>
+
+    <ol>
+      <li>Profit after tax for the year ended 31st March, 20X2 is ₹4,450 lakhs.</li>
+
+      <li>Interim dividend paid during the year is ₹450 lakhs.</li>
+
+      <li>
+        Depreciation and amortisation charged:
+        <ul>
+          <li>Property, Plant and Equipment – ₹500 lakhs</li>
+          <li>Intangible Assets – ₹20 lakhs</li>
+        </ul>
+      </li>
+
+      <li>
+        During the year, two machineries were sold for ₹70 lakhs.
+        Their carrying amount was ₹60 lakhs.
+      </li>
+
+      <li>
+        Income taxes paid during the year amounted to ₹105 lakhs.
+      </li>
+
+      <li>
+        Other non-current/current assets and liabilities relate only to
+        operating activities and do not contain any investing or financing
+        elements.
+      </li>
+    </ol>
+
+    <p>
+      <strong>Required:</strong><br>
+      Prepare the <strong>Statement of Cash Flows</strong> for Kuber Limited
+      under the <strong>Indirect Method</strong> in accordance with
+      <strong>Ind AS 7</strong>.
+    </p>
+    `,
+
+    solution_html: `
+    <h4>Statement of Cash Flows (Indirect Method)</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ in lakhs</th>
+      </tr>
+
+      <tr>
+        <td colspan="2"><strong>Cash Flows from Operating Activities</strong></td>
+      </tr>
+
+      <tr><td>Profit after Tax</td><td>4,450</td></tr>
+      <tr><td>Add: Income Tax Paid</td><td>105</td></tr>
+      <tr><td><strong></strong></td><td><strong>4,555</strong></td></tr>
+
+      <tr><td>Add: Depreciation & Amortisation (500 + 20)</td><td>520</td></tr>
+      <tr><td>Less: Gain on Sale of Machinery</td><td>(10)</td></tr>
+      <tr><td>Less: Increase in Deferred Tax Asset</td><td>(105)</td></tr>
+
+      <tr><td><strong>Operating Profit before Working Capital Changes</strong></td><td><strong>4,960</strong></td></tr>
+
+      <tr><td>Add: Decrease in Other Financial Assets (170 − 145)</td><td>25</td></tr>
+      <tr><td>Less: Increase in Other Non-current Assets (800 − 770)</td><td>(30)</td></tr>
+      <tr><td>Less: Increase in Other Current Assets (195 − 85)</td><td>(110)</td></tr>
+      <tr><td>Less: Decrease in Other Non-current Liabilities (3,615 − 2,740)</td><td>(875)</td></tr>
+      <tr><td>Add: Increase in Other Current Liabilities (300 − 200)</td><td>100</td></tr>
+      <tr><td>Add: Increase in Trade Payables (150 − 90)</td><td>60</td></tr>
+
+      <tr><td><strong>Cash Generated from Operations</strong></td><td><strong>4,130</strong></td></tr>
+
+      <tr><td>Less: Income Taxes Paid</td><td>(105)</td></tr>
+
+      <tr><td><strong>Net Cash from Operating Activities (A)</strong></td><td><strong>4,025</strong></td></tr>
+
+      <tr>
+        <td colspan="2"><strong>Cash Flows from Investing Activities</strong></td>
+      </tr>
+
+      <tr><td>Sale of Machinery</td><td>70</td></tr>
+      <tr><td>Purchase of Property, Plant and Equipment</td><td>(1,060)</td></tr>
+      <tr><td>Purchase of Intangible Assets</td><td>(40)</td></tr>
+      <tr><td>Sale of Investments</td><td>200</td></tr>
+
+      <tr><td><strong>Net Cash used in Investing Activities (B)</strong></td><td><strong>(830)</strong></td></tr>
+
+      <tr>
+        <td colspan="2"><strong>Cash Flows from Financing Activities</strong></td>
+      </tr>
+
+      <tr><td>Dividend Paid</td><td>(450)</td></tr>
+      <tr><td>Repayment of Long-term Borrowings</td><td>(3,000)</td></tr>
+
+      <tr><td><strong>Net Cash used in Financing Activities (C)</strong></td><td><strong>(3,450)</strong></td></tr>
+
+      <tr><td><strong>Net Decrease in Cash & Cash Equivalents (A+B+C)</strong></td><td><strong>(255)</strong></td></tr>
+
+      <tr><td>Add: Opening Cash & Cash Equivalents (460 − 60)</td><td>400</td></tr>
+
+      <tr><td><strong>Closing Cash & Cash Equivalents (220 − 75)</strong></td><td><strong>145</strong></td></tr>
+
+    </table>
+
+    <h4>Working Notes</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Computation (₹ in lakhs)</th>
+      </tr>
+
+      <tr>
+        <td>Gain on Sale of Machinery</td>
+        <td>70 − 60 = 10</td>
+      </tr>
+
+      <tr>
+        <td>Purchase of Property, Plant & Equipment</td>
+        <td>13,000 − (12,500 − 500 − 60) = 1,060</td>
+      </tr>
+
+      <tr>
+        <td>Purchase of Intangible Assets</td>
+        <td>50 − (30 − 20) = 40</td>
+      </tr>
+
+      <tr>
+        <td>Sale of Investments</td>
+        <td>2,500 − 2,300 = 200</td>
+      </tr>
+
+      <tr>
+        <td>Opening Cash & Cash Equivalents</td>
+        <td>460 − 60 = 400</td>
+      </tr>
+
+      <tr>
+        <td>Closing Cash & Cash Equivalents</td>
+        <td>220 − 75 = 145</td>
+      </tr>
+    </table>
+    `,
+},
+{
+    question_id: "FR_MTPAPR25_II_3B",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 16 - Property, Plant and Equipment",
+    placement: 3,
+    marks: 4,
+
+    question_html: `
+    <p>
+      Heaven Ltd. had purchased a machinery on <strong>1.4.20X1</strong> for
+      <strong>₹30,00,000</strong>, which is reflected in its books at written
+      down value of <strong>₹17,50,000</strong> on <strong>1.4.20X6</strong>.
+      The company has estimated an upward revaluation of
+      <strong>10%</strong> on 1.4.20X6 to arrive at the fair value of the
+      asset.
+    </p>
+
+    <p>
+      Heaven Ltd. availed the option given by Ind AS of transferring some of
+      the surplus as the asset is used by the enterprise.
+    </p>
+
+    <p>
+      On <strong>1.4.20X8</strong>, the machinery was revalued downward by
+      <strong>15%</strong> and the company also re-estimated the machinery's
+      remaining useful life to be <strong>8 years</strong>.
+    </p>
+
+    <p>
+      On <strong>31.3.20X10</strong>, the machinery was sold for
+      <strong>₹9,35,000</strong>.
+    </p>
+
+    <p>
+      The company charges depreciation under the
+      <strong>Straight Line Method (SLM)</strong>.
+    </p>
+
+    <p>
+      <strong>Required:</strong><br>
+      Compute:
+    </p>
+
+    <ol>
+      <li>Depreciation after upward revaluation.</li>
+      <li>Depreciation after downward revaluation.</li>
+      <li>Amount transferred from Revaluation Reserve till 1.4.20X8.</li>
+    </ol>
+    `,
+
+    solution_html: `
+    <h4>Working Note 1: Calculation of Useful Life</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Amount (₹)</th>
+      </tr>
+      <tr>
+        <td>Cost of Machinery (1.4.20X1)</td>
+        <td>30,00,000</td>
+      </tr>
+      <tr>
+        <td>Written Down Value on 1.4.20X6</td>
+        <td>17,50,000</td>
+      </tr>
+      <tr>
+        <td>Depreciation charged during first 5 years</td>
+        <td>12,50,000</td>
+      </tr>
+      <tr>
+        <td>Annual Depreciation (SLM)</td>
+        <td>12,50,000 ÷ 5 = 2,50,000</td>
+      </tr>
+      <tr>
+        <td>Remaining Useful Life</td>
+        <td>17,50,000 ÷ 2,50,000 = 7 Years</td>
+      </tr>
+      <tr>
+        <td><strong>Total Useful Life</strong></td>
+        <td><strong>12 Years</strong></td>
+      </tr>
+    </table>
+
+    <br>
+
+    <h4>1. Depreciation after Upward Revaluation (1.4.20X6)</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+      <tr>
+        <td>Book Value as on 1.4.20X6</td>
+        <td>17,50,000</td>
+      </tr>
+      <tr>
+        <td>Add: 10% Upward Revaluation</td>
+        <td>1,75,000</td>
+      </tr>
+      <tr>
+        <td>Revalued Amount</td>
+        <td>19,25,000</td>
+      </tr>
+      <tr>
+        <td>Remaining Useful Life</td>
+        <td>7 Years</td>
+      </tr>
+      <tr>
+        <td><strong>Depreciation per year</strong></td>
+        <td><strong>19,25,000 ÷ 7 = ₹2,75,000</strong></td>
+      </tr>
+    </table>
+
+    <br>
+
+    <h4>2. Depreciation after Downward Revaluation (1.4.20X8)</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+      <tr>
+        <td>Book Value as on 1.4.20X8</td>
+        <td>13,75,000</td>
+      </tr>
+      <tr>
+        <td>Less: 15% Downward Revaluation</td>
+        <td>(2,06,250)</td>
+      </tr>
+      <tr>
+        <td>Revalued Amount</td>
+        <td>11,68,750</td>
+      </tr>
+      <tr>
+        <td>Revised Remaining Useful Life</td>
+        <td>8 Years</td>
+      </tr>
+      <tr>
+        <td><strong>Depreciation per year</strong></td>
+        <td><strong>11,68,750 ÷ 8 = ₹1,46,094</strong></td>
+      </tr>
+    </table>
+
+    <br>
+
+    <h4>3. Amount Transferred from Revaluation Reserve till 1.4.20X8</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+      <tr>
+        <td>Revaluation Reserve created on 1.4.20X6</td>
+        <td>1,75,000</td>
+      </tr>
+      <tr>
+        <td>Remaining Useful Life</td>
+        <td>7 Years</td>
+      </tr>
+      <tr>
+        <td>Amount transferred every year</td>
+        <td>1,75,000 ÷ 7 = 25,000</td>
+      </tr>
+      <tr>
+        <td>Amount transferred in two years</td>
+        <td>25,000 × 2 = 50,000</td>
+      </tr>
+      <tr>
+        <td><strong>Balance in Revaluation Reserve as on 1.4.20X8</strong></td>
+        <td><strong>1,25,000</strong></td>
+      </tr>
+    </table>
+
+    <br>
+
+    <h4>4. Amount of Downward Revaluation charged to Statement of Profit and Loss</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+      <tr>
+        <td>Downward Revaluation</td>
+        <td>2,06,250</td>
+      </tr>
+      <tr>
+        <td>Less: Adjusted against Revaluation Reserve</td>
+        <td>(1,25,000)</td>
+      </tr>
+      <tr>
+        <td><strong>Charged to Statement of Profit and Loss</strong></td>
+        <td><strong>81,250</strong></td>
+      </tr>
+    </table>
+    `,
+},
+{
+    question_id: "FR_MTPAPR25_II_4A",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 12 - Income Taxes",
+    placement: 4,
+    marks: 5,
+
+    question_html: `
+    <p>
+      On <strong>1st April 20X1</strong>, S Ltd. leased a machine over a
+      <strong>5 year</strong> period.
+    </p>
+
+    <p>
+      The present value of lease liability is
+      <strong>₹120 Crore</strong> (discount rate of <strong>8%</strong>) and is
+      recognized as lease liability and corresponding Right of Use (RoU) Asset
+      on the same date.
+    </p>
+
+    <p>
+      The RoU Asset is depreciated under straight line method over the
+      5 years.
+    </p>
+
+    <p>
+      The annual lease rentals are <strong>₹30 Crore</strong> payable starting
+      <strong>31st March 20X2</strong>.
+    </p>
+
+    <p>
+      The tax law permits tax deduction on the basis of payment of rent.
+    </p>
+
+    <p>
+      Assuming tax rate of <strong>30%</strong>, you are required to explain
+      the deferred tax consequences for the above transaction for the year
+      ended <strong>31st March 20X2</strong>.
+    </p>
+    `,
+
+    solution_html: `
+    <p>
+      A temporary difference effectively arises between the value of the
+      machine for accounting purposes and the amount of lease liability,
+      since the rent payment is eligible for tax deduction.
+    </p>
+
+    <p>
+      Tax base of the machine is <strong>Nil</strong> as the amount is not
+      eligible for deduction for tax purposes.
+    </p>
+
+    <p>
+      Tax base of the lease liability is <strong>Nil</strong> as it is measured
+      at carrying amount less any future tax deductible amount.
+    </p>
+
+    <h4>Recognition of Deferred Tax as on 31st March 20X2</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ Crore</th>
+      </tr>
+
+      <tr>
+        <td>
+          Carrying amount of Right of Use Asset
+          [120 − 24 (Depreciation)]
+        </td>
+        <td>96.00 Dr.</td>
+      </tr>
+
+      <tr>
+        <td>
+          Lease Liability
+          [120 + 9.60 (120 × 8%) − 30]
+        </td>
+        <td>99.60 Cr.</td>
+      </tr>
+
+      <tr>
+        <td><strong>Net Amount</strong></td>
+        <td><strong>3.60 Cr.</strong></td>
+      </tr>
+
+      <tr>
+        <td>Tax Base</td>
+        <td>0.00</td>
+      </tr>
+
+      <tr>
+        <td>Temporary Difference (Deductible)</td>
+        <td>3.60 Cr.</td>
+      </tr>
+
+      <tr>
+        <td>
+          Deferred Tax Asset to be recognised
+          (₹3.60 Cr. × 30%)
+        </td>
+        <td><strong>₹1.08 Crore</strong></td>
+      </tr>
+
+    </table>
+    `,
+},
+{
+    question_id: "FR_MTPAPR25_II_4B",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 33 - Earnings Per Share",
+    placement: 4,
+    marks: 5,
+
+    question_html: `
+    <p>
+      Following is the data for Company XYZ in respect of number of equity
+      shares during the financial year 20X1-20X2.
+    </p>
+
+    <p>
+      Find out the number of shares for the purpose of calculation of
+      <strong>Basic EPS</strong> as per <strong>Ind AS 33</strong>.
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>S. No.</th>
+        <th>Date</th>
+        <th>Particulars</th>
+        <th>No. of Shares</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>1-Apr-20X1</td>
+        <td>Opening balance of outstanding equity shares</td>
+        <td>100,000</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>15-Jun-20X1</td>
+        <td>Issue of equity shares</td>
+        <td>75,000</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>8-Nov-20X1</td>
+        <td>Conversion of convertible preference shares into equity</td>
+        <td>50,000</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>22-Feb-20X2</td>
+        <td>Buy back of shares</td>
+        <td>(20,000)</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>31-Mar-20X2</td>
+        <td>Closing balance of outstanding equity shares</td>
+        <td>205,000</td>
+      </tr>
+
+    </table>
+    `,
+
+    solution_html: `
+    <p>
+      The closing balance of the outstanding shares is
+      <strong>2,05,000</strong> by normal addition and subtraction.
+      However, as per the weighted average concept, it is necessary to
+      determine for how many days each category of shares remained
+      outstanding during the year.
+    </p>
+
+    <p>
+      The shares outstanding on 1st April 20X1 remained outstanding for
+      the entire year.
+    </p>
+
+    <p>
+      Weighted Average Shares =
+      Number of Shares × Number of Days Outstanding ÷ 365
+    </p>
+
+    <table border="1">
+
+      <tr>
+        <th>Sr.</th>
+        <th>Date</th>
+        <th>Particulars</th>
+        <th>No. of Shares Outstanding</th>
+        <th>No. of Days</th>
+        <th>Weighted Average Shares</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>1-Apr-20X1</td>
+        <td>Opening balance of outstanding equity shares</td>
+        <td>1,00,000</td>
+        <td>365</td>
+        <td>1,00,000</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>15-Jun-20X1</td>
+        <td>Issue of equity shares</td>
+        <td>75,000</td>
+        <td>290</td>
+        <td>59,589</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>8-Nov-20X1</td>
+        <td>Conversion of convertible preference shares into equity</td>
+        <td>50,000</td>
+        <td>144</td>
+        <td>19,726</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>22-Feb-20X2</td>
+        <td>Buy back of shares</td>
+        <td>(20,000)</td>
+        <td>(38)*</td>
+        <td>(2,082)</td>
+      </tr>
+
+      <tr>
+        <td colspan="5"><strong>Total Weighted Average Number of Shares</strong></td>
+        <td><strong>1,77,233</strong></td>
+      </tr>
+
+    </table>
+
+    <p>
+      <strong>*Note:</strong> These shares had already been considered in the
+      shares issued. The same has been deducted assuming that the bought back
+      shares have been extinguished immediately.
+    </p>
+    `,
+},
+{
+    question_id: "FR_MTPAPR25_II_4C",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 37 - Provisions, Contingent Liabilities and Contingent Assets / Ind AS 23 - Borrowing Costs",
+    placement: 4,
+    marks: 4,
+
+    question_html: `
+    <h4>Either</h4>
+
+    <p>
+      X Solar Power Ltd., a power company, has a present obligation to
+      dismantle its plant after 35 years of useful life.
+    </p>
+
+    <p>
+      X Solar Power Ltd. cannot cancel this obligation or transfer it to a
+      third party.
+    </p>
+
+    <p>
+      The company has estimated the total cost of dismantling at
+      ₹50,00,000, the present value of which is ₹30,00,000.
+    </p>
+
+    <p>
+      Based on the facts and circumstances, X Solar Power Ltd. considers a
+      risk factor of 5%, i.e., the risk that the actual outflows would be more
+      than the expected present value.
+    </p>
+
+    <p>
+      State how X Solar Power Ltd. should account for the obligation.
+    </p>
+
+    <hr>
+
+    <h4>OR</h4>
+
+    <p>
+      Marine Transport Limited ordered three ships for its fleet on
+      1st April 20X0.
+    </p>
+
+    <p>
+      It paid a down payment of 25% of the contract value of each ship out of
+      long-term borrowings from a scheduled bank.
+    </p>
+
+    <p>
+      Delivery is expected to commence from financial year 20X7.
+    </p>
+
+    <p>
+      On 1st March 20X2, the ship builder informed that production of one ship
+      had commenced. There was no progress on the remaining two ships.
+    </p>
+
+    <p>
+      Advise whether Marine Transport Limited can capitalize borrowing costs
+      for the financial years ended 31st March 20X1 and
+      31st March 20X2.
+    </p>
+    `,
+
+    solution_html: `
+    <h4>Either</h4>
+
+    <p>
+      The obligation should be measured at the
+      <strong>present value of expected outflows</strong>,
+      i.e., ₹30,00,000.
+    </p>
+
+    <p>
+      A risk adjustment of <strong>5%</strong> should also be included.
+    </p>
+
+    <p>
+      Risk Adjustment = ₹30,00,000 × 5% = ₹1,50,000
+    </p>
+
+    <p>
+      Therefore,
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+
+      <tr>
+        <td>Present Value of Obligation</td>
+        <td>30,00,000</td>
+      </tr>
+
+      <tr>
+        <td>Add: Risk Adjustment (5%)</td>
+        <td>1,50,000</td>
+      </tr>
+
+      <tr>
+        <td><strong>Provision to be recognised</strong></td>
+        <td><strong>31,50,000</strong></td>
+      </tr>
+
+    </table>
+
+    <hr>
+
+    <h4>OR</h4>
+
+    <p>
+      As per paragraph 5 of Ind AS 23, a qualifying asset is an asset that
+      necessarily takes a substantial period of time to get ready for its
+      intended use or sale.
+    </p>
+
+    <p>
+      As per paragraph 17 of Ind AS 23, borrowing costs are capitalised only
+      when all the following conditions are satisfied:
+    </p>
+
+    <ol type="a">
+      <li>Expenditure for the asset has been incurred.</li>
+      <li>Borrowing costs have been incurred.</li>
+      <li>Activities necessary to prepare the asset for its intended use or sale have commenced.</li>
+    </ol>
+
+    <p>
+      The ships are qualifying assets since they require a substantial period
+      of time for construction.
+    </p>
+
+    <p>
+      Marine Transport Limited incurred expenditure and borrowing costs on
+      1st April 20X0. However, activities necessary to prepare the asset
+      commenced only on <strong>1st March 20X2</strong>, and only for
+      <strong>one ship</strong>.
+    </p>
+
+    <p>
+      Therefore:
+    </p>
+
+    <ul>
+      <li>No borrowing costs shall be capitalised during the financial year ended 31st March 20X1.</li>
+
+      <li>
+        During the financial year ended 31st March 20X2, borrowing costs shall
+        be capitalised only for the ship whose construction commenced, and only
+        for the period from <strong>1st March 20X2 to 31st March 20X2</strong>.
+      </li>
+
+      <li>
+        Borrowing costs relating to the remaining two ships shall be recognised
+        as an expense.
+      </li>
+    </ul>
+    `,
+},
+{
+    question_id: "FR_MTPAPR25_II_5A",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 38 - Intangible Assets; Ind AS 36 - Impairment of Assets",
+    placement: 5,
+    marks: 8,
+
+    question_html: `
+    <p>
+      One of the senior engineers at XYZ has been working on a process to improve
+      manufacturing efficiency and, consequently, reduce manufacturing costs.
+      This is a major project and has the full support of XYZ's Board of Directors.
+    </p>
+
+    <p>
+      The senior engineer believes that the cost reductions will exceed the
+      project costs within twenty-four months of their implementation.
+    </p>
+
+    <p>
+      Regulatory testing and health and safety approval was obtained on
+      <strong>1st June 20X5</strong>. This removed uncertainties concerning the
+      project, which was finally completed on
+      <strong>20th April 20X6</strong>.
+    </p>
+
+    <p>
+      Costs of <strong>₹18,00,000</strong>, incurred during the year till
+      <strong>31st March 20X6</strong>, have been recognized as an intangible
+      asset.
+    </p>
+
+    <p>
+      An offer of <strong>₹7,80,000</strong> for the newly developed technology
+      has been received by a potential buyer but has been rejected by XYZ.
+    </p>
+
+    <p>
+      Utkarsh believes that the project will be a major success and has the
+      potential to save the company <strong>₹12,00,000 in perpetuity</strong>.
+    </p>
+
+    <p>
+      Director of Research at XYZ, Neha, who is a qualified electronic engineer,
+      is seriously concerned about the long-term prospects of the new process
+      and is of the opinion that competitors would develop new technology,
+      requiring replacement of the new process within
+      <strong>four years</strong>.
+    </p>
+
+    <p>
+      She estimates that the present value of future cost savings will be
+      <strong>₹9,60,000</strong> over this period. After that, she believes there
+      is no certainty regarding future benefits.
+    </p>
+
+    <p>
+      <strong>Required:</strong><br>
+      Advise the appropriate accounting treatment for the above issue for the
+      year ended <strong>31st March 20X6</strong>.
+    </p>
+    `,
+
+    solution_html: `
+    <p>
+      <strong>Ind AS 38 'Intangible Assets'</strong> requires an intangible asset
+      to be recognised if, and only if, certain recognition criteria are met.
+    </p>
+
+    <p>
+      Regulatory approval obtained on <strong>1st June 20X5</strong> was the last
+      criterion to be satisfied. The remaining recognition criteria had already
+      been fulfilled as follows:
+    </p>
+
+    <ul>
+      <li>Intention to complete the asset is evident since it is a major project having full support of the Board.</li>
+      <li>Adequate financial resources are available as resources are focused on the project.</li>
+      <li>The expenditure incurred can be measured reliably.</li>
+      <li>Future economic benefits are expected since cost savings are expected to exceed project costs within two years.</li>
+    </ul>
+
+    <p>
+      Since the project was completed on <strong>20th April 20X6</strong>,
+      expenditure incurred from <strong>1st June 20X5 to 31st March 20X6</strong>
+      qualifies for capitalization.
+    </p>
+
+    <p>
+      Accordingly,
+      <strong>₹15,00,000 (₹18,00,000 × 10/12)</strong>
+      shall be recognised as an Intangible Asset.
+    </p>
+
+    <p>
+      Expenditure incurred prior to 1st June 20X5 amounting to
+      <strong>₹3,00,000 (₹18,00,000 × 2/12)</strong>
+      shall be recognised as an expense since retrospective recognition of an
+      expense as an asset is not permitted.
+    </p>
+
+    <p>
+      <strong>Ind AS 36 'Impairment of Assets'</strong> requires an intangible
+      asset not yet available for use to be tested annually for impairment.
+    </p>
+
+    <p>
+      Although expected future savings of ₹12,00,000 in perpetuity indicate no
+      impairment, Neha is technically qualified and her estimate should be used.
+      Accordingly, the recoverable amount should be based on the present value
+      of future savings of <strong>₹9,60,000</strong>.
+    </p>
+
+    <p>
+      Recoverable amount is the higher of:
+    </p>
+
+    <ul>
+      <li>Fair value less costs to sell = ₹7,80,000</li>
+      <li>Value in use = ₹9,60,000</li>
+    </ul>
+
+    <p>
+      Hence, recoverable amount = <strong>₹9,60,000</strong>.
+    </p>
+
+    <h4>Impairment Loss</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+
+      <tr>
+        <td>Carrying Amount</td>
+        <td>15,00,000</td>
+      </tr>
+
+      <tr>
+        <td>Less: Recoverable Amount</td>
+        <td>(9,60,000)</td>
+      </tr>
+
+      <tr>
+        <td><strong>Impairment Loss</strong></td>
+        <td><strong>5,40,000</strong></td>
+      </tr>
+
+    </table>
+
+    <p>
+      Therefore, an impairment loss of
+      <strong>₹5,40,000</strong> shall be recognised in the Statement of Profit
+      and Loss for the year ended 31st March 20X6.
+    </p>
+
+    <h4>Necessary Adjusting Entry</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+
+      <tr>
+        <td>
+          Operating Expenses – Development Expenditure A/c Dr.<br>
+          Operating Expenses – Impairment Loss A/c Dr.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;To Intangible Asset under Development A/c
+        </td>
+
+        <td>
+          3,00,000<br>
+          5,40,000
+        </td>
+
+        <td>
+          8,40,000
+        </td>
+      </tr>
+
+    </table>
+    `,
+},
+{
+    question_id: "FR_MTPAPR25_II_5A",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 38 - Intangible Assets; Ind AS 36 - Impairment of Assets",
+    placement: 5,
+    marks: 8,
+
+    question_html: `
+    <p>
+      One of the senior engineers at XYZ has been working on a process to improve
+      manufacturing efficiency and, consequently, reduce manufacturing costs.
+      This is a major project and has the full support of XYZ's Board of Directors.
+    </p>
+
+    <p>
+      The senior engineer believes that the cost reductions will exceed the
+      project costs within twenty-four months of their implementation.
+    </p>
+
+    <p>
+      Regulatory testing and health and safety approval was obtained on
+      <strong>1st June 20X5</strong>. This removed uncertainties concerning the
+      project, which was finally completed on
+      <strong>20th April 20X6</strong>.
+    </p>
+
+    <p>
+      Costs of <strong>₹18,00,000</strong>, incurred during the year till
+      <strong>31st March 20X6</strong>, have been recognized as an intangible
+      asset.
+    </p>
+
+    <p>
+      An offer of <strong>₹7,80,000</strong> for the newly developed technology
+      has been received by a potential buyer but has been rejected by XYZ.
+    </p>
+
+    <p>
+      Utkarsh believes that the project will be a major success and has the
+      potential to save the company <strong>₹12,00,000 in perpetuity</strong>.
+    </p>
+
+    <p>
+      Director of Research at XYZ, Neha, who is a qualified electronic engineer,
+      is seriously concerned about the long-term prospects of the new process
+      and is of the opinion that competitors would develop new technology,
+      requiring replacement of the new process within
+      <strong>four years</strong>.
+    </p>
+
+    <p>
+      She estimates that the present value of future cost savings will be
+      <strong>₹9,60,000</strong> over this period. After that, she believes there
+      is no certainty regarding future benefits.
+    </p>
+
+    <p>
+      <strong>Required:</strong><br>
+      Advise the appropriate accounting treatment for the above issue for the
+      year ended <strong>31st March 20X6</strong>.
+    </p>
+    `,
+
+    solution_html: `
+    <p>
+      <strong>Ind AS 38 'Intangible Assets'</strong> requires an intangible asset
+      to be recognised if, and only if, certain recognition criteria are met.
+    </p>
+
+    <p>
+      Regulatory approval obtained on <strong>1st June 20X5</strong> was the last
+      criterion to be satisfied. The remaining recognition criteria had already
+      been fulfilled as follows:
+    </p>
+
+    <ul>
+      <li>Intention to complete the asset is evident since it is a major project having full support of the Board.</li>
+      <li>Adequate financial resources are available as resources are focused on the project.</li>
+      <li>The expenditure incurred can be measured reliably.</li>
+      <li>Future economic benefits are expected since cost savings are expected to exceed project costs within two years.</li>
+    </ul>
+
+    <p>
+      Since the project was completed on <strong>20th April 20X6</strong>,
+      expenditure incurred from <strong>1st June 20X5 to 31st March 20X6</strong>
+      qualifies for capitalization.
+    </p>
+
+    <p>
+      Accordingly,
+      <strong>₹15,00,000 (₹18,00,000 × 10/12)</strong>
+      shall be recognised as an Intangible Asset.
+    </p>
+
+    <p>
+      Expenditure incurred prior to 1st June 20X5 amounting to
+      <strong>₹3,00,000 (₹18,00,000 × 2/12)</strong>
+      shall be recognised as an expense since retrospective recognition of an
+      expense as an asset is not permitted.
+    </p>
+
+    <p>
+      <strong>Ind AS 36 'Impairment of Assets'</strong> requires an intangible
+      asset not yet available for use to be tested annually for impairment.
+    </p>
+
+    <p>
+      Although expected future savings of ₹12,00,000 in perpetuity indicate no
+      impairment, Neha is technically qualified and her estimate should be used.
+      Accordingly, the recoverable amount should be based on the present value
+      of future savings of <strong>₹9,60,000</strong>.
+    </p>
+
+    <p>
+      Recoverable amount is the higher of:
+    </p>
+
+    <ul>
+      <li>Fair value less costs to sell = ₹7,80,000</li>
+      <li>Value in use = ₹9,60,000</li>
+    </ul>
+
+    <p>
+      Hence, recoverable amount = <strong>₹9,60,000</strong>.
+    </p>
+
+    <h4>Impairment Loss</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+
+      <tr>
+        <td>Carrying Amount</td>
+        <td>15,00,000</td>
+      </tr>
+
+      <tr>
+        <td>Less: Recoverable Amount</td>
+        <td>(9,60,000)</td>
+      </tr>
+
+      <tr>
+        <td><strong>Impairment Loss</strong></td>
+        <td><strong>5,40,000</strong></td>
+      </tr>
+
+    </table>
+
+    <p>
+      Therefore, an impairment loss of
+      <strong>₹5,40,000</strong> shall be recognised in the Statement of Profit
+      and Loss for the year ended 31st March 20X6.
+    </p>
+
+    <h4>Necessary Adjusting Entry</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Dr. (₹)</th>
+        <th>Cr. (₹)</th>
+      </tr>
+
+      <tr>
+        <td>
+          Operating Expenses – Development Expenditure A/c Dr.<br>
+          Operating Expenses – Impairment Loss A/c Dr.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;To Intangible Asset under Development A/c
+        </td>
+
+        <td>
+          3,00,000<br>
+          5,40,000
+        </td>
+
+        <td>
+          8,40,000
+        </td>
+      </tr>
+
+    </table>
+    `,
+},
+{
+    question_id: "FR_MTPAPR25_II_5B",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 10 - Events after the Reporting Period; Ind AS 109 - Financial Instruments",
+    placement: 5,
+    marks: 6,
+
+    question_html: `
+    <p>
+      The company has made sales of <strong>₹60,00,000</strong> to a customer
+      <strong>SS LLP</strong> on <strong>31st December 20X2</strong>.
+    </p>
+
+    <p>
+      The normal credit period is for <strong>one month</strong>. However,
+      sometimes, it goes up to <strong>two months</strong>.
+    </p>
+
+    <p>
+      The company expects to receive payment by
+      <strong>28th February 20X3</strong>. However, no payment has been received
+      till <strong>31st March 20X3</strong>.
+    </p>
+
+    <p>
+      On <strong>15th April 20X3</strong>, the sales department of the company
+      became aware that the customer is passing through financial crisis and has
+      major cash flow problems.
+    </p>
+
+    <p>
+      The company has agreed to allow the customer to settle the debt by
+      <strong>31st March 20X4</strong>, by which time the customer is confident
+      that the cash flow problem will be resolved.
+    </p>
+
+    <p>
+      The company expects that an annual interest of
+      <strong>9%</strong> (i.e. effective interest rate) can be received against
+      any money lent out, yet it allowed the customer an interest-free payment
+      period.
+    </p>
+
+    <p>
+      <strong>Determine the amount to be shown as 'Trade Receivable'</strong>
+      from SS LLP in the books of the company as on
+      <strong>31st March 20X3</strong>.
+    </p>
+    `,
+
+    solution_html: `
+    <p>
+      <strong>Ind AS 10 'Events after the Reporting Date'</strong>, classify an
+      event as adjusting if it provides additional evidence of conditions existing
+      at the reporting date. In this case the additional information relates to
+      evidence of impairment of a financial asset since the customer had financial
+      difficulties prior to <strong>31st March 20X3</strong>.
+    </p>
+
+    <p>
+      <strong>Ind AS 109 'Financial Instruments'</strong> requires financial
+      assets to be reviewed at each reporting date for evidence of impairment.
+      Such evidence exists here because although the customer is expected to pay
+      the amount due, the payment date has been deferred.
+    </p>
+
+    <p>
+      As per paragraph <strong>B5.5.33</strong> of Ind AS 109, for a financial
+      asset that is credit-impaired at the reporting date, but that is not a
+      purchased or originated credit-impaired financial asset, an entity shall
+      measure the expected credit losses as the difference between the asset's
+      gross carrying amount and the present value of estimated future cash flows
+      discounted at the financial asset's effective interest rate.
+    </p>
+
+    <p>
+      Any adjustment is recognised in the Statement of Profit and Loss as an
+      impairment gain or loss.
+    </p>
+
+    <p>
+      Further, paragraph <strong>B5.5.44</strong> of Ind AS 109 provides that
+      expected credit losses shall be discounted to the reporting date, not to the
+      expected default or some other date, using the effective interest rate
+      determined at initial recognition or an approximation thereof.
+    </p>
+
+    <p>
+      In such circumstances, Ind AS 109 requires that the financial asset be
+      re-measured to the present value of the expected future receipt,
+      discounted (in the case of a trade receivable) using the effective interest
+      rate.
+    </p>
+
+    <h4>Computation of Trade Receivable</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+
+      <tr>
+        <td>Trade Receivable</td>
+        <td>60,00,000</td>
+      </tr>
+
+      <tr>
+        <td>Present Value = ₹60,00,000 ÷ 1.09</td>
+        <td>55,04,587</td>
+      </tr>
+
+      <tr>
+        <td><strong>Trade Receivable to be shown in Balance Sheet</strong></td>
+        <td><strong>55,04,587</strong></td>
+      </tr>
+
+    </table>
+
+    <h4>Impairment Loss</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+
+      <tr>
+        <td>Gross Carrying Amount</td>
+        <td>60,00,000</td>
+      </tr>
+
+      <tr>
+        <td>Less: Present Value of Expected Cash Flow</td>
+        <td>(55,04,587)</td>
+      </tr>
+
+      <tr>
+        <td><strong>Impairment Loss recognised in Profit & Loss</strong></td>
+        <td><strong>4,95,413</strong></td>
+      </tr>
+
+    </table>
+
+    <p>
+      Therefore, in the financial statements for the year ended
+      <strong>31st March 20X3</strong>, the asset should be measured at
+      <strong>₹55,04,587</strong> and an impairment loss of
+      <strong>₹4,95,413</strong> shall be recognised in the Statement of Profit
+      and Loss.
+    </p>
+
+    <p>
+      In the year ended <strong>31st March 20X4</strong>, interest income of
+      <strong>₹4,95,413 (₹55,04,587 × 9%)</strong> should be recognised in the
+      Statement of Profit and Loss.
+    </p>
+    `,
+},
+{
+    question_id: "FR_MTPAPR25_II_6A",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 115 - Revenue from Contracts with Customers",
+    placement: 6,
+    marks: 7,
+
+    question_html: `
+    <p>
+      An entity provides broadband services to its customers along with voice call service.
+      Customer buys modem from the entity. However, customer can also get the connection
+      from the entity and modem from any other vendor. The installation activity requires
+      limited effort and the cost involved is almost insignificant.
+    </p>
+
+    <p>
+      It has various plans where it provides either broadband services or voice call services
+      or both.
+    </p>
+
+    <p>
+      <strong>Comment on how to identify whether the performance obligations under the
+      contract is distinct by using an automated process?</strong>
+    </p>
+    `,
+
+    solution_html: `
+    <p>
+      To identify the performance obligations under the contract and determine if they are
+      distinct, an automated process can be implemented using technology.
+      The following steps can be taken:
+    </p>
+
+    <ol type="a">
+      <li>
+        Analyze the clauses in the contract related to the services provided
+        (broadband services, voice call services, modem sales).
+      </li>
+
+      <li>
+        Each clause should be codified using appropriate parameters or tags to
+        capture the relevant information.
+      </li>
+
+      <li>
+        Assign Boolean values (<strong>0</strong> or <strong>1</strong>) to each
+        parameter or tag in the codified clauses.
+      </li>
+
+      <li>
+        Use <strong>"0"</strong> to represent <strong>"No"</strong> and
+        <strong>"1"</strong> to represent <strong>"Yes"</strong> for each parameter.
+      </li>
+
+      <li>
+        Define the criteria for evaluating the performance obligations based on
+        the parameters and their Boolean values.
+      </li>
+
+      <li>
+        Consider factors such as:
+        <ul>
+          <li>the type of service involved,</li>
+          <li>benefits derived by the customer, and</li>
+          <li>promises made in the contract regarding the transfer of goods or services.</li>
+        </ul>
+      </li>
+
+      <li>
+        Develop an automated algorithm or script that evaluates the Boolean
+        values of the parameters according to the defined criteria.
+      </li>
+
+      <li>
+        Calculate scores or weights for each parameter based on their significance
+        in determining performance obligations.
+      </li>
+
+      <li>
+        Utilize the scores or weights assigned to the parameters to determine if
+        the performance obligations are distinct.
+      </li>
+
+      <li>
+        If the total score exceeds a certain threshold, consider it a separate
+        performance obligation.
+      </li>
+    </ol>
+
+    <p>
+      The automated process should flag and identify these distinct performance
+      obligations based on the evaluation results.
+    </p>
+    `,
+},
+{
+    question_id: "FR_MTPAPR25_II_6B",
+    source: "ICAI MTP April 2025",
+    chapter_name: "Ind AS 2 - Inventories; Ind AS 10 - Events after the Reporting Period",
+    placement: 6,
+    marks: 7,
+
+    question_html: `
+    <p>
+      On <strong>5th April, 20X2</strong>, fire damaged a consignment of inventory
+      at one of the Jupiter Ltd.'s warehouse.
+    </p>
+
+    <p>
+      This inventory had been manufactured prior to
+      <strong>31st March, 20X2</strong> costing
+      <strong>₹8 lakhs</strong>.
+    </p>
+
+    <p>
+      The net realisable value of the inventory prior to the damage was estimated
+      at <strong>₹9.60 lakhs</strong>.
+    </p>
+
+    <p>
+      Because of the damage caused to the consignment of inventory, the company
+      was required to spend an additional amount of
+      <strong>₹2 lakhs</strong> on repairing and re-packaging of the inventory.
+    </p>
+
+    <p>
+      The inventory was sold on <strong>15th May, 20X2</strong> for proceeds of
+      <strong>₹9 lakhs</strong>.
+    </p>
+
+    <p>
+      The accountant of Jupiter Ltd. treats this event as an adjusting event and
+      adjusted this event of causing the damage to the inventory in its financial
+      statement and accordingly re-measures the inventories as follows:
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ lakhs</th>
+      </tr>
+      <tr>
+        <td>Cost</td>
+        <td>8.00</td>
+      </tr>
+      <tr>
+        <td>Net realisable value (9.6 – 2)</td>
+        <td>7.60</td>
+      </tr>
+      <tr>
+        <td>Inventories (Lower of Cost and Net Realisable Value)</td>
+        <td>7.60</td>
+      </tr>
+    </table>
+
+    <p>
+      <strong>Analyse whether the above accounting treatment made by the accountant
+      in regard to the financial year ending on 31.03.20X2 is in compliance with
+      Ind AS.</strong>
+      If not, advise the correct treatment along with working for the same.
+    </p>
+    `,
+
+    solution_html: `
+    <p>
+      The above treatment needs to be examined in the light of the provisions
+      given in <strong>Ind AS 10 'Events after the Reporting Period'</strong> and
+      <strong>Ind AS 2 'Inventories'</strong>.
+    </p>
+
+    <p>
+      Paragraph 3 of <strong>Ind AS 10 'Events after the Reporting Period'</strong>
+      defines:
+    </p>
+
+    <blockquote>
+      Events after the reporting period are those events, favourable and
+      unfavourable, that occur between the end of the reporting period and the
+      date when the financial statements are approved by the Board of Directors
+      in case of a company, and by the corresponding approving authority in case
+      of any other entity for issue.
+    </blockquote>
+
+    <p>
+      Two types of events can be identified:
+    </p>
+
+    <ol type="a">
+      <li>Those that provide evidence of conditions that existed at the end of the reporting period (adjusting events after the reporting period); and</li>
+      <li>Those that are indicative of conditions that arose after the reporting period (non-adjusting events after the reporting period).</li>
+    </ol>
+
+    <p>
+      Further, paragraph 10 of Ind AS 10 states:
+    </p>
+
+    <blockquote>
+      "An entity shall not adjust the amounts recognised in its financial
+      statements to reflect non-adjusting events after the reporting period."
+    </blockquote>
+
+    <p>
+      Further, paragraph 6 of <strong>Ind AS 2</strong> defines:
+    </p>
+
+    <blockquote>
+      "Net realisable value is the estimated selling price in the ordinary course
+      of business less the estimated costs of completion and the estimated costs
+      necessary to make the sale."
+    </blockquote>
+
+    <p>
+      Further, paragraph 9 of Ind AS 2 states:
+    </p>
+
+    <blockquote>
+      "Inventories shall be measured at the lower of cost and net realisable
+      value."
+    </blockquote>
+
+    <p>
+      Accountant of Jupiter Ltd. has re-measured the inventories after adjusting
+      the event in its financial statements which is not correct and not in
+      accordance with the provisions of Ind AS 2 and Ind AS 10.
+    </p>
+
+    <p>
+      Accordingly, the event causing the damage to the inventory occurred after
+      the reporting date and, as per the principles laid down under
+      <strong>Ind AS 10 'Events after the Reporting Date'</strong>, is a
+      <strong>non-adjusting event</strong> as it does not affect conditions
+      existing at the reporting date.
+    </p>
+
+    <p>
+      Non-adjusting events are not recognised in the financial statements but are
+      disclosed where their effect is material.
+    </p>
+
+    <p>
+      Therefore, as per the provisions of Ind AS 2 and Ind AS 10, the
+      consignment of inventories shall be recorded in the Balance Sheet at a
+      value of <strong>₹8 lakhs</strong>, calculated as follows:
+    </p>
+
+    <h4>Working Note</h4>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>₹ lakhs</th>
+      </tr>
+
+      <tr>
+        <td>Cost</td>
+        <td>8.00</td>
+      </tr>
+
+      <tr>
+        <td>Net Realisable Value</td>
+        <td>9.60</td>
+      </tr>
+
+      <tr>
+        <td><strong>Inventories (Lower of Cost and Net Realisable Value)</strong></td>
+        <td><strong>8.00</strong></td>
+      </tr>
+    </table>
+    `,
+},
+
 
 
 ];

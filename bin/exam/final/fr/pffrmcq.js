@@ -2483,4 +2483,446 @@ const mcqData = [
     }
   ]
 },
+{
+  case_id: "FR_MTPAPR25_II_CS1",
+  case_chapter: [
+    "Ind AS 1 - Presentation of Financial Statements",
+    "Ind AS 115 - Revenue from Contracts with Customers"
+  ],
+
+  caseText: `
+    <p>
+      A Ltd. is engaged in multi production/construction and service activities.
+      A Ltd. prepares its financial statements following Indian Accounting Standards
+      and follows April–March as its financial year.
+    </p>
+
+    <p>
+      During the year 20X1–20X2, the company has faced the following issues and
+      seeks your professional advice:
+    </p>
+
+    <p><strong>(i) Aircraft Manufacturing</strong></p>
+
+    <p>
+      A Ltd. produces aircrafts. The length of time between first purchasing raw
+      materials to make the aircrafts and the date the company completes the
+      production and delivery is <strong>9 months</strong>. The company receives
+      payment for the aircrafts <strong>7 months after the delivery</strong>.
+    </p>
+
+    <p><strong>(ii) Advertising Services</strong></p>
+
+    <p>
+      A Ltd. provides advertising services to its customers. A Ltd. enters into a
+      sub-contract with a multinational online video sharing company,
+      <strong>F Ltd.</strong> Under the sub-contract, F Ltd. places all of
+      A Ltd.'s customers' advertisements.
+    </p>
+
+    <p>A Ltd. notes the following:</p>
+
+    <ul>
+      <li>A Ltd. works directly with customers to understand their advertising needs before placing adverts.</li>
+      <li>A Ltd. is responsible for ensuring that the advert meets the customer's needs after the advert is placed.</li>
+      <li>A Ltd. directs F Ltd. over which advert to place and when to place it.</li>
+      <li>A Ltd. does not bear inventory risk because there is no minimum purchase requirement with F Ltd.</li>
+      <li>A Ltd. does not have discretion in setting the price because fees are charged based on F Ltd.'s scheduled rates.</li>
+    </ul>
+
+    <p>
+      <strong>
+      Analyse the above transactions and answer Questions 1 to 3 in accordance
+      with the relevant Ind AS.
+      </strong>
+    </p>
+  `,
+
+  questions: [
+    {
+      question_id: "FR_MTPAPR25_II_CS1_Q1",
+      chapter_name: "Ind AS 1 - Presentation of Financial Statements",
+
+      question:
+        "What is the length of operating cycle for manufacturing an aircraft?",
+
+      options: [
+        "9 months",
+        "7 months",
+        "16 months",
+        "2 months"
+      ],
+
+      answer: 2
+    },
+
+    {
+      question_id: "FR_MTPAPR25_II_CS1_Q2",
+      chapter_name: "Ind AS 1 - Presentation of Financial Statements",
+
+      question:
+        "What would be the classification of Trade Receivables in the Balance Sheet whose amount will be realised in 15 months?",
+
+      options: [
+        "Current",
+        "Non-current",
+        "As per the wish of A Ltd. either current or non-current",
+        "Such Trade Receivables will not appear in the Balance Sheet"
+      ],
+
+      answer: 0
+    },
+
+    {
+      question_id: "FR_MTPAPR25_II_CS1_Q3",
+      chapter_name: "Ind AS 115 - Revenue from Contracts with Customers",
+
+      question:
+        "Which of the following statements is correct with respect to entering into the sub-contract with F Ltd.?",
+
+      options: [
+        "A Ltd. is an agent under this sub-contract.",
+        "A Ltd. is a principal under this sub-contract.",
+        "Ind AS 115 is not applicable to this scenario.",
+        "Arrangement between A Ltd. and F Ltd., whether principal or agent, will not affect the amount of revenue to be recognised by A Ltd."
+      ],
+
+      answer: 1
+    }
+  ]
+},
+{
+  case_id: "FR_MTPAPR25_II_CS2",
+  case_chapter: [
+    "Ind AS 40 - Investment Property",
+    "Ind AS 2 - Inventories",
+    "Ind AS 24 - Related Party Disclosures"
+  ],
+
+  caseText: `
+    <p>
+      X Ltd. is engaged in the construction industry and prepares its financial
+      statements up to <strong>31st March</strong> each year.
+    </p>
+
+    <p><strong>(i) Investment Property</strong></p>
+
+    <p>
+      On <strong>1st April, 20X1</strong>, X Ltd. purchased a large property
+      (consisting of land) for <strong>₹2,00,00,000</strong> and immediately began
+      to lease the property to Y Ltd. on an operating lease. Annual rentals were
+      <strong>₹20,00,000</strong>.
+    </p>
+
+    <p>
+      On <strong>31st March, 20X5</strong>, the fair value of the property was
+      <strong>₹2,60,00,000</strong>.
+    </p>
+
+    <p>
+      Under the terms of the lease, Y Ltd. was able to cancel the lease by giving
+      six months' notice in writing to X Ltd. Y Ltd. gave this notice on
+      <strong>31st March, 20X5</strong> and vacated the property on
+      <strong>30th September, 20X5</strong>.
+    </p>
+
+    <p>
+      On <strong>30th September, 20X5</strong>, the fair value of the property
+      was <strong>₹2,90,00,000</strong>.
+    </p>
+
+    <p>
+      On <strong>1st October, 20X5</strong>, X Ltd. immediately began converting
+      the property into <strong>10 separate flats</strong> of equal size which it
+      intended to sell in the ordinary course of business.
+    </p>
+
+    <p>
+      X Ltd. spent <strong>₹60,00,000</strong> on conversion between
+      <strong>30th September, 20X5</strong> and
+      <strong>31st March, 20X6</strong>.
+    </p>
+
+    <p>
+      The project was incomplete on <strong>31st March, 20X6</strong> and the
+      directors estimated that a further
+      <strong>₹40,00,000</strong> would be required to complete the project,
+      after which each flat could be sold for
+      <strong>₹50,00,000</strong>.
+    </p>
+
+    <p><strong>(ii) Related Party</strong></p>
+
+    <p>
+      Mr. A is a domestic partner of Ms. B.
+      Mr. A has an investment in X Ltd. and
+      Ms. B has an investment in Z Ltd.
+    </p>
+
+    <p>
+      <strong>
+      Analyse the above transactions and answer Questions 4 to 8 in accordance
+      with the relevant Ind AS.
+      </strong>
+    </p>
+  `,
+
+  questions: [
+    {
+      question_id: "FR_MTPAPR25_II_CS2_Q4",
+      chapter_name: "Ind AS 40 - Investment Property",
+
+      question:
+        "At what value should the property be reclassified as on 30th September, 20X5?",
+
+      options: [
+        "₹2,90,00,000",
+        "₹2,60,00,000",
+        "₹3,50,00,000",
+        "₹2,00,00,000"
+      ],
+
+      answer: 3
+    },
+
+    {
+      question_id: "FR_MTPAPR25_II_CS2_Q5",
+      chapter_name: "Ind AS 2 - Inventories",
+
+      question:
+        "What is the net realisable value of the property as on 31st March, 20X6?",
+
+      options: [
+        "₹5,00,00,000",
+        "₹4,60,00,000",
+        "₹2,60,00,000",
+        "₹3,00,00,000"
+      ],
+
+      answer: 1
+    },
+
+    {
+      question_id: "FR_MTPAPR25_II_CS2_Q6",
+      chapter_name: "Ind AS 2 - Inventories",
+
+      question:
+        "At what value should the property (all flats) be shown in the Balance Sheet as on 31st March, 20X6?",
+
+      options: [
+        "₹5,00,00,000",
+        "₹4,60,00,000",
+        "₹2,60,00,000",
+        "₹3,00,00,000"
+      ],
+
+      answer: 2
+    },
+
+    {
+      question_id: "FR_MTPAPR25_II_CS2_Q7",
+      chapter_name: "Ind AS 24 - Related Party Disclosures",
+
+      question:
+        "State which of the following statements is correct with respect to Mr. A's investment in X Ltd.?",
+
+      options: [
+        "Mr. A is not a related party to X Ltd. even if it controls X Ltd.",
+        "Z Ltd. is related to X Ltd. if Mr. A controls or jointly controls X Ltd. even if Ms. B does not control or jointly control Z Ltd.",
+        "Z Ltd. is related to X Ltd. if Mr. A controls or jointly controls X Ltd. and Ms. B controls or jointly controls Z Ltd.",
+        "Mr. A is not a related party to X Ltd. but Ms. B is a related party to X Ltd."
+      ],
+
+      answer: 2
+    },
+
+    {
+      question_id: "FR_MTPAPR25_II_CS2_Q8",
+      chapter_name: "Ind AS 24 - Related Party Disclosures",
+
+      question:
+        "State which of the following statement is correct if Mr. A and Ms. B only have significant influence over respective X Ltd. and Z Ltd.?",
+
+      options: [
+        "X Ltd. and Z Ltd. are related parties.",
+        "X Ltd. and Z Ltd. are not related parties.",
+        "Mr. A is a related party to Z Ltd.",
+        "Ms. B is a related party to X Ltd."
+      ],
+
+      answer: 1
+    }
+  ]
+},
+{
+  case_id: "FR_MTPAPR25_II_CS3",
+  case_chapter: [
+    "Ind AS 109 - Financial Instruments",
+    "Ind AS 28 - Investments in Associates and Joint Ventures"
+  ],
+
+  caseText: `
+    <p>
+      G Ltd. is currently engaged in different business segments and is also
+      looking to expand its operations overseas. G Ltd. is exploring investment
+      from an overseas investor to carry out its expansion plan.
+    </p>
+
+    <p><strong>(i) Interest-free Security Deposit</strong></p>
+
+    <p>
+      G Ltd. has made an interest-free security deposit against a lease of
+      <strong>5 years</strong>, redeemable at the end of the lease term, when the
+      market interest rate for a similar deposit was
+      <strong>12% per annum</strong>.
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Particulars</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Date of Security Deposit (Starting Date)</td>
+        <td>1st April, 20X1</td>
+      </tr>
+      <tr>
+        <td>Date of Security Deposit (Finishing Date)</td>
+        <td>31st March, 20X6</td>
+      </tr>
+      <tr>
+        <td>Discount rate</td>
+        <td>12%</td>
+      </tr>
+      <tr>
+        <td>Security deposit</td>
+        <td>₹10,00,000</td>
+      </tr>
+      <tr>
+        <td>Present value factor at the end of 5th year</td>
+        <td>0.567427</td>
+      </tr>
+    </table>
+
+    <p><strong>(ii) Investment in Associate</strong></p>
+
+    <p>
+      G Ltd. acquired <strong>25%</strong> of the equity share capital of
+      R Ltd. on the first day of the financial year for
+      <strong>₹1,25,000</strong>.
+    </p>
+
+    <p>
+      As of that date, the carrying value of the net assets of R Ltd. was
+      <strong>₹3,00,000</strong> and the fair value was
+      <strong>₹4,00,000</strong>.
+    </p>
+
+    <p>
+      The excess of fair value over carrying value was attributable to one of
+      the buildings owned by R Ltd. having a remaining useful life of
+      <strong>20 years</strong>.
+    </p>
+
+    <p>
+      R Ltd. earned profit of <strong>₹40,000</strong> and Other Comprehensive
+      Income of <strong>₹10,000</strong> during the year.
+    </p>
+
+    <p>
+      <strong>
+      Analyse the above transactions and answer Questions 9 to 13 in accordance
+      with the relevant Ind AS.
+      </strong>
+    </p>
+  `,
+
+  questions: [
+    {
+      question_id: "FR_MTPAPR25_II_CS3_Q9",
+      chapter_name: "Ind AS 109 - Financial Instruments",
+
+      question:
+        "What will be the initial amount of prepaid lease payment in the lease contract to be recognised by G Ltd.?",
+
+      options: [
+        "₹5,67,427",
+        "₹4,32,573",
+        "₹10,00,000",
+        "Nil"
+      ],
+
+      answer: 1
+    },
+
+    {
+      question_id: "FR_MTPAPR25_II_CS3_Q10",
+      chapter_name: "Ind AS 109 - Financial Instruments",
+
+      question:
+        "What will be the amount of interest income on security deposit to be recognised in the financial statements of G Ltd. as on 31st March, 20X2?",
+
+      options: [
+        "₹1,20,000",
+        "₹68,091",
+        "₹51,909",
+        "Nil"
+      ],
+
+      answer: 1
+    },
+
+    {
+      question_id: "FR_MTPAPR25_II_CS3_Q11",
+      chapter_name: "Ind AS 28 - Investments in Associates and Joint Ventures",
+
+      question:
+        "Calculate the goodwill / capital reserve on the date of acquisition of R Ltd.?",
+
+      options: [
+        "Goodwill ₹25,000",
+        "Capital Reserve ₹25,000",
+        "No goodwill or capital reserve",
+        "Goodwill ₹50,000"
+      ],
+
+      answer: 0
+    },
+
+    {
+      question_id: "FR_MTPAPR25_II_CS3_Q12",
+      chapter_name: "Ind AS 28 - Investments in Associates and Joint Ventures",
+
+      question:
+        "What will be G Ltd.'s share in the profit and Other Comprehensive Income for the year?",
+
+      options: [
+        "₹10,000; ₹8,750",
+        "₹8,750; ₹1,250",
+        "₹1,250; ₹2,500",
+        "₹8,750; ₹2,500"
+      ],
+
+      answer: 3
+    },
+
+    {
+      question_id: "FR_MTPAPR25_II_CS3_Q13",
+      chapter_name: "Ind AS 28 - Investments in Associates and Joint Ventures",
+
+      question:
+        "What will be the closing balance of investment in R Ltd. at the end of the year in the books of G Ltd.?",
+
+      options: [
+        "₹1,25,000",
+        "₹1,36,250",
+        "₹1,00,000",
+        "₹1,33,750"
+      ],
+
+      answer: 1
+    }
+  ]
+},
+
 ];
