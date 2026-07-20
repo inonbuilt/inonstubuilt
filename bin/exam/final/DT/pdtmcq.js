@@ -3,7 +3,7 @@ const mcqData = [
   case_id: "dt_mtp_I_cs1",
   case_chapter: ["Non-resident Taxation", "Deductions", "Appeals & Revision"],
   caseText: `
-    <p><strong>Case Scenario I</strong></p>
+    
     <p>Falcon Ltd of Country X is an associated enterprise of Max Inc. of USA. Falcon Ltd. has a branch in India since 2010. It was selling goods to Indian customers by importing from various countries besides sale in India of goods manufactured by it in Country X.</p>
     <p>The adjusted total income of the Indian branch of Falcon Ltd for the year ended 31st March, 2024 is ₹ 80 lakhs. The branch incurred ₹ 12 lakhs by way of executive and general administrative expenditure during the financial year 2023-24. The head office has allocated ₹ 18 lakhs as the branch's share of head office expenditure including the expenditure of ₹ 12 lakhs incurred by the branch.</p>
     <p>A survey under section 133A of the Act was conducted in its branch premises in January, 2023 and undisclosed assets of ₹ 90 lakhs were found. Assessment for the assessment year 2023-24 was completed by making addition of the entire undisclosed asset of ₹ 90 lakhs. The assessee preferred appeal before CIT (Appeals) who gave complete relief to the assessee. The Income-tax Department wants to file an appeal before ITAT.</p>
@@ -66,7 +66,7 @@ const mcqData = [
   case_id: "dt_mtp_I_cs2",
   case_chapter: ["TDS", "TCS"],
   caseText: `
-    <p><strong>Case Scenario II</strong></p>
+    
     <p>Mr. Abhay, a resident Indian, is in retail business in Delhi and his turnover for F.Y.2022-23 was ₹ 9.8 crores. He regularly purchases goods from another resident, Mr. Kunal, a wholesaler in Delhi, and the aggregate payments made by Mr. Abhay to Mr. Kunal during the F.Y.2023-24 was ₹ 90 lakh (₹ 25 lakh on 8.5.2023, ₹ 20 lakh on 27.8.2023, ₹ 25 lakh on 18.10.2023 and ₹ 20 lakh on 11.2.2024). Mr. Kunal’s turnover for F.Y.2022-23 was ₹ 13.5 crores.</p>
     <p>Mr. Kunal remitted ₹ 6.5 lakh on 28.3.2024, out of his personal savings, through Canara Bank, Delhi branch, which is an authorised dealer, under the Liberalised Remittance Scheme of RBI, as gift to his elder brother residing in Dubai (since 1995), on the occasion of his 60th birthday.</p>
     <p>Mr. Kunal paid ₹ 8.8 lakhs on 1.11.2023 to World Travels for a holiday package to Singapore for a week with his family, comprising of his wife and two children, being twins aged 19 years, in the last week of November.</p>
@@ -141,7 +141,7 @@ const mcqData = [
   case_id: "dt_mtp_I_cs3",
   case_chapter: ["Equalisation Levy"],
   caseText: `
-    <p><strong>Case Scenario III</strong></p>
+    
     <p>Flax (P) Ltd. availed online digital advertisement service provided by Marshall Inc. of USA in March 2024. It paid ₹ 10 lakhs and the amount outstanding as on 31st March, 2024 was ₹ 2 lakhs for the said online digital advertisement service.</p>
     <p>Marshall Inc. is also an e-commerce operator who sold its goods to customers resident in India for ₹ 180 lakhs during the financial year 2023-24. Also, during the same year, Marshall Inc. sold goods for ₹ 70 lakhs to customers outside India but has used IP address in India for the purchase of those goods.</p>
     <p><strong>Based on the facts of the above case scenario, choose the most appropriate answer to Q.10 to Q. 12 below:</strong></p>
@@ -184,7 +184,387 @@ const mcqData = [
       answer: 1 // Equalisation levy is attracted @ 2% on the amount of consideration received/receivable by an e-commerce operator from e-commerce supply or services. The scope covers sales to Indian residents (₹ 180 lakhs) and sales to non-residents using an Indian IP address (₹ 70 lakhs). Total gross consideration = ₹ 250 lakhs, which exceeds the ₹ 50 lakh threshold. Levy = 2% of ₹ 2,50,00,000 = ₹ 5,00,000.
     }
   ]
-}
+},
+{
+  case_id: "dt_aprmtp24_II_cs1",
+  case_chapter: [
+    "Special Provisions Relating to Certain Incomes of Non-Residents (Chapter XII-A)",
+    "Dividend",
+    "Tax Deduction at Source (TDS)",
+    "Capital Gains"
+  ],
+  caseText: `
+    
 
+    <p>The following information pertains to Mr. Apoorv, an Indian citizen and non-resident in India, for the previous year 2023-24:</p>
+
+    <ol type="i">
+      <li>Dividend from TPO Ltd., an Indian Company (gross) of ₹ 1,30,000.</li>
+
+      <li>Interest on debentures of SLP Pvt. Ltd. (subscribed in convertible foreign exchange) of ₹ 1,35,000 (gross).</li>
+
+      <li>He incurred interest on loan taken for purchase of shares of TPO Ltd. and for purchase of debentures of SLP Pvt. Ltd. of ₹ 30,000 and ₹ 20,000, respectively.</li>
+
+      <li>On 15th March 2024, he sold debentures of Fix Ltd. for ₹ 18,25,000 which were subscribed in convertible foreign exchange on 10th June 2004 in dollars equivalent to ₹ 4,65,000. He paid commission to broker of ₹ 7,000 at the time of sale.</li>
+
+      <li>On 30th April, 2024, he reinvested the sale proceeds of debentures of ₹ 4,80,000 for purchase of listed shares of an Indian company, Fly High Ltd.</li>
+    </ol>
+
+    <p><strong>Cost Inflation Index:</strong> F.Y. 2004-05 - 113; F.Y. 2023-24 – 348.</p>
+
+    <p><strong>Based on the facts of the above case scenario, choose the most appropriate answer to Q.1 to Q.5 below:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "dt_aprmtp24_II_q1",
+      chapter_name: [
+        "Dividend",
+        "Tax Deduction at Source (TDS)"
+      ],
+      question: "What is the amount of dividend taxable in the hands of Mr. Apoorv and at what rate TPO Ltd. is required to deduct tax at source on dividend income distributed to Mr. Apoorv?",
+      options: [
+        "₹ 1,30,000 and 10%",
+        "₹ 1,04,000 and 10%",
+        "₹ 1,00,000 and 20.8%",
+        "₹ 1,30,000 and 20.8%"
+      ],
+      answer: 4 // Being a non-resident, the entire dividend of ₹1,30,000 is taxable. TDS on dividend to a non-resident is deductible under section 195 at 20% plus surcharge and health & education cess (effective rate assumed in the question: 20.8%).
+    },
+    {
+      question_id: "dt_aprmtp24_II_q2",
+      chapter_name: [
+        "Dividend",
+        "Tax Deduction at Source (TDS)"
+      ],
+      question: "Assuming for the purpose of this MCQ that Mr. Apoorv is a resident in India for the P.Y. 2023-24, determine the amount of dividend taxable in his hands and at what rate TPO Ltd. is required to deduct tax at source on dividend income distributed to him?",
+      options: [
+        "₹ 1,30,000 and 10%",
+        "₹ 1,04,000 and 10%",
+        "₹ 1,00,000 and 20%",
+        "₹ 1,30,000 and 20%"
+      ],
+      answer: 2 // For a resident, deduction of interest expenditure up to 20% of dividend income is allowable. Dividend taxable = ₹1,30,000 − ₹26,000 = ₹1,04,000. TDS under section 194 is deductible @10%.
+    },
+    {
+      question_id: "dt_aprmtp24_II_q3",
+      chapter_name: [
+        "Special Provisions Relating to Certain Incomes of Non-Residents (Chapter XII-A)"
+      ],
+      question: "What is the amount of interest on debentures of SLP Pvt. Ltd. taxable in the hands of Mr. Apoorv and at what rate? Ignore surcharge and cess.",
+      options: [
+        "₹ 1,35,000 taxable @20%",
+        "₹ 1,05,000 taxable @20%",
+        "₹ 1,08,000 taxable at slab rates",
+        "₹ 1,05,000 taxable at slab rates"
+      ],
+      answer: 1 // Interest on specified debentures subscribed in convertible foreign exchange is taxable under Chapter XII-A at 20% on the gross amount without deduction of expenditure.
+    },
+    {
+      question_id: "dt_aprmtp24_II_q4",
+      chapter_name: [
+        "Capital Gains",
+        "Special Provisions Relating to Certain Incomes of Non-Residents (Chapter XII-A)"
+      ],
+      question: "What would be the amount of long-term capital gains taxable in the hands of Mr. Apoorv on sale of debentures of Fix Ltd., as per the provisions of Chapter XII-A of the Income-tax Act, 1961? Ignore the effect of first proviso to section 48 (benefit of foreign currency conversion).",
+      options: [
+        "₹ 13,53,000",
+        "₹ 9,95,772",
+        "₹ 9,97,142",
+        "₹ 13,60,000"
+      ],
+      answer: 2 // Under Chapter XII-A, indexation benefit is not available. Exemption under section 115F is available on proportionate reinvestment, resulting in taxable LTCG of ₹9,95,772.
+    },
+    {
+      question_id: "dt_aprmtp24_II_q5",
+      chapter_name: [
+        "Capital Gains"
+      ],
+      question: "Assuming for the purpose of this MCQ that Mr. Apoorv is a resident in India for the previous year 2023-24, what would be the amount of taxable capital gains on sale of debentures of Fix Ltd. in the hands of Mr. Apoorv?",
+      options: [
+        "₹ 13,53,000",
+        "₹ 3,85,965",
+        "₹ 9,95,772",
+        "₹ 13,60,000"
+      ],
+      answer: 1 // Being a resident, Chapter XII-A does not apply. Long-term capital gain is computed with indexation benefit under section 48, resulting in taxable LTCG of ₹13,53,000.
+    }
+  ]
+},
+{
+  case_id: "dt_aprmtp24_II_cs1",
+  case_chapter: [
+    "Special Provisions Relating to Certain Incomes of Non-Residents (Chapter XII-A)",
+    "Dividend",
+    "Tax Deduction at Source (TDS)",
+    "Capital Gains"
+  ],
+  caseText: `
+
+    <p>The following information pertains to Mr. Apoorv, an Indian citizen and non-resident in India, for the previous year 2023-24:</p>
+
+    <ol type="i">
+      <li>Dividend from TPO Ltd., an Indian Company (gross) of ₹ 1,30,000.</li>
+
+      <li>Interest on debentures of SLP Pvt. Ltd. (subscribed in convertible foreign exchange) of ₹ 1,35,000 (gross).</li>
+
+      <li>He incurred interest on loan taken for purchase of shares of TPO Ltd. and for purchase of debentures of SLP Pvt. Ltd. of ₹ 30,000 and ₹ 20,000, respectively.</li>
+
+      <li>On 15th March 2024, he sold debentures of Fix Ltd. for ₹ 18,25,000 which were subscribed in convertible foreign exchange on 10th June 2004 in dollars equivalent to ₹ 4,65,000. He paid commission to broker of ₹ 7,000 at the time of sale.</li>
+
+      <li>On 30th April, 2024, he reinvested the sale proceeds of debentures of ₹ 4,80,000 for purchase of listed shares of an Indian company, Fly High Ltd.</li>
+    </ol>
+
+    <p><strong>Cost Inflation Index:</strong> F.Y. 2004-05 - 113; F.Y. 2023-24 – 348.</p>
+
+    <p><strong>Based on the facts of the above case scenario, choose the most appropriate answer to Q.1 to Q.5 below:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "dt_aprmtp24_II_q1",
+      chapter_name: [
+        "Dividend",
+        "Tax Deduction at Source (TDS)"
+      ],
+      question: "What is the amount of dividend taxable in the hands of Mr. Apoorv and at what rate TPO Ltd. is required to deduct tax at source on dividend income distributed to Mr. Apoorv?",
+      options: [
+        "₹ 1,30,000 and 10%",
+        "₹ 1,04,000 and 10%",
+        "₹ 1,00,000 and 20.8%",
+        "₹ 1,30,000 and 20.8%"
+      ],
+      answer: 3 // (d) Being a non-resident, the entire dividend of ₹1,30,000 is taxable. TDS is deductible under section 195 @20% plus applicable surcharge and cess (effective rate assumed in the question: 20.8%).
+    },
+    {
+      question_id: "dt_aprmtp24_II_q2",
+      chapter_name: [
+        "Dividend",
+        "Tax Deduction at Source (TDS)"
+      ],
+      question: "Assuming for the purpose of this MCQ that Mr. Apoorv is a resident in India for the P.Y. 2023-24, determine the amount of dividend taxable in his hands and at what rate TPO Ltd. is required to deduct tax at source on dividend income distributed to him?",
+      options: [
+        "₹ 1,30,000 and 10%",
+        "₹ 1,04,000 and 10%",
+        "₹ 1,00,000 and 20%",
+        "₹ 1,30,000 and 20%"
+      ],
+      answer: 1 // (b) Interest deduction is restricted to 20% of dividend income. Taxable dividend = ₹1,30,000 − ₹26,000 = ₹1,04,000. TDS under section 194 is @10%.
+    },
+    {
+      question_id: "dt_aprmtp24_II_q3",
+      chapter_name: [
+        "Special Provisions Relating to Certain Incomes of Non-Residents (Chapter XII-A)"
+      ],
+      question: "What is the amount of interest on debentures of SLP Pvt. Ltd. taxable in the hands of Mr. Apoorv and at what rate? Ignore surcharge and cess.",
+      options: [
+        "₹ 1,35,000 taxable @20%",
+        "₹ 1,05,000 taxable @20%",
+        "₹ 1,08,000 taxable at slab rates",
+        "₹ 1,05,000 taxable at slab rates"
+      ],
+      answer: 0 // (a) Interest on specified debentures subscribed in convertible foreign exchange is taxable on the gross amount @20% under Chapter XII-A without allowing deduction for expenditure.
+    },
+    {
+      question_id: "dt_aprmtp24_II_q4",
+      chapter_name: [
+        "Capital Gains",
+        "Special Provisions Relating to Certain Incomes of Non-Residents (Chapter XII-A)"
+      ],
+      question: "What would be the amount of long-term capital gains taxable in the hands of Mr. Apoorv on sale of debentures of Fix Ltd., as per the provisions of Chapter XII-A of the Income-tax Act, 1961? Ignore the effect of first proviso to section 48 (benefit of foreign currency conversion).",
+      options: [
+        "₹ 13,53,000",
+        "₹ 9,95,772",
+        "₹ 9,97,142",
+        "₹ 13,60,000"
+      ],
+      answer: 1 // (b) Under Chapter XII-A, exemption under section 115F is available on proportionate reinvestment. Taxable LTCG works out to ₹9,95,772.
+    },
+    {
+      question_id: "dt_aprmtp24_II_q5",
+      chapter_name: [
+        "Capital Gains"
+      ],
+      question: "Assuming for the purpose of this MCQ that Mr. Apoorv is a resident in India for the previous year 2023-24, what would be the amount of taxable capital gains on sale of debentures of Fix Ltd. in the hands of Mr. Apoorv?",
+      options: [
+        "₹ 13,53,000",
+        "₹ 3,85,965",
+        "₹ 9,95,772",
+        "₹ 13,60,000"
+      ],
+      answer: 0 // (a) Being a resident, indexation benefit under section 48 is available. Taxable long-term capital gain is ₹13,53,000.
+    }
+  ]
+},
+{
+  case_id: "dt_aprmtp24_II_cs2",
+  case_chapter: [
+    "Royalty",
+    "Equalisation Levy",
+    "Tax Deduction at Source (TDS)",
+    "Double Taxation Avoidance Agreement (DTAA)"
+  ],
+  caseText: `
+    <p><strong>Case Scenario II</strong></p>
+
+    <p>Omega Inc., a Country F company, maintains an online web-platform through which it provides end user computer software through an End-user Licence Agreement (EULA). Trailor Ltd., an Indian company, has entered into a contract for ₹ 6.7 crores with Omega Inc., for the Financial Year 2023-24, which is approved by the Central Government.</p>
+
+    <p><strong>The broad terms of the EULA between the two companies are as follows-</strong></p>
+
+    <p><strong>Grant of licence.</strong> Omega Inc. grants Trailor Ltd. a limited non-exclusive licence to install, use, access, display and run the click wrap web-based Computer Software (CWCS) on a single local hard disk(s) or other permanent storage media of one computer. Trailor Ltd. should not make CWCS available over a network where it could be used by multiple computers at the same time.</p>
+
+    <p><strong>Reservation of rights and ownership.</strong> Omega Inc. reserves all rights not expressly granted to Trailor Ltd. in this EULA. The CWCS is protected by copyright and other intellectual property laws and treaties. Omega Inc. owns the title, copyright and other intellectual property rights in the CWCS. The CWCS is licenced (only for use and not any other purpose), not sold.</p>
+
+    <p>Omega Inc. does not have any offices outside Country F.</p>
+
+    <p><strong>Extract of Article 12 of India-Country F DTAA</strong></p>
+
+    <p><strong>Royalties and Fees for Technical Services</strong></p>
+
+    <ol>
+      <li>Royalties and fees for technical services arising in a Contracting State and paid to a resident of the other Contracting State may be taxed in that other State.</li>
+
+      <li>However, such royalties and fees for technical services may also be taxed in the Contracting State in which they arise and according to the laws of that Contracting State, but if the recipient is the beneficial owner of the royalties or fees for technical services, the tax so charged shall not exceed 10 per cent.</li>
+
+      <li>The term <strong>"royalties"</strong> as used in this Article means payments of any kind received as a consideration for the use of, or the right to use:
+        <ol type="a">
+          <li>any copyright of a literary, artistic or scientific work, including cinematograph film or films or tapes used for radio or television broadcasting, any patent, trade mark, design or model, plan, secret formula or process, or for information concerning industrial, commercial or scientific experience, including gains derived from the alienation of any such right, property or information.</li>
+        </ol>
+      </li>
+    </ol>
+
+    <p><strong>Based on the facts of the above case scenario, choose the most appropriate answer to Q.6 to Q.9 below:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "dt_aprmtp24_II_q6",
+      chapter_name: [
+        "Royalty",
+        "Tax Deduction at Source (TDS)",
+        "DTAA"
+      ],
+      question: "Is Trailor Ltd., India required to deduct tax at source on the payment made to Omega Inc.? If yes, what amount of tax is required to be deducted at source on the said payment?",
+      options: [
+        "Yes, Trailor Ltd. is required to deduct tax at source of ₹ 1,42,14,720.",
+        "No, Trailor Ltd. is not required to deduct tax at source.",
+        "Yes, Trailor Ltd. is required to deduct tax at source of ₹ 2,84,29,440.",
+        "Yes, Trailor Ltd. is required to deduct tax at source of ₹ 67,00,000."
+      ],
+      answer: 1 // (b) Payment for purchase of copyrighted article under the EULA is not royalty in view of the Supreme Court decision in Engineering Analysis Centre of Excellence Pvt. Ltd.; hence no TDS is deductible.
+    },
+    {
+      question_id: "dt_aprmtp24_II_q7",
+      chapter_name: [
+        "Equalisation Levy"
+      ],
+      question: "Is equalisation levy attracted in respect of the consideration received by Omega Inc., Country F from Trailor Ltd.? If so, in whose hands and at what rate?",
+      options: [
+        "Omega Inc. has to pay equalisation levy @6% of the consideration.",
+        "Trailor Ltd. is required to deduct equalisation levy @6% of the consideration.",
+        "Trailor Ltd. is required to deduct equalisation levy @2% of the consideration.",
+        "Omega Inc. has to pay equalisation levy @2% of the consideration."
+      ],
+      answer: 3 // (d) Omega Inc., being an e-commerce operator, is liable to equalisation levy @2% on e-commerce supply or services.
+    },
+    {
+      question_id: "dt_aprmtp24_II_q8",
+      chapter_name: [
+        "Royalty",
+        "Tax Deduction at Source (TDS)"
+      ],
+      question: "Would Trailor Ltd., India be required to deduct tax at source on the payment made to Omega Inc., if there was no DTAA between India and Country F? If so, what amount of tax is required to be deducted at source on the said payment?",
+      options: [
+        "Yes, Trailor Ltd. is required to deduct tax at source of ₹ 1,42,14,720.",
+        "No, Trailor Ltd. is not required to deduct tax at source, since such sum is not taxable in the hands of Omega Inc.",
+        "Yes, Trailor Ltd. is required to deduct tax at source of ₹ 2,84,29,440.",
+        "Yes, Trailor Ltd. is required to deduct tax at source of ₹ 71,07,360."
+      ],
+      answer: 0 // (a) In the absence of a DTAA, the payment is taxable as royalty under the Income-tax Act and TDS is deductible accordingly.
+    },
+    {
+      question_id: "dt_aprmtp24_II_q9",
+      chapter_name: [
+        "Equalisation Levy"
+      ],
+      question: "Is equalisation levy attracted in respect of the consideration received by Omega Inc., Country F from Trailor Ltd., if there is no DTAA between India and Country F? If so, in whose hands and at what rate?",
+      options: [
+        "Omega Inc. has to pay equalisation levy @6% of the consideration.",
+        "Trailor Ltd. is required to pay equalisation levy @2% of the consideration.",
+        "Omega Inc. has to pay equalisation levy @2% of the consideration.",
+        "No, equalisation levy is not attracted."
+      ],
+      answer: 3 // (d) Equalisation levy is not attracted where the consideration is chargeable to tax as royalty under the Income-tax Act.
+    }
+  ]
+},
+{
+  case_id: "dt_aprmtp24_II_cs3",
+  case_chapter: [
+    "Penalty",
+    "Under-reported Income and Misreported Income",
+    "Assessment",
+    "Reassessment"
+  ],
+  caseText: `
+    <p><strong>Case Scenario III</strong></p>
+
+    <p>Sharma Pvt. Ltd. ("S") files its return of income for the P.Y. 2023-24 on 30th September 2024 declaring loss of ₹ 18,00,000. The rate of income-tax applicable to the company is 25%.</p>
+
+    <p>The tax auditor of S, in his audit report submitted under section 44AB, has reported a disallowance of ₹ 2,80,000 towards personal expenditure of directors as no evidence was produced by S in support of this expenditure. However, S did not disallow the same in its computation and return of income.</p>
+
+    <p>The return of income was processed by the Centralised Processing Centre making an addition of ₹ 2,80,000 towards personal expenditure and the loss under section 143(1) was computed at ₹ 15,20,000.</p>
+
+    <p>The return of income was selected for scrutiny assessment and by order passed under section 143(3), the loss as per normal provisions was reduced to ₹ 11,60,000 by making an addition of ₹ 3,60,000.</p>
+
+    <p>The assessment was reopened under section 147 and by order passed under section 147, the loss as per preceding order under section 143(3) was converted into income of ₹ 3,20,000.</p>
+
+    <p><strong>Based on the facts of the above case scenario, choose the most appropriate answer to Q.10 to Q.12 below:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "dt_aprmtp24_II_q10",
+      chapter_name: [
+        "Penalty",
+        "Under-reported Income and Misreported Income"
+      ],
+      question: "Which of the following statements regarding penalty on addition of ₹ 2,80,000 towards personal expenditure is correct?",
+      options: [
+        "(i) and (iv)",
+        "(ii) and (iv)",
+        "(iv) only",
+        "(iii) only"
+      ],
+      answer: 3 // (d) Since the addition is an adjustment made under section 143(1)(a), no penalty under section 270A is leviable in respect of such adjustment.
+    },
+    {
+      question_id: "dt_aprmtp24_II_q11",
+      chapter_name: [
+        "Penalty",
+        "Reassessment"
+      ],
+      question: "What is the amount of penalty leviable under section 270A as a consequence of assessment under section 147, if the addition was not on account of misreporting?",
+      options: [
+        "₹ 1,09,200",
+        "₹ 1,92,400",
+        "₹ 41,600",
+        "₹ 1,85,000"
+      ],
+      answer: 1 // (b) Penalty for under-reporting of income is 50% of the tax payable on under-reported income, which works out to ₹1,92,400.
+    },
+    {
+      question_id: "dt_aprmtp24_II_q12",
+      chapter_name: [
+        "Penalty",
+        "Immunity from Penalty"
+      ],
+      question: "Assuming that the additions made in the order under section 147 are not on account of misreporting of income but only on account of under-reporting, S seeks to claim immunity from imposition of penalty under section 270A and initiation of proceedings under section 276C of the Act by filing an application before the Assessing Officer. What are the other conditions that need to be satisfied by S in this regard?",
+      options: [
+        "(ii) and (iv)",
+        "(i) and (iv)",
+        "(i) and (iii)",
+        "(ii) and (iii)"
+      ],
+      answer: 1 // (b) Immunity is available where tax and interest as per the order are paid within the prescribed time and no appeal has been filed against the assessment order.
+    }
+  ]
+},
   
 ];
