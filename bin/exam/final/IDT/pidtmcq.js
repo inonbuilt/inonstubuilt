@@ -356,16 +356,16 @@ const mcqData = [
     ],
   },
   {
-  case_id: "idt_apr24_mtp_II_cs1",
-  case_chapter: [
-    "Valuation",
-    "Reverse Charge Mechanism",
-    "Business Exhibition",
-    "Foreign Currency Exchange",
-    "Appeals",
-    "Place of Supply"
-  ],
-  caseText: `
+    case_id: "idt_apr24_mtp_II_cs1",
+    case_chapter: [
+      "Valuation",
+      "Reverse Charge Mechanism",
+      "Business Exhibition",
+      "Foreign Currency Exchange",
+      "Appeals",
+      "Place of Supply",
+    ],
+    caseText: `
     <p>Swash Enterprise Pvt. Ltd. is a financial service company having its offices in Kolkata (West Bengal) and Mumbai (Maharashtra). The company is registered under GST in both the States.</p>
 
     <p>The company operates through two business segments:</p>
@@ -485,82 +485,57 @@ const mcqData = [
 
     <p>All amounts are exclusive of GST wherever applicable. Swash Enterprise Pvt. Ltd. is <strong>not an authorised FOREX dealer</strong>. There are no other inward or outward supply transactions during the relevant period.</p>
   `,
-  questions: [
-    {
-      question_id: "idt_apr24_mtp_II_cs1_1",
-      chapter_name: [
-        "Valuation",
-        "Foreign Currency Exchange"
-      ],
-      question:
-        "Determine the value of taxable supply in respect of sale and purchase of foreign currency by Kolkata office and Mumbai office of the company as per Rule 32(2)(a) of the CGST Rules, 2017.",
-      options: [
-        "Kolkata office ₹7,200, Mumbai office ₹3,660",
-        "Kolkata office ₹10,000, Mumbai office ₹3,660",
-        "Kolkata office ₹7,20,000, Mumbai office ₹3,66,000",
-        "Kolkata office ₹7,30,000, Mumbai office ₹3,66,000"
-      ],
-      answer: 1
-    },
-    {
-      question_id: "idt_apr24_mtp_II_cs1_2",
-      chapter_name: [
-        "Reverse Charge Mechanism"
-      ],
-      question:
-        "The value of taxable supply received by Mumbai office during September on which tax is payable under reverse charge is:",
-      options: [
-        "₹15,000",
-        "₹25,000",
-        "₹40,000",
-        "₹2,70,000"
-      ],
-      answer: 2
-    },
-    {
-      question_id: "idt_apr24_mtp_II_cs1_3",
-      chapter_name: [
-        "Value of Supply",
-        "Business Exhibition"
-      ],
-      question:
-        "The value of taxable outward supply made by Kolkata office during September on which Swash Enterprise Pvt. Ltd. is liable to pay tax under forward charge is:",
-      options: [
-        "₹1,78,000",
-        "₹2,78,000",
-        "₹2,65,000",
-        "₹1,13,000"
-      ],
-      answer: 0
-    },
-    {
-      question_id: "idt_apr24_mtp_II_cs1_4",
-      chapter_name: [
-        "Appeals"
-      ],
-      question:
-        "The maximum amount of pre-deposit that Swash Enterprise Pvt. Ltd. can be asked to deposit under the IGST Act, 2017 for filing an appeal before the Appellate Authority is:",
-      options: [
-        "₹30 crore",
-        "₹60 crore",
-        "₹25 crore",
-        "₹50 crore"
-      ],
-      answer: 3
-    }
-  ]
-},
-{
-  case_id: "idt_apr24_mtp_II_cs2",
-  case_chapter: [
-    "Input Tax Credit",
-    "Value of Supply",
-    "Import of Goods",
-    "Place of Supply",
-    "Hotel Accommodation",
-    "Cross Border Services"
-  ],
-  caseText: `
+    questions: [
+      {
+        question_id: "idt_apr24_mtp_II_cs1_1",
+        chapter_name: ["Valuation", "Foreign Currency Exchange"],
+        question:
+          "Determine the value of taxable supply in respect of sale and purchase of foreign currency by Kolkata office and Mumbai office of the company as per Rule 32(2)(a) of the CGST Rules, 2017.",
+        options: [
+          "Kolkata office ₹7,200, Mumbai office ₹3,660",
+          "Kolkata office ₹10,000, Mumbai office ₹3,660",
+          "Kolkata office ₹7,20,000, Mumbai office ₹3,66,000",
+          "Kolkata office ₹7,30,000, Mumbai office ₹3,66,000",
+        ],
+        answer: 1,
+      },
+      {
+        question_id: "idt_apr24_mtp_II_cs1_2",
+        chapter_name: ["Reverse Charge Mechanism"],
+        question:
+          "The value of taxable supply received by Mumbai office during September on which tax is payable under reverse charge is:",
+        options: ["₹15,000", "₹25,000", "₹40,000", "₹2,70,000"],
+        answer: 2,
+      },
+      {
+        question_id: "idt_apr24_mtp_II_cs1_3",
+        chapter_name: ["Value of Supply", "Business Exhibition"],
+        question:
+          "The value of taxable outward supply made by Kolkata office during September on which Swash Enterprise Pvt. Ltd. is liable to pay tax under forward charge is:",
+        options: ["₹1,78,000", "₹2,78,000", "₹2,65,000", "₹1,13,000"],
+        answer: 0,
+      },
+      {
+        question_id: "idt_apr24_mtp_II_cs1_4",
+        chapter_name: ["Appeals"],
+        question:
+          "The maximum amount of pre-deposit that Swash Enterprise Pvt. Ltd. can be asked to deposit under the IGST Act, 2017 for filing an appeal before the Appellate Authority is:",
+        options: ["₹30 crore", "₹60 crore", "₹25 crore", "₹50 crore"],
+        answer: 3,
+      },
+    ],
+  },
+  {
+    case_id: "idt_apr24_mtp_II_cs2",
+    case_chapter: [
+      "Input Tax Credit",
+      "Value of Supply",
+      "Import of Goods",
+      "Place of Supply",
+      "Hotel Accommodation",
+      "Cross Border Services",
+    ],
+    caseText: `
     <p>Anthun India Limited, registered under GST in the State of Gujarat, is a wholly-owned subsidiary of Anthun LLC, Japan. Another subsidiary, Anthun Inc., Singapore, supplies industrial goods to customers worldwide.</p>
 
     <p>Anthun Inc., Singapore sells goods to <strong>Prista Limited</strong>, registered in Maharashtra. Prista Limited imports the goods into India and carries out the required technical processing in its factory in Maharashtra. After processing, the goods are sold to Anthun India Limited for further sale to customers.</p>
@@ -624,72 +599,367 @@ const mcqData = [
       <li>IGST is applicable on imports. No additional duty or cess is applicable.</li>
     </ul>
   `,
-  questions: [
-    {
-      question_id: "idt_apr24_mtp_II_cs2_1",
-      chapter_name: [
-        "Input Tax Credit",
-        "Import of Goods"
-      ],
-      question:
-        "The total GST liability, net of input tax credit, of Prista Limited for the month of January is:",
-      options: [
-        "₹2,18,160 payable as IGST",
-        "Nil",
-        "₹2,160 payable as IGST",
-        "₹1,09,080 payable as CGST and ₹1,09,080 payable as SGST"
-      ],
-      answer: 2
-    },
-    {
-      question_id: "idt_apr24_mtp_II_cs2_2",
-      chapter_name: [
-        "Output Tax Liability"
-      ],
-      question:
-        "What shall be the gross IGST liability (without adjustment of ITC) of Anthun India Limited for the month of January?",
-      options: [
-        "₹1,08,000",
-        "Nil",
-        "₹1,58,400",
-        "₹33,840"
-      ],
-      answer: 2
-    },
-    {
-      question_id: "idt_apr24_mtp_II_cs2_3",
-      chapter_name: [
-        "Input Tax Credit",
-        "Blocked Credit",
-        "Hotel Accommodation"
-      ],
-      question:
-        "Whether input tax credit is available on the GST charged by the Mumbai hotel on the invoice of ₹1,00,000 issued to Anthun India Limited? If yes, specify the eligible amount.",
-      options: [
-        "Yes, ₹14,000 CGST and ₹14,000 SGST",
-        "Yes, ₹28,000 IGST",
-        "Input tax credit is not available",
-        "Yes, ₹7,000 CGST and ₹7,000 SGST"
-      ],
-      answer: 2
-    },
-    {
-      question_id: "idt_apr24_mtp_II_cs2_4",
-      chapter_name: [
-        "Place of Supply",
-        "Cross Border Services"
-      ],
-      question:
-        "Whether GST is applicable on the event organised by Leisure Events Ltd. for Anthun India Limited in Mauritius and what is the place of supply?",
-      options: [
-        "GST is applicable and the place of supply is New Delhi",
-        "GST is applicable and the place of supply is Gujarat",
-        "GST is not applicable and the place of supply is Mauritius",
-        "GST is applicable and the place of supply is Mauritius"
-      ],
-      answer: 1
-    }
-  ]
-},
+    questions: [
+      {
+        question_id: "idt_apr24_mtp_II_cs2_1",
+        chapter_name: ["Input Tax Credit", "Import of Goods"],
+        question:
+          "The total GST liability, net of input tax credit, of Prista Limited for the month of January is:",
+        options: [
+          "₹2,18,160 payable as IGST",
+          "Nil",
+          "₹2,160 payable as IGST",
+          "₹1,09,080 payable as CGST and ₹1,09,080 payable as SGST",
+        ],
+        answer: 2,
+      },
+      {
+        question_id: "idt_apr24_mtp_II_cs2_2",
+        chapter_name: ["Output Tax Liability"],
+        question:
+          "What shall be the gross IGST liability (without adjustment of ITC) of Anthun India Limited for the month of January?",
+        options: ["₹1,08,000", "Nil", "₹1,58,400", "₹33,840"],
+        answer: 2,
+      },
+      {
+        question_id: "idt_apr24_mtp_II_cs2_3",
+        chapter_name: [
+          "Input Tax Credit",
+          "Blocked Credit",
+          "Hotel Accommodation",
+        ],
+        question:
+          "Whether input tax credit is available on the GST charged by the Mumbai hotel on the invoice of ₹1,00,000 issued to Anthun India Limited? If yes, specify the eligible amount.",
+        options: [
+          "Yes, ₹14,000 CGST and ₹14,000 SGST",
+          "Yes, ₹28,000 IGST",
+          "Input tax credit is not available",
+          "Yes, ₹7,000 CGST and ₹7,000 SGST",
+        ],
+        answer: 2,
+      },
+      {
+        question_id: "idt_apr24_mtp_II_cs2_4",
+        chapter_name: ["Place of Supply", "Cross Border Services"],
+        question:
+          "Whether GST is applicable on the event organised by Leisure Events Ltd. for Anthun India Limited in Mauritius and what is the place of supply?",
+        options: [
+          "GST is applicable and the place of supply is New Delhi",
+          "GST is applicable and the place of supply is Gujarat",
+          "GST is not applicable and the place of supply is Mauritius",
+          "GST is applicable and the place of supply is Mauritius",
+        ],
+        answer: 1,
+      },
+    ],
+  },
+  {
+    case_id: "idt_NOV24_mtp_I_cs1",
+    case_chapter: [
+      "Works Contract",
+      "Goods Transport Agency (GTA)",
+      "Input Tax Credit",
+      "Import of Services",
+      "Related Party",
+      "Value of Supply",
+      "Schedule III",
+      "Time of Supply",
+      "Bill-to Ship-to",
+    ],
+    caseText: `
+    <p>Nirav Ltd. is registered with the jurisdictional GST authorities in the State of Rajasthan and operates in multiple businesses. The principal business of Nirav Ltd. is works contract service being provided to the customers by way of fabricating and installing the body for large transportation vehicles. The chassis of the vehicles are provided by the customers to Nirav Ltd. Nirav Ltd. procures the material for fabrication and installs the same on the chassis against a lumpsum agreed amount for material as well as services.</p>
 
+    <p>In addition to the above business, Nirav Ltd., registered as GTA, is also engaged in providing services of transportation of goods by road through its own fleet of trucks. GST is chargeable on such services @ <strong>5%</strong>. Nirav Ltd. has not exercised the option to pay GST on the same.</p>
+
+    <p><strong>During the month of January, Nirav Ltd. undertook the following transactions:</strong></p>
+
+    <ol type="i">
+      <li>Provided services of transportation of goods to <strong>Manohar Ltd.</strong>, a registered person under GST in the State of Gujarat and received an amount of <strong>₹10,00,000</strong> as consideration.</li>
+
+      <li>Purchased tyres for its own fleet of trucks used for providing transportation services and paid <strong>₹1,00,000</strong>.</li>
+
+      <li>Purchased a machinery with advanced technology for fabrication of body for luxury buses amounting to <strong>₹50,00,000</strong>. The machinery was purchased from <strong>BLM Ltd.</strong>, registered in Rajasthan. BLM Ltd. procured such machinery from <strong>Saket Ltd.</strong>, registered in Maharashtra. Delivery was made directly by Saket Ltd. at Nirav Ltd.'s premises and installation was carried out by engineers of Saket Ltd. Saket Ltd. charged <strong>₹42,00,000</strong> to BLM Ltd.</li>
+
+      <li>Procured engineering services through electronic mode from <strong>Basilla Inc., Italy</strong> for consideration of <strong>₹15,00,000</strong>. Further, goods were sent to Basilla Inc. for repair work for which consideration of <strong>₹5,00,000</strong> was paid.</li>
+
+      <li>Provided transportation services to its related party <strong>BPZ Ltd.</strong> and charged <strong>₹5,00,000</strong>. The arm's length value for similar services was <strong>₹7,00,000</strong>.</li>
+
+      <li>Sold scrap relating to fabrication business amounting to <strong>₹5,00,000</strong>.</li>
+
+      <li>Purchased goods relating to fabrication business for <strong>₹10,00,000</strong>, out of which goods worth <strong>₹1,00,000</strong> were stolen from its premises.</li>
+
+      <li>Received an advance of <strong>₹10,00,000</strong> for fabrication work on new chassis and <strong>₹3,00,000</strong> towards transportation of goods services from <strong>Karim Ltd.</strong>, a registered person in Madhya Pradesh.</li>
+    </ol>
+
+    <p>The opening balance of input tax credit for the relevant tax period is <strong>Nil</strong>. All amounts are exclusive of GST wherever applicable.</p>
+
+    <p><strong>Applicable GST rates:</strong></p>
+
+    <ul>
+      <li>GST rate on all inward and outward supplies: <strong>18%</strong>, unless otherwise specified.</li>
+      <li>GST on GTA services: <strong>5%</strong>.</li>
+    </ul>
+
+    <p>Assume that all other conditions necessary for availing input tax credit have been fulfilled.</p>
+  `,
+    questions: [
+      {
+        question_id: "idt_NOV24_mtp_I_cs1_1",
+        chapter_name: [
+          "Input Tax Credit",
+          "Goods Transport Agency (GTA)",
+          "Reverse Charge",
+        ],
+        question:
+          "Determine the net GST liability, payable in cash, of Nirav Ltd. for the month of January.",
+        options: ["₹5,40,000", "₹2,70,000", "Nil", "₹7,38,000"],
+        answer: 1,
+      },
+      {
+        question_id: "idt_NOV24_mtp_I_cs1_2",
+        chapter_name: ["Input Tax Credit"],
+        question:
+          "What shall be the total eligible input tax credit available to Nirav Ltd. for the month of January?",
+        options: ["₹10,80,000", "₹10,62,000", "₹13,32,000", "₹9,00,000"],
+        answer: 2,
+      },
+      {
+        question_id: "idt_NOV24_mtp_I_cs1_3",
+        chapter_name: ["OIDAR", "Import of Services", "Registration"],
+        question:
+          "Whether Basilla Inc. is required to obtain registration in India to discharge GST liability? If yes, compute the amount of GST liability to be discharged by it in the month of January?",
+        options: [
+          "Yes, as online information database access and retrieval service provider. GST payable is ₹3,60,000.",
+          "Yes, as online information database access and retrieval service provider. GST payable is ₹2,70,000.",
+          "No, Basilla Inc. is not required to obtain GST registration in India for discharging GST liability. GST liability of Basilla Inc. is nil.",
+          "Yes, as normal taxpayer. GST payable is ₹3,60,000.",
+        ],
+        answer: 2,
+      },
+      {
+        question_id: "idt_NOV24_mtp_I_cs1_4",
+        chapter_name: [
+          "Related Party",
+          "Goods Transport Agency (GTA)",
+          "Value of Supply",
+        ],
+        question:
+          "Determine the GST liability of Nirav Ltd. on services of transportation of goods provided to BPZ Ltd.",
+        options: ["Nil", "₹90,000", "₹1,26,000", "₹36,000"],
+        answer: 0,
+      },
+      {
+        question_id: "idt_NOV24_mtp_I_cs1_5",
+        chapter_name: ["Bill-to Ship-to", "Place of Supply"],
+        question:
+          "In case of the machinery sold and fabricated by Saket Ltd., the place of supply and tax charged shall be:",
+        options: [
+          "Location of Saket Ltd.; IGST of ₹7,56,000.",
+          "Location of Nirav Ltd.; IGST of ₹7,56,000.",
+          "Location of BLM Ltd.; IGST of ₹9,00,000.",
+          "Location of Saket Ltd.; CGST of ₹3,78,000 and SGST of ₹3,78,000.",
+        ],
+        answer: 1,
+      },
+    ],
+  },
+  {
+    case_id: "idt_NOV24_mtp_I_cs2",
+    case_chapter: [
+      "OIDAR",
+      "Export of Services",
+      "Intermediary",
+      "Advertising Services",
+      "Reverse Charge",
+      "Input Tax Credit",
+      "Zero-rated Supply",
+    ],
+    caseText: `
+    <p>Espon Inc. is an entity incorporated in USA and is engaged in provision of various information technology related services directly as well as through its subsidiaries located across the world. In India, <strong>Espon India</strong>, a subsidiary of Espon Inc., is registered under GST in the State of Karnataka and provides services to various customers in India.</p>
+
+    <p>Espon Inc. provides <strong>cloud-based storage services</strong> to its customers (business entities and non-business entities) in India. Customers subscribe to the services by making online payment directly to Espon Inc.'s bank account through internet banking and other online modes. The terms and conditions for such services are entered into directly between Espon Inc. and the customer without involvement of any third party.</p>
+
+    <p>In case of any issue, customers can log complaints at the customer help centre operated by <strong>Espon India</strong> on a principal-to-principal basis. Espon India receives consideration from Espon Inc. at <strong>cost plus 10%</strong> on a monthly basis.</p>
+
+    <p>Espon India is also engaged in <strong>promotion and marketing</strong> of cloud-based storage services in India for Espon Inc. on a principal-to-principal basis. Espon Inc. pays Espon India on a <strong>cost plus 20%</strong> basis. The promotional activities are carried out in the name of Espon Inc., without any reference to Espon India.</p>
+
+    <p>Espon Inc. owns <strong>online advertising space</strong> on the internet and has agreed to sell such online advertising space to Espon India for <strong>₹5,00,00,000 per month</strong>. Espon India further sells such advertising space to customers in India on its own account. The contractual arrangement for sale of advertising space is between Espon India and its customers.</p>
+
+    <p>Espon Inc. also provides <strong>technology support</strong> to Espon India and charges royalty of <strong>₹25,00,000 per month</strong>. Such royalty relates exclusively to the advertising space business of Espon India.</p>
+
+    <p><strong>During the month of January:</strong></p>
+
+    <ol type="I">
+      <li>
+        <p>Espon India incurred the following expenses:</p>
+        <ul>
+          <li>Expenses exclusively relating to operation of call centre – <strong>₹75,00,000</strong>.</li>
+          <li>Expenses exclusively relating to promotion and marketing services for Espon Inc. – <strong>₹50,00,000</strong>.</li>
+        </ul>
+      </li>
+
+      <li>Espon India earned an income of <strong>₹8,00,00,000</strong> from sale of online advertising space in India.</li>
+
+      <li>Espon Inc. earned an income of <strong>₹10,00,00,000</strong> from non-taxable online recipient customers in India from cloud-based storage services.</li>
+    </ol>
+
+    <p>The opening balance of input tax credit for both Espon India and Espon Inc. is <strong>Nil</strong>.</p>
+
+    <p><strong>Additional assumptions:</strong></p>
+
+    <ul>
+      <li>GST is applicable on all inward and outward supplies @ <strong>18%</strong> (ignore bifurcation of CGST, SGST and IGST) unless otherwise specified.</li>
+      <li>All conditions for availing input tax credit have been fulfilled.</li>
+      <li>All amounts are exclusive of GST wherever applicable.</li>
+      <li>Exports made by Espon India, if any, are under LUT without payment of IGST.</li>
+    </ul>
+  `,
+    questions: [
+      {
+        question_id: "idt_NOV24_mtp_I_cs2_1",
+        chapter_name: ["Output Tax Liability", "Advertising Services"],
+        question:
+          "What shall be the output tax liability, without any adjustment of input tax credit, if any, by Espon India for the month of January?",
+        options: [
+          "₹1,44,00,000",
+          "₹2,38,50,000",
+          "₹1,69,65,000",
+          "₹1,66,50,000",
+        ],
+        answer: 0,
+      },
+      {
+        question_id: "idt_NOV24_mtp_I_cs2_2",
+        chapter_name: [
+          "OIDAR",
+          "Online Information Database Access and Retrieval Services",
+        ],
+        question:
+          "What shall be the net GST liability of Espon Inc. for the month of January?",
+        options: ["Nil", "₹1,80,00,000", "₹1,84,50,000", "₹2,74,50,000"],
+        answer: 1,
+      },
+      {
+        question_id: "idt_NOV24_mtp_I_cs2_3",
+        chapter_name: ["OIDAR", "Reverse Charge", "Advertising Services"],
+        question:
+          "Please select the correct statement specifically in relation to sale of online advertisement space service provided by Espon Inc. to Espon India:",
+        options: [
+          "Espon Inc. is providing online information and database access or retrieval service and is therefore required to register in India under GST and discharge GST on forward charge basis.",
+          "Espon Inc. is providing online information and database access or retrieval service electronically and the place of supply is the location of the supplier, which is outside taxable territory. Therefore, no GST is payable.",
+          "Espon Inc. is providing online information and database access or retrieval service and tax on the same is to be paid by Espon India on reverse charge basis.",
+          "Espon Inc. is providing online information and database access or retrieval service and tax on the same is to be paid by Espon India in the capacity of an agent of Espon Inc.",
+        ],
+        answer: 2,
+      },
+    ],
+  },
+  {
+    case_id: "idt_NOV24_mtp_I_cs3",
+    case_chapter: [
+      "Legal Services",
+      "Reverse Charge Mechanism (RCM)",
+      "Time of Supply",
+      "Value of Supply",
+      "Composition Levy",
+    ],
+    caseText: `
+    <p><strong>M/s Malik Rao & Company</strong> is a partnership firm of advocates, registered under GST in Mumbai, Maharashtra. During the month of April, the firm supplied legal services amounting to <strong>₹15 lakh</strong>.</p>
+
+    <p>The following information is provided in relation to certain services rendered:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Particulars</th>
+          <th>Value of Service (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            <strong>Incense Power (P) Ltd.</strong>, registered in Telangana in the preceding financial year under section 22 of the CGST Act, 2017.<br>
+            Consultation provided for preparation of an affidavit relating to construction of a hotel building in Maharashtra.
+          </td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <strong>Sultan India (P) Ltd.</strong>, registered in Gujarat in the preceding financial year under section 22 of the CGST Act, 2017.<br>
+            Filed a suit before the Gujarat High Court on behalf of the company.
+          </td>
+          <td>2,00,000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <strong>Ms. Kavya</strong>, registered under GST as a salon service provider in Maharashtra in the preceding financial year under section 22 of the CGST Act, 2017.<br><br>
+
+            Legal services amounting to <strong>₹1,00,000</strong> were provided in February and invoice was issued on <strong>15th February</strong>. Payment was received on <strong>5th April</strong>.<br><br>
+
+            The firm charged a <strong>penalty of ₹10,000</strong> (exclusive of GST) for delayed payment, which was also paid on 5th April.<br><br>
+
+            As per the agreement, the firm had paid <strong>₹20,000</strong> towards attestation charges on behalf of Ms. Kavya. The amount was shown separately on the invoice and reimbursed by the client during February.
+          </td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Additional Information:</strong></p>
+
+    <ul>
+      <li>The turnover of M/s Malik Rao & Company during the previous financial year was <strong>₹50 lakh</strong>.</li>
+      <li>The firm is engaged solely in providing legal services.</li>
+      <li>The firm neither imports nor exports services.</li>
+    </ul>
+  `,
+    questions: [
+      {
+        question_id: "idt_NOV24_mtp_I_cs3_1",
+        chapter_name: ["Legal Services", "Reverse Charge Mechanism (RCM)"],
+        question:
+          "Whether the service provided to Sultan India (P) Ltd. is exempt under GST? If not, whether tax is payable under reverse charge?",
+        options: [
+          "Yes, all services provided by an advocate firm are exempt from GST.",
+          "No, since service is provided to a business entity registered under section 22 of the CGST Act, 2017. Tax shall be payable by M/s Malik Rao & Company under forward charge.",
+          "Yes, any service provided by an advocate firm to a business entity is exempt under GST.",
+          "No, since service is provided to a business entity registered under section 22 of the CGST Act, 2017. Tax shall be payable by Sultan India (P) Ltd. under reverse charge.",
+        ],
+        answer: 3,
+      },
+      {
+        question_id: "idt_NOV24_mtp_I_cs3_2",
+        chapter_name: ["Time of Supply"],
+        question:
+          "What shall be the time of supply for supplies made to Ms. Kavya in respect of the original amount of ₹1 lakh and the penalty amount of ₹10,000?",
+        options: [
+          "For the whole amount of ₹1,10,000: 15th February.",
+          "For ₹1 lakh: 15th February and for ₹10,000: 5th April.",
+          "For the whole amount of ₹1,10,000: 5th April.",
+          "For ₹1 lakh: 15th April and for ₹10,000: 5th April.",
+        ],
+        answer: 2,
+      },
+      {
+        question_id: "idt_NOV24_mtp_I_cs3_3",
+        chapter_name: ["Value of Supply"],
+        question:
+          "What shall be the value of supply provided to Ms. Kavya in terms of section 15 of the CGST Act, 2017?",
+        options: ["₹1,10,000", "₹1,00,000", "₹1,30,000", "₹1,20,000"],
+        answer: 0,
+      },
+      {
+        question_id: "idt_NOV24_mtp_I_cs3_4",
+        chapter_name: ["Composition Levy"],
+        question:
+          "Which of the following statements is/are correct in law?\n(i) M/s Malik Rao & Company is eligible to opt for composition levy under sub-sections (1) and (2) of section 10 of the CGST Act, 2017.\n(ii) M/s Malik Rao & Company is not eligible to opt for composition levy under sub-sections (1) and (2) of section 10 of the CGST Act, 2017.\n(iii) M/s Malik Rao & Company is eligible to opt for composition levy under sub-section (2A) of section 10 of the CGST Act, 2017.\n(iv) M/s Malik Rao & Company is not eligible to opt for composition levy under sub-section (2A) of section 10 of the CGST Act, 2017.",
+        options: ["(i)", "(i) and (iv)", "(ii) and (iv)", "(ii) and (iii)"],
+        answer: 2,
+      },
+    ],
+  }
 ];
