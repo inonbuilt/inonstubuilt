@@ -801,5 +801,1313 @@ const descriptiveQuestions = [
     </ul>
     <p><em>Note: Any four points may be mentioned.</em></p>
   `
+},
+{
+  question_id: "IDT_APR24_MTP_II_1",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Input Tax Credit",
+    "Utilisation of Input Tax Credit",
+    "Zero Rated Supply"
+  ],
+  placement: 1,
+  marks: 14,
+  question_html: `
+    <p>Gehna Ltd. of Jodhpur (Rajasthan) is a registered manufacturer of cosmetic products. Gehna Ltd. has furnished following details for a tax period:</p>
+
+    <h4>Details of Outward Supplies</h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Supplies in Rajasthan</td>
+          <td>8,75,000</td>
+        </tr>
+        <tr>
+          <td>Supplies in States other than Rajasthan</td>
+          <td>3,75,000</td>
+        </tr>
+        <tr>
+          <td>Export under LUT</td>
+          <td>6,25,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>Details of Expenses</h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Raw materials purchased from registered suppliers located in Rajasthan</td>
+          <td>1,06,250</td>
+        </tr>
+        <tr>
+          <td>Raw materials purchased from unregistered suppliers located in Rajasthan</td>
+          <td>37,500</td>
+        </tr>
+        <tr>
+          <td>Raw materials purchased from Punjab from registered supplier</td>
+          <td>1,00,000</td>
+        </tr>
+        <tr>
+          <td>Integrated tax paid on raw materials imported from USA</td>
+          <td>22,732</td>
+        </tr>
+        <tr>
+          <td>Consumables purchased from registered suppliers located in Rajasthan including high speed diesel (Excise and VAT paid) valuing ₹31,250 for running the machinery in the factory</td>
+          <td>1,56,250</td>
+        </tr>
+        <tr>
+          <td>Monthly rent for the factory building to the owner in Rajasthan</td>
+          <td>1,00,000</td>
+        </tr>
+        <tr>
+          <td>Salary paid to employees on rolls</td>
+          <td>6,25,000</td>
+        </tr>
+        <tr>
+          <td>Premium paid on life insurance policies taken for specified employees. Life insurance policies for specified employees have been taken by Gehna Ltd. to fulfill a statutory obligation in this regard. The life insurance service provider is registered in Rajasthan.</td>
+          <td>2,00,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>All the above amounts are exclusive of all kinds of taxes, wherever applicable. However, the applicable taxes have also been paid by Gehna Ltd.</p>
+
+    <p>The opening balance of ITC with Gehna Ltd. for the given tax period is:</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>CGST</td>
+          <td>₹20,000</td>
+        </tr>
+        <tr>
+          <td>SGST</td>
+          <td>₹15,000</td>
+        </tr>
+        <tr>
+          <td>IGST</td>
+          <td>₹15,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Assume CGST, SGST and IGST rates to be 9%, 9% and 18% respectively, wherever applicable.</p>
+
+    <p>Assume that all the other necessary conditions to avail the ITC have been complied with by Gehna Ltd., wherever applicable.</p>
+
+    <p><strong>Compute:</strong></p>
+
+    <ol type="i">
+      <li>ITC available with Gehna Ltd. for the tax period; and</li>
+      <li>Net GST payable [CGST, SGST or IGST, as the case may be] from Electronic Cash Ledger by Gehna Ltd. for the tax period.</li>
+    </ol>
+  `,
+  solution_html: `
+    <h3>Computation of ITC available with Gehna Ltd.</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Particulars</th>
+          <th>CGST (₹)</th>
+          <th>SGST (₹)</th>
+          <th>IGST (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Raw materials purchased from local registered suppliers [Note 1(i)] (₹1,06,250 × 9%)</td>
+          <td>9,562.50</td>
+          <td>9,562.50</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Raw materials purchased from local unregistered suppliers [Note 1(ii)]</td>
+          <td>Nil</td>
+          <td>Nil</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Raw materials purchased from Punjab from registered supplier [Note 1(i)]</td>
+          <td>-</td>
+          <td>-</td>
+          <td>18,000</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Raw materials imported from USA [Note 1(iii)]</td>
+          <td>-</td>
+          <td>-</td>
+          <td>22,732</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Consumables [Note 2] [(₹1,56,250 − ₹31,250) × 9%]</td>
+          <td>11,250</td>
+          <td>11,250</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Monthly rent for factory building [Note 3]</td>
+          <td>9,000</td>
+          <td>9,000</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>Salary paid to employees [Note 4]</td>
+          <td>Nil</td>
+          <td>Nil</td>
+          <td>Nil</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td>Premium on life insurance policies [Note 5] (₹2,00,000 × 9%)</td>
+          <td>18,000</td>
+          <td>18,000</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <th colspan="2">Total ITC</th>
+          <th>47,812.50</th>
+          <th>47,812.50</th>
+          <th>40,732</th>
+        </tr>
+
+        <tr>
+          <td colspan="2">Add: Opening balance of ITC</td>
+          <td>20,000</td>
+          <td>15,000</td>
+          <td>15,000</td>
+        </tr>
+
+        <tr>
+          <th colspan="2">Total ITC Available [Note 7]</th>
+          <th>67,812.50</th>
+          <th>62,812.50</th>
+          <th>55,732</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Computation of Net GST Payable</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>CGST (₹)</th>
+          <th>SGST (₹)</th>
+          <th>IGST (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Intra-State supply</td>
+          <td>78,750</td>
+          <td>78,750</td>
+          <td>-</td>
+        </tr>
+
+        <tr>
+          <td>Inter-State supply</td>
+          <td>-</td>
+          <td>-</td>
+          <td>67,500</td>
+        </tr>
+
+        <tr>
+          <td>Exports under LUT [Note 6]</td>
+          <td>Nil</td>
+          <td>Nil</td>
+          <td>Nil</td>
+        </tr>
+
+        <tr>
+          <th>Total Output Tax Liability</th>
+          <th>78,750</th>
+          <th>78,750</th>
+          <th>67,500</th>
+        </tr>
+
+        <tr>
+          <td>Less: ITC</td>
+          <td>67,812.50</td>
+          <td>62,812.50</td>
+          <td>55,732</td>
+        </tr>
+
+        <tr>
+          <th>Net GST Payable (Rounded Off)</th>
+          <th>10,938</th>
+          <th>15,938</th>
+          <th>11,768</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Notes</h3>
+
+    <ol>
+      <li>
+        <strong>Raw Materials</strong>
+        <ol type="i">
+          <li>Credit of input tax (CGST & SGST/IGST) paid on raw materials used in the course or furtherance of business is available.</li>
+          <li>Tax on procurements made by a registered person from an unregistered supplier is levied only in case of notified goods and services. Therefore, since no GST is paid on such raw material purchased, there does not arise any question of ITC on such raw material.</li>
+          <li>IGST paid on imported goods qualifies as input tax. Therefore, credit of IGST paid on imported raw materials used in the course or furtherance of business is available.</li>
+        </ol>
+      </li>
+
+      <li>ITC on consumables, being inputs used in the course or furtherance of business, is available. However, since levy of GST on high speed diesel has been deferred till a date to be notified by Government, there cannot be any ITC of the same.</li>
+
+      <li>ITC on monthly rent is available as the said service is used in the course or furtherance of business.</li>
+
+      <li>Services by employees to employer in the course of or in relation to employment is not a supply in terms of section 7 read with Schedule III to the CGST Act, 2017. Therefore, since no GST is paid on such services, there cannot be any ITC on such services.</li>
+
+      <li>ITC on life insurance service is available if the same is obligatory for an employer to provide to its employees under any law for the time being in force.</li>
+
+      <li>Export of goods is a zero-rated supply. A zero-rated supply under LUT/Bond is made without payment of IGST.</li>
+
+      <li>Since export of goods is a zero-rated supply, there will be no apportionment of ITC and full credit will be available.</li>
+    </ol>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_2a",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Place of Supply of Services",
+    "Levy and Collection of GST",
+    "Exemptions"
+  ],
+  placement: 2,
+  marks: 10,
+  question_html: `
+    <p>Revive Pvt. Ltd. owned by Amit Malik - a famous classical singer - wishes to organise an <strong>'Amit Malik Music Concert'</strong> in Gurugram (Haryana).</p>
+
+    <p>Revive Pvt. Ltd. (registered in Ludhiana, Punjab) enters into a contract with an event management company, <strong>Sajal (P) Ltd.</strong> (registered in Delhi) for organising the said music concert at an agreed consideration of <strong>₹10,00,000</strong>.</p>
+
+    <p>Sajal (P) Ltd. books the lawns of <strong>Hotel OPX, Gurugram</strong> (registered in Haryana) for holding the music concert, for a lump sum consideration of <strong>₹4,00,000</strong>.</p>
+
+    <p>Revive Pvt. Ltd. fixes the entry fee to the music concert at <strong>₹5,000</strong>. <strong>400 tickets</strong> for 'Amit Malik Music Concert' are sold.</p>
+
+    <p><strong>You are required to determine the gross GST liability in respect of the supply(ies) involved in the given scenario.</strong></p>
+
+    <p><strong>Will your answer be different if the price per ticket is fixed at ₹450?</strong></p>
+
+    <p><strong>Note:</strong> Rate of CGST and SGST is 9% each and IGST is 18%. All the amounts given above are exclusive of taxes, wherever applicable.</p>
+  `,
+  solution_html: `
+    <p>In the given situation, <strong>three supplies</strong> are involved:</p>
+
+    <ol type="i">
+      <li>Services provided by <strong>Revive Pvt. Ltd.</strong> to audiences by way of <strong>admission to music concert.</strong></li>
+
+      <li>Services provided by <strong>Sajal (P) Ltd.</strong> to Revive Pvt. Ltd. by way of <strong>organising the music concert.</strong></li>
+
+      <li>Services provided by <strong>Hotel OPX</strong> to Sajal (P) Ltd. by way of <strong>accommodation in the Hotel lawns for organising the music concert.</strong></li>
+    </ol>
+
+    <p>The CGST and SGST or IGST liability in respect of each of the above supplies is determined as under:</p>
+
+    <h3>(i) Services provided by Revive Pvt. Ltd. to audiences by way of admission to music concert</h3>
+
+    <p>The place of supply of services provided by way of admission to, inter alia, a cultural event shall be the place where the event is actually held.</p>
+
+    <p>Therefore, the place of supply of services supplied by <strong>Revive Pvt. Ltd.</strong> (Ludhiana, Punjab) to audiences by way of admission to the music concert is the location of the Hotel OPX, i.e., <strong>Gurugram, Haryana</strong>.</p>
+
+    <p>Since the location of the supplier (Ludhiana, Punjab) and the place of supply (Gurugram, Haryana) are in different States, <strong>IGST</strong> will be leviable.</p>
+
+    <p>Therefore, IGST leviable will be computed as follows:</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>Consideration for supply (400 tickets × ₹5,000 per ticket)</td>
+          <td><strong>₹20,00,000</strong></td>
+        </tr>
+        <tr>
+          <td>IGST @ 18% on value of supply</td>
+          <td><strong>₹3,60,000</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>(ii) Services provided by Sajal (P) Ltd. to Revive Pvt. Ltd. by way of organising the music concert</h3>
+
+    <p>The place of supply of services provided by way of organization of, inter alia, a cultural event to a registered person is the location of such person.</p>
+
+    <p>Therefore, the place of supply of services supplied by <strong>Sajal (P) Ltd.</strong> (Delhi) to <strong>Revive Pvt. Ltd.</strong> (Ludhiana, Punjab) by way of organising the music concert is the location of the registered person, i.e., <strong>Ludhiana (Punjab)</strong>.</p>
+
+    <p>Since the location of the supplier (Delhi) and the place of supply (Ludhiana, Punjab) are in different States, <strong>IGST</strong> will be leviable.</p>
+
+    <p>Therefore, IGST leviable will be computed as follows:</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>Consideration for supply</td>
+          <td><strong>₹10,00,000</strong></td>
+        </tr>
+        <tr>
+          <td>IGST @ 18% on value of supply</td>
+          <td><strong>₹1,80,000</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>(iii) Services provided by Hotel OPX to Sajal (P) Ltd. by way of accommodation in the Hotel lawns for organising the music concert</h3>
+
+    <p>The place of supply of services, by way of accommodation in any immovable property for organizing, inter alia, any cultural function shall be the location at which the immovable property is located.</p>
+
+    <p>Therefore, the place of supply of services supplied by <strong>Hotel OPX</strong> (Gurugram, Haryana) to <strong>Sajal (P) Ltd.</strong> (Delhi) by way of accommodation in Hotel lawns for organising the music concert shall be the location of the Hotel OPX, i.e., <strong>Gurugram, Haryana</strong>.</p>
+
+    <p>Since the location of the supplier (Gurugram, Haryana) and the place of supply (Gurugram, Haryana) are in the same State, <strong>CGST and SGST</strong> will be leviable.</p>
+
+    <p>Therefore, CGST and SGST leviable will be computed as follows:</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>Consideration for supply</td>
+          <td><strong>₹4,00,000</strong></td>
+        </tr>
+        <tr>
+          <td>CGST @ 9% on value of supply</td>
+          <td><strong>₹36,000</strong></td>
+        </tr>
+        <tr>
+          <td>SGST @ 9% on value of supply</td>
+          <td><strong>₹36,000</strong></td>
+        </tr>
+      </tbody>
+    </table>
+        <h3>Case where the price per ticket is fixed at ₹450</h3>
+
+    <p>If the price for the entry ticket is fixed at <strong>₹450</strong>, answer will change in respect of supply of service provided by way of admission to music concert, as mentioned in point <strong>(i)</strong> above.</p>
+
+    <p>There will be <strong>no IGST liability</strong> if the consideration for the ticket is <strong>₹450</strong> as the inter-State services by way of right to admission to, inter alia, musical performance are exempt from IGST, if the consideration for right to admission to the event is <strong>not more than ₹500 per person</strong>.</p>
+
+    <p>However, there will be <strong>no change</strong> in the answer in respect of supplies mentioned in points <strong>(ii)</strong> and <strong>(iii)</strong> above.</p>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_2b",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Customs Valuation",
+    "Computed Value Method"
+  ],
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p>Mr. T imported certain goods from a related person Mr. R of US and transaction value has been rejected. Rules 4 and 5 of the Customs Valuation (Determination of Value of Imported Goods) Rules, 2007 are found inapplicable as no similar/identical goods are imported in India.</p>
+
+    <p>Mr. T furnishes cost related data of imports and requests customs authorities to determine value accordingly as per <strong>rule 8</strong> of the Customs Valuation (Determination of Value of Imported Goods) Rules, 2007.</p>
+
+    <p>The relevant data are:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cost of materials incurred by Mr. R</td>
+          <td>$ 2,000</td>
+        </tr>
+        <tr>
+          <td>Fabrication charges incurred by Mr. R</td>
+          <td>$ 1,000</td>
+        </tr>
+        <tr>
+          <td>Other chargeable expenses incurred by Mr. R</td>
+          <td>$ 400</td>
+        </tr>
+        <tr>
+          <td>Other indirect costs incurred by Mr. R</td>
+          <td>$ 250</td>
+        </tr>
+        <tr>
+          <td>Freight from Mr. R's factory to US port</td>
+          <td>$ 250</td>
+        </tr>
+        <tr>
+          <td>Loading charges at US port</td>
+          <td>$ 100</td>
+        </tr>
+        <tr>
+          <td>Normal net profit margin of Mr. R</td>
+          <td>20% of FOB</td>
+        </tr>
+        <tr>
+          <td>Air freight from US port to Indian port</td>
+          <td>$ 1,500</td>
+        </tr>
+        <tr>
+          <td>Insurance from US port to Indian port</td>
+          <td>$ 50</td>
+        </tr>
+        <tr>
+          <td>Exchange rate</td>
+          <td>₹70 per $</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The customs authorities are of the opinion that since value as per rule 7 of the Customs Valuation (Determination of Value of Imported Goods) Rules, 2007 can be determined at <strong>₹4,00,000</strong>, there is no need to apply rule 8 of the Customs Valuation (Determination of Value of Imported Goods) Rules, 2007.</p>
+
+    <p><strong>Can the request of Mr. T be legally acceptable? If so, compute the assessable value under the Customs Act, 1962.</strong></p>
+  `,
+  solution_html: `
+    <p>The value of the imported goods is determined under <strong>rule 8</strong> of the Customs Valuation (Determination of Value of Imported Goods) Rules, 2007 (hereinafter referred to as <strong>Import Valuation Rules</strong>) if the same cannot be determined under the earlier rules.</p>
+
+    <p>However, the order of application of <strong>rules 7 and 8</strong> can be reversed <strong>at the request of the importer and with the approval of the proper officer.</strong></p>
+
+    <p>Thus, the request of <strong>Mr. T</strong> for determination of value under <strong>rule 8</strong> is legally acceptable, if the same is also approved by the proper officer.</p>
+
+    <p>Assuming that the request of Mr. T has been approved by the proper officer, the assessable value of the imported goods under rule 8 will be the sum of:</p>
+
+    <ol type="a">
+      <li>the cost of materials and fabrication or other processing;</li>
+      <li>an amount for profit and general expenses; and</li>
+      <li>the cost or value of all other expenses under rule 10(2) of the said Rules.</li>
+    </ol>
+
+    <h3>Computation of Assessable Value</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount ($)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cost of materials</td>
+          <td>2,000</td>
+        </tr>
+
+        <tr>
+          <td>Add: Fabrication charges</td>
+          <td>1,000</td>
+        </tr>
+
+        <tr>
+          <td>Other chargeable expenses</td>
+          <td>400</td>
+        </tr>
+
+        <tr>
+          <td>Other indirect costs</td>
+          <td>250</td>
+        </tr>
+
+        <tr>
+          <td><strong>Cost of the goods at Mr. R's factory</strong></td>
+          <td><strong>3,650</strong></td>
+        </tr>
+
+        <tr>
+          <td>
+            Add: Net profit margin @ 20% of FOB, i.e. 25% of total cost<br><br>
+
+            Total cost till US port = Cost of the goods at factory + Freight from factory to US port + Loading charges at US port<br>
+            = $4,000 [$3,650 + $250 + $100]<br><br>
+
+            FOB value = Total cost till port + Profit<br>
+            = $5,000 ($4,000 + $1,000)
+          </td>
+          <td>1,000</td>
+        </tr>
+
+        <tr>
+          <td>
+            Add: Freight & loading/unloading charges<br><br>
+
+            <em>In case of import by air, the cost of transport, loading, unloading and handling charges associated with the delivery of the imported goods to the place of importation are restricted to <strong>20% of FOB value</strong>.</em>
+          </td>
+          <td>1,000</td>
+        </tr>
+
+        <tr>
+          <td>Insurance charges</td>
+          <td>50</td>
+        </tr>
+
+        <tr>
+          <th>Assessable Value</th>
+          <th>5,700</th>
+        </tr>
+
+        <tr>
+          <td>Assessable Value in Indian Rupees (Exchange rate ₹70 per $)</td>
+          <td><strong>₹3,99,000</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_3a",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Input Service Distributor (ISD)"
+  ],
+  placement: 3,
+  marks: 5,
+  question_html: `
+    <p>Moti Weavers, at Pune, Maharashtra is a registered <strong>Input Service Distributor (ISD)</strong> and intends to distribute ITC for the month of March. The following are the details available for such distribution:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Branch</th>
+          <th>Turnover of the last quarter (₹)</th>
+          <th>ITC specifically attributable to the branch (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ganganagar Branch (Rajasthan)</td>
+          <td>10,00,000</td>
+          <td>
+            IGST – ₹12,000<br>
+            CGST – ₹3,000<br>
+            SGST – ₹3,000
+          </td>
+        </tr>
+
+        <tr>
+          <td>Madhugiri Branch (Karnataka)</td>
+          <td>5,00,000</td>
+          <td>Nil</td>
+        </tr>
+
+        <tr>
+          <td>Kosala Branch (Uttar Pradesh)</td>
+          <td>15,00,000</td>
+          <td>Nil</td>
+        </tr>
+
+        <tr>
+          <td>Mumbai Branch (Maharashtra)</td>
+          <td>20,00,000</td>
+          <td>
+            IGST – ₹1,50,000<br>
+            CGST – ₹15,000<br>
+            SGST – ₹15,000
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>ITC available on input services used commonly for all branches is as under:</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>CGST</td>
+          <td>₹60,000</td>
+        </tr>
+        <tr>
+          <td>SGST</td>
+          <td>₹60,000</td>
+        </tr>
+        <tr>
+          <td>IGST</td>
+          <td>₹1,20,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>ITC (IGST) of <strong>₹10,000</strong> pertaining to March (last year) was inadvertently not distributed. Whether the same can be considered for distribution in March this year?</p>
+
+    <p>Madhugiri, Karnataka branch uses input services to manufacture exempted products.</p>
+
+    <p>Turnover excludes duties & taxes payable to Central and State Government.</p>
+
+    <p><strong>Determine the manner of input tax distribution.</strong></p>
+  `,
+  solution_html: `
+    <h3>Distribution of Input Tax Credit</h3>
+
+    <ol type="i">
+      <li>
+        <p>Total GST credit (CGST + SGST + IGST) of <strong>₹18,000</strong> specifically attributable to <strong>Ganganagar Branch, Rajasthan</strong> will be distributed as <strong>IGST credit of ₹18,000 only</strong> to Ganganagar Branch, Rajasthan <strong>[Since recipient and Input Service Distributor (ISD) are located in different States.]</strong></p>
+      </li>
+
+      <li>
+        <p>IGST credit of <strong>₹1,50,000</strong>, CGST credit of <strong>₹15,000</strong> and SGST credit of <strong>₹15,000</strong> specifically attributable to <strong>Mumbai Branch, Maharashtra</strong> will be distributed as:</p>
+
+        <ul>
+          <li>IGST credit – <strong>₹1,50,000</strong></li>
+          <li>CGST credit – <strong>₹15,000</strong></li>
+          <li>SGST credit – <strong>₹15,000</strong></li>
+        </ul>
+
+        <p>only to Mumbai Branch, Maharashtra <strong>[Since recipient is located in the same State in which ISD is located.]</strong></p>
+      </li>
+
+      <li>
+        <p>CGST credit of <strong>₹60,000</strong>, SGST credit of <strong>₹60,000</strong> and IGST credit of <strong>₹1,20,000</strong> have to be distributed among the three branches and Mumbai Branch, Maharashtra in proportion of their turnover of the last quarter.</p>
+
+        <ul>
+          <li>
+            <strong>Ganganagar Branch, Rajasthan</strong> will get:
+            <br><strong>₹48,000</strong>
+            [₹2,40,000 × (₹10,00,000 ÷ ₹50,00,000)]
+            as <strong>IGST credit</strong>.
+          </li>
+
+          <li>
+            <strong>Madhugiri Branch, Karnataka</strong> will get:
+            <br><strong>₹24,000</strong>
+            [₹2,40,000 × (₹5,00,000 ÷ ₹50,00,000)]
+            as <strong>IGST credit</strong>.
+          </li>
+
+          <li>
+            The credit attributable to a recipient is distributed even if such recipient is making exempt supplies.
+          </li>
+
+          <li>
+            <strong>Kosala Branch, Uttar Pradesh</strong> will get:
+            <br><strong>₹72,000</strong>
+            [₹2,40,000 × (₹15,00,000 ÷ ₹50,00,000)]
+            as <strong>IGST credit</strong>.
+          </li>
+
+          <li>
+            <strong>Mumbai Branch, Maharashtra</strong> will get:
+            <br><br>
+            CGST credit = <strong>₹24,000</strong>
+            [₹60,000 × (₹20,00,000 ÷ ₹50,00,000)]
+            <br><br>
+            SGST credit = <strong>₹24,000</strong>
+            [₹60,000 × (₹20,00,000 ÷ ₹50,00,000)]
+            <br><br>
+            IGST credit = <strong>₹48,000</strong>
+            [₹1,20,000 × (₹20,00,000 ÷ ₹50,00,000)]
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p>ITC of <strong>₹10,000</strong> pertaining to March (last year) <strong>cannot be distributed</strong> in March of the current year since <strong>ITC available for distribution in a month is required to be distributed in the same month.</strong></p>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_3b",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Time of Supply",
+    "Composite and Mixed Supply",
+    "Classification of Supply"
+  ],
+  placement: 3,
+  marks: 5,
+  question_html: `
+    <p>MNO Ltd., a publishing and printing house registered in Maharashtra, is engaged in supply of books, letter cards, envelopes, guides and reference materials.</p>
+
+    <p>The following information is provided by the company:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>Printing of Books</th>
+          <th>Printing of Envelopes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Date of entering into printing contract</td>
+          <td>16th March</td>
+          <td>20th March</td>
+        </tr>
+        <tr>
+          <td>Date of receipt of advance</td>
+          <td>20th March</td>
+          <td>25th March</td>
+        </tr>
+        <tr>
+          <td>Date of completion of printing</td>
+          <td>10th April</td>
+          <td>5th April</td>
+        </tr>
+        <tr>
+          <td>Date of issue of invoice</td>
+          <td>15th May</td>
+          <td>10th April</td>
+        </tr>
+        <tr>
+          <td>Date of removal of books and envelopes to buyer</td>
+          <td>13th May</td>
+          <td>7th April</td>
+        </tr>
+        <tr>
+          <td>Date of receipt of balance payment</td>
+          <td>31st May</td>
+          <td>30th April</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>In respect of printing of books, content was supplied by the author.</p>
+
+    <p>For printing of envelopes, the design and logo were supplied by the buyer.</p>
+
+    <p><strong>Determine the time of supply(ies) for the purpose of payment of tax.</strong></p>
+  `,
+  solution_html: `
+    <p>It has been clarified vide a Circular that in case of printing of books where only content is supplied by the person who owns the usage rights to the intangible inputs while the physical inputs including paper used for printing belong to the printer, supply of printing <strong>[of the content supplied by the recipient of supply]</strong> is the principal supply and therefore, such supplies would constitute <strong>supply of service</strong>.</p>
+
+    <p>In case of supply of printed envelopes by the printer using its physical inputs including paper to print the design, logo etc. supplied by the recipient of goods, predominant supply is <strong>supply of goods</strong> and the supply of printing of the content <strong>[supplied by the recipient of supply]</strong> is ancillary to the principal supply of goods and therefore, such supplies would constitute <strong>supply of goods</strong>.</p>
+
+    <p>Accordingly, the time of supply of books and envelopes will be governed by <strong>sections 13 and 12</strong> of the CGST Act, 2017 respectively.</p>
+
+    <h3>Time of Supply of Envelopes (Goods)</h3>
+
+    <p>The time of supply of goods is the earlier of the date of issue of invoice/last date on which the invoice is required to be issued or date of receipt of payment.</p>
+
+    <p>However, Notification No. 66/2017-CT dated 15.11.2017 specifies that a registered person (excluding composition supplier) has to pay GST on the outward supply of goods at the time of supply as specified in section 12(2)(a) of the CGST Act, 2017, i.e. date of issue of invoice or the last date on which invoice ought to have been issued in terms of section 31 of the CGST Act, 2017.</p>
+
+    <p>The invoice for supply of goods should be issued before or at the time of removal of goods for supply to the recipient, where supply involves movement of goods.</p>
+
+    <p>Therefore, in the given case, the last date by which invoice ought to have been issued is <strong>7th April</strong>.</p>
+
+    <p>Thus, the <strong>time of supply of envelopes</strong> for the purpose of payment of tax is <strong>7th April</strong>.</p>
+
+    <h3>Time of Supply of Books (Services)</h3>
+
+    <p>The time of supply of services is the earlier of the dates arrived at by methods (A) and (B), as follows:</p>
+
+    <p><strong>(A)</strong> Date of invoice or date of receipt of payment (to the extent the invoice or payment covers the supply of services), whichever is earlier, if the invoice is issued within the prescribed time.</p>
+
+    <p><strong>(B)</strong> Date of provision of service or date of receipt of payment (to the extent the payment covers the supply of services), whichever is earlier, if the invoice is not issued within the prescribed time.</p>
+
+    <p>Since in the given case, invoice for the services is <strong>not issued within 30 days</strong>, the time of supply for the advance received is the <strong>date of receipt of payment, i.e. 20th March</strong>, being earlier than the date of provision of service.</p>
+
+    <p>However, the time of supply for the balance payment is the <strong>date of provision of service, i.e. 10th April</strong>, being earlier than the date of receipt of balance payment.</p>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_3c",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Customs Exemptions",
+    "Judicial Pronouncements"
+  ],
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p>M/s Clear Energy Ltd. is engaged in oil exploration and has imported software containing seismic data.</p>
+
+    <p>The importer is entitled to exemption from customs duty subject to the condition that an <strong>"Essentiality Certificate"</strong> granted by the Director General of Hydrocarbons is produced at the time of importation of the goods.</p>
+
+    <p>Though the importer applied for the certificate within the statutory time limit prescribed for the same, the certificate was not made available to the importer within a reasonable time by the Director General of Hydrocarbons.</p>
+
+    <p>The customs department rejected the importer's claim for exemption.</p>
+
+    <p><strong>Examine briefly whether the department's action is sustainable in law.</strong></p>
+  `,
+  solution_html: `
+    <p>This issue has been addressed by the <strong>Supreme Court</strong> in the case of <strong>Commissioner of Customs v. Tullow India Operations Ltd. (2005) 189 ELT 401 (SC)</strong>.</p>
+
+    <p>The Apex Court has observed that if a condition is not within the power and control of the importer and depends upon the acts of public functionaries, non-compliance of such a condition, subject to just exceptions, cannot be held to be a condition precedent which would disable the importer from obtaining the benefit for all times to come.</p>
+
+    <p>In the given case also, the certificate has not been granted within a reasonable time.</p>
+
+    <p>Therefore, in view of the above-mentioned judgment, the importer <strong>M/s Clear Energy Ltd.</strong> cannot be blamed for the lapse by the authorities.</p>
+
+    <p>The <strong>Directorate General of Hydrocarbons</strong> is under the Ministry of Petroleum and Natural Gas and such a public functionary is supposed to grant the Essentiality Certificate within a reasonable time so as to enable the importer to avail the benefits under the notification.</p>
+
+    <p><strong>Hence, the action of the Customs Department in rejecting the exemption claim is not sustainable in law.</strong></p>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_4a",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "OIDAR Services",
+    "Import of Services",
+    "Non-Taxable Online Recipient",
+    "Levy and Collection of IGST"
+  ],
+  placement: 4,
+  marks: 5,
+  question_html: `
+    <p>Mr. Goldy, a Chartered Accountant, being a partner in GST registered firm orders a gaming software for his son Mr. Tony from a company located in USA. He makes the payment for the same from his personal bank account.</p>
+
+    <p><strong>Examine whether the transaction will be liable to GST. If yes, in whose hands the tax liability will arise?</strong></p>
+  `,
+  solution_html: `
+    <p>The supply of gaming software is in the nature of <strong>OIDAR service</strong>.</p>
+
+    <p>The transaction is for personal consumption of <strong>Mr. Goldy</strong> and the payment has also been made from the <strong>personal bank account</strong> of Mr. Goldy and not from the bank account of his GST registered firm.</p>
+
+    <p>Therefore, being an <strong>unregistered person</strong> receiving OIDAR service in taxable territory, <strong>Mr. Goldy is a non-taxable online recipient.</strong></p>
+
+    <p>Services received from a provider of service located in a non-taxable territory by an individual in relation to any purpose other than commerce, industry or any other business or profession are <strong>exempt from IGST</strong>.</p>
+
+    <p>However, such exemption is <strong>not available in case of OIDAR services.</strong></p>
+
+    <p>Therefore, being an <strong>OIDAR service</strong> provided by a supplier located outside India and received by a <strong>non-taxable online recipient</strong>, the same is <strong>liable to GST.</strong></p>
+
+    <p>Tax on service supplied by any person located in a non-taxable territory to any person <strong>other than a non-taxable online recipient</strong> is payable by the recipient of such service under <strong>reverse charge</strong>.</p>
+
+    <p>Therefore, tax on OIDAR services provided by the company located in USA to <strong>Mr. Goldy</strong>, a <strong>non-taxable online recipient</strong>, will be payable by <strong>such company under forward charge.</strong></p>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_4b",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Job Work",
+    "Schedule II",
+    "Value of Supply",
+    "Supply of Services",
+    "Waste and Scrap"
+  ],
+  placement: 4,
+  marks: 5,
+  question_html: `
+    <p>Anuj Pvt. Ltd., a registered manufacturer, sent steel cabinets worth <strong>₹50 lakh</strong> under a delivery challan to <strong>M/s Siddhi Tools</strong>, a registered job worker, for job work on <strong>28th January</strong>.</p>
+
+    <p>The scope of job work included mounting the steel cabinets on a metal frame and sending the mounted panels back to Anuj Pvt. Ltd. The metal frame is to be supplied by M/s Siddhi Tools.</p>
+
+    <p>M/s Siddhi Tools has agreed to a consideration of <strong>₹5 lakh</strong> for the entire mounting activity including the supply of metal frame.</p>
+
+    <p>During the course of mounting activity, metal waste is generated which is sold by M/s Siddhi Tools for <strong>₹45,000</strong>.</p>
+
+    <p>M/s Siddhi Tools sent the steel cabinets mounted on the metal frame to Anuj Pvt. Ltd. on <strong>3rd December</strong> in the same financial year.</p>
+
+    <p>Assuming GST rate for metal frame as <strong>28%</strong>, for metal waste as <strong>12%</strong> and standard rate for services as <strong>18%</strong>, you are required to compute the GST liability of <strong>M/s Siddhi Tools</strong>. Also, give reason(s) for inclusion or exclusion of the value of cabinets in the job charges for the purpose of payment of GST by M/s Siddhi Tools.</p>
+  `,
+  solution_html: `
+    <p>As per <strong>para 3 of Schedule II to the CGST Act, 2017</strong>, any treatment or process which is applied to another person's goods is a <strong>supply of services</strong> and accordingly is subject to GST rate applicable for services.</p>
+
+    <p>In the given case, <strong>M/s Siddhi Tools (job worker)</strong> undertakes the process of mounting the steel cabinets of <strong>Anuj Pvt. Ltd. (principal)</strong> on metal frames.</p>
+
+    <p>In view of para 3 of Schedule II to the CGST Act, 2017 cited above, the mounting activity classifies as a <strong>service</strong> even though the metal frames are also supplied as a part of the mounting activity.</p>
+
+    <p>Accordingly, the job charges will be chargeable to GST at a rate of <strong>18%</strong>, which is the applicable rate for services.</p>
+
+    <p>Further, the value of steel cabinets will <strong>not be included</strong> in the value of taxable supply made by <strong>M/s Siddhi Tools</strong> as the supply of cabinets does not fall within the scope of supply to be made by M/s Siddhi Tools. M/s Siddhi Tools is only required to mount the steel cabinets, which are to be supplied by <strong>Anuj Pvt. Ltd.</strong>, on metal frames, which are to be supplied by it.</p>
+
+    <p>As regards sale of waste generated during the job work, since <strong>M/s Siddhi Tools</strong> is registered, the tax leviable on the supply will have to be paid by it. Such supply will be treated as <strong>supply of goods</strong> and subject to GST rate applicable for metal waste.</p>
+
+    <h3>Computation of GST Liability of M/s Siddhi Tools</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Job charges</td>
+          <td>5,00,000</td>
+        </tr>
+        <tr>
+          <td>GST @ 18% (A)</td>
+          <td>90,000</td>
+        </tr>
+        <tr>
+          <td>Sale of metal waste</td>
+          <td>45,000</td>
+        </tr>
+        <tr>
+          <td>GST @ 12% (B)</td>
+          <td>5,400</td>
+        </tr>
+        <tr>
+          <th>Total GST payable (A + B)</th>
+          <th>95,400</th>
+        </tr>
+      </tbody>
+    </table>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_4c",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Customs",
+    "Baggage Rules, 2016",
+    "Customs Duty on Baggage"
+  ],
+  placement: 4,
+  marks: 4,
+  question_html: `
+    <p>Mr. Oliver of foreign origin has come on travel visa, to tour in India. He carries with him, as part of baggage, the following:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Value (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Travel Souvenir</td>
+          <td>85,000</td>
+        </tr>
+        <tr>
+          <td>Other articles carried on in person</td>
+          <td>1,50,000</td>
+        </tr>
+        <tr>
+          <td>120 sticks of cigarettes of ₹100 each</td>
+          <td>12,000</td>
+        </tr>
+        <tr>
+          <td>Fire arm with 100 cartridges (value includes the value of cartridges at @ ₹500 per cartridge)</td>
+          <td>1,00,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Determine customs duty payable, if the effective rate of customs duty is 38.50% inclusive of social welfare surcharge. Ignore Agriculture Infrastructure and Development Cess.</strong></p>
+  `,
+  solution_html: `
+    <p>As per the <strong>Baggage Rules, 2016</strong>, tourist of foreign origin, excluding infant, is allowed duty free clearance of:</p>
+
+    <ol type="i">
+      <li><strong>Travel souvenirs</strong>; and</li>
+      <li><strong>Articles up to the value of ₹15,000</strong> (excluding inter alia fire arms, cartridges of fire arms exceeding 50 and cigarettes exceeding 100 sticks), if carried on in person.</li>
+    </ol>
+
+    <h3>Computation of Customs Duty Payable</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Travel souvenir</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>Articles carried on in person</td>
+          <td>1,50,000</td>
+        </tr>
+        <tr>
+          <td>Cigarettes [100 sticks can be accommodated in General Free Allowance (GFA)]</td>
+          <td>10,000</td>
+        </tr>
+        <tr>
+          <td>Fire arm cartridges [50 cartridges can be accommodated in GFA]</td>
+          <td>25,000</td>
+        </tr>
+        <tr>
+          <th>Baggage that can be accommodated in GFA</th>
+          <th>1,85,000</th>
+        </tr>
+        <tr>
+          <td>Less: General Free Allowance (GFA)</td>
+          <td>15,000</td>
+        </tr>
+        <tr>
+          <th>Baggage on which duty is payable</th>
+          <th>1,70,000</th>
+        </tr>
+        <tr>
+          <td>Duty payable @ 38.50% (including 10% Social Welfare Surcharge)</td>
+          <td><strong>65,450</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Note:</strong> Fire arms, cartridges of firearms exceeding 50 and cigarettes exceeding 100 sticks are not chargeable to rate applicable to baggage. These items are charged @ <strong>100%</strong> applicable to baggage under <strong>Heading 9803 of the Customs Tariff.</strong></p>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_5a",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Demand and Recovery",
+    "Penalty",
+    "Section 73",
+    "Self-assessed Tax"
+  ],
+  placement: 5,
+  marks: 5,
+  question_html: `
+    <p>Henry & Co. self-assessed its CGST liability as <strong>₹90,000</strong> for the month of April, but failed to make the payment.</p>
+
+    <p>Subsequently the Department initiated penal proceedings against Henry & Co. for recovery of penalty under <strong>section 73 of the CGST Act, 2017</strong> for failure to pay GST and issued show cause notice on <strong>10th August</strong> which was received by Henry & Co. on <strong>14th August</strong>.</p>
+
+    <p>Henry & Co. deposited the tax along with interest on <strong>25th August</strong> and informed the department on the same day.</p>
+
+    <p>Department is contending that he is liable to pay a penalty of <strong>₹45,000</strong> (i.e. <strong>50% of ₹90,000</strong>) under the CGST Act, 2017.</p>
+
+    <p><strong>Examine the correctness of the stand taken by the Department with reference to the provisions of the CGST Act, 2017. Explain the relevant provisions in brief.</strong></p>
+  `,
+  solution_html: `
+    <p>Due date for payment of tax for the month of April is <strong>20th May</strong>.</p>
+
+    <p>Where self-assessed tax is not paid within <strong>30 days from the due date</strong> of payment of such tax, penalty equivalent to <strong>10% of tax or ₹10,000, whichever is higher</strong>, is payable.</p>
+
+    <p>Thus, option to pay tax within <strong>30 days of issuance of show cause notice</strong> to avoid penalty is <strong>not available</strong> in case of self-assessed tax.</p>
+
+    <p>Since in the given case, Henry & Co. has not paid the self-assessed tax within <strong>30 days of the due date [i.e. 20th May]</strong>, penalty equivalent to:</p>
+
+    <ol type="i">
+      <li><strong>10% of tax</strong>, i.e. <strong>₹9,000</strong> [10% of ₹90,000], or</li>
+      <li><strong>₹10,000</strong>,</li>
+    </ol>
+
+    <p><strong>whichever is higher</strong>, is payable by him under the <strong>CGST Act, 2017</strong>.</p>
+
+    <p>Equivalent amount of penalty is payable under the <strong>SGST/UTGST Act, 2017</strong>.</p>
+
+    <p>Hence, the stand taken by the Department that penalty will be levied on <strong>Henry & Co.</strong> is <strong>correct</strong>, but the amount of penalty of <strong>₹45,000</strong> under the <strong>CGST Act, 2017</strong> is <strong>not correct</strong>.</p>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_5b",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Appeals",
+    "Appellate Tribunal",
+    "Place of Supply",
+    "Supreme Court"
+  ],
+  placement: 5,
+  marks: 5,
+  question_html: `
+    <p>Mr. Raman had filed an appeal before the Appellate Tribunal against an order of the Appellate Authority where the issue involved relates to place of supply. The order of Appellate Tribunal is also in favour of the Department.</p>
+
+    <p>Mr. Raman now wants to file an appeal against the decision of the Appellate Authority as he feels the stand taken by him is correct.</p>
+
+    <p><strong>You are required to advise him suitably with regard to filing of an appeal before the appellate forum higher than the Appellate Tribunal.</strong></p>
+  `,
+  solution_html: `
+    <p>An appeal against orders passed by the <strong>State Benches of the Appellate Tribunal</strong> would lie to the <strong>High Court</strong>, if the High Court is satisfied that such an appeal involves a <strong>substantial question of law</strong>.</p>
+
+    <p>However, an appeal against orders passed by the <strong>Principal Bench of the Appellate Tribunal</strong> would lie to the <strong>Supreme Court</strong> and not to the High Court.</p>
+
+    <p>Only the <strong>Principal Bench of the Appellate Tribunal</strong> can decide appeals where one of the issues involved relates to the <strong>place of supply</strong>.</p>
+
+    <p>Since the issue involved in <strong>Mr. Raman's</strong> case relates to <strong>place of supply</strong>, the appeal in his case would have been decided by the <strong>Principal Bench of the Appellate Tribunal</strong>.</p>
+
+    <p>Thus, <strong>Mr. Raman</strong> will have to file an appeal with the <strong>Supreme Court</strong> and not with the <strong>High Court</strong>.</p>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_5c",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Customs Act, 1962",
+    "Warehousing",
+    "Improper Removal of Goods"
+  ],
+  placement: 5,
+  marks: 4,
+  question_html: `
+    <p><strong>Enumerate the circumstances under which goods are considered to have been removed improperly from a warehouse under the Customs Act, 1962.</strong></p>
+  `,
+  solution_html: `
+    <p>Under the <strong>Customs Act, 1962</strong>, goods shall be considered to have been <strong>removed improperly from a warehouse</strong> in any of the following circumstances:</p>
+
+    <ol type="a">
+      <li>
+        <p>Where any <strong>warehoused goods are removed from a warehouse in contravention of section 71</strong> of the Customs Act, 1962.</p>
+      </li>
+
+      <li>
+        <p>Where any <strong>warehoused goods have not been removed from a warehouse</strong> at the expiration of the period during which such goods are permitted to remain in a warehouse.</p>
+      </li>
+
+      <li>
+        <p>Where any goods in respect of which a <strong>bond has been executed</strong> and which have <strong>not been cleared for home consumption or export</strong> are <strong>not duly accounted for to the satisfaction of the proper officer</strong>.</p>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_6a",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Advance Ruling",
+    "Appeal to Appellate Authority for Advance Ruling (AAAR)",
+    "Sections 100 & 101 of the CGST Act, 2017"
+  ],
+  placement: 6,
+  marks: 6,
+  question_html: `
+    <p><strong>Briefly explain whether an appeal could be filed before the Appellate Authority against order of Authority for Advance Ruling (AAR), with reference to sections 100 and 101 of the CGST Act, 2017.</strong></p>
+  `,
+  solution_html: `
+    <p>Yes, the concerned officer, jurisdictional officer or applicant aggrieved by any advance ruling may appeal to the <strong>Appellate Authority for Advance Ruling (AAAR)</strong> within <strong>30 days</strong> [extendible by another <strong>30 days</strong>] from the date on which such ruling is communicated to him in the prescribed form and manner.</p>
+
+    <p>The <strong>AAAR</strong> must pass an order confirming or modifying the ruling appealed against within a period of <strong>90 days</strong> of the filing of an appeal, after hearing the parties to the appeal.</p>
+
+    <p>If members of the <strong>AAAR</strong> differ on any point referred to in appeal, it shall be deemed that <strong>no advance ruling can be issued</strong> in respect of the question under appeal.</p>
+
+    <p>A copy of the advance ruling pronounced by the <strong>AAAR</strong> is sent to the <strong>applicant, concerned officer, jurisdictional officer and to the Authority</strong>.</p>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_6b",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Anti-profiteering",
+    "Rule 127 of the CGST Rules, 2017"
+  ],
+  placement: 6,
+  marks: 4,
+  question_html: `
+    <p><strong>Elaborate the functions of Anti-profiteering Authority under GST laws? Discuss the relevant provisions.</strong></p>
+  `,
+  solution_html: `
+    <p>The Authority shall discharge the following functions, namely:</p>
+
+    <ol type="i">
+      <li>
+        <p>To determine whether the <strong>reduction in tax rate</strong> or the <strong>benefit of input tax credit</strong> has been passed on by the seller to the buyer (hereinafter collectively referred to as "<strong>benefit</strong>") by reducing the prices.</p>
+      </li>
+
+      <li>
+        <p>To identify the <strong>taxpayer who has not passed on the benefit</strong>.</p>
+      </li>
+
+      <li>
+        <p>To order:</p>
+        <ol type="a">
+          <li>Reduction in prices.</li>
+
+          <li>
+            Return to the recipient, an amount equivalent to the amount not passed on by way of commensurate reduction in prices along with <strong>interest at the rate of 18%</strong> from the date of collection of the higher amount till the date of the return of such amount or recovery of the amount not returned, as the case may be.
+            <br><br>
+            If the eligible person does not claim return of the amount or is not identifiable, the amount must be deposited in the <strong>Consumer Welfare Fund</strong>.
+          </li>
+
+          <li>Imposition of penalty.</li>
+
+          <li>Cancellation of registration.</li>
+        </ol>
+      </li>
+
+      <li>
+        <p>To furnish a <strong>performance report</strong> to the <strong>GST Council</strong> by the <strong>10th of the month succeeding each quarter</strong> [Rule 127 of the CGST Rules, 2017].</p>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_6b_OR",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Service of Notice",
+    "Section 169 of the CGST Act, 2017"
+  ],
+  placement: 6,
+  marks: 4,
+  question_html: `
+    <p><strong>State the various modes of service of a notice, decision, order, summons, or any other communication under the CGST Act, 2017 on the taxable person or any other person to whom it is intended.</strong></p>
+  `,
+  solution_html: `
+    <p>Any decision, order, summons, notice or other communication under the <strong>CGST Act, 2017</strong> and the rules made thereunder can be served by any one of the following methods:</p>
+
+    <ol type="a">
+      <li>
+        <p>Giving/tendering directly including by a courier to the addressee or authorised representative or to any adult member of family residing with the taxable person.</p>
+      </li>
+
+      <li>
+        <p>By registered post/speed post/courier with acknowledgement due at the last known place of business or residence.</p>
+      </li>
+
+      <li>
+        <p>By e-mail to the e-mail address provided at the time of registration or as amended from time to time.</p>
+      </li>
+
+      <li>
+        <p>By making the same available on the common portal.</p>
+      </li>
+
+      <li>
+        <p>By publication in a newspaper circulating in the locality in which the addressee is last known to have resided, carried on business or personally worked for gain.</p>
+      </li>
+
+      <li>
+        <p>If none of the above modes is practicable, then by affixing it at the last known place of business or residence and, if such mode is also not practicable, by affixing a copy thereof on the notice board of the office of the concerned officer or authority.</p>
+      </li>
+    </ol>
+
+    <p><strong>Note:</strong> Any four points may be mentioned.</p>
+  `
+},
+{
+  question_id: "IDT_APR24_MTP_II_6c",
+  source: "ICAI Mock Test Paper Series II - April 2024",
+  chapter_name: [
+    "Foreign Trade Policy",
+    "Advance Authorisation",
+    "Advance Authorisation for Annual Requirements"
+  ],
+  placement: 6,
+  marks: 4,
+  question_html: `
+    <p><strong>State salient aspects of Advance authorisation for annual requirements to exporters.</strong></p>
+  `,
+  solution_html: `
+    <p>The salient aspects of <strong>Advance Authorisation for Annual Requirements</strong> are as follows:</p>
+
+    <ol>
+      <li>
+        <p><strong>Annual Advance Authorisation</strong> would be issued to exporters having past export performance in at least the <strong>preceding two financial years</strong>, to enable them to import the inputs required by them on an annual basis.</p>
+      </li>
+
+      <li>
+        <p>Advance Authorisation for annual requirement shall be issued <strong>only for items notified in the Standard Input Output Norms (SION)</strong> and <strong>not on the basis of ad hoc norms</strong> under self-declared authorisations where SION does not exist.</p>
+      </li>
+
+      <li>
+        <p>Annual Advance Authorisation, in terms of <strong>CIF value of imports</strong>, will be granted up to <strong>300% of the FOB value of physical exports</strong> in the preceding financial year and/or <strong>FOR value of deemed exports</strong> in the preceding financial year, or <strong>₹1 crore, whichever is higher</strong>.</p>
+      </li>
+    </ol>
+  `
 }
 ];
