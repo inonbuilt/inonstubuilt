@@ -566,5 +566,214 @@ const mcqData = [
     }
   ]
 },
+{
+  case_id: "dt_sepmtp24_I_cs1",
+  case_chapter: [
+    "Interest Limitation",
+    "Transfer Pricing",
+    "Secondary Adjustment",
+    "Associated Enterprises",
+    "International Transaction"
+  ],
+  caseText: `
+    <p><strong>Case Scenario I</strong></p>
+
+    <p>On 1.4.2023, Focus Ltd., an Indian company, borrowed ₹ 50 crores @ 9.5% p.a. from Max Inc., a US entity, thereby increasing its total borrowings to ₹ 65 crores. The said loan is guaranteed by Hik Inc., another US entity. The place of effective management of both Max Inc. and Hik Inc. is in the USA. The book value of total assets of Focus Ltd. is ₹ 180 crores.</p>
+
+    <p>Focus Ltd. imported turbo equipment worth ₹ 30 crores from Hik Inc. Import duty of ₹ 4.50 crores on the same was paid by Focus Ltd. The equipment was sold to T Ltd., an unrelated party for ₹ 40 crores. Normal GP margin of Focus Ltd. in similar uncontrolled transaction is 20%.</p>
+
+    <p>Net profit of Focus Ltd. of A.Y. 2024-25 was ₹ 8 crores after debiting interest of ₹ 6 crores (out of which ₹ 1.25 crores interest pertaining to local borrowings), depreciation of ₹ 2.5 crores and income-tax of ₹ 1.5 crores.</p>
+
+    <p><strong>Based on the facts of the above case scenario, choose the most appropriate answer to Q.1 to Q.6 below:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "dt_sepmtp24_I_q1",
+      chapter_name: [
+        "Interest Limitation",
+        "Section 94B"
+      ],
+      question: "What is the amount of interest to be allowed in the computation of total income of Focus Ltd. for A.Y.2024-25, if for A.Y.2023-24 there was an interest expenditure disallowed to the extent of ₹ 4 crores under section 94B?",
+      options: [
+        "₹ 6,65,00,000",
+        "₹ 4,75,00,000",
+        "₹ 6,00,00,000",
+        "₹ 3,65,00,000"
+      ],
+      answer: 0 // (a)
+    },
+    {
+      question_id: "dt_sepmtp24_I_q2",
+      chapter_name: [
+        "Transfer Pricing",
+        "Arm's Length Price"
+      ],
+      question: "The transfer pricing adjustment for the arm's length purchase price to be made in the computation of total income of Focus Ltd. for A.Y.2024-25 would be-",
+      options: [
+        "₹ 3,00,00,000",
+        "₹ 2,50,00,000",
+        "₹ 2,00,00,000",
+        "No adjustment is required, since transfer pricing adjustment cannot result in reduction of income"
+      ],
+      answer: 1 // (b)
+    },
+    {
+      question_id: "dt_sepmtp24_I_q3",
+      chapter_name: [
+        "Transfer Pricing",
+        "Secondary Adjustment"
+      ],
+      question: "If Focus Ltd. repatriated the excess money on 31.03.2025, what will be the interest income that would be added to its total income of A.Y.2025-26, if SBI's one-year marginal cost of lending rate is 11.25% on 1.4.2024 and 10.25% on 1.4.2025? Assume that Focus Ltd. suo motu made the primary adjustment in its books of account and filed its return for A.Y.2024-25 on 30.11.2024.",
+      options: [
+        "₹ 12,01,712",
+        "₹ 12,08,333",
+        "₹ 9,32,363",
+        "₹ 8,49,486"
+      ],
+      answer: 0 // (a)
+    },
+    {
+      question_id: "dt_sepmtp24_I_q4",
+      chapter_name: [
+        "Transfer Pricing",
+        "Secondary Adjustment"
+      ],
+      question: "If Focus Ltd. decides not to repatriate the excess money and instead, pay additional income-tax on the entire excess money, then, what would be the additional income-tax payable?",
+      options: [
+        "₹ 62,89,920",
+        "₹ 52,41,600",
+        "₹ 41,93,280",
+        "₹ 53,87,200"
+      ],
+      answer: 1 // (b)
+    },
+    {
+      question_id: "dt_sepmtp24_I_q5",
+      chapter_name: [
+        "Transfer Pricing",
+        "Secondary Adjustment"
+      ],
+      question: "If Focus Ltd. decides to pay additional income-tax on the entire excess money on 15.03.2025, should interest be calculated and added to its total income of A.Y.2025-26? If so, what is the amount to be added? Assume that SBI one-year marginal cost of lending rate is 11.25% on 1.4.2024 and 10.25% on 1.4.2025.",
+      options: [
+        "No, since it has paid additional income-tax on the entire excess money in the P.Y.2024-25.",
+        "Yes; ₹ 9,70,890",
+        "Yes; ₹ 10,42,808",
+        "Yes; ₹ 8,09,075"
+      ],
+      answer: 2 // (c)
+    },
+    {
+      question_id: "dt_sepmtp24_I_q6",
+      chapter_name: [
+        "Associated Enterprises",
+        "International Transaction"
+      ],
+      question: "In addition to the facts given in the case scenario, assuming that (i) on 23.08.2023, Focus Ltd. has entered into an agreement for sale of turbo equipment with Y Ltd., an Indian company not related to Focus Ltd.; (ii) Y Ltd. had already entered into an agreement on 21.8.2023 for the sale of the same goods to Kite Inc. (unrelated to Y Ltd.), a UK entity whose place of effective management is also in the UK; and (iii) Focus Ltd. holds shares carrying 28% voting power in Kite Inc. With which of the following enterprises would a transaction with Focus Ltd. be considered an international transaction or a deemed international transaction?",
+      options: [
+        "Hik Inc. and Kite Inc.",
+        "Max Inc. and Kite Inc.",
+        "Hik Inc., Kite Inc. and Y Ltd.",
+        "Max Inc., Hik Inc. and Kite Inc."
+      ],
+      answer: 2 // (c)
+    }
+  ]
+},
+{
+  case_id: "dt_sepmtp24_I_cs2",
+  case_chapter: [
+    "Survey",
+    "Powers of Income-tax Authority"
+  ],
+  caseText: `
+    <p><strong>Case Scenario II</strong></p>
+
+    <p>The Assessing Officer surveyed Surabhi & Hotels, which was within his jurisdiction, at 11:30 p.m. on 15.8.2023 for the purpose of obtaining information which may be relevant to the proceedings under the Income-tax Act, 1961. The restaurant is kept open for business every day between 11 a.m. and 12 a.m.</p>
+
+    <p>On 25.8.2023, the Assessing Officer entered Suraj & Hotels, which was also within his jurisdiction, at 9:15 p.m. for the purpose of collecting information which may be useful for the purposes of the Income-tax Act, 1961. This restaurant is kept open for business every day between 7 a.m. and 10:30 p.m.</p>
+
+    <p>In both the above cases, the Assessing Officer impounded and retained in his custody for a period of 13 days (exclusive of 3 holidays), books of account and other documents inspected by him, after recording reasons for doing so. The Assessing Officer, however, did not take prior permission from income-tax authority equivalent to Chief Commissioner or above for doing so.</p>
+
+    <p>The owners of these restaurants claim that the Assessing Officer could not enter the restaurants after sunset and take away with him the books of account kept at the restaurants. The owners also claimed that the Assessing Officer ought to have obtained the prior approval of income-tax authority equivalent to Chief Commissioner or above before entering the restaurants.</p>
+
+    <p><strong>Based on the facts of the above case scenario, choose the most appropriate answer to Q.7 to Q.11 below:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "dt_sepmtp24_I_q7",
+      chapter_name: [
+        "Survey"
+      ],
+      question: "Is the action of the Assessing Officer entering Surabhi & Hotels at 11:30 p.m. valid?",
+      options: [
+        "Not valid, since Assessing Officer entered the restaurant after the sunset.",
+        "Valid, since Assessing Officer entered during the hours at which such place is open for the conduct of business and prior permission of higher authorities is not required to be obtained for survey.",
+        "Not valid, since prior permission of income-tax authority equivalent to Chief Commissioner or above is not obtained by the Assessing Officer though he entered during the hours at which such place is open for the conduct of business.",
+        "Not valid, since Assessing Officer entered after the sunset and prior permission of Chief Commissioner or above was not obtained."
+      ],
+      answer: 2 // (c)
+    },
+    {
+      question_id: "dt_sepmtp24_I_q8",
+      chapter_name: [
+        "Survey",
+        "TDS/TCS Survey"
+      ],
+      question: "Would your answer to Question No. 7 change if the Assessing Officer had surveyed Surabhi & Hotels only for the purpose of verifying whether tax has been deducted/collected at source in accordance with the provisions of the Income-tax Act, 1961?",
+      options: [
+        "The action of Assessing Officer is not valid, since he entered the place after sunset and permission of income-tax authority equivalent to Chief Commissioner or above is not obtained.",
+        "The action of Assessing Officer is valid, since he entered the place during the hours at which such place is open for conduct of business and permission of Chief Commissioner or above authorities not required to be obtained.",
+        "The action of Assessing Officer is not valid, since he has not obtained the permission of Chief Commissioner.",
+        "The action of Assessing Officer is not valid, since he entered the place after 10 p.m."
+      ],
+      answer: 0 // (a)
+    },
+    {
+      question_id: "dt_sepmtp24_I_q9",
+      chapter_name: [
+        "Survey"
+      ],
+      question: "Is the action of the Assessing Officer entering Suraj & Hotels at 9:15 p.m. valid?",
+      options: [
+        "Not valid, since Assessing Officer entered the restaurant after the sunset.",
+        "Valid, since Assessing Officer entered during the hours at which such place is open for the conduct of business and prior permission of higher authorities is not required to be obtained.",
+        "Not valid, since prior permission of Chief Commissioner or above is not obtained by the Assessing Officer though he entered the place during the hours at which such place is open for the conduct of business.",
+        "Not valid, since Assessing Officer entered after the sunset and prior permission of Chief Commissioner or above is not obtained."
+      ],
+      answer: 1 // (b)
+    },
+    {
+      question_id: "dt_sepmtp24_I_q10",
+      chapter_name: [
+        "Survey",
+        "Impounding of Books"
+      ],
+      question: "Is the action of the Assessing Officer in impounding and retaining in his custody books of account and other documents of Surabhi & Hotels, after recording reasons for doing so, valid if prior permission from income-tax authority equivalent to Chief Commissioner or above has been taken only for the purpose of survey and not for retaining books of accounts etc.?",
+      options: [
+        "The action of Assessing Officer is not valid, since prior approval of Chief Commissioner or above authority is not obtained for retaining the impounded books of account etc.",
+        "The action of Assessing Officer is valid.",
+        "The action of Assessing Officer is not valid, since he cannot retain impounded books of accounts for period exceeding 15 days (inclusive of holidays) without prior approval of Chief Commissioner or above authority.",
+        "The action of Assessing Officer is not valid, since he cannot retain impounded books of accounts or other documents for a period exceeding 10 days (exclusive of holidays)."
+      ],
+      answer: 1 // (b)
+    },
+    {
+      question_id: "dt_sepmtp24_I_q11",
+      chapter_name: [
+        "Survey",
+        "TDS/TCS Survey"
+      ],
+      question: "Would your answer to Question No. 10 change if the Assessing Officer had surveyed Surabhi & Hotels only for the purpose of verifying whether tax has been deducted/collected at source in accordance with the provisions of the Income-tax Act, 1961?",
+      options: [
+        "The action of Assessing Officer is not valid, since prior approval of Commissioner or above is not obtained for retaining impounded books of accounts.",
+        "The action of Assessing Officer is valid.",
+        "The action of Assessing Officer is not valid, since he cannot impound or retain books of accounts or other documents.",
+        "The action of Assessing Officer is not valid, since he cannot retain impounded books of accounts or other documents for a period exceeding 10 days."
+      ],
+      answer: 2 // (c)
+    }
+  ]
+},
+
   
 ];

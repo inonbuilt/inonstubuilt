@@ -3125,7 +3125,7 @@ const descriptiveQuestions = [
 
     <p><strong>(i)</strong> During the previous year 2023-24, Mr. Amit purchased scrap of <strong>₹ 65 lakhs</strong> from Mr. Bharat for the purpose of his manufacturing unit. Mr. Amit also furnished a declaration to Mr. Bharat that the scrap shall be utilized for manufacturing process carried on by him and shall not be used for trading purposes. Mr. Amit made the payment of <strong>₹ 49 lakhs</strong> during F.Y. 2023-24 to Mr. Bharat. Assume turnover of both Mr. Amit and Mr. Bharat from the business carried on by them exceeds <strong>₹ 10 crores</strong> in the financial year 2022-23.</p>
 
-    <p><strong>(4 Marks)</strong></p>
+    
 
     <p><strong>(ii)</strong> Cloud Ltd., a real estate development company, entered into a Joint Development Agreement with Mr. Ashok, a resident individual, whereby Mr. Ashok would transfer a plot of land measuring 10 acres for a part consideration of <strong>₹ 6.5 crores</strong> to be paid on the date of agreement, i.e., 1.6.2023. Cloud Ltd. has planned to develop a high-rise apartment complex on such land by 31.3.2026. Upon completion of the project, Cloud Ltd. would transfer 6 flats in the apartment to Mr. Ashok as final settlement. The FMV of the flats is estimated to be <strong>₹ 1.35 crores each</strong> as on 31.3.2026.</p>
 
@@ -3605,5 +3605,3321 @@ const descriptiveQuestions = [
     <p>A resident falling within any class or category of persons as notified by the Central Government, i.e., a <strong>public sector undertaking</strong>, can seek advance ruling even if the question raised is pending before the Appellate Tribunal.</p>
   `
 },
+{
+  question_id: "DT_SepMTP24_I_1",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "Computation of Total Income",
+    "Section 115BAA",
+    "Business Income",
+    "Capital Gains"
+  ],
+  placement: 1,
+  marks: 14,
+  question_html: `
+    <p><strong>Sunshine Industries Limited</strong>, a domestic company, is engaged in the manufacturing of washing machines since 01-11-2021 in the State of Rajasthan. The net profit of the company as per Statement of Profit and Loss for the year ended 31st March, 2024, revealed profit of <strong>₹ 1,47,50,000</strong> after debiting or crediting the following items:</p>
+
+    <ol type="i">
+      <li>Depreciation charged during the year amounted to <strong>₹ 34,00,000</strong>.</li>
+
+      <li>Lumpsum consideration of <strong>₹ 36 lakhs</strong> paid to a foreign company for obtaining designs & models of washing machines on 12.12.2023.</li>
+
+      <li>Purchased washing machine panels valued at <strong>₹ 96 lakhs</strong> from Shine Ltd. in which directors have substantial interest. The market value of the goods is <strong>₹ 82 lakhs</strong>.</li>
+
+      <li>Cash subsidy of <strong>₹ 15 lakhs</strong> received from State Government on acquisition of new plant & machinery [mentioned at point (c) in additional information] acquired on 01.07.2023 which was credited to Statement of Profit and Loss.</li>
+
+      <li>Legal expenses incurred for issue of bonus shares at <strong>₹ 6 lakhs</strong> and legal expenses for issue of right shares at <strong>₹ 8 lakhs</strong>.</li>
+
+      <li>Short-term capital gains of <strong>₹ 15 lakhs</strong> arising on transfer of a capital asset being equity shares in a company on which securities transaction tax is charged.</li>
+
+      <li>Long-term capital gains (arrived at after taking indexation benefit) on transfer of Zero-Coupon Bonds: <strong>₹ 8 lakhs</strong>.</li>
+    </ol>
+
+    <p><strong>Additional Information:</strong></p>
+
+    <ol type="a">
+      <li>Depreciation eligible under section 32 is <strong>₹ 36 lakhs</strong>.</li>
+
+      <li>During the previous year 2023-24, the company transferred unlisted equity shares for a consideration of <strong>₹ 22,00,000</strong> which were acquired on 12.12.2022. Cost of these shares acquired is <strong>₹ 12,00,000</strong>.</li>
+
+      <li>New Plant & Machinery acquired on 01.07.2023 for <strong>₹ 75 lakhs</strong> and payment of <strong>₹ 10 lakhs</strong> made by bearer cheque and balance by way of transfer through RTGS. Depreciation on this machinery not included in depreciation amount given at point (a).</li>
+    </ol>
+
+    <p><strong>Compute the total income and tax liability for the Assessment Year 2024-25, if company has opted for concessional rate of tax under section 115BAA.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Computation of Total Income and Tax Liability of Sunshine Industries Ltd. for A.Y. 2024-25 in accordance with the provisions of section 115BAA</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>₹</th>
+          <th>₹</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td colspan="3"><strong>Profits and Gains of Business or Profession</strong></td>
+        </tr>
+
+        <tr>
+          <td>Net profit as per Statement of Profit and Loss</td>
+          <td></td>
+          <td>1,47,50,000</td>
+        </tr>
+
+        <tr>
+          <td colspan="3"><strong>Add: Items debited but to be disallowed</strong></td>
+        </tr>
+
+        <tr>
+          <td>Depreciation as per books of account</td>
+          <td>34,00,000</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            Consideration for designs &amp; models
+            <br><br>
+            <em>
+            Consideration for designs &amp; models of washing machines is in the nature of capital expenditure and hence, is an intangible asset eligible for depreciation under section 32. Since the lump sum consideration has been debited to Statement of Profit and Loss, the same has to be added back while computing business income.
+            </em>
+          </td>
+          <td>36,00,000</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            Purchased washing machine panels at a price higher than the fair market value.
+            <br><br>
+            <em>
+            As per section 40A(2), the difference between the purchase price (₹96 lakhs) and fair market value (₹82 lakhs) has to be added back since the purchase is from a related party, i.e., Shine Ltd., a company in which directors have substantial interest.
+            </em>
+          </td>
+          <td>14,00,000</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            Legal expenses for issue of bonus shares.
+            <br><br>
+            <em>
+            There is no fresh inflow of funds or increase in capital employed. Hence legal expenses for bonus issue are revenue expenditure and allowable as deduction.
+            </em>
+          </td>
+          <td>Nil</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            Legal expenses for issue of right shares.
+            <br><br>
+            <em>
+            Expenses incurred in relation to rights issue are capital in nature. Since already debited to Statement of Profit and Loss, the same is added back.
+            </em>
+          </td>
+          <td>8,00,000</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><strong>92,00,000</strong></td>
+          <td><strong>2,39,50,000</strong></td>
+        </tr>
+
+        <tr>
+          <td colspan="3"><strong>Less: Items credited but to be considered separately</strong></td>
+        </tr>
+
+        <tr>
+          <td>Short-term capital gains on equity shares [Not taxable under this head]</td>
+          <td>15,00,000</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Long-term capital gains on Zero Coupon Bonds [Not taxable under this head]</td>
+          <td>8,00,000</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            Cash Subsidy
+            <br><br>
+            <em>
+            Subsidy received from State Government for acquisition of asset reduces the actual cost of the asset. Since subsidy has already been credited to Statement of Profit and Loss, the same is reduced while computing business income.
+            </em>
+          </td>
+          <td>15,00,000</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><strong>38,00,000</strong></td>
+          <td><strong>2,01,50,000</strong></td>
+        </tr>
+
+        <tr>
+          <td colspan="3"><strong>Less: Depreciation as per Income-tax Rules</strong></td>
+        </tr>
+
+        <tr>
+          <td>Depreciation</td>
+          <td>36,00,000</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            Depreciation on New Plant &amp; Machinery
+            <br>
+            (₹50 lakhs × 15%, asset put to use for more than 180 days)
+            <br><br>
+            <em>
+            ₹10 lakhs paid by bearer cheque and ₹15 lakhs subsidy are excluded from actual cost in accordance with section 43(1).
+            </em>
+          </td>
+          <td>7,50,000</td>
+          <td></td>
+        </tr>
+                <tr>
+          <td>
+            Depreciation on Intangible Asset, being designs &amp; models of washing
+            machines<br>
+            (₹36 lakhs × 25% × 50%, since put to use for less than 180 days during
+            P.Y. 2023-24)
+          </td>
+          <td>4,50,000</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            No additional depreciation is allowable under section 32(1)(iia) since
+            the assessee has opted for the provisions of section 115BAA.
+          </td>
+          <td>Nil</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><strong>48,00,000</strong></td>
+          <td><strong>1,53,50,000</strong></td>
+        </tr>
+
+        <tr>
+          <td colspan="3"><strong>Capital Gains</strong></td>
+        </tr>
+
+        <tr>
+          <td>Short-term capital gains on transfer of listed equity shares</td>
+          <td></td>
+          <td>15,00,000</td>
+        </tr>
+
+        <tr>
+          <td>Long-term capital gains on transfer of Zero Coupon Bonds (after indexation benefit)</td>
+          <td></td>
+          <td>8,00,000</td>
+        </tr>
+
+        <tr>
+          <td>
+            Short-term capital gains on transfer of unlisted equity shares
+            (Since not held for more than 24 months)
+            <br><br>
+            Full value of consideration &nbsp;&nbsp;&nbsp;&nbsp; ₹22,00,000
+            <br>
+            Less: Cost of acquisition &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ₹12,00,000
+          </td>
+          <td>10,00,000</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td><strong>Gross Total Income / Total Income</strong></td>
+          <td></td>
+          <td><strong>1,86,50,000</strong></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <br>
+
+    <p><strong>Computation of Tax Payable under section 115BAA</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>₹</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>Tax u/s 115BAA on business income (₹1,53,50,000 × 22%)</td>
+          <td>33,77,000</td>
+        </tr>
+
+        <tr>
+          <td>Tax u/s 111A on short-term capital gains on listed equity shares (₹15,00,000 × 15%)</td>
+          <td>2,25,000</td>
+        </tr>
+
+        <tr>
+          <td>Tax u/s 112 on long-term capital gains on Zero Coupon Bonds (₹8,00,000 × 20%)</td>
+          <td>1,60,000</td>
+        </tr>
+
+        <tr>
+          <td>Tax u/s 115BAA on short-term capital gains on transfer of unlisted equity shares (₹10,00,000 × 22%)</td>
+          <td>2,20,000</td>
+        </tr>
+
+        <tr>
+          <td><strong>Total Tax</strong></td>
+          <td><strong>39,82,000</strong></td>
+        </tr>
+
+        <tr>
+          <td>Add: Surcharge @10%</td>
+          <td>3,98,200</td>
+        </tr>
+
+        <tr>
+          <td><strong>Subtotal</strong></td>
+          <td><strong>43,80,200</strong></td>
+        </tr>
+
+        <tr>
+          <td>Add: Health &amp; Education Cess @4%</td>
+          <td>1,75,208</td>
+        </tr>
+
+        <tr>
+          <td><strong>Tax Liability</strong></td>
+          <td><strong>45,55,408</strong></td>
+        </tr>
+
+        <tr>
+          <td><strong>Tax Liability (Rounded off)</strong></td>
+          <td><strong>45,55,410</strong></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <br>
+
+    <p><strong>Judicial Pronouncements:</strong></p>
+
+    <ol>
+      <li>
+        <strong>CIT v. General Insurance Corporation (2006) 286 ITR 232 (SC)</strong> -
+        Legal expenses incurred for issue of bonus shares are revenue expenditure.
+      </li>
+
+      <li>
+        <strong>CIT v. Motor Industries Ltd. (1998) 229 ITR 137 (Kar.)</strong> -
+        Expenses incurred in relation to rights issue are capital expenditure.
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "DT_SepMTP24_I_2A",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "Partnership Firms",
+    "Business Income",
+    "Section 40(b)",
+    "Capital Gains",
+    "Section 54EC",
+    "Section 10AA"
+  ],
+  placement: 2,
+  marks: 8,
+  question_html: `
+  <p><strong>(a)</strong> The profit and loss account of <strong>LS & Associates</strong>, a partnership firm, showed a net profit of <strong>₹80 lakhs</strong> after debiting/crediting the following sums:</p>
+
+  <ol type="i">
+    <li>Interest on capital @13% - <strong>₹7,15,000</strong>.</li>
+
+    <li>Interest on loan taken from one of the partners @15% - <strong>₹90,000</strong>.</li>
+
+    <li>Interest on bank fixed deposits made out of surplus funds - <strong>₹35,000 (Gross)</strong>.</li>
+
+    <li>Depreciation as per books of accounts - <strong>₹1,15,650</strong>.</li>
+
+    <li>
+      A building purchased in the year 2020 having a WDV as on
+      <strong>01.04.2023 of ₹36.45 lakhs</strong> was sold on
+      <strong>10.10.2023 for ₹90 lakhs</strong>. The differential amount
+      was credited to the profit and loss account. The building was the
+      only asset in the block.
+    </li>
+  </ol>
+
+  <p><strong>Additional Information:</strong></p>
+
+  <ol type="a">
+    <li>
+      The firm has four partners. Only two are working partners.
+      Partnership deed authorised payment of interest to partners in the
+      range of 12%-16% and also payment of remuneration (not debited in
+      P&L A/c) to all the four partners @ ₹20,000 per month.
+    </li>
+
+    <li>
+      It applied for establishing a unit in SEZ and the letter of approval
+      was granted on 30.03.2020. However, it started the operation of SEZ
+      only on 15.10.2020. The total turnover, export turnover and net
+      profit for the year ended 31.03.2024 were ₹120 lakhs, ₹40 lakhs and
+      ₹7.5 lakhs respectively. The net profit is included in the profit of
+      ₹80 lakhs mentioned above.
+    </li>
+
+    <li>
+      Out of the amount received from sale of building, the firm invested
+      ₹60 lakhs on 05.04.2024 in 5-year specified bonds of the National
+      Highways Authority of India. The bonds were issued on 31.05.2024.
+    </li>
+
+    <li>
+      Depreciation as per Income-tax Rules, 1962 is ₹14,000 excluding
+      depreciation on assets mentioned in (e) and (f) below.
+    </li>
+
+    <li>
+      WDV of Motor Car as on 01.04.2023 (purchased and put to use on
+      01.01.2020) - ₹6,80,000.
+    </li>
+
+    <li>
+      Cost of mobile phones (purchased and put to use on 11.10.2023) -
+      ₹20,000.
+    </li>
+  </ol>
+
+  <p>
+    <strong>
+      Compute the total income of the firm for the A.Y.2024-25 giving
+      reasons/explanations for the treatment of each item under the normal
+      provisions of the Income-tax Act.
+    </strong>
+  </p>
+  `,
+
+  solution_html: `
+
+  <h3>Computation of Total Income of M/s LS & Associates for A.Y.2024-25</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Particulars</th>
+        <th>Amount (₹)</th>
+        <th>Amount (₹)</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td colspan="3"><strong>I. Profits and Gains of Business or Profession</strong></td>
+      </tr>
+
+      <tr>
+        <td>Net Profit as per Profit & Loss Account</td>
+        <td></td>
+        <td>80,00,000</td>
+      </tr>
+
+      <tr>
+        <td colspan="3"><strong>Add : Items debited but to be considered separately / disallowed</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Interest to partners on capital<br><br>
+
+          <em>
+          As per section 40(b), interest to partners authorised by the
+          partnership deed is allowable only up to 12% p.a.
+          </em>
+        </td>
+
+        <td>55,000</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>
+          Interest on loan taken from partner<br><br>
+
+          <em>
+          Interest on loan from partner is also covered under section
+          40(b). Interest in excess of 12% is disallowed.
+          </em>
+        </td>
+
+        <td>18,000</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Depreciation as per books</td>
+
+        <td>1,15,650</td>
+
+        <td></td>
+      </tr>
+
+      <tr>
+
+        <td></td>
+
+        <td><strong>1,88,650</strong></td>
+
+        <td><strong>81,88,650</strong></td>
+
+      </tr>
+
+      <tr>
+        <td colspan="3">
+          <strong>Less : Items credited but taxable under another head / expenses allowable though not debited</strong>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Interest on bank fixed deposits made out of surplus funds.<br><br>
+
+          <em>
+          Interest received from bank on surplus fixed deposits is taxable
+          under the head "Income from Other Sources". Hence deducted from
+          business income.
+          </em>
+        </td>
+
+        <td>35,000</td>
+
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>
+          Profit on sale of building.<br><br>
+
+          <em>
+          Capital gain on sale of building is taxable under the head
+          "Capital Gains". Since credited to Profit & Loss Account, it is
+          deducted while computing business income.
+          </em>
+        </td>
+
+        <td>53,55,000</td>
+
+        <td></td>
+      </tr>
+            <tr>
+        <td></td>
+        <td><strong>53,90,000</strong></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td></td>
+        <td><strong>27,98,650</strong></td>
+      </tr>
+
+      <tr>
+        <td colspan="3">
+          <strong>Less : Depreciation as per Income-tax Rules, 1962</strong>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Depreciation as per Income-tax Rules
+        </td>
+        <td>14,000</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>
+          Depreciation on Motor Car<br>
+          <em>(₹6,80,000 × 30%)</em>
+        </td>
+        <td>2,04,000</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>
+          Mobile Phones<br>
+          <em>(₹20,000 × 15% × 50%, since put to use for less than 180 days)</em>
+        </td>
+        <td>1,500</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><strong>2,19,500</strong></td>
+        <td><strong>25,79,150</strong></td>
+      </tr>
+
+      <tr>
+        <td colspan="3"><strong>Less : Salary to Working Partners</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Maximum remuneration allowable u/s 40(b)
+          <br><br>
+          On first ₹3,00,000 @90% = ₹2,70,000
+          <br>
+          On balance ₹22,79,150 @60% = ₹13,67,490
+          <br><br>
+          Total permissible remuneration = ₹16,37,490
+          <br><br>
+          Actual remuneration paid
+          (₹20,000 × 12 × 2 working partners)
+          = ₹4,80,000
+          <br><br>
+          Deduction allowable = Lower of above
+        </td>
+
+        <td>4,80,000</td>
+        <td><strong>20,99,150</strong></td>
+      </tr>
+
+      <tr>
+        <td colspan="3">
+          <strong>II. Capital Gains</strong>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Short-term Capital Gain on sale of building forming part of block
+          of assets (Since building was the only asset in the block)
+          <br><br>
+
+          Full value of consideration .............. ₹90,00,000
+          <br>
+          Less : WDV as on 01.04.2023 ........ ₹36,45,000
+        </td>
+
+        <td>53,55,000</td>
+
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>
+          Less : Exemption u/s 54EC
+          <br><br>
+
+          Investment made in specified bonds of NHAI within six months.
+          Maximum exemption allowable = ₹50,00,000.
+
+          <br><br>
+
+          <em>
+          Exemption is available even though allotment of bonds was after
+          expiry of six months, since investment was made within six months
+          from the date of transfer.
+          </em>
+        </td>
+
+        <td>50,00,000</td>
+
+        <td><strong>3,55,000</strong></td>
+      </tr>
+
+      <tr>
+        <td colspan="3">
+          <strong>III. Income from Other Sources</strong>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Interest on Bank Fixed Deposits
+        </td>
+
+        <td></td>
+
+        <td><strong>35,000</strong></td>
+      </tr>
+
+      <tr>
+        <td><strong>Gross Total Income</strong></td>
+
+        <td></td>
+
+        <td><strong>24,89,150</strong></td>
+      </tr>
+
+      <tr>
+        <td colspan="3">
+          <strong>Less : Deduction under section 10AA</strong>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Eligible deduction
+
+          <br><br>
+
+          = ₹7,50,000 × ₹40,00,000 ÷ ₹1,20,00,000
+
+          <br><br>
+
+          Unit in SEZ is eligible since Letter of Approval was granted on
+          or before 31.03.2020 and commercial operations commenced before
+          31.03.2021.
+        </td>
+
+        <td>2,50,000</td>
+
+        <td></td>
+      </tr>
+            <tr>
+        <td><strong>Total Income</strong></td>
+        <td></td>
+        <td><strong>22,39,150</strong></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <br>
+
+  <h4>Notes / Explanations</h4>
+
+  <ol>
+
+    <li>
+      <strong>Interest to Partners [Section 40(b)]</strong><br>
+      Interest paid to partners is allowable only to the extent of
+      <strong>12% per annum</strong>, even if the partnership deed authorises
+      a higher rate. Therefore, interest paid in excess of 12% is disallowed.
+    </li>
+
+    <br>
+
+    <li>
+      <strong>Interest on Loan from Partner</strong><br>
+      Interest paid on loan taken from a partner is also governed by
+      section 40(b). Accordingly, the excess over 12% is not deductible.
+    </li>
+
+    <br>
+
+    <li>
+      <strong>Interest on Bank Fixed Deposits</strong><br>
+      Interest earned on bank fixed deposits made out of surplus funds is
+      assessable under the head
+      <strong>"Income from Other Sources"</strong> and not under the head
+      "Profits and Gains of Business or Profession".
+    </li>
+
+    <br>
+
+    <li>
+      <strong>Depreciation</strong><br>
+      Depreciation under the Income-tax Act is allowable only as per the
+      provisions of section 32 read with the Income-tax Rules, irrespective
+      of the depreciation charged in the books of account.
+    </li>
+
+    <br>
+
+    <li>
+      <strong>Remuneration to Partners</strong><br>
+      Salary/remuneration to partners is allowable only to
+      <strong>working partners</strong> and only up to the limits prescribed
+      under section 40(b). Since actual remuneration paid is lower than the
+      maximum permissible amount, the entire remuneration paid to the working
+      partners is deductible.
+    </li>
+
+    <br>
+
+    <li>
+      <strong>Capital Gain on Sale of Building</strong><br>
+      Since the building was the only asset in the block of assets, the
+      difference between the sale consideration and the WDV of the block is
+      taxable as <strong>Short-term Capital Gain</strong> under section 50.
+    </li>
+
+    <br>
+
+    <li>
+      <strong>Exemption under Section 54EC</strong><br>
+      Investment was made in the specified bonds of NHAI within
+      <strong>six months</strong> from the date of transfer. Hence,
+      exemption is available up to the statutory limit of
+      <strong>₹50,00,000</strong>, even though the bonds were issued after the
+      expiry of the six-month period.
+    </li>
+
+    <br>
+
+    <li>
+      <strong>Deduction under Section 10AA</strong><br>
+      The SEZ unit is eligible for deduction since:
+      <ul>
+        <li>Letter of Approval was granted on or before 31.03.2020.</li>
+        <li>Manufacture/operations commenced before 31.03.2021.</li>
+        <li>The deduction is computed as:</li>
+      </ul>
+
+      <p style="margin-left:20px;">
+        <strong>
+          Profit of SEZ Unit × Export Turnover ÷ Total Turnover
+        </strong>
+      </p>
+
+      = ₹7,50,000 × ₹40,00,000 ÷ ₹1,20,00,000 = <strong>₹2,50,000</strong>.
+    </li>
+
+  </ol>
+
+  <br>
+
+  <p><strong>Relevant Judicial Pronouncement</strong></p>
+
+  <ul>
+    <li>
+      <strong>Hindustan Unilever Ltd. v. DCIT</strong> -
+      Investment in specified bonds within the prescribed period qualifies
+      for exemption under section 54EC even if the bonds are allotted after
+      the expiry of the six-month period, provided the investment itself is
+      made within the prescribed time.
+    </li>
+  </ul>
+
+  `
+},
+{
+  question_id: "DT_SepMTP24_I_2B",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "Double Taxation Relief",
+    "Section 91",
+    "Residential Status",
+    "Set-off of Losses",
+    "House Property",
+    "Default Tax Regime (Section 115BAC)"
+  ],
+  placement: 2,
+  marks: 6,
+
+  question_html: `
+    <p><strong>(b)</strong> Compute the total income and net tax liability after providing relief under section 91 by <strong>Mr. Gaurav</strong>, aged <strong>73 years</strong>, for the Assessment Year 2024-25 from the following information in respect of income earned by him in various places for the previous year ended 31.03.2024:</p>
+
+    <h4>Income in India</h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pension from State Government</td>
+          <td>3,90,000</td>
+        </tr>
+        <tr>
+          <td>Short-term capital gains on sale of plot</td>
+          <td>2,10,000</td>
+        </tr>
+        <tr>
+          <td>Deposit in PPF Account</td>
+          <td>1,50,000</td>
+        </tr>
+        <tr>
+          <td>Speculative Income</td>
+          <td>1,16,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>Income in Country M</h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Agricultural Income (Gross)</td>
+          <td>90,000</td>
+        </tr>
+        <tr>
+          <td>Dividend from a company incorporated in Country M (Gross) [Exempt in Country M]</td>
+          <td>64,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>Income in Country N</h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Business loss (Proprietary business) [Not eligible for set-off against other incomes in Country N]</td>
+          <td>1,06,000</td>
+        </tr>
+        <tr>
+          <td>Gross Rental Income from property</td>
+          <td>3,00,000</td>
+        </tr>
+        <tr>
+          <td>Municipal taxes paid (not allowed in Country N)</td>
+          <td>20,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Additional Information:</strong></p>
+
+    <ol>
+      <li>There is no agreement under section 90 for avoidance of double taxation between India and Country M or Country N.</li>
+      <li>Mr. Gaurav is resident in India and has paid tax in Country M @10% and Country N @5%.</li>
+      <li>Assume Mr. Gaurav is taxable under the default tax regime under section 115BAC.</li>
+    </ol>
+
+    <p><strong>Compute the Total Income and Net Tax Liability after allowing relief under section 91.</strong></p>
+  `,
+
+  solution_html: `
+
+  <p><strong>Note:</strong></p>
+
+  <p>
+    Since Mr. Gaurav is a resident in India for the Previous Year 2023-24,
+    his global income is taxable in India. Since India does not have a
+    Double Taxation Avoidance Agreement with Country M and Country N,
+    relief under section 91 is available, subject to fulfilment of the
+    prescribed conditions.
+  </p>
+
+  <h3>Computation of Total Income</h3>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td colspan="2"><strong>Income under the head "Salaries"</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Pension from State Government
+          <br>
+          Less: Standard Deduction under section 16(ia)
+        </td>
+        <td>
+          3,90,000
+          <br>
+          (50,000)
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Income from Salary</strong></td>
+        <td><strong>3,40,000</strong></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><strong>Income from House Property</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Rental Income from property situated in Country N
+          <br>
+          Less: Municipal Taxes
+          <br>
+          Less: Deduction under section 24(a) @30%
+        </td>
+
+        <td>
+          3,00,000
+          <br>
+          (20,000)
+          <br>
+          (84,000)
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Income from House Property</strong></td>
+        <td><strong>1,96,000</strong></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><strong>Profits & Gains of Business or Profession</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Speculative Income
+          <br>
+          Less: Set-off of Business Loss from Country N under section 70
+        </td>
+
+        <td>
+          1,16,000
+          <br>
+          (1,06,000)
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Business Income</strong></td>
+        <td><strong>10,000</strong></td>
+      </tr>
+
+      <tr>
+        <td>Short-term Capital Gain on sale of plot</td>
+        <td>2,10,000</td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><strong>Income from Other Sources</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Agricultural Income from Country M
+          <br>
+          <em>(Not exempt under section 10(1), since land is situated outside India)</em>
+        </td>
+
+        <td>90,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Dividend from Company in Country M
+        </td>
+
+        <td>64,000</td>
+      </tr>
+
+      <tr>
+        <td><strong>Income from Other Sources</strong></td>
+        <td><strong>1,54,000</strong></td>
+      </tr>
+
+      <tr>
+        <td><strong>Gross Total Income</strong></td>
+        <td><strong>9,10,000</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Less: Deduction under Chapter VI-A
+          <br>
+          <em>No deduction allowable under section 115BAC.</em>
+        </td>
+
+        <td>Nil</td>
+      </tr>
+
+      <tr>
+        <td><strong>Total Income</strong></td>
+        <td><strong>9,10,000</strong></td>
+      </tr>
+            <br>
+
+      <tr>
+        <td colspan="2">
+          <strong>Computation of Net Tax Liability</strong>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>
+          Tax on Total Income of ₹9,10,000
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Up to ₹3,00,000</td>
+        <td>Nil</td>
+      </tr>
+
+      <tr>
+        <td>₹3,00,001 to ₹6,00,000 @5%</td>
+        <td>15,000</td>
+      </tr>
+
+      <tr>
+        <td>₹6,00,001 to ₹9,00,000 @10%</td>
+        <td>30,000</td>
+      </tr>
+
+      <tr>
+        <td>₹9,00,001 to ₹9,10,000 @15%</td>
+        <td>1,500</td>
+      </tr>
+
+      <tr>
+        <td><strong>Income-tax</strong></td>
+        <td><strong>46,500</strong></td>
+      </tr>
+
+      <tr>
+        <td>Add: Health & Education Cess @4%</td>
+        <td>1,860</td>
+      </tr>
+
+      <tr>
+        <td><strong>Total Tax before Relief</strong></td>
+        <td><strong>48,360</strong></td>
+      </tr>
+
+      <tr>
+        <td>Less: Relief under section 91</td>
+        <td><strong>9,283</strong></td>
+      </tr>
+
+      <tr>
+        <td><strong>Net Tax Payable</strong></td>
+        <td><strong>39,077</strong></td>
+      </tr>
+
+      <tr>
+        <td><strong>Tax Payable (Rounded off)</strong></td>
+        <td><strong>39,080</strong></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <br>
+
+  <h3>Working Note - Computation of Relief under Section 91</h3>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>
+          Average Rate of Indian Tax
+
+          <br><br>
+
+          = ₹48,360 ÷ ₹9,10,000 × 100
+
+        </td>
+
+        <td><strong>5.314%</strong></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><strong>Country M</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Agricultural Income
+        </td>
+
+        <td>90,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Dividend from Company in Country M
+
+          <br>
+
+          <em>
+          Not considered since exempt in Country M.
+          </em>
+
+        </td>
+
+        <td>—</td>
+      </tr>
+
+      <tr>
+        <td>
+          Doubly Taxed Income
+        </td>
+
+        <td><strong>90,000</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Relief under section 91
+
+          <br>
+
+          ₹90,000 × 5.314%
+
+          <br>
+
+          (Lower of Indian average tax rate 5.314% and Country M tax rate 10%)
+
+        </td>
+
+        <td><strong>4,783</strong></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><strong>Country N</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Income from House Property
+          less Business Loss set-off
+
+          <br>
+
+          ₹1,96,000 − ₹1,06,000
+
+        </td>
+
+        <td><strong>90,000</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Relief under section 91
+
+          <br>
+
+          ₹90,000 × 5%
+
+          <br>
+
+          (Lower of Indian average tax rate 5.314% and Country N tax rate 5%)
+
+        </td>
+
+        <td><strong>4,500</strong></td>
+      </tr>
+
+      <tr>
+        <td><strong>Total Relief under section 91</strong></td>
+        <td><strong>9,283</strong></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  `
+},
+{
+  question_id: "DT_SepMTP24_I_3A",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "Charitable Trusts",
+    "Section 11",
+    "Section 10(23C)",
+    "Corpus Donation",
+    "Application of Income"
+  ],
+  placement: 3,
+  marks: 8,
+
+  question_html: `
+
+<h4>(a)(i)</h4>
+
+<p>
+A public charitable trust registered under section 12AB, for the previous year ending
+31.03.2024, derived gross income of <strong>₹21 lakhs</strong>, consisting of:
+</p>
+
+<table>
+
+<thead>
+<tr>
+<th>Particulars</th>
+<th>₹ (Lakhs)</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Income from properties held under trust</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>Income from business (incidental to main objects)</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>Voluntary contributions from public</td>
+<td>7</td>
+</tr>
+
+</tbody>
+</table>
+
+<p>
+
+The trust applied <strong>₹11.60 lakhs</strong> towards charitable purposes during the
+year, which includes repayment of loan borrowed in P.Y.2020-21 for construction
+of orphanage of <strong>₹3.60 lakhs</strong>.
+
+</p>
+
+<p>
+
+The entire expenditure incurred on construction of the orphanage was allowed as
+application of income in P.Y.2020-21.
+
+</p>
+
+<p>
+
+Determine the taxable income of the trust for A.Y.2024-25.
+
+</p>
+
+<hr>
+
+<h4>(a)(ii)</h4>
+
+<p>
+
+A not-for-profit trust undertakes philanthropic activities through an educational
+institution and a hospital.
+
+</p>
+
+<p>
+
+During P.Y.2023-24, the trust had annual receipts of:
+
+</p>
+
+<table>
+
+<thead>
+<tr>
+<th>Institution</th>
+<th>Annual Receipts (₹)</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Educational Institution</td>
+<td>3 Crores</td>
+</tr>
+
+<tr>
+<td>Hospital</td>
+<td>4 Crores</td>
+</tr>
+
+</tbody>
+</table>
+
+<p>
+
+The trust desires to claim exemption under section 10(23C)(iiiad) and
+section 10(23C)(iiiae), since the receipts of each activity are less than
+₹5 crore individually.
+
+</p>
+
+<p>
+
+Examine whether such exemption is available.
+
+</p>
+`,
+
+solution_html: `
+
+<h3>(a)(i) Computation of Taxable Income of Public Charitable Trust</h3>
+
+<table>
+
+<thead>
+<tr>
+<th>Particulars</th>
+<th>₹</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Income from property held under trust</td>
+<td>10,00,000</td>
+</tr>
+
+<tr>
+<td>Income from business (incidental to main objects)</td>
+<td>4,00,000</td>
+</tr>
+
+<tr>
+<td>Voluntary contributions from public</td>
+<td>7,00,000</td>
+</tr>
+
+<tr>
+
+<td>
+
+Voluntary contributions are includible in income since there is no specific
+direction that they shall form part of the corpus under section 11(1)(d).
+
+</td>
+
+<td>-</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Gross Income</strong></td>
+
+<td><strong>21,00,000</strong></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Less: 15% of income eligible for accumulation without any conditions
+
+</td>
+
+<td>3,15,000</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Balance</strong></td>
+
+<td><strong>17,85,000</strong></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Less: Application of Income
+
+<br><br>
+
+Amount actually spent for charitable purposes
+
+<br>
+
+(₹11,60,000 − ₹3,60,000)
+
+</td>
+
+<td>8,00,000</td>
+
+</tr>
+      <tr>
+        <td>
+          Repayment of loan for construction of orphanage
+        </td>
+
+        <td>Nil</td>
+      </tr>
+
+      <tr>
+        <td>
+          <em>
+          Repayment of loan is <strong>not treated as application of income</strong>
+          since the expenditure incurred on construction of the orphanage
+          had already been allowed as application of income in P.Y.2020-21.
+          Allowing the repayment again would result in double deduction.
+          </em>
+        </td>
+
+        <td>-</td>
+      </tr>
+
+      <tr>
+        <td><strong>Total Application of Income</strong></td>
+        <td><strong>8,00,000</strong></td>
+      </tr>
+
+      <tr>
+        <td><strong>Taxable Income</strong></td>
+        <td><strong>9,85,000</strong></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <br>
+
+  <h4>Note</h4>
+
+  <p>
+
+  As per <strong>Explanation 4(ii) to section 11(1)</strong>, application of income
+  made out of loan or borrowing is not treated as application in the year in which
+  such expenditure is incurred.
+
+  However, the repayment of such loan shall subsequently be treated as application
+  of income only if the expenditure financed through the loan was <strong>not already
+  allowed as application</strong>.
+
+  </p>
+
+  <p>
+
+  In the present case, expenditure on construction of the orphanage was already
+  treated as application of income in P.Y.2020-21. Therefore, repayment of the loan
+  cannot again be treated as application of income, as it would amount to
+  <strong>double deduction</strong>.
+
+  </p>
+
+  <hr>
+
+  <h3>(a)(ii) Exemption under Sections 10(23C)(iiiad) and 10(23C)(iiiae)</h3>
+
+  <p>
+
+  As per the <strong>Explanation below section 10(23C)(iiiae)</strong>, the threshold
+  limit of <strong>₹5 crore</strong> is to be applied <strong>qua the taxpayer</strong>
+  and not separately for each activity.
+
+  </p>
+
+  <p>
+
+  Therefore, where a trust carries on both educational and medical activities,
+  the receipts from both activities have to be aggregated for determining the
+  applicability of exemption.
+
+  </p>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>Receipts from Educational Institution</td>
+        <td>3,00,00,000</td>
+      </tr>
+
+      <tr>
+        <td>Receipts from Hospital</td>
+        <td>4,00,00,000</td>
+      </tr>
+
+      <tr>
+        <td><strong>Aggregate Annual Receipts</strong></td>
+        <td><strong>7,00,00,000</strong></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <br>
+
+  <p>
+
+  Since the aggregate annual receipts of the trust amount to
+  <strong>₹7 crore</strong>, which exceeds the prescribed limit of
+  <strong>₹5 crore</strong>, exemption under
+  <strong>section 10(23C)(iiiad)</strong> as well as
+  <strong>section 10(23C)(iiiae)</strong> is <strong>not available</strong>,
+  even though the receipts of each individual activity do not exceed ₹5 crore.
+
+  </p>
+
+  `
+},
+{
+  question_id: "DT_SepMTP24_I_3B",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "Special Provisions for Non-Residents",
+    "Section 44C",
+    "Head Office Expenditure"
+  ],
+  placement: 3,
+  marks: 6,
+
+  question_html: `
+
+<h4>(b)</h4>
+
+<p>
+
+Tip Inc., a foreign company headquartered in Malaysia, has a branch in India.
+For the financial year ended 31.03.2024, the branch has shown a net profit of
+<strong>₹28 lakhs</strong> after charging the following expenses:
+
+</p>
+
+<table>
+
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Depreciation for the current financial year</td>
+<td>15,00,000</td>
+</tr>
+
+<tr>
+<td>Unabsorbed depreciation of the previous financial year</td>
+<td>17,00,000</td>
+</tr>
+
+<tr>
+<td>
+Capital expenditure incurred for promoting family planning amongst employees
+(₹7 lakhs represents one-fifth of the total expenditure)
+</td>
+<td>7,00,000</td>
+</tr>
+
+<tr>
+<td>Expenditure incurred on scientific research</td>
+<td>11,00,000</td>
+</tr>
+
+<tr>
+<td>Business loss brought forward for A.Y. 2023-24</td>
+<td>25,00,000</td>
+</tr>
+
+<tr>
+<td>Deductions under Chapter VI-A</td>
+<td>20,00,000</td>
+</tr>
+
+<tr>
+<td>Head Office expenses allocated to the Indian branch</td>
+<td>1,20,00,000</td>
+</tr>
+
+</tbody>
+
+</table>
+
+<p>
+
+Compute the income to be declared by the branch in its return of income for
+A.Y.2024-25.
+
+</p>
+
+`,
+
+solution_html: `
+
+<h3>Computation of Head Office Expenses allowable under section 44C</h3>
+
+<table>
+
+<thead>
+<tr>
+<th>Particulars</th>
+<th>₹</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Net Profit of the Branch</td>
+<td>28,00,000</td>
+</tr>
+
+<tr>
+<td>Add: Head Office expenses debited to Profit & Loss Account</td>
+<td>1,20,00,000</td>
+</tr>
+
+<tr>
+<td>Add: Unabsorbed Depreciation</td>
+<td>17,00,000</td>
+</tr>
+
+<tr>
+<td>Add: Capital expenditure on Family Planning</td>
+<td>7,00,000</td>
+</tr>
+
+<tr>
+<td>Add: Brought Forward Business Loss</td>
+<td>25,00,000</td>
+</tr>
+
+<tr>
+<td>Add: Deductions under Chapter VI-A</td>
+<td>20,00,000</td>
+</tr>
+
+<tr>
+<td><strong>Adjusted Total Income</strong></td>
+<td><strong>2,17,00,000</strong></td>
+</tr>
+
+<tr>
+<td colspan="2">
+
+<strong>Note:</strong> Depreciation for the current financial year and capital
+expenditure on scientific research are <strong>not required to be added back</strong>
+while computing Adjusted Total Income under section 44C.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+Head Office expenses allowable under section 44C:
+
+<br><br>
+
+Lower of:
+
+<ul>
+<li>5% of Adjusted Total Income = ₹10,85,000</li>
+<li>Actual Head Office Expenses = ₹1,20,00,000</li>
+</ul>
+
+</td>
+
+<td><strong>10,85,000</strong></td>
+
+</tr>
+      <tr>
+        <td colspan="2">
+          <strong>Computation of Income to be declared in the Return of Income</strong>
+        </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <br>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>Particulars</th>
+        <th>₹</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>Net Profit as per Profit & Loss Account</td>
+        <td>28,00,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Add: Unabsorbed Depreciation of earlier year
+        </td>
+        <td>17,00,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Add: Capital expenditure on family planning debited
+          <br>
+          <em>(Not allowable for a foreign company)</em>
+        </td>
+        <td>7,00,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Add: Head Office expenses debited
+        </td>
+        <td>1,20,00,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Add: Business loss brought forward
+        </td>
+        <td>25,00,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Add: Deduction under Chapter VI-A
+        </td>
+        <td>20,00,000</td>
+      </tr>
+
+      <tr>
+        <td><strong>Total</strong></td>
+        <td><strong>2,17,00,000</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Less: Allowable Head Office Expenses under section 44C
+        </td>
+        <td>10,85,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Less: Current year's depreciation
+        </td>
+        <td>15,00,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Less: Deduction for scientific research expenditure
+        </td>
+        <td>11,00,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Less: One-fifth of capital expenditure on family planning
+          <br>
+          <em>Not allowable since the assessee is a foreign company.</em>
+        </td>
+        <td>Nil</td>
+      </tr>
+
+      <tr>
+        <td>
+          Less: Set-off of brought forward business loss
+        </td>
+        <td>25,00,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          Less: Set-off of unabsorbed depreciation
+        </td>
+        <td>17,00,000</td>
+      </tr>
+
+      <tr>
+        <td><strong>Gross Total Income</strong></td>
+        <td><strong>1,38,15,000</strong></td>
+      </tr>
+
+      <tr>
+        <td>
+          Less: Deduction under Chapter VI-A
+        </td>
+        <td>20,00,000</td>
+      </tr>
+
+      <tr>
+        <td><strong>Total Income</strong></td>
+        <td><strong>1,18,15,000</strong></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <br>
+
+  <h4>Notes</h4>
+
+  <ol>
+    <li>
+      As per <strong>section 44C</strong>, head office expenditure of a non-resident is
+      restricted to the lower of:
+      <ul>
+        <li>Actual head office expenditure allocable to the Indian business; or</li>
+        <li>5% of the Adjusted Total Income.</li>
+      </ul>
+    </li>
+
+    <li>
+      Current year's depreciation under section 32 and deduction for scientific
+      research under section 35 are allowable in full while computing business income.
+    </li>
+
+    <li>
+      Capital expenditure on family planning under section 36(1)(ix) is allowable
+      only to an Indian company. Hence, no deduction is available to a foreign company.
+    </li>
+  </ol>
+
+  `
+},
+{
+  question_id: "DT_SepMTP24_I_4A",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "Tax Deduction at Source (TDS)",
+    "Section 194C",
+    "Section 194H",
+    "Section 194M",
+    "Updated Return"
+  ],
+  placement: 4,
+  marks: 4,
+
+  question_html: `
+
+
+
+<h4>(i)</h4>
+
+<p>
+
+Mr. Mukesh, an individual carrying on retail business with turnover of
+₹3.2 crores in the P.Y.2022-23. He made contract payment for repair of
+residential house of ₹3 lakhs and ₹75,000 towards commission to
+Mr. Varun for business purposes. Examine whether TDS provisions
+would be attracted, if yes, specify the rate and amount of TDS
+applicable.
+
+</p>
+
+<p><strong>(2 Marks)</strong></p>
+
+<hr>
+
+<h4>(ii)</h4>
+
+<p>
+
+Mr. Rajesh, who gets his accounts audited under section 44AB filed
+his original return of income under section 139 for A.Y.2021-22 on
+28.12.2021 declaring income of ₹12 lakhs and for A.Y.2022-23 on
+31.10.2022 declaring loss of ₹5 lakhs.
+
+</p>
+
+<p>
+
+He wants to file an updated return of income under section 139(8A)
+for A.Y.2022-23 on 30.11.2023 declaring total income of ₹7 lakhs.
+Can he do so? Examine.
+
+</p>
+
+<p><strong>(2 Marks)</strong></p>
+
+`,
+
+  solution_html: `
+
+
+
+<h4>(i)</h4>
+
+<p>
+
+TDS under section 194C is not attracted since the payment of ₹3 lakhs
+for repair of residential house is for personal purpose. TDS under
+section 194M is also not attracted as aggregate of contract payment to
+the payee in the P.Y.2023-24 does not exceed ₹50 lakhs.
+
+</p>
+
+<p>
+
+However, on payment of ₹75,000 towards commission to Mr. Mukesh
+for business purposes, tax is required to be deducted at source
+u/s 194H @5%, since the payment exceeds ₹15,000, and
+Mr. Mukesh's turnover from business exceeds ₹1 crore in the
+P.Y.2022-23.
+
+</p>
+
+<p>
+
+Accordingly, amount of <strong>₹3,750 (₹75,000 × 5%)</strong> is required
+to be deducted at source.
+
+</p>
+
+<hr>
+
+<h4>(ii)</h4>
+<p>
+
+Yes, he can do so. If a person has a loss in any previous year and has
+furnished a return of loss under section 139(3) on or before the due
+date of filing return of income u/s 139(1), he shall be allowed to furnish
+an updated return, if such updated return is a return of income.
+
+</p>
+
+<p>
+
+Accordingly, in this case, since the original return of Mr. Rajesh was
+filed on the due date u/s 139(1) i.e., on 31.10.2022, he can file an
+updated return within 2 years from the end of A.Y.2022-23, i.e., on or
+before 31.3.2025.
+
+</p>
+
+<p>
+
+Accordingly, he can file an updated return of income on 30.11.2023
+declaring total income of ₹7 lakhs, after paying tax due on such total
+income along with interest under section 234B and section 234C and
+additional income-tax at <strong>25%</strong> of aggregate of tax and interest
+payable (since the updated return is filed before 31.3.2024, i.e., before
+12 months from the end of A.Y.2022-23).
+
+</p>
+
+`
+},
+{
+  question_id: "DT_SepMTP24_I_4B",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "Tax Deduction at Source (TDS)",
+    "Section 194-I"
+  ],
+  placement: 4,
+  marks: 4,
+
+  question_html: `
+
+
+
+<p>
+
+S Ltd. took on sub-lease a building from Jim, an individual, with effect
+from 1.9.2023 on a rent of ₹20,000 per month. It also took on hire
+machinery from Jim with effect from 1.10.2023 on hire charges of
+₹18,000 per month. S Ltd. entered into two separate agreements with
+Jim for sub-lease of building and hiring of machinery. The rent of
+building and hire charges of machinery for the financial year 2023-24
+were ₹1,40,000 and ₹1,08,000, respectively, which were credited by
+S Ltd. to the account of Jim in its books of account on 31.3.2024.
+Examine the obligation of S Ltd. with regard to deduction of tax at
+source in respect of the rent and hire charges.
+
+</p>
+
+
+
+`,
+
+  solution_html: `
+
+<p>
+
+As per section 194-I dealing with deduction of tax at source from
+payment of rent, the rate of TDS applicable is <strong>2%</strong> for machinery
+hire charges and <strong>10%</strong> for building lease rent. The scope of the
+section includes within its ambit, rent for machinery, plant and
+equipment. Tax is required to be deducted at source from payment of
+rent, by whatever name called, under any lease, sub-lease, tenancy or
+any other agreement or arrangement for the use of building and
+machinery, irrespective of whether such assets are owned or not by the
+payee.
+
+</p>
+
+<p>
+
+The limit of <strong>₹2,40,000</strong> for tax deduction at source will apply to
+the aggregate rent of all the assets. Even if two separate agreements
+are entered into, one for sub-lease of building and another for hiring of
+machinery, rent and hire charges under the two agreements have to be
+aggregated for the purpose of application of the threshold limit of
+₹2,40,000.
+
+</p>
+
+<p>
+
+In this case, since the payment for rent and hire charges credited to the
+account of James, the payee, aggregates to
+<strong>₹2,48,000 (₹1,40,000 + ₹1,08,000)</strong>, tax is deductible at source
+under section 194-I.
+
+</p>
+
+<table>
+
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+<th>Rate</th>
+<th>TDS (₹)</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Rent of Building</td>
+<td>1,40,000</td>
+<td>10%</td>
+<td>14,000</td>
+</tr>
+
+<tr>
+<td>Hire Charges of Machinery</td>
+<td>1,08,000</td>
+<td>2%</td>
+<td>2,160</td>
+</tr>
+
+<tr>
+<td><strong>Total TDS</strong></td>
+<td><strong>2,48,000</strong></td>
+<td>-</td>
+<td><strong>16,160</strong></td>
+</tr>
+
+</tbody>
+
+</table>
+
+<p>
+
+Tax is deductible <strong>@10% on ₹1,40,000 (rent of building)</strong> and
+<strong>@2% on ₹1,08,000 (hire charges of machinery)</strong>.
+
+</p>
+
+`
+},
+{
+  question_id: "DT_SepMTP24_I_4C",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "Capital Gains",
+    "Section 45",
+    "Section 50AA",
+    "Section 54F",
+    "Section 112A"
+  ],
+  placement: 4,
+  marks: 6,
+
+  question_html: `
+
+<p>
+
+Mr. Sarthak is a resident in India aged 58 years. He had an impressive
+investment portfolio in various mutual funds. He redeemed his entire
+mutual fund investment portfolio and bought a villa in Gurugram for
+₹2.00 crores to spend rest of his life there. The details of mutual funds
+are as under –
+
+</p>
+
+<table>
+
+<thead>
+<tr>
+<th>S. No.</th>
+<th>Type of Mutual Fund</th>
+<th>Date of Investment</th>
+<th>Date of Redemption</th>
+<th>Amount Invested (₹ lakhs)</th>
+<th>Amount Redeemed (₹ lakhs)</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td>SLR Growth Fund</td>
+<td>03.04.2020</td>
+<td>05.06.2023</td>
+<td>120</td>
+<td>140</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>XYZ Strategic Fund</td>
+<td>04.05.2023</td>
+<td>02.02.2024</td>
+<td>46</td>
+<td>50</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>MNO Midcap Fund</td>
+<td>02.12.2022</td>
+<td>05.07.2023</td>
+<td>115</td>
+<td>118</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>TBA Growth Fund</td>
+<td>08.11.2021</td>
+<td>12.12.2023</td>
+<td>110</td>
+<td>120</td>
+</tr>
+
+</tbody>
+
+</table>
+
+<p>
+
+The funds stated at 1 and 2 have invested 30% of their proceeds in
+equity shares of domestic companies and funds stated at 3 and 4 have
+invested 70% of their proceeds in equity shares of domestic companies.
+The investment pattern of funds remained unchanged over all the years.
+STT is paid at the time of acquisition and redemption of mutual fund,
+wherever applicable.
+
+</p>
+
+<p>
+
+You are required to compute the capital gains chargeable to tax in the
+hands of Mr. Sarthak for A.Y.2024-25.
+
+CII:
+2020-21: 301;
+2021-22: 317;
+2022-23: 331;
+2023-24: 348.
+
+</p>
+
+`,
+
+  solution_html: `
+  <table>
+
+<thead>
+<tr>
+<th>Particulars</th>
+<th>₹</th>
+<th>₹</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td colspan="3"><strong>Redemption of SLR Growth Fund</strong></td>
+</tr>
+
+<tr>
+<td>Full value of consideration [Redemption value]</td>
+<td></td>
+<td>1,40,00,000</td>
+</tr>
+
+<tr>
+<td>
+Less: Indexed cost of acquisition
+<br>
+[₹1,20,00,000 × 348/301]
+</td>
+<td></td>
+<td>1,38,73,754</td>
+</tr>
+
+<tr>
+<td>
+Long-term capital gains
+<br>
+<em>
+[Since it is debt fund (as not more than 65% of the proceeds are invested
+in equity shares of domestic companies) and it was held by Mr. Sarthak
+for more than 36 months immediately preceding the date of its transfer]
+</em>
+</td>
+<td></td>
+<td><strong>1,26,246</strong></td>
+</tr>
+
+<tr>
+<td colspan="3"><strong>Redemption of XYZ Strategic Fund</strong></td>
+</tr>
+
+<tr>
+<td>Full value of consideration [Redemption value]</td>
+<td></td>
+<td>50,00,000</td>
+</tr>
+
+<tr>
+<td>Less: Cost of acquisition</td>
+<td></td>
+<td>46,00,000</td>
+</tr>
+
+<tr>
+<td>
+Short-term capital gains
+<br>
+<em>
+[Since it is a specified mutual fund (as not more than 35% of its proceeds
+are invested in equity shares of domestic companies) which is acquired
+on or after 1.4.2023, this fund would be considered as short-term capital
+asset as per section 50AA irrespective of the period of holding]
+</em>
+</td>
+<td></td>
+<td><strong>4,00,000</strong></td>
+</tr>
+
+<tr>
+<td colspan="3"><strong>Redemption of MNO Midcap Fund</strong></td>
+</tr>
+
+<tr>
+<td>Full value of consideration [Redemption value]</td>
+<td></td>
+<td>1,18,00,000</td>
+</tr>
+
+<tr>
+<td>Less: Cost of acquisition</td>
+<td></td>
+<td>1,15,00,000</td>
+</tr>
+
+<tr>
+<td>
+Short-term capital gains
+<br>
+<em>
+[Since it is equity-oriented fund (as more than 65% of its proceeds are
+invested in equity shares of domestic companies) and it was held by
+Mr. Sarthak for not more than 12 months immediately preceding the
+date of its transfer]
+</em>
+</td>
+<td></td>
+<td><strong>3,00,000</strong></td>
+</tr>
+
+<tr>
+<td colspan="3"><strong>Redemption of TBA Growth Fund</strong></td>
+</tr>
+
+<tr>
+<td>Full value of consideration [Redemption value]</td>
+<td></td>
+<td>1,20,00,000</td>
+</tr>
+
+<tr>
+<td>
+Less: Cost of acquisition
+<br>
+<em>
+[Indexation benefit would not be available in case of income taxable
+under section 112A]
+</em>
+</td>
+<td></td>
+<td>1,10,00,000</td>
+</tr>
+
+<tr>
+<td>
+Long-term capital gains
+<br>
+<em>
+[Since it is equity-oriented fund (as more than 65% of its proceeds are
+invested in equity shares of domestic companies) and it was held by
+Mr. Sarthak for more than 12 months immediately preceding the date
+of its transfer]
+</em>
+</td>
+<td></td>
+<td><strong>10,00,000</strong></td>
+</tr>
+
+<tr>
+<td><strong>Total Capital Gains</strong></td>
+<td></td>
+<td><strong>18,26,246</strong></td>
+</tr>
+
+</tbody>
+
+</table>
+
+<hr>
+
+<table>
+
+<thead>
+<tr>
+<th>Particulars</th>
+<th>₹</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>
+Less: Exemption under section 54F
+<br><br>
+
+Capital gain arising on transfer of a long-term capital asset other than a
+residential house shall not be chargeable to tax to the extent such capital
+gain is invested in the purchase of one residential house property in India
+within one year before or two years after the date of transfer of original
+asset.
+
+<br><br>
+
+Therefore, in the present case, the exemption would be available only in
+respect of long-term capital gains from redemption of SLR Growth Fund
+and TBA Growth Fund.
+</td>
+<td></td>
+</tr>
+
+<tr>
+<td>
+Exemption from long-term capital gains from redemption of
+TBA Growth Fund
+<br>
+[₹10,00,000 × ₹1,20,00,000 / ₹1,20,00,000]
+</td>
+<td>10,00,000</td>
+</tr>
+
+<tr>
+<td>
+Exemption from long-term capital gains from redemption of
+SLR Growth Fund
+<br>
+[₹1,26,246 × ₹80,00,000 (₹2 crores − ₹1.20 crores)
+/ ₹1,40,00,000]
+</td>
+<td>72,141</td>
+</tr>
+
+<tr>
+<td><strong>Capital Gains chargeable to tax for A.Y.2024-25</strong></td>
+<td><strong>7,54,105</strong></td>
+</tr>
+
+</tbody>
+
+</table>
+
+`
+},
+{
+  question_id: "DT_SepMTP24_I_5A",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "Assessment Procedure",
+    "Section 144C",
+    "Section 132B",
+    "Section 143(2)",
+    "Section 292BB"
+  ],
+  placement: 5,
+  marks: 8,
+
+  question_html: `
+
+<p><strong>Attempt any two out of sub-part (i), (ii) or (iii) of the following:</strong></p>
+
+<p><strong>(i)</strong></p>
+
+<p>
+
+XYZ Ltd. received the draft order from the Assessing Officer as per
+section 144C of the Income-tax Act, 1961 due to variations determined
+by the Transfer Pricing Officer in the arm's length price. But XYZ Ltd.
+did not prefer to file the objection against the draft order before the
+Dispute Resolution Panel, instead, he prefer to do appeal before the
+CIT (Appeals) under section 246A against the final order received from
+the Assessing Officer.
+
+</p>
+
+<p>
+
+You are required to advise XYZ Ltd., whether his contentions are
+tenable? Discuss the issue with reference to provisions of section 144C
+of the Income-tax Act, 1961.
+
+</p>
+
+<hr>
+
+<p><strong>(ii)</strong></p>
+
+<p>
+
+During search conducted on premises of an assessee, some gold bars
+were seized by the department from lockers of assessee. Assessee
+voluntarily disclosed some income during course of search. Assessee
+moved an application before Assessing Officer, for adjustment of tax
+liability on income surrendered during search by sale of seized gold
+bars. However, said application was turned down by the Assessing
+Officer. Explain whether action of the AO is justified, in light of relevant
+case laws?
+
+</p>
+
+<hr>
+
+<p><strong>(iii)</strong></p>
+
+<p>
+
+T Ltd. filed its return of income for assessment year 2023-24 on
+25th October 2023. The return is selected for regular assessment
+under section 143(3) for which notice under section 143(2) is served
+on the company on 9th July 2024. The company responded to the notice
+under section 143(2). Examine whether the service of the notice is
+within time and if not, whether the assessment order can be challenged
+by the assessee.
+
+</p>
+
+`,
+
+  solution_html: `
+
+<h4>(i)</h4>
+
+<p>
+
+Section 144C requires the eligible assessee, XYZ Ltd., to file his
+objections within 30 days of the receipt of draft assessment order from
+the Assessing Officer with the DRP and the Assessing Officer.
+
+</p>
+
+<p>
+
+If he fails to do so, the Assessing Officer will proceed to complete the
+assessment on the basis of the draft order.
+
+</p>
+
+<p>
+
+The CBDT has clarified that the assessee has a choice whether to file
+an objection before the DRP against the draft assessment order or not
+to exercise this option and file an appeal later before CIT (Appeals)
+against the final assessment order passed by the Assessing Officer.
+
+</p>
+
+<p>
+
+Therefore, XYZ Ltd. can choose to file an appeal before Commissioner
+(Appeals) against the final assessment order instead of filing objection
+before the DRP against the draft assessment order passed by the
+Assessing Officer.
+
+</p>
+
+<p>
+
+In case XYZ Ltd. files objection before the DRP, then, he has the right
+to appeal to Appellate Tribunal, if he is aggrieved by the final order
+passed by the Assessing Officer in pursuance of the directions of the
+DRP.
+
+</p>
+
+<hr>
+
+<h4>(ii)</h4>
+<p>
+
+As per section 132B, the amount of existing liability under the
+Income-tax Act and the amount of liability determined on completion of
+assessment under section 148 may be recovered out of assets seized
+under section 132. The words <strong>“existing liability”</strong> postulates a
+liability that is crystallized by adjudication.
+
+</p>
+
+<p>
+
+Likewise, <strong>“a liability is determined”</strong> only on completion of the
+assessment. Until the assessment is complete, it cannot be postulated
+that a liability has been crystallized.
+
+</p>
+
+<p>
+
+It is only when the liability is determined on the completion of
+assessment that it would stand crystallized and in pursuance of which
+a demand can be raised and recovery can be initiated.
+
+</p>
+
+<p>
+
+Accordingly, the assessee may make an application to the Assessing
+Officer within 30 days from the end of the month in which the asset was
+seized, for release of the assets seized.
+
+</p>
+
+<p>
+
+However, in the present case, the assessee moved an application
+before the Assessing Officer for adjustment of tax liability on income
+surrendered during search by sale of seized gold bars.
+
+</p>
+
+<p>
+
+In this case, assessment is not complete and the liability has not been
+crystallised.
+
+</p>
+
+<p>
+
+Therefore, the action of the Assessing Officer in turning down the
+application of the assessee is in order, since the assets seized cannot
+be adjusted against tax liability on income surrendered during search<sup>5</sup>.
+
+</p>
+
+<hr>
+
+<h4>(iii)</h4>
+
+<p>
+
+The time limit for service of notice under section 143(2) is three months
+from the end of the financial year in which the return of income was
+furnished by the assessee.
+
+</p>
+
+<p>
+
+The return of income for assessment year 2023-24 was filed by the
+assessee on 25th October, 2023. Therefore, the notice under section
+143(2) has to be served by <strong>30th June, 2024</strong>.
+
+</p>
+
+<p>
+
+However, the notice was served on the assessee only on
+<strong>9th July, 2024</strong>. Hence, the notice issued under section 143(2)
+is time-barred.
+
+</p>
+
+<p>
+
+However, as per section 292BB, where an assessee had appeared in
+any proceedings or co-operated in any enquiry relating to an
+assessment or reassessment, it shall be deemed that any notice
+required to be served upon him, has been duly served upon him in time
+in accordance with the provisions of the Act and such assessee shall
+be precluded from raising any objection in any proceeding or enquiry
+that the notice was—
+
+</p>
+
+<ul>
+<li>not served upon him; or</li>
+<li>not served upon him in time; or</li>
+<li>served upon him in an improper manner.</li>
+</ul>
+
+<p>
+
+The above provision shall not be applicable where the assessee has
+raised such objection before the completion of such assessment or
+reassessment.
+
+</p>
+
+<p>
+
+Therefore, in the instant case, if the assessee, T Ltd., had raised an
+objection to the proceeding, on the ground of non-service of the notice
+under section 143(2) on time, then, the validity of the assessment order
+can be challenged.
+
+</p>
+
+<p>
+
+In absence of such objection, the assessment order cannot be
+challenged.
+
+</p>
+
+`
+},
+{
+  question_id: "DT_SepMTP24_I_5B",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "International Taxation",
+    "BEPS Action Plan 5",
+    "Section 115BBF",
+    "Patent Box Regime"
+  ],
+  placement: 5,
+  marks: 6,
+
+  question_html: `
+
+<p>
+
+Explain the nexus approach recommended by OECD in BEPS Action Plan 5
+which has been adopted in the Income-tax Act, 1961.
+
+</p>
+
+`,
+
+  solution_html: `
+
+<p>
+
+In India, the Finance Act, 2016 has introduced a concessional taxation
+regime for royalty income from patents for the purpose of promoting
+indigenous research and development and making India a global hub for
+research and development.
+
+</p>
+
+<p>
+
+The purpose of the concessional taxation regime is to encourage entities
+to retain and commercialise existing patents and for developing new
+innovative patented products. Further, this beneficial taxation regime
+will incentivise entities to locate the high-value jobs associated with the
+development, manufacture and exploitation of patents in India.
+
+</p>
+
+<p>
+
+The nexus approach has been recommended by the OECD under BEPS
+Action Plan 5. This approach requires attribution and taxation of income
+arising from exploitation of Intellectual Property (IP) in the jurisdiction
+where substantial research and development (R&D) activities are
+undertaken instead of the jurisdiction of legal ownership.
+
+</p>
+
+<p>
+
+Accordingly, section 115BBF has been inserted in the Income-tax Act,
+1961 to provide that where the total income of the eligible assessee
+(being a person resident in India who is the true and first inventor of the
+invention and whose name is entered in the patent register as the
+patentee in accordance with the Patents Act, 1970 and includes every
+such person, being the true and first inventor of the invention, where
+more than one person is registered as patentee under the Patents Act,
+1970 in respect of that patent) includes any income by way of royalty in
+respect of a patent developed and registered in India, then such royalty
+shall be taxable at the rate of <strong>10%</strong> (plus applicable surcharge and
+cess).
+
+</p>
+
+<p>
+
+For this purpose, <strong>"developed"</strong> means at least <strong>75%</strong> of the
+expenditure should be incurred in India by the eligible assessee for any
+invention in respect of which patent is granted under the
+<strong>Patents Act, 1970</strong>.
+
+</p>
+
+`
+},
+{
+  question_id: "DT_SepMTP24_I_6A",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "Equalisation Levy",
+    "Section 10(50)",
+    "Online Advertisement",
+    "International Taxation"
+  ],
+  placement: 6,
+  marks: 3,
+
+  question_html: `
+
+<p>
+
+NI Ltd. is an Indian Company involved in manufacturing and trading in
+cotton garments under the brand name “COTT”. In order to expand its
+exports sale, it launched a massive publicity campaign in overseas
+market. For the purpose of online advertising, it hired SK Inc., a New
+York based company which has no permanent establishment in India
+and paid ₹10 lakhs for its services in the previous year 2023-24.
+
+</p>
+
+<p>
+
+Discuss the tax and TDS implications of such transaction both in the
+hands of NI Ltd. and SK Inc.
+
+</p>
+
+`,
+
+  solution_html: `
+
+<p>
+
+Equalisation levy of <strong>6%</strong> is attracted in respect of the amount of
+consideration exceeding <strong>₹1 lakh</strong> for, inter alia, online advertisement,
+received or receivable by a non-resident not having permanent
+establishment in India, from, inter alia, a resident in India who carries on
+business or profession.
+
+</p>
+
+<p>
+
+In this case, the payment of <strong>₹10 lakhs</strong> by NI Ltd., a resident in India
+(since it is an Indian company) to SK Inc., New York, a non-resident not
+having PE in India, for online advertisement services would be subject
+to Equalisation Levy <strong>@6%</strong>.
+
+</p>
+
+<p>
+
+Such income is, however, exempt under the Income-tax Act, 1961 by
+virtue of <strong>section 10(50)</strong> thereof.
+
+</p>
+
+<p>
+
+NI Ltd. is required to deduct Equalisation Levy of
+<strong>₹60,000 (₹10,00,000 × 6%)</strong> from such payment.
+
+</p>
+
+`
+},
+{
+  question_id: "DT_SepMTP24_I_6B",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "Section 115BAC",
+    "Default Tax Regime",
+    "Section 80D",
+    "Section 80GGC",
+    "House Property"
+  ],
+  placement: 6,
+  marks: 5,
+
+  question_html: `
+
+<p>
+
+Aryan (25 years) and Aditya (32 years) are two individuals, resident in
+India, and they earned salary of ₹13 lakhs each during the previous year
+2023-24.
+
+</p>
+
+<p>
+
+Aditya had paid interest of ₹2,20,000 on loan taken in respect of a
+self-occupied house property.
+
+</p>
+
+<p>
+
+Aryan had paid ₹24,000 towards medical insurance of himself and his
+spouse. Payment was made through net banking.
+
+</p>
+
+<p>
+
+Aditya contributed ₹1,50,000 to a political party by cheque.
+
+</p>
+
+<p>
+
+You, as a consultant, are required to advise them whether they should
+opt out of default tax regime under section 115BAC or otherwise,
+showing the tax liability of both individuals.
+
+</p>
+
+`,
+
+  solution_html: `
+
+<table>
+
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Mr. Aryan (₹)</th>
+<th>Mr. Aditya (₹)</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td colspan="3"><strong>Computation of Tax Liability as per section 115BAC</strong></td>
+</tr>
+
+<tr>
+<td>Salary</td>
+<td>13,00,000</td>
+<td>13,00,000</td>
+</tr>
+
+<tr>
+<td>Less: Standard deduction u/s 16(ia)</td>
+<td>(50,000)</td>
+<td>(50,000)</td>
+</tr>
+
+<tr>
+<td>Less: Set-off of loss from house property in respect of interest on loan for self-occupied property [Not allowable as deduction u/s 115BAC]</td>
+<td>–</td>
+<td>–</td>
+</tr>
+
+<tr>
+<td><strong>Total Income as per section 115BAC</strong></td>
+<td><strong>12,50,000</strong></td>
+<td><strong>12,50,000</strong></td>
+</tr>
+
+<tr>
+<td>Tax before cess</td>
+<td>1,00,000</td>
+<td>1,00,000</td>
+</tr>
+
+<tr>
+<td>Add: Health & Education Cess @4%</td>
+<td>4,000</td>
+<td>4,000</td>
+</tr>
+
+<tr>
+<td><strong>Tax Liability</strong></td>
+<td><strong>1,04,000</strong></td>
+<td><strong>1,04,000</strong></td>
+</tr>
+
+</tbody>
+
+</table>
+
+<hr>
+
+<table>
+
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Mr. Aryan (₹)</th>
+<th>Mr. Aditya (₹)</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td colspan="3"><strong>Computation of Tax Liability as per Regular Provisions</strong></td>
+</tr>
+
+<tr>
+<td>Salary</td>
+<td>13,00,000</td>
+<td>13,00,000</td>
+</tr>
+
+<tr>
+<td>Less: Standard deduction u/s 16(ia)</td>
+<td>(50,000)</td>
+<td>(50,000)</td>
+</tr>
+
+<tr>
+<td>Less: Set-off of loss from house property in respect of interest on loan borrowed for self-occupied property (restricted to ₹2,00,000 u/s 71(3A))</td>
+<td>–</td>
+<td>(2,00,000)</td>
+</tr>
+
+<tr>
+<td>Gross Total Income</td>
+<td>12,50,000</td>
+<td>10,50,000</td>
+</tr>
+
+<tr>
+<td>Less: Deduction u/s 80D</td>
+<td>(24,000)</td>
+<td>–</td>
+</tr>
+
+<tr>
+<td>Less: Deduction u/s 80GGC</td>
+<td>–</td>
+<td>(1,50,000)</td>
+</tr>
+
+<tr>
+<td><strong>Total Income</strong></td>
+<td><strong>12,26,000</strong></td>
+<td><strong>9,00,000</strong></td>
+</tr>
+
+<tr>
+<td>Tax before cess</td>
+<td>1,80,300</td>
+<td>92,500</td>
+</tr>
+
+<tr>
+<td>Add: Health & Education Cess @4%</td>
+<td>7,212</td>
+<td>3,700</td>
+</tr>
+
+<tr>
+<td><strong>Tax Liability</strong></td>
+<td><strong>1,87,512</strong></td>
+<td><strong>96,200</strong></td>
+</tr>
+
+<tr>
+<td><strong>Tax Liability (Rounded Off)</strong></td>
+<td><strong>1,87,510</strong></td>
+<td><strong>96,200</strong></td>
+</tr>
+
+</tbody>
+
+</table>
+
+<p>
+
+Since the tax liability of <strong>Mr. Aryan</strong> under section 115BAC
+(<strong>₹1,04,000</strong>) is lower than the tax liability under the regular
+provisions (<strong>₹1,87,510</strong>), it is advisable for him <strong>not to opt out of
+section 115BAC</strong>.
+
+</p>
+
+<p>
+
+However, in the case of <strong>Mr. Aditya</strong>, since the tax liability under the
+regular provisions (<strong>₹96,200</strong>) is lower than the tax liability under
+section 115BAC (<strong>₹1,04,000</strong>), it is advisable for him to
+<strong>opt out of the default tax regime under section 115BAC</strong> and pay
+tax under the regular provisions.
+
+</p>
+
+`
+},
+{
+  question_id: "DT_SepMTP24_I_6C",
+  source: "ICAI Mock Test Paper - Series I: September 2024",
+  chapter_name: [
+    "Transfer Pricing",
+    "Specified Domestic Transaction",
+    "Notified Jurisdictional Area (NJA)",
+    "Comparable Uncontrolled Price (CUP) Method"
+  ],
+  placement: 6,
+  marks: 6,
+
+  question_html: `
+
+<p>
+
+TI Ltd., the assessee, has sold goods on 12.01.2024 to LMP Ltd., located
+in notified jurisdictional area (NJA), for ₹9.50 crores.
+
+</p>
+
+<p>
+
+During the current financial year, TI Ltd. charged ₹10.50 crores from
+TOP Inc. of Country X and ₹11 crores from MON Inc. of Country Y for
+sale of identical goods and both of which are neither associated
+enterprise of TI Ltd. nor they are situated in any NJA.
+
+</p>
+
+<p>
+
+While sales to TOP Inc. and MON Inc. were on CIF basis, the sale to
+LMP Ltd. was on FOB basis, which paid ocean freight and insurance
+amounting to ₹20 lakhs on purchases from TI Ltd.
+
+</p>
+
+<p>
+
+If sales to TOP Inc. and MON Inc. are made on FOB basis, the cost of
+freight and insurance would amount to ₹18 lakhs.
+
+</p>
+
+<p>
+
+The assessee has a policy of providing after-sales support service to the
+tune of ₹13 lakhs to all customers except LMP Ltd., which procured the
+same locally at a cost of ₹17 lakhs.
+
+</p>
+
+<p>
+
+Compute the ALP for the sales made to LMP Ltd. and the amount of
+consequent increase, if any, in the profit of the assessee-company.
+
+</p>
+
+`,
+
+  solution_html: `
+
+<p>
+
+A transaction where one of the parties thereto is a person located in a
+Notified Jurisdictional Area (NJA) would be deemed to be an
+international transaction and all parties to the transaction would be
+deemed as associated enterprises.
+
+</p>
+
+<p>
+
+Accordingly, all the provisions of transfer pricing would be attracted in
+case of such a transaction.
+
+</p>
+
+<p>
+
+Hence, the transactions between TI Ltd. and LMP Ltd., located in NJA,
+would be deemed to be international transactions between associated
+enterprises.
+
+</p>
+
+<p>
+
+The transactions of TI Ltd. with TOP Inc. of Country X and MON Inc. of
+Country Y for sale of identical goods are comparable uncontrolled
+international transactions, since they are neither associated enterprises
+of TI Ltd. nor are they situated in NJA. Hence, the
+<strong>Comparable Uncontrolled Price (CUP) Method</strong> can be used to
+determine the ALP.
+
+</p>
+
+<p>
+
+Where more than one price is determined by the most appropriate
+method, CUP method in this case, then, the arithmetic mean has to be
+taken in cases where the number of entries in the dataset is less than 6
+(in this case it is only 2). Moreover, the benefit of permissible variation
+between the ALP and the transfer price based on the rate notified by the
+Central Government (i.e., maximum of 3% of transaction price) would
+not be available in respect of such transaction.
+
+</p>
+
+<table>
+
+<thead>
+<tr>
+<th>Particulars</th>
+<th>TOP Inc. (₹ Crores)</th>
+<th>MON Inc. (₹ Crores)</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Price charged by TI Ltd. (CIF basis)</td>
+<td>10.50</td>
+<td>11.00</td>
+</tr>
+
+<tr>
+<td>Less: Ocean freight and insurance</td>
+<td>(0.18)</td>
+<td>(0.18)</td>
+</tr>
+
+<tr>
+<td>Price on FOB basis</td>
+<td>10.32</td>
+<td>10.82</td>
+</tr>
+
+<tr>
+<td>Less: Cost of after-sales support service</td>
+<td>(0.13)</td>
+<td>(0.13)</td>
+</tr>
+
+<tr>
+<td><strong>Arm's Length Price</strong></td>
+<td><strong>10.19</strong></td>
+<td><strong>10.69</strong></td>
+</tr>
+
+<tr>
+<td><strong>Arithmetic Mean [(₹10.19 + ₹10.69)/2]</strong></td>
+<td colspan="2" align="center"><strong>₹10.44 Crores</strong></td>
+</tr>
+
+<tr>
+<td>Less: Price charged to LMP Ltd.</td>
+<td colspan="2" align="center">₹9.50 Crores</td>
+</tr>
+
+<tr>
+<td><strong>Increase in Profit of TI Ltd.</strong></td>
+<td colspan="2" align="center"><strong>₹0.94 Crores</strong></td>
+</tr>
+
+</tbody>
+
+</table>
+
+`
+}
 
 ];
