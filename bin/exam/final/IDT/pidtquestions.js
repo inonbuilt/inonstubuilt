@@ -1,11 +1,11 @@
 const descriptiveQuestions = [
   {
-  "question_id": "IDT_MTP_I_1",
-  "source": "ICAI Mock Test Paper Series I - March 2024",
-  "chapter_name": "Input Tax Credit and Computation of Tax Liability",
-  "placement": 1,
-  "marks": 14,
-  "question_html": `
+    question_id: "IDT_MTP_I_1",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Input Tax Credit and Computation of Tax Liability",
+    placement: 1,
+    marks: 14,
+    question_html: `
     <p> Suyogya Pvt. Ltd., registered under GST, is engaged in the manufacture of 5-seater luxury cars at its factories located in the States of Rajasthan, Uttar Pradesh and Gujarat. The company has obtained registration in each of these States.</p>
     <p>The company reports the following details for a tax period pertaining to its factory located in Gujarat:</p>
     <table border="1" cellpadding="5" style="border-collapse: collapse; width: 100%;">
@@ -95,7 +95,7 @@ const descriptiveQuestions = [
     (B) The necessary conditions for availing ITC have been complied with by Suyogya Pvt. Ltd., wherever applicable.<br>
     You are required to make suitable assumptions, wherever necessary.</p>
   `,
-  "solution_html": `
+    solution_html: `
     
     <p><strong>Computation of ITC available with Suyogya Pvt. Ltd. for the given tax period</strong></p>
     <table border="1" cellpadding="5" style="border-collapse: collapse; width: 100%;">
@@ -304,15 +304,15 @@ const descriptiveQuestions = [
     (iii) SGST is utilised towards payment of SGST and IGST in that order. ITC of SGST shall be utilized only after ITC of IGST has been utilised fully.</p>
     <p><strong>14.</strong> Since the value of taxable supply other than zero-rated supply in the given tax period (₹ 14 lakh + ₹ 6 lakh + ₹ 2.50 lakh) does not exceed ₹ 50 lakh, provisions of rule 86B of the CGST Rules, 2017 are not applicable and Suyogya Ltd. can discharge its entire output tax liability for said period from the electronic credit ledger.</p>
     <p><strong>15.</strong> CGST and SGST are chargeable on intra-State inward and outward supplies and IGST is chargeable on inter-State inward and outward supplies. Rate of CGST, SGST and IGST applied is 9%, 9% and 18% except in case of renting of cars wherein the rate of CGST and SGST applied is 2.5% and 2.5% respectively.</p>
-  `
-},
-{
-  question_id: "IDT_MTP_I_2a",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Place of Supply",
-  placement: 2,
-  marks: 10,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_2a",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Place of Supply",
+    placement: 2,
+    marks: 10,
+    question_html: `
     <p> Determine the place of supply for the following independent cases:</p>
     <p><strong>(i)</strong> ABC Events, an event management company at Kolkata, organises two award functions for Bhushan Jewellers of Chennai (registered in Chennai, Tamil Nadu) at New Delhi and in Singapore.</p>
     <p><strong>(ii)</strong> Happy Planners (Bengaluru, Karnataka) is hired by Dr. Tripti (unregistered person based in Kochi, Kerala) to plan and organise her daughter's wedding at Mumbai, Maharashtra.</p>
@@ -320,25 +320,25 @@ const descriptiveQuestions = [
     <p><strong>(iv)</strong> Mr. Gogoi, an architect (New Delhi), provides professional services to Mr. George of New York in relation to his immovable property located in Pune.</p>
     <p><strong>(v)</strong> Mr. Jigar, an unregistered person based in New Delhi hires a yacht from a company based in London, UK for 20 days.</p>
   `,
-  solution_html: `
+    solution_html: `
     
     <p><strong>(i)</strong> When service by way of organization of an event is provided to a registered person, place of supply is the location of such person in terms of section 12 of the IGST Act, 2017. Since, in the given case, the award functions at New Delhi and Singapore are organized for Bhushan Jewellers (registered in Chennai), place of supply in both the cases is the location of Bhushan Jewellers, i.e., <strong>Chennai, Tamil Nadu</strong>.</p>
     <p><strong>(ii)</strong> As per section 12 of the IGST Act, 2017, when service by way of organization of an event is provided to an unregistered person, the place of supply is the location where the event is actually held and if the event is held outside India, the place of supply is the location of recipient. Since, in the given case, the service recipient [Dr. Tripti] is unregistered and event is held in India, place of supply is the location where the event is actually held, i.e., <strong>Mumbai, Maharashtra</strong>.</p>
     <p><strong>(iii)</strong> As per section 13 of the IGST Act, 2017, place of supply of services requiring physical presence of goods on which the services are to be performed is the location where the service is actually performed. Thus, in given case, the place of supply of installation service, which requires the physical presence of machinery, is the location where the service is actually performed, i.e., <strong>New Delhi</strong>.</p>
     <p><strong>(iv)</strong> As per section 13 of the IGST Act, 2017, place of supply of services supplied directly in relation to an immovable property is the location of immovable property located or intended to be located. Thus, in given case, the place of supply is the location of immovable property, i.e., <strong>Pune</strong>.</p>
     <p><strong>(v)</strong> As per section 13 of the IGST Act, 2017, place of supply of services consisting of hiring of means of transport, including yachts but excluding aircrafts and vessels, up to a period of 1 month is the location of the supplier of services. Thus, in given case, the place of supply is the location of the supplier of services, i.e., <strong>London</strong>.</p>
-  `
-},
-{
-  question_id: "IDT_MTP_I_2b",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Customs Valuation",
-  placement: 2,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_2b",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Customs Valuation",
+    placement: 2,
+    marks: 4,
+    question_html: `
     <p>Nilgiri Ltd., located in India, purchased a machine from Peter Inc., USA. The cost of the machine at the factory of Peter Inc. is US$ 10,000. Transport charges from the factory of Peter Inc. to the port for shipment is US$ 500. Handling charges paid for loading the machine in the ship are US$ 50. The freight charges from US port to India are US$ 1,000. The buying commission paid by Nilgiri Ltd. is US$ 50. However, actual insurance charges paid are not ascertainable. You are required to determine the assessable value of the machine provided the exchange rate to be considered is 1$ = ₹ 70.</p>
   `,
-  solution_html: `
+    solution_html: `
     <p><strong>Computation of assessable value of the imported goods</strong></p>
     <table border="1" cellpadding="5" style="border-collapse: collapse; width: 100%;">
       <thead>
@@ -394,15 +394,15 @@ const descriptiveQuestions = [
     <p><strong>Notes:</strong></p>
     <p><strong>1.</strong> As per Rule 10(2) of the Customs Valuation Rules, 2007, where the actual insurance charges are not ascertainable, they are included @ 1.125% of the FOB value of the goods.</p>
     <p><strong>2.</strong> Buying commission (US$ 50) paid by the importer is specifically excludible from the assessable value as per the provisions of the Customs Act, 1962.</p>
-  `
-},
-{
-  question_id: "IDT_MTP_I_3a",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Input Tax Credit",
-  placement: 3,
-  marks: 5,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_3a",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Input Tax Credit",
+    placement: 3,
+    marks: 5,
+    question_html: `
     <p> Shell Dune Limited is engaged in manufacture of taxable electronic goods. Its two manufacturing units are located in Mumbai and Nagpur and both the units are registered under GST in the State of Maharashtra. The company has another manufacturing unit in Bangalore, registered under GST in the State of Karnataka and a retail showroom located in Ahmedabad, registered under GST in the State of Gujarat.</p>
     <p>The company has provided the following details of the activities/ transactions undertaken in a tax period:</p>
     <table border="1" cellpadding="5" style="border-collapse: collapse; width: 100%;">
@@ -456,7 +456,7 @@ const descriptiveQuestions = [
     <br>
     <p>With the help of above information, you are required to determine the value of exempt supply under GST law as provided by Nagpur unit and Mumbai unit for the purpose of apportionment of ITC under section 17(3) of the CGST Act, 2017.</p>
   `,
-  solution_html: `
+    solution_html: `
     
     <p>As per section 17(3) of the CGST Act, 2017, value of exempt supply includes supplies on which the recipient is liable to pay tax on reverse charge basis, transactions in securities, sale of land and, subject to clause (b) of paragraph 5 of Schedule II, sale of building. As per explanation to section 17(3), the expression "value of exempt supply" shall not include the value of activities or transactions specified in Schedule III, except sale of land and, subject to clause (b) of paragraph 5 of Schedule II, sale of building.</p>
     
@@ -512,15 +512,15 @@ const descriptiveQuestions = [
         </tr>
       </tbody>
     </table>
-  `
-},
-{
-  question_id: "IDT_MTP_I_3b",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Exemptions from GST",
-  placement: 3,
-  marks: 5,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_3b",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Exemptions from GST",
+    placement: 3,
+    marks: 5,
+    question_html: `
     Determine whether GST is payable in respect of each of the following independent services provided by the registered persons:</p>
     <p><strong>(1)</strong> Service provided to a Governmental Authority by way of slum improvement and upgradation.</p>
     <p><strong>(2)</strong> Fees of ₹ 20,000 charged from office staff for in-house personality development course conducted by Banarsidas College providing education as part of a curriculum for obtaining a qualification recognised by Indian law.</p>
@@ -528,7 +528,7 @@ const descriptiveQuestions = [
     <p><strong>(4)</strong> Housekeeping service provided by M/s. Buff Ltd. to Bloom Montessori school, a play school, for cleaning its playground and classrooms for ₹ 30,000 per month.</p>
     <p><strong>(5)</strong> Grow Buds supplied “Gratitude Jot”, an online educational journal, to students of UKG class of Seeds Montessori School for ₹ 2,000.</p>
   `,
-  solution_html: `
+    solution_html: `
     
     <p><strong>(1) Status: Exempt (GST Not Payable)</strong><br>
     Services provided to a Governmental Authority by way of slum improvement and upgradation are specifically exempt from GST vide exemption notification under GST law.</p>
@@ -544,20 +544,20 @@ const descriptiveQuestions = [
     
     <p><strong>(5) Status: Taxable (GST Payable)</strong><br>
     Services provided to an educational institution by way of supply of online educational journals or periodicals are exempt from GST vide exemption notification. However, this specific exemption is not applicable to an educational institution providing services by way of pre-school education and education up to higher secondary school or equivalent. Therefore, the supply of an online journal to students of the UKG class of Seeds Montessori School is not exempt and is liable to GST.</p>
-  `
-},
-{
-  question_id: "IDT_MTP_I_3c",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Abatement of Duty on Damaged or Deteriorated Goods",
-  placement: 3,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_3c",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Abatement of Duty on Damaged or Deteriorated Goods",
+    placement: 3,
+    marks: 4,
+    question_html: `
     <p><strong>3. (c)</strong> Sun & Moon Ltd. imported a consignment from U.S.A (by sea). The value of consignment was ₹ 8,00,000 and total duty payable was ₹ 2,00,000. Company filed bill of entry for home consumption but before inspection and clearance for home consumption it found that the goods were damaged.</p>
     <p>On filing a representation to the Customs Department, proper officer refused the claim for abatement because goods were already unloaded. The proper officer is in agreement with the claim that the value of goods has come down to only ₹ 2,00,000.</p>
     <p>Examine the issue with reference to the relevant statutory provisions and calculate the amount of total duty payable.</p>
   `,
-  solution_html: `
+    solution_html: `
     
     <p><strong>Relevant Statutory Provisions:</strong></p>
     <p>As per the provisions of Section 22 of the Customs Act, 1962, an abatement of duty is allowed where it is shown to the satisfaction of the Assistant/Deputy Commissioner of Customs that any imported goods, other than warehoused goods, had been damaged at any time <strong>after the unloading thereof in India but before their examination</strong>, on account of any accident not due to any wilful act, negligence, or default of the importer.</p>
@@ -577,22 +577,22 @@ const descriptiveQuestions = [
     <p>$$\\text{Total Duty Payable} = \\left( \\frac{2,00,000}{8,00,000} \\right) \\times 2,00,000 = 50,000$$</p>
     
     <p>Hence, the amount of total customs duty payable by Sun & Moon Ltd. after abatement is <strong>₹ 50,000</strong>.</p>
-  `
-},
-{
-  question_id: "IDT_MTP_I_4a",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Zero Rated Supply and Export of Goods",
-  placement: 4,
-  marks: 5,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_4a",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Zero Rated Supply and Export of Goods",
+    placement: 4,
+    marks: 5,
+    question_html: `
     <p> Upasana Export House is engaged in manufacturing the taxable goods in the State of Haryana. It participates in Global Trade Fair to be held in United States of America in the month of January. It intends to send 100 units of goods manufactured by it to USA for display in the said exhibition.</p>
     <p>Upasana Export House is of the view that the activity of sending the goods out of India for exhibition is a zero-rated supply under GST law. However, its tax advisor does not concur with its view. Examine whether the view of Upasana Export House is correct.</p>
     <p>Assuming that Upasana Export House could not sell any goods at the exhibition and brings back entire 100 units to India (i) in February, (ii) in August,</p>
     <p>Discuss the requirement to issue invoice, if any, in each of the above independent cases.</p>
     <p>Would your answer be different if Upasana Export House sells an aggregate of 85 units of the taxable goods in USA exhibition on different dates in January and remaining 15 units are brought back on 31st January. The tax advisor of Upasana Export House advises it that the export of 85 units qualify as zero-rated supply and it should apply for refund of the unutilized ITC in respect of the same. Examine the technical veracity of the tax advisor’s advice.</p>
   `,
-  solution_html: `
+    solution_html: `
     <p>No, the view of Upasana Export House that the activity of sending the goods out of India for exhibition is a zero-rated supply, is <strong>not correct</strong>.</p>
     
     <p>As per <strong>section 7 read with Schedule I</strong> of the CGST Act, 2017, any activity/transaction is considered as supply only when it is made in the course or furtherance of business and made for a consideration, except for activities enumerated in Schedule I of the CGST Act, 2017.</p>
@@ -620,20 +620,20 @@ const descriptiveQuestions = [
     
     <p><strong>Regarding the sale of 85 units:</strong><br>
     When the 85 units are sold at the exhibition, the supply is completed on the date of approval/sale. Since these goods are consumed outside India, the transaction constitutes an <strong>export of goods</strong>, making it a valid <strong>zero-rated supply</strong> under Section 16 of the IGST Act. Therefore, the tax advisor's advice is <strong>technically correct</strong>: Upasana Export House can issue an export invoice for the 85 units and apply for a refund of unutilized Input Tax Credit (ITC) under Section 54(3) of the CGST Act, 2017.</p>
-  `
-},
-{
-  question_id: "IDT_MTP_I_4b",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Job Work",
-  placement: 4,
-  marks: 5,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_4b",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Job Work",
+    placement: 4,
+    marks: 5,
+    question_html: `
     <p>A2S Manufacturing unit had moulds delivered directly to a job worker from the supplier for making certain precision parts for use in the factory of A2S Manufacturing unit. As per agreement, the moulds were to remain with the job worker as long as work was being sent to him.</p>
     <p>After four years a departmental audit team that visited the job worker noticed the moulds and traced it to A2S Manufacturing unit. GST was demanded from A2S Manufacturing unit for taking ITC without receiving the moulds and furthermore for not bringing the moulds back after 3 years of delivery to the job worker.</p>
     <p>How should they respond to this?</p>
   `,
-  solution_html: `
+    solution_html: `
     <p>A2S Manufacturing unit should reply on the following lines:</p>
     <ul>
       <li>As per the provisions of the CGST Act, 2017, the principal may take Input Tax Credit (ITC) on capital goods sent to a job worker for job work without being first brought to his own place of business.</li>
@@ -641,19 +641,19 @@ const descriptiveQuestions = [
       <li>However, as per section 19(7) of the CGST Act, 2017, the time-limit of three years for bringing back the capital goods from the job worker <strong>does not apply to moulds, tools, dies, and fixtures</strong>.</li>
     </ul>
     <p>Accordingly, A2S Manufacturing unit has correctly availed the ITC in respect of the moulds delivered directly to their job worker, and there is no requirement to bring them back or pay tax on them even after the completion of four years.</p>
-  `
-},
-{
-  question_id: "IDT_MTP_I_4c",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Baggage Rules, 2016",
-  placement: 4,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_4c",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Baggage Rules, 2016",
+    placement: 4,
+    marks: 4,
+    question_html: `
     <p>Mr. Prashank, an Indian businessman, went to Dubai to explore new business avenues on 5th of May, 2023. Mr. Kishu, his 22 years eldest son also joined him in Australia after 4 months. They returned to India on 15.05.2024 and brought used personal effects worth ₹ 1,20,000, 2 music systems each worth ₹ 50,000. In addition to this, Mr. Prashank also brought the gold chain worth ₹ 48,000 [10 gram] and the gold bracelet brought by his son is worth ₹ 96,000 [20 grams].</p>
     <p>With reference to Baggage Rules, 2016, determine whether Mr. Prashank and his son will be required to pay any customs duty?</p>
   `,
-  solution_html: `
+    solution_html: `
     <p>As per Baggage Rules, 2016, an Indian resident arriving from any country other than Nepal, Bhutan or Myanmar, shall be allowed clearance free of duty articles in his bona fide baggage, that is to say, used personal effects and travel souvenirs; and articles [other than certain specified articles], upto the value of ₹ 50,000 if these are carried on the person or in the accompanied baggage of the passenger.</p>
     
     <p>Thus, there is no customs duty on used personal effects and travel souvenirs and general duty free baggage allowance is ₹ 50,000 per passenger. Thus, duty liability of Mr. Prashank and his son is nil for the used personal effects worth ₹ 1,20,000 and 2 music systems each worth ₹ 50,000.</p>
@@ -661,20 +661,20 @@ const descriptiveQuestions = [
     <p>As per Baggage Rules, 2016, the jewellery allowance is applicable only to a passenger residing abroad for more than 1 year. For the jewellery brought by a gentleman passenger, the duty free allowance is jewellery upto a weight of 20 grams with a value cap of ₹ 50,000.</p>
     
     <p>Consequently, there is no duty liability on the jewellery brought by Mr. Prashank as he had stayed abroad for period exceeding 1 year and weight of the jewellery brought by him is 10 grams with a value less than ₹ 50,000.</p>
-  `
-},
-{
-  question_id: "IDT_MTP_I_5a",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Offences and Penalties",
-  placement: 5,
-  marks: 5,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_5a",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Offences and Penalties",
+    placement: 5,
+    marks: 5,
+    question_html: `
     <p>Robecco Private Limited, registered under GST in the State of Uttar Pradesh, instructed Sambhav Transporters (Uttar Pradesh) to deliver certain taxable goods to ABC Enterprises in Uttar Pradesh on 10th January. The value of the goods is ₹ 6,80,000 which are chargeable to CGST & SGST @ 9% each. While the goods were in transit, the proper officer intercepted the goods and the truck in which the goods were being transported, under section 68 of the CGST Act, 2017. However, the driver of the truck failed to tender any document in relation to the goods in movement.</p>
     <p>The proper officer, after conducting the physical verification of the goods and the truck, decided to seize the goods and the truck and issued a notice under section 129(3) of the CGST Act, 2017 specifying the penalty payable (under CGST and SGST each) by Robecco Private Limited after giving it an opportunity of being heard.</p>
     <p>You are required to determine the amount of penalty payable (under CGST and SGST each) if Robecco Private Limited does not come forward for the payment of penalty. Further, discuss the suitable course of action for Sambhav Transporters if it intends to get its truck released.</p>
   `,
-  solution_html: `
+    solution_html: `
     <p>As per section 129 of the CGST Act, 2017, when the owner of goods does not come forward for the payment of penalty, the detained/seized goods and conveyance (used as a means of transport for carrying said goods) shall be released on payment of a penalty equal to the higher of the following:</p>
     <ul>
       <li>(i) 50% of the value of goods, or</li>
@@ -696,51 +696,51 @@ const descriptiveQuestions = [
       <li>(ii) ₹ 1,00,000</li>
     </ul>
     <p>Hence, Sambhav Transporters can get its truck released upon payment of <strong>₹ 1,00,000 (each under CGST and SGST)</strong>.</p>
-  `
-},
-{
-  question_id: "IDT_MTP_I_5b",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Audit",
-  placement: 5,
-  marks: 5,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_5b",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Audit",
+    placement: 5,
+    marks: 5,
+    question_html: `
     <p>ABC & Associates LLP (ABC), a firm of Chartered Accountants, was empanelled with the Commissioner of GST for appointment as Special Auditor under section 66 of the CGST Act, 2017. X Ltd., a registered person under GST, was selected by the Office of the Commissioner for special audit under section 66 of the CGST Act, 2017 for a financial year on account of irregularities noticed during scrutiny of returns. ABC was nominated by the Office of the Commissioner for special audit of X Ltd.</p>
     <p>The input tax credit claim by X Ltd. i.e. the auditee, under Form GST ITC- 01, was certified by one of the associate firms of ABC in favour of X Ltd. Such certificate was based on incorrect facts and against the eligibility criteria for input tax credit as per section 18 of the CGST Act, 2017. However, if ABC fails to exercise due diligence and the certificate is taken on record by ABC as an audit procedure and is relied upon at the time of finalization of audit report and submission of findings.</p>
     <p>Discuss briefly, what will be its implications under GST law?</p>
   `,
-  solution_html: `
+    solution_html: `
     <p>ABC audit team did not exercise due diligence to ascertain that the input tax credit availed by X Ltd. is not in compliance with the GST provisions. Instead, ABC relied on the certificate issued by its own associate firm which justified the incorrect input tax credit claim by X Ltd.</p>
     <p>In such a scenario, both ABC and the associate firm which issued the certificate to justify the input tax credit claim were aiding and abetting X Ltd. in wrongful availment of credit, which is an offence punishable with a penalty under section 122 of the CGST Act, 2017. This offence may also be punishable with imprisonment and a fine depending on the amount of default involved and subject to specified conditions. Further, ABC as well as its associate firm may be held guilty of professional misconduct.</p>
-  `
-},
-{
-  question_id: "IDT_MTP_I_5c",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Refunds under Customs",
-  placement: 5,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_5c",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Refunds under Customs",
+    placement: 5,
+    marks: 4,
+    question_html: `
     <p>Briefly explain whether interest is paid to the applicant in case of delayed refund by Customs Authorities? If yes, also explain the period for computation of interest?</p>
   `,
-  solution_html: `
+    solution_html: `
     <p>Yes, interest is to be paid to the applicant in case any duty ordered to be refunded to an applicant is not refunded within 3 months from the date of receipt of application for refund. The government is permitted to fix such interest between 5% and 30% per annum.</p>
     <p>Currently, the rate of interest is fixed at 6% per annum.</p>
     <p><strong>Period for computation of interest:</strong></p>
     <p>The interest is to be paid for the period beginning from the date immediately after the expiry of 3 months from the date of receipt of such application, till the date of refund of such duty.</p>
     <p>For the purpose of payment of interest, the application is deemed to have been received on the date on which a complete application, as acknowledged by the proper officer of Customs, has been made.</p>
-  `
-},
-{
-  question_id: "IDT_MTP_I_6a",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Advance Ruling",
-  placement: 6,
-  marks: 6,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_6a",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Advance Ruling",
+    placement: 6,
+    marks: 6,
+    question_html: `
     <p>Discuss briefly the relevant provisions of the CGST Act, 2017 regarding questions for which advance ruling can be sought.</p>
   `,
-  solution_html: `
+    solution_html: `
     <p>Advance ruling can be sought for the following questions:</p>
     <ul>
       <li>(a) classification of any goods or services or both</li>
@@ -751,15 +751,15 @@ const descriptiveQuestions = [
       <li>(f) whether applicant is required to be registered</li>
       <li>(g) whether any particular activity with respect to any goods and/or services, amounts to/results in a supply of goods and/or services, within the meaning of that term.</li>
     </ul>
-  `
-},
-{
-  question_id: "IDT_MTP_I_6b",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Miscellaneous Provisions",
-  placement: 6,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_6b",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Miscellaneous Provisions",
+    placement: 6,
+    marks: 4,
+    question_html: `
     <p>When shall the particulars relating to any proceedings or prosecution be published under GST laws? Discuss the relevant provisions.</p>
     <p><strong>OR</strong></p>
     <p>Briefly answer the following questions with reference to the provisions of rectification of mistakes/errors apparent on the face of record by any authority, under section 161 of the CGST Act, 2017?</p>
@@ -768,7 +768,7 @@ const descriptiveQuestions = [
       <li>(ii) What type of mistakes or errors can be rectified?</li>
     </ul>
   `,
-  solution_html: `
+    solution_html: `
     <p>When the Commissioner/authorised officer is of opinion that it is necessary or expedient in the public interest to publish the name of any person and any other particulars relating to any proceedings or prosecution under the CGST Act in respect of such person, it may cause to be published such name and particulars.</p>
     <p>No publication under this section shall be made in relation to any penalty imposed under the CGST Act until the time for presenting an appeal to the Appellate Authority under section 107 has expired without an appeal having been presented or the appeal, if presented, has been disposed off.</p>
     <p><strong>OR (Alternative Answer)</strong></p>
@@ -776,18 +776,18 @@ const descriptiveQuestions = [
       <li><strong>(i)</strong> Any authority who has passed or issued any decision or order or notice or certificate or any other document may rectify any error which is apparent on the face of record in such documents.</li>
       <li><strong>(ii)</strong> Errors or mistakes which are apparent on the face of record may be rectified. Rectification can only be of an error apparent from the record. It is a settled law that a decision on a debatable point of law is not a mistake apparent from the record.</li>
     </ul>
-  `
-},
-{
-  question_id: "IDT_MTP_I_6c",
-  source: "ICAI Mock Test Paper Series I - March 2024",
-  chapter_name: "Foreign Trade Policy 2023",
-  placement: 6,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_MTP_I_6c",
+    source: "ICAI Mock Test Paper Series I - March 2024",
+    chapter_name: "Foreign Trade Policy 2023",
+    placement: 6,
+    marks: 4,
+    question_html: `
     <p>State any four benefits available to the status holders under the Foreign Trade Policy 2023.</p>
   `,
-  solution_html: `
+    solution_html: `
     <p>Status holders are eligible for the following privileges under FTP:</p>
     <ul>
       <li><strong>(1)</strong> Authorisation and custom clearances for both imports and exports on self-declaration basis.</li>
@@ -800,19 +800,19 @@ const descriptiveQuestions = [
       <li><strong>(8)</strong> The status holders would be entitled to preferential treatment and priority in handling of their consignments by the concerned agencies.</li>
     </ul>
     <p><em>Note: Any four points may be mentioned.</em></p>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_1",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Input Tax Credit",
-    "Utilisation of Input Tax Credit",
-    "Zero Rated Supply"
-  ],
-  placement: 1,
-  marks: 14,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_1",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: [
+      "Input Tax Credit",
+      "Utilisation of Input Tax Credit",
+      "Zero Rated Supply",
+    ],
+    placement: 1,
+    marks: 14,
+    question_html: `
     <p>Gehna Ltd. of Jodhpur (Rajasthan) is a registered manufacturer of cosmetic products. Gehna Ltd. has furnished following details for a tax period:</p>
 
     <h4>Details of Outward Supplies</h4>
@@ -917,7 +917,7 @@ const descriptiveQuestions = [
       <li>Net GST payable [CGST, SGST or IGST, as the case may be] from Electronic Cash Ledger by Gehna Ltd. for the tax period.</li>
     </ol>
   `,
-  solution_html: `
+    solution_html: `
     <h3>Computation of ITC available with Gehna Ltd.</h3>
 
     <table>
@@ -1095,19 +1095,19 @@ const descriptiveQuestions = [
 
       <li>Since export of goods is a zero-rated supply, there will be no apportionment of ITC and full credit will be available.</li>
     </ol>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_2a",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Place of Supply of Services",
-    "Levy and Collection of GST",
-    "Exemptions"
-  ],
-  placement: 2,
-  marks: 10,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_2a",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: [
+      "Place of Supply of Services",
+      "Levy and Collection of GST",
+      "Exemptions",
+    ],
+    placement: 2,
+    marks: 10,
+    question_html: `
     <p>Revive Pvt. Ltd. owned by Amit Malik - a famous classical singer - wishes to organise an <strong>'Amit Malik Music Concert'</strong> in Gurugram (Haryana).</p>
 
     <p>Revive Pvt. Ltd. (registered in Ludhiana, Punjab) enters into a contract with an event management company, <strong>Sajal (P) Ltd.</strong> (registered in Delhi) for organising the said music concert at an agreed consideration of <strong>₹10,00,000</strong>.</p>
@@ -1122,7 +1122,7 @@ const descriptiveQuestions = [
 
     <p><strong>Note:</strong> Rate of CGST and SGST is 9% each and IGST is 18%. All the amounts given above are exclusive of taxes, wherever applicable.</p>
   `,
-  solution_html: `
+    solution_html: `
     <p>In the given situation, <strong>three supplies</strong> are involved:</p>
 
     <ol type="i">
@@ -1214,18 +1214,15 @@ const descriptiveQuestions = [
     <p>There will be <strong>no IGST liability</strong> if the consideration for the ticket is <strong>₹450</strong> as the inter-State services by way of right to admission to, inter alia, musical performance are exempt from IGST, if the consideration for right to admission to the event is <strong>not more than ₹500 per person</strong>.</p>
 
     <p>However, there will be <strong>no change</strong> in the answer in respect of supplies mentioned in points <strong>(ii)</strong> and <strong>(iii)</strong> above.</p>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_2b",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Customs Valuation",
-    "Computed Value Method"
-  ],
-  placement: 2,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_2b",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: ["Customs Valuation", "Computed Value Method"],
+    placement: 2,
+    marks: 4,
+    question_html: `
     <p>Mr. T imported certain goods from a related person Mr. R of US and transaction value has been rejected. Rules 4 and 5 of the Customs Valuation (Determination of Value of Imported Goods) Rules, 2007 are found inapplicable as no similar/identical goods are imported in India.</p>
 
     <p>Mr. T furnishes cost related data of imports and requests customs authorities to determine value accordingly as per <strong>rule 8</strong> of the Customs Valuation (Determination of Value of Imported Goods) Rules, 2007.</p>
@@ -1287,7 +1284,7 @@ const descriptiveQuestions = [
 
     <p><strong>Can the request of Mr. T be legally acceptable? If so, compute the assessable value under the Customs Act, 1962.</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <p>The value of the imported goods is determined under <strong>rule 8</strong> of the Customs Valuation (Determination of Value of Imported Goods) Rules, 2007 (hereinafter referred to as <strong>Import Valuation Rules</strong>) if the same cannot be determined under the earlier rules.</p>
 
     <p>However, the order of application of <strong>rules 7 and 8</strong> can be reversed <strong>at the request of the importer and with the approval of the proper officer.</strong></p>
@@ -1375,17 +1372,15 @@ const descriptiveQuestions = [
         </tr>
       </tbody>
     </table>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_3a",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Input Service Distributor (ISD)"
-  ],
-  placement: 3,
-  marks: 5,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_3a",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: ["Input Service Distributor (ISD)"],
+    placement: 3,
+    marks: 5,
+    question_html: `
     <p>Moti Weavers, at Pune, Maharashtra is a registered <strong>Input Service Distributor (ISD)</strong> and intends to distribute ITC for the month of March. The following are the details available for such distribution:</p>
 
     <table>
@@ -1458,7 +1453,7 @@ const descriptiveQuestions = [
 
     <p><strong>Determine the manner of input tax distribution.</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <h3>Distribution of Input Tax Credit</h3>
 
     <ol type="i">
@@ -1526,19 +1521,19 @@ const descriptiveQuestions = [
         <p>ITC of <strong>₹10,000</strong> pertaining to March (last year) <strong>cannot be distributed</strong> in March of the current year since <strong>ITC available for distribution in a month is required to be distributed in the same month.</strong></p>
       </li>
     </ol>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_3b",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Time of Supply",
-    "Composite and Mixed Supply",
-    "Classification of Supply"
-  ],
-  placement: 3,
-  marks: 5,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_3b",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: [
+      "Time of Supply",
+      "Composite and Mixed Supply",
+      "Classification of Supply",
+    ],
+    placement: 3,
+    marks: 5,
+    question_html: `
     <p>MNO Ltd., a publishing and printing house registered in Maharashtra, is engaged in supply of books, letter cards, envelopes, guides and reference materials.</p>
 
     <p>The following information is provided by the company:</p>
@@ -1591,7 +1586,7 @@ const descriptiveQuestions = [
 
     <p><strong>Determine the time of supply(ies) for the purpose of payment of tax.</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <p>It has been clarified vide a Circular that in case of printing of books where only content is supplied by the person who owns the usage rights to the intangible inputs while the physical inputs including paper used for printing belong to the printer, supply of printing <strong>[of the content supplied by the recipient of supply]</strong> is the principal supply and therefore, such supplies would constitute <strong>supply of service</strong>.</p>
 
     <p>In case of supply of printed envelopes by the printer using its physical inputs including paper to print the design, logo etc. supplied by the recipient of goods, predominant supply is <strong>supply of goods</strong> and the supply of printing of the content <strong>[supplied by the recipient of supply]</strong> is ancillary to the principal supply of goods and therefore, such supplies would constitute <strong>supply of goods</strong>.</p>
@@ -1621,18 +1616,15 @@ const descriptiveQuestions = [
     <p>Since in the given case, invoice for the services is <strong>not issued within 30 days</strong>, the time of supply for the advance received is the <strong>date of receipt of payment, i.e. 20th March</strong>, being earlier than the date of provision of service.</p>
 
     <p>However, the time of supply for the balance payment is the <strong>date of provision of service, i.e. 10th April</strong>, being earlier than the date of receipt of balance payment.</p>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_3c",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Customs Exemptions",
-    "Judicial Pronouncements"
-  ],
-  placement: 3,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_3c",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: ["Customs Exemptions", "Judicial Pronouncements"],
+    placement: 3,
+    marks: 4,
+    question_html: `
     <p>M/s Clear Energy Ltd. is engaged in oil exploration and has imported software containing seismic data.</p>
 
     <p>The importer is entitled to exemption from customs duty subject to the condition that an <strong>"Essentiality Certificate"</strong> granted by the Director General of Hydrocarbons is produced at the time of importation of the goods.</p>
@@ -1643,7 +1635,7 @@ const descriptiveQuestions = [
 
     <p><strong>Examine briefly whether the department's action is sustainable in law.</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <p>This issue has been addressed by the <strong>Supreme Court</strong> in the case of <strong>Commissioner of Customs v. Tullow India Operations Ltd. (2005) 189 ELT 401 (SC)</strong>.</p>
 
     <p>The Apex Court has observed that if a condition is not within the power and control of the importer and depends upon the acts of public functionaries, non-compliance of such a condition, subject to just exceptions, cannot be held to be a condition precedent which would disable the importer from obtaining the benefit for all times to come.</p>
@@ -1655,25 +1647,25 @@ const descriptiveQuestions = [
     <p>The <strong>Directorate General of Hydrocarbons</strong> is under the Ministry of Petroleum and Natural Gas and such a public functionary is supposed to grant the Essentiality Certificate within a reasonable time so as to enable the importer to avail the benefits under the notification.</p>
 
     <p><strong>Hence, the action of the Customs Department in rejecting the exemption claim is not sustainable in law.</strong></p>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_4a",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "OIDAR Services",
-    "Import of Services",
-    "Non-Taxable Online Recipient",
-    "Levy and Collection of IGST"
-  ],
-  placement: 4,
-  marks: 5,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_4a",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: [
+      "OIDAR Services",
+      "Import of Services",
+      "Non-Taxable Online Recipient",
+      "Levy and Collection of IGST",
+    ],
+    placement: 4,
+    marks: 5,
+    question_html: `
     <p>Mr. Goldy, a Chartered Accountant, being a partner in GST registered firm orders a gaming software for his son Mr. Tony from a company located in USA. He makes the payment for the same from his personal bank account.</p>
 
     <p><strong>Examine whether the transaction will be liable to GST. If yes, in whose hands the tax liability will arise?</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <p>The supply of gaming software is in the nature of <strong>OIDAR service</strong>.</p>
 
     <p>The transaction is for personal consumption of <strong>Mr. Goldy</strong> and the payment has also been made from the <strong>personal bank account</strong> of Mr. Goldy and not from the bank account of his GST registered firm.</p>
@@ -1689,21 +1681,21 @@ const descriptiveQuestions = [
     <p>Tax on service supplied by any person located in a non-taxable territory to any person <strong>other than a non-taxable online recipient</strong> is payable by the recipient of such service under <strong>reverse charge</strong>.</p>
 
     <p>Therefore, tax on OIDAR services provided by the company located in USA to <strong>Mr. Goldy</strong>, a <strong>non-taxable online recipient</strong>, will be payable by <strong>such company under forward charge.</strong></p>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_4b",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Job Work",
-    "Schedule II",
-    "Value of Supply",
-    "Supply of Services",
-    "Waste and Scrap"
-  ],
-  placement: 4,
-  marks: 5,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_4b",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: [
+      "Job Work",
+      "Schedule II",
+      "Value of Supply",
+      "Supply of Services",
+      "Waste and Scrap",
+    ],
+    placement: 4,
+    marks: 5,
+    question_html: `
     <p>Anuj Pvt. Ltd., a registered manufacturer, sent steel cabinets worth <strong>₹50 lakh</strong> under a delivery challan to <strong>M/s Siddhi Tools</strong>, a registered job worker, for job work on <strong>28th January</strong>.</p>
 
     <p>The scope of job work included mounting the steel cabinets on a metal frame and sending the mounted panels back to Anuj Pvt. Ltd. The metal frame is to be supplied by M/s Siddhi Tools.</p>
@@ -1716,7 +1708,7 @@ const descriptiveQuestions = [
 
     <p>Assuming GST rate for metal frame as <strong>28%</strong>, for metal waste as <strong>12%</strong> and standard rate for services as <strong>18%</strong>, you are required to compute the GST liability of <strong>M/s Siddhi Tools</strong>. Also, give reason(s) for inclusion or exclusion of the value of cabinets in the job charges for the purpose of payment of GST by M/s Siddhi Tools.</p>
   `,
-  solution_html: `
+    solution_html: `
     <p>As per <strong>para 3 of Schedule II to the CGST Act, 2017</strong>, any treatment or process which is applied to another person's goods is a <strong>supply of services</strong> and accordingly is subject to GST rate applicable for services.</p>
 
     <p>In the given case, <strong>M/s Siddhi Tools (job worker)</strong> undertakes the process of mounting the steel cabinets of <strong>Anuj Pvt. Ltd. (principal)</strong> on metal frames.</p>
@@ -1761,19 +1753,15 @@ const descriptiveQuestions = [
         </tr>
       </tbody>
     </table>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_4c",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Customs",
-    "Baggage Rules, 2016",
-    "Customs Duty on Baggage"
-  ],
-  placement: 4,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_4c",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: ["Customs", "Baggage Rules, 2016", "Customs Duty on Baggage"],
+    placement: 4,
+    marks: 4,
+    question_html: `
     <p>Mr. Oliver of foreign origin has come on travel visa, to tour in India. He carries with him, as part of baggage, the following:</p>
 
     <table>
@@ -1805,7 +1793,7 @@ const descriptiveQuestions = [
 
     <p><strong>Determine customs duty payable, if the effective rate of customs duty is 38.50% inclusive of social welfare surcharge. Ignore Agriculture Infrastructure and Development Cess.</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <p>As per the <strong>Baggage Rules, 2016</strong>, tourist of foreign origin, excluding infant, is allowed duty free clearance of:</p>
 
     <ol type="i">
@@ -1859,20 +1847,20 @@ const descriptiveQuestions = [
     </table>
 
     <p><strong>Note:</strong> Fire arms, cartridges of firearms exceeding 50 and cigarettes exceeding 100 sticks are not chargeable to rate applicable to baggage. These items are charged @ <strong>100%</strong> applicable to baggage under <strong>Heading 9803 of the Customs Tariff.</strong></p>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_5a",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Demand and Recovery",
-    "Penalty",
-    "Section 73",
-    "Self-assessed Tax"
-  ],
-  placement: 5,
-  marks: 5,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_5a",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: [
+      "Demand and Recovery",
+      "Penalty",
+      "Section 73",
+      "Self-assessed Tax",
+    ],
+    placement: 5,
+    marks: 5,
+    question_html: `
     <p>Henry & Co. self-assessed its CGST liability as <strong>₹90,000</strong> for the month of April, but failed to make the payment.</p>
 
     <p>Subsequently the Department initiated penal proceedings against Henry & Co. for recovery of penalty under <strong>section 73 of the CGST Act, 2017</strong> for failure to pay GST and issued show cause notice on <strong>10th August</strong> which was received by Henry & Co. on <strong>14th August</strong>.</p>
@@ -1883,7 +1871,7 @@ const descriptiveQuestions = [
 
     <p><strong>Examine the correctness of the stand taken by the Department with reference to the provisions of the CGST Act, 2017. Explain the relevant provisions in brief.</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <p>Due date for payment of tax for the month of April is <strong>20th May</strong>.</p>
 
     <p>Where self-assessed tax is not paid within <strong>30 days from the due date</strong> of payment of such tax, penalty equivalent to <strong>10% of tax or ₹10,000, whichever is higher</strong>, is payable.</p>
@@ -1902,27 +1890,27 @@ const descriptiveQuestions = [
     <p>Equivalent amount of penalty is payable under the <strong>SGST/UTGST Act, 2017</strong>.</p>
 
     <p>Hence, the stand taken by the Department that penalty will be levied on <strong>Henry & Co.</strong> is <strong>correct</strong>, but the amount of penalty of <strong>₹45,000</strong> under the <strong>CGST Act, 2017</strong> is <strong>not correct</strong>.</p>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_5b",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Appeals",
-    "Appellate Tribunal",
-    "Place of Supply",
-    "Supreme Court"
-  ],
-  placement: 5,
-  marks: 5,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_5b",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: [
+      "Appeals",
+      "Appellate Tribunal",
+      "Place of Supply",
+      "Supreme Court",
+    ],
+    placement: 5,
+    marks: 5,
+    question_html: `
     <p>Mr. Raman had filed an appeal before the Appellate Tribunal against an order of the Appellate Authority where the issue involved relates to place of supply. The order of Appellate Tribunal is also in favour of the Department.</p>
 
     <p>Mr. Raman now wants to file an appeal against the decision of the Appellate Authority as he feels the stand taken by him is correct.</p>
 
     <p><strong>You are required to advise him suitably with regard to filing of an appeal before the appellate forum higher than the Appellate Tribunal.</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <p>An appeal against orders passed by the <strong>State Benches of the Appellate Tribunal</strong> would lie to the <strong>High Court</strong>, if the High Court is satisfied that such an appeal involves a <strong>substantial question of law</strong>.</p>
 
     <p>However, an appeal against orders passed by the <strong>Principal Bench of the Appellate Tribunal</strong> would lie to the <strong>Supreme Court</strong> and not to the High Court.</p>
@@ -1932,22 +1920,22 @@ const descriptiveQuestions = [
     <p>Since the issue involved in <strong>Mr. Raman's</strong> case relates to <strong>place of supply</strong>, the appeal in his case would have been decided by the <strong>Principal Bench of the Appellate Tribunal</strong>.</p>
 
     <p>Thus, <strong>Mr. Raman</strong> will have to file an appeal with the <strong>Supreme Court</strong> and not with the <strong>High Court</strong>.</p>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_5c",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Customs Act, 1962",
-    "Warehousing",
-    "Improper Removal of Goods"
-  ],
-  placement: 5,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_5c",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: [
+      "Customs Act, 1962",
+      "Warehousing",
+      "Improper Removal of Goods",
+    ],
+    placement: 5,
+    marks: 4,
+    question_html: `
     <p><strong>Enumerate the circumstances under which goods are considered to have been removed improperly from a warehouse under the Customs Act, 1962.</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <p>Under the <strong>Customs Act, 1962</strong>, goods shall be considered to have been <strong>removed improperly from a warehouse</strong> in any of the following circumstances:</p>
 
     <ol type="a">
@@ -1963,22 +1951,22 @@ const descriptiveQuestions = [
         <p>Where any goods in respect of which a <strong>bond has been executed</strong> and which have <strong>not been cleared for home consumption or export</strong> are <strong>not duly accounted for to the satisfaction of the proper officer</strong>.</p>
       </li>
     </ol>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_6a",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Advance Ruling",
-    "Appeal to Appellate Authority for Advance Ruling (AAAR)",
-    "Sections 100 & 101 of the CGST Act, 2017"
-  ],
-  placement: 6,
-  marks: 6,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_6a",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: [
+      "Advance Ruling",
+      "Appeal to Appellate Authority for Advance Ruling (AAAR)",
+      "Sections 100 & 101 of the CGST Act, 2017",
+    ],
+    placement: 6,
+    marks: 6,
+    question_html: `
     <p><strong>Briefly explain whether an appeal could be filed before the Appellate Authority against order of Authority for Advance Ruling (AAR), with reference to sections 100 and 101 of the CGST Act, 2017.</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <p>Yes, the concerned officer, jurisdictional officer or applicant aggrieved by any advance ruling may appeal to the <strong>Appellate Authority for Advance Ruling (AAAR)</strong> within <strong>30 days</strong> [extendible by another <strong>30 days</strong>] from the date on which such ruling is communicated to him in the prescribed form and manner.</p>
 
     <p>The <strong>AAAR</strong> must pass an order confirming or modifying the ruling appealed against within a period of <strong>90 days</strong> of the filing of an appeal, after hearing the parties to the appeal.</p>
@@ -1986,21 +1974,18 @@ const descriptiveQuestions = [
     <p>If members of the <strong>AAAR</strong> differ on any point referred to in appeal, it shall be deemed that <strong>no advance ruling can be issued</strong> in respect of the question under appeal.</p>
 
     <p>A copy of the advance ruling pronounced by the <strong>AAAR</strong> is sent to the <strong>applicant, concerned officer, jurisdictional officer and to the Authority</strong>.</p>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_6b",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Anti-profiteering",
-    "Rule 127 of the CGST Rules, 2017"
-  ],
-  placement: 6,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_6b",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: ["Anti-profiteering", "Rule 127 of the CGST Rules, 2017"],
+    placement: 6,
+    marks: 4,
+    question_html: `
     <p><strong>Elaborate the functions of Anti-profiteering Authority under GST laws? Discuss the relevant provisions.</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <p>The Authority shall discharge the following functions, namely:</p>
 
     <ol type="i">
@@ -2033,21 +2018,18 @@ const descriptiveQuestions = [
         <p>To furnish a <strong>performance report</strong> to the <strong>GST Council</strong> by the <strong>10th of the month succeeding each quarter</strong> [Rule 127 of the CGST Rules, 2017].</p>
       </li>
     </ol>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_6b_OR",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Service of Notice",
-    "Section 169 of the CGST Act, 2017"
-  ],
-  placement: 6,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_6b_OR",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: ["Service of Notice", "Section 169 of the CGST Act, 2017"],
+    placement: 6,
+    marks: 4,
+    question_html: `
     <p><strong>State the various modes of service of a notice, decision, order, summons, or any other communication under the CGST Act, 2017 on the taxable person or any other person to whom it is intended.</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <p>Any decision, order, summons, notice or other communication under the <strong>CGST Act, 2017</strong> and the rules made thereunder can be served by any one of the following methods:</p>
 
     <ol type="a">
@@ -2077,22 +2059,22 @@ const descriptiveQuestions = [
     </ol>
 
     <p><strong>Note:</strong> Any four points may be mentioned.</p>
-  `
-},
-{
-  question_id: "IDT_APR24_MTP_II_6c",
-  source: "ICAI Mock Test Paper Series II - April 2024",
-  chapter_name: [
-    "Foreign Trade Policy",
-    "Advance Authorisation",
-    "Advance Authorisation for Annual Requirements"
-  ],
-  placement: 6,
-  marks: 4,
-  question_html: `
+  `,
+  },
+  {
+    question_id: "IDT_APR24_MTP_II_6c",
+    source: "ICAI Mock Test Paper Series II - April 2024",
+    chapter_name: [
+      "Foreign Trade Policy",
+      "Advance Authorisation",
+      "Advance Authorisation for Annual Requirements",
+    ],
+    placement: 6,
+    marks: 4,
+    question_html: `
     <p><strong>State salient aspects of Advance authorisation for annual requirements to exporters.</strong></p>
   `,
-  solution_html: `
+    solution_html: `
     <p>The salient aspects of <strong>Advance Authorisation for Annual Requirements</strong> are as follows:</p>
 
     <ol>
@@ -2108,6 +2090,6 @@ const descriptiveQuestions = [
         <p>Annual Advance Authorisation, in terms of <strong>CIF value of imports</strong>, will be granted up to <strong>300% of the FOB value of physical exports</strong> in the preceding financial year and/or <strong>FOR value of deemed exports</strong> in the preceding financial year, or <strong>₹1 crore, whichever is higher</strong>.</p>
       </li>
     </ol>
-  `
-}
+  `,
+  },
 ];
