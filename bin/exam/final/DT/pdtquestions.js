@@ -6920,6 +6920,2437 @@ not be available in respect of such transaction.
 </table>
 
 `
+},
+
+{
+  question_id: "DT_OctMTP24_II_1",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Computation of Business Income",
+    "House Property",
+    "Income from Other Sources",
+    "Depreciation",
+    "Section 40A(3)",
+    "Section 40(a)(ia)",
+    "Section 43B",
+    "Section 80GGB",
+    "Section 115BBG",
+    "ICDS II",
+    "Additional Depreciation"
+  ],
+  placement: 1,
+  marks: 14,
+
+  question_html: `
+
+<p>
+Statement of Profit and Loss of SJ Industries Ltd., engaged in production and marketing of diversified products, shows a net profit of ₹72,00,000 for the financial year ended 31st March, 2024 after charge of the following items:
+</p>
+
+<p><strong>A. Items debited to the Statement of Profit and Loss:</strong></p>
+
+<ol type="i">
+<li>Depreciation as per Companies Act, 2013: ₹24,00,000.</li>
+
+<li>Interest amounting to ₹60,000 for short payment of advance tax paid as per section 234B relating to Assessment Year 2023-24.</li>
+
+<li>Interest and borrowing costs amounting to ₹9,50,000 and ₹7,00,000 though not meeting the criteria for recognition as a component of cost, included in cost of opening and closing inventory, respectively.</li>
+
+<li>Expenditure of ₹41,000 paid in cash comprising of ₹22,000 directly paid to producer of dairy farming products and ₹19,000 paid towards printing and stationery items to a trader.</li>
+
+<li>₹3,50,000 paid to a contractor for carrying out repair work at factory premises. Tax was not deducted at source on this payment.</li>
+
+<li>₹35,000 towards expenditure for earning income from transfer of carbon credits.</li>
+
+<li>Contribution to electoral trust: ₹3,00,000 paid by way of cheque.</li>
+
+<li>Expenditure towards advertising charges in a brochure of a political party registered under section 29A of the Representation of the People Act, 1951: ₹40,000 paid by way of cheque.</li>
+
+<li>Interest on term loan obtained from Co-operative Bank not paid before the due date of filing of return of income: ₹2,60,000.</li>
+
+<li>Actual contribution to the pension scheme of employees: ₹1,50,000.</li>
+</ol>
+
+<p><strong>B. Items credited to the Statement of Profit and Loss:</strong></p>
+
+<ol type="i">
+<li>Unrealised rent of ₹3,80,000 pertaining to financial years 2020-21 and 2021-22 recovered during the year in respect of a commercial property owned by the company, which was sold by the company on 23.03.2024.</li>
+
+<li>Dividend from a specified foreign company: ₹1,60,000.</li>
+
+<li>Profit of ₹3,00,000 received from hedging contract entered into for meeting loss in foreign currency payments towards an imported printing machinery valued at ₹95 lakhs, installed on 15th December, 2023 and put to use from that date.</li>
+
+<li>Interest from banks on fixed deposits (net of TDS @10%): ₹1,35,000.</li>
+</ol>
+
+<p><strong>Additional Information:</strong></p>
+
+<ol>
+<li>Depreciation as per Income-tax Rules: ₹28,00,000 exclusive of depreciation on the imported printing machinery referred to in item B(iii).</li>
+
+<li>Expenditure pertaining to previous financial year allowed on due basis, but paid in current financial year in cash on 18.01.2024: ₹35,000.</li>
+
+<li>Audit fee for the previous year 2022-23: ₹75,000. TDS deducted but not paid in the relevant previous year. However, TDS was paid on 31.12.2023.</li>
+
+<li>Income from transfer of Carbon Credits amounting to ₹4,00,000 included in Net Profit (before tax).</li>
+
+<li>The eligible salary and dearness allowance for the pension scheme referred to under section 80CCD is ₹10,00,000.</li>
+</ol>
+
+<p>
+Compute the total income of SJ Industries Ltd. for Assessment Year 2024-25 as per the normal provisions of the Income-tax Act, 1961. Give brief reasons for the treatment given to each of the items considered in computation of income of the company.
+</p>
+
+<p>
+Assume that the company does not opt for taxation under section 115BAA.
+</p>
+
+`,
+
+  solution_html: `
+
+<h4>Computation of Total Income of SJ Industries Ltd. for A.Y. 2024-25</h4>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td colspan="2"><strong>I. Income from House Property</strong></td>
+</tr>
+
+<tr>
+<td>Unrealised rent taxable under section 25A</td>
+<td>3,80,000</td>
+</tr>
+
+<tr>
+<td>Less: Deduction under section 24(a) @30%</td>
+<td>(1,14,000)</td>
+</tr>
+
+<tr>
+<td><strong>Income from House Property</strong></td>
+<td><strong>2,66,000</strong></td>
+</tr>
+
+<tr>
+<td colspan="2"><strong>II. Profits and Gains from Business or Profession</strong></td>
+</tr>
+
+<tr>
+<td>Net Profit as per Statement of Profit and Loss</td>
+<td>72,00,000</td>
+</tr>
+
+<tr>
+<td colspan="2"><strong>Add: Items debited but to be considered separately / disallowed</strong></td>
+</tr>
+
+<tr>
+<td>Depreciation as per Companies Act, 2013</td>
+<td>24,00,000</td>
+</tr>
+
+<tr>
+<td>
+Interest under section 234B for short payment of advance tax. Interest for default in payment of income-tax is not allowable under section 40(a)(ii).
+</td>
+<td>60,000</td>
+</tr>
+
+<tr>
+<td>
+Interest and borrowing cost wrongly included in opening and closing inventory as per ICDS-II (₹9,50,000 − ₹7,00,000).
+</td>
+<td>2,50,000</td>
+</tr>
+
+<tr>
+<td>
+Cash payment towards printing & stationery in excess of ₹10,000 disallowable under section 40A(3). Payment to producer of dairy products is covered by Rule 6DD and hence allowable.
+</td>
+<td>19,000</td>
+</tr>
+
+<tr>
+<td>
+30% of payment to contractor without deduction of tax at source [Section 40(a)(ia)].
+</td>
+<td>1,05,000</td>
+</tr>
+
+<tr>
+<td>
+Expenditure relating to transfer of Carbon Credits. No deduction is allowable since income is taxable under section 115BBG.
+</td>
+<td>35,000</td>
+</tr>
+
+<tr>
+<td>
+Contribution to Electoral Trust (added back while computing business income).
+</td>
+<td>3,00,000</td>
+</tr>
+
+<tr>
+<td>
+Advertisement in brochure of political party disallowable under section 37(2B).
+</td>
+<td>40,000</td>
+</tr>
+
+<tr>
+<td>
+Interest payable to Co-operative Bank not paid before due date of return [Section 43B].
+</td>
+<td>2,60,000</td>
+</tr>
+
+<tr>
+<td>
+Contribution towards pension scheme in excess of allowable limit under section 36(1)(iva).
+</td>
+<td>50,000</td>
+</tr>
+
+<tr>
+<td><strong>Total Additions</strong></td>
+<td><strong>35,19,000</strong></td>
+</tr>
+
+<tr>
+<td><strong>Business Income before further adjustments</strong></td>
+<td><strong>1,07,19,000</strong></td>
+</tr>
+
+<tr>
+<td>
+Add: Cash payment of ₹35,000 allowed in earlier year but paid in cash during current year [Section 40A(3A)].
+</td>
+<td>35,000</td>
+</tr>
+
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>1,07,54,000</strong></td>
+</tr>
+
+<tr>
+<td colspan="2"><strong>Less: Items credited but not taxable under Business Head / allowable deductions</strong></td>
+</tr>
+
+<tr>
+<td>Unrealised rent taxable under House Property</td>
+<td>(3,80,000)</td>
+</tr>
+
+<tr>
+<td>Dividend from specified foreign company taxable under Income from Other Sources</td>
+<td>(1,60,000)</td>
+</tr>
+
+<tr>
+<td>Profit on hedging contract adjusted against cost of imported machinery</td>
+<td>(3,00,000)</td>
+</tr>
+
+<tr>
+<td>Interest on bank fixed deposits taxable under Income from Other Sources</td>
+<td>(1,35,000)</td>
+</tr>
+
+<tr>
+<td>Audit fee of earlier year allowable on payment of TDS (30% of ₹75,000)</td>
+<td>(22,500)</td>
+</tr>
+
+<tr>
+<td>Income from transfer of Carbon Credits – already credited; no further adjustment required</td>
+<td>Nil</td>
+</tr>
+
+<tr>
+<td><strong>Total deductions</strong></td>
+<td><strong>(9,97,500)</strong></td>
+</tr>
+
+<tr>
+<td><strong>Business Income before depreciation under Income-tax Act</strong></td>
+<td><strong>97,56,500</strong></td>
+</tr>
+<tr>
+<td colspan="2"><strong>Less: Depreciation under section 32</strong></td>
+</tr>
+
+<tr>
+<td>Depreciation as per Income-tax Rules</td>
+<td>(28,00,000)</td>
+</tr>
+
+<tr>
+<td>Add: Depreciation @7.5% on imported printing machinery [₹95,00,000 − ₹3,00,000 = ₹92,00,000], since the machinery was put to use for less than 180 days</td>
+<td>(6,90,000)</td>
+</tr>
+
+<tr>
+<td>Add: Additional depreciation @10% on ₹92,00,000, assuming the conditions for claiming additional depreciation are satisfied</td>
+<td>(9,20,000)</td>
+</tr>
+
+<tr>
+<td><strong>Total depreciation allowable</strong></td>
+<td><strong>(44,10,000)</strong></td>
+</tr>
+
+<tr>
+<td><strong>Profits and Gains from Business or Profession</strong></td>
+<td><strong>53,46,500</strong></td>
+</tr>
+
+<tr>
+<td colspan="2"><strong>III. Income from Other Sources</strong></td>
+</tr>
+
+<tr>
+<td>Dividend from specified foreign company</td>
+<td>1,60,000</td>
+</tr>
+
+<tr>
+<td>Interest on bank fixed deposits (Gross) [₹1,35,000 × 100/90]</td>
+<td>1,50,000</td>
+</tr>
+
+<tr>
+<td><strong>Income from Other Sources</strong></td>
+<td><strong>3,10,000</strong></td>
+</tr>
+
+<tr>
+<td><strong>Gross Total Income</strong></td>
+<td><strong>59,22,500</strong></td>
+</tr>
+
+<tr>
+<td>Less: Deduction under section 80GGB in respect of contribution to Electoral Trust and advertisement expenditure treated as contribution to political party [₹3,00,000 + ₹40,000]</td>
+<td>(3,40,000)</td>
+</tr>
+
+<tr>
+<td><strong>Total Income</strong></td>
+<td><strong>55,82,500</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<p><strong>Notes:</strong></p>
+
+<ol>
+
+<li>
+Interest payable under section 234B is not allowable as deduction since it is in the nature of interest for default in payment of income-tax [Section 40(a)(ii)].
+</li>
+
+<li>
+Interest and borrowing costs not satisfying the recognition criteria under ICDS-II cannot form part of inventory valuation.
+</li>
+
+<li>
+Cash payment of ₹19,000 for printing and stationery is disallowable under section 40A(3). Payment of ₹22,000 to the producer of dairy farming products is covered under Rule 6DD and is therefore allowable.
+</li>
+
+<li>
+Since tax was not deducted at source on the contractor payment, 30% of such expenditure is disallowable under section 40(a)(ia).
+</li>
+
+<li>
+No deduction is allowable for expenditure incurred in relation to transfer of Carbon Credits taxable under section 115BBG.
+</li>
+
+<li>
+Contribution to an Electoral Trust and advertisement expenditure in the brochure of a registered political party are first added back while computing business income and are subsequently allowed as deduction under section 80GGB.
+</li>
+
+<li>
+Interest payable to the Co-operative Bank is disallowable under section 43B since it was not paid before the due date of filing the return.
+</li>
+
+<li>
+Employer's contribution to the pension scheme referred to in section 80CCD is allowable only up to 10% of eligible salary. Therefore, the excess contribution of ₹50,000 is disallowed.
+</li>
+
+<li>
+Profit on the hedging contract is adjusted against the actual cost of the imported machinery and is not separately taxable as business income.
+</li>
+
+<li>
+Additional depreciation has been allowed at 10% since the machinery was put to use for less than 180 days during the previous year. The balance additional depreciation can be claimed in the succeeding assessment year.
+</li>
+
+</ol>
+
+`
+},
+{
+  question_id: "DT_OctMTP24_II_2A",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Minimum Alternate Tax (MAT)",
+    "Section 115JB",
+    "Book Profit",
+    "MAT Computation"
+  ],
+  placement: 2,
+  marks: 8,
+
+  question_html: `
+
+<p>
+G Ltd., a domestic company, provides the following information from its Statement of Profit and Loss for the year ended 31.03.2024. It earned a profit of ₹20,00,000 after debiting/crediting the following items:
+</p>
+
+<p><strong>Items debited to Statement of Profit and Loss:</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Provision for loss of subsidiary</td><td>1,70,000</td></tr>
+<tr><td>Provision for doubtful debts</td><td>1,75,000</td></tr>
+<tr><td>Provision for income-tax</td><td>2,05,000</td></tr>
+<tr><td>Provision for gratuity based on actuarial valuation</td><td>3,00,000</td></tr>
+<tr><td>Depreciation</td><td>4,60,000</td></tr>
+<tr><td>Interest to financial institution (unpaid before filing of return)</td><td>2,00,000</td></tr>
+<tr><td>Penalty for infraction of law</td><td>1,50,000</td></tr>
+</tbody>
+</table>
+
+<p><strong>Items credited to Statement of Profit and Loss:</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Profit from unit established in 2019 in Special Economic Zone</td><td>6,00,000</td></tr>
+<tr><td>Share in income of an AOP as a member</td><td>2,00,000</td></tr>
+<tr><td>Income from units of UTI</td><td>1,75,000</td></tr>
+</tbody>
+</table>
+
+<p><strong>Other Information:</strong></p>
+
+<ol>
+<li>Provision for income-tax includes ₹55,000 towards interest payable on income-tax.</li>
+<li>Depreciation includes ₹2,50,000 on account of revaluation of fixed assets.</li>
+<li>Depreciation as per Income-tax Rules is ₹3,80,000.</li>
+<li>Brought forward loss of ₹11 lakhs includes unabsorbed depreciation of ₹5 lakhs.</li>
+<li>The AOP has paid tax at Maximum Marginal Rate.</li>
+</ol>
+
+<p>
+Compute the Minimum Alternate Tax under section 115JB of the Income-tax Act, 1961 for A.Y. 2024-25, assuming that G Ltd. is not required to comply with the Indian Accounting Standards.
+</p>
+
+`,
+
+  solution_html: `
+
+<h4>Computation of Book Profit under section 115JB</h4>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Net Profit as per Statement of Profit and Loss</td>
+<td>20,00,000</td>
+</tr>
+
+<tr>
+<td colspan="2"><strong>Add: Items to be added as per Explanation 1 to section 115JB</strong></td>
+</tr>
+
+<tr>
+<td>Provision for loss of subsidiary</td>
+<td>1,70,000</td>
+</tr>
+
+<tr>
+<td>Provision for doubtful debts (provision for diminution in value of asset)</td>
+<td>1,75,000</td>
+</tr>
+
+<tr>
+<td>
+Provision for income-tax (including interest payable on income-tax)
+</td>
+<td>2,05,000</td>
+</tr>
+
+<tr>
+<td>Depreciation</td>
+<td>4,60,000</td>
+</tr>
+
+<tr>
+<td><strong>Total Additions</strong></td>
+<td><strong>10,10,000</strong></td>
+</tr>
+
+<tr>
+<td><strong>Adjusted Book Profit</strong></td>
+<td><strong>30,10,000</strong></td>
+</tr>
+
+<tr>
+<td colspan="2"><strong>Less: Items deductible under Explanation 1 to section 115JB</strong></td>
+</tr>
+
+<tr>
+<td>
+Share in income of AOP taxable at Maximum Marginal Rate under section 86
+</td>
+<td>(2,00,000)</td>
+</tr>
+
+<tr>
+<td>
+Income from units of UTI (No deduction allowable)
+</td>
+<td>Nil</td>
+</tr>
+
+<tr>
+<td>
+Depreciation (excluding depreciation on revaluation) [₹4,60,000 − ₹2,50,000]
+</td>
+<td>(2,10,000)</td>
+</tr>
+
+<tr>
+<td>
+Lower of brought forward business loss or unabsorbed depreciation as per books (Lower of ₹6,00,000 and ₹5,00,000)
+</td>
+<td>(5,00,000)</td>
+</tr>
+
+<tr>
+<td><strong>Total Deductions</strong></td>
+<td><strong>(9,10,000)</strong></td>
+</tr>
+
+<tr>
+<td><strong>Book Profit under section 115JB</strong></td>
+<td><strong>21,00,000</strong></td>
+</tr>
+
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Book Profit under section 115JB</td>
+<td>21,00,000</td>
+</tr>
+
+<tr>
+<td>Minimum Alternate Tax @15%</td>
+<td>3,15,000</td>
+</tr>
+
+<tr>
+<td>Add: Health & Education Cess @4%</td>
+<td>12,600</td>
+</tr>
+
+<tr>
+<td><strong>Minimum Alternate Tax Liability</strong></td>
+<td><strong>3,27,600</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<p><strong>Notes:</strong></p>
+
+<ol>
+
+<li>
+Only the specific adjustments prescribed in <strong>Explanation 1 to section 115JB</strong> can be made to the net profit as per the Statement of Profit and Loss while computing Book Profit.
+</li>
+
+<li>
+Accordingly, the following items <strong>cannot be adjusted</strong> while computing Book Profit:
+<ul>
+<li>Interest to financial institution remaining unpaid before filing the return.</li>
+<li>Penalty for infraction of law.</li>
+</ul>
+</li>
+
+<li>
+Provision for gratuity based on actuarial valuation represents an <strong>ascertained liability</strong> and therefore is <strong>not added back</strong> while computing Book Profit.
+</li>
+
+<li>
+Income from the unit established in the Special Economic Zone is <strong>not deductible</strong> while computing Book Profit in view of the proviso to section 115JB(6). Hence, such profit is liable to MAT.
+</li>
+
+<li>
+Share in income of the AOP is deducted since the AOP has already paid tax at the <strong>Maximum Marginal Rate</strong> and such income is exempt in the hands of the member under section 86.
+</li>
+
+<li>
+Income from units of UTI is <strong>not deductible</strong> because it is not one of the permissible deductions specified in Explanation 1 to section 115JB.
+</li>
+
+<li>
+While reducing depreciation, only the depreciation other than that attributable to <strong>revaluation of assets</strong> is deductible.
+</li>
+
+<li>
+The lower of <strong>brought forward business loss</strong> or <strong>unabsorbed depreciation</strong>, as per books of account, is allowable as deduction while computing Book Profit.
+</li>
+
+</ol>
+
+`
+},
+{
+  question_id: "DT_OctMTP24_II_2B",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Residential Status",
+    "Foreign Income",
+    "Royalty",
+    "Income from House Property",
+    "Section 91",
+    "Section 80E",
+    "Section 80QQB",
+    "Double Taxation Relief"
+  ],
+  placement: 2,
+  marks: 6,
+
+  question_html: `
+
+<p>
+Compute the total income and net tax liability of Mr. Nitin, an individual resident in India, aged 25 years, for the Assessment Year 2024-25 from the following information furnished by him for the previous year ended 31.03.2024:
+</p>
+
+<ul>
+<li>Mr. Nitin earned royalty income of ₹18 lakhs from PT Inc. of Country X for writing articles in journals and newspapers. However, he received only ₹13.60 lakhs during the previous year 2023-24 and the balance remained outstanding as on 31.03.2024. He maintains the cash system of accounting for royalty income.</li>
+
+<li>He earned gross rental income of ₹3.60 lakhs from a house situated in Country X. Municipal taxes paid amounted to ₹12,000, which are not allowed as deduction in Country X.</li>
+
+<li>No DTAA exists between India and Country X. In Country X, all incomes are taxable @15%.</li>
+
+<li>He received dividend of ₹5.50 lakhs from M Ltd., an Indian company.</li>
+
+<li>On 01.04.2023, he obtained an educational loan from a bank for his son pursuing MBA. During the year, repayment of principal amounted to ₹1.40 lakhs and interest paid amounted to ₹36,000.</li>
+
+<li>Assume that Mr. Nitin has opted out of the default tax regime under section 115BAC.</li>
+</ul>
+
+`,
+
+  solution_html: `
+
+<h4>Computation of Total Income of Mr. Nitin for A.Y. 2024-25</h4>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td colspan="2"><strong>Income from House Property</strong></td>
+</tr>
+
+<tr>
+<td>Gross Annual Value</td>
+<td>3,60,000</td>
+</tr>
+
+<tr>
+<td>Less: Municipal taxes paid</td>
+<td>(12,000)</td>
+</tr>
+
+<tr>
+<td>Net Annual Value</td>
+<td>3,48,000</td>
+</tr>
+
+<tr>
+<td>Less: Deduction under section 24(a) @30%</td>
+<td>(1,04,400)</td>
+</tr>
+
+<tr>
+<td><strong>Income from House Property</strong></td>
+<td><strong>2,43,600</strong></td>
+</tr>
+
+<tr>
+<td colspan="2"><strong>Profits and Gains of Business or Profession</strong></td>
+</tr>
+
+<tr>
+<td>
+Royalty received from Country X for writing articles (Cash system followed, hence taxable on receipt basis)
+</td>
+<td>13,60,000</td>
+</tr>
+
+<tr>
+<td colspan="2"><strong>Income from Other Sources</strong></td>
+</tr>
+
+<tr>
+<td>Dividend from M Ltd.</td>
+<td>5,50,000</td>
+</tr>
+
+<tr>
+<td><strong>Gross Total Income</strong></td>
+<td><strong>21,53,600</strong></td>
+</tr>
+
+<tr>
+<td colspan="2"><strong>Less: Deduction under Chapter VI-A</strong></td>
+</tr>
+
+<tr>
+<td>Section 80E - Interest on education loan for son pursuing MBA</td>
+<td>(36,000)</td>
+</tr>
+
+<tr>
+<td>
+Section 80QQB - No deduction allowable since royalty is for writing articles in journals/newspapers and not for writing books
+</td>
+<td>Nil</td>
+</tr>
+
+<tr>
+<td><strong>Total Income</strong></td>
+<td><strong>21,17,600</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<h4>Computation of Net Tax Liability</h4>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Tax on Total Income [30% of ₹11,17,600 + ₹1,12,500]</td>
+<td>4,47,780</td>
+</tr>
+
+<tr>
+<td>Add: Health & Education Cess @4%</td>
+<td>17,911</td>
+</tr>
+
+<tr>
+<td><strong>Tax before relief</strong></td>
+<td><strong>4,65,691</strong></td>
+</tr>
+
+<tr>
+<td colspan="2"><strong>Relief under section 91</strong></td>
+</tr>
+
+<tr>
+<td>Average rate of Indian tax [₹4,65,691 ÷ ₹21,17,600 × 100]</td>
+<td>21.991%</td>
+</tr>
+
+<tr>
+<td>Average rate of tax in Country X</td>
+<td>15%</td>
+</tr>
+
+<tr>
+<td>Doubly taxed income (₹2,43,600 + ₹13,60,000)</td>
+<td>16,03,600</td>
+</tr>
+
+<tr>
+<td>Relief under section 91 @15% (lower of the two average rates)</td>
+<td>(2,40,540)</td>
+</tr>
+
+<tr>
+<td><strong>Net Tax Liability</strong></td>
+<td><strong>2,25,151</strong></td>
+</tr>
+
+<tr>
+<td><strong>Net Tax Liability (Rounded off)</strong></td>
+<td><strong>2,25,150</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<p><strong>Notes:</strong></p>
+
+<ol>
+
+<li>
+Since Mr. Nitin follows the <strong>cash system of accounting</strong>, only the royalty actually received during the previous year (₹13,60,000) is taxable.
+</li>
+
+<li>
+The house property situated outside India is taxable in India because Mr. Nitin is a <strong>resident</strong>.
+</li>
+
+<li>
+Dividend received from an Indian company is taxable under the head <strong>Income from Other Sources</strong>.
+</li>
+
+<li>
+Deduction under <strong>section 80E</strong> is available only in respect of the interest component of the education loan. Repayment of principal is not deductible.
+</li>
+
+<li>
+No deduction under <strong>section 80QQB</strong> is available because the royalty relates to writing articles in journals and newspapers and not books.
+</li>
+
+<li>
+Since no DTAA exists between India and Country X, relief is available under <strong>section 91</strong>. The deduction is computed at the lower of the average Indian rate of tax and the foreign tax rate on the doubly taxed income.
+</li>
+
+</ol>
+
+`
+},
+{
+  question_id: "DT_OctMTP24_II_3A",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Charitable Trusts",
+    "Section 115TD",
+    "Exit Tax",
+    "Accreted Income",
+    "Section 12AB"
+  ],
+  placement: 3,
+  marks: 8,
+
+  question_html: `
+
+<p>
+The Balance Sheet of M/s SN Charitable Trust as on 31.01.2024 and the following additional information are furnished:
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Liabilities</th>
+<th>₹ (Lakhs)</th>
+<th>Assets</th>
+<th>₹ (Lakhs)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Capital Fund</td>
+<td>800.00</td>
+<td>Land (purchased in 2009)</td>
+<td>100.00</td>
+</tr>
+
+<tr>
+<td>Sundry Creditors</td>
+<td>335.00</td>
+<td>Land & Building (purchased in 2015)</td>
+<td>800.00</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>2,000 Equity Shares of M/s XP Ltd.</td>
+<td>20.00</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Balance in Current Account</td>
+<td>10.00</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Fixed Deposits with Scheduled Banks</td>
+<td>200.00</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>Cash in Hand</td>
+<td>3.50</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td>TDS</td>
+<td>1.50</td>
+</tr>
+
+<tr>
+<th>Total</th>
+<th>1135.00</th>
+<th>Total</th>
+<th>1135.00</th>
+</tr>
+</tbody>
+</table>
+
+<p>
+The Trust applied for registration on 15.04.2012 and registration under section 12AB was granted on 01.07.2012. The registration was cancelled on 31.01.2024. The appeal against cancellation was dismissed and the order confirming cancellation was received on 31.03.2024.
+</p>
+
+<p><strong>Additional Information:</strong></p>
+
+<ol>
+
+<li>Stamp duty value of land purchased in 2009 was ₹120 lakhs and open market value certified by registered valuer was ₹250 lakhs.</li>
+
+<li>Land and Building purchased in 2015 would fetch ₹1,000 lakhs in open market. Stamp duty value on 31.01.2024 was ₹1,050 lakhs.</li>
+
+<li>The highest and lowest quoted prices of M/s XP Ltd. shares on 31.01.2024 were ₹1,099 and ₹1,051 respectively.</li>
+
+<li>Sundry creditors include ₹30 lakhs provided on estimated basis for contractors for which no bills were received.</li>
+
+</ol>
+
+<p>
+Based on the above information, calculate the Exit Tax payable by the Charitable Trust and state the latest date on which such tax has to be paid.
+</p>
+
+`,
+
+  solution_html: `
+
+<p>
+Since the registration granted under section 12AB has been cancelled and the cancellation has become final, the Trust is liable to pay tax on <strong>Accreted Income</strong> under section 115TD at the <strong>Maximum Marginal Rate (34.944%)</strong>.
+</p>
+
+<h4>Computation of Exit Tax</h4>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Aggregate Fair Market Value of total assets on the specified date (Refer Working Note 1)</td>
+<td>12,85,00,000</td>
+</tr>
+
+<tr>
+<td>Less: Total liabilities as per prescribed valuation method (Refer Working Note 2)</td>
+<td>(3,05,00,000)</td>
+</tr>
+
+<tr>
+<td><strong>Accreted Income</strong></td>
+<td><strong>9,80,00,000</strong></td>
+</tr>
+
+<tr>
+<td>Tax @34.944%</td>
+<td><strong>3,42,45,120</strong></td>
+</tr>
+
+</tbody>
+</table>
+<h4>Working Note 1 – Aggregate Fair Market Value of Assets</h4>
+
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>Fair Market Value (₹)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>
+Land purchased in 2009 (Higher of Stamp Duty Value ₹120 lakhs or Registered Valuer's Value ₹250 lakhs)
+</td>
+<td>2,50,00,000</td>
+</tr>
+
+<tr>
+<td>
+Land & Building purchased in 2015 (Higher of Stamp Duty Value ₹1,050 lakhs or Open Market Value ₹1,000 lakhs)
+</td>
+<td>10,50,00,000</td>
+</tr>
+
+<tr>
+<td>
+2,000 Equity Shares of M/s XP Ltd.
+[(₹1,099 + ₹1,051) ÷ 2 = ₹1,075 per share]
+</td>
+<td>21,50,000</td>
+</tr>
+
+<tr>
+<td>Balance in Current Account</td>
+<td>10,00,000</td>
+</tr>
+
+<tr>
+<td>Fixed Deposits with Scheduled Banks</td>
+<td>2,00,00,000</td>
+</tr>
+
+<tr>
+<td>Cash in Hand</td>
+<td>3,50,000</td>
+</tr>
+
+<tr>
+<td>TDS Receivable</td>
+<td>1,50,000</td>
+</tr>
+
+<tr>
+<td><strong>Aggregate Fair Market Value</strong></td>
+<td><strong>12,85,00,000</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<h4>Working Note 2 – Value of Liabilities</h4>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Sundry Creditors as per Balance Sheet</td>
+<td>3,35,00,000</td>
+</tr>
+
+<tr>
+<td>Less: Unascertained liability (Estimated provision for contractors)</td>
+<td>(30,00,000)</td>
+</tr>
+
+<tr>
+<td><strong>Liabilities allowable for section 115TD</strong></td>
+<td><strong>3,05,00,000</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<p>
+The order confirming cancellation of registration was received on <strong>31.03.2024</strong>. Accordingly, tax under section 115TD is required to be paid within <strong>14 days</strong> from the date of receipt of such order.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Date of receipt of order</td>
+<td>31.03.2024</td>
+</tr>
+
+<tr>
+<td><strong>Last date for payment of Exit Tax</strong></td>
+<td><strong>14.04.2024</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<p><strong>Notes:</strong></p>
+
+<ol>
+
+<li>
+Under section 115TD, <strong>Accreted Income</strong> is the excess of the aggregate Fair Market Value of the assets over the liabilities determined in the prescribed manner on the specified date.
+</li>
+
+<li>
+For immovable property, the Fair Market Value is taken as the <strong>higher of the Stamp Duty Value and the value determined by the prescribed valuation rules</strong>.
+</li>
+
+<li>
+For quoted equity shares, Fair Market Value is the <strong>average of the highest and lowest quoted prices</strong> on the valuation date.
+</li>
+
+<li>
+Only genuine and ascertained liabilities are deductible. <strong>Unascertained liabilities</strong>, such as estimated provisions without supporting bills, are ignored while determining liabilities.
+</li>
+
+<li>
+The tax on Accreted Income is chargeable at the <strong>Maximum Marginal Rate (34.944%)</strong> applicable for A.Y. 2024-25.
+</li>
+
+<li>
+Section 115TD requires payment of the tax within <strong>14 days</strong> from the date of receipt of the order confirming cancellation of registration.
+</li>
+
+</ol>
+
+`
+},
+{
+  question_id: "DT_OctMTP24_II_3B",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Transfer Pricing",
+    "Associated Enterprise",
+    "International Transaction",
+    "Arm's Length Price",
+    "Primary Adjustment",
+    "Secondary Adjustment"
+  ],
+  placement: 3,
+  marks: 6,
+
+  question_html: `
+
+<p>
+STP Ltd. is an Indian company engaged in the manufacturing of supreme quality cotton bedsheets. It has total borrowings of ₹60 crores by way of loan as on 01.04.2023.
+</p>
+
+<p>
+Fix Ltd. of Canada imported 4 lakh bedsheets from STP Ltd. for resale in Canada @ ₹2,200 per unit. STP Ltd. sold similar bedsheets to other dealers in Canada @ ₹2,300 per unit.
+</p>
+
+<p>
+STP Ltd. received a bank guarantee on 01.04.2023 for availing a cash credit limit of ₹9 crores for which Fix Ltd. was the guarantor.
+</p>
+
+<p>
+The terms of trade for other dealers were payment within one month from the date of sale, whereas Fix Ltd. was allowed a credit period of three months from the date of sale of goods.
+</p>
+
+<p>
+The cost of capital was 12% per annum and the supply of goods is assumed to be uniform throughout the year.
+</p>
+
+<p>
+You are required to determine whether STP Ltd. and Fix Ltd. are Associated Enterprises. If yes, compute the Arm's Length Price of the transaction between them and the amount to be added to the income of STP Ltd., if any, by way of an ALP adjustment.
+</p>
+
+<p>
+Assuming that the above adjustment to the transfer price has been made <em>suo motu</em> by STP Ltd. in its return of income, what is the time limit for repatriation of such excess money? What are the implications if the excess money is not repatriated within the prescribed time limit?
+</p>
+
+`,
+
+  solution_html: `
+
+<p><strong>(1) Whether STP Ltd. and Fix Ltd. are Associated Enterprises</strong></p>
+
+<p>
+STP Ltd. and Fix Ltd. are deemed to be <strong>Associated Enterprises</strong> since Fix Ltd., a Canadian company, has provided a guarantee for the loan of ₹9 crores taken by STP Ltd., which is <strong>15% of the total borrowings</strong> of STP Ltd. (₹9 crores out of ₹60 crores), i.e., not less than 10%.
+</p>
+
+<p>
+Accordingly, under section 92A, STP Ltd. and Fix Ltd. are Associated Enterprises and the sale of bedsheets between them is an <strong>international transaction</strong> under section 92B.
+</p>
+
+<p>
+Since STP Ltd. has sold identical bedsheets to unrelated dealers in Canada, such uncontrolled transaction can be adopted as the Comparable Uncontrolled Price (CUP), subject to suitable adjustments.
+</p>
+
+<h4>Computation of Arm's Length Price</h4>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Selling price per bedsheet charged to unrelated dealers</td>
+<td>2,300</td>
+</tr>
+
+<tr>
+<td>
+Add: Adjustment for additional credit period<br>
+(12% × ₹2,300 × 2/12)
+</td>
+<td>46</td>
+</tr>
+
+<tr>
+<td><strong>Arm's Length Price per bedsheet</strong></td>
+<td><strong>2,346</strong></td>
+</tr>
+
+<tr>
+<td>Arm's Length Price of 4,00,000 bedsheets (A)</td>
+<td>93,84,00,000</td>
+</tr>
+
+<tr>
+<td>Actual sale value to Fix Ltd. (B)</td>
+<td>88,00,00,000</td>
+</tr>
+
+<tr>
+<td><strong>Transfer Pricing Adjustment (A − B)</strong></td>
+<td><strong>5,84,00,000</strong></td>
+</tr>
+
+<h4>Repatriation of Excess Money</h4>
+
+<p>
+Since the primary adjustment has been made <strong>suo motu</strong> by STP Ltd. in its return of income, the excess money of <strong>₹5.84 crores</strong> is required to be repatriated to India within <strong>90 days from the due date of filing the return of income under section 139(1)</strong>.
+</p>
+
+<p>
+Assuming the due date under section 139(1) is <strong>30.11.2024</strong>, the last date for repatriation is <strong>28.02.2025</strong>.
+</p>
+
+<h4>Implications if Excess Money is not Repatriated</h4>
+
+<ol>
+
+<li>
+The excess money remaining with Fix Ltd. shall be deemed to be an <strong>advance</strong> made by STP Ltd. to its Associated Enterprise.
+</li>
+
+<li>
+Interest shall be computed on such deemed advance at the rate of <strong>one-year SBI MCLR as on 01.04.2024 plus 3.25%</strong>, since the international transaction is denominated in Indian Rupees.
+</li>
+
+<li>
+Alternatively, STP Ltd. may opt to pay <strong>additional income-tax @20.9664%</strong> (18% + 12% surcharge + 4% Health & Education Cess) on the excess money instead of repatriating the amount.
+</li>
+
+<li>
+Where such additional income-tax is paid, no secondary adjustment or notional interest computation is required.
+</li>
+
+<li>
+The additional income-tax so paid shall be treated as the <strong>final tax</strong> on the excess money and no credit shall be available to STP Ltd. or any other person in respect thereof.
+</li>
+
+</ol>
+
+`
+},
+{
+  question_id: "DT_OctMTP24_II_4A",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Tax Deduction at Source (TDS)",
+    "Section 194N",
+    "Section 195"
+  ],
+  placement: 4,
+  marks: 4,
+
+  question_html: `
+
+<p>Examine whether TDS provisions are attracted in the following cases:</p>
+
+<p><strong>(i)</strong></p>
+
+<p>
+Kite & Co. LLP withdrew from its bank account ₹68 lakhs in cash for buying agricultural produce from farmers/agriculturists, being raw material required for manufacture of finished products by it and ₹58 lakhs for the purpose of other business activities. It files its return of income on time regularly.
+</p>
+
+<p><strong>(ii)</strong></p>
+
+<p>
+Interest of ₹98,000 on Capital Gains Bond issued by Power Finance Corporation Ltd. to Mr. Ajay (aged 52 years), a non-resident individual.
+</p>
+
+`,
+
+  solution_html: `
+
+<p><strong>(i) Cash withdrawal by Kite & Co. LLP</strong></p>
+
+<p><strong>Relevant Provision:</strong></p>
+
+<p>
+Section 194N provides that every banking company, co-operative bank or post office responsible for paying, in cash, any sum or aggregate of sums exceeding ₹1 crore during the previous year to any person from one or more accounts maintained by such person shall deduct tax at source at the rate of <strong>2%</strong> on the amount exceeding ₹1 crore, where the recipient has regularly filed the return of income.
+</p>
+
+<p><strong>Analysis:</strong></p>
+
+<ul>
+<li>Total cash withdrawn = ₹68 lakhs + ₹58 lakhs = <strong>₹1.26 crores</strong>.</li>
+<li>The aggregate cash withdrawal exceeds ₹1 crore.</li>
+<li>The purpose of withdrawal (including purchase of agricultural produce from farmers) is not relevant for the applicability of section 194N.</li>
+<li>Since Kite & Co. LLP has regularly filed its return of income, the threshold of ₹1 crore applies.</li>
+</ul>
+
+<p><strong>Conclusion:</strong></p>
+
+<p>
+The bank is required to deduct tax at source under <strong>section 194N</strong> at the rate of <strong>2%</strong> on the amount exceeding ₹1 crore, i.e., on <strong>₹26 lakhs</strong>.
+</p>
+
+<hr>
+
+<p><strong>(ii) Interest on Capital Gains Bond paid to Mr. Ajay</strong></p>
+
+<p><strong>Relevant Provision:</strong></p>
+
+<p>
+Section 195 provides that any person responsible for paying to a non-resident (other than a company) or to a foreign company any interest (other than interest covered under sections 194LB, 194LC or 194LD) or any other sum chargeable to tax under the Income-tax Act shall deduct tax at source at the rates in force.
+</p>
+
+<p><strong>Analysis:</strong></p>
+
+<ul>
+<li>Mr. Ajay is a <strong>non-resident individual</strong>.</li>
+<li>Interest of ₹98,000 received on Capital Gains Bonds is chargeable to tax in India.</li>
+<li>The payment is not covered under sections 194LB, 194LC or 194LD.</li>
+</ul>
+
+<p><strong>Conclusion:</strong></p>
+
+<p>
+Accordingly, the provisions of <strong>section 195</strong> are applicable, and tax is required to be deducted at source at the rates in force on the interest payment of ₹98,000.
+</p>
+
+`
+},
+{
+  question_id: "DT_OctMTP24_II_4B",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Tax Recovery",
+    "Recovery of Tax",
+    "Tax Recovery Officer",
+    "Attachment of Property"
+  ],
+  placement: 4,
+  marks: 4,
+
+  question_html: `
+
+<p>
+The tax assessment of Mr. Pramod was completed on 25.12.2023 and the tax due was determined as ₹115 lakhs.
+</p>
+
+<p>
+The assessee has the following assets:
+</p>
+
+<ol>
+
+<li>Bank Fixed Deposit with Canara Bank – ₹22 lakhs.</li>
+
+<li>Receivable from T & Co. Ltd. – ₹27 lakhs.</li>
+
+<li>Land gifted to his son (aged 35 years) five years ago, whose present market value is ₹28 lakhs.</li>
+
+<li>Diamond necklace gifted to his son's wife under a gift deed dated 05.10.2021.</li>
+
+</ol>
+
+<p>
+Discuss against which of the movable/immovable properties the Tax Recovery Officer can proceed for recovery of tax.
+</p>
+
+`,
+
+  solution_html: `
+
+<p>
+Where an assessee is in default or is deemed to be in default in making payment of tax, the <strong>Tax Recovery Officer (TRO)</strong> may draw up a certificate specifying the amount of arrears due and proceed to recover the amount by attachment and sale of the assessee's movable or immovable property.
+</p>
+
+<p>
+The property of the assessee also includes any property transferred, directly or indirectly, otherwise than for adequate consideration, to:
+</p>
+
+<ul>
+
+<li>his spouse;</li>
+
+<li>his minor child;</li>
+
+<li>his son's wife; or</li>
+
+<li>his son's minor child.</li>
+
+</ul>
+
+<p>
+Such transferred property may also be attached for recovery of tax.
+</p>
+
+<p>
+In the present case:
+</p>
+
+<ul>
+
+<li><strong>Bank Fixed Deposit with Canara Bank (₹22 lakhs)</strong> – The TRO can proceed against this asset for recovery of tax.</li>
+
+<li><strong>Receivable from T & Co. Ltd. (₹27 lakhs)</strong> – The TRO can also attach this receivable for recovery of tax.</li>
+
+<li><strong>Diamond necklace gifted to the son's wife</strong> – Since the property was transferred without consideration to the son's wife, it is deemed to be the assessee's property for recovery purposes. Therefore, the TRO can proceed against this asset.</li>
+
+<li><strong>Land gifted to the son</strong> – The TRO cannot proceed against this land because the gift was made to a major son (aged 30 years at the time of transfer). The deeming provisions apply only to transfers made to a spouse, minor child, son's wife or son's minor child.</li>
+
+</ul>
+
+<p><strong>Conclusion:</strong></p>
+
+<p>
+Accordingly, the Tax Recovery Officer can recover the tax dues by attaching:
+</p>
+
+<ul>
+
+<li>Bank Fixed Deposit with Canara Bank;</li>
+
+<li>Receivable from T & Co. Ltd.; and</li>
+
+<li>Diamond necklace gifted to the son's wife.</li>
+
+</ul>
+
+<p>
+The land gifted to the major son cannot be attached for recovery of tax.
+</p>
+
+`
+},
+{
+  question_id: "DT_OctMTP24_II_4C",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Interest Limitation",
+    "Section 94B",
+    "Associated Enterprise",
+    "Thin Capitalisation"
+  ],
+  placement: 4,
+  marks: 6,
+
+  question_html: `
+
+<p>
+XYZ Ltd. provides you the following Profit and Loss Account figures for the Financial Years 2022-23 and 2023-24:
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>F.Y. 2022-23 (₹ in lakhs)</th>
+<th>F.Y. 2023-24 (₹ in lakhs)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employees Benefit Expenses</td>
+<td>390</td>
+<td>402</td>
+</tr>
+<tr>
+<td>Interest paid to L & T Inc.</td>
+<td>562</td>
+<td>389</td>
+</tr>
+<tr>
+<td>Depreciation</td>
+<td>250</td>
+<td>254</td>
+</tr>
+<tr>
+<td>Income Tax</td>
+<td>271</td>
+<td>332</td>
+</tr>
+<tr>
+<td>Profit transferred to Reserves</td>
+<td>557</td>
+<td>403</td>
+</tr>
+<tr>
+<th>Gross Profit</th>
+<th>2030</th>
+<th>1780</th>
+</tr>
+</tbody>
+</table>
+
+<p>
+On 23rd June, 2022, XYZ Ltd., an Indian company, borrowed ₹120 crores from L & T Inc., a company incorporated in Country R. The loan is repayable over a period of four years.
+</p>
+
+<p>
+The loan is guaranteed by SAM Ltd., a company incorporated in Country Y. SAM Ltd. holds 36% shares in XYZ Ltd.
+</p>
+
+<p>
+Calculate the income under the head <strong>"Profits and Gains of Business or Profession"</strong> of XYZ Ltd. for the Assessment Year 2024-25, assuming the Gross Profit is calculated as per the provisions of the Income-tax Act and depreciation is also as per the Income-tax Rules.
+</p>
+
+<p>
+Assume none of the companies are engaged in the business of banking.
+</p>
+
+`,
+
+  solution_html: `
+
+<p>
+Section 94B provides that where an Indian company incurs expenditure by way of interest in respect of debt issued by its non-resident Associated Enterprise and such interest exceeds ₹1 crore, the interest paid or payable in excess of <strong>30% of EBITDA</strong> or the actual interest paid to the Associated Enterprise, whichever is lower, shall not be allowed as deduction.
+</p>
+
+<p>
+Further, where the debt is issued by a lender which is not an Associated Enterprise but an Associated Enterprise provides an explicit or implicit guarantee for such debt, the debt shall be deemed to have been issued by an Associated Enterprise.
+</p>
+
+<p>
+In the present case, SAM Ltd. holds <strong>36%</strong> of the shares of XYZ Ltd. and is therefore an <strong>Associated Enterprise</strong>. Since the loan taken from L & T Inc. is guaranteed by SAM Ltd., the debt is deemed to have been issued by an Associated Enterprise and section 94B is applicable.
+</p>
+
+<h4>Working for A.Y. 2023-24 (Carry Forward of Disallowed Interest)</h4>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹ in lakhs)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Gross Profit</td>
+<td>2,030</td>
+</tr>
+
+<tr>
+<td>Less: Employees Benefit Expenses</td>
+<td>(390)</td>
+</tr>
+
+<tr>
+<td><strong>EBITDA</strong></td>
+<td><strong>1,640</strong></td>
+</tr>
+
+<tr>
+<td>Interest paid to L & T Inc.</td>
+<td>562</td>
+</tr>
+
+<tr>
+<td>30% of EBITDA</td>
+<td>492</td>
+</tr>
+
+<tr>
+<td>Interest disallowed under section 94B (562 − 492)</td>
+<td><strong>70</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<h4>Working for A.Y. 2024-25</h4>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹ in lakhs)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Gross Profit</td>
+<td>1,780</td>
+</tr>
+
+<tr>
+<td>Less: Employees Benefit Expenses</td>
+<td>(402)</td>
+</tr>
+
+<tr>
+<td><strong>EBITDA</strong></td>
+<td><strong>1,378</strong></td>
+</tr>
+
+<tr>
+<td>Interest paid to L & T Inc.</td>
+<td>389</td>
+</tr>
+
+<tr>
+<td>30% of EBITDA</td>
+<td>413.40</td>
+</tr>
+
+<tr>
+<td>Interest disallowable under section 94B</td>
+<td><strong>Nil</strong></td>
+</tr>
+
+<tr>
+<td>Maximum brought forward interest allowable [₹413.40 − ₹389]</td>
+<td><strong>24.40</strong></td>
+</tr>
+
+<tr>
+<td>Total interest allowable [₹389 + ₹24.40]</td>
+<td><strong>413.40</strong></td>
+</tr>
+
+<tr>
+<td>Balance interest to be carried forward [₹70 − ₹24.40]</td>
+<td><strong>45.60</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+<h4>Computation of Income under the head "Profits and Gains of Business or Profession"</h4>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹ in lakhs)</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>EBITDA</td>
+<td>1,378.00</td>
+</tr>
+
+<tr>
+<td>Less: Interest allowable under section 94B</td>
+<td>(413.40)</td>
+</tr>
+
+<tr>
+<td>Less: Depreciation (as per Income-tax Rules)</td>
+<td>(254.00)</td>
+</tr>
+
+<tr>
+<td><strong>Income under the head "Profits and Gains of Business or Profession"</strong></td>
+<td><strong>710.60</strong></td>
+</tr>
+
+</tbody>
+</table>
+
+`
+},
+{
+  question_id: "DT_OctMTP24_II_5A",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Case Laws",
+    "Transfer Pricing",
+    "Section 260A",
+    "Section 254",
+    "Section 132B",
+    "Search and Seizure"
+  ],
+  placement: 5,
+  marks: 8,
+
+  question_html: `
+
+<p>
+Answer <strong>any two</strong> out of the following three sub-parts:
+</p>
+
+<p><strong>(i)</strong></p>
+
+<p>
+"The arm's length price (ALP) determined by the Tribunal, which is the final fact-finding authority, is final and cannot be the subject matter of scrutiny by the High Court as it does not give rise to a substantial question of law; accordingly, in an appeal under section 260A, the High Court is precluded from examining the correctness of determination of the ALP."
+</p>
+
+<p>
+Examine the correctness of the above statement with reference to a recent Supreme Court ruling.
+</p>
+
+<hr>
+
+<p><strong>(ii)</strong></p>
+
+<p>
+Tangram Limited entered into a contract for purchase of patented process with M/s Dash Inc., a non-resident company based in Country X. It filed an application under section 195(2) before the Assessing Officer to make payment to the non-resident company for purchase of patented process without deducting tax at source.
+</p>
+
+<p>
+The assessee, Tangram Limited, contended that the said non-resident company had no Permanent Establishment in India and, in terms of the DTAA between India and Country X, no tax was deductible in India.
+</p>
+
+<p>
+The Assessing Officer rejected the assessee's application on the ground that consideration for patented process constituted royalty under section 9(1)(vi) and was liable to tax in India and, accordingly, the assessee was directed to deduct tax at source at the rate of 10% on the royalty payment.
+</p>
+
+<p>
+On appeal, the Commissioner (Appeals) passed an order in favour of the assessee. On further appeal, the Tribunal upheld the order passed by the Assessing Officer on the ground that payments made for purchase of patented processes were in the nature of royalty and tax had to be deducted at source.
+</p>
+
+<p>
+The assessee company filed a miscellaneous application for rectification under section 254(2) before the Tribunal. The assessee had also filed an appeal before the High Court.
+</p>
+
+<p>
+The Tribunal allowed the application in exercise of its powers under section 254(2), reheard the entire appeal on merits, recalled its original order and passed an order in favour of the assessee. Thereafter, the writ petition filed by the assessee before the High Court was withdrawn.
+</p>
+
+<p>
+Is the Tribunal justified in recalling its original order?
+</p>
+
+<hr>
+
+<p><strong>(iii)</strong></p>
+
+<p>
+On 31.12.2023, a search under section 132 was conducted in the business and residential premises of Mr. Yatin and some gold bars were seized from the locker.
+</p>
+
+<p>
+Mr. Yatin voluntarily disclosed income of ₹12.50 crores during the course of search. Later, he filed an application for sale of the seized gold bars weighing 5 kilograms for adjustment towards the tax liability even before completion of assessment by the Assessing Officer.
+</p>
+
+<p>
+However, the Assessing Officer rejected the application and observed that such action can be taken only after the assessment is completed and a demand has been quantified.
+</p>
+
+<p>
+Is the Assessing Officer justified in rejecting the application? Examine.
+</p>
+
+`,
+
+  solution_html: `
+
+<p><strong>(i) Arm's Length Price determined by Tribunal</strong></p>
+
+<p><strong>Issue Involved:</strong></p>
+
+<p>
+The issue under consideration is whether the Arm's Length Price (ALP) determined by the Tribunal, being the final fact-finding authority, is final and cannot be the subject matter of scrutiny by the High Court as it does not give rise to a substantial question of law.
+</p>
+
+<p><strong>Relevant Provision of Law:</strong></p>
+
+<p>
+As per section 260A(1), an appeal shall lie to the High Court from every order passed in appeal by the Appellate Tribunal if the High Court is satisfied that the case involves a substantial question of law.
+</p>
+
+<p><strong>Analysis & Conclusion:</strong></p>
+
+<ul>
+
+<li>
+While determining the ALP, the Tribunal has to follow the guidelines stipulated under Chapter X of the Income-tax Act, 1961, namely sections 92 to 92F and Rules 10A to 10E of the Income-tax Rules, 1962.
+</li>
+
+<li>
+Any determination of the ALP not in accordance with the relevant provisions of the Income-tax Act and the Rules can be considered perverse and such perversity itself may constitute a substantial question of law.
+</li>
+
+<li>
+Therefore, there cannot be an absolute proposition that in every case where the Tribunal has determined the ALP, the same is final and cannot be examined by the High Court in an appeal under section 260A.
+</li>
+
+<li>
+When the determination of the ALP is challenged before the High Court, it is open to the High Court to examine whether the ALP has been determined after taking into consideration the relevant provisions of the Act and the Rules.
+<li>
+The High Court can examine the question of comparability of two companies, the selection of filters and whether the same has been done judiciously and on the basis of the relevant material/evidence on record.
+</li>
+
+<li>
+The High Court can also examine whether comparable transactions have been properly considered and whether non-comparable transactions have been wrongly treated as comparable transactions.
+</li>
+
+<li>
+Therefore, in an appeal challenging the determination of the Arm's Length Price, it is always open to the High Court to examine, within the parameters of section 260A, whether while determining the ALP the guidelines laid down under the Income-tax Act, 1961 and the Income-tax Rules, 1962 have been followed and whether the findings recorded by the Tribunal are perverse.
+</li>
+
+</ul>
+
+<p>
+Accordingly, the statement is <strong>not correct</strong>.
+</p>
+
+<p><strong>Case Law:</strong></p>
+
+<p>
+<i>SAP Labs India Pvt. Ltd. v. ITO</i> [2023] 454 ITR 121 (SC).
+</p>
+
+<hr>
+
+<p><strong>(ii) Recall of Tribunal Order under section 254(2)</strong></p>
+
+<p><strong>Issue Involved:</strong></p>
+
+<p>
+The issue under consideration is whether the powers under section 254(2) can be exercised by the Tribunal to recall an order and rehear the entire appeal on merits.
+</p>
+
+<p><strong>Relevant Provision of Law:</strong></p>
+
+<p>
+Section 254(1) empowers the Appellate Tribunal to pass such orders as it thinks fit after giving both parties an opportunity of being heard.
+</p>
+
+<p>
+Under section 254(2), the Appellate Tribunal may amend an order passed under section 254(1) with a view to rectifying any mistake apparent from the record.
+</p>
+
+<p><strong>Analysis & Conclusion:</strong></p>
+
+<ul>
+
+<li>
+The power under section 254(2) is confined only to rectification of a mistake apparent from the record. Therefore, the Tribunal must restrict itself within these statutory limits.
+</li>
+
+<li>
+In the present case, the Tribunal had earlier passed a detailed order upholding the order of the Assessing Officer.
+</li>
+
+<li>
+While allowing the rectification application under section 254(2), the Tribunal reheard the entire appeal on merits as though it was deciding the appeal afresh against the order of the Commissioner (Appeals).
+</li>
+
+<li>
+Such an exercise amounts to review of its earlier order, which is beyond the scope of section 254(2).
+</li>
+
+<li>
+Accordingly, the subsequent order passed by the Tribunal recalling its earlier order is beyond the scope and ambit of the powers conferred under section 254(2) and is not tenable in law.
+</li>
+
+</ul>
+
+<p><strong>Case Law:</strong></p>
+
+<p>
+<i>Reliance Telecom Ltd./Reliance Communications Ltd.</i> [2022] 440 ITR 1 (SC).
+</p>
+
+<hr>
+
+<p><strong>(iii) Adjustment of seized assets towards tax liability</strong></p>
+
+<p><strong>Issue Involved:</strong></p>
+
+<p>
+The issue involved is whether Mr. Yatin's application for adjustment of tax liability by sale of seized gold bars can be entertained when the assessment has not yet been completed.
+</p>
+
+<p><strong>Relevant Provision of Law:</strong></p>
+
+<p>
+Section 132B(1) lays down the manner in which assets seized under section 132 may be dealt with. An assessee is entitled to make an application to the Assessing Officer for adjustment of seized assets towards existing tax liability.
+</p>
+
+<p><strong>Analysis & Conclusion:</strong></p>
+
+<ul>
+
+<li>
+In the present case, the application made by the assessee is not for adjustment of an existing liability but towards the tax liability which is yet to be determined.
+</li>
+
+<li>
+Section 132B uses the expression <strong>"the amount of the liability determined"</strong>.
+</li>
+<li>
+A liability can be said to be "determined" only upon completion of the assessment. Until the assessment proceedings are completed, it cannot be said that the tax liability has crystallized.
+</li>
+
+<li>
+Therefore, the seized assets cannot be adjusted towards an anticipated tax liability before the assessment is completed and the demand is quantified.
+</li>
+
+<li>
+Accordingly, the action of the Assessing Officer in rejecting the application on the ground that such adjustment can be made only after completion of assessment and determination of demand is legally justified.
+</li>
+
+</ul>
+
+<p>
+Hence, the Assessing Officer is <strong>justified</strong> in rejecting the application.
+</p>
+
+<p><strong>Case Law:</strong></p>
+
+<p>
+<i>Hemant Kumar Sindhi & Another v. CIT</i> (2014) 364 ITR 555 (Allahabad High Court).
+</p>
+
+`
+},
+{
+  question_id: "DT_OctMTP24_II_5B",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Transfer Pricing",
+    "BEPS Action Plan 13",
+    "Transfer Pricing Documentation",
+    "Master File",
+    "Country-by-Country Reporting"
+  ],
+  placement: 5,
+  marks: 6,
+
+  question_html: `
+
+<p>
+Describe the three-tier structure for transfer pricing documentation mandated by BEPS Action Plan 13. Which provisions under the Income-tax Act, 1961 deal with Master File and Country-by-Country (CbC) reporting?
+</p>
+
+`,
+
+  solution_html: `
+
+<p>
+BEPS Action Plan 13 contains a <strong>three-tier standardized approach</strong> to transfer pricing documentation consisting of the following:
+</p>
+
+<p><strong>1. Master File</strong></p>
+
+<ul>
+<li>
+The Master File requires Multinational Enterprises (MNEs) to provide tax administrations with high-level information regarding their global business operations and transfer pricing policies.
+</li>
+
+<li>
+The Master File is required to be furnished directly by the MNE to the local tax administration.
+</li>
+</ul>
+
+<p><strong>2. Local File</strong></p>
+
+<ul>
+<li>
+The Local File requires maintenance of detailed transactional information specific to each country covering related-party transactions and the amounts involved.
+</li>
+
+<li>
+It should also contain the relevant financial information relating to such transactions, comparability analysis and analysis of the selection and application of the most appropriate transfer pricing method.
+</li>
+
+<li>
+The Local File is also furnished directly by the MNE to the local tax administration.
+</li>
+</ul>
+
+<p><strong>3. Country-by-Country (CbC) Report</strong></p>
+
+<ul>
+<li>
+The CbC Report requires MNEs to furnish an annual report containing economic indicators such as:
+<ul>
+<li>Revenue;</li>
+<li>Profit before income-tax;</li>
+<li>Income-tax paid;</li>
+<li>Income-tax accrued; and</li>
+<li>Other prescribed information relating to each tax jurisdiction in which they carry on business.</li>
+</ul>
+</li>
+
+<li>
+The CbC Report is required to be filed in the jurisdiction of tax residence of the Ultimate Parent Entity and is subsequently shared with other jurisdictions through the automatic exchange of information mechanism.
+</li>
+</ul>
+
+<p>
+A specific reporting regime relating to <strong>Country-by-Country (CbC) reporting</strong> and the <strong>Master File</strong> has been incorporated under the Income-tax Act, 1961. The essential provisions are contained in the Act, while the detailed procedural aspects are prescribed under the Income-tax Rules, 1962.
+</p>
+
+<p><strong>Relevant Provisions under the Income-tax Act, 1961</strong></p>
+
+<ul>
+<li>
+<strong>Section 286</strong> contains the provisions relating to <strong>Country-by-Country (CbC) Reporting</strong> and related matters.
+</li>
+
+<li>
+<strong>Section 92D</strong> contains the provisions relating to the <strong>maintenance and furnishing of the Master File</strong>.
+</li>
+</ul>
+
+`
+},
+{
+  question_id: "DT_OctMTP24_II_6A",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Tax Audit",
+    "TDS",
+    "Section 194C",
+    "Section 194-I",
+    "Form 3CD",
+    "Professional Ethics"
+  ],
+  placement: 6,
+  marks: 4,
+
+  question_html: `
+
+<p>
+TMP Ltd. is engaged in transportation of building material and transportation of goods to contractors. It made payment for hiring dumpers for this purpose. The company has not deducted tax at source on the ground that since the payment was for transportation of goods and not renting out machinery and equipment, such payments could not be termed as rent paid for use of machinery under section 194-I and hence, no tax was deductible at source.
+</p>
+
+<p>
+The tax auditor is, however, of the view that the transactions being in the nature of contracts for shifting of goods from one place to another would be covered under works contracts, thereby attracting the provisions of section 194C. He relied upon the Gujarat High Court ruling in <em>CIT (TDS) v. Shree Mahalaxmi Transport Co.</em> (2011) 339 ITR 484.
+</p>
+
+<p>
+What is the reporting responsibility of the tax auditor in such a case and the consequent ethical implications? Examine.
+</p>
+
+`,
+
+  solution_html: `
+
+<p>
+In clause <strong>34(a) of Form 3CD</strong>, the tax auditor is required to report whether the assessee is required to deduct or collect tax as per the provisions of <strong>Chapter XVII-B</strong> or <strong>Chapter XVII-BB</strong> and, if yes, furnish the prescribed particulars.
+</p>
+
+<p>
+While examining the applicability of the provisions relating to deduction or collection of tax at source, several debatable issues may arise before both the assessee and the tax auditor. The tax auditor may differ from the assessee regarding the applicability of the TDS provisions on a particular payment.
+</p>
+
+<p>
+In the present case, the assessee has taken the view that no tax was deductible at source since the payment was made for transportation of goods and not for renting machinery under section 194-I. However, the tax auditor is of the opinion that the payments are in the nature of works contracts and are liable for deduction of tax under section 194C, relying on the Gujarat High Court decision in <em>CIT (TDS) v. Shree Mahalaxmi Transport Co.</em> (2011) 339 ITR 484.
+</p>
+
+<p>
+In such circumstances, the tax auditor should appropriately report the difference of opinion as an <strong>observation in paragraph 3 of Form 3CA</strong>. This reporting requirement is specifically contained in the <strong>Guidance Note on Tax Audit</strong>.
+</p>
+
+<p>
+Further, under <strong>clause 21(b)(ii) of Form 3CD</strong>, the amount inadmissible under <strong>section 40(a)(ia)</strong>, if any, is also required to be reported.
+</p>
+
+<p><strong>Ethical Implications</strong></p>
+
+<p>
+If the tax auditor fails to comply with the above reporting requirements and does not appropriately disclose the difference of opinion in paragraph 3 of Form 3CA, <strong>clause (7) of Part I of the Second Schedule to the Chartered Accountants Act, 1949</strong> may be attracted for failure to exercise due diligence in the performance of professional duties.
+</p>
+
+`
+},
+{
+  question_id: "DT_OctMTP24_II_6B",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Depreciation",
+    "Additional Depreciation",
+    "Section 32",
+    "Section 115BAA",
+    "Tax Rates for Domestic Companies"
+  ],
+  placement: 6,
+  marks: 4,
+
+  question_html: `
+
+<p>
+SD Ltd., a pharmaceutical company incorporated in the year 2000-01, purchased a new plant and machinery for ₹12 lakhs on 01.04.2023. The total income of the company for Assessment Year 2024-25 before allowing additional depreciation in respect of the new plant and machinery is ₹22 lakhs.
+</p>
+
+<p>
+SD Ltd. has not opted for the concessional tax regime under section 115BAA or section 115BA so far.
+</p>
+
+<p>
+Compute the tax liability of SD Ltd. in the most beneficial manner for A.Y. 2024-25 assuming its turnover for the previous year 2021-22 was ₹338 crores. Ignore the provisions of MAT.
+</p>
+
+`,
+
+  solution_html: `
+
+<p><strong>Computation of Tax Liability under the Regular Provisions of the Income-tax Act</strong></p>
+
+<table border="1" cellspacing="0" cellpadding="6">
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+
+<tr>
+<td>Total Income before allowing additional depreciation</td>
+<td align="right">22,00,000</td>
+</tr>
+
+<tr>
+<td>Less: Additional depreciation under section 32(1)(iia) [₹12,00,000 × 20%]</td>
+<td align="right">(2,40,000)</td>
+</tr>
+
+<tr>
+<td><strong>Total Income</strong></td>
+<td align="right"><strong>19,60,000</strong></td>
+</tr>
+
+<tr>
+<td>Applicable tax rate (Turnover of P.Y. 2021-22 less than ₹400 crores)</td>
+<td align="right">25%</td>
+</tr>
+
+<tr>
+<td>Income-tax</td>
+<td align="right">4,90,000</td>
+</tr>
+
+<tr>
+<td>Add: Health & Education Cess @4%</td>
+<td align="right">19,600</td>
+</tr>
+
+<tr>
+<td><strong>Tax Liability</strong></td>
+<td align="right"><strong>5,09,600</strong></td>
+</tr>
+
+</table>
+
+<br>
+
+<p><strong>Computation of Tax Liability under Section 115BAA</strong></p>
+
+<table border="1" cellspacing="0" cellpadding="6">
+
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+
+<tr>
+<td>Total Income before allowing additional depreciation</td>
+<td align="right">22,00,000</td>
+</tr>
+
+<tr>
+<td>Less: Additional depreciation under section 32(1)(iia)</td>
+<td align="right">Not allowable under section 115BAA</td>
+</tr>
+
+<tr>
+<td><strong>Total Income</strong></td>
+<td align="right"><strong>22,00,000</strong></td>
+</tr>
+
+<tr>
+<td>Applicable tax rate</td>
+<td align="right">22%</td>
+</tr>
+
+<tr>
+<td>Income-tax</td>
+<td align="right">4,84,000</td>
+</tr>
+
+<tr>
+<td>Add: Surcharge @10%</td>
+<td align="right">48,400</td>
+</tr>
+
+<tr>
+<td>Sub-total</td>
+<td align="right">5,32,400</td>
+</tr>
+
+<tr>
+<td>Add: Health & Education Cess @4%</td>
+<td align="right">21,296</td>
+</tr>
+
+<tr>
+<td><strong>Tax Liability</strong></td>
+<td align="right"><strong>5,53,696</strong></td>
+</tr>
+
+<tr>
+<td><strong>Rounded off</strong></td>
+<td align="right"><strong>5,53,700</strong></td>
+</tr>
+
+</table>
+
+<br>
+
+<p><strong>Conclusion:</strong></p>
+
+<p>
+Since the tax payable under the regular provisions of the Income-tax Act (<strong>₹5,09,600</strong>) is lower than the tax payable under <strong>section 115BAA (₹5,53,700)</strong>, it is more beneficial for <strong>SD Ltd. not to opt for section 115BAA</strong> for the Assessment Year 2024-25.
+</p>
+
+`
+},
+{
+  question_id: "DT_OctMTP24_II_6C",
+  source: "ICAI Mock Test Paper - Series II: October 2024",
+  chapter_name: [
+    "Taxation of Non-Residents",
+    "Section 115A",
+    "Section 115AC",
+    "Royalty",
+    "Fees for Technical Services",
+    "Dividend",
+    "Business Income",
+    "DTAA"
+  ],
+  placement: 6,
+  marks: 6,
+
+  question_html: `
+
+<p>
+Strawberry Ltd., a non-resident German company, has the following incomes in India during the year ended on 31.03.2024:
+</p>
+
+<ol type="i">
+<li>
+Dividend income of ₹12,50,000 from XY Ltd., an Indian company listed on a recognised stock exchange.
+</li>
+
+<li>
+8% debentures of ₹20,00,000 received from X Ltd., an Indian company, on 01.10.2023 in consideration of providing technical know-how (date of payment of interest being 31st March every year).
+</li>
+
+<li>
+Dividend of ₹5,50,000 on Global Depository Receipts (GDRs) of Y Ltd., an Indian company, issued under a scheme of the Central Government against the initial issue of shares of the company and purchased by Strawberry Ltd. in foreign currency through an approved intermediary.
+</li>
+
+<li>
+Business income of ₹8,00,000 from a unit established at Mumbai.
+</li>
+
+<li>
+Income by way of royalty (other than referred to in section 44DA) amounting to ₹10,00,000 from Z Ltd., an Indian company, in pursuance of an agreement approved by the Central Government. As per the DTAA between the two countries, such royalty is taxable @22%.
+</li>
+</ol>
+
+<p>
+With brief reasons for the treatment of the above incomes, compute the tax liability of Strawberry Ltd. for the Assessment Year 2024-25.
+</p>
+
+`,
+
+  solution_html: `
+
+<p><strong>Computation of Total Income of Strawberry Ltd. for A.Y. 2024-25</strong></p>
+
+<table border="1" cellspacing="0" cellpadding="6">
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+</tr>
+
+<tr>
+<td><strong>Profits and Gains from Business or Profession</strong></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Business income from unit established at Mumbai</td>
+<td align="right">8,00,000</td>
+</tr>
+
+<tr>
+<td><strong>Income from Other Sources</strong></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Dividend income from XY Ltd., an Indian company</td>
+<td align="right">12,50,000</td>
+</tr>
+
+<tr>
+<td>Fees for Technical Services (equivalent to value of debentures received from X Ltd. for providing technical know-how)</td>
+<td align="right">20,00,000</td>
+</tr>
+
+<tr>
+<td>Interest on 8% debentures [₹20,00,000 × 8% × 6/12]</td>
+<td align="right">80,000</td>
+</tr>
+
+<tr>
+<td>Dividend on Global Depository Receipts (GDRs)</td>
+<td align="right">5,50,000</td>
+</tr>
+
+<tr>
+<td>Royalty received from Z Ltd.</td>
+<td align="right">10,00,000</td>
+</tr>
+
+<tr>
+<td><strong>Gross Total Income / Total Income</strong></td>
+<td align="right"><strong>56,80,000</strong></td>
+</tr>
+
+</table>
+
+<br>
+
+<p><strong>Computation of Tax Liability</strong></p>
+
+<table border="1" cellspacing="0" cellpadding="6">
+
+<tr>
+<th>Particulars</th>
+<th>Tax (₹)</th>
+</tr>
+
+<tr>
+<td>
+Dividend income of ₹12,50,000 taxable @20% under section 115A
+</td>
+<td align="right">2,50,000</td>
+</tr>
+
+<tr>
+<td>
+Dividend on GDRs of ₹5,50,000 taxable @10% under section 115AC
+</td>
+<td align="right">55,000</td>
+</tr>
+
+<tr>
+<td>
+Royalty of ₹10,00,000 taxable @20% under section 115A since it is received pursuant to an agreement approved by the Central Government (being more beneficial than DTAA rate of 22%)
+</td>
+<td align="right">2,00,000</td>
+</tr>
+
+<tr>
+<td>
+Fees for Technical Services of ₹20,00,000 taxable @40% since it is not in pursuance of an agreement approved by the Central Government
+</td>
+<td align="right">8,00,000</td>
+</tr>
+
+<tr>
+<td>
+Interest on debentures of ₹80,000 taxable @40% since the debt is incurred in Indian currency and hence not eligible for the concessional rate under section 115A
+</td>
+<td align="right">32,000</td>
+</tr>
+
+<tr>
+<td>
+Business income of ₹8,00,000 taxable @40%
+</td>
+<td align="right">3,20,000</td>
+</tr>
+
+<tr>
+<td><strong>Total Tax</strong></td>
+<td align="right"><strong>16,57,000</strong></td>
+</tr>
+
+<tr>
+<td>Add: Health & Education Cess @4%</td>
+<td align="right">66,280</td>
+</tr>
+
+<tr>
+<td><strong>Total Tax Liability</strong></td>
+<td align="right"><strong>17,23,280</strong></td>
+</tr>
+
+</table>
+
+`
 }
+
 
 ];

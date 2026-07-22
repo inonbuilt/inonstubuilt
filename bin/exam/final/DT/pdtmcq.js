@@ -774,6 +774,237 @@ const mcqData = [
     }
   ]
 },
+{
+  case_id: "dt_octmtp24_II_cs1",
+  case_chapter: [
+    "Return of Income",
+    "Processing of Return",
+    "Assessment",
+    "Reassessment",
+    "Penalty under Section 270A"
+  ],
+  caseText: `
+    <p><strong>Case Scenario I</strong></p>
+
+    <p>M/s. Swift LLP filed its return of income for A.Y. 2023-24, declaring total income of ₹18 lakhs, on 2nd December 2023.</p>
+
+    <p>On processing of the return, the total income determined under section 143(1)(a) was ₹22 lakhs after disallowing the claim for deduction under section 10AA on account of late furnishing of the return of income.</p>
+
+    <p>Thereafter, on scrutiny, the Assessing Officer made additions under section 40(a)(ia) and section 43B and passed an assessment order under section 143(3) assessing the total income at ₹35 lakhs.</p>
+
+    <p>Later, the Assessing Officer noticed that certain information was flagged for A.Y. 2023-24 suggesting that certain income chargeable to tax had escaped assessment. Based on such information, notice under section 148 was issued after complying with the requirements of section 148A and reassessment under section 147 was completed determining the total income at ₹42 lakhs.</p>
+
+    <p>Assume that none of the additions or disallowances made in the assessment or reassessment qualify under section 270A(6).</p>
+
+    <p><strong>Based on the above case scenario, answer Questions 1 to 5.</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "dt_octmtp24_II_q1",
+      chapter_name: [
+        "Processing of Return",
+        "Section 143(1)"
+      ],
+      question: "For the purpose of answering this question alone, assume that the intimation under section 143(1)(a) was sent to M/s. Swift LLP on 01.02.2025. Would such intimation be valid?",
+      options: [
+        "Yes, since it was sent within one year from the end of the financial year in which the return was made.",
+        "No, since it was sent after the expiry of nine months from the end of the financial year in which the return was made.",
+        "No, since it was sent after the expiry of one year from the end of the month in which the return was made.",
+        "No, since it was sent after the expiry of nine months from the end of the month in which the return was made."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "dt_octmtp24_II_q2",
+      chapter_name: [
+        "Reassessment",
+        "Section 147",
+        "Section 148A"
+      ],
+      question: "For the purpose of answering this question alone, assume that certain other incomes, which had escaped assessment and came to the notice of the Assessing Officer subsequently during reassessment proceedings, were also assessed or reassessed in the reassessment order under section 147 without complying with section 148A. Examine whether the action of the Assessing Officer is valid.",
+      options: [
+        "The action of the Assessing Officer is not valid, since reassessment cannot be made in respect of other incomes which come to his notice subsequently.",
+        "The action of the Assessing Officer is not valid, since the provisions of section 148A were not complied with.",
+        "The action of the Assessing Officer is not valid due to both the above reasons.",
+        "The action of the Assessing Officer is valid."
+      ],
+      answer: 3
+    },
+    {
+      question_id: "dt_octmtp24_II_q3",
+      chapter_name: [
+        "Penalty",
+        "Section 270A"
+      ],
+      question: "Compute the amount of penalty leviable under section 270A at the time of assessment under section 143(3). Assume that the under-reporting of income is not on account of misreporting.",
+      options: [
+        "₹2,02,800",
+        "₹2,65,200",
+        "₹5,30,400",
+        "₹4,05,600"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "dt_octmtp24_II_q4",
+      chapter_name: [
+        "Penalty",
+        "Section 270A",
+        "Reassessment"
+      ],
+      question: "Compute the amount of penalty leviable under section 270A at the time of reassessment under section 147. Assume that the under-reporting of income is on account of misreporting.",
+      options: [
+        "₹1,09,200",
+        "₹4,36,800",
+        "₹2,18,400",
+        "₹3,12,000"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "dt_octmtp24_II_q5",
+      chapter_name: [
+        "Penalty",
+        "Section 270AA",
+        "Immunity from Penalty"
+      ],
+      question: "In continuation to Question 4, assume that the reassessment order under section 147 was received on 12.12.2025 and M/s. Swift LLP does not prefer an appeal against such order. Can M/s. Swift LLP apply for grant of immunity from penalty? If yes, what is the time limit for making such application?",
+      options: [
+        "No, M/s. Swift LLP cannot make an application for grant of immunity.",
+        "Yes, M/s. Swift LLP can make an application on or before 11.01.2026.",
+        "Yes, M/s. Swift LLP can make an application on or before 31.01.2026.",
+        "Yes, M/s. Swift LLP can make an application on or before 31.03.2026."
+      ],
+      answer: 0
+    }
+  ]
+},
+{
+  case_id: "dt_octmtp24_II_cs2",
+  case_chapter: [
+    "Business Trust",
+    "REIT",
+    "Pass Through Status",
+    "Taxation of Business Trust",
+    "TDS on Distributed Income"
+  ],
+  caseText: `
+    <p><strong>Case Scenario II</strong></p>
+
+    <p>A business trust, registered under the SEBI (Real Estate Investment Trusts) Regulations, 2014, furnished the following particulars of its income for the Previous Year 2023-24:</p>
+
+    <ol type="i">
+      <li>Interest income from Tang Ltd. – ₹10 lakh;</li>
+      <li>Dividend income from Tang Ltd. – ₹5 lakh;</li>
+      <li>Short-term capital gains on sale of listed shares (STT paid both at the time of purchase and sale) of Indian companies – ₹4 lakh;</li>
+      <li>Short-term capital gains on sale of developmental properties – ₹8 lakh;</li>
+      <li>Interest received from investments in unlisted debentures of real estate companies – ₹1 lakh;</li>
+      <li>Rental income from directly owned real estate assets – ₹20 lakh.</li>
+    </ol>
+
+    <p>Tang Ltd. is an Indian company in which the business trust holds 100% of the shareholding. Tang Ltd. has not opted to pay tax under section 115BAA.</p>
+
+    <p>Assume that the business trust distributed the entire ₹48 lakh to the unit holders during the month of March, 2024.</p>
+
+    <p>Mr. Shivam is a resident unit holder holding 100 units and Mr. Sahaj is a non-resident unit holder holding 500 units. The total number of units subscribed by all unit holders is 5,000.</p>
+
+    <p><strong>Based on the above case scenario, answer Questions 6 to 11.</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "dt_octmtp24_II_q6",
+      chapter_name: [
+        "Business Trust",
+        "TDS on Distributed Income"
+      ],
+      question: "In respect of the component of interest income from Tang Ltd. distributed by the business trust to unit holders Shivam and Sahaj—",
+      options: [
+        "No tax is deductible by the business trust, since such income is not taxable in the hands of unit holders.",
+        "Tax is deductible @5% on ₹20,000 distributed to Mr. Shivam and @5.2% on ₹1 lakh distributed to Mr. Sahaj.",
+        "Tax is deductible @10% on ₹20,000 distributed to Mr. Shivam and @5.2% on ₹1 lakh distributed to Mr. Sahaj.",
+        "Tax is deductible @10% on ₹20,000 distributed to Mr. Shivam and @10.4% on ₹1 lakh distributed to Mr. Sahaj."
+      ],
+      answer: 2
+    },
+    {
+      question_id: "dt_octmtp24_II_q7",
+      chapter_name: [
+        "Business Trust",
+        "Capital Gains"
+      ],
+      question: "In respect of short-term capital gains of ₹4 lakh on sale of listed shares of Indian companies and ₹8 lakh on sale of developmental properties—",
+      options: [
+        "The business trust is liable to pay tax @15% and at MMR, respectively.",
+        "The business trust is liable to pay tax at MMR.",
+        "The business trust enjoys pass-through status and hence need not pay any tax on such short-term capital gains; such income is taxable in the hands of unit holders.",
+        "The business trust is liable to pay tax @15.6% and at MMR, respectively."
+      ],
+      answer: 3
+    },
+    {
+      question_id: "dt_octmtp24_II_q8",
+      chapter_name: [
+        "Business Trust",
+        "Dividend"
+      ],
+      question: "The dividend component of income from Tang Ltd. distributed to unit holders Shivam and Sahaj—",
+      options: [
+        "Would be subject to distribution tax in the hands of Tang Ltd.; hence exempt in the hands of the business trust and the unit holders.",
+        "Is exempt in the hands of the business trust since the trust enjoys pass-through status; such income is taxable in the hands of the unit holders Shivam and Sahaj.",
+        "Is taxable in the hands of the business trust; hence exempt in the hands of the unit holders.",
+        "Is exempt in the hands of the business trust and in the hands of the unit holders."
+      ],
+      answer: 3
+    },
+    {
+      question_id: "dt_octmtp24_II_q9",
+      chapter_name: [
+        "Business Trust",
+        "Dividend",
+        "Section 115BAA"
+      ],
+      question: "If Tang Ltd. exercises the option under section 115BAA, then the dividend component of income from Tang Ltd. distributed to unit holders Shivam and Sahaj—",
+      options: [
+        "Would be subject to distribution tax in the hands of Tang Ltd.; hence exempt in the hands of the business trust and the unit holders.",
+        "Is exempt in the hands of the business trust since the trust enjoys pass-through status; such income is taxable in the hands of Shivam and Sahaj.",
+        "Is taxable in the hands of the business trust; hence exempt in the hands of Shivam and Sahaj.",
+        "Is exempt in the hands of the business trust and in the hands of the unit holders Shivam and Sahaj."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "dt_octmtp24_II_q10",
+      chapter_name: [
+        "Business Trust",
+        "Interest Income"
+      ],
+      question: "Interest received by the business trust from investments in unlisted debentures of real estate companies and distributed to unit holders would be—",
+      options: [
+        "Subject to tax in the hands of the unit holders.",
+        "Subject to tax in the hands of the business trust @30%.",
+        "Subject to tax in the hands of the business trust at MMR.",
+        "Subject to tax in the hands of the business trust at the average rate of tax."
+      ],
+      answer: 2
+    },
+    {
+      question_id: "dt_octmtp24_II_q11",
+      chapter_name: [
+        "Business Trust",
+        "Rental Income",
+        "TDS on Distributed Income"
+      ],
+      question: "The rental component of income from real estate assets received by the business trust and distributed to its unit holders Shivam and Sahaj would be—",
+      options: [
+        "Subject to tax in the hands of the business trust at MMR.",
+        "Subject to tax in the hands of the business trust @31.2%.",
+        "Subject to tax in the hands of the unit holder Shivam @10% (on ₹40,000) and Sahaj @ the rates in force (on ₹2,00,000); such tax has to be deducted at source by the business trust.",
+        "Subject to tax in the hands of the unit holders Shivam and Sahaj; the business trust has to deduct tax @10% on ₹40,000 distributed to Shivam and at the rates in force on ₹2,00,000 distributed to Sahaj."
+      ],
+      answer: 3
+    }
+  ]
+}
 
   
 ];
