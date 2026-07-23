@@ -3208,7 +3208,1245 @@ const descriptiveQuestions = [
       </li>
     </ol>
   `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_1",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Input Tax Credit",
+    "Blocked Credits",
+    "Reverse Charge Mechanism",
+    "Composite Supply",
+    "Post-supply Discount",
+    "Value of Supply",
+    "Supply of Motor Vehicles",
+    "Time of Supply"
+  ],
+  placement: 1,
+  marks: 14,
+  question_html: `
+    <p><strong>MS Ltd.</strong> is a company registered under GST. Its turnover in the previous financial year was <strong>₹2 crore</strong>. During the month of October, the company has undertaken the following transactions and wants you to work out the amount of <strong>net GST payable in cash</strong>.</p>
+
+    <p>Applicable rate of <strong>IGST is 18%</strong>, <strong>CGST is 9%</strong> and <strong>SGST is 9%</strong> on all goods and services except <strong>transportation of goods services provided by Goods Transport Agency</strong> and <strong>restaurant service</strong> for which applicable CGST and SGST rate is <strong>2.5%</strong> each and IGST rate is <strong>5%</strong>, and <strong>old and used vehicles</strong> for which applicable CGST and SGST rate is <strong>6%</strong> each and IGST rate is <strong>12%</strong>.</p>
+
+    <p>The amounts indicated for all the items are <strong>exclusive of GST</strong>.</p>
+
+    <p>As the manager of the company, it informed you that the GST liability for October for their main product <strong>Product Alpha</strong> is:</p>
+
+    <ul>
+      <li>CGST: <strong>₹54 lakh</strong></li>
+      <li>SGST: <strong>₹54 lakh</strong></li>
+      <li>IGST: <strong>₹72 lakh</strong></li>
+    </ul>
+
+    <p>The eligible credit on the inputs and input services for October is:</p>
+
+    <ul>
+      <li>IGST: <strong>₹1.45 crore</strong></li>
+      <li>CGST: <strong>₹20 lakh</strong></li>
+      <li>SGST: <strong>₹20 lakh</strong></li>
+    </ul>
+
+    <p>The company has also provided the following additional details:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Details of the transaction</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(i)</td>
+          <td>During the month of October, the company offered its dealers a special festival discount of <strong>25%</strong> on Product Alpha sold during September. Total discount under the scheme amounted to <strong>₹45,00,000</strong>. All original supplies were inter-State supplies.</td>
+        </tr>
+        <tr>
+          <td>(ii)</td>
+          <td>The company sold by auction a van used for travel of the director. The van was purchased for <strong>₹3,20,000</strong>, depreciation under section 32 of the Income-tax Act had been claimed and its depreciated value at the time of sale was <strong>₹1,40,000</strong>. No ITC had been availed. The van was sold intra-State for <strong>₹1,50,000</strong>.</td>
+        </tr>
+        <tr>
+          <td>(iii)</td>
+          <td>The company mandatorily charges transportation cost from dealers. Transportation charges collected during October were <strong>₹6 lakh</strong> for intra-State supplies and <strong>₹4 lakh</strong> for inter-State supplies.</td>
+        </tr>
+        <tr>
+          <td>(iv)</td>
+          <td>Ball bearings worth <strong>₹2.50 lakh</strong> purchased in July were stolen during October.</td>
+        </tr>
+        <tr>
+          <td>(v)</td>
+          <td>GST of <strong>₹3,00,000</strong> was paid on cosmetic and plastic surgery of the factory manager. Assume it is an intra-State supply.</td>
+        </tr>
+        <tr>
+          <td>(vi)</td>
+          <td>Audit fee of <strong>₹60,000</strong> was paid to Sudhakar Associates, Chartered Accountants. Out of this, <strong>₹35,000</strong> relates to statutory audit of the preceding financial year and <strong>₹25,000</strong> relates to certification services. Assume it is an intra-State supply.</td>
+        </tr>
+        <tr>
+          <td>(vii)</td>
+          <td>The registered office of the company is situated in a building owned by the local Municipality. Monthly rent paid is <strong>₹1.50 lakh</strong>.</td>
+        </tr>
+        <tr>
+          <td>(viii)</td>
+          <td>The whole-time director (located in the same State) was paid salary of <strong>₹5 lakh</strong> during October. He was also paid <strong>₹20,000</strong> as sitting fees for participation in the Board meeting.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Compute the amount of net GST payable in cash by MS Ltd. for the month of October.</strong></p>
+
+    <p><strong>Give a brief note to support your treatment for the items wherever required.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Computation of Net GST Payable in Cash for October</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>CGST (₹ lakh)</th>
+          <th>SGST (₹ lakh)</th>
+          <th>IGST (₹ lakh)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Output tax liability – Product Alpha</td>
+          <td>54.000</td>
+          <td>54.000</td>
+          <td>72.000</td>
+        </tr>
+        <tr>
+          <td>Sale of old van by auction</td>
+          <td>0.006</td>
+          <td>0.006</td>
+          <td>–</td>
+        </tr>
+        <tr>
+          <td>Transportation charges collected (Composite Supply)</td>
+          <td>0.540</td>
+          <td>0.540</td>
+          <td>0.720</td>
+        </tr>
+        <tr>
+          <th>Total Output Tax Liability</th>
+          <th>54.546</th>
+          <th>54.546</th>
+          <th>72.720</th>
+        </tr>
+        <tr>
+          <td>Less: IGST ITC set-off</td>
+          <td>(35.915)</td>
+          <td>(35.915)</td>
+          <td>(72.720)</td>
+        </tr>
+        <tr>
+          <td>Less: CGST/SGST ITC</td>
+          <td>(18.631)</td>
+          <td>(18.631)</td>
+          <td>–</td>
+        </tr>
+        <tr>
+          <th>GST payable in cash</th>
+          <th>Nil</th>
+          <th>Nil</th>
+          <th>Nil</th>
+        </tr>
+        <tr>
+          <td>GST payable under Reverse Charge</td>
+          <td>0.153</td>
+          <td>0.153</td>
+          <td>–</td>
+        </tr>
+        <tr>
+          <th>Total GST payable in cash</th>
+          <th>₹0.153 lakh</th>
+          <th>₹0.153 lakh</th>
+          <th>Nil</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Working Note 1 – ITC Available</strong></p>
+
+    <ul>
+      <li>Eligible ITC available:
+        <ul>
+          <li>IGST – ₹145 lakh</li>
+          <li>CGST – ₹20 lakh</li>
+          <li>SGST – ₹20 lakh</li>
+        </ul>
+      </li>
+      <li>ITC on stolen ball bearings is blocked and requires reversal.</li>
+      <li>ITC on cosmetic and plastic surgery is blocked under section 17(5).</li>
+      <li>ITC on audit fees is admissible as the service is used in the course or furtherance of business.</li>
+      <li>GST paid on rent of Municipality and sitting fees paid to director under reverse charge is also eligible as ITC.</li>
+    </ul>
+
+    <p><strong>Working Note 2 – Reverse Charge Liability</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>CGST (₹ lakh)</th>
+          <th>SGST (₹ lakh)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rent paid to Municipality</td>
+          <td>0.135</td>
+          <td>0.135</td>
+        </tr>
+        <tr>
+          <td>Sitting fees paid to Whole-time Director</td>
+          <td>0.018</td>
+          <td>0.018</td>
+        </tr>
+        <tr>
+          <th>Total Reverse Charge Tax</th>
+          <th>0.153</th>
+          <th>0.153</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Important Notes:</strong></p>
+
+    <ol>
+      <li>Post-supply discount is not deductible since it was not established in terms of an agreement existing at the time of supply.</li>
+      <li>Sale of old motor vehicle is taxable on the margin, i.e., Sale consideration minus depreciated value.</li>
+      <li>Transportation charges recovered from customers form part of a composite supply; hence GST rate applicable to the principal supply applies.</li>
+      <li>Tax payable under reverse charge cannot be discharged through ITC and must be paid in cash.</li>
+      <li>IGST credit is first utilised against IGST liability and the balance may be utilised against CGST and SGST in any proportion.</li>
+    </ol>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_2a",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Place of Supply of Services",
+    "Telecommunication Services",
+    "Services on Board a Conveyance",
+    "Admission to Events",
+    "Transportation of Goods",
+    "Stock Broking Services"
+  ],
+  placement: 2,
+  marks: 10,
+  question_html: `
+    <p> Determine the place of supply along with reasons in the following cases:</strong></p>
+
+    <ol type="i">
+      <li>
+        <p>Chitranjan, registered in Guwahati, has availed land-line services from BSNL. The telephone is installed in residential premises in Kolkata and the billing address is office of Chitranjan in Guwahati.</p>
+      </li>
+
+      <li>
+        <p>Digvijay, residing in Maharashtra, is travelling with <strong>‘Heera Airlines’</strong> aircraft and is provided with <strong>movie-on-demand service</strong> for <strong>₹500</strong> as on-board entertainment during <strong>Delhi–Maharashtra</strong> leg of a <strong>Bangkok–Delhi–Maharashtra</strong> flight.</p>
+      </li>
+
+      <li>
+        <p>Kunwar of Delhi purchased online tickets for <strong>Chill Water Park</strong> in Mumbai.</p>
+      </li>
+
+      <li>
+        <p>Maldeo, an unregistered person of Orissa, sends a courier from <strong>New Delhi</strong> to his friend in <strong>Ahmedabad, Gujarat</strong> while he was on a trip to New Delhi.</p>
+      </li>
+
+      <li>
+        <p>Rajyavardhan, a registered person in Ranchi, Jharkhand, buys shares from a broker in Patna on NSE, Mumbai. Determine the place of supply of brokerage service assuming that the location of the recipient of service is available in the records of the supplier of service.</p>
+      </li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>Place of Supply in each case is as follows:</strong></p>
+
+    <ol type="i">
+      <li>
+        <p><strong>Place of Supply: Kolkata</strong></p>
+        <p>In case of services by way of a fixed telecommunication line, the place of supply is the <strong>location where the telecommunication line is installed</strong> for receipt of the service. Since the land-line is installed in Kolkata, the place of supply is <strong>Kolkata</strong>.</p>
+      </li>
+
+      <li>
+        <p><strong>Place of Supply: Bangkok</strong></p>
+        <p>For services supplied on board an aircraft, the place of supply is the <strong>location of the first scheduled point of departure</strong> of that flight for the journey. Since the journey commenced from <strong>Bangkok</strong>, the place of supply is <strong>Bangkok</strong>.</p>
+      </li>
+
+      <li>
+        <p><strong>Place of Supply: Mumbai</strong></p>
+        <p>The place of supply of services by way of admission to an amusement park is the <strong>place where the amusement park is located</strong>. Hence, the place of supply is <strong>Mumbai</strong>.</p>
+      </li>
+
+      <li>
+        <p><strong>Place of Supply: New Delhi</strong></p>
+        <p>For transportation of goods, including courier services, supplied to a person other than a registered person, the place of supply is the <strong>location where the goods are handed over for transportation</strong>. Since the courier was handed over in <strong>New Delhi</strong>, the place of supply is <strong>New Delhi</strong>.</p>
+      </li>
+
+      <li>
+        <p><strong>Place of Supply: Ranchi (Jharkhand)</strong></p>
+        <p>In case of stock broking services, where the location of the recipient is available in the records of the supplier, the place of supply is the <strong>location of the recipient of services</strong>. Therefore, the place of supply is <strong>Ranchi, Jharkhand</strong>.</p>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_2b",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Customs Valuation",
+    "Assessable Value",
+    "Imported Goods by Air",
+    "Rate of Exchange",
+    "Rate of Duty",
+    "Integrated Tax on Imports",
+    "Social Welfare Surcharge"
+  ],
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p>Product <strong>'X'</strong> was imported by <strong>Mr. Shardul</strong> by air. The details of the import transaction are as follows:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>US $</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Price of 'X' at exporter's factory</td>
+          <td>8,500</td>
+        </tr>
+        <tr>
+          <td>Freight from factory of the exporter to load airport (airport in the country of exporter)</td>
+          <td>250</td>
+        </tr>
+        <tr>
+          <td>Loading and handling charges at the load airport</td>
+          <td>250</td>
+        </tr>
+        <tr>
+          <td>Freight from load airport to the airport of importation in India</td>
+          <td>4,500</td>
+        </tr>
+        <tr>
+          <td>Insurance charges</td>
+          <td>2,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Though the aircraft arrived on <strong>22nd January</strong>, the bill of entry for home consumption was presented by Mr. Shardul on <strong>20th January</strong>.</p>
+
+    <p>The other details furnished by Mr. Shardul are:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>20th January</th>
+          <th>22nd January</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rate of basic customs duty</td>
+          <td>20%</td>
+          <td>10%</td>
+        </tr>
+        <tr>
+          <td>Exchange rate notified by CBIC</td>
+          <td>₹70 per US$</td>
+          <td>₹72 per US$</td>
+        </tr>
+        <tr>
+          <td>Exchange rate prescribed by RBI</td>
+          <td>₹71 per US$</td>
+          <td>₹72 per US$</td>
+        </tr>
+        <tr>
+          <td>Integrated tax leviable under section 3(7) of the Customs Tariff Act, 1975</td>
+          <td>18%</td>
+          <td>12%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Compute:</strong></p>
+
+    <ol type="i">
+      <li>Value of Product 'X' for the purpose of levying customs duty.</li>
+      <li>Customs duty and tax payable.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>(i) Computation of Assessable Value</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (US $)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ex-factory price</td>
+          <td>8,500</td>
+        </tr>
+        <tr>
+          <td>Freight from factory to load airport</td>
+          <td>250</td>
+        </tr>
+        <tr>
+          <td>Loading and handling charges at load airport</td>
+          <td>250</td>
+        </tr>
+        <tr>
+          <td><strong>FOB Value</strong></td>
+          <td><strong>9,000</strong></td>
+        </tr>
+        <tr>
+          <td>Add: Freight to India (restricted to 20% of FOB value)</td>
+          <td>1,800</td>
+        </tr>
+        <tr>
+          <td>Add: Insurance (Actual)</td>
+          <td>2,000</td>
+        </tr>
+        <tr>
+          <th>CIF Value / Customs Value</th>
+          <th>12,300</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Exchange rate notified by <strong>CBIC</strong> on the relevant date = <strong>₹70 per US$</strong>.</p>
+
+    <p><strong>Assessable Value = 12,300 × ₹70 = ₹8,61,000</strong></p>
+
+    <p><strong>(ii) Computation of Customs Duty</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Assessable Value</td>
+          <td>8,61,000</td>
+        </tr>
+        <tr>
+          <td>Add: Basic Customs Duty @10%</td>
+          <td>86,100</td>
+        </tr>
+        <tr>
+          <td>Add: Social Welfare Surcharge @10% of BCD</td>
+          <td>8,610</td>
+        </tr>
+        <tr>
+          <td>Value for levy of IGST</td>
+          <td>9,55,710</td>
+        </tr>
+        <tr>
+          <td>Add: IGST @12%</td>
+          <td>1,14,685</td>
+        </tr>
+        <tr>
+          <th>Total Customs Duty & Tax Payable (Rounded Off)</th>
+          <th>₹2,09,395</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Notes:</strong></p>
+
+    <ol>
+      <li>For goods imported by air, freight is restricted to <strong>20% of FOB value</strong> for customs valuation purposes.</li>
+
+      <li>The exchange rate notified by <strong>CBIC</strong> is applicable for customs valuation and not the RBI exchange rate.</li>
+
+      <li>As per section 15 of the Customs Act, 1962, the applicable rate of duty is the rate in force on the later of:
+        <ul>
+          <li>the date of presentation of Bill of Entry, or</li>
+          <li>the date of arrival of the aircraft.</li>
+        </ul>
+        Accordingly, the rate applicable is the rate prevailing on <strong>22nd January</strong>.
+      </li>
+
+      <li>IGST is levied on the aggregate of:
+        <ul>
+          <li>Assessable Value,</li>
+          <li>Basic Customs Duty, and</li>
+          <li>Social Welfare Surcharge.</li>
+      </ul>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_3a",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Value of Supply",
+    "Valuation Rules",
+    "Open Market Value",
+    "Consideration Not Wholly in Money"
+  ],
+  placement: 3,
+  marks: 5,
+  question_html: `
+    <p>Baruna Associates is the supplier of geysers. Baruna Associates supplied geysers to an unrelated party, <strong>Gulab Traders</strong> for a consideration of <strong>₹1,47,500 (inclusive of GST @ 18%)</strong>. Gulab Traders also gave some materials to Baruna Associates <strong>valued at ₹15,000 (exclusive of GST)</strong> as an additional consideration for such supply.</p>
+
+    <p>At the same time, Baruna Associates supplied the same goods to another unrelated person at a price of <strong>₹1,48,680 (inclusive of GST @ 18%)</strong>.</p>
+
+    <p>You are required to:</p>
+
+    <ol>
+      <li>Determine the value of goods supplied by Baruna Associates to Gulab Traders.</li>
+      <li>What would your answer be if the price of <strong>₹1,48,680</strong> is not available at the time of supply of goods to Gulab Traders? Explain briefly.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>(1) Determination of Value of Supply</strong></p>
+
+    <p>In the given case, the price is <strong>not the sole consideration</strong> for the supply since, apart from the monetary consideration, Gulab Traders has also supplied materials valued at <strong>₹15,000</strong> to Baruna Associates.</p>
+
+    <p>Accordingly, the transaction value under section 15 of the CGST Act, 2017 cannot be adopted. The value shall be determined in accordance with <strong>Rule 27 of the CGST Rules, 2017</strong>, which provides that where the consideration for a supply is <strong>not wholly in money</strong>, the value shall be the <strong>Open Market Value (OMV)</strong> of such supply.</p>
+
+    <p><strong>Open Market Value</strong> means the full value in money, excluding GST, payable by an unrelated recipient where price is the sole consideration for obtaining such supply at the same time.</p>
+
+    <p>Open Market Value:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Price charged to another unrelated buyer (inclusive of GST)</td>
+          <td>1,48,680</td>
+        </tr>
+        <tr>
+          <td>Less: GST @18%</td>
+          <td>(22,680)</td>
+        </tr>
+        <tr>
+          <th>Open Market Value (excluding GST)</th>
+          <th>1,26,000</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Value of supply = ₹1,26,000.</strong></p>
+
+    <hr>
+
+    <p><strong>(2) When Open Market Value is not available</strong></p>
+
+    <p>Where the Open Market Value is not available, <strong>Rule 27 of the CGST Rules, 2017</strong> provides that the value shall be the aggregate of:</p>
+
+    <ul>
+      <li>Monetary consideration (excluding GST), and</li>
+      <li>Money equivalent of the non-monetary consideration, if known at the time of supply.</li>
+    </ul>
+
+    <p><strong>Computation:</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monetary consideration (₹1,47,500 × 100 ÷ 118)</td>
+          <td>1,25,000</td>
+        </tr>
+        <tr>
+          <td>Add: Value of materials supplied by Gulab Traders</td>
+          <td>15,000</td>
+        </tr>
+        <tr>
+          <th>Value of Supply</th>
+          <th>1,40,000</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Therefore, where the Open Market Value is not available, the value of supply shall be ₹1,40,000.</strong></p>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_3b",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Exemptions from GST",
+    "Religious Places",
+    "Charitable Trust",
+    "Renting Services"
+  ],
+  placement: 3,
+  marks: 5,
+  question_html: `
+    <p>Shanti Niwas Charitable Trust, a trust registered under section 12AB of the Income-tax Act, 1961, provides the following information relating to supply of its services for the month of December:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Renting of residential dwelling for use as a residence</td>
+          <td>18,00,000</td>
+        </tr>
+        <tr>
+          <td>Renting of rooms for devotees (Charges per day ₹750)</td>
+          <td>6,00,000</td>
+        </tr>
+        <tr>
+          <td>Renting of Kalyanamandapam (Charges per day ₹15,000)</td>
+          <td>12,00,000</td>
+        </tr>
+        <tr>
+          <td>Renting of community halls and open space (Charges per day ₹7,500)</td>
+          <td>10,75,000</td>
+        </tr>
+        <tr>
+          <td>Renting of shops for business (Charges per month ₹9,500)</td>
+          <td>4,75,000</td>
+        </tr>
+        <tr>
+          <td>Renting of shops for business (Charges per month ₹12,000)</td>
+          <td>7,50,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Compute the GST liability of Shanti Niwas Charitable Trust for the month of December</strong> assuming that the above amounts are exclusive of GST and the rate of GST, wherever applicable, is <strong>18%</strong>.</p>
+
+    <p><strong>Note:</strong> The rooms, Kalyanamandapam, halls, open space and shops owned by the trust are located within the precincts of a religious place, meant for general public, owned by the trust.</p>
+  `,
+  solution_html: `
+    <p>Renting of precincts of a religious place meant for the general public, owned or managed by an entity registered as a charitable trust under section 12AA/12AB of the Income-tax Act, is exempt from GST subject to specified monetary limits.</p>
+
+    <p>However, the exemption is <strong>not available</strong> where:</p>
+
+    <ol>
+      <li>Charges for rented rooms are <strong>₹1,000 per day or more</strong>.</li>
+      <li>Charges for rented community halls, Kalyanamandapam or open area are <strong>₹10,000 per day or more</strong>.</li>
+      <li>Charges for rented shops are <strong>₹10,000 per month or more</strong>.</li>
+    </ol>
+
+    <p>Further, services by way of <strong>renting of a residential dwelling for use as a residence</strong> are exempt from GST.</p>
+
+    <p><strong>Computation of GST Liability</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Value (₹)</th>
+          <th>GST @18% (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Renting of residential dwelling for use as residence<br>
+            <em>(Exempt)</em>
+          </td>
+          <td>18,00,000</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>
+            Renting of rooms for devotees (₹750 per day)<br>
+            <em>Exempt since charges are below ₹1,000 per day.</em>
+          </td>
+          <td>6,00,000</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>
+            Renting of Kalyanamandapam (₹15,000 per day)<br>
+            <em>Taxable since charges exceed ₹10,000 per day.</em>
+          </td>
+          <td>12,00,000</td>
+          <td>2,16,000</td>
+        </tr>
+        <tr>
+          <td>
+            Renting of community halls and open space (₹7,500 per day)<br>
+            <em>Exempt since charges are below ₹10,000 per day.</em>
+          </td>
+          <td>10,75,000</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>
+            Renting of shops for business (₹9,500 per month)<br>
+            <em>Exempt since charges are below ₹10,000 per month.</em>
+          </td>
+          <td>4,75,000</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>
+            Renting of shops for business (₹12,000 per month)<br>
+            <em>Taxable since charges exceed ₹10,000 per month.</em>
+          </td>
+          <td>7,50,000</td>
+          <td>1,35,000</td>
+        </tr>
+        <tr>
+          <th>Total GST Liability</th>
+          <th>-</th>
+          <th>₹3,51,000</th>
+        </tr>
+      </tbody>
+    </table>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_3c",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Customs Act, 1962",
+    "Abatement of Duty",
+    "Damaged or Deteriorated Goods"
+  ],
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p>Shine & Star India Ltd. imported a consignment from U.S.A. by sea. The value of the consignment was <strong>₹7,50,000</strong> and the total duty payable was <strong>₹1,50,000</strong>.</p>
+
+    <p>The company filed a bill of entry for home consumption. However, before inspection and clearance for home consumption, it found that the goods were damaged.</p>
+
+    <p>On filing a representation before the Customs Department, the proper officer refused the claim for abatement on the ground that the goods had already been unloaded. The proper officer, however, agreed that the value of the goods had reduced to <strong>₹1,50,000</strong>.</p>
+
+    <p>Examine the issue with reference to the relevant statutory provisions and calculate the amount of total duty payable.</p>
+
+    <p>Would your answer be different if the goods had deteriorated after unloading and examination but before clearance for home consumption, and their value had reduced to <strong>₹7,00,000</strong>?</p>
+  `,
+  solution_html: `
+    <p><strong>Statutory Provision:</strong></p>
+
+    <p>Section 22 of the Customs Act, 1962 provides that where imported goods (other than warehoused goods) are damaged at any time after unloading but before their examination, on account of an accident not attributable to any wilful act, negligence or default of the importer, the importer is entitled to <strong>abatement of customs duty</strong>.</p>
+
+    <p>Therefore, the stand taken by the proper officer in refusing the claim merely because the goods had already been unloaded is <strong>not valid in law</strong>.</p>
+
+    <p>The duty payable is reduced in the same proportion as the reduction in the value of the goods.</p>
+
+    <p><strong>Computation of Duty Payable</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Original value of goods</td>
+          <td>7,50,000</td>
+        </tr>
+        <tr>
+          <td>Reduced value after damage</td>
+          <td>1,50,000</td>
+        </tr>
+        <tr>
+          <td>Original customs duty payable</td>
+          <td>1,50,000</td>
+        </tr>
+        <tr>
+          <td><strong>Duty payable after abatement [₹1,50,000 × (₹1,50,000 ÷ ₹7,50,000)]</strong></td>
+          <td><strong>30,000</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Total customs duty payable = ₹30,000.</strong></p>
+
+    <hr>
+
+    <p><strong>Case where goods deteriorate after unloading and examination</strong></p>
+
+    <p>Abatement of duty is available in case of deterioration only when such deterioration occurs <strong>before or during unloading</strong>.</p>
+
+    <p>Since, in the given case, the goods deteriorated <strong>after unloading and examination but before clearance for home consumption</strong>, the benefit of abatement is <strong>not available</strong>.</p>
+
+    <p>Accordingly, the importer will be liable to pay the <strong>full customs duty of ₹1,50,000</strong>.</p>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_4a",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Tax Deduction at Source (TDS)",
+    "Section 51 of the CGST Act",
+    "Government Departments"
+  ],
+  placement: 4,
+  marks: 5,
+  question_html: `
+    <p>Bali Enterprises, registered in Delhi, is engaged in supply of various goods and services exclusively to Government departments, agencies, etc. and persons notified under section 51 of the CGST Act, 2017.</p>
+
+    <p>It has provided the following information relating to the supplies made, their contract values and the payment due against each of them in the month of November:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Particulars</th>
+          <th>Total Contract Value (Inclusive of GST) (₹)</th>
+          <th>Payment Due in November (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(i)</td>
+          <td>Supply of stationery to Fisheries Department, Kolkata</td>
+          <td>2,60,000</td>
+          <td>15,000</td>
+        </tr>
+        <tr>
+          <td>(ii)</td>
+          <td>Supply of car rental services to Municipal Corporation of Delhi</td>
+          <td>2,95,000</td>
+          <td>20,000</td>
+        </tr>
+        <tr>
+          <td>(iii)</td>
+          <td>Supply of a heavy machinery to a Public Sector Undertaking located and registered in Uttarakhand</td>
+          <td>5,90,000</td>
+          <td>25,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Determine the amount of tax, if any, to be deducted from each of the receivables, assuming the rate of CGST, SGST and IGST as <strong>9%, 9% and 18%</strong>, respectively.</p>
+  `,
+  solution_html: `
+    <p>Under <strong>section 51 of the CGST Act, 2017</strong>, specified persons are required to deduct tax at source (TDS) from the payment made or credited to the supplier where the <strong>total value of taxable supply under a contract exceeds ₹2,50,000 (excluding GST)</strong>.</p>
+
+    <p>The specified deductors include:</p>
+
+    <ul>
+      <li>Central Government or State Government Departments;</li>
+      <li>Local Authorities;</li>
+      <li>Governmental Agencies;</li>
+      <li>Authorities or Boards established by Government with 51% or more participation;</li>
+      <li>Societies established by Government or Local Authorities; and</li>
+      <li>Public Sector Undertakings.</li>
+    </ul>
+
+    <p>For determining the threshold of ₹2,50,000, the value of supply is taken <strong>excluding GST</strong>.</p>
+
+    <p><strong>Computation of TDS</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Particulars</th>
+          <th>Tax to be deducted</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(i)</td>
+          <td>
+            Supply of stationery to Fisheries Department, Kolkata
+            <br><br>
+            Contract value excluding IGST:
+            <br>
+            ₹2,60,000 × 100 ÷ 118 = ₹2,20,339
+            <br>
+            Since the contract value does not exceed ₹2,50,000, <strong>no TDS is deductible.</strong>
+          </td>
+          <td>Nil</td>
+        </tr>
+
+        <tr>
+          <td>(ii)</td>
+          <td>
+            Supply of car rental services to Municipal Corporation of Delhi
+            <br><br>
+            Contract value excluding GST:
+            <br>
+            ₹2,95,000 × 100 ÷ 118 = ₹2,50,000
+            <br>
+            Since the contract value does not exceed ₹2,50,000, <strong>no TDS is deductible.</strong>
+          </td>
+          <td>Nil</td>
+        </tr>
+
+        <tr>
+          <td>(iii)</td>
+          <td>
+            Supply of heavy machinery to PSU in Uttarakhand
+            <br><br>
+            Contract value excluding IGST:
+            <br>
+            ₹5,90,000 × 100 ÷ 118 = ₹5,00,000
+            <br>
+            Since the contract value exceeds ₹2,50,000, TDS is deductible.
+          </td>
+          <td>
+            IGST @2% of ₹25,000
+            <br>
+            <strong>= ₹500</strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Summary</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Supply</th>
+          <th>CGST (₹)</th>
+          <th>SGST (₹)</th>
+          <th>IGST (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fisheries Department, Kolkata</td>
+          <td>Nil</td>
+          <td>Nil</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>Municipal Corporation of Delhi</td>
+          <td>Nil</td>
+          <td>Nil</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>PSU, Uttarakhand</td>
+          <td>Nil</td>
+          <td>Nil</td>
+          <td>500</td>
+        </tr>
+      </tbody>
+    </table>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_4b",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "E-Way Bill",
+    "Consolidated E-Way Bill",
+    "Movement of Goods"
+  ],
+  placement: 4,
+  marks: 5,
+  question_html: `
+    <p>Holistic Cosmetics Ltd. has multiple wholesale outlets of cosmetic products in Mumbai, Maharashtra. It receives an order for cosmetics worth <strong>₹1,20,000 (inclusive of GST @ 18%)</strong> from Raman, owner of a retail cosmetic store in Delhi.</p>
+
+    <p>While checking the stock, it is found that goods worth <strong>₹55,000</strong> can be supplied from its <strong>Dadar (Mumbai)</strong> store and the remaining goods worth <strong>₹65,000</strong> can be supplied from its <strong>Malad (Mumbai)</strong> store. Both the stores are instructed to issue separate invoices for the goods supplied to Raman.</p>
+
+    <p>The goods are transported to Raman in Delhi in a single conveyance owned by <strong>Teja Transporters</strong>.</p>
+
+    <p>Advise Holistic Cosmetics Ltd. regarding the issuance of <strong>e-way bill(s)</strong>.</p>
+  `,
+  solution_html: `
+    <p>Since <strong>separate tax invoices</strong> are issued by the Dadar and Malad stores and the value covered by <strong>each invoice exceeds ₹50,000</strong>, a <strong>separate e-way bill</strong> is required to be generated for each invoice.</p>
+
+    <p>For the purpose of e-way bill generation, <strong>each invoice is treated as a separate consignment</strong>. Therefore, the two consignments cannot be covered by a single e-way bill.</p>
+
+    <p>The <strong>FAQs on E-Way Bill issued by CBIC</strong> clarify that where multiple invoices are issued by the same supplier to the same recipient, <strong>multiple e-way bills are required to be generated</strong>. Multiple invoices cannot be clubbed for generating a single e-way bill.</p>
+
+    <p>However, after generating the individual e-way bills, since both consignments are transported in the <strong>same vehicle</strong>, a <strong>Consolidated E-Way Bill</strong> may be generated for transportation purposes.</p>
+
+    <p><strong>Conclusion:</strong></p>
+
+    <ul>
+      <li>Separate e-way bill for Invoice issued by <strong>Dadar Store</strong>.</li>
+      <li>Separate e-way bill for Invoice issued by <strong>Malad Store</strong>.</li>
+      <li>One <strong>Consolidated E-Way Bill</strong> may thereafter be generated for movement of both consignments in the same conveyance.</li>
+    </ul>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_4c",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Baggage",
+    "Detention of Baggage",
+    "Customs Act, 1962"
+  ],
+  placement: 4,
+  marks: 4,
+  question_html: `
+    <p>Mr. Joseph Brown, a resident and citizen of Germany, visits India on a business tour. He made a declaration to the proper officer about his baggage under section 77 of the Customs Act, 1962 for the purpose of clearance.</p>
+
+    <p>During the scrutiny of the declaration, the proper officer found that some of the articles declared in the baggage brought by him were prohibited from being imported into India and detained those articles.</p>
+
+    <p>Although Mr. Brown did not insist on clearing those articles, their value was very high and it created a difficult situation for him.</p>
+
+    <p>Advise the procedure prescribed under the Customs Act, 1962 to overcome the situation, with reference to the relevant statutory provisions.</p>
+  `,
+  solution_html: `
+    <p>As per the <strong>Customs Act, 1962</strong>, where the baggage of a passenger contains any <strong>prohibited article</strong> which has been declared by the passenger under <strong>section 77</strong>, the proper officer may, at the request of the passenger, <strong>detain such article</strong> for the purpose of returning it to the passenger when he leaves India.</p>
+
+    <p>Accordingly, in the given case, the proper officer has rightly detained the prohibited articles declared by Mr. Joseph Brown. Such articles may be returned to him at the time of his departure from India.</p>
+
+    <p>Further, if Mr. Brown is unable to collect the detained articles at the time of leaving India, the articles may be returned in either of the following manners:</p>
+
+    <ol>
+      <li>Through another passenger authorised by Mr. Brown who is leaving India; or</li>
+      <li>As cargo consigned in the name of Mr. Joseph Brown.</li>
+    </ol>
+
+    <p><strong>Conclusion:</strong> The Customs Act provides a mechanism for detention and subsequent return of prohibited articles declared in baggage, thereby enabling the passenger to recover such articles on leaving India or through the prescribed alternative modes.</p>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_5a",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Advance Ruling",
+    "Applicability of Advance Ruling",
+    "Authority for Advance Ruling"
+  ],
+  placement: 5,
+  marks: 5,
+  question_html: `
+    <p>Mr. Shashank intends to start a new manufacturing business in Jaipur. However, he is not able to determine the classification of the goods proposed to be manufactured and supplied by him since the classification of the said goods has been contentious.</p>
+
+    <p>Mr. Shashank read an article about advance ruling in the newspaper and decided to apply for an advance ruling so as to avoid litigation later.</p>
+
+    <p>Mr. Prashank, who is a friend of Mr. Shashank, is also engaged in the supply of goods similar to those which Mr. Shashank proposes to manufacture in Jaipur. Mr. Prashank advised him to apply the same classification as his since he has already obtained an advance ruling regarding the classification of the said goods.</p>
+
+    <p>Mr. Shashank's tax consultant also agreed with the advice given by Mr. Prashank. Mr. Shashank further believed that he needed to obtain GST registration before applying for an advance ruling.</p>
+
+    <p>You are required to advise Mr. Shashank with respect to the following:</p>
+
+    <ol>
+      <li>Whether Mr. Shashank and his tax consultant are right and whether the goods proposed to be supplied by Mr. Shashank can be classified on the basis of Mr. Prashank's advance ruling.</li>
+      <li>Whether Mr. Shashank needs to obtain registration before applying for an advance ruling.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>(1) Applicability of Advance Ruling</strong></p>
+
+    <p>No, Mr. Shashank and his tax consultant are <strong>not correct</strong>.</p>
+
+    <p>An <strong>Advance Ruling</strong> is binding only on:</p>
+
+    <ul>
+      <li>The applicant who sought the advance ruling; and</li>
+      <li>The concerned jurisdictional officer or the specified officer in respect of that applicant.</li>
+    </ul>
+
+    <p>It is <strong>not applicable</strong> to other taxpayers, even if they are engaged in identical or similar business activities.</p>
+
+    <p>Therefore, Mr. Shashank <strong>cannot classify</strong> the goods proposed to be supplied by him on the basis of the advance ruling obtained by Mr. Prashank.</p>
+
+    <hr>
+
+    <p><strong>(2) Requirement of Registration for Advance Ruling</strong></p>
+
+    <p>No, Mr. Shashank <strong>is not required</strong> to obtain GST registration before applying for an advance ruling.</p>
+
+    <p>An application for advance ruling may be made by:</p>
+
+    <ul>
+      <li>A registered person; or</li>
+      <li>A person desirous of obtaining registration under the GST law.</li>
+    </ul>
+
+    <p>Accordingly, a person intending to commence business may apply for an advance ruling even before obtaining GST registration.</p>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_5b",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Offences and Penalties",
+    "Prosecution",
+    "Arrest",
+    "Cognizable and Non-cognizable Offences"
+  ],
+  placement: 5,
+  marks: 5,
+  question_html: `
+    <p>State the types of offence (cognizable or non-cognizable), prosecution, arrest and bail implications, if any, in respect of the following independent cases pertaining to June:</p>
+
+    <ol>
+      <li>
+        <strong>'Bhaskar'</strong> issues invoice without any underlying supply leading to wrongful availment of ITC. ITC availed on such invoice was <strong>₹200 lakh</strong>.
+      </li>
+      <li>
+        <strong>'Raghav'</strong> fraudulently obtains the refund of tax of <strong>₹550 lakh</strong>. The said tax has been recovered from the buyer also.
+      </li>
+    </ol>
+
+    <p><strong>Note:</strong> Assume that in the above cases, the offence, if any, has been committed for the first time.</p>
+  `,
+  solution_html: `
+    <table>
+      <thead>
+        <tr>
+          <th>Person</th>
+          <th>Offence</th>
+          <th>Prosecution</th>
+          <th>Arrest</th>
+          <th>Bail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Bhaskar</strong></td>
+          <td>Non-cognizable offence</td>
+          <td>Up to <strong>1 year</strong> and with fine</td>
+          <td>No arrest</td>
+          <td>Bailable offence</td>
+        </tr>
+        <tr>
+          <td><strong>Raghav</strong></td>
+          <td>Non-cognizable offence</td>
+          <td>Up to <strong>5 years</strong> and with fine</td>
+          <td>No arrest</td>
+          <td>Bailable offence</td>
+        </tr>
+      </tbody>
+    </table>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_5c",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Customs Act, 1962",
+    "Warehousing",
+    "Owner's Rights over Warehoused Goods",
+    "Section 64"
+  ],
+  placement: 5,
+  marks: 4,
+  question_html: `
+    <p>Elaborate the provisions relating to the owner's right to deal with warehoused goods under <strong>section 64 of the Customs Act, 1962</strong>.</p>
+  `,
+  solution_html: `
+    <p>When the imported goods are warehoused, the temporary possession and custody of the goods are passed on to the warehouse keeper. However, the remaining titular rights over the goods continue to vest with the owner.</p>
+
+    <p>Accordingly, the owner has every access to the warehoused goods and, in the course of his dealings with such goods, may:</p>
+
+    <ol>
+      <li>Inspect the goods.</li>
+      <li>Ensure that the goods do not deteriorate or get damaged during storage in the warehouse.</li>
+      <li>Sort the goods.</li>
+      <li>Show the goods for sale.</li>
+    </ol>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_6b",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Administration",
+    "Section 168",
+    "CBIC",
+    "Circulars and Instructions",
+    "Access to Business Premises",
+    "Section 71"
+  ],
+  placement: 6,
+  marks: 4,
+  question_html: `
+    <p><strong>Attempt any one of the following:</strong></p>
+
+    <p><strong>(a)</strong> Explain the scope of circulars and instructions issued by the Board.</p>
+
+    <p><strong>OR</strong></p>
+
+    <p><strong>(b)</strong> Discuss the power of the officer under GST law of access to business premises under section 71 of the CGST Act, 2017.</p>
+  `,
+  solution_html: `
+    <p><strong>Answer to (a): Explain the scope of circulars and instructions issued by the Board</strong></p>
+
+    <p>Section 168 of the CGST Act, 2017 empowers the <strong>Central Board of Indirect Taxes and Customs (CBIC)</strong> to issue orders, instructions or directions to the CGST officers for the purpose of uniformity in the implementation of the CGST Act.</p>
+
+    <p>All officers and all other persons employed in the implementation of the Act are required to observe and follow such orders, instructions and directions.</p>
+
+    <p>The generally accepted legal position regarding such circulars is:</p>
+
+    <ul>
+      <li>They are <strong>binding on departmental officers</strong>.</li>
+      <li>They are <strong>not binding on the assessee/taxpayer</strong>.</li>
+      <li>If a circular is contrary to the provisions of the law, the <strong>law prevails over the circular</strong>.</li>
+    </ul>
+
+    <hr>
+
+    <p><strong>Answer to (b): Access to business premises under section 71 of the CGST Act, 2017</strong></p>
+
+    <p>Any officer under the CGST Act, authorised by the proper officer not below the rank of <strong>Joint Commissioner</strong>, shall have access to any place of business of a registered person to inspect books of account, documents, computers, computer programs, computer software and such other things as may be required for carrying out any audit, scrutiny, verification or checks necessary to safeguard the interest of revenue.</p>
+
+    <p>Every person in charge of such place shall, on demand, make available the following records within <strong>15 working days</strong> (or such further period as may be allowed):</p>
+
+    <ol>
+      <li>Records maintained and declared to the proper officer.</li>
+      <li>Trial balance or its equivalent.</li>
+      <li>Audited annual financial statements, wherever applicable.</li>
+      <li>Cost audit report under section 148 of the Companies Act, 2013, if any.</li>
+      <li>Income-tax audit report under section 44AB of the Income-tax Act, 1961, if any.</li>
+      <li>Any other relevant record required for scrutiny.</li>
+    </ol>
+  `
+},
+{
+  question_id: "IDT_SEP24_MTP_II_6c",
+  source: "ICAI Mock Test Paper Series II - September 2024",
+  chapter_name: [
+    "Introduction to Customs",
+    "Constitutional Provisions",
+    "Customs Duty"
+  ],
+  placement: 6,
+  marks: 4,
+  question_html: `
+    <p>Elaborate the meaning and historical background of <strong>"customs"</strong>. Also elucidate the constitutional entries/provisions which provide the power to make laws relating to customs duty, and who possesses the power to make such laws.</p>
+  `,
+  solution_html: `
+    <p>The term <strong>'customs'</strong> derives its colour and essence from the term <strong>'custom'</strong>, which means a habitual practice or course of action that is characteristically repeated in like circumstances.</p>
+
+    <p>Duties on import and export of goods were levied through legislations during the British period. Prior to that, during the period of monarchical governance, such duties were collected at the city gates at the time goods entered into or moved out of the city.</p>
+
+    <p>The legislations of the British period were subsequently replaced by the enactment of the <strong>Customs Act, 1962</strong> and the <strong>Customs Tariff Act, 1975</strong>.</p>
+
+    <p><strong>Constitutional provisions:</strong></p>
+
+    <ul>
+      <li><strong>Article 245</strong> of the Constitution of India confers the power to make laws on Parliament and the State Legislatures.</li>
+      <li><strong>Entry 83 of List I (Union List)</strong> of the Seventh Schedule read with <strong>Article 246</strong> specifically empowers the Parliament to make laws relating to customs duties.</li>
+      <li>Accordingly, the power to make laws relating to customs duty vests <strong>exclusively with the Parliament</strong>.</li>
+    </ul>
+  `
 }
+
 
 
 ];

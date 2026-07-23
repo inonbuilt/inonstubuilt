@@ -961,5 +961,428 @@ const mcqData = [
         answer: 2,
       },
     ],
-  }
+  },
+  {
+  case_id: "idt_SEP24_mtp_II_cs1",
+  case_chapter: [
+    "Value of Supply",
+    "Reverse Charge Mechanism (RCM)",
+    "Time of Supply",
+    "Interest",
+    "Penalty",
+    "E-Way Bill"
+  ],
+  caseText: `
+    <p><strong>Abhivyakti Pvt. Ltd.</strong> is engaged in the supply of food products under the brand name <strong>"Super Foods"</strong>. It has a manufacturing plant at <strong>Howrah, West Bengal</strong>. The company is registered under GST and files monthly returns.</p>
+
+    <p>The company has allotted residential quarters to its employees within the plant premises. Its aggregate turnover during the preceding financial year was <strong>₹7.50 crore</strong>.</p>
+
+    <p>The following transactions relate to the month of <strong>September</strong>:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Sale of <strong>"Super Foods"</strong> food products <em>(Refer Note 2)</em></td>
+          <td>60,00,000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Purchase of raw material from the market</td>
+          <td>14,00,000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Rent received from employees for residential quarters allotted for residence</td>
+          <td>10,000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Electricity charges paid to West Bengal State Electricity Board</td>
+          <td>1,60,000</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Security services received from <strong>M/s Suraksha Security, Kolkata</strong> (registered partnership firm)</td>
+          <td>1,00,000</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Interest collected from customers for delayed payment</td>
+          <td>3,500</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Interest earned on bank fixed deposits</td>
+          <td>8,600</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Payment made to <strong>Kolkata Chamber of Commerce</strong> towards sponsorship of Investor Summit</td>
+          <td>25,000</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Licence fee paid to Food Safety and Standards Authority of India (FSSAI)</td>
+          <td>25,000</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Legal fee paid to advocate <strong>Mr. Dhruv Banerjee</strong></td>
+          <td>30,000</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Transportation charges paid to an <strong>unregistered goods transport operator</strong> for transporting raw material from mandi to factory</td>
+          <td>40,000</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Transportation charges paid to a local truck owner <strong>(not a GTA)</strong> for transportation of finished goods from factory to distributors</td>
+          <td>50,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Additional Information:</strong></p>
+
+    <ol>
+      <li>
+        Abhivyakti Pvt. Ltd. engaged <strong>M/s Techno Enterprises</strong>, a Goods Transport Agency (GTA), registered in
+        <strong>West Bengal, Odisha and Assam</strong> under the same PAN, for transportation of goods within Kolkata during October.
+        A proper consignment note containing all prescribed particulars was issued.
+      </li>
+
+      <li>
+        Out of the total sales, food products worth <strong>₹3,50,000 (10,000 kg)</strong> were supplied to the
+        <strong>Department of School Education, Government of West Bengal</strong> for distribution to flood-affected families.
+        A <strong>price-linked subsidy of ₹10 per kg</strong> was received from the Government of West Bengal.
+        This subsidy has <strong>not been included</strong> in the sales figure of ₹60,00,000.
+      </li>
+
+      <li>
+        The company awarded a maintenance contract on <strong>10 June</strong> to
+        <strong>Supreme Power Ltd., Delhi</strong> for repair of the factory's central air-conditioning unit for
+        <strong>₹60,000</strong> with a completion period of 30 days.
+        The work was completed on <strong>8 July</strong>, invoice was issued on
+        <strong>5 September</strong> owing to a dispute regarding quality of work, and payment was made on
+        <strong>15 September</strong>.
+      </li>
+
+      <li>
+        The proper officer imposed a <strong>penalty of ₹5,000</strong> for wrongful utilisation of ITC amounting to
+        <strong>₹5,000</strong>.
+      </li>
+
+      <li>
+        GST liability for the month of August amounting to <strong>₹3,30,730</strong> was deposited on
+        <strong>28 September</strong>.
+      </li>
+    </ol>
+
+    <p><strong>Note:</strong> All amounts are exclusive of GST, wherever applicable, unless otherwise specified.</p>
+  `,
+    questions: [
+    {
+      question_id: "idt_SEP24_mtp_II_cs1_1",
+      chapter_name: ["Value of Supply"],
+      question:
+        "The value of taxable outward supply made by Abhivyakti Pvt. Ltd. in the month of September is:",
+      options: [
+        "₹61,48,100",
+        "₹59,03,500",
+        "₹61,39,500",
+        "₹59,35,500"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "idt_SEP24_mtp_II_cs1_2",
+      chapter_name: ["Reverse Charge Mechanism (RCM)"],
+      question:
+        "The value of taxable supply received by Abhivyakti Pvt. Ltd. in the month of September on which GST is payable under reverse charge is:",
+      options: [
+        "₹1,55,000",
+        "₹1,73,000",
+        "₹1,30,000",
+        "₹2,45,000"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "idt_SEP24_mtp_II_cs1_3",
+      chapter_name: ["Time of Supply"],
+      question:
+        "What is the time of supply of services provided by Supreme Power Ltd.?",
+      options: [
+        "10th June",
+        "5th September",
+        "15th September",
+        "8th July"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "idt_SEP24_mtp_II_cs1_4",
+      chapter_name: ["Interest"],
+      question:
+        "The amount of interest payable by Abhivyakti Pvt. Ltd. under section 50 of the CGST Act, 2017 for delay in payment of tax for the month of August is:",
+      options: [
+        "₹4,961",
+        "₹1,305",
+        "₹4,567",
+        "₹1,142"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "idt_SEP24_mtp_II_cs1_5",
+      chapter_name: ["Penalty"],
+      question:
+        "In the context of the imposition of penalty of ₹5,000 by the proper officer on Abhivyakti Pvt. Ltd., which of the following statements is correct?",
+      options: [
+        "Penalty is leviable since the offence is not a 'minor breach'.",
+        "Penalty is not leviable since the offence is a 'minor breach'.",
+        "Penalty is leviable even though the offence is a minor breach.",
+        "No penalty is leviable for such offence; only interest is payable by adding the ITC amount wrongfully utilized to the output liability."
+      ],
+      answer: 0
+    },
+    {
+      question_id: "idt_SEP24_mtp_II_cs1_6",
+      chapter_name: ["E-Way Bill"],
+      question:
+        "M/s Techno Enterprises wishes to obtain a Unique Common Enrolment Number (CEN) for generating e-way bills. Which of the following statements is true?",
+      options: [
+        "M/s Techno Enterprises is not eligible for obtaining CEN as a transporter registered only in a single State is eligible for the same.",
+        "M/s Techno Enterprises is eligible for obtaining CEN as a transporter registered in multiple States with the same PAN. After obtaining CEN, it can use either CEN or its GSTIN for generating e-way bills throughout the country.",
+        "M/s Techno Enterprises is not eligible for obtaining CEN as only unregistered transporters are eligible for the same.",
+        "M/s Techno Enterprises is eligible for obtaining the CEN as it is registered in multiple States with the same PAN. After obtaining CEN, it can use it for generating e-way bills and updating Part-B throughout the country."
+      ],
+      answer: 3
+    }
+  ]
+},
+{
+  case_id: "idt_SEP24_mtp_II_cs2",
+  case_chapter: [
+    "Sponsorship Services",
+    "E-Invoicing",
+    "Reverse Charge Mechanism (RCM)",
+    "Input Tax Credit (ITC)",
+    "Output Tax Liability",
+    "Registration",
+    "Penalty"
+  ],
+  caseText: `
+    <p><strong>Bhakti & Sons</strong>, a partnership firm registered under GST in <strong>Kolkata, West Bengal</strong>, deals in the supply of electronic goods such as televisions, refrigerators and washing machines. It also provides repair and maintenance services for such goods.</p>
+
+    <p>The aggregate turnover of the firm during the preceding financial year was <strong>₹4.20 crore</strong>.</p>
+
+    <p><strong>Outward supplies during the month of December:</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Particulars</th>
+          <th>Amount (₹ in lakh)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Supply of goods to unregistered persons residing in and around Kolkata</td>
+          <td>12.00</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Supply of goods to an unregistered dealer in Bihar</td>
+          <td>6.00</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Supply of goods to registered dealers in West Bengal</td>
+          <td>28.00</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Repair and maintenance services provided to unregistered persons</td>
+          <td>4.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Inward supplies during the month of December:</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Particulars</th>
+          <th>Amount (₹ in lakh)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Purchase of TV sets from registered dealers (Inter-State supply). During unloading, one LED TV costing ₹25,000 was damaged and the supplier refused to replace it.</td>
+          <td>30.00</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Purchase of refrigerators from registered dealers (Intra-State supply)</td>
+          <td>4.00</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Purchase of washing machines from unregistered dealers (Intra-State supply)</td>
+          <td>2.00</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Transportation charges paid to Om Logistics (unregistered GTA)</td>
+          <td>2.00</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Payment made to Star Security Services Pvt. Ltd. (not registered under GST) for providing security services</td>
+          <td>0.50</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Loading and unloading charges paid to labourers</td>
+          <td>0.10</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Shop rent paid to Kolkata Municipal Corporation</td>
+          <td>0.30</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Fee paid to Mr. Das, Senior Advocate of Kolkata High Court for legal services</td>
+          <td>0.10</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Additional Information:</strong></p>
+
+    <ol>
+      <li>The Assistant Commissioner of Commercial Tax, Kolkata issued a show cause notice to Bhakti & Sons for failure to display the registration certificate at a prominent location and the GSTIN on the name board at the entry of its principal place of business. Bhakti & Sons contends that displaying GSTIN to the general public is not mandatory since it is already mentioned on the tax invoice.</li>
+
+      <li>Bhakti & Sons paid a sponsorship fee of <strong>₹5,00,000</strong> to <strong>Finmin Ltd.</strong>, registered in Kolkata, for an entertainment event organised in Assam during October.</li>
+
+      <li>GST rate on all inward and outward supplies is <strong>18%</strong> (CGST 9%, SGST 9%, IGST 18%), except transportation of goods service which attracts GST @ <strong>5%</strong> (CGST 2.5%, SGST 2.5%, IGST 5%).</li>
+
+      <li>There is <strong>no opening ITC</strong> available in the Electronic Credit Ledger for the relevant tax period.</li>
+
+      <li>All goods are purchased on an <strong>ex-shop basis</strong> and transportation is arranged by Bhakti & Sons through a GTA.</li>
+    </ol>
+
+    <p><strong>Note:</strong> All the above amounts are exclusive of GST, wherever applicable.</p>
+  `,
+    questions: [
+    {
+      question_id: "idt_SEP24_mtp_II_cs2_1",
+      chapter_name: [
+        "Sponsorship Services",
+        "Reverse Charge Mechanism (RCM)"
+      ],
+      question:
+        "Which of the following statements is true in respect of the sponsorship fee paid by Bhakti & Sons to Finmin Ltd.?",
+      options: [
+        "Bhakti & Sons is liable to pay IGST of ₹90,000.",
+        "Finmin Ltd. is liable to pay IGST of ₹90,000.",
+        "Bhakti & Sons is liable to pay CGST and SGST of ₹45,000 each.",
+        "Finmin Ltd. is liable to pay CGST and SGST of ₹45,000 each."
+      ],
+      answer: 2
+    },
+    {
+      question_id: "idt_SEP24_mtp_II_cs2_2",
+      chapter_name: [
+        "E-Invoicing"
+      ],
+      question:
+        "Assuming that Bhakti & Sons has an SEZ unit located in Uttar Pradesh apart from the regular Domestic Tariff Area (DTA) unit located in Kolkata (both having the same PAN). Assume the additional turnover of the SEZ unit during the preceding financial year was ₹2 crore. Which of the following statements is correct in respect of e-invoicing requirements?",
+      options: [
+        "E-invoicing is not applicable to both SEZ and DTA units.",
+        "E-invoicing is applicable to both SEZ and DTA units.",
+        "E-invoicing is applicable to the SEZ unit and the DTA unit is exempt from e-invoicing.",
+        "E-invoicing is applicable to the DTA unit and the SEZ unit is exempt from e-invoicing."
+      ],
+      answer: 3
+    },
+    {
+      question_id: "idt_SEP24_mtp_II_cs2_3",
+      chapter_name: [
+        "Reverse Charge Mechanism (RCM)"
+      ],
+      question:
+        "The total value of inward supplies on which GST is payable by Bhakti & Sons under reverse charge for the month of December is:",
+      options: [
+        "₹2.40 lakh",
+        "₹2.10 lakh",
+        "₹2.90 lakh",
+        "₹3.00 lakh"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "idt_SEP24_mtp_II_cs2_4",
+      chapter_name: [
+        "Input Tax Credit (ITC)"
+      ],
+      question:
+        "The total input tax credit that can be availed by Bhakti & Sons for the month of December is:",
+      options: [
+        "₹6,97,500",
+        "₹6,24,700",
+        "₹6,86,700",
+        "₹6,95,700"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "idt_SEP24_mtp_II_cs2_5",
+      chapter_name: [
+        "Output Tax Liability"
+      ],
+      question:
+        "Total GST payable in cash by Bhakti & Sons for the month of December, assuming that no ITC is claimed/availed by it, is:",
+      options: [
+        "₹9,17,200",
+        "₹9,43,200",
+        "₹9,26,200",
+        "₹9,20,800"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "idt_SEP24_mtp_II_cs2_6",
+      chapter_name: [
+        "Registration",
+        "Penalty"
+      ],
+      question:
+        "The penalty that may be leviable for failure to display the registration certificate in a prominent location and the GSTIN on the name board at the entry of its principal place of business by Bhakti & Sons is:",
+      options: [
+        "₹5,000",
+        "₹10,000",
+        "₹25,000",
+        "Nil"
+      ],
+      answer: 2
+    }
+  ]
+}
 ];
