@@ -4445,8 +4445,1325 @@ const descriptiveQuestions = [
       <li>Accordingly, the power to make laws relating to customs duty vests <strong>exclusively with the Parliament</strong>.</li>
     </ul>
   `
+},
+{
+  question_id: "idt_MAR25_mtp_I_1",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Input Tax Credit (ITC)",
+    "Apportionment of ITC",
+    "Reverse Charge Mechanism (RCM)"
+  ],
+  placement: 1,
+  marks: 14,
+  question_html: `
+    <p>Vedant Shoppe is a retail trader of both taxable and exempted goods, registered under GST in the State of Rajasthan. Vedant Shoppe has furnished the following details for a month:</p>
+
+    <p><strong>(1) Details of sales:</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Supply of taxable goods</td>
+          <td>50,00,000</td>
+        </tr>
+        <tr>
+          <td>Supply of goods not leviable to GST</td>
+          <td>10,00,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(2) Details of goods purchased for being sold in the shop:</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Taxable goods</td>
+          <td>45,00,000</td>
+        </tr>
+        <tr>
+          <td>Goods not leviable to GST</td>
+          <td>4,00,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>(3) Details of expenses:</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monthly rent payable for the shop</td>
+          <td>3,50,000</td>
+        </tr>
+        <tr>
+          <td>Telephone expenses paid (₹30,000 for landline at shop and ₹20,000 towards mobile phone bills of employees used for official purposes)</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>Audit fees paid to a Chartered Accountant (₹35,000 for statutory audit and ₹25,000 for certification work)</td>
+          <td>60,000</td>
+        </tr>
+        <tr>
+          <td>Premium paid on health insurance policies taken for specified employees of the shop as per company policy</td>
+          <td>10,000</td>
+        </tr>
+        <tr>
+          <td>Freight paid to Goods Transport Agency (GTA) [service taxable @ 5%] for inward transportation of goods not leviable to GST</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>Freight paid to Goods Transport Agency (GTA) [service taxable under reverse charge @ 5%] for inward transportation of taxable goods</td>
+          <td>1,50,000</td>
+        </tr>
+        <tr>
+          <td>Goods given as free samples (Not included in taxable goods value of ₹45,00,000)</td>
+          <td>5,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>All the above amounts are exclusive of all kinds of taxes, wherever applicable.</p>
+
+    <p>All the inward and outward supplies made by Vedant Shoppe are from/to registered suppliers within Rajasthan.</p>
+
+    <p>Assume, wherever applicable, for the purpose of reverse charge payable by Vedant Shoppe, the CGST, SGST and IGST rates are 2.5%, 2.5% and 5% respectively. CGST, SGST and IGST rates shall be 6%, 6% and 12% respectively in all other cases.</p>
+
+    <p>There is no opening balance in the Electronic Cash Ledger or Electronic Credit Ledger.</p>
+
+    <p>Subject to the information given above, assume that all other conditions necessary for availing input tax credit have been fulfilled.</p>
+
+    <p><strong>You are required to compute the following:</strong></p>
+
+    <ol type="i">
+      <li>Input Tax Credit (ITC) credited to Electronic Credit Ledger.</li>
+      <li>Common credit available for apportionment.</li>
+      <li>ITC attributable towards exempt supplies out of common credit.</li>
+      <li>Net GST payable from Electronic Cash Ledger for the month.</li>
+    </ol>
+  `,
+  solution_html: `
+<p><strong>Working Notes form part of the answer.</strong></p>
+
+<h4>(i) Computation of ITC credited to Electronic Credit Ledger</h4>
+
+<p>ITC of input tax attributable to inputs and input services intended to be used for business purposes is credited to the Electronic Credit Ledger. Input tax attributable to inputs and input services intended to be used exclusively for non-business purposes, for effecting exclusively exempt supplies and on which credit is blocked under section 17(5) of the CGST Act, 2017 is not credited to the Electronic Credit Ledger [Sections 16 and 17 of the CGST Act, 2017].</p>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>Amount (₹)</th>
+<th>CGST @6% (₹)</th>
+<th>SGST @6% (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GST paid on taxable goods</td>
+<td>45,00,000</td>
+<td>2,70,000</td>
+<td>2,70,000</td>
+</tr>
+<tr>
+<td>Goods not leviable to GST (No GST paid)</td>
+<td>4,00,000</td>
+<td>Nil</td>
+<td>Nil</td>
+</tr>
+<tr>
+<td>GST paid on monthly rent</td>
+<td>3,50,000</td>
+<td>21,000</td>
+<td>21,000</td>
+</tr>
+<tr>
+<td>GST paid on telephone expenses</td>
+<td>50,000</td>
+<td>3,000</td>
+<td>3,000</td>
+</tr>
+<tr>
+<td>GST paid on Chartered Accountant fees</td>
+<td>60,000</td>
+<td>3,600</td>
+<td>3,600</td>
+</tr>
+<tr>
+<td>GST paid on health insurance premium (Blocked credit u/s 17(5)(b))</td>
+<td>10,000</td>
+<td>Nil</td>
+<td>Nil</td>
+</tr>
+<tr>
+<td>Goods distributed as free samples [Section 17(5)(h)]</td>
+<td>5,000</td>
+<td>Nil</td>
+<td>Nil</td>
+</tr>
+<tr>
+<td>Freight paid to GTA for inward transportation of non-taxable goods under RCM</td>
+<td>50,000</td>
+<td>Nil</td>
+<td>Nil</td>
+</tr>
+<tr>
+<td>Freight paid to GTA for inward transportation of taxable goods under RCM</td>
+<td>1,50,000</td>
+<td>3,750</td>
+<td>3,750</td>
+</tr>
+<tr>
+<td><strong>ITC credited to Electronic Credit Ledger</strong></td>
+<td></td>
+<td><strong>3,01,350</strong></td>
+<td><strong>3,01,350</strong></td>
+</tr>
+<tr>
+<td>Less: ITC attributable to exempt supplies</td>
+<td></td>
+<td>(4,600)</td>
+<td>(4,600)</td>
+</tr>
+<tr>
+<td><strong>Net ITC available</strong></td>
+<td></td>
+<td><strong>2,96,750</strong></td>
+<td><strong>2,96,750</strong></td>
+</tr>
+</tbody>
+</table>
+
+<h4>(ii) Computation of Common Credit available for apportionment</h4>
+
+<p>Common Credit = ITC credited to Electronic Credit Ledger – ITC attributable exclusively to taxable supplies.</p>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>CGST (₹)</th>
+<th>SGST (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ITC credited to Electronic Credit Ledger</td>
+<td>3,01,350</td>
+<td>3,01,350</td>
+</tr>
+<tr>
+<td>Less: ITC on taxable goods</td>
+<td>(2,70,000)</td>
+<td>(2,70,000)</td>
+</tr>
+<tr>
+<td>Less: ITC on GTA freight for inward transportation of taxable goods</td>
+<td>(3,750)</td>
+<td>(3,750)</td>
+</tr>
+<tr>
+<td><strong>Common Credit</strong></td>
+<td><strong>27,600</strong></td>
+<td><strong>27,600</strong></td>
+</tr>
+</tbody>
+</table>
+
+<h4>(iii) ITC attributable towards exempt supplies</h4>
+
+<p>ITC attributable to exempt supplies = Common Credit × (Exempt Turnover ÷ Total Turnover)</p>
+
+<p>
+= ₹27,600 × (₹10,00,000 ÷ ₹60,00,000)
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>CGST (₹)</th>
+<th>SGST (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ITC attributable towards exempt supplies</strong></td>
+<td><strong>4,600</strong></td>
+<td><strong>4,600</strong></td>
+</tr>
+</tbody>
+</table>
+
+<h4>(iv) Computation of Net GST payable from Electronic Cash Ledger</h4>
+
+<table>
+<thead>
+<tr>
+<th>Particulars</th>
+<th>CGST (₹)</th>
+<th>SGST (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Output tax on taxable goods (₹50,00,000 × 6%)</td>
+<td>3,00,000</td>
+<td>3,00,000</td>
+</tr>
+<tr>
+<td><strong>Output tax liability</strong></td>
+<td><strong>3,00,000</strong></td>
+<td><strong>3,00,000</strong></td>
+</tr>
+<tr>
+<td>Less: ITC available</td>
+<td>(2,96,750)</td>
+<td>(2,96,750)</td>
+</tr>
+<tr>
+<td><strong>GST payable under forward charge (A)</strong></td>
+<td><strong>3,250</strong></td>
+<td><strong>3,250</strong></td>
+</tr>
+<tr>
+<td>RCM on GTA for taxable goods (₹1,50,000 × 2.5%)</td>
+<td>3,750</td>
+<td>3,750</td>
+</tr>
+<tr>
+<td>RCM on GTA for non-taxable goods (₹50,000 × 2.5%)</td>
+<td>1,250</td>
+<td>1,250</td>
+</tr>
+<tr>
+<td><strong>Total GST under Reverse Charge (B)</strong></td>
+<td><strong>5,000</strong></td>
+<td><strong>5,000</strong></td>
+</tr>
+<tr>
+<td><strong>Net GST payable through Electronic Cash Ledger [(A)+(B)]</strong></td>
+<td><strong>8,250</strong></td>
+<td><strong>8,250</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Note:</strong> ITC available in the Electronic Credit Ledger can be utilized only towards payment of output tax. Tax payable under Reverse Charge Mechanism is not an output tax as per section 2(82) of the CGST Act, 2017 and hence must be discharged in cash.</p>
+`
+},
+{
+  question_id: "idt_MAR25_mtp_I_2a",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Value of Supply",
+    "Pure Agent",
+    "Rule 33 of the CGST Rules, 2017"
+  ],
+  placement: 2,
+  marks: 10,
+  question_html: `
+
+    <p>Malceto Manufacturers Ltd., registered in Mumbai (Maharashtra), is a manufacturer of footwear. It imports a footwear making machine from USA.</p>
+
+    <p>Malceto Manufacturers Ltd. enters into a contract with <strong>Shiva Logistics</strong>, a licensed customs broker with its office at Ahmedabad (Gujarat), to meet all the legal formalities in getting the said machine cleared from the customs station.</p>
+
+    <p>Apart from this, Malceto Manufacturers Ltd. authorises Shiva Logistics to incur, on its behalf, the expenses in relation to clearance of the imported machine from the customs station and bringing the same to the warehouse of Malceto Manufacturers Ltd. which shall be reimbursed by Malceto Manufacturers Ltd. to Shiva Logistics on the actual basis in addition to agency charges.</p>
+
+    <p>Shiva Logistics provided the following details in the invoice issued by it to Malceto Manufacturers Ltd.:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(i)</td>
+          <td>Agency charges</td>
+          <td>5,00,000</td>
+        </tr>
+        <tr>
+          <td>(ii)</td>
+          <td>Unloading of machine at Kandla Port, Gujarat</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>(iii)</td>
+          <td>Charges for transportation of machine from Kandla Port, Gujarat to Shiva Logistics' godown in Ahmedabad, Gujarat</td>
+          <td>25,000</td>
+        </tr>
+        <tr>
+          <td>(iv)</td>
+          <td>Charges for transportation of machine from Shiva Logistics' Ahmedabad godown to the warehouse of Malceto Manufacturers Ltd. in Mumbai, Maharashtra</td>
+          <td>28,000</td>
+        </tr>
+        <tr>
+          <td>(v)</td>
+          <td>Prepared and submitted Bill of Entry and paid customs duty</td>
+          <td>5,00,000</td>
+        </tr>
+        <tr>
+          <td>(vi)</td>
+          <td>Dock dues paid</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>(vii)</td>
+          <td>Port charges paid</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>(viii)</td>
+          <td>Hotel expenses</td>
+          <td>45,000</td>
+        </tr>
+        <tr>
+          <td>(ix)</td>
+          <td>Travelling expenses</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>(x)</td>
+          <td>Telephone expenses</td>
+          <td>2,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Compute the value of supply made by Shiva Logistics with the help of the given information.</strong></p>
+
+    <p><strong>Would your answer be different if Shiva Logistics has charged ₹13,00,000 as a lump sum consideration for getting the imported machine cleared from the customs station and bringing the same to the warehouse of Malceto Manufacturers Ltd.?</strong></p>
+  `,
+  solution_html: `
+    <p>As per <strong>Explanation to Rule 33 of the CGST Rules, 2017</strong>, a <strong>"pure agent"</strong> means a person who:</p>
+
+    <ol type="i">
+      <li>Enters into a contractual agreement with the recipient of supply to act as his pure agent to incur expenditure or costs in the course of supply of goods or services or both.</li>
+      <li>Neither intends to hold nor holds any title to the goods or services or both so procured or supplied as pure agent of the recipient of supply.</li>
+      <li>Does not use for his own interest such goods or services so procured.</li>
+      <li>Receives only the actual amount incurred to procure such goods or services in addition to the amount received for supply he provides on his own account.</li>
+    </ol>
+
+    <p>The supplier needs to fulfil all the above conditions in order to qualify as a pure agent.</p>
+
+    <p>In the given case, Shiva Logistics has entered into a contractual agreement with Malceto Manufacturers Ltd. to incur, on its behalf, the expenses mentioned in S. No. (ii) to (vii) for clearance of the imported machine from the customs station and transportation to the warehouse.</p>
+
+    <p>Further, Shiva Logistics neither holds any title to such services nor uses them for its own interest. It also receives only the actual amount incurred in addition to agency charges. Therefore, Shiva Logistics qualifies as a <strong>pure agent</strong>.</p>
+
+    <p>Further, Rule 33 of the CGST Rules, 2017 provides that notwithstanding anything contained in Chapter IV relating to determination of value of supply, expenditure incurred by a supplier as a pure agent shall be excluded from the value of supply if all the following conditions are satisfied:</p>
+
+    <ol type="I">
+      <li>The supplier acts as a pure agent while making payment to the third party on authorisation of the recipient.</li>
+      <li>The payment made by the pure agent is separately indicated in the invoice.</li>
+      <li>The supplies procured as a pure agent are in addition to the services supplied on his own account.</li>
+    </ol>
+
+    <p>Since all the above conditions are satisfied, expenses at S. No. (ii) to (vii) are excluded from the value of supply.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Agency charges</td>
+          <td>5,00,000</td>
+        </tr>
+        <tr>
+          <td>Add: Unloading charges at Kandla Port</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>Transport charges from Kandla Port to Ahmedabad godown</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>Transport charges from Ahmedabad godown to Mumbai warehouse</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>Customs duty</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>Dock charges</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>Port charges</td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>Hotel expenses</td>
+          <td>45,000</td>
+        </tr>
+        <tr>
+          <td>Travelling expenses</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>Telephone expenses</td>
+          <td>2,000</td>
+        </tr>
+        <tr>
+          <td><strong>Value of Supply</strong></td>
+          <td><strong>5,97,000</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Alternative scenario:</strong></p>
+
+    <p>Yes. The answer would be different. If Shiva Logistics charges a <strong>lump sum consideration of ₹13,00,000</strong> for getting the imported machine cleared from the customs station and transporting it to the warehouse, the <strong>value of supply shall be ₹13,00,000</strong>. GST shall be payable on the entire amount since the individual reimbursements are not separately identified and hence cannot qualify for exclusion as expenditure incurred by a pure agent.</p>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_2b",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Customs Valuation",
+    "Assessable Value",
+    "Customs Valuation (Determination of Value of Imported Goods) Rules, 2007"
+  ],
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p><strong>(b)</strong></p>
+
+    <p>15,000 chalices were imported for charitable distribution in India by <strong>Social Welfare Charitable Trust</strong>. The Trust did not pay either for the cost of goods or for the design and development charges, which was borne by the supplier. Customs officer computed its FOB value at <strong>USD 20,000</strong> (including design and development charges), which was accepted by the Trust.</p>
+
+    <p>Other details obtained were as follows:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Sl. No.</th>
+          <th>Particulars</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Freight paid (Air)</td>
+          <td>USD 4,500</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Design &amp; Development charges paid in USA</td>
+          <td>USD 2,500</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Commission payable to an agent in India</td>
+          <td>₹12,500</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td colspan="2">
+            <strong>Exchange rate notified by CBIC and Rate of Basic Customs Duty</strong>
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>BCD</th>
+                  <th>Exchange Rate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Date of Bill of Entry (8th September)</td>
+                  <td>20%</td>
+                  <td>₹70 per USD</td>
+                </tr>
+                <tr>
+                  <td>Date of arrival of aircraft (30th September)</td>
+                  <td>10%</td>
+                  <td>₹72 per USD</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><strong>Inter-bank exchange rate</strong></td>
+          <td>1 USD = ₹73</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Compute the amount of Assessable Value of chalices.</strong></p>
+
+    <p><strong>Make suitable assumptions wherever required. Working Notes should form part of your answer.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Computation of Assessable Value</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>FOB value computed by Customs Officer (including design &amp; development charges)</td>
+          <td>20,000 USD</td>
+        </tr>
+        <tr>
+          <td>Exchange Rate <strong>[Note 1]</strong></td>
+          <td>₹70 per USD</td>
+        </tr>
+        <tr>
+          <td>FOB value computed by Customs Officer (in Rupees)</td>
+          <td>₹14,00,000.00</td>
+        </tr>
+        <tr>
+          <td>Add: Commission payable to agent in India</td>
+          <td>₹12,500.00</td>
+        </tr>
+        <tr>
+          <td><strong>FOB value as per Customs</strong></td>
+          <td><strong>₹14,12,500.00</strong></td>
+        </tr>
+        <tr>
+          <td>Add: Air Freight (₹14,12,500 × 20%) <strong>[Note 2]</strong></td>
+          <td>₹2,82,500.00</td>
+        </tr>
+        <tr>
+          <td>Add: Insurance (1.125% of ₹14,12,500) <strong>[Note 3]</strong></td>
+          <td>₹15,890.63</td>
+        </tr>
+        <tr>
+          <td><strong>CIF value for Customs purposes</strong></td>
+          <td><strong>₹17,10,890.63</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Assessable Value</strong></td>
+          <td><strong>₹17,10,890.63</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Notes:</strong></p>
+
+    <ol>
+      <li>
+        Rate of exchange notified by <strong>CBIC</strong> on the date of filing of
+        <strong>Bill of Entry</strong> has to be considered
+        <em>[Third proviso to section 14 of the Customs Act, 1962]</em>.
+      </li>
+
+      <li>
+        In case of goods imported by air, freight cannot exceed
+        <strong>20% of FOB value</strong>
+        <em>[Fifth proviso to Rule 10(2) of the Customs (Determination of Value of Imported Goods) Rules, 2007]</em>.
+      </li>
+
+      <li>
+        Insurance charges, when not ascertainable, are includible at
+        <strong>1.125% of FOB value</strong>
+        <em>[Third proviso to Rule 10(2) of the Customs Valuation (Determination of Value of Imported Goods) Rules, 2007]</em>.
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_3a",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Input Tax Credit (ITC)",
+    "Blocked Credits",
+    "Job Work",
+    "Eligibility and Conditions for Availment of ITC"
+  ],
+  placement: 3,
+  marks: 5,
+  question_html: `
+
+    <p><strong>RMN Company Ltd.</strong>, a registered supplier of Bengaluru (Karnataka), is a manufacturer of goods. The company provides the following information pertaining to GST paid on inward supplies during the month of <strong>April (current financial year)</strong>:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Items</th>
+          <th>GST Paid (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(i)</td>
+          <td>Life insurance premium paid by the company for the life insurance of factory employees as per the policy of the company. There is no legal obligation for such insurance for employees.</td>
+          <td>1,50,000</td>
+        </tr>
+        <tr>
+          <td>(ii)</td>
+          <td>Raw materials purchased for which invoice is missing but delivery challan is available.</td>
+          <td>38,000</td>
+        </tr>
+        <tr>
+          <td>(iii)</td>
+          <td>Raw materials purchased which are used for zero-rated supply.</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>(iv)</td>
+          <td>Works contractor's service used for repair of factory building which is debited in the Profit &amp; Loss Account of the company.</td>
+          <td>30,000</td>
+        </tr>
+        <tr>
+          <td>(v)</td>
+          <td>Company purchased capital goods for ₹4,00,000 and claimed depreciation of ₹44,800 (@10%) on the full amount of ₹4,48,000 under the Income-tax Act, 1961.</td>
+          <td>48,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Other information:</strong></p>
+
+    <ol>
+      <li>
+        In the month of <strong>September of the previous financial year</strong>, RMN Company Ltd. availed ITC of <strong>₹2,40,000</strong> on purchase of raw material which was directly sent to the job worker's premises under a challan on <strong>25th September (previous financial year)</strong>. The said raw material has not been received back from the job worker up to <strong>30th April (current financial year)</strong>.
+      </li>
+
+      <li>
+        All the above inward supplies except at <strong>S. No. (iii)</strong> have been used in the manufacture of taxable goods. Inward supplies at <strong>S. No. (iii)</strong> have been used in the manufacture of exempt goods.
+      </li>
+    </ol>
+
+    <p><strong>Compute the amount of net ITC that can be availed by RMN Company Ltd. for the month of April with necessary explanations for the treatment of various items as per the provisions of the CGST Act. Subject to the information given above, assume that all the other conditions necessary for availing ITC have been fulfilled.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Computation of ITC available with RMN Company Ltd. for the month of April</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>ITC (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Life insurance premium paid by the company on the life of factory employees <strong>[Note 1]</strong></td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>Raw materials purchased <strong>[Note 2]</strong></td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>Raw materials used for zero-rated supply <strong>[Note 3]</strong></td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>Works contractor's service <strong>[Note 4]</strong></td>
+          <td>30,000</td>
+        </tr>
+        <tr>
+          <td>Capital goods purchased in respect of which depreciation is claimed on the tax component <strong>[Note 5]</strong></td>
+          <td>Nil</td>
+        </tr>
+        <tr>
+          <td>Goods sent to job worker's premises <strong>[Note 6]</strong></td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td><strong>Total ITC available</strong></td>
+          <td><strong>80,000</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Notes:</strong></p>
+
+    <ol>
+      <li>
+        ITC on life insurance service is available only when it is obligatory for an employer to provide such services to its employees under any law for the time being in force. Since it is not obligatory for the employer in the instant case, ITC thereon is blocked.
+        <br><em>[Second proviso to section 17(5)(b) of the CGST Act, 2017]</em>
+      </li>
+
+      <li>
+        ITC cannot be taken since the invoice is missing and a delivery challan is not a valid document for availing ITC.
+        <br><em>[Section 16(2)(a) of the CGST Act, 2017]</em>
+      </li>
+
+      <li>
+        ITC can be availed for making zero-rated supplies notwithstanding that such supply may be an exempt supply.
+        <br><em>[Section 16(2) of the IGST Act, 2017]</em>
+      </li>
+
+      <li>
+        ITC is blocked on works contract services only when supplied for construction of an immovable property. "Construction" includes only those repairs which are capitalised to the immovable property.
+        <br><br>
+        Since, in the present case, repair expenditure has been debited to the Profit &amp; Loss Account and has not been capitalised, it does not amount to construction. Therefore, ITC is available.
+        <br><em>[Section 17(5)(c) of the CGST Act, 2017]</em>
+      </li>
+
+      <li>
+        ITC is not available where depreciation has been claimed under the Income-tax Act, 1961 on the tax component of the cost of capital goods.
+        <br><em>[Section 16(3) of the CGST Act, 2017]</em>
+      </li>
+
+      <li>
+        The principal is entitled to avail ITC on inputs sent directly to the job worker even if the inputs are not first received at his own premises.
+        <br><br>
+        However, where such inputs are not received back by the principal within one year from the date of receipt of the inputs by the job worker, it shall be deemed that the inputs have been supplied by the principal to the job worker on the date on which the job worker originally received them.
+        <br><br>
+        In the present case, one year from <strong>25th September (previous financial year)</strong> has not yet expired as on <strong>30th April (current financial year)</strong>. Therefore, the ITC of ₹2,40,000 availed in September of the previous financial year continues to remain valid and no reversal or tax liability arises in the month of April.
+        <br><em>[Sections 19(2) and 19(3) of the CGST Act, 2017]</em>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_3b",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Time of Supply",
+    "Time of Supply under Reverse Charge",
+    "Time of Supply of Vouchers"
+  ],
+  placement: 3,
+  marks: 5,
+  question_html: `
+    <p>Determine the <strong>time of supply</strong> in the following cases:</p>
+
+    <p><strong>(i)</strong> Bhansali Ltd. sells goods to Chopra Ltd. on <strong>4th June</strong>. The goods are taxable under <strong>reverse charge</strong>. Invoice for the same is issued on <strong>4th June</strong>. Chopra Ltd. receives the goods on <strong>12th June</strong>.</p>
+
+    <p>Chopra Ltd. records the payment in the books of account on <strong>30th June</strong> and the same is debited from the bank account of Chopra Ltd. on <strong>2nd July</strong>.</p>
+
+    <p><strong>(ii)</strong> Aanand Ltd. sells food coupons to Banwari Ltd. The company gives these coupons to its employees as part of the agreed perquisites. The coupons can be redeemed for purchase of any item of food/provisions in the outlets that are part of the program.</p>
+  `,
+  solution_html: `
+    <p><strong>(i) Time of Supply under Reverse Charge</strong></p>
+
+    <p>The time of supply of the goods is <strong>12th June</strong>, being the earliest of the following dates:</p>
+
+    <ul>
+      <li>Date of receipt of goods.</li>
+      <li>Date of payment.</li>
+      <li>Date immediately following <strong>30 days</strong> from the date of issue of invoice.</li>
+    </ul>
+
+    <p><strong>Therefore, the time of supply is 12th June.</strong></p>
+
+    <p><strong>(ii) Time of Supply of Vouchers</strong></p>
+
+    <p>As per <strong>section 12(4) of the CGST Act, 2017</strong>, the time of supply of vouchers exchangeable for goods is:</p>
+
+    <ul>
+      <li><strong>Date of issue of the voucher</strong>, if the supply that it covers is identifiable at that point of time; or</li>
+      <li><strong>Date of redemption of the voucher</strong>, in all other cases.</li>
+    </ul>
+
+    <p>In the given case, the supply against which the food coupon will be redeemed is <strong>not identifiable on the date of issue of the coupon</strong>. Therefore, the time of supply shall be the <strong>date on which the employee redeems the coupon</strong> for purchase of food/provision items of his choice.</p>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_3c",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Import of Goods",
+    "Pilferage of Imported Goods",
+    "Custodian of Imported Goods",
+    "Case Laws"
+  ],
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p><strong>M/s Bhalla Imports Ltd.</strong> imported certain goods, which were unloaded in the customs area on <strong>1st October</strong>. When the order for clearance was passed by the proper officer on <strong>5th October</strong>, it was found that there was some pilferage of such goods.</p>
+
+    <p>As the imported goods were in the custody of the <strong>Port Trust</strong>, the Department demanded duty from the custodian under <strong>section 45(3) of the Customs Act, 1962</strong> on such pilferage.</p>
+
+    <p>The Port Trust denied such demand contending that it was not an approved custodian falling under section 45 of the Customs Act, 1962 and possession of goods by it was by virtue of powers conferred under the <strong>Major Port Trust Act, 1963</strong>. Hence, it is not liable for customs duty on pilfered goods.</p>
+
+    <p><strong>M/s Bhalla Imports Ltd.</strong> has also asked the Port Trust to make good the loss of goods.</p>
+
+    <p><strong>Examine whether the demands made by the Department and M/s Bhalla Imports Ltd. are justified in law, referring to the decided case law.</strong></p>
+  `,
+  solution_html: `
+    <p>The facts of the case are similar to the case of <strong>Board of Trustees v. Union of India (2009) 241 ELT 513 (Bom HC DB)</strong>.</p>
+
+    <p>In the said case, the Bombay High Court held that considering the language of <strong>section 45(3) of the Customs Act, 1962</strong>, the liability to pay customs duty is on the person in whose custody the imported goods remain as an <strong>approved custodian</strong> under section 45 of the Act.</p>
+
+    <p>Accordingly, section 45(3) applies only to <strong>private custodians</strong> who are required to obtain approval from the Principal Commissioner/Commissioner of Customs under section 45(1).</p>
+
+    <p>Major Ports and Airports governed by the <strong>Major Port Trust Act, 1963</strong> do not require such approval under section 45(1). Therefore, they are <strong>not covered by section 45(3)</strong> of the Customs Act, 1962.</p>
+
+    <p><strong>Hence, the Department cannot demand customs duty from the Port Trust</strong> in respect of the pilfered goods under section 45(3).</p>
+
+    <p>Further, section 45(3) merely fastens liability for <strong>customs duty</strong> on the approved custodian and does not extend to the <strong>value of the goods lost</strong>.</p>
+
+    <p>However, the Port Trust, acting as a <strong>bailee</strong> of the goods, is liable to compensate the importer for the value of the goods lost.</p>
+
+    <p><strong>Therefore:</strong></p>
+
+    <ul>
+      <li>The demand made by the Department on the Port Trust for payment of customs duty is <strong>not justified</strong>.</li>
+      <li>The claim of <strong>M/s Bhalla Imports Ltd.</strong> against the Port Trust for compensation of the value of the lost goods is <strong>justified in law</strong>.</li>
+    </ul>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_4a",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Refund under GST",
+    "Electronic Credit Ledger",
+    "Rule 86 of the CGST Rules, 2017",
+    "Zero-rated Supply"
+  ],
+  placement: 4,
+  marks: 5,
+  question_html: `
+    <p><strong>M/s Surajbhan &amp; Co.</strong> is registered under GST in the State of Maharashtra. They have made zero-rated supply of goods worth <strong>₹84,50,000</strong> without payment of IGST for <strong>₹10,14,000</strong> during the month of May. The refund application under <strong>section 54</strong> for the above supply has been rejected by the proper officer.</p>
+
+    <p><strong>Mr. Abhay</strong>, Taxation Manager of the firm, has sought for re-crediting the <strong>Electronic Credit Ledger</strong> as per the provisions of <strong>rule 86</strong> for the above rejection.</p>
+
+    <p><strong>Examine the scenario and offer your comments.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>Rule 86 of the CGST Rules, 2017</strong> provides that where a registered person has claimed refund of any unutilized amount (i.e. ITC) from the Electronic Credit Ledger in accordance with the provisions of <strong>section 54 of the CGST Act, 2017</strong>, the amount to the extent of the refund claim shall be debited from the Electronic Credit Ledger.</p>
+
+    <p>If such refund claim is rejected, either wholly or partly, the amount so debited, to the extent of the rejection, shall be <strong>re-credited to the Electronic Credit Ledger</strong> by the proper officer.</p>
+
+    <p>In the given case, <strong>M/s Surajbhan &amp; Co.</strong> has made zero-rated supply without payment of IGST and claimed refund of <strong>₹10,14,000</strong>. Since the refund application has been rejected by the proper officer, the amount debited from the Electronic Credit Ledger is eligible for re-credit.</p>
+
+    <p>Therefore, the contention of <strong>Mr. Abhay</strong> is <strong>correct</strong>. The proper officer shall re-credit the rejected amount to the Electronic Credit Ledger in accordance with <strong>Rule 86 of the CGST Rules, 2017</strong>.</p>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_4b",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Refund of Customs Duty",
+    "Unjust Enrichment",
+    "Section 27 of the Customs Act, 1962"
+  ],
+  placement: 4,
+  marks: 5,
+  question_html: `
+    <p><strong>Mr. Narayan</strong> has, over three consignments of <strong>200, 400 and 400 units</strong>, imported a total of <strong>1,000 units</strong> of an article "<strong>ZEP</strong>", which has been valued at <strong>₹1,150 per unit</strong>. The customs duty on this article has been assessed at <strong>₹250 per unit</strong>. He adds his profit margin of <strong>₹350 per unit</strong> and sells the article for <strong>₹1,750 per unit</strong>.</p>
+
+    <p>After one month of selling the entire consignment of article "ZEP", Mr. Narayan found that there had been an error in payment of duty, whereby duty for the consignment of <strong>200 units</strong> was paid as if it was <strong>400 units</strong>, resulting in excess payment of duty.</p>
+
+    <p>Mr. Narayan files an application for refund of <strong>₹50,000 (200 × ₹250)</strong>.</p>
+
+    <p><strong>Examine whether the bar of unjust enrichment is attracted.</strong></p>
+  `,
+  solution_html: `
+    <p>Mr. Narayan's invoices show that he collected customs duty of <strong>₹250 per unit</strong> on <strong>1,000 units</strong>. However, due to an error, he paid customs duty on an additional <strong>200 units</strong>.</p>
+
+    <p>This excess payment was made before the order permitting clearance of the goods and would be evident from the <strong>Bill of Entry</strong>, which would show that the amount paid exceeded the amount of duty actually assessed.</p>
+
+    <p>Accordingly, Mr. Narayan's case falls within the exception to the doctrine of <strong>unjust enrichment</strong> contained in <strong>clause (g) of the first proviso to section 27(2) of the Customs Act, 1962</strong>.</p>
+
+    <p>Further, <strong>clause (a) of the first proviso to section 27(2)</strong> provides that the doctrine of unjust enrichment shall not apply where the refund relates to duty and interest paid by the importer, provided the incidence of such duty and interest has <strong>not been passed on</strong> to any other person.</p>
+
+    <p>Mr. Narayan's invoices and other documentary evidence will establish that customs duty was collected only on <strong>1,000 units</strong> and not on the excess duty paid for the additional <strong>200 units</strong>.</p>
+
+    <p><strong>Therefore, the bar of unjust enrichment is not attracted</strong>, and Mr. Narayan is entitled to claim the refund of <strong>₹50,000</strong>, subject to production of the necessary documentary evidence.</p>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_4c",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Warehousing of Imported Goods",
+    "Section 61 of the Customs Act, 1962",
+    "Section 72 of the Customs Act, 1962",
+    "Customs Duty Computation"
+  ],
+  placement: 4,
+  marks: 4,
+  question_html: `
+    <p><strong>Vishal</strong> imported certain goods in May. An <strong>'into bond' bill of entry</strong> was presented on <strong>14th May</strong> and the goods were cleared from the port for warehousing. The assessable value on that date was <strong>US $ 1,00,000</strong>. The order permitting the deposit of goods in the warehouse for <strong>4 months</strong> was issued on <strong>21st May</strong>.</p>
+
+    <p>Vishal deposited the goods in the warehouse on the same day but did not clear the imported goods even after the warehousing period expired on <strong>21st September</strong>.</p>
+
+    <p>A notice was issued under <strong>section 72 of the Customs Act, 1962</strong>, demanding duty and interest. Vishal cleared the goods on <strong>14th October</strong>.</p>
+
+    <p><strong>Compute the amount of duty and interest payable by Vishal while removing the goods</strong> on the basis of the following information:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>14th May</th>
+          <th>21st September</th>
+          <th>14th October</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rate of exchange per US $ (as notified by CBIC)</td>
+          <td>₹65.20</td>
+          <td>₹65.40</td>
+          <td>₹65.50</td>
+        </tr>
+        <tr>
+          <td>Basic Customs Duty</td>
+          <td>15%</td>
+          <td>10%</td>
+          <td>12%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Note:</strong> Integrated tax leviable under section 3(7) of the Customs Tariff Act is exempt. Ignore Agriculture Infrastructure and Development Cess.</p>
+  `,
+  solution_html: `
+    <p><strong>Computation of Import Duty Payable by Vishal</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Assessable Value</td>
+          <td>US $ 1,00,000</td>
+        </tr>
+        <tr>
+          <td>Value in Indian Currency (US $ 1,00,000 × ₹65.20) <strong>[Note 1]</strong></td>
+          <td>₹65,20,000</td>
+        </tr>
+        <tr>
+          <td>Basic Customs Duty @ 10% <strong>[Note 2]</strong></td>
+          <td>₹6,52,000</td>
+        </tr>
+        <tr>
+          <td>Add: Social Welfare Surcharge @ 10% of ₹6,52,000</td>
+          <td>₹65,200</td>
+        </tr>
+        <tr>
+          <td><strong>Total Customs Duty Payable</strong></td>
+          <td><strong>₹7,17,200</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Computation of Interest</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Expiry of 90 days from the date of warehousing order (21st May)</td>
+          <td>19th August</td>
+        </tr>
+        <tr>
+          <td>Period for which interest is payable</td>
+          <td>56 days (12 days of August + 30 days of September + 14 days of October)</td>
+        </tr>
+        <tr>
+          <td>Interest = ₹7,17,200 × 15% × 56/365</td>
+          <td><strong>₹16,505</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Notes:</strong></p>
+
+    <ol>
+      <li>
+        As per the <strong>third proviso to section 14(1) of the Customs Act, 1962</strong>, the assessable value is computed using the exchange rate notified by CBIC on the date of presentation of the <strong>into bond bill of entry</strong> for warehousing. Accordingly, the applicable exchange rate is <strong>₹65.20 per US $</strong>.
+      </li>
+
+      <li>
+        Goods not removed within the permissible warehousing period are deemed to have been improperly removed under <strong>section 72 of the Customs Act, 1962</strong> on the date on which they ought to have been removed. Accordingly, the applicable rate of Basic Customs Duty is the rate prevailing on <strong>21st September</strong>, i.e., <strong>10%</strong>, as held in <strong>Kesoram Rayon v. CC [1996 (86) ELT 464 (SC)]</strong>.
+      </li>
+
+      <li>
+        Under <strong>section 61 of the Customs Act, 1962</strong>, interest is payable @ <strong>15% p.a.</strong> where warehoused goods remain beyond 90 days from the date of the warehousing order, for the period commencing after the expiry of 90 days till the date of payment of duty.
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_5a",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Offences and Penalties",
+    "Prosecution",
+    "Bailability of Offences",
+    "Section 132 of the CGST Act, 2017"
+  ],
+  placement: 5,
+  marks: 5,
+  question_html: `
+    <p>Examine the implications as regards the <strong>bailability</strong> and <strong>quantum of punishment on prosecution</strong>, in respect of the following cases pertaining to the month of December under the <strong>CGST Act, 2017</strong>:</p>
+
+    <p><strong>(i)</strong> <strong>'Amit'</strong> collects <strong>₹245 lakh</strong> as tax from its clients and deposits <strong>₹241 lakh</strong> with the Central Government. It is found that he has falsified financial records and has not maintained proper records.</p>
+
+    <p><strong>(ii)</strong> <strong>'Suresh'</strong> collects <strong>₹550 lakh</strong> as tax from its clients but deposits only <strong>₹30 lakh</strong> with the Central Government.</p>
+
+    <p><strong>What will be the implications with regard to punishment on prosecution of 'Amit' and 'Suresh' for the offences? What would be the position if 'Amit' and 'Suresh' repeat the offences?</strong></p>
+
+    <p><strong>Assume that the offences are proved in the Court.</strong></p>
+  `,
+  solution_html: `
+    <p><strong>(i) Case of 'Amit'</strong></p>
+
+    <p>Failure to pay any amount collected as tax beyond <strong>3 months</strong> from the due date of payment is a specified offence under <strong>section 132(1)(d)</strong> of the CGST Act, 2017.</p>
+
+    <p>In the present case, the amount not deposited is <strong>₹4 lakh (₹245 lakh − ₹241 lakh)</strong>. Since the amount involved does not exceed <strong>₹200 lakh</strong>, such failure is <strong>not punishable with imprisonment</strong> under section 132(1).</p>
+
+    <p>However, falsification of financial records is a specified offence under <strong>section 132(1)</strong>. Assuming that such falsification was done with the intention to evade tax, Amit shall be punishable with <strong>imprisonment which may extend to 6 months or with fine or with both</strong> under <strong>section 132(1)(iv)</strong>.</p>
+
+    <p>The said offence is <strong>bailable</strong> in terms of <strong>section 132(4)</strong> of the CGST Act, 2017.</p>
+
+    <p><strong>(ii) Case of 'Suresh'</strong></p>
+
+    <p>Failure to pay tax collected beyond <strong>3 months</strong> from the due date is punishable under <strong>section 132(1)(d)</strong>.</p>
+
+    <p>Since the amount of tax not deposited is <strong>₹520 lakh (₹550 lakh − ₹30 lakh)</strong>, which exceeds <strong>₹500 lakh</strong>, Suresh shall be punishable with <strong>imprisonment which may extend to 5 years and with fine</strong> under <strong>section 132(1)(i)</strong>.</p>
+
+    <p>The offence is <strong>non-bailable</strong> in terms of <strong>section 132(5)</strong> of the CGST Act, 2017.</p>
+
+    <p><strong>Repeated Offence</strong></p>
+
+    <p>If <strong>Amit</strong> and <strong>Suresh</strong> repeat the offence, they shall be punishable for the second and every subsequent offence with <strong>imprisonment which may extend to 5 years and with fine</strong> in terms of <strong>section 132(2)</strong> of the CGST Act, 2017.</p>
+
+    <p>Such imprisonment shall also be for a minimum period of <strong>6 months</strong>, unless the Court records special and adequate reasons for awarding a lesser sentence.</p>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_5b",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Appeals under GST",
+    "Pre-deposit for Appeals",
+    "Section 107 of the CGST Act, 2017",
+    "Section 112 of the CGST Act, 2017"
+  ],
+  placement: 5,
+  marks: 5,
+  question_html: `
+    <p>In an order dated <strong>20th August</strong> issued to <strong>QR (P) Ltd.</strong>, the <strong>Joint Commissioner of CGST</strong> has confirmed an <strong>IGST demand of ₹280 crore</strong>.</p>
+
+    <p>The company is disputing the entire demand of IGST and wants to know the amount of <strong>pre-deposit</strong> it has to make under the IGST Act for filing an appeal before the <strong>Appellate Authority</strong> against the order of the Joint Commissioner.</p>
+
+    <p>Assuming that the Appellate Authority also confirms the order of the Joint Commissioner and the company wants to file an appeal before the <strong>Appellate Tribunal</strong> against the order of the Appellate Authority, determine the amount of <strong>pre-deposit</strong> to be made by the company for filing the said appeal.</p>
+  `,
+  solution_html: `
+    <p><strong>Appeal before the Appellate Authority</strong></p>
+
+    <p>As per <strong>section 107(6) of the CGST Act, 2017</strong> read with <strong>section 20 of the IGST Act, 2017</strong>, no appeal shall be filed before the Appellate Authority unless the appellant has paid:</p>
+
+    <ul>
+      <li>The admitted amount of tax, interest, fine, fee and penalty, if any; and</li>
+      <li><strong>10% of the remaining amount of tax in dispute</strong>, subject to a maximum of <strong>₹50 crore</strong>.</li>
+    </ul>
+
+    <p>Since the entire IGST demand of <strong>₹280 crore</strong> is disputed:</p>
+
+    <ul>
+      <li>10% of ₹280 crore = <strong>₹28 crore</strong></li>
+      <li>Maximum limit = <strong>₹50 crore</strong></li>
+    </ul>
+
+    <p><strong>Pre-deposit required before the Appellate Authority = ₹28 crore.</strong></p>
+
+    <p><strong>Appeal before the Appellate Tribunal</strong></p>
+
+    <p>As per <strong>section 112(8) of the CGST Act, 2017</strong>, no appeal shall be filed before the Appellate Tribunal unless the appellant has paid:</p>
+
+    <ul>
+      <li>The admitted amount of tax, interest, fine, fee and penalty, if any; and</li>
+      <li><strong>20% of the remaining amount of tax in dispute</strong>, in addition to the amount already deposited while filing the first appeal, subject to a maximum of <strong>₹100 crore</strong>.</li>
+    </ul>
+
+    <p>Accordingly:</p>
+
+    <ul>
+      <li>20% of ₹280 crore = <strong>₹56 crore</strong></li>
+      <li>Maximum limit = <strong>₹100 crore</strong></li>
+    </ul>
+
+    <p><strong>Pre-deposit required before the Appellate Tribunal = ₹56 crore.</strong></p>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_5c",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Preferential Rate of Customs Duty",
+    "Section 25 of the Customs Act, 1962",
+    "Rules of Origin",
+    "Customs Tariff Act, 1975"
+  ],
+  placement: 5,
+  marks: 4,
+  question_html: `
+    <p><strong>What are the conditions required to be fulfilled by the importer to make the imported goods eligible for preferential rate of duty prescribed by the Central Government by notification under section 25 of the Customs Act, 1962?</strong></p>
+  `,
+  solution_html: `
+    <p>The Central Government may, by notification issued under <strong>section 25 of the Customs Act, 1962</strong>, prescribe a <strong>preferential rate of duty</strong> in respect of imports from specified preferential areas.</p>
+
+    <p>To claim the preferential rate of duty, the importer is required to satisfy the following conditions:</p>
+
+    <ol>
+      <li>
+        At the time of importation, the importer should make a <strong>specific claim</strong> for the preferential rate of duty.
+      </li>
+
+      <li>
+        The importer should also declare that the goods have been <strong>produced or manufactured</strong> in the notified preferential area.
+      </li>
+
+      <li>
+        The area from which the goods are imported should be a <strong>preferential area notified under section 4(3) of the Customs Tariff Act, 1975</strong>.
+      </li>
+
+      <li>
+        The <strong>origin of the goods</strong> should be determined in accordance with the <strong>Rules of Origin</strong> made under <strong>section 4(2) of the Customs Tariff Act, 1975</strong>.
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_6a",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Assessment under GST",
+    "Summary Assessment",
+    "Section 64 of the CGST Act, 2017"
+  ],
+  placement: 6,
+  marks: 6,
+  question_html: `
+    <p>Write a brief note on <strong>Summary Assessment in certain special cases</strong> as per <strong>section 64 of the CGST Act, 2017</strong>.</p>
+  `,
+  solution_html: `
+    <p>As per <strong>section 64 of the CGST Act, 2017</strong>, summary assessment can be initiated to protect the interest of revenue with the <strong>previous permission of the Additional Commissioner/Joint Commissioner</strong> when the proper officer has evidence that a taxable person has incurred a liability to pay tax under the Act and any delay in passing an assessment order may adversely affect the interest of revenue.</p>
+
+    <p>The <strong>Additional Commissioner/Joint Commissioner</strong> may withdraw the summary assessment order, either:</p>
+
+    <ul>
+      <li>on an application filed by the taxable person within <strong>30 days</strong> from the date of receipt of the assessment order; or</li>
+      <li>on his own motion,</li>
+    </ul>
+
+    <p>if he considers such order to be <strong>erroneous</strong>. In such a case, the proper officer shall instead follow the procedure laid down under <strong>section 73 or section 74 of the CGST Act, 2017</strong> for determination of tax liability.</p>
+
+    <p>Where the <strong>taxable person liable to pay tax cannot be ascertained</strong> and the liability relates to the <strong>supply of goods</strong>, the <strong>person in charge of such goods</strong> shall be deemed to be the taxable person liable to be assessed and shall also be liable to pay the tax and any other amount due under section 64.</p>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_6b",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Rectification of Errors",
+    "Section 161 of the CGST Act, 2017",
+    "Arrest under GST",
+    "Section 69 of the CGST Act, 2017",
+    "Section 132 of the CGST Act, 2017"
+  ],
+  placement: 6,
+  marks: 4,
+  question_html: `
+    <p><strong>(b)</strong> Explain the provisions relating to <strong>rectification of errors apparent on the face of record</strong> under <strong>section 161 of the CGST Act, 2017</strong>.</p>
+
+    <p><strong>OR</strong></p>
+
+    <p><strong>(b)</strong> State the circumstances when the <strong>proper officer can authorize the arrest of any person</strong> under the <strong>CGST Act, 2017</strong>.</p>
+  `,
+  solution_html: `
+    <p><strong>Answer to Question 6(b)</strong></p>
+
+    <p>As per <strong>section 161 of the CGST Act, 2017</strong>, any authority who has passed or issued any <strong>decision, order, notice, certificate or any other document</strong> may rectify any <strong>error apparent on the face of the record</strong>, either:</p>
+
+    <ul>
+      <li>on its own motion; or</li>
+      <li>where such error is brought to its notice by any GST officer or by the affected person within a period of <strong>3 months</strong> from the date of issue of such decision, order, notice, certificate or other document.</li>
+    </ul>
+
+    <p>However, no such rectification shall be made after the expiry of <strong>6 months</strong> from the date of issue of such decision, order, notice, certificate or other document.</p>
+
+    <p>The aforesaid period of <strong>6 months</strong> shall <strong>not apply</strong> where the rectification is purely in the nature of correction of a <strong>clerical or arithmetical error</strong> arising from an accidental slip or omission.</p>
+
+    <p>If the rectification adversely affects any person, the <strong>principles of natural justice</strong> shall be followed.</p>
+
+    <hr>
+
+    <p><strong>Alternative Answer (OR)</strong></p>
+
+    <p>The Commissioner may authorize an officer to <strong>arrest</strong> a person if he has reasons to believe that the person has committed an offence punishable under <strong>section 132(1)(a), (b), (c), (d)</strong> or <strong>section 132(2)</strong> of the CGST Act, 2017 and the amount of <strong>tax evaded / input tax credit wrongly availed or utilized / refund wrongly taken exceeds ₹2 crore</strong>.</p>
+
+    <p>This essentially means that a person can be arrested only where:</p>
+
+    <ul>
+      <li>the tax evasion exceeds <strong>₹2 crore</strong>; and</li>
+      <li>the offence is one of the specified offences, namely:
+        <ul>
+          <li>Supply of goods or services without issuing an invoice.</li>
+          <li>Issue of invoice without actual supply of goods or services.</li>
+          <li>Collection of tax but failure to deposit it with the Government beyond <strong>3 months</strong> from the due date.</li>
+          <li>Availing input tax credit without receipt of goods or services.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>However, the monetary limit of <strong>₹2 crore</strong> is <strong>not applicable</strong> where the person is a <strong>repeat offender</strong>, i.e., he commits the specified offences again after having been convicted earlier.</p>
+  `
+},
+{
+  question_id: "idt_MAR25_mtp_I_6c",
+  source: "ICAI Mock Test Paper - Series I: March 2025",
+  chapter_name: [
+    "Liability in Special Cases",
+    "Liability of Retiring Partner",
+    "Section 90 of the CGST Act, 2017"
+  ],
+  placement: 6,
+  marks: 4,
+  question_html: `
+    <p>Discuss the liability of the <strong>retiring partner</strong> of a firm to pay any tax, interest or penalty, if any, leviable on the firm under the <strong>CGST/IGST/SGST Act</strong>.</p>
+  `,
+  solution_html: `
+    <p>As per <strong>section 90 of the CGST Act, 2017</strong>, where any partner retires from a firm, the <strong>retiring partner or the firm</strong> shall intimate the date of retirement of such partner to the Commissioner by giving a notice in writing.</p>
+
+    <p>The retiring partner shall be liable to pay the <strong>tax, interest or penalty</strong>, if any, due up to the date of his retirement, whether such liability has been determined on that date or not.</p>
+
+    <p>However, if no such intimation is given to the Commissioner within <strong>one month</strong> from the date of retirement, the liability of the retiring partner shall continue until the date on which such intimation is received by the Commissioner.</p>
+  `
 }
-
-
-
 ];

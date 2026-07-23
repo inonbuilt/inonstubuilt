@@ -1384,5 +1384,436 @@ const mcqData = [
       answer: 2
     }
   ]
+},
+{
+  case_id: "idt_MAR25_mtp_I_cs1",
+  case_chapter: [
+    "Goods Transport Agency (GTA)",
+    "Reverse Charge Mechanism (RCM)",
+    "Composition Levy",
+    "Charitable Trust",
+    "Place of Supply"
+  ],
+  caseText: `
+    <p><strong>PQR Pvt. Ltd.</strong>, registered under GST in the State of Uttar Pradesh, manufactures laboratory products in its factory located at <strong>Lucknow, Uttar Pradesh</strong>. The products are supplied across various parts of Uttar Pradesh. The company also provides intra-State repair and maintenance services for its products.</p>
+
+    <p>The turnover of the company during the preceding two financial years is as follows:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>F.Y.-1 (₹)</th>
+          <th>F.Y.-2 (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Turnover from supply of goods</td>
+          <td>75,00,000</td>
+          <td>1,02,00,000</td>
+        </tr>
+        <tr>
+          <td>Turnover from supply of services</td>
+          <td>7,10,000</td>
+          <td>9,25,000</td>
+        </tr>
+        <tr>
+          <td>Interest income from extending loans to others (not included in turnover of services)</td>
+          <td>5,25,000</td>
+          <td>6,26,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>PQR Pvt. Ltd. procures transportation services from <strong>M/s Nakul Enterprises</strong>, a Goods Transport Agency (GTA) having its place of business in Lucknow, Uttar Pradesh. The GTA has <strong>not opted to pay GST under forward charge</strong>. It issues a regular consignment note containing all prescribed particulars. The transportation service is taxable @ <strong>5%</strong>.</p>
+
+    <p><strong>Details for the April–June quarter of FY-3 are as follows:</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(i)</td>
+          <td>Turnover from supply of goods</td>
+          <td>10,20,000</td>
+        </tr>
+        <tr>
+          <td>(ii)</td>
+          <td>Turnover from supply of services</td>
+          <td>92,550</td>
+        </tr>
+        <tr>
+          <td>(iii)</td>
+          <td>Interest income from extending deposits to others</td>
+          <td>5,000</td>
+        </tr>
+        <tr>
+          <td>(iv)</td>
+          <td>Amount paid for services received from M/s Nakul Enterprises</td>
+          <td>50,000</td>
+        </tr>
+        <tr>
+          <td>(v)</td>
+          <td>Raw material received from other States</td>
+          <td>5,26,000</td>
+        </tr>
+        <tr>
+          <td>(vi)</td>
+          <td>Input services received</td>
+          <td>7,80,900</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Additional Information:</strong></p>
+
+    <ol>
+      <li>
+        Out of the raw material of ₹5,26,000, goods worth <strong>₹2,26,000</strong> were supplied by <strong>M/s Suraj Enterprises (Uttar Pradesh)</strong> on the instructions of <strong>M/s Abhinay Enterprises (Gujarat)</strong> to PQR Pvt. Ltd. at Lucknow.
+      </li>
+
+      <li>
+        <strong>Vidhata Foundation</strong>, a charitable trust registered under section 12AB of the Income-tax Act, 1961, has been established by the founders of PQR Pvt. Ltd. The Trust conducts yoga and spirituality sessions in Uttar Pradesh and collected participation fees of <strong>₹2,50,000</strong> during April. The Trust also received input services amounting to <strong>₹1,25,260</strong>. It is also examining a proposal to grant advertisement rights to PQR Pvt. Ltd. on its premises.
+      </li>
+    </ol>
+
+    <p><strong>Note:</strong> All amounts are exclusive of GST.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Supply</th>
+          <th>CGST</th>
+          <th>SGST</th>
+          <th>IGST</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Outward Supply</td>
+          <td>9%</td>
+          <td>9%</td>
+          <td>18%</td>
+        </tr>
+        <tr>
+          <td>Inward Supply</td>
+          <td>6%</td>
+          <td>6%</td>
+          <td>12%</td>
+        </tr>
+      </tbody>
+    </table>
+  `,
+    questions: [
+    {
+      question_id: "idt_MAR25_mtp_I_cs1_1",
+      chapter_name: [
+        "Goods Transport Agency (GTA)",
+        "Reverse Charge Mechanism (RCM)"
+      ],
+      question:
+        "Whether the service provided by M/s Nakul Enterprises to PQR Pvt. Ltd. is chargeable to tax? If yes, who will discharge the tax liability?",
+      options: [
+        "The service is chargeable to tax and M/s Nakul Enterprises will discharge the tax liability.",
+        "The service is chargeable to tax and PQR Pvt. Ltd. will discharge the tax liability.",
+        "The service is exempt under the CGST Act, 2017.",
+        "The service is chargeable to tax and M/s Nakul Enterprises and PQR Pvt. Ltd. will discharge the tax liability in the ratio of 1:1."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "idt_MAR25_mtp_I_cs1_2",
+      chapter_name: [
+        "Composition Levy"
+      ],
+      question:
+        "Whether PQR Pvt. Ltd. could have opted for composition levy under sub-sections (1) and (2) of section 10 of the CGST Act, 2017 for the current financial year (F.Y.-3)?",
+      options: [
+        "Yes. However, it could have provided services up to a value of ₹11,12,500 under composition levy during the current financial year.",
+        "No, it could not have opted for composition levy.",
+        "Yes. However, it could have provided services up to ₹5,00,000 under composition levy during the current financial year.",
+        "Yes. However, it could have provided services up to ₹11,75,100 under composition levy during the current financial year."
+      ],
+      answer: 0
+    },
+    {
+      question_id: "idt_MAR25_mtp_I_cs1_3",
+      chapter_name: [
+        "Composition Levy"
+      ],
+      question:
+        "Assuming PQR Pvt. Ltd. has opted for composition scheme under sub-sections (1) and (2) of section 10 of the CGST Act, 2017 at the beginning of the current financial year (F.Y.-3), what shall be the total GST liability of PQR Pvt. Ltd. in the State of Uttar Pradesh for the April–June quarter?",
+      options: [
+        "No liability, ITC of ₹1,56,828 will be carried forward.",
+        "₹45,931",
+        "₹13,626",
+        "₹2,02,759"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "idt_MAR25_mtp_I_cs1_4",
+      chapter_name: [
+        "Charitable Trust",
+        "Exemption"
+      ],
+      question:
+        "Which of the following statements is incorrect in the case of Vidhata Foundation?<br><br>(i) Services provided to charitable or religious trusts are not outside the ambit of GST. Unless specifically exempt, they are chargeable under GST.<br>(ii) All the activities of Vidhata Foundation are exempt from GST since it is a charitable trust registered under section 12AB of the Income-tax Act, 1961.<br>(iii) Fees charged by any registered person for sessions on yoga and spirituality are exempt since the objective of such programmes is advancement of yoga and spirituality.",
+      options: [
+        "i & ii",
+        "i",
+        "ii",
+        "ii & iii"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "idt_MAR25_mtp_I_cs1_5",
+      chapter_name: [
+        "Place of Supply",
+        "Bill-to Ship-to Model"
+      ],
+      question:
+        "What shall be the place of supply (POS) for the supply transaction(s) between PQR Pvt. Ltd., M/s Abhinay Enterprises and M/s Suraj Enterprises and the nature of tax leviable thereon?",
+      options: [
+        "POS for transaction between M/s Abhinay Enterprises and M/s Suraj Enterprises is the location of principal place of business of M/s Abhinay Enterprises, i.e. Gujarat and IGST is leviable on such supply. POS for transaction between M/s Abhinay Enterprises and PQR Pvt. Ltd. is the location at which the movement of goods terminates, i.e. the factory of PQR Pvt. Ltd. in Lucknow, Uttar Pradesh and IGST is leviable on such supply.",
+        "POS for transaction between M/s Abhinay Enterprises and M/s Suraj Enterprises is the location of principal place of business of M/s Suraj Enterprises, i.e. Uttar Pradesh and IGST is leviable on such supply. POS for transaction between M/s Abhinay Enterprises and PQR Pvt. Ltd. is the location of principal place of business of M/s Abhinay Enterprises, i.e. Gujarat and CGST & SGST are leviable on such supply.",
+        "POS for transaction between M/s Abhinay Enterprises, PQR Pvt. Ltd. and M/s Suraj Enterprises is the location of principal place of business of PQR Pvt. Ltd., i.e. Uttar Pradesh since goods are delivered there and CGST & SGST are leviable on such supply.",
+        "POS for transaction between M/s Abhinay Enterprises, PQR Pvt. Ltd. and M/s Suraj Enterprises is the location of principal place of business of PQR Pvt. Ltd., i.e. Uttar Pradesh since goods are delivered there and IGST is leviable on such supply."
+      ],
+      answer: 0
+    }
+  ]
+},
+{
+  case_id: "idt_MAR25_mtp_I_cs2",
+  case_chapter: [
+    "Import of Services",
+    "Reverse Charge Mechanism (RCM)",
+    "Director Services",
+    "Input Tax Credit (ITC)",
+    "Value of Supply",
+    "Subsidy",
+    "Sponsorship Services"
+  ],
+  caseText: `
+    <p><strong>Himgiri Solutions Private Limited</strong> (hereinafter referred to as <strong>Himgiri Solutions</strong>) is registered under GST in the State of Haryana and is engaged in providing multidimensional services to its clients.</p>
+
+    <p>During the month of <strong>July</strong>, the following transactions were undertaken by the company:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S. No.</th>
+          <th>Particulars</th>
+          <th>Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(i)</td>
+          <td>Import of cloud services from <strong>Easecart.com</strong></td>
+          <td>51,00,000</td>
+        </tr>
+        <tr>
+          <td>(ii)</td>
+          <td>Sitting fee paid to four directors @ ₹25,000 each per month. In addition, two executive directors receive salary of ₹2,00,000 each per month on which tax is deducted under section 192 of the Income-tax Act, 1961.</td>
+          <td>Sitting Fee: ₹1,00,000<br>Salary: ₹4,00,000</td>
+        </tr>
+        <tr>
+          <td>(iii)</td>
+          <td>Life insurance premium paid for 20 employees in accordance with the company's internal policy.</td>
+          <td>5,00,000</td>
+        </tr>
+        <tr>
+          <td>(iv)</td>
+          <td>Consultancy services provided to <strong>Zoom Corp.</strong>, Bengaluru.</td>
+          <td>30,00,000</td>
+        </tr>
+        <tr>
+          <td>(v)</td>
+          <td>Lump-sum subsidy received from <strong>Empowering India</strong>, an NGO located in Haryana, for promoting eligible businesses.</td>
+          <td>5,00,000</td>
+        </tr>
+        <tr>
+          <td>(vi)</td>
+          <td>Sponsorship services provided to <strong>Mr. X</strong>, an individual, for an event organised in Haryana.</td>
+          <td>5,00,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Additional Information:</strong></p>
+
+    <ol>
+      <li>All the above amounts are exclusive of GST unless otherwise stated.</li>
+      <li>There are no other inward or outward supply transactions during the month.</li>
+      <li>The opening balance of Input Tax Credit in the Electronic Credit Ledger is <strong>Nil</strong>.</li>
+      <li>Assume that all the conditions for availing ITC have been fulfilled.</li>
+      <li>GST is applicable on all inward and outward supplies @ <strong>18%</strong>, unless otherwise specified.</li>
+      <li>Ignore bifurcation of CGST, SGST and IGST.</li>
+    </ol>
+  `,
+    questions: [
+    {
+      question_id: "idt_MAR25_mtp_I_cs2_1",
+      chapter_name: [
+        "Import of Services",
+        "Reverse Charge Mechanism (RCM)"
+      ],
+      question:
+        "The liability to pay GST for cloud services procured by Himgiri Solutions from Easecart.com shall be:",
+      options: [
+        "on Easecart.com since the services are online information and database access or retrieval services and GST of ₹9,00,000 shall be paid by Easecart.com.",
+        "Nil. There will not be any GST liability on the transaction since Easecart.com is located outside India and services are provided electronically.",
+        "on Easecart.com under forward charge and GST of ₹9,18,000 shall be paid by Easecart.com.",
+        "on Himgiri Solutions under reverse charge and GST of ₹9,18,000 shall be paid by Himgiri Solutions."
+      ],
+      answer: 3
+    },
+    {
+      question_id: "idt_MAR25_mtp_I_cs2_2",
+      chapter_name: [
+        "Director Services",
+        "Reverse Charge Mechanism (RCM)"
+      ],
+      question:
+        "Himgiri Solutions seeks your advice on the taxability of the sitting fee payable to directors and salary payable to the executive directors. The correct advice is:",
+      options: [
+        "Sitting fees paid to the directors is liable to GST under reverse charge and the salary paid to executive directors shall not be liable to GST.",
+        "Total amount payable to directors (sitting fees as well as salary) is exempt from GST.",
+        "Total amount payable to directors (sitting fees as well as salary) is liable to GST under reverse charge in the hands of Himgiri Solutions.",
+        "Total amount payable to directors (sitting fees as well as salary) is liable to GST under forward charge in the hands of the directors as professional income."
+      ],
+      answer: 0
+    },
+    {
+      question_id: "idt_MAR25_mtp_I_cs2_3",
+      chapter_name: [
+        "Input Tax Credit (ITC)"
+      ],
+      question:
+        "What shall be the amount of input tax credit available with Himgiri Solutions for the month of July?",
+      options: [
+        "₹10,26,000",
+        "₹11,16,000",
+        "₹9,36,000",
+        "₹1,96,000"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "idt_MAR25_mtp_I_cs2_4",
+      chapter_name: [
+        "Value of Supply",
+        "Subsidy",
+        "Sponsorship Services"
+      ],
+      question:
+        "Compute the value of outward supplies made by Himgiri Solutions in the month of July.",
+      options: [
+        "₹30,00,000",
+        "₹25,00,000",
+        "₹35,00,000",
+        "₹40,00,000"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "idt_MAR25_mtp_I_cs2_5",
+      chapter_name: [
+        "Output Tax Liability",
+        "Input Tax Credit (ITC)"
+      ],
+      question:
+        "Compute the amount of net GST to be deposited in cash by Himgiri Solutions for the month of July.",
+      options: [
+        "Nil",
+        "₹7,20,000",
+        "₹9,36,000",
+        "₹14,76,000"
+      ],
+      answer: 2
+    }
+  ]
+},
+{
+  case_id: "idt_MAR25_mtp_I_cs3",
+  case_chapter: [
+    "Time of Supply",
+    "Place of Supply",
+    "Bill-to Ship-to Model",
+    "Credit Notes",
+    "Tax Invoice"
+  ],
+  caseText: `
+    <p><strong>Bhaskar (P) Ltd.</strong>, registered under GST in <strong>Delhi</strong>, is engaged in trading of cement and providing services by way of renting of commercial properties.</p>
+
+    <p>On <strong>2nd January</strong>, it received an order from <strong>Ruksana (P) Ltd.</strong>, registered in <strong>Punjab</strong>, for supply of <strong>1,000 kg of cement</strong>. Ruksana (P) Ltd. instructed Bhaskar (P) Ltd. to deliver the goods directly to <strong>Prem &amp; Sons</strong>, registered under GST in <strong>Gujarat</strong>.</p>
+
+    <p>The company prepared the consignment on <strong>4th January</strong> and dispatched the goods from its warehouse located in <strong>Gurugram, Haryana</strong> on <strong>5th January</strong>. The tax invoice was also issued on the same day.</p>
+
+    <p>On <strong>7th January</strong>, Bhaskar (P) Ltd. received the cheque from Ruksana (P) Ltd. The accountant recorded the receipt in the books of account on the same day. However, the cheque was deposited in the bank only on <strong>14th January</strong> and was credited to the company's bank account on <strong>15th January</strong>.</p>
+
+    <p>Meanwhile, on <strong>10th January</strong>, the GST rate on cement was reduced from <strong>28%</strong> to <strong>18%</strong>.</p>
+
+    <p>On inspection, a portion of the goods was found to be defective and was returned to Bhaskar (P) Ltd. Accordingly, a <strong>credit note</strong> was issued on <strong>20th January</strong>.</p>
+
+    <p>Bhaskar (P) Ltd. also let out its commercial property situated in <strong>Delhi</strong> to Ruksana (P) Ltd. for one year on a monthly rental basis. Rent for the month of January was received on <strong>10th February</strong>. As per the agreement, the rent for each month was required to be paid by the <strong>7th of the following month</strong>. No tax invoice was issued by Bhaskar (P) Ltd. for the rental services.</p>
+  `,
+    questions: [
+    {
+      question_id: "idt_MAR25_mtp_I_cs3_1",
+      chapter_name: [
+        "Time of Supply",
+        "Change in Rate of Tax"
+      ],
+      question: "What will be the time of supply and rate of tax to be charged in respect of supply of 1,000 kg of cement?",
+      options: [
+        "5th January; 28%",
+        "7th January; 28%",
+        "14th January; 18%",
+        "15th January; 18%"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "idt_MAR25_mtp_I_cs3_2",
+      chapter_name: [
+        "Place of Supply",
+        "Bill-to Ship-to Model"
+      ],
+      question: "What is the place of supply in respect of transaction between Bhaskar (P) Ltd. and Ruksana (P) Ltd., and Ruksana (P) Ltd. and Prem & Sons, respectively?",
+      options: [
+        "Delhi, Punjab",
+        "Punjab, Gujarat",
+        "Haryana, Punjab",
+        "Haryana, Gujarat"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "idt_MAR25_mtp_I_cs3_3",
+      chapter_name: [
+        "Tax Invoice",
+        "Time Limit for Issue of Invoice"
+      ],
+      question: "Bhaskar (P) Ltd. has not issued any invoice in respect of the services provided by way of renting of commercial properties in the month of January. What is the last date for issuance of invoice?",
+      options: [
+        "10th February",
+        "7th February",
+        "Either (a) or (b), whichever is earlier.",
+        "Either (a) or (b), whichever is later."
+      ],
+      answer: 1
+    }
+  ]
 }
 ];
