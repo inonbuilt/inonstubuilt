@@ -1004,7 +1004,341 @@ const mcqData = [
       answer: 3
     }
   ]
+},
+{
+  case_id: "dt_marmtp25_I_cs1",
+  case_chapter: [
+    "Tax Deduction at Source",
+    "Section 194N",
+    "Statement of Financial Transactions",
+    "Penalty",
+    "Business Reorganisation"
+  ],
+  caseText: `
+    <p><strong>Case Scenario I</strong></p>
+
+    <p>Jandhan Co-operative Bank provides the following information relating to cash withdrawals by its two customers during the Previous Year 2024-25:</p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Date of cash withdrawal</th>
+          <th>Mr. Ashok (Savings Account) (₹)</th>
+          <th>Mr. Bablu (Current Account) (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>05.04.2024</td><td>20,00,000</td><td>-</td></tr>
+        <tr><td>10.05.2024</td><td>-</td><td>18,00,000</td></tr>
+        <tr><td>25.06.2024</td><td>25,00,000</td><td>-</td></tr>
+        <tr><td>17.07.2024</td><td>-</td><td>5,00,000</td></tr>
+        <tr><td>28.10.2024</td><td>35,00,000</td><td>-</td></tr>
+        <tr><td>10.11.2024</td><td>-</td><td>38,00,000</td></tr>
+        <tr><td>12.12.2024</td><td>25,00,000</td><td>-</td></tr>
+        <tr><td>02.01.2025</td><td>-</td><td>37,00,000</td></tr>
+      </tbody>
+    </table>
+
+    <p>Mr. Ashok has been regularly filing his return of income, whereas Mr. Bablu has not filed his return of income for the last three years. No other customer of the co-operative bank withdrew more than ₹10 lakhs during the Previous Year 2024-25.</p>
+
+    <p>Mr. Kishor, a customer of Jandhan Co-operative Bank, paid ₹12 lakhs out of payments of ₹15 lakhs raised in relation to his credit card account before being declared bankrupt. During the Previous Year 2024-25, the bank's actual bad debts, including those owed by Mr. Kishor, amounted to ₹20 lakhs.</p>
+
+    <p>On 30th September, 2025, the prescribed income-tax authority issued a notice to the co-operative bank requiring it to furnish the Statement of Financial Transactions by 30th October, 2025 since it had failed to furnish the same. However, the bank furnished the statement only on 25th November, 2025.</p>
+
+    <p><strong>Based on the above case scenario, answer Questions 1 to 4.</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "dt_marmtp25_I_q1",
+      chapter_name: [
+        "Section 194N",
+        "Tax Deduction at Source"
+      ],
+      question: "The amount of income-tax required to be deducted by Jandhan Co-operative Bank under section 194N during the Previous Year 2024-25 in respect of withdrawals by Mr. Ashok and Mr. Bablu are—",
+      options: [
+        "₹25,000 and Nil, respectively.",
+        "₹10,000 and ₹3,90,000, respectively.",
+        "₹10,000 and ₹1,56,000, respectively.",
+        "₹2,10,000 and ₹1,96,000, respectively."
+      ],
+      answer: 2
+    },
+    {
+      question_id: "dt_marmtp25_I_q2",
+      chapter_name: [
+        "Statement of Financial Transactions"
+      ],
+      question: "Identify the accounts which are required to be reported in the Statement of Financial Transactions by Jandhan Co-operative Bank for the Previous Year 2024-25.",
+      options: [
+        "Only Bablu.",
+        "Kishor and Bablu.",
+        "Ashok and Bablu.",
+        "Ashok, Kishor and Bablu."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "dt_marmtp25_I_q3",
+      chapter_name: [
+        "Penalty",
+        "Section 271FA"
+      ],
+      question: "What is the amount of penalty leviable under section 271FA?",
+      options: [
+        "₹1,01,500",
+        "₹1,17,000",
+        "₹89,000",
+        "₹1,02,000"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "dt_marmtp25_I_q4",
+      chapter_name: [
+        "Business Reorganisation",
+        "Depreciation",
+        "Section 35DDA"
+      ],
+      question: "Assume that on 26.02.2025, as a result of business reorganisation, Jandhan Co-operative Bank was succeeded by Dhanvarsha Co-operative Bank. Assuming deduction allowable under section 32 for the Previous Year 2024-25 is ₹3,50,000 and the predecessor bank had incurred expenditure of ₹30,00,000 during the Previous Year 2022-23 on a voluntary retirement scheme for its employees, what is the aggregate deduction allowable to the predecessor co-operative bank under sections 32 and 35DDA for the Previous Year 2024-25?",
+      options: [
+        "₹8,61,507",
+        "₹3,17,397",
+        "₹8,61,507",
+        "₹9,17,397"
+      ],
+      answer: 2
+    }
+  ]
+},
+{
+  case_id: "dt_marmtp25_I_cs2",
+  case_chapter: [
+    "Transfer Pricing",
+    "Associated Enterprise",
+    "Arm's Length Price",
+    "Primary Adjustment",
+    "Secondary Adjustment",
+    "Penalty under Section 270A"
+  ],
+  caseText: `
+    <p><strong>Case Scenario II</strong></p>
+
+    <p>Xylo Pvt. Ltd. (Xylo) is an Indian company. Yen Inc. (Yen) is a private company incorporated in the USA and its income is not chargeable to tax in India. Both companies are promoted by Mr. Aryan, who holds 30% of the equity share capital and voting power in both Xylo and Yen.</p>
+
+    <p>The Balance Sheet of Xylo as on 31st March, 2025 is as follows:</p>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Liabilities</th>
+          <th>Amount (₹ million)</th>
+          <th>Assets</th>
+          <th>Amount (₹ million)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paid-up Capital</td>
+          <td>250</td>
+          <td>Fixed Assets</td>
+          <td>700</td>
+        </tr>
+        <tr>
+          <td>Loan from Yen Inc.</td>
+          <td>800</td>
+          <td>Investments</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>Loan from Others</td>
+          <td>620</td>
+          <td>Cash & Bank Balance</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>Current Liabilities</td>
+          <td>180</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Total</th>
+          <th>1,850</th>
+          <th>Total</th>
+          <th>1,200</th>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Additional Information:</strong></p>
+
+    <ol type="i">
+      <li>The loan was advanced by Yen Inc. to Xylo on 1st July, 2024 in Indian Rupees and carries interest @6.5% p.a. For borrowers having similar risk profile who are not associated enterprises, Yen Inc. charges interest @4% p.a.</li>
+
+      <li>Xylo has maintained the prescribed information and documentation under section 92D but has not reported the transaction as an international transaction. No adjustment under Chapter X has been made by Xylo in its return of income.</li>
+    </ol>
+
+    <p><strong>Based on the above case scenario, answer Questions 5 to 9.</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "dt_marmtp25_I_q5",
+      chapter_name: [
+        "Associated Enterprise",
+        "Section 92A"
+      ],
+      question: "Are Xylo and Yen associated enterprises? If so, why?",
+      options: [
+        "Yes, Xylo and Yen are associated enterprises because Mr. Aryan holds voting power of 30% in both the companies.",
+        "Yes, Xylo and Yen are associated enterprises as not less than 75% of Xylo's total loans have been availed from Yen.",
+        "Yes, Xylo and Yen are associated enterprises since the loan advanced by Yen to Xylo is not less than 51% of the book value of Xylo's total assets.",
+        "No, Xylo and Yen are not associated enterprises."
+      ],
+      answer: 2
+    },
+    {
+      question_id: "dt_marmtp25_I_q6",
+      chapter_name: [
+        "Transfer Pricing",
+        "Primary Adjustment"
+      ],
+      question: "What is the amount of primary adjustment required to be made to the total income of Xylo for A.Y. 2025-26?",
+      options: [
+        "₹1,16,25,000",
+        "₹58,12,500",
+        "₹1,55,00,000",
+        "₹77,50,000"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "dt_marmtp25_I_q7",
+      chapter_name: [
+        "Secondary Adjustment",
+        "Primary Adjustment"
+      ],
+      question: "If Xylo has accepted the primary adjustment made by the Assessing Officer on 31.03.2026, what should Xylo do if it does not want to treat the excess money as deemed advance?",
+      options: [
+        "The excess money available with Yen has to be repatriated to India within 90 days from the due date of filing the return.",
+        "The excess money available with Yen has to be repatriated to India within 90 days from the date of the order of the Assessing Officer.",
+        "Xylo has to pay additional income-tax @20.9664% on the excess money.",
+        "Either (b) or (c)."
+      ],
+      answer: 3
+    },
+    {
+      question_id: "dt_marmtp25_I_q8",
+      chapter_name: [
+        "Secondary Adjustment"
+      ],
+      question: "If Xylo has accepted the primary adjustment made by the Assessing Officer on 31.03.2026 and the excess money has not been repatriated into India up to 31.03.2027, what would be the consequence if Xylo has not opted to pay additional income-tax? Assume that SBI one-year MCLR is 10% on 01.04.2026 and 11% on 01.04.2027.",
+      options: [
+        "Interest of ₹16,56,563 has to be added to its total income for P.Y. 2026-27.",
+        "Interest of ₹11,60,509 has to be added to its total income for P.Y. 2026-27.",
+        "Interest of ₹15,40,313 has to be added to its total income for P.Y. 2026-27.",
+        "Interest of ₹20,53,750 has to be added to its total income for P.Y. 2026-27."
+      ],
+      answer: 2
+    },
+    {
+      question_id: "dt_marmtp25_I_q9",
+      chapter_name: [
+        "Penalty under Section 270A",
+        "Transfer Pricing"
+      ],
+      question: "Which factor is relevant in determining whether penalty under section 270A of the Income-tax Act, 1961 will be leviable in respect of the primary adjustment to Xylo's total income?",
+      options: [
+        "Since Xylo has maintained information and documents as prescribed under section 92D, that by itself is sufficient for holding that Xylo has not under-reported its income.",
+        "If the Assessing Officer/Transfer Pricing Officer makes adjustment to Xylo's total income on account of an international transaction not being in accordance with arm's length price, that by itself is sufficient to hold that Xylo has under-reported its income; consequently, penalty under section 270A is leviable.",
+        "Since Xylo has not reported the transaction as an international transaction, Xylo will be considered to have under-reported its income and penalty will be 50% of the amount of tax payable on the under-reported income.",
+        "Since Xylo has not reported the transaction as an international transaction, Xylo will be considered to have misreported its income and penalty will be 200% of the amount of tax payable on the misreported income."
+      ],
+      answer: 3
+    }
+  ]
+},
+{
+  case_id: "dt_marmtp25_I_cs3",
+  case_chapter: [
+    "Equalisation Levy",
+    "Capital Gains",
+    "Section 112A",
+    "Non-Resident Taxation",
+    "Dispute Resolution Panel"
+  ],
+  caseText: `
+    <p><strong>Case Scenario III</strong></p>
+
+    <p>Wave Inc., a corporation incorporated in Country T, specializes in the manufacturing of computer hardware components and also owns the online social networking platform <strong>Attire</strong>.</p>
+
+    <p>Smile Ltd., an Indian entity, generally imports computer hardware parts from Wave Inc. However, during the Previous Year 2024-25, Smile Ltd. did not procure any computer hardware parts from Wave Inc. Instead, on <strong>24th July, 2024</strong>, it made a payment of <strong>₹5,50,000</strong> to Wave Inc. for advertising its business on the Attire platform. However, Smile Ltd. neither deducted tax at source nor Equalisation Levy on such payment.</p>
+
+    <p>On <strong>9th November, 2024</strong>, Wave Inc. sold <strong>3,500 equity shares</strong> of XYZ Ltd., an Indian company, for <strong>₹102 per share</strong>. These shares were originally acquired on <strong>15th April, 2011</strong> at a cost of <strong>₹36.40 per share</strong>. The purchase and sale were carried out through a recognized stock exchange in India and Securities Transaction Tax (STT) was paid both at the time of purchase and sale.</p>
+
+    <p>The Fair Market Value of the shares as on <strong>31st January, 2018</strong> was <strong>₹90 per share</strong>.</p>
+
+    <p><strong>Cost Inflation Index (CII):</strong></p>
+
+    <ul>
+      <li>F.Y. 2011-12 : <strong>182</strong></li>
+      <li>F.Y. 2024-25 : <strong>363</strong></li>
+    </ul>
+
+    <p>Smile Ltd. has received a draft assessment order from the Assessing Officer under section 144C of the Income-tax Act, 1961, pursuant to adjustments made by the Transfer Pricing Officer for Assessment Year 2024-25. Smile Ltd. does not wish to file objections before the Dispute Resolution Panel and instead intends to file an appeal before the Commissioner (Appeals) against the final assessment order.</p>
+
+    <p><strong>Based on the above case scenario, answer Questions 10 to 12.</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "dt_marmtp25_I_q10",
+      chapter_name: [
+        "Equalisation Levy",
+        "Non-Resident Taxation"
+      ],
+      question: "In respect of the payment made by Smile Ltd. for advertising services provided by Wave Inc., which of the following statements is correct?",
+      options: [
+        "Equalisation Levy is not attracted and no penalty is leviable for non-deduction.",
+        "Tax is deductible at source under section 195 by Smile Ltd. and hence interest is payable for non-deduction of TDS.",
+        "Equalisation Levy of ₹33,000 is deductible by Smile Ltd. and penalty of ₹1,000 per day is attracted for non-deduction.",
+        "Equalisation Levy of ₹33,000 is deductible by Smile Ltd. and penalty of ₹33,000 is attracted for non-deduction."
+      ],
+      answer: 3
+    },
+    {
+      question_id: "dt_marmtp25_I_q11",
+      chapter_name: [
+        "Capital Gains",
+        "Section 112A",
+        "Non-Resident Taxation"
+      ],
+      question: "Compute the amount of long-term capital gains arising to Wave Inc. on transfer of listed shares of XYZ Ltd. What would be the tax treatment of such capital gains under the Income-tax Act, 1961?",
+      options: [
+        "₹42,000. The same would be taxable @12.5% under section 112A.",
+        "₹42,000. However, the said amount would not be subject to any tax.",
+        "No capital gain would arise, since cost of acquisition would be ₹102.",
+        "₹1,13,400. However, the said amount would not be subject to any tax."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "dt_marmtp25_I_q12",
+      chapter_name: [
+        "Dispute Resolution Panel",
+        "Appeals",
+        "Section 144C"
+      ],
+      question: "Which of the following statements are correct in relation to the remedies available to Smile Ltd. if it is not satisfied with the draft assessment order passed by the Assessing Officer?",
+      options: [
+        "It can file objections before the Dispute Resolution Panel against the draft assessment order.",
+        "It can file an appeal before the Commissioner (Appeals) after receiving the final assessment order.",
+        "Either (a) or (b).",
+        "Both (a) and (b)."
+      ],
+      answer: 2
+    }
+  ]
 }
+
 
   
 ];
