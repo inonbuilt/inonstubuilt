@@ -1337,6 +1337,221 @@ const mcqData = [
       answer: 2
     }
   ]
+},
+{
+  "case_id": "dt_aprmtp25_II_cs1",
+  "case_chapter": [
+    "Taxation of Business Trusts",
+    "Tax Deduction at Source (TDS)",
+    "Tax Evasion, Avoidance and Planning",
+    "Taxation of Virtual Digital Assets (VDA)"
+  ],
+  "caseText": "\n    <p>Anantam Highways Trust, a business trust, registered under SEBI (Real Estate Investment Trusts) Regulations, 2014, has generated an interest income of ₹ 10 lakh and a dividend income of ₹ 5 lakh from Zee Ltd during the P.Y. 2024-25. It also realised short-term capital gains of ₹ 4 lakh from the sale of listed shares of Indian companies on 31-10-2024, with Securities Transaction Tax (STT) paid both at the time of purchase and sale.</p>\n\n    <p>Zee Ltd. is an Indian company in which the business trust holds 100% of the shareholding. Zee Ltd. does not opt to pay tax under section 115BAA.</p>\n\n    <p>Anantam Highways Trust has accumulated the entire income except interest income which is distributed to its unitholders in March 2025. Mr. Xavier, a resident unit holder, owns 100 units, while Mr. Yatin, a non-resident unit holder, holds 500 units. The total number of units subscribed by all unit holders amounts to 5,000.</p>\n\n    <p>Mr. Yatin, the Managing Director of XYZ Pvt. Ltd., has been provided with an air-conditioner worth ₹ 75,000 at his residence in Delhi as part of his employment terms. However, the company has recorded this asset in its books of account as if it were installed in the quality control section of its factory, with the intention of classifying it as \"plant\" and claiming depreciation accordingly.</p>\n\n    <p>Mr. Xavier is engaged in cryptocurrency trading. During the financial year, he transferred cryptocurrencies for ₹ 4,20,000. The cost of acquisition for these cryptocurrencies was ₹ 70,000. In addition, he took a loan to invest in cryptocurrencies and incurred an interest expense of ₹ 20,000 on this loan.</p>\n\n    <p><strong>From the information given above, choose the most appropriate answer from MCQ 1 to MCQ 3 below:</strong></p>\n  ",
+  "questions": [
+    {
+      "question_id": "dt_aprmtp25_II_q1",
+      "chapter_name": [
+        "Taxation of Business Trusts",
+        "Tax Deduction at Source (TDS)"
+      ],
+      "question": "In respect of the component of interest income from Zee Ltd. distributed by the Anantam Highways Trust to unit-holders Xavier and Yatin -",
+      "options": [
+        "No tax is deductible by the Anantam Highways Trust, since such income is not taxable in the hands of unit holders",
+        "Tax is deductible @ 5% on ₹ 20,000 distributed to Mr. Xavier and @5.2% on ₹ 1 lakh distributed to Mr. Yatin",
+        "Tax is deductible @ 10% on ₹ 20,000 distributed to Mr. Xavier and @5.2% on ₹ 1 lakh distributed to Mr. Yatin",
+        "Tax is deductible @ 10% on ₹ 20,000 distributed to Mr. Xavier and 10.4% on ₹ 1 lakh distributed to Mr. Yatin"
+      ],
+      "answer": 2
+    },
+    {
+      "question_id": "dt_aprmtp25_II_q2",
+      "chapter_name": [
+        "Tax Evasion, Avoidance and Planning"
+      ],
+      "question": "Recording of the air-conditioner provided by XYZ Pvt. Ltd. to Mr. Yatin in its books of account to claim depreciation falls under:",
+      "options": [
+        "Tax Planning",
+        "Tax Management",
+        "Tax Evasion",
+        "Tax Avoidance"
+      ],
+      "answer": 2
+    },
+    {
+      "question_id": "dt_aprmtp25_II_q3",
+      "chapter_name": [
+        "Taxation of Virtual Digital Assets (VDA)",
+        "Capital Gains"
+      ],
+      "question": "Which of the following statements is correct in respect of cryptocurrency?",
+      "options": [
+        "Mr. Xavier can claim deduction for both, cost of acquisition and interest expense while computing income from sale of cryptocurrency.",
+        "Only the cost of acquisition is allowed as a deduction to Mr. Xavier. Interest expense is not deductible.",
+        "Neither cost of acquisition nor interest expense are allowed disallowed while computing income from sale of cryptocurrency.",
+        "Income from sale of cryptocurrency is exempt from tax in India."
+      ],
+      "answer": 1
+    }
+  ]
+},
+{
+  "case_id": "dt_aprmtp25_II_cs2",
+  "case_chapter": [
+    "Tax Deduction at Source (TDS)",
+    "Section 194-O",
+    "Section 194J",
+    "Section 194M",
+    "Equalisation Levy",
+    "Computation of Total Income"
+  ],
+  "caseText": "\n    <p>Mr. Badri, a professional interior decorator, also conducts online lectures on interior decoration through the e-commerce platform Pathshala. The details of his earnings from Pathshala are as follows:</p>\n\n    <table border=\"1\">\n      <tr>\n        <th>Date of Credit of services to account of Mr. Badri</th>\n        <th>Date of Payment to Mr. Badri</th>\n        <th>Value of Services Provided (₹)</th>\n      </tr>\n      <tr>\n        <td>31.05.2024</td>\n        <td>10.06.2024</td>\n        <td>2,00,000</td>\n      </tr>\n      <tr>\n        <td>31.10.2024</td>\n        <td>10.10.2024</td>\n        <td>1,50,000</td>\n      </tr>\n      <tr>\n        <td>31.03.2025</td>\n        <td>10.04.2025</td>\n        <td>1,40,000</td>\n      </tr>\n    </table>\n\n    <p>In addition to the abovementioned income, on 18.02.2025, Mr. Badri received ₹ 20,000 directly from a student rather than via the Pathshala payment system. Mr. Badri has provided PAN to Pathshala.</p>\n\n    <p>Mr. Badri gave Mr. Nitin in Mumbai, who had a business turnover of ₹ 1.2 crores in P.Y. 2023–2024, interior decorating services for his office and residential spaces on May 5, 2024, for a total of ₹ 40,000 and ₹ 60,000, respectively. For billing, Mr. Badri has given Mr. Nitin his PAN information.</p>\n\n    <p>The entire revenue received by Mr. Badri from his interior design business in the P.Y. 2024–2025 from clients in India, including Mr. Nitin, is around ₹ 40 lakhs (excluding fees for online lectures).</p>\n\n    <p>Further, ₹ 1,10,000 is payable by Mr. Badri to Phoenix LLC – a social networking website having no office in India and ₹ 1,05,000 to DaVita Inc., USA, for giving online advertisements for the purpose of attracting foreign clients. DaVita Inc., USA, has an office in India for providing online advertisement services. Fortunately, Mr. Badri got one client based in Country A (with which India does not have a DTAA) from whom he received ₹ 3,50,000 as net income after deduction of ₹ 50,000 as foreign tax.</p>\n\n    <p>According to the books of account maintained by Mr. Badri under section 44AA, his profits amounts to ₹ 24 lakhs. However, his books of account have not been audited.</p>\n\n    <p><strong>From the information given above, choose the most appropriate answer from MCQ 4 to MCQ 8 below:</strong></p>\n  ",
+  "questions": [
+    {
+      "question_id": "dt_aprmtp25_II_q4",
+      "chapter_name": [
+        "Tax Deduction at Source (TDS)",
+        "Section 194-O"
+      ],
+      "question": "Is Pathshala required to deduct tax at source on amount received/receivable by Mr. Badri? If so, what is the amount of tax to be deducted?",
+      "options": [
+        "No tax is required to be deducted at source",
+        "Yes; ₹ 5,100",
+        "Yes; ₹ 25,500",
+        "Yes; ₹ 510"
+      ],
+      "answer": 3
+    },
+    {
+      "question_id": "dt_aprmtp25_II_q5",
+      "chapter_name": [
+        "Tax Deduction at Source (TDS)",
+        "Section 194J"
+      ],
+      "question": "Is Mr. Nitin required to deduct tax at source under section 194J? If so, what is the amount of tax to be deducted?",
+      "options": [
+        "No tax is required to be deducted at source u/s 194J",
+        "Yes; ₹ 1,000",
+        "Yes; ₹ 4,000",
+        "Yes; ₹ 10,000"
+      ],
+      "answer": 2
+    },
+    {
+      "question_id": "dt_aprmtp25_II_q6",
+      "chapter_name": [
+        "Tax Deduction at Source (TDS)",
+        "Section 194M"
+      ],
+      "question": "Is Mr. Nitin required to deduct tax at source under section 194M? If so, what is the amount of tax to be deducted?",
+      "options": [
+        "No tax is required to be deducted at source u/s 194M",
+        "Yes; ₹ 600",
+        "Yes; ₹ 1,200",
+        "Yes; ₹ 3,000"
+      ],
+      "answer": 0
+    },
+    {
+      "question_id": "dt_aprmtp25_II_q7",
+      "chapter_name": [
+        "Equalisation Levy"
+      ],
+      "question": "Is Mr. Badri required to deduct equalisation levy on the amounts payable to Phoenix LLC or DaVita Inc.? If so, what is the amount of levy to be deducted?",
+      "options": [
+        "No; there is no requirement to deduct equalisation levy from the amount payable to either Phoenix LLC or DaVita Inc.",
+        "Yes; ₹ 6,600 to be deducted on the amount payable to Phoenix LLC; No deduction is, however, required on the amount payable to DaVita Inc.",
+        "Yes; ₹ 6,300 to be deducted on amount payable to DaVita Inc; No deduction is required on the amount payable to Phoenix LLC.",
+        "Yes; ₹ 6,600 to deducted on the amount payable to Phoenix LLC and ₹ 6,300 to be deducted on the amount payable to DaVita Inc."
+      ],
+      "answer": 1
+    },
+    {
+      "question_id": "dt_aprmtp25_II_q8",
+      "chapter_name": [
+        "Computation of Total Income",
+        "Tax Liability"
+      ],
+      "question": "What is Mr. Badri’s gross income-tax liability for the P.Y.2024-25, assuming that he has opted out of the default tax regime u/s 115BAC?",
+      "options": [
+        "₹ 5,70,960",
+        "₹ 4,91,400",
+        "₹ 5,08,560",
+        "₹ 5,53,800"
+      ],
+      "answer": 0
+    }
+  ]
+},
+{
+  "case_id": "dt_aprmtp25_II_cs3",
+  "case_chapter": [
+    "Non-Resident Taxation",
+    "Double Taxation Avoidance Agreement (DTAA)",
+    "Tax Deduction at Source (TDS)",
+    "Return of Income"
+  ],
+  "caseText": "\n    <p>Fiserv Inc., a company headquartered in Country F, operates an online platform that provides end-user computer software under an End-User License Agreement (EULA). In the Financial Year 2024-25, Turmeric Ltd., an Indian company, entered into a contract for ₹ 6.7 crore with Fiserv Inc., which is approved by the Central Government.</p>\n\n    <p>Under the EULA, Fiserv Inc. grants Turmeric Ltd. a limited, non-exclusive license to install, use, access, display, and run the click-wrap web-based computer software (CWCS) on a single local hard disk or another permanent storage medium of one computer. However, Turmeric Ltd. is restricted from making the CWCS available over a network where it could be used by multiple computers at the same time.</p>\n\n    <p>Fiserv Inc. reserves all rights not explicitly granted to Turmeric Ltd. under the EULA. The CWCS is protected by copyright and other intellectual property laws and treaties. Fiserv Inc. owns the title, copyright and other intellectual property rights in the CWCS. The CWCS is licenced (only for use and not any other purpose), not sold.</p>\n\n    <p>Fiserv Inc. does not have any offices outside Country F.</p>\n\n    <p><strong>Extract of Article 12 of India-Country F DTAA</strong></p>\n    <p><strong>Royalties and Fees for Technical Services</strong></p>\n    <ol>\n      <li>Royalties and fees for technical services arising in a Contracting State and paid to a resident of the other Contracting State may be taxed in that other State.</li>\n      <li>However, such royalties and fees for technical services may also be taxed in the Contracting State in which they arise and according to the laws of that Contracting State, but if the recipient is the beneficial owner of the royalties or fees for technical services, the tax so charged shall not exceed 10 per cent.</li>\n      <li>The term \"royalties\" as used in this Article means payments of any kind received as a consideration for the use of, or the right to use :<br>\n      (a) any copyright of a literary, artistic or scientific work, including cinematograph film or films or tapes used for radio or television broadcasting, any patent, trade mark, design or model, plan, secret formula or process, or for information concerning industrial, commercial or scientific experience, including gains derived from the alienation of any such right, property or information</li>\n    </ol>\n\n    <p><strong>From the information given above, choose the most appropriate answer from MCQ 9 to MCQ 12 below:</strong></p>\n  ",
+  "questions": [
+    {
+      "question_id": "dt_aprmtp25_II_q9",
+      "chapter_name": [
+        "Tax Deduction at Source (TDS)",
+        "Double Taxation Avoidance Agreement (DTAA)"
+      ],
+      "question": "Is Turmeric Ltd., India required to deduct tax at source on the payment made to Fiserv Inc.? If yes, what amount of tax is required to be deducted at source on the said payment?",
+      "options": [
+        "Yes, Turmeric Ltd. is required to deduct tax at source of ₹ 1,42,14,720.",
+        "No, Turmeric Ltd. is not required to deduct tax at source.",
+        "Yes, Turmeric Ltd. is required to deduct tax at source of ₹ 2,84,29,440.",
+        "Yes, Turmeric Ltd. is required to deduct tax at source of ₹ 67,00,000"
+      ],
+      "answer": 1
+    },
+    {
+      "question_id": "dt_aprmtp25_II_q10",
+      "chapter_name": [
+        "Tax Deduction at Source (TDS)",
+        "Non-Resident Taxation"
+      ],
+      "question": "Would Turmeric Ltd., India be required to deduct tax at source on the payment made to Fiserv Inc, if there was no DTAA between India and Country F? If so, what amount of tax is required to be deducted at source on the said payment?",
+      "options": [
+        "Yes, Turmeric Ltd. is required to deduct tax at source of ₹ 1,42,14,720.",
+        "No, Turmeric Ltd. is not required to deduct tax at source, since such sum is not taxable in the hands of Fiserv Inc.",
+        "Yes, Turmeric Ltd. is required to deduct tax at source of ₹ 2,84,29,440.",
+        "Yes, Turmeric Ltd. is required to deduct tax at source of ₹ 71,07,360"
+      ],
+      "answer": 0
+    },
+    {
+      "question_id": "dt_aprmtp25_II_q11",
+      "chapter_name": [
+        "Non-Resident Taxation"
+      ],
+      "question": "What would be the tax liability of Fiserv Inc. if there is no DTAA between India and Country F, and it incurred ₹ 20,00,000 for providing end-user software to Turmeric Ltd.?",
+      "options": [
+        "₹ 1,42,14,720.",
+        "Nil",
+        "₹ 2,84,29,440.",
+        "₹ 1,37,90,400"
+      ],
+      "answer": 0
+    },
+    {
+      "question_id": "dt_aprmtp25_II_q12",
+      "chapter_name": [
+        "Return of Income",
+        "Section 115A"
+      ],
+      "question": "Is Fiserv Inc. required to file return of income for the A.Y. 2025-26, if there is no DTAA between India and Country F?",
+      "options": [
+        "Yes, required to file return of income, since the said income is chargeable to tax in India.",
+        "No, not required to file return of income, since the said income is not chargeable to tax in India.",
+        "Yes, required to file return of income, even if the said income is not chargeable to tax in India as information of income arising from India is to be disclosed in return.",
+        "No, not required to file return of income, if Turmeric Ltd. deducted tax at source on such income."
+      ],
+      "answer": 3
+    }
+  ]
 }
 
 
