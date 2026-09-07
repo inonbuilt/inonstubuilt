@@ -3340,7 +3340,7 @@ const AICaseStudies = [
     case_id: "AI_c23_cs_001",
     difficulty: "medium",
     case_topic: ["Lean System", "Seven Wastes", "Value Chain", "Waste Reduction"],
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     caseText: `
     <p><b>Arvind Precision Components Ltd.</b> manufactures precision brackets
     used by automobile manufacturers. The company has traditionally followed a
@@ -3412,7 +3412,7 @@ const AICaseStudies = [
     case_id: "AI_c23_cs_002",
     difficulty: "medium",
     case_topic: ["JIT", "Pull System", "Kanban", "Supplier Management"],
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     caseText: `
     <p><b>Vega Auto Systems Ltd.</b> manufactures electrical assemblies for
     commercial vehicles. Its existing purchasing system requires the company
@@ -3484,7 +3484,7 @@ const AICaseStudies = [
     case_id: "AI_c23_cs_003",
     difficulty: "medium",
     case_topic: ["Kaizen Costing", "Continuous Improvement", "Cost Reduction"],
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     caseText: `
     <p><b>Sunrise Packaging Ltd.</b> produces specialised cartons for food
     manufacturers. The company currently uses standard costing. At the
@@ -3557,7 +3557,7 @@ const AICaseStudies = [
     case_id: "AI_c23_cs_004",
     difficulty: "medium",
     case_topic: ["5S", "Sort", "Set in Order", "Shine", "Standardise", "Sustain"],
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     caseText: `
     <p><b>Veritas Consulting LLP</b> has grown rapidly and now maintains a
     substantial quantity of physical and electronic documents. Employees often
@@ -3626,7 +3626,7 @@ const AICaseStudies = [
     case_id: "AI_c23_cs_005",
     difficulty: "medium",
     case_topic: ["TPM", "OEE", "Six Big Losses", "Maintenance"],
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     caseText: `
     <p><b>Metro Components Ltd.</b> operates an automated machine for producing
     high-volume metal components. Management recently noticed that production
@@ -3699,7 +3699,7 @@ const AICaseStudies = [
     case_id: "AI_c23_cs_006",
     difficulty: "hard",
     case_topic: ["JIT", "Takt Time", "Process Cycle Efficiency", "Pull System", "Supplier Risk"],
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     caseText: `
     <p><b>Omega Industrial Motors Ltd.</b> manufactures specialised electric
     motors for industrial customers. The company currently follows a
@@ -3776,7 +3776,7 @@ const AICaseStudies = [
     case_id: "AI_c23_cs_007",
     difficulty: "hard",
     case_topic: ["Back-flushing", "JIT", "Inventory Accuracy", "Scrap Reporting", "Lot Tracing"],
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     caseText: `
     <p><b>Zenith Electronics Ltd.</b> has implemented a JIT production system for
     a high-volume electronic product. Because the number of daily component
@@ -3852,7 +3852,7 @@ const AICaseStudies = [
     case_id: "AI_c23_cs_008",
     difficulty: "hard",
     case_topic: ["Six Sigma", "DMAIC", "DMADV", "Customer Requirements", "Data Analysis"],
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     caseText: `
     <p><b>NovaBank Digital Services</b> has been receiving complaints about the
     time required to complete certain existing loan-processing activities.
@@ -3927,7 +3927,7 @@ const AICaseStudies = [
     case_id: "AI_c23_cs_009",
     difficulty: "hard",
     case_topic: ["Cellular Manufacturing", "One-Piece Flow", "Production Flow Analysis", "Machine-Part Grouping"],
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     caseText: `
     <p><b>Trident Engineering Works</b> manufactures several families of
     precision components. Its current factory layout is organised by machine
@@ -4003,7 +4003,7 @@ const AICaseStudies = [
     case_id: "AI_c23_cs_010",
     difficulty: "hard",
     case_topic: ["Lean Six Sigma", "Process Innovation", "DMAIC", "DMADV", "Lean System"],
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     caseText: `
     <p><b>FutureMed Instruments Ltd.</b> manufactures hospital diagnostic
     equipment. The company has historically focused on reducing production
@@ -4085,7 +4085,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_001",
     difficulty: "medium",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["Lean System", "Seven Wastes", "5S", "Kaizen", "Continuous Improvement"],
     caseText: `<p>Nova Precision Components Limited manufactures precision brackets and mounting assemblies used by automobile manufacturers. For several years, the company had maintained a relatively stable production volume and relied on large production batches. The production manager believed that running machines for long periods without changing settings was efficient because setup time could be avoided. Accordingly, the company frequently produced substantially more components than were immediately required by the assembly department.</p>
 
@@ -4141,7 +4141,7 @@ const AICaseStudies = [
 {
   case_id: "AI_c23_cs_002",
   difficulty: "medium",
-  case_chapter: "Lean System and Innovation",
+  case_chapter: "Chapter3",
   case_topic: ["JIT", "Kanban", "Cellular Manufacturing", "Multi-skilled Workforce"],
   caseText: `<p>Orbit Electrical Systems Limited manufactures control modules used in industrial equipment. The company traditionally operated under a push production system. The production planning department prepared monthly schedules, and each department produced components according to those schedules even when the downstream department had not yet consumed its existing stock. As a result, large quantities of work-in-progress accumulated between machining, assembly and testing.</p>
 
@@ -4197,7 +4197,7 @@ const AICaseStudies = [
 {
   case_id: "AI_c23_cs_003",
   difficulty: "medium",
-  case_chapter: "Lean System and Innovation",
+  case_chapter: "Chapter3",
   case_topic: ["Kaizen Costing", "Standard Costing", "Target Setting", "Employee Participation"],
   caseText: `<p>Zenith Packaging Limited manufactures specialised packaging materials for pharmaceutical companies. The company had historically relied on standard costing. At the beginning of each six-month period, the finance department prepared budgets and operating standards based on expected material prices, labour rates and production volumes. Once approved by the Board, these standards remained largely unchanged until the next budgeting cycle. Monthly variance reports were circulated to senior management showing differences between actual costs and predetermined standards.</p>
 
@@ -4253,7 +4253,7 @@ const AICaseStudies = [
 {
   case_id: "AI_c23_cs_004",
   difficulty: "medium",
-  case_chapter: "Lean System and Innovation",
+  case_chapter: "Chapter3",
   case_topic: ["TPM", "OEE", "Six Big Losses", "Maintenance"],
   caseText: `<p>Metro Components operates a machining centre used continuously for producing precision shafts. Management had historically evaluated the machine primarily on the basis of the number of units produced per shift. When production fell below the expected quantity, the production manager generally instructed operators to increase machine speed during the remaining available time.</p>
 
@@ -4309,7 +4309,7 @@ const AICaseStudies = [
 {
   case_id: "AI_c23_cs_005",
   difficulty: "medium",
-  case_chapter: "Lean System and Innovation",
+  case_chapter: "Chapter3",
   case_topic: ["Six Sigma", "DMAIC", "Customer Satisfaction", "Process Improvement"],
   caseText: `<p>PrimeServe Bank had experienced a growing number of customer complaints concerning delays in processing loan applications. Customers were not necessarily complaining about the interest rate or product design. Instead, they were frustrated because applications frequently moved back and forth between departments, documents were entered incorrectly and customers were asked to provide information that they had already submitted.</p>
 
@@ -4369,7 +4369,7 @@ const AICaseStudies = [
 {
   case_id: "AI_c23_cs_006",
   difficulty: "hard",
-  case_chapter: "Lean System and Innovation",
+  case_chapter: "Chapter3",
   case_topic: ["JIT", "Backflush Accounting", "Kanban", "Supply Chain Risk", "Management Accounting"],
   caseText: `<p>Vertex Mobility Systems manufactures electronic control units for a major automobile manufacturer. The company had historically maintained substantial raw-material inventory because purchasing managers believed that inventory protected production against supplier delays. Materials were received at a central warehouse, inspected, recorded in the stores ledger and subsequently issued to production through material requisitions.</p>
 
@@ -4427,7 +4427,7 @@ const AICaseStudies = [
 {
   case_id: "AI_c23_cs_007",
   difficulty: "hard",
-  case_chapter: "Lean System and Innovation",
+  case_chapter: "Chapter3",
   case_topic: ["TPM", "OEE", "Six Big Losses", "Performance Analysis", "Quality"],
   caseText: `<p>Alpha Industrial Products operates a production line for high-volume precision components. Senior management had been pleased with the line because it was rarely completely stopped. However, the quality department increasingly reported rejected components, while production supervisors complained that the machine frequently slowed down or stopped for a few seconds at a time. These minor interruptions were often not recorded because each individual interruption appeared insignificant.</p>
 
@@ -4485,7 +4485,7 @@ const AICaseStudies = [
 {
   case_id: "AI_c23_cs_008",
   difficulty: "hard",
-  case_chapter: "Lean System and Innovation",
+  case_chapter: "Chapter3",
   case_topic: ["Cellular Manufacturing", "Production Flow Analysis", "Machine-Part Families", "Flexibility"],
   caseText: `<p>Beta Engineering manufactures a wide range of industrial components. Its existing factory was organised according to functional departments. All drilling machines were located in one area, all milling machines in another and all grinding machines in a third. Although the arrangement allowed machines of the same type to be supervised together, components travelled long distances between departments.</p>
 
@@ -4543,7 +4543,7 @@ const AICaseStudies = [
 {
   case_id: "AI_c23_cs_009",
   difficulty: "hard",
-  case_chapter: "Lean System and Innovation",
+  case_chapter: "Chapter3",
   case_topic: ["Six Sigma", "DMAIC", "DMADV", "Process Innovation", "Lean Six Sigma"],
   caseText: `<p>NovaBank had been using an online loan-processing platform for several years. Customers complained that the existing process was slow, that information had to be entered repeatedly and that applications sometimes moved between departments without clear ownership. Management initially assumed that the solution would require developing an entirely new platform.</p>
 
@@ -4601,7 +4601,7 @@ const AICaseStudies = [
 {
   case_id: "AI_c23_cs_010",
   difficulty: "hard",
-  case_chapter: "Lean System and Innovation",
+  case_chapter: "Chapter3",
   case_topic: ["Process Innovation", "BPR", "Lean", "Six Sigma", "Innovation Strategy"],
   caseText: `<p>Omega Appliances manufactures household water-purification systems. Its traditional assembly process consisted of a continuous production line where components were supplied to workers stationed at different points. Over several years, the company had introduced a number of small changes to improve the existing line. Workers had suggested rearranging tools, changing work sequences and eliminating unnecessary movement. These improvements reduced assembly time gradually, but the basic production architecture remained unchanged.</p>
 
@@ -4660,7 +4660,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_011",
     difficulty: "medium",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["Lean System", "Seven Wastes", "Value Chain", "Customer Value", "Continuous Improvement"],
     caseText: `<p>Ardent Auto Components Limited manufactures braking-system components for automobile manufacturers. The company had been operating for more than ten years and had developed a production system based largely on departmental efficiency. The machining department was evaluated on machine utilisation, the stores department on availability of materials, the inspection department on the number of inspections completed, and the dispatch department on the number of shipments processed. Each department generally attempted to maximise its own performance without considering the effect of its activities on the overall production flow.</p>
 
@@ -4718,7 +4718,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_012",
     difficulty: "medium",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["5S", "Workplace Organisation", "Visual Management", "PDCA", "Office Lean"],
     caseText: `<p>Meridian Tax Services is a large professional services organisation with several teams handling tax filings, client documentation and regulatory correspondence. Although the organisation did not operate a manufacturing plant, management believed that the principles of lean workplace organisation could also improve administrative processes.</p>
 
@@ -4776,7 +4776,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_013",
     difficulty: "medium",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["JIT", "Kanban", "Pull System", "Supplier Management", "Production Flow"],
     caseText: `<p>Falcon Medical Devices manufactures disposable medical assemblies. Its previous production system required each department to follow a weekly production schedule issued by the central planning department. The schedule was prepared several days in advance based on forecasts. Each department attempted to complete its assigned production quantity regardless of whether the following department was ready to receive the output.</p>
 
@@ -4834,7 +4834,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_014",
     difficulty: "medium",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["Kaizen Costing", "Cost Reduction", "Value Analysis", "Employee Participation"],
     caseText: `<p>Crystal Packaging Works produces specialised cartons for consumer-product companies. For several years, the company used a standard costing system under which annual standards were established by the finance department. Production managers were expected to operate within those standards and monthly variance reports were submitted to senior management.</p>
 
@@ -4892,7 +4892,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_015",
     difficulty: "medium",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["Process Innovation", "Lean", "BPR", "Production Process"],
     caseText: `<p>Vertex Furniture Systems manufactures modular office furniture. The company had traditionally assembled products using a fixed production line. Over the years, supervisors introduced many small changes to reduce unnecessary movement. Frequently used tools were moved closer to workers, work instructions were improved and some repetitive activities were automated.</p>
 
@@ -4954,7 +4954,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_016",
     difficulty: "hard",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["JIT", "Backflush Accounting", "Kanban", "Supplier Risk", "Inventory", "Quality"],
     caseText: `<p>Orion Electronics manufactures control boards for industrial equipment. For many years, Orion maintained substantial stocks of electronic components because purchasing management believed that uninterrupted production was more important than inventory cost. Materials were delivered to a central warehouse, counted by receiving personnel, inspected and then issued to production using detailed material requisitions.</p>
 
@@ -5014,7 +5014,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_017",
     difficulty: "hard",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["TPM", "OEE", "Availability", "Performance", "Quality", "Six Big Losses"],
     caseText: `<p>ZenTech Manufacturing operates a high-speed packaging machine for 12 hours during a production shift. The machine is scheduled for production for 665 minutes after deducting planned breaks and routine cleaning. During the shift, the machine experiences 36 minutes of unplanned downtime. Operators report that the machine frequently runs below its ideal speed because increasing speed causes minor jams. In addition, quality inspection identifies a number of defective packages at the end of the shift.</p>
 
@@ -5072,7 +5072,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_018",
     difficulty: "hard",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["Cellular Manufacturing", "Production Flow Analysis", "Clustering", "Machine-Part Families", "Flexibility"],
     caseText: `<p>Global Machining Industries produces more than 40 varieties of industrial components. Its factory was originally designed around functional departments. Drilling machines were grouped together, followed by milling, turning and grinding departments. The arrangement simplified departmental supervision, but products frequently travelled long distances between machines.</p>
 
@@ -5130,7 +5130,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_019",
     difficulty: "hard",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["Six Sigma", "DMAIC", "DMADV", "Lean Six Sigma", "Process Innovation", "Customer Satisfaction"],
     caseText: `<p>Horizon Financial Services operated a customer-support process that had been developed several years earlier. Customers could contact the company by telephone or online forms, after which service requests were transferred among customer-service representatives, specialist teams and back-office departments. Over time, additional approval steps had been added whenever a new problem occurred.</p>
 
@@ -5189,7 +5189,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_020",
     difficulty: "medium",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["Lean System", "Seven Wastes", "Customer Value", "Value Chain", "Waste Reduction"],
     caseText: `<p>Riviera Industrial Pumps Limited manufactures pumps used by chemical processing companies. The company had historically measured the performance of its factory largely through machine utilisation and departmental output. The machining department was rewarded when its machines operated for a high percentage of available time, while the assembly department was expected to achieve its monthly production target. The stores department maintained substantial quantities of commonly used components because managers believed that availability of materials was essential for maintaining production.</p>
 
@@ -5247,7 +5247,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_021",
     difficulty: "medium",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["5S", "Sort", "Set in Order", "Shine", "Standardize", "Sustain"],
     caseText: `<p>Eastern Legal Services maintained a large document-processing centre handling contracts, regulatory documents and client correspondence. Although the organisation had recently introduced digital document management, employees continued to keep substantial numbers of physical files. Senior management noticed that employees frequently spent several minutes searching for documents and sometimes worked from outdated versions.</p>
 
@@ -5305,7 +5305,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_022",
     difficulty: "medium",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["JIT", "Kanban", "Pull Production", "Cellular Manufacturing", "Multi-skilled Workers"],
     caseText: `<p>PrimeTech Components manufactures small electrical assemblies used in industrial control panels. Production had traditionally been organised around large weekly batches. The planning department issued production orders at the beginning of each week, and each department attempted to complete its scheduled quantity regardless of whether the next department needed the output immediately.</p>
 
@@ -5363,7 +5363,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_023",
     difficulty: "medium",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["Kaizen Costing", "Continuous Improvement", "Cost Reduction", "Standard Costing"],
     caseText: `<p>Sunrise Consumer Products manufactures plastic containers for food-processing companies. The company had traditionally relied on annual standard costing. At the beginning of each financial year, the finance department established standard material usage, labour requirements and overhead rates. Production managers were evaluated partly on whether actual costs remained within the established standards.</p>
 
@@ -5421,7 +5421,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_024",
     difficulty: "medium",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["Six Sigma", "DMAIC", "Customer Feedback", "Defect Reduction"],
     caseText: `<p>ClearPath Insurance Services had operated a claims-processing system for several years. Customers were increasingly complaining that simple claims took too long to settle. Some customers received requests for documents that they had already submitted, while others were asked to correct information that had been entered incorrectly by employees.</p>
 
@@ -5481,7 +5481,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_025",
     difficulty: "hard",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["JIT", "Backflush Accounting", "Inventory", "Supplier Management", "Quality", "Management Accounting"],
     caseText: `<p>Trident Electronics manufactures sophisticated control units used by several industrial equipment manufacturers. Historically, Trident maintained large quantities of raw materials because its management believed that a high level of inventory reduced the possibility of production stoppages. Every delivery entered a central receiving area, where employees counted the materials, completed receiving documentation and sent samples to the quality department before the materials were transferred to the warehouse.</p>
 
@@ -5541,7 +5541,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_026",
     difficulty: "hard",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["TPM", "OEE", "Six Big Losses", "Autonomous Maintenance", "Focused Improvement"],
     caseText: `<p>Vantage Packaging operates a high-speed filling machine used to package liquid products. The machine was considered one of the most important assets in the factory because a large proportion of total production passed through it. For several years, management evaluated the machine primarily on the number of units produced per shift. The production supervisor believed that the machine was performing well because it rarely experienced long complete breakdowns.</p>
 
@@ -5599,7 +5599,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_027",
     difficulty: "hard",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["Cellular Manufacturing", "Production Flow Analysis", "Rank Order Clustering", "Machine-Part Families", "Bottlenecks", "Flexibility"],
     caseText: `<p>Atlas Precision Engineering manufactures a large variety of components for industrial machinery. Its factory was originally organised using a functional layout. Turning machines were grouped together, followed by milling, drilling, grinding and inspection areas. This arrangement allowed technical specialists to supervise similar machines, but individual products often travelled long distances between departments.</p>
 
@@ -5659,7 +5659,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_028",
     difficulty: "hard",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["Six Sigma", "DMAIC", "DMADV", "Lean Six Sigma", "Customer Satisfaction", "Process Innovation"],
     caseText: `<p>Summit Digital Bank had operated a digital loan-processing platform for several years. The platform allowed customers to submit applications online, after which applications were reviewed by customer-service teams, credit specialists and compliance personnel. Over time, additional checks and approval steps had been added whenever problems occurred. Management believed that these additional controls had improved risk management, but customers increasingly complained about the time required to obtain decisions.</p>
 
@@ -5721,7 +5721,7 @@ const AICaseStudies = [
   {
     case_id: "AI_c23_cs_029",
     difficulty: "hard",
-    case_chapter: "Lean System and Innovation",
+    case_chapter: "Chapter3",
     case_topic: ["Process Innovation", "BPR", "Kaizen", "Lean", "Six Sigma", "Customer Requirements"],
     caseText: `<p>NovaHome Appliances manufactures domestic water-purification equipment. For many years, the company used a conventional assembly line designed for high-volume production of a limited number of standard models. Products moved sequentially through specialised workstations. Each station performed a defined activity before passing the partially completed product to the next station.</p>
 
@@ -5784,7 +5784,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_c04_cs_001",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: ["Cost Control", "Cost Reduction", "Targets", "Variance Analysis", "Management Action"],
     caseText: `<p>Arvind Precision Components Limited manufactures specialised metal components for automobile manufacturers. For several years, the company had operated a conventional cost control system. At the beginning of every financial year, the finance department prepared budgets for each cost centre after discussions with departmental managers. Each cost centre was assigned to a specific manager, who was responsible for controlling the costs incurred within that area.</p>
 
@@ -5842,7 +5842,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_c04_cs_002",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: ["Target Costing", "Market Price", "Target Profit", "Target Cost", "Competitive Pricing"],
     caseText: `<p>Nova Home Appliances was considering launching a compact air purifier in a highly competitive market. The marketing department conducted customer research and found that customers were willing to pay approximately ₹8,000 for a product having the required filtration performance, low noise level and compact design. Competitors were selling similar products between ₹7,700 and ₹8,300.</p>
 
@@ -5901,7 +5901,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_c04_cs_003",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: ["Value Analysis", "Value Engineering", "Existing Product", "New Product", "Cost Reduction"],
     caseText: `<p>Meera Office Systems manufactures office chairs and workstations. One of its five-year-old chair models had once been a market leader but had recently lost market share. Competitors were selling chairs with similar comfort and durability at significantly lower prices.</p>
 
@@ -5959,7 +5959,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_c04_cs_004",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: ["Life Cycle Costing", "Product Life Cycle", "Introduction", "Growth", "Maturity", "Decline"],
     caseText: `<p>Vertex Mobility launched a compact electric scooter called VoltX. During the first year, sales were relatively low and the company spent heavily on advertising, dealer incentives and customer education. The product had few direct competitors at the time, but management knew that customers were still unfamiliar with the technology.</p>
 
@@ -6015,7 +6015,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_c04_cs_005",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: ["Theory of Constraints", "Bottleneck", "Throughput", "Non-bottleneck", "Production Scheduling"],
     caseText: `<p>Orion Engineering manufactures three components that must pass through a common heat-treatment machine before final assembly. The machine can process only 100 units per hour. Other machining centres have sufficient capacity to produce 140 units per hour.</p>
 
@@ -6073,7 +6073,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_c04_cs_006",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: ["Target Costing", "Value Engineering", "Life Cycle Costing", "Profitability", "Learning Curve"],
     caseText: `<p>Zenith Kitchen Technologies planned to launch a premium compact cooking appliance called ChefMate. The marketing team conducted extensive research before the design was finalised. Customers indicated that they were willing to pay ₹12,000 for a product offering fast heating, low energy consumption, compact storage and a reliable warranty. Competitors were expected to price comparable products close to ₹12,000, and management believed that setting a higher price would substantially reduce expected sales volume.</p>
 
@@ -6133,7 +6133,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_c04_cs_007",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: ["Environmental Management Accounting", "Physical Information", "Monetary Information", "Input-Output Analysis", "Flow Cost Accounting"],
     caseText: `<p>GreenChem Pharmaceuticals operates a large manufacturing facility producing active pharmaceutical ingredients. The company had historically treated environmental expenditure as part of general factory overhead. Management knew that it incurred waste disposal, water treatment, energy and compliance costs, but these costs were not separately identified for individual products.</p>
 
@@ -6193,7 +6193,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_c04_cs_008",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: ["Throughput Accounting", "Theory of Constraints", "Product Mix", "Bottleneck Minutes", "TA Ratio"],
     caseText: `<p>Falcon Industrial Products manufactures three products—A, B and C. All three products use the same specialised testing facility, which has limited capacity. Management had traditionally ranked products using their contribution per unit. Product A generated ₹42 contribution per unit, Product B generated ₹45 and Product C generated ₹50. Based solely on contribution per unit, the production manager preferred Product C.</p>
 
@@ -6252,7 +6252,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_c04_cs_009",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: ["Environmental Costs", "Prevention", "Appraisal", "Internal Failure", "External Failure", "EMA"],
     caseText: `<p>Coastal Chemicals operates a chemical processing plant near a major industrial area. The company had recently come under pressure from regulators and local communities because of concerns about emissions and waste disposal. Senior management decided to classify environmental expenditure more systematically so that it could identify where preventive action could reduce future environmental consequences.</p>
 
@@ -6310,7 +6310,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_c04_cs_010",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: ["Life Cycle Costing", "Target Costing", "Product Design", "Environmental Costs", "End of Life", "Strategic Cost Management"],
     caseText: `<p>EcoRide Motors was developing a new electric delivery vehicle for urban logistics companies. Management expected the vehicle to have a six-year commercial life. Before production began, the company incurred significant expenditure on research, engineering design, prototype testing and regulatory certification. The marketing team estimated that fleet operators would be willing to pay approximately ₹18 lakh per vehicle, provided the vehicle achieved the required range, reliability and safety standards.</p>
 
@@ -6374,7 +6374,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_001",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Target Costing",
       "Cost Reduction",
@@ -6455,7 +6455,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_002",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Life Cycle Costing",
       "Product Life Cycle",
@@ -6525,7 +6525,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_003",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Theory of Constraints",
       "Bottleneck",
@@ -6592,7 +6592,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_004",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Environmental Management Accounting",
       "Input-Output Analysis",
@@ -6658,7 +6658,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_005",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Value Analysis",
       "Kaizen Costing",
@@ -6724,7 +6724,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_006",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Target Costing",
       "Value Engineering",
@@ -6799,7 +6799,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_007",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Theory of Constraints",
       "Throughput Accounting",
@@ -6897,7 +6897,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_008",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Life Cycle Costing",
       "Product Life Cycle",
@@ -6967,7 +6967,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_009",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Environmental Management Accounting",
       "Flow Cost Accounting",
@@ -7041,7 +7041,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_010",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Target Costing",
       "Theory of Constraints",
@@ -7119,7 +7119,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_006",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Target Costing",
       "Value Engineering",
@@ -7199,7 +7199,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_007",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Life Cycle Costing",
       "Product Life Cycle",
@@ -7272,7 +7272,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_008",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Theory of Constraints",
       "Bottleneck",
@@ -7343,7 +7343,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_009",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Throughput Accounting",
       "Throughput Accounting Ratio",
@@ -7410,7 +7410,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_010",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Environmental Management Accounting",
       "Environmental Costs",
@@ -7481,7 +7481,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_011",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Target Costing",
       "Value Engineering",
@@ -7561,7 +7561,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_012",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Theory of Constraints",
       "Throughput Accounting",
@@ -7666,7 +7666,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_013",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Life Cycle Costing",
       "Product Life Cycle",
@@ -7740,7 +7740,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_014",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Environmental Management Accounting",
       "Flow Cost Accounting",
@@ -7814,7 +7814,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_015",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Target Costing",
       "Life Cycle Costing",
@@ -7896,7 +7896,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_011",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Cost Control",
       "Cost Reduction",
@@ -7974,7 +7974,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_012",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Target Costing",
       "Customer Focus",
@@ -8051,7 +8051,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_013",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Value Analysis",
       "Value Engineering",
@@ -8124,7 +8124,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_014",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Life Cycle Costing",
       "Product Life Cycle",
@@ -8197,7 +8197,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_MED_015",
     difficulty: "medium",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Theory of Constraints",
       "Bottleneck",
@@ -8269,7 +8269,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_016",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Cost Reduction",
       "Organisation",
@@ -8349,7 +8349,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_017",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Target Costing",
       "Target Cost Gap",
@@ -8432,7 +8432,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_018",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Life Cycle Costing",
       "Kaizen Costing",
@@ -8508,7 +8508,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_019",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Throughput Accounting",
       "Theory of Constraints",
@@ -8588,7 +8588,7 @@ const AICaseStudies = [
   {
     case_id: "SCM_C4_HARD_020",
     difficulty: "hard",
-    case_chapter: "Specialist Cost Management Techniques",
+    case_chapter: "Chapter4",
     case_topic: [
       "Environmental Management Accounting",
       "Environmental Cost Classification",
@@ -8662,4 +8662,6929 @@ const AICaseStudies = [
       }
     ]
   },
+
+  // ============================================================
+  // MEDIUM CASE 21
+  // ABC – ENVIRONMENT-RELATED VS ENVIRONMENT-DRIVEN COSTS
+  // ============================================================
+
+  {
+    case_id: "SCM_C4_MED_021",
+    difficulty: "medium",
+    case_chapter: "Chapter4",
+    case_topic: [
+      "Activity Based Costing",
+      "Environmental Management Accounting",
+      "Environment-related Costs",
+      "Environment-driven Costs",
+      "Cost Drivers"
+    ],
+
+    caseText: `
+      <p>Ardent Chemicals Ltd. manufactures two industrial chemicals, A and B, at the same manufacturing
+      facility. For several years, the company allocated all factory environmental expenditure to the two
+      products using a single blanket overhead rate based on total production volume. Management believed
+      that this method was simple and sufficiently accurate because both products passed through the same
+      factory.</p>
+
+      <p>However, the environmental manager noticed that the environmental impact of the two products was
+      very different. Chemical A required extensive wastewater treatment and generated significant airborne
+      emissions. Chemical B required relatively little treatment but consumed substantially more electricity
+      during production.</p>
+
+      <p>The company maintained a separate wastewater treatment plant and a filtration facility for
+      emissions. The operating costs of these facilities were easily identifiable and were charged to a
+      common environmental cost centre. These costs were therefore directly visible in the accounting
+      system.</p>
+
+      <p>At the same time, the finance department discovered that some environmental costs were hidden
+      inside general factory overheads. Higher depreciation occurred because certain pollution-control
+      equipment had been installed. Additional employees were required for environmental monitoring and
+      compliance activities. These costs had never been separately traced to individual products.</p>
+
+      <p>The management accountant proposed an ABC-based environmental costing system. Instead of simply
+      allocating all environmental costs according to production volume, the company would identify the
+      activities responsible for environmental costs and select appropriate cost drivers.</p>
+
+      <p>The proposed system would therefore distinguish costs directly attributable to environmental cost
+      centres from costs that were driven by environmental activities but were hidden within general
+      overheads. Management expected that the revised information could change the apparent profitability
+      of the two products.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SCM_C4_MED_021_1",
+        question: "The operating cost of the dedicated wastewater treatment plant is best described as:",
+        options: [
+          "Environment-driven cost",
+          "Environment-related cost",
+          "Non-environmental cost",
+          "Opportunity cost"
+        ],
+        answer: 1,
+        reason: "Environment-related costs can be attributed directly to a joint environmental cost centre such as a sewage or wastewater treatment plant."
+      },
+
+      {
+        question_id: "SCM_C4_MED_021_2",
+        question: "Why would additional depreciation caused by pollution-control equipment potentially be treated as an environment-driven cost?",
+        options: [
+          "It is hidden within general overheads but arises because of environmental activities",
+          "It is unrelated to environmental activity",
+          "Depreciation is never an environmental cost",
+          "It is always an external environmental cost"
+        ],
+        answer: 0,
+        reason: "Environment-driven costs are often hidden within general overheads and may include increased depreciation or labour costs arising because of environmental activities."
+      },
+
+      {
+        question_id: "SCM_C4_MED_021_3",
+        question: "What is the main purpose of applying ABC to environmental costs?",
+        options: [
+          "To allocate all costs equally between products",
+          "To trace environmental costs to activities and products based on their consumption or impact",
+          "To eliminate environmental expenditure",
+          "To replace all financial accounting systems"
+        ],
+        answer: 1,
+        reason: "ABC allocates costs based on activities and appropriate cost drivers, allowing environmental costs to be attributed more accurately."
+      },
+
+      {
+        question_id: "SCM_C4_MED_021_4",
+        question: "If Chemical A generates substantially more wastewater than Chemical B, which basis would generally be more appropriate for allocating wastewater treatment costs?",
+        options: [
+          "Number of employees",
+          "Volume of wastewater generated",
+          "Selling price of each product",
+          "Total factory floor area"
+        ],
+        answer: 1,
+        reason: "Wastewater treatment costs can appropriately be allocated using wastewater generated as the cost driver."
+      },
+
+      {
+        question_id: "SCM_C4_MED_021_5",
+        question: "What is the likely consequence of continuing to allocate all environmental costs solely on production volume?",
+        options: [
+          "Products with greater environmental impact may be undercosted while others may be overcosted",
+          "Environmental costs will automatically disappear",
+          "All products will have identical environmental impacts",
+          "ABC will become unnecessary"
+        ],
+        answer: 0,
+        reason: "A blanket volume-based allocation can distort product costs because products consume environmental activities in different proportions."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // MEDIUM CASE 22
+  // ENVIRONMENTAL COST ALLOCATION KEYS
+  // ============================================================
+
+  {
+    case_id: "SCM_C4_MED_022",
+    difficulty: "medium",
+    case_chapter: "Chapter4",
+    case_topic: [
+      "Environmental Cost Allocation",
+      "Allocation Keys",
+      "ABC",
+      "Environmental Impact"
+    ],
+
+    caseText: `
+      <p>Nova Paints Ltd. manufactures three types of industrial coatings. All three products use the same
+      environmental treatment facilities, but the environmental manager believes that the products do not
+      impose equal environmental burdens.</p>
+
+      <p>Product X produces a relatively large quantity of waste but the waste is comparatively harmless.
+      Product Y produces a smaller quantity of waste but contains highly toxic substances. Product Z
+      produces moderate quantities of waste and emissions, but the treatment process for its waste is
+      particularly expensive because specialised equipment and chemicals are required.</p>
+
+      <p>Historically, the company allocated environmental treatment costs according to kilograms of total
+      waste generated. This was easy to calculate, but the environmental manager argued that quantity alone
+      did not reflect the actual environmental burden.</p>
+
+      <p>The management accountant considered several possible allocation keys. These included the volume of
+      emissions or waste, the toxicity of emissions or waste treated, the environmental impact added by the
+      activity and the relative cost of treating different types of emissions.</p>
+
+      <p>Management wanted an allocation method that would provide useful information for product pricing
+      and process improvement. It also wanted to avoid a situation where a product generating highly toxic
+      waste appeared environmentally inexpensive merely because its physical quantity of waste was low.</p>
+
+      <p>The finance director therefore asked the team to select allocation measures based on the nature of
+      the environmental activity rather than simply choosing the easiest measure to calculate.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SCM_C4_MED_022_1",
+        question: "Why may waste volume alone be inappropriate for allocating environmental costs in Nova's situation?",
+        options: [
+          "Because volume can never be measured",
+          "Because two equal quantities of waste may differ significantly in toxicity and treatment requirements",
+          "Because environmental costs are always fixed",
+          "Because waste has no environmental impact"
+        ],
+        answer: 1,
+        reason: "Waste volume alone may not reflect toxicity or the relative cost and environmental impact of treating different types of waste."
+      },
+
+      {
+        question_id: "SCM_C4_MED_022_2",
+        question: "Which allocation key would be particularly relevant when Product Y generates smaller quantities of highly toxic waste?",
+        options: [
+          "Toxicity of emission or waste treated",
+          "Number of products manufactured",
+          "Selling price",
+          "Number of sales invoices"
+        ],
+        answer: 0,
+        reason: "Toxicity is specifically identified as an appropriate environmental-cost allocation measure where waste differs significantly in harmfulness."
+      },
+
+      {
+        question_id: "SCM_C4_MED_022_3",
+        question: "If the treatment costs of two types of emissions differ substantially, which allocation key may provide more useful information?",
+        options: [
+          "Relative costs of treating different kinds of emissions",
+          "Number of employees",
+          "Total revenue",
+          "Production floor area"
+        ],
+        answer: 0,
+        reason: "Relative treatment costs can be used as an allocation key where different emissions require substantially different treatment resources."
+      },
+
+      {
+        question_id: "SCM_C4_MED_022_4",
+        question: "What is the central principle behind choosing an adequate environmental allocation key?",
+        options: [
+          "The easiest measure should always be selected",
+          "The allocation key should meaningfully reflect the environmental activity causing the cost",
+          "All environmental costs should be allocated equally",
+          "The selling price should determine environmental cost"
+        ],
+        answer: 1,
+        reason: "The choice of an adequate allocation key is important because it should provide a meaningful attribution of environmental costs."
+      },
+
+      {
+        question_id: "SCM_C4_MED_022_5",
+        question: "What strategic benefit could result from more accurate environmental cost allocation?",
+        options: [
+          "Management may identify products or processes requiring redesign or environmental improvement",
+          "Management will no longer need cost information",
+          "All products will necessarily become cheaper",
+          "Environmental expenditure will automatically become zero"
+        ],
+        answer: 0,
+        reason: "Better attribution can reveal products with high environmental costs and support pricing, redesign and process-improvement decisions."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // MEDIUM CASE 23
+  // MASS BALANCE – WASTE CONTROL
+  // ============================================================
+
+  {
+    case_id: "SCM_C4_MED_023",
+    difficulty: "medium",
+    case_chapter: "Chapter4",
+    case_topic: [
+      "Environmental Management Accounting",
+      "Mass Balance",
+      "Waste Control",
+      "Material Efficiency"
+    ],
+
+    caseText: `
+      <p>PureForm Pharmaceuticals Ltd. purchases large quantities of chemical ingredients for the
+      manufacture of specialised medicines. Management has historically focused on the financial cost of
+      purchasing these materials but has paid less attention to what happens to the materials after they
+      enter production.</p>
+
+      <p>During an environmental management review, the management accountant proposed using a mass-balance
+      approach. The objective was to compare the weight of materials purchased with the quantity ultimately
+      incorporated into finished products and identify where the remaining material went.</p>
+
+      <p>The production manager initially argued that some loss was unavoidable because pharmaceutical
+      production involves cleaning, processing and quality testing. However, the environmental team
+      discovered that some material was being lost because of inefficient handling, damaged containers,
+      excessive cleaning and incorrect production settings.</p>
+
+      <p>The review also showed that the company paid for unused raw materials, waste disposal and landfill
+      charges. In addition, certain waste materials attracted regulatory charges because of their
+      environmental characteristics.</p>
+
+      <p>The management accountant explained that the cost of waste is therefore broader than the purchase
+      price of the material that fails to become finished product. Poor waste management can also create
+      disposal costs, taxes, compliance costs and environmental impacts.</p>
+
+      <p>Management decided to use the mass-balance information not merely to prepare an environmental
+      report but to identify opportunities for reducing material losses and improving production
+      efficiency.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SCM_C4_MED_023_1",
+        question: "What is the basic purpose of a mass-balance approach?",
+        options: [
+          "To compare material purchased with product yield and account for material losses",
+          "To calculate selling price",
+          "To determine employee salaries",
+          "To calculate only marketing costs"
+        ],
+        answer: 0,
+        reason: "Mass balance compares material inputs with productive output and helps identify material losses and waste."
+      },
+
+      {
+        question_id: "SCM_C4_MED_023_2",
+        question: "Which of the following would be an indication of a potential material-efficiency problem?",
+        options: [
+          "A large unexplained difference between material input and productive output",
+          "A stable selling price",
+          "An increase in customer demand",
+          "A reduction in advertising expenditure"
+        ],
+        answer: 0,
+        reason: "A significant unexplained gap between material inputs and productive output can indicate waste or process inefficiency."
+      },
+
+      {
+        question_id: "SCM_C4_MED_023_3",
+        question: "Why can waste create financial costs beyond the original purchase price of materials?",
+        options: [
+          "Waste may involve disposal costs, landfill taxes and compliance-related fines",
+          "Waste always increases selling price",
+          "Waste eliminates regulatory requirements",
+          "Waste has no financial consequences"
+        ],
+        answer: 0,
+        reason: "Environmental waste costs can include unused raw materials, disposal, landfill taxes and penalties for compliance failures."
+      },
+
+      {
+        question_id: "SCM_C4_MED_023_4",
+        question: "Which management objective is most consistent with the use of mass balance?",
+        options: [
+          "Increase waste while maintaining output",
+          "Identify material losses and reduce unnecessary waste",
+          "Increase landfill use",
+          "Ignore material losses that have no immediate accounting entry"
+        ],
+        answer: 1,
+        reason: "The mass-balance approach helps identify material losses and potential cost savings through improved efficiency."
+      },
+
+      {
+        question_id: "SCM_C4_MED_023_5",
+        question: "Why does mass balance support both financial and environmental objectives?",
+        options: [
+          "Reducing material waste can simultaneously reduce financial costs and environmental impacts",
+          "Environmental objectives always increase costs",
+          "Financial and environmental objectives cannot overlap",
+          "Mass balance measures only emissions"
+        ],
+        answer: 0,
+        reason: "Reducing wasted materials saves purchase and disposal costs while reducing the environmental burden associated with waste."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // MEDIUM CASE 24
+  // WATER + ENERGY + EMA
+  // ============================================================
+
+  {
+    case_id: "SCM_C4_MED_024",
+    difficulty: "medium",
+    case_chapter: "Chapter4",
+    case_topic: [
+      "Environmental Management Accounting",
+      "Water Costs",
+      "Energy Costs",
+      "Environmental Cost Control"
+    ],
+
+    caseText: `
+      <p>Harbor Textiles Ltd. operates a large textile processing plant. The company has recently noticed
+      that utility expenditure has increased despite relatively stable production. Management initially
+      attributed the increase to higher electricity and water tariffs.</p>
+
+      <p>An environmental management review revealed that tariff increases explained only part of the
+      increase. Several machines were operating when production was not taking place, compressed-air
+      systems had leaks and water continued flowing during certain cleaning periods even when it was not
+      required.</p>
+
+      <p>The finance manager initially viewed the environmental review as an additional compliance exercise.
+      The environmental manager disagreed and argued that the same information could help identify financial
+      savings.</p>
+
+      <p>The team began mapping where water and energy were consumed throughout the production process.
+      Certain departments were found to consume considerably more water than others. The company also
+      discovered that some wastewater treatment expenditure increased because of unnecessary water
+      consumption.</p>
+
+      <p>The energy review similarly identified inefficient equipment and unnecessary operating hours.
+      Management estimated that relatively inexpensive changes to operating procedures could reduce energy
+      consumption without requiring major capital investment.</p>
+
+      <p>The CFO therefore asked whether environmental management accounting could be considered only an
+      environmental initiative or whether it could form part of the company's broader cost-control
+      strategy.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SCM_C4_MED_024_1",
+        question: "Why can reducing water consumption produce more than one financial benefit?",
+        options: [
+          "The business may reduce both water purchase costs and water disposal/treatment costs",
+          "Water reduction only affects marketing costs",
+          "Water reduction automatically increases selling price",
+          "Water has no disposal cost"
+        ],
+        answer: 0,
+        reason: "Businesses may effectively pay for water twice: when purchasing it and when disposing of or treating it."
+      },
+
+      {
+        question_id: "SCM_C4_MED_024_2",
+        question: "Which observation is most directly an energy-efficiency opportunity?",
+        options: [
+          "Machines operating unnecessarily outside production requirements",
+          "Higher customer satisfaction",
+          "Increased sales volume",
+          "Lower packaging costs"
+        ],
+        answer: 0,
+        reason: "Unnecessary equipment operation consumes energy without generating productive output and is therefore a potential energy-saving opportunity."
+      },
+
+      {
+        question_id: "SCM_C4_MED_024_3",
+        question: "What does this case demonstrate about environmental management accounting?",
+        options: [
+          "Environmental information can identify opportunities for financial cost savings",
+          "Environmental accounting is unrelated to financial performance",
+          "Environmental accounting only records fines",
+          "Environmental accounting prevents operational improvements"
+        ],
+        answer: 0,
+        reason: "EMA identifies environmental resource usage and inefficiencies that can lead to financial savings as well as environmental improvements."
+      },
+
+      {
+        question_id: "SCM_C4_MED_024_4",
+        question: "Why is identifying where water is used important before attempting to reduce water costs?",
+        options: [
+          "It allows management to identify specific activities causing consumption and target corrective action",
+          "It guarantees water prices will fall",
+          "It eliminates the need for measurement",
+          "It ensures every department receives the same water allocation"
+        ],
+        answer: 0,
+        reason: "Understanding where resources are consumed enables management to identify inefficient activities and implement targeted reductions."
+      },
+
+      {
+        question_id: "SCM_C4_MED_024_5",
+        question: "Which conclusion should the CFO draw from the review?",
+        options: [
+          "Environmental management and cost management can reinforce each other",
+          "Environmental management necessarily increases all costs",
+          "Only environmental departments benefit from EMA",
+          "Energy efficiency has no accounting relevance"
+        ],
+        answer: 0,
+        reason: "Improved environmental resource management can reduce energy, water, waste and compliance-related costs."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // MEDIUM CASE 25
+  // EMA – PRODUCT / PROCESS DECISIONS
+  // ============================================================
+
+  {
+    case_id: "SCM_C4_MED_025",
+    difficulty: "medium",
+    case_chapter: "Chapter4",
+    case_topic: [
+      "Environmental Management Accounting",
+      "Product Pricing",
+      "Product Profitability",
+      "Process Redesign"
+    ],
+
+    caseText: `
+      <p>EcoHome Appliances Ltd. manufactures two washing-machine models. Model Alpha has traditionally
+      been considered the company's most profitable product because its selling price is substantially
+      higher than that of Model Beta.</p>
+
+      <p>The management accountant, however, suspected that the existing costing system was hiding
+      significant environmental costs. Both products were charged an equal share of general environmental
+      overhead despite substantial differences in water consumption, wastewater generation, energy usage
+      and waste treatment requirements.</p>
+
+      <p>After implementing an environmental management accounting system, the company discovered that Alpha
+      generated considerably higher environmental costs per unit than Beta. Much of the difference had
+      previously been included in general overhead and therefore had not been directly attributed to Alpha.</p>
+
+      <p>The revised costing information changed the apparent profitability of the two products. Alpha
+      remained profitable, but its margin was considerably lower than management had previously believed.
+      Beta's margin was comparatively stronger than the original reports suggested.</p>
+
+      <p>The product manager proposed increasing Alpha's selling price to compensate for its higher
+      environmental cost. The operations manager disagreed and suggested redesigning the manufacturing
+      process to reduce water and energy consumption.</p>
+
+      <p>The sustainability manager further proposed that the company should examine whether customers
+      might value a redesigned, environmentally efficient version of Alpha and whether the improved
+      environmental performance could support stronger market positioning.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SCM_C4_MED_025_1",
+        question: "Why did EMA change the apparent profitability of Alpha?",
+        options: [
+          "It traced environmental costs more appropriately to the product responsible for them",
+          "It changed the selling price automatically",
+          "It eliminated all environmental costs",
+          "It ignored manufacturing costs"
+        ],
+        answer: 0,
+        reason: "EMA can convert environmental overhead into more direct product costs, changing the reported profitability of products."
+      },
+
+      {
+        question_id: "SCM_C4_MED_025_2",
+        question: "What is a possible consequence of inaccurate environmental cost allocation?",
+        options: [
+          "Management may make inappropriate pricing or product decisions",
+          "All products will necessarily become more profitable",
+          "Environmental impact will disappear",
+          "Product costs will always be identical"
+        ],
+        answer: 0,
+        reason: "Incorrect allocation can distort product profitability and therefore lead to inappropriate pricing, redesign or product-retention decisions."
+      },
+
+      {
+        question_id: "SCM_C4_MED_025_3",
+        question: "Which decision is directly supported by EMA information?",
+        options: [
+          "Re-designing a process to reduce environmental costs",
+          "Ignoring environmental performance",
+          "Eliminating all financial reporting",
+          "Increasing every product's price equally"
+        ],
+        answer: 0,
+        reason: "EMA can support process and product redesign to reduce environmental costs."
+      },
+
+      {
+        question_id: "SCM_C4_MED_025_4",
+        question: "Why might increasing Alpha's selling price not be the only appropriate response?",
+        options: [
+          "The company may instead reduce the environmental cost through process improvements",
+          "Environmental costs can never affect pricing",
+          "Selling price is always fixed by accounting standards",
+          "EMA prohibits pricing decisions"
+        ],
+        answer: 0,
+        reason: "EMA can reveal environmental costs, but management can respond through pricing, redesign, process improvement or other strategic measures."
+      },
+
+      {
+        question_id: "SCM_C4_MED_025_5",
+        question: "Which broader benefit of good environmental management is suggested by the case?",
+        options: [
+          "Improved environmental performance may strengthen customer perception and potentially support revenue",
+          "Environmental improvements always reduce revenue",
+          "Customers never consider environmental performance",
+          "Environmental performance has no relationship with corporate image"
+        ],
+        answer: 0,
+        reason: "Good environmental management can improve corporate image and may influence customer purchasing behaviour or permit premium positioning."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD CASE 26
+  // ABC + NUMERICAL ENVIRONMENTAL COST ALLOCATION
+  // ============================================================
+
+  {
+    case_id: "SCM_C4_HARD_026",
+    difficulty: "hard",
+    case_chapter: "Chapter4",
+    case_topic: [
+      "Activity Based Costing",
+      "Environmental Costs",
+      "Cost Allocation",
+      "Environmental Cost per Unit"
+    ],
+
+    caseText: `
+      <p>TerraChem Ltd. manufactures two products, P and Q. The management has historically used a
+      production-volume-based system for allocating environmental expenditure. The environmental manager
+      believes that this system is misleading because the two products use environmental activities in very
+      different proportions.</p>
+
+      <p>During the year, Product P produced 400,000 kg while Product Q produced 600,000 kg. P consumed
+      90,000 kg of packing material whereas Q consumed 30,000 kg. Energy usage was 80,000 kWh for P and
+      40,000 kWh for Q.</p>
+
+      <p>P also generated 150,000 pounds of toxic emissions while Q generated only 50,000 pounds. The
+      pollution-control equipment was used for 24,000 machine hours for P and 16,000 machine hours for Q.</p>
+
+      <p>The environmental department incurred the following costs:</p>
+
+      <table>
+        <tr>
+          <th>Environmental Activity</th>
+          <th>Cost (₹)</th>
+        </tr>
+        <tr>
+          <td>Packing material related environmental cost</td>
+          <td>₹2,40,000</td>
+        </tr>
+        <tr>
+          <td>Energy-related environmental cost</td>
+          <td>₹1,20,000</td>
+        </tr>
+        <tr>
+          <td>Toxic emission-related cost</td>
+          <td>₹60,000</td>
+        </tr>
+        <tr>
+          <td>Pollution-control equipment operating cost</td>
+          <td>₹1,00,000</td>
+        </tr>
+      </table>
+
+      <p>The management accountant decided to use ABC. Packing costs would be allocated according to
+      packing-material consumption, energy costs according to kWh, toxin-related costs according to pounds
+      of toxic emissions and pollution-control equipment costs according to machine hours.</p>
+
+      <p>The production manager argued that the total environmental cost should simply be divided between
+      the products according to their output because both products are manufactured in the same factory.
+      The accountant disagreed and asked management to calculate the product-level environmental cost
+      before deciding which allocation method was more informative.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SCM_C4_HARD_026_1",
+        question: "Using ABC, what amount of the ₹2,40,000 packing-material environmental cost should be allocated to Product P?",
+        options: [
+          "₹1,20,000",
+          "₹1,60,000",
+          "₹1,80,000",
+          "₹2,00,000"
+        ],
+        answer: 2,
+        reason: "Total packing material = 90,000 + 30,000 = 120,000 kg. P consumes 90,000/120,000 = 75%. ₹2,40,000 × 75% = ₹1,80,000."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_026_2",
+        question: "How much of the ₹60,000 toxin-related cost should be allocated to Product Q?",
+        options: [
+          "₹10,000",
+          "₹15,000",
+          "₹20,000",
+          "₹30,000"
+        ],
+        answer: 1,
+        reason: "Total toxic emissions = 200,000 pounds. Q generates 50,000 pounds, or 25%. ₹60,000 × 25% = ₹15,000. Therefore the correct answer is ₹15,000, which corresponds to option 1."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_026_3",
+        question: "What is the correct amount of the ₹1,00,000 pollution-control equipment cost allocated to Product P?",
+        options: [
+          "₹40,000",
+          "₹50,000",
+          "₹60,000",
+          "₹75,000"
+        ],
+        answer: 2,
+        reason: "Total machine hours = 40,000. P uses 24,000 hours = 60%. ₹1,00,000 × 60% = ₹60,000."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_026_4",
+        question: "Which statement best explains why output volume is not necessarily the most appropriate allocation basis for all four environmental activities?",
+        options: [
+          "Each environmental activity is caused by a different driver",
+          "Production volume can never be measured",
+          "Environmental costs are always unrelated to activities",
+          "ABC requires equal allocation"
+        ],
+        answer: 0,
+        reason: "ABC recognises that different activities may be driven by different factors such as material usage, energy consumption, emissions and machine hours."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_026_5",
+        question: "If management used only production volume to allocate all environmental costs, what major risk would arise?",
+        options: [
+          "The environmental cost of P and Q could be distorted because their environmental activity consumption differs",
+          "Total environmental cost would become zero",
+          "The products would necessarily have identical environmental impacts",
+          "No cost would be allocated"
+        ],
+        answer: 0,
+        reason: "A volume-based allocation ignores differences in environmental activity consumption and can therefore distort product-level environmental costs."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD CASE 27
+  // EMA + LIFE CYCLE + PACKAGING
+  // ============================================================
+
+  {
+    case_id: "SCM_C4_HARD_027",
+    difficulty: "hard",
+    case_chapter: "Chapter4",
+    case_topic: [
+      "Life Cycle Costing",
+      "Environmental Management Accounting",
+      "Packaging",
+      "Supply Chain",
+      "Waste Reduction"
+    ],
+
+    caseText: `
+      <p>Vision Office Systems Ltd. manufactures high-end office printing machines. The machines are
+      supplied to customers under long-term lease arrangements rather than being sold outright. At the end
+      of the lease, customers return the machines to the company for refurbishment or disposal.</p>
+
+      <p>For many years, each machine was delivered in a customised packaging configuration. Different
+      machine sizes required different packaging materials, and the packaging used for delivery was usually
+      discarded by customers after the machine was installed.</p>
+
+      <p>When the machine reached the end of its lease, the customer was required to obtain fresh packaging
+      to return it to the company. The original packaging was not suitable for reverse transportation.</p>
+
+      <p>The finance department initially considered packaging only as a delivery cost. However, an
+      environmental management review revealed that the company was effectively incurring costs at several
+      points in the product's life. It paid for packaging at initial delivery, customers disposed of
+      packaging, additional packaging was required for returns, and the company incurred disposal and
+      handling costs.</p>
+
+      <p>The company therefore considered a standard reusable container that could be used both for initial
+      delivery and for returning the machine. The container would cost more than some of the existing
+      single-use packaging, but it could be reused repeatedly.</p>
+
+      <p>The management accountant argued that comparing only the initial packaging cost would make the
+      reusable system appear unattractive. A complete life-cycle and supply-chain analysis was required to
+      capture delivery, return, disposal, handling and environmental implications.</p>
+
+      <p>Management also believed that reducing unpacking time and simplifying the return process could
+      improve customer relationships, even if those benefits were not immediately reflected in the
+      conventional packaging cost report.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SCM_C4_HARD_027_1",
+        question: "Why might the reusable container appear more expensive under a conventional single-stage costing approach?",
+        options: [
+          "Only its initial purchase cost may be considered while future return and disposal savings are ignored",
+          "Reusable containers have no initial cost",
+          "Life-cycle costing excludes packaging",
+          "Conventional costing always includes environmental benefits"
+        ],
+        answer: 0,
+        reason: "A single-stage analysis may consider only the initial packaging cost and fail to capture costs and savings occurring later in the product's life."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_027_2",
+        question: "Which life-cycle principle is most relevant to the management accountant's recommendation?",
+        options: [
+          "Consider costs and revenues over the product's entire life",
+          "Consider only manufacturing cost",
+          "Consider only the first accounting period",
+          "Ignore end-of-life costs"
+        ],
+        answer: 0,
+        reason: "Life-cycle costing identifies and accumulates costs and revenues from inception through the product's life and abandonment."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_027_3",
+        question: "Why is the return journey particularly relevant in this case?",
+        options: [
+          "The company owns the machines and bears costs associated with their return after leasing",
+          "Returned machines have no value",
+          "Return costs are never environmental costs",
+          "Customers always pay all return costs"
+        ],
+        answer: 0,
+        reason: "Because the machines are leased and returned, the return phase forms part of the product's life-cycle and supply-chain costs."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_027_4",
+        question: "Which additional benefit could result from reusable packaging besides direct financial savings?",
+        options: [
+          "Reduced packaging waste and improved customer convenience",
+          "Higher waste generation",
+          "Increased disposal requirements",
+          "Elimination of all environmental costs"
+        ],
+        answer: 0,
+        reason: "Reusable packaging can reduce waste while potentially simplifying delivery and return operations and improving customer relationships."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_027_5",
+        question: "What does this case demonstrate about environmental management accounting?",
+        options: [
+          "Environmental considerations can influence supply-chain and product decisions",
+          "EMA is limited to calculating pollution fines",
+          "EMA applies only to chemical companies",
+          "EMA ignores customer relationships"
+        ],
+        answer: 0,
+        reason: "EMA can support broader product, process and supply-chain decisions by identifying environmental costs and related financial consequences."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD CASE 28
+  // EMA + TQM + ZERO OBJECTIVES
+  // ============================================================
+
+  {
+    case_id: "SCM_C4_HARD_028",
+    difficulty: "hard",
+    case_chapter: "Chapter4",
+    case_topic: [
+      "Environmental Management Accounting",
+      "Total Quality Management",
+      "Waste Reduction",
+      "Environmental Objectives",
+      "Cost Control"
+    ],
+
+    caseText: `
+      <p>Prime Surface Coatings Ltd. has decided to integrate environmental objectives into its Total
+      Quality Management programme. Management believes that environmental performance should not be treated
+      as a separate reporting activity but should become part of everyday operational decision-making.</p>
+
+      <p>The board establishes several long-term objectives: zero customer complaints relating to
+      environmental matters, zero chemical spills, zero unnecessary pollution, zero avoidable waste and
+      zero environmental accidents.</p>
+
+      <p>Some production managers question the practicality of these objectives. They argue that pursuing
+      them may increase expenditure because additional monitoring equipment, employee training and process
+      controls will be required.</p>
+
+      <p>The management accountant responds that some preventive expenditure may increase short-term cost
+      while reducing much larger failure costs later. For example, better process controls may prevent
+      chemical spills, reduce waste treatment requirements and avoid regulatory penalties.</p>
+
+      <p>The company therefore decides to establish an information system that provides regular feedback on
+      environmental performance. The system reports physical indicators such as quantities of water,
+      energy, materials, waste and emissions, together with monetary information concerning environmental
+      expenditure and savings.</p>
+
+      <p>The board also instructs managers to distinguish between prevention activities, appraisal activities
+      and failure-related environmental costs. Management wants to determine whether increasing preventive
+      expenditure actually reduces internal and external environmental failures.</p>
+
+      <p>The CEO emphasises that environmental management should ultimately support both environmental
+      sustainability and business performance rather than being viewed merely as an additional compliance
+      burden.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SCM_C4_HARD_028_1",
+        question: "Why can preventive environmental expenditure increase short-term costs while still being economically beneficial?",
+        options: [
+          "Prevention may avoid larger future failure costs such as cleanup, fines and waste treatment",
+          "Prevention never costs anything",
+          "Environmental failures have no financial impact",
+          "Prevention automatically increases production volume"
+        ],
+        answer: 0,
+        reason: "Preventive expenditure can reduce future environmental failure costs, penalties, cleanup costs and resource wastage."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_028_2",
+        question: "Why does the information system need both physical and monetary information?",
+        options: [
+          "Environmental performance involves physical resource/emission flows as well as financial consequences",
+          "Financial information is never relevant",
+          "Physical information replaces all accounting information",
+          "Only monetary information can measure pollution"
+        ],
+        answer: 0,
+        reason: "EMA considers monetary and physical information, such as energy, water, material and waste flows alongside environmental costs."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_028_3",
+        question: "Which activity is most clearly an appraisal activity?",
+        options: [
+          "Routine environmental monitoring and testing",
+          "Cleaning contaminated land after a spill",
+          "Paying compensation after external damage",
+          "Replacing a failed production process after pollution occurs"
+        ],
+        answer: 0,
+        reason: "Appraisal costs include environmental monitoring, testing, inspection and reporting."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_028_4",
+        question: "What is the strategic significance of integrating EMA with TQM?",
+        options: [
+          "Environmental objectives can become part of continuous operational improvement rather than merely external reporting",
+          "TQM eliminates environmental measurement",
+          "EMA becomes unnecessary",
+          "Environmental costs are transferred entirely to customers"
+        ],
+        answer: 0,
+        reason: "EMA and TQM can reinforce each other by using environmental information and feedback to improve processes and reduce waste and failures."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_028_5",
+        question: "If preventive spending rises while external failure costs fall significantly, what would this suggest?",
+        options: [
+          "The prevention strategy may be economically and environmentally effective",
+          "Prevention has necessarily failed",
+          "Environmental management should be abandoned",
+          "External failure costs are irrelevant"
+        ],
+        answer: 0,
+        reason: "A shift from costly environmental failures toward preventive expenditure can indicate that the organisation is controlling environmental risks more effectively."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD CASE 29
+  // EMA + PRODUCT PROFITABILITY + ABC
+  // ============================================================
+
+  {
+    case_id: "SCM_C4_HARD_029",
+    difficulty: "hard",
+    case_chapter: "Chapter4",
+    case_topic: [
+      "ABC",
+      "Environmental Management Accounting",
+      "Product Profitability",
+      "Environment-driven Costs",
+      "Pricing"
+    ],
+
+    caseText: `
+      <p>Royal Leather Ltd. manufactures two leather products, L and M. Product L has traditionally been
+      regarded as the company's premium and most profitable product. Product M is a lower-priced product
+      sold mainly to price-sensitive customers.</p>
+
+      <p>The company's conventional costing system allocates general overhead equally per unit. The
+      production manager believes that this method is fair because both products use the same factory,
+      employees and basic production facilities.</p>
+
+      <p>The environmental manager, however, identifies several differences. Product L requires substantially
+      more water during tanning and dyeing. It also generates more wastewater and airborne emissions.
+      Product M consumes less water and generates considerably less environmentally harmful waste.</p>
+
+      <p>Several environmental costs are directly identifiable, including wastewater treatment and harmful
+      gas treatment. Other costs are hidden in general overhead, including additional depreciation on
+      environmental equipment and labour involved in monitoring environmental compliance.</p>
+
+      <p>The management accountant proposes an ABC approach. Environmental costs would first be identified
+      and separated from general overhead. They would then be allocated using appropriate environmental
+      cost drivers before being assigned to Products L and M.</p>
+
+      <p>After the initial analysis, Product L's environmental cost per unit appears much higher than under
+      the conventional system. Product M's environmental cost is lower. The sales manager argues that the
+      company should simply increase L's price. The sustainability manager argues that a price increase
+      could reduce demand and that the company should instead investigate process redesign.</p>
+
+      <p>The CEO wants management to understand why the same total environmental cost can produce completely
+      different strategic conclusions depending upon how it is allocated.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SCM_C4_HARD_029_1",
+        question: "What is the primary weakness in allocating environmental overhead equally per unit in this case?",
+        options: [
+          "It assumes equal environmental resource consumption even though the products have different environmental impacts",
+          "It always understates total environmental cost",
+          "It eliminates environmental costs",
+          "It measures only selling price"
+        ],
+        answer: 0,
+        reason: "Equal allocation ignores differences in the activities and environmental resources consumed by Products L and M."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_029_2",
+        question: "Why should hidden environmental costs be separated from general overhead?",
+        options: [
+          "To trace costs to the products or activities responsible for generating them",
+          "To eliminate them from accounting records",
+          "To transfer them entirely to employees",
+          "To ensure every product receives an equal share"
+        ],
+        answer: 0,
+        reason: "Environment-driven costs hidden in general overhead should be traced to products or services using appropriate environmental cost drivers."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_029_3",
+        question: "If Product L generates significantly more wastewater, which cost driver would be most logical for allocating wastewater treatment cost?",
+        options: [
+          "Volume of wastewater generated",
+          "Selling price",
+          "Number of sales invoices",
+          "Number of customers"
+        ],
+        answer: 0,
+        reason: "Wastewater treatment cost is logically driven by the volume of wastewater requiring treatment."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_029_4",
+        question: "Why might process redesign be preferable to simply increasing Product L's selling price?",
+        options: [
+          "Reducing the underlying environmental cost may improve profitability without relying entirely on higher prices",
+          "Environmental costs cannot affect profitability",
+          "Pricing is unrelated to cost",
+          "Process redesign always eliminates revenue"
+        ],
+        answer: 0,
+        reason: "Reducing environmental resource consumption and waste can lower costs sustainably and improve long-term profitability."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_029_5",
+        question: "What broader strategic problem can incorrect environmental cost allocation create?",
+        options: [
+          "Management may incorrectly identify which products are profitable and make poor pricing or product decisions",
+          "Management will always reduce environmental impact",
+          "All products will automatically become equally profitable",
+          "The company will no longer need ABC"
+        ],
+        answer: 0,
+        reason: "Distorted product costs can lead to incorrect pricing, product-mix, redesign and product-continuation decisions."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD CASE 30
+  // INTEGRATED EMA + TARGET COSTING + LIFE CYCLE
+  // ============================================================
+
+  {
+    case_id: "SCM_C4_HARD_030",
+    difficulty: "hard",
+    case_chapter: "Chapter4",
+    case_topic: [
+      "Target Costing",
+      "Life Cycle Costing",
+      "Environmental Management Accounting",
+      "ABC",
+      "Value Engineering"
+    ],
+
+    caseText: `
+      <p>EverGreen Mobility Ltd. is developing a new electric delivery vehicle for urban logistics
+      companies. The company operates in a highly competitive market where customers compare purchase price,
+      battery life, maintenance requirements, reliability and environmental performance.</p>
+
+      <p>The marketing department estimates that customers are willing to pay approximately ₹18 lakh for
+      the vehicle, but competitors are expected to introduce similar models. Management therefore decides
+      that the product must achieve a target selling price that reflects market conditions rather than
+      simply adding a margin to the company's estimated internal cost.</p>
+
+      <p>The finance team proposes a target profit margin and derives a target cost. The engineering team
+      then prepares an initial design and discovers that the estimated cost is above the target.</p>
+
+      <p>At the same time, the environmental team identifies several costs that had not been included
+      separately in the initial product costing. Battery-related waste treatment, energy consumed during
+      certain manufacturing processes, wastewater treatment and environmental monitoring costs were partly
+      hidden in general overhead.</p>
+
+      <p>The management accountant proposes using ABC to identify environmental activities and allocate the
+      associated costs to the vehicle. The accountant argues that the target cost should not be achieved by
+      simply ignoring environmental costs, because doing so would produce a misleading product cost.</p>
+
+      <p>The engineering team considers several alternatives. One proposal would reduce the cost of the
+      battery enclosure but could increase environmental treatment requirements later. Another would use a
+      more efficient manufacturing process requiring slightly higher initial investment but reducing energy
+      consumption throughout production.</p>
+
+      <p>The product manager wants to evaluate the vehicle over its complete life. This includes design and
+      development, manufacturing, distribution, customer service, warranty and end-of-life treatment.</p>
+
+      <p>During the design meeting, one engineer suggests using the cheapest available material to close the
+      target-cost gap immediately. The environmental manager objects that the material may create higher
+      disposal costs and poorer environmental performance over the product's life.</p>
+
+      <p>The project leader therefore instructs the team to treat target costing, value engineering,
+      life-cycle costing and environmental management accounting as interconnected decision-support tools.
+      The objective is to achieve the required market price and profitability without sacrificing customer
+      value or simply transferring costs from one stage of the product's life to another.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SCM_C4_HARD_030_1",
+        question: "Why should environmental costs be incorporated when determining whether the vehicle meets its target cost?",
+        options: [
+          "Because excluding relevant environmental costs can understate the true product cost and distort target-cost decisions",
+          "Because environmental costs are always zero",
+          "Because target costing excludes life-cycle costs",
+          "Because environmental costs are never controllable"
+        ],
+        answer: 0,
+        reason: "A complete target-costing decision requires realistic product cost information. Hidden environmental costs can otherwise cause the apparent cost to be understated."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_030_2",
+        question: "Why is the proposal to use the cheapest material potentially inconsistent with the objective of target costing?",
+        options: [
+          "The cheapest material may reduce cost while impairing quality, environmental performance or life-cycle profitability",
+          "Target costing always requires the most expensive material",
+          "Materials are irrelevant to product cost",
+          "Environmental performance is never part of customer value"
+        ],
+        answer: 0,
+        reason: "Target costing seeks the required combination of functionality, quality, customer value and cost rather than simply selecting the cheapest input."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_030_3",
+        question: "Why is ABC particularly useful for the environmental costs described in the case?",
+        options: [
+          "Different environmental activities have different cost drivers and should not necessarily be allocated uniformly",
+          "ABC allocates every cost equally",
+          "ABC eliminates the need for cost drivers",
+          "ABC is limited to direct labour"
+        ],
+        answer: 0,
+        reason: "ABC identifies activities and uses appropriate cost drivers, making it useful for tracing environment-driven costs hidden in general overhead."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_030_4",
+        question: "The proposal involving a slightly higher initial investment but lower energy consumption throughout production illustrates which life-cycle costing principle?",
+        options: [
+          "A decision should be evaluated using the costs over the relevant life rather than only initial expenditure",
+          "Only initial purchase cost matters",
+          "Life-cycle costing ignores environmental costs",
+          "Higher initial cost always means lower profitability"
+        ],
+        answer: 0,
+        reason: "Life-cycle costing evaluates costs over the product's life, allowing higher initial expenditure to be justified by later savings."
+      },
+
+      {
+        question_id: "SCM_C4_HARD_030_5",
+        question: "Which approach would best help the project team close the target-cost gap without simply sacrificing product value?",
+        options: [
+          "Apply value-engineering techniques to redesign functions, components and processes while preserving required customer value",
+          "Use the cheapest component regardless of quality",
+          "Ignore environmental costs",
+          "Increase all overhead allocations equally"
+        ],
+        answer: 0,
+        reason: "Value engineering examines functions, components, materials, processes and design alternatives to reduce cost while preserving required customer value and quality."
+      }
+    ]
+  },
+  {
+  case_id: "SCM_C4_MED_031",
+  difficulty: "medium",
+  case_chapter: "Chapter4",
+  case_topic: ["Environmental Management Accounting", "ABC", "Environment-related Costs", "Environment-driven Costs"],
+
+  caseText: `
+  
+
+  <p>NovaChem Industries manufactures two industrial chemicals, Alpha and Beta. Both products are manufactured in the same factory, but the environmental characteristics of the two production processes are significantly different. Alpha requires a purification process that produces a relatively high quantity of contaminated wastewater, whereas Beta generates comparatively small quantities of wastewater but requires a specialised filtration process because the waste contains a substance that is more difficult to treat.</p>
+
+  <p>The company's traditional costing system treats all environmental expenditure as part of factory overhead. During the previous year, the company incurred ₹18,00,000 on operating a common wastewater treatment facility. In addition, the company incurred ₹6,00,000 as additional depreciation on specialised pollution-control equipment, ₹4,00,000 on additional labour required because of environmental procedures, and ₹2,00,000 in environmental compliance-related fines.</p>
+
+  <p>The production manager initially argued that all these costs should simply be included in the factory overhead rate because both Alpha and Beta use the same manufacturing facility. However, the management accountant disagreed. He explained that the wastewater treatment plant represented an environmental cost centre, while the additional depreciation and labour costs were environmental consequences embedded within other overhead categories.</p>
+
+  <p>An analysis showed that Alpha generated 75% of the wastewater volume but accounted for only 45% of the total machine hours. Beta generated only 25% of wastewater but its wastewater had substantially higher treatment difficulty. The company therefore decided to introduce an activity-based environmental costing system rather than allocating all environmental expenditure using machine hours.</p>
+
+  <p>For the wastewater treatment activity, management decided that volume of wastewater would be the primary allocation basis. For the specialised treatment activity, management considered the toxicity and treatment difficulty of the waste to be more appropriate. The company also wanted to separately identify environmental costs that were previously hidden inside general manufacturing overhead.</p>
+
+  <p>The finance director believes that once environmental costs are properly traced to products, management may discover that the apparent profitability of Alpha and Beta is significantly different from that reported under the traditional costing system.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SCM_C4_MED_031_1",
+      question: "Which of the following best describes the ₹18,00,000 expenditure on operating the common wastewater treatment facility?",
+      options: [
+        "Environment-related cost because it is directly attributable to an environmental cost centre",
+        "Environment-driven cost because it is included in general production overhead",
+        "A selling and distribution cost because wastewater is generated after production",
+        "A period cost that should never be allocated to products"
+      ],
+      answer: 0,
+      reason: "The wastewater treatment facility is a specific environmental cost centre, so its operating cost is an environment-related cost."
+    },
+
+    {
+      question_id: "SCM_C4_MED_031_2",
+      question: "Which allocation basis would be most appropriate for allocating the wastewater treatment cost when the main difference between Alpha and Beta is the volume of wastewater generated?",
+      options: [
+        "Machine hours",
+        "Sales value",
+        "Volume of wastewater",
+        "Number of employees"
+      ],
+      answer: 2,
+      reason: "An environmental cost should be allocated using a driver reflecting the activity causing the cost. Wastewater volume directly represents the treatment activity."
+    },
+
+    {
+      question_id: "SCM_C4_MED_031_3",
+      question: "Why should the additional depreciation on pollution-control equipment be separately identified?",
+      options: [
+        "Because depreciation can never form part of manufacturing overhead",
+        "Because it represents an environmental cost that may otherwise remain hidden in general overhead",
+        "Because depreciation is always a variable cost",
+        "Because depreciation should be charged only to Beta"
+      ],
+      answer: 1,
+      reason: "Environment-driven costs can be hidden within general overhead. Separating them helps trace environmental costs to the products or activities responsible."
+    },
+
+    {
+      question_id: "SCM_C4_MED_031_4",
+      question: "If Beta produces less wastewater but its wastewater is significantly more difficult to treat, which allocation key may provide better information for the specialised treatment cost?",
+      options: [
+        "Production volume alone",
+        "Toxicity or treatment difficulty",
+        "Number of sales invoices",
+        "Number of factory employees"
+      ],
+      answer: 1,
+      reason: "Where treatment cost is driven by the nature or toxicity of waste rather than merely its physical volume, toxicity or treatment difficulty is a more appropriate driver."
+    },
+
+    {
+      question_id: "SCM_C4_MED_031_5",
+      question: "What is the most important potential benefit of tracing environmental costs to Alpha and Beta separately?",
+      options: [
+        "It guarantees that total environmental costs will fall immediately",
+        "It eliminates the need for environmental compliance",
+        "It can reveal that reported product profitability differs from profitability after environmental costs are properly assigned",
+        "It ensures that both products receive identical environmental costs"
+      ],
+      answer: 2,
+      reason: "Proper environmental cost allocation can change the apparent profitability of products because environmental overheads may have previously been allocated inaccurately."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_MED_032",
+  difficulty: "medium",
+  case_chapter: "Chapter4",
+  case_topic: ["Environmental Management Accounting", "Mass Balance", "Waste", "Cost Control"],
+
+  caseText: `
+  
+
+  <p>GreenForm Packaging Limited manufactures flexible packaging films for food and pharmaceutical companies. The production process uses polymer granules, additives, inks and solvents. Although the production department regularly monitors the quantity of finished goods produced, management has historically paid little attention to the difference between the quantity of materials purchased and the quantity incorporated into finished products.</p>
+
+  <p>During a recent environmental management review, the management accountant suggested performing a mass-balance analysis. The factory purchased 10,000 tonnes of materials during the year. Of this quantity, 7,800 tonnes were incorporated into finished products. Approximately 1,100 tonnes were identified as production scrap and process waste, while the remaining quantity could not be satisfactorily explained by the production records.</p>
+
+  <p>The production manager initially treated the unexplained quantity as an unavoidable feature of the manufacturing process. However, the environmental manager pointed out that the missing material could represent several forms of hidden cost, including evaporation, contaminated material, leakage, inefficient machine settings, poor-quality production, or inappropriate disposal.</p>
+
+  <p>The company also pays waste disposal charges and landfill-related taxes. In two instances during the year, the company incurred additional costs because waste was not segregated correctly. Management realised that reducing waste would therefore not only reduce environmental impact but could also reduce material purchases, waste-disposal costs, compliance costs and the cost of processing defective output.</p>
+
+  <p>The board has asked the finance team to design a cost-control system that provides regular information to production managers rather than waiting until the annual accounts are prepared.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SCM_C4_MED_032_1",
+      question: "What is the primary purpose of the mass-balance analysis in this case?",
+      options: [
+        "To compare material inputs with product output and identify unexplained losses",
+        "To calculate only the selling price of finished products",
+        "To determine the company's tax liability",
+        "To calculate employee productivity only"
+      ],
+      answer: 0,
+      reason: "Mass balance compares material purchased or input with material incorporated into products and helps identify waste or unexplained losses."
+    },
+
+    {
+      question_id: "SCM_C4_MED_032_2",
+      question: "Which of the following is most likely to represent a hidden environmental cost identified through the mass-balance exercise?",
+      options: [
+        "Material lost through inefficient processing",
+        "Share capital issued to investors",
+        "Dividend paid to shareholders",
+        "Interest income from investments"
+      ],
+      answer: 0,
+      reason: "Material lost during production represents waste and can carry both financial and environmental costs."
+    },
+
+    {
+      question_id: "SCM_C4_MED_032_3",
+      question: "If management reduces material waste, which combination of benefits is most likely?",
+      options: [
+        "Higher material consumption and higher disposal costs",
+        "Lower material consumption and lower waste-related costs",
+        "Higher landfill charges and higher defective production",
+        "No financial benefit because waste has only environmental consequences"
+      ],
+      answer: 1,
+      reason: "Reducing waste can lower raw-material usage, disposal charges, landfill taxes and costs associated with defective output."
+    },
+
+    {
+      question_id: "SCM_C4_MED_032_4",
+      question: "Why should the company provide waste information regularly rather than only at year-end?",
+      options: [
+        "Because timely information allows managers to take corrective action",
+        "Because annual financial statements cannot contain production information",
+        "Because environmental costs are always fixed",
+        "Because waste information is irrelevant for management decisions"
+      ],
+      answer: 0,
+      reason: "Timely reporting allows managers to identify problems and act before inefficiencies become significant."
+    },
+
+    {
+      question_id: "SCM_C4_MED_032_5",
+      question: "Which statement best reflects the relationship between waste and environmental cost?",
+      options: [
+        "Waste has no cost once the material has been purchased",
+        "Waste may involve material loss, disposal costs, landfill charges and environmental consequences",
+        "Waste is relevant only to the environmental department",
+        "Waste costs are always impossible to measure"
+      ],
+      answer: 1,
+      reason: "Waste can create several financial and environmental costs, including lost material, disposal and landfill-related costs."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_MED_033",
+  difficulty: "medium",
+  case_chapter: "Chapter4",
+  case_topic: ["Environmental Management Accounting", "Water", "Energy", "Resource Efficiency"],
+
+  caseText: `
+  
+
+  <p>MetroFab Components operates a large metal-finishing plant. The plant consumes significant quantities of water and electricity. Water is used for cleaning, cooling and surface treatment, while electricity is used by furnaces, pumps, compressors and ventilation systems.</p>
+
+  <p>For several years, management concentrated mainly on negotiating lower utility tariffs. The finance department therefore reported water and electricity expenditure primarily as financial overhead. However, the new operations director believes that the more important issue is the quantity of resources being consumed rather than simply the price paid per unit.</p>
+
+  <p>A preliminary review revealed that several machines continued operating during idle periods. Water pumps were also left running during production breaks because operators feared that restarting the equipment would take additional time. In addition, some water used for an initial cleaning stage was discharged even though it could potentially have been reused for a lower-grade cleaning activity.</p>
+
+  <p>The management accountant proposed using Environmental Management Accounting to identify where water and energy were consumed and to link resource consumption with specific processes. The objective was not merely to reduce reported expenditure but to identify operational inefficiencies that caused unnecessary consumption.</p>
+
+  <p>Management also discovered that the company was effectively paying for water twice: once when purchasing fresh water and again through wastewater treatment and disposal charges. This made water reduction economically important as well as environmentally desirable.</p>
+
+  <p>The operations director therefore asked each production department to identify opportunities for reducing resource consumption without compromising product quality or production reliability.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SCM_C4_MED_033_1",
+      question: "What is the key limitation of focusing only on obtaining a lower utility tariff?",
+      options: [
+        "It ignores the possibility that excessive resource consumption itself may be causing the cost",
+        "It guarantees higher water consumption",
+        "It prevents the company from calculating profit",
+        "It eliminates the need for production controls"
+      ],
+      answer: 0,
+      reason: "A lower tariff does not address inefficient consumption. EMA helps identify where excessive water and energy usage occurs."
+    },
+
+    {
+      question_id: "SCM_C4_MED_033_2",
+      question: "Why is water economically important beyond the purchase price of fresh water?",
+      options: [
+        "Because water has no disposal cost",
+        "Because the company may also incur wastewater treatment and disposal costs",
+        "Because water is always a fixed cost",
+        "Because water cannot be measured"
+      ],
+      answer: 1,
+      reason: "Businesses can effectively pay twice for water: once for purchasing it and again for treating or disposing of wastewater."
+    },
+
+    {
+      question_id: "SCM_C4_MED_033_3",
+      question: "Which action would most directly address energy inefficiency identified in the case?",
+      options: [
+        "Allowing equipment to remain switched on during idle periods",
+        "Identifying and eliminating unnecessary machine operation during idle periods",
+        "Increasing the number of machines operating simultaneously",
+        "Ignoring electricity consumption because it is an overhead"
+      ],
+      answer: 1,
+      reason: "Switching off unnecessary equipment during idle periods reduces energy consumption without necessarily affecting product quality."
+    },
+
+    {
+      question_id: "SCM_C4_MED_033_4",
+      question: "What is the principal role of EMA in this situation?",
+      options: [
+        "To replace all financial accounting",
+        "To identify resource consumption and environmental costs to support better management decisions",
+        "To prepare statutory tax returns",
+        "To determine shareholder dividends"
+      ],
+      answer: 1,
+      reason: "EMA provides information about environmental and resource-related costs and supports operational and strategic decisions."
+    },
+
+    {
+      question_id: "SCM_C4_MED_033_5",
+      question: "Why is reuse of water in a lower-grade cleaning activity potentially attractive?",
+      options: [
+        "It may reduce fresh-water consumption and wastewater disposal costs",
+        "It guarantees zero production",
+        "It increases water purchases",
+        "It eliminates all environmental regulations"
+      ],
+      answer: 0,
+      reason: "Reusing water can reduce the quantity of fresh water purchased and the quantity of wastewater requiring treatment."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_MED_034",
+  difficulty: "medium",
+  case_chapter: "Chapter4",
+  case_topic: ["Environmental Management Accounting", "Product Decisions", "Cost Allocation", "Profitability"],
+
+  caseText: `
+  
+
+  <p>PureHome Appliances manufactures three washing-machine models: Basic, Eco and Pro. The company has traditionally evaluated product profitability by allocating factory overhead using direct labour hours. Under this method, the Pro model appears to be the most profitable product because it has a high selling price and relatively strong gross margin.</p>
+
+  <p>However, the environmental manager has identified substantial differences in the environmental characteristics of the three models. The Basic model uses more water during production testing, the Pro model requires a larger quantity of specialised packaging, and the Eco model uses a comparatively expensive recyclable component that reduces waste during the manufacturing process.</p>
+
+  <p>Environmental expenditure includes waste-treatment costs, packaging disposal costs, water-treatment costs and costs of operating recycling equipment. Historically, these costs were included in general factory overhead and allocated based on direct labour hours.</p>
+
+  <p>The management accountant believes that this approach may distort product profitability because the consumption of environmental activities is not necessarily related to labour hours. He recommends identifying the environmental activities separately and allocating the relevant costs using suitable drivers.</p>
+
+  <p>Management is particularly interested in whether the apparently highly profitable Pro model remains attractive after environmental costs are properly assigned. If environmental costs significantly alter product margins, management may consider redesigning the product, changing packaging or reconsidering the product's selling price.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SCM_C4_MED_034_1",
+      question: "Why may allocating environmental costs using direct labour hours distort product profitability?",
+      options: [
+        "Environmental activities may be driven by factors other than labour hours",
+        "Labour hours are never measurable",
+        "Environmental costs are always selling costs",
+        "All products necessarily consume identical environmental resources"
+      ],
+      answer: 0,
+      reason: "Environmental costs may be driven by waste volume, packaging, water use or treatment requirements rather than labour hours."
+    },
+
+    {
+      question_id: "SCM_C4_MED_034_2",
+      question: "Which of the following best illustrates the role of EMA in product decision-making?",
+      options: [
+        "Ignoring environmental costs when calculating product profitability",
+        "Converting hidden environmental overheads into more appropriately traceable product costs",
+        "Eliminating all environmental expenditure",
+        "Allocating identical environmental costs to all products"
+      ],
+      answer: 1,
+      reason: "EMA seeks to identify and allocate environmental costs appropriately so that product profitability reflects the resources actually consumed."
+    },
+
+    {
+      question_id: "SCM_C4_MED_034_3",
+      question: "If Pro consumes disproportionately more specialised packaging, which factor would management reasonably consider when allocating packaging-related environmental costs?",
+      options: [
+        "Packaging consumption",
+        "Number of directors",
+        "Share capital",
+        "Employee age"
+      ],
+      answer: 0,
+      reason: "Packaging-related environmental costs should be allocated using a driver reflecting packaging consumption."
+    },
+
+    {
+      question_id: "SCM_C4_MED_034_4",
+      question: "If the Eco model has a higher direct component cost but significantly lower waste costs, what should management consider?",
+      options: [
+        "Only the direct component cost",
+        "Only the selling price",
+        "The total relevant cost including environmental consequences",
+        "Neither cost because environmental costs are irrelevant"
+      ],
+      answer: 2,
+      reason: "Product decisions should consider the full and correct cost, including environmental costs that may materially affect profitability."
+    },
+
+    {
+      question_id: "SCM_C4_MED_034_5",
+      question: "If proper environmental costing shows Pro has a much lower margin than previously reported, which decision could logically follow?",
+      options: [
+        "Redesign the product or reconsider its price",
+        "Automatically increase environmental waste",
+        "Stop measuring environmental costs",
+        "Allocate the environmental costs equally to all products"
+      ],
+      answer: 0,
+      reason: "EMA can support pricing, redesign, process improvement or even product phase-out decisions when environmental costs materially affect profitability."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_MED_035",
+  difficulty: "medium",
+  case_chapter: "Chapter4",
+  case_topic: ["Environmental Management Accounting", "TQM", "Environmental Objectives", "Cost Reduction"],
+
+  caseText: `
+
+  <p>MedPure Laboratories operates a pharmaceutical manufacturing facility where management has recently introduced a programme called "Zero Defect, Zero Waste". The programme is intended to integrate environmental management with Total Quality Management rather than treating environmental performance as a separate compliance exercise.</p>
+
+  <p>The company has established several objectives: zero customer complaints relating to packaging contamination, zero chemical spills, zero avoidable production waste and zero major safety incidents. Department managers are required to review performance against these objectives every month.</p>
+
+  <p>During the first quarter, the company noticed that a reduction in production waste also reduced raw-material purchases and disposal costs. However, some managers initially considered the environmental programme an additional administrative burden because they believed it created extra reporting requirements.</p>
+
+  <p>The finance director explained that the purpose of the information system was not merely to produce reports. It was intended to provide feedback showing whether the organisation was moving towards its operational and environmental objectives and to identify areas where corrective action was required.</p>
+
+  <p>The company also began reviewing packaging materials, energy use and transportation arrangements. Management hoped that environmental improvements would produce financial benefits rather than simply increase expenditure.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SCM_C4_MED_035_1",
+      question: "Which objective is most consistent with the company's stated environmental-TQM approach?",
+      options: [
+        "Zero avoidable production waste",
+        "Maximum waste generation",
+        "Maximum chemical spills",
+        "Unlimited resource consumption"
+      ],
+      answer: 0,
+      reason: "Zero avoidable waste is one of the stated objectives and is consistent with combining environmental management and TQM."
+    },
+
+    {
+      question_id: "SCM_C4_MED_035_2",
+      question: "Why can environmental management and TQM be closely linked?",
+      options: [
+        "Both can focus on preventing defects, waste and process inefficiencies",
+        "TQM requires unlimited environmental expenditure",
+        "Environmental management is concerned only with taxation",
+        "TQM eliminates the need for management accounting"
+      ],
+      answer: 0,
+      reason: "Both approaches emphasise prevention, continuous improvement, waste reduction and better process performance."
+    },
+
+    {
+      question_id: "SCM_C4_MED_035_3",
+      question: "What is the main purpose of monthly feedback against the zero objectives?",
+      options: [
+        "To identify success or failure and enable corrective action",
+        "To prepare only statutory financial statements",
+        "To eliminate the need for production managers",
+        "To ensure every department has identical costs"
+      ],
+      answer: 0,
+      reason: "Feedback allows management to assess performance and take corrective action when objectives are not being achieved."
+    },
+
+    {
+      question_id: "SCM_C4_MED_035_4",
+      question: "If reducing waste lowers both raw-material purchases and disposal costs, what does this demonstrate?",
+      options: [
+        "Environmental improvements can also generate financial benefits",
+        "Environmental improvements always increase cost",
+        "Waste has no financial effect",
+        "TQM and environmental management are unrelated"
+      ],
+      answer: 0,
+      reason: "Resource efficiency and waste reduction can reduce both environmental impact and financial costs."
+    },
+
+    {
+      question_id: "SCM_C4_MED_035_5",
+      question: "Which statement best explains why the information system should not be viewed merely as an administrative reporting system?",
+      options: [
+        "Its purpose is to support feedback, control and improvement",
+        "It is designed only for external shareholders",
+        "It replaces all operational decisions",
+        "It guarantees that objectives will automatically be achieved"
+      ],
+      answer: 0,
+      reason: "Environmental management information should support monitoring, feedback, corrective action and continuous improvement."
+    }
+  ]
+},
+{
+  case_id: "SCM_C4_HARD_036",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: ["Environmental Management Accounting", "ABC", "Environmental Cost Allocation", "Product Profitability"],
+
+  caseText: `
+  
+
+  <p>Orion Specialty Chemicals manufactures two products, M and N, in a highly regulated chemical-processing facility. Product M is manufactured in much larger quantities than Product N, and under the company's traditional costing system M appears to be substantially less profitable per unit than N. Factory overhead is currently allocated on the basis of production volume.</p>
+
+  <p>The environmental department has challenged this conclusion. It has identified four major environmental activities: ordinary waste treatment, toxic-waste treatment, environmental monitoring and operation of pollution-control equipment.</p>
+
+  <p>During the year, the company incurred ₹12,00,000 on ordinary waste treatment, ₹9,00,000 on toxic-waste treatment, ₹6,00,000 on environmental monitoring and ₹8,00,000 on pollution-control equipment operation.</p>
+
+  <p>Product M accounts for 80% of total production volume but only 55% of ordinary waste. Product N accounts for 20% of production volume but creates 70% of the toxic waste. Environmental monitoring is performed mainly because Product N requires more frequent regulatory testing. Pollution-control equipment hours are also substantially higher for Product N.</p>
+
+  <p>The production manager argues that N should still be regarded as highly profitable because its selling price is considerably higher than M's. The management accountant, however, points out that selling price alone cannot establish product profitability when products consume significantly different amounts of environmental resources.</p>
+
+  <p>The board is considering whether to increase the production of N because demand is strong. Before doing so, it wants an environmental profitability analysis. It also wants to know whether some of the environmental costs currently hidden inside general overhead should be traced directly to products.</p>
+
+  <p>The finance director has instructed the management accounting team to use suitable environmental cost drivers rather than simply applying the existing production-volume allocation rate.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SCM_C4_HARD_036_1",
+      question: "Why would allocating all ₹35,00,000 of environmental expenditure according to production volume be potentially misleading?",
+      options: [
+        "Because environmental activities are consumed differently by M and N",
+        "Because production volume can never be used as a cost driver",
+        "Because environmental costs must always be divided equally",
+        "Because selling price determines environmental cost"
+      ],
+      answer: 0,
+      reason: "The case shows substantial differences in waste, toxicity, monitoring and pollution-control usage. A single production-volume driver would therefore distort product environmental costs."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_036_2",
+      question: "Which driver is most conceptually appropriate for allocating the toxic-waste treatment cost?",
+      options: [
+        "Total production volume",
+        "Toxicity or quantity of toxic waste requiring treatment",
+        "Selling price per unit",
+        "Number of sales staff"
+      ],
+      answer: 1,
+      reason: "The cost is driven by toxic waste treatment, so the quantity or toxicity of waste is more causally related than production volume."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_036_3",
+      question: "Suppose management discovers that N's environmental cost per unit is three times that of M. What is the strongest implication?",
+      options: [
+        "N must automatically be discontinued",
+        "The reported profitability of N should be reassessed using the more complete cost information",
+        "M should automatically be discontinued",
+        "Environmental costs should be ignored because N has a high selling price"
+      ],
+      answer: 1,
+      reason: "High environmental costs do not automatically justify discontinuation, but they can materially alter product profitability and therefore require reassessment."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_036_4",
+      question: "If environmental monitoring costs are driven primarily by the number of regulatory tests, what allocation basis is most appropriate?",
+      options: [
+        "Number of regulatory tests",
+        "Production volume",
+        "Direct labour cost",
+        "Sales revenue"
+      ],
+      answer: 0,
+      reason: "The cost driver should reflect the activity causing the cost. Here, regulatory testing is the activity driving monitoring expenditure."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_036_5",
+      question: "Which strategic response would best reflect the role of EMA after the analysis?",
+      options: [
+        "Increase N's production immediately without considering environmental costs",
+        "Use the revised cost information to consider pricing, redesign, process changes or product mix",
+        "Remove all environmental expenditure from product costing",
+        "Allocate environmental costs equally because both products are manufactured in the same factory"
+      ],
+      answer: 1,
+      reason: "EMA supports better product and process decisions by revealing the environmental costs actually caused by products."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_037",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: ["Target Costing", "Environmental Management Accounting", "Life Cycle Costing", "Value Engineering"],
+
+  caseText: `
+  
+
+  <p>AeroHome Appliances is preparing to launch a new premium air purifier. Market research indicates that customers are willing to pay approximately ₹18,000 for the product. Management has set a desired profit of ₹4,500 per unit, resulting in a target cost of ₹13,500.</p>
+
+  <p>The initial engineering design estimates manufacturing cost at ₹12,900 per unit. The engineering team therefore believes that the company has already achieved the target. However, the management accountant has identified several environmental costs that were excluded from the initial product design analysis.</p>
+
+  <p>The proposed product uses a disposable filter cartridge that customers are expected to replace every six months. The cartridge itself is inexpensive, but the used cartridges are difficult to recycle and will create disposal costs throughout the product's expected five-year customer-use period. The company also intends to use a large amount of packaging material because management believes premium packaging will strengthen the brand.</p>
+
+  <p>In addition, the manufacturing process requires a specialised cleaning procedure that consumes substantial quantities of water and energy. The engineering team initially considered these costs to be factory overhead rather than product-design costs.</p>
+
+  <p>The finance director argues that the target cost should not be viewed merely as a manufacturing-cost ceiling. Since the product's design determines many future environmental and operating costs, these costs should be considered during the design stage.</p>
+
+  <p>The product-development team is considering several alternatives. One proposal is to redesign the filter so that part of it can be recycled. Another is to reduce packaging and introduce a reusable transport container. A third proposal would slightly increase the component cost but substantially reduce energy and water consumption during manufacturing.</p>
+
+  <p>The chief engineer is concerned that redesigning the product may delay launch. Marketing, however, argues that customers may value the product's environmental characteristics and potentially accept a premium price if the environmental benefits are clearly communicated.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SCM_C4_HARD_037_1",
+      question: "Why is the engineering team's conclusion that the product is already below the target cost potentially incomplete?",
+      options: [
+        "Because the target cost should consider relevant life-cycle and environmental costs, not merely initial manufacturing cost",
+        "Because target costing ignores customer willingness to pay",
+        "Because target costing always uses cost-plus pricing",
+        "Because environmental costs can never be included in target costing"
+      ],
+      answer: 0,
+      reason: "Target costing and life-cycle thinking require consideration of costs across the product's life, including relevant environmental costs that can be influenced during design."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_037_2",
+      question: "The market price is ₹18,000 and desired profit is ₹4,500. What is the target cost per unit?",
+      options: [
+        "₹13,500",
+        "₹14,500",
+        "₹22,500",
+        "₹12,900"
+      ],
+      answer: 0,
+      reason: "Target cost = Target selling price − Desired profit = ₹18,000 − ₹4,500 = ₹13,500."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_037_3",
+      question: "Which proposed change best illustrates the use of value engineering during product development?",
+      options: [
+        "Redesigning the filter to reduce life-cycle disposal costs while retaining required functionality",
+        "Ignoring environmental costs until after the product is launched",
+        "Increasing packaging solely because it increases material consumption",
+        "Waiting until the product reaches decline stage before analysing design"
+      ],
+      answer: 0,
+      reason: "Value engineering seeks to achieve required functions at lower overall cost during the design stage. Redesigning the filter can reduce life-cycle cost while maintaining required functionality."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_037_4",
+      question: "If a slightly more expensive component reduces water and energy consumption throughout production, what should management primarily evaluate?",
+      options: [
+        "Only the component's purchase price",
+        "The incremental component cost against the broader life-cycle cost savings",
+        "Only the marketing department's budget",
+        "Only the first month's manufacturing cost"
+      ],
+      answer: 1,
+      reason: "A life-cycle approach considers the total costs over the product's life rather than focusing only on the initial component purchase price."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_037_5",
+      question: "If customers genuinely value the environmental benefits, which possible commercial outcome is consistent with EMA?",
+      options: [
+        "The company may potentially support a premium price or improved sales",
+        "The company must always reduce its selling price",
+        "Environmental performance can never affect customer demand",
+        "The company must discontinue the product"
+      ],
+      answer: 0,
+      reason: "Improved environmental performance may enhance organisational image and customer value, potentially supporting increased sales or premium pricing."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_038",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: ["Environmental Management Accounting", "Cost Control", "Cost Reduction", "Energy", "Waste"],
+
+  caseText: `
+  
+
+  <p>SteelEdge Manufacturing operates a continuous-process factory that produces specialised steel components. The company has historically used a conventional cost-control system based on annual budgets and standard costs. Department managers receive monthly variance reports comparing actual costs with budgeted costs.</p>
+
+  <p>Although the system has helped management identify overspending, the environmental manager believes that it does not adequately explain why certain costs are increasing. For example, electricity expenditure has increased by 9%, water expenditure by 12% and waste-disposal expenditure by 15%. The production manager argues that the increases are simply due to higher production volume.</p>
+
+  <p>A detailed review shows that production volume increased by only 3%. Several machines were operating at low utilisation levels but remained switched on between production batches. Cooling systems were also running during periods when no production was taking place. In addition, the company discovered that defective output had increased, requiring some components to be reprocessed.</p>
+
+  <p>The management accountant proposed that environmental cost information should be linked with operational measures such as energy consumed per production hour, water used per batch and waste generated per tonne of finished product.</p>
+
+  <p>The finance director emphasised that merely achieving the annual budget should not be regarded as sufficient if the underlying standard itself is inefficient. He wants the company to distinguish between short-term cost control and genuine cost reduction achieved through better methods, improved processes and elimination of waste.</p>
+
+  <p>The operations team has proposed installing automatic shutdown controls for selected equipment, improving machine settings to reduce defective output and redesigning certain process stages to lower water consumption.</p>
+
+  <p>Some managers are concerned that these initiatives may initially require expenditure. The finance director nevertheless believes that a permanent reduction in unit cost should be evaluated over time rather than rejected simply because the initial investment increases expenditure.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SCM_C4_HARD_038_1",
+      question: "Why is the 15% increase in waste-disposal cost unlikely to be explained fully by the 3% increase in production volume?",
+      options: [
+        "Because waste-disposal cost increased much faster than production volume",
+        "Because waste disposal is always a fixed cost",
+        "Because production volume has no relationship with waste",
+        "Because environmental costs cannot be measured"
+      ],
+      answer: 0,
+      reason: "The large difference between production growth and disposal-cost growth suggests additional inefficiency or changes in waste generation."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_038_2",
+      question: "Which measure would provide the most useful operational environmental indicator for comparing efficiency between periods with different production volumes?",
+      options: [
+        "Total electricity cost only",
+        "Energy consumed per unit or per relevant production measure",
+        "Total annual sales only",
+        "Number of shareholders"
+      ],
+      answer: 1,
+      reason: "A consumption-per-unit measure normalises resource use and allows meaningful comparison when production volume changes."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_038_3",
+      question: "The finance director's concern about the standard itself reflects which distinction?",
+      options: [
+        "Cost control may operate within an existing standard, whereas cost reduction questions the underlying cost and seeks permanent improvement",
+        "Cost reduction means simply meeting the budget",
+        "Cost control always requires redesigning products",
+        "There is no difference between cost control and cost reduction"
+      ],
+      answer: 0,
+      reason: "Cost control focuses on regulating performance against standards or budgets, while cost reduction seeks genuine and permanent reductions through critical examination and improvement."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_038_4",
+      question: "Why could automatic shutdown controls represent cost reduction rather than merely cost control?",
+      options: [
+        "They can permanently change the operating method and reduce unnecessary energy consumption",
+        "They merely make the budget report look better",
+        "They increase unnecessary machine operation",
+        "They eliminate the need for all production controls"
+      ],
+      answer: 0,
+      reason: "Changing the process or method to eliminate recurring unnecessary consumption can produce a permanent reduction in unit cost."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_038_5",
+      question: "If process redesign requires an initial investment but reduces water, energy and waste costs for several years, how should management evaluate it?",
+      options: [
+        "Reject it automatically because the initial expenditure increases",
+        "Evaluate the longer-term cost savings and environmental benefits against the investment",
+        "Ignore future costs",
+        "Evaluate only the first month's expenditure"
+      ],
+      answer: 1,
+      reason: "Cost-reduction decisions should consider whether an initial expenditure creates sustainable future savings and improved resource efficiency."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_039",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: ["Environmental Management Accounting", "Life Cycle Costing", "Packaging", "Transport", "Product Decisions"],
+
+  caseText: `
+  
+
+  <p>PrimeOffice Systems manufactures high-end multifunction office printers and supplies them to corporate customers under three-year service contracts. The company historically evaluated packaging and transportation costs primarily at the point of initial delivery. The product-development team selected a strong single-use cardboard and foam packaging system because it provided good protection and was inexpensive to purchase.</p>
+
+  <p>However, most printers are returned to the company at the end of the service contract for refurbishment or replacement. The original packaging is generally discarded by customers and cannot be reused for the return journey. As a result, PrimeOffice purchases additional packaging for returned equipment.</p>
+
+  <p>The environmental manager estimated that the company was effectively paying for packaging twice: once to deliver the printer and again to transport the returned equipment. Disposal of the original packaging also created additional waste-related costs.</p>
+
+  <p>A logistics review found that the company could introduce a reusable transport container that would be used both when delivering equipment and when collecting it at the end of the contract. The reusable container would cost more than the existing packaging system and would require an initial investment in a reverse-logistics process.</p>
+
+  <p>The logistics director initially rejected the idea because the new containers were more expensive than the current packaging. The management accountant argued that the comparison was incomplete because it considered only the initial delivery rather than the complete product life cycle.</p>
+
+  <p>Further analysis showed that reusable containers could also reduce unpacking time at customer premises and simplify collection procedures. The marketing department believes that customers may view the company's waste-reduction efforts favourably.</p>
+
+  <p>The board has asked management to evaluate the proposal using a broader life-cycle perspective rather than comparing packaging purchase prices alone.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SCM_C4_HARD_039_1",
+      question: "Why is comparing only the purchase price of the existing and reusable packaging systems inappropriate?",
+      options: [
+        "Because the reusable system may have different costs and benefits over the entire product/service life cycle",
+        "Because packaging purchase price is never relevant",
+        "Because environmental costs must always be ignored",
+        "Because reusable packaging is automatically cheaper"
+      ],
+      answer: 0,
+      reason: "The company delivers and later collects equipment. Therefore, packaging should be evaluated across the full cycle, including return, disposal and logistics costs."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_039_2",
+      question: "Which concept most directly supports the board's proposed analysis?",
+      options: [
+        "Life-cycle costing",
+        "Marginal costing only",
+        "Historical costing",
+        "Absorption costing alone"
+      ],
+      answer: 0,
+      reason: "Life-cycle costing considers costs and revenues across the product's life, making it appropriate for a multi-stage delivery, use and return arrangement."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_039_3",
+      question: "Which additional benefit strengthens the case for reusable containers beyond waste reduction?",
+      options: [
+        "Potential reduction in unpacking and collection time",
+        "Guaranteed elimination of all transport costs",
+        "Automatic increase in packaging consumption",
+        "Elimination of customer relationships"
+      ],
+      answer: 0,
+      reason: "The case identifies reduced depack/unpacking and simplified collection as additional operational benefits."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_039_4",
+      question: "If the reusable system has a higher initial cost but lower total life-cycle cost, what should management conclude?",
+      options: [
+        "The reusable system may be economically preferable despite its higher initial cost",
+        "The existing system must be preferable because its initial price is lower",
+        "Environmental costs should be excluded",
+        "Only first-year costs should be considered"
+      ],
+      answer: 0,
+      reason: "Life-cycle costing focuses on total costs over the relevant period rather than only initial expenditure."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_039_5",
+      question: "Which statement best reflects the broader role of EMA in this decision?",
+      options: [
+        "It can reveal environmental costs and resource inefficiencies that are hidden in conventional cost information",
+        "It is limited to calculating statutory environmental penalties",
+        "It prevents management from considering financial savings",
+        "It requires all environmental costs to be allocated equally"
+      ],
+      answer: 0,
+      reason: "EMA provides management information that can reveal environmental costs, resource use and potential savings relevant to product and process decisions."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_040",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: ["Environmental Management Accounting", "ABC", "Cost Drivers", "Environmental Impact", "Strategic Decision Making"],
+
+  caseText: `
+  
+
+  <p>BioSolvents India Limited produces three industrial solvents: R, S and T. The products have substantially different environmental profiles even though they are manufactured in the same factory. Product R is produced in high volumes and generates large quantities of relatively low-toxicity waste. Product S is produced in moderate volumes and generates smaller quantities of highly toxic waste. Product T is produced in low volume but requires frequent environmental monitoring and specialised pollution-control equipment.</p>
+
+  <p>The company currently allocates all environmental expenditure using production volume. As a result, R absorbs the majority of environmental cost because it is produced in the largest quantity. Product T appears extremely profitable because its production volume is low while its selling price is high.</p>
+
+  <p>The new management accountant believes that this conclusion is unreliable. She identifies four environmental cost pools: general waste treatment, toxic-waste treatment, environmental monitoring and pollution-control equipment.</p>
+
+  <p>For general waste treatment, management proposes using the volume of waste generated. For toxic-waste treatment, toxicity and treatment requirements are considered more important than physical volume. For monitoring, the number of inspections and tests is considered relevant. For pollution-control equipment, machine hours of the environmental equipment are proposed as the driver.</p>
+
+  <p>The production director objects that using multiple drivers will make the costing system complicated. The management accountant responds that a simpler system is not necessarily better if it systematically assigns costs to products that did not cause them.</p>
+
+  <p>During the review, the company discovers that Product T has been receiving only 8% of total environmental costs under the existing volume-based system, even though it accounts for 35% of environmental monitoring activity and 40% of pollution-control equipment usage. Product R, meanwhile, has been receiving 65% of environmental costs despite consuming only 45% of the combined environmental activities being measured.</p>
+
+  <p>The board is now considering whether the existing product-mix decision should be changed. Marketing strongly supports expanding Product T because its selling price and apparent contribution are high. The management accountant recommends that the board first reconsider product profitability after assigning environmental costs using appropriate drivers.</p>
+
+  <p>She also points out that if Product T remains strategically attractive after the revised costing, management should investigate whether process redesign could reduce its environmental cost rather than simply abandoning the product.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SCM_C4_HARD_040_1",
+      question: "Why is using different environmental cost drivers for different cost pools conceptually justified?",
+      options: [
+        "Different environmental activities may have different causes and consumption patterns",
+        "Multiple drivers always produce lower total cost",
+        "A single driver is prohibited under ABC",
+        "Different drivers guarantee higher selling prices"
+      ],
+      answer: 0,
+      reason: "ABC seeks to allocate costs according to activities causing them. Different environmental activities can therefore require different drivers."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_040_2",
+      question: "Product T receives only 8% of environmental costs but uses 35% of monitoring activity and 40% of pollution-control equipment. What does this strongly suggest?",
+      options: [
+        "The current volume-based allocation may significantly understate T's environmental cost",
+        "T has no environmental cost",
+        "T should automatically be discontinued",
+        "Production volume is necessarily the perfect driver"
+      ],
+      answer: 0,
+      reason: "T's activity consumption is far higher than its allocated environmental cost, suggesting that volume-based allocation understates its environmental burden."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_040_3",
+      question: "If Product S generates a small physical quantity of waste but the waste is extremely toxic, why might waste volume alone be inadequate?",
+      options: [
+        "Treatment cost may be driven more by toxicity and treatment difficulty than physical volume",
+        "Waste volume is never measurable",
+        "Toxicity has no relationship with environmental cost",
+        "Production volume must always be used"
+      ],
+      answer: 0,
+      reason: "Highly toxic waste can require disproportionately expensive treatment despite its lower physical volume."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_040_4",
+      question: "If revised costing shows Product T is less profitable than previously believed but still profitable, which response best reflects EMA's strategic role?",
+      options: [
+        "Immediately discontinue T",
+        "Use the revised information to consider pricing, redesign and process improvements",
+        "Return to the volume-based allocation because it is simpler",
+        "Ignore environmental costs in future decisions"
+      ],
+      answer: 1,
+      reason: "EMA provides better information for strategic decisions. A product need not be discontinued merely because its environmental cost is high; redesign or process improvement may improve profitability."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_040_5",
+      question: "Which conclusion best captures the central weakness of the company's existing costing system?",
+      options: [
+        "It assigns environmental costs primarily according to output volume even though environmental activities are caused by different resource drivers",
+        "It uses too many environmental cost pools",
+        "It considers environmental information in too much detail",
+        "It guarantees that high-volume products are always environmentally inefficient"
+      ],
+      answer: 0,
+      reason: "The central problem is the mismatch between the allocation basis and the actual causes of environmental costs. ABC-style environmental costing seeks to correct this distortion."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_041",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: [
+    "Environmental Management Accounting",
+    "ABC",
+    "Environment-related Costs",
+    "Environment-driven Costs",
+    "Cost Allocation"
+  ],
+
+  caseText: `
+  <p>Vardhan Industrial Coatings Limited manufactures three specialised coating products, Aster, Brio and Crest, at a common manufacturing facility. The company has operated for more than ten years and has traditionally used a single factory overhead absorption rate based on machine hours. The system was originally introduced when the three products had relatively similar production processes and environmental requirements.</p>
+
+  <p>Over the last five years, however, the products have changed considerably. Aster is produced in large batches and generates substantial quantities of relatively low-toxicity liquid waste. Brio is produced in smaller batches but generates a much smaller quantity of waste containing a highly toxic chemical. Crest has comparatively little production waste but requires extensive environmental monitoring because its production process is subject to additional regulatory requirements.</p>
+
+  <p>The company currently records the operating cost of its central waste-treatment facility as a separate environmental expense. During the year, ₹24 lakh was spent on operating the facility. However, several other environmental costs are buried within ordinary factory overhead. These include ₹9 lakh of depreciation on specialised pollution-control equipment, ₹6 lakh of additional labour used for environmental monitoring and ₹3 lakh of maintenance expenditure relating specifically to pollution-control equipment.</p>
+
+  <p>The production director argues that all these costs should continue to be allocated using machine hours because the equipment is installed within the factory. The management accountant disagrees. She explains that the fact that equipment is located in the factory does not mean machine hours are necessarily the cause of the environmental expenditure.</p>
+
+  <p>A detailed investigation reveals that Aster accounts for 60% of total waste volume but only 35% of environmental monitoring activity. Brio accounts for only 15% of total waste volume but 55% of toxic-waste treatment requirements. Crest accounts for only 25% of waste volume but 65% of environmental inspections and monitoring hours.</p>
+
+  <p>The management accountant therefore proposes four environmental cost pools: ordinary waste treatment, toxic-waste treatment, environmental monitoring and pollution-control equipment. She believes that each pool should have an allocation basis reflecting the activity responsible for the cost.</p>
+
+  <p>The chief financial officer is concerned that introducing several cost drivers will make the accounting system more complicated. The management accountant responds that simplicity is not useful if it systematically transfers the environmental costs of one product to another. She also points out that the existing system may have caused management to believe that Aster is environmentally expensive simply because it is produced in high volume.</p>
+
+  <p>Management is now considering a major expansion of Crest because demand for it is growing rapidly. Before approving the expansion, the board wants to understand whether the apparent profitability of Crest remains attractive after environmental costs are properly traced.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C4_HARD_041_1",
+      question: "Which of the following best explains why the ₹9 lakh depreciation on specialised pollution-control equipment should not automatically be allocated using machine hours?",
+      options: [
+        "Depreciation is never a manufacturing cost",
+        "The environmental equipment's cost may be driven by environmental activities rather than general machine usage",
+        "Machine hours cannot be measured in a factory",
+        "Depreciation must always be allocated equally among products"
+      ],
+      answer: 1,
+      reason: "The equipment exists specifically because of environmental requirements. Its depreciation is therefore an environmental cost that may need to be traced using an environmental activity driver rather than ordinary machine hours."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_041_2",
+      question: "Brio produces only 15% of total waste volume but accounts for 55% of toxic-waste treatment requirements. Which allocation approach is most appropriate for the toxic-waste treatment pool?",
+      options: [
+        "Allocate entirely according to total production volume",
+        "Allocate according to toxic-waste characteristics such as toxicity and treatment requirements",
+        "Allocate according to sales revenue",
+        "Allocate equally among Aster, Brio and Crest"
+      ],
+      answer: 1,
+      reason: "The case specifically states that Brio's waste is highly toxic and requires 55% of toxic-waste treatment. Toxicity or treatment requirements therefore provide a more causal allocation basis than volume or sales."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_041_3",
+      question: "If Crest uses 65% of environmental monitoring activity, what is the most likely effect of the existing machine-hour-based system on Crest's reported profitability?",
+      options: [
+        "It may overstate Crest's environmental cost and understate its profitability",
+        "It may understate Crest's environmental cost and overstate its profitability",
+        "It will necessarily produce exactly the same result as ABC",
+        "It will eliminate all environmental costs from Crest"
+      ],
+      answer: 1,
+      reason: "Crest consumes a disproportionately high amount of environmental monitoring activity. If those costs are allocated using a general machine-hour basis, Crest may receive less environmental cost than it actually causes, overstating its apparent profitability."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_041_4",
+      question: "Which statement best describes the distinction between the central waste-treatment cost and the hidden depreciation and labour costs?",
+      options: [
+        "All are environment-driven costs",
+        "The central treatment cost is environment-related, while some hidden costs may be environment-driven costs embedded in general overhead",
+        "Only depreciation can be an environmental cost",
+        "None of the costs should be allocated to products"
+      ],
+      answer: 1,
+      reason: "The central treatment facility is a distinct environmental cost centre, making its operating cost environment-related. Environmental consequences embedded in general overhead can represent environment-driven costs."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_041_5",
+      question: "Before approving Crest's expansion, what is the strongest reason for undertaking the proposed environmental ABC analysis?",
+      options: [
+        "To guarantee that Crest will be discontinued",
+        "To determine whether the product's apparent profitability changes after environmental costs are assigned more appropriately",
+        "To ensure that all products receive identical environmental costs",
+        "To replace financial accounting with environmental accounting"
+      ],
+      answer: 1,
+      reason: "EMA and ABC can reveal hidden environmental costs and change the apparent profitability of individual products. The analysis supports a better expansion decision rather than guaranteeing any particular outcome."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_042",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: [
+    "Environmental Management Accounting",
+    "Mass Balance",
+    "Waste",
+    "Resource Efficiency",
+    "Cost Reduction"
+  ],
+
+  caseText: `
+  <p>Eastern Foods Processing Limited manufactures concentrated fruit ingredients for beverage companies. The production process involves washing, crushing, filtering, concentrating and packaging fruit material. The company purchases fruit and other raw materials by weight, but the production department has historically focused mainly on the quantity of finished concentrate produced.</p>
+
+  <p>During the previous financial year, the company purchased 25,000 tonnes of input materials. Finished products accounted for 16,500 tonnes. The production records identify 5,200 tonnes as unavoidable processing residue and 1,700 tonnes as rejected material. However, approximately 1,600 tonnes cannot be reconciled with the recorded output and waste categories.</p>
+
+  <p>The production manager believes that the difference is largely due to moisture loss and evaporation. The environmental accountant does not accept this explanation without investigation because the company has also experienced an increase in cleaning chemicals, wastewater treatment charges and disposal expenditure.</p>
+
+  <p>A review of the factory reveals that some fruit material is removed during equipment cleaning and mixed with wastewater. Certain batches are also rejected because of inconsistent concentration levels. In addition, damaged packaging occasionally results in finished product being discarded even though the underlying concentrate remains usable.</p>
+
+  <p>The company pays for disposal of production waste and has recently become subject to higher landfill-related charges. In one incident, waste was incorrectly classified and the company incurred an additional compliance-related payment.</p>
+
+  <p>The finance director asks whether the unexplained material difference should be treated merely as an environmental issue. The environmental accountant explains that the lost material represents a potential financial cost because the company originally paid for the material. Disposal, treatment and compliance costs can add further financial consequences. Moreover, waste may represent lost resources and can create wider environmental impacts.</p>
+
+  <p>Management is considering installing improved filtration equipment. The equipment would require an initial investment and would increase depreciation. However, engineers estimate that it could reduce rejected batches, recover more usable material and reduce wastewater contamination.</p>
+
+  <p>The managing director is reluctant to approve the project because the new equipment would increase annual accounting depreciation. The management accountant argues that the relevant question is whether the overall resource and waste costs can be permanently reduced.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C4_HARD_042_1",
+      question: "What is the most appropriate first conclusion from the mass-balance information?",
+      options: [
+        "The unexplained difference should automatically be treated as profit",
+        "The difference indicates a need to investigate material losses, waste and other unexplained consumption",
+        "The difference proves that all production waste is unavoidable",
+        "The difference should be ignored because finished goods are the only relevant output"
+      ],
+      answer: 1,
+      reason: "Mass balance is designed to compare material inputs with outputs and identify losses or unexplained quantities requiring investigation."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_042_2",
+      question: "Why is treating the unexplained 1,600 tonnes simply as evaporation potentially dangerous from a management-accounting perspective?",
+      options: [
+        "Because all evaporation is impossible",
+        "Because it may conceal avoidable material loss, defective production or waste-treatment consequences",
+        "Because evaporation always creates revenue",
+        "Because environmental accounting excludes production losses"
+      ],
+      answer: 1,
+      reason: "The case identifies several possible causes of unexplained losses. Assuming evaporation without investigation could hide avoidable inefficiencies and associated costs."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_042_3",
+      question: "Why could the proposed filtration equipment represent cost reduction even though it increases depreciation?",
+      options: [
+        "Because higher depreciation automatically means lower total cost",
+        "Because it may change the production method and permanently reduce waste, rejects and resource losses",
+        "Because depreciation is irrelevant to decision-making",
+        "Because all capital investment is classified as cost reduction"
+      ],
+      answer: 1,
+      reason: "Cost reduction focuses on permanent reductions in unit cost. An investment that changes the process and reduces recurring waste and rejects can qualify even though it introduces depreciation."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_042_4",
+      question: "Which combination represents the broadest financial consequences of waste in this case?",
+      options: [
+        "Only landfill charges",
+        "Only raw-material purchases",
+        "Lost material value, disposal/treatment costs, rejected production and possible compliance costs",
+        "Only depreciation on factory equipment"
+      ],
+      answer: 2,
+      reason: "Waste can create multiple financial consequences, including the value of lost inputs, disposal and treatment costs, defective output and compliance-related costs."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_042_5",
+      question: "What should management primarily compare when evaluating the filtration investment?",
+      options: [
+        "Additional depreciation alone against the existing budget",
+        "The investment and ongoing costs against expected long-term savings from reduced material loss, rejects and waste treatment",
+        "Only the environmental department's annual budget",
+        "Only the purchase price of the equipment"
+      ],
+      answer: 1,
+      reason: "The decision should consider the broader and longer-term effects of the process change, rather than focusing solely on the additional depreciation."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_043",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: [
+    "Environmental Management Accounting",
+    "Water",
+    "Energy",
+    "Cost Control",
+    "Environmental Cost Reduction"
+  ],
+
+  caseText: `
+  <p>Zenith Surface Engineering operates a metal-treatment facility that supplies components to automobile manufacturers. Its processes require significant quantities of water for cleaning and cooling and electricity for heating, pumping and compressed-air systems.</p>
+
+  <p>For several years, the company attempted to reduce utility expenditure primarily by negotiating better electricity and water tariffs. These negotiations produced modest savings, but total utility expenditure continued to rise.</p>
+
+  <p>The new management accountant analysed resource consumption rather than expenditure alone. She discovered that production volume had increased by 4%, while electricity consumption had increased by 17% and water consumption by 21%.</p>
+
+  <p>Further investigation revealed that several production machines were left running between batches. Cooling systems were also kept active during extended breaks because operators believed restarting them might reduce equipment life. A compressed-air system had a small leak that had remained undetected for several months.</p>
+
+  <p>The water investigation produced an even more significant finding. Fresh water was being used for several cleaning stages even where lower-grade cleaning could have been performed using previously used water. The resulting wastewater was then sent to a treatment facility, meaning that the company incurred costs both when acquiring fresh water and when treating wastewater.</p>
+
+  <p>The operations manager proposes automatic shutdown controls and a water-reuse system. The controls require a moderate investment, while the water-reuse system requires a larger investment and additional monitoring.</p>
+
+  <p>Some managers argue that the company's existing annual budget already controls utilities because departments are given spending limits. The management accountant points out that a department can remain within its monetary budget while consuming excessive resources if utility prices fall. Conversely, it may exceed its budget because prices rise even though physical efficiency improves.</p>
+
+  <p>The board therefore wants a system that distinguishes price effects from resource-consumption effects and provides operational feedback that can be acted upon by production managers.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C4_HARD_043_1",
+      question: "Why is total utility expenditure alone an inadequate indicator of environmental resource efficiency?",
+      options: [
+        "Because expenditure can change due to both price and physical consumption",
+        "Because expenditure can never be measured",
+        "Because utility costs are always irrelevant",
+        "Because lower prices always mean lower consumption"
+      ],
+      answer: 0,
+      reason: "Financial expenditure reflects both the amount consumed and the price per unit. Physical consumption measures are therefore needed to identify operational efficiency."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_043_2",
+      question: "What does the 17% increase in electricity consumption against a 4% increase in production most strongly indicate?",
+      options: [
+        "Energy efficiency may have deteriorated",
+        "Production has become automatically more profitable",
+        "Energy consumption must be fixed",
+        "The company has reduced energy waste"
+      ],
+      answer: 0,
+      reason: "Energy consumption growing substantially faster than production suggests increased energy use per unit of output and potential inefficiency."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_043_3",
+      question: "Why does the water-reuse proposal have two potentially important financial effects?",
+      options: [
+        "It can reduce fresh-water purchases and wastewater treatment/disposal requirements",
+        "It increases both fresh-water purchases and wastewater generation",
+        "It affects only environmental reputation",
+        "It eliminates all production costs"
+      ],
+      answer: 0,
+      reason: "The company pays for water when purchasing it and again when treating/discharging wastewater. Reuse can reduce both costs."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_043_4",
+      question: "A department stays within its annual utility budget because electricity prices fall, despite using more electricity per unit. What does this demonstrate?",
+      options: [
+        "Budget compliance does not necessarily mean resource efficiency",
+        "The department has necessarily reduced its environmental impact",
+        "Physical efficiency is irrelevant",
+        "The budget is automatically a perfect environmental control"
+      ],
+      answer: 0,
+      reason: "A monetary budget can hide inefficient physical consumption when prices change. Resource-based measures provide additional control information."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_043_5",
+      question: "Which reporting approach would best support management's stated objective?",
+      options: [
+        "Report only total annual utility expenditure",
+        "Report physical consumption and relevant efficiency measures alongside financial costs",
+        "Report only electricity prices",
+        "Report only the annual environmental compliance fee"
+      ],
+      answer: 1,
+      reason: "EMA should help identify resource consumption and associated costs. Combining physical and financial information gives managers better operational feedback."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_044",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: [
+    "Environmental Management Accounting",
+    "Product Profitability",
+    "Pricing",
+    "Product Decisions",
+    "Cost Allocation"
+  ],
+
+  caseText: `
+  <p>NovaCare Medical Devices manufactures two disposable medical products, SafeSeal and RapidGuard. SafeSeal is a high-volume product used by hospitals, while RapidGuard is a lower-volume premium product used mainly by specialised clinics.</p>
+
+  <p>Under the company's conventional costing system, RapidGuard appears considerably more profitable. Its selling price is almost twice that of SafeSeal and its reported gross margin percentage is substantially higher. The company has therefore allocated more production capacity to RapidGuard during the past two years.</p>
+
+  <p>A new environmental review has raised concerns about this strategy. SafeSeal uses relatively large quantities of recyclable packaging but produces little hazardous waste. RapidGuard uses less packaging but contains a specialised chemical that requires controlled disposal. In addition, RapidGuard requires significantly more environmental inspections and laboratory testing because of its chemical composition.</p>
+
+  <p>Historically, all packaging, waste-treatment, inspection and environmental compliance expenditure has been included within factory overhead and allocated primarily on direct labour hours. RapidGuard uses fewer direct labour hours per unit than SafeSeal because its manufacturing process is more automated.</p>
+
+  <p>The management accountant believes that this creates a potentially serious distortion. RapidGuard may be receiving less overhead because of its low labour requirement even though it consumes substantial environmental resources. SafeSeal, meanwhile, may be absorbing environmental costs that are not caused by it.</p>
+
+  <p>Marketing argues that the premium selling price of RapidGuard proves that it is economically superior. The management accountant responds that price and profitability are not the same thing. A product can command a high selling price while also consuming disproportionately high resources.</p>
+
+  <p>Management is considering three possible responses if the revised analysis confirms the environmental-cost distortion. It could increase the price of RapidGuard, redesign the chemical formulation, or continue the product but invest in a cleaner production process. A fourth possibility is discontinuation if the product cannot generate an acceptable return after considering its full cost.</p>
+
+  <p>The chief executive wants the analysis completed before approving further capacity investment in RapidGuard.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C4_HARD_044_1",
+      question: "Why might the conventional labour-hour allocation particularly understate RapidGuard's environmental cost?",
+      options: [
+        "RapidGuard uses fewer labour hours but consumes substantial environmental activities",
+        "RapidGuard has no environmental costs",
+        "Labour hours always overstate environmental costs",
+        "Automation eliminates environmental expenditure"
+      ],
+      answer: 0,
+      reason: "RapidGuard's environmental resource consumption is high despite its low labour usage. Labour hours therefore fail to reflect the environmental activities causing its costs."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_044_2",
+      question: "Which factor most directly supports allocating RapidGuard's laboratory testing costs separately?",
+      options: [
+        "The number or extent of environmental tests required",
+        "Direct labour hours of all products",
+        "Sales price",
+        "Number of shareholders"
+      ],
+      answer: 0,
+      reason: "Testing costs should be assigned using a driver related to the testing activity itself."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_044_3",
+      question: "Why is marketing's statement that a higher selling price proves economic superiority incorrect?",
+      options: [
+        "Profitability depends on revenues and relevant costs, including costs caused by environmental activities",
+        "Selling price is never relevant",
+        "Only production volume determines profit",
+        "Environmental costs cannot affect product margins"
+      ],
+      answer: 0,
+      reason: "A higher selling price does not guarantee higher profit if the product also incurs significantly higher relevant costs."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_044_4",
+      question: "If RapidGuard remains profitable after environmental costs are properly assigned but its margin becomes much lower, which decision would be most consistent with EMA?",
+      options: [
+        "Consider pricing or process/product redesign before automatically discontinuing it",
+        "Ignore the revised environmental cost",
+        "Immediately increase production capacity",
+        "Automatically discontinue the product"
+      ],
+      answer: 0,
+      reason: "EMA supports informed decisions such as pricing, redesign and process improvement. High environmental cost does not automatically require discontinuation."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_044_5",
+      question: "What broader decision-making benefit does this environmental analysis provide?",
+      options: [
+        "It allows management to assess whether reported product profitability reflects the actual resources consumed",
+        "It guarantees that premium products are always unprofitable",
+        "It removes the need for product pricing",
+        "It ensures all environmental costs are treated as fixed"
+      ],
+      answer: 0,
+      reason: "Proper environmental costing can change product profitability information and improve product, pricing and process decisions."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_045",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: [
+    "Target Costing",
+    "Environmental Management Accounting",
+    "Value Engineering",
+    "Life Cycle Costing"
+  ],
+
+  caseText: `
+  <p>Electra Mobility Systems is developing a compact electric delivery vehicle for urban logistics companies. Market research suggests that fleet operators will pay approximately ₹12,00,000 per vehicle if the vehicle meets specified range, load capacity and reliability requirements. Management has established a target profit of ₹1,80,000 per vehicle.</p>
+
+  <p>The engineering department estimates the manufacturing cost of the first design at ₹10,50,000. The product team therefore initially concludes that the vehicle is comfortably within the target cost of ₹10,20,000.</p>
+
+  <p>However, the management accountant asks the team to reconsider what has been included in the cost. The current estimate includes manufacturing materials, direct labour and factory overhead but excludes several costs associated with the product's environmental characteristics.</p>
+
+  <p>The proposed battery-pack design requires an energy-intensive assembly process. The body uses a composite material that is difficult to recycle at the end of the vehicle's useful life. The company also expects to replace certain battery components during the service period. In addition, the proposed packaging for spare parts uses several single-use materials.</p>
+
+  <p>The engineering team argues that these costs should be dealt with after launch because they are not part of the initial manufacturing cost. The management accountant disagrees, explaining that decisions made during the design stage influence many costs incurred later in the product's life.</p>
+
+  <p>The value-engineering team develops three alternatives. The first uses a cheaper material but reduces durability. The second costs ₹18,000 more per vehicle but reduces assembly energy consumption and improves recyclability. The third maintains the current material but changes the battery-pack design, increasing design expenditure but reducing future servicing requirements.</p>
+
+  <p>Marketing also believes that the vehicle's environmental performance could become a selling feature for fleet operators that have their own sustainability targets.</p>
+
+  <p>The chief executive wants the team to avoid reducing functionality merely to achieve the target cost. He asks whether the environmental improvements can be incorporated while still achieving the required customer value and desired profitability.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C4_HARD_045_1",
+      question: "What is the correct initial target cost per vehicle?",
+      options: [
+        "₹10,20,000",
+        "₹10,50,000",
+        "₹13,80,000",
+        "₹1,80,000"
+      ],
+      answer: 0,
+      reason: "Target cost = Target selling price − Desired profit = ₹12,00,000 − ₹1,80,000 = ₹10,20,000."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_045_2",
+      question: "Why is the engineering team's initial conclusion potentially misleading?",
+      options: [
+        "The estimated manufacturing cost may exclude relevant environmental and life-cycle costs influenced by design decisions",
+        "Target costing never uses a target selling price",
+        "Environmental costs are always irrelevant to product design",
+        "The desired profit should be added to the selling price"
+      ],
+      answer: 0,
+      reason: "The case specifically identifies environmental and later-life costs that may be influenced by product design. A narrow manufacturing-cost estimate may therefore understate the relevant cost."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_045_3",
+      question: "The second alternative costs ₹18,000 more but reduces assembly energy consumption and improves recyclability. What is the strongest basis for evaluating it?",
+      options: [
+        "Reject it automatically because its purchase cost is higher",
+        "Compare the additional cost with the broader life-cycle and environmental savings while ensuring required functionality is maintained",
+        "Accept it automatically because it is environmentally superior",
+        "Ignore the effect on profitability"
+      ],
+      answer: 1,
+      reason: "A broader life-cycle analysis should consider additional design cost against future environmental and operating savings while preserving customer value."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_045_4",
+      question: "Why could reducing durability simply to achieve the target cost conflict with the principles of target costing?",
+      options: [
+        "Target costing seeks required functionality and quality at the target cost, not merely the cheapest possible design",
+        "Target costing requires the lowest-quality component",
+        "Durability has no relationship with customer value",
+        "Target costing ignores customer requirements"
+      ],
+      answer: 0,
+      reason: "Target costing is market- and customer-oriented. Cost reduction should not impair required functionality or quality."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_045_5",
+      question: "If customers value the vehicle's environmental performance, what additional strategic benefit may arise?",
+      options: [
+        "Potentially stronger demand or willingness to pay because environmental performance creates customer value",
+        "A guarantee that production costs will disappear",
+        "A requirement to reduce the selling price below target cost",
+        "Elimination of the need for value engineering"
+      ],
+      answer: 0,
+      reason: "Improved environmental performance can enhance customer value and potentially support stronger sales or premium pricing."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_046",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: [
+    "Life Cycle Costing",
+    "Environmental Management Accounting",
+    "Packaging",
+    "Transport",
+    "Cost Reduction"
+  ],
+
+  caseText: `
+  <p>Vertex Office Technologies supplies multifunction printers to large organisations under five-year service agreements. The company earns revenue not only from the initial sale of the printer but also from maintenance, replacement parts and service support throughout the agreement.</p>
+
+  <p>Historically, the purchasing department selected packaging based on the lowest initial purchase price. The standard system consists of cardboard boxes, foam inserts and protective plastic material. The packaging is inexpensive and provides good protection during initial delivery.</p>
+
+  <p>However, service records show that approximately 70% of printers are transported at least once during the five-year agreement for refurbishment, major repair or relocation. Customers normally dispose of the original packaging, meaning that Vertex must purchase additional protective packaging when the printer is transported again.</p>
+
+  <p>A logistics study estimates that packaging disposal, replacement packaging, additional handling and transport preparation represent a significant cost over the entire agreement period. The environmental department also estimates that the single-use packaging produces a substantial quantity of waste.</p>
+
+  <p>The company is considering a reusable transport system. Each reusable container would cost approximately three times as much as the existing packaging, but it could potentially be used for both initial delivery and subsequent transport. It would also reduce unpacking time because the printer would not need to be removed from multiple protective layers.</p>
+
+  <p>The purchasing manager argues that the reusable container is clearly more expensive because its purchase price is higher. The management accountant says that this conclusion is based on a short-term purchase view rather than a life-cycle analysis.</p>
+
+  <p>Further analysis shows that reusable packaging could reduce waste-disposal charges, replacement packaging costs and handling time. However, it would require a tracking system and a reverse-logistics arrangement to ensure containers are returned when equipment moves between locations.</p>
+
+  <p>The board wants to know whether the reusable system represents genuine cost reduction or simply an environmental initiative that increases cost.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C4_HARD_046_1",
+      question: "Which costing perspective is most appropriate for comparing the two packaging systems?",
+      options: [
+        "Life-cycle costing",
+        "Initial purchase-price analysis only",
+        "Historical costing",
+        "Absorption costing based only on first delivery"
+      ],
+      answer: 0,
+      reason: "The packaging affects costs throughout the five-year service period, including returns, disposal and handling. Life-cycle costing therefore provides the appropriate perspective."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_046_2",
+      question: "Why can the reusable container's higher purchase price fail to establish that it is more expensive overall?",
+      options: [
+        "Its higher initial cost may be offset by savings in disposal, replacement packaging, handling and subsequent transport",
+        "Purchase price is never a cost",
+        "Reusable containers have no operating cost",
+        "Environmental costs automatically become zero"
+      ],
+      answer: 0,
+      reason: "A life-cycle decision compares all relevant costs over the period, not simply the initial purchase price."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_046_3",
+      question: "Which additional factor makes the reusable system more economically attractive in the case?",
+      options: [
+        "Reduced unpacking and handling time",
+        "Higher single-use waste",
+        "More frequent purchase of replacement packaging",
+        "Greater disposal requirements"
+      ],
+      answer: 0,
+      reason: "The reusable system may reduce labour and handling time in addition to environmental and packaging costs."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_046_4",
+      question: "Why is the reverse-logistics requirement relevant to the decision?",
+      options: [
+        "It represents an additional cost and operational requirement that must be included in the broader analysis",
+        "It proves reusable packaging is automatically uneconomic",
+        "It eliminates all environmental benefits",
+        "It is irrelevant because transport has no cost"
+      ],
+      answer: 0,
+      reason: "The reusable system requires tracking and return logistics. These costs must be included in a complete life-cycle evaluation."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_046_5",
+      question: "If total life-cycle cost falls despite the higher initial packaging price, which conclusion is most appropriate?",
+      options: [
+        "The reusable system may represent genuine cost reduction as well as environmental improvement",
+        "The system cannot be considered cost reduction",
+        "The company should reject it because initial purchase price is higher",
+        "Only the environmental department should decide"
+      ],
+      answer: 0,
+      reason: "A permanent reduction in total relevant cost over the product/service life can represent genuine cost reduction even when the initial investment is higher."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_047",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: [
+    "Environmental Management Accounting",
+    "TQM",
+    "Zero Waste",
+    "Cost Reduction",
+    "Management Information"
+  ],
+
+  caseText: `
+  <p>Ardent Engineering Components has introduced a company-wide programme called "Zero Loss Manufacturing". The programme combines Total Quality Management with environmental objectives. Management has established targets of zero avoidable waste, zero major chemical spills, zero customer complaints arising from environmental failures, zero avoidable production accidents and continuous reduction in energy consumption per unit.</p>
+
+  <p>The quality department initially treated the programme as a quality initiative, while the environmental department treated it as a compliance initiative. The finance director believes both departments are approaching the programme too narrowly.</p>
+
+  <p>During the first six months, the company records a 14% reduction in defective output and a 10% reduction in material waste. However, environmental disposal costs fall by only 3%. The production manager believes the programme has therefore failed to generate significant financial benefits.</p>
+
+  <p>The management accountant investigates further and discovers that waste disposal charges increased during the period because the external disposal contractor revised its prices. Physical waste had actually fallen considerably. At the same time, the company had invested in improved waste segregation, which initially increased internal handling costs.</p>
+
+  <p>Energy consumption per unit of production also declined, but total energy expenditure increased because production volume grew substantially. Some managers interpret the increase in total expenditure as evidence that the programme is unsuccessful.</p>
+
+  <p>The finance director explains that the information system should distinguish changes in price, volume and physical efficiency. He also insists that monthly reports should show performance against the company's zero objectives rather than merely comparing total expenditure with last year's expenditure.</p>
+
+  <p>Management is considering whether to continue the programme. The chief executive wants a report explaining why financial expenditure alone may provide an incomplete picture of environmental and quality performance.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C4_HARD_047_1",
+      question: "Why does the 3% fall in disposal expenditure not necessarily imply that waste reduction was only 3% effective?",
+      options: [
+        "Disposal prices increased, so financial expenditure may not move in proportion to physical waste",
+        "Waste reduction can never affect disposal cost",
+        "Environmental expenditure is always fixed",
+        "Physical waste is irrelevant"
+      ],
+      answer: 0,
+      reason: "The case states that the disposal contractor increased prices. Therefore, the financial reduction understates the improvement in physical waste."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_047_2",
+      question: "Why can total energy expenditure rise while energy efficiency improves?",
+      options: [
+        "Production volume may increase faster than the reduction in energy consumption per unit",
+        "Energy efficiency always increases expenditure",
+        "Energy prices cannot change",
+        "Total expenditure is always a physical measure"
+      ],
+      answer: 0,
+      reason: "Total expenditure depends on both unit consumption and production volume. Higher production can increase total expenditure even when energy use per unit falls."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_047_3",
+      question: "Which information would best demonstrate whether energy efficiency has improved?",
+      options: [
+        "Energy consumed per unit of production",
+        "Total energy expenditure only",
+        "Total sales value only",
+        "Annual profit only"
+      ],
+      answer: 0,
+      reason: "Energy consumed per unit is a physical efficiency indicator and is less distorted by changes in production volume."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_047_4",
+      question: "Why can improved waste segregation initially increase internal handling costs without making the programme unsuccessful?",
+      options: [
+        "The programme may involve an initial process cost while producing longer-term waste-treatment and environmental benefits",
+        "Higher handling costs always prove failure",
+        "Waste segregation has no financial purpose",
+        "Initial costs are never relevant"
+      ],
+      answer: 0,
+      reason: "A new environmental process may initially require additional resources. Its success should be assessed using the broader operational and long-term effects."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_047_5",
+      question: "What is the strongest reason for reporting performance against zero objectives?",
+      options: [
+        "It provides feedback on whether operational and environmental objectives are actually being achieved",
+        "It guarantees zero waste",
+        "It eliminates the need for financial information",
+        "It replaces all quality measures"
+      ],
+      answer: 0,
+      reason: "Management information should provide feedback on success or failure against objectives and support corrective action."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_048",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: [
+    "Environmental Management Accounting",
+    "Transport",
+    "Resource Efficiency",
+    "Cost Reduction",
+    "Decision Making"
+  ],
+
+  caseText: `
+  <p>National Distribution Equipment Limited supplies heavy industrial equipment to customers across India. Transportation represents a significant component of the company's operating cost. The company owns a fleet of diesel vehicles and also contracts third-party transporters during periods of high demand.</p>
+
+  <p>The finance department has traditionally evaluated transport performance primarily by total transportation expenditure as a percentage of sales. The logistics manager has recently argued that this measure hides important operational differences between routes.</p>
+
+  <p>Some vehicles return from customer locations empty because the company has no systematic process for identifying return loads. Other vehicles travel partially loaded because delivery schedules are determined independently by different regional sales teams. The company also uses older vehicles that consume significantly more fuel than newer models.</p>
+
+  <p>The environmental accountant proposes an EMA-based review of transport activity. The review would examine fuel consumption, distance travelled, vehicle utilisation, load factors and opportunities for route consolidation.</p>
+
+  <p>The finance director is considering replacing a portion of the fleet with more fuel-efficient vehicles. The replacement programme would increase depreciation and financing costs in the short term. However, the new vehicles would consume less fuel and may require less maintenance.</p>
+
+  <p>The sales director objects that the environmental analysis is unnecessary because transportation expenditure already appears reasonable compared with sales. The environmental accountant responds that the percentage-of-sales measure can improve merely because sales prices rise even if transport efficiency deteriorates.</p>
+
+  <p>Management is also considering a route-planning system that would consolidate deliveries and reduce empty return journeys. The system would require implementation expenditure and employee training.</p>
+
+  <p>The board wants to determine whether the proposed measures should be evaluated as environmental initiatives, cost-reduction initiatives or both.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C4_HARD_048_1",
+      question: "Why can transportation expenditure as a percentage of sales fail to reveal deterioration in transport efficiency?",
+      options: [
+        "Sales value can change independently of physical fuel consumption and vehicle efficiency",
+        "Transportation expenditure is always fixed",
+        "Sales have no relationship with financial ratios",
+        "Fuel consumption cannot be measured"
+      ],
+      answer: 0,
+      reason: "A ratio based on sales can improve because selling prices or sales volume increase, even when physical transport efficiency worsens."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_048_2",
+      question: "Which operational information would best help identify the empty-return problem?",
+      options: [
+        "Vehicle utilisation and load factor by route",
+        "Annual sales revenue alone",
+        "Total employee salary",
+        "Shareholder dividend"
+      ],
+      answer: 0,
+      reason: "Load factor and vehicle utilisation directly reveal whether transport capacity is being used efficiently."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_048_3",
+      question: "Why can route consolidation be considered cost reduction rather than merely cost control?",
+      options: [
+        "It can permanently change the transport process and reduce recurring fuel and travel costs",
+        "It merely compares actual expenditure with budget",
+        "It increases empty journeys",
+        "It eliminates the need for logistics planning"
+      ],
+      answer: 0,
+      reason: "Changing route planning to eliminate unnecessary journeys can permanently reduce recurring operating costs."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_048_4",
+      question: "If fuel-efficient vehicles increase depreciation but reduce fuel and maintenance costs for several years, what approach should management use?",
+      options: [
+        "Evaluate the longer-term total cost and savings rather than rejecting the vehicles because depreciation rises",
+        "Reject them automatically because depreciation increases",
+        "Consider only fuel cost in the first month",
+        "Ignore maintenance costs"
+      ],
+      answer: 0,
+      reason: "The decision should consider the overall longer-term cost consequences of the fleet change."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_048_5",
+      question: "Why can the proposed measures legitimately be viewed as both environmental and cost-reduction initiatives?",
+      options: [
+        "Reducing fuel use and unnecessary travel can lower financial cost while reducing resource consumption and environmental impact",
+        "Environmental initiatives can never reduce cost",
+        "Cost reduction necessarily increases environmental damage",
+        "Transport efficiency affects only customer service"
+      ],
+      answer: 0,
+      reason: "Fuel and travel reductions can simultaneously reduce operating expenditure and environmental resource use."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_049",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: [
+    "Environmental Management Accounting",
+    "ABC",
+    "Cost Drivers",
+    "Toxicity",
+    "Environmental Impact"
+  ],
+
+  caseText: `
+  <p>Trident Chemical Solutions produces four chemical intermediates: P, Q, R and S. All four products are manufactured in the same facility, but their environmental characteristics vary considerably.</p>
+
+  <p>P is a high-volume product that generates large quantities of relatively harmless solid waste. Q is a medium-volume product that produces a small quantity of highly toxic liquid waste. R is a low-volume product that requires frequent environmental monitoring. S is a medium-volume product that generates emissions that are expensive to treat because specialised filtration equipment is required.</p>
+
+  <p>The company currently has a single environmental overhead pool of ₹40 lakh. The entire amount is allocated using production volume. The finance team believes this is objective because production quantities are easy to verify.</p>
+
+  <p>The environmental manager challenges this approach. She argues that objectivity is not enough if the driver does not reflect causation. For example, Q produces only a small quantity of waste but its toxicity means that treatment costs are disproportionately high. R's environmental cost is driven primarily by monitoring requirements rather than physical waste. S's costs are strongly associated with emissions-treatment equipment.</p>
+
+  <p>The company therefore considers establishing separate cost pools. The first pool relates to solid-waste treatment, the second to toxic-waste treatment, the third to environmental monitoring and the fourth to emissions-treatment operations.</p>
+
+  <p>Several managers object that allocating costs using toxicity, inspections and emissions would make the system subjective. The management accountant explains that a driver should be selected because it has a logical relationship with the activity, not simply because it is easy to measure.</p>
+
+  <p>The board is especially concerned about Q. Under the existing system, Q appears to have excellent profitability because it has a relatively high selling price and low production volume. The environmental manager suspects that the product is receiving only a fraction of the environmental cost it actually causes.</p>
+
+  <p>The board is not interested in using the new system merely to punish Q. It wants to know whether Q should be repriced, redesigned, produced using a cleaner process or retained because the environmental cost can be reduced.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C4_HARD_049_1",
+      question: "What is the strongest criticism of using production volume as the sole driver for the ₹40 lakh environmental pool?",
+      options: [
+        "Production volume is always an invalid cost driver",
+        "Different environmental activities are caused by different factors, so one volume driver may distort product costs",
+        "Production volume cannot be measured",
+        "Environmental costs must always be allocated equally"
+      ],
+      answer: 1,
+      reason: "The key issue is not that production volume is inherently invalid, but that it may not causally explain the different environmental activities in this factory."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_049_2",
+      question: "Why could Q's small quantity of waste still generate a high environmental cost?",
+      options: [
+        "Because highly toxic waste may require disproportionately expensive treatment",
+        "Because all small quantities of waste are expensive",
+        "Because production volume automatically determines toxicity",
+        "Because environmental costs do not depend on treatment requirements"
+      ],
+      answer: 0,
+      reason: "Toxicity and treatment difficulty can make a small quantity of waste substantially more expensive to treat."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_049_3",
+      question: "Which allocation driver would most logically support the environmental monitoring pool for R?",
+      options: [
+        "Number or extent of environmental inspections and monitoring activities",
+        "Total production volume",
+        "Selling price",
+        "Number of sales invoices"
+      ],
+      answer: 0,
+      reason: "R's environmental costs are stated to be driven primarily by monitoring requirements, so monitoring activity is the appropriate driver."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_049_4",
+      question: "Which statement best addresses the managers' objection that the new drivers may be less simple?",
+      options: [
+        "A more complex system can be justified if it provides materially better causal allocation of costs",
+        "Complexity automatically makes an accounting system invalid",
+        "Simple systems are always more accurate",
+        "Cost allocation should be based only on ease of measurement"
+      ],
+      answer: 0,
+      reason: "The purpose of ABC is better attribution of costs to activities and products. A driver should be selected for its relationship to the cost, not merely its convenience."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_049_5",
+      question: "If revised costing makes Q less profitable but still economically viable, which recommendation is most appropriate?",
+      options: [
+        "Consider pricing, redesign or cleaner production before deciding whether to discontinue Q",
+        "Automatically discontinue Q",
+        "Ignore environmental costs because Q remains profitable",
+        "Allocate Q's costs to P to restore Q's profitability"
+      ],
+      answer: 0,
+      reason: "EMA is intended to improve decision-making. Management can consider pricing, product redesign and process improvements before taking the extreme step of discontinuation."
+    }
+  ]
+},
+
+{
+  case_id: "SCM_C4_HARD_050",
+  difficulty: "hard",
+  case_chapter: "Chapter4",
+  case_topic: [
+    "Environmental Management Accounting",
+    "Target Costing",
+    "Life Cycle Costing",
+    "Value Engineering",
+    "Environmental Cost"
+  ],
+
+  caseText: `
+  <p>BlueWave Consumer Electronics is developing a premium home water-purification system. The company has conducted extensive market research and estimates that customers are willing to pay ₹28,000 for a system offering the required purification capacity, reliability and design features.</p>
+
+  <p>Management wants a profit of ₹7,000 per unit. The engineering team's first design has an estimated manufacturing cost of ₹19,800 per unit, leading the team to conclude that the product comfortably meets the target cost.</p>
+
+  <p>Before the design is approved, the management accountant requests a life-cycle review. The product is expected to remain with customers for approximately six years. The filtration cartridges require periodic replacement, and the used cartridges will create disposal issues because several components are difficult to separate.</p>
+
+  <p>The manufacturing process also uses a specialised cleaning solution and large quantities of water. The engineering department had classified these items as factory overhead and had not attempted to estimate their environmental cost per unit.</p>
+
+  <p>The packaging department proposes a premium presentation box containing multiple plastic protective components. Marketing believes the packaging will support the premium positioning of the product. The environmental manager points out that the packaging will largely be discarded after installation.</p>
+
+  <p>The value-engineering team proposes several alternatives. One alternative reduces packaging material but slightly increases assembly time. Another uses a recyclable filtration component that costs ₹900 more per unit but reduces disposal requirements throughout the product's life. A third alternative changes the manufacturing cleaning process, requiring an initial equipment investment but reducing water and cleaning-solution consumption.</p>
+
+  <p>Marketing estimates that strong environmental positioning could allow the company to charge a modest premium if customers perceive genuine environmental benefits. However, the finance director warns that management should not assume a premium price without evidence that customers value the improvement.</p>
+
+  <p>The chief executive therefore asks the team to determine the appropriate target cost and evaluate whether design decisions should be based solely on manufacturing cost or on a broader life-cycle perspective.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C4_HARD_050_1",
+      question: "What is the target cost per unit for the water-purification system?",
+      options: [
+        "₹21,000",
+        "₹19,800",
+        "₹35,000",
+        "₹7,000"
+      ],
+      answer: 0,
+      reason: "Target cost = Target selling price − Desired profit = ₹28,000 − ₹7,000 = ₹21,000."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_050_2",
+      question: "Why is the engineering team's ₹19,800 manufacturing-cost estimate insufficient by itself for evaluating the design?",
+      options: [
+        "It may exclude environmental and other life-cycle costs affected by design decisions",
+        "Manufacturing cost is never relevant",
+        "Target costing ignores design-stage decisions",
+        "The selling price is irrelevant"
+      ],
+      answer: 0,
+      reason: "The case identifies filtration disposal, water, cleaning-solution and packaging consequences that extend beyond the initial manufacturing-cost estimate."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_050_3",
+      question: "The recyclable filtration component costs ₹900 more but reduces disposal requirements throughout six years. Which concept is most relevant?",
+      options: [
+        "Life-cycle costing",
+        "Historical cost accounting",
+        "Simple purchase-price comparison",
+        "Budgetary control only"
+      ],
+      answer: 0,
+      reason: "The additional ₹900 must be compared with costs and benefits occurring throughout the product's life, making life-cycle costing relevant."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_050_4",
+      question: "Why might reducing premium packaging be consistent with value engineering?",
+      options: [
+        "It may remove or reduce a function that does not provide sufficient customer value while lowering cost",
+        "Value engineering requires using the most expensive packaging",
+        "Packaging cost can never be reduced",
+        "Value engineering ignores customer requirements"
+      ],
+      answer: 0,
+      reason: "Value engineering examines whether required functions can be achieved at lower cost. If excessive packaging adds little customer value, it can be redesigned or reduced."
+    },
+
+    {
+      question_id: "SCM_C4_HARD_050_5",
+      question: "Why should management be cautious about assuming that environmental improvements automatically justify a higher selling price?",
+      options: [
+        "A premium price depends on whether customers actually value the environmental improvement sufficiently",
+        "Environmental performance can never influence customer demand",
+        "Premium pricing is prohibited under target costing",
+        "Higher environmental performance always reduces customer value"
+      ],
+      answer: 0,
+      reason: "EMA may reveal environmental improvements that enhance customer value and potentially support premium pricing, but the premium cannot simply be assumed without evidence of customer willingness to pay."
+    }
+  ]
+},
+
+// Chapter 5
+
+// ============================================================
+// CHAPTER 75 — CORRECTED 10 CASES / 50 MCQs
+// Answers are properly distributed across 0, 1, 2 and 3.
+// answer uses ZERO-BASED indexing.
+// ============================================================
+
+{
+  case_id: "SCM_C75_MEDIUM_001",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Digital Technologies",
+    "Automation",
+    "Digital Transformation",
+    "Artificial Intelligence",
+    "Mobile Internet"
+  ],
+
+  caseText: `
+
+  <p>NovaForge Components Limited manufactures precision components used by automobile and industrial-equipment manufacturers. For many years, the company operated a conventional production system in which machine operators manually recorded production quantities, machine stoppages and inspection results at the end of every shift. Supervisors reviewed the information the following morning and prepared reports for the production manager.</p>
+
+  <p>Although the company had invested in modern CNC machines, management realised that the machines were not being used to their full potential. A machine could remain idle for several hours because of an unexpected breakdown, shortage of material or quality problem, but the problem was often discovered only after the shift report was prepared. The production team therefore proposed installing sensors that could continuously transmit information regarding machine temperature, vibration, production speed and operating status.</p>
+
+  <p>The finance department initially described the proposed system as an automation project because the system would reduce manual recording. However, the operations manager argued that this description was incomplete. The primary objective was not merely to eliminate manual data entry. Management wanted real-time information about the condition of machines so that maintenance teams could intervene before a major failure occurred.</p>
+
+  <p>The company subsequently connected production equipment through an internal network. Machine information could be viewed by supervisors on tablets while they were moving around the factory. The maintenance department also began using historical machine data to identify patterns associated with breakdowns. After several months, management found that certain combinations of temperature and vibration were frequently followed by machine failure.</p>
+
+  <p>The company then introduced an AI-based system that could analyse these patterns and generate warnings. Instead of waiting for a machine to fail, maintenance personnel could investigate the warning and schedule maintenance during a suitable production break.</p>
+
+  <p>Management also introduced mobile applications for field engineers. Engineers visiting customer locations could access machine manuals, previous service records and technical information using mobile internet. In selected cases, augmented instructions were displayed on the engineer's device while the engineer inspected the customer's equipment.</p>
+
+  <p>The managing director asked the management accountant to determine whether the project should be regarded simply as automation or whether the collection, processing and use of information had resulted in a broader change to the company's processes and operating model.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_001_1",
+
+      question: "Which technology is most directly represented by the sensors continuously transmitting machine information to the company's network?",
+
+      options: [
+        "Blockchain",
+        "Internet of Things (IoT)",
+        "3D Printing",
+        "Autonomous Vehicles"
+      ],
+
+      answer: 1,
+
+      reason: "IoT involves connected smart devices and sensors that continuously collect and transmit information, allowing manufacturers to obtain operational and process insights."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_001_2",
+
+      question: "The original manual data-entry activity being replaced by technology would most directly represent which concept?",
+
+      options: [
+        "Automation",
+        "New-market disruption",
+        "Business ecosystem",
+        "Access-over-ownership"
+      ],
+
+      answer: 0,
+
+      reason: "Automation occurs when technology performs work traditionally performed by humans, such as automatically recording production information."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_001_3",
+
+      question: "Why does the AI-based maintenance warning system go beyond merely replacing manual data entry?",
+
+      options: [
+        "It eliminates the need for all production workers",
+        "It changes the company's legal ownership",
+        "It analyses previous data and supports decisions regarding future machine failures",
+        "It only stores paper records electronically"
+      ],
+
+      answer: 2,
+
+      reason: "AI can analyse data and identify patterns, allowing the system to generate insights and support decisions rather than simply replacing a manual recording activity."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_001_4",
+
+      question: "The use of tablets by supervisors to obtain production information while moving around the factory is primarily enabled by which technology mentioned in the chapter?",
+
+      options: [
+        "Blockchain",
+        "3D Printing",
+        "Group Technology",
+        "Mobile Internet"
+      ],
+
+      answer: 3,
+
+      reason: "Mobile Internet enables continuous connectivity and access to machine and operational information while employees are working away from fixed computer terminals."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_001_5",
+
+      question: "If the technology changes the company's processes, services and organisational way of working rather than merely replacing a manual task, which description is most appropriate?",
+
+      options: [
+        "Transformation",
+        "Traditional budgeting",
+        "Historical costing",
+        "Basic automation only"
+      ],
+
+      answer: 0,
+
+      reason: "Transformation occurs when technology revamps products or services together with processes and potentially organisational culture, rather than merely replacing an existing human task."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_MEDIUM_002",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Business Ecosystems",
+    "Data Flywheel",
+    "Growth Flywheel",
+    "Cost Flywheel",
+    "Platform Ecosystem"
+  ],
+
+  caseText: `
+
+  <p>UrbanBasket Technologies operates an online platform connecting local grocery stores, independent delivery partners and customers. When the company was launched, its management believed that success would depend mainly on developing a better mobile application than competing grocery businesses.</p>
+
+  <p>However, after entering several cities, management noticed that the application itself was only one part of the value delivered to customers. Customers wanted a wider range of products, reliable delivery, accurate stock information and competitive prices. Grocery stores wanted access to more customers without having to invest heavily in their own delivery systems. Delivery partners wanted sufficient order density so that they could earn reasonable income without spending excessive time travelling between locations.</p>
+
+  <p>UrbanBasket therefore began developing relationships with supermarkets, small grocery stores, logistics partners, payment providers and technology companies. The company stopped viewing these organisations merely as external suppliers and began considering them as participants in a broader business ecosystem.</p>
+
+  <p>As the number of customers increased, UrbanBasket collected more information about purchasing patterns, delivery times, product availability and customer preferences. Management used this information to improve demand forecasts and recommend products to customers.</p>
+
+  <p>The improved recommendations attracted more customers. The larger customer base attracted additional grocery stores because retailers wanted access to the growing market. More stores increased product variety, which further improved the platform's value proposition.</p>
+
+  <p>The company also found that a larger number of orders allowed delivery routes to be planned more efficiently. Fixed technology and administrative costs could be spread over a larger transaction base. The resulting reduction in average operating cost allowed UrbanBasket to offer better prices and invest further in its platform.</p>
+
+  <p>A competitor argued that UrbanBasket's competitive advantage was simply its mobile application. The chief executive disagreed. She explained that the application could be copied relatively easily, whereas the relationships, information flows, user base and interconnected participants formed a broader system that was more difficult to replicate.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_002_1",
+
+      question: "Why is UrbanBasket better described as participating in a business ecosystem rather than operating as an isolated business?",
+
+      options: [
+        "It operates without customers",
+        "It coordinates suppliers, customers, delivery partners and other organisations that jointly contribute to value creation",
+        "It has eliminated all competition",
+        "It manufactures every product itself"
+      ],
+
+      answer: 1,
+
+      reason: "A business ecosystem consists of interconnected organisations such as suppliers, distributors, customers and other participants that cooperate and compete while contributing to a product or service."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_002_2",
+
+      question: "The increasing amount of purchasing and delivery information helping UrbanBasket improve its forecasts is an example of which flywheel?",
+
+      options: [
+        "Cost flywheel",
+        "Promotion flywheel",
+        "Ownership flywheel",
+        "Data flywheel"
+      ],
+
+      answer: 3,
+
+      reason: "The data flywheel operates through more and richer data leading to deeper and better insights."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_002_3",
+
+      question: "More customers attracting more grocery stores and more stores increasing customer value most closely represents which flywheel?",
+
+      options: [
+        "Growth flywheel",
+        "Closed-loop production",
+        "Data flywheel only",
+        "Cost flywheel only"
+      ],
+
+      answer: 0,
+
+      reason: "The growth flywheel occurs when more users and partners generate network effects and improve the overall value proposition."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_002_4",
+
+      question: "UrbanBasket's ability to spread fixed technology and administrative costs over a larger transaction base represents which flywheel?",
+
+      options: [
+        "Innovation incubator",
+        "New-market disruption",
+        "Cost flywheel",
+        "Data flywheel"
+      ],
+
+      answer: 2,
+
+      reason: "The cost flywheel involves scale spreading fixed costs, reducing unit costs and thereby improving the value proposition."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_002_5",
+
+      question: "Why might the ecosystem be harder for a competitor to copy than the mobile application itself?",
+
+      options: [
+        "The ecosystem includes interconnected relationships, data, users and partners that collectively create value",
+        "The ecosystem does not depend on customers",
+        "Competitors are legally prohibited from developing applications",
+        "Mobile applications can never be copied"
+      ],
+
+      answer: 0,
+
+      reason: "The strategic strength of an ecosystem comes from interconnected participants, relationships, data and network effects rather than from a single technological component."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_MEDIUM_003",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Lean Start-up",
+    "Minimum Viable Product",
+    "Build Measure Learn",
+    "Pivot",
+    "Design Thinking"
+  ],
+
+  caseText: `
+
+  <p>EduTrack Labs was established by three entrepreneurs who wanted to develop a digital learning platform for professional students. Their initial idea was ambitious. They planned to build a complete application containing video lectures, adaptive tests, discussion forums, personalised dashboards, performance analytics and an AI-based study assistant.</p>
+
+  <p>The founders prepared a detailed twelve-month development plan and estimated that a substantial amount of capital would be required before the first version could be released. One founder, who had previously worked with technology start-ups, questioned whether the company should commit such resources before determining whether students actually wanted all the proposed features.</p>
+
+  <p>The team therefore conducted interviews with students and discovered that the most frequently mentioned problem was not the absence of video lectures. Students already had access to many lecture platforms. Their stronger concern was that they did not know which topics they had genuinely mastered and which areas required additional practice.</p>
+
+  <p>Based on this finding, the founders changed their initial development plan. Instead of building the entire application, they created a basic minimum viable product containing only chapter-wise diagnostic tests and a simple performance dashboard.</p>
+
+  <p>The first version was released to a small group of students. Management measured the percentage of students completing the diagnostic test, the number returning for another test and the extent to which students used the recommended practice questions.</p>
+
+  <p>The results showed that students were completing the tests but were rarely using the automated recommendations. Interviews revealed that students did not trust recommendations that were based only on their previous scores. They wanted explanations for incorrect answers before accepting a recommendation.</p>
+
+  <p>The founders therefore decided to change the product hypothesis. They added concise explanations and concept-level feedback rather than immediately building the planned AI assistant.</p>
+
+  <p>The finance manager initially considered the experimentation process inefficient because several features had been discarded. The founders argued that avoiding expenditure on unwanted features was precisely the purpose of their approach. They accepted that experimentation itself created costs, but believed that those costs were preferable to spending heavily on a product based on untested assumptions.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_003_1",
+
+      question: "Why did EduTrack initially avoid building the complete application?",
+
+      options: [
+        "The company intended to abandon the business",
+        "The founders wanted to test assumptions before committing substantial resources",
+        "The founders had no interest in customers",
+        "Lean start-up requires every feature to be completed before testing"
+      ],
+
+      answer: 1,
+
+      reason: "Lean start-up seeks to avoid committing excessive resources under uncertainty by experimenting, testing assumptions and learning before scaling."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_003_2",
+
+      question: "The basic chapter-wise test and dashboard released to a limited group of students is best described as:",
+
+      options: [
+        "Closed-loop production",
+        "Full-scale commercial product",
+        "Minimum Viable Product",
+        "Platform ecosystem"
+      ],
+
+      answer: 2,
+
+      reason: "An MVP is a basic version of a product designed to test important assumptions and obtain customer feedback with limited resources."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_003_3",
+
+      question: "Which sequence best describes the approach followed by EduTrack?",
+
+      options: [
+        "Scale → Build → Ignore",
+        "Build → Measure → Learn",
+        "Forecast → Manufacture → Audit",
+        "Measure → Sell → Retire"
+      ],
+
+      answer: 1,
+
+      reason: "The lean start-up methodology follows Build → Measure → Learn, allowing entrepreneurs to test hypotheses and continuously adjust."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_003_4",
+
+      question: "The founders changing their product hypothesis after discovering that students wanted explanations is an example of:",
+
+      options: [
+        "Access-over-ownership",
+        "Hypermarket model",
+        "Milking as cash cow",
+        "Pivot"
+      ],
+
+      answer: 3,
+
+      reason: "A pivot is a structural course correction designed to test a new fundamental hypothesis about the business model."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_003_5",
+
+      question: "Why can lean start-up methodology reduce waste even though experimentation itself may create additional costs?",
+
+      options: [
+        "It can prevent large expenditure on features or products that customers do not value",
+        "It removes the need for customer feedback",
+        "It guarantees profitability immediately",
+        "It eliminates every form of experimentation cost"
+      ],
+
+      answer: 0,
+
+      reason: "Lean start-up may incur experimentation costs, but these can prevent much larger waste arising from building and scaling products based on incorrect assumptions."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_MEDIUM_004",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Agile Organisations",
+    "Design Thinking",
+    "Lean Start-up",
+    "Six Sigma",
+    "Customer Centricity"
+  ],
+
+  caseText: `
+
+  <p>MedAssist Devices manufactures monitoring equipment used by hospitals. Historically, product development followed a highly structured departmental process. The marketing department collected customer requirements, engineering converted those requirements into technical specifications, production prepared manufacturing plans and the quality department performed final testing after the product had been developed.</p>
+
+  <p>Although the system worked reasonably well when customer requirements changed slowly, hospitals increasingly requested customised features, faster software updates and simpler interfaces. Competitors were releasing improvements much more frequently than MedAssist.</p>
+
+  <p>Senior management initially responded by asking each department to work harder. However, the delays continued because decisions had to pass through several levels of management. Engineers also had limited direct interaction with hospital users.</p>
+
+  <p>The company then created cross-functional teams containing engineers, designers, marketing specialists, quality professionals and customer-support personnel. These teams were given authority to make many product decisions without waiting for approval from several departmental managers.</p>
+
+  <p>The teams first spent time understanding how nurses and technicians actually used the equipment. Several assumptions made by the original product designers proved incorrect. A prototype with a simplified interface was then tested with users.</p>
+
+  <p>After customer problems were identified, the company used an iterative development process to modify the prototype and release an improved version for further testing. Once the product became sufficiently mature, the quality team applied statistical process-improvement techniques to reduce defects and variation in production.</p>
+
+  <p>The chief operating officer described the new approach as a combination of three philosophies. The company first sought to understand users and redefine the problem, then tested the business/product hypothesis through a small solution, and finally used iterative development before applying mature quality-improvement techniques.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_004_1",
+
+      question: "What characteristic of the new organisational structure most clearly indicates an agile organisation?",
+
+      options: [
+        "Longer approval chains",
+        "Complete separation of engineering and customers",
+        "Empowered cross-functional teams with faster decision-making",
+        "Greater dependence on rigid departmental silos"
+      ],
+
+      answer: 2,
+
+      reason: "Agile organisations rely on networks of empowered teams, collaboration, transparency and faster decision-making rather than rigid departmental silos."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_004_2",
+
+      question: "The team's effort to understand how nurses and technicians actually use the equipment is most closely associated with:",
+
+      options: [
+        "Blockchain",
+        "Design Thinking",
+        "Free model",
+        "Hypermarket model"
+      ],
+
+      answer: 1,
+
+      reason: "Design Thinking begins with understanding users, their needs and problems and challenging assumptions before developing solutions."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_004_3",
+
+      question: "The small prototype being tested before extensive development most closely reflects:",
+
+      options: [
+        "Cost flywheel",
+        "Lean Start-up",
+        "Access-over-ownership",
+        "Closed-loop production"
+      ],
+
+      answer: 1,
+
+      reason: "Lean start-up uses MVPs or basic solutions to test hypotheses and learn from customers before committing substantial resources."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_004_4",
+
+      question: "Which sequence best represents the approaches described in the case?",
+
+      options: [
+        "Lean Start-up → Six Sigma → Design Thinking → Agile",
+        "Six Sigma → Agile → Design Thinking → Lean Start-up",
+        "Agile → Six Sigma → Lean Start-up → Design Thinking",
+        "Design Thinking → Lean Start-up → Agile → Six Sigma"
+      ],
+
+      answer: 3,
+
+      reason: "The chapter identifies the sequence as Design Thinking → Lean Start-up → Agile → Six Sigma."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_004_5",
+
+      question: "Why was the old departmental structure becoming less effective?",
+
+      options: [
+        "It slowed decisions and limited direct collaboration with changing customer needs",
+        "It eliminated quality control",
+        "It guaranteed excessive innovation",
+        "It prevented the company from having any employees"
+      ],
+
+      answer: 0,
+
+      reason: "Traditional hierarchical structures can create departmental silos and slow decision-making, making rapid responses to changing customers and technology difficult."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_MEDIUM_005",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Emerging National Markets",
+    "Emerging Market Business Models",
+    "Strategic Cost Management",
+    "Customer Value Proposition",
+    "Affordability"
+  ],
+
+  caseText: `
+
+  <p>GlobalCool Appliances is a multinational manufacturer of air-cooling and refrigeration products. The company has been highly successful in developed markets, where customers generally purchase premium products offering sophisticated features, extended warranties and high energy efficiency.</p>
+
+  <p>After studying India as a potential growth market, the company initially planned to introduce substantially the same product that it sold in Europe. The product had advanced digital controls, several automated features and premium materials. Its estimated selling price, however, was considerably higher than the price that many Indian households were willing to pay.</p>
+
+  <p>The local management team warned headquarters that simply reducing the selling price of the existing product would not solve the problem because the underlying cost structure was designed for a premium product. In addition, customers in different regions had different expectations regarding product features, after-sales service and financing.</p>
+
+  <p>Market research revealed that a large potential customer segment wanted reliable cooling at an affordable price but did not consider several premium features important. Customers were also highly sensitive to electricity consumption and expected service centres to be accessible locally.</p>
+
+  <p>GlobalCool therefore created a separate product-development team in India. The team reconsidered the product from the beginning, removed several expensive features, simplified the design and changed some components. The company also developed partnerships with local suppliers and redesigned its distribution system.</p>
+
+  <p>Headquarters initially objected because the expected profit margin per unit was significantly lower than in Europe. The Indian team argued that the relevant opportunity was not simply the margin on an individual unit but the size of the potential customer base and the possibility of building a scalable business model.</p>
+
+  <p>The final product was significantly cheaper, easier to service and more closely aligned with local requirements. Management concluded that success in the market required more than transferring an existing business model into a new country.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_005_1",
+
+      question: "Why could GlobalCool's original premium business model fail in the Indian market?",
+
+      options: [
+        "Emerging markets never have customers",
+        "Premium products are legally prohibited",
+        "Global companies cannot operate in emerging markets",
+        "Customer requirements, price sensitivity and market conditions differed from the developed market"
+      ],
+
+      answer: 3,
+
+      reason: "Emerging markets can have different customer needs, price sensitivity, infrastructure and competitive conditions, requiring customised business models."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_005_2",
+
+      question: "Which component of the business model was most directly redesigned when GlobalCool removed expensive features and focused on affordable cooling?",
+
+      options: [
+        "Customer Value Proposition",
+        "Shareholder register",
+        "Audit report",
+        "Historical financial statement"
+      ],
+
+      answer: 0,
+
+      reason: "The customer value proposition explains the value offered to customers. Removing features and focusing on affordable reliable cooling changes the value proposition."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_005_3",
+
+      question: "Why might accepting a lower profit margin per unit still make strategic sense?",
+
+      options: [
+        "Emerging markets require companies to operate at a loss",
+        "A large emerging-market customer base may create attractive overall value despite lower unit margins",
+        "Profit margins are irrelevant to business",
+        "Lower margins automatically guarantee higher profits"
+      ],
+
+      answer: 1,
+
+      reason: "Strategic evaluation should consider market size, scalability and overall value rather than focusing only on the margin earned on an individual unit."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_005_4",
+
+      question: "Which emerging-market characteristic is illustrated most clearly by the company's concern regarding local service and distribution infrastructure?",
+
+      options: [
+        "Gift economy",
+        "Digital twin",
+        "Inadequate infrastructure",
+        "Hypercompetition only"
+      ],
+
+      answer: 2,
+
+      reason: "Inadequate infrastructure is one of the characteristics that businesses need to consider when developing models for emerging markets."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_005_5",
+
+      question: "What is the most appropriate strategic conclusion from the case?",
+
+      options: [
+        "A business model may need to be rebuilt or significantly customised for an emerging market",
+        "Cost has no relevance in emerging markets",
+        "Only premium customers should be targeted",
+        "The same product and model should always be transferred unchanged"
+      ],
+
+      answer: 0,
+
+      reason: "Emerging markets may require substantial redesign of the value proposition, cost structure, distribution and operating model to match local customer needs."
+    }
+
+  ]
+
+},
+
+// ============================================================
+// HARD CASES
+// ============================================================
+
+{
+  case_id: "SCM_C75_HARD_006",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Disruptive Innovation",
+    "Low-end Disruption",
+    "New-market Disruption",
+    "Enabling Technology",
+    "Business Model",
+    "Value Network"
+  ],
+
+  caseText: `
+
+  <p>PrecisionLab Instruments Limited has manufactured sophisticated laboratory testing equipment for more than twenty years. Its products are primarily purchased by large hospitals, pharmaceutical companies and research institutions. The equipment is highly accurate but expensive, requires trained technicians and is normally sold together with maintenance contracts.</p>
+
+  <p>For several years, PrecisionLab had focused on improving the accuracy, speed and number of functions available on its machines. Existing customers appreciated these improvements because their laboratories handled complex testing requirements. The company's management therefore believed that continued investment in advanced features would protect its competitive position.</p>
+
+  <p>A small start-up called QuickDx entered the market with a very different proposition. It developed a compact testing device using a combination of inexpensive sensors, simplified software and cloud connectivity. The device could perform only a limited number of tests compared with PrecisionLab's equipment.</p>
+
+  <p>At first, PrecisionLab's management did not consider QuickDx a serious competitor. The sales team noted that the start-up's equipment was less accurate for certain highly specialised tests and had fewer features. The company's major hospitals continued purchasing PrecisionLab machines.</p>
+
+  <p>QuickDx, however, was not initially targeting these large laboratories. It focused on small clinics and diagnostic centres that could not justify purchasing PrecisionLab's expensive machines. Many of these customers were using older manual methods because sophisticated laboratory systems were financially inaccessible to them.</p>
+
+  <p>QuickDx's device was therefore intentionally simpler. It was cheaper, easier to operate and could be connected to a cloud-based reporting system. The company charged a relatively low upfront amount and generated additional revenue through software access and service arrangements.</p>
+
+  <p>As adoption increased, QuickDx improved the device and expanded its testing capabilities. Some clinics that had previously used manual methods began using the device for tests that they had never previously performed in-house.</p>
+
+  <p>PrecisionLab responded by developing a cheaper version of its existing machine. However, the engineering team found that its existing architecture and cost structure made it difficult to reduce the price sufficiently without sacrificing margins.</p>
+
+  <p>The chief executive asked the strategy team whether QuickDx represented a low-end disruption or a new-market disruption. One director argued that the start-up was simply selling a cheaper version of an existing product. Another argued that the start-up had created demand among customers who had not previously consumed the same type of service.</p>
+
+  <p>The strategy team was also asked to assess the three components required for disruptive innovation: the technology enabling the new proposition, the business model used to commercialise it and the value network supporting delivery and adoption.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_006_1",
+
+      question: "Which feature of QuickDx most strongly indicates new-market disruption rather than low-end disruption?",
+
+      options: [
+        "It deliberately increased product complexity",
+        "It targeted only premium research institutions",
+        "It attracted clinics that previously could not or did not use comparable sophisticated laboratory equipment",
+        "It offered a cheaper version to PrecisionLab's largest existing customers"
+      ],
+
+      answer: 2,
+
+      reason: "New-market disruption targets customers who previously did not use the product or service because it was inaccessible, inconvenient or otherwise unsuitable. Low-end disruption instead targets overserved existing customers at the lower end of an established market."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_006_2",
+
+      question: "If QuickDx had initially targeted existing hospital customers who were overserved by PrecisionLab's expensive high-end equipment, which type of disruption would be more appropriate?",
+
+      options: [
+        "Sustaining innovation only",
+        "New-market disruption",
+        "Low-end disruption",
+        "Service ecosystem only"
+      ],
+
+      answer: 2,
+
+      reason: "Low-end disruption occurs when a lower-cost entrant targets overserved customers at the lower end of an existing market."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_006_3",
+
+      question: "The sensors, simplified software and cloud connectivity together primarily represent which component of disruptive innovation?",
+
+      options: [
+        "Hypermarket strategy",
+        "Enabling Technology",
+        "Profit Formula only",
+        "Coherent Value Network"
+      ],
+
+      answer: 1,
+
+      reason: "Enabling technology is one of the three components of disruptive innovation and provides the technological foundation for the new proposition."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_006_4",
+
+      question: "QuickDx's combination of low upfront pricing, software access and service revenue is most relevant to which component of disruptive innovation?",
+
+      options: [
+        "Disruptive or Innovative Business Model",
+        "Six Sigma",
+        "Traditional hierarchy",
+        "Enabling Technology"
+      ],
+
+      answer: 0,
+
+      reason: "The business model explains how the innovation creates and captures value. QuickDx changed the commercial logic through a different pricing and revenue structure."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_006_5",
+
+      question: "Why might PrecisionLab struggle to respond merely by producing a cheaper version of its existing machine?",
+
+      options: [
+        "Existing companies cannot use technology",
+        "Its existing architecture, cost structure and established business model may prevent it from competing effectively at the disruptor's cost and value proposition",
+        "A cheaper machine automatically becomes a new-market disruption",
+        "Incumbents are legally prevented from reducing prices"
+      ],
+
+      answer: 1,
+
+      reason: "Incumbents can struggle because their established resources, processes, cost structures and business models are designed around existing customers and economics, making direct response to a disruptive model difficult."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_HARD_007",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Hyper Competition",
+    "D'Aveni 7S Framework",
+    "Strategic Soothsaying",
+    "Speed",
+    "Surprise",
+    "Temporary Competitive Advantage"
+  ],
+
+  caseText: `
+
+  <p>VoltEdge Mobility manufactures electric two-wheelers in a market that has changed dramatically within three years. Initially, the company gained a strong position by introducing a battery-management system that provided longer usable range than competing models. Dealers reported strong demand, and management believed that the technology would provide a durable competitive advantage.</p>
+
+  <p>The assumption proved incorrect. Within eighteen months, competitors introduced comparable battery-management systems. One competitor offered a lower price, another introduced faster charging, and a third developed a subscription arrangement in which customers paid a lower initial amount but a recurring fee for battery services.</p>
+
+  <p>Customer preferences also became increasingly fragmented. Some customers valued range, others valued charging speed, some wanted low monthly payments and others preferred premium design. New technology suppliers entered the market, while international manufacturers formed partnerships with local companies.</p>
+
+  <p>VoltEdge initially responded by reducing the price of its existing model. The reduction increased sales for two quarters, but competitors quickly matched the price. Management then realised that repeatedly defending the same advantage was creating pressure on margins without restoring a lasting position.</p>
+
+  <p>The new strategy team proposed a different approach. Instead of searching for one permanent source of competitive advantage, the company would continuously introduce initiatives designed to create temporary advantages.</p>
+
+  <p>The first initiative involved using customer data to identify underserved usage patterns. The second involved accelerating product development so that selected improvements could be launched before competitors responded. The third involved a limited-time charging partnership that provided customers with access to an expanded charging network.</p>
+
+  <p>Management also began making unexpected product announcements shortly before major industry events. The objective was not merely publicity but to force competitors to react to a changing basis of competition.</p>
+
+  <p>At the same time, the company avoided revealing every strategic intention. Public announcements were carefully designed to communicate confidence without providing competitors with complete information about future product launches.</p>
+
+  <p>The chief executive explained to the board that the market could no longer be managed as if competitive equilibrium would remain stable. The company had to anticipate customer needs, move quickly, surprise competitors, influence market rules and continuously replace old advantages with new ones.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_007_1",
+
+      question: "Which characteristic of the market most strongly indicates hyper-competition?",
+
+      options: [
+        "Customers have no bargaining power",
+        "Entry barriers are permanently increasing",
+        "One competitive advantage remains protected indefinitely",
+        "Competitive advantages are rapidly copied or neutralised, requiring continuous strategic movement"
+      ],
+
+      answer: 3,
+
+      reason: "Hyper-competition is characterised by temporary competitive advantages, rapid strategic manoeuvres, strong rivalry and continuous changes in technology and customer preferences."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_007_2",
+
+      question: "VoltEdge's shift from defending one battery advantage to continuously creating temporary advantages is most consistent with:",
+
+      options: [
+        "Traditional stable-market strategy",
+        "D'Aveni's approach to hyper-competition",
+        "Gift economy",
+        "Closed-loop production"
+      ],
+
+      answer: 1,
+
+      reason: "D'Aveni's hypercompetition framework focuses on a series of strategic initiatives that generate temporary advantages rather than relying on one permanent competitive advantage."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_007_3",
+
+      question: "Studying customer data to identify underserved usage patterns most closely represents which element of the 7S framework?",
+
+      options: [
+        "Strategic soothsaying",
+        "Signals",
+        "Shifting the rules",
+        "Surprise"
+      ],
+
+      answer: 0,
+
+      reason: "Strategic soothsaying involves anticipating future customer needs and changes in the environment to identify opportunities for competitive initiatives."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_007_4",
+
+      question: "Launching improvements before competitors can respond primarily demonstrates which element?",
+
+      options: [
+        "Stakeholder satisfaction",
+        "Signals",
+        "Speed",
+        "Shifting the rules"
+      ],
+
+      answer: 2,
+
+      reason: "Speed is a central element of D'Aveni's framework because rapid movement can allow a firm to obtain a temporary advantage before competitors react."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_007_5",
+
+      question: "Why could VoltEdge's unexpected product announcements be considered strategically relevant beyond ordinary marketing?",
+
+      options: [
+        "They reduce the importance of customers",
+        "They eliminate the need for innovation",
+        "They guarantee a permanent competitive advantage",
+        "They can create surprise and force competitors to react to a changed basis of competition"
+      ],
+
+      answer: 3,
+
+      reason: "Surprise is one of D'Aveni's 7S elements. Unexpected strategic moves can disrupt competitors' plans and force them to respond."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_HARD_008",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Sustainability Business Models",
+    "Product Service Systems",
+    "Closed-loop Production",
+    "Sharing Economy",
+    "Triple Bottom Line",
+    "Circular Economy"
+  ],
+
+  caseText: `
+
+  <p>EcoMach Systems manufactures industrial refrigeration equipment used by food-processing companies. Traditionally, EcoMach earned revenue by selling refrigeration units to customers. Once the equipment was sold, customers were responsible for maintenance, replacement of components and eventual disposal of the machine.</p>
+
+  <p>Management noticed that the traditional model created conflicting incentives. The company earned revenue when new machines were sold, while customers wanted equipment that would operate efficiently for many years. At the end of the equipment's useful life, substantial quantities of metal, electronic components and specialised materials were discarded.</p>
+
+  <p>The sustainability team proposed a different business model. Instead of selling refrigeration equipment outright, EcoMach would retain ownership and charge customers according to the cooling service provided. EcoMach would remain responsible for maintenance, component replacement, upgrades and eventual recovery of equipment.</p>
+
+  <p>The finance department initially rejected the proposal because the accounting pattern would change significantly. Under the traditional model, the company generated a large amount of revenue at the point of sale. Under the proposed model, revenue would be spread over the period in which the service was provided.</p>
+
+  <p>The operations team nevertheless believed that the new arrangement would create strong incentives to design equipment that lasted longer, consumed less energy and could be repaired rather than discarded. Engineers began redesigning components so that damaged parts could be removed and replaced without discarding the entire machine.</p>
+
+  <p>EcoMach also entered agreements with selected suppliers requiring them to recover certain components after use. Recovered materials were inspected and, where appropriate, returned to manufacturing processes.</p>
+
+  <p>Customers were attracted by the fact that they no longer had to make a large initial investment in equipment. They paid for the cooling outcome they actually received. EcoMach, however, accepted greater responsibility for lifecycle costs and had to develop new capabilities for maintenance, recovery and material management.</p>
+
+  <p>The board asked whether the proposed model should be evaluated only by its immediate financial return. The sustainability director argued that the model needed to be assessed using economic, social and environmental considerations. The model could reduce resource consumption and waste while also changing the company's long-term relationship with customers.</p>
+
+  <p>The management accountant was therefore asked to identify the business model and sustainability concepts embedded in the proposal.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_008_1",
+
+      question: "The arrangement in which customers pay for the cooling service rather than purchasing the refrigeration equipment is most directly an example of:",
+
+      options: [
+        "Advertising model",
+        "Product Service System (PSS)",
+        "Hypermarket model",
+        "Traditional ownership model"
+      ],
+
+      answer: 1,
+
+      reason: "Under a Product Service System, the customer pays for the service or outcome rather than simply purchasing the physical product. The provider may retain responsibility for the product's lifecycle."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_008_2",
+
+      question: "Which PSS category is most closely represented when EcoMach charges according to the cooling outcome or service provided?",
+
+      options: [
+        "Gift economy",
+        "Open-source access",
+        "Pay per service unit",
+        "Advertising model"
+      ],
+
+      answer: 2,
+
+      reason: "Pay per service unit is a PSS category in which customers pay according to the service units or functional service received."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_008_3",
+
+      question: "Why does redesigning components for recovery and reuse support a closed-loop production model?",
+
+      options: [
+        "The company intentionally increases disposal",
+        "Closed-loop production requires products to be discarded immediately",
+        "The company transfers all environmental responsibility to customers",
+        "Materials are recovered and returned to production rather than being treated simply as waste"
+      ],
+
+      answer: 3,
+
+      reason: "Closed-loop production seeks to recycle and reuse materials within manufacturing, minimise waste and improve resource efficiency."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_008_4",
+
+      question: "Why does the proposed model potentially align the interests of EcoMach with those of its customers?",
+
+      options: [
+        "EcoMach retains lifecycle responsibility and therefore benefits from designing durable, efficient and repairable equipment",
+        "The model eliminates maintenance",
+        "Customers become responsible for every lifecycle activity",
+        "EcoMach earns all revenue immediately regardless of product performance"
+      ],
+
+      answer: 0,
+
+      reason: "Because EcoMach retains responsibility for maintenance, upgrades and recovery, it has stronger incentives to reduce lifecycle costs through durability, efficiency and repairability."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_008_5",
+
+      question: "Why should the board evaluate the model using more than immediate financial revenue?",
+
+      options: [
+        "Financial performance is never relevant",
+        "Environmental factors automatically guarantee profitability",
+        "Sustainable business models consider economic, social and environmental value over the longer term",
+        "Sustainability means ignoring customers"
+      ],
+
+      answer: 2,
+
+      reason: "Sustainable business models address the triple bottom line: economic, social and environmental dimensions. Immediate revenue alone may not capture long-term stakeholder value."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_HARD_009",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Digital Platform",
+    "Freemium Model",
+    "Subscription Model",
+    "C2B",
+    "Business Ecosystem",
+    "Value Capture"
+  ],
+
+  caseText: `
+
+  <p>SkillBridge began as a small digital platform connecting professional students with short-term educational content providers. In its first year, the company allowed anyone to create an account without paying. Users could access a limited collection of study tools, while educators could upload selected learning resources.</p>
+
+  <p>The founders initially believed that the company would earn revenue primarily from advertisements. However, as the user base expanded, they observed that students were willing to provide information about their learning preferences in exchange for personalised recommendations.</p>
+
+  <p>SkillBridge then introduced a more comprehensive version of its service. Basic users continued to access limited functionality without paying, while users requiring advanced analytics, unlimited practice material and personalised study plans were charged a recurring fee.</p>
+
+  <p>The company deliberately kept the marginal cost of serving an additional digital user low. This allowed SkillBridge to maintain a large free user base while attempting to convert a smaller percentage of users into paying customers.</p>
+
+  <p>At the same time, the platform introduced a feature through which students could post a problem they wanted solved. Educational organisations could bid to provide specialised explanations, study modules or research assistance. In some transactions, the student effectively initiated the commercial opportunity and the organisation paid to access the student's requirement.</p>
+
+  <p>SkillBridge did not create all the educational content itself. It connected students, educators, publishers and institutions. Some educators became dependent on the platform because a large proportion of their customers discovered their services through SkillBridge.</p>
+
+  <p>A competing platform offered a completely free service supported by advertising. Its management argued that SkillBridge was simply an advertising model because users could access basic services without payment. SkillBridge's finance director disagreed, pointing out that the company's main revenue growth increasingly came from users upgrading to advanced features and recurring access.</p>
+
+  <p>The board also considered whether SkillBridge's position should be evaluated as a platform ecosystem rather than merely as a software product. Management noted that the value of the service increased as more students and educators joined, while the data generated through interactions improved recommendations and attracted additional participants.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_009_1",
+
+      question: "Which business model best describes SkillBridge's basic free service combined with paid advanced features?",
+
+      options: [
+        "Hypermarket model",
+        "Razorblade model",
+        "Pure advertising model",
+        "Freemium model"
+      ],
+
+      answer: 3,
+
+      reason: "Freemium provides a basic digital service free of charge while charging users for premium or comprehensive features."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_009_2",
+
+      question: "The recurring fee charged for continued access to advanced study functionality represents which model most directly?",
+
+      options: [
+        "Subscription model",
+        "Open-source model",
+        "Promotion model",
+        "Gift economy"
+      ],
+
+      answer: 0,
+
+      reason: "A subscription model generates recurring revenue by charging customers periodically for continued access to a product or service."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_009_3",
+
+      question: "Why would describing SkillBridge solely as an advertising model be incomplete?",
+
+      options: [
+        "The platform manufactures physical products",
+        "All users are required to pay upfront",
+        "Its significant revenue mechanism involves converting free users into paying users for premium digital features and recurring access",
+        "Advertising can never be used by digital businesses"
+      ],
+
+      answer: 2,
+
+      reason: "Although advertising may be possible, the case specifically identifies premium upgrades and recurring payments as important revenue mechanisms, making freemium/subscription characteristics more relevant."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_009_4",
+
+      question: "The arrangement in which students present requirements and organisations respond to those requirements most closely represents which e-commerce category?",
+
+      options: [
+        "B2C",
+        "C2C",
+        "C2B",
+        "B2B"
+      ],
+
+      answer: 2,
+
+      reason: "C2B involves consumers offering something to organisations or initiating opportunities that organisations respond to, such as consumer-generated requirements or crowdsourcing."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_009_5",
+
+      question: "Why does SkillBridge increasingly resemble a platform ecosystem?",
+
+      options: [
+        "It has eliminated all external participants",
+        "It manufactures all educational content internally",
+        "Platform ecosystems require only one participant",
+        "Its value depends on interconnected students, educators, institutions and information flows rather than solely on software ownership"
+      ],
+
+      answer: 3,
+
+      reason: "A platform ecosystem connects participants offering complementary products or services. Network effects and interactions among participants can increase the value of the platform."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_HARD_010",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Strategic Responses to Disruption",
+    "Milking as Cash Cow",
+    "Invest or Counter Invest",
+    "Blocking the Path",
+    "Counter Disruption",
+    "Restrict Presence",
+    "Withdraw"
+  ],
+
+  caseText: `
+
+  <p>MetroPrint Corporation has operated a chain of conventional printing centres for more than twenty-five years. Its branches provide commercial printing, document binding, photographic printing and related services. For many years, the company enjoyed stable demand because customers relied on physical documents for business, education and administration.</p>
+
+  <p>The market began changing rapidly as digital documentation, electronic signatures, cloud storage and mobile communication became widespread. Younger customers increasingly preferred digital documents, while business customers started using online document-management systems.</p>
+
+  <p>A technology start-up called InstantDocs introduced a digital service allowing customers to upload documents through a mobile application and receive electronically verified documents within minutes. The service eliminated the need to visit a physical printing centre for many transactions.</p>
+
+  <p>MetroPrint's management initially responded by investing in additional printing capacity. The board believed that the decline in demand might be temporary. However, utilisation continued to fall, while fixed costs associated with branches, equipment and leases remained significant.</p>
+
+  <p>One group of directors proposed using the existing business as a cash-generating operation for as long as possible. They argued that MetroPrint still had loyal customers and could generate cash from its established assets, which could then be invested in digital businesses.</p>
+
+  <p>Another group proposed substantial investment in a digital platform that would compete directly with InstantDocs. The technology team believed MetroPrint could use its existing customer relationships and brand reputation to develop a competing service.</p>
+
+  <p>A third proposal involved restricting MetroPrint's presence in the most affected document-printing segments while focusing its remaining physical operations on specialist printing services where the company had stronger capabilities.</p>
+
+  <p>A fourth proposal suggested acquiring a promising digital-document start-up and using MetroPrint's financial resources to accelerate its technology development. The strategy team warned that the acquisition would be expensive and that there was no guarantee that the acquired technology would gain customer acceptance.</p>
+
+  <p>A final proposal recommended withdrawing almost completely from conventional printing. Under this approach, MetroPrint would liquidate selected assets and redirect capital to more profitable businesses.</p>
+
+  <p>The board recognised that no single response could be selected simply by looking at the percentage decline in the printing market. Some printing activities were still strategically important because they supported profitable relationships with major corporate customers.</p>
+
+  <p>The board therefore instructed management to consider customer expectations, available resources, the importance of affected activities to the broader product line and MetroPrint's own capabilities before selecting the response.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_010_1",
+
+      question: "Which proposed strategy is most clearly represented by continuing to operate the existing printing business primarily to generate cash for investment elsewhere?",
+
+      options: [
+        "New-market disruption",
+        "Blocking the path",
+        "Counter disruption",
+        "Milking as cash cow"
+      ],
+
+      answer: 3,
+
+      reason: "Milking as cash cow involves harvesting cash from a vulnerable or declining business and using the generated resources elsewhere. Winding up is not necessarily immediate."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_010_2",
+
+      question: "Developing a digital platform to directly challenge InstantDocs would most closely represent:",
+
+      options: [
+        "Restrict presence",
+        "Milking as cash cow",
+        "Counter disruption",
+        "Withdraw"
+      ],
+
+      answer: 2,
+
+      reason: "Counter disruption involves responding aggressively to a disruptive entrant through another disruptive initiative or significant competitive response."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_010_3",
+
+      question: "Focusing the remaining physical operations on specialist printing where MetroPrint has stronger capabilities is most consistent with:",
+
+      options: [
+        "Withdraw completely",
+        "Restrict presence and shift focus on core",
+        "Blocking the path",
+        "Free model"
+      ],
+
+      answer: 1,
+
+      reason: "Restrict presence and shift focus on core involves reducing exposure to the affected activity while retaining a presence where the organisation has stronger capabilities."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_010_4",
+
+      question: "Liquidating selected assets and redirecting capital away from conventional printing would most closely represent:",
+
+      options: [
+        "Platform ecosystem",
+        "Strategic soothsaying",
+        "Withdraw",
+        "Milking as cash cow"
+      ],
+
+      answer: 2,
+
+      reason: "Withdrawal involves exiting or surrendering a segment, potentially liquidating assets and diverting resources to more profitable activities."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_010_5",
+
+      question: "Why would it be inappropriate for MetroPrint to select its response solely by considering the percentage decline in the printing market?",
+
+      options: [
+        "All declining businesses must immediately withdraw",
+        "The affected activity may still be strategically important to the product line and customer relationships, and resource availability and organisational capabilities also matter",
+        "Market size is always irrelevant",
+        "Disruption should never be considered"
+      ],
+
+      answer: 1,
+
+      reason: "Strategic response to disruption should consider more than segment size. Management must evaluate customer expectations, resources, strategic importance of the segment and whether the organisation has or can acquire relevant capabilities."
+    }
+
+  ]
+
+},
+
+// ============================================================
+// CHAPTER 75 — 5 MEDIUM CASE SCENARIOS
+// ============================================================
+
+{
+  case_id: "SCM_C75_MEDIUM_011",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Cloud Computing",
+    "6R Cloud Migration Model",
+    "Digital Technologies",
+    "Scalability",
+    "Transformation"
+  ],
+
+  caseText: `
+
+  <p>Ardent Financial Services Limited operates a large internal information system used for customer records, transaction processing, employee applications and management reporting. For more than a decade, most of the company's computing infrastructure had been maintained in its own data centre. The infrastructure team was responsible for purchasing servers, replacing hardware, maintaining storage capacity and ensuring that sufficient computing resources were available during periods of high demand.</p>
+
+  <p>During the last three years, the company's transaction volume increased significantly. However, demand was not uniform throughout the year. At certain times, the existing infrastructure was under considerable pressure, while during other periods a substantial amount of computing capacity remained unused.</p>
+
+  <p>The chief technology officer therefore proposed moving selected applications to cloud infrastructure. The finance department was initially concerned that cloud migration would simply replace one type of technology expense with another. The technology team explained that the strategic benefit was not merely accounting for infrastructure differently. Cloud services could provide greater flexibility, scalability and agility because computing resources could be adjusted according to requirements.</p>
+
+  <p>The first application selected for migration was an internal employee portal. The application was relatively stable and required only limited changes to its underlying architecture. The technology team proposed moving the application to the cloud with minimal modification so that implementation could occur quickly.</p>
+
+  <p>A second application was an older reporting system. The team concluded that the application could benefit from modifying the underlying platform to use cloud-native capabilities, although the fundamental business logic would remain largely unchanged.</p>
+
+  <p>A third legacy application was considered unsuitable for direct migration. Management believed that the application would need substantial redesign to take advantage of cloud architecture and modern scalability features.</p>
+
+  <p>During the review, another software package was found to have become commercially available from a cloud provider that offered functionality superior to the company's internally developed application. The management team considered replacing the existing application with the external service rather than migrating the old system.</p>
+
+  <p>Finally, some outdated applications were found to have almost no continuing business value. Management proposed discontinuing them rather than spending resources migrating them.</p>
+
+  <p>The chief financial officer asked the team to classify the proposed approaches under the recognised cloud migration alternatives and explain why all applications should not necessarily follow the same migration path.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_011_1",
+
+      question: "Moving the employee portal to the cloud with minimal modification most closely represents which cloud migration approach?",
+
+      options: [
+        "Re-host",
+        "Re-factor",
+        "Retire",
+        "Re-purchase"
+      ],
+
+      answer: 0,
+
+      reason: "Re-hosting involves moving an application to the new environment with minimal modification. It is generally less complex than substantially redesigning the application."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_011_2",
+
+      question: "Modifying the platform of an application while leaving its fundamental business logic largely unchanged most closely represents:",
+
+      options: [
+        "Retain",
+        "Re-platform",
+        "Retire",
+        "Re-purchase"
+      ],
+
+      answer: 1,
+
+      reason: "Re-platforming involves making selected modifications to an application so that it can take advantage of the new environment without completely redesigning it."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_011_3",
+
+      question: "The legacy application requiring substantial redesign to take advantage of cloud architecture would most closely require:",
+
+      options: [
+        "Re-host",
+        "Retain",
+        "Re-factor/Re-architect",
+        "Retire"
+      ],
+
+      answer: 2,
+
+      reason: "Re-factoring or re-architecting involves substantial modification of an application so that it is designed to exploit the capabilities of the new environment."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_011_4",
+
+      question: "Replacing an internally developed application with a commercially available cloud service is most closely associated with:",
+
+      options: [
+        "Re-purchase",
+        "Re-platform",
+        "Re-host",
+        "Retain"
+      ],
+
+      answer: 0,
+
+      reason: "Re-purchase involves replacing the existing application with a different commercially available solution rather than simply moving the existing application."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_011_5",
+
+      question: "Why is it reasonable for Ardent to use different migration approaches for different applications?",
+
+      options: [
+        "All applications have identical complexity",
+        "Cloud migration requires every application to be retired",
+        "Migration decisions should consider application value, complexity, architecture and required effort",
+        "Cloud computing removes the need for strategic analysis"
+      ],
+
+      answer: 2,
+
+      reason: "The 6R framework provides different migration alternatives because applications differ in complexity, strategic value, architecture and the effort required to optimise them."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_MEDIUM_012",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Digital Twin",
+    "IoT",
+    "Augmented Reality",
+    "Predictive Maintenance",
+    "Digital Technologies"
+  ],
+
+  caseText: `
+
+  <p>Ridgeway Industrial Equipment manufactures large automated machines used in food-processing factories. Each machine contains hundreds of components, and unexpected equipment failure can interrupt the customer's entire production line.</p>
+
+  <p>Historically, Ridgeway's service engineers visited customers periodically to inspect machines. Maintenance schedules were largely based on predetermined intervals rather than the actual condition of individual components. Customers therefore sometimes replaced components that still had substantial useful life, while in other cases components failed before the next scheduled inspection.</p>
+
+  <p>Ridgeway decided to introduce sensors throughout selected machines. The sensors continuously recorded information such as temperature, pressure, vibration and operating hours. The information was transmitted to Ridgeway's service centre, where engineers could analyse the operating condition of each machine.</p>
+
+  <p>The company then created a computer-based representation of each physical machine. The representation incorporated information about the machine's design, operating condition, maintenance history and current sensor readings.</p>
+
+  <p>Engineers began comparing the behaviour of the physical machines with the virtual representations. When unusual patterns appeared, engineers could investigate possible causes before the physical machine experienced a serious failure.</p>
+
+  <p>Ridgeway also equipped service engineers with devices that could display technical instructions while they were working on machines. Instead of repeatedly consulting printed manuals, an engineer could view information relevant to the specific component being inspected.</p>
+
+  <p>Management found that the new system was particularly valuable because the physical machine and its virtual representation could be studied together. The company began using the information not only for maintenance but also for product design and service improvement.</p>
+
+  <p>The managing director described the system as a combination of connected sensors, virtual representation and digital assistance for field workers. The board asked the management accountant to identify the principal technologies involved and distinguish their respective roles.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_012_1",
+
+      question: "The continuous collection of machine information through connected sensors primarily represents:",
+
+      options: [
+        "Internet of Things (IoT)",
+        "Hypermarket model",
+        "Blockchain",
+        "3D Printing"
+      ],
+
+      answer: 0,
+
+      reason: "IoT involves connected smart devices and sensors that continuously collect and communicate information."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_012_2",
+
+      question: "The computer-based representation of each physical machine is best described as:",
+
+      options: [
+        "Autonomous vehicle",
+        "Digital Twin",
+        "Freemium service",
+        "Supply-chain partnership"
+      ],
+
+      answer: 1,
+
+      reason: "A Digital Twin is a virtual representation of a physical counterpart used to understand, analyse and potentially predict the behaviour of the physical asset."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_012_3",
+
+      question: "Why is the Digital Twin particularly useful in the case?",
+
+      options: [
+        "It eliminates the physical machines",
+        "It allows the company to understand and predict the behaviour of the physical machines",
+        "It replaces all suppliers",
+        "It converts the company into an advertising business"
+      ],
+
+      answer: 1,
+
+      reason: "Digital Twins allow organisations to understand and predict the behaviour of physical counterparts by integrating relevant data and representations."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_012_4",
+
+      question: "The technical instructions displayed to engineers while they inspect a machine most closely illustrate:",
+
+      options: [
+        "Augmented Reality",
+        "Razorblade model",
+        "Blockchain",
+        "Low-end disruption"
+      ],
+
+      answer: 0,
+
+      reason: "Augmented Reality can connect physical and digital environments and provide workers with real-time information, guidance and training."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_012_5",
+
+      question: "Which combination best describes Ridgeway's new system?",
+
+      options: [
+        "IoT provides data, Digital Twin represents the physical machine, and AR assists the field engineer",
+        "Blockchain provides the machine representation and IoT replaces the engineer",
+        "3D printing creates the sensor data and AR replaces the machine",
+        "Freemium provides machine data and Digital Twin handles customer payments"
+      ],
+
+      answer: 0,
+
+      reason: "The case combines IoT sensors for data collection, Digital Twin technology for virtual representation and AR for digital guidance to field engineers."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_MEDIUM_013",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Advanced Manufacturing",
+    "CAD",
+    "CAM",
+    "CIM",
+    "Flexible Manufacturing"
+  ],
+
+  caseText: `
+
+  <p>Vertex Precision Engineering manufactures components for several industrial customers. The company originally operated a conventional production system in which engineers prepared product drawings manually, production planners separately prepared machine instructions and operators physically transported components between different production areas.</p>
+
+  <p>As customer requirements became more varied, the number of product variants increased. Management found that producing small quantities economically had become difficult because machines needed frequent changes and information had to be transferred repeatedly between departments.</p>
+
+  <p>The company first introduced computerised systems for designing components. Engineers could create and modify product designs electronically and store the designs for future use.</p>
+
+  <p>The production department subsequently introduced computer systems that could assist in planning and programming production equipment. This reduced the amount of manual preparation required before a machine could manufacture a component.</p>
+
+  <p>Management then grouped machines and associated material-handling arrangements so that related component families could be processed more efficiently. Automated material movement was introduced between selected machines, reducing delays caused by manual transportation.</p>
+
+  <p>As the system developed, management began linking design, production planning, material handling, quality information and other manufacturing-related functions through an extensive information network.</p>
+
+  <p>The production director explained that the company had not merely purchased individual pieces of equipment. It had progressively moved from isolated technological applications toward an integrated manufacturing system.</p>
+
+  <p>The finance director asked whether the final arrangement should be considered merely computer-aided design and manufacturing or whether it represented a higher level of manufacturing integration.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_013_1",
+
+      question: "The computerised system used by engineers to create and modify product designs is:",
+
+      options: [
+        "CAM",
+        "CIM",
+        "CAD",
+        "FIMS"
+      ],
+
+      answer: 2,
+
+      reason: "CAD stands for Computer-Aided Design and is used for computerised product design and modification."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_013_2",
+
+      question: "The computer systems used to plan and program production equipment are most closely associated with:",
+
+      options: [
+        "CAM",
+        "CAD",
+        "Blockchain",
+        "Digital Twin"
+      ],
+
+      answer: 0,
+
+      reason: "CAM, or Computer-Aided Manufacturing, uses computers to plan and program production equipment."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_013_3",
+
+      question: "Grouping machines and material-handling arrangements around related component families most closely reflects:",
+
+      options: [
+        "Advertising model",
+        "Group Technology / Cellular Manufacturing",
+        "Subscription model",
+        "Access-over-ownership"
+      ],
+
+      answer: 1,
+
+      reason: "Group Technology/Cellular Manufacturing groups related parts and the equipment required to process them into manufacturing cells."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_013_4",
+
+      question: "The extensive integration of design, production, material handling and related manufacturing functions through information networks most closely represents:",
+
+      options: [
+        "NC machine",
+        "CAD only",
+        "CIM",
+        "Basic automation"
+      ],
+
+      answer: 2,
+
+      reason: "Computer Integrated Manufacturing (CIM) represents extensive computer-based integration of production-related business and manufacturing functions."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_013_5",
+
+      question: "What is the key difference between the final system and simply purchasing an individual automated machine?",
+
+      options: [
+        "The final system integrates multiple manufacturing functions rather than relying on an isolated technology",
+        "The final system eliminates all human employees",
+        "The final system uses no computers",
+        "Individual machines are always more integrated than CIM"
+      ],
+
+      answer: 0,
+
+      reason: "Advanced manufacturing progresses from stand-alone technologies toward cells, linked systems and ultimately integrated manufacturing environments such as CIM."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_MEDIUM_014",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Supply Chain Partnerships",
+    "Bullwhip Effect",
+    "Real-Time Data",
+    "Supply Chain Innovation",
+    "End-to-End Visibility"
+  ],
+
+  caseText: `
+
+  <p>FreshHarvest Foods manufactures packaged food products through a network of farmers, ingredient suppliers, packaging suppliers, distributors and retailers. For many years, each participant in the supply chain maintained its own demand forecasts and inventory information.</p>
+
+  <p>The retailer would place orders with the distributor based on its expected sales. The distributor would then adjust the order before sending it to the manufacturer. The manufacturer, in turn, would modify the production plan before placing orders with ingredient suppliers.</p>
+
+  <p>Small changes in consumer demand frequently resulted in increasingly large changes in orders as information moved upstream. During one period, a modest increase in retail sales caused the manufacturer to substantially increase production because it believed that distributors were signalling a sustained increase in demand.</p>
+
+  <p>The additional production created excess inventory when actual consumer demand later returned to normal. Some ingredients were purchased unnecessarily, while suppliers had already increased their own production in anticipation of further orders.</p>
+
+  <p>FreshHarvest decided to establish a collaborative supply-chain programme with major suppliers and distributors. Participants agreed to share selected demand, inventory and sales information in real time.</p>
+
+  <p>The company also introduced common workflows and dashboards that allowed participants to view information from different stages of the supply chain. Supplier information was incorporated into capacity planning and demand forecasting.</p>
+
+  <p>Management found that the new system allowed production decisions to be adjusted more quickly. Suppliers could see changes in demand earlier, while distributors could understand inventory availability before placing large orders.</p>
+
+  <p>The chief executive concluded that the objective was not simply to reduce FreshHarvest's own inventory. The objective was to improve the performance of the supply chain as a connected system while maintaining appropriate safeguards around commercially sensitive information.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_014_1",
+
+      question: "The increasingly large fluctuations in orders as information moves upstream illustrate the:",
+
+      options: [
+        "Bullwhip effect",
+        "Freemium effect",
+        "Cost flywheel",
+        "Gift economy"
+      ],
+
+      answer: 0,
+
+      reason: "The bullwhip effect occurs when relatively small changes in end demand result in progressively larger fluctuations in orders and inventory upstream."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_014_2",
+
+      question: "Which supply-chain partnership practice most directly addresses the information problem in the case?",
+
+      options: [
+        "Real-time data sharing",
+        "Reducing all supplier relationships",
+        "Eliminating forecasting",
+        "Increasing information delays"
+      ],
+
+      answer: 0,
+
+      reason: "Real-time data sharing improves information flow and allows supply-chain participants to make decisions using more current demand and inventory information."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_014_3",
+
+      question: "Why can supplier information improve FreshHarvest's capacity planning?",
+
+      options: [
+        "It allows the company to understand supplier capacity and constraints while planning production",
+        "It guarantees that demand will never change",
+        "It eliminates the need for suppliers",
+        "It prevents all inventory from existing"
+      ],
+
+      answer: 0,
+
+      reason: "Real-time supplier information can improve forecasting and capacity planning by providing visibility into supply-side capabilities and constraints."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_014_4",
+
+      question: "The dashboards providing information across several stages of the supply chain primarily improve:",
+
+      options: [
+        "End-to-end visibility",
+        "Product ownership",
+        "Advertising revenue",
+        "Market withdrawal"
+      ],
+
+      answer: 0,
+
+      reason: "End-to-end visibility allows participants to understand activities and information across different stages of the supply chain rather than viewing isolated segments."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_014_5",
+
+      question: "Why should FreshHarvest not treat supply-chain collaboration as merely a method of reducing its own inventory?",
+
+      options: [
+        "The objective is to optimise the connected supply chain and create mutual benefits among participants",
+        "Inventory has no relevance to supply chains",
+        "Collaboration requires every participant to increase inventory",
+        "Suppliers should never receive information"
+      ],
+
+      answer: 0,
+
+      reason: "Supply-chain partnerships aim to improve overall flow, agility, resilience, information sharing and cost performance rather than simply transferring costs or inventory burdens between participants."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_MEDIUM_015",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Incubators",
+    "Accelerators",
+    "Start-ups",
+    "Innovation Hubs",
+    "Intrapreneurship"
+  ],
+
+  caseText: `
+
+  <p>BrightWorks Corporation is a large established engineering company with operations in several industries. Although the company has strong financial resources and a recognised brand, senior management believes that its traditional hierarchy has made it difficult to experiment with unconventional ideas.</p>
+
+  <p>Management therefore created an internal innovation space where employees from engineering, marketing, finance and operations could work together on new ideas. The space provided access to mentors, technical resources and opportunities to interact with external entrepreneurs.</p>
+
+  <p>One employee developed an idea for a low-cost energy-monitoring device. She believed that the product could eventually become a separate business, but the existing business units were focused on established products and were reluctant to allocate resources to the idea.</p>
+
+  <p>The employee was allowed to develop the idea independently within an internal venture programme. The company provided limited resources and required the team to demonstrate whether customers would value the proposed product.</p>
+
+  <p>Separately, BrightWorks began working with an external organisation that helped very early-stage entrepreneurs turn promising ideas into viable businesses. The organisation offered training, mentoring, networking and assistance with business-model development.</p>
+
+  <p>Another organisation approached BrightWorks seeking support for a start-up that already had a functioning minimum viable product and initial customer validation. Its main requirement was rapid expansion, industry connections and intensive mentoring over a short period.</p>
+
+  <p>The board asked management to distinguish among the internal entrepreneurial activity, the early-stage external organisation and the growth-focused external organisation.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_015_1",
+
+      question: "The employee pursuing a new opportunity within BrightWorks represents:",
+
+      options: [
+        "Intrapreneurship",
+        "Hypermarket model",
+        "Closed-loop production",
+        "Digital platform"
+      ],
+
+      answer: 0,
+
+      reason: "Intrapreneurship is entrepreneurship within an existing organisation, where individuals pursue opportunities using or seeking organisational resources."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_015_2",
+
+      question: "The internal innovation space designed to bring together people and ideas most closely resembles:",
+
+      options: [
+        "An innovation hub",
+        "A subscription model",
+        "A cash cow",
+        "A supply-chain bottleneck"
+      ],
+
+      answer: 0,
+
+      reason: "An innovation hub provides a physical or collaborative environment where researchers, creators and innovators can interact and develop ideas."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_015_3",
+
+      question: "The external organisation helping very early-stage entrepreneurs develop viable businesses is best described as:",
+
+      options: [
+        "Accelerator",
+        "Incubator",
+        "Hypermarket",
+        "Platform ecosystem"
+      ],
+
+      answer: 1,
+
+      reason: "An incubator generally helps early-stage ideas and start-ups develop into viable businesses and commonly provides mentoring, training, networking and business support."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_015_4",
+
+      question: "The organisation working with a start-up that already has an MVP and seeks rapid growth is most appropriately a:",
+
+      options: [
+        "Gift economy",
+        "Traditional supplier",
+        "Accelerator",
+        "Basic innovation hub"
+      ],
+
+      answer: 2,
+
+      reason: "Accelerators are generally growth-focused and work with start-ups that already have some validation or an MVP, providing intensive mentoring, connections and support over a relatively short period."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_015_5",
+
+      question: "What is the key distinction between the incubator and accelerator described in the case?",
+
+      options: [
+        "The incubator focuses more on developing early-stage ideas, while the accelerator focuses on accelerating growth of more developed start-ups",
+        "The accelerator only supports companies with no product",
+        "The incubator always provides stock-market financing",
+        "There is no meaningful distinction"
+      ],
+
+      answer: 0,
+
+      reason: "Incubators generally contribute to startup creation and development at an early stage, whereas accelerators focus on rapid growth of already more validated ventures."
+    }
+
+  ]
+
+},
+
+// ============================================================
+// CHAPTER 75 — 5 HARD CASE SCENARIOS
+// ============================================================
+
+{
+  case_id: "SCM_C75_HARD_016",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Free Model",
+    "Freemium Model",
+    "Subscription Model",
+    "Cross-Subsidisation",
+    "Digital Business Models",
+    "Value Capture"
+  ],
+
+  caseText: `
+
+  <p>LearnSphere Technologies developed a digital professional-learning platform aimed at students, working professionals and institutions. When the platform was launched, management deliberately avoided charging users for access to the basic service. Anyone could create an account and use a limited set of question banks, basic progress tracking and selected learning resources.</p>
+
+  <p>The founders initially considered generating almost all revenue from advertisements. They expected that a large user base would create sufficient audience value for advertisers. However, after collecting usage information, the company discovered that different users valued different aspects of the platform.</p>
+
+  <p>A significant group of users was satisfied with basic practice questions. Another group wanted advanced analytics, unlimited question access, personalised study plans and detailed performance reports. A smaller group of institutional users wanted administrative dashboards and additional controls over student accounts.</p>
+
+  <p>LearnSphere therefore introduced several layers of access. Basic users continued using the platform without paying. Individual users could pay for premium features, while institutions could purchase a more comprehensive package involving recurring payments and administrative functionality.</p>
+
+  <p>Management also experimented with a physical study-planning kit. The kit was deliberately priced below the company's desired margin because the company believed that customers purchasing the kit would subsequently purchase higher-margin digital services.</p>
+
+  <p>The finance team initially criticised this pricing because the kit appeared unprofitable when considered by itself. The chief executive responded that the kit should not be evaluated in isolation because its purpose was to encourage purchases of complementary services.</p>
+
+  <p>Meanwhile, the marketing department proposed keeping the basic service completely free and relying on advertisements. The product team argued that excessive advertising could reduce user experience and encourage high-value users to move toward the paid version.</p>
+
+  <p>The board therefore asked the management accountant to distinguish the different business models operating simultaneously and determine why the economic logic of each layer differed.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_016_1",
+
+      question: "Which model best describes the basic LearnSphere service that is free to users while advertisers pay for access to the audience?",
+
+      options: [
+        "Subscription model",
+        "Advertising / Hidden Revenue model",
+        "Razorblade model",
+        "Access-over-ownership"
+      ],
+
+      answer: 1,
+
+      reason: "Under the advertising or hidden-revenue free model, users receive the core offering free while advertisers pay because of the value of access to the user audience."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_016_2",
+
+      question: "The individual service offering free basic functionality and paid advanced features is best classified as:",
+
+      options: [
+        "Freemium",
+        "Hypermarket",
+        "Gift economy",
+        "Pure open-source model"
+      ],
+
+      answer: 0,
+
+      reason: "Freemium combines a free basic digital offering with paid premium or comprehensive features."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_016_3",
+
+      question: "The recurring institutional payment for continued access to a comprehensive package primarily represents:",
+
+      options: [
+        "Cross-subsidisation",
+        "Promotion model",
+        "Subscription model",
+        "New-market disruption"
+      ],
+
+      answer: 2,
+
+      reason: "The defining feature is recurring payment for continued access, which is characteristic of a subscription model."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_016_4",
+
+      question: "Why might the low-priced study-planning kit be economically rational even though it generates little margin itself?",
+
+      options: [
+        "It can act as a low-cost product that encourages customers to purchase a higher-margin complementary offering",
+        "All physical products must be sold below cost",
+        "Freemium requires physical products to be free",
+        "The kit has no relationship with the digital services"
+      ],
+
+      answer: 0,
+
+      reason: "This reflects cross-subsidisation or the razorblade logic, where a low-margin or low-priced offering stimulates purchases of a complementary higher-margin product or service."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_016_5",
+
+      question: "Why would LearnSphere's complete model be incorrectly described as only a free model?",
+
+      options: [
+        "The company has no digital users",
+        "Several value-capture mechanisms operate simultaneously, including advertising, premium upgrades and recurring institutional payments",
+        "Free models cannot contain customers",
+        "A business can use only one revenue model"
+      ],
+
+      answer: 1,
+
+      reason: "The case deliberately combines multiple revenue mechanisms. The basic free layer may resemble advertising-supported free access, while premium users follow freemium logic and institutions provide subscription revenue."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_HARD_017",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Access-over-Ownership",
+    "On-Demand Model",
+    "Experience Model",
+    "Service Ecosystem",
+    "Hyper Disruptive Business Models"
+  ],
+
+  caseText: `
+
+  <p>UrbanMotion Mobility began as a conventional vehicle-rental company operating physical branches at airports and major city locations. Customers typically reserved a vehicle for one or more days, collected the vehicle from a branch and returned it to the same or another designated location.</p>
+
+  <p>Management observed that younger customers increasingly disliked the commitment associated with vehicle ownership. Many customers lived in areas where public transportation was available but still wanted access to a vehicle occasionally. Others wanted a vehicle only for a few hours rather than an entire day.</p>
+
+  <p>UrbanMotion therefore introduced a mobile application through which customers could locate available vehicles, unlock them digitally and pay according to the period of use. Customers no longer needed to visit a rental branch or complete a lengthy counter process.</p>
+
+  <p>The company initially priced the service at a relatively low level. Over time, however, it introduced an immediate-access option in which customers could pay a premium to obtain a vehicle within a short period. The management team discovered that some customers were willing to pay significantly more for immediate availability than for ordinary advance reservations.</p>
+
+  <p>UrbanMotion also developed a premium service in selected cities. Customers using the premium programme received access to preferred vehicles, airport lounges, personalised assistance and other services from partner businesses.</p>
+
+  <p>The company did not manufacture every vehicle used on its platform. It formed partnerships with vehicle manufacturers, charging providers, parking operators, insurance companies and hospitality businesses.</p>
+
+  <p>A competitor criticised the company for operating an expensive vehicle fleet. UrbanMotion's management responded that its strategic model was increasingly based on matching temporary demand with access rather than encouraging customers to own vehicles.</p>
+
+  <p>At the same time, management realised that the premium service was not merely about transportation. Customers valued convenience, personalisation and the overall experience associated with using the service.</p>
+
+  <p>The board asked the strategy team to identify the different emerging business models represented by the new arrangement and explain why the company's value proposition was no longer limited to providing vehicles.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_017_1",
+
+      question: "The ability to use a vehicle temporarily without owning it most directly represents:",
+
+      options: [
+        "Access-over-ownership",
+        "Freemium",
+        "Advertising model",
+        "Gift economy"
+      ],
+
+      answer: 0,
+
+      reason: "Access-over-ownership provides customers temporary access to an asset rather than requiring them to purchase and own it."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_017_2",
+
+      question: "Charging customers a premium for immediate access to a vehicle most closely represents:",
+
+      options: [
+        "On-demand model",
+        "Closed-loop production",
+        "Incubator model",
+        "Open innovation"
+      ],
+
+      answer: 0,
+
+      reason: "The on-demand model monetises time and convenience by charging for immediate or rapid access to a product or service."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_017_3",
+
+      question: "The premium programme involving personalised assistance, preferred vehicles and partner services most closely reflects:",
+
+      options: [
+        "Experience model",
+        "Low-end disruption",
+        "Basic automation",
+        "Razorblade model"
+      ],
+
+      answer: 0,
+
+      reason: "The experience model adds differentiated, personalised or innovative experiences to the basic product or service, increasing perceived value and potentially reducing switching."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_017_4",
+
+      question: "Why does UrbanMotion resemble a service ecosystem?",
+
+      options: [
+        "It operates without external partners",
+        "It integrates transportation with services from vehicle, charging, parking, insurance and hospitality partners",
+        "It manufactures every service internally",
+        "It sells only physical vehicles"
+      ],
+
+      answer: 1,
+
+      reason: "A service ecosystem integrates different products and services from interconnected participants to provide broader customer value."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_017_5",
+
+      question: "What fundamental change has occurred in UrbanMotion's value proposition?",
+
+      options: [
+        "It has moved from simply selling or renting vehicles toward convenient, immediate access and a broader service experience",
+        "It has stopped serving customers",
+        "It now depends entirely on advertising",
+        "It has returned to traditional vehicle ownership"
+      ],
+
+      answer: 0,
+
+      reason: "The company increasingly sells access, convenience, immediacy and experience rather than simply providing a vehicle as a conventional rental product."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_HARD_018",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Sustainability",
+    "Open Innovation",
+    "Peer-to-Peer Innovation",
+    "Crowdfunding",
+    "Sharing Economy",
+    "Gift Economy"
+  ],
+
+  caseText: `
+
+  <p>GreenGrid Energy Solutions was established to develop small-scale energy technologies for communities that faced unreliable electricity supply. The founders initially planned to design, manufacture and sell complete systems themselves. However, they soon realised that the cost and complexity of developing every component internally would make the system too expensive for the communities they intended to serve.</p>
+
+  <p>The company therefore opened parts of its development process to external contributors. Universities, independent engineers, technology companies and users were invited to submit ideas for improving energy storage, monitoring and distribution.</p>
+
+  <p>Some contributors provided technical designs, while others tested prototypes in their local communities. Instead of relying entirely on a central research department, GreenGrid allowed individuals located in different regions to contribute solutions to specific problems.</p>
+
+  <p>One project involved developing a low-cost monitoring device. GreenGrid created an online campaign explaining the problem and proposed solution. Hundreds of individuals contributed small amounts of money, while some contributors provided technical assistance rather than financial resources.</p>
+
+  <p>Another community developed an open-source software component that could be freely modified and improved by users. GreenGrid did not charge users for access to the basic software. The company expected to benefit from improvements generated by the wider community and from increased adoption of compatible services.</p>
+
+  <p>GreenGrid also created an online platform through which households could share underutilised energy-storage capacity with neighbouring households. The platform matched available capacity with temporary demand.</p>
+
+  <p>In a separate pilot project, a group of engineers volunteered their time to improve an energy-monitoring design without expecting a direct payment. Their motivation included professional satisfaction, community benefit and the opportunity to see the technology adopted.</p>
+
+  <p>The chief financial officer questioned whether these activities should all be described as the same type of innovation. The sustainability director explained that the company was deliberately combining several approaches, each based on a different mechanism for generating resources, ideas or value.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_018_1",
+
+      question: "Inviting universities, engineers, technology companies and users to contribute ideas to GreenGrid's innovation process represents:",
+
+      options: [
+        "Open innovation",
+        "Closed-loop production",
+        "Subscription model",
+        "Hypermarket model"
+      ],
+
+      answer: 0,
+
+      reason: "Open innovation involves collaboration beyond the firm's boundaries to generate and commercialise ideas while potentially sharing risks and rewards."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_018_2",
+
+      question: "The dispersed individuals independently contributing technical solutions rather than working within a central hierarchy most closely illustrate:",
+
+      options: [
+        "Peer-to-peer innovation",
+        "CIM",
+        "Milking as cash cow",
+        "Advertising model"
+      ],
+
+      answer: 0,
+
+      reason: "Peer-to-peer innovation involves loosely connected individuals contributing through distributed and open approaches rather than relying on a traditional top-down hierarchy."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_018_3",
+
+      question: "The online campaign through which hundreds of people contribute small amounts of money to develop the monitoring device is:",
+
+      options: [
+        "Crowdfunding",
+        "Access-over-ownership",
+        "Strategic soothsaying",
+        "Hypercompetition"
+      ],
+
+      answer: 0,
+
+      reason: "Crowdfunding uses an online platform to obtain financial or other resources from a large number of people for a project or initiative."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_018_4",
+
+      question: "The platform allowing households to share underutilised energy-storage capacity most directly illustrates:",
+
+      options: [
+        "Sharing economy",
+        "Traditional ownership",
+        "Incubator model",
+        "Razorblade model"
+      ],
+
+      answer: 0,
+
+      reason: "The sharing economy promotes efficient use of underutilised resources by enabling participants to share access through digital technologies."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_018_5",
+
+      question: "The engineers voluntarily contributing improvements without expecting direct payment most closely represents which sustainability-related model?",
+
+      options: [
+        "Subscription model",
+        "Gift economy",
+        "Hypermarket model",
+        "Pay-per-service model"
+      ],
+
+      answer: 1,
+
+      reason: "The gift economy is based on voluntary giving or contribution without requiring a conventional commercial exchange, supporting social sustainability and resisting commodification."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_HARD_019",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Emerging National Markets",
+    "Market Heterogeneity",
+    "Inadequate Infrastructure",
+    "Unbranded Competition",
+    "Strategic Cost Management",
+    "Business Model Redesign"
+  ],
+
+  caseText: `
+
+  <p>MedTech Global manufactures diagnostic devices for hospitals in developed economies. Its established business model depends on selling sophisticated equipment at premium prices, supported by long-term maintenance contracts and specialised service teams. The company has traditionally relied on large hospitals and well-developed healthcare infrastructure.</p>
+
+  <p>After identifying significant growth potential in several emerging markets, the board approved an international expansion programme. The initial plan was to export the existing equipment with only minor modifications.</p>
+
+  <p>The first market study produced unexpected findings. Healthcare facilities varied substantially in size, purchasing power, infrastructure and technical capability. Some large urban hospitals could support sophisticated equipment, while smaller facilities operated with limited electricity reliability and lacked highly trained technicians.</p>
+
+  <p>Management also discovered strong competition from locally produced, relatively unbranded equipment. These products did not offer all the functions of MedTech's machines but were substantially cheaper and could often be repaired locally.</p>
+
+  <p>Distribution presented another challenge. In some regions, the company could not rely on the same direct distribution model used in developed markets. Local distributors and informal channels played a more important role.</p>
+
+  <p>The finance team calculated that maintaining the original product's normal margin would result in a selling price that was unaffordable for a significant part of the target market. Simply reducing the price would create an unacceptable margin unless the cost structure was also redesigned.</p>
+
+  <p>The local management team proposed developing a simplified product specifically for the market. The new design would remove features that customers did not value, use locally available components where appropriate and simplify maintenance requirements.</p>
+
+  <p>The company also considered a service-based model in which customers would pay according to usage rather than purchasing the equipment outright. This would reduce the initial financial burden on smaller healthcare facilities.</p>
+
+  <p>Headquarters initially worried that the lower-margin model might damage the company's premium global positioning. The local team argued that applying the developed-market business model without modification would ignore the structural characteristics of the emerging market.</p>
+
+  <p>The board therefore requested a strategic assessment of the market using emerging-market characteristics and a determination of whether the company should customise the value proposition, cost structure and revenue model.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_019_1",
+
+      question: "The substantial differences among healthcare facilities in purchasing power, infrastructure and technical capability most directly illustrate:",
+
+      options: [
+        "Market heterogeneity",
+        "Digital twin",
+        "Hypercompetition",
+        "Closed-loop production"
+      ],
+
+      answer: 0,
+
+      reason: "Market heterogeneity is an important emerging-market characteristic because customer requirements, purchasing power and operating conditions can vary substantially."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_019_2",
+
+      question: "The difficulty caused by unreliable electricity and limited technical support most directly reflects:",
+
+      options: [
+        "Experience economy",
+        "Inadequate infrastructure",
+        "Freemium",
+        "Strategic soothsaying"
+      ],
+
+      answer: 1,
+
+      reason: "Inadequate infrastructure is a recognised characteristic of emerging markets and can materially affect the design and delivery of products and services."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_019_3",
+
+      question: "The presence of inexpensive locally produced and relatively unbranded equipment illustrates which emerging-market characteristic?",
+
+      options: [
+        "Unbranded competition",
+        "Cloud computing",
+        "Growth flywheel",
+        "Innovation hub"
+      ],
+
+      answer: 0,
+
+      reason: "Unbranded competition is one of the characteristics identified by Jagdish N. Sheth in relation to emerging markets."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_019_4",
+
+      question: "Why would simply reducing the price of MedTech's existing product be insufficient?",
+
+      options: [
+        "The company must also redesign its underlying cost structure and value proposition to make the offering economically viable",
+        "Price never affects emerging-market demand",
+        "Customers in emerging markets only buy premium products",
+        "Emerging markets prohibit cost reduction"
+      ],
+
+      answer: 0,
+
+      reason: "If the existing product has a cost structure designed for premium markets, merely reducing price can destroy margins. The business model may need fundamental redesign to achieve affordability."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_019_5",
+
+      question: "The proposal to charge customers according to usage rather than requiring outright equipment purchase primarily changes which aspect of the business model?",
+
+      options: [
+        "Customer identity only",
+        "Profit formula and value capture mechanism",
+        "The company's historical accounting records",
+        "The physical location of headquarters"
+      ],
+
+      answer: 1,
+
+      reason: "Changing from outright sale to usage-based charging changes how the organisation captures value and generates revenue, forming part of the profit formula."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_HARD_020",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Business Ecosystem",
+    "Value-Based Strategy",
+    "Value Capture",
+    "Data Flywheel",
+    "Growth Flywheel",
+    "Cost Flywheel",
+    "Strategic Response"
+  ],
+
+  caseText: `
+
+  <p>AgriLink Systems started as a software company providing farm-management applications to medium-sized agricultural businesses. Its original product helped farmers record crop information, monitor input usage and maintain basic production records.</p>
+
+  <p>Initially, AgriLink's management believed that the key to success would be developing more sophisticated software than competing agricultural applications. The company therefore invested heavily in adding analytical features.</p>
+
+  <p>Customer interviews, however, revealed that farmers did not consider software analytics alone sufficient. They also needed reliable access to equipment suppliers, weather information, financing providers, agricultural advisors, logistics companies and crop buyers.</p>
+
+  <p>AgriLink therefore began connecting these participants through its platform. Equipment suppliers could provide information about machinery availability, financial institutions could offer financing options, logistics providers could coordinate transportation and buyers could communicate expected demand.</p>
+
+  <p>As more farmers used the platform, AgriLink collected more information about crops, equipment usage, seasonal patterns and purchasing behaviour. The company used this information to improve recommendations and forecasting.</p>
+
+  <p>Improved forecasts attracted additional farmers because the platform became more useful. The larger farmer base attracted more suppliers and buyers, which expanded the range of services available through the platform.</p>
+
+  <p>At scale, AgriLink was able to negotiate better terms with technology and service providers. Shared infrastructure reduced the average cost of serving participants. However, management deliberately retained control over a small number of core capabilities that it believed were central to its unique value proposition.</p>
+
+  <p>The strategy team also recognised a potential problem. Some participants were reluctant to share sensitive information because they feared that competitors could gain access to commercially important data. AgriLink therefore developed governance arrangements defining what information would be shared, with whom and for what purpose.</p>
+
+  <p>A major competitor launched a similar platform and attempted to attract AgriLink's largest suppliers by offering higher short-term commissions. AgriLink's management decided not to compete solely by paying higher commissions. Instead, it attempted to make the ecosystem more valuable to all participants through improved information flow, broader customer access and lower transaction costs.</p>
+
+  <p>The board asked whether AgriLink's strategy should be evaluated according to traditional product-based competitive advantage or according to the principles of ecosystem strategy and value capture.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_020_1",
+
+      question: "Why has AgriLink moved from being primarily a software provider toward an ecosystem strategy?",
+
+      options: [
+        "The value required by customers depends on interconnected participants such as suppliers, financiers, logistics providers and buyers",
+        "Software has no value in agriculture",
+        "Ecosystems require companies to eliminate customers",
+        "The company wants to stop using technology"
+      ],
+
+      answer: 0,
+
+      reason: "An ecosystem strategy recognises that value can depend on relationships and interactions among multiple participants rather than on the firm's standalone product."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_020_2",
+
+      question: "The increasing amount of agricultural information improving forecasting and recommendations most directly demonstrates:",
+
+      options: [
+        "Growth flywheel",
+        "Data flywheel",
+        "Cost flywheel",
+        "Hypermarket model"
+      ],
+
+      answer: 1,
+
+      reason: "The data flywheel occurs when more and richer data generate deeper insights, which can further improve the value proposition."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_020_3",
+
+      question: "The larger farmer base attracting more suppliers and buyers is primarily an example of:",
+
+      options: [
+        "Growth flywheel",
+        "Closed-loop production",
+        "Subscription model",
+        "Strategic soothsaying"
+      ],
+
+      answer: 0,
+
+      reason: "The growth flywheel is driven by more users and partners generating network effects and improving the platform's value proposition."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_020_4",
+
+      question: "Shared infrastructure reducing the average cost of serving participants represents:",
+
+      options: [
+        "Cost flywheel",
+        "Data flywheel",
+        "New-market disruption",
+        "Gift economy"
+      ],
+
+      answer: 0,
+
+      reason: "The cost flywheel occurs when scale spreads fixed costs, lowers unit costs and improves the overall value proposition."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_020_5",
+
+      question: "Why is AgriLink's decision to retain control over certain core capabilities strategically important?",
+
+      options: [
+        "An ecosystem participant should outsource every capability",
+        "Core capabilities can preserve the firm's distinctive value contribution while other resources are shared across the ecosystem",
+        "Sharing requires the company to surrender all intellectual property",
+        "Core capabilities are irrelevant in ecosystem strategy"
+      ],
+
+      answer: 1,
+
+      reason: "Ecosystem strategy does not require a firm to give away every capability. The organisation can share or collaborate on selected resources while retaining core capabilities that support its USP and value capture."
+    }
+
+  ]
+
+},
+// ============================================================
+// CHAPTER 75 — 5 MEDIUM CASE SCENARIOS
+// ============================================================
+
+{
+  case_id: "SCM_C75_MEDIUM_021",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Robotics",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Automation",
+    "Digital Technologies"
+  ],
+
+  caseText: `
+
+  <p>PrimePack Industries manufactures packaged food products for several national retail chains. Its production facility operates continuously during peak seasons, and a significant portion of the work involves repetitive activities such as sorting packages, checking labels, moving cartons and identifying products that do not meet specified physical standards.</p>
+
+  <p>For many years, these activities were performed by production workers. Employees visually inspected packages and removed defective units from the production line. Management noticed that the accuracy of inspection could vary depending on fatigue, lighting conditions and the speed of the production line.</p>
+
+  <p>The operations director proposed installing robotic systems at selected stages of production. The robots would receive information from sensors and cameras, follow programmed rules and physically move packages into different locations. The systems could also stop automatically if their sensors detected an unsafe operating condition.</p>
+
+  <p>The finance department initially classified the entire investment as automation. However, the technology team explained that different technologies were being combined. Some machines would simply perform repetitive physical activities that had previously been performed by employees. Another system would analyse images of packages and identify patterns associated with defective products.</p>
+
+  <p>The image-analysis system was initially programmed using a defined set of rules. After several months, engineers supplied the system with large quantities of historical inspection data. The system was then adjusted so that it could improve its ability to identify defects from previous examples without requiring engineers to specify every possible pattern manually.</p>
+
+  <p>Management also introduced collaborative robots in one section of the factory. These machines were designed to work alongside employees rather than completely replacing them. Sensors and cameras were installed to reduce the risk of physical contact between workers and machines.</p>
+
+  <p>The plant manager argued that the investment should not be judged simply by the number of employees whose repetitive tasks had been reduced. The new systems were also improving consistency, enabling faster inspection and allowing employees to concentrate on activities requiring judgement and problem-solving.</p>
+
+  <p>The chief financial officer therefore asked the management accountant to distinguish between robotics, automation, artificial intelligence and machine learning based on the actual functions being performed rather than treating all technology investment as one category.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_021_1",
+
+      question: "Which technology is most directly represented by the machines physically moving packages according to programmed instructions?",
+
+      options: [
+        "Blockchain",
+        "Robotics",
+        "Cloud computing",
+        "Digital Twin"
+      ],
+
+      answer: 1,
+
+      reason: "Robotics involves technologies that sense inputs, apply rules or intelligence and physically react. The case specifically describes machines physically moving packages."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_021_2",
+
+      question: "The replacement of repetitive human activities by machines most directly illustrates:",
+
+      options: [
+        "Automation",
+        "Business ecosystem",
+        "New-market disruption",
+        "Sharing economy"
+      ],
+
+      answer: 0,
+
+      reason: "Automation occurs when technology performs work traditionally performed by humans with reduced human input."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_021_3",
+
+      question: "The image-analysis system that reacts to data and identifies defective products is most closely associated with:",
+
+      options: [
+        "Access-over-ownership",
+        "Hypermarket model",
+        "Artificial Intelligence",
+        "Gift economy"
+      ],
+
+      answer: 2,
+
+      reason: "AI involves systems reacting to data and producing insights or decisions in ways that resemble aspects of human thought."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_021_4",
+
+      question: "Which development most specifically demonstrates machine learning?",
+
+      options: [
+        "The robot physically moving packages",
+        "The safety sensor stopping a machine",
+        "The use of cameras for inspection",
+        "The system improving its defect-identification ability from historical examples"
+      ],
+
+      answer: 3,
+
+      reason: "Machine learning is an application of AI in which mathematical models allow computers to learn and improve from data without direct instruction for every situation."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_021_5",
+
+      question: "Why would it be misleading to evaluate the project solely by the number of workers replaced?",
+
+      options: [
+        "The technology also improves consistency, safety, inspection speed and allows employees to focus on higher-value activities",
+        "Technology has no effect on production",
+        "Robots cannot perform repetitive tasks",
+        "Automation is unrelated to operational performance"
+      ],
+
+      answer: 0,
+
+      reason: "The case shows that digital technologies can create operational improvements beyond direct labour substitution, including consistency, safety, speed and better use of human capabilities."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_MEDIUM_022",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "3D Printing",
+    "Advanced Manufacturing",
+    "Additive Manufacturing",
+    "Rapid Prototyping",
+    "Design"
+  ],
+
+  caseText: `
+
+  <p>AeroForm Engineering manufactures specialised components for industrial machinery. Customers increasingly request customised components in small quantities. Under the company's traditional manufacturing system, producing a new component required the preparation of tooling, machine setup and several rounds of physical testing before the final design could be approved.</p>
+
+  <p>The process was economical when the company produced large quantities of standard components. It became increasingly expensive when customers requested five, ten or twenty units of a highly customised design.</p>
+
+  <p>The engineering department proposed using additive manufacturing. Engineers could first prepare a digital design and then produce a physical component by building it layer by layer. Several design alternatives could therefore be produced without creating conventional tooling for every version.</p>
+
+  <p>The production manager initially expected the new technology to eliminate all manufacturing costs. The engineering team explained that the economics depended on several factors, including the material used, complexity of the model and labour required for post-processing and finishing.</p>
+
+  <p>The company began using the technology primarily for prototypes. Engineers could produce an initial design, physically inspect it, identify problems and make modifications to the digital model. This significantly reduced the time required before customers could evaluate a proposed design.</p>
+
+  <p>After gaining experience, the company began using additive manufacturing for selected final components as well. However, management did not use it automatically for every product. For high-volume standardised products, conventional manufacturing remained more economical.</p>
+
+  <p>The operations director explained that the strategic value of the technology was therefore not simply its ability to produce an object. It changed how the company approached design, experimentation and low-volume production.</p>
+
+  <p>The finance team was asked to evaluate the circumstances in which additive manufacturing could contribute to cost competitiveness and responsiveness without assuming that it was automatically cheaper than every conventional process.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_022_1",
+
+      question: "The manufacturing approach that builds a physical object layer by layer from a digital design is:",
+
+      options: [
+        "3D printing / additive manufacturing",
+        "Blockchain",
+        "Cloud computing",
+        "Business ecosystem"
+      ],
+
+      answer: 0,
+
+      reason: "3D printing is an additive manufacturing process in which an object is built layer by layer from a digital design."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_022_2",
+
+      question: "Why is the technology particularly useful for AeroForm's prototype development?",
+
+      options: [
+        "It eliminates the need for any design",
+        "It allows rapid physical production of design alternatives before finalising the product",
+        "It guarantees every design will be profitable",
+        "It requires large-scale tooling for every prototype"
+      ],
+
+      answer: 1,
+
+      reason: "Additive manufacturing can support rapid prototyping by allowing digital designs to be converted into physical prototypes relatively quickly."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_022_3",
+
+      question: "Which factor is specifically identified in the case as affecting the cost of 3D printing?",
+
+      options: [
+        "Only advertising expenditure",
+        "Only the selling price",
+        "Material, model complexity and labour",
+        "Only employee salaries"
+      ],
+
+      answer: 2,
+
+      reason: "The chapter identifies material, model complexity and labour as factors affecting 3D-printing cost."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_022_4",
+
+      question: "Why does AeroForm continue using conventional manufacturing for some high-volume standard products?",
+
+      options: [
+        "3D printing can never produce physical products",
+        "Advanced manufacturing technologies must always be used",
+        "The company has stopped considering costs",
+        "The economics of a technology depend on the production circumstances rather than assuming one technology is universally cheapest"
+      ],
+
+      answer: 3,
+
+      reason: "Advanced manufacturing is intended to enhance competitiveness, but the appropriate technology depends on factors such as volume, complexity, material and labour requirements."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_022_5",
+
+      question: "What broader strategic benefit has AeroForm obtained from additive manufacturing?",
+
+      options: [
+        "Faster experimentation, design modification and response to customised low-volume requirements",
+        "Complete elimination of engineering work",
+        "Permanent elimination of all conventional manufacturing",
+        "Removal of customer involvement"
+      ],
+
+      answer: 0,
+
+      reason: "The case demonstrates benefits in rapid prototyping, design iteration, customised production and responsiveness rather than simply direct production-cost reduction."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_MEDIUM_023",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Business Model",
+    "Customer Value Proposition",
+    "Profit Formula",
+    "Key Resources and Processes",
+    "Emerging Business Models"
+  ],
+
+  caseText: `
+
+  <p>HomeCare Plus originally sold household maintenance products through physical retail stores. Its revenue model was straightforward: customers purchased products, and the company earned a margin on each sale.</p>
+
+  <p>Over time, however, customer behaviour changed. Customers increasingly wanted convenience and were reluctant to spend time selecting replacement filters, arranging maintenance and remembering when household equipment required servicing.</p>
+
+  <p>Management therefore considered developing a new business model. Instead of simply selling replacement products, HomeCare Plus proposed providing a continuing maintenance service. Customers would pay a recurring amount, and the company would monitor equipment usage, automatically arrange replacement components and provide maintenance when required.</p>
+
+  <p>The finance department initially focused on the reduction in immediate revenue per transaction. Under the traditional model, a customer might make a relatively large purchase when a component needed replacement. Under the new model, revenue would be spread over a period of time.</p>
+
+  <p>The marketing team argued that the new arrangement solved a different customer problem. Customers were no longer merely buying replacement components; they were purchasing convenience and reduced responsibility for maintenance.</p>
+
+  <p>The operations team identified several new requirements. The company would need customer data, service personnel, supplier relationships, inventory planning and systems capable of monitoring usage. These resources and processes did not have the same importance under the original retail model.</p>
+
+  <p>The chief executive asked management to evaluate the proposed model using three fundamental components: what value was being offered to customers, how the company would make money and what resources and processes were required to deliver the proposition.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_023_1",
+
+      question: "Which component of the business model explains the convenience and reduced maintenance responsibility offered to customers?",
+
+      options: [
+        "Customer Value Proposition",
+        "Profit Formula",
+        "Shareholder structure",
+        "Historical cost"
+      ],
+
+      answer: 0,
+
+      reason: "The Customer Value Proposition explains the value delivered to customers and the customer problem being solved."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_023_2",
+
+      question: "The recurring payment arrangement primarily changes which component of the business model?",
+
+      options: [
+        "Customer identity",
+        "Profit Formula",
+        "Physical product design only",
+        "Corporate governance"
+      ],
+
+      answer: 1,
+
+      reason: "The Profit Formula explains how the organisation generates revenue and captures value. Moving from individual sales to recurring payments changes this economic logic."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_023_3",
+
+      question: "The need for customer data, service personnel and supplier relationships relates primarily to:",
+
+      options: [
+        "Key Resources and Processes",
+        "Advertising model",
+        "Low-end disruption",
+        "Hypercompetition"
+      ],
+
+      answer: 0,
+
+      reason: "Key Resources and Processes are the resources and activities required to deliver the customer value proposition and operate the business model."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_023_4",
+
+      question: "Why is the new model not simply a different method of selling the same replacement component?",
+
+      options: [
+        "The company has stopped having customers",
+        "The product no longer exists",
+        "The model changes the value delivered, revenue mechanism and capabilities required to deliver the service",
+        "Recurring revenue is always more profitable"
+      ],
+
+      answer: 2,
+
+      reason: "A business model encompasses the value proposition, profit formula and key resources/processes. The proposed model changes all three rather than merely changing the sales channel."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_023_5",
+
+      question: "Which statement best captures the strategic issue faced by HomeCare Plus?",
+
+      options: [
+        "A business model should be evaluated only by immediate transaction revenue",
+        "Changing customer needs can require redesigning how the organisation creates and captures value",
+        "Customer convenience has no connection with business models",
+        "Key resources and processes are irrelevant when services are introduced"
+      ],
+
+      answer: 1,
+
+      reason: "Changing customer needs can make an established business model less effective and may require a new approach to value creation and value capture."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_MEDIUM_024",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Supply Chain Partnerships",
+    "Rapid Supply Chain",
+    "Agile Supply Chain",
+    "Lean Supply Chain",
+    "Collaboration"
+  ],
+
+  caseText: `
+
+  <p>StyleWave Apparel manufactures clothing for a market in which customer preferences can change rapidly. Some product lines are predictable and sell steadily throughout the year, while others can become popular unexpectedly after appearing on social media.</p>
+
+  <p>Historically, StyleWave operated a long planning cycle. The company placed large orders with suppliers several months before production. It then maintained substantial inventory because management feared that suppliers might not be able to respond quickly if demand increased.</p>
+
+  <p>The system created two different problems. For stable products, large inventories tied up working capital unnecessarily. For rapidly changing products, however, inventory was sometimes in the wrong colour, size or style because the forecast had become inaccurate before the products reached stores.</p>
+
+  <p>StyleWave decided to collaborate more closely with selected suppliers. Instead of sharing information only when an order was placed, the company began sharing selected sales and inventory information on a continuous basis.</p>
+
+  <p>The suppliers could now observe demand changes earlier. Some suppliers redesigned their production schedules so that small quantities could be manufactured and shipped quickly. Others agreed to hold selected materials and convert them into finished products only after demand became clearer.</p>
+
+  <p>The company also introduced common workflows between its planning team and key suppliers. Performance measures were jointly reviewed, and both parties examined the financial and service consequences of changes in lead time and inventory.</p>
+
+  <p>Management classified different parts of the programme differently. One initiative focused primarily on reducing unnecessary processing and inventory. Another focused on responding quickly to changes in product volume and variety. A third focused mainly on reducing the time between identifying demand and delivering products.</p>
+
+  <p>The chief operating officer explained that supply-chain innovation should not be treated as a single concept. Different approaches can address waste, responsiveness and speed in different ways.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_024_1",
+
+      question: "The initiative primarily focused on eliminating unnecessary inventory and other forms of waste is most closely associated with:",
+
+      options: [
+        "Lean supply chain",
+        "Rapid supply chain",
+        "Agile supply chain",
+        "Gift economy"
+      ],
+
+      answer: 0,
+
+      reason: "Lean supply-chain thinking focuses on eliminating waste, including unnecessary inventory and time."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_024_2",
+
+      question: "The initiative focused on responding to changes in product volume and variety is most closely associated with:",
+
+      options: [
+        "Rapid",
+        "Agile",
+        "Lean",
+        "Closed-loop"
+      ],
+
+      answer: 1,
+
+      reason: "An agile supply chain is designed to respond to changes in demand, including changes in volume and variety."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_024_3",
+
+      question: "The initiative primarily concerned with reducing the time between identifying demand and delivering products is:",
+
+      options: [
+        "Lean",
+        "Agile",
+        "Rapid",
+        "Social enterprise"
+      ],
+
+      answer: 2,
+
+      reason: "Rapid supply-chain innovation focuses on speed and efficiency."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_024_4",
+
+      question: "Why did continuous information sharing help StyleWave reduce inventory risk?",
+
+      options: [
+        "It guaranteed that fashion demand would never change",
+        "It allowed suppliers to see demand and inventory changes earlier and adjust their activities",
+        "It removed the need for suppliers",
+        "It forced the company to maintain larger inventories"
+      ],
+
+      answer: 1,
+
+      reason: "Real-time or timely information sharing improves visibility and allows supply-chain participants to react earlier to demand changes."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_024_5",
+
+      question: "Why is joint performance measurement important in the partnership?",
+
+      options: [
+        "It allows participants to assess the overall impact of collaboration rather than optimising isolated activities",
+        "It guarantees that every supplier will earn the same profit",
+        "It eliminates all supply-chain risks",
+        "It prevents suppliers from receiving information"
+      ],
+
+      answer: 0,
+
+      reason: "Supply-chain partnerships require joint management of performance and measurement of the impact of collaboration so that participants can optimise the overall system."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_MEDIUM_025",
+
+  difficulty: "medium",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Intrapreneurship",
+    "Start-ups vs Incumbents",
+    "Lean Start-up",
+    "Innovation",
+    "Strategic Cost Management"
+  ],
+
+  caseText: `
+
+  <p>Heritage Appliances is a large established manufacturer with a strong presence in household appliances. The company has extensive production facilities, established suppliers, a recognised brand and a large customer base. However, management has noticed that new competitors are developing products much faster.</p>
+
+  <p>The company's product-development process traditionally required proposals to move through several committees. Each department evaluated the proposal from its own perspective, and significant investment was normally approved only after detailed forecasts were prepared.</p>
+
+  <p>An employee in the service department developed an idea for a smart appliance that could identify usage problems and notify customers before a major failure occurred. She believed that the concept could eventually create an entirely new service business, but her departmental manager was reluctant to divert resources from the existing product line.</p>
+
+  <p>The chief executive created an internal venture team and allowed the employee to work with engineers, designers and marketing specialists. The team received a limited budget and was instructed to test the concept with customers before requesting substantial investment.</p>
+
+  <p>The team built a simple prototype and tested it with a small group of customers. Feedback showed that customers liked the early-warning feature but were not interested in several other features originally proposed by the employee.</p>
+
+  <p>The team therefore changed the proposed product and conducted another experiment. Management accepted that some of the original development work would never be commercialised.</p>
+
+  <p>The finance director initially questioned why a large established company should tolerate unsuccessful experiments. The chief executive argued that the purpose of the internal venture was to overcome the risk of stagnation associated with established organisations and to allow entrepreneurial ideas to be tested without immediately committing large amounts of corporate capital.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_MEDIUM_025_1",
+
+      question: "The employee pursuing a new business opportunity within Heritage Appliances most directly represents:",
+
+      options: [
+        "Intrapreneurship",
+        "Withdraw",
+        "Hypermarket model",
+        "Supply-chain partnership"
+      ],
+
+      answer: 0,
+
+      reason: "Intrapreneurship is entrepreneurship within an existing organisation."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_025_2",
+
+      question: "Why was the internal venture team created?",
+
+      options: [
+        "To eliminate every existing product",
+        "To provide a structure through which entrepreneurial opportunities could be explored within the established company",
+        "To prevent employees from innovating",
+        "To replace all suppliers"
+      ],
+
+      answer: 1,
+
+      reason: "Internal venture arrangements allow established firms to pursue entrepreneurial opportunities and combat organisational stagnation."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_025_3",
+
+      question: "Testing the simple prototype with a small group before seeking substantial investment reflects:",
+
+      options: [
+        "Hypermarket strategy",
+        "Traditional long-range planning",
+        "Lean start-up thinking",
+        "Withdrawal"
+      ],
+
+      answer: 2,
+
+      reason: "Lean start-up methodology emphasises experimentation, MVPs, measurement and learning before committing substantial resources."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_025_4",
+
+      question: "Why can intrapreneurship be strategically useful to an incumbent organisation?",
+
+      options: [
+        "It guarantees that every new idea will succeed",
+        "It eliminates the company's existing business",
+        "It prevents the organisation from using its existing resources",
+        "It can use entrepreneurial talent and organisational resources to combat stagnation and develop new opportunities"
+      ],
+
+      answer: 3,
+
+      reason: "Intrapreneurship can provide restorative action against stagnation by allowing employees to pursue new opportunities using organisational resources and capabilities."
+    },
+
+    {
+      question_id: "SCM_C75_MEDIUM_025_5",
+
+      question: "Why is management accepting unsuccessful experiments not necessarily evidence of poor cost control?",
+
+      options: [
+        "Experimentation can be an intentional cost of discovering whether a new business model or product hypothesis is viable",
+        "All failed projects are profitable",
+        "Cost control is irrelevant in start-ups",
+        "Every experiment must immediately generate revenue"
+      ],
+
+      answer: 0,
+
+      reason: "Lean experimentation recognises that some experiments will fail. The objective is to obtain learning while limiting the cost of failure compared with committing heavily to an untested idea."
+    }
+
+  ]
+
+},
+
+
+// ============================================================
+// CHAPTER 75 — 5 HARD CASE SCENARIOS
+// ============================================================
+
+{
+  case_id: "SCM_C75_HARD_026",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Transformation",
+    "Disruption",
+    "Sustaining Innovation",
+    "Low-end Disruption",
+    "New-market Disruption",
+    "Strategic Response"
+  ],
+
+  caseText: `
+
+  <p>EliteVision Cameras Limited has been manufacturing professional photographic equipment for more than thirty years. Its customers include professional photographers, film-production companies and specialist studios. The company's reputation has been built around high image quality, interchangeable lenses, sophisticated controls and durable equipment.</p>
+
+  <p>For many years, EliteVision followed a sustaining innovation strategy. Each new generation of cameras offered better sensors, faster processors, improved autofocus and additional features requested by existing professional customers. The company invested heavily in research and development and believed that improving the performance of its established products was the best way to maintain customer loyalty.</p>
+
+  <p>A technology company called SnapNow entered the market with a compact device that combined a camera, software and cloud-based image processing. The device did not initially match EliteVision's highest image quality under professional studio conditions. It also had fewer manual controls.</p>
+
+  <p>EliteVision's management initially dismissed the entrant. Its sales department reported that professional photographers continued to prefer EliteVision's products because of their superior technical specifications.</p>
+
+  <p>SnapNow, however, was not initially targeting those professional customers. It targeted small businesses, students and individuals who had previously considered professional photographic equipment too expensive or too complicated. Many of these users had never purchased a dedicated professional camera.</p>
+
+  <p>The SnapNow device was cheaper and simpler. Customers could take photographs and automatically process, store and share them using the integrated digital service. The company generated revenue through the device and additional cloud services.</p>
+
+  <p>As the customer base grew, SnapNow improved its technology. It eventually attracted some customers who previously used entry-level cameras and began moving into segments closer to EliteVision's traditional market.</p>
+
+  <p>EliteVision responded by improving its existing cameras further. Some directors argued that this was sufficient because existing customers still valued image quality. Other directors believed that the competitive basis of the market itself was changing.</p>
+
+  <p>The strategy team explained that the company was facing two different phenomena. EliteVision's continuous improvements to its existing products were sustaining innovations. SnapNow's initial entry into previously underserved or non-consuming customers had a different strategic character.</p>
+
+  <p>The board then asked whether the SnapNow development should be classified as a transformation, a disruptive innovation, or simply a sustaining improvement. It also asked management to distinguish whether the disruption was initially low-end or new-market.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_026_1",
+
+      question: "EliteVision's continuous improvements in sensors, autofocus and controls for existing professional customers are best described as:",
+
+      options: [
+        "Sustaining innovation",
+        "New-market disruption",
+        "Access-over-ownership",
+        "Gift economy"
+      ],
+
+      answer: 0,
+
+      reason: "Sustaining innovation consists of incremental improvements to existing products or services for existing customers."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_026_2",
+
+      question: "Why does SnapNow's initial strategy most strongly indicate new-market disruption?",
+
+      options: [
+        "It targeted only EliteVision's most demanding professional customers",
+        "It targeted customers who previously did not purchase comparable professional equipment because of cost or complexity",
+        "It offered only higher-cost products",
+        "It improved EliteVision's existing products for the same customers"
+      ],
+
+      answer: 1,
+
+      reason: "New-market disruption targets non-consumers or customers who were unable to use an existing solution because it was too expensive, complicated or inaccessible."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_026_3",
+
+      question: "If SnapNow had instead entered by offering a cheaper, simpler product to existing EliteVision customers who were overserved by premium equipment, it would more closely represent:",
+
+      options: [
+        "Transformation only",
+        "New-market disruption",
+        "Low-end disruption",
+        "Sustaining innovation"
+      ],
+
+      answer: 2,
+
+      reason: "Low-end disruption targets overserved customers at the lower end of an established market with a simpler and lower-cost proposition."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_026_4",
+
+      question: "Which fact most strongly indicates that SnapNow's competitive model involved more than simply improving camera technology?",
+
+      options: [
+        "It used an integrated device, software and cloud service with a different commercial proposition",
+        "It had fewer manual controls",
+        "It used a camera",
+        "It competed in photography"
+      ],
+
+      answer: 0,
+
+      reason: "The case indicates a change in technology, customer segment and commercial logic. Disruption involves more than incremental improvement to the established product."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_026_5",
+
+      question: "Why could EliteVision's continued sustaining innovation fail to address the strategic threat adequately?",
+
+      options: [
+        "Sustaining innovation is always harmful",
+        "Professional customers have no value",
+        "The disruption changes the basis of competition and may create a new customer market rather than merely improving the existing product",
+        "Research and development should always be eliminated"
+      ],
+
+      answer: 2,
+
+      reason: "The threat is not merely that SnapNow has better specifications. Its business model and target market changed the basis of competition by making photographic capability accessible to previously underserved or non-consuming customers."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_HARD_027",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Agile Organisation",
+    "Start-ups vs Incumbents",
+    "Design Thinking",
+    "Lean Start-up",
+    "Six Sigma",
+    "Organisational Transformation"
+  ],
+
+  caseText: `
+
+  <p>MedCore Technologies is a forty-year-old manufacturer of diagnostic equipment. The company has a strong reputation among hospitals and laboratories and has established relationships with regulators, distributors and service providers. Its products generate substantial revenue, and management has historically viewed its large-scale manufacturing capability and established processes as major competitive strengths.</p>
+
+  <p>However, a small start-up called PulseSense began offering a portable diagnostic device that could be connected to a mobile application. PulseSense employed a small cross-functional team consisting of engineers, designers, healthcare specialists and software developers. The team could make product decisions quickly because it did not require approval from several separate functional departments.</p>
+
+  <p>MedCore initially responded by asking its existing engineering department to develop a competing device. The engineering team spent several months preparing detailed specifications before a prototype was available.</p>
+
+  <p>During this period, PulseSense released several versions of its device. Each version was tested with users, and features that customers did not value were removed or redesigned. The start-up deliberately avoided developing a complete product before testing the central assumptions behind the business idea.</p>
+
+  <p>MedCore's management eventually organised workshops with doctors and technicians. The company discovered that its original product concept focused heavily on technical specifications but failed to address several workflow problems faced by users.</p>
+
+  <p>A new cross-functional team was created and given authority to develop a simpler prototype. The team first studied user behaviour, then created a small solution and tested it with selected customers. Based on feedback, the team modified the prototype repeatedly.</p>
+
+  <p>Once the product design and customer requirements became sufficiently stable, MedCore's quality specialists began applying structured process-improvement techniques to production. The objective was to reduce defects and variation while maintaining the reliability expected by existing customers.</p>
+
+  <p>The chief executive concluded that MedCore had previously behaved like a traditional incumbent, while PulseSense had benefited from the characteristics of a start-up. However, she also recognised that MedCore could not simply copy every feature of a start-up because its regulatory obligations, existing customer relationships and large installed base had to be protected.</p>
+
+  <p>The board asked the management accountant to identify the sequence of methods reflected in the redesigned process and explain why the incumbent needed to combine agility with the discipline required by its established business.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_027_1",
+
+      question: "Which characteristic of PulseSense most clearly reflects the organisational advantage of a start-up described in the chapter?",
+
+      options: [
+        "Large departmental hierarchy",
+        "Cross-functional teams capable of making rapid decisions",
+        "Long approval procedures",
+        "Dependence on rigid functional silos"
+      ],
+
+      answer: 1,
+
+      reason: "Start-ups generally operate with lean, cross-functional teams and quicker decision-making, whereas incumbents often have hierarchy, functional silos and slower approval processes."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_027_2",
+
+      question: "MedCore's workshops aimed at understanding doctors' and technicians' actual problems most directly represent:",
+
+      options: [
+        "Design Thinking",
+        "Six Sigma",
+        "Subscription model",
+        "Cost flywheel"
+      ],
+
+      answer: 0,
+
+      reason: "Design Thinking focuses on understanding users, challenging assumptions and redefining problems before developing solutions."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_027_3",
+
+      question: "The creation and testing of a small prototype before extensive investment represents:",
+
+      options: [
+        "Closed-loop production",
+        "Hypermarket model",
+        "Lean Start-up",
+        "Withdraw"
+      ],
+
+      answer: 2,
+
+      reason: "Lean start-up uses MVPs and experimentation to test hypotheses before substantial resource commitment."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_027_4",
+
+      question: "The final application of structured process-improvement techniques after the product became sufficiently stable most closely represents:",
+
+      options: [
+        "Design Thinking",
+        "Six Sigma",
+        "Lean Start-up",
+        "Strategic soothsaying"
+      ],
+
+      answer: 1,
+
+      reason: "Six Sigma is focused on quality and process improvement, particularly reducing defects and variation in mature products and processes."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_027_5",
+
+      question: "Which sequence best reflects the process followed by MedCore?",
+
+      options: [
+        "Six Sigma → Agile → Lean Start-up → Design Thinking",
+        "Agile → Six Sigma → Design Thinking → Lean Start-up",
+        "Design Thinking → Lean Start-up → Agile → Six Sigma",
+        "Lean Start-up → Design Thinking → Six Sigma → Agile"
+      ],
+
+      answer: 2,
+
+      reason: "The chapter identifies the innovation sequence as Design Thinking → Lean Start-up → Agile → Six Sigma."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_HARD_028",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Hypercompetition",
+    "D'Aveni 7S Framework",
+    "Signals",
+    "Shifting the Rules",
+    "Simultaneous and Sequential Thrust",
+    "Stakeholder Satisfaction"
+  ],
+
+  caseText: `
+
+  <p>NovaRide operates in a highly competitive urban mobility market. When the company entered the market, it gained customers by offering shorter waiting times than traditional transportation providers. Competitors soon copied its operating system and matched its waiting times.</p>
+
+  <p>NovaRide then introduced a lower-cost membership programme. Within months, several competitors introduced similar membership plans. Management observed that each successful initiative created an advantage for only a limited period before competitors neutralised it.</p>
+
+  <p>The company began studying customer complaints, usage patterns and emerging transportation technologies. Analysts identified a growing demand among corporate customers for integrated mobility services rather than isolated rides.</p>
+
+  <p>NovaRide responded by developing partnerships with public transport operators, parking providers and corporate travel-management companies. It also introduced a new corporate mobility package before competitors had fully understood the emerging demand.</p>
+
+  <p>The chief executive deliberately avoided announcing all details of the programme in advance. Selected announcements were released to indicate that NovaRide was moving in a particular strategic direction, while important implementation details were kept confidential.</p>
+
+  <p>After launching the corporate package, NovaRide simultaneously introduced several initiatives: discounted first-month access, a partnership with a major transport operator and a new corporate dashboard. Management expected that competitors would respond to one initiative but would have difficulty responding simultaneously to all of them.</p>
+
+  <p>The company also changed certain pricing and service arrangements in ways that encouraged customers to view mobility as an integrated service rather than a collection of individual rides. The objective was to change the basis on which customers compared competing offerings.</p>
+
+  <p>The board initially worried that constantly changing strategy might confuse employees. The chief executive explained that the market was not stable enough for a traditional strategy based on defending one permanent advantage. The company instead needed to anticipate changes, move quickly, surprise competitors, use signals carefully and continuously create new temporary advantages.</p>
+
+  <p>The board asked the strategy team to map the initiatives to D'Aveni's 7S framework.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_028_1",
+
+      question: "NovaRide's study of customer complaints, usage patterns and emerging transportation technologies most closely represents:",
+
+      options: [
+        "Strategic soothsaying",
+        "Signals",
+        "Surprise",
+        "Stakeholder satisfaction"
+      ],
+
+      answer: 0,
+
+      reason: "Strategic soothsaying involves anticipating future customer needs and environmental changes to identify opportunities for strategic action."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_028_2",
+
+      question: "The carefully controlled announcements that communicate strategic direction without revealing full implementation details most closely represent:",
+
+      options: [
+        "Speed",
+        "Signals",
+        "Stakeholder satisfaction",
+        "Shifting the rules"
+      ],
+
+      answer: 1,
+
+      reason: "Signals involve communications or actions that influence competitors' perceptions and expectations without necessarily revealing the firm's entire strategic plan."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_028_3",
+
+      question: "Changing the way customers evaluate mobility from individual rides toward an integrated mobility service most closely represents:",
+
+      options: [
+        "Speed",
+        "Surprise",
+        "Shifting the rules of a market",
+        "Strategic soothsaying"
+      ],
+
+      answer: 2,
+
+      reason: "Shifting the rules involves changing the basis on which competition occurs, potentially altering how customers compare competing offerings."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_028_4",
+
+      question: "Launching several initiatives simultaneously so competitors cannot respond effectively to each one in isolation most closely represents:",
+
+      options: [
+        "Stakeholder satisfaction",
+        "Strategic soothsaying",
+        "Signals",
+        "Simultaneous and sequential thrust"
+      ],
+
+      answer: 3,
+
+      reason: "Simultaneous and sequential thrust involves using a series or combination of strategic initiatives so that competitors face difficulty responding effectively to each move."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_028_5",
+
+      question: "Why does NovaRide's experience demonstrate hypercompetition rather than simply strong competition?",
+
+      options: [
+        "Competitive advantages are rapidly copied and neutralised, requiring continuous strategic initiatives",
+        "The company has no competitors",
+        "Customers have stopped changing their preferences",
+        "NovaRide has achieved a permanent advantage"
+      ],
+
+      answer: 0,
+
+      reason: "Hypercompetition is characterised by intense rivalry, rapid strategic manoeuvres and temporary advantages that are quickly challenged or neutralised."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_HARD_029",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Sustainability",
+    "Triple Bottom Line",
+    "Closed-loop Production",
+    "Product Service System",
+    "Open Innovation",
+    "Business Model Transformation"
+  ],
+
+  caseText: `
+
+  <p>PureCycle Packaging manufactures containers used by food and pharmaceutical companies. Its traditional business model is based on selling large quantities of containers to customers. Once the containers are delivered, customers are responsible for using and disposing of them.</p>
+
+  <p>The company's sustainability committee discovered that customers increasingly expected packaging suppliers to reduce environmental impact. However, the committee also recognised that environmental improvements could not be evaluated independently of economic viability and customer requirements.</p>
+
+  <p>PureCycle therefore began studying a new model in which certain reusable containers would remain the property of the company. Customers would pay according to the number of times or service units for which the containers were made available.</p>
+
+  <p>Under this arrangement, PureCycle would be responsible for collection, inspection, repair and eventual recovery of materials. Engineers would therefore have an economic reason to design containers that lasted longer and could be repaired easily.</p>
+
+  <p>The company also wanted to reduce the quantity of new raw material required. Suppliers were invited to contribute ideas for recovering and reusing materials. Several universities and environmental organisations were also invited to participate in product-design experiments.</p>
+
+  <p>One external engineering team suggested redesigning a container so that a damaged component could be replaced without discarding the entire container. Another proposed a material-recovery process through which selected materials could be returned to manufacturing.</p>
+
+  <p>The finance department initially evaluated the project using the expected revenue from container sales and concluded that the new model might produce lower short-term revenue. The sustainability team argued that the analysis ignored several changes. The company would gain recurring service revenue, reduce material waste, potentially lower lifecycle costs and create stronger relationships with customers and suppliers.</p>
+
+  <p>Management also identified social considerations. The new system would require changes in collection activities and supplier practices. The company therefore introduced training and safety programmes for workers involved in recovery and repair.</p>
+
+  <p>The board asked whether the model represented merely an environmental initiative or whether it represented a broader sustainable business-model transformation involving economic, social and environmental dimensions.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_029_1",
+
+      question: "Why does PureCycle's proposed arrangement qualify as a Product Service System most strongly?",
+
+      options: [
+        "Customers purchase and permanently own every container",
+        "Customers pay for the service/use of the containers while PureCycle retains lifecycle responsibility",
+        "The company relies entirely on advertising",
+        "The company stops interacting with customers after sale"
+      ],
+
+      answer: 1,
+
+      reason: "A Product Service System shifts the focus from selling the physical product to providing a service or function, with the provider often retaining responsibility for the product's lifecycle."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_029_2",
+
+      question: "The redesign allowing damaged components to be replaced without discarding the whole container primarily supports:",
+
+      options: [
+        "Closed-loop production",
+        "Hypermarket model",
+        "Low-end disruption",
+        "Advertising model"
+      ],
+
+      answer: 0,
+
+      reason: "Designing products for recovery, repair and reuse supports closed-loop production by reducing waste and improving resource efficiency."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_029_3",
+
+      question: "Inviting universities, suppliers and environmental organisations to contribute ideas is an example of:",
+
+      options: [
+        "Gift economy",
+        "Open innovation",
+        "Subscription model",
+        "Traditional vertical integration"
+      ],
+
+      answer: 1,
+
+      reason: "Open innovation involves using ideas and collaboration from outside organisational boundaries to generate and commercialise innovation."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_029_4",
+
+      question: "Why is the finance department's short-term revenue analysis incomplete?",
+
+      options: [
+        "Revenue is never relevant",
+        "The company should ignore financial results",
+        "The proposed model changes lifecycle costs, recurring revenue, resource consumption and stakeholder relationships",
+        "Sustainability requires companies to operate without profit"
+      ],
+
+      answer: 2,
+
+      reason: "A sustainable business model must be assessed over the broader economic, social and environmental dimensions rather than solely on immediate product-sale revenue."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_029_5",
+
+      question: "Which combination best captures the triple-bottom-line perspective in the case?",
+
+      options: [
+        "Only environmental waste reduction",
+        "Only recurring revenue",
+        "Only worker training",
+        "Economic viability, environmental resource efficiency and social considerations"
+      ],
+
+      answer: 3,
+
+      reason: "The triple bottom line incorporates economic, environmental and social dimensions. PureCycle's proposal addresses all three."
+    }
+
+  ]
+
+},
+
+{
+  case_id: "SCM_C75_HARD_030",
+
+  difficulty: "hard",
+
+  case_chapter: "Chapter5",
+
+  case_topic: [
+    "Emerging Markets",
+    "Business Ecosystems",
+    "Strategic Cost Management",
+    "Customer Value Proposition",
+    "Supply Chain Partnerships",
+    "Business Model Redesign"
+  ],
+
+  caseText: `
+
+  <p>GlobalAgro Machinery is a multinational manufacturer of agricultural equipment. Its established business model was developed for developed economies where farms are relatively large, financing is widely available, spare-parts distribution is reliable and customers can afford sophisticated machinery.</p>
+
+  <p>The company decided to enter a rapidly growing agricultural market in which millions of small and medium-sized farmers represented a substantial potential customer base. Headquarters initially believed that the existing product could simply be sold at a lower price through local distributors.</p>
+
+  <p>The first market study produced several unexpected findings. Farms varied considerably in size and operating conditions. Some customers operated very small plots, while others managed substantially larger farms. Electricity and transportation infrastructure were unreliable in several regions, and local repair capabilities varied considerably.</p>
+
+  <p>Customers were highly price-sensitive, but price was not the only issue. Farmers also wanted equipment that could be repaired locally and did not require highly specialised technicians. Several local manufacturers offered relatively simple, unbranded equipment at substantially lower prices.</p>
+
+  <p>GlobalAgro initially considered reducing the price of its existing machine. However, the finance team calculated that the existing product contained several features that increased manufacturing and maintenance costs without providing equivalent value to many local customers.</p>
+
+  <p>The local management team proposed removing selected features, simplifying the design and using a greater number of locally available components. It also proposed developing partnerships with local repair businesses and spare-parts suppliers.</p>
+
+  <p>Instead of requiring farmers to purchase the equipment outright, the company considered a usage-based arrangement. Under this model, farmers could obtain access to machinery when required without carrying the full ownership cost.</p>
+
+  <p>The company also planned to share selected demand information with local suppliers. If suppliers could see expected demand earlier, they could prepare components and spare parts before seasonal peaks.</p>
+
+  <p>Headquarters initially resisted the proposal because the new product would have a lower margin per transaction than the company's traditional equipment. The local team argued that the opportunity should be evaluated in terms of the overall business model. A lower-margin product that could serve a large customer base and create a network of service and supply partners might generate substantial strategic value.</p>
+
+  <p>The board asked management to determine whether the proposed approach merely represented a lower-priced version of the existing product or whether the company was fundamentally redesigning its value proposition, resources, partnerships and method of value capture for an emerging market.</p>
+
+  `,
+
+  questions: [
+
+    {
+      question_id: "SCM_C75_HARD_030_1",
+
+      question: "Which fact most clearly demonstrates market heterogeneity in GlobalAgro's target market?",
+
+      options: [
+        "All farms are identical",
+        "Farms vary significantly in size, operating conditions and customer requirements",
+        "Every customer wants the same machine",
+        "Only large farms exist"
+      ],
+
+      answer: 1,
+
+      reason: "Market heterogeneity refers to substantial differences among customers and market segments. The case identifies differences in farm size, infrastructure and requirements."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_030_2",
+
+      question: "Why is simply reducing the selling price of the existing machine unlikely to solve GlobalAgro's problem?",
+
+      options: [
+        "The company must also address the underlying cost structure and remove features that customers do not sufficiently value",
+        "Price has no impact on emerging-market customers",
+        "Emerging markets do not contain competitors",
+        "Customers only value advanced features"
+      ],
+
+      answer: 0,
+
+      reason: "If the existing product contains unnecessary cost relative to local customer value, reducing price without redesigning the product and cost structure can destroy profitability without creating an appropriate value proposition."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_030_3",
+
+      question: "The proposed partnerships with local repair businesses and spare-parts suppliers primarily demonstrate which strategic principle?",
+
+      options: [
+        "Traditional vertical isolation",
+        "Business ecosystem and supply-chain partnership",
+        "Pure advertising model",
+        "Gift economy"
+      ],
+
+      answer: 1,
+
+      reason: "The company is creating an interconnected network of partners to improve service, availability and customer value, reflecting ecosystem and supply-chain partnership principles."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_030_4",
+
+      question: "Why could usage-based machinery access be particularly relevant to the target customers?",
+
+      options: [
+        "It eliminates all machinery costs",
+        "It allows customers to obtain the required function without bearing the entire upfront ownership cost",
+        "It requires customers to purchase more machines",
+        "It makes infrastructure irrelevant"
+      ],
+
+      answer: 1,
+
+      reason: "Access-over-ownership or usage-based models can reduce the upfront financial burden and provide customers with temporary access to an asset or its function."
+    },
+
+    {
+      question_id: "SCM_C75_HARD_030_5",
+
+      question: "Which conclusion best captures the strategic change proposed by the local team?",
+
+      options: [
+        "The company is merely discounting its existing product",
+        "The company is abandoning the emerging market",
+        "The company is redesigning its value proposition, cost structure, partnerships and value-capture mechanism to fit local conditions",
+        "The company is adopting only an advertising model"
+      ],
+
+      answer: 2,
+
+      reason: "The proposal changes product design, cost structure, customer proposition, partnerships, distribution/service arrangements and the method of value capture. This represents broader business-model redesign rather than simple price reduction."
+    }
+
+  ]
+
+}
 ];
