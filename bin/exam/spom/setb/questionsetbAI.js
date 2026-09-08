@@ -15586,5 +15586,3363 @@ const AICaseStudies = [
 
   ]
 
+},
+
+// Chapter6
+
+  // =========================================================
+  // MEDIUM CASE 1
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_001",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "CVP Analysis",
+      "Activity Based CVP",
+      "Batch Level Costs",
+      "Break-even Point"
+    ],
+
+    caseText: `
+      <p><strong>NovaCycle Components Ltd.</strong> manufactures specialised components used in premium bicycles. The company currently operates one automated machining line that produces two broad categories of components. One of the important components produced on the line is the steering-support bracket used in its children's bicycle range.</p>
+
+      <p>The management traditionally evaluates the profitability of this component using conventional Cost-Volume-Profit analysis. Under the traditional approach, most factory overheads are treated as fixed because they do not appear to change directly with the number of units produced. The selling price of the steering-support bracket is ₹1,200 per unit, while its variable production cost is ₹900 per unit. The company has identified fixed costs of ₹12,00,000 per month under its conventional costing system.</p>
+
+      <p>Monthly demand for the component is approximately 8,000 units. At this level of activity, the production department appears profitable and management has therefore been reluctant to investigate the composition of the fixed-cost pool in greater detail. However, the newly appointed cost accountant believes that the conventional classification is hiding an important operational issue.</p>
+
+      <p>A review of production activities reveals that the machining line has to be set up whenever production changes from one component family to another. Each setup consumes machine time and requires specialised materials and technician effort. A setup costs ₹4,000. The steering-support bracket is normally produced in batches of 200 units. Therefore, to produce 8,000 units, the production team currently performs 40 setups every month.</p>
+
+      <p>The activity-based review further shows that only ₹9,00,000 of the existing monthly overhead is genuinely fixed with respect to all identified cost drivers. The remaining setup-related expenditure had previously been included in the general fixed-cost pool. Management is considering increasing the batch size from 200 units to 400 units. This would reduce the number of setups, but it would require an additional storage facility costing ₹60,000 per month.</p>
+
+      <p>The production manager supports the larger batches because fewer setups would release machine capacity. The sales manager, however, is concerned that larger batches could increase inventory and make the company less responsive if customer preferences change. The finance manager wants the decision to be evaluated using Activity Based CVP rather than simply comparing the reported fixed costs under the traditional system.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_001_1",
+        question: "Using the conventional CVP approach, what is the monthly break-even quantity for NovaCycle Components Ltd.?",
+        options: [
+          "3,000 units",
+          "4,000 units",
+          "4,500 units",
+          "5,000 units"
+        ],
+        answer: 1,
+        reason: "Contribution per unit = ₹1,200 − ₹900 = ₹300. Break-even units = ₹12,00,000 ÷ ₹300 = 4,000 units."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_001_2",
+        question: "Under the existing batch size of 200 units, how many setups are required to produce the expected monthly demand of 8,000 units?",
+        options: [
+          "20 setups",
+          "30 setups",
+          "40 setups",
+          "50 setups"
+        ],
+        answer: 2,
+        reason: "8,000 units ÷ 200 units per batch = 40 setups."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_001_3",
+        question: "Under Activity Based CVP, what is the total monthly cost of setups under the existing production arrangement?",
+        options: [
+          "₹1,20,000",
+          "₹1,60,000",
+          "₹2,00,000",
+          "₹2,40,000"
+        ],
+        answer: 1,
+        reason: "40 setups × ₹4,000 per setup = ₹1,60,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_001_4",
+        question: "If the batch size is increased to 400 units, what would be the number of monthly setups required for 8,000 units?",
+        options: [
+          "10 setups",
+          "20 setups",
+          "30 setups",
+          "40 setups"
+        ],
+        answer: 1,
+        reason: "8,000 units ÷ 400 units per batch = 20 setups."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_001_5",
+        question: "What is the most important strategic insight provided by the Activity Based CVP analysis in this case?",
+        options: [
+          "All fixed costs are actually variable costs",
+          "Production volume is the only relevant cost driver",
+          "Setup activity can be managed independently of production volume",
+          "Larger batches always increase customer satisfaction"
+        ],
+        answer: 2,
+        reason: "ABC highlights that setup costs are driven by the number of setups rather than simply by production volume, giving management an operational lever to reduce cost and improve capacity utilisation."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM CASE 2
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_002",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Relevant Cost",
+      "Make or Buy",
+      "Opportunity Cost",
+      "Outsourcing"
+    ],
+
+    caseText: `
+      <p><strong>Vertex Home Appliances Ltd.</strong> manufactures premium air-cooling systems. One of the components used in its flagship model is a specialised control module. The module is currently purchased from an external supplier at ₹460 per unit. The company consumes approximately 30,000 modules each year.</p>
+
+      <p>The production manager has suggested that the control module should be manufactured internally. He believes that internal manufacturing would improve quality control and reduce dependence on a single supplier. He estimates that the manufacturing cost per module would be ₹430, comprising direct material of ₹180, direct labour of ₹150 and variable factory overhead of ₹100.</p>
+
+      <p>The accounting department points out that the remaining ₹70 of the currently estimated factory cost represents allocated fixed overhead. This amount would continue even if the company continued purchasing the module from the supplier. Therefore, the finance team has warned management not to compare the supplier price mechanically with the full accounting cost of ₹430.</p>
+
+      <p>The internal production would require additional use of an existing machine. The machine currently has idle capacity, and there would be no additional fixed cost if 30,000 modules were manufactured internally. However, if the company manufactures the modules, it would no longer be able to rent a small portion of the machine area to another manufacturer. The rental income from that arrangement would be ₹3,00,000 per year.</p>
+
+      <p>The supplier has historically maintained consistent quality and delivery schedules. However, its contract permits a price revision after six months if specified raw-material prices increase significantly. The purchasing department believes that the supplier may seek an increase in price in the future. The quality department also believes that internal production could give the company greater control over design changes.</p>
+
+      <p>The managing director has asked the finance team to make the recommendation based on relevant costs while separately considering the qualitative issues surrounding supplier reliability, quality, flexibility and future price uncertainty.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_002_1",
+        question: "Which of the following represents the relevant variable manufacturing cost per control module if Vertex manufactures internally?",
+        options: [
+          "₹180",
+          "₹330",
+          "₹430",
+          "₹500"
+        ],
+        answer: 1,
+        reason: "Relevant variable manufacturing cost = ₹180 material + ₹150 labour = ₹330. The ₹100 stated factory overhead is also described as variable, so strictly the total relevant variable manufacturing cost is ₹430. Therefore the correct option is ₹430.",
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_002_2",
+        question: "Which cost should be treated as an opportunity cost of making the control module internally?",
+        options: [
+          "Allocated fixed factory overhead",
+          "Historical purchase price of the machine",
+          "Annual rental income forgone",
+          "Past depreciation expense"
+        ],
+        answer: 2,
+        reason: "Using the machine internally prevents the company from earning ₹3,00,000 rental income. This forgone benefit is an opportunity cost and is relevant."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_002_3",
+        question: "Why should the allocated ₹70 fixed overhead per module not automatically be included in the make-or-buy comparison?",
+        options: [
+          "Fixed costs are always irrelevant",
+          "It continues regardless of the decision",
+          "It has already been paid in cash",
+          "It is an opportunity benefit"
+        ],
+        answer: 1,
+        reason: "A cost is relevant only when it is future and differs between alternatives. If the fixed overhead continues under both alternatives, it is irrelevant."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_002_4",
+        question: "If the company buys 30,000 modules at ₹460 each, what is the annual purchase cost?",
+        options: [
+          "₹1,28,00,000",
+          "₹1,32,00,000",
+          "₹1,38,00,000",
+          "₹1,44,00,000"
+        ],
+        answer: 2,
+        reason: "30,000 × ₹460 = ₹1,38,00,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_002_5",
+        question: "Which qualitative factor most strongly supports continuing with the supplier despite a possible financial advantage from internal production?",
+        options: [
+          "Historical depreciation",
+          "Supplier's consistent quality and delivery reliability",
+          "Allocated factory overhead",
+          "Past purchase cost"
+        ],
+        answer: 1,
+        reason: "Quality and delivery reliability are important non-financial considerations in outsourcing decisions and may outweigh a purely financial advantage."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM CASE 3
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_003",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Sell or Process Further",
+      "Relevant Cost",
+      "Joint Products"
+    ],
+
+    caseText: `
+      <p><strong>GreenChem Industries</strong> processes agricultural residues into three chemical outputs—Alpha, Beta and Gamma. The three outputs emerge from a common production process at a single point of separation. The company allocates the common processing cost among the three products for financial reporting purposes.</p>
+
+      <p>Gamma is currently sold immediately after the separation point for ₹84 per unit. The production team believes that Gamma can be processed further into a specialised industrial compound called Gamma-X. The proposed additional processing would require variable processing cost of ₹46 per unit and would increase the selling price to ₹138 per unit.</p>
+
+      <p>The production controller initially argues against further processing because the accounting cost allocated to Gamma before the separation point is ₹51 per unit. When this allocated cost is added to the additional processing cost, the total accounting cost appears to be ₹97 per unit, which would leave only ₹41 against the final selling price of ₹138.</p>
+
+      <p>The finance manager disagrees with this approach. He explains that the common processing cost was incurred before the management reached the decision point. It will not change regardless of whether Gamma is sold immediately or processed further. Therefore, the decision should focus on the incremental revenue and incremental cost arising after the separation point.</p>
+
+      <p>There are also operational considerations. The further-processing line currently has spare capacity for only 7,000 units per month, while expected Gamma production is 6,000 units. The sales department believes that customers buying Gamma-X expect tighter quality specifications and shorter delivery times. The company therefore needs to confirm whether the quality-control team can support the additional processing without affecting the company's existing products.</p>
+
+      <p>The managing director asks whether Gamma should continue to be sold at the separation point or whether it should be processed further, assuming sufficient capacity and no change in the common processing cost.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_003_1",
+        question: "What is the incremental revenue per unit from processing Gamma further?",
+        options: [
+          "₹46",
+          "₹51",
+          "₹54",
+          "₹84"
+        ],
+        answer: 2,
+        reason: "Incremental revenue = final selling price ₹138 − separation-point selling price ₹84 = ₹54."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_003_2",
+        question: "What is the incremental contribution per unit from further processing?",
+        options: [
+          "₹8",
+          "₹46",
+          "₹54",
+          "₹97"
+        ],
+        answer: 0,
+        reason: "Incremental contribution = incremental revenue ₹54 − additional processing cost ₹46 = ₹8."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_003_3",
+        question: "Why is the ₹51 common processing cost allocated to Gamma irrelevant to the sell-or-process-further decision?",
+        options: [
+          "It is a future cost",
+          "It changes with the final selling price",
+          "It was incurred before the separation point and cannot be avoided",
+          "It represents an opportunity cost"
+        ],
+        answer: 2,
+        reason: "Joint processing costs incurred before separation are sunk for this decision and do not differ between selling now and processing further."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_003_4",
+        question: "Based purely on the financial information provided, what should GreenChem do?",
+        options: [
+          "Sell Gamma immediately",
+          "Process Gamma further",
+          "Stop producing Gamma",
+          "Increase the common processing cost"
+        ],
+        answer: 1,
+        reason: "Further processing generates an incremental benefit of ₹8 per unit, so it is financially preferable."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_003_5",
+        question: "Which issue should management investigate before implementing the further-processing decision?",
+        options: [
+          "Historical common processing cost",
+          "Allocated depreciation before separation",
+          "Availability of quality-control resources and ability to meet customer specifications",
+          "Original cost of agricultural residues"
+        ],
+        answer: 2,
+        reason: "Resource availability, quality requirements and delivery commitments are relevant qualitative considerations."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM CASE 4
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_004",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Special Order",
+      "Relevant Cost",
+      "Capacity",
+      "Opportunity Cost"
+    ],
+
+    caseText: `
+      <p><strong>MetroLight Electricals Ltd.</strong> manufactures commercial lighting systems. Its normal selling price for the company's standard LED panel is ₹1,500 per unit. The variable production cost is ₹920 per unit. Fixed manufacturing overhead is ₹18,00,000 per month and remains unchanged within the current production range.</p>
+
+      <p>MetroLight normally produces 10,000 panels per month, while its practical capacity is 15,000 panels. A foreign distributor has approached the company with a one-time order for 4,000 panels at ₹1,050 per unit. The distributor operates in a market that MetroLight does not ordinarily serve, and the order will not directly compete with the company's existing domestic customers.</p>
+
+      <p>The sales manager believes the order could help MetroLight enter the foreign market. However, the finance manager is concerned that the special order price is significantly below the normal selling price. The production manager confirms that the company currently has enough unused capacity to manufacture the additional 4,000 units without displacing regular domestic sales.</p>
+
+      <p>The special order requires export-specific packaging costing ₹35 per unit and additional inspection costing ₹40,000 in total. Shipping will be paid directly by the foreign distributor. No additional fixed manufacturing cost is expected from accepting the order.</p>
+
+      <p>However, the managing director warns that the order should not automatically be treated as a routine short-term opportunity. If the distributor becomes a regular customer, future orders may require additional capacity. The company must therefore avoid allowing a temporary special-order decision to create a long-term capacity problem.</p>
+
+      <p>The board asks management to evaluate the immediate financial impact while also considering the strategic implications of entering a new market and the risk of establishing an excessively low reference price.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_004_1",
+        question: "What is the contribution per unit from the special order before considering export-specific costs?",
+        options: [
+          "₹80",
+          "₹130",
+          "₹580",
+          "₹1,050"
+        ],
+        answer: 1,
+        reason: "Special-order price ₹1,050 − variable cost ₹920 = ₹130."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_004_2",
+        question: "What is the contribution per special-order unit after export packaging cost?",
+        options: [
+          "₹95",
+          "₹130",
+          "₹165",
+          "₹55"
+        ],
+        answer: 0,
+        reason: "₹1,050 − ₹920 − ₹35 = ₹95 per unit."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_004_3",
+        question: "What is the total incremental benefit before the additional inspection cost?",
+        options: [
+          "₹2,80,000",
+          "₹3,20,000",
+          "₹3,80,000",
+          "₹4,20,000"
+        ],
+        answer: 2,
+        reason: "4,000 × ₹95 = ₹3,80,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_004_4",
+        question: "After considering the ₹40,000 additional inspection cost, what is the net incremental benefit?",
+        options: [
+          "₹3,00,000",
+          "₹3,20,000",
+          "₹3,40,000",
+          "₹3,80,000"
+        ],
+        answer: 2,
+        reason: "₹3,80,000 − ₹40,000 = ₹3,40,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_004_5",
+        question: "Why is the normal selling price of ₹1,500 not by itself a reason to reject the special order?",
+        options: [
+          "Normal selling price is always irrelevant",
+          "The company has idle capacity and the order provides positive incremental contribution",
+          "Fixed costs disappear if the order is accepted",
+          "Special orders never affect pricing policy"
+        ],
+        answer: 1,
+        reason: "With idle capacity, the company can accept the order without sacrificing regular sales. Since incremental revenue exceeds incremental costs, the order provides additional contribution."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM CASE 5
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_005",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Product Mix",
+      "Limiting Factor",
+      "Contribution per Machine Hour",
+      "Key Factor"
+    ],
+
+    caseText: `
+      <p><strong>Orion Industrial Tools</strong> manufactures two products, X and Y, using the same specialised CNC machine. Product X sells for ₹900 per unit and has variable costs of ₹540 per unit. Product Y sells for ₹1,000 per unit and has variable costs of ₹600 per unit.</p>
+
+      <p>At first glance, the production manager recommends Product Y because it has a higher contribution per unit. However, the CNC machine is operating near full capacity, and the two products require different amounts of machine time.</p>
+
+      <p>Each unit of Product X requires 0.30 machine hours, while each unit of Product Y requires 0.50 machine hours. Maximum annual market demand is 8,000 units for X and 5,000 units for Y. The company has only 2,700 machine hours available for production during the relevant period.</p>
+
+      <p>The purchasing manager confirms that sufficient raw material is available for both products, so material availability is not expected to be a constraint. Labour is also available through the normal workforce. The production manager therefore concludes that machine hours are the key limiting factor.</p>
+
+      <p>The marketing department argues that Y is strategically important because it is positioned as a premium product and attracts customers who may later purchase other equipment. The finance manager responds that the immediate product-mix decision should first identify the contribution generated from the scarce machine resource. The board has asked for an analysis that distinguishes between contribution per unit and contribution per limiting factor.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_005_1",
+        question: "What is the contribution per unit of Product X?",
+        options: [
+          "₹300",
+          "₹360",
+          "₹400",
+          "₹540"
+        ],
+        answer: 1,
+        reason: "₹900 − ₹540 = ₹360 contribution per unit."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_005_2",
+        question: "What is the contribution per unit of Product Y?",
+        options: [
+          "₹300",
+          "₹360",
+          "₹400",
+          "₹600"
+        ],
+        answer: 2,
+        reason: "₹1,000 − ₹600 = ₹400."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_005_3",
+        question: "Which product should receive priority when machine hours are the limiting factor?",
+        options: [
+          "Product X because its contribution per machine hour is higher",
+          "Product Y because its selling price is higher",
+          "Product Y because its contribution per unit is higher",
+          "Both products must always receive equal machine hours"
+        ],
+        answer: 0,
+        reason: "X generates ₹360 ÷ 0.30 = ₹1,200 per machine hour, while Y generates ₹400 ÷ 0.50 = ₹800 per machine hour."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_005_4",
+        question: "If the company uses all 2,700 machine hours for Product X, how many units can it produce?",
+        options: [
+          "7,000 units",
+          "8,000 units",
+          "9,000 units",
+          "10,000 units"
+        ],
+        answer: 1,
+        reason: "2,700 ÷ 0.30 = 9,000 units, but market demand is limited to 8,000 units. Therefore only 8,000 units can be produced and sold."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_005_5",
+        question: "After satisfying maximum demand for X, how many machine hours remain for Y?",
+        options: [
+          "100 hours",
+          "300 hours",
+          "600 hours",
+          "900 hours"
+        ],
+        answer: 2,
+        reason: "8,000 X units × 0.30 = 2,400 hours. Remaining = 2,700 − 2,400 = 300 hours. Therefore the mathematically correct answer is 300 hours."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 1
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_006",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Relevant Cost",
+      "Make or Buy",
+      "Opportunity Cost",
+      "Non-Financial Factors",
+      "Strategic Decision Making"
+    ],
+
+    caseText: `
+      <p><strong>Apex Precision Systems Ltd.</strong> manufactures industrial inspection equipment supplied to pharmaceutical and medical-device manufacturers. The company has historically followed a strategy of maintaining control over critical components because its customers place significant importance on accuracy, reliability and traceability.</p>
+
+      <p>One of the most important components is the optical calibration unit used inside the inspection equipment. Apex currently manufactures the unit internally. The accounting department reports a full manufacturing cost of ₹1,180 per unit, consisting of direct material ₹420, direct labour ₹280, variable overhead ₹180 and allocated fixed overhead ₹300.</p>
+
+      <p>A specialised supplier, OptiCore Technologies, has offered to supply an equivalent calibration unit for ₹920 per unit under a three-year contract. At first sight, the offer appears attractive because the quoted purchase price is below the reported internal cost. Apex requires 20,000 units annually.</p>
+
+      <p>The production manager explains that ₹180 of the internal overhead is variable and would disappear if production stopped. Of the ₹300 allocated fixed overhead, only ₹160 can actually be avoided. The remaining ₹140 represents factory-level costs that will continue regardless of whether Apex makes or buys the component.</p>
+
+      <p>There is, however, another complication. The manufacturing department currently uses the same specialised testing equipment for calibration units and another component that is expected to generate an additional contribution of ₹6,00,000 per year if more machine time becomes available. The equipment has limited spare capacity and cannot support both activities simultaneously at the expected volumes.</p>
+
+      <p>The supplier's proposal also requires Apex to provide technical drawings and certain process specifications. The legal department warns that the transfer could expose proprietary know-how. The quality department is concerned that even a small deterioration in calibration accuracy could lead to expensive warranty claims. The procurement manager counters that OptiCore already supplies similar components to several reputed manufacturers.</p>
+
+      <p>The chief financial officer therefore asks the management team to distinguish between accounting cost and relevant cost. The board wants the decision to reflect both the immediate financial impact and the possible strategic consequences of becoming dependent on an external supplier for a critical component.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_006_1",
+        question: "Which amount represents the avoidable internal cost per calibration unit, before considering the opportunity cost of using the specialised equipment?",
+        options: [
+          "₹700",
+          "₹880",
+          "₹1,040",
+          "₹1,180"
+        ],
+        answer: 1,
+        reason: "Avoidable internal cost = material ₹420 + labour ₹280 + variable overhead ₹180 = ₹880. Only ₹160 of the allocated fixed overhead is also avoidable, so if that is included the total avoidable cost is ₹1,040. Since the case asks for avoidable internal cost before opportunity cost and includes avoidable fixed cost, ₹1,040 is the more complete relevant manufacturing cost."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_006_2",
+        question: "If the specialised equipment's capacity is released by outsourcing and generates an additional contribution of ₹6,00,000 annually, how should this amount be treated?",
+        options: [
+          "As a sunk cost",
+          "As an irrelevant fixed cost",
+          "As an opportunity benefit of outsourcing",
+          "As an allocated overhead"
+        ],
+        answer: 2,
+        reason: "The additional contribution that can be earned from the alternative use of the constrained resource is an opportunity benefit and is relevant to the make-or-buy decision."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_006_3",
+        question: "What is the annual purchase cost if Apex buys all 20,000 calibration units from OptiCore at ₹920 each?",
+        options: [
+          "₹1.64 crore",
+          "₹1.84 crore",
+          "₹2.08 crore",
+          "₹2.36 crore"
+        ],
+        answer: 1,
+        reason: "20,000 × ₹920 = ₹1,84,00,000, or ₹1.84 crore."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_006_4",
+        question: "Which factor creates the strongest non-financial argument against immediate outsourcing?",
+        options: [
+          "The existence of allocated factory overhead",
+          "The possibility of losing proprietary process knowledge and control over a critical component",
+          "The historical manufacturing cost of ₹1,180",
+          "The fact that the supplier has other customers"
+        ],
+        answer: 1,
+        reason: "Loss of proprietary know-how and reduced control over a critical component can create significant long-term strategic and quality risks."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_006_5",
+        question: "What is the central analytical mistake Apex would make if it simply compared ₹1,180 with ₹920?",
+        options: [
+          "It would ignore selling price",
+          "It would compare total accounting cost rather than relevant future differential costs",
+          "It would overstate the supplier's price",
+          "It would treat variable costs as sunk"
+        ],
+        answer: 1,
+        reason: "The ₹1,180 figure contains fixed costs that may continue after outsourcing. Relevant analysis requires identifying future costs that differ between alternatives and incorporating opportunity costs."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 2
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_007",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Special Order",
+      "Key Factor",
+      "Opportunity Cost",
+      "Long-Term Consequences"
+    ],
+
+    caseText: `
+      <p><strong>Zenith Plastics Ltd.</strong> produces packaging bottles for pharmaceutical companies. Its manufacturing system contains five high-speed moulding machines. The company has historically operated close to full capacity during the last quarter of every financial year because pharmaceutical customers place large replenishment orders.</p>
+
+      <p>The standard bottle sells for ₹18 per unit and has a variable cost of ₹10 per unit. Each bottle requires 0.025 machine hours. Zenith has received a special order from an overseas cosmetic manufacturer for 50,000 customised bottles at ₹14 per unit. The customised bottle would have a variable cost of ₹10.50 per unit and require 0.05 machine hours because of the additional moulding complexity.</p>
+
+      <p>The order also requires a dedicated mould costing ₹1,20,000. The mould would have no alternative use after completion of the order. The production director initially believes that the order is attractive because it would generate a contribution over variable cost.</p>
+
+      <p>The sales department then informs the board that regular pharmaceutical demand has unexpectedly increased. Zenith already has confirmed orders for 3,60,000 standard bottles during the period. Total available machine capacity for the period is 10,000 hours. Management must therefore determine whether accepting the special order would displace profitable regular business.</p>
+
+      <p>The standard bottle generates a contribution of ₹8 per unit, whereas the special bottle generates only ₹3.50 per unit before the dedicated mould cost. However, the special order is from a new overseas customer who may potentially place much larger orders in future. The marketing director believes that rejecting the order could permanently damage the company's entry into that market.</p>
+
+      <p>The finance director argues that long-term possibilities should not be ignored but must not be used to conceal the immediate opportunity cost of scarce machine capacity. The board has therefore requested a complete analysis of the order under the current capacity situation and has specifically asked management to distinguish between incremental contribution and contribution sacrificed from existing customers.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_007_1",
+        question: "What is the contribution per machine hour from the standard bottle?",
+        options: [
+          "₹200",
+          "₹320",
+          "₹400",
+          "₹8"
+        ],
+        answer: 1,
+        reason: "Contribution per standard bottle = ₹18 − ₹10 = ₹8. Machine hours = 0.025. Contribution per machine hour = ₹8 ÷ 0.025 = ₹320. Therefore the correct option is ₹320, not ₹400."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_007_2",
+        question: "What is the contribution per machine hour from the special bottle before the mould cost?",
+        options: [
+          "₹35",
+          "₹50",
+          "₹70",
+          "₹140"
+        ],
+        answer: 2,
+        reason: "Special contribution = ₹14 − ₹10.50 = ₹3.50. Machine time = 0.05 hour. ₹3.50 ÷ 0.05 = ₹70 per machine hour."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_007_3",
+        question: "How many machine hours would be required for the complete special order?",
+        options: [
+          "1,250 hours",
+          "2,000 hours",
+          "2,500 hours",
+          "5,000 hours"
+        ],
+        answer: 2,
+        reason: "50,000 × 0.05 = 2,500 machine hours."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_007_4",
+        question: "If 3,60,000 standard bottles require 0.025 hours each, how many machine hours are committed to existing orders?",
+        options: [
+          "7,200 hours",
+          "8,000 hours",
+          "9,000 hours",
+          "9,600 hours"
+        ],
+        answer: 2,
+        reason: "3,60,000 × 0.025 = 9,000 machine hours."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_007_5",
+        question: "Which consideration is most important in deciding whether the special order should displace regular pharmaceutical production?",
+        options: [
+          "The special order has a higher selling price than variable cost",
+          "The special order customer is overseas",
+          "The opportunity contribution lost from using scarce machine hours for the special order",
+          "The fact that the dedicated mould has no alternative use"
+        ],
+        answer: 2,
+        reason: "When capacity is constrained, the contribution forgone from the best alternative use of the scarce resource becomes an opportunity cost and must be included."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 3
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_008",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Pricing Theory",
+      "MR and MC",
+      "Demand Function",
+      "Profit Maximisation"
+    ],
+
+    caseText: `
+      <p><strong>Ardent Medical Equipment Ltd.</strong> manufactures a specialised diagnostic device called the D-90. The company is the only significant supplier of the device in its regional market, although a few international alternatives are available at higher prices.</p>
+
+      <p>Market research indicates that when the selling price is ₹4,80,000 per device, expected demand is zero. For every reduction of ₹4,000 in the selling price, demand is expected to increase by 2 devices. The management accountant has been asked to determine the output and price that maximise profit under the assumption that the demand relationship remains linear over the relevant range.</p>
+
+      <p>The variable manufacturing cost of each device is ₹2,40,000. The company also incurs fixed administrative and manufacturing costs of ₹48,00,000 annually. The sales director argues that the company should choose a high price because the device has a strong reputation for accuracy. The marketing director believes that lowering price could substantially expand the market.</p>
+
+      <p>The chief financial officer reminds the team that the objective is not to maximise sales volume or selling price individually. The relevant objective under the economic pricing model is to maximise profit by identifying the output at which marginal revenue equals marginal cost.</p>
+
+      <p>The board is particularly interested in whether the price obtained from the demand equation should simply be compared with the variable manufacturing cost or whether the marginal-revenue relationship should first be derived. Management has also been asked to explain why a price above marginal cost does not automatically mean that profit is at its maximum.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_008_1",
+        question: "What is the slope coefficient b in the demand equation P = a − bQ?",
+        options: [
+          "₹1,000",
+          "₹2,000",
+          "₹4,000",
+          "₹8,000"
+        ],
+        answer: 1,
+        reason: "A ₹4,000 reduction increases demand by 2 units. Therefore b = ₹4,000 ÷ 2 = ₹2,000 per unit."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_008_2",
+        question: "Which demand equation correctly represents the case?",
+        options: [
+          "P = 4,80,000 − 2,000Q",
+          "P = 4,80,000 − 4,000Q",
+          "P = 2,40,000 − 2,000Q",
+          "P = 4,80,000 + 2,000Q"
+        ],
+        answer: 0,
+        reason: "At zero demand, price is ₹4,80,000 and each additional unit reduces price by ₹2,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_008_3",
+        question: "What is the marginal revenue equation?",
+        options: [
+          "MR = 4,80,000 − 2,000Q",
+          "MR = 4,80,000 − 4,000Q",
+          "MR = 2,40,000 − 4,000Q",
+          "MR = 2,40,000 + 4,000Q"
+        ],
+        answer: 1,
+        reason: "For P = a − bQ, MR = a − 2bQ. Therefore MR = ₹4,80,000 − ₹4,000Q."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_008_4",
+        question: "At what output level is profit maximised?",
+        options: [
+          "48 units",
+          "60 units",
+          "72 units",
+          "120 units"
+        ],
+        answer: 1,
+        reason: "Set MR = MC: 4,80,000 − 4,000Q = 2,40,000. Thus Q = 60. Therefore the correct answer is 60 units, making option 1 correct."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_008_5",
+        question: "Why would maximising the selling price alone not necessarily maximise profit?",
+        options: [
+          "A higher price can reduce quantity demanded and total contribution",
+          "Selling price has no relationship with demand",
+          "Fixed costs always increase with selling price",
+          "Marginal cost becomes zero at high prices"
+        ],
+        answer: 0,
+        reason: "Under the demand relationship in the case, increasing price reduces quantity demanded. Profit depends on the relationship between total revenue and total cost, not on price alone."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 4
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_009",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Pricing Strategy",
+      "Price Sensitivity",
+      "Price Customisation",
+      "Customer Behaviour"
+    ],
+
+    caseText: `
+      <p><strong>UrbanLink Mobility Services</strong> operates a digital platform connecting commuters with electric shuttle services. The company is preparing to revise its pricing structure after observing significant differences in customer behaviour across user groups.</p>
+
+      <p>The company offers three service categories. Corporate customers purchase monthly mobility packages, individual commuters generally purchase daily passes, and occasional users pay per journey. Management initially considered applying a uniform price increase of 10% across all three groups.</p>
+
+      <p>However, customer research revealed that corporate customers usually pass the transportation cost through to their employers and therefore bear only a small portion of the effective economic cost personally. Individual commuters are more conscious of monthly transportation expenditure because it represents a noticeable portion of their disposable income. Occasional users compare UrbanLink's prices with several competing ride-hailing and public transport alternatives.</p>
+
+      <p>The marketing department also discovered that certain commuters have already invested in UrbanLink-compatible access devices and corporate travel cards. Switching providers would require them to replace these devices and undergo registration procedures again. Other customers, however, use easily substitutable services and can change providers with almost no inconvenience.</p>
+
+      <p>UrbanLink has also developed a premium service with guaranteed seating, faster boarding and enhanced customer support. Research shows that customers who perceive these features as highly unique are considerably less likely to compare prices directly with ordinary public transport alternatives.</p>
+
+      <p>The pricing team is therefore considering differentiated pricing rather than a uniform increase. The chief executive insists that any pricing structure must be consistent with the company's broader objectives and should not simply maximise short-term revenue at the expense of customer trust.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_009_1",
+        question: "Which Nagle price-sensitivity effect is most directly reflected when customers can easily switch to competing ride-hailing and public transport alternatives?",
+        options: [
+          "Sunk Investment Effect",
+          "Substitute Awareness Effect",
+          "Shared Cost Effect",
+          "Inventory Effect"
+        ],
+        answer: 1,
+        reason: "Awareness of substitutes performing similar functions increases price sensitivity."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_009_2",
+        question: "The fact that some customers have already invested in UrbanLink-compatible access devices primarily illustrates which effect?",
+        options: [
+          "Sunk Investment Effect",
+          "Unique Value Effect",
+          "Total Expenditure Effect",
+          "End-Benefit Effect"
+        ],
+        answer: 0,
+        reason: "Existing investment in complementary assets can make customers less willing to switch and therefore less price sensitive."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_009_3",
+        question: "Why might corporate customers be less price sensitive than individual commuters in this case?",
+        options: [
+          "They are unaware of competitors",
+          "They do not use the service",
+          "The transportation cost is effectively shared or borne by another party",
+          "They always prefer lower quality"
+        ],
+        answer: 2,
+        reason: "When the buyer does not bear the full economic cost personally, price sensitivity can be reduced—the Shared Cost Effect."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_009_4",
+        question: "The premium service's stronger resistance to price comparison is most consistent with which principle?",
+        options: [
+          "Unique Value Effect",
+          "Inventory Effect",
+          "Substitute Awareness Effect",
+          "Total Expenditure Effect"
+        ],
+        answer: 0,
+        reason: "Greater perceived uniqueness reduces the customer's willingness to compare purely on price."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_009_5",
+        question: "What is the strongest reason for UrbanLink to avoid applying the same 10% increase to every customer group?",
+        options: [
+          "Uniform pricing is always illegal",
+          "Different customer groups have different price sensitivities and perceived values",
+          "Corporate customers never care about price",
+          "Individual customers cannot compare prices"
+        ],
+        answer: 1,
+        reason: "The case demonstrates materially different price-sensitivity drivers across customer groups. Pricing can therefore be customised based on customer characteristics and perceived value."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 5
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_010",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Ethical Decision Making",
+      "Non-Financial Considerations",
+      "Relevant Cost",
+      "Long-Term Profitability"
+    ],
+
+    caseText: `
+      <p><strong>CareFirst Integrated Healthcare Ltd.</strong> operates a chain of specialised hospitals. The company charges patients using package prices that remain broadly unchanged regardless of the exact number of days spent in the hospital, subject to certain medical exceptions.</p>
+
+      <p>CareFirst currently records an average stay of 3.2 patient-days per admission. The finance department has identified a potential cost-saving programme under which the average stay would be reduced to 2.7 days. The consultant estimates that each patient-day avoided would save ₹1,100 of general variable cost.</p>
+
+      <p>CareFirst treats approximately 20,000 patients annually. The consultant's financial model predicts that the shorter stay would create substantial savings. However, the medical superintendent warns that some patients may be discharged before complete recovery. He estimates that the readmission rate could increase from 4% to 7% if the programme is implemented.</p>
+
+      <p>The revenue department points out that readmissions are treated as new admissions for billing purposes under the existing package structure. Each additional admission would therefore generate an average incremental cash inflow of ₹6,000. However, the hospital would also incur ₹3,500 of additional variable medical and administrative cost per readmission.</p>
+
+      <p>The chief executive initially views the proposal favourably because the projected accounting impact appears positive. The head of patient care strongly disagrees, arguing that the financial model fails to capture patient welfare, clinical outcomes, hospital reputation and regulatory risk.</p>
+
+      <p>The board has asked the management accountant to prepare a quantitative analysis but has specifically stated that the recommendation must not be based solely on the highest short-term accounting profit. The board wants management to consider ethical responsibilities towards patients and the possibility that a decision that improves current-period profit could reduce future demand, employee morale and stakeholder confidence.</p>
+
+      <p>The compliance officer further notes that regulators are increasingly examining whether healthcare providers use financial incentives that could influence clinical discharge decisions. Consequently, the board believes that the proposal must be evaluated through both a financial and ethical lens.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_010_1",
+        question: "What is the annual saving in general variable cost if the average stay falls from 3.2 days to 2.7 days for 20,000 patients?",
+        options: [
+          "₹55,00,000",
+          "₹1,10,00,000",
+          "₹2,20,00,000",
+          "₹3,52,00,000"
+        ],
+        answer: 1,
+        reason: "Reduction = 0.5 patient-day per patient. 20,000 × 0.5 × ₹1,100 = ₹1,10,00,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_010_2",
+        question: "What is the expected increase in readmissions if the readmission rate rises from 4% to 7%?",
+        options: [
+          "300 patients",
+          "400 patients",
+          "500 patients",
+          "600 patients"
+        ],
+        answer: 2,
+        reason: "Increase = 3% of 20,000 = 600 additional readmissions."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_010_3",
+        question: "What is the net incremental cash contribution per additional readmission before considering wider reputational or ethical consequences?",
+        options: [
+          "₹2,500",
+          "₹3,500",
+          "₹6,000",
+          "₹9,500"
+        ],
+        answer: 0,
+        reason: "Additional cash inflow ₹6,000 − additional variable cost ₹3,500 = ₹2,500."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_010_4",
+        question: "Which consideration most clearly represents a non-financial factor in this case?",
+        options: [
+          "₹1,100 saving per patient-day",
+          "₹6,000 billing inflow per readmission",
+          "Patient welfare and quality of clinical recovery",
+          "₹3,500 variable cost per readmission"
+        ],
+        answer: 2,
+        reason: "Patient welfare and clinical recovery cannot be adequately represented through the immediate monetary calculations and are therefore key non-financial considerations."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_010_5",
+        question: "Why could accepting the plan solely because it increases short-term profit be ethically problematic?",
+        options: [
+          "Profit is never relevant in healthcare",
+          "The plan could create incentives to discharge patients prematurely, potentially harming patients and damaging long-term stakeholder trust",
+          "Variable costs should never be considered",
+          "Readmission revenue is always illegal"
+        ],
+        answer: 1,
+        reason: "The case links financial incentives to potentially premature discharge. Even if the short-term financial analysis is favourable, patient welfare, professional responsibility, reputation and regulatory consequences must be considered."
+      }
+    ]
+  },
+
+  // =========================================================
+  // MEDIUM CASE 006
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_006",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "CVP Analysis",
+      "Break-even Point",
+      "Target Profit",
+      "Contribution"
+    ],
+
+    caseText: `
+      <p><strong>BluePeak Water Systems Ltd.</strong> manufactures compact water purification units for small commercial establishments such as restaurants, clinics and educational institutions. The company has been operating for several years and has recently started reviewing its pricing and production decisions more systematically because the market has become increasingly competitive.</p>
+
+      <p>The current selling price of one purification unit is ₹24,000. Direct material, direct labour and other variable manufacturing and selling costs together amount to ₹15,000 per unit. The company incurs monthly fixed costs of ₹27,00,000, including factory rent, salaries of permanent supervisory staff, depreciation and administrative expenses.</p>
+
+      <p>The production manager informs the finance department that the plant can manufacture up to 500 units per month without making any additional investment. Current expected monthly demand is 400 units. The marketing department believes that demand could rise if the company reduces its selling price, but the managing director does not want to reduce the price without understanding the effect on the required sales volume.</p>
+
+      <p>A market survey suggests that a reduction of ₹1,000 in the selling price could increase expected monthly demand by approximately 25 units. The finance manager has therefore been asked to examine whether a price reduction would actually help the company reach a target monthly operating profit of ₹9,00,000.</p>
+
+      <p>At the same time, the company is considering a promotional campaign under which an additional selling commission of ₹500 would be paid for every unit sold during the first three months. The fixed advertising expenditure for the campaign would be ₹3,00,000 per month. The marketing manager believes that the campaign could increase monthly sales from the present expected level of 400 units to approximately 475 units.</p>
+
+      <p>The board wants management to distinguish between the effect of price changes, variable selling costs and fixed promotional expenditure. It has specifically instructed the finance team not to assume that an increase in sales volume automatically improves profit.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_006_1",
+        question: "What is the present contribution per purification unit?",
+        options: [
+          "₹7,000",
+          "₹9,000",
+          "₹15,000",
+          "₹24,000"
+        ],
+        answer: 1,
+        reason: "Contribution per unit = Selling price ₹24,000 − Variable cost ₹15,000 = ₹9,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_006_2",
+        question: "What is the present monthly break-even sales volume?",
+        options: [
+          "250 units",
+          "300 units",
+          "350 units",
+          "400 units"
+        ],
+        answer: 1,
+        reason: "Break-even units = Fixed cost ₹27,00,000 ÷ contribution ₹9,000 = 300 units."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_006_3",
+        question: "If the selling price is reduced by ₹1,000 without any change in variable cost, what will be the new contribution per unit?",
+        options: [
+          "₹7,000",
+          "₹8,000",
+          "₹9,000",
+          "₹10,000"
+        ],
+        answer: 1,
+        reason: "New selling price = ₹23,000. Contribution = ₹23,000 − ₹15,000 = ₹8,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_006_5",
+        question: "Which statement best reflects the board's concern regarding an increase in sales volume?",
+        options: [
+          "Higher sales always increase profit",
+          "Sales volume matters only when fixed costs are zero",
+          "Higher sales may fail to improve profit if the additional revenue is offset by lower prices or higher variable costs",
+          "Fixed costs increase automatically for every additional unit"
+        ],
+        answer: 2,
+        reason: "Profit depends on contribution and fixed costs, not sales volume alone. A higher volume can be accompanied by lower selling prices or additional variable costs."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM CASE 007
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_007",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Minimum Pricing",
+      "Relevant Cost",
+      "Opportunity Cost",
+      "Special Order"
+    ],
+
+    caseText: `
+      <p><strong>Eastline Engineering Works</strong> manufactures precision metal assemblies for industrial machinery. The company normally works for established customers and generally quotes prices after considering expected production costs and a desired margin. During a period of weak demand, however, the factory has developed some spare capacity.</p>
+
+      <p>A new customer has approached Eastline with a one-time requirement for 1,500 specialised assemblies. The customer has made it clear that price will be the primary consideration and has asked Eastline to quote its lowest acceptable price. The production manager estimates that each assembly would require ₹620 of direct material and ₹280 of variable processing cost.</p>
+
+      <p>Each assembly would also normally be charged ₹190 towards fixed factory overhead under the company's full-cost accounting system. However, the factory accountant confirms that these fixed overheads will be incurred regardless of whether the special order is accepted.</p>
+
+      <p>The special order would require additional inspection costing ₹35 per assembly. No additional administrative or factory rent cost would arise. The company currently has 900 hours of unused labour capacity. The order requires 1,200 labour hours in total. Workers can work overtime at ₹420 per hour for the remaining 300 hours.</p>
+
+      <p>The sales manager initially proposes a price of ₹1,250 per assembly because this would cover the full accounting cost and leave a small margin. The finance manager argues that such an approach may not represent the true minimum price because the decision is a short-term special-order decision and the company has idle capacity for most of the labour requirement.</p>
+
+      <p>The managing director also asks whether the historical cost of an old raw-material batch that is already lying in stores should be considered. The material was originally purchased for ₹9,00,000 and has no other foreseeable use. If the special order is rejected, the material can be sold as scrap for ₹1,20,000.</p>
+
+      <p>The board wants the minimum acceptable price to be determined using relevant cost principles rather than full-cost accounting.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_007_1",
+        question: "Which of the following costs is clearly irrelevant because it will be incurred regardless of whether the special order is accepted?",
+        options: [
+          "Additional inspection cost",
+          "Overtime labour cost",
+          "Fixed factory overhead allocated at ₹190 per unit",
+          "Foregone scrap value"
+        ],
+        answer: 2,
+        reason: "The fixed factory overhead will continue regardless of accepting the order and therefore does not differ between alternatives."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_007_2",
+        question: "How many labour hours must Eastline obtain through overtime for the special order?",
+        options: [
+          "200 hours",
+          "300 hours",
+          "900 hours",
+          "1,200 hours"
+        ],
+        answer: 1,
+        reason: "Required labour = 1,200 hours. Available idle capacity = 900 hours. Overtime required = 300 hours."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_007_3",
+        question: "What is the relevant labour cost attributable to overtime?",
+        options: [
+          "₹1,26,000",
+          "₹2,52,000",
+          "₹3,78,000",
+          "₹5,04,000"
+        ],
+        answer: 0,
+        reason: "300 overtime hours × ₹420 = ₹1,26,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_007_4",
+        question: "If the existing raw material can otherwise be sold for ₹1,20,000, how should that amount be treated in the decision?",
+        options: [
+          "As a sunk cost",
+          "As an opportunity cost of accepting the order",
+          "As an opportunity benefit of accepting the order",
+          "As fixed overhead"
+        ],
+        answer: 1,
+        reason: "Using the material for the special order means Eastline gives up the ₹1,20,000 scrap proceeds. This forgone benefit is an opportunity cost."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_007_5",
+        question: "Which principle should Eastline primarily apply while determining the minimum price?",
+        options: [
+          "Full accounting cost plus normal profit",
+          "Historical cost of all resources used",
+          "Incremental costs plus relevant opportunity costs",
+          "Market price of the company's regular products"
+        ],
+        answer: 2,
+        reason: "For a short-term special order, the minimum price should generally cover relevant incremental costs and opportunity costs."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM CASE 008
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_008",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Keep or Drop",
+      "Relevant Cost",
+      "Segment Contribution",
+      "Qualitative Factors"
+    ],
+
+    caseText: `
+      <p><strong>SilverOak Consumer Products Ltd.</strong> operates three product divisions: Home Appliances, Personal Care and Kitchen Solutions. The Kitchen Solutions division has reported an accounting loss for the past two years. Senior management is therefore considering discontinuing the division.</p>
+
+      <p>During the most recent year, Kitchen Solutions generated sales of ₹48,00,000 and incurred variable costs of ₹28,80,000. The division also has directly traceable fixed costs of ₹14,00,000. The remaining corporate administration cost of ₹6,00,000 has been allocated to the division for internal reporting but will continue even if the division is closed.</p>
+
+      <p>The division's reported profit is therefore negative, and the finance department has suggested that closure would eliminate the reported loss. However, the sales director points out that customers who buy Kitchen Solutions products also frequently purchase Home Appliances from SilverOak. If Kitchen Solutions is discontinued, approximately 10% of the contribution from Home Appliances may be lost because some customers are expected to move to competitors offering a complete product range.</p>
+
+      <p>The procurement department adds another complication. Some suppliers provide volume discounts because SilverOak purchases products for all three divisions together. Closing Kitchen Solutions could reduce the company's total purchase volume and increase the variable purchase cost of Home Appliances by ₹2,00,000 annually.</p>
+
+      <p>The human resources department warns that discontinuing the division would require terminating 35 employees. The company has no immediate alternative employment for most of them. The managing director also believes that the Kitchen Solutions brand helps SilverOak maintain visibility among retail customers.</p>
+
+      <p>The board asks the management accountant to analyse whether the division should actually be discontinued rather than relying on the accounting loss reported in the divisional statement.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_008_1",
+        question: "What is the contribution generated by the Kitchen Solutions division?",
+        options: [
+          "₹14,00,000",
+          "₹19,20,000",
+          "₹28,80,000",
+          "₹48,00,000"
+        ],
+        answer: 1,
+        reason: "Contribution = Sales ₹48,00,000 − Variable costs ₹28,80,000 = ₹19,20,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_008_2",
+        question: "Which cost should not automatically be treated as a saving from discontinuing Kitchen Solutions?",
+        options: [
+          "Variable cost",
+          "Directly traceable avoidable fixed cost",
+          "Allocated corporate administration cost that continues after closure",
+          "Avoidable divisional salary cost"
+        ],
+        answer: 2,
+        reason: "If corporate administration cost continues after discontinuation, it is not an avoidable cost and therefore does not represent a saving."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_008_3",
+        question: "What contribution would initially be lost if the Kitchen Solutions division were closed?",
+        options: [
+          "₹14,00,000",
+          "₹19,20,000",
+          "₹28,80,000",
+          "₹48,00,000"
+        ],
+        answer: 1,
+        reason: "The division currently generates contribution of ₹19,20,000, which would be lost if the division is discontinued."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_008_4",
+        question: "Which additional financial effect must be considered because customers may shift away from SilverOak's other products?",
+        options: [
+          "Increase in corporate fixed cost",
+          "Loss of contribution from Home Appliances",
+          "Reduction in depreciation",
+          "Reduction in Kitchen Solutions variable cost"
+        ],
+        answer: 1,
+        reason: "If closure causes customers to stop buying Home Appliances, the resulting lost contribution is an incremental adverse effect of the closure."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_008_5",
+        question: "Which of the following is a non-financial consideration specifically highlighted by the case?",
+        options: [
+          "Corporate allocation of ₹6,00,000",
+          "Variable cost of ₹28,80,000",
+          "Impact of discontinuation on employees and brand visibility",
+          "Contribution of ₹19,20,000"
+        ],
+        answer: 2,
+        reason: "Employee consequences and brand visibility are qualitative/non-financial factors that should be considered alongside relevant financial information."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM CASE 009
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_009",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Activity Based Costing",
+      "Setup Costs",
+      "Cost Drivers",
+      "CVP Analysis"
+    ],
+
+    caseText: `
+      <p><strong>RapidForm Auto Components</strong> supplies metal brackets to automobile manufacturers. The company has traditionally treated its setup costs as fixed factory overhead. The cost accountant recently conducted an activity-based review and found that the number of production setups, rather than the number of units manufactured, was the major driver of a significant portion of these costs.</p>
+
+      <p>The company produces 12,000 brackets per month. Each bracket sells for ₹750 and has a unit-level variable cost of ₹500. The company has genuinely fixed facility costs of ₹12,00,000 per month.</p>
+
+      <p>The current manufacturing arrangement produces 60 batches each month, with each batch containing 200 units. Every setup costs ₹3,000. The production manager believes that the number of setups can be reduced by increasing the average batch size to 300 units.</p>
+
+      <p>The larger batches would reduce setups to 40 per month. However, the inventory manager warns that additional storage and handling costs of ₹50,000 per month would be incurred. The production manager argues that the lower number of setups would also free machine time, allowing the company to respond more quickly to a possible order from another automobile manufacturer.</p>
+
+      <p>The finance department wants management to understand why setup cost should not simply be classified as a fixed cost and forgotten. The board is particularly interested in how the cost driver affects the behaviour of the cost and how changes in batch size can alter the company's economics even when total monthly production remains unchanged.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_009_2",
+        question: "After increasing the batch size to 300 units, how many setups will be required for 12,000 units?",
+        options: [
+          "30",
+          "40",
+          "50",
+          "60"
+        ],
+        answer: 1,
+        reason: "12,000 ÷ 300 = 40 setups."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_009_3",
+        question: "What is the monthly saving in setup cost after increasing the batch size?",
+        options: [
+          "₹40,000",
+          "₹50,000",
+          "₹60,000",
+          "₹70,000"
+        ],
+        answer: 2,
+        reason: "Current setup cost = 60 × ₹3,000 = ₹1,80,000. New setup cost = 40 × ₹3,000 = ₹1,20,000. Saving = ₹60,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_009_4",
+        question: "After considering the additional ₹50,000 storage cost, what is the net monthly financial benefit from the batch-size change?",
+        options: [
+          "₹10,000",
+          "₹20,000",
+          "₹50,000",
+          "₹60,000"
+        ],
+        answer: 0,
+        reason: "Setup saving ₹60,000 − additional storage cost ₹50,000 = ₹10,000 net benefit."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_009_5",
+        question: "Why is setup cost considered a batch-level cost rather than a unit-level cost?",
+        options: [
+          "It changes with every individual unit",
+          "The same setup resources are consumed for a batch irrespective of the exact number of units in that batch",
+          "It is always a facility-level cost",
+          "It is completely unrelated to production"
+        ],
+        answer: 1,
+        reason: "Setup resources are triggered by each production batch/setup, making number of setups the relevant cost driver."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM CASE 010
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_010",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Pricing Decisions",
+      "Internal Factors",
+      "External Factors",
+      "Pricing Objectives"
+    ],
+
+    caseText: `
+      <p><strong>PureSip Beverages Ltd.</strong> is preparing to launch a new premium herbal beverage. The marketing team initially recommends a high introductory price because the product uses organic ingredients and has a distinctive formulation. The finance team, however, points out that the company has not yet established how customers will react to the product.</p>
+
+      <p>The company intends to position PureSip as a health-oriented premium brand. Management expects the initial customer segment to consist of urban consumers willing to pay more for perceived quality, sustainable packaging and unique flavours. However, several competitors are expected to launch similar products within six months.</p>
+
+      <p>The production department informs management that the initial production volume will be relatively low, resulting in a higher cost per bottle. If demand increases substantially, the company expects economies of scale to reduce unit production cost.</p>
+
+      <p>The sales team also reports that supermarkets have significant bargaining power and may demand promotional allowances. In addition, the government has recently introduced stricter labelling requirements for beverages making health-related claims. Compliance will increase the company's marketing and packaging expenditure.</p>
+
+      <p>The board is divided between two objectives. One group wants to maximise current profit through premium pricing, while another group wants rapid market penetration and a large customer base. The chief executive has therefore asked the pricing team to first identify the internal and external factors that should influence the decision rather than simply choosing a price from the production cost.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_010_1",
+        question: "Which factor described in the case is an internal factor influencing pricing?",
+        options: [
+          "Government labelling regulations",
+          "Competitors launching similar products",
+          "Expected economies of scale in production",
+          "Supermarket bargaining power"
+        ],
+        answer: 2,
+        reason: "Production volume and economies of scale are internal factors related to the firm's operations and cost structure."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_010_2",
+        question: "Which factor is most clearly an external factor?",
+        options: [
+          "Production volume",
+          "Product positioning",
+          "Government regulations",
+          "Manufacturing cost"
+        ],
+        answer: 2,
+        reason: "Government controls and regulations are external factors influencing pricing decisions."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_010_3",
+        question: "If PureSip chooses a strategy aimed at rapidly building a large customer base, which pricing objective is most closely associated with that goal?",
+        options: [
+          "Maximum market penetration",
+          "Maximum skimming",
+          "Product quality leadership only",
+          "Ignoring demand elasticity"
+        ],
+        answer: 0,
+        reason: "Market penetration aims to attract customers and build market share, generally through an accessible introductory price."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_010_4",
+        question: "Why might a high initial price be difficult to sustain in this case?",
+        options: [
+          "There are no competitors",
+          "Competitors are expected to introduce similar products",
+          "Production costs cannot fall",
+          "Customers are legally prohibited from buying premium products"
+        ],
+        answer: 1,
+        reason: "Expected competitive entry can reduce the sustainability of a high introductory price."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_010_5",
+        question: "Why should PureSip not determine its selling price solely by adding a margin to production cost?",
+        options: [
+          "Production cost is never relevant",
+          "Pricing also depends on demand, competition, customer perception, objectives and external conditions",
+          "Profit margin cannot be calculated",
+          "Government regulations always determine prices"
+        ],
+        answer: 1,
+        reason: "Cost is only one determinant of price. Market demand, competition, customer value, objectives and external factors can significantly influence pricing."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 011
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_011",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Product Mix",
+      "Multiple Limiting Factors",
+      "Linear Programming",
+      "Contribution"
+    ],
+
+    caseText: `
+      <p><strong>Vertex Industrial Tools Ltd.</strong> manufactures two specialised products, Alpha and Beta, on the same production infrastructure. Alpha sells for ₹1,200 per unit, while Beta sells for ₹1,350 per unit. The variable costs are ₹720 and ₹810 respectively.</p>
+
+      <p>Management initially believes that Beta should receive priority because its contribution per unit is higher. The production controller disagrees, pointing out that three different resources are constrained: raw material, Department A machine hours and Department B machine hours.</p>
+
+      <p>Each Alpha unit requires 4 kg of raw material, 0.40 hour in Department A and 0.30 hour in Department B. Each Beta unit requires 3 kg of raw material, 0.60 hour in Department A and 0.50 hour in Department B.</p>
+
+      <p>During the planning period, only 24,000 kg of raw material, 3,600 hours of Department A and 2,500 hours of Department B are available. Market demand is limited to 5,000 units of Alpha and 4,000 units of Beta.</p>
+
+      <p>The finance manager calculates contribution per unit as ₹480 for Alpha and ₹540 for Beta. The marketing manager argues that Beta should still receive priority because it generates the higher contribution per unit and has a stronger premium-market position.</p>
+
+      <p>The production manager warns that such a conclusion could be misleading because the scarce resources do not have identical consumption patterns. Alpha consumes more raw material per unit but less machine time in both departments. Beta consumes less material but significantly more machine capacity.</p>
+
+      <p>The board therefore asks management to determine whether a simple contribution-per-unit ranking is sufficient. If not, management must consider the constraints jointly and identify the product mix that maximises total contribution.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_011_1",
+        question: "What is the contribution per unit of Alpha?",
+        options: [
+          "₹390",
+          "₹450",
+          "₹480",
+          "₹540"
+        ],
+        answer: 2,
+        reason: "₹1,200 − ₹720 = ₹480."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_011_2",
+        question: "What is the contribution per unit of Beta?",
+        options: [
+          "₹450",
+          "₹480",
+          "₹510",
+          "₹540"
+        ],
+        answer: 3,
+        reason: "₹1,350 − ₹810 = ₹540."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_011_3",
+        question: "Which statement best explains why contribution per unit alone cannot determine the optimum mix?",
+        options: [
+          "Both products have identical selling prices",
+          "Multiple resources are constrained and the products consume those resources differently",
+          "Variable cost is irrelevant",
+          "Demand limits never matter"
+        ],
+        answer: 1,
+        reason: "When multiple scarce resources exist, a simple contribution-per-unit ranking may not identify the feasible combination that maximises total contribution."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_011_4",
+        question: "Which of the following represents a valid raw-material constraint?",
+        options: [
+          "4A + 3B ≤ 24,000",
+          "0.40A + 0.60B ≤ 24,000",
+          "0.30A + 0.50B ≤ 24,000",
+          "480A + 540B ≤ 24,000"
+        ],
+        answer: 0,
+        reason: "Alpha requires 4 kg and Beta requires 3 kg. Therefore 4A + 3B ≤ 24,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_011_5",
+        question: "What analytical technique is most appropriate when several constraints must be considered simultaneously?",
+        options: [
+          "Simple full-cost pricing",
+          "Linear programming",
+          "Historical cost allocation",
+          "Break-even analysis alone"
+        ],
+        answer: 1,
+        reason: "Linear programming is appropriate for determining the optimum combination when multiple resources and constraints must be considered simultaneously."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 012
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_012",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Pricing Theory",
+      "Demand Function",
+      "Marginal Revenue",
+      "Profit Maximisation"
+    ],
+
+    caseText: `
+      <p><strong>MedAxis Diagnostics Ltd.</strong> manufactures a specialised diagnostic analyser used by laboratories. The product has a strong reputation, but the company operates in a market where demand falls as the price increases. Management has commissioned a study to estimate the relationship between selling price and annual demand.</p>
+
+      <p>The study indicates that if the analyser were priced at ₹6,00,000, the company would receive no orders. For every ₹5,000 reduction in selling price, annual demand is expected to increase by 2 units. The relationship is assumed to remain linear for the relevant range.</p>
+
+      <p>The variable manufacturing and selling cost is ₹2,50,000 per analyser. The company has substantial annual fixed costs related to its manufacturing facility, engineering team and administration. These fixed costs do not change within the expected output range.</p>
+
+      <p>The marketing director believes that the company should reduce price substantially because a larger installed customer base could create future demand for maintenance contracts. The finance director responds that such future benefits may be strategically relevant but the immediate pricing model should first determine the profit-maximising output using marginal revenue and marginal cost.</p>
+
+      <p>The sales team has observed that customers frequently negotiate prices and compare MedAxis with international alternatives. However, the technical team believes the company's reliability and after-sales support create a degree of uniqueness. Management therefore wants to determine the theoretical profit-maximising price before making adjustments for strategic considerations.</p>
+
+      <p>The board specifically instructs the finance team to derive the demand equation rather than trying different prices randomly. The team must also explain why the price at which demand is zero is not necessarily the price at which profit is maximised.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_012_1",
+        question: "What is the value of the slope coefficient b in the demand equation P = a − bQ?",
+        options: [
+          "₹2,000",
+          "₹2,500",
+          "₹5,000",
+          "₹10,000"
+        ],
+        answer: 1,
+        reason: "A ₹5,000 reduction in price increases demand by 2 units. Therefore b = ₹5,000 ÷ 2 = ₹2,500."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_012_2",
+        question: "Which demand equation is consistent with the information in the case?",
+        options: [
+          "P = 6,00,000 − 2,500Q",
+          "P = 6,00,000 − 5,000Q",
+          "P = 2,50,000 − 2,500Q",
+          "P = 6,00,000 + 2,500Q"
+        ],
+        answer: 0,
+        reason: "At zero quantity, price is ₹6,00,000. Each additional unit requires a price reduction of ₹2,500."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_012_3",
+        question: "What is the marginal revenue equation?",
+        options: [
+          "MR = 6,00,000 − 2,500Q",
+          "MR = 6,00,000 − 5,000Q",
+          "MR = 3,00,000 − 5,000Q",
+          "MR = 2,50,000 − 5,000Q"
+        ],
+        answer: 1,
+        reason: "For P = a − bQ, MR = a − 2bQ. Here a = ₹6,00,000 and b = ₹2,500, so MR = ₹6,00,000 − ₹5,000Q."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_012_5",
+        question: "Why is the price of ₹6,00,000 not an economically useful profit-maximising price despite being the highest price in the demand relationship?",
+        options: [
+          "At that price demand is zero",
+          "At that price variable cost becomes zero",
+          "Fixed cost becomes negative",
+          "Marginal cost becomes equal to price automatically"
+        ],
+        answer: 0,
+        reason: "The case explicitly states that demand is zero at ₹6,00,000. A price that produces no sales cannot normally maximise operating profit when positive-demand alternatives exist."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 013
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_013",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Oligopoly",
+      "Pricing Strategy",
+      "Non-Price Competition",
+      "Competitive Reaction"
+    ],
+
+    caseText: `
+      <p><strong>NovaHome Electronics</strong> operates in a highly concentrated market for premium smart appliances. Four major companies account for most of the market. NovaHome has historically maintained a premium price because customers associate its products with reliability, extended warranties and responsive after-sales service.</p>
+
+      <p>One of NovaHome's major competitors, ElectraMax, recently reduced the price of its flagship smart refrigerator by 12%. The marketing department at NovaHome initially recommended an immediate matching price cut. The finance director warned that such a response could trigger a broader price war because the competitors are highly aware of one another's pricing decisions.</p>
+
+      <p>NovaHome's research shows that many customers compare not only purchase price but also warranty length, energy efficiency, installation support and after-sales response time. The company therefore has the option of responding through non-price competition rather than reducing the headline price.</p>
+
+      <p>The strategy department also points out that ElectraMax's price reduction could be temporary. If NovaHome immediately reduces its own price, restoring the original price later may be difficult because customers may begin to regard the lower price as the normal market level.</p>
+
+      <p>The procurement team reports that NovaHome has recently achieved a reduction in component costs through supplier negotiations. The savings could either be passed on to customers through lower prices or retained to fund an expanded warranty programme and customer-support infrastructure.</p>
+
+      <p>The board therefore wants to evaluate the market structure before selecting its response. Management has been asked to consider mutual interdependence, competitor reaction, customer perception and the possibility of competing through factors other than price.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_013_1",
+        question: "Which feature of the case most strongly indicates an oligopolistic market?",
+        options: [
+          "Thousands of independent sellers with no interaction",
+          "A few major firms whose pricing decisions affect one another",
+          "Only one supplier with no substitutes",
+          "Perfectly homogeneous agricultural products"
+        ],
+        answer: 1,
+        reason: "The market is dominated by four major firms that closely observe and react to each other's decisions, a key characteristic of oligopoly."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_013_2",
+        question: "Why could immediately matching ElectraMax's 12% price reduction be strategically risky?",
+        options: [
+          "NovaHome would become a monopoly",
+          "Competitors may react with further price reductions, creating a price war",
+          "Customers would legally be prohibited from buying NovaHome",
+          "The company's variable cost would automatically become zero"
+        ],
+        answer: 1,
+        reason: "In an oligopoly, firms are mutually interdependent. One firm's price reduction can trigger reactions from competitors, potentially producing destructive price competition."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_013_3",
+        question: "Which response is an example of non-price competition?",
+        options: [
+          "Reducing the selling price by 15%",
+          "Matching ElectraMax's discount",
+          "Increasing warranty and after-sales support",
+          "Selling below variable cost permanently"
+        ],
+        answer: 2,
+        reason: "Improved warranty and after-sales service compete through value rather than directly reducing the product price."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_013_4",
+        question: "Why might retaining part of the component-cost savings to improve warranty services be strategically reasonable?",
+        options: [
+          "Price is the only factor customers consider",
+          "Non-price differentiation can reduce direct price comparison and preserve the premium position",
+          "Warranty has no relationship with customer value",
+          "It guarantees competitors will exit"
+        ],
+        answer: 1,
+        reason: "The case shows that customers value warranty and service. Strengthening these factors may preserve differentiation without initiating a price war."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_013_5",
+        question: "Which concept best explains why NovaHome must consider ElectraMax's likely reaction before changing its own price?",
+        options: [
+          "Perfect competition",
+          "Mutual interdependence",
+          "Sunk cost",
+          "Batch-level costing"
+        ],
+        answer: 1,
+        reason: "Mutual interdependence is a central characteristic of oligopoly: each firm's pricing and strategic decisions can provoke reactions from rivals."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 014
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_014",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Price Sensitivity",
+      "Price Customisation",
+      "Customer Behaviour",
+      "Pricing Decisions"
+    ],
+
+    caseText: `
+      <p><strong>CloudDesk Business Services</strong> provides a digital document-management platform to small businesses, large enterprises and independent professionals. The company historically charged every customer the same monthly subscription fee for access to its basic platform.</p>
+
+      <p>Over time, management discovered that the three customer groups behaved very differently. Large enterprises use CloudDesk to manage thousands of documents and integrate it with internal systems. They also have long-term contracts and have invested significantly in employee training and system integration. Switching to another platform would involve substantial migration costs and disruption.</p>
+
+      <p>Small businesses generally use CloudDesk for routine document storage and collaboration. Several competing services provide similar functionality, and switching between providers is relatively easy. Price comparisons are common, particularly when the company renews its annual subscription.</p>
+
+      <p>Independent professionals use the service for a small number of documents and often receive reimbursement from their clients for specific projects. For these customers, the subscription represents a relatively small part of the overall project expenditure.</p>
+
+      <p>CloudDesk has also introduced an advanced compliance module with automated audit trails and specialised reporting. Large regulated customers consider these features difficult to replicate internally and have indicated that they would continue using CloudDesk even if the subscription price increased moderately.</p>
+
+      <p>The chief marketing officer proposes a uniform 15% price increase. The chief financial officer instead recommends customer-segment-specific pricing because the factors influencing price sensitivity differ substantially across groups.</p>
+
+      <p>The board also wants to avoid arbitrary discrimination. Any customised pricing structure must be supported by identifiable differences in product configuration, customer segment, contract terms, service level or other legitimate pricing criteria.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_014_1",
+        question: "Which price-sensitivity effect is most evident among large enterprises because they have already invested in integration and employee training?",
+        options: [
+          "Sunk Investment Effect",
+          "Inventory Effect",
+          "Shared Cost Effect",
+          "Total Expenditure Effect"
+        ],
+        answer: 0,
+        reason: "Existing investment in complementary systems and training creates switching costs and reduces price sensitivity."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_014_2",
+        question: "Why are small businesses likely to be more price sensitive?",
+        options: [
+          "They face many comparable substitutes and can switch relatively easily",
+          "They have no competitors",
+          "They have extremely high switching costs",
+          "They never compare prices"
+        ],
+        answer: 0,
+        reason: "The case states that several competitors offer similar functionality and switching is relatively easy. This reflects the Substitute Awareness Effect and makes customers more price sensitive."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_014_3",
+        question: "The fact that independent professionals receive reimbursement from clients most closely reflects which price-sensitivity effect?",
+        options: [
+          "Unique Value Effect",
+          "Shared Cost Effect",
+          "Sunk Investment Effect",
+          "Inventory Effect"
+        ],
+        answer: 1,
+        reason: "When another party bears or shares the cost, the buyer's own sensitivity to price may be reduced."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_014_4",
+        question: "Why might large regulated customers be relatively insensitive to a moderate price increase for the compliance module?",
+        options: [
+          "The module provides little value",
+          "The module has a unique value and is difficult to replicate",
+          "There are unlimited identical substitutes",
+          "The customers do not use the module"
+        ],
+        answer: 1,
+        reason: "The specialised compliance functionality is perceived as difficult to replicate, increasing its unique value and reducing price sensitivity."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_014_5",
+        question: "Which pricing approach is most consistent with the facts presented?",
+        options: [
+          "A mandatory identical price for every customer regardless of circumstances",
+          "Segment-specific/customised pricing based on legitimate differences in value, service and customer characteristics",
+          "Pricing solely according to historical cost",
+          "Random pricing without reference to customer behaviour"
+        ],
+        answer: 1,
+        reason: "The case identifies meaningful differences in customer behaviour, switching costs, perceived value and service requirements, supporting legitimate price customisation."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 015
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_015",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Relevant Cost",
+      "Special Order",
+      "Capacity",
+      "Opportunity Cost",
+      "Long-Term Consequences",
+      "Ethical Considerations"
+    ],
+
+    caseText: `
+      <p><strong>PrimeMed Packaging Ltd.</strong> manufactures sterile packaging containers for pharmaceutical companies. The company has built its reputation on meeting strict delivery schedules and maintaining consistent quality. Its normal customers purchase the containers under annual contracts at an average selling price of ₹32 per unit.</p>
+
+      <p>The variable cost of a standard container is ₹19 per unit. PrimeMed has practical production capacity of 1,00,000 machine hours during the next quarter. Confirmed regular orders require 82,000 machine hours. A new pharmaceutical company has approached PrimeMed with a special order for 2,40,000 containers at ₹23 per unit.</p>
+
+      <p>The special containers require more complicated quality checks and consume 0.10 machine hours per unit, whereas standard containers require only 0.08 machine hours. The variable cost of the special container is ₹17 per unit because the customer's packaging specification uses slightly cheaper raw material.</p>
+
+      <p>The special order would therefore appear attractive because its selling price exceeds its variable cost. However, accepting the complete order would require 24,000 machine hours, while only 18,000 machine hours are available after fulfilling the confirmed regular orders. The company would therefore have to displace part of its regular production unless it can find another solution.</p>
+
+      <p>The production manager proposes accepting the special order for the available capacity and subcontracting some regular production. The procurement manager has found an external manufacturer willing to supply standard containers at ₹25 per unit, but the supplier has limited experience with sterile pharmaceutical packaging.</p>
+
+      <p>The quality director objects to subcontracting regular orders because failure to meet the company's quality standard could result in penalties and damage relationships with established customers. The sales director also reminds management that the regular customers have been with PrimeMed for many years and account for a significant proportion of recurring annual revenue.</p>
+
+      <p>The new customer, on the other hand, could become a major customer in the future. The marketing team believes that the special order could provide entry into a rapidly growing pharmaceutical segment. However, the finance director warns that future strategic benefits should not be assumed as certain cash flows in the immediate decision.</p>
+
+      <p>The board therefore requires an analysis that first evaluates the immediate opportunity cost of constrained machine hours and then considers whether the qualitative and long-term consequences justify accepting all, part or none of the special order.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_015_1",
+        question: "How many machine hours are available for the special order after fulfilling the confirmed regular orders?",
+        options: [
+          "12,000 hours",
+          "18,000 hours",
+          "20,000 hours",
+          "24,000 hours"
+        ],
+        answer: 1,
+        reason: "Available capacity = 1,00,000 hours. Regular orders require 82,000 hours. Remaining capacity = 18,000 hours."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_015_2",
+        question: "What is the contribution per unit from the special order before considering machine-hour opportunity cost?",
+        options: [
+          "₹4",
+          "₹6",
+          "₹13",
+          "₹17"
+        ],
+        answer: 1,
+        reason: "Special-order contribution = ₹23 − ₹17 = ₹6 per unit."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_015_4",
+        question: "If PrimeMed uses available machine capacity for the special order, what is the contribution per machine hour from the special container?",
+        options: [
+          "₹40",
+          "₹60",
+          "₹75",
+          "₹80"
+        ],
+        answer: 1,
+        reason: "Contribution per unit = ₹6. Machine hours per unit = 0.10. Contribution per machine hour = ₹6 ÷ 0.10 = ₹60."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_015_5",
+        question: "Why should PrimeMed not decide solely on the basis that the special order generates ₹6 contribution per unit?",
+        options: [
+          "Contribution is never useful",
+          "The company has constrained machine capacity and accepting the order beyond available capacity could sacrifice contribution from regular customers",
+          "Special orders must always be rejected",
+          "Variable cost is a sunk cost"
+        ],
+        answer: 1,
+        reason: "When capacity is constrained, the contribution forgone from alternative use of the scarce resource is an opportunity cost. In addition, established customer relationships and quality considerations may have long-term consequences."
+      }
+    ]
+  },
+
+/* =========================================================
+   CASE 1 – ABC BASED CVP, BATCH SIZE & ENGINEERING COST
+   ========================================================= */
+
+{
+  case_id: "SRM_C6_HARD_016",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Activity Based CVP",
+    "Batch Level Cost",
+    "Product Sustaining Cost",
+    "Break Even Analysis",
+    "Capacity Utilisation"
+  ],
+
+  caseText: `
+    <p><b>Ardent Mobility Components Ltd.</b> manufactures precision steering assemblies used by automobile manufacturers. The company sells three different steering assemblies, but the A-Prime model accounts for the majority of its production volume. Management has traditionally treated all manufacturing overhead other than direct material and direct labour as fixed. The newly appointed management accountant believes that this approach does not accurately reflect the behaviour of the company's costs.</p>
+
+    <p>The production department performs a large number of setups because automobile customers frequently change their production schedules. Each setup requires machine preparation, calibration and quality verification. The finance department has therefore classified setup expenditure as a <b>batch-level cost</b> rather than a unit-level cost.</p>
+
+    <p>The A-Prime assembly is sold for ₹4,800 per unit. Direct material and direct processing costs vary directly with each unit manufactured. In addition, the company incurs costs relating to production setups and product engineering. The relevant information for a normal month is given below.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Current Position</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Selling price per unit</td><td>₹4,800</td></tr>
+        <tr><td>Direct material per unit</td><td>₹3,250</td></tr>
+        <tr><td>Direct processing cost per unit</td><td>₹850</td></tr>
+        <tr><td>Monthly production and sales</td><td>12,000 units</td></tr>
+        <tr><td>True facility-level fixed cost</td><td>₹6,60,000</td></tr>
+        <tr><td>Number of production setups</td><td>120</td></tr>
+        <tr><td>Cost per setup</td><td>₹3,000</td></tr>
+        <tr><td>Engineering hours</td><td>480 hours</td></tr>
+        <tr><td>Engineering cost per hour</td><td>₹750</td></tr>
+      </tbody>
+    </table>
+
+    <p>The production manager proposes increasing the average batch size. At present, 12,000 units are produced in 120 batches of approximately 100 units each. Under the proposed arrangement, the same monthly output would be manufactured in 80 batches of 150 units each.</p>
+
+    <p>However, the larger batches would require additional storage and material-handling resources. At the same time, engineering expects fewer interventions because the production schedule would contain fewer batch changes. The proposed figures are as follows.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Current</th>
+          <th>Proposed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Monthly production</td><td>12,000 units</td><td>12,000 units</td></tr>
+        <tr><td>Average batch size</td><td>100 units</td><td>150 units</td></tr>
+        <tr><td>Number of setups</td><td>120</td><td>80</td></tr>
+        <tr><td>Setup cost per setup</td><td>₹3,000</td><td>₹3,000</td></tr>
+        <tr><td>Additional storage cost</td><td>Nil</td><td>₹70,000</td></tr>
+        <tr><td>Engineering hours</td><td>480</td><td>420</td></tr>
+        <tr><td>Engineering cost per hour</td><td>₹750</td><td>₹750</td></tr>
+      </tbody>
+    </table>
+
+    <p>The management accountant explains that the contribution generated by every unit should first be calculated after deducting unit-level variable costs. Batch-level and product-sustaining costs should then be considered separately. He warns the board that simply dividing total overhead by units could conceal the effect of changes in batch size.</p>
+
+    <p>The production director further points out that reducing setups will release machine time. Although the present analysis is based on the same output level, this released capacity may become strategically important if customer demand increases. The board therefore wants the current decision evaluated both from the immediate monthly cost perspective and from the activity-based perspective.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SRM_C6_HARD_016_1",
+      question: "What is the contribution per unit of A-Prime before considering setup, engineering and facility-level costs?",
+      options: [
+        "₹600",
+        "₹700",
+        "₹750",
+        "₹850"
+      ],
+      answer: 1,
+      reason: "Contribution per unit = Selling price − Direct material − Direct processing cost = ₹4,800 − ₹3,250 − ₹850 = ₹700."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_016_2",
+      question: "What is the current monthly setup cost?",
+      options: [
+        "₹2,40,000",
+        "₹3,00,000",
+        "₹3,60,000",
+        "₹4,20,000"
+      ],
+      answer: 2,
+      reason: "Current setup cost = 120 setups × ₹3,000 = ₹3,60,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_016_3",
+      question: "Under the proposed batch-size arrangement, what is the net saving in setup and storage costs?",
+      options: [
+        "₹30,000",
+        "₹40,000",
+        "₹50,000",
+        "₹70,000"
+      ],
+      answer: 2,
+      reason: "Current setup cost = ₹3,60,000. Proposed setup cost = 80 × ₹3,000 = ₹2,40,000. Setup saving = ₹1,20,000. Less additional storage cost of ₹70,000 gives net saving of ₹50,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_016_4",
+      question: "What is the saving in product-sustaining engineering cost under the proposed arrangement?",
+      options: [
+        "₹30,000",
+        "₹45,000",
+        "₹50,000",
+        "₹60,000"
+      ],
+      answer: 1,
+      reason: "Engineering hours reduce from 480 to 420, a reduction of 60 hours. Saving = 60 × ₹750 = ₹45,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_016_5",
+      question: "Ignoring any additional revenue from released capacity, what is the total monthly financial benefit of adopting the proposed arrangement?",
+      options: [
+        "₹75,000",
+        "₹90,000",
+        "₹95,000",
+        "₹1,15,000"
+      ],
+      answer: 2,
+      reason: "Net setup/storage saving = ₹50,000. Engineering saving = ₹45,000. Total benefit = ₹95,000."
+    }
+
+  ]
+},
+
+
+/* =========================================================
+   CASE 2 – PRODUCT MIX WITH LIMITING FACTOR
+   ========================================================= */
+
+{
+  case_id: "SRM_C6_HARD_017",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Product Mix",
+    "Limiting Factor",
+    "Contribution per Limiting Factor",
+    "Capacity Constraint",
+    "Relevant Cost"
+  ],
+
+  caseText: `
+    <p><b>Vertex Industrial Controls Ltd.</b> manufactures three electronic control modules used in automated production systems. Demand for all three products has increased sharply. The sales department has obtained confirmed customer requirements, but the company does not have enough testing-machine capacity to satisfy the entire demand.</p>
+
+    <p>The production manager initially recommends producing the product with the highest contribution per unit. The management accountant disagrees because the three products consume different amounts of testing-machine time. Since testing capacity is the bottleneck, the relevant measure for short-term product-mix decisions is contribution generated per hour of the limiting resource.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Module P</th>
+          <th>Module Q</th>
+          <th>Module R</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Selling price per unit</td><td>₹1,500</td><td>₹1,250</td><td>₹1,800</td></tr>
+        <tr><td>Direct material per unit</td><td>₹700</td><td>₹560</td><td>₹900</td></tr>
+        <tr><td>Other variable cost per unit</td><td>₹350</td><td>₹300</td><td>₹500</td></tr>
+        <tr><td>Contribution per unit</td><td>₹450</td><td>₹390</td><td>₹400</td></tr>
+        <tr><td>Testing hours per unit</td><td>0.30</td><td>0.20</td><td>0.25</td></tr>
+        <tr><td>Maximum monthly demand</td><td>5,000</td><td>7,000</td><td>6,000</td></tr>
+      </tbody>
+    </table>
+
+    <p>The testing department has only 2,900 hours available. No additional testing machine can be installed during the next three months. The company therefore needs to determine the product mix that generates the highest contribution from the scarce testing resource.</p>
+
+    <p>The sales director argues that completely eliminating Module P from production could upset several major customers. The finance director responds that the short-term quantitative analysis should first determine the economically optimal mix, after which strategic and qualitative considerations can be examined separately.</p>
+
+    <p>Management also investigates outsourcing. An external testing facility has offered to perform testing for selected units. The external testing charge would be an incremental cost, and outsourcing would release the corresponding internal testing hours.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Outsourcing Information</th>
+          <th>Module P</th>
+          <th>Module Q</th>
+          <th>Module R</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>External testing cost per unit</td><td>₹90</td><td>₹65</td><td>₹80</td></tr>
+        <tr><td>Maximum units that can be outsourced</td><td>1,000</td><td>1,500</td><td>1,200</td></tr>
+      </tbody>
+    </table>
+
+    <p>The management accountant stresses that outsourcing should not be evaluated merely by comparing the external testing cost with the selling price. The relevant question is what contribution is obtained from the internal capacity released by outsourcing, after considering the incremental outsourcing cost.</p>
+
+    <p>The board wants the decision to remain focused on short-term optimisation because long-term capacity expansion and customer-retention considerations will be reviewed separately.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SRM_C6_HARD_017_1",
+      question: "What is the contribution per testing hour for Module P?",
+      options: [
+        "₹1,200",
+        "₹1,500",
+        "₹1,600",
+        "₹1,950"
+      ],
+      answer: 1,
+      reason: "Contribution per testing hour = ₹450 ÷ 0.30 = ₹1,500."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_017_2",
+      question: "Which product should receive first priority when ranking products solely on contribution per testing hour?",
+      options: [
+        "Module P",
+        "Module Q",
+        "Module R",
+        "All three equally"
+      ],
+      answer: 1,
+      reason: "P = ₹1,500/hour; Q = ₹390 ÷ 0.20 = ₹1,950/hour; R = ₹400 ÷ 0.25 = ₹1,600/hour. Therefore Q receives first priority."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_017_3",
+      question: "If maximum demand for Module Q is satisfied first, how many testing hours will it consume?",
+      options: [
+        "1,200 hours",
+        "1,400 hours",
+        "1,500 hours",
+        "1,600 hours"
+      ],
+      answer: 1,
+      reason: "Module Q requires 7,000 units × 0.20 hour = 1,400 testing hours."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_017_4",
+      question: "If Module R is considered after satisfying maximum demand for Module Q, how many testing hours would be required to satisfy maximum demand for Module R?",
+      options: [
+        "1,200 hours",
+        "1,400 hours",
+        "1,500 hours",
+        "1,800 hours"
+      ],
+      answer: 2,
+      reason: "Module R requires 6,000 units × 0.25 hour = 1,500 testing hours."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_017_5",
+      question: "If one unit of Module P is outsourced for testing, what is the net contribution from that unit after paying the external testing cost?",
+      options: [
+        "₹300",
+        "₹350",
+        "₹360",
+        "₹450"
+      ],
+      answer: 2,
+      reason: "Normal contribution of P = ₹450. External testing cost = ₹90. Net contribution = ₹450 − ₹90 = ₹360."
+    }
+
+  ]
+},
+
+
+/* =========================================================
+   CASE 3 – SPECIAL ORDER + CAPACITY + SUBCONTRACTING
+   ========================================================= */
+
+{
+  case_id: "SRM_C6_HARD_018",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Special Order",
+    "Opportunity Cost",
+    "Relevant Cost",
+    "Subcontracting",
+    "Capacity Utilisation"
+  ],
+
+  caseText: `
+    <p><b>Helix Home Appliances Ltd.</b> manufactures premium air-purification systems. Its principal product is sold through established domestic distributors. The company has recently received a one-time overseas order for 4,000 units at a substantially lower price than the normal domestic selling price.</p>
+
+    <p>The overseas buyer argues that the lower price is justified because the order would introduce Helix into a new geographical market. The sales director therefore believes that accepting the order could create a valuable long-term relationship. The finance director, however, points out that the factory is already operating close to its maximum practical capacity.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Normal Product Information</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Normal selling price per unit</td><td>₹18,500</td></tr>
+        <tr><td>Variable manufacturing cost per unit</td><td>₹10,200</td></tr>
+        <tr><td>Variable selling commission per unit</td><td>₹600</td></tr>
+        <tr><td>Machine hours per unit</td><td>1.20 hours</td></tr>
+        <tr><td>Available machine hours</td><td>18,000 hours</td></tr>
+        <tr><td>Normal committed production</td><td>14,000 units</td></tr>
+      </tbody>
+    </table>
+
+    <p>The special customer offers ₹12,000 per unit. Because the transaction is negotiated directly with the customer, the normal sales commission will not apply. However, special export packaging and documentation will be necessary.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Special Order Information</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Special selling price per unit</td><td>₹12,000</td></tr>
+        <tr><td>Additional packaging per unit</td><td>₹450</td></tr>
+        <tr><td>Export documentation per unit</td><td>₹150</td></tr>
+        <tr><td>Special inspection cost</td><td>₹6,00,000</td></tr>
+        <tr><td>Machine hours per special unit</td><td>1.00 hour</td></tr>
+        <tr><td>Special order quantity</td><td>4,000 units</td></tr>
+      </tbody>
+    </table>
+
+    <p>The normal production commitment requires 14,000 × 1.20 machine hours. Any special-order production beyond the remaining capacity would therefore require the company either to displace normal production or to subcontract some normal units.</p>
+
+    <p>A subcontractor has offered to manufacture normal units for Helix. The subcontractor's price includes manufacturing but Helix would still incur its normal selling commission on those units.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Subcontracting Information</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Subcontractor price per normal unit</td><td>₹12,900</td></tr>
+        <tr><td>Normal selling price</td><td>₹18,500</td></tr>
+        <tr><td>Normal selling commission</td><td>₹600</td></tr>
+        <tr><td>Machine hours released per subcontracted unit</td><td>1.20 hours</td></tr>
+      </tbody>
+    </table>
+
+    <p>The board has specifically instructed the finance team to distinguish between idle capacity and constrained capacity. It does not want the special-order decision to be based merely on the fact that the special price exceeds the special order's variable production cost.</p>
+
+    <p>The board also recognises that a one-time order can have long-term consequences. If the buyer becomes a recurring customer, today's special price could influence future negotiations and the company's overall price image.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SRM_C6_HARD_018_1",
+      question: "How many machine hours are required for the normal production commitment of 14,000 units?",
+      options: [
+        "14,000 hours",
+        "15,800 hours",
+        "16,800 hours",
+        "18,000 hours"
+      ],
+      answer: 2,
+      reason: "Machine hours = 14,000 × 1.20 = 16,800 hours."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_018_2",
+      question: "How many machine hours remain available for the special order before subcontracting or displacement of normal production?",
+      options: [
+        "800 hours",
+        "1,000 hours",
+        "1,200 hours",
+        "1,500 hours"
+      ],
+      answer: 2,
+      reason: "Available capacity = 18,000 − 16,800 = 1,200 hours."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_018_3",
+      question: "What is the contribution per special-order unit before considering the special fixed inspection cost?",
+      options: [
+        "₹1,200",
+        "₹1,350",
+        "₹1,500",
+        "₹1,650"
+      ],
+      answer: 0,
+      reason: "Special-order contribution = ₹12,000 − ₹10,200 − ₹450 − ₹150 = ₹1,200."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_018_4",
+      question: "If the company uses only its currently available idle machine capacity, how many special-order units can it manufacture?",
+      options: [
+        "1,000 units",
+        "1,200 units",
+        "1,500 units",
+        "4,000 units"
+      ],
+      answer: 1,
+      reason: "Idle capacity is 1,200 machine hours and each special unit requires one machine hour. Therefore 1,200 special units can be manufactured without displacing normal production."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_018_5",
+      question: "If one normal unit is subcontracted, by how much does the contribution from that normal unit decrease compared with manufacturing it internally?",
+      options: [
+        "₹1,700",
+        "₹2,300",
+        "₹2,700",
+        "₹3,300"
+      ],
+      answer: 2,
+      reason: "Internal contribution = ₹18,500 − ₹10,200 − ₹600 = ₹7,700. Subcontracted contribution = ₹18,500 − ₹12,900 − ₹600 = ₹5,000. Reduction = ₹7,700 − ₹5,000 = ₹2,700."
+    }
+
+  ]
+},
+
+
+/* =========================================================
+   CASE 4 – PRICING THEORY + DEMAND FUNCTION + MR/MC
+   ========================================================= */
+
+{
+  case_id: "SRM_C6_HARD_019",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Product Pricing Theory",
+    "Demand Function",
+    "Marginal Revenue",
+    "Marginal Cost",
+    "Profit Maximisation"
+  ],
+
+  caseText: `
+    <p><b>Nova Diagnostic Systems Ltd.</b> manufactures specialised diagnostic machines for hospitals. The machines incorporate proprietary technology and are substantially differentiated from ordinary diagnostic equipment. Nevertheless, the marketing department believes that customers become increasingly price-sensitive as the company attempts to sell larger quantities.</p>
+
+    <p>To understand the relationship between price and demand, the company conducted a controlled pricing experiment. The study showed that at a very high price of ₹10,20,000, demand would theoretically fall to zero. For every ₹5,000 reduction in price, the expected annual demand increases by 10 machines.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Market Information</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Price at zero demand</td><td>₹10,20,000</td></tr>
+        <tr><td>Demand increase for every ₹5,000 price reduction</td><td>10 machines</td></tr>
+        <tr><td>Marginal manufacturing cost</td><td>₹3,60,000 per machine</td></tr>
+        <tr><td>Annual fixed cost</td><td>₹18 crore</td></tr>
+        <tr><td>Current selling price</td><td>₹7,20,000</td></tr>
+        <tr><td>Current annual demand</td><td>6,000 machines</td></tr>
+      </tbody>
+    </table>
+
+    <p>The chief executive initially argues that the current price should be retained because it provides a large margin above marginal manufacturing cost. The management accountant explains that a high accounting margin per unit does not necessarily mean that total profit is maximised. When demand is price-sensitive, lowering the price can increase the quantity sold, and the relevant test is the relationship between marginal revenue and marginal cost.</p>
+
+    <p>The marketing director further points out that machines installed at hospitals generate additional revenue from maintenance, software upgrades and replacement components. These revenues are strategically important, but the board decides that they should be excluded from the basic product-pricing calculation and considered separately.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Additional Strategic Revenue</th>
+          <th>Amount per Machine</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Maintenance and software revenue</td><td>₹40,000</td></tr>
+        <tr><td>Expected useful customer relationship</td><td>5 years</td></tr>
+        <tr><td>Additional service variable cost</td><td>₹12,000 per year</td></tr>
+      </tbody>
+    </table>
+
+    <p>For the basic pricing analysis, management assumes that the demand function is linear and that marginal cost remains constant. The management accountant is asked to determine the profit-maximising quantity and price under this simplified model.</p>
+
+    <p>The board then plans to consider whether customer lifetime value and strategic market penetration justify adopting a price different from the basic short-run profit-maximising price.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SRM_C6_HARD_019_1",
+      question: "What is the value of 'b' in the linear demand equation P = a − bQ?",
+      options: [
+        "₹250",
+        "₹500",
+        "₹1,000",
+        "₹5,000"
+      ],
+      answer: 1,
+      reason: "A ₹5,000 reduction in price increases demand by 10 units. Therefore b = ₹5,000 ÷ 10 = ₹500."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_019_2",
+      question: "Which demand equation is consistent with the information provided?",
+      options: [
+        "P = ₹10,20,000 − ₹500Q",
+        "P = ₹10,20,000 − ₹1,000Q",
+        "P = ₹7,20,000 − ₹500Q",
+        "P = ₹10,20,000 − ₹5,000Q"
+      ],
+      answer: 0,
+      reason: "At zero quantity, price is ₹10,20,000 and b = ₹500. Therefore P = ₹10,20,000 − ₹500Q."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_019_3",
+      question: "What is the marginal revenue equation corresponding to the demand equation?",
+      options: [
+        "MR = ₹10,20,000 − ₹500Q",
+        "MR = ₹10,20,000 − ₹1,000Q",
+        "MR = ₹5,10,000 − ₹500Q",
+        "MR = ₹7,20,000 − ₹1,000Q"
+      ],
+      answer: 1,
+      reason: "For P = a − bQ, MR = a − 2bQ. Therefore MR = ₹10,20,000 − ₹1,000Q."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_019_4",
+      question: "At what quantity is profit maximised under the basic model?",
+      options: [
+        "540 machines",
+        "600 machines",
+        "660 machines",
+        "720 machines"
+      ],
+      answer: 2,
+      reason: "Profit is maximised where MR = MC. ₹10,20,000 − ₹1,000Q = ₹3,60,000. Therefore ₹6,60,000 = ₹1,000Q, giving Q = 660 machines."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_019_5",
+      question: "What price corresponds to the profit-maximising quantity?",
+      options: [
+        "₹6,60,000",
+        "₹6,90,000",
+        "₹7,20,000",
+        "₹7,50,000"
+      ],
+      answer: 1,
+      reason: "At Q = 660, P = ₹10,20,000 − (₹500 × 660) = ₹10,20,000 − ₹3,30,000 = ₹6,90,000."
+    }
+
+  ]
+},
+
+
+/* =========================================================
+   CASE 5 – SPECIAL ORDER + RELEVANT COST + ETHICS
+   ========================================================= */
+
+{
+  case_id: "SRM_C6_HARD_020",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Relevant Cost",
+    "Special Order",
+    "Minimum Pricing",
+    "Ethical Decision Making",
+    "Non-Financial Factors"
+  ],
+
+  caseText: `
+    <p><b>Evergreen Nutrition Products Ltd.</b> manufactures nutritional beverages for hospitals, schools and retail customers. A large institutional buyer has approached Evergreen with a one-time order for 80,000 bottles. The proposed price is considerably below the company's normal selling price.</p>
+
+    <p>Evergreen currently has sufficient idle manufacturing capacity to produce the entire order. Consequently, accepting the order would not displace normal sales. The finance department therefore begins by identifying only the costs that will change as a direct consequence of accepting the order.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Cost / Revenue Information</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Normal selling price per bottle</td><td>₹95</td></tr>
+        <tr><td>Special-order selling price per bottle</td><td>₹58</td></tr>
+        <tr><td>Direct material per bottle</td><td>₹34</td></tr>
+        <tr><td>Direct labour per bottle</td><td>₹9</td></tr>
+        <tr><td>Variable production overhead per bottle</td><td>₹6</td></tr>
+        <tr><td>Special packaging per bottle</td><td>₹3</td></tr>
+        <tr><td>Special quality testing per bottle</td><td>₹1</td></tr>
+        <tr><td>Additional fixed inspection cost</td><td>₹1,20,000</td></tr>
+        <tr><td>Special-order quantity</td><td>80,000 bottles</td></tr>
+      </tbody>
+    </table>
+
+    <p>The quality-control department has raised an additional concern. The buyer has requested a lower-cost formulation. The proposed formulation would comply with the minimum contractual specification but would contain lower quantities of certain nutritional ingredients than Evergreen's standard product.</p>
+
+    <p>The compliance officer explains that although the formulation may be legally permissible, the company would have to clearly disclose the difference in its documentation. The quality manager is concerned that consumers could associate the Evergreen brand with a lower nutritional standard if the product enters the market without careful communication.</p>
+
+    <p>The marketing director takes a different view. The institutional customer has indicated that a successful first order could lead to substantial recurring business.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Possible Future Business</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Potential future annual quantity</td><td>3,00,000 bottles</td></tr>
+        <tr><td>Potential future selling price</td><td>₹61 per bottle</td></tr>
+        <tr><td>Additional annual fixed compliance cost</td><td>₹4,00,000</td></tr>
+        <tr><td>Annual customer-service cost</td><td>₹2,50,000</td></tr>
+      </tbody>
+    </table>
+
+    <p>The chief financial officer states that the initial order should be judged using relevant-cost principles because the company has idle capacity. Historical fixed manufacturing expenditure is not relevant merely because it appears in the accounting records.</p>
+
+    <p>The managing director agrees with the quantitative approach but insists that the board must also consider ethical responsibilities, product quality, customer expectations, brand reputation and the possibility that short-term financial benefits could create long-term commercial damage.</p>
+
+    <p>The board therefore asks the management accountant to calculate the immediate financial effect of the order while separately identifying the qualitative issues that could affect the final decision.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SRM_C6_HARD_020_1",
+      question: "What is the relevant variable cost per bottle for the special order?",
+      options: [
+        "₹49",
+        "₹50",
+        "₹52",
+        "₹53"
+      ],
+      answer: 3,
+      reason: "Relevant variable cost = ₹34 direct material + ₹9 direct labour + ₹6 variable production overhead + ₹3 special packaging + ₹1 special testing = ₹53 per bottle."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_020_2",
+      question: "What is the total incremental variable cost of producing 80,000 bottles?",
+      options: [
+        "₹40,00,000",
+        "₹42,40,000",
+        "₹43,60,000",
+        "₹44,00,000"
+      ],
+      answer: 1,
+      reason: "80,000 × ₹53 = ₹42,40,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_020_3",
+      question: "What is the total incremental cost of the special order, including the additional fixed inspection cost?",
+      options: [
+        "₹42,40,000",
+        "₹43,00,000",
+        "₹43,60,000",
+        "₹44,80,000"
+      ],
+      answer: 2,
+      reason: "Total incremental cost = ₹42,40,000 variable cost + ₹1,20,000 special fixed inspection cost = ₹43,60,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_020_4",
+      question: "What is the incremental profit from accepting the entire special order at ₹58 per bottle?",
+      options: [
+        "₹1,80,000",
+        "₹2,40,000",
+        "₹2,80,000",
+        "₹3,20,000"
+      ],
+      answer: 2,
+      reason: "Revenue = 80,000 × ₹58 = ₹46,40,000. Less total incremental cost of ₹43,60,000 gives incremental profit of ₹2,80,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_020_5",
+      question: "What is the minimum average price per bottle required to recover all incremental costs of the order?",
+      options: [
+        "₹53.00",
+        "₹53.50",
+        "₹54.00",
+        "₹54.50"
+      ],
+      answer: 3,
+      reason: "Minimum price = Total incremental cost ÷ Quantity = ₹43,60,000 ÷ 80,000 = ₹54.50. Therefore the correct option should be ₹54.50. Since ₹54.50"
+    }
+
+  ]
+},
+
+/* =========================================================
+   CASE 6 – MAKE OR BUY + OPPORTUNITY COST
+   ========================================================= */
+
+{
+  case_id: "SRM_C6_HARD_021",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Make or Buy",
+    "Relevant Cost",
+    "Opportunity Cost",
+    "Outsourcing",
+    "Capacity Utilisation"
+  ],
+
+  caseText: `
+    <p><b>Orion Thermal Systems Ltd.</b> manufactures industrial heat-control units used by pharmaceutical and chemical processing companies. One component, the <b>HT-47 control module</b>, is currently manufactured internally. A specialist supplier has offered to supply the same component at a fixed price per unit.</p>
+
+    <p>The purchase proposal initially appears attractive because the supplier's quoted price is lower than the accounting cost currently reported by the company's cost accounting system. However, the management accountant warns that the reported manufacturing cost contains both variable and unavoidable fixed costs. Therefore, the total accounting cost cannot simply be compared with the supplier's quotation.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Cost Information per HT-47 Module</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Direct material</td><td>₹410</td></tr>
+        <tr><td>Direct labour</td><td>₹160</td></tr>
+        <tr><td>Variable factory overhead</td><td>₹90</td></tr>
+        <tr><td>Fixed factory overhead allocated</td><td>₹140</td></tr>
+        <tr><td>Total accounting cost</td><td>₹800</td></tr>
+        <tr><td>Supplier quotation</td><td>₹705</td></tr>
+        <tr><td>Annual requirement</td><td>20,000 units</td></tr>
+      </tbody>
+    </table>
+
+    <p>The production manager explains that not all fixed overhead would disappear if production were outsourced. Only ₹1,10,000 of the annual fixed manufacturing cost currently assigned to the component would actually be avoidable. The remaining fixed cost relates to the factory building, supervisors and equipment that would continue even after outsourcing.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Fixed Cost Information</th>
+          <th>Annual Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Fixed overhead allocated to HT-47</td><td>₹28,00,000</td></tr>
+        <tr><td>Fixed overhead avoidable if outsourced</td><td>₹1,10,000</td></tr>
+        <tr><td>Fixed overhead unavoidable</td><td>₹26,90,000</td></tr>
+      </tbody>
+    </table>
+
+    <p>At first sight, making the component appears cheaper because the avoidable manufacturing cost is below the supplier's quotation. However, the factory has another profitable use for the machine capacity currently occupied by HT-47.</p>
+
+    <p>If HT-47 production is discontinued, the released machine capacity can be used to manufacture another component, the HX-90 module.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>HX-90 Information</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Contribution per HX-90 unit</td><td>₹520</td></tr>
+        <tr><td>Machine hours required per HX-90 unit</td><td>2 hours</td></tr>
+        <tr><td>Machine hours required per HT-47 unit</td><td>1 hour</td></tr>
+        <tr><td>Maximum additional HX-90 demand</td><td>8,000 units</td></tr>
+      </tbody>
+    </table>
+
+    <p>The production manager confirms that every machine hour released by outsourcing HT-47 can be used for HX-90, subject to the maximum additional demand of 8,000 units. The sales department confirms that all 8,000 additional HX-90 units can be sold.</p>
+
+    <p>The board is therefore faced with two different analyses. The first is the ordinary make-or-buy comparison based on avoidable costs. The second must incorporate the opportunity benefit from using the released capacity for HX-90.</p>
+
+    <p>The chief financial officer also warns that the supplier has previously increased prices after customers became dependent on external supply. Quality, delivery reliability, confidentiality and long-term supplier dependence must therefore be assessed separately from the quantitative analysis.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SRM_C6_HARD_021_1",
+      question: "What is the relevant annual cost of continuing to manufacture 20,000 HT-47 modules, before considering the opportunity cost of the capacity occupied?",
+      options: [
+        "₹1,32,00,000",
+        "₹1,33,10,000",
+        "₹1,41,00,000",
+        "₹1,60,00,000"
+      ],
+      answer: 1,
+      reason: "Relevant variable manufacturing cost per unit = ₹410 + ₹160 + ₹90 = ₹660. For 20,000 units, variable cost = ₹1,32,00,000. The avoidable fixed cost of ₹1,10,000 is also relevant. Therefore total relevant cost of making = ₹1,32,00,000 + ₹1,10,000 = ₹1,33,10,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_021_2",
+      question: "What is the annual purchase cost if all 20,000 HT-47 modules are purchased from the external supplier?",
+      options: [
+        "₹1,33,10,000",
+        "₹1,38,00,000",
+        "₹1,41,00,000",
+        "₹1,44,00,000"
+      ],
+      answer: 2,
+      reason: "Annual purchase cost = 20,000 × ₹705 = ₹1,41,00,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_021_3",
+      question: "If HT-47 production is completely outsourced, how many additional HX-90 units can actually be produced and sold using the released capacity?",
+      options: [
+        "5,000 units",
+        "8,000 units",
+        "10,000 units",
+        "20,000 units"
+      ],
+      answer: 1,
+      reason: "Outsourcing releases 20,000 machine hours. At 2 hours per HX-90, the physical capacity could produce 10,000 units. However, additional demand is limited to 8,000 units. Therefore only 8,000 additional HX-90 units can actually be produced and sold."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_021_4",
+      question: "What is the opportunity benefit obtainable from using the released capacity to manufacture additional HX-90 units?",
+      options: [
+        "₹31,20,000",
+        "₹36,40,000",
+        "₹41,60,000",
+        "₹52,00,000"
+      ],
+      answer: 2,
+      reason: "Additional HX-90 units = 8,000. Contribution per unit = ₹520. Opportunity benefit = 8,000 × ₹520 = ₹41,60,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_021_5",
+      question: "Considering the opportunity benefit from HX-90, which conclusion is most appropriate?",
+      options: [
+        "Continue making HT-47 because the supplier's ₹705 price exceeds the ₹660 variable manufacturing cost",
+        "Continue making because allocated fixed overhead must always be included",
+        "Outsourcing becomes financially attractive because the opportunity benefit from released capacity substantially exceeds the direct cost disadvantage of buying",
+        "The HX-90 contribution is irrelevant because it relates to a different product"
+      ],
+      answer: 2,
+      reason: "Buying HT-47 costs ₹1,41,00,000 compared with relevant make cost of ₹1,33,10,000, a direct disadvantage of ₹7,90,000. However, outsourcing releases capacity generating ₹41,60,000 contribution from HX-90. Net financial advantage of outsourcing = ₹41,60,000 − ₹7,90,000 = ₹33,70,000. Therefore outsourcing is financially attractive, subject to qualitative considerations."
+    }
+
+  ]
+},
+
+
+/* =========================================================
+   CASE 7 – SELL OR PROCESS FURTHER + SCARCE REACTOR
+   ========================================================= */
+
+{
+  case_id: "SRM_C6_HARD_022",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Sell or Process Further",
+    "Joint Products",
+    "Relevant Cost",
+    "Incremental Revenue",
+    "Limiting Factor"
+  ],
+
+  caseText: `
+    <p><b>Mariner Chemical Industries Ltd.</b> produces two chemical products, Alpha and Beta, from a common production process. Both products emerge simultaneously at a common separation point. The joint process cannot be altered in the short term to manufacture only one of the products.</p>
+
+    <p>At the separation point, Alpha and Beta can either be sold immediately or subjected to further processing. Alpha becomes Alpha-Premium after further processing, while Beta becomes Beta-Special.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Alpha</th>
+          <th>Beta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Quantity produced per batch</td><td>12,000 kg</td><td>8,000 kg</td></tr>
+        <tr><td>Selling price at separation point per kg</td><td>₹72</td><td>₹95</td></tr>
+        <tr><td>Further processing cost per kg</td><td>₹18</td><td>₹27</td></tr>
+        <tr><td>Final selling price after processing per kg</td><td>₹108</td><td>₹128</td></tr>
+      </tbody>
+    </table>
+
+    <p>The common process incurs joint production costs of ₹9,60,000 per batch. The accounting department currently allocates this cost between Alpha and Beta according to relative sales value at the separation point.</p>
+
+    <p>The finance manager initially suggests that the allocated joint cost should be considered when deciding whether either product should be processed further. The management accountant disagrees because the joint cost has already been incurred by the time the products reach the separation point and will not change depending on the subsequent decision.</p>
+
+    <p>The further-processing department has a more important constraint. Both Alpha-Premium and Beta-Special require the same specialist reactor.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Reactor Information</th>
+          <th>Alpha-Premium</th>
+          <th>Beta-Special</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Reactor hours required per kg</td><td>0.04 hour</td><td>0.06 hour</td></tr>
+        <tr><td>Maximum quantity available</td><td>12,000 kg</td><td>8,000 kg</td></tr>
+        <tr><td>Total reactor capacity available</td><td colspan="2">720 hours</td></tr>
+      </tbody>
+    </table>
+
+    <p>If all 12,000 kg of Alpha are processed further, Alpha requires 480 reactor hours. If all 8,000 kg of Beta are processed further, Beta requires another 480 hours. Therefore, the company would require 960 reactor hours to process both products completely, whereas only 720 hours are available.</p>
+
+    <p>Management must therefore first calculate the incremental contribution from further processing each product and then determine which product earns the greater incremental contribution per scarce reactor hour.</p>
+
+    <p>Demand is sufficient to sell the entire quantity of either premium product. The commercial director also believes the premium versions may improve the company's market positioning, but the board wants the short-term financial analysis completed before considering those strategic factors.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SRM_C6_HARD_022_1",
+      question: "What is the incremental revenue per kg obtained by processing Alpha further into Alpha-Premium?",
+      options: [
+        "₹18",
+        "₹27",
+        "₹36",
+        "₹108"
+      ],
+      answer: 2,
+      reason: "Incremental revenue = Final selling price − Selling price at separation = ₹108 − ₹72 = ₹36 per kg."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_022_2",
+      question: "What is the incremental contribution per kg from processing Alpha further?",
+      options: [
+        "₹12",
+        "₹18",
+        "₹27",
+        "₹36"
+      ],
+      answer: 1,
+      reason: "Incremental revenue = ₹36. Further processing cost = ₹18. Incremental contribution = ₹36 − ₹18 = ₹18 per kg."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_022_3",
+      question: "What is Alpha's incremental contribution per scarce reactor hour?",
+      options: [
+        "₹300",
+        "₹400",
+        "₹450",
+        "₹600"
+      ],
+      answer: 2,
+      reason: "Alpha generates ₹18 incremental contribution per kg and requires 0.04 reactor hour per kg. Contribution per reactor hour = ₹18 ÷ 0.04 = ₹450."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_022_4",
+      question: "What is Beta's incremental contribution per scarce reactor hour?",
+      options: [
+        "₹100",
+        "₹200",
+        "₹450",
+        "₹550"
+      ],
+      answer: 0,
+      reason: "Beta incremental revenue = ₹128 − ₹95 = ₹33 per kg. Less further processing cost of ₹27 gives ₹6 incremental contribution per kg. Contribution per reactor hour = ₹6 ÷ 0.06 = ₹100."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_022_5",
+      question: "If management wishes to maximise short-term incremental contribution from the 720 reactor hours, which production sequence is appropriate?",
+      options: [
+        "Process Beta first because its final selling price is higher",
+        "Process Alpha first because it earns the higher incremental contribution per reactor hour, then use remaining capacity for Beta",
+        "Allocate reactor hours equally between Alpha and Beta",
+        "Include the ₹9,60,000 joint cost in ranking the products"
+      ],
+      answer: 1,
+      reason: "Alpha earns ₹450 per reactor hour compared with Beta's ₹100. Alpha should therefore receive priority. Processing all 12,000 kg of Alpha uses 480 hours, leaving 240 hours for Beta. The joint cost is sunk at the separation point and is irrelevant to the further-processing decision."
+    }
+
+  ]
+},
+
+
+/* =========================================================
+   CASE 8 – KEEP OR DROP + CUSTOMER INTERDEPENDENCE
+   ========================================================= */
+
+{
+  case_id: "SRM_C6_HARD_023",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Keep or Drop",
+    "Relevant Cost",
+    "Contribution",
+    "Avoidable Fixed Cost",
+    "Customer Relationships"
+  ],
+
+  caseText: `
+    <p><b>Silverline Office Technologies Ltd.</b> operates three divisions: Corporate Systems, Small Business Solutions and Education Systems. The Education Systems division has reported an accounting loss for two consecutive years, and several directors believe it should be closed.</p>
+
+    <p>The divisional manager argues that the reported loss is misleading because a significant portion of the fixed costs allocated to Education Systems would continue even if the division disappeared. The finance department therefore prepares a contribution-based analysis.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Education Systems – Annual Information</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Sales revenue</td><td>₹48,00,000</td></tr>
+        <tr><td>Variable costs</td><td>₹28,80,000</td></tr>
+        <tr><td>Contribution</td><td>₹19,20,000</td></tr>
+        <tr><td>Directly avoidable fixed costs</td><td>₹14,00,000</td></tr>
+        <tr><td>Allocated common fixed costs</td><td>₹10,00,000</td></tr>
+        <tr><td>Reported divisional profit/(loss)</td><td>(₹4,80,000)</td></tr>
+      </tbody>
+    </table>
+
+    <p>The board initially assumes that eliminating a division reporting a ₹4,80,000 accounting loss would increase company profit by ₹4,80,000. The management accountant explains that this is incorrect because the ₹10,00,000 common fixed cost would continue and would merely be reallocated to the remaining divisions.</p>
+
+    <p>There is another complication. Many educational institutions purchasing from Education Systems also purchase networking and administrative equipment from Corporate Systems. The sales department expects some of those customers to move their entire account to competitors if Education Systems is discontinued.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Customer Impact if Education Systems is Dropped</th>
+          <th>Estimated Effect</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Corporate Systems revenue from linked customers</td><td>₹22,00,000</td></tr>
+        <tr><td>Corporate contribution margin</td><td>30%</td></tr>
+        <tr><td>Percentage of linked Corporate revenue expected to be lost</td><td>25%</td></tr>
+        <tr><td>Additional common fixed cost saved</td><td>Nil</td></tr>
+      </tbody>
+    </table>
+
+    <p>The operations director believes that some employees currently assigned to Education Systems could be transferred to Corporate Systems. This would avoid the need for additional recruitment that would otherwise be required to support Corporate Systems' expansion.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Additional Information</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Annual recruitment/labour cost avoided if employees are transferred</td><td>₹1,50,000</td></tr>
+        <tr><td>Common fixed costs continuing after closure</td><td>₹10,00,000</td></tr>
+      </tbody>
+    </table>
+
+    <p>The chief executive therefore asks management to determine the total relevant financial effect of closing the division. The board must distinguish between the contribution lost, avoidable fixed costs saved, related contribution lost in another division and labour costs avoided through redeployment.</p>
+
+    <p>The final decision will also consider the company's position in the education market, customer loyalty, employee morale and whether withdrawal from the segment would make future re-entry difficult.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SRM_C6_HARD_023_1",
+      question: "What contribution would be lost directly if Education Systems were discontinued?",
+      options: [
+        "₹4,80,000",
+        "₹10,00,000",
+        "₹14,00,000",
+        "₹19,20,000"
+      ],
+      answer: 3,
+      reason: "Education Systems generates contribution of ₹48,00,000 − ₹28,80,000 = ₹19,20,000. This entire contribution disappears if the division is dropped."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_023_2",
+      question: "How much fixed cost would actually be saved directly by discontinuing Education Systems?",
+      options: [
+        "₹4,80,000",
+        "₹10,00,000",
+        "₹14,00,000",
+        "₹24,00,000"
+      ],
+      answer: 2,
+      reason: "Only the directly avoidable fixed cost of ₹14,00,000 would be saved. The ₹10,00,000 common fixed cost continues and is therefore irrelevant to the closure decision."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_023_3",
+      question: "Before considering customer migration or employee redeployment, what is the effect on annual company profit if Education Systems is discontinued?",
+      options: [
+        "Profit increases by ₹5,20,000",
+        "Profit decreases by ₹5,20,000",
+        "Profit decreases by ₹4,80,000",
+        "Profit increases by ₹4,80,000"
+      ],
+      answer: 1,
+      reason: "Contribution lost = ₹19,20,000. Avoidable fixed costs saved = ₹14,00,000. Net effect = ₹14,00,000 − ₹19,20,000 = ₹5,20,000 decrease in company profit."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_023_4",
+      question: "What additional annual Corporate Systems contribution is expected to be lost because of customer migration?",
+      options: [
+        "₹1,65,000",
+        "₹3,30,000",
+        "₹5,50,000",
+        "₹6,60,000"
+      ],
+      answer: 0,
+      reason: "Linked Corporate revenue = ₹22,00,000. Expected revenue loss = 25% × ₹22,00,000 = ₹5,50,000. Contribution margin is 30%, so contribution lost = ₹5,50,000 × 30% = ₹1,65,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_023_5",
+      question: "After considering avoidable fixed costs, lost Education contribution, lost Corporate contribution and the ₹1,50,000 labour saving, what is the overall annual financial effect of dropping Education Systems?",
+      options: [
+        "Profit decreases by ₹3,70,000",
+        "Profit decreases by ₹5,20,000",
+        "Profit decreases by ₹5,35,000",
+        "Profit decreases by ₹6,85,000"
+      ],
+      answer: 2,
+      reason: "Initial loss from dropping Education = ₹5,20,000. Additional Corporate contribution lost = ₹1,65,000. Labour saving = ₹1,50,000. Net adverse effect = ₹5,20,000 + ₹1,65,000 − ₹1,50,000 = ₹5,35,000 decrease in annual profit."
+    }
+
+  ]
+},
+
+
+/* =========================================================
+   CASE 9 – MINIMUM PRICING + OPPORTUNITY COST
+   ========================================================= */
+
+{
+  case_id: "SRM_C6_HARD_024",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Minimum Pricing",
+    "Opportunity Cost",
+    "Relevant Cost",
+    "Special Order",
+    "Sunk Cost"
+  ],
+
+  caseText: `
+    <p><b>Quantum Polymer Solutions Ltd.</b> manufactures specialised polymer sheets. A customer has approached the company with a one-time order requiring a chemical compound known as R-17. The company already holds exactly the quantity of R-17 required for the order.</p>
+
+    <p>R-17 was purchased several months ago for a project that was subsequently cancelled. The purchasing manager initially suggests charging the original purchase cost to the special order. The management accountant argues that the historical purchase price is sunk and should not automatically be included in the minimum price.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>R-17 Information</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Original purchase cost</td><td>₹8,40,000</td></tr>
+        <tr><td>Current replacement cost</td><td>₹6,80,000</td></tr>
+        <tr><td>Disposal cost if R-17 is not used</td><td>₹1,20,000</td></tr>
+        <tr><td>Alternative use</td><td>None</td></tr>
+        <tr><td>Quantity required by special order</td><td>Entire stock</td></tr>
+      </tbody>
+    </table>
+
+    <p>If the special order is rejected, R-17 will have to be disposed of at a cost of ₹1,20,000. Using it in the order therefore avoids this disposal expenditure. It does not need to be replaced because the company has no other requirement for R-17.</p>
+
+    <p>The order also requires specialist labour. The company's permanent G1 and G2 employees are paid their normal wages irrespective of whether the idle hours below are used for this order. Consequently, normal wages relating to presently idle hours are not incremental.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Labour Information</th>
+          <th>G1</th>
+          <th>G2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Hours required</td><td>2,400</td><td>1,800</td></tr>
+        <tr><td>Idle hours available</td><td>1,500</td><td>2,500</td></tr>
+        <tr><td>Normal hourly wage</td><td>₹22</td><td>₹18</td></tr>
+        <tr><td>Additional G1 overtime hours available</td><td>900</td><td>Not required</td></tr>
+        <tr><td>Overtime premium on additional G1 hours</td><td>₹8 per hour</td><td>Nil</td></tr>
+      </tbody>
+    </table>
+
+    <p>The additional 900 G1 hours would be worked as overtime. In addition to the overtime premium, management estimates that using these hours for the special order would prevent the company from undertaking other profitable work that would otherwise generate contribution of ₹65 per overtime hour.</p>
+
+    <p>The G2 requirement can be satisfied entirely from existing idle capacity. Since the G2 employees are permanent and would be paid anyway, no incremental G2 labour cost arises.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Other Special-Order Costs</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Direct variable processing cost</td><td>₹3,40,000</td></tr>
+        <tr><td>Special packaging</td><td>₹90,000</td></tr>
+        <tr><td>Special inspection cost</td><td>₹1,10,000</td></tr>
+        <tr><td>Order quantity</td><td>10,000 units</td></tr>
+      </tbody>
+    </table>
+
+    <p>The board wants to determine the minimum total price that would leave the company financially no worse off from accepting the order. The analysis must therefore include incremental expenditure, opportunity cost and the disposal cost avoided by consuming R-17.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SRM_C6_HARD_024_1",
+      question: "What is the relevant cost or benefit associated with using the existing R-17 inventory for the special order?",
+      options: [
+        "₹8,40,000 cost",
+        "₹6,80,000 cost",
+        "₹1,20,000 cost",
+        "₹1,20,000 benefit"
+      ],
+      answer: 3,
+      reason: "The original cost is sunk, replacement is unnecessary and there is no alternative use. If R-17 is not used, the company incurs ₹1,20,000 disposal cost. Using it therefore creates a relevant benefit of ₹1,20,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_024_2",
+      question: "How many G1 hours must be worked beyond the available idle capacity?",
+      options: [
+        "600 hours",
+        "900 hours",
+        "1,500 hours",
+        "2,400 hours"
+      ],
+      answer: 1,
+      reason: "G1 hours required = 2,400. Idle G1 hours = 1,500. Additional hours required = 2,400 − 1,500 = 900 hours."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_024_3",
+      question: "What is the opportunity cost associated with the 900 additional G1 hours?",
+      options: [
+        "₹7,200",
+        "₹19,800",
+        "₹58,500",
+        "₹65,000"
+      ],
+      answer: 2,
+      reason: "Opportunity cost = 900 hours × ₹65 contribution forgone per hour = ₹58,500."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_024_4",
+      question: "After including the ₹8 per hour overtime premium, what is the total net relevant cost of accepting the special order?",
+      options: [
+        "₹4,71,300",
+        "₹4,85,700",
+        "₹5,40,000",
+        "₹6,05,700"
+      ],
+      answer: 1,
+      reason: "Processing ₹3,40,000 + packaging ₹90,000 + inspection ₹1,10,000 + G1 opportunity cost ₹58,500 + overtime premium (900 × ₹8 = ₹7,200) − avoided R-17 disposal cost ₹1,20,000 = ₹4,85,700."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_024_5",
+      question: "What is the minimum average selling price per unit for the 10,000-unit special order?",
+      options: [
+        "₹45.87",
+        "₹48.57",
+        "₹54.00",
+        "₹60.57"
+      ],
+      answer: 1,
+      reason: "Minimum total price = ₹4,85,700. For 10,000 units, minimum average price = ₹4,85,700 ÷ 10,000 = ₹48.57 per unit."
+    }
+
+  ]
+},
+
+
+/* =========================================================
+   CASE 10 – PRICING STRATEGY + PRICE SENSITIVITY
+   ========================================================= */
+
+{
+  case_id: "SRM_C6_HARD_025",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Pricing Policy",
+    "Price Sensitivity",
+    "Nagle's Effects",
+    "Price Customisation",
+    "Strategic Pricing"
+  ],
+
+  caseText: `
+    <p><b>Apex Industrial Vision Ltd.</b> manufactures machine-vision cameras used by factories for automated quality inspection. Apex has historically positioned its product as a premium solution. Its cameras are more expensive than competing products but are supported by extensive technical assistance, five-year software compatibility and a strong reputation for reliability.</p>
+
+    <p>Several competitors have recently entered the market with cheaper cameras. The marketing department therefore proposes reducing Apex's price by ₹20,000 per camera. It expects the reduction to increase annual sales by 700 cameras.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Current Financial Information</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Current selling price per camera</td><td>₹2,40,000</td></tr>
+        <tr><td>Variable cost per camera</td><td>₹1,20,000</td></tr>
+        <tr><td>Current annual sales</td><td>5,000 cameras</td></tr>
+        <tr><td>Annual fixed marketing and support cost</td><td>₹9,60,00,000</td></tr>
+        <tr><td>Proposed price reduction</td><td>₹20,000 per camera</td></tr>
+        <tr><td>Expected additional annual sales</td><td>700 cameras</td></tr>
+      </tbody>
+    </table>
+
+    <p>The finance director warns that the proposed price reduction would apply not only to the 700 additional customers but also to the 5,000 cameras that Apex already expects to sell. The additional contribution from higher volume must therefore be compared with the contribution sacrificed on existing sales.</p>
+
+    <p>Market research also shows that Apex's customers are not equally price-sensitive.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Customer Segment</th>
+          <th>Share of Existing Sales</th>
+          <th>Typical Purchase Behaviour</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Large manufacturers</td><td>40%</td><td>Camera cost is a small part of total automation investment</td></tr>
+        <tr><td>Medium manufacturers</td><td>35%</td><td>Several competing alternatives are actively compared</td></tr>
+        <tr><td>Small manufacturers</td><td>25%</td><td>Camera represents a significant capital expenditure</td></tr>
+      </tbody>
+    </table>
+
+    <p>Customer interviews indicate that Apex's technical support and long compatibility period are difficult to compare directly with competing products. Many large customers have also invested heavily in software and production processes specifically designed around Apex cameras.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Competitor</th>
+          <th>Price per Camera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Apex</td><td>₹2,40,000</td></tr>
+        <tr><td>Competitor A</td><td>₹1,90,000</td></tr>
+        <tr><td>Competitor B</td><td>₹2,05,000</td></tr>
+        <tr><td>Proposed Apex price</td><td>₹2,20,000</td></tr>
+      </tbody>
+    </table>
+
+    <p>The product manager argues that Apex must reduce its price because competing cameras are cheaper. The strategic pricing team disagrees. It believes that a blanket price reduction may destroy contribution from customers who are relatively insensitive to price.</p>
+
+    <p>The team refers to Nagle's price-sensitivity principles. Apex offers differentiated technical support, comparisons with competing products are difficult, the camera forms a relatively small part of the total cost of a large automation system, and many existing customers have already made investments that are specifically compatible with Apex technology.</p>
+
+    <p>The board therefore wants both the numerical effect of the proposed price reduction and the strategic implications of customer price sensitivity to be assessed before approving any change.</p>
+  `,
+
+  questions: [
+
+    {
+      question_id: "SRM_C6_HARD_025_1",
+      question: "What would be the contribution per camera after the proposed ₹20,000 price reduction?",
+      options: [
+        "₹80,000",
+        "₹1,00,000",
+        "₹1,20,000",
+        "₹1,40,000"
+      ],
+      answer: 1,
+      reason: "New selling price = ₹2,40,000 − ₹20,000 = ₹2,20,000. Contribution = ₹2,20,000 − ₹1,20,000 = ₹1,00,000 per camera."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_025_2",
+      question: "What additional annual contribution would be generated by the expected 700 additional cameras?",
+      options: [
+        "₹5,60,00,000",
+        "₹6,00,00,000",
+        "₹7,00,00,000",
+        "₹8,40,00,000"
+      ],
+      answer: 2,
+      reason: "Additional contribution = 700 × ₹1,00,000 = ₹7,00,00,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_025_3",
+      question: "How much annual contribution would be sacrificed because the ₹20,000 reduction also applies to the existing 5,000 cameras?",
+      options: [
+        "₹7,00,00,000",
+        "₹8,00,00,000",
+        "₹10,00,00,000",
+        "₹12,00,00,000"
+      ],
+      answer: 2,
+      reason: "Contribution sacrificed = 5,000 existing cameras × ₹20,000 = ₹10,00,00,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_025_4",
+      question: "Considering only the existing sales and the additional 700 units, what is the net annual contribution effect of the blanket price reduction?",
+      options: [
+        "₹3,00,00,000 decrease",
+        "₹1,00,00,000 decrease",
+        "₹3,00,00,000 increase",
+        "₹7,00,00,000 increase"
+      ],
+      answer: 0,
+      reason: "Additional contribution from 700 cameras = ₹7 crore. Contribution sacrificed on existing sales = ₹10 crore. Net effect = ₹7 crore − ₹10 crore = ₹3 crore decrease."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_025_5",
+      question: "Which combination of price-sensitivity effects most strongly supports management's concern that a blanket price reduction may be unnecessary for some Apex customers?",
+      options: [
+        "Substitute awareness effect and high total expenditure effect only",
+        "Unique value effect, difficult comparison effect, end-benefit effect and sunk investment effect",
+        "Inventory effect and perfect competition",
+        "Only shared-cost effect because all customers are reimbursed by third parties"
+      ],
+      answer: 1,
+      reason: "Apex has differentiated technical support (Unique Value Effect), is difficult to compare directly with alternatives (Difficult Comparison Effect), represents a relatively small cost compared with the customer's overall automation system (End-Benefit Effect), and existing customers have invested in Apex-compatible systems (Sunk Investment Effect). These factors generally reduce price sensitivity."
+    }
+
+  ]
 }
+
 ];
