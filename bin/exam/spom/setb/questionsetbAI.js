@@ -18943,6 +18943,5801 @@ const AICaseStudies = [
     }
 
   ]
-}
+},
+{
+  case_id: "SRM_C6_MEDIUM_016",
+  difficulty: "medium",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Pricing of New Products",
+    "Skimming Pricing",
+    "Penetration Pricing",
+    "Product Life Cycle"
+  ],
+
+  caseText: `
+
+    <p>AeroPulse Technologies Ltd. has traditionally manufactured conventional air-quality monitoring equipment for factories and commercial buildings. The company has recently completed development of a compact device called SmartAir, which can continuously monitor particulate matter, carbon dioxide, humidity and temperature. Unlike AeroPulse's existing products, SmartAir can automatically communicate with a cloud platform and generate alerts without requiring a dedicated operator.</p>
+
+    <p>The product development team believes that SmartAir is substantially different from the products currently available in the market. The device is expected to be particularly attractive to hospitals, laboratories and large office complexes where continuous monitoring is important. However, management is uncertain about the exact level of demand because customers have never used a product having all these features in one compact device.</p>
+
+    <p>The finance department prepared the following estimates for the first year. The company expects the initial market to consist mainly of customers who value the additional functionality and are less sensitive to price.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Estimate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Maximum first-year capacity</td><td>12,000 units</td></tr>
+        <tr><td>Variable manufacturing cost per unit</td><td>₹8,000</td></tr>
+        <tr><td>Variable selling cost per unit</td><td>₹1,000</td></tr>
+        <tr><td>Annual fixed cost</td><td>₹3,60,00,000</td></tr>
+        <tr><td>Estimated demand at ₹18,000</td><td>6,000 units</td></tr>
+        <tr><td>Estimated demand at ₹15,000</td><td>9,000 units</td></tr>
+        <tr><td>Estimated demand at ₹12,000</td><td>12,000 units</td></tr>
+      </tbody>
+    </table>
+
+    <p>The marketing director initially proposed a high introductory price because the product has substantial differentiation and early customers are expected to have relatively low price sensitivity. The production director, however, suggested a lower price so that AeroPulse could quickly establish a large installed customer base before competitors introduce similar devices.</p>
+
+    <p>The board also expects competitors to enter the market during the growth stage. Management therefore wants the initial pricing decision to be considered together with the expected changes in the product's life cycle. The company does not want to reduce the initial price excessively because management believes that customers may resist a substantial future price increase.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SRM_C6_MEDIUM_016_1",
+      question: "Based primarily on the characteristics described in the case, SmartAir is best classified as which type of new product?",
+      options: [
+        "Me-too product",
+        "Revolutionary product",
+        "Evolutionary product",
+        "Commodity product"
+      ],
+      answer: 1,
+      reason: "SmartAir introduces a substantially different technology and functionality capable of changing how monitoring is performed. It therefore most closely fits a revolutionary product."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_016_2",
+      question: "If AeroPulse follows a skimming strategy and sells 6,000 units at ₹18,000 each, what is the total contribution before fixed costs?",
+      options: [
+        "₹5.40 crore",
+        "₹6.00 crore",
+        "₹4.20 crore",
+        "₹10.80 crore"
+      ],
+      answer: 2,
+      reason: "Contribution per unit = ₹18,000 − ₹8,000 − ₹1,000 = ₹9,000. Total contribution = 6,000 × ₹9,000 = ₹5.40 crore. Therefore option 0 is mathematically correct."
+    },
+
+    {
+  question_id: "SRM_C6_MEDIUM_016_3_CORRECTED",
+  question: "Based on the demand estimates, which price gives AeroPulse the highest total contribution before fixed costs?",
+  options: [
+    "₹18,000",
+    "₹15,000",
+    "₹12,000",
+    "₹18,000 and ₹15,000 give the same highest contribution"
+  ],
+  answer: 3,
+  reason: "At ₹18,000, contribution per unit is ₹9,000 and total contribution is ₹5.40 crore. At ₹15,000, contribution per unit is ₹6,000 and total contribution is also ₹5.40 crore. At ₹12,000, contribution is ₹3,000 × 12,000 = ₹3.60 crore. Therefore ₹18,000 and ₹15,000 tie for the highest contribution."
+},
+
+
+    {
+      question_id: "SRM_C6_MEDIUM_016_4",
+      question: "Which fact in the case most strongly supports the use of skimming pricing?",
+      options: [
+        "The product has substantial differentiation and early customers are relatively price insensitive",
+        "The product has no differentiation from existing products",
+        "The company wants to sell below marginal cost indefinitely",
+        "The market consists entirely of price-sensitive customers"
+      ],
+      answer: 0,
+      reason: "Skimming is particularly appropriate when a new product is differentiated and initial customers are relatively insensitive to price."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_016_5",
+      question: "If AeroPulse instead adopts penetration pricing, which objective is most consistent with that strategy?",
+      options: [
+        "Recovering all development costs immediately through a high price",
+        "Capturing mass-market demand quickly and discouraging potential entrants",
+        "Charging different prices only because customers have different incomes",
+        "Maximising price during the introduction stage regardless of demand"
+      ],
+      answer: 1,
+      reason: "Penetration pricing uses a relatively low initial price to penetrate the mass market rapidly and may also discourage competitors from entering."
+    }
+  ]
+},
+
+{
+  case_id: "SRM_C6_MEDIUM_017",
+  difficulty: "medium",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Cost-Based Pricing",
+    "Mark-up Pricing",
+    "Target Rate of Return",
+    "Pricing Methods"
+  ],
+
+  caseText: `
+
+    <p>Vardhan Industrial Controls Ltd. manufactures customised electronic control panels used in industrial plants. The products are generally made according to individual customer specifications and competition is moderate because customers place considerable importance on reliability, installation support and compatibility with existing plant equipment.</p>
+
+    <p>The company currently uses variable manufacturing cost as the base for some quotations. However, the finance director wants to compare the existing mark-up approach with a target-rate-of-return approach before the next financial year.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Expected annual production and sales</td><td>20,000 units</td></tr>
+        <tr><td>Variable manufacturing cost per unit</td><td>₹1,800</td></tr>
+        <tr><td>Fixed manufacturing and administration cost</td><td>₹1,20,00,000</td></tr>
+        <tr><td>Invested capital</td><td>₹8,00,00,000</td></tr>
+        <tr><td>Desired rate of return</td><td>15%</td></tr>
+      </tbody>
+    </table>
+
+    <p>The sales department believes that the market is not sufficiently predictable to estimate demand precisely. It therefore prefers a simple mark-up method. The finance director argues that if expected sales can be estimated reliably, the target-rate-of-return method would provide a more rational relationship between price and invested capital.</p>
+
+    <p>The managing director also warns that the company's fixed costs should not be ignored when evaluating long-term prices. At the same time, he recognises that arbitrary allocation of common overheads can create distortions when individual customised orders are quoted.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SRM_C6_MEDIUM_017_1",
+      question: "What is the full cost per unit based on the expected annual volume?",
+      options: [
+        "₹2,200",
+        "₹2,400",
+        "₹2,600",
+        "₹3,000"
+      ],
+      answer: 1,
+      reason: "Fixed cost per unit = ₹1,20,00,000 ÷ 20,000 = ₹600. Full cost = ₹1,800 + ₹600 = ₹2,400."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_017_2",
+      question: "If Vardhan applies a 20% mark-up on full cost, what price per unit would result?",
+      options: [
+        "₹2,880",
+        "₹2,400",
+        "₹2,920",
+        "₹3,000"
+      ],
+      answer: 0,
+      reason: "Full cost = ₹2,400. A 20% mark-up = ₹480. Price = ₹2,880."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_017_3",
+      question: "What annual return amount is targeted under the target-rate-of-return approach?",
+      options: [
+        "₹80 lakh",
+        "₹1.00 crore",
+        "₹1.20 crore",
+        "₹1.50 crore"
+      ],
+      answer: 2,
+      reason: "Target return = ₹8 crore × 15% = ₹1.20 crore."
+    },
+
+    {
+  question_id: "SRM_C6_MEDIUM_017_4_CORRECTED",
+  question: "Using the target-rate-of-return formula, what price per unit is required?",
+  options: [
+    "₹2,700",
+    "₹3,000",
+    "₹3,300",
+    "₹3,600"
+  ],
+  answer: 1,
+  reason: "Unit cost = ₹2,400. Required return per unit = ₹1,20,00,000 ÷ 20,000 = ₹600. Therefore price = ₹2,400 + ₹600 = ₹3,000."
+},
+
+    {
+      question_id: "SRM_C6_MEDIUM_017_5",
+      question: "Which circumstance most supports the use of cost-based pricing in this case?",
+      options: [
+        "Highly competitive homogeneous commodity market",
+        "Customised products with relatively predictable costs and moderate competition",
+        "A market where demand is completely unknown and price is determined solely by competitors",
+        "A market where customers cannot distinguish the product from alternatives"
+      ],
+      answer: 1,
+      reason: "Cost-based pricing is generally suitable for customised products and relatively less competitive environments."
+    }
+  ]
+},
+
+{
+  case_id: "SRM_C6_MEDIUM_018",
+  difficulty: "medium",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Going Rate Pricing",
+    "Competition Based Pricing",
+    "Perfect Competition",
+    "Homogeneous Products"
+  ],
+
+  caseText: `
+
+    <p>Bharat Industrial Gases Ltd. supplies industrial oxygen to fabrication units, hospitals and metal-processing companies. In one of its major markets, industrial oxygen is highly standardised and buyers can easily compare quotations from several suppliers.</p>
+
+    <p>The market contains a number of suppliers. No single supplier has sufficient market power to impose a substantially different price without losing customers. Bharat therefore closely monitors the prices charged by competing suppliers rather than changing its selling price whenever its own costs change.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Competitor</th>
+          <th>Price per cylinder (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Supplier A</td><td>1,180</td></tr>
+        <tr><td>Supplier B</td><td>1,220</td></tr>
+        <tr><td>Supplier C</td><td>1,200</td></tr>
+        <tr><td>Supplier D</td><td>1,210</td></tr>
+        <tr><td>Supplier E</td><td>1,190</td></tr>
+      </tbody>
+    </table>
+
+    <p>Bharat's production department recently reported an increase in electricity and transportation costs. However, the marketing department believes that increasing the price immediately would result in a significant loss of customers because buyers regard the product as essentially homogeneous.</p>
+
+    <p>The managing director is therefore considering whether the company should continue following the industry's prevailing price or attempt to recover its higher costs through a substantial price increase.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SRM_C6_MEDIUM_018_1",
+      question: "Which pricing method is most consistent with Bharat's current approach?",
+      options: [
+        "Going rate pricing",
+        "Psychological pricing",
+        "Value-based pricing",
+        "Skimming pricing"
+      ],
+      answer: 0,
+      reason: "Bharat primarily considers the prevailing prices charged by competitors in a homogeneous market, which is characteristic of going rate pricing."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_018_2",
+      question: "What is the arithmetic average of the five competitor prices?",
+      options: [
+        "₹1,190",
+        "₹1,196",
+        "₹1,200",
+        "₹1,210"
+      ],
+      answer: 2,
+      reason: "Average = (1,180 + 1,220 + 1,200 + 1,210 + 1,190) ÷ 5 = ₹6,000 ÷ 5 = ₹1,200."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_018_3",
+      question: "If Bharat follows the average industry price, what price should it generally consider?",
+      options: [
+        "₹1,180",
+        "₹1,190",
+        "₹1,200",
+        "₹1,220"
+      ],
+      answer: 2,
+      reason: "The calculated industry average is ₹1,200 per cylinder."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_018_4",
+      question: "Why would a large price increase be particularly risky in this market?",
+      options: [
+        "The product is highly differentiated",
+        "Buyers can easily compare homogeneous products",
+        "Bharat has a legal monopoly",
+        "Demand is completely independent of price"
+      ],
+      answer: 1,
+      reason: "In a homogeneous product market, buyers can easily switch to competitors when one supplier charges materially more."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_018_5",
+      question: "Under highly competitive homogeneous conditions, what becomes a major challenge for Bharat?",
+      options: [
+        "Controlling costs efficiently",
+        "Increasing product differentiation through unlimited features",
+        "Charging premium prices",
+        "Using skimming pricing"
+      ],
+      answer: 0,
+      reason: "When the market largely determines price, cost control becomes particularly important for maintaining profitability."
+    }
+  ]
+},
+
+{
+  case_id: "SRM_C6_MEDIUM_019",
+  difficulty: "medium",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Value Based Pricing",
+    "True Economic Value",
+    "TEV",
+    "Performance Differential"
+  ],
+
+  caseText: `
+
+    <p>SecureVault Data Systems Ltd. has developed a high-security data storage appliance for financial institutions. The appliance is more expensive to operate than the standard system used by many banks, but its probability of system failure is substantially lower.</p>
+
+    <p>A major bank currently uses the standard system and is considering switching to SecureVault. The bank evaluates the purchase based on expected economic benefits rather than merely comparing purchase prices.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Existing System</th>
+          <th>SecureVault</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Operating cost per hour</td><td>₹12</td><td>₹14</td></tr>
+        <tr><td>Expected usage</td><td colspan="2">3,000 hours</td></tr>
+        <tr><td>Probability of system failure</td><td>8%</td><td>1%</td></tr>
+        <tr><td>Cost of a major failure</td><td colspan="2">₹2,00,000</td></tr>
+        <tr><td>Price of existing system</td><td>₹45,000</td><td>-</td></tr>
+      </tbody>
+    </table>
+
+    <p>The sales manager wants to determine the True Economic Value (TEV) of SecureVault before deciding the maximum economically justified price. He explains that the TEV should reflect the cost of the next best alternative and the value of the performance differential.</p>
+
+    <p>SecureVault management is aware that the customer's perceived value may differ from the calculated objective value. Therefore, the calculated TEV will be used as an economic reference rather than an automatic selling price.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SRM_C6_MEDIUM_019_1",
+      question: "What is the additional operating cost of SecureVault over 3,000 hours?",
+      options: [
+        "₹3,000",
+        "₹6,000",
+        "₹9,000",
+        "₹12,000"
+      ],
+      answer: 1,
+      reason: "Additional operating cost = 3,000 × (₹14 − ₹12) = ₹6,000."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_019_2",
+      question: "What is the expected saving in failure cost from using SecureVault?",
+      options: [
+        "₹10,000",
+        "₹12,000",
+        "₹14,000",
+        "₹16,000"
+      ],
+      answer: 2,
+      reason: "Reduction in failure probability = 8% − 1% = 7%. Expected saving = ₹2,00,000 × 7% = ₹14,000."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_019_3",
+      question: "What is the net value of the performance differential?",
+      options: [
+        "₹6,000",
+        "₹8,000",
+        "₹14,000",
+        "₹20,000"
+      ],
+      answer: 1,
+      reason: "Performance benefit = ₹14,000 saving − ₹6,000 additional operating cost = ₹8,000."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_019_4",
+      question: "What is the TEV of SecureVault?",
+      options: [
+        "₹45,000",
+        "₹53,000",
+        "₹59,000",
+        "₹67,000"
+      ],
+      answer: 1,
+      reason: "TEV = Cost of next best alternative + value of performance differential = ₹45,000 + ₹8,000 = ₹53,000."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_019_5",
+      question: "Which statement best distinguishes TEV from perceived value?",
+      options: [
+        "TEV is based on objective economic benefits, while perceived value reflects what the customer understands and is willing to pay",
+        "TEV always equals the production cost",
+        "Perceived value is always higher than TEV",
+        "TEV ignores the next best alternative"
+      ],
+      answer: 0,
+      reason: "TEV objectively considers the next best alternative and performance differential, whereas perceived value concerns the customer's understanding of the benefits and willingness to pay."
+    }
+  ]
+},
+
+{
+  case_id: "SRM_C6_MEDIUM_020",
+  difficulty: "medium",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Pricing of Services",
+    "Perishability",
+    "Price Adaptation",
+    "Seasonal Discount"
+  ],
+
+  caseText: `
+
+    <p>Skyline Cinema operates a twelve-screen multiplex in a large metropolitan city. The cinema has a highly perishable service capacity because an unsold seat for a particular show cannot be stored and sold after the show has ended.</p>
+
+    <p>Management has observed a substantial difference between weekend and weekday demand. Friday evening, Saturday and Sunday shows frequently operate close to full capacity, while weekday afternoon shows have a large number of vacant seats.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Period</th>
+          <th>Average Capacity</th>
+          <th>Average Occupancy</th>
+          <th>Normal Ticket Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Weekday afternoon</td><td>400 seats</td><td>120 seats</td><td>₹220</td></tr>
+        <tr><td>Weekday evening</td><td>400 seats</td><td>280 seats</td><td>₹280</td></tr>
+        <tr><td>Weekend evening</td><td>400 seats</td><td>390 seats</td><td>₹350</td></tr>
+      </tbody>
+    </table>
+
+    <p>The marketing manager proposes reducing weekday afternoon prices to ₹150 and offering student promotions during those shows. The manager argues that the seats are otherwise wasted. The finance manager agrees that price adaptation may improve utilisation but wants management to ensure that discounted customers do not merely replace customers who would otherwise have paid the normal price.</p>
+
+    <p>The company also plans to introduce premium pricing for selected weekend shows where demand substantially exceeds available capacity.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SRM_C6_MEDIUM_020_1",
+      question: "What characteristic of services makes an empty seat after a completed show economically perishable?",
+      options: [
+        "Inseparability",
+        "Perishability",
+        "Tangibility",
+        "Standardisation"
+      ],
+      answer: 1,
+      reason: "Unused service capacity cannot be stored for future sale, which is the characteristic of perishability."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_020_2",
+      question: "What is the current weekday afternoon revenue at the stated occupancy?",
+      options: [
+        "₹22,400",
+        "₹24,000",
+        "₹26,400",
+        "₹28,000"
+      ],
+      answer: 2,
+      reason: "Revenue = 120 seats × ₹220 = ₹26,400."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_020_3",
+      question: "If 200 seats are sold at the proposed ₹150 weekday afternoon price, what revenue would be generated?",
+      options: [
+        "₹25,000",
+        "₹30,000",
+        "₹32,000",
+        "₹35,000"
+      ],
+      answer: 1,
+      reason: "Revenue = 200 × ₹150 = ₹30,000."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_020_4",
+      question: "Which pricing adaptation is most directly represented by the weekday discount?",
+      options: [
+        "Seasonal/time-based discounting",
+        "Cost-plus pricing",
+        "Going-rate pricing",
+        "Sealed-bid pricing"
+      ],
+      answer: 0,
+      reason: "The cinema changes price according to the time and demand pattern, which is consistent with seasonal/off-hours discounting."
+    },
+
+    {
+      question_id: "SRM_C6_MEDIUM_020_5",
+      question: "Why might premium pricing on high-demand weekend shows be strategically justified?",
+      options: [
+        "Because service capacity is unlimited",
+        "Because demand is higher and capacity is constrained",
+        "Because all customers have identical willingness to pay",
+        "Because the company must always charge the same price"
+      ],
+      answer: 1,
+      reason: "High demand combined with constrained capacity creates an opportunity for higher pricing."
+    }
+  ]
+},
+
+{
+  case_id: "SRM_C6_HARD_021",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Sensitivity Analysis",
+    "Pricing Decisions",
+    "Demand",
+    "Cost-Volume-Profit"
+  ],
+
+  caseText: `
+
+    <p>NexaGrid Energy Storage Ltd. has developed a modular battery system designed for small commercial establishments. The product is entering a rapidly developing market in which customers are highly concerned about the initial purchase price but also value battery life and reliability.</p>
+
+    <p>The management team initially prepared a single pricing forecast. The finance director subsequently argued that relying on a single forecast would be dangerous because several assumptions are uncertain. In particular, the selling price, annual demand, variable cost and marketing expenditure could all change after launch.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Base Estimate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Selling price per unit</td><td>₹1,20,000</td></tr>
+        <tr><td>Variable manufacturing cost per unit</td><td>₹72,000</td></tr>
+        <tr><td>Variable selling cost per unit</td><td>₹8,000</td></tr>
+        <tr><td>Expected annual sales</td><td>4,000 units</td></tr>
+        <tr><td>Fixed operating cost</td><td>₹10 crore</td></tr>
+        <tr><td>Additional launch marketing cost</td><td>₹2 crore</td></tr>
+      </tbody>
+    </table>
+
+    <p>The marketing department conducted limited market experiments and produced three possible demand-price combinations.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Selling Price</th>
+          <th>Expected Demand</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>₹1,30,000</td><td>3,200 units</td></tr>
+        <tr><td>₹1,20,000</td><td>4,000 units</td></tr>
+        <tr><td>₹1,10,000</td><td>5,000 units</td></tr>
+      </tbody>
+    </table>
+
+    <p>The company has sufficient production capacity for 5,000 units. The finance director wants management to assess not only the base case but also the effect of changes in price and volume. He specifically warns that a lower selling price may increase demand but reduce contribution per unit, while a higher price may produce greater contribution per unit but reduce volume.</p>
+
+    <p>The board also wants the pricing decision to be reviewed periodically after launch because customer responses may differ from initial estimates.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SRM_C6_HARD_021_1",
+      question: "At the base selling price of ₹1,20,000, what is the contribution per unit before fixed costs?",
+      options: [
+        "₹32,000",
+        "₹40,000",
+        "₹48,000",
+        "₹50,000"
+      ],
+      answer: 1,
+      reason: "Contribution = ₹1,20,000 − ₹72,000 − ₹8,000 = ₹40,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_021_2",
+      question: "What is the total contribution at the base price and expected demand?",
+      options: [
+        "₹12 crore",
+        "₹14 crore",
+        "₹16 crore",
+        "₹18 crore"
+      ],
+      answer: 2,
+      reason: "₹40,000 × 4,000 units = ₹16 crore."
+    },
+
+    {
+  question_id: "SRM_C6_HARD_021_3_CORRECTED",
+  question: "At a selling price of ₹1,30,000 and demand of 3,200 units, what is total contribution?",
+  options: [
+    "₹14.4 crore",
+    "₹16.0 crore",
+    "₹15.0 crore",
+    "₹17.6 crore"
+  ],
+  answer: 1,
+  reason: "Contribution per unit = ₹1,30,000 − ₹72,000 − ₹8,000 = ₹50,000. Therefore total contribution = 3,200 × ₹50,000 = ₹16 crore."
+},
+
+    {
+      question_id: "SRM_C6_HARD_021_4",
+      question: "At ₹1,10,000 and demand of 5,000 units, what is total contribution?",
+      options: [
+        "₹12 crore",
+        "₹13 crore",
+        "₹15 crore",
+        "₹16 crore"
+      ],
+      answer: 2,
+      reason: "Contribution per unit = ₹1,10,000 − ₹72,000 − ₹8,000 = ₹30,000. Total contribution = ₹30,000 × 5,000 = ₹15 crore."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_021_5",
+      question: "What is the most appropriate conclusion from the three demand-price experiments before considering fixed costs?",
+      options: [
+        "The highest price necessarily gives the lowest total contribution",
+        "The lowest price necessarily gives the highest total contribution",
+        "Price and demand must be evaluated together because contribution per unit and sales volume move in opposite directions",
+        "Demand is irrelevant once variable cost is known"
+      ],
+      answer: 2,
+      reason: "The case demonstrates why sensitivity analysis is necessary: changing price affects both unit contribution and expected demand."
+    }
+  ]
+},
+
+{
+  case_id: "SRM_C6_HARD_022",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Recession Pricing",
+    "Marginal Cost",
+    "Relevant Cost",
+    "Surplus Capacity"
+  ],
+
+  caseText: `
+
+    <p>TitanForge Components Ltd. manufactures precision metal brackets used by automobile manufacturers. The industry has entered a severe recession and several customers have postponed purchases. TitanForge's production facilities are currently operating significantly below capacity.</p>
+
+    <p>The managing director is considering accepting a large order from an overseas customer at a price substantially below the company's normal selling price. The order would not interfere with existing customer commitments because the factory has unused production capacity.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Per Unit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Normal selling price</td><td>₹1,400</td></tr>
+        <tr><td>Proposed special price</td><td>₹780</td></tr>
+        <tr><td>Direct material</td><td>₹320</td></tr>
+        <tr><td>Direct labour</td><td>₹180</td></tr>
+        <tr><td>Variable overhead</td><td>₹90</td></tr>
+        <tr><td>Allocated fixed overhead</td><td>₹260</td></tr>
+        <tr><td>Special export packing</td><td>₹25</td></tr>
+      </tbody>
+    </table>
+
+    <p>The order consists of 30,000 units. The production director points out that the company has already trained a specialised workforce and releasing employees during the recession may make it difficult to rebuild the workforce when demand recovers.</p>
+
+    <p>However, the sales director is concerned that existing customers may discover the lower export price and demand similar prices. The managing director therefore wants to distinguish between the short-term financial logic of using surplus capacity and the longer-term consequences of establishing a low market price.</p>
+
+    <p>The company also expects normal market conditions to improve within approximately twelve months, although the exact timing is uncertain.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SRM_C6_HARD_022_1",
+      question: "What is the relevant incremental cost per unit for the special order, assuming sufficient spare capacity?",
+      options: [
+        "₹590",
+        "₹615",
+        "₹850",
+        "₹875"
+      ],
+      answer: 1,
+      reason: "Relevant cost = ₹320 + ₹180 + ₹90 + ₹25 = ₹615. Allocated fixed overhead is unchanged and therefore irrelevant."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_022_2",
+      question: "What is the contribution per unit from accepting the special order?",
+      options: [
+        "₹125",
+        "₹165",
+        "₹190",
+        "₹205"
+      ],
+      answer: 1,
+      reason: "Contribution = ₹780 − ₹615 = ₹165."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_022_3",
+      question: "What total short-term contribution would the order generate?",
+      options: [
+        "₹49,50,000",
+        "₹45,00,000",
+        "₹52,50,000",
+        "₹60,00,000"
+      ],
+      answer: 0,
+      reason: "30,000 × ₹165 = ₹49,50,000."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_022_4",
+      question: "Why can selling below total cost still be rational during a recession?",
+      options: [
+        "Because fixed costs disappear immediately",
+        "Because a price above relevant marginal cost can generate contribution towards fixed costs while using otherwise idle capacity",
+        "Because selling below marginal cost always maximises profit",
+        "Because customers cannot compare prices during recession"
+      ],
+      answer: 1,
+      reason: "When capacity is idle, a price above relevant marginal cost can generate positive contribution and help absorb fixed costs."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_022_5",
+      question: "Which factor presents the most significant long-term pricing risk in this case?",
+      options: [
+        "The special order uses idle capacity",
+        "The order has a positive contribution",
+        "Existing customers may expect the lower price and the company may find it difficult to restore normal pricing",
+        "The allocated fixed cost is unchanged"
+      ],
+      answer: 2,
+      reason: "Relevant-cost pricing can create difficulty in increasing prices for future work, especially when customers become accustomed to the temporary low price."
+    }
+  ]
+},
+
+{
+  case_id: "SRM_C6_HARD_023",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Ethical Pricing",
+    "Predatory Pricing",
+    "Penetration Pricing",
+    "Non-Financial Considerations"
+  ],
+
+  caseText: `
+
+    <p>FreshKart Digital Markets Ltd. operates an online platform connecting consumers with local grocery stores. A new competitor, QuickBasket, has entered FreshKart's largest city and has started offering substantial introductory discounts.</p>
+
+    <p>FreshKart's commercial team proposes a highly aggressive response. The proposal is to sell selected high-volume grocery products below their marginal cost for eighteen months. The team believes that the resulting losses can be recovered from investors once QuickBasket exits the market.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Normal Position</th>
+          <th>Proposed Campaign</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Average selling price per basket</td><td>₹500</td><td>₹360</td></tr>
+        <tr><td>Variable fulfilment cost per basket</td><td>₹300</td><td>₹300</td></tr>
+        <tr><td>Platform contribution before campaign</td><td>₹200</td><td>₹60</td></tr>
+        <tr><td>Proposed promotional subsidy</td><td>-</td><td>₹90 per basket</td></tr>
+        <tr><td>Expected campaign volume</td><td>-</td><td>2,00,000 baskets/month</td></tr>
+        <tr><td>Campaign period</td><td>-</td><td>18 months</td></tr>
+      </tbody>
+    </table>
+
+    <p>The commercial team argues that the strategy should be called penetration pricing because the purpose is to obtain rapid market share. The legal and strategy teams disagree. They point out that the proposed subsidy would reduce the effective price below the marginal cost of serving each basket and is specifically intended to force the competitor to leave the market.</p>
+
+    <p>The board is also concerned that local grocery partners could become dependent on FreshKart after competitors leave. Consumers may initially benefit from low prices but could later face higher prices and reduced choice if competition is eliminated.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SRM_C6_HARD_023_1",
+      question: "Before considering the proposed subsidy, what is FreshKart's contribution per basket at the campaign selling price?",
+      options: [
+        "₹30",
+        "₹60",
+        "₹90",
+        "₹200"
+      ],
+      answer: 1,
+      reason: "Contribution before subsidy = ₹360 − ₹300 = ₹60."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_023_2",
+      question: "After the ₹90 subsidy, what is the effective contribution per basket?",
+      options: [
+        "₹30 loss",
+        "₹60 profit",
+        "₹30 profit",
+        "₹90 loss"
+      ],
+      answer: 0,
+      reason: "Effective contribution = ₹60 − ₹90 = negative ₹30 per basket."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_023_3",
+      question: "What is the total campaign loss attributable to the ₹30 loss per basket over 18 months at 2,00,000 baskets per month?",
+      options: [
+        "₹10.8 crore",
+        "₹12.0 crore",
+        "₹8.4 crore",
+        "₹6.48 crore"
+      ],
+      answer: 0,
+      reason: "Monthly loss = 2,00,000 × ₹30 = ₹60,00,000. Over 18 months = ₹10.80 crore."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_023_4",
+      question: "Which fact most strongly distinguishes the proposed strategy from ordinary penetration pricing?",
+      options: [
+        "The company wants to increase market share",
+        "The company is offering a relatively low price for a new market",
+        "The price is deliberately pushed below marginal cost with the intention of eliminating a competitor",
+        "The company expects demand to increase"
+      ],
+      answer: 2,
+      reason: "Penetration pricing uses low prices to enter or develop a mass market, whereas deliberate below-cost pricing intended to eliminate competitors is associated with predatory pricing."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_023_5",
+      question: "Which non-financial consideration is most directly relevant to the board's concern?",
+      options: [
+        "Historical depreciation",
+        "Potential long-term reduction in competition and customer choice",
+        "The company's original development expenditure",
+        "The book value of inventory"
+      ],
+      answer: 1,
+      reason: "Ethical and non-financial pricing decisions consider long-term effects on customers, competitors, market structure and brand reputation."
+    }
+  ]
+},
+
+{
+  case_id: "SRM_C6_HARD_024",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Product Mix Pricing",
+    "Limiting Factor",
+    "Contribution per Limiting Factor",
+    "Price Adaptation"
+  ],
+
+  caseText: `
+
+    <p>Orbis Professional Equipment Ltd. manufactures three specialised products: Alpha, Beta and Gamma. The products are sold to different customer groups and require the same precision assembly department, which has become the principal production bottleneck.</p>
+
+    <p>The sales department believes that the company should manufacture the product having the highest contribution per unit. The production manager disagrees and argues that the scarce assembly hours should determine the product mix.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Alpha</th>
+          <th>Beta</th>
+          <th>Gamma</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Selling price per unit</td><td>₹2,000</td><td>₹2,500</td><td>₹3,200</td></tr>
+        <tr><td>Variable cost per unit</td><td>₹1,200</td><td>₹1,500</td><td>₹2,000</td></tr>
+        <tr><td>Assembly hours per unit</td><td>2</td><td>2.5</td><td>4</td></tr>
+        <tr><td>Maximum demand (units)</td><td>2,000</td><td>1,500</td><td>1,000</td></tr>
+      </tbody>
+    </table>
+
+    <p>The assembly department has only 6,000 hours available for the planning period. Management cannot increase these hours in the short term.</p>
+
+    <p>Separately, the sales team has suggested different price levels for customers based on purchase timing. Early customers may receive a lower price if they place firm orders before production planning is completed. Late customers may be charged more because their orders create greater scheduling pressure.</p>
+
+    <p>The finance director wants the company to distinguish between product-mix decisions caused by the scarce resource and legitimate price adaptation based on customer timing.</p>
+  `,
+
+  questions: [
+    {
+      question_id: "SRM_C6_HARD_024_1",
+      question: "What is the contribution per unit of Alpha?",
+      options: [
+        "₹600",
+        "₹800",
+        "₹1,000",
+        "₹1,200"
+      ],
+      answer: 1,
+      reason: "Contribution = ₹2,000 − ₹1,200 = ₹800."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_024_2",
+      question: "Which product has the highest contribution per assembly hour?",
+      options: [
+        "Alpha",
+        "Beta",
+        "Gamma",
+        "Alpha and Gamma are equal"
+      ],
+      answer: 2,
+      reason: "Alpha = ₹800 ÷ 2 = ₹400/hour. Beta = ₹1,000 ÷ 2.5 = ₹400/hour. Gamma = ₹1,200 ÷ 4 = ₹300/hour. Therefore Alpha and Beta tie, so none of the options is correct."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_024_2_CORRECTED",
+      question: "Which products provide the highest contribution per assembly hour?",
+      options: [
+        "Alpha only",
+        "Beta only",
+        "Gamma only",
+        "Alpha and Beta jointly"
+      ],
+      answer: 3,
+      reason: "Alpha contribution/hour = ₹800 ÷ 2 = ₹400. Beta = ₹1,000 ÷ 2.5 = ₹400. Gamma = ₹1,200 ÷ 4 = ₹300. Alpha and Beta jointly rank above Gamma."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_024_3",
+      question: "If the company produces the full maximum demand of Alpha, how many assembly hours remain?",
+      options: [
+        "1,000 hours",
+        "2,000 hours",
+        "3,000 hours",
+        "4,000 hours"
+      ],
+      answer: 1,
+      reason: "Alpha requires 2,000 × 2 = 4,000 hours. Available hours = 6,000. Remaining = 2,000 hours."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_024_4",
+      question: "Using contribution per assembly hour and assuming demand limits must be respected, which product should be considered next after Alpha?",
+      options: [
+        "Beta",
+        "Gamma",
+        "Neither because Alpha has the highest contribution per unit",
+        "All products are equally attractive"
+      ],
+      answer: 0,
+      reason: "Alpha and Beta both generate ₹400 contribution per assembly hour. Gamma generates only ₹300."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_024_5",
+      question: "Charging different prices according to whether a customer orders early or late is most closely associated with which form of price adaptation?",
+      options: [
+        "Time differential pricing",
+        "Going-rate pricing",
+        "Sealed-bid pricing",
+        "By-product pricing"
+      ],
+      answer: 0,
+      reason: "Price adaptation based on purchase timing is a time differential form of discriminatory pricing."
+    }
+  ]
+},
+
+{
+  case_id: "SRM_C6_HARD_025",
+  difficulty: "hard",
+  case_chapter: "Chapter6",
+  case_topic: [
+    "Kano Model",
+    "Threshold Attributes",
+    "Performance Attributes",
+    "Excitement Attributes",
+    "Value Based Pricing"
+  ],
+
+  caseText: `
+
+    <p>LuminaSmart Home Systems Ltd. is preparing a premium home-security controller. The product will control door locks, security cameras, alarms and emergency notifications from a single application.</p>
+
+    <p>The product development team has identified six possible features. Management has a limited development budget and cannot implement every proposed feature during the first release.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Development Cost</th>
+          <th>Customer Classification</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Reliable basic door-lock operation</td><td>₹18 lakh</td><td>Threshold</td></tr>
+        <tr><td>Battery backup duration</td><td>₹12 lakh</td><td>Performance</td></tr>
+        <tr><td>Automatic emergency voice assistant</td><td>₹15 lakh</td><td>Excitement</td></tr>
+        <tr><td>Customisable notification sounds</td><td>₹6 lakh</td><td>Indifferent</td></tr>
+        <tr><td>Excessive pop-up confirmation screens</td><td>₹5 lakh</td><td>Reverse</td></tr>
+        <tr><td>Unclear experimental interface feature</td><td>₹4 lakh</td><td>Questionable</td></tr>
+      </tbody>
+    </table>
+
+    <p>The marketing department conducted customer research and found that customers were unwilling to purchase the system if the basic locking function was unreliable. Once basic reliability was assured, customers showed a strong relationship between battery performance and willingness to pay.</p>
+
+    <p>The emergency voice assistant was not expected by most customers, but those who experienced a working demonstration showed considerable enthusiasm and stated that they would consider paying more for the system.</p>
+
+    <p>Management also discovered that customer perceptions were changing. Features that had once been considered exciting in competing smart-home products were increasingly becoming normal expectations. The product manager therefore wants to ensure that the company does not spend heavily on features that create little customer value.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Proposed First-Release Budget</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Available development budget</td><td>₹45 lakh</td></tr>
+      </tbody>
+    </table>
+  `,
+
+  questions: [
+    {
+      question_id: "SRM_C6_HARD_025_1",
+      question: "Which feature should management regard as essential before considering optional customer delight features?",
+      options: [
+        "Customisable notification sounds",
+        "Reliable basic door-lock operation",
+        "Excessive pop-up screens",
+        "The questionable interface feature"
+      ],
+      answer: 1,
+      reason: "A threshold attribute is a must-be quality. Its absence causes dissatisfaction even if customers may not explicitly mention it."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_025_2",
+      question: "Which feature most directly represents a performance attribute?",
+      options: [
+        "Battery backup duration",
+        "Automatic emergency voice assistant",
+        "Customisable notification sounds",
+        "Excessive pop-up confirmation screens"
+      ],
+      answer: 0,
+      reason: "Performance attributes create proportionate increases in satisfaction as performance improves."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_025_3",
+      question: "Which feature is an excitement attribute?",
+      options: [
+        "Basic door-lock reliability",
+        "Battery backup",
+        "Automatic emergency voice assistant",
+        "Customisable notification sounds"
+      ],
+      answer: 2,
+      reason: "The emergency voice assistant is not normally expected but produces substantial satisfaction when provided, making it an excitement/delight attribute."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_025_4",
+      question: "If LuminaSmart funds the threshold, performance and excitement features, what total development cost will be incurred?",
+      options: [
+        "₹39 lakh",
+        "₹42 lakh",
+        "₹45 lakh",
+        "₹51 lakh"
+      ],
+      answer: 2,
+      reason: "₹18 lakh + ₹12 lakh + ₹15 lakh = ₹45 lakh, exactly equal to the available development budget."
+    },
+
+    {
+      question_id: "SRM_C6_HARD_025_5",
+      question: "Which feature should generally be excluded from the first release when the objective is to maximise customer value under the stated constraints?",
+      options: [
+        "Reliable basic door-lock operation",
+        "Battery backup duration",
+        "Automatic emergency voice assistant",
+        "Excessive pop-up confirmation screens"
+      ],
+      answer: 3,
+      reason: "Reverse attributes create dissatisfaction when present. The company should avoid investing in a feature that customers perceive negatively."
+    }
+  ]
+},
+
+  // =========================================================
+  // MEDIUM 021
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_021",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Pricing of New Products",
+      "Skimming Pricing",
+      "Penetration Pricing",
+      "Product Life Cycle"
+    ],
+
+    caseText: `
+
+      <p>VoltEdge Mobility Ltd. has been manufacturing electric vehicle components for several years. After considerable research and development, the company has developed a compact battery-management system called the <b>VE-One</b>. The system is designed for small electric commercial vehicles and is expected to improve battery monitoring, charging efficiency and operating reliability.</p>
+
+      <p>The product is substantially different from VoltEdge's existing components. The company has obtained technology protection for certain features and believes that competitors will require at least one year to develop products with similar functionality. However, management does not expect this competitive advantage to remain permanent.</p>
+
+      <p>The marketing department interviewed potential customers before the launch. Large fleet operators were particularly interested because they expected better battery monitoring to reduce unexpected vehicle downtime. Smaller operators, however, were more concerned about the initial purchase price.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Estimate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maximum annual capacity</td>
+            <td>15,000 units</td>
+          </tr>
+          <tr>
+            <td>Variable manufacturing cost per unit</td>
+            <td>₹9,000</td>
+          </tr>
+          <tr>
+            <td>Variable selling cost per unit</td>
+            <td>₹1,000</td>
+          </tr>
+          <tr>
+            <td>Annual fixed cost</td>
+            <td>₹4,00,00,000</td>
+          </tr>
+          <tr>
+            <td>Development expenditure already incurred</td>
+            <td>₹7,00,00,000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Three introductory prices were considered.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Price per Unit</th>
+            <th>Expected First-Year Demand</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>₹24,000</td>
+            <td>6,000 units</td>
+          </tr>
+          <tr>
+            <td>₹20,000</td>
+            <td>9,000 units</td>
+          </tr>
+          <tr>
+            <td>₹16,000</td>
+            <td>13,000 units</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The chief marketing officer favoured the ₹24,000 price. She argued that early adopters were relatively less price sensitive and that VoltEdge should benefit from the differentiated product while competitors were still absent.</p>
+
+      <p>The production head preferred ₹16,000. He believed that establishing a large installed customer base quickly would make it more difficult for competitors to enter later. He also expected manufacturing efficiency to improve as cumulative production increased.</p>
+
+      <p>The chief financial officer reminded the board that the ₹7 crore development expenditure had already been incurred. Therefore, it should not influence the incremental pricing decision. She also warned that the introductory price could influence customers' future price expectations as the product moved through its life cycle.</p>
+
+      <p>The board therefore asked management to compare the alternatives while considering both immediate financial contribution and the strategic objectives associated with the introduction stage.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_021_1",
+        question: "Which pricing strategy is most consistent with the marketing head's recommendation of ₹24,000?",
+        options: [
+          "Penetration pricing",
+          "Skimming pricing",
+          "Going-rate pricing",
+          "By-product pricing"
+        ],
+        answer: 1,
+        reason: "The product is differentiated, early customers are relatively less price sensitive and competitors are temporarily absent. These circumstances support skimming pricing."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_021_2",
+        question: "What is the contribution per unit at a selling price of ₹24,000?",
+        options: [
+          "₹12,000",
+          "₹13,000",
+          "₹14,000",
+          "₹15,000"
+        ],
+        answer: 2,
+        reason: "Contribution = ₹24,000 − ₹9,000 − ₹1,000 = ₹14,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_021_3",
+        question: "What would be the total contribution if the company charges ₹20,000 and sells the expected 9,000 units?",
+        options: [
+          "₹8.0 crore",
+          "₹9.0 crore",
+          "₹10.0 crore",
+          "₹10.8 crore"
+        ],
+        answer: 1,
+        reason: "Contribution per unit = ₹20,000 − ₹9,000 − ₹1,000 = ₹10,000. Total contribution = 9,000 × ₹10,000 = ₹9 crore."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_021_4",
+        question: "Which fact most strongly supports penetration pricing?",
+        options: [
+          "Early customers are relatively less price sensitive",
+          "Competitors are temporarily absent",
+          "The company wants to rapidly establish a large installed customer base",
+          "Development expenditure has already been incurred"
+        ],
+        answer: 2,
+        reason: "Rapidly building market share and an installed customer base is a key objective associated with penetration pricing."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_021_5",
+        question: "Why should the ₹7 crore development expenditure not determine the current incremental pricing decision?",
+        options: [
+          "It is a variable cost",
+          "It is a future avoidable cost",
+          "It has already been incurred and is a sunk cost",
+          "It changes with the selling price"
+        ],
+        answer: 2,
+        reason: "The development expenditure has already been incurred and will not change because of the current pricing decision. It is therefore a sunk cost."
+      }
+
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 022
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_022",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Cost Based Pricing",
+      "Full Cost Pricing",
+      "Mark-up Pricing",
+      "Target Rate of Return"
+    ],
+
+    caseText: `
+
+      <p>PrecisionFab Engineering Ltd. manufactures specialised metal housings for industrial automation companies. Each housing is produced according to customer specifications, although most designs use the company's existing manufacturing process.</p>
+
+      <p>The sales department traditionally quotes prices by adding a mark-up to full cost. Recently, the board observed that the company's return on invested capital had fallen below the return expected by shareholders.</p>
+
+      <p>The finance director therefore proposed supplementing the traditional full-cost approach with a target-rate-of-return approach.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Expected annual output and sales</td>
+            <td>30,000 units</td>
+          </tr>
+          <tr>
+            <td>Variable manufacturing cost per unit</td>
+            <td>₹2,400</td>
+          </tr>
+          <tr>
+            <td>Annual fixed manufacturing cost</td>
+            <td>₹1,80,00,000</td>
+          </tr>
+          <tr>
+            <td>Annual administration and selling fixed cost</td>
+            <td>₹60,00,000</td>
+          </tr>
+          <tr>
+            <td>Invested capital</td>
+            <td>₹10,00,00,000</td>
+          </tr>
+          <tr>
+            <td>Desired return</td>
+            <td>18%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The sales manager believes customers will not accept an unlimited price increase. He therefore wants management to understand the price required to achieve the desired return at the expected volume.</p>
+
+      <p>The production manager also points out that common fixed overhead can sometimes be allocated arbitrarily among customised products. As a result, management must distinguish between long-term full-cost pricing and short-term decisions where only incremental or relevant costs may matter.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_022_1",
+        question: "What is the total annual fixed cost?",
+        options: [
+          "₹1.80 crore",
+          "₹2.00 crore",
+          "₹2.40 crore",
+          "₹2.60 crore"
+        ],
+        answer: 2,
+        reason: "Fixed cost = ₹1.80 crore + ₹0.60 crore = ₹2.40 crore."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_022_2",
+        question: "What is the full cost per unit at the expected annual output?",
+        options: [
+          "₹2,800",
+          "₹3,000",
+          "₹3,200",
+          "₹3,400"
+        ],
+        answer: 2,
+        reason: "Fixed cost per unit = ₹2.40 crore ÷ 30,000 = ₹800. Full cost = ₹2,400 + ₹800 = ₹3,200."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_022_3",
+        question: "What annual return amount is required under the target-rate-of-return approach?",
+        options: [
+          "₹1.20 crore",
+          "₹1.50 crore",
+          "₹1.80 crore",
+          "₹2.00 crore"
+        ],
+        answer: 2,
+        reason: "Target return = ₹10 crore × 18% = ₹1.80 crore."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_022_4",
+        question: "What price per unit would be required to cover full cost and generate the target return at 30,000 units?",
+        options: [
+          "₹3,400",
+          "₹3,800",
+          "₹4,000",
+          "₹4,200"
+        ],
+        answer: 1,
+        reason: "Full cost = ₹3,200. Required return per unit = ₹1.80 crore ÷ 30,000 = ₹600. Required price = ₹3,200 + ₹600 = ₹3,800."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_022_5",
+        question: "Why can full-cost pricing create difficulties for some customised products?",
+        options: [
+          "Variable costs become irrelevant",
+          "Common fixed overhead may be allocated arbitrarily among products",
+          "Customers always accept full-cost prices",
+          "Expected sales volume is unnecessary"
+        ],
+        answer: 1,
+        reason: "Allocation of common fixed overhead among customised products can distort product-level costs and consequently affect quoted prices."
+      }
+
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 023
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_023",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Competition Based Pricing",
+      "Going Rate Pricing",
+      "Homogeneous Products"
+    ],
+
+    caseText: `
+
+      <p>Coastal Industrial Oxygen Ltd. supplies compressed oxygen cylinders to engineering workshops. The market contains five major suppliers and the product is substantially homogeneous. Customers can switch suppliers without significant technical difficulty.</p>
+
+      <p>Coastal's production manager recently proposed increasing the selling price because electricity and transportation costs had increased. The marketing manager opposed the proposal because the competitors had not increased their prices.</p>
+
+      <p>The finance team collected the following market quotations.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Supplier</th>
+            <th>Price per Cylinder</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>A</td><td>₹1,460</td></tr>
+          <tr><td>B</td><td>₹1,500</td></tr>
+          <tr><td>C</td><td>₹1,480</td></tr>
+          <tr><td>D</td><td>₹1,520</td></tr>
+          <tr><td>E</td><td>₹1,490</td></tr>
+        </tbody>
+      </table>
+
+      <p>Coastal's variable cost is ₹1,080 per cylinder. Fixed manufacturing costs are ₹1.20 crore per year and current annual sales are approximately 25,000 cylinders.</p>
+
+      <p>The marketing manager believes that Coastal should consider the prevailing market price because the product is homogeneous. The production manager argues that the company's own cost structure should determine its selling price.</p>
+
+      <p>The managing director asks both departments to explain why, in a highly competitive homogeneous market, the prevailing market price can become more important than the individual company's cost structure.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_023_1",
+        question: "What is the average price quoted by the five competitors?",
+        options: [
+          "₹1,480",
+          "₹1,490",
+          "₹1,492",
+          "₹1,500"
+        ],
+        answer: 1,
+        reason: "Average = (₹1,460 + ₹1,500 + ₹1,480 + ₹1,520 + ₹1,490) ÷ 5 = ₹7,450 ÷ 5 = ₹1,490."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_023_2",
+        question: "Which pricing method best fits the characteristics of this market?",
+        options: [
+          "Going-rate pricing",
+          "Skimming pricing",
+          "Psychological pricing",
+          "TEV pricing"
+        ],
+        answer: 0,
+        reason: "The product is homogeneous and customers can readily compare competing prices, making going-rate pricing appropriate."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_023_3",
+        question: "At the average competitor price, what is Coastal's contribution per cylinder?",
+        options: [
+          "₹350",
+          "₹410",
+          "₹490",
+          "₹520"
+        ],
+        answer: 1,
+        reason: "Contribution = ₹1,490 − ₹1,080 = ₹410 per cylinder."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_023_4",
+        question: "If Coastal sells 25,000 cylinders at ₹1,490, what is the total contribution before fixed costs?",
+        options: [
+          "₹82.50 lakh",
+          "₹1.025 crore",
+          "₹1.10 crore",
+          "₹1.20 crore"
+        ],
+        answer: 1,
+        reason: "25,000 × ₹410 = ₹1,02,50,000 = ₹1.025 crore."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_023_5",
+        question: "Why would a substantial price increase be risky for Coastal?",
+        options: [
+          "Customers cannot compare suppliers",
+          "The product is highly differentiated",
+          "Customers can readily switch to competing suppliers offering substantially similar products",
+          "Fixed costs automatically increase"
+        ],
+        answer: 2,
+        reason: "Because the product is homogeneous and switching is relatively easy, customers may move to competitors if Coastal charges materially more."
+      }
+
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 024
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_024",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Pricing of Services",
+      "Perishability",
+      "Price Adaptation",
+      "Off-Peak Pricing"
+    ],
+
+    caseText: `
+
+      <p>SkyBridge Convention Hotel operates 240 rooms. Management recently analysed occupancy patterns and found significant differences between business days and weekends.</p>
+
+      <p>From Monday to Thursday, the hotel receives substantial demand from corporate travellers attending conferences and business meetings. Weekend corporate demand is considerably lower, although leisure demand increases during holidays.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Period</th>
+            <th>Available Rooms</th>
+            <th>Occupied Rooms</th>
+            <th>Current Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday–Thursday</td>
+            <td>240</td>
+            <td>216</td>
+            <td>₹6,000</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>240</td>
+            <td>180</td>
+            <td>₹5,500</td>
+          </tr>
+          <tr>
+            <td>Saturday–Sunday</td>
+            <td>240</td>
+            <td>120</td>
+            <td>₹5,000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The incremental operating cost of an occupied room is ₹1,600. Building depreciation, permanent management salaries and property taxes are fixed in the short term.</p>
+
+      <p>The revenue manager proposes reducing the weekend rate to ₹4,000. Market research indicates that weekend occupancy could increase from 120 rooms to 190 rooms per night.</p>
+
+      <p>The general manager is also considering premium rates for selected conference dates during which demand is expected to exceed the available 240 rooms.</p>
+
+      <p>Management wants to understand how service characteristics and demand conditions can justify different prices at different times.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_024_1",
+        question: "Which service characteristic explains why an unused hotel room for a particular night cannot be stored for future sale?",
+        options: [
+          "Perishability",
+          "Tangibility",
+          "Ownership transfer",
+          "Standardisation"
+        ],
+        answer: 0,
+        reason: "Service capacity is perishable. An unsold room night cannot be stored and sold after that night."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_024_2",
+        question: "What is the current contribution from 120 occupied weekend rooms at ₹5,000 per room?",
+        options: [
+          "₹3,60,000",
+          "₹4,08,000",
+          "₹4,50,000",
+          "₹5,00,000"
+        ],
+        answer: 1,
+        reason: "Contribution per room = ₹5,000 − ₹1,600 = ₹3,400. Total contribution = 120 × ₹3,400 = ₹4,08,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_024_3",
+        question: "What would be the contribution from 190 occupied rooms at the proposed ₹4,000 rate?",
+        options: [
+          "₹4,08,000",
+          "₹4,32,000",
+          "₹4,56,000",
+          "₹4,80,000"
+        ],
+        answer: 2,
+        reason: "Contribution per room = ₹4,000 − ₹1,600 = ₹2,400. Total contribution = 190 × ₹2,400 = ₹4,56,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_024_4",
+        question: "What is the increase in nightly contribution if the proposed weekend strategy achieves 190 occupied rooms?",
+        options: [
+          "₹32,000",
+          "₹40,000",
+          "₹48,000",
+          "₹56,000"
+        ],
+        answer: 2,
+        reason: "New contribution ₹4,56,000 − current contribution ₹4,08,000 = ₹48,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_024_5",
+        question: "What pricing approach is represented by charging a higher rate on dates where demand exceeds available rooms?",
+        options: [
+          "Off-peak discounting",
+          "Peak-demand price adaptation",
+          "By-product pricing",
+          "Cost-plus pricing"
+        ],
+        answer: 1,
+        reason: "Charging higher prices during periods of high demand and constrained capacity is a form of demand-based price adaptation."
+      }
+
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 025
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_025",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Value Based Pricing",
+      "True Economic Value",
+      "Perceived Value",
+      "Performance Differential"
+    ],
+
+    caseText: `
+
+      <p>SecureVault Data Systems Ltd. has developed a high-security data storage appliance for financial institutions. The appliance has a higher operating cost than the standard system currently used by many banks, but the company claims that its probability of major system failure is substantially lower.</p>
+
+      <p>A large bank currently uses the standard system and is considering switching to SecureVault. The bank's procurement team wants to evaluate the economic value rather than simply compare purchase prices.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Existing System</th>
+            <th>SecureVault</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Purchase price</td>
+            <td>₹45,000</td>
+            <td>To be determined</td>
+          </tr>
+          <tr>
+            <td>Operating cost per hour</td>
+            <td>₹12</td>
+            <td>₹14</td>
+          </tr>
+          <tr>
+            <td>Expected usage</td>
+            <td colspan="2">3,000 hours</td>
+          </tr>
+          <tr>
+            <td>Probability of major failure</td>
+            <td>8%</td>
+            <td>1%</td>
+          </tr>
+          <tr>
+            <td>Cost of major failure</td>
+            <td colspan="2">₹2,00,000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The sales manager explains that True Economic Value should be calculated using the next best alternative and the economic value of the performance differential.</p>
+
+      <p>However, the procurement manager warns that the bank may not recognise every theoretical benefit. Senior management may attach a lower value to some benefits because they are uncertain or difficult to measure.</p>
+
+      <p>Therefore, the company wants to calculate TEV while separately recognising that perceived value can differ from objective economic value.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_025_1",
+        question: "What is the additional operating cost of SecureVault over 3,000 hours?",
+        options: [
+          "₹3,000",
+          "₹6,000",
+          "₹8,000",
+          "₹9,000"
+        ],
+        answer: 1,
+        reason: "Additional operating cost = 3,000 × (₹14 − ₹12) = ₹6,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_025_2",
+        question: "What is the expected saving in failure-related cost?",
+        options: [
+          "₹10,000",
+          "₹12,000",
+          "₹14,000",
+          "₹16,000"
+        ],
+        answer: 2,
+        reason: "Reduction in failure probability = 8% − 1% = 7%. Saving = ₹2,00,000 × 7% = ₹14,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_025_3",
+        question: "What is the net economic value of the performance differential?",
+        options: [
+          "₹6,000",
+          "₹8,000",
+          "₹14,000",
+          "₹20,000"
+        ],
+        answer: 1,
+        reason: "Net performance benefit = ₹14,000 failure-cost saving − ₹6,000 additional operating cost = ₹8,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_025_4",
+        question: "What is the True Economic Value of SecureVault?",
+        options: [
+          "₹45,000",
+          "₹53,000",
+          "₹59,000",
+          "₹67,000"
+        ],
+        answer: 1,
+        reason: "TEV = next best alternative price ₹45,000 + net performance differential ₹8,000 = ₹53,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_025_5",
+        question: "Why may the bank's perceived value differ from the calculated TEV?",
+        options: [
+          "TEV always equals manufacturing cost",
+          "Customers may not recognise or value every measurable economic benefit equally",
+          "TEV ignores the next best alternative",
+          "Perceived value is always equal to cost"
+        ],
+        answer: 1,
+        reason: "TEV is an economic benchmark, while perceived value depends on what the customer actually understands, values and is willing to pay for."
+      }
+
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 026
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_026",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Sealed Bid Pricing",
+      "Competition Based Pricing",
+      "Relevant Cost",
+      "Expected Competitor Bids"
+    ],
+
+    caseText: `
+
+      <p>Meridian Infrastructure Systems Ltd. manufactures specialised electrical control units used in large infrastructure projects. The company has received an invitation to participate in a sealed-bid tender for supplying 5,000 control units to a government-backed infrastructure project.</p>
+
+      <p>The customer will not negotiate prices individually. All qualified suppliers must submit confidential bids by the same deadline. The contract is expected to be awarded primarily on price, provided the supplier satisfies the required technical specifications.</p>
+
+      <p>The sales director initially suggested using the company's normal cost-plus price. The commercial director disagreed because the tender is highly competitive and the likely bids of competitors could materially affect Meridian's chances of winning.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Cost Item</th>
+            <th>Per Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Direct material</td><td>₹4,800</td></tr>
+          <tr><td>Direct labour</td><td>₹2,200</td></tr>
+          <tr><td>Variable production overhead</td><td>₹800</td></tr>
+          <tr><td>Special tender packaging</td><td>₹300</td></tr>
+          <tr><td>Allocated fixed overhead</td><td>₹1,200</td></tr>
+        </tbody>
+      </table>
+
+      <p>Meridian has sufficient idle capacity to manufacture the complete order. No existing customer order would be displaced.</p>
+
+      <p>The market intelligence team estimates the following probability distribution for the lowest competing bid.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Lowest Competitor Bid</th>
+            <th>Probability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>₹8,500</td><td>25%</td></tr>
+          <tr><td>₹8,900</td><td>35%</td></tr>
+          <tr><td>₹9,300</td><td>25%</td></tr>
+          <tr><td>₹9,700</td><td>15%</td></tr>
+        </tbody>
+      </table>
+
+      <p>The commercial director explains that Meridian should not simply use the average competitor bid. The team must understand how a proposed bid affects the probability of winning and the contribution if the order is secured.</p>
+
+      <p>The managing director therefore asks the tender team to distinguish between the role of competition-based pricing in setting the bid and relevant cost in determining the minimum economically acceptable price.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_026_1",
+        question: "What is Meridian's relevant cost per unit for the tender?",
+        options: [
+          "₹7,800",
+          "₹8,100",
+          "₹9,300",
+          "₹10,100"
+        ],
+        answer: 1,
+        reason: "Relevant cost = ₹4,800 + ₹2,200 + ₹800 + ₹300 = ₹8,100. Allocated fixed overhead is not incremental."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_026_2",
+        question: "Which pricing method is most directly reflected by the tender process?",
+        options: [
+          "Sealed-bid pricing",
+          "Psychological pricing",
+          "Skimming pricing",
+          "Product-line pricing"
+        ],
+        answer: 0,
+        reason: "Suppliers submit confidential bids and the award depends heavily on competitive bid levels. This is sealed-bid pricing."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_026_3",
+        question: "What is the probability that the lowest competing bid will be ₹8,900 or less?",
+        options: [
+          "25%",
+          "35%",
+          "60%",
+          "75%"
+        ],
+        answer: 2,
+        reason: "Probability = 25% + 35% = 60%."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_026_4",
+        question: "If Meridian submits a bid of ₹9,300 and wins whenever its bid is lower than or equal to the lowest competing bid, under which competitor scenarios can it win?",
+        options: [
+          "Only ₹9,700",
+          "₹9,300 and ₹9,700",
+          "₹8,500, ₹8,900, ₹9,300 and ₹9,700",
+          "Only ₹8,500 and ₹8,900"
+        ],
+        answer: 1,
+        reason: "Under the stated assumption, a ₹9,300 bid wins when the lowest competitor bid is ₹9,300 or ₹9,700."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_026_5",
+        question: "If Meridian bids ₹8,500 and wins, what contribution per unit would it earn?",
+        options: [
+          "₹300",
+          "₹400",
+          "₹500",
+          "₹700"
+        ],
+        answer: 1,
+        reason: "Contribution = ₹8,500 − ₹8,100 = ₹400 per unit."
+      }
+
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 027
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_027",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Recession Pricing",
+      "Relevant Cost",
+      "Marginal Cost",
+      "Opportunity Cost",
+      "Special Order"
+    ],
+
+    caseText: `
+
+      <p>Eastern Auto Components Ltd. manufactures brake-control assemblies for automobile manufacturers. The automotive industry has entered a temporary downturn and Eastern is currently operating at approximately 65% of practical capacity.</p>
+
+      <p>An overseas manufacturer has offered to purchase 40,000 assemblies at ₹2,450 per unit. Eastern's normal domestic selling price is ₹3,400 per unit.</p>
+
+      <p>The managing director initially rejected the proposal because the offered price was substantially below the company's full accounting cost. The finance director requested that the order be reconsidered because the factory currently has substantial unused capacity.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Cost Item</th>
+            <th>Per Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Direct material</td><td>₹1,050</td></tr>
+          <tr><td>Direct labour</td><td>₹620</td></tr>
+          <tr><td>Variable overhead</td><td>₹280</td></tr>
+          <tr><td>Special export packing</td><td>₹90</td></tr>
+          <tr><td>Allocated factory fixed cost</td><td>₹520</td></tr>
+          <tr><td>Head-office allocation</td><td>₹180</td></tr>
+        </tbody>
+      </table>
+
+      <p>The production manager, however, informs the finance director that the factory's idle capacity is not sufficient for the complete order during the customer's requested four-month delivery period.</p>
+
+      <p>Eastern can manufacture 30,000 units without affecting existing production. The remaining 10,000 units would require reducing production of Product X. Each unit of Product X generates a contribution of ₹700 and requires one machine-hour. Each special-order assembly also requires one machine-hour.</p>
+
+      <p>The sales director is concerned that domestic customers may discover the lower export price and demand similar concessions. The finance director therefore states that the short-term incremental economics and long-term strategic consequences must be evaluated separately.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_027_1",
+        question: "What is the relevant cost per unit for the 30,000 units that can be produced using idle capacity?",
+        options: [
+          "₹1,950",
+          "₹2,040",
+          "₹2,450",
+          "₹2,560"
+        ],
+        answer: 1,
+        reason: "Relevant cost = ₹1,050 + ₹620 + ₹280 + ₹90 = ₹2,040."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_027_2",
+        question: "For the remaining 10,000 units, what is the relevant economic cost per unit after considering opportunity cost?",
+        options: [
+          "₹2,040",
+          "₹2,450",
+          "₹2,740",
+          "₹2,850"
+        ],
+        answer: 2,
+        reason: "Relevant production cost is ₹2,040. Each unit displaces Product X contribution of ₹700. Therefore economic cost = ₹2,040 + ₹700 = ₹2,740."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_027_3",
+        question: "What total contribution is generated by the 30,000 units produced using idle capacity?",
+        options: [
+          "₹10.80 million",
+          "₹12.30 million",
+          "₹12.60 million",
+          "₹14.70 million"
+        ],
+        answer: 1,
+        reason: "Contribution per unit = ₹2,450 − ₹2,040 = ₹410. Total contribution = 30,000 × ₹410 = ₹12.30 million."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_027_4",
+        question: "What is the economic effect of producing the remaining 10,000 units?",
+        options: [
+          "₹2.90 million contribution",
+          "₹2.00 million contribution",
+          "₹2.90 million loss",
+          "No economic effect"
+        ],
+        answer: 2,
+        reason: "Economic cost per unit = ₹2,740 while the special-order price is ₹2,450. Loss = ₹290 per unit × 10,000 = ₹2.90 million."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_027_5",
+        question: "Based purely on incremental economics, which conclusion is most appropriate?",
+        options: [
+          "Accept the entire order because the price exceeds full accounting cost",
+          "Reject the entire order because the price is below the normal selling price",
+          "The idle-capacity portion is attractive, while the capacity-constrained portion should be rejected unless other strategic benefits justify it",
+          "Accept the entire order because fixed costs are irrelevant in all circumstances"
+        ],
+        answer: 2,
+        reason: "The first 30,000 units generate positive contribution. The remaining 10,000 units displace Product X contribution and therefore create an economic loss at the proposed price."
+      }
+
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 028
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_028",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Product Mix Pricing",
+      "Limiting Factor",
+      "Contribution per Limiting Factor",
+      "Opportunity Cost",
+      "Price Adaptation"
+    ],
+
+    caseText: `
+
+      <p>Nova Industrial Robotics Ltd. produces three components used in robotic assembly systems. The components are known as R1, R2 and R3. Although each product has a different selling price and variable cost, all three require precision-testing hours in the same testing department.</p>
+
+      <p>The testing department has become the principal bottleneck. Management initially instructed the production team to manufacture products having the highest contribution per unit. The finance manager challenged this approach and stated that the scarce testing hours, rather than the number of units, should determine the product mix.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>R1</th>
+            <th>R2</th>
+            <th>R3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Selling price</td><td>₹5,000</td><td>₹7,000</td><td>₹9,000</td></tr>
+          <tr><td>Variable cost</td><td>₹3,000</td><td>₹4,000</td><td>₹6,000</td></tr>
+          <tr><td>Testing hours per unit</td><td>2</td><td>3</td><td>5</td></tr>
+          <tr><td>Maximum demand</td><td>3,000</td><td>2,000</td><td>1,500</td></tr>
+        </tbody>
+      </table>
+
+      <p>Only 12,000 testing hours are available for the planning period.</p>
+
+      <p>At the beginning of the period, a major customer offers to purchase an additional 500 units of R3 at ₹9,500 per unit. The customer requires immediate delivery. Accepting the order would consume testing hours that could otherwise be used for R1 or R2.</p>
+
+      <p>The sales department considers the additional R3 order attractive because the proposed price is ₹500 higher than the standard R3 price. The finance manager insists that this additional price should not be considered in isolation. The company must determine the contribution sacrificed from the alternative use of the scarce testing hours.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_028_1",
+        question: "What are the contributions per unit of R1, R2 and R3 respectively?",
+        options: [
+          "₹2,000; ₹3,000; ₹3,000",
+          "₹2,000; ₹3,000; ₹4,000",
+          "₹3,000; ₹4,000; ₹5,000",
+          "₹2,000; ₹2,500; ₹3,000"
+        ],
+        answer: 0,
+        reason: "R1 = ₹5,000 − ₹3,000 = ₹2,000. R2 = ₹7,000 − ₹4,000 = ₹3,000. R3 = ₹9,000 − ₹6,000 = ₹3,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_028_2",
+        question: "Which products jointly generate the highest contribution per testing hour?",
+        options: [
+          "R1 only",
+          "R2 only",
+          "R3 only",
+          "R1 and R2"
+        ],
+        answer: 3,
+        reason: "R1 = ₹2,000 ÷ 2 = ₹1,000/hour. R2 = ₹3,000 ÷ 3 = ₹1,000/hour. R3 = ₹3,000 ÷ 5 = ₹600/hour. Therefore R1 and R2 jointly have the highest contribution per testing hour."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_028_3",
+        question: "What is the contribution per unit from the additional R3 order before considering opportunity cost?",
+        options: [
+          "₹2,500",
+          "₹3,000",
+          "₹3,500",
+          "₹4,000"
+        ],
+        answer: 2,
+        reason: "Contribution = ₹9,500 − ₹6,000 = ₹3,500 per unit."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_028_4",
+        question: "How many testing hours are required for the additional 500 R3 units?",
+        options: [
+          "1,500 hours",
+          "2,000 hours",
+          "2,500 hours",
+          "3,000 hours"
+        ],
+        answer: 2,
+        reason: "500 units × 5 testing hours = 2,500 testing hours."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_028_5",
+        question: "If the best alternative use of testing capacity generates ₹1,000 contribution per hour, what is the opportunity cost of accepting the additional R3 order?",
+        options: [
+          "₹20 lakh",
+          "₹25 lakh",
+          "₹30 lakh",
+          "₹35 lakh"
+        ],
+        answer: 1,
+        reason: "Opportunity cost = 2,500 hours × ₹1,000 = ₹25,00,000."
+      }
+
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 029
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_029",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Kano Model",
+      "Threshold Attributes",
+      "Performance Attributes",
+      "Excitement Attributes",
+      "Indifferent Attributes",
+      "Product Pricing"
+    ],
+
+    caseText: `
+
+      <p>HelioHealth Devices Ltd. is preparing to launch a connected monitoring device intended for elderly customers living independently. The device can monitor selected parameters and send alerts to family members or healthcare providers.</p>
+
+      <p>Management has a limited launch budget and cannot implement every feature suggested by the engineering department. The product manager therefore commissioned a Kano analysis to identify which features would have the greatest effect on customer satisfaction.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Kano Classification</th>
+            <th>Development Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Reliable emergency alert</td><td>Threshold</td><td>₹20 lakh</td></tr>
+          <tr><td>Battery life</td><td>Performance</td><td>₹12 lakh</td></tr>
+          <tr><td>Automatic family notification</td><td>Excitement</td><td>₹10 lakh</td></tr>
+          <tr><td>Custom device wallpaper</td><td>Indifferent</td><td>₹5 lakh</td></tr>
+          <tr><td>Complex confirmation screens</td><td>Reverse</td><td>₹4 lakh</td></tr>
+          <tr><td>Experimental social-media feature</td><td>Questionable</td><td>₹6 lakh</td></tr>
+        </tbody>
+      </table>
+
+      <p>Customer interviews produced an important result. Almost every respondent assumed that the emergency alert would operate reliably. Respondents became dissatisfied when they were told that the alert could fail occasionally. However, they did not become substantially more satisfied merely because reliability exceeded the expected basic standard.</p>
+
+      <p>Battery life produced a different response. Customers were willing to pay more for longer battery life, and satisfaction increased as battery performance improved.</p>
+
+      <p>The automatic family-notification feature was not expected by most respondents. Nevertheless, when a demonstration was shown, many respondents described it as extremely useful and stated that they would be delighted if the feature were included.</p>
+
+      <p>The product manager also warned that Kano classifications can change over time. A feature that initially creates excitement may become a normal expectation after competitors introduce similar features.</p>
+
+      <p>The company has ₹42 lakh available for the initial product release. Management wants to select features that provide meaningful customer value without exceeding the available budget.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_029_1",
+        question: "Why is reliable emergency alert classified as a threshold attribute?",
+        options: [
+          "Customers become increasingly delighted as reliability improves",
+          "Customers expect basic reliability and become dissatisfied when it is absent",
+          "Customers do not care about reliability",
+          "Customers actively dislike reliable alerts"
+        ],
+        answer: 1,
+        reason: "Threshold or must-be attributes are expected by customers. Their absence creates dissatisfaction, while their presence does not necessarily create proportional delight."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_029_2",
+        question: "Which feature represents a performance attribute?",
+        options: [
+          "Reliable emergency alert",
+          "Battery life",
+          "Automatic family notification",
+          "Custom device wallpaper"
+        ],
+        answer: 1,
+        reason: "Performance attributes generally create increasing customer satisfaction as the level of performance improves."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_029_3",
+        question: "Which feature represents an excitement attribute?",
+        options: [
+          "Reliable emergency alert",
+          "Battery life",
+          "Automatic family notification",
+          "Complex confirmation screens"
+        ],
+        answer: 2,
+        reason: "The automatic family-notification feature was not expected but created substantial delight when demonstrated. This is characteristic of an excitement attribute."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_029_4",
+        question: "If management selects the threshold, performance and excitement features, what total development cost will be incurred?",
+        options: [
+          "₹38 lakh",
+          "₹40 lakh",
+          "₹42 lakh",
+          "₹47 lakh"
+        ],
+        answer: 2,
+        reason: "₹20 lakh + ₹12 lakh + ₹10 lakh = ₹42 lakh."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_029_5",
+        question: "Why should management not assume that the excitement classification will remain unchanged indefinitely?",
+        options: [
+          "Excitement attributes never change",
+          "An excitement attribute can become a performance or threshold expectation as customers become accustomed to it",
+          "Threshold attributes always disappear",
+          "Indifferent attributes automatically become reverse attributes"
+        ],
+        answer: 1,
+        reason: "Customer expectations evolve. Features that initially delight customers may become normal expectations as competitors and customers become accustomed to them."
+      }
+
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 030
+  // =========================================================
+
+  {
+    case_id: "SRM_C6_HARD_030",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Price Discrimination",
+      "Price Adaptation",
+      "Market Segmentation",
+      "Resale Conditions",
+      "Geographic Pricing"
+    ],
+
+    caseText: `
+
+      <p>LearnSphere Professional Training operates an online platform providing advanced technical courses. The same educational content can be delivered to customers in different markets without materially changing the underlying production process.</p>
+
+      <p>The marketing department has observed substantial differences in willingness to pay. Corporate customers generally purchase licences in bulk and place greater value on administration, reporting and employee-management features. Individual students are more price sensitive.</p>
+
+      <p>LearnSphere is considering charging ₹18,000 for an individual licence and ₹32,000 for a corporate licence. Corporate customers would receive additional administrative features, although the underlying educational content would remain substantially identical.</p>
+
+      <p>The pricing committee has identified several risks.</p>
+
+      <p>First, corporate customers may purchase individual licences and distribute access among employees if the company cannot effectively identify the customer category.</p>
+
+      <p>Second, students purchasing individual licences may attempt to resell their licences to corporate customers.</p>
+
+      <p>Third, customers in lower-price geographic markets could attempt to resell access to customers in higher-price markets.</p>
+
+      <p>The legal adviser therefore explains that charging different prices requires more than identifying customers with different willingness to pay. The segments must be sufficiently separable and resale or arbitrage must be controlled.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Segment</th>
+            <th>Potential Customers</th>
+            <th>Expected Purchases</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Individual students</td>
+            <td>10,000</td>
+            <td>4,000</td>
+            <td>₹18,000</td>
+          </tr>
+          <tr>
+            <td>Corporate customers</td>
+            <td>1,000</td>
+            <td>600</td>
+            <td>₹32,000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The management team wants to evaluate the revenue opportunity while understanding the conditions necessary for differential pricing to work effectively.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_030_1",
+        question: "What revenue is expected from individual student licences?",
+        options: [
+          "₹5.40 crore",
+          "₹6.20 crore",
+          "₹7.20 crore",
+          "₹8.00 crore"
+        ],
+        answer: 2,
+        reason: "4,000 × ₹18,000 = ₹7,20,00,000 = ₹7.20 crore."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_030_2",
+        question: "What revenue is expected from corporate customers?",
+        options: [
+          "₹1.62 crore",
+          "₹1.80 crore",
+          "₹1.92 crore",
+          "₹2.40 crore"
+        ],
+        answer: 2,
+        reason: "600 × ₹32,000 = ₹1,92,00,000 = ₹1.92 crore."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_030_3",
+        question: "What is the combined expected revenue from both segments?",
+        options: [
+          "₹8.12 crore",
+          "₹8.82 crore",
+          "₹9.12 crore",
+          "₹9.72 crore"
+        ],
+        answer: 2,
+        reason: "₹7.20 crore + ₹1.92 crore = ₹9.12 crore."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_030_4",
+        question: "Which condition is particularly important if LearnSphere wants to maintain different prices between customer segments?",
+        options: [
+          "Customers must be able to freely resell licences",
+          "The company must be able to identify segments and prevent effective resale between them",
+          "All customers must have identical willingness to pay",
+          "The lower-price segment must always have greater demand"
+        ],
+        answer: 1,
+        reason: "Effective price discrimination requires identifiable customer segments and sufficient barriers to resale or arbitrage."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_030_5",
+        question: "Why could uncontrolled resale undermine the proposed pricing structure?",
+        options: [
+          "High-price customers could obtain the service through the lower-price segment",
+          "It automatically increases fixed costs",
+          "It converts variable costs into fixed costs",
+          "It eliminates the need for segmentation"
+        ],
+        answer: 0,
+        reason: "If high-price customers can access the product through a lower-price segment, the intended price differential becomes difficult to maintain."
+      }
+
+    ]
+  },
+
+  // ============================================================
+  // MEDIUM 031
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_031",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "New Product Pricing",
+      "Price Skimming",
+      "Penetration Pricing",
+      "Demand",
+      "Market Competition"
+    ],
+
+    caseText: `
+      <p><strong>Arclight Instruments Limited</strong> manufactures industrial measurement equipment used by pharmaceutical, chemical and food-processing companies. The company has traditionally sold conventional temperature and pressure monitoring equipment. These products have reached a relatively mature stage and are facing increasing competition from low-cost manufacturers.</p>
+
+      <p>The company's R&D division has recently developed a new wireless monitoring device called <strong>ThermoLink-X</strong>. The device can continuously monitor temperature, humidity and pressure and transmit information to a central dashboard. Management believes that the product is significantly different from the company's existing products because it can reduce manual inspection requirements.</p>
+
+      <p>During product testing, several large pharmaceutical companies indicated that they would be willing to pay a relatively high price because the device could reduce their inspection and reporting costs. However, smaller manufacturers stated that they would consider purchasing the product only if its price was substantially lower.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Annual fixed development and production cost</td><td>₹48,00,000</td></tr>
+          <tr><td>Variable manufacturing cost per unit</td><td>₹2,400</td></tr>
+          <tr><td>Variable selling cost per unit</td><td>₹300</td></tr>
+          <tr><td>Expected initial market size</td><td>5,000 units</td></tr>
+        </tbody>
+      </table>
+
+      <p>The marketing team prepared two alternative launch plans. Under Plan A, Arclight would launch the product at a high price of ₹8,500 per unit. The team estimates that approximately 2,000 units could be sold during the first year. Competitors would require some time to introduce comparable products because their current models do not provide the same combination of features.</p>
+
+      <p>Under Plan B, the company would launch at ₹5,500 per unit and attempt to establish a large customer base quickly. Management estimates first-year sales of 4,000 units under this plan. The lower price would also make it harder for competitors to justify entering the market immediately.</p>
+
+      <p>The CEO argues that Plan A is attractive because early customers appear to have relatively low price sensitivity. The sales director, however, believes that establishing a large installed customer base is more important because recurring software and maintenance revenue could become significant in later years.</p>
+
+      <p>The board therefore asks the pricing committee to determine which launch strategy is financially attractive while also identifying the underlying pricing approach.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_031_1",
+        question: "Under Plan A, what is the estimated first-year contribution before fixed costs?",
+        options: [
+          "₹1,16,00,000",
+          "₹1,06,00,000",
+          "₹1,20,00,000",
+          "₹1,36,00,000"
+        ],
+        answer: 0,
+        reason: "Contribution per unit = ₹8,500 − ₹2,400 − ₹300 = ₹5,800. For 2,000 units, contribution = ₹5,800 × 2,000 = ₹1,16,00,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_031_2",
+        question: "Under Plan B, what is the estimated first-year contribution before fixed costs?",
+        options: [
+          "₹1,08,00,000",
+          "₹1,12,00,000",
+          "₹1,20,00,000",
+          "₹96,00,000"
+        ],
+        answer: 1,
+        reason: "Contribution per unit = ₹5,500 − ₹2,400 − ₹300 = ₹2,800. For 4,000 units, contribution = ₹2,800 × 4,000 = ₹1,12,00,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_031_3",
+        question: "Which launch strategy is more consistent with the objective of establishing a large installed customer base quickly?",
+        options: [
+          "Plan A because a high price always increases market share",
+          "Plan B because a relatively low introductory price can encourage rapid market adoption",
+          "Plan A because new products should always recover development costs immediately",
+          "Neither plan because introductory pricing cannot influence market adoption"
+        ],
+        answer: 1,
+        reason: "Plan B uses a relatively lower introductory price to encourage rapid adoption and establish a larger customer base, which is consistent with penetration pricing."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_031_4",
+        question: "Which fact in the case most strongly supports the use of a skimming strategy?",
+        options: [
+          "The product has a variable manufacturing cost",
+          "Smaller manufacturers are price sensitive",
+          "Early pharmaceutical customers are willing to pay a high price and competitors need time to introduce comparable products",
+          "The company has fixed development costs"
+        ],
+        answer: 2,
+        reason: "Price skimming is more suitable where early customers have relatively low price sensitivity and competitive entry is initially limited."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_031_5",
+        question: "If Arclight's primary objective is to maximize first-year contribution based on the estimates given, which plan should it select?",
+        options: [
+          "Plan A",
+          "Plan B",
+          "Both produce identical contribution",
+          "The decision cannot be made from the data"
+        ],
+        answer: 0,
+        reason: "Plan A contribution is ₹1,16,00,000, whereas Plan B contribution is ₹1,12,00,000. Therefore Plan A produces the higher first-year contribution."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // MEDIUM 032
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_032",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Cost Based Pricing",
+      "Target Rate of Return",
+      "Markup",
+      "Capacity"
+    ],
+
+    caseText: `
+      <p><strong>Vertex Process Equipment Limited</strong> manufactures customized filtration units for chemical processing companies. Each order normally requires engineering, fabrication, testing and installation. Because every customer order is slightly different, the production manager has historically used full-cost information when preparing quotations.</p>
+
+      <p>For the coming year, the company expects to produce and sell <strong>12,000 filtration units</strong>. The finance department estimates the following annual costs:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Cost item</th>
+            <th>Annual amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Direct materials</td><td>₹2,40,00,000</td></tr>
+          <tr><td>Direct labour</td><td>₹1,20,00,000</td></tr>
+          <tr><td>Variable manufacturing overhead</td><td>₹60,00,000</td></tr>
+          <tr><td>Fixed manufacturing overhead</td><td>₹90,00,000</td></tr>
+          <tr><td>Administration and selling overhead</td><td>₹50,00,000</td></tr>
+        </tbody>
+      </table>
+
+      <p>The company has ₹6 crore of capital invested in the business and shareholders expect a target return of 15% per annum. Management wants the quotation to recover the full estimated cost and also provide the desired return on invested capital.</p>
+
+      <p>A junior accountant proposes simply adding a 25% markup to the manufacturing cost. The finance manager rejects this approach because the target return is based on the capital employed rather than merely on manufacturing cost.</p>
+
+      <p>At the same time, the sales team warns that demand may be lower than expected. If only 10,000 units are sold, the fixed costs will have to be recovered over fewer units. The managing director therefore asks the finance department to prepare a price based on the expected normal volume of 12,000 units.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_032_1",
+        question: "What is the total estimated annual cost of Vertex Process Equipment Limited?",
+        options: [
+          "₹4.60 crore",
+          "₹5.10 crore",
+          "₹5.60 crore",
+          "₹6.00 crore"
+        ],
+        answer: 2,
+        reason: "Total annual cost = ₹2.40 crore + ₹1.20 crore + ₹0.60 crore + ₹0.90 crore + ₹0.50 crore = ₹5.60 crore."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_032_2",
+        question: "What is the target annual return required by shareholders?",
+        options: [
+          "₹60 lakh",
+          "₹75 lakh",
+          "₹90 lakh",
+          "₹1.20 crore"
+        ],
+        answer: 2,
+        reason: "Target return = ₹6 crore × 15% = ₹90 lakh."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_032_3",
+        question: "Based on the target-rate-of-return approach, what should be the approximate selling price per unit at 12,000 units?",
+        options: [
+          "₹4,667",
+          "₹5,000",
+          "₹5,417",
+          "₹5,667"
+        ],
+        answer: 2,
+        reason: "Required revenue = ₹5.60 crore + ₹0.90 crore = ₹6.50 crore. Selling price per unit = ₹6.50 crore ÷ 12,000 = approximately ₹5,416.67."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_032_4",
+        question: "Why is the junior accountant's proposal of adding 25% to manufacturing cost not necessarily consistent with the company's stated pricing objective?",
+        options: [
+          "Because markup pricing is prohibited",
+          "Because the target return is linked to invested capital and expected sales volume, not simply manufacturing cost",
+          "Because fixed costs should never be included in pricing",
+          "Because selling price should always equal variable cost"
+        ],
+        answer: 1,
+        reason: "The target-rate-of-return approach incorporates the required return on invested capital and expected sales volume. A simple markup on manufacturing cost does not necessarily achieve the required return."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_032_5",
+        question: "If only 10,000 units are sold while total annual cost remains unchanged, what happens to the full cost per unit?",
+        options: [
+          "It decreases because fewer units are sold",
+          "It remains ₹4,667",
+          "It increases because fixed costs are spread over fewer units",
+          "It becomes equal to variable cost"
+        ],
+        answer: 2,
+        reason: "When sales volume decreases while fixed costs remain unchanged, the fixed cost allocated to each unit increases. Therefore full cost per unit increases."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // MEDIUM 033
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_033",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Value Based Pricing",
+      "Total Economic Value",
+      "Perceived Value",
+      "Customer Alternative"
+    ],
+
+    caseText: `
+      <p><strong>ClearFlow Technologies</strong> has developed a specialized industrial filtration controller called <strong>CF-900</strong>. The controller is designed for factories where interruption of filtration operations can result in substantial production losses.</p>
+
+      <p>The company's sales team is negotiating with Orion Chemicals, which currently uses another controller, the <strong>Basic-700</strong>. The purchasing manager initially argues that the CF-900 should not cost more than the Basic-700 because both devices perform broadly the same function.</p>
+
+      <p>ClearFlow's technical team collects additional information. The Basic-700 costs Orion ₹28,000 per unit. Its electricity consumption attributable to the controller is estimated at ₹4 per operating hour. The controller also has an estimated annual downtime-related cost of ₹12,000 per unit.</p>
+
+      <p>The CF-900 would cost ₹7 per operating hour in electricity and is expected to have an annual downtime-related cost of only ₹2,000 per unit. Orion expects each controller to operate for 2,000 hours per year.</p>
+
+      <p>ClearFlow's sales manager argues that the higher operating electricity cost should not automatically make the new product unattractive because the reduction in downtime has substantial economic value to Orion. The manager therefore proposes using the customer's next-best alternative as the starting point for determining the economic value.</p>
+
+      <p>However, Orion's purchasing manager says that the actual price paid will also depend on how strongly the customer perceives the benefits and whether the customer is willing to switch from the existing system.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_033_1",
+        question: "What is Orion's annual electricity cost under the Basic-700?",
+        options: [
+          "₹4,000",
+          "₹7,000",
+          "₹8,000",
+          "₹12,000"
+        ],
+        answer: 2,
+        reason: "Basic-700 electricity cost = ₹4 × 2,000 operating hours = ₹8,000 per year."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_033_2",
+        question: "What is the annual electricity cost under CF-900?",
+        options: [
+          "₹7,000",
+          "₹10,000",
+          "₹12,000",
+          "₹14,000"
+        ],
+        answer: 3,
+        reason: "CF-900 electricity cost = ₹7 × 2,000 hours = ₹14,000 per year."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_033_3",
+        question: "Compared with Basic-700, what is the annual downtime-related saving from CF-900?",
+        options: [
+          "₹2,000",
+          "₹8,000",
+          "₹10,000",
+          "₹12,000"
+        ],
+        answer: 2,
+        reason: "Downtime cost falls from ₹12,000 to ₹2,000. Annual saving = ₹12,000 − ₹2,000 = ₹10,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_033_4",
+        question: "Ignoring any other factors and considering one year of operation, what is the net annual operating benefit of CF-900 compared with Basic-700?",
+        options: [
+          "₹2,000 benefit",
+          "₹4,000 benefit",
+          "₹2,000 disadvantage",
+          "₹10,000 benefit"
+        ],
+        answer: 1,
+        reason: "Additional electricity cost = ₹14,000 − ₹8,000 = ₹6,000. Downtime saving = ₹10,000. Net annual benefit = ₹10,000 − ₹6,000 = ₹4,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_033_5",
+        question: "Which pricing concept is most directly reflected when ClearFlow starts with Orion's next-best alternative and then adjusts for the economic value of performance differences?",
+        options: [
+          "Going-rate pricing",
+          "Target-return pricing",
+          "Total Economic Value pricing",
+          "Sealed-bid pricing"
+        ],
+        answer: 2,
+        reason: "Total Economic Value pricing begins with the customer's next-best alternative and adjusts it for the economic value of differences in performance."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // MEDIUM 034
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_034",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Service Pricing",
+      "Perishability",
+      "Peak Pricing",
+      "Off Peak Discount"
+    ],
+
+    caseText: `
+      <p><strong>MetroVista Convention Centre</strong> operates a 600-seat auditorium used for conferences, corporate meetings and cultural programmes. Unlike physical inventory that can be stored for future sale, an unused auditorium seat for a particular event cannot be carried forward to another date.</p>
+
+      <p>Management noticed a significant difference between weekday afternoon and Saturday evening demand. Saturday evening programmes frequently operate close to capacity, while weekday afternoon events often have substantial unused capacity.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Event period</th>
+            <th>Average attendance</th>
+            <th>Standard capacity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Saturday evening</td><td>570</td><td>600</td></tr>
+          <tr><td>Friday evening</td><td>510</td><td>600</td></tr>
+          <tr><td>Weekday afternoon</td><td>240</td><td>600</td></tr>
+        </tbody>
+      </table>
+
+      <p>The centre's current standard ticket price is ₹1,200. The finance manager estimates that each additional attendee generates an incremental contribution of ₹700 after event-specific costs. Fixed auditorium costs remain unchanged regardless of attendance within the available capacity.</p>
+
+      <p>The marketing department proposes reducing weekday afternoon prices to ₹900. It expects attendance to increase to 420. For Saturday evenings, the department proposes increasing the price to ₹1,400 because demand is already close to capacity.</p>
+
+      <p>The operations manager is concerned that customers may complain about different prices for apparently similar seats. The marketing manager responds that the objective is not simply to change the listed price but to align price with different demand conditions and the perishability of service capacity.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_034_1",
+        question: "What percentage of capacity was used by weekday afternoon events under the current system?",
+        options: [
+          "30%",
+          "40%",
+          "50%",
+          "60%"
+        ],
+        answer: 1,
+        reason: "Capacity utilization = 240 ÷ 600 × 100 = 40%."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_034_2",
+        question: "If weekday afternoon attendance rises from 240 to 420 after the price reduction, how many additional seats are sold?",
+        options: [
+          "120",
+          "160",
+          "180",
+          "210"
+        ],
+        answer: 2,
+        reason: "Additional seats sold = 420 − 240 = 180."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_034_3",
+        question: "At an incremental contribution of ₹700 per additional attendee, what additional contribution is generated by the weekday afternoon strategy?",
+        options: [
+          "₹1,08,000",
+          "₹1,26,000",
+          "₹1,40,000",
+          "₹1,80,000"
+        ],
+        answer: 1,
+        reason: "Additional contribution = 180 × ₹700 = ₹1,26,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_034_4",
+        question: "Which characteristic of services most directly supports offering a lower price for weekday afternoon events when unused capacity would otherwise remain?",
+        options: [
+          "Tangibility",
+          "Perishability",
+          "Standardization",
+          "Transferability"
+        ],
+        answer: 1,
+        reason: "Service capacity for a particular time period cannot generally be stored and sold later. This characteristic is known as perishability."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_034_5",
+        question: "The proposed ₹1,400 Saturday evening price is primarily intended to reflect which condition?",
+        options: [
+          "Very low demand and substantial unused capacity",
+          "High demand and limited available capacity",
+          "Zero variable cost",
+          "A need to eliminate all customers"
+        ],
+        answer: 1,
+        reason: "Saturday evening attendance is already 570 out of 600 seats, showing strong demand and limited remaining capacity."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // MEDIUM 035
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_035",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Product Life Cycle",
+      "Introduction",
+      "Growth",
+      "Maturity",
+      "Decline"
+    ],
+
+    caseText: `
+      <p><strong>NovaPrint Solutions</strong> manufactures compact commercial label printers. Its management has been reviewing the pricing history of one of its major products, the <strong>LP-4</strong>, over the last six years.</p>
+
+      <p>When LP-4 was introduced, only a few competitors offered similar products. The printer incorporated a new printing technology and was initially purchased mainly by large customers that valued the technology more than the price. NovaPrint therefore maintained a relatively high introductory price.</p>
+
+      <p>During the second and third years, several competitors entered the market. Production volumes increased, manufacturing efficiency improved and customers became more aware of alternative products. NovaPrint responded by gradually reducing the price while attempting to preserve its market share.</p>
+
+      <p>By the fourth year, the market had become highly competitive. Customers could compare specifications and prices easily, and most competing products offered broadly similar performance. Price differences became increasingly important in purchase decisions.</p>
+
+      <p>In the fifth year, industry demand stopped growing significantly. Several competitors introduced discounts, service packages and extended warranties. NovaPrint's management concluded that the product had entered a mature stage.</p>
+
+      <p>During the sixth year, total market demand declined because customers began shifting toward cloud-connected multifunctional printing systems. NovaPrint considered three alternatives: discontinue LP-4 immediately, reduce the price significantly, or retain the product at a relatively high price for customers that still valued its simple and reliable design.</p>
+
+      <p>The board asks the product manager to match the observed pricing decisions with the relevant stages of the product life cycle.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_035_1",
+        question: "The high initial price of LP-4 was most consistent with which stage and pricing approach?",
+        options: [
+          "Introduction and price skimming",
+          "Maturity and penetration pricing",
+          "Decline and going-rate pricing",
+          "Growth and psychological pricing"
+        ],
+        answer: 0,
+        reason: "The product was new, differentiated, faced limited initial competition and had customers willing to pay more, supporting skimming at introduction."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_035_2",
+        question: "Which combination of events in the case most strongly indicates the growth stage?",
+        options: [
+          "Declining demand and product discontinuation",
+          "Increasing competition, increasing production volume and improving efficiency",
+          "Stable demand and identical competitor products",
+          "Only one customer remaining"
+        ],
+        answer: 1,
+        reason: "The second and third years show increasing competition, rising production volume and improving efficiency, which are consistent with the growth stage."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_035_3",
+        question: "Why did price competition become more important during the fourth year?",
+        options: [
+          "The product became completely unique",
+          "Customers had fewer alternatives",
+          "Products became broadly similar and customers could compare competing offerings more easily",
+          "Manufacturing costs became zero"
+        ],
+        answer: 2,
+        reason: "As competing products became broadly similar and customers could compare alternatives more easily, price became increasingly important."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_035_4",
+        question: "Which year most clearly represents the maturity stage?",
+        options: [
+          "First year",
+          "Second year",
+          "Fourth year",
+          "Fifth year"
+        ],
+        answer: 3,
+        reason: "The fifth year is characterized by stagnant industry demand, competitive discounts and additional service offerings, consistent with maturity."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_035_5",
+        question: "In the decline stage, why might retaining a relatively high price for a niche segment still be reasonable?",
+        options: [
+          "Because every declining product must use high pricing",
+          "Because some customers may continue valuing distinctive benefits despite declining overall demand",
+          "Because competition disappears automatically",
+          "Because variable cost becomes irrelevant"
+        ],
+        answer: 1,
+        reason: "Even during decline, a niche group may continue to value particular product benefits and may be willing to pay a premium."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD 036
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_HARD_036",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Sealed Bid Pricing",
+      "Relevant Cost",
+      "Expected Competitor Bid",
+      "Capacity"
+    ],
+
+    caseText: `
+      <p><strong>IronPeak Fabrication Limited</strong> manufactures specialized structural assemblies for infrastructure projects. A government-owned infrastructure company has invited bids for a one-time contract requiring <strong>1,000 assemblies</strong>. The contract will be awarded primarily on price, provided the bidder satisfies the technical requirements.</p>
+
+      <p>IronPeak's sales director believes that the likely competing bids will fall within the range shown below based on informal market intelligence:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Estimated competitor bid per assembly</th>
+            <th>Estimated probability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>₹9,800</td><td>20%</td></tr>
+          <tr><td>₹10,100</td><td>30%</td></tr>
+          <tr><td>₹10,400</td><td>30%</td></tr>
+          <tr><td>₹10,700</td><td>20%</td></tr>
+        </tbody>
+      </table>
+
+      <p>The production manager confirms that the factory currently has unused capacity sufficient to complete the order without displacing existing business.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Cost item</th>
+            <th>Per assembly</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Direct material</td><td>₹4,100</td></tr>
+          <tr><td>Direct labour</td><td>₹1,900</td></tr>
+          <tr><td>Variable overhead</td><td>₹900</td></tr>
+          <tr><td>Additional inspection cost</td><td>₹300</td></tr>
+          <tr><td>Allocated fixed overhead</td><td>₹1,100</td></tr>
+        </tbody>
+      </table>
+
+      <p>The sales director wants to submit a bid just below the expected winning competitor price. The finance manager warns that the bid should not be accepted merely because it is below the competitors' estimated price. It must also generate a positive contribution and should account for the fact that the fixed overhead allocation does not change because of this order.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_036_1",
+        question: "What is the weighted expected competitor bid per assembly based on the probabilities provided?",
+        options: [
+          "₹10,150",
+          "₹10,250",
+          "₹10,300",
+          "₹10,400"
+        ],
+        answer: 1,
+        reason: "Expected bid = (₹9,800 × 20%) + (₹10,100 × 30%) + (₹10,400 × 30%) + (₹10,700 × 20%) = ₹10,250."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_036_2",
+        question: "Which cost should NOT normally be included as an incremental cost for this contract?",
+        options: [
+          "Direct material",
+          "Additional inspection cost",
+          "Allocated fixed overhead that remains unchanged",
+          "Variable overhead"
+        ],
+        answer: 2,
+        reason: "The allocated fixed overhead remains unchanged even if the contract is accepted. Therefore it is not an incremental cost of the contract."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_036_3",
+        question: "What is the relevant incremental cost per assembly?",
+        options: [
+          "₹7,200",
+          "₹7,000",
+          "₹8,300",
+          "₹8,100"
+        ],
+        answer: 0,
+        reason: "Relevant cost = ₹4,100 + ₹1,900 + ₹900 + ₹300 = ₹7,200. The allocated fixed overhead of ₹1,100 is excluded."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_036_4",
+        question: "If IronPeak bids ₹10,200 per assembly, what is the contribution on the 1,000-unit contract?",
+        options: [
+          "₹30,00,000",
+          "₹20,00,000",
+          "₹28,00,000",
+          "₹31,00,000"
+        ],
+        answer: 0,
+        reason: "Contribution per assembly = ₹10,200 − ₹7,200 = ₹3,000. For 1,000 assemblies, total contribution = ₹30,00,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_036_5",
+        question: "Which pricing approach is most directly reflected by the sales director's intention to set the bid after considering likely competitor bids?",
+        options: [
+          "Cost-plus pricing",
+          "Competition-based sealed-bid pricing",
+          "Psychological pricing",
+          "Target-return pricing"
+        ],
+        answer: 1,
+        reason: "In sealed-bid pricing, the firm considers expected competitor bids when determining its own bid, while ensuring that the price remains financially acceptable."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD 037
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_HARD_037",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Recession Pricing",
+      "Relevant Cost",
+      "Opportunity Cost",
+      "Idle Capacity",
+      "Contribution"
+    ],
+
+    caseText: `
+      <p><strong>Trident Components Limited</strong> supplies precision components to automobile manufacturers. A sudden slowdown in the automobile industry has reduced the company's normal orders by almost 35%. Several production lines are now operating below capacity.</p>
+
+      <p>A long-standing customer, Zenith Motors, has offered Trident a one-time order for <strong>30,000 components</strong> at ₹420 per unit. The customer states that the order will be cancelled if the price exceeds ₹420.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Per unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Direct material</td><td>₹180</td></tr>
+          <tr><td>Direct labour</td><td>₹70</td></tr>
+          <tr><td>Variable production overhead</td><td>₹40</td></tr>
+          <tr><td>Special packaging for Zenith</td><td>₹15</td></tr>
+          <tr><td>Allocated fixed manufacturing cost</td><td>₹90</td></tr>
+        </tbody>
+      </table>
+
+      <p>There is currently enough idle capacity to manufacture the entire order. However, the special packaging requires a machine that is currently leased for another customer. The lease can be temporarily extended at a cost of ₹1,20,000 for the entire order.</p>
+
+      <p>The sales director initially calculates total cost as ₹395 per unit by adding all manufacturing costs and concludes that the company would earn only ₹25 per unit. The finance manager says that this calculation is misleading because the fixed manufacturing allocation is unavoidable in the short term.</p>
+
+      <p>The finance manager also points out that accepting the order could help retain an important customer during the recession. Nevertheless, the company must determine whether the offered price covers all relevant incremental costs and whether any opportunity cost exists.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_037_1",
+        question: "What is the total relevant production and packaging cost per unit before considering the additional packaging-machine lease?",
+        options: [
+          "₹290",
+          "₹305",
+          "₹395",
+          "₹380"
+        ],
+        answer: 1,
+        reason: "Relevant cost before the lease = ₹180 + ₹70 + ₹40 + ₹15 = ₹305 per unit. The allocated fixed cost of ₹90 is excluded."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_037_2",
+        question: "What is the equivalent additional lease cost per unit for the 30,000-unit order?",
+        options: [
+          "₹2",
+          "₹3",
+          "₹4",
+          "₹5"
+        ],
+        answer: 2,
+        reason: "Additional lease cost per unit = ₹1,20,000 ÷ 30,000 = ₹4."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_037_3",
+        question: "What is the total relevant incremental cost per unit after considering the additional lease cost?",
+        options: [
+          "₹305",
+          "₹309",
+          "₹395",
+          "₹399"
+        ],
+        answer: 1,
+        reason: "Total relevant cost = ₹305 + ₹4 = ₹309 per unit."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_037_4",
+        question: "At the offered price of ₹420, what is the total contribution from the order after the additional lease cost?",
+        options: [
+          "₹33,30,000",
+          "₹30,00,000",
+          "₹36,00,000",
+          "₹39,00,000"
+        ],
+        answer: 0,
+        reason: "Contribution per unit = ₹420 − ₹309 = ₹111. Total contribution = ₹111 × 30,000 = ₹33,30,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_037_5",
+        question: "Why can accepting a price below the reported full cost still be rational during the recession described in the case?",
+        options: [
+          "Because fixed costs cease to exist",
+          "Because the order uses idle capacity and the price exceeds relevant incremental cost",
+          "Because every recession order should be accepted",
+          "Because fixed manufacturing costs are always avoidable"
+        ],
+        answer: 1,
+        reason: "The order uses idle capacity, and the offered price of ₹420 exceeds the relevant incremental cost of ₹309. Therefore the order generates a positive contribution."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD 038
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_HARD_038",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Price Discrimination",
+      "Market Segmentation",
+      "Arbitrage",
+      "Customer Willingness to Pay"
+    ],
+
+    caseText: `
+      <p><strong>EduSphere Professional Learning</strong> provides online technical certification programmes to working professionals. The company offers the same core digital course content to customers in several markets, but the commercial team is considering different prices for different customer segments.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Segment</th>
+            <th>Estimated willingness to pay</th>
+            <th>Potential customers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Large corporate employers</td><td>₹18,000</td><td>1,000</td></tr>
+          <tr><td>Individual professionals</td><td>₹12,000</td><td>3,000</td></tr>
+          <tr><td>Students</td><td>₹7,000</td><td>4,000</td></tr>
+        </tbody>
+      </table>
+
+      <p>The company has sufficient digital capacity to serve all potential customers. The variable cost of delivering the course to one additional customer is only ₹1,000.</p>
+
+      <p>The marketing manager proposes charging corporate customers ₹16,000, professionals ₹11,000 and students ₹6,000. The finance manager notes that charging different prices is useful only if the segments can actually be separated and customers paying the lower price cannot easily resell access to higher-paying customers.</p>
+
+      <p>To address this issue, EduSphere proposes requiring corporate customers to purchase enterprise licences linked to company email domains, while student discounts would require valid student identification. Individual professional subscriptions would remain transferable only within the same customer's registered account.</p>
+
+      <p>A director argues that simply charging every customer ₹16,000 would maximize revenue per customer. Another director argues that such a strategy could eliminate the majority of price-sensitive customers and reduce total contribution.</p>
+
+      <p>The board wants to determine whether differential pricing is commercially sensible and what conditions must exist for the strategy to work.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_038_1",
+        question: "If EduSphere charges all customers ₹16,000, which segment is most directly excluded based on the stated willingness to pay?",
+        options: [
+          "Corporate customers only",
+          "Individual professionals and students",
+          "Corporate and professional customers",
+          "No segment"
+        ],
+        answer: 1,
+        reason: "Individual professionals have a willingness to pay of ₹12,000 and students ₹7,000, both below ₹16,000. Corporate customers have willingness to pay of ₹18,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_038_2",
+        question: "At the proposed segment prices, what is the total revenue if all potential customers purchase?",
+        options: [
+          "₹6.30 crore",
+          "₹7.30 crore",
+          "₹8.30 crore",
+          "₹9.40 crore"
+        ],
+        answer: 1,
+        reason: "Corporate revenue = 1,000 × ₹16,000 = ₹1.60 crore. Professional revenue = 3,000 × ₹11,000 = ₹3.30 crore. Student revenue = 4,000 × ₹6,000 = ₹2.40 crore. Total = ₹7.30 crore."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_038_3",
+        question: "Why is the ability to prevent resale or arbitrage important in this pricing strategy?",
+        options: [
+          "It allows students to resell discounted access to high-price corporate customers",
+          "It prevents customers in high-price segments from obtaining the lower-priced offer through another segment",
+          "It eliminates variable cost",
+          "It guarantees every customer will buy"
+        ],
+        answer: 1,
+        reason: "If high-paying customers can easily obtain the lower-priced offer through another segment, the seller may be unable to sustain different prices."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_038_4",
+        question: "Which condition in the case most directly supports the feasibility of price discrimination?",
+        options: [
+          "All customers have identical willingness to pay",
+          "Customer groups can be identified and separated through eligibility requirements",
+          "Students can freely transfer subscriptions",
+          "The product has no variable cost"
+        ],
+        answer: 1,
+        reason: "Identifying and separating customer groups through corporate-domain and student-identification requirements supports the feasibility of differential pricing."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_038_5",
+        question: "What is the main strategic logic behind charging lower prices to students than to corporate customers?",
+        options: [
+          "Students necessarily receive lower-quality content",
+          "The company can potentially capture demand from customers with lower willingness to pay without reducing the price charged to higher-value segments",
+          "Corporate customers always require more content",
+          "Students have higher willingness to pay"
+        ],
+        answer: 1,
+        reason: "Differential pricing allows the company to serve more price-sensitive segments while retaining higher prices from customers with greater willingness to pay."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD 039
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_HARD_039",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Product Mix Pricing",
+      "Captive Product Pricing",
+      "Optional Feature Pricing",
+      "Bundling",
+      "Contribution"
+    ],
+
+    caseText: `
+      <p><strong>MedSure Diagnostics</strong> manufactures compact laboratory analysers for small hospitals. Its main machine, the <strong>MS-100</strong>, is sold together with specialized testing cartridges. Customers cannot use the machine for its intended tests without the appropriate cartridges.</p>
+
+      <p>The commercial team is considering whether the machine should be priced relatively aggressively while earning a larger margin from recurring cartridge sales.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Selling price</th>
+            <th>Variable cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>MS-100 machine</td><td>₹80,000</td><td>₹60,000</td></tr>
+          <tr><td>Standard cartridge</td><td>₹1,200</td><td>₹500</td></tr>
+          <tr><td>Premium cartridge</td><td>₹1,800</td><td>₹700</td></tr>
+          <tr><td>Optional remote-monitoring module</td><td>₹12,000</td><td>₹4,000</td></tr>
+        </tbody>
+      </table>
+
+      <p>A typical hospital is expected to purchase one machine and use 200 standard cartridges during the first year. Approximately 30% of hospitals are expected to purchase the premium cartridge instead of the standard cartridge for specialized tests.</p>
+
+      <p>The sales director proposes reducing the machine price by ₹10,000 to make the initial purchase easier, while maintaining cartridge prices. The finance director is concerned that the machine already has a relatively modest contribution and wants to know whether the recurring cartridge contribution can compensate for the reduction.</p>
+
+      <p>The company is also considering a bundled offer in which the machine and 200 standard cartridges would be sold together for ₹2,70,000. Under the normal individual prices, the machine plus 200 standard cartridges would cost ₹3,20,000.</p>
+
+      <p>The marketing team believes the bundle could increase adoption, but the finance department warns that the bundle should be evaluated based on total contribution rather than headline revenue alone.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_039_1",
+        question: "What is the contribution from selling one MS-100 machine at the normal price?",
+        options: [
+          "₹10,000",
+          "₹20,000",
+          "₹60,000",
+          "₹80,000"
+        ],
+        answer: 1,
+        reason: "Contribution = ₹80,000 − ₹60,000 = ₹20,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_039_2",
+        question: "What is the contribution from 200 standard cartridges?",
+        options: [
+          "₹1,00,000",
+          "₹1,20,000",
+          "₹1,40,000",
+          "₹2,40,000"
+        ],
+        answer: 2,
+        reason: "Contribution per standard cartridge = ₹1,200 − ₹500 = ₹700. For 200 cartridges, contribution = ₹700 × 200 = ₹1,40,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_039_3",
+        question: "If the machine price is reduced by ₹10,000 while cartridge pricing remains unchanged, what is the contribution from the machine plus 200 standard cartridges?",
+        options: [
+          "₹1,40,000",
+          "₹1,50,000",
+          "₹1,60,000",
+          "₹1,70,000"
+        ],
+        answer: 1,
+        reason: "Reduced machine contribution = ₹80,000 − ₹10,000 − ₹60,000 = ₹10,000. Cartridge contribution = ₹1,40,000. Total contribution = ₹1,50,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_039_4",
+        question: "What type of product-mix pricing is most clearly represented by the cartridges being necessary for the machine's intended use?",
+        options: [
+          "Captive-product pricing",
+          "Psychological pricing",
+          "Sealed-bid pricing",
+          "Going-rate pricing"
+        ],
+        answer: 0,
+        reason: "The cartridges are necessary consumables for using the primary machine, making this an example of captive-product pricing."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_039_5",
+        question: "What is the contribution from the proposed bundle of one machine and 200 standard cartridges priced at ₹2,70,000?",
+        options: [
+          "₹1,10,000",
+          "₹1,20,000",
+          "₹1,50,000",
+          "₹1,70,000"
+        ],
+        answer: 0,
+        reason: "Variable cost = ₹60,000 + (200 × ₹500) = ₹1,60,000. Bundle contribution = ₹2,70,000 − ₹1,60,000 = ₹1,10,000."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD 040
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_HARD_040",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Kano Model",
+      "Product Features",
+      "Customer Satisfaction",
+      "Product Life Cycle",
+      "Pricing"
+    ],
+
+    caseText: `
+      <p><strong>HomeGrid Smart Living</strong> develops connected home-security systems. Its management recently conducted extensive customer interviews to understand which product features influence customer satisfaction.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Observed customer reaction</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>System activates correctly when an emergency occurs</td>
+            <td>Customers become highly dissatisfied when it fails, but additional performance beyond basic reliability produces relatively limited additional satisfaction.</td>
+          </tr>
+          <tr>
+            <td>Camera image clarity</td>
+            <td>Customers generally report greater satisfaction as image clarity improves.</td>
+          </tr>
+          <tr>
+            <td>Automatic AI-generated security recommendations</td>
+            <td>Customers are pleasantly surprised when available, but most do not complain when the feature is absent.</td>
+          </tr>
+          <tr>
+            <td>Decorative dashboard animations</td>
+            <td>Most customers show little reaction whether the animations are present or absent.</td>
+          </tr>
+          <tr>
+            <td>Extremely frequent security alerts</td>
+            <td>Many customers become dissatisfied when the system sends too many unnecessary alerts.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>HomeGrid currently sells its premium system for ₹42,000. The company is considering whether to add a large number of new features before the next product launch. The product manager argues that every additional feature should justify a higher price.</p>
+
+      <p>The head of customer experience disagrees. She explains that customers do not value every feature in the same way. Some features are simply expected, some have a direct relationship with satisfaction, and some can create excitement without being demanded in advance.</p>
+
+      <p>The product manager also points out that customer expectations are not static. A feature that currently surprises customers may eventually become a standard expectation after competitors adopt it widely.</p>
+
+      <p>The pricing committee therefore asks the product team to classify the features and determine how the classification should influence future product development and pricing decisions.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_040_1",
+        question: "The emergency activation reliability feature is best classified under which Kano category?",
+        options: [
+          "Excitement feature",
+          "Performance feature",
+          "Threshold / Must-be feature",
+          "Indifferent feature"
+        ],
+        answer: 2,
+        reason: "Basic reliability is expected by customers. Its absence causes strong dissatisfaction, while additional performance produces limited additional satisfaction. This is a threshold/must-be attribute."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_040_2",
+        question: "Camera image clarity is most consistent with which Kano category?",
+        options: [
+          "Performance / One-dimensional",
+          "Reverse",
+          "Indifferent",
+          "Questionable"
+        ],
+        answer: 0,
+        reason: "Customers report greater satisfaction as image clarity improves, showing the direct relationship associated with a performance/one-dimensional attribute."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_040_3",
+        question: "The AI-generated recommendations feature is most appropriately classified as:",
+        options: [
+          "Threshold",
+          "Excitement / Attractive",
+          "Reverse",
+          "Indifferent"
+        ],
+        answer: 1,
+        reason: "Customers are pleasantly surprised when the feature exists but do not strongly object when it is absent, making it an excitement/attractive feature."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_040_4",
+        question: "Which feature should HomeGrid be most cautious about treating as a source of additional customer value?",
+        options: [
+          "Camera clarity",
+          "Emergency reliability",
+          "Decorative dashboard animations",
+          "AI recommendations"
+        ],
+        answer: 2,
+        reason: "Customers show little reaction to decorative animations whether they are present or absent, indicating an indifferent attribute."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_040_5",
+        question: "If AI-generated recommendations become common across competing products over time, what is the most likely implication under the Kano model?",
+        options: [
+          "The feature must always remain an excitement feature",
+          "The feature may gradually move toward becoming a performance or threshold expectation",
+          "The feature automatically becomes irrelevant",
+          "The feature necessarily causes dissatisfaction"
+        ],
+        answer: 1,
+        reason: "Kano attributes can evolve as customer expectations change. An excitement feature may become a performance attribute and eventually a threshold expectation."
+      }
+    ]
+  },
+
+  // ============================================================
+  // MEDIUM 041
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_041",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Psychological Pricing",
+      "Customer Perception",
+      "Pricing Strategy",
+      "Price Presentation"
+    ],
+
+    caseText: `
+      <p><strong>UrbanNest Appliances</strong> sells premium kitchen appliances through its own website and selected retail partners. The company recently launched a compact smart oven targeted at young professionals living in urban apartments.</p>
+
+      <p>The product has a manufacturing cost of ₹8,400 per unit and an average variable selling and distribution cost of ₹600 per unit. Management initially considered a selling price of ₹10,000. However, the marketing team argued that the way the price is presented to customers could influence purchasing behaviour even when the economic difference between alternatives is relatively small.</p>
+
+      <p>After customer testing, the company considered four possible listed prices:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Option</th>
+            <th>Listed Price</th>
+            <th>Expected Annual Sales</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>A</td><td>₹9,999</td><td>18,000 units</td></tr>
+          <tr><td>B</td><td>₹10,000</td><td>16,500 units</td></tr>
+          <tr><td>C</td><td>₹10,499</td><td>15,000 units</td></tr>
+          <tr><td>D</td><td>₹10,999</td><td>13,000 units</td></tr>
+        </tbody>
+      </table>
+
+      <p>The marketing manager believes that ₹9,999 may be perceived differently from ₹10,000 even though the difference is only ₹1. The finance manager, however, wants the decision to be evaluated using contribution rather than relying only on the psychological appeal of the price.</p>
+
+      <p>The company also expects annual fixed marketing and administrative costs of ₹2.50 crore relating to the product. Management does not expect the fixed cost to change between the four alternatives.</p>
+
+      <p>The board therefore asks the team to determine both the financial attractiveness of the alternatives and the pricing concept involved in presenting a price just below a round number.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_041_1",
+        question: "What is the variable cost per unit of the smart oven?",
+        options: [
+          "₹8,400",
+          "₹9,000",
+          "₹9,600",
+          "₹10,000"
+        ],
+        answer: 1,
+        reason: "Variable cost = ₹8,400 manufacturing cost + ₹600 variable selling/distribution cost = ₹9,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_041_2",
+        question: "What is the contribution per unit under Option A?",
+        options: [
+          "₹999",
+          "₹1,000",
+          "₹1,199",
+          "₹1,499"
+        ],
+        answer: 0,
+        reason: "Contribution = ₹9,999 − ₹9,000 = ₹999 per unit."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_041_3",
+        question: "Which option generates the highest total contribution before fixed costs?",
+        options: [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        answer: 3,
+        reason: "A = ₹999 × 18,000 = ₹1,79,82,000. B = ₹1,000 × 16,500 = ₹1,65,00,000. C = ₹1,499 × 15,000 = ₹2,24,85,000. D = ₹1,999 × 13,000 = ₹2,59,87,000. Therefore Option D is highest."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_041_4",
+        question: "The decision to quote ₹9,999 rather than ₹10,000 primarily illustrates which pricing approach?",
+        options: [
+          "Psychological pricing",
+          "Sealed-bid pricing",
+          "Going-rate pricing",
+          "Target-return pricing"
+        ],
+        answer: 0,
+        reason: "Pricing just below a round-number threshold is a common example of psychological pricing."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_041_5",
+        question: "If the board's objective is to maximize contribution based on the estimates provided, which option should be selected?",
+        options: [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        answer: 3,
+        reason: "Option D generates the highest contribution of ₹2,59,87,000 before fixed costs."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // MEDIUM 042
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_042",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Going Rate Pricing",
+      "Competition Based Pricing",
+      "Homogeneous Product",
+      "Market Price"
+    ],
+
+    caseText: `
+      <p><strong>Rivermark Industrial Gases</strong> supplies standard industrial oxygen cylinders to fabrication units, welding contractors and metal-processing plants. The product is largely homogeneous because customers generally receive the same grade and specification from approved suppliers.</p>
+
+      <p>Rivermark has historically calculated prices by adding a markup to its estimated cost. However, the market has recently become highly competitive, and most large customers now obtain quotations from at least three suppliers before placing an order.</p>
+
+      <p>The sales department collects the following information for a major monthly contract involving 5,000 cylinders:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Supplier</th>
+            <th>Quoted Price per Cylinder</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Supplier A</td><td>₹1,040</td></tr>
+          <tr><td>Supplier B</td><td>₹1,075</td></tr>
+          <tr><td>Supplier C</td><td>₹1,060</td></tr>
+          <tr><td>Supplier D</td><td>₹1,090</td></tr>
+        </tbody>
+      </table>
+
+      <p>Rivermark's variable production and delivery cost is ₹820 per cylinder. An additional inspection requirement for this particular customer will cost ₹30 per cylinder. The company's existing fixed factory costs will not change if the contract is accepted.</p>
+
+      <p>The sales manager recommends quoting ₹1,050 per cylinder because he believes the company should remain close to the prevailing market price. The production manager argues that the company should instead use its normal full-cost-plus-markup method, which would result in a price of ₹1,180.</p>
+
+      <p>The finance manager reminds the team that the customer considers all approved suppliers technically acceptable and that the product itself has little differentiation.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_042_1",
+        question: "What is the average quoted price of the four competing suppliers?",
+        options: [
+          "₹1,050",
+          "₹1,060",
+          "₹1,066.25",
+          "₹1,075"
+        ],
+        answer: 2,
+        reason: "(₹1,040 + ₹1,075 + ₹1,060 + ₹1,090) ÷ 4 = ₹4,265 ÷ 4 = ₹1,066.25."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_042_2",
+        question: "What is Rivermark's relevant cost per cylinder for this particular order?",
+        options: [
+          "₹820",
+          "₹850",
+          "₹1,030",
+          "₹1,180"
+        ],
+        answer: 1,
+        reason: "Relevant cost = ₹820 variable cost + ₹30 additional inspection = ₹850. Existing fixed factory costs are unchanged."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_042_3",
+        question: "If Rivermark quotes ₹1,050 per cylinder, what contribution will be generated from the 5,000-cylinder order?",
+        options: [
+          "₹8,00,000",
+          "₹10,00,000",
+          "₹10,50,000",
+          "₹12,50,000"
+        ],
+        answer: 1,
+        reason: "Contribution per cylinder = ₹1,050 − ₹850 = ₹200. Total contribution = ₹200 × 5,000 = ₹10,00,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_042_4",
+        question: "Which pricing method is most appropriate given the product's homogeneous nature and the strong influence of competitor quotations?",
+        options: [
+          "Competition-based going-rate pricing",
+          "Pure cost-plus pricing",
+          "Psychological pricing",
+          "Value-based pricing based only on customer perception"
+        ],
+        answer: 0,
+        reason: "For homogeneous products where competitor prices strongly influence purchasing decisions, going-rate pricing is particularly relevant."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_042_5",
+        question: "Why might Rivermark's ₹1,180 full-cost-plus price be difficult to sustain in this situation?",
+        options: [
+          "Because fixed costs are illegal",
+          "Because customers can compare largely equivalent competing products and may reject a substantially higher price",
+          "Because variable cost is zero",
+          "Because going-rate pricing requires selling below variable cost"
+        ],
+        answer: 1,
+        reason: "Customers view the competing products as largely equivalent. A substantially higher price could therefore result in loss of the contract."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // MEDIUM 043
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_043",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Discounts and Allowances",
+      "Promotional Pricing",
+      "Net Price",
+      "Contribution"
+    ],
+
+    caseText: `
+      <p><strong>FreshCart Equipment</strong> sells commercial refrigeration units to restaurants and small supermarkets. The company normally sells one refrigeration unit for ₹1,50,000. Its variable manufacturing and selling cost is ₹1,05,000 per unit.</p>
+
+      <p>To increase sales during a slow quarter, the marketing team proposes a temporary promotional programme. Customers would receive a 10% promotional discount if they purchase during the campaign period. The sales team expects the discount to increase quarterly volume from 800 units to 1,100 units.</p>
+
+      <p>The finance manager is concerned that the percentage increase in sales volume may appear attractive while the lower price reduces the contribution on each unit.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Normal</th>
+            <th>Promotion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Selling price per unit</td><td>₹1,50,000</td><td>10% discount</td></tr>
+          <tr><td>Expected units sold</td><td>800</td><td>1,100</td></tr>
+          <tr><td>Variable cost per unit</td><td>₹1,05,000</td><td>₹1,05,000</td></tr>
+        </tbody>
+      </table>
+
+      <p>The company does not expect fixed costs to change during the promotion. The marketing team believes that the campaign may also attract new customers who could purchase maintenance contracts later.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_043_1",
+        question: "What will be the promotional selling price per refrigeration unit after the 10% discount?",
+        options: [
+          "₹1,20,000",
+          "₹1,30,000",
+          "₹1,35,000",
+          "₹1,40,000"
+        ],
+        answer: 2,
+        reason: "Discount = ₹1,50,000 × 10% = ₹15,000. Promotional price = ₹1,50,000 − ₹15,000 = ₹1,35,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_043_2",
+        question: "What is the normal contribution per unit?",
+        options: [
+          "₹35,000",
+          "₹40,000",
+          "₹45,000",
+          "₹50,000"
+        ],
+        answer: 2,
+        reason: "Normal contribution = ₹1,50,000 − ₹1,05,000 = ₹45,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_043_3",
+        question: "What is the contribution per unit during the promotion?",
+        options: [
+          "₹25,000",
+          "₹30,000",
+          "₹35,000",
+          "₹40,000"
+        ],
+        answer: 1,
+        reason: "Promotional contribution = ₹1,35,000 − ₹1,05,000 = ₹30,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_043_4",
+        question: "What is the total contribution under normal pricing for 800 units?",
+        options: [
+          "₹3.00 crore",
+          "₹3.60 crore",
+          "₹3.80 crore",
+          "₹4.00 crore"
+        ],
+        answer: 1,
+        reason: "800 × ₹45,000 = ₹3,60,00,000 = ₹3.60 crore."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_043_5",
+        question: "What is the total contribution under the promotional plan for 1,100 units?",
+        options: [
+          "₹3.00 crore",
+          "₹3.30 crore",
+          "₹3.60 crore",
+          "₹3.75 crore"
+        ],
+        answer: 1,
+        reason: "1,100 × ₹30,000 = ₹3,30,00,000 = ₹3.30 crore."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // MEDIUM 044
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_044",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Geographical Pricing",
+      "Transportation Cost",
+      "Delivered Pricing",
+      "Market Pricing"
+    ],
+
+    caseText: `
+      <p><strong>SteelRoute Components</strong> manufactures standard metal brackets at its factory in central India. The company sells to distributors located in three different regions. Management is reviewing whether a single factory price should be used for all customers or whether geographic differences should be incorporated into the pricing structure.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Amount per unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Manufacturing cost</td><td>₹620</td></tr>
+          <tr><td>Normal profit requirement</td><td>₹180</td></tr>
+          <tr><td>Transportation to Region A</td><td>₹40</td></tr>
+          <tr><td>Transportation to Region B</td><td>₹90</td></tr>
+          <tr><td>Transportation to Region C</td><td>₹150</td></tr>
+        </tbody>
+      </table>
+
+      <p>At present, the company quotes a factory price of ₹800 and charges transportation separately. Several competitors, however, quote delivered prices.</p>
+
+      <p>The sales director proposes using delivered pricing, under which the customer receives one quoted price including transportation. The finance department emphasizes that the company should not confuse the manufacturing cost with the delivered customer price.</p>
+
+      <p>The company wants to maintain its ₹180 per-unit normal profit before considering any exceptional regional promotional discount.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_044_1",
+        question: "What is the delivered price to Region A if SteelRoute retains its normal ₹180 profit?",
+        options: [
+          "₹800",
+          "₹820",
+          "₹840",
+          "₹860"
+        ],
+        answer: 2,
+        reason: "Factory price = ₹620 + ₹180 = ₹800. Region A transportation = ₹40. Delivered price = ₹840."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_044_2",
+        question: "What is the delivered price to Region B?",
+        options: [
+          "₹850",
+          "₹890",
+          "₹910",
+          "₹940"
+        ],
+        answer: 1,
+        reason: "Factory price ₹800 + Region B transportation ₹90 = ₹890."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_044_3",
+        question: "What is the delivered price to Region C?",
+        options: [
+          "₹900",
+          "₹920",
+          "₹950",
+          "₹980"
+        ],
+        answer: 2,
+        reason: "Factory price ₹800 + Region C transportation ₹150 = ₹950."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_044_4",
+        question: "Which pricing issue is most directly involved when the company incorporates transportation differences into the price charged to customers in different locations?",
+        options: [
+          "Geographical pricing",
+          "Psychological pricing",
+          "Kano pricing",
+          "Sealed-bid pricing"
+        ],
+        answer: 0,
+        reason: "Adjusting prices according to geographic location and transportation considerations is geographical pricing."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_044_5",
+        question: "If SteelRoute charges the same delivered price of ₹950 to all three regions, which region would provide the highest contribution before other regional costs?",
+        options: [
+          "Region A",
+          "Region B",
+          "Region C",
+          "All would generate the same contribution"
+        ],
+        answer: 0,
+        reason: "At a common delivered price, Region A has the lowest transportation cost and therefore leaves the highest amount after manufacturing and transportation costs."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // MEDIUM 045
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_MEDIUM_045",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Sensitivity Analysis",
+      "Pricing",
+      "Demand",
+      "Cost",
+      "Risk"
+    ],
+
+    caseText: `
+      <p><strong>DataCore Office Systems</strong> is preparing to launch a new cloud-connected printer for small businesses. Management expects the product to remain in the market for at least three years, but the initial pricing decision is based on uncertain estimates.</p>
+
+      <p>The finance department prepares a base-case model using a selling price of ₹24,000 and expected annual sales of 10,000 units. Variable cost is estimated at ₹15,000 per unit and annual fixed costs at ₹5 crore.</p>
+
+      <p>Before approving the launch, the board asks the finance team to examine how sensitive the expected result is to changes in key assumptions.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>Price</th>
+            <th>Units</th>
+            <th>Variable Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Base case</td><td>₹24,000</td><td>10,000</td><td>₹15,000</td></tr>
+          <tr><td>Lower demand</td><td>₹24,000</td><td>8,000</td><td>₹15,000</td></tr>
+          <tr><td>Price pressure</td><td>₹22,000</td><td>10,000</td><td>₹15,000</td></tr>
+          <tr><td>Cost increase</td><td>₹24,000</td><td>10,000</td><td>₹17,000</td></tr>
+          <tr><td>Combined downside</td><td>₹22,000</td><td>8,000</td><td>₹17,000</td></tr>
+        </tbody>
+      </table>
+
+      <p>Fixed costs remain ₹5 crore in every scenario. The CEO believes the board should focus only on the base case because that represents management's best estimate. The finance director disagrees and says that a pricing decision should be tested against changes in assumptions that could materially affect profitability.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_MEDIUM_045_1",
+        question: "What is the contribution per unit under the base case?",
+        options: [
+          "₹7,000",
+          "₹8,000",
+          "₹9,000",
+          "₹10,000"
+        ],
+        answer: 2,
+        reason: "Contribution per unit = ₹24,000 − ₹15,000 = ₹9,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_045_2",
+        question: "What is the operating profit under the base case?",
+        options: [
+          "₹3 crore",
+          "₹4 crore",
+          "₹5 crore",
+          "₹9 crore"
+        ],
+        answer: 1,
+        reason: "Total contribution = ₹9,000 × 10,000 = ₹9 crore. Less fixed cost ₹5 crore = ₹4 crore operating profit."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_045_3",
+        question: "What is the operating profit under the lower-demand scenario?",
+        options: [
+          "₹1.20 crore",
+          "₹2.20 crore",
+          "₹2.70 crore",
+          "₹3.00 crore"
+        ],
+        answer: 1,
+        reason: "Contribution = (₹24,000 − ₹15,000) × 8,000 = ₹7.20 crore. Less fixed cost ₹5 crore = ₹2.20 crore."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_045_4",
+        question: "Which scenario produces the largest reduction in operating profit compared with the base case?",
+        options: [
+          "Lower demand",
+          "Price pressure",
+          "Cost increase",
+          "Combined downside"
+        ],
+        answer: 3,
+        reason: "Combined downside contribution = (₹22,000 − ₹17,000) × 8,000 = ₹4 crore. Less ₹5 crore fixed cost = ₹1 crore loss. Compared with the ₹4 crore base profit, the deterioration is ₹5 crore, the largest reduction."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_045_5",
+        question: "What is the primary purpose of sensitivity analysis in this case?",
+        options: [
+          "To guarantee the future selling price",
+          "To examine how changes in important assumptions affect the expected financial outcome",
+          "To eliminate all fixed costs",
+          "To ensure that demand never changes"
+        ],
+        answer: 1,
+        reason: "Sensitivity analysis examines how changes in assumptions such as demand, price and cost affect the expected financial outcome."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD 046
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_HARD_046",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Value Based Pricing",
+      "Total Economic Value",
+      "Customer Savings",
+      "Perceived Value",
+      "Pricing Decision"
+    ],
+
+    caseText: `
+      <p><strong>OptiPlant Controls</strong> has developed an automated energy-management controller for large manufacturing plants. The controller continuously adjusts machinery settings to reduce energy consumption while maintaining production levels.</p>
+
+      <p>One potential customer, <strong>Delta Chemicals</strong>, currently uses a conventional control system. The existing system costs ₹4,80,000 per year to operate, excluding the purchase price of the equipment. Delta also incurs approximately ₹3,20,000 per year because of avoidable energy inefficiencies and process interruptions associated with the old system.</p>
+
+      <p>OptiPlant's new controller would increase annual operating expenditure to ₹5,40,000 because of software and monitoring charges. However, technical trials indicate that the new system would reduce the energy and interruption-related cost from ₹3,20,000 to ₹80,000 per year.</p>
+
+      <p>The conventional system would require a replacement investment of ₹18,00,000 if Delta decided not to adopt OptiPlant. OptiPlant proposes an initial purchase price of ₹20,00,000.</p>
+
+      <p>The sales manager believes the customer should compare the economic consequences of the alternatives rather than simply compare the equipment purchase prices. However, the purchasing manager argues that the customer may not value every estimated benefit fully because the savings are based on technical forecasts rather than guaranteed outcomes.</p>
+
+      <p>The negotiation therefore requires the team to distinguish between the economic value of the alternative and the price that the customer may actually perceive as acceptable.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_046_1",
+        question: "What is Delta Chemicals' annual cost under the conventional system, including the stated inefficiency and interruption cost?",
+        options: [
+          "₹4,80,000",
+          "₹6,40,000",
+          "₹7,20,000",
+          "₹8,00,000"
+        ],
+        answer: 3,
+        reason: "Conventional annual cost = ₹4,80,000 operating cost + ₹3,20,000 inefficiency/interruption cost = ₹8,00,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_046_2",
+        question: "What is the annual cost under the OptiPlant system, considering operating expenditure and residual energy/interruption cost?",
+        options: [
+          "₹5,40,000",
+          "₹6,20,000",
+          "₹6,40,000",
+          "₹7,20,000"
+        ],
+        answer: 1,
+        reason: "OptiPlant annual cost = ₹5,40,000 operating expenditure + ₹80,000 residual inefficiency/interruption cost = ₹6,20,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_046_3",
+        question: "What is the annual operating saving from using OptiPlant instead of the conventional system?",
+        options: [
+          "₹1,20,000",
+          "₹1,60,000",
+          "₹1,80,000",
+          "₹2,40,000"
+        ],
+        answer: 2,
+        reason: "Annual saving = ₹8,00,000 − ₹6,20,000 = ₹1,80,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_046_4",
+        question: "Which pricing concept is most directly relevant when OptiPlant uses the customer's next-best alternative and adjusts for economic differences in performance and operating costs?",
+        options: [
+          "Total Economic Value",
+          "Going-rate pricing",
+          "Psychological pricing",
+          "Sealed-bid pricing"
+        ],
+        answer: 0,
+        reason: "TEV begins with the customer's next-best alternative and adjusts for the economic value of differences between the alternatives."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_046_5",
+        question: "Why may OptiPlant's perceived value differ from its calculated economic value?",
+        options: [
+          "Customers always ignore economic savings",
+          "The customer may not fully trust or value forecast savings and may therefore perceive less benefit than the technical calculation indicates",
+          "TEV never considers alternatives",
+          "Perceived value is always equal to manufacturing cost"
+        ],
+        answer: 1,
+        reason: "Calculated economic value depends on quantified benefits, while perceived value depends on the customer's beliefs about the benefits and their willingness to pay."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD 047
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_HARD_047",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Price Adaptation",
+      "Discounts",
+      "Customer Segmentation",
+      "Contribution",
+      "Promotional Pricing"
+    ],
+
+    caseText: `
+      <p><strong>ProServe Office Technologies</strong> sells high-speed document scanners to corporate customers. The standard list price is ₹90,000 per scanner and variable cost is ₹52,000 per scanner.</p>
+
+      <p>The company is considering three different commercial programmes for the coming quarter:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Programme</th>
+            <th>Price per Unit</th>
+            <th>Expected Volume</th>
+            <th>Additional Marketing Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Standard</td><td>₹90,000</td><td>600</td><td>₹0</td></tr>
+          <tr><td>Volume Discount</td><td>₹82,000</td><td>850</td><td>₹8,00,000</td></tr>
+          <tr><td>Promotional Campaign</td><td>₹76,000</td><td>1,100</td><td>₹18,00,000</td></tr>
+        </tbody>
+      </table>
+
+      <p>The sales team argues that the promotional programme is preferable because it generates the highest sales volume. The finance manager says that volume alone is not sufficient because every additional unit contributes less under the lower-price programmes.</p>
+
+      <p>The production manager confirms that the plant can manufacture up to 1,100 units during the quarter without requiring additional fixed manufacturing capacity.</p>
+
+      <p>The marketing department also notes that the discount could attract new corporate accounts. Some of these accounts may purchase additional equipment in future periods, although the future purchases are uncertain and have not been included in the current financial model.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_047_1",
+        question: "What is the contribution per scanner under the Standard programme?",
+        options: [
+          "₹28,000",
+          "₹32,000",
+          "₹38,000",
+          "₹42,000"
+        ],
+        answer: 2,
+        reason: "Contribution = ₹90,000 − ₹52,000 = ₹38,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_047_2",
+        question: "What is the total contribution before additional marketing cost under the Volume Discount programme?",
+        options: [
+          "₹2.25 crore",
+          "₹2.55 crore",
+          "₹2.70 crore",
+          "₹3.23 crore"
+        ],
+        answer: 1,
+        reason: "Contribution per unit = ₹82,000 − ₹52,000 = ₹30,000. Total = ₹30,000 × 850 = ₹2,55,00,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_047_3",
+        question: "What is the net contribution after additional marketing cost under the Promotional Campaign?",
+        options: [
+          "₹2.40 crore",
+          "₹2.46 crore",
+          "₹2.52 crore",
+          "₹2.64 crore"
+        ],
+        answer: 1,
+        reason: "Contribution per unit = ₹76,000 − ₹52,000 = ₹24,000. Total contribution = ₹24,000 × 1,100 = ₹2,64,00,000. Less marketing cost ₹18,00,000 = ₹2,46,00,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_047_4",
+        question: "Which programme produces the highest immediate net contribution based on the information given?",
+        options: [
+          "Standard",
+          "Volume Discount",
+          "Promotional Campaign",
+          "All three are identical"
+        ],
+        answer: 1,
+        reason: "Standard = ₹2.28 crore. Volume Discount = ₹2.55 crore − ₹0.08 crore = ₹2.47 crore. Promotional Campaign = ₹2.64 crore − ₹0.18 crore = ₹2.46 crore. Therefore Volume Discount is highest."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_047_5",
+        question: "Why should possible future purchases from newly acquired customers be kept separate from the immediate programme comparison?",
+        options: [
+          "Because future revenue can never be relevant",
+          "Because the future purchases are uncertain and have not been included in the current financial estimates",
+          "Because discounts cannot attract customers",
+          "Because marketing expenditure is always irrelevant"
+        ],
+        answer: 1,
+        reason: "Potential future purchases may be strategically relevant, but they are uncertain and have not been quantified in the current financial comparison."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD 048
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_HARD_048",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Product Life Cycle",
+      "Price Adaptation",
+      "Competition",
+      "Decline",
+      "Niche Pricing"
+    ],
+
+    caseText: `
+      <p><strong>ThermaShield Industrial Coatings</strong> introduced a specialized heat-resistant coating eight years ago. During the first two years, the product was protected by technical know-how and faced very little direct competition. The company charged a premium price because customers valued the product's unique performance.</p>
+
+      <p>During years three to five, several competitors entered the market. Production volumes increased and manufacturing costs declined because the company became more efficient. ThermaShield reduced its selling price gradually to defend market share.</p>
+
+      <p>During years six and seven, the market became mature. Customers could compare several technically acceptable products, and competitors frequently offered discounts and extended service arrangements.</p>
+
+      <p>In year eight, the market began to decline because newer coating technologies were introduced. Overall industry demand fell by 25%. However, approximately 15% of ThermaShield's customers continued purchasing the original coating because it remained particularly suitable for certain high-temperature applications.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Strategy</th>
+            <th>Expected Volume</th>
+            <th>Price</th>
+            <th>Variable Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Mass-market discount</td><td>18,000</td><td>₹1,050</td><td>₹700</td></tr>
+          <tr><td>Selective niche pricing</td><td>8,000</td><td>₹1,450</td><td>₹700</td></tr>
+          <tr><td>Immediate withdrawal</td><td>0</td><td>—</td><td>—</td></tr>
+        </tbody>
+      </table>
+
+      <p>Annual fixed costs directly associated with maintaining the product line are ₹30,00,000 under either continuing strategy.</p>
+
+      <p>The sales director prefers mass-market discounting because it may preserve volume. The product manager argues that the remaining customers are purchasing because they specifically value the product's unique high-temperature performance and may therefore be less price sensitive.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_048_1",
+        question: "Which stage is most clearly represented by years one and two?",
+        options: [
+          "Introduction",
+          "Maturity",
+          "Decline",
+          "Late growth only"
+        ],
+        answer: 0,
+        reason: "The product was newly introduced, differentiated and faced little competition, which is characteristic of the introduction stage."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_048_2",
+        question: "What is the operating profit under the mass-market discount strategy?",
+        options: [
+          "₹33,00,000",
+          "₹63,00,000",
+          "₹45,00,000",
+          "₹18,00,000"
+        ],
+        answer: 0,
+        reason: "Contribution = (₹1,050 − ₹700) × 18,000 = ₹63,00,000. Less fixed cost ₹30,00,000 = ₹33,00,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_048_3",
+        question: "What is the operating profit under the selective niche pricing strategy?",
+        options: [
+          "₹30,00,000",
+          "₹45,00,000",
+          "₹60,00,000",
+          "₹90,00,000"
+        ],
+        answer: 0,
+        reason: "Contribution = (₹1,450 − ₹700) × 8,000 = ₹60,00,000. Less fixed cost ₹30,00,000 = ₹30,00,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_048_4",
+        question: "Why could selective niche pricing be strategically reasonable despite lower volume?",
+        options: [
+          "Because declining products always require higher prices",
+          "Because the remaining customers specifically value distinctive product performance and may have lower price sensitivity",
+          "Because variable costs become fixed during decline",
+          "Because competitors cannot enter a declining market"
+        ],
+        answer: 1,
+        reason: "Customers who continue buying because of distinctive performance may be less price sensitive, making selective premium pricing potentially viable."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_048_5",
+        question: "Based strictly on the financial figures provided, which continuing strategy produces the higher operating profit?",
+        options: [
+          "Mass-market discount",
+          "Selective niche pricing",
+          "Both produce the same profit",
+          "Immediate withdrawal"
+        ],
+        answer: 0,
+        reason: "Mass-market discount produces ₹33 lakh operating profit, while selective niche pricing produces ₹30 lakh. Therefore mass-market discount is financially higher based on the stated figures."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD 049
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_HARD_049",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Price Discrimination",
+      "Segment Pricing",
+      "Willingness to Pay",
+      "Arbitrage",
+      "Contribution"
+    ],
+
+    caseText: `
+      <p><strong>SkillBridge Certification Institute</strong> offers an online professional certification programme. The course content, examinations and digital learning platform are substantially identical for all customers. Management has identified three customer groups with different willingness to pay.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Customer Segment</th>
+            <th>Potential Customers</th>
+            <th>Maximum Willingness to Pay</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Corporate-sponsored employees</td><td>800</td><td>₹25,000</td></tr>
+          <tr><td>Self-funded professionals</td><td>1,500</td><td>₹17,000</td></tr>
+          <tr><td>Students</td><td>2,500</td><td>₹9,000</td></tr>
+        </tbody>
+      </table>
+
+      <p>The variable cost of serving one additional student is ₹2,000. The company has sufficient digital capacity to serve the entire potential market.</p>
+
+      <p>The marketing team proposes prices of ₹22,000 for corporate-sponsored employees, ₹15,000 for professionals and ₹8,000 for students.</p>
+
+      <p>However, the legal and technology teams discover that professional customers could technically share their login credentials with students unless additional controls are introduced. Corporate licences can be linked to employer email addresses, while student access can be restricted using identity verification.</p>
+
+      <p>The finance director wants to determine whether the proposed prices generate more contribution than a single uniform price. The board also wants to understand why preventing transfer between segments is important.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_049_1",
+        question: "What is the contribution per corporate customer at the proposed price?",
+        options: [
+          "₹18,000",
+          "₹20,000",
+          "₹22,000",
+          "₹24,000"
+        ],
+        answer: 1,
+        reason: "Contribution = ₹22,000 − ₹2,000 = ₹20,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_049_2",
+        question: "What is the total contribution from all three segments under the proposed differential pricing?",
+        options: [
+          "₹4.75 crore",
+          "₹5.05 crore",
+          "₹5.25 crore",
+          "₹5.50 crore"
+        ],
+        answer: 1,
+        reason: "Corporate = (₹22,000−₹2,000) × 800 = ₹1.60 crore. Professionals = (₹15,000−₹2,000) × 1,500 = ₹1.95 crore. Students = (₹8,000−₹2,000) × 2,500 = ₹1.50 crore. Total = ₹5.05 crore."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_049_3",
+        question: "If a single uniform price of ₹15,000 were charged, which segments would be willing to purchase based strictly on the stated maximum willingness to pay?",
+        options: [
+          "Corporate only",
+          "Corporate and professionals",
+          "Professionals and students",
+          "All three segments"
+        ],
+        answer: 1,
+        reason: "Corporate customers can pay up to ₹25,000 and professionals up to ₹17,000. Students have a maximum willingness to pay of ₹9,000 and would not purchase at ₹15,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_049_4",
+        question: "What is the main reason for restricting sharing between professional and student accounts?",
+        options: [
+          "To increase variable cost",
+          "To prevent lower-priced access from being transferred to customers who would otherwise pay a higher price",
+          "To make the course content different",
+          "To eliminate corporate customers"
+        ],
+        answer: 1,
+        reason: "Restrictions help prevent higher-paying customers from obtaining lower-priced access through another segment."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_049_5",
+        question: "Which condition is essential for the proposed price discrimination strategy to remain sustainable?",
+        options: [
+          "Customers must have identical willingness to pay",
+          "Resale or arbitrage between segments must be sufficiently limited",
+          "The company must have no variable costs",
+          "All segments must be charged the same price"
+        ],
+        answer: 1,
+        reason: "Effective segmentation and sufficient restrictions on resale or arbitrage are important for sustaining differential prices."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // HARD 050
+  // ============================================================
+
+  {
+    case_id: "SRM_C6_HARD_050",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Relevant Cost",
+      "Special Order Pricing",
+      "Opportunity Cost",
+      "Capacity Constraint",
+      "Marginal Pricing"
+    ],
+
+    caseText: `
+      <p><strong>PrecisionMed Components</strong> manufactures specialized metal housings used in diagnostic equipment. The company normally produces 10,000 units per month and sells them to established customers at ₹2,800 each.</p>
+
+      <p>During the current month, a new customer offers to purchase an additional 3,000 units at ₹2,100 each. The production manager initially rejects the order because the normal full manufacturing cost is ₹2,350 per unit.</p>
+
+      <p>The finance department investigates further and discovers that the factory has only 2,000 units of idle capacity. Accepting the full order would therefore require the company to reduce production of existing customer orders by 1,000 units.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Cost Item</th>
+            <th>Per Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Direct material</td><td>₹900</td></tr>
+          <tr><td>Direct labour</td><td>₹500</td></tr>
+          <tr><td>Variable overhead</td><td>₹250</td></tr>
+          <tr><td>Special packaging for new customer</td><td>₹100</td></tr>
+          <tr><td>Allocated fixed manufacturing cost</td><td>₹600</td></tr>
+        </tbody>
+      </table>
+
+      <p>The finance manager explains that the first 2,000 units of the new order can be produced using idle capacity. However, producing the remaining 1,000 units would displace regular sales.</p>
+
+      <p>For existing customers, the selling price is ₹2,800 and the variable production cost is ₹1,650 per unit. The company cannot reduce the existing customer price without damaging contractual relationships.</p>
+
+      <p>The new customer's special packaging cost of ₹100 per unit applies to all 3,000 units. The allocated fixed manufacturing cost will not change.</p>
+
+      <p>The managing director asks whether the entire order should be accepted at ₹2,100, whether only part of the order should be accepted, or whether the order should be rejected.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SRM_C6_HARD_050_1",
+        question: "What is the incremental production and packaging cost per unit of the new order, excluding opportunity cost?",
+        options: [
+          "₹1,650",
+          "₹1,750",
+          "₹1,850",
+          "₹2,350"
+        ],
+        answer: 1,
+        reason: "Incremental cost = ₹900 material + ₹500 labour + ₹250 variable overhead + ₹100 special packaging = ₹1,750. Allocated fixed manufacturing cost is excluded."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_050_2",
+        question: "How much contribution is generated per unit of the new order before considering any opportunity cost?",
+        options: [
+          "₹250",
+          "₹300",
+          "₹350",
+          "₹450"
+        ],
+        answer: 2,
+        reason: "Contribution = ₹2,100 selling price − ₹1,750 incremental cost = ₹350 per unit."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_050_3",
+        question: "What is the contribution lost for each existing customer unit displaced by accepting the final 1,000 units of the new order?",
+        options: [
+          "₹950",
+          "₹1,050",
+          "₹1,150",
+          "₹1,250"
+        ],
+        answer: 2,
+        reason: "Existing customer contribution = ₹2,800 − ₹1,650 = ₹1,150 per displaced unit."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_050_4",
+        question: "What is the relevant cost of producing each of the final 1,000 new-order units that displace regular sales?",
+        options: [
+          "₹1,750",
+          "₹2,350",
+          "₹2,900",
+          "₹3,000"
+        ],
+        answer: 2,
+        reason: "Relevant cost = incremental cost ₹1,750 + opportunity cost ₹1,150 = ₹2,900 per unit."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_050_5",
+        question: "Based strictly on short-term financial contribution, what should PrecisionMed do with the 3,000-unit order at ₹2,100?",
+        options: [
+          "Accept all 3,000 units",
+          "Accept only 2,000 units",
+          "Reject the entire order",
+          "Accept only the final 1,000 units"
+        ],
+        answer: 1,
+        reason: "The first 2,000 units use idle capacity and generate ₹350 contribution each. The final 1,000 units would displace existing business and have a relevant cost of ₹2,900, exceeding the ₹2,100 offer. Therefore only 2,000 units should be accepted, assuming the order can be split."
+      }
+    ]
+  },
+
+  // =========================================================
+  // MEDIUM 051 — COST BASED PRICING
+  // =========================================================
+  {
+    case_id: "SRM_C6_MEDIUM_051",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Cost Based Pricing",
+      "Markup Pricing",
+      "Contribution",
+      "Pricing Decision"
+    ],
+
+    caseText: `
+      <p><strong>Ardent Homeware Limited</strong> manufactures premium kitchen storage systems for modern apartments. The company sells its products through its own online platform and selected retail distributors. During the previous year, management used a simple cost-plus pricing system. However, the finance team observed that the company had started allocating a larger share of fixed manufacturing overhead to individual products because production volumes had fallen.</p>
+
+      <p>The company's flagship product, the <strong>ModuBox Pro</strong>, requires variable manufacturing cost of ₹2,800 per unit. Variable packing and dispatch expenses are ₹200 per unit. Therefore, the total variable cost directly associated with each unit is ₹3,000.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Variable manufacturing cost per unit</td><td>₹2,800</td></tr>
+          <tr><td>Variable packing and dispatch</td><td>₹200</td></tr>
+          <tr><td>Annual fixed manufacturing overhead</td><td>₹1.80 crore</td></tr>
+          <tr><td>Annual fixed selling and administration cost</td><td>₹70 lakh</td></tr>
+          <tr><td>Expected annual sales volume</td><td>10,000 units</td></tr>
+        </tbody>
+      </table>
+
+      <p>The sales department proposed a market price of ₹4,200 per unit after studying competing kitchen-storage brands. The production manager, however, suggested that the company should first recover all fixed costs through the product and then add a 25% markup on full cost.</p>
+
+      <p>The finance manager warned the board that allocating fixed costs mechanically to each unit could make the product appear more expensive than its incremental economics suggest. She therefore asked management to compare the different approaches before finalising the price.</p>
+
+      <p>The company has sufficient unused production capacity to manufacture the expected 10,000 units. The selling price will not affect the fixed cost in the short run.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_051_1",
+        question: "What is the total variable cost per unit of ModuBox Pro?",
+        options: [
+          "₹2,800",
+          "₹3,000",
+          "₹3,500",
+          "₹4,200"
+        ],
+        answer: 1,
+        reason: "Variable manufacturing cost = ₹2,800 and variable packing/dispatch = ₹200. Total variable cost = ₹3,000 per unit."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_051_2",
+        question: "What is the total annual fixed cost expected to be incurred by the company?",
+        options: [
+          "₹1.80 crore",
+          "₹2.00 crore",
+          "₹2.50 crore",
+          "₹3.00 crore"
+        ],
+        answer: 2,
+        reason: "Fixed manufacturing overhead ₹1.80 crore + fixed selling and administration cost ₹0.70 crore = ₹2.50 crore."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_051_3",
+        question: "If the company sells 10,000 units at ₹4,200 each, what is the total contribution before fixed costs?",
+        options: [
+          "₹1.20 crore",
+          "₹1.50 crore",
+          "₹1.80 crore",
+          "₹2.50 crore"
+        ],
+        answer: 0,
+        reason: "Contribution per unit = ₹4,200 − ₹3,000 = ₹1,200. Total contribution = ₹1,200 × 10,000 = ₹1.20 crore."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_051_4",
+        question: "Which pricing approach best illustrates full-cost-plus pricing?",
+        options: [
+          "Ignoring fixed costs and pricing only on variable cost",
+          "Taking estimated full cost per unit and adding a predetermined markup",
+          "Matching the lowest competitor's price",
+          "Charging the maximum amount customers are willing to pay"
+        ],
+        answer: 1,
+        reason: "Under full-cost-plus pricing, estimated full cost per unit is determined and a predetermined markup is added."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_051_5",
+        question: "Why did the finance manager caution against mechanically allocating fixed overhead to the product?",
+        options: [
+          "Fixed costs can never be included in pricing decisions",
+          "Allocated fixed costs may distort the incremental economics and apparent cost of the product",
+          "Variable costs are irrelevant to pricing",
+          "Market prices are always lower than full cost"
+        ],
+        answer: 1,
+        reason: "Arbitrary allocation of fixed overhead can distort product-level costs and may lead to inappropriate pricing decisions, particularly when spare capacity exists."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 052 — PENETRATION PRICING
+  // =========================================================
+  {
+    case_id: "SRM_C6_MEDIUM_052",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Penetration Pricing",
+      "New Product Pricing",
+      "Competition",
+      "Market Entry"
+    ],
+
+    caseText: `
+      <p><strong>VoltEdge Mobility</strong> is preparing to launch a compact electric scooter in a highly competitive urban market. The company has developed a battery-management system that provides reasonable range but does not provide a dramatic technological advantage over established competitors.</p>
+
+      <p>Market research showed that customers are highly price-sensitive and that several established brands already offer similar scooters.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Information</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Expected manufacturing and variable selling cost</td><td>₹58,000 per scooter</td></tr>
+          <tr><td>Current leading competitor prices</td><td>₹72,000–₹78,000</td></tr>
+          <tr><td>Initial target market</td><td>Highly price-sensitive urban commuters</td></tr>
+          <tr><td>Brand recognition</td><td>Low</td></tr>
+          <tr><td>Product differentiation</td><td>Moderate</td></tr>
+          <tr><td>Available production capacity</td><td>30,000 scooters annually</td></tr>
+        </tbody>
+      </table>
+
+      <p>The marketing department proposed an introductory price of ₹64,999 to encourage trial and rapidly build market share. The finance department preferred ₹74,999, arguing that the company could recover development expenditure more quickly at a higher price.</p>
+
+      <p>The CEO noted that the company's long-term objective was to establish a large customer base. The company could reduce manufacturing cost after achieving higher production volumes because of procurement efficiencies and improved utilisation.</p>
+
+      <p>Management therefore decided that the introductory price should be evaluated not merely by the profit earned on the first few units but also by the strategic objective of market entry and future scale.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_052_1",
+        question: "Which pricing strategy is most consistent with VoltEdge's objective of rapidly building market share among price-sensitive customers?",
+        options: [
+          "Penetration pricing",
+          "Price skimming",
+          "Prestige pricing",
+          "Sealed-bid pricing"
+        ],
+        answer: 0,
+        reason: "Penetration pricing involves setting a relatively low introductory price to encourage adoption and rapidly build market share."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_052_2",
+        question: "What is the contribution per scooter if the introductory price is ₹64,999?",
+        options: [
+          "₹5,999",
+          "₹6,999",
+          "₹7,999",
+          "₹8,999"
+        ],
+        answer: 1,
+        reason: "Contribution = ₹64,999 − ₹58,000 = ₹6,999 per scooter."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_052_3",
+        question: "Which fact most strongly supports penetration pricing in this case?",
+        options: [
+          "The company has low brand recognition and customers are price-sensitive",
+          "The company has a patented technology with no substitute",
+          "Customers are completely insensitive to price",
+          "Production capacity is extremely restricted"
+        ],
+        answer: 0,
+        reason: "Low brand recognition, price-sensitive customers and established competitors support a market-entry strategy based on relatively low pricing."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_052_4",
+        question: "If VoltEdge instead charged ₹74,999, what would be the contribution per scooter?",
+        options: [
+          "₹12,999",
+          "₹14,999",
+          "₹16,999",
+          "₹18,999"
+        ],
+        answer: 2,
+        reason: "₹74,999 − ₹58,000 = ₹16,999 contribution per scooter."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_052_5",
+        question: "Why might a lower introductory price be strategically justified even though the contribution per unit is lower?",
+        options: [
+          "It can encourage adoption, increase volume and help the company achieve scale",
+          "Lower prices automatically eliminate all fixed costs",
+          "It guarantees that competitors will leave the market",
+          "It makes variable cost irrelevant"
+        ],
+        answer: 0,
+        reason: "Penetration pricing can sacrifice some initial contribution per unit to encourage demand, build market share and achieve scale economies."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 053 — PROMOTIONAL PRICING
+  // =========================================================
+  {
+    case_id: "SRM_C6_MEDIUM_053",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Promotional Pricing",
+      "Discounts",
+      "Price Adaptation",
+      "Contribution"
+    ],
+
+    caseText: `
+      <p><strong>PureSip Commercial Systems</strong> sells water purification systems to small restaurants. Its normal commercial package is priced at ₹1,20,000. The variable cost of manufacturing and installation is ₹82,000 per system. The company normally sells approximately 900 systems every quarter.</p>
+
+      <p>To increase sales before the end of the financial year, the sales team proposed a three-month promotional campaign. Customers placing orders during the campaign would receive a 12% discount on the normal selling price. The marketing team expects the discount to increase quarterly sales from 900 systems to 1,250 systems.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Normal</th>
+            <th>Promotion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Selling price</td><td>₹1,20,000</td><td>12% discount</td></tr>
+          <tr><td>Variable cost</td><td>₹82,000</td><td>₹82,000</td></tr>
+          <tr><td>Expected quarterly volume</td><td>900 units</td><td>1,250 units</td></tr>
+          <tr><td>Additional promotional expenditure</td><td>Nil</td><td>₹18 lakh</td></tr>
+        </tbody>
+      </table>
+
+      <p>The marketing head argued that the increase in units sold would compensate for the lower contribution per unit. The finance manager disagreed and asked the team to compare total contribution before and after the promotion after considering the additional promotional expenditure.</p>
+
+      <p>The company has sufficient production capacity to manufacture the additional units and therefore no additional fixed production facility is required for the campaign.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_053_1",
+        question: "What is the promotional selling price per system after a 12% discount on ₹1,20,000?",
+        options: [
+          "₹1,03,600",
+          "₹1,05,600",
+          "₹1,08,000",
+          "₹1,10,400"
+        ],
+        answer: 1,
+        reason: "Discount = 12% × ₹1,20,000 = ₹14,400. Promotional price = ₹1,20,000 − ₹14,400 = ₹1,05,600."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_053_2",
+        question: "What is the normal contribution per system?",
+        options: [
+          "₹28,000",
+          "₹38,000",
+          "₹40,000",
+          "₹48,000"
+        ],
+        answer: 1,
+        reason: "Normal contribution = ₹1,20,000 − ₹82,000 = ₹38,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_053_3",
+        question: "What is the promotional contribution per system?",
+        options: [
+          "₹21,600",
+          "₹23,600",
+          "₹24,000",
+          "₹26,600"
+        ],
+        answer: 1,
+        reason: "Promotional contribution = ₹1,05,600 − ₹82,000 = ₹23,600."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_053_4",
+        question: "What is the normal quarterly contribution at 900 systems?",
+        options: [
+          "₹2.82 crore",
+          "₹3.24 crore",
+          "₹3.42 crore",
+          "₹3.80 crore"
+        ],
+        answer: 2,
+        reason: "900 × ₹38,000 = ₹3,42,00,000 = ₹3.42 crore."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_053_5",
+        question: "What is the net contribution from the promotional scenario after considering the additional promotional expenditure?",
+        options: [
+          "₹2.59 crore",
+          "₹2.77 crore",
+          "₹2.95 crore",
+          "₹3.13 crore"
+        ],
+        answer: 1,
+        reason: "Promotional contribution = 1,250 × ₹23,600 = ₹2.95 crore. Less promotional expenditure ₹18 lakh = ₹2.77 crore."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 054 — PSYCHOLOGICAL PRICING
+  // =========================================================
+  {
+    case_id: "SRM_C6_MEDIUM_054",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Psychological Pricing",
+      "Customer Perception",
+      "Price Presentation",
+      "Pricing Strategy"
+    ],
+
+    caseText: `
+      <p><strong>CasaForma Living</strong> sells modular home-office furniture through an online platform. Management noticed that customers did not always compare products solely on manufacturing cost or technical specifications. The way the selling price was presented also appeared to influence customer response.</p>
+
+      <p>The company tested four prices for a compact executive desk. The desk had the same specifications in all tests and the variable cost remained ₹6,800 per unit.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Price Test</th>
+            <th>Price</th>
+            <th>Expected Units Sold</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>A</td><td>₹7,999</td><td>9,000</td></tr>
+          <tr><td>B</td><td>₹8,000</td><td>8,000</td></tr>
+          <tr><td>C</td><td>₹8,499</td><td>7,500</td></tr>
+          <tr><td>D</td><td>₹8,999</td><td>6,500</td></tr>
+        </tbody>
+      </table>
+
+      <p>The marketing manager believed that ₹7,999 could create a perception that the desk belonged to a lower psychological price band than ₹8,000. The finance manager nevertheless wanted to determine whether the price that appeared psychologically attractive would also generate the highest total contribution.</p>
+
+      <p>There are no additional fixed costs associated with selecting any one of these price points. Therefore, the decision is based on contribution under the expected sales volumes.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_054_1",
+        question: "What is the contribution per unit at ₹7,999?",
+        options: [
+          "₹1,099",
+          "₹1,199",
+          "₹1,299",
+          "₹1,499"
+        ],
+        answer: 1,
+        reason: "₹7,999 − ₹6,800 = ₹1,199."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_054_2",
+        question: "What is the total contribution under Price A?",
+        options: [
+          "₹1,07,91,000",
+          "₹1,08,00,000",
+          "₹1,10,00,000",
+          "₹1,19,91,000"
+        ],
+        answer: 0,
+        reason: "₹1,199 × 9,000 = ₹1,07,91,000."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_054_3",
+        question: "What is the contribution per unit at ₹8,999?",
+        options: [
+          "₹1,999",
+          "₹2,099",
+          "₹2,199",
+          "₹2,299"
+        ],
+        answer: 2,
+        reason: "₹8,999 − ₹6,800 = ₹2,199."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_054_4",
+        question: "What is the total contribution under Price D?",
+        options: [
+          "₹1,29,93,500",
+          "₹1,39,93,500",
+          "₹1,42,93,500",
+          "₹1,49,93,500"
+        ],
+        answer: 2,
+        reason: "₹2,199 × 6,500 = ₹1,42,93,500."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_054_5",
+        question: "Which pricing concept is primarily illustrated by the proposed use of ₹7,999 rather than ₹8,000?",
+        options: [
+          "Going-rate pricing",
+          "Psychological pricing",
+          "Sealed-bid pricing",
+          "Target-return pricing"
+        ],
+        answer: 1,
+        reason: "Using prices such as ₹7,999 to influence customer perception is an example of psychological pricing."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 055 — GOING RATE PRICING
+  // =========================================================
+  {
+    case_id: "SRM_C6_MEDIUM_055",
+    difficulty: "medium",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Going Rate Pricing",
+      "Competition Based Pricing",
+      "Homogeneous Product",
+      "Relevant Cost"
+    ],
+
+    caseText: `
+      <p><strong>NorthStar Industrial Oxygen</strong> supplies industrial oxygen cylinders to fabrication units. The product is largely homogeneous and customers generally compare quotations from several suppliers before placing orders.</p>
+
+      <p>NorthStar's sales manager collected the following quotations from competing suppliers for a similar contract.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Supplier</th>
+            <th>Quoted Price per Cylinder</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Supplier A</td><td>₹1,180</td></tr>
+          <tr><td>Supplier B</td><td>₹1,210</td></tr>
+          <tr><td>Supplier C</td><td>₹1,195</td></tr>
+          <tr><td>Supplier D</td><td>₹1,225</td></tr>
+        </tbody>
+      </table>
+
+      <p>NorthStar's variable production cost is ₹890 per cylinder. Additional inspection and contract-specific delivery expenses would be ₹45 per cylinder. The company has sufficient spare capacity for the order of 6,000 cylinders.</p>
+
+      <p>The purchasing customer has indicated that it is primarily interested in competitive pricing because the cylinders supplied by all approved vendors meet the required technical specifications.</p>
+
+      <p>The sales manager therefore believes that the prevailing market price should be the starting point for NorthStar's quotation, while the finance manager insists that the company should ensure that the quotation provides a positive contribution over relevant costs.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_MEDIUM_055_1",
+        question: "What is the average price quoted by the four competing suppliers?",
+        options: [
+          "₹1,190",
+          "₹1,197.50",
+          "₹1,202.50",
+          "₹1,210"
+        ],
+        answer: 2,
+        reason: "(₹1,180 + ₹1,210 + ₹1,195 + ₹1,225) ÷ 4 = ₹1,202.50."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_055_2",
+        question: "What is NorthStar's relevant cost per cylinder for the contract?",
+        options: [
+          "₹890",
+          "₹935",
+          "₹1,180",
+          "₹1,202.50"
+        ],
+        answer: 1,
+        reason: "Relevant cost = ₹890 variable production cost + ₹45 additional inspection/delivery = ₹935."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_055_3",
+        question: "Which pricing method is most directly applicable given the homogeneous nature of the product?",
+        options: [
+          "Value-based pricing",
+          "Going-rate pricing",
+          "Price skimming",
+          "Psychological pricing"
+        ],
+        answer: 1,
+        reason: "Going-rate pricing is particularly relevant where products are homogeneous and customers compare market prices."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_055_4",
+        question: "If NorthStar quotes ₹1,190 per cylinder, what is its contribution per cylinder?",
+        options: [
+          "₹245",
+          "₹255",
+          "₹265",
+          "₹295"
+        ],
+        answer: 1,
+        reason: "₹1,190 − ₹935 = ₹255."
+      },
+
+      {
+        question_id: "SRM_C6_MEDIUM_055_5",
+        question: "At ₹1,190 per cylinder, what would be the total contribution from 6,000 cylinders?",
+        options: [
+          "₹12.30 lakh",
+          "₹13.50 lakh",
+          "₹15.30 lakh",
+          "₹16.20 lakh"
+        ],
+        answer: 2,
+        reason: "₹255 × 6,000 = ₹15,30,000 = ₹15.30 lakh."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 056 — VALUE BASED PRICING
+  // =========================================================
+  {
+    case_id: "SRM_C6_HARD_056",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Value Based Pricing",
+      "Total Economic Value",
+      "Perceived Value",
+      "Customer Savings"
+    ],
+
+    caseText: `
+      <p><strong>OptiGrid Energy Controls</strong> manufactures an intelligent energy-management system for large commercial buildings. The system continuously monitors electricity consumption and automatically shifts certain non-critical loads away from expensive peak periods.</p>
+
+      <p>A major customer, <strong>HarborSquare Properties</strong>, currently uses a conventional control system. The finance team prepared the following annual cost comparison.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Cost Component</th>
+            <th>Conventional System</th>
+            <th>OptiGrid System</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Annual electricity-related operating cost</td><td>₹32 lakh</td><td>₹27 lakh</td></tr>
+          <tr><td>Annual maintenance cost</td><td>₹4.5 lakh</td><td>₹3 lakh</td></tr>
+          <tr><td>Annual cost of avoidable peak-load interruptions</td><td>₹6 lakh</td><td>₹1.5 lakh</td></tr>
+        </tbody>
+      </table>
+
+      <p>The conventional system could be purchased and installed for ₹40 lakh. OptiGrid requires ₹46 lakh upfront. The customer expects the new system to remain operational for several years, but management has not yet agreed on the appropriate economic life or discount rate.</p>
+
+      <p>The OptiGrid sales team argued that simply adding a markup to its manufacturing cost would ignore the customer's economic benefit. It proposed establishing the customer's alternative cost first and then determining the additional value generated by OptiGrid.</p>
+
+      <p>HarborSquare, however, warned that the theoretical economic benefit would not automatically become the selling price. The customer's willingness to pay and its perception of the benefit would also influence the final price.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_056_1",
+        question: "What is the annual cost of the conventional system based on the information provided?",
+        options: [
+          "₹36.5 lakh",
+          "₹40 lakh",
+          "₹42.5 lakh",
+          "₹46 lakh"
+        ],
+        answer: 2,
+        reason: "₹32 lakh + ₹4.5 lakh + ₹6 lakh = ₹42.5 lakh."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_056_2",
+        question: "What is the annual cost of OptiGrid based on the stated recurring costs?",
+        options: [
+          "₹27 lakh",
+          "₹30 lakh",
+          "₹31.5 lakh",
+          "₹34.5 lakh"
+        ],
+        answer: 2,
+        reason: "₹27 lakh + ₹3 lakh + ₹1.5 lakh = ₹31.5 lakh."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_056_3",
+        question: "What is the annual economic saving generated by OptiGrid compared with the conventional system?",
+        options: [
+          "₹9 lakh",
+          "₹10 lakh",
+          "₹11 lakh",
+          "₹12 lakh"
+        ],
+        answer: 2,
+        reason: "Annual saving = ₹42.5 lakh − ₹31.5 lakh = ₹11 lakh."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_056_4",
+        question: "Which concept begins with the customer's next-best alternative and adds the value of the supplier's performance differential?",
+        options: [
+          "Cost-plus pricing",
+          "Total Economic Value",
+          "Going-rate pricing",
+          "Psychological pricing"
+        ],
+        answer: 1,
+        reason: "Total Economic Value (TEV) is based on the customer's next-best alternative plus the economic value of the performance differential."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_056_5",
+        question: "Why might OptiGrid's theoretical economic value not equal its final selling price?",
+        options: [
+          "Because value-based pricing considers customer perception and willingness to pay",
+          "Because fixed costs are always excluded from pricing",
+          "Because variable costs determine every market price",
+          "Because competitors cannot affect pricing"
+        ],
+        answer: 0,
+        reason: "Economic value provides a reference point, but final pricing can be influenced by perceived value and the customer's willingness to pay."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 057 — PRICE DISCRIMINATION
+  // =========================================================
+  {
+    case_id: "SRM_C6_HARD_057",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Price Discrimination",
+      "Customer Segmentation",
+      "Arbitrage",
+      "Contribution"
+    ],
+
+    caseText: `
+      <p><strong>ProLearn Analytics Academy</strong> provides an intensive data-analytics certification programme. The same core academic programme is delivered to three broad customer segments: corporate employees, working professionals and full-time students.</p>
+
+      <p>Market research suggests that the three segments differ substantially in willingness to pay. Corporate employers often purchase training to improve employee productivity and have a higher budget per participant. Working professionals are willing to pay a moderate amount because they expect the course to improve their career prospects. Students are substantially more price-sensitive.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Segment</th>
+            <th>Potential Customers</th>
+            <th>Maximum Willingness to Pay</th>
+            <th>Variable Cost</th>
+            <th>Proposed Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Corporate</td><td>600</td><td>₹30,000</td><td>₹5,000</td><td>₹26,000</td></tr>
+          <tr><td>Professionals</td><td>1,200</td><td>₹20,000</td><td>₹5,000</td><td>₹17,000</td></tr>
+          <tr><td>Students</td><td>2,000</td><td>₹10,000</td><td>₹5,000</td><td>₹8,000</td></tr>
+        </tbody>
+      </table>
+
+      <p>Management wants to charge different prices because a single price may either leave significant value with high-value customers or make the programme unaffordable to price-sensitive students.</p>
+
+      <p>However, the academy has a concern: if students can freely purchase corporate-priced seats and transfer them to corporate participants, or if corporate participants can purchase student-priced seats, the pricing structure could collapse. Therefore, the company is considering identity verification, non-transferable registrations and separate administrative procedures for each segment.</p>
+
+      <p>The board wants to know whether the proposed segmentation can create additional contribution without changing the underlying course.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_057_1",
+        question: "What is the contribution per corporate participant at the proposed price?",
+        options: [
+          "₹20,000",
+          "₹21,000",
+          "₹25,000",
+          "₹26,000"
+        ],
+        answer: 1,
+        reason: "₹26,000 − ₹5,000 = ₹21,000."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_057_2",
+        question: "What is the total contribution from the professional segment if all 1,200 customers purchase at ₹17,000?",
+        options: [
+          "₹1.20 crore",
+          "₹1.44 crore",
+          "₹1.50 crore",
+          "₹2.04 crore"
+        ],
+        answer: 1,
+        reason: "Contribution per professional = ₹17,000 − ₹5,000 = ₹12,000. Total = 1,200 × ₹12,000 = ₹1.44 crore."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_057_3",
+        question: "What is the total contribution from all three segments if all potential customers purchase?",
+        options: [
+          "₹3.10 crore",
+          "₹3.30 crore",
+          "₹3.50 crore",
+          "₹3.74 crore"
+        ],
+        answer: 1,
+        reason: "Corporate contribution = 600 × ₹21,000 = ₹1.26 crore. Professional contribution = ₹1.44 crore. Student contribution = 2,000 × ₹3,000 = ₹0.60 crore. Total = ₹3.30 crore."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_057_4",
+        question: "Which condition is particularly important for successful price discrimination?",
+        options: [
+          "Customers must be unable or unlikely to arbitrage between segments",
+          "All customers must have identical willingness to pay",
+          "The company must charge every customer the same price",
+          "The product must always have zero variable cost"
+        ],
+        answer: 0,
+        reason: "Price discrimination is difficult to sustain if customers can easily arbitrage by purchasing at a lower segment price and transferring or reselling it."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_057_5",
+        question: "Which measure would most directly protect the segmented pricing structure described in the case?",
+        options: [
+          "Allow unrestricted transfer of seats",
+          "Remove customer identification",
+          "Use identity verification and non-transferable registrations",
+          "Publish only one price for all customers"
+        ],
+        answer: 2,
+        reason: "Identity verification and non-transferability reduce the possibility of customers shifting between price segments."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 058 — PRODUCT LIFE CYCLE
+  // =========================================================
+  {
+    case_id: "SRM_C6_HARD_058",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Product Life Cycle",
+      "Price Adaptation",
+      "Competition",
+      "Decline Stage"
+    ],
+
+    caseText: `
+      <p><strong>ThermoPure Filtration Technologies</strong> launched a specialised industrial filtration cartridge eight years ago. Management has tracked the product through different stages of its life cycle and has changed pricing as competitors entered the market.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Life-Cycle Stage</th>
+            <th>Market Situation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1–2</td><td>Introduction</td><td>Limited competition and high customer uncertainty</td></tr>
+          <tr><td>3–5</td><td>Growth</td><td>Demand increasing and new competitors entering</td></tr>
+          <tr><td>6–7</td><td>Maturity</td><td>Many competing products and relatively stable demand</td></tr>
+          <tr><td>8</td><td>Decline</td><td>Substitute technology becoming increasingly attractive</td></tr>
+        </tbody>
+      </table>
+
+      <p>At the beginning of Year 8, the company must decide whether to maintain the existing mass-market price or reposition the product toward a smaller group of customers who value compatibility with ThermoPure's older equipment.</p>
+
+      <p>The current mass-market price is ₹2,400 per cartridge and the variable cost is ₹1,450. Expected annual demand at this price is 16,000 cartridges. A niche strategy would allow the company to charge ₹3,100 per cartridge, but annual demand would fall to 7,000 cartridges.</p>
+
+      <p>The company has annual fixed costs of ₹80 lakh relating to the product. Management believes that these fixed costs will remain unchanged under either strategy for the current year.</p>
+
+      <p>The sales director argues that the higher niche price is attractive because it increases margin per unit. The finance director insists that management should compare total contribution and profit rather than looking only at unit margin.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_058_1",
+        question: "Which life-cycle stage is the product in during Year 8?",
+        options: [
+          "Introduction",
+          "Growth",
+          "Maturity",
+          "Decline"
+        ],
+        answer: 3,
+        reason: "The case identifies Year 8 as the decline stage because substitute technology is becoming increasingly attractive."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_058_2",
+        question: "What is the contribution per cartridge under the mass-market strategy?",
+        options: [
+          "₹850",
+          "₹950",
+          "₹1,050",
+          "₹1,150"
+        ],
+        answer: 1,
+        reason: "₹2,400 − ₹1,450 = ₹950."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_058_3",
+        question: "What is the total contribution under the mass-market strategy?",
+        options: [
+          "₹1.42 crore",
+          "₹1.52 crore",
+          "₹1.60 crore",
+          "₹1.72 crore"
+        ],
+        answer: 1,
+        reason: "₹950 × 16,000 = ₹1,52,00,000 = ₹1.52 crore."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_058_4",
+        question: "What is the profit under the niche strategy?",
+        options: [
+          "₹35.5 lakh",
+          "₹45.5 lakh",
+          "₹55.5 lakh",
+          "₹65.5 lakh"
+        ],
+        answer: 0,
+        reason: "Niche contribution = (₹3,100 − ₹1,450) × 7,000 = ₹1,650 × 7,000 = ₹1.155 crore. Less fixed cost ₹80 lakh = ₹35.5 lakh profit."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_058_5",
+        question: "Based on the information provided, which strategy gives the higher current-year profit?",
+        options: [
+          "Mass-market strategy",
+          "Niche strategy",
+          "Both produce the same profit",
+          "Neither can produce a positive profit"
+        ],
+        answer: 0,
+        reason: "Mass-market profit = ₹1.52 crore − ₹0.80 crore = ₹72 lakh. Niche profit = ₹35.5 lakh. Therefore, mass-market pricing gives the higher current-year profit."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 059 — SPECIAL ORDER & OPPORTUNITY COST
+  // =========================================================
+  {
+    case_id: "SRM_C6_HARD_059",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Relevant Cost",
+      "Special Order",
+      "Capacity Constraint",
+      "Opportunity Cost"
+    ],
+
+    caseText: `
+      <p><strong>AxisMed Components</strong> manufactures precision metal housings for medical equipment. Its regular customers currently purchase 18,000 units per month at ₹3,200 each. Variable production cost is ₹1,900 per unit.</p>
+
+      <p>A foreign distributor has approached the company with a special order for 4,000 units at ₹2,300 each. The distributor requires special packaging costing ₹120 per unit. Additional inspection cost would be ₹80 per unit. The company has only 2,500 units of unused production capacity.</p>
+
+      <p>If AxisMed accepts more than 2,500 units of the special order, the remaining units would have to replace regular customer sales. The contribution currently earned from each regular customer unit is therefore relevant when evaluating the opportunity cost of using constrained capacity.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Per Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Regular selling price</td><td>₹3,200</td></tr>
+          <tr><td>Regular variable production cost</td><td>₹1,900</td></tr>
+          <tr><td>Special-order selling price</td><td>₹2,300</td></tr>
+          <tr><td>Special packaging</td><td>₹120</td></tr>
+          <tr><td>Additional inspection</td><td>₹80</td></tr>
+        </tbody>
+      </table>
+
+      <p>The sales team initially recommended accepting the complete order because ₹2,300 exceeds the regular variable manufacturing cost. The finance manager disagreed, stating that the correct analysis depends on whether capacity is available for every unit of the order.</p>
+
+      <p>The board therefore asked management to evaluate the order separately for units produced using idle capacity and units that would displace regular sales.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_059_1",
+        question: "What is the regular contribution per unit?",
+        options: [
+          "₹1,100",
+          "₹1,200",
+          "₹1,300",
+          "₹1,400"
+        ],
+        answer: 2,
+        reason: "Regular contribution = ₹3,200 − ₹1,900 = ₹1,300."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_059_2",
+        question: "What is the incremental cost per special-order unit excluding opportunity cost?",
+        options: [
+          "₹1,900",
+          "₹2,020",
+          "₹2,100",
+          "₹2,300"
+        ],
+        answer: 2,
+        reason: "Incremental cost = ₹1,900 + ₹120 + ₹80 = ₹2,100."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_059_3",
+        question: "For the first 2,500 units, what is the contribution per special-order unit?",
+        options: [
+          "₹100",
+          "₹200",
+          "₹300",
+          "₹400"
+        ],
+        answer: 1,
+        reason: "These units use idle capacity. Contribution = ₹2,300 − ₹2,100 = ₹200 per unit."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_059_4",
+        question: "What is the relevant cost per unit for the 1,500 special-order units that would displace regular sales?",
+        options: [
+          "₹2,100",
+          "₹2,900",
+          "₹3,200",
+          "₹3,400"
+        ],
+        answer: 3,
+        reason: "Relevant cost = incremental cost ₹2,100 + opportunity cost of lost regular contribution ₹1,300 = ₹3,400."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_059_5",
+        question: "If the customer insists that all 4,000 units must be supplied at ₹2,300, what should management conclude based solely on the stated economics?",
+        options: [
+          "Accept all units because price exceeds variable manufacturing cost",
+          "Accept all units because the order creates revenue",
+          "Reject the complete order because the constrained portion creates an opportunity-cost loss",
+          "Accept all units because special orders should always be accepted"
+        ],
+        answer: 2,
+        reason: "The first 2,500 units provide positive contribution, but the remaining 1,500 units displace regular sales and have a relevant cost of ₹3,400, which exceeds the ₹2,300 offer."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 060 — SENSITIVITY ANALYSIS
+  // =========================================================
+  {
+    case_id: "SRM_C6_HARD_060",
+    difficulty: "hard",
+    case_chapter: "Chapter6",
+    case_topic: [
+      "Sensitivity Analysis",
+      "Pricing",
+      "Demand Risk",
+      "Cost Risk",
+      "Scenario Analysis"
+    ],
+
+    caseText: `
+      <p><strong>CloudCore Business Software</strong> is preparing the pricing plan for a new subscription-based business software package. Management initially developed a base-case financial model using an annual price of ₹2,500 per customer. The sales team expects to acquire 12,000 customers during the first year.</p>
+
+      <p>The variable service and support cost is estimated at ₹1,400 per customer for the year. Annual fixed platform and administration costs are ₹90 lakh.</p>
+
+      <p>The board believes that the base-case model may be too optimistic because the actual market response is uncertain. Three major risks have been identified: lower customer acquisition, pressure to reduce the selling price, and an increase in service-support costs.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>Price</th>
+            <th>Customers</th>
+            <th>Variable Cost per Customer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Base Case</td><td>₹2,500</td><td>12,000</td><td>₹1,400</td></tr>
+          <tr><td>Demand Downside</td><td>₹2,500</td><td>9,000</td><td>₹1,400</td></tr>
+          <tr><td>Price Pressure</td><td>₹2,200</td><td>12,000</td><td>₹1,400</td></tr>
+          <tr><td>Cost Inflation</td><td>₹2,500</td><td>12,000</td><td>₹1,650</td></tr>
+          <tr><td>Combined Downside</td><td>₹2,200</td><td>9,000</td><td>₹1,650</td></tr>
+        </tbody>
+      </table>
+
+      <p>Fixed costs are expected to remain ₹90 lakh under every scenario in the first year. Management is considering whether the current price should be approved immediately or whether the business should establish a pricing range and monitor the most sensitive assumptions before committing to a large marketing expenditure.</p>
+
+      <p>The CFO explains that the purpose of sensitivity analysis is not necessarily to predict exactly which scenario will occur. Instead, management can understand how changes in important assumptions affect profitability and identify variables that require close monitoring.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SRM_C6_HARD_060_1",
+        question: "What is the base-case contribution per customer?",
+        options: [
+          "₹900",
+          "₹1,000",
+          "₹1,100",
+          "₹1,200"
+        ],
+        answer: 2,
+        reason: "₹2,500 − ₹1,400 = ₹1,100 per customer."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_060_2",
+        question: "What is the base-case annual profit?",
+        options: [
+          "₹42 lakh",
+          "₹1.02 crore",
+          "₹1.32 crore",
+          "₹1.80 crore"
+        ],
+        answer: 0,
+        reason: "Total contribution = ₹1,100 × 12,000 = ₹1.32 crore. Less fixed cost ₹90 lakh = ₹42 lakh."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_060_3",
+        question: "What is the profit under the Demand Downside scenario?",
+        options: [
+          "₹9 lakh",
+          "₹18 lakh",
+          "₹21 lakh",
+          "₹24 lakh"
+        ],
+        answer: 0,
+        reason: "Contribution = ₹1,100 × 9,000 = ₹99 lakh. Less fixed cost ₹90 lakh = ₹9 lakh profit."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_060_4",
+        question: "What is the profit or loss under the Combined Downside scenario?",
+        options: [
+          "₹40.5 lakh loss",
+          "₹35.5 lakh loss",
+          "₹30.5 lakh loss",
+          "₹25.5 lakh loss"
+        ],
+        answer: 0,
+        reason: "Contribution per customer = ₹2,200 − ₹1,650 = ₹550. Total contribution = ₹550 × 9,000 = ₹49.5 lakh. Less fixed cost ₹90 lakh = ₹40.5 lakh loss."
+      },
+
+      {
+        question_id: "SRM_C6_HARD_060_5",
+        question: "What is the primary purpose of the sensitivity analysis described by the CFO?",
+        options: [
+          "To guarantee the future selling price",
+          "To identify how changes in important assumptions affect financial outcomes",
+          "To eliminate all business uncertainty",
+          "To ensure that competitors charge the same price"
+        ],
+        answer: 1,
+        reason: "Sensitivity analysis examines the effect of changes in key assumptions such as demand, price and cost on the resulting financial outcome."
+      }
+    ]
+  }
+
 
 ];
