@@ -109,7 +109,7 @@ const AICaseStudies = [
         question:
           "What is the number of directors to be considered for calculating the rotational directors in Alpha Manufacturing Limited?",
         options: ["12", "11", "10", "9"],
-        answer: 4,
+        answer: 3,
         reason:
           "There are 12 directors in total. The 2 independent directors and 1 nominee director are excluded. Therefore, 12 − 3 = 9 directors are considered.",
       },
@@ -31022,7 +31022,7 @@ const AICaseStudies = [
           "Electronic inspection of documents",
           "Imposition of fines and pecuniary penalties for contraventions",
         ],
-        answer: 4,
+        answer: 3,
         reason:
           "The explanation to section 398 clarifies that rules made under that section do not relate to imposition of fines or other pecuniary penalties, demand or payment of fees, or contraventions and punishment for contraventions.",
       },
@@ -31036,7 +31036,7 @@ const AICaseStudies = [
           "Only in addition to physical form",
           "Exclusive, alternative or in addition to physical form",
         ],
-        answer: 4,
+        answer: 3,
         reason:
           "Section 400 permits the Central Government to provide that electronic form shall be exclusive, in the alternative, or in addition to the physical form.",
       },
@@ -31393,7 +31393,7 @@ const AICaseStudies = [
         question:
           "The company having turnover of ₹125 crore but paid-up capital of ₹3 crore would generally fall within the XBRL requirement because its turnover exceeds:",
         options: ["₹25 crore", "₹50 crore", "₹75 crore", "₹100 crore"],
-        answer: 4,
+        answer: 3,
         reason:
           "Companies having turnover of ₹100 crore or above are included within the specified class required to file financial statements in XBRL, subject to applicable exemptions.",
       },
@@ -31826,7 +31826,7 @@ const AICaseStudies = [
           "Property is managed on behalf of investors",
           "Investors must exercise day-to-day control over management",
         ],
-        answer: 4,
+        answer: 3,
         reason:
           "The law specifically requires that investors do NOT have day-to-day control over the management and operation of the scheme.",
       },
@@ -32174,7 +32174,7 @@ const AICaseStudies = [
           "Examining persons on oath",
           "Sentencing a person to imprisonment as a criminal court",
         ],
-        answer: 4,
+        answer: 3,
         reason:
           "SEBI has specified civil-court-like procedural powers but does not thereby become a criminal court with general power to impose criminal sentences.",
       },
@@ -33660,7 +33660,7 @@ const AICaseStudies = [
           "Examination on oath",
           "Passing a criminal conviction and imprisonment directly as a civil court",
         ],
-        answer: 4,
+        answer: 3,
         reason:
           "SEBI has specified civil-court-like procedural powers, but it does not thereby become a criminal court empowered to directly impose criminal imprisonment as a civil court.",
       },
@@ -34258,7 +34258,7 @@ const AICaseStudies = [
           "Repetitive nature of the default",
           "Educational qualification of the person committing the default",
         ],
-        answer: 4,
+        answer: 3,
         reason:
           "Section 15J specifically requires consideration of disproportionate gain/unfair advantage, loss caused to investors and repetitive nature of the default.",
       },
@@ -35085,7 +35085,7 @@ const AICaseStudies = [
           "All of the above",
         ],
 
-        answer: 4,
+        answer: 3,
 
         reason:
           "Record dates may be fixed for dividend, rights or bonus shares, conversion of securities and corporate actions such as mergers, de-mergers and splits, among other specified purposes.",
@@ -36262,7 +36262,7 @@ const AICaseStudies = [
           "7 independent directors",
           "8 independent directors",
         ],
-        answer: 4,
+        answer: 3,
         reason:
           "At least half of 15 directors means the minimum whole-number requirement is 8 independent directors.",
       },

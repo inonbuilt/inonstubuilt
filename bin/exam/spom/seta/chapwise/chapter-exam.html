@@ -21,7 +21,7 @@
 </head>
 <body>
 
-    <div class="header">
+    <div class="header" id="examHeader">
         Calcium Notes - Premium Chapter Practice
     </div>
 
@@ -35,9 +35,9 @@
             <div id="options"></div>
 
             <div class="btn-area">
-                <button class="primary" onclick="prevQuestion()">Previous</button>
-                <button class="primary" onclick="nextQuestion()">Next</button>
-                <button class="warning" onclick="toggleReview()">Mark for Review</button>
+                <button class="primary" id="prevBtn" onclick="prevQuestion()">Previous</button>
+                <button class="primary" id="nextBtn" onclick="nextQuestion()">Next</button>
+                <button class="warning" id="reviewBtn" onclick="toggleReview()">Mark for Review</button>
                 <button class="success" onclick="submitExam()">Submit</button>
             </div>
         </div>
@@ -51,7 +51,8 @@
     <div id="resultArea" style="display:none;"></div>
 
     <!-- ⚠️ Load your SINGLE question bank here -->
-    <script src="../quessetaAI.js"></script> 
+    <script src="../quessetaAI.js"></script>
+    <script src="../quesseta.js"></script> 
     <!-- ⚠️ Load the Engine here -->
     <script src="./examset.js"></script>
 

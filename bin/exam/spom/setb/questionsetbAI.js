@@ -336,7 +336,7 @@ const AICaseStudies = [
         question_id: "SCM_c12_cs_007_3",
         question: "Which factor is most appropriately classified as an executional cost driver?",
         options: ["Scope of operations", "Scale of operations", "Product complexity", "Employee involvement"],
-        answer: 4,
+        answer: 3,
         reason: "Executional cost drivers relate to how business activities are executed and include employee involvement, quality service, product design and manufacturing, and links with suppliers and clients."
       },
       {
@@ -500,7 +500,7 @@ const AICaseStudies = [
         question_id: "SCM_c12_cs_010_4",
         question: "Which of the following would NOT by itself establish that a capability is a core competency?",
         options: ["Customers strongly value it", "Competitors find it difficult to imitate", "It can be applied across several potential markets", "The company spends a large amount of money maintaining it"],
-        answer: 4,
+        answer: 3,
         reason: "The three tests of core competency are relevance, difficulty of imitation and breadth of application. High expenditure alone does not establish core competency."
       },
       {
@@ -921,7 +921,7 @@ const AICaseStudies = [
         question_id: "SCM_c12_cs_018_5",
         question: "Which of the following is NOT listed as a method of exploiting core competencies?",
         options: ["Validating the competency in the current business", "Leveraging competencies in other existing business segments", "Using competencies to reconfigure existing value chains", "Automatically eliminating all existing value chains"],
-        answer: 4,
+        answer: 3,
         reason: "Core competencies can be validated in the current business, leveraged in other segments, used to reconfigure existing value chains, or used to create new value chains."
       }
     ]
@@ -2150,7 +2150,7 @@ const AICaseStudies = [
         question_id: "AI_c22_cs_002_4",
         question: "Warranty repairs performed after customers receive defective equipment represent:",
         options: ["Prevention cost", "Appraisal cost", "Internal failure cost", "External failure cost"],
-        answer: 4,
+        answer: 3,
         reason: "Warranty costs arising from defects discovered after delivery are external failure costs."
       },
       {
@@ -2337,7 +2337,7 @@ const AICaseStudies = [
         question_id: "AI_c22_cs_006_2",
         question: "Warranty claims and product returns incurred after customers receive products are:",
         options: ["Prevention costs", "Appraisal costs", "Internal failure costs", "External failure costs"],
-        answer: 4,
+        answer: 3,
         reason: "Defects discovered after delivery result in external failure costs."
       },
       {
