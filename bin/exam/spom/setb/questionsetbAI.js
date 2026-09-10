@@ -24737,6 +24737,4301 @@ const AICaseStudies = [
         reason: "Sensitivity analysis examines the effect of changes in key assumptions such as demand, price and cost on the resulting financial outcome."
       }
     ]
+  },
+  // Chapter 7
+
+  // =========================================================
+  // MEDIUM 001 — STRATEGIC PROFITABILITY ANALYSIS
+  // =========================================================
+  {
+    case_id: "SPM_C7_MEDIUM_001",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Strategic Profitability Analysis",
+      "Growth Component",
+      "Revenue Effect",
+      "Cost Effect",
+      "Productivity"
+    ],
+
+    caseText: `
+      <p><strong>NovaBoard Packaging Limited</strong> manufactures corrugated packaging boxes for pharmaceutical and consumer-goods companies. During the previous year, the company operated with relatively stable selling prices and input prices. During the current year, demand for packaging products increased because several of its customers expanded their distribution networks.</p>
+
+      <p>The management initially attributed the entire increase in operating profit to the higher volume of boxes sold. However, the finance director disagreed. According to her, an increase in operating income can contain several components. Some of the increase may arise from selling more units, some from changes in selling and input prices, and some from productivity improvements.</p>
+
+      <p>The following information was extracted from the management accounting system:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Previous Year</th>
+            <th>Current Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Units sold</td>
+            <td>80,000</td>
+            <td>92,000</td>
+          </tr>
+          <tr>
+            <td>Selling price per box</td>
+            <td>₹250</td>
+            <td>₹270</td>
+          </tr>
+          <tr>
+            <td>Variable input required per box</td>
+            <td>2.5 kg</td>
+            <td>2.4 kg</td>
+          </tr>
+          <tr>
+            <td>Input price per kg</td>
+            <td>₹40</td>
+            <td>₹44</td>
+          </tr>
+          <tr>
+            <td>Annual fixed capacity cost</td>
+            <td>₹30 lakh</td>
+            <td>₹34 lakh</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The finance director asked the costing team to first isolate the effect of selling more boxes while keeping the previous year's selling price and input price unchanged. She explained that this would identify the growth component before considering changes in prices or productivity.</p>
+
+      <p>The production team also reported that workers had redesigned the cutting pattern used for cardboard sheets. As a result, less input was required per finished box. Management wants this improvement to be considered separately from the effect of higher input prices.</p>
+
+      <p>The board is particularly interested in understanding whether the increase in profit was caused by simply selling more boxes or whether the business also became more efficient.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_MEDIUM_001_1",
+        question: "What was the increase in the number of boxes sold during the current year?",
+        options: [
+          "8,000 boxes",
+          "10,000 boxes",
+          "12,000 boxes",
+          "14,000 boxes"
+        ],
+        answer: 2,
+        reason: "92,000 − 80,000 = 12,000 additional boxes."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_001_2",
+        question: "What is the revenue effect of growth if the previous year's selling price is used?",
+        options: [
+          "₹2.50 lakh",
+          "₹30 lakh",
+          "₹32 lakh",
+          "₹36 lakh"
+        ],
+        answer: 1,
+        reason: "Revenue effect of growth = (92,000 − 80,000) × ₹250 = 12,000 × ₹250 = ₹30 lakh favorable."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_001_3",
+        question: "Based on the case, which change represents a productivity improvement rather than a price-recovery effect?",
+        options: [
+          "Selling price increasing from ₹250 to ₹270",
+          "Input price increasing from ₹40 to ₹44",
+          "Input required per box falling from 2.5 kg to 2.4 kg",
+          "Units sold increasing from 80,000 to 92,000"
+        ],
+        answer: 2,
+        reason: "Using less input per unit of output represents improved input efficiency/productivity."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_001_4",
+        question: "What was the previous year's variable input cost per box?",
+        options: [
+          "₹80",
+          "₹90",
+          "₹100",
+          "₹110"
+        ],
+        answer: 2,
+        reason: "2.5 kg × ₹40 = ₹100 per box."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_001_5",
+        question: "Which statement best describes the purpose of the growth component in strategic operating-profit analysis?",
+        options: [
+          "It isolates changes caused by selling more or fewer units",
+          "It measures only changes in input prices",
+          "It measures only changes in labour productivity",
+          "It measures customer profitability"
+        ],
+        answer: 0,
+        reason: "The growth component isolates the effect of changes in output quantity sold."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 002 — PRICE RECOVERY
+  // =========================================================
+  {
+    case_id: "SPM_C7_MEDIUM_002",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Strategic Profitability Analysis",
+      "Price Recovery",
+      "Selling Price",
+      "Input Price"
+    ],
+
+    caseText: `
+      <p><strong>SilverLine Medical Packaging</strong> supplies sterile packaging trays to hospitals and pharmaceutical manufacturers. The company experienced an unusual year in which both its selling prices and material prices changed significantly.</p>
+
+      <p>At the beginning of the year, management decided to increase the selling price because energy, compliance and logistics costs had risen. However, shortly after the price increase was implemented, a major supplier also increased the price of the specialised polymer used in the trays.</p>
+
+      <p>The management accountant was asked to distinguish the financial effect of these price changes from the effect of changes in sales volume and manufacturing efficiency.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Last Year</th>
+            <th>Current Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Units sold</td>
+            <td>50,000</td>
+            <td>50,000</td>
+          </tr>
+          <tr>
+            <td>Selling price per tray</td>
+            <td>₹180</td>
+            <td>₹210</td>
+          </tr>
+          <tr>
+            <td>Polymer required per tray</td>
+            <td>0.8 kg</td>
+            <td>0.8 kg</td>
+          </tr>
+          <tr>
+            <td>Polymer price per kg</td>
+            <td>₹100</td>
+            <td>₹115</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>There was no change in the number of units sold and no change in the quantity of polymer required per tray. Consequently, the management accountant concluded that the two changes could be analysed primarily through the price recovery component.</p>
+
+      <p>The sales director argued that the selling-price increase was beneficial because it generated additional revenue. The procurement manager pointed out that part of this benefit was offset by the higher polymer price.</p>
+
+      <p>The board wants a clear numerical picture of the gross revenue benefit and the adverse material-price effect before assessing the overall effect on operating income.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_MEDIUM_002_1",
+        question: "What is the revenue effect of the selling-price increase?",
+        options: [
+          "₹10 lakh",
+          "₹12 lakh",
+          "₹15 lakh",
+          "₹18 lakh"
+        ],
+        answer: 2,
+        reason: "(₹210 − ₹180) × 50,000 = ₹30 × 50,000 = ₹15 lakh favorable."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_002_2",
+        question: "What is the material cost effect caused solely by the increase in polymer price?",
+        options: [
+          "₹4 lakh adverse",
+          "₹6 lakh adverse",
+          "₹8 lakh adverse",
+          "₹10 lakh adverse"
+        ],
+        answer: 1,
+        reason: "Current output requires 50,000 × 0.8 = 40,000 kg. Price increase = ₹15/kg. Adverse effect = 40,000 × ₹15 = ₹6 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_002_3",
+        question: "Why is the increase in polymer price treated as part of price recovery analysis?",
+        options: [
+          "Because the quantity of polymer used per tray changed",
+          "Because the price paid for the input changed",
+          "Because the number of trays sold changed",
+          "Because fixed capacity changed"
+        ],
+        answer: 1,
+        reason: "Price recovery isolates the effects arising from changes in selling prices and input prices."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_002_4",
+        question: "What is the net effect of the selling-price increase and polymer-price increase considered together?",
+        options: [
+          "₹6 lakh favorable",
+          "₹9 lakh favorable",
+          "₹12 lakh favorable",
+          "₹21 lakh favorable"
+        ],
+        answer: 1,
+        reason: "₹15 lakh favorable revenue effect − ₹6 lakh adverse material-price effect = ₹9 lakh favorable."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_002_5",
+        question: "Which fact in the case makes the price-recovery analysis particularly straightforward?",
+        options: [
+          "Units sold and polymer usage per tray remained unchanged",
+          "The company doubled its production volume",
+          "The company changed its product mix completely",
+          "Fixed costs were eliminated"
+        ],
+        answer: 0,
+        reason: "With volume and input usage per unit unchanged, the relevant changes can be isolated to prices."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 003 — DPP
+  // =========================================================
+  {
+    case_id: "SPM_C7_MEDIUM_003",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Direct Product Profitability",
+      "ABC",
+      "Retail Costing",
+      "Product Profitability"
+    ],
+
+    caseText: `
+      <p><strong>GreenBasket Retail</strong> operates supermarkets in several cities. Management has traditionally ranked products according to gross margin. The store manager recently challenged this approach after observing that products with high gross margins were not always the products generating the highest profitability after warehouse, transportation and store-related costs.</p>
+
+      <p>The finance team selected three products for a detailed Direct Product Profitability analysis.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Frozen Dessert</th>
+            <th>Dry Cereal</th>
+            <th>Paper Towels</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Selling price per unit</td>
+            <td>₹160</td>
+            <td>₹120</td>
+            <td>₹90</td>
+          </tr>
+          <tr>
+            <td>Purchase price per unit</td>
+            <td>₹112</td>
+            <td>₹78</td>
+            <td>₹58</td>
+          </tr>
+          <tr>
+            <td>Warehouse cost per unit</td>
+            <td>₹12</td>
+            <td>₹7</td>
+            <td>₹10</td>
+          </tr>
+          <tr>
+            <td>Transportation cost per unit</td>
+            <td>₹8</td>
+            <td>₹5</td>
+            <td>₹7</td>
+          </tr>
+          <tr>
+            <td>Store handling cost per unit</td>
+            <td>₹14</td>
+            <td>₹8</td>
+            <td>₹11</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The finance manager explained that gross margin considers only the difference between selling price and purchase price. DPP goes further by assigning direct product costs according to the resources consumed by individual products.</p>
+
+      <p>The Frozen Dessert requires refrigeration throughout the warehouse and store period. Paper Towels occupy significant shelf space relative to their selling price. Dry Cereal, on the other hand, requires comparatively fewer special handling resources.</p>
+
+      <p>Management wants to know whether gross-margin ranking would lead to the same conclusion as DPP ranking.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_MEDIUM_003_1",
+        question: "What is the gross margin per unit of Frozen Dessert?",
+        options: [
+          "₹38",
+          "₹42",
+          "₹48",
+          "₹52"
+        ],
+        answer: 2,
+        reason: "Gross margin = ₹160 − ₹112 = ₹48."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_003_2",
+        question: "What is the Direct Product Profit per unit of Frozen Dessert?",
+        options: [
+          "₹12",
+          "₹14",
+          "₹18",
+          "₹22"
+        ],
+        answer: 1,
+        reason: "DPP = ₹48 − ₹12 − ₹8 − ₹14 = ₹14."
+      },
+{
+  question_id: "SPM_C7_MEDIUM_003_3",
+  question: "What is the DPP per unit of Dry Cereal?",
+  options: [
+    "₹20",
+    "₹22",
+    "₹24",
+    "₹26"
+  ],
+  answer: 1,
+  reason: "Gross margin = ₹120 − ₹78 = ₹42. DPP = ₹42 − ₹7 − ₹5 − ₹8 = ₹22."
+},
+
+      {
+        question_id: "SPM_C7_MEDIUM_003_4",
+        question: "What is the DPP per unit of Paper Towels?",
+        options: [
+          "₹2",
+          "₹4",
+          "₹6",
+          "₹8"
+        ],
+        answer: 1,
+        reason: "Gross margin = ₹90 − ₹58 = ₹32. DPP = ₹32 − ₹10 − ₹7 − ₹11 = ₹4."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_003_5",
+        question: "Which product has the highest DPP per unit based on the information provided?",
+        options: [
+          "Frozen Dessert",
+          "Dry Cereal",
+          "Paper Towels",
+          "All three are equal"
+        ],
+        answer: 1,
+        reason: "Frozen Dessert DPP = ₹14, Dry Cereal = ₹22 and Paper Towels = ₹4. Dry Cereal is highest."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 004 — MCE
+  // =========================================================
+  {
+    case_id: "SPM_C7_MEDIUM_004",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Manufacturing Cycle Efficiency",
+      "Value Added Activities",
+      "Non-Value Added Activities",
+      "ABM"
+    ],
+
+    caseText: `
+      <p><strong>OakCraft Doors</strong> manufactures customised wooden doors for residential and commercial projects. Management has recently introduced Activity-Based Management because customers have complained about long delivery times even though the actual manufacturing work on each door is relatively short.</p>
+
+      <p>A process study was carried out for a representative production batch of 80 doors. The operations team recorded the following average time spent by each batch:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Time per Batch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Actual processing / conversion</td>
+            <td>12 hours</td>
+          </tr>
+          <tr>
+            <td>Waiting for machine availability</td>
+            <td>8 hours</td>
+          </tr>
+          <tr>
+            <td>Inspection</td>
+            <td>2 hours</td>
+          </tr>
+          <tr>
+            <td>Movement between departments</td>
+            <td>6 hours</td>
+          </tr>
+          <tr>
+            <td>Waiting for finishing materials</td>
+            <td>4 hours</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The plant manager explained that the 12 hours of actual processing changes the wood into the required product and therefore represents value-added processing time. The remaining activities consume time but do not themselves change the product in a manner that customers are willing to pay for.</p>
+
+      <p>The ABM team is considering cellular manufacturing, improved material scheduling and better first-time quality to reduce movement, waiting and inspection time.</p>
+
+      <p>Management wants to measure the current manufacturing cycle efficiency before setting improvement targets.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_MEDIUM_004_1",
+        question: "What is the total manufacturing cycle time per batch?",
+        options: [
+          "28 hours",
+          "30 hours",
+          "32 hours",
+          "34 hours"
+        ],
+        answer: 2,
+        reason: "MCT = 12 + 8 + 2 + 6 + 4 = 32 hours."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_004_2",
+        question: "What is the total non-value-added time per batch?",
+        options: [
+          "16 hours",
+          "18 hours",
+          "20 hours",
+          "22 hours"
+        ],
+        answer: 2,
+        reason: "NVA time = 8 + 2 + 6 + 4 = 20 hours."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_004_3",
+        question: "What is the manufacturing cycle efficiency of OakCraft's process?",
+        options: [
+          "25.00%",
+          "37.50%",
+          "40.00%",
+          "62.50%"
+        ],
+        answer: 1,
+        reason: "MCE = Processing Time ÷ MCT = 12 ÷ 32 = 37.5%."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_004_4",
+        question: "Which activity would normally be considered non-value-added under the case assumptions?",
+        options: [
+          "Actual conversion of wood into the door",
+          "Waiting for machine availability",
+          "Applying the required finish",
+          "Cutting the wood to the customer's specifications"
+        ],
+        answer: 1,
+        reason: "Waiting does not transform the product or increase its value and is therefore normally classified as NVA."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_004_5",
+        question: "If waiting time is reduced by 4 hours while all other times remain unchanged, what will be the new MCE?",
+        options: [
+          "40.00%",
+          "42.86%",
+          "46.15%",
+          "50.00%"
+        ],
+        answer: 1,
+        reason: "New MCT = 32 − 4 = 28 hours. MCE = 12 ÷ 28 = 42.86%."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 005 — CUSTOMER PROFITABILITY
+  // =========================================================
+  {
+    case_id: "SPM_C7_MEDIUM_005",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Customer Profitability Analysis",
+      "ABC",
+      "Cost to Serve",
+      "Customer Profit"
+    ],
+
+    caseText: `
+      <p><strong>Orion Audio Systems</strong> manufactures professional audio equipment and sells the same model to two major distributors, <strong>Customer Alpha</strong> and <strong>Customer Beta</strong>. At first glance, Beta appears more attractive because it purchases substantially more units. However, the sales director has noticed that Beta frequently places small rush orders and requests multiple deliveries.</p>
+
+      <p>The finance department therefore decided to analyse customer profitability rather than relying only on sales volume.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Alpha</th>
+            <th>Beta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Units purchased</td>
+            <td>400</td>
+            <td>600</td>
+          </tr>
+          <tr>
+            <td>List selling price per unit</td>
+            <td>₹5,000</td>
+            <td>₹5,000</td>
+          </tr>
+          <tr>
+            <td>Discount</td>
+            <td>4%</td>
+            <td>8%</td>
+          </tr>
+          <tr>
+            <td>Production cost per unit</td>
+            <td>₹3,600</td>
+            <td>₹3,600</td>
+          </tr>
+          <tr>
+            <td>Orders</td>
+            <td>4</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Deliveries</td>
+            <td>4</td>
+            <td>15</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Order processing costs ₹2,000 per order and delivery costs ₹3,500 per delivery. Production quantities do not affect the fixed manufacturing setup because both customers' orders can be produced within the existing production schedule.</p>
+
+      <p>The sales director argues that Beta should receive preferential treatment because it purchases 50% more units than Alpha. The finance director points out that customer profitability depends on the revenue retained after discounts and the resources consumed in serving each customer.</p>
+
+      <p>The board wants to compare the profitability of the two customers and determine whether high sales volume necessarily means high customer profitability.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_MEDIUM_005_1",
+        question: "What is Alpha's net selling price per unit after the 4% discount?",
+        options: [
+          "₹4,600",
+          "₹4,700",
+          "₹4,800",
+          "₹4,900"
+        ],
+        answer: 2,
+        reason: "4% of ₹5,000 = ₹200. Net price = ₹5,000 − ₹200 = ₹4,800."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_005_2",
+        question: "What is Alpha's total contribution before customer-specific order and delivery costs?",
+        options: [
+          "₹4.00 lakh",
+          "₹4.80 lakh",
+          "₹5.20 lakh",
+          "₹5.60 lakh"
+        ],
+        answer: 1,
+        reason: "Contribution per unit = ₹4,800 − ₹3,600 = ₹1,200. Total = 400 × ₹1,200 = ₹4.80 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_005_3",
+        question: "What are Alpha's total customer-specific order and delivery costs?",
+        options: [
+          "₹18,000",
+          "₹20,000",
+          "₹22,000",
+          "₹24,000"
+        ],
+        answer: 2,
+        reason: "Order cost = 4 × ₹2,000 = ₹8,000. Delivery cost = 4 × ₹3,500 = ₹14,000. Total = ₹22,000."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_005_4",
+        question: "What is Beta's contribution per unit before customer-specific order and delivery costs?",
+        options: [
+          "₹900",
+          "₹1,000",
+          "₹1,100",
+          "₹1,200"
+        ],
+        answer: 1,
+        reason: "Beta's net selling price = ₹5,000 × 92% = ₹4,600. Contribution = ₹4,600 − ₹3,600 = ₹1,000 per unit."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_005_5",
+        question: "Which conclusion is most appropriate based on the case?",
+        options: [
+          "Higher sales volume automatically means higher customer profitability",
+          "Customer profitability should consider discounts and the cost of serving the customer",
+          "Order-processing costs are irrelevant because production cost is unchanged",
+          "Delivery frequency has no effect on customer profitability"
+        ],
+        answer: 1,
+        reason: "Customer profitability includes revenue after discounts and customer-specific activities such as order processing and delivery."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 006 — MARKET SIZE + DIFFERENTIATION + PRODUCTIVITY
+  // =========================================================
+  {
+    case_id: "SPM_C7_HARD_006",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Strategic Profitability Analysis",
+      "Industry Market Size",
+      "Product Differentiation",
+      "Productivity",
+      "Growth"
+    ],
+
+    caseText: `
+      <p><strong>Vertex Cartons Limited</strong> manufactures specialised pharmaceutical cartons. The company's board noticed that operating profit increased significantly in the current year. The managing director initially credited the improvement to the industry's expansion because pharmaceutical packaging demand had increased.</p>
+
+      <p>The management accountant, however, explained that the company's increase in sales was greater than the overall market growth. The company had also introduced a stronger moisture-resistant coating that allowed it to charge a higher price. At the same time, production engineers reduced material wastage.</p>
+
+      <p>The following information relates to the two years:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Last Year</th>
+            <th>Current Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Units sold</td>
+            <td>200,000</td>
+            <td>230,000</td>
+          </tr>
+          <tr>
+            <td>Selling price per carton</td>
+            <td>₹50</td>
+            <td>₹56</td>
+          </tr>
+          <tr>
+            <td>Material required per carton</td>
+            <td>0.50 kg</td>
+            <td>0.46 kg</td>
+          </tr>
+          <tr>
+            <td>Material price per kg</td>
+            <td>₹60</td>
+            <td>₹60</td>
+          </tr>
+          <tr>
+            <td>Operating income last year</td>
+            <td>₹18 lakh</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The pharmaceutical-carton industry grew by <strong>8%</strong> in terms of units during the current year. Management wants to divide the increase in operating performance into the industry market-size factor, the additional volume generated by the company's improved market position, and productivity.</p>
+
+      <p>The finance team first calculates the total increase in sales volume and then separates the portion attributable to overall industry growth from the additional volume achieved through improved market share.</p>
+
+      <p>The company also wants to quantify the material productivity benefit. The reduction in material required per carton is considered an efficiency improvement rather than a price effect because the material price remained unchanged.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_HARD_006_1",
+        question: "What was the total increase in units sold?",
+        options: [
+          "20,000",
+          "24,000",
+          "30,000",
+          "36,000"
+        ],
+        answer: 2,
+        reason: "230,000 − 200,000 = 30,000 additional units."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_006_2",
+        question: "How many additional units can be attributed to industry market growth?",
+        options: [
+          "12,000",
+          "16,000",
+          "18,000",
+          "20,000"
+        ],
+        answer: 1,
+        reason: "Industry market-size growth = 8% × 200,000 = 16,000 units."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_006_3",
+        question: "How many additional units represent Vertex's improvement beyond the industry market growth?",
+        options: [
+          "10,000",
+          "12,000",
+          "14,000",
+          "16,000"
+        ],
+        answer: 2,
+        reason: "Total increase = 30,000. Industry growth = 16,000. Additional increase attributable to Vertex beyond industry growth = 30,000 − 16,000 = 14,000 units."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_006_4",
+        question: "What is the productivity benefit from reducing material usage, measured at the current output and material price?",
+        options: [
+          "₹4.80 lakh",
+          "₹5.52 lakh",
+          "₹6.00 lakh",
+          "₹6.90 lakh"
+        ],
+        answer: 1,
+        reason: "Material saving per carton = 0.50 − 0.46 = 0.04 kg. Current output = 230,000 cartons. Total saving = 9,200 kg × ₹60 = ₹5,52,000 = ₹5.52 lakh favorable."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_006_5",
+        question: "Using the previous year's selling price, what is the revenue effect of the 16,000-unit industry market-size growth?",
+        options: [
+          "₹6 lakh",
+          "₹8 lakh",
+          "₹10 lakh",
+          "₹12 lakh"
+        ],
+        answer: 1,
+        reason: "Industry growth units = 16,000. Previous-year selling price = ₹50. Revenue effect = 16,000 × ₹50 = ₹8 lakh favorable."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 007 — DPP WITH RESOURCE CONSUMPTION
+  // =========================================================
+  {
+    case_id: "SPM_C7_HARD_007",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Direct Product Profitability",
+      "ABC",
+      "Warehouse Cost",
+      "Transportation Cost",
+      "Retail Cost",
+      "Gross Margin"
+    ],
+
+    caseText: `
+      <p><strong>MetroFresh Retail Network</strong> operates a chain of large-format supermarkets. Management has historically focused on gross margin percentage when deciding shelf placement. A new ABC-based DPP study has challenged this practice because different products consume dramatically different amounts of warehouse, refrigeration, transportation and store resources.</p>
+
+      <p>The finance team selected three products for analysis: Premium Ice Cream, Packaged Rice and Household Tissue Rolls.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Premium Ice Cream</th>
+            <th>Packaged Rice</th>
+            <th>Tissue Rolls</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Selling price per unit</td>
+            <td>₹240</td>
+            <td>₹110</td>
+            <td>₹95</td>
+          </tr>
+          <tr>
+            <td>Purchase price per unit</td>
+            <td>₹168</td>
+            <td>₹72</td>
+            <td>₹55</td>
+          </tr>
+          <tr>
+            <td>Warehouse cost per unit</td>
+            <td>₹14</td>
+            <td>₹5</td>
+            <td>₹9</td>
+          </tr>
+          <tr>
+            <td>Transportation cost per unit</td>
+            <td>₹11</td>
+            <td>₹6</td>
+            <td>₹5</td>
+          </tr>
+          <tr>
+            <td>Store cost per unit</td>
+            <td>₹18</td>
+            <td>₹7</td>
+            <td>₹13</td>
+          </tr>
+          <tr>
+            <td>Refrigeration-related cost</td>
+            <td>₹9</td>
+            <td>Nil</td>
+            <td>Nil</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Premium Ice Cream requires refrigerated storage and refrigerated transportation. Packaged Rice requires relatively little special handling. Tissue Rolls have a relatively healthy gross margin but consume considerable shelf space because of their physical size.</p>
+
+      <p>The store manager wants Premium Ice Cream to remain highly visible because its gross margin is attractive. The ABC team argues that gross margin alone ignores direct product costs caused by individual products.</p>
+
+      <p>The finance director has therefore asked the team to calculate DPP for each product and compare the ranking with the gross-margin ranking.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_HARD_007_1",
+        question: "What is the gross margin per unit of Premium Ice Cream?",
+        options: [
+          "₹62",
+          "₹68",
+          "₹72",
+          "₹76"
+        ],
+        answer: 2,
+        reason: "Gross margin = ₹240 − ₹168 = ₹72."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_007_2",
+        question: "What is the DPP per unit of Premium Ice Cream?",
+        options: [
+          "₹18",
+          "₹20",
+          "₹22",
+          "₹24"
+        ],
+        answer: 1,
+        reason: "DPP = ₹72 − ₹14 − ₹11 − ₹18 − ₹9 = ₹20."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_007_3",
+        question: "What is the DPP per unit of Packaged Rice?",
+        options: [
+          "₹18",
+          "₹20",
+          "₹22",
+          "₹24"
+        ],
+        answer: 1,
+        reason: "Gross margin = ₹110 − ₹72 = ₹38. DPP = ₹38 − ₹5 − ₹6 − ₹7 = ₹20."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_007_4",
+        question: "What is the DPP per unit of Tissue Rolls?",
+        options: [
+          "₹10",
+          "₹13",
+          "₹15",
+          "₹18"
+        ],
+        answer: 1,
+        reason: "Gross margin = ₹95 − ₹55 = ₹40. DPP = ₹40 − ₹9 − ₹5 − ₹13 = ₹13."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_007_5",
+        question: "Which statement best explains why DPP can provide a different picture from gross margin?",
+        options: [
+          "DPP ignores purchase price",
+          "DPP assigns direct product-related resource costs such as storage, transport and store handling",
+          "DPP considers only selling price",
+          "DPP assumes every product consumes identical resources"
+        ],
+        answer: 1,
+        reason: "DPP considers direct product costs generated by individual products' consumption of resources."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 008 — CUSTOMER PROFITABILITY
+  // =========================================================
+  {
+    case_id: "SPM_C7_HARD_008",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Customer Profitability Analysis",
+      "Cost to Serve",
+      "Discounts",
+      "ABC",
+      "Activity Costs"
+    ],
+
+    caseText: `
+      <p><strong>Helix Industrial Supplies</strong> supplies electrical components to three large customers: <strong>NorthCorp</strong>, <strong>EastWorks</strong> and <strong>SouthBuild</strong>. All three customers buy the same standard component, so the production cost per unit is identical. Nevertheless, the finance team suspects that the customers consume very different levels of service resources.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>NorthCorp</th>
+            <th>EastWorks</th>
+            <th>SouthBuild</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Units purchased</td>
+            <td>1,000</td>
+            <td>1,400</td>
+            <td>800</td>
+          </tr>
+          <tr>
+            <td>List price per unit</td>
+            <td>₹2,000</td>
+            <td>₹2,000</td>
+            <td>₹2,000</td>
+          </tr>
+          <tr>
+            <td>Discount</td>
+            <td>3%</td>
+            <td>7%</td>
+            <td>2%</td>
+          </tr>
+          <tr>
+            <td>Production cost per unit</td>
+            <td>₹1,350</td>
+            <td>₹1,350</td>
+            <td>₹1,350</td>
+          </tr>
+          <tr>
+            <td>Number of orders</td>
+            <td>5</td>
+            <td>20</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Number of deliveries</td>
+            <td>6</td>
+            <td>28</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Technical support calls</td>
+            <td>4</td>
+            <td>25</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The cost of processing an order is ₹1,500. Each delivery costs ₹2,800. Each technical support call costs ₹1,200. These costs are not included in the production cost and are incurred according to the number of activities requested by each customer.</p>
+
+      <p>The sales department wants to give EastWorks an additional discount because EastWorks purchases the largest number of units. The finance director warns that volume alone does not establish customer profitability because a customer consuming many service activities can impose a high cost to serve.</p>
+
+      <p>The board asks the finance team to calculate customer profitability after considering discounts and customer-specific activity costs.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_HARD_008_1",
+        question: "What is NorthCorp's net selling price per unit?",
+        options: [
+          "₹1,900",
+          "₹1,940",
+          "₹1,960",
+          "₹1,970"
+        ],
+        answer: 1,
+        reason: "3% discount = ₹60. Net price = ₹2,000 − ₹60 = ₹1,940."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_008_2",
+        question: "What is NorthCorp's total contribution before customer-specific activity costs?",
+        options: [
+          "₹5.40 lakh",
+          "₹5.90 lakh",
+          "₹6.00 lakh",
+          "₹6.50 lakh"
+        ],
+        answer: 1,
+        reason: "Contribution per unit = ₹1,940 − ₹1,350 = ₹590. Total contribution = 1,000 × ₹590 = ₹5.90 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_008_3",
+        question: "What are NorthCorp's total customer-specific activity costs?",
+        options: [
+          "₹24,900",
+          "₹27,500",
+          "₹29,100",
+          "₹31,500"
+        ],
+        answer: 2,
+        reason: "Orders = 5 × ₹1,500 = ₹7,500. Deliveries = 6 × ₹2,800 = ₹16,800. Support = 4 × ₹1,200 = ₹4,800. Total = ₹29,100."
+      },
+
+      // HARD 008 — Q4
+{
+  question_id: "SPM_C7_HARD_008_4",
+  question: "What is EastWorks' contribution per unit before customer-specific activity costs?",
+  options: [
+    "₹490",
+    "₹510",
+    "₹530",
+    "₹550"
+  ],
+  answer: 1,
+  reason: "EastWorks net selling price = ₹2,000 × 93% = ₹1,860. Contribution per unit = ₹1,860 − ₹1,350 = ₹510."
+},
+
+      {
+        question_id: "SPM_C7_HARD_008_5",
+        question: "Which management action is most consistent with Customer Profitability Analysis?",
+        options: [
+          "Give the largest discount automatically to the largest-volume customer",
+          "Ignore customer-specific service activities",
+          "Discuss ways with high-cost-to-serve customers to reduce unnecessary activities or revise commercial terms",
+          "Stop selling to every customer with a high number of orders"
+        ],
+        answer: 2,
+        reason: "Customer profitability analysis supports constructive discussions to reduce unnecessary service activities and improve commercial terms."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 009 — ACTIVITY BASED BUDGETING
+  // =========================================================
+  {
+    case_id: "SPM_C7_HARD_009",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Activity Based Budgeting",
+      "Cost Drivers",
+      "Activity Budget",
+      "ABB",
+      "Kaizen"
+    ],
+
+    caseText: `
+      <p><strong>QuickServe Food Stores</strong> operates a chain of convenience stores selling beverages, fresh meals and packaged snacks. The company traditionally prepared its monthly budget by applying a percentage of total sales to overhead costs. Management now believes that this approach fails to recognise the different activities generated by different product categories.</p>
+
+      <p>The finance department has therefore identified four major activities for the coming month: purchasing orders, deliveries, shelf stocking and customer support.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Budgeted Driver Rate</th>
+            <th>Budgeted Driver Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Purchasing orders</td>
+            <td>₹4,000 per order</td>
+            <td>90 orders</td>
+          </tr>
+          <tr>
+            <td>Deliveries</td>
+            <td>₹3,500 per delivery</td>
+            <td>120 deliveries</td>
+          </tr>
+          <tr>
+            <td>Shelf stocking</td>
+            <td>₹900 per hour</td>
+            <td>260 hours</td>
+          </tr>
+          <tr>
+            <td>Customer support</td>
+            <td>₹8 per item sold</td>
+            <td>42,000 items</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Management is considering an ABB system in which the resource requirement is derived from the expected activity level rather than simply applying a percentage of sales revenue.</p>
+
+      <p>The operations director expects purchasing orders and deliveries to be particularly sensitive to changes in the product mix. A fresh-food line, for example, requires more frequent deliveries than packaged snacks. The finance director therefore believes that the activity drivers provide more meaningful information than sales value alone.</p>
+
+      <p>During the next planning cycle, management also wants to reduce the budgeted driver rates by 2% through continuous improvement while keeping the same workload.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_HARD_009_1",
+        question: "What is the budgeted cost of purchasing-order activity?",
+        options: [
+          "₹3.20 lakh",
+          "₹3.60 lakh",
+          "₹4.00 lakh",
+          "₹4.40 lakh"
+        ],
+        answer: 1,
+        reason: "90 orders × ₹4,000 = ₹3,60,000 = ₹3.60 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_009_2",
+        question: "What is the budgeted cost of delivery activity?",
+        options: [
+          "₹3.50 lakh",
+          "₹4.00 lakh",
+          "₹4.20 lakh",
+          "₹4.80 lakh"
+        ],
+        answer: 2,
+        reason: "120 deliveries × ₹3,500 = ₹4,20,000 = ₹4.20 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_009_3",
+        question: "What is the budgeted cost of shelf-stocking activity?",
+        options: [
+          "₹2.14 lakh",
+          "₹2.34 lakh",
+          "₹2.40 lakh",
+          "₹2.60 lakh"
+        ],
+        answer: 1,
+        reason: "260 hours × ₹900 = ₹2,34,000 = ₹2.34 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_009_4",
+        question: "What is the total budgeted cost of all four activities?",
+        options: [
+          "₹12.50 lakh",
+          "₹13.00 lakh",
+          "₹13.50 lakh",
+          "₹14.00 lakh"
+        ],
+        answer: 2,
+        reason: "Ordering ₹3.60 lakh + Delivery ₹4.20 lakh + Shelf stocking ₹2.34 lakh + Customer support (42,000 × ₹8 = ₹3.36 lakh) = ₹13.50 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_009_5",
+        question: "If all driver rates are reduced by 2% while activity usage remains unchanged, what will happen to the total activity budget?",
+        options: [
+          "It will decrease by 1%",
+          "It will decrease by 2%",
+          "It will increase by 2%",
+          "It will remain unchanged"
+        ],
+        answer: 1,
+        reason: "With driver usage unchanged, reducing every driver rate by 2% reduces the resulting activity budget by 2%."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 010 — ABM + NVA + MCE
+  // =========================================================
+  {
+    case_id: "SPM_C7_HARD_010",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Activity Based Management",
+      "Non-Value Added Activities",
+      "MCE",
+      "Continuous Improvement",
+      "Performance Analysis"
+    ],
+
+    caseText: `
+      <p><strong>PrecisionGear Manufacturing</strong> produces customised gears for industrial machinery manufacturers. The company has recently implemented an Activity-Based Management programme after customers complained that delivery lead times were too long compared with competitors.</p>
+
+      <p>A detailed process study followed one representative production batch of 100 gears from the point at which the manufacturing department received the order until the batch was completed.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Current Time per Batch</th>
+            <th>Potential Improvement</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Actual machining and conversion</td>
+            <td>15 hours</td>
+            <td>No reduction planned</td>
+          </tr>
+          <tr>
+            <td>Waiting for machine availability</td>
+            <td>10 hours</td>
+            <td>Reduce by 4 hours</td>
+          </tr>
+          <tr>
+            <td>Inspection</td>
+            <td>3 hours</td>
+            <td>Reduce by 1 hour</td>
+          </tr>
+          <tr>
+            <td>Movement between departments</td>
+            <td>7 hours</td>
+            <td>Reduce by 3 hours</td>
+          </tr>
+          <tr>
+            <td>Waiting for material</td>
+            <td>5 hours</td>
+            <td>Reduce by 2 hours</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The production manager argues that inspection is essential because it protects customers from defective gears. The ABM team responds that inspection may be reduced through better first-time quality and zero-defect manufacturing rather than simply removing quality control.</p>
+
+      <p>The movement time exists because machining, heat treatment and finishing are located in different sections of the factory. The operations manager is considering cellular manufacturing to bring related processes closer together.</p>
+
+      <p>The waiting-for-material time is caused by purchasing schedules that are prepared independently of production requirements. The purchasing manager is considering a more just-in-time approach.</p>
+
+      <p>Management wants to measure the present MCE and the MCE after all proposed improvements are implemented. The board also wants to understand why ABM focuses on activities rather than merely reducing departmental expenditure.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_HARD_010_1",
+        question: "What is the current manufacturing cycle time per batch?",
+        options: [
+          "35 hours",
+          "38 hours",
+          "40 hours",
+          "42 hours"
+        ],
+        answer: 2,
+        reason: "MCT = 15 + 10 + 3 + 7 + 5 = 40 hours."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_010_2",
+        question: "What is the current Manufacturing Cycle Efficiency?",
+        options: [
+          "30.00%",
+          "37.50%",
+          "40.00%",
+          "50.00%"
+        ],
+        answer: 1,
+        reason: "MCE = Processing time ÷ Manufacturing Cycle Time = 15 ÷ 40 = 37.5%."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_010_3",
+        question: "After all proposed improvements, what will be the new manufacturing cycle time?",
+        options: [
+          "28 hours",
+          "30 hours",
+          "32 hours",
+          "34 hours"
+        ],
+        answer: 1,
+        reason: "New waiting = 10−4 = 6 hours; inspection = 3−1 = 2 hours; movement = 7−3 = 4 hours; material waiting = 5−2 = 3 hours. New MCT = 15 + 6 + 2 + 4 + 3 = 30 hours."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_010_4",
+        question: "What will be the new MCE after all proposed improvements?",
+        options: [
+          "40.00%",
+          "45.00%",
+          "50.00%",
+          "60.00%"
+        ],
+        answer: 2,
+        reason: "New MCE = Processing time ÷ New MCT = 15 ÷ 30 = 50%."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_010_5",
+        question: "Which combination of management actions is most consistent with the ABM approach described in the case?",
+        options: [
+          "Increase inspection and movement because they increase departmental activity",
+          "Identify cost drivers, reduce non-value-added activities and improve necessary activities",
+          "Allocate all factory overhead equally across products",
+          "Focus only on reducing direct material cost"
+        ],
+        answer: 1,
+        reason: "ABM focuses on activities, their cost drivers, elimination/reduction of NVA activities and improvement of necessary activities."
+      }
+    ]
+  },
+
+  // =========================================================
+  // MEDIUM 011 — GROWTH, PRICE RECOVERY & PRODUCTIVITY
+  // =========================================================
+  {
+    case_id: "SPM_C7_MEDIUM_011",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Strategic Profitability Analysis",
+      "Growth Component",
+      "Price Recovery",
+      "Productivity"
+    ],
+
+    caseText: `
+      <p><strong>HarborPrint Solutions Limited</strong> manufactures premium labels used by food and beverage companies. The company had traditionally evaluated its production performance by comparing current-year operating profit with the previous year's operating profit. The managing director recently asked the management accountant to prepare a strategic profitability analysis because the business had experienced changes in sales volume, selling price and material efficiency at the same time.</p>
+
+      <p>During the previous year, HarborPrint sold 60,000 rolls of labels at ₹400 per roll. Each roll required 3 kg of specialised paper. The paper cost ₹50 per kg. During the current year, the company's sales team secured several new customers and sold 72,000 rolls. The selling price increased to ₹430 per roll.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Previous Year</th>
+            <th>Current Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Units sold</td>
+            <td>60,000 rolls</td>
+            <td>72,000 rolls</td>
+          </tr>
+          <tr>
+            <td>Selling price per roll</td>
+            <td>₹400</td>
+            <td>₹430</td>
+          </tr>
+          <tr>
+            <td>Paper required per roll</td>
+            <td>3.00 kg</td>
+            <td>2.80 kg</td>
+          </tr>
+          <tr>
+            <td>Paper price per kg</td>
+            <td>₹50</td>
+            <td>₹55</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The production manager explained that the reduction in paper usage was not the result of buying cheaper material. Instead, the engineering department redesigned the cutting pattern so that fewer paper off-cuts were generated. Procurement also reported that the supplier increased the paper price from ₹50 to ₹55 per kg because of higher industry-wide pulp prices.</p>
+
+      <p>The finance director wants each of these effects separated. She specifically warns the team not to treat the lower paper usage as a price effect. According to her, the lower quantity of input needed for each roll represents an improvement in productivity.</p>
+
+      <p>The company wants to use the analysis when preparing the annual performance report for senior management.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_MEDIUM_011_1",
+        question: "What is the revenue effect of growth in units sold?",
+        options: [
+          "₹36 lakh",
+          "₹42 lakh",
+          "₹48 lakh",
+          "₹52 lakh"
+        ],
+        answer: 2,
+        reason: "Increase in units = 72,000 − 60,000 = 12,000. Growth revenue effect = 12,000 × ₹400 = ₹48 lakh favorable."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_011_2",
+        question: "What is the revenue effect of the selling-price increase, based on current-year volume?",
+        options: [
+          "₹18 lakh",
+          "₹21.60 lakh",
+          "₹24 lakh",
+          "₹25.80 lakh"
+        ],
+        answer: 1,
+        reason: "Selling price increase = ₹430 − ₹400 = ₹30. Current volume = 72,000. Effect = ₹30 × 72,000 = ₹21.60 lakh favorable."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_011_3",
+        question: "What is the adverse paper-price effect using the input quantity required for current output at previous-year efficiency?",
+        options: [
+          "₹8.40 lakh",
+          "₹9.90 lakh",
+          "₹10.80 lakh",
+          "₹11.20 lakh"
+        ],
+        answer: 2,
+        reason: "Current output at previous efficiency = 72,000 × 3 = 216,000 kg. Price increase = ₹5/kg. Adverse effect = 216,000 × ₹5 = ₹10.80 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_011_4",
+        question: "What is the material productivity benefit from reducing paper usage, measured at the current paper price?",
+        options: [
+          "₹7.20 lakh",
+          "₹7.92 lakh",
+          "₹8.64 lakh",
+          "₹9.00 lakh"
+        ],
+        answer: 1,
+        reason: "Saving per roll = 3.00 − 2.80 = 0.20 kg. Total saving = 72,000 × 0.20 = 14,400 kg. At ₹55/kg = ₹7,92,000 = ₹7.92 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_011_5",
+        question: "Which of the following should be classified as a productivity improvement?",
+        options: [
+          "Increase in selling price",
+          "Increase in paper price",
+          "Reduction in paper required per roll",
+          "Increase in number of rolls sold"
+        ],
+        answer: 2,
+        reason: "Using less input for the same unit of output represents improved input efficiency/productivity."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 012 — DPP & PRODUCT RANGE
+  // =========================================================
+  {
+    case_id: "SPM_C7_MEDIUM_012",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Direct Product Profitability",
+      "ABC",
+      "Product Range",
+      "Retailing"
+    ],
+
+    caseText: `
+      <p><strong>Sunridge Superstores</strong> has traditionally used gross margin percentage to decide which products deserve additional shelf space. The commercial director recently questioned this approach after observing that a high-margin refrigerated product occupied expensive storage space and required special handling.</p>
+
+      <p>The finance department therefore selected three products for a Direct Product Profitability review. The study considers warehouse, transportation and store costs that can be directly associated with the individual products.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Fresh Juice</th>
+            <th>Breakfast Cereal</th>
+            <th>Cleaning Wipes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Selling price</td>
+            <td>₹100</td>
+            <td>₹150</td>
+            <td>₹80</td>
+          </tr>
+          <tr>
+            <td>Purchase price</td>
+            <td>₹65</td>
+            <td>₹90</td>
+            <td>₹45</td>
+          </tr>
+          <tr>
+            <td>Warehouse cost</td>
+            <td>₹7</td>
+            <td>₹8</td>
+            <td>₹5</td>
+          </tr>
+          <tr>
+            <td>Transportation cost</td>
+            <td>₹6</td>
+            <td>₹5</td>
+            <td>₹4</td>
+          </tr>
+          <tr>
+            <td>Store cost</td>
+            <td>₹10</td>
+            <td>₹9</td>
+            <td>₹6</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Fresh Juice requires refrigerated storage. Breakfast Cereal is easy to store but occupies substantial shelf space. Cleaning Wipes have a lower gross margin per unit but require comparatively little warehouse and store handling.</p>
+
+      <p>The store manager argues that Fresh Juice should receive premium shelf placement because its gross margin is attractive. The finance team believes that the product should be assessed after considering direct product costs.</p>
+
+      <p>The managing director also reminds the team that DPP should not automatically result in removing every product with a low DPP. Some products may need to be stocked to maintain a complete product range and attract customers.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_MEDIUM_012_1",
+        question: "What is the gross margin per unit of Fresh Juice?",
+        options: [
+          "₹30",
+          "₹35",
+          "₹38",
+          "₹40"
+        ],
+        answer: 1,
+        reason: "₹100 − ₹65 = ₹35."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_012_2",
+        question: "What is the DPP per unit of Fresh Juice?",
+        options: [
+          "₹10",
+          "₹12",
+          "₹14",
+          "₹16"
+        ],
+        answer: 1,
+        reason: "DPP = ₹35 − ₹7 − ₹6 − ₹10 = ₹12."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_012_3",
+        question: "What is the DPP per unit of Breakfast Cereal?",
+        options: [
+          "₹36",
+          "₹38",
+          "₹40",
+          "₹42"
+        ],
+        answer: 1,
+        reason: "Gross margin = ₹150 − ₹90 = ₹60. DPP = ₹60 − ₹8 − ₹5 − ₹9 = ₹38."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_012_4",
+        question: "What is the DPP per unit of Cleaning Wipes?",
+        options: [
+          "₹20",
+          "₹22",
+          "₹25",
+          "₹27"
+        ],
+        answer: 0,
+        reason: "Gross margin = ₹80 − ₹45 = ₹35. DPP = ₹35 − ₹5 − ₹4 − ₹6 = ₹20."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_012_5",
+        question: "Why might management continue stocking a product with a relatively low DPP?",
+        options: [
+          "DPP is always irrelevant",
+          "Every low-DPP product must be discontinued",
+          "It may be necessary to maintain a complete product range or attract customers",
+          "Purchase price does not affect profitability"
+        ],
+        answer: 2,
+        reason: "A retailer may retain lower-DPP products for strategic reasons such as maintaining a complete range or attracting customers."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 013 — CUSTOMER PROFITABILITY
+  // =========================================================
+  {
+    case_id: "SPM_C7_MEDIUM_013",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Customer Profitability",
+      "ABC",
+      "Cost to Serve",
+      "Customer Analysis"
+    ],
+
+    caseText: `
+      <p><strong>BlueHarbor Office Products</strong> supplies office stationery to corporate customers. Two customers, <strong>Meridian Services</strong> and <strong>Lakeview Group</strong>, account for a large proportion of annual sales. The sales team considers Lakeview to be the more important customer because its annual purchase volume is substantially higher.</p>
+
+      <p>The finance manager, however, noticed that Lakeview places numerous small orders, requests urgent deliveries and frequently contacts the company's customer-service team for changes to orders already processed.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Meridian</th>
+            <th>Lakeview</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Units purchased</td>
+            <td>2,000</td>
+            <td>3,000</td>
+          </tr>
+          <tr>
+            <td>Selling price per unit</td>
+            <td>₹500</td>
+            <td>₹500</td>
+          </tr>
+          <tr>
+            <td>Discount</td>
+            <td>5%</td>
+            <td>10%</td>
+          </tr>
+          <tr>
+            <td>Production cost per unit</td>
+            <td>₹350</td>
+            <td>₹350</td>
+          </tr>
+          <tr>
+            <td>Orders</td>
+            <td>8</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Deliveries</td>
+            <td>8</td>
+            <td>36</td>
+          </tr>
+          <tr>
+            <td>Customer-service cases</td>
+            <td>3</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Each order costs ₹1,000 to process. Each delivery costs ₹2,000. Each customer-service case costs ₹500.</p>
+
+      <p>The commercial team proposes another 2% discount for Lakeview to encourage even larger purchases. The finance manager objects because the existing discount already reduces the contribution per unit and Lakeview consumes considerably more service activities.</p>
+
+      <p>The chief financial officer asks the team to use customer profitability analysis to determine whether volume alone provides sufficient justification for additional discounts.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_MEDIUM_013_1",
+        question: "What is Meridian's net selling price per unit?",
+        options: [
+          "₹450",
+          "₹465",
+          "₹475",
+          "₹485"
+        ],
+        answer: 2,
+        reason: "5% discount on ₹500 = ₹25. Net selling price = ₹475."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_013_2",
+        question: "What is Meridian's contribution per unit before customer-specific service costs?",
+        options: [
+          "₹115",
+          "₹125",
+          "₹135",
+          "₹145"
+        ],
+        answer: 1,
+        reason: "₹475 − ₹350 = ₹125."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_013_3",
+        question: "What is Meridian's total customer-specific activity cost?",
+        options: [
+          "₹23,500",
+          "₹25,500",
+          "₹27,500",
+          "₹29,500"
+        ],
+        answer: 1,
+        reason: "Orders = 8×₹1,000 = ₹8,000. Deliveries = 8×₹2,000 = ₹16,000. Service = 3×₹500 = ₹1,500. Total = ₹25,500."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_013_4",
+        question: "What is Lakeview's contribution per unit before customer-specific service costs?",
+        options: [
+          "₹90",
+          "₹100",
+          "₹110",
+          "₹120"
+        ],
+        answer: 1,
+        reason: "Net price = ₹500 × 90% = ₹450. Contribution = ₹450 − ₹350 = ₹100."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_013_5",
+        question: "Which factor is most important when deciding whether Lakeview deserves an additional discount?",
+        options: [
+          "Only the number of units purchased",
+          "Only the customer's name recognition",
+          "The customer's contribution together with the resources consumed in serving it",
+          "Only the number of employees at Lakeview"
+        ],
+        answer: 2,
+        reason: "Customer profitability considers contribution together with customer-specific activities and cost to serve."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 014 — ABB
+  // =========================================================
+  {
+    case_id: "SPM_C7_MEDIUM_014",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Activity Based Budgeting",
+      "Cost Drivers",
+      "Activity Budget",
+      "ABB"
+    ],
+
+    caseText: `
+      <p><strong>RiverStone Distribution Services</strong> operates warehouses for consumer-product manufacturers. Historically, its administration budget was prepared by increasing last year's departmental expenditure by 8%. The newly appointed management accountant believes this approach does not explain why the cost is being incurred.</p>
+
+      <p>After interviewing warehouse supervisors, the finance team identified three significant activities: processing customer orders, dispatching shipments and handling returns.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Cost Driver Rate</th>
+            <th>Expected Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Order processing</td>
+            <td>₹750 per order</td>
+            <td>800 orders</td>
+          </tr>
+          <tr>
+            <td>Shipment dispatch</td>
+            <td>₹1,200 per shipment</td>
+            <td>500 shipments</td>
+          </tr>
+          <tr>
+            <td>Returns handling</td>
+            <td>₹900 per return</td>
+            <td>120 returns</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The operations manager expects the number of shipments to increase if the company acquires a new customer. However, the number of orders may increase at a different rate because the new customer's ordering pattern may involve several orders being consolidated into one shipment.</p>
+
+      <p>The finance director explains that this is precisely why ABB is useful. The budget should reflect expected activities and the resources required to perform them rather than simply applying a percentage to historical expenditure.</p>
+
+      <p>The board asks the team to calculate the activity-based budget and explain the underlying logic.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_MEDIUM_014_1",
+        question: "What is the budgeted cost of order processing?",
+        options: [
+          "₹5.60 lakh",
+          "₹6.00 lakh",
+          "₹6.40 lakh",
+          "₹7.00 lakh"
+        ],
+        answer: 1,
+        reason: "800 × ₹750 = ₹6,00,000."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_014_2",
+        question: "What is the budgeted cost of shipment dispatch?",
+        options: [
+          "₹5.00 lakh",
+          "₹5.50 lakh",
+          "₹6.00 lakh",
+          "₹7.20 lakh"
+        ],
+        answer: 2,
+        reason: "500 × ₹1,200 = ₹6,00,000."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_014_3",
+        question: "What is the budgeted cost of returns handling?",
+        options: [
+          "₹90,000",
+          "₹1,08,000",
+          "₹1,20,000",
+          "₹1,35,000"
+        ],
+        answer: 1,
+        reason: "120 × ₹900 = ₹1,08,000."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_014_4",
+        question: "What is the total ABB for the three activities?",
+        options: [
+          "₹12.08 lakh",
+          "₹12.58 lakh",
+          "₹13.08 lakh",
+          "₹13.58 lakh"
+        ],
+        answer: 2,
+        reason: "₹6.00 lakh + ₹6.00 lakh + ₹1.08 lakh = ₹13.08 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_014_5",
+        question: "Why can ABB provide more useful information than simply increasing last year's departmental budget by a percentage?",
+        options: [
+          "ABB ignores activities",
+          "ABB links resource requirements to expected activities and their drivers",
+          "ABB assumes costs never change",
+          "ABB allocates every cost equally"
+        ],
+        answer: 1,
+        reason: "ABB derives resource requirements from expected activities and their cost drivers."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 015 — VALUE ADDED / NON-VALUE ADDED
+  // =========================================================
+  {
+    case_id: "SPM_C7_MEDIUM_015",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Value Added Activities",
+      "Non-Value Added Activities",
+      "MCE",
+      "ABM"
+    ],
+
+    caseText: `
+      <p><strong>Everwood Furniture Works</strong> manufactures customised dining tables. A customer survey revealed that customers were satisfied with the quality of the finished tables but were unhappy with the time taken between order confirmation and completion.</p>
+
+      <p>The ABM team followed one production batch from the point the manufacturing department received the order until the completed tables were ready.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cutting and machining</td>
+            <td>10 hours</td>
+          </tr>
+          <tr>
+            <td>Assembly</td>
+            <td>5 hours</td>
+          </tr>
+          <tr>
+            <td>Waiting for assembly space</td>
+            <td>6 hours</td>
+          </tr>
+          <tr>
+            <td>Inspection</td>
+            <td>2 hours</td>
+          </tr>
+          <tr>
+            <td>Movement between departments</td>
+            <td>5 hours</td>
+          </tr>
+          <tr>
+            <td>Waiting for packaging materials</td>
+            <td>4 hours</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The production supervisor considers cutting, machining and assembly to be value-adding because these activities transform the product. Waiting and movement do not alter the table. Inspection currently exists because the company wants to detect defects before dispatch, although management believes better process quality could reduce inspection requirements.</p>
+
+      <p>The improvement team is considering a cellular layout to reduce movement and better production scheduling to reduce waiting. The purchasing team is also considering a just-in-time arrangement for packaging materials.</p>
+
+      <p>Management wants to establish the current MCE and identify the largest opportunity for reducing non-value-added time.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_MEDIUM_015_1",
+        question: "What is the total processing/value-added time?",
+        options: [
+          "10 hours",
+          "12 hours",
+          "15 hours",
+          "17 hours"
+        ],
+        answer: 2,
+        reason: "Processing time = cutting/machining 10 + assembly 5 = 15 hours."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_015_2",
+        question: "What is the total manufacturing cycle time?",
+        options: [
+          "27 hours",
+          "30 hours",
+          "32 hours",
+          "35 hours"
+        ],
+        answer: 2,
+        reason: "MCT = 10 + 5 + 6 + 2 + 5 + 4 = 32 hours."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_015_3",
+        question: "What is the current MCE?",
+        options: [
+          "40.00%",
+          "46.88%",
+          "50.00%",
+          "53.13%"
+        ],
+        answer: 1,
+        reason: "MCE = 15 ÷ 32 × 100 = 46.875%, approximately 46.88%."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_015_4",
+        question: "What is the total non-value-added time?",
+        options: [
+          "15 hours",
+          "17 hours",
+          "19 hours",
+          "21 hours"
+        ],
+        answer: 1,
+        reason: "NVA time = 6 + 2 + 5 + 4 = 17 hours."
+      },
+
+      {
+        question_id: "SPM_C7_MEDIUM_015_5",
+        question: "Which proposed action directly addresses the movement time identified in the case?",
+        options: [
+          "Cellular manufacturing",
+          "Increasing selling price",
+          "Increasing purchase price",
+          "Increasing inspection frequency"
+        ],
+        answer: 0,
+        reason: "Cellular manufacturing brings related processes closer together and can reduce unnecessary movement."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 016 — STRATEGIC PROFITABILITY ANALYSIS
+  // =========================================================
+  {
+    case_id: "SPM_C7_HARD_016",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Strategic Profitability Analysis",
+      "Growth",
+      "Price Recovery",
+      "Productivity",
+      "Operating Profit"
+    ],
+
+    caseText: `
+      <p><strong>FalconEdge Components Limited</strong> manufactures precision components used in industrial pumps. The company has grown rapidly during the last two years, but the chief executive officer is concerned that management is celebrating the increase in operating profit without understanding where the improvement actually came from.</p>
+
+      <p>The finance department therefore prepared a detailed comparison between the previous and current years.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Previous Year</th>
+            <th>Current Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Units sold</td>
+            <td>100,000</td>
+            <td>120,000</td>
+          </tr>
+          <tr>
+            <td>Selling price per unit</td>
+            <td>₹300</td>
+            <td>₹330</td>
+          </tr>
+          <tr>
+            <td>Material required per unit</td>
+            <td>1.50 kg</td>
+            <td>1.35 kg</td>
+          </tr>
+          <tr>
+            <td>Material price per kg</td>
+            <td>₹80</td>
+            <td>₹88</td>
+          </tr>
+          <tr>
+            <td>Operating income</td>
+            <td>₹45 lakh</td>
+            <td>₹68 lakh</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The increase in units was partly caused by industry expansion and partly by FalconEdge winning customers from competitors. The overall market for precision pump components increased by 10%. FalconEdge's units increased by 20%.</p>
+
+      <p>The sales director argues that the ₹30 increase in selling price should be regarded as a pure pricing success. The procurement director points out that material prices also increased. Meanwhile, the production director claims that the redesigned machining process reduced material usage significantly.</p>
+
+      <p>The finance director warns that these three factors should not be mixed. Growth must be isolated using previous-year prices, price recovery must isolate selling and input-price changes, and productivity must use the appropriate current-year input prices.</p>
+
+      <p>The board has asked the finance team to identify both the industry-driven volume growth and the additional growth achieved by FalconEdge beyond the industry's expansion.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_HARD_016_1",
+        question: "What is the revenue effect of total growth in units sold, measured at the previous-year selling price?",
+        options: [
+          "₹50 lakh",
+          "₹60 lakh",
+          "₹66 lakh",
+          "₹72 lakh"
+        ],
+        answer: 1,
+        reason: "Increase = 20,000 units. At ₹300 per unit, growth revenue effect = ₹60 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_016_2",
+        question: "How many additional units can be attributed to industry market growth?",
+        options: [
+          "8,000",
+          "10,000",
+          "12,000",
+          "15,000"
+        ],
+        answer: 1,
+        reason: "Industry growth = 10% × 100,000 = 10,000 units."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_016_3",
+        question: "How many additional units represent FalconEdge's growth beyond the industry market-size effect?",
+        options: [
+          "8,000",
+          "10,000",
+          "12,000",
+          "14,000"
+        ],
+        answer: 1,
+        reason: "Total increase = 20,000. Industry growth = 10,000. Remaining = 10,000 units."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_016_4",
+        question: "What is the revenue effect of the selling-price increase using current-year units sold?",
+        options: [
+          "₹30 lakh",
+          "₹32 lakh",
+          "₹36 lakh",
+          "₹40 lakh"
+        ],
+        answer: 2,
+        reason: "₹30 × 120,000 = ₹36 lakh favorable."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_016_5",
+        question: "What is the material productivity benefit from the reduction in material required per unit, measured at the current material price?",
+        options: [
+          "₹12.00 lakh",
+          "₹14.40 lakh",
+          "₹15.84 lakh",
+          "₹16.80 lakh"
+        ],
+        answer: 2,
+        reason: "Saving per unit = 1.50 − 1.35 = 0.15 kg. Total saving = 120,000 × 0.15 = 18,000 kg. At ₹88 = ₹15.84 lakh favorable."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 017 — CUSTOMER PROFITABILITY
+  // =========================================================
+  {
+    case_id: "SPM_C7_HARD_017",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Customer Profitability Analysis",
+      "ABC",
+      "Cost to Serve",
+      "Discounts",
+      "Customer Strategy"
+    ],
+
+    caseText: `
+      <p><strong>IronVale Engineering Supplies</strong> sells industrial fasteners to three customers: <strong>Summit Engineering</strong>, <strong>Coastal Fabricators</strong> and <strong>UrbanWorks</strong>. The product supplied to each customer is identical, and therefore the production cost per unit is the same. Nevertheless, the sales department has historically evaluated customers almost entirely by annual revenue.</p>
+
+      <p>A new finance manager believes that this practice hides differences in the cost of serving individual customers. She asks the customer-service department to provide activity data.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Summit</th>
+            <th>Coastal</th>
+            <th>UrbanWorks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Units purchased</td>
+            <td>2,500</td>
+            <td>3,200</td>
+            <td>1,800</td>
+          </tr>
+          <tr>
+            <td>List price per unit</td>
+            <td>₹800</td>
+            <td>₹800</td>
+            <td>₹800</td>
+          </tr>
+          <tr>
+            <td>Discount</td>
+            <td>4%</td>
+            <td>9%</td>
+            <td>2%</td>
+          </tr>
+          <tr>
+            <td>Production cost per unit</td>
+            <td>₹520</td>
+            <td>₹520</td>
+            <td>₹520</td>
+          </tr>
+          <tr>
+            <td>Orders</td>
+            <td>10</td>
+            <td>32</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>Deliveries</td>
+            <td>12</td>
+            <td>45</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Technical service cases</td>
+            <td>5</td>
+            <td>18</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Order processing costs ₹1,800 per order. Each delivery costs ₹2,500. Each technical-service case costs ₹1,000.</p>
+
+      <p>Coastal is the company's largest customer by volume and has threatened to switch suppliers unless it receives another 3% discount. The sales director believes losing Coastal would be disastrous. The finance manager agrees that customer relationships matter but argues that the company must understand Coastal's profitability before agreeing to the additional discount.</p>
+
+      <p>The chief executive therefore asks the team to calculate the customer contribution and customer-specific activity costs before negotiating with Coastal.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_HARD_017_1",
+        question: "What is Summit's net selling price per unit?",
+        options: [
+          "₹752",
+          "₹760",
+          "₹768",
+          "₹776"
+        ],
+        answer: 2,
+        reason: "4% of ₹800 = ₹32. Net price = ₹768."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_017_2",
+        question: "What is Summit's total contribution before customer-specific activity costs?",
+        options: [
+          "₹5.80 lakh",
+          "₹6.20 lakh",
+          "₹6.50 lakh",
+          "₹7.00 lakh"
+        ],
+        answer: 1,
+        reason: "Contribution/unit = ₹768 − ₹520 = ₹248. Total = 2,500 × ₹248 = ₹6,20,000 = ₹6.20 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_017_3",
+        question: "What are Summit's total customer-specific activity costs?",
+        options: [
+          "₹48,000",
+          "₹50,000",
+          "₹53,000",
+          "₹56,000"
+        ],
+        answer: 2,
+        reason: "Orders = 10×₹1,800 = ₹18,000. Deliveries = 12×₹2,500 = ₹30,000. Service = 5×₹1,000 = ₹5,000. Total = ₹53,000."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_017_4",
+        question: "What is Coastal's contribution per unit before customer-specific activity costs?",
+        options: [
+          "₹190",
+          "₹208",
+          "₹220",
+          "₹248"
+        ],
+        answer: 1,
+        reason: "Net price = ₹800 × 91% = ₹728. Contribution = ₹728 − ₹520 = ₹208."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_017_5",
+        question: "If Coastal receives an additional 3% discount on the list price, by how much will its contribution per unit decrease, assuming all other factors remain unchanged?",
+        options: [
+          "₹16",
+          "₹20",
+          "₹24",
+          "₹28"
+        ],
+        answer: 2,
+        reason: "Additional discount = 3% × ₹800 = ₹24 per unit. Contribution decreases by ₹24."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 018 — DPP + RESOURCE CONSUMPTION
+  // =========================================================
+  {
+    case_id: "SPM_C7_HARD_018",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Direct Product Profitability",
+      "ABC",
+      "Resource Consumption",
+      "Retailing",
+      "Product Range"
+    ],
+
+    caseText: `
+      <p><strong>HarvestLane Retail Group</strong> operates supermarkets where management is trying to improve profitability without reducing customer choice. The company recently discovered that gross margin percentages do not always indicate which products generate the greatest profit after direct product costs.</p>
+
+      <p>The finance team selected three products for a DPP study. Each product consumes warehouse, transportation and store resources differently.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Chilled Dessert</th>
+            <th>Packaged Flour</th>
+            <th>Kitchen Paper</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Selling price per unit</td>
+            <td>₹200</td>
+            <td>₹100</td>
+            <td>₹75</td>
+          </tr>
+          <tr>
+            <td>Purchase price per unit</td>
+            <td>₹130</td>
+            <td>₹60</td>
+            <td>₹43</td>
+          </tr>
+          <tr>
+            <td>Warehouse cost per unit</td>
+            <td>₹15</td>
+            <td>₹6</td>
+            <td>₹8</td>
+          </tr>
+          <tr>
+            <td>Transportation cost per unit</td>
+            <td>₹12</td>
+            <td>₹5</td>
+            <td>₹6</td>
+          </tr>
+          <tr>
+            <td>Store cost per unit</td>
+            <td>₹17</td>
+            <td>₹7</td>
+            <td>₹12</td>
+          </tr>
+          <tr>
+            <td>Refrigeration cost per unit</td>
+            <td>₹8</td>
+            <td>Nil</td>
+            <td>Nil</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Chilled Dessert requires refrigeration throughout its warehouse and store period. Packaged Flour has a moderate gross margin but relatively low handling requirements. Kitchen Paper has a reasonable gross margin but consumes significant shelf space and therefore incurs a relatively high store-related cost.</p>
+
+      <p>The merchandising team wants to give Chilled Dessert the most prominent position because its selling price is high. The finance team argues that the decision should consider the profit remaining after direct product costs.</p>
+
+      <p>The management committee also states that DPP should be used as a decision-support tool rather than as an automatic rule to remove products. Customer expectations, product-range completeness and strategic considerations must also be considered.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_HARD_018_1",
+        question: "What is the gross margin per unit of Chilled Dessert?",
+        options: [
+          "₹60",
+          "₹65",
+          "₹70",
+          "₹75"
+        ],
+        answer: 2,
+        reason: "₹200 − ₹130 = ₹70."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_018_2",
+        question: "What is the DPP per unit of Chilled Dessert?",
+        options: [
+          "₹16",
+          "₹18",
+          "₹20",
+          "₹22"
+        ],
+        answer: 1,
+        reason: "DPP = ₹70 − ₹15 − ₹12 − ₹17 − ₹8 = ₹18."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_018_3",
+        question: "What is the DPP per unit of Packaged Flour?",
+        options: [
+          "₹18",
+          "₹20",
+          "₹22",
+          "₹24"
+        ],
+        answer: 2,
+        reason: "Gross margin = ₹100 − ₹60 = ₹40. DPP = ₹40 − ₹6 − ₹5 − ₹7 = ₹22."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_018_4",
+        question: "What is the DPP per unit of Kitchen Paper?",
+        options: [
+          "₹4",
+          "₹6",
+          "₹8",
+          "₹10"
+        ],
+        answer: 1,
+        reason: "Gross margin = ₹75 − ₹43 = ₹32. DPP = ₹32 − ₹8 − ₹6 − ₹12 = ₹6."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_018_5",
+        question: "Which product has the highest DPP per unit?",
+        options: [
+          "Chilled Dessert",
+          "Packaged Flour",
+          "Kitchen Paper",
+          "Chilled Dessert and Kitchen Paper"
+        ],
+        answer: 1,
+        reason: "Chilled Dessert = ₹18, Packaged Flour = ₹22, Kitchen Paper = ₹6. Packaged Flour is highest."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 019 — ABB + ACTIVITY FLEXIBLE BUDGET
+  // =========================================================
+  {
+    case_id: "SPM_C7_HARD_019",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Activity Based Budgeting",
+      "Activity Flexible Budget",
+      "Cost Drivers",
+      "Variance Analysis"
+    ],
+
+    caseText: `
+      <p><strong>SwiftLink Logistics</strong> manages distribution activities for several manufacturers. Its finance department historically prepared budgets using total revenue as the primary driver. This became increasingly problematic because two months with similar revenue could generate very different numbers of deliveries, customer orders and warehouse handling activities.</p>
+
+      <p>The finance director therefore introduced an activity-based system. For the coming month, three major activities have been identified.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Driver</th>
+            <th>Rate</th>
+            <th>Original Budgeted Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Order administration</td>
+            <td>Orders</td>
+            <td>₹500/order</td>
+            <td>1,200</td>
+          </tr>
+          <tr>
+            <td>Delivery operations</td>
+            <td>Deliveries</td>
+            <td>₹1,800/delivery</td>
+            <td>700</td>
+          </tr>
+          <tr>
+            <td>Warehouse handling</td>
+            <td>Handling hours</td>
+            <td>₹650/hour</td>
+            <td>900</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>After the month began, actual demand was lower than originally expected. The company processed 1,000 orders, made 620 deliveries and used 800 warehouse-handling hours.</p>
+
+      <p>The financial controller argues that comparing actual expenditure with the original activity budget would not provide a fair performance assessment because the activity level itself changed. She proposes preparing an activity flexible budget using the actual activity levels and the predetermined activity rates.</p>
+
+      <p>Management wants to understand the difference between changing the activity level and changing the cost rate. The finance director also stresses that activity-based flexible budgeting can provide more useful information for managing the activities themselves.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_HARD_019_1",
+        question: "What was the original budgeted cost of order administration?",
+        options: [
+          "₹5.00 lakh",
+          "₹6.00 lakh",
+          "₹6.50 lakh",
+          "₹7.00 lakh"
+        ],
+        answer: 1,
+        reason: "1,200 × ₹500 = ₹6,00,000."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_019_2",
+        question: "What is the activity-flexed cost of order administration based on actual activity?",
+        options: [
+          "₹4.50 lakh",
+          "₹5.00 lakh",
+          "₹5.20 lakh",
+          "₹5.50 lakh"
+        ],
+        answer: 1,
+        reason: "1,000 actual orders × ₹500 = ₹5,00,000."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_019_3",
+        question: "What is the activity-flexed cost of delivery operations?",
+        options: [
+          "₹10.80 lakh",
+          "₹11.16 lakh",
+          "₹11.50 lakh",
+          "₹12.60 lakh"
+        ],
+        answer: 1,
+        reason: "620 deliveries × ₹1,800 = ₹11,16,000."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_019_4",
+        question: "What is the total activity-flexed budget based on actual activity?",
+        options: [
+          "₹20.36 lakh",
+          "₹21.36 lakh",
+          "₹22.36 lakh",
+          "₹23.36 lakh"
+        ],
+        answer: 1,
+        reason: "Order administration = ₹5.00 lakh. Delivery = ₹11.16 lakh. Warehouse handling = 800 × ₹650 = ₹5.20 lakh. Total = ₹21.36 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_019_5",
+        question: "Why is an activity flexible budget more useful than simply comparing actual cost with the original budget?",
+        options: [
+          "It ignores changes in activity",
+          "It adjusts expected resource cost to the actual activity level",
+          "It assumes all activities have identical drivers",
+          "It eliminates the need for cost drivers"
+        ],
+        answer: 1,
+        reason: "An activity flexible budget recalculates expected cost using actual activity levels and predetermined activity rates."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 020 — ABM + MCE + ABB
+  // =========================================================
+  {
+    case_id: "SPM_C7_HARD_020",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Activity Based Management",
+      "MCE",
+      "Non-Value Added Activities",
+      "Activity Based Budgeting",
+      "Cost Drivers",
+      "Continuous Improvement"
+    ],
+
+    caseText: `
+      <p><strong>SummitForge Industrial Systems</strong> manufactures customised components for heavy machinery manufacturers. During the past year, customers repeatedly complained about long lead times. Internal management reports, however, showed that actual machining time was relatively low compared with the total time an order spent inside the factory.</p>
+
+      <p>The chief executive therefore commissioned an Activity-Based Management study. The team followed a representative production batch from the time the manufacturing department accepted the order until the finished goods were completed.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Current Time</th>
+            <th>Proposed Reduction</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Machining and conversion</td>
+            <td>18 hours</td>
+            <td>0 hours</td>
+          </tr>
+          <tr>
+            <td>Waiting for machine availability</td>
+            <td>12 hours</td>
+            <td>5 hours</td>
+          </tr>
+          <tr>
+            <td>Inspection</td>
+            <td>4 hours</td>
+            <td>1 hour</td>
+          </tr>
+          <tr>
+            <td>Movement between departments</td>
+            <td>8 hours</td>
+            <td>4 hours</td>
+          </tr>
+          <tr>
+            <td>Waiting for materials</td>
+            <td>6 hours</td>
+            <td>3 hours</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The engineering manager believes that the machining time is genuinely necessary because it changes the physical characteristics of the component. The waiting periods do not improve the product. Inspection is currently performed after production, but management believes improved first-time quality could reduce the need for extensive inspection.</p>
+
+      <p>The movement time exists because related processes are located in separate production areas. The operations team proposes a cellular layout. The purchasing department proposes closer coordination with suppliers so that materials arrive closer to the time they are required.</p>
+
+      <p>In addition to the process analysis, the finance department has identified three activities that consume resources for budgeting purposes:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Rate</th>
+            <th>Expected Driver Volume</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Production scheduling</td>
+            <td>₹2,000 per schedule</td>
+            <td>120 schedules</td>
+          </tr>
+          <tr>
+            <td>Material purchase orders</td>
+            <td>₹1,500 per order</td>
+            <td>300 orders</td>
+          </tr>
+          <tr>
+            <td>Quality inspections</td>
+            <td>₹900 per inspection</td>
+            <td>500 inspections</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The finance director wants the management team to understand that ABM is not simply a programme for cutting departmental budgets. It should identify activities, understand their cost drivers, distinguish value-added from non-value-added work and use the resulting information for continuous improvement and better resource planning.</p>
+
+      <p>The board has asked for both the current and improved manufacturing cycle efficiency and an activity-based resource budget.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "SPM_C7_HARD_020_1",
+        question: "What is the current manufacturing cycle time for the representative batch?",
+        options: [
+          "42 hours",
+          "46 hours",
+          "48 hours",
+          "50 hours"
+        ],
+        answer: 2,
+        reason: "MCT = 18 + 12 + 4 + 8 + 6 = 48 hours."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_020_2",
+        question: "What is the current Manufacturing Cycle Efficiency?",
+        options: [
+          "35.00%",
+          "37.50%",
+          "40.00%",
+          "45.00%"
+        ],
+        answer: 1,
+        reason: "MCE = 18 ÷ 48 × 100 = 37.50%."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_020_3",
+        question: "What will be the manufacturing cycle time after all proposed reductions?",
+        options: [
+          "34 hours",
+          "35 hours",
+          "36 hours",
+          "38 hours"
+        ],
+        answer: 1,
+        reason: "New waiting = 12−5 = 7 hours. New inspection = 4−1 = 3 hours. New movement = 8−4 = 4 hours. New material waiting = 6−3 = 3 hours. New MCT = 18 + 7 + 3 + 4 + 3 = 35 hours."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_020_4",
+        question: "What is the activity-based budget for the three listed activities?",
+        options: [
+          "₹10.40 lakh",
+          "₹10.90 lakh",
+          "₹11.40 lakh",
+          "₹11.90 lakh"
+        ],
+        answer: 2,
+        reason: "Scheduling = 120×₹2,000 = ₹2.40 lakh. Purchase orders = 300×₹1,500 = ₹4.50 lakh. Inspections = 500×₹900 = ₹4.50 lakh. Total = ₹11.40 lakh."
+      },
+
+      {
+        question_id: "SPM_C7_HARD_020_5",
+        question: "Which combination best represents the ABM approach described in the case?",
+        options: [
+          "Reduce every department's budget by the same percentage",
+          "Identify activities and cost drivers, reduce NVA activities and improve the efficiency of necessary activities",
+          "Allocate all overhead equally to every product",
+          "Focus only on increasing production volume"
+        ],
+        answer: 1,
+        reason: "ABM uses activity and cost-driver information to manage activities, eliminate or reduce NVA work and improve necessary activities."
+      }
+    ]
+  },
+
+  // =========================================================
+  // MEDIUM 021
+  // =========================================================
+
+  {
+    case_id: "SPM_C7_MEDIUM_021",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Strategic Profitability Analysis",
+      "Growth Component",
+      "Price Recovery",
+      "Productivity"
+    ],
+
+    caseText: `
+      <p><strong>Case Scenario – Northstar Packaging Industries Limited</strong></p>
+
+      <p>Northstar Packaging Industries Limited manufactures printed packaging material
+      for pharmaceutical and consumer-product companies. During the previous financial
+      year, the company concentrated mainly on standard packaging orders. The management
+      believed that increasing production volume would improve profitability because a
+      substantial portion of its production infrastructure was already available.</p>
+
+      <p>During the current year, demand increased considerably. Northstar accepted several
+      large orders from existing customers and also secured contracts from two new
+      customers. However, the increase in volume was accompanied by changes in selling
+      prices and raw-material prices. The production department also introduced a
+      redesigned cutting process that reduced the quantity of paper required for each
+      finished unit.</p>
+
+      <p>The management accountant was instructed to analyse the change in profitability
+      using the three components of strategic profitability analysis: growth, price
+      recovery and productivity.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Previous Year</th>
+            <th>Current Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Units sold</td>
+            <td>70,000</td>
+            <td>85,000</td>
+          </tr>
+          <tr>
+            <td>Selling price per unit</td>
+            <td>₹480</td>
+            <td>₹510</td>
+          </tr>
+          <tr>
+            <td>Paper required per unit at previous-year efficiency</td>
+            <td>1.80 kg</td>
+            <td>1.80 kg</td>
+          </tr>
+          <tr>
+            <td>Actual paper used per current-year unit</td>
+            <td>-</td>
+            <td>1.62 kg</td>
+          </tr>
+          <tr>
+            <td>Paper price per kg</td>
+            <td>₹65</td>
+            <td>₹72</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The previous-year paper consumption of 1.80 kg per unit is to be treated as the
+      benchmark efficiency for productivity analysis. The current-year output is to be
+      used for analysing the price recovery effect.</p>
+
+      <p>The production manager initially argued that the entire increase in revenue was
+      due to the additional 15,000 units sold. The finance director rejected this view,
+      explaining that the higher selling price must be isolated from the volume effect.</p>
+
+      <p>Similarly, the procurement manager believed that the increase in paper price
+      represented a deterioration in production performance. The management accountant
+      explained that a change in input price is a price recovery issue, whereas a change
+      in quantity of input consumed for a given output is a productivity issue.</p>
+
+      <p>The board wants the analysis to determine whether the new cutting process actually
+      generated a productivity benefit after separating the impact of higher paper prices.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SPM_C7_MEDIUM_021_1",
+        question: "What is the revenue effect of growth for Northstar?",
+        options: [
+          "₹6,80,000 F",
+          "₹7,20,000 F",
+          "₹72,00,000 F",
+          "₹45,00,000 F"
+        ],
+        answer: 2,
+        reason: "Growth revenue effect = (85,000 − 70,000) × ₹480 = ₹72,00,000 F."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_021_2",
+        question: "What is the revenue effect of price recovery?",
+        options: [
+          "₹25,50,000 F",
+          "₹21,60,000 F",
+          "₹30,00,000 F",
+          "₹72,00,000 F"
+        ],
+        answer: 0,
+        reason: "Price recovery revenue effect = (₹510 − ₹480) × 85,000 = ₹25,50,000 F."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_021_3",
+        question: "At previous-year efficiency, how much paper would be required for current-year output?",
+        options: [
+          "137,700 kg",
+          "153,000 kg",
+          "126,000 kg",
+          "145,500 kg"
+        ],
+        answer: 1,
+        reason: "85,000 × 1.80 kg = 153,000 kg."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_021_4",
+        question: "What is the material productivity benefit using the current-year material price?",
+        options: [
+          "₹10,15,200 F",
+          "₹11,01,600 F",
+          "₹12,24,000 F",
+          "₹9,90,000 F"
+        ],
+        answer: 1,
+        reason: "Material saving = 153,000 − 137,700 = 15,300 kg. Productivity benefit = 15,300 × ₹72 = ₹11,01,600 F."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_021_5",
+        question: "Which change represents productivity improvement rather than price recovery?",
+        options: [
+          "Selling more units",
+          "Increasing selling price from ₹480 to ₹510",
+          "Reducing paper consumption from 1.80 kg to 1.62 kg per unit",
+          "Increasing paper price from ₹65 to ₹72 per kg"
+        ],
+        answer: 2,
+        reason: "Productivity concerns efficiency or quantity of resources consumed. Paper consumption per unit fell from 1.80 kg to 1.62 kg."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 022
+  // =========================================================
+
+  {
+    case_id: "SPM_C7_MEDIUM_022",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Direct Product Profitability",
+      "ABC",
+      "Retailing",
+      "Product Range"
+    ],
+
+    caseText: `
+      <p><strong>Case Scenario – GreenMart Retail Network</strong></p>
+
+      <p>GreenMart operates a chain of supermarkets and has traditionally evaluated
+      products mainly by comparing selling price with purchase price. The purchasing
+      department recently noticed that certain products with attractive gross margins
+      were consuming disproportionately large amounts of warehouse and shelf resources.</p>
+
+      <p>The finance department therefore introduced Direct Product Profitability (DPP).
+      Under the revised system, directly attributable warehouse, transportation and store
+      costs are assigned to products according to their resource consumption.</p>
+
+      <p>Three products were selected for detailed analysis. Fresh Milk requires
+      refrigeration during storage and display. Packaged Lentils require normal storage
+      but occupy considerable shelf space. Premium Toothpaste has a relatively high
+      selling price and gross margin but consumes less distribution space.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Fresh Milk</th>
+            <th>Packaged Lentils</th>
+            <th>Premium Toothpaste</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Selling price per unit</td>
+            <td>₹70</td>
+            <td>₹120</td>
+            <td>₹180</td>
+          </tr>
+          <tr>
+            <td>Purchase price per unit</td>
+            <td>₹50</td>
+            <td>₹72</td>
+            <td>₹105</td>
+          </tr>
+          <tr>
+            <td>Warehouse cost per unit</td>
+            <td>₹5</td>
+            <td>₹7</td>
+            <td>₹4</td>
+          </tr>
+          <tr>
+            <td>Transport cost per unit</td>
+            <td>₹4</td>
+            <td>₹5</td>
+            <td>₹3</td>
+          </tr>
+          <tr>
+            <td>Store cost per unit</td>
+            <td>₹7</td>
+            <td>₹10</td>
+            <td>₹6</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The store manager initially recommended increasing shelf allocation for Fresh
+      Milk because it generated a positive gross margin. However, the supply-chain
+      manager pointed out that the product consumed additional resources because of
+      refrigeration and handling requirements.</p>
+
+      <p>The marketing manager also cautioned that a product with a relatively low DPP
+      should not automatically be removed. Customers may expect the retailer to offer
+      a complete range of products.</p>
+
+      <p>The board therefore asked the finance team to calculate gross margin and DPP
+      before making merchandising decisions.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SPM_C7_MEDIUM_022_1",
+        question: "What is the gross margin per unit on Fresh Milk?",
+        options: [
+          "₹15",
+          "₹20",
+          "₹18",
+          "₹25"
+        ],
+        answer: 1,
+        reason: "Gross margin = ₹70 − ₹50 = ₹20."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_022_2",
+        question: "What is the DPP per unit of Fresh Milk?",
+        options: [
+          "₹2",
+          "₹4",
+          "₹6",
+          "₹8"
+        ],
+        answer: 1,
+        reason: "DPP = ₹20 − ₹5 − ₹4 − ₹7 = ₹4."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_022_3",
+        question: "What is the DPP per unit of Packaged Lentils?",
+        options: [
+          "₹24",
+          "₹26",
+          "₹28",
+          "₹30"
+        ],
+        answer: 1,
+        reason: "Gross margin = ₹120 − ₹72 = ₹48. DPP = ₹48 − ₹7 − ₹5 − ₹10 = ₹26."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_022_4",
+        question: "What is the DPP per unit of Premium Toothpaste?",
+        options: [
+          "₹60",
+          "₹62",
+          "₹65",
+          "₹68"
+        ],
+        answer: 1,
+        reason: "Gross margin = ₹180 − ₹105 = ₹75. DPP = ₹75 − ₹4 − ₹3 − ₹6 = ₹62."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_022_5",
+        question: "Which product has the highest DPP per unit?",
+        options: [
+          "Fresh Milk",
+          "Packaged Lentils",
+          "Premium Toothpaste",
+          "All three have equal DPP"
+        ],
+        answer: 2,
+        reason: "Premium Toothpaste has DPP of ₹62, compared with ₹26 for Lentils and ₹4 for Milk."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 023
+  // =========================================================
+
+  {
+    case_id: "SPM_C7_MEDIUM_023",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Customer Profitability",
+      "ABC",
+      "Cost to Serve"
+    ],
+
+    caseText: `
+      <p><strong>Case Scenario – Meridian Industrial Supplies</strong></p>
+
+      <p>Meridian Industrial Supplies sells electrical control components to industrial
+      customers. The sales department has traditionally ranked customers according to
+      annual purchase value. The new CFO believes that this approach ignores an important
+      issue: customers consume different levels of support and distribution resources.</p>
+
+      <p>Three customers were therefore selected for an ABC-based customer profitability
+      study. All customers purchase the same standard component and production cost is
+      identical for every unit. Their ordering and service behaviour, however, is very
+      different.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Alpha</th>
+            <th>Beta</th>
+            <th>Gamma</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Units purchased</td>
+            <td>1,500</td>
+            <td>2,500</td>
+            <td>1,000</td>
+          </tr>
+          <tr>
+            <td>List price per unit</td>
+            <td>₹600</td>
+            <td>₹600</td>
+            <td>₹600</td>
+          </tr>
+          <tr>
+            <td>Discount</td>
+            <td>5%</td>
+            <td>10%</td>
+            <td>2%</td>
+          </tr>
+          <tr>
+            <td>Production cost per unit</td>
+            <td>₹420</td>
+            <td>₹420</td>
+            <td>₹420</td>
+          </tr>
+          <tr>
+            <td>Orders</td>
+            <td>6</td>
+            <td>25</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Deliveries</td>
+            <td>6</td>
+            <td>30</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Technical support cases</td>
+            <td>3</td>
+            <td>15</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Meridian incurs ₹1,200 per order, ₹2,000 per delivery and ₹600 per technical
+      support case. These are customer-specific incremental costs.</p>
+
+      <p>The sales manager wants to give Beta an additional discount because Beta purchases
+      the largest quantity. The CFO believes the decision must consider both contribution
+      generated and the resources consumed in serving the customer.</p>
+
+      <p>The CFO has therefore asked the management accountant to demonstrate how ABC can
+      change the interpretation of customer profitability.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SPM_C7_MEDIUM_023_1",
+        question: "What is Alpha's net selling price per unit after the stated discount?",
+        options: [
+          "₹560",
+          "₹570",
+          "₹575",
+          "₹580"
+        ],
+        answer: 1,
+        reason: "₹600 × 95% = ₹570."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_023_2",
+        question: "What is Alpha's contribution per unit before customer-serving activity costs?",
+        options: [
+          "₹130",
+          "₹140",
+          "₹150",
+          "₹160"
+        ],
+        answer: 2,
+        reason: "₹570 − ₹420 = ₹150."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_023_3",
+        question: "What are Alpha's total customer-serving activity costs?",
+        options: [
+          "₹18,000",
+          "₹19,500",
+          "₹21,000",
+          "₹22,500"
+        ],
+        answer: 2,
+        reason: "Orders = 6 × ₹1,200 = ₹7,200. Deliveries = 6 × ₹2,000 = ₹12,000. Support = 3 × ₹600 = ₹1,800. Total = ₹21,000."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_023_4",
+        question: "Which customer receives the largest percentage discount?",
+        options: [
+          "Alpha",
+          "Beta",
+          "Gamma",
+          "All receive the same discount"
+        ],
+        answer: 1,
+        reason: "Beta receives a 10% discount, which is the highest among the three."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_023_5",
+        question: "What is the most appropriate basis for evaluating whether an additional customer discount is justified?",
+        options: [
+          "Only the number of units purchased",
+          "Only the customer's sales revenue",
+          "Contribution generated together with resources consumed in serving the customer",
+          "Only the customer's order frequency"
+        ],
+        answer: 2,
+        reason: "Customer profitability should consider both revenue/contribution and customer-specific resource consumption."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 024
+  // =========================================================
+
+  {
+    case_id: "SPM_C7_MEDIUM_024",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Activity Based Budgeting",
+      "Activity Drivers",
+      "Budgeting"
+    ],
+
+    caseText: `
+      <p><strong>Case Scenario – Eastern Distribution Hub</strong></p>
+
+      <p>Eastern Distribution Hub manages warehousing and dispatch operations for several
+      consumer-product manufacturers. In earlier years, the company prepared its annual
+      budget by taking the previous year's departmental expenditure and applying a
+      percentage increase.</p>
+
+      <p>The newly appointed controller believes that this method does not clearly explain
+      why resources are required. For the next quarter, the company has therefore adopted
+      Activity Based Budgeting.</p>
+
+      <p>The management team identified three important activities: processing customer
+      orders, dispatching shipments and handling customer returns.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Cost Driver Rate</th>
+            <th>Expected Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Order processing</td>
+            <td>₹600 per order</td>
+            <td>1,200 orders</td>
+          </tr>
+          <tr>
+            <td>Shipment dispatch</td>
+            <td>₹1,500 per shipment</td>
+            <td>700 shipments</td>
+          </tr>
+          <tr>
+            <td>Returns handling</td>
+            <td>₹1,000 per return</td>
+            <td>150 returns</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Operations expects activity volumes to increase during the festival season.
+      Management therefore wants the budget to reflect the expected workload rather than
+      merely carrying forward historical departmental expenditure.</p>
+
+      <p>The warehouse manager initially argued that ABB was simply another method of
+      calculating departmental costs. The controller explained that ABB starts by
+      identifying the activities expected to be performed, estimating their volume and
+      then determining the resources required.</p>
+
+      <p>The board also wants managers to understand that if the expected activity volume
+      changes, the resource requirement and budget may change accordingly.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SPM_C7_MEDIUM_024_1",
+        question: "What is the budgeted cost of order processing?",
+        options: [
+          "₹6,20,000",
+          "₹7,20,000",
+          "₹8,20,000",
+          "₹9,00,000"
+        ],
+        answer: 1,
+        reason: "1,200 × ₹600 = ₹7,20,000."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_024_2",
+        question: "What is the budgeted cost of shipment dispatch?",
+        options: [
+          "₹9,50,000",
+          "₹10,00,000",
+          "₹10,50,000",
+          "₹11,00,000"
+        ],
+        answer: 2,
+        reason: "700 × ₹1,500 = ₹10,50,000."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_024_3",
+        question: "What is the budgeted cost of returns handling?",
+        options: [
+          "₹1,20,000",
+          "₹1,50,000",
+          "₹1,80,000",
+          "₹2,00,000"
+        ],
+        answer: 1,
+        reason: "150 × ₹1,000 = ₹1,50,000."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_024_4",
+        question: "What is the total ABB for the quarter?",
+        options: [
+          "₹18,50,000",
+          "₹19,20,000",
+          "₹19,80,000",
+          "₹20,50,000"
+        ],
+        answer: 1,
+        reason: "₹7,20,000 + ₹10,50,000 + ₹1,50,000 = ₹19,20,000."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_024_5",
+        question: "Which sequence best represents Activity Based Budgeting?",
+        options: [
+          "Department → historical cost → percentage increase",
+          "Products/services → activities → resource requirements",
+          "Profit → selling price → department",
+          "Sales → profit → historical expenditure"
+        ],
+        answer: 1,
+        reason: "ABB determines expected activities and then derives the resources required to perform them."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM 025
+  // =========================================================
+
+  {
+    case_id: "SPM_C7_MEDIUM_025",
+    difficulty: "medium",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Value Added Activities",
+      "Non Value Added Activities",
+      "Manufacturing Cycle Efficiency",
+      "ABM"
+    ],
+
+    caseText: `
+      <p><strong>Case Scenario – Oakline Modular Furniture</strong></p>
+
+      <p>Oakline Modular Furniture manufactures customised office storage systems. A
+      recent process review revealed that employees spent substantially more time waiting
+      and moving materials than management had previously assumed.</p>
+
+      <p>The operations team mapped the production of one representative batch. Cutting,
+      machining and assembly represented actual conversion work. Between these operations,
+      however, the batch was frequently moved to temporary storage because the next
+      workstation was unavailable. A quality inspection was also conducted after assembly.</p>
+
+      <p>The quality manager argued that inspection was necessary because customers
+      demanded defect-free furniture. The ABM team, however, questioned whether some
+      inspection effort could be reduced by improving the production process and
+      preventing defects at source.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Time per batch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cutting and machining</td>
+            <td>8 hours</td>
+          </tr>
+          <tr>
+            <td>Assembly</td>
+            <td>7 hours</td>
+          </tr>
+          <tr>
+            <td>Waiting for workstation</td>
+            <td>5 hours</td>
+          </tr>
+          <tr>
+            <td>Inspection</td>
+            <td>2 hours</td>
+          </tr>
+          <tr>
+            <td>Movement between departments</td>
+            <td>6 hours</td>
+          </tr>
+          <tr>
+            <td>Waiting for packing</td>
+            <td>4 hours</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>For the purpose of calculating MCE, cutting, machining and assembly are treated
+      as processing time. The complete manufacturing cycle includes processing, waiting,
+      inspection and movement.</p>
+
+      <p>The plant manager believes that reducing unnecessary movement and waiting could
+      substantially improve manufacturing cycle efficiency. The ABM team has suggested
+      cellular manufacturing as one possible solution for reducing movement between
+      departments.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SPM_C7_MEDIUM_025_1",
+        question: "What is the total processing time per batch?",
+        options: [
+          "13 hours",
+          "15 hours",
+          "17 hours",
+          "19 hours"
+        ],
+        answer: 1,
+        reason: "Processing = cutting/machining 8 + assembly 7 = 15 hours."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_025_2",
+        question: "What is the total manufacturing cycle time?",
+        options: [
+          "28 hours",
+          "30 hours",
+          "32 hours",
+          "34 hours"
+        ],
+        answer: 2,
+        reason: "MCT = 8 + 7 + 5 + 2 + 6 + 4 = 32 hours."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_025_3",
+        question: "What is the Manufacturing Cycle Efficiency (MCE)?",
+        options: [
+          "43.75%",
+          "46.88%",
+          "50.00%",
+          "53.13%"
+        ],
+        answer: 1,
+        reason: "MCE = Processing Time / MCT = 15/32 × 100 = 46.875%, approximately 46.88%."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_025_4",
+        question: "If inspection is also classified as non-value-added for this analysis, what is the total non-value-added time?",
+        options: [
+          "15 hours",
+          "17 hours",
+          "19 hours",
+          "21 hours"
+        ],
+        answer: 1,
+        reason: "NVA = waiting 5 + inspection 2 + movement 6 + waiting for packing 4 = 17 hours."
+      },
+      {
+        question_id: "SPM_C7_MEDIUM_025_5",
+        question: "Which approach is most directly aimed at reducing unnecessary movement between departments?",
+        options: [
+          "Cellular manufacturing",
+          "Increasing finished-goods inventory",
+          "Increasing batch size",
+          "Increasing inspection frequency"
+        ],
+        answer: 0,
+        reason: "Cellular manufacturing can place related processes closer together and reduce unnecessary movement."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 026
+  // =========================================================
+
+  {
+    case_id: "SPM_C7_HARD_026",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Strategic Profitability Analysis",
+      "Growth",
+      "Industry Market Size",
+      "Product Differentiation",
+      "Price Recovery",
+      "Productivity"
+    ],
+
+    caseText: `
+      <p><strong>Case Scenario – Vertex Precision Tools Limited</strong></p>
+
+      <p>Vertex Precision Tools Limited manufactures specialised cutting tools used by
+      automobile component manufacturers. The company operates in a highly competitive
+      industry where overall demand has been increasing, but individual manufacturers
+      have gained or lost market share depending on quality, product design and delivery
+      reliability.</p>
+
+      <p>During the current year Vertex increased its sales volume substantially. The
+      marketing director claimed that the entire increase represented the success of the
+      company's new marketing strategy. The strategy director disagreed because the
+      overall industry market had also expanded.</p>
+
+      <p>The management accountant was therefore asked to separate the volume increase
+      caused by industry market growth from the volume increase caused by Vertex's
+      improved competitive position.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Previous Year</th>
+            <th>Current Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vertex units sold</td>
+            <td>120,000</td>
+            <td>150,000</td>
+          </tr>
+          <tr>
+            <td>Selling price per unit</td>
+            <td>₹750</td>
+            <td>₹790</td>
+          </tr>
+          <tr>
+            <td>Steel consumption per unit at previous efficiency</td>
+            <td>2.00 kg</td>
+            <td>2.00 kg</td>
+          </tr>
+          <tr>
+            <td>Actual current-year steel consumption per unit</td>
+            <td>-</td>
+            <td>1.80 kg</td>
+          </tr>
+          <tr>
+            <td>Steel price per kg</td>
+            <td>₹90</td>
+            <td>₹96</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The overall industry market increased by 10%. Vertex's previous-year volume
+      was 120,000 units. For the purpose of strategic analysis, management will regard
+      the first portion of the volume increase attributable to the 10% industry expansion
+      as the industry market-size effect.</p>
+
+      <p>The remaining increase in Vertex's sales volume is considered to represent the
+      company's improved market position and product differentiation.</p>
+
+      <p>The previous-year operating contribution relevant to the volume analysis was
+      ₹140 per unit. Management wants to use this previous-year amount when measuring
+      the operating-income impact of volume changes so that current-year price and
+      productivity effects are not mixed into the growth analysis.</p>
+
+      <p>The engineering department states that the new tool design reduced steel usage.
+      Procurement, however, points out that the price of steel increased. The CFO wants
+      these two effects to be reported separately.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SPM_C7_HARD_026_1",
+        question: "What is the total increase in Vertex's units sold?",
+        options: [
+          "20,000 units",
+          "25,000 units",
+          "30,000 units",
+          "35,000 units"
+        ],
+        answer: 2,
+        reason: "150,000 − 120,000 = 30,000 units."
+      },
+      {
+        question_id: "SPM_C7_HARD_026_2",
+        question: "How many additional units are attributable to the 10% industry market growth?",
+        options: [
+          "10,000 units",
+          "12,000 units",
+          "15,000 units",
+          "18,000 units"
+        ],
+        answer: 1,
+        reason: "120,000 × 10% = 12,000 units."
+      },
+      {
+        question_id: "SPM_C7_HARD_026_3",
+        question: "How many additional units represent Vertex's growth beyond the industry market growth?",
+        options: [
+          "12,000 units",
+          "15,000 units",
+          "18,000 units",
+          "20,000 units"
+        ],
+        answer: 2,
+        reason: "Total increase 30,000 − industry growth 12,000 = 18,000 units."
+      },
+      {
+        question_id: "SPM_C7_HARD_026_4",
+        question: "What is the operating-income effect attributable to industry market growth?",
+        options: [
+          "₹14.00 lakh F",
+          "₹16.80 lakh F",
+          "₹18.00 lakh F",
+          "₹21.60 lakh F"
+        ],
+        answer: 1,
+        reason: "Industry growth units 12,000 × previous-year contribution ₹140 = ₹16,80,000 F."
+      },
+      {
+        question_id: "SPM_C7_HARD_026_5",
+        question: "What is the steel productivity benefit using the current-year steel price?",
+        options: [
+          "₹24.00 lakh F",
+          "₹25.92 lakh F",
+          "₹28.80 lakh F",
+          "₹30.24 lakh F"
+        ],
+        answer: 2,
+        reason: "Required at old efficiency = 150,000 × 2 = 300,000 kg. Actual = 150,000 × 1.80 = 270,000 kg. Saving = 30,000 × ₹96 = ₹28,80,000 F."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 027
+  // =========================================================
+
+  {
+    case_id: "SPM_C7_HARD_027",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Customer Profitability",
+      "ABC",
+      "Cost to Serve",
+      "Pricing Decisions"
+    ],
+
+    caseText: `
+      <p><strong>Case Scenario – Orion Medical Equipment Supplies</strong></p>
+
+      <p>Orion Medical Equipment Supplies distributes standard diagnostic equipment to
+      hospitals and laboratories. The company has three major customers: Central Hospital,
+      Nova Laboratories and PrimeCare Network.</p>
+
+      <p>All three customers purchase the same equipment and therefore have identical
+      production costs per unit. Their commercial arrangements, however, differ
+      considerably. Some customers place large consolidated orders, while others place
+      frequent smaller orders and require additional deliveries and technical assistance.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Central</th>
+            <th>Nova</th>
+            <th>PrimeCare</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Units purchased</td>
+            <td>2,000</td>
+            <td>2,400</td>
+            <td>1,500</td>
+          </tr>
+          <tr>
+            <td>List price/unit</td>
+            <td>₹1,000</td>
+            <td>₹1,000</td>
+            <td>₹1,000</td>
+          </tr>
+          <tr>
+            <td>Discount</td>
+            <td>4%</td>
+            <td>6%</td>
+            <td>10%</td>
+          </tr>
+          <tr>
+            <td>Production cost/unit</td>
+            <td>₹650</td>
+            <td>₹650</td>
+            <td>₹650</td>
+          </tr>
+          <tr>
+            <td>Orders</td>
+            <td>8</td>
+            <td>24</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Deliveries</td>
+            <td>8</td>
+            <td>30</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Technical support cases</td>
+            <td>4</td>
+            <td>18</td>
+            <td>7</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>ABC analysis assigns ₹2,000 to each order, ₹3,000 to each delivery and ₹800
+      to each technical-support case.</p>
+
+      <p>The sales director proposes giving Nova another 2% discount because Nova buys
+      the largest quantity among the three customers. The CFO argues that the decision
+      cannot be based only on volume because Nova also consumes considerably more
+      customer-service resources.</p>
+
+      <p>The finance department has therefore been asked to calculate contribution and
+      customer-serving activity costs separately before any additional discount is
+      approved.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SPM_C7_HARD_027_1",
+        question: "What is Central Hospital's net selling price per unit?",
+        options: [
+          "₹940",
+          "₹950",
+          "₹960",
+          "₹970"
+        ],
+        answer: 2,
+        reason: "₹1,000 × 96% = ₹960."
+      },
+      {
+        question_id: "SPM_C7_HARD_027_2",
+        question: "What is Central Hospital's total contribution before customer-serving costs?",
+        options: [
+          "₹5,80,000",
+          "₹6,20,000",
+          "₹6,40,000",
+          "₹7,00,000"
+        ],
+        answer: 1,
+        reason: "Contribution/unit = ₹960 − ₹650 = ₹310. Total = 2,000 × ₹310 = ₹6,20,000."
+      },
+      {
+        question_id: "SPM_C7_HARD_027_3",
+        question: "What are Central Hospital's total ABC customer-serving costs?",
+        options: [
+          "₹38,400",
+          "₹40,800",
+          "₹43,200",
+          "₹46,000"
+        ],
+        answer: 2,
+        reason: "Orders = 8 × ₹2,000 = ₹16,000. Deliveries = 8 × ₹3,000 = ₹24,000. Support = 4 × ₹800 = ₹3,200. Total = ₹43,200."
+      },
+      {
+        question_id: "SPM_C7_HARD_027_4",
+        question: "What is Nova's contribution per unit before customer-serving activity costs?",
+        options: [
+          "₹280",
+          "₹290",
+          "₹300",
+          "₹310"
+        ],
+        answer: 1,
+        reason: "Nova net price = ₹1,000 × 94% = ₹940. Contribution = ₹940 − ₹650 = ₹290."
+      },
+      {
+        question_id: "SPM_C7_HARD_027_5",
+        question: "If Nova receives an additional 2% discount on the ₹1,000 list price, by how much will contribution per unit fall?",
+        options: [
+          "₹10",
+          "₹15",
+          "₹20",
+          "₹25"
+        ],
+        answer: 2,
+        reason: "Additional discount = 2% × ₹1,000 = ₹20 per unit. Therefore contribution falls by ₹20."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 028
+  // =========================================================
+
+  {
+    case_id: "SPM_C7_HARD_028",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Direct Product Profitability",
+      "ABC",
+      "Resource Consumption",
+      "Retailing",
+      "Inventory Financing"
+    ],
+
+    caseText: `
+      <p><strong>Case Scenario – ValueBasket Supermarket Group</strong></p>
+
+      <p>ValueBasket operates large-format supermarkets. Management has become concerned
+      that traditional gross-margin analysis does not adequately reflect the economic
+      resources consumed by individual products.</p>
+
+      <p>Three products were selected for a Direct Product Profitability study:
+      Frozen Desserts, Packaged Rice and Household Tissues.</p>
+
+      <p>Frozen Desserts have a high gross margin but require refrigerated storage and
+      refrigerated display. Packaged Rice has a moderate gross margin but occupies
+      substantial shelf and warehouse space. Household Tissues have a reasonable gross
+      margin but consume considerable display space because of their bulky packaging.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Frozen Desserts</th>
+            <th>Packaged Rice</th>
+            <th>Household Tissues</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Selling price/unit</td>
+            <td>₹240</td>
+            <td>₹110</td>
+            <td>₹90</td>
+          </tr>
+          <tr>
+            <td>Purchase price/unit</td>
+            <td>₹150</td>
+            <td>₹70</td>
+            <td>₹52</td>
+          </tr>
+          <tr>
+            <td>Warehouse cost/unit</td>
+            <td>₹12</td>
+            <td>₹6</td>
+            <td>₹8</td>
+          </tr>
+          <tr>
+            <td>Transport cost/unit</td>
+            <td>₹10</td>
+            <td>₹5</td>
+            <td>₹6</td>
+          </tr>
+          <tr>
+            <td>Store/display cost/unit</td>
+            <td>₹14</td>
+            <td>₹8</td>
+            <td>₹15</td>
+          </tr>
+          <tr>
+            <td>Inventory financing cost/unit</td>
+            <td>₹3</td>
+            <td>₹2</td>
+            <td>₹1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The management accountant explained that DPP goes beyond gross margin by
+      considering directly attributable product costs associated with distribution,
+      warehousing, store resources and other relevant activities.</p>
+
+      <p>The merchandising manager warned that Household Tissues should not automatically
+      be removed merely because its DPP is lower. Everyday household products can help
+      maintain a complete product range and may encourage customers to purchase other
+      products from the same store.</p>
+
+      <p>The board therefore wants the products ranked using DPP per unit while keeping
+      strategic product-range considerations separate from the numerical ranking.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SPM_C7_HARD_028_1",
+        question: "What is the gross margin per unit on Frozen Desserts?",
+        options: [
+          "₹80",
+          "₹85",
+          "₹90",
+          "₹95"
+        ],
+        answer: 2,
+        reason: "₹240 − ₹150 = ₹90."
+      },
+      {
+        question_id: "SPM_C7_HARD_028_2",
+        question: "What is the DPP per unit of Frozen Desserts?",
+        options: [
+          "₹48",
+          "₹51",
+          "₹54",
+          "₹57"
+        ],
+        answer: 1,
+        reason: "DPP = ₹90 − ₹12 − ₹10 − ₹14 − ₹3 = ₹51."
+      },
+      {
+        question_id: "SPM_C7_HARD_028_3",
+        question: "What is the DPP per unit of Packaged Rice?",
+        options: [
+          "₹19",
+          "₹21",
+          "₹23",
+          "₹25"
+        ],
+        answer: 0,
+        reason: "Gross margin = ₹110 − ₹70 = ₹40. DPP = ₹40 − ₹6 − ₹5 − ₹8 − ₹2 = ₹19."
+      },
+      {
+        question_id: "SPM_C7_HARD_028_4",
+        question: "What is the DPP per unit of Household Tissues?",
+        options: [
+          "₹6",
+          "₹8",
+          "₹10",
+          "₹12"
+        ],
+        answer: 1,
+        reason: "Gross margin = ₹90 − ₹52 = ₹38. DPP = ₹38 − ₹8 − ₹6 − ₹15 − ₹1 = ₹8."
+      },
+      {
+        question_id: "SPM_C7_HARD_028_5",
+        question: "Which product has the highest DPP per unit?",
+        options: [
+          "Packaged Rice",
+          "Household Tissues",
+          "Frozen Desserts",
+          "All products have equal DPP"
+        ],
+        answer: 2,
+        reason: "Frozen Desserts have DPP ₹51, compared with Rice ₹19 and Tissues ₹8."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 029
+  // =========================================================
+
+  {
+    case_id: "SPM_C7_HARD_029",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Activity Based Budgeting",
+      "Activity Flexible Budgeting",
+      "Cost Drivers",
+      "Variance Analysis"
+    ],
+
+    caseText: `
+      <p><strong>Case Scenario – RapidRoute Fulfilment Services</strong></p>
+
+      <p>RapidRoute provides fulfilment services to online retailers. Its major support
+      activities are driven by customer orders processed, deliveries handled and
+      warehouse handling hours.</p>
+
+      <p>At the beginning of the quarter, management prepared an activity-based budget.
+      However, actual activity was lower than expected because one major customer
+      temporarily shifted part of its fulfilment work to another provider.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Rate</th>
+            <th>Original Budget Activity</th>
+            <th>Actual Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Order processing</td>
+            <td>₹450/order</td>
+            <td>1,600</td>
+            <td>1,300</td>
+          </tr>
+          <tr>
+            <td>Delivery handling</td>
+            <td>₹1,600/delivery</td>
+            <td>900</td>
+            <td>750</td>
+          </tr>
+          <tr>
+            <td>Warehouse handling</td>
+            <td>₹700/hour</td>
+            <td>1,100</td>
+            <td>950</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The operations director compared actual expenditure with the original budget
+      and concluded that the department had performed poorly because the original budget
+      represented a higher level of activity.</p>
+
+      <p>The controller disagreed and explained that management should prepare an activity
+      flexible budget at the actual level of activity. If fewer orders are processed,
+      fewer resources should normally be expected to be consumed by order-processing
+      activities.</p>
+
+      <p>The finance team therefore recalculated expected costs using the same activity
+      rates but the actual activity volumes.</p>
+
+      <p>Management intends to use this information to distinguish between changes caused
+      simply by lower activity and genuine efficiency or spending differences.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SPM_C7_HARD_029_1",
+        question: "What was the original budgeted cost of order processing?",
+        options: [
+          "₹6,80,000",
+          "₹7,20,000",
+          "₹7,50,000",
+          "₹8,00,000"
+        ],
+        answer: 1,
+        reason: "1,600 × ₹450 = ₹7,20,000."
+      },
+      {
+        question_id: "SPM_C7_HARD_029_2",
+        question: "What is the flexible budget cost for order processing at actual activity?",
+        options: [
+          "₹5,40,000",
+          "₹5,65,000",
+          "₹5,85,000",
+          "₹6,00,000"
+        ],
+        answer: 2,
+        reason: "1,300 × ₹450 = ₹5,85,000."
+      },
+      {
+        question_id: "SPM_C7_HARD_029_3",
+        question: "What is the flexible budget cost for delivery handling?",
+        options: [
+          "₹11,20,000",
+          "₹12,00,000",
+          "₹12,50,000",
+          "₹13,20,000"
+        ],
+        answer: 1,
+        reason: "750 × ₹1,600 = ₹12,00,000."
+      },
+      {
+        question_id: "SPM_C7_HARD_029_4",
+        question: "What is the flexible budget cost for warehouse handling?",
+        options: [
+          "₹6,30,000",
+          "₹6,50,000",
+          "₹6,65,000",
+          "₹6,90,000"
+        ],
+        answer: 2,
+        reason: "950 × ₹700 = ₹6,65,000."
+      },
+      {
+        question_id: "SPM_C7_HARD_029_5",
+        question: "Why is an activity flexible budget useful in this situation?",
+        options: [
+          "It ignores changes in activity",
+          "It adjusts expected activity-related costs to the actual activity level",
+          "It assumes all costs are fixed",
+          "It removes the need for activity drivers"
+        ],
+        answer: 1,
+        reason: "Activity flexible budgeting adjusts expected resource consumption to the actual activity level."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD 030
+  // =========================================================
+
+  {
+    case_id: "SPM_C7_HARD_030",
+    difficulty: "hard",
+    case_chapter: "Chapter7",
+    case_topic: [
+      "Activity Based Management",
+      "Value Added Activities",
+      "Non Value Added Activities",
+      "MCE",
+      "Activity Based Budgeting",
+      "Continuous Improvement"
+    ],
+
+    caseText: `
+      <p><strong>Case Scenario – Apex Industrial Controls Limited</strong></p>
+
+      <p>Apex Industrial Controls Limited manufactures customised control panels for
+      industrial plants. The company has grown rapidly, but its manufacturing process
+      has become increasingly complex. Management recently discovered that an order
+      requiring only 16 hours of actual processing remained inside the factory for
+      considerably longer.</p>
+
+      <p>The ABM team was asked to trace the entire manufacturing cycle. The study found
+      that the order spent time waiting for machine availability, waiting for inspection,
+      being moved between departments and waiting for material from stores.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Current Time</th>
+            <th>Potential Reduction</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Actual processing</td>
+            <td>16 hours</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Waiting for machine</td>
+            <td>10 hours</td>
+            <td>4 hours</td>
+          </tr>
+          <tr>
+            <td>Inspection</td>
+            <td>4 hours</td>
+            <td>1 hour</td>
+          </tr>
+          <tr>
+            <td>Movement</td>
+            <td>7 hours</td>
+            <td>3 hours</td>
+          </tr>
+          <tr>
+            <td>Material waiting</td>
+            <td>5 hours</td>
+            <td>2 hours</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The engineering manager proposed preventive quality measures that could reduce
+      inspection time. The production manager proposed rearranging the factory into
+      manufacturing cells to reduce movement. The purchasing manager proposed better
+      coordination between suppliers, stores and production to reduce material waiting.</p>
+
+      <p>The ABM team emphasised that the objective is not simply to cut every activity.
+      Actual processing is necessary to transform the product. Inspection may be reduced
+      where effective preventive quality systems are introduced, but quality assurance
+      cannot simply be eliminated without an alternative control.</p>
+
+      <p>The finance team also prepared an activity-based budget for support activities.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Support Activity</th>
+            <th>Expected Driver Volume</th>
+            <th>Cost per Driver Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Production scheduling</td>
+            <td>150 schedules</td>
+            <td>₹2,200</td>
+          </tr>
+          <tr>
+            <td>Purchase orders</td>
+            <td>280 orders</td>
+            <td>₹1,400</td>
+          </tr>
+          <tr>
+            <td>Quality inspections</td>
+            <td>450 inspections</td>
+            <td>₹850</td>
+          </tr>
+          <tr>
+            <td>Material movements</td>
+            <td>600 movements</td>
+            <td>₹500</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The CEO wants the company to combine process-efficiency analysis with ABB and
+      ABM. Managers have been instructed to identify activities and their cost drivers,
+      distinguish value-added work from non-value-added work, reduce unnecessary
+      activities and improve the efficiency of activities that remain necessary.</p>
+
+      <p>The CEO also warned that a reduction in the quantity of an activity does not
+      automatically mean that customer value has increased. The purpose of ABM is to
+      improve customer value and profitability by managing activities intelligently.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "SPM_C7_HARD_030_1",
+        question: "What is Apex's current Manufacturing Cycle Time?",
+        options: [
+          "38 hours",
+          "40 hours",
+          "42 hours",
+          "44 hours"
+        ],
+        answer: 2,
+        reason: "MCT = 16 + 10 + 4 + 7 + 5 = 42 hours."
+      },
+      {
+        question_id: "SPM_C7_HARD_030_2",
+        question: "What is Apex's current Manufacturing Cycle Efficiency?",
+        options: [
+          "35.00%",
+          "38.10%",
+          "40.00%",
+          "42.86%"
+        ],
+        answer: 1,
+        reason: "MCE = 16/42 × 100 = 38.095%, approximately 38.10%."
+      },
+      {
+        question_id: "SPM_C7_HARD_030_3",
+        question: "What will be the revised MCT if all stated potential reductions are achieved?",
+        options: [
+          "30 hours",
+          "32 hours",
+          "34 hours",
+          "36 hours"
+        ],
+        answer: 1,
+        reason: "New waiting = 10 − 4 = 6 hours. New inspection = 4 − 1 = 3 hours. New movement = 7 − 3 = 4 hours. New material waiting = 5 − 2 = 3 hours. Revised MCT = 16 + 6 + 3 + 4 + 3 = 32 hours."
+      },
+      {
+        question_id: "SPM_C7_HARD_030_4",
+        question: "What is the total ABB cost for the four support activities?",
+        options: [
+          "₹13,50,000",
+          "₹13,80,000",
+          "₹14,04,500",
+          "₹14,40,000"
+        ],
+        answer: 2,
+        reason: "Scheduling = 150 × ₹2,200 = ₹3,30,000. Purchase orders = 280 × ₹1,400 = ₹3,92,000. Inspections = 450 × ₹850 = ₹3,82,500. Material movements = 600 × ₹500 = ₹3,00,000. Total = ₹14,04,500."
+      },
+      {
+        question_id: "SPM_C7_HARD_030_5",
+        question: "Which statement best represents the ABM approach described in the case?",
+        options: [
+          "Reduce every activity regardless of its purpose",
+          "Allocate all overhead equally among products",
+          "Identify activities and drivers, reduce non-value-added activities and improve necessary activities",
+          "Increase inspection and movement to improve profitability"
+        ],
+        answer: 2,
+        reason: "ABM uses activity information to manage cost drivers, reduce NVA activities and improve the efficiency of necessary activities."
+      }
+    ]
   }
 
 
