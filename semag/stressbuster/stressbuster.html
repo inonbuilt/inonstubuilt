@@ -2,22 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <link rel="canonical" href="https://www.calciumnotes.com/semag/stressbuster/stressbuster.html">
-    <title>CA Final Stress Buster | Interactive Smash & Physics Game | Calcium Notes</title>
+    <title>CA Stress Buster | Interactive Smash & Physics Game | Calcium Notes</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="title" content="CA Final Stress Buster | Interactive Smash & Physics Game | Calcium Notes">
-    <meta name="description" content="Play the interactive CA Final Stress Buster physics game. Smash FR, AFM, Audit, DT, and IBS subject blocks with a cricket bat or toss them with hand physics on Calcium Notes.">
-    <meta name="keywords" content="CA Final Stress Buster, CA Exam Stress Buster, CA Game, Smash Subject Blocks, FR, DT, Audit, AFM, Matter.js Physics, Calcium Notes">
+    <meta name="title" content="CA Stress Buster | Interactive Smash & Physics Game | Calcium Notes">
+    <meta name="description" content="Play the hyper-realistic CA Stress Buster physics game. Smash FR, AFM, Audit, DT, and IBS subject blocks with procedural cricket bat acoustic audio, physical rigid-body shard fracturing, 3D textbook depth, and mobile touch controls on Calcium Notes.">
+    <meta name="keywords" content="CA Stress Buster, CA Exam Stress Buster, CA Game, Web Audio API, Rigid Body Shards, Physics Game, Smash Subject Blocks, FR, DT, Audit, AFM, Matter.js Physics, Calcium Notes">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Calcium Notes">
     <meta name="theme-color" content="#0a0a12">
 
+    <!-- Mobile App Settings -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="CA Final Stress Buster | Interactive Physics Game">
-    <meta property="og:description" content="Relieve CA exam burnout by smashing subject blocks into vibrant powder explosions!">
+    <meta property="og:title" content="CA Stress Buster | Interactive Physics Game">
+    <meta property="og:description" content="Relieve CA exam burnout! Smash textbook blocks into physical tumbling shards and vivid powder bursts with realistic bat acoustics!">
     <meta property="og:url" content="https://www.calciumnotes.com/semag/stressbuster/stressbuster.html">
 
     <!-- Google Analytics (G-YYJ8R39EXM) -->
@@ -36,30 +41,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 
     <style>
+        * {
+            -webkit-tap-highlight-color: transparent;
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0; padding: 0; overflow: hidden; background-color: #0a0a12; color: #fff; font-family: 'Segoe UI', Tahoma, sans-serif;
+            touch-action: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            overscroll-behavior: none;
         }
         
         /* The main UI container */
         #ui-layer {
-            position: absolute; top: 20px; left: 30px; z-index: 1000; pointer-events: none; transition: opacity 0.3s;
+            position: absolute; top: 18px; left: 22px; z-index: 1000; pointer-events: none; transition: opacity 0.3s;
+            max-width: calc(100vw - 44px);
         }
 
-        h2 { margin: 0 0 10px 0; color: #f39c12; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); pointer-events: auto; }
+        .title-row {
+            display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; pointer-events: auto;
+        }
+
+        h2 { 
+            margin: 0; color: #f39c12; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+            font-size: 1.5rem; letter-spacing: 0.5px;
+        }
+
+        #mobile-hint {
+            font-size: 12px; color: #94a3b8; font-weight: 500;
+        }
         
-        #controls { display: flex; gap: 10px; pointer-events: auto; flex-wrap: wrap; }
+        #controls { display: flex; gap: 8px; pointer-events: auto; flex-wrap: wrap; align-items: center; }
         
         .mode-btn {
-            padding: 10px 20px; font-size: 15px; font-weight: bold; background-color: #2a2a35; color: #aaa;
-            border: 2px solid #444; border-radius: 8px; cursor: pointer; transition: all 0.2s;
-            display: flex; align-items: center; gap: 8px;
+            padding: 8px 15px; font-size: 13.5px; font-weight: bold; background-color: #2a2a35; color: #cbd5e1;
+            border: 2px solid #444; border-radius: 8px; cursor: pointer; transition: all 0.15s ease;
+            display: inline-flex; align-items: center; gap: 6px; user-select: none; min-height: 38px;
         }
+        .mode-btn:active { transform: scale(0.96); }
         .mode-btn:hover { background-color: #3a3a45; }
         .mode-btn.active { background-color: #f39c12; color: #111; border-color: #f39c12; box-shadow: 0 0 15px rgba(243, 156, 18, 0.4); }
         
         #btn-add { background-color: #1b4332; border-color: #2d6a4f; color: #d8f3dc; }
         #btn-add:hover { background-color: #2d6a4f; }
         #btn-add:active { transform: scale(0.95); }
+
+        #btn-sound { background-color: #283044; border-color: #435072; color: #cbd5e1; }
+        #btn-sound:hover { background-color: #384360; }
+        #btn-sound.muted { background-color: #4a2828; border-color: #723c3c; color: #f87171; }
 
         #btn-settings { background-color: #4a4e69; border-color: #9a8c98; color: #f2e9e4; }
         #btn-settings:hover { background-color: #22223b; }
@@ -69,41 +101,46 @@
 
         /* The Tiny Show UI Button (Hidden by default) */
         #btn-show-ui {
-            position: absolute; top: 20px; left: 20px; z-index: 1001; display: none; pointer-events: auto;
-            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); color: #fff;
-            padding: 8px 12px; border-radius: 20px; cursor: pointer; backdrop-filter: blur(5px);
+            position: absolute; top: 16px; left: 16px; z-index: 1001; display: none; pointer-events: auto;
+            background: rgba(20, 24, 38, 0.9); border: 1px solid rgba(243, 156, 18, 0.5); color: #f39c12;
+            padding: 8px 16px; border-radius: 20px; cursor: pointer; backdrop-filter: blur(8px);
+            font-size: 13px; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            min-height: 40px;
         }
-        #btn-show-ui:hover { background: rgba(255,255,255,0.2); }
+        #btn-show-ui:hover { background: rgba(243, 156, 18, 0.2); color: #fff; }
 
         /* Settings Panel Styling */
         #settings-panel {
-            position: absolute; top: 80px; left: 0; background: rgba(20, 20, 30, 0.95);
-            border: 2px solid #444; border-radius: 12px; padding: 20px; width: 300px;
+            position: absolute; top: 80px; left: 0; background: rgba(18, 22, 36, 0.96);
+            border: 2px solid #444; border-radius: 12px; padding: 18px; width: 310px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.8); pointer-events: auto;
-            display: none; flex-direction: column; gap: 15px; backdrop-filter: blur(5px);
+            display: none; flex-direction: column; gap: 12px; backdrop-filter: blur(10px);
+            z-index: 1002;
         }
         .setting-group { display: flex; flex-direction: column; gap: 5px; }
-        .setting-group label { font-size: 14px; color: #f39c12; font-weight: bold; display: flex; justify-content: space-between; }
-        .setting-group input[type="range"] { width: 100%; cursor: pointer; }
+        .setting-group label { font-size: 13px; color: #f39c12; font-weight: bold; display: flex; justify-content: space-between; }
+        .setting-group input[type="range"] { width: 100%; cursor: pointer; height: 6px; }
         .setting-group select { 
             padding: 8px; background: #2a2a35; color: #fff; border: 1px solid #444; 
-            border-radius: 6px; font-size: 14px; outline: none; cursor: pointer; 
+            border-radius: 6px; font-size: 13px; outline: none; cursor: pointer; 
         }
 
         #game-container {
             width: 100vw; height: 100vh; background: radial-gradient(circle at center, #1a1a2e 0%, #0d0d1a 100%);
             position: relative; overflow: hidden; cursor: none;
+            touch-action: none; -webkit-user-select: none; user-select: none;
+            perspective: 800px;
         }
 
-        @keyframes shake {
-            0% { transform: translate(1px, 1px) rotate(0deg); }
-            20% { transform: translate(-3px, 0px) rotate(1deg); }
-            40% { transform: translate(1px, -2px) rotate(-1deg); }
-            60% { transform: translate(-3px, 1px) rotate(0deg); }
-            80% { transform: translate(3px, 1px) rotate(-1deg); }
-            100% { transform: translate(1px, -1px) rotate(0deg); }
+        /* Directional Screen Trauma */
+        @keyframes shakeDirectional {
+            0% { transform: translate(var(--sx, 2px), var(--sy, 2px)) rotate(var(--sr, 0deg)); }
+            25% { transform: translate(calc(var(--sx, 2px) * -0.8), calc(var(--sy, 2px) * -0.8)) rotate(calc(var(--sr, 0deg) * -0.8)); }
+            50% { transform: translate(calc(var(--sx, 2px) * 0.5), calc(var(--sy, 2px) * 0.5)); }
+            75% { transform: translate(calc(var(--sx, 2px) * -0.2), calc(var(--sy, 2px) * -0.2)); }
+            100% { transform: translate(0px, 0px) rotate(0deg); }
         }
-        .shake { animation: shake 0.2s cubic-bezier(.36,.07,.19,.97) both; }
+        .shake { animation: shakeDirectional 0.22s cubic-bezier(.36,.07,.19,.97) both; }
         
         #bat {
             position: absolute; width: 80px; height: 200px;
@@ -111,66 +148,157 @@
             background-size: contain; background-repeat: no-repeat; background-position: center bottom;
             pointer-events: none; z-index: 1000;
             transform-origin: 50% 95%; transform: rotate(80deg); transition: transform 0.05s ease-out;
+            filter: drop-shadow(4px 10px 15px rgba(0,0,0,0.7));
         }
-        .swinging { transform: rotate(-60deg) !important; transition: transform 0.08s cubic-bezier(0.1, 0.9, 0.2, 1) !important; }
+        .swinging { transform: rotate(-65deg) !important; transition: transform 0.07s cubic-bezier(0.1, 0.9, 0.2, 1) !important; }
 
-        /* Dynamic Colored Subjects Base Styling */
+        /* Authentic CA Textbook Styling with 3D Depth */
         .subject-block {
-            /* Using CSS variables populated by JavaScript for endless color possibilities */
-            --c1: #555; --c2: #333; --border: #666; 
+            --c1: #555; --c2: #222; --border: #777; 
             
-            background: linear-gradient(135deg, var(--c1), var(--c2)); 
+            background: 
+                linear-gradient(135deg, rgba(255,255,255,0.18) 0%, transparent 40%),
+                linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(255,255,255,0.06) 10%, transparent 20%, transparent 85%, rgba(0,0,0,0.45) 100%),
+                linear-gradient(135deg, var(--c1), var(--c2));
             border: 2px solid var(--border);
-            color: #fff; font-weight: 900; letter-spacing: 1px; display: flex; align-items: center; justify-content: center; text-align: center;
-            position: absolute; border-radius: 6px; box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+            border-left: 8px solid rgba(255,255,255,0.3);
+            color: #fff; font-weight: 900; letter-spacing: 1.2px; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+            position: absolute; border-radius: 6px; 
+            box-shadow: 0 12px 24px rgba(0,0,0,0.65), inset 0 1px 1px rgba(255,255,255,0.35);
             user-select: none; pointer-events: none; transform-origin: center; line-height: 1.1;
-            transition: filter 0.1s ease-out;
+            transition: filter 0.08s ease-out;
+            padding: 4px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.9), 0 0 3px rgba(255,215,0,0.35);
+        }
+
+        .subject-title {
+            font-size: 1em;
+            line-height: 1;
+            font-weight: 900;
+        }
+
+        .subject-subtag {
+            font-size: 0.45em;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.75);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 3px;
         }
         
         /* The Impact Flash Animation */
-        .hit-flash { filter: brightness(2.5) contrast(1.2) !important; }
+        .hit-flash { filter: brightness(2.6) contrast(1.3) !important; }
 
-        /* Level 1 & 2 Damage states now use pure CSS filters to dynamically darken ANY color! */
-        .subject-block.hit-1 { filter: brightness(0.7); }
-        .subject-block.hit-2 { filter: brightness(0.4); color: #ccc; }
+        /* Level 1 & 2 Damage states with darkening and internal stress */
+        .subject-block.hit-1 { filter: brightness(0.75); }
+        .subject-block.hit-2 { filter: brightness(0.45); color: #ddd; }
 
-        .shape-circle { border-radius: 50%; }
+        .shape-circle { border-radius: 50%; border-left-width: 2px; }
 
         /* Realistic Crack SVGs Overlay */
         .subject-block::after {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: opacity 0.2s;
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: opacity 0.15s;
             border-radius: inherit; pointer-events: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M15,0 L20,20 L10,35 L30,55 M85,0 L75,25 L90,45 M0,70 L25,80 L35,100 M100,60 L80,75 L85,100' fill='none' stroke='rgba(255,255,255,0.4)' stroke-width='2' transform='translate(1,1)' stroke-linejoin='round'/%3E%3Cpath d='M15,0 L20,20 L10,35 L30,55 M85,0 L75,25 L90,45 M0,70 L25,80 L35,100 M100,60 L80,75 L85,100' fill='none' stroke='%23111' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M15,0 L20,20 L10,35 L30,55 M85,0 L75,25 L90,45 M0,70 L25,80 L35,100 M100,60 L80,75 L85,100' fill='none' stroke='rgba(255,255,255,0.45)' stroke-width='2' transform='translate(1,1)' stroke-linejoin='round'/%3E%3Cpath d='M15,0 L20,20 L10,35 L30,55 M85,0 L75,25 L90,45 M0,70 L25,80 L35,100 M100,60 L80,75 L85,100' fill='none' stroke='%23111' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E");
             background-size: 100% 100%;
         }
-        .subject-block.hit-1::after { opacity: 0.8; }
+        .subject-block.hit-1::after { opacity: 0.85; }
         
         .subject-block::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: opacity 0.2s;
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: opacity 0.15s;
             border-radius: inherit; pointer-events: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M-5,40 L15,35 L30,50 L55,40 L80,60 L105,45 M40,45 L45,75 L30,100 M65,48 L70,20 L55,0' fill='none' stroke='rgba(255,255,255,0.4)' stroke-width='3' transform='translate(1,1)' stroke-linejoin='round'/%3E%3Cpath d='M-5,40 L15,35 L30,50 L55,40 L80,60 L105,45 M40,45 L45,75 L30,100 M65,48 L70,20 L55,0' fill='none' stroke='%23050505' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M-5,40 L15,35 L30,50 L55,40 L80,60 L105,45 M40,45 L45,75 L30,100 M65,48 L70,20 L55,0' fill='none' stroke='rgba(255,255,255,0.45)' stroke-width='3' transform='translate(1,1)' stroke-linejoin='round'/%3E%3Cpath d='M-5,40 L15,35 L30,50 L55,40 L80,60 L105,45 M40,45 L45,75 L30,100 M65,48 L70,20 L55,0' fill='none' stroke='%23050505' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E");
             background-size: 100% 100%;
         }
         .subject-block.hit-2::before { opacity: 1; }
         
-        .powder { position: absolute; border-radius: 50%; pointer-events: none; transition: opacity 0.8s ease-in; }
+        /* Physical Shard Pieces */
+        .shard-piece {
+            position: absolute; pointer-events: none; transform-origin: center;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.7); z-index: 994;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 10px; font-weight: bold; color: rgba(255,255,255,0.4);
+        }
+
+        /* Fine Powder Burst */
+        .powder { position: absolute; border-radius: 50%; pointer-events: none; transition: opacity 0.7s ease-in; z-index: 993; }
+
+        /* Floor Impact Dust Puff */
+        .floor-dust {
+            position: absolute; border-radius: 50%;
+            background: radial-gradient(circle, rgba(220, 225, 240, 0.4) 0%, rgba(220, 225, 240, 0) 75%);
+            pointer-events: none; z-index: 992;
+            animation: dustPuff 0.55s ease-out forwards;
+        }
+        @keyframes dustPuff {
+            0% { transform: translate(0, 0) scale(0.5); opacity: 0.8; }
+            100% { transform: translate(var(--dx), var(--dy)) scale(2.3); opacity: 0; }
+        }
+
+        /* Touch Spark / Visual Ripple */
+        .touch-spark {
+            position: absolute; width: 40px; height: 40px; margin-left: -20px; margin-top: -20px;
+            border-radius: 50%; background: radial-gradient(circle, rgba(243, 156, 18, 0.85) 0%, rgba(243, 156, 18, 0) 70%);
+            pointer-events: none; z-index: 999; animation: sparkFade 0.25s ease-out forwards;
+        }
+        @keyframes sparkFade {
+            0% { transform: scale(0.3); opacity: 1; }
+            100% { transform: scale(2.0); opacity: 0; }
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            #ui-layer {
+                top: 12px; left: 10px; max-width: calc(100vw - 20px);
+            }
+            .title-row {
+                gap: 6px; margin-bottom: 6px;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+            #mobile-hint {
+                display: block; width: 100%; font-size: 11px;
+            }
+            #controls {
+                gap: 5px;
+            }
+            .mode-btn {
+                padding: 7px 11px; font-size: 12.5px; min-height: 36px; border-radius: 7px; gap: 4px;
+            }
+            #settings-panel {
+                top: auto; bottom: 16px; left: 10px; width: calc(100vw - 20px); max-width: 320px;
+                max-height: 75vh; overflow-y: auto; padding: 14px;
+            }
+            #bat {
+                width: 55px; height: 140px;
+            }
+            #btn-show-ui {
+                top: 12px; left: 12px; padding: 8px 14px; font-size: 12px; min-height: 36px;
+            }
+        }
     </style>
 </head>
 <body>
     
     <!-- Immersive Mode Button -->
-    <button id="btn-show-ui">👁️ Show UI</button>
+    <button id="btn-show-ui">👁️ Show Controls</button>
 
     <div id="ui-layer">
-        <h2>CA Final Stress Buster</h2>
+        <div class="title-row">
+            <h2>CA Stress Buster</h2>
+            <span id="mobile-hint">🏏 Tap or swipe to smash</span>
+        </div>
         <div id="controls">
             <button id="btn-bat" class="mode-btn active">🏏 Bat</button>
             <button id="btn-hand" class="mode-btn">🖐️ Hand</button>
             <button id="btn-add" class="mode-btn">🧱 Drop Blocks</button>
+            <button id="btn-sound" class="mode-btn">🔊 Sound</button>
             <button id="btn-settings" class="mode-btn">⚙️ Settings</button>
             <button id="btn-hide" class="mode-btn">👁️ Hide UI</button>
-            <a href="stresbisterhome.html" class="mode-btn" style="text-decoration: none; color: #f39c12; border-color: rgba(243,156,18,0.4);">📖 Home / Guide</a>
-            <a href="../semag.html" class="mode-btn" style="text-decoration: none; color: #cbd5e1;">← CA Games</a>
+            <a href="stresbisterhome.html" class="mode-btn" style="text-decoration: none; color: #f39c12; border-color: rgba(243,156,18,0.4);">📖 Guide</a>
+            <a href="../semag.html" class="mode-btn" style="text-decoration: none; color: #cbd5e1;">← Games</a>
         </div>
 
         <div id="settings-panel">
@@ -178,7 +306,7 @@
                 <label>Block Color</label>
                 <select id="set-color">
                     <option value="random">🌈 Random Colors</option>
-                    <option value="default">🪨 Stone (Default)</option>
+                    <option value="default">🪨 Stone / Leather (Default)</option>
                     <option value="red">🔥 Ruby Red</option>
                     <option value="blue">🌊 Sapphire Blue</option>
                     <option value="green">🌿 Emerald Green</option>
@@ -189,12 +317,12 @@
                 <label>Block Shape</label>
                 <select id="set-shape">
                     <option value="random">🎲 Random Mix</option>
-                    <option value="rectangle">Standard Rectangle</option>
+                    <option value="rectangle">Standard Volume (Rect)</option>
                     <option value="square">Heavy Square</option>
-                    <option value="circle">Bouncy Circle</option>
+                    <option value="circle">Bouncy Sphere</option>
                 </select>
             </div>
-            <hr style="border: 1px solid #444; width: 100%; margin: 5px 0;">
+            <hr style="border: 1px solid #444; width: 100%; margin: 4px 0;">
             <div class="setting-group">
                 <label>World Gravity <span id="val-grav">1.0</span></label>
                 <input type="range" id="set-grav" min="0.1" max="3" step="0.1" value="1">
@@ -213,6 +341,219 @@
     <div id="game-container"><div id="bat"></div></div>
 
     <script>
+        // ==========================================
+        // 1. PROCEDURAL REALISTIC AUDIO ENGINE (Web Audio API)
+        // ==========================================
+        class SoundEngine {
+            constructor() {
+                this.ctx = null;
+                this.muted = false;
+                this.lastClatterTime = 0;
+            }
+
+            init() {
+                if (!this.ctx) {
+                    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+                    if (AudioCtx) {
+                        this.ctx = new AudioCtx();
+                    }
+                }
+                if (this.ctx && this.ctx.state === 'suspended') {
+                    this.ctx.resume();
+                }
+            }
+
+            toggleMute() {
+                this.init();
+                this.muted = !this.muted;
+                return !this.muted;
+            }
+
+            playWhoosh(intensity = 1.0) {
+                if (this.muted) return;
+                this.init();
+                if (!this.ctx) return;
+
+                const now = this.ctx.currentTime;
+                const bufferSize = Math.floor(this.ctx.sampleRate * 0.14);
+                const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
+                const data = buffer.getChannelData(0);
+                for (let i = 0; i < bufferSize; i++) {
+                    data[i] = Math.random() * 2 - 1;
+                }
+
+                const noise = this.ctx.createBufferSource();
+                noise.buffer = buffer;
+
+                const filter = this.ctx.createBiquadFilter();
+                filter.type = 'bandpass';
+                const baseFreq = 400 * Math.min(Math.max(intensity, 0.7), 2.5);
+                filter.frequency.setValueAtTime(baseFreq, now);
+                filter.frequency.exponentialRampToValueAtTime(baseFreq * 2.8, now + 0.06);
+                filter.frequency.exponentialRampToValueAtTime(250, now + 0.14);
+                filter.Q.value = 2.8;
+
+                const gain = this.ctx.createGain();
+                gain.gain.setValueAtTime(0.01, now);
+                gain.gain.linearRampToValueAtTime(0.16 * Math.min(intensity, 2.0), now + 0.04);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.14);
+
+                noise.connect(filter);
+                filter.connect(gain);
+                gain.connect(this.ctx.destination);
+                noise.start(now);
+            }
+
+            playThwack(power = 1.0, isSweetSpot = false) {
+                if (this.muted) return;
+                this.init();
+                if (!this.ctx) return;
+
+                const now = this.ctx.currentTime;
+                const p = Math.min(Math.max(power, 0.5), 2.5);
+
+                // Body thump (triangle)
+                const osc = this.ctx.createOscillator();
+                const oscGain = this.ctx.createGain();
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(isSweetSpot ? 420 : 330, now);
+                osc.frequency.exponentialRampToValueAtTime(70, now + 0.09);
+
+                oscGain.gain.setValueAtTime(0.45 * p, now);
+                oscGain.gain.exponentialRampToValueAtTime(0.001, now + 0.11);
+
+                osc.connect(oscGain);
+                oscGain.connect(this.ctx.destination);
+                osc.start(now);
+                osc.stop(now + 0.12);
+
+                // Acoustic wood crack transient
+                const bufferSize = Math.floor(this.ctx.sampleRate * 0.04);
+                const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
+                const data = buffer.getChannelData(0);
+                for (let i = 0; i < bufferSize; i++) {
+                    data[i] = (Math.random() * 2 - 1) * Math.exp(-i / (bufferSize * 0.2));
+                }
+
+                const noise = this.ctx.createBufferSource();
+                noise.buffer = buffer;
+                const nFilter = this.ctx.createBiquadFilter();
+                nFilter.type = 'bandpass';
+                nFilter.frequency.value = isSweetSpot ? 3000 : 2100;
+                nFilter.Q.value = 2.4;
+
+                const nGain = this.ctx.createGain();
+                nGain.gain.setValueAtTime(0.4 * p, now);
+                nGain.gain.exponentialRampToValueAtTime(0.001, now + 0.045);
+
+                noise.connect(nFilter);
+                nFilter.connect(nGain);
+                nGain.connect(this.ctx.destination);
+                noise.start(now);
+            }
+
+            playCrack(severity = 1) {
+                if (this.muted) return;
+                this.init();
+                if (!this.ctx) return;
+
+                const now = this.ctx.currentTime;
+                const osc = this.ctx.createOscillator();
+                const gain = this.ctx.createGain();
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(severity === 1 ? 1900 : 1300, now);
+                osc.frequency.exponentialRampToValueAtTime(260, now + 0.07);
+
+                gain.gain.setValueAtTime(0.24, now);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.07);
+
+                osc.connect(gain);
+                gain.connect(this.ctx.destination);
+                osc.start(now);
+                osc.stop(now + 0.08);
+            }
+
+            playShatter() {
+                if (this.muted) return;
+                this.init();
+                if (!this.ctx) return;
+
+                const now = this.ctx.currentTime;
+
+                // Deep explosion sub-thud
+                const sub = this.ctx.createOscillator();
+                const subGain = this.ctx.createGain();
+                sub.type = 'sine';
+                sub.frequency.setValueAtTime(150, now);
+                sub.frequency.exponentialRampToValueAtTime(32, now + 0.2);
+                subGain.gain.setValueAtTime(0.55, now);
+                subGain.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
+                sub.connect(subGain);
+                subGain.connect(this.ctx.destination);
+                sub.start(now);
+                sub.stop(now + 0.23);
+
+                // Crashing debris burst
+                const bufferSize = Math.floor(this.ctx.sampleRate * 0.18);
+                const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
+                const data = buffer.getChannelData(0);
+                for (let i = 0; i < bufferSize; i++) {
+                    data[i] = (Math.random() * 2 - 1) * Math.exp(-i / (bufferSize * 0.38));
+                }
+
+                const noise = this.ctx.createBufferSource();
+                noise.buffer = buffer;
+                const filter = this.ctx.createBiquadFilter();
+                filter.type = 'lowpass';
+                filter.frequency.setValueAtTime(3400, now);
+                filter.frequency.exponentialRampToValueAtTime(350, now + 0.18);
+
+                const gain = this.ctx.createGain();
+                gain.gain.setValueAtTime(0.42, now);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.19);
+
+                noise.connect(filter);
+                filter.connect(gain);
+                gain.connect(this.ctx.destination);
+                noise.start(now);
+            }
+
+            playClatter(speed) {
+                if (this.muted) return;
+                const nowMs = Date.now();
+                if (nowMs - this.lastClatterTime < 65) return; // Throttle clatter
+                this.lastClatterTime = nowMs;
+
+                this.init();
+                if (!this.ctx) return;
+
+                const now = this.ctx.currentTime;
+                const intensity = Math.min(Math.max((speed - 3) / 10, 0.08), 0.8);
+                const osc = this.ctx.createOscillator();
+                const gain = this.ctx.createGain();
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(280 + Math.random() * 90, now);
+                osc.frequency.exponentialRampToValueAtTime(90, now + 0.05);
+
+                gain.gain.setValueAtTime(0.18 * intensity, now);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
+
+                osc.connect(gain);
+                gain.connect(this.ctx.destination);
+                osc.start(now);
+                osc.stop(now + 0.06);
+            }
+        }
+
+        const sound = new SoundEngine();
+
+        // Auto-init audio context on first user interaction anywhere
+        window.addEventListener('pointerdown', () => sound.init(), { once: true });
+        window.addEventListener('keydown', () => sound.init(), { once: true });
+
+        // ==========================================
+        // 2. MATTER.JS PHYSICS & ENGINE SETUP
+        // ==========================================
         const Engine = Matter.Engine, Runner = Matter.Runner, Bodies = Matter.Bodies, World = Matter.World,
               Events = Matter.Events, Mouse = Matter.Mouse, MouseConstraint = Matter.MouseConstraint, Body = Matter.Body;
 
@@ -225,42 +566,117 @@
         const ceiling = Bodies.rectangle(containerWidth / 2, -1500, containerWidth * 3, 60, { isStatic: true, label: 'border' });
         World.add(world, [ground, leftWall, rightWall, ceiling]);
 
-        window.addEventListener('resize', () => {
+        function updateBoundaries() {
             containerWidth = window.innerWidth; containerHeight = window.innerHeight;
             Body.setPosition(ground, { x: containerWidth / 2, y: containerHeight + 30 });
+            Body.setPosition(leftWall, { x: -30, y: containerHeight / 2 });
             Body.setPosition(rightWall, { x: containerWidth + 30, y: containerHeight / 2 });
             Body.setPosition(ceiling, { x: containerWidth / 2, y: -1500 });
-        });
+        }
 
-        const gameContainer = document.getElementById('game-container'); const batUI = document.getElementById('bat');
-        const subjects = ["FR", "AFM", "AUDIT", "DT", "IDT", "IBS", "SPOM A", "SPOM B", "LAW", "COSTING", "RTPs", "MTPs", "Amendments", "GST", "Penalties", "Appeals"];
-        let activeBlocks = []; let debrisBlocks = []; let mouseX = 0; let mouseY = 0;
+        window.addEventListener('resize', updateBoundaries);
+        window.addEventListener('orientationchange', () => { setTimeout(updateBoundaries, 150); });
 
+        const gameContainer = document.getElementById('game-container'); 
+        const batUI = document.getElementById('bat');
+        const mobileHint = document.getElementById('mobile-hint');
+        
+        // Subject data with subtitle metadata for authentic textbook look
+        const subjectCatalog = [
+            { code: "FR", sub: "Fin. Reporting" },
+            { code: "AFM", sub: "Adv. Finance" },
+            { code: "AUDIT", sub: "Prof. Ethics" },
+            { code: "DT", sub: "Direct Tax" },
+            { code: "IDT", sub: "GST & Customs" },
+            { code: "IBS", sub: "Case Studies" },
+            { code: "SPOM A", sub: "Corp. Law" },
+            { code: "SPOM B", sub: "Costing / SCM" },
+            { code: "LAW", sub: "Economic Law" },
+            { code: "COSTING", sub: "Strat. Cost" },
+            { code: "RTPs", sub: "ICAI Revision" },
+            { code: "MTPs", sub: "Mock Series" },
+            { code: "AMENDMENTS", sub: "Statutory" },
+            { code: "GST", sub: "Tax Audit" },
+            { code: "PENALTIES", sub: "Sec. 271" },
+            { code: "APPEALS", sub: "Tribunal" }
+        ];
+
+        let activeBlocks = []; 
+        let physicalShards = []; 
+        let debrisBlocks = []; 
+        
+        let mouseX = containerWidth / 2; 
+        let mouseY = containerHeight / 2;
+        let lastPointerX = mouseX, lastPointerY = mouseY;
+        let pointerVx = 0, pointerVy = 0;
+        let lastPointerTime = performance.now();
+
+        // Matter.js Mouse and Constraint setup
         const mouse = Mouse.create(gameContainer);
-        const mouseConstraint = MouseConstraint.create(engine, { mouse: mouse, constraint: { stiffness: 0.2, render: { visible: false } } });
-        mouseConstraint.collisionFilter.mask = 0x0000; World.add(world, mouseConstraint);
+        const mouseConstraint = MouseConstraint.create(engine, { 
+            mouse: mouse, 
+            constraint: { stiffness: 0.25, render: { visible: false } } 
+        });
+        mouseConstraint.collisionFilter.mask = 0x0000; 
+        World.add(world, mouseConstraint);
 
-        // UI Listeners
+        // Position bat helper with angle alignment
+        function positionBat(x, y) {
+            mouseX = x; mouseY = y;
+            const isMobile = window.innerWidth <= 768;
+            const offsetX = isMobile ? 28 : 40;
+            const offsetY = isMobile ? 125 : 190;
+            batUI.style.left = (mouseX - offsetX) + 'px';
+            batUI.style.top = (mouseY - offsetY) + 'px';
+        }
+
+        // Initialize bat position
+        positionBat(containerWidth / 2, containerHeight / 2);
+
+        // UI Controls
         const btnBat = document.getElementById('btn-bat'); 
         const btnHand = document.getElementById('btn-hand');
         const btnAdd = document.getElementById('btn-add');
+        const btnSound = document.getElementById('btn-sound');
         const btnSettings = document.getElementById('btn-settings');
         const settingsPanel = document.getElementById('settings-panel');
         const btnHide = document.getElementById('btn-hide');
         const btnShowUI = document.getElementById('btn-show-ui');
 
-        btnBat.addEventListener('click', () => {
-            currentMode = 'bat'; btnBat.classList.add('active'); btnHand.classList.remove('active');
-            gameContainer.style.cursor = 'none'; batUI.style.display = 'block'; mouseConstraint.collisionFilter.mask = 0x0000; 
-        });
-        
-        btnHand.addEventListener('click', () => {
-            currentMode = 'hand'; btnHand.classList.add('active'); btnBat.classList.remove('active');
-            gameContainer.style.cursor = 'grab'; batUI.style.display = 'none'; mouseConstraint.collisionFilter.mask = 0xFFFFFFFF; 
-        });
+        function setMode(mode) {
+            currentMode = mode;
+            if (mode === 'bat') {
+                btnBat.classList.add('active'); btnHand.classList.remove('active');
+                gameContainer.style.cursor = 'none'; batUI.style.display = 'block'; 
+                mouseConstraint.collisionFilter.mask = 0x0000;
+                if (mobileHint) mobileHint.innerText = '🏏 Tap or swipe to smash';
+            } else {
+                btnHand.classList.add('active'); btnBat.classList.remove('active');
+                gameContainer.style.cursor = 'grab'; batUI.style.display = 'none'; 
+                mouseConstraint.collisionFilter.mask = 0xFFFFFFFF;
+                if (mobileHint) mobileHint.innerText = '🖐️ Touch & fling blocks';
+            }
+        }
+
+        btnBat.addEventListener('click', () => setMode('bat'));
+        btnHand.addEventListener('click', () => setMode('hand'));
         
         btnAdd.addEventListener('click', () => { for(let i = 0; i < 3; i++) { setTimeout(spawnBlock, i * 150); } });
-        btnSettings.addEventListener('click', () => { settingsPanel.style.display = settingsPanel.style.display === 'flex' ? 'none' : 'flex'; });
+
+        btnSound.addEventListener('click', () => {
+            const isNowUnmuted = sound.toggleMute();
+            if (isNowUnmuted) {
+                btnSound.classList.remove('muted');
+                btnSound.innerText = '🔊 Sound';
+            } else {
+                btnSound.classList.add('muted');
+                btnSound.innerText = '🔇 Muted';
+            }
+        });
+
+        btnSettings.addEventListener('click', () => { 
+            settingsPanel.style.display = (settingsPanel.style.display === 'flex') ? 'none' : 'flex'; 
+        });
 
         // Hide / Show UI Logic
         btnHide.addEventListener('click', () => {
@@ -282,14 +698,137 @@
         Events.on(mouseConstraint, 'startdrag', () => { if(currentMode === 'hand') gameContainer.style.cursor = 'grabbing'; });
         Events.on(mouseConstraint, 'enddrag', () => { if(currentMode === 'hand') gameContainer.style.cursor = 'grab'; });
 
-        function spawnBlock() {
-            if (activeBlocks.length >= 80) return;
+        function triggerTouchSpark(x, y) {
+            const spark = document.createElement('div');
+            spark.className = 'touch-spark';
+            spark.style.left = x + 'px';
+            spark.style.top = y + 'px';
+            gameContainer.appendChild(spark);
+            setTimeout(() => { spark.remove(); }, 260);
+        }
 
-            const subject = subjects[Math.floor(Math.random() * subjects.length)];
-            const startX = 100 + Math.random() * (containerWidth - 200); 
-            const startY = -100; 
+        function triggerDirectionalShake(dirX = 0, dirY = 0, magnitude = 6) {
+            const angle = Math.atan2(dirY, dirX);
+            const sx = Math.cos(angle) * magnitude;
+            const sy = Math.sin(angle) * magnitude;
+            const sr = (Math.random() - 0.5) * 2;
+
+            gameContainer.style.setProperty('--sx', sx + 'px');
+            gameContainer.style.setProperty('--sy', sy + 'px');
+            gameContainer.style.setProperty('--sr', sr + 'deg');
+
+            gameContainer.classList.remove('shake'); 
+            void gameContainer.offsetWidth; 
+            gameContainer.classList.add('shake');
+        }
+
+        function triggerHaptic(duration = 20) {
+            if (navigator.vibrate) {
+                try { navigator.vibrate(duration); } catch (e) {}
+            }
+        }
+
+        // ==========================================
+        // 3. DIRECTIONAL BAT PHYSICS & SWEET-SPOT HIT
+        // ==========================================
+        function executeBatSwing(targetX, targetY, isTouch = false) {
+            batUI.classList.add('swinging'); 
+            setTimeout(() => { batUI.classList.remove('swinging'); }, 140);
             
-            const sizeMult = parseFloat(document.getElementById('set-size').value);
+            const isMobile = window.innerWidth <= 768;
+            const sizeSetting = parseFloat(document.getElementById('set-size').value || 1);
+            const swingRadius = (isMobile ? 125 : 155) * sizeSetting; 
+            let hitSomething = false;
+
+            // Audio whoosh tied to pointer speed
+            const pointerSpeed = Math.sqrt(pointerVx * pointerVx + pointerVy * pointerVy);
+            sound.playWhoosh(Math.max(1.0, pointerSpeed * 0.8));
+
+            if (isTouch) {
+                triggerTouchSpark(targetX, targetY);
+            }
+
+            activeBlocks.forEach(blockData => {
+                if (blockData.body.isDestroyed) return; 
+                const bx = blockData.body.position.x;
+                const by = blockData.body.position.y;
+                const dx = bx - targetX; 
+                const dy = by - targetY;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                
+                if (distance < swingRadius) {
+                    hitSomething = true; 
+                    blockData.body.isSpawnProtected = false; 
+
+                    // Sweet spot calculation (center of bat blade)
+                    const sweetSpotDist = Math.abs(distance - (swingRadius * 0.65));
+                    const isSweetSpot = sweetSpotDist < 35;
+                    const powerMult = parseFloat(document.getElementById('set-pow').value || 1);
+
+                    // Wooden thwack sound!
+                    sound.playThwack(powerMult, isSweetSpot);
+
+                    // Apply damage
+                    applyDamage(blockData, dx, dy, powerMult);
+                    
+                    if (!blockData.body.isDestroyed) {
+                        // Elastic Squash on impact
+                        triggerBlockSquash(blockData);
+
+                        Body.setVelocity(blockData.body, { 
+                            x: blockData.body.velocity.x * 0.1, 
+                            y: blockData.body.velocity.y * 0.1 
+                        });
+
+                        // Calculate combined launch force from pointer velocity + base power
+                        const hitForce = (isMobile ? 1.1 : 0.95) * powerMult * (isSweetSpot ? 1.35 : 1.0);
+                        const safeDist = Math.max(distance, 1);
+                        
+                        // Blend directional impulse with swing motion vector
+                        const normDx = dx / safeDist;
+                        const normDy = dy / safeDist;
+                        const launchVx = normDx * hitForce + (pointerVx * 0.05);
+                        const launchVy = normDy * hitForce + (pointerVy * 0.05) - (isSweetSpot ? 0.3 : 0);
+
+                        Body.applyForce(blockData.body, blockData.body.position, { 
+                            x: launchVx, 
+                            y: launchVy 
+                        });
+                        
+                        // Impart spin based on edge vs sweetspot
+                        const spin = (isSweetSpot ? 0.8 : 2.5) * (Math.random() - 0.5);
+                        Body.setAngularVelocity(blockData.body, spin);
+                    }
+                }
+            });
+
+            if (hitSomething) {
+                triggerDirectionalShake(pointerVx || 1, pointerVy || 1, 8);
+                triggerHaptic(isTouch ? 35 : 20);
+            }
+        }
+
+        function triggerBlockSquash(blockData) {
+            blockData.squashTimer = 6; // 6 frames of deformation
+        }
+
+        // ==========================================
+        // 4. BLOCK SPAWN & TEXTBOOK STYLING
+        // ==========================================
+        function spawnBlock() {
+            if (activeBlocks.length >= 70) return;
+
+            const item = subjectCatalog[Math.floor(Math.random() * subjectCatalog.length)];
+            const isMobile = containerWidth <= 768;
+            const spawnMargin = isMobile ? 40 : 80;
+            const availableWidth = Math.max(100, containerWidth - spawnMargin * 2);
+            const startX = spawnMargin + Math.random() * availableWidth; 
+            const startY = -90; 
+            
+            const sizeMult = parseFloat(document.getElementById('set-size').value || 1);
+            const mobileScale = isMobile ? 0.82 : 1.0;
+            const finalScale = sizeMult * mobileScale;
+
             let shape = document.getElementById('set-shape').value;
             let colorSetting = document.getElementById('set-color').value;
             
@@ -299,162 +838,443 @@
                 shape = shapes[Math.floor(Math.random() * shapes.length)];
             }
 
-            // Generate Colors
+            // Generate Colors with rich textbook leather/stone tones
             let c1, c2, border, baseColor;
             if (colorSetting === 'random') {
                 const hue = Math.floor(Math.random() * 360);
-                c1 = `hsl(${hue}, 80%, 55%)`; c2 = `hsl(${hue}, 80%, 30%)`; border = `hsl(${hue}, 80%, 75%)`;
-                baseColor = `hsl(${hue}, 80%, 50%)`;
-            } else if (colorSetting === 'red') { c1 = '#e63946'; c2 = '#a81c27'; border = '#ff4d5a'; baseColor = '#e63946'; }
-            else if (colorSetting === 'blue') { c1 = '#4cc9f0'; c2 = '#0077b6'; border = '#00b4d8'; baseColor = '#4cc9f0'; }
-            else if (colorSetting === 'green') { c1 = '#2a9d8f'; c2 = '#1b4332'; border = '#2dc653'; baseColor = '#2a9d8f'; }
-            else if (colorSetting === 'purple') { c1 = '#9d4edd'; c2 = '#3c096c'; border = '#c77dff'; baseColor = '#9d4edd'; }
-            else { c1 = '#555'; c2 = '#333'; border = '#777'; baseColor = '#666666'; } // Default
+                c1 = `hsl(${hue}, 70%, 48%)`; c2 = `hsl(${hue}, 75%, 22%)`; border = `hsl(${hue}, 80%, 70%)`;
+                baseColor = `hsl(${hue}, 75%, 45%)`;
+            } else if (colorSetting === 'red') { 
+                c1 = '#b91c1c'; c2 = '#7f1d1d'; border = '#f87171'; baseColor = '#dc2626'; 
+            } else if (colorSetting === 'blue') { 
+                c1 = '#1d4ed8'; c2 = '#172554'; border = '#60a5fa'; baseColor = '#2563eb'; 
+            } else if (colorSetting === 'green') { 
+                c1 = '#047857'; c2 = '#064e3b'; border = '#34d399'; baseColor = '#059669'; 
+            } else if (colorSetting === 'purple') { 
+                c1 = '#7e22ce'; c2 = '#3b0764'; border = '#c084fc'; baseColor = '#9333ea'; 
+            } else { 
+                // Default: Premium Deep Slate / Leather Bound
+                c1 = '#3f3f46'; c2 = '#18181b'; border = '#a1a1aa'; baseColor = '#52525b'; 
+            }
             
             let w, h, body;
             
-            // Generate Physics Body
+            // Generate Physics Body with mobile scaling
             if (shape === 'rectangle') {
-                w = 140 * sizeMult; h = 70 * sizeMult;
-                body = Bodies.rectangle(startX, startY, w, h, { restitution: 0.4, friction: 0.5, density: 0.05, label: 'subject' });
+                w = 140 * finalScale; h = 72 * finalScale;
+                body = Bodies.rectangle(startX, startY, w, h, { restitution: 0.38, friction: 0.55, density: 0.05, label: 'subject' });
             } else if (shape === 'square') {
-                w = 110 * sizeMult; h = 110 * sizeMult;
-                body = Bodies.rectangle(startX, startY, w, h, { restitution: 0.4, friction: 0.6, density: 0.05, label: 'subject' });
+                w = 105 * finalScale; h = 105 * finalScale;
+                body = Bodies.rectangle(startX, startY, w, h, { restitution: 0.38, friction: 0.65, density: 0.05, label: 'subject' });
             } else if (shape === 'circle') {
-                w = 110 * sizeMult; h = 110 * sizeMult;
-                body = Bodies.circle(startX, startY, w / 2, { restitution: 0.7, friction: 0.3, density: 0.05, label: 'subject' }); 
+                w = 105 * finalScale; h = 105 * finalScale;
+                body = Bodies.circle(startX, startY, w / 2, { restitution: 0.65, friction: 0.35, density: 0.05, label: 'subject' }); 
             }
             
-            body.hitsRemaining = 3; body.isDestroyed = false; body.lastHitTime = 0; body.isSpawnProtected = true;
-            setTimeout(() => { if(body) body.isSpawnProtected = false; }, 2000); 
+            body.hitsRemaining = 3; 
+            body.isDestroyed = false; 
+            body.lastHitTime = 0; 
+            body.isSpawnProtected = true;
+            setTimeout(() => { if(body) body.isSpawnProtected = false; }, 1600); 
 
-            // Create DOM element and apply colors via CSS variables
+            // Create DOM element with authentic textbook typography & spine
             const element = document.createElement('div'); 
             element.classList.add('subject-block'); 
             if (shape === 'circle') element.classList.add('shape-circle');
             
-            element.style.width = w + 'px'; element.style.height = h + 'px'; element.style.fontSize = (20 * sizeMult) + 'px';
-            element.style.setProperty('--c1', c1); element.style.setProperty('--c2', c2); element.style.setProperty('--border', border);
-            element.innerText = subject;
+            element.style.width = w + 'px'; 
+            element.style.height = h + 'px'; 
+            element.style.setProperty('--c1', c1); 
+            element.style.setProperty('--c2', c2); 
+            element.style.setProperty('--border', border);
+
+            const titleEl = document.createElement('div');
+            titleEl.className = 'subject-title';
+            titleEl.style.fontSize = Math.max(12, Math.round(18 * finalScale)) + 'px';
+            titleEl.innerText = item.code;
+
+            const subEl = document.createElement('div');
+            subEl.className = 'subject-subtag';
+            subEl.style.fontSize = Math.max(8, Math.round(9 * finalScale)) + 'px';
+            subEl.innerText = item.sub;
+
+            element.appendChild(titleEl);
+            element.appendChild(subEl);
             
             gameContainer.appendChild(element);
             
-            // Store baseColor so the powder perfectly matches when it shatters
-            activeBlocks.push({ body: body, element: element, width: w, height: h, baseColor: baseColor }); 
+            activeBlocks.push({ 
+                body: body, 
+                element: element, 
+                width: w, 
+                height: h, 
+                baseColor: baseColor,
+                squashTimer: 0
+            }); 
+
             World.add(world, body);
         }
 
-        for (let i = 0; i < 8; i++) { setTimeout(spawnBlock, i * 400); }
-        setInterval(spawnBlock, 1500); 
+        // Spawn initial blocks
+        for (let i = 0; i < 7; i++) { setTimeout(spawnBlock, i * 350); }
+        setInterval(spawnBlock, 1600); 
 
-        function applyDamage(blockData) {
+        // ==========================================
+        // 5. PROGRESSIVE DAMAGE & SHATTER MECHANICS
+        // ==========================================
+        function applyDamage(blockData, hitDx = 0, hitDy = 0, hitPower = 1.0) {
             if (blockData.body.isDestroyed) return;
             blockData.body.hitsRemaining -= 1;
             
-            // Flash Effect
-            blockData.element.classList.remove('hit-flash'); void blockData.element.offsetWidth; blockData.element.classList.add('hit-flash');
-            setTimeout(() => { if (blockData.element) blockData.element.classList.remove('hit-flash'); }, 150);
+            // Impact Flash
+            blockData.element.classList.remove('hit-flash'); 
+            void blockData.element.offsetWidth; 
+            blockData.element.classList.add('hit-flash');
+            setTimeout(() => { if (blockData.element) blockData.element.classList.remove('hit-flash'); }, 130);
 
-            if (blockData.body.hitsRemaining === 2) { blockData.element.classList.add('hit-1'); } 
-            else if (blockData.body.hitsRemaining === 1) { blockData.element.classList.add('hit-2'); } 
-            else if (blockData.body.hitsRemaining <= 0) { shatterIntoPowder(blockData); }
+            if (blockData.body.hitsRemaining === 2) { 
+                sound.playCrack(1);
+                blockData.element.classList.add('hit-1'); 
+            } else if (blockData.body.hitsRemaining === 1) { 
+                sound.playCrack(2);
+                blockData.element.classList.add('hit-2'); 
+            } else if (blockData.body.hitsRemaining <= 0) { 
+                shatterIntoShardsAndPowder(blockData, hitDx, hitDy, hitPower); 
+            }
         }
 
-        function triggerScreenShake() {
-            gameContainer.classList.remove('shake'); void gameContainer.offsetWidth; gameContainer.classList.add('shake');
+        function shatterIntoShardsAndPowder(blockData, hitDx = 0, hitDy = 0, hitPower = 1.0) {
+            const parentBody = blockData.body;
+            const px = parentBody.position.x;
+            const py = parentBody.position.y;
+            const pw = blockData.width;
+            const ph = blockData.height;
+            const baseColor = blockData.baseColor;
+            const pvx = parentBody.velocity.x;
+            const pvy = parentBody.velocity.y;
+
+            parentBody.isDestroyed = true;
+            World.remove(world, parentBody);
+            blockData.element.remove();
+
+            const idx = activeBlocks.findIndex(b => b.body === parentBody);
+            if (idx > -1) activeBlocks.splice(idx, 1);
+
+            sound.playShatter();
+
+            // Spawn 4 to 6 physical rigid-body shards
+            const isMobile = window.innerWidth <= 768;
+            const shardCount = isMobile ? 4 : 5;
+            
+            const clipPolygons = [
+                'polygon(0% 0%, 100% 0%, 65% 100%, 0% 70%)',
+                'polygon(35% 0%, 100% 25%, 100% 100%, 15% 85%)',
+                'polygon(0% 25%, 85% 0%, 100% 90%, 20% 100%)',
+                'polygon(15% 0%, 95% 15%, 75% 100%, 0% 85%)',
+                'polygon(0% 0%, 100% 35%, 80% 100%, 15% 75%)'
+            ];
+
+            for (let i = 0; i < shardCount; i++) {
+                const sw = (pw / 2.3) * (0.8 + Math.random() * 0.4);
+                const sh = (ph / 2.2) * (0.8 + Math.random() * 0.4);
+                const offsetX = (Math.random() - 0.5) * (pw * 0.6);
+                const offsetY = (Math.random() - 0.5) * (ph * 0.6);
+                
+                const shardBody = Bodies.rectangle(px + offsetX, py + offsetY, sw, sh, {
+                    restitution: 0.5,
+                    friction: 0.4,
+                    density: 0.035,
+                    label: 'shard'
+                });
+
+                const burstAngle = (i / shardCount) * Math.PI * 2 + (Math.random() - 0.5) * 0.6;
+                const burstSpeed = 4 + Math.random() * 6 + (hitPower * 2.5);
+                
+                Body.setVelocity(shardBody, {
+                    x: pvx * 0.4 + Math.cos(burstAngle) * burstSpeed,
+                    y: pvy * 0.4 + Math.sin(burstAngle) * burstSpeed - 2.5
+                });
+                Body.setAngularVelocity(shardBody, (Math.random() - 0.5) * 3.5);
+
+                const shardEl = document.createElement('div');
+                shardEl.className = 'shard-piece';
+                shardEl.style.width = sw + 'px';
+                shardEl.style.height = sh + 'px';
+                shardEl.style.background = `linear-gradient(${120 + i * 40}deg, ${baseColor}, #111)`;
+                shardEl.style.clipPath = clipPolygons[i % clipPolygons.length];
+                shardEl.style.border = '1px solid rgba(255,255,255,0.35)';
+                
+                gameContainer.appendChild(shardEl);
+                physicalShards.push({ body: shardBody, element: shardEl, width: sw, height: sh });
+                World.add(world, shardBody);
+
+                // Fade and remove shard after 1.5 - 2.4 seconds
+                setTimeout(() => {
+                    shardEl.style.transition = 'opacity 0.6s ease-out';
+                    shardEl.style.opacity = '0';
+                    setTimeout(() => {
+                        World.remove(world, shardBody);
+                        if (shardEl.parentElement) shardEl.remove();
+                        const sIdx = physicalShards.findIndex(s => s.body === shardBody);
+                        if (sIdx > -1) physicalShards.splice(sIdx, 1);
+                    }, 600);
+                }, 1500 + Math.random() * 800);
+            }
+
+            // Spawn fine powder burst
+            spawnPowderParticles(px, py, pw, ph, baseColor, isMobile ? 22 : 36);
+
+            // Ground dust puff if shattered near floor
+            if (py > containerHeight - 180) {
+                spawnFloorDust(px, containerHeight - 25);
+            }
         }
 
+        function spawnPowderParticles(px, py, pw, ph, baseColor, count) {
+            for (let i = 0; i < count; i++) {
+                const size = 3 + Math.random() * 5; 
+                const piece = Bodies.circle(
+                    px + (Math.random() - 0.5) * pw * 0.8, 
+                    py + (Math.random() - 0.5) * ph * 0.8, 
+                    size / 2, 
+                    { restitution: 0.1, friction: 0.1, density: 0.001, isSensor: true }
+                );
+
+                Body.applyForce(piece, piece.position, { 
+                    x: (Math.random() - 0.5) * 0.016, 
+                    y: (Math.random() - 0.5) * 0.016 
+                });
+                
+                const pieceEl = document.createElement('div'); 
+                pieceEl.classList.add('powder'); 
+                pieceEl.style.width = size + 'px'; 
+                pieceEl.style.height = size + 'px';
+                pieceEl.style.backgroundColor = baseColor;
+                pieceEl.style.filter = `brightness(${0.6 + Math.random() * 0.9})`; 
+                
+                gameContainer.appendChild(pieceEl); 
+                debrisBlocks.push({ body: piece, element: pieceEl, width: size, height: size }); 
+                World.add(world, piece);
+
+                setTimeout(() => { 
+                    pieceEl.style.opacity = '0'; 
+                    setTimeout(() => { 
+                        World.remove(world, piece); 
+                        if(pieceEl.parentElement) pieceEl.remove(); 
+                        const dIndex = debrisBlocks.findIndex(d => d.body === piece);
+                        if (dIndex > -1) debrisBlocks.splice(dIndex, 1);
+                    }, 800); 
+                }, 700 + Math.random() * 500);
+            }
+        }
+
+        function spawnFloorDust(x, y) {
+            for (let i = 0; i < 4; i++) {
+                const dust = document.createElement('div');
+                dust.className = 'floor-dust';
+                const size = 14 + Math.random() * 18;
+                dust.style.width = size + 'px';
+                dust.style.height = (size * 0.55) + 'px';
+                dust.style.left = (x + (Math.random() - 0.5) * 90) + 'px';
+                dust.style.top = (y - 8) + 'px';
+                dust.style.setProperty('--dx', ((Math.random() - 0.5) * 70) + 'px');
+                dust.style.setProperty('--dy', (-15 - Math.random() * 25) + 'px');
+                gameContainer.appendChild(dust);
+                setTimeout(() => dust.remove(), 550);
+            }
+        }
+
+        // ==========================================
+        // 6. COLLISION PHYSICS & AUDIO TRIGGERS
+        // ==========================================
         Events.on(engine, 'collisionStart', function(event) {
             const pairs = event.pairs; const now = Date.now();
             for (let i = 0; i < pairs.length; i++) {
                 const bodyA = pairs[i].bodyA; const bodyB = pairs[i].bodyB;
-                
-                if (currentMode === 'hand' && bodyA.label === 'subject' && bodyB.label === 'subject') {
+
+                // Block-on-Block collision in Hand Mode or physics bounce
+                if (bodyA.label === 'subject' && bodyB.label === 'subject') {
                     const impactSpeed = Math.sqrt(Math.pow(bodyA.velocity.x - bodyB.velocity.x, 2) + Math.pow(bodyA.velocity.y - bodyB.velocity.y, 2));
-                    if (impactSpeed > 5 && !bodyA.isSpawnProtected && !bodyB.isSpawnProtected) {
-                        const blockAData = activeBlocks.find(b => b.body === bodyA); const blockBData = activeBlocks.find(b => b.body === bodyB);
-                        if (blockAData && now - bodyA.lastHitTime > 300) { applyDamage(blockAData); bodyA.lastHitTime = now; }
-                        if (blockBData && now - bodyB.lastHitTime > 300) { applyDamage(blockBData); bodyB.lastHitTime = now; }
-                        triggerScreenShake();
+                    
+                    if (impactSpeed > 2.5) {
+                        sound.playClatter(impactSpeed);
+                    }
+
+                    if (currentMode === 'hand' && impactSpeed > 4.5 && !bodyA.isSpawnProtected && !bodyB.isSpawnProtected) {
+                        const blockAData = activeBlocks.find(b => b.body === bodyA); 
+                        const blockBData = activeBlocks.find(b => b.body === bodyB);
+                        if (blockAData && now - bodyA.lastHitTime > 280) { applyDamage(blockAData); bodyA.lastHitTime = now; }
+                        if (blockBData && now - bodyB.lastHitTime > 280) { applyDamage(blockBData); bodyB.lastHitTime = now; }
+                        triggerDirectionalShake(0, 1, 5);
+                        triggerHaptic(15);
                     }
                 }
 
+                // Block hitting Floor or Wall border
                 if ((bodyA.label === 'subject' && bodyB.label === 'border') || (bodyB.label === 'subject' && bodyA.label === 'border')) {
                     const subject = bodyA.label === 'subject' ? bodyA : bodyB;
-                    if (subject.speed > 10 && !subject.isSpawnProtected) {
+                    
+                    if (subject.speed > 3.0) {
+                        sound.playClatter(subject.speed);
+                    }
+
+                    // Terminal speed impact against floor/border
+                    if (subject.speed > 9.5 && !subject.isSpawnProtected) {
                         const blockData = activeBlocks.find(b => b.body === subject);
-                        if (blockData && !subject.isDestroyed) { shatterIntoPowder(blockData); triggerScreenShake(); }
+                        if (blockData && !subject.isDestroyed) { 
+                            shatterIntoShardsAndPowder(blockData, subject.velocity.x, subject.velocity.y, 1.2); 
+                            triggerDirectionalShake(subject.velocity.x, subject.velocity.y, 8); 
+                            triggerHaptic(25);
+                        }
+                    }
+                }
+
+                // Shards bouncing against boundaries
+                if (bodyA.label === 'shard' || bodyB.label === 'shard') {
+                    const shard = bodyA.label === 'shard' ? bodyA : bodyB;
+                    if (shard.speed > 3.0) {
+                        sound.playClatter(shard.speed * 0.7);
                     }
                 }
             }
         });
 
+        // ==========================================
+        // 7. POINTER VELOCITY & INTERACTION LISTENERS
+        // ==========================================
+        function updatePointerVelocity(x, y) {
+            const now = performance.now();
+            const dt = Math.max((now - lastPointerTime) / 1000, 0.001);
+            pointerVx = (x - lastPointerX) / dt * 0.05;
+            pointerVy = (y - lastPointerY) / dt * 0.05;
+            lastPointerX = x;
+            lastPointerY = y;
+            lastPointerTime = now;
+        }
+
+        // Desktop Mouse Listeners
         gameContainer.addEventListener('mousemove', (e) => {
-            if (currentMode !== 'bat') return;
-            const rect = gameContainer.getBoundingClientRect(); mouseX = e.clientX - rect.left; mouseY = e.clientY - rect.top;
-            batUI.style.left = (mouseX - 40) + 'px'; batUI.style.top = (mouseY - 190) + 'px';
+            const rect = gameContainer.getBoundingClientRect(); 
+            const px = e.clientX - rect.left;
+            const py = e.clientY - rect.top;
+            updatePointerVelocity(px, py);
+
+            if (currentMode === 'bat') {
+                positionBat(px, py);
+            }
         });
 
         gameContainer.addEventListener('mousedown', (e) => {
             if (e.target.closest('#ui-layer') || e.target.closest('#btn-show-ui')) return; 
             if (currentMode !== 'bat') return;
-            batUI.classList.add('swinging'); setTimeout(() => { batUI.classList.remove('swinging'); }, 150);
-            
-            const swingRadius = 150; let hitSomething = false;
-
-            activeBlocks.forEach(blockData => {
-                if (blockData.body.isDestroyed) return; 
-                const dx = blockData.body.position.x - mouseX; const dy = blockData.body.position.y - mouseY;
-                const distance = Math.sqrt(dx * dx + dy * dy);
-                
-                if (distance < swingRadius) {
-                    hitSomething = true; blockData.body.isSpawnProtected = false; applyDamage(blockData);
-                    
-                    if (!blockData.body.isDestroyed) {
-                        Body.setVelocity(blockData.body, { x: blockData.body.velocity.x * 0.1, y: blockData.body.velocity.y * 0.1 });
-                        const powerMult = parseFloat(document.getElementById('set-pow').value);
-                        const hitForce = 0.9 * powerMult; 
-                        Body.applyForce(blockData.body, blockData.body.position, { x: (dx / distance) * hitForce, y: (dy / distance) * hitForce });
-                        Body.setAngularVelocity(blockData.body, (Math.random() - 0.5) * 1.5);
-                    }
-                }
-            });
-            if (hitSomething) triggerScreenShake();
+            executeBatSwing(mouseX, mouseY, false);
         });
 
-        function shatterIntoPowder(blockData) {
-            blockData.body.isDestroyed = true; World.remove(world, blockData.body); blockData.element.remove(); 
-            const index = activeBlocks.findIndex(b => b.body === blockData.body);
-            if (index > -1) activeBlocks.splice(index, 1);
-            
-            // Generate 40 pieces of powder that perfectly match the block's specific color
-            for (let i = 0; i < 40; i++) {
-                const size = 3 + Math.random() * 5; 
-                const piece = Bodies.circle(
-                    blockData.body.position.x + (Math.random() - 0.5) * 60, blockData.body.position.y + (Math.random() - 0.5) * 30, 
-                    size / 2, { restitution: 0.1, friction: 0.1, density: 0.001, isSensor: true }
-                );
-                Body.applyForce(piece, piece.position, { x: (Math.random() - 0.5) * 0.015, y: (Math.random() - 0.5) * 0.015 });
-                
-                const pieceEl = document.createElement('div'); pieceEl.classList.add('powder'); 
-                pieceEl.style.width = size + 'px'; pieceEl.style.height = size + 'px';
-                
-                // Color matches block, random brightness between 0.5x and 1.5x gives it beautiful depth
-                pieceEl.style.backgroundColor = blockData.baseColor;
-                pieceEl.style.filter = `brightness(${0.5 + Math.random() * 1.0})`; 
-                
-                gameContainer.appendChild(pieceEl); debrisBlocks.push({ body: piece, element: pieceEl, width: size, height: size }); World.add(world, piece);
-                setTimeout(() => { pieceEl.style.opacity = '0'; setTimeout(() => { 
-                    World.remove(world, piece); if(pieceEl.parentElement) pieceEl.remove(); 
-                    const dIndex = debrisBlocks.findIndex(d => d.body === piece);
-                    if (dIndex > -1) debrisBlocks.splice(dIndex, 1);
-                }, 1000); }, 800 + Math.random() * 600);
-            }
-        }
+        // Mobile / Touchscreen Listeners
+        let lastTouchX = 0, lastTouchY = 0;
+        let lastSwipeTime = 0;
 
+        gameContainer.addEventListener('touchstart', (e) => {
+            if (e.target.closest('#ui-layer') || e.target.closest('#btn-show-ui')) return;
+            if (e.touches.length === 0) return;
+
+            const rect = gameContainer.getBoundingClientRect();
+            const touch = e.touches[0];
+            const tx = touch.clientX - rect.left;
+            const ty = touch.clientY - rect.top;
+            lastTouchX = tx;
+            lastTouchY = ty;
+            lastPointerX = tx;
+            lastPointerY = ty;
+            lastPointerTime = performance.now();
+
+            if (currentMode === 'bat') {
+                e.preventDefault(); 
+                positionBat(tx, ty);
+                executeBatSwing(tx, ty, true);
+            }
+        }, { passive: false });
+
+        gameContainer.addEventListener('touchmove', (e) => {
+            if (e.target.closest('#ui-layer') || e.target.closest('#btn-show-ui')) return;
+            if (e.touches.length === 0) return;
+
+            const rect = gameContainer.getBoundingClientRect();
+            const touch = e.touches[0];
+            const tx = touch.clientX - rect.left;
+            const ty = touch.clientY - rect.top;
+
+            updatePointerVelocity(tx, ty);
+
+            if (currentMode === 'bat') {
+                e.preventDefault(); 
+                positionBat(tx, ty);
+
+                const dx = tx - lastTouchX;
+                const dy = ty - lastTouchY;
+                const distMoved = Math.sqrt(dx * dx + dy * dy);
+                const now = Date.now();
+
+                // Fast swipe detection
+                if (distMoved > 22 && (now - lastSwipeTime > 110)) {
+                    lastSwipeTime = now;
+                    executeBatSwing(tx, ty, true);
+                }
+
+                lastTouchX = tx;
+                lastTouchY = ty;
+            }
+        }, { passive: false });
+
+        gameContainer.addEventListener('touchend', (e) => {
+            if (currentMode === 'bat') {
+                setTimeout(() => { batUI.classList.remove('swinging'); }, 120);
+            }
+        });
+
+        // ==========================================
+        // 8. RENDER SYNCHRONIZATION WITH 3D TILT
+        // ==========================================
         Events.on(engine, 'afterUpdate', function() {
-            activeBlocks.forEach(b => { if (!b.body.isDestroyed) { b.element.style.left = (b.body.position.x - b.width / 2) + 'px'; b.element.style.top = (b.body.position.y - b.height / 2) + 'px'; b.element.style.transform = `rotate(${b.body.angle}rad)`; }});
-            debrisBlocks.forEach(d => { if(d.element.parentElement) { d.element.style.left = (d.body.position.x - d.width / 2) + 'px'; d.element.style.top = (d.body.position.y - d.height / 2) + 'px'; d.element.style.transform = `rotate(${d.body.angle}rad)`; }});
+            // Update Active Subject Blocks with 3D Perspective Tilt & Elastic Squash
+            activeBlocks.forEach(b => { 
+                if (!b.body.isDestroyed) { 
+                    b.element.style.left = (b.body.position.x - b.width / 2) + 'px'; 
+                    b.element.style.top = (b.body.position.y - b.height / 2) + 'px'; 
+                    
+                    // Dynamic 3D rotational tilt based on velocity vector
+                    const tiltX = Math.max(-20, Math.min(20, -b.body.velocity.y * 1.3));
+                    const tiltY = Math.max(-20, Math.min(20, b.body.velocity.x * 1.3));
+                    
+                    // Elastic squash & stretch handling
+                    let scaleX = 1.0, scaleY = 1.0;
+                    if (b.squashTimer > 0) {
+                        scaleX = 1.15;
+                        scaleY = 0.85;
+                        b.squashTimer--;
+                    }
+
+                    b.element.style.transform = `perspective(600px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) rotateZ(${b.body.angle}rad) scale(${scaleX}, ${scaleY})`; 
+                }
+            });
+
+            // Update Physical Shards with tumbling rotation
+            physicalShards.forEach(s => {
+                if (s.element.parentElement) {
+                    s.element.style.left = (s.body.position.x - s.width / 2) + 'px';
+                    s.element.style.top = (s.body.position.y - s.height / 2) + 'px';
+                    s.element.style.transform = `rotate(${s.body.angle}rad)`;
+                }
+            });
+
+            // Update Powder Debris Particles
+            debrisBlocks.forEach(d => { 
+                if (d.element.parentElement) { 
+                    d.element.style.left = (d.body.position.x - d.width / 2) + 'px'; 
+                    d.element.style.top = (d.body.position.y - d.height / 2) + 'px'; 
+                    d.element.style.transform = `rotate(${d.body.angle}rad)`; 
+                }
+            });
         });
 
         Runner.run(Runner.create(), engine);
