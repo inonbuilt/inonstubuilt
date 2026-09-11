@@ -344,6 +344,15 @@
   </url>
   <url>
     <loc>https://www.calciumnotes.com/bin/exam/spom/setb/instructions.html</loc>
+  </url>
+  <url>
+    <loc>https://www.calciumnotes.com/bin/exam/spom/setb/setbint.html</loc>
+  </url>
+  <url>
+    <loc>https://www.calciumnotes.com/bin/exam/spom/setb/chapwise/chapgate.html</loc>
+  </url>
+  <url>
+    <loc>https://www.calciumnotes.com/bin/exam/spom/setb/chapwise/chapter-exam.html</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -464,8 +473,32 @@
   </url>
   <url>
     <loc>https://www.calciumnotes.com/semag/semag.html</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.calciumnotes.com/semag/stressbuster/stresbisterhome.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.calciumnotes.com/semag/stressbuster/stressbuster.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.calciumnotes.com/semag/spot-anomalies/instructions.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.calciumnotes.com/semag/spot-anomalies/game.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

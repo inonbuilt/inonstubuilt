@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.calciumnotes.com/semag/stressbuster/stressbuster.html">
+    <title>CA Final Stress Buster | Interactive Smash & Physics Game | Calcium Notes</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="CA Final Stress Buster | Interactive Smash & Physics Game | Calcium Notes">
+    <meta name="description" content="Play the interactive CA Final Stress Buster physics game. Smash FR, AFM, Audit, DT, and IBS subject blocks with a cricket bat or toss them with hand physics on Calcium Notes.">
+    <meta name="keywords" content="CA Final Stress Buster, CA Exam Stress Buster, CA Game, Smash Subject Blocks, FR, DT, Audit, AFM, Matter.js Physics, Calcium Notes">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Calcium Notes">
+    <meta name="theme-color" content="#0a0a12">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CA Final Stress Buster | Interactive Physics Game">
+    <meta property="og:description" content="Relieve CA exam burnout by smashing subject blocks into vibrant powder explosions!">
+    <meta property="og:url" content="https://www.calciumnotes.com/semag/stressbuster/stressbuster.html">
+
+    <!-- Google Analytics (G-YYJ8R39EXM) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
+    </script>
+
+    <!-- Google AdSense (ca-pub-7657462226177124) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+
+    <style>
+        body {
+            margin: 0; padding: 0; overflow: hidden; background-color: #0a0a12; color: #fff; font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+        
+        /* The main UI container */
+        #ui-layer {
+            position: absolute; top: 20px; left: 30px; z-index: 1000; pointer-events: none; transition: opacity 0.3s;
+        }
+
+        h2 { margin: 0 0 10px 0; color: #f39c12; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); pointer-events: auto; }
+        
+        #controls { display: flex; gap: 10px; pointer-events: auto; flex-wrap: wrap; }
+        
+        .mode-btn {
+            padding: 10px 20px; font-size: 15px; font-weight: bold; background-color: #2a2a35; color: #aaa;
+            border: 2px solid #444; border-radius: 8px; cursor: pointer; transition: all 0.2s;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .mode-btn:hover { background-color: #3a3a45; }
+        .mode-btn.active { background-color: #f39c12; color: #111; border-color: #f39c12; box-shadow: 0 0 15px rgba(243, 156, 18, 0.4); }
+        
+        #btn-add { background-color: #1b4332; border-color: #2d6a4f; color: #d8f3dc; }
+        #btn-add:hover { background-color: #2d6a4f; }
+        #btn-add:active { transform: scale(0.95); }
+
+        #btn-settings { background-color: #4a4e69; border-color: #9a8c98; color: #f2e9e4; }
+        #btn-settings:hover { background-color: #22223b; }
+        
+        #btn-hide { background-color: #222; border-color: #555; color: #aaa; }
+        #btn-hide:hover { background-color: #000; color: #fff; }
+
+        /* The Tiny Show UI Button (Hidden by default) */
+        #btn-show-ui {
+            position: absolute; top: 20px; left: 20px; z-index: 1001; display: none; pointer-events: auto;
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); color: #fff;
+            padding: 8px 12px; border-radius: 20px; cursor: pointer; backdrop-filter: blur(5px);
+        }
+        #btn-show-ui:hover { background: rgba(255,255,255,0.2); }
+
+        /* Settings Panel Styling */
+        #settings-panel {
+            position: absolute; top: 80px; left: 0; background: rgba(20, 20, 30, 0.95);
+            border: 2px solid #444; border-radius: 12px; padding: 20px; width: 300px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8); pointer-events: auto;
+            display: none; flex-direction: column; gap: 15px; backdrop-filter: blur(5px);
+        }
+        .setting-group { display: flex; flex-direction: column; gap: 5px; }
+        .setting-group label { font-size: 14px; color: #f39c12; font-weight: bold; display: flex; justify-content: space-between; }
+        .setting-group input[type="range"] { width: 100%; cursor: pointer; }
+        .setting-group select { 
+            padding: 8px; background: #2a2a35; color: #fff; border: 1px solid #444; 
+            border-radius: 6px; font-size: 14px; outline: none; cursor: pointer; 
+        }
+
+        #game-container {
+            width: 100vw; height: 100vh; background: radial-gradient(circle at center, #1a1a2e 0%, #0d0d1a 100%);
+            position: relative; overflow: hidden; cursor: none;
+        }
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            40% { transform: translate(1px, -2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            80% { transform: translate(3px, 1px) rotate(-1deg); }
+            100% { transform: translate(1px, -1px) rotate(0deg); }
+        }
+        .shake { animation: shake 0.2s cubic-bezier(.36,.07,.19,.97) both; }
+        
+        #bat {
+            position: absolute; width: 80px; height: 200px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 400"><path d="M35,80 C35,20 40,10 50,10 C60,10 65,20 65,80 L55,370 C55,375 45,375 45,370 Z" fill="%238B5A2B"/><path d="M40,370 C40,390 60,390 60,370 Z" fill="%233e2723"/></svg>');
+            background-size: contain; background-repeat: no-repeat; background-position: center bottom;
+            pointer-events: none; z-index: 1000;
+            transform-origin: 50% 95%; transform: rotate(80deg); transition: transform 0.05s ease-out;
+        }
+        .swinging { transform: rotate(-60deg) !important; transition: transform 0.08s cubic-bezier(0.1, 0.9, 0.2, 1) !important; }
+
+        /* Dynamic Colored Subjects Base Styling */
+        .subject-block {
+            /* Using CSS variables populated by JavaScript for endless color possibilities */
+            --c1: #555; --c2: #333; --border: #666; 
+            
+            background: linear-gradient(135deg, var(--c1), var(--c2)); 
+            border: 2px solid var(--border);
+            color: #fff; font-weight: 900; letter-spacing: 1px; display: flex; align-items: center; justify-content: center; text-align: center;
+            position: absolute; border-radius: 6px; box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+            user-select: none; pointer-events: none; transform-origin: center; line-height: 1.1;
+            transition: filter 0.1s ease-out;
+        }
+        
+        /* The Impact Flash Animation */
+        .hit-flash { filter: brightness(2.5) contrast(1.2) !important; }
+
+        /* Level 1 & 2 Damage states now use pure CSS filters to dynamically darken ANY color! */
+        .subject-block.hit-1 { filter: brightness(0.7); }
+        .subject-block.hit-2 { filter: brightness(0.4); color: #ccc; }
+
+        .shape-circle { border-radius: 50%; }
+
+        /* Realistic Crack SVGs Overlay */
+        .subject-block::after {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: opacity 0.2s;
+            border-radius: inherit; pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M15,0 L20,20 L10,35 L30,55 M85,0 L75,25 L90,45 M0,70 L25,80 L35,100 M100,60 L80,75 L85,100' fill='none' stroke='rgba(255,255,255,0.4)' stroke-width='2' transform='translate(1,1)' stroke-linejoin='round'/%3E%3Cpath d='M15,0 L20,20 L10,35 L30,55 M85,0 L75,25 L90,45 M0,70 L25,80 L35,100 M100,60 L80,75 L85,100' fill='none' stroke='%23111' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-size: 100% 100%;
+        }
+        .subject-block.hit-1::after { opacity: 0.8; }
+        
+        .subject-block::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: opacity 0.2s;
+            border-radius: inherit; pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M-5,40 L15,35 L30,50 L55,40 L80,60 L105,45 M40,45 L45,75 L30,100 M65,48 L70,20 L55,0' fill='none' stroke='rgba(255,255,255,0.4)' stroke-width='3' transform='translate(1,1)' stroke-linejoin='round'/%3E%3Cpath d='M-5,40 L15,35 L30,50 L55,40 L80,60 L105,45 M40,45 L45,75 L30,100 M65,48 L70,20 L55,0' fill='none' stroke='%23050505' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-size: 100% 100%;
+        }
+        .subject-block.hit-2::before { opacity: 1; }
+        
+        .powder { position: absolute; border-radius: 50%; pointer-events: none; transition: opacity 0.8s ease-in; }
+    </style>
+</head>
+<body>
+    
+    <!-- Immersive Mode Button -->
+    <button id="btn-show-ui">👁️ Show UI</button>
+
+    <div id="ui-layer">
+        <h2>CA Final Stress Buster</h2>
+        <div id="controls">
+            <button id="btn-bat" class="mode-btn active">🏏 Bat</button>
+            <button id="btn-hand" class="mode-btn">🖐️ Hand</button>
+            <button id="btn-add" class="mode-btn">🧱 Drop Blocks</button>
+            <button id="btn-settings" class="mode-btn">⚙️ Settings</button>
+            <button id="btn-hide" class="mode-btn">👁️ Hide UI</button>
+            <a href="stresbisterhome.html" class="mode-btn" style="text-decoration: none; color: #f39c12; border-color: rgba(243,156,18,0.4);">📖 Home / Guide</a>
+            <a href="../semag.html" class="mode-btn" style="text-decoration: none; color: #cbd5e1;">← CA Games</a>
+        </div>
+
+        <div id="settings-panel">
+            <div class="setting-group">
+                <label>Block Color</label>
+                <select id="set-color">
+                    <option value="random">🌈 Random Colors</option>
+                    <option value="default">🪨 Stone (Default)</option>
+                    <option value="red">🔥 Ruby Red</option>
+                    <option value="blue">🌊 Sapphire Blue</option>
+                    <option value="green">🌿 Emerald Green</option>
+                    <option value="purple">🔮 Amethyst Purple</option>
+                </select>
+            </div>
+            <div class="setting-group">
+                <label>Block Shape</label>
+                <select id="set-shape">
+                    <option value="random">🎲 Random Mix</option>
+                    <option value="rectangle">Standard Rectangle</option>
+                    <option value="square">Heavy Square</option>
+                    <option value="circle">Bouncy Circle</option>
+                </select>
+            </div>
+            <hr style="border: 1px solid #444; width: 100%; margin: 5px 0;">
+            <div class="setting-group">
+                <label>World Gravity <span id="val-grav">1.0</span></label>
+                <input type="range" id="set-grav" min="0.1" max="3" step="0.1" value="1">
+            </div>
+            <div class="setting-group">
+                <label>Bat Power Multiplier <span id="val-pow">1.0x</span></label>
+                <input type="range" id="set-pow" min="0.5" max="3" step="0.1" value="1">
+            </div>
+            <div class="setting-group">
+                <label>Block Size <span id="val-size">1.0x</span></label>
+                <input type="range" id="set-size" min="0.5" max="2" step="0.1" value="1">
+            </div>
+        </div>
+    </div>
+
+    <div id="game-container"><div id="bat"></div></div>
+
+    <script>
+        const Engine = Matter.Engine, Runner = Matter.Runner, Bodies = Matter.Bodies, World = Matter.World,
+              Events = Matter.Events, Mouse = Matter.Mouse, MouseConstraint = Matter.MouseConstraint, Body = Matter.Body;
+
+        const engine = Engine.create(); const world = engine.world;
+        let containerWidth = window.innerWidth; let containerHeight = window.innerHeight; let currentMode = 'bat'; 
+
+        const ground = Bodies.rectangle(containerWidth / 2, containerHeight + 30, containerWidth * 3, 60, { isStatic: true, label: 'border' });
+        const leftWall = Bodies.rectangle(-30, containerHeight / 2, 60, containerHeight * 3, { isStatic: true, label: 'border' });
+        const rightWall = Bodies.rectangle(containerWidth + 30, containerHeight / 2, 60, containerHeight * 3, { isStatic: true, label: 'border' });
+        const ceiling = Bodies.rectangle(containerWidth / 2, -1500, containerWidth * 3, 60, { isStatic: true, label: 'border' });
+        World.add(world, [ground, leftWall, rightWall, ceiling]);
+
+        window.addEventListener('resize', () => {
+            containerWidth = window.innerWidth; containerHeight = window.innerHeight;
+            Body.setPosition(ground, { x: containerWidth / 2, y: containerHeight + 30 });
+            Body.setPosition(rightWall, { x: containerWidth + 30, y: containerHeight / 2 });
+            Body.setPosition(ceiling, { x: containerWidth / 2, y: -1500 });
+        });
+
+        const gameContainer = document.getElementById('game-container'); const batUI = document.getElementById('bat');
+        const subjects = ["FR", "AFM", "AUDIT", "DT", "IDT", "IBS", "SPOM A", "SPOM B", "LAW", "COSTING", "RTPs", "MTPs", "Amendments", "GST", "Penalties", "Appeals"];
+        let activeBlocks = []; let debrisBlocks = []; let mouseX = 0; let mouseY = 0;
+
+        const mouse = Mouse.create(gameContainer);
+        const mouseConstraint = MouseConstraint.create(engine, { mouse: mouse, constraint: { stiffness: 0.2, render: { visible: false } } });
+        mouseConstraint.collisionFilter.mask = 0x0000; World.add(world, mouseConstraint);
+
+        // UI Listeners
+        const btnBat = document.getElementById('btn-bat'); 
+        const btnHand = document.getElementById('btn-hand');
+        const btnAdd = document.getElementById('btn-add');
+        const btnSettings = document.getElementById('btn-settings');
+        const settingsPanel = document.getElementById('settings-panel');
+        const btnHide = document.getElementById('btn-hide');
+        const btnShowUI = document.getElementById('btn-show-ui');
+
+        btnBat.addEventListener('click', () => {
+            currentMode = 'bat'; btnBat.classList.add('active'); btnHand.classList.remove('active');
+            gameContainer.style.cursor = 'none'; batUI.style.display = 'block'; mouseConstraint.collisionFilter.mask = 0x0000; 
+        });
+        
+        btnHand.addEventListener('click', () => {
+            currentMode = 'hand'; btnHand.classList.add('active'); btnBat.classList.remove('active');
+            gameContainer.style.cursor = 'grab'; batUI.style.display = 'none'; mouseConstraint.collisionFilter.mask = 0xFFFFFFFF; 
+        });
+        
+        btnAdd.addEventListener('click', () => { for(let i = 0; i < 3; i++) { setTimeout(spawnBlock, i * 150); } });
+        btnSettings.addEventListener('click', () => { settingsPanel.style.display = settingsPanel.style.display === 'flex' ? 'none' : 'flex'; });
+
+        // Hide / Show UI Logic
+        btnHide.addEventListener('click', () => {
+            document.getElementById('ui-layer').style.display = 'none';
+            btnShowUI.style.display = 'block';
+        });
+        btnShowUI.addEventListener('click', () => {
+            document.getElementById('ui-layer').style.display = 'block';
+            btnShowUI.style.display = 'none';
+        });
+
+        // Settings Listeners
+        document.getElementById('set-grav').addEventListener('input', (e) => {
+            const v = e.target.value; document.getElementById('val-grav').innerText = v; engine.world.gravity.y = parseFloat(v);
+        });
+        document.getElementById('set-pow').addEventListener('input', (e) => { document.getElementById('val-pow').innerText = e.target.value + 'x'; });
+        document.getElementById('set-size').addEventListener('input', (e) => { document.getElementById('val-size').innerText = e.target.value + 'x'; });
+
+        Events.on(mouseConstraint, 'startdrag', () => { if(currentMode === 'hand') gameContainer.style.cursor = 'grabbing'; });
+        Events.on(mouseConstraint, 'enddrag', () => { if(currentMode === 'hand') gameContainer.style.cursor = 'grab'; });
+
+        function spawnBlock() {
+            if (activeBlocks.length >= 80) return;
+
+            const subject = subjects[Math.floor(Math.random() * subjects.length)];
+            const startX = 100 + Math.random() * (containerWidth - 200); 
+            const startY = -100; 
+            
+            const sizeMult = parseFloat(document.getElementById('set-size').value);
+            let shape = document.getElementById('set-shape').value;
+            let colorSetting = document.getElementById('set-color').value;
+            
+            // Randomize Shape if selected
+            if (shape === 'random') {
+                const shapes = ['rectangle', 'square', 'circle'];
+                shape = shapes[Math.floor(Math.random() * shapes.length)];
+            }
+
+            // Generate Colors
+            let c1, c2, border, baseColor;
+            if (colorSetting === 'random') {
+                const hue = Math.floor(Math.random() * 360);
+                c1 = `hsl(${hue}, 80%, 55%)`; c2 = `hsl(${hue}, 80%, 30%)`; border = `hsl(${hue}, 80%, 75%)`;
+                baseColor = `hsl(${hue}, 80%, 50%)`;
+            } else if (colorSetting === 'red') { c1 = '#e63946'; c2 = '#a81c27'; border = '#ff4d5a'; baseColor = '#e63946'; }
+            else if (colorSetting === 'blue') { c1 = '#4cc9f0'; c2 = '#0077b6'; border = '#00b4d8'; baseColor = '#4cc9f0'; }
+            else if (colorSetting === 'green') { c1 = '#2a9d8f'; c2 = '#1b4332'; border = '#2dc653'; baseColor = '#2a9d8f'; }
+            else if (colorSetting === 'purple') { c1 = '#9d4edd'; c2 = '#3c096c'; border = '#c77dff'; baseColor = '#9d4edd'; }
+            else { c1 = '#555'; c2 = '#333'; border = '#777'; baseColor = '#666666'; } // Default
+            
+            let w, h, body;
+            
+            // Generate Physics Body
+            if (shape === 'rectangle') {
+                w = 140 * sizeMult; h = 70 * sizeMult;
+                body = Bodies.rectangle(startX, startY, w, h, { restitution: 0.4, friction: 0.5, density: 0.05, label: 'subject' });
+            } else if (shape === 'square') {
+                w = 110 * sizeMult; h = 110 * sizeMult;
+                body = Bodies.rectangle(startX, startY, w, h, { restitution: 0.4, friction: 0.6, density: 0.05, label: 'subject' });
+            } else if (shape === 'circle') {
+                w = 110 * sizeMult; h = 110 * sizeMult;
+                body = Bodies.circle(startX, startY, w / 2, { restitution: 0.7, friction: 0.3, density: 0.05, label: 'subject' }); 
+            }
+            
+            body.hitsRemaining = 3; body.isDestroyed = false; body.lastHitTime = 0; body.isSpawnProtected = true;
+            setTimeout(() => { if(body) body.isSpawnProtected = false; }, 2000); 
+
+            // Create DOM element and apply colors via CSS variables
+            const element = document.createElement('div'); 
+            element.classList.add('subject-block'); 
+            if (shape === 'circle') element.classList.add('shape-circle');
+            
+            element.style.width = w + 'px'; element.style.height = h + 'px'; element.style.fontSize = (20 * sizeMult) + 'px';
+            element.style.setProperty('--c1', c1); element.style.setProperty('--c2', c2); element.style.setProperty('--border', border);
+            element.innerText = subject;
+            
+            gameContainer.appendChild(element);
+            
+            // Store baseColor so the powder perfectly matches when it shatters
+            activeBlocks.push({ body: body, element: element, width: w, height: h, baseColor: baseColor }); 
+            World.add(world, body);
+        }
+
+        for (let i = 0; i < 8; i++) { setTimeout(spawnBlock, i * 400); }
+        setInterval(spawnBlock, 1500); 
+
+        function applyDamage(blockData) {
+            if (blockData.body.isDestroyed) return;
+            blockData.body.hitsRemaining -= 1;
+            
+            // Flash Effect
+            blockData.element.classList.remove('hit-flash'); void blockData.element.offsetWidth; blockData.element.classList.add('hit-flash');
+            setTimeout(() => { if (blockData.element) blockData.element.classList.remove('hit-flash'); }, 150);
+
+            if (blockData.body.hitsRemaining === 2) { blockData.element.classList.add('hit-1'); } 
+            else if (blockData.body.hitsRemaining === 1) { blockData.element.classList.add('hit-2'); } 
+            else if (blockData.body.hitsRemaining <= 0) { shatterIntoPowder(blockData); }
+        }
+
+        function triggerScreenShake() {
+            gameContainer.classList.remove('shake'); void gameContainer.offsetWidth; gameContainer.classList.add('shake');
+        }
+
+        Events.on(engine, 'collisionStart', function(event) {
+            const pairs = event.pairs; const now = Date.now();
+            for (let i = 0; i < pairs.length; i++) {
+                const bodyA = pairs[i].bodyA; const bodyB = pairs[i].bodyB;
+                
+                if (currentMode === 'hand' && bodyA.label === 'subject' && bodyB.label === 'subject') {
+                    const impactSpeed = Math.sqrt(Math.pow(bodyA.velocity.x - bodyB.velocity.x, 2) + Math.pow(bodyA.velocity.y - bodyB.velocity.y, 2));
+                    if (impactSpeed > 5 && !bodyA.isSpawnProtected && !bodyB.isSpawnProtected) {
+                        const blockAData = activeBlocks.find(b => b.body === bodyA); const blockBData = activeBlocks.find(b => b.body === bodyB);
+                        if (blockAData && now - bodyA.lastHitTime > 300) { applyDamage(blockAData); bodyA.lastHitTime = now; }
+                        if (blockBData && now - bodyB.lastHitTime > 300) { applyDamage(blockBData); bodyB.lastHitTime = now; }
+                        triggerScreenShake();
+                    }
+                }
+
+                if ((bodyA.label === 'subject' && bodyB.label === 'border') || (bodyB.label === 'subject' && bodyA.label === 'border')) {
+                    const subject = bodyA.label === 'subject' ? bodyA : bodyB;
+                    if (subject.speed > 10 && !subject.isSpawnProtected) {
+                        const blockData = activeBlocks.find(b => b.body === subject);
+                        if (blockData && !subject.isDestroyed) { shatterIntoPowder(blockData); triggerScreenShake(); }
+                    }
+                }
+            }
+        });
+
+        gameContainer.addEventListener('mousemove', (e) => {
+            if (currentMode !== 'bat') return;
+            const rect = gameContainer.getBoundingClientRect(); mouseX = e.clientX - rect.left; mouseY = e.clientY - rect.top;
+            batUI.style.left = (mouseX - 40) + 'px'; batUI.style.top = (mouseY - 190) + 'px';
+        });
+
+        gameContainer.addEventListener('mousedown', (e) => {
+            if (e.target.closest('#ui-layer') || e.target.closest('#btn-show-ui')) return; 
+            if (currentMode !== 'bat') return;
+            batUI.classList.add('swinging'); setTimeout(() => { batUI.classList.remove('swinging'); }, 150);
+            
+            const swingRadius = 150; let hitSomething = false;
+
+            activeBlocks.forEach(blockData => {
+                if (blockData.body.isDestroyed) return; 
+                const dx = blockData.body.position.x - mouseX; const dy = blockData.body.position.y - mouseY;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                
+                if (distance < swingRadius) {
+                    hitSomething = true; blockData.body.isSpawnProtected = false; applyDamage(blockData);
+                    
+                    if (!blockData.body.isDestroyed) {
+                        Body.setVelocity(blockData.body, { x: blockData.body.velocity.x * 0.1, y: blockData.body.velocity.y * 0.1 });
+                        const powerMult = parseFloat(document.getElementById('set-pow').value);
+                        const hitForce = 0.9 * powerMult; 
+                        Body.applyForce(blockData.body, blockData.body.position, { x: (dx / distance) * hitForce, y: (dy / distance) * hitForce });
+                        Body.setAngularVelocity(blockData.body, (Math.random() - 0.5) * 1.5);
+                    }
+                }
+            });
+            if (hitSomething) triggerScreenShake();
+        });
+
+        function shatterIntoPowder(blockData) {
+            blockData.body.isDestroyed = true; World.remove(world, blockData.body); blockData.element.remove(); 
+            const index = activeBlocks.findIndex(b => b.body === blockData.body);
+            if (index > -1) activeBlocks.splice(index, 1);
+            
+            // Generate 40 pieces of powder that perfectly match the block's specific color
+            for (let i = 0; i < 40; i++) {
+                const size = 3 + Math.random() * 5; 
+                const piece = Bodies.circle(
+                    blockData.body.position.x + (Math.random() - 0.5) * 60, blockData.body.position.y + (Math.random() - 0.5) * 30, 
+                    size / 2, { restitution: 0.1, friction: 0.1, density: 0.001, isSensor: true }
+                );
+                Body.applyForce(piece, piece.position, { x: (Math.random() - 0.5) * 0.015, y: (Math.random() - 0.5) * 0.015 });
+                
+                const pieceEl = document.createElement('div'); pieceEl.classList.add('powder'); 
+                pieceEl.style.width = size + 'px'; pieceEl.style.height = size + 'px';
+                
+                // Color matches block, random brightness between 0.5x and 1.5x gives it beautiful depth
+                pieceEl.style.backgroundColor = blockData.baseColor;
+                pieceEl.style.filter = `brightness(${0.5 + Math.random() * 1.0})`; 
+                
+                gameContainer.appendChild(pieceEl); debrisBlocks.push({ body: piece, element: pieceEl, width: size, height: size }); World.add(world, piece);
+                setTimeout(() => { pieceEl.style.opacity = '0'; setTimeout(() => { 
+                    World.remove(world, piece); if(pieceEl.parentElement) pieceEl.remove(); 
+                    const dIndex = debrisBlocks.findIndex(d => d.body === piece);
+                    if (dIndex > -1) debrisBlocks.splice(dIndex, 1);
+                }, 1000); }, 800 + Math.random() * 600);
+            }
+        }
+
+        Events.on(engine, 'afterUpdate', function() {
+            activeBlocks.forEach(b => { if (!b.body.isDestroyed) { b.element.style.left = (b.body.position.x - b.width / 2) + 'px'; b.element.style.top = (b.body.position.y - b.height / 2) + 'px'; b.element.style.transform = `rotate(${b.body.angle}rad)`; }});
+            debrisBlocks.forEach(d => { if(d.element.parentElement) { d.element.style.left = (d.body.position.x - d.width / 2) + 'px'; d.element.style.top = (d.body.position.y - d.height / 2) + 'px'; d.element.style.transform = `rotate(${d.body.angle}rad)`; }});
+        });
+
+        Runner.run(Runner.create(), engine);
+    </script>
+</body>
+</html>

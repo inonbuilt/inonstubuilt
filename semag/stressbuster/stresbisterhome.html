@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ==========================================
+         CANONICAL & BASIC META
+    =========================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.calciumnotes.com/semag/stressbuster/stresbisterhome.html">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>CA Final Stress Buster | Smash & De-Stress Physics Game | Calcium Notes</title>
+    <meta name="title" content="CA Final Stress Buster | Smash & De-Stress Physics Game | Calcium Notes">
+    <meta name="description"
+        content="Play CA Final Stress Buster - an interactive 2D physics anti-stress smasher game for CA students. Pulverize tough CA Final & Inter subjects like FR, DT, Audit, AFM, and IBS with cricket bats, hand flings, customizable gravity, and realistic particle powder explosions on Calcium Notes.">
+    <meta name="keywords"
+        content="CA Final Stress Buster, CA Exam Stress Buster, Stress Buster Game, CA Student De-stress, Matter.js Game, Smash Subject Blocks, FR, AFM, Audit, DT, IDT, IBS, SPOM, Calcium Notes, CA Games">
+    <meta name="author" content="Calcium Notes">
+    <meta name="publisher" content="Calcium Notes">
+    <meta name="application-name" content="CA Final Stress Buster">
+    <meta name="generator" content="Calcium Notes">
+
+    <!-- Search Engine Indexing Directives -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-image-preview:large">
+    <meta name="bingbot" content="index, follow">
+    <meta name="rating" content="General">
+    <meta name="distribution" content="Global">
+    <meta name="language" content="English">
+
+    <!-- Mobile App & Theme Settings -->
+    <meta name="theme-color" content="#0a0a12">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Stress Buster">
+
+    <!-- Favicon Links -->
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <!-- ==========================================
+         OPEN GRAPH / SOCIAL META TAGS
+    =========================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Calcium Notes">
+    <meta property="og:title" content="CA Final Stress Buster | Smash & De-Stress Physics Game">
+    <meta property="og:description"
+        content="Relieve CA exam burnout! Smash difficult subjects like FR, DT, Audit, and SPOM with a cricket bat, hand throws, customizable gravity, and vivid powder explosions.">
+    <meta property="og:url" content="https://www.calciumnotes.com/semag/stressbuster/stresbisterhome.html">
+    <meta property="og:image" content="https://www.calciumnotes.com/favicon.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- ==========================================
+         TWITTER / X CARDS
+    =========================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Calciumnotes">
+    <meta name="twitter:title" content="CA Final Stress Buster | Smash & De-Stress Physics Game">
+    <meta name="twitter:description"
+        content="Interactive 2D physics sandbox for CA students to crush exam stress. Free to play on Calcium Notes.">
+    <meta name="twitter:image" content="https://www.calciumnotes.com/favicon.png">
+
+    <!-- ==========================================
+         GOOGLE ANALYTICS (G-YYJ8R39EXM)
+    =========================================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
+    </script>
+
+    <!-- ==========================================
+         GOOGLE ADSENSE (ca-pub-7657462226177124)
+    =========================================== -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
+        crossorigin="anonymous"></script>
+
+    <!-- ==========================================
+         STRUCTURED DATA (SCHEMA.ORG JSON-LD)
+    =========================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Game",
+      "name": "CA Final Stress Buster",
+      "alternateName": "Calcium Stress Buster",
+      "description": "An interactive 2D physics anti-stress game designed for Chartered Accountancy students to blow off steam during exam revision by smashing subject blocks using realistic cricket bat mechanics, hand physics, and colorful powder burst effects.",
+      "genre": "Physics Simulation / Casual Anti-Stress Game",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Web Browser",
+      "inLanguage": "en-IN",
+      "isAccessibleForFree": true,
+      "url": "https://www.calciumnotes.com/semag/stressbuster/stresbisterhome.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Calcium Notes",
+        "url": "https://calciumnotes.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://calciumnotes.com/favicon.png"
+        }
+      },
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "Student"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --accent-primary: #f39c12;
+            --accent-secondary: #e67e22;
+            --accent-glow: rgba(243, 156, 18, 0.4);
+            --bg-deep: #070913;
+            --card-bg: rgba(18, 22, 36, 0.75);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-bright: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            background: radial-gradient(circle at 50% 0%, #1a1a2e 0%, #0d0d1a 60%, #070913 100%);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 2rem 1rem 5rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: min(1000px, 95%);
+            margin: auto;
+        }
+
+        /* Top Nav */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.55rem 1.1rem;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--card-border);
+            transition: all 0.25s ease;
+        }
+
+        .nav-back:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(243, 156, 18, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Banner */
+        .hero {
+            text-align: center;
+            padding: 3.5rem 2rem;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(243, 156, 18, 0.25);
+            margin-bottom: 2.5rem;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(243, 156, 18, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(243, 156, 18, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .badge-pill {
+            background: linear-gradient(135deg, #f39c12, #d35400);
+            color: #111;
+            padding: 0.4rem 1.1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.35);
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            font-weight: 900;
+            margin-bottom: 1.2rem;
+            line-height: 1.2;
+            background: linear-gradient(to right, #ffffff, #f39c12, #ffd166);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            max-width: 820px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-launch {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: #111;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 800;
+            padding: 1.15rem 3rem;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(243, 156, 18, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-launch:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 45px rgba(243, 156, 18, 0.6);
+            color: #000;
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.06);
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 600;
+            padding: 1.15rem 2rem;
+            border-radius: 14px;
+            border: 1px solid var(--card-border);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Card container */
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 2.2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: var(--accent-primary);
+            font-size: 1.6rem;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-weight: 800;
+        }
+
+        h3 {
+            color: #f8fafc;
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.6rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: #cbd5e1;
+            font-size: 1.05rem;
+        }
+
+        /* Highlight Pill Tags */
+        .tag-pill {
+            display: inline-block;
+            background: rgba(243, 156, 18, 0.15);
+            color: #f39c12;
+            border: 1px solid rgba(243, 156, 18, 0.3);
+            padding: 0.25rem 0.65rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin: 0.2rem;
+        }
+
+        /* Steps Ladder Grid */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.4rem;
+            margin: 1.8rem 0;
+        }
+
+        .step-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 1.6rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .step-card:hover {
+            border-color: rgba(243, 156, 18, 0.4);
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: #111;
+            font-weight: 900;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 0.6rem;
+        }
+
+        .step-desc {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Physics & Destruction Visuals */
+        .damage-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.2rem;
+            margin: 1.5rem 0;
+        }
+
+        .damage-box {
+            padding: 1.4rem;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+        }
+
+        .damage-box.stage1 {
+            border-top: 4px solid #38bdf8;
+        }
+
+        .damage-box.stage2 {
+            border-top: 4px solid #f59e0b;
+        }
+
+        .damage-box.stage3 {
+            border-top: 4px solid #ef4444;
+        }
+
+        .damage-stage-title {
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .damage-desc {
+            font-size: 0.88rem;
+            color: #94a3b8;
+            margin-bottom: 0;
+        }
+
+        /* Subject Pills Arena */
+        .subject-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin: 1.5rem 0;
+        }
+
+        .subject-chip {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            transition: all 0.2s ease;
+        }
+
+        .subject-chip:hover {
+            border-color: #f39c12;
+            color: #f39c12;
+            transform: scale(1.05);
+        }
+
+        /* Quick Controls Table */
+        .controls-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .controls-table th {
+            background: rgba(243, 156, 18, 0.15);
+            color: #f39c12;
+            padding: 1rem;
+            text-align: left;
+            font-size: 0.95rem;
+            font-weight: 700;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .controls-table td {
+            padding: 0.95rem 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+
+        .controls-table tr:hover td {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        /* Tips Box */
+        .tip-box {
+            background: rgba(16, 185, 129, 0.08);
+            border-left: 4px solid #10b981;
+            padding: 1.25rem 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            color: #cbd5e1;
+        }
+
+        .tip-box strong {
+            color: #10b981;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: var(--accent-primary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .damage-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 2.5rem 1.2rem;
+            }
+
+            .btn-launch {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Top Navigation -->
+        <nav class="nav-bar">
+            <a href="../semag.html" class="nav-back">← Back to CA Games Hub</a>
+            <div>
+                <a href="../../index.html" class="nav-back">🏠 Calcium Notes Home</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <span class="badge-pill">Interactive Physics Sandbox</span>
+            <h1>🏏 CA Final Stress Buster</h1>
+            <p class="subtitle">
+                Tired after hours of studying Financial Reporting, Direct Tax, or Audit? Take a high-energy study break!
+                Smash falling subject blocks with a cricket bat or fling them with physics hands. Watch them shatter
+                into vivid powder bursts!
+            </p>
+            <div class="hero-actions">
+                <a href="stressbuster.html" class="btn-launch"
+                    onclick="gtag('event', 'launch_game', {'game': 'Stress Buster'});">
+                    🎮 Launch Game Now
+                </a>
+                <a href="#how-to-play" class="btn-secondary">
+                    📖 Review Steps & Guide
+                </a>
+            </div>
+        </header>
+
+        <!-- Section: About The Game -->
+        <article class="card">
+            <h2>🎯 About CA Final Stress Buster</h2>
+            <p>
+                Preparing for Chartered Accountancy (CA Foundation, CA Inter, and CA Final) demands intensive
+                concentration and marathon revision sessions. Staring at legal sections, tax provisions, and auditing
+                standards for 8 to 12 hours a day leads to cognitive fatigue.
+            </p>
+            <p>
+                <strong>CA Final Stress Buster</strong> was crafted specifically for CA aspirants as a quick,
+                therapeutic outlet. Powered by the <strong>Matter.js 2D physics engine</strong>, the game converts
+                dreaded subjects, revision test papers (RTPs), mock test papers (MTPs), penalties, and amendments into
+                tangible, destructible physics objects that you can bat, smash, collide, and pulverize into colorful
+                dust particles.
+            </p>
+            <div class="tip-box">
+                <strong>💡 Study Break Science:</strong> Research shows that short, active micro-breaks (5–10 minutes)
+                involving tactile visual feedback reset mental clarity and boost subsequent retention far better than
+                passive scrolling on social media.
+            </div>
+        </article>
+
+        <!-- Section: Step-by-Step Gameplay Review -->
+        <article class="card" id="how-to-play">
+            <h2>🕹️ How to Play & Review Steps</h2>
+            <p>
+                Follow this simple step-by-step walkthrough to get the most out of your Stress Buster session:
+            </p>
+
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Select Your Mode</div>
+                    <p class="step-desc">
+                        Choose between <strong>🏏 Bat Mode</strong> to swing a cricket bat at incoming subject blocks
+                        with mouse speed, or <strong>🖐️ Hand Mode</strong> to grab, toss, and fling blocks against the
+                        arena walls.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Rain Down Blocks</div>
+                    <p class="step-desc">
+                        Blocks spawn automatically from the ceiling every 1.5 seconds. Want more mayhem? Click the green
+                        <strong>🧱 Drop Blocks</strong> button to drop a triple cluster of subject blocks on demand.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Deliver Heavy Impacts</div>
+                    <p class="step-desc">
+                        In Bat Mode, move your mouse towards a block and click to execute a power swing. The faster your
+                        swing and the higher your bat multiplier, the further blocks fly across the screen!
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-title">Progressive Destruction</div>
+                    <p class="step-desc">
+                        Each block takes 3 hits to destroy. Watch them progress through realistic crack overlays and
+                        impact flashes before exploding into 40 matching powder particles with screen shake!
+                    </p>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <div class="step-title">Tune World Physics</div>
+                    <p class="step-desc">
+                        Open <strong>⚙️ Settings</strong> to toggle between zero-gravity floatation and hyper-gravity,
+                        adjust bat strike force up to 3.0x, and change block sizes from tiny bricks to giants.
+                    </p>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="step-card">
+                    <div class="step-number">6</div>
+                    <div class="step-title">Zen Immersive Mode</div>
+                    <p class="step-desc">
+                        Click <strong>👁️ Hide UI</strong> to eliminate all interface distractions and enter a
+                        full-screen destress zone. A subtle "Show UI" pill remains accessible in the top-left whenever
+                        you need it.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section: Visual Damage Stages -->
+        <article class="card">
+            <h2>💥 3-Stage Damage & Powder Mechanics</h2>
+            <p>
+                Every subject block in the arena features real-time dynamic damage states and particle physics:
+            </p>
+
+            <div class="damage-grid">
+                <div class="damage-box stage1">
+                    <div class="damage-stage-title">⚡ Hit 1: Hairline Fractures</div>
+                    <p class="damage-desc">
+                        Impact flash illuminates the block, activating SVG hairline crack textures while the block dims
+                        slightly.
+                    </p>
+                </div>
+
+                <div class="damage-box stage2">
+                    <div class="damage-stage-title">⚡ Hit 2: Deep Fissures</div>
+                    <p class="damage-desc">
+                        Heavy secondary fracture overlays appear. The block darkens dramatically to indicate imminent
+                        structural failure.
+                    </p>
+                </div>
+
+                <div class="damage-box stage3">
+                    <div class="damage-stage-title">💥 Hit 3: Powder Shatter</div>
+                    <p class="damage-desc">
+                        The block completely vaporizes into 40 distinct physics powder particles that burst outward with
+                        authentic velocity and screen shake!
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section: Subjects Included -->
+        <article class="card">
+            <h2>📚 CA Subjects Available to Smash</h2>
+            <p>
+                The arena randomly pulls from the most notorious CA exam subjects, statutory requirements, and exam
+                dreads:
+            </p>
+
+            <div class="subject-cloud">
+                <span class="subject-chip">📊 FR (Financial Reporting)</span>
+                <span class="subject-chip">📈 AFM (Advanced Financial Management)</span>
+                <span class="subject-chip">🔍 AUDIT (Advanced Auditing & Ethics)</span>
+                <span class="subject-chip">⚖️ DT (Direct Tax & International Tax)</span>
+                <span class="subject-chip">📑 IDT (GST & Customs)</span>
+                <span class="subject-chip">🧩 IBS (Integrated Business Solutions)</span>
+                <span class="subject-chip">💻 SPOM Set A (Corporate Law)</span>
+                <span class="subject-chip">💼 SPOM Set B (SCMPE / Costing)</span>
+                <span class="subject-chip">📜 LAW (Corporate & Economic Laws)</span>
+                <span class="subject-chip">💰 COSTING</span>
+                <span class="subject-chip">📝 RTPs (Revision Test Papers)</span>
+                <span class="subject-chip">🎯 MTPs (Mock Test Papers)</span>
+                <span class="subject-chip">⚠️ Amendments</span>
+                <span class="subject-chip">🏷️ GST Provisions</span>
+                <span class="subject-chip">🚨 Penalties</span>
+                <span class="subject-chip">🏛️ Appeals & Revisions</span>
+            </div>
+        </article>
+
+        <!-- Section: Controls Quick Reference -->
+        <article class="card">
+            <h2>⌨️ Controls & Settings Quick Reference</h2>
+            <table class="controls-table">
+                <thead>
+                    <tr>
+                        <th>Action / Feature</th>
+                        <th>Input</th>
+                        <th>Functionality</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cricket Bat Swing</strong></td>
+                        <td>Mouse Movement + Left Click</td>
+                        <td>Swings bat with momentum to launch blocks across the screen</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hand Grab & Throw</strong></td>
+                        <td>Click and Drag (in Hand Mode)</td>
+                        <td>Grabs any block and flings it at high velocity against walls or blocks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Spawn Blocks</strong></td>
+                        <td>Click "Drop Blocks" button</td>
+                        <td>Immediately releases 3 staggered subject blocks from the ceiling</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adjust Gravity</strong></td>
+                        <td>Settings &rarr; Gravity Slider (0.1 &ndash; 3.0)</td>
+                        <td>Change the arena pull from floaty moon physics to intense heavy drops</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bat Power Multiplier</strong></td>
+                        <td>Settings &rarr; Power Slider (0.5x &ndash; 3.0x)</td>
+                        <td>Amplify hit velocity for colossal home-run smashes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Color Themes</strong></td>
+                        <td>Settings &rarr; Block Color Dropdown</td>
+                        <td>Switch between Stone, Ruby Red, Sapphire Blue, Emerald, Amethyst, or Random</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Block Geometries</strong></td>
+                        <td>Settings &rarr; Block Shape Dropdown</td>
+                        <td>Choose Rectangles, Heavy Squares, Bouncy Circles, or Random Mix</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Immersive Mode</strong></td>
+                        <td>Click "Hide UI" / "Show UI"</td>
+                        <td>Hides interface buttons for zero-distraction smash sessions</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <!-- Final CTA Box -->
+        <div style="text-align: center; margin: 3rem 0;">
+            <a href="stressbuster.html" class="btn-launch" style="font-size: 1.3rem; padding: 1.25rem 3.5rem;">
+                🚀 Start Smashing Now
+            </a>
+            <div style="margin-top: 1rem;">
+                <a href="../semag.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem;">
+                    ← Explore other CA Examination Games
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                &copy; 2026 <a href="https://calciumnotes.com">Calcium Notes</a> &bull; Interactive Study Tools &
+                Examination Games for CA Aspirants.
+            </p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #64748b;">
+                Designed for educational wellness and stress relief. Free to play without login or registration.
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
