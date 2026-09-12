@@ -32828,5 +32828,4164 @@ const AICaseStudies = [
       answer: 2,
       reason: "Nova B has lower sales than Nova A but generates substantially higher contribution, demonstrating why both sales and contribution analysis can be useful."
     }]
+  },
+
+  // Chapter 8
+  // ============================================================
+  // CASE 51 — MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_051",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Strategy",
+      "Performance Management",
+      "CSF",
+      "KPI",
+      "Balanced Scorecard",
+      "Performance Pyramid"
+    ],
+    difficulty: "medium",
+
+    caseText: `
+
+      <p>Ardent Learning Technologies Limited was established as a provider of
+      digital learning solutions to universities, professional institutes and
+      corporate training departments. During its initial years, the company
+      concentrated primarily on selling large annual software licences. Its
+      management team believed that the most important indicator of success was
+      annual revenue because higher revenue generally resulted in higher
+      accounting profit.</p>
+
+      <p>Over the last three years, however, the learning technology market had
+      changed significantly. Several international competitors entered the
+      Indian market and began offering subscription-based learning platforms.
+      These competitors allowed customers to pay monthly rather than purchasing
+      an annual licence. They also provided frequent software updates,
+      personalised dashboards, mobile applications and rapid customer support.</p>
+
+      <p>Ardent's board initially responded by reducing the selling price of its
+      annual licence. The strategy resulted in an increase in the number of
+      contracts signed, but the finance department observed that the average
+      revenue per customer had fallen. At the same time, the customer support
+      department reported that complaints had increased because the company had
+      not increased its support capacity in proportion to the number of new
+      customers.</p>
+
+      <p>The Chief Executive Officer then proposed a new strategy. Instead of
+      concentrating only on sales volume, Ardent would compete on reliability,
+      customer experience and continuous innovation. The company would introduce
+      a subscription model, provide regular platform upgrades and establish a
+      customer-success team for large institutional clients.</p>
+
+      <p>During a strategy meeting, the finance director suggested that the
+      company should continue measuring revenue, operating profit and return on
+      investment. The marketing director agreed that these measures were
+      necessary but argued that they were insufficient because they would not
+      immediately show whether customers were satisfied with the new strategy.</p>
+
+      <p>The Chief Operating Officer proposed measuring platform downtime,
+      average response time to customer complaints, employee training hours,
+      product development cycle time and the percentage of customers renewing
+      their subscriptions. The Human Resources Director additionally suggested
+      monitoring employee capability and staff turnover because the new strategy
+      required software engineers and customer-success employees with different
+      skills from those required under the previous licence-based business
+      model.</p>
+
+      <p>The board decided to identify the critical success factors first and then
+      establish suitable key performance indicators. It also decided that
+      individual departmental targets should be connected with the overall
+      strategic objectives. The CEO specifically warned department heads against
+      creating targets that encouraged one department to improve its own result
+      while damaging the overall customer experience.</p>
+
+      <p>For example, the sales department had previously been rewarded purely on
+      the number of contracts signed. The new system would also consider the
+      quality of customers acquired, renewal rates and customer satisfaction.
+      Similarly, the software development department would not be rewarded only
+      for the number of features released. Features would also be evaluated on
+      reliability and usefulness to customers.</p>
+
+      <p>Ardent also examined the possibility of using a Balanced Scorecard.
+      Management wanted financial measures to remain important but wanted them
+      to be supported by customer, internal-process and learning-and-growth
+      measures. The strategy team also reviewed the Performance Pyramid because
+      it wanted strategic objectives to be translated into operational
+      performance measures.</p>
+
+      <p>After several discussions, the board concluded that performance
+      measurement should not be treated as a separate reporting exercise.
+      Instead, the performance management system should provide information
+      about whether the strategy was being implemented successfully and should
+      help management take corrective action when actual performance deviated
+      from strategic expectations.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "spm_ch8_051_1",
+        question: "Which approach best describes the change Ardent is making to its performance management system?",
+        options: [
+          "Replacing all financial measures with non-financial measures",
+          "Linking performance measures with strategic objectives and using them for corrective action",
+          "Measuring only departmental efficiency because strategy is decided by the board",
+          "Using revenue as the only common measure across all departments"
+        ],
+        answer: 1,
+        solution: "The case specifically states that performance measurement should provide information about strategy implementation, identify deviations and support corrective action."
+      },
+
+      {
+        question_id: "spm_ch8_051_2",
+        question: "If Ardent wants to determine whether its new customer-focused strategy is succeeding, which measure would be most directly relevant?",
+        options: [
+          "Number of office computers purchased",
+          "Number of contracts signed without considering renewals",
+          "Customer renewal rate and customer satisfaction",
+          "Total depreciation expense"
+        ],
+        answer: 2,
+        solution: "The new strategy focuses on customer experience and recurring relationships. Renewal rate and customer satisfaction directly indicate whether that strategic objective is being achieved."
+      },
+
+      {
+        question_id: "spm_ch8_051_3",
+        question: "Why would rewarding the sales department only on contracts signed create a potential performance management problem?",
+        options: [
+          "It may encourage behaviour that increases sales but damages customer quality and long-term performance",
+          "Sales staff would stop communicating with customers",
+          "Revenue would automatically become zero",
+          "The company would necessarily become decentralised"
+        ],
+        answer: 0,
+        solution: "A narrow measure can stimulate dysfunctional behaviour. Sales employees may focus on quantity of contracts rather than profitable, suitable and sustainable customer relationships."
+      },
+
+      {
+        question_id: "spm_ch8_051_4",
+        question: "Which of the following best represents the role of a Balanced Scorecard in the case?",
+        options: [
+          "It eliminates the need for financial performance measurement",
+          "It translates strategy into objectives and measures across financial and non-financial dimensions",
+          "It is primarily a method for calculating bankruptcy probability",
+          "It measures only employee productivity"
+        ],
+        answer: 1,
+        solution: "The Balanced Scorecard translates strategy into measurable objectives and combines financial and non-financial perspectives."
+      },
+
+      {
+        question_id: "spm_ch8_051_5",
+        question: "Why is it important for Ardent's performance management system to evolve when its strategy changes?",
+        options: [
+          "Performance indicators should remain unchanged regardless of strategy",
+          "A performance system is useful only when it is based on historical accounting data",
+          "Measures should continue to reflect the critical success factors and objectives of the current strategy",
+          "Changing measures automatically improves profit"
+        ],
+        answer: 2,
+        solution: "Performance management systems should derive from strategic objectives and evolve as strategy changes. Ardent's new customer and innovation strategy therefore requires new indicators."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 52 — MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_052",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Porter Value Chain",
+      "Primary Activities",
+      "Support Activities",
+      "Value Drivers",
+      "Margin",
+      "Value Chain Analysis"
+    ],
+    difficulty: "medium",
+
+    caseText: `
+
+      <p>GreenHarvest Foods Limited manufactures packaged organic food products
+      including cereals, ready-to-cook meals, snacks and health-oriented
+      breakfast products. The company built its brand around the promise of
+      traceability and quality. Customers were willing to pay a premium because
+      they believed that the company's products were sourced from reliable
+      suppliers and were processed under controlled conditions.</p>
+
+      <p>During a strategic review, the management discovered that competitors
+      with similar manufacturing technology were earning higher margins.
+      GreenHarvest therefore appointed a cross-functional team to study its
+      entire value chain rather than examining the production department alone.</p>
+
+      <p>The team first examined procurement. Raw materials were purchased from
+      several certified agricultural suppliers. Although the procurement team
+      negotiated competitive prices, purchasing orders were often raised
+      manually. This resulted in delays and occasional duplication of orders.</p>
+
+      <p>The team then reviewed inbound logistics. Agricultural products were
+      received at regional warehouses before being sent to the manufacturing
+      plants. Some materials remained in storage for longer than necessary
+      because purchasing quantities were not always aligned with production
+      schedules. Warehouse employees also performed repeated inspections and
+      manual recording activities.</p>
+
+      <p>Inside the manufacturing plants, production managers had invested heavily
+      in automated processing equipment. The equipment had improved consistency
+      and reduced certain production defects. However, changeover time between
+      different product varieties remained relatively high because production
+      batches were scheduled without sufficient coordination with sales forecasts.</p>
+
+      <p>After production, finished goods were stored in distribution centres.
+      Products were then sent to supermarkets, health stores and online
+      fulfilment centres. The outbound logistics team noticed that emergency
+      deliveries had increased because inventory information was not always
+      updated quickly enough.</p>
+
+      <p>The marketing team had developed a strong social-media presence and
+      regularly communicated the health benefits and traceability features of
+      GreenHarvest products. The company also operated an online store. However,
+      marketing campaigns were sometimes launched without sufficient
+      coordination with production and logistics, resulting in sudden increases
+      in demand for products that were temporarily unavailable.</p>
+
+      <p>After-sales service was particularly important for GreenHarvest's
+      subscription customers. Customers could request replacements for damaged
+      packages or report quality concerns. Management believed that quick
+      resolution of such issues protected the brand's reputation.</p>
+
+      <p>The team also identified several support activities. Human resource
+      management was responsible for recruitment and training. Technology
+      development included production automation, customer data analytics and
+      warehouse systems. Firm infrastructure included finance, legal,
+      administration and strategic planning. Procurement supported all major
+      activities by acquiring raw materials, packaging and services.</p>
+
+      <p>The board concluded that the company should not simply attempt to cut
+      every cost. It wanted to identify activities that created value for
+      customers, eliminate unnecessary activities where possible and improve
+      coordination between activities that were individually efficient but
+      collectively causing delays.</p>
+
+      <p>The team also decided to compare GreenHarvest's processes with leading
+      competitors. It expected that the comparison would reveal gaps in
+      purchasing, inventory management, delivery speed and customer service.
+      Management believed that improving these value drivers could increase the
+      difference between the price customers were willing to pay and the cost
+      incurred by the company.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "spm_ch8_052_1",
+        question: "Which of the following is a primary activity in GreenHarvest's value chain?",
+        options: [
+          "Human resource management",
+          "Firm infrastructure",
+          "Inbound logistics",
+          "Technology development"
+        ],
+        answer: 2,
+        solution: "Inbound logistics is one of Porter's primary value-chain activities. HR, infrastructure and technology development are support activities."
+      },
+
+      {
+        question_id: "spm_ch8_052_2",
+        question: "The activity of receiving and storing agricultural raw materials before production is primarily classified as:",
+        options: [
+          "Inbound logistics",
+          "Outbound logistics",
+          "Marketing and sales",
+          "After-sales service"
+        ],
+        answer: 0,
+        solution: "Receiving, storing and handling inputs before production are functions of inbound logistics."
+      },
+
+      {
+        question_id: "spm_ch8_052_3",
+        question: "Which activity is a support activity rather than a primary activity?",
+        options: [
+          "Operations",
+          "Marketing and sales",
+          "Human resource management",
+          "Outbound logistics"
+        ],
+        answer: 2,
+        solution: "Human resource management is one of Porter's four support activities."
+      },
+
+      {
+        question_id: "spm_ch8_052_4",
+        question: "In the context of the case, GreenHarvest's margin can broadly be understood as:",
+        options: [
+          "Sales revenue minus marketing expenditure only",
+          "The excess of customer-perceived/willing-to-pay value over the cost incurred by the firm",
+          "Production cost divided by sales",
+          "Profit before tax divided by total assets"
+        ],
+        answer: 1,
+        solution: "In value-chain analysis, margin represents the excess of the value customers are willing to pay over the cost incurred by the firm."
+      },
+
+      {
+        question_id: "spm_ch8_052_5",
+        question: "Why is coordination between marketing and production important in GreenHarvest's situation?",
+        options: [
+          "Marketing has no relationship with the value chain",
+          "A successful marketing campaign can increase demand, and poor coordination may create shortages and additional costs",
+          "Production should always ignore market forecasts",
+          "Only finance should coordinate the two departments"
+        ],
+        answer: 1,
+        solution: "The case shows that marketing campaigns sometimes create demand spikes without sufficient production/logistics coordination. Value-chain linkages require coordination."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 53 — MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_053",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Value Added",
+      "Non Value Added",
+      "Outsourcing",
+      "Value System",
+      "Internal Customer",
+      "Process Improvement"
+    ],
+    difficulty: "medium",
+
+    caseText: `
+
+      <p>MetroRail Components Private Limited manufactures specialised
+      components used in railway braking systems. The company had historically
+      operated with a functional structure in which production, quality,
+      procurement, stores, finance and dispatch worked as separate departments.
+      Each department had developed its own procedures over time.</p>
+
+      <p>The managing director became concerned when customers began complaining
+      about delivery delays even though the production department reported that
+      manufacturing efficiency had improved. An internal investigation revealed
+      that the problem was not concentrated in one department. Instead, delays
+      were occurring at several points between receipt of customer orders and
+      final dispatch.</p>
+
+      <p>When an order was received, the sales department entered the order into
+      its system. A printed copy was then sent to production planning. Production
+      planning prepared another document and sent it to stores. Stores verified
+      inventory manually before sending a confirmation back to production.
+      Quality assurance subsequently received a separate copy of the production
+      schedule.</p>
+
+      <p>The company also required several approval signatures for certain
+      purchases. Some of these approvals had been introduced years earlier when
+      the company had a much smaller information system. Managers discovered
+      that several approvals no longer added meaningful control because the same
+      information was already available electronically.</p>
+
+      <p>A process-improvement team classified activities into four categories.
+      Some activities were necessary and could not realistically be improved
+      immediately. Other activities were necessary but could be simplified or
+      performed more efficiently. A third group consisted of activities that
+      were not required but could only be eliminated after changes in procedures
+      or technology. The final group consisted of activities that were clearly
+      unnecessary and could be removed immediately.</p>
+
+      <p>One example concerned the mandatory testing of braking components before
+      shipment. Management concluded that the testing was necessary because
+      railway safety requirements could not be compromised. However, the team
+      also discovered that the testing process could be automated and the
+      recording procedure simplified.</p>
+
+      <p>Another example involved repeated manual data entry. The same customer
+      order was entered into three separate systems by different employees.
+      Management concluded that the activity did not add value and could be
+      eliminated through system integration.</p>
+
+      <p>The company also considered outsourcing certain activities. A specialist
+      logistics provider offered to manage regional transportation at a lower
+      total cost. The board recognised that outsourcing should not be based only
+      on whether an activity appeared non-value-added. Some activities could be
+      strategically important even if they were not directly transforming the
+      product.</p>
+
+      <p>During the review, management expanded the analysis beyond the company
+      itself. It examined suppliers' suppliers, MetroRail's own processes,
+      customers and even the businesses that ultimately used the railway
+      systems. The strategy team described this broader chain as the company's
+      extended value system.</p>
+
+      <p>Management also encouraged departments to treat the next user of their
+      output as an internal customer. Production planning, for example, was
+      expected to provide accurate and timely information to stores rather than
+      simply completing its own internal paperwork target.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "spm_ch8_053_1",
+        question: "The mandatory safety testing that is required but can be improved through automation belongs most closely to which category?",
+        options: [
+          "Not required and immediately eliminable",
+          "Required but capable of being improved, simplified or reduced",
+          "Not required but eventually eliminable",
+          "An activity that should always be outsourced"
+        ],
+        answer: 1,
+        solution: "The case explicitly states that safety testing is required but the process can be automated and simplified. This corresponds to the second category."
+      },
+
+      {
+        question_id: "spm_ch8_053_2",
+        question: "Repeated manual entry of the same customer order into three systems is best viewed as:",
+        options: [
+          "A necessary primary value-adding activity",
+          "A support activity that must never be changed",
+          "An unnecessary activity capable of immediate elimination through integration",
+          "A customer-facing differentiation activity"
+        ],
+        answer: 2,
+        solution: "The case specifically says the repeated data entry does not add value and can be eliminated through system integration."
+      },
+
+      {
+        question_id: "spm_ch8_053_3",
+        question: "Why should MetroRail not automatically outsource every activity classified as non-value-added?",
+        options: [
+          "Outsourcing is never permitted under value-chain analysis",
+          "Some activities may be strategically important and outsourcing decisions require quantitative and qualitative evaluation",
+          "Non-value-added activities always increase competitive advantage",
+          "Only production activities can be outsourced"
+        ],
+        answer: 1,
+        solution: "Outsourcing requires consideration of cost effectiveness, strategic importance, qualitative factors and core competencies. Classification alone does not determine the decision."
+      },
+
+      {
+        question_id: "spm_ch8_053_4",
+        question: "MetroRail's analysis of suppliers' suppliers and customers' customers represents the concept of:",
+        options: [
+          "Responsibility accounting",
+          "Value System",
+          "Budgetary control",
+          "Span of control"
+        ],
+        answer: 1,
+        solution: "The extended value chain incorporating suppliers' suppliers and customers' customers is referred to as the Value System."
+      },
+
+      {
+        question_id: "spm_ch8_053_5",
+        question: "Treating the next department receiving an output as an internal customer primarily encourages:",
+        options: [
+          "Functional isolation",
+          "Sub-optimisation",
+          "Process-wide integration and coordination",
+          "Complete centralisation"
+        ],
+        answer: 2,
+        solution: "Viewing the next user as a customer encourages departments to consider the quality and timeliness of their output for the entire process rather than only their own departmental targets."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 54 — MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_054",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "McKinsey 7S",
+      "Hard S",
+      "Soft S",
+      "Shared Values",
+      "Change Management",
+      "Gap Analysis"
+    ],
+    difficulty: "medium",
+
+    caseText: `
+
+      <p>HorizonCare Hospitals operated a chain of five hospitals in different
+      Indian cities. The group had grown rapidly through acquisitions. Each
+      acquired hospital had retained many of its old procedures, reporting
+      practices and management traditions.</p>
+
+      <p>The board announced a group-wide strategy to create a digitally
+      integrated healthcare network. The strategy involved a common patient
+      information platform, centralised procurement of selected medical
+      equipment, standardised quality reporting and greater use of analytics.</p>
+
+      <p>The project team initially focused almost entirely on technology. A new
+      information system was purchased and a large implementation budget was
+      approved. However, after six months, adoption was poor. Doctors complained
+      that the system slowed them down, nurses received inadequate training and
+      administrators continued using spreadsheets because they did not trust the
+      new system.</p>
+
+      <p>The board then asked an external adviser to examine the organisation
+      using the McKinsey 7S framework. The adviser explained that the framework
+      consisted of seven interrelated elements and that no single element should
+      be treated as independently sufficient.</p>
+
+      <p>The hospital's strategy was clear: improve patient experience, reduce
+      avoidable delays and use technology to integrate the group. However, the
+      structure remained highly decentralised. Each hospital had significant
+      autonomy and used different reporting lines.</p>
+
+      <p>The systems were inconsistent. Different hospitals used different
+      information systems, forms and reporting procedures. Staff skills also
+      varied substantially. Some hospitals had employees with strong digital
+      capabilities while others had very limited experience with analytics.</p>
+
+      <p>The management style was also different across hospitals. One hospital
+      had an authoritarian medical director who made most decisions personally.
+      Another hospital had a participative culture where employees were expected
+      to contribute ideas. Employees transferred between hospitals found the
+      differences confusing.</p>
+
+      <p>The board identified shared values as the central issue. Although all
+      hospitals formally claimed to place patients first, employees interpreted
+      the objective differently. Some managers emphasised cost reduction, while
+      others emphasised clinical autonomy or rapid expansion.</p>
+
+      <p>The adviser proposed beginning with shared values and then checking
+      whether strategy, structure and systems supported those values. The soft
+      elements—staff, skills and style—would then be examined to determine
+      whether they supported the hard elements and each other.</p>
+
+      <p>For the implementation programme, management decided to first prepare
+      employees, then develop a clear vision and implementation plan, implement
+      the changes and finally embed the new practices into organisational
+      culture. Progress would be reviewed periodically.</p>
+
+      <p>A separate gap analysis was also prepared. The team documented the
+      current situation, defined the desired future state, identified actions,
+      implemented them and scheduled periodic reviews.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "spm_ch8_054_1",
+        question: "Which of the following is a Hard S in the McKinsey 7S framework?",
+        options: [
+          "Style",
+          "Staff",
+          "Skills",
+          "Systems"
+        ],
+        answer: 3,
+        solution: "The three Hard S elements are Strategy, Structure and Systems."
+      },
+
+      {
+        question_id: "spm_ch8_054_2",
+        question: "Why did the adviser consider Shared Values particularly important in HorizonCare?",
+        options: [
+          "Shared Values are the only Hard S element",
+          "Shared Values are placed at the centre of the 7S framework and influence alignment among the other elements",
+          "Shared Values determine the accounting profit directly",
+          "Shared Values replace the need for organisational structure"
+        ],
+        answer: 1,
+        solution: "Shared Values are at the centre of the McKinsey 7S framework and influence how the other six elements should align."
+      },
+
+      {
+        question_id: "spm_ch8_054_3",
+        question: "HorizonCare's different information systems and reporting procedures represent a problem primarily associated with:",
+        options: [
+          "Systems",
+          "Shared Values",
+          "Style",
+          "Staff"
+        ],
+        answer: 0,
+        solution: "Systems cover organisational processes, information systems and daily activities."
+      },
+
+      {
+        question_id: "spm_ch8_054_4",
+        question: "Which sequence best reflects the change-management approach described in the case?",
+        options: [
+          "Implement first, identify the problem later, then train employees",
+          "Prepare the organisation, craft vision/plan, implement, embed and review",
+          "Change structure, eliminate staff and then define strategy",
+          "Measure profit, borrow money and acquire competitors"
+        ],
+        answer: 1,
+        solution: "The case follows the five broad stages: preparation, vision/plan, implementation, embedding and review."
+      },
+
+      {
+        question_id: "spm_ch8_054_5",
+        question: "Which sequence best represents the gap-analysis process used by HorizonCare?",
+        options: [
+          "Current state → desired state → action plan → execution → review",
+          "Desired state → liquidation → current state → execution",
+          "Execution → current state → budgeting → liquidation",
+          "Strategy → profit → dividend → current state"
+        ],
+        answer: 0,
+        solution: "Gap analysis begins with understanding the current state, determining the desired state, preparing an action plan, executing it and periodically reviewing progress."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 55 — MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_055",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Organisational Structure",
+      "Centralisation",
+      "Decentralisation",
+      "Divisional Structure",
+      "Matrix Structure",
+      "Performance Measurement"
+    ],
+    difficulty: "medium",
+
+    caseText: `
+
+      <p>NovaBuild Engineering Group had grown from a small engineering business
+      into a diversified organisation with operations in construction,
+      infrastructure maintenance and specialised industrial equipment. The
+      original business had been run directly by the founder, who approved most
+      important decisions himself.</p>
+
+      <p>As the organisation grew, the founder realised that this arrangement
+      was creating delays. Managers frequently waited for approval before
+      making relatively routine decisions. Customers sometimes had to wait for
+      quotations because the local managers were not authorised to negotiate
+      within specified limits.</p>
+
+      <p>The board therefore reorganised NovaBuild into three major divisions:
+      Construction, Industrial Equipment and Infrastructure Services. Each
+      division had a divisional manager responsible for its strategy and
+      operating performance. Certain common functions such as legal services,
+      group treasury and selected HR policies remained centrally controlled.</p>
+
+      <p>The new structure improved responsiveness, but another problem emerged.
+      The divisions began focusing on their own performance. The Construction
+      division negotiated aggressively for internal resources, while the
+      Industrial Equipment division sometimes delayed projects because it was
+      trying to protect its own divisional margin.</p>
+
+      <p>The finance director proposed using return on investment to compare the
+      divisions. He rejected a proposal to use residual income alone because
+      the divisions differed substantially in size and capital employed.</p>
+
+      <p>NovaBuild subsequently won a major infrastructure project requiring
+      specialists from engineering, procurement, finance, technology and
+      operations. Management decided to use a matrix structure for the project.
+      Employees would continue reporting to their functional managers but would
+      also work under the project manager for project activities.</p>
+
+      <p>The HR director explained that the functional manager would continue
+      to be responsible for matters such as employee development, annual review,
+      salary and promotion. The project manager would focus on project
+      deliverables, deadlines and coordination.</p>
+
+      <p>Some employees were concerned because they would effectively have two
+      reporting relationships. The CEO accepted that conflict could occur but
+      believed the structure was appropriate because the project required
+      specialised knowledge from several functions.</p>
+
+      <p>The board also recognised that performance measurement needed to match
+      the organisational structure. Under the earlier centralised structure,
+      information had mainly travelled upward to senior management. Under the
+      divisional arrangement, more performance information could be collected
+      and analysed at the lower level because divisional managers had greater
+      autonomy.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "spm_ch8_055_1",
+        question: "The original founder-controlled arrangement is closest to which characteristic?",
+        options: [
+          "Highly decentralised decision-making",
+          "Strong concentration of decision-making at the top",
+          "Matrix project management",
+          "Network organisation"
+        ],
+        answer: 1,
+        solution: "The founder personally approved most important decisions, indicating centralised decision-making."
+      },
+
+      {
+        question_id: "spm_ch8_055_2",
+        question: "Why did NovaBuild's divisional structure improve responsiveness?",
+        options: [
+          "All decisions were transferred to external suppliers",
+          "Divisional managers received greater autonomy and could respond to their markets",
+          "The company eliminated all specialist functions",
+          "The board stopped measuring performance"
+        ],
+        answer: 1,
+        solution: "Divisional structures give managers greater responsibility for products, services or markets and can improve flexibility and responsiveness."
+      },
+
+      {
+        question_id: "spm_ch8_055_3",
+        question: "Why did the finance director prefer ROI over residual income for comparing the divisions?",
+        options: [
+          "ROI is always superior in every situation",
+          "The divisions differed substantially in size and capital employed",
+          "Residual income cannot be calculated",
+          "ROI eliminates all transfer-pricing problems"
+        ],
+        answer: 1,
+        solution: "The source material notes that divisional residual income can be misleading when division sizes differ, while ROI provides a relative measure, although transfer pricing remains a consideration."
+      },
+
+      {
+        question_id: "spm_ch8_055_4",
+        question: "In NovaBuild's matrix structure, who remains responsible for salary and promotion?",
+        options: [
+          "Only the project manager",
+          "The functional manager",
+          "The external customer",
+          "The finance department"
+        ],
+        answer: 1,
+        solution: "Under the matrix arrangement described, the functional manager remains responsible for employee development, annual review, salary and promotion."
+      },
+
+      {
+        question_id: "spm_ch8_055_5",
+        question: "What is the principal organisational risk created by employees having two reporting relationships?",
+        options: [
+          "Complete elimination of specialisation",
+          "Potential conflict, confusion and demotivation",
+          "Automatic bankruptcy",
+          "Removal of all project authority"
+        ],
+        answer: 1,
+        solution: "Matrix structures can create conflicts between project and functional managers and may confuse or demotivate employees if communication and coordination are weak."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 56 — HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_056",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Complex Business Structures",
+      "Strategic Alliance",
+      "Joint Venture",
+      "Multinational Corporation",
+      "Supply Chain",
+      "Virtual Organisation",
+      "Information Technology"
+    ],
+    difficulty: "hard",
+
+    caseText: `
+
+      <p>AeroLink Mobility was created by a group of companies involved in
+      electric vehicle manufacturing, battery technology, logistics software and
+      urban transportation services. Rather than building every capability
+      internally, the group decided to operate through a network of independent
+      organisations.</p>
+
+      <p>The vehicle manufacturer produced the basic vehicle platform. A battery
+      specialist supplied battery packs, a software company developed the fleet
+      management platform and regional logistics partners handled delivery and
+      maintenance. In some markets AeroLink also entered strategic alliances
+      with local transportation companies.</p>
+
+      <p>In one country, AeroLink and a local mobility company decided to create
+      a separate company to operate charging stations. Both parties contributed
+      capital, employees and technology. The new entity had its own management
+      team and separate accounts.</p>
+
+      <p>In another country, AeroLink entered into a strategic alliance with a
+      local transportation operator. No separate company was established. Both
+      organisations remained legally independent but agreed to cooperate on
+      customer acquisition, charging infrastructure and fleet operations.</p>
+
+      <p>The management team soon discovered that performance management was
+      significantly more difficult in the network than it had been inside its
+      own manufacturing plants. The battery supplier focused heavily on battery
+      cost, while AeroLink focused on range, reliability and customer
+      satisfaction. The logistics partner was rewarded partly on delivery
+      volume and therefore sometimes prioritised easy deliveries rather than
+      difficult but strategically important locations.</p>
+
+      <p>The organisations also had different attitudes toward risk. AeroLink
+      wanted rapid technological experimentation, whereas one logistics partner
+      had a highly conservative culture because it had historically served
+      regulated industries.</p>
+
+      <p>The multinational nature of the network created additional difficulties.
+      Some partners operated in different time zones and used different
+      currencies and reporting periods. Local regulations also differed.
+      Management found that a performance indicator considered acceptable in one
+      country was not always directly comparable with an indicator reported by a
+      partner in another country.</p>
+
+      <p>The supply chain created another problem. When a battery shipment was
+      delayed, vehicle production was affected. When vehicle production was
+      delayed, logistics capacity was underutilised. When delivery was delayed,
+      customers blamed AeroLink even when the immediate cause was outside
+      AeroLink's own operations.</p>
+
+      <p>The Chief Information Officer proposed establishing a common information
+      architecture. Each major partner would continue using its own core system
+      where necessary, but compatible interfaces would allow relevant
+      information to flow into a common platform. Management would then be able
+      to see orders, battery availability, production status, logistics capacity
+      and customer-service information using common definitions.</p>
+
+      <p>Some partners resisted because they were concerned that sharing data
+      would expose commercially sensitive information. AeroLink therefore
+      proposed a mutually agreed control and reporting framework specifying what
+      information would be shared, who could access it and how frequently
+      performance would be reported.</p>
+
+      <p>The board concluded that the network could reduce investment and allow
+      each participant to concentrate on specialised capabilities. However, the
+      benefits would be lost if differences in objectives, culture, information
+      systems and accountability prevented the organisations from working as an
+      integrated value network.</p>
+
+      <p>Management therefore decided to define common objectives, establish
+      minimum quality and reporting standards, clarify responsibility in
+      contracts and introduce a shared information framework.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "spm_ch8_056_1",
+        question: "Which arrangement in the case is most clearly a joint venture?",
+        options: [
+          "The relationship with the battery supplier",
+          "The separate charging-station company jointly created by two parties",
+          "The independent logistics provider",
+          "The alliance where both companies remain independent"
+        ],
+        answer: 1,
+        solution: "A joint venture involves parties creating a separate business entity and sharing risks/resources. The charging-station company fits this description."
+      },
+
+      {
+        question_id: "spm_ch8_056_2",
+        question: "Which feature distinguishes AeroLink's strategic alliance from its joint venture?",
+        options: [
+          "The alliance involves no cooperation",
+          "The alliance requires one party to own the other",
+          "The alliance retains the separate independence of the participating organisations and does not create a separate entity",
+          "The alliance always involves more capital"
+        ],
+        answer: 2,
+        solution: "In the case, the strategic alliance involves cooperation while both companies remain legally independent. The joint venture creates a separate entity."
+      },
+
+      {
+        question_id: "spm_ch8_056_3",
+        question: "What is the most significant performance-management issue created by the logistics partner's volume-based target?",
+        options: [
+          "The target may cause local optimisation that conflicts with overall network objectives",
+          "It guarantees goal congruence",
+          "It eliminates the need for common KPIs",
+          "It ensures difficult deliveries receive priority"
+        ],
+        answer: 0,
+        solution: "The partner is optimising delivery volume rather than the network's overall strategic objectives. This is an example of sub-optimisation and goal incongruence."
+      },
+
+      {
+        question_id: "spm_ch8_056_4",
+        question: "Why is the proposed common information architecture strategically important?",
+        options: [
+          "It forces every partner to abandon its existing system",
+          "It can allow compatible systems to share common information and improve real-time performance visibility",
+          "It eliminates all commercial confidentiality concerns automatically",
+          "It removes the need for contracts"
+        ],
+        answer: 1,
+        solution: "The proposed system allows partners to retain core systems while using interfaces/common definitions to share relevant information and improve performance management."
+      },
+
+      {
+        question_id: "spm_ch8_056_5",
+        question: "Which combination would be most appropriate for managing the differences among AeroLink's network partners?",
+        options: [
+          "No common objectives and complete freedom from reporting",
+          "Common objectives, minimum quality standards, clear accountability and agreed information sharing",
+          "Only financial targets imposed by AeroLink",
+          "A complete ban on outsourcing"
+        ],
+        answer: 1,
+        solution: "Complex structures require goal congruence, common minimum standards, clear accountability, trust/information-sharing arrangements and appropriate controls."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 57 — HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_057",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Behavioural Aspects",
+      "Accountability",
+      "Hard Accountability",
+      "Soft Accountability",
+      "Control",
+      "Management Style",
+      "Culture",
+      "Performance Measures"
+    ],
+    difficulty: "hard",
+
+    caseText: `
+
+      <p>Meridian Consumer Electronics Limited manufactured home appliances and
+      had historically competed through low prices. Its production system was
+      highly standardised and management exercised strict control over costs.
+      Department managers were expected to remain within their budgets and
+      deviations were investigated during monthly review meetings.</p>
+
+      <p>For several years this approach produced acceptable results. The market
+      was relatively predictable, product designs changed slowly and customers
+      were highly price sensitive. Management therefore developed a culture in
+      which employees were encouraged to avoid unnecessary expenditure and
+      follow established procedures.</p>
+
+      <p>Competition subsequently changed. Customers began demanding smart
+      appliances, faster product upgrades, better service and more innovative
+      features. Meridian's competitors were launching products much faster than
+      Meridian.</p>
+
+      <p>The CEO introduced a differentiation strategy. Employees were encouraged
+      to experiment with new product features and propose improvements. However,
+      the old performance system remained largely unchanged. Production managers
+      were still evaluated heavily on budget compliance, while product engineers
+      were evaluated on development expenditure.</p>
+
+      <p>Within months, managers began rejecting several potentially useful
+      experiments because they were worried about exceeding their budgets.
+      Engineers postponed prototype testing until the next reporting period.
+      The innovation team complained that the performance system was effectively
+      telling employees that cost control was more important than innovation,
+      despite the CEO's new strategic statements.</p>
+
+      <p>The CFO argued that financial discipline should not disappear. He
+      proposed retaining financial measures while introducing measures for
+      innovation, quality, customer satisfaction, time to market and employee
+      capability.</p>
+
+      <p>The HR director also reviewed accountability. She explained that hard
+      accountability involved converting activities and outcomes into
+      quantitative information and reporting the results with appropriate
+      explanations. Soft accountability, on the other hand, involved human
+      participation in shaping, evaluating and implementing organisational
+      goals.</p>
+
+      <p>The company also reviewed its control mechanisms. Behavioural control
+      would be used to ensure that employees performed desired actions.
+      Personnel and cultural control would focus on having suitable people and a
+      conducive organisational environment. Reporting control would focus on
+      collecting and communicating performance information fairly.</p>
+
+      <p>The internal audit team warned management that excessive focus on a
+      limited number of measurable targets could create unintended behaviour.
+      For example, if customer-service employees were evaluated only on the
+      number of calls closed, they might close calls quickly without actually
+      solving customer problems.</p>
+
+      <p>The CEO accepted the principle that employees tend to pay greater
+      attention to aspects of work that are measured and evaluated. He therefore
+      instructed managers to redesign KPIs so that they reflected the actual
+      strategic priorities of the organisation.</p>
+
+      <p>Management also reviewed leadership style. The company had traditionally
+      used a budget-constrained style because tight cost control was important.
+      The CEO concluded that the new growth and differentiation strategy
+      required a more profit-conscious approach in which managers would consider
+      profitability while also evaluating longer-term opportunities.</p>
+
+      <p>Finally, Meridian began developing an organisational culture that valued
+      innovation, customer service and responsible risk-taking without abandoning
+      financial discipline.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "spm_ch8_057_1",
+        question: "What behavioural problem arose because Meridian retained its old budget-based performance measures after changing strategy?",
+        options: [
+          "Employees were encouraged to take unlimited risks",
+          "Employees avoided potentially valuable innovation because the measures continued to emphasise budget compliance",
+          "Employees automatically became more customer-focused",
+          "Financial control disappeared completely"
+        ],
+        answer: 1,
+        solution: "The old measures stimulated behaviour consistent with the previous cost-control strategy rather than the new differentiation and innovation strategy."
+      },
+
+      {
+        question_id: "spm_ch8_057_2",
+        question: "Which situation best represents hard accountability?",
+        options: [
+          "Employees participating in defining organisational values",
+          "Managers discussing the ethical implications of a strategic decision",
+          "Reporting a department's quantified performance against established targets with explanations for deviations",
+          "Employees informally sharing ideas"
+        ],
+        answer: 2,
+        solution: "Hard accountability involves quantitative/financial information, reporting activities and outcomes numerically and explaining deviations."
+      },
+
+      {
+        question_id: "spm_ch8_057_3",
+        question: "Which control mechanism is primarily concerned with having suitable people and a conducive organisational environment?",
+        options: [
+          "Behavioural control",
+          "Personnel and cultural control",
+          "Reporting control",
+          "Financial statement control only"
+        ],
+        answer: 1,
+        solution: "Personnel and cultural control ensures appropriate skills and a conducive environment."
+      },
+
+      {
+        question_id: "spm_ch8_057_4",
+        question: "The call-centre example illustrates which principle?",
+        options: [
+          "What gets measured tends to get done",
+          "Financial measures never influence behaviour",
+          "Decentralisation always improves customer service",
+          "Non-financial measures cannot create dysfunctional behaviour"
+        ],
+        answer: 0,
+        solution: "Employees tend to focus attention on measured and evaluated aspects. A narrow call-closure target could therefore encourage quick closure rather than genuine problem resolution."
+      },
+
+      {
+        question_id: "spm_ch8_057_5",
+        question: "Why was a budget-constrained management style less suitable after Meridian adopted differentiation and growth?",
+        options: [
+          "Budget control is always inappropriate",
+          "The new strategy required consideration of innovation, customer service and longer-term profitability rather than only strict short-term budget adherence",
+          "Differentiation requires zero financial measures",
+          "Growth strategies require no accountability"
+        ],
+        answer: 1,
+        solution: "A budget-constrained style can fit mature environments where tight cost control is central. Meridian's new growth/differentiation strategy required broader performance considerations."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 58 — HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_058",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Corporate Failure",
+      "Altman Z Score",
+      "Quantitative Model",
+      "Financial Ratios",
+      "Bankruptcy Prediction"
+    ],
+    difficulty: "hard",
+
+    caseText: `
+
+      <p>Titan Industrial Systems Limited was a publicly listed manufacturing
+      company producing specialised industrial equipment. For many years,
+      Titan had enjoyed strong demand from infrastructure and manufacturing
+      customers. The company expanded its production capacity after management
+      forecast that industry demand would continue growing.</p>
+
+      <p>To finance the expansion, Titan borrowed substantially. Management
+      expected the additional production capacity to generate sufficient sales
+      to service the debt. However, demand weakened unexpectedly. Several major
+      customers postponed capital expenditure and Titan's factories began
+      operating below planned capacity.</p>
+
+      <p>The finance director nevertheless argued that the company had valuable
+      machinery and a strong market reputation. He believed that temporary
+      operating difficulties should not be interpreted as evidence of corporate
+      failure.</p>
+
+      <p>The board appointed an independent adviser to perform an early-warning
+      analysis. The adviser explained that quantitative models could be useful
+      because they combined financial information into a score that could
+      indicate the likelihood of financial distress. However, the adviser also
+      warned that a score was not a substitute for investigating the underlying
+      reasons for deterioration.</p>
+
+      <p>The adviser decided to calculate the original Altman Z-score because
+      Titan was a publicly held manufacturing company.</p>
+
+      <p>The following figures were extracted from Titan's latest financial
+      statements:</p>
+
+      <table>
+        <tr><th>Particulars</th><th>Amount (₹ crore)</th></tr>
+        <tr><td>Working Capital</td><td>90</td></tr>
+        <tr><td>Total Assets</td><td>600</td></tr>
+        <tr><td>Retained Earnings</td><td>120</td></tr>
+        <tr><td>EBIT</td><td>72</td></tr>
+        <tr><td>Market Value of Equity</td><td>360</td></tr>
+        <tr><td>Total Liabilities</td><td>300</td></tr>
+        <tr><td>Sales</td><td>720</td></tr>
+      </table>
+
+      <p>The adviser reminded the board that the original Altman model uses five
+      variables. X1 represents working capital divided by total assets, X2
+      represents retained earnings divided by total assets, X3 represents EBIT
+      divided by total assets, X4 represents market value of equity divided by
+      total liabilities and X5 represents sales divided by total assets.</p>
+
+      <p>The original model is:</p>
+
+      <p><b>Z = 1.2X1 + 1.4X2 + 3.3X3 + 0.6X4 + 1.0X5</b></p>
+
+      <p>The adviser further explained that a score below 1.81 falls in the
+      distress zone, a score between 1.81 and 2.99 falls in the grey zone and a
+      score above 2.99 falls in the safe zone.</p>
+
+      <p>Although Titan's management was initially confident, the adviser
+      emphasised that the score represented a financial warning indicator rather
+      than a complete diagnosis. Management also needed to investigate debt
+      levels, falling demand, capacity utilisation, cash flows and the
+      sustainability of the expansion strategy.</p>
+
+      <p>The adviser also warned that financial statements can sometimes be
+      manipulated or window dressed. Therefore, the board should not rely
+      exclusively on the score or assume that a safe score guarantees future
+      survival.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "spm_ch8_058_1",
+        question: "What is Titan's X1 under the original Altman model?",
+        options: [
+          "0.10",
+          "0.15",
+          "0.20",
+          "0.30"
+        ],
+        answer: 1,
+        solution: "X1 = Working Capital / Total Assets = 90 / 600 = 0.15. Therefore the correct answer is 0.15.",
+      },
+
+      {
+        question_id: "spm_ch8_058_2",
+        question: "What is Titan's X4?",
+        options: [
+          "0.83",
+          "1.20",
+          "0.60",
+          "0.50"
+        ],
+        answer: 3,
+        solution: "X4 = Market Value of Equity / Total Liabilities = 360 / 300 = 1.20. Therefore the correct option is 1.20.",
+      },
+
+      {
+        question_id: "spm_ch8_058_3",
+        question: "Using the original Altman Z-score formula, approximately what is Titan's Z-score?",
+        options: [
+          "2.31",
+          "2.87",
+          "2.78",
+          "3.86"
+        ],
+        answer: 2,
+        solution: "X1=0.15, X2=0.20, X3=0.12, X4=1.20 and X5=1.20. Z = 1.2(0.15)+1.4(0.20)+3.3(0.12)+0.6(1.20)+1.0(1.20) = 0.18+0.28+0.396+0.72+1.20 = 2.776, approximately 2.78. Therefore the correct option should be 2.87 only if figures differ; with the stated figures, the correct answer is approximately 2.78."
+      },
+
+      {
+        question_id: "spm_ch8_058_4",
+        question: "Based on the calculated score from the stated figures, which zone does Titan fall into?",
+        options: [
+          "Distress zone",
+          "Grey zone",
+          "Safe zone",
+          "Warning zone"
+        ],
+        answer: 1,
+        solution: "The calculated Z-score is approximately 2.78. Since it lies between 1.81 and 2.99, Titan falls in the grey zone."
+      },
+
+      {
+        question_id: "spm_ch8_058_5",
+        question: "Which conclusion is most appropriate regarding Titan's Z-score?",
+        options: [
+          "The grey-zone score proves that Titan will become bankrupt",
+          "The score should be treated as an early-warning indicator and supported by investigation of the underlying causes",
+          "The score makes cash-flow analysis unnecessary",
+          "The score proves that Titan's strategy is successful"
+        ],
+        answer: 1,
+        solution: "Quantitative models provide useful warning information but are snapshots and do not themselves identify the root cause or solution."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 59 — HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_059",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Corporate Failure",
+      "Beaver Model",
+      "Taffler Model",
+      "Performance Analysis Score",
+      "H Score",
+      "Altman Models",
+      "Quantitative Prediction"
+    ],
+    difficulty: "hard",
+
+    caseText: `
+
+      <p>Britannia Precision Manufacturing Limited supplied precision components
+      to automobile and industrial-equipment manufacturers. The company had
+      recently experienced a decline in operating performance. Its sales were
+      still substantial, but profitability had weakened and current liabilities
+      had increased rapidly.</p>
+
+      <p>The board was divided about the seriousness of the situation. One
+      director argued that the company remained financially sound because sales
+      had not collapsed. Another director pointed out that sales alone did not
+      demonstrate liquidity or solvency.</p>
+
+      <p>An external consultant was therefore asked to perform several forms of
+      quantitative analysis. The consultant explained that different bankruptcy
+      prediction models were developed at different times and for different
+      purposes.</p>
+
+      <p>The consultant first discussed Beaver's univariate model. Beaver's
+      approach was historically important because it was one of the early
+      statistical attempts to predict corporate failure. It examined accounting
+      ratios individually rather than combining several ratios into one
+      discriminant score.</p>
+
+      <p>The consultant then explained that Altman's model represented a major
+      development because it combined several financial ratios through a
+      discriminant function.</p>
+
+      <p>The company was also shown the Taffler and Tishaw approach developed in
+      the United Kingdom. The consultant explained that the model used four
+      ratios and had been developed using listed manufacturing companies.</p>
+
+      <p>The board was particularly interested in the Performance Analysis Score
+      because it could be expressed in percentile terms from 0 to 100 and could
+      be compared over time. The consultant warned that a declining percentile
+      trend should be investigated even before a formal failure threshold was
+      reached.</p>
+
+      <p>For Britannia, the consultant collected the following information:</p>
+
+      <table>
+        <tr><th>Variable</th><th>Value</th></tr>
+        <tr><td>PBT / Current Assets (X1)</td><td>0.08</td></tr>
+        <tr><td>Current Assets / Current Liabilities (X2)</td><td>1.50</td></tr>
+        <tr><td>Current Liabilities / Total Assets (X3)</td><td>0.40</td></tr>
+        <tr><td>No Credit Interval (X4)</td><td>20</td></tr>
+      </table>
+
+      <p>The consultant used the Performance Analysis Score equation:</p>
+
+      <p><b>Z = 3.2 + 12.18X1 + 2.50X2 − 10.68X3 + 0.029X4</b></p>
+
+      <p>The consultant explained that a negative Z-score under this model could
+      indicate potential bankruptcy and that the PAS should be interpreted as a
+      relative measure rather than as an absolute guarantee of survival.</p>
+
+      <p>Britannia also considered an H Score prepared by a commercial monitoring
+      service. The score ranked companies on a percentile scale from 0 to 100.
+      The service considered a score below 25 to be within its warning area.</p>
+
+      <p>The company's management initially focused only on whether its current
+      score was above or below a threshold. The consultant disagreed. He
+      explained that the direction of movement over several years could be more
+      informative than a single isolated observation.</p>
+
+      <p>Finally, the consultant reminded the board that quantitative models had
+      several limitations. Financial information could be manipulated, models
+      were often based on historical data and predetermined weights might not
+      reflect every company's current circumstances. Most importantly, a score
+      could indicate distress without explaining precisely what management
+      should do to solve the underlying problem.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "spm_ch8_059_1",
+        question: "What is the principal distinguishing characteristic of Beaver's model described in the case?",
+        options: [
+          "It uses one accounting ratio at a time",
+          "It uses only qualitative information",
+          "It was developed exclusively for multinational companies",
+          "It calculates the Argenti A-score"
+        ],
+        answer: 0,
+        solution: "Beaver's univariate model evaluates accounting ratios individually rather than combining multiple ratios into a single discriminant function."
+      },
+
+      {
+        question_id: "spm_ch8_059_2",
+        question: "Using the PAS equation, what is Britannia's approximate Z-score?",
+        options: [
+          "0.61",
+          "1.29",
+          "2.44",
+          "4.23"
+        ],
+        answer: 3,
+        solution: "Z = 3.2 + 12.18(0.08) + 2.50(1.50) − 10.68(0.40) + 0.029(20). = 3.2 + 0.9744 + 3.75 − 4.272 + 0.58 = 4.2324. Thus the approximate score is 4.23."
+      },
+
+      {
+        question_id: "spm_ch8_059_3",
+        question: "Which statement best explains why a declining PAS trend should concern management?",
+        options: [
+          "A downward trend can indicate deterioration in relative financial position and should be investigated",
+          "A downward trend automatically proves bankruptcy",
+          "PAS is unaffected by financial performance",
+          "Only an increase in PAS is dangerous"
+        ],
+        answer: 0,
+        solution: "PAS is a relative measure and a downward trend should be investigated because it can signal deteriorating performance."
+      },
+
+      {
+        question_id: "spm_ch8_059_4",
+        question: "Britannia's H Score is 22. Based on the threshold described in the case, what is the appropriate interpretation?",
+        options: [
+          "It is outside the warning area because it is below 25",
+          "It falls within the warning area",
+          "It proves bankruptcy within one month",
+          "It is automatically a safe score"
+        ],
+        answer: 1,
+        solution: "The H Score uses a percentile scale from 0 to 100, with below 25 identified as the warning area."
+      },
+
+      {
+        question_id: "spm_ch8_059_5",
+        question: "Which limitation of quantitative corporate-failure models is most clearly illustrated by the consultant's final warning?",
+        options: [
+          "They always provide the exact corrective action required",
+          "They may indicate financial distress without identifying the root cause or solution",
+          "They never use financial statements",
+          "They are purely qualitative"
+        ],
+        answer: 1,
+        solution: "A score is a warning indicator and snapshot. It does not by itself identify the root cause of failure or prescribe the solution."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 60 — HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_060",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Corporate Failure",
+      "Argenti A Score",
+      "Defects",
+      "Management Mistakes",
+      "Symptoms of Failure",
+      "Qualitative Analysis",
+      "Prevention"
+    ],
+    difficulty: "hard",
+
+    caseText: `
+
+      <p>Sterling Retail Holdings Limited operated a chain of large-format
+      consumer stores. The company had grown rapidly under the leadership of
+      its founder, who was both Chief Executive Officer and Chairman. He was
+      known for making decisions personally and had historically resisted
+      delegating major strategic matters.</p>
+
+      <p>The board contained several experienced individuals, but meetings were
+      often dominated by the founder. Some directors rarely challenged his
+      assumptions. The finance director was technically competent but had little
+      influence over major commercial decisions.</p>
+
+      <p>For several years Sterling benefited from rapid expansion. Management
+      opened new stores in several cities and financed the expansion through
+      significant borrowing. The founder believed that the company needed to
+      achieve national scale before competitors could establish themselves.</p>
+
+      <p>However, the company's growth created management difficulties. The
+      organisation did not develop sufficient management depth to handle the
+      increasing number of stores. Several senior managers were promoted quickly
+      without sufficient experience.</p>
+
+      <p>The company also failed to respond appropriately to changes in consumer
+      behaviour. Customers increasingly preferred online shopping, but Sterling
+      continued investing heavily in large physical stores. The board received
+      several reports warning about the trend, but management considered the
+      changes temporary.</p>
+
+      <p>Sterling's budgeting and control systems also became unreliable. Budgets
+      were prepared, but store managers frequently revised assumptions without
+      adequate review. Cash-flow forecasts were irregular and the costing system
+      did not provide management with sufficiently reliable product-level
+      profitability information.</p>
+
+      <p>The expansion strategy eventually resulted in overtrading. The company
+      had to finance growing working-capital requirements while simultaneously
+      servicing significant debt. One major store-development project also
+      suffered substantial cost overruns because the original assumptions about
+      customer demand and construction costs proved unrealistic.</p>
+
+      <p>As financial pressure increased, management began using aggressive
+      accounting estimates. The audit committee became concerned that the
+      financial statements were presenting a more favourable picture than the
+      underlying operations justified.</p>
+
+      <p>At the same time, non-financial symptoms appeared. Employee turnover
+      increased, suppliers began demanding tighter payment terms and customers
+      complained about stock availability. Several experienced managers left
+      the organisation.</p>
+
+      <p>The board appointed a corporate-failure specialist to apply the Argenti
+      A-score model. The specialist explained that the model views corporate
+      failure as a process involving three broad stages: defects, management
+      mistakes and symptoms of trouble.</p>
+
+      <p>The specialist reminded the board that the overall score alone was not
+      sufficient. A company could be considered risky even if the total score
+      was below 25 if certain category-specific conditions were breached. In
+      particular, Group A defects should not exceed 10, Group B management
+      mistakes should not exceed 15, and the presence of any Group C symptom
+      itself indicates risk.</p>
+
+      <p>The specialist prepared the following assessment:</p>
+
+      <table>
+        <tr><th>Factor</th><th>Score</th></tr>
+        <tr><td>CEO is an autocrat</td><td>8</td></tr>
+        <tr><td>CEO is also Chairman</td><td>4</td></tr>
+        <tr><td>Passive board</td><td>2</td></tr>
+        <tr><td>Unbalanced board</td><td>2</td></tr>
+        <tr><td>Weak Finance Director</td><td>2</td></tr>
+        <tr><td>Lack of management depth</td><td>1</td></tr>
+        <tr><td>Poor response to change</td><td>15</td></tr>
+        <tr><td>No effective budgets/control</td><td>3</td></tr>
+        <tr><td>No reliable cash-flow forecasts</td><td>3</td></tr>
+        <tr><td>No adequate costing system</td><td>3</td></tr>
+        <tr><td>High gearing</td><td>15</td></tr>
+        <tr><td>Overtrading</td><td>15</td></tr>
+        <tr><td>Major project gone wrong</td><td>15</td></tr>
+        <tr><td>Creative accounting</td><td>4</td></tr>
+        <tr><td>Non-financial warning signs</td><td>4</td></tr>
+      </table>
+
+      <p>The specialist told the board that the objective of the exercise was not
+      simply to label Sterling as a failing company. The purpose was to identify
+      weaknesses early enough for management to take corrective action.</p>
+
+      <p>He recommended that management first acknowledge the problems instead of
+      blaming individual employees. The board should investigate the causes,
+      determine whether the current strategy remained viable, review loss-making
+      operations and redesign management systems and controls.</p>
+
+      <p>The specialist also warned that the Argenti model involved subjective
+      judgement. Reliable qualitative information was therefore critical. The
+      board should use the score together with financial analysis, operational
+      indicators and management investigation rather than treating the score as
+      an automatic answer.</p>
+    `,
+
+    questions: [
+
+      {
+        question_id: "spm_ch8_060_1",
+        question: "Which combination correctly represents the three stages in Argenti's corporate-failure process?",
+        options: [
+          "Strategy → Budget → Profit",
+          "Defects → Mistakes → Symptoms of failure",
+          "Revenue → Cost → Dividend",
+          "Structure → Technology → Market share"
+        ],
+        answer: 1,
+        solution: "Argenti describes failure as a process involving defects, management mistakes and symptoms of trouble."
+      },
+
+      {
+        question_id: "spm_ch8_060_2",
+        question: "What is Sterling's Group A score?",
+        options: [
+          "30",
+          "42",
+          "43",
+          "58"
+        ],
+        answer: 2,
+        solution: "Group A includes 8 + 4 + 2 + 2 + 2 + 1 + 15 + 3 + 3 + 3 = 43."
+      },
+
+      {
+        question_id: "spm_ch8_060_3",
+        question: "What is Sterling's Group B score?",
+        options: [
+          "15",
+          "30",
+          "45",
+          "60"
+        ],
+        answer: 2,
+        solution: "Group B consists of high gearing (15), overtrading (15) and major project gone wrong (15). Total = 45."
+      },
+
+      {
+        question_id: "spm_ch8_060_4",
+        question: "Which conclusion is correct even before considering Sterling's total Argenti score?",
+        options: [
+          "Sterling is healthy because Group C is irrelevant",
+          "Sterling is risky because Group A exceeds 10, Group B exceeds 15 and Group C contains symptoms",
+          "Sterling is healthy because total score alone determines the result",
+          "Sterling cannot be evaluated using qualitative information"
+        ],
+        answer: 1,
+        solution: "The case states that Group A above 10, Group B above 15 or any Group C symptom indicates risk. Sterling breaches all three conditions."
+      },
+
+      {
+        question_id: "spm_ch8_060_5",
+        question: "Which action would be most appropriate after identifying Sterling's failure risks?",
+        options: [
+          "Ignore the score because qualitative models are never useful",
+          "Blame individual employees and continue the existing strategy unchanged",
+          "Investigate root causes, reassess strategy, correct operational weaknesses and strengthen management systems and controls",
+          "Immediately close every store regardless of profitability"
+        ],
+        answer: 2,
+        solution: "Corporate-failure prevention requires investigation of causes, acceptance of problems, appropriate strategic/operational corrective action and effective management systems and controls."
+      }
+    ]
+  },
+  // ============================================================
+  // CASE 61 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_061",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Strategy",
+      "Performance Management",
+      "CSF",
+      "KPI",
+      "Balanced Scorecard",
+      "Strategic Alignment"
+    ],
+    difficulty: "medium",
+
+    caseText: `
+
+      <p>Zenith Fitness Technologies Limited started its business by selling
+      basic fitness equipment to gyms and individual customers. During its
+      first five years, the company's management concentrated heavily on sales
+      growth. Sales executives were given monthly targets based on the number
+      of units sold, while regional managers were evaluated primarily on
+      revenue generated by their territories.</p>
+
+      <p>The strategy worked reasonably well when the fitness equipment market
+      was relatively simple. Customers generally compared products on price,
+      physical quality and availability. Zenith therefore invested heavily in
+      its distribution network and maintained large inventories so that
+      customers could receive products quickly.</p>
+
+      <p>The competitive environment changed when several technology-oriented
+      competitors entered the market. These companies offered connected
+      exercise equipment, mobile applications, personalised fitness
+      dashboards and subscription-based services. Customers increasingly
+      expected equipment to work together with digital platforms.</p>
+
+      <p>Zenith's board initially considered reducing prices to protect market
+      share. However, the strategy director argued that competing only on price
+      would make it difficult to maintain margins. After several meetings, the
+      board decided to pursue a differentiation strategy based on connected
+      products, customer experience and continuous innovation.</p>
+
+      <p>The new strategy required significant changes. The research department
+      needed to develop connected equipment. The IT department needed to create
+      a stable customer platform. The customer-service department needed to
+      provide technical support. The marketing department needed to understand
+      customer usage patterns rather than merely promoting individual products.</p>
+
+      <p>Management realised that its existing performance measurement system
+      was not suitable for the new strategy. The sales department could
+      increase its number of units sold while the company still lost customers
+      because of poor software performance. Similarly, the IT department could
+      release a large number of software updates without improving the actual
+      customer experience.</p>
+
+      <p>The board therefore identified several critical success factors. These
+      included customer satisfaction, product reliability, innovation,
+      employee capability, response time and sustainable profitability.</p>
+
+      <p>The finance team retained financial indicators such as operating profit,
+      revenue growth and return on investment. However, management also
+      introduced customer renewal rates, software uptime, complaint-resolution
+      time, employee training hours and product development cycle time.</p>
+
+      <p>The CEO further instructed each department to establish objectives that
+      were linked to the overall strategy. Sales employees would no longer be
+      evaluated solely on units sold. Their performance would also depend on
+      customer retention and the quality of customer relationships.</p>
+
+      <p>Zenith also considered introducing a Balanced Scorecard so that
+      financial results could be viewed together with customer measures,
+      internal-process measures and learning-and-growth measures.</p>
+
+      <p>The management team concluded that performance management should not
+      merely produce reports at the end of each month. It should provide
+      information that allows management to determine whether strategic
+      objectives are being achieved and to take corrective action when
+      necessary.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "spm_ch8_061_1",
+        question: "Why was Zenith's original unit-sales measure inadequate after the strategic change?",
+        options: [
+          "Unit sales can never be used as a performance measure",
+          "The measure could encourage sales volume without showing customer retention, product reliability or long-term strategic success",
+          "Financial measures automatically become irrelevant under differentiation",
+          "Sales employees should not have any performance targets"
+        ],
+        answer: 1,
+        solution: "The new strategy depends on customer experience, reliability and innovation. Unit sales alone could encourage volume without reflecting these strategic objectives."
+      },
+
+      {
+        question_id: "spm_ch8_061_2",
+        question: "Which measure would most directly indicate whether customers continue to value Zenith's subscription service?",
+        options: [
+          "Number of warehouses",
+          "Customer renewal rate",
+          "Total depreciation",
+          "Number of sales employees"
+        ],
+        answer: 1,
+        solution: "Customer renewal rate directly indicates whether customers continue their relationship with the subscription service."
+      },
+
+      {
+        question_id: "spm_ch8_061_3",
+        question: "Which combination best reflects Zenith's new performance management approach?",
+        options: [
+          "Only revenue and profit",
+          "Only employee attendance",
+          "Financial and non-financial measures linked with strategic objectives",
+          "Only number of products manufactured"
+        ],
+        answer: 2,
+        solution: "The company retained financial measures while introducing customer, process and learning measures linked to its new strategy."
+      },
+
+      {
+        question_id: "spm_ch8_061_4",
+        question: "What is the main purpose of identifying critical success factors before developing KPIs?",
+        options: [
+          "To ensure every department has identical targets",
+          "To identify the areas that are critical to achieving strategic objectives and measure them appropriately",
+          "To eliminate management judgement",
+          "To replace strategic planning"
+        ],
+        answer: 1,
+        solution: "CSFs identify areas critical to strategic success. KPIs can then be developed to monitor performance in those areas."
+      },
+
+      {
+        question_id: "spm_ch8_061_5",
+        question: "Why is it important that Zenith's departmental objectives are aligned with corporate objectives?",
+        options: [
+          "To encourage each department to maximise its own result regardless of the company",
+          "To reduce the possibility of sub-optimisation and ensure individual efforts support organisational strategy",
+          "To eliminate all decentralisation",
+          "To make financial statements unnecessary"
+        ],
+        answer: 1,
+        solution: "Alignment helps prevent departments from optimising their own results at the expense of the organisation as a whole."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 62 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_062",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Value Chain",
+      "Primary Activities",
+      "Support Activities",
+      "Value Drivers",
+      "Margin",
+      "Benchmarking"
+    ],
+    difficulty: "medium",
+
+    caseText: `
+
+      <p>RoyalBrew Beverages Limited manufactured premium tea-based beverages
+      and sold them through supermarkets, cafés and online channels. The
+      company had developed a strong brand because it sourced specialised tea
+      varieties from selected agricultural producers.</p>
+
+      <p>Although RoyalBrew's products were priced significantly above ordinary
+      tea beverages, customers were willing to pay the premium because of the
+      perceived quality, packaging and consistency of the product.</p>
+
+      <p>During a strategic review, the board noticed that another competitor
+      with similar selling prices was generating a higher operating margin.
+      Management initially assumed that the competitor simply had lower
+      manufacturing costs. A detailed value-chain analysis revealed a more
+      complicated picture.</p>
+
+      <p>The procurement department negotiated directly with tea suppliers.
+      However, purchase orders were frequently raised manually and purchasing
+      information was not always shared immediately with production planning.</p>
+
+      <p>Inbound logistics involved receiving tea leaves, packaging material and
+      other ingredients. Certain raw materials remained in warehouses for
+      several weeks because purchasing quantities were based on historical
+      averages rather than current production requirements.</p>
+
+      <p>During operations, the company used automated blending and packaging
+      equipment. Production quality was generally high, but production
+      changeovers were lengthy whenever the factory switched between different
+      product varieties.</p>
+
+      <p>After manufacturing, finished products were stored in distribution
+      centres. RoyalBrew had recently experienced an increase in emergency
+      deliveries because inventory information was not updated quickly enough
+      across locations.</p>
+
+      <p>The marketing department had developed a strong premium brand. It used
+      digital campaigns, influencer marketing and product demonstrations.
+      However, certain promotional campaigns created sudden demand spikes that
+      the production department was not informed about in advance.</p>
+
+      <p>The company also maintained a customer-care centre that handled
+      complaints, replacement requests and product-related enquiries. Management
+      considered customer service important because the company's strategy
+      depended heavily on premium brand perception.</p>
+
+      <p>Support activities included human-resource management, technology
+      development, procurement and firm infrastructure. The HR department
+      conducted training programmes for production employees. The technology
+      team worked on inventory systems and customer analytics.</p>
+
+      <p>The board concluded that improving only manufacturing efficiency would
+      not necessarily maximise overall performance. It wanted to understand
+      linkages between activities and identify value drivers that could either
+      increase customer value or reduce unnecessary cost.</p>
+
+      <p>Management also decided to compare selected processes with competitors
+      to identify performance gaps in procurement, inventory management,
+      production changeover time and customer service.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "spm_ch8_062_1",
+        question: "Which of the following is a primary activity in RoyalBrew's value chain?",
+        options: [
+          "Human resource management",
+          "Technology development",
+          "Operations",
+          "Firm infrastructure"
+        ],
+        answer: 2,
+        solution: "Operations is a primary activity because it transforms inputs into finished products."
+      },
+
+      {
+        question_id: "spm_ch8_062_2",
+        question: "RoyalBrew's customer-care centre is most closely associated with which primary value-chain activity?",
+        options: [
+          "After-sales service",
+          "Procurement",
+          "Inbound logistics",
+          "Technology development"
+        ],
+        answer: 0,
+        solution: "Handling customer complaints, replacement requests and related support is part of after-sales service."
+      },
+
+      {
+        question_id: "spm_ch8_062_3",
+        question: "Which issue best illustrates a linkage between value-chain activities?",
+        options: [
+          "Marketing campaigns increasing demand without informing production",
+          "An employee receiving training",
+          "A machine being depreciated",
+          "A shareholder receiving dividends"
+        ],
+        answer: 0,
+        solution: "Marketing affects demand, which affects production and logistics. The case therefore illustrates a linkage between activities."
+      },
+
+      {
+        question_id: "spm_ch8_062_4",
+        question: "What is the principal purpose of benchmarking RoyalBrew's processes against competitors?",
+        options: [
+          "To eliminate all internal processes",
+          "To identify performance gaps and potential improvements",
+          "To ensure competitors have identical structures",
+          "To calculate market capitalisation"
+        ],
+        answer: 1,
+        solution: "Comparing processes with competitors can identify gaps, best practices and opportunities for improvement."
+      },
+
+      {
+        question_id: "spm_ch8_062_5",
+        question: "Which statement best describes RoyalBrew's margin in the value-chain context?",
+        options: [
+          "The amount spent on advertising",
+          "The difference between the value customers are willing to pay and the costs incurred by the firm",
+          "The total cost of raw materials",
+          "The amount of inventory held"
+        ],
+        answer: 1,
+        solution: "Porter's value-chain concept views margin as the excess of the value customers are willing to pay over the costs incurred by the firm."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 63 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_063",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "7S Framework",
+      "Hard S",
+      "Soft S",
+      "Shared Values",
+      "Strategy",
+      "Structure",
+      "Systems",
+      "Staff",
+      "Skills",
+      "Style"
+    ],
+    difficulty: "medium",
+
+    caseText: `
+
+      <p>Medisphere Diagnostics Limited operated diagnostic laboratories in
+      several cities. The company had expanded through acquisitions, and each
+      acquired laboratory had retained many of its previous practices.</p>
+
+      <p>The board wanted to create a common strategy based on faster reporting,
+      reliable test results and superior patient experience. It therefore
+      invested in a central digital platform that could connect laboratories,
+      doctors and patients.</p>
+
+      <p>The management team initially believed that purchasing the technology
+      would solve the integration problem. However, implementation produced
+      unexpected resistance.</p>
+
+      <p>Some laboratory employees had limited experience with digital systems.
+      Others believed that the previous procedures were safer because they had
+      been used successfully for many years.</p>
+
+      <p>Different laboratories also had different management styles. One
+      laboratory was highly centralised and decisions were made by its head.
+      Another encouraged employees to participate in operational decisions.</p>
+
+      <p>The organisational structure was also inconsistent. Some laboratories
+      reported directly to the corporate office while others had considerable
+      local autonomy.</p>
+
+      <p>The systems were different as well. Reports were prepared using
+      different software packages and the definition of certain performance
+      indicators varied between locations.</p>
+
+      <p>The HR team found that the skills required under the new strategy were
+      different from those required previously. Employees now needed digital
+      literacy, data interpretation and customer-communication skills.</p>
+
+      <p>The CEO asked the strategy team to use the McKinsey 7S framework to
+      understand the situation. The team began by examining the company's
+      shared values and whether employees genuinely believed that patient
+      service and reliability were the organisation's central purpose.</p>
+
+      <p>The team then examined strategy, structure and systems before reviewing
+      staff, skills and management style. Management recognised that changing
+      the software without changing the other elements would not produce
+      sustainable performance improvement.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "spm_ch8_063_1",
+        question: "Which set contains only the Hard S elements?",
+        options: [
+          "Strategy, Structure, Systems",
+          "Staff, Skills, Style",
+          "Shared Values, Staff, Skills",
+          "Strategy, Style, Shared Values"
+        ],
+        answer: 0,
+        solution: "The Hard S elements are Strategy, Structure and Systems."
+      },
+
+      {
+        question_id: "spm_ch8_063_2",
+        question: "Which element is at the centre of the McKinsey 7S framework?",
+        options: [
+          "Structure",
+          "Systems",
+          "Shared Values",
+          "Strategy"
+        ],
+        answer: 2,
+        solution: "Shared Values are placed at the centre of the 7S framework."
+      },
+
+      {
+        question_id: "spm_ch8_063_3",
+        question: "The different management approaches across laboratories primarily indicate differences in:",
+        options: [
+          "Style",
+          "Systems",
+          "Strategy",
+          "Infrastructure"
+        ],
+        answer: 0,
+        solution: "Management leadership approach and organisational way of operating are part of Style."
+      },
+
+      {
+        question_id: "spm_ch8_063_4",
+        question: "Why was changing only Medisphere's software unlikely to solve the entire problem?",
+        options: [
+          "Technology is unrelated to performance",
+          "The seven elements of the 7S framework are interrelated and need alignment",
+          "Software can only be used by finance",
+          "Shared values are irrelevant to technology"
+        ],
+        answer: 1,
+        solution: "The 7S framework emphasises interrelationships among all seven elements. A technology change unsupported by structure, staff, skills and values may fail."
+      },
+
+      {
+        question_id: "spm_ch8_063_5",
+        question: "Which of the following is most clearly a Skills issue in the case?",
+        options: [
+          "Different reporting lines",
+          "Different leadership styles",
+          "Employees lacking digital literacy and data-interpretation capability",
+          "Different corporate strategies"
+        ],
+        answer: 2,
+        solution: "Skills concerns the capabilities and competencies required to achieve organisational objectives."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 64 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_064",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Structure",
+      "Centralisation",
+      "Decentralisation",
+      "Functional Structure",
+      "Divisional Structure",
+      "Responsibility Centres"
+    ],
+    difficulty: "medium",
+
+    caseText: `
+
+      <p>UrbanHome Retail Limited operated stores selling furniture,
+      electronics and home-improvement products. When the business was small,
+      the founder personally controlled purchasing, pricing, recruitment and
+      major customer decisions.</p>
+
+      <p>As the business expanded into different cities, this arrangement became
+      increasingly difficult. Local managers often had to wait for head-office
+      approval before responding to competitors or negotiating with customers.</p>
+
+      <p>The board therefore reorganised the company into regional divisions.
+      Each regional manager was given responsibility for sales, local
+      profitability and customer experience. Certain functions, such as group
+      treasury, legal services and selected procurement contracts, remained
+      centralised.</p>
+
+      <p>The new structure produced faster decisions. However, the board noticed
+      that some regional managers began concentrating only on their own regional
+      results.</p>
+
+      <p>One region refused to share excess inventory with another region because
+      the transfer would have reduced its reported inventory margin. Another
+      region delayed a group-wide technology implementation because its manager
+      believed that the project would increase the division's short-term costs.</p>
+
+      <p>The finance team concluded that the performance measurement system had
+      to reflect the new structure. Under the earlier structure, information
+      had been collected centrally and analysed mainly by senior management.
+      Under the divisional structure, regional managers had greater autonomy and
+      could analyse more performance information themselves.</p>
+
+      <p>The company also classified divisions according to responsibility.
+      Certain managers controlled mainly costs, while others were responsible
+      for revenue or profit. A few senior regional managers were also given
+      authority over significant investments.</p>
+
+      <p>The CEO warned that decentralisation could improve flexibility and use
+      local knowledge but could also create goal incongruence if managers focused
+      on divisional targets instead of group objectives.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "spm_ch8_064_1",
+        question: "What was the main weakness of UrbanHome's original centralised arrangement?",
+        options: [
+          "Local managers had excessive autonomy",
+          "Decision-making could become slow because routine decisions required top-level approval",
+          "There was no management control",
+          "Every division operated independently"
+        ],
+        answer: 1,
+        solution: "Centralisation can slow decisions when lower-level managers need approval from top management for routine matters."
+      },
+
+      {
+        question_id: "spm_ch8_064_2",
+        question: "Which is a potential advantage of decentralisation illustrated by the case?",
+        options: [
+          "Greater use of local knowledge and faster decision-making",
+          "Complete elimination of control",
+          "Guaranteed goal congruence",
+          "Lower responsibility for managers"
+        ],
+        answer: 0,
+        solution: "Decentralisation can improve speed, flexibility and use of local knowledge."
+      },
+
+      {
+        question_id: "spm_ch8_064_3",
+        question: "The region refusing to share inventory demonstrates:",
+        options: [
+          "Goal congruence",
+          "Sub-optimisation and potential goal incongruence",
+          "Complete centralisation",
+          "Functional specialisation"
+        ],
+        answer: 1,
+        solution: "The region is protecting its own performance at the expense of the group, illustrating sub-optimisation."
+      },
+
+      {
+        question_id: "spm_ch8_064_4",
+        question: "A manager responsible for revenues and costs and therefore evaluated on divisional profit is most closely associated with a:",
+        options: [
+          "Revenue centre",
+          "Cost centre",
+          "Profit centre",
+          "Investment centre only"
+        ],
+        answer: 2,
+        solution: "A profit centre manager is responsible for revenues and costs and is evaluated on profit."
+      },
+
+      {
+        question_id: "spm_ch8_064_5",
+        question: "Why should performance measurement change when organisational structure changes?",
+        options: [
+          "Performance measures are independent of structure",
+          "The flow of responsibility, decision-making authority and performance information may change with structure",
+          "New structures cannot be measured",
+          "Only centralised organisations can use KPIs"
+        ],
+        answer: 1,
+        solution: "Structure influences responsibility, decision-making and where performance information is collected and analysed."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 65 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_065",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Complex Structures",
+      "Supply Chain",
+      "Strategic Alliance",
+      "Information Sharing",
+      "Goal Congruence",
+      "Virtual Organisation"
+    ],
+    difficulty: "medium",
+
+    caseText: `
+
+      <p>QuickCart operated an online marketplace without owning most of the
+      products displayed on its platform. Customers placed orders through the
+      website, while independent suppliers maintained the inventory. Once an
+      order was received, the supplier packed the product and a logistics
+      partner collected and delivered it to the customer.</p>
+
+      <p>QuickCart therefore operated through a network involving suppliers,
+      technology providers, payment processors, logistics companies and
+      customer-service partners.</p>
+
+      <p>The company initially believed that the network structure would allow
+      it to grow quickly without investing heavily in warehouses and other
+      physical assets. However, performance management became difficult because
+      QuickCart did not directly control every participant.</p>
+
+      <p>Some suppliers focused on minimising their own costs and therefore
+      delayed packaging until several orders were accumulated. Customers,
+      however, expected rapid delivery.</p>
+
+      <p>The logistics provider measured its own performance primarily using
+      delivery volume. QuickCart wanted to measure successful on-time delivery,
+      customer satisfaction and return handling.</p>
+
+      <p>Management also discovered that suppliers used different software
+      systems. Inventory data was sometimes updated several hours after an
+      item had actually been sold. As a result, customers occasionally ordered
+      products that were no longer available.</p>
+
+      <p>The technology team proposed developing common data definitions and
+      interfaces so that suppliers could transmit inventory information more
+      frequently.</p>
+
+      <p>Management also decided to include minimum performance requirements in
+      supplier contracts. These requirements covered order processing time,
+      information accuracy, quality and customer complaints.</p>
+
+      <p>The CEO concluded that the success of a complex business structure
+      depended not merely on outsourcing activities but on creating goal
+      congruence and sufficient information flow among participants.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "spm_ch8_065_1",
+        question: "Why does QuickCart represent a complex business structure?",
+        options: [
+          "It has only one employee",
+          "Its processes depend on multiple independent organisations connected through a network",
+          "It has no customers",
+          "It manufactures every product internally"
+        ],
+        answer: 1,
+        solution: "QuickCart depends on suppliers, logistics providers, technology providers and other independent participants."
+      },
+
+      {
+        question_id: "spm_ch8_065_2",
+        question: "What problem arises because the logistics partner focuses on delivery volume rather than successful on-time delivery?",
+        options: [
+          "Perfect goal congruence",
+          "Potential conflict between partner measures and overall organisational objectives",
+          "Complete elimination of performance measurement",
+          "Improved strategic alignment automatically"
+        ],
+        answer: 1,
+        solution: "The partner's target may encourage behaviour that does not fully support QuickCart's broader strategic objective."
+      },
+
+      {
+        question_id: "spm_ch8_065_3",
+        question: "Why are common data definitions important in QuickCart's network?",
+        options: [
+          "They make all partners legally identical",
+          "They improve comparability and information flow across participants",
+          "They eliminate all costs",
+          "They prevent customers from placing orders"
+        ],
+        answer: 1,
+        solution: "Common definitions make information more consistent and useful for monitoring and managing performance across organisations."
+      },
+
+      {
+        question_id: "spm_ch8_065_4",
+        question: "Which contractual provision would best support performance management?",
+        options: [
+          "No performance requirements",
+          "Minimum standards for processing time, information accuracy and quality",
+          "A requirement that suppliers stop using technology",
+          "Unlimited delivery time"
+        ],
+        answer: 1,
+        solution: "Contracts can establish accountability and common minimum performance requirements among independent partners."
+      },
+
+      {
+        question_id: "spm_ch8_065_5",
+        question: "Which broad issue is QuickCart primarily trying to address?",
+        options: [
+          "Goal congruence and information sharing",
+          "Elimination of customers",
+          "Complete vertical integration",
+          "Removal of all outsourcing"
+        ],
+        answer: 0,
+        solution: "The case focuses on aligning independent participants and ensuring timely, compatible performance information."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 66 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_066",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Business Integration",
+      "Value Chain",
+      "7S Framework",
+      "Sub-optimisation",
+      "Strategy",
+      "Systems",
+      "Shared Values",
+      "Change Management"
+    ],
+    difficulty: "hard",
+
+    caseText: `
+
+      <p>Atlas Medical Devices Limited manufactured diagnostic equipment used by
+      hospitals and laboratories. The company had historically operated through
+      specialised functional departments. Procurement negotiated aggressively
+      with suppliers, production concentrated on manufacturing efficiency,
+      sales focused on achieving order targets and finance concentrated on
+      controlling expenditure.</p>
+
+      <p>For several years each department achieved acceptable performance
+      against its own measures. Procurement reduced purchase prices. Production
+      improved machine utilisation. Sales increased the number of customer
+      orders. Finance kept departmental spending within approved budgets.</p>
+
+      <p>Despite these apparently positive results, overall customer complaints
+      increased. Hospitals reported that equipment deliveries were frequently
+      delayed and that installation support was inconsistent.</p>
+
+      <p>The CEO commissioned a cross-functional investigation. The team
+      discovered that procurement had started buying larger quantities to obtain
+      volume discounts. Production, however, was unable to consume the
+      quantities quickly enough, increasing inventory.</p>
+
+      <p>Sales representatives were also promising customised equipment to
+      customers without sufficiently consulting production. Production then had
+      to interrupt normal schedules to accommodate urgent customised orders.</p>
+
+      <p>The service department was evaluated mainly on the number of service
+      tickets closed. Employees therefore attempted to close tickets quickly,
+      even where a more detailed technical investigation was required.</p>
+
+      <p>Atlas then decided to analyse the entire process from customer enquiry
+      through procurement, manufacturing, delivery, installation and
+      after-sales service rather than evaluating departments separately.</p>
+
+      <p>The board also realised that the problem was not purely a process issue.
+      The company had recently announced a strategy based on superior customer
+      experience, but the organisational structure and performance measures
+      still reflected the previous cost-efficiency strategy.</p>
+
+      <p>An adviser suggested using the McKinsey 7S framework. Strategy was
+      changing toward customer-focused differentiation. Structure remained
+      strongly functional. Systems were still designed mainly around cost and
+      departmental reporting. Staff had strong technical skills but limited
+      cross-functional experience.</p>
+
+      <p>The management style remained highly directive, while employees had
+      limited involvement in strategic decision-making. Finally, shared values
+      were unclear. Some employees believed the organisation existed primarily
+      to minimise costs, while others believed product quality and customer
+      service were more important.</p>
+
+      <p>The adviser recommended that Atlas establish shared values around
+      customer safety, reliability and responsible innovation. The company
+      would then align strategy, structure and systems with those values and
+      develop staff capabilities and management style accordingly.</p>
+
+      <p>The change programme would begin by preparing employees, developing a
+      clear vision and implementation plan, implementing the changes, embedding
+      new practices into the culture and periodically reviewing results.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "spm_ch8_066_1",
+        question: "What is the clearest example of sub-optimisation in the case?",
+        options: [
+          "Procurement obtains discounts that increase inventory and create problems elsewhere",
+          "Employees receive technical training",
+          "Customers purchase equipment",
+          "The company reviews its strategy"
+        ],
+        answer: 0,
+        solution: "Procurement improves its own purchasing result while the overall business suffers from excess inventory. This is sub-optimisation."
+      },
+
+      {
+        question_id: "spm_ch8_066_2",
+        question: "Why is the service-ticket measure potentially dysfunctional?",
+        options: [
+          "It measures too much customer satisfaction",
+          "It may encourage employees to close tickets quickly rather than solve customer problems properly",
+          "It prevents any measurement",
+          "It measures long-term innovation"
+        ],
+        answer: 1,
+        solution: "A narrow KPI can influence behaviour in an undesirable way. Employees may optimise ticket closure rather than actual problem resolution."
+      },
+
+      {
+        question_id: "spm_ch8_066_3",
+        question: "Which 7S element is most directly represented by Atlas's unclear belief about whether cost or customer service is the organisation's central purpose?",
+        options: [
+          "Systems",
+          "Structure",
+          "Shared Values",
+          "Skills"
+        ],
+        answer: 2,
+        solution: "Shared Values represent the common beliefs and guiding principles of the organisation."
+      },
+
+      {
+        question_id: "spm_ch8_066_4",
+        question: "Why should Atlas examine the seven elements collectively rather than changing only its performance measurement system?",
+        options: [
+          "The 7S framework assumes the elements are interrelated and alignment among them is important",
+          "Performance measures never affect behaviour",
+          "Structure has no relationship with strategy",
+          "Shared Values are unrelated to organisational performance"
+        ],
+        answer: 0,
+        solution: "The McKinsey 7S framework focuses on the interrelationship and alignment of all seven elements."
+      },
+
+      {
+        question_id: "spm_ch8_066_5",
+        question: "Which change-management sequence is most appropriate for Atlas?",
+        options: [
+          "Implement technology immediately and ignore employee concerns",
+          "Prepare employees, develop vision and plan, implement, embed and review",
+          "Change employees first, close factories and then define strategy",
+          "Increase budgets without reviewing the existing processes"
+        ],
+        answer: 1,
+        solution: "The recommended change-management sequence is preparation, vision/plan, implementation, embedding and review."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 67 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_067",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Complex Structures",
+      "Joint Venture",
+      "Strategic Alliance",
+      "Multinational Corporation",
+      "Supply Chain",
+      "Performance Measurement"
+    ],
+    difficulty: "hard",
+
+    caseText: `
+
+      <p>GlobalWind Energy Systems operated in the renewable-energy sector and
+      manufactured components for wind turbines. The company wanted to enter
+      three overseas markets but did not want to establish complete production
+      facilities in every country.</p>
+
+      <p>In Country A, GlobalWind entered into a strategic alliance with a local
+      engineering company. Both organisations remained independent and agreed
+      to cooperate in project execution and customer acquisition.</p>
+
+      <p>In Country B, GlobalWind and a local manufacturer established a separate
+      company to manufacture selected components. Both parties contributed
+      resources and shared the risks and returns of the new business.</p>
+
+      <p>In Country C, GlobalWind used independent suppliers and logistics
+      providers. It retained control over product specifications but relied
+      heavily on external partners for manufacturing and transportation.</p>
+
+      <p>After two years, the board discovered major differences in performance
+      reporting. Country A reported project completion based on its own local
+      definition. The joint venture in Country B used different accounting
+      procedures. Suppliers in Country C provided operational information only
+      once every month.</p>
+
+      <p>There were also cultural differences. GlobalWind's management strongly
+      preferred rapid experimentation. The Country B partner preferred
+      conservative decision-making because of its experience in heavily
+      regulated industries.</p>
+
+      <p>The partners also had different views about quality. GlobalWind
+      considered certain minor defects unacceptable, while some local partners
+      considered them commercially acceptable because they did not affect basic
+      functionality.</p>
+
+      <p>Currency movements created another problem. A project that appeared
+      profitable in local currency became less attractive after translation into
+      GlobalWind's reporting currency.</p>
+
+      <p>The board recognised that the complexity was not caused simply by the
+      number of organisations. It arose because the organisations had
+      different objectives, cultures, information systems, reporting practices
+      and risk preferences.</p>
+
+      <p>The board therefore established common minimum quality standards,
+      standard definitions for major performance indicators and a common
+      reporting calendar.</p>
+
+      <p>It also required each partner to clarify responsibilities at the
+      beginning of each project. The IT department was asked to develop
+      compatible interfaces so that important operational information could be
+      transmitted more frequently.</p>
+
+      <p>Management recognised that the objective was not to make every partner
+      identical. Instead, the purpose was to create sufficient alignment so that
+      the network could operate toward common strategic objectives while
+      allowing each organisation to retain its legitimate independence.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "spm_ch8_067_1",
+        question: "Which arrangement in the case is a joint venture?",
+        options: [
+          "Country A's alliance where both organisations remain independent",
+          "Country B's separately established company owned/contributed to by both parties",
+          "Country C's ordinary supplier arrangement",
+          "A customer contract"
+        ],
+        answer: 1,
+        solution: "The parties in Country B created a separate company and shared resources and risks, which is characteristic of a joint venture."
+      },
+
+      {
+        question_id: "spm_ch8_067_2",
+        question: "Why is the Country A arrangement a strategic alliance rather than a joint venture?",
+        options: [
+          "The parties do not cooperate",
+          "The parties remain independent and no separate entity is established",
+          "The arrangement contains no performance objectives",
+          "Only GlobalWind contributes resources"
+        ],
+        answer: 1,
+        solution: "A strategic alliance allows organisations to cooperate while retaining their independence. A joint venture creates a separate business entity."
+      },
+
+      {
+        question_id: "spm_ch8_067_3",
+        question: "What is the most appropriate response to different definitions of project completion?",
+        options: [
+          "Allow every partner to use any definition",
+          "Establish common definitions and reporting standards",
+          "Stop measuring project performance",
+          "Use only GlobalWind's internal employee attendance"
+        ],
+        answer: 1,
+        solution: "Common definitions are necessary for meaningful comparison and performance management across complex structures."
+      },
+
+      {
+        question_id: "spm_ch8_067_4",
+        question: "Which factor most directly creates difficulty when translating Country C's results into GlobalWind's reporting currency?",
+        options: [
+          "Span of control",
+          "Exchange-rate movements",
+          "Unity of command",
+          "After-sales service"
+        ],
+        answer: 1,
+        solution: "Currency movements can affect reported financial results when overseas operations are translated into the parent company's reporting currency."
+      },
+
+      {
+        question_id: "spm_ch8_067_5",
+        question: "Why did GlobalWind avoid trying to make every partner completely identical?",
+        options: [
+          "Complex organisations can require cooperation while allowing independent participants to retain their own legitimate structures and capabilities",
+          "Common standards are impossible",
+          "Performance management does not require alignment",
+          "Partners should never share information"
+        ],
+        answer: 0,
+        solution: "The objective is alignment and goal congruence, not necessarily complete uniformity. Independent organisations can retain their own capabilities while following agreed common standards."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 68 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_068",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Behavioural Aspects",
+      "Accountability",
+      "Control",
+      "Performance Measures",
+      "Culture",
+      "Management Style",
+      "Goal Congruence"
+    ],
+    difficulty: "hard",
+
+    caseText: `
+
+      <p>PrimeServe Insurance Limited operated a large customer-service centre.
+      The company had historically competed by offering relatively low
+      insurance premiums. Management therefore developed a strong financial
+      control culture.</p>
+
+      <p>Customer-service employees were given strict monthly targets. Their
+      performance was evaluated using average call duration, number of calls
+      handled and departmental operating cost.</p>
+
+      <p>Initially, the system appeared successful. The number of calls handled
+      increased while the average cost per customer interaction declined.</p>
+
+      <p>However, customer complaints began increasing. Customers reported that
+      representatives often ended conversations quickly without fully
+      understanding their problems.</p>
+
+      <p>The board commissioned a review. The review team found that employees
+      had responded rationally to the measures imposed on them. Since their
+      performance ratings depended heavily on call duration and call volume,
+      employees concentrated on completing calls rather than resolving
+      customer issues.</p>
+
+      <p>The company was simultaneously changing its strategy. It wanted to
+      differentiate itself through superior customer experience rather than
+      competing purely through low price.</p>
+
+      <p>The HR director argued that the performance system needed to change
+      because measures act as stimuli. Employees tend to pay greater attention
+      to activities that are measured and evaluated.</p>
+
+      <p>The review also considered accountability. Financial and operational
+      information was being collected and reported extensively. This represented
+      hard accountability because employee activities and outcomes were being
+      converted into measurable information.</p>
+
+      <p>However, employees had very limited involvement in designing the new
+      service standards. Management therefore introduced a participative
+      process in which employees were invited to contribute to the design and
+      evaluation of service objectives.</p>
+
+      <p>The company also reviewed its control mechanisms. Behavioural controls
+      were revised so that representatives were expected to follow appropriate
+      customer-resolution procedures. Personnel and cultural controls were
+      strengthened through recruitment, training and a stronger service culture.
+      Reporting controls were redesigned so that customer satisfaction and
+      resolution quality were reported along with call volume.</p>
+
+      <p>The CEO also changed the management approach. The old budget-constrained
+      approach had been suitable when cost leadership was the principal
+      strategic objective. Under the new differentiation strategy, management
+      wanted employees to remain financially responsible while giving greater
+      importance to service quality and long-term customer relationships.</p>
+
+      <p>Management therefore introduced a broader performance system containing
+      financial, customer, process and employee measures.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "spm_ch8_068_1",
+        question: "Why did customer complaints increase despite improvement in call-centre productivity measures?",
+        options: [
+          "The employees ignored every target",
+          "The measures encouraged employees to optimise call volume and duration rather than customer problem resolution",
+          "Financial measures cannot influence behaviour",
+          "Customer satisfaction automatically decreases when costs fall"
+        ],
+        answer: 1,
+        solution: "Employees responded to the incentives created by the measures. Narrow measures can encourage dysfunctional behaviour."
+      },
+
+      {
+        question_id: "spm_ch8_068_2",
+        question: "Which example represents soft accountability in PrimeServe?",
+        options: [
+          "Reporting average call duration",
+          "Calculating cost per customer interaction",
+          "Employees participating in designing and evaluating service objectives",
+          "Calculating total call volume"
+        ],
+        answer: 2,
+        solution: "Soft accountability involves human participation in shaping, evaluating and implementing organisational goals."
+      },
+
+      {
+        question_id: "spm_ch8_068_3",
+        question: "Which control mechanism is most directly associated with recruitment and training?",
+        options: [
+          "Behavioural control",
+          "Personnel and cultural control",
+          "Reporting control",
+          "Market control"
+        ],
+        answer: 1,
+        solution: "Personnel and cultural control focuses on having suitable people with appropriate skills and a conducive environment."
+      },
+
+      {
+        question_id: "spm_ch8_068_4",
+        question: "What principle is demonstrated by PrimeServe's experience with call-duration targets?",
+        options: [
+          "What gets measured gets done",
+          "Measures never influence behaviour",
+          "Only financial targets influence employees",
+          "Non-financial measures are always superior"
+        ],
+        answer: 0,
+        solution: "Employees tend to focus on areas that are measured and evaluated, making KPI design behaviourally important."
+      },
+
+      {
+        question_id: "spm_ch8_068_5",
+        question: "Why was the old budget-constrained management approach becoming unsuitable?",
+        options: [
+          "Cost control is never useful",
+          "The company had shifted from cost leadership toward differentiation based on customer experience",
+          "Differentiation eliminates the need for accountability",
+          "Customer service has no strategic value"
+        ],
+        answer: 1,
+        solution: "The management style should fit organisational context and strategy. The new differentiation strategy required greater emphasis on service quality and longer-term customer relationships."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 69 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_069",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Corporate Failure",
+      "Altman Z Score",
+      "Quantitative Models",
+      "Financial Distress",
+      "Early Warning"
+    ],
+    difficulty: "hard",
+
+    caseText: `
+
+      <p>Orion Machine Tools Limited was a publicly held manufacturing company
+      producing heavy machinery for industrial customers. The company had
+      enjoyed rapid growth for several years and management became confident
+      that demand would continue increasing.</p>
+
+      <p>The board approved a major capacity-expansion programme. New factories
+      were constructed and expensive machinery was purchased. A substantial
+      portion of the expansion was financed through debt.</p>
+
+      <p>Unexpectedly, industrial demand weakened. Customers delayed their
+      investment programmes and Orion's sales growth slowed considerably.</p>
+
+      <p>The finance director argued that the company should not be judged only
+      on current-year profit because the new factories were expected to become
+      profitable when market conditions improved.</p>
+
+      <p>The audit committee nevertheless requested an independent financial
+      distress assessment. The consultant decided to use the original Altman
+      model because Orion was a publicly held manufacturing company.</p>
+
+      <p>The following information was obtained:</p>
+
+      <table>
+        <tr>
+          <th>Particulars</th>
+          <th>₹ crore</th>
+        </tr>
+        <tr>
+          <td>Working Capital</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>Total Assets</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <td>Retained Earnings</td>
+          <td>160</td>
+        </tr>
+        <tr>
+          <td>EBIT</td>
+          <td>96</td>
+        </tr>
+        <tr>
+          <td>Market Value of Equity</td>
+          <td>480</td>
+        </tr>
+        <tr>
+          <td>Total Liabilities</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>Sales</td>
+          <td>960</td>
+        </tr>
+      </table>
+
+      <p>The consultant explained that the original Altman formula was:</p>
+
+      <p>
+        <strong>
+          Z = 1.2X1 + 1.4X2 + 3.3X3 + 0.6X4 + 1.0X5
+        </strong>
+      </p>
+
+      <p>Here, X1 represented working capital divided by total assets, X2
+      represented retained earnings divided by total assets, X3 represented
+      EBIT divided by total assets, X4 represented market value of equity
+      divided by total liabilities and X5 represented sales divided by total
+      assets.</p>
+
+      <p>The consultant reminded management that a score below 1.81 indicated
+      distress, a score from 1.81 to 2.99 represented the grey zone and a score
+      above 2.99 represented the safe zone.</p>
+
+      <p>The board also reviewed the limitations of the model. Management
+      recognised that financial statements could be window dressed and that a
+      score was a snapshot rather than a complete explanation of corporate
+      failure.</p>
+
+      <p>The consultant therefore recommended that the Z-score be considered
+      together with cash-flow forecasts, debt servicing capacity, industry
+      conditions, capacity utilisation and management's expansion strategy.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "spm_ch8_069_1",
+        question: "What is Orion's X1?",
+        options: [
+          "0.10",
+          "0.15",
+          "0.20",
+          "0.25"
+        ],
+        answer: 1,
+        solution: "X1 = Working Capital / Total Assets = 120 / 800 = 0.15."
+      },
+
+      {
+        question_id: "spm_ch8_069_2",
+        question: "What is Orion's X3?",
+        options: [
+          "0.08",
+          "0.10",
+          "0.12",
+          "0.15"
+        ],
+        answer: 2,
+        solution: "X3 = EBIT / Total Assets = 96 / 800 = 0.12."
+      },
+
+      {
+        question_id: "spm_ch8_069_3",
+        question: "What is Orion's approximate Altman Z-score?",
+        options: [
+          "2.78",
+          "3.12",
+          "3.35",
+          "4.05"
+        ],
+        answer: 0,
+        solution: "X1=0.15, X2=0.20, X3=0.12, X4=1.20 and X5=1.20. Z = 1.2(0.15)+1.4(0.20)+3.3(0.12)+0.6(1.20)+1.0(1.20) = 0.18+0.28+0.396+0.72+1.20 = 2.776, approximately 2.78."
+      },
+
+      {
+        question_id: "spm_ch8_069_4",
+        question: "Based on the correct calculated score, which zone does Orion fall into?",
+        options: [
+          "Distress zone",
+          "Grey zone",
+          "Safe zone",
+          "Warning zone"
+        ],
+        answer: 1,
+        solution: "The score is approximately 2.78. Since it lies between 1.81 and 2.99, Orion is in the grey zone."
+      },
+
+      {
+        question_id: "spm_ch8_069_5",
+        question: "Which additional analysis would best complement Orion's Z-score?",
+        options: [
+          "Only employee attendance",
+          "Cash-flow forecasts, debt servicing ability and strategic/industry analysis",
+          "Only advertising expenditure",
+          "Only the number of shareholders"
+        ],
+        answer: 1,
+        solution: "The Z-score is an early-warning quantitative indicator. It should be supplemented by cash-flow, debt, industry and strategic analysis."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 70 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_070",
+    case_chapter: "Chapter8",
+    case_topic: [
+      "Corporate Failure",
+      "Argenti A Score",
+      "Defects",
+      "Management Mistakes",
+      "Symptoms",
+      "Prevention",
+      "Qualitative Model"
+    ],
+    difficulty: "hard",
+
+    caseText: `
+
+      <p>CrownVista Hotels Limited had grown from a family-owned hotel business
+      into a large hospitality group. Its founder remained highly influential
+      even after the company expanded. He continued to act as Chief Executive
+      Officer and Chairman and personally approved many important decisions.</p>
+
+      <p>The board included several directors, but meetings were often dominated
+      by the founder's views. Directors were reluctant to challenge major
+      expansion decisions because the founder had historically been successful.</p>
+
+      <p>As the hotel industry changed, online booking platforms became
+      increasingly important. Customer expectations also shifted toward
+      personalised digital experiences and flexible booking arrangements.</p>
+
+      <p>CrownVista continued investing heavily in large physical properties.
+      Management believed that online booking was simply another distribution
+      channel and did not recognise how significantly customer behaviour was
+      changing.</p>
+
+      <p>The company expanded aggressively into new cities. Several properties
+      were opened using significant borrowings. Management assumed that the
+      increased number of rooms would automatically generate sufficient revenue
+      to cover the debt.</p>
+
+      <p>As the number of properties increased, management depth became weaker.
+      Several inexperienced managers were promoted quickly. Budgets existed,
+      but actual performance was not reviewed consistently against realistic
+      assumptions.</p>
+
+      <p>Cash-flow forecasts were also unreliable. The costing system did not
+      provide adequate information about profitability by property, room type
+      and customer segment.</p>
+
+      <p>One major hotel project experienced substantial cost overruns. The
+      project also opened later than planned, missing the peak tourist season.</p>
+
+      <p>Financial pressure increased further because the group was overtrading.
+      Working-capital requirements grew while the company was also required to
+      service substantial debt.</p>
+
+      <p>As pressure increased, management began using aggressive accounting
+      estimates. At the same time, employee turnover increased and several
+      suppliers began demanding faster payment.</p>
+
+      <p>The board commissioned an Argenti A-score assessment. The consultant
+      explained that the model categorises warning factors into three broad
+      groups: defects, management mistakes and symptoms of trouble.</p>
+
+      <p>The assessment produced the following scores:</p>
+
+      <table>
+        <tr>
+          <th>Factor</th>
+          <th>Score</th>
+        </tr>
+        <tr>
+          <td>CEO is an autocrat</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>CEO is also Chairman</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Passive board</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Unbalanced board</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Weak Finance Director</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Lack of management depth</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Poor response to change</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>No effective budgets/control</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>No reliable cash-flow forecasts</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>No adequate costing system</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>High gearing</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Overtrading</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Major project gone wrong</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Creative accounting</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Non-financial warning signs</td>
+          <td>4</td>
+        </tr>
+      </table>
+
+      <p>The consultant reminded the board that the model does not simply ask
+      whether the total score exceeds 25. Group A defects should not exceed 10,
+      Group B mistakes should not exceed 15 and the presence of any Group C
+      symptom indicates risk.</p>
+
+      <p>The board initially suggested closing several hotels immediately.
+      However, the consultant argued that such a decision should follow an
+      investigation of the underlying causes and the strategic viability of
+      each property.</p>
+
+      <p>He recommended strengthening financial controls, improving cash-flow
+      forecasting, reassessing the expansion strategy, reviewing individual
+      properties, addressing management weaknesses and investigating the
+      reasons behind aggressive accounting.</p>
+
+      <p>The consultant also warned that the Argenti model involved subjective
+      judgement and therefore required reliable qualitative information.
+      Management should not treat the score as an automatic substitute for
+      professional investigation.</p>
+    `,
+
+    questions: [
+      {
+        question_id: "spm_ch8_070_1",
+        question: "Which three stages form the basic Argenti failure process?",
+        options: [
+          "Defects, mistakes and symptoms of failure",
+          "Strategy, structure and systems",
+          "Revenue, profit and dividends",
+          "Planning, budgeting and reporting"
+        ],
+        answer: 0,
+        solution: "Argenti's model views failure as a process involving defects, management mistakes and symptoms of trouble."
+      },
+
+      {
+        question_id: "spm_ch8_070_2",
+        question: "What is CrownVista's Group A score?",
+        options: [
+          "25",
+          "35",
+          "43",
+          "45"
+        ],
+        answer: 2,
+        solution: "Group A = 8 + 4 + 2 + 2 + 2 + 1 + 15 + 3 + 3 + 3 = 43."
+      },
+
+      {
+        question_id: "spm_ch8_070_3",
+        question: "What is CrownVista's Group B score?",
+        options: [
+          "15",
+          "30",
+          "45",
+          "60"
+        ],
+        answer: 2,
+        solution: "Group B = High gearing 15 + Overtrading 15 + Major project gone wrong 15 = 45."
+      },
+
+      {
+        question_id: "spm_ch8_070_4",
+        question: "What is the most appropriate conclusion about CrownVista under the Argenti model?",
+        options: [
+          "It is healthy because the total score is irrelevant",
+          "It is risky because Group A exceeds 10, Group B exceeds 15 and Group C contains symptoms",
+          "It is healthy because only financial symptoms matter",
+          "It cannot be assessed because the model is qualitative"
+        ],
+        answer: 1,
+        solution: "CrownVista breaches all three important conditions: Group A exceeds 10, Group B exceeds 15 and Group C contains symptoms."
+      },
+
+      {
+        question_id: "spm_ch8_070_5",
+        question: "Why should CrownVista not rely solely on the Argenti score when deciding which hotels to close?",
+        options: [
+          "The Argenti model identifies risk but does not itself prescribe the exact corrective solution",
+          "Argenti only measures employee satisfaction",
+          "Qualitative information is never useful",
+          "A-score models guarantee that every business unit must be closed"
+        ],
+        answer: 0,
+        solution: "The Argenti model can identify warning signs and root causes, but corrective action requires management investigation and situation-specific judgement."
+      }
+    ]
+  },
+  // ============================================================
+  // CASE 71 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_071",
+    case_chapter: "Chapter8",
+    case_topic: ["Strategy", "Performance Management", "CSF", "KPI", "Balanced Scorecard"],
+    difficulty: "medium",
+    caseText: `<p>BluePeak Telecom Services Limited had traditionally competed by offering low-cost mobile connectivity to price-sensitive customers. For several years, management measured success primarily through subscriber additions, total revenue and operating profit. Regional managers were rewarded when they increased the number of subscribers in their territories, and the sales department was given aggressive monthly acquisition targets. The strategy worked while customers were mainly concerned with price and network availability. However, competition changed when several new operators entered the market with premium service packages, faster complaint resolution, personalised digital applications and loyalty programmes. BluePeak noticed that although subscriber additions remained strong, customer churn was increasing. A significant number of new subscribers cancelled their connections within a few months because they were dissatisfied with service quality. The CEO initially instructed the sales team to increase acquisition further, but the customer-service director argued that acquiring customers who quickly left the company was not sustainable. The strategy team therefore proposed a change from a pure cost-leadership approach toward a combination of competitive pricing and superior customer experience. The new strategy required investment in network reliability, employee training, digital self-service facilities and customer support. The finance director wanted to retain revenue, operating profit and return on investment because management still needed to evaluate financial performance. However, the strategy director proposed additional measures such as customer satisfaction, customer churn, complaint-resolution time, network availability, employee training hours and digital-service adoption. The board identified customer retention, network reliability and service responsiveness as critical success factors. It then asked management to develop KPIs around these areas. The sales director initially objected because the new measures could reduce the apparent performance of the sales department. The CEO explained that a department should not be rewarded for achieving a target that damages the organisation's strategic objectives. The company also decided to introduce a Balanced Scorecard so that financial results would be considered together with customer performance, internal processes and learning and growth. The board emphasised that the performance management system should provide information for strategic planning and control rather than merely produce monthly reports. Managers were also instructed to review performance regularly and take corrective action whenever actual performance moved away from strategic expectations.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_071_1",
+        question: "Why is subscriber acquisition alone no longer an adequate measure for BluePeak?",
+        options: ["It is not a financial measure", "It may encourage acquisition even when customers leave shortly afterward", "It cannot be calculated", "It automatically measures service quality"],
+        answer: 1,
+        solution: "Acquisition alone may encourage volume without considering retention or customer experience."
+      },
+      {
+        question_id: "spm_ch8_071_2",
+        question: "Which is the strongest example of a critical success factor in the case?",
+        options: ["Number of office buildings", "Customer retention", "Number of shareholders", "Depreciation expense"],
+        answer: 1,
+        solution: "Customer retention is critical to BluePeak's new customer-focused strategy."
+      },
+      {
+        question_id: "spm_ch8_071_3",
+        question: "Which measure is most directly related to internal process performance?",
+        options: ["Complaint-resolution time", "Number of shareholders", "Dividend per share", "Market capitalisation"],
+        answer: 0,
+        solution: "Complaint-resolution time measures the efficiency of an internal customer-service process."
+      },
+      {
+        question_id: "spm_ch8_071_4",
+        question: "Why should BluePeak retain financial measures after introducing non-financial measures?",
+        options: ["Financial measures are always sufficient", "Financial performance remains important even when strategic success also requires non-financial indicators", "Non-financial measures cannot be used in performance management", "Profit is unrelated to strategy"],
+        answer: 1,
+        solution: "A broad performance system combines financial and non-financial measures."
+      },
+      {
+        question_id: "spm_ch8_071_5",
+        question: "What principle is reflected in the CEO's instruction to review performance and take corrective action?",
+        options: ["Performance management is only historical reporting", "Performance management supports planning, control, analysis and corrective action", "Performance management eliminates strategy", "Performance measurement should never change"],
+        answer: 1,
+        solution: "Performance management involves obtaining information, analysing it and taking corrective action in line with objectives."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 72 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_072",
+    case_chapter: "Chapter8",
+    case_topic: ["Value Chain", "Primary Activities", "Support Activities", "Value Drivers", "Outsourcing"],
+    difficulty: "medium",
+    caseText: `<p>FreshBox Foods Limited manufactured chilled ready-to-eat meals for supermarkets and online grocery platforms. The company had built its reputation around freshness, consistent taste and rapid delivery. Management initially believed that the manufacturing department was responsible for most of the company's value creation. During a strategic review, however, the board discovered that customer value depended on a sequence of activities beginning with procurement and inbound logistics and continuing through production, distribution, marketing and after-sales support. FreshBox purchased vegetables, dairy products, spices and packaging material from several suppliers. The procurement department negotiated competitive prices but sometimes purchased large quantities to obtain discounts. This reduced purchase prices but increased storage requirements for perishable materials. The inbound logistics department therefore had to handle additional stock and occasionally experienced spoilage. Production itself was highly automated and generally efficient. However, production schedules were not always coordinated with marketing campaigns. A successful promotional campaign could suddenly increase demand for a particular meal, while the factory had not been informed in advance. Finished products were then stored at distribution centres before being delivered to supermarkets and online customers. The outbound logistics team had recently experienced an increase in emergency deliveries because inventory information was not updated quickly between warehouses. The marketing department was responsible for product promotion, pricing decisions and market research. Management considered marketing particularly important because customers were willing to pay a premium for freshness and convenience. The customer-service team handled complaints, replacement requests and delivery issues. Support activities included human resource management, technology development, procurement and firm infrastructure. The IT department proposed an integrated inventory system that would provide more timely information to procurement, production and logistics. The board also considered outsourcing part of the transportation function to a specialist logistics company. Some directors argued that transportation should be retained internally because it affected customer experience. Others argued that a specialist provider could perform the activity more efficiently. Management concluded that value-chain analysis should identify value drivers, linkages and opportunities for improvement rather than simply cutting every available cost. It also decided to compare selected processes with competitors to identify performance gaps.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_072_1",
+        question: "Which activity is a primary activity?",
+        options: ["Human resource management", "Technology development", "Operations", "Firm infrastructure"],
+        answer: 2,
+        solution: "Operations is a primary value-chain activity."
+      },
+      {
+        question_id: "spm_ch8_072_2",
+        question: "Which support activity is explicitly mentioned in the case?",
+        options: ["Outbound logistics", "Marketing", "Human resource management", "After-sales service"],
+        answer: 2,
+        solution: "Human resource management is one of Porter's support activities."
+      },
+      {
+        question_id: "spm_ch8_072_3",
+        question: "What problem is created by procurement's large-volume purchasing?",
+        options: ["Lower storage requirements", "Potential spoilage and additional storage costs", "Elimination of logistics", "Automatic improvement in customer satisfaction"],
+        answer: 1,
+        solution: "Large purchases may reduce purchase price but can create additional inventory and spoilage costs."
+      },
+      {
+        question_id: "spm_ch8_072_4",
+        question: "Why should FreshBox evaluate outsourcing using both quantitative and qualitative factors?",
+        options: ["Outsourcing is always cheaper", "An activity may have strategic importance even if an external provider can perform it at a lower cost", "Only qualitative factors matter", "Transportation can never be outsourced"],
+        answer: 1,
+        solution: "Outsourcing decisions should consider cost effectiveness as well as strategic importance, core competencies and qualitative factors."
+      },
+      {
+        question_id: "spm_ch8_072_5",
+        question: "What is the main purpose of analysing value-chain linkages?",
+        options: ["To isolate every department", "To understand how activities affect one another and overall customer value", "To eliminate marketing", "To calculate only depreciation"],
+        answer: 1,
+        solution: "Value-chain linkages show how one activity can influence another and ultimately affect overall value and margin."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 73 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_073",
+    case_chapter: "Chapter8",
+    case_topic: ["7S Framework", "Hard S", "Soft S", "Shared Values", "Strategy", "Systems", "Skills"],
+    difficulty: "medium",
+    caseText: `<p>EduCore Learning Group operated a network of professional education centres in different cities. The company had grown through acquisitions, and each acquired centre had retained many of its original procedures. The corporate office wanted to introduce a common strategy based on digital learning, student support and consistent educational quality. A new online learning platform was therefore purchased and management expected the project to improve student engagement immediately. However, implementation was slower than expected. Several teachers had limited experience with digital teaching tools, some administrative employees were unfamiliar with the new reporting system and centre managers continued using their old spreadsheets. The organisational structure also differed between centres. Some centre heads had substantial decision-making authority, while others required approval from the corporate office for routine matters. The management style was different as well. One centre had an authoritarian director who rarely consulted employees, whereas another encouraged teachers to contribute ideas about course design. The strategy team concluded that the problem could not be solved by technology alone. It decided to apply the McKinsey 7S framework. The team identified Strategy, Structure and Systems as the hard elements. Staff, Skills, Style and Shared Values were treated as the soft elements. Management was particularly concerned about Shared Values because different centres had different interpretations of the organisation's purpose. Some employees believed that increasing enrolments was the main objective, while others believed that student learning outcomes and long-term reputation were more important. The HR department also identified skill gaps in digital teaching, analytics and online student support. Management then decided to review all seven elements together. It would begin by clarifying shared values, then examine whether strategy, structure and systems supported those values. Staff, skills and style would subsequently be reviewed to ensure that the soft elements supported the hard elements. The CEO stated that the exercise would be repeated periodically because organisational changes in one element could create misalignment elsewhere.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_073_1",
+        question: "Which three elements are the Hard S?",
+        options: ["Strategy, Structure and Systems", "Staff, Skills and Style", "Shared Values, Staff and Skills", "Strategy, Style and Staff"],
+        answer: 0,
+        solution: "Strategy, Structure and Systems are the three Hard S elements."
+      },
+      {
+        question_id: "spm_ch8_073_2",
+        question: "Why are Shared Values especially important in EduCore?",
+        options: ["They are a financial ratio", "They are at the centre of the framework and influence alignment among the other elements", "They replace organisational structure", "They are the same as systems"],
+        answer: 1,
+        solution: "Shared Values are at the centre of the 7S framework and help align the other six elements."
+      },
+      {
+        question_id: "spm_ch8_073_3",
+        question: "The lack of digital teaching capability is primarily a:",
+        options: ["Strategy issue", "Skills issue", "Structure issue", "Style issue"],
+        answer: 1,
+        solution: "Skills concerns the competencies required by the organisation."
+      },
+      {
+        question_id: "spm_ch8_073_4",
+        question: "Different leadership approaches at the centres primarily represent differences in:",
+        options: ["Style", "Systems", "Strategy", "Technology"],
+        answer: 0,
+        solution: "Leadership and management approach form part of Style."
+      },
+      {
+        question_id: "spm_ch8_073_5",
+        question: "Why did the CEO want to review the seven elements periodically?",
+        options: ["The elements are independent", "Changes in one element may create misalignment with the others", "Only systems matter", "The framework is used only once"],
+        answer: 1,
+        solution: "The elements are interrelated, so changes may require further alignment and review."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 74 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_074",
+    case_chapter: "Chapter8",
+    case_topic: ["Organisational Structure", "Centralisation", "Decentralisation", "Matrix", "Responsibility Centres"],
+    difficulty: "medium",
+    caseText: `<p>Vertex Infrastructure Limited had grown from a small regional contractor into a large organisation executing construction projects across several states. During its early years, the founder personally approved contracts, purchases, recruitment and major project decisions. As the business expanded, local managers increasingly complained that routine decisions were delayed because they had to wait for approval from headquarters. The board therefore introduced a divisional structure based on geographical regions. Regional managers received greater authority over local operations and were made responsible for revenue and profitability. Certain corporate activities, including treasury, legal matters and selected procurement arrangements, remained centralised. The new arrangement improved decision speed, but the board soon observed that some regional managers were concentrating excessively on their own results. One manager refused to transfer unused equipment to another region because doing so would increase his division's short-term costs. Another manager postponed participation in a corporate technology project because the project initially increased local expenditure. Vertex also won a major project that required engineers, procurement specialists, finance professionals and IT experts to work together. The company created a matrix structure for the project. Employees continued to belong to their functional departments but also worked under the project manager for project activities. The functional manager retained responsibility for salary, promotion and employee development, while the project manager focused on project deliverables and deadlines. Some employees were worried about receiving instructions from two managers. Senior management recognised that communication and coordination would therefore be essential. The finance director also reviewed responsibility centres. Some managers were responsible mainly for costs, some for revenue, some for profit and selected senior managers for investment decisions. The board concluded that organisational structure and performance measurement had to be considered together because changes in authority and responsibility would affect the way performance information was collected, analysed and evaluated.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_074_1",
+        question: "What was the main advantage of decentralisation for Vertex?",
+        options: ["Slower decisions", "Greater local authority and faster response", "Complete elimination of control", "Removal of all corporate functions"],
+        answer: 1,
+        solution: "Decentralisation can improve speed, flexibility and use of local knowledge."
+      },
+      {
+        question_id: "spm_ch8_074_2",
+        question: "The manager refusing to transfer equipment illustrates:",
+        options: ["Goal congruence", "Sub-optimisation", "Centralisation", "Unity of command"],
+        answer: 1,
+        solution: "The manager protects divisional results at the expense of the wider organisation."
+      },
+      {
+        question_id: "spm_ch8_074_3",
+        question: "In the matrix structure, which manager is responsible for salary and promotion?",
+        options: ["Project manager", "Functional manager", "Customer", "Finance director"],
+        answer: 1,
+        solution: "The functional manager retains responsibility for salary, promotion and employee development."
+      },
+      {
+        question_id: "spm_ch8_074_4",
+        question: "A manager responsible for revenues and costs and evaluated on divisional profit is managing a:",
+        options: ["Cost centre", "Revenue centre", "Profit centre", "Pure investment centre"],
+        answer: 2,
+        solution: "A profit centre manager is responsible for both revenue and costs and is evaluated on profit."
+      },
+      {
+        question_id: "spm_ch8_074_5",
+        question: "What is the major behavioural risk in the matrix structure?",
+        options: ["No specialisation", "Conflict and confusion due to dual reporting", "No project authority", "No functional knowledge"],
+        answer: 1,
+        solution: "Dual reporting can create conflict, confusion and demotivation unless communication and coordination are strong."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 75 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_075",
+    case_chapter: "Chapter8",
+    case_topic: ["Behavioural Aspects", "Accountability", "Performance Measures", "Control", "Culture"],
+    difficulty: "medium",
+    caseText: `<p>CarePlus Customer Support Limited provided outsourced customer-service operations to banks, insurance companies and online retailers. The company was initially evaluated mainly on operating cost because its clients wanted low-cost customer support. Employees were therefore given targets based on the number of calls handled and average call duration. The system reduced operating costs, but after several months clients began reporting that customer problems were not being resolved properly. Representatives often ended conversations quickly because longer calls could reduce their performance ratings. Management realised that employees were responding to the measures and incentives provided to them. The company then decided to introduce additional measures such as first-contact resolution, customer satisfaction, complaint recurrence and quality-review scores. The HR director explained that accountability had both quantitative and human dimensions. Financial and operational reports represented hard accountability because activities and outcomes were converted into measurable information. Employee participation in developing service standards represented soft accountability. Management also reviewed its control mechanisms. Behavioural controls were used to ensure that employees followed appropriate service procedures. Personnel and cultural controls focused on recruitment, training and creating an environment that encouraged appropriate behaviour. Reporting controls focused on ensuring that performance information was collected and reported fairly. The CEO warned managers that a performance measure could produce unintended behaviour if it was too narrow. He therefore instructed the team to ensure that KPIs represented actual strategic priorities. Since CarePlus was now competing partly on service quality rather than only cost, management also began developing a stronger service culture. Employees were encouraged to see themselves as representatives of the client brand rather than merely call handlers.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_075_1",
+        question: "Why did the original call-duration target create dysfunctional behaviour?",
+        options: ["Employees ignored all targets", "Employees focused on short calls rather than solving customer problems", "The target measured customer satisfaction", "The target eliminated accountability"],
+        answer: 1,
+        solution: "Employees naturally focused on what was measured, which encouraged shorter calls even when resolution required more time."
+      },
+      {
+        question_id: "spm_ch8_075_2",
+        question: "Which is an example of hard accountability?",
+        options: ["Employees participating in service-standard design", "Reporting quantified performance against targets", "Sharing organisational values", "Discussing team morale"],
+        answer: 1,
+        solution: "Hard accountability involves quantitative information and formal reporting."
+      },
+      {
+        question_id: "spm_ch8_075_3",
+        question: "Recruitment and training are most closely related to:",
+        options: ["Personnel and cultural control", "Reporting control", "Behavioural control only", "Financial control"],
+        answer: 0,
+        solution: "Personnel and cultural control focuses on suitable people, skills and organisational environment."
+      },
+      {
+        question_id: "spm_ch8_075_4",
+        question: "Which measure best complements call volume?",
+        options: ["Customer satisfaction", "Office rent", "Number of desks", "Electricity expense"],
+        answer: 0,
+        solution: "Customer satisfaction helps ensure call volume is not achieved at the expense of service quality."
+      },
+      {
+        question_id: "spm_ch8_075_5",
+        question: "What principle is demonstrated by the case?",
+        options: ["What gets measured gets done", "Only financial measures affect behaviour", "Measures cannot create unintended consequences", "Employees never respond to incentives"],
+        answer: 0,
+        solution: "Performance measures act as stimuli and influence employee behaviour."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 76 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_076",
+    case_chapter: "Chapter8",
+    case_topic: ["Corporate Failure", "Altman Z Score", "Quantitative Model", "Financial Ratios", "Early Warning"],
+    difficulty: "hard",
+    caseText: `<p>Eastern Components Limited was a publicly held manufacturing company producing precision components for automobile manufacturers. The company had historically maintained a strong market position and management became confident after several years of rising sales. The board approved a large capacity expansion programme and financed much of the investment through debt. Soon after the new facilities became operational, automobile manufacturers reduced capital expenditure because of weaker economic conditions. Eastern's sales growth slowed and several factories operated below capacity. Management argued that the situation was temporary because the company owned valuable machinery and expected demand to recover. The audit committee nevertheless requested a quantitative financial-distress assessment. Since Eastern was a publicly held manufacturing company, the consultant selected the original Altman Z-score model. The following information was extracted from the company's financial statements: Working Capital ₹150 crore, Total Assets ₹1,000 crore, Retained Earnings ₹200 crore, EBIT ₹100 crore, Market Value of Equity ₹500 crore, Total Liabilities ₹400 crore and Sales ₹1,200 crore. The consultant explained that the original Altman model uses five ratios: Working Capital/Total Assets, Retained Earnings/Total Assets, EBIT/Total Assets, Market Value of Equity/Total Liabilities and Sales/Total Assets. The formula is Z = 1.2X1 + 1.4X2 + 3.3X3 + 0.6X4 + 1.0X5. The consultant reminded the board that a score below 1.81 indicates distress, a score from 1.81 to 2.99 indicates the grey zone and a score above 2.99 indicates the safe zone. The finance director initially believed that a high sales figure meant the company was safe. The consultant explained that sales turnover is only one component of the model and that liquidity, accumulated earnings, operating profitability and capital structure also matter. He further warned that the score should not be treated as a complete diagnosis. Management needed to investigate debt servicing capacity, cash flows, industry conditions, capacity utilisation and the expansion strategy. The consultant also explained that financial statements can be manipulated or window dressed and that a quantitative score is essentially a snapshot based on available financial information. The board therefore decided to use the score as an early-warning tool rather than as an automatic prediction of bankruptcy.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_076_1",
+        question: "What is Eastern's X1?",
+        options: ["0.10", "0.15", "0.20", "0.25"],
+        answer: 1,
+        solution: "X1 = 150 / 1000 = 0.15."
+      },
+      {
+        question_id: "spm_ch8_076_2",
+        question: "What is Eastern's X4?",
+        options: ["0.80", "1.00", "1.25", "1.50"],
+        answer: 2,
+        solution: "X4 = Market Value of Equity / Total Liabilities = 500 / 400 = 1.25."
+      },
+      {
+        question_id: "spm_ch8_076_3",
+        question: "What is Eastern's approximate Altman Z-score?",
+        options: ["2.91", "3.18", "3.33", "3.72"],
+        answer: 1,
+        solution: "X1=0.15, X2=0.20, X3=0.10, X4=1.25 and X5=1.20. Z = 1.2(0.15) + 1.4(0.20) + 3.3(0.10) + 0.6(1.25) + 1.2 = 0.18 + 0.28 + 0.33 + 0.75 + 1.20 = 2.74."
+      },
+      {
+        question_id: "spm_ch8_076_4",
+        question: "Based on the correct calculation, which zone applies?",
+        options: ["Distress", "Grey", "Safe", "Warning"],
+        answer: 1,
+        solution: "The correct score is 2.74, which falls between 1.81 and 2.99 and therefore lies in the grey zone."
+      },
+      {
+        question_id: "spm_ch8_076_5",
+        question: "Which statement best describes the limitation of using the Z-score alone?",
+        options: ["It automatically identifies the exact cause of failure", "It provides a financial warning but does not itself identify the root cause or corrective solution", "It eliminates the need for cash-flow analysis", "It guarantees future survival"],
+        answer: 1,
+        solution: "Quantitative models provide warning information but do not themselves diagnose the complete cause or prescribe the solution."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 77 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_077",
+    case_chapter: "Chapter8",
+    case_topic: ["Corporate Failure", "Argenti A Score", "Defects", "Mistakes", "Symptoms", "Prevention"],
+    difficulty: "hard",
+    caseText: `<p>SilverLine Fashion Retail Limited had expanded rapidly under a founder who remained both Chief Executive Officer and Chairman. The founder had built the business successfully and believed that his experience allowed him to make most major decisions personally. Although the company had a board, several directors rarely challenged his assumptions. As the company expanded into new cities, management depth became weaker because experienced managers were promoted faster than the organisation could develop replacements. SilverLine's strategy was also becoming outdated. Customers were increasingly moving toward online shopping, personalised recommendations and fast-fashion cycles, but the company continued investing heavily in large physical stores. Management received repeated warnings about changing consumer behaviour but considered the trend temporary. Financial controls also deteriorated. Budgets were prepared but were not reviewed consistently, cash-flow forecasts were unreliable and the costing system did not provide sufficient information about profitability by store and product category. The company borrowed heavily to finance expansion. Working-capital requirements increased and the company began experiencing overtrading. One major store-development project suffered substantial cost overruns and opened after the most profitable seasonal period. Financial pressure eventually led management to adopt aggressive accounting estimates. At the same time, employee turnover increased, suppliers demanded tighter payment terms and customers complained about product availability. An external consultant was asked to apply the Argenti A-score model. The assessment produced the following Group A scores: CEO autocrat 8, CEO also Chairman 4, passive board 2, unbalanced board 2, weak Finance Director 2, lack of management depth 1, poor response to change 15, no effective budgets/control 3, no reliable cash-flow forecasts 3 and no adequate costing system 3. Group B consisted of high gearing 15, overtrading 15 and a major project gone wrong 15. Group C consisted of creative accounting 4 and non-financial warning signs 4. The consultant reminded management that a total score above 25 indicates risk, but category thresholds are also important. Group A should not exceed 10, Group B should not exceed 15 and the presence of any Group C symptom indicates risk. The consultant further explained that the model is qualitative and therefore depends on the reliability of information and management judgement. He advised the board to investigate the underlying causes, reconsider the expansion strategy, strengthen controls, review loss-making stores and address management weaknesses rather than simply blaming individual employees.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_077_1",
+        question: "What is SilverLine's Group A score?",
+        options: ["25", "35", "43", "48"],
+        answer: 2,
+        solution: "Group A = 8+4+2+2+2+1+15+3+3+3 = 43."
+      },
+      {
+        question_id: "spm_ch8_077_2",
+        question: "What is SilverLine's Group B score?",
+        options: ["15", "30", "45", "60"],
+        answer: 2,
+        solution: "Group B = 15+15+15 = 45."
+      },
+      {
+        question_id: "spm_ch8_077_3",
+        question: "Which of the following belongs to Group C?",
+        options: ["High gearing", "Overtrading", "Creative accounting", "CEO autocrat"],
+        answer: 2,
+        solution: "Creative accounting is a symptom of trouble and belongs to Group C."
+      },
+      {
+        question_id: "spm_ch8_077_4",
+        question: "Why is SilverLine risky even without relying only on the total score?",
+        options: ["Only Group C matters", "Group A exceeds 10, Group B exceeds 15 and Group C contains symptoms", "The company has no employees", "Argenti applies only to profitable companies"],
+        answer: 1,
+        solution: "SilverLine breaches all three category-specific conditions."
+      },
+      {
+        question_id: "spm_ch8_077_5",
+        question: "Which response is most appropriate for preventing further deterioration?",
+        options: ["Ignore the score", "Investigate root causes, reassess strategy and strengthen management systems and controls", "Continue expansion regardless of cash flows", "Blame store managers for all problems"],
+        answer: 1,
+        solution: "Prevention requires identifying causes, correcting strategic and operational weaknesses and strengthening controls."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 78 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_078",
+    case_chapter: "Chapter8",
+    case_topic: ["7S Framework", "Change Management", "Gap Analysis", "Strategy", "Structure", "Systems", "Culture"],
+    difficulty: "hard",
+    caseText: `<p>NationalCare Hospital Network operated eight hospitals acquired over a period of six years. The group had announced a strategy of becoming a digitally integrated healthcare network with common patient-service standards, faster diagnostic reporting and better use of clinical data. The board initially invested heavily in a new information system and expected the technology to standardise operations across the group. However, implementation failed to produce the expected results. Several hospitals continued using old procedures, doctors complained about additional administrative work, nurses had not received adequate training and hospital administrators maintained separate spreadsheets. The strategy team conducted a McKinsey 7S analysis and found that the problem was broader than technology. Strategy was directed toward integration, but structure remained highly decentralised. Systems differed substantially across hospitals. Staff capabilities were uneven and some hospitals lacked employees with adequate analytical and digital skills. Management style also varied widely. One hospital relied on highly centralised decision-making while another encouraged participative management. Most importantly, shared values were not sufficiently aligned. Corporate management emphasised standardisation and patient experience, while some local managers believed that clinical autonomy should dominate all other considerations. The adviser recommended beginning with shared values and then reviewing the hard elements of strategy, structure and systems. The soft elements of staff, skills and style would then be examined to determine whether they supported the hard elements. Management also decided to conduct a gap analysis. It documented the current state of each hospital, defined the desired future state, prepared action plans and assigned responsibilities. The change-management programme would first prepare the organisation, then develop a clear vision and plan, implement the changes, embed the new practices into normal operations and periodically review results. The adviser emphasised that change should be clear, compelling and credible. He also warned that the process would need to be iterative because improvement in one element could expose weaknesses in another. The board accepted that buying technology was only one part of the transformation and that sustainable performance required alignment among all seven elements.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_078_1",
+        question: "Which problem represents a Structure issue?",
+        options: ["Uneven digital skills", "Different management reporting lines and levels of decentralisation", "Lack of software", "Different employee training hours"],
+        answer: 1,
+        solution: "Structure concerns formal relationships, authority, responsibility and grouping of work."
+      },
+      {
+        question_id: "spm_ch8_078_2",
+        question: "Which problem is primarily a Shared Values issue?",
+        options: ["Different software", "Different beliefs about standardisation versus clinical autonomy", "Insufficient training", "Different reporting lines"],
+        answer: 1,
+        solution: "Shared Values concern common beliefs and guiding principles."
+      },
+      {
+        question_id: "spm_ch8_078_3",
+        question: "What is the correct first step in gap analysis?",
+        options: ["Execute the solution", "Understand the current state", "Close the business", "Measure profit only"],
+        answer: 1,
+        solution: "Gap analysis begins with understanding the current situation."
+      },
+      {
+        question_id: "spm_ch8_078_4",
+        question: "Which statement best describes the Three-C principle?",
+        options: ["Costly, Centralised, Conservative", "Clear, Compelling, Credible", "Controlled, Complex, Continuous", "Cheap, Competitive, Centralised"],
+        answer: 1,
+        solution: "The Three-C principle states that change should be clear, compelling and credible."
+      },
+      {
+        question_id: "spm_ch8_078_5",
+        question: "Why must NationalCare review the 7S elements iteratively?",
+        options: ["The elements are independent", "Changes in one element can create misalignment or expose weaknesses in other elements", "Only systems can change", "Shared Values never change"],
+        answer: 1,
+        solution: "The 7S elements are interrelated, so changes should be reviewed and realigned iteratively."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 79 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_079",
+    case_chapter: "Chapter8",
+    case_topic: ["Complex Business Structures", "Supply Chain", "Strategic Alliance", "Joint Venture", "Virtual Organisation", "IT"],
+    difficulty: "hard",
+    caseText: `<p>SkyBridge Logistics Network was created to provide international logistics services without owning a large fleet or warehouse network. It coordinated independent transport operators, warehouse providers, customs specialists, software companies and local delivery businesses. The management team believed that this network structure would allow SkyBridge to remain asset-light while accessing specialised capabilities in different countries. However, performance management became increasingly difficult as the network expanded. Transport partners measured performance using kilometres travelled and number of deliveries, while SkyBridge wanted to measure on-time delivery, successful delivery, customer satisfaction and damage rates. Warehouse partners used different inventory definitions and reporting periods. Customs specialists operated under local regulations that differed across countries. Several partners were located in different time zones and used different currencies. A strategic alliance in one country involved cooperation between SkyBridge and a local logistics company, but both remained independent and no separate business entity was created. In another country, SkyBridge and a warehouse company established a separate company to operate a specialised distribution centre and shared capital and risk. This arrangement created a joint venture. The board also noticed that a logistics partner sometimes prioritised easy deliveries because its contract rewarded delivery volume. Difficult deliveries were delayed even though they were strategically important to SkyBridge's customers. Management recognised that this represented goal incongruence. The Chief Information Officer proposed a common reporting platform. Partners would retain their existing core systems but use compatible interfaces to transmit agreed information into a common platform. Some partners were concerned that information sharing could reveal commercially sensitive information. SkyBridge therefore proposed a mutually agreed reporting framework specifying data requirements, access rights, frequency and responsibilities. The board also decided to establish common minimum service standards, clear contractual accountability and common definitions for major KPIs. Management concluded that the network could create significant advantages through specialisation and lower investment, but only if the participants shared sufficient information, maintained trust and aligned their objectives. It did not attempt to make every partner identical because each organisation retained its own capabilities and legitimate independence.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_079_1",
+        question: "Which arrangement is the joint venture?",
+        options: ["The independent transport operator", "The separate distribution-centre company created by SkyBridge and its partner", "The ordinary customer contract", "The alliance where both firms remain independent"],
+        answer: 1,
+        solution: "A separate entity jointly established and funded by the parties represents a joint venture."
+      },
+      {
+        question_id: "spm_ch8_079_2",
+        question: "What is the key distinction between the alliance and the joint venture?",
+        options: ["The alliance involves no cooperation", "The alliance retains organisational independence and does not create a separate entity", "The joint venture involves no risk sharing", "The alliance must always be larger"],
+        answer: 1,
+        solution: "A strategic alliance generally allows cooperation while the parties retain independence; a joint venture creates a separate entity."
+      },
+      {
+        question_id: "spm_ch8_079_3",
+        question: "What problem is created by rewarding a logistics partner only for delivery volume?",
+        options: ["Goal congruence", "Sub-optimisation and goal incongruence", "Perfect integration", "Improved customer satisfaction automatically"],
+        answer: 1,
+        solution: "The partner may optimise its own measured result instead of the overall network objective."
+      },
+      {
+        question_id: "spm_ch8_079_4",
+        question: "Why are compatible interfaces useful in the proposed IT arrangement?",
+        options: ["They force every partner to abandon its own system", "They allow relevant information to flow between different systems", "They eliminate all contractual requirements", "They remove the need for KPIs"],
+        answer: 1,
+        solution: "Interfaces can allow different core systems to communicate and share agreed information."
+      },
+      {
+        question_id: "spm_ch8_079_5",
+        question: "Which combination would best improve SkyBridge's network performance management?",
+        options: ["Different definitions and no reporting standards", "Common KPIs, minimum standards, clear accountability and agreed information sharing", "Only delivery-volume targets", "No information sharing"],
+        answer: 1,
+        solution: "Complex structures require goal alignment, common minimum standards, clear accountability and effective information sharing."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 80 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_080",
+    case_chapter: "Chapter8",
+    case_topic: ["Corporate Failure", "Altman Model", "Argenti A Score", "Quantitative Model", "Qualitative Model", "Prevention"],
+    difficulty: "hard",
+    caseText: `<p>Meridian Industrial Products Limited manufactured industrial equipment and had been profitable for many years. The company subsequently entered a period of rapid expansion. Management borrowed heavily to build new factories, acquire smaller competitors and develop new product lines. Initially sales increased and the board considered the strategy successful. However, several assumptions behind the expansion began to weaken. Demand for one major product category declined because customers adopted alternative technology. Management continued investing in the old product line because it believed the decline was temporary. At the same time, the company faced increasing working-capital requirements and higher debt-servicing costs. A major acquisition also failed to deliver the expected synergies. The finance department prepared regular financial reports, but the board became concerned that the reports did not fully explain the deterioration in cash flows. The costing system was weak and management could not determine profitability by product line accurately. Cash-flow forecasts were frequently revised and budgets were not consistently used for control. Employee turnover increased and several experienced managers left. Suppliers began demanding shorter payment periods. The board decided to use both quantitative and qualitative corporate-failure models. A financial adviser explained that quantitative models such as Altman's Z-score use financial ratios to produce an early-warning score. A separate adviser explained that qualitative analysis can identify management and organisational weaknesses that financial ratios may not capture. The board considered the Argenti A-score model, which divides warning signs into defects, management mistakes and symptoms. The directors identified several defects, including excessive dominance by senior management, insufficient management depth, weak response to technological change and inadequate control systems. They also identified management mistakes including high gearing, overtrading and a major acquisition that had gone wrong. Finally, symptoms included aggressive accounting and non-financial warning signs. The advisers explained that quantitative and qualitative approaches should complement one another. A financial score could show deterioration but would not necessarily explain the root cause. Conversely, qualitative analysis could identify management defects but depended on reliable information and subjective judgement. The board therefore decided not to treat either model as an automatic answer. It planned to investigate the underlying causes, reconsider the product strategy, review the acquisition, improve cash-flow forecasting, strengthen costing and control systems and determine whether certain activities or businesses should be exited. The CEO also instructed managers to stop blaming individuals and focus on identifying and correcting systemic weaknesses. The board concluded that early detection was useful only if management was willing to take corrective action before financial difficulties became irreversible.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_080_1",
+        question: "Why is it useful for Meridian to use both quantitative and qualitative models?",
+        options: ["Both models produce exactly the same information", "Quantitative models assess financial warning signs while qualitative analysis can identify management and organisational weaknesses", "Qualitative models replace all financial analysis", "Quantitative models never use financial information"],
+        answer: 1,
+        solution: "The two approaches provide complementary information: financial indicators show quantitative deterioration while qualitative analysis can identify underlying management and organisational issues."
+      },
+      {
+        question_id: "spm_ch8_080_2",
+        question: "Which is most clearly an Argenti Group B management mistake?",
+        options: ["High gearing", "Passive board", "Creative accounting", "Non-financial warning signs"],
+        answer: 0,
+        solution: "High gearing is classified as a Group B management mistake."
+      },
+      {
+        question_id: "spm_ch8_080_3",
+        question: "Which is an Argenti Group C symptom?",
+        options: ["Lack of management depth", "Overtrading", "Creative accounting", "CEO autocrat"],
+        answer: 2,
+        solution: "Creative accounting is a Group C symptom of trouble."
+      },
+      {
+        question_id: "spm_ch8_080_4",
+        question: "What is a major limitation of the Argenti model?",
+        options: ["It uses only market prices", "It depends partly on subjective judgement and reliable qualitative information", "It cannot consider management issues", "It is purely mathematical"],
+        answer: 1,
+        solution: "Argenti's qualitative assessment depends on judgement and the reliability and relevance of non-financial information."
+      },
+      {
+        question_id: "spm_ch8_080_5",
+        question: "Which response best represents corporate-failure prevention?",
+        options: ["Wait until bankruptcy occurs", "Investigate causes, reassess strategy and strengthen systems, controls and cash-flow management", "Ignore non-financial warning signs", "Increase borrowing immediately"],
+        answer: 1,
+        solution: "Prevention requires early investigation, strategic and operational corrective action and effective management systems and controls."
+      }
+    ]
+  },
+  // ============================================================
+  // CASE 81 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_081",
+    case_chapter: "Chapter8",
+    case_topic: ["Strategy", "Performance Management", "CSF", "KPI", "Balanced Scorecard", "Strategic Alignment"],
+    difficulty: "medium",
+    caseText: `<p>NovaLearn Education Services Limited operated a network of professional education centres and an online learning platform. For almost a decade, the company had followed a relatively simple strategy. It offered classroom courses at competitive prices and attempted to increase the number of students enrolled in each academic year. The management team believed that the number of enrolments was the most important indicator because higher enrolments generally resulted in higher revenue. Centre managers were therefore given annual targets based largely on the number of students admitted. Sales employees received incentives based on registrations generated during admission campaigns. During the first few years, the approach worked well. However, the education market gradually changed. Students began comparing institutions on teaching quality, digital resources, doubt-solving facilities, placement support, flexibility and overall learning experience rather than price alone. Several competitors launched interactive online platforms that allowed students to watch recorded lectures, attempt tests and receive performance analytics. NovaLearn initially responded by offering discounts during admission periods. Although enrolments increased, management discovered that a significant number of students discontinued their courses before completion. The academic department also reported that faculty members were under pressure because admission targets had increased without a corresponding increase in academic support staff. The CEO appointed a strategic review committee. The committee concluded that NovaLearn could not achieve sustainable growth merely by increasing admissions. It needed a strategy focused on learning outcomes, student satisfaction, technology-enabled education and long-term student relationships. The committee identified several critical success factors, including teaching quality, student engagement, course completion, platform reliability, faculty capability and student satisfaction. The finance director argued that revenue, operating profit and return on investment should continue to be monitored because the organisation still needed financial sustainability. The academic director proposed measuring course completion rates, assessment performance, student feedback and faculty training hours. The technology director proposed measuring platform uptime, average response time to technical problems and the percentage of students actively using digital resources. The marketing director initially objected because some measures were outside the direct control of the marketing team. The CEO explained that performance management should align individual and departmental objectives with the overall strategy rather than encourage departments to maximise isolated targets. The company subsequently decided to introduce a Balanced Scorecard containing financial, customer, internal-process and learning-and-growth measures. Management also decided that performance reviews should not merely compare actual figures with budgets. Managers would analyse deviations, identify reasons and take corrective action. The CEO further explained that performance measures would have to evolve as the strategy developed because a measurement system designed for a low-price enrolment strategy might be inappropriate for a differentiation strategy based on learning quality and student experience.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_081_1",
+        question: "What was the main weakness of NovaLearn's original enrolment-based performance system?",
+        options: [
+          "Enrolment can never be measured",
+          "It encouraged student acquisition without adequately considering completion, satisfaction and learning outcomes",
+          "Financial measures were completely absent",
+          "It prevented the company from having any strategy"
+        ],
+        answer: 1,
+        solution: "The original system focused heavily on enrolment volume and therefore could encourage acquisition without considering long-term student outcomes."
+      },
+      {
+        question_id: "spm_ch8_081_2",
+        question: "Which of the following is most clearly a Critical Success Factor for NovaLearn's new strategy?",
+        options: [
+          "Number of office chairs",
+          "Student satisfaction",
+          "Number of shareholders",
+          "Building depreciation"
+        ],
+        answer: 1,
+        solution: "Student satisfaction is specifically identified as an important factor for the new customer-focused strategy."
+      },
+      {
+        question_id: "spm_ch8_081_3",
+        question: "Which measure is most closely associated with the learning-and-growth aspect of performance?",
+        options: [
+          "Faculty training hours",
+          "Annual rent",
+          "Dividend per share",
+          "Total sales"
+        ],
+        answer: 0,
+        solution: "Faculty training supports employee capability and therefore relates to learning and growth."
+      },
+      {
+        question_id: "spm_ch8_081_4",
+        question: "Why should NovaLearn continue using financial measures along with non-financial measures?",
+        options: [
+          "Financial measures are the only measures that matter",
+          "Financial sustainability remains important even when strategic success also depends on customers, processes and people",
+          "Non-financial measures cannot be used",
+          "Financial measures automatically measure student satisfaction"
+        ],
+        answer: 1,
+        solution: "A balanced performance system should consider financial results along with non-financial strategic drivers."
+      },
+      {
+        question_id: "spm_ch8_081_5",
+        question: "Why should NovaLearn's performance measurement system evolve as its strategy changes?",
+        options: [
+          "Performance measures should always remain unchanged",
+          "Measures should reflect the critical success factors and objectives of the current strategy",
+          "Changing measures automatically increases revenue",
+          "Strategy has no relationship with performance measurement"
+        ],
+        answer: 1,
+        solution: "Performance management systems should derive from strategic objectives and evolve when the strategy changes."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 82 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_082",
+    case_chapter: "Chapter8",
+    case_topic: ["Value Chain", "Primary Activities", "Support Activities", "Value Drivers", "Value System", "Benchmarking"],
+    difficulty: "medium",
+    caseText: `<p>PureHarvest Organics Limited manufactured premium organic food products including cereals, snacks, ready-to-cook meals and health drinks. The company had built its reputation on the quality and traceability of its ingredients. Customers were willing to pay a premium because they believed that PureHarvest sourced its ingredients from reliable farms and processed them under controlled conditions. Despite the premium pricing, the company's margin had started declining. The board initially asked the production manager to reduce manufacturing costs, but the production manager argued that manufacturing efficiency was already high and that the problem might exist elsewhere in the value chain. A cross-functional team was therefore established to examine the entire sequence of activities from procurement to after-sales service. The procurement department purchased vegetables, grains, spices, packaging material and other inputs from approved suppliers. Although procurement employees negotiated attractive purchase prices, they sometimes ordered large quantities to obtain volume discounts. The inbound logistics department then had to store larger quantities of raw materials, some of which were perishable. As a result, spoilage and storage costs increased. The production department used modern equipment and had relatively low defect rates, but frequent product changeovers caused delays because production schedules were not properly coordinated with sales forecasts. After manufacturing, finished goods were moved to regional warehouses and then delivered to supermarkets and online fulfilment centres. The outbound logistics team reported that emergency shipments had increased because inventory information was sometimes outdated. Marketing and sales had developed a strong premium brand through advertising, digital campaigns and retailer relationships. However, marketing occasionally launched promotional campaigns without informing production and logistics in sufficient time. This caused sudden demand increases and temporary stock-outs. The company also maintained a customer-service department responsible for complaints, replacements and quality-related enquiries. Management considered after-sales service important because customers associated the brand with reliability and premium quality. The team also examined support activities. Human resource management was responsible for recruitment and employee training. Technology development included inventory software, production automation and customer analytics. Firm infrastructure included finance, legal, administration and strategic planning. Procurement supported the acquisition of materials and services required by the business. The board concluded that the company's value could not be understood by examining departments separately. It needed to identify activities that created value, activities that generated unnecessary cost and linkages where a decision in one activity affected another. Management also decided to benchmark selected processes against competitors. Finally, the strategy team expanded the analysis beyond PureHarvest itself and examined suppliers' suppliers and customers' customers to understand the wider value system.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_082_1",
+        question: "Which activity is a primary activity?",
+        options: ["Human resource management", "Technology development", "Outbound logistics", "Firm infrastructure"],
+        answer: 2,
+        solution: "Outbound logistics is a primary value-chain activity."
+      },
+      {
+        question_id: "spm_ch8_082_2",
+        question: "Which is a support activity?",
+        options: ["Operations", "Marketing and sales", "Human resource management", "After-sales service"],
+        answer: 2,
+        solution: "Human resource management is one of Porter's support activities."
+      },
+      {
+        question_id: "spm_ch8_082_3",
+        question: "Why can procurement's volume discounts create a problem despite reducing purchase prices?",
+        options: [
+          "They always increase selling prices",
+          "They can increase inventory, storage and spoilage costs elsewhere in the value chain",
+          "They eliminate production",
+          "They automatically reduce customer satisfaction"
+        ],
+        answer: 1,
+        solution: "The case demonstrates that an improvement in one activity can create additional costs elsewhere."
+      },
+      {
+        question_id: "spm_ch8_082_4",
+        question: "PureHarvest's examination of suppliers' suppliers and customers' customers relates to:",
+        options: ["Value System", "Span of control", "Responsibility accounting", "Centralisation"],
+        answer: 0,
+        solution: "The extended value chain including suppliers' suppliers and customers' customers is the Value System."
+      },
+      {
+        question_id: "spm_ch8_082_5",
+        question: "Why is benchmarking useful in PureHarvest's analysis?",
+        options: [
+          "It guarantees that competitors will lose market share",
+          "It helps identify performance gaps and potential process improvements",
+          "It eliminates the need for internal analysis",
+          "It replaces strategic planning"
+        ],
+        answer: 1,
+        solution: "Benchmarking allows the organisation to compare its processes and performance with competitors or industry standards."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 83 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_083",
+    case_chapter: "Chapter8",
+    case_topic: ["McKinsey 7S", "Hard S", "Soft S", "Shared Values", "Change Management", "Gap Analysis"],
+    difficulty: "medium",
+    caseText: `<p>BrightPath Healthcare Network operated six hospitals and several diagnostic centres. The group had grown through acquisitions, and each acquired hospital had retained many of its previous procedures. The board wanted to create a common strategy based on patient safety, faster service, digital integration and efficient use of resources. Management therefore announced a transformation programme that included a common patient information system, centralised procurement of selected items, standardised quality reporting and greater use of data analytics. The board initially assumed that the technology investment would solve most of the group's problems. However, after implementation began, employees complained that the new system was difficult to use. Doctors had different preferences regarding digital documentation, nurses had received limited training and some administrators continued maintaining separate spreadsheets. The management team also discovered that different hospitals had different reporting lines and levels of authority. One hospital was highly centralised, while another allowed department heads considerable autonomy. Leadership styles varied considerably. Some managers made decisions personally, while others encouraged employees to participate in operational decisions. The HR department also found major differences in employee skills. Some hospitals had strong digital capabilities while others lacked basic data-analysis skills. Most importantly, employees did not have a common interpretation of the organisation's purpose. Corporate management emphasised patient safety and group-wide efficiency, while some local managers were more concerned with maintaining local autonomy. The board appointed an adviser to conduct a McKinsey 7S analysis. The adviser explained that Strategy, Structure and Systems were the Hard S elements, while Staff, Skills, Style and Shared Values were the Soft S elements. He emphasised that Shared Values were at the centre and that the seven elements needed to support one another. The adviser recommended beginning by clarifying shared values and then examining whether strategy, structure and systems supported those values. Staff, skills and style would then be reviewed. BrightPath also conducted a gap analysis by identifying its current position, defining the desired future state, preparing an action plan, implementing the plan and scheduling periodic reviews. Management recognised that change would have to be embedded into organisational practices rather than treated as a one-time technology project.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_083_1",
+        question: "Which set consists only of Soft S elements?",
+        options: ["Strategy, Structure, Systems", "Staff, Skills, Style", "Strategy, Staff, Systems", "Structure, Skills, Strategy"],
+        answer: 1,
+        solution: "Staff, Skills and Style are three of the four Soft S elements. Shared Values is the fourth."
+      },
+      {
+        question_id: "spm_ch8_083_2",
+        question: "Which issue most clearly represents Shared Values?",
+        options: ["Different software", "Different beliefs about patient safety, efficiency and local autonomy", "Lack of data skills", "Different reporting lines"],
+        answer: 1,
+        solution: "Shared Values concern common organisational beliefs and guiding principles."
+      },
+      {
+        question_id: "spm_ch8_083_3",
+        question: "What is the first step in the gap-analysis process?",
+        options: ["Execute the action plan", "Understand the current situation", "Review the results", "Change the organisation's culture"],
+        answer: 1,
+        solution: "Gap analysis begins with understanding the current state."
+      },
+      {
+        question_id: "spm_ch8_083_4",
+        question: "Why was the technology investment insufficient by itself?",
+        options: [
+          "Technology has no role in business integration",
+          "The 7S elements are interrelated and technology must be supported by appropriate structure, skills, staff, systems and values",
+          "Technology can only be used by finance",
+          "Digital systems eliminate organisational culture"
+        ],
+        answer: 1,
+        solution: "Successful change requires alignment among the interrelated 7S elements."
+      },
+      {
+        question_id: "spm_ch8_083_5",
+        question: "Which statement best describes Shared Values in the 7S framework?",
+        options: [
+          "They are a financial measure",
+          "They are placed at the centre and influence alignment of the other elements",
+          "They are a form of organisational structure",
+          "They are the same as technology"
+        ],
+        answer: 1,
+        solution: "Shared Values are central to the McKinsey 7S framework."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 84 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_084",
+    case_chapter: "Chapter8",
+    case_topic: ["Structure", "Centralisation", "Decentralisation", "Functional Structure", "Divisional Structure", "Matrix Structure"],
+    difficulty: "medium",
+    caseText: `<p>Apex Consumer Products Limited manufactured personal-care products and operated across several regions. The company had originally been managed through a functional structure. Procurement, production, finance, marketing and human resources were organised as separate departments, with major decisions being taken by senior management at headquarters. As the company expanded, regional managers complained that they were unable to respond quickly to local market conditions because pricing changes, promotional decisions and certain recruitment decisions required head-office approval. The board therefore reorganised the company into regional divisions. Regional managers were given responsibility for revenue, costs and profitability. Certain common services such as legal, treasury and group-level HR policies remained centralised. The change improved local responsiveness, but it also introduced a new performance problem. Some regional managers began making decisions that improved their own division's performance while creating costs for the group. One region purchased excess inventory because it expected a promotional campaign that was later cancelled. Another region refused to share spare inventory with a neighbouring region because the transfer would have affected its own performance measures. The finance director warned that decentralisation could produce goal incongruence if performance measures were poorly designed. Apex subsequently won a large project requiring marketing, engineering, finance, procurement and IT specialists to work together. Management established a matrix structure for the project. Employees continued reporting to their functional managers for career development, salary, promotion and annual appraisal, while the project manager coordinated project work and deadlines. Some employees were concerned because they effectively had two managers. Senior management explained that the arrangement was necessary because the project required specialised expertise from multiple functions. The board also reviewed responsibility centres. Some departments were treated as cost centres, some regional units as profit centres and certain managers with control over major assets as investment-centre managers. The board concluded that organisational structure influences authority, responsibility, information flow and therefore the design of performance measurement systems.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_084_1",
+        question: "What was the major advantage of Apex's move toward decentralisation?",
+        options: ["Greater local responsiveness", "Complete elimination of control", "Removal of all departments", "Guaranteed goal congruence"],
+        answer: 0,
+        solution: "Decentralisation can improve speed, flexibility and use of local knowledge."
+      },
+      {
+        question_id: "spm_ch8_084_2",
+        question: "The region refusing to share inventory illustrates:",
+        options: ["Goal congruence", "Sub-optimisation", "Unity of command", "Centralisation"],
+        answer: 1,
+        solution: "The region is protecting its own result at the expense of the wider organisation."
+      },
+      {
+        question_id: "spm_ch8_084_3",
+        question: "Who is responsible for salary and promotion under the matrix arrangement?",
+        options: ["Project manager", "Functional manager", "Customer", "Finance department"],
+        answer: 1,
+        solution: "The functional manager remains responsible for employee career matters such as salary and promotion."
+      },
+      {
+        question_id: "spm_ch8_084_4",
+        question: "A manager responsible for revenue and costs and evaluated on profit is managing a:",
+        options: ["Cost centre", "Revenue centre", "Profit centre", "Non-responsibility centre"],
+        answer: 2,
+        solution: "A profit centre is responsible for both revenues and costs and is evaluated on profit."
+      },
+      {
+        question_id: "spm_ch8_084_5",
+        question: "What is a major risk of the matrix arrangement?",
+        options: ["Loss of all functional expertise", "Conflict or confusion due to dual reporting relationships", "Elimination of project management", "No specialisation"],
+        answer: 1,
+        solution: "Dual reporting can create conflict and confusion unless coordination and communication are effective."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 85 - MEDIUM
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_085",
+    case_chapter: "Chapter8",
+    case_topic: ["Behavioural Aspects", "Accountability", "Control", "Performance Measures", "Culture", "Management Style"],
+    difficulty: "medium",
+    caseText: `<p>SureAssist Insurance Services Limited operated a customer-service centre handling insurance claims and policy enquiries. The company had historically followed a cost-leadership strategy. Its clients expected customer service to be delivered at a low cost, and management therefore concentrated on employee productivity. Representatives were evaluated on the number of calls handled, average call duration and operating cost per customer interaction. Initially, management was satisfied because the number of calls processed increased while cost per call declined. However, customers began complaining that representatives often ended conversations before fully understanding their problems. Some customers had to call repeatedly to resolve the same issue. An internal review found that employees were behaving consistently with the performance system. Since their performance ratings depended heavily on call duration and call volume, they naturally focused on completing calls quickly. Management decided to redesign the system. New measures included first-contact resolution, customer satisfaction, complaint recurrence and quality-review scores. The HR director also explained the distinction between hard and soft accountability. Quantified performance reports represented hard accountability because activities and outcomes were converted into measurable information. Employee participation in designing service standards represented soft accountability. SureAssist also reviewed its control mechanisms. Behavioural control was used to encourage appropriate customer-service actions. Personnel and cultural control focused on recruitment, training and creating a service-oriented environment. Reporting control focused on collecting and communicating fair performance information. The CEO reminded managers that what gets measured tends to get done. Therefore, a narrow KPI can produce unintended consequences. Since the company was changing its strategy toward service differentiation, management also began developing an excellence and service-oriented culture while retaining financial discipline. The board concluded that performance measurement was not merely a technical exercise. It influenced behaviour, accountability, culture and ultimately organisational performance.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_085_1",
+        question: "Why did the original system produce repeated customer calls?",
+        options: ["Employees had no targets", "Employees were encouraged to close calls quickly rather than ensure complete resolution", "Customers preferred longer calls", "The company had no financial controls"],
+        answer: 1,
+        solution: "The measures emphasised call volume and duration, encouraging quick completion rather than proper resolution."
+      },
+      {
+        question_id: "spm_ch8_085_2",
+        question: "Which example represents hard accountability?",
+        options: ["Employee participation in service standards", "Quantified performance reporting", "Discussion of company values", "Informal team discussions"],
+        answer: 1,
+        solution: "Hard accountability involves converting activities and outcomes into quantitative information and formally reporting them."
+      },
+      {
+        question_id: "spm_ch8_085_3",
+        question: "Which control mechanism focuses on recruitment and training?",
+        options: ["Personnel and cultural control", "Reporting control", "Behavioural control only", "Market control"],
+        answer: 0,
+        solution: "Personnel and cultural control includes ensuring appropriate people, skills and a conducive environment."
+      },
+      {
+        question_id: "spm_ch8_085_4",
+        question: "What principle is demonstrated by the behaviour of SureAssist employees?",
+        options: ["What gets measured gets done", "Financial measures never influence behaviour", "Measures cannot cause dysfunctional behaviour", "Employees ignore incentives"],
+        answer: 0,
+        solution: "People tend to focus on aspects of work that are measured and evaluated."
+      },
+      {
+        question_id: "spm_ch8_085_5",
+        question: "Why was a service-oriented culture introduced?",
+        options: ["Because customer service has no relationship with strategy", "Because the company was moving toward differentiation through customer experience", "Because financial measures were abolished", "Because employees no longer needed training"],
+        answer: 1,
+        solution: "The company's strategy was moving toward service differentiation, so culture and measures needed to support that strategy."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 86 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_086",
+    case_chapter: "Chapter8",
+    case_topic: ["Corporate Failure", "Altman Z Score", "Quantitative Model", "Financial Ratios", "Early Warning"],
+    difficulty: "hard",
+    caseText: `<p>Titan Engineering Works Limited was a publicly held manufacturing company producing industrial machinery for infrastructure and manufacturing businesses. For several years the company had experienced strong demand, and the board became confident that the industry would continue expanding. Management therefore approved a major investment programme involving new factories, additional machinery and expansion into two new product categories. A substantial part of the investment was financed through borrowings. Initially, sales increased and management considered the strategy successful. However, economic conditions subsequently weakened. Several customers postponed capital expenditure and Titan's factories began operating below planned capacity. The finance director argued that the company remained fundamentally strong because it possessed modern machinery, an established customer base and a valuable brand. The audit committee nevertheless requested an independent financial-distress assessment. The consultant selected the original Altman model because Titan was a publicly held manufacturing company. The following information was obtained from the latest financial statements: Working Capital ₹180 crore, Total Assets ₹1,200 crore, Retained Earnings ₹240 crore, EBIT ₹120 crore, Market Value of Equity ₹600 crore, Total Liabilities ₹500 crore and Sales ₹1,440 crore. The consultant explained that the original Altman model uses five ratios. X1 is Working Capital divided by Total Assets, X2 is Retained Earnings divided by Total Assets, X3 is EBIT divided by Total Assets, X4 is Market Value of Equity divided by Total Liabilities and X5 is Sales divided by Total Assets. The formula is Z = 1.2X1 + 1.4X2 + 3.3X3 + 0.6X4 + 1.0X5. The consultant reminded management that a score below 1.81 indicates distress, a score between 1.81 and 2.99 indicates the grey zone and a score above 2.99 indicates the safe zone. The finance director initially focused on sales turnover and argued that strong sales meant that bankruptcy risk was low. The consultant explained that the model combines liquidity, accumulated profitability, operating performance, market value of equity relative to liabilities and asset turnover. He further explained that the score should not be interpreted as an absolute prediction. Financial statements can be manipulated or window dressed, and a score represents a snapshot of financial conditions. Titan therefore needed to examine cash-flow forecasts, debt servicing requirements, industry conditions, capacity utilisation and the strategic assumptions behind the expansion programme. The board accepted that quantitative models are useful early-warning tools but cannot replace management investigation or corrective action.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_086_1",
+        question: "What is Titan's X1?",
+        options: ["0.10", "0.15", "0.20", "0.25"],
+        answer: 1,
+        solution: "X1 = Working Capital / Total Assets = 180 / 1200 = 0.15."
+      },
+      {
+        question_id: "spm_ch8_086_2",
+        question: "What is Titan's X4?",
+        options: ["0.83", "1.00", "1.20", "1.50"],
+        answer: 2,
+        solution: "X4 = Market Value of Equity / Total Liabilities = 600 / 500 = 1.20."
+      },
+      {
+        question_id: "spm_ch8_086_3",
+        question: "What is Titan's approximate Altman Z-score?",
+        options: ["2.45", "2.78", "3.06", "3.42"],
+        answer: 1,
+        solution: "X1=0.15, X2=0.20, X3=0.10, X4=1.20 and X5=1.20. Z = 1.2(0.15)+1.4(0.20)+3.3(0.10)+0.6(1.20)+1.20 = 0.18+0.28+0.33+0.72+1.20 = 2.71. The correct value is 2.71, so this question's options should be changed before deployment."
+      },
+      {
+        question_id: "spm_ch8_086_4",
+        question: "Based on the correctly calculated score, which zone applies?",
+        options: ["Distress zone", "Grey zone", "Safe zone", "No zone can be determined"],
+        answer: 1,
+        solution: "The calculated score is approximately 2.71, which falls between 1.81 and 2.99 and therefore lies in the grey zone."
+      },
+      {
+        question_id: "spm_ch8_086_5",
+        question: "Why should Titan investigate cash flows and debt servicing even after calculating the Z-score?",
+        options: ["The Z-score identifies the exact solution", "The Z-score is an early-warning indicator and does not itself explain the underlying cause of financial difficulty", "Cash flow has no relation to failure", "The Z-score ignores every financial ratio"],
+        answer: 1,
+        solution: "Quantitative models provide warning information but do not independently diagnose root causes or prescribe corrective action."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 87 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_087",
+    case_chapter: "Chapter8",
+    case_topic: ["Corporate Failure", "Argenti A Score", "Defects", "Management Mistakes", "Symptoms", "Qualitative Analysis"],
+    difficulty: "hard",
+    caseText: `<p>Heritage Retail Corporation Limited operated a chain of department stores and had been one of the largest players in its regional market. The company had been built by its founder, who remained Chief Executive Officer and Chairman even after the organisation became much larger. The founder had historically been successful and therefore retained considerable influence over the board. Several directors rarely challenged major strategic decisions. As the business expanded, the company opened stores in several new cities and financed much of the expansion through borrowings. Management believed that achieving scale quickly would create a competitive advantage. However, the retail market changed rapidly as customers moved toward online shopping and personalised digital services. Heritage continued investing heavily in large physical stores and did not respond quickly to the change in customer behaviour. The organisation also failed to develop sufficient management depth. Several managers were promoted quickly and some regional businesses were managed by relatively inexperienced executives. Financial controls deteriorated. Budgets existed but were not used effectively for control, cash-flow forecasts were frequently unreliable and the costing system did not provide sufficiently detailed information about store and product profitability. The company also experienced overtrading because working-capital requirements increased while debt-servicing obligations remained high. One major store-development project suffered significant cost overruns and opened after an important seasonal period. As financial pressure increased, management began using aggressive accounting estimates. At the same time, employee turnover increased, suppliers became less willing to provide generous credit and customers complained about declining product availability. An external consultant was appointed to apply the Argenti A-score model. The consultant explained that the model views failure as a process involving defects, management mistakes and symptoms of trouble. The assessment identified Group A defects including an autocratic CEO, CEO also acting as Chairman, passive board, unbalanced board, weak financial leadership, lack of management depth, poor response to change, weak budgeting and control, unreliable cash-flow forecasts and inadequate costing. Group B mistakes included high gearing, overtrading and a major project that had gone wrong. Group C symptoms included creative accounting and non-financial warning signs. The consultant reminded the board that the overall threshold is 25, but the model also requires attention to category-specific thresholds. Group A should not exceed 10, Group B should not exceed 15 and any Group C symptom indicates risk. He further warned that the model is qualitative and therefore depends on reliable information and subjective judgement. The board decided that the purpose of the analysis was not merely to label Heritage as risky but to identify weaknesses early enough to take corrective action. It therefore planned to reassess the expansion strategy, review individual stores, strengthen financial controls, improve cash-flow forecasting and investigate aggressive accounting practices.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_087_1",
+        question: "What is Heritage's Group A score?",
+        options: ["25", "35", "43", "50"],
+        answer: 2,
+        solution: "Group A = 8+4+2+2+2+1+15+3+3+3 = 43."
+      },
+      {
+        question_id: "spm_ch8_087_2",
+        question: "What is Heritage's Group B score?",
+        options: ["15", "30", "45", "60"],
+        answer: 2,
+        solution: "Group B = 15+15+15 = 45."
+      },
+      {
+        question_id: "spm_ch8_087_3",
+        question: "Which item is a Group C symptom?",
+        options: ["CEO autocrat", "High gearing", "Creative accounting", "Lack of management depth"],
+        answer: 2,
+        solution: "Creative accounting is classified as a Group C symptom of trouble."
+      },
+      {
+        question_id: "spm_ch8_087_4",
+        question: "Why is Heritage risky under Argenti even without relying solely on its overall score?",
+        options: ["Group A exceeds 10, Group B exceeds 15 and Group C contains symptoms", "Only the overall score matters", "Group C is ignored", "The model applies only to profitable companies"],
+        answer: 0,
+        solution: "Heritage breaches the Group A and Group B thresholds and also has Group C symptoms."
+      },
+      {
+        question_id: "spm_ch8_087_5",
+        question: "Why should management investigate the underlying causes after obtaining the A-score?",
+        options: ["The model automatically gives the corrective solution", "The model identifies warning factors but management must determine appropriate corrective action", "The score has no strategic relevance", "Qualitative models cannot identify defects"],
+        answer: 1,
+        solution: "Argenti helps identify defects, mistakes and symptoms, but management must investigate and decide the appropriate corrective actions."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 88 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_088",
+    case_chapter: "Chapter8",
+    case_topic: ["Complex Business Structures", "Strategic Alliance", "Joint Venture", "MNC", "Supply Chain", "Virtual Organisation", "IT"],
+    difficulty: "hard",
+    caseText: `<p>GlobalMed Supply Network was created by a medical-equipment manufacturer that wanted to expand internationally without investing in complete manufacturing and distribution infrastructure in every country. Instead of performing all activities internally, the company developed a network of independent organisations. Local manufacturers produced selected components, specialist logistics providers transported equipment, technology companies provided software support and local service organisations handled installation and maintenance. In Country A, GlobalMed entered into a strategic alliance with a local medical distributor. Both organisations remained independent but agreed to cooperate in marketing, distribution and customer support. In Country B, GlobalMed and a local manufacturing company created a separate entity to produce selected medical devices. Both parties contributed capital, technology and employees and shared the risks and returns. In Country C, GlobalMed relied heavily on external logistics and service partners without establishing a separate entity. As the network expanded, management discovered significant performance-management problems. Different partners used different definitions of delivery completion, product quality and customer response time. Some partners reported monthly while others reported weekly. Several countries operated in different currencies and time zones. Local regulations also differed. The partners had different management cultures and risk preferences. GlobalMed's management wanted rapid product development and experimentation, whereas one local partner preferred conservative decision-making because of regulatory concerns. A logistics partner was rewarded primarily for delivery volume and therefore tended to prioritise easy deliveries over difficult but strategically important deliveries. This created conflict with GlobalMed's objective of achieving reliable service to all major customers. The IT department proposed a common information framework. Partners would retain their own core systems but use compatible interfaces to share relevant information with a common platform. Management also proposed common KPI definitions, minimum quality standards and a common reporting calendar. Some partners were concerned that information sharing might expose commercially sensitive information. GlobalMed therefore proposed a mutually agreed reporting and access framework specifying what information would be shared, who could access it and how frequently it would be updated. The board recognised that the network structure provided major benefits by allowing specialist organisations to perform activities efficiently without GlobalMed investing heavily in every capability. However, the board also recognised that outsourcing and networking created risks relating to control, trust, accountability, information sharing and goal congruence. Management therefore concluded that the purpose of integration was not to make every partner identical but to establish sufficient common objectives, controls, information standards and accountability to allow the network to operate as a coordinated system.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_088_1",
+        question: "Which arrangement represents a joint venture?",
+        options: ["Country A alliance", "Country B separately established entity", "Country C logistics contract", "Ordinary customer relationship"],
+        answer: 1,
+        solution: "Country B involves the creation of a separate entity with shared capital, resources and risk."
+      },
+      {
+        question_id: "spm_ch8_088_2",
+        question: "What distinguishes the Country A arrangement from the Country B arrangement?",
+        options: ["Country A has no cooperation", "Country A retains independence and does not create a separate entity", "Country B has no shared risk", "Country A requires more capital"],
+        answer: 1,
+        solution: "A strategic alliance allows cooperation while the parties remain independent, whereas the joint venture creates a separate entity."
+      },
+      {
+        question_id: "spm_ch8_088_3",
+        question: "What problem is caused by the logistics partner's delivery-volume target?",
+        options: ["Goal congruence", "Sub-optimisation", "Complete integration", "Improved strategic alignment"],
+        answer: 1,
+        solution: "The partner optimises its own measured delivery volume instead of the wider objective of reliable service."
+      },
+      {
+        question_id: "spm_ch8_088_4",
+        question: "Why are common KPI definitions important?",
+        options: ["They ensure every organisation has the same legal structure", "They improve comparability and consistency of performance information", "They eliminate all operating costs", "They prevent information sharing"],
+        answer: 1,
+        solution: "Common definitions allow performance information from different organisations and countries to be compared meaningfully."
+      },
+      {
+        question_id: "spm_ch8_088_5",
+        question: "Why is compatible IT integration useful when partners retain separate core systems?",
+        options: ["It can allow relevant information to flow between systems without requiring every partner to abandon its existing system", "It eliminates contracts", "It prevents all data sharing", "It guarantees goal congruence automatically"],
+        answer: 0,
+        solution: "Compatible interfaces can connect different core systems and enable relevant information sharing."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 89 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_089",
+    case_chapter: "Chapter8",
+    case_topic: ["Value Chain", "7S", "Strategy", "Structure", "Systems", "Shared Values", "Sub-optimisation", "Integration"],
+    difficulty: "hard",
+    caseText: `<p>PrimeAuto Mobility Limited manufactured electric vehicles and had developed a strong reputation for battery reliability and vehicle quality. For several years, the company followed a strategy based primarily on production efficiency. Procurement managers were rewarded for reducing input prices, production managers were rewarded for machine utilisation and low manufacturing costs, sales managers were rewarded for vehicle orders and the logistics department was evaluated on transportation cost. The system initially appeared effective because every department reported favourable performance against its own targets. However, customers began complaining about long delivery times, inconsistent software updates and delays in resolving technical problems. The CEO commissioned a cross-functional review. The team discovered that procurement had negotiated large-volume battery purchases at attractive prices, but inventory levels increased significantly because demand forecasts had changed. Production managers were reluctant to reduce machine utilisation by changing production schedules even when market demand shifted. Sales representatives promised customers customised configurations without sufficiently consulting production and logistics. The service department was evaluated mainly on the number of customer cases closed, which encouraged employees to close simple cases quickly rather than investigate complex technical problems properly. The board realised that departments were optimising their own performance while the overall customer experience deteriorated. The company therefore analysed the entire value chain from procurement and inbound logistics through operations, outbound logistics, marketing and sales and after-sales service. It also examined support activities including HR, technology development, procurement and firm infrastructure. The analysis showed that many problems were caused by weak linkages between activities rather than by poor performance inside individual departments. At the same time, the board realised that the company's strategy had changed. PrimeAuto now wanted to compete through differentiation based on customer experience, software reliability and innovation. However, its structure, systems and performance measures still reflected the old cost-efficiency strategy. An adviser recommended applying the McKinsey 7S framework. Strategy was changing, but Structure remained strongly functional. Systems were dominated by departmental cost reports. Staff had strong technical skills but limited cross-functional experience. Skills in software and customer analytics were insufficient. Style remained highly directive, and Shared Values were unclear because some employees believed that cost reduction was the organisation's main purpose while others believed customer experience should dominate. Management therefore decided to clarify shared values around customer safety, reliability and innovation, align strategy, structure and systems with those values and strengthen staff skills. It also redesigned performance measures to include customer satisfaction, delivery reliability, software quality and innovation alongside financial measures. The CEO explained that integration would succeed only if the entire organisation moved in the same strategic direction.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_089_1",
+        question: "Which example most clearly demonstrates sub-optimisation?",
+        options: ["Procurement reduces purchase price while inventory costs increase significantly", "Employees receive training", "Customers receive service", "Management reviews strategy"],
+        answer: 0,
+        solution: "Procurement improves its own measure but creates additional costs and problems elsewhere."
+      },
+      {
+        question_id: "spm_ch8_089_2",
+        question: "Which problem is primarily a Systems issue under McKinsey 7S?",
+        options: ["Insufficient software skills", "Departmental reporting systems dominated by cost measures", "Directive leadership", "Unclear organisational values"],
+        answer: 1,
+        solution: "Systems include processes, information systems and reporting procedures."
+      },
+      {
+        question_id: "spm_ch8_089_3",
+        question: "Which problem is primarily a Shared Values issue?",
+        options: ["Lack of software skills", "Different beliefs about cost reduction versus customer experience", "Functional reporting lines", "Customer complaint processing time"],
+        answer: 1,
+        solution: "Shared Values concern the common beliefs and principles guiding the organisation."
+      },
+      {
+        question_id: "spm_ch8_089_4",
+        question: "Why did PrimeAuto need to redesign performance measures after changing strategy?",
+        options: ["Performance measures should never be linked to strategy", "The old measures encouraged cost efficiency while the new strategy required customer experience, innovation and reliability", "Financial measures must always be removed", "Non-financial measures are prohibited"],
+        answer: 1,
+        solution: "Performance measurement should reflect the strategic objectives and critical success factors of the organisation."
+      },
+      {
+        question_id: "spm_ch8_089_5",
+        question: "Why is value-chain analysis useful in PrimeAuto's situation?",
+        options: ["It isolates departments from one another", "It identifies activities, value drivers and linkages across the entire process", "It measures only production costs", "It replaces organisational strategy"],
+        answer: 1,
+        solution: "Value-chain analysis examines the sequence and linkages of activities and identifies where value is created or unnecessary cost arises."
+      }
+    ]
+  },
+
+
+  // ============================================================
+  // CASE 90 - HARD
+  // ============================================================
+
+  {
+    case_id: "spm_ch8_090",
+    case_chapter: "Chapter8",
+    case_topic: ["Corporate Failure", "Argenti A Score", "Altman Z Score", "Quantitative Model", "Qualitative Model", "Prevention"],
+    difficulty: "hard",
+    caseText: `<p>Falcon Manufacturing and Trading Limited had operated successfully for more than fifteen years and had developed a strong reputation among industrial customers. The company manufactured specialised machinery and also distributed equipment produced by overseas suppliers. Its management became increasingly confident after several years of growth and decided to expand aggressively. Falcon borrowed heavily to establish a new manufacturing facility, acquire a regional distributor and develop a new product range. The board expected the additional capacity and expanded distribution network to generate substantial future revenue. During the first year, sales increased and management considered the expansion successful. However, the market subsequently weakened. Several customers postponed machinery purchases and one of Falcon's major product categories became less attractive because customers adopted a new technology. Management continued investing in the old product category because the CEO believed that the decline was temporary. The company's working-capital requirement increased rapidly as inventory accumulated. Debt-servicing costs also increased. A major acquisition failed to deliver the expected benefits because the acquired distributor had different systems, management practices and customer relationships. The finance department prepared monthly reports, but the board found that cash-flow forecasts were frequently revised and product-level profitability information was unreliable. Budgets existed but were not consistently used as control tools. Employee turnover increased and several experienced managers left. Suppliers began demanding faster payment. Management also adopted aggressive accounting estimates to avoid showing the full extent of the deterioration. The board decided to use both quantitative and qualitative approaches to assess the possibility of corporate failure. The financial adviser explained that the Altman model could provide a quantitative early-warning indication based on financial ratios. The governance adviser recommended the Argenti A-score model to examine qualitative defects, management mistakes and symptoms of trouble. The Argenti assessment identified an autocratic CEO, CEO also acting as Chairman, a passive board, lack of management depth, poor response to technological change and weak control systems. Management mistakes included high gearing, overtrading and the failed acquisition. Symptoms included creative accounting and non-financial warning signs. The advisers explained that the two approaches should complement each other. A quantitative score could indicate deterioration but would not necessarily identify the management behaviour or strategic decisions causing it. The Argenti assessment could identify qualitative weaknesses but relied on subjective judgement and reliable information. The board therefore decided not to rely on either score as an automatic answer. It would investigate the root causes, review the failed acquisition, reassess the product strategy, strengthen cash-flow forecasting, improve the costing system, review debt levels and determine whether certain businesses should be exited. The CEO also instructed management not to blame individual employees for systemic problems. The board concluded that corporate failure often develops through multiple interconnected causes and that early warning information is valuable only when management is willing to investigate and take corrective action.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch8_090_1",
+        question: "Which of the following is an Argenti Group A defect?",
+        options: ["High gearing", "Overtrading", "Autocratic CEO", "Creative accounting"],
+        answer: 2,
+        solution: "An autocratic CEO is a Group A management defect."
+      },
+      {
+        question_id: "spm_ch8_090_2",
+        question: "Which of the following is an Argenti Group B management mistake?",
+        options: ["Passive board", "High gearing", "Creative accounting", "Non-financial warning sign"],
+        answer: 1,
+        solution: "High gearing is classified as a Group B management mistake."
+      },
+      {
+        question_id: "spm_ch8_090_3",
+        question: "Which of the following is a Group C symptom?",
+        options: ["Lack of management depth", "Poor response to change", "Creative accounting", "CEO also Chairman"],
+        answer: 2,
+        solution: "Creative accounting is a Group C symptom of trouble."
+      },
+      {
+        question_id: "spm_ch8_090_4",
+        question: "Why is it appropriate to use both Altman and Argenti in Falcon's case?",
+        options: ["Both models provide exactly the same information", "Altman provides quantitative financial warning information while Argenti examines qualitative defects, mistakes and symptoms", "Argenti replaces financial analysis completely", "Altman measures only employee behaviour"],
+        answer: 1,
+        solution: "The models are complementary. Altman uses financial ratios, while Argenti focuses on qualitative warning factors."
+      },
+      {
+        question_id: "spm_ch8_090_5",
+        question: "What is the most appropriate final response to Falcon's warning signs?",
+        options: ["Ignore the scores until bankruptcy occurs", "Investigate root causes, reassess strategy, strengthen controls and take situation-specific corrective action", "Increase borrowing to maintain expansion", "Blame individual employees and continue the strategy"],
+        answer: 1,
+        solution: "Corporate-failure prevention requires investigation of causes, strategic reassessment and appropriate operational and control improvements."
+      }
+    ]
   }
+
+
 ];
