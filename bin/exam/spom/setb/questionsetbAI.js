@@ -39471,6 +39471,1016 @@ const AICaseStudies = [
       reason: "The board wants an integrated performance framework. Financial measures are retained, but they are balanced with customer, internal process, learning and growth, quality and TBL indicators to discourage short-termism and improve strategic alignment."
     }
   ]
+},
+
+// Chapter 10
+
+{
+  case_id: "spm_ch10_001",
+  case_chapter: "Chapter10",
+  case_topic: ["Value for Money", "Economy", "Efficiency", "Effectiveness"],
+  difficulty: "medium",
+  caseText: `<p>HopeBridge Community Health Foundation is a not-for-profit organisation established to provide affordable primary healthcare to low-income families living in semi-urban and rural areas. The organisation receives most of its funding from charitable contributions, government welfare grants and periodic donations from corporate contributors. It does not distribute any surplus to its members or contributors; instead, any surplus is retained to strengthen its healthcare programme. During the previous year, HopeBridge operated five health centres and served approximately 42,000 patients. The trustees became concerned that the organisation's annual expenditure had increased by 18%, while the number of patients served had increased by only 6%. The medical director explained that part of the increase was due to higher medicine prices and additional specialist services. However, the finance committee noticed that several departments had purchased equipment at prices considerably above those paid by similar charitable hospitals. The organisation also employed a large administrative team, resulting in higher overhead costs. At the same time, patient waiting time had increased because appointments were being processed manually. Management therefore decided to evaluate the organisation using the Value for Money framework. The procurement department was instructed to compare supplier quotations and negotiate bulk discounts without compromising the required quality of medical supplies. The operations team introduced a digital appointment system to reduce waiting time and administrative workload. The medical team was asked to monitor the number of patients successfully treated, follow-up compliance and improvement in patient health outcomes. The trustees emphasised that simply reducing expenditure would not automatically mean better performance. For example, cutting the number of nurses could reduce costs but could also increase waiting time and reduce the quality of patient care. Similarly, purchasing the cheapest medical supplies could be uneconomical if poor quality resulted in higher replacement costs or affected patient safety. The trustees therefore wanted management to distinguish between economy, efficiency and effectiveness when evaluating performance. After six months, procurement costs per unit had decreased by 9%, average patient waiting time had fallen from 75 minutes to 42 minutes, and the percentage of patients completing prescribed follow-up programmes increased from 61% to 74%. The board concluded that financial savings were useful only when considered together with operational efficiency and achievement of the organisation's healthcare mission.`,
+  questions: [
+    {
+      question_id: "spm_ch10_001_1",
+      chapter_name: ["Value for Money", "Economy"],
+      question: "Which action undertaken by HopeBridge most directly represents economy?",
+      options: ["Reducing patient waiting time", "Increasing follow-up compliance", "Negotiating bulk discounts with suppliers while maintaining required quality", "Increasing the number of patients treated"],
+      answer: 2,
+      reason: "Economy is concerned with obtaining the appropriate quantity and quality of inputs at the lowest possible cost. Negotiating supplier discounts while maintaining required quality directly represents economy."
+    },
+    {
+      question_id: "spm_ch10_001_2",
+      chapter_name: ["Value for Money", "Efficiency"],
+      question: "The reduction in average patient waiting time from 75 minutes to 42 minutes primarily indicates an improvement in:",
+      options: ["Economy", "Efficiency", "Effectiveness only", "Ethics"],
+      answer: 1,
+      reason: "The digital appointment system improved the process of delivering healthcare by reducing waiting time and administrative effort. This primarily represents efficiency."
+    },
+    {
+      question_id: "spm_ch10_001_3",
+      chapter_name: ["Value for Money", "Effectiveness"],
+      question: "Which measure from the case most directly indicates effectiveness?",
+      options: ["Procurement cost per unit", "Administrative workload", "Percentage of patients completing prescribed follow-up programmes", "Supplier discount percentage"],
+      answer: 2,
+      reason: "Effectiveness considers whether the intended objectives and desired outcomes are achieved. Follow-up compliance provides evidence regarding the healthcare outcome and mission."
+    },
+    {
+      question_id: "spm_ch10_001_4",
+      chapter_name: ["Value for Money"],
+      question: "Why would simply reducing the number of nurses not necessarily represent good Value for Money?",
+      options: ["Nurses are always a financial asset", "Cost reduction may reduce service quality and effectiveness", "Nurses have no effect on patient care", "Economy requires maximum expenditure"],
+      answer: 1,
+      reason: "VFM requires a balance between economy, efficiency and effectiveness. Reducing nurses may reduce costs but could increase waiting time and reduce healthcare quality and outcomes."
+    },
+    {
+      question_id: "spm_ch10_001_5",
+      chapter_name: ["Value for Money"],
+      question: "Which statement best reflects the board's approach to performance measurement?",
+      options: ["Only financial expenditure should be measured", "Only the number of patients should be measured", "Financial and non-financial measures should be considered together", "Cost reduction automatically proves effectiveness"],
+      answer: 2,
+      reason: "NFP performance measurement requires both financial and non-financial measures because financial savings alone cannot establish whether the organisation has achieved its mission."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_002",
+  case_chapter: "Chapter10",
+  case_topic: ["Value for Money", "Efficiency", "Economy", "Benchmarking", "Service Quality"],
+  difficulty: "medium",
+  caseText: `<p>Urban Shelter Trust is a not-for-profit organisation that manages 320 furnished accommodation units for elderly people and low-income families. The trust receives donations and government grants and charges residents a subsidised weekly rent. The management committee recently discovered that the cost of maintaining its properties had increased significantly. During the year, the trust spent ₹21 lakh on employee costs, ₹17 lakh on routine repairs, ₹9 lakh on emergency repairs and ₹13 lakh on planned maintenance. It managed 320 properties throughout the year, although 24 properties remained vacant for substantial periods. The committee compared its performance with a similar commercial accommodation provider that managed 180 properties. The commercial provider employed fewer maintenance staff per property and had entered into annual maintenance contracts with several suppliers. Urban Shelter had historically used individual contractors for each repair and frequently paid different prices for similar work. The committee therefore decided to introduce a supplier tendering process. It also introduced a property-occupancy KPI and a tenant satisfaction survey. Management emphasised that comparison with a commercial organisation should be interpreted carefully because the organisations had different objectives. Urban Shelter's primary purpose was to provide suitable accommodation to vulnerable sections of society, while the commercial provider sought to maximise financial returns. Nevertheless, selected operational measures could still provide useful benchmarks. After implementation, the average repair cost per property declined, emergency response times improved and occupancy increased. However, management discovered that the cheapest contractor used lower-grade materials, resulting in repeated repairs. The committee therefore changed the procurement policy to consider quality, durability and total cost rather than simply the lowest quotation. It also concluded that benchmarking should ideally include similar not-for-profit housing organisations whose objectives and operating circumstances were more comparable.`,
+  questions: [
+    {
+      question_id: "spm_ch10_002_1",
+      chapter_name: ["Efficiency"],
+      question: "Which measure would best assess the relationship between maintenance resources and the number of properties serviced?",
+      options: ["Total annual donation received", "Maintenance cost or staff input per property serviced", "Total number of trustees", "Weekly rent charged only"],
+      answer: 1,
+      reason: "Efficiency concerns the relationship between inputs and outputs. Maintenance cost or staff input per property provides a useful measure of resource utilisation."
+    },
+    {
+      question_id: "spm_ch10_002_2",
+      chapter_name: ["Economy"],
+      question: "Why did the committee reject the idea that the lowest supplier quotation must always represent economy?",
+      options: ["Lowest price is always prohibited", "Lower-quality inputs may create additional costs and compromise service quality", "Suppliers cannot be compared", "Economy ignores input quality"],
+      answer: 1,
+      reason: "Economy requires appropriate quantity and quality of inputs at the lowest cost. A very cheap but poor-quality input may increase future repair costs and reduce effectiveness."
+    },
+    {
+      question_id: "spm_ch10_002_3",
+      chapter_name: ["Benchmarking"],
+      question: "Why would benchmarking against a similar not-for-profit housing organisation generally be more appropriate than relying solely on a commercial provider?",
+      options: ["Commercial organisations never provide useful information", "Similar NFP organisations are more likely to have comparable objectives and operating conditions", "NFP organisations never incur costs", "Commercial organisations cannot calculate KPIs"],
+      answer: 1,
+      reason: "Benchmarking is most useful when the organisations being compared have sufficiently similar objectives, activities and circumstances."
+    },
+    {
+      question_id: "spm_ch10_002_4",
+      chapter_name: ["Effectiveness", "Service Quality"],
+      question: "Which measure introduced by Urban Shelter most directly assesses whether residents are satisfied with the service?",
+      options: ["Property occupancy only", "Tenant satisfaction survey", "Number of contractors", "Total donations"],
+      answer: 1,
+      reason: "Tenant satisfaction is a direct indicator of service quality and effectiveness from the beneficiary's perspective."
+    },
+    {
+      question_id: "spm_ch10_002_5",
+      chapter_name: ["Value for Money"],
+      question: "The discovery that cheap materials caused repeated repairs demonstrates which important principle?",
+      options: ["Economy must always be maximised regardless of quality", "Economy, efficiency and effectiveness are interlinked", "Financial measures are irrelevant", "Benchmarking should never be used"],
+      answer: 1,
+      reason: "The cheapest input initially reduced expenditure, but poor quality increased future costs and potentially reduced service effectiveness. VFM requires consideration of the interrelationship between the three Es."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_003",
+  case_chapter: "Chapter10",
+  case_topic: ["Adapted Balanced Scorecard", "Mission", "Customer Perspective", "Financial Perspective"],
+  difficulty: "medium",
+  caseText: `<p>CareFirst Education Foundation provides free vocational education to students from economically disadvantaged families. The foundation receives donations from individuals, grants from charitable institutions and government funding. Its mission is to improve the employability and long-term economic independence of students rather than to generate profits. For several years, management used a conventional Balanced Scorecard but placed the Financial perspective at the top of its internal reporting dashboard. The scorecard included financial measures such as annual donations, administrative expenses and cash reserves. Beneficiary measures were included, but they received relatively little attention during monthly management meetings. The trustees noticed that management had begun postponing certain student-support activities near year-end to remain within administrative budgets. The trustees therefore asked the strategy team to redesign the scorecard using the Adapted Balanced Scorecard approach for not-for-profit organisations. The revised framework placed the mission and beneficiary/stakeholder perspective at the centre of the performance discussion. Measures included student satisfaction, course completion, employment after graduation and employer feedback. The financial perspective included fundraising success, growth of the funding base and appropriate distribution of funds. Internal-process measures included utilisation of classrooms, quality of teaching administration, volunteer development and processing time for student applications. Innovation and learning measures included new course development, teacher training, technology adoption and the organisation's ability to respond to changes in employment-market requirements. During the first year, donations increased by 10%, but more importantly, course completion increased from 72% to 81% and the percentage of graduates obtaining employment within six months increased from 54% to 67%. Management also introduced two new technology-related courses after local employers reported changing skill requirements. The trustees concluded that financial sustainability remained necessary, but financial success was not the primary purpose of the foundation. The organisation's ultimate purpose was to meet the needs of its beneficiaries and fulfil its mission.`,
+  questions: [
+    {
+      question_id: "spm_ch10_003_1",
+      chapter_name: ["Adapted Balanced Scorecard"],
+      question: "What is the principal reason for adapting the traditional Balanced Scorecard for CareFirst?",
+      options: ["Profit maximisation is the primary objective", "The organisation's mission and beneficiary needs are more central than profit", "Financial measures are prohibited", "Customers have no relevance"],
+      answer: 1,
+      reason: "For NFP organisations, the mission and satisfaction of beneficiaries are central. Financial success supports the mission rather than being the ultimate objective."
+    },
+    {
+      question_id: "spm_ch10_003_2",
+      chapter_name: ["Adapted Balanced Scorecard", "Customer Perspective"],
+      question: "Which measure most directly belongs to the beneficiary/customer perspective?",
+      options: ["Student satisfaction", "Cash reserves", "Teacher training hours", "Classroom utilisation"],
+      answer: 0,
+      reason: "Student satisfaction directly measures the experience and needs of the beneficiaries."
+    },
+    {
+      question_id: "spm_ch10_003_3",
+      chapter_name: ["Adapted Balanced Scorecard", "Financial Perspective"],
+      question: "Which of the following is most appropriate as a financial measure for CareFirst?",
+      options: ["Student satisfaction", "Employer feedback", "Growth of the funding base", "Teacher training hours"],
+      answer: 2,
+      reason: "NFP financial measures may include fundraising, fund growth and appropriate distribution of funds."
+    },
+    {
+      question_id: "spm_ch10_003_4",
+      chapter_name: ["Innovation and Learning"],
+      question: "The introduction of two new technology-related courses primarily demonstrates performance under which perspective?",
+      options: ["Financial", "Customer", "Internal Process", "Innovation and Learning"],
+      answer: 3,
+      reason: "Developing new courses and adapting to changing employment requirements represent innovation and organisational learning."
+    },
+    {
+      question_id: "spm_ch10_003_5",
+      chapter_name: ["Adapted Balanced Scorecard"],
+      question: "Which outcome provides the strongest evidence that CareFirst improved its mission-related performance?",
+      options: ["Donations increased by 10%", "Cash reserves increased", "Employment within six months increased from 54% to 67%", "Administrative expenditure remained unchanged"],
+      answer: 2,
+      reason: "The mission is to improve employability and long-term economic independence. The increase in graduate employment directly measures achievement of this mission."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_004",
+  case_chapter: "Chapter10",
+  case_topic: ["Multiple Objectives", "Utility of Funds", "Value for Money", "Performance Measurement"],
+  difficulty: "medium",
+  caseText: `<p>Rural Development Mission is a not-for-profit organisation working across several districts to improve living standards in rural communities. Its activities include healthcare camps, vocational training, drinking-water projects, agricultural assistance and scholarships for economically disadvantaged students. The organisation receives funding from several sources, and each contributor has slightly different expectations. One donor strongly supports healthcare, another focuses on education, while a government grant is specifically restricted to drinking-water projects. During a strategy meeting, the programme director proposed expanding vocational training because demand for employment-related skills had increased sharply. The healthcare team argued that more funds should be allocated to mobile medical camps because several villages had limited access to doctors. The education team requested additional scholarship funding because dropout rates had increased among poorer students. The finance director warned that the organisation could not simultaneously maximise every objective with the funds available. Some projects also required large upfront expenditure, while benefits would arise over several years. The board therefore decided to prioritise objectives based on their urgency, importance and utility while respecting restrictions attached to specific grants. Management also introduced a Value for Money framework. Each project was required to identify inputs, processes, outputs, outcomes and expected longer-term impact. The board rejected a proposal to measure project success solely by the amount of money spent because management could potentially spend the entire budget without producing meaningful benefits. For the healthcare programme, the organisation began tracking the number of patients treated, average waiting time and improvement in follow-up compliance. For education, it tracked scholarships awarded, school retention and successful completion. For drinking-water projects, it tracked households gaining reliable access to clean water and reduction in water-borne illness. The board recognised that some benefits were difficult to express in monetary terms and that the timing of benefits could differ substantially from the timing of expenditure. It therefore instructed management to use both quantitative and qualitative indicators and to review priorities periodically as circumstances changed.`,
+  questions: [
+    {
+      question_id: "spm_ch10_004_1",
+      chapter_name: ["Multiple Objectives"],
+      question: "Why did the board need to prioritise the organisation's objectives?",
+      options: ["The organisation had unlimited funds", "Different stakeholders had different needs and available resources were limited", "Only healthcare was legally permitted", "NFP organisations cannot have multiple objectives"],
+      answer: 1,
+      reason: "NFP organisations can have diverse stakeholders and multiple objectives. Since resources are limited and objectives may conflict, prioritisation becomes necessary."
+    },
+    {
+      question_id: "spm_ch10_004_2",
+      chapter_name: ["Multiple Objectives"],
+      question: "According to the chapter, prioritisation should primarily consider:",
+      options: ["Only the cheapest project", "Importance and urgency", "Only donor preference", "Only the project with the highest expenditure"],
+      answer: 1,
+      reason: "The chapter states that prioritisation among multiple objectives should be based on importance (utility) and urgency (time)."
+    },
+    {
+      question_id: "spm_ch10_004_3",
+      chapter_name: ["Value for Money"],
+      question: "Why is expenditure alone an inadequate measure of performance for Rural Development Mission?",
+      options: ["Higher expenditure automatically means poor performance", "Funds may be spent without producing meaningful outputs or outcomes", "NFP organisations cannot prepare budgets", "Expenditure has no relationship with resources"],
+      answer: 1,
+      reason: "The utility of funds cannot be judged merely by how much is spent. VFM links resources to outputs, outcomes and impact."
+    },
+    {
+      question_id: "spm_ch10_004_4",
+      chapter_name: ["Value for Money"],
+      question: "Which sequence best represents the five elements identified in the VFM framework?",
+      options: ["Profit, Sales, Assets, Debt, Equity", "Input, Process, Output, Outcome, Impact", "Budget, Profit, Dividend, Tax, Cash", "Mission, Vision, Profit, Sales, Assets"],
+      answer: 1,
+      reason: "The five elements are Input, Process, Output, Outcome and Impact."
+    },
+    {
+      question_id: "spm_ch10_004_5",
+      chapter_name: ["Utility of Funds"],
+      question: "Why can measuring the benefits of rural-development activities be particularly difficult?",
+      options: ["Benefits are always immediate", "Benefits can be behavioural, qualitative and may arise long after expenditure", "Benefits never exist", "All benefits can be measured precisely in money"],
+      answer: 1,
+      reason: "NFP benefits may be behavioural or qualitative, may occur over long periods and may not have an easily measurable monetary value."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_005",
+  case_chapter: "Chapter10",
+  case_topic: ["Value for Money", "Economy", "Efficiency", "Effectiveness", "Ethics", "Equity"],
+  difficulty: "medium",
+  caseText: `<p>Community Food Access Network is a not-for-profit organisation that distributes subsidised food packages to low-income households. It operates through a network of warehouses and volunteers. Funding is received from charitable donors and a government food-security programme. The organisation's trustees recently introduced a broader Value for Money framework after discovering that previous reports focused mainly on the number of food packages distributed. The trustees identified five dimensions: economy, efficiency, effectiveness, equity and ethics. The procurement team negotiated lower prices for staple food items while maintaining nutritional standards. Warehouse managers redesigned delivery routes to reduce fuel consumption and increase the number of households served per vehicle trip. Programme managers began measuring whether recipients actually belonged to the intended low-income target group rather than simply counting total packages distributed. The organisation also introduced a rule that emergency food supplies should be allocated according to need rather than personal connections or the order in which requests were received. In addition, all volunteers were required to follow a code of conduct concerning beneficiary confidentiality, conflicts of interest and appropriate handling of donated goods. During the year, the organisation distributed 80,000 food packages, compared with 68,000 in the previous year. However, a review found that some packages had been distributed to households outside the intended target group. The trustees therefore warned management that a higher number of outputs did not automatically prove effectiveness. The organisation also discovered that one supplier had offered a very low price but failed to meet nutritional specifications. The contract was terminated despite the apparent cost saving. The trustees concluded that VFM required an integrated assessment of how resources were acquired, how efficiently they were used, whether intended beneficiaries were actually reached, whether resources were distributed fairly and whether operations complied with ethical standards.`,
+  questions: [
+    {
+      question_id: "spm_ch10_005_1",
+      chapter_name: ["Value for Money", "Economy"],
+      question: "Negotiating lower prices while maintaining nutritional standards is primarily an example of:",
+      options: ["Economy", "Effectiveness", "Equity", "Ethics"],
+      answer: 0,
+      reason: "Economy concerns acquiring the required quality and quantity of inputs at the lowest appropriate cost."
+    },
+    {
+      question_id: "spm_ch10_005_2",
+      chapter_name: ["Efficiency"],
+      question: "Redesigning delivery routes to serve more households per vehicle trip primarily improves:",
+      options: ["Economy only", "Efficiency", "Equity only", "Ethics"],
+      answer: 1,
+      reason: "The organisation is obtaining greater output from the available resources, particularly vehicles and fuel. This is an efficiency improvement."
+    },
+    {
+      question_id: "spm_ch10_005_3",
+      chapter_name: ["Effectiveness"],
+      question: "Why does distributing 80,000 packages instead of 68,000 not necessarily prove effectiveness?",
+      options: ["Outputs are irrelevant", "Some packages may have gone to people outside the intended target group", "Effectiveness is based only on cost", "The previous year's number is always better"],
+      answer: 1,
+      reason: "Effectiveness concerns achievement of intended objectives. If packages are not reaching the intended beneficiaries, a higher output count may not indicate achievement of the mission."
+    },
+    {
+      question_id: "spm_ch10_005_4",
+      chapter_name: ["Equity"],
+      question: "The rule that emergency supplies should be allocated according to need rather than personal connections primarily represents:",
+      options: ["Economy", "Efficiency", "Equity", "Profitability"],
+      answer: 2,
+      reason: "Equity concerns fairness in the distribution and provision of services and resources."
+    },
+    {
+      question_id: "spm_ch10_005_5",
+      chapter_name: ["Ethics"],
+      question: "The volunteer code concerning confidentiality and conflicts of interest primarily supports:",
+      options: ["Ethics", "Economy", "Efficiency", "Output maximisation"],
+      answer: 0,
+      reason: "Ethics is concerned with proper and responsible conduct. Confidentiality and conflict-of-interest requirements directly support ethical operations."
+    }
+  ]
+},
+
+// ============================================================
+// HARD CASES
+// ============================================================
+
+{
+  case_id: "spm_ch10_006",
+  case_chapter: "Chapter10",
+  case_topic: ["Value for Money", "Economy", "Efficiency", "Effectiveness", "Benchmarking"],
+  difficulty: "hard",
+  caseText: `<p>WestRiver Housing Association is a not-for-profit organisation responsible for providing subsidised accommodation to elderly residents, low-income families and individuals requiring temporary housing support. It manages 600 houses across several districts. Its principal funding comes from government grants, charitable contributions and subsidised rental income. The association's board became concerned after reviewing the annual financial statements. Total rental income was ₹1.48 crore, while operating expenditure was ₹1.56 crore, resulting in an operating deficit of ₹8 lakh. The Chief Executive Officer warned the board that the deficit alone should not be interpreted as evidence of poor performance because the association was not established to maximise profit. However, the board wanted to establish whether resources were being used economically, efficiently and effectively. During the year, the association spent ₹34 lakh on employee costs, ₹31 lakh on planned maintenance and ₹24 lakh on day-to-day repairs. It also lost ₹21 lakh of potential rent because several properties remained vacant. A comparable commercial organisation managing 280 properties reported employee costs of ₹42 lakh and day-to-day repair costs of ₹10.5 lakh. WestRiver employed 17 maintenance and administrative employees, while the commercial organisation employed 15. The board noted that the commercial organisation had fewer properties and substantially lower repair expenditure. However, the commercial organisation served a different market and charged market-based rents. WestRiver also discovered that several of its older properties required more frequent repairs. Management introduced annual maintenance contracts for selected repair categories and began monitoring repair cost per property, employee cost per property, emergency response time, vacancy rate and tenant satisfaction. The association also discovered that some vacant properties were undergoing major refurbishment and therefore could not reasonably have been occupied. The board instructed management not to treat all vacancies as poor performance without investigating the underlying reason. After analysing the data, management found that WestRiver's employee resources were relatively productive because a larger number of properties were supported by a similar number of employees. However, its repair costs were high and its vacancy-related opportunity cost was significant. The board decided that benchmarking against similar not-for-profit housing associations would provide a better long-term basis for comparison, while selected commercial benchmarks could still be used for operational efficiency. The board also warned that reducing maintenance expenditure simply to eliminate the accounting deficit could damage the quality and safety of accommodation and therefore reduce effectiveness.`,
+  questions: [
+    {
+      question_id: "spm_ch10_006_1",
+      chapter_name: ["Efficiency"],
+      question: "Based on the information given, which organisation manages more properties per employee?",
+      options: ["WestRiver, because 600/17 is greater than 280/15", "Commercial organisation, because it employs fewer people", "Both are identical", "Cannot be compared because both are housing organisations"],
+      answer: 0,
+      reason: "WestRiver properties per employee = 600/17 ≈ 35.29. Commercial organisation = 280/15 ≈ 18.67. Therefore WestRiver manages substantially more properties per employee."
+    },
+    {
+      question_id: "spm_ch10_006_2",
+      chapter_name: ["Efficiency"],
+      question: "Approximately what is WestRiver's employee cost per property?",
+      options: ["₹4,667", "₹5,667", "₹6,333", "₹7,250"],
+      answer: 1,
+      reason: "Employee cost per property = ₹34,00,000 / 600 = approximately ₹5,667 per property."
+    },
+    {
+      question_id: "spm_ch10_006_3",
+      chapter_name: ["Efficiency"],
+      question: "What is the commercial organisation's approximate day-to-day repair cost per property?",
+      options: ["₹3,750", "₹4,000", "₹4,286", "₹5,250"],
+      answer: 2,
+      reason: "Repair cost per property = ₹10,50,000 / 280 = ₹3,750. Therefore the correct answer is ₹3,750, which is option index 0."
+    },
+    {
+      question_id: "spm_ch10_006_4",
+      chapter_name: ["Value for Money", "Effectiveness"],
+      question: "Why would cutting maintenance expenditure simply to eliminate the deficit be potentially inappropriate?",
+      options: ["Maintenance expenditure is never controllable", "Lower expenditure could reduce housing quality and safety and therefore damage effectiveness", "Deficits are illegal for NFP organisations", "Effectiveness is based only on expenditure"],
+      answer: 1,
+      reason: "VFM is not achieved simply by spending less. Cutting necessary maintenance could reduce service quality, safety and achievement of the organisation's housing mission."
+    },
+    {
+      question_id: "spm_ch10_006_5",
+      chapter_name: ["Benchmarking"],
+      question: "Why did the board prefer similar NFP housing associations as the main benchmark?",
+      options: ["Commercial organisations cannot calculate costs", "Similar NFP organisations are more likely to have comparable objectives and operating circumstances", "NFP organisations always have lower costs", "Commercial benchmarks are legally prohibited"],
+      answer: 1,
+      reason: "Benchmarking is more meaningful when the organisations have similar objectives, service obligations and operating environments."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_007",
+  case_chapter: "Chapter10",
+  case_topic: ["Adapted Balanced Scorecard", "Mission", "Fund Raising", "Internal Processes", "Innovation and Learning"],
+  difficulty: "hard",
+  caseText: `<p>Global Relief Medical Alliance is an international not-for-profit organisation that provides emergency medical assistance during natural disasters and humanitarian crises. It receives funding from governments, international agencies, corporations and individual donors. The organisation does not distribute its surplus to contributors; instead, any surplus is retained to strengthen its ability to respond to future emergencies. The board historically monitored performance using financial indicators such as total donations received, administrative expenditure and cash reserves. However, after a major earthquake response, an internal review revealed that the financial results did not adequately explain operational performance. Donations had increased by 16%, but emergency medical teams took longer than expected to reach affected communities because logistics systems were not sufficiently flexible. The organisation also had difficulties recruiting specialist medical volunteers in certain regions. Management therefore decided to adopt an Adapted Balanced Scorecard. The mission and beneficiary/stakeholder perspective was placed at the centre of the framework. Measures included the percentage of affected people receiving medical assistance within 24 hours, beneficiary satisfaction, geographic coverage and feedback from local authorities. The financial perspective included fundraising growth, funding diversification, cash availability and the proportion of funds appropriately distributed to programmes. Internal-process measures included emergency deployment time, procurement cycle time, inventory availability, volunteer coordination and information-system reliability. Innovation and learning measures included disaster-response simulations, volunteer training, new medical-response protocols, digital communication capabilities and the ability to adapt procedures to changing disaster conditions. During the following year, total donations increased by only 4%, but the organisation improved its average emergency deployment time from 38 hours to 24 hours. The percentage of affected beneficiaries receiving assistance within 24 hours increased from 46% to 71%. Funding diversification also improved because dependence on one major donor fell from 52% to 38% of total funding. Volunteer training hours increased by 30%, and the organisation introduced a digital emergency coordination platform. However, administrative expenditure increased because of investments in technology and training. Some board members criticised the higher administrative expenditure, but the CEO argued that the organisation should not judge performance solely by the amount of money retained after administrative costs. The ultimate test was whether resources enabled the organisation to fulfil its humanitarian mission. The board therefore reviewed the scorecard as an integrated system and concluded that financial sustainability remained important but should support rather than replace mission achievement.`,
+  questions: [
+    {
+      question_id: "spm_ch10_007_1",
+      chapter_name: ["Adapted Balanced Scorecard", "Mission"],
+      question: "Which measure most directly represents the central mission-oriented perspective of Global Relief Medical Alliance?",
+      options: ["Administrative expenditure", "Cash reserves", "Percentage of affected people receiving assistance within 24 hours", "Total number of employees"],
+      answer: 2,
+      reason: "The organisation exists to provide timely humanitarian medical assistance. The percentage receiving assistance within 24 hours directly measures achievement of this mission."
+    },
+    {
+      question_id: "spm_ch10_007_2",
+      chapter_name: ["Adapted Balanced Scorecard", "Financial Perspective"],
+      question: "The reduction in dependence on one major donor from 52% to 38% primarily strengthens which financial characteristic?",
+      options: ["Funding diversification", "Beneficiary satisfaction", "Emergency deployment", "Volunteer development"],
+      answer: 0,
+      reason: "A reduction in dependence on a single donor indicates greater diversification of the funding base, improving financial sustainability."
+    },
+    {
+      question_id: "spm_ch10_007_3",
+      chapter_name: ["Internal Processes"],
+      question: "Which measure most directly belongs to the Internal Processes perspective?",
+      options: ["Emergency deployment time", "Beneficiary satisfaction", "Funding diversification", "Volunteer training hours"],
+      answer: 0,
+      reason: "Emergency deployment time measures the efficiency of the organisation's internal emergency-response process."
+    },
+    {
+      question_id: "spm_ch10_007_4",
+      chapter_name: ["Innovation and Learning"],
+      question: "Why is the digital emergency coordination platform relevant to Innovation and Learning?",
+      options: ["It increases donations automatically", "It improves the organisation's capability to adapt and respond to changing conditions", "It eliminates the mission", "It is a measure of beneficiary income"],
+      answer: 1,
+      reason: "Innovation and Learning focuses on the organisation's ability to develop capabilities, adopt new methods and adapt to changing environments."
+    },
+    {
+      question_id: "spm_ch10_007_5",
+      chapter_name: ["Adapted Balanced Scorecard"],
+      question: "Why could the increase in administrative expenditure still be compatible with improved NFP performance?",
+      options: ["Administrative expenditure is always good", "The additional expenditure may build capabilities that improve mission achievement", "Financial measures are irrelevant", "NFP organisations should maximise administration costs"],
+      answer: 1,
+      reason: "Investment in technology and training may increase current expenditure but improve the organisation's long-term ability to fulfil its mission. Performance must therefore be evaluated through the broader scorecard."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_008",
+  case_chapter: "Chapter10",
+  case_topic: ["Value for Money", "Multiple Objectives", "Utility of Funds", "Effectiveness", "Impact"],
+  difficulty: "hard",
+  caseText: `<p>BrightFuture Children's Foundation operates a long-term educational programme for children from economically disadvantaged families. The foundation provides free schooling, meals, textbooks, counselling and scholarships for higher education. It receives contributions from individual donors, corporate foundations and government grants. The programme director recently proposed expanding the number of students from 1,200 to 1,800 because a large number of applications had been received. The finance director warned that expanding enrolment would require additional teachers, classrooms and technology. The board therefore asked management to evaluate whether the proposed expansion would generate sufficient value for money. Management initially suggested using cost per student as the main performance indicator. However, the programme evaluation team argued that a lower cost per student could be achieved by increasing class size, reducing counselling sessions and cutting technology expenditure, all of which might reduce educational outcomes. The team therefore designed a broader performance framework. Input measures included teachers, classroom resources, technology expenditure and food costs. Process measures included attendance monitoring, teacher-student interaction and counselling utilisation. Output measures included students enrolled, classes delivered and textbooks distributed. Outcome measures included examination completion, improvement in learning scores and progression to higher education. Impact measures included long-term employment prospects, reduction in dropout rates and improvement in economic independence. The foundation also faced a conflict among stakeholders. Donors wanted more students to be covered, teachers wanted smaller class sizes, government officials wanted higher completion rates, and the scholarship department wanted additional funds for high-performing students. The board decided that objectives should be prioritised based on importance and urgency rather than simply following the preference of the stakeholder providing the largest contribution. It also recognised that the benefits of education might arise many years after expenditure was incurred and could not be fully expressed in monetary terms. During the evaluation, the foundation found that students receiving additional counselling had a significantly higher completion rate than those receiving only classroom instruction. The board therefore rejected the proposal to cut counselling simply to reduce cost per student. Instead, it approved a phased expansion, subject to capacity, quality and outcome targets. Management was instructed to review the performance framework annually and revise indicators when circumstances changed.`,
+  questions: [
+    {
+      question_id: "spm_ch10_008_1",
+      chapter_name: ["Value for Money"],
+      question: "Why would cost per student alone be an inadequate performance measure for BrightFuture?",
+      options: ["Cost measures are never useful", "Cost reduction could be achieved by reducing activities that contribute to educational outcomes", "Students have no measurable outcomes", "NFP organisations do not prepare budgets"],
+      answer: 1,
+      reason: "A financial measure alone may encourage undesirable cost cutting. Reducing counselling or technology may lower cost but damage educational effectiveness."
+    },
+    {
+      question_id: "spm_ch10_008_2",
+      chapter_name: ["Value for Money"],
+      question: "Which of the following is an example of an output measure rather than an outcome measure?",
+      options: ["Long-term employment prospects", "Improvement in learning scores", "Number of students enrolled", "Economic independence"],
+      answer: 2,
+      reason: "Number of students enrolled is a direct output of the programme. Learning improvement and economic independence represent outcomes or longer-term impact."
+    },
+    {
+      question_id: "spm_ch10_008_3",
+      chapter_name: ["Value for Money"],
+      question: "Which measure best represents long-term impact in the case?",
+      options: ["Number of textbooks distributed", "Number of classes delivered", "Students enrolled", "Improvement in economic independence"],
+      answer: 3,
+      reason: "Impact concerns the longer-term effect of the organisation's activities. Improvement in economic independence is a long-term consequence of education."
+    },
+    {
+      question_id: "spm_ch10_008_4",
+      chapter_name: ["Multiple Objectives"],
+      question: "Why did the board reject the approach of simply following the preference of the largest donor?",
+      options: ["Donors have no rights", "Multiple objectives should be prioritised based on importance and urgency rather than solely stakeholder funding power", "Only teachers can make decisions", "Financial contributors cannot influence NFPs"],
+      answer: 1,
+      reason: "NFP organisations may have diverse stakeholders with conflicting objectives. The chapter suggests prioritisation based on importance/utility and urgency."
+    },
+    {
+      question_id: "spm_ch10_008_5",
+      chapter_name: ["Utility of Funds", "Effectiveness"],
+      question: "What was the strongest reason for retaining counselling despite its additional cost?",
+      options: ["Counselling increased administrative expenditure", "Counselling was associated with higher completion rates and therefore supported the programme's intended outcome", "Counselling increased the number of textbooks", "Counselling reduced the number of students"],
+      answer: 1,
+      reason: "The evaluation showed that students receiving additional counselling had significantly higher completion rates. Therefore the additional resource use contributed to effectiveness."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_009",
+  case_chapter: "Chapter10",
+  case_topic: ["Value for Money", "Economy", "Efficiency", "Effectiveness", "Equity", "Ethics"],
+  difficulty: "hard",
+  caseText: `<p>National Community Nutrition Initiative is a large not-for-profit organisation responsible for distributing nutritional supplements to children in economically vulnerable communities. The programme is funded by government grants and international charitable organisations. During the year, the organisation purchased 1,000,000 nutritional packets and distributed them through 75 regional centres. The board initially reported success because 96% of the purchased packets had been distributed. However, an independent review revealed several operational problems. Some regional centres had excess inventory while others experienced shortages. In certain districts, children from remote villages received supplies less frequently than children living close to distribution centres. The procurement department had obtained a 12% discount from a supplier but had accepted a longer delivery period, resulting in shortages during an important part of the programme. The warehouse department measured performance mainly through the percentage of packets distributed, so managers were reluctant to report stock shortages because doing so could make their performance appear poor. The organisation also discovered that some regional managers had allocated additional supplies to communities where local officials were influential, even though the programme rules required allocation according to nutritional need. The ethics committee therefore raised concerns about fairness and conflicts of interest. Management decided to redesign the performance system around the five-element VFM framework. Input measures included cost per packet, nutritional quality and procurement lead time. Process measures included warehouse turnaround time, inventory accuracy and transport utilisation. Output measures included packets delivered and number of children covered. Outcome measures included improvement in nutritional indicators, attendance at health-monitoring appointments and reduction in deficiency rates. Impact measures included long-term improvement in child health and educational participation. Equity measures were introduced to assess whether resources reached communities according to need rather than geographic convenience or personal influence. Ethical measures covered conflicts of interest, transparent procurement and accurate reporting of shortages. The board also introduced separate KPIs for availability and distribution coverage so that managers could not improve the distribution percentage by ignoring areas facing shortages. After the new system was introduced, the reported distribution percentage initially declined from 96% to 92%, but stock availability in remote districts improved substantially. The board considered this a positive development because the revised measures exposed problems that had previously been hidden rather than allowing them to remain unreported.`,
+  questions: [
+    {
+      question_id: "spm_ch10_009_1",
+      chapter_name: ["Economy"],
+      question: "The 12% supplier discount primarily relates to which VFM element?",
+      options: ["Economy", "Effectiveness", "Equity", "Ethics"],
+      answer: 0,
+      reason: "Obtaining required inputs at a lower appropriate cost is an economy consideration."
+    },
+    {
+      question_id: "spm_ch10_009_2",
+      chapter_name: ["Value for Money", "Efficiency"],
+      question: "Why was the supplier's longer delivery period potentially problematic despite the 12% discount?",
+      options: ["Discounts are always unethical", "Lower input cost may have reduced availability and harmed programme delivery", "Procurement has no effect on output", "Efficiency requires the highest supplier price"],
+      answer: 1,
+      reason: "Economy must be considered together with efficiency and effectiveness. The lower purchase price created delivery delays and shortages, potentially reducing the programme's ability to achieve its objectives."
+    },
+    {
+      question_id: "spm_ch10_009_3",
+      chapter_name: ["Equity"],
+      question: "Allocating additional supplies to influential communities rather than according to nutritional need represents a failure of:",
+      options: ["Economy", "Efficiency", "Equity", "Input measurement"],
+      answer: 2,
+      reason: "Equity requires fair distribution of resources. Allocation based on influence rather than need violates this principle."
+    },
+    {
+      question_id: "spm_ch10_009_4",
+      chapter_name: ["Ethics"],
+      question: "Why was the failure to report stock shortages considered an ethical concern?",
+      options: ["Shortages are always financial losses", "Managers were deliberately suppressing information to protect their performance assessments", "Stock shortages cannot be measured", "Ethics applies only to procurement"],
+      answer: 1,
+      reason: "Accurate and transparent reporting is part of ethical operation. Suppressing shortages to improve reported performance compromises the integrity of management information."
+    },
+    {
+      question_id: "spm_ch10_009_5",
+      chapter_name: ["Performance Measurement"],
+      question: "Why did the board consider the fall in the distribution percentage from 96% to 92% potentially positive?",
+      options: ["Lower distribution is always better", "The new measures exposed previously hidden shortages and improved equitable coverage", "The programme wanted to distribute fewer packets", "Outputs no longer mattered"],
+      answer: 1,
+      reason: "The previous KPI encouraged managers to hide shortages and focus on the overall distribution percentage. The new framework exposed weaknesses and improved service to underserved areas, providing a more meaningful picture of performance."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_010",
+  case_chapter: "Chapter10",
+  case_topic: ["Adapted Balanced Scorecard", "Value for Money", "Benchmarking", "Mission", "Performance Measurement"],
+  difficulty: "hard",
+  caseText: `<p>LifeAccess Disability Support Foundation provides rehabilitation, assistive technology and employment-support services to people with disabilities. The foundation operates through regional centres and receives funding from government agencies, charitable trusts, corporate donors and individual contributors. Its mission is to improve independence and quality of life for beneficiaries. The foundation had historically reported performance using a mixture of total expenditure, number of beneficiaries served and funds raised. The board recognised that these measures were useful but incomplete. A centre could report a high number of beneficiaries while providing only limited support to each person, while another centre could serve fewer beneficiaries with substantially better long-term outcomes. The board therefore asked management to design an integrated performance measurement system combining Value for Money principles with an Adapted Balanced Scorecard. The beneficiary perspective included beneficiary satisfaction, percentage of beneficiaries achieving agreed rehabilitation goals, employment placement rates and waiting time for services. The financial perspective included funds raised, funding diversification, expenditure against approved budgets and proportion of funds directed towards programme activities. Internal-process measures included assessment turnaround time, case-management quality, assistive-device procurement time and coordination between rehabilitation specialists. Innovation and learning measures included employee training, adoption of new assistive technologies, volunteer development and the number of service innovations implemented. Management also established VFM indicators. Economy measures included cost and quality of assistive devices purchased. Efficiency measures included beneficiaries supported per employee and average service-processing time. Effectiveness measures included achievement of rehabilitation goals and sustained employment outcomes. Equity measures assessed whether services were accessible to beneficiaries across different regions and income groups, while ethical measures covered confidentiality, informed consent and responsible use of donor funds. During the year, the foundation's expenditure increased by 11%, causing some donors to question its performance. However, beneficiary satisfaction increased from 78% to 89%, average waiting time fell from 28 days to 16 days, and the proportion of beneficiaries achieving their agreed rehabilitation goals increased from 62% to 76%. Employment placement rates increased from 41% to 55%. The foundation also reduced its dependence on its largest donor from 48% to 34% of total funding. Nevertheless, management discovered that one region had significantly lower service accessibility for remote beneficiaries. The board therefore refused to declare the programme fully successful despite the strong overall indicators. It instructed management to investigate the regional inequality and develop corrective measures. The board emphasised that an NFP performance system should measure not merely how much money was spent or how many people were served, but whether available resources were used responsibly to fulfil the organisation's mission and create meaningful benefits for the intended beneficiaries.`,
+  questions: [
+    {
+      question_id: "spm_ch10_010_1",
+      chapter_name: ["Adapted Balanced Scorecard"],
+      question: "Which measure most directly reflects the central beneficiary perspective of LifeAccess?",
+      options: ["Funds raised", "Beneficiary satisfaction", "Budget variance", "Funding diversification"],
+      answer: 1,
+      reason: "In an adapted NFP Balanced Scorecard, the beneficiary/customer perspective is central because the organisation exists to meet beneficiary needs. Beneficiary satisfaction directly measures this."
+    },
+    {
+      question_id: "spm_ch10_010_2",
+      chapter_name: ["Value for Money", "Efficiency"],
+      question: "Which measure is most clearly an efficiency measure?",
+      options: ["Cost and quality of assistive devices", "Beneficiaries supported per employee", "Achievement of rehabilitation goals", "Informed consent"],
+      answer: 1,
+      reason: "Efficiency measures the relationship between resources used and outputs achieved. Beneficiaries supported per employee directly relates output to an input resource."
+    },
+    {
+      question_id: "spm_ch10_010_3",
+      chapter_name: ["Value for Money", "Effectiveness"],
+      question: "Which measure best represents effectiveness in the case?",
+      options: ["Expenditure against budget", "Cost per assistive device", "Achievement of rehabilitation goals", "Funds raised"],
+      answer: 2,
+      reason: "Effectiveness assesses whether the intended objectives and outcomes have been achieved. Achievement of rehabilitation goals directly reflects the foundation's mission."
+    },
+    {
+      question_id: "spm_ch10_010_4",
+      chapter_name: ["Adapted Balanced Scorecard", "Financial Perspective"],
+      question: "The reduction in dependence on the largest donor from 48% to 34% primarily indicates improvement in:",
+      options: ["Beneficiary satisfaction", "Funding diversification", "Internal process quality", "Service equity"],
+      answer: 1,
+      reason: "Reducing reliance on one donor increases diversification of the funding base and strengthens financial sustainability."
+    },
+    {
+      question_id: "spm_ch10_010_5",
+      chapter_name: ["Equity", "Performance Measurement"],
+      question: "Why did the board refuse to declare the foundation fully successful despite strong overall performance?",
+      options: ["Overall expenditure had increased", "One region had significantly lower access to services, creating an equity concern", "Funds raised had increased", "Beneficiary satisfaction had increased"],
+      answer: 1,
+      reason: "Equity requires fair access to services. Strong overall averages can conceal regional inequalities, so the board correctly identified unequal access as an important performance issue."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_011",
+  case_chapter: "Chapter10",
+  case_topic: ["Value for Money", "Economy", "Efficiency", "Effectiveness", "Service Quality"],
+  difficulty: "medium",
+  caseText: `<p>Seva Rural Education Trust runs 18 learning centres for children from economically weaker families in remote villages. The Trust receives grants from government departments, donations from charitable foundations and contributions from local businesses. Its primary purpose is not to generate profit but to provide accessible and good-quality education. During the previous year, the Trust spent ₹96 lakh and enrolled 2,400 students. The trustees were initially pleased because expenditure was 4% below the approved budget of ₹100 lakh. However, an independent review revealed that the lower expenditure was partly achieved because several centres postponed replacement of damaged computers and reduced spending on teacher-development programmes. At the same time, student attendance had fallen from 86% to 79%, and the number of students successfully completing the annual learning assessment had fallen from 74% to 68%. The Trust's finance manager argued that remaining below budget demonstrated good financial control. The programme director disagreed and stated that a not-for-profit organisation should not consider cost reduction successful if it prevents the organisation from achieving its educational mission. The trustees therefore introduced three categories of measures. Economy measures included the price paid for textbooks, computers and other resources while maintaining the required quality. Efficiency measures included students supported per teacher, classroom utilisation and administrative cost per student. Effectiveness measures included student attendance, learning improvement, completion rates and feedback from parents. Management also introduced a student satisfaction survey because some parents had complained about overcrowded classrooms. After six months, the Trust negotiated better textbook prices without reducing quality, increased teacher training and improved classroom scheduling. The cost per student increased slightly, but attendance rose to 84% and successful completion increased to 75%. The trustees concluded that financial measures were important but should be interpreted alongside non-financial indicators that demonstrated whether resources were actually producing the intended educational benefits.`,
+  questions: [
+    {
+      question_id: "spm_ch10_011_1",
+      chapter_name: ["Value for Money", "Economy"],
+      question: "Why was the Trust's expenditure being 4% below budget not sufficient by itself to conclude that performance had improved?",
+      options: ["Being below budget is always undesirable", "The saving was partly achieved by reducing activities that supported educational outcomes", "Budgets have no relevance to NFP organisations", "Education cannot be measured"],
+      answer: 1,
+      reason: "The case states that expenditure was reduced partly by postponing computer replacement and reducing teacher development. Therefore the apparent saving could have harmed effectiveness."
+    },
+    {
+      question_id: "spm_ch10_011_2",
+      chapter_name: ["Effectiveness"],
+      question: "Which result provides the strongest evidence about whether the Trust was achieving its educational objective?",
+      options: ["Expenditure was ₹96 lakh", "Textbook prices decreased", "Successful learning-assessment completion", "Administrative cost per student"],
+      answer: 2,
+      reason: "Successful completion of learning assessments is directly connected to the educational outcomes the Trust is trying to achieve."
+    },
+    {
+      question_id: "spm_ch10_011_3",
+      chapter_name: ["Efficiency"],
+      question: "Which of the following would best represent an efficiency measure for the Trust?",
+      options: ["Students supported per teacher", "Parent satisfaction only", "Learning improvement only", "Donation received"],
+      answer: 0,
+      reason: "Efficiency examines the relationship between resources and outputs. Students supported per teacher relates educational output to the teacher resource."
+    },
+    {
+      question_id: "spm_ch10_011_4",
+      chapter_name: ["Economy", "Effectiveness"],
+      question: "The Trust's decision to negotiate lower textbook prices while maintaining required quality represents:",
+      options: ["Economy without regard to effectiveness", "Economy consistent with the broader VFM objective", "Effectiveness without economy", "Only ethics"],
+      answer: 1,
+      reason: "The Trust reduced input cost while maintaining required quality. This is economy and does not sacrifice the effectiveness of the educational service."
+    },
+    {
+      question_id: "spm_ch10_011_5",
+      chapter_name: ["Performance Measurement"],
+      question: "What lesson is most clearly demonstrated by the Trust's experience?",
+      options: ["Financial measures should replace all non-financial measures", "A favourable budget variance always indicates success", "Financial and non-financial measures should be considered together", "NFP organisations should never attempt cost savings"],
+      answer: 2,
+      reason: "The case shows that cost savings can be harmful when they damage outcomes. VFM therefore requires financial and non-financial measures together."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_012",
+  case_chapter: "Chapter10",
+  case_topic: ["Adapted Balanced Scorecard", "Mission", "Fund Raising", "Internal Processes", "Innovation and Learning"],
+  difficulty: "medium",
+  caseText: `<p>GreenHope Environmental Foundation is a not-for-profit organisation working with rural communities to restore degraded land and improve access to clean water. Its mission is to improve environmental conditions while helping local communities develop sustainable livelihoods. The Foundation receives grants from international agencies and donations from corporate contributors. The trustees noticed that monthly management meetings focused heavily on cash balances and total funds raised. Programme managers complained that this caused insufficient attention to actual environmental and community outcomes. The trustees therefore decided to use an Adapted Balanced Scorecard. The beneficiary and stakeholder perspective included the number of households receiving reliable clean-water access, community satisfaction, reduction in water-related illnesses and participation in environmental programmes. The financial perspective included funds raised, growth in the funding base and the proportion of funds appropriately allocated to field programmes. Internal-process measures included project completion time, procurement cycle time, monitoring quality and coordination between field teams. Innovation and learning measures included volunteer training, adoption of new water-treatment technologies, development of new environmental methods and the organisation's ability to adapt projects when weather patterns changed. During the year, total donations increased by only 3%, but the number of households receiving reliable clean-water access increased by 18%. Community satisfaction improved from 71% to 84%. The Foundation also reduced the average procurement cycle from 24 days to 15 days by introducing a central digital procurement system. However, the percentage of programme expenditure directed toward one remote district fell because management shifted funds toward areas where implementation was easier. The programme director argued that this improved efficiency, while the community representative warned that the shift might reduce equitable access to services. The trustees therefore decided that financial growth and operational efficiency could not be evaluated independently of the Foundation's mission and stakeholder needs.`,
+  questions: [
+    {
+      question_id: "spm_ch10_012_1",
+      chapter_name: ["Adapted Balanced Scorecard"],
+      question: "Which measure is most directly connected to GreenHope's beneficiary/stakeholder perspective?",
+      options: ["Funds raised", "Procurement cycle time", "Community satisfaction", "Volunteer training hours"],
+      answer: 2,
+      reason: "Community satisfaction directly measures how beneficiaries and stakeholders perceive the services and outcomes."
+    },
+    {
+      question_id: "spm_ch10_012_2",
+      chapter_name: ["Financial Perspective"],
+      question: "Which measure is most appropriate under the financial perspective of the adapted scorecard?",
+      options: ["Funding-base growth", "Community satisfaction", "Project completion time", "Volunteer training"],
+      answer: 0,
+      reason: "The financial perspective for NFPs includes fundraising, growth of funds and appropriate distribution of funds."
+    },
+    {
+      question_id: "spm_ch10_012_3",
+      chapter_name: ["Internal Processes"],
+      question: "The reduction in procurement cycle time from 24 days to 15 days primarily represents improvement in:",
+      options: ["Beneficiary satisfaction", "Internal process efficiency", "Financial fundraising", "Mission impact only"],
+      answer: 1,
+      reason: "Procurement cycle time is an internal process measure. Reducing the time required for procurement indicates improved process efficiency."
+    },
+    {
+      question_id: "spm_ch10_012_4",
+      chapter_name: ["Equity", "Performance Measurement"],
+      question: "Why was the shift of funds away from the remote district potentially problematic even though it could improve operational efficiency?",
+      options: ["Efficiency and equity can never coexist", "The shift could reduce fair access to services among intended beneficiaries", "Remote districts never need funding", "Financial measures are irrelevant"],
+      answer: 1,
+      reason: "A decision may improve operational efficiency while creating unequal access. Equity requires attention to fair distribution of services among beneficiaries."
+    },
+    {
+      question_id: "spm_ch10_012_5",
+      chapter_name: ["Adapted Balanced Scorecard"],
+      question: "What distinguishes the Foundation's adapted approach from a conventional profit-oriented performance system?",
+      options: ["It completely ignores finances", "It treats profit maximisation as the central mission", "It gives greater central importance to mission and stakeholder/beneficiary needs", "It measures only fundraising"],
+      answer: 2,
+      reason: "In an NFP adapted Balanced Scorecard, the mission and beneficiary/stakeholder needs are central rather than profit maximisation."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_013",
+  case_chapter: "Chapter10",
+  case_topic: ["Multiple Objectives", "Utility of Funds", "Value for Money", "Prioritisation"],
+  difficulty: "medium",
+  caseText: `<p>CareReach Foundation provides healthcare services to low-income communities through mobile medical units. The Foundation receives money from several donors, but each donor has different priorities. One donor has provided ₹40 lakh specifically for maternal healthcare, another has provided ₹25 lakh for child vaccination, and an unrestricted contribution of ₹30 lakh is available for general healthcare activities. During the year, a severe flood affected several villages and created an urgent need for emergency medical services. The Foundation's management team proposed diverting part of the unrestricted funds to emergency medical camps. The maternal-healthcare team objected because its programme was already facing a shortage of resources. The finance department warned that restricted grants could not simply be used for unrelated purposes. The trustees therefore reviewed the organisation's multiple objectives and categorised them according to importance and urgency. They decided that emergency healthcare was highly urgent, but restricted donor funds would continue to be used only for their stated purpose. Unrestricted funds were partly redirected to emergency services. The Foundation also introduced a VFM framework. It began tracking the number of patients treated, average waiting time, cost per patient, percentage of pregnant women completing follow-up visits and percentage of children completing vaccination schedules. Management noticed that one mobile unit treated fewer patients than others because it travelled to remote villages with poor road connectivity. A purely cost-per-patient measure would therefore make that unit appear inefficient. The programme director argued that the unit's contribution should also be evaluated based on the needs of the population served and the difficulty of reaching them. The trustees agreed and instructed management to use both quantitative and qualitative information. They also required periodic review because the urgency of healthcare needs could change rapidly during emergencies.`,
+  questions: [
+    {
+      question_id: "spm_ch10_013_1",
+      chapter_name: ["Multiple Objectives"],
+      question: "Why did CareReach face difficulty in allocating its available funds?",
+      options: ["It had no objectives", "Different stakeholders and programmes had different needs and some funds were restricted", "All funds were unrestricted", "NFP organisations cannot prioritise"],
+      answer: 1,
+      reason: "The Foundation had multiple objectives, different donor expectations and restrictions attached to certain grants."
+    },
+    {
+      question_id: "spm_ch10_013_2",
+      chapter_name: ["Multiple Objectives"],
+      question: "Why did the trustees classify emergency healthcare as a high-priority objective?",
+      options: ["It was the cheapest programme", "It had high urgency and importance", "It had the highest administrative cost", "It generated the highest profit"],
+      answer: 1,
+      reason: "The chapter states that prioritisation should consider importance/utility and urgency. A flood created an urgent medical requirement."
+    },
+    {
+      question_id: "spm_ch10_013_3",
+      chapter_name: ["Utility of Funds"],
+      question: "Why could cost per patient alone produce a misleading assessment of the remote mobile unit?",
+      options: ["Costs are never relevant", "The unit faced more difficult operating conditions and served remote communities", "Remote patients do not count as outputs", "The unit had no staff"],
+      answer: 1,
+      reason: "A simple cost-per-patient measure ignores the circumstances under which the service is delivered. The remote unit may have higher costs because reaching the intended beneficiaries is more difficult."
+    },
+    {
+      question_id: "spm_ch10_013_4",
+      chapter_name: ["Value for Money"],
+      question: "Which of the following is most clearly an effectiveness measure?",
+      options: ["Cost per patient", "Average waiting time", "Percentage of pregnant women completing follow-up visits", "Administrative expenditure"],
+      answer: 2,
+      reason: "Completion of follow-up visits indicates whether the intended healthcare objective is being achieved."
+    },
+    {
+      question_id: "spm_ch10_013_5",
+      chapter_name: ["Value for Money"],
+      question: "Why did the trustees require periodic review of priorities?",
+      options: ["NFP objectives never remain stable", "Urgency and circumstances can change, particularly during emergencies", "Budgets cannot be prepared", "Financial measures are unnecessary"],
+      answer: 1,
+      reason: "The importance and urgency of objectives can change over time, particularly in emergency situations, so NFP performance priorities should be reviewed periodically."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_014",
+  case_chapter: "Chapter10",
+  case_topic: ["Economy", "Efficiency", "Effectiveness", "Ethics", "Value for Money"],
+  difficulty: "medium",
+  caseText: `<p>FoodForAll Society distributes subsidised nutrition kits to families identified as being below a defined income threshold. The Society receives food supplies through government contracts and charitable donations. During the year, the procurement team achieved a 10% reduction in the purchase price of rice and pulses by negotiating a new supplier contract. However, the new supplier delivered supplies later than agreed, resulting in temporary shortages at several distribution centres. The warehouse manager continued reporting a high distribution percentage because centres transferred stock between themselves before the monthly reporting date. A later review revealed that some rural communities had received fewer supplies than urban communities even though their assessed nutritional needs were higher. The programme manager also discovered that a regional officer had instructed staff to give priority to households recommended by local officials. The officer argued that this helped maintain good relationships with local authorities. The Society's ethics committee considered the practice unacceptable because allocation criteria were supposed to be based on documented need. Management then introduced several new indicators. Procurement officers were evaluated on input price as well as supplier reliability and quality. Warehouse managers were evaluated on inventory accuracy, stock availability and distribution coverage. Programme managers were evaluated on the proportion of eligible households receiving adequate supplies. An equity measure was introduced to compare coverage across districts, while an ethics indicator tracked conflicts of interest and deviations from approved allocation procedures. The Society's trustees emphasised that a lower purchase price was useful only if it contributed to reliable and fair delivery of the intended service. They also introduced independent verification of beneficiary records to reduce manipulation of performance data.`,
+  questions: [
+    {
+      question_id: "spm_ch10_014_1",
+      chapter_name: ["Economy"],
+      question: "What aspect of the supplier contract initially indicated an improvement in economy?",
+      options: ["10% reduction in purchase price", "Increase in stock shortages", "Lower rural coverage", "Local official recommendations"],
+      answer: 0,
+      reason: "A lower input purchase price, while maintaining appropriate quality and quantity, is an economy-related improvement."
+    },
+    {
+      question_id: "spm_ch10_014_2",
+      chapter_name: ["Efficiency", "Effectiveness"],
+      question: "Why was the high distribution percentage potentially misleading?",
+      options: ["Distribution percentages cannot be calculated", "Stock transfers helped centres report high distribution even though some communities faced shortages", "Distribution is unrelated to output", "Urban communities cannot receive food"],
+      answer: 1,
+      reason: "The aggregate distribution percentage concealed shortages and unequal coverage. A measure must reflect meaningful service delivery rather than merely reported activity."
+    },
+    {
+      question_id: "spm_ch10_014_3",
+      chapter_name: ["Equity"],
+      question: "Which new measure most directly addresses the unequal coverage between rural and urban districts?",
+      options: ["Purchase price", "District-level coverage comparison", "Supplier delivery time only", "Total donations"],
+      answer: 1,
+      reason: "Comparing coverage across districts can identify whether resources are being distributed fairly among different beneficiary groups and locations."
+    },
+    {
+      question_id: "spm_ch10_014_4",
+      chapter_name: ["Ethics"],
+      question: "Why was giving priority to households recommended by local officials considered an ethical problem?",
+      options: ["Local officials cannot communicate", "It departed from the approved needs-based allocation procedure", "It reduced procurement prices", "It increased warehouse capacity"],
+      answer: 1,
+      reason: "The programme was supposed to allocate supplies according to documented need. Giving preference based on influence rather than need compromises ethical and fair administration."
+    },
+    {
+      question_id: "spm_ch10_014_5",
+      chapter_name: ["Value for Money"],
+      question: "Which conclusion best reflects the trustees' approach?",
+      options: ["The cheapest supplier should always be selected", "A single KPI can fully demonstrate VFM", "Input cost, service reliability, fairness and intended outcomes must be considered together", "Ethics has no relationship with performance"],
+      answer: 2,
+      reason: "The case demonstrates that economy alone is insufficient. VFM requires consideration of economy, efficiency, effectiveness and the additional dimensions of equity and ethics."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_015",
+  case_chapter: "Chapter10",
+  case_topic: ["Benchmarking", "Cost and Efficiency", "Service Quality", "Flexibility", "NFP Performance"],
+  difficulty: "medium",
+  caseText: `<p>HomeSupport Association provides accommodation and support services to elderly and low-income residents. It manages 500 properties and employs 16 staff members who coordinate maintenance, tenant support and property administration. During the year, the Association spent ₹32 lakh on employee costs and ₹22 lakh on routine repairs. It also lost ₹12 lakh of potential rental income because some houses remained vacant. The management committee compared its results with a nearby commercial property provider that managed 250 houses and employed 14 staff. The commercial provider spent ₹13 lakh on routine repairs and had almost no vacant properties. HomeSupport's management initially concluded that the commercial provider was more efficient because its repair cost was lower. However, further analysis showed that HomeSupport's properties were older and were provided to residents at subsidised rents. The committee therefore decided that benchmarking should not simply copy the commercial provider's overall performance. Instead, it identified specific operational indicators that could still be useful, such as employee cost per property, repair cost per property, vacancy rate, emergency repair response time and tenant satisfaction. The Association also introduced a flexibility measure based on the time taken to accommodate a tenant's request for a different-sized property. A service-quality measure was introduced using tenant feedback concerning staff behaviour, safety and basic amenities. During the following year, HomeSupport reduced employee cost per property through better work allocation but repair cost per property remained high. Vacancy rates fell after the Association introduced a faster property allocation process. Tenant satisfaction also increased despite a modest rise in maintenance expenditure. The committee concluded that benchmarking was useful for identifying areas requiring investigation but that comparisons had to be interpreted in light of differences in objectives, assets, beneficiaries and operating conditions.`,
+  questions: [
+    {
+      question_id: "spm_ch10_015_1",
+      chapter_name: ["Benchmarking"],
+      question: "Why did the committee reject the conclusion that HomeSupport was automatically inefficient merely because its repair cost exceeded the commercial provider's?",
+      options: ["Repair costs are never relevant", "HomeSupport's properties were older and its objectives and operating conditions differed", "Commercial providers cannot be benchmarked", "NFPs have no operating costs"],
+      answer: 1,
+      reason: "Benchmarking requires meaningful comparison. Differences in property age, objectives, beneficiaries and operating conditions can make direct comparison misleading."
+    },
+    {
+      question_id: "spm_ch10_015_2",
+      chapter_name: ["Cost and Efficiency"],
+      question: "What is HomeSupport's employee cost per property?",
+      options: ["₹5,400", "₹6,000", "₹6,400", "₹7,200"],
+      answer: 2,
+      reason: "₹32,00,000 / 500 properties = ₹6,400 per property."
+    },
+    {
+      question_id: "spm_ch10_015_3",
+      chapter_name: ["Cost and Efficiency"],
+      question: "What is the commercial provider's approximate routine repair cost per property?",
+      options: ["₹4,200", "₹5,200", "₹5,800", "₹6,400"],
+      answer: 1,
+      reason: "₹13,00,000 / 250 properties = ₹5,200 per property."
+    },
+    {
+      question_id: "spm_ch10_015_4",
+      chapter_name: ["Flexibility"],
+      question: "Which measure introduced by HomeSupport most directly measures flexibility?",
+      options: ["Employee cost per property", "Time taken to accommodate a tenant's request for a different-sized property", "Total annual rent", "Total number of employees"],
+      answer: 1,
+      reason: "Flexibility concerns the ability to respond to changing customer requirements. Responding to a tenant's request for a different-sized property directly measures this."
+    },
+    {
+      question_id: "spm_ch10_015_5",
+      chapter_name: ["Service Quality"],
+      question: "Which factor is most directly relevant to the Association's service-quality measure?",
+      options: ["Tenant feedback about safety and amenities", "Employee cost alone", "Total rental income", "Number of properties owned"],
+      answer: 0,
+      reason: "Service quality can be assessed through customer/tenant feedback concerning staff behaviour, amenities, safety and related service characteristics."
+    }
+  ]
+},
+
+// ============================================================
+// HARD CASES
+// ============================================================
+
+{
+  case_id: "spm_ch10_016",
+  case_chapter: "Chapter10",
+  case_topic: ["Value for Money", "Economy", "Efficiency", "Effectiveness", "Multiple Objectives", "Benchmarking"],
+  difficulty: "hard",
+  caseText: `<p>HopeHousing Mission is a large not-for-profit organisation that provides subsidised housing to low-income families, senior citizens and people temporarily displaced by natural disasters. It manages 800 houses across four districts. The organisation receives government grants, charitable contributions and subsidised rent from tenants. During the year, HopeHousing received ₹3.20 crore of rental income and spent ₹3.05 crore on operating activities. The board initially regarded the ₹15 lakh operating surplus as evidence of strong performance. However, the Chief Executive Officer warned that the surplus could not be considered in isolation because several houses had been kept vacant for long periods while awaiting major refurbishment. The organisation also spent ₹54 lakh on employees, ₹48 lakh on planned maintenance and ₹36 lakh on routine repairs. A comparable commercial provider managed 420 properties and employed 20 staff, while HopeHousing employed 24 staff. The commercial provider's routine repair expenditure was ₹18 lakh. HopeHousing's management argued that its higher repair expenditure reflected the older condition of its properties and the additional obligations imposed by its social mission. The board therefore introduced a detailed VFM analysis. Economy was assessed through the price and quality of maintenance materials. Efficiency was assessed using employee cost per property, repair cost per property, vacancy rate and processing time for maintenance requests. Effectiveness was assessed through tenant satisfaction, safety compliance, suitability of accommodation and the extent to which targeted households received appropriate housing. The board also introduced flexibility measures covering emergency response time and the ability to move households to different-sized accommodation when family circumstances changed. During the year, HopeHousing's employee cost per property was ₹6,750, while the commercial provider's employee cost per property was approximately ₹7,143. HopeHousing's routine repair cost per property was ₹4,500, while the commercial provider's was approximately ₹4,286. The CEO warned that the lower commercial repair cost should not automatically be treated as evidence of better efficiency because property age and maintenance standards differed. The organisation also discovered that 10% of potential rental income had been lost due to vacancies. Management initially proposed reducing maintenance expenditure to improve the surplus, but the housing director opposed the proposal because delaying necessary repairs could reduce safety and tenant satisfaction. The board therefore decided that the most appropriate benchmark should be a group of similar NFP housing providers, supplemented by selected commercial benchmarks for specific processes. It also required annual benchmarking and corrective action plans for areas where costs were high or service quality was weak.`,
+  questions: [
+    {
+      question_id: "spm_ch10_016_1",
+      chapter_name: ["Efficiency"],
+      question: "What is HopeHousing's employee cost per property?",
+      options: ["₹6,250", "₹6,750", "₹7,143", "₹7,500"],
+      answer: 1,
+      reason: "Employee cost per property = ₹54,00,000 / 800 = ₹6,750."
+    },
+    {
+      question_id: "spm_ch10_016_2",
+      chapter_name: ["Efficiency"],
+      question: "What is HopeHousing's routine repair cost per property?",
+      options: ["₹4,000", "₹4,286", "₹4,500", "₹4,800"],
+      answer: 2,
+      reason: "Routine repair cost per property = ₹36,00,000 / 800 = ₹4,500."
+    },
+    {
+      question_id: "spm_ch10_016_3",
+      chapter_name: ["Benchmarking"],
+      question: "Which comparison from the case suggests that HopeHousing has a lower employee cost per property than the commercial provider?",
+      options: ["₹6,750 compared with approximately ₹7,143", "₹4,500 compared with approximately ₹4,286", "₹54 lakh compared with ₹18 lakh", "24 employees compared with 20 employees"],
+      answer: 0,
+      reason: "HopeHousing employee cost per property = ₹54 lakh/800 = ₹6,750. Commercial provider = ₹42 lakh/420 = approximately ₹7,143. Therefore HopeHousing has the lower employee cost per property."
+    },
+    {
+      question_id: "spm_ch10_016_4",
+      chapter_name: ["Value for Money", "Effectiveness"],
+      question: "Why could reducing maintenance expenditure to increase the operating surplus damage VFM?",
+      options: ["Maintenance is never an input", "Lower expenditure could reduce safety and service quality and therefore effectiveness", "Surplus is illegal", "Economy requires maximum spending"],
+      answer: 1,
+      reason: "Spending less is not automatically economical if it compromises required quality, safety or the organisation's housing objectives."
+    },
+    {
+      question_id: "spm_ch10_016_5",
+      chapter_name: ["Benchmarking"],
+      question: "What is the strongest reason for using similar NFP housing providers as the primary benchmark?",
+      options: ["They always have lower costs", "They are more likely to have similar objectives, beneficiaries and service obligations", "Commercial organisations have no useful data", "NFPs do not require financial measures"],
+      answer: 1,
+      reason: "Benchmarking is most meaningful where organisations have comparable objectives and operating conditions. Similar NFP housing providers are therefore more appropriate primary benchmarks."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_017",
+  case_chapter: "Chapter10",
+  case_topic: ["Adapted Balanced Scorecard", "Mission", "Financial Perspective", "Internal Processes", "Innovation and Learning"],
+  difficulty: "hard",
+  caseText: `<p>MedAccess Foundation operates free and subsidised diagnostic centres for low-income patients. The Foundation's mission is to improve access to reliable diagnostic services for people who would otherwise struggle to afford them. It receives donations from pharmaceutical companies, grants from charitable organisations and government support. For several years, management evaluated each centre primarily on annual expenditure and the number of tests performed. This created unexpected behaviour. Some centre managers increased the number of simple tests because they were quicker to process, while complex cases were sometimes referred elsewhere even when the centre had the necessary capability. Other managers postponed equipment maintenance near year-end because maintenance expenditure would increase their reported costs. The board asked Kaplan's adapted Balanced Scorecard approach to be considered. The beneficiary perspective was redesigned around patient satisfaction, waiting time, accessibility for underserved groups and reliability of diagnostic results. The financial perspective included fundraising, diversification of funding sources, budget management and appropriate distribution of funds. Internal-process measures included turnaround time, equipment utilisation, quality-control compliance and percentage of tests requiring repeat processing. Innovation and learning measures included staff training, adoption of new diagnostic technology, development of new service protocols and employee suggestions implemented. The Foundation also introduced VFM measures. Economy included procurement cost and quality of laboratory consumables. Efficiency included tests processed per laboratory employee and equipment utilisation. Effectiveness included accurate diagnosis, reduction in avoidable referrals and improvement in patient access. During the year, the number of tests performed increased by 12%, but complex-case referrals also increased by 20%. Patient waiting time improved from 90 minutes to 55 minutes, while repeat-test rates fell from 6% to 3%. Staff training hours increased by 40%. Funding from the largest donor declined from 55% to 42% of total funds because the Foundation deliberately diversified its donor base. However, one rural centre continued to report poor accessibility because transport links were weak. The CEO refused to label the organisation fully successful merely because the number of tests and funding had increased. She argued that the scorecard must demonstrate whether the Foundation was actually fulfilling its mission. The board therefore required the rural centre to develop an accessibility plan and introduced separate indicators for underserved-population coverage.`,
+  questions: [
+    {
+      question_id: "spm_ch10_017_1",
+      chapter_name: ["Adapted Balanced Scorecard"],
+      question: "Why was the number of tests performed considered inadequate as the sole measure of centre performance?",
+      options: ["Tests cannot be counted", "Managers could increase simple-test volumes while avoiding complex cases", "Testing has no relationship with healthcare", "Financial measures are prohibited"],
+      answer: 1,
+      reason: "The case shows that managers could improve the output count by focusing on easy cases while referring complex cases elsewhere. This could improve the KPI without improving mission achievement."
+    },
+    {
+      question_id: "spm_ch10_017_2",
+      chapter_name: ["Internal Processes"],
+      question: "Which result indicates improvement in internal process quality?",
+      options: ["Repeat-test rate fell from 6% to 3%", "Largest donor funding fell", "Training increased", "Tests increased"],
+      answer: 0,
+      reason: "A lower repeat-test rate indicates fewer processing or quality problems and therefore improved internal process performance."
+    },
+    {
+      question_id: "spm_ch10_017_3",
+      chapter_name: ["Financial Perspective"],
+      question: "The decline in dependence on the largest donor from 55% to 42% primarily represents:",
+      options: ["Poor beneficiary satisfaction", "Improved funding diversification", "Lower internal efficiency", "Reduced service quality"],
+      answer: 1,
+      reason: "A lower proportion of funding coming from one donor indicates greater diversification of the Foundation's funding base."
+    },
+    {
+      question_id: "spm_ch10_017_4",
+      chapter_name: ["Innovation and Learning"],
+      question: "The 40% increase in staff training hours most directly belongs to:",
+      options: ["Financial perspective", "Beneficiary perspective", "Internal process perspective", "Innovation and Learning perspective"],
+      answer: 3,
+      reason: "Employee development and capability building are core elements of the Innovation and Learning perspective."
+    },
+    {
+      question_id: "spm_ch10_017_5",
+      chapter_name: ["Mission", "Effectiveness"],
+      question: "Why did the CEO consider the poor accessibility of the rural centre significant despite improvements in several other indicators?",
+      options: ["The rural centre had the highest expenditure", "Access for underserved groups is directly connected to the Foundation's mission", "The rural centre had no employees", "Funding diversification had failed"],
+      answer: 1,
+      reason: "The Foundation's mission is to improve access to diagnostic services for people who struggle to afford them. Continued poor accessibility for a rural underserved population therefore represents an effectiveness concern."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_018",
+  case_chapter: "Chapter10",
+  case_topic: ["Value for Money", "Multiple Objectives", "Equity", "Ethics", "Utility of Funds"],
+  difficulty: "hard",
+  caseText: `<p>Community Nutrition Alliance runs a nationwide programme to provide nutritious meals to children in disadvantaged communities. The programme receives ₹12 crore of government funding and ₹4 crore from charitable contributors. During the year, management reported that 95% of the programme budget had been spent and that 98% of the planned meal packages had been distributed. The board initially considered these results satisfactory. However, an independent evaluation revealed that the distribution figure concealed major regional differences. Urban centres had received almost all planned supplies, while several remote districts had received only 72% of their allocation. The procurement team had achieved a 7% reduction in the average purchase price of meal ingredients by signing a large-volume contract. Unfortunately, the contract required minimum order quantities that exceeded the storage capacity of several regional warehouses, resulting in wastage of perishable ingredients. Management also discovered that some local officials had requested additional meal packages for communities that were politically influential even though their nutritional-need assessment was lower than that of other communities. The programme director initially defended the practice as necessary to maintain cooperation with local authorities. The ethics committee rejected this reasoning. The board therefore redesigned its performance system using VFM principles and introduced separate indicators for economy, efficiency, effectiveness, equity and ethics. Economy measures included purchase price, ingredient quality and wastage arising from procurement decisions. Efficiency measures included meals distributed per logistics employee, warehouse utilisation and transport cost per package. Effectiveness measures included the percentage of children receiving the planned nutritional support and improvements in nutritional indicators. Equity measures compared service coverage across districts after adjusting for assessed need. Ethics measures included adherence to allocation rules, conflict-of-interest declarations and transparent procurement. The board also introduced outcome and impact measures because it recognised that the number of meals distributed did not necessarily establish whether children's nutritional health improved. After implementation, the programme's reported distribution rate fell from 98% to 93%, but coverage of remote districts increased significantly and food wastage declined. The board regarded the fall in the headline distribution rate as acceptable because the revised measurement system provided a more truthful representation of performance and better aligned resource use with the programme's purpose.`,
+  questions: [
+    {
+      question_id: "spm_ch10_018_1",
+      chapter_name: ["Economy"],
+      question: "Why was the 7% reduction in ingredient purchase price not sufficient to establish that procurement had improved economy?",
+      options: ["Purchase price is never relevant", "The minimum-order requirement created storage problems and increased wastage", "Government funding cannot be used for food", "Economy ignores resource costs"],
+      answer: 1,
+      reason: "Economy concerns obtaining appropriate inputs at the lowest appropriate cost. If a cheaper purchase arrangement causes excessive wastage, the apparent saving may not represent true economy."
+    },
+    {
+      question_id: "spm_ch10_018_2",
+      chapter_name: ["Efficiency"],
+      question: "Which measure would best assess logistics efficiency?",
+      options: ["Meals distributed per logistics employee", "Political influence of local officials", "Donor satisfaction only", "Total annual funding"],
+      answer: 0,
+      reason: "Meals distributed per logistics employee relates output to the labour input used and therefore provides an efficiency measure."
+    },
+    {
+      question_id: "spm_ch10_018_3",
+      chapter_name: ["Equity"],
+      question: "Why was comparing district coverage after adjusting for assessed need important?",
+      options: ["It measures only procurement cost", "It helps determine whether resources are distributed fairly according to need", "It eliminates the need for outcome measures", "It measures employee productivity"],
+      answer: 1,
+      reason: "Equity requires fair allocation. Adjusting coverage for assessed need allows management to identify whether disadvantaged areas are receiving an appropriate share of resources."
+    },
+    {
+      question_id: "spm_ch10_018_4",
+      chapter_name: ["Ethics"],
+      question: "Why was the allocation of additional packages to politically influential communities considered unethical?",
+      options: ["Political communities cannot receive food", "The allocation departed from the approved needs-based criteria", "The decision reduced the purchase price", "The communities were located in cities"],
+      answer: 1,
+      reason: "The programme's resources were supposed to be allocated based on nutritional need. Giving preference because of political influence violates the approved allocation principle."
+    },
+    {
+      question_id: "spm_ch10_018_5",
+      chapter_name: ["Effectiveness", "Impact"],
+      question: "Why did the board introduce nutritional indicators in addition to the number of meals distributed?",
+      options: ["Meal distribution is an input measure", "The ultimate purpose is improved nutritional health, not merely distribution activity", "Nutritional health is unrelated to the programme", "Financial information cannot be collected"],
+      answer: 1,
+      reason: "Outputs such as meals distributed do not necessarily prove that the desired outcome has been achieved. Nutritional indicators provide evidence of effectiveness and longer-term impact."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_019",
+  case_chapter: "Chapter10",
+  case_topic: ["Value for Money", "Benchmarking", "Service Quality", "Flexibility", "Cost and Efficiency"],
+  difficulty: "hard",
+  caseText: `<p>SafeShelter Housing Trust provides temporary and subsidised accommodation to families affected by poverty, domestic displacement and natural disasters. The Trust manages 900 accommodation units across five regions. Its funding comes from government grants, charitable donations and subsidised rent. The Trust's management had traditionally measured performance using three indicators: total expenditure, number of occupied units and number of families accommodated. During a strategic review, the board discovered that these measures encouraged managers to maximise occupancy without considering whether the properties were suitable for the families placed in them. In one region, occupancy was 97%, but tenant complaints regarding overcrowding and unsuitable property size had increased substantially. Another region had lower occupancy because it deliberately retained a proportion of units as emergency capacity for disaster-related demand. The finance department argued that the second region was inefficient because vacant units represented lost rental income. The operations director argued that the emergency capacity had strategic value even though it created an apparent short-term financial cost. The Trust therefore introduced a broader VFM framework. Economy measures covered procurement prices and quality of building materials. Efficiency measures included employee cost per unit, maintenance cost per unit, processing time for housing applications and property utilisation. Effectiveness measures included suitability of accommodation, tenant satisfaction, safety compliance and successful resolution of housing needs. Flexibility measures included emergency response time and the ability to move a household to a different property when its needs changed. Service quality was assessed using tenant surveys, complaint analysis and safety inspections. The Trust also began benchmarking selected measures against other housing organisations. Management found that the Trust's average employee cost per unit was lower than several comparable organisations, but maintenance cost per unit was higher. Further investigation showed that its buildings were older and required more frequent repairs. The board therefore refused to impose an arbitrary target based solely on the lowest external repair cost. Instead, it asked management to identify best practices and assess whether maintenance processes, contracts or asset-management methods could be improved. It also instructed management to report separately on emergency-capacity utilisation so that vacant units retained for strategic reasons would not automatically be treated as poor performance. The board concluded that the usefulness of a KPI depended on whether it captured the actual objective of the organisation rather than simply providing an easy-to-measure financial result.`,
+  questions: [
+    {
+      question_id: "spm_ch10_019_1",
+      chapter_name: ["Effectiveness"],
+      question: "Why did the board consider the 97% occupancy rate in one region insufficient evidence of good performance?",
+      options: ["High occupancy is always poor", "High occupancy was accompanied by overcrowding and unsuitable accommodation", "Occupancy cannot be measured", "The region had no beneficiaries"],
+      answer: 1,
+      reason: "Effectiveness concerns achievement of intended objectives. High occupancy is not sufficient if families are placed in unsuitable or overcrowded accommodation."
+    },
+    {
+      question_id: "spm_ch10_019_2",
+      chapter_name: ["Flexibility"],
+      question: "Why could the region with lower occupancy still be performing well?",
+      options: ["It had no properties", "It deliberately retained capacity for emergency demand", "It had no staff", "It refused to serve beneficiaries"],
+      answer: 1,
+      reason: "The lower occupancy partly reflected deliberate retention of emergency capacity. A financial occupancy measure alone would fail to recognise this strategic purpose."
+    },
+    {
+      question_id: "spm_ch10_019_3",
+      chapter_name: ["Service Quality"],
+      question: "Which combination would provide the strongest evidence of service quality?",
+      options: ["Tenant surveys, complaint analysis and safety inspections", "Total expenditure and rental income", "Number of employees and donations", "Occupancy alone"],
+      answer: 0,
+      reason: "Service quality can be assessed through beneficiary feedback, complaints and objective assessments such as safety inspections."
+    },
+    {
+      question_id: "spm_ch10_019_4",
+      chapter_name: ["Benchmarking"],
+      question: "Why did the board avoid simply adopting the lowest maintenance cost achieved by another housing organisation?",
+      options: ["Benchmarking is never useful", "Differences in building age and operating circumstances can make direct cost comparison misleading", "Maintenance costs cannot be measured", "Higher maintenance cost is always desirable"],
+      answer: 1,
+      reason: "Benchmarking should be interpreted in context. Older buildings may naturally require more maintenance, so the lowest external cost may not be an appropriate target."
+    },
+    {
+      question_id: "spm_ch10_019_5",
+      chapter_name: ["Performance Measurement"],
+      question: "What is the central lesson from the Trust's experience with occupancy as a KPI?",
+      options: ["Every KPI should be financial", "A KPI can create undesirable behaviour if it does not reflect the organisation's actual objectives", "Occupancy should never be measured", "NFPs should avoid targets"],
+      answer: 1,
+      reason: "The occupancy KPI encouraged managers to maximise occupancy without necessarily ensuring suitability or retaining emergency capacity. Performance measures must therefore be aligned with organisational objectives."
+    }
+  ]
+},
+
+{
+  case_id: "spm_ch10_020",
+  case_chapter: "Chapter10",
+  case_topic: ["Adapted Balanced Scorecard", "Value for Money", "Multiple Objectives", "Benchmarking", "Mission", "Performance Measurement"],
+  difficulty: "hard",
+  caseText: `<p>National Skills Access Foundation is a not-for-profit organisation established to provide vocational training to unemployed and economically disadvantaged adults. It operates 30 training centres and receives government grants, corporate donations and contributions from charitable organisations. Its mission is to improve employability and long-term economic independence among people who have limited access to formal employment opportunities. For several years, the Foundation evaluated centres mainly on the number of students enrolled, total training hours delivered and expenditure against budget. The system created several behavioural problems. Centre managers tried to maximise enrolment even when some students were unlikely to complete the programme. Some managers reduced counselling services because counselling costs increased the centre's expenditure. Others preferred popular courses even when local employers reported that demand for those skills was falling. The board therefore asked management to redesign the performance measurement system using an Adapted Balanced Scorecard together with Value for Money principles. The beneficiary perspective included student satisfaction, course completion, employment placement within six months, employer feedback and accessibility for disadvantaged groups. The financial perspective included funds raised, funding diversification, expenditure against approved budgets and proportion of funds appropriately directed toward programme activities. Internal processes included application-processing time, attendance monitoring, trainer utilisation, course-quality reviews and employer coordination. Innovation and learning included trainer development, new course design, digital learning capability and implementation of employee suggestions. VFM indicators included economy of training materials and external trainers, efficiency through trainees supported per trainer and cost per completed trainee, and effectiveness through completion rates, employment placement and longer-term employment retention. The Foundation also introduced equity indicators to determine whether disadvantaged groups and remote regions were receiving appropriate access. During the year, total enrolment increased by 9%, but the completion rate increased from 64% to 78%. Employment placement within six months increased from 46% to 61%. Average cost per enrolled trainee increased by 6%, but cost per successfully completed trainee fell by 11% because fewer students dropped out. The Foundation also introduced three new courses after employer surveys identified shortages in renewable-energy maintenance and healthcare support roles. However, one regional centre had a much lower employment-placement rate because local employers were reluctant to hire trainees from that area. The centre manager argued that the low placement rate was beyond the centre's control. The board agreed that external factors should be considered but required the centre to develop measures such as employer partnerships, remote placement support and additional career counselling. Meanwhile, the largest corporate donor requested that the Foundation increase the number of students enrolled rather than focusing on completion and employment outcomes. The trustees rejected the idea of replacing outcome measures with enrolment alone because the Foundation's mission was not simply to train more people but to improve employability and economic independence. The board therefore adopted a dashboard combining financial, beneficiary, internal-process and innovation measures, supplemented by VFM and equity indicators. It also decided that the measures should be reviewed periodically so that the scorecard could change when the Foundation's strategy, labour-market conditions or beneficiary needs changed.`,
+  questions: [
+    {
+      question_id: "spm_ch10_020_1",
+      chapter_name: ["Value for Money", "Efficiency"],
+      question: "Why did cost per enrolled trainee increase while cost per successfully completed trainee fell?",
+      options: ["The Foundation stopped training students", "The completion rate improved substantially, so resources were spread over more successful completions", "Training materials became free", "Enrolment decreased"],
+      answer: 1,
+      reason: "The case states that completion increased from 64% to 78%. Although cost per enrolled trainee rose, the larger number of successful completions caused cost per completed trainee to fall."
+    },
+    {
+      question_id: "spm_ch10_020_2",
+      chapter_name: ["Adapted Balanced Scorecard", "Mission"],
+      question: "Why was employment placement within six months considered more important than enrolment alone for assessing mission achievement?",
+      options: ["Enrolment is a financial measure", "The Foundation's mission concerns employability and economic independence rather than simply the number enrolled", "Employment has no relation to vocational training", "Enrolment cannot be measured"],
+      answer: 1,
+      reason: "The mission is to improve employability and long-term economic independence. Employment placement therefore provides a much stronger indication of mission-related effectiveness than enrolment alone."
+    },
+    {
+      question_id: "spm_ch10_020_3",
+      chapter_name: ["Innovation and Learning"],
+      question: "The introduction of renewable-energy maintenance and healthcare-support courses primarily demonstrates:",
+      options: ["Failure of financial control", "Innovation and adaptation to changing labour-market requirements", "Reduced beneficiary focus", "Poor internal efficiency"],
+      answer: 1,
+      reason: "The new courses were introduced after employer surveys identified emerging skill shortages. This demonstrates organisational learning, innovation and adaptation."
+    },
+    {
+      question_id: "spm_ch10_020_4",
+      chapter_name: ["Effectiveness", "External Factors"],
+      question: "How should the board treat the regional centre's low employment-placement rate when local employers are reluctant to hire trainees?",
+      options: ["Ignore the issue completely", "Hold the centre fully responsible regardless of circumstances", "Recognise the external constraint but require actions within the centre's influence to improve outcomes", "Remove employment placement from all KPIs"],
+      answer: 2,
+      reason: "NFP performance measurement is difficult because some outcomes are influenced by external factors. However, the organisation should still identify controllable actions, such as employer partnerships, career counselling and remote placement support."
+    },
+    {
+      question_id: "spm_ch10_020_5",
+      chapter_name: ["Adapted Balanced Scorecard", "Multiple Objectives"],
+      question: "Why did the trustees reject the largest donor's request to focus primarily on enrolment numbers?",
+      options: ["Donors have no role in NFPs", "Enrolment alone could encourage managers to maximise activity without achieving meaningful outcomes", "Enrolment is always unethical", "Financial measures are prohibited"],
+      answer: 1,
+      reason: "Maximising enrolment could recreate the behavioural problem identified earlier. The organisation's mission requires meaningful employment outcomes, so the scorecard must include completion and employment measures rather than focusing solely on activity volume."
+    }
+  ]
 }
 
 
