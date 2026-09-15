@@ -40481,7 +40481,807 @@ const AICaseStudies = [
       reason: "Maximising enrolment could recreate the behavioural problem identified earlier. The organisation's mission requires meaningful employment outcomes, so the scorecard must include completion and employment measures rather than focusing solely on activity volume."
     }
   ]
-}
+},
+// Chaper10
+
+  // =========================================================
+  // MEDIUM CASE 1
+  // =========================================================
+
+  {
+    case_id: "spm_ch11_001",
+    case_chapter: "Chapter11",
+    case_topic: ["Performance Management System", "Responsibility Accounting", "Performance Reports", "Variance Analysis"],
+    difficulty: "medium",
+    caseText: `<p>Sunrise Components Limited manufactures precision components used by automobile and agricultural-equipment manufacturers. The company operates through four major responsibility centres: Production, Procurement, Sales and Logistics. Over the last two years, senior management noticed that the monthly financial statements were being prepared accurately but were not helping managers identify operational problems quickly. The finance department therefore introduced a monthly performance reporting system under which each responsibility centre receives a report comparing its controllable actual results with the corresponding budget. The Production Manager is responsible for machine utilisation, labour efficiency, production wastage and controllable manufacturing costs. The Procurement Manager is responsible for purchase prices, supplier performance and material availability. The Sales Manager is responsible for sales volume, selling expenses and customer complaints, while the Logistics Manager is responsible for transportation cost, delivery time and damaged shipments. In April, the Production Department had budgeted controllable conversion costs of ₹48 lakh for 24,000 units. Actual production was 25,000 units and actual controllable conversion costs were ₹51 lakh. The Finance Manager cautioned that the ₹48 lakh budget was originally prepared for 24,000 units and therefore should not be compared blindly with the actual cost of producing 25,000 units. The report was accordingly redesigned to show the effect of the change in activity level separately from controllable efficiency-related deviations. The monthly report also contained a short executive summary highlighting three issues: production output was higher than planned, machine downtime had increased during the final week, and customer complaints relating to delivery delays had risen. The Production Manager initially argued that the higher cost was entirely caused by the additional production. However, the finance team explained that the report should help management distinguish changes caused by activity from deviations that the responsible manager could actually influence. The report was circulated first to departmental managers and then summarised for the Operations Director. The Operations Director also asked that major unfavourable variances be accompanied by narrative explanations rather than merely displaying figures in red. The company intends to use the reports every month so that recurring operational problems can be identified before they become major financial issues.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch11_001_1",
+        chapter_name: ["Performance Reports", "Responsibility Accounting"],
+        question: "What is the primary reason for preparing separate performance reports for the responsibility centres in Sunrise Components Limited?",
+        options: [
+          "To replace the company's statutory financial statements",
+          "To judge managers mainly on items over which they have responsibility and control",
+          "To ensure every department has exactly the same performance targets",
+          "To eliminate the need for budgets"
+        ],
+        answer: 1,
+        reason: "Responsibility accounting evaluates managers based on costs, revenues or assets for which they are responsible and which they can influence."
+      },
+      {
+        question_id: "spm_ch11_001_2",
+        chapter_name: ["Performance Reports", "Activity Changes"],
+        question: "Why was the finance team correct in cautioning against directly comparing ₹51 lakh of actual cost with the original ₹48 lakh budget?",
+        options: [
+          "Because actual costs can never be compared with budgets",
+          "Because the budget was prepared for a different activity level",
+          "Because production costs are always uncontrollable",
+          "Because only non-financial information should be reported"
+        ],
+        answer: 1,
+        reason: "The original budget related to 24,000 units whereas actual production was 25,000 units. Activity changes need to be considered before evaluating controllable performance."
+      },
+      {
+        question_id: "spm_ch11_001_3",
+        chapter_name: ["Performance Reports", "Executive Summary"],
+        question: "Which part of the monthly report would most appropriately provide a concise overview of the key issues before detailed departmental analysis?",
+        options: [
+          "Variance schedule",
+          "Executive summary",
+          "External audit report",
+          "General ledger"
+        ],
+        answer: 1,
+        reason: "The executive summary provides a brief snapshot of the important performance information contained in the report."
+      },
+      {
+        question_id: "spm_ch11_001_4",
+        chapter_name: ["Performance Reports", "Narrative Commentary"],
+        question: "Why did the Operations Director ask managers to provide narrative explanations for major unfavourable variances?",
+        options: [
+          "Because figures alone may not explain the causes or significance of important deviations",
+          "Because narrative commentary replaces all quantitative information",
+          "Because variance reports cannot contain numbers",
+          "Because managers are not responsible for explaining variances"
+        ],
+        answer: 0,
+        reason: "Narrative commentary draws attention to significant issues and explains their causes and implications."
+      },
+      {
+        question_id: "spm_ch11_001_5",
+        chapter_name: ["Performance Management System"],
+        question: "What is the most appropriate long-term purpose of issuing these reports every month?",
+        options: [
+          "To produce more accounting records without management action",
+          "To identify trends and deviations early and facilitate corrective action",
+          "To prevent managers from making operating decisions",
+          "To ensure all departments have identical costs"
+        ],
+        answer: 1,
+        reason: "Frequent performance reporting helps identify deviations and trends early so corrective action can be taken."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM CASE 2
+  // =========================================================
+
+  {
+    case_id: "spm_ch11_002",
+    case_chapter: "Chapter11",
+    case_topic: ["Types of Performance Reports", "Progress Report", "Status Report", "Trend Report", "Variance Report"],
+    difficulty: "medium",
+    caseText: `<p>GreenLine Infrastructure Services Limited has undertaken a twelve-month project to install solar-powered street lighting across three districts. The project team consists of procurement, engineering, installation and testing units. The Project Director previously relied on a single monthly document that attempted to explain everything from current project status to future expenditure and completed work. Managers found the document confusing because different types of information were mixed together. For the new reporting cycle, the Project Director asked the management accountant to design separate reports according to their purpose. At the end of June, the team had installed 6,400 lights against a planned cumulative installation of 7,000 lights. The project had spent ₹8.4 crore against a planned expenditure of ₹8 crore. During June itself, 1,500 lights were installed compared with 1,400 during May. The procurement team reported that all major equipment for July had already been ordered, but a supplier had warned of a possible two-week delay in delivery of specialised controllers. The Project Director wanted one report that would simply show the current condition of the project, including its present scope, cost, schedule and quality position. He also wanted another report that would show what had been completed since the previous reporting period. The finance team was asked to compare actual cumulative expenditure with the approved project expenditure because management wanted to identify deviations from the plan. In addition, the Project Director wanted to compare June's installation performance with May's performance to determine whether the project's execution rate was improving or deteriorating. Finally, because of the possible supplier delay, he requested an estimate of the likely completion position and resource requirement for the remaining months. The management accountant explained that these requirements corresponded to different types of performance reports rather than one generic report. The reports would be circulated to the project managers and then consolidated for senior management review. The Director also insisted that the report headings clearly state the period covered so that a comparison between cumulative and monthly information would not be misunderstood.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch11_002_1",
+        chapter_name: ["Status Report"],
+        question: "Which report is most appropriate for showing the current scope, cost, schedule and quality position of the solar-lighting project at the end of June?",
+        options: [
+          "Status report",
+          "Progress report",
+          "Trend report",
+          "Forecasting report"
+        ],
+        answer: 0,
+        reason: "A status report provides a snapshot of the state of an activity or project at a particular point in its life cycle."
+      },
+      {
+        question_id: "spm_ch11_002_2",
+        chapter_name: ["Progress Report"],
+        question: "Which report would specifically show what work has been completed since the previous reporting period?",
+        options: [
+          "Variance report",
+          "Progress report",
+          "Forecasting report",
+          "Status report"
+        ],
+        answer: 1,
+        reason: "A progress report focuses on what has been completed or what development has occurred since the previous progress report."
+      },
+      {
+        question_id: "spm_ch11_002_3",
+        chapter_name: ["Trend Report"],
+        question: "The comparison of June's 1,500 installations with May's 1,400 installations is most directly associated with which report?",
+        options: [
+          "Status report",
+          "Trend report",
+          "Variance report",
+          "Earned Value Report"
+        ],
+        answer: 1,
+        reason: "A trend report compares performance with the same or preceding reporting period to identify movement in performance."
+      },
+      {
+        question_id: "spm_ch11_002_4",
+        chapter_name: ["Variance Report"],
+        question: "The comparison of actual cumulative expenditure of ₹8.4 crore with planned expenditure of ₹8 crore is most directly relevant to which report?",
+        options: [
+          "Progress report",
+          "Trend report",
+          "Variance report",
+          "Forecasting report"
+        ],
+        answer: 2,
+        reason: "A variance report charts or reports differences between actual and planned performance."
+      },
+      {
+        question_id: "spm_ch11_002_5",
+        chapter_name: ["Forecasting Report"],
+        question: "Which report would best address the Director's request to estimate the likely effect of the supplier delay on future completion and resource requirements?",
+        options: [
+          "Forecasting report",
+          "Progress report",
+          "Status report",
+          "Trend report"
+        ],
+        answer: 0,
+        reason: "A forecasting report estimates what is expected to happen in the future and assists resource planning."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM CASE 3
+  // =========================================================
+
+  {
+    case_id: "spm_ch11_003",
+    case_chapter: "Chapter11",
+    case_topic: ["Financial Information", "Non-Financial Information", "Qualitative Information", "Performance Assessment"],
+    difficulty: "medium",
+    caseText: `<p>CareConnect Hospitals operates five medium-sized hospitals and provides subsidised treatment to low-income patients. The organisation's Board had historically reviewed performance mainly through monthly revenue, operating cost and surplus figures. During a strategy meeting, the Chief Executive Officer pointed out that two hospitals had achieved their financial targets partly because they had reduced spending on employee training and postponed replacement of outdated patient-monitoring equipment. At first glance, their monthly costs looked favourable. However, patient complaints had increased, staff morale had weakened and the number of equipment-related incidents had also risen. The management accountant proposed a broader performance report. The revised report would continue to show financial information such as treatment revenue, operating costs and surplus, but it would also contain non-financial quantitative measures such as patient waiting time, number of complaints, percentage of cancelled appointments and percentage of equipment failures. The CEO also wanted the report to capture qualitative information concerning staff morale, patient confidence, empathy shown by employees and the perceived reputation of each hospital. The accountant explained that qualitative characteristics such as enthusiasm, empathy and reputation cannot be directly measured in the same way as revenue or cost. However, surveys, structured ratings and other methods can be used to convert such constructs into information that can be compared over time. The Board decided that a hospital should not be considered high-performing merely because its short-term financial figures were favourable. A hospital showing low cost but deteriorating patient satisfaction and staff capability would require management attention. The new report therefore contained a dashboard with financial and non-financial indicators. Each hospital manager was also required to provide a short explanation for significant movements in the indicators. The Board planned to compare each hospital's current performance with its previous periods and, where appropriate, with external benchmarks. The intention was not to eliminate financial measures but to ensure that short-term financial results did not hide operational weaknesses that could damage long-term performance.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch11_003_1",
+        chapter_name: ["Non-Financial Measures"],
+        question: "Which of the following is a non-financial quantitative measure in the revised CareConnect report?",
+        options: [
+          "Operating surplus",
+          "Treatment revenue",
+          "Number of patient complaints",
+          "Operating profit margin"
+        ],
+        answer: 2,
+        reason: "The number of complaints is measurable numerically but is not expressed in monetary terms, making it a non-financial quantitative measure."
+      },
+      {
+        question_id: "spm_ch11_003_2",
+        chapter_name: ["Qualitative Information"],
+        question: "Why is empathy described as a construct in the case?",
+        options: [
+          "It is a financial ratio",
+          "It is an attribute that cannot be directly measured",
+          "It can never be assessed in any way",
+          "It is always expressed in currency"
+        ],
+        answer: 1,
+        reason: "Qualitative attributes such as empathy are constructs because they cannot be directly measured and usually need suitable measurement approaches."
+      },
+      {
+        question_id: "spm_ch11_003_3",
+        chapter_name: ["Performance Assessment"],
+        question: "What weakness in the old performance-reporting approach was identified by the CEO?",
+        options: [
+          "It used too many non-financial measures",
+          "It could allow short-term financial improvements to hide deteriorating operational performance",
+          "It prevented hospitals from calculating revenue",
+          "It used only qualitative information"
+        ],
+        answer: 1,
+        reason: "Reducing training and delaying equipment replacement improved short-term costs but weakened non-financial performance and potentially long-term results."
+      },
+      {
+        question_id: "spm_ch11_003_4",
+        chapter_name: ["Performance Assessment", "Time Series Analysis"],
+        question: "Comparing the current hospital performance with previous periods is an example of:",
+        options: [
+          "Longitudinal or time-series analysis",
+          "Only statutory reporting",
+          "External financial auditing",
+          "Responsibility transfer"
+        ],
+        answer: 0,
+        reason: "Longitudinal or time-series analysis examines performance across different periods."
+      },
+      {
+        question_id: "spm_ch11_003_5",
+        chapter_name: ["Non-Financial Performance"],
+        question: "Why did the Board retain financial measures while adding non-financial indicators?",
+        options: [
+          "Financial information is irrelevant to performance management",
+          "Non-financial measures can completely replace financial information",
+          "A balanced view is required because non-financial weaknesses can affect long-term financial performance",
+          "Financial information is required only for employees"
+        ],
+        answer: 2,
+        reason: "Financial and non-financial measures complement each other. Non-financial weaknesses may eventually affect long-term financial performance."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM CASE 4
+  // =========================================================
+
+  {
+    case_id: "spm_ch11_004",
+    case_chapter: "Chapter11",
+    case_topic: ["Performance Report Preparation", "Objectives", "KPIs", "Executive Summary", "Cross-checking"],
+    difficulty: "medium",
+    caseText: `<p>MetroClean Services is a municipal waste-management organisation responsible for collecting household waste, transporting it to processing facilities and maintaining cleanliness in public areas. The organisation recently received criticism because different departments were preparing reports using different definitions and reporting periods. The Collection Department measured its performance by tonnes of waste collected, while the Public Cleanliness Department focused mainly on the number of complaints received. Senior management found it difficult to understand whether the organisation was actually achieving its overall objective of providing reliable and hygienic waste-management services. The Chief Management Accountant was therefore asked to establish a common performance-reporting process. She first interviewed the intended users of the reports, including the Municipal Commissioner, department heads and operational supervisors, because she believed the information should be designed around the needs of the users. She then reviewed the organisation's mission and identified the critical success factors and key performance indicators that should be linked to those objectives. The proposed report included collection coverage, missed collection percentage, response time to complaints, fuel cost per route, employee absenteeism, recycling percentage and citizen satisfaction. A concise executive summary would appear at the beginning, followed by detailed assessment of individual responsibility centres. The report would use tables and charts to show trends, while narrative commentary would explain unusual movements. During preparation of the first report, the accountant discovered that the Collection Department had reported 98% collection coverage, whereas the underlying operational database showed 94%. She stopped circulation of the report and asked the department to reconcile the figures. She also discovered that one chart used weekly information while another used monthly information without clearly stating the period. The accountant concluded that a visually attractive report would still be unreliable if the underlying information had not been cross-checked. The final process therefore included a formal review of data definitions, reporting periods and source records before the report was distributed to management.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch11_004_1",
+        chapter_name: ["Performance Report Preparation"],
+        question: "What should MetroClean do first when designing a performance report for its different management users?",
+        options: [
+          "Select colours for the dashboard",
+          "Understand the needs and use-case of the intended users",
+          "Prepare the executive summary",
+          "Calculate every possible KPI"
+        ],
+        answer: 1,
+        reason: "Understanding the user and intended use of the report is the first important step in deciding what information and level of detail should be included."
+      },
+      {
+        question_id: "spm_ch11_004_2",
+        chapter_name: ["KPIs", "Organisational Objectives"],
+        question: "Why should MetroClean's KPIs be linked to its mission and objectives?",
+        options: [
+          "To ensure performance measures are relevant to what the organisation is trying to achieve",
+          "To ensure all departments have the same costs",
+          "To avoid using non-financial information",
+          "To make reports longer"
+        ],
+        answer: 0,
+        reason: "KPIs should be established in light of organisational objectives derived from its vision and mission."
+      },
+      {
+        question_id: "spm_ch11_004_3",
+        chapter_name: ["Executive Summary"],
+        question: "Which section should provide a concise snapshot of the major findings before detailed analysis?",
+        options: [
+          "Executive summary",
+          "General ledger",
+          "Source-document register",
+          "Detailed variance schedule only"
+        ],
+        answer: 0,
+        reason: "The executive summary provides a brief and concise overview of the performance information discussed in the report."
+      },
+      {
+        question_id: "spm_ch11_004_4",
+        chapter_name: ["Reliability", "Cross-checking"],
+        question: "Why was the report stopped when the 98% collection figure could not be reconciled with the 94% database figure?",
+        options: [
+          "Because performance reports must contain only financial information",
+          "Because details quoted in the report should be cross-checked to enhance reliability",
+          "Because KPIs cannot be expressed as percentages",
+          "Because charts cannot be used in reports"
+        ],
+        answer: 1,
+        reason: "Performance-report information should be cross-checked to enhance reliability and quality."
+      },
+      {
+        question_id: "spm_ch11_004_5",
+        chapter_name: ["Visual Elements", "Narrative Commentary"],
+        question: "What is the primary purpose of combining charts with narrative commentary in MetroClean's report?",
+        options: [
+          "To replace all underlying data",
+          "To help users identify important trends and understand their significance or causes",
+          "To prevent managers from reading the figures",
+          "To eliminate the need for KPIs"
+        ],
+        answer: 1,
+        reason: "Visual elements improve understanding and narrative commentary explains important trends, issues and causes."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // MEDIUM CASE 5
+  // =========================================================
+
+  {
+    case_id: "spm_ch11_005",
+    case_chapter: "Chapter11",
+    case_topic: ["External Reporting", "TBL", "GRI", "ESG", "Integrated Reporting"],
+    difficulty: "medium",
+    caseText: `<p>EcoBuild Materials Limited manufactures construction boards using recycled industrial material. The company has traditionally presented its performance to shareholders through financial statements showing revenue, profit, assets and liabilities. As the company expanded, investors and other stakeholders began asking questions about carbon emissions, employee safety, community relationships, resource consumption and governance practices. The Board therefore decided that traditional financial reporting alone was insufficient to communicate the organisation's broader performance. The sustainability team proposed several reporting approaches. One proposal was a report focusing on the organisation's impact on profit, people and the planet. Another proposal suggested using internationally recognised sustainability reporting standards developed by the Global Reporting Initiative. The investor-relations team separately proposed a report containing environmental, social and governance information to improve transparency for investors. The Chief Financial Officer also considered adopting an integrated report that would explain how strategy, governance, performance and prospects contribute to value creation over the short, medium and long term. During the discussion, one director initially argued that sustainability information should be presented only if it could be expressed in monetary terms. The CFO disagreed and explained that the purpose of these frameworks is partly to overcome the narrow focus of traditional financial reporting. The company subsequently decided to present different information for different reporting purposes while ensuring that the reports did not contradict each other. The integrated-reporting team also identified financial, manufactured, human, natural, intellectual, and social and relationship capital as relevant forms of capital involved in value creation. The Board concluded that the different frameworks should not be treated as interchangeable merely because all of them contain sustainability-related information. Each framework has a distinct emphasis and purpose.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch11_005_1",
+        chapter_name: ["Triple Bottom Line"],
+        question: "Which three dimensions are emphasised by the Triple Bottom Line approach described in the case?",
+        options: [
+          "Profit, People and Planet",
+          "Profit, Price and Production",
+          "People, Price and Procurement",
+          "Planet, Procurement and Profitability"
+        ],
+        answer: 0,
+        reason: "Triple Bottom Line expands attention beyond profit to People and Planet."
+      },
+      {
+        question_id: "spm_ch11_005_2",
+        chapter_name: ["Global Reporting Initiative"],
+        question: "Which framework in the case is based on globally recognised sustainability reporting standards developed by GRI?",
+        options: [
+          "ESG reporting",
+          "GRI reporting",
+          "Traditional financial reporting",
+          "Variance reporting"
+        ],
+        answer: 1,
+        reason: "The Global Reporting Initiative develops globally accepted sustainability reporting standards."
+      },
+      {
+        question_id: "spm_ch11_005_3",
+        chapter_name: ["ESG Reporting"],
+        question: "The investor-relations team's proposed report focusing on environmental, social and governance information is best described as:",
+        options: [
+          "TBL reporting",
+          "ESG reporting",
+          "Progress reporting",
+          "Earned Value reporting"
+        ],
+        answer: 1,
+        reason: "ESG reporting discloses environmental, social and corporate governance information."
+      },
+      {
+        question_id: "spm_ch11_005_4",
+        chapter_name: ["Integrated Reporting"],
+        question: "What is the principal focus of the proposed integrated report?",
+        options: [
+          "Only the current year's profit",
+          "How strategy, governance, performance and prospects contribute to value creation over time",
+          "Only employee costs",
+          "Only environmental expenditure"
+        ],
+        answer: 1,
+        reason: "Integrated reporting provides a concise communication of how strategy, governance, performance and prospects lead to value creation over the short, medium and long term."
+      },
+      {
+        question_id: "spm_ch11_005_5",
+        chapter_name: ["Integrated Reporting", "Six Capitals"],
+        question: "Which of the following was NOT identified in the case as a category of capital relevant to integrated reporting?",
+        options: [
+          "Human capital",
+          "Natural capital",
+          "Financial capital",
+          "Marketing capital"
+        ],
+        answer: 3,
+        reason: "The six capitals described are financial, manufactured, human, natural, intellectual, and social and relationship capital."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 6
+  // =========================================================
+
+  {
+    case_id: "spm_ch11_006",
+    case_chapter: "Chapter11",
+    case_topic: ["Responsibility Accounting", "Performance Reports", "Controllability", "Variance Analysis", "Benchmarking"],
+    difficulty: "hard",
+    caseText: `<p>PrecisionMotion Limited produces specialised transmission assemblies for heavy vehicles. The company has decentralised its operations and each major plant is treated as a responsibility centre. The Western Plant is managed by Mr. Arjun, who has authority over labour deployment, machine scheduling, overtime approval, production quality and several controllable operating expenses. However, raw-material prices are negotiated centrally by the Procurement Division, and the plant manager cannot choose the supplier or negotiate the basic purchase price. In July, the Western Plant's budget assumed production of 40,000 assemblies and controllable conversion costs of ₹96 lakh. Actual production was 44,000 assemblies and actual controllable conversion costs were ₹103.4 lakh. The plant also experienced an unexpected seven-day power interruption caused by a regional grid failure. Because of the interruption, the plant used emergency outsourced processing for a portion of the production. The outsourcing cost was included in the plant's actual expenditure even though the decision to outsource was taken by the central operations team. Meanwhile, labour overtime increased because management wanted to recover part of the lost production schedule. The plant's rejection rate improved from 3.8% to 2.1%, and customer returns fell significantly. The monthly performance report prepared by the finance department initially showed an unfavourable total cost variance of ₹7.4 lakh against the original budget. Mr. Arjun objected that the report was unfair because actual output was higher than budget and several costs reflected decisions or events outside his control. The finance manager therefore proposed a revised responsibility report showing activity-adjusted expectations, controllable costs and separately identified external or centrally imposed factors. The report also included a benchmark comparing labour productivity with two other plants. The Eastern Plant had lower labour cost per assembly but also had a materially higher rejection rate and customer-return rate. The Finance Director warned that simply ranking plants by cost per unit could create dysfunctional behaviour because managers might reduce inspection or training to improve apparent cost performance. The revised report therefore placed financial and non-financial indicators together. Senior management also required a narrative commentary explaining the power interruption, the centrally mandated outsourcing decision, overtime recovery measures and quality improvement. The objective was to use the report as a management tool rather than as a mechanical scorecard for assigning blame.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch11_006_1",
+        chapter_name: ["Responsibility Accounting", "Controllability"],
+        question: "Which cost would be least appropriate to use as a direct measure of Mr. Arjun's controllable performance?",
+        options: [
+          "Labour overtime approved by Arjun",
+          "Machine scheduling costs influenced by Arjun",
+          "Centrally negotiated raw-material purchase prices",
+          "Controllable plant operating expenses"
+        ],
+        answer: 2,
+        reason: "Arjun does not control centrally negotiated raw-material prices, so directly judging him on those prices would conflict with the controllability principle of responsibility accounting."
+      },
+      {
+        question_id: "spm_ch11_006_2",
+        chapter_name: ["Performance Reports", "Activity Changes"],
+        question: "Why should the original ₹96 lakh budget not be used alone to evaluate the Western Plant's cost performance?",
+        options: [
+          "Because budgets cannot be used in responsibility accounting",
+          "Because actual output of 44,000 assemblies differed materially from the budgeted 40,000 assemblies",
+          "Because financial measures are never relevant",
+          "Because the plant had no responsibility centre"
+        ],
+        answer: 1,
+        reason: "The activity level changed from 40,000 to 44,000 assemblies. A meaningful evaluation should consider the effect of the changed activity level."
+      },
+      {
+        question_id: "spm_ch11_006_3",
+        chapter_name: ["Benchmarking", "Non-Financial Measures"],
+        question: "Why would comparing the Eastern and Western Plants only on labour cost per assembly potentially produce a misleading conclusion?",
+        options: [
+          "Because labour costs cannot be measured",
+          "Because the Eastern Plant's lower cost was accompanied by higher rejection and customer-return rates",
+          "Because benchmarking must never be used internally",
+          "Because cost per assembly is always irrelevant"
+        ],
+        answer: 1,
+        reason: "A lower cost may be achieved at the expense of quality. Non-financial measures are therefore needed alongside financial measures."
+      },
+      {
+        question_id: "spm_ch11_006_4",
+        chapter_name: ["Performance Reporting", "Narrative Commentary"],
+        question: "Which combination would provide the strongest explanation of the Western Plant's reported cost variance?",
+        options: [
+          "Only the ₹7.4 lakh variance figure",
+          "The variance figure together with the power interruption, central outsourcing decision and overtime explanation",
+          "Only the plant manager's opinion",
+          "Only the rejection-rate percentage"
+        ],
+        answer: 1,
+        reason: "Narrative commentary should explain significant variances and their causes, allowing management to distinguish controllable from external factors."
+      },
+      {
+        question_id: "spm_ch11_006_5",
+        chapter_name: ["Performance Management", "Corrective Action"],
+        question: "What is the most appropriate conclusion for senior management from the revised report?",
+        options: [
+          "The manager should automatically be penalised because total actual cost exceeded the original budget",
+          "The report should identify controllable deviations while separately considering external factors and quality outcomes before corrective action",
+          "The plant should stop using non-financial measures",
+          "The plant should be ranked only by total expenditure"
+        ],
+        answer: 1,
+        reason: "Performance reports should support informed corrective action and should evaluate managers on matters for which they are responsible rather than mechanically assigning blame."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 7
+  // =========================================================
+
+  {
+    case_id: "spm_ch11_007",
+    case_chapter: "Chapter11",
+    case_topic: ["Earned Value Report", "Forecasting Report", "Progress Report", "Variance Report", "Status Report"],
+    difficulty: "hard",
+    caseText: `<p>UrbanRail Systems has been implementing an eighteen-month automated ticketing project for a metropolitan transport authority. The project involves software development, installation of ticketing machines, integration with existing gates and training of station employees. At the end of Month 10, the approved total project budget was ₹30 crore. By this point, the project team had planned to complete 60% of the total work. The budgeted value of the work planned by Month 10 was therefore ₹18 crore. However, the project team had actually completed work assessed at ₹16.2 crore of budgeted value, while actual expenditure incurred was ₹17.5 crore. The Project Director was concerned because the implementation team claimed that the project was "almost on schedule" based on the number of machines physically installed, whereas the software-integration work was significantly behind schedule. The finance team explained that physical installation alone could not represent the complete scope of the project. The Director requested an earned value report integrating scope, schedule and cost performance. He separately asked for a progress report showing the work completed since Month 9, a status report showing the project's current position at Month 10, and a variance report identifying differences between actual and planned performance. Since the remaining software integration involved specialised external consultants, the Director also asked for a forecasting report estimating the likely future resource requirement and completion position. The Month 10 report showed that 54% of the total project value had been completed even though 60% had been planned. The actual expenditure of ₹17.5 crore was already higher than the ₹16.2 crore value of completed work. The project team argued that the higher spending was temporary because several integration costs had been incurred early. The management accountant agreed that the reasons should be investigated rather than concluding immediately that the project was permanently inefficient. He also warned that a report's baseline had to be realistic because all variances were dependent upon the quality of the original plan. Senior management therefore asked the project team to document changes in scope, approved revisions to the timetable and assumptions behind the forecast. The final reporting package was designed to prevent management from confusing current status, historical progress, variance analysis, integrated earned-value analysis and future forecasting.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch11_007_1",
+        chapter_name: ["Earned Value Report"],
+        question: "Why is an Earned Value Report particularly appropriate for the UrbanRail project?",
+        options: [
+          "It focuses only on employee satisfaction",
+          "It integrates scope, schedule and cost performance",
+          "It replaces all project budgets",
+          "It reports only actual expenditure"
+        ],
+        answer: 1,
+        reason: "Earned Value reporting integrates scope, schedule and cost performance using earned value management techniques."
+      },
+      {
+        question_id: "spm_ch11_007_2",
+        chapter_name: ["Earned Value", "Performance Analysis"],
+        question: "Based on the information in the case, what percentage of total project value had actually been completed by Month 10?",
+        options: [
+          "54%",
+          "60%",
+          "58.3%",
+          "46%"
+        ],
+        answer: 0,
+        reason: "Actual earned value was ₹16.2 crore and total project budget was ₹30 crore. ₹16.2 crore ÷ ₹30 crore × 100 = 54%."
+      },
+      {
+        question_id: "spm_ch11_007_3",
+        chapter_name: ["Performance Analysis"],
+        question: "What does the difference between ₹18 crore planned value and ₹16.2 crore earned value indicate?",
+        options: [
+          "The project has completed more work than planned",
+          "The project has completed less work than planned",
+          "The project has exactly matched its schedule",
+          "The project has no measurable scope"
+        ],
+        answer: 1,
+        reason: "Planned value was ₹18 crore while earned value was ₹16.2 crore, indicating that completed work was below the planned level."
+      },
+      {
+        question_id: "spm_ch11_007_4",
+        chapter_name: ["Performance Reports"],
+        question: "Which report would most directly estimate the likely future completion position and resource requirements?",
+        options: [
+          "Progress report",
+          "Forecasting report",
+          "Status report",
+          "Trend report"
+        ],
+        answer: 1,
+        reason: "A forecasting report estimates expected future performance and supports better resource utilisation."
+      },
+      {
+        question_id: "spm_ch11_007_5",
+        chapter_name: ["Performance Report", "Baseline"],
+        question: "Why did the management accountant insist that approved scope and timetable changes be documented before interpreting the variances?",
+        options: [
+          "Because the baseline is the basis against which variances are calculated",
+          "Because forecasts cannot contain assumptions",
+          "Because earned value cannot use budgets",
+          "Because project reports must always be external reports"
+        ],
+        answer: 0,
+        reason: "The baseline is the reference point for calculating variances. If the baseline is unreasonable or outdated, resulting performance conclusions may be invalid."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 8
+  // =========================================================
+
+  {
+    case_id: "spm_ch11_008",
+    case_chapter: "Chapter11",
+    case_topic: ["Performance Report Analysis", "Time Frame", "Trend Analysis", "Corrective Action", "Feed-forward Control"],
+    difficulty: "hard",
+    caseText: `<p>FreshHarvest Foods operates a network of food-processing units supplying packaged products to supermarkets across several states. During the previous financial year, the company experienced repeated monthly fluctuations in production cost and customer complaints. Senior management initially treated each unfavourable month separately and instructed the relevant plant manager to reduce costs immediately. The approach produced short-term improvements but did not solve the underlying problems. For example, one plant reduced maintenance expenditure in February and reported a favourable cost variance, but machine breakdowns increased in March and April. Another plant reduced training expenditure to remain within its monthly budget, after which packing errors and customer complaints increased. The newly appointed Chief Performance Officer decided to redesign the performance-reporting and analysis process. Instead of focusing only on isolated monthly figures, the company would review performance over a defined period and identify trends. Reports would include sales, production costs and margins, but also machine downtime, product rejection, customer complaints, employee training hours, absenteeism and delivery reliability. The Chief Performance Officer explained that quantitative and qualitative information should both be considered where relevant. A customer survey showed that customers were increasingly dissatisfied with late deliveries even though sales revenue remained stable. The analysis team also discovered that the problem was concentrated in two distribution regions and was associated with frequent vehicle maintenance failures. The report therefore linked financial and operational information rather than treating each KPI independently. Management decided that each review should begin by restating the objective of the analysis, identifying relevant trends, documenting significant findings and then preparing an action plan. Corrective action would be taken where performance had deteriorated, while preventive and feed-forward actions would be used where early indicators suggested that future performance might deteriorate. The company also established quarterly reviews to complement monthly operational monitoring. Senior management stressed that reports should not merely identify bad results after they occurred; they should help managers anticipate emerging problems and allocate resources before the problem became financially significant.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch11_008_1",
+        chapter_name: ["Time Frame", "Trend Analysis"],
+        question: "Why did FreshHarvest introduce quarterly reviews in addition to monthly monitoring?",
+        options: [
+          "To eliminate monthly reports",
+          "To provide a broader time frame for identifying meaningful trends while retaining frequent operational monitoring",
+          "To ensure all reports become external reports",
+          "To avoid analysing non-financial information"
+        ],
+        answer: 1,
+        reason: "A defined analysis timeframe such as monthly, quarterly or annual helps identify trends. Different timeframes can complement each other."
+      },
+      {
+        question_id: "spm_ch11_008_2",
+        chapter_name: ["Performance Analysis"],
+        question: "Which conclusion is best supported by the case regarding the maintenance-cost reduction in February?",
+        options: [
+          "The reduction was unquestionably beneficial because the cost variance was favourable",
+          "The reduction may have created a short-term favourable result while contributing to later machine breakdowns",
+          "Maintenance expenditure is never relevant",
+          "The February result proves the plant was highly efficient"
+        ],
+        answer: 1,
+        reason: "The subsequent increase in machine breakdowns suggests that cutting maintenance may have improved short-term cost performance at the expense of future performance."
+      },
+      {
+        question_id: "spm_ch11_008_3",
+        chapter_name: ["Non-Financial Measures"],
+        question: "Which combination most clearly provides early operational indicators that may affect future financial performance?",
+        options: [
+          "Revenue and profit only",
+          "Machine downtime, rejection rate, training hours and delivery reliability",
+          "Share capital and retained earnings only",
+          "Tax expense and interest expense only"
+        ],
+        answer: 1,
+        reason: "These operational non-financial indicators can provide information about future performance and potential financial consequences."
+      },
+      {
+        question_id: "spm_ch11_008_4",
+        chapter_name: ["Corrective Action", "Feed-forward Control"],
+        question: "Which situation would most clearly justify feed-forward action?",
+        options: [
+          "A known emerging vehicle-maintenance problem indicates future delivery failures are likely",
+          "A completed annual report is archived",
+          "A historical invoice has been filed",
+          "A prior month's report has already been approved"
+        ],
+        answer: 0,
+        reason: "Feed-forward action seeks to anticipate and prevent future performance problems based on early indicators."
+      },
+      {
+        question_id: "spm_ch11_008_5",
+        chapter_name: ["Performance Analysis"],
+        question: "What should be the final stage after the analysis team identifies and documents significant trends?",
+        options: [
+          "Delete unfavourable data",
+          "Prepare an action plan to improve performance",
+          "Stop collecting non-financial information",
+          "Ignore the identified trends until year-end"
+        ],
+        answer: 1,
+        reason: "The performance-analysis process culminates in summarising findings and creating an action plan to improve performance."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 9
+  // =========================================================
+
+  {
+    case_id: "spm_ch11_009",
+    case_chapter: "Chapter11",
+    case_topic: ["Integrated Reporting", "Value Creation", "Six Capitals", "Performance Reports", "Responsibility Accounting"],
+    difficulty: "hard",
+    caseText: `<p>NovaEngineering Limited is a diversified engineering company operating through manufacturing, research and development, field-service and digital-solutions divisions. The Board recently decided to strengthen its integrated performance reporting because it believed that conventional departmental reports did not adequately explain how operational decisions contributed to long-term value creation. One major initiative involved the Manufacturing Division investing ₹12 crore in automated machinery. The Production Manager expected the investment to reduce direct labour hours per unit, lower variable manufacturing cost and improve production consistency. The Research and Development Division simultaneously developed proprietary software that allowed the new machines to be monitored remotely. The Human Resources Department conducted extensive training so that employees could operate and maintain the equipment safely. The sustainability team reported that the new machinery reduced electricity consumption per unit of output, while the employee-safety team recorded a reduction in workplace incidents. However, the investment initially increased depreciation and training expenditure, causing the Manufacturing Division's short-term profit to decline. The divisional manager therefore feared that the monthly responsibility report would portray the investment negatively. The Chief Financial Officer explained that a performance report should distinguish between short-term accounting effects and the broader consequences of strategic decisions. The integrated reporting team mapped the project to different forms of capital. The ₹12 crore investment represented financial resources and created manufactured capacity. The trained employees represented human capital, while the proprietary monitoring software represented intellectual capital. Reduced energy consumption related to natural capital, and stronger relationships with employees and customers were considered social and relationship capital. The Board wanted its integrated report to explain not only the immediate financial variance but also how these capitals interacted to create value over the short, medium and long term. The responsibility accounting report would still be used to evaluate controllable departmental performance, but it would be supplemented with broader strategic information. The CFO warned managers that the existence of multiple capitals did not mean every investment should automatically be considered successful. Actual outcomes would still have to be measured against objectives and assumptions, and corrective action would be required if expected benefits did not materialise. The final report therefore contained financial data, operational KPIs, employee indicators, energy-use data, customer information and narrative commentary explaining the relationship between the different forms of capital.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch11_009_1",
+        chapter_name: ["Integrated Reporting", "Value Creation"],
+        question: "Why was the Manufacturing Division's short-term decline in profit not considered sufficient by itself to judge the automation investment?",
+        options: [
+          "Because profit can never be used in performance reports",
+          "Because integrated reporting considers how different capitals and strategic decisions contribute to value creation over time",
+          "Because responsibility accounting ignores financial information",
+          "Because depreciation is never a real cost"
+        ],
+        answer: 1,
+        reason: "Integrated reporting provides a broader view of value creation over the short, medium and long term, considering multiple forms of capital."
+      },
+      {
+        question_id: "spm_ch11_009_2",
+        chapter_name: ["Integrated Reporting", "Six Capitals"],
+        question: "The proprietary machine-monitoring software developed by the R&D Division is most directly associated with which capital?",
+        options: [
+          "Natural capital",
+          "Intellectual capital",
+          "Manufactured capital",
+          "Financial capital"
+        ],
+        answer: 1,
+        reason: "Proprietary knowledge, systems and intellectual property are associated with intellectual capital."
+      },
+      {
+        question_id: "spm_ch11_009_3",
+        chapter_name: ["Integrated Reporting", "Six Capitals"],
+        question: "The trained employees operating and maintaining the automated machinery primarily represent:",
+        options: [
+          "Human capital",
+          "Natural capital",
+          "Manufactured capital",
+          "Financial capital"
+        ],
+        answer: 0,
+        reason: "Employee knowledge, skills and capabilities are associated with human capital."
+      },
+      {
+        question_id: "spm_ch11_009_4",
+        chapter_name: ["Integrated Reporting"],
+        question: "Which statement best explains the relationship between the responsibility accounting report and the integrated report in this case?",
+        options: [
+          "The integrated report completely eliminates responsibility accounting",
+          "Responsibility accounting evaluates managerial responsibility while integrated reporting provides a broader view of value creation",
+          "Responsibility accounting can report only environmental matters",
+          "Integrated reporting is limited to departmental cost variances"
+        ],
+        answer: 1,
+        reason: "Responsibility accounting focuses on managerial accountability for controllable items, while integrated reporting provides a broader picture of value creation."
+      },
+      {
+        question_id: "spm_ch11_009_5",
+        chapter_name: ["Performance Assessment", "Integrated Reporting"],
+        question: "Why did the CFO insist that the investment still be assessed against objectives even though several forms of capital appeared to benefit?",
+        options: [
+          "Because integrated reporting does not require performance measurement",
+          "Because identifying multiple forms of capital does not automatically prove that expected outcomes were achieved",
+          "Because only financial capital is relevant",
+          "Because strategic investments cannot be evaluated"
+        ],
+        answer: 1,
+        reason: "Performance still needs to be measured against defined objectives and assumptions. Multiple-capital benefits do not automatically establish success."
+      }
+    ]
+  },
+
+
+  // =========================================================
+  // HARD CASE 10
+  // =========================================================
+
+  {
+    case_id: "spm_ch11_010",
+    case_chapter: "Chapter11",
+    case_topic: ["Performance Report Preparation", "KPI", "Qualitative Measures", "Benchmarking", "Corrective Action", "Responsibility Accounting"],
+    difficulty: "hard",
+    caseText: `<p>NationalReach Skills Foundation is a not-for-profit organisation providing vocational training to unemployed young adults in economically weaker regions. Its funding comes from government grants, corporate contributions and charitable donations. The Foundation operates through regional centres, each managed by a Centre Director who is responsible for controllable staff costs, training schedules, local facility expenses and participant support activities. At the beginning of the year, the Board approved an objective of improving employment outcomes while maintaining responsible use of donor funds. The performance-reporting system initially focused heavily on the number of students enrolled and the amount of programme expenditure. As a result, some Centre Directors began increasing enrolment because enrolment numbers were prominently displayed in the monthly management report. However, a subsequent review found that several centres had increased enrolment without increasing the number of students completing training or obtaining employment. One centre had also reduced counselling expenditure to remain within its budget, which improved its financial variance but resulted in higher student dropout rates. Another centre had higher expenditure because it provided additional support to students with disabilities and transportation difficulties; although its cost per student was higher, its completion and employment rates were among the best in the organisation. The Chief Executive therefore asked the management accountant to redesign the performance report. The new report began with an executive summary explaining the most important developments. It then showed KPIs linked to the Foundation's mission, including enrolment, completion rate, employment within six months, cost per successful employment outcome, student satisfaction, counselling availability and employer feedback. Each centre was compared with its own historical performance and, where appropriate, with comparable centres. The accountant specifically warned against comparing centres with fundamentally different student populations without adjusting the interpretation. Qualitative information from student interviews was converted into structured ratings where possible, while selected comments were retained as narrative evidence. The report also separated controllable expenses from costs imposed by central management or external circumstances. The Board wanted a visual dashboard, but the accountant insisted that charts be supported by narrative commentary explaining unusual results. Before circulation, all figures were cross-checked against source records. During the first review, the Board noticed that Centre A had a favourable cost variance but poor employment outcomes, whereas Centre B had an unfavourable cost variance but substantially better employment results. The Board concluded that the purpose of the report was not simply to identify the cheapest centre but to determine whether resources were being used effectively in achieving the Foundation's mission. Management therefore decided that future reports would be used to identify trends, investigate significant deviations and develop corrective, preventive and feed-forward actions rather than mechanically rewarding favourable financial variances.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch11_010_1",
+        chapter_name: ["KPI", "Organisational Objectives"],
+        question: "Which KPI from the redesigned report most directly measures whether the Foundation is achieving its ultimate mission-related outcome?",
+        options: [
+          "Number of students enrolled",
+          "Total programme expenditure",
+          "Employment within six months",
+          "Number of classrooms used"
+        ],
+        answer: 2,
+        reason: "Employment within six months is more directly linked to the Foundation's stated objective of improving employment outcomes than enrolment or expenditure alone."
+      },
+      {
+        question_id: "spm_ch11_010_2",
+        chapter_name: ["Performance Reports", "Non-Financial Measures"],
+        question: "What dysfunctional behaviour resulted from the original emphasis on enrolment numbers?",
+        options: [
+          "Centres reduced enrolment despite strong demand",
+          "Some centres increased enrolment without achieving corresponding improvements in completion or employment",
+          "Centres stopped recording financial information",
+          "Centre Directors stopped preparing budgets"
+        ],
+        answer: 1,
+        reason: "Because enrolment was prominently measured, some managers increased it without necessarily improving meaningful outcomes."
+      },
+      {
+        question_id: "spm_ch11_010_3",
+        chapter_name: ["Benchmarking", "Performance Assessment"],
+        question: "Why did the accountant caution against directly comparing all centres without considering their student populations?",
+        options: [
+          "Benchmarking is never useful",
+          "Different operating conditions and student populations can make simple comparisons misleading",
+          "Only financial data can be benchmarked",
+          "Historical performance cannot be compared"
+        ],
+        answer: 1,
+        reason: "Benchmarking should consider comparability. Centres serving substantially different populations or operating under different conditions may not be directly comparable."
+      },
+      {
+        question_id: "spm_ch11_010_4",
+        chapter_name: ["Qualitative Information"],
+        question: "Why were structured ratings created from student interviews?",
+        options: [
+          "To convert qualitative constructs into information that can be assessed and compared more systematically",
+          "To eliminate all qualitative information",
+          "To make student feedback financial information",
+          "To ensure every student gives identical feedback"
+        ],
+        answer: 0,
+        reason: "Qualitative constructs can be converted into quantifiable or structured information to facilitate communication, assessment and comparison."
+      },
+      {
+        question_id: "spm_ch11_010_5",
+        chapter_name: ["Performance Analysis", "Corrective Action"],
+        question: "What is the most appropriate interpretation of Centre A's favourable cost variance and poor employment outcomes compared with Centre B's unfavourable cost variance and stronger employment results?",
+        options: [
+          "Centre A must automatically be the better-performing centre",
+          "Centre B must automatically be inefficient because its costs are higher",
+          "Financial variances should be interpreted together with mission-related outcomes and other performance indicators",
+          "Cost variance should be removed from all performance reports"
+        ],
+        answer: 2,
+        reason: "A favourable financial variance does not automatically mean superior overall performance. Financial and non-financial indicators should be analysed together in light of organisational objectives."
+      }
+    ]
+  }
 
 
 ];
