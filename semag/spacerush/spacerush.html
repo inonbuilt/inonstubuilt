@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#0f172a">
+    <title>CA Space Rush | Calcium Notes</title>
+
+    <link rel="canonical" href="https://www.calciumnotes.com/semag/spacerush/spacerush.html">
+    <link rel="icon" href="../../fevicol.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../fevicol.png">
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="CA Space Rush | Precision Typing & Speed Game | Calcium Notes">
+    <meta name="description" content="Play CA Space Rush - an interactive precision typing game for CA students. Type falling terms across CA Final, Inter, Foundation, and SPOM before blocks overflow. Features combos, levels, and virtual keyboard support.">
+    <meta name="keywords" content="CA Space Rush, CA Typing Game, CA Games, CA Exam Preparation, CA Final, CA Inter, CA Foundation, SPOM, Speed Typing, Accounting Terms, Calcium Notes">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Calcium Notes">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CA Space Rush | Precision Typing Game">
+    <meta property="og:description" content="Master CA terms under pressure! Precision speed-typing game across CA Final, Inter, Foundation, and SPOM.">
+    <meta property="og:url" content="https://www.calciumnotes.com/semag/spacerush/spacerush.html">
+
+    <!-- Google Analytics (G-YYJ8R39EXM) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
+    </script>
+
+    <!-- Google AdSense (ca-pub-7657462226177124) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
+    crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --bg-main: #0f172a;
+            --bg-panel: #1e293b;
+            --bg-card: #0b1120;
+            --border-light: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-gold: #fbbf24;
+            --accent-gold-hover: #f59e0b;
+            --success: #34d399;
+            --danger: #fb7185;
+            --danger-bg: #881337;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        button {
+            font: inherit;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        button:focus-visible {
+            outline: 2px solid var(--accent-gold);
+            outline-offset: 2px;
+        }
+
+        .app {
+            max-width: 1200px;
+            width: 100%;
+            height: 100%;
+            height: 100vh;
+            height: 100dvh;
+            margin: 0 auto;
+            padding: 8px 12px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* ================= HEADER ================= */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .brand-wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .brand {
+            font-weight: 800;
+            font-size: clamp(16px, 2.4vw, 22px);
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .brand span {
+            color: var(--accent-gold);
+        }
+
+        .back-btn, .rules-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 8px;
+            background: var(--bg-panel);
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .back-btn:hover, .rules-btn:hover {
+            color: var(--accent-gold);
+            border-color: var(--accent-gold);
+        }
+
+        .tagline {
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .stats {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .stat {
+            background: var(--bg-panel);
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 4px 10px;
+            min-width: 58px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        .stat b {
+            display: block;
+            font-size: 15px;
+            line-height: 1.1;
+            color: var(--text-main);
+        }
+
+        .stat small {
+            display: block;
+            color: var(--text-muted);
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        /* ================= MAIN LAYOUT ================= */
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr 270px;
+            gap: 10px;
+            flex-grow: 1;
+            min-height: 0;
+            overflow: hidden;
+        }
+
+        .panel {
+            background: var(--bg-panel);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+        }
+
+        .game-panel {
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            min-height: 0;
+            overflow: hidden;
+        }
+
+        /* Compact Active Target Strip (Visible on mobile & desktop) */
+        .target-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 6px 10px;
+            margin-bottom: 6px;
+            gap: 10px;
+            flex-shrink: 0;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .target-chip {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            overflow: hidden;
+        }
+
+        .chip-label {
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--accent-gold);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .target-letters {
+            font-size: clamp(14px, 2.2vw, 18px);
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .status-chip {
+            font-size: 11px;
+            color: var(--text-muted);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        .canvas-wrap {
+            position: relative;
+            background: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid var(--border-light);
+            overflow: hidden;
+            flex-grow: 1;
+            min-height: 0;
+            max-width: 100%;
+            height: 100%;
+            aspect-ratio: 16 / 18;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 0 25px rgba(15, 23, 42, 0.8);
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }
+
+        /* ================= PROGRESS ================= */
+        .progress-wrap {
+            margin-top: 6px;
+            flex-shrink: 0;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-muted);
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+        }
+
+        .progress {
+            height: 6px;
+            background: var(--bg-card);
+            border-radius: 999px;
+            overflow: hidden;
+            border: 1px solid var(--border-light);
+        }
+
+        .progress i {
+            display: block;
+            height: 100%;
+            background: var(--accent-gold);
+            transform-origin: left;
+            transition: transform 0.1s linear;
+        }
+
+        /* ================= MOBILE QWERTY KEYBOARD ================= */
+        .mobile-keys {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            margin-top: 6px;
+            padding: 5px 6px;
+            background: var(--bg-card);
+            border-radius: 10px;
+            border: 1px solid var(--border-light);
+            flex-shrink: 0;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .key-row {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .key-row button {
+            flex: 1;
+            max-width: 42px;
+            height: 38px;
+            background: var(--bg-panel);
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 16px;
+            touch-action: manipulation;
+            user-select: none;
+            box-shadow: 0 1.5px 0 var(--border-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .key-row button:active {
+            background: var(--accent-gold);
+            color: #000;
+            transform: translateY(1px);
+        }
+
+        /* ================= SIDEBAR ================= */
+        .side {
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow-y: auto;
+            min-height: 0;
+        }
+
+        .side::-webkit-scrollbar {
+            width: 4px;
+        }
+        .side::-webkit-scrollbar-thumb {
+            background: var(--border-light);
+            border-radius: 4px;
+        }
+
+        .side h2 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--accent-gold);
+        }
+
+        .side h3 {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+        }
+
+        .notice {
+            padding: 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            font-size: 12px;
+            color: var(--text-main);
+            line-height: 1.4;
+        }
+
+        .queue {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .q {
+            padding: 8px 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .q small {
+            display: block;
+            color: var(--text-muted);
+            font-size: 10px;
+            margin-top: 2px;
+            font-weight: 400;
+        }
+
+        .help {
+            font-size: 11px;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .help div {
+            margin-bottom: 4px;
+        }
+
+        .k {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 20px;
+            height: 20px;
+            padding: 0 4px;
+            margin-right: 4px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        /* ================= MODAL ================= */
+        .overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            background: rgba(15, 23, 42, 0.88);
+            backdrop-filter: blur(8px);
+            transition: opacity 0.25s ease;
+        }
+
+        .modal {
+            width: 100%;
+            max-width: 460px;
+            background: var(--bg-panel);
+            border: 1px solid var(--border-light);
+            border-radius: 18px;
+            padding: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal h1 {
+            font-size: clamp(24px, 5vw, 34px);
+            font-weight: 900;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .modal h1 span {
+            color: var(--accent-gold);
+        }
+
+        .modal p {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+
+        .modes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .mode-btn {
+            padding: 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .mode-btn.active {
+            border-color: var(--accent-gold);
+            background: rgba(251, 191, 36, 0.12);
+            color: var(--accent-gold);
+        }
+
+        .primary-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--accent-gold);
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            margin-bottom: 10px;
+        }
+
+        .primary-btn:hover {
+            background: var(--accent-gold-hover);
+        }
+
+        .small-note {
+            font-size: 11px !important;
+            margin-bottom: 0 !important;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* ================= SCREEN-FITTING RESPONSIVE ================= */
+        @media(max-width: 900px) {
+            .app { padding: 6px 8px; }
+            .layout { grid-template-columns: 1fr; }
+            .side { display: none; } /* Sidebar hidden on mobile so screen never scrolls */
+            .mobile-keys { display: flex; width: 100%; max-width: 500px; }
+            .canvas-wrap { max-height: 50vh; width: auto; }
+            .header { margin-bottom: 4px; }
+            .brand { font-size: 18px; }
+            .tagline { display: none; }
+            .stat { padding: 3px 8px; min-width: 52px; }
+            .stat b { font-size: 14px; }
+            .stat small { font-size: 8.5px; }
+            .target-bar { padding: 4px 8px; margin-bottom: 4px; width: 100%; max-width: 500px; }
+            .target-letters { font-size: 15px; }
+        }
+
+        @media(max-height: 700px) {
+            .app { padding: 4px 6px; }
+            .header { margin-bottom: 3px; }
+            .target-bar { padding: 3px 6px; margin-bottom: 3px; }
+            .progress-wrap { margin-top: 3px; }
+            .mobile-keys { margin-top: 3px; padding: 4px; gap: 3px; }
+            .key-row button { height: 34px; font-size: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="app">
+    <header class="header">
+        <div class="brand-wrap">
+            <a href="../semag.html" style="text-decoration: none; color: inherit;"><div class="brand">CALCIUM <span>NOTES</span></div></a>
+            <a href="../semag.html" class="back-btn">← Lobby</a>
+            <button class="rules-btn" id="openRulesBtn">❓ Rules</button>
+            <div class="tagline">CA Space Rush</div>
+        </div>
+        <div class="stats">
+            <div class="stat"><b id="time">00:00</b><small>Time</small></div>
+            <div class="stat"><b id="score">0</b><small>Score</small></div>
+            <div class="stat"><b id="combo">0</b><small>Combo</small></div>
+            <div class="stat"><b id="level">1</b><small>Level</small></div>
+            <div class="stat"><b id="best">0</b><small>Best</small></div>
+        </div>
+    </header>
+
+    <main class="layout">
+        <section class="panel game-panel">
+            <!-- Compact Target Bar (Always visible) -->
+            <div class="target-bar">
+                <div class="target-chip">
+                    <span class="chip-label" id="chipModeLabel">TARGET:</span>
+                    <span id="targetWordText" class="target-letters">Awaiting...</span>
+                </div>
+                <div class="status-chip" id="statusChip">Type starting letter</div>
+            </div>
+
+            <!-- Main Canvas Viewport (Auto-scaled to fit screen) -->
+            <div class="canvas-wrap" id="canvasContainer">
+                <canvas id="game"></canvas>
+            </div>
+
+            <!-- Progress to next drop -->
+            <div class="progress-wrap">
+                <div class="progress-label">
+                    <span>Next Word</span>
+                    <span id="progressText">100%</span>
+                </div>
+                <div class="progress"><i id="progressBar"></i></div>
+            </div>
+
+            <!-- Virtual Keyboard for Touch Devices -->
+            <div id="mobileKeys" class="mobile-keys"></div>
+        </section>
+
+        <!-- Desktop Sidebar (Only visible on wide desktop screens) -->
+        <aside class="panel side">
+            <h2 id="sideTitle">CA Final</h2>
+            
+            <div>
+                <h3>System Status</h3>
+                <div class="notice" id="status">Press <b>Enter</b> to begin.</div>
+            </div>
+
+            <div>
+                <h3>Active Target</h3>
+                <div class="notice" id="currentWord">No active target.</div>
+            </div>
+
+            <div>
+                <h3>Upcoming Queue</h3>
+                <div id="queue" class="queue"></div>
+            </div>
+
+            <div>
+                <h3>Controls & Mechanics</h3>
+                <div class="help">
+                    <div><span class="k">A-Z</span> Type to destroy letters mid-air.</div>
+                    <div><span class="k">ENTER</span> Start / Restart</div>
+                    <div><span class="k">ESC</span> Abort session</div>
+                    <div style="margin-top: 6px; color: var(--danger); font-weight: 600;">* Wrong letter entered physically falls down and penalizes altitude!</div>
+                </div>
+            </div>
+        </aside>
+    </main>
+</div>
+
+<!-- Start / Game Over Modal -->
+<div class="overlay" id="overlay">
+    <div class="modal">
+        <h1>CA <span id="modalAccent">SPACE RUSH</span></h1>
+        <p id="modalText">Destroy falling CA terms while they drift down through the air! Type correct letters to blast them mid-air. <b>Wrong letters fall down as tumbling debris</b> and drop your word closer to the danger floor.</p>
+        
+        <div class="modes">
+            <button class="mode-btn active" data-mode="Final">CA Final</button>
+            <button class="mode-btn" data-mode="Inter">CA Inter</button>
+            <button class="mode-btn" data-mode="Foundation">Foundation</button>
+            <button class="mode-btn" data-mode="SPOM">SPOM</button>
+        </div>
+
+        <button class="primary-btn" id="startBtn">INITIALIZE SESSION</button>
+        <p class="small-note" id="deviceNote">Desktop keyboard & touch keyboard supported. Fits screen.</p>
+    </div>
+</div>
+
+<script>
+    "use strict";
+
+    const TERMS = {
+        Final: ["MATERIALITY", "CONSOLIDATION", "DEFERRED TAX", "GOODWILL", "LEASE LIABILITY", "TRANSFER PRICING", "CAPITAL BUDGET", "FORENSIC AUDIT", "ARBITRATION", "IND AS", "COMBINATIONS", "RISK ASSESSMENT", "INTERNAL CONTROL", "VALUATION", "LIQUIDATION", "ETHICS", "REVENUE REC", "HEDGING", "DERIVATIVE", "ACTUARIAL GAIN", "SEGMENT REPORT", "DUE DILIGENCE", "AUDIT COMMITTEE", "FAIR VALUE", "SHARE PAYMENT", "IMPAIRMENT", "RESTRUCTURING", "AMORTISATION", "EQUITY METHOD", "BUSINESS MODEL", "CASH EQUIVALENT", "DIVIDEND SWAP", "INTEREST SWAP", "BLACK SCHOLES", "BINOMIAL MODEL", "PORTFOLIO RISK", "SHARPE RATIO", "TREYNOR RATIO", "JENSEN ALPHA", "VAR ANALYSIS", "CROSS CURRENCY", "FORWARD RATE", "MONEY MARKET", "BUYBACK SHARES", "TAKEOVER CODE", "CARO REPORT", "KAM MATTERS", "EMPHASIS MATTER", "QUALIFIED OPIN", "ADVERSE OPINION", "DISCLAIMER", "FRAUD AUDIT", "SUBSTANTIVE", "ANALYTICAL", "SAMPLING RISK", "GOING CONCERN", "RELATED PARTY", "PE RATIO", "MINIMUM TAX", "MAT CREDIT", "SEARCH SEIZURE", "SURVEY ACTION", "FACELESS ASSESS", "ADVANCE RULING", "APPEALS TRIBUNAL", "EQUALISATION", "DTAA TREATY", "ARM LENGTH PRICE", "SAFE HARBOUR", "SECONDARY ADJ", "BEPS ACTION", "PLACE OF SUPPLY", "REVERSE CHARGE", "E INVOICING", "LUT BOND", "ZERO RATED", "COMPOSITION LEVY", "INPUT SERVICE", "REFUND CLAIMS", "ANTI PROFITEER", "INSOLVENCY CODE", "RESOLUTION PLAN", "MORATORIUM", "LIQUIDATOR", "DEBT RECOVERY", "EXTENSIBLE REP", "PEER REVIEW", "QUALITY CONTROL"],
+        Inter: ["AUDIT EVIDENCE", "MISSTATEMENT", "DEPRECIATION", "INVENTORY", "PARTNERSHIP", "COMPANY LAW", "INPUT TAX CREDIT", "E WAY BILL", "GST", "CAPITAL GAINS", "TDS", "RESIDENTIAL", "COST SHEET", "BUDGET", "MARGINAL COST", "STANDARD COST", "INTERNAL AUDIT", "AUDIT REPORT", "RECONCILIATION", "WORKING CAPITAL", "BORROWING COST", "BRANCH ACC", "HIRE PURCHASE", "CONVERTIBLE DEB", "BONUS SHARES", "RIGHTS ISSUE", "SWEAT EQUITY", "BUY BACK", "REDEMPTION", "DEBENTURES", "AMALGAMATION", "INTERNAL RECON", "SCHEDULE THREE", "CASH FLOW STM", "FINANCIAL STMT", "PROSPECTUS", "ANNUAL RETURN", "DIRECTORS", "GENERAL MEETING", "EXTRA ORDINARY", "ORDINARY RES", "SPECIAL RES", "AUDITOR APPOINT", "DIVIDEND DECL", "CSR POLICY", "BATCH COSTING", "JOB COSTING", "PROCESS COSTING", "EQUIVALENT PROD", "JOINT PRODUCTS", "BY PRODUCTS", "OVERHEADS", "ABSORPTION", "VARIANCE ANALYS", "LABOUR COST", "ECONOMIC ORDER", "REORDER LEVEL", "SAFETY STOCK", "SALARY INCOME", "HOUSE PROPERTY", "BUSINESS PROFIT", "OTHER SOURCES", "CLUBBING INCOME", "SET OFF LOSSES", "CARRY FORWARD", "DEDUCTION 80C", "ADVANCE TAX", "TAX DEDUCTION", "TAX COLLECTION", "TIME OF SUPPLY", "VALUE OF SUPPLY", "TAX INVOICE", "CREDIT NOTE", "DEBIT NOTE", "AUDIT PROGRAMME", "AUDIT NOTEBOOK", "WORKING PAPERS", "TEST CHECKING", "VOUCHING", "VERIFICATION", "ROUTINE CHECK", "INTERNAL CHECK", "LEVERAGE", "CAPITAL STRUC", "RATIO ANALYSIS", "DIVIDEND POLICY", "NET PRESENT VAL", "INTERNAL RATE", "PAYBACK PERIOD", "SWOT ANALYSIS", "PESTLE MODEL", "FIVE FORCES", "CORE COMPETENCE"],
+        Foundation: ["JOURNAL", "LEDGER", "TRIAL BALANCE", "DEPRECIATION", "CAPITAL", "REVENUE", "PARTNERSHIP", "CONTRACT", "CONSIDERATION", "OFFER", "ACCEPTANCE", "COMPANY", "AUDIT", "INVENTORY", "COST", "ASSET", "LIABILITY", "EXPENSE", "INCOME", "GOODWILL", "DOUBLE ENTRY", "BALANCE SHEET", "PROFIT AND LOSS", "CASH BOOK", "PETTY CASH", "BANK RECON", "BILLS EXCHANGE", "PROMISSORY NOTE", "CONSIGNMENT", "JOINT VENTURE", "SALE OF GOODS", "RECTIFICATION", "SUSPENSE ACC", "AVERAGE DUE", "ACCOUNT CURRENT", "VALUATION STOCK", "DEBIT BALANCE", "CREDIT BALANCE", "BAD DEBTS", "PROVISION", "ACCRUED INCOME", "OUTSTANDING EXP", "PREPAID EXPENSE", "CONTINGENCY", "DRAWINGS", "SOLVENCY", "INSOLVENCY", "FREE CONSENT", "COERCION", "UNDUE INFLUENCE", "MISREPRESENT", "VOID AGREEMENT", "QUASI CONTRACT", "CONTINGENT CON", "PERFORMANCE", "BREACH CONTRACT", "REMEDIES", "CONDITION WARR", "DOCTRINE CAVEAT", "UNPAID SELLER", "RIGHT OF LIEN", "STOPPAGE TRANS", "LIMITED LIAB", "INCORPORATION", "ARTICLES ASSOC", "MEMORANDUM", "ULTRA VIRES", "DEMAND SUPPLY", "ELASTICITY", "CONSUMER SURP", "INDIFFERENCE", "PRODUCTION", "OPPORTUNITY", "MARGINAL REV", "PERFECT COMP", "MONOPOLY", "OLIGOPOLY", "BUSINESS CYCLE", "INFLATION", "GROSS DOMESTIC", "INTEREST RATE", "COMPOUND INT", "ANNUITY DUE", "PERPETUITY", "PROBABILITY", "CORRELATION", "REGRESSION", "INDEX NUMBERS", "TIME SERIES"],
+        SPOM: ["STRATEGY", "BENCHMARKING", "VALUE CHAIN", "SCORECARD", "PERFORMANCE", "TRANSFER PRICING", "TARGET COSTING", "KAIZEN", "ABC COSTING", "NON PROFIT", "KPI METRIC", "STRATEGIC COST", "LIFE CYCLE", "BUDGETARY", "VALUE ENG", "STRATEGIC PLAN", "PRISM MODEL", "BEYOND BUDGET", "CORPORATE GOV", "BOARD CHARTER", "INDEPENDENT DIR", "STAKEHOLDER", "WHISTLEBLOWER", "INSIDER TRADING", "SEBI LODR", "SECRETARIAL", "OPPRESSION", "MISMANAGEMENT", "CLASS ACTION", "COMPROMISE ARR", "SCHEME MERGER", "CROSS BORDER", "COMPETITION ACT", "ABUSE DOMINANCE", "COMBINATION REG", "CARTELISATION", "PREVENTION PMLA", "MONEY LAUNDER", "ED ATTACHMENT", "FEMA 1999", "CURRENT ACCOUNT", "CAPITAL ACCOUNT", "OVERSEAS DIRECT", "EXTERNAL COMM", "EXPORT PROCEEDS", "FCRA LICENSE", "FOREIGN CONTRIB", "ARBITRAL AWARD", "CONCILIATION", "UNCITRAL MODEL", "MEDIATION ACT", "IBC ADJUDICATE", "NCLT TRIBUNAL", "NCLAT APPEALS", "CIRP INITIATE", "COMMITTEE CRED", "INFORMATION UTL", "AVOIDANCE TRANS", "PREFERENTIAL", "UNDERVALUED", "EXTORTIONATE", "FRAUD TRADING", "ACTIVITY BASED", "COST DRIVER", "COST POOL", "LEAN SYSTEM", "JUST IN TIME", "TOTAL QUALITY", "SIX SIGMA", "COST OF QUALITY", "PREVENTION COST", "APPRAISAL COST", "FAILURE COST", "BUSINESS RE ENG", "THEORY CONSTR", "THROUGHPUT ACC", "BOTTLENECK", "BALANCED SCORE", "CUSTOMER PERS", "INTERNAL BIZ", "LEARN GROWTH", "ECONOMIC VALUE", "MARKET VALUE", "SHAREHOLDER VAL", "TRIPLE BOTTOM", "ESG FRAMEWORK", "COST LEADERSHIP", "DIFFERENTIATE", "COST CONTROL", "COST REDUCTION", "STANDARD MARGIN", "REVENUE BUDGET", "ZERO BASE BUD", "FLEXIBLE BUDGET", "TRANSFER PRICE", "DIVISIONAL PERF", "RETURN ON INV", "RESIDUAL INCOME", "DU PONT MODEL"]
+    };
+
+    // Sort terms by length for progressive difficulty
+    for (const mode in TERMS) {
+        TERMS[mode].sort((a, b) => a.replace(/\s/g, "").length - b.replace(/\s/g, "").length);
+    }
+
+    const CONFIG = {
+        Final: { spawn: 3400, fall: 1200 },
+        Inter: { spawn: 3600, fall: 1300 },
+        Foundation: { spawn: 3800, fall: 1400 },
+        SPOM: { spawn: 3200, fall: 1150 }
+    };
+
+    // Dynamic Speed Progression: Steps up in distinct +0.5x increments (1.0x -> 1.5x -> 2.0x -> 2.5x -> 3.0x -> 3.5x...)
+    function getDynamicSpeed(elapsedSeconds, mode, wordsCompleted = 0) {
+        const baseFall = CONFIG[mode].fall;
+        const baseSpawn = CONFIG[mode].spawn;
+
+        // Step increases every 60 seconds (or every 5 words completed if faster)
+        const timeStep = Math.floor(elapsedSeconds / 60);
+        const wordStep = Math.floor(wordsCompleted / 5);
+        const step = Math.max(timeStep, wordStep);
+
+        // Multiplier progression: 1.0 -> 1.5 -> 2.0 -> 2.5 -> 3.0 -> 3.5 -> 4.0 -> 4.5 -> 5.0...
+        const multiplier = 1.0 + step * 0.5;
+        const speedMultiplier = multiplier.toFixed(1);
+
+        // Fall interval scales proportionally: base / multiplier
+        const fallMs = Math.max(160, Math.round(baseFall / multiplier));
+
+        // Spawn frequency scales with speed: words spawn much faster as multiplier climbs
+        const spawnMs = Math.max(550, Math.round(baseSpawn / multiplier));
+
+        // Max simultaneous falling words in the air scales with speed tier
+        // 1.0x -> 2 words, 1.5x -> 3 words, 2.0x -> 4 words, 2.5x -> 5 words, 3.0x -> 6 words, 3.5x+ -> 7-8 words
+        const maxAirWords = Math.min(8, 1 + Math.floor(multiplier));
+
+        const level = 1 + step;
+
+        return { fallMs, spawnMs, level, speedMultiplier, maxAirWords };
+    }
+
+    const DOM = {
+        canvasContainer: document.getElementById("canvasContainer"),
+        canvas: document.getElementById("game"),
+        ctx: document.getElementById("game").getContext("2d"),
+        overlay: document.getElementById("overlay"),
+        startBtn: document.getElementById("startBtn"),
+        openRulesBtn: document.getElementById("openRulesBtn"),
+        timeEl: document.getElementById("time"),
+        scoreEl: document.getElementById("score"),
+        comboEl: document.getElementById("combo"),
+        levelEl: document.getElementById("level"),
+        bestEl: document.getElementById("best"),
+        progressBar: document.getElementById("progressBar"),
+        progressText: document.getElementById("progressText"),
+        queueEl: document.getElementById("queue"),
+        statusEl: document.getElementById("status"),
+        statusChip: document.getElementById("statusChip"),
+        currentWordEl: document.getElementById("currentWord"),
+        targetWordText: document.getElementById("targetWordText"),
+        chipModeLabel: document.getElementById("chipModeLabel"),
+        sideTitle: document.getElementById("sideTitle"),
+        modalText: document.getElementById("modalText"),
+        modalAccent: document.getElementById("modalAccent"),
+        mobileKeys: document.getElementById("mobileKeys")
+    };
+
+    const COLS = 16, ROWS = 18;
+    let board = createEmptyBoard();
+    let objects = [], nextQueue = [], particles = [], fallingLetters = [];
+    
+    let state = {
+        mode: "Final", running: false, gameEnded: false,
+        score: 0, combo: 0, level: 1, spawnClock: 0, fallClock: 0,
+        spawnMs: CONFIG.Final.spawn, fallMs: CONFIG.Final.fall,
+        objectId: 0, wrongPresses: 0, wordsCompleted: 0
+    };
+
+    let cellSize = 38, boardLeft = 0, boardTop = 0;
+    let screenShake = 0;
+
+    const stars = Array.from({ length: 60 }, () => ({
+        x: Math.random(),
+        y: Math.random(),
+        size: Math.random() * 1.8 + 0.6,
+        alpha: Math.random() * 0.7 + 0.2,
+        speed: Math.random() * 0.02 + 0.005
+    }));
+
+    function drawStars(width, height) {
+        for (const s of stars) {
+            s.alpha += s.speed;
+            if (s.alpha > 0.9 || s.alpha < 0.2) s.speed = -s.speed;
+            DOM.ctx.fillStyle = `rgba(255, 255, 255, ${Math.max(0.1, Math.min(0.9, s.alpha))})`;
+            DOM.ctx.fillRect(s.x * width, s.y * height, s.size, s.size);
+        }
+    }
+
+    function createEmptyBoard() {
+        return Array.from({ length: ROWS }, () => Array(COLS).fill(null));
+    }
+
+    // Dynamic screen-fitting resolution calculation
+    function resizeCanvas() {
+        const width = DOM.canvasContainer.clientWidth;
+        const height = DOM.canvasContainer.clientHeight;
+        if (!width || !height) return;
+        const dpr = Math.min(2, window.devicePixelRatio || 1);
+        
+        DOM.canvas.width = Math.round(width * dpr);
+        DOM.canvas.height = Math.round(height * dpr);
+        
+        const logicalWidth = DOM.canvas.width / dpr;
+        const logicalHeight = DOM.canvas.height / dpr;
+        
+        // Fit both dimensions without any clipping
+        cellSize = Math.min(logicalWidth / COLS, logicalHeight / ROWS);
+        boardLeft = (logicalWidth - COLS * cellSize) / 2;
+        boardTop = (logicalHeight - ROWS * cellSize) / 2;
+        
+        DOM.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    
+    window.addEventListener("resize", () => {
+        resizeCanvas();
+        draw();
+    });
+    window.addEventListener("load", () => {
+        resizeCanvas();
+        draw();
+    });
+    
+    // QWERTY Virtual Keyboard Initialization
+    function initKeyboard() {
+        const keyboardLayout = [
+            ["Q","W","E","R","T","Y","U","I","O","P"],
+            ["A","S","D","F","G","H","J","K","L"],
+            ["Z","X","C","V","B","N","M"]
+        ];
+
+        DOM.mobileKeys.innerHTML = "";
+        keyboardLayout.forEach(row => {
+            const rowDiv = document.createElement("div");
+            rowDiv.className = "key-row";
+            row.forEach(letter => {
+                const btn = document.createElement("button");
+                btn.type = "button";
+                btn.textContent = letter;
+                btn.addEventListener("pointerdown", e => { 
+                    e.preventDefault(); 
+                    typeLetter(letter); 
+                });
+                rowDiv.appendChild(btn);
+            });
+            DOM.mobileKeys.appendChild(rowDiv);
+        });
+    }
+
+    function getObjectCells(object) {
+        return object.cells.filter(c => !c.removed).map(c => ({
+            object, cell: c, x: object.x + c.dx, y: object.y + c.dy
+        })).filter(item => item.x >= 0 && item.x < COLS && item.y >= 0 && item.y < ROWS);
+    }
+
+    function canPlace(object, newX, newY) {
+        for (const cell of object.cells) {
+            if (cell.removed) continue;
+            const x = newX + cell.dx, y = newY + cell.dy;
+            if (x < 0 || x >= COLS || y < 0 || y >= ROWS) return false;
+            const existing = board[y][x];
+            if (existing && existing.object !== object) return false;
+        }
+        return true;
+    }
+
+    function removeObjectFromBoard(object) {
+        for (let y = 0; y < ROWS; y++) {
+            for (let x = 0; x < COLS; x++) {
+                if (board[y][x] && board[y][x].object === object) board[y][x] = null;
+            }
+        }
+    }
+
+    function writeObjectToBoard(object) {
+        const cells = getObjectCells(object);
+        for (const item of cells) {
+            if (board[item.y][item.x] && board[item.y][item.x].object !== object) return false;
+        }
+        for (const item of cells) {
+            board[item.y][item.x] = { object: item.object, cell: item.cell };
+        }
+        return true;
+    }
+
+    function createWord(term) {
+        const rawWord = term.toUpperCase().replace(/[^A-Z]/g, "");
+        const length = Math.min(rawWord.length, COLS);
+        const word = rawWord.slice(0, length);
+        const startX = Math.floor(Math.random() * (COLS - length + 1));
+        const cells = Array.from({ length }, (_, i) => ({
+            dx: i, dy: 0, kind: "letter", letter: word[i], golden: i === 0, brown: false, removed: false, glow: 0
+        }));
+        return { 
+            id: ++state.objectId, 
+            type: "word", 
+            label: term, 
+            word, 
+            x: startX, 
+            y: 0, 
+            visualYOffset: 0,
+            typedCount: 0, 
+            completed: false, 
+            cells,
+            speedMultiplier: 1.0,
+            fallClock: 0,
+            isAccelerated: false
+        };
+    }
+
+    function spawnObject() {
+        if (!state.running) return false;
+
+        const list = TERMS[state.mode];
+        const poolSize = Math.min(list.length, 4 + Math.floor(state.elapsedSeconds / 15));
+        const term = list[Math.floor(Math.random() * poolSize)];
+        
+        const object = createWord(term);
+        const maxStartX = COLS - object.cells.length;
+        if (maxStartX < 0) return false;
+
+        let placed = false;
+        const startX = Math.floor(Math.random() * (maxStartX + 1));
+
+        // Attempt placement at row 0 across valid columns
+        for (let offset = 0; offset <= maxStartX; offset++) {
+            const x = (startX + offset) % (maxStartX + 1);
+            if (canPlace(object, x, 0)) {
+                object.x = x;
+                object.y = 0;
+                object.visualYOffset = 0;
+                if (writeObjectToBoard(object)) {
+                    objects.push(object);
+                    placed = true;
+                    break;
+                }
+            }
+        }
+
+        // Check if top line is touched by landed blocks
+        if (!placed) {
+            const topBlocked = objects.some(o => o.landed && o.cells.some(c => !c.removed && (o.y + c.dy <= 0)));
+            if (topBlocked) {
+                endGame("Perimeter breached! Blocks stacked to the top line.");
+                return false;
+            }
+            return false;
+        }
+
+        nextQueue.push({ type: "word", label: term });
+        if (nextQueue.length > 6) nextQueue.shift();
+        renderQueue();
+
+        updateCurrentWord();
+        return true;
+    }
+
+    function getActiveWord(typedLetter) {
+        // 1. If user is already mid-word, stay locked onto it
+        const inProgress = objects.find(o => !o.completed && o.typedCount > 0 && o.typedCount < o.word.length);
+        if (inProgress) return inProgress;
+
+        const available = objects.filter(o => !o.completed && o.typedCount < o.word.length);
+        if (available.length === 0) return null;
+
+        // 2. If user pressed a letter, look for matching word starting with that letter (lowest / closest to danger first)
+        if (typedLetter) {
+            const matching = available.filter(o => o.word[0] === typedLetter);
+            if (matching.length > 0) {
+                matching.sort((a, b) => b.y !== a.y ? b.y - a.y : a.id - b.id);
+                return matching[0];
+            }
+        }
+
+        // 3. Otherwise pick the lowest word on the board
+        available.sort((a, b) => b.y !== a.y ? b.y - a.y : a.id - b.id);
+        return available[0] || null;
+    }
+
+    function updateCurrentWord() {
+        const object = getActiveWord();
+        if (!object) {
+            DOM.currentWordEl.innerHTML = "<span style='color: var(--text-muted)'>Awaiting next term...</span>";
+            DOM.targetWordText.innerHTML = "<span style='color: var(--text-muted)'>Awaiting...</span>";
+            return;
+        }
+        let result = "";
+        for (let i = 0; i < object.word.length; i++) {
+            if (i < object.typedCount) result += `<span style="color:var(--success);">${object.word[i]}</span>`;
+            else if (i === object.typedCount) result += `<span style="color:var(--accent-gold); text-decoration:underline; text-underline-offset:3px;">${object.word[i]}</span>`;
+            else result += `<span style="color:var(--text-muted);">${object.word[i]}</span>`;
+        }
+
+        DOM.currentWordEl.innerHTML = `
+            <div style="font-size:10px; color:var(--text-muted); margin-bottom:4px;">ACTIVE TARGET</div>
+            <div style="font-size:20px; font-weight:800; letter-spacing:0.08em; word-break:break-word;">${result}</div>
+            <div style="font-size:10px; color:var(--text-muted); margin-top:4px;">${object.typedCount} / ${object.word.length}</div>
+        `;
+
+        DOM.targetWordText.innerHTML = result;
+    }
+
+    function resetWord(object) {
+        removeObjectFromBoard(object);
+        for (const cell of object.cells) {
+            cell.removed = false; cell.brown = false; cell.golden = false; cell.glow = 0;
+        }
+        object.typedCount = 0; object.completed = false;
+        const first = object.cells.find(c => c.kind === "letter");
+        if (first) first.golden = true;
+        writeObjectToBoard(object);
+        updateCurrentWord(); 
+        updateHud();
+    }
+
+    function triggerScreenShake(duration = 0.22) {
+        screenShake = duration;
+    }
+
+    function typeLetter(letter) {
+        if (!state.running) return;
+        const object = getActiveWord(letter);
+        if (!object) return;
+
+        const expected = object.word[object.typedCount];
+
+        // ==========================================
+        // WRONG KEYSTROKE: Accelerates fall, drops 1 row
+        // ==========================================
+        if (letter !== expected) {
+            const targetCell = object.cells[object.typedCount] || object.cells[0];
+            const spawnGx = object.x + (targetCell ? targetCell.dx : 0);
+            const spawnGy = object.y + (targetCell ? targetCell.dy : 0);
+            const spawnPx = boardLeft + spawnGx * cellSize;
+            const spawnPy = boardTop + spawnGy * cellSize;
+
+            // Spawn tumbling red wrong letter tile
+            fallingLetters.push({
+                letter: letter,
+                x: spawnPx,
+                y: spawnPy,
+                vx: (Math.random() - 0.5) * 120,
+                vy: 120 + Math.random() * 80,
+                rot: 0,
+                vrot: (Math.random() - 0.5) * 8,
+                color: "#e11d48",
+                stroke: "#fb7185",
+                size: cellSize,
+                alpha: 1.0
+            });
+
+            burstCell(spawnGx, spawnGy, false);
+            triggerScreenShake();
+
+            // Accelerate ONLY this targeted word so it descends faster
+            object.speedMultiplier = (object.speedMultiplier || 1.0) + 1.25;
+            object.isAccelerated = true;
+            object.fallClock = 0;
+
+            // Penalty drop: word drops 1 row closer to floor if space permits
+            if (canPlace(object, object.x, object.y + 1)) {
+                removeObjectFromBoard(object);
+                object.y++;
+                object.visualYOffset = -1.0;
+                writeObjectToBoard(object);
+            }
+
+            state.combo = 0;
+            state.wrongPresses++;
+            beep(95, 0.14);
+
+            setStatus(`<span style="color:var(--danger)"><b>WRONG KEY!</b></span> '<b>${letter}</b>' fell! <b>${object.label}</b> is falling faster!`);
+            updateCurrentWord();
+            updateHud();
+            return;
+        }
+
+        // ==========================================
+        // CORRECT KEYSTROKE: Pops letter in air
+        // ==========================================
+        const target = object.cells[object.typedCount];
+        if (!target || target.removed) return;
+
+        const x = object.x + target.dx, y = object.y + target.dy;
+        if (board[y] && board[y][x] && board[y][x].object === object) board[y][x] = null;
+
+        target.removed = true; target.golden = false; target.brown = false;
+        object.typedCount++;
+        state.combo++;
+        
+        state.score += 10 + Math.min(20, state.combo);
+        burstCell(x, y, false);
+        beep(330 + Math.min(state.combo, 20) * 12, 0.045);
+
+        if (object.typedCount < object.word.length) {
+            const next = object.cells[object.typedCount];
+            if (next) { next.golden = true; next.glow = 1; }
+            setStatus(`Valid: <b>${letter}</b>. Next: <b>${object.word[object.typedCount]}</b>`);
+        } else {
+            // WORD COMPLETED!
+            object.completed = true;
+            removeObjectFromBoard(object);
+            
+            state.score += 50 + state.combo * 3;
+            state.wordsCompleted++;
+            
+            setStatus(`<span style="color:var(--success)"><b>${object.label}</b> DESTROYED!</span>`);
+            burstCell(x, y, true);
+            beep(700, 0.11);
+            setTimeout(() => beep(900, 0.15), 90);
+
+            // Remove from objects list to clear space
+            objects = objects.filter(o => o !== object);
+
+            // Awaken any words above that now have empty space beneath them
+            for (const o of objects) {
+                if (canPlace(o, o.x, o.y + 1)) {
+                    o.landed = false;
+                    for (const c of o.cells) {
+                        if (!c.removed && c.brown) c.brown = false;
+                    }
+                }
+            }
+
+            updateCurrentWord();
+            updateHud();
+            return;
+        }
+
+        updateCurrentWord();
+        updateHud();
+    }
+
+    function boardEntries() {
+        const result = [];
+        for (let y = 0; y < ROWS; y++) {
+            for (let x = 0; x < COLS; x++) {
+                if (board[y][x]) result.push({ x, y, ref: board[y][x] });
+            }
+        }
+        return result;
+    }
+
+    function updateFallingWords(delta) {
+        if (!state.running) return;
+
+        // Sort bottom-most first so lower words settle/fall before higher words
+        const sorted = [...objects].sort((a, b) => b.y - a.y);
+        for (const object of sorted) {
+            if (!objects.includes(object) || object.completed) continue;
+
+            const canFall = canPlace(object, object.x, object.y + 1);
+
+            if (canFall) {
+                // If support beneath was destroyed, wake this word up so it falls!
+                if (object.landed) {
+                    object.landed = false;
+                    for (const c of object.cells) {
+                        if (!c.removed && c.brown) c.brown = false;
+                    }
+                }
+
+                const baseFall = state.fallMs || CONFIG[state.mode].fall;
+                const mult = object.speedMultiplier || 1.0;
+                object.fallClock = (object.fallClock || 0) + delta * mult;
+
+                if (object.fallClock >= baseFall) {
+                    object.fallClock = 0;
+                    removeObjectFromBoard(object);
+                    object.y++;
+                    object.visualYOffset = -1.0;
+                    writeObjectToBoard(object);
+                }
+            } else {
+                // Object has reached the bottom floor or is resting on a block beneath it
+                object.landed = true;
+                for (const c of object.cells) {
+                    if (!c.removed && !c.golden) c.brown = true;
+                }
+            }
+        }
+
+        // ==========================================
+        // LOSE CONDITION: Blocks stack and touch top line
+        // ==========================================
+        const touchesTopLine = objects.some(o => 
+            o.landed && 
+            o.cells.some(c => !c.removed && (o.y + c.dy <= 0))
+        );
+        if (touchesTopLine) {
+            endGame("Perimeter breached! Blocks stacked to the top line.");
+        }
+    }
+
+    function burstCell(gx, gy, big) {
+        const x = boardLeft + gx * cellSize + cellSize / 2;
+        const y = boardTop + gy * cellSize + cellSize / 2;
+        const count = big ? 15 : 7;
+        for (let i = 0; i < count; i++) {
+            particles.push({
+                x, y,
+                vx: (Math.random() - 0.5) * (big ? 200 : 110),
+                vy: (Math.random() - 0.5) * (big ? 200 : 110),
+                life: 0.3 + Math.random() * 0.45,
+                size: 2 + Math.random() * 4,
+                space: big
+            });
+        }
+    }
+
+    function updateHud() {
+        DOM.scoreEl.textContent = state.score.toLocaleString();
+        DOM.comboEl.textContent = state.combo;
+
+        // Survival Time display mm:ss
+        const m = Math.floor(state.elapsedSeconds / 60);
+        const s = state.elapsedSeconds % 60;
+        if (DOM.timeEl) DOM.timeEl.textContent = `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+
+        const mult = state.speedMultiplier || "1.0";
+        DOM.levelEl.innerHTML = `${state.level} <span style="font-size:11px; color:var(--accent-gold); font-weight:700;">(${mult}x)</span>`;
+
+        const best = Number(localStorage.getItem("caSpaceRushBest") || 0);
+        DOM.bestEl.textContent = Math.max(best, state.score).toLocaleString();
+        if (state.score > best) localStorage.setItem("caSpaceRushBest", String(state.score));
+    }
+
+    function setStatus(msg) { 
+        DOM.statusEl.innerHTML = msg; 
+        DOM.statusChip.innerHTML = msg;
+    }
+
+    function renderQueue() {
+        if (nextQueue.length === 0) return DOM.queueEl.innerHTML = `<div class="q">Awaiting payload...</div>`;
+        DOM.queueEl.innerHTML = nextQueue.slice().reverse().map((item, idx) => `
+            <div class="q">
+                ${idx === 0 ? "<span style='color:var(--accent-gold)'>NEXT</span> · " : ""}
+                ${item.label}
+                <small>${state.mode} · Term</small>
+            </div>
+        `).join("");
+    }
+
+    let audioContext = null;
+    function beep(freq, dur) {
+        try {
+            audioContext ||= new (window.AudioContext || window.webkitAudioContext)();
+            if (audioContext.state === "suspended") audioContext.resume();
+            const osc = audioContext.createOscillator();
+            const gain = audioContext.createGain();
+            osc.type = freq < 150 ? "sawtooth" : "sine";
+            osc.frequency.value = freq;
+            gain.gain.setValueAtTime(0.04, audioContext.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + dur);
+            osc.connect(gain); gain.connect(audioContext.destination);
+            osc.start(); osc.stop(audioContext.currentTime + dur);
+        } catch { }
+    }
+
+    function update(delta) {
+        if (!state.running) return;
+
+        // Survival Time Tracking
+        state.elapsedMs += delta;
+        const prevSec = state.elapsedSeconds;
+        state.elapsedSeconds = Math.floor(state.elapsedMs / 1000);
+
+        // Calculate dynamic speeds based on elapsed play time & terms completed
+        const prevMult = state.speedMultiplier;
+        const dynamicSpeed = getDynamicSpeed(state.elapsedSeconds, state.mode, state.wordsCompleted);
+        state.fallMs = dynamicSpeed.fallMs;
+        state.spawnMs = dynamicSpeed.spawnMs;
+        state.level = dynamicSpeed.level;
+        state.speedMultiplier = dynamicSpeed.speedMultiplier;
+
+        // Trigger celebratory chime and notice whenever speed steps up (+0.5x: 1.0 -> 1.5 -> 2.0 -> 2.5...)
+        if (state.speedMultiplier !== prevMult && prevMult) {
+            beep(587, 0.08);
+            setTimeout(() => beep(880, 0.16), 90);
+            setStatus(`<span style="color:var(--accent-gold)"><b>SPEED SURGE! LEVEL ${state.level}</b></span> — Speed: <b>${state.speedMultiplier}x</b> | Max Concurrent: <b>${dynamicSpeed.maxAirWords} words</b>!`);
+        }
+
+        // Time-based Continuous Spawning: number of falling words scales directly with speed level
+        state.spawnClock += delta;
+        const airWords = objects.filter(o => !o.completed && !o.landed);
+        const maxAirWords = dynamicSpeed.maxAirWords;
+
+        if (airWords.length === 0) {
+            // Immediate fill if no words in the air
+            state.spawnClock = 0;
+            spawnObject();
+        } else if (state.spawnClock >= state.spawnMs) {
+            if (airWords.length < maxAirWords) {
+                const ok = spawnObject();
+                if (ok) {
+                    state.spawnClock = 0;
+                    // At higher speeds (2.0x+), spawn an additional word if air is clear
+                    if (parseFloat(state.speedMultiplier) >= 2.0 && airWords.length + 1 < maxAirWords) {
+                        setTimeout(() => { if (state.running) spawnObject(); }, 350);
+                    }
+                } else {
+                    state.spawnClock = state.spawnMs * 0.7;
+                }
+            } else {
+                state.spawnClock = state.spawnMs * 0.9;
+            }
+        }
+
+        const progress = Math.max(0, Math.min(1, 1 - state.spawnClock / state.spawnMs));
+        DOM.progressBar.style.transform = `scaleX(${progress})`;
+        DOM.progressText.textContent = Math.round(progress * 100) + "%";
+
+        updateFallingWords(delta);
+
+        // Animate Sparks Particles
+        for (const p of particles) {
+            p.x += p.vx * delta / 1000;
+            p.y += p.vy * delta / 1000;
+            p.vy += 90 * delta / 1000;
+            p.life -= delta / 1000;
+        }
+        particles = particles.filter(p => p.life > 0);
+
+        // Animate Falling Wrong Letters (Gravity + Rotation)
+        for (const fl of fallingLetters) {
+            fl.x += fl.vx * delta / 1000;
+            fl.y += fl.vy * delta / 1000;
+            fl.vy += 420 * delta / 1000;
+            fl.rot += fl.vrot * delta / 1000;
+            if (fl.y > (boardTop + ROWS * cellSize)) {
+                fl.alpha -= 2.0 * delta / 1000;
+            }
+        }
+        fallingLetters = fallingLetters.filter(fl => fl.alpha > 0);
+
+        // Screen Shake decay
+        if (screenShake > 0) {
+            screenShake -= delta / 1000;
+        }
+
+        // Smooth vertical descent interpolation
+        for (const obj of objects) {
+            if (obj.visualYOffset && obj.visualYOffset < 0) {
+                obj.visualYOffset = Math.min(0, obj.visualYOffset + delta / 120);
+            }
+        }
+
+        updateHud();
+    }
+
+    function draw() {
+        const dpr = Math.min(2, window.devicePixelRatio || 1);
+        const width = DOM.canvas.width / dpr, height = DOM.canvas.height / dpr;
+        if (!width || !height) return;
+        
+        DOM.ctx.save();
+        DOM.ctx.clearRect(0, 0, width, height);
+
+        // Camera Shake effect on wrong key
+        if (screenShake > 0) {
+            const mag = (screenShake / 0.22) * 5;
+            const sx = (Math.random() - 0.5) * mag * 2;
+            const sy = (Math.random() - 0.5) * mag * 2;
+            DOM.ctx.translate(sx, sy);
+        }
+
+        DOM.ctx.fillStyle = "#0b1120";
+        DOM.ctx.fillRect(0, 0, width, height);
+
+        // Twinkling Space Stars Background
+        drawStars(width, height);
+
+        // Grid Lines
+        DOM.ctx.strokeStyle = "rgba(51, 65, 85, 0.4)";
+        DOM.ctx.lineWidth = 1;
+        for (let y = 0; y < ROWS; y++) {
+            for (let x = 0; x < COLS; x++) {
+                DOM.ctx.strokeRect(boardLeft + x * cellSize, boardTop + y * cellSize, cellSize, cellSize);
+            }
+        }
+
+        // Danger line mapped to top grid
+        DOM.ctx.strokeStyle = "rgba(251, 113, 133, 0.75)";
+        DOM.ctx.lineWidth = 2;
+        DOM.ctx.beginPath();
+        DOM.ctx.moveTo(boardLeft, boardTop + 1);
+        DOM.ctx.lineTo(boardLeft + COLS * cellSize, boardTop + 1);
+        DOM.ctx.stroke();
+
+        // Normal Word Cells
+        for (const entry of boardEntries()) {
+            drawCell(entry.x, entry.y, entry.ref.cell, entry.ref.object);
+        }
+
+        // Physically Falling Detached / Wrong Letters
+        for (const fl of fallingLetters) {
+            DOM.ctx.save();
+            DOM.ctx.globalAlpha = Math.max(0, fl.alpha);
+            DOM.ctx.translate(fl.x + fl.size / 2, fl.y + fl.size / 2);
+            DOM.ctx.rotate(fl.rot);
+
+            const w = fl.size - 3, h = fl.size - 3;
+            DOM.ctx.fillStyle = fl.color || "#e11d48";
+            DOM.ctx.strokeStyle = fl.stroke || "#fb7185";
+            DOM.ctx.lineWidth = 2;
+            
+            const radius = Math.max(2, fl.size * 0.15);
+            DOM.ctx.beginPath();
+            if (typeof DOM.ctx.roundRect === "function") {
+                DOM.ctx.roundRect(-w / 2, -h / 2, w, h, radius);
+            } else {
+                DOM.ctx.rect(-w / 2, -h / 2, w, h);
+            }
+            DOM.ctx.fill();
+            DOM.ctx.stroke();
+
+            DOM.ctx.fillStyle = "#ffffff";
+            DOM.ctx.font = `900 ${Math.max(10, fl.size * 0.44)}px system-ui`;
+            DOM.ctx.textAlign = "center";
+            DOM.ctx.textBaseline = "middle";
+            DOM.ctx.fillText(fl.letter, 0, 1);
+
+            DOM.ctx.restore();
+        }
+
+        // Burst Particles
+        for (const p of particles) {
+            DOM.ctx.globalAlpha = Math.max(0, p.life / 0.75);
+            DOM.ctx.fillStyle = "#fbbf24";
+            DOM.ctx.fillRect(p.x, p.y, p.size, p.size);
+        }
+        DOM.ctx.globalAlpha = 1;
+
+        if (!state.running) {
+            DOM.ctx.fillStyle = "rgba(15, 23, 42, 0.65)";
+            DOM.ctx.fillRect(0, 0, width, height);
+            DOM.ctx.fillStyle = "#fff";
+            DOM.ctx.font = `900 ${Math.max(16, Math.min(width, height) * 0.05)}px system-ui`;
+            DOM.ctx.textAlign = "center";
+            DOM.ctx.fillText(state.gameEnded ? "SESSION TERMINATED" : "AWAITING INITIALIZATION", width / 2, height / 2);
+        }
+
+        DOM.ctx.restore();
+    }
+
+    function drawCell(x, y, cell, object) {
+        const px = boardLeft + x * cellSize + 1.5;
+        const py = boardTop + (y + (object ? object.visualYOffset || 0 : 0)) * cellSize + 1.5;
+        const w = cellSize - 3, h = cellSize - 3;
+        let fill = "#1e293b", stroke = "#475569"; 
+
+        if (cell.golden) {
+            fill = "#b45309"; stroke = "#fbbf24";
+        } else if (cell.brown) {
+            fill = "#451a03"; stroke = "#92400e";
+        }
+
+        DOM.ctx.save();
+        if (cell.golden) {
+            DOM.ctx.shadowBlur = 12;
+            DOM.ctx.shadowColor = "#fbbf24";
+        } else if (object && object.isAccelerated) {
+            DOM.ctx.shadowBlur = 10;
+            DOM.ctx.shadowColor = "#f43f5e";
+        }
+
+        const radius = Math.max(2, cellSize * 0.15);
+        DOM.ctx.beginPath();
+        if (typeof DOM.ctx.roundRect === "function") {
+            DOM.ctx.roundRect(px, py, w, h, radius);
+        } else {
+            DOM.ctx.rect(px, py, w, h);
+        }
+        DOM.ctx.fillStyle = fill; DOM.ctx.fill();
+        DOM.ctx.strokeStyle = stroke; DOM.ctx.lineWidth = 1.5; DOM.ctx.stroke();
+        DOM.ctx.shadowBlur = 0;
+
+        DOM.ctx.fillStyle = "#f8fafc";
+        DOM.ctx.font = `800 ${Math.max(10, cellSize * 0.42)}px system-ui`;
+        DOM.ctx.textAlign = "center"; DOM.ctx.textBaseline = "middle";
+        DOM.ctx.fillText(cell.letter, px + w / 2, py + h / 2 + 1);
+        
+        DOM.ctx.restore();
+    }
+
+    function startGame() {
+        board = createEmptyBoard();
+        objects = []; nextQueue = []; particles = []; fallingLetters = [];
+        state = { 
+            ...state, 
+            running: true, 
+            gameEnded: false, 
+            score: 0, 
+            combo: 0, 
+            level: 1, 
+            elapsedMs: 0,
+            elapsedSeconds: 0,
+            spawnClock: 0, 
+            fallClock: 0, 
+            objectId: 0, 
+            wrongPresses: 0, 
+            wordsCompleted: 0, 
+            spawnMs: CONFIG[state.mode].spawn, 
+            fallMs: CONFIG[state.mode].fall,
+            speedMultiplier: "1.0"
+        };
+
+        DOM.sideTitle.textContent = state.mode === "SPOM" ? "SPOM" : `CA ${state.mode}`;
+        DOM.chipModeLabel.textContent = `${state.mode}:`;
+        DOM.modalAccent.textContent = "SPACE RUSH";
+        DOM.overlay.classList.add("hidden");
+        DOM.startBtn.textContent = "RESTART SESSION";
+
+        spawnObject();
+        updateCurrentWord();
+        updateHud();
+    }
+
+    function endGame(reason) {
+        if (!state.running && state.gameEnded) return;
+        state.running = false; state.gameEnded = true;
+        const oldBest = Number(localStorage.getItem("caSpaceRushBest") || 0);
+        if (state.score > oldBest) localStorage.setItem("caSpaceRushBest", String(state.score));
+
+        const accuracy = (state.wordsCompleted + state.wrongPresses) === 0 ? 100 : Math.round(state.wordsCompleted / (state.wordsCompleted + state.wrongPresses) * 100);
+
+        DOM.modalAccent.textContent = "SESSION ENDED";
+        const endM = Math.floor(state.elapsedSeconds / 60);
+        const endS = state.elapsedSeconds % 60;
+        const timeStr = `${String(endM).padStart(2, "0")}:${String(endS).padStart(2, "0")}`;
+
+        DOM.modalText.innerHTML = `
+            <span style="color:var(--danger)"><b>${reason}</b></span><br><br>
+            Survival Time: <b style="color:var(--accent-gold)">${timeStr}</b><br>
+            Final Score: <b style="color:#fff">${state.score.toLocaleString()}</b><br>
+            Highest: <b>${Math.max(state.score, oldBest).toLocaleString()}</b><br>
+            Level Reached: <b>${state.level}</b><br>
+            Terms Mastered: <b>${state.wordsCompleted}</b><br>
+            Accuracy Rating: <b style="color:${accuracy > 80 ? 'var(--success)' : 'var(--danger)'}">${accuracy}%</b>
+        `;
+        DOM.overlay.classList.remove("hidden");
+        DOM.startBtn.textContent = "RE-INITIALIZE PROTOCOL";
+        updateHud();
+    }
+
+    document.querySelectorAll(".mode-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".mode-btn").forEach(i => i.classList.remove("active"));
+            btn.classList.add("active");
+            state.mode = btn.dataset.mode;
+            DOM.sideTitle.textContent = state.mode === "SPOM" ? "SPOM" : `CA ${state.mode}`;
+            DOM.chipModeLabel.textContent = `${state.mode}:`;
+        });
+    });
+
+    DOM.startBtn.addEventListener("click", () => {
+        try { if (audioContext) audioContext.resume(); } catch { }
+        startGame();
+    });
+
+    DOM.openRulesBtn.addEventListener("click", () => {
+        DOM.modalAccent.textContent = "RULES & GUIDE";
+        DOM.modalText.innerHTML = `
+            <b>How to Play CA Space Rush:</b><br><br>
+            1. <b>Type From 1st Letter:</b> Type matching falling CA terms to destroy them in mid-air.<br>
+            2. <b>Falling Wrong Letters:</b> If you enter a wrong letter, the red letter physically falls down, your combo resets, and the word drops down 1 row closer to the danger floor.<br>
+            3. <b>Multi-Mode:</b> Practice terms across CA Final, CA Inter, Foundation, and SPOM.<br>
+            4. <b>Dynamic Scaling:</b> Fits completely onto any phone, tablet, or desktop screen without scrolling.
+        `;
+        DOM.overlay.classList.remove("hidden");
+    });
+
+    document.addEventListener("keydown", e => {
+        if (e.repeat) return;
+        if (e.key === "Enter") { if (!state.running) startGame(); return; }
+        // Escape does not abruptly kill the session
+        if (!state.running) return;
+        if (/^[a-zA-Z]$/.test(e.key)) typeLetter(e.key.toUpperCase());
+    });
+
+    function gameLoop(timestamp) {
+        try {
+            const delta = Math.min(50, timestamp - (gameLoop.lastTime || timestamp));
+            gameLoop.lastTime = timestamp;
+            update(delta); 
+            draw();
+        } catch (err) {
+            console.error("Game loop non-fatal error:", err);
+        }
+        requestAnimationFrame(gameLoop);
+    }
+
+    // Init Calls
+    initKeyboard();
+    resizeCanvas();
+    renderQueue(); 
+    updateHud(); 
+    updateCurrentWord();
+    requestAnimationFrame(gameLoop);
+
+</script>
+</body>
+</html>
