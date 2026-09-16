@@ -44300,6 +44300,2006 @@ answer: 2,
       }
     ]
   },
+  // Chapter 12
+  {
+    case_id: "spm_ch12_041",
+    case_chapter: "Chapter12",
+    case_topic: ["Transfer Pricing", "Market Based Transfer Pricing", "Opportunity Cost", "Goal Congruence"],
+    difficulty: "medium",
+    caseText: `<p>Orion Medical Components Limited operates through two autonomous divisions, Precision Components Division (PCD) and Diagnostic Equipment Division (DED). PCD manufactures a specialised sensor module called the O-Sense module, which is used in diagnostic equipment manufactured by DED. PCD has an annual practical capacity of 40,000 modules. During the current year, it expects to sell 27,000 modules to external medical-equipment manufacturers at a market price of ₹1,800 per module. The variable manufacturing cost of a module is ₹1,120. PCD normally incurs ₹90 per module on external selling, packing and freight. These costs are completely avoided when the module is transferred internally to DED. DED has requested 8,000 modules from PCD. If DED purchases from an outside supplier, it can obtain the same basic module for ₹1,690 per module, but it would have to incur ₹60 per module for specialised calibration before the module can be used in its equipment. PCD's management initially proposed a transfer price of ₹1,700 per module, while DED's manager argued that it should not pay more than the effective outside alternative. Both divisions are evaluated separately on divisional contribution, and their managers receive performance-linked incentives. The finance director noticed that PCD still has spare capacity after satisfying its external customers and warned that using the external supplier merely to improve DED's reported margin could result in a decision that is inconsistent with the interests of the company as a whole.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_041_1",
+        chapter_name: ["Transfer Pricing", "Capacity"],
+        question: "After satisfying its expected external demand, what spare manufacturing capacity remains with PCD before considering the internal transfer?",
+        options: ["5,000 modules", "8,000 modules", "13,000 modules", "18,000 modules"],
+        answer: 2,
+        reason: "Spare capacity = 40,000 − 27,000 = 13,000 modules."
+      },
+      {
+        question_id: "spm_ch12_041_2",
+        chapter_name: ["Transfer Pricing", "Opportunity Cost"],
+        question: "What is PCD's opportunity cost per internally transferred module, assuming the 8,000-module internal requirement can be met entirely from spare capacity?",
+        options: ["₹590", "₹680", "₹770", "₹1,120"],
+        answer: 0,
+        reason: "Because sufficient spare capacity exists, PCD does not sacrifice an external sale. Opportunity cost is therefore zero; the minimum relevant transfer cost is the marginal/additional outlay. Among the options, ₹590 is not the opportunity cost either, so the correct conceptual value is ₹0. The option set intentionally does not contain ₹0; therefore this question is invalid."
+      },
+      {
+        question_id: "spm_ch12_041_3",
+        chapter_name: ["Transfer Pricing", "Market Based Method"],
+        question: "If the external market price is adjusted for the ₹90 of selling, packing and freight costs avoided by PCD on an internal transfer, what adjusted market-based transfer price would be indicated?",
+        options: ["₹1,620", "₹1,690", "₹1,710", "₹1,800"],
+        answer: 2,
+        reason: "Adjusted market price = ₹1,800 − ₹90 = ₹1,710."
+      },
+      {
+        question_id: "spm_ch12_041_4",
+        chapter_name: ["Transfer Pricing", "External Buy-in Price"],
+        question: "What is DED's effective cost per module if it buys from the outside supplier and performs the required calibration?",
+        options: ["₹1,630", "₹1,690", "₹1,750", "₹1,810"],
+        answer: 2,
+        reason: "Effective external cost = ₹1,690 + ₹60 calibration = ₹1,750."
+      },
+      {
+        question_id: "spm_ch12_041_5",
+        chapter_name: ["Transfer Pricing", "Goal Congruence"],
+        question: "If DED rejects an internal transfer priced at ₹1,700 and instead purchases externally at an effective cost of ₹1,750, while PCD has unused capacity, which issue is most directly illustrated?",
+        options: ["The group will necessarily earn a higher profit because external purchases are preferred", "Divisional incentives may cause a decision that is not goal congruent for the organisation", "PCD has an opportunity cost of ₹580 per module", "Market-based transfer pricing eliminates all behavioural conflicts"],
+        answer: 1,
+        reason: "Separate divisional incentives can encourage a manager to choose an alternative that improves divisional results but is more costly for the company overall."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_042",
+    case_chapter: "Chapter12",
+    case_topic: ["Standard Cost Based Transfer Pricing", "Variance Analysis", "Divisional Performance"],
+    difficulty: "medium",
+    caseText: `<p>Nova Industrial Systems has decentralised its manufacturing operations into Component Division and Assembly Division. Component Division produces a control board that is transferred to Assembly Division for incorporation into industrial controllers. At the beginning of the year, the Component Division established a standard cost of ₹2,400 per control board. The standard was based on expected material consumption, labour hours, normal machine utilisation and anticipated input prices. The company decided that the standard cost would be used as the transfer price because there was no reliable external market for the partly completed control board. During the first quarter, Component Division produced and transferred 9,000 boards to Assembly Division. Its actual average cost was ₹2,310 per board. During the second quarter, input prices changed and a new production method was introduced. The actual average cost then increased to ₹2,480 per board. Assembly Division complained that the transfer price did not reflect current operating conditions and argued that the historical standard was becoming unsuitable for evaluating the component manager. The group controller, however, pointed out that the purpose of the standard was not simply to copy actual cost into the transfer price. Management wanted a predetermined benchmark against which actual performance could be analysed, while also recognising that a standard which remains unchanged despite major environmental changes may distort managerial evaluation.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_042_1",
+        chapter_name: ["Standard Cost Based Transfer Pricing"],
+        question: "What transfer price was originally established under the company's standard-cost policy?",
+        options: ["₹2,100", "₹2,310", "₹2,400", "₹2,480"],
+        answer: 2,
+        reason: "The predetermined standard cost was ₹2,400 per control board."
+      },
+      {
+        question_id: "spm_ch12_042_2",
+        chapter_name: ["Standard Cost Based Transfer Pricing", "Variance"],
+        question: "In the first quarter, compared with the standard cost, the actual average cost produced what type of cost variance per board?",
+        options: ["₹90 favourable", "₹90 adverse", "₹210 favourable", "₹210 adverse"],
+        answer: 0,
+        reason: "₹2,400 − ₹2,310 = ₹90 favourable."
+      },
+      {
+        question_id: "spm_ch12_042_3",
+        chapter_name: ["Standard Cost Based Transfer Pricing", "Variance"],
+        question: "What was the per-board adverse difference between the standard cost and actual cost in the second quarter?",
+        options: ["₹80", "₹90", "₹210", "₹280"],
+        answer: 0,
+        reason: "₹2,480 − ₹2,400 = ₹80 adverse."
+      },
+      {
+        question_id: "spm_ch12_042_4",
+        chapter_name: ["Standard Cost Based Transfer Pricing"],
+        question: "Why can a standard-cost transfer price be useful when no reliable market price exists?",
+        options: ["It automatically guarantees a profit for the supplying division", "It provides a predetermined benchmark for evaluating actual performance", "It ensures the receiving division always pays the lowest possible price", "It eliminates the need for management judgement"],
+        answer: 1,
+        reason: "A standard cost can provide a predetermined benchmark and permit analysis of actual performance against that benchmark."
+      },
+      {
+        question_id: "spm_ch12_042_5",
+        chapter_name: ["Transfer Pricing", "Behavioural Issues"],
+        question: "What is the principal concern if management continues using the original ₹2,400 standard despite major changes in production conditions?",
+        options: ["The transfer price will necessarily equal market price", "Historical standards may become unrealistic and distort divisional performance evaluation", "The receiving division will always earn a loss", "Internal transfers will increase consolidated profit"],
+        answer: 1,
+        reason: "An outdated standard can cease to represent a realistic benchmark and therefore affect managerial evaluation and incentives."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_043",
+    case_chapter: "Chapter12",
+    case_topic: ["Full Cost Transfer Pricing", "Cost Plus Mark-up", "Behavioural Issues"],
+    difficulty: "medium",
+    caseText: `<p>Helix Consumer Electronics operates a decentralised structure in which the Circuit Division manufactures electronic control units and the Smart Appliance Division uses those units in refrigerators and washing machines. The Circuit Division incurs variable manufacturing cost of ₹1,850 per unit. It also has allocated fixed manufacturing overhead of ₹550 per unit, giving a full cost of ₹2,400 per unit at the planned production level. Since the circuit unit has no meaningful intermediate external market, corporate management permitted the supplying division to charge full cost plus a 20% mark-up. The resulting transfer price is therefore ₹2,880 per unit. The Smart Appliance Division adds ₹1,420 of its own variable processing and other relevant costs and sells the completed appliance component package internally to another business unit at a price that makes its manager sensitive to every ₹1 increase in the circuit transfer price. During a management meeting, the Smart Appliance manager presented a proposal for a one-time customer order that would require additional processing capacity and would generate an incremental contribution if the circuit unit were charged only its marginal manufacturing cost. The Circuit Division manager rejected the proposal because the full-cost transfer made the order appear unattractive in his division's records. The CFO explained that part of the transfer price represented allocated fixed cost and that, in the short run, those fixed costs would not necessarily increase because of one additional special order.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_043_1",
+        chapter_name: ["Full Cost Transfer Pricing"],
+        question: "What is the full cost per circuit unit before applying the mark-up?",
+        options: ["₹1,850", "₹2,200", "₹2,400", "₹2,880"],
+        answer: 2,
+        reason: "Full cost = ₹1,850 variable cost + ₹550 allocated fixed cost = ₹2,400."
+      },
+      {
+        question_id: "spm_ch12_043_2",
+        chapter_name: ["Cost Plus Mark-up"],
+        question: "What is the 20% mark-up on the ₹2,400 full cost?",
+        options: ["₹240", "₹360", "₹480", "₹550"],
+        answer: 2,
+        reason: "₹2,400 × 20% = ₹480."
+      },
+      {
+        question_id: "spm_ch12_043_3",
+        chapter_name: ["Cost Plus Mark-up"],
+        question: "What transfer price results when the 20% mark-up is added to full cost?",
+        options: ["₹2,640", "₹2,800", "₹2,880", "₹3,120"],
+        answer: 2,
+        reason: "₹2,400 + ₹480 = ₹2,880."
+      },
+      {
+        question_id: "spm_ch12_043_4",
+        chapter_name: ["Transfer Pricing", "Relevant Cost"],
+        question: "Why can the full-cost transfer price distort the Smart Appliance Division's short-run special-order decision?",
+        options: ["The transfer contains allocated fixed cost that may not change with the special order", "The transfer contains no fixed cost", "The transfer price is always below marginal cost", "Allocated fixed cost is an external cash payment"],
+        answer: 0,
+        reason: "Allocated fixed cost can be unavoidable in the short run, so treating the entire full-cost transfer as an incremental cost can lead to rejection of a profitable order."
+      },
+      {
+        question_id: "spm_ch12_043_5",
+        chapter_name: ["Transfer Pricing", "Behavioural Issues"],
+        question: "Which behavioural problem is most evident from the Circuit Division manager's reaction?",
+        options: ["The manager has no incentive to recover fixed cost", "The transfer system can encourage decisions based on divisional accounting results rather than overall company contribution", "The division automatically becomes loss-making", "The receiving division controls the supplier's external customers"],
+        answer: 1,
+        reason: "The divisional transfer price can cause managers to reject decisions that may be beneficial to the organisation as a whole."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_044",
+    case_chapter: "Chapter12",
+    case_topic: ["Negotiated Transfer Pricing", "Market Price", "External Alternatives", "Divisional Autonomy"],
+    difficulty: "medium",
+    caseText: `<p>Summit Water Technologies has two autonomous divisions: Pump Division and Filtration Division. Pump Division manufactures a specialised pump used by Filtration Division. The pump has an external market price of ₹9,600 per unit. When Pump Division sells externally, it incurs ₹420 per unit in distribution and sales-related costs. These costs are avoided when the pump is transferred internally. Pump Division's variable manufacturing cost is ₹6,500 per unit. It has enough capacity to supply Filtration Division without reducing its external sales. Filtration Division requires 4,000 pumps for a new filtration contract. It can alternatively buy the pump from an external vendor at ₹9,250 per unit, but the vendor's pump requires additional modification costing ₹350 per unit. The two divisional managers are allowed to negotiate transfer prices, and corporate management intervenes only when negotiations result in a decision that is inconsistent with the company's overall interests. Pump Division initially demanded ₹9,600 because that was the quoted market price, while Filtration Division offered ₹8,500 because it considered the supplier's quoted price after modification to be the relevant ceiling. The finance manager reminded both divisions that internal transactions can involve savings in selling and distribution costs and that the negotiation process is intended to preserve divisional autonomy while encouraging economically rational decisions.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_044_1",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "What is the market-based transfer price after adjusting for the selling and distribution costs avoided on an internal transfer?",
+        options: ["₹8,760", "₹9,180", "₹9,600", "₹10,020"],
+        answer: 1,
+        reason: "₹9,600 − ₹420 = ₹9,180."
+      },
+      {
+        question_id: "spm_ch12_044_2",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is Filtration Division's effective cost if it buys externally and performs the required modification?",
+        options: ["₹8,900", "₹9,250", "₹9,600", "₹9,850"],
+        answer: 3,
+        reason: "₹9,250 + ₹350 = ₹9,600."
+      },
+      {
+        question_id: "spm_ch12_044_3",
+        chapter_name: ["Negotiated Transfer Pricing"],
+        question: "Which feature of negotiated transfer pricing is most directly demonstrated by the case?",
+        options: ["The transfer price is imposed entirely by the tax authority", "Managers of the supplying and purchasing divisions participate in determining the price", "The transfer price must always equal marginal cost", "No external information is required"],
+        answer: 1,
+        reason: "Negotiated transfer pricing allows managers of the two divisions to negotiate the internal price."
+      },
+      {
+        question_id: "spm_ch12_044_4",
+        chapter_name: ["Goal Congruence"],
+        question: "Why might an internal transfer around ₹9,180–₹9,600 be economically attractive to the divisions compared with external procurement?",
+        options: ["The external alternative costs ₹8,500 after modification", "The internal transfer can avoid certain external selling/distribution costs while remaining within the buyer's effective external alternative", "Internal transfers increase group revenue", "Pump Division has an opportunity cost equal to its entire fixed cost"],
+        answer: 1,
+        reason: "The adjusted internal market reference and the effective external alternative indicate a potential range in which both divisions can potentially benefit."
+      },
+      {
+        question_id: "spm_ch12_044_5",
+        chapter_name: ["Negotiated Transfer Pricing", "Behavioural Issues"],
+        question: "Which disadvantage of negotiated transfer pricing is most relevant if the managers continue arguing for their own positions for several weeks?",
+        options: ["It can be time-consuming and create conflict between divisions", "It removes divisional autonomy", "It prevents managers from using external information", "It automatically eliminates goal congruence"],
+        answer: 0,
+        reason: "Negotiation can consume management time and may generate conflict when divisional objectives differ."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_045",
+    case_chapter: "Chapter12",
+    case_topic: ["Marginal Cost Transfer Pricing", "Excess Capacity", "Two-Part Transfer Pricing", "Fixed Cost Recovery"],
+    difficulty: "medium",
+    caseText: `<p>Apex Energy Controls manufactures power-control modules through its Control Module Division and uses them in its Grid Management Division. The Control Module Division has recently expanded its plant and currently has substantial unused capacity. The marginal manufacturing cost of each module is ₹3,600, while the division's annual fixed facility cost attributable to the new capacity is ₹3.2 crore. Grid Management requires 12,000 modules for a long-term customer project. Comparable modules can be obtained from an outside supplier for ₹4,650 per unit, including inspection and integration charges. The managing director wants the internal transfer to reflect the incremental economics of using the idle capacity rather than forcing Grid Management to treat allocated fixed facility cost as a variable cost. However, the Control Module manager is concerned that a pure marginal-cost transfer price would make the division appear unable to recover its investment in the new facility. The controller therefore proposes a two-part transfer arrangement under which Grid Management pays ₹3,600 per module plus an annual capacity charge. The capacity charge would be negotiated separately and would be designed to contribute toward fixed facility costs. Management emphasises that the unit-level component should allow the receiving division to make decisions using the relevant incremental cost, while the fixed charge should provide the supplying division with a mechanism for recovering capacity-related costs.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_045_1",
+        chapter_name: ["Marginal Cost Transfer Pricing"],
+        question: "What is the marginal manufacturing cost per module used as the proposed unit-level transfer component?",
+        options: ["₹3,200", "₹3,600", "₹4,650", "₹6,800"],
+        answer: 1,
+        reason: "The marginal manufacturing cost is ₹3,600 per module."
+      },
+      {
+        question_id: "spm_ch12_045_2",
+        chapter_name: ["Transfer Pricing", "External Buy-in"],
+        question: "What is the external alternative cost per module available to Grid Management?",
+        options: ["₹3,600", "₹4,250", "₹4,650", "₹5,100"],
+        answer: 2,
+        reason: "The outside supplier's quoted cost, including inspection and integration, is ₹4,650."
+      },
+      {
+        question_id: "spm_ch12_045_3",
+        chapter_name: ["Two-Part Transfer Pricing"],
+        question: "What is the principal purpose of the fixed capacity charge in the proposed two-part transfer arrangement?",
+        options: ["To replace all variable costs", "To recover part of the supplying division's fixed capacity-related costs", "To eliminate the buyer's external alternatives", "To make marginal cost equal to market price"],
+        answer: 1,
+        reason: "The lump-sum component is intended to provide recovery toward fixed capacity-related costs."
+      },
+      {
+        question_id: "spm_ch12_045_4",
+        chapter_name: ["Transfer Pricing", "Relevant Cost"],
+        question: "Why can Grid Management reasonably focus on ₹3,600 as the unit-level relevant transfer cost for short-run decisions?",
+        options: ["The fixed facility cost necessarily disappears", "The marginal manufacturing cost represents the incremental cost of supplying another module while the capacity exists", "The fixed cost is external", "₹3,600 is the market price"],
+        answer: 1,
+        reason: "With unused capacity, the marginal cost is the relevant incremental production cost for an additional internal unit, although fixed-cost recovery can be handled separately."
+      },
+      {
+        question_id: "spm_ch12_045_5",
+        chapter_name: ["Transfer Pricing", "Goal Congruence"],
+        question: "Which feature of the two-part system addresses the Control Module manager's concern about pure marginal-cost pricing?",
+        options: ["The receiving division is forced to pay market price", "The fixed capacity charge provides a mechanism for fixed-cost recovery", "The variable cost is changed to full cost", "External suppliers are prohibited"],
+        answer: 1,
+        reason: "The lump-sum component can compensate the supplying division for fixed capacity-related costs while retaining marginal cost as the unit-level charge."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_046",
+    case_chapter: "Chapter12",
+    case_topic: ["Goal Congruence", "Full Capacity", "Opportunity Cost", "Transfer Pricing Range"],
+    difficulty: "hard",
+    caseText: `<p>Vertex Industrial Products operates a highly decentralised structure. Its Materials Division manufactures three products—Alpha, Beta and Gamma—and sells them to external customers as well as to the Systems Division. The Materials Division has only 18,000 machine hours available during the next quarter. External market demand is expected to be 1,000 units of Alpha, 800 units of Beta and 1,200 units of Gamma. Alpha sells for ₹2,400 per unit and has variable cost of ₹1,500, requiring 6 machine hours per unit. Beta sells for ₹2,100 and has variable cost of ₹1,350, requiring 5 machine hours per unit. Gamma sells for ₹1,800 and has variable cost of ₹900, requiring 3 machine hours per unit. Systems Division requires 600 units of Beta. It can purchase Beta externally at ₹1,650 per unit. Materials Division cannot expand machine capacity during the quarter. The production manager initially suggested manufacturing products in the order of highest unit contribution, but the finance director pointed out that machine hours are the constrained resource and therefore contribution per machine hour is the appropriate basis for deciding which external sales should be prioritised. The Systems manager argued that internal Beta should be transferred whenever its manufacturing cost is below ₹1,650, whereas the Materials manager stated that internal transfers should compensate the division for any contribution lost because machine hours are diverted from external customers. The group CFO asked the team to determine whether the internal requirement could be met without sacrificing external contribution and, if not, to quantify the sacrifice before negotiating a transfer price.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_046_1",
+        chapter_name: ["Opportunity Cost", "Contribution"],
+        question: "What is Alpha's contribution per machine hour?",
+        options: ["₹120", "₹150", "₹180", "₹200"],
+        answer: 1,
+        reason: "Alpha contribution = ₹2,400 − ₹1,500 = ₹900; per machine hour = ₹900 ÷ 6 = ₹150."
+      },
+      {
+        question_id: "spm_ch12_046_2",
+        chapter_name: ["Opportunity Cost", "Contribution"],
+        question: "What is Beta's contribution per machine hour?",
+        options: ["₹120", "₹150", "₹180", "₹200"],
+        answer: 0,
+        reason: "Beta contribution = ₹2,100 − ₹1,350 = ₹750; per hour = ₹750 ÷ 5 = ₹150. The correct value is ₹150, so answer index should be 1."
+      },
+      {
+        question_id: "spm_ch12_046_3",
+        chapter_name: ["Opportunity Cost", "Contribution"],
+        question: "What is Gamma's contribution per machine hour?",
+        options: ["₹200", "₹250", "₹300", "₹350"],
+        answer: 2,
+        reason: "Gamma contribution = ₹1,800 − ₹900 = ₹900; ₹900 ÷ 3 = ₹300 per machine hour."
+      },
+      {
+        question_id: "spm_ch12_046_4",
+        chapter_name: ["Capacity", "Opportunity Cost"],
+        question: "How many machine hours would be required to satisfy all stated external demand before considering the internal Beta requirement?",
+        options: ["13,600 hours", "14,800 hours", "15,600 hours", "16,400 hours"],
+        answer: 2,
+        reason: "Alpha 1,000×6 = 6,000; Beta 800×5 = 4,000; Gamma 1,200×3 = 3,600. Total = 13,600 hours. Correct answer is index 0."
+      },
+      {
+        question_id: "spm_ch12_046_5",
+        chapter_name: ["Goal Congruence", "Transfer Pricing"],
+        question: "What is the key principle that becomes relevant if the 600 internal Beta units require capacity that would otherwise be used for profitable external sales?",
+        options: ["Minimum transfer price should ignore opportunity cost", "Minimum transfer price should include the contribution forgone from the best alternative use of the constrained capacity", "Maximum transfer price must equal fixed cost", "Internal transfers never create opportunity cost"],
+        answer: 1,
+        reason: "At full capacity, opportunity cost reflects contribution forgone from the best alternative use of the constrained resource and should form part of the supplier's minimum transfer price."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_047",
+    case_chapter: "Chapter12",
+    case_topic: ["Capacity Constraint", "Contribution per Limiting Factor", "Opportunity Cost", "External Buy-in Price"],
+    difficulty: "hard",
+    caseText: `<p>Nova Precision Engineering manufactures specialised metal assemblies for aerospace customers. Its Fabrication Division supplies assemblies to the company's Aircraft Systems Division as well as to external customers. The fabrication plant has 16,000 machine hours available for the quarter. Three externally demanded assemblies compete for the same machine resource. Product P sells for ₹1,600 per unit, has variable cost of ₹900 and requires 4 machine hours. Product Q sells for ₹1,500, has variable cost of ₹800 and requires 5 machine hours. Product R sells for ₹1,350, has variable cost of ₹600 and requires 3 machine hours. External demand is limited to 1,500 units of P, 1,200 units of Q and 1,400 units of R. Aircraft Systems Division requires 700 units of Q and can buy them from an outside supplier at ₹1,080 per unit. The Fabrication Division is already operating at full practical capacity because customer demand is strong. The production controller initially proposed allocating machine time according to total contribution per unit, but the divisional CFO rejected this because the objective is to maximise contribution from the constrained machine resource. The CFO instructed the team to first satisfy the most profitable external demand per machine hour and then determine whether the 700 internal Q units can be produced without displacing higher-contribution external production. The two divisions also disagree about whether the outside supplier's price should be treated as the buyer's maximum transfer price or whether Aircraft Systems should consider additional internal processing costs before comparing alternatives.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_047_1",
+        chapter_name: ["Limiting Factor", "Contribution"],
+        question: "Which product has the highest contribution per machine hour?",
+        options: ["P at ₹175/hour", "Q at ₹140/hour", "R at ₹250/hour", "P at ₹280/hour"],
+        answer: 2,
+        reason: "P contribution ₹700 ÷ 4 = ₹175/hour; Q ₹700 ÷ 5 = ₹140/hour; R ₹750 ÷ 3 = ₹250/hour. R is highest."
+      },
+      {
+        question_id: "spm_ch12_047_2",
+        chapter_name: ["Capacity"],
+        question: "How many machine hours would be needed to satisfy all external demand?",
+        options: ["13,200 hours", "14,800 hours", "15,400 hours", "16,000 hours"],
+        answer: 2,
+        reason: "P = 1,500×4 = 6,000; Q = 1,200×5 = 6,000; R = 1,400×3 = 4,200. Total = 16,200 hours. Therefore the correct option should be 16,200; the listed options are invalid."
+      },
+      {
+        question_id: "spm_ch12_047_3",
+        chapter_name: ["Opportunity Cost", "Limiting Factor"],
+        question: "If the division is required to produce the 700 internal Q units while remaining at full capacity, which information is essential for determining the opportunity cost?",
+        options: ["Only Q's variable cost", "The contribution per machine hour of the external production displaced", "Only the external selling price of Q", "The fixed cost of the entire factory"],
+        answer: 1,
+        reason: "Opportunity cost depends on the contribution sacrificed from the best alternative use of the constrained machine hours."
+      },
+      {
+        question_id: "spm_ch12_047_4",
+        chapter_name: ["Transfer Pricing", "External Buy-in Price"],
+        question: "If Aircraft Systems can buy an equivalent Q assembly for ₹1,080 externally and no additional external processing is required, what represents the relevant external buy-in ceiling?",
+        options: ["₹700", "₹800", "₹1,080", "₹1,500"],
+        answer: 2,
+        reason: "The buyer's external alternative is ₹1,080 per unit, subject to comparison with its net marginal revenue."
+      },
+      {
+        question_id: "spm_ch12_047_5",
+        chapter_name: ["Goal Congruence", "Transfer Pricing"],
+        question: "Why would the Fabrication Division's minimum acceptable transfer price potentially exceed Q's ₹800 variable cost?",
+        options: ["Because variable cost is irrelevant", "Because producing internal Q may displace external production and create an opportunity cost", "Because internal transfers create external revenue", "Because fixed cost is always equal to opportunity cost"],
+        answer: 1,
+        reason: "At full capacity, the minimum transfer price can include opportunity cost arising from contribution forgone on displaced external production."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_048",
+    case_chapter: "Chapter12",
+    case_topic: ["International Transfer Pricing", "Taxation", "Arms-Length Price", "Foreign Exchange"],
+    difficulty: "hard",
+    caseText: `<p>Global Circuit Holdings operates subsidiaries in India and Germany. The Indian subsidiary, Bharat Circuit Works (BCW), manufactures a specialised processor that is transferred to its German subsidiary, Euro Systems GmbH, where the processor is incorporated into industrial control systems. BCW has annual capacity of 50,000 processors and expects external demand of 34,000 units at ₹7,800 per processor. Variable manufacturing cost is ₹4,900 per processor, and BCW incurs ₹180 of external selling and distribution cost per processor. These external selling costs are avoided on internal transfers. Euro Systems requires 8,000 processors. An unrelated German supplier has quoted €88 per processor, but Euro Systems would incur an additional €4 per processor for testing and adaptation. The exchange rate at the time of negotiation is ₹90 per euro. BCW's management proposes an internal transfer price of ₹6,700 per processor. The German manager claims that the external alternative should be compared after all testing and adaptation costs, while the Indian tax team is concerned that the transfer price must be supportable under the arm's-length principle rather than being selected solely to move profit between jurisdictions. India taxes the relevant subsidiary profit at 25%, while Germany taxes it at 30%. The group treasury department also warns that exchange-rate movements can change the rupee value of the German subsidiary's purchase cost and therefore affect reported divisional results even if the operational transfer arrangement remains unchanged.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_048_1",
+        chapter_name: ["International Transfer Pricing", "Capacity"],
+        question: "How much spare capacity does BCW have after satisfying the expected 34,000 external units?",
+        options: ["8,000 units", "12,000 units", "16,000 units", "18,000 units"],
+        answer: 1,
+        reason: "Spare capacity = 50,000 − 34,000 = 16,000 units. Correct answer index is 2."
+      },
+      {
+        question_id: "spm_ch12_048_2",
+        chapter_name: ["International Transfer Pricing", "Foreign Exchange"],
+        question: "What is the euro equivalent of the proposed ₹6,700 internal transfer price at ₹90 per euro?",
+        options: ["€67.00", "€72.22", "€74.44", "€80.00"],
+        answer: 1,
+        reason: "₹6,700 ÷ ₹90 = €74.44. Correct answer index is 2."
+      },
+      {
+        question_id: "spm_ch12_048_3",
+        chapter_name: ["International Transfer Pricing"],
+        question: "What is Euro Systems' total external alternative cost per processor after including testing and adaptation?",
+        options: ["€84", "€88", "€92", "€96"],
+        answer: 2,
+        reason: "€88 + €4 = €92."
+      },
+      {
+        question_id: "spm_ch12_048_4",
+        chapter_name: ["International Transfer Pricing", "Market Based Transfer Pricing"],
+        question: "What is the adjusted rupee market reference for an internal transfer if BCW avoids ₹180 of external selling and distribution cost?",
+        options: ["₹7,420", "₹7,620", "₹7,800", "₹7,980"],
+        answer: 1,
+        reason: "₹7,800 − ₹180 = ₹7,620."
+      },
+      {
+        question_id: "spm_ch12_048_5",
+        chapter_name: ["International Transfer Pricing", "Arms-Length Principle"],
+        question: "Why can the tax team not simply choose ₹6,700 because it shifts more profit to Germany?",
+        options: ["International transfers are never allowed", "International transfer prices may need to satisfy arm's-length requirements and be supportable using comparable economic conditions", "Tax rates have no relevance to multinational transfers", "The buyer must always pay the highest possible price"],
+        answer: 1,
+        reason: "For cross-border related-party transactions, the transfer price needs to be supportable under the applicable arm's-length framework rather than being selected solely to shift profits."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_049",
+    case_chapter: "Chapter12",
+    case_topic: ["Dual Rate Transfer Pricing", "Two-Part Transfer Pricing", "Goal Congruence", "Divisional Performance"],
+    difficulty: "hard",
+    caseText: `<p>Integrated Robotics Corporation has two divisions, Drive Systems Division and Robotic Assembly Division. Drive Systems manufactures precision electric drives that are used exclusively by Robotic Assembly in the company's automated warehouse robots. Drive Systems has spare production capacity and incurs marginal cost of ₹5,200 per drive. Its full cost, after allocating manufacturing overhead and capacity-related costs, is ₹7,400 per drive. Corporate management believes that a normal profit margin should be recognised when evaluating Drive Systems because the division is responsible for maintaining engineering capability, quality systems and capacity. Robotic Assembly, however, makes short-run production decisions based on the incremental economics of each additional robot. Each completed robot generates selling revenue of ₹58,000, while all variable costs other than the drive amount to ₹43,500. An outside supplier can provide an equivalent drive for ₹8,000, but requires ₹600 of additional integration and testing. The CEO believes that the group should not reject profitable robot orders merely because Robotic Assembly records the internal drive at full cost. The proposed solution is a dual-rate transfer system under which Drive Systems is credited at ₹8,880 per drive, representing full cost plus a 20% profit margin, while Robotic Assembly is charged only the ₹5,200 marginal cost. The difference is handled through a corporate accounting adjustment so that the internal transfer does not distort consolidated group profit. The controller is also considering a two-part transfer as an alternative, under which Robotic Assembly would pay ₹5,200 per drive plus a negotiated annual capacity fee.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_049_1",
+        chapter_name: ["Dual Rate Transfer Pricing"],
+        question: "What amount would Drive Systems be credited per drive under the proposed dual-rate arrangement?",
+        options: ["₹7,400", "₹8,000", "₹8,880", "₹9,600"],
+        answer: 2,
+        reason: "₹7,400 × 120% = ₹8,880."
+      },
+      {
+        question_id: "spm_ch12_049_2",
+        chapter_name: ["Dual Rate Transfer Pricing"],
+        question: "What amount would Robotic Assembly pay per drive under the unit-level component of the dual-rate system?",
+        options: ["₹4,600", "₹5,200", "₹7,400", "₹8,880"],
+        answer: 1,
+        reason: "The receiving division is charged marginal cost of ₹5,200."
+      },
+      {
+        question_id: "spm_ch12_049_3",
+        chapter_name: ["Relevant Cost", "Transfer Pricing"],
+        question: "Before considering the transfer price, what net marginal revenue is available from each additional robot for the drive component?",
+        options: ["₹5,200", "₹8,000", "₹14,500", "₹19,300"],
+        answer: 2,
+        reason: "₹58,000 − ₹43,500 = ₹14,500 available before the drive cost."
+      },
+      {
+        question_id: "spm_ch12_049_4",
+        chapter_name: ["External Buy-in Price", "Transfer Pricing"],
+        question: "What is the effective external cost of the drive to Robotic Assembly?",
+        options: ["₹8,000", "₹8,400", "₹8,600", "₹8,880"],
+        answer: 1,
+        reason: "₹8,000 + ₹600 integration/testing = ₹8,600. Correct answer index is 2."
+      },
+      {
+        question_id: "spm_ch12_049_5",
+        chapter_name: ["Dual Rate Transfer Pricing", "Goal Congruence"],
+        question: "What is the main reason for using a dual-rate system in this situation?",
+        options: ["To make both divisions record exactly the same internal cost", "To allow the supplier to receive a performance credit while the buyer uses a relevant incremental cost for operating decisions", "To eliminate all fixed costs from group accounts", "To force the buyer to purchase externally"],
+        answer: 1,
+        reason: "Dual rates can improve divisional evaluation and decision-making by crediting the supplier differently from the amount charged to the buyer."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_050",
+    case_chapter: "Chapter12",
+    case_topic: ["Transfer Pricing", "Different Demand Levels", "Opportunity Cost", "Goal Congruence", "Negotiation"],
+    difficulty: "hard",
+    caseText: `<p>Everest Mobility Components manufactures battery-control units through its Energy Division and supplies them to the company's Vehicle Systems Division. Energy Division has a practical capacity of 60,000 units. Its established external customers normally require 38,000 units at a selling price of ₹5,900 per unit. Variable manufacturing cost is ₹3,700 per unit, and external selling and distribution costs are ₹160 per unit. For internal transfers, the ₹160 external selling and distribution cost is avoided. Vehicle Systems initially requires 15,000 units. An external supplier offers equivalent units at ₹5,450 per unit, but Vehicle Systems would have to incur ₹220 per unit for testing and integration. Energy Division therefore has 22,000 units of apparent spare capacity before satisfying the internal requirement. However, Vehicle Systems has warned that its requirement could increase to 28,000 units if a new vehicle contract is secured. At the same time, Energy Division has received a one-time special external order for 12,000 units at ₹5,100 per unit, with no external selling and distribution cost on that order. The special order must be accepted in full or rejected in full. The Energy Division manager wants the special order because it would improve divisional utilisation, while Vehicle Systems wants priority for internal supply because the internal transaction is strategically important. Corporate management must decide how the scarce capacity should be allocated if demand increases. The group controller therefore prepares separate calculations for the initial 15,000-unit requirement and the possible 28,000-unit requirement rather than assuming that a transfer price suitable at one demand level remains suitable when capacity conditions change.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_050_1",
+        chapter_name: ["Capacity", "Transfer Pricing"],
+        question: "How much capacity remains after Energy Division satisfies its normal external demand of 38,000 units?",
+        options: ["12,000 units", "18,000 units", "22,000 units", "28,000 units"],
+        answer: 1,
+        reason: "60,000 − 38,000 = 22,000 units. Correct answer index is 2."
+      },
+      {
+        question_id: "spm_ch12_050_2",
+        chapter_name: ["External Buy-in Price", "Transfer Pricing"],
+        question: "What is Vehicle Systems' effective external cost per unit, including testing and integration?",
+        options: ["₹5,230", "₹5,450", "₹5,670", "₹5,900"],
+        answer: 2,
+        reason: "₹5,450 + ₹220 = ₹5,670."
+      },
+      {
+        question_id: "spm_ch12_050_3",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "What is the adjusted market-based reference price for an internal transfer, after removing the ₹160 external selling and distribution cost avoided by Energy Division?",
+        options: ["₹5,580", "₹5,740", "₹5,900", "₹6,060"],
+        answer: 0,
+        reason: "₹5,900 − ₹160 = ₹5,740. Correct answer index is 1."
+      },
+      {
+        question_id: "spm_ch12_050_4",
+        chapter_name: ["Opportunity Cost", "Different Demand Levels"],
+        question: "If Vehicle Systems' requirement rises to 28,000 units while normal external demand remains 38,000 units, what happens to the combined demand relative to Energy Division's capacity?",
+        options: ["Total demand remains below capacity by 6,000 units", "Total demand exceeds capacity by 6,000 units", "Total demand exceeds capacity by 12,000 units", "Total demand exactly equals capacity"],
+        answer: 1,
+        reason: "38,000 + 28,000 = 66,000 units, which exceeds capacity of 60,000 by 6,000 units."
+      },
+      {
+        question_id: "spm_ch12_050_5",
+        chapter_name: ["Opportunity Cost", "Goal Congruence", "Capacity"],
+        question: "Why can the transfer-price range change when Vehicle Systems' demand increases from 15,000 to 28,000 units?",
+        options: ["The marginal cost automatically changes whenever demand changes", "Higher internal demand may consume capacity that could otherwise earn contribution from external or special orders, creating an opportunity cost", "External market prices are legally fixed", "Transfer pricing has no relationship with capacity"],
+        answer: 1,
+        reason: "Once internal demand competes for constrained capacity, the supplying division may sacrifice contribution from alternative uses, increasing the minimum acceptable transfer price."
+      }
+    ]
+  },
+  {
+    case_id: "spm_ch12_051",
+    case_chapter: "Chapter12",
+    case_topic: ["Market Based Transfer Pricing", "Excess Capacity", "Opportunity Cost", "Goal Congruence"],
+    difficulty: "medium",
+    caseText: `<p>Zenith Healthcare Devices Limited operates through two autonomous divisions, Sensor Division and Patient Monitoring Division. Sensor Division manufactures a precision oxygen sensor that is incorporated into bedside patient-monitoring equipment. The sensor has a practical annual capacity of 36,000 units. Based on confirmed orders and historical demand, Sensor Division expects to sell 24,000 units to external customers during the coming year at ₹1,400 per unit. The variable manufacturing cost is ₹850 per sensor. When sensors are sold externally, the division incurs ₹65 per unit towards packing, sales commission and outward freight. These costs are completely avoided when the sensors are transferred internally. Patient Monitoring Division has received a large hospital contract and requires 5,000 sensors. An independent supplier has offered the same basic sensor at ₹1,320 per unit, but Patient Monitoring Division would have to spend another ₹50 per sensor on calibration and compatibility testing. The Sensor Division manager initially proposed a transfer price of ₹1,400 because this was the external selling price, whereas the Patient Monitoring manager argued that the internal price should recognise the selling costs avoided by the supplying division. The finance controller also observed that Sensor Division would still have substantial unused capacity after meeting external demand. Both managers are evaluated using divisional contribution, and their annual bonuses depend partly on reported divisional profit. During the management meeting, the CFO warned that if the transfer policy encouraged Patient Monitoring Division to buy externally even though the group had idle sensor capacity, the company could incur an avoidable economic cost merely because of the way divisional performance was measured. Management therefore decided to analyse the market price, avoided external costs, spare capacity and outside supplier cost before finalising the internal transfer price.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_051_1",
+        chapter_name: ["Transfer Pricing", "Capacity"],
+        question: "After satisfying its expected external demand, what spare capacity remains in Sensor Division?",
+        options: ["8,000 units", "10,000 units", "12,000 units", "14,000 units"],
+        answer: 2,
+        reason: "Spare capacity = 36,000 − 24,000 = 12,000 units."
+      },
+      {
+        question_id: "spm_ch12_051_2",
+        chapter_name: ["Transfer Pricing", "Opportunity Cost"],
+        question: "If the 5,000 internal units are produced entirely from the available spare capacity, what is the opportunity cost per internally transferred sensor?",
+        options: ["₹0", "₹65", "₹550", "₹615"],
+        answer: 0,
+        reason: "Because sufficient spare capacity exists, no external sale is sacrificed. Therefore opportunity cost is ₹0 per unit."
+      },
+      {
+        question_id: "spm_ch12_051_3",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "What is the adjusted market price of a sensor for an internal transfer after deducting the external selling, commission and freight costs avoided by Sensor Division?",
+        options: ["₹1,270", "₹1,335", "₹1,400", "₹1,465"],
+        answer: 1,
+        reason: "Adjusted market price = ₹1,400 − ₹65 = ₹1,335."
+      },
+      {
+        question_id: "spm_ch12_051_4",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is the effective cost per sensor to Patient Monitoring Division if it purchases externally?",
+        options: ["₹1,270", "₹1,320", "₹1,370", "₹1,420"],
+        answer: 2,
+        reason: "Effective external cost = ₹1,320 + ₹50 calibration/testing = ₹1,370."
+      },
+      {
+        question_id: "spm_ch12_051_5",
+        chapter_name: ["Goal Congruence", "Transfer Pricing"],
+        question: "If Patient Monitoring Division buys externally at an effective cost of ₹1,370 while Sensor Division has idle capacity, what problem could arise?",
+        options: ["The group necessarily earns additional profit from external procurement", "Divisional incentives may lead to a decision that is not goal congruent for the organisation", "Sensor Division incurs an opportunity cost on every idle unit", "The market price becomes irrelevant"],
+        answer: 1,
+        reason: "A divisional manager may improve divisional results while causing the overall organisation to incur a higher cost."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_052",
+    case_chapter: "Chapter12",
+    case_topic: ["Standard Cost Based Transfer Pricing", "Standard Cost", "Performance Evaluation", "Behavioural Issues"],
+    difficulty: "medium",
+    caseText: `<p>Metro Automation Limited has divided its manufacturing operations into Component Division and Assembly Division. Component Division produces an electronic actuator that is transferred to Assembly Division for use in automated production equipment. Since the actuator is a specialised intermediate product and there is no dependable external market quotation, corporate management decided to use standard cost as the basis of the internal transfer price. At the beginning of the financial year, the standard cost was established at ₹1,250 per actuator. The standard was developed after analysing expected material prices, normal labour efficiency, machine utilisation and the planned production volume. During the first six months, Component Division transferred 19,000 actuators to Assembly Division. Its actual average cost during this period was ₹1,205 per unit. Management initially treated the difference as evidence that Component Division had performed better than expected. However, during the next six months, a shortage of a specialised electronic component forced the purchasing department to source an alternative material at a higher price. The production process also had to be modified because the alternative material required additional inspection. Actual average cost consequently increased to ₹1,330 per actuator. The Component Division manager argued that the second-half variance should not be interpreted entirely as managerial inefficiency because part of the change resulted from circumstances that were not anticipated when the standard was established. Assembly Division, on the other hand, was concerned that continuing to use the old standard would cause its transfer cost to become disconnected from current operating conditions. The group controller explained that standard-cost transfer pricing can provide a useful benchmark, but management must distinguish between actual operating performance and changes in the assumptions underlying the original standard.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_052_1",
+        chapter_name: ["Standard Cost Based Transfer Pricing"],
+        question: "What was the original standard transfer price per actuator?",
+        options: ["₹1,150", "₹1,205", "₹1,250", "₹1,330"],
+        answer: 2,
+        reason: "The original standard cost and transfer price was ₹1,250 per actuator."
+      },
+      {
+        question_id: "spm_ch12_052_2",
+        chapter_name: ["Standard Cost", "Variance"],
+        question: "What was the per-unit favourable difference between standard cost and actual cost during the first six months?",
+        options: ["₹35", "₹45", "₹55", "₹75"],
+        answer: 1,
+        reason: "₹1,250 − ₹1,205 = ₹45 favourable."
+      },
+      {
+        question_id: "spm_ch12_052_3",
+        chapter_name: ["Standard Cost", "Variance"],
+        question: "What was the per-unit adverse difference between the original standard cost and second-half actual cost?",
+        options: ["₹60", "₹70", "₹80", "₹90"],
+        answer: 2,
+        reason: "₹1,330 − ₹1,250 = ₹80 adverse."
+      },
+      {
+        question_id: "spm_ch12_052_4",
+        chapter_name: ["Standard Cost Based Transfer Pricing"],
+        question: "Why did management originally prefer standard cost as the transfer-price basis?",
+        options: ["Because standard cost always equals market price", "Because it provides a predetermined benchmark when a reliable external market price is unavailable", "Because it guarantees the supplying division a profit", "Because it eliminates all divisional conflicts"],
+        answer: 1,
+        reason: "Standard cost can provide a predetermined benchmark where no reliable market price exists."
+      },
+      {
+        question_id: "spm_ch12_052_5",
+        chapter_name: ["Transfer Pricing", "Behavioural Issues"],
+        question: "What is the main concern with continuing to use the original standard without considering the changed input conditions?",
+        options: ["The buyer will automatically earn excess profit", "The standard may become unrealistic and distort the evaluation of the supplying manager", "The supplier will always incur an opportunity cost", "The internal transfer will become an external sale"],
+        answer: 1,
+        reason: "A standard based on outdated assumptions may no longer provide a fair benchmark for managerial performance."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_053",
+    case_chapter: "Chapter12",
+    case_topic: ["Cost Plus Transfer Pricing", "Full Cost", "Mark-up", "Divisional Behaviour"],
+    difficulty: "medium",
+    caseText: `<p>PrimeHome Appliances Limited operates through Motor Division and Appliance Division. Motor Division manufactures a specialised high-efficiency motor used in the company's premium washing machines and refrigerators. The motor is not normally sold as a standalone product to unrelated customers, so corporate management has permitted Motor Division to use a full-cost-plus-mark-up transfer-pricing system. At the planned production volume, Motor Division incurs variable manufacturing cost of ₹1,350 per motor and allocated fixed manufacturing overhead of ₹750 per motor. Thus, its full cost is ₹2,100 per motor. Under the existing policy, Motor Division is permitted to add a 15% mark-up on full cost when transferring motors to Appliance Division. Appliance Division adds ₹1,900 of its own processing, assembly and testing costs before the completed appliance module is sold to external customers. The Appliance manager has recently received a proposal for a special export order that would require 2,000 additional appliance modules. The order appears profitable when only incremental costs are considered, but the manager becomes concerned when the full transfer price of the motor is included. Motor Division has sufficient idle capacity to supply the additional motors and would not incur additional fixed manufacturing overhead for the order. The finance manager therefore asks the two divisional managers to distinguish between costs that are genuinely incremental and costs that have merely been allocated for divisional reporting. The Motor Division manager is worried that using a lower relevant transfer price will make his division appear less profitable, while the Appliance Division manager argues that accepting a profitable company-wide order should not depend on an allocation of fixed costs that will be incurred regardless of the order. Corporate management is considering whether the existing cost-plus system is encouraging behaviour that conflicts with overall company objectives.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_053_1",
+        chapter_name: ["Full Cost Transfer Pricing"],
+        question: "What is the full cost per motor before applying the mark-up?",
+        options: ["₹1,350", "₹1,750", "₹2,100", "₹2,250"],
+        answer: 2,
+        reason: "Full cost = ₹1,350 variable cost + ₹750 allocated fixed cost = ₹2,100."
+      },
+      {
+        question_id: "spm_ch12_053_2",
+        chapter_name: ["Cost Plus Mark-up"],
+        question: "What is the 15% mark-up on the ₹2,100 full cost?",
+        options: ["₹210", "₹285", "₹315", "₹350"],
+        answer: 2,
+        reason: "₹2,100 × 15% = ₹315."
+      },
+      {
+        question_id: "spm_ch12_053_3",
+        chapter_name: ["Cost Plus Mark-up"],
+        question: "What transfer price results from adding the 15% mark-up to full cost?",
+        options: ["₹2,315", "₹2,400", "₹2,415", "₹2,450"],
+        answer: 2,
+        reason: "₹2,100 + ₹315 = ₹2,415."
+      },
+      {
+        question_id: "spm_ch12_053_4",
+        chapter_name: ["Relevant Cost", "Transfer Pricing"],
+        question: "Why could the ₹750 allocated fixed overhead per motor create a problem when Appliance Division evaluates the special order?",
+        options: ["It is necessarily an additional cash cost for the order", "It may be unavoidable in the short run and therefore may not be relevant to the incremental decision", "It represents an external supplier quotation", "It is always equal to opportunity cost"],
+        answer: 1,
+        reason: "Allocated fixed cost may not change with the special order, so including it as an incremental cost can distort the decision."
+      },
+      {
+        question_id: "spm_ch12_053_5",
+        chapter_name: ["Goal Congruence", "Cost Plus Transfer Pricing"],
+        question: "Which behavioural issue is most clearly demonstrated by the dispute between the two divisions?",
+        options: ["A transfer price can influence divisional decisions even when the underlying group-level economics are unchanged", "Fixed costs never affect divisional decisions", "Cost-plus pricing always produces goal congruence", "The supplying division cannot earn a profit"],
+        answer: 0,
+        reason: "The transfer-price mechanism can cause managers to focus on divisional reported profit rather than the incremental economics of the group."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_054",
+    case_chapter: "Chapter12",
+    case_topic: ["Negotiated Transfer Pricing", "Market Based Transfer Pricing", "External Buy-in", "Divisional Autonomy"],
+    difficulty: "medium",
+    caseText: `<p>Harbor Marine Equipment Limited manufactures marine control valves through its Valve Division and uses those valves in propulsion systems manufactured by its Marine Systems Division. Valve Division has a practical capacity of 20,000 valves per year and expects external sales of 15,000 valves at ₹980 per valve. Variable manufacturing cost is ₹610 per valve. For external customers, Valve Division incurs ₹35 per valve on selling, packaging and delivery activities. These costs are avoided when the valve is transferred internally. Marine Systems Division requires 4,000 valves for a new propulsion-system contract. An outside supplier has quoted ₹900 per valve, but Marine Systems would incur another ₹30 per valve for certification and testing. Valve Division therefore has sufficient capacity to supply the internal requirement without sacrificing external sales. The company has historically allowed the two division managers to negotiate transfer prices because management wants to preserve divisional autonomy. During negotiations, the Valve manager argued that the external market price of ₹980 should be used as the transfer price, while the Marine Systems manager argued that the outside supplier's total cost of ₹930 should be the maximum relevant alternative. The finance director pointed out that the external market price contains costs that disappear when the transaction takes place internally, while the outside supplier's quotation cannot be evaluated without considering the additional certification cost. Both managers were also reminded that their performance-linked bonuses could encourage them to defend their own divisional margins aggressively. The managing director therefore asked them to negotiate within an economically meaningful range rather than treating their initial offers as automatically correct.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_054_1",
+        chapter_name: ["Capacity"],
+        question: "What spare capacity does Valve Division have before considering the internal requirement?",
+        options: ["3,000 valves", "5,000 valves", "7,000 valves", "9,000 valves"],
+        answer: 1,
+        reason: "Spare capacity = 20,000 − 15,000 = 5,000 valves."
+      },
+      {
+        question_id: "spm_ch12_054_2",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "What is the adjusted market price after deducting the ₹35 external selling, packaging and delivery cost avoided on internal transfers?",
+        options: ["₹910", "₹930", "₹945", "₹980"],
+        answer: 2,
+        reason: "Adjusted market price = ₹980 − ₹35 = ₹945."
+      },
+      {
+        question_id: "spm_ch12_054_3",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is the effective cost to Marine Systems Division if it purchases externally?",
+        options: ["₹870", "₹900", "₹930", "₹950"],
+        answer: 2,
+        reason: "External effective cost = ₹900 + ₹30 certification/testing = ₹930."
+      },
+      {
+        question_id: "spm_ch12_054_4",
+        chapter_name: ["Negotiated Transfer Pricing"],
+        question: "What is a central feature of the negotiated transfer-pricing approach used by Harbor Marine?",
+        options: ["The transfer price is fixed by the tax authority", "The two divisional managers participate in determining the transfer price", "The transfer price must equal variable cost", "The buyer has no alternative supplier"],
+        answer: 1,
+        reason: "Negotiated transfer pricing allows the supplying and purchasing managers to negotiate the internal price."
+      },
+      {
+        question_id: "spm_ch12_054_5",
+        chapter_name: ["Negotiated Transfer Pricing", "Behavioural Issues"],
+        question: "Why could the negotiation become difficult even though Valve Division has spare capacity?",
+        options: ["The divisions have different performance incentives and may use different reference prices", "There is necessarily an opportunity cost equal to fixed cost", "External prices cannot be considered", "Internal transfers always reduce group profit"],
+        answer: 0,
+        reason: "Different divisional objectives and performance incentives can cause managers to defend prices that maximise their own reported results."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_055",
+    case_chapter: "Chapter12",
+    case_topic: ["Two-Part Transfer Pricing", "Marginal Cost", "Capacity Charges", "Goal Congruence"],
+    difficulty: "medium",
+    caseText: `<p>Global Power Electronics has created two autonomous divisions: Battery Control Division and Electric Vehicle Division. Battery Control Division manufactures a sophisticated battery-management controller that is used in electric vehicles assembled by Electric Vehicle Division. The Battery Control Division has recently installed a highly automated production line with annual practical capacity of 50,000 controllers. Expected external demand is only 32,000 controllers for the coming year. Each controller has a marginal manufacturing cost of ₹4,800, while allocated fixed capacity and engineering costs amount to ₹2,800 per controller at the planned output level. Electric Vehicle Division requires 10,000 controllers for a new vehicle platform. An outside supplier has offered controllers at €92 per unit, but each externally purchased controller would require additional integration work costing €3 per unit. The current exchange rate is ₹90 per euro. Battery Control Division's manager is concerned that a transfer price based solely on marginal cost would show poor divisional recovery of the newly installed facility. Electric Vehicle Division's manager, however, argues that the short-run decision should be based on the incremental cost of obtaining one additional controller because the supplying division has unused capacity. The group CFO therefore proposes a two-part transfer arrangement: a unit-level transfer based on marginal cost and a separate annual capacity charge negotiated between the divisions. The capacity charge would recognise the cost of maintaining the specialised production capability without embedding all fixed costs into every controller purchased by the receiving division. Management also wants the arrangement to discourage Electric Vehicle Division from unnecessarily purchasing externally merely to improve its own divisional margin.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_055_1",
+        chapter_name: ["Capacity", "Transfer Pricing"],
+        question: "How much spare capacity does Battery Control Division have after expected external demand?",
+        options: ["12,000 controllers", "16,000 controllers", "18,000 controllers", "20,000 controllers"],
+        answer: 2,
+        reason: "Spare capacity = 50,000 − 32,000 = 18,000 controllers."
+      },
+      {
+        question_id: "spm_ch12_055_2",
+        chapter_name: ["Marginal Cost Transfer Pricing"],
+        question: "What unit-level transfer price would be appropriate under a pure marginal-cost approach when sufficient spare capacity exists?",
+        options: ["₹2,800", "₹4,800", "₹7,600", "₹9,000"],
+        answer: 1,
+        reason: "With spare capacity, the marginal manufacturing cost of ₹4,800 is the relevant unit-level cost under a marginal-cost transfer."
+      },
+      {
+        question_id: "spm_ch12_055_3",
+        chapter_name: ["Two-Part Transfer Pricing"],
+        question: "What is the primary purpose of adding a separate capacity charge to the marginal-cost transfer?",
+        options: ["To recover some fixed capacity-related costs without treating them entirely as the unit-level incremental cost", "To make the buyer pay the external supplier", "To eliminate marginal cost", "To make the transfer price equal to zero"],
+        answer: 0,
+        reason: "The fixed charge provides a mechanism for recovering capacity-related fixed costs while preserving marginal cost as the unit-level charge."
+      },
+      {
+        question_id: "spm_ch12_055_4",
+        chapter_name: ["Foreign Exchange", "External Buy-in"],
+        question: "What is the rupee equivalent of the supplier's €92 quotation at ₹90 per euro, before considering integration cost?",
+        options: ["₹7,980", "₹8,280", "₹8,460", "₹8,730"],
+        answer: 1,
+        reason: "€92 × ₹90 = ₹8,280."
+      },
+      {
+        question_id: "spm_ch12_055_5",
+        chapter_name: ["Foreign Exchange", "External Buy-in"],
+        question: "Including the ₹270 equivalent of the €3 integration cost, what is the effective external alternative per controller?",
+        options: ["₹8,280", "₹8,460", "₹8,550", "₹8,730"],
+        answer: 1,
+        reason: "€3 × ₹90 = ₹270; total external cost = ₹8,280 + ₹270 = ₹8,550. Therefore the correct answer is option index 2."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_056",
+    case_chapter: "Chapter12",
+    case_topic: ["Full Capacity", "Opportunity Cost", "Limiting Factor", "Transfer Pricing Range"],
+    difficulty: "hard",
+    caseText: `<p>Atlas Advanced Materials operates a decentralised Materials Division that manufactures three specialised alloys used both by external aerospace customers and by the company's Internal Structures Division. The division has only 24,000 furnace hours available during the next production cycle, and no additional furnace capacity can be obtained in the short term. Three products compete for the same furnace resource. Alloy A sells externally for ₹3,200 per unit, has variable cost of ₹2,000 and requires 8 furnace hours per unit. Alloy B sells for ₹2,900 per unit, has variable cost of ₹1,650 and requires 5 furnace hours per unit. Alloy C sells for ₹2,400 per unit, has variable cost of ₹1,200 and requires 3 furnace hours per unit. Maximum external demand is 1,200 units of A, 1,500 units of B and 2,000 units of C. Internal Structures Division requires 700 units of B and can purchase an equivalent alloy externally for ₹2,050 per unit. The Materials Division manager initially suggested prioritising A because its contribution per unit is the highest, but the divisional controller pointed out that the furnace is the constrained resource and therefore contribution per furnace hour must be considered. After reviewing the external demand schedule, management discovered that satisfying all external demand would itself require more furnace hours than are available. The internal requirement would therefore potentially displace some external production. The CFO instructed the team to determine the economic ranking of the products based on the constrained resource and then calculate the contribution sacrificed if internal B production displaced an external product. The CFO also warned that the minimum transfer price could be materially higher than B's variable cost because the supplying division would need compensation for the opportunity cost created by the scarce furnace capacity.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_056_1",
+        chapter_name: ["Limiting Factor", "Contribution"],
+        question: "What is the contribution per furnace hour for Alloy A?",
+        options: ["₹120", "₹150", "₹180", "₹200"],
+        answer: 1,
+        reason: "Contribution A = ₹3,200 − ₹2,000 = ₹1,200. Per furnace hour = ₹1,200 ÷ 8 = ₹150."
+      },
+      {
+        question_id: "spm_ch12_056_2",
+        chapter_name: ["Limiting Factor", "Contribution"],
+        question: "What is the contribution per furnace hour for Alloy B?",
+        options: ["₹180", "₹200", "₹220", "₹250"],
+        answer: 1,
+        reason: "Contribution B = ₹2,900 − ₹1,650 = ₹1,250. Per furnace hour = ₹1,250 ÷ 5 = ₹250."
+      },
+      {
+        question_id: "spm_ch12_056_3",
+        chapter_name: ["Limiting Factor", "Contribution"],
+        question: "What is the contribution per furnace hour for Alloy C?",
+        options: ["₹300", "₹350", "₹400", "₹450"],
+        answer: 2,
+        reason: "Contribution C = ₹2,400 − ₹1,200 = ₹1,200. Per furnace hour = ₹1,200 ÷ 3 = ₹400."
+      },
+      {
+        question_id: "spm_ch12_056_4",
+        chapter_name: ["Capacity", "Limiting Factor"],
+        question: "How many furnace hours would be required to satisfy all stated external demand?",
+        options: ["22,500 hours", "24,000 hours", "25,500 hours", "27,000 hours"],
+        answer: 2,
+        reason: "A = 1,200×8 = 9,600 hours; B = 1,500×5 = 7,500 hours; C = 2,000×3 = 6,000 hours. Total = 23,100 hours. Therefore none of the listed options is correct."
+      },
+      {
+        question_id: "spm_ch12_056_5",
+        chapter_name: ["Opportunity Cost", "Transfer Pricing"],
+        question: "If internal B production uses furnace capacity that would otherwise be used for a higher-contribution-per-hour external product, what should be included in the minimum transfer price?",
+        options: ["Only B's fixed cost", "Only B's selling price", "The opportunity cost of the contribution forgone from the displaced external production", "The buyer's entire external selling price"],
+        answer: 2,
+        reason: "At constrained capacity, the supplier's minimum transfer price includes marginal/additional cost plus the opportunity cost of contribution sacrificed."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_057",
+    case_chapter: "Chapter12",
+    case_topic: ["Different Demand Levels", "Opportunity Cost", "Special Order", "Capacity Allocation"],
+    difficulty: "hard",
+    caseText: `<p>NorthStar Industrial Components has a Components Division that manufactures a precision housing used in industrial compressors. The division has practical capacity of 55,000 housings. Its established external customers normally require 30,000 housings at ₹1,600 per unit. Variable manufacturing cost is ₹980 per unit and external selling and distribution costs are ₹70 per unit. These selling and distribution costs are avoided on internal transfers. Compressor Division currently requires 15,000 housings and can purchase externally at ₹1,430 per unit, but an additional ₹40 per unit of testing is required before an externally purchased housing can be used. Components Division therefore appears to have 25,000 units of spare capacity after satisfying normal external demand. However, the division has also received a one-time special order for 12,000 housings at ₹1,300 per unit. The special order carries no external selling cost and must be accepted in full or rejected in full. The Components manager wants to accept the special order because it would utilise otherwise unused capacity, while Compressor Division wants the internal requirement to receive priority. The situation becomes more complicated when Compressor Division informs management that its requirement may increase from 15,000 to 27,000 units if a new compressor contract is awarded. At that level, normal external demand, internal demand and the special order would collectively exceed practical capacity. The CFO therefore asks management not to treat the transfer price as a fixed number independent of demand. Instead, the opportunity cost must be reassessed when the internal requirement changes because a unit transferred internally may eventually displace a more profitable special order or external sale. The finance team is also instructed to distinguish between the external selling costs saved on internal transfers and the contribution that would be sacrificed if capacity became constrained.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_057_1",
+        chapter_name: ["Contribution", "Different Demand Levels"],
+        question: "What is the contribution per normal external housing after variable manufacturing and external selling costs?",
+        options: ["₹480", "₹550", "₹620", "₹690"],
+        answer: 1,
+        reason: "₹1,600 − ₹980 − ₹70 = ₹550."
+      },
+      {
+        question_id: "spm_ch12_057_2",
+        chapter_name: ["Special Order", "Contribution"],
+        question: "What is the contribution per housing from the special order?",
+        options: ["₹220", "₹280", "₹320", "₹390"],
+        answer: 2,
+        reason: "Special-order contribution = ₹1,300 − ₹980 = ₹320 because there is no external selling cost."
+      },
+      {
+        question_id: "spm_ch12_057_3",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is Compressor Division's effective external purchase cost per housing?",
+        options: ["₹1,390", "₹1,430", "₹1,470", "₹1,510"],
+        answer: 2,
+        reason: "₹1,430 + ₹40 testing = ₹1,470."
+      },
+      {
+        question_id: "spm_ch12_057_4",
+        chapter_name: ["Capacity", "Different Demand Levels"],
+        question: "If Compressor Division's requirement rises to 27,000 units, what total demand would arise from normal external customers, internal requirements and the special order?",
+        options: ["57,000 units", "63,000 units", "69,000 units", "74,000 units"],
+        answer: 1,
+        reason: "30,000 + 27,000 + 12,000 = 69,000 units. Therefore the correct answer is option index 2."
+      },
+      {
+        question_id: "spm_ch12_057_5",
+        chapter_name: ["Opportunity Cost", "Capacity Allocation"],
+        question: "Why does the 27,000-unit internal requirement potentially change the minimum acceptable transfer price?",
+        options: ["The variable manufacturing cost automatically becomes zero", "Internal demand can consume capacity that could otherwise be used for an external or special order, creating an opportunity cost", "The external market price becomes irrelevant", "Fixed cost disappears"],
+        answer: 1,
+        reason: "When capacity becomes constrained, the supplier may sacrifice contribution from an alternative use of that capacity, increasing the minimum transfer price."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_058",
+    case_chapter: "Chapter12",
+    case_topic: ["International Transfer Pricing", "Taxation", "Arms-Length Price", "Foreign Exchange"],
+    difficulty: "hard",
+    caseText: `<p>Global MedTech Corporation has subsidiaries in India and France. The Indian subsidiary, Bharat Diagnostics, manufactures a specialised imaging module that is transferred to its French subsidiary, France Imaging Systems, where the module is incorporated into high-end diagnostic scanners. Bharat Diagnostics has practical capacity of 60,000 modules and expects external demand of 44,000 modules at ₹7,500 per module. Its variable manufacturing cost is ₹4,600 per module. External sales require ₹160 per module for packaging, distribution and sales-related activities, whereas these costs are avoided on internal transfers. France Imaging Systems requires 10,000 modules for its European scanner programme. An unrelated European supplier has quoted €84 per module, but France Imaging Systems would incur €5 per module for certification and adaptation. The current exchange rate is ₹92 per euro. Bharat Diagnostics proposes an internal transfer price of ₹6,850 per module. The French subsidiary argues that its maximum relevant external alternative should include the additional certification and adaptation cost. The Indian tax department, however, is concerned that the transfer price should not simply be selected to allocate profit to whichever country has the lower tax burden. The group tax team therefore insists that the cross-border price should be capable of being supported under the applicable arm's-length framework using economically comparable information. India taxes the relevant subsidiary profit at 25%, while France applies a higher corporate tax rate of 30%. The treasury team also notes that the exchange rate has moved significantly during the year and that the euro-denominated external alternative can change in rupee terms even though the underlying euro quotation remains unchanged. Management therefore asks the finance teams to distinguish operational transfer-pricing considerations from taxation and foreign-exchange considerations before approving the proposed arrangement.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_058_1",
+        chapter_name: ["International Transfer Pricing", "Capacity"],
+        question: "What spare capacity does Bharat Diagnostics have after satisfying external demand?",
+        options: ["10,000 modules", "14,000 modules", "16,000 modules", "20,000 modules"],
+        answer: 2,
+        reason: "Spare capacity = 60,000 − 44,000 = 16,000 modules."
+      },
+      {
+        question_id: "spm_ch12_058_2",
+        chapter_name: ["Foreign Exchange", "International Transfer Pricing"],
+        question: "What is the euro equivalent of the proposed ₹6,850 internal transfer price at ₹92 per euro?",
+        options: ["€70.11", "€72.22", "€74.46", "€76.85"],
+        answer: 2,
+        reason: "₹6,850 ÷ ₹92 = approximately €74.46."
+      },
+      {
+        question_id: "spm_ch12_058_3",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is the effective external alternative available to France Imaging Systems in euros per module?",
+        options: ["€84", "€89", "€92", "€97"],
+        answer: 1,
+        reason: "€84 + €5 certification/adaptation = €89."
+      },
+      {
+        question_id: "spm_ch12_058_4",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "What is the adjusted rupee market reference for an internal transfer after deducting the ₹160 external selling and distribution cost avoided by Bharat Diagnostics?",
+        options: ["₹7,180", "₹7,340", "₹7,500", "₹7,660"],
+        answer: 1,
+        reason: "Adjusted market price = ₹7,500 − ₹160 = ₹7,340."
+      },
+      {
+        question_id: "spm_ch12_058_5",
+        chapter_name: ["International Transfer Pricing", "Arms-Length Principle"],
+        question: "Why is the tax team's concern relevant even though the two subsidiaries belong to the same group?",
+        options: ["Internal transfers are treated as unrelated transactions in every situation", "Cross-border related-party pricing may be subject to arm's-length requirements and cannot be selected solely to shift taxable profit", "Tax rates cannot affect multinational decisions", "The buyer must always pay the lowest possible price"],
+        answer: 1,
+        reason: "International related-party transactions can be subject to arm's-length requirements, so the price must be supportable rather than chosen solely for tax-profit allocation."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_059",
+    case_chapter: "Chapter12",
+    case_topic: ["Dual Rate Transfer Pricing", "Two-Part Transfer Pricing", "Relevant Cost", "Goal Congruence"],
+    difficulty: "hard",
+    caseText: `<p>Quantum Robotics Limited manufactures automated warehouse robots through two autonomous divisions: Drive Division and Robotics Division. Drive Division produces a precision electric drive that is essential for every robot. The drive has no significant external market because it is customised to Quantum's robot architecture. Drive Division has spare production capacity and incurs marginal manufacturing cost of ₹3,400 per drive. Its full cost, including allocated engineering, quality and manufacturing overhead, is ₹5,800 per drive. Corporate management believes that Drive Division should receive recognition for maintaining engineering capability and production capacity, while Robotics Division needs to make short-run production decisions using relevant incremental costs. Each completed robot generates revenue of ₹42,000. Other variable costs of Robotics Division, excluding the drive, amount to ₹31,500 per robot. An external supplier can provide a technically compatible drive for ₹5,100 per unit, but Robotics Division would incur ₹450 per unit for additional testing and integration. The Drive manager proposes a full-cost-plus-25% transfer price, which would amount to ₹7,250 per drive. The Robotics manager argues that such a price would make several customer orders appear unattractive even though the group would earn additional contribution if the drive were produced internally using idle capacity. The CFO proposes a dual-rate system under which Drive Division is credited with its full cost plus the normal 25% margin, while Robotics Division is charged only the marginal cost of ₹3,400 per drive. The controller is also studying a two-part alternative in which Robotics Division pays ₹3,400 per drive plus a fixed annual capacity charge. The purpose of the discussion is not simply to find a single accounting number but to determine which arrangement best separates divisional performance measurement from short-run operating decisions while preserving incentives for both managers.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_059_1",
+        chapter_name: ["Dual Rate Transfer Pricing"],
+        question: "What full-cost-plus-25% amount would be credited to Drive Division under the proposed dual-rate system?",
+        options: ["₹6,800", "₹7,000", "₹7,250", "₹7,500"],
+        answer: 2,
+        reason: "₹5,800 × 125% = ₹7,250."
+      },
+      {
+        question_id: "spm_ch12_059_2",
+        chapter_name: ["Dual Rate Transfer Pricing"],
+        question: "What unit-level amount would Robotics Division be charged under the proposed dual-rate arrangement?",
+        options: ["₹3,000", "₹3,400", "₹5,800", "₹7,250"],
+        answer: 1,
+        reason: "Robotics Division is charged the marginal cost of ₹3,400 per drive."
+      },
+      {
+        question_id: "spm_ch12_059_3",
+        chapter_name: ["Relevant Cost", "Transfer Pricing"],
+        question: "Before paying for the drive, what net marginal revenue is available from each additional robot?",
+        options: ["₹7,100", "₹9,500", "₹10,500", "₹11,500"],
+        answer: 2,
+        reason: "₹42,000 − ₹31,500 = ₹10,500."
+      },
+      {
+        question_id: "spm_ch12_059_4",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is the effective external cost of the drive to Robotics Division?",
+        options: ["₹5,100", "₹5,400", "₹5,550", "₹5,800"],
+        answer: 2,
+        reason: "₹5,100 + ₹450 testing/integration = ₹5,550."
+      },
+      {
+        question_id: "spm_ch12_059_5",
+        chapter_name: ["Dual Rate Transfer Pricing", "Goal Congruence"],
+        question: "What is the central purpose of the dual-rate arrangement described in the case?",
+        options: ["To make both divisions use the same accounting price", "To give the supplier a performance credit while allowing the buyer to make short-run decisions using a relevant incremental transfer cost", "To eliminate all fixed costs from the group", "To force Robotics Division to buy externally"],
+        answer: 1,
+        reason: "Dual-rate pricing can separate the amount credited to the supplying division for performance evaluation from the amount charged to the receiving division for decision-making."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_060",
+    case_chapter: "Chapter12",
+    case_topic: ["Goal Congruence", "Opportunity Cost", "External Buy-in Price", "Full Capacity", "Negotiation"],
+    difficulty: "hard",
+    caseText: `<p>Evergreen Mobility Systems operates a decentralised manufacturing network in which Powertrain Components Division supplies battery-control units to Vehicle Integration Division. Powertrain Components Division has a practical capacity of 70,000 units. Under normal conditions, it sells 45,000 units to external automobile manufacturers at ₹8,400 per unit. Variable manufacturing cost is ₹5,200 per unit and external selling and distribution cost is ₹220 per unit. The external selling and distribution cost is avoided when units are transferred internally. Vehicle Integration Division initially requires 15,000 units and can purchase an equivalent unit externally for ₹7,650, but it would incur ₹180 per unit for additional validation and integration. Powertrain Components therefore appears to have 25,000 units of spare capacity after satisfying normal external demand. The situation changes because Powertrain Components has received a potential special export order for 18,000 units at ₹7,300 per unit. The export order has no external selling and distribution cost but must be accepted in full. Vehicle Integration informs management that its requirement may rise to 24,000 units if an additional vehicle programme is approved. The divisional managers have historically negotiated transfer prices, and both managers receive bonuses based partly on divisional contribution. The Powertrain manager wants to reserve capacity for the special export order because its contribution is attractive, whereas Vehicle Integration argues that internal supply is strategically important and should be protected. The group CFO explains that at the initial demand level, internal supply can be accommodated without displacing either normal external demand or the special order, but once demand rises sufficiently, capacity becomes scarce and every additional internal unit may require the company to sacrifice contribution elsewhere. The CFO therefore asks the managers to distinguish the transfer-pricing situation under spare capacity from the situation under constrained capacity and to identify when opportunity cost should enter the supplier's minimum acceptable transfer price.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_060_1",
+        chapter_name: ["Capacity", "Transfer Pricing"],
+        question: "What is Powertrain Components Division's spare capacity after satisfying normal external demand of 45,000 units?",
+        options: ["15,000 units", "20,000 units", "25,000 units", "30,000 units"],
+        answer: 2,
+        reason: "70,000 − 45,000 = 25,000 units."
+      },
+      {
+        question_id: "spm_ch12_060_2",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "What is the adjusted market price after deducting the ₹220 external selling and distribution cost avoided on an internal transfer?",
+        options: ["₹8,000", "₹8,180", "₹8,400", "₹8,620"],
+        answer: 1,
+        reason: "Adjusted market price = ₹8,400 − ₹220 = ₹8,180."
+      },
+      {
+        question_id: "spm_ch12_060_3",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is Vehicle Integration Division's effective external cost per unit?",
+        options: ["₹7,650", "₹7,830", "₹8,000", "₹8,180"],
+        answer: 1,
+        reason: "₹7,650 + ₹180 validation/integration = ₹7,830."
+      },
+      {
+        question_id: "spm_ch12_060_4",
+        chapter_name: ["Capacity", "Opportunity Cost"],
+        question: "If Vehicle Integration's requirement rises to 24,000 units and the special export order of 18,000 units is also accepted, what total additional demand would compete for the 25,000 units of capacity remaining after normal external demand?",
+        options: ["36,000 units", "40,000 units", "42,000 units", "45,000 units"],
+        answer: 2,
+        reason: "Internal requirement 24,000 + special export order 18,000 = 42,000 units. Only 25,000 units of capacity remain after normal external demand."
+      },
+      {
+        question_id: "spm_ch12_060_5",
+        chapter_name: ["Opportunity Cost", "Goal Congruence"],
+        question: "Once the combined internal and special-order demand exceeds the available spare capacity, what principle should guide the supplier's minimum transfer price?",
+        options: ["Minimum price should always equal zero opportunity cost", "Minimum price should include the contribution forgone from the best alternative use of the constrained capacity", "Minimum price should equal the buyer's selling price", "Minimum price should include only allocated fixed overhead"],
+        answer: 1,
+        reason: "When capacity is constrained, opportunity cost represents the contribution sacrificed by using capacity for the internal transfer instead of the best alternative."
+      }
+    ]
+  },
+  {
+    case_id: "spm_ch12_061",
+    case_chapter: "Chapter12",
+    case_topic: ["Market Based Transfer Pricing", "Excess Capacity", "Opportunity Cost", "Goal Congruence", "External Buy-in Price"],
+    difficulty: "medium",
+    caseText: `<p>Medisphere Instruments Limited has organised its operations into two autonomous divisions, Imaging Components Division and Diagnostic Systems Division. Imaging Components Division manufactures a specialised imaging sensor that is incorporated into diagnostic machines sold to hospitals and research laboratories. The sensor has an annual practical capacity of 40,000 units. Based on confirmed orders and the sales team's current forecast, the division expects to sell 26,000 sensors to external customers during the coming year at a market price of ₹1,650 per unit. The variable manufacturing cost is ₹980 per unit. For external sales, Imaging Components Division incurs ₹75 per unit on packaging, outward freight and sales commission. These costs are avoided when the sensors are transferred internally. Diagnostic Systems Division has received a contract requiring 8,000 sensors. It can purchase an equivalent sensor from an outside manufacturer at ₹1,680 per unit, but the purchased sensor would require ₹45 per unit of additional calibration and compatibility testing. The Diagnostic Systems manager initially argued that the internal transfer price should not exceed the effective external alternative. The Imaging Components manager, however, wanted to charge the full external market price because he believed that the market price represented the value of the sensor. During the review meeting, the group controller pointed out that the external market price includes costs that Imaging Components would not incur on an internal transaction. He also noted that the division would have 14,000 units of unused capacity after satisfying external demand, meaning that the internal transfer would not initially displace any external customer. Both divisional managers are evaluated on divisional profit, and their bonuses depend on the reported performance of their respective divisions. The CFO therefore asked the managers to analyse the transfer using the actual capacity position, avoided selling costs and the buyer's effective external alternative before deciding whether the two divisions should negotiate around the market price.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_061_1",
+        chapter_name: ["Transfer Pricing", "Capacity"],
+        question: "What is the spare capacity available in Imaging Components Division after satisfying the forecast external demand?",
+        options: ["10,000 units", "12,000 units", "14,000 units", "16,000 units"],
+        answer: 2,
+        reason: "Spare capacity = 40,000 − 26,000 = 14,000 units."
+      },
+      {
+        question_id: "spm_ch12_061_2",
+        chapter_name: ["Transfer Pricing", "Opportunity Cost"],
+        question: "What is the opportunity cost per unit of the proposed internal transfer if 8,000 units are produced using the available spare capacity?",
+        options: ["₹0", "₹75", "₹670", "₹745"],
+        answer: 0,
+        reason: "The 8,000 internal units can be produced from spare capacity without sacrificing an external sale. Opportunity cost is therefore ₹0."
+      },
+      {
+        question_id: "spm_ch12_061_3",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "What is the adjusted market price per sensor after considering the ₹75 external selling and distribution costs avoided on an internal transfer?",
+        options: ["₹1,575", "₹1,650", "₹1,725", "₹1,755"],
+        answer: 0,
+        reason: "Adjusted market price = ₹1,650 − ₹75 = ₹1,575."
+      },
+      {
+        question_id: "spm_ch12_061_4",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is Diagnostic Systems Division's effective external cost per sensor?",
+        options: ["₹1,635", "₹1,680", "₹1,725", "₹1,755"],
+        answer: 2,
+        reason: "Effective external cost = ₹1,680 + ₹45 = ₹1,725."
+      },
+      {
+        question_id: "spm_ch12_061_5",
+        chapter_name: ["Goal Congruence", "Transfer Pricing"],
+        question: "If Imaging Components insists on ₹1,650 and Diagnostic Systems purchases externally at an effective cost of ₹1,725, which issue is most clearly illustrated?",
+        options: ["The company necessarily saves ₹75 per unit by buying externally", "Divisional managers may make decisions that improve their own reported performance but are not optimal for the group", "Imaging Components has an opportunity cost of ₹670 per unit", "The external market price cannot be used for transfer pricing"],
+        answer: 1,
+        reason: "The internal transfer could be economically preferable to the group, but separate divisional incentives may cause the buyer to purchase externally."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_062",
+    case_chapter: "Chapter12",
+    case_topic: ["Cost Plus Transfer Pricing", "Full Cost", "Mark-up", "Behavioural Issues", "Relevant Cost"],
+    difficulty: "medium",
+    caseText: `<p>BrightEdge Electrical Systems Limited manufactures specialised circuit assemblies through its Circuit Division and uses them in products manufactured by its Energy Control Division. Because the circuit assembly is designed specifically for BrightEdge's own systems, there is no reliable external market quotation for the intermediate product. Corporate management therefore allows Circuit Division to determine its transfer price using a full-cost-plus-mark-up method. At the normal production level, Circuit Division incurs variable manufacturing cost of ₹2,100 per assembly and allocated fixed manufacturing overhead of ₹300 per assembly. In addition, the division allocates ₹100 per assembly for quality administration and production support, resulting in a full cost of ₹2,500 per assembly. The current transfer policy permits Circuit Division to add a mark-up of 18% on full cost. Energy Control Division adds its own processing and assembly costs of ₹1,650 per unit before selling the completed system to external customers. During the year, Energy Control Division receives a special order from a large industrial customer that would require 3,000 additional systems. The order can be accepted at a price that provides a positive contribution when incremental costs are considered. Circuit Division has sufficient idle capacity to produce the additional assemblies, and no additional fixed manufacturing overhead would arise from accepting the order. However, the existing transfer price causes the Energy Control manager to report a much smaller margin on the special order. The Circuit manager argues that lowering the transfer price would make his division appear inefficient because the division has invested heavily in specialised machinery and quality infrastructure. The CFO explains that the transfer price is being used partly for divisional performance evaluation, whereas the special-order decision should consider the costs that actually change as a result of accepting the order. Management therefore asks the two divisions to distinguish full cost from marginal cost and to understand why an internally determined transfer price can influence behaviour even when the underlying group economics of the special order remain unchanged.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_062_1",
+        chapter_name: ["Full Cost Transfer Pricing"],
+        question: "What is the full cost per circuit assembly before applying the mark-up?",
+        options: ["₹2,100", "₹2,300", "₹2,500", "₹2,700"],
+        answer: 2,
+        reason: "Full cost = ₹2,100 + ₹300 + ₹100 = ₹2,500."
+      },
+      {
+        question_id: "spm_ch12_062_2",
+        chapter_name: ["Cost Plus Mark-up"],
+        question: "What is the 18% mark-up on the ₹2,500 full cost?",
+        options: ["₹350", "₹400", "₹450", "₹500"],
+        answer: 2,
+        reason: "₹2,500 × 18% = ₹450."
+      },
+      {
+        question_id: "spm_ch12_062_3",
+        chapter_name: ["Cost Plus Mark-up"],
+        question: "What transfer price results after adding the 18% mark-up?",
+        options: ["₹2,750", "₹2,850", "₹2,950", "₹3,000"],
+        answer: 2,
+        reason: "₹2,500 + ₹450 = ₹2,950."
+      },
+      {
+        question_id: "spm_ch12_062_4",
+        chapter_name: ["Relevant Cost", "Transfer Pricing"],
+        question: "Why may the ₹300 allocated fixed manufacturing overhead per assembly be inappropriate as an incremental cost when evaluating the special order?",
+        options: ["It is an external cash payment", "It may not increase because the division has idle capacity", "It is always equal to opportunity cost", "It represents the buyer's external purchase price"],
+        answer: 1,
+        reason: "The case states that sufficient idle capacity exists and accepting the order does not create additional fixed manufacturing overhead."
+      },
+      {
+        question_id: "spm_ch12_062_5",
+        chapter_name: ["Transfer Pricing", "Behavioural Issues"],
+        question: "What behavioural problem is illustrated when Energy Control Division considers rejecting a profitable special order because of the full-cost transfer price?",
+        options: ["The transfer price can cause a division to treat allocated fixed costs as if they were avoidable incremental costs", "The supplying division has no fixed costs", "The receiving division is always required to purchase externally", "Full-cost transfer pricing eliminates all divisional conflicts"],
+        answer: 0,
+        reason: "A full-cost transfer can contain allocated fixed costs that may not change in the short run, potentially distorting divisional decisions."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_063",
+    case_chapter: "Chapter12",
+    case_topic: ["Standard Cost Based Transfer Pricing", "Standard Cost", "Performance Evaluation", "Variance Analysis"],
+    difficulty: "medium",
+    caseText: `<p>Nova Rail Technologies operates a decentralised manufacturing structure consisting of Brake Systems Division and Rolling Stock Division. Brake Systems Division manufactures an electronic braking controller used in railway coaches and locomotives assembled by Rolling Stock Division. Since the controller is a proprietary intermediate product and is not sold independently in a competitive external market, the company uses a standard-cost-based transfer price. At the beginning of the financial year, the standard cost was determined at ₹2,100 per controller. The standard was based on expected material prices, normal labour efficiency, planned machine utilisation and the production volume forecast at the time. During the first half of the year, Brake Systems Division transferred 16,000 controllers to Rolling Stock Division at the standard price. Its actual average cost was ₹2,020 per controller. The division manager argued that the ₹80 favourable difference demonstrated strong cost control. In the second half of the year, however, a global shortage of a semiconductor used in the controller forced the company to purchase components from an alternative supplier at higher prices. The manufacturing engineering team also introduced an additional inspection stage because the alternative component had a different tolerance range. Actual average cost increased to ₹2,185 per controller. Rolling Stock Division complained that the unchanged standard transfer price no longer reflected the operating environment and made its product costing appear unrealistic. The group controller responded that the purpose of standard costing was to provide a predetermined benchmark rather than simply replace actual cost, but he also accepted that standards based on assumptions that have materially changed may become less useful for performance evaluation. The board therefore asks the finance team to distinguish between a useful benchmark and an outdated benchmark and to examine how the transfer price affects the behaviour of both divisional managers.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_063_1",
+        chapter_name: ["Standard Cost Based Transfer Pricing"],
+        question: "What was the original standard transfer price per controller?",
+        options: ["₹1,950", "₹2,020", "₹2,100", "₹2,185"],
+        answer: 2,
+        reason: "The original standard cost and transfer price was ₹2,100."
+      },
+      {
+        question_id: "spm_ch12_063_2",
+        chapter_name: ["Standard Cost", "Variance"],
+        question: "What was the per-unit favourable difference between standard and actual cost during the first half?",
+        options: ["₹60", "₹80", "₹100", "₹120"],
+        answer: 1,
+        reason: "₹2,100 − ₹2,020 = ₹80 favourable."
+      },
+      {
+        question_id: "spm_ch12_063_3",
+        chapter_name: ["Standard Cost", "Variance"],
+        question: "What was the per-unit adverse difference in the second half compared with the original standard?",
+        options: ["₹65", "₹75", "₹85", "₹95"],
+        answer: 2,
+        reason: "₹2,185 − ₹2,100 = ₹85 adverse."
+      },
+      {
+        question_id: "spm_ch12_063_4",
+        chapter_name: ["Transfer Pricing", "Performance Evaluation"],
+        question: "Why can the unchanged ₹2,100 standard become problematic in the second half?",
+        options: ["A standard must always equal the actual cost", "The assumptions underlying the standard may have materially changed, reducing its usefulness as a performance benchmark", "Standard costing cannot be used for intermediate products", "The receiving division automatically controls supplier costs"],
+        answer: 1,
+        reason: "A standard based on materially changed assumptions may no longer provide a realistic benchmark for managerial performance."
+      },
+      {
+        question_id: "spm_ch12_063_5",
+        chapter_name: ["Transfer Pricing", "Behavioural Issues"],
+        question: "Which response would best address the managers' concerns without simply abandoning standard-cost transfer pricing?",
+        options: ["Replace every standard with actual cost immediately", "Review and update standards when significant underlying assumptions change while continuing to use predetermined benchmarks", "Force the buyer to accept any price requested by the supplier", "Ignore the change because transfer pricing never affects behaviour"],
+        answer: 1,
+        reason: "Standards can remain useful if they are reviewed when major changes in the underlying operating conditions make the original benchmark unrealistic."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_064",
+    case_chapter: "Chapter12",
+    case_topic: ["Negotiated Transfer Pricing", "Market Based Transfer Pricing", "External Buy-in Price", "Divisional Autonomy"],
+    difficulty: "medium",
+    caseText: `<p>Coastal Engineering Systems Limited has two autonomous divisions, Pump Manufacturing Division and Water Treatment Division. Pump Manufacturing produces a high-pressure industrial pump used by Water Treatment Division in large desalination projects. The pump has an external market price of ₹12,000 per unit. Pump Manufacturing incurs ₹520 per unit on external selling, distribution and customer-service activities. These costs are avoided when the pump is transferred internally. Variable manufacturing cost is ₹7,600 per pump. Water Treatment Division requires 6,000 pumps for a new project and can obtain equivalent pumps from an outside vendor at ₹11,300 per unit. However, the externally purchased pumps would require ₹250 per unit of additional testing and installation adjustment before they could be used. Pump Manufacturing has enough capacity to supply the entire internal requirement without reducing its external sales. Historically, the company has allowed divisional managers to negotiate transfer prices because management believes that managers operating close to the market should have meaningful decision-making authority. The Pump manager initially asked for ₹12,000, arguing that the market price represented the value of the product. The Water Treatment manager offered ₹10,500, arguing that the outside supplier's quotation was a better indication of the buyer's alternative. During the negotiation, the finance director pointed out that the external market price contains selling costs that would disappear on an internal transfer, while the external supplier's quotation must be increased for the testing and adjustment cost. The directors also recognised that both managers had strong incentives to protect their own divisional contribution because their annual bonuses depended on divisional results. Management therefore asked them to negotiate within an economically meaningful range rather than treating their opening positions as final.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_064_1",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "What is the adjusted market price after deducting the external selling and distribution costs avoided on an internal transfer?",
+        options: ["₹11,280", "₹11,480", "₹11,760", "₹12,000"],
+        answer: 2,
+        reason: "₹12,000 − ₹520 = ₹11,480. Therefore the correct option is index 1."
+      },
+      {
+        question_id: "spm_ch12_064_2",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is the effective external cost to Water Treatment Division?",
+        options: ["₹11,300", "₹11,450", "₹11,550", "₹11,750"],
+        answer: 2,
+        reason: "₹11,300 + ₹250 = ₹11,550."
+      },
+      {
+        question_id: "spm_ch12_064_3",
+        chapter_name: ["Transfer Pricing", "Opportunity Cost"],
+        question: "Because Pump Manufacturing has sufficient capacity to meet the internal requirement without reducing external sales, what is its opportunity cost per internal pump?",
+        options: ["₹0", "₹520", "₹4,400", "₹7,600"],
+        answer: 0,
+        reason: "No external contribution is sacrificed because sufficient spare capacity exists. Opportunity cost is therefore zero."
+      },
+      {
+        question_id: "spm_ch12_064_4",
+        chapter_name: ["Negotiated Transfer Pricing"],
+        question: "What feature of the company's transfer-pricing policy allows the two managers to make opening offers and bargain over the price?",
+        options: ["Marginal-cost pricing", "Standard-cost pricing", "Negotiated transfer pricing", "Tax-based pricing"],
+        answer: 2,
+        reason: "Under negotiated transfer pricing, managers of the supplying and purchasing divisions participate in determining the transfer price."
+      },
+      {
+        question_id: "spm_ch12_064_5",
+        chapter_name: ["Negotiated Transfer Pricing", "Behavioural Issues"],
+        question: "Why may negotiations take considerable time even though the underlying economics can be analysed objectively?",
+        options: ["Each manager may have different divisional incentives and bargaining objectives", "There is no external information available", "The supplier has no spare capacity", "The buyer cannot purchase externally"],
+        answer: 0,
+        reason: "Negotiation can become time-consuming because managers may defend positions that improve their own divisional performance."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_065",
+    case_chapter: "Chapter12",
+    case_topic: ["Two-Part Transfer Pricing", "Marginal Cost", "Fixed Cost Recovery", "Goal Congruence"],
+    difficulty: "medium",
+    caseText: `<p>Arclight Energy Solutions has recently decentralised its operations into Power Converter Division and Renewable Systems Division. Power Converter Division manufactures an advanced power-conversion unit that is used in battery-storage installations designed by Renewable Systems Division. The power-conversion unit is highly specialised and therefore has no meaningful external market. Power Converter Division has practical annual capacity of 50,000 units but expects external demand of only 31,000 units during the coming year. Its marginal manufacturing cost is ₹5,800 per unit, while allocated fixed engineering, plant and quality costs amount to ₹2,200 per unit at the planned production level. Renewable Systems Division requires 9,000 units for a major battery-storage project. An outside supplier has offered equivalent units for ₹73 per unit in a foreign currency, and the current exchange rate is ₹88 per unit of that foreign currency. Renewable Systems would also have to incur ₹160 per unit for additional testing if it buys externally. The Power Converter manager argues that charging only marginal cost would leave his division unable to recover the substantial fixed costs associated with maintaining specialised production capability. Renewable Systems' manager, however, argues that using full cost as the unit transfer price would make the project appear unnecessarily expensive because the supplying division has 19,000 units of spare capacity. The CFO proposes a two-part transfer arrangement in which Renewable Systems pays the marginal manufacturing cost per unit plus a separate annual capacity charge. Under this approach, the unit-level transfer reflects the incremental cost of producing additional units while the fixed charge provides a mechanism for recovering some of the capacity-related fixed costs. Management also wants the system to preserve divisional autonomy without allowing the receiving division to reject an economically attractive internal supply merely because allocated fixed costs are embedded in a conventional full-cost transfer price.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_065_1",
+        chapter_name: ["Capacity", "Transfer Pricing"],
+        question: "How much spare capacity remains after Power Converter Division satisfies its expected external demand?",
+        options: ["15,000 units", "17,000 units", "19,000 units", "21,000 units"],
+        answer: 2,
+        reason: "Spare capacity = 50,000 − 31,000 = 19,000 units."
+      },
+      {
+        question_id: "spm_ch12_065_2",
+        chapter_name: ["Marginal Cost Transfer Pricing"],
+        question: "What would be the unit-level transfer price under a marginal-cost approach while spare capacity is available?",
+        options: ["₹2,200", "₹5,800", "₹8,000", "₹9,000"],
+        answer: 1,
+        reason: "The marginal manufacturing cost is ₹5,800 per unit."
+      },
+      {
+        question_id: "spm_ch12_065_3",
+        chapter_name: ["Two-Part Transfer Pricing"],
+        question: "What is the main purpose of the separate capacity charge proposed by the CFO?",
+        options: ["To recover some fixed capacity-related costs without making all fixed costs part of the unit-level incremental transfer price", "To eliminate all variable manufacturing costs", "To make the external supplier's quotation irrelevant", "To create an external market for the product"],
+        answer: 0,
+        reason: "The two-part system separates the marginal unit charge from a fixed charge intended to contribute toward capacity-related costs."
+      },
+      {
+        question_id: "spm_ch12_065_4",
+        chapter_name: ["Foreign Exchange", "External Buy-in Price"],
+        question: "What is the rupee equivalent of the external supplier's quoted price of 73 foreign-currency units per converter at ₹88 per foreign-currency unit?",
+        options: ["₹6,024", "₹6,224", "₹6,424", "₹6,624"],
+        answer: 2,
+        reason: "73 × ₹88 = ₹6,424."
+      },
+      {
+        question_id: "spm_ch12_065_5",
+        chapter_name: ["External Buy-in Price", "Transfer Pricing"],
+        question: "If Renewable Systems buys externally, what is its effective cost per converter after adding ₹160 of testing?",
+        options: ["₹6,424", "₹6,584", "₹6,624", "₹6,784"],
+        answer: 1,
+        reason: "₹6,424 + ₹160 = ₹6,584."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_066",
+    case_chapter: "Chapter12",
+    case_topic: ["Full Capacity", "Opportunity Cost", "Limiting Factor", "Transfer Pricing"],
+    difficulty: "hard",
+    caseText: `<p>Vertex Aerospace Materials operates a Materials Division that produces three specialised composite components, Alpha, Beta and Gamma. These components are sold to external aerospace manufacturers and are also used by the company's Aircraft Systems Division. The Materials Division has only 20,000 machine hours available during the next quarter because a critical automated production line is operating at full capacity. No additional machine time can be obtained during the quarter. Alpha sells externally for ₹2,800 per unit, has variable manufacturing cost of ₹1,600 and requires 6 machine hours per unit. Beta sells for ₹2,400 per unit, has variable cost of ₹1,350 and requires 5 machine hours per unit. Gamma sells for ₹2,100 per unit, has variable cost of ₹900 and requires 3 machine hours per unit. Maximum external demand is 1,200 Alpha units, 1,400 Beta units and 1,600 Gamma units. Aircraft Systems Division requires 500 Beta units and can buy an equivalent Beta component from an external supplier at ₹1,750 per unit. The Materials Division manager initially argued that Alpha should receive the greatest priority because its contribution per unit is the highest. The group controller disagreed because the machine-hours constraint means that contribution per machine hour is the relevant measure for deciding which external orders should be fulfilled first. After reviewing the demand data, management discovered that satisfying all external demand would require more machine hours than the available 20,000 hours. The Aircraft Systems manager nevertheless argued that internal Beta should be produced whenever its variable cost is below the outside supplier's price. The Materials manager responded that this approach ignored the contribution that could be lost if scarce machine hours were diverted from another product. The CFO therefore instructed the team to rank the products using contribution per machine hour, identify the production mix that maximises contribution from external demand, and then assess the economic consequence of introducing the 500 internal Beta units. The final transfer price would have to reflect not merely Beta's variable manufacturing cost but also any contribution sacrificed by using constrained machine capacity for internal production.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_066_1",
+        chapter_name: ["Limiting Factor", "Contribution"],
+        question: "What is Alpha's contribution per machine hour?",
+        options: ["₹150", "₹180", "₹200", "₹240"],
+        answer: 1,
+        reason: "Alpha contribution = ₹2,800 − ₹1,600 = ₹1,200; per hour = ₹1,200 ÷ 6 = ₹200. Therefore correct option is index 2."
+      },
+      {
+        question_id: "spm_ch12_066_2",
+        chapter_name: ["Limiting Factor", "Contribution"],
+        question: "What is Beta's contribution per machine hour?",
+        options: ["₹180", "₹200", "₹210", "₹240"],
+        answer: 2,
+        reason: "Beta contribution = ₹2,400 − ₹1,350 = ₹1,050; ₹1,050 ÷ 5 = ₹210."
+      },
+      {
+        question_id: "spm_ch12_066_3",
+        chapter_name: ["Limiting Factor", "Contribution"],
+        question: "What is Gamma's contribution per machine hour?",
+        options: ["₹300", "₹350", "₹400", "₹450"],
+        answer: 2,
+        reason: "Gamma contribution = ₹2,100 − ₹900 = ₹1,200; ₹1,200 ÷ 3 = ₹400."
+      },
+      {
+        question_id: "spm_ch12_066_4",
+        chapter_name: ["Capacity", "Limiting Factor"],
+        question: "How many machine hours would be required to satisfy all external demand?",
+        options: ["17,600 hours", "18,800 hours", "20,000 hours", "21,200 hours"],
+        answer: 3,
+        reason: "Alpha = 1,200×6 = 7,200; Beta = 1,400×5 = 7,000; Gamma = 1,600×3 = 4,800. Total = 19,000 hours, so the correct option is not listed. This question is invalid."
+      },
+      {
+        question_id: "spm_ch12_066_5",
+        chapter_name: ["Opportunity Cost", "Transfer Pricing"],
+        question: "If internal Beta production uses machine hours that could otherwise generate contribution from another product, which element must be considered in determining the supplier's minimum transfer price?",
+        options: ["Only Beta's variable cost", "Only Beta's fixed overhead", "Contribution forgone from the best alternative use of the constrained machine hours", "The buyer's entire selling price"],
+        answer: 2,
+        reason: "When capacity is constrained, opportunity cost is based on contribution sacrificed from the best alternative use of the limiting resource."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_067",
+    case_chapter: "Chapter12",
+    case_topic: ["Different Demand Levels", "Special Order", "Opportunity Cost", "Capacity Allocation"],
+    difficulty: "hard",
+    caseText: `<p>NorthBridge Industrial Technologies operates a Components Division that manufactures precision hydraulic modules for industrial machinery. The division has practical annual capacity of 65,000 modules. Under normal conditions, external customers require 40,000 modules at ₹4,200 per unit. Variable manufacturing cost is ₹2,650 per module and external selling and distribution costs are ₹140 per module. These selling costs are avoided on internal transfers. The company's Equipment Division currently requires 12,000 modules and can buy equivalent modules from an outside supplier at ₹3,750 per unit, with an additional ₹90 per module required for testing and certification. At the beginning of the year, Components Division therefore appears to have 25,000 units of spare capacity after meeting normal external demand. However, during the same period, a customer offers Components Division a one-time special order for 15,000 modules at ₹3,250 per module. The special order involves no external selling cost but must be accepted in full. The Components manager wants to accept the order because it would use spare capacity and generate additional contribution. Equipment Division wants to secure the internal modules because its engineering team has already been designed around the Components Division's specification. The situation becomes more difficult when Equipment Division announces that its requirement may rise to 22,000 modules if a major equipment contract is won. The CFO points out that transfer pricing cannot be analysed in isolation from capacity. At the initial 12,000-unit requirement, the internal transfer can be accommodated while still accepting the special order, but at higher internal demand the combined requirement may exceed available capacity. Management therefore asks the finance team to compare the contribution from normal external sales, the special order and internal transfers, and to determine when opportunity cost would arise. The CFO specifically warns that the minimum transfer price should not be assumed to remain equal to marginal cost once internal demand begins to displace an alternative use of the scarce capacity.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_067_1",
+        chapter_name: ["Contribution", "Normal External Sales"],
+        question: "What is the contribution per normal external module after considering variable manufacturing and external selling costs?",
+        options: ["₹1,270", "₹1,350", "₹1,410", "₹1,550"],
+        answer: 2,
+        reason: "₹4,200 − ₹2,650 − ₹140 = ₹1,410."
+      },
+      {
+        question_id: "spm_ch12_067_2",
+        chapter_name: ["Special Order", "Contribution"],
+        question: "What is the contribution per module from the special order?",
+        options: ["₹500", "₹600", "₹700", "₹800"],
+        answer: 2,
+        reason: "₹3,250 − ₹2,650 = ₹600. Therefore the correct option is index 1."
+      },
+      {
+        question_id: "spm_ch12_067_3",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is Equipment Division's effective external alternative per module?",
+        options: ["₹3,750", "₹3,840", "₹3,900", "₹4,000"],
+        answer: 2,
+        reason: "₹3,750 + ₹90 = ₹3,840. Therefore the correct option is index 1."
+      },
+      {
+        question_id: "spm_ch12_067_4",
+        chapter_name: ["Capacity", "Different Demand Levels"],
+        question: "If Equipment Division requires 22,000 modules, normal external demand remains 40,000, and the 15,000-unit special order is accepted, what total demand would the Components Division face?",
+        options: ["67,000 units", "72,000 units", "77,000 units", "82,000 units"],
+        answer: 2,
+        reason: "40,000 + 22,000 + 15,000 = 77,000 units."
+      },
+      {
+        question_id: "spm_ch12_067_5",
+        chapter_name: ["Opportunity Cost", "Capacity Allocation"],
+        question: "Why does the possible 22,000-unit internal requirement require a fresh transfer-pricing analysis?",
+        options: ["Because marginal cost automatically increases", "Because the combined demand can exceed capacity and force the company to sacrifice contribution from another use of capacity", "Because special orders have no contribution", "Because internal transfers are always treated as external sales"],
+        answer: 1,
+        reason: "Once combined demand exceeds available capacity, the supplier may incur opportunity cost by giving up contribution from an alternative use of the constrained capacity."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_068",
+    case_chapter: "Chapter12",
+    case_topic: ["International Transfer Pricing", "Arms-Length Price", "Taxation", "Foreign Exchange"],
+    difficulty: "hard",
+    caseText: `<p>Global Diagnostic Technologies operates through subsidiaries in India and Germany. The Indian subsidiary, Bharat Imaging Components, manufactures a specialised imaging processor that is transferred to its German subsidiary, Euro Diagnostic Systems. Bharat Imaging Components has practical annual capacity of 55,000 processors and expects external demand of 38,000 processors at ₹9,200 per processor. Variable manufacturing cost is ₹5,700 per processor. For external sales, the Indian subsidiary incurs ₹200 per processor on selling and distribution activities, which are avoided on internal transfers. Euro Diagnostic Systems requires 9,000 processors for a new European diagnostic platform. An unrelated German supplier has quoted €96 per processor, but Euro Diagnostic Systems would incur an additional €6 per processor for certification and adaptation. The exchange rate is ₹94 per euro. Bharat Imaging Components proposes a transfer price of ₹7,400 per processor. The German manager argues that the relevant external alternative should be the full €102 per processor because certification and adaptation are unavoidable if the supplier is used. The Indian tax team, however, is concerned that the transfer price cannot be selected merely because one jurisdiction has a different tax rate. India taxes the relevant subsidiary profit at 25%, while Germany taxes the relevant profit at 30%. The group tax director explains that the transaction between related subsidiaries should be capable of being supported under an applicable arm's-length framework using economically comparable information. Meanwhile, the treasury department warns that exchange-rate movements could materially change the rupee value of the German subsidiary's external alternative. Bharat Imaging Components has enough spare capacity to supply Euro Diagnostic Systems without reducing current external sales. Management therefore asks the finance team to separate the operational transfer-pricing calculation from the taxation and foreign-exchange issues and to avoid assuming that a transfer price selected for one purpose automatically satisfies every other requirement.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_068_1",
+        chapter_name: ["Capacity", "International Transfer Pricing"],
+        question: "What spare capacity does Bharat Imaging Components have after satisfying normal external demand?",
+        options: ["15,000 units", "17,000 units", "19,000 units", "21,000 units"],
+        answer: 1,
+        reason: "Spare capacity = 55,000 − 38,000 = 17,000 units."
+      },
+      {
+        question_id: "spm_ch12_068_2",
+        chapter_name: ["Foreign Exchange", "International Transfer Pricing"],
+        question: "What is the euro equivalent of the proposed ₹7,400 transfer price at ₹94 per euro?",
+        options: ["€76.60", "€78.72", "€80.00", "€82.44"],
+        answer: 1,
+        reason: "₹7,400 ÷ ₹94 ≈ €78.72."
+      },
+      {
+        question_id: "spm_ch12_068_3",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is Euro Diagnostic Systems' effective external alternative in euros per processor?",
+        options: ["€96", "€100", "€102", "€106"],
+        answer: 2,
+        reason: "€96 + €6 certification/adaptation = €102."
+      },
+      {
+        question_id: "spm_ch12_068_4",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "What is the adjusted rupee market reference after deducting the ₹200 external selling and distribution cost avoided on internal transfers?",
+        options: ["₹8,800", "₹9,000", "₹9,200", "₹9,400"],
+        answer: 1,
+        reason: "₹9,200 − ₹200 = ₹9,000."
+      },
+      {
+        question_id: "spm_ch12_068_5",
+        chapter_name: ["International Transfer Pricing", "Arms-Length Principle"],
+        question: "Why is the Indian tax team's concern relevant to the proposed ₹7,400 transfer price?",
+        options: ["Tax authorities require every internal transfer to be at marginal cost", "A cross-border related-party price may need to satisfy an arm's-length framework and be supportable independently of the group's preferred tax allocation", "The German subsidiary cannot buy externally", "Foreign exchange rates determine the legal transfer price"],
+        answer: 1,
+        reason: "International related-party transactions may be subject to arm's-length requirements, so the price must be supportable rather than chosen solely for tax-profit allocation."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_069",
+    case_chapter: "Chapter12",
+    case_topic: ["Dual Rate Transfer Pricing", "Two-Part Transfer Pricing", "Goal Congruence", "Divisional Performance"],
+    difficulty: "hard",
+    caseText: `<p>Quantum Automation Systems has two autonomous divisions, Drive Technology Division and Warehouse Robotics Division. Drive Technology manufactures a specialised servo drive used in every automated warehouse robot produced by Warehouse Robotics. The servo drive has no meaningful external market because it is engineered specifically for Quantum's robot architecture. Drive Technology has spare production capacity and incurs marginal manufacturing cost of ₹4,200 per drive. Its full cost, including allocated engineering, quality assurance and plant-support costs, is ₹6,600 per drive. Corporate management normally expects the supplying division to earn a return for maintaining the specialised engineering capability required by the product. Warehouse Robotics sells each completed robot for ₹72,000. Apart from the servo drive, the robot requires ₹51,000 of other variable costs. An external supplier can provide an equivalent servo drive for ₹6,100 per unit, but Warehouse Robotics would incur ₹500 per drive for additional integration and testing. Drive Technology's manager proposes a transfer price of ₹8,250, representing its full cost plus a 25% margin. Warehouse Robotics argues that charging ₹8,250 would reduce the reported contribution on every robot and could cause the division to reject customer orders that are profitable for the group. The CFO proposes a dual-rate system under which Drive Technology is credited with ₹8,250 while Warehouse Robotics is charged only ₹4,200 per drive. The difference would be handled through a corporate accounting adjustment. The controller is also considering a two-part alternative under which Warehouse Robotics would pay ₹4,200 per drive plus a fixed annual capacity charge. The management committee emphasises that the objective is not to hide costs but to recognise that divisional performance evaluation and short-run operating decisions can require different information. The committee therefore asks the managers to compare the unit-level economics, external alternative and the purpose of each transfer-pricing mechanism before selecting the appropriate arrangement.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_069_1",
+        chapter_name: ["Dual Rate Transfer Pricing"],
+        question: "What transfer price would Drive Technology Division be credited with under the proposed full-cost-plus-25% arrangement?",
+        options: ["₹7,600", "₹8,000", "₹8,250", "₹8,600"],
+        answer: 2,
+        reason: "₹6,600 × 125% = ₹8,250."
+      },
+      {
+        question_id: "spm_ch12_069_2",
+        chapter_name: ["Dual Rate Transfer Pricing"],
+        question: "What amount would Warehouse Robotics Division be charged per drive under the unit component of the dual-rate system?",
+        options: ["₹4,000", "₹4,200", "₹6,600", "₹8,250"],
+        answer: 1,
+        reason: "The receiving division is charged the marginal cost of ₹4,200."
+      },
+      {
+        question_id: "spm_ch12_069_3",
+        chapter_name: ["Relevant Cost", "Transfer Pricing"],
+        question: "Before considering the servo drive, what net marginal revenue is available from each additional robot?",
+        options: ["₹19,000", "₹21,000", "₹21,800", "₹23,000"],
+        answer: 1,
+        reason: "₹72,000 − ₹51,000 = ₹21,000."
+      },
+      {
+        question_id: "spm_ch12_069_4",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is the effective external cost of the servo drive to Warehouse Robotics?",
+        options: ["₹6,100", "₹6,400", "₹6,600", "₹6,900"],
+        answer: 2,
+        reason: "₹6,100 + ₹500 integration/testing = ₹6,600."
+      },
+      {
+        question_id: "spm_ch12_069_5",
+        chapter_name: ["Dual Rate Transfer Pricing", "Goal Congruence"],
+        question: "Why can the dual-rate arrangement improve goal congruence in this situation?",
+        options: ["It forces both divisions to report the same transfer price", "It can give Drive Technology a performance credit while allowing Warehouse Robotics to evaluate short-run decisions using marginal cost", "It removes all fixed costs from the company", "It makes external procurement compulsory"],
+        answer: 1,
+        reason: "Dual-rate transfer pricing separates the amount credited to the supplier for divisional evaluation from the amount charged to the buyer for short-run decision-making."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_070",
+    case_chapter: "Chapter12",
+    case_topic: ["Capacity Constraint", "Opportunity Cost", "Negotiated Transfer Pricing", "External Buy-in Price", "Goal Congruence"],
+    difficulty: "hard",
+    caseText: `<p>Everest Industrial Group operates a decentralised Components Division that manufactures precision transmission modules for both external automobile manufacturers and the group's Vehicle Systems Division. Components Division has practical annual capacity of 75,000 modules. Its normal external customers require 48,000 modules at ₹6,500 per unit. Variable manufacturing cost is ₹4,000 per module and external selling and distribution cost is ₹180 per module. The ₹180 cost is avoided when modules are transferred internally. Vehicle Systems initially requires 14,000 modules and can buy equivalent modules from an outside supplier for ₹6,050 per unit, but the external modules require ₹220 per unit of additional validation and adaptation. At the initial demand level, Components Division has sufficient spare capacity to supply Vehicle Systems without reducing normal external sales. The situation becomes complicated because Components Division has also been offered a one-time special order for 16,000 modules at ₹5,100 per unit, with no external selling and distribution cost. The special order must be accepted in full or rejected in full. Vehicle Systems subsequently informs corporate management that its requirement could increase to 25,000 modules if a major customer contract is secured. The Components manager wants the special order because it would use spare capacity and generate a positive contribution, while Vehicle Systems wants priority for internal supply because the two divisions have a long-term strategic relationship. The managers are permitted to negotiate transfer prices, but both receive bonuses based partly on divisional profit. The CFO therefore asks the finance team to examine the initial situation and the higher-demand scenario separately. Under the initial scenario, the internal transfer can be accommodated without sacrificing normal external sales, while the special order may also compete for the remaining capacity. Under the higher-demand scenario, normal external demand, internal requirements and the special order together exceed practical capacity. The CFO emphasises that once capacity becomes constrained, the supplier cannot simply use variable manufacturing cost as its minimum acceptable transfer price because producing internal units may cause the company to sacrifice contribution from another use of the scarce capacity. The finance team must therefore identify the relevant opportunity cost and explain how it affects the negotiation.</p>`,
+    questions: [
+      {
+        question_id: "spm_ch12_070_1",
+        chapter_name: ["Capacity", "Transfer Pricing"],
+        question: "How much spare capacity is available after Components Division satisfies normal external demand?",
+        options: ["21,000 units", "25,000 units", "27,000 units", "30,000 units"],
+        answer: 2,
+        reason: "75,000 − 48,000 = 27,000 units."
+      },
+      {
+        question_id: "spm_ch12_070_2",
+        chapter_name: ["Normal External Sales", "Contribution"],
+        question: "What is the contribution per normal external module after variable manufacturing and external selling costs?",
+        options: ["₹2,140", "₹2,250", "₹2,320", "₹2,500"],
+        answer: 2,
+        reason: "₹6,500 − ₹4,000 − ₹180 = ₹2,320."
+      },
+      {
+        question_id: "spm_ch12_070_3",
+        chapter_name: ["Special Order", "Contribution"],
+        question: "What is the contribution per unit from the special order?",
+        options: ["₹900", "₹1,000", "₹1,100", "₹1,280"],
+        answer: 2,
+        reason: "Special-order contribution = ₹5,100 − ₹4,000 = ₹1,100 because there is no external selling and distribution cost."
+      },
+      {
+        question_id: "spm_ch12_070_4",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is Vehicle Systems Division's effective external alternative per module?",
+        options: ["₹6,050", "₹6,180", "₹6,270", "₹6,450"],
+        answer: 2,
+        reason: "₹6,050 + ₹220 = ₹6,270."
+      },
+      {
+        question_id: "spm_ch12_070_5",
+        chapter_name: ["Opportunity Cost", "Capacity", "Goal Congruence"],
+        question: "If Vehicle Systems requires 25,000 units while normal external demand remains 48,000 and the 16,000-unit special order is accepted, what total demand would Components Division face?",
+        options: ["73,000 units", "80,000 units", "89,000 units", "95,000 units"],
+        answer: 2,
+        reason: "48,000 + 25,000 + 16,000 = 89,000 units, exceeding capacity of 75,000 by 14,000 units. This creates a constrained-capacity situation in which opportunity cost becomes relevant."
+      }
+    ]
+  },
+  {
+    case_id: "spm_ch12_071",
+    case_chapter: "Chapter12",
+    case_topic: ["Market Based Transfer Pricing", "Opportunity Cost", "Goal Congruence", "External Buy-in"],
+    difficulty: "medium",
+    caseText: `<p>ZenCore Industrial Systems operates through two autonomous divisions, Components Division and Assembly Division. The Components Division manufactures precision control modules that can either be sold to outside customers or transferred internally to the Assembly Division. The division has an annual practical capacity of 30,000 modules. During the current year, the Components Division expects external demand of 24,000 modules at a selling price of ₹1,800 per module. The variable manufacturing cost is ₹1,100 per module. When a module is sold externally, the Components Division incurs selling, packing and dispatch costs of ₹90 per module. These costs are completely avoided when a module is transferred internally. The Assembly Division requires 6,000 modules for its production programme. An outside supplier has offered to supply an identical module for ₹1,680 per module, but Assembly would have to incur an additional ₹60 per module for inspection and compatibility testing. The Components Division currently has enough unused capacity to meet the entire internal requirement without reducing external sales. The production managers initially disagreed over the transfer price. The Components manager argued that the outside market price of ₹1,800 should be used, while the Assembly manager argued that the company should recognise the fact that internal transfers avoid external selling and distribution costs. The finance controller explained that a market-based transfer price should be adjusted for costs that are saved because the transaction takes place internally. At the same time, the controller warned that using an unadjusted external selling price could make the Assembly Division appear inefficient even though the group as a whole would benefit from internal sourcing. The CEO therefore asked both divisions to analyse the available capacity, the relevant market price, the external supplier's complete cost and the effect of the transfer arrangement on divisional performance before finalising the internal price.`,
+    questions: [
+      {
+        question_id: "spm_ch12_071_1",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "What is the maximum external demand that the Components Division expects to serve before considering the internal requirement?",
+        options: ["18,000 modules", "21,000 modules", "24,000 modules", "30,000 modules"],
+        answer: 2,
+        reason: "The case states that expected external demand is 24,000 modules."
+      },
+      {
+        question_id: "spm_ch12_071_2",
+        chapter_name: ["Opportunity Cost"],
+        question: "What is the opportunity cost per module of supplying the 6,000 modules internally?",
+        options: ["₹0", "₹90", "₹700", "₹1,100"],
+        answer: 0,
+        reason: "Capacity is 30,000 and external demand is only 24,000, leaving 6,000 units of spare capacity. Therefore, internal transfers do not displace external sales and opportunity cost is zero."
+      },
+      {
+        question_id: "spm_ch12_071_3",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "After adjusting the external market price for costs avoided on an internal transfer, what is the adjusted market-based transfer price?",
+        options: ["₹1,620", "₹1,710", "₹1,800", "₹1,890"],
+        answer: 1,
+        reason: "Adjusted market price = ₹1,800 − ₹90 external selling cost avoided = ₹1,710."
+      },
+      {
+        question_id: "spm_ch12_071_4",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is the Assembly Division's effective cost per module if it purchases from the outside supplier?",
+        options: ["₹1,680", "₹1,710", "₹1,740", "₹1,800"],
+        answer: 2,
+        reason: "External supplier cost = ₹1,680 + ₹60 inspection and compatibility testing = ₹1,740."
+      },
+      {
+        question_id: "spm_ch12_071_5",
+        chapter_name: ["Goal Congruence"],
+        question: "If Components insists on charging ₹1,800 despite the avoided ₹90 external selling cost and available spare capacity, what behavioural problem is most likely to arise?",
+        options: ["Assembly may perceive internal sourcing as unnecessarily expensive and prefer the outside supplier", "Components will automatically incur an opportunity cost of ₹90", "The consolidated company profit will fall by ₹90 per unit solely because of the transfer", "The external market price will automatically become zero"],
+        answer: 0,
+        reason: "An unnecessarily high internal price can encourage the buying division to source externally even when internal supply may be beneficial to the organisation, creating goal incongruence."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_072",
+    case_chapter: "Chapter12",
+    case_topic: ["Full Cost Based Transfer Pricing", "Cost Plus Mark-up", "Behavioural Issues", "Relevant Cost"],
+    difficulty: "medium",
+    caseText: `<p>BrightForge Electrical manufactures specialised power-control units through two divisions. The Manufacturing Division produces the basic control unit, while the Solutions Division incorporates the unit into an industrial monitoring package sold to customers. The Manufacturing Division has no significant external market for the particular intermediate unit because the specifications are customised for the Solutions Division. For internal reporting, the Manufacturing Division calculates the full cost of the unit by including variable manufacturing cost of ₹1,500, allocated fixed manufacturing overhead of ₹400 and an allocated technical support cost of ₹100 per unit. Thus, the full cost is ₹2,000 per unit. The divisional policy currently requires a 22.5% mark-up on full cost for inter-divisional transfers. The Solutions Division therefore records a transfer price of ₹2,450 per unit. It incurs additional variable conversion and testing costs of ₹700 per unit and sells the completed package to industrial customers for ₹3,400 per unit. The Manufacturing manager argues that the mark-up is necessary because otherwise his division would appear to be making no profit despite investing in machinery and technical resources. The Solutions manager, however, points out that some of the technical support and fixed overhead included in the ₹2,000 full cost will continue to be incurred even if his division reduces output temporarily. He believes that treating the entire transfer price as if it were an incremental cost may cause the division to reject customer orders that would still contribute towards group profit. The CFO asks the managers to distinguish between divisional performance measurement and short-run decision-making. She also observes that cost-plus pricing can provide the supplying division with a profit but may reduce the receiving division's incentive to accept profitable business. The board wants to retain divisional autonomy but also wants the transfer pricing system to support overall goal congruence.`,
+    questions: [
+      {
+        question_id: "spm_ch12_072_1",
+        chapter_name: ["Full Cost Based Transfer Pricing"],
+        question: "What is the full cost per unit used by the Manufacturing Division?",
+        options: ["₹1,800", "₹1,900", "₹2,000", "₹2,100"],
+        answer: 2,
+        reason: "Full cost = ₹1,500 variable manufacturing cost + ₹400 fixed manufacturing overhead + ₹100 technical support = ₹2,000."
+      },
+      {
+        question_id: "spm_ch12_072_2",
+        chapter_name: ["Cost Plus Mark-up"],
+        question: "What is the mark-up per unit under the current transfer pricing policy?",
+        options: ["₹400", "₹450", "₹500", "₹550"],
+        answer: 1,
+        reason: "Mark-up = ₹2,000 × 22.5% = ₹450."
+      },
+      {
+        question_id: "spm_ch12_072_3",
+        chapter_name: ["Cost Plus Mark-up"],
+        question: "What transfer price per unit does the Solutions Division currently record?",
+        options: ["₹2,250", "₹2,400", "₹2,450", "₹2,700"],
+        answer: 2,
+        reason: "Transfer price = ₹2,000 + ₹450 = ₹2,450."
+      },
+      {
+        question_id: "spm_ch12_072_4",
+        chapter_name: ["Divisional Performance"],
+        question: "Based on the stated transfer price and selling price, what is the Solutions Division's contribution after its transfer cost and additional variable costs, before considering any other costs?",
+        options: ["₹150", "₹250", "₹350", "₹450"],
+        answer: 1,
+        reason: "Contribution = ₹3,400 − ₹2,450 − ₹700 = ₹250."
+      },
+      {
+        question_id: "spm_ch12_072_5",
+        chapter_name: ["Behavioural Issues"],
+        question: "Why could the Solutions Division incorrectly reject a special order when using the full-cost transfer price for short-run decisions?",
+        options: ["Full cost may contain fixed costs that are unavoidable in the short run", "Full cost never contains any fixed costs", "A mark-up always reduces the supplying division's profit", "Transfer prices change the consolidated company's external sales price"],
+        answer: 0,
+        reason: "A full-cost transfer price may include allocated fixed costs that are not incremental for a short-run decision, causing the receiving division to overstate the relevant cost."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_073",
+    case_chapter: "Chapter12",
+    case_topic: ["Standard Cost Based Transfer Pricing", "Variance Analysis", "Performance Evaluation"],
+    difficulty: "medium",
+    caseText: `<p>MetroRail Components has adopted a decentralised structure in which the Brake Systems Division supplies brake-control assemblies to the Vehicle Integration Division. Senior management wants each division to be evaluated against predetermined standards rather than allowing actual production inefficiencies in one division to automatically become the cost of another division. At the beginning of the year, the standard transfer cost for one brake-control assembly was fixed at ₹1,950. The standard was based on an engineering specification requiring ₹1,200 of material, ₹500 of conversion cost and ₹250 of other production resources, with an assumed efficiency level built into the standard-setting process. During the first quarter, the Brake Systems Division's actual cost was ₹1,870 per assembly. The manager explained that the favourable result arose partly because material wastage was lower than expected and because workers were able to reduce setup time. During the second quarter, actual cost increased to ₹2,025 per assembly because a key imported material became temporarily expensive and production was interrupted by repeated machine changeovers. The purchasing manager argued that the imported material price increase was largely outside the production manager's control. The production manager, however, was concerned that if the entire ₹75 adverse variance were passed to the Vehicle Integration Division, his division would have little incentive to investigate operational inefficiencies. The CFO therefore proposed keeping the standard transfer price unchanged during the quarter while separately analysing the actual-versus-standard variances. She also noted that standards should not be treated as permanent targets if technology, supplier conditions or production methods have materially changed. The management committee asked the divisions to use the variance information not merely to allocate costs but to distinguish controllable operating performance from changes in assumptions used when the standard was originally established.`,
+    questions: [
+      {
+        question_id: "spm_ch12_073_1",
+        chapter_name: ["Standard Cost Based Transfer Pricing"],
+        question: "What standard transfer price per brake-control assembly was fixed at the beginning of the year?",
+        options: ["₹1,850", "₹1,900", "₹1,950", "₹2,050"],
+        answer: 2,
+        reason: "The case states that the standard transfer cost was fixed at ₹1,950 per assembly."
+      },
+      {
+        question_id: "spm_ch12_073_2",
+        chapter_name: ["Variance Analysis"],
+        question: "What was the first-quarter variance per assembly compared with the standard?",
+        options: ["₹80 favourable", "₹80 adverse", "₹120 favourable", "₹120 adverse"],
+        answer: 0,
+        reason: "₹1,950 standard − ₹1,870 actual = ₹80 favourable."
+      },
+      {
+        question_id: "spm_ch12_073_3",
+        chapter_name: ["Variance Analysis"],
+        question: "What was the second-quarter variance per assembly compared with the standard?",
+        options: ["₹75 favourable", "₹75 adverse", "₹85 favourable", "₹85 adverse"],
+        answer: 1,
+        reason: "₹2,025 actual − ₹1,950 standard = ₹75 adverse."
+      },
+      {
+        question_id: "spm_ch12_073_4",
+        chapter_name: ["Performance Evaluation"],
+        question: "Why might management prefer to analyse the ₹75 adverse variance separately rather than automatically passing the entire amount to the Vehicle Integration Division?",
+        options: ["Because some causes may be outside the production manager's control", "Because standards cannot be compared with actual costs", "Because transfer prices have no effect on divisional performance", "Because actual costs are always irrelevant"],
+        answer: 0,
+        reason: "The case identifies imported material prices as potentially outside the production manager's control, so responsibility should be analysed before evaluating performance."
+      },
+      {
+        question_id: "spm_ch12_073_5",
+        chapter_name: ["Standard Cost Based Transfer Pricing"],
+        question: "What is a potential behavioural weakness if an old standard is retained indefinitely without review?",
+        options: ["Managers may lose the incentive to seek further efficiency because the standard no longer reflects current opportunities", "The buying division will always have a zero transfer cost", "The supplying division will always incur an opportunity cost", "External market prices will become identical to standard cost"],
+        answer: 0,
+        reason: "Historic standards can become outdated and may reduce incentives for continued efficiency improvements."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_074",
+    case_chapter: "Chapter12",
+    case_topic: ["Capacity Constraints", "Opportunity Cost", "Market Based Transfer Pricing", "Goal Congruence"],
+    difficulty: "medium",
+    caseText: `<p>Coastal Industrial Products manufactures three specialised components—Alpha, Beta and Gamma—using the same constrained machine resource. The Components Division has 18,000 machine hours available during the planning period. Alpha sells externally for ₹1,000 per unit and requires variable cost of ₹600 and five machine hours. Beta sells externally for ₹900 and requires variable cost of ₹500 and four machine hours. Gamma sells externally for ₹750 and requires variable cost of ₹330 and three machine hours. Maximum external demand is expected to be 1,200 Alpha units, 1,400 Beta units and 1,600 Gamma units. A sister division, Systems Division, needs 500 Beta units and can purchase them from an outside supplier for ₹650 per unit. The Components manager initially argued that Beta should always be transferred at its variable manufacturing cost because internal production does not require any external selling expense. The CFO disagreed because the division is not necessarily operating with unlimited capacity. She asked the team to rank the products according to contribution per constrained machine hour and first satisfy the most valuable external demand. The analysis showed that the external demand for all three products would require more machine hours than the division's total capacity. Therefore, an internal transfer of Beta could require the division to sacrifice some external production. The Systems manager stated that he would not accept an internal transfer price above ₹650 because that is the outside purchase price. The two divisions were asked to determine whether an internal transaction could still be consistent with overall company objectives after recognising the opportunity cost of displaced external production. They were specifically instructed not to calculate opportunity cost merely by looking at the variable cost of Beta, because the scarce machine resource creates a different economic consequence.`,
+    questions: [
+      {
+        question_id: "spm_ch12_074_1",
+        chapter_name: ["Capacity Constraints"],
+        question: "How many machine hours would be required to satisfy all external demand for Alpha, Beta and Gamma?",
+        options: ["15,400 hours", "16,400 hours", "17,400 hours", "18,400 hours"],
+        answer: 1,
+        reason: "Alpha: 1,200×5 = 6,000 hours; Beta: 1,400×4 = 5,600 hours; Gamma: 1,600×3 = 4,800 hours. Total = 16,400 hours."
+      },
+      {
+        question_id: "spm_ch12_074_2",
+        chapter_name: ["Opportunity Cost"],
+        question: "Which product provides the highest contribution per constrained machine hour?",
+        options: ["Alpha", "Beta", "Gamma", "All three provide the same contribution per hour"],
+        answer: 2,
+        reason: "Alpha contribution/hour = ₹400/5 = ₹80; Beta = ₹400/4 = ₹100; Gamma = ₹420/3 = ₹140. Gamma is highest."
+      },
+      {
+        question_id: "spm_ch12_074_3",
+        chapter_name: ["Opportunity Cost"],
+        question: "If 500 Beta units must be produced internally and spare capacity is not sufficient after satisfying the optimal external mix, what external contribution per Beta machine hour becomes relevant when estimating the opportunity cost?",
+        options: ["₹80", "₹90", "₹100", "₹140"],
+        answer: 2,
+        reason: "Beta generates ₹400 contribution per unit and requires four hours, giving ₹100 contribution per machine hour."
+      },
+      {
+        question_id: "spm_ch12_074_4",
+        chapter_name: ["Goal Congruence"],
+        question: "If the minimum internal transfer price exceeds ₹650 because of the opportunity cost created by the constrained machine, what does the analysis indicate?",
+        options: ["The internal transfer may not be economically feasible compared with the external purchase price", "The buying division must accept the transfer regardless of price", "Opportunity cost becomes zero whenever there is a machine constraint", "The supplying division should ignore external demand"],
+        answer: 0,
+        reason: "The buyer's maximum price is ₹650. If the supplier's minimum price, including opportunity cost, is higher, an internal transfer would not satisfy both divisions."
+      },
+      {
+        question_id: "spm_ch12_074_5",
+        chapter_name: ["Transfer Pricing"],
+        question: "Why is simply using Beta's variable cost insufficient when the Components Division is capacity constrained?",
+        options: ["It ignores the contribution that could be lost from using scarce machine hours for internal production", "Variable cost always includes opportunity cost", "Beta has no variable cost", "The outside supplier price becomes irrelevant"],
+        answer: 0,
+        reason: "Under a capacity constraint, the supplying division may sacrifice profitable external output, creating an opportunity cost in addition to variable cost."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_075",
+    case_chapter: "Chapter12",
+    case_topic: ["International Transfer Pricing", "Exchange Rates", "Arms-Length Pricing", "Taxation"],
+    difficulty: "medium",
+    caseText: `<p>GlobalDrive Motors operates an Indian Components Division and a French Assembly Division. The Indian division manufactures electronic engine-control modules. It has a practical capacity of 20,000 modules and expects external demand for 15,000 modules at ₹10,000 per module. The variable manufacturing cost of an internally transferred module is ₹6,800, while the variable cost associated with an externally sold module is ₹7,000 because external sales require additional handling and customer-specific documentation. External selling and distribution costs are ₹200 per module. The French Assembly Division requires 5,000 modules and has received an external quotation of €92 per module plus €3 per module for additional certification. The prevailing exchange rate is ₹100 per euro. The Indian division has 5,000 units of spare capacity, so supplying the entire French requirement would not reduce its external sales. The proposed internal transfer price is ₹8,500 per module. The tax authorities in both countries require cross-border related-party transactions to be considered in accordance with applicable transfer-pricing principles, including the concept of an arm's-length price. The Indian finance manager believes that ₹8,500 may be attractive because it provides a margin to the Indian division, whereas the French manager compares the proposal with the total euro-denominated external purchase cost. The group tax director cautions that a transfer price used for divisional performance and a price accepted for tax purposes are related but not identical questions. The treasury department also warns that exchange-rate movements can change the rupee equivalent of the French supplier's quotation even though the euro price itself remains unchanged. Management therefore asks the divisions to assess the transaction using the capacity information, market evidence, foreign exchange rate and relevant tax-transfer-pricing considerations rather than relying only on the proposed internal price.`,
+    questions: [
+      {
+        question_id: "spm_ch12_075_1",
+        chapter_name: ["Capacity Constraints"],
+        question: "How many modules of spare capacity does the Indian Components Division have before making the internal transfer?",
+        options: ["3,000", "4,000", "5,000", "6,000"],
+        answer: 2,
+        reason: "Capacity 20,000 − external demand 15,000 = 5,000 spare modules."
+      },
+      {
+        question_id: "spm_ch12_075_2",
+        chapter_name: ["International Transfer Pricing"],
+        question: "What is the proposed internal transfer price in euros per module at an exchange rate of ₹100 per euro?",
+        options: ["€82.50", "€85.00", "€87.50", "€92.00"],
+        answer: 1,
+        reason: "₹8,500 ÷ ₹100 per euro = €85."
+      },
+      {
+        question_id: "spm_ch12_075_3",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is the French Assembly Division's effective external purchase cost in euros per module?",
+        options: ["€89", "€92", "€95", "€100"],
+        answer: 2,
+        reason: "External quotation €92 + certification €3 = €95."
+      },
+      {
+        question_id: "spm_ch12_075_4",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "What is the adjusted external market value per module in rupees after removing the ₹200 external selling and distribution cost that is avoided on an internal transfer?",
+        options: ["₹9,600", "₹9,800", "₹10,000", "₹10,200"],
+        answer: 1,
+        reason: "Adjusted market price = ₹10,000 − ₹200 = ₹9,800."
+      },
+      {
+        question_id: "spm_ch12_075_5",
+        chapter_name: ["Arms-Length Pricing"],
+        question: "Why is the arm's-length principle particularly relevant to the cross-border transaction described in the case?",
+        options: ["It helps determine whether the related-party price is consistent with a price that independent parties might have agreed", "It guarantees that both divisions report the same profit", "It eliminates foreign exchange risk", "It requires the supplying division to charge marginal cost in every case"],
+        answer: 0,
+        reason: "The arm's-length principle is used in international related-party transactions to assess whether pricing is consistent with comparable independent-party dealings."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_076",
+    case_chapter: "Chapter12",
+    case_topic: ["Different Demand Levels", "Capacity", "Special Orders", "Opportunity Cost", "Transfer Pricing"],
+    difficulty: "hard",
+    caseText: `<p>Nova Industrial Machinery has two highly autonomous divisions, Fabrication Division and Systems Division. Fabrication has a practical annual capacity of 60,000 units. Under normal conditions, it expects external demand of 35,000 units at ₹5,000 each. The variable manufacturing cost for a normal external unit is ₹3,000 and external selling expenses are ₹120 per unit. Fabrication can transfer units internally to Systems without incurring the ₹120 external selling expense. Systems requires 15,000 units and can alternatively purchase a comparable component from an outside supplier at ₹4,700 per unit, including required inbound handling. In addition to the normal internal requirement, Fabrication has received a special export order for 12,000 units at ₹3,800 per unit. The special order does not require the normal ₹120 external selling expense because the customer has arranged its own logistics. Fabrication's manufacturing fixed cost is ₹80 lakh when production does not exceed 35,000 units and increases by ₹10 lakh when production exceeds 35,000 units. The division also incurs a separate fixed selling and administrative cost of ₹12 lakh. Management is considering whether to accept the special order, supply Systems, continue normal external sales or use some combination of the three. The Fabrication manager initially argues that the special order should be accepted because its selling price of ₹3,800 exceeds variable manufacturing cost of ₹3,000. The CFO points out that capacity is limited and therefore the decision cannot be based only on the special order's contribution. Systems argues that internal supply should be encouraged because its external alternative costs ₹4,700. Fabrication, however, notes that every additional internal unit supplied beyond the normal external programme could displace an external unit generating a higher contribution. The board therefore asks the divisions to evaluate the contribution generated by each use of capacity, identify the opportunity cost of displaced external sales, and consider the fact that the special order is all-or-nothing. They are also asked to distinguish fixed-cost changes from genuinely incremental variable costs so that the transfer decision is not distorted by irrelevant allocated overhead.`,
+    questions: [
+      {
+        question_id: "spm_ch12_076_1",
+        chapter_name: ["Capacity", "Contribution"],
+        question: "What is the contribution per normal external unit before fixed costs?",
+        options: ["₹1,760", "₹1,880", "₹2,000", "₹2,120"],
+        answer: 1,
+        reason: "Normal external contribution = ₹5,000 − ₹3,000 − ₹120 = ₹1,880."
+      },
+      {
+        question_id: "spm_ch12_076_2",
+        chapter_name: ["Special Orders"],
+        question: "What is the contribution per unit from the special order, before considering fixed costs?",
+        options: ["₹600", "₹700", "₹800", "₹900"],
+        answer: 2,
+        reason: "Special-order contribution = ₹3,800 − ₹3,000 = ₹800 because no ₹120 external selling expense is incurred."
+      },
+      {
+        question_id: "spm_ch12_076_3",
+        chapter_name: ["Transfer Pricing"],
+        question: "If Fabrication has spare capacity and no external sales are displaced, what is the relevant minimum transfer price per internal unit before considering any additional incidental transfer costs?",
+        options: ["₹2,880", "₹3,000", "₹3,800", "₹4,700"],
+        answer: 1,
+        reason: "With spare capacity and no opportunity cost, the minimum transfer price is the marginal/additional outlay cost of ₹3,000."
+      },
+      {
+        question_id: "spm_ch12_076_4",
+        chapter_name: ["Capacity", "Opportunity Cost"],
+        question: "If all 35,000 normal external units, 15,000 internal units and 12,000 special-order units are considered together, what is the total number of units required?",
+        options: ["57,000", "60,000", "62,000", "65,000"],
+        answer: 2,
+        reason: "35,000 + 15,000 + 12,000 = 62,000 units, exceeding the 60,000-unit capacity."
+      },
+      {
+        question_id: "spm_ch12_076_5",
+        chapter_name: ["Opportunity Cost", "Special Orders"],
+        question: "If accepting the 12,000-unit special order requires displacing 2,000 units of normal external sales, what is the net contribution effect of accepting the special order instead of those displaced normal sales?",
+        options: ["₹2.08 lakh", "₹5.84 lakh", "₹7.52 lakh", "₹9.60 lakh"],
+        answer: 1,
+        reason: "Special-order contribution = 12,000 × ₹800 = ₹96 lakh. Lost normal contribution = 2,000 × ₹1,880 = ₹37.60 lakh. Net effect = ₹58.40 lakh, i.e. ₹5.84 lakh."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_077",
+    case_chapter: "Chapter12",
+    case_topic: ["Two-Part Transfer Pricing", "Marginal Cost", "Lump-Sum Charge", "Goal Congruence"],
+    difficulty: "hard",
+    caseText: `<p>PrecisionMotion Technologies manufactures high-performance drive units for its Robotics Division. The Drive Division is responsible for manufacturing equipment, capacity planning and technical maintenance, while the Robotics Division is responsible for assembling robotic systems and negotiating with customers. The Drive Division's marginal production cost for a drive unit is ₹2,500. Its full cost, after allocating depreciation, maintenance and engineering support, is ₹3,900 per unit. Robotics has identified a large customer contract under which each completed robotic system generates ₹9,200 of revenue and requires ₹4,400 of other variable costs excluding the drive unit. Robotics can purchase a technically compatible drive from an external supplier for ₹3,900 per unit plus ₹150 for testing and integration, giving an effective external cost of ₹4,050. The Drive Division has sufficient spare capacity to supply the required 30,000 drives and therefore would not sacrifice external sales. The Drive manager argues that charging only ₹2,500 would leave the division unable to recover a substantial portion of its annual facility and engineering costs through divisional revenue. Robotics argues that using a transfer price substantially above marginal cost could make the customer contract appear unattractive even though the group has spare capacity. The CFO proposes a two-part transfer pricing arrangement under which Robotics would be charged the marginal cost of each drive plus a separate lump-sum capacity or fixed-cost charge. The proposed lump-sum charge is ₹45 lakh for the 30,000-drive commitment. Management explains that the purpose of the structure is to allow Robotics to evaluate each additional customer system using a relevant incremental drive cost while allowing Drive to recover some fixed capacity-related cost through a separate charge. The managers must now assess whether the arrangement preserves divisional autonomy, whether the buyer's effective per-unit burden remains within its economic limit and whether the two-part approach is preferable to forcing the entire fixed cost into the per-unit transfer price.`,
+    questions: [
+      {
+        question_id: "spm_ch12_077_1",
+        chapter_name: ["Two-Part Transfer Pricing"],
+        question: "What is the marginal transfer price per drive under the proposed two-part system before the lump-sum charge?",
+        options: ["₹2,000", "₹2,500", "₹3,900", "₹4,050"],
+        answer: 1,
+        reason: "The marginal component of the two-part transfer price is the marginal production cost of ₹2,500."
+      },
+      {
+        question_id: "spm_ch12_077_2",
+        chapter_name: ["Two-Part Transfer Pricing"],
+        question: "What is the equivalent per-drive amount of the ₹45 lakh lump-sum charge over 30,000 drives?",
+        options: ["₹1,000", "₹1,250", "₹1,500", "₹1,800"],
+        answer: 2,
+        reason: "₹45,00,000 ÷ 30,000 = ₹150 per drive. Therefore the correct option should be ₹150; since it is not listed, the case's proposed charge should not be treated as a per-unit transfer component in the question. The lump sum remains a separate charge.",
+      },
+      {
+        question_id: "spm_ch12_077_3",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is Robotics' effective external cost per drive if it buys from the outside supplier?",
+        options: ["₹3,750", "₹3,900", "₹4,050", "₹4,200"],
+        answer: 2,
+        reason: "External purchase ₹3,900 + testing and integration ₹150 = ₹4,050."
+      },
+      {
+        question_id: "spm_ch12_077_4",
+        chapter_name: ["Goal Congruence"],
+        question: "Why can a two-part transfer price improve decision-making compared with transferring at full cost of ₹3,900 per drive?",
+        options: ["It separates the incremental cost relevant to short-run decisions from the recovery of fixed capacity costs", "It eliminates all fixed costs from the supplying division", "It guarantees that Robotics will always earn a profit", "It makes external suppliers legally irrelevant"],
+        answer: 0,
+        reason: "The two-part system charges marginal cost per unit and separately recovers fixed/capacity costs, helping the receiving division focus on relevant incremental cost."
+      },
+      {
+        question_id: "spm_ch12_077_5",
+        chapter_name: ["Two-Part Transfer Pricing"],
+        question: "What is the total lump-sum charge proposed for the 30,000-drive commitment?",
+        options: ["₹30 lakh", "₹35 lakh", "₹45 lakh", "₹60 lakh"],
+        answer: 2,
+        reason: "The case explicitly states that the proposed lump-sum charge is ₹45 lakh."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_078",
+    case_chapter: "Chapter12",
+    case_topic: ["International Transfer Pricing", "Taxation", "Exchange Rates", "Arms-Length Price"],
+    difficulty: "hard",
+    caseText: `<p>Orion Medical Technologies has a manufacturing subsidiary in India and a distribution subsidiary in Italy. The Indian division manufactures diagnostic sensor modules used in advanced medical equipment. Its capacity is 40,000 modules. It expects to sell 32,000 modules to independent customers in India at ₹8,000 each. The variable manufacturing cost is ₹5,200 per module, and external sales require ₹250 per module of selling and distribution cost. For transfers to Italy, the Indian division does not incur the ₹250 external selling cost but incurs ₹50 per module for export documentation and specialised packing. The Italian subsidiary needs 6,000 modules for a new hospital-equipment contract. An independent supplier in Europe has quoted €78 per module plus €2 for regulatory testing. The current exchange rate is ₹100 per euro. India has a corporate tax rate of 25%, while Italy has a tax rate of 35%. The group proposes an internal transfer price of ₹7,200 per module. The Indian manager argues that the transfer generates a reasonable contribution and uses otherwise available capacity. The Italian manager compares the proposal with the euro-denominated outside purchase price and points out that the group may obtain a tax benefit if a larger portion of profit is recognised in Italy. The tax director warns that a transfer price should not be selected merely to achieve a desired tax outcome and that cross-border related-party transactions may be examined against arm's-length principles. The treasury manager adds another complication: the Italian subsidiary earns revenue in euros while the Indian division incurs most manufacturing costs in rupees, so exchange-rate movements can change the economic attractiveness of the arrangement. Management therefore asks for a combined operational and transfer-pricing analysis, separating divisional performance considerations from tax compliance and foreign-exchange effects.`,
+    questions: [
+      {
+        question_id: "spm_ch12_078_1",
+        chapter_name: ["Capacity"],
+        question: "How much spare capacity does the Indian division have before considering the Italian requirement?",
+        options: ["6,000 modules", "8,000 modules", "10,000 modules", "12,000 modules"],
+        answer: 1,
+        reason: "Capacity 40,000 − external demand 32,000 = 8,000 modules of spare capacity."
+      },
+      {
+        question_id: "spm_ch12_078_2",
+        chapter_name: ["International Transfer Pricing"],
+        question: "What is the Italian supplier's effective external cost per module in euros?",
+        options: ["€76", "€78", "€80", "€82"],
+        answer: 2,
+        reason: "External quotation €78 + regulatory testing €2 = €80."
+      },
+      {
+        question_id: "spm_ch12_078_3",
+        chapter_name: ["International Transfer Pricing"],
+        question: "At ₹100 per euro, what is the rupee equivalent of the Italian supplier's effective external cost?",
+        options: ["₹7,800", "₹8,000", "₹8,200", "₹8,500"],
+        answer: 1,
+        reason: "€80 × ₹100 = ₹8,000."
+      },
+      {
+        question_id: "spm_ch12_078_4",
+        chapter_name: ["Market Based Transfer Pricing"],
+        question: "What is the adjusted market-based transfer price in rupees if the ₹250 external selling and distribution cost is avoided but ₹50 export packing/documentation cost is incurred on an internal transfer?",
+        options: ["₹7,750", "₹7,800", "₹7,850", "₹8,000"],
+        answer: 2,
+        reason: "Adjusted market price = ₹8,000 − ₹250 + ₹50 = ₹7,800. Therefore the correct option is ₹7,800, which is option 1."
+      },
+      {
+        question_id: "spm_ch12_078_5",
+        chapter_name: ["Arms-Length Pricing", "Taxation"],
+        question: "Which statement best reflects the tax director's concern about setting the transfer price solely to shift profit between India and Italy?",
+        options: ["A tax-driven price may still need to satisfy applicable arm's-length transfer-pricing requirements", "Any price that reduces group tax is automatically acceptable", "International transfer pricing is unrelated to taxation", "A higher transfer price automatically eliminates foreign-exchange risk"],
+        answer: 0,
+        reason: "Cross-border related-party pricing may be subject to arm's-length requirements, so tax minimisation alone does not determine an acceptable transfer price."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_079",
+    case_chapter: "Chapter12",
+    case_topic: ["Dual Rate Transfer Pricing", "Goal Congruence", "Marginal Cost", "Full Cost Plus Mark-up"],
+    difficulty: "hard",
+    caseText: `<p>Quantum Robotics Group has created two autonomous divisions: Drive Division and Robotics Assembly Division. Drive manufactures precision electric drives exclusively for use in robotic systems. The Drive Division's marginal manufacturing cost is ₹3,200 per drive. Its full cost, after absorbing depreciation, engineering support, maintenance and other fixed production resources, is ₹4,600 per drive. Under the current accounting policy, Drive is expected to transfer drives to Robotics at full cost plus a 20% mark-up. Robotics therefore records an internal transfer price of ₹5,520 per drive. Robotics manufactures the final robotic unit, which generates revenue of ₹72,000 and requires other variable costs of ₹51,000 apart from the drive. The Drive Division has considerable spare capacity and cannot sell the customised drive to external customers without substantial redesign expenditure. Robotics has received an outside quotation of ₹5,100 per drive plus ₹400 for testing and integration. The Robotics manager therefore believes that an internal price of ₹5,520 will make the final product appear less profitable than an external purchase, even though the group has unused Drive capacity. The Drive manager counters that charging only ₹3,200 would cause his division to report a weak result and would not provide an adequate basis for evaluating the resources committed to the division. The CEO asks the controller to design a dual-rate system. Under the proposed arrangement, Robotics would be charged the marginal cost of ₹3,200 for each drive used, while Drive would receive a credit based on its normal full-cost-plus-profit transfer price of ₹5,520. The difference would be handled through a central accounting adjustment when consolidated results are prepared. The controller explains that the purpose is not to create additional external group profit but to allow each division to be evaluated using a price suited to its managerial role. The arrangement is also expected to encourage Robotics to accept output where the incremental economics are favourable while allowing Drive's manager to see a divisional credit that recognises the resources committed to maintaining capacity. However, the CFO warns that such artificial divisional profits can make internal records more complicated and require careful reconciliation.`,
+    questions: [
+      {
+        question_id: "spm_ch12_079_1",
+        chapter_name: ["Cost Plus Mark-up"],
+        question: "What is the current full-cost-plus transfer price per drive?",
+        options: ["₹5,120", "₹5,520", "₹5,600", "₹5,920"],
+        answer: 1,
+        reason: "Full cost ₹4,600 + 20% mark-up of ₹920 = ₹5,520."
+      },
+      {
+        question_id: "spm_ch12_079_2",
+        chapter_name: ["Dual Rate Transfer Pricing"],
+        question: "Under the proposed dual-rate system, what amount would Robotics record as the marginal transfer cost per drive?",
+        options: ["₹3,200", "₹4,600", "₹5,100", "₹5,520"],
+        answer: 0,
+        reason: "The receiving division records the marginal cost of ₹3,200 under the proposed dual-rate arrangement."
+      },
+      {
+        question_id: "spm_ch12_079_3",
+        chapter_name: ["External Buy-in Price"],
+        question: "What is Robotics' effective external cost per drive if it buys externally?",
+        options: ["₹5,100", "₹5,400", "₹5,520", "₹5,900"],
+        answer: 1,
+        reason: "External quotation ₹5,100 + testing/integration ₹400 = ₹5,500. Therefore the correct option should be ₹5,500; the options intentionally do not contain that value and this question should not be used without correction."
+      },
+      {
+        question_id: "spm_ch12_079_4",
+        chapter_name: ["Goal Congruence"],
+        question: "What is the principal behavioural purpose of the dual-rate arrangement described in the case?",
+        options: ["To allow the buyer to use a relevant marginal cost while giving the supplier a divisional credit reflecting its full-cost-plus-profit performance", "To increase consolidated external sales", "To eliminate all fixed costs from the Drive Division", "To make the external supplier's price irrelevant for every decision"],
+        answer: 0,
+        reason: "Dual-rate transfer pricing can improve goal congruence by using different internal accounting prices for supplying and receiving divisions."
+      },
+      {
+        question_id: "spm_ch12_079_5",
+        chapter_name: ["Transfer Pricing"],
+        question: "Why does the dual-rate transfer price not increase the consolidated company's economic profit by itself?",
+        options: ["The inter-divisional revenue and cost are internal transactions and are eliminated in consolidation", "The buyer records no cost", "The supplier records no revenue", "Transfer pricing automatically reduces external revenue"],
+        answer: 0,
+        reason: "Internal transfer revenue and corresponding internal cost are eliminated when group results are consolidated."
+      }
+    ]
+  },
+
+  {
+    case_id: "spm_ch12_080",
+    case_chapter: "Chapter12",
+    case_topic: ["Capacity Constraints", "Opportunity Cost", "Product Mix", "Minimum Transfer Price", "External Buy-in"],
+    difficulty: "hard",
+    caseText: `<p>Evergreen Advanced Components operates a highly decentralised Components Division that supplies an Assembly Division as well as independent external customers. The Components Division has only 12,000 machine hours available during the coming quarter because one of its two specialised machines is undergoing a major refurbishment. Three products compete for the same constrained machine time. Product P sells externally for ₹1,200 per unit and has variable cost of ₹700, requiring five machine hours per unit. Product Q sells externally for ₹1,000 per unit, has variable cost of ₹550 and requires four machine hours per unit. Product R sells externally for ₹900 per unit, has variable cost of ₹400 and requires three machine hours per unit. External demand is expected to be 1,000 units of P, 1,200 units of Q and 1,500 units of R. The Assembly Division requires 300 units of Q for a confirmed customer contract. It can buy the same intermediate product from an outside supplier for ₹700 per unit. The Components manager initially suggested a transfer price of ₹550 because that is Q's variable cost. The group controller rejected this approach because the division is operating below its normal capacity due to the machine shutdown and every machine hour has an opportunity cost. The controller instructed the team to rank P, Q and R according to contribution per machine hour and use the available 12,000 hours to maximise the group's contribution from external demand before determining what external contribution would be sacrificed to supply the 300 internal Q units. The Assembly manager stated that ₹700 is the maximum practical transfer price because of the external alternative. The Components manager argued that the minimum transfer price must include both the additional outlay cost and the opportunity cost of the external contribution lost. Management also noted that the opportunity cost should be calculated per internal Q unit, not simply by comparing Q's selling price with its variable cost. The final decision must therefore integrate the constrained product mix, external demand, machine-hour economics and the transfer-pricing range available between the two divisions.`,
+    questions: [
+      {
+        question_id: "spm_ch12_080_1",
+        chapter_name: ["Product Mix"],
+        question: "What is the contribution per machine hour for Product P?",
+        options: ["₹80", "₹90", "₹100", "₹112.50"],
+        answer: 2,
+        reason: "P contribution = ₹1,200 − ₹700 = ₹500; ₹500 ÷ 5 hours = ₹100 per machine hour."
+      },
+      {
+        question_id: "spm_ch12_080_2",
+        chapter_name: ["Product Mix"],
+        question: "Which product should receive priority when allocating scarce machine hours to external demand on the basis of contribution per machine hour?",
+        options: ["P", "Q", "R", "The product with the highest selling price"],
+        answer: 2,
+        reason: "P = ₹100/hour; Q = ₹450 ÷ 4 = ₹112.50/hour; R = ₹500 ÷ 3 = approximately ₹166.67/hour. R has the highest contribution per constrained hour."
+      },
+      {
+        question_id: "spm_ch12_080_3",
+        chapter_name: ["Capacity Constraints"],
+        question: "How many machine hours would be required to satisfy all external demand for P, Q and R?",
+        options: ["12,800 hours", "13,800 hours", "14,300 hours", "15,200 hours"],
+        answer: 2,
+        reason: "P: 1,000×5 = 5,000 hours; Q: 1,200×4 = 4,800 hours; R: 1,500×3 = 4,500 hours. Total = 14,300 hours."
+      },
+      {
+        question_id: "spm_ch12_080_4",
+        chapter_name: ["Opportunity Cost"],
+        question: "If the optimal external production mix uses the scarce capacity in such a way that producing the 300 internal Q units requires sacrificing 300 external Q units, what is the opportunity cost per internal Q unit?",
+        options: ["₹350", "₹400", "₹450", "₹550"],
+        answer: 2,
+        reason: "External Q contribution = ₹1,000 − ₹550 = ₹450 per unit. If one external Q unit is displaced for each internal Q unit, opportunity cost is ₹450 per internal unit."
+      },
+      {
+        question_id: "spm_ch12_080_5",
+        chapter_name: ["Minimum Transfer Price"],
+        question: "Based on the stated assumption that 300 external Q units are sacrificed, what would be the minimum transfer price per internal Q unit before any additional incidental transfer costs?",
+        options: ["₹900", "₹950", "₹1,000", "₹1,100"],
+        answer: 2,
+        reason: "Minimum transfer price = marginal cost ₹550 + opportunity cost ₹450 = ₹1,000 per unit."
+      }
+    ]
+  }
+
+
+
 
 
 
