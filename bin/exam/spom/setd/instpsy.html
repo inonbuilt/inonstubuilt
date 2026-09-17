@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Instructions</title>
+    <link rel="icon" href="../../../../fevicol.png">
+    <!-- Using a modern, tech-focused font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
+    </script>
+    <!-- Added add sense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
+    crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --bg-color: #05050a;
+            --panel-bg: rgba(15, 15, 25, 0.75);
+            --neon-blue: #00d2ff;
+            --neon-purple: #a200ff;
+            --neon-pink: #ff007f;
+            --neon-green: #00ff88;
+            --danger-red: #ff3366;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image:
+                radial-gradient(circle at 15% 50%, rgba(162, 0, 255, 0.15), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(0, 210, 255, 0.15), transparent 25%);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* --- HOLOGRAPHIC BORDER WRAPPER --- */
+        .holo-wrapper {
+            position: relative;
+            width: 90%;
+            max-width: 950px;
+            padding: 3px;
+            /* Creates the border width */
+            border-radius: 24px;
+            background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple), var(--neon-pink), var(--neon-green));
+            background-size: 300% 300%;
+            animation: holo-gradient 6s ease infinite;
+            box-shadow: 0 0 30px rgba(162, 0, 255, 0.2), inset 0 0 20px rgba(0, 210, 255, 0.5);
+            z-index: 10;
+        }
+
+        @keyframes holo-gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* --- GLASSMORPHISM INNER PANEL --- */
+        .glass-panel {
+            background: var(--panel-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 21px;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1.2fr 2fr;
+            gap: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Subtle grid background inside panel */
+        .glass-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+            z-index: -1;
+        }
+
+        /* --- LEFT COLUMN (AI ICON & PATTERN) --- */
+        .left-col {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .ai-icon-container {
+            width: 100%;
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* --- RIGHT COLUMN (HEADER, WARNING, NAV, BUTTONS) --- */
+        .right-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: linear-gradient(to right, #fff, var(--neon-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        /* --- CYBER WARNING BOX --- */
+        .warning-box {
+            background: rgba(255, 51, 102, 0.05);
+            border: 1px solid rgba(255, 51, 102, 0.5);
+            border-radius: 12px;
+            padding: 20px;
+            position: relative;
+            box-shadow: 0 0 20px rgba(255, 51, 102, 0.15);
+            margin-bottom: 30px;
+            animation: pulse-red 2s infinite;
+        }
+
+        @keyframes pulse-red {
+
+            0%,
+            100% {
+                box-shadow: 0 0 15px rgba(255, 51, 102, 0.1);
+            }
+
+            50% {
+                box-shadow: 0 0 25px rgba(255, 51, 102, 0.3);
+            }
+        }
+
+        .warning-box h3 {
+            color: var(--danger-red);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .warning-box p {
+            font-size: 0.9rem;
+            color: #ffbaba;
+            line-height: 1.5;
+        }
+
+        /* --- SECTIONS (PATTERN & NAV) --- */
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        ul.cyber-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        ul.cyber-list li {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.4;
+        }
+
+        ul.cyber-list.pattern li::before {
+            content: '▹';
+            color: var(--neon-blue);
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        /* Navigation Dots */
+        .nav-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+        }
+
+        .dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px currentColor;
+        }
+
+        .dot.green {
+            color: var(--neon-green);
+            background: var(--neon-green);
+        }
+
+        .dot.red {
+            color: var(--danger-red);
+            background: var(--danger-red);
+        }
+
+        .dot.purple {
+            color: var(--neon-purple);
+            background: var(--neon-purple);
+        }
+
+        .text-green {
+            color: var(--neon-green);
+        }
+
+        .text-red {
+            color: var(--danger-red);
+        }
+
+        .text-purple {
+            color: #d8b4fe;
+        }
+
+        /* --- BUTTONS --- */
+        .btn-container {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-back {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-back:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-start {
+            background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+            border: none;
+            color: white;
+            box-shadow: 0 0 15px rgba(162, 0, 255, 0.4);
+        }
+
+        .btn-start:hover {
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.6);
+            transform: translateY(-2px);
+            filter: brightness(1.2);
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .glass-panel {
+                grid-template-columns: 1fr;
+                padding: 25px;
+                gap: 25px;
+            }
+
+            .ai-icon-container {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+            .btn-container {
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="holo-wrapper">
+        <div class="glass-panel">
+
+            <!-- LEFT COLUMN -->
+            <div class="left-col">
+                <!-- HUGE AI SVG ICON -->
+                <div class="ai-icon-container">
+                    <svg viewBox="0 0 200 220" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <!-- Glow Filters -->
+                            <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="6" result="blur" />
+                                <feMerge>
+                                    <feMergeNode in="blur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                            <filter id="glow-pink" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="8" result="blur" />
+                                <feMerge>
+                                    <feMergeNode in="blur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+
+                            <!-- Gradients -->
+                            <linearGradient id="hex-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00d2ff" />
+                                <stop offset="50%" stop-color="#a200ff" />
+                                <stop offset="100%" stop-color="#ff007f" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Outer Hexagons -->
+                        <polygon points="100,5 190,55 190,165 100,215 10,165 10,55" fill="none" stroke="url(#hex-grad)"
+                            stroke-width="2" opacity="0.3" filter="url(#glow-pink)" />
+                        <polygon points="100,15 180,60 180,160 100,205 20,160 20,60" fill="none" stroke="url(#hex-grad)"
+                            stroke-width="4" filter="url(#glow-cyan)" />
+                        <polygon points="100,25 170,65 170,155 100,195 30,155 30,65" fill="none" stroke="#ffffff"
+                            stroke-width="1" opacity="0.5" />
+
+                        <!-- Geometric Brain/Circuit Lines inside -->
+                        <g stroke="#00d2ff" stroke-width="2" fill="none" filter="url(#glow-cyan)" opacity="0.8">
+                            <!-- Left Brain Hemisphere -->
+                            <path d="M100,45 C70,45 50,70 50,100 C50,120 60,140 80,150 L100,160" />
+                            <path d="M90,65 C75,70 65,85 65,100" />
+                            <path d="M50,100 L30,100" />
+                            <path d="M60,130 L40,140" />
+
+                            <!-- Right Brain Hemisphere -->
+                            <path d="M100,45 C130,45 150,70 150,100 C150,120 140,140 120,150 L100,160" />
+                            <path d="M110,65 C125,70 135,85 135,100" />
+                            <path d="M150,100 L170,100" />
+                            <path d="M140,130 L160,140" />
+
+                            <!-- Circuit Nodes (Dots) -->
+                            <circle cx="100" cy="45" r="4" fill="#ff007f" stroke="none" />
+                            <circle cx="50" cy="100" r="3" fill="#ff007f" stroke="none" />
+                            <circle cx="150" cy="100" r="3" fill="#ff007f" stroke="none" />
+                            <circle cx="80" cy="150" r="3" fill="#ff007f" stroke="none" />
+                            <circle cx="120" cy="150" r="3" fill="#ff007f" stroke="none" />
+                            <circle cx="100" cy="160" r="4" fill="#a200ff" stroke="none" />
+                        </g>
+
+                        <!-- Center AI Text Box -->
+                        <rect x="75" y="85" width="50" height="40" rx="8" fill="rgba(10, 10, 20, 0.8)" stroke="#ff007f"
+                            stroke-width="2" filter="url(#glow-pink)" />
+                        <text x="100" y="113" font-family="'Outfit', sans-serif" font-weight="800" font-size="24"
+                            fill="#ffffff" text-anchor="middle" filter="url(#glow-cyan)">AI</text>
+                    </svg>
+                </div>
+
+                <!-- PATTERN SECTION -->
+                <div>
+                    <h3 class="section-title">Pattern</h3>
+                    <ul class="cyber-list pattern">
+                        <li>25 Case Scenario MCQs (2 Marks each = 50 Marks).</li>
+                        <li>50 Individual MCQs (1 Mark each = 50 Marks).</li>
+                        <li>Total Questions: 75 Questions (100 Marks).</li>
+                        <li>Time Limit: 120 Minutes (2 Hours).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="right-col">
+                <div>
+                    <div class="header">
+                        <h1 id="selected-set-title">Psychology & Philosophy EXAMINATION</h1>
+                        <p>AI Integrated Mode Active</p>
+                    </div>
+
+                    <!-- WARNING BOX -->
+                    <div class="warning-box">
+                        <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                                </path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg> WARNING</h3>
+                        <p>DO NOT REFRESH (F5) OR CLOSE THIS TAB. Your exam progress will be permanently lost. This test
+                            is based on AI-generated questions; AI may occasionally make mistakes.</p>
+                    </div>
+
+                    <!-- NAVIGATION SECTION -->
+                    <div>
+                        <h3 class="section-title">Navigation</h3>
+                        <div class="nav-grid">
+                            <div class="nav-item">
+                                <div class="dot green"></div>
+                                <span class="text-main">Answered</span> <span class="text-green">green</span>
+                            </div>
+                            <div class="nav-item">
+                                <div class="dot red"></div>
+                                <span class="text-main">Not visited</span> <span class="text-red">red</span>
+                            </div>
+                            <div class="nav-item">
+                                <div class="dot purple"></div>
+                                <span class="text-main">Review</span> <span class="text-purple">purple</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="btn-container">
+                    <button type="button" class="btn btn-back" onclick="closeModal()">Back</button>
+                    <form action="./exampsy.html" method="GET" style="margin: 0;">
+                        <input type="hidden" name="subject" id="subject-hidden-input" value="SET A Examination">
+                        <button type="submit" class="btn btn-start">Accept & Start Exam</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Update the hidden input automatically so the right subject is passed
+        document.addEventListener("DOMContentLoaded", function () {
+            const titleText = document.getElementById('selected-set-title').innerText;
+            document.getElementById('subject-hidden-input').value = titleText;
+        });
+
+        // Back Button logic
+        function closeModal() {
+            window.location.href = "../espom.html";
+        }
+
+        // Anti-back button security
+        window.history.pushState(null, null, window.location.href);
+        window.onpopstate = function () {
+            window.history.go(1);
+        };
+    </script>
+</body>
+
+</html>
