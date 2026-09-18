@@ -1880,7 +1880,1831 @@ const caseStudies = [
     "Anchoring, confirmation bias, and loss aversion",
   ],
   answer: 3,
+},
+
+// Chapter 2
+
+{
+    case_id: "PSY_CH2_CS2",
+    difficulty: "Medium",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Rohan is a Chartered Accountant working in an audit firm.</strong> During an audit assignment, he carefully reviews financial statements, supporting documents, and calculations before finalising his working papers. He maintains proper records and rarely misses deadlines.</p>
+      <p>His senior observes that Rohan is highly organised and dependable. When a new accounting software is introduced, however, Rohan initially prefers the familiar system but gradually learns the new software after understanding its advantages.</p>
+      <p>Rohan's colleague, who is more open to new ideas, frequently suggests alternative methods for completing audit procedures. Rohan listens to these suggestions and adopts some of them when they improve accuracy and efficiency.</p>
+      <p>The firm's manager believes that understanding such differences in personality traits can help assign responsibilities and improve teamwork.</p>
+    `,
+
+    questions: [
+      {
+        question: "Which personality trait is most clearly demonstrated by Rohan's careful and organised approach to audit work?",
+        options: [
+          "Conscientiousness",
+          "Extraversion",
+          "Emotionality",
+          "Openness to Experience"
+        ],
+        answer: 0,
+        reason: "Conscientiousness involves organisation, diligence, precision, and reliability, all of which are demonstrated by Rohan."
+      },
+      {
+        question: "Rohan's colleague frequently suggesting alternative methods most directly demonstrates:",
+        options: [
+          "Openness to Experience",
+          "Psychopathy",
+          "Low Emotionality",
+          "Machiavellianism"
+        ],
+        answer: 0,
+        reason: "Openness to Experience is associated with inquisitiveness, creativity, unconventionality, and willingness to consider new ideas."
+      },
+      {
+        question: "The manager's approach of recognising different personality traits to assign responsibilities reflects the relevance of:",
+        options: [
+          "Trait Theory",
+          "Psychoanalytic Theory",
+          "Biological Theory",
+          "Psychosocial Theory"
+        ],
+        answer: 0,
+        reason: "Trait Theory explains personality through relatively enduring traits and can help understand behavioural patterns within professional settings."
+      },
+      {
+        question: "Rohan gradually accepting the new software after understanding its advantages suggests that personality traits:",
+        options: [
+          "Can never change under any circumstances",
+          "Can evolve and adapt to different situations",
+          "Are determined entirely by genetics",
+          "Are based only on unconscious conflicts"
+        ],
+        answer: 1,
+        reason: "The chapter explains that personality traits are relatively stable but personality can also evolve and adapt to different situations."
+      },
+      {
+        question: "Which professional benefit is most directly associated with recognising personality differences in this case?",
+        options: [
+          "Improved teamwork and use of individual strengths",
+          "Elimination of all workplace disagreements",
+          "Guaranteeing identical behaviour among employees",
+          "Removing the need for professional training"
+        ],
+        answer: 0,
+        reason: "Understanding personality differences can help organisations leverage individual strengths and improve teamwork."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS3",
+    difficulty: "Medium",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Meera, a Chartered Accountant, is advising a client who is experiencing serious financial difficulties.</strong> The client is anxious about the situation and repeatedly asks Meera to immediately make a major financial decision.</p>
+      <p>Instead of responding impulsively, Meera pauses, carefully reviews the available financial information, and listens to the client's concerns. She remains calm during the discussion and considers the long-term consequences of the available alternatives.</p>
+      <p>During her analysis, Meera notices that she initially prefers information supporting her first proposed solution. She deliberately searches for information that could contradict her initial view before making a recommendation.</p>
+      <p>She ultimately advises the client after considering the available evidence, ethical responsibilities, uncertainty, and long-term financial consequences.</p>
+    `,
+
+    questions: [
+      {
+        question: "Meera's deliberate pause before responding to the client's pressure demonstrates which benefit of mindfulness?",
+        options: [
+          "Reduced impulsivity and reactive decision-making",
+          "Increased stereotyping",
+          "Greater emotional dependence",
+          "Reduced tolerance for ambiguity"
+        ],
+        answer: 0,
+        reason: "Mindfulness encourages individuals to respond rather than react impulsively by pausing and making deliberate choices."
+      },
+      {
+        question: "Meera's ability to remain calm while dealing with the client's anxiety primarily demonstrates:",
+        options: [
+          "Improved emotional regulation",
+          "Machiavellianism",
+          "Stereotyping",
+          "Low conscientiousness"
+        ],
+        answer: 0,
+        reason: "Mindfulness promotes emotional regulation, helping individuals manage their emotions effectively."
+      },
+      {
+        question: "Meera deliberately searching for evidence that contradicts her initial view helps mitigate:",
+        options: [
+          "Confirmation bias",
+          "Aptitude",
+          "Extraversion",
+          "Temperament"
+        ],
+        answer: 0,
+        reason: "Confirmation bias involves seeking information that supports existing beliefs. Looking for contrary evidence helps reduce this bias."
+      },
+      {
+        question: "Meera considering the long-term financial consequences reflects which benefit of mindfulness?",
+        options: [
+          "Long-term perspective",
+          "Impulsive decision-making",
+          "Increased emotional reactivity",
+          "Stereotyping"
+        ],
+        answer: 0,
+        reason: "Mindfulness encourages consideration of the long-term consequences of decisions rather than focusing only on short-term gains."
+      },
+      {
+        question: "Meera's approach to the client's problem is most consistent with mindfulness because she:",
+        options: [
+          "Avoids all uncertainty before making any decision",
+          "Combines awareness, deliberate analysis, ethical principles, and consideration of consequences",
+          "Accepts the client's first suggestion without analysis",
+          "Makes decisions mainly according to emotional pressure"
+        ],
+        answer: 1,
+        reason: "Mindfulness can enhance attention, emotional regulation, ethical decision-making, mitigation of biases, tolerance for ambiguity, and long-term thinking."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS4",
+    difficulty: "Medium",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Arjun is a senior accountant leading a team responsible for preparing financial reports.</strong> He communicates frequently with team members, coordinates their work, and encourages them to share ideas about difficult accounting issues.</p>
+      <p>One team member prefers established methods and is initially reluctant to consider a new reporting approach. Another team member is highly cooperative and helps resolve disagreements between colleagues.</p>
+      <p>Arjun carefully reviews the team's work before submission and ensures that deadlines are met. When disagreements arise, he encourages discussion rather than immediately imposing his own decision.</p>
+      <p>The firm's partner believes that the different personality characteristics of team members can influence communication, collaboration, task management, and leadership.</p>
+    `,
+
+    questions: [
+      {
+        question: "Arjun's frequent communication, coordination, and encouragement of team members most closely demonstrate:",
+        options: [
+          "Extraversion",
+          "Psychopathy",
+          "Low Agreeableness",
+          "Neuroticism"
+        ],
+        answer: 0,
+        reason: "Extraversion is associated with sociability, talkativeness, assertiveness, communication, and coordination."
+      },
+      {
+        question: "The team member who helps resolve disagreements most clearly demonstrates:",
+        options: [
+          "Agreeableness",
+          "Machiavellianism",
+          "Narcissism",
+          "Low Conscientiousness"
+        ],
+        answer: 0,
+        reason: "Agreeableness is associated with patience, tolerance, cooperation, compromise, and amicable conflict resolution."
+      },
+      {
+        question: "Arjun carefully reviewing work and ensuring deadlines are met reflects:",
+        options: [
+          "Conscientiousness",
+          "Emotionality",
+          "Psychopathy",
+          "Narcissism"
+        ],
+        answer: 0,
+        reason: "Conscientiousness includes organisation, diligence, precision, reliability, and disciplined task management."
+      },
+      {
+        question: "The team member reluctant to consider a new reporting approach may demonstrate relatively lower:",
+        options: [
+          "Openness to Experience",
+          "Conscientiousness",
+          "Honesty-Humility",
+          "Extraversion"
+        ],
+        answer: 0,
+        reason: "Individuals lower in Openness to Experience may be more traditional and resistant to change."
+      },
+      {
+        question: "The case primarily illustrates that personality traits can influence:",
+        options: [
+          "Only individual academic performance",
+          "Communication, collaboration, task management, and leadership",
+          "Only financial calculations",
+          "Only compliance with tax laws"
+        ],
+        answer: 1,
+        reason: "The chapter explains that personality plays an important role in teamwork, client interactions, leadership, and decision-making."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS5",
+    difficulty: "Medium",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Neha is considering whether to recommend a new financial strategy to a client.</strong> The available information about future market conditions is incomplete, and there is no reliable probability for every possible outcome.</p>
+      <p>Neha knows that the client has a relatively low tolerance for financial risk. She therefore examines the available information, considers several possible future scenarios, and evaluates the potential consequences of each option.</p>
+      <p>A colleague argues that a recent successful investment proves that the same strategy will work again. Neha questions this conclusion because future market conditions may differ significantly from the previous situation.</p>
+      <p>She prepares alternative plans so that the client can respond if market conditions change unexpectedly.</p>
+    `,
+
+    questions: [
+      {
+        question: "The situation faced by Neha is an example of:",
+        options: [
+          "Decision-making under uncertainty",
+          "Decision-making with complete information",
+          "Purely routine decision-making",
+          "Personality assessment"
+        ],
+        answer: 0,
+        reason: "Decision-making under uncertainty occurs when choices must be made without complete or reliable information about outcomes or their probabilities."
+      },
+      {
+        question: "The client's low willingness to accept financial risk represents which factor influencing decision-making under uncertainty?",
+        options: [
+          "Risk tolerance",
+          "Openness to Experience",
+          "Aptitude",
+          "Stereotype"
+        ],
+        answer: 0,
+        reason: "Risk tolerance refers to the degree of risk an individual or organisation is willing to accept."
+      },
+      {
+        question: "The colleague's conclusion based heavily on one recent successful investment may reflect:",
+        options: [
+          "Cognitive bias",
+          "Honesty-Humility",
+          "Conscientiousness",
+          "Character"
+        ],
+        answer: 0,
+        reason: "The chapter explains that cognitive biases can cloud judgement and influence decisions under uncertainty."
+      },
+      {
+        question: "Neha's preparation of alternative plans is most closely related to:",
+        options: [
+          "Contingency planning",
+          "Stereotyping",
+          "Conformity",
+          "Emotional dependence"
+        ],
+        answer: 0,
+        reason: "Contingency planning is identified as a strategy for effective decision-making under uncertainty."
+      },
+      {
+        question: "Which approach would best describe Neha's overall decision-making process?",
+        options: [
+          "Ignoring uncertainty and relying entirely on intuition",
+          "Assessing available information, considering scenarios, and remaining adaptable",
+          "Choosing the option with the highest possible return without considering risk",
+          "Repeating a previous decision without reviewing current conditions"
+        ],
+        answer: 1,
+        reason: "Effective decision-making under uncertainty involves assessing available information, scenario planning, risk assessment, adaptability, and contingency planning."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS6",
+    difficulty: "Hard",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Vikram, a Chartered Accountant, is responsible for reviewing the financial reporting process of a rapidly growing company.</strong> He is highly confident in his own judgement and frequently reminds colleagues that his previous financial decisions have been successful. When another accountant raises concerns about a proposed accounting treatment, Vikram dismisses the concerns without examining the supporting evidence.</p>
+      <p>The finance director, however, is primarily interested in meeting short-term targets and privately encourages Vikram to adopt an aggressive approach that could improve the reported figures. The director also attempts to persuade Vikram that questioning the treatment could damage the company's relationship with important investors.</p>
+      <p>Vikram notices that he is personally attracted to the proposed treatment because it would make his own earlier recommendation appear successful. He initially searches for information supporting the treatment while overlooking information that raises doubts about it.</p>
+      <p>After reflecting on the situation, Vikram reviews the available evidence again, considers the ethical implications, searches for contrary information, and discusses the issue with independent colleagues. He recognises that confidence in his own judgement should not replace objective analysis and professional responsibility.</p>
+    `,
+
+    questions: [
+      {
+        question: "Vikram's initial tendency to search for supporting information while overlooking contradictory information most directly demonstrates:",
+        options: [
+          "Confirmation bias",
+          "Aptitude",
+          "Agreeableness",
+          "Temperament"
+        ],
+        answer: 0,
+        reason: "Confirmation bias occurs when individuals seek information that aligns with existing attitudes or beliefs and disregard conflicting information."
+      },
+      {
+        question: "The finance director's attempt to influence Vikram for personal or organisational gain is most closely associated with which Dark Triad trait described in the chapter?",
+        options: [
+          "Machiavellianism",
+          "Openness to Experience",
+          "Conscientiousness",
+          "Agreeableness"
+        ],
+        answer: 0,
+        reason: "Machiavellianism is associated with manipulation, deceit, strategic behaviour, and pursuit of personal gain."
+      },
+      {
+        question: "Vikram's decision to reconsider his initial view and deliberately examine contrary evidence demonstrates the application of:",
+        options: [
+          "Mindfulness in decision-making",
+          "Stereotyping",
+          "Biological Theory",
+          "Psychopathy"
+        ],
+        answer: 0,
+        reason: "Mindfulness promotes self-awareness and can help individuals recognise cognitive biases, consider alternative perspectives, and make more objective decisions."
+      },
+      {
+        question: "Which combination best explains the factors that initially distorted Vikram's decision?",
+        options: [
+          "Confirmation bias, personal motivation, and pressure toward short-term outcomes",
+          "High openness, high agreeableness, and long-term planning",
+          "Aptitude alone without any cognitive influence",
+          "Temperament alone without environmental influence"
+        ],
+        answer: 0,
+        reason: "The case combines confirmation bias, personal motivation, and external pressure, all of which can influence decision-making."
+      },
+      {
+        question: "Vikram's final approach most strongly supports which principle discussed in the chapter?",
+        options: [
+          "Professional decisions should be based on deliberate analysis while recognising biases and ethical responsibilities",
+          "Confidence is sufficient to establish the correctness of a financial decision",
+          "Previous success guarantees that the same decision will remain appropriate",
+          "Short-term financial outcomes should always override ethical considerations"
+        ],
+        answer: 0,
+        reason: "The chapter emphasises awareness of decision-making factors, mitigation of biases, ethical principles, and informed decision-making."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS7",
+    difficulty: "Hard",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>A large accounting firm forms a multidisciplinary team to advise a client on a complex financial restructuring.</strong> The team includes Ananya, who is highly conscientious and insists that every calculation and document be checked carefully; Bharat, who is highly extraverted and naturally takes responsibility for coordinating discussions; and Charu, who is highly agreeable and frequently helps team members resolve disagreements.</p>
+      <p>Dev, another member of the team, has a strong preference for established procedures and initially rejects an unconventional restructuring proposal. Ananya is concerned that the proposal may introduce errors, while Bharat believes the team should explore the idea further.</p>
+      <p>During one meeting, Dev strongly criticises Bharat's suggestion without reviewing all the available evidence. Charu attempts to reduce the conflict, while Bharat encourages the group to consider the proposal from different perspectives.</p>
+      <p>The engagement partner recognises that the team does not need everyone to have identical personalities. Instead, the partner seeks to use different strengths while ensuring that personality differences do not prevent objective evaluation of the restructuring proposal.</p>
+    `,
+
+    questions: [
+      {
+        question: "Which personality characteristic most directly explains Ananya's insistence on checking every calculation and document?",
+        options: [
+          "Conscientiousness",
+          "Extraversion",
+          "Narcissism",
+          "Emotionality"
+        ],
+        answer: 0,
+        reason: "Conscientiousness involves organisation, diligence, precision, reliability, and attention to detail."
+      },
+      {
+        question: "Bharat's role in coordinating discussions is most closely associated with:",
+        options: [
+          "Extraversion",
+          "Psychopathy",
+          "Low Openness",
+          "Machiavellianism"
+        ],
+        answer: 0,
+        reason: "Extraversion includes sociability, talkativeness, assertiveness, communication, and coordination."
+      },
+      {
+        question: "Charu's attempt to resolve disagreements demonstrates the relevance of:",
+        options: [
+          "Agreeableness",
+          "Narcissism",
+          "Psychopathy",
+          "Low Conscientiousness"
+        ],
+        answer: 0,
+        reason: "Agreeableness supports cooperation, compromise, patience, and amicable conflict resolution."
+      },
+      {
+        question: "Dev's preference for established procedures and resistance to an unconventional proposal is most consistent with relatively lower:",
+        options: [
+          "Openness to Experience",
+          "Conscientiousness",
+          "Honesty-Humility",
+          "Extraversion"
+        ],
+        answer: 0,
+        reason: "Lower Openness to Experience is associated with being more traditional and resistant to change."
+      },
+      {
+        question: "What is the most appropriate interpretation of the partner's approach?",
+        options: [
+          "Personality differences can provide complementary strengths when managed effectively",
+          "Only extraverted individuals can contribute effectively to teams",
+          "Agreeableness should always replace objective disagreement",
+          "Conscientiousness prevents the need for creative thinking"
+        ],
+        answer: 0,
+        reason: "The chapter explains that recognising and leveraging individual personality differences can enhance teamwork and allow professionals to contribute through their different strengths."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS8",
+    difficulty: "Hard",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Sameer has recently become a partner in an accounting firm.</strong> He is confident, highly sociable, and comfortable speaking with clients and employees. He frequently encourages his team to experiment with new approaches to solving complex financial problems.</p>
+      <p>However, Sameer sometimes becomes overly attached to praise from clients and colleagues. On one occasion, a senior employee questioned a decision made by Sameer. Instead of considering the criticism, Sameer argued that his experience and status within the firm made his judgement superior.</p>
+      <p>Another colleague privately suggests that Sameer's strong self-confidence can be useful in leadership, but warns that excessive concern with admiration and a sense of superiority may create problems if they lead to manipulation or disregard for others.</p>
+      <p>Sameer's mentor advises him to distinguish between useful confidence and potentially harmful personality tendencies. The mentor also encourages him to maintain ethical standards, listen to alternative viewpoints, and avoid allowing personal recognition to influence professional decisions.</p>
+    `,
+
+    questions: [
+      {
+        question: "Sameer's strong desire for praise and belief that he is superior to others most closely correspond to:",
+        options: [
+          "Narcissism",
+          "Agreeableness",
+          "Conscientiousness",
+          "Honesty-Humility"
+        ],
+        answer: 0,
+        reason: "Narcissism is characterised by grandiosity, entitlement, lack of empathy, and a constant need for admiration and validation."
+      },
+      {
+        question: "According to the case and the chapter, which aspect of Sameer's personality may initially be advantageous in leadership?",
+        options: [
+          "Assertiveness and self-confidence",
+          "Deceit and manipulation",
+          "Lack of remorse",
+          "Disregard for others"
+        ],
+        answer: 0,
+        reason: "The chapter notes that moderate narcissistic traits may sometimes involve assertiveness and self-confidence, which can be advantageous in leadership, provided they do not lead to manipulation or unethical behaviour."
+      },
+      {
+        question: "Sameer's mentor is primarily concerned that his personality tendency may become problematic when it:",
+        options: [
+          "Leads to manipulation or unethical behaviour",
+          "Encourages communication with clients",
+          "Supports confidence in leadership",
+          "Encourages consideration of new ideas"
+        ],
+        answer: 0,
+        reason: "The chapter specifically cautions that narcissistic tendencies should not lead to manipulation or unethical behaviour."
+      },
+      {
+        question: "Which HEXACO dimension would most directly provide a behavioural counterbalance to excessive self-interest and lack of modesty?",
+        options: [
+          "Honesty-Humility",
+          "Extraversion",
+          "Emotionality",
+          "Openness to Experience"
+        ],
+        answer: 0,
+        reason: "Honesty-Humility reflects sincerity, fairness, modesty, and lack of greed and is associated with trustworthy and ethical behaviour."
+      },
+      {
+        question: "Why is Sameer's mentor encouraging him to listen to alternative viewpoints?",
+        options: [
+          "To reduce the risk that personality tendencies and personal recognition distort professional judgement",
+          "To ensure every employee agrees with him",
+          "To increase his need for admiration",
+          "To replace ethical standards with personal preferences"
+        ],
+        answer: 0,
+        reason: "Awareness of personality tendencies and deliberate consideration of alternative perspectives can support objective and ethical professional decision-making."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS9",
+    difficulty: "Hard",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Priya is appointed to lead an advisory assignment involving a client whose business operates in a rapidly changing market.</strong> The client expects Priya to recommend a strategy even though reliable information about future market conditions is limited.</p>
+      <p>Priya's first reaction is to select the strategy with the highest possible return. Her colleague points out that such an approach focuses on the best possible outcome without adequately considering the possibility of unfavourable outcomes.</p>
+      <p>Another team member prefers a highly cautious approach and focuses primarily on avoiding the worst possible outcome. Priya realises that both approaches represent different ways of dealing with uncertainty.</p>
+      <p>The team gathers additional information, identifies several possible future scenarios, evaluates the risks and benefits, and discusses the client's tolerance for risk. Priya also recognises that her initial preference may have been influenced by her positive attitude toward the new market.</p>
+      <p>Before making the final recommendation, she asks the team to identify information that could challenge their preferred strategy and prepares an alternative plan in case market conditions change.</p>
+    `,
+
+    questions: [
+      {
+        question: "Priya's initial preference for the strategy offering the highest possible return most closely resembles which decision framework mentioned in the chapter?",
+        options: [
+          "Maximax",
+          "Maximin",
+          "Confirmation bias",
+          "Stereotyping"
+        ],
+        answer: 0,
+        reason: "Maximax is a decision framework that focuses on maximising the maximum possible outcome."
+      },
+      {
+        question: "The cautious team member's focus on avoiding the worst possible outcome is most closely associated with:",
+        options: [
+          "Maximin",
+          "Maximax",
+          "Extraversion",
+          "Openness to Experience"
+        ],
+        answer: 0,
+        reason: "Maximin is described as a framework involving minimising the maximum possible loss, reflecting a more cautious approach."
+      },
+      {
+        question: "Priya's positive attitude toward the new market may influence her decision because attitudes can:",
+        options: [
+          "Affect how alternatives are perceived and evaluated",
+          "Guarantee an objectively correct decision",
+          "Eliminate uncertainty",
+          "Prevent all cognitive biases"
+        ],
+        answer: 0,
+        reason: "Attitudes influence how individuals perceive and evaluate different options and can therefore affect decisions."
+      },
+      {
+        question: "The team's effort to identify information that challenges its preferred strategy is primarily intended to reduce:",
+        options: [
+          "Confirmation bias",
+          "Aptitude",
+          "Extraversion",
+          "Temperament"
+        ],
+        answer: 0,
+        reason: "Confirmation bias involves seeking supporting information and disregarding conflicting information. Deliberately examining contrary evidence can help mitigate it."
+      },
+      {
+        question: "Which combination best represents the team's final approach to decision-making under uncertainty?",
+        options: [
+          "Scenario planning, risk assessment, consideration of risk tolerance, and contingency planning",
+          "Reliance only on the maximum possible return",
+          "Ignoring incomplete information and following intuition",
+          "Selecting the first strategy proposed by the team leader"
+        ],
+        answer: 0,
+        reason: "The chapter identifies risk assessment, scenario planning, decision-support approaches, adaptability, and contingency planning as useful strategies under uncertainty."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS10",
+    difficulty: "Hard",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Aarav is a newly qualified Chartered Accountant working in a firm where senior professionals strongly influence junior employees.</strong> During his first year, Aarav observes that one senior accountant always carefully checks financial information and receives positive feedback from the partner for accurate work.</p>
+      <p>Over time, Aarav begins copying the senior accountant's methods. He observes how the senior handles complex assignments, communicates with clients, and responds when errors are discovered. Aarav also develops greater confidence in his ability to learn new regulations because his mentor repeatedly encourages him to take responsibility for challenging assignments.</p>
+      <p>Another junior employee, however, works in a team where mistakes are frequently criticised but good performance receives little recognition. That employee becomes reluctant to take responsibility for difficult assignments and tends to avoid unfamiliar tasks.</p>
+      <p>The firm's training manager argues that these differences cannot be understood only by looking at personality traits in isolation. The social environment, observed behaviour, reinforcement, beliefs, and confidence in one's own abilities also influence professional development.</p>
+    `,
+
+    questions: [
+      {
+        question: "Aarav's learning by observing and copying the senior accountant's behaviour most directly supports:",
+        options: [
+          "Social-Cognitive Theory",
+          "Biological Theory",
+          "Psychoanalytic Theory",
+          "Evolutionary Theory"
+        ],
+        answer: 0,
+        reason: "Social-Cognitive Theory emphasises learning through observing others, modelling behaviours, and cognitive processes."
+      },
+      {
+        question: "Aarav's increased confidence in his ability to learn new regulations represents:",
+        options: [
+          "Self-efficacy",
+          "Stereotyping",
+          "Psychopathy",
+          "Temperament"
+        ],
+        answer: 0,
+        reason: "The chapter uses self-efficacy to describe belief in one's ability to learn and adapt, which can encourage individuals to undertake complex projects."
+      },
+      {
+        question: "The senior accountant receiving positive feedback for accurate work illustrates the role of:",
+        options: [
+          "Environmental reinforcement",
+          "Genetic predisposition alone",
+          "Narcissism",
+          "Prejudice"
+        ],
+        answer: 0,
+        reason: "Behavioural Theory explains that behaviour can be learned and shaped by environmental reinforcement and consequences."
+      },
+      {
+        question: "The second junior employee avoiding difficult assignments after repeated criticism illustrates how:",
+        options: [
+          "Environmental consequences can influence learned behaviour",
+          "Personality is completely determined at birth",
+          "All individuals respond identically to criticism",
+          "Openness automatically increases under pressure"
+        ],
+        answer: 0,
+        reason: "Behavioural Theory emphasises the role of environmental stimuli, consequences, reinforcement, and conditioning in shaping behaviour."
+      },
+      {
+        question: "Why does the training manager refer to social environment, observed behaviour, reinforcement, beliefs, and confidence together?",
+        options: [
+          "Because professional development can involve interaction between individuals, cognition, behaviour, and the environment",
+          "Because personality has no relationship with behaviour",
+          "Because only biological factors determine personality",
+          "Because financial professionals cannot learn through observation"
+        ],
+        answer: 0,
+        reason: "Social-Cognitive Theory emphasises reciprocal interaction among individuals, their cognitive processes, and their social environment, while behavioural learning also highlights environmental reinforcement."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS11",
+    difficulty: "Medium",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Shreya is a Chartered Accountant working with a client who is worried about a possible financial loss.</strong> During the meeting, the client becomes nervous and repeatedly asks whether the situation can be controlled.</p>
+      <p>Shreya listens patiently and tries to understand the client's concerns before explaining the financial position. She provides the available information clearly and avoids making promises about outcomes that cannot be predicted.</p>
+      <p>Although Shreya remains calm, she also shows understanding of the client's emotional situation. Her colleague observes that this combination helps the client feel comfortable enough to provide additional financial information that had not initially been disclosed.</p>
+      <p>The partner explains that personality characteristics can influence how accountants establish trust and communicate with clients.</p>
+    `,
+
+    questions: [
+      {
+        question: "Which HEXACO dimension is most directly reflected in Shreya's trustworthy and ethical approach?",
+        options: [
+          "Honesty-Humility",
+          "Extraversion",
+          "Openness to Experience",
+          "Emotionality"
+        ],
+        answer: 0,
+        reason: "Honesty-Humility reflects sincerity, fairness, modesty, and lack of greed and is associated with trustworthy and ethical behaviour."
+      },
+      {
+        question: "Shreya's understanding of the client's financial anxiety is most closely related to:",
+        options: [
+          "Emotionality",
+          "Conscientiousness",
+          "Machiavellianism",
+          "Psychopathy"
+        ],
+        answer: 0,
+        reason: "High Emotionality can involve sentimentality and stronger emotional responses, which may support empathy and understanding of clients' concerns."
+      },
+      {
+        question: "The client's willingness to provide additional financial information most directly indicates the importance of:",
+        options: [
+          "Trust and credibility in client relationships",
+          "Aggressive competition",
+          "Risk-taking behaviour",
+          "Stereotyping"
+        ],
+        answer: 0,
+        reason: "The chapter explains that clients are more likely to provide accurate information when they perceive their accountant as honest and trustworthy."
+      },
+      {
+        question: "Why does Shreya avoid promising a particular outcome?",
+        options: [
+          "Because financial situations may involve uncertainty and unpredictable outcomes",
+          "Because accountants should never communicate with clients",
+          "Because emotionality prevents rational decision-making",
+          "Because openness requires avoiding financial analysis"
+        ],
+        answer: 0,
+        reason: "Financial decision-making can involve uncertainty and incomplete information, so professionals should acknowledge uncertainty rather than guarantee unpredictable outcomes."
+      },
+      {
+        question: "The case primarily demonstrates the relationship between personality and:",
+        options: [
+          "Client relationships",
+          "Genetic inheritance",
+          "Evolutionary adaptation",
+          "Academic selection"
+        ],
+        answer: 0,
+        reason: "The chapter specifically explains how personality traits influence client relationships and communication."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS12",
+    difficulty: "Medium",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Karan is asked to lead a small accounting team during a demanding reporting period.</strong> One team member frequently proposes creative ways of solving accounting problems, while another prefers established procedures and carefully checks every calculation.</p>
+      <p>Karan encourages both employees to contribute. He allows the creative employee to suggest alternative approaches while asking the detail-oriented employee to assess the accuracy and reliability of the proposed solutions.</p>
+      <p>When the two employees disagree, Karan asks them to explain their reasoning rather than allowing the disagreement to become personal. The team eventually combines the new approach with additional checking procedures.</p>
+      <p>The final process is more efficient while maintaining the required level of accuracy.</p>
+    `,
+
+    questions: [
+      {
+        question: "The employee who frequently proposes creative approaches most clearly demonstrates:",
+        options: [
+          "Openness to Experience",
+          "Psychopathy",
+          "Low Honesty-Humility",
+          "Low Conscientiousness"
+        ],
+        answer: 0,
+        reason: "Openness to Experience includes creativity, inquisitiveness, unconventionality, and willingness to explore new approaches."
+      },
+      {
+        question: "The employee who carefully checks every calculation most clearly demonstrates:",
+        options: [
+          "Conscientiousness",
+          "Narcissism",
+          "Emotionality",
+          "Machiavellianism"
+        ],
+        answer: 0,
+        reason: "Conscientiousness involves precision, diligence, organisation, reliability, and attention to detail."
+      },
+      {
+        question: "Karan's method of allowing both employees to contribute illustrates:",
+        options: [
+          "Leveraging different personality strengths",
+          "Eliminating personality differences",
+          "Avoiding all disagreement",
+          "Replacing professional judgement with personality testing"
+        ],
+        answer: 0,
+        reason: "Recognising and leveraging individual differences can enhance teamwork by allowing different strengths to complement one another."
+      },
+      {
+        question: "Karan asking employees to explain their reasoning before resolving the disagreement primarily supports:",
+        options: [
+          "Effective collaboration",
+          "Manipulation",
+          "Stereotyping",
+          "Impulsive decision-making"
+        ],
+        answer: 0,
+        reason: "Effective teamwork involves communication, cooperation, and constructive resolution of conflicts."
+      },
+      {
+        question: "The final solution combines innovation with accuracy because the team:",
+        options: [
+          "Used complementary personality strengths",
+          "Required everyone to have identical traits",
+          "Ignored the creative employee",
+          "Relied only on the team leader"
+        ],
+        answer: 0,
+        reason: "Different personality characteristics can contribute different strengths to teamwork when appropriately managed."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS13",
+    difficulty: "Medium",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Ravi is considering whether to specialise in financial analysis or taxation.</strong> He has always performed particularly well in mathematics and enjoys analysing numerical information. He also notices that he becomes highly engaged when solving complex numerical problems.</p>
+      <p>His mentor explains that career decisions can be influenced by an individual's aptitude, which refers to a natural ability or talent in a particular area.</p>
+      <p>Ravi therefore evaluates his strengths before deciding which additional skills he should develop. He understands that having an aptitude for a subject does not automatically determine his career, but it can influence the areas in which he chooses to invest time and effort.</p>
+      <p>He also considers his personal goals and motivation before making the final decision.</p>
+    `,
+
+    questions: [
+      {
+        question: "Ravi's strong natural ability in mathematics is an example of:",
+        options: [
+          "Aptitude",
+          "Prejudice",
+          "Stereotype",
+          "Emotionality"
+        ],
+        answer: 0,
+        reason: "Aptitude refers to an individual's natural ability or talent in a specific area."
+      },
+      {
+        question: "Ravi's aptitude may influence his career decision because aptitude can affect:",
+        options: [
+          "Career choices and skill development",
+          "Only interpersonal relationships",
+          "Only emotional reactions",
+          "Only ethical standards"
+        ],
+        answer: 0,
+        reason: "The chapter explains that aptitude can influence career choices, training, education, and professional growth."
+      },
+      {
+        question: "Ravi's decision to invest time in developing skills where he has natural ability illustrates the relationship between aptitude and:",
+        options: [
+          "Skill development",
+          "Stereotyping",
+          "Psychopathy",
+          "External validity"
+        ],
+        answer: 0,
+        reason: "Individuals are often more likely to invest effort in areas where they possess natural aptitude."
+      },
+      {
+        question: "Why does Ravi also consider his personal goals and motivation?",
+        options: [
+          "Because aptitude is one factor and motivation can influence effort and goal alignment",
+          "Because aptitude has no relevance to career decisions",
+          "Because motivation completely replaces aptitude",
+          "Because personality traits cannot affect professional decisions"
+        ],
+        answer: 0,
+        reason: "Decision-making is influenced by multiple factors. Motivation affects effort, persistence, implementation, goal alignment, and risk tolerance."
+      },
+      {
+        question: "Which statement best reflects the case?",
+        options: [
+          "Aptitude can influence professional decisions without automatically determining them",
+          "Aptitude guarantees professional success",
+          "Aptitude determines every career decision",
+          "Aptitude is the same as motivation"
+        ],
+        answer: 0,
+        reason: "The chapter presents aptitude as a factor that can influence career and professional decisions, not as an automatic determinant."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS14",
+    difficulty: "Medium",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Divya manages an accounting assignment with a strict deadline.</strong> She initially feels overwhelmed by the amount of work involved. Instead of allowing the pressure to reduce her focus, she divides the assignment into smaller tasks and concentrates on completing each task carefully.</p>
+      <p>Divya remains focused even when several colleagues are discussing unrelated matters around her. She also takes a short pause before responding to a difficult issue raised by the client.</p>
+      <p>Her approach allows her to detect an error in a financial statement that she might otherwise have missed. She then reviews the relevant evidence before communicating her conclusion to the client.</p>
+    `,
+
+    questions: [
+      {
+        question: "Divya's ability to remain focused despite distractions illustrates which benefit of mindfulness?",
+        options: [
+          "Enhanced attention and focus",
+          "Increased impulsivity",
+          "Greater stereotyping",
+          "Reduced ethical awareness"
+        ],
+        answer: 0,
+        reason: "Mindfulness cultivates the ability to stay present and focused, which can improve analysis and decision-making."
+      },
+      {
+        question: "The short pause before responding to the client demonstrates:",
+        options: [
+          "Reduced reactive decision-making",
+          "Increased prejudice",
+          "Machiavellian behaviour",
+          "Low conscientiousness"
+        ],
+        answer: 0,
+        reason: "Mindfulness encourages individuals to pause, reflect, and respond deliberately rather than react impulsively."
+      },
+      {
+        question: "Detecting the financial statement error is most directly connected with:",
+        options: [
+          "Enhanced attention to financial details",
+          "Narcissism",
+          "Stereotyping",
+          "Low Emotionality"
+        ],
+        answer: 0,
+        reason: "The chapter explains that mindfulness can improve attention and help accountants detect errors in financial information."
+      },
+      {
+        question: "Divya reviewing the evidence before communicating her conclusion primarily reflects:",
+        options: [
+          "Deliberate decision-making",
+          "Impulsive decision-making",
+          "Prejudice",
+          "Unconscious manipulation"
+        ],
+        answer: 0,
+        reason: "Mindfulness supports deliberate choices by encouraging individuals to pause and assess situations carefully."
+      },
+      {
+        question: "Which statement best describes mindfulness in this case?",
+        options: [
+          "It helps Divya maintain focus and make more deliberate decisions under pressure",
+          "It guarantees that Divya will never make an error",
+          "It removes all uncertainty from financial decisions",
+          "It makes financial analysis unnecessary"
+        ],
+        answer: 0,
+        reason: "Mindfulness can improve attention, reduce impulsivity, and support deliberate decision-making, but it does not guarantee error-free decisions."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS15",
+    difficulty: "Medium",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Manish is a manager in an accounting firm.</strong> He notices that two employees react differently when their work is reviewed. One employee welcomes feedback and treats it as an opportunity to improve, while the other immediately assumes that the review is a personal criticism.</p>
+      <p>Manish explains that people's attitudes can influence how they perceive situations and evaluate available options. He also observes that past experiences and beliefs may contribute to these differences.</p>
+      <p>To improve decision-making, Manish asks the team to distinguish facts from personal assumptions and to consider information that conflicts with their initial views.</p>
+      <p>He believes that developing self-awareness can help employees recognise how their attitudes influence professional decisions.</p>
+    `,
+
+    questions: [
+      {
+        question: "According to the case, attitudes are shaped partly by:",
+        options: [
+          "Past experiences, beliefs, and values",
+          "Only genetic factors",
+          "Only financial information",
+          "Only professional qualifications"
+        ],
+        answer: 0,
+        reason: "The chapter states that attitudes are shaped by past experiences, beliefs, and values."
+      },
+      {
+        question: "The employee who interprets feedback as personal criticism demonstrates how attitudes can affect:",
+        options: [
+          "Perception and evaluation of situations",
+          "Genetic inheritance",
+          "Physical ability",
+          "Accounting standards"
+        ],
+        answer: 0,
+        reason: "Attitudes influence how individuals perceive and evaluate situations and options."
+      },
+      {
+        question: "Manish's instruction to consider information that conflicts with an initial view is intended to address:",
+        options: [
+          "Confirmation bias",
+          "Aptitude",
+          "Temperament",
+          "Extraversion"
+        ],
+        answer: 0,
+        reason: "Confirmation bias causes individuals to seek information supporting existing attitudes and disregard conflicting information."
+      },
+      {
+        question: "The recommendation to distinguish facts from personal assumptions primarily promotes:",
+        options: [
+          "More objective decision-making",
+          "Greater stereotyping",
+          "Impulsive choices",
+          "Manipulative behaviour"
+        ],
+        answer: 0,
+        reason: "Recognising personal assumptions and separating them from facts can help reduce biased evaluation and support informed decisions."
+      },
+      {
+        question: "Which factor is Manish specifically trying employees to become aware of?",
+        options: [
+          "The influence of attitude on decision-making",
+          "The genetic basis of personality",
+          "The Dark Triad only",
+          "Evolutionary adaptation"
+        ],
+        answer: 0,
+        reason: "The case focuses on how attitudes influence perception, evaluation, and ultimately decision-making."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS16",
+    difficulty: "Hard",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Ritika leads an audit team reviewing a company that has experienced rapid growth.</strong> The engagement involves several unusual transactions, and the available documentation is incomplete. Ritika's team includes one accountant who is extremely detail-oriented and another who is highly creative and frequently proposes unconventional interpretations.</p>
+      <p>The company's finance head strongly argues for an accounting treatment that would improve the reported financial position. He repeatedly tells the team that other companies in the industry use similar treatments and suggests that questioning the treatment could damage the professional relationship.</p>
+      <p>One team member accepts the finance head's argument immediately because he has worked with the company for several years and believes the management is trustworthy. Ritika notices that the team is becoming increasingly committed to its initial interpretation.</p>
+      <p>She asks the team to identify assumptions, examine contrary evidence, review the relevant information independently, and consider the ethical consequences of accepting the proposed treatment. She also reminds them that incomplete information makes the assignment a decision-making situation involving uncertainty.</p>
+      <p>After further analysis, the team develops an alternative treatment and documents the reasoning behind its conclusion.</p>
+    `,
+
+    questions: [
+      {
+        question: "The finance head's attempt to persuade the team by referring to the company's interests and professional relationship is most relevant to which decision-making influence?",
+        options: [
+          "Attitude and external influence",
+          "Aptitude alone",
+          "Openness to Experience",
+          "Biological predisposition"
+        ],
+        answer: 0,
+        reason: "The case demonstrates how attitudes, surrounding influences, and contextual pressures can affect evaluation and decision-making."
+      },
+      {
+        question: "The team becoming increasingly committed to its initial interpretation creates the greatest risk of:",
+        options: [
+          "Confirmation bias",
+          "Increased openness",
+          "Improved emotional regulation",
+          "Higher aptitude"
+        ],
+        answer: 0,
+        reason: "Confirmation bias can cause individuals to seek information supporting their existing view and overlook conflicting information."
+      },
+      {
+        question: "Ritika's instruction to examine contrary evidence is intended primarily to:",
+        options: [
+          "Mitigate cognitive bias",
+          "Increase conformity",
+          "Reduce conscientiousness",
+          "Encourage impulsive decisions"
+        ],
+        answer: 0,
+        reason: "The chapter explains that self-awareness and consideration of alternative or contrary evidence can help mitigate cognitive biases."
+      },
+      {
+        question: "Why does Ritika classify the assignment as involving decision-making under uncertainty?",
+        options: [
+          "The available information is incomplete and future consequences are not fully predictable",
+          "The team has complete information about every outcome",
+          "The team is making a routine decision with no ambiguity",
+          "The company's finance head has already determined the correct answer"
+        ],
+        answer: 0,
+        reason: "Decision-making under uncertainty occurs when decisions must be made without complete or reliable information about potential outcomes or their probabilities."
+      },
+      {
+        question: "Which combination best represents Ritika's final approach?",
+        options: [
+          "Critical evaluation, consideration of contrary evidence, ethical analysis, and recognition of uncertainty",
+          "Reliance on management's preference and existing relationships",
+          "Immediate acceptance of the most favourable accounting treatment",
+          "Following the team's initial interpretation without further investigation"
+        ],
+        answer: 0,
+        reason: "The chapter supports informed and adaptable decision-making through analysis, awareness of cognitive biases, ethical considerations, and recognition of uncertainty."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS17",
+    difficulty: "Hard",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Aditya is appointed to manage a new financial advisory team.</strong> He is highly confident and enjoys being recognised for his achievements. He communicates effectively with clients and is comfortable taking responsibility for important decisions.</p>
+      <p>However, during a major engagement, Aditya begins rejecting suggestions from junior employees because he believes his experience makes his judgement superior. He becomes particularly interested in receiving praise from the client and starts favouring proposals that are likely to enhance his personal reputation.</p>
+      <p>A senior partner notices this behaviour and explains that confidence and assertiveness can sometimes be useful in leadership, but excessive admiration-seeking and feelings of superiority can become problematic.</p>
+      <p>The partner asks Aditya to actively seek alternative viewpoints, consider the interests of clients and team members, and ensure that personal recognition does not override professional and ethical responsibilities.</p>
+    `,
+
+    questions: [
+      {
+        question: "Aditya's strong desire for recognition and belief in his superiority most closely correspond to:",
+        options: [
+          "Narcissism",
+          "Agreeableness",
+          "Conscientiousness",
+          "Honesty-Humility"
+        ],
+        answer: 0,
+        reason: "Narcissism includes grandiosity, entitlement, lack of empathy, and a need for admiration and validation."
+      },
+      {
+        question: "Which aspect of Aditya's behaviour may be useful in leadership when maintained at a moderate level?",
+        options: [
+          "Self-confidence and assertiveness",
+          "Manipulation and deceit",
+          "Lack of remorse",
+          "Disregard for others"
+        ],
+        answer: 0,
+        reason: "The chapter notes that moderate narcissistic tendencies may involve assertiveness and self-confidence, which can sometimes be advantageous in leadership."
+      },
+      {
+        question: "Why does favouring proposals that enhance personal reputation create an ethical concern?",
+        options: [
+          "Personal gain may interfere with objective professional judgement",
+          "Openness to Experience always creates unethical decisions",
+          "Conscientiousness requires personal recognition",
+          "Extraversion prevents ethical behaviour"
+        ],
+        answer: 0,
+        reason: "The Dark Triad discussion highlights the importance of preventing self-interest and manipulative tendencies from compromising ethical professional conduct."
+      },
+      {
+        question: "Which HEXACO dimension would be particularly relevant for encouraging sincerity, fairness, modesty, and reduced self-interest?",
+        options: [
+          "Honesty-Humility",
+          "Extraversion",
+          "Emotionality",
+          "Openness to Experience"
+        ],
+        answer: 0,
+        reason: "Honesty-Humility includes sincerity, fairness, modesty, and lack of greed."
+      },
+      {
+        question: "The partner's recommendation to actively seek alternative viewpoints is particularly useful because it may:",
+        options: [
+          "Reduce the possibility that personal biases and self-interest distort decisions",
+          "Ensure that Aditya's original opinion is always accepted",
+          "Increase dependence on client praise",
+          "Eliminate the need for professional standards"
+        ],
+        answer: 0,
+        reason: "Seeking alternative perspectives can help challenge personal assumptions and support more objective and ethical decision-making."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS18",
+    difficulty: "Hard",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Simran is supervising a team responsible for advising several clients on long-term financial planning.</strong> One client is highly anxious and repeatedly changes his instructions after reading alarming financial news. Another client is extremely confident and insists that a particular investment will continue to perform well because it has performed strongly in the recent past.</p>
+      <p>Simran notices that both clients are evaluating information through their existing attitudes. The anxious client focuses heavily on negative information, while the confident client focuses primarily on information supporting his preferred investment.</p>
+      <p>Rather than immediately accepting either client's position, Simran asks them to identify their assumptions, examine alternative information, consider different future scenarios, and evaluate the long-term consequences of their choices.</p>
+      <p>She also explains that financial markets involve uncertainty and that decision-makers should recognise their risk tolerance and avoid allowing emotional reactions or cognitive biases to dominate their decisions.</p>
+    `,
+
+    questions: [
+      {
+        question: "The confident client's tendency to focus mainly on information supporting his preferred investment most clearly demonstrates:",
+        options: [
+          "Confirmation bias",
+          "Aptitude",
+          "Agreeableness",
+          "Conscientiousness"
+        ],
+        answer: 0,
+        reason: "Confirmation bias involves seeking information that supports existing attitudes while disregarding conflicting information."
+      },
+      {
+        question: "The anxious client's strong reaction to alarming financial news illustrates the possible influence of:",
+        options: [
+          "Attitude and emotional responses",
+          "Aptitude alone",
+          "Honesty-Humility alone",
+          "Openness alone"
+        ],
+        answer: 0,
+        reason: "Attitudes can have an emotional component and may influence how individuals evaluate situations and make decisions."
+      },
+      {
+        question: "Simran's use of different future scenarios is an example of:",
+        options: [
+          "Scenario planning",
+          "Stereotyping",
+          "Manipulation",
+          "Conformity"
+        ],
+        answer: 0,
+        reason: "Scenario planning is identified as a useful strategy for effective decision-making under uncertainty."
+      },
+      {
+        question: "Simran asks clients to consider long-term consequences because mindfulness can encourage:",
+        options: [
+          "A long-term perspective",
+          "Impulsive decision-making",
+          "Greater emotional reactivity",
+          "Resistance to uncertainty"
+        ],
+        answer: 0,
+        reason: "Mindfulness encourages consideration of long-term consequences and sustainable financial strategies."
+      },
+      {
+        question: "Which combination best captures the decision-making challenges faced by the two clients?",
+        options: [
+          "Attitudes, emotional responses, cognitive bias, and uncertainty",
+          "Aptitude and biological factors only",
+          "Conscientiousness and openness only",
+          "Leadership style and teamwork only"
+        ],
+        answer: 0,
+        reason: "The case combines attitudes, emotional responses, confirmation bias, risk tolerance, and uncertainty, all of which can influence financial decision-making."
+      }
+    ]
+},
+{
+    case_id: "PSY_CH2_CS19",
+    difficulty: "Hard",
+    chapter: "Chapter 2",
+
+    caseText: `
+      <p><strong>Nikhil joins an accounting firm where the behaviour of senior professionals strongly influences junior staff.</strong> During his first few months, he observes a senior accountant who carefully follows professional procedures, openly discusses mistakes, and receives constructive feedback from the firm's partners.</p>
+      <p>Nikhil begins modelling this behaviour. He also becomes more willing to accept difficult assignments after his mentor repeatedly tells him that he is capable of learning new regulations and solving complex problems.</p>
+      <p>At the same time, another junior accountant works under a manager who publicly criticises mistakes but rarely recognises good performance. The employee becomes increasingly reluctant to take responsibility for unfamiliar assignments.</p>
+      <p>The firm's training director concludes that professional behaviour is influenced not only by individual characteristics but also by observation, cognitive beliefs, environmental reinforcement, and social interaction.</p>
+    `,
+
+    questions: [
+      {
+        question: "Nikhil's tendency to copy the senior accountant's professional behaviour most directly illustrates:",
+        options: [
+          "Social learning through observation",
+          "Genetic determination",
+          "Evolutionary adaptation",
+          "Psychoanalytic conflict"
+        ],
+        answer: 0,
+        reason: "Social-Cognitive Theory emphasises learning through observing others and modelling behaviour."
+      },
+      {
+        question: "Nikhil's growing belief that he can learn difficult regulations represents:",
+        options: [
+          "Self-efficacy",
+          "Prejudice",
+          "Stereotyping",
+          "Psychopathy"
+        ],
+        answer: 0,
+        reason: "Self-efficacy refers to belief in one's ability to learn and adapt, which can influence willingness to undertake challenging tasks."
+      },
+      {
+        question: "The senior accountant receiving constructive feedback and positive professional reinforcement demonstrates the importance of:",
+        options: [
+          "Environmental reinforcement",
+          "Narcissism",
+          "Biological inheritance",
+          "Stereotyping"
+        ],
+        answer: 0,
+        reason: "Behavioural Theory explains that behaviour can be shaped by environmental stimuli, consequences, reinforcement, and conditioning."
+      },
+      {
+        question: "The second junior accountant's avoidance of unfamiliar assignments after repeated criticism illustrates:",
+        options: [
+          "The effect of environmental consequences on behaviour",
+          "The certainty of genetic personality traits",
+          "The effect of openness alone",
+          "The elimination of social learning"
+        ],
+        answer: 0,
+        reason: "Repeated environmental consequences can influence learned behaviours and future responses to situations."
+      },
+      {
+        question: "Which theory most comprehensively explains why Nikhil's behaviour is influenced by both his social environment and his beliefs about his own ability?",
+        options: [
+          "Social-Cognitive Theory",
+          "Biological Theory",
+          "Evolutionary Theory",
+          "Humanistic Theory"
+        ],
+        answer: 0,
+        reason: "Social-Cognitive Theory emphasises reciprocal interaction among the individual, cognitive processes, behaviour, and social environment."
+      }
+    ]
+},
+
+// INd
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "A Chartered Accountant carefully checks financial documents, maintains organised records, and consistently meets deadlines. Which personality trait is most clearly demonstrated?",
+  options: [
+    "Extraversion",
+    "Conscientiousness",
+    "Emotionality",
+    "Openness to Experience",
+  ],
+  answer: 1,
+  reason: "Conscientiousness involves organisation, diligence, precision, reliability, and disciplined work behaviour.",
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "An accountant readily explores unconventional financial strategies and welcomes new methods of solving professional problems. Which HEXACO dimension is most closely reflected?",
+  options: [
+    "Agreeableness",
+    "Honesty-Humility",
+    "Openness to Experience",
+    "Conscientiousness",
+  ],
+  answer: 2,
+  reason: "Openness to Experience includes inquisitiveness, creativity, unconventionality, and willingness to consider new ideas.",
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "A Chartered Accountant maintains sincerity, fairness, modesty, and avoids seeking excessive personal gain while dealing with clients. This behaviour primarily reflects:",
+  options: [
+    "Honesty-Humility",
+    "Extraversion",
+    "Emotionality",
+    "Openness to Experience",
+  ],
+  answer: 0,
+  reason: "Honesty-Humility reflects sincerity, fairness, modesty, and lack of greed and is associated with trustworthy and ethical behaviour.",
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "An accountant remains patient during a disagreement with a colleague, listens to the other person's view, and works toward a compromise. Which HEXACO trait is most evident?",
+  options: [
+    "Agreeableness",
+    "Conscientiousness",
+    "Extraversion",
+    "Openness to Experience",
+  ],
+  answer: 0,
+  reason: "Agreeableness is associated with patience, tolerance, gentleness, forgiveness, cooperation, and amicable conflict resolution.",
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "A financial professional is highly sociable, talkative, assertive, and comfortable leading discussions with clients. Which HEXACO dimension best describes these characteristics?",
+  options: [
+    "Emotionality",
+    "Conscientiousness",
+    "Extraversion",
+    "Honesty-Humility",
+  ],
+  answer: 2,
+  reason: "Extraversion reflects sociability, liveliness, talkativeness, and assertiveness.",
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "Chapter 2: Personality",
+  question: "A Chartered Accountant notices that a client is anxious about financial difficulties and responds with understanding while remaining composed during the discussion. Which HEXACO dimension is particularly relevant to the accountant's ability to understand the client's emotional concerns?",
+  options: [
+    "Emotionality",
+    "Conscientiousness",
+    "Openness to Experience",
+    "Honesty-Humility",
+  ],
+  answer: 0,
+  reason: "Emotionality includes sentimentality, fearfulness, anxiety, and dependence on others. In professional interactions, higher emotionality may support empathy and understanding of clients' financial concerns.",
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "Chapter 2: Personality",
+  question: "A manager notices that an employee's behaviour has gradually become more detail-oriented because accurate financial reporting has repeatedly received positive feedback. Which theory best explains this development?",
+  options: [
+    "Humanistic Theory",
+    "Behavioural Theory",
+    "Biological Theory",
+    "Evolutionary Theory",
+  ],
+  answer: 1,
+  reason: "Behavioural Theory explains personality-related behaviour through observable behaviour that is learned and shaped by environmental reinforcement and consequences.",
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "Chapter 2: Personality",
+  question: "An accountant believes strongly in their ability to learn new financial regulations and therefore willingly accepts a complex compliance assignment. According to Social-Cognitive Theory, this belief is known as:",
+  options: [
+    "Self-efficacy",
+    "Temperament",
+    "Stereotyping",
+    "Prejudice",
+  ],
+  answer: 0,
+  reason: "Self-efficacy refers to an individual's belief in their ability to learn and adapt, which can increase willingness to undertake complex projects.",
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "Chapter 2: Personality",
+  question: "A financial professional constantly seeks admiration, considers themselves superior to colleagues, and believes they deserve special recognition. Which Dark Triad trait is most directly indicated?",
+  options: [
+    "Psychopathy",
+    "Machiavellianism",
+    "Narcissism",
+    "Agreeableness",
+  ],
+  answer: 2,
+  reason: "Narcissism is characterised by grandiosity, entitlement, lack of empathy, and a constant need for admiration and validation.",
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "Chapter 2: Personality",
+  question: "During an investment analysis, an accountant deliberately searches for evidence that contradicts their preferred conclusion rather than considering only supporting information. This approach primarily helps reduce:",
+  options: [
+    "Risk tolerance",
+    "Confirmation bias",
+    "Aptitude",
+    "Emotionality",
+  ],
+  answer: 1,
+  reason: "Confirmation bias occurs when individuals seek information that supports their existing attitudes or beliefs while disregarding conflicting information. Deliberately examining contrary evidence can help mitigate this bias.",
+},
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "A Chartered Accountant carefully considers a client's financial concerns, remains patient during discussions, and cooperates with the client to resolve difficulties. Which personality trait most directly supports this behaviour?",
+  options: [
+    "Agreeableness",
+    "Psychopathy",
+    "Machiavellianism",
+    "Narcissism",
+  ],
+  answer: 0,
+  reason: "Agreeableness is associated with patience, tolerance, gentleness, forgiveness, and cooperation, which can support harmonious client relationships.",
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "An accountant remains calm when faced with a sudden market fluctuation and avoids making an immediate emotionally driven investment decision. Which benefit of mindfulness is most directly demonstrated?",
+  options: [
+    "Reduced impulsivity and reactive decision-making",
+    "Increased risk-taking",
+    "Greater stereotyping",
+    "Reduced attention to detail",
+  ],
+  answer: 0,
+  reason: "Mindfulness encourages individuals to pause, reflect, and respond deliberately rather than reacting impulsively or emotionally.",
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "A manager assumes that older employees cannot learn new accounting technology and therefore excludes them from a technology training programme. This decision is primarily influenced by:",
+  options: [
+    "Aptitude",
+    "Stereotype",
+    "Motivation",
+    "Conscientiousness",
+  ],
+  answer: 1,
+  reason: "A stereotype is a generalisation or belief about a particular group that can create biased evaluations and decisions.",
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "A Chartered Accountant continues working carefully on a difficult assignment because completing it is important for achieving a professional goal. Which factor affecting decision-making is most clearly demonstrated?",
+  options: [
+    "Motivation",
+    "Prejudice",
+    "Stereotyping",
+    "Temperament",
+  ],
+  answer: 0,
+  reason: "Motivation is the internal or external drive that encourages individuals to take action, make decisions, and persist in achieving goals.",
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "An investor must choose between financial alternatives even though reliable information about future market conditions and the probability of outcomes is unavailable. This is an example of:",
+  options: [
+    "Decision-making under uncertainty",
+    "Decision-making with complete information",
+    "Behavioural conditioning",
+    "Personality assessment",
+  ],
+  answer: 0,
+  reason: "Decision-making under uncertainty occurs when individuals must make choices without complete or reliable information about potential outcomes or their probabilities.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "Which of the following is one of the six dimensions of the HEXACO model?",
+  options: [
+    "Honesty-Humility",
+    "Aggression",
+    "Intelligence",
+    "Memory",
+  ],
+  answer: 0,
+  reason: "Honesty-Humility is one of the six dimensions of the HEXACO personality model.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "Which three traits are included in the Dark Triad theory?",
+  options: [
+    "Narcissism, Machiavellianism, and Psychopathy",
+    "Extraversion, Agreeableness, and Openness",
+    "Conscientiousness, Emotionality, and Honesty",
+    "Motivation, Aptitude, and Attitude",
+  ],
+  answer: 0,
+  reason: "The Dark Triad consists of Narcissism, Machiavellianism, and Psychopathy.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "Which personality theory focuses on enduring characteristics or traits that describe individual differences?",
+  options: [
+    "Trait Theory",
+    "Humanistic Theory",
+    "Behavioural Theory",
+    "Biological Theory",
+  ],
+  answer: 0,
+  reason: "Trait Theory explains personality through relatively enduring traits or characteristics that describe individual differences.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "According to Humanistic Theory, individuals strive toward:",
+  options: [
+    "Self-actualization and personal growth",
+    "Manipulation and personal gain",
+    "Avoiding all social interaction",
+    "Maximum financial risk",
+  ],
+  answer: 0,
+  reason: "Humanistic Theory emphasises people's inherent growth potential and their desire for self-actualization and personal fulfilment.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "Which personality dimension includes organisation, diligence, precision, and reliability?",
+  options: [
+    "Conscientiousness",
+    "Extraversion",
+    "Emotionality",
+    "Openness to Experience",
+  ],
+  answer: 0,
+  reason: "Conscientiousness includes organisation, diligence, precision, reliability, responsibility, and discipline.",
+},
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "A Chartered Accountant is known for being trustworthy, fair, modest, and uninterested in obtaining excessive personal benefits from clients. Which HEXACO dimension best explains these characteristics?",
+  options: [
+    "Honesty-Humility",
+    "Extraversion",
+    "Emotionality",
+    "Openness to Experience",
+  ],
+  answer: 0,
+  reason: "Honesty-Humility reflects sincerity, fairness, modesty, and lack of greed and is associated with trustworthy and ethical behaviour.",
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "An accountant is facing a difficult client situation but pauses, observes the situation carefully, and makes a deliberate decision instead of reacting immediately. Which aspect of mindfulness is demonstrated?",
+  options: [
+    "Reduced impulsivity and reactive decision-making",
+    "Increased emotional dependence",
+    "Greater resistance to uncertainty",
+    "Increased stereotyping",
+  ],
+  answer: 0,
+  reason: "Mindfulness encourages individuals to respond to situations rather than react impulsively by pausing, reflecting, and making deliberate choices.",
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "A manager rejects a qualified candidate for a technology-related role because she believes people from a particular age group are generally unable to understand new technology. This decision demonstrates the effect of:",
+  options: [
+    "Aptitude",
+    "Stereotypes and prejudices",
+    "Motivation",
+    "Conscientiousness",
+  ],
+  answer: 1,
+  reason: "Stereotypes are generalisations about groups, while prejudices involve preconceived judgments. Both can create biased decisions in hiring and professional settings.",
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "An investor is willing to accept a greater possibility of loss because achieving a particular financial objective is very important to them. Which factor affecting decision-making is most directly illustrated?",
+  options: [
+    "Motivation",
+    "Stereotyping",
+    "Prejudice",
+    "Temperament",
+  ],
+  answer: 0,
+  reason: "Motivation can influence risk tolerance, and highly motivated individuals may be more willing to take calculated risks to achieve their goals.",
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "Chapter 2: Personality",
+  question: "A Chartered Accountant faces unpredictable market conditions and prepares several possible courses of action so that the client can respond if circumstances change. Which strategy for decision-making under uncertainty is being used?",
+  options: [
+    "Contingency planning",
+    "Stereotyping",
+    "Confirmation bias",
+    "Social conformity",
+  ],
+  answer: 0,
+  reason: "Contingency planning involves preparing alternative courses of action and is identified as a useful strategy when making decisions under uncertainty.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "Which theory of personality was pioneered by Sigmund Freud?",
+  options: [
+    "Psychoanalytic Theory",
+    "Humanistic Theory",
+    "Social-Cognitive Theory",
+    "Behavioural Theory",
+  ],
+  answer: 0,
+  reason: "The Psychoanalytic Theory of Personality was pioneered by Sigmund Freud and focuses on unconscious motives and conflicts.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "Which three components are identified in Freud's Psychoanalytic Theory?",
+  options: [
+    "Id, Ego, and Superego",
+    "Trait, Temperament, and Character",
+    "Attitude, Aptitude, and Motivation",
+    "Self, Society, and Environment",
+  ],
+  answer: 0,
+  reason: "Freud's Psychoanalytic Theory proposes three dynamic components of the mind: id, ego, and superego.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "Which personality dimension is associated with sociability, talkativeness, liveliness, and assertiveness?",
+  options: [
+    "Extraversion",
+    "Conscientiousness",
+    "Emotionality",
+    "Honesty-Humility",
+  ],
+  answer: 0,
+  reason: "Extraversion reflects sociability, liveliness, talkativeness, and assertiveness.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "Which Dark Triad trait is associated with manipulation, deceit, and pursuit of personal gain?",
+  options: [
+    "Machiavellianism",
+    "Narcissism",
+    "Psychopathy",
+    "Agreeableness",
+  ],
+  answer: 0,
+  reason: "Machiavellianism is associated with manipulation, deceit, strategic behaviour, and the pursuit of personal gain.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "What does aptitude refer to in the context of decision-making?",
+  options: [
+    "An individual's natural ability or talent in a specific area",
+    "An individual's emotional reaction to uncertainty",
+    "A preconceived judgment about a group",
+    "An individual's desire for social recognition",
+  ],
+  answer: 0,
+  reason: "Aptitude refers to an individual's natural ability or talent in a specific area and can influence career choices, skill development, and professional growth.",
+},
+{
+  difficulty: "Hard",
+  case_chapter: "Chapter 2: Personality",
+  question: "A Chartered Accountant notices that a client is strongly convinced that a particular investment will succeed. Instead of accepting the client's view, the accountant deliberately searches for evidence that could disprove the belief before making a recommendation. Which concept is most directly being addressed?",
+  options: [
+    "Confirmation bias",
+    "Aptitude",
+    "Temperament",
+    "Extraversion",
+  ],
+  answer: 0,
+  reason: "Confirmation bias occurs when individuals seek information supporting their existing attitudes or beliefs while disregarding conflicting information. Searching for contrary evidence can help mitigate this bias.",
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "Chapter 2: Personality",
+  question: "A senior accountant is highly strategic in dealing with colleagues and deliberately withholds important information when doing so is likely to provide a personal advantage. Which Dark Triad trait is most closely associated with this behaviour?",
+  options: [
+    "Narcissism",
+    "Machiavellianism",
+    "Psychopathy",
+    "Agreeableness",
+  ],
+  answer: 1,
+  reason: "Machiavellianism is associated with manipulation, deceit, strategic behaviour, and the pursuit of personal gain.",
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "Chapter 2: Personality",
+  question: "An accounting firm wants to understand why an employee's professional behaviour has developed through repeated observation of senior colleagues, environmental feedback, and the employee's belief in their own ability to handle complex assignments. Which theory provides the most suitable framework?",
+  options: [
+    "Social-Cognitive Theory",
+    "Evolutionary Theory",
+    "Psychoanalytic Theory",
+    "Biological Theory",
+  ],
+  answer: 0,
+  reason: "Social-Cognitive Theory emphasises the reciprocal interaction between individuals, their cognitive processes, behaviour, and social environment, including observational learning and self-efficacy.",
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "Chapter 2: Personality",
+  question: "A financial professional remains calm while analysing an uncertain investment decision, recognises that they are favouring information supporting their initial opinion, considers contrary evidence, and evaluates the long-term consequences. Which combination of mindfulness benefits is most clearly illustrated?",
+  options: [
+    "Bias mitigation, emotional regulation, and long-term perspective",
+    "Increased impulsivity, stereotyping, and short-term thinking",
+    "Greater conformity, prejudice, and emotional dependence",
+    "Reduced attention, increased uncertainty, and risk avoidance",
+  ],
+  answer: 0,
+  reason: "The chapter explains that mindfulness can promote emotional regulation, help recognise and mitigate cognitive biases, and encourage consideration of long-term consequences.",
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "Chapter 2: Personality",
+  question: "A company must choose whether to launch a new financial service even though reliable information about future customer demand and market acceptance is unavailable. The management team evaluates several possible outcomes and prepares alternative plans. Which approach is most consistent with the chapter?",
+  options: [
+    "Decision-making under uncertainty using scenario planning and contingency planning",
+    "Decision-making with complete information using historical certainty",
+    "Decision-making based exclusively on aptitude",
+    "Decision-making based exclusively on personality traits",
+  ],
+  answer: 0,
+  reason: "Decision-making under uncertainty involves incomplete or unreliable information. Scenario planning and contingency planning are identified as useful strategies for handling such situations.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "Which HEXACO dimension is represented by the letter H?",
+  options: [
+    "Honesty-Humility",
+    "Humanity",
+    "Hardiness",
+    "Hopefulness",
+  ],
+  answer: 0,
+  reason: "In the HEXACO model, H represents Honesty-Humility.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "Which HEXACO dimension is represented by the letter C?",
+  options: [
+    "Creativity",
+    "Conscientiousness",
+    "Confidence",
+    "Character",
+  ],
+  answer: 1,
+  reason: "In the HEXACO model, C represents Conscientiousness.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "Which Dark Triad trait is characterised by a lack of empathy, remorse, and disregard for the rights of others?",
+  options: [
+    "Narcissism",
+    "Machiavellianism",
+    "Psychopathy",
+    "Extraversion",
+  ],
+  answer: 2,
+  reason: "Psychopathy is marked by a lack of empathy and remorse and a disregard for the rights of others.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "Which factor refers to the internal or external drive that compels an individual to take action or make decisions?",
+  options: [
+    "Motivation",
+    "Aptitude",
+    "Stereotype",
+    "Prejudice",
+  ],
+  answer: 0,
+  reason: "Motivation is the internal or external drive that compels individuals to take action or make decisions.",
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "Chapter 2: Personality",
+  question: "What does decision-making under uncertainty involve?",
+  options: [
+    "Making choices without complete or reliable information about potential outcomes or their probabilities",
+    "Making decisions when every possible outcome is known with certainty",
+    "Making decisions only according to personality traits",
+    "Making decisions without considering any available information",
+  ],
+  answer: 0,
+  reason: "Decision-making under uncertainty occurs when individuals or organisations must make choices without complete or reliable information about potential outcomes or their probabilities.",
 }
+
 
 
   // {
