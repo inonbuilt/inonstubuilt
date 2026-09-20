@@ -3703,6 +3703,2400 @@ const caseStudies = [
   ],
   answer: 0,
   reason: "Decision-making under uncertainty occurs when individuals or organisations must make choices without complete or reliable information about potential outcomes or their probabilities.",
+},
+
+// Chapter3
+
+{
+  case_id: "PSY_CH4_CS11",
+  difficulty: "Hard",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Arvind is the engagement leader on an audit involving a financially distressed client.</strong> During the engagement, the client becomes increasingly anxious and pressures the audit team to accept an accounting treatment that would make the financial position appear more favourable.</p>
+    <p>One team member becomes frustrated with the client and wants to respond aggressively. Another team member is worried about losing the client and suggests accepting the treatment without further investigation.</p>
+    <p>Arvind recognises that the team's emotional reactions could affect the quality of its judgement. He asks the team to pause, identify their emotional responses, review the professional standards, consider the consequences for stakeholders, and examine the accounting evidence objectively.</p>
+    <p>He also speaks with the client empathetically while making it clear that professional integrity cannot be compromised.</p>
+  `,
+
+  questions: [
+    {
+      question: "Arvind's decision to recognise the team's emotional reactions before proceeding primarily demonstrates:",
+      options: [
+        "Self-awareness",
+        "Delegation",
+        "Time management",
+        "Nonverbal communication"
+      ],
+      answer: 0,
+      reason: "Self-awareness involves recognising one's own emotional responses and understanding their impact on thoughts, behaviour, and decision-making."
+    },
+    {
+      question: "Arvind's instruction to pause before reacting is most closely associated with:",
+      options: [
+        "Self-regulation",
+        "Motivation",
+        "Social networking",
+        "Financial forecasting"
+      ],
+      answer: 0,
+      reason: "Self-regulation involves managing disruptive emotions, maintaining composure, and avoiding impulsive reactions."
+    },
+    {
+      question: "Considering the emotional consequences for stakeholders while maintaining professional standards demonstrates EI's role in:",
+      options: [
+        "Ethical decision-making",
+        "Time management",
+        "Technical calculation",
+        "Nonverbal communication"
+      ],
+      answer: 0,
+      reason: "The chapter explains that EI supports ethical decision-making by increasing awareness of emotional consequences while navigating ethical dilemmas."
+    },
+    {
+      question: "Arvind's empathetic communication with the client while refusing to compromise professional integrity demonstrates:",
+      options: [
+        "Empathy combined with ethical judgement",
+        "Emotional avoidance",
+        "Client dependence",
+        "Conflict escalation"
+      ],
+      answer: 0,
+      reason: "EI enables accountants to understand client concerns and communicate sensitively while ethical decision-making requires adherence to professional principles."
+    },
+    {
+      question: "Which overall EI process is best represented by Arvind's approach?",
+      options: [
+        "Recognising emotions, regulating responses, considering others, and making an ethical decision",
+        "Suppressing all emotions and accepting the client's demand",
+        "Ignoring emotions and relying only on client preferences",
+        "Avoiding the ethical issue until the engagement ends"
+      ],
+      answer: 0,
+      reason: "The case combines self-awareness, self-regulation, empathy, and ethical decision-making, all of which are important applications of Emotional Intelligence in Chartered Accountancy."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS12",
+  difficulty: "Hard",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Leena manages a multinational accounting project involving team members and clients from several cultural backgrounds.</strong> During a video conference, one client avoids prolonged eye contact while another frequently uses expressive hand gestures.</p>
+    <p>One team member interprets the first client's behaviour as a lack of confidence and considers the second client's gestures unprofessional. Leena does not immediately accept these interpretations.</p>
+    <p>She explains that nonverbal communication can vary across cultures. She encourages the team to consider cultural context before interpreting gestures, eye contact, tone, or personal space.</p>
+    <p>Leena also adapts her own communication style and asks team members to clarify meaning verbally when a nonverbal signal could be misunderstood.</p>
+  `,
+
+  questions: [
+    {
+      question: "The main communication challenge in the case arises because:",
+      options: [
+        "Nonverbal communication can vary across cultures",
+        "Verbal communication has no value",
+        "Financial information cannot be communicated internationally",
+        "Nonverbal communication is identical everywhere"
+      ],
+      answer: 0,
+      reason: "The chapter specifically explains that nonverbal communication is influenced by cultural norms and can vary significantly across cultures."
+    },
+    {
+      question: "The team member's assumption about the client's behaviour without considering cultural context illustrates the danger of:",
+      options: [
+        "Misinterpreting nonverbal cues",
+        "Effective communication",
+        "Active listening",
+        "Cultural sensitivity"
+      ],
+      answer: 0,
+      reason: "Nonverbal behaviours can have different meanings across cultures, so interpreting them without considering context can create misunderstandings."
+    },
+    {
+      question: "Leena's recommendation to clarify meaning verbally when necessary demonstrates:",
+      options: [
+        "Integration of verbal and nonverbal communication",
+        "Avoidance of communication",
+        "Elimination of cultural differences",
+        "Reliance only on body language"
+      ],
+      answer: 0,
+      reason: "The chapter explains that verbal and nonverbal communication work together and that effective communication requires understanding both."
+    },
+    {
+      question: "Which professional skill is most important for Leena in this situation?",
+      options: [
+        "Cultural sensitivity in communication",
+        "Financial forecasting",
+        "Technical auditing only",
+        "Workload delegation only"
+      ],
+      answer: 0,
+      reason: "The chapter emphasises cultural sensitivity because nonverbal communication varies across cultures and misinterpretation can damage professional interactions."
+    },
+    {
+      question: "Why should Leena avoid immediately labelling the client's behaviour as unprofessional?",
+      options: [
+        "The behaviour may have a culturally different meaning",
+        "Professional behaviour never involves nonverbal communication",
+        "Eye contact has exactly the same meaning in every culture",
+        "Gestures are always meaningless"
+      ],
+      answer: 0,
+      reason: "Cultural norms influence nonverbal communication, so behaviour that appears unusual in one culture may have a different meaning in another."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS13",
+  difficulty: "Hard",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Dev is responsible for completing a major financial reporting assignment within a very short period.</strong> The workload includes complex financial analysis, multiple client requests, and several unresolved issues. Dev initially attempts to complete everything himself and begins working late every night.</p>
+    <p>After several days, he notices reduced concentration, irritability, and difficulty making decisions. He realises that continuing in the same manner may affect both his well-being and the quality of his professional work.</p>
+    <p>Dev restructures his approach. He prioritises tasks, delegates suitable responsibilities to team members, schedules focused work periods and breaks, practices mindfulness, and discusses workload expectations with his supervisor.</p>
+    <p>He also protects personal time and resumes regular exercise. Over time, his concentration improves and he becomes better able to manage the remaining workload.</p>
+  `,
+
+  questions: [
+    {
+      question: "Dev's initial condition is most consistent with the consequences of:",
+      options: [
+        "Excessive and unmanaged stress",
+        "Effective work-life balance",
+        "Successful delegation",
+        "Healthy workload management"
+      ],
+      answer: 0,
+      reason: "The chapter explains that unmanaged stress can impair concentration and decision-making and may lead to emotional exhaustion and reduced performance."
+    },
+    {
+      question: "Which strategy directly addresses Dev's excessive workload?",
+      options: [
+        "Delegation",
+        "Ignoring responsibilities",
+        "Working longer every night",
+        "Avoiding communication"
+      ],
+      answer: 0,
+      reason: "Delegation distributes workload among team members and is specifically identified as a stress-management strategy."
+    },
+    {
+      question: "Dev's decision to protect personal time primarily supports:",
+      options: [
+        "Work-life balance",
+        "Increased work intensity",
+        "Client dependency",
+        "Technical competence"
+      ],
+      answer: 0,
+      reason: "Setting boundaries between professional and personal time is a fundamental strategy for maintaining work-life balance."
+    },
+    {
+      question: "Why is Dev's approach considered multifaceted?",
+      options: [
+        "He combines time management, delegation, mindfulness, communication, exercise, and personal boundaries",
+        "He relies only on working longer hours",
+        "He uses only financial analysis",
+        "He avoids all interaction with colleagues"
+      ],
+      answer: 0,
+      reason: "Effective stress management requires a multifaceted approach addressing external triggers and internal responses."
+    },
+    {
+      question: "Which statement best reflects the chapter's approach to stress management?",
+      options: [
+        "Managing stress supports both personal well-being and sustainable professional performance",
+        "Stress should always be eliminated completely",
+        "Working longer hours is the primary solution to stress",
+        "Stress has no effect on professional decision-making"
+      ],
+      answer: 0,
+      reason: "The chapter explains that stress management is essential for well-being and effective professional performance, particularly in demanding Chartered Accountancy work."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS14",
+  difficulty: "Hard",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Sanjay is a senior Chartered Accountant mentoring junior professionals.</strong> One junior employee repeatedly makes errors and becomes discouraged after receiving criticism. Another employee performs well technically but struggles to communicate with clients who are experiencing financial difficulties.</p>
+    <p>Sanjay first helps the junior employee understand the source of the mistakes without humiliating him. He provides constructive feedback and encourages a plan for improvement. With the second employee, Sanjay focuses on empathy, active listening, and adapting communication to client concerns.</p>
+    <p>Sanjay also encourages both employees to maintain a learning journal, reflect on their emotional reactions, and seek feedback from colleagues and mentors.</p>
+    <p>Over time, the employees become more confident, responsive to feedback, and effective in their professional interactions.</p>
+  `,
+
+  questions: [
+    {
+      question: "Sanjay's constructive feedback primarily demonstrates the EI role in:",
+      options: [
+        "Leadership and mentorship",
+        "Financial forecasting",
+        "Nonverbal communication only",
+        "Stress elimination"
+      ],
+      answer: 0,
+      reason: "The chapter explains that emotionally intelligent leaders and mentors provide constructive feedback that motivates rather than demoralizes employees."
+    },
+    {
+      question: "Helping the second employee understand clients' financial concerns primarily develops:",
+      options: [
+        "Empathy",
+        "Time management",
+        "Delegation",
+        "Financial calculation"
+      ],
+      answer: 0,
+      reason: "Empathy involves understanding and sharing the feelings of others and is important in client relationships."
+    },
+    {
+      question: "Encouraging employees to maintain a learning journal is a strategy for developing:",
+      options: [
+        "Self-awareness",
+        "Financial reporting",
+        "Nonverbal communication",
+        "Workload"
+      ],
+      answer: 0,
+      reason: "Journaling allows individuals to record emotions, thoughts, and reactions and identify patterns in emotional responses, thereby increasing self-awareness."
+    },
+    {
+      question: "Seeking feedback from colleagues and mentors is specifically identified as a strategy to:",
+      options: [
+        "Enhance Emotional Intelligence",
+        "Increase stress",
+        "Avoid professional development",
+        "Reduce communication"
+      ],
+      answer: 0,
+      reason: "The chapter recommends seeking input from clients and colleagues and using peer and mentor support to identify areas for improvement in EI."
+    },
+    {
+      question: "The case demonstrates that EI development can contribute to:",
+      options: [
+        "Professional growth and interpersonal effectiveness",
+        "Technical knowledge alone",
+        "Elimination of all mistakes",
+        "Avoidance of client relationships"
+      ],
+      answer: 0,
+      reason: "The chapter explains that developing EI can enhance interpersonal skills, client relationships, teamwork, leadership, and professional effectiveness."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS15",
+  difficulty: "Hard",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Priyanka is the finance head of a growing organisation.</strong> During a period of rapid expansion, employees face tight deadlines, changing responsibilities, and increasing client expectations. Several employees begin reporting exhaustion and difficulty maintaining concentration.</p>
+    <p>Priyanka recognises that simply asking employees to work harder may increase the risk of burnout. She introduces realistic workload planning, encourages delegation, provides flexible work arrangements, and establishes regular communication between employees and managers.</p>
+    <p>The organisation also provides wellness resources and encourages employees to take regular breaks and use available support services. Managers are trained to recognise signs of stress and to model healthy work-life boundaries.</p>
+    <p>Priyanka reviews the results periodically and adjusts the initiatives according to employee needs and organisational requirements.</p>
+  `,
+
+  questions: [
+    {
+      question: "Priyanka's approach reflects which principle of organisational well-being?",
+      options: [
+        "Employee well-being and organisational success are interconnected",
+        "Employee stress is solely an individual problem",
+        "Long working hours always improve productivity",
+        "Well-being initiatives reduce professional responsibility"
+      ],
+      answer: 0,
+      reason: "The chapter describes a symbiotic relationship between employee well-being and organisational success and highlights organisational responsibility for supporting well-being."
+    },
+    {
+      question: "Providing flexible work arrangements is an example of:",
+      options: [
+        "An organisational strategy for work-life balance",
+        "A financial reporting technique",
+        "A nonverbal communication method",
+        "An emotional intelligence assessment"
+      ],
+      answer: 0,
+      reason: "Flexible working arrangements are specifically identified as an organisational practice that can help employees balance work and personal life."
+    },
+    {
+      question: "Training managers to recognise stress and model healthy boundaries primarily reflects:",
+      options: [
+        "Leadership's role in shaping organisational well-being",
+        "Avoidance of management responsibility",
+        "Technical accounting training",
+        "Client negotiation"
+      ],
+      answer: 0,
+      reason: "The chapter states that leadership plays a pivotal role in shaping organisational culture around well-being by modelling healthy work-life balance, demonstrating empathy, and fostering communication."
+    },
+    {
+      question: "Why does Priyanka periodically adjust the initiatives?",
+      options: [
+        "Individual differences mean that well-being interventions may need to be tailored to employee needs",
+        "All employees experience stress in exactly the same way",
+        "Organisational support is unnecessary",
+        "Stress management requires only one universal technique"
+      ],
+      answer: 0,
+      reason: "The chapter highlights individual differences in Emotional Intelligence and the importance of tailoring interventions to individual needs."
+    },
+    {
+      question: "Which outcome is the organisation primarily attempting to prevent through these measures?",
+      options: [
+        "Burnout and reduced professional performance",
+        "Technical competence",
+        "Client satisfaction",
+        "Professional learning"
+      ],
+      answer: 0,
+      reason: "The chapter explains that prolonged unmanaged stress can lead to burnout, reduced productivity, impaired concentration and decision-making, and strained relationships."
+    }
+  ]
+},
+// ============================================================
+// EASY CASE SCENARIOS - 5 CASES
+// ============================================================
+
+{
+  case_id: "PSY_CH4_CS16",
+  difficulty: "Easy",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 16 – The Worried Client</strong></p>
+
+    <p>Rohan, a Chartered Accountant, was meeting Mr. Mehta, the owner of a small manufacturing business. Mr. Mehta had recently received a notice regarding certain discrepancies in his financial records. He entered Rohan's office looking nervous and repeatedly said that he was worried about what might happen to his business.</p>
+
+    <p>Instead of immediately discussing the technical provisions, Rohan first allowed Mr. Mehta to explain his concerns. Rohan noticed that Mr. Mehta was speaking unusually fast, frequently looking at his documents and appearing uncomfortable. Rohan understood that the client was anxious and needed reassurance before the technical discussion could proceed effectively.</p>
+
+    <p>Rohan calmly acknowledged the client's concerns and explained that they would examine the matter step by step. He avoided showing irritation when Mr. Mehta repeated some questions. Rohan also maintained a calm tone and encouraged the client to ask questions whenever he was confused.</p>
+
+    <p>By the end of the meeting, Mr. Mehta appeared more relaxed and was able to provide the documents required for further examination. Rohan realized that understanding the client's emotional state had helped him communicate the technical matter more effectively.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which aspect of emotional intelligence did Rohan primarily demonstrate when he recognized that Mr. Mehta was anxious from his behaviour?",
+      options: [
+        "Perceiving emotions",
+        "Using emotions to facilitate thought",
+        "Managing emotions",
+        "Motivation"
+      ],
+      answer: 0,
+      reason: "Rohan identified the client's emotional state through his behaviour, which reflects perceiving emotions."
+    },
+    {
+      question: "Why did Rohan allow Mr. Mehta to explain his concerns before discussing the technical provisions?",
+      options: [
+        "To avoid preparing the documents",
+        "To understand the client's emotional condition and communicate more effectively",
+        "To reduce the amount of technical work required",
+        "To transfer responsibility to the client"
+      ],
+      answer: 1,
+      reason: "Understanding the client's emotional condition helped Rohan communicate the technical matter more effectively."
+    },
+    {
+      question: "Rohan's decision to remain calm when Mr. Mehta repeatedly asked questions mainly demonstrates:",
+      options: [
+        "Social desirability",
+        "External motivation",
+        "Self-regulation",
+        "Financial planning"
+      ],
+      answer: 2,
+      reason: "Remaining calm and controlling one's emotional reaction reflects self-regulation."
+    },
+    {
+      question: "Which communication combination was particularly visible during Rohan's interaction?",
+      options: [
+        "Written communication only",
+        "Technical communication without emotional awareness",
+        "Digital communication and social media",
+        "Verbal communication supported by nonverbal cues"
+      ],
+      answer: 3,
+      reason: "Rohan used a calm tone while also observing the client's behaviour and expressions, showing the interaction of verbal and nonverbal communication."
+    },
+    {
+      question: "What was the most immediate benefit of Rohan's approach?",
+      options: [
+        "The client became more relaxed and was able to provide the required information",
+        "The notice was automatically cancelled",
+        "The technical issue disappeared",
+        "The client no longer needed professional advice"
+      ],
+      answer: 0,
+      reason: "The case specifically states that the client became more relaxed and was then able to provide the necessary documents."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS17",
+  difficulty: "Easy",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 17 – The Difficult Team Meeting</strong></p>
+
+    <p>A CA firm was preparing an important client report. During a team meeting, two members, Arjun and Sameer, disagreed about how the work should be divided. Arjun believed that Sameer was not completing his part quickly enough, while Sameer felt that Arjun was assigning him more work than the other team members.</p>
+
+    <p>The disagreement gradually became tense. Arjun started speaking loudly, while Sameer stopped responding and looked visibly irritated. Priya, the senior team member, noticed the change in the atmosphere.</p>
+
+    <p>Instead of taking sides, Priya asked both members to explain their concerns. She listened carefully and allowed each person to finish speaking. She then helped them identify the actual workload and redistribute the remaining tasks according to the time available.</p>
+
+    <p>Priya also reminded the team that the purpose of the discussion was to complete the client assignment accurately and on time. After the discussion, both members agreed to the revised allocation and continued working together.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which emotional intelligence competency was most clearly demonstrated by Priya when she listened to both team members without taking sides?",
+      options: [
+        "Self-awareness",
+        "Empathy and social awareness",
+        "Fear",
+        "Motivation through competition"
+      ],
+      answer: 1,
+      reason: "Priya listened to and understood the concerns of both team members, demonstrating empathy and social awareness."
+    },
+    {
+      question: "What did Priya do first after noticing the conflict?",
+      options: [
+        "She immediately removed Sameer from the team",
+        "She ignored the disagreement",
+        "She asked both members to explain their concerns",
+        "She cancelled the client assignment"
+      ],
+      answer: 2,
+      reason: "The case states that Priya asked both members to explain their concerns before resolving the disagreement."
+    },
+    {
+      question: "The revised allocation of work primarily helped the team by:",
+      options: [
+        "Making the assignment more balanced according to available time",
+        "Eliminating the need for communication",
+        "Increasing the conflict between the members",
+        "Avoiding the client completely"
+      ],
+      answer: 0,
+      reason: "Priya redistributed the remaining tasks according to workload and available time."
+    },
+    {
+      question: "Which Navarasa would be least consistent with Priya's calm approach in the meeting?",
+      options: [
+        "Shanta",
+        "Karuna",
+        "Hasya",
+        "Raudra"
+      ],
+      answer: 3,
+      reason: "Raudra represents anger or fury, whereas Priya demonstrated calmness and constructive conflict resolution."
+    },
+    {
+      question: "What was the result of Priya's intervention?",
+      options: [
+        "The team stopped working",
+        "Both members accepted the revised allocation and continued working",
+        "The client cancelled the assignment",
+        "The disagreement became more serious"
+      ],
+      answer: 1,
+      reason: "Both members agreed to the revised allocation and continued working together."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS18",
+  difficulty: "Easy",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 18 – Too Many Deadlines</strong></p>
+
+    <p>Neha was working on several assignments during a particularly busy period. She had a tax-related assignment due on Monday, an audit file that needed attention on Tuesday and several smaller client requests that had accumulated during the week.</p>
+
+    <p>Initially, Neha tried to complete everything simultaneously. She frequently switched between assignments and eventually realized that she was becoming tired and was making small mistakes. Rather than continuing in the same manner, she stopped and listed all her pending tasks.</p>
+
+    <p>She then divided the work according to urgency and importance. She completed the most urgent assignment first and asked a colleague to assist with some routine documentation. She also scheduled short breaks and used a few minutes of quiet time to regain concentration.</p>
+
+    <p>By reorganizing her work, Neha was able to complete the important assignments without working continuously throughout the night.</p>
+  `,
+
+  questions: [
+    {
+      question: "What was the main problem with Neha's initial working method?",
+      options: [
+        "She had no assignments",
+        "She refused all assistance",
+        "She continuously switched between tasks and became tired",
+        "She completed all tasks too quickly"
+      ],
+      answer: 2,
+      reason: "The case states that Neha kept switching between assignments, became tired and started making mistakes."
+    },
+    {
+      question: "Which stress-management technique did Neha apply when she arranged her tasks according to urgency and importance?",
+      options: [
+        "Time management and prioritization",
+        "Avoidance of responsibility",
+        "Social comparison",
+        "Emotional suppression"
+      ],
+      answer: 0,
+      reason: "Prioritizing tasks according to urgency and importance is a time-management strategy."
+    },
+    {
+      question: "What did Neha do with some routine documentation?",
+      options: [
+        "She ignored it",
+        "She delegated it to a colleague",
+        "She cancelled the client assignment",
+        "She completed it after resigning"
+      ],
+      answer: 1,
+      reason: "The case specifically states that she asked a colleague to assist with routine documentation."
+    },
+    {
+      question: "Why were short breaks useful in Neha's situation?",
+      options: [
+        "They eliminated all deadlines",
+        "They transferred the work to clients",
+        "They increased the amount of pending work",
+        "They helped her regain concentration"
+      ],
+      answer: 3,
+      reason: "The case states that she scheduled short breaks to regain concentration."
+    },
+    {
+      question: "Which outcome resulted from Neha's revised approach?",
+      options: [
+        "She completed important assignments without working continuously through the night",
+        "She stopped accepting clients",
+        "She increased her workload unnecessarily",
+        "She ignored the deadlines"
+      ],
+      answer: 0,
+      reason: "The case specifically states that she completed the important assignments without working continuously throughout the night."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS19",
+  difficulty: "Easy",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 19 – The Annual Report Presentation</strong></p>
+
+    <p>Vikram was presenting an annual financial report to a group of senior management members. He explained the major financial information using simple language and paused whenever the audience appeared confused.</p>
+
+    <p>During one important part of the presentation, Vikram's words were technically correct, but his tone became unusually harsh. Several members of the audience looked uncomfortable. Vikram noticed their reaction and immediately softened his tone while continuing to explain the same information.</p>
+
+    <p>He also maintained appropriate eye contact, used hand gestures to emphasize important points and occasionally asked the audience whether they wanted clarification.</p>
+
+    <p>After the presentation, the management members said that the information was easier to understand because Vikram had combined clear verbal explanations with appropriate nonverbal communication.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which form of communication involved Vikram's spoken explanations?",
+      options: [
+        "Nonverbal communication",
+        "Verbal communication",
+        "Physical communication",
+        "Organizational silence"
+      ],
+      answer: 1,
+      reason: "Spoken words are part of verbal communication."
+    },
+    {
+      question: "Which observation made Vikram realize that his tone needed to change?",
+      options: [
+        "The report had been deleted",
+        "The audience started leaving the building",
+        "The audience appeared uncomfortable",
+        "The financial figures disappeared"
+      ],
+      answer: 2,
+      reason: "The case states that several audience members looked uncomfortable after his tone became harsh."
+    },
+    {
+      question: "Eye contact and hand gestures in the presentation are examples of:",
+      options: [
+        "Nonverbal communication",
+        "Written communication",
+        "Financial communication",
+        "Numerical communication"
+      ],
+      answer: 0,
+      reason: "Eye contact and gestures are nonverbal communication elements."
+    },
+    {
+      question: "What did Vikram do after observing the audience's reaction?",
+      options: [
+        "He stopped the presentation",
+        "He ignored the audience",
+        "He changed the financial report",
+        "He softened his tone"
+      ],
+      answer: 3,
+      reason: "He noticed the reaction and softened his tone while continuing the explanation."
+    },
+    {
+      question: "What combination helped make Vikram's presentation easier to understand?",
+      options: [
+        "Silence and written instructions",
+        "Technical jargon and speed",
+        "Clear verbal explanations and appropriate nonverbal communication",
+        "Only financial calculations"
+      ],
+      answer: 2,
+      reason: "The audience specifically attributed the clarity to the combination of verbal and nonverbal communication."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS20",
+  difficulty: "Easy",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 20 – The Remote Working Routine</strong></p>
+
+    <p>Ananya was working remotely for a CA firm. At first, she kept her laptop open throughout the day and frequently checked work messages even after dinner. She felt that because she was working from home, she was expected to remain available at all times.</p>
+
+    <p>After several weeks, Ananya noticed that she was finding it difficult to separate professional responsibilities from personal time. She therefore established a fixed working schedule and created a small dedicated workspace at home.</p>
+
+    <p>At the end of her working hours, she closed her work applications and moved away from the workspace. She informed her colleagues about her normal working hours and continued to respond to genuinely urgent matters when required.</p>
+
+    <p>Gradually, Ananya found it easier to concentrate during working hours and relax during personal time.</p>
+  `,
+
+  questions: [
+    {
+      question: "What problem did Ananya experience initially?",
+      options: [
+        "She had no access to technology",
+        "She was unable to communicate with clients",
+        "She had too many holidays",
+        "She found it difficult to separate work and personal time"
+      ],
+      answer: 3,
+      reason: "The case states that remote work blurred the boundary between her professional and personal time."
+    },
+    {
+      question: "Why did Ananya create a dedicated workspace?",
+      options: [
+        "To create a clearer distinction between work and personal activities",
+        "To increase the number of meetings",
+        "To avoid communicating with colleagues",
+        "To eliminate all urgent work"
+      ],
+      answer: 0,
+      reason: "A dedicated workspace helped establish a physical boundary between work and personal time."
+    },
+    {
+      question: "Which work-life balance strategy did Ananya introduce?",
+      options: [
+        "Working without breaks",
+        "Fixed working hours",
+        "Avoiding all clients",
+        "Checking messages throughout the night"
+      ],
+      answer: 1,
+      reason: "She established a fixed working schedule to create boundaries."
+    },
+    {
+      question: "What happened after Ananya established boundaries?",
+      options: [
+        "She stopped working completely",
+        "She increased unnecessary work",
+        "She found it easier to concentrate and relax",
+        "She stopped communicating with her colleagues"
+      ],
+      answer: 2,
+      reason: "The case states that she eventually found it easier to concentrate during work and relax during personal time."
+    },
+    {
+      question: "Which issue in the case is particularly associated with remote work?",
+      options: [
+        "The complete absence of technology",
+        "The automatic elimination of stress",
+        "The elimination of professional responsibilities",
+        "The blurring of work and personal boundaries"
+      ],
+      answer: 3,
+      reason: "The case illustrates how remote work can blur professional and personal boundaries."
+    }
+  ]
+},
+
+
+// ============================================================
+// MEDIUM CASE SCENARIOS - 5 CASES
+// ============================================================
+
+{
+  case_id: "PSY_CH4_CS21",
+  difficulty: "Medium",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 21 – The Ethical Pressure</strong></p>
+
+    <p>Meera was part of an audit team reviewing a growing company. During the audit, she discovered a transaction that appeared unusual. When she requested supporting documents, the client's finance manager told her that the transaction was commercially sensitive and suggested that the team should not spend too much time examining it because the reporting deadline was approaching.</p>
+
+    <p>Some members of Meera's team were worried that raising further questions would upset the client. One colleague suggested that they should simply accept management's explanation because the team had already spent many hours on the engagement.</p>
+
+    <p>Meera felt uncomfortable with this approach. She did not react angrily or accuse anyone of dishonesty. Instead, she paused, reviewed the facts again and discussed the matter with the senior team member. She explained that the pressure of the deadline should not prevent the team from examining a potentially significant issue.</p>
+
+    <p>The senior agreed that the matter required further examination. Meera then communicated with the client professionally and requested the relevant evidence without making personal accusations.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which emotional intelligence skill helped Meera avoid reacting angrily when she faced pressure from the client and team?",
+      options: [
+        "Self-regulation",
+        "Humour",
+        "Surprise",
+        "External motivation"
+      ],
+      answer: 0,
+      reason: "Meera controlled her immediate emotional reaction, paused and responded thoughtfully, demonstrating self-regulation."
+    },
+    {
+      question: "Why did Meera discuss the issue with the senior team member?",
+      options: [
+        "To avoid completing the audit",
+        "To seek appropriate professional input before proceeding",
+        "To transfer all responsibility to the client",
+        "To create conflict within the team"
+      ],
+      answer: 1,
+      reason: "She sought professional input while dealing with a potentially significant audit issue."
+    },
+    {
+      question: "Which statement best describes Meera's approach to ethical decision-making?",
+      options: [
+        "She ignored the issue because of the deadline",
+        "She accepted the client's explanation without evidence",
+        "She allowed deadline pressure to replace professional judgment",
+        "She recognized that deadline pressure should not prevent appropriate examination"
+      ],
+      answer: 3,
+      reason: "Meera specifically recognized that the deadline should not stop the team from examining a potentially significant issue."
+    },
+    {
+      question: "Which element of the Mixed Model of emotional intelligence is particularly visible when Meera remains focused on doing the appropriate work despite pressure?",
+      options: [
+        "Motivation",
+        "Bībhatsa",
+        "Fear",
+        "Physical fitness"
+      ],
+      answer: 0,
+      reason: "Motivation in the Mixed Model includes the drive to achieve goals and persist despite difficulties."
+    },
+    {
+      question: "How did Meera communicate with the client after deciding that further examination was required?",
+      options: [
+        "She accused the client personally",
+        "She stopped communicating",
+        "She professionally requested relevant evidence",
+        "She threatened the client"
+      ],
+      answer: 2,
+      reason: "The case states that Meera requested the relevant evidence professionally without making personal accusations."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS22",
+  difficulty: "Medium",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 22 – The Distressed Business Owner</strong></p>
+
+    <p>Rahul was advising a small business owner whose business had experienced serious financial difficulties. During a meeting, the owner explained that several employees depended on the business and that he was worried about being unable to pay them on time.</p>
+
+    <p>Rahul initially planned to discuss restructuring options immediately. However, after noticing the client's emotional condition, he changed the sequence of the conversation. He allowed the client to explain the situation fully and acknowledged the pressure the client was experiencing.</p>
+
+    <p>Once the client became calmer, Rahul explained the available financial information and discussed possible courses of action. He did not promise that every problem would disappear. Instead, he carefully explained what could and could not be determined from the available information.</p>
+
+    <p>The client later told Rahul that although the financial problem remained serious, the conversation helped him understand the situation more clearly and feel less overwhelmed.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which behaviour most clearly demonstrates empathy?",
+      options: [
+        "Immediately presenting technical calculations",
+        "Ignoring the client's concerns",
+        "Acknowledging the pressure the client was experiencing",
+        "Promising that the problem would disappear"
+      ],
+      answer: 2,
+      reason: "Rahul acknowledged and responded to the client's emotional situation rather than focusing only on technical information."
+    },
+    {
+      question: "Why did Rahul change the sequence of his conversation?",
+      options: [
+        "He wanted to avoid financial information permanently",
+        "He recognized that the client's emotional condition could affect the effectiveness of communication",
+        "He had forgotten the restructuring options",
+        "He wanted to end the meeting early"
+      ],
+      answer: 1,
+      reason: "Rahul recognized that addressing the client's emotional condition first would make the subsequent communication more effective."
+    },
+    {
+      question: "Which component of the Ability Model is reflected when Rahul recognizes the client's emotional condition?",
+      options: [
+        "Perceiving emotions",
+        "Managing emotions only",
+        "Physical endurance",
+        "Organizational support"
+      ],
+      answer: 0,
+      reason: "Recognizing emotional states is part of perceiving emotions in the Ability Model."
+    },
+    {
+      question: "What did Rahul deliberately avoid doing?",
+      options: [
+        "Listening to the client",
+        "Explaining financial information",
+        "Discussing possible courses of action",
+        "Promising that every problem would disappear"
+      ],
+      answer: 3,
+      reason: "Rahul carefully avoided making unrealistic promises about the client's financial situation."
+    },
+    {
+      question: "What was the main communication outcome?",
+      options: [
+        "The client's financial problems were completely eliminated",
+        "The client understood the situation more clearly and felt less overwhelmed",
+        "The client stopped seeking professional advice",
+        "The client received an automatic financial benefit"
+      ],
+      answer: 1,
+      reason: "The client specifically stated that the conversation helped him understand the situation and feel less overwhelmed."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS23",
+  difficulty: "Medium",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 23 – The Cross-Cultural Meeting</strong></p>
+
+    <p>Aditya was working with an international client. During a virtual meeting, Aditya maintained frequent eye contact with the camera because he believed it showed confidence and attention. However, one member of the client's team appeared uncomfortable and became less verbally engaged.</p>
+
+    <p>Aditya initially wondered whether the client disagreed with his technical explanation. Later, a colleague who had experience working with the client's culture explained that prolonged direct eye contact could sometimes be interpreted differently in that cultural context.</p>
+
+    <p>Aditya realized that he had interpreted the client's nonverbal response using only his own cultural expectations. In later meetings, he became more attentive to differences in communication style. He continued to communicate confidently but avoided assuming that every nonverbal behaviour had the same meaning across cultures.</p>
+
+    <p>This change improved the interaction because Aditya became more sensitive to the context in which communication was taking place.</p>
+  `,
+
+  questions: [
+    {
+      question: "What was Aditya's main communication mistake?",
+      options: [
+        "He used technical information",
+        "He interpreted a nonverbal behaviour only through his own cultural expectations",
+        "He attended a virtual meeting",
+        "He communicated confidently"
+      ],
+      answer: 1,
+      reason: "Aditya initially assumed that eye contact had the same meaning in the client's cultural context as it did in his own."
+    },
+    {
+      question: "Which communication element created the misunderstanding?",
+      options: [
+        "Financial calculations",
+        "Written accounting standards",
+        "Nonverbal behaviour",
+        "The client's financial statements"
+      ],
+      answer: 2,
+      reason: "The misunderstanding arose from interpreting eye contact, which is a nonverbal communication element."
+    },
+    {
+      question: "What did Aditya learn from the experience?",
+      options: [
+        "Nonverbal communication can have different meanings across cultures",
+        "Eye contact always has one universal meaning",
+        "Technical skills are unnecessary",
+        "Virtual meetings should never be used"
+      ],
+      answer: 0,
+      reason: "The case emphasizes that nonverbal communication can differ across cultural contexts."
+    },
+    {
+      question: "Which emotional intelligence capability would help Aditya in this situation?",
+      options: [
+        "Ignoring the client's reactions",
+        "Using anger to control the meeting",
+        "Avoiding all communication",
+        "Empathy and social awareness"
+      ],
+      answer: 3,
+      reason: "Empathy and social awareness help a person recognize and understand other people's perspectives and reactions."
+    },
+    {
+      question: "What changed in Aditya's later meetings?",
+      options: [
+        "He stopped communicating confidently",
+        "He became more attentive to cultural differences in communication",
+        "He avoided international clients",
+        "He stopped using nonverbal communication"
+      ],
+      answer: 1,
+      reason: "Aditya continued communicating confidently while becoming more sensitive to cultural differences."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS24",
+  difficulty: "Medium",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 24 – The Exhausted Audit Team</strong></p>
+
+    <p>A CA firm was approaching the end of a demanding audit season. The team had worked long hours for several weeks. Kavya, a senior member, noticed that team members were becoming less patient with one another and that minor disagreements were occurring more frequently.</p>
+
+    <p>One junior member began making repeated errors in routine documentation. Another member complained that there was no time to take breaks because the deadline was approaching.</p>
+
+    <p>Kavya discussed the situation with the engagement leader. Instead of simply asking everyone to work longer hours, they reviewed the pending tasks and identified assignments that could be delegated or reorganized. The team was also encouraged to take short breaks and communicate when workload became unmanageable.</p>
+
+    <p>Kavya also reminded the team that prolonged stress could affect both well-being and productivity. She encouraged team members to use healthy coping strategies such as exercise, adequate rest and mindfulness outside working hours.</p>
+
+    <p>The team still had a demanding deadline, but the workload became more structured and communication improved.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which signs suggested that prolonged stress was affecting the team?",
+      options: [
+        "More frequent minor disagreements and repeated errors",
+        "Higher levels of vacation",
+        "Complete absence of workload",
+        "Improved concentration among every member"
+      ],
+      answer: 0,
+      reason: "The case describes increased disagreements and repeated documentation errors as signs that the team was under strain."
+    },
+    {
+      question: "Why was delegation introduced?",
+      options: [
+        "To remove all responsibility from the team",
+        "To make the client responsible for the audit",
+        "To structure the workload and reduce pressure",
+        "To eliminate the deadline"
+      ],
+      answer: 2,
+      reason: "Delegation and reorganization were used to make the workload more manageable."
+    },
+    {
+      question: "Which approach would be consistent with the stress-management strategies discussed in the chapter?",
+      options: [
+        "Ignoring signs of stress",
+        "Healthy coping strategies such as exercise, rest and mindfulness",
+        "Working continuously without breaks",
+        "Avoiding communication"
+      ],
+      answer: 1,
+      reason: "Exercise, adequate rest and mindfulness are identified as stress-management strategies."
+    },
+    {
+      question: "What did the engagement leader and Kavya do before simply asking employees to work longer?",
+      options: [
+        "Cancelled the audit",
+        "Reduced all client expectations to zero",
+        "Stopped communication",
+        "Reviewed pending tasks and identified work that could be delegated or reorganized"
+      ],
+      answer: 3,
+      reason: "They first examined the workload and identified tasks that could be delegated or reorganized."
+    },
+    {
+      question: "What was the overall effect of the intervention?",
+      options: [
+        "The deadline disappeared",
+        "The team stopped working",
+        "Workload became more structured and communication improved",
+        "All technical problems were automatically solved"
+      ],
+      answer: 2,
+      reason: "The case states that the workload became more structured and communication improved."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS25",
+  difficulty: "Medium",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 25 – The Junior's Mistake</strong></p>
+
+    <p>During a client assignment, a junior employee named Dev made an error while preparing part of a working paper. When the error was discovered, Dev immediately became nervous and said that he was afraid the mistake would damage his reputation.</p>
+
+    <p>His mentor, Suresh, did not embarrass him in front of the rest of the team. Instead, Suresh asked Dev to explain how the mistake had occurred. Dev explained that he had misunderstood one instruction and had not asked for clarification because he was afraid of appearing inexperienced.</p>
+
+    <p>Suresh explained the correct approach and showed Dev how to verify the information before finalizing the working paper. He also told Dev that asking questions when instructions are unclear is preferable to silently making assumptions.</p>
+
+    <p>Later, Suresh asked Dev to review another working paper independently and explain the checking process. Dev gradually became more confident and started asking questions earlier when he was uncertain.</p>
+  `,
+
+  questions: [
+    {
+      question: "Why did Dev initially avoid asking for clarification?",
+      options: [
+        "He had no access to the working paper",
+        "He wanted to deliberately create an error",
+        "He was afraid of appearing inexperienced",
+        "He had completed the assignment successfully"
+      ],
+      answer: 2,
+      reason: "The case explicitly states that Dev avoided clarification because he feared appearing inexperienced."
+    },
+    {
+      question: "Which behaviour by Suresh demonstrates an emotionally intelligent response?",
+      options: [
+        "Embarrassing Dev publicly",
+        "Understanding the cause of the mistake and teaching him how to prevent it",
+        "Ignoring the mistake",
+        "Removing Dev from all future assignments"
+      ],
+      answer: 1,
+      reason: "Suresh understood the reason behind the mistake and used the situation as a learning opportunity."
+    },
+    {
+      question: "What did Suresh encourage Dev to do when instructions are unclear?",
+      options: [
+        "Make assumptions silently",
+        "Avoid the assignment",
+        "Wait until the deadline",
+        "Ask for clarification"
+      ],
+      answer: 3,
+      reason: "Suresh explicitly told Dev that asking questions is preferable to silently making assumptions."
+    },
+    {
+      question: "What was the effect of giving Dev another working paper to review independently?",
+      options: [
+        "It helped build his confidence and checking ability",
+        "It eliminated all future mistakes",
+        "It made Dev avoid the team",
+        "It removed the need for supervision permanently"
+      ],
+      answer: 0,
+      reason: "The case states that Dev gradually became more confident and began asking questions earlier."
+    },
+    {
+      question: "Which EI-related area is most closely reflected in Suresh's mentoring approach?",
+      options: [
+        "Financial forecasting",
+        "Empathy, social awareness and supportive interaction",
+        "Bībhatsa",
+        "Digital communication"
+      ],
+      answer: 1,
+      reason: "Suresh recognized Dev's emotional concern and responded in a supportive manner."
+    }
+  ]
+},
+
+
+// ============================================================
+// HARD CASE SCENARIOS - 5 CASES
+// ============================================================
+
+{
+  case_id: "PSY_CH4_CS26",
+  difficulty: "Hard",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 26 – The Client Who Wanted a Quick Answer</strong></p>
+
+    <p>Arvind was advising a large corporate client shortly before an important reporting deadline. During his review, he noticed that management had adopted an accounting treatment that required careful examination. The finance director told Arvind that the board meeting was scheduled for the next morning and requested a quick confirmation that the treatment could be accepted.</p>
+
+    <p>The finance director emphasized the long relationship between the client and the CA firm and mentioned that delaying the report could create difficulties for the company. Arvind could feel the pressure increasing. One member of his own team suggested that because the matter was unlikely to affect the overall relationship, they should avoid creating unnecessary disagreement with management.</p>
+
+    <p>Arvind initially felt frustrated. However, instead of responding immediately, he paused and reviewed the available evidence. He recognized that his emotional reaction could influence his judgment. He discussed the matter with a senior colleague and identified the additional information needed to reach a properly supported conclusion.</p>
+
+    <p>When he returned to the client, Arvind did not accuse management of acting improperly. He explained the technical concern clearly, requested supporting evidence and stated that the conclusion would depend on the information obtained.</p>
+
+    <p>The client initially appeared dissatisfied with the delay. Arvind maintained a professional tone and listened to the finance director's concerns. Eventually, the director provided additional documentation. The review then proceeded on the basis of evidence rather than deadline pressure or the desire to avoid disagreement.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which sequence best represents Arvind's emotionally intelligent response to the pressure?",
+      options: [
+        "React emotionally → accept management's explanation → finish immediately",
+        "Ignore the issue → avoid the client → complete the report",
+        "Pause and recognize his reaction → review evidence → seek professional input → communicate appropriately",
+        "Argue with management → reject the transaction immediately → end the meeting"
+      ],
+      answer: 2,
+      reason: "Arvind paused, recognized his emotional reaction, reviewed evidence, consulted a senior colleague and then communicated professionally."
+    },
+    {
+      question: "Which component of the Ability Model is most clearly involved when Arvind recognizes that his emotional reaction could influence his judgment?",
+      options: [
+        "Perceiving emotions",
+        "Using emotions to facilitate thought",
+        "Physical endurance",
+        "Organizational support"
+      ],
+      answer: 1,
+      reason: "Arvind recognized the relationship between emotional state and thinking/judgment, corresponding to using emotions to facilitate thought."
+    },
+    {
+      question: "Why did Arvind avoid accusing management of acting improperly?",
+      options: [
+        "Because evidence was unnecessary",
+        "Because he wanted to avoid completing the review",
+        "Because the client could never be questioned",
+        "Because he wanted to communicate the technical concern professionally while obtaining evidence"
+      ],
+      answer: 3,
+      reason: "Arvind maintained professional communication and focused on obtaining supporting evidence rather than making unsupported personal accusations."
+    },
+    {
+      question: "Which element of the Mixed Model is demonstrated when Arvind continues pursuing an appropriate conclusion despite deadline pressure?",
+      options: [
+        "Motivation",
+        "Hāsya",
+        "Fear",
+        "Nonverbal communication"
+      ],
+      answer: 0,
+      reason: "Motivation involves persistence toward appropriate goals despite difficulties and pressure."
+    },
+    {
+      question: "What ultimately allowed the review to proceed on a stronger basis?",
+      options: [
+        "The client relationship",
+        "The deadline",
+        "Additional documentation provided by the client",
+        "The team's willingness to ignore the issue"
+      ],
+      answer: 2,
+      reason: "The client eventually provided additional documentation, allowing the review to proceed on evidence."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS27",
+  difficulty: "Hard",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 27 – When the Same Gesture Means Something Different</strong></p>
+
+    <p>Shreya was leading a virtual discussion involving professionals from India, Europe and East Asia. The meeting concerned a complicated advisory assignment, and Shreya wanted to ensure that everyone was following the discussion.</p>
+
+    <p>During the meeting, one participant maintained limited direct eye contact with the camera. Another participant frequently nodded while Shreya was speaking. Shreya initially interpreted the first participant's limited eye contact as a sign of disagreement and the second participant's nodding as complete agreement with every point being discussed.</p>
+
+    <p>After the meeting, Shreya discovered through a colleague that the participants' communication styles were influenced by different cultural expectations. Limited eye contact did not necessarily mean disagreement, and nodding did not necessarily mean complete agreement.</p>
+
+    <p>For the next meeting, Shreya changed her approach. Instead of relying only on visual cues, she asked participants to confirm important points verbally. She also avoided assuming that a particular gesture had one universal interpretation.</p>
+
+    <p>The discussion became clearer because participants were given an opportunity to express their understanding directly. Shreya also became more cautious about interpreting nonverbal communication without considering cultural context.</p>
+  `,
+
+  questions: [
+    {
+      question: "What was the central communication problem in Shreya's first meeting?",
+      options: [
+        "She used verbal communication",
+        "She held a virtual meeting",
+        "She interpreted nonverbal signals without sufficient cultural context",
+        "She asked participants to explain technical matters"
+      ],
+      answer: 2,
+      reason: "Shreya initially assigned meanings to nonverbal behaviours without considering cultural differences."
+    },
+    {
+      question: "Why could Shreya's interpretation of limited eye contact be problematic?",
+      options: [
+        "Eye contact has exactly the same meaning in every culture",
+        "Nonverbal behaviours may have different meanings in different cultural contexts",
+        "Eye contact is never part of communication",
+        "Virtual meetings eliminate cultural differences"
+      ],
+      answer: 1,
+      reason: "The chapter emphasizes that nonverbal behaviours such as eye contact can have different cultural meanings."
+    },
+    {
+      question: "Why did Shreya ask participants to confirm important points verbally in the second meeting?",
+      options: [
+        "To supplement potentially ambiguous nonverbal cues",
+        "To eliminate all nonverbal communication",
+        "To make the meeting longer",
+        "To prevent participants from asking questions"
+      ],
+      answer: 0,
+      reason: "Verbal confirmation helped reduce ambiguity where nonverbal behaviour could be interpreted differently."
+    },
+    {
+      question: "Which emotional intelligence capability would best support Shreya's revised approach?",
+      options: [
+        "Ignoring cultural differences",
+        "Reacting with anger",
+        "Avoiding all international interactions",
+        "Social awareness and empathy"
+      ],
+      answer: 3,
+      reason: "Social awareness and empathy help a person understand other people's perspectives and contextual differences."
+    },
+    {
+      question: "Which conclusion is most directly supported by the case?",
+      options: [
+        "Nonverbal communication is always more reliable than verbal communication",
+        "Verbal communication should never be used in international meetings",
+        "Nonverbal communication should be interpreted with sensitivity to cultural context",
+        "Cultural differences prevent effective communication"
+      ],
+      answer: 2,
+      reason: "The case shows that understanding cultural context is important when interpreting nonverbal behaviour."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS28",
+  difficulty: "Hard",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 28 – The Deadline, the Team and the Personal Cost</strong></p>
+
+    <p>Vivek was a senior CA working on a major assignment with a strict deadline. For several weeks, he had been working late into the night. At first, he believed that working longer hours was the only way to guarantee completion.</p>
+
+    <p>As the deadline approached, Vivek noticed that he was sleeping poorly, becoming impatient during team discussions and finding it increasingly difficult to concentrate. His family also complained that although he was physically at home during some evenings, he remained mentally occupied with work and frequently checked messages.</p>
+
+    <p>One evening, a team member submitted a document containing several errors. Vivek became angry and was about to criticize the employee publicly. He paused and realized that the team's exhaustion might be contributing to the problem. Instead of reacting immediately, he asked the team member to explain what had happened.</p>
+
+    <p>Vivek then reviewed the remaining workload. He discovered that several routine tasks were still being handled personally by him even though they could have been delegated. He redistributed some tasks, created a priority list and established specific periods during which team members could focus without unnecessary interruptions.</p>
+
+    <p>He also informed the engagement leader that the workload was becoming unsustainable. Outside work, Vivek restarted exercise and mindfulness practices and began protecting a defined period for family time.</p>
+
+    <p>The assignment remained demanding, but the team became more organized and Vivek noticed improvements in concentration and communication.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which combination of symptoms most strongly indicated that Vivek's stress was becoming difficult to manage?",
+      options: [
+        "Improved sleep and increased concentration",
+        "Poor sleep, impatience and difficulty concentrating",
+        "More holidays and less responsibility",
+        "Improved family communication and reduced workload"
+      ],
+      answer: 1,
+      reason: "The case directly identifies poor sleep, impatience and difficulty concentrating as consequences of Vivek's prolonged stress."
+    },
+    {
+      question: "Why did Vivek pause before criticizing the team member?",
+      options: [
+        "He wanted to ignore the errors",
+        "He had no responsibility for the assignment",
+        "He recognized that the team's exhaustion could be contributing to the problem",
+        "He wanted to cancel the project"
+      ],
+      answer: 2,
+      reason: "Vivek considered the effect of prolonged workload and exhaustion before reacting."
+    },
+    {
+      question: "Which stress-management strategy did Vivek apply to the remaining workload?",
+      options: [
+        "Delegation and prioritization",
+        "Avoidance and denial",
+        "Working continuously",
+        "Eliminating all communication"
+      ],
+      answer: 0,
+      reason: "He redistributed tasks, delegated routine work and created a priority list."
+    },
+    {
+      question: "Which work-life balance issue was visible when Vivek was physically at home but continued checking work messages?",
+      options: [
+        "Complete separation between work and personal life",
+        "Excessive leisure time",
+        "Lack of professional responsibility",
+        "Blurring of professional and personal boundaries"
+      ],
+      answer: 3,
+      reason: "The case shows that work continued to occupy Vivek's personal time, demonstrating blurred boundaries."
+    },
+    {
+      question: "Which intervention addressed Vivek's personal well-being most directly?",
+      options: [
+        "Increasing the number of client meetings",
+        "Restarting exercise and mindfulness and protecting family time",
+        "Taking on additional routine tasks",
+        "Working later each night"
+      ],
+      answer: 1,
+      reason: "Exercise, mindfulness and protected personal/family time directly addressed his personal well-being."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS29",
+  difficulty: "Hard",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 29 – The Organization That Looked Only at Deadlines</strong></p>
+
+    <p>A growing CA firm had developed a reputation for completing client assignments quickly. Management closely monitored deadlines and productivity figures, but there was little discussion about employee well-being.</p>
+
+    <p>During a particularly busy period, several employees began working extended hours. Some employees stopped taking regular breaks, while others continued responding to work messages late at night. One experienced employee resigned after reporting that the constant workload was affecting personal relationships.</p>
+
+    <p>The partners initially considered the problem to be an issue of individual time management. However, an internal discussion revealed that employees were also uncertain about priorities, reluctant to tell managers when workloads became excessive and unsure whether flexible working arrangements would be accepted.</p>
+
+    <p>One partner proposed introducing organizational measures. These included clearer workload planning, regular feedback discussions, access to mental-health-related support resources, flexible working arrangements where feasible and greater encouragement for employees to communicate concerns before problems became severe.</p>
+
+    <p>The partners also agreed that leaders should demonstrate healthy work practices rather than expecting employees to maintain boundaries that management itself ignored.</p>
+
+    <p>Over time, the firm began treating employee well-being as a shared organizational responsibility rather than solely as an individual problem.</p>
+  `,
+
+  questions: [
+    {
+      question: "What limitation existed in the firm's original approach to employee well-being?",
+      options: [
+        "It focused heavily on deadlines and productivity while giving insufficient attention to employee well-being",
+        "It provided too much flexibility",
+        "It had no deadlines",
+        "It prevented employees from working"
+      ],
+      answer: 0,
+      reason: "The case states that management closely monitored deadlines and productivity but paid little attention to employee well-being."
+    },
+    {
+      question: "Why was it incomplete to treat the problem solely as an individual time-management issue?",
+      options: [
+        "Employees had no work to perform",
+        "The firm had no management structure",
+        "Organizational factors such as unclear priorities and reluctance to report excessive workloads were also involved",
+        "Time management is never relevant to stress"
+      ],
+      answer: 2,
+      reason: "The internal discussion revealed organizational issues in addition to individual workload-management concerns."
+    },
+    {
+      question: "Which proposed measure directly reflects organizational well-being support?",
+      options: [
+        "Removing all feedback",
+        "Access to mental-health-related support resources",
+        "Increasing unnecessary working hours",
+        "Discouraging employees from discussing concerns"
+      ],
+      answer: 1,
+      reason: "Providing mental health-related support resources is specifically an organizational well-being measure."
+    },
+    {
+      question: "Why did the partners decide that leaders should model healthy work practices?",
+      options: [
+        "Because leadership behaviour can influence organizational culture and expectations",
+        "Because employees should never work",
+        "Because deadlines no longer matter",
+        "Because client requirements can always be ignored"
+      ],
+      answer: 0,
+      reason: "The case indicates that leaders should demonstrate the boundaries and healthy practices they expect employees to maintain."
+    },
+    {
+      question: "Which change best describes the firm's revised understanding of employee well-being?",
+      options: [
+        "Well-being is entirely the employee's responsibility",
+        "Well-being is unrelated to productivity",
+        "Well-being can be addressed only through salary increases",
+        "Well-being is a shared organizational responsibility"
+      ],
+      answer: 3,
+      reason: "The case concludes that the firm began treating employee well-being as a shared organizational responsibility."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH4_CS30",
+  difficulty: "Hard",
+  chapter: "Chapter 4",
+
+  caseText: `
+    <p><strong>Case 30 – Anger, Ethics and Constructive Action</strong></p>
+
+    <p>Nikhil was reviewing the work of a professional team when he discovered evidence suggesting that certain employees had deliberately ignored an internal compliance requirement. He was deeply disturbed by what he found. He felt angry because the requirement had been introduced to protect the organization from serious risks.</p>
+
+    <p>During the first discussion with the team, Nikhil noticed that his anger was making him speak more forcefully than usual. He realized that continuing the discussion in that emotional state could cause people to become defensive and might prevent the facts from being discussed openly.</p>
+
+    <p>Nikhil therefore paused the discussion. He reviewed the evidence carefully and separated what was directly supported by documentation from what was merely his initial interpretation. He then arranged another meeting and explained the compliance concern using specific facts.</p>
+
+    <p>One employee argued that the requirement was impractical and had been slowing down the team's work. Nikhil listened to the explanation and asked whether there were operational difficulties that management should address. At the same time, he made clear that practical difficulties did not justify ignoring an established compliance requirement.</p>
+
+    <p>Instead of using his anger as a reason to attack the employees, Nikhil channelled his concern into advocating stronger compliance practices. He recommended clearer procedures, additional training and periodic reviews to identify future compliance gaps.</p>
+
+    <p>The experience led Nikhil to recognize that emotions can provide important signals, but constructive action requires emotional regulation, evidence-based reasoning and appropriate communication.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which Navarasa is most directly represented by Nikhil's initial emotional reaction?",
+      options: [
+        "Shānta",
+        "Hāsya",
+        "Raudra",
+        "Śṛṅgāra"
+      ],
+      answer: 2,
+      reason: "Raudra represents anger or fury, which Nikhil experienced after discovering the compliance issue."
+    },
+    {
+      question: "What made Nikhil's response to anger constructive rather than destructive?",
+      options: [
+        "He ignored the compliance issue",
+        "He paused, reviewed evidence and channelled his concern into improving compliance",
+        "He publicly attacked the employees",
+        "He immediately assumed every allegation was true"
+      ],
+      answer: 1,
+      reason: "Nikhil regulated his emotional response, examined evidence and converted his concern into constructive compliance measures."
+    },
+    {
+      question: "Why did Nikhil separate documented facts from his initial interpretation?",
+      options: [
+        "To avoid discussing the issue",
+        "To increase his anger",
+        "To make the employees responsible for the evidence",
+        "To support a more evidence-based and balanced discussion"
+      ],
+      answer: 3,
+      reason: "Separating evidence from interpretation helped Nikhil approach the issue more objectively."
+    },
+    {
+      question: "Which EI process is particularly visible when Nikhil realizes that his anger could cause people to become defensive and then pauses the meeting?",
+      options: [
+        "Managing emotions",
+        "Motivation through competition",
+        "Physical well-being",
+        "Digital communication"
+      ],
+      answer: 0,
+      reason: "Recognizing the effect of his emotional state and deliberately controlling his response demonstrates managing emotions."
+    },
+    {
+      question: "Which combination of actions did Nikhil ultimately recommend?",
+      options: [
+        "Ignoring compliance and increasing deadlines",
+        "Removing all training",
+        "Clearer procedures, additional training and periodic reviews",
+        "Ending communication with employees"
+      ],
+      answer: 2,
+      reason: "The case states that Nikhil recommended clearer procedures, additional training and periodic compliance reviews."
+    }
+  ]
+},
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which of the following best describes Emotional Intelligence?",
+  options: [
+    "The ability to recognize, understand, manage and leverage emotions in oneself and others",
+    "The ability to memorize technical information quickly",
+    "The ability to avoid all emotional situations",
+    "The ability to perform numerical calculations accurately"
+  ],
+  answer: 0,
+  reason: "Emotional Intelligence involves recognizing, understanding, managing and leveraging emotions in oneself and others."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which of the following is one of the four facets of the Ability Model of Emotional Intelligence?",
+  options: [
+    "Financial forecasting",
+    "Perceiving emotions",
+    "Delegating assignments",
+    "Organizational restructuring"
+  ],
+  answer: 1,
+  reason: "The Ability Model includes perceiving emotions, using emotions to facilitate thought, understanding emotions and managing emotions."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which Emotional Intelligence model focuses primarily on emotional traits and commonly uses self-report measures?",
+  options: [
+    "Ability Model",
+    "Mixed Model",
+    "Trait Model",
+    "Communication Model"
+  ],
+  answer: 2,
+  reason: "The Trait Model focuses on emotional traits and commonly relies on self-report measures."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Who is associated with the Mixed Model of Emotional Intelligence discussed in the chapter?",
+  options: [
+    "Daniel Goleman",
+    "Sigmund Freud",
+    "Jean Piaget",
+    "B. F. Skinner"
+  ],
+  answer: 0,
+  reason: "Daniel Goleman is associated with the Mixed Model, which incorporates emotional and social competencies."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which Navarasa represents humour or laughter?",
+  options: [
+    "Karūṇa",
+    "Hāsya",
+    "Raudra",
+    "Śānta"
+  ],
+  answer: 1,
+  reason: "Hāsya represents humour or laughter."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which Navarasa is associated with compassion and empathy?",
+  options: [
+    "Bhayānaka",
+    "Bībhatsa",
+    "Karūṇa",
+    "Vīra"
+  ],
+  answer: 2,
+  reason: "Karūṇa represents compassion and empathy."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which of the following is an example of nonverbal communication?",
+  options: [
+    "Facial expressions",
+    "A written report",
+    "An email",
+    "A financial statement"
+  ],
+  answer: 0,
+  reason: "Facial expressions are a form of nonverbal communication."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Stress is generally described in the chapter as:",
+  options: [
+    "A condition that only occurs in professional accountants",
+    "A natural response to challenges or demands",
+    "A permanent psychological disorder",
+    "A situation that can never be managed"
+  ],
+  answer: 1,
+  reason: "Stress is described as a natural response to challenges or demands, although chronic stress can be harmful."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which of the following can help improve self-awareness?",
+  options: [
+    "Ignoring emotions",
+    "Avoiding feedback",
+    "Journaling and mindfulness",
+    "Working without breaks"
+  ],
+  answer: 2,
+  reason: "Journaling and mindfulness are identified as strategies for enhancing self-awareness."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which strategy can help establish work-life boundaries while working remotely?",
+  options: [
+    "Keeping work applications open throughout the night",
+    "Responding to every message immediately",
+    "Working without a fixed schedule",
+    "Creating a dedicated workspace and fixed working routine"
+  ],
+  answer: 3,
+  reason: "A dedicated workspace and fixed routine can help distinguish professional responsibilities from personal time."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A CA notices that a client is becoming anxious during a financial discussion and changes his approach after recognizing the client's emotional state. Which Ability Model competency is most directly involved?",
+  options: [
+    "Perceiving emotions",
+    "Managing organizational resources",
+    "Motivation",
+    "Social networking"
+  ],
+  answer: 0,
+  reason: "Recognizing the client's anxiety involves perceiving emotions."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A professional deliberately uses a positive emotional state to think creatively about a difficult client problem. Which Ability Model facet does this illustrate?",
+  options: [
+    "Understanding emotions",
+    "Using emotions to facilitate thought",
+    "Perceiving emotions",
+    "Managing organizational support"
+  ],
+  answer: 1,
+  reason: "Using emotions to facilitate thought involves using emotional states to support cognitive processes such as creativity and problem solving."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "Which combination correctly represents competencies associated with Goleman's Mixed Model?",
+  options: [
+    "Perception, sensation, memory and intelligence",
+    "Accounting, auditing, taxation and law",
+    "Self-awareness, self-regulation, motivation, empathy and social skills",
+    "Stress, fear, anger, surprise and humour"
+  ],
+  answer: 2,
+  reason: "The Mixed Model includes self-awareness, self-regulation, motivation, empathy and social skills."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A CA receives criticism from a client and feels irritated but deliberately pauses before responding so that the reply remains professional. Which EI strategy is most evident?",
+  options: [
+    "Self-regulation",
+    "Social comparison",
+    "External motivation",
+    "Avoidance"
+  ],
+  answer: 0,
+  reason: "Pausing and controlling an emotional reaction before responding demonstrates self-regulation."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A team leader notices that two employees are arguing and helps each person understand the other's concerns before finding a solution. Which EI-related ability is most relevant?",
+  options: [
+    "Technical accounting",
+    "Empathy and social awareness",
+    "Financial forecasting",
+    "Fear management"
+  ],
+  answer: 1,
+  reason: "Understanding others' concerns and perspectives involves empathy and social awareness."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A CA uses humour appropriately during a tense team meeting to reduce tension and improve team interaction. Which Navarasa is reflected?",
+  options: [
+    "Raudra",
+    "Bhayānaka",
+    "Hāsya",
+    "Bībhatsa"
+  ],
+  answer: 2,
+  reason: "Hāsya represents humour or laughter and can help ease tension and improve team dynamics."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A professional feels strong anger after observing unethical conduct but channels that emotion into advocating stronger compliance practices rather than attacking individuals. Which Navarasa is most relevant?",
+  options: [
+    "Raudra",
+    "Śṛṅgāra",
+    "Śānta",
+    "Adbhuta"
+  ],
+  answer: 0,
+  reason: "Raudra represents anger or fury. The chapter notes that it can be channelled constructively toward ethical practices and compliance."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "Why can cultural awareness be important when interpreting eye contact during professional communication?",
+  options: [
+    "Eye contact is never meaningful",
+    "Eye contact can have different meanings across cultures",
+    "Eye contact is always a sign of disagreement",
+    "Eye contact is always a sign of agreement"
+  ],
+  answer: 1,
+  reason: "The chapter notes that eye contact may indicate confidence or attention in some cultures but may be interpreted differently in others."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A CA has several urgent assignments and begins making errors because all tasks are being handled simultaneously. Which approach is most appropriate according to the chapter?",
+  options: [
+    "Ignore the errors",
+    "Work continuously without breaks",
+    "Prioritize tasks and break larger tasks into manageable parts",
+    "Accept every new assignment immediately"
+  ],
+  answer: 2,
+  reason: "Time management strategies include prioritizing tasks and breaking larger tasks into manageable parts."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "Which organizational practice can contribute to employee well-being?",
+  options: [
+    "Flexible policies and mental health support",
+    "Discouraging employees from discussing stress",
+    "Increasing working hours without review",
+    "Removing communication channels"
+  ],
+  answer: 0,
+  reason: "Flexible policies, mental health resources and wellness initiatives are identified as organizational well-being measures."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "Which of the following is most likely to occur when stress remains unmanaged for a prolonged period?",
+  options: [
+    "Automatic improvement in productivity",
+    "Burnout, health issues and strained relationships",
+    "Permanent elimination of deadlines",
+    "Guaranteed improvement in emotional intelligence"
+  ],
+  answer: 1,
+  reason: "The chapter identifies burnout, health issues, reduced productivity and strained relationships as possible consequences of unmanaged stress."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A CA realizes that his frustration with a client is influencing the way he is interpreting the client's statements. He deliberately pauses and reassesses the situation before responding. Which combination best describes the process?",
+  options: [
+    "Avoidance followed by emotional suppression",
+    "Motivation followed by delegation",
+    "Self-awareness followed by self-regulation",
+    "Humour followed by social comparison"
+  ],
+  answer: 2,
+  reason: "Recognizing one's own emotional reaction reflects self-awareness, while deliberately controlling the reaction reflects self-regulation."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "Under the Ability Model, a professional first identifies a client's anxiety, then considers how that emotional state may affect the discussion and finally helps the client become calmer. Which sequence best matches the model?",
+  options: [
+    "Perceiving emotions → using emotions to facilitate thought → managing emotions",
+    "Managing emotions → perceiving emotions → financial planning",
+    "Motivation → social skills → physical well-being",
+    "Understanding accounting → delegation → communication"
+  ],
+  answer: 0,
+  reason: "The sequence reflects perceiving emotions, using emotional information in thought and managing emotions."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "Which situation most clearly distinguishes the Trait Model from the Ability Model?",
+  options: [
+    "A CA calculates depreciation using a prescribed method",
+    "A CA describes relatively stable emotional characteristics through self-report",
+    "A CA identifies a client's facial expression during a meeting",
+    "A CA uses emotional information to improve problem solving"
+  ],
+  answer: 1,
+  reason: "The Trait Model focuses on relatively stable emotional traits and commonly uses self-report, whereas the Ability Model focuses on emotional abilities."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A CA faces an unexpected financial insight during an engagement and becomes fascinated by the possibility of an innovative solution. Which Navarasa best represents this emotional experience?",
+  options: [
+    "Karūṇa",
+    "Raudra",
+    "Bhayānaka",
+    "Adbhuta"
+  ],
+  answer: 3,
+  reason: "Adbhuta represents surprise or wonder and can relate to unexpected financial insights and innovative solutions."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A professional feels anxious about making an error that could have legal consequences. Instead of allowing the fear to become overwhelming, the professional uses it as a reason to increase diligence and precision. Which Navarasa is most directly involved?",
+  options: [
+    "Bhayānaka",
+    "Hāsya",
+    "Śṛṅgāra",
+    "Śānta"
+  ],
+  answer: 0,
+  reason: "Bhayānaka represents fear or terror. The chapter relates fear of errors and legal consequences to increased diligence and precision."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A CA feels disgust after discovering serious financial misconduct. Rather than merely expressing personal dislike, the CA uses the experience to reinforce ethical standards. Which Navarasa best corresponds to this situation?",
+  options: [
+    "Vīra",
+    "Bībhatsa",
+    "Adbhuta",
+    "Karūṇa"
+  ],
+  answer: 1,
+  reason: "Bībhatsa represents disgust or aversion and may arise in response to financial misconduct or unethical behaviour."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "Which situation best demonstrates the interaction between verbal and nonverbal communication?",
+  options: [
+    "A CA sends an email without considering its wording",
+    "A CA reads a financial statement silently",
+    "A CA gives technically correct information but uses a harsh tone and then changes the tone after observing the client's reaction",
+    "A CA avoids all communication during a meeting"
+  ],
+  answer: 2,
+  reason: "The example combines verbal content with tone, a nonverbal/vocal cue, and demonstrates how tone can affect the meaning and reception of communication."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A CA working remotely notices that work messages continue late into the night, sleep is being affected and family interactions are declining. Which response best reflects the chapter's work-life balance approach?",
+  options: [
+    "Create boundaries, establish defined working periods and protect personal time",
+    "Remain permanently available to demonstrate commitment",
+    "Stop communicating with colleagues completely",
+    "Accept more assignments to finish faster"
+  ],
+  answer: 0,
+  reason: "The chapter recommends boundaries, defined working periods and protection of personal time to address blurred work-life boundaries."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A CA firm notices that employees are stressed because priorities are unclear, workloads are excessive and employees hesitate to report problems. Which response addresses the issue at the organizational level rather than only the individual level?",
+  options: [
+    "Tell employees to simply become more resilient",
+    "Introduce clearer workload planning, supportive communication, flexible policies and well-being resources",
+    "Ask employees to work longer hours",
+    "Tell employees not to discuss workload concerns"
+  ],
+  answer: 1,
+  reason: "The chapter identifies organizational measures such as supportive leadership, flexible policies, mental health resources, feedback and clearer communication as important for organizational well-being."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A CA receives a difficult client complaint. The CA first recognizes personal irritation, then considers the client's perspective, controls the emotional reaction and responds respectfully while solving the issue. Which sequence of EI competencies is most appropriate?",
+  options: [
+    "Technical skill → financial analysis → auditing",
+    "Fear → disgust → surprise",
+    "Motivation → delegation → time management",
+    "Self-awareness → empathy/social awareness → self-regulation → effective social interaction"
+  ],
+  answer: 3,
+  reason: "The CA first recognizes the personal emotional state, considers the client's perspective, regulates the reaction and then uses appropriate interpersonal behaviour."
+},
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which of the following is a benefit of Emotional Intelligence for a Chartered Accountant?",
+  options: [
+    "It eliminates the need for technical knowledge",
+    "It guarantees that clients will never disagree",
+    "It supports effective client relationships and communication",
+    "It removes all workplace stress"
+  ],
+  answer: 2,
+  reason: "Emotional Intelligence supports effective client relationships, communication, teamwork and other professional interactions."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which competency involves recognizing one's own emotions and their influence on behaviour?",
+  options: [
+    "Self-awareness",
+    "Empathy",
+    "Delegation",
+    "Social networking"
+  ],
+  answer: 0,
+  reason: "Self-awareness involves recognizing and understanding one's own emotions and their influence."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which of the following is associated with the Trait Model of Emotional Intelligence?",
+  options: [
+    "Accounting ability",
+    "Emotional traits",
+    "Financial forecasting",
+    "Technical auditing skills"
+  ],
+  answer: 1,
+  reason: "The Trait Model focuses on emotional traits and related characteristics."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which Navarasa represents courage or heroism?",
+  options: [
+    "Śānta",
+    "Karūṇa",
+    "Bībhatsa",
+    "Vīra"
+  ],
+  answer: 3,
+  reason: "Vīra represents courage or heroism."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which Navarasa represents peace or tranquillity?",
+  options: [
+    "Śānta",
+    "Raudra",
+    "Hāsya",
+    "Bhayānaka"
+  ],
+  answer: 0,
+  reason: "Śānta represents peace or tranquillity."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which of the following is an example of verbal communication?",
+  options: [
+    "Eye contact",
+    "A spoken explanation",
+    "Facial expression",
+    "Hand gesture"
+  ],
+  answer: 1,
+  reason: "Spoken words are a form of verbal communication."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which activity can be used to support stress management?",
+  options: [
+    "Ignoring all deadlines",
+    "Avoiding communication",
+    "Exercise",
+    "Increasing unnecessary workload"
+  ],
+  answer: 2,
+  reason: "Exercise is identified as one of the strategies that can help manage stress."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "What does work-life balance generally refer to?",
+  options: [
+    "Eliminating professional responsibilities",
+    "Working only during weekends",
+    "Avoiding personal activities",
+    "Maintaining an equilibrium between professional and personal life"
+  ],
+  answer: 3,
+  reason: "Work-life balance refers to maintaining an equilibrium between professional responsibilities and personal life."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which strategy can help a professional manage an excessive workload?",
+  options: [
+    "Delegating appropriate tasks",
+    "Accepting every task personally",
+    "Ignoring priorities",
+    "Avoiding all breaks"
+  ],
+  answer: 0,
+  reason: "Delegation can help distribute workload and reduce excessive pressure."
+},
+
+{
+  difficulty: "Easy",
+  case_chapter: "chapter4",
+  question: "Which of the following is a nonverbal communication cue?",
+  options: [
+    "A written letter",
+    "Tone of voice",
+    "An email",
+    "A report"
+  ],
+  answer: 1,
+  reason: "Tone of voice is a nonverbal or vocal communication cue that can influence how a message is interpreted."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A CA notices that a team member looks uncomfortable even though the member says that everything is fine. The CA considers the facial expression and behaviour before continuing the discussion. Which Ability Model capability is being demonstrated?",
+  options: [
+    "Motivation",
+    "Managing emotions",
+    "Perceiving emotions",
+    "Time management"
+  ],
+  answer: 2,
+  reason: "Recognizing emotional information from facial expressions and behaviour reflects perceiving emotions."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A professional recognizes that feeling optimistic is helping generate alternative solutions to a difficult problem. Which Ability Model facet is most relevant?",
+  options: [
+    "Using emotions to facilitate thought",
+    "Perceiving emotions",
+    "Managing organizational resources",
+    "Understanding accounting standards"
+  ],
+  answer: 0,
+  reason: "Using an emotional state to support creative thinking and problem solving reflects using emotions to facilitate thought."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "Which statement best distinguishes the Mixed Model from a model that focuses only on emotional abilities?",
+  options: [
+    "The Mixed Model excludes social behaviour",
+    "The Mixed Model incorporates emotional and social competencies",
+    "The Mixed Model focuses only on accounting skills",
+    "The Mixed Model deals only with stress"
+  ],
+  answer: 1,
+  reason: "Goleman's Mixed Model incorporates emotional and social competencies such as self-awareness, self-regulation, motivation, empathy and social skills."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A CA maintains a clear professional objective and continues working toward it despite repeated difficulties during an engagement. Which Mixed Model competency is most closely reflected?",
+  options: [
+    "Empathy",
+    "Social skills",
+    "Motivation",
+    "Self-awareness"
+  ],
+  answer: 2,
+  reason: "Motivation involves maintaining the drive to achieve goals and persist despite difficulties."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "Which strategy is particularly useful for improving self-regulation according to the chapter?",
+  options: [
+    "Reacting immediately to criticism",
+    "Ignoring emotional reactions",
+    "Avoiding difficult conversations",
+    "Deep breathing and pausing before responding"
+  ],
+  answer: 3,
+  reason: "Deep breathing and deliberately pausing before responding can help regulate emotional reactions."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A CA listens carefully to a client's explanation, asks clarifying questions and attempts to understand the client's concerns before responding. Which behaviour is most evident?",
+  options: [
+    "Active listening and empathy",
+    "Emotional avoidance",
+    "Aggressive communication",
+    "Social isolation"
+  ],
+  answer: 0,
+  reason: "Listening carefully, asking clarifying questions and understanding concerns are elements of active listening and empathy."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A CA feels compassion for a client facing serious financial difficulties and adjusts the interaction accordingly. Which Navarasa is most relevant?",
+  options: [
+    "Vīra",
+    "Karūṇa",
+    "Adbhuta",
+    "Raudra"
+  ],
+  answer: 1,
+  reason: "Karūṇa represents compassion and empathy and is particularly relevant when dealing with clients facing difficulties."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A professional encounters an unexpected financial pattern that leads to a new and innovative solution. Which Navarasa is most closely related?",
+  options: [
+    "Bhayānaka",
+    "Śānta",
+    "Adbhuta",
+    "Bībhatsa"
+  ],
+  answer: 2,
+  reason: "Adbhuta represents surprise or wonder and can relate to unexpected insights and innovative solutions."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "Which approach is most appropriate when cultural differences may affect the interpretation of nonverbal communication?",
+  options: [
+    "Assume the same gesture always has the same meaning",
+    "Ignore all nonverbal cues",
+    "Avoid communicating with international clients",
+    "Consider the cultural context before interpreting the behaviour"
+  ],
+  answer: 3,
+  reason: "The chapter emphasizes cultural sensitivity because nonverbal cues can have different meanings across cultures."
+},
+
+{
+  difficulty: "Medium",
+  case_chapter: "chapter4",
+  question: "A professional has ten pending tasks and decides which ones require immediate attention before beginning work. Which stress-management technique is being used?",
+  options: [
+    "Prioritization",
+    "Emotional suppression",
+    "Avoidance",
+    "Social comparison"
+  ],
+  answer: 0,
+  reason: "Determining which tasks require immediate attention is prioritization, an important time-management strategy."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A senior CA receives an aggressive email from a client. The CA feels angry, recognizes the emotional reaction, waits before replying and then sends a calm response addressing the client's actual concerns. Which sequence is most appropriate?",
+  options: [
+    "Empathy → motivation → fear",
+    "Self-awareness → self-regulation → effective communication",
+    "Delegation → stress → surprise",
+    "Nonverbal communication → humour → motivation"
+  ],
+  answer: 1,
+  reason: "The CA first recognizes the emotional reaction through self-awareness, regulates the response and then communicates effectively."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "Which situation most clearly demonstrates the 'understanding emotions' component of the Ability Model rather than merely perceiving emotions?",
+  options: [
+    "Noticing that a client is frowning",
+    "Recognizing that a colleague is smiling",
+    "Understanding that a client's frustration may have developed because repeated delays have increased anxiety about the engagement",
+    "Observing that a team member is silent"
+  ],
+  answer: 2,
+  reason: "Understanding emotions involves interpreting the causes, relationships and development of emotional states, rather than merely detecting them."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A CA discovers an ethical problem and initially experiences anger. Instead of allowing the anger to determine the response, the CA uses it as motivation to examine the issue carefully and advocate appropriate compliance measures. Which interpretation best fits the chapter?",
+  options: [
+    "The emotion must always be suppressed",
+    "Raudra can be channelled constructively",
+    "Anger automatically proves misconduct",
+    "Emotions should never influence professional behaviour"
+  ],
+  answer: 1,
+  reason: "The chapter explains that Raudra, representing anger or fury, can be channelled constructively toward ethical practices and compliance."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A professional fears making an error because it could have serious legal consequences. The fear causes the professional to double-check calculations and carefully review documentation. Which interpretation is most consistent with the chapter?",
+  options: [
+    "Bhayānaka can underscore diligence and precision",
+    "Bhayānaka always causes poor performance",
+    "Fear is unrelated to professional behaviour",
+    "Fear should always be ignored"
+  ],
+  answer: 0,
+  reason: "The chapter connects Bhayānaka, representing fear or terror, with the fear of errors or legal consequences that can underscore diligence and precision."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A CA is dissatisfied with unethical financial conduct and feels strong aversion toward the behaviour. The CA uses this reaction to reinforce ethical standards. Which Navarasa is most relevant?",
+  options: [
+    "Hāsya",
+    "Śṛṅgāra",
+    "Bībhatsa",
+    "Śānta"
+  ],
+  answer: 2,
+  reason: "Bībhatsa represents disgust or aversion and can arise in response to financial misconduct or unethical behaviour."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A CA's words during a client meeting are technically polite, but the CA's harsh tone causes the client to interpret the message negatively. What does this demonstrate?",
+  options: [
+    "Verbal communication has no relationship with tone",
+    "Nonverbal and vocal cues can influence the meaning of verbal communication",
+    "Written communication is always superior",
+    "Technical accuracy eliminates communication problems"
+  ],
+  answer: 1,
+  reason: "The chapter explains that verbal and nonverbal communication work together and that tone can alter how a message is interpreted."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A CA working from home finishes official working hours but continues checking emails every few minutes until midnight. Which problem is most directly illustrated?",
+  options: [
+    "Improved work-life balance",
+    "Effective delegation",
+    "Blurring of professional and personal boundaries",
+    "Enhanced organizational well-being"
+  ],
+  answer: 2,
+  reason: "Continuing work communication late into personal time illustrates blurred professional and personal boundaries."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "An organization provides flexible working arrangements, mental health resources, wellness initiatives and leaders who openly discuss healthy work practices. Which concept is most directly illustrated?",
+  options: [
+    "Organizational well-being",
+    "Individual avoidance",
+    "Financial control",
+    "Technical competence"
+  ],
+  answer: 0,
+  reason: "Flexible policies, mental health resources, wellness initiatives and supportive leadership are organizational well-being measures."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A CA has a major deadline, several routine tasks and limited time. Instead of personally completing every task, the CA identifies priorities, delegates appropriate work, takes short breaks and consults a colleague about an ethical concern. Which combination of strategies is being used?",
+  options: [
+    "Avoidance, suppression and social comparison",
+    "Only technical skill development",
+    "Time management, delegation, stress management and ethical decision-making",
+    "Only emotional expression"
+  ],
+  answer: 2,
+  reason: "The situation combines prioritization and delegation with stress-management practices and consultation regarding an ethical concern."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "A CA notices that a colleague is unusually quiet during a team meeting. Instead of assuming the colleague is uninterested, the CA privately asks whether there is a concern, listens to the explanation and adjusts the discussion accordingly. Which combination is most evident?",
+  options: [
+    "Perceiving emotions, empathy and social awareness",
+    "Fear, disgust and anger",
+    "Financial analysis and auditing",
+    "Work avoidance and emotional suppression"
+  ],
+  answer: 0,
+  reason: "The CA notices a possible emotional cue, seeks to understand the colleague's perspective and adjusts the interaction accordingly."
+},
+
+{
+  difficulty: "Hard",
+  case_chapter: "chapter4",
+  question: "Which situation best illustrates the difference between simply experiencing an emotion and using Emotional Intelligence effectively?",
+  options: [
+    "A professional feels anger and immediately reacts aggressively",
+    "A professional feels fear and avoids the task completely",
+    "A professional feels frustration, recognizes it, considers its effect on judgment and chooses a constructive response",
+    "A professional feels happiness and ignores all risks"
+  ],
+  answer: 2,
+  reason: "Emotional Intelligence involves recognizing, understanding and managing emotions so that they can be used constructively in behaviour and decision-making."
 }
 
 
