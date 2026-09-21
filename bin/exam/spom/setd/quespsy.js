@@ -4071,7 +4071,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 16 – The Worried Client</strong></p>
 
     <p>Rohan, a Chartered Accountant, was meeting Mr. Mehta, the owner of a small manufacturing business. Mr. Mehta had recently received a notice regarding certain discrepancies in his financial records. He entered Rohan's office looking nervous and repeatedly said that he was worried about what might happen to his business.</p>
 
@@ -4147,7 +4146,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 17 – The Difficult Team Meeting</strong></p>
 
     <p>A CA firm was preparing an important client report. During a team meeting, two members, Arjun and Sameer, disagreed about how the work should be divided. Arjun believed that Sameer was not completing his part quickly enough, while Sameer felt that Arjun was assigning him more work than the other team members.</p>
 
@@ -4223,7 +4221,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 18 – Too Many Deadlines</strong></p>
 
     <p>Neha was working on several assignments during a particularly busy period. She had a tax-related assignment due on Monday, an audit file that needed attention on Tuesday and several smaller client requests that had accumulated during the week.</p>
 
@@ -4299,7 +4296,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 19 – The Annual Report Presentation</strong></p>
 
     <p>Vikram was presenting an annual financial report to a group of senior management members. He explained the major financial information using simple language and paused whenever the audience appeared confused.</p>
 
@@ -4375,7 +4371,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 20 – The Remote Working Routine</strong></p>
 
     <p>Ananya was working remotely for a CA firm. At first, she kept her laptop open throughout the day and frequently checked work messages even after dinner. She felt that because she was working from home, she was expected to remain available at all times.</p>
 
@@ -4456,7 +4451,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 21 – The Ethical Pressure</strong></p>
 
     <p>Meera was part of an audit team reviewing a growing company. During the audit, she discovered a transaction that appeared unusual. When she requested supporting documents, the client's finance manager told her that the transaction was commercially sensitive and suggested that the team should not spend too much time examining it because the reporting deadline was approaching.</p>
 
@@ -4532,8 +4526,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 22 – The Distressed Business Owner</strong></p>
-
     <p>Rahul was advising a small business owner whose business had experienced serious financial difficulties. During a meeting, the owner explained that several employees depended on the business and that he was worried about being unable to pay them on time.</p>
 
     <p>Rahul initially planned to discuss restructuring options immediately. However, after noticing the client's emotional condition, he changed the sequence of the conversation. He allowed the client to explain the situation fully and acknowledged the pressure the client was experiencing.</p>
@@ -4608,7 +4600,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 23 – The Cross-Cultural Meeting</strong></p>
 
     <p>Aditya was working with an international client. During a virtual meeting, Aditya maintained frequent eye contact with the camera because he believed it showed confidence and attention. However, one member of the client's team appeared uncomfortable and became less verbally engaged.</p>
 
@@ -4684,7 +4675,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 24 – The Exhausted Audit Team</strong></p>
 
     <p>A CA firm was approaching the end of a demanding audit season. The team had worked long hours for several weeks. Kavya, a senior member, noticed that team members were becoming less patient with one another and that minor disagreements were occurring more frequently.</p>
 
@@ -4762,7 +4752,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 25 – The Junior's Mistake</strong></p>
 
     <p>During a client assignment, a junior employee named Dev made an error while preparing part of a working paper. When the error was discovered, Dev immediately became nervous and said that he was afraid the mistake would damage his reputation.</p>
 
@@ -4843,7 +4832,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 26 – The Client Who Wanted a Quick Answer</strong></p>
 
     <p>Arvind was advising a large corporate client shortly before an important reporting deadline. During his review, he noticed that management had adopted an accounting treatment that required careful examination. The finance director told Arvind that the board meeting was scheduled for the next morning and requested a quick confirmation that the treatment could be accepted.</p>
 
@@ -4921,7 +4909,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 27 – When the Same Gesture Means Something Different</strong></p>
 
     <p>Shreya was leading a virtual discussion involving professionals from India, Europe and East Asia. The meeting concerned a complicated advisory assignment, and Shreya wanted to ensure that everyone was following the discussion.</p>
 
@@ -4999,7 +4986,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 28 – The Deadline, the Team and the Personal Cost</strong></p>
 
     <p>Vivek was a senior CA working on a major assignment with a strict deadline. For several weeks, he had been working late into the night. At first, he believed that working longer hours was the only way to guarantee completion.</p>
 
@@ -5079,7 +5065,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 29 – The Organization That Looked Only at Deadlines</strong></p>
 
     <p>A growing CA firm had developed a reputation for completing client assignments quickly. Management closely monitored deadlines and productivity figures, but there was little discussion about employee well-being.</p>
 
@@ -5159,7 +5144,6 @@ const caseStudies = [
   chapter: "Chapter 4",
 
   caseText: `
-    <p><strong>Case 30 – Anger, Ethics and Constructive Action</strong></p>
 
     <p>Nikhil was reviewing the work of a professional team when he discovered evidence suggesting that certain employees had deliberately ignored an internal compliance requirement. He was deeply disturbed by what he found. He felt angry because the requirement had been introduced to protect the organization from serious risks.</p>
 
@@ -6097,6 +6081,1749 @@ const caseStudies = [
   ],
   answer: 2,
   reason: "Emotional Intelligence involves recognizing, understanding and managing emotions so that they can be used constructively in behaviour and decision-making."
+},
+// Chapter5
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_001",
+  case_chapter: "chapter5",
+
+  question: "The term 'philosophy' is etymologically associated with which of the following meanings?",
+
+  options: [
+    "Science of nature",
+    "Love for wisdom",
+    "Study of society",
+    "Search for material wealth"
+  ],
+
+  answer: 1,
+
+  reason: "The chapter explains that the term 'philosophy' is etymologically rooted in 'love for wisdom' and represents a rational quest for knowledge."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_002",
+  case_chapter: "chapter5",
+
+  question: "Which branch of philosophy is primarily concerned with the nature of reality and existence?",
+
+  options: [
+    "Axiology",
+    "Epistemology",
+    "Metaphysics",
+    "Aesthetics"
+  ],
+
+  answer: 2,
+
+  reason: "Metaphysics is described as the 'theory of reality' and examines fundamental questions concerning reality, existence and the nature of what exists."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_003",
+  case_chapter: "chapter5",
+
+  question: "Which branch of philosophy is known as the 'theory of knowledge'?",
+
+  options: [
+    "Epistemology",
+    "Metaphysics",
+    "Aesthetics",
+    "Ethics"
+  ],
+
+  answer: 0,
+
+  reason: "Epistemology is the theory of knowledge. It investigates the nature of knowledge, how knowledge is acquired, and the distinction between knowledge, belief and opinion."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_004",
+  case_chapter: "chapter5",
+
+  question: "In Indian epistemology, what is 'Pratyaksha'?",
+
+  options: [
+    "Inference",
+    "Comparison",
+    "Perception",
+    "Postulation"
+  ],
+
+  answer: 2,
+
+  reason: "Pratyaksha refers to perception and is considered direct knowledge obtained through the contact of the sense organs with the object."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_005",
+  case_chapter: "chapter5",
+
+  question: "Which of the following is one of the four Purusharthas?",
+
+  options: [
+    "Pratyaksha",
+    "Dharma",
+    "Anumana",
+    "Aesthetics"
+  ],
+
+  answer: 1,
+
+  reason: "The four Purusharthas are Dharma, Artha, Kama and Moksha. Dharma represents righteousness and moral and ethical duties."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch5_006",
+  case_chapter: "chapter5",
+
+  question: "An auditor directly examines supporting documents and verifies whether the recorded transactions actually exist. Which Indian source of valid knowledge is most closely reflected in this approach?",
+
+  options: [
+    "Arthapatti",
+    "Pratyaksha",
+    "Upamana",
+    "Anumana"
+  ],
+
+  answer: 1,
+
+  reason: "Pratyaksha emphasizes direct observation and firsthand verification. The chapter specifically relates it to accuracy, reliability and verification in accountancy."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch5_007",
+  case_chapter: "chapter5",
+
+  question: "An auditor observes smoke-like evidence of a problem and, based on an established relationship between the observed indicator and its underlying cause, concludes that the underlying problem exists. Which pramāṇa is being applied?",
+
+  options: [
+    "Shabda",
+    "Anupalabdhi",
+    "Anumana",
+    "Upamana"
+  ],
+
+  answer: 2,
+
+  reason: "Anumana involves indirect reasoning or inference from an observed indicator to an unobserved conclusion. The chapter illustrates this through inferring fire from smoke."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch5_008",
+  case_chapter: "chapter5",
+
+  question: "A Chartered Accountant relies on the authoritative words of a trustworthy expert and established professional guidance while updating professional knowledge. Which pramāṇa most directly corresponds to this situation?",
+
+  options: [
+    "Shabda",
+    "Pratyaksha",
+    "Anupalabdhi",
+    "Arthapatti"
+  ],
+
+  answer: 0,
+
+  reason: "Shabda, or verbal testimony, is treated as a valid source of knowledge when it comes from a trustworthy person. The chapter connects it with expert learning and authoritative professional knowledge."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch5_009",
+  case_chapter: "chapter5",
+
+  question: "A financial analyst compares the performance of a company with similar companies and uses the similarity to improve understanding of its financial position. Which source of knowledge is most closely represented?",
+
+  options: [
+    "Anupalabdhi",
+    "Upamana",
+    "Pratyaksha",
+    "Shabda"
+  ],
+
+  answer: 1,
+
+  reason: "Upamana refers to comparison and acquiring knowledge through similarity. The chapter connects it with comparative analysis, performance evaluation and financial decision-making."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch5_010",
+  case_chapter: "chapter5",
+
+  question: "An auditor identifies that an important supporting document is absent from a set of records and treats the absence itself as relevant information for further investigation. Which concept best describes this?",
+
+  options: [
+    "Axiology",
+    "Arthapatti",
+    "Anupalabdhi",
+    "Upamana"
+  ],
+
+  answer: 2,
+
+  reason: "Anupalabdhi concerns knowledge of non-existence or absence. The chapter specifically relates it to identifying missing data, potential errors and possible fraudulent activities in audits."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch5_011",
+  case_chapter: "chapter5",
+
+  question: "A company's reported financial position appears inconsistent with several independently verified facts. The auditor concludes that an additional unobserved fact must exist to reconcile the conflicting information. Which Indian epistemological concept most directly explains this reasoning?",
+
+  options: [
+    "Pratyaksha",
+    "Arthapatti",
+    "Shabda",
+    "Upamana"
+  ],
+
+  answer: 1,
+
+  reason: "Arthapatti is postulation. It involves assuming an unperceived fact when two known or perceived facts conflict and the additional fact is necessary to reconcile the inconsistency."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch5_012",
+  case_chapter: "chapter5",
+
+  question: "An auditor evaluates whether the financial statements accurately represent the actual economic condition of the business. The central concern is whether the statements conform to the underlying reality. Which theory of truth is most directly applicable?",
+
+  options: [
+    "Pragmatic Theory",
+    "Coherence Theory",
+    "Correspondence Theory",
+    "Metaethical Theory"
+  ],
+
+  answer: 2,
+
+  reason: "Correspondence Theory holds that a proposition is true when it conforms or corresponds to reality. The chapter specifically applies this idea to financial reporting and ensuring that financial information reflects economic reality."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch5_013",
+  case_chapter: "chapter5",
+
+  question: "A financial reporting team rejects a proposed accounting interpretation because it conflicts with several other principles already accepted within the accounting framework, even though the individual interpretation appears plausible in isolation. Which theory of truth is most clearly reflected?",
+
+  options: [
+    "Correspondence Theory",
+    "Pragmatic Theory",
+    "Coherence Theory",
+    "Arthapatti"
+  ],
+
+  answer: 2,
+
+  reason: "Coherence Theory determines truth by the internal consistency and alignment of a proposition with other propositions within a systematic framework. The chapter applies this idea to consistency among accounting principles and financial reports."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch5_014",
+  case_chapter: "chapter5",
+
+  question: "A CA considers two possible reporting approaches and gives significant weight to the practical consequences of the information for stakeholders and decision-making. The approach is evaluated largely according to its usefulness and real-world effects. Which theory of truth is most closely represented?",
+
+  options: [
+    "Correspondence Theory",
+    "Coherence Theory",
+    "Pragmatic Theory",
+    "Metaphysics"
+  ],
+
+  answer: 2,
+
+  reason: "Pragmatism connects truth with practical consequences and usefulness. The chapter explains that the validity of a statement may be considered in terms of its tangible outcomes and effectiveness in guiding action."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch5_015",
+  case_chapter: "chapter5",
+
+  question: "A CA faces a situation involving a conflict between commercial pressure and the obligation to maintain ethical financial reporting. Instead of merely describing how professionals usually behave, the CA examines what ought to be done according to moral standards and principles. Which area of ethics is most directly involved?",
+
+  options: [
+    "Descriptive ethics",
+    "Metaethics",
+    "Normative ethics",
+    "Aesthetics"
+  ],
+
+  answer: 2,
+
+  reason: "Normative ethics investigates standards concerning the rightness and wrongness of actions and asks how one ought to act morally. Descriptive ethics instead examines observed patterns of behaviour, while metaethics examines the meaning and foundations of moral concepts."
+},
+{
+  difficulty: "Hard",
+  case_id: "phy_ch5_001",
+  case_chapter: "chapter5",
+
+  question: "...",
+
+  options: [
+    "...",
+    "...",
+    "...",
+    "..."
+  ],
+
+  answer: 2,
+
+  reason: "..."
+},
+
+{
+  case_id: "PSY_CH5_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Rohan, a trainee accountant, was reviewing supporting documents for a company's financial records. Instead of relying only on explanations given by others, he directly examined invoices, receipts and other available records. He wanted to establish the facts through what he could personally observe and verify.</p>
+
+    <p>During the review, Rohan noticed that one transaction appeared different from the supporting documents. He checked the original records and confirmed the discrepancy before reporting it to his senior.</p>
+
+    <p>Rohan's approach helped him distinguish between information based on direct observation and information received from other sources.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which source of knowledge is most clearly demonstrated by Rohan's direct examination of the records?",
+      options: [
+        "Pratyaksha",
+        "Shabda",
+        "Upamana",
+        "Arthapatti"
+      ],
+      answer: 0,
+      reason: "Pratyaksha refers to direct perception or knowledge obtained through direct observation."
+    },
+    {
+      question: "Why did Rohan examine the original records himself?",
+      options: [
+        "To avoid understanding the transaction",
+        "To obtain firsthand verification of the information",
+        "To replace all accounting principles",
+        "To make the review more complicated"
+      ],
+      answer: 1,
+      reason: "Direct examination allows information to be verified firsthand rather than relying only on information received from others."
+    },
+    {
+      question: "What did Rohan identify during his review?",
+      options: [
+        "A discrepancy in the records",
+        "A new accounting standard",
+        "A change in company ownership",
+        "A philosophical theory"
+      ],
+      answer: 0,
+      reason: "The case states that Rohan noticed a discrepancy between a transaction and its supporting documents."
+    },
+    {
+      question: "Which philosophical branch is primarily concerned with the theory of knowledge?",
+      options: [
+        "Aesthetics",
+        "Metaphysics",
+        "Epistemology",
+        "Ethics"
+      ],
+      answer: 2,
+      reason: "Epistemology is the branch of philosophy concerned with knowledge, belief, justification and the sources of knowledge."
+    },
+    {
+      question: "What was the main benefit of Rohan's approach?",
+      options: [
+        "He avoided examining evidence",
+        "He distinguished direct verification from information received from others",
+        "He relied entirely on assumptions",
+        "He ignored discrepancies"
+      ],
+      answer: 1,
+      reason: "Rohan's direct examination helped him distinguish firsthand verification from information obtained through other sources."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Meera was preparing an analysis of two departments of a company. She noticed that one department had significantly higher administrative expenses than the other. Instead of looking at the figures in isolation, she compared the expenses, activities and performance of both departments.</p>
+
+    <p>The comparison helped Meera identify differences in spending patterns and understand why the departments were producing different results.</p>
+
+    <p>Meera then used the findings to support the management's evaluation of departmental performance.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which pramana is most directly reflected in Meera's comparison of the two departments?",
+      options: [
+        "Anupalabdhi",
+        "Upamana",
+        "Shabda",
+        "Pratyaksha"
+      ],
+      answer: 1,
+      reason: "Upamana refers to knowledge obtained through comparison or similarity."
+    },
+    {
+      question: "What did Meera compare?",
+      options: [
+        "Only employee names",
+        "Only company policies",
+        "Expenses, activities and performance",
+        "Only philosophical concepts"
+      ],
+      answer: 2,
+      reason: "Meera compared the expenses, activities and performance of the two departments."
+    },
+    {
+      question: "What did the comparison help Meera understand?",
+      options: [
+        "Differences in spending patterns and performance",
+        "The meaning of liberation",
+        "The definition of aesthetics",
+        "The history of Western philosophy"
+      ],
+      answer: 0,
+      reason: "The comparison helped Meera identify differences in spending patterns and understand differences in departmental results."
+    },
+    {
+      question: "Which branch of philosophy studies values?",
+      options: [
+        "Logic",
+        "Epistemology",
+        "Axiology",
+        "Metaphysics"
+      ],
+      answer: 2,
+      reason: "Axiology is the philosophical study of value."
+    },
+    {
+      question: "How did Meera use the results of her comparison?",
+      options: [
+        "To ignore departmental performance",
+        "To support management's evaluation",
+        "To eliminate all financial records",
+        "To avoid analysing expenses"
+      ],
+      answer: 1,
+      reason: "The case states that Meera used her findings to support management's evaluation of departmental performance."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Arjun was reviewing information about a company and found that an important document mentioned in the records could not be located. He checked the available files carefully and confirmed that the document was absent.</p>
+
+    <p>Arjun did not immediately assume that the document had been destroyed or that someone had intentionally removed it. He simply recorded the fact that the expected document was not present and informed his senior about the missing information.</p>
+
+    <p>This helped the review team identify an area requiring further investigation.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which pramana is most closely associated with Arjun's knowledge that the document was absent?",
+      options: [
+        "Anupalabdhi",
+        "Upamana",
+        "Shabda",
+        "Anumana"
+      ],
+      answer: 0,
+      reason: "Anupalabdhi refers to knowledge of absence or non-existence."
+    },
+    {
+      question: "What did Arjun actually establish?",
+      options: [
+        "That the document had been destroyed",
+        "That the document was not present in the available files",
+        "That fraud had definitely occurred",
+        "That the company had violated a law"
+      ],
+      answer: 1,
+      reason: "Arjun established only that the expected document was absent from the available files."
+    },
+    {
+      question: "What did Arjun do after identifying the missing information?",
+      options: [
+        "He ignored it",
+        "He deleted the remaining records",
+        "He informed his senior",
+        "He immediately accused an employee"
+      ],
+      answer: 2,
+      reason: "The case states that Arjun recorded the absence and informed his senior."
+    },
+    {
+      question: "Which branch deals with questions concerning reality and existence?",
+      options: [
+        "Axiology",
+        "Metaphysics",
+        "Aesthetics",
+        "Ethics"
+      ],
+      answer: 1,
+      reason: "Metaphysics is concerned with the nature of reality and existence."
+    },
+    {
+      question: "Why was Arjun's approach useful to the review team?",
+      options: [
+        "It identified an area requiring further investigation",
+        "It proved fraud immediately",
+        "It removed the need for evidence",
+        "It prevented further review"
+      ],
+      answer: 0,
+      reason: "Identifying missing information helped the review team determine an area that required further investigation."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Neha attended a professional seminar where an experienced expert explained a recent accounting requirement. Neha carefully listened to the explanation and noted the important points.</p>
+
+    <p>Later, while applying the requirement to a practical situation, Neha did not blindly accept everything she had heard. She considered whether the explanation came from a trustworthy and authoritative source and examined how it applied to the facts before using it.</p>
+
+    <p>This approach allowed Neha to make use of information obtained through verbal testimony while still evaluating its reliability.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which pramana is demonstrated by Neha receiving knowledge from the expert's explanation?",
+      options: [
+        "Shabda",
+        "Anupalabdhi",
+        "Upamana",
+        "Pratyaksha"
+      ],
+      answer: 0,
+      reason: "Shabda refers to valid verbal testimony from a trustworthy source."
+    },
+    {
+      question: "What was important before Neha relied on the information?",
+      options: [
+        "The information being entertaining",
+        "The source being trustworthy and authoritative",
+        "The information being very long",
+        "The seminar being conducted online"
+      ],
+      answer: 1,
+      reason: "The chapter explains Shabda in terms of valid verbal testimony from a trustworthy source."
+    },
+    {
+      question: "What did Neha avoid doing?",
+      options: [
+        "Listening to experts",
+        "Taking notes",
+        "Blindly accepting information without evaluation",
+        "Applying knowledge to practical situations"
+      ],
+      answer: 2,
+      reason: "Neha evaluated the reliability and applicability of the information rather than accepting it blindly."
+    },
+    {
+      question: "Which philosophical branch focuses on right and wrong and moral action?",
+      options: [
+        "Ethics",
+        "Metaphysics",
+        "Aesthetics",
+        "Epistemology"
+      ],
+      answer: 0,
+      reason: "Ethics concerns right and wrong, moral choices and moral action."
+    },
+    {
+      question: "Which professional situation is most similar to Neha's use of Shabda?",
+      options: [
+        "Using authoritative professional guidance after evaluating its reliability",
+        "Guessing an accounting figure",
+        "Ignoring professional guidance",
+        "Comparing two office buildings"
+      ],
+      answer: 0,
+      reason: "The chapter identifies authoritative pronouncements and expert guidance as relevant applications of verbal testimony in accountancy."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Vikram was preparing a report for management. He believed that a report should not merely contain correct figures; it should also present information clearly so that users could understand and appreciate the information being communicated.</p>
+
+    <p>He therefore arranged the information systematically and used a clear presentation so that important financial information could be understood easily.</p>
+
+    <p>Vikram's approach reflected the idea that presentation can contribute to the effective communication of information.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which philosophical area is concerned with beauty and appreciation of presentation?",
+      options: [
+        "Epistemology",
+        "Aesthetics",
+        "Metaphysics",
+        "Logic"
+      ],
+      answer: 1,
+      reason: "Aesthetics is the philosophical inquiry into beauty, art and appreciation."
+    },
+    {
+      question: "What was Vikram's main concern apart from accuracy?",
+      options: [
+        "Clear presentation of information",
+        "Avoiding financial information",
+        "Removing all explanations",
+        "Ignoring users of the report"
+      ],
+      answer: 0,
+      reason: "Vikram wanted the information to be arranged and presented clearly so that users could understand it."
+    },
+    {
+      question: "Why did Vikram arrange the information systematically?",
+      options: [
+        "To make the report harder to understand",
+        "To improve communication of important information",
+        "To remove financial data",
+        "To avoid preparing the report"
+      ],
+      answer: 1,
+      reason: "A clear and systematic presentation can improve the communication and understanding of financial information."
+    },
+    {
+      question: "Which branch of philosophy is described as the science of valid and sound reasoning?",
+      options: [
+        "Axiology",
+        "Ethics",
+        "Logic",
+        "Aesthetics"
+      ],
+      answer: 2,
+      reason: "Logic is concerned with valid and sound reasoning."
+    },
+    {
+      question: "Which statement best describes Vikram's approach?",
+      options: [
+        "Only the numerical accuracy of information matters",
+        "Presentation has no role in communication",
+        "Clear presentation can support effective communication",
+        "Financial reports should avoid systematic presentation"
+      ],
+      answer: 2,
+      reason: "The case demonstrates that clear and systematic presentation can contribute to effective communication of information."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS06",
+  difficulty: "Medium",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Karan was reviewing the financial position of a company. He noticed that the company's records showed a particular level of inventory, but several related transactions suggested that the reported figure might not represent the complete economic situation.</p>
+
+    <p>Karan examined the available information and found that certain transactions had not been clearly reflected in the records he initially reviewed. He used the known facts to develop a reasonable explanation that could reconcile the apparently inconsistent information.</p>
+
+    <p>He did not treat his explanation as a directly observed fact. Instead, he recognized that he was using the available evidence to postulate an unperceived fact that could explain the observed circumstances.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which pramana is most closely reflected in Karan's reasoning?",
+      options: [
+        "Pratyaksha",
+        "Arthapatti",
+        "Shabda",
+        "Upamana"
+      ],
+      answer: 1,
+      reason: "Arthapatti involves postulating an unperceived fact to reconcile apparently conflicting or inconsistent perceived facts."
+    },
+    {
+      question: "Why was Karan's conclusion different from direct perception?",
+      options: [
+        "He directly observed every hidden transaction",
+        "He used known facts to postulate an explanation for an unperceived fact",
+        "He relied only on a comparison",
+        "He ignored the available evidence"
+      ],
+      answer: 1,
+      reason: "Karan did not directly observe the unperceived fact; he used available facts to develop a necessary explanation."
+    },
+    {
+      question: "What problem was Karan attempting to resolve?",
+      options: [
+        "A difference between observed information and the apparent economic position",
+        "A disagreement about the meaning of aesthetics",
+        "A question about artistic beauty",
+        "A problem involving only employee attendance"
+      ],
+      answer: 0,
+      reason: "Karan used postulation to reconcile information that appeared inconsistent with the company's reported economic position."
+    },
+    {
+      question: "Which statement best describes Arthapatti?",
+      options: [
+        "Knowledge obtained only through direct sensory contact",
+        "Knowledge obtained by comparing two similar objects",
+        "Postulation of an unperceived fact to explain perceived facts",
+        "Knowledge obtained only through verbal testimony"
+      ],
+      answer: 2,
+      reason: "Arthapatti is postulation used to reconcile facts when the available observations require an additional unperceived explanation."
+    },
+    {
+      question: "Which accountancy situation from the chapter is consistent with Arthapatti?",
+      options: [
+        "Bridging gaps in financial information by postulating a hidden transaction",
+        "Only observing an invoice directly",
+        "Only comparing two departments",
+        "Only listening to an expert"
+      ],
+      answer: 0,
+      reason: "The chapter connects Arthapatti with bridging data gaps and identifying possible hidden transactions."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS07",
+  difficulty: "Medium",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Priya was evaluating whether a company's financial statements provided a reliable representation of its economic position. She examined whether the information presented in the statements corresponded with the underlying economic reality.</p>
+
+    <p>In one area, the reported figure appeared accurate only if it was considered together with the actual transaction and supporting evidence. Priya therefore focused on whether the proposition stated in the financial report matched the facts it was supposed to represent.</p>
+
+    <p>She concluded that the reliability of the statement depended on its correspondence with the relevant reality rather than merely on whether the statement sounded internally consistent.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which theory of truth is most directly illustrated by Priya's approach?",
+      options: [
+        "Pragmatic theory",
+        "Coherence theory",
+        "Correspondence theory",
+        "Aesthetic theory"
+      ],
+      answer: 2,
+      reason: "Correspondence theory considers a proposition true when it aligns or corresponds with reality."
+    },
+    {
+      question: "What was Priya primarily checking?",
+      options: [
+        "Whether the statement matched the underlying economic reality",
+        "Whether the report was visually attractive",
+        "Whether employees liked the report",
+        "Whether the report contained philosophical terminology"
+      ],
+      answer: 0,
+      reason: "Priya focused on whether the financial statement corresponded with the economic reality it represented."
+    },
+    {
+      question: "How does correspondence differ from merely checking internal consistency?",
+      options: [
+        "Correspondence focuses on alignment with reality",
+        "Correspondence ignores facts completely",
+        "Correspondence focuses only on presentation",
+        "Correspondence means accepting every statement as true"
+      ],
+      answer: 0,
+      reason: "Correspondence theory evaluates truth by considering whether a proposition aligns with the relevant reality."
+    },
+    {
+      question: "Which theory would focus more directly on consistency within a system of statements?",
+      options: [
+        "Correspondence",
+        "Coherence",
+        "Pragmatic",
+        "Anupalabdhi"
+      ],
+      answer: 1,
+      reason: "Coherence theory considers truth in terms of internal consistency and alignment within a system."
+    },
+    {
+      question: "Why was supporting evidence relevant to Priya's evaluation?",
+      options: [
+        "It helped determine whether the reported information reflected the underlying facts",
+        "It made the report longer",
+        "It replaced all accounting principles",
+        "It was relevant only to aesthetics"
+      ],
+      answer: 0,
+      reason: "Supporting evidence helped Priya assess whether the reported proposition corresponded with the underlying economic reality."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS08",
+  difficulty: "Medium",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Sameer was reviewing a company's accounting system and noticed that several accounting records appeared consistent with one another. The figures in different statements followed the same accounting principles, and the explanations provided for related transactions did not contradict each other.</p>
+
+    <p>Sameer understood that consistency within the system was an important consideration, but he also recognized that internal consistency alone was not necessarily the same as correspondence with external reality.</p>
+
+    <p>He therefore evaluated whether the information formed a coherent system while keeping the distinction between coherence and correspondence in mind.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which theory of truth is primarily reflected in Sameer's focus on consistency?",
+      options: [
+        "Pragmatic theory",
+        "Correspondence theory",
+        "Coherence theory",
+        "Aesthetic theory"
+      ],
+      answer: 2,
+      reason: "Coherence theory evaluates truth through internal consistency and alignment within a system."
+    },
+    {
+      question: "What did Sameer observe in the accounting records?",
+      options: [
+        "Contradictions in every statement",
+        "Consistency among related records and principles",
+        "Only missing documents",
+        "Only verbal explanations"
+      ],
+      answer: 1,
+      reason: "The case states that the records followed consistent principles and the explanations did not contradict one another."
+    },
+    {
+      question: "What distinction did Sameer recognize?",
+      options: [
+        "Coherence and correspondence are identical",
+        "Internal consistency is different from correspondence with external reality",
+        "Aesthetics and ethics are identical",
+        "Logic has no relationship with reasoning"
+      ],
+      answer: 1,
+      reason: "The case specifically distinguishes internal coherence from correspondence with external reality."
+    },
+    {
+      question: "If a set of accounting statements is internally consistent, which concept is most directly relevant?",
+      options: [
+        "Coherence",
+        "Anupalabdhi",
+        "Pratyaksha",
+        "Ahimsa"
+      ],
+      answer: 0,
+      reason: "Coherence concerns consistency and compatibility among statements or beliefs within a system."
+    },
+    {
+      question: "Why should Sameer not treat consistency alone as proof of correspondence with reality?",
+      options: [
+        "A system can be internally consistent without necessarily matching external reality",
+        "Consistency always proves fraud",
+        "Internal consistency has no relevance to reasoning",
+        "Correspondence deals only with artistic beauty"
+      ],
+      answer: 0,
+      reason: "The distinction in the chapter shows that coherence concerns internal consistency, while correspondence concerns alignment with reality."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS09",
+  difficulty: "Medium",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Ananya was working on a professional ethics issue involving the disclosure of financial information. The management wanted to present selected information in a way that would create a favourable impression, while Ananya believed that the information should be presented transparently to the relevant users.</p>
+
+    <p>Ananya first considered the broader question of what makes an action morally right or wrong. She then applied ethical principles to the specific financial disclosure situation and considered the practical consequences of the possible approaches.</p>
+
+    <p>Rather than treating ethics as merely a description of what companies commonly do, Ananya focused on how the ethical principles should be applied to the particular professional situation.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which branch of ethics is most directly involved when Ananya applies ethical principles to a specific financial disclosure issue?",
+      options: [
+        "Descriptive ethics",
+        "Applied ethics",
+        "Metaethics",
+        "Aesthetics"
+      ],
+      answer: 1,
+      reason: "Applied ethics concerns the practical application of ethical principles to specific real-world issues."
+    },
+    {
+      question: "Why would describing what companies commonly do represent a different approach?",
+      options: [
+        "Descriptive ethics observes how people actually behave and identifies patterns",
+        "Descriptive ethics always determines the correct moral action",
+        "Descriptive ethics is concerned only with beauty",
+        "Descriptive ethics studies only physical reality"
+      ],
+      answer: 0,
+      reason: "Descriptive ethics observes how people live or behave and generalizes patterns without itself determining what is morally right."
+    },
+    {
+      question: "What issue was central to Ananya's professional situation?",
+      options: [
+        "Transparency in financial disclosure",
+        "Comparison of artistic styles",
+        "The existence of physical objects",
+        "The meaning of perception"
+      ],
+      answer: 0,
+      reason: "The case concerns whether financial information should be presented transparently to relevant users."
+    },
+    {
+      question: "Which ethical approach is concerned with determining standards of right and wrong?",
+      options: [
+        "Normative ethics",
+        "Descriptive ethics",
+        "Aesthetics",
+        "Metaphysics"
+      ],
+      answer: 0,
+      reason: "Normative ethics develops standards concerning what ought to be considered right or wrong and how one should act."
+    },
+    {
+      question: "What makes Ananya's approach an example of applied ethics?",
+      options: [
+        "She studied only historical philosophical ideas",
+        "She applied ethical principles to a concrete professional disclosure problem",
+        "She merely recorded common business practices",
+        "She avoided making ethical considerations"
+      ],
+      answer: 1,
+      reason: "Applied ethics involves bringing ethical reasoning to specific practical and real-world issues."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS10",
+  difficulty: "Medium",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Rahul was studying Indian philosophical thought and initially found its discussion of suffering difficult to understand. As he continued studying, he learned that Indian philosophy does not simply stop at recognizing suffering. It also examines its causes and presents paths intended to overcome it.</p>
+
+    <p>Rahul learned that ignorance is described as a root cause of suffering and that right knowledge can play a role in liberation. He also learned about the importance of moral order and ethical conduct in the broader philosophical framework.</p>
+
+    <p>Rahul therefore understood that the philosophical discussion moved from recognizing a problem toward understanding its cause and considering a way of overcoming it.</p>
+  `,
+
+  questions: [
+    {
+      question: "According to the chapter, what is identified as a root cause of suffering in Indian philosophy?",
+      options: [
+        "Knowledge",
+        "Ignorance",
+        "Aesthetics",
+        "Comparison"
+      ],
+      answer: 1,
+      reason: "The chapter identifies ignorance as the root cause of suffering and presents right knowledge as a means toward liberation."
+    },
+    {
+      question: "What does Indian philosophy emphasize after recognizing suffering?",
+      options: [
+        "Only the existence of suffering",
+        "Paths and means to overcome suffering",
+        "Avoiding all ethical questions",
+        "Rejecting the idea of liberation"
+      ],
+      answer: 1,
+      reason: "The chapter explains that Indian philosophy moves beyond pessimism by considering paths for overcoming suffering."
+    },
+    {
+      question: "What is identified as the ultimate goal in most Indian philosophical traditions discussed in the chapter?",
+      options: [
+        "Material wealth alone",
+        "Liberation",
+        "Professional success alone",
+        "Aesthetic appreciation alone"
+      ],
+      answer: 1,
+      reason: "The chapter identifies liberation as the ultimate goal of most Indian philosophical traditions, with the noted exception of Carvaka."
+    },
+    {
+      question: "Which statement best reflects the chapter's description of Indian philosophy?",
+      options: [
+        "It is concerned only with theoretical speculation",
+        "It combines practical, ethical and spiritual dimensions",
+        "It rejects questions about knowledge",
+        "It focuses exclusively on artistic beauty"
+      ],
+      answer: 1,
+      reason: "The chapter describes Indian philosophy as having a practical, ethical and spiritual orientation rather than being purely theoretical."
+    },
+    {
+      question: "What role does right knowledge play in the framework described in the case?",
+      options: [
+        "It is associated with overcoming ignorance and moving toward liberation",
+        "It increases attachment to material possessions",
+        "It eliminates the need for ethical conduct",
+        "It is unrelated to suffering"
+      ],
+      answer: 0,
+      reason: "The chapter connects ignorance with suffering and right knowledge with the possibility of liberation."
+    }
+  ]
+},
+{
+  case_id: "PSY_CH5_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Rohan, a trainee accountant, was reviewing supporting documents for a company's financial records. Instead of relying only on explanations given by others, he directly examined invoices, receipts and other available records. He wanted to establish the facts through what he could personally observe and verify.</p>
+
+    <p>During the review, Rohan noticed that one transaction appeared different from the supporting documents. He checked the original records and confirmed the discrepancy before reporting it to his senior.</p>
+
+    <p>Rohan's approach helped him distinguish between information based on direct observation and information received from other sources.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which source of knowledge is most clearly demonstrated by Rohan's direct examination of the records?",
+      options: [
+        "Pratyaksha",
+        "Shabda",
+        "Upamana",
+        "Arthapatti"
+      ],
+      answer: 0,
+      reason: "Pratyaksha refers to direct perception or knowledge obtained through direct observation."
+    },
+    {
+      question: "Why did Rohan examine the original records himself?",
+      options: [
+        "To avoid understanding the transaction",
+        "To obtain firsthand verification of the information",
+        "To replace all accounting principles",
+        "To make the review more complicated"
+      ],
+      answer: 1,
+      reason: "Direct examination allows information to be verified firsthand rather than relying only on information received from others."
+    },
+    {
+      question: "What did Rohan identify during his review?",
+      options: [
+        "A discrepancy in the records",
+        "A new accounting standard",
+        "A change in company ownership",
+        "A philosophical theory"
+      ],
+      answer: 0,
+      reason: "The case states that Rohan noticed a discrepancy between a transaction and its supporting documents."
+    },
+    {
+      question: "Which philosophical branch is primarily concerned with the theory of knowledge?",
+      options: [
+        "Aesthetics",
+        "Metaphysics",
+        "Epistemology",
+        "Ethics"
+      ],
+      answer: 2,
+      reason: "Epistemology is the branch of philosophy concerned with knowledge, belief, justification and the sources of knowledge."
+    },
+    {
+      question: "What was the main benefit of Rohan's approach?",
+      options: [
+        "He avoided examining evidence",
+        "He distinguished direct verification from information received from others",
+        "He relied entirely on assumptions",
+        "He ignored discrepancies"
+      ],
+      answer: 1,
+      reason: "Rohan's direct examination helped him distinguish firsthand verification from information obtained through other sources."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Meera was preparing an analysis of two departments of a company. She noticed that one department had significantly higher administrative expenses than the other. Instead of looking at the figures in isolation, she compared the expenses, activities and performance of both departments.</p>
+
+    <p>The comparison helped Meera identify differences in spending patterns and understand why the departments were producing different results.</p>
+
+    <p>Meera then used the findings to support the management's evaluation of departmental performance.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which pramana is most directly reflected in Meera's comparison of the two departments?",
+      options: [
+        "Anupalabdhi",
+        "Upamana",
+        "Shabda",
+        "Pratyaksha"
+      ],
+      answer: 1,
+      reason: "Upamana refers to knowledge obtained through comparison or similarity."
+    },
+    {
+      question: "What did Meera compare?",
+      options: [
+        "Only employee names",
+        "Only company policies",
+        "Expenses, activities and performance",
+        "Only philosophical concepts"
+      ],
+      answer: 2,
+      reason: "Meera compared the expenses, activities and performance of the two departments."
+    },
+    {
+      question: "What did the comparison help Meera understand?",
+      options: [
+        "Differences in spending patterns and performance",
+        "The meaning of liberation",
+        "The definition of aesthetics",
+        "The history of Western philosophy"
+      ],
+      answer: 0,
+      reason: "The comparison helped Meera identify differences in spending patterns and understand differences in departmental results."
+    },
+    {
+      question: "Which branch of philosophy studies values?",
+      options: [
+        "Logic",
+        "Epistemology",
+        "Axiology",
+        "Metaphysics"
+      ],
+      answer: 2,
+      reason: "Axiology is the philosophical study of value."
+    },
+    {
+      question: "How did Meera use the results of her comparison?",
+      options: [
+        "To ignore departmental performance",
+        "To support management's evaluation",
+        "To eliminate all financial records",
+        "To avoid analysing expenses"
+      ],
+      answer: 1,
+      reason: "The case states that Meera used her findings to support management's evaluation of departmental performance."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Arjun was reviewing information about a company and found that an important document mentioned in the records could not be located. He checked the available files carefully and confirmed that the document was absent.</p>
+
+    <p>Arjun did not immediately assume that the document had been destroyed or that someone had intentionally removed it. He simply recorded the fact that the expected document was not present and informed his senior about the missing information.</p>
+
+    <p>This helped the review team identify an area requiring further investigation.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which pramana is most closely associated with Arjun's knowledge that the document was absent?",
+      options: [
+        "Anupalabdhi",
+        "Upamana",
+        "Shabda",
+        "Anumana"
+      ],
+      answer: 0,
+      reason: "Anupalabdhi refers to knowledge of absence or non-existence."
+    },
+    {
+      question: "What did Arjun actually establish?",
+      options: [
+        "That the document had been destroyed",
+        "That the document was not present in the available files",
+        "That fraud had definitely occurred",
+        "That the company had violated a law"
+      ],
+      answer: 1,
+      reason: "Arjun established only that the expected document was absent from the available files."
+    },
+    {
+      question: "What did Arjun do after identifying the missing information?",
+      options: [
+        "He ignored it",
+        "He deleted the remaining records",
+        "He informed his senior",
+        "He immediately accused an employee"
+      ],
+      answer: 2,
+      reason: "The case states that Arjun recorded the absence and informed his senior."
+    },
+    {
+      question: "Which branch deals with questions concerning reality and existence?",
+      options: [
+        "Axiology",
+        "Metaphysics",
+        "Aesthetics",
+        "Ethics"
+      ],
+      answer: 1,
+      reason: "Metaphysics is concerned with the nature of reality and existence."
+    },
+    {
+      question: "Why was Arjun's approach useful to the review team?",
+      options: [
+        "It identified an area requiring further investigation",
+        "It proved fraud immediately",
+        "It removed the need for evidence",
+        "It prevented further review"
+      ],
+      answer: 0,
+      reason: "Identifying missing information helped the review team determine an area that required further investigation."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Neha attended a professional seminar where an experienced expert explained a recent accounting requirement. Neha carefully listened to the explanation and noted the important points.</p>
+
+    <p>Later, while applying the requirement to a practical situation, Neha did not blindly accept everything she had heard. She considered whether the explanation came from a trustworthy and authoritative source and examined how it applied to the facts before using it.</p>
+
+    <p>This approach allowed Neha to make use of information obtained through verbal testimony while still evaluating its reliability.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which pramana is demonstrated by Neha receiving knowledge from the expert's explanation?",
+      options: [
+        "Shabda",
+        "Anupalabdhi",
+        "Upamana",
+        "Pratyaksha"
+      ],
+      answer: 0,
+      reason: "Shabda refers to valid verbal testimony from a trustworthy source."
+    },
+    {
+      question: "What was important before Neha relied on the information?",
+      options: [
+        "The information being entertaining",
+        "The source being trustworthy and authoritative",
+        "The information being very long",
+        "The seminar being conducted online"
+      ],
+      answer: 1,
+      reason: "The chapter explains Shabda in terms of valid verbal testimony from a trustworthy source."
+    },
+    {
+      question: "What did Neha avoid doing?",
+      options: [
+        "Listening to experts",
+        "Taking notes",
+        "Blindly accepting information without evaluation",
+        "Applying knowledge to practical situations"
+      ],
+      answer: 2,
+      reason: "Neha evaluated the reliability and applicability of the information rather than accepting it blindly."
+    },
+    {
+      question: "Which philosophical branch focuses on right and wrong and moral action?",
+      options: [
+        "Ethics",
+        "Metaphysics",
+        "Aesthetics",
+        "Epistemology"
+      ],
+      answer: 0,
+      reason: "Ethics concerns right and wrong, moral choices and moral action."
+    },
+    {
+      question: "Which professional situation is most similar to Neha's use of Shabda?",
+      options: [
+        "Using authoritative professional guidance after evaluating its reliability",
+        "Guessing an accounting figure",
+        "Ignoring professional guidance",
+        "Comparing two office buildings"
+      ],
+      answer: 0,
+      reason: "The chapter identifies authoritative pronouncements and expert guidance as relevant applications of verbal testimony in accountancy."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Vikram was preparing a report for management. He believed that a report should not merely contain correct figures; it should also present information clearly so that users could understand and appreciate the information being communicated.</p>
+
+    <p>He therefore arranged the information systematically and used a clear presentation so that important financial information could be understood easily.</p>
+
+    <p>Vikram's approach reflected the idea that presentation can contribute to the effective communication of information.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which philosophical area is concerned with beauty and appreciation of presentation?",
+      options: [
+        "Epistemology",
+        "Aesthetics",
+        "Metaphysics",
+        "Logic"
+      ],
+      answer: 1,
+      reason: "Aesthetics is the philosophical inquiry into beauty, art and appreciation."
+    },
+    {
+      question: "What was Vikram's main concern apart from accuracy?",
+      options: [
+        "Clear presentation of information",
+        "Avoiding financial information",
+        "Removing all explanations",
+        "Ignoring users of the report"
+      ],
+      answer: 0,
+      reason: "Vikram wanted the information to be arranged and presented clearly so that users could understand it."
+    },
+    {
+      question: "Why did Vikram arrange the information systematically?",
+      options: [
+        "To make the report harder to understand",
+        "To improve communication of important information",
+        "To remove financial data",
+        "To avoid preparing the report"
+      ],
+      answer: 1,
+      reason: "A clear and systematic presentation can improve the communication and understanding of financial information."
+    },
+    {
+      question: "Which branch of philosophy is described as the science of valid and sound reasoning?",
+      options: [
+        "Axiology",
+        "Ethics",
+        "Logic",
+        "Aesthetics"
+      ],
+      answer: 2,
+      reason: "Logic is concerned with valid and sound reasoning."
+    },
+    {
+      question: "Which statement best describes Vikram's approach?",
+      options: [
+        "Only the numerical accuracy of information matters",
+        "Presentation has no role in communication",
+        "Clear presentation can support effective communication",
+        "Financial reports should avoid systematic presentation"
+      ],
+      answer: 2,
+      reason: "The case demonstrates that clear and systematic presentation can contribute to effective communication of information."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS06",
+  difficulty: "Medium",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Karan was reviewing the financial position of a company. He noticed that the company's records showed a particular level of inventory, but several related transactions suggested that the reported figure might not represent the complete economic situation.</p>
+
+    <p>Karan examined the available information and found that certain transactions had not been clearly reflected in the records he initially reviewed. He used the known facts to develop a reasonable explanation that could reconcile the apparently inconsistent information.</p>
+
+    <p>He did not treat his explanation as a directly observed fact. Instead, he recognized that he was using the available evidence to postulate an unperceived fact that could explain the observed circumstances.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which pramana is most closely reflected in Karan's reasoning?",
+      options: [
+        "Pratyaksha",
+        "Arthapatti",
+        "Shabda",
+        "Upamana"
+      ],
+      answer: 1,
+      reason: "Arthapatti involves postulating an unperceived fact to reconcile apparently conflicting or inconsistent perceived facts."
+    },
+    {
+      question: "Why was Karan's conclusion different from direct perception?",
+      options: [
+        "He directly observed every hidden transaction",
+        "He used known facts to postulate an explanation for an unperceived fact",
+        "He relied only on a comparison",
+        "He ignored the available evidence"
+      ],
+      answer: 1,
+      reason: "Karan did not directly observe the unperceived fact; he used available facts to develop a necessary explanation."
+    },
+    {
+      question: "What problem was Karan attempting to resolve?",
+      options: [
+        "A difference between observed information and the apparent economic position",
+        "A disagreement about the meaning of aesthetics",
+        "A question about artistic beauty",
+        "A problem involving only employee attendance"
+      ],
+      answer: 0,
+      reason: "Karan used postulation to reconcile information that appeared inconsistent with the company's reported economic position."
+    },
+    {
+      question: "Which statement best describes Arthapatti?",
+      options: [
+        "Knowledge obtained only through direct sensory contact",
+        "Knowledge obtained by comparing two similar objects",
+        "Postulation of an unperceived fact to explain perceived facts",
+        "Knowledge obtained only through verbal testimony"
+      ],
+      answer: 2,
+      reason: "Arthapatti is postulation used to reconcile facts when the available observations require an additional unperceived explanation."
+    },
+    {
+      question: "Which accountancy situation from the chapter is consistent with Arthapatti?",
+      options: [
+        "Bridging gaps in financial information by postulating a hidden transaction",
+        "Only observing an invoice directly",
+        "Only comparing two departments",
+        "Only listening to an expert"
+      ],
+      answer: 0,
+      reason: "The chapter connects Arthapatti with bridging data gaps and identifying possible hidden transactions."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS07",
+  difficulty: "Medium",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Priya was evaluating whether a company's financial statements provided a reliable representation of its economic position. She examined whether the information presented in the statements corresponded with the underlying economic reality.</p>
+
+    <p>In one area, the reported figure appeared accurate only if it was considered together with the actual transaction and supporting evidence. Priya therefore focused on whether the proposition stated in the financial report matched the facts it was supposed to represent.</p>
+
+    <p>She concluded that the reliability of the statement depended on its correspondence with the relevant reality rather than merely on whether the statement sounded internally consistent.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which theory of truth is most directly illustrated by Priya's approach?",
+      options: [
+        "Pragmatic theory",
+        "Coherence theory",
+        "Correspondence theory",
+        "Aesthetic theory"
+      ],
+      answer: 2,
+      reason: "Correspondence theory considers a proposition true when it aligns or corresponds with reality."
+    },
+    {
+      question: "What was Priya primarily checking?",
+      options: [
+        "Whether the statement matched the underlying economic reality",
+        "Whether the report was visually attractive",
+        "Whether employees liked the report",
+        "Whether the report contained philosophical terminology"
+      ],
+      answer: 0,
+      reason: "Priya focused on whether the financial statement corresponded with the economic reality it represented."
+    },
+    {
+      question: "How does correspondence differ from merely checking internal consistency?",
+      options: [
+        "Correspondence focuses on alignment with reality",
+        "Correspondence ignores facts completely",
+        "Correspondence focuses only on presentation",
+        "Correspondence means accepting every statement as true"
+      ],
+      answer: 0,
+      reason: "Correspondence theory evaluates truth by considering whether a proposition aligns with the relevant reality."
+    },
+    {
+      question: "Which theory would focus more directly on consistency within a system of statements?",
+      options: [
+        "Correspondence",
+        "Coherence",
+        "Pragmatic",
+        "Anupalabdhi"
+      ],
+      answer: 1,
+      reason: "Coherence theory considers truth in terms of internal consistency and alignment within a system."
+    },
+    {
+      question: "Why was supporting evidence relevant to Priya's evaluation?",
+      options: [
+        "It helped determine whether the reported information reflected the underlying facts",
+        "It made the report longer",
+        "It replaced all accounting principles",
+        "It was relevant only to aesthetics"
+      ],
+      answer: 0,
+      reason: "Supporting evidence helped Priya assess whether the reported proposition corresponded with the underlying economic reality."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS08",
+  difficulty: "Medium",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Sameer was reviewing a company's accounting system and noticed that several accounting records appeared consistent with one another. The figures in different statements followed the same accounting principles, and the explanations provided for related transactions did not contradict each other.</p>
+
+    <p>Sameer understood that consistency within the system was an important consideration, but he also recognized that internal consistency alone was not necessarily the same as correspondence with external reality.</p>
+
+    <p>He therefore evaluated whether the information formed a coherent system while keeping the distinction between coherence and correspondence in mind.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which theory of truth is primarily reflected in Sameer's focus on consistency?",
+      options: [
+        "Pragmatic theory",
+        "Correspondence theory",
+        "Coherence theory",
+        "Aesthetic theory"
+      ],
+      answer: 2,
+      reason: "Coherence theory evaluates truth through internal consistency and alignment within a system."
+    },
+    {
+      question: "What did Sameer observe in the accounting records?",
+      options: [
+        "Contradictions in every statement",
+        "Consistency among related records and principles",
+        "Only missing documents",
+        "Only verbal explanations"
+      ],
+      answer: 1,
+      reason: "The case states that the records followed consistent principles and the explanations did not contradict one another."
+    },
+    {
+      question: "What distinction did Sameer recognize?",
+      options: [
+        "Coherence and correspondence are identical",
+        "Internal consistency is different from correspondence with external reality",
+        "Aesthetics and ethics are identical",
+        "Logic has no relationship with reasoning"
+      ],
+      answer: 1,
+      reason: "The case specifically distinguishes internal coherence from correspondence with external reality."
+    },
+    {
+      question: "If a set of accounting statements is internally consistent, which concept is most directly relevant?",
+      options: [
+        "Coherence",
+        "Anupalabdhi",
+        "Pratyaksha",
+        "Ahimsa"
+      ],
+      answer: 0,
+      reason: "Coherence concerns consistency and compatibility among statements or beliefs within a system."
+    },
+    {
+      question: "Why should Sameer not treat consistency alone as proof of correspondence with reality?",
+      options: [
+        "A system can be internally consistent without necessarily matching external reality",
+        "Consistency always proves fraud",
+        "Internal consistency has no relevance to reasoning",
+        "Correspondence deals only with artistic beauty"
+      ],
+      answer: 0,
+      reason: "The distinction in the chapter shows that coherence concerns internal consistency, while correspondence concerns alignment with reality."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS09",
+  difficulty: "Medium",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Ananya was working on a professional ethics issue involving the disclosure of financial information. The management wanted to present selected information in a way that would create a favourable impression, while Ananya believed that the information should be presented transparently to the relevant users.</p>
+
+    <p>Ananya first considered the broader question of what makes an action morally right or wrong. She then applied ethical principles to the specific financial disclosure situation and considered the practical consequences of the possible approaches.</p>
+
+    <p>Rather than treating ethics as merely a description of what companies commonly do, Ananya focused on how the ethical principles should be applied to the particular professional situation.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which branch of ethics is most directly involved when Ananya applies ethical principles to a specific financial disclosure issue?",
+      options: [
+        "Descriptive ethics",
+        "Applied ethics",
+        "Metaethics",
+        "Aesthetics"
+      ],
+      answer: 1,
+      reason: "Applied ethics concerns the practical application of ethical principles to specific real-world issues."
+    },
+    {
+      question: "Why would describing what companies commonly do represent a different approach?",
+      options: [
+        "Descriptive ethics observes how people actually behave and identifies patterns",
+        "Descriptive ethics always determines the correct moral action",
+        "Descriptive ethics is concerned only with beauty",
+        "Descriptive ethics studies only physical reality"
+      ],
+      answer: 0,
+      reason: "Descriptive ethics observes how people live or behave and generalizes patterns without itself determining what is morally right."
+    },
+    {
+      question: "What issue was central to Ananya's professional situation?",
+      options: [
+        "Transparency in financial disclosure",
+        "Comparison of artistic styles",
+        "The existence of physical objects",
+        "The meaning of perception"
+      ],
+      answer: 0,
+      reason: "The case concerns whether financial information should be presented transparently to relevant users."
+    },
+    {
+      question: "Which ethical approach is concerned with determining standards of right and wrong?",
+      options: [
+        "Normative ethics",
+        "Descriptive ethics",
+        "Aesthetics",
+        "Metaphysics"
+      ],
+      answer: 0,
+      reason: "Normative ethics develops standards concerning what ought to be considered right or wrong and how one should act."
+    },
+    {
+      question: "What makes Ananya's approach an example of applied ethics?",
+      options: [
+        "She studied only historical philosophical ideas",
+        "She applied ethical principles to a concrete professional disclosure problem",
+        "She merely recorded common business practices",
+        "She avoided making ethical considerations"
+      ],
+      answer: 1,
+      reason: "Applied ethics involves bringing ethical reasoning to specific practical and real-world issues."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH5_CS10",
+  difficulty: "Medium",
+  chapter: "Chapter 5",
+
+  caseText: `
+    <p>Rahul was studying Indian philosophical thought and initially found its discussion of suffering difficult to understand. As he continued studying, he learned that Indian philosophy does not simply stop at recognizing suffering. It also examines its causes and presents paths intended to overcome it.</p>
+
+    <p>Rahul learned that ignorance is described as a root cause of suffering and that right knowledge can play a role in liberation. He also learned about the importance of moral order and ethical conduct in the broader philosophical framework.</p>
+
+    <p>Rahul therefore understood that the philosophical discussion moved from recognizing a problem toward understanding its cause and considering a way of overcoming it.</p>
+  `,
+
+  questions: [
+    {
+      question: "According to the chapter, what is identified as a root cause of suffering in Indian philosophy?",
+      options: [
+        "Knowledge",
+        "Ignorance",
+        "Aesthetics",
+        "Comparison"
+      ],
+      answer: 1,
+      reason: "The chapter identifies ignorance as the root cause of suffering and presents right knowledge as a means toward liberation."
+    },
+    {
+      question: "What does Indian philosophy emphasize after recognizing suffering?",
+      options: [
+        "Only the existence of suffering",
+        "Paths and means to overcome suffering",
+        "Avoiding all ethical questions",
+        "Rejecting the idea of liberation"
+      ],
+      answer: 1,
+      reason: "The chapter explains that Indian philosophy moves beyond pessimism by considering paths for overcoming suffering."
+    },
+    {
+      question: "What is identified as the ultimate goal in most Indian philosophical traditions discussed in the chapter?",
+      options: [
+        "Material wealth alone",
+        "Liberation",
+        "Professional success alone",
+        "Aesthetic appreciation alone"
+      ],
+      answer: 1,
+      reason: "The chapter identifies liberation as the ultimate goal of most Indian philosophical traditions, with the noted exception of Carvaka."
+    },
+    {
+      question: "Which statement best reflects the chapter's description of Indian philosophy?",
+      options: [
+        "It is concerned only with theoretical speculation",
+        "It combines practical, ethical and spiritual dimensions",
+        "It rejects questions about knowledge",
+        "It focuses exclusively on artistic beauty"
+      ],
+      answer: 1,
+      reason: "The chapter describes Indian philosophy as having a practical, ethical and spiritual orientation rather than being purely theoretical."
+    },
+    {
+      question: "What role does right knowledge play in the framework described in the case?",
+      options: [
+        "It is associated with overcoming ignorance and moving toward liberation",
+        "It increases attachment to material possessions",
+        "It eliminates the need for ethical conduct",
+        "It is unrelated to suffering"
+      ],
+      answer: 0,
+      reason: "The chapter connects ignorance with suffering and right knowledge with the possibility of liberation."
+    }
+  ]
 }
 
 
