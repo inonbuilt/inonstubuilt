@@ -8924,6 +8924,1176 @@ const caseStudies = [
       reason: "The chapter states that Indian philosophical systems engage in elaborate discussions on sources of valid knowledge (pramāna), types of valid knowledge (pramā), types of invalid knowledge (apramā) and related problems."
     }
   ]
+},
+
+// Chapter 7
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch7_001",
+  case_chapter: "chapter7",
+  question: "According to the chapter, what does Ethics primarily deal with?",
+  options: [
+    "The nature of physical matter",
+    "Moral principles concerning right and wrong",
+    "The calculation of financial returns",
+    "The study of artistic beauty only"
+  ],
+  answer: 1,
+  reason: "The chapter describes Ethics as the study of moral principles that guide individuals and societies in determining what is right and wrong."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch7_002",
+  case_chapter: "chapter7",
+  question: "What is the main focus of virtue ethics?",
+  options: [
+    "The consequences of every action",
+    "Following predefined rules only",
+    "The development of moral character and virtues",
+    "Maximising financial wealth"
+  ],
+  answer: 2,
+  reason: "Virtue ethics focuses on the development of moral character and virtues. It emphasises becoming a virtuous person rather than merely following rules or achieving specific outcomes."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch7_003",
+  case_chapter: "chapter7",
+  question: "What is described as the opposite of virtue?",
+  options: [
+    "Wisdom",
+    "Justice",
+    "Vice",
+    "Temperance"
+  ],
+  answer: 2,
+  reason: "The chapter states that vice is the opposite of virtue and describes it as an acquired weakness of character that leads to morally blameworthy behaviour."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch7_004",
+  case_chapter: "chapter7",
+  question: "According to Aristotle's virtue theory, 'eudaimonia' can be understood as a state of:",
+  options: [
+    "Happiness or flourishing",
+    "Strict obedience",
+    "Material prosperity alone",
+    "Complete intellectual disagreement"
+  ],
+  answer: 0,
+  reason: "The chapter explains that the goal of humans should be to attain 'eudaimonia', which can be understood as a state of happiness or flourishing."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch7_005",
+  case_chapter: "chapter7",
+  question: "Teleological ethics determines the moral worth of an action primarily by considering its:",
+  options: [
+    "Character of the person alone",
+    "Consequences or outcomes",
+    "Historical origin",
+    "Aesthetic appearance"
+  ],
+  answer: 1,
+  reason: "Teleological ethics, also called consequentialism in the chapter, determines the moral worth of an action by its consequences or outcomes."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch7_006",
+  case_chapter: "chapter7",
+  question: "According to Aristotle, what does the 'golden mean' represent?",
+  options: [
+    "Following the rules without considering circumstances",
+    "Choosing whichever action gives the highest financial benefit",
+    "A balance between two extremes found through practical wisdom",
+    "Avoiding all difficult decisions"
+  ],
+  answer: 2,
+  reason: "The chapter states that virtue, according to Aristotle, is a golden mean between two extremes and can be found through practical wisdom."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch7_007",
+  case_chapter: "chapter7",
+  question: "Which statement correctly describes utilitarianism as presented in the chapter?",
+  options: [
+    "It evaluates actions according to their overall consequences and the greatest happiness of the greatest number.",
+    "It evaluates actions only according to predefined duties.",
+    "It gives special importance to the happiness of the person performing the action.",
+    "It rejects consideration of consequences."
+  ],
+  answer: 0,
+  reason: "Utilitarianism evaluates the morality of actions based on their overall consequences and the greatest happiness or pleasure they bring to the greatest number."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch7_008",
+  case_chapter: "chapter7",
+  question: "What is the main distinction between Act Utilitarianism and Rule Utilitarianism?",
+  options: [
+    "Act Utilitarianism focuses on each individual action and its consequences, while Rule Utilitarianism follows rules believed to maximise happiness.",
+    "Act Utilitarianism follows universal rules, while Rule Utilitarianism ignores rules completely.",
+    "Act Utilitarianism is based on duty, while Rule Utilitarianism is based on virtue.",
+    "There is no distinction between the two."
+  ],
+  answer: 0,
+  reason: "The chapter explains that Act Utilitarianism weighs every action on its own and its specific consequences, whereas Rule Utilitarianism involves following established principles believed to maximise happiness."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch7_009",
+  case_chapter: "chapter7",
+  question: "Which principle is central to deontological ethics?",
+  options: [
+    "Maximising pleasure",
+    "Adhering to moral duties and principles regardless of consequences",
+    "Developing aesthetic appreciation",
+    "Avoiding all universal principles"
+  ],
+  answer: 1,
+  reason: "Deontological ethics emphasises adherence to moral principles or duties. The chapter states that certain actions are considered inherently right or wrong irrespective of their consequences."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch7_010",
+  case_chapter: "chapter7",
+  question: "Why is Kant's moral command called a 'Categorical Imperative'?",
+  options: [
+    "Because it is based only on personal desires",
+    "Because it is conditional upon achieving a particular result",
+    "Because it is an unconditional command",
+    "Because it applies only to professionals"
+  ],
+  answer: 2,
+  reason: "The chapter explains that it is an imperative because it is a command and categorical because it is unconditional."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch7_011",
+  case_chapter: "chapter7",
+  question: "Which statement correctly distinguishes Kant's Categorical Imperative from Rule Utilitarianism?",
+  options: [
+    "Both ignore rules and focus exclusively on immediate consequences.",
+    "Rule Utilitarianism considers likely consequences of rules, whereas Kant evaluates whether a maxim can become a rational universal rule.",
+    "Kant's theory evaluates only the happiness produced by an action, while Rule Utilitarianism rejects consequences.",
+    "Rule Utilitarianism is based entirely on individual desires, while Kant rejects rational principles."
+  ],
+  answer: 1,
+  reason: "The chapter states that Rule Utilitarianism considers the probable consequences of universally applicable rules, while Kant considers whether the maxim underlying an action can be adopted as a rational universal rule."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch7_012",
+  case_chapter: "chapter7",
+  question: "Plato's tripartite soul consists of which three elements?",
+  options: [
+    "Wisdom, justice and courage",
+    "Rational, spirited and appetitive",
+    "Dharma, Artha and Kama",
+    "Mind, body and environment"
+  ],
+  answer: 1,
+  reason: "The chapter states that Plato introduced the idea of the tripartite soul comprising the rational, spirited and appetitive elements."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch7_013",
+  case_chapter: "chapter7",
+  question: "Which statement most accurately reflects the relationship between the Purusharthas described in the chapter?",
+  options: [
+    "Only Moksha is relevant, while the other three are excluded from human life.",
+    "Each Purushartha influences the others, and Dharma provides an ethical dimension to the integrated pursuit of life goals.",
+    "Artha requires complete renunciation of material possessions.",
+    "Kama is considered entirely undesirable in every form."
+  ],
+  answer: 1,
+  reason: "The chapter explains that the four Purusharthas—Dharma, Artha, Kama and Moksha—collectively guide human life, with each influencing the others. It also states that Dharma provides the ethical dimension and that Artha must invariably adhere to Dharma."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch7_014",
+  case_chapter: "chapter7",
+  question: "Which set correctly identifies the three internal aids to Yoga described in the chapter?",
+  options: [
+    "Yama, Niyama and Asana",
+    "Pranayama, Pratyahara and Yama",
+    "Dharana, Dhyana and Samadhi",
+    "Karma, Bhakti and Jnana"
+  ],
+  answer: 2,
+  reason: "The chapter states that the first five stages—Yama, Niyama, Asana, Pranayama and Pratyahara—are external aids, while the subsequent three stages, Dharana, Dhyana and Samadhi, are internal aids."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch7_015",
+  case_chapter: "chapter7",
+  question: "Which of the following correctly matches the Jnana Yoga virtue with its meaning?",
+  options: [
+    "Sama — Control of the mind",
+    "Dama — Faith in the teachings",
+    "Titiksha — Concentration",
+    "Samadhana — Renunciation of activities"
+  ],
+  answer: 0,
+  reason: "The chapter lists six virtues of Jnana Yoga: Sama means control of the mind, Dama means control of the senses, Uparati means renunciation of activities, Titiksha means endurance, Shraddha means faith, and Samadhana means concentration."
+},
+{
+  difficulty: "Easy",
+  case_id: "phy_ch7_016",
+  case_chapter: "chapter7",
+  question: "Which of the following is one of the five Yamas described in the chapter?",
+  options: [
+    "Asteya",
+    "Svadhyaya",
+    "Dharana",
+    "Samadhana"
+  ],
+  answer: 0,
+  reason: "Asteya, meaning non-stealing, is one of the five Yamas. Svadhyaya is a Niyama, while Dharana and Samadhana are associated with concentration."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch7_017",
+  case_chapter: "chapter7",
+  question: "Which Niyama is associated with self-study?",
+  options: [
+    "Santosha",
+    "Svadhyaya",
+    "Saucha",
+    "Tapas"
+  ],
+  answer: 1,
+  reason: "Svadhyaya means self-study and is described as a principle of Niyama involving continuous learning and study."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch7_018",
+  case_chapter: "chapter7",
+  question: "Which of the following correctly identifies the four Purusharthas?",
+  options: [
+    "Dharma, Artha, Kama and Moksha",
+    "Karma, Bhakti, Jnana and Raja",
+    "Yama, Niyama, Asana and Pranayama",
+    "Dharana, Dhyana, Samadhi and Pratyahara"
+  ],
+  answer: 0,
+  reason: "The chapter identifies Dharma, Artha, Kama and Moksha as the four fundamental objectives of human life, collectively called Purusharthas."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch7_019",
+  case_chapter: "chapter7",
+  question: "What does JivanMukti refer to?",
+  options: [
+    "Liberation attained after the end of an individual's life",
+    "Liberation while living in this world",
+    "The pursuit of material prosperity",
+    "The practice of non-stealing"
+  ],
+  answer: 1,
+  reason: "The chapter defines JivanMukti as liberation while living in this world, achieved through control over mind and body and rising above worldly attractions."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch7_020",
+  case_chapter: "chapter7",
+  question: "The Sanskrit word 'yuj', from which the word Yoga is derived, means:",
+  options: [
+    "Duty",
+    "Liberation",
+    "Union or connection",
+    "Pleasure"
+  ],
+  answer: 2,
+  reason: "The chapter states that Yoga is derived from the Sanskrit word 'yuj', meaning union or connection."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch7_021",
+  case_chapter: "chapter7",
+  question: "Which statement correctly describes Nitya Dharma?",
+  options: [
+    "It consists only of duties assigned to particular individuals.",
+    "It represents a universal code of morality applicable to everyone.",
+    "It refers exclusively to the four stages of life.",
+    "It is limited to civil law."
+  ],
+  answer: 1,
+  reason: "The chapter states that Nitya Dharma, also called Samanya or Sadharana Dharma, represents the universal code of morality and includes virtues applicable to everyone."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch7_022",
+  case_chapter: "chapter7",
+  question: "What distinguishes Vishishta Dharma from Nitya Dharma?",
+  options: [
+    "Vishishta Dharma concerns duties specifically designated for different individuals or groups under various circumstances.",
+    "Vishishta Dharma is the universal code of morality applicable to everyone.",
+    "Vishishta Dharma deals only with material prosperity.",
+    "Vishishta Dharma refers exclusively to Moksha."
+  ],
+  answer: 0,
+  reason: "The chapter states that Vishishta Dharma, or Vishesha Dharma, pertains to duties specifically designated for different individuals or groups under various circumstances."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch7_023",
+  case_chapter: "chapter7",
+  question: "According to the chapter, which statement best describes Satvika Kama?",
+  options: [
+    "It is born out of sleep, ignorance and laziness.",
+    "It results from the interplay of sense organs and desires.",
+    "It aligns with Dharma and is universally recommended.",
+    "It requires complete renunciation of all pleasure."
+  ],
+  answer: 2,
+  reason: "The chapter identifies three types of Kama: Satvika Kama aligns with Dharma, Rajasika Kama results from the interplay of sense organs and desires, and Tamasika Kama is born out of sleep, ignorance and laziness. Satvika Kama is universally recommended."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch7_024",
+  case_chapter: "chapter7",
+  question: "Which of the following is identified as a key practice of Jnana Yoga?",
+  options: [
+    "Viveka, or discrimination between the eternal and the transient",
+    "Maximising pleasure for the greatest number",
+    "Following consequences rather than knowledge",
+    "Treating every action as a means of material accumulation"
+  ],
+  answer: 0,
+  reason: "The chapter states that central to Jnana Yoga is Viveka, or discrimination, through which seekers distinguish the unchanging, eternal aspect of reality from the transient world of appearances."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch7_025",
+  case_chapter: "chapter7",
+  question: "Which combination correctly represents qualities of an ideal bhakta mentioned in the chapter?",
+  options: [
+    "Unwavering faith, humility, patience, love and surrender",
+    "Wealth, power, ambition, competition and attachment",
+    "Indifference, aggression, pride, desire and fear",
+    "Concentration, comparison, calculation, competition and gain"
+  ],
+  answer: 0,
+  reason: "The chapter states that an ideal bhakta possesses unwavering faith, humility, patience, love and a deep sense of surrender."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch7_026",
+  case_chapter: "chapter7",
+  question: "An accountant is deciding whether to disclose an accounting error. One approach evaluates the possible long-term benefits and harms of disclosure and concealment, while another focuses on the professional duty to provide accurate and transparent reporting regardless of consequences. Which combination correctly identifies these two approaches?",
+  options: [
+    "Deontology and virtue ethics",
+    "Teleology and deontology",
+    "Virtue ethics and teleology",
+    "Deontology and utilitarianism only"
+  ],
+  answer: 1,
+  reason: "The chapter describes teleological ethics as evaluating consequences or outcomes, while deontology focuses on moral duties and principles irrespective of consequences."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch7_027",
+  case_chapter: "chapter7",
+  question: "Under Kant's universal law formulation of the Categorical Imperative, an intentional action is morally permissible only when:",
+  options: [
+    "It produces the highest immediate pleasure for the decision maker.",
+    "Its consequences are financially beneficial.",
+    "The maxim underlying the action can rationally be willed as a universal law.",
+    "It is approved by the majority in every situation."
+  ],
+  answer: 2,
+  reason: "The chapter explains that a moral agent should act only in such a way that the maxim of the action can be rationally willed to become a universal law."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch7_028",
+  case_chapter: "chapter7",
+  question: "A company considers using investors merely as instruments for increasing profits, without respecting their rights to truthful financial information. Which formulation of Kant's Categorical Imperative is most directly relevant?",
+  options: [
+    "Universal Law Formulation",
+    "Humanity as an End Formulation",
+    "Rule Utilitarianism",
+    "Act Utilitarianism"
+  ],
+  answer: 1,
+  reason: "The Humanity as an End Formulation states that human beings should be treated as ends in themselves and not merely as means. The chapter applies this principle to respecting stakeholders and their right to reliable information."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch7_029",
+  case_chapter: "chapter7",
+  question: "An accountant follows a general ethical rule because that rule is believed to maximise happiness, rather than evaluating the consequences of each individual action separately. Which approach does this describe?",
+  options: [
+    "Act Utilitarianism",
+    "Virtue Ethics",
+    "Rule Utilitarianism",
+    "Deontology"
+  ],
+  answer: 2,
+  reason: "Rule Utilitarianism involves following established principles or rules believed to maximise happiness, whereas Act Utilitarianism evaluates each individual action and its specific consequences."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch7_030",
+  case_chapter: "chapter7",
+  question: "Which sequence correctly describes the progression of the three internal aids to Yoga?",
+  options: [
+    "Dhyana → Dharana → Samadhi",
+    "Samadhi → Dhyana → Dharana",
+    "Dharana → Dhyana → Samadhi",
+    "Dharana → Samadhi → Dhyana"
+  ],
+  answer: 2,
+  reason: "The chapter identifies Dharana, Dhyana and Samadhi as the three internal aids to Yoga. Dharana involves fixing the mind on the chosen object, Dhyana is the unbroken flow of thoughts around that object, and Samadhi is the final state of concentrated absorption."
+},
+{
+  case_id: "PSY_CH7_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>Rahul was preparing an internal report and noticed that one of his colleagues had accidentally left a confidential document on a common desk. Rahul was tempted to take the document and use the information for his own advantage. After considering the situation, he decided not to take what did not belong to him.</p>
+
+    <p>While discussing the incident with his mentor, Rahul learned that ethics deals with moral principles and helps individuals and societies determine what is right and wrong. He also understood that moral judgments can evaluate actions as right or wrong and human ends, motives and goals as good or bad.</p>
+
+    <p>Rahul realised that his decision involved a moral judgment concerning his conduct.</p>
+  `,
+
+  questions: [
+    {
+      question: "What did Rahul make when he decided not to take the confidential document?",
+      options: [
+        "A financial calculation",
+        "A moral judgment",
+        "An aesthetic judgment",
+        "A scientific observation"
+      ],
+      answer: 1,
+      reason: "The chapter explains that moral judgments evaluate actions as right or wrong. Rahul judged that taking what did not belong to him would be wrong."
+    },
+    {
+      question: "What does Ethics primarily deal with?",
+      options: [
+        "Moral principles concerning right and wrong",
+        "Only financial calculations",
+        "Only artistic beauty",
+        "Only physical laws"
+      ],
+      answer: 0,
+      reason: "The chapter describes Ethics as the study of moral principles that guide individuals and societies in determining what is right and wrong."
+    },
+    {
+      question: "What can moral judgments evaluate according to the chapter?",
+      options: [
+        "Only financial performance",
+        "Only physical actions",
+        "Actions as right or wrong and ends, motives and goals as good or bad",
+        "Only professional qualifications"
+      ],
+      answer: 2,
+      reason: "The chapter states that moral judgments may evaluate actions as right or wrong and human ends, motives and goals as good or bad."
+    },
+    {
+      question: "How is conduct understood in Ethics in the chapter?",
+      options: [
+        "As moral conduct or the moral life",
+        "As financial forecasting",
+        "As artistic expression",
+        "As mathematical reasoning"
+      ],
+      answer: 0,
+      reason: "The chapter explains that conduct in Ethics means moral conduct, or the moral life."
+    },
+    {
+      question: "What does Ethics provide to society?",
+      options: [
+        "A framework and shared understanding of right behaviour",
+        "A method for increasing profits only",
+        "A method for predicting markets",
+        "A system for artistic design"
+      ],
+      answer: 0,
+      reason: "The chapter explains that Ethics provides a framework and a shared understanding of what constitutes right behaviour."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH7_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>Ananya was responsible for reviewing a financial report containing information that could make the company's leadership uncomfortable. She considered several possible approaches. One option was to reveal everything without considering how the information should be presented. Another was to hide the information because she was worried about criticism.</p>
+
+    <p>Ananya instead carefully analysed the information, prepared a transparent report and presented it clearly and honestly. She understood that ethical conduct required both courage and responsible judgment.</p>
+
+    <p>Her mentor explained that Aristotle described virtue as a golden mean between two extremes and that practical wisdom helps a person identify this balance.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which approach did Ananya ultimately follow?",
+      options: [
+        "Concealing the information",
+        "Revealing everything without consideration",
+        "A transparent approach based on careful analysis, clarity and honesty",
+        "Ignoring the report completely"
+      ],
+      answer: 2,
+      reason: "The case states that Ananya carefully analysed the information, prepared a transparent report and presented it with clarity and honesty."
+    },
+    {
+      question: "According to Aristotle, virtue is described as:",
+      options: [
+        "A consequence of wealth",
+        "A golden mean between two extremes",
+        "A rejection of practical wisdom",
+        "A fixed financial rule"
+      ],
+      answer: 1,
+      reason: "The chapter states that virtue, according to Aristotle, is a golden mean between two extremes and can be found through practical wisdom."
+    },
+    {
+      question: "Which two extremes are used in the chapter's example concerning honesty?",
+      options: [
+        "Justice and courage",
+        "Patience and endurance",
+        "Brutal honesty and deception",
+        "Wisdom and temperance"
+      ],
+      answer: 2,
+      reason: "The chapter identifies brutal honesty and deception as the two extremes, with respectful truthfulness representing the golden mean."
+    },
+    {
+      question: "What does the golden mean represent in the honesty example?",
+      options: [
+        "Respectful truthfulness",
+        "Complete secrecy",
+        "Revealing every thought without considering others",
+        "Intentionally misleading others"
+      ],
+      answer: 0,
+      reason: "The chapter defines the golden mean in the honesty example as respectful truthfulness—being honest while considering the recipient's feelings and the context."
+    },
+    {
+      question: "Which quality helped Ananya deal with potentially unfavourable information?",
+      options: [
+        "Courage",
+        "Greed",
+        "Indifference",
+        "Deception"
+      ],
+      answer: 0,
+      reason: "The chapter's accounting example states that presenting unfavourable information transparently requires courage to face criticism."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH7_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>Vikram was studying how an ethical theory might evaluate two possible courses of action. In one situation, a decision could produce a short-term benefit but create greater harm later. In another situation, an alternative could create less immediate benefit but lead to better overall consequences.</p>
+
+    <p>Vikram learned that teleological ethics focuses on the outcomes or goals of an action. It determines the moral worth of an action by considering its actual or likely consequences.</p>
+
+    <p>He also studied utilitarianism, which evaluates actions in terms of overall consequences and the greatest happiness or pleasure brought to the greatest number of individuals.</p>
+  `,
+
+  questions: [
+    {
+      question: "What does teleological ethics primarily focus on?",
+      options: [
+        "The consequences or goals of an action",
+        "The beauty of an action",
+        "The age of the decision maker",
+        "The personal identity of the actor"
+      ],
+      answer: 0,
+      reason: "Teleological ethics shifts the focus to the outcomes or goals of an action and evaluates moral worth through consequences."
+    },
+    {
+      question: "What determines the moral worth of an action in teleological ethics?",
+      options: [
+        "Only the intention",
+        "The consequences or outcomes",
+        "Only established customs",
+        "Only personal preferences"
+      ],
+      answer: 1,
+      reason: "The chapter states that teleological ethics determines the moral worth of an action by its consequences or outcomes."
+    },
+    {
+      question: "Which ethical theory is identified as consequentialist in the chapter?",
+      options: [
+        "Virtue ethics",
+        "Deontology",
+        "Teleological ethics",
+        "Aesthetics"
+      ],
+      answer: 2,
+      reason: "The chapter states that teleological ethics is also called consequentialism."
+    },
+    {
+      question: "What does utilitarianism seek to consider?",
+      options: [
+        "Overall consequences and the greatest happiness or pleasure for the greatest number",
+        "Only the actor's personal happiness",
+        "Only predefined duties",
+        "Only the moral character of the person"
+      ],
+      answer: 0,
+      reason: "Utilitarianism evaluates morality based on overall consequences and the greatest happiness or pleasure brought to the greatest number."
+    },
+    {
+      question: "Which two theories are identified as kinds of teleological theory?",
+      options: [
+        "Deontology and virtue ethics",
+        "Utilitarianism and Ethical Egoism",
+        "Karma Yoga and Bhakti Yoga",
+        "Dharma and Moksha"
+      ],
+      answer: 1,
+      reason: "The chapter explicitly identifies Utilitarianism and Ethical Egoism as two kinds of teleological theory."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH7_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>Mehul, a Chartered Accountant, was asked by a client to manipulate financial statements to make the company's profits appear higher. The client argued that the change could attract investors and improve the company's short-term position.</p>
+
+    <p>Mehul considered the request from the perspective of deontological ethics. Instead of weighing the possible benefits and harms, he focused on his professional duty to provide accurate and transparent financial reporting and to uphold honesty, integrity and objectivity.</p>
+
+    <p>He concluded that the ethical status of the action depended on the duty and principle involved rather than on the expected financial outcome.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which ethical theory is most directly reflected in Mehul's approach?",
+      options: [
+        "Teleology",
+        "Deontology",
+        "Utilitarianism",
+        "Ethical Egoism"
+      ],
+      answer: 1,
+      reason: "Deontology emphasises adherence to moral principles or duties regardless of consequences, which is the approach followed by Mehul."
+    },
+    {
+      question: "What did Mehul focus on rather than the possible financial benefits?",
+      options: [
+        "Professional duty",
+        "Market speculation",
+        "Personal recognition",
+        "Aesthetic presentation"
+      ],
+      answer: 0,
+      reason: "The chapter's accounting example states that a deontological approach focuses on the professional duty to uphold accurate and transparent reporting rather than potential benefits or harms."
+    },
+    {
+      question: "Which principles are specifically associated with Mehul's professional duty in the case?",
+      options: [
+        "Honesty, integrity and objectivity",
+        "Pleasure, desire and wealth",
+        "Art, beauty and taste",
+        "Competition, ambition and profit"
+      ],
+      answer: 0,
+      reason: "The chapter identifies honesty, integrity and objectivity as principles supporting deontological ethical conduct in financial reporting."
+    },
+    {
+      question: "According to deontology, certain actions are considered right or wrong:",
+      options: [
+        "Only after their financial results are known",
+        "Depending entirely on popularity",
+        "Irrespective of their consequences",
+        "Only when they increase happiness"
+      ],
+      answer: 2,
+      reason: "Deontological ethics considers certain actions inherently right or wrong irrespective of their consequences."
+    },
+    {
+      question: "What concept lies at the core of deontological ethics?",
+      options: [
+        "Duty",
+        "Beauty",
+        "Profit",
+        "Pleasure"
+      ],
+      answer: 0,
+      reason: "The chapter states that at the core of deontological ethics is the concept of duty."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH7_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>Priya was studying the four Purusharthas as part of Indian ethics. She learned that they are the four fundamental objectives of human life and that they collectively guide a person's life in an integrated manner.</p>
+
+    <p>She noted that Dharma concerns duty and righteousness, Artha concerns wealth and material prosperity, Kama concerns desire and pleasure, and Moksha concerns liberation.</p>
+
+    <p>Priya also learned that the four Purusharthas are compared in the chapter to the wheels of a chariot and that each Purushartha influences the others.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which of the following is one of the four Purusharthas?",
+      options: [
+        "Dharma",
+        "Dharana",
+        "Samadhi",
+        "Asteya"
+      ],
+      answer: 0,
+      reason: "Dharma is one of the four Purusharthas, along with Artha, Kama and Moksha."
+    },
+    {
+      question: "What does Artha refer to in the context of the Purusharthas?",
+      options: [
+        "Liberation",
+        "Wealth and material prosperity",
+        "Meditation",
+        "Non-stealing"
+      ],
+      answer: 1,
+      reason: "The chapter defines Artha as wealth or material prosperity."
+    },
+    {
+      question: "Which Purushartha refers to desire and pleasure?",
+      options: [
+        "Dharma",
+        "Moksha",
+        "Kama",
+        "Artha"
+      ],
+      answer: 2,
+      reason: "Kama is the Purushartha associated with desires and pleasure."
+    },
+    {
+      question: "Which Purushartha refers to liberation?",
+      options: [
+        "Artha",
+        "Dharma",
+        "Kama",
+        "Moksha"
+      ],
+      answer: 3,
+      reason: "Moksha is the Purushartha associated with liberation."
+    },
+    {
+      question: "How are the four Purusharthas described in relation to one another?",
+      options: [
+        "Each Purushartha influences the others",
+        "Only Dharma has any relationship with the others",
+        "They are completely independent",
+        "Only Moksha influences the others"
+      ],
+      answer: 0,
+      reason: "The chapter states that each Purushartha influences the others and that they collectively uphold and lead human life."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH7_CS06",
+  difficulty: "Medium",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>Arvind, a Chartered Accountant, was preparing financial statements during a difficult reporting period. Some stakeholders were putting pressure on him to report favourable results, even though the available information supported a less favourable position.</p>
+
+    <p>Arvind decided to focus on his responsibility to provide unbiased and truthful financial reports. He continued performing his duties diligently, complied with accounting standards and ethical principles, and accepted that the final consequences of his actions were not completely under his personal control.</p>
+
+    <p>He also rejected the idea of taking a personal benefit from the situation. His mentor explained that these actions reflected the principles of Karma Yoga, especially selfless action and detachment from the fruits of action.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which principle of Karma Yoga is most directly reflected in Arvind's decision to perform his duties without attachment to the results?",
+      options: [
+        "Nishkama Karma",
+        "Raja Yoga",
+        "Svadhyaya",
+        "Bhakti Yoga"
+      ],
+      answer: 0,
+      reason: "The chapter identifies Nishkama Karma as selfless action in which duties are performed without attachment to the fruits of the actions."
+    },
+    {
+      question: "What did Arvind focus on in financial reporting?",
+      options: [
+        "Personal financial gain",
+        "Unbiased and truthful financial reports",
+        "Short-term popularity",
+        "Avoiding all responsibility"
+      ],
+      answer: 1,
+      reason: "The chapter explains that applying Karma Yoga in financial reporting involves focusing on the responsibility of providing unbiased and truthful financial reports."
+    },
+    {
+      question: "What does Karma Yoga encourage regarding outcomes?",
+      options: [
+        "Attachment to success",
+        "Detachment from the fruits of actions",
+        "Avoidance of all actions",
+        "Maximisation of personal rewards"
+      ],
+      answer: 1,
+      reason: "Karma Yoga encourages practitioners to perform duties with a detached attitude towards success or failure and to renounce attachment to results or rewards."
+    },
+    {
+      question: "Which professional responsibility did Arvind treat as a sacred responsibility?",
+      options: [
+        "Following accounting standards, regulatory requirements and ethical principles",
+        "Increasing personal wealth",
+        "Ignoring professional regulations",
+        "Avoiding stakeholder communication"
+      ],
+      answer: 0,
+      reason: "The chapter states that, under Karma Yoga, Chartered Accountants should perceive compliance with accounting standards, regulatory requirements and ethical principles as a sacred responsibility."
+    },
+    {
+      question: "What is meant by Phala Tyaga in the context of Karma Yoga?",
+      options: [
+        "Renouncing attachment to personal gain or benefit",
+        "Acquiring more material possessions",
+        "Increasing attachment to professional rewards",
+        "Avoiding all professional duties"
+      ],
+      answer: 0,
+      reason: "The chapter explains Phala Tyaga as renouncing attachment to personal gain or benefit and emphasises ensuring financial accuracy even when the result is unfavourable."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH7_CS07",
+  difficulty: "Medium",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>Neha was comparing different paths described in Indian philosophy. She observed that one path emphasised selfless action and performing duties without attachment to their fruits. Another focused on love, devotion, surrender and a personal connection with the divine. A third path emphasised knowledge, self-inquiry and discrimination between the eternal and the transient.</p>
+
+    <p>She also encountered Raja Yoga, which places strong emphasis on control of the mind, concentration and meditation. Neha wanted to understand how each path contributed to the broader goal of spiritual development and liberation.</p>
+
+    <p>After comparing the descriptions, she created a chart linking each path with its principal emphasis.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which path emphasises selfless action without attachment to the fruits of actions?",
+      options: [
+        "Bhakti Yoga",
+        "Jnana Yoga",
+        "Karma Yoga",
+        "Raja Yoga"
+      ],
+      answer: 2,
+      reason: "Karma Yoga emphasises selfless action and performing duties without attachment to the fruits of those actions."
+    },
+    {
+      question: "Which path is primarily associated with love and devotion to the divine?",
+      options: [
+        "Bhakti Yoga",
+        "Raja Yoga",
+        "Karma Yoga",
+        "Jnana Yoga"
+      ],
+      answer: 0,
+      reason: "Bhakti Yoga emphasises a personal, emotional and devotional connection between the individual and the divine through love and devotion."
+    },
+    {
+      question: "Which path focuses on knowledge, self-inquiry and understanding the nature of reality and the self?",
+      options: [
+        "Karma Yoga",
+        "Jnana Yoga",
+        "Bhakti Yoga",
+        "Raja Yoga"
+      ],
+      answer: 1,
+      reason: "Jnana Yoga is predominantly the path of knowledge and encourages self-inquiry, contemplation and understanding of reality and the self."
+    },
+    {
+      question: "Which path places strong emphasis on mind control, concentration and meditation?",
+      options: [
+        "Raja Yoga",
+        "Bhakti Yoga",
+        "Karma Yoga",
+        "Jnana Yoga"
+      ],
+      answer: 0,
+      reason: "Raja Yoga places a strong emphasis on controlling modifications of the mind through practices such as concentration and meditation."
+    },
+    {
+      question: "Which statement correctly matches the paths described by Neha?",
+      options: [
+        "Karma Yoga—devotion; Bhakti Yoga—knowledge; Jnana Yoga—selfless action",
+        "Karma Yoga—selfless action; Bhakti Yoga—devotion; Jnana Yoga—knowledge",
+        "Karma Yoga—meditation only; Bhakti Yoga—material prosperity; Jnana Yoga—social duty",
+        "All four paths have exactly the same principal emphasis"
+      ],
+      answer: 1,
+      reason: "The chapter distinguishes these paths by their principal emphases: Karma Yoga is the way of action, Bhakti Yoga the way of devotion, and Jnana Yoga the way of knowledge."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH7_CS08",
+  difficulty: "Medium",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>Sonia was studying Patanjali's ethical framework and examined the distinction between Yama and Niyama. She learned that Yama concerns ethical guidelines governing interactions with the external world, while Niyama focuses on personal discipline and self-regulation.</p>
+
+    <p>She then reviewed several examples. Ahimsa represented non-violence, Satya represented truthfulness, and Asteya represented non-stealing. On the Niyama side, Saucha represented purity, Santosha contentment, Tapas self-discipline, Svadhyaya self-study and Ishvara Pranidhana surrender to the divine.</p>
+
+    <p>Sonia also learned that Yamas and Niyamas are interconnected and mutually reinforcing rather than independent principles.</p>
+  `,
+
+  questions: [
+    {
+      question: "What is the principal focus of Yama according to the case?",
+      options: [
+        "Personal wealth",
+        "Ethical guidelines governing interaction with the external world",
+        "Financial forecasting",
+        "Aesthetic appreciation"
+      ],
+      answer: 1,
+      reason: "The chapter states that Yama encompasses ethical guidelines governing one's interactions with the external world."
+    },
+    {
+      question: "Which of the following is a Yama?",
+      options: [
+        "Svadhyaya",
+        "Tapas",
+        "Asteya",
+        "Santosha"
+      ],
+      answer: 2,
+      reason: "Asteya, meaning non-stealing, is one of the five Yamas."
+    },
+    {
+      question: "Which Niyama means self-study?",
+      options: [
+        "Saucha",
+        "Svadhyaya",
+        "Santosha",
+        "Ishvara Pranidhana"
+      ],
+      answer: 1,
+      reason: "Svadhyaya means self-study and involves self-reflection and the study of sacred texts."
+    },
+    {
+      question: "Which Niyama is associated with self-discipline?",
+      options: [
+        "Tapas",
+        "Satya",
+        "Ahimsa",
+        "Asteya"
+      ],
+      answer: 0,
+      reason: "Tapas is the Niyama associated with self-discipline and austerity."
+    },
+    {
+      question: "How are Yamas and Niyamas described in the chapter?",
+      options: [
+        "They are unrelated principles",
+        "They are applicable only to financial reporting",
+        "They are interconnected and mutually reinforcing",
+        "They are alternatives and cannot be practised together"
+      ],
+      answer: 2,
+      reason: "The chapter explicitly states that Yamas and Niyamas are interconnected and mutually reinforcing."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH7_CS09",
+  difficulty: "Hard",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>Sameer, an accountant, discovered that his company could temporarily improve its reported profits by using aggressive accounting practices. He considered whether such a practice could be accepted if it produced short-term benefits. He then examined the issue from two different ethical perspectives.</p>
+
+    <p>Under one approach, he considered whether the consequences of the action would produce sufficient overall benefit. Under the other, he asked whether the maxim behind the action could be rationally adopted as a universal rule and whether stakeholders would be treated merely as instruments for achieving another purpose.</p>
+
+    <p>Sameer recognised that these approaches could both involve rules, but they did not justify those rules in the same way. One considered the likely consequences of rules, while the other focused on rational universal principles and the moral status of the action.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which ethical theory considers whether the likely consequences of a rule contribute to happiness?",
+      options: [
+        "Virtue Ethics",
+        "Rule Utilitarianism",
+        "Deontology",
+        "Raja Yoga"
+      ],
+      answer: 1,
+      reason: "The chapter states that Rule Utilitarianism considers the probable consequences of rules in terms of likely happiness."
+    },
+    {
+      question: "What does Kant's universal law formulation require Sameer to consider?",
+      options: [
+        "Whether the action maxim can rationally become a universal law",
+        "Whether the action provides the highest personal profit",
+        "Whether the action is aesthetically attractive",
+        "Whether the action is popular with management"
+      ],
+      answer: 0,
+      reason: "The chapter explains that an action is rationally and morally permissible only if the maxim underlying it can be rationally willed as a universal law."
+    },
+    {
+      question: "Which Kantian formulation is concerned with treating individuals as ends in themselves rather than merely as means?",
+      options: [
+        "Universal Law Formulation",
+        "Humanity as an End Formulation",
+        "Act Utilitarianism",
+        "Golden Mean"
+      ],
+      answer: 1,
+      reason: "The Humanity as an End Formulation holds that human beings should be treated as ends in themselves and not merely as instruments for another purpose."
+    },
+    {
+      question: "What is the key difference between Rule Utilitarianism and Kant's Categorical Imperative described in the case?",
+      options: [
+        "Rule Utilitarianism considers probable consequences, while Kant focuses on rational universal moral principles.",
+        "Rule Utilitarianism rejects all rules, while Kant accepts only personal preferences.",
+        "Both theories determine moral worth solely through financial gain.",
+        "Both theories are described as identical."
+      ],
+      answer: 0,
+      reason: "The chapter distinguishes the two by explaining that Rule Utilitarianism is empirical and depends on likely consequences, whereas Kant evaluates whether maxims can become rational universal rules."
+    },
+    {
+      question: "Why would treating stakeholders merely as instruments conflict with Kant's formulation?",
+      options: [
+        "Because Kant emphasises their inherent value and dignity",
+        "Because Kant requires maximising profits",
+        "Because Kant rejects universal principles",
+        "Because Kant considers all actions based on pleasure"
+      ],
+      answer: 0,
+      reason: "The chapter states that Kant's Humanity as an End formulation emphasises the inherent value and dignity of each person and rejects treating human beings merely as means to an end."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH7_CS10",
+  difficulty: "Hard",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>Kavya had been practising meditation to improve her concentration. She noticed that her thoughts, emotions, desires and memories were constantly moving and distracting her. While studying yoga philosophy, she learned about Chitta Vritti Nirodha, which concerns the cessation or restraint of fluctuations within the mind and the attainment of mental stillness.</p>
+
+    <p>She then studied the progression of the internal aids to Yoga. She learned that Dharana involves fixing the mind on a chosen object, Dhyana involves an unbroken flow of thoughts centred on that object, and Samadhi involves complete absorption in the chosen object. She also understood that Samadhi is the final step and that in it the distinction between the act of meditation and the object is no longer maintained in the same way as in Dhyana.</p>
+
+    <p>Kavya further learned that Abhyasa means prolonged and dedicated practice, while Vairagya means non-attachment. She realised that both continued practice and balanced non-attachment are important in the yogic journey.</p>
+  `,
+
+  questions: [
+    {
+      question: "What does Chitta Vritti Nirodha concern?",
+      options: [
+        "Accumulation of material wealth",
+        "Cessation or restraint of fluctuations within the mind",
+        "Increasing physical activity",
+        "Following financial rules"
+      ],
+      answer: 1,
+      reason: "The chapter explains Chitta Vritti Nirodha as the cessation or restraint of fluctuations within the mind, leading towards inner stillness and tranquility."
+    },
+    {
+      question: "Which stage involves fixing the mind on the chosen object of meditation?",
+      options: [
+        "Samadhi",
+        "Dhyana",
+        "Dharana",
+        "Pranayama"
+      ],
+      answer: 2,
+      reason: "Dharana involves fixing the mind on the chosen object of meditation and directing thoughts into a single, uninterrupted channel."
+    },
+    {
+      question: "Which stage is characterised by an unbroken flow of thoughts centred around the chosen object?",
+      options: [
+        "Dharana",
+        "Dhyana",
+        "Samadhi",
+        "Yama"
+      ],
+      answer: 1,
+      reason: "Dhyana means meditation and is characterised by the unbroken flow of thoughts centred around the chosen object."
+    },
+    {
+      question: "What is distinctive about Samadhi in comparison with Dhyana according to the case?",
+      options: [
+        "The mind becomes entirely absorbed in the chosen object.",
+        "The mind moves rapidly from one object to another.",
+        "The person abandons concentration completely.",
+        "The practice becomes focused only on physical strength."
+      ],
+      answer: 0,
+      reason: "The chapter states that in Samadhi the mind becomes entirely absorbed in the chosen object of meditation, while Dhyana maintains the act of meditation and object as distinct."
+    },
+    {
+      question: "Which option correctly matches Abhyasa and Vairagya?",
+      options: [
+        "Abhyasa—non-attachment; Vairagya—prolonged practice",
+        "Abhyasa—wealth; Vairagya—pleasure",
+        "Abhyasa—prolonged dedicated practice; Vairagya—non-attachment",
+        "Abhyasa—devotion; Vairagya—self-study"
+      ],
+      answer: 2,
+      reason: "The chapter identifies Abhyasa as prolonged dedicated practice over an extended period and Vairagya as non-attachment."
+    }
+  ]
 }
 
 
