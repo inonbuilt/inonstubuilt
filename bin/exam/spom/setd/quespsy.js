@@ -6390,7 +6390,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS01",
   difficulty: "Easy",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Rohan, a trainee accountant, was reviewing supporting documents for a company's financial records. Instead of relying only on explanations given by others, he directly examined invoices, receipts and other available records. He wanted to establish the facts through what he could personally observe and verify.</p>
@@ -6462,7 +6462,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS02",
   difficulty: "Easy",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Meera was preparing an analysis of two departments of a company. She noticed that one department had significantly higher administrative expenses than the other. Instead of looking at the figures in isolation, she compared the expenses, activities and performance of both departments.</p>
@@ -6534,7 +6534,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS03",
   difficulty: "Easy",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Arjun was reviewing information about a company and found that an important document mentioned in the records could not be located. He checked the available files carefully and confirmed that the document was absent.</p>
@@ -6606,7 +6606,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS04",
   difficulty: "Easy",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Neha attended a professional seminar where an experienced expert explained a recent accounting requirement. Neha carefully listened to the explanation and noted the important points.</p>
@@ -6678,7 +6678,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS05",
   difficulty: "Easy",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Vikram was preparing a report for management. He believed that a report should not merely contain correct figures; it should also present information clearly so that users could understand and appreciate the information being communicated.</p>
@@ -6750,7 +6750,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS06",
   difficulty: "Medium",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Karan was reviewing the financial position of a company. He noticed that the company's records showed a particular level of inventory, but several related transactions suggested that the reported figure might not represent the complete economic situation.</p>
@@ -6822,7 +6822,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS07",
   difficulty: "Medium",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Priya was evaluating whether a company's financial statements provided a reliable representation of its economic position. She examined whether the information presented in the statements corresponded with the underlying economic reality.</p>
@@ -6894,7 +6894,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS08",
   difficulty: "Medium",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Sameer was reviewing a company's accounting system and noticed that several accounting records appeared consistent with one another. The figures in different statements followed the same accounting principles, and the explanations provided for related transactions did not contradict each other.</p>
@@ -6966,7 +6966,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS09",
   difficulty: "Medium",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Ananya was working on a professional ethics issue involving the disclosure of financial information. The management wanted to present selected information in a way that would create a favourable impression, while Ananya believed that the information should be presented transparently to the relevant users.</p>
@@ -7038,7 +7038,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS10",
   difficulty: "Medium",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Rahul was studying Indian philosophical thought and initially found its discussion of suffering difficult to understand. As he continued studying, he learned that Indian philosophy does not simply stop at recognizing suffering. It also examines its causes and presents paths intended to overcome it.</p>
@@ -7109,7 +7109,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS01",
   difficulty: "Easy",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Rohan, a trainee accountant, was reviewing supporting documents for a company's financial records. Instead of relying only on explanations given by others, he directly examined invoices, receipts and other available records. He wanted to establish the facts through what he could personally observe and verify.</p>
@@ -7181,7 +7181,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS02",
   difficulty: "Easy",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Meera was preparing an analysis of two departments of a company. She noticed that one department had significantly higher administrative expenses than the other. Instead of looking at the figures in isolation, she compared the expenses, activities and performance of both departments.</p>
@@ -7253,7 +7253,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS03",
   difficulty: "Easy",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Arjun was reviewing information about a company and found that an important document mentioned in the records could not be located. He checked the available files carefully and confirmed that the document was absent.</p>
@@ -7325,7 +7325,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS04",
   difficulty: "Easy",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Neha attended a professional seminar where an experienced expert explained a recent accounting requirement. Neha carefully listened to the explanation and noted the important points.</p>
@@ -7397,7 +7397,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS05",
   difficulty: "Easy",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Vikram was preparing a report for management. He believed that a report should not merely contain correct figures; it should also present information clearly so that users could understand and appreciate the information being communicated.</p>
@@ -7469,7 +7469,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS06",
   difficulty: "Medium",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Karan was reviewing the financial position of a company. He noticed that the company's records showed a particular level of inventory, but several related transactions suggested that the reported figure might not represent the complete economic situation.</p>
@@ -7541,7 +7541,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS07",
   difficulty: "Medium",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Priya was evaluating whether a company's financial statements provided a reliable representation of its economic position. She examined whether the information presented in the statements corresponded with the underlying economic reality.</p>
@@ -7613,7 +7613,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS08",
   difficulty: "Medium",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Sameer was reviewing a company's accounting system and noticed that several accounting records appeared consistent with one another. The figures in different statements followed the same accounting principles, and the explanations provided for related transactions did not contradict each other.</p>
@@ -7685,7 +7685,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS09",
   difficulty: "Medium",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Ananya was working on a professional ethics issue involving the disclosure of financial information. The management wanted to present selected information in a way that would create a favourable impression, while Ananya believed that the information should be presented transparently to the relevant users.</p>
@@ -7757,7 +7757,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH5_CS10",
   difficulty: "Medium",
-  chapter: "Chapter 5",
+  chapter: "Chapter5",
 
   caseText: `
     <p>Rahul was studying Indian philosophical thought and initially found its discussion of suffering difficult to understand. As he continued studying, he learned that Indian philosophy does not simply stop at recognizing suffering. It also examines its causes and presents paths intended to overcome it.</p>
@@ -7824,7 +7824,1108 @@ const caseStudies = [
       reason: "The chapter connects ignorance with suffering and right knowledge with the possibility of liberation."
     }
   ]
+},
+
+// Chater6
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch6_001",
+  case_chapter: "chapter6",
+  question: "The term 'philosophy' is etymologically associated with which of the following meanings?",
+  options: [
+    "Science of nature",
+    "Love for wisdom",
+    "Study of society",
+    "Search for material wealth"
+  ],
+  answer: 1,
+  reason: "The chapter explains that the term 'philosophy' is etymologically rooted in 'love for wisdom' and represents a rational quest for knowledge."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch6_002",
+  case_chapter: "chapter6",
+  question: "Which branch of philosophy is described as the 'theory of reality'?",
+  options: [
+    "Epistemology",
+    "Axiology",
+    "Metaphysics",
+    "Logic"
+  ],
+  answer: 2,
+  reason: "Metaphysics is described as the 'theory of reality' and enquires into the nature of reality and existence."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch6_003",
+  case_chapter: "chapter6",
+  question: "Which branch of philosophy enquires into the nature of knowledge and how it is acquired?",
+  options: [
+    "Epistemology",
+    "Metaphysics",
+    "Aesthetics",
+    "Ethics"
+  ],
+  answer: 0,
+  reason: "Epistemology is the theory of knowledge and investigates the nature of knowledge, its acquisition, justification, belief and opinion."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch6_004",
+  case_chapter: "chapter6",
+  question: "Which of the following is the means of acquiring valid knowledge in Indian epistemology?",
+  options: [
+    "Prameya",
+    "Prama",
+    "Pramātā",
+    "Pramāna"
+  ],
+  answer: 3,
+  reason: "Pramāna is the means of acquiring valid knowledge. Pramātā is the knower, Prameya is the object of knowledge, and Prama is the resultant valid knowledge."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch6_005",
+  case_chapter: "chapter6",
+  question: "Which Indian ethical principle refers to performing one's duties selflessly without attachment to the results?",
+  options: [
+    "Aparigraha",
+    "Nishkama Karma",
+    "Ahimsa",
+    "Karuna"
+  ],
+  answer: 1,
+  reason: "Nishkama Karma refers to performing one's duties selflessly without attachment to the results and promotes ethical action without selfish motives."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch6_006",
+  case_chapter: "chapter6",
+  question: "A Chartered Accountant directly observes financial information and verifies it firsthand while conducting an audit. Which pramāna most directly corresponds to this approach?",
+  options: [
+    "Arthāpatti",
+    "Upamāna",
+    "Pratyaksha",
+    "Anumāna"
+  ],
+  answer: 2,
+  reason: "Pratyaksha means perception and is described as direct knowledge obtained through sense-organ contact with the object. In accountancy, it is related to direct observation and firsthand verification."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch6_007",
+  case_chapter: "chapter6",
+  question: "An auditor notices smoke on a distant hill and concludes that there is fire because of the known invariable connection between smoke and fire. Which element in the Nyāya syllogism represents the reason?",
+  options: [
+    "Hetu",
+    "Pratijna",
+    "Upanaya",
+    "Nigamana"
+  ],
+  answer: 0,
+  reason: "Hetu is the reason in the Nyāya syllogism. In the example, smoke serves as the reason for establishing the presence of fire."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch6_008",
+  case_chapter: "chapter6",
+  question: "A professional obtains knowledge from the statement of a trustworthy person whose words are considered valid. Which pramāna is involved?",
+  options: [
+    "Anupalabdhi",
+    "Pratyaksha",
+    "Śabda",
+    "Upamāna"
+  ],
+  answer: 2,
+  reason: "Śabda, or verbal testimony, is an independent source of valid knowledge and is based on the words of a trustworthy person."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch6_009",
+  case_chapter: "chapter6",
+  question: "A CA compares the performance of two similar businesses to gain insights for performance evaluation and risk assessment. Which pramāna is most closely reflected in this approach?",
+  options: [
+    "Pratyaksha",
+    "Upamāna",
+    "Śabda",
+    "Anupalabdhi"
+  ],
+  answer: 1,
+  reason: "Upamāna is knowledge obtained through comparison and similarity. The chapter relates it to comparative analysis, performance evaluation, risk assessment and decision-making in accountancy."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch6_010",
+  case_chapter: "chapter6",
+  question: "Devadatta is known to be alive and overweight, yet he is known to fast during the day. To reconcile these apparently conflicting facts, it is postulated that he eats at night. Which source of knowledge illustrates this reasoning?",
+  options: [
+    "Anumāna",
+    "Pratyaksha",
+    "Arthāpatti",
+    "Śabda"
+  ],
+  answer: 2,
+  reason: "Arthāpatti is postulation of an unperceived fact to reconcile conflicting perceived facts. In the example, eating at night is postulated to explain how Devadatta is both alive and overweight despite fasting during the day."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch6_011",
+  case_chapter: "chapter6",
+  question: "An auditor concludes that a financial statement is true only when the information presented accurately corresponds to the actual economic reality of the business. Which theory of truth is being applied?",
+  options: [
+    "Coherence Theory of Truth",
+    "Pragmatic Theory of Truth",
+    "Correspondence Theory of Truth",
+    "Theory of Axiology"
+  ],
+  answer: 2,
+  reason: "The correspondence theory of truth holds that a proposition is true when it aligns with reality. The chapter specifically relates this to ensuring that financial information corresponds with the economic reality of a business."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch6_012",
+  case_chapter: "chapter6",
+  question: "An Indian philosophical approach treats metaphysical, ethical, logical, psychological and epistemological problems as interconnected rather than placing them into strictly separate compartments. What does the chapter call this comprehensive perspective?",
+  options: [
+    "Materialistic outlook",
+    "Synthetic outlook in philosophy",
+    "Empirical outlook",
+    "Pragmatic outlook"
+  ],
+  answer: 1,
+  reason: "The chapter states that Indian philosophy addresses metaphysical, ethical, logical, psychological and epistemological problems without strict compartmentalization. This comprehensive perspective is referred to as the synthetic outlook in philosophy."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch6_013",
+  case_chapter: "chapter6",
+  question: "Consider the following statements about the characteristics of Indian philosophy: (1) It begins with recognition of suffering but may move towards optimism by offering remedies. (2) Ignorance of the true nature of things is identified as the root cause of suffering. (3) Cārvāka is included in the belief in an eternal moral order. (4) Except for Cārvāka, liberation is regarded as the ultimate goal. Which combination is correct?",
+  options: [
+    "Only (1), (2) and (4)",
+    "Only (1) and (3)",
+    "Only (2) and (3)",
+    "All four statements"
+  ],
+  answer: 0,
+  reason: "Statements (1), (2) and (4) agree with the chapter. Statement (3) is incorrect because the belief in an eternal moral order excludes the materialistic Cārvāka system."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch6_014",
+  case_chapter: "chapter6",
+  question: "A professional faces a situation involving environmental and social disclosures in financial reports and must determine how such information should be reported transparently and accurately. Which area of ethics most directly deals with this kind of issue?",
+  options: [
+    "Descriptive ethics",
+    "Metaethics",
+    "Applied ethics",
+    "Aesthetics"
+  ],
+  answer: 2,
+  reason: "Applied ethics involves the philosophical analysis of specific real-world issues requiring moral judgement. The chapter gives environmental and social disclosures in financial reports as an example."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch6_015",
+  case_chapter: "chapter6",
+  question: "Which option correctly matches the Indian ethical concept with its meaning?",
+  options: [
+    "Aparigraha — non-possessiveness and minimising attachment to material possessions",
+    "Karuna — performing duties without attachment to results",
+    "Ahimsa — pursuit of material well-being and financial stability",
+    "Dharma — sensual and aesthetic pleasure"
+  ],
+  answer: 0,
+  reason: "Aparigraha means non-possessiveness and involves minimising attachment to material possessions. Nishkama Karma concerns duty without attachment to results, Ahimsa means non-violence, Dharma concerns righteousness and duties, and Kama concerns desire and pleasure."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch6_016",
+  case_chapter: "chapter6",
+  question: "Which of the following is NOT listed as a main branch of philosophy in the chapter?",
+  options: [
+    "Metaphysics",
+    "Epistemology",
+    "Axiology",
+    "Biology"
+  ],
+  answer: 3,
+  reason: "The chapter identifies Metaphysics, Epistemology and Axiology as the main branches of philosophy. Biology is not listed as a main branch."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch6_017",
+  case_chapter: "chapter6",
+  question: "Which of the following correctly describes Pramātā in Indian epistemology?",
+  options: [
+    "The object of knowledge",
+    "The subject who knows",
+    "The means of acquiring valid knowledge",
+    "The resultant valid knowledge"
+  ],
+  answer: 1,
+  reason: "Pramātā is the subject who knows. Prameya is the object of knowledge, Pramāna is the means of acquiring valid knowledge, and Prama is the resultant valid knowledge."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch6_018",
+  case_chapter: "chapter6",
+  question: "Which pramāna refers to knowledge of the non-existence or absence of an object?",
+  options: [
+    "Anupalabdhi",
+    "Arthāpatti",
+    "Śabda",
+    "Upamāna"
+  ],
+  answer: 0,
+  reason: "Anupalabdhi is the source of knowledge relating to the non-existence or absence of an object."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch6_019",
+  case_chapter: "chapter6",
+  question: "Which of the following is one of the four Purusharthas described in Indian ethics?",
+  options: [
+    "Pratyaksha",
+    "Artha",
+    "Pramāna",
+    "Anumāna"
+  ],
+  answer: 1,
+  reason: "The four Purusharthas are Dharma, Artha, Kama and Moksha. Artha refers to wealth and prosperity."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch6_020",
+  case_chapter: "chapter6",
+  question: "Which branch of axiology deals with morality, right and wrong, and virtues?",
+  options: [
+    "Aesthetics",
+    "Metaphysics",
+    "Ethics",
+    "Epistemology"
+  ],
+  answer: 2,
+  reason: "Ethics is a branch of axiology that explores morality, distinguishing right and wrong, and considers virtues and moral conduct."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch6_021",
+  case_chapter: "chapter6",
+  question: "Which of the following correctly describes the difference highlighted between Western and Indian philosophy?",
+  options: [
+    "Western philosophy is primarily an intellectual pursuit of truth, while Indian philosophy emphasizes practical realization of truth.",
+    "Western philosophy emphasizes practical realization of truth, while Indian philosophy rejects spirituality.",
+    "Both traditions are described as using exactly the same method of philosophical inquiry.",
+    "Indian philosophy is described as being limited only to ethical questions."
+  ],
+  answer: 0,
+  reason: "The chapter states that Western Philosophy primarily follows the etymological essence of philosophy as an intellectual pursuit of truth, whereas Indian Philosophy takes a profoundly spiritual approach and emphasizes practical realization of truth."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch6_022",
+  case_chapter: "chapter6",
+  question: "In the Nyāya syllogism, which component refers to the application of the universal concomitance to the present situation?",
+  options: [
+    "Pratijna",
+    "Hetu",
+    "Upanaya",
+    "Nigamana"
+  ],
+  answer: 2,
+  reason: "Upanaya is the fourth component of the Nyāya syllogism and refers to the application of the universal concomitance to the current situation."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch6_023",
+  case_chapter: "chapter6",
+  question: "A financial report is considered true because its statements are consistent with other propositions within a systematic framework. Which theory of truth does this illustrate?",
+  options: [
+    "Correspondence Theory",
+    "Coherence Theory",
+    "Pragmatic Theory",
+    "Anupalabdhi Theory"
+  ],
+  answer: 1,
+  reason: "The coherence theory determines truth by the alignment or coherence of a proposition with other propositions within a systematic framework."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch6_024",
+  case_chapter: "chapter6",
+  question: "Which Purushartha is described as involving sensual and aesthetic pleasures and the ethical pursuit of desires?",
+  options: [
+    "Moksha",
+    "Dharma",
+    "Kama",
+    "Artha"
+  ],
+  answer: 2,
+  reason: "Kama involves seeking sensual and aesthetic pleasures and encourages a balanced and ethical pursuit of desires."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch6_025",
+  case_chapter: "chapter6",
+  question: "Which statement about aesthetics is consistent with the chapter?",
+  options: [
+    "Aesthetics is concerned only with financial calculations.",
+    "Aesthetics is the philosophical inquiry into beauty in nature and art.",
+    "Aesthetics is another name for the theory of knowledge.",
+    "Aesthetics deals exclusively with the existence of physical objects."
+  ],
+  answer: 1,
+  reason: "Aesthetics is broadly defined as the philosophical inquiry into the character of beauty in nature as well as in art. It investigates experiences of beauty and the appreciation of art."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch6_026",
+  case_chapter: "chapter6",
+  question: "A professional encounters information that cannot be directly sensed but recognises the absence of expected financial data and investigates the resulting gap. Which pramāna most directly relates to recognising such absence?",
+  options: [
+    "Śabda",
+    "Anumāna",
+    "Anupalabdhi",
+    "Arthāpatti"
+  ],
+  answer: 2,
+  reason: "Anupalabdhi is the immediate form of knowledge relating to the non-existence of an object. The chapter connects it with identifying missing data, potential errors and fraudulent activities in accountancy."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch6_027",
+  case_chapter: "chapter6",
+  question: "Which sequence correctly represents the four factors involved in the formation of knowledge according to Indian epistemology?",
+  options: [
+    "Pramātā – Prameya – Pramāna – Prama",
+    "Prameya – Pramātā – Prama – Pramāna",
+    "Pramāna – Prama – Pramātā – Prameya",
+    "Prama – Pramāna – Prameya – Pramātā"
+  ],
+  answer: 0,
+  reason: "The chapter identifies four factors: Pramātā is the subject who knows, Prameya is the object of knowledge, Pramāna is the means of acquiring valid knowledge, and Prama is the resultant valid knowledge."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch6_028",
+  case_chapter: "chapter6",
+  question: "Which of the following statements correctly reflects the chapter's treatment of the characteristics of Indian philosophy?",
+  options: [
+    "Indian philosophy is presented as pessimistic because it offers no path beyond suffering.",
+    "Indian philosophy identifies ignorance of the true nature of things as a root cause of suffering and considers right knowledge a means of liberation.",
+    "Indian philosophy considers Cārvāka to be the main example of spiritual philosophy.",
+    "Indian philosophy rejects discussion of sources of valid knowledge."
+  ],
+  answer: 1,
+  reason: "The chapter explains that ignorance about the true nature of things is identified as the root cause of suffering and that liberation is achievable through right knowledge. It also explains that Indian philosophy offers remedies rather than ending in hopelessness."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch6_029",
+  case_chapter: "chapter6",
+  question: "A Chartered Accountant performs a professional duty without attachment to the outcome and without selfish motives. Which principle most directly describes this conduct?",
+  options: [
+    "Aparigraha",
+    "Kama",
+    "Nishkama Karma",
+    "Anupalabdhi"
+  ],
+  answer: 2,
+  reason: "Nishkama Karma, as described in the chapter, involves performing one's duties selflessly without attachment to the results and promotes ethical action without selfish motives."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch6_030",
+  case_chapter: "chapter6",
+  question: "Which option correctly distinguishes the three theories of truth described in the chapter?",
+  options: [
+    "Correspondence focuses on conformity with reality; Coherence focuses on consistency within a system; Pragmatic theory relates truth to practical consequences or usefulness.",
+    "Correspondence focuses on moral duties; Coherence focuses on beauty; Pragmatic theory focuses only on perception.",
+    "Correspondence focuses on comparison; Coherence focuses on non-existence; Pragmatic theory focuses only on verbal testimony.",
+    "Correspondence, Coherence and Pragmatic theories all define truth exclusively as sensory perception."
+  ],
+  answer: 0,
+  reason: "The chapter distinguishes the theories by their respective approaches: Correspondence concerns agreement with reality, Coherence concerns consistency within a systematic framework, and Pragmatic theory relates truth to practical consequences or usefulness."
+},
+
+{
+  case_id: "PSY_CH6_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>Riya was beginning her study of philosophy and wanted to understand why human beings continuously seek knowledge about themselves and the world around them. She learned that human beings use their intellectual abilities to understand life and its challenges and that the human thirst for knowledge is grounded in reason.</p>
+
+    <p>While reading the chapter, Riya also learned that the term "philosophy" is etymologically rooted in "love for wisdom". Philosophy deals with fundamental questions such as the true nature of man, the purpose of life, the nature of the world, the existence of a creator and how one should live.</p>
+
+    <p>She concluded that philosophy is concerned with fundamental questions that require reasoning and reflection rather than merely seeking immediate practical outcomes.</p>
+  `,
+
+  questions: [
+    {
+      question: "According to the chapter, what is the etymological meaning associated with the term 'philosophy'?",
+      options: [
+        "Love for wisdom",
+        "Love for wealth",
+        "Study of nature",
+        "Search for political power"
+      ],
+      answer: 0,
+      reason: "The chapter states that the term 'philosophy' is etymologically rooted in 'love for wisdom'."
+    },
+    {
+      question: "What is identified as the foundation of the human thirst for knowledge?",
+      options: [
+        "Tradition alone",
+        "Material possession",
+        "Reason",
+        "Physical strength"
+      ],
+      answer: 2,
+      reason: "The chapter explains that the human thirst for knowledge is grounded in reason."
+    },
+    {
+      question: "Which of the following is one of the fundamental questions addressed by philosophy in the case?",
+      options: [
+        "How to increase physical strength",
+        "What is the purpose of life?",
+        "How to avoid all responsibilities",
+        "How to maximise material possessions"
+      ],
+      answer: 1,
+      reason: "The chapter specifically identifies the purpose of life as one of the fundamental questions addressed by philosophy."
+    },
+    {
+      question: "What does philosophy seek to comprehend according to the case?",
+      options: [
+        "Only immediate financial outcomes",
+        "Only scientific experiments",
+        "Aspects relevant to humanity in immediate and distant spheres",
+        "Only political institutions"
+      ],
+      answer: 2,
+      reason: "The chapter explains that philosophy seeks to comprehend aspects relevant to humanity in both immediate and distant spheres."
+    },
+    {
+      question: "What approach did Riya associate with philosophy?",
+      options: [
+        "Reasoning and reflection on fundamental questions",
+        "Avoiding questions about life",
+        "Depending only on physical observation",
+        "Focusing only on wealth creation"
+      ],
+      answer: 0,
+      reason: "The chapter presents philosophy as a rational quest involving reasoning and reflection on fundamental questions."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH6_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>Arjun was studying the main branches of philosophy. He learned that philosophy in the present day has three main branches: Metaphysics, Epistemology and Axiology.</p>
+
+    <p>Arjun studied Metaphysics as the theory of reality and learned that it enquires into reality and existence. He then studied Epistemology, which concerns the nature of knowledge and how knowledge is acquired. Finally, he studied Axiology, which includes Ethics and Aesthetics.</p>
+
+    <p>Arjun made a simple chart so that he could distinguish the three branches and their areas of study.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which branch did Arjun study as the 'theory of reality'?",
+      options: [
+        "Axiology",
+        "Epistemology",
+        "Metaphysics",
+        "Ethics"
+      ],
+      answer: 2,
+      reason: "Metaphysics is described in the chapter as the 'theory of reality' and enquires into the nature of reality and existence."
+    },
+    {
+      question: "Which branch concerns the nature of knowledge and how it is acquired?",
+      options: [
+        "Epistemology",
+        "Aesthetics",
+        "Metaphysics",
+        "Ethics"
+      ],
+      answer: 0,
+      reason: "Epistemology is the theory of knowledge and investigates its nature and acquisition."
+    },
+    {
+      question: "Which two areas are included under Axiology in the chapter?",
+      options: [
+        "Logic and Metaphysics",
+        "Ethics and Aesthetics",
+        "Epistemology and Logic",
+        "Metaphysics and Ethics"
+      ],
+      answer: 1,
+      reason: "The chapter lists Ethics and Aesthetics as the two areas under Axiology."
+    },
+    {
+      question: "Which branch is associated with questions about reality and existence?",
+      options: [
+        "Metaphysics",
+        "Axiology",
+        "Epistemology",
+        "Aesthetics"
+      ],
+      answer: 0,
+      reason: "Metaphysics explores fundamental questions concerning reality and existence."
+    },
+    {
+      question: "Which of the following correctly identifies the three main branches studied by Arjun?",
+      options: [
+        "Metaphysics, Epistemology and Axiology",
+        "Logic, Ethics and Psychology",
+        "Aesthetics, Logic and Metaphysics",
+        "Ethics, Psychology and Epistemology"
+      ],
+      answer: 0,
+      reason: "The chapter identifies Metaphysics, Epistemology and Axiology as the main branches of philosophy."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH6_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>Neha was reviewing audit information for a company. Before relying on the information, she wanted to understand where the knowledge came from and whether the source supported its correctness.</p>
+
+    <p>While studying Indian epistemology, Neha learned that four factors come into play in the formation of knowledge. The subject who knows is called Pramātā, the object of knowledge is called Prameya, the means of acquiring valid knowledge is called Pramāna, and the resultant valid knowledge is called Prama.</p>
+
+    <p>She then learned that Indian epistemology accepts six types of pramāna: Pratyaksha, Anumāna, Śabda, Upamāna, Anupalabdhi and Arthāpatti.</p>
+  `,
+
+  questions: [
+    {
+      question: "In Neha's study, what is Pramātā?",
+      options: [
+        "The resultant valid knowledge",
+        "The object of knowledge",
+        "The subject who knows",
+        "The means of acquiring valid knowledge"
+      ],
+      answer: 2,
+      reason: "Pramātā is the subject who knows."
+    },
+    {
+      question: "What is Prameya?",
+      options: [
+        "The object of knowledge",
+        "The subject who knows",
+        "The means of knowledge",
+        "The resultant knowledge"
+      ],
+      answer: 0,
+      reason: "Prameya is the object of knowledge."
+    },
+    {
+      question: "Which term refers to the means of acquiring valid knowledge?",
+      options: [
+        "Prama",
+        "Pramāna",
+        "Pramātā",
+        "Prameya"
+      ],
+      answer: 1,
+      reason: "Pramāna is the means of acquiring valid knowledge."
+    },
+    {
+      question: "Which of the following is one of the six accepted pramānas?",
+      options: [
+        "Dharma",
+        "Moksha",
+        "Anupalabdhi",
+        "Kama"
+      ],
+      answer: 2,
+      reason: "Anupalabdhi is one of the six pramānas listed in Indian epistemology."
+    },
+    {
+      question: "Which term refers to the resultant valid knowledge?",
+      options: [
+        "Pramāna",
+        "Prameya",
+        "Pramātā",
+        "Prama"
+      ],
+      answer: 3,
+      reason: "Prama is the resultant of valid knowledge."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH6_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>Karan was learning how different sources of knowledge could be applied in the accounting profession. During an audit, he directly observed documents and verified information firsthand. In another situation, he compared two similar business situations to understand their differences.</p>
+
+    <p>Karan also studied situations where knowledge was obtained from a trustworthy verbal source and situations where the absence of expected information itself provided knowledge.</p>
+
+    <p>He realised that the chapter connects these forms of knowledge with different pramānas in Indian epistemology.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which pramāna is most directly related to Karan's direct observation and firsthand verification?",
+      options: [
+        "Pratyaksha",
+        "Śabda",
+        "Upamāna",
+        "Arthāpatti"
+      ],
+      answer: 0,
+      reason: "Pratyaksha is perception and is described as direct knowledge obtained through sense-organ contact with the object. The chapter relates it to direct observation and firsthand verification in accountancy."
+    },
+    {
+      question: "Which pramāna is based on comparison and similarity?",
+      options: [
+        "Anupalabdhi",
+        "Upamāna",
+        "Pratyaksha",
+        "Śabda"
+      ],
+      answer: 1,
+      reason: "Upamāna is a source of knowledge derived through comparison and similarity."
+    },
+    {
+      question: "Which pramāna is based on the statement of a trustworthy person?",
+      options: [
+        "Anumāna",
+        "Arthāpatti",
+        "Śabda",
+        "Anupalabdhi"
+      ],
+      answer: 2,
+      reason: "Śabda, or verbal testimony, is based on the words of a trustworthy person."
+    },
+    {
+      question: "Which pramāna is associated with knowledge concerning non-existence or absence?",
+      options: [
+        "Anupalabdhi",
+        "Upamāna",
+        "Pratyaksha",
+        "Śabda"
+      ],
+      answer: 0,
+      reason: "Anupalabdhi is associated with knowledge of the non-existence or absence of an object."
+    },
+    {
+      question: "What was common to the different situations Karan studied?",
+      options: [
+        "Each involved one of the recognised sources of valid knowledge",
+        "Each involved only ethical theories",
+        "Each involved only questions about beauty",
+        "Each involved only metaphysical questions"
+      ],
+      answer: 0,
+      reason: "The situations in the case correspond to recognised pramānas or valid sources of knowledge described in the chapter."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH6_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>Simran was studying Indian ethics and focused on the four Purusharthas. She learned that Dharma relates to righteousness and moral and ethical duties, Artha concerns wealth and prosperity, Kama concerns desire and pleasure, and Moksha refers to liberation.</p>
+
+    <p>She then studied additional ethical principles. Ahimsa means non-violence and extends beyond physical harm to mental and verbal harm. Karuna and Maitri involve compassion and loving-kindness. Nishkama Karma refers to performing duties selflessly without attachment to results, while Aparigraha refers to non-possessiveness.</p>
+
+    <p>Simran noticed that the chapter connects these ethical concepts with disciplined and responsible conduct.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which Purushartha refers to righteousness and moral and ethical duties?",
+      options: [
+        "Kama",
+        "Dharma",
+        "Artha",
+        "Moksha"
+      ],
+      answer: 1,
+      reason: "Dharma encompasses moral and ethical duties for a virtuous life."
+    },
+    {
+      question: "Which Purushartha concerns wealth and prosperity?",
+      options: [
+        "Artha",
+        "Kama",
+        "Dharma",
+        "Moksha"
+      ],
+      answer: 0,
+      reason: "Artha is the pursuit of wealth and prosperity and concerns material well-being and financial stability."
+    },
+    {
+      question: "Which principle means non-possessiveness?",
+      options: [
+        "Ahimsa",
+        "Karuna",
+        "Aparigraha",
+        "Nishkama Karma"
+      ],
+      answer: 2,
+      reason: "Aparigraha means non-possessiveness and involves minimising attachment to material possessions."
+    },
+    {
+      question: "Which principle involves performing duties without attachment to the results?",
+      options: [
+        "Dharma",
+        "Nishkama Karma",
+        "Kama",
+        "Maitri"
+      ],
+      answer: 1,
+      reason: "Nishkama Karma involves performing one's duties selflessly without attachment to the results."
+    },
+    {
+      question: "What does Ahimsa emphasise?",
+      options: [
+        "Only physical strength",
+        "Only financial stability",
+        "Non-violence including mental and verbal harm",
+        "Attachment to possessions"
+      ],
+      answer: 2,
+      reason: "The chapter explains that Ahimsa extends beyond physical harm to include mental and verbal harm."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH6_CS06",
+  difficulty: "Medium",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>Vivek was reviewing an incomplete set of financial information. Several figures were available, but some expected information was missing. He first examined the information that was directly available and then considered whether the missing information could be identified from the absence itself.</p>
+
+    <p>In another situation, Vivek found two known facts that appeared to conflict. He knew that a person was alive and overweight even though the person was known to fast during the day. To reconcile the two facts, he considered an unperceived fact that could explain the situation.</p>
+
+    <p>Vivek connected these two approaches with Anupalabdhi and Arthāpatti respectively.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which pramāna is most directly associated with recognising the absence of expected information?",
+      options: [
+        "Anupalabdhi",
+        "Upamāna",
+        "Śabda",
+        "Pratyaksha"
+      ],
+      answer: 0,
+      reason: "Anupalabdhi is the source of knowledge concerning non-existence or absence and is related in the chapter to detecting missing data."
+    },
+    {
+      question: "Why did Vivek consider an additional unperceived fact in the second situation?",
+      options: [
+        "To compare two similar objects",
+        "To reconcile two apparently conflicting facts",
+        "To obtain knowledge from a trustworthy speaker",
+        "To directly observe the missing fact"
+      ],
+      answer: 1,
+      reason: "Arthāpatti involves postulating an unperceived fact to resolve or reconcile conflicting perceived facts."
+    },
+    {
+      question: "Which example from the chapter illustrates Arthāpatti?",
+      options: [
+        "Observing an object directly",
+        "Comparing two similar objects",
+        "Devadatta being alive and overweight despite fasting during the day",
+        "Receiving information from a trustworthy person"
+      ],
+      answer: 2,
+      reason: "The chapter uses the example of Devadatta being alive and overweight despite fasting during the day and postulates that he must be eating at night."
+    },
+    {
+      question: "Which statement best distinguishes Anupalabdhi from Arthāpatti?",
+      options: [
+        "Anupalabdhi concerns absence, while Arthāpatti postulates an unperceived fact to reconcile known facts.",
+        "Anupalabdhi concerns comparison, while Arthāpatti concerns verbal testimony.",
+        "Anupalabdhi concerns beauty, while Arthāpatti concerns morality.",
+        "Anupalabdhi and Arthāpatti are described as exactly the same source of knowledge."
+      ],
+      answer: 0,
+      reason: "The chapter describes Anupalabdhi as knowledge relating to non-existence or absence, whereas Arthāpatti involves postulating an unperceived fact to reconcile conflicting facts."
+    },
+    {
+      question: "How does the chapter relate Arthāpatti to Chartered Accountancy?",
+      options: [
+        "It eliminates the need for financial information.",
+        "It helps bridge data gaps by inferring missing facts necessary to explain observed situations.",
+        "It replaces all direct verification procedures.",
+        "It deals only with presentation and aesthetics."
+      ],
+      answer: 1,
+      reason: "The chapter explains that Arthāpatti allows CAs to bridge data gaps by inferring missing facts necessary to explain observed situations."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH6_CS07",
+  difficulty: "Medium",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>Anita was preparing financial information for management. She wanted the statements to accurately represent the economic reality of the business. She also reviewed whether the different statements in the reporting framework were consistent with one another.</p>
+
+    <p>While studying theories of truth, Anita learned that one theory considers a proposition true when it aligns with reality, while another considers truth in terms of coherence with other propositions within a systematic framework.</p>
+
+    <p>She also learned that the chapter discusses practical consequences and usefulness as part of another approach to truth.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which theory of truth is most directly reflected when Anita ensures that financial information corresponds to economic reality?",
+      options: [
+        "Coherence Theory",
+        "Pragmatic Theory",
+        "Correspondence Theory",
+        "Axiological Theory"
+      ],
+      answer: 2,
+      reason: "The Correspondence Theory of Truth considers a proposition true when it aligns with reality. The chapter applies this idea to financial reporting."
+    },
+    {
+      question: "Which theory determines truth through alignment or coherence with other propositions within a systematic framework?",
+      options: [
+        "Correspondence Theory",
+        "Coherence Theory",
+        "Pragmatic Theory",
+        "Metaphysical Theory"
+      ],
+      answer: 1,
+      reason: "The Coherence Theory of Truth determines truth by the coherence of a proposition with other propositions within a systematic framework."
+    },
+    {
+      question: "What aspect does the pragmatic approach to truth relate to?",
+      options: [
+        "Practical consequences or usefulness",
+        "Only direct sense perception",
+        "Only non-existence",
+        "Only moral duties"
+      ],
+      answer: 0,
+      reason: "The chapter describes the pragmatic approach to truth in terms of practical consequences or usefulness."
+    },
+    {
+      question: "Which situation in Anita's work most directly reflects the Correspondence Theory?",
+      options: [
+        "Checking whether information agrees with economic reality",
+        "Comparing two departments",
+        "Receiving information from a trustworthy person",
+        "Identifying beauty in a presentation"
+      ],
+      answer: 0,
+      reason: "Correspondence theory focuses on conformity between a proposition and actual reality, which is directly reflected in checking whether financial information corresponds to economic reality."
+    },
+    {
+      question: "Which statement correctly distinguishes Correspondence Theory and Coherence Theory?",
+      options: [
+        "Correspondence concerns reality, while Coherence concerns consistency within a systematic framework.",
+        "Correspondence concerns comparison, while Coherence concerns non-existence.",
+        "Correspondence concerns moral duty, while Coherence concerns pleasure.",
+        "Both theories are described as identical in the chapter."
+      ],
+      answer: 0,
+      reason: "The chapter distinguishes Correspondence Theory by its conformity with reality and Coherence Theory by its consistency with other propositions within a systematic framework."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH6_CS08",
+  difficulty: "Hard",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>Rahul was comparing Indian and Western approaches to philosophy for a professional development discussion. He noted that Western Philosophy primarily follows the etymological essence of philosophy as an intellectual pursuit of truth, whereas Indian Philosophy takes a profoundly spiritual approach and emphasises the practical realization of truth.</p>
+
+    <p>Rahul then studied the concept of darśana, which conveys both "vision" and the "instrument of vision". He learned that the common thread across Indian philosophical schools is expressed through the directive to "See the Self". He also studied the three means associated with the realization of truth: shravana, manana and nididhyāsana.</p>
+
+    <p>Finally, Rahul learned that Indian philosophy addresses metaphysical, ethical, logical, psychological and epistemological problems without strict compartmentalization. This comprehensive perspective is referred to as the synthetic outlook in philosophy.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which statement best captures the distinction described between Western and Indian philosophy?",
+      options: [
+        "Western philosophy rejects intellectual inquiry, while Indian philosophy focuses only on material wealth.",
+        "Western philosophy primarily follows an intellectual pursuit of truth, while Indian philosophy emphasises practical realization of truth.",
+        "Western philosophy and Indian philosophy are described as using exactly the same approach.",
+        "Indian philosophy is limited only to epistemological problems."
+      ],
+      answer: 1,
+      reason: "The chapter states that Western Philosophy primarily adheres to an intellectual pursuit of truth, whereas Indian Philosophy takes a spiritual approach with emphasis on practical realization of truth."
+    },
+    {
+      question: "What does the term 'darśana' convey in the context of the chapter?",
+      options: [
+        "Only moral duty",
+        "Only intellectual debate",
+        "Vision and the instrument of vision",
+        "Only material prosperity"
+      ],
+      answer: 2,
+      reason: "The chapter explains that darśana conveys both 'vision' and the 'instrument of vision', symbolising immediate and intuitive perception of reality and the means to attain this realization."
+    },
+    {
+      question: "Which sequence correctly represents the three means associated with the realization of truth?",
+      options: [
+        "Shabda, Upamāna, Anupalabdhi",
+        "Dharma, Artha, Kama",
+        "Shravana, Manana, Nididhyāsana",
+        "Pramātā, Prameya, Pramāna"
+      ],
+      answer: 2,
+      reason: "The chapter identifies shravana as hearing the truth, manana as intellectual conviction through critical analysis, and nididhyāsana as practical realization."
+    },
+    {
+      question: "What does the 'synthetic outlook in philosophy' refer to in Rahul's study?",
+      options: [
+        "Treating only ethical problems as important",
+        "Addressing metaphysical, ethical, logical, psychological and epistemological problems without strict compartmentalization",
+        "Rejecting all philosophical classifications",
+        "Studying only the nature of beauty"
+      ],
+      answer: 1,
+      reason: "The chapter states that Indian philosophy addresses metaphysical, ethical, logical, psychological and epistemological problems without strict compartmentalization and describes this as the synthetic outlook."
+    },
+    {
+      question: "Which directive is identified as the common thread across all schools of Indian Philosophy?",
+      options: [
+        "Seek material wealth",
+        "See the Self",
+        "Avoid all reasoning",
+        "Study only physical reality"
+      ],
+      answer: 1,
+      reason: "The chapter states that the common thread across all schools of Indian Philosophy is encapsulated in the directive to 'See the Self'."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH6_CS09",
+  difficulty: "Hard",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>Dev was studying the characteristics of Indian philosophy and initially found it difficult to understand why it is sometimes described as pessimistic. On examining the chapter carefully, he found that Indian philosophy begins by recognising suffering and the difficult aspects of life, but it does not end in hopelessness. Instead, various philosophical systems offer remedies and paths to overcome suffering.</p>
+
+    <p>Dev also learned that ignorance about the true nature of things is identified as the root cause of suffering and that liberation from bondage is considered achievable through right knowledge. Except for the Cārvāka system, the various philosophical systems converge in regarding liberation or freedom from bondage as the ultimate goal of human life.</p>
+
+    <p>He further observed that Indian philosophy is characterised as spiritual because it places the spirit or soul above the body or matter, with Cārvāka as the exception. He also learned that Indian philosophical systems engage in elaborate discussions concerning pramāna, pramā and apramā.</p>
+  `,
+
+  questions: [
+    {
+      question: "Why does the chapter reject the idea that Indian philosophy simply ends in pessimism?",
+      options: [
+        "Because it ignores suffering completely",
+        "Because it recognises suffering but also offers remedies and paths to overcome it",
+        "Because it focuses only on material prosperity",
+        "Because it rejects philosophical inquiry"
+      ],
+      answer: 1,
+      reason: "The chapter explains that although Indian philosophy begins with recognition of the dark aspects of life and suffering, it offers remedies and paths to overcome suffering rather than ending in hopelessness."
+    },
+    {
+      question: "What is identified as the root cause of suffering in the characteristics discussed?",
+      options: [
+        "Aesthetic experience",
+        "Ignorance about the true nature of things",
+        "Financial instability",
+        "Comparison between objects"
+      ],
+      answer: 1,
+      reason: "The chapter identifies ignorance about the true nature of things as the root cause of suffering."
+    },
+    {
+      question: "Which system is specifically identified as an exception to the view that liberation is the ultimate goal of human life?",
+      options: [
+        "Nyāya",
+        "Yoga",
+        "Cārvāka",
+        "Mīmāṃsā"
+      ],
+      answer: 2,
+      reason: "The chapter states that the various philosophical systems in India, except for Cārvāka, converge in considering liberation or freedom from bondage as the ultimate goal."
+    },
+    {
+      question: "Why does the chapter describe Indian philosophy as spiritual?",
+      options: [
+        "Because it rejects ethical life",
+        "Because it places the spirit or soul above the body or matter",
+        "Because it focuses only on economic considerations",
+        "Because it excludes questions about knowledge"
+      ],
+      answer: 1,
+      reason: "The chapter characterises Indian philosophy as spiritual because it places the spirit or soul above the body or matter, with Cārvāka as the materialistic exception."
+    },
+    {
+      question: "Which set of epistemological concepts is specifically mentioned as being discussed elaborately by Indian philosophical systems?",
+      options: [
+        "Pramāna, Pramā and Apramā",
+        "Dharma, Artha and Kama",
+        "Dharma, Karma and Rasa",
+        "Beauty, art and taste"
+      ],
+      answer: 0,
+      reason: "The chapter states that Indian philosophical systems engage in elaborate discussions on sources of valid knowledge (pramāna), types of valid knowledge (pramā), types of invalid knowledge (apramā) and related problems."
+    }
+  ]
 }
+
 
 
 
