@@ -10094,7 +10094,1299 @@ const caseStudies = [
       reason: "The chapter identifies Abhyasa as prolonged dedicated practice over an extended period and Vairagya as non-attachment."
     }
   ]
-}
+},
+
+// Chapter8
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch8_001",
+  case_chapter: "chapter8",
+  question: "Business ethics is best described in the chapter as:",
+  options: [
+    "A set of principles or standards that govern daily decision-making",
+    "A legal requirement applicable only to listed companies",
+    "A system concerned only with maximising profits",
+    "A substitute for corporate governance"
+  ],
+  answer: 0,
+  reason: "The chapter states that ethics is not synonymous with law and is commonly regarded as a set of principles or standards that govern daily decision-making."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch8_002",
+  case_chapter: "chapter8",
+  question: "What does Nishkama Karma emphasise in Karma Yoga?",
+  options: [
+    "Avoiding all forms of work",
+    "Performing action without attachment to the results",
+    "Focusing only on financial rewards",
+    "Avoiding ambitious goals in business"
+  ],
+  answer: 1,
+  reason: "The chapter defines Nishkama Karma as selfless action without attachment to the outcome, while clarifying that it does not imply apathy or lack of ambition."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch8_003",
+  case_chapter: "chapter8",
+  question: "Which pillar of Karma Yoga represents equanimity and acceptance?",
+  options: [
+    "Dharma",
+    "Kartavya",
+    "Samata",
+    "Swadharma"
+  ],
+  answer: 2,
+  reason: "The chapter identifies Samata as equanimity and acceptance, involving a balanced approach to successes and failures."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch8_004",
+  case_chapter: "chapter8",
+  question: "What does Lokasamgraha translate to in the chapter?",
+  options: [
+    "Knowledge of the self",
+    "Control of the mind",
+    "Personal achievement",
+    "The welfare of the world or the well-being of all"
+  ],
+  answer: 3,
+  reason: "The chapter states that Lokasamgraha translates to the welfare of the world or the well-being of all."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch8_005",
+  case_chapter: "chapter8",
+  question: "Which concept from Indian philosophy refers to mindful or deep listening?",
+  options: [
+    "Shravana",
+    "Karuna",
+    "Vak",
+    "Seva"
+  ],
+  answer: 0,
+  reason: "The chapter identifies Shravana as deep or mindful listening and explains its importance in creating an inclusive environment and understanding diverse perspectives."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch8_006",
+  case_chapter: "chapter8",
+  question: "According to the chapter, which responsibility of business leaders is specifically associated with Kartavya?",
+  options: [
+    "Focusing exclusively on shareholder returns",
+    "Taking responsibility for employees, communities and the environment",
+    "Avoiding responsibility for working conditions",
+    "Separating ethical standards from business decisions"
+  ],
+  answer: 1,
+  reason: "Kartavya represents duty and responsibility. The chapter applies it to business leaders through responsibility towards employees, communities and the environment, along with ethical standards, fair compensation and working conditions."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch8_007",
+  case_chapter: "chapter8",
+  question: "A company develops surveillance technology. According to the chapter, which approach best reflects business ethics?",
+  options: [
+    "Using the technology without restrictions because it is profitable",
+    "Allowing unrestricted collection of personal information",
+    "Implementing strict controls and ensuring that its use aligns with privacy rights",
+    "Ignoring the ethical implications if the technology is legally permitted"
+  ],
+  answer: 2,
+  reason: "The chapter explains that ethical use of surveillance technology requires consideration of privacy implications, strict controls and alignment with privacy rights."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch8_008",
+  case_chapter: "chapter8",
+  question: "What is the purpose of discovering one's Swadharma according to the chapter?",
+  options: [
+    "To maximise immediate financial rewards",
+    "To eliminate all professional responsibilities",
+    "To avoid working with other people",
+    "To find deeper meaning and fulfilment in one's work beyond mere financial rewards"
+  ],
+  answer: 3,
+  reason: "Swadharma refers to one's innate purpose or unique role. The chapter states that understanding it can provide deeper meaning, fulfilment and motivation beyond mere financial rewards."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch8_009",
+  case_chapter: "chapter8",
+  question: "According to the chapter's discussion of meaningful leadership, why are shared objectives important?",
+  options: [
+    "Leaders and followers work together towards objectives they share",
+    "Leaders should impose all goals without consultation",
+    "Followers should have no role in establishing objectives",
+    "Shared objectives are used only for financial measurement"
+  ],
+  answer: 0,
+  reason: "The chapter explains that leaders and followers share objectives and that goals developed together are generally achieved more effectively than leader-imposed goals."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch8_010",
+  case_chapter: "chapter8",
+  question: "What is the meaning attributed to 'Satyam, Shivam, Sundaram' in the chapter's discussion of communication?",
+  options: [
+    "Silent, disciplined and controlled speech",
+    "Truthful, benevolent and beautiful speech",
+    "Strategic, persuasive and aggressive speech",
+    "Technical, formal and brief speech"
+  ],
+  answer: 1,
+  reason: "The chapter states that Satyam, Shivam, Sundaram encapsulates the essence of truthful, benevolent and beautiful speech."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch8_011",
+  case_chapter: "chapter8",
+  question: "During a brainstorming session, a leader strongly favours one proposed outcome. According to the chapter's principles of communication, what should the leader do?",
+  options: [
+    "Clearly promote the preferred outcome throughout the discussion",
+    "End the brainstorming session before alternative views emerge",
+    "Avoid exhibiting bias towards any possible outcome",
+    "Encourage participants to agree with management's preferred answer"
+  ],
+  answer: 2,
+  reason: "The chapter states that in a brainstorming session the leader should avoid exhibiting bias towards any possible outcome because such bias may prevent participants from presenting their views."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch8_012",
+  case_chapter: "chapter8",
+  question: "According to the chapter's discussion of justice, when it is impossible to serve all stakeholders equally, which approach is emphasised?",
+  options: [
+    "Always prioritise the most powerful stakeholder",
+    "Avoid making any decision until every stakeholder agrees",
+    "Ignore the hierarchy of duties and focus only on outcomes",
+    "Control emotions and understand the various duties and their hierarchy"
+  ],
+  answer: 3,
+  reason: "The chapter explains that justice cannot always be served to all stakeholders. It emphasises controlling emotions and understanding the similarities, differences and hierarchy of duties to achieve better justice for society."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch8_013",
+  case_chapter: "chapter8",
+  question: "Which statement best reflects the chapter's explanation of ecofeminist criticism of dualism?",
+  options: [
+    "It rejects the idea that nature and culture should be treated as completely separate",
+    "It argues that environmental issues are unrelated to social issues",
+    "It promotes a strict separation between women and men",
+    "It focuses exclusively on economic growth"
+  ],
+  answer: 0,
+  reason: "The chapter states that ecofeminists critique dualistic thinking that separates nature from culture and women from men, seeking a more holistic understanding of interdependence."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch8_014",
+  case_chapter: "chapter8",
+  question: "In the chapter's business chariot analogy, which combination is correctly stated?",
+  options: [
+    "Management represents the chariot and employees represent the horses",
+    "Management represents the chariot driver and employees represent the warriors",
+    "Employees represent the chariot driver and management represents the warriors",
+    "Corporate values represent the organisation and management represents the horses"
+  ],
+  answer: 1,
+  reason: "The chapter explains that the chariot represents a business organisation, employees are represented as warriors, and management is depicted as the chariot driver."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch8_015",
+  case_chapter: "chapter8",
+  question: "Which statement most accurately reflects the chapter's application of Nishkama Karma to business performance?",
+  options: [
+    "Business managers should disregard the work process and concentrate only on final results",
+    "Business success depends on achieving immediate rewards from every action",
+    "Managers should focus on their own efforts and the process because they can control their efforts rather than the results",
+    "Managers should avoid setting any business purpose or organisational direction"
+  ],
+  answer: 2,
+  reason: "The chapter explains that Nishkama Karma involves focusing on the delivery rather than deliverables and on one's own efforts, because an individual can control one's efforts but not the results."
+},
+{
+  difficulty: "Easy",
+  case_id: "phy_ch8_016",
+  case_chapter: "chapter8",
+  question: "According to the chapter, philosophy as a practical discipline helps individuals to:",
+  options: [
+    "Think coherently and in a structured manner",
+    "Focus exclusively on financial performance",
+    "Avoid questioning established ideas",
+    "Replace all professional knowledge"
+  ],
+  answer: 0,
+  reason: "The chapter states that philosophy, as a practical discipline, hones the ability to think coherently and in a structured manner."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch8_017",
+  case_chapter: "chapter8",
+  question: "Which of the following is identified as a fundamental principle of business ethics?",
+  options: [
+    "Profit maximisation alone",
+    "Aggressive competition",
+    "Transparency",
+    "Market domination"
+  ],
+  answer: 2,
+  reason: "The chapter identifies honesty, integrity, transparency, accountability and fairness as fundamental principles of business ethics."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch8_018",
+  case_chapter: "chapter8",
+  question: "According to the chapter, Corporate Social Responsibility (CSR) goes beyond:",
+  options: [
+    "Employee motivation",
+    "Legal compliance",
+    "Customer service",
+    "Corporate governance"
+  ],
+  answer: 1,
+  reason: "The chapter describes CSR as going beyond legal compliance and covering voluntary actions businesses take to improve society."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch8_019",
+  case_chapter: "chapter8",
+  question: "What does whistleblowing primarily help organisations to do?",
+  options: [
+    "Increase executive compensation",
+    "Reduce product prices",
+    "Eliminate all business risks",
+    "Uncover misconduct and foster a culture of integrity"
+  ],
+  answer: 3,
+  reason: "The chapter states that whistleblowing plays a crucial role in uncovering misconduct and fostering a culture of integrity."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch8_020",
+  case_chapter: "chapter8",
+  question: "Which group is specifically included among the stakeholders whose interests ethical businesses should consider?",
+  options: [
+    "Suppliers",
+    "Only shareholders",
+    "Only customers",
+    "Only employees"
+  ],
+  answer: 0,
+  reason: "The chapter states that ethical businesses consider the impact of decisions on customers, employees, suppliers, the environment and the broader community."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch8_021",
+  case_chapter: "chapter8",
+  question: "A company discovers that one of its overseas suppliers is using child labour. Which area of contemporary business ethics is most directly involved?",
+  options: [
+    "Executive compensation",
+    "Global supply chain ethics",
+    "Post-pandemic ethics",
+    "Corporate political involvement"
+  ],
+  answer: 1,
+  reason: "The chapter identifies child labour, exploitation of workers and environmental degradation as issues specifically associated with global supply chain ethics."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch8_022",
+  case_chapter: "chapter8",
+  question: "Which statement most accurately describes stakeholder capitalism as presented in the chapter?",
+  options: [
+    "It focuses only on increasing shareholder returns",
+    "It replaces ethical responsibility with philanthropy",
+    "It emphasises the interests of all stakeholders, including employees, customers and the community",
+    "It requires businesses to operate without profit"
+  ],
+  answer: 2,
+  reason: "The chapter explains that stakeholder capitalism emphasises the interests of all stakeholders, including employees, customers and the community."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch8_023",
+  case_chapter: "chapter8",
+  question: "Which of the following is identified as a challenge in applying Karma Yoga principles to business?",
+  options: [
+    "Eliminating all organisational goals",
+    "Avoiding customer relationships",
+    "Replacing all quantitative measures",
+    "Balancing selfless action with ambitious goals"
+  ],
+  answer: 3,
+  reason: "The chapter identifies balance with ambition as a challenge, stating that businesses need to pursue excellence and growth while keeping ethical considerations paramount."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch8_024",
+  case_chapter: "chapter8",
+  question: "A manager listens carefully to employees, understands their emotions and communicates with empathy. Which communication principle from Indian philosophy is most directly reflected?",
+  options: [
+    "Karuna",
+    "Shravana",
+    "Vak",
+    "Nishkama Karma"
+  ],
+  answer: 0,
+  reason: "The chapter identifies Karuna, or compassion, as a communication principle involving empathy and understanding of team members' emotions."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch8_025",
+  case_chapter: "chapter8",
+  question: "Which combination is specifically mentioned in the chapter as an inclusive workplace policy approach for promoting gender diversity?",
+  options: [
+    "Flexible work arrangements, parental leave and equal opportunity initiatives",
+    "Reduced opportunities for promotion and longer working hours",
+    "Removal of all workplace training programmes",
+    "Limiting representation to senior management"
+  ],
+  answer: 0,
+  reason: "The chapter lists flexible work arrangements, parental leave and equal opportunity initiatives as inclusive policies and practices that help attract and retain diverse talent."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch8_026",
+  case_chapter: "chapter8",
+  question: "A multinational business operates in countries with different cultural norms and ethical expectations. According to the chapter, which approach best reflects ethical business conduct?",
+  options: [
+    "Apply only the local ethical norm and disregard universal principles",
+    "Follow one cultural approach everywhere without modification",
+    "Understand and appreciate cultural nuances while upholding universal principles that transcend borders",
+    "Ignore cultural differences because corporate governance is sufficient"
+  ],
+  answer: 2,
+  reason: "The chapter states that ethical business conduct requires understanding and appreciating cultural nuances while upholding universal principles that transcend borders."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch8_027",
+  case_chapter: "chapter8",
+  question: "Which of the following correctly matches the four principles highlighted in the chapter for justice with their corresponding yogas?",
+  options: [
+    "Mind management–Karma Yoga; Self management–Bhakti Yoga; Management of duty–Jnana Yoga; Relationship management–Raja Yoga",
+    "Mind management–Bhakti Yoga; Self management–Raja Yoga; Management of duty–Karma Yoga; Relationship management–Jnana Yoga",
+    "Mind management–Raja Yoga; Self management–Jnana Yoga; Management of duty–Bhakti Yoga; Relationship management–Karma Yoga",
+    "Mind management–Jnana Yoga; Self management–Karma Yoga; Management of duty–Raja Yoga; Relationship management–Bhakti Yoga"
+  ],
+  answer: 1,
+  reason: "The chapter explicitly maps mind management to Bhakti Yoga, self management to Raj Yoga, management of duty to Karma Yoga and relationship management to Jnana Yoga."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch8_028",
+  case_chapter: "chapter8",
+  question: "According to the chapter, enlightened leadership is described as a combination of:",
+  options: [
+    "Goal setting and outcome measurement",
+    "Meditate and Act and Spontaneous Right Action",
+    "Profit maximisation and competition",
+    "Delegation and performance appraisal"
+  ],
+  answer: 1,
+  reason: "The chapter explicitly states that 'Enlightened Leadership' is a combination of 'Meditate and Act' and 'Spontaneous Right Action.'"
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch8_029",
+  case_chapter: "chapter8",
+  question: "Which statement most accurately captures the central connection identified by ecofeminism in the chapter?",
+  options: [
+    "Gender and environmental issues should be studied independently",
+    "Economic development should take priority over environmental concerns",
+    "The exploitation of women and the degradation of nature can be understood as interconnected through systems of power, domination and exploitation",
+    "Environmental conservation is unrelated to social justice"
+  ],
+  answer: 2,
+  reason: "The chapter presents ecofeminism as a framework exploring the interconnectedness of gender, ecology and social justice, highlighting parallel oppressions of women and the environment through systems of power, domination and exploitation."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch8_030",
+  case_chapter: "chapter8",
+  question: "A company operates across several countries where legal requirements relating to gender equality differ significantly. According to the chapter, what should the business do?",
+  options: [
+    "Ignore local law where it is less stringent",
+    "Apply only the laws of its home country",
+    "Avoid gender-inclusive practices until legally required",
+    "Comply with local laws while proactively advocating for gender-inclusive practices"
+  ],
+  answer: 3,
+  reason: "The chapter states that businesses operating across borders must comply with local laws while also proactively advocating for gender-inclusive practices, even where legal requirements may be less stringent."
+},
+{
+  case_id: "PSY_CH8_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter8",
+
+  caseText: `
+    <p>A small restaurant employs several workers who perform the same type of work.
+    The owner discovers that two employees are being paid differently even though they
+    perform the same work. The difference is based only on the owner's personal
+    preference. The restaurant decides to revise its practices so that employees are
+    treated fairly, given equal opportunities and provided fair compensation.</p>
+
+    <p>The owner also decides to prepare a written code of ethics for the staff. The code
+    explains the standards of professional conduct expected during daily decision-making.
+    The owner understands that business ethics is broader than merely following the law
+    and that the restaurant's decisions can affect employees, customers, suppliers and
+    the wider community.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which principle is most directly violated when employees performing the same work are paid differently solely because of personal preference?",
+      options: [
+        "Fairness and equality",
+        "Market expansion",
+        "Competitive advantage",
+        "Customer segmentation"
+      ],
+      answer: 0,
+      reason: "The chapter uses the example of unequal treatment and unequal compensation for the same work to explain a violation of fairness and equality."
+    },
+
+    {
+      question: "According to the chapter, business ethics is not synonymous with:",
+      options: [
+        "Corporate governance",
+        "Law",
+        "Transparency",
+        "Fairness"
+      ],
+      answer: 1,
+      reason: "The chapter explicitly states that ethics is not synonymous with law and describes ethics as principles or standards governing daily decision-making."
+    },
+
+    {
+      question: "Which of the following is identified as a fundamental principle of business ethics in the chapter?",
+      options: [
+        "Market domination",
+        "Rapid expansion",
+        "Fairness",
+        "Price maximisation"
+      ],
+      answer: 2,
+      reason: "Fairness is one of the fundamental principles of business ethics identified in the chapter, along with honesty, integrity, transparency and accountability."
+    },
+
+    {
+      question: "What is the purpose of the written code of ethics prepared by the restaurant?",
+      options: [
+        "To determine product prices",
+        "To increase market share",
+        "To replace management",
+        "To outline anticipated standards of professional conduct"
+      ],
+      answer: 3,
+      reason: "The chapter states that corporations and professional organisations typically articulate a written code of ethics outlining anticipated standards of professional conduct."
+    },
+
+    {
+      question: "Which group is included among the multiple stakeholders whose interests an ethical business should consider?",
+      options: [
+        "Only shareholders",
+        "Employees",
+        "Only competitors",
+        "Only government authorities"
+      ],
+      answer: 1,
+      reason: "The chapter specifically identifies employees as one of the multiple stakeholders whose interests ethical businesses should consider."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH8_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter8",
+
+  caseText: `
+    <p>A technology company develops surveillance tools that can be used by
+    governments and businesses. The management recognises that the technology could
+    create privacy risks if it is used without adequate safeguards. Instead of treating
+    technological capability as sufficient justification for unrestricted use, the company
+    introduces strict controls and policies intended to protect privacy.</p>
+
+    <p>At the same time, the company starts a programme to support community
+    development and environmental sustainability. Management explains that these
+    voluntary activities are intended to contribute to society and are not limited merely
+    to meeting legal requirements. The leadership team also makes ethical behaviour a
+    visible part of the organisation's culture.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which ethical issue is most directly involved in the surveillance technology described in the case?",
+      options: [
+        "Executive compensation",
+        "Board diversity",
+        "Privacy",
+        "Supply chain pricing"
+      ],
+      answer: 2,
+      reason: "The chapter specifically discusses surveillance tools in relation to misuse and invasion of privacy."
+    },
+
+    {
+      question: "What does the chapter suggest for ethical use of surveillance tools?",
+      options: [
+        "Implement strict controls and align use with privacy rights",
+        "Remove all safeguards",
+        "Use the technology only for profit maximisation",
+        "Ignore possible ethical implications"
+      ],
+      answer: 0,
+      reason: "The chapter states that business ethics would involve considering the implications, implementing strict controls and ensuring alignment with privacy rights."
+    },
+
+    {
+      question: "The company's voluntary community and environmental initiatives are most directly associated with:",
+      options: [
+        "Corporate political involvement",
+        "Executive compensation",
+        "Market boundaries",
+        "Corporate Social Responsibility"
+      ],
+      answer: 3,
+      reason: "The chapter describes CSR as voluntary actions taken by businesses to improve society, including community development and environmental sustainability."
+    },
+
+    {
+      question: "According to the chapter, CSR goes beyond:",
+      options: [
+        "Stakeholder engagement",
+        "Legal compliance",
+        "Ethical sourcing",
+        "Community development"
+      ],
+      answer: 1,
+      reason: "The chapter explicitly states that CSR goes beyond legal compliance."
+    },
+
+    {
+      question: "What role do leaders play in establishing an ethical organisational culture?",
+      options: [
+        "They eliminate the need for ethical standards",
+        "They focus only on financial results",
+        "They model ethical behaviour and foster a culture of integrity",
+        "They transfer all ethical responsibility to employees"
+      ],
+      answer: 2,
+      reason: "The chapter states that ethical leaders set the tone by modelling ethical behaviour, fostering integrity and holding individuals accountable."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH8_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter8",
+
+  caseText: `
+    <p>A business manager decides to apply the five pillars of Karma Yoga while
+    managing a growing organisation. The manager encourages employees to perform
+    their work with dedication without becoming excessively attached to immediate
+    rewards. Successes and failures are handled with balance, and responsibilities
+    toward employees, communities and the environment are taken seriously.</p>
+
+    <p>The manager also insists that business decisions should follow ethical standards,
+    avoid shortcuts and maintain transparency. Employees are encouraged to understand
+    the deeper purpose of their work and the unique role they can contribute to the
+    organisation.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which pillar is represented by performing work without attachment to immediate results?",
+      options: [
+        "Swadharma",
+        "Nishkama Karma",
+        "Kartavya",
+        "Samata"
+      ],
+      answer: 1,
+      reason: "Nishkama Karma is the principle of selfless action without attachment to the results."
+    },
+
+    {
+      question: "Handling success and failure with balance reflects which pillar?",
+      options: [
+        "Dharma",
+        "Swadharma",
+        "Samata",
+        "Kartavya"
+      ],
+      answer: 2,
+      reason: "Samata represents equanimity and acceptance, including a balanced approach to successes and failures."
+    },
+
+    {
+      question: "Taking responsibility for employees, communities and the environment reflects:",
+      options: [
+        "Dharma",
+        "Swadharma",
+        "Samata",
+        "Kartavya"
+      ],
+      answer: 3,
+      reason: "Kartavya represents duty and responsibility and is applied in the chapter to responsibilities towards employees, communities and the environment."
+    },
+
+    {
+      question: "Avoiding unethical shortcuts and prioritising transparency and honesty reflects:",
+      options: [
+        "Dharma",
+        "Samata",
+        "Swadharma",
+        "Shravana"
+      ],
+      answer: 0,
+      reason: "Dharma is described as righteousness and ethical conduct, including integrity, transparency, honesty and avoidance of unethical practices."
+    },
+
+    {
+      question: "Helping employees discover the unique role and deeper purpose of their work is associated with:",
+      options: [
+        "Samata",
+        "Swadharma",
+        "Dharma",
+        "Kartavya"
+      ],
+      answer: 1,
+      reason: "Swadharma refers to one's innate purpose or unique role and can give deeper meaning and fulfilment beyond financial rewards."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH8_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter8",
+
+  caseText: `
+    <p>A multinational company reviews several ethical issues across its operations.
+    Its procurement department discovers that one supplier is using child labour.
+    The technology division is examining possible algorithmic bias in an artificial
+    intelligence system. The information-security team is strengthening its protection
+    of customer data after recognising the importance of privacy and cybersecurity.</p>
+
+    <p>The board is also reviewing corporate governance practices, including board
+    diversity and the relationship between senior executive roles. Employees are given
+    a mechanism to report unethical behaviour without fear of retaliation.</p>
+  `,
+
+  questions: [
+    {
+      question: "The supplier's use of child labour is primarily an issue of:",
+      options: [
+        "Global supply chain ethics",
+        "Executive compensation",
+        "Stakeholder capitalism",
+        "Leadership succession"
+      ],
+      answer: 3,
+      reason: "The chapter identifies child labour and exploitation of workers as issues within global supply chain ethics."
+    },
+
+    {
+      question: "Algorithmic bias in an artificial intelligence system falls under:",
+      options: [
+        "Ethics in technology and Artificial Intelligence",
+        "Environmental sustainability",
+        "Post-pandemic ethics",
+        "Corporate political involvement"
+      ],
+      answer: 0,
+      reason: "The chapter identifies algorithmic bias and responsible use of AI as contemporary ethical issues in technology."
+    },
+
+    {
+      question: "The company's strengthened protection of customer data most directly addresses:",
+      options: [
+        "Executive compensation",
+        "Consumer privacy and data security",
+        "Board representation",
+        "Community investment"
+      ],
+      answer: 1,
+      reason: "The chapter identifies protection of consumer privacy and data security as a critical ethical consideration in digital business."
+    },
+
+    {
+      question: "Board diversity is specifically identified in the chapter as an issue associated with:",
+      options: [
+        "Environmental sustainability",
+        "Consumer privacy",
+        "Corporate governance and accountability",
+        "Ecofeminism"
+      ],
+      answer: 2,
+      reason: "The chapter identifies board diversity as one of the focal issues in corporate governance."
+    },
+
+    {
+      question: "Providing employees with a mechanism to report unethical behaviour without fear of retaliation relates to:",
+      options: [
+        "Stakeholder capitalism",
+        "Whistleblowing and ethical reporting mechanisms",
+        "Market boundaries",
+        "Corporate political involvement"
+      ],
+      answer: 3,
+      reason: "The chapter explains that ethical reporting mechanisms allow employees to report unethical behaviour without fear of retaliation."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH8_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter8",
+
+  caseText: `
+    <p>An international company wants to improve gender diversity within its
+    organisation. The leadership team introduces flexible work arrangements,
+    parental leave and equal opportunity initiatives. It also starts programmes
+    designed to address unconscious bias and actively seeks diverse representation
+    in leadership and decision-making bodies.</p>
+
+    <p>The company operates in several countries and recognises that gender roles,
+    identities and legal frameworks vary across regions. It therefore seeks to understand
+    local cultural conditions while maintaining its commitment to equality and
+    inclusion.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which approach in the case is specifically identified by the chapter as an inclusive policy and practice?",
+      options: [
+        "Flexible work arrangements",
+        "Restricting parental leave",
+        "Reducing equal opportunities",
+        "Limiting representation in leadership"
+      ],
+      answer: 0,
+      reason: "The chapter specifically lists flexible work arrangements among the inclusive policies and practices that promote gender diversity."
+    },
+
+    {
+      question: "Programmes addressing unconscious bias are examples of:",
+      options: [
+        "Corporate governance restructuring",
+        "Training and awareness programmes",
+        "Supply chain controls",
+        "Consumer data policies"
+      ],
+      answer: 1,
+      reason: "The chapter identifies training and awareness programmes addressing unconscious biases as a strategy for promoting gender diversity."
+    },
+
+    {
+      question: "Actively seeking diverse representation in leadership and decision-making bodies reflects:",
+      options: [
+        "Legal compliance only",
+        "Environmental conservation",
+        "Diverse representation",
+        "Whistleblowing"
+      ],
+      answer: 2,
+      reason: "Diverse representation is specifically identified as a strategy for promoting gender diversity in global businesses."
+    },
+
+    {
+      question: "The existence of different legal frameworks concerning gender equality across countries illustrates the:",
+      options: [
+        "Business case for diversity",
+        "Gender pay gap",
+        "Intersectionality principle",
+        "Legal landscape"
+      ],
+      answer: 3,
+      reason: "The chapter explains that legal frameworks related to gender equality differ globally and discusses this under the legal landscape."
+    },
+
+    {
+      question: "Understanding local cultural conditions while maintaining a commitment to equality reflects:",
+      options: [
+        "Cultural sensitivity",
+        "Executive compensation",
+        "Operational excellence",
+        "Consumer privacy"
+      ],
+      answer: 0,
+      reason: "The chapter states that businesses must navigate cultural nuances with sensitivity while upholding principles of equality."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH8_CS06",
+  difficulty: "Medium",
+  chapter: "Chapter8",
+
+  caseText: `
+    <p>A service company wants to build its business around the principle of
+    Lokasamgraha. Its leadership team concludes that the organisation should not
+    pursue profit at the expense of societal well-being. Instead, the company plans
+    to consider the interests of stakeholders, communities and the environment
+    while continuing to remain commercially sustainable.</p>
+
+    <p>The company begins publishing information about its business goals, challenges
+    and social impact initiatives. It also improves resource efficiency, reduces
+    environmental impact, introduces fair labour practices across its supply chain and
+    supports local communities through job creation and skills-development programmes.</p>
+
+    <p>Management explains that the organisation's objective is not to abandon profit,
+    but to integrate profit-seeking with a wider social purpose and the well-being of
+    the community.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which concept is the central philosophical principle underlying the company's approach?",
+      options: [
+        "Lokasamgraha",
+        "Nishkama Karma alone",
+        "Raja Dharma alone",
+        "Swadharma alone"
+      ],
+      answer: 0,
+      reason: "The case describes the welfare of society, interconnectedness and balancing personal or organisational interests with collective welfare, which are central features of Lokasamgraha."
+    },
+
+    {
+      question: "Publishing information about business goals, challenges and social impact initiatives most directly reflects:",
+      options: [
+        "Leadership by example",
+        "Stakeholder engagement and transparency",
+        "Consumer segmentation",
+        "Executive compensation"
+      ],
+      answer: 1,
+      reason: "The chapter identifies stakeholder engagement and transparency as an important way of integrating Lokasamgraha into business practices."
+    },
+
+    {
+      question: "Improving resource efficiency and reducing environmental impact are examples of:",
+      options: [
+        "Fair and inclusive employment practices",
+        "Whistleblowing",
+        "Sustainable and responsible operations",
+        "Leadership succession"
+      ],
+      answer: 2,
+      reason: "The chapter places resource efficiency and reduction of environmental impact under sustainable and responsible operations."
+    },
+
+    {
+      question: "The company's job creation and skills-development programmes are most directly related to:",
+      options: [
+        "Measuring financial performance",
+        "Board diversity",
+        "Consumer privacy",
+        "Investing in the community"
+      ],
+      answer: 3,
+      reason: "The chapter states that businesses can contribute to Lokasamgraha through local job creation, skills development programmes and social initiatives."
+    },
+
+    {
+      question: "The company's decision to pursue profit while contributing to societal well-being reflects the principle of:",
+      options: [
+        "Balancing profit with purpose",
+        "Avoiding all profit",
+        "Replacing stakeholders with shareholders",
+        "Focusing only on short-term gains"
+      ],
+      answer: 0,
+      reason: "The chapter states that Lokasamgraha calls for a balance between profit-seeking and societal well-being and encourages businesses to align goals with a higher purpose."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH8_CS07",
+  difficulty: "Medium",
+  chapter: "Chapter8",
+
+  caseText: `
+    <p>A large organisation is facing a rapidly changing market. Its leader realises
+    that even excellent efforts cannot guarantee that the final result will always match
+    expectations. A competitor may enter at the last moment, customer demand may
+    suddenly change, or market conditions may shift unexpectedly.</p>
+
+    <p>Instead of allowing the team to become overwhelmed by uncertainty, the leader
+    encourages members to understand their immediate responsibilities, provides the
+    necessary support and training, and maintains a balanced attitude towards success
+    and failure. The leader also involves employees in establishing objectives rather
+    than simply imposing targets on them.</p>
+
+    <p>The leader believes that employees and management should work together towards
+    common objectives and that the organisation must develop the capacity to face,
+    tolerate, absorb and endure changing circumstances.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which principle most directly explains the leader's balanced response to success and failure?",
+      options: [
+        "Dharma",
+        "Equanimity",
+        "Swadharma",
+        "Corporate governance"
+      ],
+      answer: 1,
+      reason: "The chapter describes equanimity as a balanced attitude towards success and failure and connects it with resilience."
+    },
+
+    {
+      question: "The leader's emphasis on knowing and performing one's immediate responsibility most directly reflects:",
+      options: [
+        "Duty",
+        "Corporate Social Responsibility",
+        "Stakeholder capitalism",
+        "Ecofeminism"
+      ],
+      answer: 0,
+      reason: "The chapter's discussion of Duty states that each person in an organisation needs to address the reality of the task immediately at hand."
+    },
+
+    {
+      question: "Why does the chapter favour objectives developed together by leaders and followers?",
+      options: [
+        "They eliminate the need for leadership",
+        "They are generally more effectively achieved than leader-imposed goals",
+        "They guarantee a fixed business outcome",
+        "They focus only on financial rewards"
+      ],
+      answer: 1,
+      reason: "The chapter states that leader-imposed goals are generally harder and less effectively achieved than goals developed together."
+    },
+
+    {
+      question: "The capacity to face, tolerate, absorb and endure changing circumstances is identified in the chapter as:",
+      options: [
+        "Titiksha",
+        "Swadharma",
+        "Shravana",
+        "Vak"
+      ],
+      answer: 0,
+      reason: "The chapter identifies titiksha as endurance and connects it with a leader's capacity to face, tolerate, absorb and endure the changing business environment."
+    },
+
+    {
+      question: "Which statement best reflects the leader's approach in the case?",
+      options: [
+        "Focus entirely on uncertain future outcomes",
+        "Ignore changing market conditions",
+        "Combine duty, equanimity and shared objectives",
+        "Treat every failure as evidence of unethical conduct"
+      ],
+      answer: 2,
+      reason: "The case combines the chapter's principles of duty, equanimity and shared objectives in responding to uncertainty."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH8_CS08",
+  difficulty: "Medium",
+  chapter: "Chapter8",
+
+  caseText: `
+    <p>A company is conducting a brainstorming session to develop a new advertising
+    campaign. Before the meeting begins, the leader has already formed a personal
+    preference for one particular idea. During the session, however, the leader
+    deliberately avoids signalling that preference because participants may otherwise
+    hesitate to offer alternative views.</p>
+
+    <p>The leader listens carefully to participants, expresses ideas clearly, and responds
+    with empathy. The leader also remembers that speech, according to the philosophical
+    framework discussed in the chapter, is itself a form of action and can have effects
+    immediately or later.</p>
+
+    <p>Rather than trying to force a predetermined audience response, the leader seeks
+    truthful, constructive and compassionate communication while allowing participants
+    to develop their own skills and contribute to the eventual outcome.</p>
+  `,
+
+  questions: [
+    {
+      question: "Why does the leader avoid showing bias towards a preferred brainstorming outcome?",
+      options: [
+        "It may act as a stopper to participants presenting their views",
+        "It guarantees that every participant will agree",
+        "It eliminates the need for communication",
+        "It ensures that the leader controls the final answer"
+      ],
+      answer: 0,
+      reason: "The chapter states that bias by the leader towards possible outcomes may act as a stopper to participants presenting their views."
+    },
+
+    {
+      question: "Which communication principle is represented by the leader's deep listening?",
+      options: [
+        "Vak",
+        "Shravana",
+        "Dharma",
+        "Samata"
+      ],
+      answer: 1,
+      reason: "Shravana refers to deep or mindful listening in the communication principles discussed in the chapter."
+    },
+
+    {
+      question: "The leader's empathetic response to participants most directly reflects:",
+      options: [
+        "Karuna",
+        "Swadharma",
+        "Titiksha",
+        "Lokasamgraha"
+      ],
+      answer: 0,
+      reason: "Karuna means compassion, and the chapter associates it with empathetic communication that understands team members' emotions."
+    },
+
+    {
+      question: "Which concept in the case represents truthful, benevolent and beautiful speech?",
+      options: [
+        "Raja Dharma",
+        "Satyam, Shivam, Sundaram",
+        "Nishkama Karma",
+        "Kartavya"
+      ],
+      answer: 1,
+      reason: "The chapter states that Satyam, Shivam, Sundaram encapsulates truthful, benevolent and beautiful speech."
+    },
+
+    {
+      question: "According to the chapter, why should a speaker avoid orienting communication towards a specific outcome?",
+      options: [
+        "Because communication has no effect on organisational behaviour",
+        "Because participants should never reach any goal",
+        "Because focusing on a specific outcome can bind the speaker to audience limitations and reduce focus on the process",
+        "Because leaders should avoid speaking during meetings"
+      ],
+      answer: 2,
+      reason: "The chapter explains that focusing on a particular audience response or outcome can bind the speaker to limitations of the audience and shift attention away from the process."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH8_CS09",
+  difficulty: "Hard",
+  chapter: "Chapter8",
+
+  caseText: `
+    <p>A large passenger ship carrying about one thousand people is sinking. The
+    number of available lifeboat places is sufficient for only about one hundred
+    people. The person responsible for deciding who receives those places knows that
+    no decision can protect every stakeholder equally. Different people have different
+    duties, circumstances and claims, while the limited resources make complete
+    fairness in the ordinary sense impossible.</p>
+
+    <p>The decision-maker first recognises the need to control emotions rather than
+    make a decision based on panic, personal attachment or pressure from people in
+    positions of influence. The decision-maker therefore considers the different duties,
+    their similarities and differences, and the hierarchy of duties.</p>
+
+    <p>The organisation later examines the philosophical relevance of the experience
+    to business leadership. It concludes that appropriate use of power requires
+    enlightened people in positions of authority. Leadership should focus on the
+    process of performing duties rather than becoming attached to uncertain outcomes.
+    In a separate business situation, a seasoned entrepreneur faces changing market
+    demand and recognises that the result cannot be controlled, but a sound process
+    allows the organisation to respond quickly to changing conditions.</p>
+  `,
+
+  questions: [
+    {
+      question: "What central difficulty in the case corresponds to the chapter's discussion of justice?",
+      options: [
+        "Justice can always satisfy every stakeholder equally",
+        "Limited circumstances may make it impossible to serve all stakeholders equally",
+        "Justice requires ignoring duties",
+        "Justice is concerned only with legal compliance"
+      ],
+      answer: 1,
+      reason: "The chapter explicitly uses the lifeboat example to explain that justice cannot be served to all stakeholders every time."
+    },
+
+    {
+      question: "According to the chapter, what helps a person make a better justice-related decision in such circumstances?",
+      options: [
+        "Following emotional reactions",
+        "Choosing the most powerful person automatically",
+        "Controlling emotions and understanding duties and their hierarchy",
+        "Avoiding all decision-making"
+      ],
+      answer: 2,
+      reason: "The chapter states that controlling emotions and having a clear understanding of various duties, including their hierarchy, can help achieve better justice for society."
+    },
+
+    {
+      question: "Why does the chapter emphasise having enlightened people in positions of authority?",
+      options: [
+        "Because people in power should automatically receive priority",
+        "Because enlightened leadership supports better ethical judgment in the use of power",
+        "Because authority removes the need for justice",
+        "Because hierarchy always produces equal outcomes"
+      ],
+      answer: 1,
+      reason: "The chapter explains that people in positions of power have a greater chance of influencing decisions and therefore emphasises enlightened people in authority for better ethical judgment."
+    },
+
+    {
+      question: "Which combination does the chapter identify as 'Enlightened Leadership'?",
+      options: [
+        "Goal setting and financial measurement",
+        "Meditate and Act and Spontaneous Right Action",
+        "Competition and profit maximisation",
+        "Control and punishment"
+      ],
+      answer: 1,
+      reason: "The chapter explicitly describes Enlightened Leadership as a combination of 'Meditate and Act' and 'Spontaneous Right Action.'"
+    },
+
+    {
+      question: "Why can the entrepreneur respond more effectively to changing market conditions in the final part of the case?",
+      options: [
+        "Because the entrepreneur is guaranteed a successful outcome",
+        "Because the market is assumed to remain stable",
+        "Because the entrepreneur is detached from all business responsibilities",
+        "Because the right process enables faster response even though the outcome cannot be controlled"
+      ],
+      answer: 3,
+      reason: "The chapter explains that market needs can change and outcomes cannot be controlled, but a right process allows the business to respond to changing market conditions faster."
+    }
+  ]
+},
+
+{
+  case_id: "PSY_CH8_CS10",
+  difficulty: "Hard",
+  chapter: "Chapter8",
+
+  caseText: `
+    <p>A global manufacturing group operates in regions where gender roles, legal
+    protections and access to environmental resources differ. In some of its operating
+    areas, women have limited access to land, water and other natural resources. Climate
+    and environmental changes are creating additional hardship for communities in
+    which women are heavily involved in agriculture, water collection and food
+    provision.</p>
+
+    <p>The company's leadership begins involving women more actively in environmental
+    decision-making and community conservation programmes. At the same time, it
+    reviews its workplace practices because women and individuals of other genders
+    remain underrepresented in some leadership positions. The company introduces
+    measures addressing equal opportunities, workplace discrimination, leadership
+    representation and work-life balance.</p>
+
+    <p>The leadership team studies ecofeminism to understand the philosophical
+    connection between gender, ecology and social justice. It examines the argument
+    that the exploitation of women and the degradation of nature can be connected
+    through systems of power, domination and exploitation. The company also considers
+    how race, class and other identity markers can intersect with gender and
+    environmental concerns.</p>
+  `,
+
+  questions: [
+    {
+      question: "Why does the chapter identify women in some developing countries as particularly vulnerable to environmental changes?",
+      options: [
+        "Because they are always excluded from business",
+        "Because of roles such as agriculture, water collection and food provision",
+        "Because they control all environmental resources",
+        "Because environmental changes affect only women"
+      ],
+      answer: 1,
+      reason: "The chapter states that women, especially in developing countries, are often more susceptible to environmental changes because of roles in agriculture, water collection and food provision."
+    },
+
+    {
+      question: "According to the case and the chapter, what is important for building resilient and sustainable communities?",
+      options: [
+        "Restricting women's access to resources",
+        "Removing women from environmental decision-making",
+        "Ensuring equitable access to environmental resources",
+        "Focusing only on corporate profits"
+      ],
+      answer: 2,
+      reason: "The chapter states that empowering women by ensuring equitable access to land, water and other natural resources is crucial for resilient and sustainable communities."
+    },
+
+    {
+      question: "Which statement best captures the ecofeminist perspective described in the chapter?",
+      options: [
+        "Gender and ecology are completely unrelated",
+        "Women and nature should be studied separately",
+        "Only workplace discrimination matters",
+        "The oppression of women and degradation of the environment can be interconnected through systems of power, domination and exploitation"
+      ],
+      answer: 3,
+      reason: "The chapter presents ecofeminism as a framework connecting gender, ecology and social justice and highlights parallel forms of oppression involving women and the environment."
+    },
+
+    {
+      question: "The company's consideration of how race, class and gender interact reflects which basic tenet of ecofeminism?",
+      options: [
+        "Intersectionality",
+        "Critique of dualism",
+        "Activism and advocacy",
+        "Valuing feminine perspectives"
+      ],
+      answer: 0,
+      reason: "Intersectionality is defined in the chapter as recognition of the interconnectedness of forms of oppression related to gender, race, class and the environment."
+    },
+
+    {
+      question: "The company introduces equal opportunity, leadership representation and work-life balance measures. Which broader business issue from the chapter is being addressed?",
+      options: [
+        "Gender diversity in the global business environment",
+        "Consumer data security",
+        "Global supply chain ethics only",
+        "Post-pandemic remote work ethics only"
+      ],
+      answer: 0,
+      reason: "The chapter identifies gender diversity, equal opportunities, representation and work-life balance as important issues and strategies within the global business environment."
+    }
+  ]
+},
 
 
 
