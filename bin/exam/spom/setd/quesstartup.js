@@ -3660,6 +3660,2034 @@ const caseStudies = [
       reason: "A Partnership Pitch is designed to attract strategic partners or collaborations and highlights mutual benefits, shared goals and potential synergies."
     }
   ]
+},
+// Chapter3
+
+// ============================================================
+// EASY CASE SCENARIO 1
+// Minimum Viable Product (MVP)
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>SkillMate is a startup developing an online learning platform. The founders do not want to invest substantial time and capital in developing a complete platform before testing whether students actually need the proposed solution.</p>
+
+    <p>They therefore decide to begin with a scaled-down version containing only the features necessary to address the key learning problem. The initial version is released to a selected group of students so that the founders can observe their responses and collect feedback.</p>
+
+    <p>The founders intend to use the feedback to improve the product and validate their assumptions before committing significant resources to further development.</p>
+  `,
+
+  questions: [
+    {
+      question: "What product development approach is SkillMate primarily adopting?",
+      options: [
+        "Minimum Viable Product (MVP)",
+        "Premature Scaling",
+        "Product-Market Fit",
+        "Go-to-Market Strategy"
+      ],
+      answer: 0,
+      reason: "An MVP is a scaled-down version of a product that allows entrepreneurs to test their concepts with minimal resources before investing significant time and capital into development."
+    },
+
+    {
+      question: "What is the core idea behind the MVP being developed by SkillMate?",
+      options: [
+        "Build the largest possible product at the beginning",
+        "Build the smallest version that addresses the key problem or need of the target audience",
+        "Avoid obtaining user feedback until the final product is ready",
+        "Include every possible feature requested by potential users"
+      ],
+      answer: 1,
+      reason: "The core idea of an MVP is to build the smallest version of a product that addresses the key problem or need of the target audience."
+    },
+
+    {
+      question: "Why is SkillMate releasing the initial version to a selected group of students?",
+      options: [
+        "To eliminate the need for product improvement",
+        "To establish a traditional supply chain",
+        "To gather feedback and validate the product idea early",
+        "To achieve market leadership immediately"
+      ],
+      answer: 2,
+      reason: "An MVP enables early testing and validation and allows entrepreneurs to gather valuable feedback and validate their assumptions."
+    },
+
+    {
+      question: "Which activity should SkillMate undertake after gathering feedback from the selected users?",
+      options: [
+        "Stop product development",
+        "Immediately expand into every market",
+        "Remove the core functionality",
+        "Iterate and improve the product"
+      ],
+      answer: 3,
+      reason: "The chapter states that based on feedback received, entrepreneurs should make necessary iterations to enhance the product and continue the cycle of testing, feedback and improvement."
+    },
+
+    {
+      question: "Which principle should SkillMate follow while deciding the features for its initial MVP?",
+      options: [
+        "Focus on Core Functionality",
+        "Overemphasis on Aesthetics",
+        "Premature Scaling",
+        "Diversification before validation"
+      ],
+      answer: 0,
+      reason: "First-time entrepreneurs developing an MVP should concentrate on the key features that address the core problem and avoid unnecessary complexities in the initial version."
+    }
+  ]
+},
+
+
+// ============================================================
+// EASY CASE SCENARIO 2
+// Product-Market Fit (PMF)
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>QuickCare has been operating with a product designed for urban consumers. After several rounds of development, the startup notices that users are adopting the product rapidly. Existing customers are providing positive feedback, retention rates are strong and demand continues to increase without the company needing to undertake extensive marketing efforts.</p>
+
+    <p>Some satisfied customers have also started recommending the product to others without being specifically asked to do so. Management believes these market responses indicate that the product is closely aligned with the needs and expectations of its intended users.</p>
+  `,
+
+  questions: [
+    {
+      question: "What concept is most directly illustrated by the market response observed by QuickCare?",
+      options: [
+        "Prototype",
+        "Product-Market Fit (PMF)",
+        "Procurement",
+        "Product Offering"
+      ],
+      answer: 1,
+      reason: "Product-Market Fit occurs when a startup's product satisfies a real market need and resonates deeply with its target audience."
+    },
+
+    {
+      question: "Which of the following is specifically identified as an indicator of Product-Market Fit?",
+      options: [
+        "Rapid user adoption",
+        "Absence of customer feedback",
+        "Increasing product complexity",
+        "Dependence on extensive marketing efforts"
+      ],
+      answer: 0,
+      reason: "The chapter identifies rapid user adoption, positive customer feedback, strong retention rates and growing demand without extensive marketing efforts as indicators of PMF."
+    },
+
+    {
+      question: "Strong retention rates observed by QuickCare indicate that:",
+      options: [
+        "The product has no market competition",
+        "The product has achieved a monopoly",
+        "Customers are continuing to use the product, supporting evidence of PMF",
+        "The startup should stop collecting feedback"
+      ],
+      answer: 2,
+      reason: "Strong retention rates are one of the key indicators of Product-Market Fit because they demonstrate sustained customer engagement with the product."
+    },
+
+    {
+      question: "Satisfied customers voluntarily recommending the product to others are described in the chapter as:",
+      options: [
+        "A sign that Product-Market Fit is being achieved",
+        "Evidence of procurement efficiency",
+        "A result of premature scaling",
+        "A prototype development technique"
+      ],
+      answer: 0,
+      reason: "The chapter states that when customers become the product's advocates and willingly spread the word, it is a clear sign that Product-Market Fit is being achieved."
+    },
+
+    {
+      question: "Product-Market Fit represents alignment between:",
+      options: [
+        "Procurement and supply chain",
+        "What a startup offers and what the market demands",
+        "Agile and waterfall methods",
+        "Product packaging and distribution"
+      ],
+      answer: 1,
+      reason: "PMF signifies the alignment between what a startup offers and what the market demands."
+    }
+  ]
+},
+
+
+// ============================================================
+// EASY CASE SCENARIO 3
+// Prototyping
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>VisionTech is designing a new mobile application. Before committing substantial resources to full-scale development, the founders prepare a preliminary version of the application with limited functionality. The version demonstrates the key features and gives stakeholders an indication of how users may interact with the proposed application.</p>
+
+    <p>The founders present this preliminary version to selected users and members of the development team. The feedback helps them identify potential issues and refine the concept before the full product is developed.</p>
+  `,
+
+  questions: [
+    {
+      question: "What is the preliminary version developed by VisionTech called?",
+      options: [
+        "A prototype",
+        "A Product-Market Fit",
+        "A supply chain",
+        "A final product"
+      ],
+      answer: 0,
+      reason: "A prototype is a preliminary model or version of a product, often created with limited functionality."
+    },
+
+    {
+      question: "Which characteristic of a prototype is described in the case?",
+      options: [
+        "It must contain every feature of the final product",
+        "It is necessarily ready for commercial-scale production",
+        "It has limited functionality and showcases key features",
+        "It eliminates the need for user feedback"
+      ],
+      answer: 2,
+      reason: "The chapter describes a prototype as a tangible representation of a product or system, often created with limited functionality and designed to showcase key features."
+    },
+
+    {
+      question: "Presenting the prototype to users primarily enables VisionTech to:",
+      options: [
+        "Avoid product testing",
+        "Gather valuable user feedback",
+        "Eliminate the need for iteration",
+        "Immediately establish market leadership"
+      ],
+      answer: 1,
+      reason: "Presenting a prototype to users early in the development process enables startups to gather valuable feedback and ensure that the final product aligns with user expectations."
+    },
+
+    {
+      question: "How can prototyping improve cost efficiency according to the chapter?",
+      options: [
+        "By eliminating all development activities",
+        "By preventing any change to the product",
+        "By avoiding user involvement",
+        "By identifying and addressing issues early"
+      ],
+      answer: 3,
+      reason: "Identifying and addressing issues in the early stages through prototyping can save substantial development costs and time in the long run."
+    },
+
+    {
+      question: "Which of the following is another purpose of a prototype identified in the chapter?",
+      options: [
+        "Effective Communication",
+        "Premature Scaling",
+        "Financial Closure",
+        "Supply Chain Financing"
+      ],
+      answer: 0,
+      reason: "Prototypes serve as a powerful communication tool, enabling founders to convey their vision clearly to team members, investors and potential users."
+    }
+  ]
+},
+
+
+// ============================================================
+// EASY CASE SCENARIO 4
+// Product Offering
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>HomePlus is preparing to launch a new household product. The founders do not view the offering as merely the physical product itself. They consider the features that address critical customer needs, the reputation they want to build for the brand, the pricing and payment options they can offer, the presentation of the product and the support customers will receive after purchase.</p>
+
+    <p>The management believes that the overall combination of these elements will determine how customers perceive the offering and whether they are attracted to and retained by the business.</p>
+  `,
+
+  questions: [
+    {
+      question: "What does a product offering refer to according to the chapter?",
+      options: [
+        "Only the physical product",
+        "Only the price charged to customers",
+        "The combination of products and services provided to meet target customer needs and wants",
+        "Only the after-sales service"
+      ],
+      answer: 2,
+      reason: "A product offering refers to the combination of products and services that a business provides to meet the needs and wants of its target customers."
+    },
+
+    {
+      question: "Which element of product offering focuses on addressing critical customer needs?",
+      options: [
+        "Essential Features",
+        "Stellar Brand Image",
+        "Attractive Packaging and Presentation",
+        "Comprehensive Support and Services"
+      ],
+      answer: 0,
+      reason: "Essential Features ensure that the product addresses critical customer needs."
+    },
+
+    {
+      question: "Which element is concerned with building a reputable brand for trust and recognition?",
+      options: [
+        "Affordable Innovation",
+        "Stellar Brand Image",
+        "Essential Features",
+        "Supply Chain Efficiency"
+      ],
+      answer: 1,
+      reason: "Stellar Brand Image involves building a reputable brand for trust and recognition."
+    },
+
+    {
+      question: "Offering competitive pricing and payment options represents:",
+      options: [
+        "Comprehensive Support and Services",
+        "Attractive Packaging and Presentation",
+        "Affordable Innovation",
+        "User-Centric Design"
+      ],
+      answer: 2,
+      reason: "Affordable Innovation includes communicating competitive pricing and payment options."
+    },
+
+    {
+      question: "Providing excellent after-sales support is included under:",
+      options: [
+        "Essential Features",
+        "Stellar Brand Image",
+        "Affordable Innovation",
+        "Comprehensive Support and Services"
+      ],
+      answer: 3,
+      reason: "Comprehensive Support and Services includes providing excellent after-sales support."
+    }
+  ]
+},
+
+
+// ============================================================
+// EASY CASE SCENARIO 5
+// Procurement
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS06",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>AutoNova is developing a new vehicle component. The procurement team is responsible for obtaining high-grade materials required for production. It also negotiates with suppliers to manage costs, monitors the availability of components and works to ensure that materials comply with applicable regulatory requirements.</p>
+
+    <p>The company also wants to maintain reliable relationships with suppliers so that the flow of required materials remains consistent and the production process is not unnecessarily disrupted.</p>
+  `,
+
+  questions: [
+    {
+      question: "What is the primary procurement role described when AutoNova secures high-grade materials for product development?",
+      options: [
+        "Sourcing Quality Materials",
+        "Product-Market Fit",
+        "User-Centric Design",
+        "Agile Development"
+      ],
+      answer: 0,
+      reason: "The chapter identifies sourcing quality materials as a primary role of procurement in product development."
+    },
+
+    {
+      question: "Negotiating favourable deals with suppliers to keep production costs in check relates to:",
+      options: [
+        "Supplier Relationships",
+        "Cost Management",
+        "User Feedback",
+        "Product Definition"
+      ],
+      answer: 1,
+      reason: "Strategic procurement plays a pivotal role in cost management, including negotiating favourable deals for materials."
+    },
+
+    {
+      question: "Ensuring smooth availability of components for production is associated with:",
+      options: [
+        "Market Leadership",
+        "Customer Retention",
+        "Supply Chain Efficiency",
+        "Brand Recognition"
+      ],
+      answer: 2,
+      reason: "Procurement is integral to supply chain efficiency because an efficient procurement process helps ensure timely availability of materials and minimise disruptions."
+    },
+
+    {
+      question: "Maintaining reliable relationships with suppliers represents which procurement consideration?",
+      options: [
+        "Risk Mitigation",
+        "Regulatory Compliance",
+        "Product Offering",
+        "Supplier Relationships"
+      ],
+      answer: 3,
+      reason: "Building strong relationships with suppliers is identified as a hallmark of effective procurement."
+    },
+
+    {
+      question: "Ensuring sourced materials comply with applicable standards relates to:",
+      options: [
+        "Regulatory Compliance",
+        "Market Validation",
+        "Product-Market Fit",
+        "Agile Sprint"
+      ],
+      answer: 0,
+      reason: "Procurement is linked to ensuring that sourced materials comply with regulatory standards."
+    }
+  ]
+},
+
+
+// ============================================================
+// MEDIUM CASE SCENARIO 6
+// Finding the Best Product-Market Fit
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS07",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>EduNext has released an MVP for an online learning product. Initial user feedback shows that some students value the basic service, but the founders are still uncertain whether the product fully addresses the needs of the intended audience. The team therefore conducts additional user interviews and market research to understand customer pain points, preferences and behaviour.</p>
+
+    <p>Based on the information collected, EduNext modifies the product through repeated iterations. The founders also simplify the initial version so that it remains focused on the core value proposition rather than adding numerous features. Finally, they establish key performance indicators and begin monitoring user engagement, conversion rates and customer satisfaction.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which strategy is reflected by EduNext's additional user interviews and market research?",
+      options: [
+        "Deep Customer Understanding",
+        "Premature Scaling",
+        "Competitive Dynamics",
+        "Product Procurement"
+      ],
+      answer: 0,
+      reason: "Deep Customer Understanding requires thorough market research, user interviews and actionable feedback to understand customer pain points, preferences and behaviours."
+    },
+
+    {
+      question: "Repeatedly modifying the product based on user feedback represents:",
+      options: [
+        "Market Leadership",
+        "Iterative Development and Testing",
+        "Supply Chain Efficiency",
+        "Stellar Brand Image"
+      ],
+      answer: 1,
+      reason: "Iterative Development and Testing involves building an MVP, gathering real-world feedback and continuously refining the product in response to market demands."
+    },
+
+    {
+      question: "Why does EduNext avoid adding numerous features to its initial version?",
+      options: [
+        "To prevent customer feedback",
+        "To eliminate the need for market research",
+        "To keep the product simple and focused and avoid feature bloat",
+        "To avoid measuring product performance"
+      ],
+      answer: 2,
+      reason: "The chapter advises entrepreneurs to keep the initial version simple and focused to avoid feature bloat while concentrating on the core value proposition."
+    },
+
+    {
+      question: "Which of the following is specifically identified as a metric to monitor while finding the best fit?",
+      options: [
+        "Number of suppliers",
+        "Factory utilisation",
+        "Packaging expenditure",
+        "User engagement"
+      ],
+      answer: 3,
+      reason: "The chapter identifies user engagement, conversion rates and customer satisfaction as quantitative measures that provide insight into product success within the market."
+    },
+
+    {
+      question: "Why are KPIs used in the process described?",
+      options: [
+        "To provide quantitative insights into the product's success within the market",
+        "To replace customer feedback completely",
+        "To guarantee Product-Market Fit immediately",
+        "To eliminate the need for iterative development"
+      ],
+      answer: 0,
+      reason: "The chapter states that KPIs aligned with product objectives and metrics such as user engagement, conversion rates and customer satisfaction provide valuable quantitative insights into product success within the market."
+    }
+  ]
+},
+
+
+// ============================================================
+// MEDIUM CASE SCENARIO 7
+// Agile Development
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS08",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>FinApp is developing a financial management application using Agile methodology. The development team works in short iterative cycles and regularly reviews feedback from users and stakeholders. During development, a major change in market requirements causes the product owner to repeatedly reprioritize features.</p>
+
+    <p>The team is able to adjust to the changes, but frequent reprioritization begins to disrupt planned work and affects the ability of the team to deliver tasks on time. Management also observes that the team must maintain communication and collaboration while responding to the changing priorities.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which characteristic of Agile development is demonstrated by FinApp's ability to respond to changing market requirements?",
+      options: [
+        "Flexibility and responsiveness to change",
+        "Rigid long-term planning",
+        "Elimination of user feedback",
+        "Fixed product requirements"
+      ],
+      answer: 0,
+      reason: "Agile is a project management and product development approach that prioritizes flexibility, collaboration and responsiveness to change."
+    },
+
+    {
+      question: "What specific Agile challenge is FinApp experiencing because of repeated reprioritization?",
+      options: [
+        "Overemphasis on Aesthetics",
+        "Managing Changing Priorities",
+        "Unclear Requirements in Prototyping",
+        "Supplier Relationships"
+      ],
+      answer: 1,
+      reason: "The chapter identifies Managing Changing Priorities as an Agile challenge because frequent reprioritization can disrupt planned work and affect timely delivery."
+    },
+
+    {
+      question: "Why can frequent reprioritization affect the team's delivery?",
+      options: [
+        "Because Agile does not permit change",
+        "Because feedback is prohibited during development",
+        "Because shifting priorities can disrupt planned work",
+        "Because Agile requires all work to be completed before any testing"
+      ],
+      answer: 2,
+      reason: "The chapter states that frequent reprioritization can disrupt planned work and impact the team's ability to deliver on time."
+    },
+
+    {
+      question: "Which requirement becomes particularly important when FinApp is responding to changing priorities?",
+      options: [
+        "Avoiding collaboration",
+        "Using only traditional development methods",
+        "Removing user involvement",
+        "Effective Collaboration and Communication"
+      ],
+      answer: 3,
+      reason: "Agile relies heavily on collaboration and open communication among team members, stakeholders and customers."
+    },
+
+    {
+      question: "Which Agile benefit is reflected by FinApp's iterative development process?",
+      options: [
+        "Accelerating time-to-market",
+        "Eliminating all technical risks",
+        "Preventing market feedback",
+        "Guaranteeing consistent quality automatically"
+      ],
+      answer: 0,
+      reason: "Agile principles are instrumental in streamlining development processes and accelerating time-to-market."
+    }
+  ]
+},
+
+
+// ============================================================
+// MEDIUM CASE SCENARIO 8
+// Tech Foundation and Scalability
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS09",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>MarketHub is building a technology-driven product that it expects to offer to a growing user base. The founders first define the product's purpose, target audience and core features so that the technology team has a clear direction.</p>
+
+    <p>The company then selects frameworks, databases and cloud services that can accommodate increased user loads. It also integrates security protocols to protect user data and establishes monitoring systems to track performance and detect issues. The founders believe that the technology foundation should support growth without requiring major structural changes later.</p>
+  `,
+
+  questions: [
+    {
+      question: "Defining the product's purpose, target audience and core features represents which step in building a strong technology foundation?",
+      options: [
+        "Clarify the Vision",
+        "Continuous Monitoring",
+        "Prioritize Security Measures",
+        "Product Offering"
+      ],
+      answer: 0,
+      reason: "Clarifying the Vision involves defining a clear vision for the product, including its purpose, target audience and core features."
+    },
+
+    {
+      question: "Selecting frameworks, databases and cloud services that can accommodate increased user loads relates to:",
+      options: [
+        "Effective Communication",
+        "Choose Scalable Technologies",
+        "Attractive Packaging",
+        "Customer Retention"
+      ],
+      answer: 1,
+      reason: "The chapter advises startups to select scalable frameworks, databases and cloud services that can accommodate increased user loads and evolving requirements."
+    },
+
+    {
+      question: "Integrating security protocols to protect user data primarily reflects:",
+      options: [
+        "Market Validation",
+        "User-Centric Design",
+        "Prioritize Security Measures",
+        "Product-Market Fit"
+      ],
+      answer: 2,
+      reason: "Prioritizing Security Measures involves integrating robust security protocols to protect user data and maintain system integrity."
+    },
+
+    {
+      question: "Monitoring systems that track system performance and detect issues are part of:",
+      options: [
+        "Product Offering",
+        "Market Research",
+        "Deep Customer Understanding",
+        "Continuous Monitoring"
+      ],
+      answer: 3,
+      reason: "Continuous Monitoring involves implementing monitoring tools to track system performance, detect issues and ensure proactive response to potential challenges."
+    },
+
+    {
+      question: "Why does MarketHub select technologies capable of accommodating increased user loads?",
+      options: [
+        "To provide scalability as the business grows",
+        "To eliminate customer feedback",
+        "To avoid Agile development",
+        "To replace the product's core features"
+      ],
+      answer: 0,
+      reason: "The chapter recommends choosing scalable technologies to accommodate increased user loads and evolving requirements as the business grows."
+    }
+  ]
+},
+
+
+// ============================================================
+// HARD CASE SCENARIO 9
+// MVP + Product-Market Fit + Premature Scaling
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS10",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>FreshRoute develops a digital service for local retailers. The founders initially release an MVP containing only the essential functionality required to address a specific problem faced by retailers. They collect user feedback, observe usage patterns and repeatedly refine the product. Over several iterations, the startup begins to see rapid user adoption, strong retention rates, positive customer feedback and growing demand without extensive marketing efforts.</p>
+
+    <p>Encouraged by these results, management considers expanding the service from one successful city to multiple states immediately. However, the founders recognise that some operational processes and resources have not yet been optimised for such a large expansion. They therefore examine whether the market validation achieved through the MVP and subsequent product improvements is sufficient to justify rapid expansion at the proposed scale.</p>
+
+    <p>The management also establishes KPIs such as user engagement, conversion rates and customer satisfaction to continue evaluating the product's performance while considering the next stage of growth.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which combination best explains why FreshRoute's later market response provides evidence of Product-Market Fit?",
+      options: [
+        "High expenditure, rapid expansion and increased product complexity",
+        "Rapid user adoption, positive customer feedback and strong retention rates",
+        "Only the existence of an MVP without market response",
+        "Immediate expansion into multiple states before validation"
+      ],
+      answer: 1,
+      reason: "The chapter identifies rapid user adoption, positive customer feedback and strong retention rates as key indicators of Product-Market Fit."
+    },
+
+    {
+      question: "FreshRoute's progression from an essential MVP to repeated refinement based on feedback most directly demonstrates which combination?",
+      options: [
+        "Procurement and Supply Chain Management",
+        "Product Offering and Brand Recognition",
+        "MVP development and Iterative Development and Testing",
+        "Premature Scaling and Competitive Dynamics"
+      ],
+      answer: 2,
+      reason: "The chapter describes an MVP as a scaled-down product used for early testing and validation and states that iterative development and testing involves using real-world feedback to refine the product continuously."
+    },
+
+    {
+      question: "If FreshRoute expands rapidly across multiple states before optimising success in its existing market and its costs increase without proportional revenue growth, which PMF challenge is most directly involved?",
+      options: [
+        "Assumption Misalignment",
+        "Inadequate Customer Feedback",
+        "Competitive Dynamics",
+        "Premature Scaling"
+      ],
+      answer: 3,
+      reason: "Premature Scaling involves expanding operations and resources too quickly before achieving or sufficiently optimising Product-Market Fit. The chapter notes that this can increase costs without proportional revenue growth and cause financial strain."
+    },
+
+    {
+      question: "Which approach should FreshRoute use to continue assessing whether the product is performing successfully within the market?",
+      options: [
+        "Measure and Analyze Metrics through aligned KPIs",
+        "Stop gathering customer feedback",
+        "Expand without monitoring results",
+        "Focus only on packaging and presentation"
+      ],
+      answer: 0,
+      reason: "The chapter recommends establishing KPIs aligned with product objectives and monitoring metrics such as user engagement, conversion rates and customer satisfaction."
+    },
+
+    {
+      question: "Which statement best connects FreshRoute's initial MVP strategy with its later PMF indicators?",
+      options: [
+        "The MVP itself automatically creates Product-Market Fit",
+        "The MVP permits early testing and feedback, while PMF is indicated by strong market response such as adoption, retention and customer satisfaction",
+        "Product-Market Fit must be achieved before an MVP can be developed",
+        "MVP development eliminates the need to understand customer needs"
+      ],
+      answer: 1,
+      reason: "An MVP enables early testing, validation and feedback. Product-Market Fit is a later validation that the product resonates with the intended audience and addresses a genuine market need, reflected through market-response indicators."
+    }
+  ]
+},
+
+
+// ============================================================
+// HARD CASE SCENARIO 10
+// Prototyping + Agile + Quality
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS11",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>CareLink is developing a remote patient monitoring application. The team first prepares a prototype with limited functionality to demonstrate data input and alerts. Healthcare professionals and patients test the prototype and identify a need for real-time communication and medication tracking. The development team decides to incorporate these requirements through iterative Agile sprints.</p>
+
+    <p>As development accelerates, however, stakeholders begin requesting additional features beyond the original product scope. At the same time, the team faces tight sprint deadlines and reduces the amount of testing performed before each release. Developers also receive frequent changes in priorities from stakeholders, making it difficult to maintain a stable development plan.</p>
+
+    <p>The project manager wants to preserve the benefits of rapid iteration and responsiveness while ensuring that the product does not suffer from uncontrolled expansion or inadequate testing.</p>
+  `,
+
+  questions: [
+    {
+      question: "The initial limited-functionality version used to demonstrate key features and obtain early user feedback is best classified as:",
+      options: [
+        "Product-Market Fit",
+        "Prototype",
+        "Go-to-Market Strategy",
+        "Supply Chain"
+      ],
+      answer: 1,
+      reason: "A prototype is a preliminary model or version of a product, often with limited functionality, used to showcase key features and obtain feedback."
+    },
+
+    {
+      question: "The team's use of iterative sprints to incorporate changing requirements primarily reflects:",
+      options: [
+        "Agile Development",
+        "Product Offering",
+        "Procurement",
+        "Stellar Brand Image"
+      ],
+      answer: 0,
+      reason: "Agile is a flexible and iterative product development approach that emphasises iterative progress, continuous feedback and adaptive planning. Agile sprints are time-boxed periods during which specified development work is completed."
+    },
+
+    {
+      question: "Stakeholders continually requesting additional features beyond the original product scope create which prototyping challenge?",
+      options: [
+        "Limited User Involvement",
+        "Overemphasis on Aesthetics",
+        "Scope Creep",
+        "Unclear Requirements"
+      ],
+      answer: 2,
+      reason: "Scope Creep is the gradual expansion of project goals beyond the initial scope as prototypes evolve based on feedback, potentially increasing development time and costs."
+    },
+
+    {
+      question: "Reducing testing because of tight sprint deadlines creates which Agile development challenge?",
+      options: [
+        "Adapting to Agile Culture",
+        "Maintaining Consistent Quality",
+        "Managing Changing Priorities",
+        "Balancing Flexibility and Structure"
+      ],
+      answer: 1,
+      reason: "The chapter states that rapid Agile development cycles can make it difficult to maintain consistent product quality because quick delivery may compromise thorough testing and validation."
+    },
+
+    {
+      question: "CareLink's frequent changes in stakeholder priorities create which additional Agile challenge?",
+      options: [
+        "Managing Changing Priorities",
+        "Limited User Involvement",
+        "Overemphasis on Aesthetics",
+        "Unclear Requirements in Prototyping"
+      ],
+      answer: 0,
+      reason: "Managing Changing Priorities is an Agile challenge because frequent reprioritization can disrupt planned work and affect the team's ability to deliver on time."
+    }
+  ]
+},
+// ============================================================
+// EASY CASE SCENARIO 1
+// Minimum Viable Product (MVP)
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>SkillMate is a startup developing an online learning platform. The founders do not want to invest substantial time and capital in developing a complete platform before testing whether students actually need the proposed solution.</p>
+
+    <p>They therefore decide to begin with a scaled-down version containing only the features necessary to address the key learning problem. The initial version is released to a selected group of students so that the founders can observe their responses and collect feedback.</p>
+
+    <p>The founders intend to use the feedback to improve the product and validate their assumptions before committing significant resources to further development.</p>
+  `,
+
+  questions: [
+    {
+      question: "What product development approach is SkillMate primarily adopting?",
+      options: [
+        "Minimum Viable Product (MVP)",
+        "Premature Scaling",
+        "Product-Market Fit",
+        "Go-to-Market Strategy"
+      ],
+      answer: 0,
+      reason: "An MVP is a scaled-down version of a product that allows entrepreneurs to test their concepts with minimal resources before investing significant time and capital into development."
+    },
+
+    {
+      question: "What is the core idea behind the MVP being developed by SkillMate?",
+      options: [
+        "Build the largest possible product at the beginning",
+        "Build the smallest version that addresses the key problem or need of the target audience",
+        "Avoid obtaining user feedback until the final product is ready",
+        "Include every possible feature requested by potential users"
+      ],
+      answer: 1,
+      reason: "The core idea of an MVP is to build the smallest version of a product that addresses the key problem or need of the target audience."
+    },
+
+    {
+      question: "Why is SkillMate releasing the initial version to a selected group of students?",
+      options: [
+        "To eliminate the need for product improvement",
+        "To establish a traditional supply chain",
+        "To gather feedback and validate the product idea early",
+        "To achieve market leadership immediately"
+      ],
+      answer: 2,
+      reason: "An MVP enables early testing and validation and allows entrepreneurs to gather valuable feedback and validate their assumptions."
+    },
+
+    {
+      question: "Which activity should SkillMate undertake after gathering feedback from the selected users?",
+      options: [
+        "Stop product development",
+        "Immediately expand into every market",
+        "Remove the core functionality",
+        "Iterate and improve the product"
+      ],
+      answer: 3,
+      reason: "The chapter states that based on feedback received, entrepreneurs should make necessary iterations to enhance the product and continue the cycle of testing, feedback and improvement."
+    },
+
+    {
+      question: "Which principle should SkillMate follow while deciding the features for its initial MVP?",
+      options: [
+        "Focus on Core Functionality",
+        "Overemphasis on Aesthetics",
+        "Premature Scaling",
+        "Diversification before validation"
+      ],
+      answer: 0,
+      reason: "First-time entrepreneurs developing an MVP should concentrate on the key features that address the core problem and avoid unnecessary complexities in the initial version."
+    }
+  ]
+},
+
+
+// ============================================================
+// EASY CASE SCENARIO 2
+// Product-Market Fit (PMF)
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>QuickCare has been operating with a product designed for urban consumers. After several rounds of development, the startup notices that users are adopting the product rapidly. Existing customers are providing positive feedback, retention rates are strong and demand continues to increase without the company needing to undertake extensive marketing efforts.</p>
+
+    <p>Some satisfied customers have also started recommending the product to others without being specifically asked to do so. Management believes these market responses indicate that the product is closely aligned with the needs and expectations of its intended users.</p>
+  `,
+
+  questions: [
+    {
+      question: "What concept is most directly illustrated by the market response observed by QuickCare?",
+      options: [
+        "Prototype",
+        "Product-Market Fit (PMF)",
+        "Procurement",
+        "Product Offering"
+      ],
+      answer: 1,
+      reason: "Product-Market Fit occurs when a startup's product satisfies a real market need and resonates deeply with its target audience."
+    },
+
+    {
+      question: "Which of the following is specifically identified as an indicator of Product-Market Fit?",
+      options: [
+        "Rapid user adoption",
+        "Absence of customer feedback",
+        "Increasing product complexity",
+        "Dependence on extensive marketing efforts"
+      ],
+      answer: 0,
+      reason: "The chapter identifies rapid user adoption, positive customer feedback, strong retention rates and growing demand without extensive marketing efforts as indicators of PMF."
+    },
+
+    {
+      question: "Strong retention rates observed by QuickCare indicate that:",
+      options: [
+        "The product has no market competition",
+        "The product has achieved a monopoly",
+        "Customers are continuing to use the product, supporting evidence of PMF",
+        "The startup should stop collecting feedback"
+      ],
+      answer: 2,
+      reason: "Strong retention rates are one of the key indicators of Product-Market Fit because they demonstrate sustained customer engagement with the product."
+    },
+
+    {
+      question: "Satisfied customers voluntarily recommending the product to others are described in the chapter as:",
+      options: [
+        "A sign that Product-Market Fit is being achieved",
+        "Evidence of procurement efficiency",
+        "A result of premature scaling",
+        "A prototype development technique"
+      ],
+      answer: 0,
+      reason: "The chapter states that when customers become the product's advocates and willingly spread the word, it is a clear sign that Product-Market Fit is being achieved."
+    },
+
+    {
+      question: "Product-Market Fit represents alignment between:",
+      options: [
+        "Procurement and supply chain",
+        "What a startup offers and what the market demands",
+        "Agile and waterfall methods",
+        "Product packaging and distribution"
+      ],
+      answer: 1,
+      reason: "PMF signifies the alignment between what a startup offers and what the market demands."
+    }
+  ]
+},
+
+
+// ============================================================
+// EASY CASE SCENARIO 3
+// Prototyping
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>VisionTech is designing a new mobile application. Before committing substantial resources to full-scale development, the founders prepare a preliminary version of the application with limited functionality. The version demonstrates the key features and gives stakeholders an indication of how users may interact with the proposed application.</p>
+
+    <p>The founders present this preliminary version to selected users and members of the development team. The feedback helps them identify potential issues and refine the concept before the full product is developed.</p>
+  `,
+
+  questions: [
+    {
+      question: "What is the preliminary version developed by VisionTech called?",
+      options: [
+        "A prototype",
+        "A Product-Market Fit",
+        "A supply chain",
+        "A final product"
+      ],
+      answer: 0,
+      reason: "A prototype is a preliminary model or version of a product, often created with limited functionality."
+    },
+
+    {
+      question: "Which characteristic of a prototype is described in the case?",
+      options: [
+        "It must contain every feature of the final product",
+        "It is necessarily ready for commercial-scale production",
+        "It has limited functionality and showcases key features",
+        "It eliminates the need for user feedback"
+      ],
+      answer: 2,
+      reason: "The chapter describes a prototype as a tangible representation of a product or system, often created with limited functionality and designed to showcase key features."
+    },
+
+    {
+      question: "Presenting the prototype to users primarily enables VisionTech to:",
+      options: [
+        "Avoid product testing",
+        "Gather valuable user feedback",
+        "Eliminate the need for iteration",
+        "Immediately establish market leadership"
+      ],
+      answer: 1,
+      reason: "Presenting a prototype to users early in the development process enables startups to gather valuable feedback and ensure that the final product aligns with user expectations."
+    },
+
+    {
+      question: "How can prototyping improve cost efficiency according to the chapter?",
+      options: [
+        "By eliminating all development activities",
+        "By preventing any change to the product",
+        "By avoiding user involvement",
+        "By identifying and addressing issues early"
+      ],
+      answer: 3,
+      reason: "Identifying and addressing issues in the early stages through prototyping can save substantial development costs and time in the long run."
+    },
+
+    {
+      question: "Which of the following is another purpose of a prototype identified in the chapter?",
+      options: [
+        "Effective Communication",
+        "Premature Scaling",
+        "Financial Closure",
+        "Supply Chain Financing"
+      ],
+      answer: 0,
+      reason: "Prototypes serve as a powerful communication tool, enabling founders to convey their vision clearly to team members, investors and potential users."
+    }
+  ]
+},
+
+
+// ============================================================
+// EASY CASE SCENARIO 4
+// Product Offering
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>HomePlus is preparing to launch a new household product. The founders do not view the offering as merely the physical product itself. They consider the features that address critical customer needs, the reputation they want to build for the brand, the pricing and payment options they can offer, the presentation of the product and the support customers will receive after purchase.</p>
+
+    <p>The management believes that the overall combination of these elements will determine how customers perceive the offering and whether they are attracted to and retained by the business.</p>
+  `,
+
+  questions: [
+    {
+      question: "What does a product offering refer to according to the chapter?",
+      options: [
+        "Only the physical product",
+        "Only the price charged to customers",
+        "The combination of products and services provided to meet target customer needs and wants",
+        "Only the after-sales service"
+      ],
+      answer: 2,
+      reason: "A product offering refers to the combination of products and services that a business provides to meet the needs and wants of its target customers."
+    },
+
+    {
+      question: "Which element of product offering focuses on addressing critical customer needs?",
+      options: [
+        "Essential Features",
+        "Stellar Brand Image",
+        "Attractive Packaging and Presentation",
+        "Comprehensive Support and Services"
+      ],
+      answer: 0,
+      reason: "Essential Features ensure that the product addresses critical customer needs."
+    },
+
+    {
+      question: "Which element is concerned with building a reputable brand for trust and recognition?",
+      options: [
+        "Affordable Innovation",
+        "Stellar Brand Image",
+        "Essential Features",
+        "Supply Chain Efficiency"
+      ],
+      answer: 1,
+      reason: "Stellar Brand Image involves building a reputable brand for trust and recognition."
+    },
+
+    {
+      question: "Offering competitive pricing and payment options represents:",
+      options: [
+        "Comprehensive Support and Services",
+        "Attractive Packaging and Presentation",
+        "Affordable Innovation",
+        "User-Centric Design"
+      ],
+      answer: 2,
+      reason: "Affordable Innovation includes communicating competitive pricing and payment options."
+    },
+
+    {
+      question: "Providing excellent after-sales support is included under:",
+      options: [
+        "Essential Features",
+        "Stellar Brand Image",
+        "Affordable Innovation",
+        "Comprehensive Support and Services"
+      ],
+      answer: 3,
+      reason: "Comprehensive Support and Services includes providing excellent after-sales support."
+    }
+  ]
+},
+
+
+// ============================================================
+// EASY CASE SCENARIO 5
+// Procurement
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS06",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>AutoNova is developing a new vehicle component. The procurement team is responsible for obtaining high-grade materials required for production. It also negotiates with suppliers to manage costs, monitors the availability of components and works to ensure that materials comply with applicable regulatory requirements.</p>
+
+    <p>The company also wants to maintain reliable relationships with suppliers so that the flow of required materials remains consistent and the production process is not unnecessarily disrupted.</p>
+  `,
+
+  questions: [
+    {
+      question: "What is the primary procurement role described when AutoNova secures high-grade materials for product development?",
+      options: [
+        "Sourcing Quality Materials",
+        "Product-Market Fit",
+        "User-Centric Design",
+        "Agile Development"
+      ],
+      answer: 0,
+      reason: "The chapter identifies sourcing quality materials as a primary role of procurement in product development."
+    },
+
+    {
+      question: "Negotiating favourable deals with suppliers to keep production costs in check relates to:",
+      options: [
+        "Supplier Relationships",
+        "Cost Management",
+        "User Feedback",
+        "Product Definition"
+      ],
+      answer: 1,
+      reason: "Strategic procurement plays a pivotal role in cost management, including negotiating favourable deals for materials."
+    },
+
+    {
+      question: "Ensuring smooth availability of components for production is associated with:",
+      options: [
+        "Market Leadership",
+        "Customer Retention",
+        "Supply Chain Efficiency",
+        "Brand Recognition"
+      ],
+      answer: 2,
+      reason: "Procurement is integral to supply chain efficiency because an efficient procurement process helps ensure timely availability of materials and minimise disruptions."
+    },
+
+    {
+      question: "Maintaining reliable relationships with suppliers represents which procurement consideration?",
+      options: [
+        "Risk Mitigation",
+        "Regulatory Compliance",
+        "Product Offering",
+        "Supplier Relationships"
+      ],
+      answer: 3,
+      reason: "Building strong relationships with suppliers is identified as a hallmark of effective procurement."
+    },
+
+    {
+      question: "Ensuring sourced materials comply with applicable standards relates to:",
+      options: [
+        "Regulatory Compliance",
+        "Market Validation",
+        "Product-Market Fit",
+        "Agile Sprint"
+      ],
+      answer: 0,
+      reason: "Procurement is linked to ensuring that sourced materials comply with regulatory standards."
+    }
+  ]
+},
+
+
+// ============================================================
+// MEDIUM CASE SCENARIO 6
+// Finding the Best Product-Market Fit
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS07",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>EduNext has released an MVP for an online learning product. Initial user feedback shows that some students value the basic service, but the founders are still uncertain whether the product fully addresses the needs of the intended audience. The team therefore conducts additional user interviews and market research to understand customer pain points, preferences and behaviour.</p>
+
+    <p>Based on the information collected, EduNext modifies the product through repeated iterations. The founders also simplify the initial version so that it remains focused on the core value proposition rather than adding numerous features. Finally, they establish key performance indicators and begin monitoring user engagement, conversion rates and customer satisfaction.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which strategy is reflected by EduNext's additional user interviews and market research?",
+      options: [
+        "Deep Customer Understanding",
+        "Premature Scaling",
+        "Competitive Dynamics",
+        "Product Procurement"
+      ],
+      answer: 0,
+      reason: "Deep Customer Understanding requires thorough market research, user interviews and actionable feedback to understand customer pain points, preferences and behaviours."
+    },
+
+    {
+      question: "Repeatedly modifying the product based on user feedback represents:",
+      options: [
+        "Market Leadership",
+        "Iterative Development and Testing",
+        "Supply Chain Efficiency",
+        "Stellar Brand Image"
+      ],
+      answer: 1,
+      reason: "Iterative Development and Testing involves building an MVP, gathering real-world feedback and continuously refining the product in response to market demands."
+    },
+
+    {
+      question: "Why does EduNext avoid adding numerous features to its initial version?",
+      options: [
+        "To prevent customer feedback",
+        "To eliminate the need for market research",
+        "To keep the product simple and focused and avoid feature bloat",
+        "To avoid measuring product performance"
+      ],
+      answer: 2,
+      reason: "The chapter advises entrepreneurs to keep the initial version simple and focused to avoid feature bloat while concentrating on the core value proposition."
+    },
+
+    {
+      question: "Which of the following is specifically identified as a metric to monitor while finding the best fit?",
+      options: [
+        "Number of suppliers",
+        "Factory utilisation",
+        "Packaging expenditure",
+        "User engagement"
+      ],
+      answer: 3,
+      reason: "The chapter identifies user engagement, conversion rates and customer satisfaction as quantitative measures that provide insight into product success within the market."
+    },
+
+    {
+      question: "Why are KPIs used in the process described?",
+      options: [
+        "To provide quantitative insights into the product's success within the market",
+        "To replace customer feedback completely",
+        "To guarantee Product-Market Fit immediately",
+        "To eliminate the need for iterative development"
+      ],
+      answer: 0,
+      reason: "The chapter states that KPIs aligned with product objectives and metrics such as user engagement, conversion rates and customer satisfaction provide valuable quantitative insights into product success within the market."
+    }
+  ]
+},
+
+
+// ============================================================
+// MEDIUM CASE SCENARIO 7
+// Agile Development
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS08",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>FinApp is developing a financial management application using Agile methodology. The development team works in short iterative cycles and regularly reviews feedback from users and stakeholders. During development, a major change in market requirements causes the product owner to repeatedly reprioritize features.</p>
+
+    <p>The team is able to adjust to the changes, but frequent reprioritization begins to disrupt planned work and affects the ability of the team to deliver tasks on time. Management also observes that the team must maintain communication and collaboration while responding to the changing priorities.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which characteristic of Agile development is demonstrated by FinApp's ability to respond to changing market requirements?",
+      options: [
+        "Flexibility and responsiveness to change",
+        "Rigid long-term planning",
+        "Elimination of user feedback",
+        "Fixed product requirements"
+      ],
+      answer: 0,
+      reason: "Agile is a project management and product development approach that prioritizes flexibility, collaboration and responsiveness to change."
+    },
+
+    {
+      question: "What specific Agile challenge is FinApp experiencing because of repeated reprioritization?",
+      options: [
+        "Overemphasis on Aesthetics",
+        "Managing Changing Priorities",
+        "Unclear Requirements in Prototyping",
+        "Supplier Relationships"
+      ],
+      answer: 1,
+      reason: "The chapter identifies Managing Changing Priorities as an Agile challenge because frequent reprioritization can disrupt planned work and affect timely delivery."
+    },
+
+    {
+      question: "Why can frequent reprioritization affect the team's delivery?",
+      options: [
+        "Because Agile does not permit change",
+        "Because feedback is prohibited during development",
+        "Because shifting priorities can disrupt planned work",
+        "Because Agile requires all work to be completed before any testing"
+      ],
+      answer: 2,
+      reason: "The chapter states that frequent reprioritization can disrupt planned work and impact the team's ability to deliver on time."
+    },
+
+    {
+      question: "Which requirement becomes particularly important when FinApp is responding to changing priorities?",
+      options: [
+        "Avoiding collaboration",
+        "Using only traditional development methods",
+        "Removing user involvement",
+        "Effective Collaboration and Communication"
+      ],
+      answer: 3,
+      reason: "Agile relies heavily on collaboration and open communication among team members, stakeholders and customers."
+    },
+
+    {
+      question: "Which Agile benefit is reflected by FinApp's iterative development process?",
+      options: [
+        "Accelerating time-to-market",
+        "Eliminating all technical risks",
+        "Preventing market feedback",
+        "Guaranteeing consistent quality automatically"
+      ],
+      answer: 0,
+      reason: "Agile principles are instrumental in streamlining development processes and accelerating time-to-market."
+    }
+  ]
+},
+
+
+// ============================================================
+// MEDIUM CASE SCENARIO 8
+// Tech Foundation and Scalability
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS09",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>MarketHub is building a technology-driven product that it expects to offer to a growing user base. The founders first define the product's purpose, target audience and core features so that the technology team has a clear direction.</p>
+
+    <p>The company then selects frameworks, databases and cloud services that can accommodate increased user loads. It also integrates security protocols to protect user data and establishes monitoring systems to track performance and detect issues. The founders believe that the technology foundation should support growth without requiring major structural changes later.</p>
+  `,
+
+  questions: [
+    {
+      question: "Defining the product's purpose, target audience and core features represents which step in building a strong technology foundation?",
+      options: [
+        "Clarify the Vision",
+        "Continuous Monitoring",
+        "Prioritize Security Measures",
+        "Product Offering"
+      ],
+      answer: 0,
+      reason: "Clarifying the Vision involves defining a clear vision for the product, including its purpose, target audience and core features."
+    },
+
+    {
+      question: "Selecting frameworks, databases and cloud services that can accommodate increased user loads relates to:",
+      options: [
+        "Effective Communication",
+        "Choose Scalable Technologies",
+        "Attractive Packaging",
+        "Customer Retention"
+      ],
+      answer: 1,
+      reason: "The chapter advises startups to select scalable frameworks, databases and cloud services that can accommodate increased user loads and evolving requirements."
+    },
+
+    {
+      question: "Integrating security protocols to protect user data primarily reflects:",
+      options: [
+        "Market Validation",
+        "User-Centric Design",
+        "Prioritize Security Measures",
+        "Product-Market Fit"
+      ],
+      answer: 2,
+      reason: "Prioritizing Security Measures involves integrating robust security protocols to protect user data and maintain system integrity."
+    },
+
+    {
+      question: "Monitoring systems that track system performance and detect issues are part of:",
+      options: [
+        "Product Offering",
+        "Market Research",
+        "Deep Customer Understanding",
+        "Continuous Monitoring"
+      ],
+      answer: 3,
+      reason: "Continuous Monitoring involves implementing monitoring tools to track system performance, detect issues and ensure proactive response to potential challenges."
+    },
+
+    {
+      question: "Why does MarketHub select technologies capable of accommodating increased user loads?",
+      options: [
+        "To provide scalability as the business grows",
+        "To eliminate customer feedback",
+        "To avoid Agile development",
+        "To replace the product's core features"
+      ],
+      answer: 0,
+      reason: "The chapter recommends choosing scalable technologies to accommodate increased user loads and evolving requirements as the business grows."
+    }
+  ]
+},
+
+
+// ============================================================
+// HARD CASE SCENARIO 9
+// MVP + Product-Market Fit + Premature Scaling
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS10",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>FreshRoute develops a digital service for local retailers. The founders initially release an MVP containing only the essential functionality required to address a specific problem faced by retailers. They collect user feedback, observe usage patterns and repeatedly refine the product. Over several iterations, the startup begins to see rapid user adoption, strong retention rates, positive customer feedback and growing demand without extensive marketing efforts.</p>
+
+    <p>Encouraged by these results, management considers expanding the service from one successful city to multiple states immediately. However, the founders recognise that some operational processes and resources have not yet been optimised for such a large expansion. They therefore examine whether the market validation achieved through the MVP and subsequent product improvements is sufficient to justify rapid expansion at the proposed scale.</p>
+
+    <p>The management also establishes KPIs such as user engagement, conversion rates and customer satisfaction to continue evaluating the product's performance while considering the next stage of growth.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which combination best explains why FreshRoute's later market response provides evidence of Product-Market Fit?",
+      options: [
+        "High expenditure, rapid expansion and increased product complexity",
+        "Rapid user adoption, positive customer feedback and strong retention rates",
+        "Only the existence of an MVP without market response",
+        "Immediate expansion into multiple states before validation"
+      ],
+      answer: 1,
+      reason: "The chapter identifies rapid user adoption, positive customer feedback and strong retention rates as key indicators of Product-Market Fit."
+    },
+
+    {
+      question: "FreshRoute's progression from an essential MVP to repeated refinement based on feedback most directly demonstrates which combination?",
+      options: [
+        "Procurement and Supply Chain Management",
+        "Product Offering and Brand Recognition",
+        "MVP development and Iterative Development and Testing",
+        "Premature Scaling and Competitive Dynamics"
+      ],
+      answer: 2,
+      reason: "The chapter describes an MVP as a scaled-down product used for early testing and validation and states that iterative development and testing involves using real-world feedback to refine the product continuously."
+    },
+
+    {
+      question: "If FreshRoute expands rapidly across multiple states before optimising success in its existing market and its costs increase without proportional revenue growth, which PMF challenge is most directly involved?",
+      options: [
+        "Assumption Misalignment",
+        "Inadequate Customer Feedback",
+        "Competitive Dynamics",
+        "Premature Scaling"
+      ],
+      answer: 3,
+      reason: "Premature Scaling involves expanding operations and resources too quickly before achieving or sufficiently optimising Product-Market Fit. The chapter notes that this can increase costs without proportional revenue growth and cause financial strain."
+    },
+
+    {
+      question: "Which approach should FreshRoute use to continue assessing whether the product is performing successfully within the market?",
+      options: [
+        "Measure and Analyze Metrics through aligned KPIs",
+        "Stop gathering customer feedback",
+        "Expand without monitoring results",
+        "Focus only on packaging and presentation"
+      ],
+      answer: 0,
+      reason: "The chapter recommends establishing KPIs aligned with product objectives and monitoring metrics such as user engagement, conversion rates and customer satisfaction."
+    },
+
+    {
+      question: "Which statement best connects FreshRoute's initial MVP strategy with its later PMF indicators?",
+      options: [
+        "The MVP itself automatically creates Product-Market Fit",
+        "The MVP permits early testing and feedback, while PMF is indicated by strong market response such as adoption, retention and customer satisfaction",
+        "Product-Market Fit must be achieved before an MVP can be developed",
+        "MVP development eliminates the need to understand customer needs"
+      ],
+      answer: 1,
+      reason: "An MVP enables early testing, validation and feedback. Product-Market Fit is a later validation that the product resonates with the intended audience and addresses a genuine market need, reflected through market-response indicators."
+    }
+  ]
+},
+
+
+// ============================================================
+// HARD CASE SCENARIO 10
+// Prototyping + Agile + Quality
+// ============================================================
+
+{
+  case_id: "strt_ch3_CS11",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+
+  caseText: `
+    <p>CareLink is developing a remote patient monitoring application. The team first prepares a prototype with limited functionality to demonstrate data input and alerts. Healthcare professionals and patients test the prototype and identify a need for real-time communication and medication tracking. The development team decides to incorporate these requirements through iterative Agile sprints.</p>
+
+    <p>As development accelerates, however, stakeholders begin requesting additional features beyond the original product scope. At the same time, the team faces tight sprint deadlines and reduces the amount of testing performed before each release. Developers also receive frequent changes in priorities from stakeholders, making it difficult to maintain a stable development plan.</p>
+
+    <p>The project manager wants to preserve the benefits of rapid iteration and responsiveness while ensuring that the product does not suffer from uncontrolled expansion or inadequate testing.</p>
+  `,
+
+  questions: [
+    {
+      question: "The initial limited-functionality version used to demonstrate key features and obtain early user feedback is best classified as:",
+      options: [
+        "Product-Market Fit",
+        "Prototype",
+        "Go-to-Market Strategy",
+        "Supply Chain"
+      ],
+      answer: 1,
+      reason: "A prototype is a preliminary model or version of a product, often with limited functionality, used to showcase key features and obtain feedback."
+    },
+
+    {
+      question: "The team's use of iterative sprints to incorporate changing requirements primarily reflects:",
+      options: [
+        "Agile Development",
+        "Product Offering",
+        "Procurement",
+        "Stellar Brand Image"
+      ],
+      answer: 0,
+      reason: "Agile is a flexible and iterative product development approach that emphasises iterative progress, continuous feedback and adaptive planning. Agile sprints are time-boxed periods during which specified development work is completed."
+    },
+
+    {
+      question: "Stakeholders continually requesting additional features beyond the original product scope create which prototyping challenge?",
+      options: [
+        "Limited User Involvement",
+        "Overemphasis on Aesthetics",
+        "Scope Creep",
+        "Unclear Requirements"
+      ],
+      answer: 2,
+      reason: "Scope Creep is the gradual expansion of project goals beyond the initial scope as prototypes evolve based on feedback, potentially increasing development time and costs."
+    },
+
+    {
+      question: "Reducing testing because of tight sprint deadlines creates which Agile development challenge?",
+      options: [
+        "Adapting to Agile Culture",
+        "Maintaining Consistent Quality",
+        "Managing Changing Priorities",
+        "Balancing Flexibility and Structure"
+      ],
+      answer: 1,
+      reason: "The chapter states that rapid Agile development cycles can make it difficult to maintain consistent product quality because quick delivery may compromise thorough testing and validation."
+    },
+
+    {
+      question: "CareLink's frequent changes in stakeholder priorities create which additional Agile challenge?",
+      options: [
+        "Managing Changing Priorities",
+        "Limited User Involvement",
+        "Overemphasis on Aesthetics",
+        "Unclear Requirements in Prototyping"
+      ],
+      answer: 0,
+      reason: "Managing Changing Priorities is an Agile challenge because frequent reprioritization can disrupt planned work and affect the team's ability to deliver on time."
+    }
+  ]
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch3_01",
+  case_chapter: "chapter3",
+  question: "A startup wants to launch the smallest version of its product that addresses the key problem of its target customers and allows the founders to obtain early feedback. Which approach is most appropriate?",
+  options: [
+    "Developing a Minimum Viable Product (MVP)",
+    "Launching the fully developed product with all possible features",
+    "Expanding the product to multiple markets before testing it",
+    "Waiting until the product is completely refined before obtaining feedback"
+  ],
+  answer: 0,
+  reason: "The chapter explains that a Minimum Viable Product (MVP) is the smallest version of a product that addresses the key problem or need and enables the startup to attract early adopters and validate the product idea through feedback."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch3_02",
+  case_chapter: "chapter3",
+  question: "A startup observes rapid user adoption, positive customer feedback, strong retention rates and growing demand without extensive marketing efforts. Which concept do these indicators most directly represent?",
+  options: [
+    "Product Offering",
+    "Product-Market Fit",
+    "Procurement Efficiency",
+    "Agile Development"
+  ],
+  answer: 1,
+  reason: "The chapter identifies rapid user adoption, positive customer feedback, strong retention rates and growing demand without extensive marketing efforts as key indicators of Product-Market Fit."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch3_03",
+  case_chapter: "chapter3",
+  question: "A startup develops a preliminary model of its product with limited functionality in order to validate ideas and obtain user feedback before full-scale development. What is this preliminary model called?",
+  options: [
+    "Prototype",
+    "Supply Chain",
+    "Product-Market Fit",
+    "Go-to-Market Strategy"
+  ],
+  answer: 0,
+  reason: "The chapter describes a prototype as a preliminary model or version of a product with limited functionality that helps in validating ideas, communicating concepts and obtaining user feedback before full-scale development."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch3_04",
+  case_chapter: "chapter3",
+  question: "Which of the following most appropriately describes Agile methodology in the context of technology startups?",
+  options: [
+    "A method that requires a complete product specification before development begins",
+    "A method focused only on reducing development cost",
+    "A project management and product development approach that prioritizes flexibility, collaboration and responsiveness to change",
+    "A method in which customer feedback is obtained only after final product launch"
+  ],
+  answer: 2,
+  reason: "The chapter describes Agile as a project management and product development approach that prioritizes flexibility, collaboration and responsiveness to change, with iterative progress, continuous feedback and adaptive planning."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch3_05",
+  case_chapter: "chapter3",
+  question: "A company ensures that its product addresses the critical needs of its target customers. Which element of product offering is being addressed?",
+  options: [
+    "Essential Features",
+    "Stellar Brand Image",
+    "Attractive Packaging and Presentation",
+    "Comprehensive Support and Services"
+  ],
+  answer: 0,
+  reason: "Essential Features require the product to address critical customer needs. The chapter specifically identifies this as one of the general elements of a product offering."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch3_06",
+  case_chapter: "chapter3",
+  question: "A startup has already developed an MVP but is unsure whether its product is moving towards Product-Market Fit. The founders decide to monitor KPIs such as user engagement, conversion rates and customer satisfaction before deciding on further product improvements. Which strategy are they following?",
+  options: [
+    "Focus on Core Value Proposition",
+    "Deep Customer Understanding",
+    "Measure and Analyze Metrics",
+    "Premature Scaling"
+  ],
+  answer: 2,
+  reason: "The chapter states that entrepreneurs should measure and analyze metrics by identifying relevant KPIs such as user engagement, conversion rates and customer satisfaction to evaluate product performance and improve product-market fit."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch3_07",
+  case_chapter: "chapter3",
+  question: "A startup depends on a critical component from a single supplier. The founders decide to diversify suppliers so that a disruption affecting one supplier does not severely interrupt production. Which procurement aspect is most directly being addressed?",
+  options: [
+    "Risk Mitigation",
+    "Cost Management",
+    "Supplier Relationships",
+    "Sourcing Quality Materials"
+  ],
+  answer: 0,
+  reason: "The chapter explains that procurement professionals assess and mitigate supply chain risks. It gives diversification of suppliers for critical components as an example of proactively reducing the impact of potential disruptions."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch3_08",
+  case_chapter: "chapter3",
+  question: "A technology startup expects a substantial increase in users over the next few years. It therefore selects frameworks, databases and cloud services that can accommodate increased user loads and evolving requirements. Which element of building a strong tech foundation is being applied?",
+  options: [
+    "Prioritize Security Measures",
+    "Implement Continuous Monitoring",
+    "Assemble a Skilled Team",
+    "Choose Scalable Technologies"
+  ],
+  answer: 3,
+  reason: "The chapter states that startups should choose scalable technologies, including scalable frameworks, databases and cloud services, so that the technology can accommodate increased user loads and evolving requirements."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch3_09",
+  case_chapter: "chapter3",
+  question: "A startup receives repeated feedback that users find its existing product difficult to use. Instead of adding several new features, the team studies user pain points and modifies the product to improve its usability. Which approach is most consistent with the chapter?",
+  options: [
+    "Deep Customer Understanding",
+    "Premature Scaling",
+    "Overlooking Customer Feedback",
+    "Expanding the product to a broader audience"
+  ],
+  answer: 0,
+  reason: "The chapter emphasizes Deep Customer Understanding through research, interviews and actionable feedback. Understanding customer needs and pain points enables entrepreneurs to refine the product appropriately."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch3_10",
+  case_chapter: "chapter3",
+  question: "A startup has received encouraging feedback on its MVP in one city. Before confirming Product-Market Fit, the founders expand operations rapidly across the country and commit substantial resources to new locations. Revenues do not increase proportionately and overheads rise sharply. Which combination most accurately identifies the issue?",
+  options: [
+    "Product Offering and Brand Recognition",
+    "Product-Market Fit and Premature Scaling",
+    "Prototype Development and Security Measures",
+    "Agile Development and Supplier Relationships"
+  ],
+  answer: 1,
+  reason: "The chapter identifies Premature Scaling as expanding operations and resources too quickly before achieving Product-Market Fit. Such expansion can increase costs without proportional revenue growth and create financial strain."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch3_11",
+  case_chapter: "chapter3",
+  question: "A startup creates an interactive prototype of a learning platform. User testing shows that learners need simpler navigation and better synchronization between certain functions. The team then modifies the prototype during successive fixed development periods based on this feedback. Which combination of concepts is most appropriately reflected?",
+  options: [
+    "Procurement and Supply Chain Management",
+    "Prototype and Agile Development",
+    "Product Offering and Market Leadership",
+    "Go-to-Market Strategy and Cost Management"
+  ],
+  answer: 1,
+  reason: "The chapter explains that prototypes help obtain user feedback and validate concepts, while Agile uses iterative development, continuous feedback and time-boxed sprints to respond to changing requirements. The scenario combines both concepts."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch3_12",
+  case_chapter: "chapter3",
+  question: "A startup develops a new consumer device. The founders insist that the product must first satisfy essential customer needs, while the procurement team focuses on obtaining quality materials that ensure the finished product meets safety standards and customer expectations. Which combination is most appropriate?",
+  options: [
+    "Essential Features and Sourcing Quality Materials",
+    "Stellar Brand Image and Cost Management",
+    "Attractive Packaging and Risk Mitigation",
+    "Comprehensive Support and Supplier Relationships"
+  ],
+  answer: 0,
+  reason: "Essential Features require the product to address critical customer needs. Procurement's role in Sourcing Quality Materials is to secure materials essential for product development so that the final product can meet safety standards and customer expectations."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch3_13",
+  case_chapter: "chapter3",
+  question: "A startup wants its supply chain to respond effectively to changing market dynamics. It introduces collaborative planning with key partners so that production schedules, inventory levels and demand forecasts remain aligned. At the same time, it uses technology to improve visibility and real-time data analysis across the supply chain. Which combination best reflects the chapter?",
+  options: [
+    "Product-Market Fit and Product Offering",
+    "Agile Development and Investor Outlook",
+    "Technology Adoption and Strategic Partnerships and Collaboration",
+    "Procurement Cost Management and Brand Recognition"
+  ],
+  answer: 2,
+  reason: "The chapter identifies Technology Adoption and Strategic Partnerships and Collaboration as two broad areas for strengthening the supply chain. Supply Chain Management Software can improve visibility and real-time data analysis, while Collaborative Planning aligns production schedules, inventory levels and demand forecasts with key partners."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch3_14",
+  case_chapter: "chapter3",
+  question: "An investor is evaluating a startup whose product has received positive market feedback. However, the entrepreneur cannot clearly explain the product goals, how different functions will collaborate during development, or how the product will be introduced to the target customers. Which combination of areas should the entrepreneur strengthen according to the investor's outlook?",
+  options: [
+    "Procurement, Packaging and Presentation, and Supplier Relationships",
+    "Essential Features, Risk Mitigation, and Cost Management",
+    "MVP, Customer Retention, and Brand Recognition",
+    "Clear Product Definition and Goals, Cross-Functional Collaboration, and Go-to-Market Strategy"
+  ],
+  answer: 3,
+  reason: "The chapter's Investor's Outlook emphasizes a clear product definition with achievable goals and cross-functional collaboration. It also identifies Go-to-Market Strategy as important because investors want to understand how the entrepreneur will introduce and promote the product, reach the target audience and differentiate it from competitors."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch3_15",
+  case_chapter: "chapter3",
+  question: "A startup wants to identify the market problem or opportunity before developing its product. Which activity should form part of this initial product development stage?",
+  options: [
+    "Market research, competitor analysis and understanding the target audience",
+    "Immediate nationwide expansion of the product",
+    "Finalising all product features without customer input",
+    "Launching the product before identifying the customer segment"
+  ],
+  answer: 0,
+  reason: "The chapter explains that product development begins by identifying a market problem or opportunity, followed by market research, competitor analysis and a deep understanding of the target audience."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch3_16",
+  case_chapter: "chapter3",
+  question: "A startup wants to make customers its advocates by providing a product that satisfies a genuine market need and resonates deeply with the target audience. Which outcome is most closely associated with Product-Market Fit?",
+  options: [
+    "Higher dependency on extensive marketing efforts",
+    "Widespread adoption and customer satisfaction",
+    "Elimination of competition in the industry",
+    "Removal of the need for continuous product improvement"
+  ],
+  answer: 1,
+  reason: "The chapter states that Product-Market Fit occurs when a product satisfies a real market need and resonates deeply with its target audience, resulting in widespread adoption and customer satisfaction."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch3_17",
+  case_chapter: "chapter3",
+  question: "A team uses daily stand-up meetings, backlog grooming sessions and sprint reviews while developing a technology product. Which methodology is being applied?",
+  options: [
+    "Product-Market Fit",
+    "Procurement Management",
+    "Agile Development",
+    "Traditional Product Launch"
+  ],
+  answer: 2,
+  reason: "The chapter states that development teams in Agile environments often use frameworks such as Scrum or Kanban, with daily stand-up meetings, backlog grooming sessions and sprint reviews forming part of the work culture."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch3_18",
+  case_chapter: "chapter3",
+  question: "An investor wants to know whether a startup has conducted thorough research to determine the need for its proposed product, understand its target audience and identify competitors. Which investor consideration is this?",
+  options: [
+    "Scalability",
+    "Market Validation",
+    "Quality Assurance and Testing",
+    "Go-to-Market Strategy"
+  ],
+  answer: 1,
+  reason: "The chapter states that Market Validation involves assessing whether entrepreneurs have conducted thorough market research to validate the need for their product, understand the target audience and identify competitors."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch3_19",
+  case_chapter: "chapter3",
+  question: "A company wants to provide excellent after-sales support, easy returns and warranty support as part of what it offers to customers. Which element of Product Offering does this represent?",
+  options: [
+    "Affordable Innovation",
+    "Essential Features",
+    "Stellar Brand Image",
+    "Comprehensive Support and Services"
+  ],
+  answer: 3,
+  reason: "The chapter identifies Comprehensive Support and Services as an element of Product Offering and refers to excellent after-sales support, easy returns and warranty support as examples."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch3_20",
+  case_chapter: "chapter3",
+  question: "During an Agile project, customer requirements change frequently. The development team repeatedly has to alter planned work, creating disruption in the development process. Which challenge of Agile development is most directly involved?",
+  options: [
+    "Managing Changing Priorities",
+    "Overemphasis on Aesthetics",
+    "Unclear Requirements in Prototyping",
+    "Sourcing Quality Materials"
+  ],
+  answer: 0,
+  reason: "The chapter identifies Managing Changing Priorities as a challenge in Agile development because adapting to changing priorities can disrupt planned work."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch3_21",
+  case_chapter: "chapter3",
+  question: "A startup spends most of its effort making its prototype visually attractive but has not developed the essential underlying functionality. Which challenge in prototyping does this situation illustrate?",
+  options: [
+    "Resistance to Change",
+    "Limited User Involvement",
+    "Overemphasis on Aesthetics",
+    "Scope Creep"
+  ],
+  answer: 2,
+  reason: "The chapter identifies Overemphasis on Aesthetics as a prototyping challenge where excessive focus is placed on visual aspects while underlying functionalities are neglected."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch3_22",
+  case_chapter: "chapter3",
+  question: "A startup has achieved Product-Market Fit and now wants to use its understanding of customer needs and market dynamics to allocate resources towards areas that truly matter. Which competitive advantage of good Product-Market Fit is being demonstrated?",
+  options: [
+    "Brand Recognition",
+    "Strategic Decision-Making",
+    "Market Leadership",
+    "Innovation and Differentiation"
+  ],
+  answer: 1,
+  reason: "The chapter explains that businesses with Product-Market Fit can make more informed and strategic decisions because they have a clear understanding of customer needs and market dynamics."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch3_23",
+  case_chapter: "chapter3",
+  question: "A startup develops a product using an initial version and then continuously incorporates real-world customer feedback before introducing further improvements. Which two elements of product development are most directly reflected?",
+  options: [
+    "Iterative Development and Testing and User-Centric Design",
+    "Procurement and Cost Management",
+    "Brand Recognition and Market Leadership",
+    "Packaging and Presentation and Supplier Relationships"
+  ],
+  answer: 0,
+  reason: "The chapter identifies Iterative Development and Testing as involving an MVP and real-world feedback, while User-Centric Design focuses on understanding and incorporating the needs and feedback of users."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch3_24",
+  case_chapter: "chapter3",
+  question: "A founder believes customers will prefer a particular product feature based entirely on internal assumptions. The startup launches the feature without collecting sufficient customer feedback and later finds that user preferences are different. Which combination of Product-Market Fit challenges is most appropriate?",
+  options: [
+    "Premature Scaling and Competitive Dynamics",
+    "Assumption Misalignment and Inadequate Customer Feedback",
+    "Scope Creep and Resistance to Change",
+    "Quality Assurance and Scalability"
+  ],
+  answer: 1,
+  reason: "The chapter identifies Assumption Misalignment where assumptions about market needs and customer preferences do not align with reality. It also identifies Inadequate Customer Feedback as a challenge when insufficient understanding of user experiences and preferences impedes Product-Market Fit."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch3_25",
+  case_chapter: "chapter3",
+  question: "A prototype is being refined through user testing, but important users are not participating regularly. At the same time, the development team is working in short iterative cycles and must continuously adapt the product to incomplete feedback. Which combination best captures the challenges involved?",
+  options: [
+    "Limited User Involvement in Prototyping and Maintaining Consistent Quality in Agile",
+    "Cost Management in Procurement and Market Leadership",
+    "Stellar Brand Image and Supplier Relationships",
+    "Go-to-Market Strategy and Affordable Innovation"
+  ],
+  answer: 0,
+  reason: "The chapter states that Limited User Involvement can cause a prototype not to align with user expectations. It also identifies Maintaining Consistent Quality as an Agile challenge because maintaining product quality amid rapid development cycles is a constant struggle."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch3_26",
+  case_chapter: "chapter3",
+  question: "A startup is preparing a product for a rapidly growing user base. The founders want the technology architecture to accommodate increased user loads, while also ensuring that user data remains protected from potential threats and vulnerabilities. Which combination of technology foundation elements is most appropriate?",
+  options: [
+    "Choose Scalable Technologies and Prioritize Security Measures",
+    "Clarify the Vision and Assemble a Skilled Team",
+    "Agile Development with MVP and Attractive Packaging",
+    "Implement Continuous Monitoring and Brand Recognition"
+  ],
+  answer: 0,
+  reason: "The chapter states that startups should Choose Scalable Technologies so that frameworks, databases and cloud services can accommodate increased user loads and evolving requirements. It also requires Prioritize Security Measures to protect user data and maintain system integrity."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch3_27",
+  case_chapter: "chapter3",
+  question: "A startup has developed a product that meets customer needs, but investors now want to understand how the entrepreneur will introduce and promote the product, reach the target audience and differentiate it from competitors. Which two areas should receive particular attention?",
+  options: [
+    "Quality Assurance and Testing and Procurement",
+    "Product Offering and Supplier Relationships",
+    "Go-to-Market Strategy and Market Validation",
+    "Scalability and Attractive Packaging and Presentation"
+  ],
+  answer: 2,
+  reason: "The chapter explains that Go-to-Market Strategy provides a blueprint for delivering the product to the end customer, including pricing and distribution, and investors want to understand how the product will be introduced, promoted, reach the target audience and be differentiated. Market Validation establishes demand by understanding the target audience, competitors and market need."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch3_28",
+  case_chapter: "chapter3",
+  question: "An entrepreneur wants to strengthen the product delivery system. The startup plans to improve visibility across the supply chain through technology and also coordinate with logistics providers to reduce lead times and improve delivery efficiency. Which combination of measures is most consistent with the chapter?",
+  options: [
+    "Supply Chain Management Software and Logistics Partnerships",
+    "Stellar Brand Image and Cost Management",
+    "Product-Market Fit and Cross-Functional Collaboration",
+    "Essential Features and Regulatory Compliance"
+  ],
+  answer: 0,
+  reason: "The chapter recommends Technology Adoption for strengthening the supply chain, including Supply Chain Management Software for end-to-end visibility and real-time data analysis. It also recommends Strategic Partnerships and Collaboration, including Logistics Partnerships to optimize transportation, reduce lead times and improve delivery efficiency."
 }
 
 
