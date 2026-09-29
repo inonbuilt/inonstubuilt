@@ -5688,7 +5688,1966 @@ const caseStudies = [
   ],
   answer: 0,
   reason: "The chapter recommends Technology Adoption for strengthening the supply chain, including Supply Chain Management Software for end-to-end visibility and real-time data analysis. It also recommends Strategic Partnerships and Collaboration, including Logistics Partnerships to optimize transportation, reduce lead times and improve delivery efficiency."
+},
+
+// Chapter 4
+{
+  case_id: "strt_ch4_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>GreenBite is a startup planning to introduce healthy ready-to-eat meals in several cities. Before approaching investors, the founders prepare a document explaining the company's mission and vision, the customers they intend to serve, the products they will offer, their marketing approach, daily operations, management structure and expected financial performance.</p>
+
+    <p>The founders also include an executive summary at the beginning so that a reader can quickly understand the business concept, market opportunity, competitive advantage, financial projections and funding requirements. They intend to use the document as a blueprint for guiding the company's operations, strategies and future growth.</p>
+
+    <p>After completing this document, the founders plan to create a shorter visual presentation for potential investors that will communicate the problem, solution, market opportunity, business model, team, financials and funding requirement through concise slides.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which document are the GreenBite founders primarily preparing in the first stage?",
+      options: [
+        "Business Plan",
+        "Elevator Pitch",
+        "Customer Testimonial",
+        "Pitch Deck"
+      ],
+      answer: 0,
+      reason: "The case describes a detailed document covering the company's mission, customers, products, marketing, operations, management and financial performance. These are components of a Business Plan."
+    },
+
+    {
+      question: "Why does GreenBite include an executive summary at the beginning of its document?",
+      options: [
+        "To provide a snapshot of the entire business plan",
+        "To replace the financial plan completely",
+        "To explain only the company's advertising strategy",
+        "To provide only the names of management members"
+      ],
+      answer: 0,
+      reason: "The executive summary provides a snapshot of the entire business plan, including the business concept, market opportunity, competitive advantage, financial projections and funding requirements."
+    },
+
+    {
+      question: "Which part of GreenBite's plan would primarily describe its day-to-day activities and resource allocation?",
+      options: [
+        "Market Analysis",
+        "Operational Plan",
+        "Executive Summary",
+        "Financial Plan"
+      ],
+      answer: 1,
+      reason: "The Operational Plan details day-to-day operations, production processes, supply chain management and resource allocation."
+    },
+
+    {
+      question: "What is the main purpose of the shorter visual presentation GreenBite plans to prepare for investors?",
+      options: [
+        "To provide a concise and visually engaging presentation of the business idea",
+        "To replace all business planning activities",
+        "To provide only historical financial statements",
+        "To document employee attendance"
+      ],
+      answer: 0,
+      reason: "A pitch deck is a succinct and visually engaging presentation used to pitch a business idea to potential investors or stakeholders."
+    },
+
+    {
+      question: "Which sequence best represents GreenBite's approach described in the case?",
+      options: [
+        "Prepare a Business Plan, then showcase the idea through a Pitch Deck",
+        "Prepare a Pitch Deck, then eliminate the need for a Business Plan",
+        "Prepare only financial projections, then launch immediately",
+        "Prepare an elevator pitch, then discontinue investor communication"
+      ],
+      answer: 0,
+      reason: "The chapter explains that once an entrepreneur has clarity of the business plan, the idea and plan can then be showcased to potential investors, partners and stakeholders through a pitch deck."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>EduBridge is developing an online learning platform. Its founders first identify a problem faced by students, describe how their platform will solve it and determine the specific benefits students will receive. They then collect feedback from early users and record testimonials showing that students are finding the platform useful.</p>
+
+    <p>When meeting a potential investor, the founders explain the problem, describe the solution, communicate the value delivered to students and present the early user feedback as evidence. At the end of the discussion, they ask the investor to schedule a detailed follow-up meeting to discuss the opportunity further.</p>
+
+    <p>The founders have deliberately kept the presentation concise because they expect the investor to have limited time and attention.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which element of the pitch is demonstrated when EduBridge explains the difficulty faced by students?",
+      options: [
+        "Problem Statement",
+        "Call to Action",
+        "Traction or Proof",
+        "Management and Organization"
+      ],
+      answer: 0,
+      reason: "The Problem Statement clearly articulates the problem faced by target customers and explains why the problem is significant."
+    },
+
+    {
+      question: "When EduBridge explains how its platform solves the students' difficulty, which element is being addressed?",
+      options: [
+        "Solution",
+        "Financial Plan",
+        "Market Analysis",
+        "Call to Action"
+      ],
+      answer: 0,
+      reason: "The Solution describes how the product or service directly addresses the identified problem."
+    },
+
+    {
+      question: "What do the early-user testimonials primarily provide to EduBridge's pitch?",
+      options: [
+        "Traction or Proof",
+        "Operational Plan",
+        "Company Description",
+        "Funding Requirement"
+      ],
+      answer: 0,
+      reason: "Traction or Proof provides evidence supporting business claims, including customer testimonials, case studies, success stories or relevant data."
+    },
+
+    {
+      question: "The request for a detailed follow-up meeting at the end of the pitch is an example of:",
+      options: [
+        "Value Proposition",
+        "Call to Action",
+        "Market Analysis",
+        "Competitive Advantage"
+      ],
+      answer: 1,
+      reason: "A Call to Action closes the pitch with a clear and specific next step for the listener."
+    },
+
+    {
+      question: "Which of the following best explains why the founders keep their pitch concise?",
+      options: [
+        "An elevator-style pitch is intended to communicate the business value clearly when time and attention are limited",
+        "Investors should never receive evidence during a pitch",
+        "A pitch should contain only financial information",
+        "Concise communication eliminates the need for a solution"
+      ],
+      answer: 0,
+      reason: "The chapter explains that an elevator pitch communicates the essence of a business idea concisely in situations where time is limited and attention spans are short."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>QuickCart is preparing an elevator pitch for a new grocery delivery service. The founder begins by explaining the problem faced by customers, followed by a simple explanation of how QuickCart solves it. She avoids technical terminology and clearly explains the benefits customers can receive.</p>
+
+    <p>During practice, the founder notices that her explanation is technically correct but difficult to understand. She simplifies the wording. She also works on delivering the pitch with confidence so that listeners can understand that she strongly believes in the business idea.</p>
+
+    <p>Finally, she adds a short statement designed to make listeners interested in learning more about QuickCart's market opportunity and early customer response.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which of the 3Cs is most directly addressed by simplifying QuickCart's technical explanation?",
+      options: [
+        "Clarity",
+        "Confidence",
+        "Compelling",
+        "Conversion"
+      ],
+      answer: 0,
+      reason: "Clarity means communicating the value proposition in a clear and understandable manner while avoiding ambiguity and unnecessary complexity."
+    },
+
+    {
+      question: "Which of the following best represents Confidence in QuickCart's elevator pitch?",
+      options: [
+        "Showing belief and enthusiasm about the business idea",
+        "Using more technical terminology",
+        "Increasing the number of slides",
+        "Removing all customer benefits"
+      ],
+      answer: 0,
+      reason: "Confidence helps capture attention and demonstrates that the entrepreneur is genuinely excited about and believes in the business idea."
+    },
+
+    {
+      question: "QuickCart's attempt to make listeners interested in the opportunity most directly relates to which of the 3Cs?",
+      options: [
+        "Clarity",
+        "Confidence",
+        "Compelling",
+        "Calculation"
+      ],
+      answer: 2,
+      reason: "A compelling elevator pitch engages the listener, leaves a lasting impression and prompts further interest or action."
+    },
+
+    {
+      question: "Which of the following would weaken QuickCart's attempt to achieve clarity?",
+      options: [
+        "Using simple language",
+        "Explaining the problem clearly",
+        "Using unnecessary industry jargon",
+        "Explaining the solution directly"
+      ],
+      answer: 2,
+      reason: "The chapter states that clarity requires simple language and avoiding ambiguity. Unnecessary technical jargon can make the message less understandable."
+    },
+
+    {
+      question: "Which combination correctly identifies the 3Cs of an Elevator Pitch?",
+      options: [
+        "Clarity, Confidence and Compelling",
+        "Customers, Competition and Capital",
+        "Content, Cost and Capital",
+        "Clarity, Competition and Conversion"
+      ],
+      answer: 0,
+      reason: "The chapter specifically identifies the 3Cs of Elevator Pitch as Clarity, Confidence and Compelling."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>MedAssist is pitching its healthcare-support service to a group of potential investors. Before the meeting, the founders study the investors' interests, investment criteria and previous investments. During the presentation, they explain the problem being addressed, the proposed solution, the size and potential of the target market and the evidence obtained from early users.</p>
+
+    <p>The founders also explain what differentiates MedAssist from alternatives, describe how the business will generate revenue and acknowledge several risks together with their proposed mitigation measures. They introduce the team's qualifications and keep the presentation focused and concise.</p>
+
+    <p>After the meeting, the founders send additional information requested by the investors and continue communicating with them.</p>
+  `,
+
+  questions: [
+    {
+      question: "Why did the MedAssist founders study the investors before the meeting?",
+      options: [
+        "To understand their interests, investment criteria and past investments",
+        "To avoid explaining the business model",
+        "To determine the investors' personal expenses",
+        "To replace market research"
+      ],
+      answer: 0,
+      reason: "Knowing the audience requires researching investors beforehand to understand their interests, investment criteria and past investments."
+    },
+
+    {
+      question: "What is MedAssist demonstrating by explaining how it differs from alternatives?",
+      options: [
+        "Competitive Advantage",
+        "Operational Plan",
+        "Executive Summary",
+        "Call to Action"
+      ],
+      answer: 0,
+      reason: "Demonstrating Competitive Advantage involves clearly explaining differentiation through factors such as unique features, proprietary technology or strategic partnerships."
+    },
+
+    {
+      question: "Why does MedAssist openly discuss risks and mitigation measures?",
+      options: [
+        "Because investors appreciate honesty and a realistic assessment of potential obstacles",
+        "Because risks are more important than the business idea",
+        "Because financial projections should be removed",
+        "Because investors should not hear about the market"
+      ],
+      answer: 0,
+      reason: "The investor-pitch rules state that entrepreneurs should be transparent about potential risks and challenges and explain how they plan to mitigate them."
+    },
+
+    {
+      question: "What action taken after the meeting demonstrates the relationship-building aspect of investor pitching?",
+      options: [
+        "Ignoring the investors after the presentation",
+        "Sending requested information and continuing communication",
+        "Changing the business model without evidence",
+        "Removing the team's qualifications"
+      ],
+      answer: 1,
+      reason: "Following up with investors, addressing questions and providing additional information helps build relationships and ongoing support."
+    },
+
+    {
+      question: "Which combination contains only investor-pitching practices demonstrated by MedAssist?",
+      options: [
+        "Know the audience, demonstrate competitive advantage, address risks",
+        "Avoid market data, hide risks, shorten the business model",
+        "Focus only on product features, avoid investors' questions, stop communication",
+        "Use only emotional claims, remove evidence, avoid discussing the team"
+      ],
+      answer: 0,
+      reason: "The case demonstrates three stated investor-pitching practices: knowing the audience, demonstrating competitive advantage and addressing risks and challenges."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>StyleNest sells handmade home-decor products directly to consumers. During a customer presentation, the founder first explains how the products solve customers' decorating needs and focuses on the benefits rather than merely listing product features.</p>
+
+    <p>The founder then shows testimonials from existing customers and explains how StyleNest differs from competing products. When customers raise concerns about durability and price, the founder directly addresses those concerns. She ends by clearly explaining how customers can place an order and remains available to answer additional questions after the presentation.</p>
+
+    <p>The founder believes that the pitching process should create a positive experience rather than simply pressure customers to buy.</p>
+  `,
+
+  questions: [
+    {
+      question: "Why does StyleNest focus on benefits rather than merely listing features?",
+      options: [
+        "To clearly communicate the value proposition",
+        "To avoid understanding customer needs",
+        "To replace social proof",
+        "To eliminate differentiation"
+      ],
+      answer: 0,
+      reason: "Customer pitching should clearly communicate the value proposition by focusing on the benefits and outcomes customers can expect."
+    },
+
+    {
+      question: "What purpose do StyleNest's customer testimonials primarily serve?",
+      options: [
+        "Social Proof",
+        "Operational Planning",
+        "Market Expansion",
+        "Financial Projection"
+      ],
+      answer: 0,
+      reason: "Social proof includes testimonials, reviews or endorsements from satisfied customers and helps build credibility and trust."
+    },
+
+    {
+      question: "How should StyleNest's response to concerns about durability and price be classified?",
+      options: [
+        "Addressing Objections and Concerns",
+        "Market Analysis",
+        "Management and Organization",
+        "Funding Requirement"
+      ],
+      answer: 0,
+      reason: "Customer pitching requires anticipating objections or concerns and proactively addressing them."
+    },
+
+    {
+      question: "What is demonstrated when StyleNest clearly explains how customers can place an order?",
+      options: [
+        "A Clear Call to Action",
+        "A Competitive Analysis",
+        "A Financial Plan",
+        "An Executive Summary"
+      ],
+      answer: 0,
+      reason: "A Clear Call to Action explains the next step customers should take, such as making a purchase, signing up or contacting the business."
+    },
+
+    {
+      question: "Which customer-pitching principle is reflected by StyleNest's intention to create a positive experience?",
+      options: [
+        "Deliver an Outstanding Experience",
+        "Highlight Market Opportunity",
+        "Present a Clear Business Model",
+        "Showcase Financial Projections"
+      ],
+      answer: 0,
+      reason: "The chapter states that entrepreneurs should strive to deliver an outstanding customer experience throughout the pitching process."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS06",
+  difficulty: "Medium",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>AgriLink has developed a platform connecting farmers with buyers. Its founders are preparing a pitch deck for investors. The team has strong early customer interest but wants to ensure that the opportunity is presented with sufficient evidence.</p>
+
+    <p>They calculate the total revenue potential if the company could theoretically capture the entire market. They then narrow the analysis to the portion of that market that the company can realistically target and serve. The founders also estimate the net profit expected from the entire future relationship with an individual customer and calculate the cost involved in acquiring a new customer.</p>
+
+    <p>Finally, the founders determine how many months the company can continue operating with its available funds and separately calculate the rate at which it is consuming those funds.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which metric represents the total market demand if AgriLink could capture 100% of the market?",
+      options: [
+        "SAM",
+        "TAM",
+        "LTV",
+        "CAC"
+      ],
+      answer: 1,
+      reason: "TAM, or Total Addressable Market, represents the total market demand measured as revenue potential if a company could capture 100% of the market."
+    },
+
+    {
+      question: "AgriLink narrows the total market to the portion it can realistically target and serve. Which concept does this represent?",
+      options: [
+        "Runway",
+        "LTV",
+        "SAM",
+        "Burn Rate"
+      ],
+      answer: 2,
+      reason: "SAM, or Serviceable Addressable Market, is the portion of TAM that a company can realistically target and serve."
+    },
+
+    {
+      question: "The estimated net profit attributed to AgriLink's entire future relationship with an individual customer is:",
+      options: [
+        "CAC",
+        "TAM",
+        "LTV",
+        "Runway"
+      ],
+      answer: 2,
+      reason: "LTV, or Customer Lifetime Value, is the predicted net profit attributed to the entire future relationship with a customer."
+    },
+
+    {
+      question: "Which term describes the cost involved in acquiring a new AgriLink customer?",
+      options: [
+        "CAC",
+        "SAM",
+        "Runway",
+        "Churn Rate"
+      ],
+      answer: 0,
+      reason: "CAC, or Customer Acquisition Cost, is the cost associated with acquiring a new customer, including marketing, sales and other expenses."
+    },
+
+    {
+      question: "AgriLink's calculation of the number of months it can continue operating before its funds run out is different from its calculation of the rate at which funds are being consumed. Which combination correctly identifies the two concepts?",
+      options: [
+        "Burn Rate and Runway",
+        "Runway and Burn Rate",
+        "TAM and SAM",
+        "LTV and CAC"
+      ],
+      answer: 1,
+      reason: "Runway refers to the amount of time a startup can operate before running out of funds, while Burn Rate refers to the rate at which available funds are being spent."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS07",
+  difficulty: "Medium",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>NovaTech has prepared a pitch deck that contains attractive graphics and ambitious statements about becoming a major player in its industry. During due diligence, however, investors discover that several market claims are not supported by research, the financial projections assume unusually high growth without adequate support, and the company gives limited information about potential risks.</p>
+
+    <p>The founders revise the presentation. They add market research, customer feedback and early traction metrics. They make the value proposition more specific, explain the business model and competitive landscape transparently, revise the financial projections using market information and disclose important challenges. They also provide evidence of what the team has actually achieved rather than relying only on future promises.</p>
+
+    <p>The revised presentation is intended to help investors distinguish measurable business substance from unsupported promotional claims.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which change most directly converts NovaTech's unsupported market claims into evidence-based information?",
+      options: [
+        "Adding market research, customer feedback and traction metrics",
+        "Adding more buzzwords and visual effects",
+        "Increasing the number of slides without adding evidence",
+        "Removing information about the market"
+      ],
+      answer: 0,
+      reason: "The chapter distinguishes substance from hype by stating that substance is backed by tangible evidence such as market research, customer feedback and traction metrics."
+    },
+
+    {
+      question: "Why should NovaTech revise its unusually optimistic financial projections?",
+      options: [
+        "Substance requires realistic and data-driven projections based on market analysis and business fundamentals",
+        "Financial projections should never appear in a pitch deck",
+        "Investors prefer projections without any market basis",
+        "Hype is strengthened by making projections less specific"
+      ],
+      answer: 0,
+      reason: "The chapter states that substance provides realistic, data-driven financial projections, while hype tends to present overly optimistic projections without a solid foundation."
+    },
+
+    {
+      question: "NovaTech's decision to disclose its business model, competitive landscape and risks primarily demonstrates:",
+      options: [
+        "Transparent Communication",
+        "Product Development",
+        "Social Proof",
+        "Call to Action"
+      ],
+      answer: 0,
+      reason: "Transparent Communication involves openly communicating about the business model, team capabilities, competitive landscape and potential risks or challenges."
+    },
+
+    {
+      question: "Why is evidence of what the team has actually achieved relevant when distinguishing substance from hype?",
+      options: [
+        "Substance includes a track record of achievement and demonstrated ability to execute",
+        "Past achievement eliminates all startup risks",
+        "Investors should evaluate only the founder's presentation style",
+        "Execution is unrelated to startup evaluation"
+      ],
+      answer: 0,
+      reason: "The chapter states that substance is characterized by a track record of achievement, proven expertise and a demonstrated ability to execute a business plan."
+    },
+
+    {
+      question: "Which combination contains only characteristics associated with substance rather than hype according to the chapter?",
+      options: [
+        "Evidence, realistic projections and transparent communication",
+        "Bold claims, buzzwords and grand promises without evidence",
+        "Inflated growth estimates and vague communication",
+        "Flashy presentation, unsupported claims and concealed risks"
+      ],
+      answer: 0,
+      reason: "The chapter associates substance with evidence, a clear value proposition, realistic projections and transparent communication, whereas unsupported claims and exaggerated projections are characteristics of hype."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS08",
+  difficulty: "Medium",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>HomeServe is launching a platform that connects households with service professionals. The founders prepare separate approaches for investors and customers because the two audiences have different priorities.</p>
+
+    <p>For investors, the founders present market size and growth potential, early traction, the competitive advantage of the platform, the revenue model, the qualifications of the team and the risks associated with expansion. They also explain the amount of funding required and how it will support growth.</p>
+
+    <p>For customers, the founders focus on the benefits of the service, use customer stories, explain how HomeServe differs from alternatives and respond to concerns about service reliability. They provide reviews from existing users, explain how to book a service and remain attentive to customer feedback.</p>
+  `,
+
+  questions: [
+    {
+      question: "Why is HomeServe's investor presentation different from its customer presentation?",
+      options: [
+        "The two audiences have different priorities and therefore the pitch should be tailored to their needs",
+        "Customers should never hear the value proposition",
+        "Investors are interested only in product features",
+        "The same message must always be used regardless of audience"
+      ],
+      answer: 0,
+      reason: "The chapter requires entrepreneurs to know their audience and tailor the pitch according to the interests, priorities and needs of investors or customers."
+    },
+
+    {
+      question: "Which investor-focused element in the case is least directly aimed at demonstrating immediate customer value?",
+      options: [
+        "Amount of funding required",
+        "Market growth potential",
+        "Competitive advantage",
+        "Revenue model"
+      ],
+      answer: 0,
+      reason: "The funding requirement is specifically relevant to the investor's consideration of the capital needed. The other listed elements also help explain the business opportunity and its potential."
+    },
+
+    {
+      question: "HomeServe's use of customer stories and reviews primarily combines which customer-pitching approaches?",
+      options: [
+        "Compelling Storytelling and Social Proof",
+        "Financial Plan and Runway",
+        "Market Analysis and Burn Rate",
+        "Funding Requirement and Team Presentation"
+      ],
+      answer: 0,
+      reason: "Customer pitching recommends compelling storytelling using real-life examples, testimonials or case studies, and Social Proof through testimonials, reviews or endorsements."
+    },
+
+    {
+      question: "If HomeServe explains how its service addresses customer concerns about reliability, which customer-pitching principle is most directly involved?",
+      options: [
+        "Address Objections and Concerns",
+        "Highlight Market Opportunity",
+        "Present a Clear Business Model",
+        "Showcase Financial Projections"
+      ],
+      answer: 0,
+      reason: "The chapter specifically requires entrepreneurs to anticipate customer objections or concerns and proactively address them."
+    },
+
+    {
+      question: "Which statement best captures the distinction between HomeServe's two presentations?",
+      options: [
+        "The investor pitch emphasizes business opportunity, traction, model, team, risks and funding, while the customer pitch emphasizes value, differentiation, concerns, social proof and the buying process",
+        "The investor pitch should contain only emotional storytelling, while the customer pitch should contain only financial projections",
+        "Both pitches should focus exclusively on the amount of funding required",
+        "The customer pitch should avoid feedback while the investor pitch should avoid market information"
+      ],
+      answer: 0,
+      reason: "The chapter provides different pitching rules for investors and customers. Investor pitching focuses on market opportunity, traction, competitive advantage, business model, risks, team and funding, while customer pitching focuses on value, storytelling, differentiation, objections, social proof, action and relationships."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS09",
+  difficulty: "Hard",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>VisionMeal is preparing to present its AI-enabled restaurant concept to investors. The founders have a detailed business plan covering the company description, market analysis, product offering, marketing and sales strategy, operational plan, management structure and financial plan. They now want to convert the underlying information into a concise pitch deck.</p>
+
+    <p>The first draft of the deck contains detailed paragraphs on every slide. The founders realise that the presentation is difficult to follow, so they redesign it around a clear sequence: the customer problem, the proposed solution, the market opportunity, the product, the business model, the marketing strategy, the team, financial information and the funding ask. Each slide is designed to communicate one key point supported by appropriate visuals.</p>
+
+    <p>During preparation, the founders also analyse market research and financial projections, practise their communication and develop a narrative connecting the problem to the solution and market opportunity. They decide that the presentation should be concise and engaging rather than simply reproducing the entire business plan.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which distinction best explains why VisionMeal should not simply reproduce its entire Business Plan in the Pitch Deck?",
+      options: [
+        "A Business Plan serves as a broader blueprint for operations, strategies and growth, whereas a Pitch Deck is a succinct, visually engaging presentation focused on communicating key aspects of the business",
+        "A Business Plan is used only for customers, whereas a Pitch Deck is used only for employees",
+        "A Pitch Deck must contain more detailed operational information than a Business Plan",
+        "A Business Plan contains no financial information, whereas a Pitch Deck contains all financial information"
+      ],
+      answer: 0,
+      reason: "The chapter describes the Business Plan as a blueprint covering the company's vision, operations, strategies and growth, while a Pitch Deck is a succinct and visually engaging presentation that communicates essential aspects of the business."
+    },
+
+    {
+      question: "VisionMeal uses market research and financial projections to support the business case. Which pitch-deck skill is most directly demonstrated?",
+      options: [
+        "Data Analysis",
+        "Visual Design",
+        "Storytelling",
+        "Communication"
+      ],
+      answer: 0,
+      reason: "Data Analysis involves analysing market research, industry trends and financial projections to provide evidence-based support for the business case."
+    },
+
+    {
+      question: "The founders organise the presentation so that the problem leads naturally to the solution and then to the market opportunity. Which skill is most directly demonstrated?",
+      options: [
+        "Storytelling",
+        "Financial Planning",
+        "Talent Acquisition",
+        "Operational Planning"
+      ],
+      answer: 0,
+      reason: "Storytelling involves structuring the pitch deck so that it flows logically from problem to solution to market opportunity and beyond."
+    },
+
+    {
+      question: "Why is each slide being designed to communicate one key point with appropriate visuals consistent with the chapter's guidance?",
+      options: [
+        "The pitch deck should convey key messages concisely, with visuals used to enhance understanding and engagement",
+        "Every slide should contain the maximum possible amount of text",
+        "Visuals should replace the underlying business information entirely",
+        "A pitch deck should reproduce every section of the business plan word-for-word"
+      ],
+      answer: 0,
+      reason: "The chapter recommends that each slide convey one key point, supported by visuals and minimal text, with the goal of communicating the business idea clearly and engagingly."
+    },
+
+    {
+      question: "VisionMeal's final preparation involves analysing data, developing a narrative and practising communication. Which combination of pitch-deck skills does this represent?",
+      options: [
+        "Data Analysis, Storytelling and Communication",
+        "Visual Design, Talent Acquisition and Scaling",
+        "Operational Planning, Market Expansion and Legal Compliance",
+        "Financial Planning, Procurement and Social Proof"
+      ],
+      answer: 0,
+      reason: "The chapter identifies Data Analysis, Storytelling and Communication as essential skills for creating an effective pitch deck. VisionMeal's preparation directly demonstrates all three."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS10",
+  difficulty: "Hard",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>EcoServe has developed a sustainable food-service platform and has received interest from both investors and customers. The founders prepare an elevator pitch for an upcoming networking event. They know that the listener may have only a short period of time, so they begin with a concise explanation of the customer problem and move directly to their solution and value proposition.</p>
+
+    <p>Instead of making broad claims, they mention measurable early customer response and explain how the business is different from existing alternatives. They adapt their explanation depending on whether the listener is an investor or a potential customer. For investors, they discuss market opportunity, business model, team capability and funding requirements. For customers, they focus more heavily on benefits, objections, social proof and the next step for engaging with the service.</p>
+
+    <p>The founders practise their delivery carefully. They introduce themselves and the company, make an early hook, avoid unnecessary industry terminology, maintain eye contact and speak at a measured pace. They use a short demonstration rather than relying on a lengthy video. After each interaction, they follow up and continue building the relationship.</p>
+  `,
+
+  questions: [
+    {
+      question: "EcoServe includes measurable early customer response in its elevator pitch primarily because numbers can:",
+      options: [
+        "Bolster credibility, quantify achievements and provide concrete evidence of business potential",
+        "Replace the need to explain the problem and solution",
+        "Guarantee that investors will provide funding",
+        "Eliminate the need to understand the target audience"
+      ],
+      answer: 0,
+      reason: "The chapter states that numbers in an elevator pitch play a crucial role in bolstering credibility, quantifying achievements and providing concrete evidence of the business's potential."
+    },
+
+    {
+      question: "Which principle is most directly demonstrated by EcoServe changing its emphasis depending on whether the listener is an investor or customer?",
+      options: [
+        "Customization of the pitch according to the needs and desires of the audience",
+        "Using an identical script regardless of audience",
+        "Avoiding all discussion of customer needs",
+        "Replacing the elevator pitch with a Business Plan"
+      ],
+      answer: 0,
+      reason: "The chapter emphasises customization: entrepreneurs should research, listen and understand what drives their audience and tailor the pitch accordingly."
+    },
+
+    {
+      question: "Which combination contains only techniques specifically associated with effective pitching in the case?",
+      options: [
+        "Introduce yourself and company, avoid unnecessary terminology, maintain eye contact and speak at a measured pace",
+        "Read every slide aloud, stare at the projector and use industry acronyms",
+        "Speak as quickly as possible, avoid audience interaction and use lengthy videos",
+        "Begin with detailed financial statements and avoid explaining the problem"
+      ],
+      answer: 0,
+      reason: "The chapter advises presenters to introduce themselves and their company, avoid industry acronyms or terminology, connect with the audience rather than staring at the screen, and avoid speaking too fast."
+    },
+
+    {
+      question: "EcoServe uses a short demonstration instead of a lengthy video. Which guidance from the chapter does this most directly reflect?",
+      options: [
+        "Do not show a video; show a quick demo or screenshots because pictures fail less often",
+        "Always use a long video to establish credibility",
+        "Avoid demonstrating the product during a pitch",
+        "Use only written financial projections"
+      ],
+      answer: 0,
+      reason: "The effective-pitching guidance states: don't show a video; do show a quick DEMO or screenshots, noting that pictures fail less often."
+    },
+
+    {
+      question: "Which statement best explains why EcoServe's overall approach combines persuasion with pitching rather than treating them as separate activities?",
+      options: [
+        "The pitch communicates the business idea and value, while persuasive communication helps capture attention, generate interest, build relationships and encourage further action",
+        "Persuasion is relevant only after a startup stops pitching",
+        "Pitching is concerned only with presentation design and has no relationship with communication",
+        "Persuasion eliminates the need for evidence, market analysis or a clear solution"
+      ],
+      answer: 0,
+      reason: "The chapter explains that elevator pitches and pitch decks communicate the business idea and value proposition, while persuasion helps entrepreneurs secure funding, attract customers, build partnerships and recruit talent. It also emphasises relationships and further action."
+    }
+  ]
+},
+{
+  case_id: "strt_ch4_CS11",
+  difficulty: "Easy",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>PureHarvest is a startup offering packaged organic food products. Before beginning operations, the founders prepare a detailed document explaining the business concept, the customers they intend to serve, their products, marketing and sales strategy, operational activities, management structure and expected financial performance.</p>
+
+    <p>The founders use this document to guide their operations, strategies and future growth. They also intend to present it to potential investors to explain the business opportunity and funding requirements.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which document has PureHarvest prepared to guide its operations, strategies and growth trajectory?",
+      options: [
+        "Business Plan",
+        "Pitch Deck",
+        "Elevator Pitch",
+        "Call to Action"
+      ],
+      answer: 0,
+      reason: "A Business Plan serves as the blueprint for a company's vision and guides its operations, strategies and growth trajectory."
+    },
+
+    {
+      question: "Which element of the Business Plan would describe PureHarvest's day-to-day operations and resource allocation?",
+      options: [
+        "Operational Plan",
+        "Financial Plan",
+        "Market Analysis",
+        "Company Description"
+      ],
+      answer: 0,
+      reason: "The Operational Plan details day-to-day operations, production processes, supply chain management and resource allocation."
+    },
+
+    {
+      question: "Which element would primarily describe PureHarvest's mission, vision, values and core competencies?",
+      options: [
+        "Company Description",
+        "Executive Summary",
+        "Operational Plan",
+        "Marketing and Sales Strategy"
+      ],
+      answer: 0,
+      reason: "The Company Description outlines the company's mission, vision, values and core competencies."
+    },
+
+    {
+      question: "Which element would contain PureHarvest's revenue forecasts, expense estimates, cash flow projections and funding requirements?",
+      options: [
+        "Financial Plan",
+        "Market Analysis",
+        "Products or Services",
+        "Management and Organization"
+      ],
+      answer: 0,
+      reason: "The Financial Plan includes financial projections such as revenue forecasts, expense estimates, cash flow projections and funding requirements."
+    },
+
+    {
+      question: "What is the primary purpose of PureHarvest's Business Plan in the case?",
+      options: [
+        "To serve as a blueprint for the company's operations, strategies and growth",
+        "To provide only a short presentation to investors",
+        "To communicate only the company's product features",
+        "To provide only a customer testimonial"
+      ],
+      answer: 0,
+      reason: "The chapter describes a Business Plan as the blueprint for a company's vision, guiding its operations, strategies and growth trajectory."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS12",
+  difficulty: "Easy",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>LearnSphere is preparing a presentation for potential investors. The founders do not want to reproduce their complete Business Plan. Instead, they create a series of concise slides explaining the problem being solved, the solution offered, the market opportunity, the business model, the marketing strategy, the team, financial information and the funding requirement.</p>
+
+    <p>The founders use charts and other visual elements while keeping the amount of text on each slide limited. They want investors to understand the central message quickly and develop interest in the business opportunity.</p>
+  `,
+
+  questions: [
+    {
+      question: "What is LearnSphere preparing for potential investors?",
+      options: [
+        "Pitch Deck",
+        "Operational Plan",
+        "Business Plan",
+        "Executive Summary"
+      ],
+      answer: 0,
+      reason: "A Pitch Deck is a succinct and visually engaging presentation used by entrepreneurs to pitch their business ideas to potential investors or stakeholders."
+    },
+
+    {
+      question: "Why does LearnSphere use concise slides rather than reproducing the complete Business Plan?",
+      options: [
+        "A Pitch Deck is characterised by brevity and focus on storytelling",
+        "A Pitch Deck should contain only financial projections",
+        "A Business Plan cannot contain market analysis",
+        "A Pitch Deck is intended only for employees"
+      ],
+      answer: 0,
+      reason: "The chapter states that what distinguishes a Pitch Deck is its brevity and focus on storytelling, with each slide carefully curated to convey a specific message or key point concisely."
+    },
+
+    {
+      question: "Which skill is demonstrated by LearnSphere's use of charts and visual elements to enhance understanding and engagement?",
+      options: [
+        "Visual Design",
+        "Data Analysis",
+        "Communication",
+        "Storytelling"
+      ],
+      answer: 0,
+      reason: "Visual Design involves creating visually appealing slides using appropriate fonts, colors, images and layouts to convey information effectively."
+    },
+
+    {
+      question: "Which skill involves distilling complex ideas into clear and compelling messages?",
+      options: [
+        "Content Development",
+        "Visual Design",
+        "Data Analysis",
+        "Communication"
+      ],
+      answer: 0,
+      reason: "Content Development is the ability to distill complex ideas into clear and compelling messages highlighting key aspects of the business."
+    },
+
+    {
+      question: "What is LearnSphere ultimately trying to achieve through the Pitch Deck?",
+      options: [
+        "Capture investors' attention, spark interest and ultimately secure funding",
+        "Replace the company's operational activities",
+        "Provide detailed employee training",
+        "Eliminate the need for a Business Plan"
+      ],
+      answer: 0,
+      reason: "The goal of a Pitch Deck is to capture investors' attention, evoke excitement about the business opportunity and ultimately convince them to invest their capital."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS13",
+  difficulty: "Easy",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>TravelEase has developed a travel-booking service and the founder is preparing an Elevator Pitch. She knows that the pitch must be understandable even to a listener who is unfamiliar with the technical details of the service.</p>
+
+    <p>She therefore explains the customer problem using simple language, describes the solution directly and explains the specific benefits delivered by the service. She also speaks with confidence and highlights the aspects of the business that are most likely to create curiosity and further interest.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which of the 3Cs requires TravelEase to communicate its value proposition in a clear and understandable manner?",
+      options: [
+        "Clarity",
+        "Confidence",
+        "Compelling",
+        "Call to Action"
+      ],
+      answer: 0,
+      reason: "Clarity means communicating the value proposition in a clear and understandable manner, avoiding ambiguity and using simple language."
+    },
+
+    {
+      question: "TravelEase's confident delivery primarily demonstrates which of the 3Cs?",
+      options: [
+        "Confidence",
+        "Clarity",
+        "Compelling",
+        "Customer Acquisition Cost"
+      ],
+      answer: 0,
+      reason: "Confidence helps grab people's attention and demonstrates that the entrepreneur is genuinely excited about the business idea."
+    },
+
+    {
+      question: "TravelEase highlights aspects designed to create curiosity and further interest. Which of the 3Cs does this represent?",
+      options: [
+        "Compelling",
+        "Clarity",
+        "Confidence",
+        "Company Description"
+      ],
+      answer: 0,
+      reason: "A Compelling Elevator Pitch should leave a lasting impression and prompt further interest or action."
+    },
+
+    {
+      question: "Which combination correctly states the 3Cs of an Elevator Pitch?",
+      options: [
+        "Clarity, Confidence, Compelling",
+        "Customers, Capital, Competition",
+        "Content, Communication, Capital",
+        "Clarity, Customers, Competition"
+      ],
+      answer: 0,
+      reason: "The chapter identifies the 3Cs of Elevator Pitch as Clarity, Confidence and Compelling."
+    },
+
+    {
+      question: "Which approach would be inconsistent with the Clarity element of TravelEase's Elevator Pitch?",
+      options: [
+        "Using unnecessary technical jargon",
+        "Using simple language",
+        "Clearly explaining the problem",
+        "Clearly explaining the solution"
+      ],
+      answer: 0,
+      reason: "Clarity requires simple and understandable communication. The chapter specifically states that the pitch should avoid ambiguity and use simple language."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS14",
+  difficulty: "Easy",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>SafeHome is pitching its home-security service directly to customers. The founders first identify the security concerns faced by their target customers. They then explain how the service addresses those concerns and highlight the benefits customers can expect.</p>
+
+    <p>During the presentation, customers raise questions about reliability and pricing. The founders respond directly to these concerns. They also show testimonials from existing customers and finish by explaining how a new customer can sign up for the service.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which customer-pitching principle is demonstrated when SafeHome identifies the security concerns of its target customers?",
+      options: [
+        "Know Your Audience",
+        "Provide Social Proof",
+        "Offer a Clear Call to Action",
+        "Follow-Up and Nurture Relationships"
+      ],
+      answer: 0,
+      reason: "Knowing Your Audience requires understanding target customers' demographics, preferences, pain points and motivations."
+    },
+
+    {
+      question: "SafeHome's explanation of the benefits customers can expect primarily communicates its:",
+      options: [
+        "Value Proposition",
+        "Financial Plan",
+        "Funding Requirement",
+        "Management and Organization"
+      ],
+      answer: 0,
+      reason: "The Value Proposition communicates the value delivered to customers and the benefits or outcomes they can expect."
+    },
+
+    {
+      question: "How should SafeHome respond to questions about reliability and pricing?",
+      options: [
+        "Address Objections and Concerns",
+        "Highlight Market Opportunity",
+        "Present a Clear Business Model",
+        "Showcase Traction and Validation"
+      ],
+      answer: 0,
+      reason: "Customer pitching requires entrepreneurs to anticipate common objections or concerns and proactively address them."
+    },
+
+    {
+      question: "What do testimonials from SafeHome's existing customers provide?",
+      options: [
+        "Social Proof",
+        "Operational Plan",
+        "Market Analysis",
+        "Financial Projection"
+      ],
+      answer: 0,
+      reason: "Social Proof includes testimonials, reviews or endorsements from satisfied customers and helps build credibility and trust."
+    },
+
+    {
+      question: "Explaining how a new customer can sign up represents:",
+      options: [
+        "A Clear Call to Action",
+        "Competitive Advantage",
+        "Market Analysis",
+        "Company Description"
+      ],
+      answer: 0,
+      reason: "A Clear Call to Action outlines the next step customers should take to engage with the business."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS15",
+  difficulty: "Easy",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>SkillPro is seeking funding for expansion. The founders explain that part of the investment will be used to hire engineers and designers, improve technology infrastructure and enhance the existing product. Another portion will be used for marketing campaigns and customer acquisition. They also allocate funds for legal and regulatory compliance.</p>
+
+    <p>The founders explain these allocations to investors to show how the funds will support the startup's development and growth.</p>
+  `,
+
+  questions: [
+    {
+      question: "Funds used to hire engineers and designers and enhance the existing product represent:",
+      options: [
+        "Product Development",
+        "Market Expansion",
+        "Scaling",
+        "Talent Acquisition"
+      ],
+      answer: 0,
+      reason: "Product Development may involve research and development, hiring engineers and designers and investing in technology infrastructure and tools."
+    },
+
+    {
+      question: "Funds used for marketing campaigns and customer acquisition primarily represent:",
+      options: [
+        "Market Expansion",
+        "Product Development",
+        "Legal and Regulatory Compliance",
+        "Research and Market Validation"
+      ],
+      answer: 0,
+      reason: "Market Expansion may involve marketing and advertising campaigns, sales team expansion and investment in customer acquisition strategies."
+    },
+
+    {
+      question: "Which use of funds relates to securing patents or trademarks and obtaining necessary licences or permits?",
+      options: [
+        "Legal and Regulatory Compliance",
+        "Scaling",
+        "Talent Acquisition",
+        "Market Expansion"
+      ],
+      answer: 0,
+      reason: "Legal and Regulatory Compliance includes securing patents or trademarks, obtaining necessary licences or permits and ensuring compliance with industry regulations."
+    },
+
+    {
+      question: "Which use of funds is specifically associated with attracting and retaining skilled employees through salaries, benefits and equity incentives?",
+      options: [
+        "Talent Acquisition",
+        "Product Development",
+        "Scaling",
+        "Research and Market Validation"
+      ],
+      answer: 0,
+      reason: "Talent Acquisition involves attracting top talent and building a strong team, including offering competitive salaries, benefits and equity incentives."
+    },
+
+    {
+      question: "Why would investors generally expect SkillPro to explain the proposed use of funds?",
+      options: [
+        "The allocation of investor funds should support key initiatives based on the startup's needs and growth trajectory",
+        "Investor funds must always be used only for marketing",
+        "Investor funds cannot be used for product development",
+        "The use of funds is unrelated to the startup's growth"
+      ],
+      answer: 0,
+      reason: "The chapter states that the use of funds depends on the specific needs and priorities of the startup, its stage of development and its growth trajectory."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS16",
+  difficulty: "Medium",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>UrbanFleet is preparing to pitch its logistics platform to investors. The founders have evidence that customers are using the platform and that the business has received positive customer feedback. They also identify a large target market and explain how their platform differs from existing alternatives.</p>
+
+    <p>During the pitch, one investor asks whether the company can generate sustainable revenue. The founders explain their revenue streams, pricing strategy and go-to-market plan. Another investor asks about operational difficulties that could arise during expansion. The founders acknowledge these risks and explain how they intend to mitigate them.</p>
+
+    <p>The founders conclude by explaining the qualifications and expertise of their team and the amount of funding required.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which investor-pitching principle is most directly demonstrated by UrbanFleet's evidence of customer usage and positive customer feedback?",
+      options: [
+        "Showcase Traction and Validation",
+        "Present a Clear Business Model",
+        "Address Risks and Challenges",
+        "Have a Strong Team"
+      ],
+      answer: 0,
+      reason: "Traction and Validation can be demonstrated through tangible evidence such as customer testimonials, revenue growth, user metrics or successful pilot programmes."
+    },
+
+    {
+      question: "Why is UrbanFleet's explanation of revenue streams, pricing strategy and go-to-market plan important in the investor pitch?",
+      options: [
+        "It presents a Clear Business Model",
+        "It demonstrates Social Proof",
+        "It establishes a Company Description",
+        "It replaces the Market Opportunity"
+      ],
+      answer: 0,
+      reason: "A Clear Business Model outlines revenue streams, pricing strategy and the go-to-market plan and explains how the idea will be monetized."
+    },
+
+    {
+      question: "UrbanFleet acknowledges operational difficulties instead of ignoring them. Which investor-pitching principle is most directly demonstrated?",
+      options: [
+        "Address Risks and Challenges",
+        "Highlight Market Opportunity",
+        "Showcase Traction and Validation",
+        "Be Concise and Engaging"
+      ],
+      answer: 0,
+      reason: "The chapter requires entrepreneurs to be transparent about potential risks and challenges and explain how they plan to mitigate them."
+    },
+
+    {
+      question: "Which combination represents the three different investor-pitching elements demonstrated by UrbanFleet?",
+      options: [
+        "Traction and Validation, Clear Business Model, Risks and Challenges",
+        "Social Proof, Outstanding Experience, Customer Call to Action",
+        "Company Description, Operational Plan, Product Development",
+        "Clarity, Confidence, Compelling"
+      ],
+      answer: 0,
+      reason: "The case separately demonstrates Traction and Validation through customer evidence, a Clear Business Model through revenue and pricing information, and addressing Risks and Challenges through the expansion discussion."
+    },
+
+    {
+      question: "Why is the team's qualification and expertise relevant at the end of UrbanFleet's investor pitch?",
+      options: [
+        "A Strong Team demonstrates that the people involved are well-equipped to execute the business plan",
+        "Team qualifications determine the total addressable market",
+        "Team qualifications replace the need for a business model",
+        "A Strong Team is relevant only when pitching to customers"
+      ],
+      answer: 0,
+      reason: "The investor-pitching rules state that entrepreneurs should highlight the qualifications, experience and expertise of team members and demonstrate why the team is well-equipped to execute the business plan."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS17",
+  difficulty: "Medium",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>FinServe is preparing a Pitch Deck for investors. Its first draft contains a very attractive presentation, but several statements about future growth are not supported by market information. The financial projections also assume unusually high growth without sufficient evidence.</p>
+
+    <p>The founders revise the Pitch Deck by adding market research and customer feedback. They explain the specific value their solution provides, present more realistic financial projections and openly discuss the competitive landscape and potential challenges. They also provide information showing what the team has already achieved.</p>
+
+    <p>The revised Pitch Deck is intended to communicate the underlying business opportunity rather than relying on attractive presentation and unsupported claims.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which change most directly addresses the problem of unsupported claims in FinServe's original Pitch Deck?",
+      options: [
+        "Adding market research and customer feedback",
+        "Adding more visual effects",
+        "Increasing the number of slides",
+        "Using more industry terminology"
+      ],
+      answer: 0,
+      reason: "The chapter identifies Evidence vs. Claims as a key distinction. Substance is backed by tangible evidence such as market research and customer feedback."
+    },
+
+    {
+      question: "Why should FinServe replace unusually high unsupported growth projections with more realistic financial projections?",
+      options: [
+        "Substance provides realistic and data-driven financial projections based on market analysis and business fundamentals",
+        "Financial projections should never be included in a Pitch Deck",
+        "Investors prefer projections that are unrelated to market analysis",
+        "Realistic projections are relevant only to customers"
+      ],
+      answer: 0,
+      reason: "The chapter states that Substance provides realistic and data-driven financial projections, whereas Hype tends to present overly optimistic projections or inflated growth estimates without a solid foundation."
+    },
+
+    {
+      question: "FinServe openly discusses the competitive landscape and potential challenges. Which characteristic of Substance does this most directly demonstrate?",
+      options: [
+        "Transparent Communication",
+        "Clear Value Proposition",
+        "Track Record and Execution",
+        "Evidence vs. Claims"
+      ],
+      answer: 0,
+      reason: "Transparent Communication involves openly communicating about the business model, team capabilities, competitive landscape and potential risks or challenges."
+    },
+
+    {
+      question: "Information showing what FinServe's team has already achieved is particularly relevant to which characteristic?",
+      options: [
+        "Track Record and Execution",
+        "Clear Value Proposition",
+        "Realistic Projections",
+        "Transparent Communication"
+      ],
+      answer: 0,
+      reason: "Track Record and Execution are associated with a track record of achievement, proven expertise and demonstrated ability to execute a business plan."
+    },
+
+    {
+      question: "Which statement best explains the overall change FinServe has made?",
+      options: [
+        "FinServe has moved its Pitch Deck toward Substance by supporting claims with evidence, presenting realistic projections and communicating transparently",
+        "FinServe has replaced its Pitch Deck with an Operational Plan",
+        "FinServe has made the Pitch Deck more persuasive by removing evidence",
+        "FinServe has shifted from a Clear Value Proposition to unsupported claims"
+      ],
+      answer: 0,
+      reason: "The chapter explains that investors should differentiate Hype from Substance by looking for evidence-based insights, a clear value proposition, realistic projections, transparent communication and a track record of execution."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS18",
+  difficulty: "Medium",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>CareConnect is preparing for two different presentations. In the first, the founders meet investors who want to understand whether the business has a meaningful market opportunity and how the company will generate revenue. The founders therefore explain the market opportunity, traction and validation, competitive advantage, business model, risks, team and funding requirement.</p>
+
+    <p>In the second presentation, the founders meet potential customers. Instead of concentrating on funding requirements, they explain the value proposition, use compelling storytelling, highlight differentiation, address customer concerns and provide testimonials. They then explain the next step customers can take.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which element is specifically included in CareConnect's investor pitch but not identified as a customer-pitching step in the case?",
+      options: [
+        "Funding Requirement",
+        "Value Proposition",
+        "Social Proof",
+        "Address Objections and Concerns"
+      ],
+      answer: 0,
+      reason: "The investor-pitching rules include explaining the funding requirement, while the customer-pitching rules listed in the case focus on value, storytelling, differentiation, objections, social proof and action."
+    },
+
+    {
+      question: "Why does CareConnect use testimonials in the customer presentation?",
+      options: [
+        "To provide Social Proof and build credibility and trust",
+        "To demonstrate Burn Rate",
+        "To calculate TAM",
+        "To explain the funding requirement"
+      ],
+      answer: 0,
+      reason: "Social Proof through testimonials, reviews or endorsements from satisfied customers helps build credibility and trust."
+    },
+
+    {
+      question: "Which statement best distinguishes the purpose of the two presentations?",
+      options: [
+        "The investor presentation focuses on the business opportunity and investment considerations, while the customer presentation focuses on customer value and the buying decision",
+        "Both presentations must focus primarily on funding requirements",
+        "The investor presentation should avoid discussing risks, while the customer presentation should avoid discussing value",
+        "The customer presentation should explain only the company's financial projections"
+      ],
+      answer: 0,
+      reason: "Investor pitching focuses on factors such as market opportunity, traction, competitive advantage, business model, risks, team and funding. Customer pitching focuses on value, differentiation, objections, social proof, action and relationships."
+    },
+
+    {
+      question: "If a potential customer raises a concern about whether CareConnect's service is reliable, which customer-pitching approach should be applied?",
+      options: [
+        "Address Objections and Concerns",
+        "Highlight Market Opportunity",
+        "Present a Clear Business Model",
+        "Have a Strong Team"
+      ],
+      answer: 0,
+      reason: "The customer-pitching rules specifically require entrepreneurs to anticipate common objections or concerns and proactively address them."
+    },
+
+    {
+      question: "CareConnect explains the next step customers can take after hearing the pitch. Which principle is being applied?",
+      options: [
+        "Offer a Clear Call to Action",
+        "Showcase Traction and Validation",
+        "Demonstrate Competitive Advantage",
+        "Address Risks and Challenges"
+      ],
+      answer: 0,
+      reason: "A Clear Call to Action outlines the next step customers should take, such as making a purchase, signing up for a free trial or contacting the business."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS19",
+  difficulty: "Hard",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>InnovateX has prepared a Pitch Deck containing a large market opportunity, a proposed solution and ambitious financial projections. The founders are confident that the presentation looks impressive. However, before the investor meeting, they review whether the Pitch Deck answers the key questions an investor should consider.</p>
+
+    <p>They discover that the presentation clearly identifies the problem and solution but does not adequately explain how large the problem is, how the business will make money, what the marketing strategy will be, or how much funding is required. The team information is also incomplete. The founders therefore revise the Pitch Deck so that the business model, marketing strategy, team, financial position and funding requirement are clearly addressed.</p>
+
+    <p>They also review the financial projections to ensure that they are realistic and supported by the business fundamentals rather than simply being ambitious figures designed to create excitement.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which set of questions does InnovateX need to address to complete the investor-focused areas identified in the case?",
+      options: [
+        "How would the business make money, what is the marketing strategy, who is in the team and how much is the ask from investors?",
+        "What is the office location, what are employee working hours, what is the packaging design and what colour is the logo?",
+        "What are the founders' personal preferences, what is the company's slogan, what is the office size and what is the presentation font?",
+        "What is the product colour, what is the employee dress code, what is the meeting duration and what is the office layout?"
+      ],
+      answer: 0,
+      reason: "The chapter's questions every Pitch Deck needs to answer include the business model, marketing strategy, team, current financials and future realistic projection, and the funding ask from investors."
+    },
+
+    {
+      question: "InnovateX already explains the problem and solution but fails to explain how the business will make money. Which key Pitch Deck question remains unanswered?",
+      options: [
+        "What is the business model?",
+        "Who is there in the team?",
+        "What is the problem being solved?",
+        "How are you solving this problem?"
+      ],
+      answer: 0,
+      reason: "The chapter specifically asks: 'What is the business model (how would you make money from the solution)?'"
+    },
+
+    {
+      question: "Why would merely making InnovateX's financial projections more ambitious fail to address the chapter's concern about Substance?",
+      options: [
+        "Substance requires realistic and data-driven financial projections based on market analysis and business fundamentals",
+        "Substance requires financial projections to be as high as possible",
+        "Substance requires financial information to be removed from the Pitch Deck",
+        "Substance is determined only by the visual design of the Pitch Deck"
+      ],
+      answer: 0,
+      reason: "The chapter states that Substance provides realistic and data-driven financial projections based on thorough market analysis and business fundamentals, while Hype tends to present overly optimistic projections or inflated growth estimates without a solid foundation."
+    },
+
+    {
+      question: "Which combination most directly addresses the difference between the Pitch Deck's communication gap and its financial-projection problem?",
+      options: [
+        "Answer the missing key investor questions and ensure financial projections are realistic and data-driven",
+        "Add more visuals and increase the projected growth rate",
+        "Remove the business model and emphasise only the problem",
+        "Reduce the funding ask without examining the financial projections"
+      ],
+      answer: 0,
+      reason: "The case contains two distinct issues: unanswered key Pitch Deck questions and potentially unsupported financial projections. The chapter requires both clear communication of the business opportunity and realistic, data-driven projections."
+    },
+
+    {
+      question: "Which statement best explains why the funding requirement must be clearly addressed in InnovateX's Pitch Deck?",
+      options: [
+        "The Pitch Deck should communicate how much is being asked from investors as part of the business's funding requirement",
+        "The funding requirement is used only to explain customer benefits",
+        "The funding requirement replaces the business model",
+        "The funding requirement determines the company's competitive advantage"
+      ],
+      answer: 0,
+      reason: "One of the key questions every Pitch Deck needs to answer is: 'How much is the Ask from Investors (Funding requirement)?'"
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch4_CS20",
+  difficulty: "Hard",
+  chapter: "Chapter4",
+
+  caseText: `
+    <p>NextGen is presenting a new technology-based service to a potential investor. The founder begins by introducing her name, role and company. She then uses a quick hook to attract attention and explains the vision of the business rather than limiting the presentation to what the company currently has.</p>
+
+    <p>As the presentation progresses, she explains the problem, the opportunity and the proposed solution through a connected story. She supports important points with real validators, avoids industry acronyms and terminology, and maintains eye contact with the audience rather than reading from the slides. She speaks at a measured pace and uses a quick demonstration rather than showing a video.</p>
+
+    <p>After the presentation, the founder follows up with the investor and provides additional information requested during the discussion. She understands that the purpose of the interaction is not merely to deliver information but also to generate interest and build a relationship.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which combination most accurately reflects the effective-pitching techniques demonstrated by the founder?",
+      options: [
+        "Quick Hook, pitch the vision, tell a story, use real validators, avoid industry terminology and connect with the audience",
+        "Read slides, use industry acronyms, speak quickly, show a lengthy video and focus only on current operations",
+        "Avoid validators, limit the presentation to technical terminology and maintain attention on the projector",
+        "Begin with detailed financial statements, avoid storytelling and eliminate audience interaction"
+      ],
+      answer: 0,
+      reason: "The chapter's effective-pitching guidance includes the Quick Hook, pitching the vision, telling a story, using real validators, avoiding industry acronyms or terminology and connecting with the audience rather than reading slides."
+    },
+
+    {
+      question: "Why does the founder pitch the vision rather than only what the company currently has?",
+      options: [
+        "The effective-pitching guidance specifically states to pitch the vision, not just what the entrepreneur currently has or is",
+        "A Pitch Deck should contain only future financial projections",
+        "The current business should never be discussed",
+        "Vision replaces the need to explain the problem and solution"
+      ],
+      answer: 0,
+      reason: "The chapter's 'How to Pitch Effectively' guidance specifically states: 'Pitch your vision, not just what you currently have or are.'"
+    },
+
+    {
+      question: "The founder uses real validators to prove important points. Which broader principle of the chapter does this most closely support?",
+      options: [
+        "Evidence-based communication and differentiation between Substance and Hype",
+        "Eliminating the need for a Clear Value Proposition",
+        "Replacing the Pitch Deck with a Business Plan",
+        "Avoiding all market information"
+      ],
+      answer: 0,
+      reason: "The chapter's discussion of Substance emphasises evidence-based insights, while its effective-pitching guidance recommends using real validators to prove points."
+    },
+
+    {
+      question: "Why is the founder's decision to follow up after the presentation consistent with the chapter's pitching principles?",
+      options: [
+        "Following up helps address questions or concerns, provide additional information and build relationships",
+        "Follow-up is required only when pitching to customers",
+        "Follow-up eliminates the need for a clear business model",
+        "Follow-up is intended to replace the original Pitch Deck"
+      ],
+      answer: 0,
+      reason: "For investors, the chapter states that entrepreneurs should follow up after the pitch to address questions or concerns and provide additional information. It also emphasises building relationships with investors over time."
+    },
+
+    {
+      question: "Which statement best captures the deeper purpose of the founder's approach to pitching?",
+      options: [
+        "The presentation combines clear communication, evidence, effective delivery and relationship-building to generate interest in the business idea",
+        "The presentation is intended primarily to display presentation software skills",
+        "The presentation should focus entirely on making the business appear impressive regardless of evidence",
+        "The presentation should avoid adapting communication to the audience"
+      ],
+      answer: 0,
+      reason: "The chapter presents pitching as a means of communicating the business idea effectively, using evidence and persuasive communication, engaging the audience and building relationships with potential investors or stakeholders."
+    }
+  ]
+},
+{
+difficulty: "Easy",
+case_id: "strt_ch4_01",
+case_chapter: "chapter4",
+question: "An entrepreneur is preparing a document that explains the business aims, target customers, expected money requirements and the steps needed to achieve the business objectives. Which document is being prepared?",
+options: [
+"Business Plan",
+"Pitch Deck",
+"Elevator Pitch",
+"Call to Action"
+],
+answer: 0,
+reason: "A Business Plan acts as a map or blueprint for entrepreneurs, explaining where the business wants to go and how it will get there, including its aims, customers, expected money and required actions."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_02",
+case_chapter: "chapter4",
+question: "A startup prepares a succinct and visually engaging presentation containing its problem, solution, target market, competitive landscape, business model, financial projections and team. What has the startup prepared?",
+options: [
+"Business Plan",
+"Pitch Deck",
+"Operational Plan",
+"Elevator Pitch"
+],
+answer: 1,
+reason: "A Pitch Deck is a succinct and visually engaging presentation used to pitch a business idea to potential investors and stakeholders. It typically covers the problem, solution, target market, competitive landscape, business model, financial projections and team."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_03",
+case_chapter: "chapter4",
+question: "While drafting its Business Plan, a startup prepares a section containing its mission, vision, values and core competencies. Which component of the Business Plan does this represent?",
+options: [
+"Market Analysis",
+"Financial Plan",
+"Company Description",
+"Operational Plan"
+],
+answer: 2,
+reason: "The Company Description includes the mission, vision, values and core competencies of the business."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_04",
+case_chapter: "chapter4",
+question: "A startup conducts market research, studies the industry landscape, identifies target market demographics and evaluates competitors. Which Business Plan component covers these activities?",
+options: [
+"Management and Organization",
+"Products or Services",
+"Marketing and Sales Strategy",
+"Market Analysis"
+],
+answer: 3,
+reason: "Market Analysis includes market research, the industry landscape, target market demographics, market trends and competitive analysis."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_05",
+case_chapter: "chapter4",
+question: "A startup documents its offerings, features, benefits, pricing strategy and competitive positioning in its Business Plan. Which component is this?",
+options: [
+"Products or Services",
+"Executive Summary",
+"Financial Plan",
+"Management and Organization"
+],
+answer: 0,
+reason: "The Products or Services section describes the offerings, features, benefits, pricing strategy and competitive positioning."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_06",
+case_chapter: "chapter4",
+question: "A startup prepares a section explaining how it will acquire and retain customers through digital channels, user-generated content and referral programs. Which component is being developed?",
+options: [
+"Operational Plan",
+"Marketing and Sales Strategy",
+"Company Description",
+"Financial Plan"
+],
+answer: 1,
+reason: "The Marketing and Sales Strategy focuses on customer acquisition and retention and may include digital channels, user-generated content and referral programs."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_07",
+case_chapter: "chapter4",
+question: "A business plan describes day-to-day operations, production processes, supply chain management and resource allocation. Which component contains these details?",
+options: [
+"Market Analysis",
+"Products or Services",
+"Operational Plan",
+"Executive Summary"
+],
+answer: 2,
+reason: "The Operational Plan covers day-to-day operations, production processes, supply chain management and resource allocation."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_08",
+case_chapter: "chapter4",
+question: "A startup presents revenue forecasts, expense estimates, cash flow projections and funding requirements to potential investors. Which Business Plan component is being presented?",
+options: [
+"Management and Organization",
+"Marketing and Sales Strategy",
+"Company Description",
+"Financial Plan"
+],
+answer: 3,
+reason: "The Financial Plan includes revenue forecasts, expense estimates, cash flow projections and funding requirements. Investors may use this information to evaluate potential ROI."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_09",
+case_chapter: "chapter4",
+question: "A founder prepares the opening section of the Business Plan as a snapshot of the entire business, covering the business concept, market opportunity, competitive advantage, financial projections and funding requirements. Which component is this?",
+options: [
+"Executive Summary",
+"Company Description",
+"Market Analysis",
+"Financial Plan"
+],
+answer: 0,
+reason: "The Executive Summary is a snapshot of the entire Business Plan and summarizes the business concept, market opportunity, competitive advantage, financial projections and funding requirements."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_10",
+case_chapter: "chapter4",
+question: "A startup is creating a Pitch Deck and wants every slide to communicate one specific message while using images, charts and graphs to improve understanding. Which approach is consistent with the chapter?",
+options: [
+"Use detailed paragraphs on every slide",
+"Use one key point per slide with appropriate visuals",
+"Avoid visuals so that investors focus only on text",
+"Include every available piece of business information"
+],
+answer: 1,
+reason: "The chapter recommends that each slide communicate a specific message or key point and that visuals such as images, charts and graphs enhance understanding and engagement."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_11",
+case_chapter: "chapter4",
+question: "An investor asks a startup how much money it requires from investors. Which Pitch Deck question is directly being addressed?",
+options: [
+"What is the Marketing Strategy?",
+"Who is there in the Team?",
+"How much is the Ask from Investors?",
+"How are you solving this problem?"
+],
+answer: 2,
+reason: "One of the essential questions a Pitch Deck needs to answer is: 'How much is the Ask from Investors?', which addresses the funding requirement."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_12",
+case_chapter: "chapter4",
+question: "A startup calculates the total market demand expressed as the revenue potential if the company could capture 100% of the market. Which term describes this measure?",
+options: [
+"SAM",
+"LTV",
+"CAC",
+"TAM"
+],
+answer: 3,
+reason: "TAM, or Total Addressable Market, represents the total market demand and is measured as the revenue potential if the company captured 100% of the market."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_13",
+case_chapter: "chapter4",
+question: "A startup wants to determine the percentage of customers who stop using its product during a particular period. Which metric should it monitor?",
+options: [
+"Churn Rate",
+"Burn Rate",
+"Runway",
+"CAC"
+],
+answer: 0,
+reason: "Churn Rate is the percentage of customers who stop using a product over a given period and is used to understand customer retention and the quality of the offering."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_14",
+case_chapter: "chapter4",
+question: "A founder has only a short opportunity to communicate the essence of a business idea to a potential investor during a brief meeting. Which approach is most appropriate?",
+options: [
+"Detailed Financial Plan",
+"Elevator Pitch",
+"Operational Plan",
+"Market Analysis"
+],
+answer: 1,
+reason: "An Elevator Pitch is a concise and compelling presentation that conveys the essence of a business idea, product or service in a short period, typically 30 seconds to 2 minutes."
+},
+
+{
+difficulty: "Easy",
+case_id: "strt_ch4_15",
+case_chapter: "chapter4",
+question: "An entrepreneur structures an Elevator Pitch around Clarity, Confidence and Compelling communication. What do these three elements represent?",
+options: [
+"The 3Cs of an Elevator Pitch",
+"The three stages of a Business Plan",
+"The three funding requirements",
+"The three types of market analysis"
+],
+answer: 0,
+reason: "The chapter identifies Clarity, Confidence and Compelling as the 3Cs of an Elevator Pitch."
+
+},
+
+{
+difficulty: "Medium",
+case_id: "strt_ch4_16",
+case_chapter: "chapter4",
+question: "A startup estimates that its customers can generate revenue over their entire future relationship with the business. Management wants to use this estimate when assessing the long-term revenue potential of its customer base. Which metric is most relevant?",
+options: [
+"Customer Acquisition Cost (CAC)",
+"Churn Rate",
+"Customer Lifetime Value (LTV)",
+"Burn Rate"
+],
+answer: 2,
+reason: "Customer Lifetime Value (LTV) is the predicted net profit attributed to the entire future relationship with a customer and indicates long-term revenue potential."
+},
+
+{
+difficulty: "Medium",
+case_id: "strt_ch4_17",
+case_chapter: "chapter4",
+question: "A startup has sufficient funding for a limited period and calculates how many months it can continue operating before its available funds are exhausted. Which financial concept is being measured?",
+options: [
+"Burn Rate",
+"Runway",
+"TAM",
+"LTV"
+],
+answer: 1,
+reason: "Runway is the amount of time a startup can operate before running out of funds, typically expressed in months. Burn Rate, in contrast, measures how quickly available funds are being spent."
+},
+
+{
+difficulty: "Medium",
+case_id: "strt_ch4_18",
+case_chapter: "chapter4",
+question: "During an investor presentation, a founder makes ambitious claims about rapid growth but provides no market research, customer feedback or traction metrics to support them. From an investor's perspective, which characteristic does this most closely represent?",
+options: [
+"Transparent Communication",
+"Track Record and Execution",
+"Evidence",
+"Hype"
+],
+answer: 3,
+reason: "The chapter distinguishes hype from substance by noting that hype involves bold claims, buzzwords or grand promises without supporting evidence such as market research, customer feedback or traction metrics."
+},
+
+{
+difficulty: "Medium",
+case_id: "strt_ch4_19",
+case_chapter: "chapter4",
+question: "An entrepreneur begins an Elevator Pitch by explaining a specific problem faced by target customers, then explains how the proposed solution directly addresses that problem and finally states the specific benefits that differentiate the offering. Which sequence of Elevator Pitch elements is being used?",
+options: [
+"Problem Statement → Solution → Value Proposition",
+"Call to Action → Traction → Problem Statement",
+"Value Proposition → Call to Action → Solution",
+"Traction → Market Analysis → Operational Plan"
+],
+answer: 0,
+reason: "The chapter identifies Problem Statement, Solution and Value Proposition as core elements of an Elevator Pitch. The Problem Statement explains the customer's problem, the Solution explains how it addresses the problem, and the Value Proposition explains the specific benefits and differentiation."
+},
+
+{
+difficulty: "Medium",
+case_id: "strt_ch4_20",
+case_chapter: "chapter4",
+question: "An entrepreneur pitching to investors studies their investment criteria, interests and past investments before presenting the startup. The entrepreneur then aligns the presentation with the investors' investment thesis. Which rule of pitching to investors is being followed?",
+options: [
+"Showcase Traction and Validation",
+"Know Your Audience",
+"Address Risks and Challenges",
+"Follow-Up and Build Relationships"
+],
+answer: 1,
+reason: "The first rule for pitching to investors is Know Your Audience. Entrepreneurs should research investors, including their interests, investment criteria and past investments, and align the pitch with their investment thesis."
+},
+
+{
+difficulty: "Medium",
+case_id: "strt_ch4_21",
+case_chapter: "chapter4",
+question: "A startup is pitching to customers and explains how its product improves the customer's outcome instead of merely listing technical features. Which customer-pitching principle does this illustrate?",
+options: [
+"Use Compelling Storytelling",
+"Provide Social Proof",
+"Clearly Communicate Value Proposition",
+"Follow-Up and Nurture Relationships"
+],
+answer: 2,
+reason: "When pitching to customers, the startup should clearly communicate the Value Proposition by focusing on the value, benefits and outcomes rather than merely describing features."
+},
+
+{
+difficulty: "Medium",
+case_id: "strt_ch4_22",
+case_chapter: "chapter4",
+question: "An investor asks a startup about possible regulatory changes and operational difficulties. Instead of avoiding the issue, the founder explains the risks and describes how the startup plans to mitigate them. Which investor-pitching rule is being demonstrated?",
+options: [
+"Highlight Market Opportunity",
+"Present a Clear Business Model",
+"Demonstrate Competitive Advantage",
+"Address Risks and Challenges"
+],
+answer: 3,
+reason: "The chapter advises entrepreneurs pitching to investors to Address Risks and Challenges transparently and explain appropriate mitigation measures."
+},
+
+{
+difficulty: "Medium",
+case_id: "strt_ch4_23",
+case_chapter: "chapter4",
+question: "A startup uses customer testimonials, reviews and endorsements during its presentation to strengthen customer confidence in its offering. Which customer-pitching principle is being applied?",
+options: [
+"Provide Social Proof",
+"Listen and Adapt",
+"Highlight Differentiation",
+"Offer Clear Call to Action"
+],
+answer: 0,
+reason: "Providing Social Proof involves using testimonials, reviews and endorsements to strengthen confidence in the offering."
+},
+
+{
+difficulty: "Medium",
+case_id: "strt_ch4_24",
+case_chapter: "chapter4",
+question: "A founder wants the investor presentation to demonstrate that the startup has actual market validation. The founder includes customer testimonials, revenue growth, user metrics and results from pilot programmes. Which rule is most directly being addressed?",
+options: [
+"Know Your Audience",
+"Showcase Traction and Validation",
+"Be Concise and Engaging",
+"Have a Strong Team"
+],
+answer: 1,
+reason: "Showcase Traction and Validation involves presenting evidence such as customer testimonials, revenue growth, user metrics and pilot programmes to demonstrate market validation and demand."
+},
+
+{
+difficulty: "Medium",
+case_id: "strt_ch4_25",
+case_chapter: "chapter4",
+question: "An entrepreneur has completed extensive preparation but delivers the Elevator Pitch with unclear language, excessive jargon and an ambiguous explanation of the customer problem. Which of the 3Cs is most directly lacking?",
+options: [
+"Confidence",
+"Compelling",
+"Clarity",
+"Traction"
+],
+answer: 2,
+reason: "Clarity requires a clear and understandable Value Proposition without ambiguity. The pitch should use simple language and clearly communicate the problem, solution and unique benefits or advantages."
+},
+
+{
+difficulty: "Hard",
+case_id: "strt_ch4_26",
+case_chapter: "chapter4",
+question: "A startup reports strong customer interest and presents attractive growth projections. However, the founder avoids discussing weaknesses in the business model, team capabilities and competitive landscape. The investor therefore has limited information about the startup's actual risks. Which distinction between Hype and Substance is most directly illustrated?",
+options: [
+"Evidence vs Claims",
+"Clear Value Proposition",
+"Transparent Communication",
+"Track Record and Execution"
+],
+answer: 2,
+reason: "Substance requires transparent communication about the business model, team capabilities, competitive landscape and risks or challenges. Hype may be vague or evasive and gloss over important details."
+},
+
+{
+difficulty: "Hard",
+case_id: "strt_ch4_27",
+case_chapter: "chapter4",
+question: "A startup claims that its market is extremely large and therefore expects rapid revenue growth. During the pitch, the founders provide data on the total market demand but fail to distinguish the portion of the market that the company can realistically target and serve. Which distinction should the founders clarify?",
+options: [
+"LTV and CAC",
+"TAM and SAM",
+"Runway and Burn Rate",
+"Churn Rate and LTV"
+],
+answer: 1,
+reason: "TAM represents the total market demand, while SAM is the subset of TAM that the company can realistically target and serve. Distinguishing the two helps investors understand the overall market opportunity and the company's realistic target segment."
+},
+
+{
+difficulty: "Hard",
+case_id: "strt_ch4_28",
+case_chapter: "chapter4",
+question: "During a customer pitch, the entrepreneur explains the product's unique features but the customer raises concerns about possible drawbacks. The entrepreneur acknowledges the concerns, explains how the risks can be mitigated and demonstrates why the value outweighs the drawbacks. Which principle is being applied?",
+options: [
+"Highlight Differentiation",
+"Address Objections and Concerns",
+"Provide Social Proof",
+"Deliver an Outstanding Experience"
+],
+answer: 1,
+reason: "Address Objections and Concerns requires anticipating and proactively addressing customer concerns, mitigating risks or obstacles and demonstrating that the value of the offering outweighs its drawbacks."
+},
+
+{
+difficulty: "Hard",
+case_id: "strt_ch4_29",
+case_chapter: "chapter4",
+question: "An investor is evaluating a startup whose presentation contains ambitious plans, but the founders have limited tangible results. Another startup presents evidence of expertise, execution capability and sustainable growth supported by its track record. Which Hype-versus-Substance criterion most directly helps distinguish the two situations?",
+options: [
+"Track Record and Execution",
+"Clear Value Proposition",
+"Transparent Communication",
+"Evidence vs Claims"
+],
+answer: 0,
+reason: "Track Record and Execution is a Substance indicator because it reflects the team's track record, expertise and ability to execute. Hype may instead involve ambitious plans without tangible results or sustainable growth."
+},
+
+{
+difficulty: "Hard",
+case_id: "strt_ch4_30",
+case_chapter: "chapter4",
+question: "A founder has only a few minutes with a potential investor. The founder first identifies the customer's significant problem, presents a solution, establishes the value proposition, cites measurable traction and ends by requesting a specific follow-up meeting. Which combination best represents the structure being applied?",
+options: [
+"Market Analysis → Operational Plan → Financial Plan → Management and Organization",
+"Problem Statement → Solution → Value Proposition → Traction or Proof → Call to Action",
+"TAM → SAM → LTV → CAC → Churn Rate",
+"Company Description → Products or Services → Operational Plan → Financial Plan"
+],
+answer: 1,
+reason: "The Elevator Pitch includes the Problem Statement, Solution, Value Proposition, Traction or Proof and Call to Action. Traction or Proof provides evidence such as testimonials, case studies or data points, while the Call to Action specifies the next step."
 }
+
 
 
 
