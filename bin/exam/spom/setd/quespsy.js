@@ -5,7 +5,7 @@ const caseStudies = [
   {
     "case_id": "PSY_CH1_EASY_CS1",
     "difficulty": "Easy",
-    "chapter": ["Chapter 1: Introduction to Psychology"],
+    "chapter": "chapter1",
     "caseText": "<p><strong>Riya, a trainee accountant,</strong> notices that two clients react differently to the same market decline. One feels anxious and sells investments immediately; the other calmly reviews the facts. Riya wants to understand both their thoughts and feelings as well as their visible actions.</p><p>Her mentor explains that psychology helps professionals understand the people behind financial decisions.</p>",
     "questions": [
       {
@@ -43,7 +43,7 @@ const caseStudies = [
   {
     "case_id": "PSY_CH1_EASY_CS2",
     "difficulty": "Easy",
-    "chapter": ["Chapter 1: Introduction to Psychology"],
+    "chapter": "chapter1",
     "caseText": "<p><strong>Arun is studying investment choices.</strong> He predicts that people with higher risk tolerance will be more likely to choose volatile assets. He then plans to collect responses from investors, examine the results and draw a conclusion only after reviewing the evidence.</p>",
     "questions": [
       {
@@ -81,7 +81,7 @@ const caseStudies = [
   {
     "case_id": "PSY_CH1_EASY_CS3",
     "difficulty": "Easy",
-    "chapter": ["Chapter 1: Introduction to Psychology"],
+    "chapter": "chapter1",
     "caseText": "<p><strong>A finance firm wants to learn about clients' saving habits.</strong> It sends the same electronic questions to 1,000 clients about their goals, risk preferences and investment choices. The firm knows that some clients may answer in a socially desirable way rather than report their actual behaviour.</p>",
     "questions": [
       {
@@ -119,7 +119,7 @@ const caseStudies = [
   {
     "case_id": "PSY_CH1_EASY_CS4",
     "difficulty": "Easy",
-    "chapter": ["Chapter 1: Introduction to Psychology"],
+    "chapter": "chapter1",
     "caseText": "<p><strong>Meera manages a busy accounting team.</strong> She wants to raise employee motivation, improve job satisfaction and build a positive organisational culture. At the same time, a colleague who trains new interns is looking for better ways to improve memory and learning during classes.</p>",
     "questions": [
       {
@@ -157,7 +157,7 @@ const caseStudies = [
   {
     "case_id": "PSY_CH1_EASY_CS5",
     "difficulty": "Easy",
-    "chapter": ["Chapter 1: Introduction to Psychology"],
+    "chapter": "chapter1",
     "caseText": "<p><strong>Vikram believes that psychology is useful only in hospitals and counselling rooms.</strong> His manager asks him to prepare a client presentation on a complex financial report. She advises him to listen actively, identify the client's communication style and explain the numbers in a clear way.</p>",
     "questions": [
       {
@@ -195,7 +195,7 @@ const caseStudies = [
   {
     "case_id": "PSY_CH1_MEDIUM_CS1",
     "difficulty": "Medium",
-    "chapter": ["Chapter 1: Introduction to Psychology"],
+    "chapter": "chapter1",
     "caseText": "<p><strong>During an investment review,</strong> client Neha keeps referring to a return forecast she saw months ago, even though current data has changed. She also reads only articles that support her belief that the stock will recover. When the stock falls, she wants to sell immediately because avoiding a loss feels more important than a possible future gain.</p><p>Her accountant explains the relevant behavioural economics concepts before discussing a balanced plan.</p>",
     "questions": [
       {
@@ -233,7 +233,7 @@ const caseStudies = [
   {
     "case_id": "PSY_CH1_MEDIUM_CS2",
     "difficulty": "Medium",
-    "chapter": ["Chapter 1: Introduction to Psychology"],
+    "chapter": "chapter1",
     "caseText": "<p><strong>Audit team members are deciding whether to accept a risky client engagement.</strong> Several junior members privately have doubts, but during the meeting they agree with the confident senior member. The team leader notices that the discussion has become one-sided and invites each member to state evidence and concerns before a final decision.</p>",
     "questions": [
       {
@@ -271,7 +271,7 @@ const caseStudies = [
   {
     "case_id": "PSY_CH1_MEDIUM_CS3",
     "difficulty": "Medium",
-    "chapter": ["Chapter 1: Introduction to Psychology"],
+    "chapter": "chapter1",
     "caseText": "<p><strong>Priya is preparing a financial report.</strong> A senior colleague asks her to omit an unfavourable disclosure until the next quarter, saying that the client relationship is too important to risk. Priya feels pressure to comply but remembers that situational pressures and cognitive factors can affect ethical choices. She checks the applicable standards and seeks an appropriate professional resolution.</p>",
     "questions": [
       {
@@ -309,7 +309,7 @@ const caseStudies = [
   {
     "case_id": "PSY_CH1_MEDIUM_CS4",
     "difficulty": "Medium",
-    "chapter": ["Chapter 1: Introduction to Psychology"],
+    "chapter": "chapter1",
     "caseText": "<p><strong>Accountant Farah serves two clients.</strong> Aman is a young professional saving for future goals, while Mr. Bose is approaching retirement and is worried about preserving savings. Farah also notices that her team is exhausted after a peak reporting period. She adjusts her recommendations to each client's circumstances and introduces stress-management and work-life balance practices for the team.</p>",
     "questions": [
       {
@@ -347,7 +347,7 @@ const caseStudies = [
   {
     "case_id": "PSY_CH1_MEDIUM_CS5",
     "difficulty": "Medium",
-    "chapter": ["Chapter 1: Introduction to Psychology"],
+    "chapter": "chapter1",
     "caseText": "<p><strong>A researcher investigates how financial news affects investment decisions.</strong> She assigns participants to view either positive or negative financial news while keeping other conditions similar. She records their choices, analyses whether the differences are meaningful and carefully notes that a controlled setting may not fully reflect real-world investing.</p>",
     "questions": [
       {
@@ -385,7 +385,7 @@ const caseStudies = [
   {
     case_id: "PSY_CH1_EASY_CS1",
     difficulty: "Easy",
-    chapter: ["Chapter 1: Introduction to Psychology"],
+    chapter: "chapter1",
 
     caseText: `
       <p><strong>Riya is a trainee accountant.</strong> She meets two clients after a sudden fall in the stock market.</p>
@@ -457,7 +457,7 @@ const caseStudies = [
   {
     case_id: "PSY_CH1_EASY_CS2",
     difficulty: "Easy",
-    chapter: ["Chapter 1: Introduction to Psychology"],
+    chapter: "chapter1",
 
     caseText: `
       <p><strong>Arun is conducting a study on investment decisions.</strong> He believes that people with high risk tolerance may prefer volatile investments.</p>
@@ -529,7 +529,7 @@ const caseStudies = [
   {
     case_id: "PSY_CH1_EASY_CS3",
     difficulty: "Easy",
-    chapter: ["Chapter 1: Introduction to Psychology"],
+    chapter: "chapter1",
 
     caseText: `
       <p><strong>A finance company wants to understand client saving habits.</strong> It sends an online form to 1,000 clients.</p>
@@ -601,7 +601,7 @@ const caseStudies = [
   {
     case_id: "PSY_CH1_EASY_CS4",
     difficulty: "Easy",
-    chapter: ["Chapter 1: Introduction to Psychology"],
+    chapter: "chapter1",
 
     caseText: `
       <p><strong>Meera manages an accounting firm.</strong> She notices that employees are less motivated during the busy audit season.</p>
@@ -673,7 +673,7 @@ const caseStudies = [
   {
     case_id: "PSY_CH1_EASY_CS5",
     difficulty: "Easy",
-    chapter: ["Chapter 1: Introduction to Psychology"],
+    chapter: "chapter1",
 
     caseText: `
       <p><strong>Vikram believes psychology is useful only in hospitals and counselling centres.</strong> He is asked to explain a complex audit report to a client.</p>
@@ -745,7 +745,7 @@ const caseStudies = [
   {
     case_id: "PSY_CH1_MEDIUM_CS1",
     difficulty: "Medium",
-    chapter: ["Chapter 1: Introduction to Psychology"],
+    chapter: "chapter1",
 
     caseText: `
       <p><strong>Neha invested in a company after reading a return forecast of 18%.</strong> Months later, the company releases weaker financial results.</p>
@@ -817,7 +817,7 @@ const caseStudies = [
   {
     case_id: "PSY_CH1_MEDIUM_CS2",
     difficulty: "Medium",
-    chapter: ["Chapter 1: Introduction to Psychology"],
+    chapter: "chapter1",
 
     caseText: `
       <p><strong>An audit team is deciding whether to accept a risky client engagement.</strong> The senior manager strongly supports accepting the assignment.</p>
@@ -889,7 +889,7 @@ const caseStudies = [
   {
     case_id: "PSY_CH1_MEDIUM_CS3",
     difficulty: "Medium",
-    chapter: ["Chapter 1: Introduction to Psychology"],
+    chapter: "chapter1",
 
     caseText: `
       <p><strong>Priya is preparing quarterly financial statements for an important client.</strong> She discovers information that should be disclosed to present an accurate picture.</p>
@@ -961,7 +961,7 @@ const caseStudies = [
   {
     case_id: "PSY_CH1_MEDIUM_CS4",
     difficulty: "Medium",
-    chapter: ["Chapter 1: Introduction to Psychology"],
+    chapter: "chapter1",
 
     caseText: `
       <p><strong>Farah advises two clients with different financial needs.</strong> Aman is a young professional who is saving for future education and long-term goals.</p>
@@ -1033,7 +1033,7 @@ const caseStudies = [
   {
     case_id: "PSY_CH1_MEDIUM_CS5",
     difficulty: "Medium",
-    chapter: ["Chapter 1: Introduction to Psychology"],
+    chapter: "chapter1",
 
     caseText: `
       <p><strong>A researcher studies whether financial news affects investment choices.</strong> One group of participants receives positive financial news.</p>
@@ -1105,7 +1105,7 @@ const caseStudies = [
 
   {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Psychology is best defined as the scientific study of:",
   options: [
     "Financial markets and regulations",
@@ -1118,7 +1118,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which of the following is a part of the mind?",
   options: [
     "Thoughts, feelings, and perceptions",
@@ -1131,7 +1131,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "The external manifestation of the inner workings of the mind is called:",
   options: [
     "Emotion",
@@ -1144,7 +1144,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which research method commonly collects self-reported information from participants?",
   options: [
     "Experiment",
@@ -1157,7 +1157,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "An educated prediction that guides psychological research is called a:",
   options: [
     "Hypothesis",
@@ -1170,7 +1170,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "After hypothesis formation, the next important step in scientific research is:",
   options: [
     "Drawing conclusions immediately",
@@ -1183,7 +1183,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Empirical evidence refers to conclusions based on:",
   options: [
     "Personal beliefs only",
@@ -1196,7 +1196,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which of the following is a cognitive process?",
   options: [
     "Tax planning",
@@ -1209,7 +1209,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which branch of psychology studies how people influence one another?",
   options: [
     "Social psychology",
@@ -1222,7 +1222,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Industrial-organizational psychology is mainly concerned with:",
   options: [
     "Childhood development",
@@ -1235,7 +1235,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which research method allows a psychologist to manipulate variables to study cause-and-effect relationships?",
   options: [
     "Interview",
@@ -1248,7 +1248,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A limitation of surveys is that respondents may provide answers that make them appear socially responsible. This is called:",
   options: [
     "Observer bias",
@@ -1261,7 +1261,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A key strength of observational research is that it:",
   options: [
     "Studies behaviour in real-life situations",
@@ -1274,7 +1274,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which of the following is a limitation of interviews?",
   options: [
     "They cannot gather detailed information",
@@ -1287,7 +1287,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A limitation of archival research is that researchers:",
   options: [
     "Cannot study historical patterns",
@@ -1300,7 +1300,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Psychologists use statistical techniques mainly to:",
   options: [
     "Create financial statements",
@@ -1313,7 +1313,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which field of psychology is most relevant for helping accountants manage stress and prevent burnout?",
   options: [
     "Clinical psychology",
@@ -1326,7 +1326,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "An accountant tailoring financial advice for a young professional and a retired client is applying insights from:",
   options: [
     "Cognitive psychology",
@@ -1339,7 +1339,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Educational psychology can help Chartered Accountancy educators primarily by improving:",
   options: [
     "Stock market prediction",
@@ -1352,7 +1352,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which misconception about psychology is incorrect?",
   options: [
     "Psychology helps understand client behaviour",
@@ -1365,7 +1365,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A researcher changes the type of financial news shown to participants and measures its effect on investment choices. This research design is best described as:",
   options: [
     "Archival research",
@@ -1378,7 +1378,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A psychologist wants to study how people actually react when they receive unexpected financial news in a public place. Which method is most appropriate?",
   options: [
     "Survey",
@@ -1391,7 +1391,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "An accountant relies heavily on the first profit forecast received, even after updated financial data becomes available. This is an example of:",
   options: [
     "Confirmation bias",
@@ -1404,7 +1404,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A client reads only reports that support her belief that a particular investment will perform well. This illustrates:",
   options: [
     "Confirmation bias",
@@ -1417,7 +1417,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A client feels much more distressed by a loss of ₹10,000 than pleased by a gain of ₹10,000. This reflects:",
   options: [
     "Social desirability",
@@ -1430,7 +1430,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A senior accountant pressures a junior accountant to omit an unfavourable disclosure. The junior accountant reviews professional standards before responding. This demonstrates:",
   options: [
     "Loss aversion",
@@ -1443,7 +1443,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "An accountant continues using the initial valuation estimate despite receiving more reliable updated information. Which cognitive bias is most likely affecting the accountant?",
   options: [
     "Anchoring",
@@ -1456,7 +1456,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A limitation of laboratory experiments is that results may not fully apply to real-world settings. This limitation concerns:",
   options: [
     "Hypothesis formation",
@@ -1469,7 +1469,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which field of psychology specifically examines the relationship between stress, behaviour, emotions, and physical well-being?",
   options: [
     "Industrial-organizational psychology",
@@ -1482,7 +1482,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A researcher concludes that emotional states can influence impulsive financial decisions only after collecting and analysing observable data. This conclusion is based on:",
   options: [
     "Speculation",
@@ -1494,7 +1494,7 @@ const caseStudies = [
 },
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "The Greek word 'psyche' refers to:",
   options: [
     "Mind, soul, or spirit",
@@ -1507,7 +1507,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "The Greek word 'logos' means:",
   options: [
     "Emotion",
@@ -1520,7 +1520,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which of the following is a cognitive process?",
   options: [
     "Liquidation",
@@ -1533,7 +1533,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Cognitive psychologists study how people:",
   options: [
     "Prepare financial statements",
@@ -1546,7 +1546,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Emotions can influence a person's:",
   options: [
     "Date of birth",
@@ -1559,7 +1559,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which branch of psychology focuses on diagnosing and treating anxiety and depression?",
   options: [
     "Clinical psychology",
@@ -1572,7 +1572,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Group dynamics and conformity are studied under:",
   options: [
     "Health psychology",
@@ -1585,7 +1585,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "The study of psychological changes from infancy to old age is called:",
   options: [
     "Clinical psychology",
@@ -1598,7 +1598,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which field focuses on improving teaching and learning processes?",
   options: [
     "Health psychology",
@@ -1611,7 +1611,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "The field that studies the connection between psychological factors and physical well-being is:",
   options: [
     "Health psychology",
@@ -1624,7 +1624,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A limitation of a survey asking clients about spending habits is that clients may:",
   options: [
     "Be unable to answer any question",
@@ -1637,7 +1637,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A researcher observes people reacting to financial news in a public place. Which limitation may affect this method?",
   options: [
     "The researcher cannot record behaviour",
@@ -1650,7 +1650,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Which method is most useful when a researcher wants detailed information about an individual's financial experiences and personal decision-making process?",
   options: [
     "Experiment",
@@ -1663,7 +1663,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A major benefit of asking every survey participant the same questions is:",
   options: [
     "Standardized data collection",
@@ -1676,7 +1676,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "An accounting team can improve decision-making by understanding:",
   options: [
     "Only tax regulations",
@@ -1689,7 +1689,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "An accountant changes the explanation of a financial report to suit the client's level of understanding. This applies principles of:",
   options: [
     "Archival research",
@@ -1702,7 +1702,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Understanding conflict resolution can help accountants:",
   options: [
     "Reach mutually beneficial solutions",
@@ -1715,7 +1715,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "When a client has a strong aversion to financial risk, an accountant should consider recommending:",
   options: [
     "Only highly volatile investments",
@@ -1728,7 +1728,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Critical thinking helps accountants make better decisions by enabling them to:",
   options: [
     "Ignore contradictory evidence",
@@ -1741,7 +1741,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Understanding a client's financial goals, risk tolerance, and reactions to market changes is part of:",
   options: [
     "Clinical treatment",
@@ -1754,7 +1754,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A researcher predicts that investors with higher risk tolerance will select more volatile assets. The prediction examines the relationship between:",
   options: [
     "Risk tolerance and investment choice",
@@ -1767,7 +1767,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "In an experiment, participants receive either positive or negative financial news. Their later investment choices represent the:",
   options: [
     "Independent variable",
@@ -1780,7 +1780,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A researcher uses old annual reports to study long-term changes in investment behaviour. A key limitation is that the researcher:",
   options: [
     "Cannot study past events",
@@ -1793,7 +1793,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A study finds that people with lower income save less money, but the researcher did not manipulate any variable. The researcher can most safely conclude that:",
   options: [
     "Lower income directly causes lower saving in all cases",
@@ -1806,7 +1806,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "A firm wants to improve employee motivation, ethical workplace culture, and leadership quality. Which field offers the most direct guidance?",
   options: [
     "Developmental psychology",
@@ -1819,7 +1819,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "An accountant working long hours during the audit season uses stress-management strategies to protect overall well-being. This is most closely linked to:",
   options: [
     "Health psychology",
@@ -1832,7 +1832,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "Using knowledge of attention, memory, and problem-solving to present complex financial information clearly applies:",
   options: [
     "Social psychology",
@@ -1845,7 +1845,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "An accountant identifies a possible conflict between client interest and accurate reporting. The most ethical approach is to:",
   options: [
     "Prioritize the client's short-term preference only",
@@ -1858,7 +1858,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "An analyst seeks evidence that challenges an initial investment belief instead of looking only for supportive information. This action helps reduce:",
   options: [
     "Loss aversion",
@@ -1871,7 +1871,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 1: Introduction to Psychology",
+  case_chapter: "chapter1",
   question: "An investor relies on the first return forecast, reads only supporting reports, and feels extreme distress over a loss. Which set of biases is involved?",
   options: [
     "Conformity, observer bias, and social desirability",
@@ -1882,12 +1882,12 @@ const caseStudies = [
   answer: 3,
 },
 
-// Chapter 2
+// Chapter2
 
 {
     case_id: "PSY_CH2_CS2",
     difficulty: "Medium",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Rohan is a Chartered Accountant working in an audit firm.</strong> During an audit assignment, he carefully reviews financial statements, supporting documents, and calculations before finalising his working papers. He maintains proper records and rarely misses deadlines.</p>
@@ -1957,7 +1957,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS3",
     difficulty: "Medium",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Meera, a Chartered Accountant, is advising a client who is experiencing serious financial difficulties.</strong> The client is anxious about the situation and repeatedly asks Meera to immediately make a major financial decision.</p>
@@ -2027,7 +2027,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS4",
     difficulty: "Medium",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Arjun is a senior accountant leading a team responsible for preparing financial reports.</strong> He communicates frequently with team members, coordinates their work, and encourages them to share ideas about difficult accounting issues.</p>
@@ -2097,7 +2097,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS5",
     difficulty: "Medium",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Neha is considering whether to recommend a new financial strategy to a client.</strong> The available information about future market conditions is incomplete, and there is no reliable probability for every possible outcome.</p>
@@ -2167,7 +2167,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS6",
     difficulty: "Hard",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Vikram, a Chartered Accountant, is responsible for reviewing the financial reporting process of a rapidly growing company.</strong> He is highly confident in his own judgement and frequently reminds colleagues that his previous financial decisions have been successful. When another accountant raises concerns about a proposed accounting treatment, Vikram dismisses the concerns without examining the supporting evidence.</p>
@@ -2237,7 +2237,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS7",
     difficulty: "Hard",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>A large accounting firm forms a multidisciplinary team to advise a client on a complex financial restructuring.</strong> The team includes Ananya, who is highly conscientious and insists that every calculation and document be checked carefully; Bharat, who is highly extraverted and naturally takes responsibility for coordinating discussions; and Charu, who is highly agreeable and frequently helps team members resolve disagreements.</p>
@@ -2307,7 +2307,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS8",
     difficulty: "Hard",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Sameer has recently become a partner in an accounting firm.</strong> He is confident, highly sociable, and comfortable speaking with clients and employees. He frequently encourages his team to experiment with new approaches to solving complex financial problems.</p>
@@ -2377,7 +2377,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS9",
     difficulty: "Hard",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Priya is appointed to lead an advisory assignment involving a client whose business operates in a rapidly changing market.</strong> The client expects Priya to recommend a strategy even though reliable information about future market conditions is limited.</p>
@@ -2448,7 +2448,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS10",
     difficulty: "Hard",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Aarav is a newly qualified Chartered Accountant working in a firm where senior professionals strongly influence junior employees.</strong> During his first year, Aarav observes that one senior accountant always carefully checks financial information and receives positive feedback from the partner for accurate work.</p>
@@ -2518,7 +2518,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS11",
     difficulty: "Medium",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Shreya is a Chartered Accountant working with a client who is worried about a possible financial loss.</strong> During the meeting, the client becomes nervous and repeatedly asks whether the situation can be controlled.</p>
@@ -2588,7 +2588,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS12",
     difficulty: "Medium",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Karan is asked to lead a small accounting team during a demanding reporting period.</strong> One team member frequently proposes creative ways of solving accounting problems, while another prefers established procedures and carefully checks every calculation.</p>
@@ -2658,7 +2658,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS13",
     difficulty: "Medium",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Ravi is considering whether to specialise in financial analysis or taxation.</strong> He has always performed particularly well in mathematics and enjoys analysing numerical information. He also notices that he becomes highly engaged when solving complex numerical problems.</p>
@@ -2728,7 +2728,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS14",
     difficulty: "Medium",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Divya manages an accounting assignment with a strict deadline.</strong> She initially feels overwhelmed by the amount of work involved. Instead of allowing the pressure to reduce her focus, she divides the assignment into smaller tasks and concentrates on completing each task carefully.</p>
@@ -2797,7 +2797,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS15",
     difficulty: "Medium",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Manish is a manager in an accounting firm.</strong> He notices that two employees react differently when their work is reviewed. One employee welcomes feedback and treats it as an opportunity to improve, while the other immediately assumes that the review is a personal criticism.</p>
@@ -2867,7 +2867,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS16",
     difficulty: "Hard",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Ritika leads an audit team reviewing a company that has experienced rapid growth.</strong> The engagement involves several unusual transactions, and the available documentation is incomplete. Ritika's team includes one accountant who is extremely detail-oriented and another who is highly creative and frequently proposes unconventional interpretations.</p>
@@ -2938,7 +2938,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS17",
     difficulty: "Hard",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Aditya is appointed to manage a new financial advisory team.</strong> He is highly confident and enjoys being recognised for his achievements. He communicates effectively with clients and is comfortable taking responsibility for important decisions.</p>
@@ -3008,7 +3008,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS18",
     difficulty: "Hard",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Simran is supervising a team responsible for advising several clients on long-term financial planning.</strong> One client is highly anxious and repeatedly changes his instructions after reading alarming financial news. Another client is extremely confident and insists that a particular investment will continue to perform well because it has performed strongly in the recent past.</p>
@@ -3078,7 +3078,7 @@ const caseStudies = [
 {
     case_id: "PSY_CH2_CS19",
     difficulty: "Hard",
-    chapter: "Chapter 2",
+    chapter: "Chapter2",
 
     caseText: `
       <p><strong>Nikhil joins an accounting firm where the behaviour of senior professionals strongly influences junior staff.</strong> During his first few months, he observes a senior accountant who carefully follows professional procedures, openly discusses mistakes, and receives constructive feedback from the firm's partners.</p>
@@ -3150,7 +3150,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A Chartered Accountant carefully checks financial documents, maintains organised records, and consistently meets deadlines. Which personality trait is most clearly demonstrated?",
   options: [
     "Extraversion",
@@ -3164,7 +3164,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "An accountant readily explores unconventional financial strategies and welcomes new methods of solving professional problems. Which HEXACO dimension is most closely reflected?",
   options: [
     "Agreeableness",
@@ -3178,7 +3178,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A Chartered Accountant maintains sincerity, fairness, modesty, and avoids seeking excessive personal gain while dealing with clients. This behaviour primarily reflects:",
   options: [
     "Honesty-Humility",
@@ -3192,7 +3192,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "An accountant remains patient during a disagreement with a colleague, listens to the other person's view, and works toward a compromise. Which HEXACO trait is most evident?",
   options: [
     "Agreeableness",
@@ -3206,7 +3206,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A financial professional is highly sociable, talkative, assertive, and comfortable leading discussions with clients. Which HEXACO dimension best describes these characteristics?",
   options: [
     "Emotionality",
@@ -3220,7 +3220,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A Chartered Accountant notices that a client is anxious about financial difficulties and responds with understanding while remaining composed during the discussion. Which HEXACO dimension is particularly relevant to the accountant's ability to understand the client's emotional concerns?",
   options: [
     "Emotionality",
@@ -3234,7 +3234,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A manager notices that an employee's behaviour has gradually become more detail-oriented because accurate financial reporting has repeatedly received positive feedback. Which theory best explains this development?",
   options: [
     "Humanistic Theory",
@@ -3248,7 +3248,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "An accountant believes strongly in their ability to learn new financial regulations and therefore willingly accepts a complex compliance assignment. According to Social-Cognitive Theory, this belief is known as:",
   options: [
     "Self-efficacy",
@@ -3262,7 +3262,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A financial professional constantly seeks admiration, considers themselves superior to colleagues, and believes they deserve special recognition. Which Dark Triad trait is most directly indicated?",
   options: [
     "Psychopathy",
@@ -3276,7 +3276,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "During an investment analysis, an accountant deliberately searches for evidence that contradicts their preferred conclusion rather than considering only supporting information. This approach primarily helps reduce:",
   options: [
     "Risk tolerance",
@@ -3289,7 +3289,7 @@ const caseStudies = [
 },
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A Chartered Accountant carefully considers a client's financial concerns, remains patient during discussions, and cooperates with the client to resolve difficulties. Which personality trait most directly supports this behaviour?",
   options: [
     "Agreeableness",
@@ -3303,7 +3303,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "An accountant remains calm when faced with a sudden market fluctuation and avoids making an immediate emotionally driven investment decision. Which benefit of mindfulness is most directly demonstrated?",
   options: [
     "Reduced impulsivity and reactive decision-making",
@@ -3317,7 +3317,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A manager assumes that older employees cannot learn new accounting technology and therefore excludes them from a technology training programme. This decision is primarily influenced by:",
   options: [
     "Aptitude",
@@ -3331,7 +3331,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A Chartered Accountant continues working carefully on a difficult assignment because completing it is important for achieving a professional goal. Which factor affecting decision-making is most clearly demonstrated?",
   options: [
     "Motivation",
@@ -3345,7 +3345,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "An investor must choose between financial alternatives even though reliable information about future market conditions and the probability of outcomes is unavailable. This is an example of:",
   options: [
     "Decision-making under uncertainty",
@@ -3359,7 +3359,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "Which of the following is one of the six dimensions of the HEXACO model?",
   options: [
     "Honesty-Humility",
@@ -3373,7 +3373,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "Which three traits are included in the Dark Triad theory?",
   options: [
     "Narcissism, Machiavellianism, and Psychopathy",
@@ -3387,7 +3387,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "Which personality theory focuses on enduring characteristics or traits that describe individual differences?",
   options: [
     "Trait Theory",
@@ -3401,7 +3401,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "According to Humanistic Theory, individuals strive toward:",
   options: [
     "Self-actualization and personal growth",
@@ -3415,7 +3415,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "Which personality dimension includes organisation, diligence, precision, and reliability?",
   options: [
     "Conscientiousness",
@@ -3428,7 +3428,7 @@ const caseStudies = [
 },
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A Chartered Accountant is known for being trustworthy, fair, modest, and uninterested in obtaining excessive personal benefits from clients. Which HEXACO dimension best explains these characteristics?",
   options: [
     "Honesty-Humility",
@@ -3442,7 +3442,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "An accountant is facing a difficult client situation but pauses, observes the situation carefully, and makes a deliberate decision instead of reacting immediately. Which aspect of mindfulness is demonstrated?",
   options: [
     "Reduced impulsivity and reactive decision-making",
@@ -3456,7 +3456,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A manager rejects a qualified candidate for a technology-related role because she believes people from a particular age group are generally unable to understand new technology. This decision demonstrates the effect of:",
   options: [
     "Aptitude",
@@ -3470,7 +3470,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "An investor is willing to accept a greater possibility of loss because achieving a particular financial objective is very important to them. Which factor affecting decision-making is most directly illustrated?",
   options: [
     "Motivation",
@@ -3484,7 +3484,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A Chartered Accountant faces unpredictable market conditions and prepares several possible courses of action so that the client can respond if circumstances change. Which strategy for decision-making under uncertainty is being used?",
   options: [
     "Contingency planning",
@@ -3498,7 +3498,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "Which theory of personality was pioneered by Sigmund Freud?",
   options: [
     "Psychoanalytic Theory",
@@ -3512,7 +3512,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "Which three components are identified in Freud's Psychoanalytic Theory?",
   options: [
     "Id, Ego, and Superego",
@@ -3526,7 +3526,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "Which personality dimension is associated with sociability, talkativeness, liveliness, and assertiveness?",
   options: [
     "Extraversion",
@@ -3540,7 +3540,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "Which Dark Triad trait is associated with manipulation, deceit, and pursuit of personal gain?",
   options: [
     "Machiavellianism",
@@ -3554,7 +3554,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "What does aptitude refer to in the context of decision-making?",
   options: [
     "An individual's natural ability or talent in a specific area",
@@ -3567,7 +3567,7 @@ const caseStudies = [
 },
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A Chartered Accountant notices that a client is strongly convinced that a particular investment will succeed. Instead of accepting the client's view, the accountant deliberately searches for evidence that could disprove the belief before making a recommendation. Which concept is most directly being addressed?",
   options: [
     "Confirmation bias",
@@ -3581,7 +3581,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A senior accountant is highly strategic in dealing with colleagues and deliberately withholds important information when doing so is likely to provide a personal advantage. Which Dark Triad trait is most closely associated with this behaviour?",
   options: [
     "Narcissism",
@@ -3595,7 +3595,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "An accounting firm wants to understand why an employee's professional behaviour has developed through repeated observation of senior colleagues, environmental feedback, and the employee's belief in their own ability to handle complex assignments. Which theory provides the most suitable framework?",
   options: [
     "Social-Cognitive Theory",
@@ -3609,7 +3609,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A financial professional remains calm while analysing an uncertain investment decision, recognises that they are favouring information supporting their initial opinion, considers contrary evidence, and evaluates the long-term consequences. Which combination of mindfulness benefits is most clearly illustrated?",
   options: [
     "Bias mitigation, emotional regulation, and long-term perspective",
@@ -3623,7 +3623,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "A company must choose whether to launch a new financial service even though reliable information about future customer demand and market acceptance is unavailable. The management team evaluates several possible outcomes and prepares alternative plans. Which approach is most consistent with the chapter?",
   options: [
     "Decision-making under uncertainty using scenario planning and contingency planning",
@@ -3637,7 +3637,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "Which HEXACO dimension is represented by the letter H?",
   options: [
     "Honesty-Humility",
@@ -3651,7 +3651,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "Which HEXACO dimension is represented by the letter C?",
   options: [
     "Creativity",
@@ -3665,7 +3665,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "Which Dark Triad trait is characterised by a lack of empathy, remorse, and disregard for the rights of others?",
   options: [
     "Narcissism",
@@ -3679,7 +3679,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "Which factor refers to the internal or external drive that compels an individual to take action or make decisions?",
   options: [
     "Motivation",
@@ -3693,7 +3693,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "Chapter 2: Personality",
+  case_chapter: "Chapter2",
   question: "What does decision-making under uncertainty involve?",
   options: [
     "Making choices without complete or reliable information about potential outcomes or their probabilities",
@@ -3705,12 +3705,12 @@ const caseStudies = [
   reason: "Decision-making under uncertainty occurs when individuals or organisations must make choices without complete or reliable information about potential outcomes or their probabilities.",
 },
 
-// Chapter3
+// Chapter3 or chapter 4
 
 {
   case_id: "PSY_CH4_CS11",
   difficulty: "Hard",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
     <p><strong>Arvind is the engagement leader on an audit involving a financially distressed client.</strong> During the engagement, the client becomes increasingly anxious and pressures the audit team to accept an accounting treatment that would make the financial position appear more favourable.</p>
@@ -3781,7 +3781,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS12",
   difficulty: "Hard",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
     <p><strong>Leena manages a multinational accounting project involving team members and clients from several cultural backgrounds.</strong> During a video conference, one client avoids prolonged eye contact while another frequently uses expressive hand gestures.</p>
@@ -3852,7 +3852,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS13",
   difficulty: "Hard",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
     <p><strong>Dev is responsible for completing a major financial reporting assignment within a very short period.</strong> The workload includes complex financial analysis, multiple client requests, and several unresolved issues. Dev initially attempts to complete everything himself and begins working late every night.</p>
@@ -3923,7 +3923,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS14",
   difficulty: "Hard",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
     <p><strong>Sanjay is a senior Chartered Accountant mentoring junior professionals.</strong> One junior employee repeatedly makes errors and becomes discouraged after receiving criticism. Another employee performs well technically but struggles to communicate with clients who are experiencing financial difficulties.</p>
@@ -3994,7 +3994,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS15",
   difficulty: "Hard",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
     <p><strong>Priyanka is the finance head of a growing organisation.</strong> During a period of rapid expansion, employees face tight deadlines, changing responsibilities, and increasing client expectations. Several employees begin reporting exhaustion and difficulty maintaining concentration.</p>
@@ -4068,7 +4068,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS16",
   difficulty: "Easy",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -4143,7 +4143,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS17",
   difficulty: "Easy",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -4218,7 +4218,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS18",
   difficulty: "Easy",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -4293,7 +4293,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS19",
   difficulty: "Easy",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -4368,7 +4368,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS20",
   difficulty: "Easy",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -4448,7 +4448,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS21",
   difficulty: "Medium",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -4523,7 +4523,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS22",
   difficulty: "Medium",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
     <p>Rahul was advising a small business owner whose business had experienced serious financial difficulties. During a meeting, the owner explained that several employees depended on the business and that he was worried about being unable to pay them on time.</p>
@@ -4597,7 +4597,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS23",
   difficulty: "Medium",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -4672,7 +4672,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS24",
   difficulty: "Medium",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -4749,7 +4749,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS25",
   difficulty: "Medium",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -4829,7 +4829,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS26",
   difficulty: "Hard",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -4906,7 +4906,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS27",
   difficulty: "Hard",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -4983,7 +4983,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS28",
   difficulty: "Hard",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -5062,7 +5062,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS29",
   difficulty: "Hard",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -5141,7 +5141,7 @@ const caseStudies = [
 {
   case_id: "PSY_CH4_CS30",
   difficulty: "Hard",
-  chapter: "Chapter 4",
+  chapter: "chapter3",
 
   caseText: `
 
@@ -5218,7 +5218,7 @@ const caseStudies = [
 },
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which of the following best describes Emotional Intelligence?",
   options: [
     "The ability to recognize, understand, manage and leverage emotions in oneself and others",
@@ -5232,7 +5232,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which of the following is one of the four facets of the Ability Model of Emotional Intelligence?",
   options: [
     "Financial forecasting",
@@ -5246,7 +5246,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which Emotional Intelligence model focuses primarily on emotional traits and commonly uses self-report measures?",
   options: [
     "Ability Model",
@@ -5260,7 +5260,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Who is associated with the Mixed Model of Emotional Intelligence discussed in the chapter?",
   options: [
     "Daniel Goleman",
@@ -5274,7 +5274,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which Navarasa represents humour or laughter?",
   options: [
     "Karūṇa",
@@ -5288,7 +5288,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which Navarasa is associated with compassion and empathy?",
   options: [
     "Bhayānaka",
@@ -5302,7 +5302,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which of the following is an example of nonverbal communication?",
   options: [
     "Facial expressions",
@@ -5316,7 +5316,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Stress is generally described in the chapter as:",
   options: [
     "A condition that only occurs in professional accountants",
@@ -5330,7 +5330,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which of the following can help improve self-awareness?",
   options: [
     "Ignoring emotions",
@@ -5344,7 +5344,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which strategy can help establish work-life boundaries while working remotely?",
   options: [
     "Keeping work applications open throughout the night",
@@ -5358,7 +5358,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA notices that a client is becoming anxious during a financial discussion and changes his approach after recognizing the client's emotional state. Which Ability Model competency is most directly involved?",
   options: [
     "Perceiving emotions",
@@ -5372,7 +5372,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A professional deliberately uses a positive emotional state to think creatively about a difficult client problem. Which Ability Model facet does this illustrate?",
   options: [
     "Understanding emotions",
@@ -5386,7 +5386,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which combination correctly represents competencies associated with Goleman's Mixed Model?",
   options: [
     "Perception, sensation, memory and intelligence",
@@ -5400,7 +5400,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA receives criticism from a client and feels irritated but deliberately pauses before responding so that the reply remains professional. Which EI strategy is most evident?",
   options: [
     "Self-regulation",
@@ -5414,7 +5414,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A team leader notices that two employees are arguing and helps each person understand the other's concerns before finding a solution. Which EI-related ability is most relevant?",
   options: [
     "Technical accounting",
@@ -5428,7 +5428,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA uses humour appropriately during a tense team meeting to reduce tension and improve team interaction. Which Navarasa is reflected?",
   options: [
     "Raudra",
@@ -5442,7 +5442,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A professional feels strong anger after observing unethical conduct but channels that emotion into advocating stronger compliance practices rather than attacking individuals. Which Navarasa is most relevant?",
   options: [
     "Raudra",
@@ -5456,7 +5456,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Why can cultural awareness be important when interpreting eye contact during professional communication?",
   options: [
     "Eye contact is never meaningful",
@@ -5470,7 +5470,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA has several urgent assignments and begins making errors because all tasks are being handled simultaneously. Which approach is most appropriate according to the chapter?",
   options: [
     "Ignore the errors",
@@ -5484,7 +5484,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which organizational practice can contribute to employee well-being?",
   options: [
     "Flexible policies and mental health support",
@@ -5498,7 +5498,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which of the following is most likely to occur when stress remains unmanaged for a prolonged period?",
   options: [
     "Automatic improvement in productivity",
@@ -5512,7 +5512,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA realizes that his frustration with a client is influencing the way he is interpreting the client's statements. He deliberately pauses and reassesses the situation before responding. Which combination best describes the process?",
   options: [
     "Avoidance followed by emotional suppression",
@@ -5526,7 +5526,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Under the Ability Model, a professional first identifies a client's anxiety, then considers how that emotional state may affect the discussion and finally helps the client become calmer. Which sequence best matches the model?",
   options: [
     "Perceiving emotions → using emotions to facilitate thought → managing emotions",
@@ -5540,7 +5540,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which situation most clearly distinguishes the Trait Model from the Ability Model?",
   options: [
     "A CA calculates depreciation using a prescribed method",
@@ -5554,7 +5554,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA faces an unexpected financial insight during an engagement and becomes fascinated by the possibility of an innovative solution. Which Navarasa best represents this emotional experience?",
   options: [
     "Karūṇa",
@@ -5568,7 +5568,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A professional feels anxious about making an error that could have legal consequences. Instead of allowing the fear to become overwhelming, the professional uses it as a reason to increase diligence and precision. Which Navarasa is most directly involved?",
   options: [
     "Bhayānaka",
@@ -5582,7 +5582,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA feels disgust after discovering serious financial misconduct. Rather than merely expressing personal dislike, the CA uses the experience to reinforce ethical standards. Which Navarasa best corresponds to this situation?",
   options: [
     "Vīra",
@@ -5596,7 +5596,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which situation best demonstrates the interaction between verbal and nonverbal communication?",
   options: [
     "A CA sends an email without considering its wording",
@@ -5610,7 +5610,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA working remotely notices that work messages continue late into the night, sleep is being affected and family interactions are declining. Which response best reflects the chapter's work-life balance approach?",
   options: [
     "Create boundaries, establish defined working periods and protect personal time",
@@ -5624,7 +5624,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA firm notices that employees are stressed because priorities are unclear, workloads are excessive and employees hesitate to report problems. Which response addresses the issue at the organizational level rather than only the individual level?",
   options: [
     "Tell employees to simply become more resilient",
@@ -5638,7 +5638,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA receives a difficult client complaint. The CA first recognizes personal irritation, then considers the client's perspective, controls the emotional reaction and responds respectfully while solving the issue. Which sequence of EI competencies is most appropriate?",
   options: [
     "Technical skill → financial analysis → auditing",
@@ -5651,7 +5651,7 @@ const caseStudies = [
 },
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which of the following is a benefit of Emotional Intelligence for a Chartered Accountant?",
   options: [
     "It eliminates the need for technical knowledge",
@@ -5665,7 +5665,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which competency involves recognizing one's own emotions and their influence on behaviour?",
   options: [
     "Self-awareness",
@@ -5679,7 +5679,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which of the following is associated with the Trait Model of Emotional Intelligence?",
   options: [
     "Accounting ability",
@@ -5693,7 +5693,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which Navarasa represents courage or heroism?",
   options: [
     "Śānta",
@@ -5707,7 +5707,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which Navarasa represents peace or tranquillity?",
   options: [
     "Śānta",
@@ -5721,7 +5721,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which of the following is an example of verbal communication?",
   options: [
     "Eye contact",
@@ -5735,7 +5735,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which activity can be used to support stress management?",
   options: [
     "Ignoring all deadlines",
@@ -5749,7 +5749,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "What does work-life balance generally refer to?",
   options: [
     "Eliminating professional responsibilities",
@@ -5763,7 +5763,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which strategy can help a professional manage an excessive workload?",
   options: [
     "Delegating appropriate tasks",
@@ -5777,7 +5777,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which of the following is a nonverbal communication cue?",
   options: [
     "A written letter",
@@ -5791,7 +5791,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA notices that a team member looks uncomfortable even though the member says that everything is fine. The CA considers the facial expression and behaviour before continuing the discussion. Which Ability Model capability is being demonstrated?",
   options: [
     "Motivation",
@@ -5805,7 +5805,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A professional recognizes that feeling optimistic is helping generate alternative solutions to a difficult problem. Which Ability Model facet is most relevant?",
   options: [
     "Using emotions to facilitate thought",
@@ -5819,7 +5819,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which statement best distinguishes the Mixed Model from a model that focuses only on emotional abilities?",
   options: [
     "The Mixed Model excludes social behaviour",
@@ -5833,7 +5833,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA maintains a clear professional objective and continues working toward it despite repeated difficulties during an engagement. Which Mixed Model competency is most closely reflected?",
   options: [
     "Empathy",
@@ -5847,7 +5847,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which strategy is particularly useful for improving self-regulation according to the chapter?",
   options: [
     "Reacting immediately to criticism",
@@ -5861,7 +5861,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA listens carefully to a client's explanation, asks clarifying questions and attempts to understand the client's concerns before responding. Which behaviour is most evident?",
   options: [
     "Active listening and empathy",
@@ -5875,7 +5875,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA feels compassion for a client facing serious financial difficulties and adjusts the interaction accordingly. Which Navarasa is most relevant?",
   options: [
     "Vīra",
@@ -5889,7 +5889,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A professional encounters an unexpected financial pattern that leads to a new and innovative solution. Which Navarasa is most closely related?",
   options: [
     "Bhayānaka",
@@ -5903,7 +5903,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which approach is most appropriate when cultural differences may affect the interpretation of nonverbal communication?",
   options: [
     "Assume the same gesture always has the same meaning",
@@ -5917,7 +5917,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A professional has ten pending tasks and decides which ones require immediate attention before beginning work. Which stress-management technique is being used?",
   options: [
     "Prioritization",
@@ -5931,7 +5931,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A senior CA receives an aggressive email from a client. The CA feels angry, recognizes the emotional reaction, waits before replying and then sends a calm response addressing the client's actual concerns. Which sequence is most appropriate?",
   options: [
     "Empathy → motivation → fear",
@@ -5945,7 +5945,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which situation most clearly demonstrates the 'understanding emotions' component of the Ability Model rather than merely perceiving emotions?",
   options: [
     "Noticing that a client is frowning",
@@ -5959,7 +5959,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA discovers an ethical problem and initially experiences anger. Instead of allowing the anger to determine the response, the CA uses it as motivation to examine the issue carefully and advocate appropriate compliance measures. Which interpretation best fits the chapter?",
   options: [
     "The emotion must always be suppressed",
@@ -5973,7 +5973,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A professional fears making an error because it could have serious legal consequences. The fear causes the professional to double-check calculations and carefully review documentation. Which interpretation is most consistent with the chapter?",
   options: [
     "Bhayānaka can underscore diligence and precision",
@@ -5987,7 +5987,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA is dissatisfied with unethical financial conduct and feels strong aversion toward the behaviour. The CA uses this reaction to reinforce ethical standards. Which Navarasa is most relevant?",
   options: [
     "Hāsya",
@@ -6001,7 +6001,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA's words during a client meeting are technically polite, but the CA's harsh tone causes the client to interpret the message negatively. What does this demonstrate?",
   options: [
     "Verbal communication has no relationship with tone",
@@ -6015,7 +6015,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA working from home finishes official working hours but continues checking emails every few minutes until midnight. Which problem is most directly illustrated?",
   options: [
     "Improved work-life balance",
@@ -6029,7 +6029,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "An organization provides flexible working arrangements, mental health resources, wellness initiatives and leaders who openly discuss healthy work practices. Which concept is most directly illustrated?",
   options: [
     "Organizational well-being",
@@ -6043,7 +6043,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA has a major deadline, several routine tasks and limited time. Instead of personally completing every task, the CA identifies priorities, delegates appropriate work, takes short breaks and consults a colleague about an ethical concern. Which combination of strategies is being used?",
   options: [
     "Avoidance, suppression and social comparison",
@@ -6057,7 +6057,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "A CA notices that a colleague is unusually quiet during a team meeting. Instead of assuming the colleague is uninterested, the CA privately asks whether there is a concern, listens to the explanation and adjusts the discussion accordingly. Which combination is most evident?",
   options: [
     "Perceiving emotions, empathy and social awareness",
@@ -6071,7 +6071,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_chapter: "chapter4",
+  case_chapter: "chapter3",
   question: "Which situation best illustrates the difference between simply experiencing an emotion and using Emotional Intelligence effectively?",
   options: [
     "A professional feels anger and immediately reacts aggressively",
@@ -6082,7 +6082,1761 @@ const caseStudies = [
   answer: 2,
   reason: "Emotional Intelligence involves recognizing, understanding and managing emotions so that they can be used constructively in behaviour and decision-making."
 },
+// Chapter 4
+// ============================================================
+// EASY CASE SCENARIOS - 7 CASES
+// ============================================================
+
+{
+  "case_id": "PSY_CH4_EASY_01",
+  "difficulty": "Easy",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>An accounting firm introduces a new cloud-based audit software.</strong> The transition requires employees to abandon their familiar desktop tools. The firm's leadership starts by clearly communicating the necessity of the software to handle increasing regulatory complexities, effectively breaking down initial resistance. Once the staff understands the need, the firm rolls out the software and conducts training sessions. Finally, the leadership links the use of the new software to the firm's performance appraisal system to ensure the new habit sticks.</p>",
+  "questions": [
+    {
+      "question": "The leadership communicating the necessity of the new software to break down initial resistance represents which stage of Kurt Lewin's Change Management Model?",
+      "options": ["Refreezing", "Unfreezing", "Changing", "Bargaining"],
+      "answer": 1,
+      "reason": "Unfreezing is the preparation for change, which involves breaking away from familiar routines and communicating the necessity of the change."
+    },
+    {
+      "question": "The actual rollout and training for the new software represent which stage in Lewin's model?",
+      "options": ["Unfreezing", "Refreezing", "Changing", "Storming"],
+      "answer": 2,
+      "reason": "The 'changing' stage involves implementing the change, where professionals adapt to new technologies and acquire necessary skills."
+    },
+    {
+      "question": "Linking the new software to the performance appraisal system achieves which psychological objective?",
+      "options": ["Refreezing the change as the new norm", "Causing single-loop learning", "Initiating the unfreezing phase", "Promoting groupthink"],
+      "answer": 0,
+      "reason": "Refreezing aims to solidify the change as the new norm by reinforcing new practices and aligning them with organizational rewards."
+    },
+    {
+      "question": "If some employees initially insisted that the old desktop tools were perfectly fine and refused to acknowledge the regulatory need, they were likely in which stage of the Kübler-Ross Change Curve?",
+      "options": ["Depression", "Bargaining", "Anger", "Denial"],
+      "answer": 3,
+      "reason": "Denial is the initial stage where individuals resist the need for change and refuse to acknowledge the shifting reality."
+    },
+    {
+      "question": "According to Social Cognitive Theory, how can the firm further accelerate the adoption of this software?",
+      "options": ["By firing those who resist", "By using observational learning and letting staff observe successful peers", "By relying solely on financial penalties", "By increasing evaluation apprehension"],
+      "answer": 1,
+      "reason": "Social Cognitive Theory emphasizes observational learning, where individuals learn by observing the successful behaviors of role models or peers."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_EASY_02",
+  "difficulty": "Easy",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>A newly formed forensic audit team is assigned to investigate a complex corporate fraud.</strong> During their first week, team members are polite, heavily reliant on the engagement partner for instructions, and carefully exploring their roles. By the third week, disagreements emerge regarding the best investigative approach, leading to power struggles. Eventually, they resolve their differences, establish shared norms, and collaborate effectively to uncover the fraud.</p>",
+  "questions": [
+    {
+      "question": "The initial week where team members are polite and seek direction corresponds to which stage of the group life cycle?",
+      "options": ["Forming", "Storming", "Norming", "Performing"],
+      "answer": 0,
+      "reason": "In the forming stage, members come together, act politely, and seek orientation and direction from leadership."
+    },
+    {
+      "question": "The disagreements and power struggles over the investigative approach represent which stage?",
+      "options": ["Adjourning", "Storming", "Norming", "Performing"],
+      "answer": 1,
+      "reason": "The storming stage is marked by the emergence of conflicts and power struggles as individuals assert their ideas."
+    },
+    {
+      "question": "When the team establishes shared expectations and resolves their tensions, they have entered the:",
+      "options": ["Forming stage", "Storming stage", "Norming stage", "Adjourning stage"],
+      "answer": 2,
+      "reason": "During the norming stage, the group establishes cohesion, shared identity, and solidifies norms."
+    },
+    {
+      "question": "The phase where the team efficiently uncovers the fraud through smooth communication and shared leadership is known as:",
+      "options": ["Performing", "Norming", "Storming", "Social Facilitation"],
+      "answer": 0,
+      "reason": "In the performing stage, the group achieves a high level of productivity, collaboration, and effectiveness."
+    },
+    {
+      "question": "The theory that conceptualizes this evolutionary group life cycle was developed by:",
+      "options": ["Bruce Tuckman", "Kurt Lewin", "Irving Janis", "Henri Tajfel"],
+      "answer": 0,
+      "reason": "The group life cycle (Forming, Storming, Norming, Performing, Adjourning) was conceptualized by psychologist Bruce Tuckman."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_EASY_03",
+  "difficulty": "Easy",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>Raj, an article assistant, is tasked with a difficult tax computation.</strong> He firmly believes in his own capability to complete it accurately. Despite facing system crashes and missing data, he maintains a positive outlook. He sets a clear goal to finish by Friday and develops alternative strategies to gather the data. When the client abruptly changes the transaction details, Raj bounces back quickly from the setback and adjusts his computation without losing focus.</p>",
+  "questions": [
+    {
+      "question": "Raj's firm belief in his own capability to accurately complete the tax computation represents:",
+      "options": ["Self-efficacy", "Resilience", "Social Loafing", "Normative Conformity"],
+      "answer": 0,
+      "reason": "Self-efficacy is the belief in one's own ability to perform specific tasks or achieve particular goals."
+    },
+    {
+      "question": "Raj's ability to bounce back quickly after the client abruptly changes transaction details demonstrates:",
+      "options": ["Optimism", "Hope", "Resilience", "Self-efficacy"],
+      "answer": 2,
+      "reason": "Resilience is the capacity to bounce back from adversity, adapt to change, and maintain positive well-being."
+    },
+    {
+      "question": "Setting a clear goal for Friday and developing alternative strategies to gather data reflects which component?",
+      "options": ["Resilience", "Hope", "Optimism", "Self-efficacy"],
+      "answer": 1,
+      "reason": "Hope is the ability to set goals, develop strategies to achieve them, and maintain motivation."
+    },
+    {
+      "question": "Maintaining a positive expectation of success despite system crashes illustrates:",
+      "options": ["Self-efficacy", "Optimism", "Groupthink", "Authentic Leadership"],
+      "answer": 1,
+      "reason": "Optimism involves having a positive outlook and expecting positive outcomes even in the face of setbacks."
+    },
+    {
+      "question": "Collectively, self-efficacy, optimism, hope, and resilience form which psychological concept?",
+      "options": ["Psychological Capital (PsyCap)", "Social Exchange Theory", "Transformational Leadership", "Cognitive Dissonance"],
+      "answer": 0,
+      "reason": "Psychological Capital (PsyCap) encompasses self-efficacy, optimism, hope, and resilience."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_EASY_04",
+  "difficulty": "Easy",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>During a physical inventory verification,</strong> a team of five auditors is dispatched to a massive warehouse. The engagement partner notices that when team members count the inventory independently, they are highly accurate and fast. However, when they are asked to count a section collectively as a single group without tracking individual tallies, the overall speed drops, and some members exert noticeably less effort, assuming others will pick up the slack.</p>",
+  "questions": [
+    {
+      "question": "The reduction in individual effort when working collectively on the inventory count is known as:",
+      "options": ["Social Facilitation", "Social Loafing", "Groupthink", "Deindividuation"],
+      "answer": 1,
+      "reason": "Social loafing is a behavioral phenomenon in which individuals exert less effort when working in a group compared to working alone."
+    },
+    {
+      "question": "Which characteristic of social loafing is demonstrated by members assuming others will pick up the slack?",
+      "options": ["Diminished accountability", "Illusion of invulnerability", "Mindguarding", "Normative conformity"],
+      "answer": 0,
+      "reason": "Diminished accountability occurs when individuals feel less accountable because their individual contributions are less visible in a group."
+    },
+    {
+      "question": "Taking advantage of the group's effort without making a proportionate contribution is referred to as:",
+      "options": ["Free-Riding", "Coaction effect", "Single-loop learning", "Bargaining"],
+      "answer": 0,
+      "reason": "Free-riding involves benefiting from the efforts of others without making a proportionate contribution to the group."
+    },
+    {
+      "question": "To mitigate this issue in future inventory counts, the engagement partner should:",
+      "options": ["Increase group size", "Foster a culture of individual accountability and task allocation", "Encourage groupthink", "Remove all performance targets"],
+      "answer": 1,
+      "reason": "Mitigating social loafing requires setting clear individual expectations, monitoring individual performance, and ensuring task allocation based on strengths."
+    },
+    {
+      "question": "Social loafing in auditing is particularly dangerous because it directly compromises:",
+      "options": ["Diligence, precision, and the quality of audit evidence", "The firm's marketing strategy", "The physical security of the warehouse", "The client's share price"],
+      "answer": 0,
+      "reason": "In accounting, where attention to detail is non-negotiable, social loafing leads to inaccuracies and lapses in diligence and precision."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_EASY_05",
+  "difficulty": "Easy",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>Priya, an engagement manager,</strong> sets very clear performance metrics for her audit team. She explicitly tells her team that finishing the statutory audit ahead of the deadline with zero review notes will result in a performance bonus and extra leave. She monitors the work closely and steps in immediately when she notices an associate deviating from the firm's standard audit methodology.</p>",
+  "questions": [
+    {
+      "question": "Priya's leadership style, which relies on clear expectations and tangible rewards for compliance, represents:",
+      "options": ["Transformational Leadership", "Servant Leadership", "Transactional Leadership", "Authentic Leadership"],
+      "answer": 2,
+      "reason": "Transactional leadership focuses on tangible exchanges, setting clear expectations, and providing contingent rewards based on performance."
+    },
+    {
+      "question": "Offering a performance bonus and extra leave for meeting the audit deadline is an example of:",
+      "options": ["Intellectual stimulation", "Contingent reward", "Idealized influence", "Individualized consideration"],
+      "answer": 1,
+      "reason": "Contingent reward is a central element of transactional leadership involving providing rewards for meeting or exceeding expectations."
+    },
+    {
+      "question": "Priya stepping in immediately when an associate deviates from the standard methodology illustrates:",
+      "options": ["Passive management by exception", "Active management by exception", "Laissez-faire leadership", "Double-loop learning"],
+      "answer": 1,
+      "reason": "Active management by exception entails actively monitoring performance and intervening promptly when deviations from established standards occur."
+    },
+    {
+      "question": "Which theory forms the foundational paradigm for Priya's leadership approach?",
+      "options": ["Social Identity Theory", "Transformative Leadership Theory", "Transactional Leadership Theory", "Group Dynamics Theory"],
+      "answer": 2,
+      "reason": "Transactional Leadership Theory explores the relationships between leaders and followers through transactions, rewards, and performance monitoring."
+    },
+    {
+      "question": "Why is this leadership style highly relevant in Chartered Accountancy?",
+      "options": ["It encourages radical risk-taking", "It relies entirely on emotional empathy", "The profession demands precision, accuracy, and adherence to established rules", "It abolishes hierarchical structures"],
+      "answer": 2,
+      "reason": "Transactional leadership is relevant in accounting because it provides clear guidelines, ensures structured monitoring, and enforces strict adherence to regulations."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_EASY_06",
+  "difficulty": "Easy",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>Two accounting firms recently merged.</strong> Staff from Firm A begin identifying themselves strictly as 'Firm A alumni' and view their audit methodologies as superior. They start making negative assumptions about the competence of staff from Firm B, creating a division in the new office environment. This division affects knowledge sharing and cooperation on joint client engagements.</p>",
+  "questions": [
+    {
+      "question": "The tendency of Firm A staff to view their own group favourably and Firm B staff negatively is explained by:",
+      "options": ["Social Identity Theory", "Social Facilitation Theory", "Situational Leadership Theory", "Single-loop learning"],
+      "answer": 0,
+      "reason": "Social Identity Theory explains how individuals categorize themselves into groups, derive identity, and engage in in-group favoritism and out-group derogation."
+    },
+    {
+      "question": "Categorizing the office into 'Firm A alumni' and 'Firm B staff' represents the process of:",
+      "options": ["Social Categorization", "Social Facilitation", "Groupthink", "Rational Choice"],
+      "answer": 0,
+      "reason": "Social categorization is the tendency to classify oneself and others into distinct in-groups and out-groups based on shared characteristics."
+    },
+    {
+      "question": "Firm A staff adopting the specific norms and behaviors associated with their legacy firm is an example of forming their:",
+      "options": ["Social Identity", "Evaluation Apprehension", "Comparison Level", "Dominant Response"],
+      "answer": 0,
+      "reason": "Social identity is adopted when individuals see themselves in terms of group characteristics and adopt its norms and behaviors."
+    },
+    {
+      "question": "Firm A staff making negative assumptions about Firm B's competence is termed:",
+      "options": ["In-group favoritism", "Out-group derogation", "Social loafing", "Normative conformity"],
+      "answer": 1,
+      "reason": "Out-group derogation involves the adoption of negative attitudes and behaviors toward members of out-groups."
+    },
+    {
+      "question": "According to the theory, why do individuals engage in social comparison that favors their in-group?",
+      "options": ["To maximize financial rewards", "To enhance their own self-esteem", "To facilitate active management by exception", "To comply with regulatory standards"],
+      "answer": 1,
+      "reason": "Social comparison serves to enhance self-esteem by attributing positive qualities to the in-group and, by extension, to oneself."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_EASY_07",
+  "difficulty": "Easy",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>A senior partner, Mr. Sharma,</strong> leads his firm by prioritizing the personal and professional needs of his staff before his own. He actively mentors junior accountants, focuses on building a strong sense of community within the firm, and views himself as a steward of the firm's resources. When an associate makes an error, Mr. Sharma listens to their concerns empathetically and provides a supportive environment for them to learn from the mistake.</p>",
+  "questions": [
+    {
+      "question": "Mr. Sharma's leadership approach is best described as:",
+      "options": ["Servant Leadership", "Transactional Leadership", "Laissez-faire Leadership", "Authoritarian Leadership"],
+      "answer": 0,
+      "reason": "Servant Leadership Theory advocates for leaders who prioritize the needs of their followers, fostering collaboration, personal development, and community."
+    },
+    {
+      "question": "Mr. Sharma viewing himself as a protector of the firm's resources aligns with which Servant Leadership behavior?",
+      "options": ["Stewardship of Resources", "Active monitoring", "Contingent reward", "Social categorization"],
+      "answer": 0,
+      "reason": "Stewardship of resources involves responsible and ethical decision-making, ensuring resources are used for the greater good."
+    },
+    {
+      "question": "The fundamental tenet of Servant Leadership demonstrated by Mr. Sharma is:",
+      "options": ["Putting others first", "Maximizing partner profits", "Strict adherence to rules", "Maintaining a rigid hierarchy"],
+      "answer": 0,
+      "reason": "The fundamental tenet of Servant Leadership Theory is the commitment to putting the needs of others first."
+    },
+    {
+      "question": "Listening empathetically to the associate's concerns rather than punishing them reflects:",
+      "options": ["Management by exception", "Healing and Support", "Out-group derogation", "Single-loop learning"],
+      "answer": 1,
+      "reason": "Servant leaders provide healing and support by acknowledging challenges and creating a caring environment."
+    },
+    {
+      "question": "Who originally coined the Servant Leadership Theory?",
+      "options": ["Robert K. Greenleaf", "Bernard M. Bass", "Irving Janis", "Kurt Lewin"],
+      "answer": 0,
+      "reason": "Servant Leadership Theory was coined by Robert K. Greenleaf in the early 1970s."
+    }
+  ]
+},
+
+// ============================================================
+// MEDIUM CASE SCENARIOS - 5 CASES
+// ============================================================
+
+{
+  "case_id": "PSY_CH4_MEDIUM_01",
+  "difficulty": "Medium",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>An audit manager, Rakesh, oversees four team members with varying levels of experience.</strong> Member A is a fresh trainee who is enthusiastic but lacks basic technical knowledge. Member B is a senior executive who is highly competent and motivated. According to Situational Leadership Theory, Rakesh must adapt his style. For Member A, he gives explicit, step-by-step instructions. For Member B, he simply assigns the objective and provides minimal interference, trusting their judgment completely.</p>",
+  "questions": [
+    {
+      "question": "For Member A (low readiness), Rakesh providing explicit, step-by-step instructions represents which leadership style?",
+      "options": ["Selling (S2)", "Telling (S1)", "Participating (S3)", "Delegating (S4)"],
+      "answer": 1,
+      "reason": "Telling (S1) involves high directive and low supportive behaviors, providing explicit instructions to followers with low readiness (R1)."
+    },
+    {
+      "question": "For Member B (very high readiness), Rakesh assigning the objective with minimal interference represents:",
+      "options": ["Delegating (S4)", "Telling (S1)", "Selling (S2)", "Participating (S3)"],
+      "answer": 0,
+      "reason": "Delegating (S4) involves a hands-off approach (low directive, low supportive) for followers with very high readiness (R4)."
+    },
+    {
+      "question": "The central tenet of Situational Leadership Theory that dictates these adjustments is:",
+      "options": ["Evaluation apprehension", "Follower readiness", "Outcome interdependence", "Idealized influence"],
+      "answer": 1,
+      "reason": "Follower readiness—the ability and willingness of followers to perform a task—is the central tenet dictating the leader's style."
+    },
+    {
+      "question": "If Member C has some readiness but lacks confidence, Rakesh using a 'Selling (S2)' style would involve:",
+      "options": ["High directive and low supportive behaviors", "Low directive and high supportive behaviors", "High directive and high supportive behaviors", "Low directive and low supportive behaviors"],
+      "answer": 2,
+      "reason": "Selling (S2) involves both high directive and high supportive behaviors to enhance followers' capabilities and confidence."
+    },
+    {
+      "question": "Who developed the Situational Leadership Theory?",
+      "options": ["Paul Hersey and Kenneth H. Blanchard", "James MacGregor Burns", "Bill George", "John Thibaut and Harold Kelley"],
+      "answer": 0,
+      "reason": "Situational Leadership Theory was developed by Paul Hersey and Kenneth H. Blanchard in the late 1960s."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_MEDIUM_02",
+  "difficulty": "Medium",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>During a critical tax filing season,</strong> the firm shifts all employees to an open-plan 'war room' where everyone works in close proximity. A junior tax consultant finds that she can process standard, routine tax returns much faster when working alongside her peers. However, when she is assigned a highly complex, novel transfer pricing calculation, the presence of senior partners walking around the room makes her anxious, and her performance drops significantly.</p>",
+  "questions": [
+    {
+      "question": "The phenomenon where the junior consultant processes routine returns faster alongside peers is explained by:",
+      "options": ["Social Loafing", "Social Facilitation Theory", "Groupthink", "Authentic Leadership"],
+      "answer": 1,
+      "reason": "Social Facilitation Theory explores how the mere presence of others can enhance performance on simple or well-learned tasks."
+    },
+    {
+      "question": "The specific boost in performance from working simultaneously alongside others on the same task is called:",
+      "options": ["Audience effects", "Coaction effects", "Competition effects", "Social categorization"],
+      "answer": 1,
+      "reason": "Coaction effects involve the simultaneous presence of others engaged in the same task, which can enhance performance on simple tasks."
+    },
+    {
+      "question": "Why did her performance drop on the complex transfer pricing calculation in the presence of others?",
+      "options": ["Complex tasks elicit an incorrect dominant response in the presence of others", "She engaged in social loafing", "The partners were engaging in double-loop learning", "She lacked normative conformity"],
+      "answer": 0,
+      "reason": "On complex tasks, heightened arousal from the presence of others often enhances an incorrect dominant response, inhibiting performance."
+    },
+    {
+      "question": "Her anxiety caused by the senior partners walking around the room is an example of:",
+      "options": ["Illusion of unanimity", "Evaluation apprehension", "Idealized influence", "Contingent reward"],
+      "answer": 1,
+      "reason": "Evaluation apprehension is a concern about how others are evaluating one's performance, which heightens arousal and impacts complex tasks."
+    },
+    {
+      "question": "According to the theory, if she were a highly experienced transfer pricing 'expert', the presence of the partners would likely:",
+      "options": ["Still inhibit her performance", "Facilitate her performance because her dominant response is correct", "Cause her to engage in free-riding", "Lead to deindividuation"],
+      "answer": 1,
+      "reason": "Experts have a well-established correct dominant response, meaning they are more likely to benefit from social facilitation even on complex tasks."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_MEDIUM_03",
+  "difficulty": "Medium",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>An engagement partner, Anita,</strong> is known for her transparency. During a partner meeting regarding a lucrative but ethically questionable client, Anita shares her internal moral conflicts openly. She actively solicits dissenting opinions from her team, carefully weighing the potential financial gains against the firm's core values. Despite pressure to accept the client to meet revenue targets, Anita rejects the engagement, stating that her decision must align with her moral principles.</p>",
+  "questions": [
+    {
+      "question": "Anita's leadership style, characterized by transparency, self-awareness, and moral alignment, is:",
+      "options": ["Authentic Leadership", "Transactional Leadership", "Situational Leadership", "Laissez-faire Leadership"],
+      "answer": 0,
+      "reason": "Authentic Leadership places a strong emphasis on transparency, self-awareness, and a commitment to moral and ethical principles."
+    },
+    {
+      "question": "Anita sharing her internal moral conflicts openly with her team demonstrates:",
+      "options": ["Relational transparency", "Balanced processing", "Contingent reward", "Active management by exception"],
+      "answer": 0,
+      "reason": "Relational transparency involves sharing thoughts, feelings, and values openly, creating an environment of trust."
+    },
+    {
+      "question": "Actively soliciting dissenting opinions and weighing them objectively before deciding is an example of:",
+      "options": ["Groupthink", "Balanced processing", "Out-group derogation", "Social loafing"],
+      "answer": 1,
+      "reason": "Balanced processing means considering diverse perspectives, valuing dissenting opinions, and evaluating information objectively."
+    },
+    {
+      "question": "Rejecting the lucrative engagement to align with her moral principles reflects her:",
+      "options": ["Internalized moral perspective", "Need for idealized influence", "Desire for social facilitation", "Comparison level for alternatives"],
+      "answer": 0,
+      "reason": "An internalized moral perspective means making decisions guided by a strong ethical framework, even against conflicting interests."
+    },
+    {
+      "question": "According to the text, why is Authentic Leadership vital in Chartered Accountancy?",
+      "options": ["It guarantees maximum billable hours", "It allows leaders to manipulate financial data", "It fosters trust, credibility, and an environment where ethical behavior is a shared value", "It relies on strict transactional rewards"],
+      "answer": 2,
+      "reason": "Authentic leaders in accounting build trust and credibility, fostering a culture where ethical conduct permeates the organization."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_MEDIUM_04",
+  "difficulty": "Medium",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>Two partners in a CA firm are negotiating the allocation of resources for a new audit division.</strong> Partner A agrees to provide Partner B with highly skilled staff for the upcoming busy season, but in return, Partner A expects Partner B to share the revenue from a new consulting client. Partner A calculates that the cost of losing staff temporarily is outweighed by the financial reward of the consulting revenue. Both partners strive to ensure the exchange feels fair and proportional.</p>",
+  "questions": [
+    {
+      "question": "The partners negotiating based on calculated assessments of rewards and costs illustrates:",
+      "options": ["Social Exchange Theory", "Transformational Leadership Theory", "Groupthink Theory", "Social Cognitive Theory"],
+      "answer": 0,
+      "reason": "Social Exchange Theory posits that individuals engage in interactions based on rational choices, weighing potential gains and losses."
+    },
+    {
+      "question": "Partner A's expectation that Partner B will share revenue in return for providing staff reflects the principle of:",
+      "options": ["Evaluation apprehension", "Reciprocity", "Deindividuation", "Self-censorship"],
+      "answer": 1,
+      "reason": "Reciprocity emphasizes the mutual exchange of benefits and obligations in social interactions."
+    },
+    {
+      "question": "The partners striving to ensure the exchange feels fair and proportional relates to the concept of:",
+      "options": ["Equity", "Mindguarding", "Coaction", "Normative conformity"],
+      "answer": 0,
+      "reason": "Equity emphasizes a perceived balance and fairness between inputs and outputs in a relationship."
+    },
+    {
+      "question": "Partner A calculating that the benefits outweigh the temporary loss of staff demonstrates:",
+      "options": ["Rational Choice", "Collective rationalization", "Passive management by exception", "Idealized influence"],
+      "answer": 0,
+      "reason": "Rational choice views individuals as rational actors who make decisions based on calculating potential outcomes to maximize rewards."
+    },
+    {
+      "question": "If Partner A decides to cancel the agreement because another firm offers a better revenue-sharing deal, Partner A is acting based on:",
+      "options": ["Comparison Level for Alternatives (CLalt)", "Single-loop learning", "Illusion of unanimity", "Internalized moral perspective"],
+      "answer": 0,
+      "reason": "Comparison Level for Alternatives (CLalt) reflects the assessment of available alternatives and the potential outcomes of engaging in alternative relationships."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_MEDIUM_05",
+  "difficulty": "Medium",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>An accounting firm consistently misses regulatory deadlines for a specific type of filing.</strong> Initially, the firm's management responds by sending out more reminder emails and forcing staff to work weekends to fix the immediate backlog. However, the problem persists. Finally, the Managing Partner stops and asks, 'Are our fundamental assumptions about how we staff and execute these filings flawed?' The firm then completely overhauls its workflow, client onboarding policies, and technological infrastructure.</p>",
+  "questions": [
+    {
+      "question": "The firm's initial response of sending reminder emails and working weekends to fix the immediate problem without changing underlying structures is an example of:",
+      "options": ["Double-loop learning", "Single-loop learning", "Social loafing", "Transformational leadership"],
+      "answer": 1,
+      "reason": "Single-loop learning involves correcting errors or making adjustments within existing strategies and structures without challenging underlying assumptions."
+    },
+    {
+      "question": "The Managing Partner questioning the fundamental assumptions about staffing and execution represents:",
+      "options": ["Single-loop learning", "Double-loop learning", "Groupthink", "Management by exception (passive)"],
+      "answer": 1,
+      "reason": "Double-loop learning delves into fundamental assumptions, values, and governing variables to create profound and transformative change."
+    },
+    {
+      "question": "Which organizational theorist introduced the concepts of single-loop and double-loop learning?",
+      "options": ["Chris Argyris", "Kurt Lewin", "Irving Janis", "John Thibaut"],
+      "answer": 0,
+      "reason": "Single-loop and double-loop learning were introduced by organizational theorist Chris Argyris."
+    },
+    {
+      "question": "Why is double-loop learning considered essential for navigating complex change in an accounting firm?",
+      "options": ["It focuses only on short-term tactical fixes", "It encourages organizations to explore root causes and foster a culture of continuous improvement", "It reinforces rigid conformity to old rules", "It prevents technological adaptation"],
+      "answer": 1,
+      "reason": "Double-loop learning goes beyond fixing surface problems by exploring root causes, fostering innovation and transformative change."
+    },
+    {
+      "question": "Balancing both single-loop and double-loop learning allows a firm to:",
+      "options": ["Cultivate a dynamic capability to adapt to both immediate challenges and evolving industry landscapes", "Avoid making any decisions", "Maximize social loafing", "Rely entirely on transactional rewards"],
+      "answer": 0,
+      "reason": "Embracing a dual approach enables organizations to handle day-to-day tactical issues while also thriving amid complex, paradigm-shifting changes."
+    }
+  ]
+},
+
+// ============================================================
+// HARD CASE SCENARIOS - 5 CASES
+// ============================================================
+
+{
+  "case_id": "PSY_CH4_HARD_01",
+  "difficulty": "Hard",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>The audit committee of a major accounting firm is reviewing the valuation models of their oldest, most prestigious client.</strong> The team is highly cohesive and led by an authoritative partner. A junior manager notices a significant flaw in the valuation assumptions. However, when she attempts to raise the issue, a senior director pulls her aside and tells her, 'Do not disrupt the consensus; we have never had an issue with this client before, and the partner will be furious.' The junior manager remains silent in the final meeting, and the committee unanimously approves the flawed valuation, believing their combined expertise guarantees accuracy.</p>",
+  "questions": [
+    {
+      "question": "The junior manager remaining silent in the final meeting despite knowing the valuation is flawed is an example of:",
+      "options": ["Self-Censorship", "Illusion of invulnerability", "Social facilitation", "Double-loop learning"],
+      "answer": 0,
+      "reason": "Self-censorship occurs when individuals withhold their dissenting opinions to avoid conflict and maintain group harmony."
+    },
+    {
+      "question": "The senior director pulling the junior manager aside to silence her dissent is acting as a:",
+      "options": ["Servant leader", "Mindguard", "Transformational leader", "Devil's advocate"],
+      "answer": 1,
+      "reason": "Mindguards are members who actively shield the group from dissenting opinions or information that challenges the consensus."
+    },
+    {
+      "question": "The committee's belief that their combined expertise guarantees accuracy, leading them to ignore potential risks, illustrates:",
+      "options": ["Belief in inherent morality", "Illusion of invulnerability", "Rational choice", "Intellectual stimulation"],
+      "answer": 1,
+      "reason": "The illusion of invulnerability is an unwarranted sense of confidence that the group is impervious to mistakes."
+    },
+    {
+      "question": "Which antecedent factor primarily contributed to the emergence of Groupthink in this scenario?",
+      "options": ["Lack of group cohesiveness", "Laissez-faire leadership", "High group cohesiveness and directive leadership", "A strong culture of single-loop learning"],
+      "answer": 2,
+      "reason": "Antecedents of Groupthink include high group cohesiveness and authoritarian or directive leadership styles that stifle dissent."
+    },
+    {
+      "question": "To prevent this ethical blind spot in future audit committees, the firm should explicitly implement which structural strategy?",
+      "options": ["Appoint a Devil's Advocate to intentionally question assumptions", "Increase the cohesiveness of the group", "Isolate the group from external experts", "Punish any form of constructive conflict"],
+      "answer": 0,
+      "reason": "Appointing a devil's advocate introduces intentional dissenting perspectives, breaking the conformity and stimulating critical evaluation."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_HARD_02",
+  "difficulty": "Hard",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>An accounting firm is fundamentally overhauling its audit methodology after a severe peer-review failure.</strong> The transition creates widespread anxiety. The managing partner recognizes that simply mandating the new methodology will fail. Instead, she identifies a few highly respected senior managers, trains them thoroughly, and has them lead pilot audits. Other staff are encouraged to watch how these managers successfully apply the new methodology. As staff observe the successes, their belief in their own ability to execute the new methodology grows. Meanwhile, the firm continuously evaluates the change process, making fundamental shifts to firm-wide values when necessary.</p>",
+  "questions": [
+    {
+      "question": "The staff learning the new methodology by watching the highly respected senior managers applies which concept from Social Cognitive Theory?",
+      "options": ["Classical conditioning", "Observational learning and modelling", "Management by exception", "Normative conformity"],
+      "answer": 1,
+      "reason": "Social Cognitive Theory emphasizes observational learning and modeling, where individuals emulate the actions of role models."
+    },
+    {
+      "question": "The staff's growing belief in their own capability to successfully execute the new methodology is termed:",
+      "options": ["Self-efficacy", "Illusion of invulnerability", "Comparison Level (CL)", "Evaluation apprehension"],
+      "answer": 0,
+      "reason": "Self-efficacy refers to an individual's belief in their own capability to successfully execute a particular task or behavior."
+    },
+    {
+      "question": "The firm continuously making fundamental shifts to its underlying values and assumptions during the change process indicates:",
+      "options": ["Single-loop learning", "Double-loop learning", "Social loafing", "Groupthink"],
+      "answer": 1,
+      "reason": "Double-loop learning involves questioning and changing fundamental assumptions, values, and governing variables."
+    },
+    {
+      "question": "By addressing widespread anxiety and helping staff adapt through modelling, the managing partner is effectively managing which psychological component of the change curve?",
+      "options": ["Denial and Depression (Kübler-Ross)", "Refreezing (Lewin)", "Adjourning (Tuckman)", "Storming (Tuckman)"],
+      "answer": 0,
+      "reason": "The Kübler-Ross Change Curve highlights emotional stages like depression/overwhelm; providing support and building self-efficacy helps staff cope and move toward acceptance."
+    },
+    {
+      "question": "Which theory explicitly states that learning occurs through the reciprocal influence of personal, behavioral, and environmental factors?",
+      "options": ["Social Exchange Theory", "Social Cognitive Theory (Albert Bandura)", "Situational Leadership Theory", "Transformative Leadership Theory"],
+      "answer": 1,
+      "reason": "Albert Bandura's Social Cognitive Theory emphasizes the reciprocal influence of personal, behavioral, and environmental factors in learning."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_HARD_03",
+  "difficulty": "Hard",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>During an M&A due diligence engagement,</strong> an audit director, Rohan, discovers a material misstatement that could jeopardize the multi-million dollar merger. The client hints at a lucrative future consultancy contract if Rohan's firm overlooks the issue. Rohan's firm operates with a strong transactional culture heavily focused on billable revenue bonuses. However, Rohan chooses to inspire his team to look beyond the immediate financial reward, emphasizing the firm's long-term reputation and moral duty to the public. He challenges the team to think creatively about how to present the harsh truth to the client without destroying the relationship.</p>",
+  "questions": [
+    {
+      "question": "Rohan emphasizing the firm's moral duty and long-term reputation over short-term financial rewards best demonstrates which leadership style?",
+      "options": ["Transactional Leadership", "Transformational Leadership", "Laissez-faire Leadership", "Passive Management by Exception"],
+      "answer": 1,
+      "reason": "Transformational leaders inspire followers to achieve beyond self-interests, focusing on long-term vision and ethical/moral values."
+    },
+    {
+      "question": "The client hinting at a lucrative future contract in exchange for overlooking the misstatement is attempting to exploit which concept?",
+      "options": ["Contingent reward (Transactional)", "Intellectual stimulation", "Authentic transparency", "Social facilitation"],
+      "answer": 0,
+      "reason": "The client is attempting a transactional exchange, offering a contingent reward (consultancy contract) for compliance (overlooking the issue)."
+    },
+    {
+      "question": "Rohan challenging the team to think creatively about how to present the harsh truth is an example of:",
+      "options": ["Intellectual Stimulation", "Idealized Influence", "Inspirational Motivation", "Individualized Consideration"],
+      "answer": 0,
+      "reason": "Intellectual stimulation involves leaders encouraging creativity, critical thinking, and challenging the status quo to find innovative solutions."
+    },
+    {
+      "question": "If Rohan had simply ignored the issue until a regulatory body pointed it out, he would be exhibiting:",
+      "options": ["Active management by exception", "Passive management by exception", "Servant leadership", "Authentic leadership"],
+      "answer": 1,
+      "reason": "Passive management by exception involves intervening only when significant problems or deviations are flagged by external sources."
+    },
+    {
+      "question": "Rohan's refusal to compromise his ethical framework, aligning his actions with his strong internal values despite financial pressure, aligns strongly with the core of:",
+      "options": ["Authentic Leadership (Internalized Moral Perspective)", "Social Loafing", "Normative Conformity", "Audience Effects"],
+      "answer": 0,
+      "reason": "An internalized moral perspective, a core component of Authentic Leadership, means making decisions guided by ethical principles, even against conflicting interests."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_HARD_04",
+  "difficulty": "Hard",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>A team of five auditors is assessing complex derivatives.</strong> Four team members, lacking deep expertise in derivatives, decide to follow the aggressive valuation approach suggested by the client because they believe the client knows the market best. The fifth auditor, a derivatives expert, knows the valuation is non-compliant. However, out of a desire to fit in and avoid being labeled a 'troublemaker' by the tightly-knit team, the expert agrees with the aggressive valuation. Later, when confronted by the regulator, the expert's strong 'Psychological Capital' helps her bounce back and reform the firm's derivative audit process.</p>",
+  "questions": [
+    {
+      "question": "The four non-expert auditors following the client's approach because they believe the client has accurate knowledge represents:",
+      "options": ["Normative Conformity", "Informational Conformity", "Identification", "Deindividuation"],
+      "answer": 1,
+      "reason": "Informational conformity occurs when individuals conform because they believe the group (or client) possesses accurate information and they want to make the right choice."
+    },
+    {
+      "question": "The fifth auditor (the expert) agreeing with the incorrect valuation to avoid being labeled a 'troublemaker' represents:",
+      "options": ["Informational Conformity", "Normative Conformity", "Social Loafing", "Social Facilitation"],
+      "answer": 1,
+      "reason": "Normative conformity occurs when individuals conform to gain approval, avoid disapproval, or fit into the group norms."
+    },
+    {
+      "question": "The fifth auditor bouncing back from the regulatory confrontation to actively reform the firm's processes is a demonstration of which PsyCap component?",
+      "options": ["Hope", "Optimism", "Resilience", "Self-efficacy"],
+      "answer": 2,
+      "reason": "Resilience is the capacity to bounce back from adversity and maintain positive psychological well-being to drive change."
+    },
+    {
+      "question": "The tight-knit nature of the team that caused the expert to self-censor is a classic antecedent for:",
+      "options": ["Double-loop learning", "Groupthink", "Authentic leadership", "Social Exchange Theory"],
+      "answer": 1,
+      "reason": "High group cohesiveness is a primary antecedent of Groupthink, which leads to self-censorship and prioritizing consensus over critical evaluation."
+    },
+    {
+      "question": "To balance conformity and innovation in this accounting firm, the leadership must:",
+      "options": ["Enforce stricter rigid compliance to all peer opinions", "Encourage diverse perspectives to challenge conformity and promote ethical solutions", "Isolate teams from regulatory updates", "Promote risk aversion"],
+      "answer": 1,
+      "reason": "Balancing conformity requires encouraging diversity of thought and considering a wide range of perspectives to challenge blind conformity and foster innovation."
+    }
+  ]
+},
+{
+  "case_id": "PSY_CH4_HARD_05",
+  "difficulty": "Hard",
+  "chapter": "chapter4",
+  "caseText": "<p><strong>A global accounting firm implements a massive 'virtual audit room' </strong> where 200 junior analysts simultaneously process basic ledger entries online while partners monitor their progress via a live dashboard. While basic entry speed increases significantly due to the sheer presence of others working together, the quality of complex anomaly detection plummets. Furthermore, because individual names are hidden on the dashboard to promote 'team results', analysts begin skipping difficult entries, assuming someone else will catch them.</p>",
+  "questions": [
+    {
+      "question": "The increase in basic entry speed due to the simultaneous presence of others working on the same task is an example of:",
+      "options": ["Coaction effect (Social Facilitation)", "Social Loafing", "Deindividuation", "Double-loop learning"],
+      "answer": 0,
+      "reason": "The coaction effect occurs when the simultaneous presence of others engaged in the same task enhances the dominant response, improving performance on simple tasks."
+    },
+    {
+      "question": "The plummet in complex anomaly detection in the presence of others aligns with Social Facilitation Theory because:",
+      "options": ["Complex tasks require social loafing", "Heightened arousal inhibits the correct dominant response on complex tasks", "Partners used management by exception", "The analysts lacked idealized influence"],
+      "answer": 1,
+      "reason": "On complex tasks, the dominant response may be incorrect, and the presence of others increases arousal which can inhibit performance."
+    },
+    {
+      "question": "Analysts skipping difficult entries assuming someone else will catch them, particularly because their individual identities are hidden, is a severe case of:",
+      "options": ["Social Loafing and Deindividuation", "Transformational Leadership", "Servant Leadership", "In-group favoritism"],
+      "answer": 0,
+      "reason": "Social loafing (exerting less effort in a group) is exacerbated by deindividuation (reduced sense of personal identity/accountability due to anonymity)."
+    },
+    {
+      "question": "The primary cause of the diminished accountability in this scenario is:",
+      "options": ["The complexity of the accounting standards", "The hiding of individual names on the dashboard (anonymity)", "The high self-efficacy of the analysts", "The transactional leadership of the partners"],
+      "answer": 1,
+      "reason": "Diminished accountability occurs when contributions are less visible; hiding individual names creates anonymity, driving social loafing."
+    },
+    {
+      "question": "According to Social Exchange Theory, if the firm wants to fix this without removing the dashboard, they must adjust the:",
+      "options": ["Normative conformity", "Rewards and Costs (e.g., re-introducing individual recognition and equitable rewards for catching anomalies)", "Illusion of invulnerability", "Social categorization"],
+      "answer": 1,
+      "reason": "Social Exchange Theory posits individuals weigh rewards and costs. By reinstating individual recognition (reward), the firm can incentivize effort and counter social loafing."
+    }
+  ]
+},
+// Chapter 4 INdividual MCQS 
+  // ============================================================
+  // EASY INDIVIDUAL MCQs (30)
+  // ============================================================
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "According to Social Identity Theory, the process of classifying oneself and others into distinct groups based on shared characteristics is known as:",
+    "options": [
+      "Social Categorization",
+      "Social Facilitation",
+      "Groupthink",
+      "Social Loafing"
+    ],
+    "answer": 0,
+    "reason": "Social categorization serves as a cognitive shortcut to simplify the social world by creating distinct in-groups and out-groups."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "In Social Identity Theory, displaying preferential treatment and positive attitudes toward members of one's own group is called:",
+    "options": [
+      "Out-group derogation",
+      "In-group favouritism",
+      "Social loafing",
+      "Normative conformity"
+    ],
+    "answer": 1,
+    "reason": "In the pursuit of positive social identity, individuals exhibit in-group favouritism, displaying preferential treatment toward their in-group members."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Which psychological phenomenon occurs when a cohesive group prioritizes consensus over critical evaluation, often leading to flawed decisions?",
+    "options": [
+      "Groupthink",
+      "Social Facilitation",
+      "Double-loop learning",
+      "Authentic Leadership"
+    ],
+    "answer": 0,
+    "reason": "Groupthink is a pattern of collective behavior where members prioritize consensus and cohesion over critical evaluation."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "The concept of Groupthink was famously coined in the early 1970s by which psychologist?",
+    "options": [
+      "Kurt Lewin",
+      "Bruce Tuckman",
+      "Irving Janis",
+      "Robert K. Greenleaf"
+    ],
+    "answer": 2,
+    "reason": "Groupthink was coined by psychologist Irving Janis to explain flawed decision-making processes in high-stakes situations."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "According to Social Facilitation Theory, the presence of others heightens arousal, which enhances an individual's:",
+    "options": [
+      "Evaluation apprehension",
+      "Dominant response",
+      "Deindividuation",
+      "Group cohesion"
+    ],
+    "answer": 1,
+    "reason": "Zajonc's Drive Theory posits that the presence of others creates heightened arousal, which enhances the dominant response—the most likely or habitual behavior."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "In Social Facilitation Theory, how does the presence of others typically affect performance on simple, well-learned tasks?",
+    "options": [
+      "It impairs performance",
+      "It has no effect",
+      "It enhances performance",
+      "It leads to social loafing"
+    ],
+    "answer": 2,
+    "reason": "On simple tasks where the dominant response is correct and well-learned, the presence of others tends to facilitate or enhance performance."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "The phenomenon where individuals exert less effort in a group setting than when working individually is called:",
+    "options": [
+      "Social Facilitation",
+      "Social Loafing",
+      "Groupthink",
+      "Deindividuation"
+    ],
+    "answer": 1,
+    "reason": "Social loafing occurs when individuals exert less effort in a group setting, often because their individual contributions are less visible."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Which psychologist is credited with introducing the concept of 'group dynamics' and studying groups as dynamic entities?",
+    "options": [
+      "Albert Bandura",
+      "Chris Argyris",
+      "Kurt Lewin",
+      "James MacGregor Burns"
+    ],
+    "answer": 2,
+    "reason": "Kurt Lewin laid the groundwork for understanding social interactions and is credited with introducing the concept of 'group dynamics'."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "According to Tuckman's group life cycle, the stage marked by the emergence of conflicts and power struggles is called:",
+    "options": [
+      "Forming",
+      "Storming",
+      "Norming",
+      "Performing"
+    ],
+    "answer": 1,
+    "reason": "The storming stage is characterized by conflicts and power struggles as individuals assert their ideas and preferences."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "In which stage of the group life cycle does a group achieve a high level of productivity, collaboration, and effectiveness?",
+    "options": [
+      "Norming",
+      "Forming",
+      "Storming",
+      "Performing"
+    ],
+    "answer": 3,
+    "reason": "In the performing stage, roles are well-defined, communication flows smoothly, and the group works collaboratively to achieve its goals effectively."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Social Exchange Theory posits that human interactions are primarily motivated by the expectation of:",
+    "options": [
+      "Rewards and the avoidance of costs",
+      "Strict conformity to rules",
+      "Evaluation apprehension",
+      "Unconditional altruism"
+    ],
+    "answer": 0,
+    "reason": "Social Exchange Theory posits that individuals engage in social exchanges motivated by the expectation of rewards and the avoidance of costs."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "The concept that individuals are rational actors who weigh the potential gains and losses of their actions is central to:",
+    "options": [
+      "Social Identity Theory",
+      "Social Exchange Theory",
+      "Authentic Leadership Theory",
+      "Groupthink"
+    ],
+    "answer": 1,
+    "reason": "Central to Social Exchange Theory is the notion of rational choice, where individuals calculate the benefits and costs to maximize rewards."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Transformational Leadership Theory focuses heavily on:",
+    "options": [
+      "Providing tangible rewards for compliance",
+      "Inspiring and uplifting followers to achieve their full potential",
+      "Intervening only when errors occur",
+      "Strictly maintaining existing organizational structures"
+    ],
+    "answer": 1,
+    "reason": "Transformational Leadership places emphasis on inspiring and uplifting followers to achieve beyond self-interests and expectations."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Setting clear expectations and providing rewards to followers for meeting those expectations is the definition of:",
+    "options": [
+      "Contingent reward in Transactional Leadership",
+      "Intellectual stimulation in Transformational Leadership",
+      "Relational transparency in Authentic Leadership",
+      "Stewardship in Servant Leadership"
+    ],
+    "answer": 0,
+    "reason": "Contingent reward is a central element of Transactional Leadership, involving providing rewards for meeting or exceeding expectations."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Authentic Leadership Theory places a strong emphasis on:",
+    "options": [
+      "Manipulation for personal gain",
+      "Transparency, self-awareness, and moral principles",
+      "Punishing dissenters",
+      "Applying identical leadership styles to all situations"
+    ],
+    "answer": 1,
+    "reason": "Authentic Leadership places strong emphasis on transparency, self-awareness, and a commitment to moral and ethical principles."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Situational Leadership Theory asserts that a leader's style must be adapted based on:",
+    "options": [
+      "The leader's personality traits",
+      "The readiness and capability of the followers",
+      "The financial rewards available",
+      "The level of social loafing in the group"
+    ],
+    "answer": 1,
+    "reason": "A central tenet of Situational Leadership Theory is matching the leadership style to the follower's readiness level."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "The fundamental tenet of Servant Leadership Theory is:",
+    "options": [
+      "Putting the needs of others first",
+      "Maximizing organizational profit at all costs",
+      "Authoritarian control over followers",
+      "Active management by exception"
+    ],
+    "answer": 0,
+    "reason": "The fundamental tenet of Servant Leadership Theory is the commitment to putting the needs of others first."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Kurt Lewin's Change Management Model consists of which three stages?",
+    "options": [
+      "Denial, Anger, Acceptance",
+      "Forming, Storming, Norming",
+      "Unfreezing, Changing, Refreezing",
+      "Planning, Executing, Closing"
+    ],
+    "answer": 2,
+    "reason": "Kurt Lewin's model provides a framework for change via three stages: unfreezing, changing, and refreezing."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Which theory introduces the emotional stages of change: denial, anger, bargaining, depression, and acceptance?",
+    "options": [
+      "The Kübler-Ross Change Curve",
+      "Social Cognitive Theory",
+      "Tuckman's Life Cycle",
+      "Argyris' Organizational Learning"
+    ],
+    "answer": 0,
+    "reason": "The Kübler-Ross Change Curve outlines the emotional stages people go through when faced with change."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "In organizational learning, adjusting existing strategies to correct errors without challenging underlying assumptions is known as:",
+    "options": [
+      "Double-loop learning",
+      "Single-loop learning",
+      "Social facilitation",
+      "Normative conformity"
+    ],
+    "answer": 1,
+    "reason": "Single-loop learning involves correcting errors or improving efficiency without challenging underlying assumptions or goals."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Questioning and revising an organization's fundamental assumptions, values, and governing variables represents:",
+    "options": [
+      "Single-loop learning",
+      "Double-loop learning",
+      "Passive management by exception",
+      "Social loafing"
+    ],
+    "answer": 1,
+    "reason": "Double-loop learning delves into fundamental assumptions and challenges existing paradigms to create transformative change."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "According to Social Cognitive Theory, individuals acquire new skills and behaviors heavily through:",
+    "options": [
+      "Genetic inheritance",
+      "Strict financial penalties",
+      "Observational learning and modelling",
+      "Isolation and self-censorship"
+    ],
+    "answer": 2,
+    "reason": "Social Cognitive Theory emphasizes observational learning, where individuals learn by observing and modeling the behaviors of others."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Conformity driven by a desire to gain approval, avoid disapproval, or fit into a group is called:",
+    "options": [
+      "Informational Conformity",
+      "Normative Conformity",
+      "Social Loafing",
+      "Groupthink"
+    ],
+    "answer": 1,
+    "reason": "Normative conformity occurs when individuals conform to group norms to gain approval or avoid disapproval."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "When an individual conforms because they believe the group possesses accurate information and they want to make the correct choice, it is called:",
+    "options": [
+      "Identification",
+      "Normative Conformity",
+      "Informational Conformity",
+      "Deindividuation"
+    ],
+    "answer": 2,
+    "reason": "Informational conformity takes place when individuals believe the group has accurate information and they want to make the right choice."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "In Psychological Capital (PsyCap), an individual's belief in their own capability to successfully execute a task is known as:",
+    "options": [
+      "Hope",
+      "Resilience",
+      "Self-efficacy",
+      "Optimism"
+    ],
+    "answer": 2,
+    "reason": "Self-efficacy refers to the belief in one's own ability to perform specific tasks or achieve particular goals."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Having a positive outlook and expecting positive outcomes even in the face of setbacks defines which PsyCap component?",
+    "options": [
+      "Optimism",
+      "Self-efficacy",
+      "Resilience",
+      "Hope"
+    ],
+    "answer": 0,
+    "reason": "Optimism involves having a positive outlook and expecting positive outcomes, enabling individuals to maintain motivation."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "The ability to set goals, develop strategies to achieve them, and maintain the motivation to work toward them describes:",
+    "options": [
+      "Resilience",
+      "Hope",
+      "Social Exchange",
+      "Conformity"
+    ],
+    "answer": 1,
+    "reason": "Hope is the ability to set goals, develop strategies to achieve them, and maintain motivation despite obstacles."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "The capacity to bounce back from adversity, adapt to change, and maintain positive psychological well-being is defined as:",
+    "options": [
+      "Resilience",
+      "Optimism",
+      "Idealized Influence",
+      "Self-efficacy"
+    ],
+    "answer": 0,
+    "reason": "Resilience equips individuals with the mental strength to persevere through challenges and bounce back from adversity."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Taking advantage of group work by benefiting from the efforts of others without making a proportionate contribution is known as:",
+    "options": [
+      "Social Facilitation",
+      "Free-Riding",
+      "Normative Conformity",
+      "Intellectual Stimulation"
+    ],
+    "answer": 1,
+    "reason": "Free-riding is a characteristic of social loafing where individuals benefit from the group without contributing proportionately."
+  },
+  {
+    "difficulty": "Easy",
+    "case_chapter": "chapter4",
+    "question": "Which of the following is NOT one of the four components of Psychological Capital (PsyCap)?",
+    "options": [
+      "Self-efficacy",
+      "Empathy",
+      "Hope",
+      "Resilience"
+    ],
+    "answer": 1,
+    "reason": "PsyCap encompasses four key components: self-efficacy, optimism, hope, and resilience. Empathy is a component of Emotional Intelligence."
+  },
+
+  // ============================================================
+  // MEDIUM INDIVIDUAL MCQs (20)
+  // ============================================================
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "Under Social Identity Theory, when an auditor adopts negative attitudes toward a competing firm's staff to elevate their own firm's status, they are engaging in:",
+    "options": [
+      "Social Facilitation",
+      "Out-group derogation",
+      "Evaluation apprehension",
+      "Active management by exception"
+    ],
+    "answer": 1,
+    "reason": "Out-group derogation involves the adoption of negative attitudes and behaviors toward members of out-groups to enhance one's own social identity."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "A symptom of Groupthink where members develop an unwarranted sense of confidence, believing they are impervious to mistakes, is called:",
+    "options": [
+      "Collective rationalization",
+      "Belief in inherent morality",
+      "Illusion of invulnerability",
+      "Mindguards"
+    ],
+    "answer": 2,
+    "reason": "The illusion of invulnerability is a symptom where members believe their decisions are flawless and they are impervious to negative outcomes."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "In the context of Groupthink, a 'Mindguard' is a group member who:",
+    "options": [
+      "Intentionally plays the devil's advocate to stimulate debate",
+      "Actively shields the group from dissenting opinions or contrary information",
+      "Promotes double-loop learning to challenge assumptions",
+      "Reduces social loafing by assigning specific tasks"
+    ],
+    "answer": 1,
+    "reason": "Mindguards are members who actively shield the group from dissenting opinions or information that may challenge the prevailing consensus."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "According to the Triple Factor Model of Social Facilitation, the simultaneous presence of others engaged in the same task (which can enhance performance on simple tasks) is known as:",
+    "options": [
+      "Audience effects",
+      "Competition effects",
+      "Coaction effects",
+      "Deindividuation"
+    ],
+    "answer": 2,
+    "reason": "Coaction effects involve the simultaneous presence of others engaged in the same task, influencing performance."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "In Social Exchange Theory, deciding whether to terminate an existing professional relationship based on the attractiveness of outside options is governed by:",
+    "options": [
+      "Comparison Level (CL)",
+      "Comparison Level for Alternatives (CLalt)",
+      "The Reciprocity Norm",
+      "Outcome Interdependence"
+    ],
+    "answer": 1,
+    "reason": "Comparison Level for Alternatives (CLalt) reflects the assessment of available alternatives and potential outcomes of engaging in alternative relationships."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "A Transformational Leader serving as a role model who engenders deep trust, respect, and ethical emulation from their team is demonstrating:",
+    "options": [
+      "Idealized Influence",
+      "Intellectual Stimulation",
+      "Inspirational Motivation",
+      "Individualized Consideration"
+    ],
+    "answer": 0,
+    "reason": "Idealized influence refers to the ability of a leader to serve as a role model and engender trust, respect, and ethical emulation."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "A Transactional Leader who intervenes ONLY when significant problems or deviations from standards arise is practicing:",
+    "options": [
+      "Contingent reward",
+      "Active management by exception",
+      "Passive management by exception",
+      "Laissez-faire leadership"
+    ],
+    "answer": 2,
+    "reason": "Passive management by exception involves intervening only when significant problems or deviations from standards arise."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "An Authentic Leader who intentionally seeks dissenting opinions and evaluates them objectively before making a decision is engaging in:",
+    "options": [
+      "Relational transparency",
+      "Balanced processing",
+      "Internalized moral perspective",
+      "Groupthink"
+    ],
+    "answer": 1,
+    "reason": "Balanced processing means considering diverse perspectives, valuing dissenting opinions, and making decisions based on fair evaluation."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "Under Situational Leadership Theory, if a follower has 'some readiness' (R2) but lacks full capability, the leader should adopt a 'Selling' (S2) style, which requires:",
+    "options": [
+      "High Directive and Low Supportive behaviors",
+      "Low Directive and High Supportive behaviors",
+      "Low Directive and Low Supportive behaviors",
+      "High Directive and High Supportive behaviors"
+    ],
+    "answer": 3,
+    "reason": "The Selling (S2) style entails high directive and high supportive behaviors to provide guidance while offering encouragement."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "Under Situational Leadership Theory, a 'Delegating' (S4) style is best suited for followers who exhibit:",
+    "options": [
+      "Low readiness (R1)",
+      "Some readiness (R2)",
+      "High readiness (R3)",
+      "Very high readiness (R4)"
+    ],
+    "answer": 3,
+    "reason": "Delegating (S4) involves a hands-off approach (low directive, low supportive) and is meant for followers with very high readiness (R4)."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "A Servant Leader ensuring that firm resources are used responsibly, ethically, and for the greater good of the community demonstrates the behavior of:",
+    "options": [
+      "Foresight",
+      "Healing and Support",
+      "Stewardship of Resources",
+      "Idealized Influence"
+    ],
+    "answer": 2,
+    "reason": "Stewardship of resources involves responsible and ethical decision-making to ensure resources benefit the greater good."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "In Kurt Lewin's model, rewarding employees for adopting new regulatory standards so the changes become ingrained in the organizational culture represents the:",
+    "options": [
+      "Unfreezing stage",
+      "Changing stage",
+      "Refreezing stage",
+      "Storming stage"
+    ],
+    "answer": 2,
+    "reason": "Refreezing involves solidifying the change as the new norm through motivation, reinforcement, and alignment with organizational rewards."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "On the Kübler-Ross Change Curve, the phase where an individual feels overwhelmed by a disruption and requires significant emotional support is:",
+    "options": [
+      "Denial",
+      "Anger",
+      "Bargaining",
+      "Depression"
+    ],
+    "answer": 3,
+    "reason": "Depression is the phase where individuals feel overwhelmed by the change, necessitating emotional support and coping resources."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "According to Social Cognitive Theory, when a junior accountant observes a senior partner successfully navigate a complex audit and subsequently believes they can do the same, this is an example of building:",
+    "options": [
+      "Normative conformity",
+      "Evaluation apprehension",
+      "Self-efficacy through observational learning",
+      "Social loafing"
+    ],
+    "answer": 2,
+    "reason": "Observational learning (modeling) contributes to self-efficacy, which is an individual's belief in their capability to execute a task."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "Conformity driven by a professional's desire to identify with and be accepted as part of the esteemed accounting community is known as:",
+    "options": [
+      "Informational conformity",
+      "Identification",
+      "Normative conformity",
+      "Double-loop learning"
+    ],
+    "answer": 1,
+    "reason": "Identification refers to conformity driven by a desire to identify with and be accepted by a specific group or community."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "Which of the following is a primary characteristic of Social Loafing in an audit team?",
+    "options": [
+      "Heightened individual accountability",
+      "Increased individual motivation",
+      "Diminished accountability and free-riding",
+      "Over-scrutiny of financial data"
+    ],
+    "answer": 2,
+    "reason": "Social loafing is characterized by diminished individual accountability, reduced effort, and free-riding in a group setting."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "A key benefit of diverse work teams in modern accounting is that they:",
+    "options": [
+      "Increase the occurrence of groupthink",
+      "Promote single-loop learning",
+      "Pool comprehensive expertise to address complex financial issues from multiple angles",
+      "Encourage social loafing by hiding individual effort"
+    ],
+    "answer": 2,
+    "reason": "Work teams bring diverse expertise, allowing for comprehensive problem solving and a wider range of perspectives."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "Which element of PsyCap involves setting goals, developing strategies to achieve them, and maintaining the motivation to pursue those paths despite obstacles?",
+    "options": [
+      "Optimism",
+      "Self-efficacy",
+      "Resilience",
+      "Hope"
+    ],
+    "answer": 3,
+    "reason": "Hope is specifically defined as the ability to set goals, develop strategies to achieve them, and maintain motivation in the presence of obstacles."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "Which psychological theory was developed by Chris Argyris to explain how organizations adapt to change?",
+    "options": [
+      "Social Cognitive Theory",
+      "Single-loop and Double-loop Learning Theory",
+      "Situational Leadership Theory",
+      "Social Exchange Theory"
+    ],
+    "answer": 1,
+    "reason": "Chris Argyris introduced the concepts of single-loop and double-loop learning to explain organizational learning and adaptation."
+  },
+  {
+    "difficulty": "Medium",
+    "case_chapter": "chapter4",
+    "question": "A leader assigns a complex task to a team and encourages them to question standard industry wisdom and think creatively. Which Transformational Leadership behavior is this?",
+    "options": [
+      "Intellectual Stimulation",
+      "Idealized Influence",
+      "Contingent Reward",
+      "Individualized Consideration"
+    ],
+    "answer": 0,
+    "reason": "Intellectual stimulation involves challenging the status quo, encouraging creativity, and promoting critical thinking."
+  },
+
+  // ============================================================
+  // HARD INDIVIDUAL MCQs (10)
+  // ============================================================
+  {
+    "difficulty": "Hard",
+    "case_chapter": "chapter4",
+    "question": "An audit team is highly cohesive and faces intense time pressure. Members suppress their concerns about a client's valuation model to preserve harmony. Which strategy is most effective for a leader to implement to mitigate this Groupthink?",
+    "options": [
+      "Increase the isolation of the group to speed up the decision",
+      "Appoint a 'Devil's Advocate' to intentionally question assumptions and present alternative viewpoints",
+      "Adopt a strictly directive and authoritarian leadership style",
+      "Encourage the illusion of unanimity"
+    ],
+    "answer": 1,
+    "reason": "Appointing a devil's advocate intentionally introduces dissenting perspectives and stimulates critical evaluation, countering Groupthink."
+  },
+  {
+    "difficulty": "Hard",
+    "case_chapter": "chapter4",
+    "question": "According to Social Facilitation Theory, why might a highly experienced tax partner perform a complex, novel tax restructuring better in front of an audience, whereas a junior associate's performance would decline?",
+    "options": [
+      "The partner relies on normative conformity",
+      "The partner experiences deindividuation, lowering stress",
+      "The partner's expertise ensures their dominant response is correct, so heightened arousal facilitates performance",
+      "The junior associate is engaging in active management by exception"
+    ],
+    "answer": 2,
+    "reason": "Experts have a well-established and correct dominant response, meaning they are more likely to benefit from social facilitation (heightened arousal) even on complex tasks."
+  },
+  {
+    "difficulty": "Hard",
+    "case_chapter": "chapter4",
+    "question": "A partner rejects a highly profitable engagement because the client's business practices conflict with her deep-seated ethical values, despite immense pressure from the board. This decision is the hallmark of which Authentic Leadership component?",
+    "options": [
+      "Relational transparency",
+      "Internalized moral perspective",
+      "Balanced processing",
+      "Management by exception"
+    ],
+    "answer": 1,
+    "reason": "An internalized moral perspective means making decisions guided by a strong ethical framework and moral principles, even against conflicting interests."
+  },
+  {
+    "difficulty": "Hard",
+    "case_chapter": "chapter4",
+    "question": "In a firm, junior staff are repeatedly making errors. The partners decide to implement 'Double-loop learning'. Which action aligns with this theory?",
+    "options": [
+      "Instituting stricter financial penalties for every error made",
+      "Sending out reminder emails and offering a bonus for error-free work",
+      "Questioning and revising the firm's fundamental assumptions about training, workload, and client onboarding",
+      "Accepting the errors as a normal cost of doing business"
+    ],
+    "answer": 2,
+    "reason": "Double-loop learning involves questioning and challenging the foundational assumptions, values, and structures, rather than just fixing the surface errors."
+  },
+  {
+    "difficulty": "Hard",
+    "case_chapter": "chapter4",
+    "question": "A new accounting standard is introduced. An accountant lacks understanding but observes a respected peer successfully applying the new standard, which boosts their own belief that they can master it. This demonstrates the reciprocal interaction of personal and environmental factors defined in:",
+    "options": [
+      "Social Exchange Theory",
+      "Bandura's Social Cognitive Theory",
+      "Tuckman's Group Dynamics Theory",
+      "Zajonc's Drive Theory"
+    ],
+    "answer": 1,
+    "reason": "Bandura's Social Cognitive Theory emphasizes observational learning (modeling) and how the social environment strengthens an individual's self-efficacy."
+  },
+  {
+    "difficulty": "Hard",
+    "case_chapter": "chapter4",
+    "question": "Under Situational Leadership Theory, if a highly competent and motivated senior manager (R4 readiness) is assigned a critical audit, what is the most appropriate leadership style for the partner to adopt?",
+    "options": [
+      "Delegating (S4) - Low Directive, Low Supportive",
+      "Telling (S1) - High Directive, Low Supportive",
+      "Selling (S2) - High Directive, High Supportive",
+      "Participating (S3) - Low Directive, High Supportive"
+    ],
+    "answer": 0,
+    "reason": "For followers with very high readiness (R4), a delegating style (S4) with low directive and low supportive behaviors is best, reflecting high trust."
+  },
+  {
+    "difficulty": "Hard",
+    "case_chapter": "chapter4",
+    "question": "An auditor notices a questionable entry but agrees with the client's aggressive treatment because they believe the client has superior market information and they want to ensure the accounting is 'accurate'. This is an example of:",
+    "options": [
+      "Normative Conformity",
+      "Informational Conformity",
+      "Social Loafing",
+      "Out-group derogation"
+    ],
+    "answer": 1,
+    "reason": "Informational conformity occurs when individuals conform because they believe the other party possesses accurate information and they want to make the right choice."
+  },
+  {
+    "difficulty": "Hard",
+    "case_chapter": "chapter4",
+    "question": "A team of accountants working on a joint project feels a reduced sense of personal identity and accountability due to the anonymity provided by the large group, leading to lowered effort. This combination of factors is best described as:",
+    "options": [
+      "Deindividuation causing Social Loafing",
+      "Social Facilitation causing Groupthink",
+      "Double-loop learning causing Intellectual Stimulation",
+      "Normative conformity causing Social Identity"
+    ],
+    "answer": 0,
+    "reason": "Deindividuation (reduced personal identity/anonymity in a group) often facilitates social loafing, where individuals exert less effort due to diminished accountability."
+  },
+  {
+    "difficulty": "Hard",
+    "case_chapter": "chapter4",
+    "question": "Two professionals are negotiating workload distribution. They assess the effort required (costs) versus the recognition received (rewards), ensuring that their contributions and benefits are proportionate. Which principles of Social Exchange Theory are they applying?",
+    "options": [
+      "Comparison Level for Alternatives (CLalt) and Reciprocity",
+      "Rational Choice and Equity",
+      "Groupthink and Social Facilitation",
+      "Idealized Influence and Stewardship"
+    ],
+    "answer": 1,
+    "reason": "Rational choice involves weighing benefits and costs, while equity emphasizes a perceived balance between inputs (contributions) and outputs (benefits)."
+  },
+  {
+    "difficulty": "Hard",
+    "case_chapter": "chapter4",
+    "question": "A Chartered Accountant sets an ambitious goal to master complex AI-driven audit tools. Despite numerous software failures and a steep learning curve, she maintains a positive expectation of success and adapts her strategies to keep moving forward. Which elements of PsyCap are most actively driving her success?",
+    "options": [
+      "Self-efficacy and Deindividuation",
+      "Optimism and Hope",
+      "Resilience and Social Loafing",
+      "Normative Conformity and Identification"
+    ],
+    "answer": 1,
+    "reason": "Optimism (positive expectation of success) and Hope (setting goals and developing alternative strategies despite obstacles) are the driving PsyCap elements here."
+  },
+
 // Chapter5
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_01",
+  case_chapter: "chapter5",
+  question: "Which branch of philosophy is described as the ‘theory of reality’ and enquires into the nature of reality and existence?",
+  options: [
+    "Epistemology",
+    "Axiology",
+    "Metaphysics",
+    "Logic"
+  ],
+  answer: 2,
+  reason: "Metaphysics is described in the chapter as the ‘theory of reality’ and is an enquiry into the nature of reality and existence."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_02",
+  case_chapter: "chapter5",
+  question: "The branch of philosophy concerned with the nature, scope and limits of human knowledge is known as:",
+  options: [
+    "Epistemology",
+    "Metaphysics",
+    "Aesthetics",
+    "Ethics"
+  ],
+  answer: 0,
+  reason: "Epistemology is the ‘theory of knowledge’ and is concerned with the nature, scope and limits of human knowledge."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_03",
+  case_chapter: "chapter5",
+  question: "In Indian epistemology, the means of acquiring valid knowledge is called:",
+  options: [
+    "Prameya",
+    "Pramātā",
+    "Prama",
+    "Pramāna"
+  ],
+  answer: 3,
+  reason: "The chapter identifies Pramāna as the means of acquiring valid knowledge. Pramātā is the subject who knows, Prameya is the object of knowledge and Prama is the resultant valid knowledge."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_04",
+  case_chapter: "chapter5",
+  question: "Which of the following is considered to be the direct source of knowledge obtained through sense-organ contact with the object?",
+  options: [
+    "Anumāna",
+    "Pratyaksha",
+    "Shabda",
+    "Arthāpatti"
+  ],
+  answer: 1,
+  reason: "Pratyaksha or perception is considered to be the direct source of knowledge obtained through the instrumentality of sense-organ contact with the object."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_05",
+  case_chapter: "chapter5",
+  question: "In the Nyāya example, a person infers the existence of fire on a hill after observing smoke. What is the smoke referred to as in this inference?",
+  options: [
+    "Sādhya",
+    "Paksa",
+    "Hetu",
+    "Nigamana"
+  ],
+  answer: 2,
+  reason: "In the example, fire is the sādhya, smoke is the hetu or indicator by which the character is deduced, and the hill is the paksa."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_06",
+  case_chapter: "chapter5",
+  question: "Which pramāna is based on the statement of a trustworthy person?",
+  options: [
+    "Upamāna",
+    "Anupalabdhi",
+    "Anumāna",
+    "Śabda"
+  ],
+  answer: 3,
+  reason: "Śabda or verbal testimony is defined as the statement of a trustworthy person and is considered an independent source of valid knowledge."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_07",
+  case_chapter: "chapter5",
+  question: "Knowledge obtained by comparing an object with a similar object is referred to as:",
+  options: [
+    "Upamāna",
+    "Pratyaksha",
+    "Anupalabdhi",
+    "Arthāpatti"
+  ],
+  answer: 0,
+  reason: "Upamāna is the means of knowledge derived from comparison between two objects and involves understanding through similarity or analogy."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_08",
+  case_chapter: "chapter5",
+  question: "Which of the following refers to the philosophical study of value?",
+  options: [
+    "Axiology",
+    "Metaphysics",
+    "Epistemology",
+    "Logic"
+  ],
+  answer: 0,
+  reason: "Axiology is the philosophical study of value and is also described as the Theory of Value."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_09",
+  case_chapter: "chapter5",
+  question: "Which branch of ethics examines the standards for the rightness and wrongness of actions?",
+  options: [
+    "Descriptive ethics",
+    "Metaethics",
+    "Applied ethics",
+    "Normative ethics"
+  ],
+  answer: 3,
+  reason: "Normative ethics examines standards for the rightness and wrongness of actions and considers how one ought to act morally."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "phy_ch5_10",
+  case_chapter: "chapter5",
+  question: "Which one of the following is the ultimate goal among the four Purusharthas?",
+  options: [
+    "Dharma",
+    "Artha",
+    "Moksha",
+    "Kama"
+  ],
+  answer: 2,
+  reason: "The four Purusharthas are Dharma, Artha, Kama and Moksha. Moksha is described as the ultimate goal involving spiritual wisdom, self-discovery and liberation."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch5_11",
+  case_chapter: "chapter5",
+  question: "An auditor compares the current financial performance of a company with that of a similar company to understand trends and assess performance. Which pramāna is most closely reflected in this approach?",
+  options: [
+    "Anupalabdhi",
+    "Upamāna",
+    "Arthāpatti",
+    "Śabda"
+  ],
+  answer: 1,
+  reason: "Upamāna involves obtaining knowledge through comparison and drawing analogies. The chapter specifically relates its principles to comparative analysis for performance evaluation, risk assessment and decision-making."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch5_12",
+  case_chapter: "chapter5",
+  question: "A proposition in financial reporting is accepted because it is internally consistent with other propositions and accounting principles within the same framework, even though the emphasis is not on directly matching an external fact. Which theory of truth does this illustrate?",
+  options: [
+    "Pragmatic Theory",
+    "Correspondence Theory",
+    "Coherence Theory",
+    "Metaphysical Theory"
+  ],
+  answer: 2,
+  reason: "The Coherence Theory determines truth through alignment and internal consistency with other propositions within a systematic framework. The chapter relates this to internally consistent financial statements and accounting standards."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch5_13",
+  case_chapter: "chapter5",
+  question: "A professional body studies the ethical practices generally followed in financial reporting and draws conclusions from observed patterns without primarily examining abstract philosophical questions about morality. Which type of ethics is involved?",
+  options: [
+    "Descriptive ethics",
+    "Normative ethics",
+    "Applied ethics",
+    "Metaethics"
+  ],
+  answer: 0,
+  reason: "Descriptive ethics gathers information about how people live and draws general conclusions based on observed patterns. It takes a value-free approach and treats ethics as a social science."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch5_14",
+  case_chapter: "chapter5",
+  question: "A Chartered Accountant is considering how environmental and social disclosures should be presented in financial reports so that the information is reported transparently and accurately. Which branch of ethics is most directly involved?",
+  options: [
+    "Metaethics",
+    "Normative ethics",
+    "Descriptive ethics",
+    "Applied ethics"
+  ],
+  answer: 3,
+  reason: "Applied ethics involves applying ethical theories and principles to specific real-world situations. The chapter specifically gives environmental and social disclosures in financial reporting as an example."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "phy_ch5_15",
+  case_chapter: "chapter5",
+  question: "According to the chapter, which statement best distinguishes Indian Philosophy from Western Philosophy in relation to the pursuit of truth?",
+  options: [
+    "Indian Philosophy rejects reason, whereas Western Philosophy relies only on reason",
+    "Indian Philosophy places emphasis on practical realization of truth, whereas Western Philosophy primarily treats philosophy as an intellectual pursuit of truth",
+    "Indian Philosophy deals only with ethics, whereas Western Philosophy deals only with metaphysics",
+    "Indian Philosophy and Western Philosophy use identical methods and have no significant difference in philosophical inquiry"
+  ],
+  answer: 1,
+  reason: "The chapter states that Western Philosophy primarily adheres to the etymological essence of philosophy as an intellectual pursuit of truth, whereas Indian Philosophy takes a profoundly spiritual approach and emphasizes practical realization of truth."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch5_16",
+  case_chapter: "chapter5",
+  question: "During an audit, the auditor observes smoke from a distant location and, based on the known invariable connection between smoke and fire, concludes that fire is present. The auditor then applies the universal relationship specifically to the hill under examination. Which pair correctly identifies the reasoning involved and the stage of the Nyāya syllogism?",
+  options: [
+    "Pratyaksha and Nigamana",
+    "Śabda and Udāharana",
+    "Upamāna and Hetu",
+    "Anumāna and Upanaya"
+  ],
+  answer: 3,
+  reason: "The inference of fire from smoke is Anumāna. In the Nyāya syllogism, Upanaya is the application of the universal concomitance to the present case."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch5_17",
+  case_chapter: "chapter5",
+  question: "A financial statement contains information that is checked against the actual economic reality of the business, while another review ensures that the different reported figures remain internally consistent with the applicable accounting framework. Which combination of theories of truth is most appropriately applied?",
+  options: [
+    "Pragmatic Theory followed by Metaphysics",
+    "Coherence Theory followed by Aesthetics",
+    "Correspondence Theory followed by Coherence Theory",
+    "Axiology followed by Epistemology"
+  ],
+  answer: 2,
+  reason: "Correspondence Theory focuses on whether a proposition aligns with reality, which is relevant to ensuring that financial information reflects economic reality. Coherence Theory focuses on internal consistency and alignment within a systematic framework."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch5_18",
+  case_chapter: "chapter5",
+  question: "A Chartered Accountant encounters two apparently conflicting facts: a company shows a particular outcome, but an important supporting transaction is not visible in the available records. The auditor considers a missing fact that would reconcile the two observed facts. Which combination of pramāna and professional application is most appropriate?",
+  options: [
+    "Arthāpatti and bridging data gaps through a justified postulation",
+    "Pratyaksha and relying only on direct sense-organ contact",
+    "Upamāna and comparing two similar entities",
+    "Śabda and accepting information from any available source"
+  ],
+  answer: 0,
+  reason: "Arthāpatti is postulation of an unperceived fact to resolve conflicting perceived facts. The chapter applies it to Chartered Accountancy by bridging data gaps through logical suppositions and assumptions necessary to explain observed situations."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch5_19",
+  case_chapter: "chapter5",
+  question: "A professional is deciding how to deal with an ethical issue. One stage requires determining the moral standards that should guide conduct, while another requires applying those principles to a specific financial reporting situation. Which combination correctly identifies these two stages?",
+  options: [
+    "Descriptive ethics and Metaethics",
+    "Normative ethics and Applied ethics",
+    "Metaethics and Descriptive ethics",
+    "Aesthetics and Normative ethics"
+  ],
+  answer: 1,
+  reason: "Normative ethics determines standards for morally right and wrong conduct and considers how one ought to act. Applied ethics then applies ethical theories and principles to specific real-world situations requiring moral judgement."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "phy_ch5_20",
+  case_chapter: "chapter5",
+  question: "An accountant first obtains information through direct observation, then evaluates whether the information is properly justified and valid before relying on it in professional decision-making. Which two philosophical areas are most directly connected with this process?",
+  options: [
+    "Aesthetics and Axiology",
+    "Metaphysics and Ethics",
+    "Epistemology and Pratyaksha",
+    "Dharma and Kama"
+  ],
+  answer: 2,
+  reason: "Epistemology concerns the nature and validation of knowledge, while Pratyaksha is perception or direct observation and firsthand verification. The chapter specifically connects Pratyaksha with the importance of direct observation in accountancy."
+},
 
 {
   difficulty: "Easy",
@@ -11386,7 +13140,7 @@ const caseStudies = [
       reason: "The chapter identifies gender diversity, equal opportunities, representation and work-life balance as important issues and strategies within the global business environment."
     }
   ]
-},
+}
 
 
 
