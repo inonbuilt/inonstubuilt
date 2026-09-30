@@ -7646,7 +7646,2347 @@ options: [
 ],
 answer: 1,
 reason: "The Elevator Pitch includes the Problem Statement, Solution, Value Proposition, Traction or Proof and Call to Action. Traction or Proof provides evidence such as testimonials, case studies or data points, while the Call to Action specifies the next step."
+},
+// CHapter 5
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_01",
+  case_chapter: "chapter5",
+  question: "Which of the following is a key reason why the Government should support startups?",
+  options: [
+    "To eliminate all competition from incumbent firms",
+    "To stimulate technological progress, enhance productivity and create new job opportunities",
+    "To ensure that every startup operates without private investment",
+    "To restrict startups to traditional sectors"
+  ],
+  answer: 1,
+  reason: "The chapter states that startups are engines of innovation and economic growth and that nurturing them can stimulate technological progress, enhance productivity and create new job opportunities."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_02",
+  case_chapter: "chapter5",
+  question: "Which government support measure is specifically intended to reduce regulatory burdens and streamline bureaucratic processes for startups?",
+  options: [
+    "Policy Frameworks",
+    "Market Access and Networking",
+    "Skill Development and Capacity Building",
+    "Infrastructure and Incubation Facilities"
+  ],
+  answer: 0,
+  reason: "Policy Frameworks enable the government to reduce regulatory burdens, streamline bureaucratic processes and provide incentives such as tax incentives, grants and subsidies."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_03",
+  case_chapter: "chapter5",
+  question: "Facilitating access to finance through dedicated funding programmes, venture capital funds and angel investor networks falls under which form of government support?",
+  options: [
+    "Intellectual Property Rights Protection",
+    "Market Access and Networking",
+    "Access to Funding",
+    "Skill Development and Capacity Building"
+  ],
+  answer: 2,
+  reason: "The chapter identifies Access to Funding as a critical form of government support and refers to dedicated funding programmes, venture capital funds and angel investor networks."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_04",
+  case_chapter: "chapter5",
+  question: "Which government support measure provides startups with mentorship, networking opportunities and access to state-of-the-art facilities through incubators, accelerators and research parks?",
+  options: [
+    "Infrastructure and Incubation Facilities",
+    "Policy Frameworks",
+    "Market Access and Networking",
+    "IPR Protection"
+  ],
+  answer: 0,
+  reason: "Infrastructure and Incubation Facilities include incubators, accelerators and research parks that provide essential resources, mentorship, networking opportunities and access to state-of-the-art facilities."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_05",
+  case_chapter: "chapter5",
+  question: "Which of the following is a way in which startups can support the Government?",
+  options: [
+    "Reducing the need for innovation",
+    "Job Creation",
+    "Restricting consumer choice",
+    "Increasing regulatory burdens"
+  ],
+  answer: 1,
+  reason: "The chapter identifies Job Creation as an important way in which startups support the Government and the economy."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_06",
+  case_chapter: "chapter5",
+  question: "Successful startups contribute to government finances primarily through:",
+  options: [
+    "Corporate taxes, income taxes and indirect taxes",
+    "Only customs duties",
+    "Only property taxes",
+    "Only capital gains of angel investors"
+  ],
+  answer: 0,
+  reason: "The chapter states that successful startups generate tax revenue through corporate taxes, income taxes and indirect taxes."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_07",
+  case_chapter: "chapter5",
+  question: "Which institution is a crucial government agency under the Ministry of Commerce and Industry responsible for promoting industrial development, foreign trade and internal trade in India?",
+  options: [
+    "SIDBI",
+    "NITI Aayog",
+    "DPIIT",
+    "NRDC"
+  ],
+  answer: 2,
+  reason: "The Department for Promotion of Industry and Internal Trade (DPIIT) is a government agency under the Ministry of Commerce and Industry responsible for policies relating to industrial development, foreign trade and internal trade."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_08",
+  case_chapter: "chapter5",
+  question: "Which institution operates the Startup India Hub as a single-point contact platform for startups?",
+  options: [
+    "NITI Aayog",
+    "DPIIT",
+    "SIDBI",
+    "Indian Patent Office"
+  ],
+  answer: 1,
+  reason: "The chapter states that DPIIT operates the Startup India Hub, a single-point contact platform through which startups can access information, resources and support services."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_09",
+  case_chapter: "chapter5",
+  question: "Which institution is described as the premier policy think tank of the Government of India?",
+  options: [
+    "DPIIT",
+    "NRDC",
+    "NITI Aayog",
+    "SIDBI"
+  ],
+  answer: 2,
+  reason: "NITI Aayog, or the National Institution for Transforming India, is described in the chapter as the premier policy think tank of the Government of India."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_10",
+  case_chapter: "chapter5",
+  question: "Which initiative of NITI Aayog supports the establishment of incubators in academic institutions, research organisations and industry clusters?",
+  options: [
+    "Atal Tinkering Labs",
+    "Atal Incubation Centers",
+    "Startup Launchpad",
+    "Startup India Hub"
+  ],
+  answer: 1,
+  reason: "Atal Incubation Centers (AICs) are supported by the Atal Innovation Mission and provide infrastructure, mentorship, networking opportunities and access to funding."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_11",
+  case_chapter: "chapter5",
+  question: "Which institution is focused on promoting and financing small and medium enterprises in India?",
+  options: [
+    "SIDBI",
+    "DPIIT",
+    "NRDC",
+    "FICCI"
+  ],
+  answer: 0,
+  reason: "The Small Industries Development Bank of India (SIDBI) is a principal financial institution wholly owned by the Government of India, focused on promoting and financing SMEs."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_12",
+  case_chapter: "chapter5",
+  question: "Which SIDBI platform facilitates collaboration between startups and investors, mentors, incubators and other stakeholders?",
+  options: [
+    "Startup India Hub",
+    "SIDBI Startup Mitra Portal",
+    "Investor Connect Platform",
+    "Patent Facilitation Cell"
+  ],
+  answer: 1,
+  reason: "The SIDBI Startup Mitra Portal is an online platform that facilitates collaboration between startups and investors, mentors, incubators and other stakeholders."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_13",
+  case_chapter: "chapter5",
+  question: "Which institution is mandated to promote, develop and commercialize indigenous technologies and innovations originating from research institutions, universities and laboratories?",
+  options: [
+    "NRDC",
+    "DPIIT",
+    "SIDBI",
+    "FICCI"
+  ],
+  answer: 0,
+  reason: "The National Research Development Corporation (NRDC) is mandated to promote, develop and commercialize indigenous technologies and innovations originating from research institutions, universities and laboratories."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_14",
+  case_chapter: "chapter5",
+  question: "Which body is responsible for granting patents and trademarks in India according to the chapter?",
+  options: [
+    "DPIIT",
+    "Indian Patent Office",
+    "NRDC",
+    "ASSOCHAM"
+  ],
+  answer: 1,
+  reason: "The Indian Patent Office (IPO), administered by the Office of the Controller General of Patents, Designs, and Trademarks under DPIIT, is described as the primary government agency responsible for granting patents and trademarks in India."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch5_15",
+  case_chapter: "chapter5",
+  question: "Which state-level institution provides incubation, funding, mentorship and networking programmes to startups in Andhra Pradesh?",
+  options: [
+    "KITS",
+    "APIS",
+    "CIEDC",
+    "BEDA"
+  ],
+  answer: 1,
+  reason: "The Andhra Pradesh Innovation Society (APIS) is a government initiative aimed at fostering innovation and entrepreneurship in Andhra Pradesh through incubation, funding, mentorship and networking programmes."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch5_16",
+  case_chapter: "chapter5",
+  question: "A startup requires training in business planning, market research, financial management and legal compliance. Which institution's programme is specifically aligned with these requirements?",
+  options: [
+    "NRDC through its Entrepreneurship Development Program",
+    "FICCI through its Investor Connect Platform",
+    "DPIIT through the Startup India Hub",
+    "IPO through Fast-Track Examination of Patents"
+  ],
+  answer: 0,
+  reason: "NRDC conducts Entrepreneurship Development Programs (EDPs) covering business planning, market research, financial management and legal compliance."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch5_17",
+  case_chapter: "chapter5",
+  question: "An entrepreneur wants to commercialize a patented technology developed by a research institution. Which NRDC activity would be most relevant?",
+  options: [
+    "Technology Transfer and Licensing",
+    "Atal Tinkering Labs",
+    "Startup Policy Advocacy",
+    "SIDBI Startup Mitra"
+  ],
+  answer: 0,
+  reason: "NRDC facilitates technology transfer and licensing agreements between research institutions, inventors and startups interested in commercializing patented technologies and innovations."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch5_18",
+  case_chapter: "chapter5",
+  question: "A startup wants to reduce the financial burden associated with patent filing and prosecuting intellectual property. Which IPO initiative is most directly relevant?",
+  options: [
+    "Patent Facilitation Cell",
+    "Scheme for Facilitating Startups Intellectual Property Protection (SIPP)",
+    "Startup Accelerator Program",
+    "Startup Conclaves and Summits"
+  ],
+  answer: 1,
+  reason: "The Scheme for Facilitating Startups Intellectual Property Protection (SIPP) provides financial support for filing and prosecuting patents, trademarks and designs."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch5_19",
+  case_chapter: "chapter5",
+  question: "A startup wants assistance in understanding the patenting process, including patent filing, examination, prosecution and maintenance. Which facility should it approach?",
+  options: [
+    "Investor Connect Platform",
+    "Patent Facilitation Cell",
+    "Atal Community Innovation Center",
+    "Startup Launchpad"
+  ],
+  answer: 1,
+  reason: "The Patent Facilitation Cell (PFC) was established by the Indian Patent Office to provide assistance and guidance to startups and small entities in patent filing, examination, prosecution and maintenance."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch5_20",
+  case_chapter: "chapter5",
+  question: "A startup in Punjab seeks financial incentives, regulatory assistance and access to markets. Which state-level institution in the chapter is associated with these forms of support?",
+  options: [
+    "Punjab Bureau of Investment Promotion (PBIP)",
+    "Andhra Pradesh Innovation Society (APIS)",
+    "Karnataka Innovation and Technology Society (KITS)",
+    "Goa Startup Promotion Cell"
+  ],
+  answer: 0,
+  reason: "The Punjab Bureau of Investment Promotion (PBIP) supports startups with financial incentives, regulatory assistance and access to markets."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch5_21",
+  case_chapter: "chapter5",
+  question: "A startup wishes to showcase its innovation to potential investors, customers and collaborators while also obtaining networking opportunities, pitch sessions and mentorship. Which initiative would most closely meet this requirement?",
+  options: [
+    "FICCI Startup Policy Advocacy",
+    "ASSOCHAM Startup Launchpad",
+    "NRDC Entrepreneurship Development Program",
+    "SIDBI Startup Mitra Portal"
+  ],
+  answer: 1,
+  reason: "ASSOCHAM's Startup Launchpad provides startups with a platform to showcase innovations, products and services to potential investors, customers and collaborators, along with networking opportunities, pitch sessions and mentorship."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch5_22",
+  case_chapter: "chapter5",
+  question: "A startup is looking for a platform that facilitates matchmaking with investors so that it can pitch its idea and secure funding. Which initiative of FICCI is relevant?",
+  options: [
+    "Startup Accelerator Program",
+    "Startup Conclaves and Summits",
+    "Investor Connect Platform",
+    "Policy Advocacy"
+  ],
+  answer: 2,
+  reason: "FICCI's Investor Connect Platform facilitates matchmaking between startups and investors, enabling startups to pitch their ideas and secure funding."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch5_23",
+  case_chapter: "chapter5",
+  question: "An external association is engaging with policymakers and government authorities to recommend measures relating to taxation, access to finance and regulatory burdens. Which function is being performed?",
+  options: [
+    "Policy Advocacy",
+    "Deal Sourcing",
+    "Due Diligence",
+    "Mentorship and Support"
+  ],
+  answer: 0,
+  reason: "Policy Advocacy involves engaging with policymakers, regulators and government authorities to advocate reforms that support startups and improve the entrepreneurial environment."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch5_24",
+  case_chapter: "chapter5",
+  question: "An accredited investor network is examining a startup's business model, market opportunity, competitive landscape, intellectual property, financials and team credentials before investing. Which stage of angel network activity is this?",
+  options: [
+    "Investment",
+    "Membership",
+    "Deal Sourcing",
+    "Due Diligence"
+  ],
+  answer: 3,
+  reason: "Due Diligence involves a thorough assessment of the startup's viability and investment potential, including its business model, market opportunity, competitive landscape, intellectual property, financials and team credentials."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch5_25",
+  case_chapter: "chapter5",
+  question: "After a startup successfully completes due diligence and meets the investment criteria, angel investors provide capital in exchange for an equity stake. Which stage does this represent?",
+  options: [
+    "Deal Sourcing",
+    "Investment",
+    "Membership",
+    "Mentorship and Support"
+  ],
+  answer: 1,
+  reason: "The Investment stage occurs after successful due diligence and satisfaction of investment criteria, where angel investors collectively invest capital in exchange for an equity stake."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch5_26",
+  case_chapter: "chapter5",
+  question: "A research-based startup has developed an indigenous technology and now needs assistance in commercializing it. At the same time, the founders require training in business planning and legal compliance. Which combination of NRDC support is most appropriate?",
+  options: [
+    "Technology Transfer and Licensing plus Entrepreneurship Development Program",
+    "Patent Facilitation Cell plus Investor Connect Platform",
+    "Startup Launchpad plus Startup Acceleration Program",
+    "Atal Incubation Centers plus Startup India Hub"
+  ],
+  answer: 0,
+  reason: "NRDC facilitates Technology Transfer and Licensing for commercialization of technologies and conducts Entrepreneurship Development Programs covering areas such as business planning, market research, financial management and legal compliance."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch5_27",
+  case_chapter: "chapter5",
+  question: "A startup has developed an innovation and wants both financial support for protecting its intellectual property and a faster examination process so that it can enter the market more quickly. Which combination is most appropriate?",
+  options: [
+    "SIPP and Fast-Track Examination of Patents for Startups",
+    "Startup India Hub and Atal Tinkering Labs",
+    "SMILE and SVCF",
+    "Startup Launchpad and Investor Connect Platform"
+  ],
+  answer: 0,
+  reason: "SIPP provides financial support for filing and prosecuting patents, trademarks and designs, while Fast-Track Examination of Patents for Startups helps expedite the patent examination process and obtain protection more quickly."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch5_28",
+  case_chapter: "chapter5",
+  question: "An early-stage startup is searching for capital as well as strategic guidance. One organisation it approaches evaluates the startup's market potential, team strength, innovation, scalability and revenue potential before considering investment. Which combination of activities is reflected?",
+  options: [
+    "Policy Advocacy and Market Access",
+    "Deal Sourcing and Due Diligence",
+    "Skill Development and Incubation",
+    "Technology Transfer and Patent Examination"
+  ],
+  answer: 1,
+  reason: "Angel networks undertake Deal Sourcing by scouting promising opportunities and evaluating factors such as market potential, team strength, innovation, scalability and revenue potential. Once a startup is identified, Due Diligence is conducted to assess its viability and investment potential."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch5_29",
+  case_chapter: "chapter5",
+  question: "A startup wants to improve its access to industry mentors and investors while also influencing regulatory reforms affecting taxation and intellectual property rights. Which combination of external-support mechanisms would best address both requirements?",
+  options: [
+    "ASSOCHAM Startup Launchpad and Policy Advocacy",
+    "FICCI Investor Connect Platform and Policy Advocacy",
+    "Indian Patent Office and SIDBI SVCF",
+    "NITI Aayog AIC and NRDC EDP"
+  ],
+  answer: 1,
+  reason: "FICCI's Investor Connect Platform facilitates matchmaking between startups and investors, while FICCI's Startup Policy Advocacy engages with policymakers and government authorities on regulatory reforms, taxation, access to finance and innovation."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch5_30",
+  case_chapter: "chapter5",
+  question: "A startup in a rural district wants to develop and commercialize its idea with access to incubation support, while a state-level initiative in its region also aims to provide mentorship, funding and networking. Which combination correctly reflects the two levels of institutional support?",
+  options: [
+    "Atal Community Innovation Center and Andhra Pradesh Innovation Society",
+    "Atal Tinkering Lab and Indian Angel Network",
+    "Startup India Hub and FICCI",
+    "Patent Facilitation Cell and ASSOCHAM Startup Launchpad"
+  ],
+  answer: 0,
+  reason: "Atal Community Innovation Centers (ACICs) are district-level community-centric innovation hubs supporting innovators and entrepreneurs from rural and semi-urban areas. Andhra Pradesh Innovation Society (APIS) is a state government initiative providing incubation, funding, mentorship and networking support to startups in Andhra Pradesh."
+},
+{
+  case_id: "strt_ch5_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Aarav has developed a startup that uses technology to help small retailers manage their inventory. The business is still at an early stage, and Aarav is concerned about regulatory procedures, access to finance and the need to connect with mentors and other stakeholders.</p>
+
+    <p>He studies the different forms of government support available to startups. He learns that the Government can create supportive policy frameworks, facilitate access to finance, develop incubation facilities and provide opportunities for networking and market access.</p>
+
+    <p>Aarav also understands that strong Intellectual Property Rights protection can encourage innovation and attract investment. He therefore begins exploring how different government support measures can help his startup move from an idea towards a scalable business.</p>
+  `,
+
+  questions: [
+    {
+      question: "Aarav is specifically concerned about reducing regulatory burdens and streamlining bureaucratic processes. Which form of government support directly addresses this requirement?",
+      options: [
+        "Policy Frameworks",
+        "Market Access and Networking",
+        "Infrastructure and Incubation Facilities",
+        "Skill Development and Capacity Building"
+      ],
+      answer: 0,
+      reason: "The chapter states that supportive Policy Frameworks can reduce regulatory burdens, streamline bureaucratic processes and provide incentives for startups."
+    },
+
+    {
+      question: "Aarav is looking for funding mechanisms to support the startup at its early stage. Which government support measure is most relevant?",
+      options: [
+        "Intellectual Property Rights Protection",
+        "Access to Funding",
+        "Market Access and Networking",
+        "Skill Development and Capacity Building"
+      ],
+      answer: 1,
+      reason: "Access to Funding is identified as critical for startup survival and growth and may include dedicated funding programmes, venture capital funds and angel investor networks."
+    },
+
+    {
+      question: "Aarav needs mentorship, networking opportunities and access to facilities where his startup can experiment and scale. Which government support measure is most appropriate?",
+      options: [
+        "Infrastructure and Incubation Facilities",
+        "Policy Frameworks",
+        "Access to Funding",
+        "Tax Revenue Generation"
+      ],
+      answer: 0,
+      reason: "Infrastructure and Incubation Facilities such as incubators, accelerators and research parks provide essential resources, mentorship, networking opportunities and access to state-of-the-art facilities."
+    },
+
+    {
+      question: "Aarav wants to connect with potential clients, partners and investors to validate his product and acquire customers. Which government support measure addresses this requirement?",
+      options: [
+        "IPR Protection",
+        "Skill Development",
+        "Market Access and Networking",
+        "Policy Frameworks"
+      ],
+      answer: 2,
+      reason: "Market Access and Networking helps startups validate products, acquire customers and scale through networking events, trade fairs and matchmaking platforms."
+    },
+
+    {
+      question: "Why is Intellectual Property Rights protection relevant to Aarav's technology-based startup?",
+      options: [
+        "It removes the need for market research",
+        "It is intended only to generate tax revenue",
+        "It ensures every startup receives government procurement contracts",
+        "It incentivizes innovation and helps protect intellectual property assets"
+      ],
+      answer: 3,
+      reason: "The chapter explains that robust IPR protection is essential for incentivizing innovation and attracting investment, including through mechanisms that protect intellectual property assets."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Meera has incorporated a startup developing a technology-enabled solution for small businesses. She wants to understand the central-level institution responsible for creating a conducive environment for entrepreneurship and administering the Startup India initiative.</p>
+
+    <p>During her study, Meera learns about an institution under the Ministry of Commerce and Industry that formulates and implements policies relating to industrial development, foreign trade and internal trade. She also learns that this institution administers Startup India and provides recognition and certification to eligible startups.</p>
+
+    <p>Meera further discovers that startups can use a single-point contact platform for information about business registration, funding opportunities, mentorship and networking. She decides to explore these facilities for her startup.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which central-level institution is Meera studying in this case?",
+      options: [
+        "SIDBI",
+        "NITI Aayog",
+        "DPIIT",
+        "NRDC"
+      ],
+      answer: 2,
+      reason: "The Department for Promotion of Industry and Internal Trade (DPIIT) is the government agency under the Ministry of Commerce and Industry described in the chapter as responsible for these functions."
+    },
+
+    {
+      question: "Which flagship programme administered by the institution is referred to in the case?",
+      options: [
+        "Startup India",
+        "SMILE",
+        "SVCF",
+        "Startup Launchpad"
+      ],
+      answer: 0,
+      reason: "DPIIT administers the Startup India initiative, which was launched to nurture and accelerate the growth of startups."
+    },
+
+    {
+      question: "What benefit is associated with Recognition and Certification under Startup India?",
+      options: [
+        "Automatic equity investment from angel investors",
+        "Eligibility for certain benefits such as tax exemptions, self-certification compliance and government procurement opportunities",
+        "Guaranteed international market access",
+        "Automatic patent approval"
+      ],
+      answer: 1,
+      reason: "The chapter states that Startup India recognition provides various benefits, including eligibility for tax exemptions, self-certification compliance and access to government procurement opportunities."
+    },
+
+    {
+      question: "Which platform provides a single-point contact for information, resources and support services?",
+      options: [
+        "SIDBI Startup Mitra Portal",
+        "Investor Connect Platform",
+        "Startup India Hub",
+        "Patent Facilitation Cell"
+      ],
+      answer: 2,
+      reason: "The Startup India Hub, operated by DPIIT, serves as a single-point contact platform for startups to access information, resources and support services."
+    },
+
+    {
+      question: "Which of the following is specifically mentioned as an area supported through the Startup India Hub?",
+      options: [
+        "Business registration",
+        "Patent granting",
+        "Equity valuation",
+        "Industrial procurement by private companies"
+      ],
+      answer: 0,
+      reason: "The chapter states that the Startup India Hub assists with aspects such as business registration, funding opportunities, mentorship and networking."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Rohan is working with a group of students and innovators who want to convert their ideas into practical solutions. They require incubation facilities, mentorship, networking opportunities and exposure to funding sources.</p>
+
+    <p>The group learns about a government policy think tank that provides strategic and directional inputs for sustainable development and economic growth. Its Atal Innovation Mission includes different programmes aimed at promoting innovation and entrepreneurship.</p>
+
+    <p>The innovators also learn about facilities at the community and school levels. They decide to identify which programme best matches their particular stage and environment.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which institution described in the case is the premier policy think tank of the Government of India?",
+      options: [
+        "DPIIT",
+        "NITI Aayog",
+        "SIDBI",
+        "NRDC"
+      ],
+      answer: 1,
+      reason: "NITI Aayog, or the National Institution for Transforming India, is described in the chapter as the premier policy think tank of the Government of India."
+    },
+
+    {
+      question: "Which mission under NITI Aayog is associated with promoting innovation and entrepreneurship?",
+      options: [
+        "Startup India Mission",
+        "Startup Launchpad",
+        "Atal Innovation Mission",
+        "Startup Mitra Mission"
+      ],
+      answer: 2,
+      reason: "The Atal Innovation Mission (AIM) is identified as a key initiative of NITI Aayog to promote innovation and entrepreneurship."
+    },
+
+    {
+      question: "A school wants to provide students with tools, equipment and mentorship to ideate, prototype and develop innovative solutions. Which initiative is most appropriate?",
+      options: [
+        "Atal Tinkering Labs",
+        "Atal Incubation Centers",
+        "Atal Community Innovation Centers",
+        "Startup India Hub"
+      ],
+      answer: 0,
+      reason: "Atal Tinkering Labs are innovation labs set up in schools to foster creativity, problem-solving skills and hands-on learning and to help students ideate, prototype and develop solutions."
+    },
+
+    {
+      question: "A community-based innovation hub is intended to support innovators, artisans and entrepreneurs from rural and semi-urban areas. Which initiative matches this requirement?",
+      options: [
+        "Atal Incubation Centers",
+        "Startup India Hub",
+        "Atal Community Innovation Centers",
+        "SIDBI Startup Mitra Portal"
+      ],
+      answer: 2,
+      reason: "Atal Community Innovation Centers (ACICs) are community-centric innovation hubs established at the district level to promote grassroots innovation and entrepreneurship, particularly in rural and semi-urban areas."
+    },
+
+    {
+      question: "Which initiative provides startups with infrastructure, mentorship, networking opportunities and access to funding to accelerate growth and scale ventures?",
+      options: [
+        "Atal Incubation Centers",
+        "Atal Tinkering Labs",
+        "Startup Policy Advocacy",
+        "Patent Facilitation Cell"
+      ],
+      answer: 0,
+      reason: "Atal Incubation Centers provide startups with infrastructure, mentorship, networking opportunities and access to funding to accelerate their growth and scale their ventures."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Devika runs a small manufacturing startup and is facing difficulty in arranging finance for project costs and capital expenditure. She also wants a platform through which she can connect with investors, mentors and incubators.</p>
+
+    <p>She studies an institution that is focused on promoting and financing small and medium enterprises and provides several financial and developmental support measures to startups and MSMEs.</p>
+
+    <p>Devika finds that one scheme provides soft loans to eligible startups, while another fund focuses on equity and quasi-equity financing. She also discovers an online platform designed to facilitate collaboration among startups and ecosystem stakeholders.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which institution is Devika studying in this case?",
+      options: [
+        "NRDC",
+        "SIDBI",
+        "DPIIT",
+        "FICCI"
+      ],
+      answer: 1,
+      reason: "SIDBI is a principal financial institution wholly owned by the Government of India, focused on promoting and financing small and medium enterprises."
+    },
+
+    {
+      question: "Which SIDBI portal would help Devika connect with investors, mentors, incubators and other stakeholders?",
+      options: [
+        "Startup India Hub",
+        "SIDBI Startup Mitra Portal",
+        "Investor Connect Platform",
+        "Patent Facilitation Cell"
+      ],
+      answer: 1,
+      reason: "The SIDBI Startup Mitra Portal facilitates collaboration between startups and investors, mentors, incubators and other stakeholders."
+    },
+
+    {
+      question: "Which SIDBI scheme provides soft loans for project costs and capital expenditure requirements?",
+      options: [
+        "SVCF",
+        "SMILE",
+        "SIPP",
+        "TBI Scheme"
+      ],
+      answer: 1,
+      reason: "SIDBI Make in India Soft Loan Fund for Micro, Small, and Medium Enterprises (SMILE) provides soft loans to MSMEs, including startups, for project costs and capital expenditure."
+    },
+
+    {
+      question: "Which SIDBI fund provides equity and quasi-equity financing to startups?",
+      options: [
+        "Fund of Funds for Startups",
+        "SVCF",
+        "SMILE",
+        "Startup Mitra"
+      ],
+      answer: 1,
+      reason: "SIDBI Venture Capital Fund for Startups (SVCF) provides equity and quasi-equity financing to startups."
+    },
+
+    {
+      question: "Which support measure from SIDBI can help startups improve entrepreneurial capabilities and business acumen?",
+      options: [
+        "Mentoring, capacity-building and skill development programmes",
+        "Patent granting",
+        "Tax collection",
+        "Foreign trade regulation"
+      ],
+      answer: 0,
+      reason: "The chapter identifies mentoring, capacity-building and skill development programmes among the support measures available through SIDBI's schemes and programmes."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Arjun's startup has developed an indigenous technology in a research laboratory. The technology has commercial potential, but the founders do not have enough expertise to convert the research output into a commercially viable product.</p>
+
+    <p>They approach a public sector enterprise under the Ministry of Science and Technology that works on promoting, developing and commercializing indigenous technologies and innovations originating from research institutions, universities and laboratories.</p>
+
+    <p>The founders are offered access to a Technology Business Incubator and also learn about a programme designed to provide training in business planning, market research, financial management and legal compliance.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which institution is most directly relevant to Arjun's startup?",
+      options: [
+        "NRDC",
+        "SIDBI",
+        "NITI Aayog",
+        "ASSOCHAM"
+      ],
+      answer: 0,
+      reason: "The National Research Development Corporation (NRDC) is mandated to promote, develop and commercialize indigenous technologies and innovations originating from research institutions, universities and laboratories."
+    },
+
+    {
+      question: "Which facility mentioned in the case provides infrastructure, mentorship, funding and networking opportunities to help transform innovative ideas into commercially viable products and services?",
+      options: [
+        "Startup India Hub",
+        "Technology Business Incubator",
+        "Investor Connect Platform",
+        "Patent Facilitation Cell"
+      ],
+      answer: 1,
+      reason: "The Technology Business Incubator (TBI) Scheme supports technology business incubators that provide infrastructure, mentorship, funding and networking opportunities."
+    },
+
+    {
+      question: "Which NRDC programme provides training in business planning, market research, financial management and legal compliance?",
+      options: [
+        "Entrepreneurship Development Program",
+        "Startup Launchpad",
+        "SVCF",
+        "Startup Acceleration Program"
+      ],
+      answer: 0,
+      reason: "NRDC conducts Entrepreneurship Development Programs (EDPs) covering areas including business planning, market research, financial management and legal compliance."
+    },
+
+    {
+      question: "The startup wants to commercialize a patented technology developed by a research institution. Which NRDC activity is relevant?",
+      options: [
+        "Policy Advocacy",
+        "Technology Transfer and Licensing",
+        "Market Access and Networking",
+        "Startup Conclaves"
+      ],
+      answer: 1,
+      reason: "NRDC facilitates Technology Transfer and Licensing agreements between research institutions, inventors and startups interested in commercializing patented technologies and innovations."
+    },
+
+    {
+      question: "Which of the following is one of the benefits available through NRDC's support measures?",
+      options: [
+        "Access to cutting-edge technologies, intellectual property assets and research expertise",
+        "Guaranteed government contracts",
+        "Automatic equity investment in every startup",
+        "Exemption from all regulatory requirements"
+      ],
+      answer: 0,
+      reason: "The chapter states that startups may benefit from access to cutting-edge technologies, intellectual property assets and research expertise through NRDC's support measures."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS06",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Sana has created a new technical product and wants to protect the innovation before expanding into the market. She needs assistance with the patenting process and is particularly interested in reducing the financial burden associated with intellectual property protection.</p>
+
+    <p>She approaches the government agency responsible for granting patents and trademarks in India. The agency provides guidance through a dedicated facility and also offers a scheme that provides financial support for filing and prosecuting patents, trademarks and designs.</p>
+
+    <p>Sana also wants to accelerate the examination of her patent application so that protection can be obtained more quickly and the startup can move ahead with product development and market entry.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which government agency is Sana approaching?",
+      options: [
+        "Indian Patent Office",
+        "NRDC",
+        "DPIIT",
+        "SIDBI"
+      ],
+      answer: 0,
+      reason: "The Indian Patent Office (IPO) is described in the chapter as the primary government agency responsible for granting patents and trademarks in India."
+    },
+
+    {
+      question: "Which IPO facility provides assistance and guidance in patent filing, examination, prosecution and maintenance?",
+      options: [
+        "Startup India Hub",
+        "Patent Facilitation Cell",
+        "Investor Connect Platform",
+        "Startup Launchpad"
+      ],
+      answer: 1,
+      reason: "The Patent Facilitation Cell (PFC) provides assistance and guidance to startups and small entities in patent filing, examination, prosecution and maintenance."
+    },
+
+    {
+      question: "Which scheme provides financial support for filing and prosecuting patents, trademarks and designs?",
+      options: [
+        "SIPP",
+        "SMILE",
+        "SVCF",
+        "TBI Scheme"
+      ],
+      answer: 0,
+      reason: "The Scheme for Facilitating Startups Intellectual Property Protection (SIPP) provides financial support for filing and prosecuting patents, trademarks and designs."
+    },
+
+    {
+      question: "Sana wants her patent application to be examined more quickly. Which initiative is relevant?",
+      options: [
+        "Startup Acceleration Program",
+        "Fast-Track Examination of Patents for Startups",
+        "Startup Policy Advocacy",
+        "Technology Business Incubator Scheme"
+      ],
+      answer: 1,
+      reason: "The IPO offers Fast-Track Examination of Patents for Startups to expedite the patent granting process and obtain protection more quickly."
+    },
+
+    {
+      question: "According to the chapter, obtaining stronger intellectual property protection can also contribute to:",
+      options: [
+        "Eliminating all competitors",
+        "Increased credibility and market visibility",
+        "Removing the need for innovation",
+        "Automatic access to every funding scheme"
+      ],
+      answer: 1,
+      reason: "The chapter states that patents and trademarks can signal innovation, quality and reliability, leading to increased credibility and market visibility."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS07",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Priya wants to establish her startup in Andhra Pradesh. She is searching for support that is available at the state level rather than through a central government institution. Her startup needs incubation, funding, mentorship and networking support.</p>
+
+    <p>During her research, Priya identifies a state government initiative specifically aimed at fostering innovation and entrepreneurship in Andhra Pradesh. The initiative provides support through incubation, funding, mentorship and networking programmes.</p>
+
+    <p>Priya also learns that state governments across India use startup policies, incubation centres, funding schemes and regulatory reforms to create a conducive ecosystem for innovation and business growth.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which state-level initiative matches Priya's location and support requirements?",
+      options: [
+        "KITS",
+        "APIS",
+        "PBIP",
+        "BEDA"
+      ],
+      answer: 1,
+      reason: "Andhra Pradesh Innovation Society (APIS) is a government initiative aimed at fostering innovation and entrepreneurship in Andhra Pradesh through incubation, funding, mentorship and networking."
+    },
+
+    {
+      question: "APIS is classified in the chapter under which broad category?",
+      options: [
+        "Central-level financial institutions",
+        "External industry associations",
+        "State-level institutions",
+        "Angel investor networks"
+      ],
+      answer: 2,
+      reason: "APIS is discussed under the State Level Institutions section of the chapter."
+    },
+
+    {
+      question: "Which of the following forms part of the support provided by APIS?",
+      options: [
+        "Incubation",
+        "Patent granting",
+        "Corporate taxation",
+        "Foreign trade regulation"
+      ],
+      answer: 0,
+      reason: "The chapter specifically states that APIS provides support through incubation, funding, mentorship and networking programmes."
+    },
+
+    {
+      question: "What broader objective is associated with state-level startup initiatives described in the case?",
+      options: [
+        "Restricting innovation to one sector",
+        "Creating a conducive ecosystem for innovation and business growth",
+        "Replacing all central institutions",
+        "Eliminating private investment"
+      ],
+      answer: 1,
+      reason: "The chapter states that state governments implement policies and programmes aimed at fostering a conducive ecosystem for innovation and business growth."
+    },
+
+    {
+      question: "Which of the following is identified as another form of support that states may provide to startups?",
+      options: [
+        "Financial assistance and tax exemptions",
+        "Compulsory equity ownership",
+        "Automatic patent approval",
+        "Elimination of market competition"
+      ],
+      answer: 0,
+      reason: "The chapter states that states may provide incentives such as financial assistance, tax exemptions, infrastructure support and access to mentorship and networking opportunities."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS08",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Vikram's startup has developed an innovative product and is looking for industry exposure, mentorship and opportunities to meet investors. He studies external agencies and industry associations that support startups throughout their entrepreneurial journey.</p>
+
+    <p>He learns about an association whose Startup Launchpad provides a platform to showcase innovations, products and services to potential investors, customers and collaborators. The programme also provides networking opportunities, pitch sessions and mentorship.</p>
+
+    <p>At the same time, Vikram studies another leading industry association whose Investor Connect Platform facilitates matchmaking between startups and investors, while its Startup Conclaves and Summits encourage knowledge exchange and networking.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which association operates the Startup Launchpad described in the case?",
+      options: [
+        "FICCI",
+        "NASSCOM",
+        "ASSOCHAM",
+        "Indian Angel Network"
+      ],
+      answer: 2,
+      reason: "ASSOCHAM's Startup Launchpad provides startups with a platform to showcase innovations, products and services to potential investors, customers and collaborators."
+    },
+
+    {
+      question: "Which association operates the Investor Connect Platform?",
+      options: [
+        "ASSOCHAM",
+        "FICCI",
+        "CII",
+        "NASSCOM"
+      ],
+      answer: 1,
+      reason: "FICCI's Investor Connect Platform facilitates matchmaking between startups and investors, enabling startups to pitch their ideas and secure funding."
+    },
+
+    {
+      question: "The Startup Launchpad also provides which combination of support?",
+      options: [
+        "Pitch sessions, networking opportunities and mentorship",
+        "Patent examination, taxation and bank loans",
+        "Equity investment and patent granting",
+        "Regulatory approvals and customs clearances"
+      ],
+      answer: 0,
+      reason: "The chapter states that ASSOCHAM's Startup Launchpad offers networking opportunities, pitch sessions and mentorship."
+    },
+
+    {
+      question: "Which initiative of FICCI focuses on intensive mentoring, training and networking for early-stage startups?",
+      options: [
+        "Startup Accelerator Program",
+        "Startup Launchpad",
+        "Investor Connect Platform",
+        "Policy Advocacy"
+      ],
+      answer: 0,
+      reason: "FICCI's Startup Accelerator Program provides intensive mentoring, training and networking opportunities to early-stage startups."
+    },
+
+    {
+      question: "Which FICCI initiative facilitates knowledge exchange and networking among startups, investors, corporates and government agencies?",
+      options: [
+        "Startup Policy Advocacy",
+        "Investor Connect Platform",
+        "Startup Conclaves and Summits",
+        "Startup Accelerator Program"
+      ],
+      answer: 2,
+      reason: "FICCI organizes Startup Conclaves and Summits to facilitate knowledge exchange, networking and collaboration among startups, investors, corporates and government agencies."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS09",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Nisha has founded an early-stage startup and is seeking both capital and strategic guidance. She approaches an angel network made up of successful entrepreneurs, business executives, professionals and high-net-worth individuals who are interested in supporting early-stage ventures.</p>
+
+    <p>The network first searches for promising startup opportunities through referrals, pitch events, incubators, accelerators and industry networks. It examines the market potential, team strength, innovation, scalability and revenue potential of the opportunities identified.</p>
+
+    <p>After selecting a suitable opportunity, the network conducts due diligence. Once the startup satisfies the investment criteria, the angel investors may invest capital in exchange for equity and continue to provide mentorship, guidance and industry connections.</p>
+  `,
+
+  questions: [
+    {
+      question: "What is the primary function of the angel network described in the case?",
+      options: [
+        "To regulate all startups in India",
+        "To pool resources and invest in early-stage startups",
+        "To grant patents to innovative businesses",
+        "To formulate government startup policies"
+      ],
+      answer: 1,
+      reason: "Angel networks are groups of individual investors who pool their resources to invest in early-stage startups and typically provide seed funding, mentorship and strategic guidance."
+    },
+
+    {
+      question: "The network is actively scouting for promising startup opportunities. Which stage of angel network activity is this?",
+      options: [
+        "Investment",
+        "Mentorship and Support",
+        "Deal Sourcing",
+        "Due Diligence"
+      ],
+      answer: 2,
+      reason: "Deal Sourcing involves actively scouting for promising startup opportunities through referrals, pitch events, incubators, accelerators and industry networks."
+    },
+
+    {
+      question: "Which of the following is specifically evaluated during Deal Sourcing according to the case?",
+      options: [
+        "Market potential",
+        "Patent filing fees",
+        "Tax exemptions",
+        "Government procurement eligibility"
+      ],
+      answer: 0,
+      reason: "Angel networks evaluate potential opportunities based on factors including market potential, team strength, innovation, scalability and revenue potential."
+    },
+
+    {
+      question: "The network evaluates the startup's business model, market opportunity, competitive landscape, intellectual property, financials and team credentials. Which activity is being performed?",
+      options: [
+        "Membership",
+        "Investment",
+        "Due Diligence",
+        "Policy Advocacy"
+      ],
+      answer: 2,
+      reason: "Due Diligence involves a thorough assessment of the startup's business model, market opportunity, competitive landscape, intellectual property, financials and team credentials."
+    },
+
+    {
+      question: "After the investment, the angels continue to provide guidance and industry connections. Which support stage is this?",
+      options: [
+        "Mentorship and Support",
+        "Deal Sourcing",
+        "Membership",
+        "Policy Advocacy"
+      ],
+      answer: 0,
+      reason: "Angel investors provide mentorship, guidance and industry connections in addition to capital, helping founders navigate challenges and make strategic decisions."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS10",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Sameer runs a startup that provides digital services to improve access to essential facilities in underserved communities. As the business grows, the startup employs additional workers and develops technology-based solutions that improve the efficiency of its operations.</p>
+
+    <p>The founders also begin working with a government department through a public-private partnership and participate in an innovation challenge. Their objective is to use their technology, resources and expertise to contribute to a public programme while expanding the startup's impact.</p>
+
+    <p>Sameer understands that the relationship between startups and the Government is not one-directional. Startups can contribute through employment generation, innovation and technology adoption, tax revenue generation, social impact initiatives, and partnership and collaboration.</p>
+  `,
+
+  questions: [
+    {
+      question: "The startup employs additional workers as it grows. Which contribution to the Government does this represent?",
+      options: [
+        "Job Creation",
+        "IPR Protection",
+        "Policy Advocacy",
+        "Market Access and Networking"
+      ],
+      answer: 0,
+      reason: "The chapter identifies Job Creation as an important way in which startups support the Government by generating employment opportunities."
+    },
+
+    {
+      question: "The startup develops technology-based solutions that improve operational efficiency. Which contribution is most directly reflected?",
+      options: [
+        "Innovation and Technology Adoption",
+        "Tax Revenue Generation",
+        "Infrastructure and Incubation",
+        "Government Procurement"
+      ],
+      answer: 0,
+      reason: "Startups support the Government through Innovation and Technology Adoption by developing new products, services and business models and leveraging emerging technologies."
+    },
+
+    {
+      question: "As the startup grows, it contributes to the government's tax base through taxes arising from its operations. Which contribution is this?",
+      options: [
+        "Social Impact Initiatives",
+        "Tax Revenue Generation",
+        "Partnership and Collaboration",
+        "Skill Development"
+      ],
+      answer: 1,
+      reason: "Successful startups generate tax revenue for the Government through corporate taxes, income taxes and indirect taxes."
+    },
+
+    {
+      question: "The startup participates in a public-private partnership and an innovation challenge with a government department. Which contribution is directly demonstrated?",
+      options: [
+        "Partnership and Collaboration",
+        "Tax Revenue Generation",
+        "Access to Funding",
+        "IPR Protection"
+      ],
+      answer: 0,
+      reason: "The chapter states that startups can collaborate with the Government through public-private partnerships, innovation challenges and technology pilots."
+    },
+
+    {
+      question: "By addressing an underserved community through its services, the startup is also contributing to:",
+      options: [
+        "Social Impact Initiatives",
+        "Deal Sourcing",
+        "Patent Examination",
+        "Policy Frameworks"
+      ],
+      answer: 0,
+      reason: "The chapter identifies Social Impact Initiatives as a way startups can support Government efforts by addressing issues such as healthcare, education, clean energy and poverty alleviation."
+    }
+  ]
+},
+{
+  case_id: "strt_ch5_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Aarav has developed a startup that uses technology to help small retailers manage their inventory. The business is still at an early stage, and Aarav is concerned about regulatory procedures, access to finance and the need to connect with mentors and other stakeholders.</p>
+
+    <p>He studies the different forms of government support available to startups. He learns that the Government can create supportive policy frameworks, facilitate access to finance, develop incubation facilities and provide opportunities for networking and market access.</p>
+
+    <p>Aarav also understands that strong Intellectual Property Rights protection can encourage innovation and attract investment. He therefore begins exploring how different government support measures can help his startup move from an idea towards a scalable business.</p>
+  `,
+
+  questions: [
+    {
+      question: "Aarav is specifically concerned about reducing regulatory burdens and streamlining bureaucratic processes. Which form of government support directly addresses this requirement?",
+      options: [
+        "Policy Frameworks",
+        "Market Access and Networking",
+        "Infrastructure and Incubation Facilities",
+        "Skill Development and Capacity Building"
+      ],
+      answer: 0,
+      reason: "The chapter states that supportive Policy Frameworks can reduce regulatory burdens, streamline bureaucratic processes and provide incentives for startups."
+    },
+
+    {
+      question: "Aarav is looking for funding mechanisms to support the startup at its early stage. Which government support measure is most relevant?",
+      options: [
+        "Intellectual Property Rights Protection",
+        "Access to Funding",
+        "Market Access and Networking",
+        "Skill Development and Capacity Building"
+      ],
+      answer: 1,
+      reason: "Access to Funding is identified as critical for startup survival and growth and may include dedicated funding programmes, venture capital funds and angel investor networks."
+    },
+
+    {
+      question: "Aarav needs mentorship, networking opportunities and access to facilities where his startup can experiment and scale. Which government support measure is most appropriate?",
+      options: [
+        "Infrastructure and Incubation Facilities",
+        "Policy Frameworks",
+        "Access to Funding",
+        "Tax Revenue Generation"
+      ],
+      answer: 0,
+      reason: "Infrastructure and Incubation Facilities such as incubators, accelerators and research parks provide essential resources, mentorship, networking opportunities and access to state-of-the-art facilities."
+    },
+
+    {
+      question: "Aarav wants to connect with potential clients, partners and investors to validate his product and acquire customers. Which government support measure addresses this requirement?",
+      options: [
+        "IPR Protection",
+        "Skill Development",
+        "Market Access and Networking",
+        "Policy Frameworks"
+      ],
+      answer: 2,
+      reason: "Market Access and Networking helps startups validate products, acquire customers and scale through networking events, trade fairs and matchmaking platforms."
+    },
+
+    {
+      question: "Why is Intellectual Property Rights protection relevant to Aarav's technology-based startup?",
+      options: [
+        "It removes the need for market research",
+        "It is intended only to generate tax revenue",
+        "It ensures every startup receives government procurement contracts",
+        "It incentivizes innovation and helps protect intellectual property assets"
+      ],
+      answer: 3,
+      reason: "The chapter explains that robust IPR protection is essential for incentivizing innovation and attracting investment, including through mechanisms that protect intellectual property assets."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Meera has incorporated a startup developing a technology-enabled solution for small businesses. She wants to understand the central-level institution responsible for creating a conducive environment for entrepreneurship and administering the Startup India initiative.</p>
+
+    <p>During her study, Meera learns about an institution under the Ministry of Commerce and Industry that formulates and implements policies relating to industrial development, foreign trade and internal trade. She also learns that this institution administers Startup India and provides recognition and certification to eligible startups.</p>
+
+    <p>Meera further discovers that startups can use a single-point contact platform for information about business registration, funding opportunities, mentorship and networking. She decides to explore these facilities for her startup.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which central-level institution is Meera studying in this case?",
+      options: [
+        "SIDBI",
+        "NITI Aayog",
+        "DPIIT",
+        "NRDC"
+      ],
+      answer: 2,
+      reason: "The Department for Promotion of Industry and Internal Trade (DPIIT) is the government agency under the Ministry of Commerce and Industry described in the chapter as responsible for these functions."
+    },
+
+    {
+      question: "Which flagship programme administered by the institution is referred to in the case?",
+      options: [
+        "Startup India",
+        "SMILE",
+        "SVCF",
+        "Startup Launchpad"
+      ],
+      answer: 0,
+      reason: "DPIIT administers the Startup India initiative, which was launched to nurture and accelerate the growth of startups."
+    },
+
+    {
+      question: "What benefit is associated with Recognition and Certification under Startup India?",
+      options: [
+        "Automatic equity investment from angel investors",
+        "Eligibility for certain benefits such as tax exemptions, self-certification compliance and government procurement opportunities",
+        "Guaranteed international market access",
+        "Automatic patent approval"
+      ],
+      answer: 1,
+      reason: "The chapter states that Startup India recognition provides various benefits, including eligibility for tax exemptions, self-certification compliance and access to government procurement opportunities."
+    },
+
+    {
+      question: "Which platform provides a single-point contact for information, resources and support services?",
+      options: [
+        "SIDBI Startup Mitra Portal",
+        "Investor Connect Platform",
+        "Startup India Hub",
+        "Patent Facilitation Cell"
+      ],
+      answer: 2,
+      reason: "The Startup India Hub, operated by DPIIT, serves as a single-point contact platform for startups to access information, resources and support services."
+    },
+
+    {
+      question: "Which of the following is specifically mentioned as an area supported through the Startup India Hub?",
+      options: [
+        "Business registration",
+        "Patent granting",
+        "Equity valuation",
+        "Industrial procurement by private companies"
+      ],
+      answer: 0,
+      reason: "The chapter states that the Startup India Hub assists with aspects such as business registration, funding opportunities, mentorship and networking."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Rohan is working with a group of students and innovators who want to convert their ideas into practical solutions. They require incubation facilities, mentorship, networking opportunities and exposure to funding sources.</p>
+
+    <p>The group learns about a government policy think tank that provides strategic and directional inputs for sustainable development and economic growth. Its Atal Innovation Mission includes different programmes aimed at promoting innovation and entrepreneurship.</p>
+
+    <p>The innovators also learn about facilities at the community and school levels. They decide to identify which programme best matches their particular stage and environment.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which institution described in the case is the premier policy think tank of the Government of India?",
+      options: [
+        "DPIIT",
+        "NITI Aayog",
+        "SIDBI",
+        "NRDC"
+      ],
+      answer: 1,
+      reason: "NITI Aayog, or the National Institution for Transforming India, is described in the chapter as the premier policy think tank of the Government of India."
+    },
+
+    {
+      question: "Which mission under NITI Aayog is associated with promoting innovation and entrepreneurship?",
+      options: [
+        "Startup India Mission",
+        "Startup Launchpad",
+        "Atal Innovation Mission",
+        "Startup Mitra Mission"
+      ],
+      answer: 2,
+      reason: "The Atal Innovation Mission (AIM) is identified as a key initiative of NITI Aayog to promote innovation and entrepreneurship."
+    },
+
+    {
+      question: "A school wants to provide students with tools, equipment and mentorship to ideate, prototype and develop innovative solutions. Which initiative is most appropriate?",
+      options: [
+        "Atal Tinkering Labs",
+        "Atal Incubation Centers",
+        "Atal Community Innovation Centers",
+        "Startup India Hub"
+      ],
+      answer: 0,
+      reason: "Atal Tinkering Labs are innovation labs set up in schools to foster creativity, problem-solving skills and hands-on learning and to help students ideate, prototype and develop solutions."
+    },
+
+    {
+      question: "A community-based innovation hub is intended to support innovators, artisans and entrepreneurs from rural and semi-urban areas. Which initiative matches this requirement?",
+      options: [
+        "Atal Incubation Centers",
+        "Startup India Hub",
+        "Atal Community Innovation Centers",
+        "SIDBI Startup Mitra Portal"
+      ],
+      answer: 2,
+      reason: "Atal Community Innovation Centers (ACICs) are community-centric innovation hubs established at the district level to promote grassroots innovation and entrepreneurship, particularly in rural and semi-urban areas."
+    },
+
+    {
+      question: "Which initiative provides startups with infrastructure, mentorship, networking opportunities and access to funding to accelerate growth and scale ventures?",
+      options: [
+        "Atal Incubation Centers",
+        "Atal Tinkering Labs",
+        "Startup Policy Advocacy",
+        "Patent Facilitation Cell"
+      ],
+      answer: 0,
+      reason: "Atal Incubation Centers provide startups with infrastructure, mentorship, networking opportunities and access to funding to accelerate their growth and scale their ventures."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Devika runs a small manufacturing startup and is facing difficulty in arranging finance for project costs and capital expenditure. She also wants a platform through which she can connect with investors, mentors and incubators.</p>
+
+    <p>She studies an institution that is focused on promoting and financing small and medium enterprises and provides several financial and developmental support measures to startups and MSMEs.</p>
+
+    <p>Devika finds that one scheme provides soft loans to eligible startups, while another fund focuses on equity and quasi-equity financing. She also discovers an online platform designed to facilitate collaboration among startups and ecosystem stakeholders.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which institution is Devika studying in this case?",
+      options: [
+        "NRDC",
+        "SIDBI",
+        "DPIIT",
+        "FICCI"
+      ],
+      answer: 1,
+      reason: "SIDBI is a principal financial institution wholly owned by the Government of India, focused on promoting and financing small and medium enterprises."
+    },
+
+    {
+      question: "Which SIDBI portal would help Devika connect with investors, mentors, incubators and other stakeholders?",
+      options: [
+        "Startup India Hub",
+        "SIDBI Startup Mitra Portal",
+        "Investor Connect Platform",
+        "Patent Facilitation Cell"
+      ],
+      answer: 1,
+      reason: "The SIDBI Startup Mitra Portal facilitates collaboration between startups and investors, mentors, incubators and other stakeholders."
+    },
+
+    {
+      question: "Which SIDBI scheme provides soft loans for project costs and capital expenditure requirements?",
+      options: [
+        "SVCF",
+        "SMILE",
+        "SIPP",
+        "TBI Scheme"
+      ],
+      answer: 1,
+      reason: "SIDBI Make in India Soft Loan Fund for Micro, Small, and Medium Enterprises (SMILE) provides soft loans to MSMEs, including startups, for project costs and capital expenditure."
+    },
+
+    {
+      question: "Which SIDBI fund provides equity and quasi-equity financing to startups?",
+      options: [
+        "Fund of Funds for Startups",
+        "SVCF",
+        "SMILE",
+        "Startup Mitra"
+      ],
+      answer: 1,
+      reason: "SIDBI Venture Capital Fund for Startups (SVCF) provides equity and quasi-equity financing to startups."
+    },
+
+    {
+      question: "Which support measure from SIDBI can help startups improve entrepreneurial capabilities and business acumen?",
+      options: [
+        "Mentoring, capacity-building and skill development programmes",
+        "Patent granting",
+        "Tax collection",
+        "Foreign trade regulation"
+      ],
+      answer: 0,
+      reason: "The chapter identifies mentoring, capacity-building and skill development programmes among the support measures available through SIDBI's schemes and programmes."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Arjun's startup has developed an indigenous technology in a research laboratory. The technology has commercial potential, but the founders do not have enough expertise to convert the research output into a commercially viable product.</p>
+
+    <p>They approach a public sector enterprise under the Ministry of Science and Technology that works on promoting, developing and commercializing indigenous technologies and innovations originating from research institutions, universities and laboratories.</p>
+
+    <p>The founders are offered access to a Technology Business Incubator and also learn about a programme designed to provide training in business planning, market research, financial management and legal compliance.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which institution is most directly relevant to Arjun's startup?",
+      options: [
+        "NRDC",
+        "SIDBI",
+        "NITI Aayog",
+        "ASSOCHAM"
+      ],
+      answer: 0,
+      reason: "The National Research Development Corporation (NRDC) is mandated to promote, develop and commercialize indigenous technologies and innovations originating from research institutions, universities and laboratories."
+    },
+
+    {
+      question: "Which facility mentioned in the case provides infrastructure, mentorship, funding and networking opportunities to help transform innovative ideas into commercially viable products and services?",
+      options: [
+        "Startup India Hub",
+        "Technology Business Incubator",
+        "Investor Connect Platform",
+        "Patent Facilitation Cell"
+      ],
+      answer: 1,
+      reason: "The Technology Business Incubator (TBI) Scheme supports technology business incubators that provide infrastructure, mentorship, funding and networking opportunities."
+    },
+
+    {
+      question: "Which NRDC programme provides training in business planning, market research, financial management and legal compliance?",
+      options: [
+        "Entrepreneurship Development Program",
+        "Startup Launchpad",
+        "SVCF",
+        "Startup Acceleration Program"
+      ],
+      answer: 0,
+      reason: "NRDC conducts Entrepreneurship Development Programs (EDPs) covering areas including business planning, market research, financial management and legal compliance."
+    },
+
+    {
+      question: "The startup wants to commercialize a patented technology developed by a research institution. Which NRDC activity is relevant?",
+      options: [
+        "Policy Advocacy",
+        "Technology Transfer and Licensing",
+        "Market Access and Networking",
+        "Startup Conclaves"
+      ],
+      answer: 1,
+      reason: "NRDC facilitates Technology Transfer and Licensing agreements between research institutions, inventors and startups interested in commercializing patented technologies and innovations."
+    },
+
+    {
+      question: "Which of the following is one of the benefits available through NRDC's support measures?",
+      options: [
+        "Access to cutting-edge technologies, intellectual property assets and research expertise",
+        "Guaranteed government contracts",
+        "Automatic equity investment in every startup",
+        "Exemption from all regulatory requirements"
+      ],
+      answer: 0,
+      reason: "The chapter states that startups may benefit from access to cutting-edge technologies, intellectual property assets and research expertise through NRDC's support measures."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS06",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Sana has created a new technical product and wants to protect the innovation before expanding into the market. She needs assistance with the patenting process and is particularly interested in reducing the financial burden associated with intellectual property protection.</p>
+
+    <p>She approaches the government agency responsible for granting patents and trademarks in India. The agency provides guidance through a dedicated facility and also offers a scheme that provides financial support for filing and prosecuting patents, trademarks and designs.</p>
+
+    <p>Sana also wants to accelerate the examination of her patent application so that protection can be obtained more quickly and the startup can move ahead with product development and market entry.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which government agency is Sana approaching?",
+      options: [
+        "Indian Patent Office",
+        "NRDC",
+        "DPIIT",
+        "SIDBI"
+      ],
+      answer: 0,
+      reason: "The Indian Patent Office (IPO) is described in the chapter as the primary government agency responsible for granting patents and trademarks in India."
+    },
+
+    {
+      question: "Which IPO facility provides assistance and guidance in patent filing, examination, prosecution and maintenance?",
+      options: [
+        "Startup India Hub",
+        "Patent Facilitation Cell",
+        "Investor Connect Platform",
+        "Startup Launchpad"
+      ],
+      answer: 1,
+      reason: "The Patent Facilitation Cell (PFC) provides assistance and guidance to startups and small entities in patent filing, examination, prosecution and maintenance."
+    },
+
+    {
+      question: "Which scheme provides financial support for filing and prosecuting patents, trademarks and designs?",
+      options: [
+        "SIPP",
+        "SMILE",
+        "SVCF",
+        "TBI Scheme"
+      ],
+      answer: 0,
+      reason: "The Scheme for Facilitating Startups Intellectual Property Protection (SIPP) provides financial support for filing and prosecuting patents, trademarks and designs."
+    },
+
+    {
+      question: "Sana wants her patent application to be examined more quickly. Which initiative is relevant?",
+      options: [
+        "Startup Acceleration Program",
+        "Fast-Track Examination of Patents for Startups",
+        "Startup Policy Advocacy",
+        "Technology Business Incubator Scheme"
+      ],
+      answer: 1,
+      reason: "The IPO offers Fast-Track Examination of Patents for Startups to expedite the patent granting process and obtain protection more quickly."
+    },
+
+    {
+      question: "According to the chapter, obtaining stronger intellectual property protection can also contribute to:",
+      options: [
+        "Eliminating all competitors",
+        "Increased credibility and market visibility",
+        "Removing the need for innovation",
+        "Automatic access to every funding scheme"
+      ],
+      answer: 1,
+      reason: "The chapter states that patents and trademarks can signal innovation, quality and reliability, leading to increased credibility and market visibility."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS07",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Priya wants to establish her startup in Andhra Pradesh. She is searching for support that is available at the state level rather than through a central government institution. Her startup needs incubation, funding, mentorship and networking support.</p>
+
+    <p>During her research, Priya identifies a state government initiative specifically aimed at fostering innovation and entrepreneurship in Andhra Pradesh. The initiative provides support through incubation, funding, mentorship and networking programmes.</p>
+
+    <p>Priya also learns that state governments across India use startup policies, incubation centres, funding schemes and regulatory reforms to create a conducive ecosystem for innovation and business growth.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which state-level initiative matches Priya's location and support requirements?",
+      options: [
+        "KITS",
+        "APIS",
+        "PBIP",
+        "BEDA"
+      ],
+      answer: 1,
+      reason: "Andhra Pradesh Innovation Society (APIS) is a government initiative aimed at fostering innovation and entrepreneurship in Andhra Pradesh through incubation, funding, mentorship and networking."
+    },
+
+    {
+      question: "APIS is classified in the chapter under which broad category?",
+      options: [
+        "Central-level financial institutions",
+        "External industry associations",
+        "State-level institutions",
+        "Angel investor networks"
+      ],
+      answer: 2,
+      reason: "APIS is discussed under the State Level Institutions section of the chapter."
+    },
+
+    {
+      question: "Which of the following forms part of the support provided by APIS?",
+      options: [
+        "Incubation",
+        "Patent granting",
+        "Corporate taxation",
+        "Foreign trade regulation"
+      ],
+      answer: 0,
+      reason: "The chapter specifically states that APIS provides support through incubation, funding, mentorship and networking programmes."
+    },
+
+    {
+      question: "What broader objective is associated with state-level startup initiatives described in the case?",
+      options: [
+        "Restricting innovation to one sector",
+        "Creating a conducive ecosystem for innovation and business growth",
+        "Replacing all central institutions",
+        "Eliminating private investment"
+      ],
+      answer: 1,
+      reason: "The chapter states that state governments implement policies and programmes aimed at fostering a conducive ecosystem for innovation and business growth."
+    },
+
+    {
+      question: "Which of the following is identified as another form of support that states may provide to startups?",
+      options: [
+        "Financial assistance and tax exemptions",
+        "Compulsory equity ownership",
+        "Automatic patent approval",
+        "Elimination of market competition"
+      ],
+      answer: 0,
+      reason: "The chapter states that states may provide incentives such as financial assistance, tax exemptions, infrastructure support and access to mentorship and networking opportunities."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS08",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Vikram's startup has developed an innovative product and is looking for industry exposure, mentorship and opportunities to meet investors. He studies external agencies and industry associations that support startups throughout their entrepreneurial journey.</p>
+
+    <p>He learns about an association whose Startup Launchpad provides a platform to showcase innovations, products and services to potential investors, customers and collaborators. The programme also provides networking opportunities, pitch sessions and mentorship.</p>
+
+    <p>At the same time, Vikram studies another leading industry association whose Investor Connect Platform facilitates matchmaking between startups and investors, while its Startup Conclaves and Summits encourage knowledge exchange and networking.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which association operates the Startup Launchpad described in the case?",
+      options: [
+        "FICCI",
+        "NASSCOM",
+        "ASSOCHAM",
+        "Indian Angel Network"
+      ],
+      answer: 2,
+      reason: "ASSOCHAM's Startup Launchpad provides startups with a platform to showcase innovations, products and services to potential investors, customers and collaborators."
+    },
+
+    {
+      question: "Which association operates the Investor Connect Platform?",
+      options: [
+        "ASSOCHAM",
+        "FICCI",
+        "CII",
+        "NASSCOM"
+      ],
+      answer: 1,
+      reason: "FICCI's Investor Connect Platform facilitates matchmaking between startups and investors, enabling startups to pitch their ideas and secure funding."
+    },
+
+    {
+      question: "The Startup Launchpad also provides which combination of support?",
+      options: [
+        "Pitch sessions, networking opportunities and mentorship",
+        "Patent examination, taxation and bank loans",
+        "Equity investment and patent granting",
+        "Regulatory approvals and customs clearances"
+      ],
+      answer: 0,
+      reason: "The chapter states that ASSOCHAM's Startup Launchpad offers networking opportunities, pitch sessions and mentorship."
+    },
+
+    {
+      question: "Which initiative of FICCI focuses on intensive mentoring, training and networking for early-stage startups?",
+      options: [
+        "Startup Accelerator Program",
+        "Startup Launchpad",
+        "Investor Connect Platform",
+        "Policy Advocacy"
+      ],
+      answer: 0,
+      reason: "FICCI's Startup Accelerator Program provides intensive mentoring, training and networking opportunities to early-stage startups."
+    },
+
+    {
+      question: "Which FICCI initiative facilitates knowledge exchange and networking among startups, investors, corporates and government agencies?",
+      options: [
+        "Startup Policy Advocacy",
+        "Investor Connect Platform",
+        "Startup Conclaves and Summits",
+        "Startup Accelerator Program"
+      ],
+      answer: 2,
+      reason: "FICCI organizes Startup Conclaves and Summits to facilitate knowledge exchange, networking and collaboration among startups, investors, corporates and government agencies."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS09",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Nisha has founded an early-stage startup and is seeking both capital and strategic guidance. She approaches an angel network made up of successful entrepreneurs, business executives, professionals and high-net-worth individuals who are interested in supporting early-stage ventures.</p>
+
+    <p>The network first searches for promising startup opportunities through referrals, pitch events, incubators, accelerators and industry networks. It examines the market potential, team strength, innovation, scalability and revenue potential of the opportunities identified.</p>
+
+    <p>After selecting a suitable opportunity, the network conducts due diligence. Once the startup satisfies the investment criteria, the angel investors may invest capital in exchange for equity and continue to provide mentorship, guidance and industry connections.</p>
+  `,
+
+  questions: [
+    {
+      question: "What is the primary function of the angel network described in the case?",
+      options: [
+        "To regulate all startups in India",
+        "To pool resources and invest in early-stage startups",
+        "To grant patents to innovative businesses",
+        "To formulate government startup policies"
+      ],
+      answer: 1,
+      reason: "Angel networks are groups of individual investors who pool their resources to invest in early-stage startups and typically provide seed funding, mentorship and strategic guidance."
+    },
+
+    {
+      question: "The network is actively scouting for promising startup opportunities. Which stage of angel network activity is this?",
+      options: [
+        "Investment",
+        "Mentorship and Support",
+        "Deal Sourcing",
+        "Due Diligence"
+      ],
+      answer: 2,
+      reason: "Deal Sourcing involves actively scouting for promising startup opportunities through referrals, pitch events, incubators, accelerators and industry networks."
+    },
+
+    {
+      question: "Which of the following is specifically evaluated during Deal Sourcing according to the case?",
+      options: [
+        "Market potential",
+        "Patent filing fees",
+        "Tax exemptions",
+        "Government procurement eligibility"
+      ],
+      answer: 0,
+      reason: "Angel networks evaluate potential opportunities based on factors including market potential, team strength, innovation, scalability and revenue potential."
+    },
+
+    {
+      question: "The network evaluates the startup's business model, market opportunity, competitive landscape, intellectual property, financials and team credentials. Which activity is being performed?",
+      options: [
+        "Membership",
+        "Investment",
+        "Due Diligence",
+        "Policy Advocacy"
+      ],
+      answer: 2,
+      reason: "Due Diligence involves a thorough assessment of the startup's business model, market opportunity, competitive landscape, intellectual property, financials and team credentials."
+    },
+
+    {
+      question: "After the investment, the angels continue to provide guidance and industry connections. Which support stage is this?",
+      options: [
+        "Mentorship and Support",
+        "Deal Sourcing",
+        "Membership",
+        "Policy Advocacy"
+      ],
+      answer: 0,
+      reason: "Angel investors provide mentorship, guidance and industry connections in addition to capital, helping founders navigate challenges and make strategic decisions."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS10",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>Sameer runs a startup that provides digital services to improve access to essential facilities in underserved communities. As the business grows, the startup employs additional workers and develops technology-based solutions that improve the efficiency of its operations.</p>
+
+    <p>The founders also begin working with a government department through a public-private partnership and participate in an innovation challenge. Their objective is to use their technology, resources and expertise to contribute to a public programme while expanding the startup's impact.</p>
+
+    <p>Sameer understands that the relationship between startups and the Government is not one-directional. Startups can contribute through employment generation, innovation and technology adoption, tax revenue generation, social impact initiatives, and partnership and collaboration.</p>
+  `,
+
+  questions: [
+    {
+      question: "The startup employs additional workers as it grows. Which contribution to the Government does this represent?",
+      options: [
+        "Job Creation",
+        "IPR Protection",
+        "Policy Advocacy",
+        "Market Access and Networking"
+      ],
+      answer: 0,
+      reason: "The chapter identifies Job Creation as an important way in which startups support the Government by generating employment opportunities."
+    },
+
+    {
+      question: "The startup develops technology-based solutions that improve operational efficiency. Which contribution is most directly reflected?",
+      options: [
+        "Innovation and Technology Adoption",
+        "Tax Revenue Generation",
+        "Infrastructure and Incubation",
+        "Government Procurement"
+      ],
+      answer: 0,
+      reason: "Startups support the Government through Innovation and Technology Adoption by developing new products, services and business models and leveraging emerging technologies."
+    },
+
+    {
+      question: "As the startup grows, it contributes to the government's tax base through taxes arising from its operations. Which contribution is this?",
+      options: [
+        "Social Impact Initiatives",
+        "Tax Revenue Generation",
+        "Partnership and Collaboration",
+        "Skill Development"
+      ],
+      answer: 1,
+      reason: "Successful startups generate tax revenue for the Government through corporate taxes, income taxes and indirect taxes."
+    },
+
+    {
+      question: "The startup participates in a public-private partnership and an innovation challenge with a government department. Which contribution is directly demonstrated?",
+      options: [
+        "Partnership and Collaboration",
+        "Tax Revenue Generation",
+        "Access to Funding",
+        "IPR Protection"
+      ],
+      answer: 0,
+      reason: "The chapter states that startups can collaborate with the Government through public-private partnerships, innovation challenges and technology pilots."
+    },
+
+    {
+      question: "By addressing an underserved community through its services, the startup is also contributing to:",
+      options: [
+        "Social Impact Initiatives",
+        "Deal Sourcing",
+        "Patent Examination",
+        "Policy Frameworks"
+      ],
+      answer: 0,
+      reason: "The chapter identifies Social Impact Initiatives as a way startups can support Government efforts by addressing issues such as healthcare, education, clean energy and poverty alleviation."
+    }
+  ]
+},
+{
+  case_id: "strt_ch5_CS16",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>BioLoop has developed an indigenous technology for converting agricultural waste into an industrial input. The technology originated in a research institution and the startup now wants to move from technical development to commercialisation. The founders require access to research expertise and also need a formal arrangement to use the underlying technology.</p>
+
+    <p>At the same time, BioLoop wants to protect its own intellectual property and reduce the time involved in obtaining patent protection. The founders therefore approach two central-level institutions, recognising that technology commercialisation and intellectual property protection involve different forms of institutional support.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which institution is most directly relevant to BioLoop's requirement for commercialising the indigenous technology?",
+      options: [
+        "Indian Patent Office",
+        "National Research Development Corporation",
+        "Small Industries Development Bank of India",
+        "Federation of Indian Chambers of Commerce and Industry"
+      ],
+      answer: 1,
+      reason: "NRDC is mandated to promote, develop and commercialize indigenous technologies and innovations originating from research institutions, universities and laboratories."
+    },
+
+    {
+      question: "BioLoop requires a formal arrangement to access and commercialize the patented technology originating from the research institution. Which NRDC activity is most appropriate?",
+      options: [
+        "Technology Transfer and Licensing",
+        "Entrepreneurship Development Program",
+        "Startup Acceleration Program",
+        "Policy Advocacy"
+      ],
+      answer: 0,
+      reason: "NRDC facilitates technology transfer and licensing agreements between research institutions, inventors and startups interested in commercializing patented technologies and innovations."
+    },
+
+    {
+      question: "The founders want assistance in patent filing, examination, prosecution and maintenance. Which facility is specifically designed for this requirement?",
+      options: [
+        "Startup India Hub",
+        "Technology Business Incubator",
+        "Patent Facilitation Cell",
+        "SIDBI Startup Mitra Portal"
+      ],
+      answer: 2,
+      reason: "The Patent Facilitation Cell provides assistance and guidance to startups and small entities in patent filing, examination, prosecution and maintenance."
+    },
+
+    {
+      question: "BioLoop also wants to accelerate the examination of its patent application. Which initiative directly addresses this requirement?",
+      options: [
+        "SIPP",
+        "Fast-Track Examination of Patents for Startups",
+        "Startup Launchpad",
+        "SVCF"
+      ],
+      answer: 1,
+      reason: "The IPO offers Fast-Track Examination of Patents for Startups to expedite the examination and granting process for patent applications filed by startups."
+    },
+
+    {
+      question: "Which combination best explains the institutional distinction in BioLoop's case?",
+      options: [
+        "NRDC supports technology transfer and commercialization, while the IPO supports patents and trademarks and related intellectual property protection",
+        "NRDC and IPO both primarily provide equity financing",
+        "IPO supports technology commercialization while NRDC regulates patent examination",
+        "Both institutions function primarily as external industry associations"
+      ],
+      answer: 0,
+      reason: "The chapter assigns NRDC a role in promoting, developing and commercializing indigenous technologies, including technology transfer and licensing, while the IPO is responsible for patents and trademarks and related intellectual property support."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS17",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>FinServe is an early-stage startup seeking capital for expansion. An angel network identifies the startup through a pitch event and is impressed by its market potential and scalability. Before committing funds, the network examines the business model, competitive landscape, intellectual property, financials and credentials of the founding team.</p>
+
+    <p>After the assessment, the investors decide that the startup satisfies their investment criteria. They propose capital in exchange for an equity stake and also offer strategic guidance and industry connections to help the founders navigate future challenges.</p>
+  `,
+
+  questions: [
+    {
+      question: "The angel network's identification of FinServe through a pitch event forms part of which activity?",
+      options: [
+        "Due Diligence",
+        "Investment",
+        "Deal Sourcing",
+        "Mentorship and Support"
+      ],
+      answer: 2,
+      reason: "Angel networks undertake Deal Sourcing through channels such as referrals, pitch events, incubators, accelerators and industry networks."
+    },
+
+    {
+      question: "The assessment of FinServe's business model, competitive landscape, intellectual property and financials represents:",
+      options: [
+        "Deal Sourcing",
+        "Due Diligence",
+        "Membership",
+        "Policy Advocacy"
+      ],
+      answer: 1,
+      reason: "Due Diligence involves a thorough assessment of the startup's business model, market opportunity, competitive landscape, intellectual property, financials and team credentials."
+    },
+
+    {
+      question: "The proposed capital contribution in exchange for an equity stake represents which stage?",
+      options: [
+        "Investment",
+        "Deal Sourcing",
+        "Due Diligence",
+        "Mentorship and Support"
+      ],
+      answer: 0,
+      reason: "After a startup passes due diligence and meets the investment criteria, angel investors collectively invest capital in exchange for an equity stake."
+    },
+
+    {
+      question: "The investors' offer of strategic guidance and industry connections is best classified as:",
+      options: [
+        "Membership",
+        "Deal Sourcing",
+        "Mentorship and Support",
+        "Policy Advocacy"
+      ],
+      answer: 2,
+      reason: "Angel investors provide mentorship, guidance and industry connections in addition to capital to help founders navigate challenges and make strategic decisions."
+    },
+
+    {
+      question: "Which sequence most appropriately represents the angel network's process in the case?",
+      options: [
+        "Due Diligence → Deal Sourcing → Investment → Membership",
+        "Investment → Due Diligence → Deal Sourcing → Mentorship",
+        "Deal Sourcing → Due Diligence → Investment → Mentorship and Support",
+        "Membership → Investment → Policy Advocacy → Due Diligence"
+      ],
+      answer: 2,
+      reason: "The chapter presents a sequence in which promising opportunities are sourced, due diligence is conducted, investment follows if criteria are satisfied, and mentorship and support may continue thereafter."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS18",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>EduLink is a startup working with educational institutions and wants to expand its market presence. The founders need access to potential investors, industry mentors and collaboration opportunities. They also believe that certain regulatory and taxation changes could make it easier for startups in their sector to operate.</p>
+
+    <p>EduLink considers support from two industry associations. One initiative would allow the startup to showcase its innovation through pitch sessions and connect with investors, customers and collaborators. Another association provides an investor matchmaking platform and also engages with policymakers on regulatory reforms.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which initiative is most directly associated with showcasing EduLink's innovation through pitch sessions and connecting with investors, customers and collaborators?",
+      options: [
+        "FICCI Investor Connect Platform",
+        "ASSOCHAM Startup Launchpad",
+        "FICCI Startup Policy Advocacy",
+        "ASSOCHAM Policy Advocacy"
+      ],
+      answer: 1,
+      reason: "ASSOCHAM's Startup Launchpad provides a platform for startups to showcase innovations, products and services to potential investors, customers and collaborators and offers pitch sessions and networking opportunities."
+    },
+
+    {
+      question: "Which initiative would directly facilitate matchmaking between EduLink and potential investors?",
+      options: [
+        "ASSOCHAM Startup Launchpad",
+        "FICCI Startup Accelerator Program",
+        "FICCI Investor Connect Platform",
+        "ASSOCHAM Incubation and Co-working Spaces"
+      ],
+      answer: 2,
+      reason: "FICCI's Investor Connect Platform facilitates matchmaking between startups and investors, enabling startups to pitch their ideas and secure funding."
+    },
+
+    {
+      question: "EduLink wants to influence policy relating to regulatory burdens and taxation. Which function is most relevant?",
+      options: [
+        "Policy Advocacy",
+        "Deal Sourcing",
+        "Due Diligence",
+        "Investment"
+      ],
+      answer: 0,
+      reason: "Policy Advocacy involves engaging with policymakers, regulators and government authorities to advocate reforms relating to areas such as taxation, regulatory burdens and access to finance."
+    },
+
+    {
+      question: "Which association is described in the case as operating the Investor Connect Platform and undertaking Startup Policy Advocacy?",
+      options: [
+        "ASSOCHAM",
+        "FICCI",
+        "CII",
+        "NASSCOM"
+      ],
+      answer: 1,
+      reason: "The chapter identifies FICCI's Investor Connect Platform and FICCI's Startup Policy Advocacy as initiatives supporting the startup ecosystem."
+    },
+
+    {
+      question: "Which statement best distinguishes the two associations' roles in the case?",
+      options: [
+        "ASSOCHAM's Startup Launchpad focuses on showcasing, pitch sessions and networking, while FICCI combines investor matchmaking with policy advocacy",
+        "Both associations are central government institutions providing identical funding schemes",
+        "FICCI focuses only on intellectual property protection, while ASSOCHAM grants patents",
+        "ASSOCHAM functions solely as an angel investor network"
+      ],
+      answer: 0,
+      reason: "The chapter distinguishes the initiatives according to their functions: ASSOCHAM's Startup Launchpad supports showcasing, pitch sessions and networking, while FICCI's Investor Connect Platform supports investor matchmaking and FICCI also undertakes policy advocacy."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS19",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>AgriNova is a startup operating in a rural district and wants to develop a commercially viable solution for local agricultural producers. The founders require incubation support and access to mentorship and funding, but they also need to understand how their startup can collaborate with government bodies to address a broader social and economic problem.</p>
+
+    <p>The startup receives support from a district-level community innovation hub and later works with a government department through a technology pilot. As AgriNova expands, it also creates employment and uses technology to improve the delivery of its services.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which initiative is most closely associated with the district-level community innovation support received by AgriNova?",
+      options: [
+        "Atal Tinkering Labs",
+        "Atal Community Innovation Centers",
+        "Atal Incubation Centers",
+        "Startup India Hub"
+      ],
+      answer: 1,
+      reason: "Atal Community Innovation Centers (ACICs) are district-level community-centric innovation hubs that support grassroots innovation and entrepreneurship, including innovators and entrepreneurs from rural and semi-urban areas."
+    },
+
+    {
+      question: "The technology pilot undertaken with the government department represents which form of startup contribution?",
+      options: [
+        "Partnership and Collaboration",
+        "Tax Revenue Generation",
+        "Policy Framework",
+        "IPR Protection"
+      ],
+      answer: 0,
+      reason: "The chapter specifically states that startups can collaborate with the Government through public-private partnerships, innovation challenges and technology pilots."
+    },
+
+    {
+      question: "AgriNova's employment generation contributes to the Government primarily through:",
+      options: [
+        "Innovation and Technology Adoption",
+        "Job Creation",
+        "Market Access and Networking",
+        "Infrastructure and Incubation"
+      ],
+      answer: 1,
+      reason: "Startups contribute to the Government through Job Creation by generating employment opportunities and stimulating economic growth."
+    },
+
+    {
+      question: "The startup's use of technology to improve its services is consistent with which contribution?",
+      options: [
+        "Tax Revenue Generation",
+        "Innovation and Technology Adoption",
+        "Policy Advocacy",
+        "Intellectual Property Protection"
+      ],
+      answer: 1,
+      reason: "The chapter identifies Innovation and Technology Adoption as a way startups can support the Government by developing new products, services and business models and leveraging emerging technologies."
+    },
+
+    {
+      question: "Which combination best represents the two-way relationship demonstrated by AgriNova?",
+      options: [
+        "Government provides support mechanisms, while the startup contributes through partnership, job creation and innovation",
+        "Government provides only equity investment, while the startup only pays taxes",
+        "Government grants patents, while the startup undertakes policy regulation",
+        "Government replaces the startup's management, while the startup replaces government institutions"
+      ],
+      answer: 0,
+      reason: "The chapter presents a reciprocal relationship: government support helps startups through various institutional mechanisms, while startups support the Government through job creation, innovation and technology adoption, tax revenue, social impact and collaboration."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch5_CS20",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+
+  caseText: `
+    <p>MedTechWorks is an innovative startup that has developed a healthcare solution and wants to scale its operations. The founders require funding, mentorship and market connections, while also seeking a mechanism to simplify access to government-related startup support. They are evaluating several institutions before deciding where each requirement should be addressed.</p>
+
+    <p>The startup first considers a single-point platform for information, funding opportunities, mentorship and networking. It separately considers an institution focused on financing SMEs, including soft loans and venture capital support. At the same time, the founders identify an angel network that can provide capital in exchange for equity and strategic guidance after evaluating the startup.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which platform best satisfies MedTechWorks' requirement for a single-point source of information, funding opportunities, mentorship and networking?",
+      options: [
+        "SIDBI Startup Mitra Portal",
+        "Startup India Hub",
+        "FICCI Investor Connect Platform",
+        "Patent Facilitation Cell"
+      ],
+      answer: 1,
+      reason: "The Startup India Hub, operated by DPIIT, is a single-point contact platform for startups to access information, resources and support services including business registration, funding opportunities, mentorship and networking."
+    },
+
+    {
+      question: "Which institution is specifically focused on promoting and financing small and medium enterprises and also provides startup-related financial support?",
+      options: [
+        "NITI Aayog",
+        "DPIIT",
+        "SIDBI",
+        "NRDC"
+      ],
+      answer: 2,
+      reason: "SIDBI is a principal financial institution wholly owned by the Government of India, focused on promoting and financing small and medium enterprises and supporting startups and MSMEs."
+    },
+
+    {
+      question: "MedTechWorks wants soft loans for project costs and capital expenditure. Which SIDBI scheme is most relevant?",
+      options: [
+        "SVCF",
+        "SMILE",
+        "SIPP",
+        "TBI Scheme"
+      ],
+      answer: 1,
+      reason: "SMILE is a SIDBI scheme providing soft loans to MSMEs, including startups, for financing project costs and capital expenditure requirements."
+    },
+
+    {
+      question: "The angel network is prepared to provide capital in exchange for equity after examining the startup's market opportunity, intellectual property and financials. Which two stages are involved?",
+      options: [
+        "Policy Advocacy and Investment",
+        "Deal Sourcing and Mentorship",
+        "Due Diligence and Investment",
+        "Membership and Market Access"
+      ],
+      answer: 2,
+      reason: "The angel network conducts Due Diligence by assessing the startup's business model, market opportunity, intellectual property and financials. If the startup meets the investment criteria, the network proceeds to Investment in exchange for an equity stake."
+    },
+
+    {
+      question: "Which statement best reflects MedTechWorks' institutional strategy?",
+      options: [
+        "The startup should expect one institution to provide every form of support",
+        "The startup should distinguish between information and ecosystem access, institutional finance and angel investment according to the requirement",
+        "Angel networks replace central-level government institutions",
+        "SIDBI is primarily responsible for patent examination and licensing"
+      ],
+      answer: 1,
+      reason: "The chapter describes different institutions and support mechanisms with distinct functions. Startups can use the relevant institution according to their specific requirement, such as ecosystem access, financial assistance or angel investment."
+    }
+  ]
 }
+
+
 
 
 
