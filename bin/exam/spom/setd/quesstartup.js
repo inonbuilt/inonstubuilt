@@ -9984,7 +9984,2898 @@ reason: "The Elevator Pitch includes the Problem Statement, Solution, Value Prop
       reason: "The chapter describes different institutions and support mechanisms with distinct functions. Startups can use the relevant institution according to their specific requirement, such as ecosystem access, financial assistance or angel investment."
     }
   ]
-}
+},
+// Chapter6
+{
+  case_id: "strt_ch6_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>EcoBuild Technologies has developed a new technology-based product for energy-efficient buildings. The startup has completed its initial design but now requires funds to refine the product, hire skilled engineers and developers, and acquire the tools and resources needed for further development.</p>
+
+    <p>The founders also expect the business to grow after the product is developed. They plan to expand their operations, increase their customer base, strengthen marketing and sales activities, and enter additional geographical regions when the business is ready.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which area represents the immediate funding requirement of EcoBuild Technologies for refining its product and acquiring technical resources?",
+      options: [
+        "Product Development",
+        "Market Expansion",
+        "Exit Strategy",
+        "Investor Targeting"
+      ],
+      answer: 0,
+      reason: "Funding is required for Product Development, including research and development, hiring skilled engineers and developers, and acquiring necessary tools and resources to build and refine the product."
+    },
+
+    {
+      question: "EcoBuild Technologies plans to increase its customer base and invest in marketing and sales activities. Which funding requirement does this primarily represent?",
+      options: [
+        "Talent Acquisition",
+        "Legal and Regulatory Considerations",
+        "Scalability and Growth",
+        "Term Sheet"
+      ],
+      answer: 2,
+      reason: "Scalability and Growth involves scaling operations, growing the customer base, optimizing processes, and investing in marketing and sales efforts to increase market penetration."
+    },
+
+    {
+      question: "When EcoBuild Technologies hires skilled engineers and developers to strengthen its team, which area of funding is involved?",
+      options: [
+        "Market Expansion",
+        "Talent Acquisition",
+        "Scenario Analysis",
+        "Debt Financing"
+      ],
+      answer: 1,
+      reason: "Talent Acquisition enables startups to attract top talent and build a skilled team, including experts in technology, product management, marketing and sales."
+    },
+
+    {
+      question: "The founders plan to enter additional geographical regions after strengthening the existing business. Which funding requirement is most directly relevant?",
+      options: [
+        "Investment Structure",
+        "Financial Statements",
+        "Founder Vesting",
+        "Market Expansion"
+      ],
+      answer: 3,
+      reason: "Market Expansion facilitates expansion into new markets or geographical regions and may involve localization, product adaptation, partnerships or distribution channels."
+    },
+
+    {
+      question: "Which combination correctly reflects the funding priorities described for EcoBuild Technologies?",
+      options: [
+        "Product Development and Market Expansion only",
+        "Debt Financing and Equity Dilution only",
+        "Product Development, Talent Acquisition, Scalability and Growth, and Market Expansion",
+        "Term Sheet and Investor Agreement only"
+      ],
+      answer: 2,
+      reason: "The case involves Product Development, Talent Acquisition, Scalability and Growth, and Market Expansion, all of which are identified as important funding areas for tech startups."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>FreshHarvest Foods is considering three alternatives for raising capital. Under the first alternative, an investor would provide capital in return for a portion of the company's equity. Under the second alternative, the startup would borrow money and repay the amount with interest within a stipulated time frame.</p>
+
+    <p>The founders are also considering a grant offered for achieving a specified business objective. The grant does not require repayment, but the funding may be released in different tranches based on the achievement of corresponding milestones.</p>
+  `,
+
+  questions: [
+    {
+      question: "Under the first alternative, FreshHarvest Foods would sell a portion of its company equity in return for capital. Which type of startup funding is this?",
+      options: [
+        "Equity Financing",
+        "Debt Financing",
+        "Grant",
+        "Crowdfunding"
+      ],
+      answer: 0,
+      reason: "Equity Financing involves selling a portion of a company's equity in return for capital."
+    },
+
+    {
+      question: "Under the second alternative, FreshHarvest Foods must repay the borrowed amount with interest. Which type of funding is involved?",
+      options: [
+        "Grant",
+        "Debt Financing",
+        "Equity Financing",
+        "Self-Financing"
+      ],
+      answer: 1,
+      reason: "Debt Financing involves borrowing money and paying it back with interest within a stipulated time frame."
+    },
+
+    {
+      question: "What is the key ownership implication of the equity financing alternative?",
+      options: [
+        "The startup must give up a portion of its ownership to shareholders",
+        "The startup must repay the investment with interest",
+        "The startup receives no capital",
+        "The startup must list its shares on a stock exchange"
+      ],
+      answer: 0,
+      reason: "In Equity Financing, startups give up a portion of their ownership to shareholders in return for capital."
+    },
+
+    {
+      question: "The grant is released according to the achievement of corresponding milestones. In what manner may grants be distributed according to the chapter?",
+      options: [
+        "Through fixed interest payments",
+        "Only after an IPO",
+        "In different tranches with reference to milestone fulfilment",
+        "Only against equity ownership"
+      ],
+      answer: 2,
+      reason: "The chapter states that grants are distributed in different tranches with reference to the fulfilment of the corresponding milestones."
+    },
+
+    {
+      question: "Which funding alternative in the case does not contain a repayment component?",
+      options: [
+        "Debt Financing only",
+        "Equity Financing and Grant",
+        "Debt Financing and Grant",
+        "Debt Financing and Equity Financing"
+      ],
+      answer: 1,
+      reason: "Both Equity Financing and Grants have no component of repayment of the invested funds, whereas Debt Financing requires repayment with interest."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>LearnSphere is an education startup looking for external funding. The founders first meet an individual investor who is willing to invest personal funds in exchange for equity and also provide mentorship. They are also approached by a professionally managed investment vehicle that focuses on startups with high growth potential and is prepared to provide a larger amount of capital for equity.</p>
+
+    <p>At the same time, LearnSphere considers raising small contributions from a large number of individuals through an online campaign. A corporate partner is also interested in providing funding, business resources and possible distribution support because LearnSphere complements its business objectives.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which source of funding is represented by the individual investor providing personal funds in exchange for equity and mentorship?",
+      options: [
+        "Angel Investor",
+        "Bank",
+        "Grant Program",
+        "Corporate Challenge"
+      ],
+      answer: 0,
+      reason: "Angel investors are individuals who invest personal funds in exchange for equity and often provide mentorship and expertise alongside financial support."
+    },
+
+    {
+      question: "Which funding source is described as a professionally managed investment vehicle focusing on startups with high growth potential?",
+      options: [
+        "Family and Friends",
+        "Venture Capitalist",
+        "Crowdfunding Platform",
+        "Business Plan Competition"
+      ],
+      answer: 1,
+      reason: "Venture capital firms are professionally managed investment vehicles dedicated to investing in high-growth startups, generally in exchange for equity."
+    },
+
+    {
+      question: "LearnSphere wants to raise money from a large pool of individuals, with each person contributing a small amount through an online campaign. Which source is most appropriate?",
+      options: [
+        "Angel Investment",
+        "Venture Capital",
+        "Crowdfunding",
+        "Self-Financing"
+      ],
+      answer: 2,
+      reason: "Crowdfunding involves raising funds from a large number of individuals, each contributing a small amount, typically through online crowdfunding platforms."
+    },
+
+    {
+      question: "The corporate partner proposes funding together with business resources and possible distribution support. Which category best describes this arrangement?",
+      options: [
+        "Government Loan Scheme",
+        "Corporate Partnership or Strategic Investor",
+        "Debt Financing",
+        "Family and Friends"
+      ],
+      answer: 1,
+      reason: "Corporate partnerships and strategic investors may provide funding, resources and potential distribution channels when the startup complements their business objectives."
+    },
+
+    {
+      question: "Which source in the case is particularly associated with early-stage capital along with mentorship and expertise?",
+      options: [
+        "Angel Investors",
+        "Private Equity Firms",
+        "Banks",
+        "Crowdfunding"
+      ],
+      answer: 0,
+      reason: "Angel investors often provide early-stage capital together with mentorship and expertise."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>GreenCart is at the earliest phase of its startup journey. The founders currently have an idea for a technology-enabled solution and want to conduct initial market research and develop a prototype. They do not yet have a fully developed product or established customer base.</p>
+
+    <p>To meet these initial requirements, the founders decide to use their personal savings and revenue generated by the small operations they have already started. They also receive financial support from family members and consider entering a business plan competition that offers prize money or grants to idea-stage startups.</p>
+  `,
+
+  questions: [
+    {
+      question: "GreenCart is at the earliest stage with an idea and intends to conduct initial market research and develop a prototype. Which funding stage best describes this situation?",
+      options: [
+        "Series A Stage",
+        "Series B Stage",
+        "Seed Stage",
+        "Pre-Seed Stage"
+      ],
+      answer: 3,
+      reason: "The Pre-Seed Stage represents the earliest phase of a startup, often involving an idea or concept, initial market research and prototype development."
+    },
+
+    {
+      question: "GreenCart uses personal savings and generated revenue to grow with minimal external investment. What is this approach called?",
+      options: [
+        "Crowdfunding",
+        "Bootstrapping",
+        "Venture Capital",
+        "Debt Financing"
+      ],
+      answer: 1,
+      reason: "Bootstrapping involves growing a startup with minimal external investment, relying instead on personal savings and generated revenue."
+    },
+
+    {
+      question: "The founders receive financial support from family members during this early stage. Which source of funding is this?",
+      options: [
+        "Support from Friends and Family",
+        "Venture Debt Funds",
+        "Private Equity",
+        "Corporate Partnership"
+      ],
+      answer: 0,
+      reason: "Entrepreneurs often turn to friends and family for financial support during the early stages of startup development."
+    },
+
+    {
+      question: "GreenCart plans to participate in an event where organisations may offer prize money or grants to idea-stage startups. Which option is being considered?",
+      options: [
+        "IPO",
+        "Venture Debt",
+        "Business Plan Competition",
+        "Series A Funding"
+      ],
+      answer: 2,
+      reason: "Business plan competitions and pitching events may provide prize money, grants or other financial benefits to idea-stage startups."
+    },
+
+    {
+      question: "Which activity is specifically associated with GreenCart's current Pre-Seed requirements?",
+      options: [
+        "Preparing for an IPO",
+        "Developing a prototype",
+        "Expanding through a large institutional investment",
+        "Selling shares to the public"
+      ],
+      answer: 1,
+      reason: "During the Pre-Seed Stage, funding is used for activities such as initial market research and developing a prototype."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>AgriSense has moved beyond the idea stage and has developed a minimum viable product (MVP). The founders now want to validate the business idea, conduct market research, refine the product and build initial traction with customers.</p>
+
+    <p>The startup plans to conduct field trials with a selected group of potential customers and is exploring an incubator that can provide office space, utilities and administrative and legal assistance. AgriSense is also considering angel investors and crowdfunding to obtain additional capital.</p>
+  `,
+
+  questions: [
+    {
+      question: "AgriSense has a minimum viable product (MVP) and wants to validate the business idea. Which stage of funding is most consistent with the case?",
+      options: [
+        "Seed Stage",
+        "Pre-Seed Stage",
+        "Series B Stage",
+        "Exit Stage"
+      ],
+      answer: 0,
+      reason: "The Seed Stage generally involves a prototype or minimum viable product (MVP) and focuses on validating the business idea, market research and refining the product or service."
+    },
+
+    {
+      question: "AgriSense plans to test its product with a selected group of potential customers. What activity does this represent?",
+      options: [
+        "IPO",
+        "Field Trials",
+        "Equity Dilution",
+        "Investor Agreement"
+      ],
+      answer: 1,
+      reason: "At the Seed Stage, startups may engage in field trials and test the product with a select group of potential customers."
+    },
+
+    {
+      question: "Which organisation in the case may provide office space, utilities and administrative and legal assistance?",
+      options: [
+        "Angel Investor",
+        "Bank",
+        "Incubator",
+        "Venture Capital Fund"
+      ],
+      answer: 2,
+      reason: "Incubators support entrepreneurs in launching startups and may provide office space, utilities, and administrative and legal assistance."
+    },
+
+    {
+      question: "AgriSense considers individuals who invest in promising startups in exchange for equity. Which source is being considered?",
+      options: [
+        "Government Grant",
+        "Crowdfunding",
+        "Angel Investors",
+        "Self-Financing"
+      ],
+      answer: 2,
+      reason: "Angel investors are individuals who invest in promising startups in exchange for equity."
+    },
+
+    {
+      question: "AgriSense also considers obtaining funds from a large number of individuals, each contributing a small amount. Which source is this?",
+      options: [
+        "Crowdfunding",
+        "Venture Capital",
+        "Debt Financing",
+        "Friends and Family"
+      ],
+      answer: 0,
+      reason: "Crowdfunding involves raising funds from a large number of individuals, each contributing a small amount, typically through online crowdfunding platforms."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS06",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>HealthRoute has successfully demonstrated its business concept and has started generating revenue. Its customer base is increasing, and the founders now want to scale operations, strengthen marketing and sales, and further develop the product.</p>
+
+    <p>The startup is preparing for a new funding round and is considering venture capital firms as the primary investors. It is also examining banks and Non-Banking Financial Companies (NBFCs) for working capital requirements because the startup now has market traction and revenue.</p>
+  `,
+
+  questions: [
+    {
+      question: "HealthRoute has proven its concept and demonstrated initial market traction and revenue growth. Which funding stage best matches this situation?",
+      options: [
+        "Series A Stage",
+        "Pre-Seed Stage",
+        "Seed Stage",
+        "Business Plan Competition"
+      ],
+      answer: 0,
+      reason: "In the Series A Stage, startups have typically proven their concept and demonstrated initial market traction and revenue growth."
+    },
+
+    {
+      question: "HealthRoute wants to scale operations and expand its customer base. What is a principal purpose of Series A funding mentioned in the chapter?",
+      options: [
+        "Closing the business",
+        "Scaling operations and expanding the customer base",
+        "Conducting only initial market research",
+        "Participating only in business plan competitions"
+      ],
+      answer: 1,
+      reason: "Series A funding focuses on scaling operations, expanding the customer base and further developing the product or service."
+    },
+
+    {
+      question: "Which type of investor is identified as a primary investor in Series A funding rounds?",
+      options: [
+        "Friends and Family",
+        "Angel Networks only",
+        "Venture Capital Firms",
+        "Business Plan Competitions"
+      ],
+      answer: 2,
+      reason: "Venture capital firms are identified as primary investors in Series A rounds, providing substantial capital in exchange for equity."
+    },
+
+    {
+      question: "HealthRoute is considering banks and NBFCs specifically for its working capital requirements. Which form of financing is relevant here?",
+      options: [
+        "Grant Financing",
+        "Equity Financing",
+        "Crowdfunding",
+        "Formal Debt Financing"
+      ],
+      answer: 3,
+      reason: "Banks and NBFCs can provide formal debt financing during this stage, and such financing is particularly relevant for working capital needs."
+    },
+
+    {
+      question: "Why may a startup consider debt financing rather than equity financing at this stage?",
+      options: [
+        "Debt financing does not entail dilution of equity ownership",
+        "Debt financing provides free grants",
+        "Debt financing converts the startup into a public company",
+        "Debt financing removes the need for revenue"
+      ],
+      answer: 0,
+      reason: "The chapter notes that some entrepreneurs may favor debt financing over equity because debt financing does not entail dilution of equity ownership."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS07",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>EduPay wants to raise funds from investors. Before approaching them, the founders assess their funding requirement and determine the amount needed. They then review whether the business is investment-ready and prepare a presentation explaining the startup's problem, solution, market opportunity, business model, traction, team and financial projections.</p>
+
+    <p>After preparing the presentation, the founders identify suitable investors, share the presentation and receive interest from investors who want to examine the startup further. The investors then conduct due diligence before discussing the investment terms.</p>
+  `,
+
+  questions: [
+    {
+      question: "What should EduPay undertake before assessing investment readiness according to the funding prerequisite sequence?",
+      options: [
+        "Term Sheet",
+        "Due Diligence",
+        "Assessing Need for Funding",
+        "Investor Targeting"
+      ],
+      answer: 2,
+      reason: "The funding process begins with Assessing Need for Funding, followed by Assessing Investment Readiness, Preparation of Pitch Deck, Investor Targeting, Due Diligence and Term Sheet."
+    },
+
+    {
+      question: "EduPay prepares a visual presentation covering its problem, solution, market opportunity and business model. What is this presentation called?",
+      options: [
+        "Pitch Deck",
+        "Investor Agreement",
+        "Financial Statement",
+        "Term Sheet"
+      ],
+      answer: 0,
+      reason: "A pitch deck is a visual presentation that communicates the startup's value proposition, business model, market opportunity and growth strategy to potential investors."
+    },
+
+    {
+      question: "The founders identify investors whose interests and investment preferences are suitable for EduPay. Which funding prerequisite does this represent?",
+      options: [
+        "Founder Vesting",
+        "Investor Targeting",
+        "Cash Flow Projection",
+        "Equity Dilution"
+      ],
+      answer: 1,
+      reason: "Investor Targeting involves identifying and approaching potential investors who are appropriate for the startup."
+    },
+
+    {
+      question: "Investors examine the startup before discussing the investment terms. Which step is represented by this examination?",
+      options: [
+        "Market Expansion",
+        "Bootstrapping",
+        "Due Diligence",
+        "Crowdfunding"
+      ],
+      answer: 2,
+      reason: "Due Diligence by interested investors involves examining and validating relevant aspects of the startup before proceeding with the investment process."
+    },
+
+    {
+      question: "Which sequence correctly represents the main funding prerequisites described in the case?",
+      options: [
+        "Investor Targeting → Term Sheet → Assessing Need for Funding → Due Diligence",
+        "Assessing Need for Funding → Assessing Investment Readiness → Preparation of Pitch Deck → Investor Targeting → Due Diligence → Term Sheet",
+        "Due Diligence → Preparation of Pitch Deck → Assessing Need for Funding → Investor Targeting",
+        "Pitch Deck → Assessing Need for Funding → Term Sheet → Investor Targeting"
+      ],
+      answer: 1,
+      reason: "The prescribed sequence is Assessing Need for Funding, Assessing Investment Readiness, Preparation of Pitch Deck, Investor Targeting, Due Diligence by Interested Investors and Term Sheet."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS08",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>CleanRide is preparing for discussions with potential investors. The founders have noticed that investors will examine its revenue growth, market position, expected return on investment, expected time to break-even and profitability, and the uniqueness of its product compared with existing alternatives.</p>
+
+    <p>CleanRide is also researching investors carefully. One venture capital fund has explained that its investment thesis focuses on a particular sector, startup stage and funding amount. The founders therefore review the fund's previous investments and preferences before making contact.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which investment-readiness factor is represented by CleanRide's review of its revenue growth and market position?",
+      options: [
+        "Exit Strategy",
+        "Revenue Growth and Market Position",
+        "Founder Restrictions",
+        "Investment Structure"
+      ],
+      answer: 1,
+      reason: "Revenue Growth and Market Position are among the key attributes investors consider when assessing whether a startup is investment-ready."
+    },
+
+    {
+      question: "Investors in the case are interested in the expected return from CleanRide. Which investment-readiness factor does this represent?",
+      options: [
+        "Favorable Return on Investment",
+        "Employee Stock Option Pool",
+        "Market Expansion",
+        "Cash Flow Projection"
+      ],
+      answer: 0,
+      reason: "Investors prioritize ventures with the potential for attractive returns, making Favorable Return on Investment an investment-readiness consideration."
+    },
+
+    {
+      question: "CleanRide explains how its product is different from existing alternatives. Which investment-readiness factor is being demonstrated?",
+      options: [
+        "Term Sheet",
+        "Financial Statements",
+        "Uniqueness and Competitive Advantage",
+        "Debt Financing"
+      ],
+      answer: 2,
+      reason: "Investors are attracted to startups with innovative solutions and a distinctive competitive edge, described as Uniqueness and Competitive Advantage."
+    },
+
+    {
+      question: "The venture capital fund describes its preferred sector, startup stage and funding amount. Which concept is being applied?",
+      options: [
+        "Investor Agreement",
+        "Scenario Analysis",
+        "Investment Thesis",
+        "Bootstrapping"
+      ],
+      answer: 2,
+      reason: "A VC fund's Investment Thesis encompasses its preferred sectors, startup stage and funding amount."
+    },
+
+    {
+      question: "Why does CleanRide review the fund's previous investments and preferences before contacting it?",
+      options: [
+        "To determine whether the investor aligns with the startup's requirements",
+        "To convert debt into equity",
+        "To calculate gross profit margin",
+        "To prepare a government grant"
+      ],
+      answer: 0,
+      reason: "Startups should research potential investors, including their past investments and preferences, to identify investors whose interests align with the startup."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS09",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>MedResearch Labs is estimating the seed capital required to start operations. The founders first list expected product development, marketing, legal fees, salaries, equipment and overhead expenses. They also divide the business roadmap into milestones such as completing the prototype and acquiring the first customers.</p>
+
+    <p>The founders prepare financial projections covering revenue, expenses and cash flow. Because actual outcomes may differ, they also develop best-case, worst-case and most-likely scenarios to understand how different assumptions could affect their funding requirement and contingency planning.</p>
+  `,
+
+  questions: [
+    {
+      question: "MedResearch Labs estimates product development, marketing, legal fees, salaries, equipment and overhead expenses. Which method of quantifying seed capital is being used?",
+      options: [
+        "Market Analysis",
+        "Professional Advice",
+        "Cost-Based Approach",
+        "Scenario Analysis"
+      ],
+      answer: 2,
+      reason: "The Cost-Based Approach begins by identifying expenses associated with launching and operating the startup, such as product development, marketing, legal fees, salaries, equipment and overhead."
+    },
+
+    {
+      question: "The founders estimate the funding needed to reach milestones such as completing the prototype and acquiring the first customers. Which method is this?",
+      options: [
+        "Milestone-Based Approach",
+        "Debt Financing",
+        "Valuation Modeling",
+        "Investor Targeting"
+      ],
+      answer: 0,
+      reason: "The Milestone-Based Approach breaks the development roadmap into key milestones and estimates the funding required to achieve each milestone."
+    },
+
+    {
+      question: "The founders prepare projections of revenue, expenses and cash flow to determine funding requirements. Which method are they applying?",
+      options: [
+        "Bootstrapping",
+        "Financial Projections",
+        "Business Plan Competition",
+        "Exit Strategy"
+      ],
+      answer: 1,
+      reason: "Financial Projections forecast revenue, expenses and cash flow over a specified period and can be used to determine funding requirements."
+    },
+
+    {
+      question: "MedResearch Labs prepares best-case, worst-case and most-likely scenarios. Which approach to quantifying seed capital does this represent?",
+      options: [
+        "Market Analysis",
+        "Cost-Based Approach",
+        "Professional Advice",
+        "Scenario Analysis"
+      ],
+      answer: 3,
+      reason: "Scenario Analysis considers different possible outcomes, including best-case, worst-case and most-likely scenarios, to account for uncertainty and risk."
+    },
+
+    {
+      question: "Why does MedResearch Labs use different scenarios when quantifying seed capital?",
+      options: [
+        "To convert the startup into a public company",
+        "To account for uncertainties and risks and develop a more robust funding strategy",
+        "To avoid preparing any financial projections",
+        "To guarantee a particular investor return"
+      ],
+      answer: 1,
+      reason: "Scenario Analysis helps startups account for uncertainties and risks and develop a more robust funding strategy and contingency plan."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS10",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>FinServe Analytics is preparing to approach potential investors. The founders first create a clear pitch explaining the business idea, the problem being solved and the startup's unique value proposition. They then research investors based on industry focus, investment stage and geographic location before sending personalized messages with the pitch deck.</p>
+
+    <p>After discussions, an investor proposes a document summarising the major points of the investment deal. The document covers matters such as valuation and investment structure. The founders understand that this document is generally non-binding and acts as a roadmap for further negotiations. Later, a legally binding investor agreement is prepared, and the issue of reduction in the ownership percentage of existing shareholders due to new shares issued to the investor is discussed.</p>
+  `,
+
+  questions: [
+    {
+      question: "Before contacting investors, FinServe Analytics researches industry focus, investment stage and geographic location. Which investor-approach activity does this represent?",
+      options: [
+        "Research Investors",
+        "Follow-Up and Close the Deal",
+        "Due Diligence",
+        "Scenario Analysis"
+      ],
+      answer: 0,
+      reason: "Research Investors involves identifying potential investors and examining preferences such as industry focus, investment stage and geographic location."
+    },
+
+    {
+      question: "FinServe Analytics sends personalized messages to targeted investors with its pitch deck. Which step does this represent?",
+      options: [
+        "Prepare Your Pitch",
+        "Reach Out to Investors",
+        "Investor Agreement",
+        "Market Analysis"
+      ],
+      answer: 1,
+      reason: "Reach Out to Investors involves sending personalized emails or LinkedIn messages to targeted investors, introducing the startup and sharing the pitch deck."
+    },
+
+    {
+      question: "The investor proposes a document summarising the major points of the investment deal and covering valuation and investment structure. What is this document?",
+      options: [
+        "Financial Statement",
+        "Business Plan",
+        "Term Sheet",
+        "Grant Agreement"
+      ],
+      answer: 2,
+      reason: "A Term Sheet summarises the major points of engagement in an investment deal and includes provisions such as valuation and investment structure."
+    },
+
+    {
+      question: "What is the general nature of the Term Sheet described in the case?",
+      options: [
+        "It is a tax return",
+        "It is a financial statement",
+        "It is a public offering document",
+        "It is generally a non-binding list of propositions and a roadmap for negotiations"
+      ],
+      answer: 3,
+      reason: "The chapter describes a term sheet as a non-binding list of propositions at the early stages of a deal and as a roadmap for negotiating and finalising the definitive agreement."
+    },
+
+    {
+      question: "The issuance of new shares to an incoming investor reduces the ownership percentage of existing shareholders. What is this reduction called?",
+      options: [
+        "Equity Dilution",
+        "Bootstrapping",
+        "Scenario Analysis",
+        "Market Expansion"
+      ],
+      answer: 0,
+      reason: "Equity Dilution refers to the reduction in the ownership percentage of existing shareholders resulting from the issuance of new shares to incoming investors."
+    }
+  ]
+},
+{
+  case_id: "strt_ch6_CS11",
+  difficulty: "Medium",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>NutriCare Innovations has developed a technology-enabled nutrition platform and now requires external capital to expand its operations. The founders are considering three alternatives. Under the first, an investor will provide capital in exchange for a portion of the startup's equity and expects to participate in important decision-making. Under the second, a financial institution will provide funds that must be repaid within a stipulated period along with interest. The founders are concerned that regular repayment obligations may place pressure on the startup's cash flows.</p>
+
+    <p>A third alternative is a grant provided for achieving specified objectives. The grant does not require repayment, but the funding may be released in different tranches linked to the fulfilment of milestones. The founders therefore compare the alternatives based on ownership, repayment obligations and investor involvement before selecting the appropriate source of funding.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which alternative would directly result in the founders giving up a portion of their ownership in NutriCare Innovations?",
+      options: [
+        "The grant arrangement",
+        "The equity financing arrangement",
+        "The debt financing arrangement",
+        "The milestone-based grant only after completion"
+      ],
+      answer: 1,
+      reason: "Equity Financing involves selling a portion of the company's equity in return for capital. Therefore, the founders give up a portion of their ownership."
+    },
+
+    {
+      question: "The financial institution expects repayment with interest within a stipulated period. Which feature of the funding arrangement is being highlighted?",
+      options: [
+        "Capital growth for investors",
+        "Non-dilutive funding",
+        "Repayment obligation under Debt Financing",
+        "Investor participation in strategic decisions"
+      ],
+      answer: 2,
+      reason: "Debt Financing involves borrowing money and repaying it within a stipulated time frame with interest."
+    },
+
+    {
+      question: "The founders are concerned that regular repayment may place pressure on cash flows. Which characteristic of Debt Financing explains this concern?",
+      options: [
+        "Startups need to adhere to a repayment timeline and generate cash flows for interest repayments",
+        "Debt investors normally require ownership in the startup",
+        "Debt financing has no repayment component",
+        "Debt financing is distributed in milestone-based tranches"
+      ],
+      answer: 0,
+      reason: "Under Debt Financing, startups need to adhere to the repayment timeline and generate cash flows to meet interest repayments."
+    },
+
+    {
+      question: "The grant provider may release funds in different tranches linked to specified milestones. Which feature of grants is illustrated?",
+      options: [
+        "The investor receives voting rights",
+        "The startup must repay the grant with interest",
+        "Grant funding is linked to the fulfilment of corresponding milestones",
+        "Existing shareholders are automatically diluted"
+      ],
+      answer: 2,
+      reason: "The chapter states that grants may be distributed in different tranches with reference to the fulfilment of the corresponding milestones."
+    },
+
+    {
+      question: "If the founders want to avoid both repayment obligations and immediate transfer of ownership, which alternative in the case most closely meets both requirements?",
+      options: [
+        "Equity Financing",
+        "Debt Financing",
+        "Grant",
+        "Venture Debt"
+      ],
+      answer: 2,
+      reason: "A Grant has no component of repayment of the invested funds and does not require the startup to give up an equity stake to the grant provider."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS12",
+  difficulty: "Medium",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>MedNova Devices is developing a medical technology solution that requires substantial research and testing before the product can be fully proven. The founders initially estimate the costs of research, prototype development, salaries, equipment and other operating expenses. However, they realise that simply adding the costs may not adequately reflect the uncertain development path of the project.</p>
+
+    <p>The founders therefore divide the development roadmap into measurable milestones such as completion of a working prototype, successful field trials and acquisition of the first customers. They also prepare revenue, expense and cash flow projections for the first 24 months. Since unexpected technical or market developments may affect the funding requirement, they prepare best-case, worst-case and most-likely scenarios and maintain a contingency buffer.</p>
+  `,
+
+  questions: [
+    {
+      question: "Why is the Milestone-Based Approach particularly relevant to MedNova Devices' funding assessment?",
+      options: [
+        "The startup has no development activities to complete",
+        "The medical solution may require months or years before it can be proven, making progress-based milestones useful",
+        "The startup intends to list shares on a stock exchange immediately",
+        "The startup wants to avoid preparing any financial information"
+      ],
+      answer: 1,
+      reason: "The chapter notes that in larger R&D projects, including complex engineering or medical solutions, milestones may be preferable to simple timelines because the solution may take months or years to be proven."
+    },
+
+    {
+      question: "The founders estimate research, prototype development, salaries, equipment and operating expenses before considering milestones. Which approach is reflected by this initial exercise?",
+      options: [
+        "Cost-Based Approach",
+        "Scenario Analysis",
+        "Investor Targeting",
+        "Valuation Modeling"
+      ],
+      answer: 0,
+      reason: "The Cost-Based Approach identifies expenses associated with launching and operating the startup, including product development, salaries, equipment and overhead expenses."
+    },
+
+    {
+      question: "MedNova prepares revenue, expense and cash flow projections for the first 24 months. Which method of quantifying seed capital is directly represented?",
+      options: [
+        "Professional Advice",
+        "Market Analysis",
+        "Financial Projections",
+        "Founder Vesting"
+      ],
+      answer: 2,
+      reason: "Financial Projections involve detailed projections of revenue, expenses and cash flow over a period, typically including the first 12–24 months."
+    },
+
+    {
+      question: "Why has MedNova prepared best-case, worst-case and most-likely scenarios?",
+      options: [
+        "To determine the legal identity of the startup",
+        "To account for uncertainties and risks in estimating financial needs",
+        "To eliminate the need for contingency planning",
+        "To determine the number of founders"
+      ],
+      answer: 1,
+      reason: "Scenario Analysis considers different scenarios and potential outcomes to account for uncertainties and risks and supports development of a more robust funding strategy and contingency plan."
+    },
+
+    {
+      question: "Which combination best describes MedNova's overall approach to quantifying seed capital?",
+      options: [
+        "Only cost estimation without milestones or projections",
+        "Cost assessment combined with milestones, financial projections and scenario analysis",
+        "Only investor targeting followed by an IPO",
+        "Only debt financing and equity dilution analysis"
+      ],
+      answer: 1,
+      reason: "The case combines the Cost-Based Approach with a Milestone-Based Approach, Financial Projections and Scenario Analysis, all of which are recognised ways to quantify seed capital."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS13",
+  difficulty: "Medium",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>CloudDesk Solutions is preparing a financial model before approaching investors. The founders estimate future sales by examining customer demand, market trends, pricing strategies and competitive dynamics. They separately estimate production costs, salaries, rent, utilities, marketing and administrative overheads.</p>
+
+    <p>The finance team then prepares a projection of cash inflows and outflows, including sales receipts, expenses, loan repayments and capital expenditure. Management also compares revenue with expenses to understand profitability and creates base-case, best-case and worst-case scenarios to understand how changes in assumptions may affect financial outcomes.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which financial modelling activity is most directly concerned with CloudDesk's prediction of future sales using demand, pricing and market trends?",
+      options: [
+        "Revenue Forecasting",
+        "Expense Modeling",
+        "Profitability Analysis",
+        "Cash Flow Projection"
+      ],
+      answer: 0,
+      reason: "Revenue Forecasting involves predicting future income streams using factors such as market analysis, sales projections, pricing strategies, customer demand and market trends."
+    },
+
+    {
+      question: "The finance team estimates salaries, rent, utilities, production and administrative overheads. Which modelling activity does this represent?",
+      options: [
+        "Valuation Modeling",
+        "Expense Modeling",
+        "Scenario Analysis",
+        "Revenue Forecasting"
+      ],
+      answer: 1,
+      reason: "Expense Modeling involves estimating costs associated with running a startup, including production, marketing, salaries, rent, utilities and administrative overhead."
+    },
+
+    {
+      question: "Why does CloudDesk prepare a projection of sales receipts, expenses, loan repayments and capital expenditure?",
+      options: [
+        "To estimate the ownership percentage of founders",
+        "To determine the startup's investment thesis",
+        "To predict its cash position and ensure sufficient liquidity",
+        "To prepare a term sheet"
+      ],
+      answer: 2,
+      reason: "Cash Flow Projection forecasts cash inflows and outflows to predict the startup's cash position and ensure sufficient liquidity to meet financial obligations."
+    },
+
+    {
+      question: "CloudDesk compares revenue with expenses and examines gross profit margin, operating profit margin and net profit margin. Which analysis is being performed?",
+      options: [
+        "Profitability Analysis",
+        "Market Analysis",
+        "Investor Targeting",
+        "Financial Projection only"
+      ],
+      answer: 0,
+      reason: "Profitability Analysis evaluates profitability by comparing revenue with expenses and calculating measures such as gross profit margin, operating profit margin and net profit margin."
+    },
+
+    {
+      question: "Management wants to understand how different assumptions may affect financial outcomes and prepares base-case, best-case and worst-case scenarios. Which modelling activity is appropriate?",
+      options: [
+        "Expense Modeling",
+        "Scenario Analysis",
+        "Revenue Forecasting",
+        "Financial Statements"
+      ],
+      answer: 1,
+      reason: "Scenario Analysis involves modelling different scenarios and assessing the impact of changes in assumptions on financial outcomes, including best-case and worst-case scenarios."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS14",
+  difficulty: "Medium",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>FinTechBridge has reached a stage where it is ready to approach angel investors and venture capital firms. The founders prepare a concise pitch deck covering the problem, solution, market opportunity, business model, traction, team and financial projections. They also clearly state the funding amount required and how the investment will be utilised.</p>
+
+    <p>Instead of contacting every investor, FinTechBridge studies the investment thesis of several VC firms. One fund focuses on fintech startups at a particular stage, in a specified geography, with a defined funding range. The founders review the fund's past investments, sector preferences, ticket size and level of involvement before sending a personalised pitch deck to the selected investors.</p>
+  `,
+
+  questions: [
+    {
+      question: "Why does FinTechBridge include the funding amount required and its proposed utilisation in the pitch deck?",
+      options: [
+        "Because the 'Ask' section clearly outlines the funding amount and how the investment will be utilised",
+        "Because the 'Team' section determines the investment amount",
+        "Because 'Founder Vesting' specifies the amount of funding required",
+        "Because 'Investor Agreement' is part of every pitch deck"
+      ],
+      answer: 0,
+      reason: "The Ask section of the pitch deck clearly outlines the funding amount and how the investment will be utilised to accelerate growth and achieve key milestones."
+    },
+
+    {
+      question: "The VC fund's focus on a particular stage, geography, sector and funding range represents its:",
+      options: [
+        "Investor Agreement",
+        "Investment Thesis",
+        "Financial Statement",
+        "Equity Dilution"
+      ],
+      answer: 1,
+      reason: "An Investment Thesis is the strategic framework guiding a VC firm's investment decisions, including preferred stage, geographic focus, sector emphasis and funding amount."
+    },
+
+    {
+      question: "Why does FinTechBridge review the VC firm's past investments before making contact?",
+      options: [
+        "To calculate its cash flow statement",
+        "To determine whether the investor's preferences and investment history align with the startup",
+        "To establish the startup's accounting standards",
+        "To convert the investor's debt into equity"
+      ],
+      answer: 1,
+      reason: "Targeting the right investors involves reviewing their past investments and preferences to identify active investors whose interests align with the startup."
+    },
+
+    {
+      question: "The founders specifically examine the amount normally invested by the VC fund. Which factor are they trying to determine?",
+      options: [
+        "Average ticket size of investments",
+        "Gross profit margin",
+        "Founder vesting period",
+        "Cash conversion period"
+      ],
+      answer: 0,
+      reason: "The chapter states that startups should determine the average ticket size of an investor's investments when targeting suitable investors."
+    },
+
+    {
+      question: "FinTechBridge sends a personalised pitch deck only after researching suitable investors. Which approach is most consistent with the chapter?",
+      options: [
+        "Contacting all investors without considering their preferences",
+        "Researching investors and tailoring the pitch to targeted investors",
+        "Waiting for an IPO before contacting investors",
+        "Using only debt financing information in the pitch"
+      ],
+      answer: 1,
+      reason: "The chapter recommends researching investors, understanding their preferences and then tailoring the pitch and outreach to targeted investors."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS15",
+  difficulty: "Medium",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>RetailTech Labs has received a funding proposal from a venture capital firm. At the early stage of discussions, the investor provides a document summarising the principal terms of the proposed investment, including valuation and investment structure. The founders understand that the document is generally non-binding and serves as a roadmap for further negotiations.</p>
+
+    <p>During the discussions, the parties also consider founder vesting to encourage continued commitment by the founders, board representation and voting rights under governance provisions, and anti-dilution provisions to protect investors in certain future financing situations. After the definitive investment agreement is executed, the investor receives newly issued shares. The founders recognise that their percentage ownership is reduced as a result of the new share issuance.</p>
+  `,
+
+  questions: [
+    {
+      question: "What is the document provided by the venture capital firm at the early stage of the deal?",
+      options: [
+        "Investor Agreement",
+        "Financial Statement",
+        "Term Sheet",
+        "Business Plan"
+      ],
+      answer: 2,
+      reason: "A Term Sheet is a non-binding list of propositions at the early stages of a deal and summarises the major points of engagement between the investor and startup."
+    },
+
+    {
+      question: "Which term-sheet provision is intended to ensure that the founders continue to be committed to the success of RetailTech Labs?",
+      options: [
+        "Founder Vesting",
+        "Market Opportunity",
+        "Financial Projections",
+        "Investment Thesis"
+      ],
+      answer: 0,
+      reason: "Founder Vesting provisions may be included in the term sheet to ensure that founders continue to be committed to the success of the startup."
+    },
+
+    {
+      question: "The investor seeks board representation and voting rights in major decisions. Which term-sheet area primarily covers these matters?",
+      options: [
+        "Exit Strategy",
+        "Governance and Control",
+        "Cost-Based Approach",
+        "Revenue Forecasting"
+      ],
+      answer: 1,
+      reason: "Governance and Control provisions address matters such as board composition, voting rights and control mechanisms."
+    },
+
+    {
+      question: "The investor wants protection in the event of a future equity financing round at a lower valuation. Which provision is relevant?",
+      options: [
+        "Call to Action",
+        "Liquidation Preferences",
+        "Anti-Dilution Provisions",
+        "Market Analysis"
+      ],
+      answer: 2,
+      reason: "Anti-Dilution Provisions protect investors from dilution of their ownership stake in the event of future equity financing rounds at a lower valuation."
+    },
+
+    {
+      question: "After newly issued shares are given to the incoming investor, the founders' percentage ownership falls. What does this illustrate?",
+      options: [
+        "Scenario Analysis",
+        "Investor Targeting",
+        "Equity Dilution",
+        "Bootstrapping"
+      ],
+      answer: 2,
+      reason: "Equity Dilution occurs when a startup issues additional shares, thereby reducing the ownership percentage of existing shareholders."
+    }
+  ]
+},
+{
+  case_id: "strt_ch6_CS16",
+  difficulty: "Hard",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>BioForge Medical is developing an advanced medical device that involves complex research and engineering. The founders expect that the solution may take considerable time to be fully proven and therefore do not want the funding requirement to depend only on a fixed development timeline. They identify major milestones including completion of the working prototype, successful field trials and achievement of defined customer-related objectives.</p>
+
+    <p>Alongside the milestone plan, BioForge prepares financial projections covering revenue, expenses and cash flow and considers best-case, worst-case and most-likely outcomes. The founders also recognise that potential investors will examine the startup's market opportunity, uniqueness and competitive advantage before considering an investment.</p>
+  `,
+
+  questions: [
+    {
+      question: "Considering the nature of BioForge Medical's development project, which approach should form the principal basis for estimating funding required to demonstrate measurable progress?",
+      options: [
+        "Cost-Based Approach only",
+        "Milestone-Based Approach",
+        "Investor Targeting",
+        "Global Comparisons"
+      ],
+      answer: 1,
+      reason: "For complex engineering or medical solutions that may take months or years to be proven, the chapter states that the Milestone-Based Approach is useful because progress can be assessed through measurable milestones."
+    },
+
+    {
+      question: "BioForge prepares revenue, expenses and cash flow projections in addition to its milestone plan. What is the principal purpose of these projections in quantifying seed capital?",
+      options: [
+        "To determine the investor's voting rights",
+        "To estimate funding requirements needed to sustain operations until profitability or additional funding",
+        "To establish the startup's board composition",
+        "To determine the liquidation preference of investors"
+      ],
+      answer: 1,
+      reason: "Financial Projections forecast revenue, expenses and cash flow and help determine the funding required to sustain operations until the startup achieves profitability or secures additional funding."
+    },
+
+    {
+      question: "Why is BioForge's preparation of best-case, worst-case and most-likely outcomes particularly relevant to its funding plan?",
+      options: [
+        "It determines the startup's legal form",
+        "It eliminates the need for a comprehensive budget",
+        "It enables the startup to account for uncertainty and develop contingency planning",
+        "It ensures that the startup receives equity financing"
+      ],
+      answer: 2,
+      reason: "Scenario Analysis considers different possible outcomes to account for uncertainties and risks and helps startups develop a more robust funding strategy and contingency plan."
+    },
+
+    {
+      question: "Before seeking investment, the founders emphasise the unique nature of the medical device and its distinction from existing alternatives. Which investment-readiness consideration is most directly addressed?",
+      options: [
+        "Uniqueness and Competitive Advantage",
+        "Time to Break-Even and Profitability",
+        "Founder Restrictions",
+        "Investment Structure"
+      ],
+      answer: 0,
+      reason: "Uniqueness and Competitive Advantage is an important investment-readiness factor. Startups with innovative solutions and a distinctive competitive edge are more likely to attract investor interest."
+    },
+
+    {
+      question: "Which combination best reflects BioForge Medical's approach to preparing for funding?",
+      options: [
+        "Milestone-based planning, financial projections, scenario analysis and demonstration of investment readiness",
+        "Only debt financing supported by a term sheet",
+        "Only market analysis without financial planning",
+        "IPO preparation followed by investor targeting"
+      ],
+      answer: 0,
+      reason: "The case combines a Milestone-Based Approach with Financial Projections and Scenario Analysis while also addressing investment-readiness factors such as market opportunity and competitive advantage."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS17",
+  difficulty: "Hard",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>LogiTech Solutions has demonstrated its business concept, generated initial revenue and established market traction. The founders now intend to expand the customer base, strengthen marketing and sales, and build additional infrastructure. A venture capital fund is considering an equity investment, while the startup is separately examining a bank facility for working capital.</p>
+
+    <p>The founders are also evaluating venture debt as an additional source of capital. They understand that issuing new equity to the venture capital investor can reduce the ownership percentage of existing shareholders, whereas debt financing does not entail dilution of equity ownership. The founders therefore compare the sources according to their purpose and effect on ownership.</p>
+  `,
+
+  questions: [
+    {
+      question: "Based on LogiTech Solutions' proven concept, initial market traction and revenue growth, which funding stage is most consistent with the case?",
+      options: [
+        "Pre-Seed Stage",
+        "Seed Stage",
+        "Series A Stage",
+        "Exit Stage"
+      ],
+      answer: 2,
+      reason: "Series A startups have typically proven their concept and demonstrated initial market traction and revenue growth, with funding directed towards scaling operations and expanding the customer base."
+    },
+
+    {
+      question: "The startup wants a bank facility specifically to meet working capital requirements. Which financing route identified in the chapter is most directly applicable?",
+      options: [
+        "Formal Debt Financing through Banks/NBFCs",
+        "Grant Financing",
+        "Business Plan Competition",
+        "Angel Investment"
+      ],
+      answer: 0,
+      reason: "During the Series A stage, banks and NBFCs can provide formal debt financing, which is particularly relevant for addressing working capital needs."
+    },
+
+    {
+      question: "Why may LogiTech consider venture debt alongside its equity financing?",
+      options: [
+        "Venture debt converts every founder's holding into public shares",
+        "Venture debt can provide additional capital while minimising equity dilution",
+        "Venture debt removes all repayment obligations",
+        "Venture debt is a form of government grant"
+      ],
+      answer: 1,
+      reason: "Venture debt funds provide funding in the form of debt and often complement angel or VC investments, allowing startups to access additional capital while minimising equity dilution."
+    },
+
+    {
+      question: "The VC investor receives newly issued equity shares. What is the resulting effect on existing shareholders' ownership percentage?",
+      options: [
+        "Their ownership percentage necessarily increases",
+        "Their ownership percentage remains unchanged in every case",
+        "Their ownership percentage is reduced through equity dilution",
+        "Their ownership is converted into debt"
+      ],
+      answer: 2,
+      reason: "When a startup raises capital from new investors and issues new shares, the ownership stakes of existing shareholders are diluted."
+    },
+
+    {
+      question: "Which statement best explains the founders' comparison of the VC investment, bank facility and venture debt?",
+      options: [
+        "All three are equity financing because all provide capital",
+        "The VC investment involves equity, while the bank facility and venture debt are debt-based sources with no equity dilution arising merely from the debt funding",
+        "The bank facility is a grant and venture debt is crowdfunding",
+        "Venture debt gives the investor automatic board control in return for funding"
+      ],
+      answer: 1,
+      reason: "The VC investment is equity financing, whereas a bank facility and venture debt are debt-based sources. Debt financing does not entail dilution of equity ownership merely because debt capital is raised."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS18",
+  difficulty: "Hard",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>HealthGrid Analytics has completed its initial preparation for fundraising. After determining its funding requirement and assessing investment readiness, the founders prepare a pitch deck and begin identifying suitable investors. Instead of approaching every VC fund, they examine each fund's Investment Thesis, including preferred stage, sector, geographic focus and funding amount, and review past investments before making contact.</p>
+
+    <p>One interested investor then examines HealthGrid's historical financial decisions, market figures and the credentials and backgrounds of its team members. After this examination, the investor proposes a document setting out valuation, investment structure, management structure and changes to share capital. The document is described as non-binding and is intended to guide the parties while they work towards the definitive agreement.</p>
+  `,
+
+  questions: [
+    {
+      question: "Why does HealthGrid Analytics review each VC firm's Investment Thesis before approaching it?",
+      options: [
+        "Because the Investment Thesis identifies the investor's preferred stage, geography, sector and funding amount",
+        "Because the Investment Thesis is the startup's legally binding investor agreement",
+        "Because the Investment Thesis determines the startup's accounting policies",
+        "Because the Investment Thesis replaces due diligence"
+      ],
+      answer: 0,
+      reason: "A VC firm's Investment Thesis is the strategic framework guiding its investment decisions and outlines its preferred stage, geographic focus, sector emphasis and funding amount."
+    },
+
+    {
+      question: "The investor examines HealthGrid's historical financial decisions, market figures and team credentials before finalising the investment. Which step is represented?",
+      options: [
+        "Investor Targeting",
+        "Due Diligence by Interested Investors",
+        "Preparation of Pitch Deck",
+        "Scenario Analysis"
+      ],
+      answer: 1,
+      reason: "Due Diligence involves examination of areas including the startup's historical financial decisions, market figures and the credentials and backgrounds of team members before an equity deal is finalised."
+    },
+
+    {
+      question: "The investor's proposed document covers valuation, investment structure, management structure and changes to share capital. Which document is being described?",
+      options: [
+        "Financial Statement",
+        "Pitch Deck",
+        "Term Sheet",
+        "Business Plan"
+      ],
+      answer: 2,
+      reason: "The chapter states that a term sheet for a venture capital transaction in India typically consists of provisions relating to valuation, investment structure, management structure and changes to share capital."
+    },
+
+    {
+      question: "Why is the proposed document described as a roadmap even though it is generally non-binding?",
+      options: [
+        "Because it summarises the major points of engagement and guides negotiation towards the definitive agreement",
+        "Because it automatically transfers shares to the investor",
+        "Because it replaces all regulatory approvals",
+        "Because it guarantees the final investment amount"
+      ],
+      answer: 0,
+      reason: "A term sheet is generally non-binding but serves as a roadmap for negotiating and finalising the definitive agreement between the startup and investor."
+    },
+
+    {
+      question: "Which sequence most accurately reflects the process followed by HealthGrid Analytics?",
+      options: [
+        "Investor Targeting → Assessing Need for Funding → Term Sheet → Pitch Deck → Due Diligence",
+        "Assessing Need for Funding → Assessing Investment Readiness → Preparation of Pitch Deck → Investor Targeting → Due Diligence → Term Sheet",
+        "Due Diligence → Investor Targeting → Assessing Need for Funding → Pitch Deck → Term Sheet",
+        "Pitch Deck → Due Diligence → Assessing Investment Readiness → Investor Targeting → Term Sheet"
+      ],
+      answer: 1,
+      reason: "The prescribed prerequisite sequence is Assessing Need for Funding, Assessing Investment Readiness, Preparation of Pitch Deck, Investor Targeting, Due Diligence by Interested Investors and Term Sheet."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS19",
+  difficulty: "Hard",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>RetailSphere has entered into a legally binding investor agreement with a new investor. The agreement covers investment terms, rights and protections, governance structure, founder restrictions and potential exit arrangements. The investor has negotiated information rights and board representation, while the founders remain subject to specified restrictions intended to protect the interests of the investors.</p>
+
+    <p>In a later financing round, RetailSphere issues additional shares to incoming investors. At the same time, the company creates an employee stock option pool to attract and retain talented employees. The founders notice that their ownership percentage has reduced. The investor agreement also contains an anti-dilution provision because the parties recognise that a future financing round could take place at a lower valuation.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which document governs the relationship between RetailSphere and its investor as a legally binding contract covering investment terms, governance and rights?",
+      options: [
+        "Pitch Deck",
+        "Investor Agreement",
+        "Term Sheet",
+        "Investment Thesis"
+      ],
+      answer: 1,
+      reason: "An Investor Agreement is a legally binding contract between a startup and an investor and governs their relationship, including investment terms, rights and obligations and governance."
+    },
+
+    {
+      question: "The investor requests access to financial and operational information and the right to appoint a representative to the board. Which combination of rights is being exercised?",
+      options: [
+        "Information Rights and Board Representation",
+        "Founder Restrictions and Exit Strategy",
+        "Pre-emption Rights and Founder Vesting",
+        "Liquidation Preferences and Conversion Rights"
+      ],
+      answer: 0,
+      reason: "Information Rights provide investors access to relevant financial and operational information, while Board Representation allows investors to appoint one or more representatives to the company's board."
+    },
+
+    {
+      question: "The founders' ownership percentage decreases after new shares are issued to incoming investors and employees exercise stock options. Which concept best captures this outcome?",
+      options: [
+        "Investor Targeting",
+        "Scenario Analysis",
+        "Equity Dilution",
+        "Valuation Modeling"
+      ],
+      answer: 2,
+      reason: "Equity Dilution occurs when additional shares are issued through financing rounds or employee stock options, reducing the ownership percentage of existing shareholders."
+    },
+
+    {
+      question: "Why can the creation and subsequent exercise of an employee stock option pool contribute to dilution?",
+      options: [
+        "Because employees receive government grants",
+        "Because exercise of stock options can result in the issue of new shares",
+        "Because employee stock options automatically increase the founders' ownership percentage",
+        "Because an employee stock option pool converts debt into a grant"
+      ],
+      answer: 1,
+      reason: "The chapter identifies employee stock options as a factor contributing to equity dilution because, as employees exercise their options, new shares are issued, reducing the ownership percentage of existing shareholders."
+    },
+
+    {
+      question: "The investor agreement includes an anti-dilution provision specifically because a future financing round may occur at a lower valuation. What is the principal purpose of this provision?",
+      options: [
+        "To increase the founder's ownership automatically",
+        "To protect investors from dilution by adjusting the conversion price of convertible securities in a down-round",
+        "To provide working capital to the startup",
+        "To determine the startup's market opportunity"
+      ],
+      answer: 1,
+      reason: "Anti-Dilution Provisions protect investors from dilution in the event of future equity financing rounds at a lower valuation by adjusting the conversion price of convertible securities."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS20",
+  difficulty: "Hard",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>AIHealth India is an early-stage healthtech startup using advanced technology to develop an innovative healthcare solution. The startup has a potentially large addressable market and plans to expand internationally. Its founders are preparing to negotiate valuation with potential investors, but revenue is still developing because the business is at an early stage.</p>
+
+    <p>During discussions, the investors examine the startup's market potential, technology and innovation, revenue and growth metrics and stage of development. They also consider the regulatory environment and investor appetite for risk. The founders support the valuation discussion with financial projections, growth potential and information regarding possible acquisition or IPO opportunities.</p>
+  `,
+
+  questions: [
+    {
+      question: "Because AIHealth India is still at an early stage with developing revenue, which valuation consideration becomes particularly relevant when assessing the startup?",
+      options: [
+        "Stage of Development, together with potential market opportunity and technology innovation",
+        "Only historical revenue and nothing else",
+        "Only liquidation preferences",
+        "Only board representation"
+      ],
+      answer: 0,
+      reason: "The chapter explains that early-stage startups may be valued based on potential market opportunity and technology innovation, while the Stage of Development itself also influences valuation."
+    },
+
+    {
+      question: "The investors examine the size of the addressable market, growth trends and competitive landscape. Which valuation factor are they primarily assessing?",
+      options: [
+        "Founder Restrictions",
+        "Market Potential",
+        "Investment Structure",
+        "Information Rights"
+      ],
+      answer: 1,
+      reason: "Market Potential considers factors such as the size of the addressable market, growth trends and competitive landscape when assessing startup valuation."
+    },
+
+    {
+      question: "AIHealth India's use of advanced technology and innovation is being considered during valuation. Which valuation factor does this represent?",
+      options: [
+        "Technology and Innovation",
+        "Pre-emption Rights",
+        "Investor Targeting",
+        "Debt Financing"
+      ],
+      answer: 0,
+      reason: "Technology and Innovation is a specific factor influencing startup valuations, particularly for technology-driven and innovative solutions."
+    },
+
+    {
+      question: "The investors consider the regulatory environment and their appetite for risk while assessing the deal. Which valuation factor most directly captures these considerations?",
+      options: [
+        "Global Comparisons",
+        "Investor Sentiment",
+        "Founder Vesting",
+        "Market Expansion"
+      ],
+      answer: 1,
+      reason: "Investor Sentiment and market dynamics include factors such as macroeconomic conditions, the regulatory environment and investor appetite for risk, which can affect valuation multiples and deal terms."
+    },
+
+    {
+      question: "The founders support their valuation discussion with financial projections, growth potential and possible acquisition or IPO opportunities. Which combination best explains why these matters are relevant?",
+      options: [
+        "Cash flow dynamics, growth potential and exit opportunities can support valuation negotiations",
+        "They are all forms of debt financing",
+        "They determine only the startup's employee stock option pool",
+        "They eliminate the relevance of market potential and stage of development"
+      ],
+      answer: 0,
+      reason: "The chapter identifies robust cash flow projections, growth potential and exit opportunities as relevant considerations in valuation and valuation negotiations. Acquisition and IPO prospects are specifically recognised as potential exit opportunities."
+    }
+  ]
+},
+{
+  case_id: "strt_ch6_CS21",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>AccountEase is a startup that wants to improve the way it maintains its financial records. The founders want a system that can automate bookkeeping tasks, track expenses, manage invoices and generate financial reports. They also want to maintain accurate financial records and support compliance with accounting standards.</p>
+
+    <p>The finance team is therefore evaluating modern tools for financial analysis. The team is specifically looking for accounting software rather than a tool primarily designed for scenario modelling or real-time financial data visualisation.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which category of modern financial analysis tool best matches AccountEase's requirement?",
+      options: [
+        "Business Intelligence (BI) Tools",
+        "Accounting Software",
+        "Forecasting and Modeling Tools",
+        "Financial Dashboards"
+      ],
+      answer: 1,
+      reason: "Accounting Software automates bookkeeping tasks, tracks expenses, manages invoices and generates financial reports while helping startups maintain accurate financial records."
+    },
+
+    {
+      question: "Which of the following activities is specifically associated with the tool category selected by AccountEase?",
+      options: [
+        "Managing invoices",
+        "Conducting IPO",
+        "Determining founder vesting",
+        "Issuing new equity shares"
+      ],
+      answer: 0,
+      reason: "Accounting Software can automate bookkeeping tasks, track expenses, manage invoices and generate financial reports."
+    },
+
+    {
+      question: "AccountEase wants to use the tool to support compliance with accounting standards. Which related benefit is identified in the chapter?",
+      options: [
+        "Increasing equity dilution",
+        "Maintaining accurate financial records and complying with accounting standards",
+        "Providing liquidation preferences",
+        "Creating an Investment Thesis"
+      ],
+      answer: 1,
+      reason: "The chapter states that accounting software enables startups to maintain accurate financial records and comply with accounting standards."
+    },
+
+    {
+      question: "Which of the following is NOT the principal purpose of the tool AccountEase is seeking?",
+      options: [
+        "Tracking expenses",
+        "Managing invoices",
+        "Generating financial reports",
+        "Modelling best-case and worst-case investment scenarios as its primary function"
+      ],
+      answer: 3,
+      reason: "AccountEase is seeking Accounting Software. Scenario modelling is associated with Financial Planning and Analysis (FP&A) Software rather than the primary purpose described for Accounting Software."
+    },
+
+    {
+      question: "Which combination correctly reflects AccountEase's requirements?",
+      options: [
+        "Bookkeeping, expense tracking, invoicing and financial reporting",
+        "IPO listing, board representation and founder vesting",
+        "Market expansion, investor targeting and due diligence",
+        "Equity dilution, liquidation preference and conversion rights"
+      ],
+      answer: 0,
+      reason: "The case describes bookkeeping, expense tracking, invoice management and financial reporting, all of which are functions associated with Accounting Software."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS22",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>DataVista is a growing startup that has financial information coming from several sources. The management team wants to visualise this data in real-time and create interactive dashboards so that it can identify trends, patterns and anomalies in its financial metrics.</p>
+
+    <p>The founders are considering Tableau for this purpose. They want the tool primarily to analyse and visualise financial data rather than to automate bookkeeping or prepare a simple list of expenses.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which category does Tableau fall under according to the chapter?",
+      options: [
+        "Accounting Software",
+        "Business Intelligence (BI) Tools",
+        "Expense Management Software",
+        "Professional Advice"
+      ],
+      answer: 1,
+      reason: "Tableau is identified in the chapter as a Business Intelligence (BI) Tool used to visualise and analyse financial data in real-time."
+    },
+
+    {
+      question: "What is DataVista's principal objective in using the BI tool?",
+      options: [
+        "To visualise and analyse financial data in real-time",
+        "To issue preferred shares",
+        "To determine the amount of equity dilution",
+        "To prepare an investor agreement"
+      ],
+      answer: 0,
+      reason: "Business Intelligence (BI) Tools enable startups to visualise and analyse financial data in real-time."
+    },
+
+    {
+      question: "The startup wants to create interactive dashboards and identify trends, patterns and anomalies. Which capability is being used?",
+      options: [
+        "Debt Financing",
+        "Business Intelligence (BI)",
+        "Founder Vesting",
+        "Crowdfunding"
+      ],
+      answer: 1,
+      reason: "BI platforms integrate with data sources to create interactive dashboards and reports and help identify trends, patterns and anomalies in financial metrics."
+    },
+
+    {
+      question: "Which of the following would be less directly aligned with DataVista's stated requirement?",
+      options: [
+        "Real-time financial data visualisation",
+        "Interactive reports",
+        "Identifying patterns in financial metrics",
+        "Automating bookkeeping as the principal objective"
+      ],
+      answer: 3,
+      reason: "The case is focused on Business Intelligence capabilities. Automating bookkeeping is a function associated with Accounting Software."
+    },
+
+    {
+      question: "Which of the following is one of the BI tools expressly mentioned in the chapter?",
+      options: [
+        "Tableau",
+        "Tally ERP 9",
+        "Quicko",
+        "SahiGST"
+      ],
+      answer: 0,
+      reason: "Tableau is specifically identified as a Business Intelligence (BI) Tool in the chapter."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS23",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>PlanWise is a startup whose founders want to improve financial planning before approaching investors. The finance team needs software that can help create detailed financial models, perform budgeting and forecasting, and conduct scenario analysis.</p>
+
+    <p>The founders want to use the results for strategic planning and decision-making by examining possible future financial performance. They are therefore looking at Financial Planning and Analysis (FP&amp;A) Software.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which category of software is PlanWise considering?",
+      options: [
+        "Financial Planning and Analysis (FP&A) Software",
+        "Accounting Software",
+        "Expense Management Software",
+        "Financial Analytics Platforms"
+      ],
+      answer: 0,
+      reason: "FP&A Software helps startups create detailed financial models, perform budgeting and forecasting and conduct scenario analysis."
+    },
+
+    {
+      question: "Which activity in the case is specifically associated with FP&A Software?",
+      options: [
+        "Performing budgeting and forecasting",
+        "Selling shares to the public",
+        "Appointing board representatives",
+        "Issuing convertible securities"
+      ],
+      answer: 0,
+      reason: "The chapter states that FP&A Software helps startups perform budgeting and forecasting along with financial modelling and scenario analysis."
+    },
+
+    {
+      question: "PlanWise wants to examine different possible future financial outcomes. Which capability of the software is relevant?",
+      options: [
+        "Founder Restrictions",
+        "Scenario Analysis",
+        "Investor Agreement",
+        "Market Expansion"
+      ],
+      answer: 1,
+      reason: "FP&A Software facilitates scenario analysis, allowing startups to examine different possible future financial outcomes."
+    },
+
+    {
+      question: "What broader purpose does the use of FP&A Software serve in the case?",
+      options: [
+        "Strategic planning and decision-making",
+        "IPO registration only",
+        "Patent examination",
+        "Increasing repayment obligations"
+      ],
+      answer: 0,
+      reason: "The chapter explains that FP&A tools facilitate strategic planning, scenario modelling and decision-making by providing insights into future financial performance."
+    },
+
+    {
+      question: "Which combination best describes the functions sought by PlanWise?",
+      options: [
+        "Financial modelling, budgeting, forecasting and scenario analysis",
+        "Patent filing, board representation and dispute resolution",
+        "Crowdfunding, debt financing and IPO",
+        "Market expansion, employee hiring and acquisition"
+      ],
+      answer: 0,
+      reason: "The case directly describes financial modelling, budgeting, forecasting and scenario analysis, which are functions of FP&A Software."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS24",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>SmartLedger is an Indian startup looking for a cloud-based accounting solution for its growing business. The management team wants features such as invoicing, expense tracking, bank reconciliation and financial reporting. The founders prefer a solution designed for small businesses and startups in India.</p>
+
+    <p>After reviewing the available India-specific technology tools, the team identifies one platform whose stated features closely match these requirements.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which India-specific tool described in the chapter best matches SmartLedger's requirements?",
+      options: [
+        "ClearTax",
+        "Zoho Books",
+        "Razorpay",
+        "Quicko"
+      ],
+      answer: 1,
+      reason: "Zoho Books is a cloud-based accounting software designed for small businesses and startups and provides features such as invoicing, expense tracking, bank reconciliation and financial reporting."
+    },
+
+    {
+      question: "Which requirement of SmartLedger is specifically associated with Zoho Books?",
+      options: [
+        "Bank reconciliation",
+        "IPO listing",
+        "Equity dilution",
+        "Investor targeting"
+      ],
+      answer: 0,
+      reason: "The chapter specifically identifies bank reconciliation as one of the features of Zoho Books."
+    },
+
+    {
+      question: "SmartLedger wants an accounting solution suitable for small businesses and startups. Which description is consistent with the chapter?",
+      options: [
+        "Zoho Books is a cloud-based accounting software designed for small businesses and startups",
+        "Zoho Books is a venture debt fund",
+        "Zoho Books is a crowdfunding platform",
+        "Zoho Books is an investor agreement"
+      ],
+      answer: 0,
+      reason: "The chapter describes Zoho Books as a cloud-based accounting software designed for small businesses and startups."
+    },
+
+    {
+      question: "Which of the following combinations consists only of features associated with Zoho Books in the case?",
+      options: [
+        "Invoicing, expense tracking, bank reconciliation and financial reporting",
+        "IPO, liquidation preferences, board representation and vesting",
+        "Patent examination, grant distribution and equity investment",
+        "Investor targeting, due diligence and term sheet negotiation"
+      ],
+      answer: 0,
+      reason: "The chapter identifies invoicing, expense tracking, bank reconciliation and financial reporting as features of Zoho Books."
+    },
+
+    {
+      question: "Which tool below is another India-specific tool mentioned in the chapter but is primarily described as a tax and compliance platform rather than the accounting solution selected by SmartLedger?",
+      options: [
+        "ClearTax",
+        "Zoho Books",
+        "Tableau",
+        "Geckoboard"
+      ],
+      answer: 0,
+      reason: "ClearTax is described as a comprehensive tax and compliance platform offering solutions such as GST compliance, income tax filing and TDS management."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS25",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>PayFlow India is expanding its online business and wants a technology provider that can support payment gateway services, recurring billing and invoicing. The founders also want to manage online transactions more efficiently as the startup grows.</p>
+
+    <p>The finance team reviews the India-specific tools discussed in the chapter and identifies a fintech company whose services are directly related to these requirements.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which India-specific tool best matches PayFlow India's requirements?",
+      options: [
+        "Razorpay",
+        "Quicko",
+        "ProfitBooks",
+        "SahiGST"
+      ],
+      answer: 0,
+      reason: "Razorpay is described in the chapter as a leading fintech company providing payment gateway services, recurring billing, invoicing and other financial tools."
+    },
+
+    {
+      question: "Which service specifically points towards Razorpay in the case?",
+      options: [
+        "GST reconciliation",
+        "Payment gateway services",
+        "Tax planning",
+        "Double-entry accounting"
+      ],
+      answer: 1,
+      reason: "Payment gateway services are specifically identified as a service provided by Razorpay."
+    },
+
+    {
+      question: "PayFlow India also requires recurring billing and invoicing. Which statement is correct according to the chapter?",
+      options: [
+        "Razorpay provides recurring billing and invoicing",
+        "Razorpay is primarily a VC fund",
+        "Razorpay provides only patent services",
+        "Razorpay is a business plan competition"
+      ],
+      answer: 0,
+      reason: "The chapter states that Razorpay provides payment gateway services, recurring billing, invoicing and other financial tools."
+    },
+
+    {
+      question: "Which business requirement in the case is most directly related to Razorpay's role?",
+      options: [
+        "Managing online transactions",
+        "Determining founder vesting",
+        "Preparing a valuation model",
+        "Conducting investor due diligence"
+      ],
+      answer: 0,
+      reason: "Razorpay offers payment solutions and other financial tools to manage online transactions."
+    },
+
+    {
+      question: "Which of the following is NOT a service specifically stated for Razorpay in the chapter?",
+      options: [
+        "Payment gateway services",
+        "Recurring billing",
+        "Invoicing",
+        "GST reconciliation"
+      ],
+      answer: 3,
+      reason: "GST reconciliation is described under SahiGST, whereas Razorpay is described as providing payment gateway services, recurring billing and invoicing."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS26",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>MarketLink is ready to approach angel investors and venture capital firms. The founders have already prepared a concise pitch deck and now want to identify suitable investors. They attend a startup conference where investors are present and also use an online platform that provides access to angel investors and VC firms interested in Indian startups.</p>
+
+    <p>The founders understand that these activities can help them build connections rather than directly replacing the investment process itself.</p>
+  `,
+
+  questions: [
+    {
+      question: "Why does MarketLink attend startup events and conferences?",
+      options: [
+        "To obtain automatic equity financing",
+        "To create opportunities to network with angel investors and VC firms",
+        "To complete an Investor Agreement immediately",
+        "To avoid preparing a pitch deck"
+      ],
+      answer: 1,
+      reason: "Startup events and conferences provide opportunities to network with angel investors and VC firms active in the startup ecosystem."
+    },
+
+    {
+      question: "Which of the following is an online platform mentioned in the chapter that can help MarketLink connect with investors?",
+      options: [
+        "LetsVenture",
+        "Tally ERP 9",
+        "ClearTax",
+        "SahiGST"
+      ],
+      answer: 0,
+      reason: "LetsVenture is identified as an online platform through which startups can connect with angel investors and VC firms."
+    },
+
+    {
+      question: "MarketLink's use of an online platform is primarily intended to:",
+      options: [
+        "Connect with potential angel investors and VC firms",
+        "Prepare GST returns",
+        "Calculate employee salaries",
+        "Create a balance sheet automatically"
+      ],
+      answer: 0,
+      reason: "Online platforms such as LetsVenture, AngelList India and Indian Angel Network can provide startups access to networks of angel investors and VC firms."
+    },
+
+    {
+      question: "Which approach would be consistent with the chapter if MarketLink wants to meet investors through an industry event?",
+      options: [
+        "Attend startup events and conferences",
+        "Issue shares to employees",
+        "Prepare an employee stock option pool",
+        "Conduct a buyback"
+      ],
+      answer: 0,
+      reason: "The chapter specifically recommends attending startup events and conferences as a way to network with angel investors and VC firms."
+    },
+
+    {
+      question: "What should MarketLink still do after finding potential investors through these channels?",
+      options: [
+        "Prepare its startup for the investment process and present its value proposition",
+        "Immediately conduct an IPO",
+        "Stop researching investors",
+        "Treat every investor as having the same investment preferences"
+      ],
+      answer: 0,
+      reason: "Connecting with investors is only part of the approach. Startups should prepare a compelling pitch, research investors and communicate their value proposition and potential."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS27",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>AutoFleet has grown substantially and is now considering a later stage of startup funding. The company has moved beyond the early growth phase and wants to scale operations, expand into new markets and strengthen its market position. The founders are seeking a substantially larger investment amount than they required during the earlier rounds.</p>
+
+    <p>Several institutional investors are evaluating the opportunity, and the company continues to remain private while considering further expansion and a possible future public offering.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which funding stages are most consistent with AutoFleet's position beyond the early growth phase?",
+      options: [
+        "Pre-Seed only",
+        "Seed only",
+        "Series B, C, D and E",
+        "Business Plan Competition"
+      ],
+      answer: 2,
+      reason: "Series B, C, D and E stages generally involve startups that have moved beyond the early growth phase and are focused on scaling operations, expanding into new markets and solidifying market position."
+    },
+
+    {
+      question: "What is a characteristic of funding at the Series B, C, D and E stages described in the chapter?",
+      options: [
+        "Very small informal funding requirements",
+        "Larger investment amounts aimed at rapid growth and expansion",
+        "Only personal savings",
+        "Only support from friends and family"
+      ],
+      answer: 1,
+      reason: "Later-stage Series B, C, D and E funding rounds are characterised by larger investment amounts aimed at fueling rapid growth and consolidating market presence."
+    },
+
+    {
+      question: "Which category of investors may participate in these later-stage funding rounds?",
+      options: [
+        "Only founders",
+        "Only friends and family",
+        "Venture capital, private equity, hedge funds and strategic investors",
+        "Only business plan competition organisers"
+      ],
+      answer: 2,
+      reason: "As startups progress through Series C, D and E, funding rounds may involve venture capital, private equity, hedge funds and strategic investors."
+    },
+
+    {
+      question: "AutoFleet remains private while raising substantial funds for expansion. Which statement is consistent with the chapter?",
+      options: [
+        "Later-stage companies may remain private while raising significant funds before an IPO",
+        "A startup must become public before every Series B round",
+        "An IPO must occur before Seed funding",
+        "Later-stage funding is available only through crowdfunding"
+      ],
+      answer: 0,
+      reason: "The chapter notes that Series B, C, D and so on generally occur when a company has become large but still wants to stay private or when an IPO is still some distance away."
+    },
+
+    {
+      question: "Which objective is directly associated with AutoFleet's current funding requirement?",
+      options: [
+        "Scaling operations and expanding into new markets",
+        "Only conducting initial idea validation",
+        "Only developing an initial concept",
+        "Only obtaining friends and family support"
+      ],
+      answer: 0,
+      reason: "Later-stage funding is directed towards scaling operations, expanding into new markets and solidifying market position."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS28",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>QuickMeal has become a profitable and rapidly growing private company. Its founders are considering a transition that would allow shares of the company to be offered to the public for the first time and listed on a stock exchange. The move would provide access to a broader investor base and increased liquidity while also allowing the company to raise substantial capital for further growth and expansion.</p>
+
+    <p>Some early investors are also examining the transition as a possible opportunity to realise returns on their investment.</p>
+  `,
+
+  questions: [
+    {
+      question: "What event is QuickMeal considering when it offers shares to the public for the first time and lists them on a stock exchange?",
+      options: [
+        "Buyback",
+        "Initial Public Offering (IPO)",
+        "Crowdfunding",
+        "Seed Funding"
+      ],
+      answer: 1,
+      reason: "An Initial Public Offering (IPO) denotes the moment when a startup becomes publicly listed on a stock exchange for the first time."
+    },
+
+    {
+      question: "Which benefit of an IPO is specifically mentioned in the case?",
+      options: [
+        "Access to a broader investor base",
+        "Automatic elimination of debt",
+        "No need for regulatory processes",
+        "Permanent exemption from investor scrutiny"
+      ],
+      answer: 0,
+      reason: "The chapter states that IPOs provide startups with access to a broader investor base and increased liquidity."
+    },
+
+    {
+      question: "QuickMeal expects the IPO to help raise substantial capital for further growth. Which statement is consistent with the chapter?",
+      options: [
+        "IPOs can provide substantial capital to fuel growth and expansion initiatives",
+        "IPOs are used only to pay employee salaries",
+        "IPOs are a form of grant financing",
+        "IPOs are the same as bootstrapping"
+      ],
+      answer: 0,
+      reason: "The chapter states that IPOs provide startups with the ability to raise substantial capital to fuel further growth and expansion initiatives."
+    },
+
+    {
+      question: "Why might early investors consider the IPO as an exit opportunity?",
+      options: [
+        "It may allow them to monetise their investments and exit the startup",
+        "It guarantees that all investors receive new equity for free",
+        "It converts all investors into lenders",
+        "It removes the need for valuation"
+      ],
+      answer: 0,
+      reason: "IPOs can serve as exit opportunities for early investors, allowing them to monetise their investments and exit the startup."
+    },
+
+    {
+      question: "Which statement best captures the transition described in the case?",
+      options: [
+        "Transition from private to public ownership",
+        "Transition from debt to grant financing",
+        "Transition from crowdfunding to bootstrapping",
+        "Transition from angel investment to friends and family support"
+      ],
+      answer: 0,
+      reason: "An IPO represents a significant milestone in the startup life cycle and its transition from private to public ownership."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS29",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>EduAnalytics has completed a detailed financial analysis before discussing its valuation with potential investors. The founders have estimated the value of the startup using revenue projections, market size, growth potential and information about comparable companies.</p>
+
+    <p>The founders also understand that the startup's stage of development can affect how investors assess its value. They therefore ensure that the valuation discussion reflects the startup's current stage and its growth trajectory.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which financial modelling activity is EduAnalytics using to estimate the value of the startup?",
+      options: [
+        "Valuation Modeling",
+        "Expense Management",
+        "Cash Flow Projection",
+        "Revenue Forecasting only"
+      ],
+      answer: 0,
+      reason: "Valuation Modeling involves estimating the value of a startup using factors such as revenue projections, market size, growth potential and comparable company analysis."
+    },
+
+    {
+      question: "Which of the following factors is expressly used in EduAnalytics' valuation exercise?",
+      options: [
+        "Market size",
+        "Founder Restrictions",
+        "Employee Stock Option Pool",
+        "Dispute Resolution"
+      ],
+      answer: 0,
+      reason: "The chapter identifies market size as one of the factors used in Valuation Modeling."
+    },
+
+    {
+      question: "EduAnalytics uses information about comparable companies. Which valuation factor from the modelling process does this represent?",
+      options: [
+        "Comparable Company Analysis",
+        "Founder Vesting",
+        "Investor Targeting",
+        "Debt Financing"
+      ],
+      answer: 0,
+      reason: "Valuation Modeling may use comparable company analysis as a factor in estimating the value of a startup."
+    },
+
+    {
+      question: "Why does EduAnalytics consider its stage of development while discussing valuation?",
+      options: [
+        "Stage of Development influences how a startup may be assessed for valuation",
+        "Stage of Development determines GST registration",
+        "Stage of Development automatically fixes the IPO price",
+        "Stage of Development removes the need for revenue information"
+      ],
+      answer: 0,
+      reason: "The chapter states that the stage of development, whether early-stage, growth-stage or mature, influences startup valuation."
+    },
+
+    {
+      question: "Which statement best describes the purpose of Valuation Modeling in the case?",
+      options: [
+        "To estimate startup value and support investment-related discussions",
+        "To replace all financial statements",
+        "To eliminate investor due diligence",
+        "To determine the founder's salary"
+      ],
+      answer: 0,
+      reason: "Valuation models help estimate startup value and can support negotiation of investment terms, assessment of exit opportunities and attracting potential investors."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch6_CS30",
+  difficulty: "Easy",
+  chapter: "Chapter6",
+
+  caseText: `
+    <p>SafeTransit wants to provide investors with a clear picture of its financial performance and financial position. The finance team prepares an income statement, balance sheet and cash flow statement. Management uses these documents to track revenues, expenses, assets, liabilities and cash flows.</p>
+
+    <p>The founders also use the information while communicating the startup's financial status to stakeholders and while making strategic decisions about the business.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which category do the income statement, balance sheet and cash flow statement belong to?",
+      options: [
+        "Financial Statements",
+        "Financial Dashboards",
+        "Term Sheets",
+        "Investor Agreements"
+      ],
+      answer: 0,
+      reason: "Financial Statements include documents such as the income statement, balance sheet and cash flow statement."
+    },
+
+    {
+      question: "Which item does SafeTransit track through its financial statements?",
+      options: [
+        "Revenues",
+        "Investment Thesis",
+        "Founder Vesting Schedule only",
+        "Investor Ticket Size only"
+      ],
+      answer: 0,
+      reason: "Financial statements enable startups to track revenues, expenses, assets, liabilities and cash flows."
+    },
+
+    {
+      question: "Why does SafeTransit prepare these financial statements?",
+      options: [
+        "To monitor financial health and make strategic decisions",
+        "To replace the pitch deck",
+        "To eliminate the need for funding",
+        "To determine the investor's sector preference"
+      ],
+      answer: 0,
+      reason: "Startups use financial statements to monitor their financial health, make strategic decisions and communicate their financial status to stakeholders."
+    },
+
+    {
+      question: "Which statement correctly describes the information provided by financial statements in the case?",
+      options: [
+        "They provide a snapshot of the company's financial performance and position",
+        "They provide only the startup's future valuation",
+        "They provide only the investor's ownership percentage",
+        "They provide only the startup's market size"
+      ],
+      answer: 0,
+      reason: "The chapter describes financial statements as documents that provide a snapshot of the company's financial performance and position."
+    },
+
+    {
+      question: "SafeTransit communicates its financial status to stakeholders using the financial information prepared. Which use of financial statements does this reflect?",
+      options: [
+        "Communicating financial status to stakeholders",
+        "Creating a crowdfunding campaign",
+        "Determining founder restrictions",
+        "Selecting an exit strategy automatically"
+      ],
+      answer: 0,
+      reason: "Financial statements enable startups to communicate their financial status to stakeholders in addition to monitoring financial health and supporting strategic decisions."
+    }
+  ]
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_01",
+  case_chapter: "chapter6",
+  question: "Which type of startup funding involves selling a portion of the company's equity in return for capital?",
+  options: [
+    "Grant",
+    "Debt Financing",
+    "Equity Financing",
+    "Crowdfunding"
+  ],
+  answer: 2,
+  reason: "Equity Financing involves selling a portion of a company's equity in return for capital."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_02",
+  case_chapter: "chapter6",
+  question: "Which type of startup funding involves borrowing money and paying it back with interest?",
+  options: [
+    "Debt Financing",
+    "Equity Financing",
+    "Grant",
+    "Bootstrapping"
+  ],
+  answer: 0,
+  reason: "Debt Financing involves the borrowing of money and paying it back with interest within a stipulated time frame."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_03",
+  case_chapter: "chapter6",
+  question: "Which statement best describes a grant in the context of startup funding?",
+  options: [
+    "It always requires repayment with interest",
+    "It is an award, usually financial, given to facilitate a goal or incentivize performance",
+    "It requires the startup to sell a portion of its equity",
+    "It always provides the investor with voting rights"
+  ],
+  answer: 1,
+  reason: "The chapter describes a grant as an award, usually financial, given by an entity to a company to facilitate a goal or incentivize performance."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_04",
+  case_chapter: "chapter6",
+  question: "Which source of funding commonly provides early-stage capital along with mentorship and expertise?",
+  options: [
+    "Banks",
+    "Angel Investors",
+    "Government Loan Schemes",
+    "Private Equity Firms"
+  ],
+  answer: 1,
+  reason: "Angel investors often provide early-stage capital and offer mentorship and expertise alongside financial support."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_05",
+  case_chapter: "chapter6",
+  question: "Which funding source allows a startup to raise funds from a large pool of individual investors through online campaigns?",
+  options: [
+    "Crowdfunding",
+    "Debt Financing",
+    "Bootstrapping",
+    "Venture Debt"
+  ],
+  answer: 0,
+  reason: "Crowdfunding involves raising funds from a large pool of individual investors, typically through online crowdfunding platforms."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_06",
+  case_chapter: "chapter6",
+  question: "Which approach involves growing a startup with minimal external investment by relying on personal savings and generated revenue?",
+  options: [
+    "Venture Capital",
+    "Crowdfunding",
+    "Bootstrapping",
+    "Grant Financing"
+  ],
+  answer: 2,
+  reason: "Bootstrapping involves growing a startup with minimal external investment, relying instead on personal savings and generated revenue."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_07",
+  case_chapter: "chapter6",
+  question: "A startup is in its earliest phase with an idea or concept and wants to conduct initial market research and develop a prototype. Which funding stage is most relevant?",
+  options: [
+    "Series A Stage",
+    "Series B Stage",
+    "Seed Stage",
+    "Pre-Seed Stage"
+  ],
+  answer: 3,
+  reason: "The Pre-Seed Stage represents the earliest phase of a startup, often involving an idea or concept, initial market research and prototype development."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_08",
+  case_chapter: "chapter6",
+  question: "A startup has a prototype or minimum viable product (MVP) and wants to validate its business idea. Which funding stage is described?",
+  options: [
+    "Seed Stage",
+    "Pre-Seed Stage",
+    "Series A Stage",
+    "Exit Stage"
+  ],
+  answer: 0,
+  reason: "In the Seed Stage, startups typically have a prototype or minimum viable product (MVP) and use funding to validate the business idea, conduct market research and refine the product or service."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_09",
+  case_chapter: "chapter6",
+  question: "Which funding stage generally involves a startup that has proven its concept and demonstrated initial market traction and revenue growth?",
+  options: [
+    "Pre-Seed Stage",
+    "Seed Stage",
+    "Series A Stage",
+    "Business Plan Competition"
+  ],
+  answer: 2,
+  reason: "In the Series A Stage, startups have typically proven their concept and demonstrated initial market traction and revenue growth."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_10",
+  case_chapter: "chapter6",
+  question: "Which is the first step in the prerequisite sequence for startup funding?",
+  options: [
+    "Investor Targeting",
+    "Assessing Need for Funding",
+    "Preparation of Pitch Deck",
+    "Due Diligence by Interested Investors"
+  ],
+  answer: 1,
+  reason: "The first step in the funding prerequisite sequence is Assessing Need for Funding."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_11",
+  case_chapter: "chapter6",
+  question: "Which of the following is an important factor considered under investment readiness?",
+  options: [
+    "Revenue Growth and Market Position",
+    "IPO Listing",
+    "Buyback of Shares",
+    "Dispute Resolution"
+  ],
+  answer: 0,
+  reason: "Revenue Growth and Market Position is one of the key attributes investors consider when assessing a startup's investment readiness."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_12",
+  case_chapter: "chapter6",
+  question: "Which section of a pitch deck clearly outlines the funding amount required and how the investment will be utilised?",
+  options: [
+    "Traction",
+    "Team",
+    "Market Opportunity",
+    "Ask"
+  ],
+  answer: 3,
+  reason: "The Ask section clearly outlines the funding amount and how the investment will be utilised to accelerate growth and achieve key milestones."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_13",
+  case_chapter: "chapter6",
+  question: "A venture capital firm's strategic framework covering its preferred stage, geographic focus, sector emphasis and funding amount is known as:",
+  options: [
+    "Investment Thesis",
+    "Investor Agreement",
+    "Financial Model",
+    "Term Sheet"
+  ],
+  answer: 0,
+  reason: "An Investment Thesis is the strategic framework guiding a VC firm's investment decisions, including its preferred stage, geographic focus, sector emphasis and funding amount."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_14",
+  case_chapter: "chapter6",
+  question: "Which step involves examining a startup's historical financial decisions and the credentials and backgrounds of its team members before an equity deal?",
+  options: [
+    "Investor Targeting",
+    "Due Diligence by Interested Investors",
+    "Preparation of Pitch Deck",
+    "Assessing Investment Readiness"
+  ],
+  answer: 1,
+  reason: "Due Diligence by Interested Investors involves examining areas such as the startup's historical financial decisions, market figures and the credentials and backgrounds of its team members."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_15",
+  case_chapter: "chapter6",
+  question: "Which of the following is a way to quantify seed capital by identifying expenses such as product development, salaries, equipment and overheads?",
+  options: [
+    "Scenario Analysis",
+    "Milestone-Based Approach",
+    "Cost-Based Approach",
+    "Professional Advice"
+  ],
+  answer: 2,
+  reason: "The Cost-Based Approach starts by identifying the expenses associated with launching and operating the startup, including product development, salaries, equipment and overhead expenses."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_16",
+  case_chapter: "chapter6",
+  question: "Which financial modelling activity focuses on predicting future income streams using market analysis, sales projections and pricing strategies?",
+  options: [
+    "Revenue Forecasting",
+    "Expense Modeling",
+    "Cash Flow Projection",
+    "Profitability Analysis"
+  ],
+  answer: 0,
+  reason: "Revenue Forecasting is the process of predicting future income streams based on factors such as market analysis, sales projections and pricing strategies."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_17",
+  case_chapter: "chapter6",
+  question: "Which financial modelling activity forecasts cash inflows and outflows to predict the startup's cash position?",
+  options: [
+    "Valuation Modeling",
+    "Revenue Forecasting",
+    "Cash Flow Projection",
+    "Expense Modeling"
+  ],
+  answer: 2,
+  reason: "Cash Flow Projection entails forecasting the inflows and outflows of cash over a specific period to predict the startup's cash position and ensure sufficient liquidity."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_18",
+  case_chapter: "chapter6",
+  question: "Which tool category includes Tableau, Power BI and Looker?",
+  options: [
+    "Accounting Software",
+    "Business Intelligence (BI) Tools",
+    "Expense Management Software",
+    "FP&A Software"
+  ],
+  answer: 1,
+  reason: "The chapter identifies Tableau, Power BI and Looker as Business Intelligence (BI) Tools used to visualise and analyse financial data."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_19",
+  case_chapter: "chapter6",
+  question: "What does equity dilution refer to?",
+  options: [
+    "An increase in the ownership percentage of existing shareholders",
+    "A reduction in the ownership percentage of existing shareholders due to the issuance of new shares",
+    "Repayment of a startup loan with interest",
+    "Conversion of a startup from private to public ownership"
+  ],
+  answer: 1,
+  reason: "Equity Dilution refers to the reduction in the ownership percentage of existing shareholders as a result of the issuance of new shares to incoming investors or through other share issuances."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch6_20",
+  case_chapter: "chapter6",
+  question: "Which document is generally a non-binding list of propositions at the early stage of a venture capital deal and serves as a roadmap for negotiations?",
+  options: [
+    "Investor Agreement",
+    "Financial Statement",
+    "Pitch Deck",
+    "Term Sheet"
+  ],
+  answer: 3,
+  reason: "A Term Sheet is a non-binding list of propositions at the early stages of a deal and serves as a roadmap for negotiating and finalising the definitive agreement."
+},
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_21",
+  case_chapter: "chapter6",
+  question: "A startup studies customer needs, the size of the potential market and the competitive landscape before estimating the funds required to establish a foothold in the industry. Which method of quantifying seed capital is being applied?",
+  options: [
+    "Cost-Based Approach",
+    "Market Analysis",
+    "Professional Advice",
+    "Milestone-Based Approach"
+  ],
+  answer: 1,
+  reason: "The Market Analysis approach involves conducting market research to understand the competitive landscape, customer needs and potential market size and using the analysis to estimate the funding required to penetrate the market and acquire customers."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_22",
+  case_chapter: "chapter6",
+  question: "A startup is uncertain about the funding required for a complex project and consults a financial advisor and an industry expert regarding financial planning, valuation and fundraising strategy. Which method of quantifying seed capital is this?",
+  options: [
+    "Scenario Analysis",
+    "Financial Projections",
+    "Professional Advice",
+    "Market Analysis"
+  ],
+  answer: 2,
+  reason: "Professional Advice involves seeking guidance from financial advisors, mentors or industry experts who can assist with financial planning, valuation and fundraising strategies."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_23",
+  case_chapter: "chapter6",
+  question: "A startup needs software for budgeting, forecasting and scenario analysis, while also wanting to use the results for strategic planning. Which category of modern financial analysis tool is most appropriate?",
+  options: [
+    "Business Intelligence (BI) Tools",
+    "Financial Dashboards",
+    "Accounting Software",
+    "Financial Planning and Analysis (FP&A) Software"
+  ],
+  answer: 3,
+  reason: "Financial Planning and Analysis (FP&A) Software helps startups create detailed financial models, perform budgeting and forecasting, and conduct scenario analysis for strategic planning and decision-making."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_24",
+  case_chapter: "chapter6",
+  question: "Management wants a visual overview of revenue, expenses, cash flow and profitability so that it can monitor financial performance and progress towards financial goals in real-time. Which tool category best fits the requirement?",
+  options: [
+    "Financial Dashboards",
+    "Accounting Software",
+    "Expense Management Software",
+    "Forecasting and Modeling Tools"
+  ],
+  answer: 0,
+  reason: "Financial Dashboards provide a visual overview of key financial metrics such as revenue, expenses, cash flow and profitability and can help startups monitor performance and track progress towards financial goals."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_25",
+  case_chapter: "chapter6",
+  question: "A startup wants to automate the process of tracking and categorising expenses, capturing receipts and managing reimbursements. Which tool category should it consider?",
+  options: [
+    "Financial Analytics Platforms",
+    "Expense Management Software",
+    "Business Intelligence (BI) Tools",
+    "Accounting Software"
+  ],
+  answer: 1,
+  reason: "Expense Management Software automates tracking and categorising expenses, capturing receipts and managing reimbursements and helps startups control costs and improve efficiency."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_26",
+  case_chapter: "chapter6",
+  question: "A startup wants advanced analytics such as benchmarking, trend analysis and financial ratio analysis to obtain actionable insights into profitability and operational efficiency. Which tool category is most suitable?",
+  options: [
+    "FP&A Software",
+    "Financial Dashboards",
+    "Financial Analytics Platforms",
+    "Accounting Software"
+  ],
+  answer: 2,
+  reason: "Financial Analytics Platforms provide advanced analytics capabilities including benchmarking, trend analysis and financial ratio analysis, giving insights into financial performance, profitability and operational efficiency."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_27",
+  case_chapter: "chapter6",
+  question: "A startup's founders have identified a suitable accelerator. Apart from mentorship and support, they want the programme to help them establish connections with angel investors and VC firms. Which aspect of the accelerator's role is being used?",
+  options: [
+    "Facilitating connections with potential investors",
+    "Replacing the startup's financial statements",
+    "Determining the startup's valuation automatically",
+    "Providing an IPO listing"
+  ],
+  answer: 0,
+  reason: "Startup accelerators and incubators can provide mentorship and support and also facilitate connections to angel investors and VC firms."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_28",
+  case_chapter: "chapter6",
+  question: "During an investor meeting, the founder explains the startup's value proposition through storytelling and then answers questions about the market, competition, business model, team and financials. Which step in approaching investors is being performed?",
+  options: [
+    "Research Investors",
+    "Pitch Your Startup",
+    "Follow-Up and Close the Deal",
+    "Reach Out to Investors"
+  ],
+  answer: 1,
+  reason: "During Pitch Your Startup, founders focus on communicating the startup's value proposition and potential, use storytelling and remain prepared to answer questions about the market, competition, business model, team and financials."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_29",
+  case_chapter: "chapter6",
+  question: "After an investor meeting, the startup provides additional information requested by the investor, schedules another meeting and begins discussing investment terms. Which step is most directly represented?",
+  options: [
+    "Preparation of Pitch Deck",
+    "Research Investors",
+    "Follow-Up and Close the Deal",
+    "Assessing Need for Funding"
+  ],
+  answer: 2,
+  reason: "Follow-Up and Close the Deal involves addressing additional questions or concerns, providing requested information, arranging follow-up meetings and, once sufficient interest is generated, negotiating investment terms."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_30",
+  case_chapter: "chapter6",
+  question: "A VC fund is interested in a startup but first examines its historical financial decisions, market figures and the credentials and backgrounds of its team members. What is the primary purpose of this exercise?",
+  options: [
+    "To prepare the startup's pitch deck",
+    "To conduct Due Diligence and validate the startup's assertions",
+    "To determine the employee stock option pool",
+    "To complete an IPO"
+  ],
+  answer: 1,
+  reason: "Due Diligence by interested investors examines areas such as historical financial decisions, market figures and team credentials and helps validate the startup's assertions regarding its growth trajectory and market figures."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_31",
+  case_chapter: "chapter6",
+  question: "A term sheet specifies the pre-money valuation, the amount of funding to be raised and the post-money valuation. Which major area of the term sheet does this represent?",
+  options: [
+    "Founder Vesting",
+    "Governance and Control",
+    "Valuation and Investment Details",
+    "Exit Strategy"
+  ],
+  answer: 2,
+  reason: "The Valuation and Investment Details section of a term sheet specifies matters such as pre-money valuation, the amount of funding to be raised and post-money valuation."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_32",
+  case_chapter: "chapter6",
+  question: "Existing shareholders are given an opportunity to purchase additional shares in a future financing round so that they can maintain their ownership percentage. Which term-sheet provision is involved?",
+  options: [
+    "Redemption Rights",
+    "Pre-emption Rights",
+    "Board Representation",
+    "Liquidation Preferences"
+  ],
+  answer: 1,
+  reason: "Pre-emption Rights give existing shareholders the opportunity to purchase additional shares in future financing rounds to maintain their ownership percentage."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_33",
+  case_chapter: "chapter6",
+  question: "An investor agreement provides investors with access to certain financial and operational information so that they can monitor their investment and make informed decisions. Which right is being provided?",
+  options: [
+    "Information Rights",
+    "Conversion Rights",
+    "Redemption Rights",
+    "Founder Restrictions"
+  ],
+  answer: 0,
+  reason: "Information Rights grant investors access to certain financial and operational information, allowing them to monitor their investment and make informed decisions."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_34",
+  case_chapter: "chapter6",
+  question: "A startup wants to attract investors by demonstrating that its revenue generation is increasing, its customer acquisition is strong and its business can scale. Which valuation factor is most directly being highlighted?",
+  options: [
+    "Investor Sentiment",
+    "Technology and Innovation",
+    "Revenue and Growth Metrics",
+    "Global Comparisons"
+  ],
+  answer: 2,
+  reason: "Revenue and Growth Metrics are crucial indicators of startup value. Investors examine revenue streams, customer acquisition rates, retention metrics and other KPIs to assess growth potential and scalability."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch6_35",
+  case_chapter: "chapter6",
+  question: "An Indian startup is being compared with similar companies in other markets to assess relative valuation metrics and multiples. Which valuation factor is being applied?",
+  options: [
+    "Stage of Development",
+    "Sector-Specific Considerations",
+    "Market Potential",
+    "Global Comparisons"
+  ],
+  answer: 3,
+  reason: "Global Comparisons involve benchmarking Indian startups against global peers and comparable companies in other markets to assess relative valuation metrics and multiples."
+},
+{
+  difficulty: "Hard",
+  case_id: "strt_ch6_36",
+  case_chapter: "chapter6",
+  question: "A startup is negotiating its valuation. It has strong projected cash flows, a large target market and significant scalability. The founders also benchmark the startup against comparable industry peers. Which combination of approaches is most consistent with the chapter for strengthening the valuation negotiation?",
+  options: [
+    "Use cash flow projections, highlight growth potential and apply comparative analysis",
+    "Focus only on founder vesting and board representation",
+    "Rely only on the startup's current office expenses",
+    "Replace financial projections with an IPO application"
+  ],
+  answer: 0,
+  reason: "The chapter identifies leveraging cash flow dynamics, highlighting growth potential and using comparative analysis against industry peers as ways entrepreneurs can strengthen valuation negotiations."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch6_37",
+  case_chapter: "chapter6",
+  question: "A growth-stage fintech startup has significant revenue traction and plans international expansion. During valuation discussions, investors examine its revenue growth, customer acquisition rates, retention metrics, global peers and possible IPO or acquisition opportunities. Which combination of valuation factors is being considered?",
+  options: [
+    "Revenue and Growth Metrics, Global Comparisons, Stage of Development and Exit Opportunities",
+    "Founder Restrictions, Employee Stock Option Pool, Information Rights and Board Representation",
+    "Debt Financing, Crowdfunding, Bootstrapping and Grants",
+    "Expense Modeling, Accounting Software, Investor Targeting and Pre-emption Rights"
+  ],
+  answer: 0,
+  reason: "The chapter identifies Revenue and Growth Metrics, Global Comparisons, Stage of Development and Exit Opportunities as factors that can influence startup valuation."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch6_38",
+  case_chapter: "chapter6",
+  question: "An investor is negotiating with a startup that uses convertible securities. A future financing round is expected to take place at a lower valuation. The investor wants contractual protection against the resulting dilution. Which provision most directly addresses this situation?",
+  options: [
+    "Pre-emption Rights",
+    "Anti-Dilution Provisions",
+    "Founder Vesting",
+    "Redemption Rights"
+  ],
+  answer: 1,
+  reason: "Anti-Dilution Provisions protect investors from dilution in the event of future equity financing rounds at a lower valuation by adjusting the conversion price of convertible securities."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch6_39",
+  case_chapter: "chapter6",
+  question: "A startup issues new shares to an incoming investor and later employees exercise stock options granted under an employee stock option plan. Existing founders observe that their percentage ownership has declined. Which explanation is most consistent with the chapter?",
+  options: [
+    "Only the investor's board representation caused the decline",
+    "The decline is an example of equity dilution arising from new financing and employee stock options",
+    "The decline is a result of cash flow projection",
+    "The decline occurs because the startup has entered the Series A stage"
+  ],
+  answer: 1,
+  reason: "The chapter states that equity dilution can arise from new financing rounds and employee stock options because additional shares are issued, reducing the ownership percentage of existing shareholders."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch6_40",
+  case_chapter: "chapter6",
+  question: "An entrepreneur wants existing shareholders to have an opportunity to purchase additional shares in a future financing round so that they can maintain their ownership percentage. Which provision should be considered?",
+  options: [
+    "Information Rights",
+    "Pre-emption Rights",
+    "Liquidation Preferences",
+    "Founder Restrictions"
+  ],
+  answer: 1,
+  reason: "Pre-emption Rights give existing shareholders the opportunity to purchase additional shares in future financing rounds to maintain their ownership percentage."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch6_41",
+  case_chapter: "chapter6",
+  question: "A startup is discussing a potential acquisition as an exit route. The founders want the valuation discussion to demonstrate that the startup's valuation is consistent with attractive investor returns through this possible exit. Which approach from the chapter is most directly relevant?",
+  options: [
+    "Align Valuation with Exit Strategies",
+    "Use Expense Modeling",
+    "Apply Bootstrapping",
+    "Conduct Investor Targeting"
+  ],
+  answer: 0,
+  reason: "The chapter states that aligning valuation with exit strategies involves demonstrating how the startup's valuation corresponds with potential acquisition opportunities, IPO prospects or other liquidity events and investor returns."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch6_42",
+  case_chapter: "chapter6",
+  question: "A startup's management team wants to improve its valuation negotiation position by reducing perceived investor risk. It performs a thorough risk assessment and applies appropriate discount rates while also presenting stronger financial projections. Which combination best reflects the chapter's guidance?",
+  options: [
+    "Mitigate risks with discount rates and leverage cash flow dynamics",
+    "Increase equity dilution and reduce financial transparency",
+    "Use only founder restrictions and employee stock options",
+    "Replace valuation analysis with crowdfunding"
+  ],
+  answer: 0,
+  reason: "The chapter recommends mitigating risks with appropriate discount rates after risk assessment and leveraging cash flow dynamics through robust cash flow projections and estimates during valuation negotiations."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch6_43",
+  case_chapter: "chapter6",
+  question: "A startup receives an investor proposal containing valuation, investment structure, management structure and changes to share capital. The parties understand that the proposal is generally non-binding but will guide negotiations before the definitive agreement is finalised. Which document is being described?",
+  options: [
+    "Investor Agreement",
+    "Financial Model",
+    "Term Sheet",
+    "Pitch Deck"
+  ],
+  answer: 2,
+  reason: "A Term Sheet is a non-binding list of propositions at the early stage of a deal and summarises major points of engagement, including valuation, investment structure, management structure and changes to share capital."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch6_44",
+  case_chapter: "chapter6",
+  question: "A startup's definitive investor agreement specifies the amount invested, the type of securities issued and the valuation of the startup. It also sets out board composition, voting rights and decision-making processes. Which two components of the investor agreement are primarily reflected?",
+  options: [
+    "Investment Terms and Governance Structure",
+    "Exit Strategy and Founder Restrictions",
+    "Information Rights and Conversion Rights",
+    "Market Potential and Revenue Growth"
+  ],
+  answer: 0,
+  reason: "Investment Terms specify the amount of investment, type of securities issued and startup valuation, while Governance Structure covers board composition, voting rights and decision-making processes."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch6_45",
+  case_chapter: "chapter6",
+  question: "A healthtech startup is at an early stage and has limited revenue history but uses innovative technology and addresses a large potential market. It also has plans for international expansion. Which valuation assessment would be most consistent with the chapter?",
+  options: [
+    "Focus only on present revenue because early-stage factors are irrelevant",
+    "Consider Stage of Development together with Market Potential, Technology and Innovation and Global Comparisons",
+    "Consider only Investor Sentiment and debt repayment capacity",
+    "Consider only employee stock options and founder restrictions"
+  ],
+  answer: 1,
+  reason: "The chapter states that early-stage startups may be assessed on potential market opportunity and technology innovation, while Stage of Development, Market Potential, Technology and Innovation and Global Comparisons can all influence valuation."
+},
+
+
 
 
 
