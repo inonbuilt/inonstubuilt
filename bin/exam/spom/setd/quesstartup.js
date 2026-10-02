@@ -12875,6 +12875,1656 @@ reason: "The Elevator Pitch includes the Problem Statement, Solution, Value Prop
   reason: "The chapter states that early-stage startups may be assessed on potential market opportunity and technology innovation, while Stage of Development, Market Potential, Technology and Innovation and Global Comparisons can all influence valuation."
 },
 
+// chapter7
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_01",
+  case_chapter: "chapter7",
+  question: "Which business entity is described as the simplest form of business entity in India, owned and operated by a single individual?",
+  options: [
+    "Limited Liability Partnership",
+    "Private Limited Company",
+    "Sole Proprietorship",
+    "Public Limited Company"
+  ],
+  answer: 2,
+  reason: "A Sole Proprietorship is described as the simplest form of business entity in India, owned and operated by a single individual."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_02",
+  case_chapter: "chapter7",
+  question: "Which entity form provides limited liability protection to partners while allowing them to actively manage the business?",
+  options: [
+    "Limited Liability Partnership",
+    "Sole Proprietorship",
+    "General Partnership",
+    "One Person Company"
+  ],
+  answer: 0,
+  reason: "Limited Liability Partnerships (LLPs) offer limited liability to partners while allowing them to actively manage the business."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_03",
+  case_chapter: "chapter7",
+  question: "Which entity is stated to be a separate legal entity with limited liability for its shareholders and is commonly preferred by startups in India?",
+  options: [
+    "Partnership",
+    "Private Limited Company",
+    "Sole Proprietorship",
+    "One Person Company"
+  ],
+  answer: 1,
+  reason: "A Private Limited Company is a separate legal entity with limited liability for its shareholders and is described as the most common and preferred choice for startups in India."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_04",
+  case_chapter: "chapter7",
+  question: "Which entity allows a single entrepreneur to operate a company with limited liability?",
+  options: [
+    "Public Limited Company",
+    "Partnership",
+    "One Person Company",
+    "Limited Liability Partnership"
+  ],
+  answer: 2,
+  reason: "An One Person Company (OPC) allows a single entrepreneur to operate a company with limited liability. The sole member acts as both shareholder and director."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_05",
+  case_chapter: "chapter7",
+  question: "Which entity form is suitable for larger businesses planning to raise capital from the public through the sale of shares on a stock exchange?",
+  options: [
+    "Sole Proprietorship",
+    "One Person Company",
+    "Public Limited Company",
+    "Limited Liability Partnership"
+  ],
+  answer: 2,
+  reason: "Public Limited Companies are suitable for larger businesses planning to raise capital from the public through the sale of shares on a stock exchange."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_06",
+  case_chapter: "chapter7",
+  question: "Which of the following is a factor that startups should consider while selecting an entity form?",
+  options: [
+    "Liabilities attached to an Entity Form",
+    "Number of social media followers",
+    "Advertising frequency",
+    "Product colour"
+  ],
+  answer: 0,
+  reason: "The chapter identifies several factors for selecting an entity form, including Formation Formalities, Liabilities attached to an Entity Form, Expansion Aspirations, Taxation, Social Media and E Commerce Transactions, and Closure and Exit."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_07",
+  case_chapter: "chapter7",
+  question: "Which portal is mentioned for starting the registration process of an LLP in India?",
+  options: [
+    "IPO portal",
+    "MCA portal",
+    "GST portal",
+    "FSSAI portal"
+  ],
+  answer: 1,
+  reason: "The chapter states that the LLP registration process begins by visiting the MCA portal and creating an account."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_08",
+  case_chapter: "chapter7",
+  question: "Which form is prepared and filed for incorporation of a Private Limited Company according to the chapter?",
+  options: [
+    "Form LLP-1",
+    "Form SPICe",
+    "RUN-LLP",
+    "PAN Form"
+  ],
+  answer: 1,
+  reason: "For a Private Limited Company, the founders prepare and file Form SPICe (Simplified Proforma for Incorporating Company Electronically)."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_09",
+  case_chapter: "chapter7",
+  question: "Which registration is particularly beneficial for startups seeking financial assistance and government contracts?",
+  options: [
+    "Trademark Registration",
+    "FSSAI Registration",
+    "MSME Registration",
+    "Professional Tax Registration"
+  ],
+  answer: 2,
+  reason: "The chapter states that MSME Registration is particularly beneficial for startups seeking financial assistance and government contracts."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_10",
+  case_chapter: "chapter7",
+  question: "Which registration protects a startup's brand name, logo or product names against unauthorized use and infringement?",
+  options: [
+    "Trademark Registration",
+    "GST Registration",
+    "MSME Registration",
+    "ESI and EPF Registration"
+  ],
+  answer: 0,
+  reason: "Trademark Registration can provide legal protection against unauthorized use and infringement of a startup's brand name, logo or product names."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_11",
+  case_chapter: "chapter7",
+  question: "What does startup equity split among co-founders refer to?",
+  options: [
+    "Allocation of ownership or equity among the founding team members",
+    "Allocation of GST among employees",
+    "Division of business liabilities among customers",
+    "Allocation of intellectual property registration fees"
+  ],
+  answer: 0,
+  reason: "Startup equity split among co-founders refers to the allocation of ownership or equity in a new venture among its founding team members."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_12",
+  case_chapter: "chapter7",
+  question: "Which system provides ownership to founders or employees gradually over a predetermined period?",
+  options: [
+    "Equity Dilution",
+    "Equity Vesting",
+    "MSME Registration",
+    "Lock in period"
+  ],
+  answer: 1,
+  reason: "Equity Vesting is a system under which ownership is granted gradually over a predetermined period known as the vesting period."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_13",
+  case_chapter: "chapter7",
+  question: "Which three talent benefits are specifically associated with ESOPs in the chapter?",
+  options: [
+    "Attraction, Retention and Motivation",
+    "Taxation, Closure and Exit",
+    "Funding, Valuation and Dilution",
+    "Registration, Licensing and Compliance"
+  ],
+  answer: 0,
+  reason: "The chapter identifies Attraction, Retention and Motivation as the three-fold talent benefits of ESOPs."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_14",
+  case_chapter: "chapter7",
+  question: "Which type of intellectual property protection safeguards innovative products or processes?",
+  options: [
+    "Trademark",
+    "Copyright",
+    "Patent",
+    "Trade Licence"
+  ],
+  answer: 2,
+  reason: "Patents safeguard innovative products or processes and provide legal protection for inventions."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_15",
+  case_chapter: "chapter7",
+  question: "Which type of intellectual property protection primarily protects brand names, logos, slogans and symbols?",
+  options: [
+    "Copyright",
+    "Patent",
+    "Trademark",
+    "Patent Search"
+  ],
+  answer: 2,
+  reason: "A Trademark is a recognizable sign, design or expression that distinguishes products or services and protects brand names, logos, slogans and symbols."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_16",
+  case_chapter: "chapter7",
+  question: "Three founders are setting up a startup and want limited liability while remaining directly involved in managing the business. Based on the characteristics given in the chapter, which entity form is most aligned with these requirements?",
+  options: [
+    "Sole Proprietorship",
+    "Limited Liability Partnership",
+    "General Partnership",
+    "Public Limited Company"
+  ],
+  answer: 1,
+  reason: "LLPs offer limited liability protection to partners while allowing them to actively manage the business, which matches the stated requirements."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_17",
+  case_chapter: "chapter7",
+  question: "A startup expects to add outside investors, operate in multiple locations and raise capital for expansion. Which entity-selection factor should receive particular attention because of these plans?",
+  options: [
+    "Expansion Aspirations",
+    "Closure and Exit only",
+    "FSSAI Registration",
+    "Professional Tax Registration"
+  ],
+  answer: 0,
+  reason: "Expansion Aspirations should be considered because the chapter explains that entity forms offering flexibility, scalability, ability to attract outside investment and add new owners or shareholders can be better suited for expansion."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_18",
+  case_chapter: "chapter7",
+  question: "Two co-founders contribute different amounts of time, expertise, financial investment and industry connections. Before deciding their ownership percentages, what should they primarily undertake?",
+  options: [
+    "Assess Contributions and evaluate the Value Proposition brought by each co-founder",
+    "Register a trademark before discussing ownership",
+    "Apply for FSSAI Registration",
+    "Conduct a patent examination"
+  ],
+  answer: 0,
+  reason: "The chapter states that founders should assess contributions such as time, expertise, skills and financial investments and evaluate the unique value proposition each co-founder brings when determining the equity split."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_19",
+  case_chapter: "chapter7",
+  question: "A founder is concerned that a co-founder may leave the startup shortly after receiving a large equity allocation. Which mechanism can ensure that equity is earned over time and support continued commitment?",
+  options: [
+    "Equity Vesting with a vesting schedule",
+    "GST Registration",
+    "Trademark Registration",
+    "Public Limited Company registration"
+  ],
+  answer: 0,
+  reason: "Equity Vesting grants ownership gradually over a predetermined period and encourages founders and employees to remain committed to the startup."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_20",
+  case_chapter: "chapter7",
+  question: "A startup has limited cash flow but wants to attract and retain skilled employees by giving them an opportunity to purchase shares at a predetermined price, subject to vesting. Which arrangement is being considered?",
+  options: [
+    "MSME Registration",
+    "Employee Stock Ownership Plan (ESOP)",
+    "Equity Split among Co-founders",
+    "Patent Registration"
+  ],
+  answer: 1,
+  reason: "ESOPs are an employee benefit plan that grants employees the right to purchase shares at a predetermined price. The shares typically vest over a specified period and can help startups attract and retain talent when cash flow is limited."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_21",
+  case_chapter: "chapter7",
+  question: "Before implementing an ESOP, the founders want to balance employee incentives with the need to preserve existing ownership. Which implementation consideration directly addresses this issue?",
+  options: [
+    "Equity Allocation",
+    "Patent Search",
+    "Governing Law and Jurisdiction",
+    "Formation Formalities"
+  ],
+  answer: 0,
+  reason: "Equity Allocation requires founders to determine how much equity should be allocated to the ESOP and balance the need to attract and retain talent with preserving ownership dilution."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_22",
+  case_chapter: "chapter7",
+  question: "Two founders disagree about who can make major strategic decisions and how a deadlock should be handled. Which part of a comprehensive co-founder agreement should address these matters?",
+  options: [
+    "Decision Making",
+    "Trademark Registration",
+    "Capital Contributions only",
+    "Patent Maintenance"
+  ],
+  answer: 0,
+  reason: "The Decision Making section of a co-founder agreement establishes the framework for making major strategic decisions and resolving disputes, including mechanisms such as voting rights, supermajority requirements or a neutral arbiter."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_23",
+  case_chapter: "chapter7",
+  question: "A startup develops software and wants the co-founder agreement to clearly establish ownership and management of intellectual property created by its founders. Which provision should be included?",
+  options: [
+    "Intellectual Property Rights",
+    "Closure and Exit",
+    "Expansion Aspirations",
+    "Professional Tax Registration"
+  ],
+  answer: 0,
+  reason: "The Intellectual Property Rights provision in a co-founder agreement addresses ownership and management of intellectual property created or contributed to the startup by each co-founder."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_24",
+  case_chapter: "chapter7",
+  question: "A startup has created a new technical invention. Before preparing and filing the patent application, the founders want to verify that the invention is unique and not already patented by someone else. What should they do?",
+  options: [
+    "Request for Examination",
+    "Conduct a Patent Search",
+    "Apply for Trademark Registration",
+    "Obtain the Certificate of Incorporation"
+  ],
+  answer: 1,
+  reason: "The patent registration process states that the founders should conduct a Patent Search to verify that the invention is unique and not already patented by someone else."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_25",
+  case_chapter: "chapter7",
+  question: "A food startup is choosing among registrations. It needs a registration specifically related to food safety standards, while another part of its business is concerned with protecting its brand identity. Which pair correctly matches the two requirements?",
+  options: [
+    "FSSAI Registration for food safety and Trademark Registration for brand protection",
+    "MSME Registration for food safety and PAN Registration for brand protection",
+    "GST Registration for food safety and FSSAI Registration for brand protection",
+    "Trademark Registration for food safety and FSSAI Registration for brand protection"
+  ],
+  answer: 0,
+  reason: "The chapter states that FSSAI registration or licensing is mandatory for food business activities to ensure compliance with food safety standards, while Trademark Registration protects brand names, logos and product names against unauthorized use and infringement."
+},
+{
+  difficulty: "Hard",
+  case_id: "strt_ch7_26",
+  case_chapter: "chapter7",
+  question: "A startup expects rapid expansion, wants to attract outside investors, add new shareholders and operate in multiple locations. At the same time, the founders want a formalised governance framework and the ability to raise capital through stock. Which entity-selection consideration most directly supports this proposed structure?",
+  options: [
+    "Closure and Exit",
+    "Formation Formalities",
+    "Expansion Aspirations",
+    "Social Media and E Commerce Transactions"
+  ],
+  answer: 2,
+  reason: "Under Expansion Aspirations, the chapter explains that company forms and LLCs are generally better suited for expansion because of their flexibility, scalability, ability to attract outside investment, add new owners or shareholders and operate in multiple locations. Company forms can also issue different classes of stock and have established governance frameworks."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch7_27",
+  case_chapter: "chapter7",
+  question: "Three co-founders initially propose equal equity allocations. Before finalising the split, however, one founder has made a substantial financial investment, another has developed the core technology, and the third has brought significant industry connections and fundraising expertise. Which approach is most consistent with the chapter?",
+  options: [
+    "Retain an equal split because all founders have the same legal status",
+    "Assess contributions and evaluate the unique value proposition of each co-founder before negotiating the equity split",
+    "Allocate equity only according to the amount of cash contributed",
+    "Determine the split solely on the basis of future employee hiring"
+  ],
+  answer: 1,
+  reason: "The chapter states that founders should assess contributions including time, expertise, skills and financial investments and evaluate the unique value proposition each co-founder brings, followed by negotiation and discussion to determine the equity split."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch7_28",
+  case_chapter: "chapter7",
+  question: "A startup wants to preserve adequate equity for future fundraising rounds and employee incentive plans while avoiding excessive reduction in the founders' ownership levels. Which consideration should be incorporated while deciding the initial equity split?",
+  options: [
+    "Future Dilution",
+    "Patent Examination",
+    "Formation Formalities",
+    "Confidentiality and Non-Disclosure"
+  ],
+  answer: 0,
+  reason: "The chapter states that founders should anticipate future equity dilution from fundraising rounds, employee stock options and incentive plans and reserve a portion of equity for future issuance to maintain founder ownership levels and avoid excessive dilution."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch7_29",
+  case_chapter: "chapter7",
+  question: "A co-founder is offered a substantial equity stake but is told that the ownership will be earned gradually over several years, with a one-year cliff before any equity vests. If the co-founder leaves before the shares are fully vested, some or all of the unvested ownership may be forfeited. Which mechanism is being applied?",
+  options: [
+    "Equity Dilution",
+    "Equity Vesting",
+    "ESOP Equity Allocation",
+    "Lock in period"
+  ],
+  answer: 1,
+  reason: "Equity Vesting grants ownership gradually over a predetermined period. The chapter also states that vesting schedules typically span several years with a one-year cliff period before any equity vests, and that unvested ownership may be forfeited when an individual leaves."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch7_30",
+  case_chapter: "chapter7",
+  question: "A startup has limited cash flow and wants to attract highly skilled employees, but the founders are concerned about both employee incentives and excessive ownership dilution. Which combination should the founders focus on while implementing the ESOP?",
+  options: [
+    "Equity Allocation and Vesting Schedule",
+    "Patent Search and Request for Examination",
+    "Closure and Exit and Formation Formalities",
+    "Trademark Registration and GST Registration"
+  ],
+  answer: 0,
+  reason: "The chapter states that ESOP implementation requires careful Equity Allocation to balance talent attraction and ownership dilution and a fair, transparent Vesting Schedule to encourage employee retention and performance."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch7_31",
+  case_chapter: "chapter7",
+  question: "A startup wants to determine the exercise price of ESOP options accurately and avoid future discrepancies or disputes regarding the value attributed to the shares. Which ESOP implementation consideration directly addresses this requirement?",
+  options: [
+    "Communication and Education",
+    "Valuation",
+    "Vesting Schedule",
+    "Legal and Regulatory Compliance"
+  ],
+  answer: 1,
+  reason: "The chapter states that startups must accurately value their shares to determine the exercise price of ESOP options and avoid discrepancies or disputes. This may involve engaging external valuation experts."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch7_32",
+  case_chapter: "chapter7",
+  question: "Two co-founders want their agreement to clearly specify how major strategic decisions will be made, how deadlocks will be handled and which matters require consensus. Which provision of the co-founder agreement most directly addresses all these requirements?",
+  options: [
+    "Capital Contributions",
+    "Decision Making",
+    "Equity Ownership",
+    "Succession Planning"
+  ],
+  answer: 1,
+  reason: "The Decision Making provision establishes the framework for decision-making, major strategic decisions and dispute resolution and may include voting rights, supermajority requirements or appointment of a neutral arbiter."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch7_33",
+  case_chapter: "chapter7",
+  question: "A startup wants its co-founder agreement to address ownership of software and other intellectual property created by the founders, together with restrictions on its use, transfer and licensing. Which provision should be included?",
+  options: [
+    "Intellectual Property Rights",
+    "Term and Termination",
+    "Governing Law and Jurisdiction",
+    "Roles and Responsibilities"
+  ],
+  answer: 0,
+  reason: "The Intellectual Property Rights provision of a co-founder agreement addresses ownership and management of intellectual property created or contributed by each co-founder and can specify restrictions on its use, transfer or licensing."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch7_34",
+  case_chapter: "chapter7",
+  question: "An entrepreneur has developed a novel technical invention and begins the patent process. The entrepreneur first confirms novelty, inventive step and industrial applicability, then verifies that the invention has not already been patented, and only thereafter prepares the detailed application. Which sequence correctly reflects the relevant early steps?",
+  options: [
+    "Conduct a Patent Search → Determine Patent Eligibility → File the Application",
+    "Determine Patent Eligibility → Conduct a Patent Search → Prepare Patent Application",
+    "Prepare Patent Application → Determine Patent Eligibility → Conduct a Patent Search",
+    "Request for Examination → Determine Patent Eligibility → Prepare Patent Application"
+  ],
+  answer: 1,
+  reason: "The patent registration process in the chapter begins with Step 1: Determine Patent Eligibility, including novelty, inventive step and industrial applicability, followed by Step 2: Conduct a Patent Search and Step 3: Prepare Patent Application."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "strt_ch7_35",
+  case_chapter: "chapter7",
+  question: "A startup has completed its patent application and filed it with the Indian Patent Office. The IPO examines the application and may issue objections if discrepancies or deficiencies are identified. Which sequence best reflects the subsequent process described in the chapter?",
+  options: [
+    "Grant of Patent → Examination and Publication → Examination Process → Maintenance and Renewal",
+    "Examination and Publication → Request for Examination, where applicable → Examination Process → Grant of Patent",
+    "Request for Examination → Determine Patent Eligibility → Grant of Patent → Filing",
+    "Patent Search → Examination and Publication → File the Application → Grant of Patent"
+  ],
+  answer: 1,
+  reason: "After filing, the chapter describes Step 5: Examination and Publication, followed where applicable by Step 6: Request for Examination, then Step 7: Examination Process, and Step 8: Grant of Patent if the application is found satisfactory and objections are resolved."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_01",
+  case_chapter: "chapter7",
+  question: "Which business entity is described as the simplest form of business entity in India, owned and operated by a single individual?",
+  options: [
+    "Limited Liability Partnership",
+    "Private Limited Company",
+    "Sole Proprietorship",
+    "Public Limited Company"
+  ],
+  answer: 2,
+  reason: "A Sole Proprietorship is described as the simplest form of business entity in India, owned and operated by a single individual."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_02",
+  case_chapter: "chapter7",
+  question: "Which entity form provides limited liability protection to partners while allowing them to actively manage the business?",
+  options: [
+    "Limited Liability Partnership",
+    "Sole Proprietorship",
+    "General Partnership",
+    "One Person Company"
+  ],
+  answer: 0,
+  reason: "Limited Liability Partnerships (LLPs) offer limited liability to partners while allowing them to actively manage the business."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_03",
+  case_chapter: "chapter7",
+  question: "Which entity is stated to be a separate legal entity with limited liability for its shareholders and is commonly preferred by startups in India?",
+  options: [
+    "Partnership",
+    "Private Limited Company",
+    "Sole Proprietorship",
+    "One Person Company"
+  ],
+  answer: 1,
+  reason: "A Private Limited Company is a separate legal entity with limited liability for its shareholders and is described as the most common and preferred choice for startups in India."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_04",
+  case_chapter: "chapter7",
+  question: "Which entity allows a single entrepreneur to operate a company with limited liability?",
+  options: [
+    "Public Limited Company",
+    "Partnership",
+    "One Person Company",
+    "Limited Liability Partnership"
+  ],
+  answer: 2,
+  reason: "An One Person Company (OPC) allows a single entrepreneur to operate a company with limited liability. The sole member acts as both shareholder and director."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_05",
+  case_chapter: "chapter7",
+  question: "Which entity form is suitable for larger businesses planning to raise capital from the public through the sale of shares on a stock exchange?",
+  options: [
+    "Sole Proprietorship",
+    "One Person Company",
+    "Public Limited Company",
+    "Limited Liability Partnership"
+  ],
+  answer: 2,
+  reason: "Public Limited Companies are suitable for larger businesses planning to raise capital from the public through the sale of shares on a stock exchange."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_06",
+  case_chapter: "chapter7",
+  question: "Which of the following is a factor that startups should consider while selecting an entity form?",
+  options: [
+    "Liabilities attached to an Entity Form",
+    "Number of social media followers",
+    "Advertising frequency",
+    "Product colour"
+  ],
+  answer: 0,
+  reason: "The chapter identifies several factors for selecting an entity form, including Formation Formalities, Liabilities attached to an Entity Form, Expansion Aspirations, Taxation, Social Media and E Commerce Transactions, and Closure and Exit."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_07",
+  case_chapter: "chapter7",
+  question: "Which portal is mentioned for starting the registration process of an LLP in India?",
+  options: [
+    "IPO portal",
+    "MCA portal",
+    "GST portal",
+    "FSSAI portal"
+  ],
+  answer: 1,
+  reason: "The chapter states that the LLP registration process begins by visiting the MCA portal and creating an account."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_08",
+  case_chapter: "chapter7",
+  question: "Which form is prepared and filed for incorporation of a Private Limited Company according to the chapter?",
+  options: [
+    "Form LLP-1",
+    "Form SPICe",
+    "RUN-LLP",
+    "PAN Form"
+  ],
+  answer: 1,
+  reason: "For a Private Limited Company, the founders prepare and file Form SPICe (Simplified Proforma for Incorporating Company Electronically)."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_09",
+  case_chapter: "chapter7",
+  question: "Which registration is particularly beneficial for startups seeking financial assistance and government contracts?",
+  options: [
+    "Trademark Registration",
+    "FSSAI Registration",
+    "MSME Registration",
+    "Professional Tax Registration"
+  ],
+  answer: 2,
+  reason: "The chapter states that MSME Registration is particularly beneficial for startups seeking financial assistance and government contracts."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_10",
+  case_chapter: "chapter7",
+  question: "Which registration protects a startup's brand name, logo or product names against unauthorized use and infringement?",
+  options: [
+    "Trademark Registration",
+    "GST Registration",
+    "MSME Registration",
+    "ESI and EPF Registration"
+  ],
+  answer: 0,
+  reason: "Trademark Registration can provide legal protection against unauthorized use and infringement of a startup's brand name, logo or product names."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_11",
+  case_chapter: "chapter7",
+  question: "What does startup equity split among co-founders refer to?",
+  options: [
+    "Allocation of ownership or equity among the founding team members",
+    "Allocation of GST among employees",
+    "Division of business liabilities among customers",
+    "Allocation of intellectual property registration fees"
+  ],
+  answer: 0,
+  reason: "Startup equity split among co-founders refers to the allocation of ownership or equity in a new venture among its founding team members."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_12",
+  case_chapter: "chapter7",
+  question: "Which system provides ownership to founders or employees gradually over a predetermined period?",
+  options: [
+    "Equity Dilution",
+    "Equity Vesting",
+    "MSME Registration",
+    "Lock in period"
+  ],
+  answer: 1,
+  reason: "Equity Vesting is a system under which ownership is granted gradually over a predetermined period known as the vesting period."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_13",
+  case_chapter: "chapter7",
+  question: "Which three talent benefits are specifically associated with ESOPs in the chapter?",
+  options: [
+    "Attraction, Retention and Motivation",
+    "Taxation, Closure and Exit",
+    "Funding, Valuation and Dilution",
+    "Registration, Licensing and Compliance"
+  ],
+  answer: 0,
+  reason: "The chapter identifies Attraction, Retention and Motivation as the three-fold talent benefits of ESOPs."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_14",
+  case_chapter: "chapter7",
+  question: "Which type of intellectual property protection safeguards innovative products or processes?",
+  options: [
+    "Trademark",
+    "Copyright",
+    "Patent",
+    "Trade Licence"
+  ],
+  answer: 2,
+  reason: "Patents safeguard innovative products or processes and provide legal protection for inventions."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "strt_ch7_15",
+  case_chapter: "chapter7",
+  question: "Which type of intellectual property protection primarily protects brand names, logos, slogans and symbols?",
+  options: [
+    "Copyright",
+    "Patent",
+    "Trademark",
+    "Patent Search"
+  ],
+  answer: 2,
+  reason: "A Trademark is a recognizable sign, design or expression that distinguishes products or services and protects brand names, logos, slogans and symbols."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_16",
+  case_chapter: "chapter7",
+  question: "Three founders are setting up a startup and want limited liability while remaining directly involved in managing the business. Based on the characteristics given in the chapter, which entity form is most aligned with these requirements?",
+  options: [
+    "Sole Proprietorship",
+    "Limited Liability Partnership",
+    "General Partnership",
+    "Public Limited Company"
+  ],
+  answer: 1,
+  reason: "LLPs offer limited liability protection to partners while allowing them to actively manage the business, which matches the stated requirements."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_17",
+  case_chapter: "chapter7",
+  question: "A startup expects to add outside investors, operate in multiple locations and raise capital for expansion. Which entity-selection factor should receive particular attention because of these plans?",
+  options: [
+    "Expansion Aspirations",
+    "Closure and Exit only",
+    "FSSAI Registration",
+    "Professional Tax Registration"
+  ],
+  answer: 0,
+  reason: "Expansion Aspirations should be considered because the chapter explains that entity forms offering flexibility, scalability, ability to attract outside investment and add new owners or shareholders can be better suited for expansion."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_18",
+  case_chapter: "chapter7",
+  question: "Two co-founders contribute different amounts of time, expertise, financial investment and industry connections. Before deciding their ownership percentages, what should they primarily undertake?",
+  options: [
+    "Assess Contributions and evaluate the Value Proposition brought by each co-founder",
+    "Register a trademark before discussing ownership",
+    "Apply for FSSAI Registration",
+    "Conduct a patent examination"
+  ],
+  answer: 0,
+  reason: "The chapter states that founders should assess contributions such as time, expertise, skills and financial investments and evaluate the unique value proposition each co-founder brings when determining the equity split."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_19",
+  case_chapter: "chapter7",
+  question: "A founder is concerned that a co-founder may leave the startup shortly after receiving a large equity allocation. Which mechanism can ensure that equity is earned over time and support continued commitment?",
+  options: [
+    "Equity Vesting with a vesting schedule",
+    "GST Registration",
+    "Trademark Registration",
+    "Public Limited Company registration"
+  ],
+  answer: 0,
+  reason: "Equity Vesting grants ownership gradually over a predetermined period and encourages founders and employees to remain committed to the startup."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_20",
+  case_chapter: "chapter7",
+  question: "A startup has limited cash flow but wants to attract and retain skilled employees by giving them an opportunity to purchase shares at a predetermined price, subject to vesting. Which arrangement is being considered?",
+  options: [
+    "MSME Registration",
+    "Employee Stock Ownership Plan (ESOP)",
+    "Equity Split among Co-founders",
+    "Patent Registration"
+  ],
+  answer: 1,
+  reason: "ESOPs are an employee benefit plan that grants employees the right to purchase shares at a predetermined price. The shares typically vest over a specified period and can help startups attract and retain talent when cash flow is limited."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_21",
+  case_chapter: "chapter7",
+  question: "Before implementing an ESOP, the founders want to balance employee incentives with the need to preserve existing ownership. Which implementation consideration directly addresses this issue?",
+  options: [
+    "Equity Allocation",
+    "Patent Search",
+    "Governing Law and Jurisdiction",
+    "Formation Formalities"
+  ],
+  answer: 0,
+  reason: "Equity Allocation requires founders to determine how much equity should be allocated to the ESOP and balance the need to attract and retain talent with preserving ownership dilution."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_22",
+  case_chapter: "chapter7",
+  question: "Two founders disagree about who can make major strategic decisions and how a deadlock should be handled. Which part of a comprehensive co-founder agreement should address these matters?",
+  options: [
+    "Decision Making",
+    "Trademark Registration",
+    "Capital Contributions only",
+    "Patent Maintenance"
+  ],
+  answer: 0,
+  reason: "The Decision Making section of a co-founder agreement establishes the framework for making major strategic decisions and resolving disputes, including mechanisms such as voting rights, supermajority requirements or a neutral arbiter."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_23",
+  case_chapter: "chapter7",
+  question: "A startup develops software and wants the co-founder agreement to clearly establish ownership and management of intellectual property created by its founders. Which provision should be included?",
+  options: [
+    "Intellectual Property Rights",
+    "Closure and Exit",
+    "Expansion Aspirations",
+    "Professional Tax Registration"
+  ],
+  answer: 0,
+  reason: "The Intellectual Property Rights provision in a co-founder agreement addresses ownership and management of intellectual property created or contributed to the startup by each co-founder."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_24",
+  case_chapter: "chapter7",
+  question: "A startup has created a new technical invention. Before preparing and filing the patent application, the founders want to verify that the invention is unique and not already patented by someone else. What should they do?",
+  options: [
+    "Request for Examination",
+    "Conduct a Patent Search",
+    "Apply for Trademark Registration",
+    "Obtain the Certificate of Incorporation"
+  ],
+  answer: 1,
+  reason: "The patent registration process states that the founders should conduct a Patent Search to verify that the invention is unique and not already patented by someone else."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "strt_ch7_25",
+  case_chapter: "chapter7",
+  question: "A food startup is choosing among registrations. It needs a registration specifically related to food safety standards, while another part of its business is concerned with protecting its brand identity. Which pair correctly matches the two requirements?",
+  options: [
+    "FSSAI Registration for food safety and Trademark Registration for brand protection",
+    "MSME Registration for food safety and PAN Registration for brand protection",
+    "GST Registration for food safety and FSSAI Registration for brand protection",
+    "Trademark Registration for food safety and FSSAI Registration for brand protection"
+  ],
+  answer: 0,
+  reason: "The chapter states that FSSAI registration or licensing is mandatory for food business activities to ensure compliance with food safety standards, while Trademark Registration protects brand names, logos and product names against unauthorized use and infringement."
+},
+{
+  case_id: "strt_ch7_CS11",
+  difficulty: "Medium",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>FinEdge Analytics is being established by two founders who have decided to operate as a Private Limited Company. Before incorporation, they obtain Digital Signature Certificates for the proposed directors and apply for Director Identification Numbers. They then reserve a unique company name through the 'RUN' service on the Ministry of Corporate Affairs portal.</p>
+
+    <p>The founders next prepare Form SPICe together with the Memorandum of Association, Articles of Association, address proof and identity proof of the directors. They pay the prescribed registration fees and wait for scrutiny and approval before commencing the company in its legal form.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which entity form has FinEdge Analytics selected?",
+      options: [
+        "Limited Liability Partnership",
+        "Sole Proprietorship",
+        "Private Limited Company",
+        "One Person Company"
+      ],
+      answer: 2,
+      reason: "The case expressly states that FinEdge Analytics has decided to operate as a Private Limited Company."
+    },
+
+    {
+      question: "Which service is used by FinEdge Analytics to reserve a unique name for the company?",
+      options: [
+        "RUN",
+        "RUN-LLP",
+        "SPICe",
+        "LLP-1"
+      ],
+      answer: 0,
+      reason: "For a Private Limited Company, the chapter states that a unique name is reserved using the 'RUN' (Reserve Unique Name) service on the MCA portal."
+    },
+
+    {
+      question: "Which form is prepared and filed by the founders for incorporation of the Private Limited Company?",
+      options: [
+        "Form LLP-1",
+        "Form SPICe",
+        "Form RUN-LLP",
+        "Form GST-1"
+      ],
+      answer: 1,
+      reason: "The chapter states that a Private Limited Company requires preparation and filing of Form SPICe along with the necessary documents."
+    },
+
+    {
+      question: "Which documents are specifically mentioned in the case as accompanying Form SPICe?",
+      options: [
+        "Only patent drawings and trademark certificates",
+        "Only GST returns and tax invoices",
+        "Only ESOP records and vesting schedules",
+        "Memorandum of Association, Articles of Association, address proof and identity proof of directors"
+      ],
+      answer: 3,
+      reason: "The chapter specifically mentions MoA, AoA, address proof and identity proof of directors as documents accompanying Form SPICe."
+    },
+
+    {
+      question: "What is expected after scrutiny and approval of the registration process?",
+      options: [
+        "A Certificate of Incorporation is issued",
+        "The company automatically receives a patent",
+        "All shareholders receive ESOPs",
+        "The company becomes a Public Limited Company"
+      ],
+      answer: 0,
+      reason: "After scrutiny and approval, the Certificate of Incorporation is issued for the Private Limited Company."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch7_CS12",
+  difficulty: "Medium",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>UrbanLink Services is planning to expand its operations into multiple locations and expects to bring in outside investors as the business grows. The founders want an entity structure that provides limited liability while allowing additional owners or investors to be added without disrupting the existing structure.</p>
+
+    <p>The startup also expects significant online operations and e-commerce transactions. While evaluating the entity form, the founders compare liability, expansion aspirations and the formalized structure needed for digital transactions. They want the legal structure to support the startup's growth and operational requirements.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which factor is most directly concerned with UrbanLink Services' plans to operate in multiple locations and attract outside investment?",
+      options: [
+        "Closure and Exit",
+        "Formation Formalities",
+        "Expansion Aspirations",
+        "Patent Eligibility"
+      ],
+      answer: 2,
+      reason: "Expansion Aspirations considers growth plans, scalability, attracting outside investment, adding owners or shareholders and operating in multiple locations."
+    },
+
+    {
+      question: "Which entity forms are described in the chapter as generally suitable for expansion because of flexibility, scalability and ability to attract investment?",
+      options: [
+        "Sole Proprietorships only",
+        "LLCs and company forms",
+        "General Partnerships only",
+        "OPCs only"
+      ],
+      answer: 1,
+      reason: "The chapter states that LLCs and company forms are generally better suited for expansion because of their flexibility, scalability and ability to attract investment."
+    },
+
+    {
+      question: "Why is limited liability relevant to UrbanLink Services while it evaluates its entity form?",
+      options: [
+        "It protects owners from certain business liabilities by limiting their personal exposure",
+        "It guarantees that the business will never incur a loss",
+        "It eliminates every regulatory requirement",
+        "It automatically provides a patent"
+      ],
+      answer: 0,
+      reason: "The chapter explains that limited liability provides owners with protection from business liabilities, subject to the circumstances described in the chapter."
+    },
+
+    {
+      question: "Which factor is particularly relevant because UrbanLink Services expects significant online operations and e-commerce transactions?",
+      options: [
+        "Social Media and E Commerce Transactions",
+        "Equity Vesting",
+        "Succession Planning",
+        "Capital Contributions"
+      ],
+      answer: 0,
+      reason: "Social Media and E Commerce Transactions is specifically identified as a factor when selecting an entity form in the digital business environment."
+    },
+
+    {
+      question: "Which combination best reflects the entity-selection considerations described in the case?",
+      options: [
+        "Only taxation and patent renewal",
+        "Only trademark registration and ESOP allocation",
+        "Expansion Aspirations, Liabilities attached to an Entity Form, and Social Media and E Commerce Transactions",
+        "Only copyright and FSSAI registration"
+      ],
+      answer: 2,
+      reason: "The case directly involves Expansion Aspirations, liability considerations and Social Media and E Commerce Transactions, all of which are identified factors for selecting an entity form."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch7_CS13",
+  difficulty: "Medium",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>HealthTrack Labs has three co-founders. One founder developed the initial product idea and has worked extensively on product development. The second founder contributes technical skills and industry connections, while the third founder has made substantial financial investments and is involved in operational tasks and fundraising efforts.</p>
+
+    <p>Before deciding the equity allocation, the founders assess their respective time, expertise, skills and financial investments. They also evaluate the unique value proposition of each founder, discuss risk tolerance, long-term commitment and future contributions, and seek consensus through open and transparent discussion.</p>
+
+    <p>After reaching consensus, they intend to document ownership percentages, rights, vesting schedules and dispute resolution mechanisms in a formal agreement.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which process should HealthTrack Labs undertake when assessing what each co-founder has contributed?",
+      options: [
+        "Assess Contributions",
+        "Patent Enforcement",
+        "Trademark Renewal",
+        "Closure and Exit"
+      ],
+      answer: 0,
+      reason: "Assess Contributions is the first relevant step described in the chapter, covering time, expertise, skills, financial investments, idea, product development, market research, fundraising and operational tasks."
+    },
+
+    {
+      question: "The second founder's technical skills and industry connections are most directly relevant to which part of the equity-split process?",
+      options: [
+        "Future Dilution",
+        "Value Proposition",
+        "Closure and Exit",
+        "Formation Formalities"
+      ],
+      answer: 1,
+      reason: "The chapter states that Value Proposition includes contributions such as domain expertise, technical skills, industry connections, leadership qualities and business acumen."
+    },
+
+    {
+      question: "Why are the founders discussing risk tolerance, long-term commitment and future contributions?",
+      options: [
+        "These are relevant considerations during Negotiation and Discussion of the equity split",
+        "They determine whether FSSAI registration is mandatory",
+        "They determine whether a patent exists",
+        "They replace the need for a founders' agreement"
+      ],
+      answer: 0,
+      reason: "The chapter states that open and transparent discussions should consider risk tolerance, long-term commitment and future contributions while negotiating the equity split."
+    },
+
+    {
+      question: "What should HealthTrack Labs document after consensus is reached on the equity split?",
+      options: [
+        "Only the startup's logo",
+        "Only tax invoices",
+        "Ownership percentage, rights, vesting schedules and dispute resolution mechanisms",
+        "Only the names of employees"
+      ],
+      answer: 2,
+      reason: "The chapter states that a formal agreement should clearly document each co-founder's ownership percentage, rights, vesting schedules and dispute resolution mechanisms."
+    },
+
+    {
+      question: "Which method mentioned in the chapter can dynamically adjust equity allocations based on individual contributions over time?",
+      options: [
+        "SPICe",
+        "RUN-LLP",
+        "Slicing Pie",
+        "FSSAI"
+      ],
+      answer: 2,
+      reason: "The chapter specifically mentions the 'Slicing Pie' model as an equity-splitting methodology that dynamically adjusts equity allocations based on individual contributions over time."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch7_CS14",
+  difficulty: "Medium",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>DataWave Technologies is an early-stage startup with limited financial resources. The founders want to attract skilled employees, retain them for the long term and motivate them to contribute to the company's growth. They decide to establish an Employee Stock Ownership Plan (ESOP), under which eligible employees will have the right to purchase shares at a predetermined price.</p>
+
+    <p>The founders determine how much equity should be allocated to the ESOP and establish a vesting schedule over a multiyear period. As the startup develops, they plan to review the ESOP regularly and provide employees with information about its benefits, taxation and how to exercise options.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which three talent benefits of ESOPs are identified in the chapter and reflected in DataWave Technologies' objectives?",
+      options: [
+        "Attraction, Retention and Motivation",
+        "Taxation, Closure and Exit",
+        "Patent, Copyright and Trademark",
+        "Formation, Registration and Dissolution"
+      ],
+      answer: 0,
+      reason: "The chapter identifies Attraction, Retention and Motivation as the three-fold talent benefits of ESOPs."
+    },
+
+    {
+      question: "What right is granted to employees under the ESOP described in the case?",
+      options: [
+        "The right to automatically become directors",
+        "The right to purchase shares at a predetermined price",
+        "The right to obtain a patent",
+        "The right to change the company's legal entity"
+      ],
+      answer: 1,
+      reason: "The chapter defines ESOPs as a benefit plan granting employees the right to purchase shares of the company's stock at a predetermined price."
+    },
+
+    {
+      question: "Which ESOP implementation consideration is concerned with determining how much equity is allocated to the plan?",
+      options: [
+        "Equity Allocation",
+        "Educate Employees",
+        "Regular Review",
+        "Closure and Exit"
+      ],
+      answer: 0,
+      reason: "Equity Allocation requires founders to determine how much equity to allocate to the ESOP and how it will be distributed among employees."
+    },
+
+    {
+      question: "Why does DataWave Technologies plan to conduct a Regular Review of its ESOP?",
+      options: [
+        "To replace the company's founders",
+        "To automatically convert the startup into an LLP",
+        "To align the ESOP with the company's growth trajectory, changing needs and evolving market conditions",
+        "To determine patent eligibility"
+      ],
+      answer: 2,
+      reason: "The chapter states that startups should regularly review and update the ESOP so that it remains aligned with the company's growth trajectory, changing needs and evolving market conditions."
+    },
+
+    {
+      question: "Which information should DataWave Technologies provide to employees as part of educating them about the ESOP?",
+      options: [
+        "Only the startup's logo",
+        "Only the founders' personal investments",
+        "Benefits, taxation and how to exercise options",
+        "Only the company's patent application number"
+      ],
+      answer: 2,
+      reason: "The chapter states that employees should receive ongoing education about the ESOP, including its benefits, taxation and how to exercise options."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch7_CS15",
+  difficulty: "Medium",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>BioSecure Innovations has developed an original technology-based invention and wants to protect its intellectual property. The founders understand that different intellectual property rights apply to different assets. They therefore consider a patent for the invention, a trademark for the startup's brand identity, and copyright protection for original creative works such as software, designs or content.</p>
+
+    <p>Before preparing a patent application in India, the founders first assess whether the invention satisfies the required patentability criteria. They then intend to conduct a comprehensive search to verify that the invention is unique and not already patented before preparing and filing the application.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which intellectual property right is primarily relevant to BioSecure Innovations' invention?",
+      options: [
+        "Trademark",
+        "Patent",
+        "Copyright",
+        "Professional Tax"
+      ],
+      answer: 1,
+      reason: "The chapter states that patents provide legal protection for inventions and safeguard innovative products or processes."
+    },
+
+    {
+      question: "Which intellectual property right is relevant to the startup's brand identity?",
+      options: [
+        "Trademark",
+        "Patent",
+        "Copyright",
+        "ESOP"
+      ],
+      answer: 0,
+      reason: "Trademarks protect brand identities and can cover brand names, logos, slogans and symbols."
+    },
+
+    {
+      question: "Which intellectual property right is relevant to original software, designs or content as described in the case?",
+      options: [
+        "Patent",
+        "Trademark",
+        "Copyright",
+        "MSME Registration"
+      ],
+      answer: 2,
+      reason: "The chapter states that copyrights safeguard creative works such as software, designs or content."
+    },
+
+    {
+      question: "What is the first step in the patent registration process described in the chapter?",
+      options: [
+        "File the Application",
+        "Conduct a Patent Search",
+        "Determine Patent Eligibility",
+        "Enforce the Patent"
+      ],
+      answer: 2,
+      reason: "Step 1 of the chapter's patent registration process is Determine Patent Eligibility."
+    },
+
+    {
+      question: "What is the purpose of the patent search that BioSecure Innovations plans to conduct?",
+      options: [
+        "To determine employee eligibility for ESOPs",
+        "To verify that the invention is unique and not already patented by someone else",
+        "To obtain a Certificate of Incorporation",
+        "To determine the company's tax rate"
+      ],
+      answer: 1,
+      reason: "The chapter states that a comprehensive patent search is performed to verify that the invention is unique and not already patented by someone else."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch7_CS16",
+  difficulty: "Hard",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>FinCore Innovations was founded by three co-founders who initially divided the startup's equity based on their respective contributions. One founder provided the initial idea and product development, another contributed technical skills and industry connections, and the third made substantial financial investments and supported fundraising and operations.</p>
+
+    <p>As the startup prepares for a major fundraising round, the founders realize that future equity dilution may arise from fundraising, employee stock options and incentive plans. They therefore consider reserving a portion of equity for future issuance. At the same time, they want founders to earn their equity over several years and are considering a one-year cliff period.</p>
+
+    <p>The founders also discuss possible acquisition, IPO or buyout scenarios and what should happen if a founder leaves. They agree that legal and tax implications must be considered and that the final arrangement should document ownership percentages, rights, vesting schedules and dispute resolution mechanisms.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which consideration becomes particularly important because FinCore Innovations expects a future fundraising round and employee stock options?",
+      options: [
+        "Future Dilution",
+        "Trademark Registration",
+        "FSSAI Registration",
+        "Formation Formalities"
+      ],
+      answer: 0,
+      reason: "The chapter states that founders should anticipate future equity dilution arising from fundraising rounds, employee stock options and incentive plans."
+    },
+
+    {
+      question: "Why may the founders reserve a portion of equity for future issuance?",
+      options: [
+        "To eliminate the need for legal agreements",
+        "To maintain founder ownership levels and avoid excessive dilution",
+        "To guarantee a patent grant",
+        "To avoid preparing financial statements"
+      ],
+      answer: 1,
+      reason: "The chapter states that reserving a portion of equity for future issuance can help maintain founder ownership levels and avoid excessive dilution."
+    },
+
+    {
+      question: "Which arrangement is intended to ensure that the founders earn their equity over time and remain committed to the startup?",
+      options: [
+        "Trademark protection",
+        "Vesting schedules and cliff periods",
+        "PAN and TAN registration",
+        "Patent enforcement"
+      ],
+      answer: 1,
+      reason: "The chapter states that vesting schedules and cliff periods ensure co-founders earn their equity over time and remain committed to the startup."
+    },
+
+    {
+      question: "Which set of scenarios should the founders consider when assessing how the equity split may operate in the future?",
+      options: [
+        "Acquisitions, IPOs and buyouts",
+        "Only GST registration",
+        "Only employee recruitment",
+        "Only patent searches"
+      ],
+      answer: 0,
+      reason: "The chapter specifically identifies acquisitions, IPOs and buyouts as exit scenarios to consider when deciding the equity split."
+    },
+
+    {
+      question: "Which combination correctly reflects the matters the founders should formalize after reaching consensus?",
+      options: [
+        "Only brand name and logo",
+        "Only tax returns and GST invoices",
+        "Ownership percentage, rights, vesting schedules and dispute resolution mechanisms",
+        "Only employee salaries and office expenses"
+      ],
+      answer: 2,
+      reason: "The chapter states that after consensus, founders should formalize the equity split and clearly document ownership percentage, rights, vesting schedules and dispute resolution mechanisms."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch7_CS17",
+  difficulty: "Hard",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>MedAxis Technologies has two co-founders whose responsibilities are becoming increasingly complex. The founders want one written agreement that clearly defines each person's role, specifies equity ownership and establishes the decision-making framework for major strategic matters. They also want to separate equity ownership from decision rights and create a mechanism for resolving deadlocks.</p>
+
+    <p>The founders are concerned about intellectual property created by either founder, confidential information and the possibility that a founder may leave. They therefore want provisions dealing with Intellectual Property Rights, Confidentiality and Non-Disclosure, Term and Termination, and Succession Planning. They also want the agreement to specify the governing law and jurisdiction.</p>
+
+    <p>In addition, they intend to address capital contributions, financial obligations and procedures for handling equity if a founder leaves or wants to sell part of the shares.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which document best addresses the collection of matters described by the MedAxis Technologies founders?",
+      options: [
+        "A co-founder agreement",
+        "A patent search report",
+        "An FSSAI registration",
+        "An MSME registration"
+      ],
+      answer: 0,
+      reason: "The chapter describes a co-founder agreement as a crucial document that sets out the terms, responsibilities and expectations between founders and addresses areas such as equity, decision-making and intellectual property."
+    },
+
+    {
+      question: "Which section of the co-founder agreement should establish procedures for resolving disputes and making major strategic decisions?",
+      options: [
+        "Decision Making",
+        "Trademark Registration",
+        "Capital Contributions",
+        "Non-Solicitation"
+      ],
+      answer: 0,
+      reason: "The Decision Making section establishes the framework for decision-making, including procedures for resolving disputes and making major strategic decisions."
+    },
+
+    {
+      question: "The founders want to separate equity ownership from decision rights. Which aspect of the founders' agreement checklist directly addresses this issue?",
+      options: [
+        "Whether founders will share networks",
+        "Whether equity is separated from decision rights",
+        "Whether employees receive medical benefits",
+        "Whether the startup registers for GST"
+      ],
+      answer: 1,
+      reason: "The checklist specifically asks founders to consider whether they have separated equity from decision rights."
+    },
+
+    {
+      question: "Which provision is most directly concerned with protecting confidential information and trade secrets?",
+      options: [
+        "Confidentiality and Non-Disclosure",
+        "Succession Planning",
+        "Equity Ownership",
+        "Expansion Aspirations"
+      ],
+      answer: 0,
+      reason: "The chapter states that Confidentiality and Non-Disclosure provisions protect confidential information and trade secrets of the startup."
+    },
+
+    {
+      question: "If a founder leaves and the startup needs an orderly mechanism for dealing with the founder's departure, which area of the agreement is directly relevant?",
+      options: [
+        "Governing Law and Jurisdiction",
+        "Succession Planning",
+        "Trademark Registration",
+        "Patent Eligibility"
+      ],
+      answer: 1,
+      reason: "Succession Planning provides for orderly succession of co-founders in the event of departure, retirement or other changes in circumstances."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch7_CS18",
+  difficulty: "Hard",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>QuantumGrid Systems has created a technology-based invention that the founders believe may qualify for patent protection in India. Before filing anything, they examine whether the invention satisfies novelty, inventive step and industrial applicability. Once this assessment is completed, they conduct a comprehensive patent search to determine whether the invention is unique and has not already been patented by someone else.</p>
+
+    <p>The founders then prepare a detailed patent application containing a clear description of the invention and appropriate drawings and diagrams. They file the application with the Indian Patent Office through the prescribed channels. The IPO subsequently examines the application and may issue office actions or objections if discrepancies or deficiencies are identified.</p>
+
+    <p>The founders understand that, where the application was filed without an initial request for examination, a separate request must be submitted within the specified timeframe. After satisfactory resolution of objections and approval, the patent may be granted, after which prescribed maintenance fees must be paid to maintain its validity.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which combination represents the patentability criteria that QuantumGrid Systems examines before applying for the patent?",
+      options: [
+        "Attraction, Retention and Motivation",
+        "Novelty, Inventive Step and Industrial Applicability",
+        "Formation, Taxation and Exit",
+        "Equity, Vesting and Dilution"
+      ],
+      answer: 1,
+      reason: "The chapter identifies novelty, inventive step and industrial applicability as the criteria for patent eligibility."
+    },
+
+    {
+      question: "Why does QuantumGrid Systems conduct a comprehensive patent search before preparing the application?",
+      options: [
+        "To verify that the invention is unique and not already patented by someone else",
+        "To reserve the company's name",
+        "To determine ESOP eligibility",
+        "To obtain a Certificate of Incorporation"
+      ],
+      answer: 0,
+      reason: "The chapter states that the patent search verifies whether the invention is unique and not already patented by someone else."
+    },
+
+    {
+      question: "Which step follows the patent search in the sequence described in the chapter?",
+      options: [
+        "Maintenance and Renewal",
+        "Grant of Patent",
+        "Prepare Patent Application",
+        "Enforcement"
+      ],
+      answer: 2,
+      reason: "After Conduct a Patent Search, Step 3 in the chapter is Prepare Patent Application."
+    },
+
+    {
+      question: "What may the Indian Patent Office issue during the examination process if discrepancies or deficiencies are identified?",
+      options: [
+        "ESOP grants",
+        "Office actions or objections",
+        "Shareholder certificates",
+        "MSME subsidies"
+      ],
+      answer: 1,
+      reason: "The chapter states that during examination, the IPO may issue office actions or objections if discrepancies or deficiencies are identified."
+    },
+
+    {
+      question: "What should happen after a patent is granted to maintain its validity?",
+      options: [
+        "The founders must dissolve the company",
+        "The founders must convert the patent into a trademark",
+        "Prescribed maintenance fees must be paid as required",
+        "The founders must create an LLP"
+      ],
+      answer: 2,
+      reason: "The chapter states that prescribed maintenance fees must be paid to maintain the validity of the patent, and failure to pay may result in the patent lapsing."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch7_CS19",
+  difficulty: "Hard",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>GlobalHarvest Foods is an Indian startup planning to expand its operations into international markets. Before seeking substantial external funding, the founders decide to review their legal compliance because potential investors and financial institutions may conduct due diligence covering legal, asset, financial and tax aspects.</p>
+
+    <p>The startup operates in the food business and has developed a distinctive brand name and logo. It is also exploring MSME registration because it may seek financial assistance and government contracts. The founders understand that FSSAI registration or a license is mandatory for food business activities, while trademark registration can protect the startup's brand identity against unauthorized use and infringement.</p>
+
+    <p>The founders believe that maintaining legal compliance will not only reduce the risk of fines, penalties and legal disputes but also help build credibility with stakeholders and facilitate access to funding. They also recognize that compliance may assist the startup in navigating cross-border legal complexities as it expands internationally.</p>
+  `,
+
+  questions: [
+    {
+      question: "Why is legal compliance particularly relevant to GlobalHarvest Foods before seeking external funding?",
+      options: [
+        "Investors and financial institutions may conduct due diligence before committing capital",
+        "Legal compliance automatically guarantees funding",
+        "Legal compliance eliminates the need for financial records",
+        "Legal compliance automatically creates an IPO"
+      ],
+      answer: 0,
+      reason: "The chapter states that investors and financial institutions often conduct thorough due diligence before committing capital, and compliance can reduce perceived risks and facilitate access to funding."
+    },
+
+    {
+      question: "Which registration is mandatory because GlobalHarvest Foods is involved in food business activities?",
+      options: [
+        "MSME Registration",
+        "Trademark Registration",
+        "FSSAI Registration or licence",
+        "ESOP Registration"
+      ],
+      answer: 2,
+      reason: "The chapter states that a startup involved in food business activities must obtain FSSAI registration or a licence."
+    },
+
+    {
+      question: "Which registration is particularly relevant to protecting the startup's distinctive brand name and logo?",
+      options: [
+        "Trademark Registration",
+        "ESI Registration",
+        "PAN Registration",
+        "Professional Tax Registration"
+      ],
+      answer: 0,
+      reason: "Trademark registration can provide legal protection for a startup's brand name, logo or product names against unauthorized use and infringement."
+    },
+
+    {
+      question: "Why is GlobalHarvest Foods considering MSME registration?",
+      options: [
+        "To obtain automatic patent protection",
+        "To seek benefits including financial assistance and government contracts",
+        "To become a Public Limited Company automatically",
+        "To avoid all regulatory requirements"
+      ],
+      answer: 1,
+      reason: "The chapter states that MSME registration is particularly beneficial for startups seeking financial assistance and government contracts."
+    },
+
+    {
+      question: "How can legal compliance support GlobalHarvest Foods' international expansion according to the chapter?",
+      options: [
+        "It automatically removes all foreign taxes",
+        "It guarantees entry into every international market",
+        "It enables the startup to navigate international markets and mitigates legal or regulatory barriers",
+        "It eliminates the need for cross-border legal review"
+      ],
+      answer: 2,
+      reason: "The chapter explains that legal compliance enables startups with global aspirations to navigate international markets and mitigate legal barriers or regulatory hurdles."
+    }
+  ]
+},
+
+{
+  case_id: "strt_ch7_CS20",
+  difficulty: "Hard",
+  chapter: "Chapter7",
+
+  caseText: `
+    <p>NextWave Robotics is preparing for rapid growth. The founders are reviewing the legal structure of the startup, its equity arrangements and its intellectual property protection at the same time. They are considering an entity structure capable of supporting expansion and outside investment, while also reviewing future dilution from fundraising and employee stock options.</p>
+
+    <p>The founders have agreed that their equity allocation should reflect each person's time, expertise, skills, financial investments and unique value proposition. They plan to use open and transparent negotiation, consider long-term commitment and future contributions, and record vesting schedules and dispute resolution mechanisms in a formal agreement.</p>
+
+    <p>At the employee level, the startup wants an ESOP to attract, retain and motivate skilled talent. For intellectual property, the founders distinguish between patent protection for inventions, trademark protection for brand identity and copyright protection for original creative works. They also plan to follow the patent registration process beginning with patent eligibility and a patent search.</p>
+  `,
+
+  questions: [
+    {
+      question: "Which set of considerations is most directly relevant to NextWave Robotics when deciding the equity split among the founders?",
+      options: [
+        "Time, expertise, skills, financial investments and unique value proposition",
+        "Only GST registration and FSSAI registration",
+        "Only trademark registration and patent enforcement",
+        "Only company closure and winding up"
+      ],
+      answer: 0,
+      reason: "The chapter states that founders should assess time, expertise, skills and financial investments and evaluate the unique value proposition that each co-founder brings."
+    },
+
+    {
+      question: "Which consideration should NextWave Robotics address because fundraising and employee stock options may affect the founders' ownership percentages?",
+      options: [
+        "Future Dilution",
+        "Confidentiality and Non-Disclosure",
+        "Patent Eligibility",
+        "Formation Formalities"
+      ],
+      answer: 0,
+      reason: "Future Dilution is specifically identified as a consideration because future fundraising rounds, employee stock options and incentive plans can dilute founder ownership."
+    },
+
+    {
+      question: "Which arrangement best addresses the founders' objective of linking ownership to continued contribution over time?",
+      options: [
+        "Trademark Registration",
+        "Equity Vesting",
+        "FSSAI Registration",
+        "PAN and TAN Registration"
+      ],
+      answer: 1,
+      reason: "Equity vesting provides ownership gradually over a predetermined period and encourages continued contribution and commitment."
+    },
+
+    {
+      question: "Which statement correctly distinguishes the three forms of intellectual property protection described in the case?",
+      options: [
+        "Patent protects brand identity, trademark protects inventions, and copyright protects tax records",
+        "Patent protects inventions, trademark protects brand identity, and copyright protects original creative works",
+        "Patent protects employee benefits, trademark protects equity, and copyright protects company registration",
+        "Patent protects food safety, trademark protects tax payments, and copyright protects shareholder voting"
+      ],
+      answer: 1,
+      reason: "The chapter states that patents safeguard innovative products or processes, trademarks protect brand identities, and copyrights safeguard original creative works such as software, designs or content."
+    },
+
+    {
+      question: "Which sequence correctly begins the patent registration process described in the chapter?",
+      options: [
+        "Grant of Patent followed by Patent Search",
+        "Enforcement followed by Examination",
+        "Determine Patent Eligibility followed by Conduct a Patent Search",
+        "Maintenance and Renewal followed by Filing the Application"
+      ],
+      answer: 2,
+      reason: "The chapter's patent registration process begins with Step 1: Determine Patent Eligibility, followed by Step 2: Conduct a Patent Search."
+    }
+  ]
+},
+
 
 
 
