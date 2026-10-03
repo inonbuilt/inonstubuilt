@@ -16867,6 +16867,1457 @@ reason: "The Elevator Pitch includes the Problem Statement, Solution, Value Prop
   answer: 1,
 
   reason: "The Electronics Incubation and Entrepreneurship Development (EIED) Scheme, launched by the Ministry of Electronics and Information Technology (MeitY), aims to promote entrepreneurship and innovation in the electronics sector and supports incubators and accelerators."
+},
+
+// Chapter 9
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_01",
+
+  case_chapter: "chapter9",
+
+  question: "Which source of funds involves using personal savings, credit cards, or funds from friends and family to finance a startup's initial operations?",
+
+  options: [
+    "Bootstrapping",
+    "Venture Capital",
+    "Crowdfunding",
+    "Bank Loans"
+  ],
+
+  answer: 0,
+
+  reason: "Bootstrapping involves using personal savings, credit cards, or funds from friends and family to finance the startup's initial operations."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_02",
+
+  case_chapter: "chapter9",
+
+  question: "Which funding agent generally provides capital in exchange for ownership equity or convertible debt and may also offer expertise and mentorship?",
+
+  options: [
+    "Government or non-profit organizations",
+    "Angel Investors",
+    "Bank Loans",
+    "Crowdfunding Platforms"
+  ],
+
+  answer: 1,
+
+  reason: "Angel Investors are high-net-worth individuals who provide capital in exchange for ownership equity or convertible debt and often offer expertise and mentorship in addition to funding."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_03",
+
+  case_chapter: "chapter9",
+
+  question: "Which source of funds involves raising small amounts of money from a large number of individuals through online platforms?",
+
+  options: [
+    "Corporate Investments",
+    "Venture Capital",
+    "Crowdfunding",
+    "Bootstrapping"
+  ],
+
+  answer: 2,
+
+  reason: "Crowdfunding involves raising small amounts of money from a large number of individuals through online platforms."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_04",
+
+  case_chapter: "chapter9",
+
+  question: "Which approach to building the right startup team requires the founder to communicate the startup's vision effectively and align team members towards a common purpose?",
+
+  options: [
+    "Managing Conflict and Resolving Differences",
+    "Building Trust and Transparency",
+    "Continuous Learning and Development",
+    "Defining Your Vision"
+  ],
+
+  answer: 3,
+
+  reason: "Defining Your Vision involves articulating the startup's vision clearly, communicating it effectively and aligning team members towards a common purpose."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_05",
+
+  case_chapter: "chapter9",
+
+  question: "Which team-building approach involves selecting candidates who resonate with the company's values, work ethic and vision?",
+
+  options: [
+    "Hiring for Culture Fit",
+    "Empowering and Delegating",
+    "Diversity and Inclusion",
+    "Managing Conflict and Resolving Differences"
+  ],
+
+  answer: 0,
+
+  reason: "Hiring for Culture Fit requires founders to look for candidates who resonate with the company's values, work ethic and vision."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_06",
+
+  case_chapter: "chapter9",
+
+  question: "Which element of Founder's Grooming involves crafting a strong personal brand aligned with the startup's mission and values?",
+
+  options: [
+    "Managing Reputation",
+    "Establishing Credibility",
+    "Building Personal Brand",
+    "Driving Growth and Visibility"
+  ],
+
+  answer: 2,
+
+  reason: "Building Personal Brand involves crafting a compelling personal brand that aligns with the startup's mission and values and helps founders differentiate themselves."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_07",
+
+  case_chapter: "chapter9",
+
+  question: "Which PR activity enables founders to showcase their expertise and insights and enhance their credibility?",
+
+  options: [
+    "Establishing Credibility",
+    "Managing Reputation",
+    "Driving Growth and Visibility",
+    "Consumer Outreach"
+  ],
+
+  answer: 0,
+
+  reason: "Establishing Credibility through activities such as media interviews, speaking engagements and thought leadership articles enables founders to showcase their expertise and insights."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_08",
+
+  case_chapter: "chapter9",
+
+  question: "Which of the following is a benefit of participating in a Startup Community?",
+
+  options: [
+    "Automatic profitability",
+    "Knowledge Sharing",
+    "Guaranteed investment",
+    "Elimination of competition"
+  ],
+
+  answer: 1,
+
+  reason: "Knowledge Sharing is a benefit of startup communities, which foster learning and knowledge exchange and enable members to gain insights, advice and best practices from experienced peers."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_09",
+
+  case_chapter: "chapter9",
+
+  question: "Which activity should a founder undertake before joining a Startup Community to understand terms such as seed round, Series A, SaaS, MVP and pivot?",
+
+  options: [
+    "Build a Personal Brand",
+    "Research Industry Trends",
+    "Prepare Your Elevator Pitch",
+    "Familiarize Yourself with Startup Jargon"
+  ],
+
+  answer: 3,
+
+  reason: "Familiarize Yourself with Startup Jargon involves learning common startup terminology and industry-specific jargon, including terms related to funding, business models and growth strategies."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_10",
+
+  case_chapter: "chapter9",
+
+  question: "Which exit strategy involves a larger company purchasing a startup, usually for cash, stock, or a combination of both?",
+
+  options: [
+    "Management Buyout",
+    "Secondary Sale",
+    "Acquisition",
+    "Liquidation"
+  ],
+
+  answer: 2,
+
+  reason: "An Acquisition occurs when a larger company purchases a startup, usually for a combination of cash, stock, or both."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_11",
+
+  case_chapter: "chapter9",
+
+  question: "Which exit strategy involves offering shares of a startup's stock to the public for the first time on a stock exchange?",
+
+  options: [
+    "Merger",
+    "Initial Public Offering (IPO)",
+    "Management Buyout (MBO)",
+    "Secondary Sale"
+  ],
+
+  answer: 1,
+
+  reason: "An Initial Public Offering (IPO) involves offering shares of a startup's stock to the public for the first time on a stock exchange."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_12",
+
+  case_chapter: "chapter9",
+
+  question: "Which exit strategy involves the existing management team acquiring a controlling stake in the company from its current owners?",
+
+  options: [
+    "Management Buyout (MBO)",
+    "Acquisition",
+    "Merger",
+    "Liquidation"
+  ],
+
+  answer: 0,
+
+  reason: "In a Management Buyout (MBO), the existing management team acquires a controlling stake in the company from its current owners, such as venture capitalists or angel investors."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_13",
+
+  case_chapter: "chapter9",
+
+  question: "Which startup is described in the chapter as a fintech company operating a members-only platform offering rewards and benefits for credit card payments?",
+
+  options: [
+    "Lenskart",
+    "Physics Wallah",
+    "CRED",
+    "Paper Boat"
+  ],
+
+  answer: 2,
+
+  reason: "CRED is described as a fintech company that operates a members-only platform offering rewards and benefits for credit card payments."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_14",
+
+  case_chapter: "chapter9",
+
+  question: "Which company is described as using an omnichannel business model that blends online and offline retail channels in the Indian eyewear market?",
+
+  options: [
+    "Lenskart",
+    "Boat",
+    "Chumbak",
+    "iD Fresh Food"
+  ],
+
+  answer: 0,
+
+  reason: "Lenskart operates through an omnichannel business model, blending online and offline retail channels and providing customers with multiple touchpoints for purchasing eyewear."
+},
+
+{
+  difficulty: "Easy",
+
+  case_id: "strt_ch9_15",
+
+  case_chapter: "chapter9",
+
+  question: "Which startup community is described as a global initiative by Google that provides startups with programmes, resources and partnerships?",
+
+  options: [
+    "GrowthMentor",
+    "ProductHunt",
+    "Startup Grind",
+    "Google for Startups"
+  ],
+
+  answer: 3,
+
+  reason: "Google for Startups is described as a global initiative by Google aimed at empowering and supporting startups through various programmes, resources and partnerships."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_16",
+  case_chapter: "chapter9",
+  question: "What does CRED offer to people who make their credit card payments on time?",
+  options: [
+    "Free hotel rooms",
+    "Rewards and benefits",
+    "Business loans",
+    "Insurance policies"
+  ],
+  answer: 1,
+  reason: "CRED offers rewards and benefits to credit card users for making timely bill payments."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_17",
+  case_chapter: "chapter9",
+  question: "Which company became popular by providing free video lectures and study materials to students preparing for competitive exams?",
+  options: [
+    "Physics Wallah",
+    "Lenskart",
+    "CRED",
+    "Boat"
+  ],
+  answer: 0,
+  reason: "Physics Wallah provides free video lectures, tutorials and study materials for students preparing for competitive exams."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_18",
+  case_chapter: "chapter9",
+  question: "Which company uses artificial intelligence to provide personalised fitness and wellness support?",
+  options: [
+    "Paper Boat",
+    "Chumbak",
+    "Ultrahuman",
+    "Wow! Momo"
+  ],
+  answer: 2,
+  reason: "Ultrahuman uses artificial intelligence to provide personalised fitness and wellness content."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_19",
+  case_chapter: "chapter9",
+  question: "Which eyewear company is known for combining online and offline stores?",
+  options: [
+    "Boat",
+    "Lenskart",
+    "Epigamia",
+    "CRED"
+  ],
+  answer: 1,
+  reason: "Lenskart follows an online and offline retail model, giving customers multiple ways to purchase eyewear."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_20",
+  case_chapter: "chapter9",
+  question: "Which company is known for affordable earphones, headphones and speakers?",
+  options: [
+    "Boat",
+    "Paper Boat",
+    "iD Fresh Food",
+    "Physics Wallah"
+  ],
+  answer: 0,
+  reason: "Boat is a consumer electronics brand known for audio products such as earphones, headphones and speakers."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_21",
+  case_chapter: "chapter9",
+  question: "Which company is especially known for its idli and dosa batter?",
+  options: [
+    "Chumbak",
+    "Epigamia",
+    "iD Fresh Food",
+    "Lenskart"
+  ],
+  answer: 2,
+  reason: "iD Fresh Food is known for fresh ready-to-cook products, particularly its idli and dosa batter."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_22",
+  case_chapter: "chapter9",
+  question: "Which company is known for products with quirky designs inspired by Indian culture and heritage?",
+  options: [
+    "Chumbak",
+    "CRED",
+    "Boat",
+    "Ultrahuman"
+  ],
+  answer: 0,
+  reason: "Chumbak has a distinctive and quirky brand identity inspired by Indian culture and heritage."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_23",
+  case_chapter: "chapter9",
+  question: "Which company expanded its business through a franchise model?",
+  options: [
+    "Paper Boat",
+    "Wow! Momo",
+    "Physics Wallah",
+    "CRED"
+  ],
+  answer: 1,
+  reason: "Wow! Momo operates through a franchise model that helps the brand expand into new cities and markets."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_24",
+  case_chapter: "chapter9",
+  question: "Which brand uses childhood memories and nostalgia in its marketing?",
+  options: [
+    "Lenskart",
+    "Boat",
+    "Paper Boat",
+    "Ultrahuman"
+  ],
+  answer: 2,
+  reason: "Paper Boat uses emotional branding that focuses on childhood memories, traditional Indian culture and nostalgia."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_25",
+  case_chapter: "chapter9",
+  question: "Which source of money involves raising small amounts from many people through online platforms?",
+  options: [
+    "Bank Loans",
+    "Crowdfunding",
+    "Bootstrapping",
+    "Corporate Investments"
+  ],
+  answer: 1,
+  reason: "Crowdfunding involves raising small amounts of money from a large number of individuals through online platforms."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_26",
+  case_chapter: "chapter9",
+  question: "Which option involves getting money from personal savings or from friends and family to start a business?",
+  options: [
+    "Bootstrapping",
+    "Venture Capital",
+    "Crowdfunding",
+    "Bank Loans"
+  ],
+  answer: 0,
+  reason: "Bootstrapping means using personal savings, credit cards, or money from friends and family to finance the startup's early operations."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_27",
+  case_chapter: "chapter9",
+  question: "Which source of funding usually provides larger amounts of money than angel investors?",
+  options: [
+    "Bootstrapping",
+    "Crowdfunding",
+    "Venture Capital",
+    "Friends and Family"
+  ],
+  answer: 2,
+  reason: "Venture capital firms typically provide larger sums of money than angel investors and receive equity in return."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_28",
+  case_chapter: "chapter9",
+  question: "What is one important reason for creating a clear vision for a startup team?",
+  options: [
+    "To avoid hiring employees",
+    "To guide team building and bring people together around a common purpose",
+    "To remove the need for teamwork",
+    "To guarantee profits"
+  ],
+  answer: 1,
+  reason: "A clear vision guides team building and helps align team members and inspire them to work towards a common purpose."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_29",
+  case_chapter: "chapter9",
+  question: "What should a founder do when managing disagreements within a team?",
+  options: [
+    "Ignore the problem",
+    "Avoid communication",
+    "Encourage open discussion and listening",
+    "Remove all team members"
+  ],
+  answer: 2,
+  reason: "The chapter recommends encouraging open dialogue and active listening to address conflicts and resolve differences respectfully."
+},
+{
+  difficulty: "Easy",
+  case_id: "strt_ch9_30",
+  case_chapter: "chapter9",
+  question: "Which exit option allows existing shareholders to sell their shares to another private investor while the startup remains privately owned?",
+  options: [
+    "IPO",
+    "Liquidation",
+    "Merger",
+    "Secondary Sale"
+  ],
+  answer: 3,
+  reason: "A Secondary Sale involves selling shares to another private investor or investment firm, allowing the startup to remain privately held."
+},
+{
+  case_id: "strt_ch9_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>PayWise is a fintech startup operating a members-only platform for credit card users. The startup wants to encourage timely bill payments by offering rewards and benefits. Its founders also focus on providing a seamless and user-friendly experience and have developed partnerships with banks and financial institutions to offer exclusive deals and discounts.</p>
+    <p>To increase visibility, PayWise uses creative marketing campaigns and brand collaborations. The founders believe that a clear value proposition, customer experience, strategic partnerships and innovative marketing can help the startup attract and retain users.</p>
+  `,
+  questions: [
+    {
+      question: "Which factor of PayWise's business strategy is represented by offering rewards and benefits for timely credit card payments?",
+      options: [
+        "Unique Value Proposition",
+        "Distribution Network",
+        "Franchise Model",
+        "Product Portfolio"
+      ],
+      answer: 0,
+      reason: "A Unique Value Proposition provides a compelling benefit to customers. In the chapter, CRED offers rewards and benefits for timely bill payments as its value proposition."
+    },
+    {
+      question: "PayWise wants to provide a seamless and user-friendly platform. Which factor is most directly represented?",
+      options: [
+        "Innovative Marketing",
+        "Focus on Customer Experience",
+        "Strategic Partnerships",
+        "Market Expansion"
+      ],
+      answer: 1,
+      reason: "Focus on Customer Experience involves prioritizing customer experience and satisfaction through a seamless and user-friendly platform."
+    },
+    {
+      question: "PayWise forms partnerships with banks and financial institutions to offer exclusive deals. Which factor is this?",
+      options: [
+        "Unique Value Proposition",
+        "Innovative Marketing",
+        "Strategic Partnerships",
+        "Affordability"
+      ],
+      answer: 2,
+      reason: "Strategic Partnerships with leading banks and financial institutions can help enhance the value proposition and attract a larger user base."
+    },
+    {
+      question: "Which factor is reflected when PayWise uses creative marketing campaigns and brand collaborations to gain visibility?",
+      options: [
+        "Customer Experience",
+        "Strategic Partnerships",
+        "Strong Leadership",
+        "Innovative Marketing"
+      ],
+      answer: 3,
+      reason: "Innovative Marketing involves creative marketing campaigns and brand collaborations that can increase visibility and build brand recognition."
+    },
+    {
+      question: "Which company in the chapter is the example most closely reflected by PayWise?",
+      options: [
+        "CRED",
+        "Lenskart",
+        "Boat",
+        "Chumbak"
+      ],
+      answer: 0,
+      reason: "CRED is described as a fintech company operating a members-only platform offering rewards and benefits for credit card payments."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>StudySpark is an online education platform providing video lectures and study materials to students preparing for competitive examinations. The founders want to make difficult concepts easier to understand and use technology and multimedia resources to make learning more interactive.</p>
+    <p>The platform also provides its educational content free of cost or at a nominal cost so that students from diverse backgrounds can access it. The founders believe that quality content, innovative teaching methods, accessibility and affordability are important to the platform's growth.</p>
+  `,
+  questions: [
+    {
+      question: "Which factor is represented by StudySpark providing high-quality and comprehensive educational content that is easy to understand?",
+      options: [
+        "Quality Content",
+        "Strategic Partnerships",
+        "Market Dominance",
+        "Distribution Network"
+      ],
+      answer: 0,
+      reason: "Quality Content is identified in the chapter as a factor contributing to the success of Physics Wallah, with content that is high-quality, comprehensive and easy to understand."
+    },
+    {
+      question: "Which factor is reflected by StudySpark using technology and multimedia resources to make learning more interactive?",
+      options: [
+        "Affordability",
+        "Innovative Teaching Methods",
+        "Brand Recognition",
+        "Customer Loyalty"
+      ],
+      answer: 1,
+      reason: "Innovative Teaching Methods include the use of animations, real-life examples, problem-solving techniques, technology and multimedia resources."
+    },
+    {
+      question: "StudySpark provides its content free of cost or at a nominal cost. Which factor does this represent?",
+      options: [
+        "Popularity and Reach",
+        "Quality Content",
+        "Accessibility and Affordability",
+        "Strategic Partnerships"
+      ],
+      answer: 2,
+      reason: "Accessibility and Affordability refers to making educational content accessible to students from diverse backgrounds by offering it free or at a nominal cost."
+    },
+    {
+      question: "Which outcome is specifically associated with students attributing their examination success to the guidance and resources provided by the platform?",
+      options: [
+        "Impact on Student Performance",
+        "Market Leadership",
+        "Distribution Network",
+        "Innovative Marketing"
+      ],
+      answer: 0,
+      reason: "Impact on Student Performance refers to the positive effect of the platform's guidance and resources, with students attributing their success to the support provided."
+    },
+    {
+      question: "Which business is the closest example in the chapter to StudySpark?",
+      options: [
+        "CRED",
+        "Physics Wallah",
+        "Paper Boat",
+        "Wow! Momo"
+      ],
+      answer: 1,
+      reason: "Physics Wallah is an online platform offering video lectures and study materials primarily to students preparing for competitive examinations."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>VisionKart is an eyewear business that sells products through its website, mobile application and physical stores. It offers prescription glasses, sunglasses and contact lenses. To improve customer convenience, the business also provides services such as home eye check-ups and virtual try-on features.</p>
+    <p>VisionKart continues to introduce new products and technologies and has formed partnerships with international eyewear brands and manufacturers. The founders believe that a combination of online and offline channels, customer convenience, product innovation and strategic partnerships will support further expansion.</p>
+  `,
+  questions: [
+    {
+      question: "Which business model is represented by VisionKart operating through online and offline retail channels?",
+      options: [
+        "Franchise Model",
+        "Omnichannel Business Model",
+        "Subscription Model",
+        "Wholesale-only Model"
+      ],
+      answer: 1,
+      reason: "Lenskart operates through an omnichannel business model that blends online and offline retail channels."
+    },
+    {
+      question: "Which factor is reflected by VisionKart offering home eye check-ups and virtual try-on features?",
+      options: [
+        "Customer-Centric Approach",
+        "Market Dominance",
+        "Expansion and Growth",
+        "Brand Recognition"
+      ],
+      answer: 0,
+      reason: "A Customer-Centric Approach prioritizes customer satisfaction and convenience through services such as home eye check-ups and virtual try-on features."
+    },
+    {
+      question: "VisionKart continuously introduces new products and technologies. Which factor does this represent?",
+      options: [
+        "Product Innovation",
+        "Strategic Partnerships",
+        "Affordability",
+        "Customer Satisfaction"
+      ],
+      answer: 0,
+      reason: "Product Innovation involves continuously introducing innovative products and services to respond to changing consumer preferences and needs."
+    },
+    {
+      question: "VisionKart partners with international eyewear brands and manufacturers. Which factor is represented?",
+      options: [
+        "Market Dominance",
+        "Strategic Partnerships",
+        "Innovative Features",
+        "Omnichannel Presence"
+      ],
+      answer: 1,
+      reason: "Strategic Partnerships with international eyewear brands and manufacturers can enable a business to offer a diverse range of products and strengthen its market position."
+    },
+    {
+      question: "Which company in the chapter is the closest example to VisionKart?",
+      options: [
+        "Lenskart",
+        "Epigamia",
+        "Boat",
+        "CRED"
+      ],
+      answer: 0,
+      reason: "Lenskart is described as an eyewear brand operating through an omnichannel business model with online and offline retail channels."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>TechBuild is expanding its startup team. The founder first communicates the company's vision so that team members understand the common purpose. While hiring, the founder looks for people whose values, work ethic and vision match those of the company. The founder also wants people from different backgrounds and experiences to contribute different perspectives.</p>
+    <p>Within the team, the founder encourages open communication, delegates responsibilities and gives employees autonomy to make decisions. Training and mentorship opportunities are also provided, while disagreements are addressed through open dialogue and active listening.</p>
+  `,
+  questions: [
+    {
+      question: "Which team-building step is represented by TechBuild communicating its vision to align team members towards a common purpose?",
+      options: [
+        "Defining Your Vision",
+        "Hiring for Culture Fit",
+        "Empowering and Delegating",
+        "Managing Conflict and Resolving Differences"
+      ],
+      answer: 0,
+      reason: "Defining Your Vision involves articulating the startup's vision clearly and communicating it effectively to align team members towards a common purpose."
+    },
+    {
+      question: "TechBuild selects candidates whose values, work ethic and vision match the company. Which approach is being followed?",
+      options: [
+        "Diversity and Inclusion",
+        "Hiring for Culture Fit",
+        "Continuous Learning and Development",
+        "Building Trust and Transparency"
+      ],
+      answer: 1,
+      reason: "Hiring for Culture Fit involves selecting candidates who resonate with the company's values, work ethic and vision."
+    },
+    {
+      question: "Why does TechBuild encourage people from different backgrounds and experiences to contribute different perspectives?",
+      options: [
+        "To reduce communication",
+        "To eliminate decision-making",
+        "To foster creativity, innovation and adaptability",
+        "To prevent collaboration"
+      ],
+      answer: 2,
+      reason: "Diversity and Inclusion can foster creativity, innovation and adaptability by bringing diverse perspectives and experiences into problem-solving and decision-making."
+    },
+    {
+      question: "Which practice is represented by delegating responsibilities and giving employees autonomy to make decisions?",
+      options: [
+        "Building Trust and Transparency",
+        "Continuous Learning and Development",
+        "Empowering and Delegating",
+        "Hiring for Culture Fit"
+      ],
+      answer: 2,
+      reason: "Empowering and Delegating involves delegating responsibilities, giving team members autonomy to make decisions and encouraging ownership and accountability."
+    },
+    {
+      question: "Which approach is most relevant when TechBuild uses open dialogue and active listening to resolve disagreements?",
+      options: [
+        "Managing Conflict and Resolving Differences",
+        "Defining Your Vision",
+        "Diversity and Inclusion",
+        "Hiring for Culture Fit"
+      ],
+      answer: 0,
+      reason: "Managing Conflict and Resolving Differences involves encouraging open dialogue and active listening to address conflicts and resolve differences respectfully."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>BrandRise is preparing its founder to represent the startup in media interviews, presentations and industry events. The founder is working on verbal and non-verbal communication skills and is also developing deeper expertise in the startup's industry.</p>
+    <p>The founder is creating a personal brand that is aligned with the startup's values and mission. The PR agency supporting BrandRise is also planning media outreach, strategic storytelling and thought leadership activities to increase awareness, credibility and trust among stakeholders.</p>
+  `,
+  questions: [
+    {
+      question: "Why is BrandRise's founder developing effective communication skills?",
+      options: [
+        "To articulate the startup's vision and engage stakeholders",
+        "To eliminate the need for publicity",
+        "To avoid interaction with investors",
+        "To replace the startup's products"
+      ],
+      answer: 0,
+      reason: "Founders need effective communication skills to articulate their vision, engage stakeholders and inspire confidence in their startup."
+    },
+    {
+      question: "Which aspect of Founder's Grooming is represented by developing deeper expertise in the startup's industry?",
+      options: [
+        "Building industry knowledge and credibility",
+        "Reducing media visibility",
+        "Avoiding stakeholder interaction",
+        "Eliminating networking"
+      ],
+      answer: 0,
+      reason: "Founder's Grooming includes building expertise and credibility in the relevant domain, helping founders lead effectively and gain trust from investors, customers and partners."
+    },
+    {
+      question: "The founder creates a personal brand aligned with the startup's values and mission. Which PR activity is this?",
+      options: [
+        "Managing Reputation",
+        "Driving Growth and Visibility",
+        "Building Personal Brand",
+        "Consumer Outreach"
+      ],
+      answer: 2,
+      reason: "Building Personal Brand involves crafting a compelling personal brand that aligns with the startup's mission and values."
+    },
+    {
+      question: "Which PR activity includes media outreach, strategic storytelling and thought leadership initiatives?",
+      options: [
+        "Public Relations",
+        "Financial Management",
+        "Product Development",
+        "Supply Chain Management"
+      ],
+      answer: 0,
+      reason: "PR encompasses strategies such as proactive media outreach, strategic storytelling, crisis management and thought leadership initiatives."
+    },
+    {
+      question: "What can effective PR help BrandRise generate among key stakeholders?",
+      options: [
+        "Awareness, credibility and trust",
+        "Guaranteed profits",
+        "Automatic funding",
+        "Complete elimination of competition"
+      ],
+      answer: 0,
+      reason: "Effective PR helps position founders and startups favourably, generating awareness, credibility and trust among key stakeholders."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS06",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>ConnectHub is a startup community where entrepreneurs, investors, mentors and industry experts interact. Members attend networking events, workshops and mentorship programmes to exchange knowledge and build relationships. The community provides access to resources and creates a supportive environment for founders.</p>
+    <p>Before joining the community, a new founder decides to learn common startup terminology, research industry trends, improve networking skills, prepare an elevator pitch and develop a personal brand. The founder expects participation in the community to provide useful connections and exposure to new ideas and opportunities.</p>
+  `,
+  questions: [
+    {
+      question: "Which activity allows members of ConnectHub to connect with entrepreneurs, investors, mentors and experts?",
+      options: [
+        "Networking Opportunities",
+        "Liquidation",
+        "Product Development",
+        "Market Withdrawal"
+      ],
+      answer: 0,
+      reason: "Networking Opportunities enable individuals to connect with fellow entrepreneurs, investors, mentors and experts and can open doors to partnerships and collaborations."
+    },
+    {
+      question: "Which benefit of a Startup Community provides funding opportunities, mentorship programmes, coworking spaces and educational workshops?",
+      options: [
+        "Support System",
+        "Access to Resources",
+        "Brand Loyalty",
+        "Market Dominance"
+      ],
+      answer: 1,
+      reason: "Access to Resources includes funding opportunities, mentorship programmes, coworking spaces and educational workshops."
+    },
+    {
+      question: "Which activity should the new founder undertake to understand terms such as seed round, Series A, SaaS, MVP and pivot?",
+      options: [
+        "Research Industry Trends",
+        "Build a Personal Brand",
+        "Familiarize Yourself with Startup Jargon",
+        "Prepare Your Elevator Pitch"
+      ],
+      answer: 2,
+      reason: "Familiarize Yourself with Startup Jargon involves learning common startup terminology and industry-specific jargon, including funding, business model and growth strategy terms."
+    },
+    {
+      question: "Which activity involves learning about current trends, challenges and opportunities within the founder's industry?",
+      options: [
+        "Research Industry Trends",
+        "Develop Networking Skills",
+        "Prepare Your Elevator Pitch",
+        "Build a Personal Brand"
+      ],
+      answer: 0,
+      reason: "Research Industry Trends involves staying updated on current trends, challenges and opportunities within the relevant industry or areas of interest."
+    },
+    {
+      question: "Which activity involves creating a concise and compelling explanation of who the founder is, what they do and what they want to achieve?",
+      options: [
+        "Build a Personal Brand",
+        "Prepare Your Elevator Pitch",
+        "Research Industry Trends",
+        "Familiarize Yourself with Startup Jargon"
+      ],
+      answer: 1,
+      reason: "Preparing Your Elevator Pitch involves crafting a concise and compelling pitch that summarizes who the founder is, what they do and what they are looking to achieve."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS07",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>GrowthCore is a startup backed by investors who are considering different ways to exit their investment and realize returns. The startup is evaluating several possibilities. One option involves a larger company purchasing the startup. Another involves offering shares to the public for the first time on a stock exchange.</p>
+    <p>The investors also review other possibilities. In one, two companies combine to form a single entity. In another, the existing management team acquires a controlling stake from the current owners. They also consider selling shares to another private investor while allowing the startup to remain privately held.</p>
+  `,
+  questions: [
+    {
+      question: "Which exit strategy involves a larger company purchasing GrowthCore?",
+      options: [
+        "Acquisition",
+        "Merger",
+        "Management Buyout",
+        "Secondary Sale"
+      ],
+      answer: 0,
+      reason: "An Acquisition occurs when a larger company purchases a startup, usually for cash, stock, or a combination of both."
+    },
+    {
+      question: "Which exit strategy involves offering GrowthCore's shares to the public for the first time on a stock exchange?",
+      options: [
+        "Liquidation",
+        "Initial Public Offering (IPO)",
+        "Secondary Sale",
+        "Management Buyout"
+      ],
+      answer: 1,
+      reason: "An Initial Public Offering (IPO) involves offering shares of a startup's stock to the public for the first time on a stock exchange."
+    },
+    {
+      question: "Which exit strategy involves two companies combining to form a single entity?",
+      options: [
+        "Acquisition",
+        "Secondary Sale",
+        "Merger",
+        "Liquidation"
+      ],
+      answer: 2,
+      reason: "A Merger occurs when two companies combine to form a single entity."
+    },
+    {
+      question: "Which exit strategy involves the existing management team acquiring a controlling stake from the current owners?",
+      options: [
+        "Initial Public Offering",
+        "Acquisition",
+        "Secondary Sale",
+        "Management Buyout (MBO)"
+      ],
+      answer: 3,
+      reason: "In a Management Buyout (MBO), the existing management team acquires a controlling stake in the company from its current owners."
+    },
+    {
+      question: "Which exit strategy allows existing shareholders to sell shares to another private investor while the startup remains privately held?",
+      options: [
+        "Secondary Sale",
+        "Merger",
+        "Initial Public Offering",
+        "Liquidation"
+      ],
+      answer: 0,
+      reason: "A Secondary Sale involves selling shares to another private investor or investment firm and allows the startup to remain privately held."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS08",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>EcoStart is developing a project focused on sustainability and is looking for funding without giving up ownership in the startup. The founders learn that government and non-profit organisations may provide financial support to startups working in areas such as innovation, sustainability and social impact.</p>
+    <p>EcoStart also studies other funding options. The founders understand that angel investors may provide capital in exchange for ownership equity or convertible debt, while venture capital firms generally provide larger amounts of capital in exchange for equity ownership.</p>
+  `,
+  questions: [
+    {
+      question: "Which source of funds would be most relevant to EcoStart if the founders want funding that typically does not require giving up equity?",
+      options: [
+        "Venture Capital",
+        "Angel Investors",
+        "Government Grants and Subsidies",
+        "Corporate Investments"
+      ],
+      answer: 2,
+      reason: "Government grants and subsidies are often non-dilutive and can provide startups with funding without requiring them to give up equity."
+    },
+    {
+      question: "Which funding agent provides capital in exchange for ownership equity or convertible debt and may also provide expertise and mentorship?",
+      options: [
+        "Angel Investors",
+        "Bank Loans",
+        "Crowdfunding Platforms",
+        "Government Agencies"
+      ],
+      answer: 0,
+      reason: "Angel Investors are high-net-worth individuals who provide capital in exchange for ownership equity or convertible debt and often offer expertise and mentorship."
+    },
+    {
+      question: "Which funding source generally involves investment firms providing larger sums of money in exchange for equity ownership?",
+      options: [
+        "Bootstrapping",
+        "Venture Capital",
+        "Crowdfunding",
+        "Bank Loans"
+      ],
+      answer: 1,
+      reason: "Venture Capital involves investment firms providing capital to startups in exchange for equity ownership, typically in larger amounts than angel investors."
+    },
+    {
+      question: "Which statement about Government Grants and Subsidies is correct according to the chapter?",
+      options: [
+        "They are always required to be repaid",
+        "They are available only to listed companies",
+        "They can support startups working on government-priority areas such as innovation and sustainability",
+        "They always require transfer of ownership"
+      ],
+      answer: 2,
+      reason: "Government grants and subsidies can support startups working on projects aligned with government priorities such as innovation, sustainability or social impact."
+    },
+    {
+      question: "Which funding option involves using personal savings, credit cards, or money from friends and family?",
+      options: [
+        "Crowdfunding",
+        "Venture Capital",
+        "Bootstrapping",
+        "Corporate Investments"
+      ],
+      answer: 2,
+      reason: "Bootstrapping involves using personal savings, credit cards, or funds from friends and family to finance a startup's initial operations."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS09",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>InnoTeam is a growing startup that wants to build a strong and cohesive team. The founder first explains the startup's vision clearly and looks for candidates whose values, work ethic and vision are compatible with the company. The founder also wants team members with different perspectives and experiences.</p>
+    <p>After hiring, the founder encourages employees to share ideas and feedback openly, delegates responsibilities and gives team members autonomy to make decisions. The startup also provides training and mentorship opportunities to help employees develop their skills.</p>
+  `,
+  questions: [
+    {
+      question: "Which team-building step is represented by the founder explaining the startup's vision clearly to team members?",
+      options: [
+        "Defining Your Vision",
+        "Hiring for Culture Fit",
+        "Empowering and Delegating",
+        "Continuous Learning and Development"
+      ],
+      answer: 0,
+      reason: "Defining Your Vision involves articulating the startup's vision clearly and communicating it effectively to align team members towards a common purpose."
+    },
+    {
+      question: "The founder looks for candidates whose values, work ethic and vision are compatible with the company. Which approach is being followed?",
+      options: [
+        "Diversity and Inclusion",
+        "Hiring for Culture Fit",
+        "Managing Conflict and Resolving Differences",
+        "Building Trust and Transparency"
+      ],
+      answer: 1,
+      reason: "Hiring for Culture Fit involves looking for candidates who resonate with the company's values, work ethic and vision."
+    },
+    {
+      question: "Why does InnoTeam want members with different perspectives and experiences?",
+      options: [
+        "To reduce teamwork",
+        "To avoid innovation",
+        "To foster creativity, innovation and adaptability",
+        "To eliminate decision-making"
+      ],
+      answer: 2,
+      reason: "Diversity and Inclusion can foster creativity, innovation and adaptability by bringing diverse perspectives and experiences into problem-solving and decision-making."
+    },
+    {
+      question: "Which practice is represented by delegating responsibilities and giving team members autonomy to make decisions?",
+      options: [
+        "Continuous Learning and Development",
+        "Building Trust and Transparency",
+        "Empowering and Delegating",
+        "Hiring for Culture Fit"
+      ],
+      answer: 2,
+      reason: "Empowering and Delegating involves delegating responsibilities, giving team members autonomy to make decisions and encouraging ownership and accountability."
+    },
+    {
+      question: "Which activity is represented by providing training and mentorship opportunities to employees?",
+      options: [
+        "Continuous Learning and Development",
+        "Managing Conflict and Resolving Differences",
+        "Defining Your Vision",
+        "Diversity and Inclusion"
+      ],
+      answer: 0,
+      reason: "Continuous Learning and Development includes providing opportunities for training, mentorship and career advancement to nurture talent within the organisation."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS10",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>FoodConnect, a startup, is facing negative publicity after a customer-related issue receives attention in the media. The founders engage a PR agency to help manage the situation. The agency advises the founders to maintain open communication, be transparent, address concerns promptly and communicate clearly with stakeholders.</p>
+    <p>The PR agency also helps the startup manage its reputation and maintain trust while communicating with the media and other stakeholders. The founders understand that PR has an important role in managing reputational risks and crises.</p>
+  `,
+  questions: [
+    {
+      question: "Which PR activity is most directly concerned with protecting FoodConnect's reputation during negative publicity?",
+      options: [
+        "Managing Reputation",
+        "Building Personal Brand",
+        "Driving Growth and Visibility",
+        "Product Development"
+      ],
+      answer: 0,
+      reason: "Managing Reputation involves safeguarding the reputation of founders and startups, particularly during times of crisis or negative publicity."
+    },
+    {
+      question: "Which approach does the PR agency recommend when FoodConnect is addressing the crisis?",
+      options: [
+        "Avoiding all communication",
+        "Maintaining open communication and being transparent",
+        "Ignoring stakeholder concerns",
+        "Stopping all public activities permanently"
+      ],
+      answer: 1,
+      reason: "The chapter states that founders can mitigate reputational damage and preserve trust by maintaining open lines of communication, being transparent and addressing concerns promptly and authentically."
+    },
+    {
+      question: "Which crisis-management focus area involves maintaining communication with people affected by the issue and other interested parties?",
+      options: [
+        "Consumer Outreach",
+        "Product Pricing",
+        "Market Expansion",
+        "Financial Forecasting"
+      ],
+      answer: 0,
+      reason: "Consumer Outreach is one of the core focus areas identified for PR agencies in crisis management."
+    },
+    {
+      question: "Which crisis-management focus area relates specifically to communicating with journalists and media organisations?",
+      options: [
+        "Stakeholder Engagement",
+        "Reputation Management",
+        "Media Relations",
+        "Consumer Outreach"
+      ],
+      answer: 2,
+      reason: "Media Relations is one of the core focus areas of PR agencies in crisis management."
+    },
+    {
+      question: "What can effective crisis management by a PR agency help FoodConnect preserve?",
+      options: [
+        "Customer trust and reputation",
+        "Guaranteed profits",
+        "Automatic market leadership",
+        "Permanent immunity from future crises"
+      ],
+      answer: 0,
+      reason: "Effective PR during a crisis can help mitigate damage to reputation, address concerns transparently and maintain trust with stakeholders."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS11",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>ConnectStart is a startup community where entrepreneurs, investors, mentors and industry experts interact. Founders participate in community events, workshops and mentorship programmes to learn from experienced members and build relationships with potential collaborators, investors and customers.</p>
+    <p>A new founder joining ConnectStart wants to improve networking skills, learn common startup terms, understand current industry trends and prepare a concise elevator pitch before participating actively in the community.</p>
+  `,
+  questions: [
+    {
+      question: "Which benefit of a Startup Community allows founders to connect with entrepreneurs, investors, mentors and experts?",
+      options: [
+        "Networking Opportunities",
+        "Liquidation",
+        "Product Replacement",
+        "Market Withdrawal"
+      ],
+      answer: 0,
+      reason: "Networking Opportunities allow individuals to connect with fellow entrepreneurs, investors, mentors and experts and can open doors to partnerships and collaborations."
+    },
+    {
+      question: "Which benefit allows members to gain insights, advice and best practices from experienced peers?",
+      options: [
+        "Support System",
+        "Knowledge Sharing",
+        "Visibility and Exposure",
+        "Market Expansion"
+      ],
+      answer: 1,
+      reason: "Knowledge Sharing enables members to gain insights, advice and best practices from experienced peers."
+    },
+    {
+      question: "Which prerequisite should the new founder follow to understand terms such as seed round, Series A, SaaS, MVP and pivot?",
+      options: [
+        "Build a Personal Brand",
+        "Develop Networking Skills",
+        "Familiarize Yourself with Startup Jargon",
+        "Research Industry Trends"
+      ],
+      answer: 2,
+      reason: "Familiarize Yourself with Startup Jargon involves learning common startup terminology and industry-specific jargon related to funding, business models and growth strategies."
+    },
+    {
+      question: "Which activity helps the new founder stay updated on current trends, challenges and opportunities in the industry?",
+      options: [
+        "Prepare Your Elevator Pitch",
+        "Research Industry Trends",
+        "Build a Personal Brand",
+        "Develop Networking Skills"
+      ],
+      answer: 1,
+      reason: "Research Industry Trends involves staying updated on current trends, challenges and opportunities within the relevant industry or areas of interest."
+    },
+    {
+      question: "Which activity involves preparing a concise explanation of who the founder is, what they do and what they want to achieve?",
+      options: [
+        "Develop Networking Skills",
+        "Research Industry Trends",
+        "Build a Personal Brand",
+        "Prepare Your Elevator Pitch"
+      ],
+      answer: 3,
+      reason: "Prepare Your Elevator Pitch involves crafting a concise and compelling pitch that summarises who the founder is, what they do and what they are looking to achieve."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS12",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>InnovatorHub wants to provide a strong support system for startups. It plans to offer physical spaces where entrepreneurs can work, meet and collaborate. It also wants to organise events that bring together entrepreneurs, investors and industry experts.</p>
+    <p>The organisation is studying Google for Startups as an example. It notes that Google for Startups has Campus locations that provide coworking areas and event spaces and that startups can access mentorship, workshops and networking opportunities through its programmes and events.</p>
+  `,
+  questions: [
+    {
+      question: "Which startup community mentioned in the chapter has Campus locations that serve as hubs for startup communities?",
+      options: [
+        "ProductHunt",
+        "Google for Startups",
+        "GrowthMentor",
+        "SaaStr"
+      ],
+      answer: 1,
+      reason: "Google for Startups has a network of Campus locations that serve as hubs for startup communities around the world."
+    },
+    {
+      question: "What facilities are available at Google for Startups Campus locations according to the chapter?",
+      options: [
+        "Only residential facilities",
+        "Coworking areas and event spaces",
+        "Only bank branches",
+        "Only manufacturing plants"
+      ],
+      answer: 1,
+      reason: "Google for Startups Campus locations offer coworking areas, event spaces and amenities designed to facilitate collaboration, networking and learning."
+    },
+    {
+      question: "Which of the following can startups access through Google for Startups Campus programmes and events?",
+      options: [
+        "Mentorship, workshops and networking opportunities",
+        "Only bank loans",
+        "Only legal proceedings",
+        "Only product warranties"
+      ],
+      answer: 0,
+      reason: "Through Campus programmes and events, startups can access mentorship, workshops and networking opportunities to accelerate their growth and scale their businesses."
+    },
+    {
+      question: "Besides physical spaces, what does Google for Startups also provide?",
+      options: [
+        "Only retail stores",
+        "Only investment guarantees",
+        "Online resources and programmes",
+        "Only manufacturing equipment"
+      ],
+      answer: 2,
+      reason: "Google for Startups also offers online resources and programmes, including educational content, tools and guides on product development, marketing and fundraising."
+    },
+    {
+      question: "What is a key objective of Google for Startups described in the chapter?",
+      options: [
+        "Fostering innovation, entrepreneurship and economic growth",
+        "Eliminating all startup competition",
+        "Replacing all incubators",
+        "Restricting access to startup communities"
+      ],
+      answer: 0,
+      reason: "Google for Startups is committed to fostering innovation, entrepreneurship and economic growth by providing startups with tools, knowledge and connections."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS13",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>ScaleUp wants to understand how different exit strategies can provide returns to founders and investors. The founders study several alternatives. In one arrangement, two companies combine to form a single entity. In another, the startup's existing management team acquires a controlling stake from the current owners.</p>
+    <p>The founders also study a situation where existing shareholders sell their shares to another private investor while the startup continues to remain privately held. They compare these options with an IPO and an acquisition.</p>
+  `,
+  questions: [
+    {
+      question: "Which exit strategy involves two companies combining to form a single entity?",
+      options: [
+        "Acquisition",
+        "Merger",
+        "Secondary Sale",
+        "Liquidation"
+      ],
+      answer: 1,
+      reason: "A Merger occurs when two companies combine to form a single entity."
+    },
+    {
+      question: "Which exit strategy involves the existing management team acquiring a controlling stake from current owners?",
+      options: [
+        "Management Buyout (MBO)",
+        "Initial Public Offering (IPO)",
+        "Acquisition",
+        "Merger"
+      ],
+      answer: 0,
+      reason: "In a Management Buyout (MBO), the existing management team acquires a controlling stake in the company from its current owners."
+    },
+    {
+      question: "Which exit strategy allows existing shareholders to sell their shares to another private investor while the startup remains privately held?",
+      options: [
+        "Merger",
+        "Acquisition",
+        "Secondary Sale",
+        "Liquidation"
+      ],
+      answer: 2,
+      reason: "A Secondary Sale involves selling shares to another private investor or investment firm and allows the startup to remain privately held."
+    },
+    {
+      question: "Which exit strategy involves a larger company purchasing a startup?",
+      options: [
+        "Initial Public Offering",
+        "Management Buyout",
+        "Secondary Sale",
+        "Acquisition"
+      ],
+      answer: 3,
+      reason: "An Acquisition occurs when a larger company purchases a startup, usually for cash, stock, or a combination of both."
+    },
+    {
+      question: "Which exit strategy involves offering a startup's shares to the public for the first time on a stock exchange?",
+      options: [
+        "Initial Public Offering (IPO)",
+        "Merger",
+        "Management Buyout",
+        "Secondary Sale"
+      ],
+      answer: 0,
+      reason: "An Initial Public Offering (IPO) involves offering shares of a startup's stock to the public for the first time on a stock exchange."
+    }
+  ]
+},
+{
+  case_id: "strt_ch9_CS14",
+  difficulty: "Easy",
+  chapter: "Chapter9",
+  caseText: `
+    <p>TechCircle is a startup community that helps founders connect with investors, mentors and industry professionals. A founder joins the community to gain guidance, discover new opportunities and improve the startup's visibility.</p>
+    <p>During the founder's participation, the startup receives useful feedback on its ideas, gains exposure to potential customers and investors, and learns about developments in its industry. The founder also notices that members collaborate by sharing resources and working together on projects.</p>
+  `,
+  questions: [
+    {
+      question: "Which startup community benefit is represented by receiving useful feedback on ideas from experienced members?",
+      options: [
+        "Knowledge Sharing",
+        "Liquidation",
+        "Customer Replacement",
+        "Market Withdrawal"
+      ],
+      answer: 0,
+      reason: "Startup communities foster knowledge sharing and allow entrepreneurs to gain valuable feedback from the collective knowledge and experience of the community."
+    },
+    {
+      question: "Which benefit is represented by TechCircle helping the startup gain exposure to potential customers and investors?",
+      options: [
+        "Support System",
+        "Visibility and Exposure",
+        "Knowledge Sharing",
+        "Continuous Learning"
+      ],
+      answer: 1,
+      reason: "Visibility and Exposure allows participants to showcase their brand, attract potential customers and investors, and build credibility in their industry."
+    },
+    {
+      question: "Which benefit is represented by members sharing resources and working together on projects?",
+      options: [
+        "Opportunities for Collaboration",
+        "Market Dominance",
+        "Investor Exit",
+        "Brand Protection"
+      ],
+      answer: 0,
+      reason: "Opportunities for Collaboration enable members to work on projects, share resources and leverage each other's strengths to drive innovation and achieve greater impact."
+    },
+    {
+      question: "Which benefit helps TechCircle members remain aware of new developments and opportunities in their industry?",
+      options: [
+        "Customer Loyalty",
+        "Access to Capital only",
+        "Staying Informed",
+        "Company Liquidation"
+      ],
+      answer: 2,
+      reason: "Staying Informed keeps individuals updated about the latest trends, developments and opportunities in their industry and helps them adapt their strategies accordingly."
+    },
+    {
+      question: "What type of people commonly come together in a startup community according to the chapter?",
+      options: [
+        "Only founders",
+        "Entrepreneurs, investors, mentors and industry experts",
+        "Only government officials",
+        "Only customers"
+      ],
+      answer: 1,
+      reason: "Startup community building brings together entrepreneurs, investors, mentors and industry experts to support and nurture early-stage ventures."
+    }
+  ]
 }
 
 
