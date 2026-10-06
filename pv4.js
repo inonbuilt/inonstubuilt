@@ -61,13 +61,27 @@ function getPlanForSelectedDate() {
 
     if (pastDate) {
         let inheritedPlan = JSON.parse(JSON.stringify(allData[pastDate]));
-        inheritedPlan.forEach(p => p.actual = "0h");
+        inheritedPlan.forEach(p => {
+            p.actual = "0h";
+            p.timerState = false;
+            p.timerStart = null;
+            p.accumulatedMs = 0;
+        });
         return inheritedPlan;
     }
 
     // Default start uses the first subject of whatever their current level is
     const startId = CA_SUBJECTS[currentLevel][0].id;
-    return [{ id: startId, startTime: "06:00", endTime: "08:00", estimated: "2.0h", actual: "0h" }];
+    return [{ 
+        id: startId, 
+        startTime: "06:00", 
+        endTime: "08:00", 
+        estimated: "2.0h", 
+        actual: "0h",
+        timerState: false,
+        timerStart: null,
+        accumulatedMs: 0
+    }];
 }
 
 function savePlanForSelectedDate(plan) {
@@ -214,7 +228,10 @@ document.querySelector(".add-row-btn").addEventListener("click", () => {
         startTime: "09:00", 
         endTime: "11:00", 
         estimated: "2.0h", 
-        actual: "0h" 
+        actual: "0h",
+        timerState: false,
+        timerStart: null,
+        accumulatedMs: 0 
     });
     savePlanForSelectedDate(data);
     renderTable();
@@ -252,7 +269,15 @@ function renderTable() {
                 </select>
             </td>
             <td><input class="time-input" value="${item.estimated}" oninput="updateField(${index}, 'estimated', this.value)" readonly style="color:#94a3b8; cursor:not-allowed;"></td>
-            <td><input class="time-input" value="${item.actual}" oninput="updateField(${index}, 'actual', this.value)"></td>
+            <td>
+                <div class="actual-flex">
+                    <button class="timer-btn ${item.timerState ? 'timer-btn-pause' : 'timer-btn-play'}" onclick="toggleTimer(${index})" title="${item.timerState ? 'Pause Timer' : 'Start Timer'}">
+                        ${item.timerState ? '⏸' : '▶'}
+                    </button>
+                    <input class="time-input" value="${item.actual}" oninput="updateField(${index}, 'actual', this.value)" style="width: 50px; display: ${item.timerState ? 'none' : 'block'};">
+                    <span id="live-timer-${index}" class="live-timer-text" style="display: ${item.timerState ? 'inline' : 'none'};">00:00:00</span>
+                </div>
+            </td>
             <td><span class="variance-cell" style="font-family:'Roboto Mono', monospace; font-weight:700;">0h</span></td>
             <td><button class="delete-btn" onclick="removeRow(${index})" title="Delete Row">×</button></td>
         `;
@@ -428,3 +453,62 @@ document.addEventListener("DOMContentLoaded", () => {
     initTimeline();
     selectDate(toYYYYMMDD(new Date())); 
 });
+
+// --- 7. TIMER LOGIC ---
+window.toggleTimer = (index) => {
+    const data = getPlanForSelectedDate();
+    const item = data[index];
+
+    if (item.timerState) {
+        // PAUSE CURRENT TIMER
+        const elapsed = Date.now() - (item.timerStart || Date.now());
+        item.accumulatedMs = (item.accumulatedMs || 0) + elapsed;
+        item.timerState = false;
+
+        const hours = item.accumulatedMs / (1000 * 60 * 60);
+        item.actual = hours.toFixed(1) + "h";
+    } else {
+        // AUTO-PAUSE ANY OTHER RUNNING TIMERS FIRST
+        data.forEach((otherItem, i) => {
+            if (i !== index && otherItem.timerState) {
+                const elapsed = Date.now() - (otherItem.timerStart || Date.now());
+                otherItem.accumulatedMs = (otherItem.accumulatedMs || 0) + elapsed;
+                otherItem.timerState = false;
+                
+                const hours = otherItem.accumulatedMs / (1000 * 60 * 60);
+                otherItem.actual = hours.toFixed(1) + "h";
+            }
+        });
+
+        // START THIS TIMER
+        item.timerState = true;
+        item.timerStart = Date.now();
+        
+        const manualHours = parseHours(item.actual);
+        item.accumulatedMs = manualHours * (1000 * 60 * 60);
+    }
+
+    savePlanForSelectedDate(data);
+    renderTable(); // Re-renders UI and instantly triggers calculateMath() for variance
+};
+
+// Update live running timers every 1 second (Formatted as HHh MMm)
+setInterval(() => {
+    const data = getPlanForSelectedDate();
+    
+    data.forEach((item, index) => {
+        if (item.timerState) {
+            const elapsed = Date.now() - (item.timerStart || Date.now());
+            const totalMs = (item.accumulatedMs || 0) + elapsed;
+            
+            const totalSec = Math.floor(totalMs / 1000);
+            const h = Math.floor(totalSec / 3600);
+            const m = Math.floor((totalSec % 3600) / 60);
+            
+            const timeStr = `${h.toString().padStart(2,'0')}h ${m.toString().padStart(2,'0')}m`;
+            
+            const timerSpan = document.getElementById(`live-timer-${index}`);
+            if (timerSpan) timerSpan.innerText = timeStr;
+        }
+    });
+}, 1000);
