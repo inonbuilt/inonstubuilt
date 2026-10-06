@@ -24,12 +24,46 @@ const CA_SUBJECTS = {
     ]
 };
 
-// Controls which level the app is currently displaying
 let currentLevel = localStorage.getItem("calcium_ca_level") || "final";
 
 const MINUTE_MULTIPLIER = 0.75;
 const tbody = document.getElementById("planner-body");
 const hourBlocks = document.getElementById("hour-blocks");
+
+// --- HH:MM FORMATTING HELPERS ---
+function hhmmToDecimal(val) {
+    if (!val) return 0;
+    const str = val.toString();
+    
+    if (str.includes('h') || (!str.includes(':') && str.includes('.'))) {
+        return parseFloat(str.replace(/[^0-9.]/g, "")) || 0;
+    }
+    
+    const parts = str.replace(/[^0-9:]/g, "").split(':');
+    if (parts.length === 0 || parts[0] === "") return 0;
+    const h = parseInt(parts[0], 10) || 0;
+    const m = parts.length > 1 ? parseInt(parts[1], 10) || 0 : 0;
+    return h + (m / 60);
+}
+
+function decimalToHHMM(decimalHours, includeSign = false) {
+    if (isNaN(decimalHours)) return "00:00";
+    const isNegative = decimalHours < 0;
+    const absHours = Math.abs(decimalHours);
+    let h = Math.floor(absHours);
+    let m = Math.round((absHours - h) * 60);
+    
+    if (m === 60) {
+        h += 1;
+        m = 0;
+    }
+
+    const hStr = h.toString().padStart(2, '0');
+    const mStr = m.toString().padStart(2, '0');
+    const sign = isNegative ? "-" : (includeSign && (h > 0 || m > 0) ? "+" : "");
+    
+    return `${sign}${hStr}:${mStr}`;
+}
 
 // --- 1. STATE & DATE HELPERS ---
 function toYYYYMMDD(dateObj) {
@@ -62,25 +96,26 @@ function getPlanForSelectedDate() {
     if (pastDate) {
         let inheritedPlan = JSON.parse(JSON.stringify(allData[pastDate]));
         inheritedPlan.forEach(p => {
-            p.actual = "0h";
+            p.actual = "00:00";
             p.timerState = false;
             p.timerStart = null;
             p.accumulatedMs = 0;
+            p.manualLock = false; 
         });
         return inheritedPlan;
     }
 
-    // Default start uses the first subject of whatever their current level is
     const startId = CA_SUBJECTS[currentLevel][0].id;
     return [{ 
         id: startId, 
         startTime: "06:00", 
         endTime: "08:00", 
-        estimated: "2.0h", 
-        actual: "0h",
+        estimated: "02:00", 
+        actual: "00:00",
         timerState: false,
         timerStart: null,
-        accumulatedMs: 0
+        accumulatedMs: 0,
+        manualLock: false
     }];
 }
 
@@ -205,7 +240,6 @@ function renderTimelineEvents() {
             const topPosition = startMins * MINUTE_MULTIPLIER; 
             const blockHeight = (endMins - startMins) * MINUTE_MULTIPLIER;
 
-            // Fallback ensures no crashes if they switch levels while having a plan
             const subjectMeta = activeSubjects.find(s => s.id === item.id) || activeSubjects[0];
             
             const eventDiv = document.createElement("div");
@@ -227,11 +261,12 @@ document.querySelector(".add-row-btn").addEventListener("click", () => {
         id: startId, 
         startTime: "09:00", 
         endTime: "11:00", 
-        estimated: "2.0h", 
-        actual: "0h",
+        estimated: "02:00", 
+        actual: "00:00",
         timerState: false,
         timerStart: null,
-        accumulatedMs: 0 
+        accumulatedMs: 0,
+        manualLock: false 
     });
     savePlanForSelectedDate(data);
     renderTable();
@@ -256,6 +291,15 @@ function renderTable() {
             `<option value="${sub.id}" ${subjectMeta.id === sub.id ? 'selected' : ''}>${sub.name}</option>`
         ).join('');
 
+        const estDisplay = item.estimated.includes('h') ? decimalToHHMM(hhmmToDecimal(item.estimated)) : item.estimated;
+        const actDisplay = item.actual.includes('h') ? decimalToHHMM(hhmmToDecimal(item.actual)) : item.actual;
+
+        // Visual lock states - PLAY BUTTON IS NO LONGER FROZEN!
+        const isLocked = item.manualLock === true;
+        const lockStyle = isLocked ? "background: rgba(239, 68, 68, 0.15); border-color: #ef4444; color: #fca5a5; cursor: not-allowed;" : "";
+        const lockAttr = isLocked ? "readonly" : "";
+        const liveTimerStyle = isLocked ? "color: #ef4444;" : ""; // Makes live timer red too
+
         const tr = document.createElement("tr");
         tr.innerHTML = `
             <td style="white-space: nowrap;">
@@ -268,17 +312,23 @@ function renderTable() {
                     ${optionsHTML}
                 </select>
             </td>
-            <td><input class="time-input" value="${item.estimated}" oninput="updateField(${index}, 'estimated', this.value)" readonly style="color:#94a3b8; cursor:not-allowed;"></td>
+            <td><input class="time-input" value="${estDisplay}" readonly style="color:#94a3b8; cursor:not-allowed;"></td>
             <td>
                 <div class="actual-flex">
-                    <button class="timer-btn ${item.timerState ? 'timer-btn-pause' : 'timer-btn-play'}" onclick="toggleTimer(${index})" title="${item.timerState ? 'Pause Timer' : 'Start Timer'}">
+                    <button class="timer-btn ${item.timerState ? 'timer-btn-pause' : 'timer-btn-play'}" 
+                            onclick="toggleTimer(${index})" 
+                            title="${item.timerState ? 'Pause Timer' : 'Start Timer'}">
                         ${item.timerState ? '⏸' : '▶'}
                     </button>
-                    <input class="time-input" value="${item.actual}" oninput="updateField(${index}, 'actual', this.value)" style="width: 50px; display: ${item.timerState ? 'none' : 'block'};">
-                    <span id="live-timer-${index}" class="live-timer-text" style="display: ${item.timerState ? 'inline' : 'none'};">00:00:00</span>
+                    <input class="time-input" 
+                           value="${actDisplay}" 
+                           onchange="updateField(${index}, 'actual', this.value)" 
+                           style="width: 55px; display: ${item.timerState ? 'none' : 'block'}; ${lockStyle}" 
+                           ${lockAttr}>
+                    <span id="live-timer-${index}" class="live-timer-text" style="display: ${item.timerState ? 'inline' : 'none'}; ${liveTimerStyle}">00:00:00</span>
                 </div>
             </td>
-            <td><span class="variance-cell" style="font-family:'Roboto Mono', monospace; font-weight:700;">0h</span></td>
+            <td><span class="variance-cell" style="font-family:'Roboto Mono', monospace; font-weight:700;">00:00</span></td>
             <td><button class="delete-btn" onclick="removeRow(${index})" title="Delete Row">×</button></td>
         `;
         tbody.appendChild(tr);
@@ -296,37 +346,37 @@ window.updateField = (index, field, value) => {
         if (endMins <= startMins) endMins += (24 * 60); 
         
         const diffHours = (endMins - startMins) / 60;
-        data[index].estimated = diffHours.toFixed(1) + 'h';
+        data[index].estimated = decimalToHHMM(diffHours);
+    }
+
+    if (field === 'actual') {
+        data[index].manualLock = true;
     }
 
     savePlanForSelectedDate(data);
     
-    if(field === 'startTime' || field === 'endTime' || field === 'id') {
+    if(field === 'startTime' || field === 'endTime' || field === 'id' || field === 'actual') {
         renderTable(); 
     } else {
         calculateMath();
     }
 };
 
-function parseHours(val) {
-    if (!val) return 0;
-    return parseFloat(val.toString().replace(/[^0-9.]/g, "")) || 0;
-}
-
 function calculateMath() {
     const data = getPlanForSelectedDate();
     let totalEst = 0; let totalAct = 0;
     
     data.forEach((item, index) => {
-        const est = parseHours(item.estimated);
-        const act = parseHours(item.actual);
+        const est = hhmmToDecimal(item.estimated);
+        const act = hhmmToDecimal(item.actual);
         totalEst += est; totalAct += act;
         
         const row = tbody.children[index];
         if(row) {
             const diff = act - est;
             const vCell = row.querySelector(".variance-cell");
-            vCell.innerText = (diff > 0 ? "+" : "") + diff.toFixed(1) + "h";
+            
+            vCell.innerText = decimalToHHMM(diff, true);
             vCell.style.color = diff < 0 ? "#ef4444" : diff > 0 ? "#22c55e" : "#94a3b8"; 
         }
     });
@@ -334,7 +384,8 @@ function calculateMath() {
     const efficiency = totalEst > 0 ? Math.round((totalAct / totalEst) * 100) : 0;
     document.getElementById("efficiency-val").innerText = efficiency + "%";
     document.getElementById("purity-bar").style.width = Math.min(efficiency, 100) + "%";
-    document.getElementById("total-actual-val").innerText = totalAct.toFixed(1) + "h";
+    
+    document.getElementById("total-actual-val").innerText = decimalToHHMM(totalAct);
 
     renderTimelineEvents(); 
     updateChart(); 
@@ -363,8 +414,8 @@ function getChartData(timeframe) {
             let est = 0, act = 0;
             if (allData[dateStr]) {
                 allData[dateStr].forEach(item => {
-                    est += parseHours(item.estimated);
-                    act += parseHours(item.actual);
+                    est += hhmmToDecimal(item.estimated);
+                    act += hhmmToDecimal(item.actual);
                 });
             }
             estimatedData.push(est);
@@ -381,8 +432,8 @@ function getChartData(timeframe) {
                 const dateStr = toYYYYMMDD(d);
                 if (allData[dateStr]) {
                     allData[dateStr].forEach(item => {
-                        est += parseHours(item.estimated);
-                        act += parseHours(item.actual);
+                        est += hhmmToDecimal(item.estimated);
+                        act += hhmmToDecimal(item.actual);
                     });
                 }
             }
@@ -400,8 +451,8 @@ function getChartData(timeframe) {
                 const [y, m, day] = dateStr.split('-');
                 if (parseInt(y) === d.getFullYear() && parseInt(m) - 1 === d.getMonth()) {
                     allData[dateStr].forEach(item => {
-                        est += parseHours(item.estimated);
-                        act += parseHours(item.actual);
+                        est += hhmmToDecimal(item.estimated);
+                        act += hhmmToDecimal(item.actual);
                     });
                 }
             });
@@ -445,7 +496,6 @@ window.updateChart = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Make sure dropdown reflects the saved level
     const selectEl = document.getElementById("ca-level-select");
     if (selectEl) selectEl.value = currentLevel;
 
@@ -466,7 +516,7 @@ window.toggleTimer = (index) => {
         item.timerState = false;
 
         const hours = item.accumulatedMs / (1000 * 60 * 60);
-        item.actual = hours.toFixed(1) + "h";
+        item.actual = decimalToHHMM(hours);
     } else {
         // AUTO-PAUSE ANY OTHER RUNNING TIMERS FIRST
         data.forEach((otherItem, i) => {
@@ -476,7 +526,7 @@ window.toggleTimer = (index) => {
                 otherItem.timerState = false;
                 
                 const hours = otherItem.accumulatedMs / (1000 * 60 * 60);
-                otherItem.actual = hours.toFixed(1) + "h";
+                otherItem.actual = decimalToHHMM(hours);
             }
         });
 
@@ -484,15 +534,14 @@ window.toggleTimer = (index) => {
         item.timerState = true;
         item.timerStart = Date.now();
         
-        const manualHours = parseHours(item.actual);
+        const manualHours = hhmmToDecimal(item.actual);
         item.accumulatedMs = manualHours * (1000 * 60 * 60);
     }
 
     savePlanForSelectedDate(data);
-    renderTable(); // Re-renders UI and instantly triggers calculateMath() for variance
+    renderTable(); 
 };
 
-// Update live running timers every 1 second (Formatted as HHh MMm)
 setInterval(() => {
     const data = getPlanForSelectedDate();
     
@@ -504,8 +553,9 @@ setInterval(() => {
             const totalSec = Math.floor(totalMs / 1000);
             const h = Math.floor(totalSec / 3600);
             const m = Math.floor((totalSec % 3600) / 60);
+            const s = totalSec % 60;
             
-            const timeStr = `${h.toString().padStart(2,'0')}h ${m.toString().padStart(2,'0')}m`;
+            const timeStr = `${h.toString().padStart(2,'0')}:${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
             
             const timerSpan = document.getElementById(`live-timer-${index}`);
             if (timerSpan) timerSpan.innerText = timeStr;
