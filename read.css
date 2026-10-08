@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.rm-iframe-body {
+    font-family: 'Inter', sans-serif;
+    background: transparent;
+    color: #e2e8f0;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.rm-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+/* Scrollbar styling for the iframe */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 10px; }
+
+/* DELETE BUTTON STYLES FOR TASKS & ALARMS */
+.delete-btn { 
+    background: none; 
+    border: none; 
+    color: rgba(239, 68, 68, 0.6); 
+    font-size: 20px; 
+    cursor: pointer; 
+    transition: 0.2s; 
+}
+
+.delete-btn:hover { 
+    color: #ef4444; 
+    transform: scale(1.2); 
+}

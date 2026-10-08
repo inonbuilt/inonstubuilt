@@ -250,244 +250,24 @@
       </div>
     </footer>
 
-    <!-- READ MODE OVERLAY: Study productivity tools (Clock, Timer, Media, Tasks) -->
+    <!-- READ MODE OVERLAY: Iframe to load reading module -->
     <div id="readModeOverlay">
       <div class="rm-header">
         <div class="rm-brand">📖 Calcium <span>Read Mode</span></div>
-        <button class="rm-exit-btn" onclick="closeReadMode()">
-          ✕ Exit Read Mode
-        </button>
+        <div style="display: flex; gap: 10px;">
+          <button class="rm-exit-btn" style="background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border-color: rgba(59, 130, 246, 0.4);" onclick="switchToPlanMode()">
+            📅 Switch to Plan
+          </button>
+          <button class="rm-exit-btn" onclick="closeReadMode()">
+            ✕ Exit Read Mode
+          </button>
+        </div>
       </div>
-      <div class="rm-body">
-        <!-- 1. Live Clock & Greeting -->
-        <div class="rm-panel panel-clock">
-          <div class="rm-panel-label">🕐 Live Clock</div>
-          <div class="clock-wrap">
-            <div>
-              <span class="clock-hm" id="rmClockHM">00:00</span>
-              <span class="clock-sec" id="rmClockSec">:00</span>
-            </div>
-            <div class="clock-date-str" id="rmClockDate"></div>
-            <div class="clock-greeting" id="rmGreeting"></div>
-          </div>
-        </div>
-
-        <!-- 2. Productivity: Timer & Stopwatch -->
-        <div class="rm-panel panel-timer">
-          <div class="rm-panel-label">⏱ Timer & Stopwatch</div>
-          <div class="t-tabs">
-            <button
-              class="t-tab on"
-              id="ttabTimer"
-              onclick="setTimerTab('timer')"
-            >
-              ⏲ Timer
-            </button>
-            <button class="t-tab" id="ttabSW" onclick="setTimerTab('sw')">
-              ⏱ Stopwatch
-            </button>
-          </div>
-          <div id="timerSection">
-            <div class="t-inputs">
-              <input
-                class="t-num"
-                type="number"
-                id="tHr"
-                value="00"
-                min="0"
-                max="23"
-                oninput="updateTimerDisplay()"
-              />
-              <span class="t-sep">:</span>
-              <input
-                class="t-num"
-                type="number"
-                id="tMin"
-                value="25"
-                min="0"
-                max="59"
-                oninput="updateTimerDisplay()"
-              />
-              <span class="t-sep">:</span>
-              <input
-                class="t-num"
-                type="number"
-                id="tSec"
-                value="00"
-                min="0"
-                max="59"
-                oninput="updateTimerDisplay()"
-              />
-            </div>
-            <div class="t-display" id="timerDisp">25:00</div>
-            <div class="t-btns">
-              <button class="t-btn go" onclick="timerStart()">▶ Start</button>
-              <button class="t-btn stop" onclick="timerPause()">⏸ Pause</button>
-              <button class="t-btn rst" onclick="timerReset()">↺ Reset</button>
-            </div>
-          </div>
-          <div id="swSection" style="display: none">
-            <div class="t-display" id="swDisp">00:00.0</div>
-            <div class="t-btns">
-              <button class="t-btn go" onclick="swStart()">▶ Start</button>
-              <button class="t-btn stop" onclick="swPause()">⏸ Pause</button>
-              <button class="t-btn rst" onclick="swReset()">↺ Reset</button>
-            </div>
-            <button
-              class="t-btn rst"
-              style="width: 100%; margin-top: 8px"
-              onclick="swLap()"
-            >
-              🏁 Lap
-            </button>
-            <div class="sw-laps" id="swLaps"></div>
-          </div>
-        </div>
-
-        <!-- 3. Alarms -->
-        <div class="rm-panel panel-alarm">
-          <div class="rm-panel-label">🔔 Alarms</div>
-          <div class="al-form">
-            <input type="time" class="al-input" id="alTime" />
-            <input
-              type="text"
-              class="al-input"
-              id="alLabel"
-              placeholder="Label"
-            />
-            <button class="al-add" onclick="alarmAdd()">+ Set Alarm</button>
-          </div>
-          <div class="al-list" id="alarmList"></div>
-        </div>
-
-        <!-- 4. To-Do List with Status Indicators -->
-        <div class="rm-panel panel-tasks">
-          <div class="rm-panel-label">✅ Tasks</div>
-          <div class="tk-stats">
-            <div>Total: <b id="tkTotal">0</b></div>
-            <div>Done: <b id="tkDone">0</b></div>
-            <div>Pending: <b id="tkPend">0</b></div>
-          </div>
-          <div class="tk-form">
-            <input
-              type="text"
-              class="tk-input"
-              id="tkInput"
-              placeholder="Add a task…"
-              onkeydown="
-                if (event.key === 'Enter') {
-                  event.preventDefault();
-                  taskAdd();
-                }
-              "
-            />
-            <select class="tk-pri" id="tkPri">
-              <option value="high">🔴 High</option>
-              <option value="med" selected>🟡 Medium</option>
-              <option value="low">🟢 Low</option>
-            </select>
-            <button class="tk-add" onclick="taskAdd()">+</button>
-          </div>
-          <div class="tk-list" id="taskList"></div>
-        </div>
-
-        <!-- 5. Persistence: Quick Notes -->
-        <div class="rm-panel panel-notes">
-          <div class="rm-panel-label">📝 Quick Notes</div>
-          <textarea
-            class="note-area"
-            id="noteArea"
-            placeholder="Jot formulas, key points..."
-            oninput="noteSave()"
-          ></textarea>
-          <div class="note-footer">
-            <span id="noteChars">0 chars</span>
-          </div>
-        </div>
-
-        <!-- 6. Universal Media Player: Supports Video/Audio via IndexedDB -->
-        <div class="rm-panel panel-media">
-          <div class="rm-panel-label">🎵 Universal Media</div>
-          <div class="media-controls-top">
-            <label for="mediaBrowse" class="media-btn browse-btn"
-              >📂 Browse All Media</label
-            >
-            <input
-              type="file"
-              id="mediaBrowse"
-              multiple
-              accept=".mp3,.mov,.wav,.mp4,audio/*,video/*"
-              style="display: none"
-              onchange="handleMediaFiles(this.files)"
-            />
-          </div>
-          <div
-            id="vContainer"
-            style="
-              display: none;
-              margin-bottom: 12px;
-              background: #000;
-              border-radius: 12px;
-              overflow: hidden;
-            "
-          >
-            <video
-              id="mediaEngine"
-              playsinline
-              style="width: 100%; max-height: 220px"
-            ></video>
-          </div>
-          <div class="player-ui">
-            <div style="text-align: center; margin-bottom: 10px">
-              <div
-                id="mName"
-                style="
-                  font-weight: bold;
-                  font-size: 0.9rem;
-                  white-space: nowrap;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                "
-              >
-                No file selected
-              </div>
-              <div id="mTime" style="font-size: 0.7rem; opacity: 0.5">
-                00:00 / 00:00
-              </div>
-            </div>
-            <div
-              style="
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                align-items: center;
-              "
-            >
-              <button class="p-btn" onclick="mediaPrev()">⏮</button>
-              <button id="pBtn" class="p-btn play-main" onclick="mediaToggle()">
-                ▶
-              </button>
-              <button class="p-btn" onclick="mediaNext()">⏭</button>
-            </div>
-            <input
-              type="range"
-              id="mSeek"
-              value="0"
-              step="0.1"
-              oninput="mediaSeekChange()"
-              style="width: 100%; margin-top: 15px"
-            />
-          </div>
-          <div
-            id="mPlaylist"
-            style="
-              margin-top: 15px;
-              border-top: 1px solid rgba(255, 255, 255, 0.1);
-              max-height: 140px;
-              overflow-y: auto;
-            "
-          ></div>
-        </div>
+      <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
+        <iframe
+          src="./readmode.html"
+          style="width: 100%; height: 100%; border: none"
+        ></iframe>
       </div>
     </div>
 
@@ -495,9 +275,14 @@
     <div id="planningModeOverlay">
       <div class="rm-header">
         <div class="rm-brand">📅 Calcium <span>Planning Mode</span></div>
-        <button class="rm-exit-btn" onclick="closePlanningMode()">
-          ✕ Exit Planning Mode
-        </button>
+        <div style="display: flex; gap: 10px;">
+          <button class="rm-exit-btn" style="background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border-color: rgba(59, 130, 246, 0.4);" onclick="switchToReadMode()">
+            📖 Switch to Read
+          </button>
+          <button class="rm-exit-btn" onclick="closePlanningMode()">
+            ✕ Exit Planning Mode
+          </button>
+        </div>
       </div>
       <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
         <iframe
@@ -507,16 +292,6 @@
       </div>
     </div>
 
-    <!-- Toast Notification for Alarms and Timers -->
-    <div class="alarm-toast" id="alarmToast">
-      <div class="toast-icon">🔔</div>
-      <div class="toast-body">
-        <h4 id="toastTitle">Alarm!</h4>
-        <p id="toastLabel">Time's up.</p>
-      </div>
-      <button class="toast-dismiss" onclick="toastDismiss()">Dismiss</button>
-    </div>
-
     <script>
       /* =========================================
     STATE & INITIALIZATION
@@ -524,7 +299,6 @@
       const banner = document.getElementById("updateBanner");
       const message = document.getElementById("updateMessage");
       const link = document.getElementById("updateLink");
-      let audioCtx = null; // Used for beep sounds
 
       const updates = [
         {
@@ -532,8 +306,8 @@
           url: "./bin/exam/spom/espom.html",
         },
         {
-    text: "🔥 CA Final 100-Mark Prefinal Mock Exams (New Scheme) Are Now Available!",
-    url: "./bin/exam/examcover.html",
+          text: "🔥 CA Final 100-Mark Prefinal Mock Exams (New Scheme) Are Now Available!",
+          url: "./bin/exam/examcover.html",
         },
       ];
       let currentIndex = 0;
@@ -548,26 +322,7 @@
           }
         }, 500);
 
-        // Persistent data recovery from LocalStorage
-        const savedNotes = localStorage.getItem("cn_notes");
-        if (savedNotes !== null) {
-          document.getElementById("noteArea").value = savedNotes;
-        }
-
-        const savedTasks = localStorage.getItem("cn_tasks");
-        if (savedTasks) {
-          tasks = JSON.parse(savedTasks);
-          renderTasks();
-        }
-
-        const savedAlarms = localStorage.getItem("cn_alarms");
-        if (savedAlarms) {
-          alarms = JSON.parse(savedAlarms);
-          renderAlarms();
-        }
-
         showRandomQuote();
-        tickClock();
       });
 
       function showUpdate() {
@@ -611,16 +366,12 @@
       }
 
       /* =========================================
-    OVERLAY & CLOCK CONTROLS
+    OVERLAY CONTROLS
     ========================================= */
       const readOverlay = document.getElementById("readModeOverlay");
       const planOverlay = document.getElementById("planningModeOverlay");
 
       function openReadMode() {
-        // Resume Audio Context for beeps (required by modern browsers)
-        if (!audioCtx)
-          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        if (audioCtx.state === "suspended") audioCtx.resume();
         readOverlay.classList.add("rm-active");
         setTimeout(() => readOverlay.classList.add("rm-visible"), 10);
         document.body.style.overflow = "hidden"; // Prevent background scroll
@@ -648,430 +399,42 @@
         }, 350);
       }
 
-      function tickClock() {
-        const now = new Date();
-        const H = String(now.getHours()).padStart(2, "0"),
-          M = String(now.getMinutes()).padStart(2, "0"),
-          S = String(now.getSeconds()).padStart(2, "0");
-        document.getElementById("rmClockHM").textContent = H + ":" + M;
-        document.getElementById("rmClockSec").textContent = ":" + S;
-        document.getElementById("rmClockDate").textContent = now.toDateString();
-
-        // Greeting Logic based on hour
-        const h = now.getHours();
-        document.getElementById("rmGreeting").textContent =
-          h < 12
-            ? "Good Morning ☀️"
-            : h < 17
-              ? "Good Afternoon ⚡"
-              : h < 21
-                ? "Good Evening 🌙"
-                : "Night Study 🌟";
-        alarmCheck(H + ":" + M);
-      }
-      setInterval(tickClock, 1000);
-
-      /* =========================================
-    TIMER & STOPWATCH LOGIC
-    ========================================= */
-      let timerIv = null,
-        timerLeft = 0,
-        timerOn = false;
-
-      function setTimerTab(t) {
-        document.getElementById("timerSection").style.display =
-          t === "timer" ? "block" : "none";
-        document.getElementById("swSection").style.display =
-          t === "sw" ? "block" : "none";
-        document
-          .getElementById("ttabTimer")
-          .classList.toggle("on", t === "timer");
-        document.getElementById("ttabSW").classList.toggle("on", t === "sw");
-      }
-
-      function getTimerSecs() {
-        return (
-          (parseInt(document.getElementById("tHr").value) || 0) * 3600 +
-          (parseInt(document.getElementById("tMin").value) || 0) * 60 +
-          (parseInt(document.getElementById("tSec").value) || 0)
-        );
-      }
-
-      function fmtTime(s) {
-        const h = Math.floor(s / 3600),
-          m = Math.floor((s % 3600) / 60),
-          sec = s % 60;
-        return h
-          ? String(h).padStart(2, "0") +
-              ":" +
-              String(m).padStart(2, "0") +
-              ":" +
-              String(sec).padStart(2, "0")
-          : String(m).padStart(2, "0") + ":" + String(sec).padStart(2, "0");
-      }
-
-      function updateTimerDisplay() {
-        if (timerOn) return;
-        timerLeft = getTimerSecs();
-        document.getElementById("timerDisp").textContent = fmtTime(timerLeft);
-      }
-
-      function timerStart() {
-        if (timerOn) return;
-        if (!timerLeft) timerLeft = getTimerSecs();
-        if (!timerLeft) return;
-        timerOn = true;
-        timerIv = setInterval(() => {
-          if (--timerLeft <= 0) {
-            clearInterval(timerIv);
-            timerOn = false;
-            beep();
-            toastShow("⏰ Done!", "Study session complete.");
-          }
-          document.getElementById("timerDisp").textContent = fmtTime(timerLeft);
-        }, 1000);
-      }
-
-      function timerPause() {
-        clearInterval(timerIv);
-        timerOn = false;
-      }
-      function timerReset() {
-        timerPause();
-        updateTimerDisplay();
-      }
-
-      // Stopwatch Logic
-      let swOn = false,
-        swIv = null,
-        swMs = 0,
-        swLaps = [];
-      function swStart() {
-        if (swOn) return;
-        swOn = true;
-        const t0 = Date.now() - swMs;
-        swIv = setInterval(() => {
-          swMs = Date.now() - t0;
-          document.getElementById("swDisp").textContent = fmtSW(swMs);
-        }, 100);
-      }
-
-      function fmtSW(ms) {
-        const m = Math.floor(ms / 60000),
-          s = Math.floor((ms % 60000) / 1000),
-          t = Math.floor((ms % 1000) / 100);
-        return (
-          String(m).padStart(2, "0") +
-          ":" +
-          String(s).padStart(2, "0") +
-          "." +
-          t
-        );
-      }
-
-      function swPause() {
-        clearInterval(swIv);
-        swOn = false;
-      }
-      function swReset() {
-        swPause();
-        swMs = 0;
-        swLaps = [];
-        document.getElementById("swDisp").textContent = "00:00.0";
-        document.getElementById("swLaps").innerHTML = "";
-      }
-      function swLap() {
-        swLaps.push(fmtSW(swMs));
-        document.getElementById("swLaps").innerHTML = swLaps
-          .map((l, i) => `<div>Lap ${i + 1}: ${l}</div>`)
-          .join("");
-      }
-
-      /* =========================================
-    ALARMS & TASKS HANDLERS
-    ========================================= */
-      let alarms = [],
-        alarmFired = {},
-        tasks = [];
-
-      function fmtAlarmListTime(t24) {
-        const [h, m] = t24.split(":");
-        const hr = parseInt(h);
-        const suffix = hr >= 12 ? "PM" : "AM";
-        const displayHr = ((hr + 11) % 12) + 1;
-        return displayHr + ":" + m + " " + suffix;
-      }
-
-      function alarmAdd() {
-        const t = document.getElementById("alTime").value;
-        if (t) {
-          alarms.push({
-            time: t,
-            label: document.getElementById("alLabel").value || "Alarm",
-            id: Date.now(),
-          });
-          localStorage.setItem("cn_alarms", JSON.stringify(alarms));
-          renderAlarms();
-        }
-      }
-
-      function alarmDel(id) {
-        alarms = alarms.filter((a) => a.id !== id);
-        localStorage.setItem("cn_alarms", JSON.stringify(alarms));
-        renderAlarms();
-      }
-
-      function renderAlarms() {
-        document.getElementById("alarmList").innerHTML = alarms
-          .map(
-            (a) => `
-            <div class="al-item" style="padding:10px; border-bottom:1px solid rgba(255,255,255,0.05); display:flex; justify-content:space-between; align-items:center;">
-                <span><strong>${fmtAlarmListTime(a.time)}</strong> - ${a.label}</span>
-                <button onclick="alarmDel(${a.id})" style="background:none; border:none; cursor:pointer;">🗑</button>
-            </div>`,
-          )
-          .join("");
-      }
-
-      function alarmCheck(hm) {
-        alarms.forEach((a) => {
-          if (a.time === hm && !alarmFired[a.id]) {
-            alarmFired[a.id] = true;
-            beep();
-            toastShow("🔔 " + a.label, "Time: " + fmtAlarmListTime(a.time));
-            setTimeout(() => delete alarmFired[a.id], 60000);
-          }
-        });
-      }
-
-      // Task Logic
-      function taskAdd() {
-        const txt = document.getElementById("tkInput").value.trim();
-        if (txt) {
-          tasks.push({
-            txt,
-            pri: document.getElementById("tkPri").value,
-            done: false,
-            id: Date.now(),
-          });
-          document.getElementById("tkInput").value = "";
-          localStorage.setItem("cn_tasks", JSON.stringify(tasks));
-          renderTasks();
-        }
-      }
-
-      function taskToggle(id) {
-        const t = tasks.find((x) => x.id === id);
-        if (t) t.done = !t.done;
-        localStorage.setItem("cn_tasks", JSON.stringify(tasks));
-        renderTasks();
-      }
-
-      function taskDel(id) {
-        tasks = tasks.filter((x) => x.id !== id);
-        localStorage.setItem("cn_tasks", JSON.stringify(tasks));
-        renderTasks();
-      }
-
-      function renderTasks() {
-        document.getElementById("tkTotal").textContent = tasks.length;
-        document.getElementById("tkDone").textContent = tasks.filter(
-          (x) => x.done,
-        ).length;
-        document.getElementById("tkPend").textContent =
-          tasks.length - tasks.filter((x) => x.done).length;
-        document.getElementById("taskList").innerHTML = tasks
-          .map(
-            (t) => `
-            <div class="tk-item" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-                <span style="${t.done ? "text-decoration:line-through; color:gray;" : ""}" onclick="taskToggle(${t.id})">${t.done ? "✅" : "⬜"} ${t.txt} [${t.pri}]</span>
-                <button onclick="taskDel(${t.id})" style="background:none; border:none; cursor:pointer;">🗑</button>
-            </div>`,
-          )
-          .join("");
-      }
-
-      /* =========================================
-    NOTIFICATIONS & MEDIA PLAYER
-    ========================================= */
-      function toastShow(title, label) {
-        const toast = document.getElementById("alarmToast");
-        document.getElementById("toastTitle").textContent = title;
-        document.getElementById("toastLabel").textContent = label;
-        toast.style.display = "flex";
+      // --- ADDED: CROSSFADE TRANSITIONS ---
+      window.switchToReadMode = function() {
+        // 1. Start fading out Planning Mode smoothly
+        planOverlay.classList.remove("rm-visible");
+        
         setTimeout(() => {
-          toast.classList.add("show");
-        }, 10);
-        setTimeout(toastDismiss, 10000);
-      }
-
-      function toastDismiss() {
-        const toast = document.getElementById("alarmToast");
-        toast.classList.remove("show");
-        setTimeout(() => {
-          toast.style.display = "none";
-        }, 400);
-      }
-
-      function noteSave() {
-        localStorage.setItem(
-          "cn_notes",
-          document.getElementById("noteArea").value,
-        );
-      }
-
-      function beep() {
-        if (!audioCtx) return;
-        const osc = audioCtx.createOscillator(),
-          gain = audioCtx.createGain();
-        osc.connect(gain);
-        gain.connect(audioCtx.destination);
-        osc.frequency.value = 880;
-        osc.start();
-        gain.gain.exponentialRampToValueAtTime(
-          0.0001,
-          audioCtx.currentTime + 1,
-        );
-        osc.stop(audioCtx.currentTime + 1);
-      }
-
-      // IndexedDB Media Storage (Allows users to keep a playlist after refresh)
-      let mediaFiles = [];
-      let currentIdx = 0;
-      let engine, playButton, seekSlider, videoBox, db;
-
-      const dbRequest = indexedDB.open("CalciumMediaDB", 1);
-      dbRequest.onupgradeneeded = (e) => {
-        let database = e.target.result;
-        if (!database.objectStoreNames.contains("playlist")) {
-          database.createObjectStore("playlist", {
-            keyPath: "id",
-            autoIncrement: true,
-          });
-        }
-      };
-      dbRequest.onsuccess = (e) => {
-        db = e.target.result;
-        loadPlaylistFromDB();
+          // 2. Hide Planning Mode completely
+          planOverlay.classList.remove("rm-active");
+          
+          // 3. Immediately show Read Mode container
+          readOverlay.classList.add("rm-active");
+          
+          // 4. Trigger Read Mode smooth slide-in animation
+          setTimeout(() => {
+            readOverlay.classList.add("rm-visible");
+          }, 20); // slight delay forces the browser to apply the CSS transition
+        }, 350); // wait exactly 350ms to match the CSS animation duration of closePlanningMode
       };
 
-      window.addEventListener("DOMContentLoaded", () => {
-        engine = document.getElementById("mediaEngine");
-        playButton = document.getElementById("pBtn");
-        seekSlider = document.getElementById("mSeek");
-        videoBox = document.getElementById("vContainer");
-
-        engine.onended = () => mediaNext();
-        engine.ontimeupdate = () => {
-          if (!isNaN(engine.duration)) {
-            seekSlider.max = engine.duration;
-            seekSlider.value = engine.currentTime;
-            document.getElementById("mTime").textContent =
-              fmt(engine.currentTime) + " / " + fmt(engine.duration);
-          }
-        };
-      });
-
-      function handleMediaFiles(files) {
-        if (!db) return alert("Database not ready.");
-        const transaction = db.transaction(["playlist"], "readwrite");
-        const store = transaction.objectStore("playlist");
-        for (let i = 0; i < files.length; i++) {
-          store.add({
-            name: files[i].name,
-            data: files[i],
-            type: files[i].type,
-          });
-        }
-        transaction.oncomplete = () => loadPlaylistFromDB();
-      }
-
-      function loadPlaylistFromDB() {
-        if (!db) return;
-        const transaction = db.transaction(["playlist"], "readonly");
-        const getRequest = transaction.objectStore("playlist").getAll();
-
-        getRequest.onsuccess = () => {
-          // Revoke old URLs to prevent memory leaks
-          mediaFiles.forEach((f) => URL.revokeObjectURL(f.url));
-          mediaFiles = getRequest.result.map((item) => ({
-            name: item.name,
-            url: URL.createObjectURL(item.data),
-            isVid:
-              item.type.includes("video") ||
-              item.name.toLowerCase().endsWith(".mov"),
-          }));
-
-          if (mediaFiles.length > 0) {
-            drawPlaylist();
-            loadMedia(0, false);
-          }
-        };
-      }
-
-      function loadMedia(idx, shouldPlay = true) {
-        if (!mediaFiles[idx]) return;
-        currentIdx = idx;
-        engine.pause();
-
-        videoBox.style.display = mediaFiles[idx].isVid ? "block" : "none";
-        engine.src = mediaFiles[idx].url;
-        engine.load();
-
-        document.getElementById("mName").textContent = mediaFiles[idx].name;
-        drawPlaylist();
-
-        if (shouldPlay) {
-          engine
-            .play()
-            .then(() => {
-              playButton.textContent = "⏸";
-            })
-            .catch(() => {
-              playButton.textContent = "▶";
-            });
-        }
-      }
-
-      function mediaToggle() {
-        if (engine.paused) {
-          engine.play();
-          playButton.textContent = "⏸";
-        } else {
-          engine.pause();
-          playButton.textContent = "▶";
-        }
-      }
-
-      function mediaNext() {
-        if (mediaFiles.length) loadMedia((currentIdx + 1) % mediaFiles.length);
-      }
-      function mediaPrev() {
-        if (mediaFiles.length)
-          loadMedia((currentIdx - 1 + mediaFiles.length) % mediaFiles.length);
-      }
-
-      function drawPlaylist() {
-        document.getElementById("mPlaylist").innerHTML = mediaFiles
-          .map(
-            (m, i) => `
-            <div class="p-item ${i === currentIdx ? "active" : ""}" onclick="loadMedia(${i})">
-                ${i + 1}. ${m.name}
-            </div>`,
-          )
-          .join("");
-      }
-
-      function mediaSeekChange() {
-        engine.currentTime = seekSlider.value;
-      }
-      function fmt(s) {
-        const min = Math.floor(s / 60),
-          sec = Math.floor(s % 60);
-        return (
-          String(min).padStart(2, "0") + ":" + String(sec).padStart(2, "0")
-        );
-      }
+      window.switchToPlanMode = function() {
+        // 1. Start fading out Read Mode smoothly
+        readOverlay.classList.remove("rm-visible");
+        
+        setTimeout(() => {
+          // 2. Hide Read Mode completely
+          readOverlay.classList.remove("rm-active");
+          
+          // 3. Immediately show Planning Mode container
+          planOverlay.classList.add("rm-active");
+          
+          // 4. Trigger Planning Mode smooth slide-in animation
+          setTimeout(() => {
+            planOverlay.classList.add("rm-visible");
+          }, 20); 
+        }, 350); 
+      };
     </script>
   </body>
 </html>

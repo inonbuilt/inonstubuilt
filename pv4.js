@@ -34,11 +34,9 @@ const hourBlocks = document.getElementById("hour-blocks");
 function hhmmToDecimal(val) {
     if (!val) return 0;
     const str = val.toString();
-    
     if (str.includes('h') || (!str.includes(':') && str.includes('.'))) {
         return parseFloat(str.replace(/[^0-9.]/g, "")) || 0;
     }
-    
     const parts = str.replace(/[^0-9:]/g, "").split(':');
     if (parts.length === 0 || parts[0] === "") return 0;
     const h = parseInt(parts[0], 10) || 0;
@@ -52,16 +50,11 @@ function decimalToHHMM(decimalHours, includeSign = false) {
     const absHours = Math.abs(decimalHours);
     let h = Math.floor(absHours);
     let m = Math.round((absHours - h) * 60);
-    
-    if (m === 60) {
-        h += 1;
-        m = 0;
-    }
+    if (m === 60) { h += 1; m = 0; }
 
     const hStr = h.toString().padStart(2, '0');
     const mStr = m.toString().padStart(2, '0');
     const sign = isNegative ? "-" : (includeSign && (h > 0 || m > 0) ? "+" : "");
-    
     return `${sign}${hStr}:${mStr}`;
 }
 
@@ -125,7 +118,6 @@ function savePlanForSelectedDate(plan) {
     saveAllData(allData);
 }
 
-// --- LEVEL CHANGER ---
 window.changeLevel = (lvl) => {
     currentLevel = lvl;
     localStorage.setItem("calcium_ca_level", currentLevel);
@@ -286,19 +278,16 @@ function renderTable() {
     
     data.forEach((item, index) => {
         const subjectMeta = activeSubjects.find(s => s.id === item.id) || activeSubjects[0];
-        
         const optionsHTML = activeSubjects.map(sub => 
             `<option value="${sub.id}" ${subjectMeta.id === sub.id ? 'selected' : ''}>${sub.name}</option>`
         ).join('');
-
         const estDisplay = item.estimated.includes('h') ? decimalToHHMM(hhmmToDecimal(item.estimated)) : item.estimated;
         const actDisplay = item.actual.includes('h') ? decimalToHHMM(hhmmToDecimal(item.actual)) : item.actual;
-
-        // Visual lock states - PLAY BUTTON IS NO LONGER FROZEN!
+        
         const isLocked = item.manualLock === true;
         const lockStyle = isLocked ? "background: rgba(239, 68, 68, 0.15); border-color: #ef4444; color: #fca5a5; cursor: not-allowed;" : "";
         const lockAttr = isLocked ? "readonly" : "";
-        const liveTimerStyle = isLocked ? "color: #ef4444;" : ""; // Makes live timer red too
+        const liveTimerStyle = isLocked ? "color: #ef4444;" : ""; 
 
         const tr = document.createElement("tr");
         tr.innerHTML = `
@@ -307,24 +296,14 @@ function renderTable() {
                 <span class="time-separator">-</span>
                 <input type="time" class="time-picker" value="${item.endTime}" onchange="updateField(${index}, 'endTime', this.value)">
             </td>
-            <td>
-                <select class="subject-select ${subjectMeta.class}" onchange="updateField(${index}, 'id', this.value)">
-                    ${optionsHTML}
-                </select>
-            </td>
+            <td><select class="subject-select ${subjectMeta.class}" onchange="updateField(${index}, 'id', this.value)">${optionsHTML}</select></td>
             <td><input class="time-input" value="${estDisplay}" readonly style="color:#94a3b8; cursor:not-allowed;"></td>
             <td>
                 <div class="actual-flex">
-                    <button class="timer-btn ${item.timerState ? 'timer-btn-pause' : 'timer-btn-play'}" 
-                            onclick="toggleTimer(${index})" 
-                            title="${item.timerState ? 'Pause Timer' : 'Start Timer'}">
+                    <button class="timer-btn ${item.timerState ? 'timer-btn-pause' : 'timer-btn-play'}" onclick="toggleTimer(${index})" title="${item.timerState ? 'Pause Timer' : 'Start Timer'}">
                         ${item.timerState ? '⏸' : '▶'}
                     </button>
-                    <input class="time-input" 
-                           value="${actDisplay}" 
-                           onchange="updateField(${index}, 'actual', this.value)" 
-                           style="width: 55px; display: ${item.timerState ? 'none' : 'block'}; ${lockStyle}" 
-                           ${lockAttr}>
+                    <input class="time-input" value="${actDisplay}" onchange="updateField(${index}, 'actual', this.value)" style="width: 55px; display: ${item.timerState ? 'none' : 'block'}; ${lockStyle}" ${lockAttr}>
                     <span id="live-timer-${index}" class="live-timer-text" style="display: ${item.timerState ? 'inline' : 'none'}; ${liveTimerStyle}">00:00:00</span>
                 </div>
             </td>
@@ -344,22 +323,16 @@ window.updateField = (index, field, value) => {
         const startMins = timeToMinutes(data[index].startTime);
         let endMins = timeToMinutes(data[index].endTime);
         if (endMins <= startMins) endMins += (24 * 60); 
-        
         const diffHours = (endMins - startMins) / 60;
         data[index].estimated = decimalToHHMM(diffHours);
     }
-
-    if (field === 'actual') {
-        data[index].manualLock = true;
-    }
+    if (field === 'actual') data[index].manualLock = true;
 
     savePlanForSelectedDate(data);
     
     if(field === 'startTime' || field === 'endTime' || field === 'id' || field === 'actual') {
         renderTable(); 
-    } else {
-        calculateMath();
-    }
+    } else calculateMath();
 };
 
 function calculateMath() {
@@ -375,7 +348,6 @@ function calculateMath() {
         if(row) {
             const diff = act - est;
             const vCell = row.querySelector(".variance-cell");
-            
             vCell.innerText = decimalToHHMM(diff, true);
             vCell.style.color = diff < 0 ? "#ef4444" : diff > 0 ? "#22c55e" : "#94a3b8"; 
         }
@@ -384,7 +356,6 @@ function calculateMath() {
     const efficiency = totalEst > 0 ? Math.round((totalAct / totalEst) * 100) : 0;
     document.getElementById("efficiency-val").innerText = efficiency + "%";
     document.getElementById("purity-bar").style.width = Math.min(efficiency, 100) + "%";
-    
     document.getElementById("total-actual-val").innerText = decimalToHHMM(totalAct);
 
     renderTimelineEvents(); 
@@ -393,14 +364,12 @@ function calculateMath() {
 
 // --- 6. CHART.JS LOGIC ---
 let trendChartInstance = null;
-
 function getChartData(timeframe) {
     const allData = getAllData();
     const labels = [];
     const estimatedData = [];
     const actualData = [];
     const varianceData = [];
-
     const today = new Date();
     today.setHours(0,0,0,0);
 
@@ -418,9 +387,7 @@ function getChartData(timeframe) {
                     act += hhmmToDecimal(item.actual);
                 });
             }
-            estimatedData.push(est);
-            actualData.push(act);
-            varianceData.push(act - est);
+            estimatedData.push(est); actualData.push(act); varianceData.push(act - est);
         }
     } else if (timeframe === 'weeks') {
         for (let i = 3; i >= 0; i--) {
@@ -432,36 +399,28 @@ function getChartData(timeframe) {
                 const dateStr = toYYYYMMDD(d);
                 if (allData[dateStr]) {
                     allData[dateStr].forEach(item => {
-                        est += hhmmToDecimal(item.estimated);
-                        act += hhmmToDecimal(item.actual);
+                        est += hhmmToDecimal(item.estimated); act += hhmmToDecimal(item.actual);
                     });
                 }
             }
-            estimatedData.push(est);
-            actualData.push(act);
-            varianceData.push(act - est);
+            estimatedData.push(est); actualData.push(act); varianceData.push(act - est);
         }
     } else if (timeframe === 'months') {
         for (let i = 5; i >= 0; i--) {
             const d = new Date(today.getFullYear(), today.getMonth() - i, 1);
             labels.push(d.toLocaleDateString('en-US', { month: 'short', year: '2-digit' }));
-
             let est = 0, act = 0;
             Object.keys(allData).forEach(dateStr => {
                 const [y, m, day] = dateStr.split('-');
                 if (parseInt(y) === d.getFullYear() && parseInt(m) - 1 === d.getMonth()) {
                     allData[dateStr].forEach(item => {
-                        est += hhmmToDecimal(item.estimated);
-                        act += hhmmToDecimal(item.actual);
+                        est += hhmmToDecimal(item.estimated); act += hhmmToDecimal(item.actual);
                     });
                 }
             });
-            estimatedData.push(est);
-            actualData.push(act);
-            varianceData.push(act - est);
+            estimatedData.push(est); actualData.push(act); varianceData.push(act - est);
         }
     }
-
     return { labels, estimatedData, actualData, varianceData };
 }
 
@@ -469,10 +428,7 @@ window.updateChart = () => {
     const timeframe = document.getElementById("chart-timeframe").value;
     const chartData = getChartData(timeframe);
     const ctx = document.getElementById('trendChart').getContext('2d');
-
-    if (trendChartInstance) {
-        trendChartInstance.destroy();
-    }
+    if (trendChartInstance) trendChartInstance.destroy();
 
     trendChartInstance = new Chart(ctx, {
         type: 'line',
@@ -510,41 +466,48 @@ window.toggleTimer = (index) => {
     const item = data[index];
 
     if (item.timerState) {
-        // PAUSE CURRENT TIMER
+        // Pausing...
         const elapsed = Date.now() - (item.timerStart || Date.now());
         item.accumulatedMs = (item.accumulatedMs || 0) + elapsed;
         item.timerState = false;
-
         const hours = item.accumulatedMs / (1000 * 60 * 60);
         item.actual = decimalToHHMM(hours);
     } else {
-        // AUTO-PAUSE ANY OTHER RUNNING TIMERS FIRST
+        // Starting...
         data.forEach((otherItem, i) => {
             if (i !== index && otherItem.timerState) {
                 const elapsed = Date.now() - (otherItem.timerStart || Date.now());
                 otherItem.accumulatedMs = (otherItem.accumulatedMs || 0) + elapsed;
                 otherItem.timerState = false;
-                
                 const hours = otherItem.accumulatedMs / (1000 * 60 * 60);
                 otherItem.actual = decimalToHHMM(hours);
             }
         });
-
-        // START THIS TIMER
         item.timerState = true;
         item.timerStart = Date.now();
-        
         const manualHours = hhmmToDecimal(item.actual);
         item.accumulatedMs = manualHours * (1000 * 60 * 60);
-    }
 
+        // Professional Animation Trigger to Switch to Read Mode
+        if (window.parent && typeof window.parent.switchToReadMode === 'function') {
+            window.parent.switchToReadMode();
+        }
+    }
     savePlanForSelectedDate(data);
     renderTable(); 
 };
 
+// --- CROSS-IFRAME SYNC LISTENER ---
+window.addEventListener('storage', (e) => {
+    if (e.key === "calcium_ca_data_v5") {
+        renderTable(); 
+        calculateMath();
+    }
+});
+
+// Master Interval: Live Timer UI Update
 setInterval(() => {
     const data = getPlanForSelectedDate();
-    
     data.forEach((item, index) => {
         if (item.timerState) {
             const elapsed = Date.now() - (item.timerStart || Date.now());
@@ -556,7 +519,6 @@ setInterval(() => {
             const s = totalSec % 60;
             
             const timeStr = `${h.toString().padStart(2,'0')}:${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
-            
             const timerSpan = document.getElementById(`live-timer-${index}`);
             if (timerSpan) timerSpan.innerText = timeStr;
         }

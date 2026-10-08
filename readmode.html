@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read Mode | Calcium</title>
+    <!-- Imports existing global styles and specific read mode styles -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./read.css" />
+</head>
+<body class="rm-iframe-body">
+    <div class="rm-grid-container">
+        <!-- 1. Live Clock & Greeting -->
+        <div class="rm-panel panel-clock">
+          <div class="rm-panel-label">🕐 Live Clock</div>
+          <div class="clock-wrap">
+            <div>
+              <span class="clock-hm" id="rmClockHM">00:00</span>
+              <span class="clock-sec" id="rmClockSec">:00</span>
+            </div>
+            <div class="clock-date-str" id="rmClockDate"></div>
+            <div class="clock-greeting" id="rmGreeting"></div>
+          </div>
+        </div>
+
+        <!-- 2. Productivity: Timer & Stopwatch -->
+        <div class="rm-panel panel-timer">
+          <div class="rm-panel-label">⏱ Timer & Stopwatch</div>
+          <div class="t-tabs">
+            <button class="t-tab on" id="ttabTimer" onclick="setTimerTab('timer')">⏲ Timer</button>
+            <button class="t-tab" id="ttabSW" onclick="setTimerTab('sw')">⏱ Stopwatch</button>
+          </div>
+          <div id="timerSection">
+            <div class="t-inputs">
+              <input class="t-num" type="number" id="tHr" value="00" min="0" max="23" oninput="updateTimerDisplay()" />
+              <span class="t-sep">:</span>
+              <input class="t-num" type="number" id="tMin" value="25" min="0" max="59" oninput="updateTimerDisplay()" />
+              <span class="t-sep">:</span>
+              <input class="t-num" type="number" id="tSec" value="00" min="0" max="59" oninput="updateTimerDisplay()" />
+            </div>
+            <div class="t-display" id="timerDisp">25:00</div>
+            <div class="t-btns">
+              <button class="t-btn go" onclick="timerStart()">▶ Start</button>
+              <button class="t-btn stop" onclick="timerPause()">⏸ Pause</button>
+              <button class="t-btn rst" onclick="timerReset()">↺ Reset</button>
+            </div>
+          </div>
+          <div id="swSection" style="display: none">
+            <div class="t-display" id="swDisp">00:00.0</div>
+            <div class="t-btns">
+              <button class="t-btn go" onclick="swStart()">▶ Start</button>
+              <button class="t-btn stop" onclick="swPause()">⏸ Pause</button>
+              <button class="t-btn rst" onclick="swReset()">↺ Reset</button>
+            </div>
+            <button class="t-btn rst" style="width: 100%; margin-top: 8px" onclick="swLap()">🏁 Lap</button>
+            <div class="sw-laps" id="swLaps"></div>
+          </div>
+        </div>
+
+        <!-- 3. Alarms -->
+        <div class="rm-panel panel-alarm">
+          <div class="rm-panel-label">🔔 Alarms</div>
+          <div class="al-form">
+            <input type="time" class="al-input" id="alTime" />
+            <input type="text" class="al-input" id="alLabel" placeholder="Label" />
+            <button class="al-add" onclick="alarmAdd()">+ Set Alarm</button>
+          </div>
+          <div class="al-list" id="alarmList"></div>
+        </div>
+
+        <!-- ADDED: 3.5 Active Study Blocks (Synced with Planning Mode) -->
+        <div class="rm-panel panel-plan">
+          <div class="rm-panel-label">📅 Active Study Plan</div>
+          <div id="rmStudyBlocks" style="max-height: 250px; overflow-y: auto;">
+              <!-- Dynamic study blocks will go here -->
+          </div>
+        </div>
+
+        <!-- 4. To-Do List with Status Indicators -->
+        <div class="rm-panel panel-tasks">
+          <div class="rm-panel-label">✅ Tasks</div>
+          <div class="tk-stats">
+            <div>Total: <b id="tkTotal">0</b></div>
+            <div>Done: <b id="tkDone">0</b></div>
+            <div>Pending: <b id="tkPend">0</b></div>
+          </div>
+          <div class="tk-form">
+            <input type="text" class="tk-input" id="tkInput" placeholder="Add a task…" onkeydown="if (event.key === 'Enter') { event.preventDefault(); taskAdd(); }" />
+            <select class="tk-pri" id="tkPri">
+              <option value="high">🔴 High</option>
+              <option value="med" selected>🟡 Medium</option>
+              <option value="low">🟢 Low</option>
+            </select>
+            <button class="tk-add" onclick="taskAdd()">+</button>
+          </div>
+          <div class="tk-list" id="taskList"></div>
+        </div>
+
+        <!-- 5. Persistence: Quick Notes -->
+        <div class="rm-panel panel-notes">
+          <div class="rm-panel-label">📝 Quick Notes</div>
+          <textarea class="note-area" id="noteArea" placeholder="Jot formulas, key points..." oninput="noteSave()"></textarea>
+          <div class="note-footer">
+            <span id="noteChars">0 chars</span>
+          </div>
+        </div>
+
+        <!-- 6. Universal Media Player -->
+        <div class="rm-panel panel-media">
+          <div class="rm-panel-label">🎵 Universal Media</div>
+          <div class="media-controls-top">
+            <label for="mediaBrowse" class="media-btn browse-btn">📂 Browse All Media</label>
+            <input type="file" id="mediaBrowse" multiple accept=".mp3,.mov,.wav,.mp4,audio/*,video/*" style="display: none" onchange="handleMediaFiles(this.files)" />
+          </div>
+          <div id="vContainer" style="display: none; margin-bottom: 12px; background: #000; border-radius: 12px; overflow: hidden;">
+            <video id="mediaEngine" playsinline style="width: 100%; max-height: 220px"></video>
+          </div>
+          <div class="player-ui">
+            <div style="text-align: center; margin-bottom: 10px">
+              <div id="mName" style="font-weight: bold; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">No file selected</div>
+              <div id="mTime" style="font-size: 0.7rem; opacity: 0.5">00:00 / 00:00</div>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
+              <button class="p-btn" onclick="mediaPrev()">⏮</button>
+              <button id="pBtn" class="p-btn play-main" onclick="mediaToggle()">▶</button>
+              <button class="p-btn" onclick="mediaNext()">⏭</button>
+            </div>
+            <input type="range" id="mSeek" value="0" step="0.1" oninput="mediaSeekChange()" style="width: 100%; margin-top: 15px" />
+          </div>
+          <div id="mPlaylist" style="margin-top: 15px; border-top: 1px solid rgba(255, 255, 255, 0.1); max-height: 140px; overflow-y: auto;"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notification for Alarms and Timers -->
+    <div class="alarm-toast" id="alarmToast">
+      <div class="toast-icon">🔔</div>
+      <div class="toast-body">
+        <h4 id="toastTitle">Alarm!</h4>
+        <p id="toastLabel">Time's up.</p>
+      </div>
+      <button class="toast-dismiss" onclick="toastDismiss()">Dismiss</button>
+    </div>
+
+    <script src="./read.js"></script>
+</body>
+</html>
