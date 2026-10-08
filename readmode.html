@@ -57,7 +57,15 @@
           </div>
         </div>
 
-        <!-- 3. Alarms -->
+        <!-- 3. Active Study Blocks (Moved here to sit beside the Timer) -->
+        <div class="rm-panel panel-plan">
+          <div class="rm-panel-label">📅 Active Study Plan</div>
+          <div id="rmStudyBlocks" style="max-height: 250px; overflow-y: auto;">
+              <!-- Dynamic study blocks will go here -->
+          </div>
+        </div>
+
+        <!-- 4. Alarms -->
         <div class="rm-panel panel-alarm">
           <div class="rm-panel-label">🔔 Alarms</div>
           <div class="al-form">
@@ -68,15 +76,7 @@
           <div class="al-list" id="alarmList"></div>
         </div>
 
-        <!-- ADDED: 3.5 Active Study Blocks (Synced with Planning Mode) -->
-        <div class="rm-panel panel-plan">
-          <div class="rm-panel-label">📅 Active Study Plan</div>
-          <div id="rmStudyBlocks" style="max-height: 250px; overflow-y: auto;">
-              <!-- Dynamic study blocks will go here -->
-          </div>
-        </div>
-
-        <!-- 4. To-Do List with Status Indicators -->
+        <!-- 5. To-Do List with Status Indicators -->
         <div class="rm-panel panel-tasks">
           <div class="rm-panel-label">✅ Tasks</div>
           <div class="tk-stats">
@@ -96,7 +96,7 @@
           <div class="tk-list" id="taskList"></div>
         </div>
 
-        <!-- 5. Persistence: Quick Notes -->
+        <!-- 6. Persistence: Quick Notes -->
         <div class="rm-panel panel-notes">
           <div class="rm-panel-label">📝 Quick Notes</div>
           <textarea class="note-area" id="noteArea" placeholder="Jot formulas, key points..." oninput="noteSave()"></textarea>
@@ -105,7 +105,7 @@
           </div>
         </div>
 
-        <!-- 6. Universal Media Player -->
+        <!-- 7. Universal Media Player -->
         <div class="rm-panel panel-media">
           <div class="rm-panel-label">🎵 Universal Media</div>
           <div class="media-controls-top">
