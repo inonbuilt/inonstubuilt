@@ -959,10 +959,10 @@ const caseStudies = [
   answer: 2,
   reason: "ITIL 4 adopts a holistic approach to service management through four dimensions: Organizations and people; Information and technology; Partners and suppliers; and Value streams and processes."
 },
-// Chapter 2
+// Chapter2
 
 {
-  case_id: "ecosys_ch2_CS01(start with 1)",
+  case_id: "ecosys_ch2_CS01",
   difficulty: "Easy",
   chapter: "Chapter2",
   caseText: ` 
@@ -1029,7 +1029,7 @@ const caseStudies = [
 },
 
 {
-  case_id: "ecosys_ch2_CS02(start with 2)",
+  case_id: "ecosys_ch2_CS02",
   difficulty: "Easy",
   chapter: "Chapter2",
   caseText: ` 
@@ -1096,7 +1096,7 @@ const caseStudies = [
 },
 
 {
-  case_id: "ecosys_ch2_CS03(start with 3)",
+  case_id: "ecosys_ch2_CS03",
   difficulty: "Easy",
   chapter: "Chapter2",
   caseText: ` 
@@ -1163,7 +1163,7 @@ const caseStudies = [
 },
 
 {
-  case_id: "ecosys_ch2_CS04(start with 4)",
+  case_id: "ecosys_ch2_CS04",
   difficulty: "Easy",
   chapter: "Chapter2",
   caseText: ` 
@@ -1230,7 +1230,7 @@ const caseStudies = [
 },
 
 {
-  case_id: "ecosys_ch2_CS05(start with 5)",
+  case_id: "ecosys_ch2_CS05",
   difficulty: "Easy",
   chapter: "Chapter2",
   caseText: ` 
@@ -1297,7 +1297,7 @@ const caseStudies = [
 },
 
 {
-  case_id: "ecosys_ch2_CS06(start with 6)",
+  case_id: "ecosys_ch2_CS06",
   difficulty: "Easy",
   chapter: "Chapter2",
   caseText: ` 
@@ -1364,7 +1364,7 @@ const caseStudies = [
 },
 
 {
-  case_id: "ecosys_ch2_CS07(start with 7)",
+  case_id: "ecosys_ch2_CS07",
   difficulty: "Easy",
   chapter: "Chapter2",
   caseText: ` 
@@ -1431,7 +1431,7 @@ const caseStudies = [
 },
 
 {
-  case_id: "ecosys_ch2_CS08(start with 8)",
+  case_id: "ecosys_ch2_CS08",
   difficulty: "Easy",
   chapter: "Chapter2",
   caseText: ` 
@@ -1498,7 +1498,7 @@ const caseStudies = [
 },
 
 {
-  case_id: "ecosys_ch2_CS09(start with 9)",
+  case_id: "ecosys_ch2_CS09",
   difficulty: "Easy",
   chapter: "Chapter2",
   caseText: ` 
@@ -1565,7 +1565,7 @@ const caseStudies = [
 },
 
 {
-  case_id: "ecosys_ch2_CS10(start with 10)",
+  case_id: "ecosys_ch2_CS10",
   difficulty: "Easy",
   chapter: "Chapter2",
   caseText: ` 
@@ -1632,7 +1632,7 @@ const caseStudies = [
 },
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 1)",
+  case_id: "ecosys_ch2_00",
   case_chapter: "chapter2",
   question: "Which of the following best describes GRC?",
   options: [
@@ -1647,7 +1647,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 2)",
+  case_id: "ecosys_ch2_02",
   case_chapter: "chapter2",
   question: "Which activity is associated with governance?",
   options: [
@@ -1662,7 +1662,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 3)",
+  case_id: "ecosys_ch2_03",
   case_chapter: "chapter2",
   question: "Which of the following is an example of an organizational asset?",
   options: [
@@ -1677,7 +1677,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 4)",
+  case_id: "ecosys_ch2_04",
   case_chapter: "chapter2",
   question: "Which CIA tenet refers to the prevention of unauthorized disclosure of information?",
   options: [
@@ -1692,7 +1692,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 5)",
+  case_id: "ecosys_ch2_05",
   case_chapter: "chapter2",
   question: "Which CIA tenet deals with the validity and accuracy of data?",
   options: [
@@ -1707,7 +1707,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 6)",
+  case_id: "ecosys_ch2_06",
   case_chapter: "chapter2",
   question: "A company identifies a short password policy that makes its information system vulnerable to password cracking. What does the short password represent?",
   options: [
@@ -1722,7 +1722,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 7)",
+  case_id: "ecosys_ch2_07",
   case_chapter: "chapter2",
   question: "What is risk in the context of information security?",
   options: [
@@ -1737,7 +1737,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 8)",
+  case_id: "ecosys_ch2_08",
   case_chapter: "chapter2",
   question: "What is the level of risk after initial control measures have been put in place?",
   options: [
@@ -1752,7 +1752,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 9)",
+  case_id: "ecosys_ch2_09",
   case_chapter: "chapter2",
   question: "Which type of risk may expose an organization to fines and penalties due to non-compliance with laws and regulations?",
   options: [
@@ -1767,7 +1767,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 10)",
+  case_id: "ecosys_ch2_10",
   case_chapter: "chapter2",
   question: "Which risk classification system consists of Financial, Infrastructure, Reputational and Marketplace risks?",
   options: [
@@ -1782,7 +1782,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 11)",
+  case_id: "ecosys_ch2_11",
   case_chapter: "chapter2",
   question: "Which risk management strategy involves handing the risk off to a willing third party?",
   options: [
@@ -1797,7 +1797,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 12)",
+  case_id: "ecosys_ch2_12",
   case_chapter: "chapter2",
   question: "Which 4T strategy is generally suitable where the risk has low impact and low likelihood?",
   options: [
@@ -1812,7 +1812,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 13)",
+  case_id: "ecosys_ch2_13",
   case_chapter: "chapter2",
   question: "An attacker tries different passwords until one succeeds. Which attack is being used?",
   options: [
@@ -1827,7 +1827,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 14)",
+  case_id: "ecosys_ch2_14",
   case_chapter: "chapter2",
   question: "Which attack uses dictionary words in an attempt to obtain a user's password?",
   options: [
@@ -1842,7 +1842,7 @@ const caseStudies = [
 
 {
   difficulty: "Easy",
-  case_id: "ecosys_ch2_00(start with 15)",
+  case_id: "ecosys_ch2_15",
   case_chapter: "chapter2",
   question: "Which malware masquerades as a useful program while hiding malicious code?",
   options: [
@@ -1856,7 +1856,7 @@ const caseStudies = [
 },
 {
   difficulty: "Medium",
-  case_id: "ecosys_ch2_00(start with 16)",
+  case_id: "ecosys_ch2_16",
   case_chapter: "chapter2",
   question: "What should management consider when deciding whether to implement a control for a particular risk?",
   options: [
@@ -1871,7 +1871,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_id: "ecosys_ch2_00(start with 17)",
+  case_id: "ecosys_ch2_17",
   case_chapter: "chapter2",
   question: "A company purchases insurance so that an insurance provider will bear losses arising from a business disruption. Which risk management strategy is illustrated?",
   options: [
@@ -1886,7 +1886,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_id: "ecosys_ch2_00(start with 18)",
+  case_id: "ecosys_ch2_18",
   case_chapter: "chapter2",
   question: "A company replaces a risky vendor with a more capable supplier because the existing vendor creates a high-probability, high-impact exposure. Which response is most consistent with the 4T risk matrix?",
   options: [
@@ -1901,7 +1901,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_id: "ecosys_ch2_00(start with 19)",
+  case_id: "ecosys_ch2_19",
   case_chapter: "chapter2",
   question: "A business continues using a system but installs controls to constrain its risk to an acceptable level. Which 4T strategy does this represent?",
   options: [
@@ -1916,7 +1916,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_id: "ecosys_ch2_00(start with 20)",
+  case_id: "ecosys_ch2_20",
   case_chapter: "chapter2",
   question: "An attacker sends a fraudulent message that appears to come from a trusted financial institution and urgently asks a user to provide account information through a link. Which attack is most directly indicated?",
   options: [
@@ -1931,7 +1931,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_id: "ecosys_ch2_00(start with 21)",
+  case_id: "ecosys_ch2_21",
   case_chapter: "chapter2",
   question: "A security team notices that an attacker has taken over an existing connection between two network computers by determining their sequence numbers and generating traffic appearing to come from one communicating party. Which attack is this?",
   options: [
@@ -1946,7 +1946,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_id: "ecosys_ch2_00(start with 22)",
+  case_id: "ecosys_ch2_22",
   case_chapter: "chapter2",
   question: "A firm's employee is deceived into allowing an unknown person into a secure area because the person claims to be a technician. Which attack technique is illustrated?",
   options: [
@@ -1961,7 +1961,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_id: "ecosys_ch2_00(start with 23)",
+  case_id: "ecosys_ch2_23",
   case_chapter: "chapter2",
   question: "A program independently replicates and sends copies of itself across a network without requiring a host program or user action. Which malware is described?",
   options: [
@@ -1976,7 +1976,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_id: "ecosys_ch2_00(start with 24)",
+  case_id: "ecosys_ch2_24",
   case_chapter: "chapter2",
   question: "Management observes that an information system has a weakness that permits an attacker to access data contrary to specified access restrictions. Which concept does this situation primarily represent?",
   options: [
@@ -1991,7 +1991,7 @@ const caseStudies = [
 
 {
   difficulty: "Medium",
-  case_id: "ecosys_ch2_00(start with 25)",
+  case_id: "ecosys_ch2_25",
   case_chapter: "chapter2",
   question: "A regulator changes requirements, and the organisation's internal control may become ineffective because of the changed external environment. Which internal control component specifically requires management to consider such changes?",
   options: [
@@ -2006,7 +2006,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_id: "ecosys_ch2_00(start with 26)",
+  case_id: "ecosys_ch2_26",
   case_chapter: "chapter2",
   question: "A company has a low-impact, low-likelihood risk and consciously accepts it after determining that the cost of further action would be disproportionate. Which statement best reflects the chapter?",
   options: [
@@ -2021,7 +2021,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_id: "ecosys_ch2_00(start with 27)",
+  case_id: "ecosys_ch2_27",
   case_chapter: "chapter2",
   question: "A company categorises an exposure involving network outages, downtime, hardware incompatibility and vendor reliability. Which risk classification is the most appropriate?",
   options: [
@@ -2036,7 +2036,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_id: "ecosys_ch2_00(start with 28)",
+  case_id: "ecosys_ch2_28",
   case_chapter: "chapter2",
   question: "An organisation discovers that senior management overrides an established control for a transaction. Which limitation of internal control is directly demonstrated?",
   options: [
@@ -2051,7 +2051,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_id: "ecosys_ch2_00(start with 29)",
+  case_id: "ecosys_ch2_29",
   case_chapter: "chapter2",
   question: "An organisation's compliance programme covers both external regulatory requirements and internal policies. Management decides that the programme should be integrated so that compliance can be sustained as regulations change. Which approach is most consistent with the chapter?",
   options: [
@@ -2066,7 +2066,7 @@ const caseStudies = [
 
 {
   difficulty: "Hard",
-  case_id: "ecosys_ch2_00(start with 30)",
+  case_id: "ecosys_ch2_30",
   case_chapter: "chapter2",
   question: "A security team first evaluates risk before any action is taken, then measures the risk after initial controls are implemented, and finally establishes the desired level to be achieved through further controls. Which sequence correctly identifies the three levels of risk?",
   options: [
@@ -2077,7 +2077,2036 @@ const caseStudies = [
   ],
   answer: 2,
   reason: "Inherent risk is the level before any actions have been taken to change the likelihood or magnitude of the risk. Current/Residual risk is the level after initial control measures have been put in place. Target risk is the desired level to be obtained with further control measures."
+},
+// CHapter3
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_30",
+  case_chapter: "chapter3",
+  question: "What does Enterprise Risk Management (ERM) primarily provide for risk management?",
+  options: [
+    "A framework for risk management",
+    "A method for financial reporting only",
+    "A framework for employee recruitment",
+    "A system for marketing management"
+  ],
+  answer: 0,
+  reason: "ERM provides a framework for risk management which involves identifying potential threats or risks, determining the magnitude of the threat or risk, considering its consequences and impact, and implementing controls to mitigate the risks."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_31",
+  case_chapter: "chapter3",
+  question: "Which of the following is a key element of Enterprise Risk Management (ERM)?",
+  options: [
+    "Identifying potential threats or risks",
+    "Eliminating all business activities",
+    "Avoiding all strategic decisions",
+    "Guaranteeing positive outcomes"
+  ],
+  answer: 0,
+  reason: "ERM provides a framework for identifying potential threats or risks as one of its key elements."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_32",
+  case_chapter: "chapter3",
+  question: "ERM is applied by setting strategies across which level of an enterprise?",
+  options: [
+    "Only the finance department",
+    "Only the operating unit",
+    "The overall enterprise",
+    "Only the board of directors"
+  ],
+  answer: 2,
+  reason: "ERM is applied by setting strategies across the overall enterprise and should be applied across the entire enterprise using a portfolio type of approach."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_33",
+  case_chapter: "chapter3",
+  question: "What is risk appetite?",
+  options: [
+    "The amount of risk an enterprise is willing to accept in pursuit of value",
+    "The amount of loss an organization is unable to identify",
+    "The total amount of capital invested by an enterprise",
+    "The amount of profit expected from an investment"
+  ],
+  answer: 0,
+  reason: "Risk appetite is the amount of risk, on a broad level, that an enterprise and its individual managers are willing to accept in their pursuit of value."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_34",
+  case_chapter: "chapter3",
+  question: "What does risk tolerance represent?",
+  options: [
+    "The amount of risk an enterprise wishes to create",
+    "The amount of loss that an organization or individual is prepared to handle while making a decision",
+    "The amount of return expected from an investment",
+    "The amount of capital allocated to risk management"
+  ],
+  answer: 1,
+  reason: "Risk tolerance is the amount of loss that an organization or individual is prepared to handle while making a decision."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_35",
+  case_chapter: "chapter3",
+  question: "ERM provides what level of assurance regarding the achievement of entity objectives?",
+  options: [
+    "Absolute assurance",
+    "Guaranteed assurance",
+    "Reasonable assurance",
+    "No assurance"
+  ],
+  answer: 2,
+  reason: "ERM is designed to provide reasonable assurance regarding the achievement of entity objectives. Reasonable assurance does not provide absolute assurance."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_36",
+  case_chapter: "chapter3",
+  question: "Which of the following is a benefit of Enterprise Risk Management?",
+  options: [
+    "Align risk appetite and strategy",
+    "Eliminate all business risks",
+    "Guarantee financial success",
+    "Remove the need for controls"
+  ],
+  answer: 0,
+  reason: "One of the benefits of ERM is to align risk appetite and strategy. ERM does not create a risk-free environment."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_37",
+  case_chapter: "chapter3",
+  question: "Which of the following is one of the risk responses identified under ERM?",
+  options: [
+    "Avoidance",
+    "Expansion",
+    "Promotion",
+    "Delegation"
+  ],
+  answer: 0,
+  reason: "ERM provides methodologies and techniques for selecting among alternative risk responses, including risk avoidance, mitigation, transference, and acceptance."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_38",
+  case_chapter: "chapter3",
+  question: "Which of the following is an objective category of the COSO ERM Framework?",
+  options: [
+    "Strategic",
+    "Personnel",
+    "Marketing",
+    "Procurement"
+  ],
+  answer: 0,
+  reason: "The COSO ERM Framework identifies four objective categories: Strategic, Operations, Reporting, and Compliance."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_39",
+  case_chapter: "chapter3",
+  question: "Which COSO ERM objective category relates to compliance with applicable laws and regulations?",
+  options: [
+    "Strategic",
+    "Operations",
+    "Reporting",
+    "Compliance"
+  ],
+  answer: 3,
+  reason: "Compliance objectives refer to an entity's need to comply with applicable laws and regulations."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_40",
+  case_chapter: "chapter3",
+  question: "How many interrelated components are included in the COSO ERM Framework described in the chapter?",
+  options: [
+    "Five",
+    "Six",
+    "Eight",
+    "Ten"
+  ],
+  answer: 2,
+  reason: "The ERM framework consists of eight interrelated components that are derived from the way management runs a business and are integrated with the management process."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_41",
+  case_chapter: "chapter3",
+  question: "Which ERM component establishes the basis for how risk is viewed and addressed by an entity's people?",
+  options: [
+    "Risk Assessment",
+    "Control Environment",
+    "Risk Response",
+    "Monitoring"
+  ],
+  answer: 1,
+  reason: "The control environment sets the foundation for how risk and control are viewed and addressed by an entity's people. It encompasses the tone of an organization and includes risk management philosophy, risk appetite, integrity and ethical values."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_42",
+  case_chapter: "chapter3",
+  question: "Which ERM component involves setting objectives before management identifies events potentially affecting their achievement?",
+  options: [
+    "Objective Setting",
+    "Monitoring",
+    "Control Activities",
+    "Risk Response"
+  ],
+  answer: 0,
+  reason: "Objectives should be set before management can identify events potentially affecting their achievement. Objective Setting ensures that chosen objectives support and align with the entity's mission or vision and are consistent with its risk appetite."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_43",
+  case_chapter: "chapter3",
+  question: "Which ERM component involves analysing identified risks to determine how they should be managed?",
+  options: [
+    "Event Identification",
+    "Risk Assessment",
+    "Information and Communication",
+    "Monitoring"
+  ],
+  answer: 1,
+  reason: "Risk Assessment involves analysing identified risks to form a basis for determining how they should be managed. Risks are assessed on both an inherent and a residual basis, considering risk likelihood and impact."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_44",
+  case_chapter: "chapter3",
+  question: "Which ERM component ensures that policies and procedures are established and executed to help ensure that selected risk responses are effectively carried out?",
+  options: [
+    "Risk Response",
+    "Control Activities",
+    "Objective Setting",
+    "Event Identification"
+  ],
+  answer: 1,
+  reason: "Control Activities are policies and procedures established and executed to help ensure that the risk responses selected by management are effectively carried out."
+},
+{
+  difficulty: "Medium",
+  case_id: "ecosys_ch3_45",
+  case_chapter: "chapter3",
+  question: "An organization considers risks affecting its strategy, projects and operations together rather than managing each risk in isolation. Which approach is the organization moving towards?",
+  options: [
+    "A compliance-only approach",
+    "An Enterprise Risk Management approach",
+    "A financial reporting approach",
+    "An operating-unit-only approach"
+  ],
+  answer: 1,
+  reason: "When an organization adopts a holistic approach and considers all the risks that it faces and how these risks could impact its strategy, projects, and operations, it is embarking towards an Enterprise Risk Management (ERM) approach."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "ecosys_ch3_46",
+  case_chapter: "chapter3",
+  question: "A company has established a detailed set of risk rules at its head office, but the operating units applying those rules have little understanding of local factors surrounding the risks. Which ERM principle is most relevant to this situation?",
+  options: [
+    "ERM processes are implemented by people in the enterprise who are close enough to the risk situation to understand its implications",
+    "ERM should be implemented only by the board of directors",
+    "ERM should be restricted to a single operating unit",
+    "ERM can be made effective through a static procedure alone"
+  ],
+  answer: 0,
+  reason: "ERM processes are implemented by people in the enterprise. The risk management process must be managed by people who are close enough to the risk situation to understand the various factors surrounding that risk, including its implications."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "ecosys_ch3_47",
+  case_chapter: "chapter3",
+  question: "A management team compares two strategic alternatives and considers whether the entity should adopt new technology or continue with an existing process. Which ERM principle is being applied?",
+  options: [
+    "ERM is applied by setting strategies across the overall enterprise",
+    "ERM is limited to monitoring existing controls",
+    "ERM provides absolute assurance on objective achievement",
+    "ERM eliminates the need to consider alternative strategies"
+  ],
+  answer: 0,
+  reason: "An effective ERM should play a major role in helping to establish alternative strategies. ERM is applied by setting strategies across the overall enterprise."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "ecosys_ch3_48",
+  case_chapter: "chapter3",
+  question: "An entity is evaluating a strategic alternative after first considering the degree of risk it is broadly willing to accept in pursuit of its goals. Which benefit of ERM is most directly reflected?",
+  options: [
+    "Minimize operational surprises and losses",
+    "Rationalize capital",
+    "Align risk appetite and strategy",
+    "Provide integrated responses to multiple risks"
+  ],
+  answer: 2,
+  reason: "ERM helps management consider the entity's risk appetite first in evaluating strategic alternatives, then set objectives aligned with the selected strategy and develop mechanisms to manage the related risks. This reflects the benefit of aligning risk appetite and strategy."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "ecosys_ch3_49",
+  case_chapter: "chapter3",
+  question: "Management identifies several risks arising in different parts of the enterprise and examines their interrelated impacts instead of considering them separately. Which benefit of ERM is most applicable?",
+  options: [
+    "Seize opportunities",
+    "Identify and manage cross-enterprise risks",
+    "Rationalize capital",
+    "Link growth, risk, and return"
+  ],
+  answer: 1,
+  reason: "ERM enables management to identify and manage cross-enterprise risks by understanding interrelated impacts across different parts of the enterprise."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "ecosys_ch3_50",
+  case_chapter: "chapter3",
+  question: "A business process contains several inherent risks and management develops an integrated solution instead of treating each risk through separate isolated measures. Which ERM benefit does this illustrate?",
+  options: [
+    "Provide integrated responses to multiple risks",
+    "Align risk appetite and strategy",
+    "Rationalize capital",
+    "Seize opportunities"
+  ],
+  answer: 0,
+  reason: "Business processes carry many inherent risks, and ERM enables integrated solutions for managing those risks. This reflects the benefit of providing integrated responses to multiple risks."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "ecosys_ch3_51",
+  case_chapter: "chapter3",
+  question: "While assessing an identified risk, management considers both the likelihood of occurrence and the impact of the risk and assesses it before and after controls. Which ERM component is being applied?",
+  options: [
+    "Event Identification",
+    "Risk Assessment",
+    "Control Activities",
+    "Monitoring"
+  ],
+  answer: 1,
+  reason: "Risk Assessment involves analysing identified risks and considers both risk likelihood and impact. Risks are assessed on both an inherent and a residual basis."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "ecosys_ch3_52",
+  case_chapter: "chapter3",
+  question: "Management identifies potential events and distinguishes between events that represent risks, those representing opportunities, and those that may be both. Which ERM component is primarily involved?",
+  options: [
+    "Objective Setting",
+    "Risk Response",
+    "Event (or Risk) Identification",
+    "Control Activities"
+  ],
+  answer: 2,
+  reason: "Event (or Risk) Identification includes distinguishing between potential events that represent risks, those representing opportunities, and those that may be both. Opportunities are channelled back to management's strategy or objective-setting processes."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "ecosys_ch3_53",
+  case_chapter: "chapter3",
+  question: "An entity establishes objectives that support its mission and vision, are consistent with its risk appetite, and satisfy the Specific, Measurable, Attainable, Relevant and Timely requirements. Which ERM component is illustrated?",
+  options: [
+    "Control Environment",
+    "Objective Setting",
+    "Risk Assessment",
+    "Information and Communication"
+  ],
+  answer: 1,
+  reason: "Objective Setting requires management to set objectives that support and align with the entity's mission or vision and are consistent with its risk appetite. The objectives should meet the SMART test: Specific, Measurable, Attainable, Relevant and Timely."
+},
+
+{
+  difficulty: "Medium",
+  case_id: "ecosys_ch3_54",
+  case_chapter: "chapter3",
+  question: "Management has selected a risk response, and policies and procedures are established and executed to ensure that the selected response is effectively carried out. Which component is this?",
+  options: [
+    "Control Activities",
+    "Risk Assessment",
+    "Event Identification",
+    "Monitoring"
+  ],
+  answer: 0,
+  reason: "Control Activities are policies and procedures established and executed to help ensure that the risk responses selected by management are effectively carried out."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "ecosys_ch3_55",
+  case_chapter: "chapter3",
+  question: "An entity has strong ERM controls and employees consistently work towards understood objectives. However, an unexpected natural disaster causes a major failure. Which conclusion is most consistent with the chapter?",
+  options: [
+    "ERM should have prevented the failure because effective controls provide absolute assurance",
+    "ERM provides reasonable assurance, but not absolute assurance, regarding achievement of objectives",
+    "ERM is ineffective whenever an unexpected event occurs",
+    "ERM provides positive assurance whenever management follows established procedures"
+  ],
+  answer: 1,
+  reason: "ERM provides only reasonable, not positive assurance on objective achievements. Even a well-controlled enterprise can experience an unexpected failure because factors such as human error, unexpected actions by others, or natural disasters can occur. Reasonable assurance does not provide absolute assurance."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "ecosys_ch3_56",
+  case_chapter: "chapter3",
+  question: "A risk-management team categorizes risks using likelihood and impact, establishes responses, and later consolidates the risks affecting business objectives to evaluate their interdependencies and relative size. Which 2017 COSO principle most specifically describes the final activity?",
+  options: [
+    "Prioritizes Risk",
+    "Assesses Severity of Risk",
+    "Develops Portfolio View",
+    "Implements Risk Responses"
+  ],
+  answer: 2,
+  reason: "Develops Portfolio View provides a composite view of the risks the organization faces relative to business objectives. It allows management and the board to consider the nature, likelihood, relative size, and interdependencies of risks and how they may affect performance."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "ecosys_ch3_57",
+  case_chapter: "chapter3",
+  question: "An organization detects a substantial change that may invalidate a critical assumption underlying its strategy. It then evaluates whether its risk responses are performing as intended and continuously identifies improvements to ERM. Which combination of 2017 COSO components is being applied?",
+  options: [
+    "Governance and Culture; Strategy and Objective-Setting",
+    "Performance; Information, Communication and Reporting",
+    "Review and Revision; Information, Communication and Reporting",
+    "Review and Revision; Strategy and Objective-Setting"
+  ],
+  answer: 2,
+  reason: "Review and Revision focuses on monitoring ERM performance following substantial change, emerging risks and necessary revisions. It also includes reviewing risk performance and pursuing continuous improvement in ERM. Information, Communication and Reporting is the component concerned with the continuous process of obtaining and sharing relevant information and reporting on risk."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "ecosys_ch3_58",
+  case_chapter: "chapter3",
+  question: "An entity has completed the initial ERM planning, established risk benchmarks, determined risk appetite and tolerance, and evaluated its controls. It now needs to evaluate control effectiveness, align risk management with existing activities, and embed a risk-aware culture. Under PIML, which stage should it undertake?",
+  options: [
+    "Planning",
+    "Implementing",
+    "Measuring",
+    "Learning"
+  ],
+  answer: 2,
+  reason: "Under PIML, the Measuring stage includes evaluating the effectiveness of existing controls and introducing improvements, aligning risk management activities with existing processes, and embedding a risk-aware culture."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "ecosys_ch3_59",
+  case_chapter: "chapter3",
+  question: "A company completes the PIML cycle and reviews its risk performance indicators and reports risk performance in line with its obligations. The framework then requires the process to begin again with improvements incorporated. Which statement best explains this approach?",
+  options: [
+    "PIML is a one-time process completed after the first risk assessment",
+    "Learning is the final permanent stage and eliminates the need for further planning",
+    "PIML is a continuous process in which learning feeds into the next round of planning and improvement",
+    "PIML requires the organization to replace its existing risk-management methodology after every cycle"
+  ],
+  answer: 2,
+  reason: "The PIML model is a continuous process. Once the process is completed from planning to learning, the next round of planning is required after an appropriate time and regular review, with the scope of improvement incorporated."
+},
+{
+  case_id: "ecosys_ch3_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Alpha Manufacturing has been managing individual risks separately. The management now wants to adopt a holistic approach that considers risks faced by the enterprise and their possible effect on strategy, projects and operations.</p>
+    <p>The Board also wants the risk management process to remain flexible so that documented steps can be reviewed and modified according to changing business requirements. Management wants the process to be applied across the enterprise rather than as a small, tightly organised rule book.</p>
+  `,
+  questions: [
+    {
+      question: "Which approach is Alpha Manufacturing moving towards?",
+      options: [
+        "Enterprise Risk Management (ERM)",
+        "Production Management",
+        "Financial Reporting",
+        "Marketing Management"
+      ],
+      answer: 0,
+      reason: "When an organization adopts a holistic approach and considers all the risks that it faces and how these risks could impact its strategy, projects, and operations, it is embarking towards an Enterprise Risk Management (ERM) approach."
+    },
+    {
+      question: "How should ERM be viewed as a process?",
+      options: [
+        "As a static procedure",
+        "As a dynamic process",
+        "As a one-time activity",
+        "As a financial reporting procedure"
+      ],
+      answer: 1,
+      reason: "The chapter explains that ERM is a process but a dynamic one wherein the steps are altered and modified to suit the requirements of the business."
+    },
+    {
+      question: "Who should manage the risk management process at the operating level?",
+      options: [
+        "Only distant corporate headquarters",
+        "People who are close enough to the risk situation to understand its factors and implications",
+        "Only external regulators",
+        "Only external auditors"
+      ],
+      answer: 1,
+      reason: "The risk management process must be managed by people who are close enough to the risk situation to understand the various factors surrounding that risk including its implications."
+    },
+    {
+      question: "Across what level should ERM be applied when establishing strategies?",
+      options: [
+        "Only the finance department",
+        "Only one operating unit",
+        "The overall enterprise",
+        "Only the Board"
+      ],
+      answer: 2,
+      reason: "ERM is applied by setting strategies across the overall enterprise and should be applied across the entire enterprise using a portfolio type of approach."
+    },
+    {
+      question: "What nature of assurance does ERM provide regarding achievement of objectives?",
+      options: [
+        "Absolute assurance",
+        "Guaranteed assurance",
+        "Reasonable assurance",
+        "No assurance"
+      ],
+      answer: 2,
+      reason: "ERM is designed to provide reasonable assurance regarding the achievement of entity objectives. Reasonable assurance does not provide absolute assurance."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Beta Technologies is deciding whether to undertake a high-return business opportunity that also involves significant risks. Management first considers the broad level of risk the enterprise is willing to accept in pursuit of value.</p>
+    <p>The management then considers the amount of loss the organisation is prepared to handle while making decisions. The Board wants these concepts to be properly integrated with the control environment for effective decision-making.</p>
+  `,
+  questions: [
+    {
+      question: "What concept describes the broad level of risk Beta Technologies is willing to accept in pursuit of value?",
+      options: [
+        "Risk tolerance",
+        "Risk appetite",
+        "Risk assessment",
+        "Risk response"
+      ],
+      answer: 1,
+      reason: "Risk appetite is the amount of risk, on a broad level, that an enterprise and its individual managers are willing to accept in their pursuit of value."
+    },
+    {
+      question: "What does risk tolerance represent in the case?",
+      options: [
+        "The amount of return expected from an investment",
+        "The amount of loss that an organization or individual is prepared to handle while making a decision",
+        "The total capital of the organisation",
+        "The number of risks identified by management"
+      ],
+      answer: 1,
+      reason: "Risk tolerance is the amount of loss that an organization or individual is prepared to handle while making a decision."
+    },
+    {
+      question: "Risk appetite and risk tolerance may be viewed as what?",
+      options: [
+        "Unrelated concepts",
+        "Two sides of the same coin",
+        "Different forms of financial reporting",
+        "Alternative control activities"
+      ],
+      answer: 1,
+      reason: "The chapter states that risk appetite and risk tolerance can be viewed as the 'two sides of the same coin' as they relate to organizational performance over time."
+    },
+    {
+      question: "Risk appetite is primarily associated with which of the following?",
+      options: [
+        "Taking risk",
+        "Eliminating all risk",
+        "Preparing financial statements",
+        "Monitoring employees"
+      ],
+      answer: 0,
+      reason: "The chapter explains that risk appetite is about 'taking risk' whereas risk tolerance is about 'controlling risk'."
+    },
+    {
+      question: "For risk appetite to be adopted successfully in decision-making, it must be integrated with the control environment through what?",
+      options: [
+        "Risk tolerance",
+        "Event identification",
+        "Reporting",
+        "Capital allocation"
+      ],
+      answer: 0,
+      reason: "For risk appetite to be adopted successfully in decision making, it must be integrated with the control environment of the organization through risk tolerance."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Gamma Retail is reviewing the benefits of introducing Enterprise Risk Management. Management wants to ensure that strategic decisions consider the entity's risk appetite and that risks affecting different parts of the enterprise are understood together.</p>
+    <p>The management also wants to reduce operational surprises, identify opportunities arising from potential events, and make better decisions regarding overall capital requirements and allocation.</p>
+  `,
+  questions: [
+    {
+      question: "Which ERM benefit requires management to consider risk appetite while evaluating strategic alternatives?",
+      options: [
+        "Align risk appetite and strategy",
+        "Rationalize capital",
+        "Seize opportunities",
+        "Minimize operational surprises and losses"
+      ],
+      answer: 0,
+      reason: "Under ERM, management considers the entity's risk appetite first in evaluating strategic alternatives, then sets objectives aligned with the selected strategy and develops mechanisms to manage related risks."
+    },
+    {
+      question: "Which benefit focuses on understanding risks affecting different parts of the enterprise and their interrelated impacts?",
+      options: [
+        "Identify and manage cross-enterprise risks",
+        "Link growth, risk, and return",
+        "Rationalize capital",
+        "Seize opportunities"
+      ],
+      answer: 0,
+      reason: "ERM enables management to identify and manage cross-enterprise risks and understand interrelated impacts affecting different parts of the enterprise."
+    },
+    {
+      question: "Which ERM benefit is directly concerned with reducing the occurrence of surprises and related costs or losses?",
+      options: [
+        "Seize opportunities",
+        "Minimize operational surprises and losses",
+        "Rationalize capital",
+        "Align risk appetite and strategy"
+      ],
+      answer: 1,
+      reason: "ERM enhances the capability to identify potential events, assess risk and establish responses, thereby reducing the occurrence of surprises and related costs or losses."
+    },
+    {
+      question: "Considering potential events that may represent opportunities illustrates which ERM benefit?",
+      options: [
+        "Seize opportunities",
+        "Rationalize capital",
+        "Link growth, risk, and return",
+        "Minimize operational surprises and losses"
+      ],
+      answer: 0,
+      reason: "Management considers potential events, rather than just risks, and by considering a full range of events, gains an understanding of how certain events represent opportunities."
+    },
+    {
+      question: "Which ERM benefit helps management assess overall capital needs and improve capital allocation?",
+      options: [
+        "Seize opportunities",
+        "Provide integrated responses to multiple risks",
+        "Rationalize capital",
+        "Align risk appetite and strategy"
+      ],
+      answer: 2,
+      reason: "More robust information on an entity's total risk allows management to assess more effectively overall capital needs and improve capital allocation."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Delta Services is implementing the COSO ERM Framework. Management begins by establishing the tone of the organisation and defining how risk and control should be viewed. It then sets objectives aligned with the entity's mission and risk appetite.</p>
+    <p>After this, management identifies potential events that may affect objectives and analyses identified risks by considering likelihood and impact, including both inherent and residual risk.</p>
+  `,
+  questions: [
+    {
+      question: "Which ERM component establishes the basis for how risk and control are viewed and addressed by the entity's people?",
+      options: [
+        "Control Environment",
+        "Objective Setting",
+        "Risk Assessment",
+        "Monitoring"
+      ],
+      answer: 0,
+      reason: "The control environment sets the foundation for how risk and control are viewed and addressed by an entity's people."
+    },
+    {
+      question: "Which ERM component requires objectives to be set before management identifies events potentially affecting their achievement?",
+      options: [
+        "Risk Response",
+        "Objective Setting",
+        "Event Identification",
+        "Control Activities"
+      ],
+      answer: 1,
+      reason: "Objectives should be set before management can identify events potentially affecting their achievement. This is the Objective Setting component."
+    },
+    {
+      question: "Which ERM component involves identifying internal and external factors that may influence the achievement of objectives?",
+      options: [
+        "Event (or Risk) Identification",
+        "Control Activities",
+        "Monitoring",
+        "Risk Response"
+      ],
+      answer: 0,
+      reason: "Event identification includes identifying internal and external factors that influence how potential events may affect strategy implementation and achievement of objectives."
+    },
+    {
+      question: "Which component analyses identified risks considering likelihood and impact?",
+      options: [
+        "Objective Setting",
+        "Risk Assessment",
+        "Information and Communication",
+        "Control Activities"
+      ],
+      answer: 1,
+      reason: "Risk Assessment involves analysing identified risks and considering both risk likelihood and impact. Risks are assessed on both an inherent and a residual basis."
+    },
+    {
+      question: "On which bases are risks assessed under the Risk Assessment component?",
+      options: [
+        "Strategic and operational bases only",
+        "Financial and non-financial bases only",
+        "Inherent and residual bases",
+        "Internal and external bases only"
+      ],
+      answer: 2,
+      reason: "Risks are assessed on both an inherent and a residual basis, and the assessment considers both risk likelihood and impact."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Omega Logistics has completed its risk assessment. Management now selects suitable responses based on the entity's risk tolerance and risk appetite. Policies and procedures are then established to ensure that selected responses are effectively carried out.</p>
+    <p>The entity also ensures that relevant risk information reaches employees in an appropriate form and time frame. Finally, the entire ERM process is continuously reviewed so that modifications can be made when necessary.</p>
+  `,
+  questions: [
+    {
+      question: "Which ERM component deals with selecting an approach or set of actions to align assessed risks with risk tolerance and risk appetite?",
+      options: [
+        "Risk Response",
+        "Risk Assessment",
+        "Monitoring",
+        "Objective Setting"
+      ],
+      answer: 0,
+      reason: "Risk Response involves selecting an approach or set of actions to align assessed risks with the entity's risk tolerance and risk appetite."
+    },
+    {
+      question: "Which of the following is included among possible responses under the Risk Response component?",
+      options: [
+        "Avoiding risk",
+        "Preparing financial statements",
+        "Hiring employees",
+        "Setting sales prices"
+      ],
+      answer: 0,
+      reason: "Personnel identify and evaluate possible responses to risks, including avoiding, accepting, reducing, and sharing risk."
+    },
+    {
+      question: "Which ERM component establishes and executes policies and procedures to help ensure selected risk responses are effectively carried out?",
+      options: [
+        "Control Activities",
+        "Event Identification",
+        "Risk Assessment",
+        "Objective Setting"
+      ],
+      answer: 0,
+      reason: "Control Activities are policies and procedures established and executed to help ensure that the risk responses selected by management are effectively carried out."
+    },
+    {
+      question: "Which ERM component ensures relevant information is identified, captured and communicated in a suitable form and time frame?",
+      options: [
+        "Information and Communication",
+        "Monitoring",
+        "Risk Response",
+        "Control Environment"
+      ],
+      answer: 0,
+      reason: "Information and Communication requires relevant information to be identified, captured, and communicated in a form and time frame that enables people to carry out their responsibilities."
+    },
+    {
+      question: "Which ERM component allows the system to react dynamically by making modifications when conditions warrant?",
+      options: [
+        "Monitoring",
+        "Objective Setting",
+        "Risk Assessment",
+        "Risk Response"
+      ],
+      answer: 0,
+      reason: "Monitoring involves monitoring the entire ERM process and making modifications as necessary so that the system can react dynamically as conditions warrant."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS06",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Prime Industries is mapping its objectives to the four objective categories of the COSO ERM Framework. The organisation wants to distinguish between mission-driven goals, effective use of resources, reliable reporting and compliance with applicable laws and regulations.</p>
+    <p>The internal control team also identifies four organisational levels at which COSO ERM coverage may be considered: the entire entity, a division, an operating unit and a specific function.</p>
+  `,
+  questions: [
+    {
+      question: "Which COSO ERM objective category includes mission-driven high-level goals and objectives aligned with an entity's mission?",
+      options: [
+        "Strategic",
+        "Operations",
+        "Reporting",
+        "Compliance"
+      ],
+      answer: 0,
+      reason: "Strategic objectives are mission-driven high-level goals and objectives and are aligned with an entity's mission."
+    },
+    {
+      question: "Which COSO ERM objective category relates to the effective and efficient use of resources?",
+      options: [
+        "Reporting",
+        "Operations",
+        "Strategic",
+        "Compliance"
+      ],
+      answer: 1,
+      reason: "Operations objectives refer to the effective and efficient use of resources, including development, management and allocation."
+    },
+    {
+      question: "Which objective category surrounds the entity's need for reliable reporting?",
+      options: [
+        "Strategic",
+        "Operations",
+        "Reporting",
+        "Compliance"
+      ],
+      answer: 2,
+      reason: "Reporting objectives surround an entity's need for reliable reporting involving information gathering, analysis and communication."
+    },
+    {
+      question: "Which objective category refers to compliance with applicable laws and regulations?",
+      options: [
+        "Operations",
+        "Reporting",
+        "Strategic",
+        "Compliance"
+      ],
+      answer: 3,
+      reason: "Compliance objectives refer to an entity's need to comply with applicable laws and regulations."
+    },
+    {
+      question: "Which COSO ERM coverage level refers to a specific job in the operating unit?",
+      options: [
+        "Entity",
+        "Division",
+        "Operating Unit",
+        "Function"
+      ],
+      answer: 3,
+      reason: "Function refers to a specific job in the operating unit."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS07",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Zenith Enterprises is adopting the updated 2017 COSO ERM framework. The Board is strengthening oversight responsibilities, while management defines the desired culture and reinforces core values throughout the organisation.</p>
+    <p>The organisation also analyses its business context, defines risk appetite in the context of creating, preserving and realizing value, evaluates alternative strategies and formulates objectives aligned with the selected strategy and risk appetite.</p>
+  `,
+  questions: [
+    {
+      question: "Which 2017 COSO ERM component includes oversight by the Board and the establishment of organisational culture?",
+      options: [
+        "Governance and Culture",
+        "Performance",
+        "Review and Revision",
+        "Information, Communication and Reporting"
+      ],
+      answer: 0,
+      reason: "Governance and Culture establishes oversight responsibilities for ERM and includes culture relating to ethical values, desired behaviours and understanding of risk."
+    },
+    {
+      question: "Under Governance and Culture, who has an important role in risk oversight?",
+      options: [
+        "Only operating-unit employees",
+        "The Board",
+        "Only external auditors",
+        "Only customers"
+      ],
+      answer: 1,
+      reason: "Risk governance and culture start at the top with the influence and oversight of the Board. Board members must be accountable and responsible for risk oversight."
+    },
+    {
+      question: "Which principle considers the business context and the role of internal and external stakeholders?",
+      options: [
+        "Analyses Business Context",
+        "Defines Risk Appetite",
+        "Evaluates Alternative Strategies",
+        "Formulates Business Objectives"
+      ],
+      answer: 0,
+      reason: "The 'Analyses Business Context' principle considers the business context and the role of internal and external stakeholders."
+    },
+    {
+      question: "In what context does the organization define risk appetite under the updated COSO framework?",
+      options: [
+        "Only in the context of reducing costs",
+        "Creating, preserving, and realizing value",
+        "Only in the context of compliance",
+        "Only in the context of financial reporting"
+      ],
+      answer: 1,
+      reason: "The organization defines risk appetite in the context of creating, preserving, and realizing value."
+    },
+    {
+      question: "What should business objectives under Strategy and Objective-Setting be aligned with?",
+      options: [
+        "Only accounting policies",
+        "The strategy and risk appetite",
+        "Only operating-unit procedures",
+        "Only reporting requirements"
+      ],
+      answer: 1,
+      reason: "Management establishes objectives that align with and support the strategy at various levels of the business. These objectives should consider, and be aligned with, risk appetite."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS08",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Nova Energy is applying the Performance component of the updated COSO ERM framework. Management identifies new and emerging risks and assesses their severity using appropriate approaches. The team also prioritizes risks to support selection of suitable risk responses.</p>
+    <p>Management then considers business context, costs and benefits, severity of risk and appetite for risk while selecting responses. Finally, the Board wants a composite view of risks affecting business objectives and their interdependencies.</p>
+  `,
+  questions: [
+    {
+      question: "Which activity involves identifying new and emerging risks and changes to known risks?",
+      options: [
+        "Identifies Risk",
+        "Develops Portfolio View",
+        "Reviews Risk Performance",
+        "Communicates Information"
+      ],
+      answer: 0,
+      reason: "Under the Performance component, the organization identifies new and emerging risks, as well as changes to known risks affecting execution of strategy."
+    },
+    {
+      question: "Which principle suggests qualitative and quantitative approaches to assess the severity of risk?",
+      options: [
+        "Prioritizes Risk",
+        "Assesses Severity of Risk",
+        "Implements Risk Responses",
+        "Develops Portfolio View"
+      ],
+      answer: 1,
+      reason: "Depending on the anticipated severity of the risk, COSO suggests the use of qualitative and quantitative approaches in assessment processes under 'Assesses Severity of Risk'."
+    },
+    {
+      question: "Which principle provides a basis for selecting risk responses using appropriate criteria?",
+      options: [
+        "Prioritizes Risk",
+        "Identifies Risk",
+        "Defines Risk Appetite",
+        "Analyses Business Context"
+      ],
+      answer: 0,
+      reason: "The organization prioritizes risks as a basis for selecting risk responses using appropriate criteria."
+    },
+    {
+      question: "Which of the following is considered while selecting risk responses under the Performance component?",
+      options: [
+        "Business context",
+        "Only employee attendance",
+        "Only product pricing",
+        "Only customer preferences"
+      ],
+      answer: 0,
+      reason: "In selecting risk responses, management considers factors such as business context, costs and benefits, severity of the risk, and appetite for risk."
+    },
+    {
+      question: "What does 'Develops Portfolio View' provide?",
+      options: [
+        "A composite view of the risks the organization faces relative to business objectives",
+        "A list of only financial risks",
+        "A summary of employee performance",
+        "A list of only compliance risks"
+      ],
+      answer: 0,
+      reason: "Portfolio View is a composite view of the risks the organization faces relative to business objectives and allows management and the Board to consider their nature, likelihood, relative size and interdependencies."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS09",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Vertex Enterprises is reviewing the final two components of the 2017 COSO ERM framework. Management monitors substantial changes that could invalidate critical assumptions underlying strategy and evaluates whether risk responses are performing as intended.</p>
+    <p>The organisation also maintains a continuous process of obtaining and sharing relevant information from internal and external sources. Risk information is communicated across the organisation and reported to support decision-making and the Board's risk oversight responsibilities.</p>
+  `,
+  questions: [
+    {
+      question: "Which 2017 COSO ERM component focuses on monitoring change and determining necessary revisions?",
+      options: [
+        "Performance",
+        "Review and Revision",
+        "Governance and Culture",
+        "Strategy and Objective-Setting"
+      ],
+      answer: 1,
+      reason: "Review and Revision focuses on monitoring ERM performance following substantial change, emerging risks and determining what revisions are necessary."
+    },
+    {
+      question: "What may substantial change do to critical assumptions underlying strategy?",
+      options: [
+        "Always eliminate all risk",
+        "Invalidate critical assumptions underlying strategy",
+        "Guarantee achievement of objectives",
+        "Automatically improve performance"
+      ],
+      answer: 1,
+      reason: "The chapter states that substantial change can create significant competitor performance gaps or invalidate critical assumptions underlying strategy."
+    },
+    {
+      question: "Which activity ensures that risk responses are performing as intended?",
+      options: [
+        "Reviews Risk Performance",
+        "Analyses Business Context",
+        "Defines Risk Appetite",
+        "Formulates Objectives"
+      ],
+      answer: 0,
+      reason: "Risk responses must be evaluated to ensure they are performing as intended. This is covered under 'Reviews Risk Performance'."
+    },
+    {
+      question: "Which 2017 COSO ERM component requires a continual process of obtaining and sharing necessary information?",
+      options: [
+        "Information, Communication and Reporting",
+        "Performance",
+        "Review and Revision",
+        "Governance and Culture"
+      ],
+      answer: 0,
+      reason: "Information, Communication and Reporting recognizes the vital need for a continuous process to obtain and share relevant information from internal and external sources."
+    },
+    {
+      question: "Risk reporting supports decision-making and enables whom to fulfil risk oversight responsibilities?",
+      options: [
+        "Only customers",
+        "The Board and others",
+        "Only suppliers",
+        "Only the marketing team"
+      ],
+      answer: 1,
+      reason: "Risk reporting encompasses information required to support decision-making and enable the Board and others to fulfil their risk oversight responsibilities."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS10",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Summit Enterprises wants to implement an ERM approach through the Plan, Implement, Measure and Learn (PIML) methodology. The organisation first identifies the intended benefits, scopes the initiative and establishes the ERM strategy.</p>
+    <p>It then adopts suitable risk assessment tools, establishes benchmarks, determines risk appetite and tolerance, evaluates controls, aligns risk management with existing activities, and embeds a risk-aware culture. Finally, it monitors risk performance indicators and reports risk performance in line with obligations.</p>
+  `,
+  questions: [
+    {
+      question: "Which PIML stage includes identifying the intended benefits of the ERM initiative?",
+      options: [
+        "Planning",
+        "Implementing",
+        "Measuring",
+        "Learning"
+      ],
+      answer: 0,
+      reason: "Planning includes identifying the intended benefits of the ERM initiative and gaining Board support."
+    },
+    {
+      question: "Which PIML stage includes adopting suitable risk assessment tools and an agreed risk classification system?",
+      options: [
+        "Planning",
+        "Implementing",
+        "Measuring",
+        "Learning"
+      ],
+      answer: 1,
+      reason: "Implementing includes adopting suitable risk assessment tools and an agreed risk classification system."
+    },
+    {
+      question: "At which PIML stage are risk benchmarks established and risk assessments undertaken?",
+      options: [
+        "Planning",
+        "Implementing",
+        "Measuring",
+        "Learning"
+      ],
+      answer: 1,
+      reason: "Under Implementing, the organisation establishes risk benchmarks and undertakes risk assessments."
+    },
+    {
+      question: "Which PIML stage includes evaluating the effectiveness of existing controls and introducing improvements?",
+      options: [
+        "Planning",
+        "Implementing",
+        "Measuring",
+        "Learning"
+      ],
+      answer: 2,
+      reason: "Measuring includes evaluating the effectiveness of existing controls and introducing improvements."
+    },
+    {
+      question: "Which PIML stage includes monitoring risk performance indicators and reporting risk performance in line with obligations?",
+      options: [
+        "Planning",
+        "Implementing",
+        "Measuring",
+        "Learning"
+      ],
+      answer: 3,
+      reason: "Learning includes monitoring and reviewing risk performance indicators to measure ERM contribution and reporting risk performance in line with obligations."
+    }
+  ]
+},
+{
+  case_id: "ecosys_ch3_CS11",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Kodak was a leading manufacturer of film products for non-digital cameras and video recorders. When digital products came to the market, demand for film products declined.</p>
+    <p>Kodak's own research in 1981 found that digital photos could ultimately replace its film technology and estimated that the company had 10 years to prepare. However, Kodak continued investing in its old core business and eventually filed for bankruptcy in 2012.</p>
+  `,
+  questions: [
+    {
+      question: "What was one of the high impact risks faced by Kodak in the pre-digital era?",
+      options: [
+        "A shortage of employees",
+        "A disruptive technology diminishing demand for film-based products",
+        "A reduction in office space",
+        "An increase in catering costs"
+      ],
+      answer: 1,
+      reason: "One of the high impact risks for Kodak was that a disruptive technology would diminish the demand for its core film-based products."
+    },
+    {
+      question: "What did Kodak's research in 1981 indicate?",
+      options: [
+        "Digital photos would never affect film products",
+        "Digital photos could ultimately replace Kodak's film technology",
+        "Film products would immediately disappear",
+        "Kodak should stop all research activities"
+      ],
+      answer: 1,
+      reason: "Kodak's own research in 1981 found that digital photos could ultimately replace Kodak's film technology and estimated that it had 10 years to prepare."
+    },
+    {
+      question: "According to the case, what was one reason Kodak failed to respond adequately to the threat?",
+      options: [
+        "It stayed locked in the film paradigm",
+        "It had no film business",
+        "It stopped manufacturing cameras",
+        "It completely avoided digital technology"
+      ],
+      answer: 0,
+      reason: "The chapter states that Kodak did not prepare and stayed locked in the film paradigm."
+    },
+    {
+      question: "Which company is given as an example of a rival that invested money earned from film into new initiatives?",
+      options: [
+        "Fuji Film",
+        "Airbnb",
+        "Zomato",
+        "Techstars"
+      ],
+      answer: 0,
+      reason: "The chapter states that Kodak's rival, Fuji Film, took the money it made from film and invested in new initiatives, some of which paid off."
+    },
+    {
+      question: "What risk management perspective is illustrated by the Kodak case?",
+      options: [
+        "Ignore disruptive technologies until a crisis occurs",
+        "Consider and evaluate disruptive technology risks well in advance",
+        "Focus only on existing products",
+        "Avoid all strategic changes"
+      ],
+      answer: 1,
+      reason: "The chapter's Risk Management Perspective is to consider and evaluate the risks of disruptive technologies and manage transformation well in advance of looming crises."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS12",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Alpha Sports Club wants to maximize attendance at its games. Management reviews marketing and advertising, allocation and sale of tickets, parking and transport arrangements, catering and other welfare arrangements.</p>
+    <p>The club identifies the key activities that deliver the selected core process and considers the risks that could affect those activities and the core process. Targets are set for increased attendance, and responsibility for the success of the core process is allocated to the commercial director.</p>
+  `,
+  questions: [
+    {
+      question: "What is the key objective of the sports club in the case?",
+      options: [
+        "To minimize employee numbers",
+        "To maximize attendance at all the games",
+        "To eliminate all operational risks",
+        "To increase office space"
+      ],
+      answer: 1,
+      reason: "The key objective of the management of the sports club is to maximize attendance at all the games."
+    },
+    {
+      question: "Which of the following is identified as an activity supporting the club's objective?",
+      options: [
+        "Sale of tickets",
+        "Issuing shares",
+        "Manufacturing products",
+        "Preparing tax returns"
+      ],
+      answer: 0,
+      reason: "The case includes allocation and sale of tickets among the activities undertaken to maximize attendance."
+    },
+    {
+      question: "What does the club identify after identifying the key activities delivering the selected core process?",
+      options: [
+        "Only financial statements",
+        "Risks that could impact the activities and the core process",
+        "Only employee benefits",
+        "Only marketing expenses"
+      ],
+      answer: 1,
+      reason: "By identifying the key activities that deliver the selected core process, the club can identify the risks that could impact both these activities and the core process."
+    },
+    {
+      question: "What does the club set for future games?",
+      options: [
+        "Targets for increased attendance",
+        "Targets for reducing all activities",
+        "Targets for eliminating all risks",
+        "Targets for stopping advertising"
+      ],
+      answer: 0,
+      reason: "Targets can then be set for increased attendance at future games."
+    },
+    {
+      question: "To whom is responsibility for the success of the core process allocated?",
+      options: [
+        "The finance manager",
+        "The commercial director",
+        "The external auditor",
+        "The ticket seller"
+      ],
+      answer: 1,
+      reason: "The responsibility for the success of this core process is allocated to the commercial director of the club."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS13",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Beta Manufacturing is reviewing its Enterprise Risk Management process. The management team identifies potential threats, determines how large a threat may be, considers its consequences and impact, and then introduces controls to mitigate the risks.</p>
+    <p>The management also understands that ERM is not merely a static procedure. The documented steps may be altered and modified according to the requirements of the business.</p>
+  `,
+  questions: [
+    {
+      question: "What does ERM include in relation to potential threats?",
+      options: [
+        "Identifying potential threats or risks",
+        "Ignoring potential threats",
+        "Eliminating all business activities",
+        "Preparing only financial reports"
+      ],
+      answer: 0,
+      reason: "ERM provides a framework for risk management which includes identifying potential threats or risks."
+    },
+    {
+      question: "What should management determine after identifying a threat or risk?",
+      options: [
+        "How big the threat or risk is",
+        "Only its accounting code",
+        "Only its location",
+        "Only its ownership"
+      ],
+      answer: 0,
+      reason: "The ERM framework includes determining how big a threat or risk is."
+    },
+    {
+      question: "Which factor is considered in evaluating a potential risk?",
+      options: [
+        "Its consequence and impact",
+        "Only its colour",
+        "Only its age",
+        "Only its reporting format"
+      ],
+      answer: 0,
+      reason: "The ERM framework includes considering what could be the consequence and impact of a risk."
+    },
+    {
+      question: "What is the purpose of implementing controls in the case?",
+      options: [
+        "To mitigate the risks",
+        "To increase all risks",
+        "To eliminate strategy",
+        "To replace management"
+      ],
+      answer: 0,
+      reason: "Implementing controls to mitigate the risks is one of the elements included in the ERM framework."
+    },
+    {
+      question: "How is ERM described with regard to its nature as a process?",
+      options: [
+        "Static and unchangeable",
+        "Dynamic and capable of modification",
+        "Limited only to financial matters",
+        "Applicable only during crises"
+      ],
+      answer: 1,
+      reason: "ERM is described as a dynamic process wherein the steps are altered and modified to suit the requirements of the business."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS14",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Gamma Corporation is reviewing the relationship between its Internal Control Framework (ICF) and Enterprise Risk Management (ERM). The internal control team focuses on internal controls, achievement of objectives and reliability of financial reporting.</p>
+    <p>The ERM team takes a broader approach by considering risks and opportunities affecting the achievement of objectives and examining internal and external factors.</p>
+  `,
+  questions: [
+    {
+      question: "What is a primary focus of the Internal Control Framework described in the case?",
+      options: [
+        "Internal controls to ensure achievement of objectives and reliability of financial reporting",
+        "Only external business opportunities",
+        "Only strategic planning",
+        "Only capital allocation"
+      ],
+      answer: 0,
+      reason: "The Internal Control Framework focuses on internal controls to ensure the achievement of objectives and the reliability of financial reporting."
+    },
+    {
+      question: "Which framework takes a broader approach by considering risks and opportunities?",
+      options: [
+        "Internal Control Framework",
+        "Enterprise Risk Management",
+        "Financial Accounting Framework",
+        "Production Framework"
+      ],
+      answer: 1,
+      reason: "ERM takes a broader approach by considering risks and opportunities that could affect the achievement of objectives."
+    },
+    {
+      question: "Which of the following is an element of the Internal Control Framework mentioned in the chapter?",
+      options: [
+        "Control environment",
+        "Objective setting",
+        "Event identification",
+        "Risk response"
+      ],
+      answer: 0,
+      reason: "The Internal Control Framework includes elements such as control environment, risk assessment, control activities, information and communication, and monitoring."
+    },
+    {
+      question: "Which of the following is included in ERM according to the case?",
+      options: [
+        "Objective setting",
+        "Only financial reporting",
+        "Only control activities",
+        "Only monitoring"
+      ],
+      answer: 0,
+      reason: "ERM includes elements such as internal environment, objective setting, event identification, risk assessment, risk response, control activities, information and communication, and monitoring."
+    },
+    {
+      question: "How does ERM differ from the Internal Control Framework in the chapter?",
+      options: [
+        "ERM provides a more comprehensive and integrated approach",
+        "ERM applies only to financial reporting",
+        "ERM does not consider risk",
+        "ERM excludes external factors"
+      ],
+      answer: 0,
+      reason: "While both frameworks address risk management, ERM provides a more comprehensive and integrated approach that considers both internal and external factors."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS15",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Delta Enterprises wants to strengthen controls throughout the organisation. Some controls are intended to influence the entire organisation, while others are designed for divisions, operating units and specific jobs.</p>
+    <p>At the entity level, management introduces a corporate code of ethics. At the operating-unit level, the accounting department uses a monthly outstanding balance report for review of accounts receivable.</p>
+  `,
+  questions: [
+    {
+      question: "Which COSO ERM coverage level refers to controls influencing the entire organisation?",
+      options: [
+        "Entity level",
+        "Division level",
+        "Operating Unit level",
+        "Function level"
+      ],
+      answer: 0,
+      reason: "Entity-level controls are those that influence the entire organization."
+    },
+    {
+      question: "Which is an example of an entity-wide control given in the chapter?",
+      options: [
+        "Corporate code of ethics",
+        "Monthly outstanding balance report",
+        "Accounts payable procedure",
+        "A specific job description"
+      ],
+      answer: 0,
+      reason: "The chapter gives a corporate code of ethics as an example of an entity-wide control."
+    },
+    {
+      question: "Which level may be associated with national or regional boundaries and related regulatory requirements?",
+      options: [
+        "Entity level",
+        "Division level",
+        "Operating Unit level",
+        "Function level"
+      ],
+      answer: 1,
+      reason: "Division-level controls may be associated with national or regional boundaries such that internal controls align with regulatory requirements."
+    },
+    {
+      question: "Which level focuses on the activities an operating unit is responsible for performing?",
+      options: [
+        "Entity level",
+        "Division level",
+        "Operating Unit level",
+        "Function level"
+      ],
+      answer: 2,
+      reason: "An Operating Unit is focused on the activities the operating unit is responsible for performing."
+    },
+    {
+      question: "A specific job in an operating unit is classified under which COSO ERM coverage level?",
+      options: [
+        "Entity",
+        "Division",
+        "Operating Unit",
+        "Function"
+      ],
+      answer: 3,
+      reason: "Function refers to a specific job in the operating unit."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS16",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Omega Ltd. is setting objectives under its Enterprise Risk Management process. Management wants the objectives to support the entity's mission and vision and to remain consistent with its risk appetite.</p>
+    <p>The management team checks that every objective is clearly defined, quantifiable, achievable through best efforts, needed by the entity and capable of being achieved within a given time frame.</p>
+  `,
+  questions: [
+    {
+      question: "Which ERM component is primarily concerned with setting objectives?",
+      options: [
+        "Objective Setting",
+        "Risk Response",
+        "Monitoring",
+        "Control Activities"
+      ],
+      answer: 0,
+      reason: "Objective Setting ensures that management has a process in place to set objectives that support and align with the entity's mission or vision and are consistent with its risk appetite."
+    },
+    {
+      question: "Which SMART characteristic means that an objective is clearly defined?",
+      options: [
+        "Specific",
+        "Measurable",
+        "Relevant",
+        "Timely"
+      ],
+      answer: 0,
+      reason: "Specific means clearly defined."
+    },
+    {
+      question: "Which SMART characteristic means that an objective is easily quantifiable in monetary terms?",
+      options: [
+        "Attainable",
+        "Measurable",
+        "Relevant",
+        "Timely"
+      ],
+      answer: 1,
+      reason: "Measurable means easily quantifiable in monetary terms."
+    },
+    {
+      question: "Which SMART characteristic refers to an objective being achievable through best efforts?",
+      options: [
+        "Specific",
+        "Attainable",
+        "Relevant",
+        "Timely"
+      ],
+      answer: 1,
+      reason: "Attainable means achievable through best efforts."
+    },
+    {
+      question: "Which SMART characteristic means that the objective must be achieved within a given time frame?",
+      options: [
+        "Specific",
+        "Measurable",
+        "Relevant",
+        "Timely"
+      ],
+      answer: 3,
+      reason: "Timely means achieved within a given time frame."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS17",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Prime Healthcare Services has identified several potential events that could affect its objectives. Management examines internal and external factors and distinguishes events representing risks from those representing opportunities.</p>
+    <p>For identified risks, management analyses their likelihood and impact. It then selects appropriate approaches such as avoiding, accepting, reducing or sharing the risk.</p>
+  `,
+  questions: [
+    {
+      question: "Which ERM component includes identifying potential events that may affect the entity?",
+      options: [
+        "Event (or Risk) Identification",
+        "Objective Setting",
+        "Control Activities",
+        "Monitoring"
+      ],
+      answer: 0,
+      reason: "Event (or Risk) Identification involves identifying potential events that might have an impact on the entity."
+    },
+    {
+      question: "What factors are considered during event identification?",
+      options: [
+        "Internal and external factors",
+        "Only internal factors",
+        "Only external factors",
+        "Only financial factors"
+      ],
+      answer: 0,
+      reason: "Event identification includes identifying internal and external factors that influence how potential events may affect strategy implementation and achievement of objectives."
+    },
+    {
+      question: "What does management distinguish between during event identification?",
+      options: [
+        "Risks and opportunities",
+        "Assets and liabilities only",
+        "Employees and customers",
+        "Products and services"
+      ],
+      answer: 0,
+      reason: "Event identification includes distinguishing between potential events that represent risks, those representing opportunities and those that may be both."
+    },
+    {
+      question: "Which ERM component analyses identified risks based on likelihood and impact?",
+      options: [
+        "Risk Assessment",
+        "Risk Response",
+        "Control Activities",
+        "Monitoring"
+      ],
+      answer: 0,
+      reason: "Risk Assessment considers both risk likelihood and impact and analyses identified risks to form a basis for determining how they should be managed."
+    },
+    {
+      question: "Which of the following is a possible risk response?",
+      options: [
+        "Avoiding",
+        "Reporting",
+        "Recruiting",
+        "Budgeting"
+      ],
+      answer: 0,
+      reason: "Possible responses to risks include avoiding, accepting, reducing, and sharing risk."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS18",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Vertex Corporation is reviewing the benefits of ERM. Management wants better understanding of total risk, improved capital allocation, and an ability to consider potential events that may create opportunities.</p>
+    <p>The organisation also wants to connect risk with growth and return, recognizing that entities accept risk as part of value creation and preservation and expect return commensurate with risk.</p>
+  `,
+  questions: [
+    {
+      question: "Which ERM benefit helps management assess overall capital needs and improve capital allocation?",
+      options: [
+        "Rationalize capital",
+        "Seize opportunities",
+        "Enhance risk response decisions",
+        "Minimize operational surprises and losses"
+      ],
+      answer: 0,
+      reason: "More robust information on an entity's total risk allows management to assess more effectively overall capital needs and improve capital allocation."
+    },
+    {
+      question: "Which ERM benefit recognizes potential events as possible opportunities?",
+      options: [
+        "Seize opportunities",
+        "Rationalize capital",
+        "Align risk appetite and strategy",
+        "Provide integrated responses to multiple risks"
+      ],
+      answer: 0,
+      reason: "Management considers potential events, rather than just risks, and gains an understanding of how certain events represent opportunities."
+    },
+    {
+      question: "Which ERM benefit links risk with growth and return?",
+      options: [
+        "Link growth, risk, and return",
+        "Identify and manage cross-enterprise risks",
+        "Minimize operational surprises and losses",
+        "Rationalize capital"
+      ],
+      answer: 0,
+      reason: "ERM provides an enhanced ability to identify and assess risks and establish acceptable levels of risk relative to growth and return objectives."
+    },
+    {
+      question: "Why do entities accept risk according to the chapter?",
+      options: [
+        "As part of value creation and preservation",
+        "Only to reduce reporting requirements",
+        "Only to eliminate controls",
+        "Only to increase compliance costs"
+      ],
+      answer: 0,
+      reason: "Entities accept risk as part of value creation and preservation, and they expect return commensurate with the risk."
+    },
+    {
+      question: "What does ERM provide to support risk response decisions?",
+      options: [
+        "Rigour to identify and select among alternative risk responses",
+        "Absolute assurance of success",
+        "A guarantee that all risks will be eliminated",
+        "A replacement for all business processes"
+      ],
+      answer: 0,
+      reason: "ERM provides the rigor to identify and select among alternative risk responses such as risk avoidance, mitigation, transference and acceptance."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS19",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Nova Enterprises has adopted the 2017 COSO ERM framework. Management wants ERM to be embedded into organisational activities and connected with mission, vision and core values.</p>
+    <p>The organisation is also focused on identifying opportunities, managing risks across the organisation, reducing negative surprises, improving resource deployment and enhancing enterprise resilience so that it can respond to change and continue to evolve.</p>
+  `,
+  questions: [
+    {
+      question: "What does the 2017 COSO ERM guidance seek to connect ERM more clearly with?",
+      options: [
+        "A multitude of stakeholder expectations",
+        "Only financial statements",
+        "Only employee recruitment",
+        "Only production activities"
+      ],
+      answer: 0,
+      reason: "The 2017 COSO guidance was intended to connect ERM more clearly with a multitude of stakeholder expectations."
+    },
+    {
+      question: "The 2017 COSO guidance positions risk in the context of what?",
+      options: [
+        "Performance",
+        "Only accounting",
+        "Only compliance",
+        "Only taxation"
+      ],
+      answer: 0,
+      reason: "The guidance positions risk in the context of performance rather than as an isolated exercise."
+    },
+    {
+      question: "What does the 2017 COSO ERM framework seek to emphasize regarding change?",
+      options: [
+        "Change creates opportunities",
+        "Change must always be avoided",
+        "Change eliminates all risk",
+        "Change is unrelated to ERM"
+      ],
+      answer: 0,
+      reason: "The 2017 guidance seeks to enable organizations to better anticipate risk and provide an understanding that change creates opportunities."
+    },
+    {
+      question: "Which benefit relates to anticipating and responding to change so that the entity can evolve and thrive?",
+      options: [
+        "Enhance enterprise resilience",
+        "Rationalize capital",
+        "Align risk appetite and strategy",
+        "Link growth, risk, and return"
+      ],
+      answer: 0,
+      reason: "Enhancing enterprise resilience means anticipating and responding to change, not only to survive but also to evolve and thrive."
+    },
+    {
+      question: "According to the chapter, ERM should be embedded into activities including which of the following?",
+      options: [
+        "Mission, vision and core values",
+        "Only financial reporting",
+        "Only employee attendance",
+        "Only marketing activities"
+      ],
+      answer: 0,
+      reason: "The basis of the 2017 COSO guidance is that ERM should be embedded into the activities of an organization, including the mission, vision, and core values."
+    }
+  ]
+},
+
+{
+  case_id: "ecosys_ch3_CS20",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>Summit Industries has decided to implement Enterprise Risk Management through the Plan, Implement, Measure and Learn (PIML) approach. The organisation begins by identifying intended benefits, planning the scope, establishing the ERM strategy and defining roles and responsibilities.</p>
+    <p>It then adopts suitable risk assessment tools, establishes benchmarks, determines risk appetite and tolerance and evaluates existing controls. Subsequently, management evaluates control effectiveness, aligns risk management with existing processes, embeds a risk-aware culture, and finally monitors risk performance indicators and reports performance in line with obligations.</p>
+  `,
+  questions: [
+    {
+      question: "Which PIML stage includes planning the scope of the ERM initiative?",
+      options: [
+        "Planning",
+        "Implementing",
+        "Measuring",
+        "Learning"
+      ],
+      answer: 0,
+      reason: "Planning includes planning the scope of the ERM initiative and developing a common language of risk."
+    },
+    {
+      question: "Which PIML stage includes establishing risk benchmarks and undertaking risk assessments?",
+      options: [
+        "Planning",
+        "Implementing",
+        "Measuring",
+        "Learning"
+      ],
+      answer: 1,
+      reason: "Implementing includes establishing risk benchmarks and undertaking risk assessments."
+    },
+    {
+      question: "Which PIML stage includes determining risk appetite and risk tolerance levels?",
+      options: [
+        "Planning",
+        "Implementing",
+        "Measuring",
+        "Learning"
+      ],
+      answer: 1,
+      reason: "Implementing includes determining risk appetite and risk tolerance levels and evaluating the existing controls."
+    },
+    {
+      question: "Which PIML stage includes embedding a risk-aware culture?",
+      options: [
+        "Planning",
+        "Implementing",
+        "Measuring",
+        "Learning"
+      ],
+      answer: 2,
+      reason: "Measuring includes embedding a risk-aware culture and aligning risk management with other activities in the organization."
+    },
+    {
+      question: "Which PIML stage includes reporting risk performance in line with obligations?",
+      options: [
+        "Planning",
+        "Implementing",
+        "Measuring",
+        "Learning"
+      ],
+      answer: 3,
+      reason: "Learning includes reporting risk performance in line with obligations and monitoring improvement."
+    }
+  ]
+},
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_60",
+  case_chapter: "chapter3",
+  question: "How many components or categories are included in the updated COSO ERM framework described in the chapter?",
+  options: [
+    "Three",
+    "Four",
+    "Five",
+    "Eight"
+  ],
+  answer: 2,
+  reason: "The updated COSO ERM framework includes five components or categories: Governance and Culture, Strategy and Objective-Setting, Performance, Review and Revision, and Information, Communication and Reporting."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_61",
+  case_chapter: "chapter3",
+  question: "Which of the following is the first component of the updated COSO ERM framework?",
+  options: [
+    "Performance",
+    "Governance and Culture",
+    "Review and Revision",
+    "Information, Communication and Reporting"
+  ],
+  answer: 1,
+  reason: "Governance and Culture is the first component of the updated COSO ERM framework."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_62",
+  case_chapter: "chapter3",
+  question: "Which component of the updated COSO ERM framework integrates ERM with strategy and objective-setting?",
+  options: [
+    "Strategy and Objective-Setting",
+    "Performance",
+    "Review and Revision",
+    "Governance and Culture"
+  ],
+  answer: 0,
+  reason: "Strategy and Objective-Setting elevates the discussion of strategy and integrates ERM with strategy by considering the aspects and implications of strategy when setting strategy."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_63",
+  case_chapter: "chapter3",
+  question: "Under Governance and Culture, what does governance establish for ERM?",
+  options: [
+    "Oversight responsibilities",
+    "Financial statements",
+    "Sales targets",
+    "Production schedules"
+  ],
+  answer: 0,
+  reason: "Governance sets the tone for the organization and establishes oversight responsibilities for ERM."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_64",
+  case_chapter: "chapter3",
+  question: "Which principle under Governance and Culture relates to ethical values, desired behaviours and understanding of risk?",
+  options: [
+    "Defines Desired Culture",
+    "Defines Risk Appetite",
+    "Identifies Risk",
+    "Reviews Risk Performance"
+  ],
+  answer: 0,
+  reason: "The 'Defines Desired Culture' principle explains that COSO frames desired behaviours within the context of culture, core values and attitudes toward risk."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_65",
+  case_chapter: "chapter3",
+  question: "Which principle requires management to consider changes in the business context and adapt accordingly in executing strategy?",
+  options: [
+    "Formulates Objectives",
+    "Analyses Business Context",
+    "Prioritizes Risk",
+    "Develops Portfolio View"
+  ],
+  answer: 1,
+  reason: "The 'Analyses Business Context' principle considers the business context and requires management to consider risk from changes in the business context and adapt accordingly in executing strategy."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_66",
+  case_chapter: "chapter3",
+  question: "Under Strategy and Objective-Setting, what should the risk appetite statement be considered during?",
+  options: [
+    "Only risk assessment",
+    "Strategy setting",
+    "Only monitoring",
+    "Only control activities"
+  ],
+  answer: 1,
+  reason: "The risk appetite statement is considered during strategy setting, communicated by management, embraced by the Board, and integrated across the organization."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_67",
+  case_chapter: "chapter3",
+  question: "Which principle under Strategy and Objective-Setting deals with considering alternative strategic options?",
+  options: [
+    "Evaluates Alternative Strategies",
+    "Defines Risk Appetite",
+    "Identifies Risk",
+    "Assesses Change"
+  ],
+  answer: 0,
+  reason: "The 'Evaluates Alternative Strategies' principle states that the organization evaluates strategic options and sets its strategy to enhance value, considering risk resulting from the strategy chosen."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_68",
+  case_chapter: "chapter3",
+  question: "Which component of the updated COSO ERM framework includes identifying new and emerging risks?",
+  options: [
+    "Performance",
+    "Governance and Culture",
+    "Review and Revision",
+    "Information, Communication and Reporting"
+  ],
+  answer: 0,
+  reason: "Under the Performance component, the organization identifies new and emerging risks, as well as changes to known risks affecting execution of its strategy."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_69",
+  case_chapter: "chapter3",
+  question: "Which principle under Performance suggests the use of qualitative and quantitative approaches in assessing risks?",
+  options: [
+    "Develops Portfolio View",
+    "Implements Risk Responses",
+    "Assesses Severity of Risk",
+    "Prioritizes Risk"
+  ],
+  answer: 2,
+  reason: "Under 'Assesses Severity of Risk', COSO suggests the use of qualitative and quantitative approaches in assessment processes depending on the anticipated severity of the risk."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_70",
+  case_chapter: "chapter3",
+  question: "Which of the following is a criterion that may be considered when prioritizing risks?",
+  options: [
+    "Adaptability",
+    "Advertising",
+    "Inventory turnover",
+    "Employee attendance"
+  ],
+  answer: 0,
+  reason: "Risk criteria for prioritization might include adaptability, complexity, velocity, persistence and recovery, as well as acceptable variation in performance."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_71",
+  case_chapter: "chapter3",
+  question: "Which principle provides a composite view of the risks the organization faces relative to business objectives?",
+  options: [
+    "Prioritizes Risk",
+    "Develops Portfolio View",
+    "Identifies Risk",
+    "Assesses Severity of Risk"
+  ],
+  answer: 1,
+  reason: "Develops Portfolio View is a composite view of the risks the organization faces relative to business objectives and considers their nature, likelihood, relative size and interdependencies."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_72",
+  case_chapter: "chapter3",
+  question: "Which updated COSO ERM component focuses on monitoring ERM performance and determining necessary revisions?",
+  options: [
+    "Performance",
+    "Strategy and Objective-Setting",
+    "Review and Revision",
+    "Governance and Culture"
+  ],
+  answer: 2,
+  reason: "Review and Revision focuses on monitoring risk management performance over time and following substantial change, emerging risks and determining what revisions are necessary."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_73",
+  case_chapter: "chapter3",
+  question: "Which principle under Information, Communication and Reporting states that information systems provide data and information to support ERM?",
+  options: [
+    "Communicates Information",
+    "Leverages Information and Technology",
+    "Reports on Risk, Culture and Performance",
+    "Pursues Improvement in ERM"
+  ],
+  answer: 1,
+  reason: "The 'Leverages Information and Technology' principle states that information systems provide the organization with the data and information to support ERM."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_74",
+  case_chapter: "chapter3",
+  question: "Which principle requires the organization to report on risk at multiple levels across the organization?",
+  options: [
+    "Communicates Information",
+    "Assesses Change",
+    "Defines Risk Appetite",
+    "Formulates Objectives"
+  ],
+  answer: 0,
+  reason: "Under 'Communicates Information', the organization reports on risk at multiple levels across the organization and uses different channels to communicate risk data and information to internal and external stakeholders."
+},
+
+{
+  difficulty: "Easy",
+  case_id: "ecosys_ch3_75",
+  case_chapter: "chapter3",
+  question: "Which principle states that ERM should be improved continuously over time?",
+  options: [
+    "Reviews Risk Performance",
+    "Pursues Improvement in ERM",
+    "Develops Portfolio View",
+    "Evaluates Alternative Strategies"
+  ],
+  answer: 1,
+  reason: "The 'Pursues Improvement in ERM' principle states that ERM should be improved continuously over time and that embedding continuous evaluations can systematically identify improvements."
 }
+
+
 
 
 ]
