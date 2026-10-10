@@ -6198,7 +6198,1680 @@ const caseStudies = [
       reason: "The chapter states that the auditor should ensure that the policy has an owner responsible for its maintenance and that it is updated in response to changes affecting the basis of the original risk assessment."
     }
   ]
-}
+},
+// Chapter5
+  {
+    case_id: "ecosys_ch5_CS01",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>ABC Manufacturing depends on its information systems to process customer orders, maintain inventory records and coordinate deliveries. Management recognizes that a major disruption could affect these activities. The organization decides to establish a Business Continuity Management (BCM) programme to prepare for disruptions and maintain critical business operations.</p>
+      <p>The management team also wants to identify the activities that are essential to the organization and understand the possible consequences if those activities are interrupted.</p>
+    `,
+    questions: [
+      {
+        question: "What is the primary purpose of Business Continuity Management in ABC Manufacturing?",
+        options: [
+          "To eliminate the need for information systems",
+          "To establish and maintain the capacity and capability to manage business continuity in accordance with organizational requirements",
+          "To ensure that the organization never experiences a disruption",
+          "To replace all operational procedures with emergency procedures"
+        ],
+        answer: 1,
+        reason: "The ICAI material explains that the BCM process establishes and maintains the business continuity capacity and capability in accordance with the requirements of the enterprise."
+      },
+      {
+        question: "Which activity helps ABC Manufacturing identify the consequences of an interruption to its business activities?",
+        options: [
+          "Business Impact Analysis (BIA)",
+          "Routine software installation",
+          "Employee recruitment",
+          "Financial statement preparation"
+        ],
+        answer: 0,
+        reason: "Business Impact Analysis (BIA) is a component of the information collection stage of the BCM process and helps assess the impact of disruptions on business activities."
+      },
+      {
+        question: "Why should ABC Manufacturing identify its critical business activities?",
+        options: [
+          "To avoid documenting business processes",
+          "To discontinue activities that use information systems",
+          "To ensure that only non-critical activities receive attention",
+          "To understand business priorities and support continuity and recovery planning"
+        ],
+        answer: 3,
+        reason: "Identifying critical activities helps the organization understand its priorities and supports the development of appropriate business continuity and recovery arrangements."
+      },
+      {
+        question: "Which of the following is a component of the BCM process described in the ICAI material?",
+        options: [
+          "Elimination of all organizational risks",
+          "Removal of all management responsibilities",
+          "Testing and maintenance of BCM plans",
+          "Suspension of business impact analysis"
+        ],
+        answer: 2,
+        reason: "The BCM process includes testing and maintenance, along with information collection, BCM strategies, development and implementation, and training and awareness."
+      },
+      {
+        question: "What should management seek to achieve through business continuity planning?",
+        options: [
+          "An understandable and maintainable plan that supports recovery and remains viable over time",
+          "A plan that is used only after all business records have been destroyed",
+          "A plan that excludes disaster prevention measures",
+          "A plan that does not require management commitment"
+        ],
+        answer: 0,
+        reason: "The ICAI methodology emphasizes developing a business continuity plan that is understandable, easy to use and maintain, and integrated with ongoing business planning and system development."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS02",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Bright Retail operates several stores supported by a central information system. Management wants to develop a Business Continuity Plan (BCP). Before developing the plan, the project team studies the existing computing environment, identifies possible vulnerabilities and establishes the scope of the planning exercise.</p>
+      <p>A Steering Committee is formed to guide the project team, provide direction and make decisions relating to recovery planning. Management also wants to reduce the probability of a disaster occurring wherever practicable.</p>
+    `,
+    questions: [
+      {
+        question: "Which phase of BCP development is used to understand the existing and projected computing environment and initiate the project?",
+        options: [
+          "Maintenance Program",
+          "Pre-Planning Activities (Project Initiation)",
+          "Initial Plan Testing and Implementation",
+          "Testing/Exercising Program"
+        ],
+        answer: 1,
+        reason: "Phase 1, Pre-Planning Activities (Project Initiation), is used to understand the existing and projected computing environment, refine the scope, develop schedules and identify issues affecting the project."
+      },
+      {
+        question: "What is the principal role of the Steering Committee in the pre-planning phase?",
+        options: [
+          "To perform every backup operation personally",
+          "To replace the project manager in all operational activities",
+          "To provide direction and guidance to the project team and make decisions relating to recovery planning",
+          "To conduct only the final disaster simulation"
+        ],
+        answer: 2,
+        reason: "The ICAI material states that the Steering Committee provides direction and guidance to the Project Team and makes decisions related to the recovery planning effort."
+      },
+      {
+        question: "Which phase addresses measures intended to reduce the probability of a disaster occurring?",
+        options: [
+          "Vulnerability Assessment and General Definition of Requirements",
+          "Initial Plan Testing and Implementation",
+          "Maintenance Program",
+          "Testing/Exercising Program"
+        ],
+        answer: 0,
+        reason: "Phase 2, Vulnerability Assessment and General Definition of Requirements, addresses security and control measures intended to reduce the probability of a disaster occurring."
+      },
+      {
+        question: "Which activity is appropriate during a security assessment?",
+        options: [
+          "Ignoring existing backup and contingency arrangements",
+          "Deferring all security reviews until after a disaster",
+          "Removing access controls before identifying vulnerabilities",
+          "Reviewing physical security, operating procedures, backup arrangements and access controls"
+        ],
+        answer: 3,
+        reason: "The ICAI material identifies several areas for security assessment, including physical security, operating procedures, backup and contingency planning, database security and systems and access controls."
+      },
+      {
+        question: "Why should the project team present security assessment findings and recommendations to the Steering Committee?",
+        options: [
+          "To prevent management from considering corrective action",
+          "To enable corrective actions to be initiated in a timely manner",
+          "To remove the need to define the planning scope",
+          "To ensure that the recovery plan is never modified"
+        ],
+        answer: 1,
+        reason: "The security assessment findings and recommendations are presented to the Steering Committee so that corrective actions can be initiated in a timely manner."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS03",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Sunrise Services has identified several risks that may interrupt its customer support operations. The organization now wants to determine which activities are critical, assess the consequences of their interruption and decide how continuity resources should be arranged.</p>
+      <p>Management understands that continuity planning must reflect the organization's requirements and that responsibilities for implementation and maintenance must be clearly assigned. The organization also maintains reports and other records supporting its BCM programme.</p>
+    `,
+    questions: [
+      {
+        question: "Which two activities are included in the information collection stage of the BCM process?",
+        options: [
+          "Recruitment and performance appraisal",
+          "Software purchasing and product advertising",
+          "Risk Assessment and Business Impact Analysis",
+          "Plan implementation and employee promotion"
+        ],
+        answer: 2,
+        reason: "The information collection stage of the BCM process includes Risk Assessment and Business Impact Analysis."
+      },
+      {
+        question: "What is the purpose of Risk Assessment in the BCM process?",
+        options: [
+          "To identify and assess risks that may affect the organization's operations and continuity",
+          "To guarantee that no risk will arise in the future",
+          "To replace the need for a business continuity strategy",
+          "To identify only the organization's financial profits"
+        ],
+        answer: 0,
+        reason: "Risk Assessment is part of the information collection stage and supports the identification and assessment of risks relevant to business continuity."
+      },
+      {
+        question: "Which of the following is an example of documentation forming part of a Business Continuity Management System (BCMS)?",
+        options: [
+          "An unrelated personal diary",
+          "An informal list of customer preferences with no BCM relevance",
+          "A record that replaces all continuity plans",
+          "The Business Impact Analysis report"
+        ],
+        answer: 3,
+        reason: "The ICAI material lists the BIA Report among the classified documents forming part of the Business Continuity Management System."
+      },
+      {
+        question: "Who should be made accountable for BCM policy implementation and maintenance?",
+        options: [
+          "An employee selected without regard to authority or responsibility",
+          "A person or team with appropriate seniority and authority",
+          "Only an external customer",
+          "A person who has no assigned BCM responsibilities"
+        ],
+        answer: 1,
+        reason: "The BCM organizational structure should nominate a person or team with appropriate seniority and authority to be accountable for implementing and maintaining the BCM policy."
+      },
+      {
+        question: "Why should BCM documents and records be controlled?",
+        options: [
+          "To prevent the organization from updating its plans",
+          "To ensure that only outdated versions are available",
+          "To subject BCM documentation and records to appropriate document-control and record-control processes",
+          "To eliminate the need for risk assessment reports"
+        ],
+        answer: 2,
+        reason: "The ICAI material states that all documents forming part of the BCM system are subject to document-control and record-control processes."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS04",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Metro Finance is developing a Business Continuity Plan for its customer transaction system. The project team has collected information about business requirements and is now defining suitable continuity and recovery arrangements. Management wants the plan to be tested before it is relied upon during an actual disruption.</p>
+      <p>The organization also recognizes that changes to its systems and operating environment may affect the effectiveness of the plan. Accordingly, the team proposes an ongoing programme for testing and maintaining the plan.</p>
+    `,
+    questions: [
+      {
+        question: "Which phase of BCP development involves developing the plan testing or exercising programme?",
+        options: [
+          "Phase 1 – Pre-Planning Activities",
+          "Phase 2 – Vulnerability Assessment",
+          "Phase 6 – Testing/Exercising Program",
+          "Phase 8 – Initial Plan Testing and Implementation"
+        ],
+        answer: 2,
+        reason: "Phase 6 is the Testing/Exercising Program phase. The plan's testing goals are established, alternative strategies are evaluated and an ongoing testing programme is developed."
+      },
+      {
+        question: "What is the purpose of Phase 8, Initial Plan Testing and Implementation?",
+        options: [
+          "To conduct initial tests, analyse the results and modify plans where necessary",
+          "To avoid testing the completed plans",
+          "To replace the recovery strategy with an informal procedure",
+          "To permanently freeze the plan against future changes"
+        ],
+        answer: 0,
+        reason: "Phase 8 includes defining the test approach, identifying test teams, conducting the test, analysing results and modifying plans as appropriate."
+      },
+      {
+        question: "Why is a maintenance programme important for continuity plans?",
+        options: [
+          "It ensures that the plan reflects only the original environment",
+          "It removes the need for change management",
+          "It permits plan updates only after a disaster",
+          "It helps ensure that plans reflect changes in the environments they support"
+        ],
+        answer: 3,
+        reason: "The ICAI material emphasizes that plans must reflect changes in the environments they support and that maintenance is critical to successful recovery."
+      },
+      {
+        question: "What should the organization do when initial testing identifies deficiencies in the BCP?",
+        options: [
+          "Ignore the test results",
+          "Analyse the results and make necessary modifications to the plans",
+          "Cancel all future continuity exercises",
+          "Remove the assigned recovery teams"
+        ],
+        answer: 1,
+        reason: "The initial testing and implementation phase requires analysis of test results and modification of plans where necessary."
+      },
+      {
+        question: "How should testing procedures be developed in relation to the selected recovery strategies?",
+        options: [
+          "They should be identical for every organization regardless of its requirements",
+          "They should be prepared only after a real disaster",
+          "They should be developed to ensure that the written plans are comprehensive and accurate",
+          "They should exclude the recovery requirements of the organization"
+        ],
+        answer: 2,
+        reason: "The ICAI material explains that testing procedures should be developed as recovery strategies are defined to ensure that written plans are comprehensive and accurate."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS05",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Green Valley Hospital maintains information systems supporting patient administration and other essential operations. Management wants to establish procedures for responding immediately to a major fire, restoring information system operations and subsequently recovering full information system capabilities.</p>
+      <p>The hospital also wants to identify the individuals responsible for recovery activities and periodically practise their assigned responsibilities. Management recognizes that emergency response and full system recovery involve different objectives.</p>
+    `,
+    questions: [
+      {
+        question: "Which plan specifies the actions to be undertaken immediately when a disaster occurs?",
+        options: [
+          "Emergency Plan",
+          "Recovery Plan",
+          "Test Plan",
+          "Maintenance Plan"
+        ],
+        answer: 0,
+        reason: "The emergency plan specifies the actions to be undertaken immediately when a disaster occurs, such as a major fire or major structural damage."
+      },
+      {
+        question: "What is the primary purpose of a recovery plan?",
+        options: [
+          "To identify only the immediate evacuation actions",
+          "To record employee attendance during normal operations",
+          "To replace the organization's business continuity policy",
+          "To set out procedures for restoring full information system capabilities"
+        ],
+        answer: 3,
+        reason: "The ICAI material distinguishes the backup plan, which is intended to restore operations quickly, from the recovery plan, which sets out procedures to restore full information system capabilities."
+      },
+      {
+        question: "Which committee should be identified in the recovery plan?",
+        options: [
+          "A committee responsible only for recruitment",
+          "A recovery committee responsible for working out the specifics of the recovery",
+          "A committee responsible only for marketing",
+          "A committee with no defined recovery responsibilities"
+        ],
+        answer: 1,
+        reason: "The recovery plan should identify a recovery committee responsible for working out the specifics of recovery and should specify its responsibilities and recovery priorities."
+      },
+      {
+        question: "Why should members of the recovery committee periodically review and practise their responsibilities?",
+        options: [
+          "To ensure that recovery tasks remain unfamiliar",
+          "To remove the need for a recovery plan",
+          "To prepare them to perform their responsibilities if a disaster occurs",
+          "To ensure that new members are never appointed"
+        ],
+        answer: 2,
+        reason: "The ICAI material states that recovery committee members must review and practise their responsibilities periodically so they are prepared when a disaster occurs."
+      },
+      {
+        question: "If a recovery committee member leaves the hospital, what should happen?",
+        options: [
+          "A new member should be appointed immediately and briefed about the responsibilities",
+          "The recovery plan should be permanently discontinued",
+          "The remaining members should stop practising recovery procedures",
+          "The vacant position should remain unfilled until a disaster occurs"
+        ],
+        answer: 0,
+        reason: "The recovery plan discussion states that if committee members leave the organization, new members must be appointed immediately and briefed about their responsibilities."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS06",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Northstar Technologies maintains copies of critical business data to reduce the effect of system failures. Its information systems team performs backups and reviews the relevant logs to confirm whether the backup operations have completed successfully.</p>
+      <p>The organization also maintains a backup plan that identifies the procedures necessary to restore operations quickly. Management requires the plan to be updated whenever key personnel, hardware or software arrangements change.</p>
+    `,
+    questions: [
+      {
+        question: "What is the main purpose of a backup plan as described in the ICAI material?",
+        options: [
+          "To specify only the actions for evacuating a building",
+          "To eliminate the need for data backups",
+          "To restore operations quickly so that information system functions can continue to service the organization",
+          "To replace all procedures for restoring full information system capabilities"
+        ],
+        answer: 2,
+        reason: "The backup plan is intended to restore operations quickly so that information system functions can continue to service the organization."
+      },
+      {
+        question: "What should an IS operator do each morning under an effective backup-monitoring arrangement?",
+        options: [
+          "Assume that every backup completed successfully without checking",
+          "Check for backup completion and identify error messages that may have prevented completion",
+          "Delete all backup logs before examining them",
+          "Wait for a disaster before reviewing backup status"
+        ],
+        answer: 1,
+        reason: "The ICAI material describes checking the computer to confirm backup completion or identify error messages that prevented the backup from completing."
+      },
+      {
+        question: "Why should system-generated backup logs be examined?",
+        options: [
+          "To identify files that might not have been backed up by the system",
+          "To eliminate the need for backup monitoring",
+          "To ensure that backup exceptions remain undiscovered",
+          "To replace the organization's recovery plan"
+        ],
+        answer: 0,
+        reason: "System-generated logs should be examined by IS operations personnel to identify files that might not have been backed up."
+      },
+      {
+        question: "What should an IS operator do when a backup exception cannot be resolved through restart procedures?",
+        options: [
+          "Ignore the exception permanently",
+          "Delete the backup plan",
+          "Wait until the next annual review",
+          "Escalate the problem for resolution"
+        ],
+        answer: 3,
+        reason: "Where exceptions are identified, the operator should attempt restart procedures. If unable to resolve the problem, the operator should escalate it for resolution."
+      },
+      {
+        question: "Which change may require the backup plan to be updated?",
+        options: [
+          "A change in the weather that has no relevance to the plan",
+          "A change to key personnel or the hardware and software inventory",
+          "An unrelated change in the organization's advertising slogan",
+          "A change to an employee's personal preference"
+        ],
+        answer: 1,
+        reason: "The ICAI material explains that the backup plan needs continuous updating. Changes in key personnel and hardware or software acquisitions and disposals should be reflected in the plan."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS07",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Silverline Consulting is reviewing its data backup arrangements. The organization considers three methods: copying the entire data set, copying changes made since the previous backup, and copying changes made since the last full backup.</p>
+      <p>The IT manager wants employees to understand the basic differences between these methods, particularly their effect on backup time, storage space and recovery time.</p>
+    `,
+    questions: [
+      {
+        question: "Which backup method copies the entire data set?",
+        options: [
+          "Incremental backup",
+          "Differential backup",
+          "Full backup",
+          "Mirror backup only when a file has changed"
+        ],
+        answer: 2,
+        reason: "A full backup copies the entire data set."
+      },
+      {
+        question: "Which backup method copies changes made since the previous backup?",
+        options: [
+          "Incremental backup",
+          "Full backup",
+          "Differential backup",
+          "Emergency backup plan"
+        ],
+        answer: 0,
+        reason: "An incremental backup copies changes since the previous backup."
+      },
+      {
+        question: "Which backup method copies changes made since the last full backup?",
+        options: [
+          "Emergency plan",
+          "Incremental backup",
+          "Recovery plan",
+          "Differential backup"
+        ],
+        answer: 3,
+        reason: "A differential backup copies changes made since the last full backup."
+      },
+      {
+        question: "Which backup method generally requires the most storage space among full, incremental and differential backups, according to the ICAI comparison?",
+        options: [
+          "Incremental backup",
+          "Full backup",
+          "Differential backup",
+          "All three always require exactly the same storage space"
+        ],
+        answer: 1,
+        reason: "The ICAI comparison states that a full backup requires a lot of storage space, while incremental backups require less and differential backups require less than full backups but more than incremental backups."
+      },
+      {
+        question: "Which statement about recovery time is consistent with the ICAI comparison of the three backup methods?",
+        options: [
+          "Incremental backups always provide the fastest recovery",
+          "Differential backups always recover faster than full backups",
+          "Full backups provide fast recovery compared with incremental and differential backups",
+          "Recovery time is unrelated to the backup method"
+        ],
+        answer: 2,
+        reason: "The ICAI comparison describes full backups as providing fast recovery, incremental backups as having slow recovery, and differential backups as recovering faster than incremental backups but slower than full backups."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS08",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Evergreen Enterprises wants to improve its ability to respond to disruptions. Management assigns responsibility for the BCM programme, communicates the programme to relevant stakeholders and arranges training for employees who have specific continuity responsibilities.</p>
+      <p>The organization also plans to conduct exercises, assess training needs and measure the results of training. Management wants BCM responsibilities to remain clear when personnel or operational arrangements change.</p>
+    `,
+    questions: [
+      {
+        question: "Who should appoint the Manager (BCM) role according to the ICAI material?",
+        options: [
+          "A customer of the enterprise",
+          "The top management",
+          "An external supplier without organizational authorization",
+          "An employee with no assigned authority"
+        ],
+        answer: 1,
+        reason: "The ICAI material states that top management should appoint the Manager (BCM) role, which is responsible for the BCM policy and its implementation."
+      },
+      {
+        question: "Which activity supports the development of a BCM culture?",
+        options: [
+          "Avoiding the assignment of responsibilities",
+          "Discontinuing all training programmes",
+          "Keeping continuity procedures unknown to relevant staff",
+          "Leadership from senior personnel, assignment of responsibilities, awareness, skills training and exercising plans"
+        ],
+        answer: 3,
+        reason: "The ICAI material identifies senior leadership, assigned responsibilities, awareness, skills training and exercising plans as factors supporting the development of a BCM culture."
+      },
+      {
+        question: "What is one purpose of BCM training and awareness?",
+        options: [
+          "To provide stakeholders with confidence in the enterprise's ability to handle business disruptions",
+          "To guarantee that disruptions can never occur",
+          "To remove the need for continuity arrangements",
+          "To ensure that only senior management understands the BCM programme"
+        ],
+        answer: 0,
+        reason: "The ICAI material explains that BCM training helps provide confidence to stakeholders, especially staff and customers, in the enterprise's ability to handle business disruptions."
+      },
+      {
+        question: "Which activity is included in the training and awareness component of the BCM process?",
+        options: [
+          "Avoiding the assessment of training needs",
+          "Removing all performance measurements",
+          "Assessing needs, designing and delivering training, and measuring results",
+          "Conducting training only after a disaster"
+        ],
+        answer: 2,
+        reason: "The training and awareness component includes assessing needs, designing and delivering training, and measuring results."
+      },
+      {
+        question: "Why should BCM procedures be communicated to relevant staff?",
+        options: [
+          "To prevent staff from understanding their responsibilities",
+          "To ensure that relevant staff understand their roles and responsibilities",
+          "To remove the need for testing",
+          "To avoid assigning responsibility for continuity activities"
+        ],
+        answer: 1,
+        reason: "The ICAI material emphasizes that BCM procedures should be effectively communicated to relevant staff and that staff should understand their roles and responsibilities."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS09",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Bluewave Industries has completed its initial Business Continuity Plan and wants to evaluate whether the plan and its personnel are prepared for a disaster. Management proposes a test programme that starts with reviewing the written plan and then proceeds to more practical exercises.</p>
+      <p>The team also wants to identify deficiencies in the emergency, backup and recovery plans and assess whether the organization can perform its recovery procedures when required.</p>
+    `,
+    questions: [
+      {
+        question: "What is the purpose of a disaster recovery test plan?",
+        options: [
+          "To eliminate the need for emergency and recovery plans",
+          "To replace all recovery procedures with informal instructions",
+          "To identify deficiencies in plans or in the preparedness of the organization and its personnel",
+          "To ensure that no disaster scenarios are ever considered"
+        ],
+        answer: 2,
+        reason: "The test plan is intended to identify deficiencies in emergency, backup or recovery plans, or in the preparedness of the organization and its personnel for facing a disaster."
+      },
+      {
+        question: "Which approach may be used as an initial step in testing a disaster recovery plan?",
+        options: [
+          "Desk checking, inspection and walkthroughs",
+          "Immediately destroying the primary information system",
+          "Discontinuing all recovery activities",
+          "Waiting until an actual disaster occurs"
+        ],
+        answer: 0,
+        reason: "The ICAI material describes a phased approach that begins with desk checking, inspection and walkthroughs."
+      },
+      {
+        question: "What should a test plan specify in relation to simulated disasters?",
+        options: [
+          "Only the name of the person conducting the test",
+          "That testing must never be repeated",
+          "That the plan cannot be evaluated against any criteria",
+          "The criteria by which emergency, backup and recovery plans can be deemed satisfactory"
+        ],
+        answer: 3,
+        reason: "The test plan should enable a range of disasters to be simulated and specify the criteria by which the emergency, backup and recovery plans can be deemed satisfactory."
+      },
+      {
+        question: "Which objective is associated with testing a BCP?",
+        options: [
+          "Ensuring that recovery procedures remain incomplete",
+          "Ensuring that recovery procedures are complete and workable",
+          "Removing the need to evaluate personnel competence",
+          "Ensuring that recovery resources are never checked"
+        ],
+        answer: 1,
+        reason: "The ICAI material states that one objective of BCP testing is to ensure that recovery procedures are complete and workable."
+      },
+      {
+        question: "What should the organization consider when deciding how frequently its BCP should be tested?",
+        options: [
+          "Only the personal preferences of the test coordinator",
+          "A fixed frequency unrelated to organizational conditions",
+          "The enterprise's needs, operating environment, stakeholder requirements, rate of change and previous test outcomes",
+          "Only the number of employees in the finance department"
+        ],
+        answer: 2,
+        reason: "The ICAI material explains that testing frequency should depend on enterprise needs, the environment in which it operates and stakeholder requirements. The testing programme should also be flexible in light of organizational change and previous outcomes."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS10",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Horizon Systems wants to ensure that its critical business data remains available if its primary systems become unavailable. The organization evaluates different backup arrangements and considers using a cloud backup service for off-site storage. It also reviews alternate processing facility arrangements in case its normal processing location cannot be used.</p>
+      <p>Management understands that different arrangements have different characteristics and that the choice should reflect the organization's tolerance for downtime and its recovery requirements.</p>
+    `,
+    questions: [
+      {
+        question: "What is one advantage of cloud backup identified in the ICAI material?",
+        options: [
+          "It guarantees unlimited transfer speed under all conditions",
+          "It removes every cost associated with data storage",
+          "It ensures that no third-party service provider is involved",
+          "It can provide off-site, redundant storage of critical data and allow more frequent backups"
+        ],
+        answer: 3,
+        reason: "The ICAI material identifies reduced storage costs, the ability to back up more frequently and off-site, redundant storage of critical data as potential advantages of cloud backup."
+      },
+      {
+        question: "Which is a potential disadvantage of cloud backup?",
+        options: [
+          "The process may slow down depending on the speed of copying and storage provided by the service provider",
+          "Data can never be restored from a cloud backup",
+          "Cloud backup cannot provide off-site storage",
+          "Cloud backup always requires the organization to maintain every remote storage facility itself"
+        ],
+        answer: 0,
+        reason: "The ICAI material notes that speed plays a major role when information is copied and stored by a service provider, and the process may slow down depending on the available speed."
+      },
+      {
+        question: "What is the main purpose of a mirror backup?",
+        options: [
+          "To copy only the changes made since the previous backup",
+          "To generate an exact and uncompressed replica of the backup data",
+          "To restore only the operating system without data",
+          "To provide an emergency evacuation procedure"
+        ],
+        answer: 1,
+        reason: "The ICAI material describes mirror backup as generating an exact and uncompressed replica of the backup data."
+      },
+      {
+        question: "Why should mirror backups be used with caution?",
+        options: [
+          "They cannot replicate source data",
+          "They always require more steps to restore than every other backup method",
+          "A file deleted from the source may eventually also be deleted from the mirror backup",
+          "They cannot be used to maintain a replica of the source"
+        ],
+        answer: 2,
+        reason: "The ICAI material cautions that when a file is deleted from the source, it may eventually also be deleted from the mirror backup, including when deletion results from accident, sabotage or a virus."
+      },
+      {
+        question: "For an organization that can tolerate some downtime, which alternate processing facility arrangement may be appropriate?",
+        options: [
+          "A test plan",
+          "A Business Impact Analysis report",
+          "A differential backup",
+          "A cold site"
+        ],
+        answer: 3,
+        reason: "The ICAI material states that a cold site may be appropriate if an organization can tolerate some downtime. It provides facilities such as raised floors, air conditioning, power and communication lines for installing a mainframe system."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch5_CS11",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Eastern Technologies has decided to establish a formal Business Continuity Management (BCM) programme. Senior management wants to define the objectives of the programme, assign management responsibilities and establish the activities required to develop and maintain business continuity capability.</p>
+      <p>The organization also intends to embed business continuity within its operations, conduct regular exercises and maintain its continuity arrangements as the business environment changes.</p>
+    `,
+    questions: [
+      {
+        question: "What is the primary purpose of a BCM policy?",
+        options: [
+          "To establish activities for developing business continuity capability and its ongoing management and maintenance",
+          "To document only the organization's annual financial results",
+          "To eliminate the need for business continuity planning",
+          "To define only the procedures for restoring computer hardware"
+        ],
+        answer: 0,
+        reason: "The ICAI material explains that the BCM policy defines the processes for establishing business continuity capability and for its ongoing management and maintenance."
+      },
+      {
+        question: "Which of the following is included in setting up business continuity capability?",
+        options: [
+          "Suspending all continuity exercises until a disaster occurs",
+          "Removing all assigned management responsibilities",
+          "Specification, end-to-end design, build, implementation and initial exercising of the capability",
+          "Replacing all business processes with emergency procedures"
+        ],
+        answer: 2,
+        reason: "The BCM policy discussion identifies specification, end-to-end design, build, implementation and initial exercising as set-up activities for business continuity capability."
+      },
+      {
+        question: "Which activity is associated with the ongoing management and maintenance of business continuity capability?",
+        options: [
+          "Avoiding the review of continuity arrangements",
+          "Embedding business continuity within the enterprise and exercising plans regularly",
+          "Discontinuing the BCM programme after its initial implementation",
+          "Keeping continuity plans separate from business operations indefinitely"
+        ],
+        answer: 1,
+        reason: "The ICAI material identifies embedding business continuity within the enterprise and exercising plans regularly as part of ongoing maintenance and management activities."
+      },
+      {
+        question: "Why should business continuity arrangements be maintained over time?",
+        options: [
+          "To ensure that the original plan never changes",
+          "To avoid assigning responsibility for business continuity",
+          "To ensure that testing is performed only after a major disruption",
+          "To keep business continuity capability appropriate to the enterprise's changing requirements"
+        ],
+        answer: 3,
+        reason: "BCM includes ongoing management and maintenance so that business continuity capability remains appropriate to the enterprise's requirements."
+      },
+      {
+        question: "Which statement best reflects management's role in establishing BCM?",
+        options: [
+          "Management should support the programme and ensure that appropriate responsibilities and resources are established",
+          "Management should leave all continuity decisions undocumented",
+          "Management should prevent staff from participating in continuity activities",
+          "Management should treat BCM as an activity required only after a disaster"
+        ],
+        answer: 0,
+        reason: "The ICAI material emphasizes appropriate management commitment, assigned responsibilities and adequate resources to establish and maintain effective business continuity arrangements."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS12",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Prime Distribution operates warehouses and an information system used to process orders and coordinate deliveries. Management prepares a Business Continuity Plan (BCP) manual that documents the actions to be taken, resources to be used and procedures to be followed before, during and after an event that severely disrupts business operations.</p>
+      <p>The manual is intended to help management recover from unexpected incidents and resume services at an agreed level within an agreed time after a disruption.</p>
+    `,
+    questions: [
+      {
+        question: "What does a BCP manual primarily provide?",
+        options: [
+          "Only a list of routine sales transactions",
+          "A replacement for the organization's normal management structure",
+          "A documented description of actions, resources and procedures for dealing with severe business disruptions",
+          "A guarantee that no incident will affect business operations"
+        ],
+        answer: 2,
+        reason: "The ICAI material describes the BCP manual as a documented description of actions to be taken, resources to be used and procedures to be followed before, during and after an event that severely disrupts business operations."
+      },
+      {
+        question: "Which period should be covered by the actions and procedures documented in the BCP manual?",
+        options: [
+          "Only the period before a disruption",
+          "Before, during and after a disruptive event",
+          "Only the period after full operations have been restored",
+          "Only the period during routine business operations"
+        ],
+        answer: 1,
+        reason: "The BCP manual documents actions, resources and procedures to be followed before, during and after an event that severely disrupts all or part of business operations."
+      },
+      {
+        question: "What level of assurance is the BCP expected to provide to senior management?",
+        options: [
+          "An absolute guarantee that recovery will always be immediate",
+          "Assurance that the organization can operate without any information systems",
+          "Assurance that no recovery resources will be required",
+          "Reasonable assurance of the capability to recover from unexpected incidents to an agreed level within an agreed time"
+        ],
+        answer: 3,
+        reason: "The ICAI material states that the BCP is expected to provide reasonable assurance regarding the organization's capability to recover from unexpected incidents or disasters affecting business and services to an agreed level within an agreed time."
+      },
+      {
+        question: "Which of the following is consistent with the purpose of a BCP?",
+        options: [
+          "Supporting recovery from unexpected incidents and helping protect the enterprise's reputation and brand",
+          "Ensuring that business disruption procedures remain undocumented",
+          "Eliminating the need to identify resources required for recovery",
+          "Replacing every operational activity with a permanent emergency response"
+        ],
+        answer: 0,
+        reason: "The ICAI material explains that the BCP supports recovery from unexpected incidents and provides a proven capability to manage business disruption and protect the enterprise's reputation and brand."
+      },
+      {
+        question: "Why should the BCP be understandable and easy to maintain?",
+        options: [
+          "So that only its original author can use it",
+          "So that changes to the business environment can be ignored",
+          "So that it can be used effectively and maintained as business requirements change",
+          "So that the organization does not need to test it"
+        ],
+        answer: 2,
+        reason: "The ICAI methodology emphasizes developing a BCP that is understandable, easy to use and maintain, and capable of remaining viable over time."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS13",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Meridian Services reviews the different elements of its business continuity arrangements. The operations team is responsible for resuming business activities after an interruption. The IT team prepares for the recovery of technology and information systems. Senior management coordinates the organization's overall response to a crisis that may affect profitability, reputation or its ability to operate.</p>
+      <p>Management wants each team to understand the distinct purpose of its assigned continuity activity.</p>
+    `,
+    questions: [
+      {
+        question: "Which element of business continuity planning represents the operations aspect of continuity planning?",
+        options: [
+          "Crisis Management",
+          "Business Resumption Planning",
+          "Disaster Recovery Planning",
+          "Backup monitoring"
+        ],
+        answer: 1,
+        reason: "The ICAI material identifies Business Resumption Planning as the operations aspect of business continuity planning."
+      },
+      {
+        question: "Which element represents the technological aspect of business continuity planning?",
+        options: [
+          "Business Resumption Planning",
+          "Crisis Management",
+          "Employee performance appraisal",
+          "Disaster Recovery Planning"
+        ],
+        answer: 3,
+        reason: "The ICAI material describes Disaster Recovery Planning as the technological aspect of business continuity planning, involving advance planning and preparation to minimize losses and ensure continuity of critical business functions."
+      },
+      {
+        question: "What is the primary purpose of crisis management?",
+        options: [
+          "To coordinate the organization's response to a crisis in a timely and effective manner",
+          "To perform only routine data backups",
+          "To prepare only the inventory of computer hardware",
+          "To replace business resumption and disaster recovery planning"
+        ],
+        answer: 0,
+        reason: "Crisis Management is described in the ICAI material as the overall coordination of an organization's response to a crisis in an effective and timely manner, with the goal of avoiding or minimizing damage."
+      },
+      {
+        question: "Which objective is associated with Disaster Recovery Planning?",
+        options: [
+          "To eliminate the need for critical business functions",
+          "To ensure that every crisis is handled only by the operations team",
+          "To minimize losses and support continuity of critical business functions in the event of a disaster",
+          "To restrict recovery planning to non-critical business activities"
+        ],
+        answer: 2,
+        reason: "The ICAI material explains that Disaster Recovery Planning involves advance planning and preparation necessary to minimize losses and ensure continuity of critical business functions in the event of a disaster."
+      },
+      {
+        question: "A major disruption threatens the organization's reputation and ability to operate. Which activity focuses on coordinating the overall organizational response?",
+        options: [
+          "Incremental backup",
+          "Crisis Management",
+          "Routine system maintenance",
+          "Business Impact Analysis alone"
+        ],
+        answer: 1,
+        reason: "Crisis Management focuses on the overall coordination of the organization's response to a crisis to avoid or minimize damage to profitability, reputation or its ability to operate."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS14",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Summit Logistics experiences a serious incident that disrupts its business operations. The management team activates its Incident Management Plan (IMP). The response team must determine the nature and extent of the incident, control the situation, contain the incident, communicate with stakeholders and coordinate the appropriate response.</p>
+      <p>Management also ensures that the IMP has senior management support, an appropriate budget and arrangements for maintenance and training. The plan must be practical and understandable to those responsible for using it.</p>
+    `,
+    questions: [
+      {
+        question: "What is the primary purpose of the Incident Management Plan (IMP) during the initial phase of an incident?",
+        options: [
+          "To prepare the organization's annual financial statements",
+          "To replace all business continuity and recovery arrangements",
+          "To eliminate the need for stakeholder communication",
+          "To provide a basis for managing the initial phase of an incident"
+        ],
+        answer: 3,
+        reason: "The ICAI material explains that the IMP is used to manage the initial phase of an incident and provides a basis for managing issues arising during the incident."
+      },
+      {
+        question: "Which activity should the response team perform to understand the nature and extent of the incident?",
+        options: [
+          "Confirm the impact of the incident",
+          "Immediately discontinue all communication",
+          "Ignore the extent of the disruption",
+          "Wait until normal operations resume"
+        ],
+        answer: 0,
+        reason: "The ICAI material identifies confirming the impact of an incident, including its nature and extent, as one of the actions supported by the incident management structure."
+      },
+      {
+        question: "Which of the following is an appropriate activity under incident management?",
+        options: [
+          "Avoiding coordination between response teams",
+          "Discontinuing communication with stakeholders",
+          "Controlling the situation and containing the incident",
+          "Preventing management from receiving incident information"
+        ],
+        answer: 2,
+        reason: "The ICAI material identifies control of the situation and containment of the incident among the actions that the incident management structure should enable."
+      },
+      {
+        question: "Which requirement should be considered when developing the IMP?",
+        options: [
+          "It should be difficult to read and understand",
+          "It should have top management support and an appropriate budget for development, maintenance and training",
+          "It should exclude stakeholder and external issues",
+          "It should remain unchanged regardless of its practical relevance"
+        ],
+        answer: 1,
+        reason: "The ICAI material states that the IMP should have top management support and an appropriate budget for development, maintenance and training. It should also be flexible, feasible, relevant, easy to read and understand."
+      },
+      {
+        question: "Why should the IMP address stakeholder and external issues during an incident?",
+        options: [
+          "To ensure that only internal technical matters are considered",
+          "To remove the need for an appropriate response",
+          "To ensure that external communication is permanently prohibited",
+          "To provide a basis for managing issues, including stakeholder and external issues, that arise during an incident"
+        ],
+        answer: 3,
+        reason: "The ICAI material states that the IMP should provide a basis for managing all possible issues, including stakeholder and external issues facing the enterprise during an incident."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS15",
+    difficulty: "Easy",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Oakwood Enterprises is reviewing its Disaster Recovery Procedural Plan. The plan contains procedures for activating recovery arrangements, responding to emergencies and maintaining important information required during a disaster. Management wants the document to be useful to the recovery team and to support an orderly response.</p>
+      <p>The review team proposes including employee emergency contact details, relevant supplier and customer contact numbers, backup-location agreements, information about the primary computer centre and procedures for updating the contingency plan.</p>
+    `,
+    questions: [
+      {
+        question: "Which of the following should be included in a Disaster Recovery Procedural Plan?",
+        options: [
+          "Only the organization's marketing objectives",
+          "Only the annual leave records of employees",
+          "Conditions for activating the plans and the procedures to be followed before activation",
+          "Only a list of completed customer orders"
+        ],
+        answer: 2,
+        reason: "The ICAI material states that the Disaster Recovery Procedural Plan may include conditions for activating the plans, describing the process to be followed before each plan is activated."
+      },
+      {
+        question: "Why should the Disaster Recovery Procedural Plan contain emergency phone lists?",
+        options: [
+          "To provide contact details for relevant emergency services and parties such as suppliers, customers and backup locations",
+          "To replace the need for emergency procedures",
+          "To record only the personal phone numbers of senior management",
+          "To eliminate communication during a disaster"
+        ],
+        answer: 0,
+        reason: "The ICAI material includes emergency phone lists for fire services, police, hardware and software suppliers, customers and backup locations among the possible contents of the plan."
+      },
+      {
+        question: "Which information relating to the primary computer centre may be documented in the plan?",
+        options: [
+          "Only the names of customers who visited the office",
+          "Only the organization's advertising expenses",
+          "Only the employee training calendar",
+          "Hardware, software, peripheral equipment and software configuration"
+        ],
+        answer: 3,
+        reason: "The ICAI material lists the primary computer centre's hardware, software, peripheral equipment and software configuration among the information that may be included in the Disaster Recovery Procedural Plan."
+      },
+      {
+        question: "Why should the plan include a checklist for inventory taking and contingency-plan updating?",
+        options: [
+          "To prevent the organization from reviewing its resources",
+          "To support inventory taking and regular updating of the contingency plan",
+          "To remove all responsibility for maintaining the plan",
+          "To ensure that changes to recovery arrangements are never documented"
+        ],
+        answer: 1,
+        reason: "The ICAI material identifies a checklist for inventory taking and regularly updating the contingency plan as one of the areas that may be included in the Disaster Recovery Procedural Plan."
+      },
+      {
+        question: "Which of the following documents or arrangements may be included in the Disaster Recovery Procedural Plan?",
+        options: [
+          "An unrelated personal shopping list",
+          "A list of entertainment preferences",
+          "Backup-location contractual agreements and correspondence",
+          "A record of unrelated social activities"
+        ],
+        answer: 2,
+        reason: "The ICAI material lists backup-location contractual agreements and correspondence among the possible contents of the Disaster Recovery Procedural Plan."
+      }
+    ]
+  },
+  // =========================================================
+  // MEDIUM CASE SCENARIOS
+  // =========================================================
+
+  {
+    case_id: "ecosys_ch5_CS16",
+    difficulty: "Medium",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Alpha Services is reviewing its business continuity arrangements after interruptions affected its customer support and payroll functions. The management wants to identify critical activities, determine the period for which each function can operate without essential services, and identify the resources required for recovery. The team must also evaluate the requirements for different durations of disruption.</p>
+    `,
+    questions: [
+      {
+        question: "Which exercise should Alpha Services primarily use to identify critical systems, processes and functions and assess the impact of disruption?",
+        options: [
+          "BCM maintenance",
+          "Business Impact Assessment (BIA)",
+          "Training and awareness programme",
+          "Initial plan testing"
+        ],
+        answer: 1,
+        reason: "The Business Impact Assessment identifies critical systems, processes and functions and assesses the impact of incidents or disasters, including the period for which business units can operate without access to essential systems, services and facilities."
+      },
+      {
+        question: "The management wants a report identifying critical service functions and the timeframes within which they must be recovered after interruption. Which output is most directly relevant?",
+        options: [
+          "The training programme",
+          "The incident log",
+          "The BIA Report",
+          "The version control register"
+        ],
+        answer: 2,
+        reason: "The BIA Report identifies critical service functions and the timeframes within which they must be recovered after interruption. It also provides a basis for identifying the systems and resources required to support those functions."
+      },
+      {
+        question: "After identifying critical functions, the team prepares a profile covering hardware, software, documentation, external support, facilities and personnel. Which phase does this activity represent?",
+        options: [
+          "Detailed Definition of Requirements",
+          "Initial Plan Testing and Implementation",
+          "Maintenance Programme",
+          "Testing/Exercising Programme"
+        ],
+        answer: 0,
+        reason: "The Detailed Definition of Requirements phase develops a recovery-requirements profile by identifying the resources required to support the critical functions identified in the BIA phase."
+      },
+      {
+        question: "The security assessment team is asked to recommend measures that reduce the probability of a disaster occurring. Which phase most directly addresses this objective?",
+        options: [
+          "Phase 3 – Business Impact Assessment",
+          "Phase 5 – Plan Development",
+          "Phase 7 – Maintenance Programme",
+          "Phase 2 – Vulnerability Assessment and General Definition of Requirements"
+        ],
+        answer: 3,
+        reason: "Phase 2 focuses on vulnerability assessment and measures intended to reduce the probability of disaster occurrence, including security assessment and corrective recommendations."
+      },
+      {
+        question: "Alpha Services wants to evaluate recovery alternatives for short-term, intermediate-term and long-term outages. Which phase provides the recovery-requirements profile used to analyse these alternatives?",
+        options: [
+          "Phase 1 – Project Initiation",
+          "Phase 4 – Detailed Definition of Requirements",
+          "Phase 6 – Testing/Exercising Programme",
+          "Phase 8 – Initial Plan Testing and Implementation"
+        ],
+        answer: 1,
+        reason: "Phase 4 develops the detailed recovery-requirements profile used to analyse alternative recovery strategies, with strategies considered for short-term, intermediate-term and long-term outages."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS17",
+    difficulty: "Medium",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Beta Technologies is selecting an alternate processing facility for use if its primary computer centre becomes unavailable. Management is comparing the speed of recovery, the facilities available at the alternate location, the amount of downtime the business can tolerate, and the contractual arrangements required with another organisation.</p>
+    `,
+    questions: [
+      {
+        question: "Beta Technologies requires rapid recovery and wants hardware and operational facilities already available at its alternate location. Which arrangement most closely meets this requirement?",
+        options: [
+          "Hot site",
+          "Cold site",
+          "Reciprocal agreement without capacity arrangements",
+          "A location where all equipment must first be installed"
+        ],
+        answer: 0,
+        reason: "A hot site is appropriate where fast recovery is critical because hardware and operational facilities are available there. Software, data and supplies may also be stored at the site."
+      },
+      {
+        question: "Beta Technologies requires an intermediate level of backup. The alternate site should have cold-site facilities along with selected hardware that may be difficult to obtain or install. Which arrangement is appropriate?",
+        options: [
+          "Cold site",
+          "Hot site",
+          "Reciprocal agreement only",
+          "Warm site"
+        ],
+        answer: 3,
+        reason: "A warm site provides an intermediate level of backup. It includes cold-site facilities as well as hardware that may be difficult to obtain or install, such as selected peripheral equipment."
+      },
+      {
+        question: "A less time-sensitive business unit can tolerate some downtime. Its alternate location needs the necessary facilities, but equipment may have to be installed before processing resumes. Which option is most suitable?",
+        options: [
+          "Hot site",
+          "Warm site with all critical processing already operational",
+          "Cold site",
+          "Immediate full recovery at the primary computer centre"
+        ],
+        answer: 2,
+        reason: "A cold site may be appropriate where an organisation can tolerate some downtime. It provides facilities needed to install a mainframe system, such as power, air conditioning and communication lines."
+      },
+      {
+        question: "Beta Technologies enters into an arrangement under which two organisations agree to provide backup facilities to each other. What is an important requirement of this arrangement?",
+        options: [
+          "Neither organisation needs to consider the other organisation's processing capacity",
+          "Each participant must maintain sufficient capacity to operate the other's critical system",
+          "Both organisations must use identical business processes",
+          "The agreement automatically guarantees unlimited processing capacity"
+        ],
+        answer: 1,
+        reason: "Under a reciprocal agreement, participating organisations agree to provide backup facilities to each other. Each participant must maintain sufficient capacity to operate the other's critical system."
+      },
+      {
+        question: "Beta Technologies is negotiating a contract with a third-party recovery-site provider. Which provision is particularly important if several organisations may need the site after the same disaster?",
+        options: [
+          "A requirement that all users follow the same staff training schedule",
+          "A prohibition on defining the facilities to be provided",
+          "An assumption that the site will be available to everyone without restriction",
+          "The priority assigned to concurrent users and the number of organisations allowed to use the site"
+        ],
+        answer: 3,
+        reason: "The agreement should address the number of organisations that may use the site concurrently and the priority assigned to concurrent users in the event of a common disaster."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS18",
+    difficulty: "Medium",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Gamma Finance maintains several copies of its business data. Full backups require substantial storage and time, so the IT team is reviewing incremental and differential backups. Management also wants to use a mirror backup for certain files but is concerned about whether deleted source files may remain available in the backup.</p>
+    `,
+    questions: [
+      {
+        question: "Which backup method copies all selected data at the time the backup is performed?",
+        options: [
+          "Incremental backup",
+          "Differential backup",
+          "Full backup",
+          "Mirror backup that copies only the latest changes"
+        ],
+        answer: 2,
+        reason: "A full backup copies all selected data. It generally supports faster recovery but requires more time and storage than incremental backups."
+      },
+      {
+        question: "After a full backup, Gamma Finance wants each subsequent backup to contain only the changes made since the immediately preceding backup. Which method should it use?",
+        options: [
+          "Incremental backup",
+          "Differential backup",
+          "Full backup",
+          "Cold-site backup"
+        ],
+        answer: 0,
+        reason: "An incremental backup captures changes since the last backup, rather than repeatedly copying all data or all changes since the last full backup."
+      },
+      {
+        question: "Gamma Finance wants each subsequent backup to include changes made since the last full backup. Which method corresponds to this requirement?",
+        options: [
+          "Incremental backup",
+          "Mirror backup",
+          "Full backup",
+          "Differential backup"
+        ],
+        answer: 3,
+        reason: "A differential backup captures changes since the last full backup. It generally requires more storage than an incremental backup but less than a full backup."
+      },
+      {
+        question: "The team uses an incremental backup arrangement and must restore data following a disruption. Which restoration approach is generally required?",
+        options: [
+          "Use only the most recent incremental backup, regardless of earlier backups",
+          "Restore the full backup and apply the required successive incremental backups",
+          "Restore only the mirror directory and ignore the earlier backups",
+          "Restore only the latest differential backup"
+        ],
+        answer: 1,
+        reason: "Because incremental backups contain changes since the preceding backup, restoration generally requires the relevant full backup and the subsequent incremental backups in sequence."
+      },
+      {
+        question: "A user accidentally deletes a source file. Gamma Finance discovers that the same file is also deleted from its mirror copy. Which characteristic explains this outcome?",
+        options: [
+          "A mirror backup always keeps every deleted source file permanently",
+          "A mirror backup contains only changes since the last full backup",
+          "A deleted source file may also be deleted from the mirror backup",
+          "A mirror backup cannot create an exact replica of source data"
+        ],
+        answer: 2,
+        reason: "A mirror backup is intended to create an exact replica of the source. Consequently, deletion of a source file may also lead to deletion of that file from the mirror, making this method necessary to use with caution."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS19",
+    difficulty: "Medium",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Delta Manufacturing has documented a Business Continuity Plan (BCP), but management has not yet established an effective exercise programme. The organisation has also introduced new systems and changed certain business processes. Management wants to test whether recovery arrangements work and ensure the documented plans remain suitable as the environment changes.</p>
+    `,
+    questions: [
+      {
+        question: "Which factor should Delta Manufacturing consider when determining the frequency of BCP testing?",
+        options: [
+          "Only the date on which the first plan was written",
+          "Only the cost of conducting the previous exercise",
+          "A fixed frequency that never changes",
+          "The enterprise's needs, operating environment, stakeholder requirements and the outcome of previous tests"
+        ],
+        answer: 3,
+        reason: "The testing frequency should depend on the enterprise's needs, its operating environment and stakeholder requirements. The programme should also remain flexible in view of change and previous test outcomes."
+      },
+      {
+        question: "During an exercise, Delta Manufacturing wants to verify that the BCP includes all critical activities and correctly reflects their dependencies and priorities. Which is an objective of BCP testing?",
+        options: [
+          "Verifying the coverage, dependencies and priorities of critical activities",
+          "Removing the requirement to identify critical activities",
+          "Avoiding the assessment of recovery timeliness",
+          "Replacing the need for documented recovery procedures"
+        ],
+        answer: 0,
+        reason: "BCP testing can verify that all critical activities and their dependencies and priorities are incorporated into the plan. It can also validate the effectiveness and timeliness of restoration."
+      },
+      {
+        question: "After the plans have been developed, Delta Manufacturing conducts an initial test, analyses the results and modifies the plans where necessary. Which phase describes these activities?",
+        options: [
+          "Phase 2 – Vulnerability Assessment",
+          "Phase 8 – Initial Plan Testing and Implementation",
+          "Phase 3 – Business Impact Assessment",
+          "Phase 4 – Detailed Definition of Requirements"
+        ],
+        answer: 1,
+        reason: "Phase 8 involves defining the test purpose and approach, identifying test teams, conducting the test, analysing the results and modifying the plans as appropriate."
+      },
+      {
+        question: "Delta Manufacturing finds that its existing change management process does not account for recovery-plan updates. What should it do?",
+        options: [
+          "Wait until an actual disaster occurs before updating any plans",
+          "Keep the recovery plans separate from all change management activities",
+          "Revise existing change management processes to account for recovery-plan maintenance and establish procedures where none exist",
+          "Discontinue maintenance of the written recovery plans"
+        ],
+        answer: 2,
+        reason: "Recovery plans must reflect changes in the environments they support. Existing change management processes should account for recovery-plan maintenance, and procedures should be introduced where change management does not exist."
+      },
+      {
+        question: "Which area should a BCP exercise cover to provide a meaningful assessment of recovery readiness?",
+        options: [
+          "Only the appearance and formatting of the BCP document",
+          "Only the financial cost of preparing the plan",
+          "Only whether the BCP has been approved by management",
+          "Technical, logistical, administrative, procedural and operational arrangements, including relevant technology recovery and staff availability"
+        ],
+        answer: 3,
+        reason: "The testing programme should cover technical, logistical, administrative, procedural and other operational systems and arrangements, including technology and telecommunications recovery and the availability and relocation of staff."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS20",
+    difficulty: "Medium",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Epsilon Industries has introduced a BCM system across its business functions. Senior management wants accountability for the BCM policy, while functional managers must maintain continuity arrangements within their areas. The organisation is also establishing controlled records, staff training and regular communication with stakeholders.</p>
+    `,
+    questions: [
+      {
+        question: "Who should the organisation nominate to be accountable for BCM policy implementation and maintenance?",
+        options: [
+          "A person or team with appropriate seniority and authority",
+          "Any employee without assigned responsibility",
+          "Only an external supplier with no internal accountability",
+          "Only the person responsible for maintaining the incident log"
+        ],
+        answer: 0,
+        reason: "The organisation should nominate a person or team with appropriate seniority and authority to be accountable for BCM policy implementation and maintenance, with responsibilities clearly defined."
+      },
+      {
+        question: "Functional managers represent their respective areas when the BCM system is implemented. What is their ongoing responsibility?",
+        options: [
+          "To conduct all recovery activities without reference to documented plans",
+          "To approve every external supplier's business strategy",
+          "To take responsibility for ongoing BCM operation and maintenance within their areas",
+          "To replace the role assigned to the Manager (BCM)"
+        ],
+        answer: 2,
+        reason: "Managers from each function represent their areas of operation and are responsible for the ongoing operation and maintenance of the BCM system within their areas of responsibility."
+      },
+      {
+        question: "Which set consists entirely of examples of records or documents that may form part of the Business Continuity Management System?",
+        options: [
+          "Only the organisation's routine sales invoices and marketing brochures",
+          "BIA Report, Risk Assessment Report, exercise schedule and results, incident log, and training programme",
+          "Only informal messages that have no document-control arrangements",
+          "Only supplier price lists and employee attendance records"
+        ],
+        answer: 1,
+        reason: "BCM documentation may include the BIA Report, Risk Assessment Report, exercise schedule and results, incident log, training programme and other controlled BCM documents and records."
+      },
+      {
+        question: "Which role should top management appoint as responsible for the BCM policy and its implementation, as described in the chapter?",
+        options: [
+          "External auditor",
+          "Customer relationship executive",
+          "Temporary recovery-site receptionist",
+          "Manager (BCM)"
+        ],
+        answer: 3,
+        reason: "The chapter states that top management should appoint the Manager (BCM) role as responsible for the BCM policy and its implementation."
+      },
+      {
+        question: "Epsilon wants BCM to become part of the organisation's culture rather than remain only a documented policy. Which approach best supports this objective?",
+        options: [
+          "Leadership, assigned responsibilities, awareness, skills training and exercising plans",
+          "Keeping BCM responsibilities confidential from relevant staff",
+          "Replacing training with a one-time policy circulation",
+          "Avoiding exercises so that staff do not encounter simulated disruptions"
+        ],
+        answer: 0,
+        reason: "The chapter identifies leadership, assignment of responsibilities, raising awareness, skills training and exercising plans as measures supporting the development of a BCM culture."
+      }
+    ]
+  },
+
+  // =========================================================
+  // HARD CASE SCENARIOS
+  // Hard = greater conceptual complexity, not longer case text.
+  // =========================================================
+
+  {
+    case_id: "ecosys_ch5_CS21",
+    difficulty: "Hard",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Zeta Logistics has identified weaknesses in its computer and communications environment. A separate review shows that interruptions to its order-processing function could cause substantial business impact, and management needs to identify the resources required to recover that function. The project team must distinguish prevention-related work from impact assessment and recovery-requirements definition.</p>
+    `,
+    questions: [
+      {
+        question: "The team is assessing physical security, operating procedures, backup arrangements and system controls to identify weaknesses and reduce the probability of a disaster. Which phase best fits this work?",
+        options: [
+          "Phase 5 – Plan Development",
+          "Phase 2 – Vulnerability Assessment and General Definition of Requirements",
+          "Phase 3 – Business Impact Assessment",
+          "Phase 8 – Initial Plan Testing and Implementation"
+        ],
+        answer: 1,
+        reason: "The Vulnerability Assessment and General Definition of Requirements phase includes a security assessment of the computing and communications environment and focuses on measures to reduce the probability of disaster occurrence."
+      },
+      {
+        question: "Management now needs to determine the length of time order processing can survive without access to essential systems and the timeframe in which the function must be recovered. Which activity is most directly relevant?",
+        options: [
+          "BCM documentation control",
+          "Phase 7 – Maintenance Programme",
+          "Phase 6 – Testing/Exercising Programme",
+          "Business Impact Assessment (BIA)"
+        ],
+        answer: 3,
+        reason: "The BIA identifies critical systems, processes and functions, assesses the impact of their interruption and evaluates the length of time business units can survive without access to essential systems, services and facilities."
+      },
+      {
+        question: "After the critical function and its recovery timeframe have been identified, the team lists required software, hardware, documentation, external support, facilities and personnel. What is the most appropriate next focus?",
+        options: [
+          "Detailed Definition of Requirements",
+          "Training and awareness only",
+          "Initial Plan Testing and Implementation",
+          "Incident logging only"
+        ],
+        answer: 0,
+        reason: "The Detailed Definition of Requirements phase identifies resources needed to support the critical functions and develops the profile used to analyse recovery strategies."
+      },
+      {
+        question: "The project team has selected a recovery approach and must now document recovery-plan components, negotiate relevant supplier contracts, and define recovery teams and their responsibilities. Which phase is indicated?",
+        options: [
+          "Phase 3 – Business Impact Assessment",
+          "Phase 4 – Detailed Definition of Requirements",
+          "Phase 5 – Plan Development",
+          "Phase 2 – Vulnerability Assessment"
+        ],
+        answer: 2,
+        reason: "Phase 5 involves defining and documenting recovery-plan components, implementing necessary procedural changes, negotiating recovery-service contracts and defining recovery teams, roles and responsibilities."
+      },
+      {
+        question: "Which sequence most appropriately separates the team's three main tasks: identifying the business impact and recovery timeframe, defining the resources required, and documenting the recovery plans?",
+        options: [
+          "Plan Development → Vulnerability Assessment → BIA",
+          "BIA → Detailed Definition of Requirements → Plan Development",
+          "Maintenance Programme → Plan Development → Vulnerability Assessment",
+          "Initial Plan Testing → BIA → Testing/Exercising Programme"
+        ],
+        answer: 1,
+        reason: "The BIA identifies critical functions and recovery timeframes. The Detailed Definition of Requirements identifies the resources needed to support those functions, and Plan Development documents the recovery-plan components."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS22",
+    difficulty: "Hard",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Eta Systems must choose recovery arrangements for two functions. One function requires rapid restoration, while another can tolerate some downtime but would struggle to obtain specialised equipment at short notice. The organisation is also considering a reciprocal agreement and must ensure a third-party site's commitments are sufficiently defined.</p>
+    `,
+    questions: [
+      {
+        question: "For the function requiring rapid restoration, the organisation wants hardware and operational facilities to be available at the alternate location. Which option best matches the requirement?",
+        options: [
+          "Cold site, because all equipment must first be installed",
+          "Reciprocal agreement without checking capacity",
+          "Warm site, regardless of the recovery requirement",
+          "Hot site"
+        ],
+        answer: 3,
+        reason: "A hot site is appropriate when fast recovery is critical because its hardware and operational facilities are available. A hot site is more expensive to maintain than less ready alternatives."
+      },
+      {
+        question: "For the less time-sensitive function, the organisation wants an intermediate level of backup with selected equipment that could be difficult to obtain or install. Which arrangement is most suitable?",
+        options: [
+          "Cold site with no specialised hardware available",
+          "Hot site in every case, regardless of need",
+          "Warm site",
+          "An emergency plan instead of a recovery facility"
+        ],
+        answer: 2,
+        reason: "A warm site offers an intermediate level of backup by providing cold-site facilities along with hardware that may be difficult to obtain or install."
+      },
+      {
+        question: "Eta Systems considers an arrangement under which each participating organisation must support the other's critical system following a disaster. Which limitation should be specifically considered?",
+        options: [
+          "Each participant must maintain sufficient capacity to operate the other's critical system",
+          "The arrangement eliminates the need to consider available capacity",
+          "The arrangement guarantees unlimited availability in a common disaster",
+          "The arrangement removes the need to consider recovery requirements"
+        ],
+        answer: 0,
+        reason: "A reciprocal agreement may be relatively cheap, but each participant must maintain sufficient capacity to operate the other's critical system. Its practical effectiveness therefore depends on available capacity."
+      },
+      {
+        question: "A third-party recovery site's contract states that the site will be made available after a disaster but does not specify how competing users will be prioritised. What is the most important deficiency?",
+        options: [
+          "The contract must prohibit all concurrent use under every circumstance",
+          "The agreement must define the priority assigned to concurrent users in the event of a common disaster",
+          "The contract should omit details of the facilities and services supplied",
+          "The contract should assume that all organisations have equal processing requirements"
+        ],
+        answer: 1,
+        reason: "Contracts for third-party sites should address the number of organisations allowed to use the site concurrently and the priority assigned to concurrent users if a common disaster occurs."
+      },
+      {
+        question: "Which statement best distinguishes a cold site from a warm site in Eta Systems' decision?",
+        options: [
+          "A cold site always has all hardware and operations facilities available, whereas a warm site has none",
+          "A warm site is suitable only where no recovery is required",
+          "A cold site cannot be provided through an agreement with another organisation",
+          "A cold site provides facilities to install systems, while a warm site adds selected hardware that may be difficult to obtain or install"
+        ],
+        answer: 3,
+        reason: "A cold site supplies facilities needed to install a system, whereas a warm site provides those facilities plus certain hardware, offering an intermediate level of backup."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS23",
+    difficulty: "Hard",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Theta Retail has changed its services, staffing and technology, but its recovery plans still reflect the earlier environment. A recent exercise also revealed weaknesses that have not been incorporated into the plans. Management has asked for a clear approach to plan ownership, updates, version control and retesting.</p>
+    `,
+    questions: [
+      {
+        question: "What should Theta Retail establish to ensure that relevant organisational, operational and structural changes are communicated to the personnel responsible for keeping its BCP current?",
+        options: [
+          "A rule that plans may be revised only after a disaster",
+          "A policy that excludes change management from BCM",
+          "BCP maintenance triggers linked to changes and communicated to accountable personnel",
+          "An exercise schedule that cannot be changed"
+        ],
+        answer: 2,
+        reason: "BCP maintenance includes identifying triggers so that organisational, operational and structural changes are communicated to personnel accountable for keeping the plan up to date."
+      },
+      {
+        question: "The organisation has multiple versions of its BCP, and staff cannot identify which is current. Which maintenance measure most directly addresses this issue?",
+        options: [
+          "Version control procedures",
+          "A one-time awareness presentation",
+          "A reciprocal recovery-site agreement",
+          "A business impact assessment without subsequent documentation"
+        ],
+        answer: 0,
+        reason: "The chapter identifies implementing version control procedures as a BCP maintenance task to ensure that the plan is maintained and remains up to date."
+      },
+      {
+        question: "Theta Retail wants to determine the frequency of future exercises after its business environment and previous test results have changed. Which approach is most appropriate?",
+        options: [
+          "Retain the original schedule regardless of changes or test outcomes",
+          "Conduct testing only when stakeholders stop requesting it",
+          "Use the same frequency for every enterprise in every environment",
+          "Use a flexible programme that considers enterprise needs, the environment, stakeholder requirements, the rate of change and previous exercise outcomes"
+        ],
+        answer: 3,
+        reason: "The testing programme should be flexible. Frequency depends on enterprise needs, the operating environment and stakeholder requirements, while the rate of change and previous results should also be considered."
+      },
+      {
+        question: "Following an initial BCP test, the team identifies procedures that do not work as documented. What should it do next?",
+        options: [
+          "Keep the written plan unchanged so that test results remain comparable",
+          "Analyse the test results and modify the plan as appropriate",
+          "Stop documenting test results",
+          "Replace the BCP with the training programme"
+        ],
+        answer: 1,
+        reason: "Phase 8 includes analysing the results of initial plan tests and modifying plans as appropriate to ensure that the written plans are comprehensive and accurate."
+      },
+      {
+        question: "Which review finding would most clearly indicate that Theta Retail's BCM arrangements have not been maintained effectively?",
+        options: [
+          "The enterprise has an ongoing training and awareness programme",
+          "The organisation has identified critical products, services and supporting resources",
+          "Material changes and improvements identified during incidents and exercises have not been incorporated into its BCM strategies and plans",
+          "The organisation has defined responsibilities for BCM"
+        ],
+        answer: 2,
+        reason: "Reviewing BCM arrangements includes checking that strategies and plans incorporate improvements identified during incidents, exercises and maintenance, and that material changes in the enterprise are reflected in the plans."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS24",
+    difficulty: "Hard",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Iota Consulting stores critical records using several backup methods. The organisation wants to reduce backup time and storage requirements, but it must also consider recovery speed and the risk that deletion of a source file could affect its replica. Management is assessing whether off-site cloud storage is appropriate for some records.</p>
+    `,
+    questions: [
+      {
+        question: "Iota Consulting wants each backup to capture changes since the immediately preceding backup. Which method meets this requirement and generally uses less storage than a differential backup?",
+        options: [
+          "Full backup",
+          "Hot-site backup",
+          "Differential backup",
+          "Incremental backup"
+        ],
+        answer: 3,
+        reason: "An incremental backup records changes since the last backup. It generally uses less storage than a differential backup, although recovery can be more time-consuming."
+      },
+      {
+        question: "The organisation instead wants each backup to capture all changes made since its most recent full backup. Which method should it select?",
+        options: [
+          "Incremental backup",
+          "Differential backup",
+          "Cold-site backup",
+          "Reciprocal agreement"
+        ],
+        answer: 1,
+        reason: "A differential backup captures changes since the last full backup. It generally requires more storage than an incremental backup but less than a full backup."
+      },
+      {
+        question: "When comparing the general recovery-time characteristics of full, incremental and differential backups, which statement is consistent with the chapter?",
+        options: [
+          "Full backup generally supports faster recovery; differential recovery is generally faster than incremental recovery",
+          "Incremental backup always provides faster recovery than full backup",
+          "Differential backup always requires less storage and less recovery time than full backup",
+          "All three backup methods necessarily have identical recovery times"
+        ],
+        answer: 0,
+        reason: "The chapter's comparison describes full backup as supporting fast recovery, differential recovery as faster than incremental recovery, and incremental recovery as slower because the required successive backups may need to be applied."
+      },
+      {
+        question: "Iota Consulting uses a mirror backup and discovers that a file deleted from the source is also deleted from the mirror. Which control concern follows directly from this characteristic?",
+        options: [
+          "Mirror backups cannot replicate source data",
+          "Mirror backups always preserve every obsolete source file",
+          "Accidental deletion, sabotage or a virus affecting source files may also affect the mirrored copy",
+          "A mirror backup always captures only changes since the last full backup"
+        ],
+        answer: 2,
+        reason: "A mirror backup is an exact replica of the source. A source deletion caused accidentally, by sabotage or through a virus may also cause the file to be deleted from the mirror."
+      },
+      {
+        question: "Iota Consulting is evaluating cloud backup to keep critical records off-site and accessible independently of a single computer or server. Which consideration should be included in the decision?",
+        options: [
+          "Cloud backup eliminates all data-transfer delays and all storage costs",
+          "Cloud backup can provide off-site, redundant storage, but transfer speed and pay-per-use costs may be relevant disadvantages",
+          "Cloud backup is appropriate only when an organisation has no critical data",
+          "Cloud backup guarantees immediate restoration regardless of the size of the data"
+        ],
+        answer: 1,
+        reason: "The chapter identifies off-site, redundant storage and the possibility of frequent backups as advantages of cloud backup. It also notes that transfer speed may affect the process and pay-per-use costs may be high for organisations with enormous data."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch5_CS25",
+    difficulty: "Hard",
+    chapter: "Chapter5",
+    caseText: `
+      <p>Kappa Industries experiences a fire affecting its primary computer centre. The response team must initiate immediate protective actions, assess and coordinate the incident response, recover critical technology services, and manage the wider disruption to business operations and reputation. The existing plans contain different procedures for these responsibilities.</p>
+    `,
+    questions: [
+      {
+        question: "Which plan specifies the actions to be undertaken immediately when a disaster such as a major fire occurs?",
+        options: [
+          "Business Impact Assessment",
+          "BCM maintenance programme",
+          "Emergency Plan",
+          "Training and awareness programme"
+        ],
+        answer: 2,
+        reason: "The Emergency Plan specifies the actions to be undertaken immediately when a disaster occurs. The situations requiring invocation, such as a major fire, should be identified by management."
+      },
+      {
+        question: "After the initial alert, the incident team must confirm the nature and extent of the incident, control and contain the situation, communicate with stakeholders and coordinate the response. Which plan is most directly associated with this initial incident-management role?",
+        options: [
+          "Incident Management Plan (IMP)",
+          "Differential backup schedule",
+          "Detailed Definition of Requirements",
+          "Business Impact Assessment report alone"
+        ],
+        answer: 0,
+        reason: "The Incident Management Plan addresses the initial phase of an incident. The incident management structure supports confirming the impact, controlling and containing the situation, communicating with stakeholders and coordinating the response."
+      },
+      {
+        question: "The recovery team needs documented details concerning computer-centre hardware, software and configuration, data and programme-file locations, alternate manual procedures and recovery-site arrangements. Which document is most directly relevant?",
+        options: [
+          "The general training-needs assessment only",
+          "The BIA Report only",
+          "The routine marketing plan",
+          "Disaster Recovery Procedural Plan (DRPP)"
+        ],
+        answer: 3,
+        reason: "The Disaster Recovery Procedural Plan may include primary computer-centre hardware, software and configuration details; data and programme-file locations; alternate manual procedures; and backup-location agreements and related information."
+      },
+      {
+        question: "Which description best explains the purpose of a Business Continuity Plan (BCP) manual in this situation?",
+        options: [
+          "It deals only with restoring hardware, without addressing business operations",
+          "It documents actions, resources and procedures before, during and after a major disruptive event to support recovery to an agreed level within an agreed time",
+          "It records only the list of emergency telephone numbers",
+          "It replaces the need for incident management and recovery procedures"
+        ],
+        answer: 1,
+        reason: "A BCP manual documents actions, resources and procedures before, during and after an event that severely disrupts business operations. It should provide reasonable assurance of recovery to an agreed level within an agreed time."
+      },
+      {
+        question: "The board also needs an overall coordinated response that minimises damage to profitability, reputation and the organisation's ability to operate. Which concept most closely describes this responsibility?",
+        options: [
+          "Crisis Management",
+          "Incremental backup",
+          "Business Impact Assessment",
+          "Cold-site provision"
+        ],
+        answer: 0,
+        reason: "Crisis Management is the overall coordination of the response to a crisis to minimise damage to profitability, reputation or the organisation's ability to operate."
+      }
+    ]
+  }
+
 
 
 
