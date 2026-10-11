@@ -7870,12 +7870,1988 @@ const caseStudies = [
         reason: "Crisis Management is the overall coordination of the response to a crisis to minimise damage to profitability, reputation or the organisation's ability to operate."
       }
     ]
+  },
+
+  // Chapter6
+  {
+    case_id: "ecosys_ch6_CS01",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Alpha Retail operates a chain of stores and has been facing recurring problems with its existing inventory system. Management is also considering an online sales channel. It asks the system development team to examine the business need, consider possible solutions, and recommend whether a new information system should be developed. The project manager wants a structured approach with clear phases, responsibilities, milestones, and records of work completed.</p>
+    `,
+    questions: [
+      {
+        question: "Which situation described in the case is a recognised reason for considering the development or acquisition of a new system?",
+        options: [
+          "A change in the colour of the office walls",
+          "A problem with the existing system or business activities",
+          "A routine staff meeting with no system-related issue",
+          "A change in the office lunch schedule"
+        ],
+        answer: 1,
+        reason: "The need for SDLC may arise when an issue or problem exists with the current system or business activities. A new service delivery opportunity, such as an online channel, may also create a need for a system."
+      },
+      {
+        question: "What does the System Development Life Cycle (SDLC) provide to system designers and developers?",
+        options: [
+          "A sequence of activities or phases to follow during system development",
+          "A replacement for all system documentation",
+          "A method used only after the system has been discontinued",
+          "A process limited to purchasing computer hardware"
+        ],
+        answer: 0,
+        reason: "The SDLC provides a sequence of activities for system designers and developers to follow. Each phase uses the results of the previous phase, and the process is document driven."
+      },
+      {
+        question: "Which is an advantage of adopting the SDLC approach?",
+        options: [
+          "It removes the need for user review",
+          "It guarantees that no system defects can occur",
+          "It supports better planning and control by project managers",
+          "It makes documentation unnecessary"
+        ],
+        answer: 2,
+        reason: "The chapter identifies better planning and control by project managers as an advantage of SDLC. Documentation, standards, milestones, and review or sign-off also support communication and control."
+      },
+      {
+        question: "Barry Boehm's W5HH principle helps a project manager consider objectives, milestones, schedule, responsibilities, management and technical approaches, and which further matter?",
+        options: [
+          "Only the colour scheme of the user interface",
+          "The organisation's annual leave calendar alone",
+          "Only the names of software vendors",
+          "The resources required for the project"
+        ],
+        answer: 3,
+        reason: "The W5HH principle includes questions concerning why and what the system is being developed for, when work will be done, who is responsible, where they are located organisationally, how the job will be done, and how much of each resource is needed."
+      },
+      {
+        question: "According to the chapter, when is an SDLC phase considered complete?",
+        options: [
+          "As soon as a meeting has been held, whether or not work is recorded",
+          "When the appropriate documentation or artefact has been produced",
+          "Only after the entire system has been replaced",
+          "Whenever the project manager changes the project name"
+        ],
+        answer: 1,
+        reason: "A phase of the SDLC is not complete until the appropriate documentation or artefact, sometimes called a logical phase deliverable, has been produced."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS02",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Beta Payroll Services wants to replace a manual payroll process that has caused delays and repeated data-entry issues. Before proposing a solution, the system analyst meets payroll staff and managers, reviews existing forms and reports, observes the current process, and studies how payroll information is entered, processed, and reported. The analyst also considers how the proposed system should meet users' needs.</p>
+    `,
+    questions: [
+      {
+        question: "The analyst's meetings with payroll staff and managers are primarily intended to determine actual user needs. Which activity does this represent?",
+        options: [
+          "System changeover",
+          "Post-implementation review",
+          "Fact finding",
+          "Equipment checkout"
+        ],
+        answer: 2,
+        reason: "Fact finding involves interacting with people who will benefit from the system to determine their actual requirements. Documents, questionnaires, interviews and observation are among the techniques used."
+      },
+      {
+        question: "Which group contains fact-finding techniques identified in the chapter?",
+        options: [
+          "Only equipment installation and staff training",
+          "Interviews, questionnaires, documents and observation",
+          "Only regression testing and unit testing",
+          "Only file conversion and system scheduling"
+        ],
+        answer: 1,
+        reason: "The chapter identifies documents, questionnaires, interviews and observation as fact-finding techniques used by system analysts to determine needs and requirements."
+      },
+      {
+        question: "When the analyst collects, organises and evaluates facts about the existing payroll process and its operating environment, which activity is being performed?",
+        options: [
+          "Analysis of the present system",
+          "Final acceptance testing",
+          "Direct changeover",
+          "Preventive maintenance"
+        ],
+        answer: 0,
+        reason: "Analysis of the present system involves collecting, organising and evaluating facts about the existing system and the environment in which it operates."
+      },
+      {
+        question: "The analyst uses a Data Flow Diagram and an Entity-Relationship Diagram to document system activities and information. These are examples of what?",
+        options: [
+          "System changeover strategies",
+          "Maintenance categories",
+          "Feasibility dimensions",
+          "System development tools"
+        ],
+        answer: 3,
+        reason: "The chapter lists Data Flow Diagrams and E-R Diagrams, along with tools such as flowcharts, decision trees and decision tables, as tools used in system requirements analysis."
+      },
+      {
+        question: "After analysing the present process, the analyst defines the specifications of the proposed payroll system in line with the project's objectives. Which activity is this?",
+        options: [
+          "Equipment installation",
+          "System analysis of the proposed system",
+          "Regression testing",
+          "Scheduled maintenance"
+        ],
+        answer: 1,
+        reason: "System analysis of the proposed system defines proposed system specifications based on the objectives established during the study, while considering the strengths and shortcomings of the present system."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS03",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Gamma E-Commerce has completed its requirements analysis for a new customer-ordering system. The analyst prepares a Systems Requirements Specification (SRS) containing the system's goals, scope, information flow, functions, responses to events, and validation requirements. The development team presents the document to the customer, who checks whether it accurately represents the required processes before signing it.</p>
+    `,
+    questions: [
+      {
+        question: "At the end of which SDLC phase is the Systems Requirements Specification (SRS) prepared?",
+        options: [
+          "System requirements analysis",
+          "System implementation",
+          "Post-implementation maintenance",
+          "Equipment installation"
+        ],
+        answer: 0,
+        reason: "At the end of the system requirements analysis phase, the systems analyst prepares the Systems Requirements Specification (SRS)."
+      },
+      {
+        question: "Which information would normally be included in the Introduction section of the SRS?",
+        options: [
+          "Only the results of the final system test",
+          "Only the vendor's equipment installation checklist",
+          "Goals, objectives, software context, scope and environment of the system",
+          "Only a list of maintenance programmers"
+        ],
+        answer: 2,
+        reason: "The SRS Introduction normally contains the goals, objectives, software context, scope and environment of the computer-based system."
+      },
+      {
+        question: "The SRS section describing the system's response to external events and internal controls is the:",
+        options: [
+          "Appendices section",
+          "Behavioural Description",
+          "Introduction",
+          "Information Description"
+        ],
+        answer: 1,
+        reason: "The Behavioural Description section of the SRS describes responses to external events and internal controls."
+      },
+      {
+        question: "Which section of the SRS specifies classes of tests to validate functions, performance and constraints?",
+        options: [
+          "Information Description",
+          "Introduction",
+          "Appendices only",
+          "Validation Criteria"
+        ],
+        answer: 3,
+        reason: "The Validation Criteria section identifies classes of tests to be performed to validate the system's functions, performance and constraints."
+      },
+      {
+        question: "Why should the customer review the SRS before signing it?",
+        options: [
+          "To transfer all testing responsibilities to the customer",
+          "To avoid documenting the system's requirements",
+          "To ensure that the document accurately represents the existing processes and requirements understood by the development team",
+          "To select a system changeover strategy after deployment"
+        ],
+        answer: 2,
+        reason: "The user or customer should review the SRS to ensure that it accurately represents the existing processes and the development team's understanding. The user should sign it only after this has been confirmed."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS04",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Delta Finance has approved the most feasible system alternative after completing requirements analysis. The design team now prepares a blueprint showing the system's major features, modules, data flow, database, user screens, hardware and software requirements, and internal controls. The team also documents how the different parts of the system will interact before the detailed design is passed to developers.</p>
+    `,
+    questions: [
+      {
+        question: "What is the main objective of the System Designing phase?",
+        options: [
+          "To discontinue all documentation",
+          "To design an information system that best satisfies user and managerial requirements",
+          "To evaluate the system only after it has operated for six months",
+          "To correct defects reported by users after deployment only"
+        ],
+        answer: 1,
+        reason: "The objective of system designing is to design an Information System that best satisfies the users' and management's requirements and describes the system's parts and their interactions."
+      },
+      {
+        question: "Which statement best describes the logical design of an information system?",
+        options: [
+          "It is an engineering blueprint showing major system features and how they relate to one another",
+          "It is the final activity of training users",
+          "It is the process of correcting programming syntax errors",
+          "It is the process of running the old and new systems together"
+        ],
+        answer: 0,
+        reason: "The logical design is like an engineering blueprint. It shows the major features of the system and how they are related to one another."
+      },
+      {
+        question: "The team identifies major modules, the functions and scope of each module, and the interfaces between modules. Which design activity is this?",
+        options: [
+          "System conversion",
+          "Information evaluation",
+          "Regression testing",
+          "Architectural design"
+        ],
+        answer: 3,
+        reason: "Architectural design deals with the organisation of applications into a hierarchy of modules and sub-modules, including their functions, scope, interfaces and interactions."
+      },
+      {
+        question: "The team decides how users will enter data, view screens and interact with the system. Which activity is being performed?",
+        options: [
+          "Vendor feedback evaluation",
+          "File conversion",
+          "User interface design",
+          "Rescue maintenance"
+        ],
+        answer: 2,
+        reason: "User Interface Design determines the ways in which users will interact with a system, including input documents, screen layouts, inquiry screens and output displays."
+      },
+      {
+        question: "From an internal-control perspective, when should the system's internal controls be incorporated into the design?",
+        options: [
+          "Only after the system has been discontinued",
+          "During the System Designing phase",
+          "Only during the post-implementation review",
+          "Only when the vendor submits an invoice"
+        ],
+        answer: 1,
+        reason: "The design phase is important from an internal-control perspective because internal controls are placed in the system during this phase. The design documentation and controls should also be reviewed appropriately."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS05",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Epsilon Software has received the approved design specifications for a customer-service application. Developers write application programs, follow common coding standards, compile the source code, correct errors, and prepare documentation for users and maintenance staff. The project manager reminds the team that the completed programs must be dependable, handle unusual inputs appropriately, and remain understandable for future maintenance.</p>
+    `,
+    questions: [
+      {
+        question: "Which characteristic refers to the consistency with which a program operates over a period of time?",
+        options: [
+          "Reliability",
+          "Readability",
+          "Efficiency",
+          "Usability"
+        ],
+        answer: 0,
+        reason: "Reliability refers to the consistency with which a program operates over a period of time."
+      },
+      {
+        question: "The team designs the application to continue operating in adverse situations and to consider unlikely inputs and outputs. Which characteristic is being emphasised?",
+        options: [
+          "Readability",
+          "Accuracy",
+          "Robustness",
+          "Usability"
+        ],
+        answer: 2,
+        reason: "Robustness refers to an application's strength to uphold its operations in adverse situations by considering possible inputs and outputs, including unlikely situations."
+      },
+      {
+        question: "Why does Epsilon Software define common program coding standards for its developers?",
+        options: [
+          "To remove the need for program testing",
+          "To provide a method of communication and help minimise development setbacks caused by programmer turnover",
+          "To replace the Systems Requirements Specification",
+          "To ensure that every program uses different instructions for the same task"
+        ],
+        answer: 1,
+        reason: "Coding standards serve as a method of communication among team members and users and help minimise system-development setbacks due to programmer turnover. They also promote simplicity, compatibility and efficient resource utilisation."
+      },
+      {
+        question: "The programmer corrects syntax and diagnostic errors and resubmits the source program until it compiles cleanly. Which activity is this?",
+        options: [
+          "Integration testing",
+          "User Acceptance Testing",
+          "System conversion",
+          "Program debugging"
+        ],
+        answer: 3,
+        reason: "Program debugging involves correcting programming-language syntax and diagnostic errors so that the program compiles cleanly. The process includes submitting the source program, identifying errors, correcting code and resubmitting it."
+      },
+      {
+        question: "Which characteristic refers to the ease of maintaining a program even when its original developer is not available?",
+        options: [
+          "Robustness",
+          "Efficiency",
+          "Readability",
+          "Reliability"
+        ],
+        answer: 2,
+        reason: "Readability refers to the ease of maintenance of a program even in the absence of the program developer."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS06",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Zeta Hospital has developed a new appointment and billing system. The testing team first checks individual program units, then checks whether connected modules exchange information correctly. After a correction is made, previously tested functions are tested again. The team later tests the system as a whole, and users and quality personnel participate in final acceptance testing before implementation.</p>
+    `,
+    questions: [
+      {
+        question: "When a developer tests an individual program, function or procedure to verify that it behaves as intended, which level of testing is being performed?",
+        options: [
+          "System testing",
+          "Unit testing",
+          "Final acceptance testing",
+          "Integration testing"
+        ],
+        answer: 1,
+        reason: "Unit testing checks individual units of source code, such as a program, function or procedure, to determine whether each unit is fit for use and behaves as intended."
+      },
+      {
+        question: "After individual units have passed their tests, the team combines software modules and tests whether they exchange information correctly. Which test is this?",
+        options: [
+          "Integration testing",
+          "Regression testing",
+          "User Acceptance Testing",
+          "Post-implementation review"
+        ],
+        answer: 0,
+        reason: "Integration testing combines individual software modules and tests them as a group. It occurs after unit testing and before system testing and evaluates connections between components."
+      },
+      {
+        question: "Why does the team repeat tests on functions that worked before a software correction?",
+        options: [
+          "To carry out file conversion",
+          "To prepare the operating manual only",
+          "To select the system vendor",
+          "To ensure that a change has not introduced new faults"
+        ],
+        answer: 3,
+        reason: "Regression testing checks that changes or corrections have not introduced new faults in functions that previously worked. The chapter notes that the same data used in the original test should be used for regression tests."
+      },
+      {
+        question: "Which testing activity checks the software and other system elements as a whole?",
+        options: [
+          "Unit testing",
+          "Fact finding",
+          "System testing",
+          "Program debugging"
+        ],
+        answer: 2,
+        reason: "System testing tests the software and other system elements as a whole to ensure that the new or modified system functions properly. It is often performed in a non-production test environment."
+      },
+      {
+        question: "During final acceptance testing, which part confirms that the functional aspects expected by users have been addressed?",
+        options: [
+          "Quality Assurance Testing (QAT)",
+          "User Acceptance Testing (UAT)",
+          "Unit testing",
+          "Regression testing"
+        ],
+        answer: 1,
+        reason: "Final acceptance testing includes QAT and UAT. QAT checks whether the new system satisfies prescribed quality standards, while UAT checks whether the functional aspects expected by users have been addressed."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS07",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Eta Logistics has completed testing of its new information system and is preparing to put it into use. The implementation team plans the transfer of existing files, prepares clear operating procedures, arranges installation checks for the required equipment, and organises formal training for employees and computer professionals. The team also prepares a user guide explaining normal system use and common problems.</p>
+    `,
+    questions: [
+      {
+        question: "What is the purpose of System Implementation?",
+        options: [
+          "To ensure that the information system is operational and allow users to take over its operation for use and evaluation",
+          "To identify user needs before requirements analysis begins",
+          "To prepare only the logical design blueprint",
+          "To perform maintenance before any system is developed"
+        ],
+        answer: 0,
+        reason: "System Implementation is the process of ensuring that the information system is operational and then allowing users to take over its operation for use and evaluation."
+      },
+      {
+        question: "Which system-conversion activity requires existing data and information to be transferred from one medium to another?",
+        options: [
+          "User interface design",
+          "File conversion",
+          "Information evaluation",
+          "Architectural design"
+        ],
+        answer: 1,
+        reason: "File conversion is required when large files of information must be converted from one medium to another. The conversion programs should be thoroughly tested, and appropriate controls such as record counts and control totals should be used."
+      },
+      {
+        question: "The implementation team turns on the installed equipment and tests it under normal operating conditions. Which activity does this describe?",
+        options: [
+          "Fact finding",
+          "System requirements analysis",
+          "Equipment checkout",
+          "Information evaluation"
+        ],
+        answer: 2,
+        reason: "Equipment checkout involves turning on the equipment and testing it under normal operating conditions. The in-house team should also run tests to confirm that the equipment functions as required."
+      },
+      {
+        question: "Which approach to training personnel is recommended in the chapter for a newly acquired system?",
+        options: [
+          "Training should be avoided until the system is discontinued",
+          "Only written notices should be issued, without practical training",
+          "Training should be limited to the vendor and exclude users",
+          "Formal training should be based on business-process execution with actual data"
+        ],
+        answer: 3,
+        reason: "The chapter states that training is a major component of system implementation. Training should be formalised and based on business-process executions with actual data, often using classes and hands-on learning."
+      },
+      {
+        question: "What is the typical purpose of an operation manual?",
+        options: [
+          "To replace all internal controls in the system",
+          "To assist people in using the system, including guidance and troubleshooting information",
+          "To record only the final vendor payment",
+          "To describe only how the SRS was signed"
+        ],
+        answer: 1,
+        reason: "An operation manual, also known as a user's guide, is intended to assist people in using a system. It may include instructions for main functions, troubleshooting guidance, FAQs, a glossary and contact information for assistance."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS08",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>The management of Theta Manufacturing has chosen to replace its old production information system. Because the change affects daily operations, the implementation team compares different system change-over strategies. Management considers replacing the old system all at once, introducing the new system in stages, first using it at one location, or operating both systems together for an introductory period.</p>
+    `,
+    questions: [
+      {
+        question: "If Theta replaces the old system completely in one operation on a planned date, which strategy is being used?",
+        options: [
+          "Parallel changeover",
+          "Pilot changeover",
+          "Phased changeover",
+          "Direct implementation or abrupt changeover"
+        ],
+        answer: 3,
+        reason: "Direct implementation or abrupt changeover replaces the old system completely in one operation, usually on a set date."
+      },
+      {
+        question: "The new system is introduced gradually, with some files or activities moved first and later stages implemented only after earlier stages succeed. Which strategy is this?",
+        options: [
+          "Phased changeover",
+          "Direct implementation",
+          "Parallel changeover",
+          "Unit testing"
+        ],
+        answer: 0,
+        reason: "Under phased changeover, implementation takes place gradually in stages. If a phase is successful, the next phase is started until the new system fully replaces the old system."
+      },
+      {
+        question: "Theta first implements the new system at one plant to identify and correct errors before extending it to other locations. Which strategy is this?",
+        options: [
+          "Parallel changeover",
+          "Direct changeover",
+          "Pilot changeover",
+          "Phased changeover"
+        ],
+        answer: 2,
+        reason: "Pilot changeover introduces the new system on a small scale, such as at one branch or location. Errors or beneficial changes can be addressed before extending it throughout the organisation."
+      },
+      {
+        question: "For an introductory period, Theta keeps the old system fully operational while also using the new system. Which strategy is this?",
+        options: [
+          "Pilot changeover",
+          "Parallel changeover",
+          "Direct implementation",
+          "Phased changeover"
+        ],
+        answer: 1,
+        reason: "Under parallel changeover, both the old and new systems operate alongside each other for an introductory period. If the new system works satisfactorily, the old system is stopped."
+      },
+      {
+        question: "Which changeover strategy does the chapter describe as the most secure method because both systems run in parallel for an introductory period?",
+        options: [
+          "Direct implementation",
+          "Phased changeover",
+          "Pilot changeover",
+          "Parallel changeover"
+        ],
+        answer: 3,
+        reason: "The chapter describes parallel changeover as the most secure method because the old system remains fully operational while the new system comes online."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS09",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Iota Services has deployed a new management information system. Several weeks after deployment, the project manager schedules a formal review to find out whether the system met the originally defined business objectives and delivered the planned benefits. The review examines development performance, system operations, and the usefulness of the information generated for managers.</p>
+    `,
+    questions: [
+      {
+        question: "Which activity asks whether the system achieved what the organisation set out to do in business terms?",
+        options: [
+          "Post-Implementation Review",
+          "System Designing",
+          "Fact finding",
+          "File conversion"
+        ],
+        answer: 0,
+        reason: "A Post-Implementation Review answers the question, 'Did we achieve what we set out to do in business terms?' It assesses whether the project met its objectives, delivered planned benefits and addressed originally defined requirements."
+      },
+      {
+        question: "According to the chapter, what is a typical period after deployment for scheduling a Post-Implementation Review?",
+        options: [
+          "Only before requirements analysis begins",
+          "Six weeks to six months, depending on the solution and its environment",
+          "Exactly one year in every case",
+          "Only after the system has been discontinued"
+        ],
+        answer: 1,
+        reason: "The chapter states that a Post-Implementation Review should be scheduled sometime after deployment. Typical periods range from six weeks to six months, depending on the type of solution and its environment."
+      },
+      {
+        question: "The review compares actual development time and cost with the schedule and budget established in advance. Which evaluation is this?",
+        options: [
+          "Information evaluation",
+          "Operational evaluation",
+          "Development evaluation",
+          "User interface evaluation"
+        ],
+        answer: 2,
+        reason: "Development evaluation is concerned primarily with whether the system was developed on schedule and within budget. It requires advance schedules and budgets and records of actual performance and cost."
+      },
+      {
+        question: "The review examines whether the hardware, software and personnel are capable of performing their duties. Which evaluation is this?",
+        options: [
+          "Development evaluation",
+          "Information evaluation",
+          "Feasibility evaluation only",
+          "Operational evaluation"
+        ],
+        answer: 3,
+        reason: "Operational evaluation considers whether the hardware, software and personnel can perform their duties and examines functional aspects of the system."
+      },
+      {
+        question: "The review also examines the information generated by the system for managers. Which evaluation dimension is most directly concerned with this?",
+        options: [
+          "Information evaluation",
+          "Equipment checkout",
+          "System conversion",
+          "Unit testing"
+        ],
+        answer: 0,
+        reason: "Information evaluation examines the information an information system provides or generates. The chapter notes that this aspect can be difficult to evaluate quantitatively."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS10",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Kappa Solutions has been operating its information system for some time. The organisation plans certain updates in advance, but it also experiences an unexpected malfunction that requires immediate attention. Users report coding defects, the operating environment is updated, and management requests additional system functions. The maintenance team must classify each activity according to the type of maintenance described in the SDLC chapter.</p>
+    `,
+    questions: [
+      {
+        question: "Kappa plans security checks in advance to support operational continuity and avoid anticipated risks. Which type of maintenance does this represent?",
+        options: [
+          "Rescue maintenance",
+          "Corrective maintenance",
+          "Scheduled maintenance",
+          "Perfective maintenance"
+        ],
+        answer: 2,
+        reason: "Scheduled maintenance is anticipated and can be planned for operational continuity and avoidance of anticipated risks. Planned security checks are an example given in the chapter."
+      },
+      {
+        question: "An unexpected malfunction that was not previously detected requires immediate troubleshooting. Which type of maintenance is required?",
+        options: [
+          "Preventive maintenance",
+          "Rescue maintenance",
+          "Adaptive maintenance",
+          "Scheduled maintenance"
+        ],
+        answer: 1,
+        reason: "Rescue maintenance deals with previously undetected malfunctions that were not anticipated but require an immediate troubleshooting solution."
+      },
+      {
+        question: "Users submit bug reports about defects in the program code, and the maintenance team fixes those defects. Which type of maintenance is this?",
+        options: [
+          "Corrective maintenance",
+          "Adaptive maintenance",
+          "Scheduled maintenance",
+          "Perfective maintenance"
+        ],
+        answer: 0,
+        reason: "Corrective maintenance deals with fixing bugs in code or defects found during execution. The need is usually initiated by bug reports prepared by end users."
+      },
+      {
+        question: "Kappa modifies its software to accommodate a change in the operating system or other external environmental conditions. Which type of maintenance is this?",
+        options: [
+          "Preventive maintenance",
+          "Rescue maintenance",
+          "Corrective maintenance",
+          "Adaptive maintenance"
+        ],
+        answer: 3,
+        reason: "Adaptive maintenance consists of adapting software to changes in the environment, such as hardware, the operating system, business rules, government policies or work patterns."
+      },
+      {
+        question: "Which option correctly matches the two remaining maintenance types with their purposes?",
+        options: [
+          "Perfective maintenance—fixing only previously undetected malfunctions; Preventive maintenance—changing over from old to new systems",
+          "Perfective maintenance—converting files; Preventive maintenance—testing individual program units",
+          "Perfective maintenance—accommodating new or changed user requirements or improving performance; Preventive maintenance—improving maintainability through activities such as updating documentation and improving modular structure",
+          "Perfective maintenance—testing connections between modules; Preventive maintenance—evaluating development budgets"
+        ],
+        answer: 2,
+        reason: "Perfective maintenance accommodates new or changed user requirements and may enhance functionality, performance or the user interface. Preventive maintenance aims to improve maintainability, for example by updating documentation, adding comments and improving the system's modular structure."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch6_CS11",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Orion Retail has requested a new stock-management system because its existing process causes delays and additional operating costs. During the preliminary investigation, the analyst identifies possible solutions, estimates the costs and benefits of each alternative, and considers whether the required technology is available. The analyst then prepares a report for management, including observations from the feasibility study and a recommendation about the next steps.</p>
+    `,
+    questions: [
+      {
+        question: "Which phase is Orion currently undertaking when it examines the business need and possible system solutions?",
+        options: [
+          "System Implementation",
+          "Preliminary Investigation",
+          "System Testing",
+          "Post-Implementation Review"
+        ],
+        answer: 1,
+        reason: "Preliminary Investigation is normally initiated by a system request. It examines the need for a system, identifies possible solutions, and considers their strategic benefits and feasibility."
+      },
+      {
+        question: "The analyst asks whether the technology required for a proposed solution is available. Which feasibility dimension is being considered?",
+        options: [
+          "Technical feasibility",
+          "Legal feasibility",
+          "Behavioral feasibility",
+          "Schedule feasibility"
+        ],
+        answer: 0,
+        reason: "Technical feasibility asks whether the technology needed for the proposed system is available."
+      },
+      {
+        question: "The analyst compares the estimated costs and benefits of alternative systems to select a desirable solution. This is part of:",
+        options: [
+          "Unit testing",
+          "Equipment checkout",
+          "Feasibility study",
+          "System changeover"
+        ],
+        answer: 2,
+        reason: "A feasibility study evaluates alternative systems through cost-benefit analysis so that the most feasible and desirable system can be selected for development."
+      },
+      {
+        question: "Which document is a deliverable of the Preliminary Investigation phase?",
+        options: [
+          "A regression-test log only",
+          "A user operation manual only",
+          "A program source-code listing",
+          "A report including feasibility-study observations"
+        ],
+        answer: 3,
+        reason: "The deliverable of preliminary investigation includes a report containing observations from the feasibility study. The report presents the problem, possible alternatives, estimated costs and benefits, and results to management."
+      },
+      {
+        question: "After receiving the analyst's report, who should determine what action to take next?",
+        options: [
+          "Management",
+          "The compiler",
+          "The equipment vendor alone",
+          "The end user without management review"
+        ],
+        answer: 0,
+        reason: "The chapter states that management should determine what to do next based on the analyst's report."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS12",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Prism Health is specifying a new appointment system. The analyst meets doctors, reception staff and administrators to resolve differences in their expectations. The team checks that each requirement is clear, complete, testable and traceable, and prepares diagrams to explain the movement of data through the proposed system. The analyst records the requirements in a formal document for review by the customer.</p>
+    `,
+    questions: [
+      {
+        question: "Why does the analyst consult doctors, reception staff and administrators during requirements analysis?",
+        options: [
+          "To begin parallel changeover",
+          "To install new hardware",
+          "To identify stakeholder expectations and resolve conflicts",
+          "To perform preventive maintenance"
+        ],
+        answer: 2,
+        reason: "System Requirements Analysis includes identifying and consulting stakeholders to determine expectations and resolve conflicts among requirements."
+      },
+      {
+        question: "Which of the following is a quality the chapter says system requirements should possess?",
+        options: [
+          "They must remain undocumented",
+          "They should be unambiguous and testable",
+          "They should be impossible to modify",
+          "They should not be traceable"
+        ],
+        answer: 1,
+        reason: "The chapter states that requirements should be complete, consistent, unambiguous, verifiable, modifiable, testable and traceable."
+      },
+      {
+        question: "The team prepares a Data Flow Diagram to represent the movement of data. Which phase uses such tools to document and communicate system activities and resources?",
+        options: [
+          "System Requirements Analysis",
+          "System Implementation",
+          "Post-Implementation Review",
+          "System Maintenance only"
+        ],
+        answer: 0,
+        reason: "During System Requirements Analysis, tools such as Data Flow Diagrams, E-R Diagrams, flowcharts and decision tables are used to conceptualise, document and communicate activities and resources."
+      },
+      {
+        question: "Which document records the requirements and related specifications at the end of the analysis phase?",
+        options: [
+          "Equipment installation checklist",
+          "Regression log",
+          "Operating manual",
+          "Systems Requirements Specification (SRS)"
+        ],
+        answer: 3,
+        reason: "At the end of the analysis phase, the systems analyst prepares the Systems Requirements Specification (SRS), which records the requirements and system specifications."
+      },
+      {
+        question: "Before signing the SRS, what should the customer ensure?",
+        options: [
+          "That the new system has already been maintained for years",
+          "That the document accurately represents the existing processes and the development team's understanding",
+          "That every requirement has been removed from the document",
+          "That only the vendor has reviewed the document"
+        ],
+        answer: 1,
+        reason: "The SRS should be reviewed by the user or customer. The user should sign it only after ensuring that it accurately represents existing processes and the development team's understanding of them."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS13",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Summit Transport has approved the requirements for a fleet-monitoring system. The design team determines the modules and their interfaces, plans the data and information flow, defines the database structure, and decides how the application will operate on the organisation's hardware, operating system and network. The team also checks whether the design documentation adequately records internal controls.</p>
+    `,
+    questions: [
+      {
+        question: "The team identifies major modules, their functions and their interfaces. Which design activity does this describe?",
+        options: [
+          "Architectural design",
+          "File conversion",
+          "Final acceptance testing",
+          "Rescue maintenance"
+        ],
+        answer: 0,
+        reason: "Architectural design organises applications into modules and sub-modules and identifies their functions, scope, interfaces and interactions."
+      },
+      {
+        question: "Which activity determines the scope of the database and its local or global structure?",
+        options: [
+          "Training personnel",
+          "Program debugging",
+          "Design of database",
+          "System changeover"
+        ],
+        answer: 2,
+        reason: "Database design involves determining the scope of the database, ranging from local to global structure, based on interdependence among organisational units."
+      },
+      {
+        question: "The team decides the hardware type, operating system, network and whether processing will be batch, online or real-time. Which activity is this?",
+        options: [
+          "Fact finding",
+          "Physical design",
+          "Regression testing",
+          "Information evaluation"
+        ],
+        answer: 1,
+        reason: "Physical design transforms the logical design into implementation units and considers hardware, operating systems, networking and processing methods such as batch, online or real-time."
+      },
+      {
+        question: "Why does the team examine internal controls during the design phase?",
+        options: [
+          "Internal controls are added only after the system is discontinued",
+          "Internal controls are unrelated to system design",
+          "The review replaces the need for a design document",
+          "Internal controls are placed in the system during the design phase"
+        ],
+        answer: 3,
+        reason: "The chapter highlights the design phase as important from an internal-control perspective because controls are placed in the system during this phase and should be reflected in the documentation."
+      },
+      {
+        question: "What does the logical design of an information system primarily show?",
+        options: [
+          "The system's major features and how they relate to one another",
+          "Only the actual cost of staff training",
+          "Only the results of user acceptance testing",
+          "The final date on which maintenance will stop"
+        ],
+        answer: 0,
+        reason: "The logical design is like an engineering blueprint. It shows the major features of the system and how they relate to one another."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS14",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Nova Learning is developing an online training application. The development manager asks programmers to follow common coding standards, consider the capabilities of the in-house team when choosing a programming language, and prepare readable documentation. During development, the team also checks whether the application performs efficiently and whether its behaviour matches both the intended and prohibited outcomes described in the requirements.</p>
+    `,
+    questions: [
+      {
+        question: "What is one purpose of program coding standards according to the chapter?",
+        options: [
+          "To eliminate all need for project communication",
+          "To replace all program testing activities",
+          "To act as a method of communication and help minimise setbacks due to programmer turnover",
+          "To prevent the use of documentation"
+        ],
+        answer: 2,
+        reason: "Coding standards provide a method of communication among team members and users and minimise system-development setbacks due to programmer turnover. They also support simplicity, compatibility and efficient resource utilisation."
+      },
+      {
+        question: "Which factor may be considered when selecting a programming language?",
+        options: [
+          "The colour of the developer's desk",
+          "The knowledge of software development staff and the capability of in-house staff for maintenance",
+          "The date of the last staff picnic",
+          "The number of pages in the operation manual alone"
+        ],
+        answer: 1,
+        reason: "Language selection may depend on the application area, algorithmic complexity, execution environment, performance, data-structure complexity, staff knowledge and in-house maintenance capability."
+      },
+      {
+        question: "The manager checks whether the application does what it is supposed to do and avoids doing what it should not do. Which program characteristic is this?",
+        options: [
+          "Accuracy",
+          "Readability",
+          "Usability",
+          "Robustness"
+        ],
+        answer: 0,
+        reason: "Accuracy refers not only to what a program is supposed to do, but also to what it should not do. The latter is an important consideration for quality-control personnel and auditors."
+      },
+      {
+        question: "The manager assesses performance per unit cost and checks that increased input values do not unduly affect performance. Which characteristic is being assessed?",
+        options: [
+          "Reliability",
+          "Robustness",
+          "Readability",
+          "Efficiency"
+        ],
+        answer: 3,
+        reason: "Efficiency refers to performance per unit cost with respect to relevant parameters, and it should not be unduly affected by an increase in input values."
+      },
+      {
+        question: "Which characteristic is concerned with a user-friendly interface and easy-to-understand documentation?",
+        options: [
+          "Accuracy",
+          "Usability",
+          "Reliability",
+          "Efficiency"
+        ],
+        answer: 1,
+        reason: "Usability refers to a user-friendly interface and easy-to-understand internal and external documentation."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS15",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Harbour Bank has prepared a system test plan for its new account-servicing application. The testing team documents the test scripts, records the results and maintains version details for each test iteration. Developers first test individual units, then test modules together. When a change is made, the team repeats tests using data from the original tests before testing the integrated application as a whole.</p>
+    `,
+    questions: [
+      {
+        question: "What is the main objective of unit testing?",
+        options: [
+          "To assess the entire business solution after six months",
+          "To test only the old system while the new system is unavailable",
+          "To isolate and test individual program components to show that they are correct",
+          "To decide which vendor should receive an RFP"
+        ],
+        answer: 2,
+        reason: "Unit testing isolates each component of a program and checks whether individual units of source code are fit for use and behave as intended."
+      },
+      {
+        question: "Which testing activity combines individual software modules and tests them as a group?",
+        options: [
+          "Integration testing",
+          "Preventive maintenance",
+          "Post-implementation review",
+          "Equipment checkout"
+        ],
+        answer: 0,
+        reason: "Integration testing combines individual software modules and tests them as a group to evaluate whether connected components pass information correctly."
+      },
+      {
+        question: "Why does Harbour Bank reuse the original test data after a change is made?",
+        options: [
+          "To complete file conversion",
+          "To prepare a feasibility report",
+          "To eliminate documentation of the change",
+          "To check that the change has not introduced new faults"
+        ],
+        answer: 3,
+        reason: "Regression testing ensures that modifications or corrections have not introduced new faults. The chapter states that the data used for regression tests should be the same as the data used in the original test."
+      },
+      {
+        question: "Which level of testing examines the software and other system elements as a whole?",
+        options: [
+          "Fact finding",
+          "System testing",
+          "Unit testing only",
+          "Program coding"
+        ],
+        answer: 1,
+        reason: "System testing tests the software and other system elements as a whole to ensure that the new or modified system functions properly."
+      },
+      {
+        question: "What should be recorded for each test script during the testing process?",
+        options: [
+          "Only the name of the system analyst",
+          "Only the proposed purchase price of hardware",
+          "The test script, its results and version details for successive iterations",
+          "Only the date of the preliminary investigation"
+        ],
+        answer: 2,
+        reason: "The chapter states that each test script, its results and versioning should be documented based on the iterations run for the test to pass. A log of test results and tested conditions is useful for locating faults and debugging."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS16",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Meadow Foods is converting its inventory information from the existing system to a new information system. The conversion team tests its conversion programs, reconciles record counts and control totals, and retains existing computer files temporarily in case the converted data must be reconstructed. The system manager also coordinates the first processing schedules with the managers of the operational departments.</p>
+    `,
+    questions: [
+      {
+        question: "Why should file-conversion programs be thoroughly tested before the converted files are relied upon?",
+        options: [
+          "To make sure the conversion is as accurate as possible",
+          "To avoid defining any operating procedures",
+          "To remove the requirement for control totals",
+          "To replace system testing entirely"
+        ],
+        answer: 0,
+        reason: "The chapter states that file-conversion programs must be thoroughly tested to make the conversion as accurate as possible."
+      },
+      {
+        question: "Which controls are specifically mentioned for checking the output of a conversion program?",
+        options: [
+          "User-interface colours and screen layouts",
+          "Record counts and control totals",
+          "Staff attendance and leave balances only",
+          "Vendor presentations and market feedback"
+        ],
+        answer: 1,
+        reason: "Adequate conversion controls, such as record counts and control totals, should be required as output of the conversion program."
+      },
+      {
+        question: "Why should existing computer files be retained for a period after conversion?",
+        options: [
+          "To ensure the new system is never used",
+          "To avoid maintaining any backup information",
+          "To enable files to be reconstructed if a bug is discovered in the conversion routine",
+          "To replace the need for user training"
+        ],
+        answer: 2,
+        reason: "The chapter advises retaining existing computer files until sufficient files have accumulated for backup, so the files can be reconstructed if a bug is later discovered in the conversion routine."
+      },
+      {
+        question: "Who should coordinate the master schedule for processing operations with the relevant operational departments?",
+        options: [
+          "The customer alone without system coordination",
+          "The software compiler",
+          "The vendor's marketing team",
+          "The system manager"
+        ],
+        answer: 3,
+        reason: "The chapter states that schedules should be set up by the system manager in conjunction with departmental managers of operational units serviced by the equipment."
+      },
+      {
+        question: "Which activity should be completed and documented for the new system before it is operated?",
+        options: [
+          "Operating procedures",
+          "Only the marketing brochure",
+          "Only the vendor's price quotation",
+          "The final post-implementation report"
+        ],
+        answer: 0,
+        reason: "Operating procedures should be carefully completed with sufficient documentation for the new system, covering computer operations and functional-area operations."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS17",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Atlas Analytics is preparing a new server-based application for implementation. The implementation team checks the equipment location against the vendor's environmental specifications, arranges the physical installation and connections, and plans tests under normal operating conditions. The team also checks whether the system can communicate with connected systems on other platforms before it is put into regular use.</p>
+    `,
+    questions: [
+      {
+        question: "Which implementation activity involves choosing an appropriate location and ensuring suitable temperature, humidity and dust conditions?",
+        options: [
+          "User Acceptance Testing",
+          "Site preparation",
+          "System requirements analysis",
+          "Information evaluation"
+        ],
+        answer: 1,
+        reason: "Site preparation provides an appropriate location and operating environment that meets the vendor's specifications for matters such as temperature, humidity and dust control."
+      },
+      {
+        question: "During installation, the equipment is physically installed and connected to power and communication lines. This is part of:",
+        options: [
+          "Fact finding",
+          "Post-implementation review",
+          "Installation of new hardware/software",
+          "Regression testing"
+        ],
+        answer: 2,
+        reason: "The chapter includes physical installation of equipment, connection to the power source and wiring to communication lines, where required, as part of installation of new hardware/software."
+      },
+      {
+        question: "What is equipment checkout?",
+        options: [
+          "Turning on equipment and testing it under normal operating conditions",
+          "Interviewing users to identify their requirements",
+          "Preparing a database design",
+          "Reviewing whether the project met its original business objectives"
+        ],
+        answer: 0,
+        reason: "Equipment checkout requires the equipment to be turned on and tested under normal operating conditions. The in-house implementation team should also run tests to ensure that the equipment functions as required."
+      },
+      {
+        question: "Why might end-to-end connectivity tests be desirable when a system interfaces with other systems or platforms?",
+        options: [
+          "To remove the need for an operating platform",
+          "To decide the wording of the SRS introduction only",
+          "To avoid installing required hardware",
+          "To prove that the operating environment and connected systems can communicate"
+        ],
+        answer: 3,
+        reason: "Where a new system interfaces with other systems or operates across multiple software platforms, final commissioning tests of the operating environment may be used to prove end-to-end connectivity."
+      },
+      {
+        question: "Which item should be developed with operating advice from the vendor and system development team?",
+        options: [
+          "The maintenance programmer's appraisal only",
+          "An installation checklist",
+          "The customer satisfaction report after six months",
+          "The old system's retirement notice only"
+        ],
+        answer: 1,
+        reason: "An installation checklist should be developed with operating advice from the vendor and the system development team."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS18",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Brightpath Services is evaluating alternative systems before approving a project. The analyst considers whether the solution is legally valid, whether it can be delivered on time, whether its expected return justifies the investment, and whether the organisation's people are likely to accept it. The analyst also considers possible effects on employees' quality of work life and prepares an assessment for management.</p>
+    `,
+    questions: [
+      {
+        question: "The analyst asks whether the proposed system is valid in legal terms. Which feasibility dimension is this?",
+        options: [
+          "Financial feasibility",
+          "Operational feasibility",
+          "Legal feasibility",
+          "Technical feasibility"
+        ],
+        answer: 2,
+        reason: "Legal feasibility considers whether the proposed solution is valid in legal terms."
+      },
+      {
+        question: "Which feasibility dimension asks whether the system can be delivered on time?",
+        options: [
+          "Schedule/Time feasibility",
+          "Behavioral feasibility",
+          "Political feasibility",
+          "Resources feasibility"
+        ],
+        answer: 0,
+        reason: "Schedule/Time feasibility asks whether the system can be delivered on time."
+      },
+      {
+        question: "The analyst considers the expected return on investment. Which feasibility dimension most directly addresses this question?",
+        options: [
+          "Legal feasibility",
+          "Political feasibility",
+          "Technical feasibility",
+          "Economic feasibility"
+        ],
+        answer: 3,
+        reason: "Economic feasibility considers return on investment. The chapter distinguishes this from financial feasibility, which asks whether the solution is financially viable."
+      },
+      {
+        question: "The analyst considers whether the new system may adversely affect employees' quality of work life. This is:",
+        options: [
+          "Schedule feasibility",
+          "Behavioral feasibility",
+          "Technical feasibility",
+          "Economic feasibility"
+        ],
+        answer: 1,
+        reason: "Behavioral feasibility considers whether the proposed solution is likely to have an adverse effect on the quality of work life."
+      },
+      {
+        question: "The analyst considers how the organisation internally will accept the new system. Which feasibility dimension is being considered?",
+        options: [
+          "Political feasibility",
+          "Technical feasibility",
+          "Legal feasibility",
+          "Schedule feasibility"
+        ],
+        answer: 0,
+        reason: "Political feasibility considers how the internal organisation will accept the new system."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS19",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Westline Manufacturing has operated its production system for several years. A new government policy affects the way its software must process information, users request additional reporting functions, and a defect is reported during daily processing. Management also schedules planned security checks and asks the maintenance team to improve the system documentation so that future changes will be easier to manage.</p>
+    `,
+    questions: [
+      {
+        question: "The software is changed to comply with a new government policy affecting its operating environment. Which maintenance type is most appropriate?",
+        options: [
+          "Rescue maintenance",
+          "Adaptive maintenance",
+          "Corrective maintenance",
+          "Perfective maintenance"
+        ],
+        answer: 1,
+        reason: "Adaptive maintenance adapts software to environmental changes. The chapter includes business rules and government policies among the external conditions that may require adaptation."
+      },
+      {
+        question: "Users request additional reporting functions and enhancements to the system. Which maintenance type is this?",
+        options: [
+          "Corrective maintenance",
+          "Rescue maintenance",
+          "Perfective maintenance",
+          "Scheduled maintenance"
+        ],
+        answer: 2,
+        reason: "Perfective maintenance accommodates new or changed user requirements and includes functional enhancements or activities to improve performance or the user interface."
+      },
+      {
+        question: "The team fixes a defect reported during ordinary program execution. Which maintenance type is being performed?",
+        options: [
+          "Corrective maintenance",
+          "Preventive maintenance",
+          "Adaptive maintenance",
+          "Scheduled maintenance"
+        ],
+        answer: 0,
+        reason: "Corrective maintenance fixes bugs in code or defects found during execution. Such maintenance is commonly initiated by bug reports from end users."
+      },
+      {
+        question: "The organisation carries out planned security checks to avoid anticipated risks. Which maintenance type does this represent?",
+        options: [
+          "Rescue maintenance",
+          "Perfective maintenance",
+          "Adaptive maintenance",
+          "Scheduled maintenance"
+        ],
+        answer: 3,
+        reason: "Scheduled maintenance is anticipated and planned for operational continuity and avoidance of anticipated risks. The chapter gives security checks as an example."
+      },
+      {
+        question: "The team updates documentation, adds comments and improves the modular structure to make future maintenance easier. Which maintenance type is this?",
+        options: [
+          "Corrective maintenance",
+          "Preventive maintenance",
+          "Rescue maintenance",
+          "Adaptive maintenance"
+        ],
+        answer: 1,
+        reason: "Preventive maintenance aims to increase system maintainability. Examples include updating documentation, adding comments and improving the modular structure of the system."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS20",
+    difficulty: "Easy",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Evergreen Consulting has deployed a new management information system. After the system has been operating for some time, management schedules a review to determine whether it met the original business objectives, whether the system and personnel are operating properly, and whether the information in management reports is useful. The support team also updates the user's guide, which includes system-use instructions and troubleshooting information.</p>
+    `,
+    questions: [
+      {
+        question: "What is the central question answered by a Post-Implementation Review?",
+        options: [
+          "Did the project achieve what it set out to do in business terms?",
+          "Which programming language has the longest name?",
+          "Which employees attended the first requirements meeting?",
+          "Can all system documentation be discarded?"
+        ],
+        answer: 0,
+        reason: "A Post-Implementation Review asks whether the project achieved what it set out to do in business terms, including whether it met its objectives, delivered planned benefits and addressed the original requirements."
+      },
+      {
+        question: "Management checks whether the hardware, software and personnel can perform their duties. Which evaluation is this?",
+        options: [
+          "Information evaluation",
+          "Development evaluation",
+          "Operational evaluation",
+          "Feasibility reporting"
+        ],
+        answer: 2,
+        reason: "Operational evaluation considers whether the hardware, software and personnel are capable of performing their duties and examines functional aspects of system operation."
+      },
+      {
+        question: "Management evaluates whether the information generated by the system is useful. Which evaluation is most directly relevant?",
+        options: [
+          "Equipment checkout",
+          "Information evaluation",
+          "Unit testing",
+          "System conversion"
+        ],
+        answer: 1,
+        reason: "Information evaluation assesses the information provided or generated by an information system. The chapter notes that this aspect can be difficult to evaluate quantitatively."
+      },
+      {
+        question: "Which evaluation examines whether the system was developed on schedule and within budget?",
+        options: [
+          "Operational evaluation",
+          "Information evaluation",
+          "User interface evaluation",
+          "Development evaluation"
+        ],
+        answer: 3,
+        reason: "Development evaluation focuses primarily on whether the system was developed on schedule and within budget. It requires advance schedules and budgets and records of actual performance and cost."
+      },
+      {
+        question: "Which item may appropriately be included in an operation manual?",
+        options: [
+          "Instructions for main system functions and a troubleshooting section",
+          "Only the project manager's personal notes",
+          "Only the original feasibility study cost estimate",
+          "Only the software source code without user guidance"
+        ],
+        answer: 0,
+        reason: "An operation manual or user's guide is intended to assist people in using a system. It may include instructions for main functions, troubleshooting guidance, FAQs, a glossary and contact information for assistance."
+      }
+    ]
+  },
+  // -------------------- MEDIUM --------------------
+  {
+    case_id: "ecosys_ch6_CS21",
+    difficulty: "Medium",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Meridian Council has requested a replacement payroll system because the existing process causes delays. The analyst compares alternative solutions, considers technology and delivery constraints, estimates costs and benefits, and prepares findings for management.</p>
+    `,
+    questions: [
+      {
+        question: "The analyst examines whether a proposed solution is financially viable. Which feasibility dimension addresses this question?",
+        options: [
+          "Economic feasibility",
+          "Operational feasibility",
+          "Financial feasibility",
+          "Political feasibility"
+        ],
+        answer: 2,
+        reason: "Financial feasibility considers whether the solution is viable financially. The chapter distinguishes this from economic feasibility, which considers return on investment."
+      },
+      {
+        question: "The analyst compares the return on investment expected from the alternative systems. Which feasibility dimension is most directly relevant?",
+        options: [
+          "Economic feasibility",
+          "Legal feasibility",
+          "Schedule/Time feasibility",
+          "Resources feasibility"
+        ],
+        answer: 0,
+        reason: "Economic feasibility considers return on investment. It is distinct from financial feasibility, which asks whether the solution is financially viable."
+      },
+      {
+        question: "The analyst checks whether the technology required by the proposed payroll system is available. Which dimension is being evaluated?",
+        options: [
+          "Behavioral feasibility",
+          "Political feasibility",
+          "Operational feasibility",
+          "Technical feasibility"
+        ],
+        answer: 3,
+        reason: "Technical feasibility asks whether the technology needed for the proposed system is available."
+      },
+      {
+        question: "The project sponsor needs to know whether the selected system can be delivered within the required timeframe. Which feasibility dimension applies?",
+        options: [
+          "Legal feasibility",
+          "Schedule/Time feasibility",
+          "Economic feasibility",
+          "Behavioral feasibility"
+        ],
+        answer: 1,
+        reason: "Schedule/Time feasibility considers whether the system can be delivered on time."
+      },
+      {
+        question: "Which statement correctly describes the result of the Preliminary Investigation phase?",
+        options: [
+          "It must include the completed program source code and final test results.",
+          "It replaces the need for management to decide the next step.",
+          "A report presents feasibility-study observations and recommendations so management can determine what to do next.",
+          "It is completed only after the system has been in operation for six months."
+        ],
+        answer: 2,
+        reason: "The Preliminary Investigation deliverable includes a report containing feasibility-study observations. The analyst presents the problem, alternatives, costs and benefits, and recommendations; management determines the next action."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS22",
+    difficulty: "Medium",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Northstar Clinics is specifying a new appointment system. The analyst consults stakeholders, resolves conflicting requirements, models information flows, and prepares an SRS for customer review. The customer will sign the SRS only after confirming that it accurately reflects the processes and requirements understood by the development team.</p>
+    `,
+    questions: [
+      {
+        question: "The analyst consults stakeholders to determine their expectations and resolve conflicting requirements. Which phase activity is being performed?",
+        options: [
+          "System Requirements Analysis",
+          "System Implementation",
+          "Post-Implementation Review",
+          "System Testing"
+        ],
+        answer: 0,
+        reason: "System Requirements Analysis includes identifying and consulting stakeholders to determine their expectations and resolve conflicts among requirements."
+      },
+      {
+        question: "Which combination represents the required qualities of system requirements identified in the chapter?",
+        options: [
+          "Informal, unrecorded and non-testable",
+          "Complete, consistent, unambiguous, verifiable, modifiable, testable and traceable",
+          "Fixed, undocumented and independent of project objectives",
+          "Limited to screen layouts and hardware prices"
+        ],
+        answer: 1,
+        reason: "The chapter states that requirements should be complete, consistent, unambiguous, verifiable, modifiable, testable and traceable."
+      },
+      {
+        question: "The SRS describes how the system responds to external events and identifies internal controls. Which section is most directly relevant?",
+        options: [
+          "Appendices",
+          "Information Description",
+          "Behavioural Description",
+          "Introduction"
+        ],
+        answer: 2,
+        reason: "The Behavioural Description section of the SRS describes responses to external events and internal controls."
+      },
+      {
+        question: "The analyst specifies classes of tests that will validate system functions, performance and constraints. Where should these be documented in the SRS?",
+        options: [
+          "Introduction",
+          "Functional Description",
+          "Information Description",
+          "Validation Criteria"
+        ],
+        answer: 3,
+        reason: "The Validation Criteria section identifies classes of tests to be performed to validate functions, performance and constraints."
+      },
+      {
+        question: "What is the appropriate basis for the customer's SRS sign-off?",
+        options: [
+          "The customer has confirmed that the document accurately represents the existing processes and the development team's understanding.",
+          "The programmers have completed all future maintenance activities.",
+          "The new system has replaced the old system at every site.",
+          "The system has passed a post-implementation review."
+        ],
+        answer: 0,
+        reason: "The development team presents and hands over the SRS for user or customer review. The user should sign only after ensuring that it accurately represents existing processes and the team's understanding."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS23",
+    difficulty: "Medium",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Vertex Logistics has selected a feasible alternative for a fleet information system. The design team defines modules and their interfaces, prepares the database and user-interface specifications, selects the hardware and operating platform, and documents security controls and the mechanism for controlling changes to requirements.</p>
+    `,
+    questions: [
+      {
+        question: "What is the principal objective of the System Designing phase?",
+        options: [
+          "To correct defects found during execution only",
+          "To design an information system that best satisfies user and managerial requirements",
+          "To evaluate the usefulness of management reports after deployment only",
+          "To replace the old system without planning"
+        ],
+        answer: 1,
+        reason: "System Designing aims to design an Information System that best satisfies users' and management's requirements and describes the parts of the system and their interactions."
+      },
+      {
+        question: "The team organises applications into modules and sub-modules and specifies their functions, scope and interfaces. Which activity is this?",
+        options: [
+          "Database conversion",
+          "Operational evaluation",
+          "Architectural design",
+          "Equipment checkout"
+        ],
+        answer: 2,
+        reason: "Architectural design organises applications into a hierarchy of modules and sub-modules and identifies their functions, scope, interfaces and interactions."
+      },
+      {
+        question: "The team determines the hardware, operating system, network facilities and processing method to be used. This is primarily part of:",
+        options: [
+          "Fact finding",
+          "Regression testing",
+          "System requirements sign-off",
+          "Physical design"
+        ],
+        answer: 3,
+        reason: "Physical design turns the logical design into implementation units and considers the operating platform, hardware, operating system, network and processing method."
+      },
+      {
+        question: "After the SRS has been reviewed, a stakeholder proposes an additional function that was not included in the agreed requirements. Which design control is intended to prevent this request from entering the system without control?",
+        options: [
+          "Regression testing",
+          "File conversion control totals",
+          "The system's change-control mechanism",
+          "Equipment checkout"
+        ],
+        answer: 2,
+        reason: "System Designing specifies a change-control mechanism to prevent uncontrolled entry of new requirements. A new request should not simply be added without appropriate control."
+      },
+      {
+        question: "Which statement about logical design is correct?",
+        options: [
+          "It is limited to the training of end users.",
+          "It is a blueprint showing the major features of the system and how they relate to one another.",
+          "It is the same as rescue maintenance.",
+          "It begins only after the system has been discontinued."
+        ],
+        answer: 1,
+        reason: "Logical design is like an engineering blueprint: it shows the major features of the system and how they relate to one another. Physical construction follows logical design."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS24",
+    difficulty: "Medium",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Clearwater Software is developing a document-management application from approved design specifications. Programmers follow coding standards, correct syntax and diagnostic errors, and assess the application's reliability, robustness, efficiency, usability and readability before handing it to the testing team.</p>
+    `,
+    questions: [
+      {
+        question: "A programmer corrects syntax and diagnostic errors and resubmits the source program until it compiles cleanly. Which activity is this?",
+        options: [
+          "System testing",
+          "System conversion",
+          "Program debugging",
+          "Information evaluation"
+        ],
+        answer: 2,
+        reason: "Program debugging involves correcting programming-language syntax and diagnostic errors so the program compiles cleanly, followed by resubmission of the corrected source program."
+      },
+      {
+        question: "The team evaluates whether the application can continue operating in adverse situations and handle unlikely inputs appropriately. Which characteristic is being assessed?",
+        options: [
+          "Readability",
+          "Robustness",
+          "Usability",
+          "Efficiency"
+        ],
+        answer: 1,
+        reason: "Robustness refers to an application's strength to uphold its operations in adverse situations, considering possible inputs and outputs, including unlikely situations."
+      },
+      {
+        question: "Which characteristic concerns the consistency with which a program operates over a period of time?",
+        options: [
+          "Efficiency",
+          "Accuracy",
+          "Usability",
+          "Reliability"
+        ],
+        answer: 3,
+        reason: "Reliability is the consistency with which a program operates over a period of time."
+      },
+      {
+        question: "The manager considers performance per unit cost and whether performance is unduly affected by increased input values. Which characteristic is relevant?",
+        options: [
+          "Efficiency",
+          "Readability",
+          "Reliability",
+          "Usability"
+        ],
+        answer: 0,
+        reason: "Efficiency relates to performance per unit cost with respect to relevant parameters, and performance should not be unduly affected by increased input values."
+      },
+      {
+        question: "Why are common coding standards useful to the development team?",
+        options: [
+          "They make program documentation unnecessary.",
+          "They eliminate the need to verify program behaviour.",
+          "They provide a communication method and help minimise setbacks caused by programmer turnover.",
+          "They ensure every programmer uses a different structure."
+        ],
+        answer: 2,
+        reason: "Coding standards support communication among team members and users and help minimise system-development setbacks due to programmer turnover. They also support simplicity and compatibility."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS25",
+    difficulty: "Medium",
+    chapter: "Chapter6",
+    caseText: `
+      <p>Solstice Finance is testing a new transaction application. The team checks individual program units, combines modules to verify their interfaces, repeats previously passed tests after a correction, and then tests the software and other system elements as a whole. Quality personnel and intended users participate in final acceptance activities.</p>
+    `,
+    questions: [
+      {
+        question: "The team tests an individual function to determine whether it behaves as intended. Which test is being performed?",
+        options: [
+          "System testing",
+          "Unit testing",
+          "User Acceptance Testing",
+          "Post-Implementation Review"
+        ],
+        answer: 1,
+        reason: "Unit testing checks individual units of source code, such as a program, function or procedure, to determine whether each unit behaves as intended."
+      },
+      {
+        question: "The team combines individual software modules and checks whether they exchange information correctly. Which testing level is most directly relevant?",
+        options: [
+          "Operational evaluation",
+          "Unit testing",
+          "System testing",
+          "Integration testing"
+        ],
+        answer: 3,
+        reason: "Integration testing combines individual software modules and tests them as a group, including whether connected components pass information correctly."
+      },
+      {
+        question: "After a correction, the team repeats previously passed tests using the original test data. What is the principal purpose?",
+        options: [
+          "To check that the change has not introduced new faults",
+          "To establish the project budget",
+          "To assess political feasibility",
+          "To replace the SRS review"
+        ],
+        answer: 0,
+        reason: "Regression testing checks whether changes or corrections have introduced new faults. The chapter states that the data used for regression tests should be the same as the data used in the original test."
+      },
+      {
+        question: "Which activity tests the software and other system elements as a whole?",
+        options: [
+          "Fact finding",
+          "Program debugging only",
+          "System testing",
+          "Database design"
+        ],
+        answer: 2,
+        reason: "System testing tests the software and other system elements as a whole to ensure that the new or modified system functions properly."
+      },
+      {
+        question: "Which statement correctly distinguishes Quality Assurance Testing (QAT) from User Acceptance Testing (UAT)?",
+        options: [
+          "QAT tests individual source-code units, whereas UAT performs file conversion.",
+          "QAT checks prescribed quality standards, whereas UAT checks whether user-expected functional aspects have been addressed.",
+          "QAT is performed only after maintenance, whereas UAT is part of feasibility analysis.",
+          "QAT and UAT are both names for direct changeover."
+        ],
+        answer: 1,
+        reason: "Final Acceptance Testing includes QAT and UAT. QAT ensures the new system satisfies prescribed quality standards, while UAT checks whether the functional aspects expected by users have been addressed."
+      }
+    ]
+  },
+
+  // -------------------- HARD --------------------
+  {
+    case_id: "ecosys_ch6_CS26",
+    difficulty: "Hard",
+    chapter: "Chapter6",
+    caseText: `
+      <p>After requirements analysis, Aster Systems prepares a proposed application design. A manager asks for module interfaces, internal controls and a formal mechanism for controlling new requirements. The customer has not yet confirmed that the SRS accurately represents existing processes, but a programmer has been asked to begin implementation.</p>
+    `,
+    questions: [
+      {
+        question: "The programmer has been asked to proceed even though the customer has not confirmed the SRS. Which action best preserves the SDLC's requirements-review control?",
+        options: [
+          "Begin coding immediately and treat the draft SRS as approved.",
+          "Have the user or customer review the SRS and sign it only after confirming that it accurately represents existing processes and the team's understanding.",
+          "Replace the SRS review with a direct changeover test.",
+          "Defer all requirements documentation until post-implementation review."
+        ],
+        answer: 1,
+        reason: "The SRS is presented to the user or customer for review. The user should sign only after ensuring that it accurately represents existing processes and the development team's understanding."
+      },
+      {
+        question: "Which phase should produce the design specifications for module structure, system interactions and the change-control mechanism?",
+        options: [
+          "System Designing",
+          "Preliminary Investigation",
+          "System Testing",
+          "Post-Implementation Review"
+        ],
+        answer: 0,
+        reason: "System Designing describes the parts of the system and their interactions, specifies program and database requirements, and includes a change-control mechanism to prevent uncontrolled entry of new requirements."
+      },
+      {
+        question: "The manager asks for module functions, scope, interfaces and interactions to be specified. Which design activity most directly addresses this requirement?",
+        options: [
+          "File conversion",
+          "Operational evaluation",
+          "Physical changeover",
+          "Architectural design"
+        ],
+        answer: 3,
+        reason: "Architectural design organises applications into modules and sub-modules and identifies their functions, scope, interfaces and interactions."
+      },
+      {
+        question: "The design team embeds internal controls and documents how system components interact. Which statement best reflects the chapter's approach?",
+        options: [
+          "Controls should be considered only after maintenance begins.",
+          "The design phase is important for internal control because controls are placed in the system during this phase.",
+          "Internal controls are part of the SRS Introduction only and do not affect design.",
+          "The design phase is complete as soon as a meeting is held, regardless of deliverables."
+        ],
+        answer: 1,
+        reason: "The chapter emphasises the design phase from an internal-control perspective because internal controls are placed in the system during this phase. Design documentation should reflect the specified controls."
+      },
+      {
+        question: "Which principle should be applied when deciding whether a phase of the SDLC is complete?",
+        options: [
+          "A phase is complete when the appropriate documentation or artefact has been produced.",
+          "A phase is complete when the next phase is announced, even without any output.",
+          "Only the final system requires a deliverable.",
+          "A phase is complete when all requirements are removed from the change register."
+        ],
+        answer: 0,
+        reason: "The SDLC is document driven. A phase is not complete until the appropriate documentation or artefact, sometimes called a logical phase deliverable, has been produced."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS27",
+    difficulty: "Hard",
+    chapter: "Chapter6",
+    caseText: `
+      <p>During a feasibility study, Lumen Services compares two system alternatives. One uses available technology and appears deliverable by the target date, but its financial case is unresolved. Management also needs to understand how the solution would work in practice, whether it could adversely affect employees' quality of work life, and how the organisation is likely to accept the change before recommending an alternative.</p>
+    `,
+    questions: [
+      {
+        question: "The analyst reports that technology is available and the deadline appears achievable, but the financial case is still unresolved. Which conclusion is best supported?",
+        options: [
+          "Technical and schedule feasibility automatically establish economic feasibility.",
+          "The alternative is fully feasible because technology availability resolves every feasibility dimension.",
+          "The study should disregard the deadline and assess only user acceptance.",
+          "Technical and Schedule/Time feasibility may be favourable, but financial viability and return on investment still require separate assessment."
+        ],
+        answer: 3,
+        reason: "Technical feasibility asks whether the technology is available, and Schedule/Time feasibility asks whether the system can be delivered on time. These do not replace the separate financial and economic feasibility assessments."
+      },
+      {
+        question: "Management is concerned with how the internal organisation will accept the proposed system. Which dimension should the analyst assess?",
+        options: [
+          "Political feasibility",
+          "Technical feasibility",
+          "Schedule/Time feasibility",
+          "Legal feasibility"
+        ],
+        answer: 0,
+        reason: "Political feasibility considers how the internal organisation will accept the new system."
+      },
+      {
+        question: "The analyst confirms that the required technology is available and that the system can be delivered on time. Which pair is correct?",
+        options: [
+          "Operational and behavioral feasibility",
+          "Technical and Schedule/Time feasibility",
+          "Political and legal feasibility",
+          "Economic and resources feasibility"
+        ],
+        answer: 1,
+        reason: "Technical feasibility asks whether the technology needed is available. Schedule/Time feasibility asks whether the system can be delivered on time."
+      },
+      {
+        question: "After defining the problem and scope, estimating the costs and benefits of alternatives, and reporting the results, what is the appropriate next decision-maker identified in the chapter?",
+        options: [
+          "The compiler",
+          "The testing tool",
+          "The vendor's installation technician alone",
+          "Management"
+        ],
+        answer: 3,
+        reason: "The analyst reports the problem, alternatives, estimated costs and benefits, and recommendations. Management should determine what to do next from the analyst's report."
+      },
+      {
+        question: "Employees state that the proposed system may adversely affect their quality of work life, while senior management separately questions whether the organisation will accept the change. Which pair of dimensions correctly addresses these two concerns, respectively?",
+        options: [
+          "Political feasibility, then legal feasibility",
+          "Behavioral feasibility, then political feasibility",
+          "Technical feasibility, then schedule feasibility",
+          "Economic feasibility, then financial feasibility"
+        ],
+        answer: 1,
+        reason: "Behavioral feasibility considers whether the solution may adversely affect quality of work life. Political feasibility considers how the internal organisation will accept the new system."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS28",
+    difficulty: "Hard",
+    chapter: "Chapter6",
+    caseText: `
+      <p>The testing team first checks individual units, then combines modules and verifies their interfaces. A defect is corrected, so previously passed tests must be repeated; the team then tests the application as a whole before final acceptance by quality personnel and users.</p>
+    `,
+    questions: [
+      {
+        question: "Which sequence best matches the testing activities described, assuming the units have initially passed and a correction then requires earlier tests to be repeated?",
+        options: [
+          "Integration testing → unit testing → final acceptance testing → regression testing → system testing",
+          "Unit testing → system testing → integration testing → final acceptance testing → regression testing",
+          "Unit testing → integration testing → regression testing after the correction → system testing → final acceptance testing",
+          "Regression testing → final acceptance testing → unit testing → system testing → integration testing"
+        ],
+        answer: 2,
+        reason: "Unit testing checks individual units; integration testing follows when modules are combined; regression testing checks that a correction has not introduced new faults; system testing examines the system as a whole; final acceptance testing includes QAT and UAT."
+      },
+      {
+        question: "The earlier test cases are rerun after the module correction, using the original test data. What is the main purpose of this step?",
+        options: [
+          "To prove the project's return on investment",
+          "To replace integration testing",
+          "To check that the correction has not introduced new faults",
+          "To obtain management's approval of the SRS"
+        ],
+        answer: 2,
+        reason: "Regression testing checks that changes or corrections have not introduced new faults. The chapter specifies that regression tests should use the same data used in the original test."
+      },
+      {
+        question: "The team then tests the application and the other system elements as a whole. Which level is being performed?",
+        options: [
+          "System testing",
+          "Unit testing",
+          "Fact finding",
+          "Program debugging"
+        ],
+        answer: 0,
+        reason: "System testing examines the software and other system elements as a whole to ensure that the new or modified system functions properly."
+      },
+      {
+        question: "Quality personnel verify that prescribed quality standards are satisfied. Which part of final acceptance testing is this?",
+        options: [
+          "UAT",
+          "Unit testing",
+          "Regression testing",
+          "QAT"
+        ],
+        answer: 3,
+        reason: "Quality Assurance Testing (QAT) ensures that the new system satisfies prescribed quality standards."
+      },
+      {
+        question: "Users verify that the functional aspects they expect have been addressed. Which part of final acceptance testing is this?",
+        options: [
+          "Integration testing",
+          "User Acceptance Testing (UAT)",
+          "Program debugging",
+          "Technical feasibility"
+        ],
+        answer: 1,
+        reason: "User Acceptance Testing (UAT) checks whether the functional aspects expected by users have been addressed. Final Acceptance Testing includes both QAT and UAT."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS29",
+    difficulty: "Hard",
+    chapter: "Chapter6",
+    caseText: `
+      <p>A hospital is preparing to replace its patient administration system and convert existing patient files. Management wants the old system to remain fully operational while the new system is used and assessed for an introductory period. The transition plan must minimise disruption and specify when the old system can be stopped.</p>
+    `,
+    questions: [
+      {
+        question: "Which changeover strategy most directly satisfies management's requirement?",
+        options: [
+          "Direct implementation, because the old system is stopped immediately",
+          "Phased changeover, because all functions must be transferred at once",
+          "Parallel changeover, because both systems operate alongside each other for an introductory period",
+          "Pilot changeover, because parallel operation across the organisation is required"
+        ],
+        answer: 2,
+        reason: "Under parallel changeover, the old system remains fully operational while the new system comes online. Both systems operate alongside each other for an introductory period, after which the old system can be stopped if all goes well."
+      },
+      {
+        question: "If management instead decided to introduce the new system at one branch first, correct any errors, and then extend it throughout the organisation, which strategy would apply?",
+        options: [
+          "Pilot changeover",
+          "Parallel changeover",
+          "Direct implementation",
+          "System testing"
+        ],
+        answer: 0,
+        reason: "Pilot changeover initially introduces the new system on a small scale, such as one branch or location. Errors and beneficial changes can be addressed before wider rollout."
+      },
+      {
+        question: "If the organisation converted selected files in stages while other files continued to be used on the old system, which strategy would this illustrate?",
+        options: [
+          "Direct implementation",
+          "Parallel changeover only",
+          "Pilot changeover only",
+          "Phased changeover"
+        ],
+        answer: 3,
+        reason: "Phased changeover introduces the new system gradually. Some files or functions may be moved first while others remain on the old system; successful phases are followed by subsequent phases."
+      },
+      {
+        question: "Which strategy replaces the old system completely in one operation, usually on a set date?",
+        options: [
+          "Phased changeover",
+          "Direct implementation or abrupt changeover",
+          "Parallel changeover",
+          "Pilot changeover"
+        ],
+        answer: 1,
+        reason: "Direct implementation or abrupt changeover replaces the old system completely in one operation, usually on a set date."
+      },
+      {
+        question: "While the changeover strategy is being prepared, the team must convert existing patient files. Which control combination most directly addresses conversion accuracy and the possibility of a defect in the conversion routine?",
+        options: [
+          "Rely only on user training and discard the source files immediately.",
+          "Use record counts and control totals, and retain existing files long enough to permit reconstruction if a conversion bug is discovered.",
+          "Use QAT instead of testing the conversion program and delete all conversion records.",
+          "Use a pilot location as a substitute for checking converted data."
+        ],
+        answer: 1,
+        reason: "The chapter calls for thorough testing of file-conversion programs, controls such as record counts and control totals, and retention of existing files until sufficient files have accumulated for backup and reconstruction if a conversion bug is discovered."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch6_CS30",
+    difficulty: "Hard",
+    chapter: "Chapter6",
+    caseText: `
+      <p>After deployment, a business information system receives several maintenance requests: a user reports a code defect, an unexpected malfunction requires immediate troubleshooting, a policy change affects the operating environment, and users request an additional report. The team also plans security checks and updates documentation to make future maintenance easier.</p>
+    `,
+    questions: [
+      {
+        question: "Which pairing correctly distinguishes a defect reported by a user from a separate malfunction that was previously undetected and now requires immediate troubleshooting?",
+        options: [
+          "User-reported code defect—Rescue; undetected urgent malfunction—Corrective",
+          "User-reported code defect—Adaptive; undetected urgent malfunction—Preventive",
+          "User-reported code defect—Perfective; undetected urgent malfunction—Scheduled",
+          "User-reported code defect—Corrective; undetected urgent malfunction—Rescue"
+        ],
+        answer: 3,
+        reason: "Corrective maintenance fixes bugs or defects found during execution and is commonly initiated by end-user bug reports. Rescue maintenance addresses previously undetected, unanticipated malfunctions requiring immediate troubleshooting."
+      },
+      {
+        question: "A previously undetected malfunction was not anticipated and now requires immediate troubleshooting. Which category applies?",
+        options: [
+          "Rescue maintenance",
+          "Scheduled maintenance",
+          "Preventive maintenance",
+          "Perfective maintenance"
+        ],
+        answer: 0,
+        reason: "Rescue maintenance refers to previously undetected malfunctions that were not anticipated but require an immediate troubleshooting solution."
+      },
+      {
+        question: "Which pairing correctly distinguishes a change imposed by the system's external environment from a user-requested functional enhancement?",
+        options: [
+          "Government policy change—Adaptive; additional report requested by users—Perfective",
+          "Government policy change—Corrective; additional report requested by users—Rescue",
+          "Government policy change—Preventive; additional report requested by users—Scheduled",
+          "Government policy change—Perfective; additional report requested by users—Adaptive"
+        ],
+        answer: 0,
+        reason: "Adaptive maintenance responds to environmental changes, including government policies. Perfective maintenance accommodates new or changed user requirements and functional enhancements such as additional reports."
+      },
+      {
+        question: "A planned change is intended to enhance the user interface and improve system performance, rather than to correct a reported code defect or adapt to a changed external environment. Which category most directly applies?",
+        options: [
+          "Rescue maintenance",
+          "Corrective maintenance",
+          "Perfective maintenance",
+          "Adaptive maintenance"
+        ],
+        answer: 2,
+        reason: "Perfective maintenance accommodates new or changed user requirements and includes activities to improve system performance or enhance the user interface. This differs from corrective maintenance, which fixes defects, and adaptive maintenance, which responds to environmental changes."
+      },
+      {
+        question: "Which option correctly classifies the two remaining activities in the case?",
+        options: [
+          "Security checks planned in advance—Rescue; documentation updates—Corrective",
+          "Security checks planned in advance—Adaptive; documentation updates—Perfective",
+          "Security checks planned in advance—Scheduled; documentation updates and improved modular structure—Preventive",
+          "Security checks planned in advance—Corrective; documentation updates—Rescue"
+        ],
+        answer: 2,
+        reason: "Scheduled maintenance is anticipated and planned for operational continuity and avoidance of anticipated risks; security checks are an example. Preventive maintenance aims to increase maintainability through activities such as updating documentation, adding comments and improving modular structure."
+      }
+    ]
   }
-
-
-
-
-
 
 
 
