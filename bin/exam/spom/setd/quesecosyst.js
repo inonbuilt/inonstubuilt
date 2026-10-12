@@ -9786,7 +9786,6 @@ const caseStudies = [
       }
     ]
   },
-
   {
     case_id: "ecosys_ch6_CS30",
     difficulty: "Hard",
@@ -9851,8 +9850,2739 @@ const caseStudies = [
         reason: "Scheduled maintenance is anticipated and planned for operational continuity and avoidance of anticipated risks; security checks are an example. Preventive maintenance aims to increase maintainability through activities such as updating documentation, adding comments and improving modular structure."
       }
     ]
-  }
+  },
+  // Chater7
+  {
+    case_id: "ecosys_ch7_CS01",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Asha Events manages bookings for concerts and other programmes. It introduces an information system that uses computers, software, communication networks and data resources to record bookings, process ticket information, generate reports and provide feedback to help control operations. Employees enter booking details, the system processes the data, and reports are made available to management.</p>
+    `,
+    questions: [
+      {
+        question: "Which option most appropriately describes an Information System (IS) as explained in the chapter?",
+        options: [
+          "A collection of software programs that operates independently of people and data resources",
+          "A combination of people, hardware, software, communication devices, network and data resources that processes data and information for a specific purpose",
+          "A communication network used only to transfer data between computers",
+          "A database that stores information without processing or disseminating it"
+        ],
+        answer: 1,
+        reason: "The chapter describes an Information System as a combination of people, hardware, software, communication devices, network and data resources that process data and information for a specific purpose."
+      },
+      {
+        question: "When an employee enters a customer's name and ticket requirements into the system, this activity is classified as:",
+        options: [
+          "Output",
+          "Feedback",
+          "Input",
+          "System maintenance"
+        ],
+        answer: 2,
+        reason: "Input includes information or instructions supplied to the system by a user, such as entering details through a computer."
+      },
+      {
+        question: "The system calculates the number of tickets sold for a concert. This activity is an example of:",
+        options: [
+          "Processing",
+          "Input",
+          "Feedback",
+          "Vendor selection"
+        ],
+        answer: 0,
+        reason: "Processing involves manipulating data to produce meaningful results. Calculating and reporting are examples of processing activities mentioned in the chapter."
+      },
+      {
+        question: "The system displays a report showing the tickets sold and available for each performance. The report represents:",
+        options: [
+          "Input",
+          "Processing",
+          "Feedback only",
+          "Output"
+        ],
+        answer: 3,
+        reason: "Output is the information disseminated by the system, such as a printed report or a displayed result."
+      },
+      {
+        question: "How does the feedback mechanism contribute to the operation of the information system?",
+        options: [
+          "It replaces the need for input and processing",
+          "It helps control the operation by using feedback to make modifications where required",
+          "It selects software vendors automatically",
+          "It grants permission to use copyrighted software"
+        ],
+        answer: 1,
+        reason: "The chapter explains that feedback provides a mechanism to control the system's operation and helps organisations achieve their objectives."
+      }
+    ]
+  },
 
+  {
+    case_id: "ecosys_ch7_CS02",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Northstar Services has completed the design of a new information system and must acquire the required hardware, software and related services. Management establishes acquisition standards addressing security and reliability. It also prepares the appropriate procurement documents so vendors can submit proposals that meet the organisation's functional, security and operational requirements.</p>
+    `,
+    questions: [
+      {
+        question: "At what stage does the acquisition of operating infrastructure, including hardware, software and services, arise according to the chapter?",
+        options: [
+          "Before the organisation identifies any system requirements",
+          "Only after the system has been discontinued",
+          "Only after all maintenance activities have ended",
+          "After a system has been designed either partially or fully"
+        ],
+        answer: 3,
+        reason: "The chapter explains that, after a system is designed either partially or fully, the next phase involves acquiring operating infrastructure, including hardware, software and services."
+      },
+      {
+        question: "What is a principal focus of acquisition standards established by management?",
+        options: [
+          "Ensuring that security, reliability and functionality are appropriately addressed",
+          "Allowing software to be acquired without reviewing its compatibility",
+          "Eliminating the need for vendor and licensing reviews",
+          "Permitting the use of products without considering operational requirements"
+        ],
+        answer: 0,
+        reason: "Acquisition standards should address security and reliability and help ensure that the product's security, reliability and functionality are considered."
+      },
+      {
+        question: "Which procurement document is identified in the chapter for soliciting bids when acquiring hardware or integrated systems of hardware and software?",
+        options: [
+          "Post-implementation review",
+          "Software licence agreement",
+          "Invitation-to-tender",
+          "User training plan"
+        ],
+        answer: 2,
+        reason: "The chapter identifies invitations-to-tender as a means of soliciting bids from vendors when acquiring hardware or integrated systems of hardware and software."
+      },
+      {
+        question: "When an organisation is acquiring off-the-shelf or third-party-developed software, which document is used to solicit proposals?",
+        options: [
+          "A post-implementation review",
+          "A Request for Proposal (RFP)",
+          "A user manual",
+          "A system maintenance log"
+        ],
+        answer: 1,
+        reason: "The chapter identifies a Request for Proposal (RFP) as the document used to solicit proposals for off-the-shelf or third-party-developed software."
+      },
+      {
+        question: "What should acquisition standards help ensure when requirements are detailed in an RFP?",
+        options: [
+          "Only the purchase price is documented",
+          "Only the vendor's geographical location is specified",
+          "The organisation avoids defining operational requirements",
+          "Functional, security and operational requirements are accurately identified and clearly detailed"
+        ],
+        answer: 3,
+        reason: "The chapter states that acquisition standards should help ensure functional, security and operational requirements are accurately identified and clearly detailed in requests for proposals."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS03",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Maple Retail plans to acquire a software solution from an external vendor. Before inviting proposals, its System Acquisition Team considers vendor background, financial stability, geographical location and market feedback. The team then checks submitted proposals against the RFP requirements and consults existing users of the vendor's systems before making its decision.</p>
+    `,
+    questions: [
+      {
+        question: "Which activity should take place before sending the RFP to vendors?",
+        options: [
+          "Final acceptance of the selected software",
+          "Vendor selection",
+          "Post-implementation review",
+          "Preparation of the system's maintenance report"
+        ],
+        answer: 1,
+        reason: "The chapter specifically states that vendor selection is to be completed before sending the RFP and that RFPs are sent only to selected vendors."
+      },
+      {
+        question: "Which of the following is a consideration during vendor selection?",
+        options: [
+          "Whether the vendor will approve the organisation's final system design",
+          "Whether the organisation can avoid defining its business requirements",
+          "The vendor's financial stability and market feedback about its performance",
+          "Whether the vendor can remove the need for system testing"
+        ],
+        answer: 2,
+        reason: "The chapter lists factors such as vendor background, geographical location, financial stability and market feedback about vendor performance, including price and services."
+      },
+      {
+        question: "The team checks whether each submitted proposal complies technically with the requirements stated in the RFP. This activity is known as:",
+        options: [
+          "Technical validation",
+          "Final acceptance",
+          "Preventive maintenance",
+          "Post-implementation review"
+        ],
+        answer: 0,
+        reason: "Technical validation checks whether the proposals submitted by vendors comply technically with the RFP requirements."
+      },
+      {
+        question: "A proposal does not meet the requirements specified in the RFP. What does the chapter indicate should happen to such a proposal?",
+        options: [
+          "It must automatically receive the highest point score",
+          "It must be sent to all other vendors for approval",
+          "It must be accepted subject to later changes",
+          "It should be rejected, with no further discussion on the rejected proposal"
+        ],
+        answer: 3,
+        reason: "The chapter states that proposals not meeting the RFP requirements should be rejected, with no further discussion on those rejected proposals."
+      },
+      {
+        question: "Why does the team obtain feedback from existing users of a vendor's system?",
+        options: [
+          "To replace the RFP with informal conversations",
+          "To understand system operations, problems and the vendor's response to support calls",
+          "To avoid checking the technical compliance of proposals",
+          "To determine the organisation's statutory tax rate"
+        ],
+        answer: 1,
+        reason: "The chapter identifies feedback from present users as valuable for understanding system operations, problems and the vendor's response to support calls."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS04",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Greenline Manufacturing receives proposals from several software vendors. Its evaluation team wants a structured comparison of each proposal. It considers a checklist of questions, an objective point-scoring approach and published reports that compare hardware or software performance. The team also reviews compatibility, maintainability and vendor support.</p>
+    `,
+    questions: [
+      {
+        question: "The team prepares a list of questions and checks each vendor's responses against the listed criteria. Which validation method is being used?",
+        options: [
+          "Spiral methodology",
+          "Benchmarking problems",
+          "Checklists",
+          "Final acceptance"
+        ],
+        answer: 2,
+        reason: "Checklists are described as a simple and subjective method of evaluation in which criteria are presented as questions against which vendor responses are validated."
+      },
+      {
+        question: "Which proposal-validation method provides an objective means of selecting a final system by assigning points against evaluation criteria?",
+        options: [
+          "Point-Scoring Analysis",
+          "Prototyping",
+          "Waterfall development",
+          "Post-implementation review"
+        ],
+        answer: 0,
+        reason: "Point-Scoring Analysis provides an objective means of selecting a final system by evaluating proposals against specified criteria and possible points."
+      },
+      {
+        question: "Independent agencies publish reports comparing the performance of different hardware and software products. Which validation method does this represent?",
+        options: [
+          "Testing Problems",
+          "Checklists",
+          "Technical validation of an RFP only",
+          "Public Evaluation Reports"
+        ],
+        answer: 3,
+        reason: "Public Evaluation Reports are reports published by consultancies or independent agencies that compare hardware and software performance."
+      },
+      {
+        question: "When are Public Evaluation Reports particularly useful, according to the chapter?",
+        options: [
+          "When no comparison of products is required",
+          "When the buying staff has inadequate knowledge of the relevant facts",
+          "When an organisation wants to avoid evaluating vendor proposals",
+          "When the system has already been discontinued"
+        ],
+        answer: 1,
+        reason: "The chapter notes that public evaluation reports are particularly useful where the buying staff has inadequate knowledge of the relevant facts."
+      },
+      {
+        question: "Which of the following is a factor that should be considered when evaluating vendors' proposals?",
+        options: [
+          "The personal preferences of an evaluator alone",
+          "The elimination of all vendor-support arrangements",
+          "The proposed system's maintainability and compatibility with existing systems",
+          "The number of unrelated products sold by the buyer"
+        ],
+        answer: 2,
+        reason: "The chapter identifies maintainability, compatibility with existing systems, performance in relation to costs, cost-benefit considerations and vendor support as evaluation factors."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS05",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Summit Logistics evaluates proposals for a new computer system. It creates sample programs that resemble its planned workload, including long jobs, short jobs, printing jobs, disk jobs and mathematical problems. The evaluation team also considers separate tests designed to examine the true capabilities of the hardware, software or system without reproducing the actual job mix.</p>
+    `,
+    questions: [
+      {
+        question: "Sample programs are designed to represent at least part of the buyer's primary workload and test whether a vendor's proposed solution meets the buyer's needs. Which method is described?",
+        options: [
+          "Benchmarking problems related to vendors' solutions",
+          "Public Evaluation Reports",
+          "Checklists",
+          "Point-Scoring Analysis"
+        ],
+        answer: 0,
+        reason: "Benchmarking problems related to vendors' solutions use sample programs representing at least part of the buyer's primary workload to test whether the proposed solution meets the requirements of the job."
+      },
+      {
+        question: "For benchmarking to provide a realistic basis for comparing proposals, the selected problems should:",
+        options: [
+          "Exclude the buyer's planned processing needs",
+          "Focus only on the appearance of the user interface",
+          "Be unrelated to the buyer's normal activities",
+          "Represent the typical job mix in appropriate proportions"
+        ],
+        answer: 3,
+        reason: "The chapter explains that benchmarking problems may include different types of jobs and loads in proportions typical of the job mix. A representative job mix can provide a realistic and tangible basis for comparison."
+      },
+      {
+        question: "The team develops test problems that disregard the actual job mix in order to test the true capabilities of the hardware, software or system. These are called:",
+        options: [
+          "Vendor-selection criteria",
+          "Testing Problems",
+          "Public Evaluation Reports",
+          "RFP requirements"
+        ],
+        answer: 1,
+        reason: "Testing Problems disregard the actual job mix and are devised to test the true capabilities of the hardware, software or system."
+      },
+      {
+        question: "Which example is consistent with the testing problems described in the chapter?",
+        options: [
+          "Checking whether a vendor has a nearby support office",
+          "Reviewing whether the proposal contains every requested heading",
+          "Measuring response time for jobs in a multiprogramming environment",
+          "Obtaining a user signoff for an approved prototype"
+        ],
+        answer: 2,
+        reason: "The chapter gives response time for two or more jobs in a multiprogramming environment as an example of a testing problem."
+      },
+      {
+        question: "Which is a disadvantage of benchmarking problems related to vendors' solutions?",
+        options: [
+          "Selecting representative problems requires time and effort, and the job mix must be precisely defined",
+          "They can never be used to compare vendor proposals",
+          "They require no operational hardware, software or services",
+          "They cannot assess whether a proposed solution meets the buyer's requirements"
+        ],
+        answer: 0,
+        reason: "The chapter notes that benchmarking can take considerable time and effort because representative problems must be selected and the job mix precisely defined. It also requires the existence of operational hardware, software and services."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS06",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Silver Oak Limited has finalised the input and output designs for a proposed information system. Its systems analyst assesses the application software requirements and management decides to acquire software from a vendor. Before signing the agreement, the organisation reviews the contract, usage licence, security provisions and applicable legal requirements.</p>
+    `,
+    questions: [
+      {
+        question: "After user input and output designs are finalised, what should the systems analyst assess?",
+        options: [
+          "Only the geographical location of the organisation's customers",
+          "The application software requirements and the functions and capabilities needed",
+          "Only the number of employees who will attend training",
+          "The final post-implementation review before development begins"
+        ],
+        answer: 1,
+        reason: "The chapter explains that, once user input and output designs are finalised, the systems analyst assesses application software requirements. This helps determine the type of application software required and the functions and capabilities it must possess."
+      },
+      {
+        question: "What should a contract between an organisation and a software vendor clearly describe?",
+        options: [
+          "Only the vendor's marketing strategy",
+          "Only the number of users who may access the organisation's premises",
+          "The rights and responsibilities of the parties to the contract",
+          "Only the dates on which the organisation's existing system was purchased"
+        ],
+        answer: 2,
+        reason: "The chapter states that contracts between an organisation and a software vendor should clearly describe the rights and responsibilities of the parties and should be in writing with sufficient detail."
+      },
+      {
+        question: "What is the primary purpose of a software licence as described in the chapter?",
+        options: [
+          "To grant permission to use computer software for authorised activities",
+          "To guarantee that software can never be affected by a cyber-attack",
+          "To eliminate the need for a contract in every situation",
+          "To ensure that the software is always developed in-house"
+        ],
+        answer: 0,
+        reason: "A software licence grants permission to use software for specified activities. The chapter explains that licences authorise activities that would otherwise be restricted by applicable intellectual property laws."
+      },
+      {
+        question: "What may be a consequence of using unlicensed software or violating a licensing agreement?",
+        options: [
+          "Automatic approval of all system changes",
+          "Guaranteed improvement in software performance",
+          "Removal of the need for security reviews",
+          "Possible litigation"
+        ],
+        answer: 3,
+        reason: "The chapter states that the use of unlicensed software or violations of a licensing agreement expose organisations to possible litigation. It also explains that copyright laws protect proprietary as well as open-source software."
+      },
+      {
+        question: "Which statement correctly describes the security certificates mentioned in the chapter?",
+        options: [
+          "They guarantee complete protection from every cyber-attack",
+          "They provide reasonable assurance in comparison with unsecured solutions, but do not guarantee protection from cyber-attacks",
+          "They remove the need to consider applicable legal provisions",
+          "They are relevant only after a system has been discontinued"
+        ],
+        answer: 1,
+        reason: "The chapter explains that proposed software should comply with applicable legal provisions and have minimum security certificates. Such certificates do not guarantee protection from cyber-attacks but provide reasonable assurance compared with unsecured solutions."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS07",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Orchid Healthcare wants to replace an information system that no longer meets users' needs. The project team documents the information required by the system, examines possible software solutions, evaluates constraints and reviews security threats and vulnerabilities before recommending an option to management.</p>
+    `,
+    questions: [
+      {
+        question: "What is the purpose of defining system requirements in the System Acquisition Cycle?",
+        options: [
+          "To define system needs or objectives, problems to be solved, processes and expected deliverables",
+          "To approve a vendor before any requirements are identified",
+          "To eliminate the need to compare alternative solutions",
+          "To prepare only the final invoice for software procurement"
+        ],
+        answer: 0,
+        reason: "System requirements describe the needs or objectives of the system and define the problems to be solved, business and system goals, processes, deliverables and expectations."
+      },
+      {
+        question: "Which activity is an appropriate way to gather system requirements, as described in the chapter?",
+        options: [
+          "Relying exclusively on a vendor's marketing material",
+          "Avoiding consultation with intended system users",
+          "Interviewing management and intended users to understand their expectations",
+          "Selecting software before identifying the information needed"
+        ],
+        answer: 2,
+        reason: "The chapter identifies interviews with management and intended users as a method of capturing requirements. Other methods include inspecting existing systems, reviewing forms and reports, observing business processes and consulting IT management and support staff."
+      },
+      {
+        question: "Which option contains alternatives that may be considered when identifying system solutions?",
+        options: [
+          "Only purchasing a new computer",
+          "Only retaining the existing system without review",
+          "Only preparing a user manual",
+          "An off-the-shelf product, a purchased supplier package, contracted development, in-house development or outsourcing"
+        ],
+        answer: 3,
+        reason: "The chapter lists several alternatives, including off-the-shelf products, purchased supplier packages, contracting for development, developing in-house and outsourcing."
+      },
+      {
+        question: "Which group correctly lists categories of feasibility analysis specified in the chapter?",
+        options: [
+          "Marketing, advertising, payroll, attendance and recruitment",
+          "Economic, technical, operational, legal, contractual and political",
+          "Input, output, feedback, printing and scanning",
+          "Corrective, adaptive, rescue and perfective"
+        ],
+        answer: 1,
+        reason: "Feasibility analysis examines constraints or limitations from technical and business perspectives. The categories listed in the chapter are economic, technical, operational, legal, contractual and political."
+      },
+      {
+        question: "The project team examines security threats, potential vulnerabilities, impacts and possible controls to reduce identified risks. Which System Acquisition Cycle activity is being performed?",
+        options: [
+          "Conducting a Risk Analysis",
+          "Completing Final Acceptance",
+          "Preparing a Public Evaluation Report",
+          "Defining the system's user interface"
+        ],
+        answer: 0,
+        reason: "Risk analysis reviews the security of the proposed system and includes analysing security threats, potential vulnerabilities and impacts, along with the feasibility of controls to reduce identified risks."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS08",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Meridian Finance uses a traditional system development approach for a project whose requirements can be specified in advance. The team completes one major phase before moving to the next, maintains written documentation, and obtains formal reviews and approvals at designated points. Management appreciates the structured process but recognises that changes introduced late may be difficult to accommodate.</p>
+    `,
+    questions: [
+      {
+        question: "Which system development methodology is described in this case?",
+        options: [
+          "Agile Model",
+          "Waterfall Model",
+          "Rapid Application Development (RAD) Model",
+          "Prototyping Model"
+        ],
+        answer: 1,
+        reason: "The Waterfall Model is a traditional development approach in which phases are carried out in a sequence or linear fashion."
+      },
+      {
+        question: "How are activities generally performed under the traditional Waterfall approach?",
+        options: [
+          "All activities are performed without an identified sequence",
+          "A new component is released whenever a user requests it, without completing its phase",
+          "The project begins with final acceptance and then defines the requirements",
+          "An activity is undertaken only when the prior step is fully completed"
+        ],
+        answer: 3,
+        reason: "The chapter explains that in the traditional approach, activities are performed in sequence and an activity is undertaken only when the prior step is fully completed."
+      },
+      {
+        question: "Which practice is characteristic of the Waterfall Model described in the chapter?",
+        options: [
+          "Extensive written documentation and formal reviews and approvals or signoffs",
+          "No documentation during development",
+          "No user or IT management review at the end of phases",
+          "Complete avoidance of planning and schedules"
+        ],
+        answer: 0,
+        reason: "The Waterfall Model emphasises planning, schedules, target dates and budgets. It uses extensive written documentation and formal reviews and approval or signoff by users and IT management at the end of most phases."
+      },
+      {
+        question: "Which is a strength of the Waterfall Model?",
+        options: [
+          "It eliminates all requirements analysis",
+          "It is designed to welcome unlimited changes at any stage without cost",
+          "Its orderly sequence and design reviews help support software quality, reliability, adequacy and maintainability",
+          "It ensures that system performance can be fully tested before any coding begins"
+        ],
+        answer: 2,
+        reason: "The chapter identifies the orderly sequence of development steps and design reviews as strengths that help ensure the quality, reliability, adequacy and maintainability of the developed software. Progress can also be measured."
+      },
+      {
+        question: "Which is a weakness of the Waterfall Model?",
+        options: [
+          "It does not use any development phases",
+          "It can be inflexible, slow and costly, and later changes may be difficult or expensive",
+          "It requires users to revise a prototype at every stage",
+          "It has no emphasis on planning or documentation"
+        ],
+        answer: 1,
+        reason: "The chapter identifies inflexibility, slowness, cost and cumbersome controls as weaknesses. It also notes that responding to later changes is difficult and, if undertaken, may be costly."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS09",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>BrightPath Institute is developing a new information system, but users are not yet certain about all the functions they need. Instead of waiting until every requirement is fully specified, the design team creates a small working version of the system. Users try the screens and menus, provide suggestions, and evaluate revised versions until they are satisfied with the proposed design.</p>
+    `,
+    questions: [
+      {
+        question: "Which system development approach is most directly described in the case?",
+        options: [
+          "Prototyping Model",
+          "Waterfall Model",
+          "Final Acceptance",
+          "Public Evaluation Reports"
+        ],
+        answer: 0,
+        reason: "The Prototyping Model develops a small or pilot version of part or all of a system. The prototype is built quickly and at a lesser cost so that users can experiment with it and suggest modifications."
+      },
+      {
+        question: "At the beginning of the Prototyping Model, what is needed to build the initial prototype?",
+        options: [
+          "Complete specifications for every future system version in all circumstances",
+          "Final acceptance of the fully operational system",
+          "Fundamental system requirements, which may be identified through a less formal and time-consuming process",
+          "A final post-implementation review"
+        ],
+        answer: 2,
+        reason: "Under the prototyping approach, the design team needs only fundamental system requirements to build the initial prototype. The process of determining them can be less formal and time-consuming than traditional systems analysis."
+      },
+      {
+        question: "When developing the initial prototype, which characteristics does the design team emphasise?",
+        options: [
+          "Maximum documentation before users see any screens",
+          "Simplicity, flexibility and ease of use",
+          "The complete absence of user interaction",
+          "Strictly preventing users from making suggestions"
+        ],
+        answer: 1,
+        reason: "The chapter explains that the initial prototype emphasises characteristics such as simplicity, flexibility and ease of use so that users can interact with tentative screens, menus, prompts and other elements."
+      },
+      {
+        question: "How does the test-and-revise activity normally proceed under the Prototyping Model?",
+        options: [
+          "The initial prototype is approved automatically without user evaluation",
+          "Users are involved only after implementation and maintenance are completed",
+          "The design team ignores user suggestions and keeps the prototype unchanged",
+          "Users evaluate the prototype, provide feedback and recommendations, and the team modifies and resubmits it for reevaluation"
+        ],
+        answer: 3,
+        reason: "The chapter describes an iterative process in which designers demonstrate the prototype, users experiment with it and provide feedback, and the team modifies and resubmits it until users are satisfied."
+      },
+      {
+        question: "What is the significance of obtaining user signoff on the approved prototype?",
+        options: [
+          "It removes the need to establish what the system will provide",
+          "It guarantees that no testing will be needed",
+          "It formally approves the prototype and commits users to the current design, including what the system will and will not do or provide",
+          "It automatically completes the procurement of every hardware component"
+        ],
+        answer: 2,
+        reason: "The chapter states that user signoff formally approves the final version of the prototype, commits users to the current design and establishes a contractual obligation concerning what the system will and will not do or provide."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS10",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Nova Digital is considering several system development approaches. One proposal divides the product into components that are designed, built and delivered separately. Another gives particular attention to project risks through repeated development cycles. A third prioritises rapid delivery through prototyping and timeboxes, while a fourth relies on iterative and incremental development, close cooperation with customers and teams that organise their own work.</p>
+    `,
+    questions: [
+      {
+        question: "The product is decomposed into components, each designed and built separately, with each completed component delivered to the client. Which model is being used?",
+        options: [
+          "Waterfall Model",
+          "Prototyping Model",
+          "Spiral Model",
+          "Incremental Model"
+        ],
+        answer: 3,
+        reason: "The Incremental Model decomposes a product into components or builds. Each component is designed and built separately and delivered to the client when complete, allowing partial use of the product."
+      },
+      {
+        question: "Which model is intended for large, expensive and complicated projects and emphasises identifying and resolving project risks during its cycles?",
+        options: [
+          "Waterfall Model",
+          "Spiral Model",
+          "RAD Model",
+          "Prototyping Model only"
+        ],
+        answer: 1,
+        reason: "The Spiral Model combines features of the Prototyping Model and the Waterfall Model. It is intended for large, expensive and complicated projects, with risk identification and resolution forming an important part of the process."
+      },
+      {
+        question: "A team uses minimal planning in favour of rapid prototyping, prioritises fast delivery and controls the project using timeboxes. Which methodology does this describe?",
+        options: [
+          "Waterfall Model",
+          "Public Evaluation Reports",
+          "Rapid Application Development (RAD) Model",
+          "System Acquisition Cycle"
+        ],
+        answer: 2,
+        reason: "The RAD Model uses minimal planning in favour of rapid prototyping. It emphasises fast development and delivery and uses timeboxes. If the project starts to slip, the emphasis is on reducing requirements to fit the timebox rather than extending the deadline."
+      },
+      {
+        question: "Which methodology is based on iterative and incremental development, collaboration between self-organising cross-functional teams, and adapting to changing requirements?",
+        options: [
+          "Agile Model",
+          "Waterfall Model",
+          "Point-Scoring Analysis",
+          "Invitation-to-tender"
+        ],
+        answer: 0,
+        reason: "The Agile Model is based on iterative and incremental development. Requirements and solutions evolve through collaboration between self-organising, cross-functional teams, and the methodology encourages a rapid and flexible response to change."
+      },
+      {
+        question: "Which statement is specifically consistent with the Agile Manifesto features described in the chapter?",
+        options: [
+          "Requirements must never change once development begins",
+          "Working software is the principal measure of progress and should be delivered frequently",
+          "Every project must wait until the entire system is complete before delivering working software",
+          "Project teams should avoid cooperation between business people and developers"
+        ],
+        answer: 1,
+        reason: "The chapter lists working software as the principal measure of progress, frequent delivery of working software, welcoming changing requirements and close cooperation between business people and developers among the features of the Agile Manifesto."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch7_CS11",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Orion Technologies plans to acquire an information system to support its business operations. Management prepares a system acquisition strategy to ensure that the proposed solution supports organisational objectives, integrates with the existing technology infrastructure and provides value for the investment. The team compares alternative solutions and considers the relationship with the selected vendor throughout implementation.</p>
+    `,
+    questions: [
+      {
+        question: "Which of the following is an objective of a System Acquisition Strategy?",
+        options: [
+          "To acquire technology without considering organisational objectives",
+          "To ensure that every system is developed exclusively in-house",
+          "To ensure that acquired systems align with organisational objectives, integrate with existing infrastructure and result in a positive return on investment",
+          "To eliminate the need to compare alternative solutions"
+        ],
+        answer: 2,
+        reason: "The chapter states that a System Acquisition Strategy should help ensure that acquired systems align with organisational objectives, integrate well with existing software and technology infrastructure, and result in a positive return on investment."
+      },
+      {
+        question: "Which of the following may be considered when identifying alternative system solutions?",
+        options: [
+          "Only retaining manual records permanently",
+          "An off-the-shelf product, a purchased supplier package, contracted development, in-house development or outsourcing",
+          "Only selecting the vendor with the lowest quoted price",
+          "Only developing a system without considering external solutions"
+        ],
+        answer: 1,
+        reason: "The chapter identifies several alternatives, including off-the-shelf products, purchased supplier packages, contracted development, in-house development and outsourcing."
+      },
+      {
+        question: "What is the principal purpose of the selection process in the System Acquisition Cycle?",
+        options: [
+          "To begin system maintenance before evaluating alternatives",
+          "To prepare a user manual before requirements are identified",
+          "To avoid reviewing the available alternatives",
+          "To identify the best match between available alternatives and identified requirements"
+        ],
+        answer: 3,
+        reason: "The selection process includes identifying the best match between available alternatives and the identified system requirements."
+      },
+      {
+        question: "The selected vendor repeatedly fails to provide the required support, and the partnership is no longer effective. What should the organisation's acquisition strategy provide for?",
+        options: [
+          "An exit strategy that allows selection of a new vendor with minimised transition costs",
+          "Automatic continuation with the same vendor regardless of performance",
+          "Abandoning all documented system requirements",
+          "Eliminating compatibility checks for the replacement system"
+        ],
+        answer: 0,
+        reason: "The chapter explains that if a vendor partnership does not succeed because of inefficiencies, an exit strategy should allow the organisation to select a new vendor while minimising transition costs."
+      },
+      {
+        question: "What kind of vendor relationship does the chapter identify as a key to obtaining value for the organisation?",
+        options: [
+          "A relationship that excludes agreed responsibilities",
+          "A relationship based only on informal discussions",
+          "A win-win partnership with the vendor",
+          "A relationship in which the organisation avoids reviewing performance"
+        ],
+        answer: 2,
+        reason: "The chapter identifies a win-win partnership with vendors as a key to obtaining value for the organisation."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS12",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Summit Enterprises engages an external supplier to develop and implement software. Before signing the agreement, the organisation documents the work to be performed, the system specifications, testing procedures, delivery schedules and acceptance criteria. The procurement team also evaluates the proposed pricing arrangement and the risks arising from unclear requirements.</p>
+    `,
+    questions: [
+      {
+        question: "Under a time-and-materials contract, how are the fees charged to the buyer determined?",
+        options: [
+          "They are directly attributable to the actual time spent or materials used",
+          "They are always fixed irrespective of the time and materials used",
+          "They are based only on the number of users trained",
+          "They are determined exclusively by the buyer's future profits"
+        ],
+        answer: 0,
+        reason: "The chapter states that time-and-materials contracts specify fees directly attributable to actual expenses of time, such as hourly charges, or materials."
+      },
+      {
+        question: "When does a time-and-materials contract place greater financial risk on the buyer?",
+        options: [
+          "When all requirements and the scope are clearly defined",
+          "When the initial definition of pricing, scope or desired requirements is unclear or poorly defined",
+          "When the supplier provides the agreed deliverables on time",
+          "When the buyer defines acceptance tests in advance"
+        ],
+        answer: 1,
+        reason: "The chapter explains that time-and-materials contracts place more financial risk on the buyer when the initial pricing definition, scope or desired requirements are unclear or poorly defined."
+      },
+      {
+        question: "Which item would appropriately be included in the terms and conditions of a software contract?",
+        options: [
+          "Only the supplier's general promotional activities",
+          "Only the names of the organisation's customers",
+          "Only the date on which the organisation was established",
+          "Specifications for input or output designs, such as interfaces, screens or reports"
+        ],
+        answer: 3,
+        reason: "The chapter lists specifications for input or output designs, including interfaces, screens and reports, among the normal terms and conditions of software contracts."
+      },
+      {
+        question: "Why should testing procedures and expected results be documented in the contract?",
+        options: [
+          "To eliminate the need for system requirements",
+          "To allow the supplier to decide acceptance criteria only after delivery",
+          "To identify problems and define the expected results used for acceptance",
+          "To replace the need for software documentation"
+        ],
+        answer: 2,
+        reason: "The chapter includes testing procedures used to identify problems and the expected results defining acceptance among the matters that software contracts should address."
+      },
+      {
+        question: "Which contractual provision is most directly concerned with a supplier failing to provide an agreed deliverable on time?",
+        options: [
+          "A description of the vendor's geographical location only",
+          "A clear description of each deliverable, its delivery time and the consequences of missed deliverables",
+          "A statement that deliverables need not be identified",
+          "A provision excluding all acceptance criteria"
+        ],
+        answer: 1,
+        reason: "The chapter identifies the definition of deliverables as including a clear description of each item, when it is to be delivered and any consequences for missed deliverables."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS13",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Harbour Finance adopts a formal approach to system development. The project is divided into manageable processes, and the team must produce reports and other documentation at designated stages. Users, managers and auditors participate at established control points, while the project team follows a planned process for testing, training and review.</p>
+    `,
+    questions: [
+      {
+        question: "Which statement best describes a System Development Methodology?",
+        options: [
+          "An informal set of activities that does not require project controls",
+          "A collection of vendor advertisements used to acquire hardware",
+          "A document prepared only after a system is discontinued",
+          "A formalised, standardised, well-organised and documented set of activities used to manage a system development project"
+        ],
+        answer: 3,
+        reason: "The chapter defines a System Development Methodology as a formalised, standardised, well-organised and documented set of activities used to manage a system development project."
+      },
+      {
+        question: "Why is a system development project divided into small, manageable processes?",
+        options: [
+          "To remove the need for deliverables and management control points",
+          "To facilitate project planning and project control",
+          "To avoid defining starting and ending points",
+          "To ensure that no documentation is produced"
+        ],
+        answer: 1,
+        reason: "The chapter explains that dividing a project into identifiable, manageable processes facilitates both project planning and project control."
+      },
+      {
+        question: "Why must reports and other documentation, called deliverables, be produced periodically during system development?",
+        options: [
+          "To make development personnel accountable for faithful execution of system development tasks",
+          "To replace all system testing",
+          "To eliminate participation by users and managers",
+          "To avoid establishing management control points"
+        ],
+        answer: 0,
+        reason: "The chapter states that deliverables must be produced periodically to make development personnel accountable for faithful execution of system development tasks."
+      },
+      {
+        question: "What do approvals, often called signoffs, at pre-established management control points signify?",
+        options: [
+          "That all future requirements must remain unknown",
+          "That the vendor can change the system without approval",
+          "Approval of the development process and the system being developed",
+          "That no further system testing is needed"
+        ],
+        answer: 2,
+        reason: "The chapter explains that signoffs signify approval of the development process and the system being developed."
+      },
+      {
+        question: "What should be done before a developed information system is implemented?",
+        options: [
+          "Implementation should begin without checking functionality",
+          "All training arrangements should be cancelled",
+          "Formal program change controls should be removed",
+          "The system should be tested thoroughly to ensure that it meets users' needs and requisite functionalities"
+        ],
+        answer: 3,
+        reason: "The chapter states that the system must be tested thoroughly before implementation to ensure that it meets user needs and requisite functionalities."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS14",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Bluebird Systems develops a prototype for an organisation whose users are still clarifying their requirements. The users test the proposed screens and suggest improvements. During the project review, the team also considers the risks of developing the prototype too quickly, recording requirements inadequately and overlooking controls, testing or documentation in the final system.</p>
+    `,
+    questions: [
+      {
+        question: "Which is a weakness of the Prototyping Model identified in the chapter?",
+        options: [
+          "It requires every user requirement to be perfectly specified before any prototype can be started",
+          "Approval processes and controls may not be strict",
+          "It prevents users from participating in system development",
+          "It cannot help identify confusing or difficult functions"
+        ],
+        answer: 1,
+        reason: "The chapter identifies a lack of strict approval processes and controls as a weakness of prototyping. It also notes that the approach can improve user participation and help identify confusing functions."
+      },
+      {
+        question: "What may result from incomplete or inadequate problem analysis during prototyping?",
+        options: [
+          "All non-functional requirements are automatically documented",
+          "All existing business practices are necessarily improved",
+          "A final system is guaranteed to be free of errors",
+          "Only obvious or superficial needs may be addressed, allowing existing inefficient practices to be built into the new system"
+        ],
+        answer: 3,
+        reason: "The chapter warns that incomplete or inadequate problem analysis can result in only obvious and superficial needs being addressed and current inefficient practices being built into the new system."
+      },
+      {
+        question: "Which aspect may be difficult to document in the Prototyping Model?",
+        options: [
+          "Non-functional elements",
+          "The existence of user suggestions",
+          "The fact that a prototype has been demonstrated",
+          "The possibility of revising a prototype"
+        ],
+        answer: 0,
+        reason: "The chapter identifies the difficulty of documenting non-functional elements as a weakness of prototyping."
+      },
+      {
+        question: "What risk arises when a prototype is developed without sufficient attention to checks and balances?",
+        options: [
+          "The system automatically becomes compatible with all existing systems",
+          "The need for user feedback is eliminated",
+          "The prototype may not have sufficient checks and balances incorporated",
+          "All system requirements become fixed without review"
+        ],
+        answer: 2,
+        reason: "The chapter explicitly identifies the possibility that a prototype may not have sufficient checks and balances incorporated."
+      },
+      {
+        question: "Why may inadequate testing and documentation of the ultimately approved system be harmful?",
+        options: [
+          "They guarantee reduced maintenance effort in every situation",
+          "Inadequate testing can make the system error-prone, while inadequate documentation can make it difficult to maintain",
+          "They remove the need for an approved prototype",
+          "They ensure that every user requirement has been met"
+        ],
+        answer: 1,
+        reason: "The chapter cautions that developers may be tempted to minimise testing and documentation after extensive prototype experimentation. Inadequate testing may make the approved system error-prone, and inadequate documentation may make it difficult to maintain."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS15",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Evergreen Retail decides to introduce a new information system in stages instead of waiting for the whole system to be completed. The product is divided into components, and each component is designed, built and tested. The project team reviews progress at major milestones and uses knowledge gained from earlier releases when developing later components.</p>
+    `,
+    questions: [
+      {
+        question: "Which system development model is most consistent with Evergreen Retail's approach?",
+        options: [
+          "Waterfall Model only",
+          "Public Evaluation Reports",
+          "Prototyping Model only",
+          "Incremental Model"
+        ],
+        answer: 3,
+        reason: "The Incremental Model develops the product incrementally, with components designed, implemented and tested in stages until the product satisfies its requirements."
+      },
+      {
+        question: "Which is a strength of the Incremental Model?",
+        options: [
+          "It requires every function of the complete system to be released at the same time",
+          "It prevents the team from using knowledge gained during earlier increments",
+          "Knowledge gained in an early increment can be used when developing later increments",
+          "It removes the need to define overall requirements"
+        ],
+        answer: 2,
+        reason: "The chapter identifies the potential to exploit knowledge gained in an early increment as later increments are developed as a strength of the Incremental Model."
+      },
+      {
+        question: "How is moderate control maintained over the life of an incremental development project, as described in the chapter?",
+        options: [
+          "Through written documentation and formal review and approval or signoff at designated major milestones",
+          "By eliminating written documentation and formal reviews",
+          "By permitting all system changes without review",
+          "By avoiding the participation of IT management"
+        ],
+        answer: 0,
+        reason: "The chapter states that moderate control is maintained through written documentation and formal review and approval or signoff by users and IT management at designated major milestones."
+      },
+      {
+        question: "Which advantage of the Incremental Model relates to changes in scope and requirements?",
+        options: [
+          "Changes can occur only after the system is discontinued",
+          "It is more flexible and less costly to change scope and requirements",
+          "It prevents the monitoring of incremental changes",
+          "It requires all requirements to remain unchanged throughout development"
+        ],
+        answer: 1,
+        reason: "The chapter identifies greater flexibility and lower cost of changing scope and requirements as strengths of the Incremental Model."
+      },
+      {
+        question: "Why are well-defined interfaces required when using the Incremental Model?",
+        options: [
+          "Because no component can ever be completed before another component",
+          "Because the model prevents separate components from being developed",
+          "Because every component is delivered only after the entire project ends",
+          "Because some modules may be completed much earlier than others"
+        ],
+        answer: 3,
+        reason: "The chapter identifies the need for well-defined interfaces as a weakness or challenge because some modules may be completed much earlier than others."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS16",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Atlas Interactive is planning a large, expensive and complicated software project. The project team defines requirements, prepares a preliminary design, examines alternatives and identifies potential risks. It develops a prototype and evaluates its strengths, weaknesses and risks before planning and testing a further iteration.</p>
+    `,
+    questions: [
+      {
+        question: "Which development model combines features of the Prototyping Model and the Waterfall Model?",
+        options: [
+          "RAD Model",
+          "Incremental Model only",
+          "Agile Model",
+          "Spiral Model"
+        ],
+        answer: 3,
+        reason: "The chapter explains that the Spiral Model combines features of the Prototyping Model and the Waterfall Model."
+      },
+      {
+        question: "For which type of project is the Spiral Model intended, according to the chapter?",
+        options: [
+          "Only projects that do not require any risk analysis",
+          "Large, expensive and complicated projects",
+          "Only projects with no changes in requirements",
+          "Projects that require no preliminary design"
+        ],
+        answer: 1,
+        reason: "The chapter states that the Spiral Model is intended for large, expensive and complicated projects."
+      },
+      {
+        question: "What is an important purpose of the preliminary design phase in the Spiral Model?",
+        options: [
+          "To identify and resolve possible risks and analyse alternatives that may support a cost-effective project",
+          "To prevent the team from considering alternative approaches",
+          "To finalise the project without analysing uncertainty",
+          "To replace every subsequent prototype with a vendor evaluation report"
+        ],
+        answer: 0,
+        reason: "The chapter describes the preliminary design phase as particularly important for analysing alternatives, deciding strategies and identifying and resolving possible risks in project development."
+      },
+      {
+        question: "Which is identified as a strength of the Spiral Model?",
+        options: [
+          "It eliminates the need for an experienced project manager",
+          "It guarantees that a project will always meet its budget and schedule",
+          "It enhances risk avoidance",
+          "It provides firm termination conditions for every cycle in all circumstances"
+        ],
+        answer: 2,
+        reason: "The chapter identifies enhanced risk avoidance as a strength of the Spiral Model."
+      },
+      {
+        question: "Which is a weakness of the Spiral Model described in the chapter?",
+        options: [
+          "It cannot use prototyping in its framework",
+          "It is unsuitable for examining project risks",
+          "It always requires every project to use the same development combination",
+          "It can be complex and requires a skilled, experienced project manager to determine how to apply it"
+        ],
+        answer: 3,
+        reason: "The chapter notes that the Spiral Model can be highly customised and complex, may limit reusability, and requires a skilled and experienced project manager. It also identifies challenges regarding controls between cycles and the lack of firm deadlines."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS17",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Metro Solutions must deliver a business application quickly while keeping investment costs relatively low. The development plan uses rapid prototyping, active user involvement and computerised development tools. The team establishes delivery deadlines called timeboxes and agrees that, if work starts to slip, requirements will be reduced to fit the agreed timebox rather than automatically extending the deadline.</p>
+    `,
+    questions: [
+      {
+        question: "Which software development methodology is described in the case?",
+        options: [
+          "Waterfall Model",
+          "Spiral Model",
+          "Prototyping Model only",
+          "Rapid Application Development (RAD) Model"
+        ],
+        answer: 3,
+        reason: "RAD uses minimal planning in favour of rapid prototyping and aims to produce high-quality systems quickly at a relatively low investment cost."
+      },
+      {
+        question: "What is the purpose of using timeboxes in the RAD Model?",
+        options: [
+          "To postpone delivery until all possible features have been added",
+          "To define delivery deadlines and prioritise development within the available time",
+          "To eliminate active user involvement",
+          "To prevent the team from changing requirements at any stage"
+        ],
+        answer: 1,
+        reason: "The chapter states that RAD project control involves prioritising development and defining delivery deadlines or timeboxes."
+      },
+      {
+        question: "If a RAD project starts to slip, what does the chapter say should be emphasised?",
+        options: [
+          "Reducing requirements to fit the timebox rather than increasing the deadline",
+          "Increasing the deadline in every instance",
+          "Stopping all user involvement",
+          "Abandoning project control"
+        ],
+        answer: 0,
+        reason: "The chapter explains that if a RAD project starts to slip, the emphasis is on reducing requirements to fit the timebox, not on increasing the deadline."
+      },
+      {
+        question: "Which practice is consistent with RAD?",
+        options: [
+          "Avoiding all computerised development tools",
+          "Allowing no user participation in system design",
+          "Active user involvement, including Joint Application Development (JAD) where applicable",
+          "Developing only throwaway prototypes rather than production software"
+        ],
+        answer: 2,
+        reason: "The chapter identifies active user involvement as imperative in RAD and describes Joint Application Development (JAD), where users are intensely involved in system design through workshops or electronically facilitated interaction."
+      },
+      {
+        question: "Which is a weakness of the RAD Model identified in the chapter?",
+        options: [
+          "The operational version of an application can never be available early",
+          "It cannot respond to changes in user requirements",
+          "It has no use for customer feedback",
+          "Fast speed and lower cost may adversely affect system quality"
+        ],
+        answer: 3,
+        reason: "The chapter identifies the possibility that fast speed and lower cost may adversely affect system quality as a weakness of RAD. Other weaknesses include feature creep, goldplating and inconsistent designs."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS18",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Clearview Software organises its developers into self-organising, cross-functional teams that collaborate closely with business representatives. The teams deliver working software frequently, welcome changes in requirements and adapt their plans as the project evolves. Management also recognises that the approach requires continued attention to communication, design, documentation and integration.</p>
+    `,
+    questions: [
+      {
+        question: "Which methodology is based on iterative and incremental development through collaboration between self-organising, cross-functional teams?",
+        options: [
+          "Waterfall Model",
+          "Agile Model",
+          "Point-Scoring Analysis",
+          "Invitation-to-tender"
+        ],
+        answer: 1,
+        reason: "The chapter describes Agile as an organised set of software development methodologies based on iterative and incremental development, collaboration and self-organising, cross-functional teams."
+      },
+      {
+        question: "Which principle is consistent with the Agile Manifesto described in the chapter?",
+        options: [
+          "Changing requirements must be rejected once development begins",
+          "Working software should be delivered only after several years",
+          "Customer satisfaction should be pursued through the rapid delivery of useful software",
+          "Business people and developers should avoid cooperating"
+        ],
+        answer: 2,
+        reason: "The chapter lists customer satisfaction through rapid delivery of useful software as an Agile Manifesto feature and also encourages close cooperation between business people and developers."
+      },
+      {
+        question: "According to the chapter, what is the principal measure of progress in Agile?",
+        options: [
+          "Working software",
+          "The number of pages in the project report",
+          "The number of vendor presentations attended",
+          "The length of the original project proposal"
+        ],
+        answer: 0,
+        reason: "The Agile Manifesto features listed in the chapter include working software as the principal measure of progress."
+      },
+      {
+        question: "Which is a weakness of Agile identified in the chapter?",
+        options: [
+          "It does not permit any response to changing requirements",
+          "It cannot use iterative development",
+          "It prohibits communication with customer representatives",
+          "It may place insufficient emphasis on necessary design and documentation"
+        ],
+        answer: 3,
+        reason: "The chapter identifies lack of emphasis on necessary design and documentation as a weakness of Agile and notes that lightweight documentation may increase risks to business continuity and knowledge transfer."
+      },
+      {
+        question: "What may happen if the customer representative is not clear about the final outcome of an Agile project?",
+        options: [
+          "The project is guaranteed to finish without rework",
+          "The project can easily get taken off track",
+          "All requirements automatically become complete",
+          "The need for outside integration disappears"
+        ],
+        answer: 1,
+        reason: "The chapter notes that an Agile project can easily get taken off track if the customer representative is not clear about the final outcome."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS19",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Meadow Stores reviews its billing process. Under the manual process, a billing clerk checks the approved price list applicable on the billing date, applies relevant discounts and prepares the bill. The organisation later introduces a computerised billing system that retrieves prices from a database and does not allow the clerk to change the price during billing. Management also reviews whether existing business processes need fundamental redesign.</p>
+    `,
+    questions: [
+      {
+        question: "What is a key issue in the manual billing process described in the chapter?",
+        options: [
+          "The billing clerk must have the applicable and authorised price list available",
+          "The billing clerk must be permitted to use any price without approval",
+          "The price list need not be applicable on the date of billing",
+          "Discounts must never be considered during billing"
+        ],
+        answer: 0,
+        reason: "In the manual billing example, the clerk checks the approved price list applicable on the billing date and checks for discounts. The chapter identifies the availability of approved price lists with the clerk as a key process-design issue."
+      },
+      {
+        question: "In the computerised billing system, what is a key control issue concerning prices stored in the system?",
+        options: [
+          "The billing clerk must be able to change any price without authorisation",
+          "The system should not use a database of approved prices",
+          "The system price list should be the approved price list, and controls should address its modification",
+          "Management should avoid reviewing how price-list updates are validated"
+        ],
+        answer: 2,
+        reason: "The chapter identifies ensuring that the price list in the system is the approved price list as a key issue. It also raises how the price list should be protected from modification and how updates and exceptions should be controlled."
+      },
+      {
+        question: "Why should the organisation define how price-list updates are approved and validated?",
+        options: [
+          "To remove the requirement for an approved price list",
+          "To control how the price list is updated and validate the correctness of updates",
+          "To ensure that unauthorised prices are always accepted",
+          "To eliminate the need to report exceptions to management"
+        ],
+        answer: 1,
+        reason: "The computerised billing example identifies the approval of price lists, the updating process, validation of update correctness and authorisation and reporting of exceptions as issues to be addressed by business process design."
+      },
+      {
+        question: "What does the chapter mean by an integrated system?",
+        options: [
+          "A system used only to prepare paper reports",
+          "A system that has no interface with business operations",
+          "A system that operates independently of the entity's business processes",
+          "A system that is tightly interfaced with the entity's business processes"
+        ],
+        answer: 3,
+        reason: "The chapter defines an integrated system as a system that has been tightly interfaced with the entity's business processes."
+      },
+      {
+        question: "How does Business Process Re-engineering differ from creating new processes, as explained in the chapter?",
+        options: [
+          "It fundamentally redefines existing processes in light of new environmental developments",
+          "It only changes the appearance of reports without considering processes",
+          "It eliminates the need to document business processes",
+          "It involves purchasing hardware without analysing business objectives"
+        ],
+        answer: 0,
+        reason: "The chapter explains that in Business Process Re-engineering, existing processes are fundamentally redefined rather than new processes being created, taking account of new environmental developments."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS20",
+    difficulty: "Easy",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Mr. Amit is coordinating the development of an online ticketing system for PVR. The proposed system must maintain information about events, tickets sold and the patrons who purchase them. It must also generate reports showing tickets sold and available for each performance and tickets purchased by a specific patron. The project team prepares system analysis and design documents before developing the working system.</p>
+    `,
+    questions: [
+      {
+        question: "According to the chapter's ticketing-system illustration, what should the system proposal include?",
+        options: [
+          "An executive summary, the system requirements and identification of team members",
+          "Only the final invoice for the completed software",
+          "Only the names of the event patrons",
+          "Only a list of hardware suppliers"
+        ],
+        answer: 0,
+        reason: "The requirements for systems analysis and design in the chapter's illustration include preparing a system proposal with an executive summary, the system requirements and identification of team members."
+      },
+      {
+        question: "Which of the following is an appropriate process-modelling deliverable for the ticketing system?",
+        options: [
+          "Only a software licence agreement",
+          "Only a vendor's financial statement",
+          "A Use Case Description or Diagram, or a Data Flow Diagram at the required levels",
+          "Only a post-implementation review"
+        ],
+        answer: 2,
+        reason: "The illustration identifies appropriate process models, including Use Case Descriptions or Diagrams and Data Flow Diagrams at context level, level 0 and level 1, as instructed."
+      },
+      {
+        question: "Which option identifies a suitable data model for the ticketing system in the illustration?",
+        options: [
+          "A list of vendor presentations",
+          "A Class Diagram or Entity-Relationship Diagram, as instructed",
+          "A software maintenance invoice",
+          "A checklist used only for vendor selection"
+        ],
+        answer: 1,
+        reason: "The chapter's illustration specifies an appropriate data model, such as a Class Diagram or Entity-Relationship Diagram, according to the instructions."
+      },
+      {
+        question: "Which design work should be prepared for the user interfaces identified for the ticketing system?",
+        options: [
+          "Only the final supplier payment schedule",
+          "Only a list of proposed vendors",
+          "Only a record of the project's meeting dates",
+          "Preliminary screen and report designs"
+        ],
+        answer: 3,
+        reason: "The requirements for systems analysis and design in the illustration include preparing preliminary screen and report designs for each identified user interface."
+      },
+      {
+        question: "Which activity is included among the requirements for systems development in the ticketing-system illustration?",
+        options: [
+          "Preparing a user manual and a post-implementation review outlining lessons learned",
+          "Avoiding the use of appropriate development tools",
+          "Starting system maintenance without developing a working system",
+          "Eliminating the need to meet the system requirements"
+        ],
+        answer: 0,
+        reason: "The chapter's system development requirements include developing a comprehensive, user-friendly, working system using appropriate tools, preparing a user manual and preparing a post-implementation review outlining what went right and wrong."
+      }
+    ]
+  },
+  // =========================================================
+  // MEDIUM CASE SCENARIOS
+  // =========================================================
+
+  {
+    case_id: "ecosys_ch7_CS21",
+    difficulty: "Medium",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Vertex Enterprises intends to acquire a software package from an external vendor. Before inviting proposals, the organisation evaluates vendor background, financial stability, geographical location and market feedback. It sends RFPs to selected vendors, checks the technical compliance of their proposals and invites eligible vendors to make presentations. The acquisition team also considers point-scoring analysis and feedback from current users before selecting a solution.</p>
+    `,
+    questions: [
+      {
+        question: "Which activity should Vertex Enterprises complete before sending Requests for Proposals (RFPs) to vendors?",
+        options: [
+          "Final acceptance of the acquired system",
+          "Vendor selection",
+          "Preparation of the post-implementation review",
+          "Completion of system maintenance"
+        ],
+        answer: 1,
+        reason: "The chapter states that vendor selection is to be completed before sending the RFP. The result is that RFPs are sent only to selected vendors."
+      },
+      {
+        question: "A vendor submits a proposal that does not comply with the requirements specified in the RFP. What should the organisation do according to the chapter?",
+        options: [
+          "Automatically invite the vendor to make a presentation",
+          "Accept the proposal and defer technical validation until after procurement",
+          "Award the contract if the vendor offers the lowest price",
+          "Reject the proposal without further discussion"
+        ],
+        answer: 3,
+        reason: "The chapter states that proposals not meeting the RFP requirements should be rejected, with no further discussion on such rejected proposals. This check forms part of technical validation."
+      },
+      {
+        question: "Which vendors should be allowed to make presentations to the System Acquisition Team?",
+        options: [
+          "Vendors whose proposals have been accepted after technical validation",
+          "All vendors, including those whose proposals failed technical validation",
+          "Only vendors selected after final acceptance of the system",
+          "Only vendors that have already completed system implementation"
+        ],
+        answer: 0,
+        reason: "The chapter explains that vendors whose proposals are accepted after technical validation are allowed to present to the System Acquisition Team."
+      },
+      {
+        question: "The team assigns possible points to defined software evaluation criteria and compares vendor scores. Which validation method is being applied?",
+        options: [
+          "Public Evaluation Reports",
+          "Testing Problems",
+          "Point-Scoring Analysis",
+          "System prototyping"
+        ],
+        answer: 2,
+        reason: "Point-Scoring Analysis evaluates proposals against specified criteria and possible points. The chapter describes it as an objective means of selecting a final system."
+      },
+      {
+        question: "Why should Vertex Enterprises analyse feedback from present users of a vendor's system?",
+        options: [
+          "To eliminate the need for the RFP",
+          "To understand system operations, problems and the vendor's response to support calls",
+          "To avoid evaluating the technical compliance of proposals",
+          "To replace the requirements analysis phase"
+        ],
+        answer: 1,
+        reason: "The chapter identifies current-user feedback as valuable for understanding system operations, problems and vendor responsiveness to support calls."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS22",
+    difficulty: "Medium",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Meridian Services plans to replace an existing information system. The team documents user and business requirements, identifies available solutions, assesses feasibility and security risks, and selects a suitable alternative. During procurement, the organisation negotiates the terms for software, hardware and external services, including applicable service levels, contract penalties and success criteria.</p>
+    `,
+    questions: [
+      {
+        question: "Which sequence most accurately represents the System Acquisition Cycle described in the chapter?",
+        options: [
+          "Procure selected software, define requirements, conduct risk analysis, identify alternatives and complete final acceptance",
+          "Conduct risk analysis, complete final acceptance, define requirements, perform feasibility analysis and identify alternatives",
+          "Identify alternatives, procure selected software, define requirements, complete final acceptance and conduct risk analysis",
+          "Define system requirements, identify alternatives, perform feasibility analysis, conduct risk analysis, carry out selection, procure selected software and complete final acceptance"
+        ],
+        answer: 3,
+        reason: "The chapter presents the System Acquisition Cycle in the following sequence: defining system requirements, identifying alternatives, performing feasibility analysis, conducting risk analysis, carrying out the selection process, procuring selected software and completing final acceptance."
+      },
+      {
+        question: "Which of the following is a valid alternative to be considered during system acquisition?",
+        options: [
+          "An off-the-shelf product, a purchased supplier package, contracted development, in-house development or outsourcing",
+          "Only purchasing a supplier package, without considering other alternatives",
+          "Only retaining the existing system without examining its suitability",
+          "Only developing the complete system in-house"
+        ],
+        answer: 0,
+        reason: "The chapter identifies off-the-shelf products, purchased supplier packages, contracted development, in-house development and outsourcing as alternatives that may be considered."
+      },
+      {
+        question: "Which set contains the categories of feasibility analysis identified in the chapter?",
+        options: [
+          "Input, processing, output, feedback and communication",
+          "Economic, technical, operational, legal, contractual and political",
+          "Vendor selection, user signoff, testing and maintenance",
+          "Waterfall, Prototyping, Incremental, Spiral and Agile"
+        ],
+        answer: 1,
+        reason: "The chapter lists economic, technical, operational, legal, contractual and political feasibility. Feasibility analysis examines constraints or limitations from technical and business perspectives."
+      },
+      {
+        question: "The team evaluates security threats, potential vulnerabilities, their impacts and possible controls to reduce identified risks. Which acquisition activity is being performed?",
+        options: [
+          "Vendor presentation",
+          "Final acceptance",
+          "Conducting a Risk Analysis",
+          "Point-Scoring Analysis"
+        ],
+        answer: 2,
+        reason: "Risk analysis reviews the security of the proposed system and includes evaluating security threats, potential vulnerabilities, impacts and the feasibility of controls to reduce identified risks."
+      },
+      {
+        question: "When the selected solution requires external services, which procurement requirement is consistent with the chapter?",
+        options: [
+          "Avoiding written requirements for service delivery",
+          "Deferring all service expectations until after final acceptance",
+          "Selecting services without defining how success will be measured",
+          "Defining service levels, contract penalties and tracking metrics or success criteria where required"
+        ],
+        answer: 3,
+        reason: "The chapter states that procurement requirements should include service levels with contract penalties and tracking metrics or success criteria."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS23",
+    difficulty: "Medium",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Summit Education is developing an information system, but users are unable to specify all requirements at the beginning. The design team develops a pilot version with basic functionality, allows users to experiment with screens and menus, and revises the design using their feedback. After evaluating the revised versions, the users formally approve the prototype. The team must also ensure that the ultimately approved system is tested and documented adequately.</p>
+    `,
+    questions: [
+      {
+        question: "Which development methodology is most appropriate for the situation described?",
+        options: [
+          "Waterfall Model, because it requires all phases to be completed sequentially",
+          "Public Evaluation Reports, because users need to compare vendors",
+          "Prototyping Model, because users are still clarifying their requirements",
+          "Point-Scoring Analysis, because the system is being developed in stages"
+        ],
+        answer: 2,
+        reason: "The Prototyping Model is useful when requirements or objectives are unclear. A smaller working version allows users to evaluate the proposed system and suggest changes."
+      },
+      {
+        question: "When developing the initial prototype, which approach is consistent with the chapter?",
+        options: [
+          "Use fundamental system requirements and emphasise simplicity, flexibility and ease of use",
+          "Require every detailed requirement to be settled before creating the initial prototype",
+          "Give primary emphasis to extensive internal controls while preventing user interaction",
+          "Complete final acceptance before any prototype is demonstrated"
+        ],
+        answer: 0,
+        reason: "The chapter explains that the design team needs only fundamental system requirements to build the initial prototype and initially emphasises simplicity, flexibility and ease of use."
+      },
+      {
+        question: "Which sequence correctly describes the iterative test-and-revise activity?",
+        options: [
+          "Final acceptance, system retirement, requirements identification and vendor selection",
+          "User demonstration, experimentation and feedback, modification of the prototype, and reevaluation by users",
+          "Procurement, final acceptance, preliminary investigation and RFP preparation",
+          "Testing without user participation followed by immediate implementation"
+        ],
+        answer: 1,
+        reason: "Under the Prototyping Model, designers demonstrate the prototype, users experiment with it and provide feedback, and the design team modifies and resubmits it for reevaluation until users are satisfied."
+      },
+      {
+        question: "What is the significance of obtaining user signoff for the approved prototype?",
+        options: [
+          "It removes the need to identify system functionality",
+          "It guarantees that no further testing is needed",
+          "It permits unrestricted changes without user approval",
+          "It formally approves the prototype and commits users to the current design, including what the system will and will not provide"
+        ],
+        answer: 3,
+        reason: "The chapter explains that user signoff formally approves the final version of the prototype and establishes a commitment concerning what the system will and will not do or provide."
+      },
+      {
+        question: "Why should the team not neglect testing and documentation of the ultimately approved system?",
+        options: [
+          "Because prototype experimentation automatically eliminates all system defects",
+          "Because documentation is useful only during vendor selection",
+          "Because inadequate testing can make the system error-prone, while inadequate documentation can make it difficult to maintain",
+          "Because approved prototypes cannot be modified or implemented"
+        ],
+        answer: 2,
+        reason: "The chapter cautions that developers may be tempted to minimise testing and documentation after prototype experimentation. Inadequate testing may make the approved system error-prone, while inadequate documentation can make it difficult to maintain."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS24",
+    difficulty: "Medium",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Northstar Applications is considering two development approaches. Under the first, the product is divided into components that are designed, built and delivered separately, enabling partial use of the system. Under the second, planning is kept minimal in favour of rapid prototyping, active user involvement and computerised development tools. The second approach uses delivery timeboxes to control the project.</p>
+    `,
+    questions: [
+      {
+        question: "Which development model is characterised by designing, implementing and testing a product incrementally until it satisfies all requirements?",
+        options: [
+          "Incremental Model",
+          "Waterfall Model",
+          "Spiral Model",
+          "Public Evaluation Reports"
+        ],
+        answer: 0,
+        reason: "The Incremental Model develops the product incrementally. Components are designed and built separately and can be delivered when complete, allowing partial use of the product."
+      },
+      {
+        question: "Which is an advantage of delivering components under the Incremental Model?",
+        options: [
+          "It requires the entire system to be completed before any part can be used",
+          "It permits partial utilisation of the product and avoids the long wait associated with a single complete delivery",
+          "It eliminates the need to consider overall system requirements",
+          "It guarantees that all architectural risks will be identified before requirements analysis"
+        ],
+        answer: 1,
+        reason: "The chapter explains that separately completed components can be delivered to the client, permitting partial utilisation and avoiding a long development time and long wait for the whole system."
+      },
+      {
+        question: "Which is a weakness of the Incremental Model identified in the chapter?",
+        options: [
+          "It never permits knowledge from earlier increments to be used later",
+          "It cannot provide stakeholders with evidence of project status",
+          "It prevents gradual implementations from entering production",
+          "Problems may arise in system architecture because not all requirements are gathered up front for the entire software life cycle"
+        ],
+        answer: 3,
+        reason: "The chapter identifies potential architectural problems because not all requirements may be gathered up front for the entire software life cycle."
+      },
+      {
+        question: "Under the RAD Model, what should the team generally emphasise if a project starts to slip beyond its agreed timebox?",
+        options: [
+          "Increasing the deadline in every instance",
+          "Removing all user involvement from development",
+          "Reducing requirements to fit the timebox rather than increasing the deadline",
+          "Replacing the RAD approach with final acceptance before development"
+        ],
+        answer: 2,
+        reason: "The chapter explains that RAD uses timeboxes and, if the project starts to slip, the emphasis is on reducing requirements to fit the timebox rather than increasing the deadline."
+      },
+      {
+        question: "Which practice is particularly consistent with RAD?",
+        options: [
+          "Avoiding the use of software development tools",
+          "Active user involvement, iterative prototyping and computerised development tools",
+          "Prohibiting users from participating in system design",
+          "Delivering only a throwaway prototype instead of production software"
+        ],
+        answer: 1,
+        reason: "The chapter describes RAD as using iterative prototyping, active user involvement and computerised development tools. RAD iteratively produces production software rather than only a throwaway prototype."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS25",
+    difficulty: "Medium",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Evergreen Industries adopts a documented system development methodology for a new information system. The project is divided into identifiable processes, with deliverables produced at designated stages. Users, managers and auditors participate at formal control points. Before implementation, the team plans system testing and user training, establishes controls over program changes, and schedules a review after implementation.</p>
+    `,
+    questions: [
+      {
+        question: "What is a key purpose of dividing system development into identifiable, manageable processes?",
+        options: [
+          "To facilitate project planning and project control",
+          "To eliminate starting and ending points for activities",
+          "To remove the need for management control points",
+          "To ensure that deliverables are produced only after system retirement"
+        ],
+        answer: 0,
+        reason: "The chapter explains that a system development methodology divides a project into identifiable processes with starting and ending points, activities, deliverables and management control points. This makes project planning and control easier."
+      },
+      {
+        question: "Why are deliverables produced periodically during system development?",
+        options: [
+          "To replace all testing and training activities",
+          "To permit development tasks to be performed without accountability",
+          "To make development personnel accountable for faithful execution of development tasks",
+          "To ensure that no approvals are required during the project"
+        ],
+        answer: 2,
+        reason: "The chapter states that periodic reports and other documentation, called deliverables, make development personnel accountable for faithful execution of system development tasks."
+      },
+      {
+        question: "What do formal signoffs at pre-established management control points signify?",
+        options: [
+          "Automatic approval of all future program changes",
+          "Approval of the development process and the system being developed",
+          "That users no longer need to participate in the project",
+          "That a post-implementation review has already been completed"
+        ],
+        answer: 1,
+        reason: "The chapter states that users, managers and auditors participate at pre-established management control points and that signoffs signify approval of the development process and the system being developed."
+      },
+      {
+        question: "What is the purpose of establishing formal program change controls?",
+        options: [
+          "To prohibit all legitimate changes to the business process",
+          "To replace the system testing process",
+          "To permit developers to make unrestricted changes",
+          "To preclude unauthorised changes to computer programs"
+        ],
+        answer: 3,
+        reason: "The chapter identifies formal program change controls as a feature of system development methodology and states that they are established to preclude unauthorised changes to computer programs."
+      },
+      {
+        question: "What should the post-implementation review assess?",
+        options: [
+          "The effectiveness and efficiency of the new system and the development process",
+          "Only whether the original vendor was geographically close to the organisation",
+          "Only whether the system proposal contained an executive summary",
+          "Only the number of presentations made by vendors before the RFP"
+        ],
+        answer: 0,
+        reason: "The chapter states that a post-implementation review of developed systems must be performed to assess the effectiveness and efficiency of the new system and the development process."
+      }
+    ]
+  },
+
+  // =========================================================
+  // HARD CASE SCENARIOS
+  // =========================================================
+
+  {
+    case_id: "ecosys_ch7_CS26",
+    difficulty: "Hard",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Meridian Technologies receives proposals from three vendors for a new information system. The evaluation team prepares weighted criteria for performance, cost, maintainability, compatibility and vendor support. It also develops sample programs representing the organisation's expected workload and separate tests to measure system capabilities. Independent performance reports are reviewed, and each proposal is checked against the technical requirements specified in the RFP.</p>
+    `,
+    questions: [
+      {
+        question: "The team runs sample programs that represent at least part of the buyer's primary workload to determine whether a vendor's solution meets the requirements of the job. Which method is being used?",
+        options: [
+          "Testing Problems, because the actual job mix must always be disregarded",
+          "Public Evaluation Reports, because all results are published by independent agencies",
+          "Benchmarking problems related to vendors' solutions",
+          "Checklists, because the tests only record answers to evaluation questions"
+        ],
+        answer: 2,
+        reason: "Benchmarking problems related to vendors' solutions use sample programs representing at least part of the buyer's primary workload to determine whether the proposed solution meets the requirements of the job."
+      },
+      {
+        question: "How do Testing Problems differ from benchmarking problems related to vendors' solutions?",
+        options: [
+          "Testing Problems are used only to assess vendor financial stability",
+          "Testing Problems are designed to test the true capabilities of hardware, software or the system while disregarding the actual job mix",
+          "Testing Problems are independent consultancy reports on product performance",
+          "Testing Problems consist only of questions in a support-service checklist"
+        ],
+        answer: 1,
+        reason: "The chapter distinguishes Testing Problems from benchmarking problems by explaining that Testing Problems disregard the actual job mix and are devised to test the true capabilities of hardware, software or the system."
+      },
+      {
+        question: "The organisation consults reports published by consultancies and independent agencies comparing manufacturers' hardware and software performance. Which validation method does this represent?",
+        options: [
+          "Technical validation of the RFP",
+          "Point-Scoring Analysis",
+          "User signoff of a prototype",
+          "Public Evaluation Reports"
+        ],
+        answer: 3,
+        reason: "Public Evaluation Reports are published by consultancies and independent agencies comparing hardware and software performance. The chapter notes that they are particularly useful when the buying staff has inadequate knowledge of the relevant facts."
+      },
+      {
+        question: "The team assigns possible points to evaluation criteria, including mandatory specifications, adequacy of controls, performance and maintainability. Which statement best describes this method?",
+        options: [
+          "Point-Scoring Analysis provides an objective means of selecting a final system based on evaluation criteria",
+          "It is a purely subjective list that does not permit comparison between vendors",
+          "It is the same as technical validation and applies only to checking RFP compliance",
+          "It is a method for gathering requirements from end users before system design"
+        ],
+        answer: 0,
+        reason: "The chapter describes Point-Scoring Analysis as an objective means of selecting a final system. It considers factors such as mandatory specifications, controls, performance, user satisfaction, flexibility and maintainability."
+      },
+      {
+        question: "One vendor's proposal fails to meet a mandatory technical requirement in the RFP but receives a strong point score on several other criteria. What should the team do under the proposal process described in the chapter?",
+        options: [
+          "Invite the vendor to make a presentation before any compliance review",
+          "Ignore the non-compliance because the overall score is high",
+          "Reject the non-compliant proposal without further discussion",
+          "Complete final acceptance and address the non-compliance later"
+        ],
+        answer: 2,
+        reason: "The chapter states that proposals not meeting the RFP requirements should be rejected, with no further discussion on such rejected proposals. Technical validation checks compliance with the RFP requirements."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS27",
+    difficulty: "Hard",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Vantage Healthcare proposes replacing its information system with a solution acquired from an external supplier. The project team documents the information to be processed and the expected outputs, considers an off-the-shelf product and an in-house solution, analyses technical and business constraints, and evaluates security threats and vulnerabilities. After choosing an alternative, the procurement team negotiates contract terms, including testing, deliverables, acceptance criteria and maintenance obligations.</p>
+    `,
+    questions: [
+      {
+        question: "Which activity should be undertaken to identify the information entering the system, the information processed within it and the information expected as output?",
+        options: [
+          "Completing final acceptance before requirements are defined",
+          "Defining system requirements",
+          "Conducting only a Public Evaluation Report review",
+          "Preparing a post-implementation review"
+        ],
+        answer: 1,
+        reason: "The chapter explains that system requirements define system needs and objectives, including information given to the system, information processed within the system and information expected out of it."
+      },
+      {
+        question: "The team assesses economic, technical, operational, legal, contractual and political limitations of each alternative. Which activity is being carried out?",
+        options: [
+          "Final acceptance",
+          "Point-Scoring Analysis alone",
+          "Vendor presentation",
+          "Feasibility analysis"
+        ],
+        answer: 3,
+        reason: "The chapter states that feasibility analysis evaluates constraints or limitations from technical and business perspectives and identifies economic, technical, operational, legal, contractual and political categories."
+      },
+      {
+        question: "The team separately evaluates security threats, potential vulnerabilities, their impacts and the feasibility of controls to reduce identified risks. Which activity does this represent?",
+        options: [
+          "Conducting a Risk Analysis",
+          "Identifying system output designs only",
+          "Completing user training",
+          "Preparing an Invitation-to-Tender"
+        ],
+        answer: 0,
+        reason: "Risk analysis reviews the security of the proposed system and includes analysis of threats, vulnerabilities, impacts and the feasibility of controls to reduce identified risks."
+      },
+      {
+        question: "The supplier proposes a time-and-materials contract, but the scope, pricing definition and desired requirements remain poorly defined. Which concern is directly supported by the chapter?",
+        options: [
+          "The contract eliminates all financial risk for the buyer",
+          "The buyer can disregard the contract's functional definition of work",
+          "The contract places more financial risk on the buyer when pricing, scope or desired requirements are unclear or poorly defined",
+          "The contract removes the need for testing procedures and acceptance criteria"
+        ],
+        answer: 2,
+        reason: "The chapter states that time-and-materials contracts place more financial risk on the buyer where the initial definition of pricing, the scope or desired requirements is unclear or poorly defined."
+      },
+      {
+        question: "Which contractual arrangement most appropriately addresses the team's need to determine whether the supplier's work is complete and acceptable?",
+        options: [
+          "Leave all deliverables and their due dates to be decided after implementation",
+          "Document deliverables, delivery dates, testing procedures, expected results and explicit acceptance criteria",
+          "Document only the vendor's geographical location and marketing history",
+          "Allow the supplier to decide acceptance requirements after delivery without prior agreement"
+        ],
+        answer: 1,
+        reason: "The chapter identifies deliverables, expected delivery times, testing procedures, expected results and explicit criteria for acceptance of each deliverable and final acceptance as relevant contractual terms."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS28",
+    difficulty: "Hard",
+    chapter: "Chapter7",
+    caseText: `
+      <p>A technology company plans a large, expensive and complicated information system. Requirements are subject to uncertainty, and the development team must assess project risks as the work progresses. The team considers alternatives during preliminary design, develops and evaluates prototypes, and uses the results of each cycle to decide how to proceed. Management is also concerned about the complexity of this approach and the control of movement between cycles.</p>
+    `,
+    questions: [
+      {
+        question: "Which system development methodology best fits the main characteristics of this project?",
+        options: [
+          "Waterfall Model, because it is specifically intended to resolve risks through repeated spiral cycles",
+          "Point-Scoring Analysis, because it is a software development model",
+          "RAD Model, because it always requires the most extensive upfront planning",
+          "Spiral Model, because it is intended for large, expensive and complicated projects and emphasises risk analysis"
+        ],
+        answer: 3,
+        reason: "The chapter identifies the Spiral Model as intended for large, expensive and complicated projects. It combines features of the Prototyping Model and the Waterfall Model, with an important emphasis on identifying and resolving project risks."
+      },
+      {
+        question: "Why is the preliminary design phase particularly important in the Spiral Model?",
+        options: [
+          "It is used to analyse alternatives, decide strategies and identify and resolve possible project risks",
+          "It ensures that all project risks are eliminated before the requirements are defined",
+          "It prevents prototyping from being used when requirements are uncertain",
+          "It replaces the need to evaluate the strengths and weaknesses of the prototype"
+        ],
+        answer: 0,
+        reason: "The chapter describes the preliminary design phase as the most important part of the Spiral Model because alternatives are analysed, strategies are decided and potential risks are identified and addressed."
+      },
+      {
+        question: "During a Spiral Model iteration, uncertainty remains in the system requirements. Which response is consistent with the chapter?",
+        options: [
+          "Discontinue all requirements analysis immediately",
+          "Complete final acceptance before constructing any prototype",
+          "Use prototyping to proceed with available data and explore possible solutions to deal with potential requirement changes",
+          "Exclude risks from the next development cycle"
+        ],
+        answer: 2,
+        reason: "The chapter explains that where risks indicate uncertainty in requirements, prototyping may be used to proceed with available data and find possible solutions for dealing with potential changes in requirements."
+      },
+      {
+        question: "Which issue is identified as a weakness of the Spiral Model?",
+        options: [
+          "It cannot incorporate any other development methodology",
+          "There may be no established controls for moving from one cycle to another, and cycles may continue without firm deadlines or clear termination conditions",
+          "It cannot be used to examine project risks",
+          "It does not permit a preliminary design"
+        ],
+        answer: 1,
+        reason: "The chapter identifies the absence of established controls for moving between cycles and the lack of firm deadlines or clear termination conditions as weaknesses. These issues can lead to additional work and risk of not meeting budget or schedule targets."
+      },
+      {
+        question: "Which statement best describes how the Spiral Model may combine other approaches?",
+        options: [
+          "It requires every iteration to use Waterfall exclusively",
+          "It prohibits the use of Incremental development",
+          "It uses Prototyping only and cannot consider project risk",
+          "It can incorporate Waterfall, Prototyping and Incremental methodologies as special cases, with the appropriate combination influenced by project risk"
+        ],
+        answer: 3,
+        reason: "The chapter explains that the Spiral Model can incorporate Waterfall, Prototyping and Incremental methodologies as special cases and can guide the choice of combination based on the type of project risk."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS29",
+    difficulty: "Hard",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Nova Digital must deliver a business application rapidly while responding to evolving user requirements. One team proposes minimal upfront planning, rapid prototyping, active user involvement and development timeboxes. Another team proposes iterative and incremental development, frequent delivery of working software, close daily cooperation between business people and developers, and adaptation to changing circumstances. Management wants to distinguish the characteristics and limitations of the two approaches.</p>
+    `,
+    questions: [
+      {
+        question: "The first team proposes that, if development starts to slip, the requirements should be reduced to fit the agreed timebox rather than the deadline being increased. Which approach is most directly described?",
+        options: [
+          "Waterfall Model",
+          "Rapid Application Development (RAD) Model",
+          "Public Evaluation Reports",
+          "System Acquisition Cycle"
+        ],
+        answer: 1,
+        reason: "The chapter states that RAD uses timeboxes for project control. If a project starts to slip, the emphasis is on reducing requirements to fit the timebox rather than increasing the deadline."
+      },
+      {
+        question: "Which statement is specifically consistent with the Agile Manifesto features listed in the chapter?",
+        options: [
+          "Working software is the principal measure of progress, and working software is delivered frequently",
+          "Requirements must never change after the first phase",
+          "Business people and developers should not cooperate during development",
+          "The entire system must be completed before any useful software is delivered"
+        ],
+        answer: 0,
+        reason: "The chapter identifies working software as the principal measure of progress and states that working software should be delivered frequently, with changing requirements welcomed even late in development."
+      },
+      {
+        question: "Which statement most accurately describes the RAD approach as presented in the chapter?",
+        options: [
+          "It eliminates the use of prototypes in favour of extensive pre-planning",
+          "It requires every development phase to be completed sequentially without user involvement",
+          "It emphasises rapid prototyping, active user involvement and computerised development tools to support quick development and delivery",
+          "It focuses exclusively on developing throwaway prototypes that can never become production software"
+        ],
+        answer: 2,
+        reason: "The chapter explains that RAD uses minimal planning in favour of rapid prototyping, active user involvement and computerised development tools. It aims to develop and deliver high-quality systems quickly and iteratively produces production software."
+      },
+      {
+        question: "Which is a weakness of Agile identified in the chapter, particularly for large software deliverables?",
+        options: [
+          "It prevents teams from adapting to changing requirements",
+          "It does not permit close cooperation with customer representatives",
+          "It requires every development activity to use the Waterfall Model",
+          "It may be difficult to assess the effort required at the beginning of the software development life cycle"
+        ],
+        answer: 3,
+        reason: "The chapter identifies difficulty in assessing the effort required at the beginning of the software development life cycle, particularly for large deliverables, as a weakness of Agile."
+      },
+      {
+        question: "Which concern about documentation is specifically associated with Agile in the chapter?",
+        options: [
+          "Agile necessarily requires more extensive documentation than every other model",
+          "The lightweight approach to documentation and emphasis on verbal communication may increase risks to business continuity and knowledge transfer",
+          "Agile prohibits all interaction between users and developers",
+          "Agile guarantees that integration will never require rework"
+        ],
+        answer: 1,
+        reason: "The chapter explains that Agile projects can be light on documentation because the team focuses on verbal communication with the customer rather than documents or manuals. This can increase potential threats to business continuity and knowledge transfer."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch7_CS30",
+    difficulty: "Hard",
+    chapter: "Chapter7",
+    caseText: `
+      <p>Horizon Systems contracts an external supplier to develop and implement a business application. The agreement covers the work to be performed, source code accessibility, software and data security, delivery schedules, testing procedures and acceptance conditions. The organisation also reviews the software licence and intellectual property provisions. Its internal development methodology requires user approvals, program change controls, thorough testing and a post-implementation review.</p>
+    `,
+    questions: [
+      {
+        question: "Why should the agreement between Horizon Systems and the supplier be in writing and contain sufficient detail?",
+        options: [
+          "To provide assurances concerning performance, source code accessibility, software and data security, and other important issues",
+          "To permit the supplier to change the scope without reference to the contract",
+          "To remove the need to define the rights and responsibilities of the parties",
+          "To eliminate all system testing and documentation obligations"
+        ],
+        answer: 0,
+        reason: "The chapter states that software-vendor contracts should clearly describe the parties' rights and responsibilities and be in writing with sufficient detail to provide assurances about performance, source code accessibility, software and data security, and other important matters."
+      },
+      {
+        question: "Which statement concerning software licences and copyright is consistent with the chapter?",
+        options: [
+          "A software licence automatically eliminates every legal restriction applicable to the software",
+          "Copyright laws protect proprietary software but do not protect open-source software",
+          "A software licence grants permission for authorised activities, and copyright laws protect proprietary as well as open-source software",
+          "Using unlicensed software cannot expose an organisation to litigation"
+        ],
+        answer: 2,
+        reason: "The chapter explains that a software licence grants permission to use software for authorised activities and that copyright laws protect proprietary as well as open-source software. Use of unlicensed software or breach of a licence agreement may expose an organisation to litigation."
+      },
+      {
+        question: "Which information should serve as the basis for defining acceptance tests under a software contract?",
+        options: [
+          "Only the vendor's promotional claims",
+          "Information and system requirements",
+          "Only the geographical location of the supplier",
+          "Only the number of presentations made before contract award"
+        ],
+        answer: 1,
+        reason: "The chapter expressly states that information and system requirements serve as the basis for defining acceptance tests."
+      },
+      {
+        question: "Horizon Systems introduces a formal procedure to prevent developers from making unauthorised modifications to computer programs. Which methodology control is being applied?",
+        options: [
+          "Public Evaluation Reports",
+          "Benchmarking problems",
+          "Vendor technical validation",
+          "Formal program change controls"
+        ],
+        answer: 3,
+        reason: "The chapter identifies formal program change controls as a characteristic of system development methodology and states that they are established to preclude unauthorised changes to computer programs."
+      },
+      {
+        question: "Which action completes the development control process described in the chapter after the system has been developed and implemented?",
+        options: [
+          "Performing a post-implementation review to assess the effectiveness and efficiency of the new system and the development process",
+          "Repeating vendor selection without reviewing the implemented system",
+          "Removing all program change controls immediately after implementation",
+          "Replacing acceptance criteria with informal user feedback only"
+        ],
+        answer: 0,
+        reason: "The chapter requires a post-implementation review of developed systems to assess the effectiveness and efficiency of the new system and the development process."
+      }
+    ]
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_32",
+    case_chapter: "chapter7",
+    question: "What is the function of feedback in an Information System?",
+    options: [
+      "To replace the processing of data",
+      "To eliminate the need for system inputs",
+      "To help control the operation of the system by providing a mechanism for making modifications",
+      "To select software vendors without evaluating their proposals"
+    ],
+    answer: 2,
+    reason: "The chapter explains that an Information System provides a feedback mechanism to meet an objective. Feedback helps control the operation of the system and can be used to make modifications to input or processing activities."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_33",
+    case_chapter: "chapter7",
+    question: "Which document is used to solicit bids when acquiring off-the-shelf or third-party-developed software?",
+    options: [
+      "Request for Proposal (RFP)",
+      "Post-implementation review",
+      "User manual",
+      "System maintenance report"
+    ],
+    answer: 0,
+    reason: "The chapter identifies a Request for Proposal (RFP) as the document used to solicit bids when acquiring off-the-shelf or third-party-developed software."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_34",
+    case_chapter: "chapter7",
+    question: "Which of the following is a consideration during vendor selection?",
+    options: [
+      "Whether system testing can be avoided",
+      "Whether all system requirements can remain undefined",
+      "Whether the vendor can eliminate the need for a software licence",
+      "The vendor's financial stability and market feedback regarding its performance"
+    ],
+    answer: 3,
+    reason: "The chapter identifies vendor background, geographical location, financial stability and market feedback regarding vendor performance, including price and services, as considerations in vendor selection."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_35",
+    case_chapter: "chapter7",
+    question: "Which proposal-validation method provides an objective means of selecting a final system by evaluating proposals against specified criteria?",
+    options: [
+      "Prototyping",
+      "Public Evaluation Reports",
+      "Point-Scoring Analysis",
+      "System implementation"
+    ],
+    answer: 2,
+    reason: "Point-Scoring Analysis provides an objective means of selecting a final system by evaluating proposals against specified criteria and possible points."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_36",
+    case_chapter: "chapter7",
+    question: "When are Public Evaluation Reports particularly useful in validating vendors' proposals?",
+    options: [
+      "When the organisation has decided not to evaluate vendor proposals",
+      "When the buying staff has inadequate knowledge of the relevant facts",
+      "When no comparison of hardware or software performance is required",
+      "When the system has already completed its post-implementation review"
+    ],
+    answer: 1,
+    reason: "The chapter explains that Public Evaluation Reports, published by consultancies and independent agencies comparing hardware and software performance, are particularly useful where the buying staff has inadequate knowledge of the relevant facts."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_37",
+    case_chapter: "chapter7",
+    question: "What is the primary purpose of benchmarking problems related to vendors' solutions?",
+    options: [
+      "To test whether a vendor's proposed solution meets the requirements of the buyer's job by using representative sample programs",
+      "To determine only the financial stability of the vendor",
+      "To replace all technical requirements specified in the RFP",
+      "To evaluate only the geographical location of the vendor"
+    ],
+    answer: 0,
+    reason: "Benchmarking problems related to vendors' solutions use sample programs representing at least part of the buyer's primary workload to test whether the proposed solution meets the requirements of the job."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_38",
+    case_chapter: "chapter7",
+    question: "How do Testing Problems differ from benchmarking problems related to vendors' solutions?",
+    options: [
+      "Testing Problems are used only to collect feedback from existing users",
+      "Testing Problems are limited to reviewing software licences",
+      "Testing Problems are used exclusively to identify vendor-selection criteria",
+      "Testing Problems disregard the actual job mix and are devised to test the true capabilities of the hardware, software or system"
+    ],
+    answer: 3,
+    reason: "The chapter explains that Testing Problems disregard the actual job mix and are devised to test the true capabilities of the hardware, software or system."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_39",
+    case_chapter: "chapter7",
+    question: "Which of the following is a factor to be considered when evaluating vendors' proposals?",
+    options: [
+      "The number of unrelated products sold by the buyer",
+      "The personal preference of an evaluator without reference to system requirements",
+      "The maintainability of each proposed system",
+      "The exclusion of vendor support from the evaluation"
+    ],
+    answer: 2,
+    reason: "The chapter identifies performance capability in relation to cost, cost and benefits, maintainability, compatibility with existing systems and vendor support as factors for evaluating vendors' proposals."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_40",
+    case_chapter: "chapter7",
+    question: "What should a contract between an organisation and a software vendor clearly describe?",
+    options: [
+      "Only the vendor's marketing activities",
+      "The rights and responsibilities of the parties to the contract",
+      "Only the names of the organisation's customers",
+      "Only the dates on which employees joined the organisation"
+    ],
+    answer: 1,
+    reason: "The chapter states that contracts between an organisation and a software vendor should clearly describe the rights and responsibilities of the parties and should be in writing with sufficient detail."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_41",
+    case_chapter: "chapter7",
+    question: "Which statement regarding copyright protection is consistent with the chapter?",
+    options: [
+      "Copyright laws apply only to hardware components",
+      "Only proprietary software is protected by copyright laws",
+      "Open-source software is never subject to intellectual property laws",
+      "Copyright laws protect proprietary as well as open-source software"
+    ],
+    answer: 3,
+    reason: "The chapter expressly states that copyright laws protect proprietary as well as open-source software. It also explains that the use of unlicensed software or violations of a licensing agreement may expose an organisation to possible litigation."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_42",
+    case_chapter: "chapter7",
+    question: "Which method can be used to capture system requirements according to the chapter?",
+    options: [
+      "Interviewing management and intended users to understand their expectations",
+      "Selecting a vendor before identifying system requirements",
+      "Avoiding the examination of existing systems and reports",
+      "Preparing a post-implementation review before the system is developed"
+    ],
+    answer: 0,
+    reason: "The chapter explains that system requirements can be captured by interviewing management and those expected to use the information produced by the system. Other methods include inspecting existing systems, reviewing forms and reports, and observing business processes."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_43",
+    case_chapter: "chapter7",
+    question: "Which of the following is a possible alternative when identifying system solutions during the System Acquisition Cycle?",
+    options: [
+      "Only discontinuing the existing system without further analysis",
+      "Only retaining manual procedures permanently",
+      "Outsourcing the system solution to another organisation",
+      "Only preparing a user manual"
+    ],
+    answer: 2,
+    reason: "The chapter identifies several alternatives, including an off-the-shelf product, a purchased supplier package, contracting for development, developing the system in-house or outsourcing from another organisation."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_44",
+    case_chapter: "chapter7",
+    question: "Which of the following groups correctly identifies the categories of feasibility analysis listed in the chapter?",
+    options: [
+      "Input, processing, output, feedback and communication",
+      "Economic, technical, operational, legal, contractual and political",
+      "Corrective, adaptive, rescue and perfective",
+      "Vendor selection, user signoff, testing and maintenance"
+    ],
+    answer: 1,
+    reason: "The chapter identifies economic, technical, operational, legal, contractual and political feasibility. Feasibility analysis examines the constraints or limitations of each alternative from technical and business perspectives."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_45",
+    case_chapter: "chapter7",
+    question: "Which characteristic is associated with the Waterfall Model?",
+    options: [
+      "Development begins with unrestricted changes to requirements at every stage",
+      "The system is divided into components that are independently delivered whenever completed",
+      "Minimal planning is used in favour of rapid prototyping and timeboxes",
+      "Development phases are carried out in sequence, with an activity undertaken only when the prior step is fully completed"
+    ],
+    answer: 3,
+    reason: "The chapter describes the Waterfall Model as a traditional development approach in which phases are carried out sequentially. An activity is undertaken only when the prior step is fully completed."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_46",
+    case_chapter: "chapter7",
+    question: "Which statement correctly describes the Incremental Model?",
+    options: [
+      "It requires the complete product to be delivered before any component can be used",
+      "It disregards the requirements of the system throughout development",
+      "The product is designed, implemented and tested incrementally, with each completed component delivered to the client",
+      "It uses only published reports to determine the capabilities of hardware and software"
+    ],
+    answer: 2,
+    reason: "The chapter explains that the Incremental Model develops a product incrementally until it satisfies all requirements. The product is divided into components, each designed and built separately and delivered to the client when complete."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_47",
+    case_chapter: "chapter7",
+    question: "How can an Information System help an organisation achieve its objectives?",
+    options: [
+      "By enabling businesses to reach customers, advertise projects, manage employees and communicate with stakeholders",
+      "By eliminating the need for data processing in business operations",
+      "By ensuring that all organisational decisions are made without information",
+      "By restricting communication to employees within the IT department"
+    ],
+    answer: 0,
+    reason: "The chapter explains that Information Systems are used across sectors and professions and help businesses reach customers, advertise projects, manage employees and communicate with stakeholders."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_48",
+    case_chapter: "chapter7",
+    question: "Which alternatives may management consider when deciding how to obtain hardware for a proposed information system?",
+    options: [
+      "Only purchasing the hardware outright",
+      "Purchasing, leasing from a third party or renting the hardware",
+      "Only renting the hardware from the existing software vendor",
+      "Only developing the hardware internally"
+    ],
+    answer: 1,
+    reason: "The chapter explains that management decides whether hardware is to be purchased, leased from a third party or rented."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_49",
+    case_chapter: "chapter7",
+    question: "What is the primary responsibility of the System Acquisition Committee described in the chapter?",
+    options: [
+      "To prepare only the post-implementation review",
+      "To replace the organisation's steering committee",
+      "To ensure the timely and effective completion of the system acquisition stage",
+      "To develop all application software without considering external vendors"
+    ],
+    answer: 2,
+    reason: "The chapter states that a sub-committee of experts under the steering committee, referred to as the System Acquisition Committee, is constituted to ensure timely and effective completion of the acquisition stage."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_50",
+    case_chapter: "chapter7",
+    question: "Why is hardware acquisition described in the chapter as more than simply buying a machine and paying the vendor?",
+    options: [
+      "Because hardware acquisition never involves a supplier",
+      "Because the organisation must always develop its own hardware",
+      "Because the purchase eliminates the need for future support",
+      "Because the organisation may depend on the vendor for support services, system design, education, training and future expansion"
+    ],
+    answer: 3,
+    reason: "The chapter explains that hardware acquisition may involve an enduring alliance with the supplier because the organisation depends on the vendor for support services, system design, education, training and expansion of the computer installation."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_51",
+    case_chapter: "chapter7",
+    question: "What decision should system developers make when assessing application software requirements?",
+    options: [
+      "Whether the application software should be created in-house or acquired from a vendor",
+      "Whether system requirements can be ignored during development",
+      "Whether the organisation should discontinue all data processing",
+      "Whether hardware selection can be completed without assessing software requirements"
+    ],
+    answer: 0,
+    reason: "The chapter explains that after assessing application software requirements, system developers must determine whether the application software should be created in-house or acquired from a vendor."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_52",
+    case_chapter: "chapter7",
+    question: "Which statement correctly describes the role of security certificates for proposed software, as discussed in the chapter?",
+    options: [
+      "They guarantee complete protection against every cyber-attack",
+      "They remove the need to comply with applicable legal provisions",
+      "They provide reasonable assurance in comparison with unsecured solutions but do not guarantee protection from cyber-attacks",
+      "They eliminate the need to evaluate the security of a proposed system"
+    ],
+    answer: 2,
+    reason: "The chapter states that proposed software should comply with applicable legal provisions and have minimum security certificates. These certificates do not guarantee protection from cyber-attacks but provide reasonable assurance compared with unsecured solutions."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_53",
+    case_chapter: "chapter7",
+    question: "Which of the following is an example of a matter that may be addressed in software contract terms and conditions?",
+    options: [
+      "Only the vendor's promotional strategy",
+      "Requirements for the conversion or transfer of data",
+      "Only the personal preferences of the software developers",
+      "Only the organisation's unrelated marketing activities"
+    ],
+    answer: 1,
+    reason: "The chapter identifies requirements for conversion or transfer of data as one of the matters normally addressed in software contract terms and conditions."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_54",
+    case_chapter: "chapter7",
+    question: "Under a time-and-materials contract, how are fees generally determined?",
+    options: [
+      "They are always fixed regardless of actual expenditure",
+      "They are based exclusively on the organisation's profits",
+      "They are calculated only according to the number of software users",
+      "They are directly attributable to the actual time spent or materials used"
+    ],
+    answer: 3,
+    reason: "The chapter explains that time-and-materials contracts state that fees are directly attributable to actual expenses of time, such as hourly charges, or materials."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_55",
+    case_chapter: "chapter7",
+    question: "Which statement regarding system development approaches is consistent with the chapter?",
+    options: [
+      "The approaches are not mutually exclusive, and prototyping may be performed while applying the traditional approach",
+      "Only one system development approach may ever be used within an organisation",
+      "Prototyping cannot be performed alongside the traditional approach",
+      "All system development projects must follow an identical methodology"
+    ],
+    answer: 0,
+    reason: "The chapter explains that the different system development approaches are not mutually exclusive. For example, an organisation may perform some prototyping while applying the traditional approach."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_56",
+    case_chapter: "chapter7",
+    question: "Which of the following is identified as a strength of the Waterfall Model?",
+    options: [
+      "It eliminates the need for planning, schedules and budgets",
+      "It permits unrestricted changes without considering their cost",
+      "The orderly sequence of development steps and design reviews helps support software quality, reliability, adequacy and maintainability",
+      "It ensures that all system performance issues are identified before coding begins"
+    ],
+    answer: 2,
+    reason: "The chapter identifies the orderly sequence of development steps and design reviews as a strength of the Waterfall Model because they help ensure the quality, reliability, adequacy and maintainability of the developed software."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_57",
+    case_chapter: "chapter7",
+    question: "Which is a weakness of the Waterfall Model identified in the chapter?",
+    options: [
+      "It does not divide the project into phases",
+      "It is difficult and potentially costly to respond to changes occurring later in the system development life cycle",
+      "It prevents the use of written documentation",
+      "It does not use reviews or approvals at the end of development phases"
+    ],
+    answer: 1,
+    reason: "The chapter explains that the Waterfall Model is criticised for being inflexible and that responding to changes later in the life cycle is difficult. If such changes are undertaken, they may be costly and are therefore discouraged."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_58",
+    case_chapter: "chapter7",
+    question: "According to the chapter, why is the Prototyping Model not commonly used for traditional applications such as payroll or inventory management?",
+    options: [
+      "Because these applications cannot use computers",
+      "Because these applications never require system testing",
+      "Because users are not permitted to participate in development",
+      "Because their inputs, processing and outputs are well-known and clearly defined"
+    ],
+    answer: 3,
+    reason: "The chapter states that prototyping is not commonly used for traditional applications such as accounts receivable, accounts payable, payroll or inventory management, where the inputs, processing and outputs are well-known and clearly defined."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_59",
+    case_chapter: "chapter7",
+    question: "Which approaches are combined in the Incremental Model, according to the chapter?",
+    options: [
+      "The Waterfall Model's elements and the iterative philosophy of Prototyping",
+      "Public Evaluation Reports and Point-Scoring Analysis",
+      "Software licensing and vendor selection",
+      "System procurement and post-implementation review"
+    ],
+    answer: 0,
+    reason: "The chapter explains that the Incremental Model combines elements of the Waterfall Model with the iterative philosophy of Prototyping."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_60",
+    case_chapter: "chapter7",
+    question: "Which statement correctly describes software production under the Rapid Application Development (RAD) Model?",
+    options: [
+      "It requires all development to be completed before users can provide feedback",
+      "It prohibits the use of prototypes during development",
+      "It iteratively produces production software, as opposed to a throwaway prototype",
+      "It requires every phase to be completed without any possibility of changing requirements"
+    ],
+    answer: 2,
+    reason: "The chapter identifies iterative production of production software, as opposed to a throwaway prototype, as a feature of the RAD Model."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch7_61",
+    case_chapter: "chapter7",
+    question: "Which statement is included among the features of the Agile Manifesto described in the chapter?",
+    options: [
+      "Development must proceed without adapting to changing circumstances",
+      "Sustainable development should be able to maintain a constant pace",
+      "Working software should be delivered only after several years",
+      "Business people and developers should avoid daily cooperation"
+    ],
+    answer: 1,
+    reason: "The chapter lists sustainable development, able to maintain a constant pace, among the features of the Agile Manifesto. It also emphasises frequent delivery of working software and close cooperation between business people and developers."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch7_62",
+    case_chapter: "chapter7",
+    question: "When gathering system requirements, which approach is consistent with the methods described in the chapter?",
+    options: [
+      "Selecting a software vendor before determining the information required by the system",
+      "Relying exclusively on the vendor's proposal instead of consulting system users",
+      "Interviewing management and intended users, reviewing existing forms and reports, and observing related business processes",
+      "Deferring requirements identification until after final acceptance"
+    ],
+    answer: 2,
+    reason: "The chapter identifies interviewing management and intended users, inspecting existing systems, reviewing paper and electronic forms and reports, and observing related business processes as methods of gathering system requirements."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch7_63",
+    case_chapter: "chapter7",
+    question: "An organisation enters into a time-and-materials contract for software development, but the initial definition of scope and desired requirements is unclear. Which concern is specifically identified in the chapter?",
+    options: [
+      "The contract places more financial risk on the buyer when pricing, scope or desired requirements are unclear or poorly defined",
+      "The contract automatically fixes the total price regardless of actual time and materials used",
+      "The contract eliminates the need to specify the work to be performed",
+      "The contract transfers every possible project risk to the supplier"
+    ],
+    answer: 0,
+    reason: "The chapter explains that time-and-materials contracts charge fees attributable to actual time or materials used. They place more financial risk on the buyer when the initial definition of pricing, scope or desired requirements is unclear or poorly defined."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch7_64",
+    case_chapter: "chapter7",
+    question: "A software contract must establish how the organisation will determine whether the supplier has completed the agreed work satisfactorily. Which provision most directly addresses this requirement?",
+    options: [
+      "A description of the vendor's geographical location",
+      "A list of the supplier's unrelated products",
+      "A general statement that the system will be useful",
+      "Testing procedures, expected results, and explicit criteria for acceptance of deliverables and final acceptance"
+    ],
+    answer: 3,
+    reason: "The chapter identifies testing procedures and expected results used to define acceptance, together with explicit criteria for accepting each deliverable and for final acceptance, as relevant contractual provisions."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch7_65",
+    case_chapter: "chapter7",
+    question: "Which combination consists entirely of factors identified in the chapter for evaluating vendors' proposals?",
+    options: [
+      "Vendor advertising expenditure, employee popularity and the number of promotional events",
+      "Performance capability in relation to cost, cost and benefits, maintainability, compatibility with existing systems, and vendor support",
+      "The personal preferences of evaluators without reference to system requirements",
+      "The number of features offered, regardless of cost, maintainability or compatibility"
+    ],
+    answer: 1,
+    reason: "The chapter identifies performance capability in relation to costs, cost and benefits, maintainability, compatibility with existing systems and vendor support as factors to consider when evaluating vendors' proposals."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch7_66",
+    case_chapter: "chapter7",
+    question: "Which limitation of the Waterfall Model is associated with requirements that are not fully understood at the beginning of a project?",
+    options: [
+      "It depends on early identification and specification of requirements, and problems may remain undiscovered until system testing",
+      "It requires users to revise an initial prototype repeatedly until they approve it",
+      "It necessarily delivers each completed component separately before the entire project is finished",
+      "It uses minimal planning in favour of rapid prototyping and timeboxes"
+    ],
+    answer: 0,
+    reason: "The chapter notes that the Waterfall Model depends on early identification and specification of requirements, even when users may be unable to define their needs clearly. Requirement inconsistencies, missing components and unexpected needs may be discovered during design, coding or system testing."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch7_67",
+    case_chapter: "chapter7",
+    question: "According to the chapter, which condition is particularly important for the successful use of the Prototyping Model?",
+    options: [
+      "Users must finalise every detailed requirement before the first prototype is developed",
+      "The design team must avoid modifying the initial prototype",
+      "All system controls must be completed before users can interact with any prototype",
+      "Users must be willing to devote sufficient time to experimenting with the prototype and providing suggestions to the developers"
+    ],
+    answer: 3,
+    reason: "The chapter explains that prototyping can be successful only if system users are willing to devote significant time to experimenting with the prototype and providing developers with suggestions for changes."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch7_68",
+    case_chapter: "chapter7",
+    question: "In an Incremental Model project, some modules are completed much earlier than other modules. Which consideration identified in the chapter becomes particularly important?",
+    options: [
+      "All modules must be discarded until every module is completed",
+      "The entire system must be delivered before any component can be used",
+      "Well-defined interfaces are required between modules",
+      "The project must abandon incremental development and use only Public Evaluation Reports"
+    ],
+    answer: 2,
+    reason: "The chapter identifies the need for well-defined interfaces as a weakness or challenge of the Incremental Model because some modules may be completed much earlier than others."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch7_69",
+    case_chapter: "chapter7",
+    question: "According to the Spiral Model example in the chapter, a software iteration has a low risk of failing to meet user requirements but a high risk of missing budget or schedule targets. Which development approach would essentially be followed for that iteration?",
+    options: [
+      "An exclusively prototype-based approach in every situation",
+      "A linear Waterfall approach",
+      "An approach that excludes requirements analysis",
+      "A process based only on Public Evaluation Reports"
+    ],
+    answer: 1,
+    reason: "The chapter explains that where the risk of not meeting user requirements is low but the risk of missing budget or schedule targets is high, a linear Waterfall approach would essentially be followed for the particular software iteration."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch7_70",
+    case_chapter: "chapter7",
+    question: "During RAD development, a team continues adding more and more features to the system as the project progresses. Which weakness of the RAD Model most directly describes this situation?",
+    options: [
+      "The absence of any user involvement",
+      "The inability to use computerised development tools",
+      "The prohibition of changes during development",
+      "Feature creep"
+    ],
+    answer: 3,
+    reason: "The chapter identifies feature creep as a weakness of RAD, describing the potential for more and more features to be added to the system over the course of development. It separately identifies goldplating as the possibility that the project may end up with more requirements than needed."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch7_71",
+    case_chapter: "chapter7",
+    question: "An Agile project delivers software quickly, but components later require rework when they are combined and made to interact. Which limitation described in the chapter best explains this situation?",
+    options: [
+      "The lightweight approach to architecture and lack of long-term planning may require rework when software components are integrated",
+      "Agile requires every phase to be completed in a strictly linear sequence",
+      "Agile prohibits adaptation to changing requirements",
+      "Agile requires all working software to be withheld until the end of the project"
+    ],
+    answer: 0,
+    reason: "The chapter explains that Agile may require more rework because of a lack of long-term planning and a lightweight approach to architecture. Rework may be needed when different software components are combined and forced to interact."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch7_72",
+    case_chapter: "chapter7",
+    question: "An organisation is framing acquisition standards for hardware, integrated systems and third-party software. Which statement correctly reflects the procurement documents and objectives specified in the chapter?",
+    options: [
+      "Invitations-to-tender are used exclusively for off-the-shelf software, while RFPs are restricted to hardware acquisition",
+      "Acquisition standards need to address vendor selection only; security, reliability and compatibility can be considered after procurement",
+      "Invitations-to-tender solicit bids for hardware or integrated hardware-software systems, while RFPs solicit bids for off-the-shelf or third-party-developed software; acquisition standards also address security, reliability, functionality and appropriate reviews",
+      "RFPs should be sent to every available vendor before vendor selection, irrespective of compatibility or technical requirements"
+    ],
+    answer: 2,
+    reason: "The chapter distinguishes invitations-to-tender for hardware or integrated hardware-software systems from RFPs for off-the-shelf or third-party-developed software. It also identifies security, reliability, functionality, vendor, contract and licensing reviews, compatibility, and clearly documented functional, security and operational requirements as acquisition-standard considerations."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch7_73",
+    case_chapter: "chapter7",
+    question: "Which sequence correctly reflects the vendor proposal process described in the chapter?",
+    options: [
+      "Send RFPs to all vendors, conduct final acceptance, select vendors and then examine technical compliance",
+      "Select vendors, send RFPs to the selected vendors, conduct technical validation, reject non-compliant proposals and permit presentations by vendors whose proposals are accepted after technical validation",
+      "Invite all vendors to make presentations, sign contracts, and then determine whether their proposals comply with the RFP",
+      "Complete procurement, obtain user signoff and then ask vendors to submit proposals for the requirements"
+    ],
+    answer: 1,
+    reason: "The chapter states that vendor selection precedes the sending of RFPs, which are sent only to selected vendors. Proposals are checked for technical compliance; non-compliant proposals should be rejected without further discussion, and vendors whose proposals pass technical validation may present to the System Acquisition Team."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch7_74",
+    case_chapter: "chapter7",
+    question: "Which statement correctly distinguishes benchmarking problems related to vendors' solutions from Testing Problems?",
+    options: [
+      "Benchmarking problems are designed to disregard the actual job mix, whereas Testing Problems must reproduce the buyer's primary workload",
+      "Benchmarking problems consist of independent agencies' published comparison reports, whereas Testing Problems consist exclusively of checklist questions",
+      "Both methods are limited to evaluating vendor financial stability and geographical location",
+      "Benchmarking problems use sample programs representing at least part of the buyer's primary workload to assess whether a proposal meets the job's requirements, whereas Testing Problems disregard the actual job mix to assess the true capabilities of hardware, software or the system"
+    ],
+    answer: 3,
+    reason: "The chapter distinguishes benchmarking problems, which represent at least part of the buyer's primary workload, from Testing Problems, which disregard the actual job mix and test the true capabilities of the hardware, software or system."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch7_75",
+    case_chapter: "chapter7",
+    question: "Which sequence of activities correctly represents the System Acquisition Cycle described in the chapter?",
+    options: [
+      "Define system requirements → identify alternatives → perform feasibility analysis → conduct risk analysis → carry out selection → procure selected software → complete final acceptance",
+      "Identify alternatives → procure selected software → define system requirements → conduct risk analysis → complete final acceptance → perform feasibility analysis",
+      "Define system requirements → conduct risk analysis → complete final acceptance → identify alternatives → procure software → perform feasibility analysis",
+      "Perform feasibility analysis → complete final acceptance → identify alternatives → conduct vendor presentations → define system requirements → procure software"
+    ],
+    answer: 0,
+    reason: "The System Acquisition Cycle follows the sequence of defining system requirements, identifying alternatives, performing feasibility analysis, conducting risk analysis, carrying out the selection process, procuring selected software and completing final acceptance."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch7_76",
+    case_chapter: "chapter7",
+    question: "An organisation enters into a time-and-materials contract for software development. The scope and desired requirements are poorly defined, and the team must establish acceptance tests. Which conclusion is consistent with the chapter?",
+    options: [
+      "The buyer's financial risk is necessarily eliminated, and acceptance tests may be defined without reference to system requirements",
+      "The supplier must always bear all financial risk, irrespective of how clearly the scope is defined",
+      "The contract places more financial risk on the buyer when pricing, scope or desired requirements are unclear or poorly defined; information and system requirements serve as the basis for defining acceptance tests",
+      "Acceptance tests should be based exclusively on the supplier's marketing claims, while contract deliverables can remain undefined"
+    ],
+    answer: 2,
+    reason: "The chapter explains that time-and-materials contracts place more financial risk on the buyer when the initial pricing definition, scope or desired requirements are unclear or poorly defined. It also states that information and system requirements serve as the basis for defining acceptance tests."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch7_77",
+    case_chapter: "chapter7",
+    question: "A project team follows a traditional sequential development approach. Users are unable to specify all their needs early, some missing system components are identified during coding, and performance issues become apparent only when the system is almost fully coded. Which assessment best reflects the limitations described in the chapter?",
+    options: [
+      "These conditions are strengths of the Waterfall Model because late discovery of defects reduces the need for design reviews",
+      "The Waterfall Model depends on early requirements specification; missing requirements and components may be discovered during design or coding, while performance testing and changes late in development can be difficult or costly",
+      "These conditions establish that the Prototyping Model requires complete requirements before its initial prototype can be created",
+      "These conditions are the defining strengths of RAD because RAD prohibits changes to requirements within timeboxes"
+    ],
+    answer: 1,
+    reason: "The chapter identifies dependence on early requirements specification, late discovery of inconsistencies or missing components, delayed discovery of problems until system testing, and difficulty or cost in responding to later changes as weaknesses of the Waterfall Model."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch7_78",
+    case_chapter: "chapter7",
+    question: "Users formally approve the final version of a prototype after several cycles of evaluation and revision. Which statement most accurately describes the significance of this approval under the Prototyping Model?",
+    options: [
+      "It automatically eliminates the need for implementation testing and documentation",
+      "It permits unrestricted modifications to the approved design without regard to the agreed requirements",
+      "It establishes that all non-functional requirements must have been documented perfectly during the initial prototype",
+      "It commits users to the current design and establishes a contractual obligation concerning what the system will and will not do or provide"
+    ],
+    answer: 3,
+    reason: "The chapter states that obtaining user signoff formally approves the final version of the prototype, commits users to the current design and establishes a contractual obligation regarding what the system will and will not do or provide. The approved system must still be adequately tested and documented."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch7_79",
+    case_chapter: "chapter7",
+    question: "Which statement most accurately combines the characteristics and limitations of the Incremental Model described in the chapter?",
+    options: [
+      "It combines elements of Waterfall with the iterative philosophy of Prototyping, permits delivery of completed components for partial utilisation, and may encounter architectural problems because requirements for the entire life cycle may not all be gathered up front",
+      "It combines Public Evaluation Reports with Point-Scoring Analysis and prevents separate components from being delivered before the entire system is completed",
+      "It requires every component to be developed without formal reviews and ensures that all architectural risks are eliminated before development begins",
+      "It is based exclusively on rapid prototyping and does not involve sequential development phases for individual increments"
+    ],
+    answer: 0,
+    reason: "The chapter explains that the Incremental Model combines elements of Waterfall with the iterative philosophy of Prototyping. Components are designed and built separately and can be delivered when complete, permitting partial utilisation. A limitation is that architectural problems may arise because not all requirements are gathered up front for the entire software life cycle."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch7_80",
+    case_chapter: "chapter7",
+    question: "Under the Spiral Model illustration in the chapter, a project iteration has a low risk of not meeting user requirements but a high risk of missing budget or schedule targets. If these two risk factors were reversed, which pairing of approaches would be consistent with the chapter?",
+    options: [
+      "The first situation calls for iterative prototyping, while the reversed situation calls for a linear Waterfall approach",
+      "Both situations must use the Waterfall Model because the Spiral Model does not consider project risks",
+      "The first situation would essentially follow a linear Waterfall approach, whereas the reversed risk profile could lead to an iterative prototyping approach",
+      "Both situations require the RAD Model because the Spiral Model does not incorporate other development methodologies"
+    ],
+    answer: 2,
+    reason: "The chapter explains that when the risk of not meeting user requirements is low but the risk of missing budget or schedule targets is high, a linear Waterfall approach would essentially be followed for that iteration. If the risk factors were reversed, the Spiral methodology could yield an iterative prototyping approach."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch7_81",
+    case_chapter: "chapter7",
+    question: "A project manager must distinguish RAD's timebox control from Agile's approach to changing requirements. Which statement is most accurate according to the chapter?",
+    options: [
+      "RAD and Agile both require requirements to remain unchanged once development begins",
+      "RAD emphasises reducing requirements to fit an agreed timebox if the project starts to slip, whereas Agile explicitly welcomes changing requirements even late in development",
+      "RAD prohibits active user involvement, whereas Agile prohibits frequent delivery of working software",
+      "RAD is defined by Public Evaluation Reports, whereas Agile is defined by point-scoring proposal validation"
+    ],
+    answer: 1,
+    reason: "The chapter states that RAD uses timeboxes and emphasises reducing requirements to fit the timebox rather than increasing the deadline if the project starts to slip. The Agile Manifesto welcomes changing requirements, even late in development, and promotes frequent delivery of working software."
+  }
 
 
 ]
