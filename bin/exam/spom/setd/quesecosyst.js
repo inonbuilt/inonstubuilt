@@ -12582,7 +12582,2687 @@ const caseStudies = [
     ],
     answer: 1,
     reason: "The chapter states that RAD uses timeboxes and emphasises reducing requirements to fit the timebox rather than increasing the deadline if the project starts to slip. The Agile Manifesto welcomes changing requirements, even late in development, and promotes frequent delivery of working software."
-  }
+  },
+// Chapter8
+  {
+    case_id: "ecosys_ch8_CS01",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Orchid Traders uses an information system to process supplier invoices and make payments. Before a payment is processed, an authorised employee must approve it, and the duties of preparing a payment and releasing it are assigned to different employees. The finance team compares payment reports with bank records to identify unusual transactions. When an incident is discovered, the IT team removes unauthorised access and restores affected data from backup. Management has also issued written procedures and instructions for processing payments.</p>
+    `,
+    questions: [
+      {
+        question: "Which control in the case is primarily designed to prevent errors or irregularities before they occur?",
+        options: [
+          "Comparing payment reports with bank records",
+          "Restoring affected data after an incident",
+          "Segregation of duties and approval before payment",
+          "Investigating an unusual transaction after it is reported"
+        ],
+        answer: 2,
+        reason: "Preventive controls are designed to prevent errors, omissions, security incidents or malicious acts from occurring. Authorisation and segregation of duties are examples of preventive controls."
+      },
+      {
+        question: "The comparison of payment reports with bank records is an example of:",
+        options: [
+          "Detective control",
+          "Directive control",
+          "Corrective control",
+          "Environmental control"
+        ],
+        answer: 0,
+        reason: "Detective controls identify errors, omissions or incidents that have already occurred. Comparing transactions and reports with supporting records is an example of a detective control."
+      },
+      {
+        question: "Removing unauthorised access and restoring affected data after an incident are primarily examples of:",
+        options: [
+          "Preventive controls only",
+          "Corrective controls",
+          "Directive controls only",
+          "Physical access controls only"
+        ],
+        answer: 1,
+        reason: "Corrective controls provide remedies for problems discovered by detective controls and help minimise the impact of incidents. The chapter includes removing unauthorised users and recovery from incidents among corrective-control examples."
+      },
+      {
+        question: "Management's written procedures and instructions for processing payments are best classified as:",
+        options: [
+          "Detective controls",
+          "Database controls",
+          "Environmental controls",
+          "Directive controls"
+        ],
+        answer: 3,
+        reason: "Directive controls give formal directions to employees and help ensure that identified risks are managed and required procedures are followed."
+      },
+      {
+        question: "Which statement is most consistent with the chapter's description of preventive controls?",
+        options: [
+          "They provide evidence only after a loss has occurred.",
+          "They are proactive in nature.",
+          "They are concerned only with distributing reports.",
+          "They replace the need for all other control types."
+        ],
+        answer: 1,
+        reason: "The chapter identifies preventive controls as proactive in nature and explains that they are intended to prevent errors or incidents before they occur."
+      }
+    ]
+  },
 
+  {
+    case_id: "ecosys_ch8_CS02",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Lotus Data Services operates a computer room for its business applications. It installs smoke detectors and fire alarms, maintains fire extinguishers, and conducts emergency evacuation drills. The room has an Uninterruptible Power Supply (UPS) and surge protectors. Water detectors are placed near equipment and below the raised floor. The organisation also prohibits eating and drinking in the information processing facility to reduce pollution and dust-related risks. An IS auditor is asked to inspect these arrangements.</p>
+    `,
+    questions: [
+      {
+        question: "Smoke detectors, fire alarms and fire extinguishers are examples of controls addressing which environmental exposure?",
+        options: [
+          "Fire",
+          "Unauthorised database updates",
+          "Incorrect report distribution",
+          "Password sharing"
+        ],
+        answer: 0,
+        reason: "The chapter lists smoke detectors, fire alarms and fire extinguishers among environmental controls for fire exposure."
+      },
+      {
+        question: "The UPS and surge protectors are primarily intended to address:",
+        options: [
+          "Visitor identification",
+          "Electrical exposure and power interruption",
+          "Unauthorised changes to application reports",
+          "Concurrent database access"
+        ],
+        answer: 1,
+        reason: "The chapter identifies UPS facilities and electrical surge protectors as controls for electrical exposures, including power failure and power spikes."
+      },
+      {
+        question: "Water detectors below the raised floor are intended to help control the risk of:",
+        options: [
+          "Pollution damage only",
+          "Unauthorised network connections",
+          "Water damage to the computer installation",
+          "Incorrect user privileges"
+        ],
+        answer: 2,
+        reason: "The chapter recommends placing water detectors under the raised floor and near drains or equipment storage areas to identify potential water damage."
+      },
+      {
+        question: "Prohibiting eating and drinking inside the information processing facility primarily addresses:",
+        options: [
+          "Fire damage",
+          "Logical access exposure",
+          "Electrical exposure",
+          "Pollution damage, particularly dust and contaminants"
+        ],
+        answer: 3,
+        reason: "The chapter identifies dust as a major pollutant in a computer installation and recommends prohibiting eating, drinking and smoking in information processing facilities."
+      },
+      {
+        question: "While inspecting fire-related environmental controls, which activity is specifically relevant to the IS auditor?",
+        options: [
+          "Checking whether emergency evacuation plans are documented and fire drills are conducted",
+          "Granting read-only access to the finance database",
+          "Reviewing the format of application input fields only",
+          "Approving every supplier invoice"
+        ],
+        answer: 0,
+        reason: "The chapter states that an IS auditor should examine fire detection and suppression arrangements, staff awareness, testing, emergency evacuation plans and fire drills."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS03",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Meridian Analytics restricts entry to its server room. Employees use electronic card keys, while visitors must provide identification and enter their name, visit date, time, organisation and purpose in a visitor log. A responsible employee escorts visitors inside the facility. CCTV footage is monitored and retained, and a man-trap system controls entry to a highly restricted area so that the second door operates only after the first door is closed and locked.</p>
+    `,
+    questions: [
+      {
+        question: "Electronic card keys used to enter the server room are an example of:",
+        options: [
+          "Processing controls",
+          "Physical access controls",
+          "Output controls",
+          "Corrective controls"
+        ],
+        answer: 1,
+        reason: "Physical access controls protect facilities and tangible resources. The chapter includes electronic door locks and card-based access mechanisms among these controls."
+      },
+      {
+        question: "Recording a visitor's name, date, time, organisation and purpose of visit is an example of:",
+        options: [
+          "Network encryption",
+          "Database concurrency control",
+          "Manual visitor logging",
+          "Output distribution control"
+        ],
+        answer: 2,
+        reason: "The chapter explains that manual logging records visitor details such as name, date and time of visit, company represented, purpose of visit and person to meet."
+      },
+      {
+        question: "What is the main purpose of the man-trap system described in the case?",
+        options: [
+          "To validate data entered into an application",
+          "To encrypt data transmitted across a network",
+          "To restore files following a system failure",
+          "To control physical entry by regulating the sequence of doors"
+        ],
+        answer: 3,
+        reason: "A dead-man door or man-trap system uses a pair of doors in which the second door operates only after the first door closes and locks, helping control entry and restrict intruders."
+      },
+      {
+        question: "CCTV monitoring and retention of footage primarily support which physical security purpose?",
+        options: [
+          "Monitoring access and providing evidence for later review or investigation",
+          "Validating the completeness of input fields",
+          "Allocating users' logical access privileges",
+          "Synchronising network clocks"
+        ],
+        answer: 0,
+        reason: "The chapter describes video cameras monitored by security personnel and retention of footage for future audit or investigation as means of controlling physical access."
+      },
+      {
+        question: "Escorting visitors inside the server room is an example of:",
+        options: [
+          "Application output control",
+          "Controlled visitor access",
+          "Logical access timeout",
+          "Database update control"
+        ],
+        answer: 1,
+        reason: "The chapter recommends that a responsible employee escort visitors to ensure controlled visitor access to sensitive facilities."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS04",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Northstar Finance uses an application for accounting and reporting. When a new employee joins, the department submits a user-registration form containing the employee's details and requested access rights, which must be approved by the Head of Department. Access privileges are limited to the employee's job responsibilities. A business analyst may view reports but cannot modify them. Access rights are reviewed when employees transfer roles, and workstations automatically log users out after a defined period of inactivity.</p>
+    `,
+    questions: [
+      {
+        question: "Approval of requested access rights by the Head of Department is part of:",
+        options: [
+          "Fire prevention controls",
+          "Output formatting controls",
+          "User access management",
+          "Environmental monitoring"
+        ],
+        answer: 2,
+        reason: "The chapter's user access management procedures include user registration with details such as designation, department, requested access rights and approval by the Head of Department."
+      },
+      {
+        question: "Limiting each employee's access privileges to the requirements of the job reflects which principle described in the chapter?",
+        options: [
+          "Giving all employees unrestricted access",
+          "Allowing visitors to access the server room",
+          "Providing every user with database administration rights",
+          "Keeping access privileges minimal in relation to job functions"
+        ],
+        answer: 3,
+        reason: "The chapter states that access privileges should be aligned with job requirements and responsibilities, and should be minimal with respect to the user's job function."
+      },
+      {
+        question: "Allowing the business analyst to view a report but not modify it is an example of:",
+        options: [
+          "Role-appropriate privilege management",
+          "Environmental control",
+          "Business continuity planning",
+          "Physical visitor logging"
+        ],
+        answer: 0,
+        reason: "The chapter illustrates privilege management by explaining that a business analyst may be allowed to view a report but not modify it, while modification may be reserved for a developer."
+      },
+      {
+        question: "Why should user access rights be reviewed when an employee transfers to another role?",
+        options: [
+          "To ensure all passwords become public",
+          "To identify inconsistencies between the employee's current job and the privileges granted",
+          "To remove all application controls",
+          "To replace the need for user registration"
+        ],
+        answer: 1,
+        reason: "The chapter explains that a user's access needs may change due to promotion, transfer or rotation, so periodic reviews should identify inconsistencies between the current job profile and granted privileges."
+      },
+      {
+        question: "Automatically logging out an inactive user after a defined period is an example of:",
+        options: [
+          "Fire suppression",
+          "Manual visitor logging",
+          "Terminal timeout as an operating-system access control",
+          "Report distribution control"
+        ],
+        answer: 2,
+        reason: "The chapter describes terminal timeout as logging out a user when a terminal is inactive for a defined period, helping prevent misuse when the legitimate user is absent."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS05",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>East-West Services connects its branch offices to the head office and provides approved internet access to employees. Internet traffic is routed through a firewall. A network handling sensitive business information is segregated from general internet access, and remote employees use a Virtual Private Network (VPN). Data transmitted over the network is encrypted. Access to network devices is subject to authentication and authorisation policies.</p>
+    `,
+    questions: [
+      {
+        question: "Routing traffic between the external network and the organisation's intranet through a firewall is intended to:",
+        options: [
+          "Control the traffic permitted to pass between networks",
+          "Repair damaged database records automatically",
+          "Manage visitor badges at the office entrance",
+          "Approve changes to employee job descriptions"
+        ],
+        answer: 0,
+        reason: "The chapter defines a firewall as a system that enforces access control between two networks and permits only authorised traffic according to the applicable rules."
+      },
+      {
+        question: "Separating the network that handles sensitive information from general internet access is an example of:",
+        options: [
+          "Manual visitor logging",
+          "Segregation of networks",
+          "Output report formatting",
+          "Environmental pollution control"
+        ],
+        answer: 1,
+        reason: "The chapter describes segregation of networks based on the sensitivity of information handled, including isolating a secure connection from internet-usage services."
+      },
+      {
+        question: "What is the primary purpose of network encryption in the case?",
+        options: [
+          "To permit all users to modify reports",
+          "To replace user authentication",
+          "To convert transmitted data and messages into a secret code",
+          "To record visitors entering a building"
+        ],
+        answer: 2,
+        reason: "The chapter defines network encryption as encrypting data and messages communicated over a computer network by converting data into a secret code."
+      },
+      {
+        question: "The use of a VPN by remote employees primarily supports:",
+        options: [
+          "Fire detection in the data centre",
+          "Manual approval of printed reports",
+          "Physical access to office doors",
+          "A secure connection for sharing data remotely"
+        ],
+        answer: 3,
+        reason: "The chapter states that a VPN should be implemented for sharing data with employees or vendors who work from home."
+      },
+      {
+        question: "Authentication and authorisation policies for network devices are part of:",
+        options: [
+          "Network access control",
+          "Pollution damage control",
+          "Output distribution control",
+          "Business process re-engineering"
+        ],
+        answer: 0,
+        reason: "The chapter explains that network services should be accessed through authentication and that authorisation policies should be implemented across the organisation's network."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS06",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Summit Manufacturing reviews the controls over its information systems. Senior management establishes high-level IT policies and determines the organisation's information systems objectives. A systems development team documents the requirements and authorisations for each development phase. The data resource team manages data definitions and monitors database activity. Operations personnel run daily computer and network operations, while Quality Assurance personnel check whether information systems meet established quality goals and standards.</p>
+    `,
+    questions: [
+      {
+        question: "Establishing high-level IT policies and ensuring that IT activities support strategic business objectives are responsibilities of:",
+        options: [
+          "Environmental controls",
+          "Top management controls",
+          "Output controls",
+          "Physical access controls"
+        ],
+        answer: 1,
+        reason: "Under the Management Control Framework, top management is responsible for high-level IT policies, procedures and standards and for ensuring that information systems support strategic business objectives."
+      },
+      {
+        question: "Documenting requirements and authorisations for each phase of system development falls under:",
+        options: [
+          "Operations management controls only",
+          "Environmental controls",
+          "Systems development management controls",
+          "Physical access controls"
+        ],
+        answer: 2,
+        reason: "Systems development management controls ensure that proper documentation and authorisations are available for each phase of the system development process."
+      },
+      {
+        question: "Managing data definitions and monitoring database activity are most closely associated with:",
+        options: [
+          "Top management controls only",
+          "Output distribution controls",
+          "Fire protection controls",
+          "Data resource management controls"
+        ],
+        answer: 3,
+        reason: "Data resource management controls support proper data management, controlled data definitions, preservation of data integrity and monitoring of data-administrator and database-administrator activities."
+      },
+      {
+        question: "Running daily computer and network operations is primarily the responsibility of:",
+        options: [
+          "Operations management controls",
+          "Directive controls only",
+          "Boundary controls only",
+          "Visitor access controls"
+        ],
+        answer: 0,
+        reason: "Operations management controls cover the daily running of hardware and software facilities and include computer operations and network operations."
+      },
+      {
+        question: "Checking whether information systems meet established quality goals and standards is the function of:",
+        options: [
+          "Logical access management",
+          "Quality Assurance management controls",
+          "Physical access management",
+          "Water damage controls"
+        ],
+        answer: 1,
+        reason: "Quality Assurance management controls help ensure that information systems achieve defined quality goals and that development, implementation, operation and maintenance comply with quality standards."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS07",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Bluebird Retail introduces an application for recording customer orders. The application checks that mandatory fields are completed and that a PIN code contains six numeric digits. Users must authenticate themselves before accessing authorised application functions. The system calculates order totals, stores the resulting transactions, and generates sales reports that are distributed only to authorised recipients in a consistent format.</p>
+    `,
+    questions: [
+      {
+        question: "Checking mandatory fields and validating the format of a PIN code before processing are examples of:",
+        options: [
+          "Output controls",
+          "Input controls",
+          "Environmental controls",
+          "Physical access controls"
+        ],
+        answer: 1,
+        reason: "Input controls are designed to validate the authorisation, reasonableness, completeness, accuracy and integrity of data entered into an application system. The chapter gives a PIN-code field restricted to six numeric digits as an example of validation."
+      },
+      {
+        question: "The mechanism that authenticates users and links them to the application resources they are authorised to access is a:",
+        options: [
+          "Water detector",
+          "Batch output control",
+          "Boundary control",
+          "Backup power control"
+        ],
+        answer: 2,
+        reason: "Boundary controls establish the interface between a would-be user and a computer system and link authentic users to authorised resources through access-control mechanisms."
+      },
+      {
+        question: "Calculating the order total is an example of an activity performed by the application's:",
+        options: [
+          "Visitor logging subsystem",
+          "Fire detection system",
+          "Physical entry subsystem",
+          "Processing subsystem"
+        ],
+        answer: 3,
+        reason: "The processing subsystem computes, sorts, classifies and summarises data. Calculating an order total is a processing activity."
+      },
+      {
+        question: "Which control objective is most directly supported by distributing sales reports only to authorised recipients in a consistent format?",
+        options: [
+          "Output controls",
+          "Water damage controls",
+          "User-registration controls only",
+          "Man-trap controls"
+        ],
+        answer: 0,
+        reason: "Output controls ensure that data delivered to users is presented, formatted and delivered in a consistent and secure manner."
+      },
+      {
+        question: "The overall objective of application controls is to help ensure that data remains:",
+        options: [
+          "Available to every user without restriction",
+          "Complete, accurate and valid at all levels, including input, updating and storage",
+          "Unprocessed until printed",
+          "Unrelated to the organisation's business objectives"
+        ],
+        answer: 1,
+        reason: "The chapter states that application controls aim to ensure that data remains complete, accurate and valid at all levels, including input, updation and storage."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS08",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Harbour Bank processes transactions through applications that share a central database. The bank uses controls to prevent unauthorised access to records and to preserve data accuracy when more than one program accesses the same data. Data transmitted between branches is protected, and the IT team maintains backup copies so that a damaged database can be restored. The bank also reviews transaction logs and checks that reports are distributed and printed according to approved procedures.</p>
+    `,
+    questions: [
+      {
+        question: "Controls designed to prevent unauthorised access to records in the central database are examples of:",
+        options: [
+          "Fire controls",
+          "Visitor logging controls",
+          "Database access controls",
+          "Directive training controls"
+        ],
+        answer: 2,
+        reason: "Database controls include access controls that prevent unauthorised access to and use of data and help protect database integrity."
+      },
+      {
+        question: "Controls that address data-integrity problems when multiple programs access the same data are known as:",
+        options: [
+          "Physical access controls",
+          "Output distribution controls",
+          "Environmental controls",
+          "Concurrency controls"
+        ],
+        answer: 3,
+        reason: "The chapter explains that database controls help prevent integrity violations when multiple programs have concurrent access to data; concurrency controls address these situations."
+      },
+      {
+        question: "Protecting data transmitted between branches is most directly associated with:",
+        options: [
+          "Communication controls",
+          "Manual visitor logging",
+          "Fire evacuation controls",
+          "Employee training controls only"
+        ],
+        answer: 0,
+        reason: "Communication controls address exposures in the communication subsystem, including transmission errors, links, data flows and other network communications risks. Encryption may be used to protect sensitive data during transmission."
+      },
+      {
+        question: "Maintaining backup copies so that a damaged database can be restored supports:",
+        options: [
+          "Visitor identification",
+          "Database backup and recovery controls",
+          "Input screen design only",
+          "Physical perimeter fencing"
+        ],
+        answer: 1,
+        reason: "The chapter describes database backup and recovery controls as mechanisms for restoring damaged or destroyed databases in an authentic, accurate, complete and timely manner."
+      },
+      {
+        question: "Report printing, collection and distribution procedures fall primarily under:",
+        options: [
+          "Environmental controls",
+          "Output controls",
+          "User-registration controls",
+          "Physical perimeter controls"
+        ],
+        answer: 1,
+        reason: "The chapter explains that output controls cover the consistent and secure presentation and delivery of data. They include controls over printing, report collection, distribution and storage."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS09",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Evergreen Logistics depends on information technology for its daily operations. Senior management approves an information security policy. Changes to hardware, software and business processes must be approved and tested before implementation. Key IT duties are divided among different personnel to avoid conflicts of responsibility. The organisation maintains backup and recovery arrangements, has a business continuity plan, documents its response to incidents and monitors the performance of applications, supporting servers and outsourced service providers.</p>
+    `,
+    questions: [
+      {
+        question: "The statement of senior management's intent about protecting the organisation's information assets is known as the:",
+        options: [
+          "Information Security Policy",
+          "Visitor Log",
+          "Output Report",
+          "Database Query"
+        ],
+        answer: 0,
+        reason: "The chapter defines an Information Security Policy as a statement of intent by senior management about how to protect the company's information assets."
+      },
+      {
+        question: "Requiring changes to hardware, software and business processes to be approved and tested before implementation is an example of:",
+        options: [
+          "Environmental control",
+          "Change management",
+          "Output formatting",
+          "Physical visitor access"
+        ],
+        answer: 1,
+        reason: "The chapter states that a change management process should cover changes to hardware, software and business processes, and that all changes must be properly approved and tested before implementation."
+      },
+      {
+        question: "Dividing key IT duties among different personnel is intended to avoid:",
+        options: [
+          "Water damage",
+          "Incorrect report formatting",
+          "Segregation of Duties conflicts",
+          "The need for data backups"
+        ],
+        answer: 2,
+        reason: "The chapter identifies separation of key IT functions as a general IT control and states that duties should be demarcated to avoid Segregation of Duties (SoD) conflicts."
+      },
+      {
+        question: "Backup, recovery and business continuity arrangements primarily help the organisation to:",
+        options: [
+          "Give all users unrestricted access",
+          "Eliminate the need for security policies",
+          "Avoid documenting incidents",
+          "Resume processing and operations within an acceptable period after disruption"
+        ],
+        answer: 3,
+        reason: "The chapter explains that business continuity controls help prevent interruptions and allow processing to resume within an acceptable period. Backup and recovery arrangements support this objective."
+      },
+      {
+        question: "Monitoring applications, supporting servers and outsourced service levels is part of the chapter's discussion of:",
+        options: [
+          "General IT controls",
+          "Fire extinguishers only",
+          "Manual visitor logging only",
+          "Physical door locks only"
+        ],
+        answer: 0,
+        reason: "The chapter lists monitoring of applications and supporting servers, as well as review of Service Level Agreements with vendors, among general IT control activities."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS10",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>ABC Multispecialty Hospital uses a financial accounting system to process supplier invoices and cash disbursements. To fill a vacancy in the accounts department, Mahesh was hired temporarily without an interview or background investigation, even though the hospital's standard procedure required checks for personnel in sensitive departments. Mahesh later entered fraudulent vendor information and processed several payments below the amount that required a second cheque signature. During the investigation, the internal audit manager reviewed system reports, cancelled cheques, authorisation forms and accounts-payable procedures.</p>
+    `,
+    questions: [
+      {
+        question: "Hiring an employee for a sensitive finance role without the required background investigation indicates a weakness in which type of control?",
+        options: [
+          "Output formatting controls",
+          "Preventive controls over personnel selection",
+          "Water detection controls",
+          "Network encryption controls"
+        ],
+        answer: 1,
+        reason: "The chapter lists employing qualified personnel and related safeguards among preventive controls. Bypassing the hospital's established screening procedure weakened the preventive control environment."
+      },
+      {
+        question: "Reviewing system reports, cancelled cheques and cash-disbursement authorisation forms to identify fraudulent payments is primarily an example of:",
+        options: [
+          "Directive control only",
+          "Environmental control",
+          "Detective control and audit investigation",
+          "Physical access control only"
+        ],
+        answer: 2,
+        reason: "Detective controls identify errors or incidents that have occurred. The case describes the internal audit manager examining relevant reports and supporting documents to investigate suspected fraudulent disbursements."
+      },
+      {
+        question: "The hospital's requirement for a second signature on cheques above a specified amount is primarily intended to provide:",
+        options: [
+          "Water damage protection",
+          "A network encryption key",
+          "A visitor identification badge",
+          "Authorisation as part of the control over cash disbursements"
+        ],
+        answer: 3,
+        reason: "Authorisation of transactions is an example of a preventive control. A second signature provides an additional authorisation check for cheques meeting the specified threshold."
+      },
+      {
+        question: "Processing several cheques below the threshold to avoid the second-signature requirement demonstrates that:",
+        options: [
+          "A control may be circumvented when procedures are not adequately followed or monitored",
+          "All detective controls prevent every incident from occurring",
+          "Environmental controls govern supplier payments",
+          "Output controls replace transaction authorisation"
+        ],
+        answer: 0,
+        reason: "The chapter's hospital illustration shows how a person exploited weaknesses in the payment process by keeping individual cheques below the second-signature threshold. It illustrates the need to understand control weaknesses and monitor compliance with procedures."
+      },
+      {
+        question: "Which broader lesson from the hospital illustration is most appropriate?",
+        options: [
+          "A well-designed information system cannot contain control weaknesses",
+          "System weaknesses may be exploited, and management may override established policies and procedures",
+          "Internal auditors should avoid reviewing supporting documents",
+          "Hiring procedures are unrelated to the control environment"
+        ],
+        answer: 1,
+        reason: "The chapter observes that even a well-designed information system can have weaknesses that an employee may exploit, and that management can override policies and procedures. It highlights the role of IS auditors in improving internal controls and governance."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch8_CS11",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>At Silverline Finance, access to the operating system is granted only after a user successfully enters a valid user ID and password. After a successful log-in, the operating system creates an access token containing information about the user and the privileges granted during the session. Access Control Lists specify which users may read, write, execute or delete particular files. The system administrator alone may use utilities for adding or deleting users, and password files are stored securely using appropriate protection.</p>
+    `,
+    questions: [
+      {
+        question: "What is the primary purpose of the access token created after a successful log-in?",
+        options: [
+          "To record visitors entering the computer room",
+          "To replace all access permissions with unrestricted access",
+          "To approve actions during the session using information about the user and granted privileges",
+          "To restore a database after environmental damage"
+        ],
+        answer: 2,
+        reason: "The chapter explains that an access token contains key information about the user, user group and privileges granted. The operating system uses this information to approve actions attempted during the session."
+      },
+      {
+        question: "Which control specifies the permissions users and groups have for files, directories or devices?",
+        options: [
+          "Access Control List (ACL)",
+          "Business Continuity Plan",
+          "Water detection control",
+          "Output distribution control"
+        ],
+        answer: 0,
+        reason: "An Access Control List (ACL) identifies users and groups and lists their permissions for an object, such as a file or directory."
+      },
+      {
+        question: "Why should utilities used to add or delete operating-system users be strictly controlled?",
+        options: [
+          "They are used only to format printed reports",
+          "They perform critical operating-system functions and should be accessible only to authorised administrators",
+          "They eliminate the need to authenticate users",
+          "They are environmental controls for fire prevention"
+        ],
+        answer: 1,
+        reason: "The chapter states that system utilities manage critical operating-system functions, such as adding or deleting users, and their use and access should be strictly controlled and logged."
+      },
+      {
+        question: "Which option best describes the purpose of a terminal log-in procedure?",
+        options: [
+          "To let unidentified users enter the system quickly",
+          "To control only the physical entry of visitors",
+          "To distribute reports to authorised recipients",
+          "To compare submitted credentials with valid-user records before authorising log-in"
+        ],
+        answer: 3,
+        reason: "The chapter describes terminal log-in as a first line of defence. The system compares the user ID and password with records of valid users and authorises log-in accordingly."
+      },
+      {
+        question: "According to the chapter, how should stored operating-system passwords be protected?",
+        options: [
+          "By making the password file available to all users",
+          "By storing passwords in an openly readable text file",
+          "By using one-way hashing and protecting the password file in encrypted form from user access",
+          "By recording passwords in the visitor log"
+        ],
+        answer: 2,
+        reason: "The chapter states that password storage should use one-way hashing algorithms and that the password file should be stored in encrypted form and not be accessible to users."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS12",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>At Pioneer Systems, certain terminals may be used to initiate specified operating-system sessions. If a terminal remains inactive for a defined period, the system automatically logs out the user. System access is restricted to approved time slots, and the organisation maintains logs of attempted access. A special alert mechanism is also available for an employee who is forced under threat to execute an instruction.</p>
+    `,
+    questions: [
+      {
+        question: "Which control helps ensure that a specified session can be initiated only from an approved computer terminal or location?",
+        options: [
+          "Automated terminal identification",
+          "Report distribution control",
+          "Database concurrency control",
+          "Environmental pollution control"
+        ],
+        answer: 0,
+        reason: "The chapter explains that automated terminal identification helps ensure that a specified session can be initiated only from a certain location or computer terminal."
+      },
+      {
+        question: "Automatically logging out an inactive user after a defined period is known as:",
+        options: [
+          "Discretionary access control",
+          "Terminal timeout",
+          "Physical visitor logging",
+          "Batch output production"
+        ],
+        answer: 1,
+        reason: "Terminal timeout logs out a user when a terminal is inactive for a defined period, helping prevent misuse in the absence of the legitimate user."
+      },
+      {
+        question: "Restricting system access to approved hours or days is an example of:",
+        options: [
+          "Water damage prevention",
+          "Output formatting",
+          "Limitation of connection time",
+          "Database definition control"
+        ],
+        answer: 2,
+        reason: "The chapter describes limitation of connection time as defining available time slots and disallowing transactions outside those slots."
+      },
+      {
+        question: "What is the purpose of the special alert mechanism for a user forced to execute an instruction under threat?",
+        options: [
+          "To grant the user additional database permissions",
+          "To restart a failed program from the beginning",
+          "To print duplicate reports",
+          "To alert the authorities through a duress alarm"
+        ],
+        answer: 3,
+        reason: "The chapter describes a duress alarm as a means to alert authorities when users are forced to execute instructions under threat."
+      },
+      {
+        question: "Which information is specifically relevant to application and monitoring system access logs in the chapter?",
+        options: [
+          "Only the user's preferred report colour",
+          "User ID, time of access, terminal location and originating IP address",
+          "Only the name of the building's security guard",
+          "Only the number of printers in the office"
+        ],
+        answer: 1,
+        reason: "The chapter states that access logs should record details such as user ID, access time, terminal location and the IP address from which the request originated."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS13",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Nova Health operates a critical application that stores confidential patient information. Based on the system's criticality, management runs the application in an isolated environment. The IT team reviews event logs containing access attempts and periodically monitors system use. The clocks of systems across the enterprise network are synchronised to a standard time. Employees who work remotely must encrypt information on portable computers and use a Virtual Private Network (VPN) when sharing data securely.</p>
+    `,
+    questions: [
+      {
+        question: "Running a critical application in an isolated environment is an example of which control described in the chapter?",
+        options: [
+          "Manual visitor logging",
+          "Sensitive system isolation",
+          "Environmental fire control",
+          "Batch report design control"
+        ],
+        answer: 1,
+        reason: "The chapter states that, depending on the criticality of a system, it may be necessary to run it in an isolated environment."
+      },
+      {
+        question: "Reviewing event logs and monitoring access attempts primarily help the organisation to:",
+        options: [
+          "Replace authentication with unrestricted access",
+          "Prevent all environmental incidents",
+          "Detect and report unauthorised activities",
+          "Avoid keeping records of system events"
+        ],
+        answer: 2,
+        reason: "The chapter identifies monitoring system access and reviewing event logs as detective measures that help identify and report unauthorised activities and assess whether preventive controls are working."
+      },
+      {
+        question: "Why is clock synchronisation important for enterprise event logs?",
+        options: [
+          "It helps correlate events and generate reports across the network",
+          "It grants file permissions to every user",
+          "It prevents visitors from entering the building",
+          "It replaces data backup and recovery"
+        ],
+        answer: 0,
+        reason: "The chapter explains that synchronising clocks to a standard time helps correlate events and generate reports from logs maintained across an enterprise network."
+      },
+      {
+        question: "Which measure is specifically identified in the chapter for secure sharing of data by employees working from home?",
+        options: [
+          "Using a visitor badge for network access",
+          "Disabling all authentication controls",
+          "Storing passwords in a visible document",
+          "Implementing a Virtual Private Network (VPN)"
+        ],
+        answer: 3,
+        reason: "The chapter states that VPNs should be implemented for sharing data with employees or vendors who have opted to work from home."
+      },
+      {
+        question: "Encrypting information on portable computers helps address which concern identified in the chapter?",
+        options: [
+          "The need to conduct fire drills",
+          "The risk of data theft from portable computers and the need to protect information",
+          "The scheduling of computer jobs only",
+          "The preparation of visitor registers"
+        ],
+        answer: 1,
+        reason: "The chapter notes that theft of data carried on portable computer disk drives is a high-risk factor and identifies encryption and access identification as necessary security features."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS14",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Delta Communications operates a network connecting several offices. Its network team monitors transmission errors, manages the link between connected nodes, controls the rate at which data flows, and defines the logical arrangement of network nodes. When a primary communication path is unavailable, an alternative route can be used. The organisation also applies controls to manage access to shared communication channels.</p>
+    `,
+    questions: [
+      {
+        question: "Controls that detect or correct errors caused by attenuation or distortion on a communication line are known as:",
+        options: [
+          "Line error controls",
+          "Physical visitor controls",
+          "Database definition controls",
+          "Output distribution controls"
+        ],
+        answer: 0,
+        reason: "The Application Control Framework identifies line error controls as communication controls that detect or correct errors such as attenuation or distortion."
+      },
+      {
+        question: "Which communication control manages the rate at which data flows between users?",
+        options: [
+          "Link control",
+          "Flow control",
+          "Topological control",
+          "Boundary control"
+        ],
+        answer: 1,
+        reason: "The chapter describes flow controls as controlling the rate at which data flows between users."
+      },
+      {
+        question: "Managing the connection between two nodes in a network is the function of:",
+        options: [
+          "Output control",
+          "User-registration control",
+          "Link control",
+          "Fire suppression control"
+        ],
+        answer: 2,
+        reason: "The chapter states that link controls manage the link between two nodes in a network."
+      },
+      {
+        question: "Reviewing the logical arrangement of network nodes and how they are connected relates to:",
+        options: [
+          "Password management",
+          "Database update control",
+          "Manual visitor logging",
+          "Topological controls"
+        ],
+        answer: 3,
+        reason: "Topological controls specify or review the location and way in which nodes are linked in a network."
+      },
+      {
+        question: "Controls that handle competition among users seeking to use the same communication channel are called:",
+        options: [
+          "Channel access controls",
+          "Water detection controls",
+          "System development controls",
+          "Batch report design controls"
+        ],
+        answer: 0,
+        reason: "The chapter identifies channel access controls as addressing contention in a communication channel."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS15",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>At Crestline Manufacturing, an application processes inventory transactions. Before deployment, the IT team uses a test server to check whether entered data produces the expected result. Processing controls are applied to reduce programming errors that could lead to incomplete or inaccurate results. If processing fails, a checkpoint-and-restart facility enables the application to resume from a point where processing was accurate and complete rather than repeat the entire job.</p>
+    `,
+    questions: [
+      {
+        question: "The subsystem responsible for computing, sorting, classifying and summarising data is the:",
+        options: [
+          "Physical access subsystem",
+          "Visitor management subsystem",
+          "Processing subsystem",
+          "Environmental control subsystem"
+        ],
+        answer: 2,
+        reason: "The chapter defines the processing subsystem as responsible for computing, sorting, classifying and summarising data."
+      },
+      {
+        question: "Entering test data on a test server to determine whether the desired output is received is relevant to the auditor's inspection of:",
+        options: [
+          "Fire alarms only",
+          "Physical perimeter fencing",
+          "Manual visitor records",
+          "Processing controls"
+        ],
+        answer: 3,
+        reason: "The chapter states that an auditor may enter data in a test server to ensure that the desired output is received after processing the data."
+      },
+      {
+        question: "What is the main purpose of checkpoint-and-restart controls?",
+        options: [
+          "To enable processing to resume from a point where it was accurate and complete",
+          "To let any employee change system utilities",
+          "To restrict entry to the computer room physically",
+          "To distribute printed reports to visitors"
+        ],
+        answer: 0,
+        reason: "The chapter describes checkpoint and restart controls as enabling recovery from the point of failure, with restart from the point at which processing was accurate and complete."
+      },
+      {
+        question: "Validation controls within processing are assessed primarily to identify:",
+        options: [
+          "The number of visitors to the data centre",
+          "Data-processing errors",
+          "The location of fire extinguishers only",
+          "The number of employees in the accounts department"
+        ],
+        answer: 1,
+        reason: "The chapter identifies evaluation of validation controls as an audit procedure for checking data-processing errors."
+      },
+      {
+        question: "Which risk are processing controls intended to help address?",
+        options: [
+          "Only the risk of unauthorised physical entry",
+          "Only the risk of water leaking into the building",
+          "Errors or irregularities associated with processing data",
+          "Only the risk of visitors not signing a register"
+        ],
+        answer: 2,
+        reason: "The Application Control Framework identifies processor and application-software controls as helping reduce losses from processing errors and irregularities and identify errors during data processing."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS16",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Meadow Pharmaceuticals treats its database as a critical organisational resource. Database definitions follow established standards. Access is restricted to authorised users, and only authorised users may update records. The database team maintains controls to help ensure that data remains accurate, complete and consistent. It also takes steps to prevent integrity problems when different programs access the database at the same time.</p>
+    `,
+    questions: [
+      {
+        question: "Controls that ensure database definitions comply with established database-definition standards are called:",
+        options: [
+          "Output controls",
+          "Definition controls",
+          "Visitor access controls",
+          "Fire protection controls"
+        ],
+        answer: 1,
+        reason: "The Management Control Framework identifies definition controls as ensuring compliance with database-definition standards."
+      },
+      {
+        question: "Restricting database updates to authorised users is an example of:",
+        options: [
+          "Environmental control",
+          "Report distribution control",
+          "Update control",
+          "Physical entry logging"
+        ],
+        answer: 2,
+        reason: "The chapter identifies update controls as restricting database updates to authorised users only."
+      },
+      {
+        question: "Which type of control helps overcome data-integrity problems arising when multiple programs access a database concurrently?",
+        options: [
+          "Water damage control",
+          "Output formatting control",
+          "Manual visitor logging",
+          "Concurrency control"
+        ],
+        answer: 3,
+        reason: "Concurrency controls are identified in the chapter as addressing data-integrity problems when multiple programs have concurrent access to data."
+      },
+      {
+        question: "The organisation's effort to maintain data accuracy, completeness and consistency is most closely associated with:",
+        options: [
+          "Quality controls over data",
+          "Physical door locks",
+          "Fire evacuation procedures",
+          "Connection-time restrictions only"
+        ],
+        answer: 0,
+        reason: "The chapter describes quality controls over data as helping ensure accuracy, completeness and data consistency."
+      },
+      {
+        question: "In the Management Control Framework, data resource management is important because data should be:",
+        options: [
+          "Accessible to every person without restriction",
+          "Available to users when, where and in the form in which it is needed, while preserving integrity",
+          "Kept permanently unavailable after entry",
+          "Modified only by unrecorded processes"
+        ],
+        answer: 1,
+        reason: "The chapter explains that data should be available to users when and where it is needed and in the required form, while its integrity is preserved."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS17",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>An IS auditor visits the data centre of Willow Technologies. The auditor examines the maintenance records for the Uninterruptible Power Supply (UPS), checks whether heating, ventilation and air-conditioning systems maintain suitable temperature and humidity levels, and asks whether water detectors are tested. The auditor also reviews building plans, security procedures, physical barriers, surveillance arrangements and the process for issuing key cards to employees.</p>
+    `,
+    questions: [
+      {
+        question: "Reviewing UPS inspection, testing and maintenance records is part of inspecting:",
+        options: [
+          "Environmental controls",
+          "Application output controls only",
+          "Database update controls only",
+          "User access provisioning only"
+        ],
+        answer: 0,
+        reason: "The chapter instructs the IS auditor to examine the use, inspection and maintenance of power-conditioning equipment, including UPS systems, and review backup-power testing and maintenance records."
+      },
+      {
+        question: "When inspecting heating, ventilation and air-conditioning systems, the IS auditor should determine whether:",
+        options: [
+          "All users can change their passwords to a shared value",
+          "Temperature and humidity are adequate and monitored, and the systems are maintained",
+          "Every report is sent to external email addresses",
+          "The visitor log contains database definitions"
+        ],
+        answer: 1,
+        reason: "The chapter states that the auditor should determine whether HVAC systems provide adequate temperature and humidity, whether these are monitored, and whether the systems are properly maintained."
+      },
+      {
+        question: "Reviewing building plans and security procedures is a relevant part of which audit activity?",
+        options: [
+          "Processing test data only",
+          "Reviewing application report formats only",
+          "Review of documents during inspection of physical access controls",
+          "Testing a database query only"
+        ],
+        answer: 2,
+        reason: "For physical access controls, the chapter says the auditor may review security policies, procedures, premises plans, building plans, inventory lists and cabling diagrams."
+      },
+      {
+        question: "Reviewing how key cards are issued and which employees may access different security zones relates to:",
+        options: [
+          "Network encryption only",
+          "Output distribution controls",
+          "Database definition controls",
+          "Inspection of key-card systems as physical access controls"
+        ],
+        answer: 3,
+        reason: "The chapter's inspection guidance for physical access controls includes reviewing key-card systems, security zones, permitted access and processes for issuing key cards."
+      },
+      {
+        question: "Why should an IS auditor examine the cleanliness of a data centre?",
+        options: [
+          "Dust and dirt can accumulate in IT equipment and create pollution-related risks",
+          "Cleanliness determines the number of database permissions",
+          "It replaces the need for backup-power testing",
+          "It establishes which users can execute operating-system utilities"
+        ],
+        answer: 0,
+        reason: "The chapter identifies dust as a major pollutant in computer installations and instructs the auditor to examine data centres and IT equipment for accumulated dust and dirt."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS18",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>At Horizon Services, the IS auditor reviews the process for granting and removing access to information systems. The auditor checks access requests and approvals, new-employee access setup, periodic access reviews, dormant and shared accounts, password configuration settings and user access logs. The auditor also checks whether access is removed from all relevant IT systems when an employee leaves the organisation.</p>
+    `,
+    questions: [
+      {
+        question: "Checking access requests, approvals and new-employee access setup is part of reviewing:",
+        options: [
+          "Environmental maintenance only",
+          "User access provisioning",
+          "Output report design only",
+          "Network topology only"
+        ],
+        answer: 1,
+        reason: "The chapter states that inspection of user access provisioning includes access request processes and approvals, provisioning for new employees, segregation of duties and access reviews."
+      },
+      {
+        question: "When an employee leaves the organisation, which activity should the auditor specifically review?",
+        options: [
+          "Whether the employee's former badge colour is retained",
+          "Whether reports use consistent fonts",
+          "Removal of the employee's access to all relevant IT systems",
+          "Whether HVAC filters are replaced"
+        ],
+        answer: 2,
+        reason: "The chapter's inspection guidance for employee terminations includes reviewing the removal of access to all IT systems and related termination procedures."
+      },
+      {
+        question: "Why should an auditor examine dormant and shared accounts?",
+        options: [
+          "To determine the colour of printed reports",
+          "To evaluate water detection arrangements",
+          "To replace the approved access request process",
+          "To identify potential weaknesses in user access controls"
+        ],
+        answer: 3,
+        reason: "The chapter identifies dormant and shared accounts, account-lockout controls, access violations and system-administrator logs among the matters to examine when inspecting user access controls."
+      },
+      {
+        question: "Reviewing password length, reuse and masking settings is part of inspecting:",
+        options: [
+          "Password management controls",
+          "Physical perimeter fencing",
+          "Fire evacuation procedures",
+          "Output printing only"
+        ],
+        answer: 0,
+        reason: "The chapter's password-management audit guidance includes checking password configuration, character requirements, password reuse and whether passwords are masked during entry or creation."
+      },
+      {
+        question: "What is one purpose of reviewing user access logs?",
+        options: [
+          "To ensure the building has enough fire extinguishers only",
+          "To determine what events are recorded, how logs are reviewed and whether they can be altered or destroyed",
+          "To authorise every payment automatically",
+          "To determine the organisation's preferred software colours"
+        ],
+        answer: 1,
+        reason: "The chapter states that the auditor should inspect what events are recorded, how logs are stored and reviewed, who reviews them, whether they can be modified or destroyed, and whether they are retained or backed up."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS19",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Maple Digital is developing a new application. During development, the IS auditor works with the project team to advise on controls that should be built into the system. After implementation, the auditor reviews whether the application meets objectives relating to safeguarding assets, data integrity, effectiveness and efficiency. Separately, the auditor periodically examines the organisation's overall system-development process to assess its quality and related control risks.</p>
+    `,
+    questions: [
+      {
+        question: "An auditor who participates in the system development team and advises on controls while the application is being built is performing a:",
+        options: [
+          "Concurrent audit",
+          "Physical access inspection only",
+          "Post-termination access review",
+          "Fire-suppression inspection"
+        ],
+        answer: 0,
+        reason: "The chapter describes a concurrent audit as the auditor's participation in the system development team to help improve system quality and guide the team in building required controls into the system."
+      },
+      {
+        question: "Reviewing an implemented application to determine whether it meets asset-safeguarding, data-integrity, effectiveness and efficiency objectives is an example of:",
+        options: [
+          "Environmental inspection",
+          "Post-implementation audit",
+          "Manual visitor logging",
+          "Network channel access control"
+        ],
+        answer: 1,
+        reason: "The chapter explains that a post-implementation audit evaluates the current status of a system against asset safeguarding, data integrity, system effectiveness and system efficiency objectives."
+      },
+      {
+        question: "A periodic examination of the overall system-development process is described in the chapter as a:",
+        options: [
+          "Duress alarm review",
+          "Physical security patrol",
+          "General audit",
+          "Water detector test"
+        ],
+        answer: 2,
+        reason: "The chapter states that a general audit checks for a continuous system of IS audit after system development and evaluates the quality of the overall systems development process."
+      },
+      {
+        question: "When examining programming management controls, why may the auditor review documentation, observe activities and interview programmers about design practices?",
+        options: [
+          "To determine which visitors can enter the server room",
+          "To check the colour of the user interface only",
+          "To avoid evaluating system development methods",
+          "To obtain evidence about whether a systematic approach to program design is used"
+        ],
+        answer: 3,
+        reason: "The chapter explains that auditors should determine whether programmers use a systematic approach to design and can gather evidence through interviews, observations and reviews of documentation."
+      },
+      {
+        question: "Which tool is specifically mentioned in the chapter's discussion of monitoring progress across programming management phases?",
+        options: [
+          "Work Breakdown Structure (WBS), Gantt Charts or PERT",
+          "Visitor badge register only",
+          "Water leakage alarm only",
+          "Electronic door lock only"
+        ],
+        answer: 0,
+        reason: "The Management Control Framework illustration identifies WBS, Gantt Charts and PERT as tools used in the control phase to monitor progress across programming management phases."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS20",
+    difficulty: "Easy",
+    chapter: "Chapter8",
+    caseText: `
+      <p>At Cedar Public Services, management applies general IT controls across the organisation rather than designing them for one specific transaction. These include an approved information security policy, controlled access, separation of key IT duties, change management, backup and recovery arrangements, incident response procedures and user training. For a new application, the project team separately configures input validation and controls over the reports produced and distributed by that application.</p>
+    `,
+    questions: [
+      {
+        question: "Which statement best describes general controls according to the chapter?",
+        options: [
+          "They apply only to one particular transaction in an application",
+          "They are designed only for output formatting",
+          "They apply across systems in the organisation and are not related to a specific application",
+          "They replace the need for all application controls"
+        ],
+        answer: 2,
+        reason: "The chapter states that general controls apply to systems across the organisation, are not related to any specific application and are designed to support system integrity rather than control a specific transaction."
+      },
+      {
+        question: "Which item in the case is an example of a general IT control?",
+        options: [
+          "A field in one application accepts only a six-digit PIN code",
+          "An individual report is formatted for printing",
+          "A single invoice total is calculated",
+          "An approved information security policy applying across the organisation"
+        ],
+        answer: 3,
+        reason: "The chapter lists the information security policy, approved by senior management and applying across the enterprise, among general IT controls."
+      },
+      {
+        question: "Input validation configured for the new application is best classified as:",
+        options: [
+          "An application control",
+          "A physical barrier control",
+          "An environmental control",
+          "A visitor logging procedure"
+        ],
+        answer: 0,
+        reason: "The chapter explains that application controls include input controls designed to ensure the accuracy and completeness of data and instructions entered into an application system."
+      },
+      {
+        question: "Controls over the reports produced and distributed by the new application are examples of:",
+        options: [
+          "Environmental controls only",
+          "Output controls",
+          "Employee background checks only",
+          "Physical access controls only"
+        ],
+        answer: 1,
+        reason: "Output controls ensure that data delivered to users is presented, formatted and delivered consistently and securely. They include report production and distribution controls."
+      },
+      {
+        question: "Why are effective general IT controls important to automated application controls?",
+        options: [
+          "They make authorisation unnecessary",
+          "They ensure that every user receives administrator privileges",
+          "Proper and consistent operation of automated controls or IT functionality often depends on effective IT general controls",
+          "They eliminate the need to monitor application systems"
+        ],
+        answer: 2,
+        reason: "The chapter notes that proper and consistent operation of automated controls or IT functionality often depends upon effective IT general controls."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch8_CS21",
+    difficulty: "Medium",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Meridian Finance maintains a general ledger application accessed by employees in several departments. The ledger controller, as the resource owner, grants the budgeting team read-only access while the accounts payable manager is permitted to read and update ledger entries. The operating system maintains permissions for files and directories through Access Control Lists. Users are automatically logged out after a defined period of inactivity, and access attempts are recorded for review by the security administrator.</p>
+    `,
+    questions: [
+      {
+        question: "The ledger controller's ability, as resource owner, to grant read-only access to one department and read-write access to another is an example of:",
+        options: [
+          "Environmental control",
+          "Discretionary Access Control",
+          "Output control",
+          "Terminal identification"
+        ],
+        answer: 1,
+        reason: "The chapter explains that Discretionary Access Control allows resource owners in a distributed setting to grant access privileges to other users, such as read-only or read-write permission to a ledger."
+      },
+      {
+        question: "Which mechanism specifies users' or groups' permissions to read, write, execute or delete particular files and directories?",
+        options: [
+          "Business Continuity Plan",
+          "Service Level Agreement",
+          "Access Control List (ACL)",
+          "Emergency evacuation plan"
+        ],
+        answer: 2,
+        reason: "An Access Control List (ACL) identifies users and groups and lists the permissions they have for an object, including files and directories."
+      },
+      {
+        question: "The automatic log-out of a user after a defined period of inactivity is best classified as:",
+        options: [
+          "Terminal timeout",
+          "Topological control",
+          "Output distribution control",
+          "Water detection control"
+        ],
+        answer: 0,
+        reason: "The chapter identifies terminal timeout as logging out a user when the terminal is inactive for a defined period to prevent misuse in the legitimate user's absence."
+      },
+      {
+        question: "Which review would best help the security administrator determine whether the preventive access restrictions are being bypassed?",
+        options: [
+          "Review of HVAC maintenance invoices only",
+          "Review of visitor badge colours only",
+          "Recalculation of printed report totals only",
+          "Review of access-event logs, including user ID, time and originating terminal or IP address"
+        ],
+        answer: 3,
+        reason: "The chapter states that event logs should record access attempts and details such as user ID, access time, terminal location and originating IP address. Reviewing these logs is a detective activity to identify unauthorised activity."
+      },
+      {
+        question: "If the organisation routes all traffic between its external network and intranet through a device that permits only authorised traffic, that device is a:",
+        options: [
+          "Man-trap",
+          "Firewall",
+          "Water detector",
+          "Database concurrency control"
+        ],
+        answer: 1,
+        reason: "The chapter defines a firewall as a system that enforces access control between two networks and permits only authorised traffic according to the applicable rules."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS22",
+    difficulty: "Medium",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Northstar Logistics operates an enterprise-wide information system. Senior management has approved an information security policy. Hardware, software and business-process changes require approval and testing before implementation. Different IT personnel are assigned responsibility for development, operations and access administration to avoid conflicts of duties. Backups are maintained, recovery procedures are documented, and the organisation has a business continuity plan. An application team also configures transaction-specific input validation and report-access restrictions.</p>
+    `,
+    questions: [
+      {
+        question: "The enterprise-wide information security policy approved by senior management is an example of:",
+        options: [
+          "An input control specific to one transaction",
+          "An output control for printed reports only",
+          "A general IT control",
+          "A physical door-lock control"
+        ],
+        answer: 2,
+        reason: "The chapter includes a senior-management-approved Information Security Policy among general IT controls. General controls apply across systems in the organisation rather than to a specific transaction."
+      },
+      {
+        question: "Requiring changes to be approved and tested before implementation is primarily part of:",
+        options: [
+          "Change management",
+          "Manual visitor logging",
+          "Water damage prevention",
+          "Output report formatting"
+        ],
+        answer: 0,
+        reason: "The chapter states that changes to hardware, software and business processes should be managed through a process that ensures proper approval and testing before implementation."
+      },
+      {
+        question: "Separating development, operations and access-administration duties is intended primarily to avoid:",
+        options: [
+          "The need for backups",
+          "Segregation of Duties conflicts",
+          "Data encryption",
+          "The use of an information security policy"
+        ],
+        answer: 1,
+        reason: "The chapter identifies separation of key IT functions as a general IT control intended to establish clear demarcation of duties and avoid Segregation of Duties (SoD) conflicts."
+      },
+      {
+        question: "Which statement best explains the relationship between general IT controls and the application's input validation controls?",
+        options: [
+          "Input validation makes general IT controls unnecessary",
+          "General IT controls apply only to printed output",
+          "Both are physical access controls",
+          "Effective general IT controls often support the proper and consistent operation of automated application controls"
+        ],
+        answer: 3,
+        reason: "The chapter notes that proper and consistent operation of automated controls or IT functionality often depends upon effective IT general controls. Input validation is an application control."
+      },
+      {
+        question: "Maintaining backups, recovery procedures and a business continuity plan primarily supports the objective of:",
+        options: [
+          "Ensuring processing can resume within an acceptable period after an interruption",
+          "Allowing all users to alter sensitive information",
+          "Removing the need for change approval",
+          "Replacing all monitoring activities"
+        ],
+        answer: 0,
+        reason: "The chapter explains that backup, recovery and business continuity controls help prevent interruptions and enable processing to resume within an acceptable period."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS23",
+    difficulty: "Medium",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Orion Data Services stores business-critical systems in a dedicated data centre. The room is equipped with UPS units, surge protectors, fire detection and suppression systems, water detectors and air-conditioning equipment. The organisation conducts fire drills and retains inspection records. During an IS audit, the auditor is required to determine not only whether the equipment exists but also whether it is tested, maintained by qualified personnel and operating effectively throughout the relevant period.</p>
+    `,
+    questions: [
+      {
+        question: "The auditor's examination of UPS usage, inspection and maintenance records primarily concerns:",
+        options: [
+          "Database update permissions",
+          "Application output distribution",
+          "Power conditioning and backup power environmental controls",
+          "Discretionary access control"
+        ],
+        answer: 2,
+        reason: "The chapter directs the IS auditor to determine how frequently UPS and other power-conditioning equipment are used, inspected, maintained and tested, and whether qualified personnel perform the work."
+      },
+      {
+        question: "Checking that the air-conditioning system maintains suitable temperature and humidity and is properly maintained relates to:",
+        options: [
+          "Access Control Lists",
+          "Heating, Ventilation and Air Conditioning (HVAC) controls",
+          "Output controls",
+          "Database concurrency controls"
+        ],
+        answer: 1,
+        reason: "The chapter specifies that the auditor should assess whether HVAC systems provide adequate temperature and humidity levels, whether these are monitored, and whether the systems are properly maintained."
+      },
+      {
+        question: "Why should the auditor examine whether water detectors are tested and monitored?",
+        options: [
+          "To verify staff password length",
+          "To determine report-printing privileges",
+          "To validate application input fields",
+          "To evaluate whether potential water damage to the computer installation can be detected"
+        ],
+        answer: 3,
+        reason: "Water detectors are environmental controls intended to identify water exposure. The chapter instructs auditors to check where they are used, how frequently they are tested and whether they are monitored."
+      },
+      {
+        question: "In addition to checking the presence of fire-suppression equipment, which procedure is consistent with the chapter's audit guidance?",
+        options: [
+          "Check whether the equipment is tested and inspected and whether emergency evacuation plans and fire drills exist",
+          "Grant every employee access to the data centre",
+          "Replace inspection records with verbal assurances only",
+          "Review only the application's report fonts"
+        ],
+        answer: 0,
+        reason: "The chapter requires the auditor to consider adequacy and testing of fire-detection and suppression equipment, emergency evacuation plans and fire drills, and the inspection and refilling status of extinguishers."
+      },
+      {
+        question: "The auditor's examination of the data centre for accumulated dust and dirt addresses which exposure?",
+        options: [
+          "Unauthorised database updating",
+          "Pollution damage to information-processing equipment",
+          "Unauthorised report distribution",
+          "Incorrect user registration"
+        ],
+        answer: 1,
+        reason: "The chapter identifies dust as a major pollutant in computer installations and states that the auditor should examine data centres and IT equipment for accumulated dust and dirt."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS24",
+    difficulty: "Medium",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Vertex Retail has implemented an application to process customer orders. The application requires users to authenticate before accessing authorised functions, validates order data for completeness and reasonableness, processes the orders and updates a shared database. Branches exchange order information over a network, and management receives reports from the application. The audit team plans to evaluate whether controls exist at each relevant part of the application system.</p>
+    `,
+    questions: [
+      {
+        question: "The control mechanism that establishes the interface between the would-be user and the computer system and links authentic users to authorised resources is known as:",
+        options: [
+          "Boundary control",
+          "Output control",
+          "Environmental control",
+          "Concurrency control"
+        ],
+        answer: 0,
+        reason: "The chapter describes boundary controls as access-control mechanisms linking authentic users to authorised resources and establishing the interface between a would-be user and the computer system."
+      },
+      {
+        question: "Validation of order data for completeness, accuracy and reasonableness before it is processed is an example of:",
+        options: [
+          "Physical access control",
+          "Input control",
+          "Water damage control",
+          "Output distribution control"
+        ],
+        answer: 1,
+        reason: "Input controls validate application data for authorisation, reasonableness, completeness, accuracy and integrity before processing."
+      },
+      {
+        question: "Controls over the accurate and complete transmission of order information between branches belong primarily to:",
+        options: [
+          "Manual visitor logging",
+          "Database definition control only",
+          "Communication controls",
+          "Fire suppression controls"
+        ],
+        answer: 2,
+        reason: "Communication controls address exposures in the communication subsystem, including transmission errors, links, flows, channel access and network connectivity."
+      },
+      {
+        question: "Controls that preserve database integrity when different programs access shared data at the same time are known as:",
+        options: [
+          "Topological controls",
+          "Output distribution controls",
+          "Physical access controls",
+          "Concurrency controls"
+        ],
+        answer: 3,
+        reason: "The chapter explains that database controls help prevent integrity violations when multiple programs have concurrent access to data; concurrency controls address such situations."
+      },
+      {
+        question: "The controls intended to ensure that management reports are presented, formatted and delivered consistently and securely are:",
+        options: [
+          "Output controls",
+          "Environmental controls",
+          "User-registration controls",
+          "Terminal identification controls"
+        ],
+        answer: 0,
+        reason: "Output controls ensure that data delivered to users is presented, formatted and delivered in a consistent and secure manner."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS25",
+    difficulty: "Medium",
+    chapter: "Chapter8",
+    caseText: `
+      <p>At Summit Technologies, senior management establishes high-level IT policies and evaluates whether the information systems function supports business objectives. The systems development team documents and authorises each stage of a new application. Quality Assurance personnel monitor compliance with quality standards. The internal auditor participates during one major system build to advise on controls and later reviews the implemented system's performance against asset safeguarding, data integrity, effectiveness and efficiency objectives.</p>
+    `,
+    questions: [
+      {
+        question: "Establishing high-level IT policies and determining whether information systems support strategic business objectives fall under:",
+        options: [
+          "Environmental controls",
+          "Top management controls",
+          "Output controls",
+          "Database concurrency controls"
+        ],
+        answer: 1,
+        reason: "Under the Management Control Framework, top management is responsible for high-level IT policies, procedures and standards and for ensuring that information systems support strategic business objectives."
+      },
+      {
+        question: "Documenting and authorising activities at each stage of the system development process is primarily associated with:",
+        options: [
+          "Water detection controls",
+          "Physical access controls",
+          "Systems development management controls",
+          "Report printing controls"
+        ],
+        answer: 2,
+        reason: "Systems development management controls ensure that proper documentation and authorisations are available for each phase of system development."
+      },
+      {
+        question: "Quality Assurance personnel are principally concerned with ensuring that information systems:",
+        options: [
+          "Are accessible to all users without restriction",
+          "Never require maintenance",
+          "Operate without any need for documentation",
+          "Achieve established quality goals and comply with quality standards"
+        ],
+        answer: 3,
+        reason: "The chapter explains that Quality Assurance management controls help ensure that information systems achieve quality goals and that development, implementation, operation and maintenance comply with quality standards."
+      },
+      {
+        question: "The auditor's participation in the project team during system development to advise on controls is a:",
+        options: [
+          "Concurrent audit",
+          "General environmental inspection",
+          "Post-termination access review",
+          "Physical access risk assessment"
+        ],
+        answer: 0,
+        reason: "The chapter describes a concurrent audit as participation by an auditor in the system development team to help improve system quality and guide the inclusion of controls during development."
+      },
+      {
+        question: "The later review of the implemented system against asset safeguarding, data integrity, effectiveness and efficiency objectives is a:",
+        options: [
+          "Visitor access review",
+          "Post-implementation audit",
+          "Network topology review only",
+          "Fire-suppression inspection"
+        ],
+        answer: 1,
+        reason: "A post-implementation audit helps evaluate the current status of a specific application in terms of asset safeguarding, data integrity, system effectiveness and system efficiency."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS26",
+    difficulty: "Hard",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Riverview Hospital's finance system allows an accounts employee to create vendor records, enter invoices and prepare payment runs. A second approval is required for cheques above a specified threshold, but the system does not aggregate related payments to identify transactions split below that threshold. A temporary employee hired without the prescribed background investigation creates a fictitious vendor and processes several small payments. The internal auditor later identifies the pattern by comparing system reports, cancelled cheques, supporting authorisation forms and vendor records. Management had approved the temporary hiring exception without documenting a risk assessment.</p>
+    `,
+    questions: [
+      {
+        question: "Which combination most directly explains the weakness that enabled the fictitious-vendor payments?",
+        options: [
+          "Excessive fire protection and frequent evacuation drills",
+          "Output formatting errors and lack of report colour standards",
+          "Inadequate personnel screening, weak segregation of duties and a control threshold that could be circumvented through split payments",
+          "Lack of HVAC maintenance alone"
+        ],
+        answer: 2,
+        reason: "The Chapter 8 hospital illustration shows how bypassed hiring safeguards, weaknesses in payment processing and splitting cheques below the second-signature threshold can be exploited. The scenario combines these source-based control risks."
+      },
+      {
+        question: "The requirement for a second approval before a cheque above the threshold is released is primarily a:",
+        options: [
+          "Preventive control through transaction authorisation",
+          "Detective control that operates only after a fraud is found",
+          "Corrective control for restoring a database",
+          "Environmental control for electrical exposure"
+        ],
+        answer: 0,
+        reason: "The chapter identifies authorisation of transactions as a preventive control. An approval requirement is intended to prevent an unauthorised payment from being processed."
+      },
+      {
+        question: "Comparing system reports, cancelled cheques and supporting authorisation forms to identify the payment pattern is best classified as:",
+        options: [
+          "Directive training",
+          "Detective control and audit investigation",
+          "Environmental control",
+          "Physical access control only"
+        ],
+        answer: 1,
+        reason: "Detective controls identify errors or incidents that have occurred. The chapter's hospital case specifically describes an internal audit manager analysing system reports, cancelled cheques and cash-disbursement authorisation forms during the fraud investigation."
+      },
+      {
+        question: "What is the most appropriate control response to the system's failure to recognise related payments split below the approval threshold?",
+        options: [
+          "Remove all transaction authorisation requirements",
+          "Rely only on staff training and discontinue monitoring",
+          "Classify the issue solely as water damage exposure",
+          "Improve the payment controls and monitoring so related transactions cannot evade the intended approval requirement without review"
+        ],
+        answer: 3,
+        reason: "The case demonstrates that a threshold control can be circumvented when related transactions are not considered. A suitable response is to strengthen the relevant payment control and monitoring so the intended authorisation safeguard operates effectively."
+      },
+      {
+        question: "Management's undocumented approval of an exception to the prescribed hiring procedure most clearly illustrates which broader issue discussed in the chapter?",
+        options: [
+          "Management may override established policies and procedures, creating additional control risk",
+          "All information systems are free of control weaknesses once implemented",
+          "Physical access controls automatically prevent financial fraud",
+          "Detective controls are never necessary when preventive controls exist"
+        ],
+        answer: 0,
+        reason: "The chapter's hospital illustration highlights that management can override policies and procedures and that the resulting risk must be understood. It also stresses the role of IS auditors in strengthening internal controls and governance."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS27",
+    difficulty: "Hard",
+    chapter: "Chapter8",
+    caseText: `
+      <p>At Apex Utilities, a departing system administrator retains an active account for several weeks. A separate shared administrator account is used by multiple technicians, and access logs are stored locally on the same server without regular review. The data centre also permits maintenance contractors to enter a server area using untracked temporary cards. During an audit, management provides a policy document but no evidence of periodic access reviews, termination checks or monitoring of entry records.</p>
+    `,
+    questions: [
+      {
+        question: "Which audit procedure most directly addresses the risk created by the departing administrator's active account?",
+        options: [
+          "Review employee termination procedures and verify removal of access from relevant IT systems",
+          "Review the colour of printed reports",
+          "Check only whether the data centre is air-conditioned",
+          "Recalculate a sample of unrelated sales transactions"
+        ],
+        answer: 0,
+        reason: "The chapter's logical access inspection guidance specifically includes employee terminations and reviewing removal of access to all relevant IT systems."
+      },
+      {
+        question: "Why is the shared administrator account a significant audit concern?",
+        options: [
+          "It proves that environmental controls are effective",
+          "It may weaken individual accountability and complicate attribution of actions to a specific user",
+          "It automatically guarantees separation of duties",
+          "It prevents unauthorised changes to system logs"
+        ],
+        answer: 1,
+        reason: "The chapter identifies dormant and shared accounts, system-administrator account usage and access logs as matters for examination during an inspection of user access controls. The concern about individual attribution follows from the use of a shared account."
+      },
+      {
+        question: "Since access logs are stored locally and not regularly reviewed, which evidence should the auditor seek in addition to the written policy?",
+        options: [
+          "A verbal statement that the system is secure, without further testing",
+          "Only a copy of the building floor plan",
+          "Evidence about what events are logged, who reviews logs, retention and backup, and whether logs can be altered or destroyed",
+          "A list of approved report fonts"
+        ],
+        answer: 2,
+        reason: "The chapter directs auditors to examine what events are recorded, how and when logs are reviewed, who reviews them, whether they can be modified or destroyed, and whether they are retained or backed up."
+      },
+      {
+        question: "The use of temporary cards by contractors without tracking entry records primarily weakens which control area?",
+        options: [
+          "Input validation controls",
+          "Database concurrency controls",
+          "Processing checkpoint controls",
+          "Physical access controls, including controlled visitor or contractor access and key-card monitoring"
+        ],
+        answer: 3,
+        reason: "The chapter's physical access controls include controlled visitor access and key-card systems. Its audit guidance calls for reviewing permitted access zones, recording of personnel movement and key-card issuance procedures."
+      },
+      {
+        question: "Given the absence of evidence for periodic access reviews and termination checks, which audit conclusion is the most supportable?",
+        options: [
+          "A written policy alone proves that the controls operated effectively throughout the period",
+          "The auditor needs evidence of the controls' implementation and operation rather than relying on the policy document alone",
+          "The issue can be resolved by changing report formatting",
+          "The organisation should eliminate all user access logs"
+        ],
+        answer: 1,
+        reason: "The chapter's audit guidance calls for inspection of provisioning, access reviews, employee termination procedures, logs and related evidence. A policy document alone does not establish that the controls were implemented and operated effectively."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS28",
+    difficulty: "Hard",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Coastal Freight transmits shipment data between its head office and regional branches over a wide area network. Users report occasional transmission distortion and interruptions. The network team uses alternative routes, maintains a backup communication line and encrypts sensitive shipment information. However, the auditor finds that backup-line switching has not been tested recently, network downtime records are incomplete, and the logical arrangement of some network nodes is not reflected in the current network diagram.</p>
+    `,
+    questions: [
+      {
+        question: "The auditor's review of downtime records and evidence of transmission between network nodes is primarily intended to assess:",
+        options: [
+          "Whether communication controls support accurate and complete data transmission",
+          "Whether employees have signed the visitor register",
+          "Whether database definitions follow naming conventions only",
+          "Whether printed reports use the approved font"
+        ],
+        answer: 0,
+        reason: "The chapter states that an auditor should examine communication controls and obtain evidence that data transmission between nodes is accurate and complete. It specifically refers to reviewing IT department downtime records."
+      },
+      {
+        question: "Which action would provide direct evidence about the effectiveness of the backup communication arrangement?",
+        options: [
+          "Review the design of the office visitor badge",
+          "Test the alternate backup line and verify that switching between network lines is performed periodically",
+          "Remove encryption from sensitive information",
+          "Rely on the existence of a network diagram without testing"
+        ],
+        answer: 1,
+        reason: "The chapter's audit guidance calls for checking network backup and recovery controls, verifying availability of alternate backup communication lines and determining whether switching is performed periodically."
+      },
+      {
+        question: "The controls intended to detect or correct communication-line errors caused by attenuation or distortion are:",
+        options: [
+          "Output controls",
+          "Database update controls",
+          "Line error controls",
+          "Physical visitor controls"
+        ],
+        answer: 2,
+        reason: "The Application Control Framework identifies line error controls as controls that detect or correct communication errors such as attenuation or distortion."
+      },
+      {
+        question: "Reviewing the logical arrangement of network nodes and their connectivity through network devices relates most directly to:",
+        options: [
+          "Terminal timeout",
+          "User password masking",
+          "Database concurrency control",
+          "Topological controls"
+        ],
+        answer: 3,
+        reason: "Topological controls specify the location and way network nodes are linked. The chapter's audit guidance calls for assessing the logical arrangement of nodes and their connectivity using internetworking devices."
+      },
+      {
+        question: "The encryption of sensitive shipment information primarily addresses which concern?",
+        options: [
+          "Protection of privacy of sensitive data transmitted over the network",
+          "Control of physical entry to the data centre",
+          "Maintenance of fire extinguishers",
+          "Approval of personnel recruitment exceptions"
+        ],
+        answer: 0,
+        reason: "The chapter identifies network encryption as a communication control and instructs auditors to assess encryption controls to ensure protection of the privacy of sensitive data."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS29",
+    difficulty: "Hard",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Helios Insurance maintains a central database containing policy and claim records. Multiple application programs update the database, and the organisation relies on backups and a disaster recovery site. An audit identifies that restoration tests are not documented, the privacy of backup data is not addressed in the recovery procedure, and the organisation has not demonstrated that the disaster recovery site's database replica is available on a real-time basis. The application also lacks a tested checkpoint-and-restart procedure for lengthy processing jobs.</p>
+    `,
+    questions: [
+      {
+        question: "Which audit activity most directly addresses whether the database can be restored following destruction or damage?",
+        options: [
+          "Review the colour scheme of the claim-entry screen",
+          "Assess backup and recovery strategies and whether restoration is authentic, accurate, complete and timely",
+          "Inspect only the visitor badge process",
+          "Review only whether users can change their display name"
+        ],
+        answer: 1,
+        reason: "The chapter states that auditors should check whether a damaged or destroyed database can be restored in an authentic, accurate, complete and timely way and examine backup and recovery strategies."
+      },
+      {
+        question: "Why should the auditor assess whether the disaster recovery site's database replica is available on a real-time basis?",
+        options: [
+          "To determine whether report fonts are consistent",
+          "To verify physical visitor logging only",
+          "To assess the availability of a current database copy for recovery and continuity purposes",
+          "To eliminate the need for access controls"
+        ],
+        answer: 2,
+        reason: "The chapter's database-control audit guidance specifically refers to checking controls at the Disaster Recovery (DR) site and ensuring that a database replica is available on a real-time basis."
+      },
+      {
+        question: "The omission of controls addressing the privacy of data during backup and recovery most directly concerns:",
+        options: [
+          "Only physical perimeter fencing",
+          "Only the sequencing of fire drills",
+          "Only output report layout",
+          "Protection of data privacy during backup and recovery activities"
+        ],
+        answer: 3,
+        reason: "The chapter instructs auditors to evaluate whether data privacy is protected during all backup and recovery activities and notes that the privacy policy may be checked."
+      },
+      {
+        question: "Which control is intended to help preserve data integrity when multiple application programs have concurrent access to the database?",
+        options: [
+          "Concurrency controls",
+          "Environmental controls",
+          "Visitor logging controls",
+          "HVAC controls"
+        ],
+        answer: 0,
+        reason: "Database controls help prevent integrity violations when multiple programs access data concurrently. The chapter identifies concurrency controls as a mechanism for addressing such situations."
+      },
+      {
+        question: "The missing checkpoint-and-restart procedure is most directly related to which control area?",
+        options: [
+          "Physical access controls",
+          "Processing controls designed to resume from the point where processing was accurate and complete",
+          "Water damage environmental controls",
+          "Manual visitor logging"
+        ],
+        answer: 1,
+        reason: "The chapter explains that checkpoint and restart controls help the system recover from a point of failure, with processing restarted from the point at which it was accurate and complete rather than from scratch."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch8_CS30",
+    difficulty: "Hard",
+    chapter: "Chapter8",
+    caseText: `
+      <p>Keystone Services has deployed a payroll application. The application validates mandatory employee fields and restricts sensitive payroll reports to authorised roles. However, recent application changes were implemented without documented approval or testing. A payroll administrator who transferred to another department retains update access, and event logs contain unexplained gaps. The organisation has an information security policy and a backup procedure, but the auditor has not yet obtained evidence that change approvals, access reviews, log monitoring and restoration tests were performed consistently.</p>
+    `,
+    questions: [
+      {
+        question: "The missing documented approval and testing of recent application changes indicate a weakness in:",
+        options: [
+          "Change management, a general IT control area",
+          "Environmental fire suppression only",
+          "Manual visitor logging only",
+          "Output formatting only"
+        ],
+        answer: 0,
+        reason: "The chapter states that changes to hardware, software and business processes should be managed through a process requiring proper approval and testing before implementation. Change management is included among general IT controls."
+      },
+      {
+        question: "The transferred administrator's continuing update access should be examined primarily through:",
+        options: [
+          "Review of HVAC temperature records",
+          "Review of user access provisioning, role changes and periodic access rights review",
+          "Review of fire evacuation routes only",
+          "Review of printed report layout only"
+        ],
+        answer: 1,
+        reason: "The chapter explains that user access needs may change after transfers, promotions or rotations and that periodic access reviews should identify inconsistencies between a user's current role and granted privileges."
+      },
+      {
+        question: "The unexplained gaps in event logs make which audit procedure especially relevant?",
+        options: [
+          "Check only the office perimeter fence",
+          "Replace log review with a verbal assurance",
+          "Determine what events are logged, whether logs can be altered or interrupted, and how they are reviewed and retained",
+          "Remove all logging functionality"
+        ],
+        answer: 2,
+        reason: "The chapter directs auditors to examine what events access logs record, whether logs can be modified or destroyed, how they are reviewed, who reviews them and whether they are retained or backed up. Gaps require investigation rather than assumption."
+      },
+      {
+        question: "Which pairing most accurately classifies the two controls described in the payroll application?",
+        options: [
+          "Mandatory-field validation: input control; restriction of sensitive reports to authorised recipients: output control",
+          "Mandatory-field validation: physical access control; report restriction: environmental control",
+          "Mandatory-field validation: output control; report restriction: input control",
+          "Both controls are exclusively environmental controls"
+        ],
+        answer: 0,
+        reason: "The chapter identifies validation of entered data as an input control. It describes output controls as ensuring that reports and other outputs are delivered securely and appropriately to authorised users."
+      },
+      {
+        question: "Why is the existence of an information security policy and a backup procedure not, by itself, sufficient evidence that the related controls operated effectively?",
+        options: [
+          "The auditor must also obtain evidence of implementation and operation, such as change approvals, access reviews, log monitoring and restoration tests",
+          "Policies and backup procedures are never relevant to information systems controls",
+          "A policy automatically prevents every user from making unauthorised changes",
+          "The existence of a policy removes the need to examine event logs"
+        ],
+        answer: 0,
+        reason: "Chapter 8's audit guidance focuses on inspecting whether controls are in place and operating, including access reviews, monitoring and backup/recovery tests. A written policy or procedure alone does not establish that the control operated effectively throughout the relevant period."
+      }
+    ]
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_1",
+    case_chapter: "chapter8",
+    question: "According to the chapter, how is a control defined?",
+    options: [
+      "A report prepared only after an audit is completed",
+      "Policies, procedures, practices and organisational structure designed to provide reasonable assurance that business objectives are achieved and undesired events are prevented, detected and corrected",
+      "A computer program used exclusively to process financial transactions",
+      "A method of eliminating every business risk without considering cost"
+    ],
+    answer: 1,
+    reason: "The chapter defines control as policies, procedures, practices and organisational structure designed to provide reasonable assurance that business objectives are achieved and undesired events are prevented, detected and corrected."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_2",
+    case_chapter: "chapter8",
+    question: "Which of the following is identified in the chapter as a main objective of information controls?",
+    options: [
+      "Allowing unrestricted access to all information resources",
+      "Eliminating the need for organisational policies",
+      "Safeguarding assets and maintaining data integrity",
+      "Ensuring that all information is stored only on paper"
+    ],
+    answer: 2,
+    reason: "The chapter identifies safeguarding assets, maintaining data integrity, effectiveness in achieving organisational objectives and efficient consumption of resources as main objectives of information controls."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_3",
+    case_chapter: "chapter8",
+    question: "Controls designed to prevent errors, omissions or security incidents before they occur are known as:",
+    options: [
+      "Preventive controls",
+      "Detective controls",
+      "Corrective controls",
+      "Output controls"
+    ],
+    answer: 0,
+    reason: "Preventive controls are designed to prevent errors, omissions, security incidents or malicious acts from occurring and are proactive in nature."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_4",
+    case_chapter: "chapter8",
+    question: "Which of the following is an example of a detective control given in the chapter?",
+    options: [
+      "Training an employee before assigning duties",
+      "Installing a firewall to restrict unauthorised traffic",
+      "Issuing instructions for emergency procedures",
+      "Reconciling bank records and performing cash counts"
+    ],
+    answer: 3,
+    reason: "The chapter lists cash counts and bank reconciliation among examples of detective controls, which identify errors or incidents that have already occurred."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_5",
+    case_chapter: "chapter8",
+    question: "A control that provides a remedy after an error or incident has been detected is classified as:",
+    options: [
+      "Directive control",
+      "Corrective control",
+      "Physical access control",
+      "Environmental control"
+    ],
+    answer: 1,
+    reason: "Corrective controls are designed to provide remedies for problems discovered by detective controls, minimise the impact of threats and correct errors or incidents."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_6",
+    case_chapter: "chapter8",
+    question: "Which statement best describes directive controls?",
+    options: [
+      "They give formal directions or instructions to employees to help ensure that identified risks are managed",
+      "They identify only errors that have already occurred",
+      "They are limited to protecting hardware from water damage",
+      "They are used exclusively to validate data entered into an application"
+    ],
+    answer: 0,
+    reason: "Directive controls provide formal directions to staff, such as instructions, training, documented procedures and internal circulars, to help ensure that identified risks are managed."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_7",
+    case_chapter: "chapter8",
+    question: "UPS units, fire extinguishers, smoke detectors and air-conditioning facilities are examples of:",
+    options: [
+      "Logical access controls",
+      "Output controls",
+      "Environmental controls",
+      "Database controls"
+    ],
+    answer: 2,
+    reason: "Environmental controls address exposures affecting the IT environment, including electrical power, fire, temperature, humidity and other physical conditions."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_8",
+    case_chapter: "chapter8",
+    question: "Which of the following is an example of a physical access control?",
+    options: [
+      "Encrypting a message transmitted over a network",
+      "Validating a mandatory field in an application",
+      "Reviewing database concurrency controls",
+      "Using electronic door locks and controlled visitor logging"
+    ],
+    answer: 3,
+    reason: "The chapter describes physical access controls as measures protecting facilities and resources, including electronic door locks, visitor logs, security guards and CCTV monitoring."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_9",
+    case_chapter: "chapter8",
+    question: "What is the primary purpose of logical access controls?",
+    options: [
+      "To determine who or what may access a system resource and which actions are permitted",
+      "To prevent all physical movement within an office building",
+      "To maintain fire extinguishers and emergency exits",
+      "To ensure that printed reports use a uniform layout"
+    ],
+    answer: 0,
+    reason: "Logical access controls are system-based mechanisms that designate who or what may access a specific resource and the types of transactions or functions permitted."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_10",
+    case_chapter: "chapter8",
+    question: "Which principle should guide the allocation of user access privileges according to the chapter?",
+    options: [
+      "Every user should receive administrator privileges",
+      "Access privileges should be aligned with job requirements and kept minimal in relation to the user's job function",
+      "Users should retain all access rights after changing roles",
+      "Access rights should be granted without approval"
+    ],
+    answer: 1,
+    reason: "The chapter states that access privileges should be aligned with job requirements and responsibilities and should be minimal with respect to the user's job function."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_11",
+    case_chapter: "chapter8",
+    question: "A firewall is described in the chapter as a system that:",
+    options: [
+      "Controls the physical entry of visitors into a server room",
+      "Restores a damaged database from backup",
+      "Enforces access control between two networks and allows only authorised traffic to pass",
+      "Checks whether mandatory fields have been entered on an application screen"
+    ],
+    answer: 2,
+    reason: "The chapter defines a firewall as a system that enforces access control between two networks and permits only authorised traffic between the organisation and external networks."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_12",
+    case_chapter: "chapter8",
+    question: "The process of encrypting data and messages transmitted over a computer network is known as:",
+    options: [
+      "Visitor logging",
+      "Terminal timeout",
+      "Database definition control",
+      "Network encryption"
+    ],
+    answer: 3,
+    reason: "The chapter defines network encryption as the process of encrypting data and messages communicated over a computer network by converting data into a secret code."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_13",
+    case_chapter: "chapter8",
+    question: "Which of the following is a responsibility of top management under the Management Control Framework?",
+    options: [
+      "Framing high-level IT policies, procedures and standards and ensuring alignment with strategic business objectives",
+      "Personally entering every transaction into each application",
+      "Maintaining every employee's password on a public noticeboard",
+      "Performing only physical inspections of water detectors"
+    ],
+    answer: 0,
+    reason: "The chapter states that top management establishes high-level IT policies, procedures and standards and is responsible for ensuring that information systems support the organisation's strategic business objectives."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_14",
+    case_chapter: "chapter8",
+    question: "Which management control function is primarily responsible for analysing, designing, building, implementing, altering and maintaining information systems?",
+    options: [
+      "Quality Assurance management controls",
+      "Systems development management controls",
+      "Physical access controls",
+      "Output controls"
+    ],
+    answer: 1,
+    reason: "Systems development management controls cover functions associated with analysing, designing, building, altering, implementing and maintaining information systems."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_15",
+    case_chapter: "chapter8",
+    question: "The main objective of application controls is to help ensure that data remains:",
+    options: [
+      "Accessible to every person without restriction",
+      "Unchanged even when authorised updates are required",
+      "Complete, accurate and valid at all levels, including input, updation and storage",
+      "Available only in printed form"
+    ],
+    answer: 2,
+    reason: "The chapter states that application controls aim to ensure that data remains complete, accurate and valid at all levels, including input, updation and storage."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_16",
+    case_chapter: "chapter8",
+    question: "Which application control is intended to validate the completeness, accuracy, reasonableness and integrity of data entered into an application system?",
+    options: [
+      "Output control",
+      "Environmental control",
+      "Physical access control",
+      "Input control"
+    ],
+    answer: 3,
+    reason: "Input controls are designed to validate application input for authorisation, reasonableness, completeness, accuracy and integrity before the data is processed."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_17",
+    case_chapter: "chapter8",
+    question: "Which of the following best describes processing controls?",
+    options: [
+      "Controls relating exclusively to visitors entering a restricted facility",
+      "Controls over computing, sorting, classifying and summarising data",
+      "Controls that deal only with fire alarms and extinguishers",
+      "Controls used only to distribute printed reports"
+    ],
+    answer: 1,
+    reason: "The chapter describes the processing subsystem as responsible for computing, sorting, classifying and summarising data and identifies related processor, memory and application-software controls."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_18",
+    case_chapter: "chapter8",
+    question: "Which controls help prevent integrity violations when multiple programs have concurrent access to database data?",
+    options: [
+      "Concurrency controls",
+      "Environmental controls",
+      "Visitor logging controls",
+      "Fire evacuation controls"
+    ],
+    answer: 0,
+    reason: "The chapter explains that database controls include concurrency controls to address situations in which multiple programs access data at the same time and may create data-integrity problems."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_19",
+    case_chapter: "chapter8",
+    question: "Which statement best describes output controls?",
+    options: [
+      "They establish the roles of senior management in IT planning only",
+      "They control the physical entry of visitors into computer rooms",
+      "They help ensure that information delivered to users is presented, formatted and delivered consistently and securely",
+      "They are limited to encrypting data stored in a database"
+    ],
+    answer: 2,
+    reason: "The chapter states that output controls ensure data delivered to users is presented, formatted and delivered in a consistent and secure manner, including controls over report production and distribution."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_20",
+    case_chapter: "chapter8",
+    question: "When inspecting environmental controls, which activity is specifically relevant to an IS auditor?",
+    options: [
+      "Granting every employee unrestricted access to the server room",
+      "Removing the organisation's emergency evacuation procedures",
+      "Assuming equipment is effective merely because it has been installed",
+      "Checking whether power-conditioning and backup-power equipment is tested and maintained and whether the work is performed by qualified personnel"
+    ],
+    answer: 3,
+    reason: "The chapter directs the IS auditor to assess the use, inspection, testing and maintenance of power-conditioning and backup-power equipment, including whether qualified personnel perform the work."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_21",
+    case_chapter: "chapter8",
+    question: "Which practice is consistent with the chapter's guidance on user password responsibilities?",
+    options: [
+      "Use a strong password and never share it with another person",
+      "Write the password on the desk for convenient access",
+      "Share the password with colleagues who perform similar duties",
+      "Leave the password visible whenever the computer is unattended"
+    ],
+    answer: 0,
+    reason: "The chapter states that users should use strong passwords, should never share them, and should not write passwords on paper or a desk. Users are responsible for keeping their passwords secure."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_22",
+    case_chapter: "chapter8",
+    question: "How does a call-back device help restrict network access, according to the chapter?",
+    options: [
+      "It grants access to every caller after the first connection attempt",
+      "It permits access only after a visitor signs the physical entry register",
+      "After the user enters a password, the system disconnects and, if the caller is authorised, calls back the caller's number to establish a new connection",
+      "It encrypts printed reports after they have been distributed"
+    ],
+    answer: 2,
+    reason: "The chapter explains that a call-back device asks the user to enter a password and then breaks the connection. If the caller is authorised, the device calls the caller's number to establish a new connection, helping limit access to authorised terminals or telephone numbers."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_23",
+    case_chapter: "chapter8",
+    question: "Which information should be recorded in an application system's transaction log when access is attempted?",
+    options: [
+      "Only the employee's department name",
+      "Only the number of reports printed that day",
+      "Only the name of the system administrator",
+      "The user ID, access time, terminal location and originating IP address"
+    ],
+    answer: 3,
+    reason: "The chapter states that incoming and outgoing requests, including attempted access, should be recorded. The log should include the user ID, time of access, terminal location and IP address from which the request originated."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_24",
+    case_chapter: "chapter8",
+    question: "Which combination of measures is specifically identified in the chapter for protecting information accessed through portable computers and remote working arrangements?",
+    options: [
+      "Disabling authentication and storing data without protection",
+      "Using visitor logs instead of computer access controls",
+      "Relying only on a printed copy of the information",
+      "Encrypting information, using suitable access identification and implementing a VPN for secure remote data sharing"
+    ],
+    answer: 3,
+    reason: "The chapter identifies encryption and access identification such as fingerprints, eye-iris recognition and smart cards as security features for mobile systems. It also recommends a VPN for sharing data with employees or vendors working from home."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_25",
+    case_chapter: "chapter8",
+    question: "According to the chapter, how should incidents arising from failures of IT controls be handled?",
+    options: [
+      "They should be responded to and managed in accordance with predefined policies and procedures",
+      "They should be ignored if the system continues to operate",
+      "They should be recorded only in the physical visitor register",
+      "They should be handled without reference to established procedures"
+    ],
+    answer: 0,
+    reason: "The chapter's discussion of general IT controls states that incidents arising from failures of IT controls need to be appropriately responded to and managed in accordance with predefined policies and procedures."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_26",
+    case_chapter: "chapter8",
+    question: "Why should an organisation regularly review Service Level Agreements (SLAs) with vendors?",
+    options: [
+      "To replace all user access controls",
+      "To ensure that the vendor's services are delivered according to specified performance parameters",
+      "To ensure that all database users receive administrator privileges",
+      "To eliminate the need to monitor outsourced operations"
+    ],
+    answer: 1,
+    reason: "The chapter identifies regular review of Service Level Agreements with vendors as a general IT control to ensure that services are delivered in accordance with specified performance parameters."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_27",
+    case_chapter: "chapter8",
+    question: "What is the purpose of inference controls within the Application Control Framework?",
+    options: [
+      "To control the physical entry of visitors into the computer room",
+      "To manage the registration of new operating-system users",
+      "To prevent compromise of a statistical database",
+      "To provide backup power during an electrical failure"
+    ],
+    answer: 2,
+    reason: "The chapter's description of output controls identifies inference controls as measures intended to prevent compromise of a statistical database."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_28",
+    case_chapter: "chapter8",
+    question: "Within Data Resource Management Controls, what is the purpose of existence controls?",
+    options: [
+      "To determine which visitors may enter a restricted area",
+      "To format reports before they are distributed",
+      "To control the speed at which data travels over a network",
+      "To ensure the existence of the database after data loss"
+    ],
+    answer: 3,
+    reason: "The Management Control Framework illustration identifies existence controls as controls intended to ensure the existence of the database after data loss."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_29",
+    case_chapter: "chapter8",
+    question: "Which activity is associated with file library and documentation/program library functions under Operations Management Controls?",
+    options: [
+      "Managing storage media and ensuring documentation is securely stored, up to date and adequately backed up",
+      "Granting unrestricted access to all application reports",
+      "Approving every business strategy independently of IT management",
+      "Replacing all operating-system access controls with physical locks"
+    ],
+    answer: 0,
+    reason: "The chapter's Management Control Framework describes operations management as including file-library management of storage media and ensuring that documentation and program libraries are securely stored, up to date and adequately backed up."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch8_30",
+    case_chapter: "chapter8",
+    question: "Which activities are included in online output production and distribution controls?",
+    options: [
+      "Only registering users and allocating their initial passwords",
+      "Establishing output at source and controlling its distribution, communication, receipt, viewing, retention and destruction",
+      "Only detecting fire and water exposure in the data centre",
+      "Only defining database fields before application development"
+    ],
+    answer: 1,
+    reason: "The chapter explains that online output production and distribution controls deal with establishing output at source and controlling its distribution, communication, receipt, viewing, retention and destruction."
+  },
+  // MEDIUM — 10 MCQs
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch8_31",
+    case_chapter: "chapter8",
+    question: "During an IS audit, the auditor finds that a data centre has a UPS and fire-suppression equipment, but maintenance and testing records are incomplete. Which audit approach is most appropriate according to the chapter?",
+    options: [
+      "Assume the controls are effective because the equipment is installed",
+      "Determine whether the equipment is inspected, tested and maintained by qualified personnel, and review relevant records",
+      "Review only the application's input validation rules",
+      "Replace physical inspection with management's verbal assurance"
+    ],
+    answer: 1,
+    reason: "The chapter instructs the IS auditor to inspect environmental controls and determine whether power-conditioning and backup-power equipment is used, inspected, tested and maintained, including whether qualified personnel perform the work."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch8_32",
+    case_chapter: "chapter8",
+    question: "An IS auditor reviews a data centre's building plans, risk assessment, fencing, surveillance and key-card issue records. These procedures primarily form part of the inspection of:",
+    options: [
+      "Processing controls",
+      "Output controls",
+      "Physical access controls",
+      "Database concurrency controls"
+    ],
+    answer: 2,
+    reason: "The chapter's physical access audit guidance includes risk assessment, review of security and building documents, physical barriers, surveillance, guards and key-card systems."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch8_33",
+    case_chapter: "chapter8",
+    question: "Top management prepares an information systems plan appropriate to the organisation and establishes high-level IT policies. Under the Management Control Framework, preparing the plan and policies is most directly associated with which management function?",
+    options: [
+      "Planning",
+      "Output distribution",
+      "Database updating",
+      "Environmental inspection"
+    ],
+    answer: 0,
+    reason: "The chapter's audit guidance for top management controls asks whether management has formulated a high-quality information systems plan and policies appropriate to the scale of the organisation. This relates to the planning function."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch8_34",
+    case_chapter: "chapter8",
+    question: "When inspecting programming management controls, which procedure is specifically relevant to evaluating whether programs are adequately tested?",
+    options: [
+      "Check whether all physical entry points are locked",
+      "Verify that passwords are displayed openly to users",
+      "Confirm that only the data centre's HVAC system is reviewed",
+      "Use interviews, observations and documentation to assess testing, including integration testing and whole-of-program tests for material programs"
+    ],
+    answer: 3,
+    reason: "The chapter states that auditors may use interviews, observations and documentation to evaluate testing. It emphasises integration testing and ensuring that whole-of-program tests have been undertaken for material programs and are well designed and executed."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch8_35",
+    case_chapter: "chapter8",
+    question: "An application accepts a postal PIN code only when it contains six numeric digits and rejects invalid entries. Which audit procedure is most directly relevant to this control?",
+    options: [
+      "Review the physical perimeter fencing around the office",
+      "Examine data-entry screens and validation rules, including whether invalid data is automatically corrected or rejected as intended",
+      "Review only the financial viability of outsourced vendors",
+      "Check whether the building has a visitor reception desk"
+    ],
+    answer: 1,
+    reason: "The chapter directs the auditor to examine application data-entry screens and validation rules, including auto-correct or rejection options. It gives a six-digit numeric PIN-code field as an example."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch8_36",
+    case_chapter: "chapter8",
+    question: "A company restricts sensitive reports to authorised employees and directs printed reports through a controlled distribution process. Which audit focus best aligns with the chapter's output-control guidance?",
+    options: [
+      "Review only whether users have strong passwords",
+      "Check only whether the database has a real-time replica",
+      "Determine which reports are sensitive, who is authorised to execute them, and whether report collection, printing and distribution are adequately controlled",
+      "Review only the location of water detectors"
+    ],
+    answer: 2,
+    reason: "The chapter instructs auditors to identify sensitive report programs and authorised users and to review report collection, distribution and printing controls, including action privileges and the handling of printed output."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch8_37",
+    case_chapter: "chapter8",
+    question: "Which statement correctly describes the Confidentiality, Integrity and Availability (CIA) objectives identified under general IT controls?",
+    options: [
+      "Confidentiality restricts information to persons entitled to see it; integrity prevents unauthorised alteration; availability ensures information is available when required",
+      "Confidentiality means every employee can access all information; integrity means data is never updated; availability means data is printed daily",
+      "Confidentiality concerns fire prevention only; integrity concerns physical locks only; availability concerns visitor logs only",
+      "The three terms refer exclusively to the design of printed reports"
+    ],
+    answer: 0,
+    reason: "The chapter defines confidentiality as protecting critical information so it is available only to persons entitled to see it, integrity as preventing unauthorised alterations, and availability as ensuring information is available to users when required."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch8_38",
+    case_chapter: "chapter8",
+    question: "An auditor evaluates whether an organisation's IT continuity plan is operational and tested, aligns with the overall business continuity plan, and supports the availability of IT services during a major disruption. This work primarily relates to inspection of:",
+    options: [
+      "Input coding controls only",
+      "Physical visitor logging only",
+      "Output formatting controls only",
+      "Security management controls and Business Continuity Plan (BCP) controls"
+    ],
+    answer: 3,
+    reason: "The chapter states that security management auditors should evaluate BCP controls, including whether an operational and tested IT continuity plan aligns with overall business continuity and related business requirements."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch8_39",
+    case_chapter: "chapter8",
+    question: "An organisation outsources certain IT operations. Which procedure is specifically included in the chapter's guidance for auditing Operations Management Controls?",
+    options: [
+      "Allow the vendor to operate without any monitoring",
+      "Evaluate the reliability of outsourcing vendor controls and whether management monitors compliance with the outsourcing contract",
+      "Review only whether the office has a fire alarm",
+      "Replace service-level monitoring with a visitor register"
+    ],
+    answer: 1,
+    reason: "The chapter indicates that auditors may review the reliability of outsourcing vendor controls, whether operations management monitors compliance with outsourcing contracts, and whether the financial viability of vendors is assessed regularly."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch8_40",
+    case_chapter: "chapter8",
+    question: "During an audit of Data Resource Management Controls, which activity is consistent with the chapter's recommended procedures?",
+    options: [
+      "Check whether the visitor reception desk is staffed",
+      "Inspect only the colour of database reports",
+      "Determine the controls used to maintain data integrity and assess how the Data Administrator and Database Administrator manage the database environment",
+      "Assume database access and update controls operate effectively without testing"
+    ],
+    answer: 2,
+    reason: "The chapter states that auditors should determine the controls exercised to maintain data integrity, may use test data to assess access and update controls, and may interview the Data Administrator and Database Administrator about monitoring the database environment."
+  },
+
+  // HARD — 10 MCQs
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch8_41",
+    case_chapter: "chapter8",
+    question: "An audit identifies a dormant administrator account, a shared account used by several technicians, incomplete access logs and no documented review of terminated employees' access. Which audit response most comprehensively addresses the weaknesses described in the chapter?",
+    options: [
+      "Inspect only the organisation's output report formats",
+      "Verify only that the information security policy exists",
+      "Review user access controls, shared and dormant accounts, termination procedures, access-log completeness, log review and retention arrangements",
+      "Inspect only the UPS maintenance schedule"
+    ],
+    answer: 2,
+    reason: "The chapter's logical access audit guidance includes authentication, access violations, dormant and shared accounts, system-administrator logs, employee terminations, access removal, and examination of what is recorded, reviewed, retained or backed up in access logs."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch8_42",
+    case_chapter: "chapter8",
+    question: "A payroll application validates employee data, processes transactions, updates a shared database and generates confidential reports. Which mapping of controls to the Application Control Framework is most accurate?",
+    options: [
+      "Data validation—input controls; transaction computation—processing controls; concurrent database updates—database controls; secure report delivery—output controls",
+      "Data validation—environmental controls; transaction computation—physical access controls; database updates—visitor controls; report delivery—fire controls",
+      "Every activity is a physical access control because the application runs on a computer",
+      "Data validation—output controls; transaction computation—boundary controls; database updates—environmental controls; report delivery—processing controls"
+    ],
+    answer: 0,
+    reason: "Chapter 8 distinguishes input controls for validating entered data, processing controls for computing and manipulating data, database controls for database integrity and concurrent access, and output controls for consistent and secure delivery of information."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch8_43",
+    case_chapter: "chapter8",
+    question: "A wide area network has incomplete downtime records, an untested backup communication line and an outdated diagram of network-node connections. Which combination of audit work best addresses these concerns?",
+    options: [
+      "Review only user-password length and masking",
+      "Inspect only the organisation's visitor badges and man-trap",
+      "Review the font and page layout of printed reports",
+      "Examine downtime and transmission evidence, verify backup-line availability and switching tests, and assess the logical arrangement and connectivity of network nodes"
+    ],
+    answer: 3,
+    reason: "The chapter recommends reviewing downtime records to assess accurate and complete data transmission, checking alternate communication lines and periodic switching, and assessing topological controls over the arrangement and connectivity of network nodes."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch8_44",
+    case_chapter: "chapter8",
+    question: "An auditor assessing boundary controls must evaluate how authentic users are linked to authorised resources. Which set of audit procedures best matches the chapter's guidance?",
+    options: [
+      "Check fire drills, water detectors and temperature records only",
+      "Review the access-control matrix and privilege access management, assess firewall and network architecture rules, and examine cryptographic key-management arrangements",
+      "Review only database backup frequency without considering access",
+      "Check only whether staff have completed general induction training"
+    ],
+    answer: 1,
+    reason: "The chapter's boundary-control audit guidance includes checking Privileged Access Management (PAM), reviewing the access-control matrix, assessing firewall and network architecture rules, and examining how cryptographic keys are generated, distributed and installed."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch8_45",
+    case_chapter: "chapter8",
+    question: "A long-running application job fails after processing a substantial portion of a batch. The restart facility begins the job from the beginning, even though earlier processing was accurate and complete. Which control weakness is most directly indicated?",
+    options: [
+      "Failure of physical visitor logging",
+      "Failure of topological controls over network nodes",
+      "Inadequate checkpoint-and-restart controls within processing controls",
+      "Failure of environmental controls for pollution damage"
+    ],
+    answer: 2,
+    reason: "The chapter explains that checkpoint-and-restart controls should enable recovery from the point of failure and restart from the point where processing was accurate and complete, rather than restarting from scratch."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch8_46",
+    case_chapter: "chapter8",
+    question: "An organisation detects unauthorised software on its network, removes it, restores affected systems and revises instructions so employees know how to respond to similar incidents. Which classification best distinguishes the principal control purposes?",
+    options: [
+      "Detection and removal are both exclusively environmental controls",
+      "The actions are all output controls because system information may be affected",
+      "The response is only a physical access control because the network uses hardware",
+      "Identifying the incident is detective; removing unauthorised software and restoring systems are corrective; revised instructions are directive"
+    ],
+    answer: 3,
+    reason: "The chapter defines detective controls as identifying incidents that have occurred, corrective controls as providing remedies and recovery, and directive controls as giving formal directions and instructions to employees."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch8_47",
+    case_chapter: "chapter8",
+    question: "An auditor reviews whether material programs have undergone well-designed whole-of-program tests, whether integration testing is adequate, and whether maintenance needs are reported and monitored in a controlled manner. Which management-control area is being examined most directly?",
+    options: [
+      "Programming Management Controls",
+      "Environmental Controls",
+      "Physical Access Controls",
+      "Output Distribution Controls"
+    ],
+    answer: 0,
+    reason: "The chapter's programming management audit guidance covers planning, design, coding, testing, operation and maintenance. It specifically discusses integration testing, whole-of-program tests for material programs, and timely reporting and monitoring of maintenance needs."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch8_48",
+    case_chapter: "chapter8",
+    question: "A database is replicated at a disaster recovery site, but restoration tests are not evidenced and backup privacy has not been evaluated. Which audit conclusion is most appropriate based on the chapter?",
+    options: [
+      "A replica alone proves that complete recovery controls are effective",
+      "The auditor should assess whether restoration is authentic, accurate, complete and timely, examine DR-site controls and evaluate data privacy during backup and recovery",
+      "Only physical fencing should be reviewed because a DR site exists",
+      "The organisation can discontinue its backup and recovery strategy"
+    ],
+    answer: 1,
+    reason: "The chapter directs auditors to check whether a damaged or destroyed database can be restored in an authentic, accurate, complete and timely way, review Disaster Recovery site controls and real-time replication, and evaluate privacy during backup and recovery."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch8_49",
+    case_chapter: "chapter8",
+    question: "A finance employee is hired into a sensitive role without the prescribed background investigation, can create vendor records and prepare payments, and exploits a cheque-approval threshold by splitting payments. Which conclusion is most consistent with the chapter's ABC Multispecialty Hospital illustration?",
+    options: [
+      "The incident is solely an environmental exposure and does not concern internal controls over finance",
+      "The presence of a financial accounting system eliminates the possibility of fraud",
+      "Weak preventive safeguards and payment controls may be exploited, while management overrides of established procedures can increase risk",
+      "The only relevant response is to improve the format of output reports"
+    ],
+    answer: 2,
+    reason: "The hospital illustration demonstrates how weak hiring safeguards and weaknesses in cash-disbursement procedures can be exploited. It also highlights that management may override policies and procedures and that the resulting risks must be understood."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch8_50",
+    case_chapter: "chapter8",
+    question: "An IS auditor is assigned a comprehensive review of an organisation's internet presence, including domain names, online sales sites, social networking services and technical information available through search engines. Which audit activity most closely matches the chapter's terminology?",
+    options: [
+      "A database existence-control test",
+      "An output inference-control test",
+      "An environmental-control inspection",
+      "An Internet Points of Presence audit"
+    ],
+    answer: 3,
+    reason: "The chapter states that a comprehensive review of an organisation's systems and network should include an Internet Points of Presence audit to discover technical information available about the organisation through search engines, social networking and online sales sites, domain names and related sources."
+  }
 
 ]
