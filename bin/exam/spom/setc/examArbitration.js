@@ -327,7 +327,7 @@ function showResult(score, totalPossibleMarks, percentage, grade, correctCount, 
 
     let html = `
         <div class="social-updates-box">
-            <p>For more updates, follow us on:</p>
+            <p>No need to follow us. Just drop by Calcium Notes whenever you need the latest updates!</p>
             <div class="social-btn-group">
                 <a href="https://www.instagram.com/calciumnotes" class="social-btn instagram-btn" target="_blank">
                     Instagram
