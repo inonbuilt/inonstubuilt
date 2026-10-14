@@ -15263,6 +15263,2620 @@ const caseStudies = [
     ],
     answer: 3,
     reason: "The chapter states that a comprehensive review of an organisation's systems and network should include an Internet Points of Presence audit to discover technical information available about the organisation through search engines, social networking and online sales sites, domain names and related sources."
+  },
+  // Chapter9
+  {
+    case_id: "ecosys_ch9_CS01",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Orchid Services uses an information system to maintain customer records, process service requests and prepare reports for management. Employees follow documented procedures and use computers, software and communication facilities to enter, store, process and transmit information. An Information Systems Auditor reviews whether the organisation's hardware, software, data and other system assets are protected, whether the information is complete and accurate, whether reports meet users' needs, and whether the system uses resources efficiently.</p>
+    `,
+    questions: [
+      {
+        question: "Which combination best describes an Information System?",
+        options: [
+          "Hardware and software only",
+          "People, process and technology",
+          "Communication equipment only",
+          "Reports and printed documents only"
+        ],
+        answer: 1,
+        reason: "The chapter describes an Information System as comprising people, process and technology. Information Technology is the component that includes hardware, software, communication and other components used to generate, process and transfer data or information."
+      },
+      {
+        question: "Which of the following belongs to the IT component of an Information System?",
+        options: [
+          "Only the organisation's business objectives",
+          "Only the employees who approve transactions",
+          "Hardware, software and communication components",
+          "Only the written procedure manual"
+        ],
+        answer: 2,
+        reason: "The chapter identifies hardware, software, communication and other components required to generate, process and transfer data or information as part of Information Technology."
+      },
+      {
+        question: "Protecting hardware, software, data files and system documentation from unauthorised access relates primarily to which Information Systems Auditing objective?",
+        options: [
+          "Improved safeguarding of assets",
+          "Improved system efficiency only",
+          "Improved system effectiveness only",
+          "Preparation of a marketing plan"
+        ],
+        answer: 0,
+        reason: "Improved safeguarding of assets means protecting Information System assets, including hardware, software, facilities, people, data files, system documentation and information, from unauthorised access."
+      },
+      {
+        question: "Which set contains attributes of data integrity identified in the chapter?",
+        options: [
+          "Speed, colour, size and price",
+          "Profitability, market share, growth and competition",
+          "Availability, advertising, branding and sales",
+          "Completeness, reliability, transparency and accuracy"
+        ],
+        answer: 3,
+        reason: "The chapter identifies completeness, reliability, transparency and accuracy as attributes of data whose integrity must be maintained throughout the data life cycle."
+      },
+      {
+        question: "An information system achieves its required objectives while using minimum resources. This best illustrates:",
+        options: [
+          "System effectiveness, regardless of resource use",
+          "System efficiency",
+          "Asset disposal",
+          "Auditing around the computer"
+        ],
+        answer: 1,
+        reason: "An efficient Information System uses minimum resources to achieve its required objectives and seeks optimal utilisation of resources such as machine time, peripherals, system software and labour."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS02",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>During an Information Systems Audit at BluePeak Ltd., the auditor first agrees with management on the areas to be examined and identifies matters outside the agreed scope. The auditor then prepares a detailed work plan, interviews employees, reviews documents and observes processes. The evidence is examined to reach conclusions, the observations are discussed with the auditee and reported to management, and the auditor records matters for future audits and follows up on agreed actions.</p>
+    `,
+    questions: [
+      {
+        question: "Determining the significant areas of focus and areas explicitly outside the audit scope is part of:",
+        options: [
+          "Closure",
+          "Reporting",
+          "Scoping and pre-audit survey",
+          "Analysis"
+        ],
+        answer: 2,
+        reason: "During scoping and the pre-audit survey, auditors determine significant areas of focus and areas that are explicitly out of scope based on the scope agreed with management."
+      },
+      {
+        question: "Preparing a detailed audit work plan or risk-control matrix belongs to which stage?",
+        options: [
+          "Planning and preparation",
+          "Fieldwork",
+          "Closure",
+          "Reporting"
+        ],
+        answer: 0,
+        reason: "At the planning and preparation stage, the agreed scope is broken down into greater detail, usually involving an audit work plan or risk-control matrix."
+      },
+      {
+        question: "Interviewing employees, reviewing documents and observing processes are activities performed during:",
+        options: [
+          "Scoping only",
+          "Reporting only",
+          "Closure only",
+          "Fieldwork"
+        ],
+        answer: 3,
+        reason: "Fieldwork involves gathering evidence by interviewing staff and managers, reviewing documents and observing processes."
+      },
+      {
+        question: "Sorting and reviewing the evidence gathered and reaching conclusions describes:",
+        options: [
+          "Planning and preparation",
+          "Analysis",
+          "Scoping",
+          "Closure"
+        ],
+        answer: 1,
+        reason: "The analysis stage involves sorting out and reviewing the evidence gathered earlier and arriving at conclusions from it."
+      },
+      {
+        question: "Recording notes for future audits and following up on actions promised by management are activities of:",
+        options: [
+          "Fieldwork",
+          "Analysis",
+          "Closure",
+          "Scoping"
+        ],
+        answer: 2,
+        reason: "Closure involves preparing notes for future audits and following up with management to complete actions promised after previous audits."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS03",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>At Cedar Retail, a simple application processes customer orders. For one part of the audit, the auditor compares the original order documents with the output produced by the application without examining how the program processes the inputs. For another part, the auditor uses test techniques to evaluate how the application and its embedded controls respond to different transactions, including transactions that may contain errors.</p>
+    `,
+    questions: [
+      {
+        question: "Comparing source documents with application output without examining the processing logic is known as:",
+        options: [
+          "Auditing through the computer",
+          "Parallel simulation",
+          "Continuous and Intermittent Simulation",
+          "Auditing around the computer"
+        ],
+        answer: 3,
+        reason: "In auditing around the computer, the auditor obtains source documents for transactions and reconciles them with output results without considering how inputs are processed to produce the outputs."
+      },
+      {
+        question: "Auditing around the computer is also described in the chapter as the:",
+        options: [
+          "Blackbox auditing approach",
+          "Whitebox auditing approach",
+          "Embedded audit approach",
+          "Master-file approach"
+        ],
+        answer: 0,
+        reason: "The chapter describes auditing around the computer as the Blackbox auditing approach."
+      },
+      {
+        question: "Which approach evaluates how the application and its embedded controls respond to different transactions?",
+        options: [
+          "Auditing around the computer only",
+          "Auditing through the computer",
+          "Manual reconciliation only",
+          "Closure of the audit"
+        ],
+        answer: 1,
+        reason: "Auditing through the computer includes techniques to evaluate how applications and their embedded controls respond to different types of transactions."
+      },
+      {
+        question: "Auditing through the computer is also described in the chapter as the:",
+        options: [
+          "Blackbox auditing approach",
+          "Document-only approach",
+          "Whitebox auditing approach",
+          "Pre-audit survey approach"
+        ],
+        answer: 2,
+        reason: "The chapter describes auditing through the computer as the Whitebox auditing approach."
+      },
+      {
+        question: "What is a major weakness of auditing around the computer, as described in the chapter?",
+        options: [
+          "It always requires changes to the application program.",
+          "It cannot use source documents.",
+          "It necessarily disrupts production processing.",
+          "It does not verify whether the application's program logic is correct."
+        ],
+        answer: 3,
+        reason: "The chapter states that a major weakness of auditing around the computer is that it does not verify or validate whether the program logic of the application being tested is correct."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS04",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Maple Insurance processes a large volume of claims through a computerized application. The auditor uses computer-based audit procedures to analyse claim data, select records for examination and identify claims with service dates after the related policy termination dates. The audit team also uses spreadsheet analysis and a tool for organising audit evidence and working papers.</p>
+    `,
+    questions: [
+      {
+        question: "The practice of using computers to automate IT audit processes is known as:",
+        options: [
+          "Computer Assisted Audit Techniques (CAATs)",
+          "Auditing around the computer",
+          "The HR cycle",
+          "The fixed assets process"
+        ],
+        answer: 0,
+        reason: "The chapter defines Computer Assisted Audit Techniques (CAATs) as the practice of using computers to automate IT audit processes."
+      },
+      {
+        question: "Which approach would help the auditor identify every claim with a service date after the policy termination date in a large data set?",
+        options: [
+          "Reviewing only the organisation chart",
+          "Using CAATs to select and analyse the relevant claims",
+          "Checking only a printed summary without analysing claim records",
+          "Removing all claim data before the audit"
+        ],
+        answer: 1,
+        reason: "The chapter's insurance example explains that CAATs can select every claim with a date of service after the policy termination date and identify the claims paid and the amount incorrectly paid."
+      },
+      {
+        question: "Which pair is identified in the chapter as common CAAT software?",
+        options: [
+          "PowerPoint and a web browser",
+          "A payroll master and a customer master",
+          "Audit Command Language (ACL) and Interactive Data Extraction and Analysis (IDEA)",
+          "A purchase requisition and a delivery note"
+        ],
+        answer: 2,
+        reason: "The chapter identifies Audit Command Language (ACL) and Interactive Data Extraction and Analysis (IDEA) as common CAATs used for selecting samples, analysing data files, identifying trends and evaluating data integrity."
+      },
+      {
+        question: "According to the chapter, Microsoft Excel can be used to:",
+        options: [
+          "Authorise every supplier automatically",
+          "Replace the need for audit evidence",
+          "Create fictitious entities inside every application",
+          "Analyse data, generate samples, create graphs and perform trend analysis"
+        ],
+        answer: 3,
+        reason: "The chapter states that Microsoft Excel can analyse data, generate samples, create graphs and perform regression or trend analysis."
+      },
+      {
+        question: "Which tool is described as facilitating documentation of evidence, organisation of working papers and creation of audit reports?",
+        options: [
+          "SAP Audit Management",
+          "A customer master file",
+          "A purchase order",
+          "A DBMS transaction by itself"
+        ],
+        answer: 0,
+        reason: "SAP Audit Management facilitates documentation of evidence, organisation of working papers and creation of audit reports, and also provides analytical capabilities."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS05",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>At Pine Investments, an Information Systems Auditor needs to check the accuracy and completeness of transaction processing throughout the financial period. The auditor arranges for a fictitious customer entity to be created within the accounting application. Test transactions for this entity are processed along with normal production transactions, and the results are compared with predetermined results. The auditor also arranges for the test entries to be reversed at defined cut-off dates so that they do not remain in financial reports.</p>
+    `,
+    questions: [
+      {
+        question: "Which audit technique involves creating a dummy or fictitious entity in the application system files?",
+        options: [
+          "Parallel simulation",
+          "Integrated Test Facility (ITF)",
+          "Transaction tagging",
+          "Auditing around the computer"
+        ],
+        answer: 1,
+        reason: "Integrated Test Facility (ITF) involves creating a dummy entity in the application system files and processing audit test data against that entity."
+      },
+      {
+        question: "Under ITF, how are the test transactions processed in the described arrangement?",
+        options: [
+          "Only after the production application has been permanently removed",
+          "Only as paper documents without application processing",
+          "Together with normal production data as input to the application system",
+          "Only in the General Ledger after all reports are issued"
+        ],
+        answer: 2,
+        reason: "Under ITF, test data for the fictitious entity are included with normal production data used as input to the application system."
+      },
+      {
+        question: "Why should the effects of ITF transactions be removed or reversed at defined cut-off dates?",
+        options: [
+          "To ensure that test entries are not included in financial reports",
+          "To stop auditors from reviewing the results",
+          "To convert test data into supplier master data",
+          "To remove all actual production transactions"
+        ],
+        answer: 0,
+        reason: "The chapter's ITF example explains that test entries should be reversed at defined cut-off dates to ensure that they are not included in financial reports."
+      },
+      {
+        question: "Which purpose of ITF is most directly illustrated by comparing the test results with predetermined results?",
+        options: [
+          "Recruiting new employees",
+          "Preparing a customer marketing plan",
+          "Maintaining fixed asset locations only",
+          "Verifying authenticity, accuracy and completeness of processing"
+        ],
+        answer: 3,
+        reason: "The chapter explains that ITF processes audit test data against a dummy entity to verify authenticity, accuracy and completeness."
+      },
+      {
+        question: "Which consideration is specifically identified as necessary when implementing ITF?",
+        options: [
+          "All test entries must be treated as real customer transactions permanently.",
+          "Controls should identify and remove the effects of test transactions.",
+          "Auditors must avoid testing the application system.",
+          "The organisation should stop recording production data."
+        ],
+        answer: 1,
+        reason: "The chapter notes that controls must be adequately designed and implemented to identify and remove the effects of ITF test transactions, as test processing can risk disrupting actual data."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS06",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>For an audit of a credit-card application, the auditor prepares a set of test transactions that includes valid account numbers as well as invalid, suspended and deleted account numbers. The transactions are processed using a copy of the application supplied by the organisation. The auditor compares the actual responses with the expected acceptance or rejection of each transaction and investigates any difference.</p>
+    `,
+    questions: [
+      {
+        question: "Which audit technique uses test transactions processed by an existing application?",
+        options: [
+          "Test Data",
+          "System Control Audit Review File (SCARF) only",
+          "The closure stage",
+          "The fixed assets register"
+        ],
+        answer: 0,
+        reason: "The Test Data technique involves providing test transactions to a system for processing by existing applications."
+      },
+      {
+        question: "Why should test data include both valid and invalid transactions?",
+        options: [
+          "To avoid testing how the application responds to errors",
+          "To ensure that every transaction is accepted",
+          "To test how the application processes correct and erroneous input",
+          "To replace the organisation's production data permanently"
+        ],
+        answer: 2,
+        reason: "The chapter states that both valid and invalid transactions should be included so the auditor can test how the system processes correct and erroneous transaction input."
+      },
+      {
+        question: "Which example from the case is suitable for testing invalid transaction input?",
+        options: [
+          "A valid account with an expected valid transaction only",
+          "An invalid, suspended or deleted account number",
+          "A report containing only employee names",
+          "A fixed asset's physical location"
+        ],
+        answer: 1,
+        reason: "The chapter gives invalid account numbers and accounts that are suspended or deleted as examples relevant to testing consumer credit-card transactions."
+      },
+      {
+        question: "According to the chapter, why is the risk of disrupting client data minimal in the described Test Data method?",
+        options: [
+          "Because test transactions are never processed by software",
+          "Because production controls are removed",
+          "Because the auditor ignores the transaction results",
+          "Because a copy of the application is used"
+        ],
+        answer: 3,
+        reason: "The chapter states that the risk of disrupting the organisation's or client's data is minimal because a copy of the application is used."
+      },
+      {
+        question: "Which limitation of Test Data is identified in the chapter?",
+        options: [
+          "It may be difficult to determine whether the copy of the application provided is exact.",
+          "It cannot include invalid transactions.",
+          "It always requires a fictitious entity in live production files.",
+          "It requires the auditor to maintain two identical sets of programs in every case."
+        ],
+        answer: 0,
+        reason: "The chapter notes that the copy of the application provided by the organisation or client may not be exact, which can reduce the reliability of the test method."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS07",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>At Willow Manufacturing, an auditor wants to test the processing of supplier invoices without intervening in the client's normal processing. The auditor keeps a copy of the production program and updates the copy when changes are made to the production program. The same invoice inputs are run through the client's production program and the auditor's separate program, and the two sets of results are compared to identify differences.</p>
+    `,
+    questions: [
+      {
+        question: "Which technique is described in the case?",
+        options: [
+          "Integrated Test Facility (ITF)",
+          "Parallel Simulation",
+          "Transaction tagging",
+          "Auditing around the computer"
+        ],
+        answer: 1,
+        reason: "Parallel simulation involves maintaining two presumably identical sets of programs and comparing the independent results produced using the same inputs."
+      },
+      {
+        question: "What is compared in Parallel Simulation?",
+        options: [
+          "Employee applications and customer complaints only",
+          "Supplier addresses and asset locations only",
+          "Results from the client's production program and the auditor's separate program using the same inputs",
+          "The audit report and the organisation chart only"
+        ],
+        answer: 2,
+        reason: "For audit purposes, the actual and simulated applications use the same inputs and generate independent results that can be compared to validate internal processing."
+      },
+      {
+        question: "Why does the auditor update the separate program when the production program changes?",
+        options: [
+          "To keep the two sets of programs aligned for comparison",
+          "To ensure the auditor's program always uses different inputs",
+          "To remove the need to compare results",
+          "To convert the auditor's copy into a supplier master file"
+        ],
+        answer: 0,
+        reason: "The chapter explains that when changes are made to production programs, auditors make the same updates to their copies so that results from the two sets can be compared."
+      },
+      {
+        question: "Which advantage of Parallel Simulation is identified in the chapter?",
+        options: [
+          "It necessarily changes the client's production data.",
+          "It eliminates the need for any audit expertise.",
+          "It can only be used for employee onboarding.",
+          "The risk of disrupting client data is minimal because simulation does not affect processing."
+        ],
+        answer: 3,
+        reason: "The chapter identifies minimal risk of disrupting client data as an advantage of Parallel Simulation because the simulation does not affect processing."
+      },
+      {
+        question: "If the production program and the simulation produce different results for the same inputs, what is the appropriate audit response according to the chapter's example?",
+        options: [
+          "Assume that both programs are correct without further work.",
+          "Perform additional test procedures to identify the impact of the exception.",
+          "Delete all source documents immediately.",
+          "Stop recording all supplier invoices permanently."
+        ],
+        answer: 1,
+        reason: "The chapter's invoice-processing example states that if there are exceptions in the comparison, additional test procedures should be performed to identify their impact."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS08",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Summit Finance processes thousands of sales transactions each day. The auditor arranges for a programmed audit module to be added to the application so that transactions exceeding a specified amount are flagged and their authorisation details are recorded. The system also has a real-time audit routine that collects transactions matching predefined patterns, such as a withdrawal from an inactive account or a transaction that deviates from company policy, into a special audit file for later review.</p>
+    `,
+    questions: [
+      {
+        question: "The programmed audit module added to the application is an example of:",
+        options: [
+          "Auditing around the computer",
+          "An Embedded Audit Module (EAM)",
+          "The HR cycle",
+          "A purchase requisition"
+        ],
+        answer: 1,
+        reason: "An Embedded Audit Module (EAM) is a programmed audit module added to the application system."
+      },
+      {
+        question: "The EAM flags sales transactions exceeding a specified amount mainly so that the auditor can:",
+        options: [
+          "Remove every sales transaction from the system",
+          "Avoid examining authorisation details",
+          "Review flagged transactions and check whether they were properly authorised",
+          "Replace the customer master file with a test entity"
+        ],
+        answer: 2,
+        reason: "The chapter's EAM example describes flagging sales transactions above a threshold, recording whether they were appropriately authorised and enabling auditors to review those details."
+      },
+      {
+        question: "Which technique collects selected transactions that match predetermined patterns into a special audit file called the SCARF master file?",
+        options: [
+          "System Control Audit Review File (SCARF)",
+          "Auditing around the computer",
+          "Test Data only",
+          "The planning stage"
+        ],
+        answer: 0,
+        reason: "SCARF is a real-time technique that embeds audit software modules within a host application and writes selected information to a special audit file called the SCARF master file."
+      },
+      {
+        question: "Which item is a type of information that SCARF may collect?",
+        options: [
+          "Only employee career goals",
+          "Only marketing slogans",
+          "Only the physical colour of computer equipment",
+          "Application system errors or policy and procedural variances"
+        ],
+        answer: 3,
+        reason: "The chapter states that SCARF may collect application system errors, policy and procedural variances, system exceptions, statistical samples, snapshots and extended records, data profiling and performance information."
+      },
+      {
+        question: "What is an important consideration when using EAM or SCARF routines embedded in an application?",
+        options: [
+          "Embedded routines should never be reviewed by auditors.",
+          "Controls should be designed to prevent or identify disruption and remove effects of embedded routines where applicable.",
+          "All flagged transactions must automatically be treated as fraudulent.",
+          "The application must stop processing every transaction permanently."
+        ],
+        answer: 1,
+        reason: "The chapter warns that embedded audit routines can disrupt client data and states that adequate controls are needed to ensure that the routines do not affect actual data and that their effects can be identified and removed where required. A flagged transaction requires review; it is not automatically proof of fraud."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS09",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>At RiverBank, the auditor wants to understand how selected transactions move through a computerized application. One technique places a special designation on a selected transaction and follows it from input, transmission, processing and storage through to output. The application also uses a database management system (DBMS), and a separate audit technique simulates the application's instruction execution while a transaction is being processed. Any discrepancies identified by that simulation are written to an exception log file.</p>
+    `,
+    questions: [
+      {
+        question: "Which technique follows a selected transaction from input through processing and storage to output?",
+        options: [
+          "Transaction tagging",
+          "Auditing around the computer",
+          "The scoping stage",
+          "The HR cycle"
+        ],
+        answer: 0,
+        reason: "Transaction tagging follows a selected transaction through the application from input, transmission, processing and storage to output to verify the integrity, validity and reliability of the application."
+      },
+      {
+        question: "Which technique simulates the instruction execution of an application while it is processing a transaction and is a variation of SCARF?",
+        options: [
+          "Integrated Test Facility (ITF)",
+          "Parallel simulation only",
+          "Continuous and Intermittent Simulation (CIS)",
+          "Auditing around the computer"
+        ],
+        answer: 2,
+        reason: "Continuous and Intermittent Simulation (CIS) is described as a variation of the SCARF continuous audit technique and simulates instruction execution while the application processes a transaction."
+      },
+      {
+        question: "In the chapter's description, CIS receives transaction and database-access information through which component?",
+        options: [
+          "A printed employee handbook",
+          "The Database Management System (DBMS)",
+          "The supplier invoice alone",
+          "The fixed asset register only"
+        ],
+        answer: 1,
+        reason: "The chapter explains that CIS is used when the application uses a DBMS; the simulation is notified about each transaction entered into the application and accesses to the database by the DBMS."
+      },
+      {
+        question: "Where are discrepancies identified by CIS written?",
+        options: [
+          "Only in the employee master file",
+          "Only on the supplier purchase order",
+          "Only in the customer marketing database",
+          "In an exception log file"
+        ],
+        answer: 3,
+        reason: "The chapter's CIS example states that exceptions identified by CIS are written to an exception log file."
+      },
+      {
+        question: "Which advantage of CIS is identified in the chapter?",
+        options: [
+          "It provides online auditing capability without requiring modifications to the application system.",
+          "It requires every transaction to be manually re-entered.",
+          "It removes the need for auditors to understand computer systems.",
+          "It is effective only when the audit trail is always clearly visible and error costs are low."
+        ],
+        answer: 0,
+        reason: "The chapter identifies as an advantage that CIS does not require modifications to the application system and yet provides online auditing capability."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS10",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Evergreen Enterprises uses integrated modules for purchasing, sales, inventory, human resources, fixed assets and the General Ledger. Supplier master changes are restricted to authorised users, and purchase orders are placed only for approved requisitions. Customer orders are processed within approved credit limits and all goods shipped are invoiced. Inventory is reduced only when goods are shipped against approved customer orders. The HR team immediately removes an employee's system access when the employee leaves. Fixed asset records include the asset's location, quantity, condition, maintenance and depreciation status. The General Ledger records financial transactions and produces financial reports. The bank's Core Banking System (CBS) supports Current and Savings Accounts (CASA), with segregation of duties between the person initiating and the person authorising a transaction.</p>
+    `,
+    questions: [
+      {
+        question: "Supplier master data is an example of which control level in a computerised system?",
+        options: [
+          "Configuration level only",
+          "Masters level",
+          "Fieldwork level",
+          "Closure level"
+        ],
+        answer: 1,
+        reason: "Masters are key business data that provide context for business transactions and operations. The chapter lists the supplier or vendor master as an example of master data and states that access to maintain vendor masters should be restricted to authorised users."
+      },
+      {
+        question: "Which pair of control objectives is consistent with the Procure to Pay (P2P) and Order to Cash (O2C) processes?",
+        options: [
+          "P2P: purchase orders are placed only for approved requisitions; O2C: orders are processed only within approved customer credit limits.",
+          "P2P: purchase orders may be placed without approval; O2C: customer credit limits need not be considered.",
+          "P2P: supplier master changes are unrestricted; O2C: all customer orders are accepted automatically.",
+          "P2P: payments are made for goods not received; O2C: shipped goods do not need to be invoiced."
+        ],
+        answer: 0,
+        reason: "The chapter states that P2P purchase orders should be placed only for approved requisitions and that O2C orders should be processed only within approved customer credit limits."
+      },
+      {
+        question: "When should inventory be reduced for a shipment, according to the chapter's inventory control objectives?",
+        options: [
+          "Whenever a customer record is created",
+          "As soon as a purchase requisition is drafted, regardless of shipment",
+          "Only when goods are shipped with approved customer orders",
+          "Whenever an employee leaves the company"
+        ],
+        answer: 2,
+        reason: "The inventory control objective states that inventory is reduced only when goods are shipped and based on approved customer orders."
+      },
+      {
+        question: "Which pair of statements correctly describes the Human Resources and Fixed Assets processes in the case?",
+        options: [
+          "Former employees should retain system access; fixed asset records do not need to be updated.",
+          "Employees need access beyond their job requirements; fixed asset location is never recorded.",
+          "System access should be removed only during the next annual audit; depreciation status is irrelevant to fixed asset records.",
+          "System access should be removed when employees leave; fixed asset records track details such as location, quantity, condition, maintenance and depreciation status."
+        ],
+        answer: 3,
+        reason: "The chapter's HR control objective is to remove system access immediately when employees leave. The fixed assets process tracks assets and maintains details including location, quantity, condition, maintenance and depreciation status."
+      },
+      {
+        question: "Which combined statement is consistent with the General Ledger and CASA descriptions in the chapter?",
+        options: [
+          "The General Ledger is used only for employee onboarding, and CASA transactions do not need authorisation.",
+          "The General Ledger records financial transactions to generate financial reports, and segregation of duties should be maintained between the initiator and authoriser of a CASA transaction.",
+          "The General Ledger is limited to recording stock movements, and one person must always initiate and authorise a CASA transaction.",
+          "The General Ledger replaces the Core Banking System, and CASA refers to fixed asset depreciation."
+        ],
+        answer: 1,
+        reason: "The chapter describes the General Ledger as recording financial transactions to generate reports such as the balance sheet and profit and loss account. For CASA transactions in CBS, segregation of duties should be maintained between the initiator and authoriser."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch9_CS11",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Sunrise Technologies maintains an Information System consisting of employees, business processes and technology. Its IT infrastructure includes hardware, software and communication components used to generate, process and transfer information. During an audit, the auditor explains that the Information System is broader than Information Technology because it includes people and processes along with technology.</p>
+    `,
+    questions: [
+      {
+        question: "Which of the following correctly describes the components of an Information System?",
+        options: [
+          "Hardware and software only",
+          "People, process and technology",
+          "Input data and output data only",
+          "Audit reports and financial statements only"
+        ],
+        answer: 1,
+        reason: "The chapter states that an Information System comprises people, process and technology. Information Technology includes hardware, software, communication and other components required to generate, process and transfer data or information."
+      },
+      {
+        question: "Which of the following is an example of an Information Technology component?",
+        options: [
+          "Management decision-making responsibility",
+          "Employee recruitment policy",
+          "Hardware and software",
+          "Organisational strategic planning"
+        ],
+        answer: 2,
+        reason: "Hardware and software are components of Information Technology, whereas people and processes are also components of the broader Information System."
+      },
+      {
+        question: "Why does the auditor need to understand the distinction between Information Systems and Information Technology?",
+        options: [
+          "Because an Information System includes people and processes in addition to technology",
+          "Because Information Systems consist exclusively of computer hardware",
+          "Because business processes are unrelated to Information Systems",
+          "Because Information Technology excludes software"
+        ],
+        answer: 0,
+        reason: "The chapter distinguishes Information Systems, which comprise people, process and technology, from the IT components used to generate, process and transfer information."
+      },
+      {
+        question: "Which activity is associated with Information Technology as illustrated in the chapter?",
+        options: [
+          "Employee career planning only",
+          "Strategic planning only",
+          "Recruitment and onboarding only",
+          "Storing and processing data"
+        ],
+        answer: 3,
+        reason: "The chapter illustrates Information Technology activities such as inputting, storing, processing, transmitting and outputting data."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS12",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Meadow Finance Ltd. has experienced data loss in its computerised accounting system. Management realises that inaccurate or unavailable data may affect business decisions and cause substantial losses. The company also recognises the need to protect its hardware, software and skilled personnel from loss or disruption. It therefore decides to strengthen controls and arrange an Information Systems Audit.</p>
+    `,
+    questions: [
+      {
+        question: "Which factor influencing control and audit is directly illustrated by the loss of accounting data?",
+        options: [
+          "Controlled evolution of computer use",
+          "Organisational costs of data loss",
+          "Maintenance of privacy only",
+          "Cost of computer abuse only"
+        ],
+        answer: 1,
+        reason: "The chapter identifies organisational costs of data loss as a factor influencing control and audit. Data is a critical organisational resource, and its loss can cause substantial losses."
+      },
+      {
+        question: "Which Information Systems Auditing objective is directly concerned with protecting hardware, software, data files and system documentation from unauthorised access?",
+        options: [
+          "Improved system efficiency",
+          "Improved system effectiveness",
+          "Improved safeguarding of assets",
+          "Improved data output"
+        ],
+        answer: 2,
+        reason: "Improved safeguarding of assets requires protecting Information System assets, including hardware, software, facilities, people, data files, system documentation and information, from unauthorised access."
+      },
+      {
+        question: "Management relies on MIS reports to make decisions. Which factor explains the importance of reliable and integral data for such decisions?",
+        options: [
+          "Cost of incorrect decision-making",
+          "Maintenance of privacy only",
+          "Controlled evolution of computer use only",
+          "Cost of hardware installation only"
+        ],
+        answer: 0,
+        reason: "The chapter explains that high-quality decisions depend on the reliability and integrity of data. Incorrect data at any level can adversely affect the organisation and its stakeholders."
+      },
+      {
+        question: "Which of the following may result from the loss of skilled computer professionals or corruption of software?",
+        options: [
+          "Automatic improvement in system effectiveness",
+          "Elimination of the need for internal controls",
+          "Guaranteed accuracy of business information",
+          "Disruption of business operations"
+        ],
+        answer: 3,
+        reason: "The chapter explains that the loss of hardware, destruction or corruption of software, and non-availability of skilled computer professionals may lead to disruption of business operations."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS13",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Harbour Services appoints an auditor to examine its Information System. The auditor reviews whether the system protects organisational assets, maintains data integrity, meets users' information requirements and uses available computing resources efficiently. The auditor also considers whether system-generated information supports decision-making at different levels of management.</p>
+    `,
+    questions: [
+      {
+        question: "Which Information Systems Auditing objective concerns the completeness, reliability, transparency and accuracy of data?",
+        options: [
+          "Improved system efficiency",
+          "Improved data integrity",
+          "Improved safeguarding of assets only",
+          "Improved system installation"
+        ],
+        answer: 1,
+        reason: "The chapter identifies completeness, reliability, transparency and accuracy as attributes of data integrity. Data integrity must be maintained throughout the data life cycle."
+      },
+      {
+        question: "The auditor evaluates whether reports provide information that facilitates users' decision-making. Which objective is being assessed?",
+        options: [
+          "Improved system effectiveness",
+          "Improved system efficiency only",
+          "Improved safeguarding of hardware only",
+          "Improved data storage capacity"
+        ],
+        answer: 0,
+        reason: "System effectiveness concerns whether the system reports information in a way that facilitates users in decision-making and meets user needs."
+      },
+      {
+        question: "The company aims to achieve its objectives using minimum system resources. Which Information Systems Auditing objective is relevant?",
+        options: [
+          "Improved data integrity only",
+          "Improved safeguarding of assets only",
+          "Improved system efficiency",
+          "Improved system effectiveness only"
+        ],
+        answer: 2,
+        reason: "An efficient Information System uses minimum resources to achieve its required objectives. Resources such as machine time, peripherals, system software and labour should be optimally utilised."
+      },
+      {
+        question: "Which statement best describes the purpose of Information Systems Auditing?",
+        options: [
+          "To examine only the physical appearance of computer facilities",
+          "To replace all management responsibilities",
+          "To assess only the purchase price of hardware",
+          "To address asset safeguarding, data integrity, and management objectives relating to effectiveness and efficiency"
+        ],
+        answer: 3,
+        reason: "The chapter defines Information Systems Auditing in terms of external auditor objectives focusing on asset safeguarding and data integrity, and internal auditor management objectives that include effectiveness and efficiency."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS14",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Greenfield Ltd. is planning an Information Systems Audit of its network and business applications. The audit team first identifies the significant areas to be examined and the areas excluded from the agreed scope. It then prepares a detailed audit work plan, collects evidence by interviewing employees and reviewing documents, analyses the evidence, communicates observations to management and follows up on agreed actions.</p>
+    `,
+    questions: [
+      {
+        question: "At which stage does the audit team identify significant areas of focus and areas explicitly outside the agreed scope?",
+        options: [
+          "Closure",
+          "Reporting",
+          "Scoping and pre-audit survey",
+          "Analysis"
+        ],
+        answer: 2,
+        reason: "During scoping and the pre-audit survey, auditors determine the significant areas of focus and areas explicitly out of scope based on the scope definitions agreed with management."
+      },
+      {
+        question: "The audit team prepares a detailed audit work plan and risk-control matrix. Which stage does this represent?",
+        options: [
+          "Planning and preparation",
+          "Fieldwork",
+          "Reporting",
+          "Closure"
+        ],
+        answer: 0,
+        reason: "During planning and preparation, the audit scope is broken down into greater detail, usually involving an audit work plan or risk-control matrix."
+      },
+      {
+        question: "The auditor interviews staff, reviews documents and observes processes to gather evidence. Which stage is being performed?",
+        options: [
+          "Scoping",
+          "Closure",
+          "Reporting",
+          "Fieldwork"
+        ],
+        answer: 3,
+        reason: "Fieldwork involves gathering evidence by interviewing staff and managers, reviewing documents and observing processes."
+      },
+      {
+        question: "After the audit, the team prepares notes for future audits and follows up on actions promised by management. Which stage is this?",
+        options: [
+          "Analysis",
+          "Closure",
+          "Planning and preparation",
+          "Fieldwork"
+        ],
+        answer: 1,
+        reason: "Closure involves preparing notes for future audits and following up with management to complete actions promised after previous audits."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS15",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Silverline Insurance asks its auditor to examine claims paid after the relevant insurance policies have been terminated. Instead of relying only on a small sample of claims, the auditor uses Computer Assisted Audit Techniques (CAATs) to identify every claim with a service date after the policy termination date and determine the amounts incorrectly paid.</p>
+    `,
+    questions: [
+      {
+        question: "Which technique is used by the auditor to automate the examination of computerised data?",
+        options: [
+          "Manual observation only",
+          "Computer Assisted Audit Techniques (CAATs)",
+          "Employee orientation",
+          "Physical inventory counting only"
+        ],
+        answer: 1,
+        reason: "CAATs are the practice of using computers to automate IT audit processes. They can be used to analyse data and evaluate data integrity."
+      },
+      {
+        question: "What is a key advantage of using CAATs in the insurance claims example?",
+        options: [
+          "The auditor can identify every claim meeting the specified date criterion",
+          "The auditor must examine only a small random sample",
+          "The auditor no longer needs to analyse data",
+          "The auditor can automatically assume all claims are correct"
+        ],
+        answer: 0,
+        reason: "The chapter explains that CAATs allow the auditor to select every claim with a service date after policy termination, identify claims paid and determine the exact amount incorrectly paid."
+      },
+      {
+        question: "Which of the following is a common use of CAATs?",
+        options: [
+          "Replacing all application controls without testing",
+          "Avoiding the examination of transaction records",
+          "Selecting samples and analysing data files",
+          "Eliminating the need to understand the audit process"
+        ],
+        answer: 2,
+        reason: "Common CAATs such as ACL and IDEA can be used to select samples, analyse data-file characteristics, identify trends and evaluate data integrity."
+      },
+      {
+        question: "If adequate application controls are identified, what does the chapter state that the IT auditor should do?",
+        options: [
+          "Stop the audit without testing",
+          "Replace all controls with manual records",
+          "Assume that every transaction is correct",
+          "Test the design and effectiveness of those controls"
+        ],
+        answer: 3,
+        reason: "The chapter states that when adequate application controls are identified, the IT auditor performs tests to verify their design and effectiveness. When controls are inadequate, extensive testing may be performed to verify data integrity."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS16",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Oakridge Ltd. appoints an Information Systems Auditor to test its accounting application. The auditor creates a fictitious customer within the application and processes test transactions for that customer together with normal production transactions. The auditor compares the results with predetermined results and ensures that the test entries are reversed at defined cut-off dates so that they are excluded from financial reports.</p>
+    `,
+    questions: [
+      {
+        question: "Which audit technique is illustrated by creating a fictitious customer within the regular application and processing test transactions alongside production transactions?",
+        options: [
+          "Transaction tagging",
+          "Integrated Test Facility (ITF)",
+          "Parallel simulation only",
+          "Auditing around the computer"
+        ],
+        answer: 1,
+        reason: "ITF involves creating a dummy entity in the application system files and processing audit test data against that entity together with normal production data."
+      },
+      {
+        question: "Why should the effects of ITF transactions be identified and removed?",
+        options: [
+          "To ensure that test transactions do not affect actual data or financial reports",
+          "To prevent the auditor from comparing results",
+          "To ensure that all dummy transactions become genuine sales",
+          "To eliminate the need for application controls"
+        ],
+        answer: 0,
+        reason: "The chapter states that controls must be adequately designed and implemented to identify and remove the effects of test transactions. Its example requires entries to be reversed at defined cut-off dates so that they are not included in financial reports."
+      },
+      {
+        question: "Which statement is an advantage of ITF mentioned in the chapter?",
+        options: [
+          "It never requires expertise",
+          "It cannot affect actual data under any circumstances",
+          "The facility is designed into the application during system development",
+          "It does not require controls over test transactions"
+        ],
+        answer: 2,
+        reason: "The chapter lists the facility being designed into the application during system development as an advantage of ITF. It also highlights the need for expertise and controls to prevent test transactions from affecting actual data."
+      },
+      {
+        question: "What is the main audit purpose of comparing ITF results with predetermined results?",
+        options: [
+          "To determine the number of employees in the organisation",
+          "To replace all production transactions with dummy entries",
+          "To prepare the employee payroll master file",
+          "To verify the authenticity, accuracy and completeness of processing"
+        ],
+        answer: 3,
+        reason: "ITF processes audit test data against a fictitious entity to verify the authenticity, accuracy and completeness of the application system's processing."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS17",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Riverbank Credit Services asks its auditor to test how its application handles valid and invalid transactions. The auditor prepares test transactions that include valid account numbers, invalid account numbers and accounts that have been suspended or deleted. The auditor processes these transactions using a copy of the application and compares the results with the expected outcomes.</p>
+    `,
+    questions: [
+      {
+        question: "Which audit technique involves providing test transactions to an application for processing?",
+        options: [
+          "Test data",
+          "Closure",
+          "Transaction tagging only",
+          "Auditing around the computer only"
+        ],
+        answer: 0,
+        reason: "The test data technique involves providing test transactions to a system for processing by existing applications."
+      },
+      {
+        question: "Why should both valid and invalid transactions be included in test data?",
+        options: [
+          "To ensure that every transaction is accepted",
+          "To avoid testing the application's processing logic",
+          "To test how the system processes both correct and erroneous transaction inputs",
+          "To replace the need for expected results"
+        ],
+        answer: 2,
+        reason: "The chapter states that both valid and invalid transactions should be included to test how the system processes correct and erroneous transaction input."
+      },
+      {
+        question: "What is one advantage of using test data as described in the chapter?",
+        options: [
+          "The supplied application copy is always guaranteed to be exact",
+          "The risk of disrupting organisational or client data is minimal because a copy of the application is used",
+          "No expected results are required",
+          "The technique always identifies every possible extreme condition"
+        ],
+        answer: 1,
+        reason: "The chapter identifies minimal risk of disrupting organisational or client data as an advantage because a copy of the application is used. However, the auditor may find it difficult to determine whether the supplied copy is exact."
+      },
+      {
+        question: "Which limitation of test data is identified in the chapter?",
+        options: [
+          "It cannot include invalid transactions",
+          "It always changes the production application",
+          "It requires all test transactions to be posted to financial reports",
+          "It may be difficult to determine whether the application copy provided is exact"
+        ],
+        answer: 3,
+        reason: "The chapter states that the organisation or client provides a copy of the application, but it may be difficult to determine whether the copy is exact, reducing the reliability of the test method."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS18",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Meadow Manufacturing wants to verify the processing logic of its invoice application. The auditor maintains a separate copy of the production program and ensures that modifications to the production program are also made to the auditor's copy. Both applications process the same invoice inputs independently, and their outputs are compared to identify exceptions.</p>
+    `,
+    questions: [
+      {
+        question: "Which audit technique is illustrated by maintaining two presumably identical sets of programs and comparing their outputs?",
+        options: [
+          "Integrated Test Facility",
+          "Parallel simulation",
+          "Transaction tagging",
+          "Scoping and pre-audit survey"
+        ],
+        answer: 1,
+        reason: "Parallel simulation involves the separate maintenance of two presumably identical sets of programs. Both applications use the same inputs and generate independent results for comparison."
+      },
+      {
+        question: "Why does the auditor update the separate program when the production program is modified?",
+        options: [
+          "To ensure that the two sets remain comparable for the audit",
+          "To ensure that the auditor's program never processes transactions",
+          "To eliminate the need to compare outputs",
+          "To convert the separate program into a fictitious entity"
+        ],
+        answer: 0,
+        reason: "The chapter states that auditors make the same updates to their copies when changes are made to production programs. Using the same inputs, the results should match if no unauthorised alteration has taken place."
+      },
+      {
+        question: "What should the auditor do if the simulated invoice-processing results differ from the client's system results?",
+        options: [
+          "Assume the differences are always immaterial",
+          "Delete all invoice records",
+          "Perform additional test procedures to identify the impact of the exceptions",
+          "Stop comparing the two sets of results"
+        ],
+        answer: 2,
+        reason: "The chapter's invoice-processing example states that if exceptions arise when simulated results are compared with the client's system, additional test procedures should be performed to identify the impact of the exceptions."
+      },
+      {
+        question: "Which advantage of parallel simulation is identified in the chapter?",
+        options: [
+          "It always requires no technical expertise",
+          "It necessarily modifies the client's production data",
+          "It eliminates all possible system errors",
+          "The risk of disrupting organisational or client data is minimal"
+        ],
+        answer: 3,
+        reason: "The chapter identifies minimal risk of disrupting organisational or client data as an advantage of parallel simulation because simulation does not affect processing."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS19",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Summit Retail processes a large volume of sales transactions. Management wants the auditor to identify sales transactions exceeding ₹10 lakh and verify whether each such transaction was appropriately authorised by a manager. The company adds a programmed audit module to its sales application. The module flags qualifying transactions and records their details for subsequent audit review.</p>
+    `,
+    questions: [
+      {
+        question: "Which audit technique is illustrated by adding a programmed audit module to the sales application?",
+        options: [
+          "Embedded Audit Module (EAM)",
+          "Test data only",
+          "Auditing around the computer",
+          "Manual document review only"
+        ],
+        answer: 0,
+        reason: "An Embedded Audit Module is a programmed audit module added to the application under review. It allows auditors to monitor and collect data for analysis and assess control risks and effectiveness."
+      },
+      {
+        question: "What is the purpose of flagging sales transactions exceeding ₹10 lakh?",
+        options: [
+          "To ensure that every sale is automatically cancelled",
+          "To identify transactions for which managerial authorisation must be checked",
+          "To remove all sales data from the application",
+          "To prevent the preparation of audit logs"
+        ],
+        answer: 1,
+        reason: "The chapter's EAM example describes a module programmed to flag sales transactions over ₹10 lakh and record whether they were appropriately authorised by a manager."
+      },
+      {
+        question: "Which benefit of an Embedded Audit Module is described in the chapter?",
+        options: [
+          "It eliminates the need to protect sensitive transaction data",
+          "It guarantees that processing speed will always increase",
+          "It can help detect errors, fraud or non-compliance more quickly through real-time or near real-time monitoring",
+          "It removes the need for auditors to review flagged transactions"
+        ],
+        answer: 2,
+        reason: "The chapter states that real-time or near real-time monitoring through embedded audit modules can help detect errors, fraud or non-compliance more quickly than traditional audit methods."
+      },
+      {
+        question: "Which consideration is identified in relation to Embedded Audit Modules?",
+        options: [
+          "They can be used only for employee recruitment",
+          "They cannot access transaction information",
+          "They always operate without affecting processing speed",
+          "They need careful management and security because they access sensitive system and transaction data"
+        ],
+        answer: 3,
+        reason: "The chapter states that embedded audit modules need to be carefully managed and secured because they have access to sensitive system and transaction data. Their screening algorithms may also affect processing speed."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS20",
+    difficulty: "Easy",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Horizon Bank uses a Database Management System (DBMS) to process customer transactions. The auditor wants to identify exceptions during transaction processing without modifying the application system. The audit arrangement receives information about transactions and database accesses, simulates the application's processing for selected transactions, compares results and records exceptions in an exception log file.</p>
+    `,
+    questions: [
+      {
+        question: "Which audit technique is described in the case?",
+        options: [
+          "Integrated Test Facility",
+          "Continuous and Intermittent Simulation (CIS)",
+          "Auditing around the computer",
+          "Manual sampling only"
+        ],
+        answer: 1,
+        reason: "CIS is a variation of the SCARF continuous audit technique used to trap exceptions when an application system uses a DBMS. It simulates application instruction execution while a transaction is being processed."
+      },
+      {
+        question: "Which is an advantage of CIS stated in the chapter?",
+        options: [
+          "It does not require modifications to the application system and provides online auditing capability",
+          "It eliminates the need for computer-system knowledge",
+          "It guarantees that every application system is suitable for continuous auditing",
+          "It requires all transactions to be processed manually"
+        ],
+        answer: 0,
+        reason: "The chapter states that CIS does not require modifications to the application system and yet provides an online auditing capability."
+      },
+      {
+        question: "What happens to exceptions identified by CIS?",
+        options: [
+          "They are automatically treated as valid transactions",
+          "They are deleted before the audit review",
+          "They are written to an exception log file",
+          "They are transferred to the employee master file"
+        ],
+        answer: 2,
+        reason: "According to the chapter, exceptions identified by CIS are written to an exception log file. Serious exceptions may prevent the DBMS from executing the update."
+      },
+      {
+        question: "Under which condition are continuous auditing techniques more likely to be effective, according to the chapter?",
+        options: [
+          "When the application system is constantly changing and unstable",
+          "When auditors do not have computer-system knowledge",
+          "When the audit trail is always highly visible and error costs are negligible",
+          "When the application system is relatively stable"
+        ],
+        answer: 3,
+        reason: "The chapter states that continuous audit techniques are unlikely to be effective unless implemented in a relatively stable application system. They are more likely to be used where the audit trail is less visible and the costs of errors and irregularities are high."
+      }
+    ]
+  },
+  // =========================================================
+  // MEDIUM CASE SCENARIOS
+  // =========================================================
+
+  {
+    case_id: "ecosys_ch9_CS21",
+    difficulty: "Medium",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Meridian Manufacturing uses an integrated application system to process purchase orders, record receipts of materials and update supplier balances. During the Information Systems Audit, the auditor observes that the management relies on reports generated by the application system for important decisions. The auditor first identifies the areas to be examined, prepares an audit plan, performs the necessary audit procedures and documents the findings before concluding the audit.</p>
+      <p>The auditor also enquires about network performance monitoring, responsibility for correcting problems, periodic examination of the network and action taken when problems occur.</p>
+    `,
+    questions: [
+      {
+        question_id: "ecosys_ch9_CS21_Q1",
+        difficulty: "Medium",
+        question: "What is the primary purpose of the Information Systems Audit in the given situation?",
+        options: [
+          "To evaluate the capability of the application system, its internal controls and the safeguarding of assets",
+          "To replace the application system with a new system",
+          "To eliminate the need for management reports",
+          "To examine only the physical hardware of the organization"
+        ],
+        answer: 0,
+        reason: "Information Systems Audit evaluates the capability of the application system, the capability of internal controls and the safety of assets controlled by the system."
+      },
+      {
+        question_id: "ecosys_ch9_CS21_Q2",
+        difficulty: "Medium",
+        question: "Which activity should the auditor perform when identifying the areas and scope of the audit?",
+        options: [
+          "Audit closure",
+          "Audit scoping",
+          "Removal of the application system",
+          "Preparation of test transactions only"
+        ],
+        answer: 1,
+        reason: "Audit scoping identifies the areas to be covered by the audit before the detailed audit work is performed."
+      },
+      {
+        question_id: "ecosys_ch9_CS21_Q3",
+        difficulty: "Medium",
+        question: "The auditor wants to determine who monitors network performance and who corrects network problems. These enquiries form part of:",
+        options: [
+          "Evaluating network reliability",
+          "Creating a fictitious branch",
+          "Reversing ITF entries",
+          "Tagging every transaction from input to output"
+        ],
+        answer: 0,
+        reason: "The chapter identifies monitoring performance, correcting problems, periodic examination and actions taken as matters considered when evaluating network reliability."
+      },
+      {
+        question_id: "ecosys_ch9_CS21_Q4",
+        difficulty: "Medium",
+        question: "Why should the auditor consider the reliability and integrity of the data used in management reports?",
+        options: [
+          "Because decisions at different management levels depend on system-generated information",
+          "Because reliable data removes the need for internal controls",
+          "Because system-generated reports cannot affect stakeholders",
+          "Because only operational decisions depend on data"
+        ],
+        answer: 0,
+        reason: "The chapter explains that management decisions rely on system-generated information and that incorrect data can adversely affect the organization and its stakeholders."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS22",
+    difficulty: "Medium",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Northstar Retail wants to evaluate whether its sales application processes transactions correctly. The auditor prepares test transactions containing both valid and invalid inputs. The transactions are processed using a copy of the application. During the review, the auditor notes that the copy may not be an exact representation of the application currently used in production.</p>
+      <p>The auditor intends to use the results to assess whether the application responds correctly to the test inputs.</p>
+    `,
+    questions: [
+      {
+        question_id: "ecosys_ch9_CS22_Q1",
+        difficulty: "Medium",
+        question: "Which Information Technology Tool is being used by the auditor?",
+        options: [
+          "Transaction Tagging",
+          "Test Data",
+          "Continuous and Intermittent Simulation (CIS)",
+          "System Control Audit Review File (SCARF)"
+        ],
+        answer: 1,
+        reason: "The test data approach uses test transactions, including valid and invalid transactions, to test the application's processing."
+      },
+      {
+        question_id: "ecosys_ch9_CS22_Q2",
+        difficulty: "Medium",
+        question: "Why has the auditor included both valid and invalid transactions?",
+        options: [
+          "To test how the application processes correct and erroneous inputs",
+          "To ensure that all transactions are accepted by the application",
+          "To avoid examining application controls",
+          "To replace the need for audit evidence"
+        ],
+        answer: 0,
+        reason: "Test data can be designed with valid and invalid transactions to test the application's response to correct and erroneous inputs."
+      },
+      {
+        question_id: "ecosys_ch9_CS22_Q3",
+        difficulty: "Medium",
+        question: "What limitation should the auditor consider when using a copy of the application?",
+        options: [
+          "A copy may not be an exact representation of the application in use",
+          "Test data cannot include invalid transactions",
+          "Test data can only be used for physical assets",
+          "A copy automatically proves that all production transactions are correct"
+        ],
+        answer: 0,
+        reason: "The chapter identifies the possibility that the copy of the application used for testing may not be an exact copy of the actual application as a limitation."
+      },
+      {
+        question_id: "ecosys_ch9_CS22_Q4",
+        difficulty: "Medium",
+        question: "Which statement best describes the auditor's objective in this case?",
+        options: [
+          "To test the application's response to selected inputs",
+          "To monitor every production transaction through a special audit file",
+          "To simulate the application's instructions whenever the DBMS processes a transaction",
+          "To follow a selected transaction from input through output by adding a transaction tag"
+        ],
+        answer: 0,
+        reason: "The described procedure uses test data to examine how the application processes the selected test inputs."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS23",
+    difficulty: "Medium",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Silverline Services maintains a fictitious branch within its application system for audit testing. The auditor enters selected test transactions for this branch along with normal production transactions. The auditor intends to assess the authenticity, accuracy and completeness of processing without relying solely on transactions selected from the ordinary business population.</p>
+      <p>Before implementing the technique, the auditor determines how the test transactions will be entered and how their effects will be removed so that they do not distort the organization's actual records or reports.</p>
+    `,
+    questions: [
+      {
+        question_id: "ecosys_ch9_CS23_Q1",
+        difficulty: "Medium",
+        question: "Which audit technique is described in the case?",
+        options: [
+          "Integrated Test Facility (ITF)",
+          "Parallel Simulation",
+          "Transaction Tagging",
+          "Test Data using only a separate copy of the application"
+        ],
+        answer: 0,
+        reason: "ITF involves creating a dummy entity in the application system files and processing audit test data against that entity alongside normal production data."
+      },
+      {
+        question_id: "ecosys_ch9_CS23_Q2",
+        difficulty: "Medium",
+        question: "What is the purpose of creating the fictitious branch?",
+        options: [
+          "To provide an entity within the application system for processing audit test transactions",
+          "To replace the organization's actual branches",
+          "To prevent the application from processing normal transactions",
+          "To store only the auditor's final report"
+        ],
+        answer: 0,
+        reason: "The fictitious entity forms part of the application and file structure and accepts or processes test transactions for audit purposes."
+      },
+      {
+        question_id: "ecosys_ch9_CS23_Q3",
+        difficulty: "Medium",
+        question: "Which processing attributes is the auditor primarily seeking to verify through ITF?",
+        options: [
+          "Authenticity, accuracy and completeness",
+          "Confidentiality, recruitment and employee retention",
+          "Hardware cost, software price and network speed",
+          "Only the physical existence of the fictitious branch"
+        ],
+        answer: 0,
+        reason: "The chapter describes ITF as a means of verifying authenticity, accuracy and completeness through processing audit test data against a dummy entity."
+      },
+      {
+        question_id: "ecosys_ch9_CS23_Q4",
+        difficulty: "Medium",
+        question: "Why must the auditor plan how the effects of ITF transactions will be removed?",
+        options: [
+          "To ensure the test transactions do not distort actual records and reporting",
+          "To ensure the fictitious branch becomes a genuine business branch",
+          "To eliminate the need to identify test transactions",
+          "To ensure that normal production transactions are not processed"
+        ],
+        answer: 0,
+        reason: "The chapter states that the auditor must determine the method of entering test data and the methodology for removing the effects of ITF transactions."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS24",
+    difficulty: "Medium",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Orion Components uses a complex application to calculate and record inventory-related amounts. To examine the processing of actual transactions, the auditor develops a separate program that follows the documented processing logic. The auditor runs the same inputs through the client's application and the auditor's program, then compares the two sets of outputs.</p>
+      <p>The auditor updates the separate program when changes are made to the production program and considers whether the simulation can be performed without materially disrupting the client's processing.</p>
+    `,
+    questions: [
+      {
+        question_id: "ecosys_ch9_CS24_Q1",
+        difficulty: "Medium",
+        question: "Which audit technique is being used?",
+        options: [
+          "Parallel Simulation",
+          "Integrated Test Facility",
+          "System Control Audit Review File",
+          "Transaction Tagging"
+        ],
+        answer: 0,
+        reason: "Parallel Simulation involves using a separate program to replicate relevant processing, applying the same inputs and comparing the independent outputs."
+      },
+      {
+        question_id: "ecosys_ch9_CS24_Q2",
+        difficulty: "Medium",
+        question: "Why does the auditor use the same inputs for both programs?",
+        options: [
+          "To compare the independent results generated by the two sets of programs",
+          "To make the auditor's program update the client's production records",
+          "To create a fictitious entity in the production file",
+          "To ensure that no comparison of outputs is necessary"
+        ],
+        answer: 0,
+        reason: "Using the same inputs allows the auditor to compare the results produced by the client's application and the independent simulation."
+      },
+      {
+        question_id: "ecosys_ch9_CS24_Q3",
+        difficulty: "Medium",
+        question: "What should the auditor do when changes or modifications are made to the production programs?",
+        options: [
+          "Make corresponding updates to the auditor's copies",
+          "Stop comparing the outputs",
+          "Replace all actual inputs with fictitious transactions",
+          "Assume that the original simulation remains identical without review"
+        ],
+        answer: 0,
+        reason: "The chapter states that auditors make the same updates to their copies as changes or modifications are made to production programs."
+      },
+      {
+        question_id: "ecosys_ch9_CS24_Q4",
+        difficulty: "Medium",
+        question: "Which is an advantage of Parallel Simulation described in the chapter?",
+        options: [
+          "The risk of disrupting the organization or client data is minimal because the simulation does not affect processing",
+          "It never requires the auditor to understand the application logic",
+          "It automatically corrects all errors in the production program",
+          "It requires all audit transactions to be entered into a fictitious branch"
+        ],
+        answer: 0,
+        reason: "The chapter identifies minimal risk of disruption as an advantage of Parallel Simulation because the simulation does not affect the client's processing."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS25",
+    difficulty: "Medium",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Evergreen Finance wants to trace a selected transaction through its application. The auditor follows the transaction as it passes through input, transmission, processing, storage and output. The purpose is to examine whether the application handles the transaction consistently and whether unusual transactions are dealt with through the appropriate application modules and code.</p>
+      <p>The audit team notes that adding a special designation to the transaction requires technical expertise and that controls are needed to identify and remove the designation after the audit procedure.</p>
+    `,
+    questions: [
+      {
+        question_id: "ecosys_ch9_CS25_Q1",
+        difficulty: "Medium",
+        question: "Which Information Technology Tool is described?",
+        options: [
+          "Transaction Tagging",
+          "Integrated Test Facility",
+          "Test Data",
+          "Parallel Simulation"
+        ],
+        answer: 0,
+        reason: "Transaction Tagging follows a selected transaction through input, transmission, processing, storage and output."
+      },
+      {
+        question_id: "ecosys_ch9_CS25_Q2",
+        difficulty: "Medium",
+        question: "What is the main purpose of following the selected transaction through the application?",
+        options: [
+          "To verify the integrity, validity and reliability of the application",
+          "To create a new production entity",
+          "To replace the application's database",
+          "To avoid examining how the transaction is processed"
+        ],
+        answer: 0,
+        reason: "The chapter identifies verification of the integrity, validity and reliability of the application as the purpose of Transaction Tagging."
+      },
+      {
+        question_id: "ecosys_ch9_CS25_Q3",
+        difficulty: "Medium",
+        question: "Which is an identified disadvantage of Transaction Tagging?",
+        options: [
+          "Expertise is required to add a special designation to the transaction record",
+          "It cannot follow a transaction from beginning to end",
+          "It can only be used with fictitious branches",
+          "It always requires a separate program to replicate the application"
+        ],
+        answer: 0,
+        reason: "The chapter notes that expertise is required to add the special designation or tag to the transaction record."
+      },
+      {
+        question_id: "ecosys_ch9_CS25_Q4",
+        difficulty: "Medium",
+        question: "What control consideration is especially relevant after adding the tag?",
+        options: [
+          "Controls should identify and remove the tag or special designation added to the transaction",
+          "All transactions should permanently retain the audit tag",
+          "The application should stop storing transaction records",
+          "The auditor should delete the normal production data"
+        ],
+        answer: 0,
+        reason: "The chapter states that controls must be adequately designed and implemented to identify and remove the effects of the tag or special designation."
+      }
+    ]
+  },
+
+  // =========================================================
+  // HARD CASE SCENARIOS
+  // =========================================================
+
+  {
+    case_id: "ecosys_ch9_CS26",
+    difficulty: "Hard",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Prudent Life Insurance has identified a risk that funds may be withdrawn shortly after a customer's address is changed. The auditor wants to collect transactions that meet a specific combination of conditions for subsequent review. The organization uses an application system that can record selected transactions in a special audit file while normal processing continues.</p>
+      <p>The auditor establishes the following criteria: (i) the customer's address is changed; and (ii) a withdrawal of funds takes place within seven days of the address change. The auditor also considers the expertise required to embed audit routines and the possibility that such routines could affect actual data.</p>
+    `,
+    questions: [
+      {
+        question_id: "ecosys_ch9_CS26_Q1",
+        difficulty: "Hard",
+        question: "Which technique most directly matches the auditor's objective of collecting transactions that meet predetermined criteria in a special audit file?",
+        options: [
+          "System Control Audit Review File (SCARF)",
+          "Test Data",
+          "Parallel Simulation",
+          "Transaction Tagging"
+        ],
+        answer: 0,
+        reason: "SCARF embeds audit software modules in a host application and collects selected transactions or events that meet predetermined criteria in a special audit file."
+      },
+      {
+        question_id: "ecosys_ch9_CS26_Q2",
+        difficulty: "Hard",
+        question: "Which event should be selected for subsequent review under the criteria established in the case?",
+        options: [
+          "A customer changes the address and withdraws funds within seven days",
+          "A customer changes the address but makes no withdrawal within seven days",
+          "A customer withdraws funds without any change in address",
+          "A customer updates unrelated personal details without a withdrawal"
+        ],
+        answer: 0,
+        reason: "The source example specifies both a change in customer address and a withdrawal of funds within seven days of that change."
+      },
+      {
+        question_id: "ecosys_ch9_CS26_Q3",
+        difficulty: "Hard",
+        question: "Which combination best describes the purpose and a key risk of SCARF in this case?",
+        options: [
+          "Collecting selected transactions for audit review, with a risk that embedded routines may affect actual data",
+          "Comparing a separate program's output with the client's output, with no need to consider program updates",
+          "Processing valid and invalid inputs only on a separate copy, with no need to remove test effects",
+          "Tracing a transaction from input to output without adding any special designation"
+        ],
+        answer: 0,
+        reason: "SCARF collects selected events for review, but the chapter warns that embedding audit routines requires expertise and may create a high risk of disrupting the organization or client data."
+      },
+      {
+        question_id: "ecosys_ch9_CS26_Q4",
+        difficulty: "Hard",
+        question: "Which response best addresses the risk created by the embedded audit routines?",
+        options: [
+          "Design and implement controls to ensure the routines do not affect actual data and to remove their effects",
+          "Allow the routines to alter production data if the selected transaction is unusual",
+          "Avoid reviewing the special audit file after transactions are collected",
+          "Assume that embedding a routine automatically guarantees the validity of every transaction"
+        ],
+        answer: 0,
+        reason: "The chapter emphasizes the need for expertise and adequately designed controls to ensure embedded audit routines do not affect actual data and that their effects can be identified and removed."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS27",
+    difficulty: "Hard",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Atlas Banking uses an application system supported by a Database Management System (DBMS). The auditor wants an online audit technique that can examine transactions as the application processes them. The auditor's objective is to identify exceptions by simulating the application's instruction execution and sharing access to the data and input involved in processing.</p>
+      <p>The organization is reluctant to modify the existing application system. The auditor also recognises that continuous audit techniques require adequate organizational resources, appropriate technical knowledge and experience, and an application environment suitable for their use.</p>
+    `,
+    questions: [
+      {
+        question_id: "ecosys_ch9_CS27_Q1",
+        difficulty: "Hard",
+        question: "Which technique best meets the auditor's requirements?",
+        options: [
+          "Continuous and Intermittent Simulation (CIS)",
+          "Integrated Test Facility (ITF)",
+          "Test Data using a copy of the application",
+          "Transaction Tagging"
+        ],
+        answer: 0,
+        reason: "CIS is a variation of the SCARF continuous audit technique used with a DBMS. It simulates instruction execution while the application processes transactions."
+      },
+      {
+        question_id: "ecosys_ch9_CS27_Q2",
+        difficulty: "Hard",
+        question: "Which feature makes CIS particularly appropriate where the organization does not want changes to its application system?",
+        options: [
+          "It provides online auditing capability without requiring modifications to the application system",
+          "It requires a fictitious branch to be created in the application files",
+          "It relies exclusively on invalid test transactions processed through a copy",
+          "It requires every selected transaction to be permanently tagged"
+        ],
+        answer: 0,
+        reason: "The chapter identifies the ability to provide online auditing without modifying the application system as an advantage of CIS."
+      },
+      {
+        question_id: "ecosys_ch9_CS27_Q3",
+        difficulty: "Hard",
+        question: "Which statement best describes the interaction between the application and the CIS simulation?",
+        options: [
+          "The simulation is notified about transactions entered into the application and DBMS database accesses",
+          "The simulation only reviews transactions after the application has been discontinued",
+          "The simulation replaces the DBMS and becomes the production application",
+          "The simulation receives only fictitious transactions from a separate branch"
+        ],
+        answer: 0,
+        reason: "The source explains that data and input are accessible by and shared with the simulation, which is notified about transactions entered into the application and accesses to the database by the DBMS."
+      },
+      {
+        question_id: "ecosys_ch9_CS27_Q4",
+        difficulty: "Hard",
+        question: "Which consideration is consistent with the limitations of continuous audit techniques described in the chapter?",
+        options: [
+          "The auditor needs adequate organizational resources and relevant computer-system knowledge and experience",
+          "The auditor can use the technique effectively without any technical knowledge",
+          "The technique is always appropriate regardless of the application's stability",
+          "No organizational support is required for development, implementation or maintenance"
+        ],
+        answer: 0,
+        reason: "The chapter states that auditors need organizational resources and appropriate knowledge and experience to develop, implement, operate and maintain continuous audit techniques. It also notes the importance of a relatively stable application system."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS28",
+    difficulty: "Hard",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Vertex Industries uses a high-volume application in which unusual transactions may indicate policy or procedural variances. The auditor proposes an audit routine within the host application to collect application system errors, system exceptions, transactions that deviate from company policy and selected information for subsequent examination.</p>
+      <p>The audit team also considers another technique that simulates the application's instruction execution when transactions are processed in a DBMS environment. Management asks the auditor to distinguish the two techniques and explain their respective purposes.</p>
+    `,
+    questions: [
+      {
+        question_id: "ecosys_ch9_CS28_Q1",
+        difficulty: "Hard",
+        question: "Which technique is primarily described in the first paragraph?",
+        options: [
+          "System Control Audit Review File (SCARF)",
+          "Continuous and Intermittent Simulation (CIS)",
+          "Parallel Simulation",
+          "Test Data"
+        ],
+        answer: 0,
+        reason: "SCARF embeds audit software modules in the host application and records selected transactions and events, including system errors, policy variances and exceptions, in a special audit file."
+      },
+      {
+        question_id: "ecosys_ch9_CS28_Q2",
+        difficulty: "Hard",
+        question: "Which distinction between SCARF and CIS is most consistent with the chapter?",
+        options: [
+          "SCARF collects selected transactions and events in a special audit file, whereas CIS simulates instruction execution while transactions are processed in a DBMS environment",
+          "SCARF uses only a separate copy of the application, whereas CIS creates a fictitious company or branch",
+          "SCARF follows a transaction only from input to output, whereas CIS compares two independent sets of program outputs",
+          "SCARF and CIS are identical techniques and have no distinguishing features"
+        ],
+        answer: 0,
+        reason: "SCARF collects selected transactions or events in a special audit file. CIS is described as simulating application instruction execution during transaction processing where a DBMS is used."
+      },
+      {
+        question_id: "ecosys_ch9_CS28_Q3",
+        difficulty: "Hard",
+        question: "Which item could SCARF collect for subsequent audit review according to the source?",
+        options: [
+          "Application system errors and policy or procedural variances",
+          "Only the auditor's final report",
+          "Only the physical inventory count",
+          "Only transactions that have already been corrected by management"
+        ],
+        answer: 0,
+        reason: "The source lists application system errors, policy and procedural variances, system exceptions, statistical samples, snapshots and extended records, data profiling and performance measurement data among SCARF's collection areas."
+      },
+      {
+        question_id: "ecosys_ch9_CS28_Q4",
+        difficulty: "Hard",
+        question: "Why should the auditor consider implementation controls before embedding SCARF routines?",
+        options: [
+          "The routines require expertise and may disrupt client data if their effects are not controlled",
+          "SCARF cannot collect information about exceptions",
+          "SCARF is designed only for testing invalid inputs on a separate application copy",
+          "SCARF automatically eliminates all policy variances"
+        ],
+        answer: 0,
+        reason: "The chapter identifies the need for expertise, the risk of disruption to client data and the need for controls to identify and remove the effects of embedded audit routines."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS29",
+    difficulty: "Hard",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Summit Trading has a transaction-processing application that management believes is operating correctly. The auditor is concerned that the absence of reported incidents may not establish whether the application's controls are operating as designed. The auditor selects an unusual transaction and considers two approaches: tracing it through the application's input, transmission, processing, storage and output stages; or collecting transactions that meet predetermined exception criteria in a special audit file.</p>
+      <p>The auditor must select the technique that best matches each audit objective and consider the technical and data-disruption risks of implementing it.</p>
+    `,
+    questions: [
+      {
+        question_id: "ecosys_ch9_CS29_Q1",
+        difficulty: "Hard",
+        question: "Which technique is most appropriate when the objective is to follow a selected transaction through the application's stages?",
+        options: [
+          "Transaction Tagging",
+          "System Control Audit Review File (SCARF)",
+          "Integrated Test Facility (ITF)",
+          "Parallel Simulation"
+        ],
+        answer: 0,
+        reason: "Transaction Tagging follows a selected transaction through input, transmission, processing, storage and output to verify the integrity, validity and reliability of the application."
+      },
+      {
+        question_id: "ecosys_ch9_CS29_Q2",
+        difficulty: "Hard",
+        question: "Which technique is most appropriate when the objective is to collect transactions that meet predetermined exception criteria for subsequent review?",
+        options: [
+          "System Control Audit Review File (SCARF)",
+          "Parallel Simulation",
+          "Test Data",
+          "Information Systems Audit scoping"
+        ],
+        answer: 0,
+        reason: "SCARF collects selected transactions and events that meet predetermined patterns or criteria in a special audit file for later examination."
+      },
+      {
+        question_id: "ecosys_ch9_CS29_Q3",
+        difficulty: "Hard",
+        question: "Which statement best explains why the auditor should not conclude that controls are effective merely because no incidents have been reported?",
+        options: [
+          "The audit must evaluate whether the system and internal controls are functioning as expected",
+          "The absence of incidents proves that all application controls are effective",
+          "An Information Systems Audit examines only reported incidents",
+          "The absence of incidents eliminates the need to examine system-generated information"
+        ],
+        answer: 0,
+        reason: "The chapter states that management needs assurance that the system functions as expected and that internal controls operate as designed. The absence of reported incidents alone does not establish this."
+      },
+      {
+        question_id: "ecosys_ch9_CS29_Q4",
+        difficulty: "Hard",
+        question: "What is a relevant risk consideration when implementing Transaction Tagging?",
+        options: [
+          "Adding a tag may disrupt client data, so suitable controls should identify and remove the tag",
+          "The technique cannot trace transactions through the application",
+          "It requires the auditor to create a fictitious company in the production files",
+          "It guarantees that all unusual transactions are automatically corrected"
+        ],
+        answer: 0,
+        reason: "The chapter notes that Transaction Tagging requires expertise and that the risk of disrupting client data may be medium to high. Controls should identify and remove the tag."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch9_CS30",
+    difficulty: "Hard",
+    chapter: "Chapter9",
+    caseText: `
+      <p>Horizon Distribution is reviewing the reliability of its computerized inventory and financial reporting processes. The auditor identifies three separate objectives:</p>
+      <p>(i) test whether the application handles selected valid and invalid inputs correctly using a copy of the application;</p>
+      <p>(ii) test the processing of audit transactions entered alongside normal production data through a fictitious entity in the application system; and</p>
+      <p>(iii) independently reproduce relevant processing using the same inputs as the client's application and compare the resulting outputs.</p>
+      <p>The audit manager asks the team to identify the appropriate technique for each objective and avoid confusing techniques that have different purposes.</p>
+    `,
+    questions: [
+      {
+        question_id: "ecosys_ch9_CS30_Q1",
+        difficulty: "Hard",
+        question: "Which technique matches objective (i)?",
+        options: [
+          "Test Data",
+          "Integrated Test Facility (ITF)",
+          "Parallel Simulation",
+          "Transaction Tagging"
+        ],
+        answer: 0,
+        reason: "Test Data uses selected valid and invalid transactions to test the application's response, often using a copy of the application."
+      },
+      {
+        question_id: "ecosys_ch9_CS30_Q2",
+        difficulty: "Hard",
+        question: "Which technique matches objective (ii)?",
+        options: [
+          "Integrated Test Facility (ITF)",
+          "Parallel Simulation",
+          "Continuous and Intermittent Simulation (CIS)",
+          "Transaction Tagging"
+        ],
+        answer: 0,
+        reason: "ITF involves creating a dummy entity in the application system files and processing audit test data against it alongside normal production data."
+      },
+      {
+        question_id: "ecosys_ch9_CS30_Q3",
+        difficulty: "Hard",
+        question: "Which technique matches objective (iii)?",
+        options: [
+          "Parallel Simulation",
+          "System Control Audit Review File (SCARF)",
+          "Integrated Test Facility (ITF)",
+          "Test Data using a copy of the application"
+        ],
+        answer: 0,
+        reason: "Parallel Simulation uses a separate program to replicate relevant processing, applies the same inputs and compares the independently generated results with the client's output."
+      },
+      {
+        question_id: "ecosys_ch9_CS30_Q4",
+        difficulty: "Hard",
+        question: "Which statement correctly distinguishes ITF from Parallel Simulation?",
+        options: [
+          "ITF processes audit test data through a fictitious entity alongside production data, whereas Parallel Simulation compares outputs from the client's application and an independent simulation using the same inputs",
+          "ITF always uses a separate copy of the application, whereas Parallel Simulation requires a fictitious branch in the production files",
+          "ITF traces one selected transaction from input to output, whereas Parallel Simulation collects only policy exceptions in a special audit file",
+          "ITF and Parallel Simulation are interchangeable names for the same technique"
+        ],
+        answer: 0,
+        reason: "ITF uses a dummy entity in the application system and processes test transactions alongside normal production data. Parallel Simulation compares the outputs of the client's application and an independent simulation using the same inputs."
+      }
+    ]
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_02",
+    case_chapter: "chapter9",
+    question: "Which of the following correctly represents the components of an Information System?",
+    options: [
+      "People, Process and Technology",
+      "Hardware, Reports and Audit Fees only",
+      "Input Documents, Vouchers and Ledgers only",
+      "Planning, Reporting and Closure only"
+    ],
+    answer: 0,
+    reason: "The chapter states that an Information System comprises People, Process and Technology."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_03",
+    case_chapter: "chapter9",
+    question: "Which of the following is an IT component of an Information System?",
+    options: [
+      "Management's business objectives only",
+      "Hardware, software and communication",
+      "Audit conclusions only",
+      "Customer complaints only"
+    ],
+    answer: 1,
+    reason: "The chapter explains that IT components of an Information System include hardware, software, communication and other components required to generate, process and transfer data or information."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_04",
+    case_chapter: "chapter9",
+    question: "What is one of the primary purposes of IT auditing?",
+    options: [
+      "To eliminate the requirement for internal controls",
+      "To replace all business processes with manual procedures",
+      "To evaluate the capability of application systems, internal controls and safeguarding of assets",
+      "To prepare only the financial statements of an organisation"
+    ],
+    answer: 2,
+    reason: "IT auditing evaluates the capability of application systems to fulfil processing requirements, the capability of internal controls and the safety of assets controlled by those systems."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_05",
+    case_chapter: "chapter9",
+    question: "Which of the following is an attribute of data integrity as described in the chapter?",
+    options: [
+      "Completeness",
+      "Office location",
+      "Employee seniority",
+      "Computer colour"
+    ],
+    answer: 0,
+    reason: "The chapter identifies completeness, reliability, transparency and accuracy as attributes of data integrity."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_06",
+    case_chapter: "chapter9",
+    question: "During which stage of an Information Systems Audit does the auditor gather evidence by interviewing staff, reviewing documents and observing processes?",
+    options: [
+      "Scoping",
+      "Fieldwork",
+      "Reporting",
+      "Closure"
+    ],
+    answer: 1,
+    reason: "Fieldwork involves gathering evidence by interviewing staff and managers, reviewing documents and observing processes."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_07",
+    case_chapter: "chapter9",
+    question: "In auditing around the computer, how does the auditor generally examine a transaction?",
+    options: [
+      "By embedding an audit module within the application",
+      "By simulating application instructions during transaction processing",
+      "By creating a fictitious entity in the application system",
+      "By reconciling source documents against output results without examining how inputs are processed"
+    ],
+    answer: 3,
+    reason: "Auditing around the computer, also called the Blackbox auditing approach, involves obtaining source documents related to a transaction and reconciling them against output results without considering how the inputs are processed."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_08",
+    case_chapter: "chapter9",
+    question: "What does CAAT stand for in the context of Information Systems Auditing?",
+    options: [
+      "Computer Assisted Audit Techniques",
+      "Computer Application Approval Testing",
+      "Centralised Accounting Analysis Tools",
+      "Computerised Asset Adjustment Transactions"
+    ],
+    answer: 0,
+    reason: "CAAT stands for Computer Assisted Audit Techniques and refers to the practice of using computers to automate IT audit processes."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_09",
+    case_chapter: "chapter9",
+    question: "According to the chapter, which of the following can Microsoft Excel be used for during audit work?",
+    options: [
+      "Replacing every internal control in an application",
+      "Creating a fictitious company within the application system",
+      "Analysing data, generating samples, creating graphs and performing trend analysis",
+      "Automatically proving that every transaction is authorised"
+    ],
+    answer: 2,
+    reason: "The chapter states that Microsoft Excel can analyse data, generate samples, create graphs and perform regression or trend analysis."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_10",
+    case_chapter: "chapter9",
+    question: "Which feature is essential to an Integrated Test Facility (ITF)?",
+    options: [
+      "Using only a separate copy of the application to process test data",
+      "Creating a fictitious entity in the application system to process audit test data alongside normal production data",
+      "Following a selected transaction from input to output by adding a special tag",
+      "Collecting only policy violations in a SCARF master file"
+    ],
+    answer: 1,
+    reason: "The ITF technique involves creating a dummy entity in the application system files and processing audit test data against that entity alongside normal production data."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_11",
+    case_chapter: "chapter9",
+    question: "Which types of transactions should be included in Test Data to test how an application processes inputs?",
+    options: [
+      "Only transactions that have already been approved",
+      "Only valid transactions",
+      "Only transactions recorded in the previous financial year",
+      "Both valid and invalid transactions"
+    ],
+    answer: 3,
+    reason: "The chapter states that both valid and invalid transactions should be included in test data to test how the system processes correct and erroneous transaction inputs."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_12",
+    case_chapter: "chapter9",
+    question: "What is the main purpose of Parallel Simulation?",
+    options: [
+      "To compare results produced by the client's application and a separate simulation using the same inputs",
+      "To create a fictitious branch for audit transactions",
+      "To record selected transactions in the SCARF master file",
+      "To add a special tag to every transaction in the production system"
+    ],
+    answer: 0,
+    reason: "Parallel Simulation uses separate sets of programs to process the same inputs and compares the independently generated results."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_13",
+    case_chapter: "chapter9",
+    question: "What is an Embedded Audit Module (EAM)?",
+    options: [
+      "A report prepared only after the audit is completed",
+      "A separate manual register of customer complaints",
+      "A programmed audit module added to the application under review",
+      "A fictitious company created only for ITF"
+    ],
+    answer: 2,
+    reason: "The chapter describes an Embedded Audit Module as a programmed audit module added to the application under review, allowing auditors to monitor and collect data for analysis and to assess control risks and effectiveness."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_14",
+    case_chapter: "chapter9",
+    question: "In the System Control Audit Review File (SCARF) technique, where is the information collected by the embedded audit software written?",
+    options: [
+      "Only in the auditor's handwritten notes",
+      "In a special audit file called the SCARF master file",
+      "Only in the organisation's marketing database",
+      "In a separate file containing only employee attendance"
+    ],
+    answer: 1,
+    reason: "SCARF is a real-time technique that embeds audit software modules within a host application system. The information collected is written to a special audit file called the SCARF master file."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_15",
+    case_chapter: "chapter9",
+    question: "Which technique follows a selected transaction through input, transmission, processing, storage and output?",
+    options: [
+      "Test Data",
+      "Parallel Simulation",
+      "Integrated Test Facility (ITF)",
+      "Transaction Tagging"
+    ],
+    answer: 3,
+    reason: "Transaction Tagging follows a selected transaction through the application from input, transmission, processing and storage to output to verify the integrity, validity and reliability of the application."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_16",
+    case_chapter: "chapter9",
+    question: "Which statement describes an advantage of Continuous and Intermittent Simulation (CIS)?",
+    options: [
+      "It requires every transaction to be processed through a fictitious branch",
+      "It eliminates the need for auditors to have computer-system knowledge",
+      "It provides online auditing capability without requiring modifications to the application system",
+      "It can be used only with a separate copy of the application"
+    ],
+    answer: 2,
+    reason: "The chapter identifies an advantage of CIS as providing online auditing capability without requiring modifications to the application system."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_17",
+    case_chapter: "chapter9",
+    question: "According to the chapter, which activity can be performed using Microsoft Access?",
+    options: [
+      "Creating a fictitious branch for ITF only",
+      "Analysing data, creating reports and querying data files",
+      "Automatically approving all financial transactions",
+      "Replacing the organisation's internal controls"
+    ],
+    answer: 1,
+    reason: "The chapter states that Microsoft Access can be used to analyse data, create reports and query data files."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_18",
+    case_chapter: "chapter9",
+    question: "What is a function of SAP Audit Management mentioned in the chapter?",
+    options: [
+      "Processing only customer cash withdrawals",
+      "Creating fictitious entities for every audit",
+      "Documenting evidence, organising working papers and creating audit reports",
+      "Automatically eliminating all audit risks"
+    ],
+    answer: 2,
+    reason: "SAP Audit Management facilitates documentation of evidence, organisation of working papers and creation of audit reports."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_19",
+    case_chapter: "chapter9",
+    question: "Which pair of tools is identified in the chapter as common Computer Assisted Audit Techniques (CAATs)?",
+    options: [
+      "Audit Command Language (ACL) and Interactive Data Extraction and Analysis (IDEA)",
+      "Word processing and presentation software only",
+      "Customer Master and Vendor Master",
+      "Purchase requisition and delivery note"
+    ],
+    answer: 0,
+    reason: "The chapter identifies Audit Command Language (ACL) and Interactive Data Extraction and Analysis (IDEA) as common CAATs."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_20",
+    case_chapter: "chapter9",
+    question: "Which activity is associated with generalized audit software?",
+    options: [
+      "Approving employee recruitment without review",
+      "Replacing all source documents with verbal confirmations",
+      "Creating customer accounts without authorisation",
+      "Analysing and comparing files and validating calculations"
+    ],
+    answer: 3,
+    reason: "The chapter lists activities of generalized audit software such as analysing and comparing files, selecting records for examination, conducting random samples and validating calculations."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_21",
+    case_chapter: "chapter9",
+    question: "What is one important purpose of continuous auditing?",
+    options: [
+      "To eliminate the need to collect audit evidence",
+      "To reduce the time between the occurrence of client events and the auditor's assurance services",
+      "To ensure that errors are corrected only at the end of the financial year",
+      "To replace all computerised systems with manual systems"
+    ],
+    answer: 1,
+    reason: "The chapter explains that continuous auditing enables auditors to reduce or eliminate the time between the occurrence of client events and the auditor's assurance services."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_22",
+    case_chapter: "chapter9",
+    question: "Which approach evaluates how an application and its embedded controls respond to different types of transactions, including transactions containing errors?",
+    options: [
+      "Auditing around the computer",
+      "Manual reconciliation only",
+      "Auditing through the computer",
+      "Audit closure"
+    ],
+    answer: 2,
+    reason: "Auditing through the computer, also called the Whitebox auditing approach, uses techniques to evaluate how the application and its embedded controls respond to different types of transactions."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_23",
+    case_chapter: "chapter9",
+    question: "Which of the following is identified in the chapter as a standard tool used during auditing?",
+    options: [
+      "Internal control questionnaires",
+      "Unapproved changes to master data",
+      "Unauthorised customer accounts",
+      "Unrecorded sales transactions"
+    ],
+    answer: 0,
+    reason: "The chapter identifies internal control questionnaires, interviews, observation and document review as standard tools used in auditing."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_24",
+    case_chapter: "chapter9",
+    question: "During which stage of an Information Systems Audit does the auditor determine significant areas of focus and areas explicitly outside the agreed scope?",
+    options: [
+      "Reporting",
+      "Closure",
+      "Analysis",
+      "Scoping and pre-audit survey"
+    ],
+    answer: 3,
+    reason: "During scoping and the pre-audit survey, auditors determine significant areas of focus and areas explicitly outside the agreed scope."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_25",
+    case_chapter: "chapter9",
+    question: "What is a key activity during the planning and preparation stage of an Information Systems Audit?",
+    options: [
+      "Closing all audit findings without follow-up",
+      "Breaking the scope into greater detail and preparing an audit work plan or risk-control matrix",
+      "Issuing the final report before collecting evidence",
+      "Replacing the application being audited"
+    ],
+    answer: 1,
+    reason: "During planning and preparation, the scope is broken down into greater levels of detail, usually involving the generation of an audit work plan or risk-control matrix."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_26",
+    case_chapter: "chapter9",
+    question: "What is the main activity performed during the Analysis stage of an Information Systems Audit?",
+    options: [
+      "Creating a fictitious company for audit testing",
+      "Collecting purchase orders from suppliers only",
+      "Sorting and reviewing the evidence gathered and arriving at conclusions",
+      "Changing the production program"
+    ],
+    answer: 2,
+    reason: "The Analysis stage involves sorting out and reviewing the evidence gathered earlier and arriving at conclusions. The chapter also mentions SWOT or PEST techniques for analysis."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_27",
+    case_chapter: "chapter9",
+    question: "When is reporting to management generally performed during an Information Systems Audit?",
+    options: [
+      "After analysis of the evidence and an initial discussion with the auditee about identified observations",
+      "Before the audit scope is determined",
+      "Before any audit evidence is gathered",
+      "Only after all future audits have been completed"
+    ],
+    answer: 0,
+    reason: "The chapter states that reporting to management is done after analysis of evidence and a first-level discussion with the auditee for explanations on identified observations."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_28",
+    case_chapter: "chapter9",
+    question: "Which activity is associated with the Closure stage of an Information Systems Audit?",
+    options: [
+      "Determining the initial audit scope only",
+      "Processing test transactions through a fictitious entity",
+      "Conducting all fieldwork interviews for the first time",
+      "Preparing notes for future audits and following up with management on promised actions"
+    ],
+    answer: 3,
+    reason: "Closure involves preparing notes for future audits and following up with management to complete actions promised after previous audits."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_29",
+    case_chapter: "chapter9",
+    question: "Which of the following is an example of an Operational Process, also called a Primary Process?",
+    options: [
+      "Workplace safety administration only",
+      "Purchasing, manufacturing or sales",
+      "Internal communications only",
+      "Strategic planning only"
+    ],
+    answer: 1,
+    reason: "The chapter explains that Operational or Primary Processes deal with the core business and value chain. Examples include purchasing, manufacturing and sales."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_30",
+    case_chapter: "chapter9",
+    question: "According to the chapter, at which three levels should controls in computer systems be checked?",
+    options: [
+      "Planning, Reporting and Closure",
+      "Input, Output and Printing only",
+      "Configuration, Masters and Transactions",
+      "Hardware, Office and Personnel"
+    ],
+    answer: 2,
+    reason: "The chapter states that controls in computer systems should be checked at three levels: Configuration, Masters and Transactions."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch9_31",
+    case_chapter: "chapter9",
+    question: "What does the Procure to Pay (P2P) process primarily involve?",
+    options: [
+      "Obtaining and managing materials required for manufacturing a product or providing a service, including ordering and payment",
+      "Receiving customer orders and collecting sales proceeds only",
+      "Reviewing audit findings and preparing the audit closure notes",
+      "Creating only employee records and calculating salaries"
+    ],
+    answer: 0,
+    reason: "The chapter describes Procure to Pay (P2P) as the process of obtaining and managing materials required for manufacturing a product or providing a service, including the flow of data related to the order, fulfilment and payment."
+  },
+  // =========================================================
+  // MEDIUM — ecosys_ch9_32 to ecosys_ch9_41
+  // =========================================================
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch9_32",
+    case_chapter: "chapter9",
+    question: "An organisation installs an application for its purchase and inventory functions. The auditor finds that software parameters and menu options have been configured contrary to the organisation's approved business-process rules. Which control level should primarily be examined?",
+    options: [
+      "Configuration level",
+      "Transactions level only",
+      "Customer collection level",
+      "Audit closure level"
+    ],
+    answer: 0,
+    reason: "Configuration refers to the way a software system is set up, including defining options and setting parameters according to the organisation's policies, workflows and business rules. The chapter states that configuration can be modified based on user requirements through administrative rights."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch9_33",
+    case_chapter: "chapter9",
+    question: "During an audit of the Procure to Pay (P2P) process, the auditor discovers that an employee who is not authorised to maintain vendor records can make changes to the supplier master file. Which control objective most directly addresses this risk?",
+    options: [
+      "All purchase orders should be processed without approval",
+      "Supplier master changes should be reviewed only at the end of the financial year",
+      "System access to maintain vendor masters should be restricted to authorised users",
+      "All supplier records should be deleted after a payment is made"
+    ],
+    answer: 2,
+    reason: "The P2P master-data control objectives state that system access to maintain vendor masters should be restricted to authorised users."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch9_34",
+    case_chapter: "chapter9",
+    question: "A supplier submits an invoice for materials, but the organisation's records show that the materials have not been received. Which P2P transaction control objective is most relevant before the amount is posted to accounts payable?",
+    options: [
+      "All supplier master changes must be processed immediately",
+      "Amounts posted to accounts payable should represent goods or services received",
+      "All purchase requisitions should be treated as approved purchase orders",
+      "All payments should be recorded before the invoice is received"
+    ],
+    answer: 1,
+    reason: "The P2P transaction control objectives state that amounts posted to accounts payable should represent goods or services received."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch9_35",
+    case_chapter: "chapter9",
+    question: "In the Order to Cash (O2C) process, the application accepts a customer order that exceeds the customer's approved credit limit without approval. Which control objective should address this risk?",
+    options: [
+      "Customer master changes should never be processed",
+      "All customer orders should be rejected regardless of credit limits",
+      "All customer payments should be recorded before goods are delivered",
+      "Orders should be processed only within approved customer credit limits"
+    ],
+    answer: 3,
+    reason: "The chapter's O2C transaction control objectives state that orders should be processed only within approved customer credit limits."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch9_36",
+    case_chapter: "chapter9",
+    question: "A manufacturing company receives raw materials at its warehouse. The purchase order cannot be located, and the receiving team proposes accepting the materials and updating inventory regardless. Which control objective most directly addresses the acceptance risk?",
+    options: [
+      "Raw materials should be received and accepted only if they have valid purchase orders",
+      "All raw materials should be transferred directly to finished goods",
+      "All inventory adjustments should be made without documentation",
+      "Raw materials should be accepted only after the finished goods are sold"
+    ],
+    answer: 0,
+    reason: "The inventory transaction control objectives state that raw materials should be received and accepted only if they have valid purchase orders."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch9_37",
+    case_chapter: "chapter9",
+    question: "An employee leaves an organisation, but the employee record remains active in the system. Which activity is specifically associated with the termination or transition stage of the Human Resources (HR) cycle?",
+    options: [
+      "Creating an additional vendor master",
+      "Processing the employee as a customer order",
+      "Managing the transition in accordance with policies and procedures and removing the employee from the system",
+      "Transferring all employee records to the fixed asset register"
+    ],
+    answer: 2,
+    reason: "The chapter states that during termination or transition, HR manages the employee's departure, ensures that policies and procedures are followed, and removes the employee from the system."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch9_38",
+    case_chapter: "chapter9",
+    question: "An organisation acquires a machine, but the acquisition is omitted from the fixed asset records for the period in which it was received. Which control objective is most relevant?",
+    options: [
+      "All customer master changes should be authorised",
+      "All fixed asset acquisitions should be recorded in the appropriate period",
+      "All inventory receipts should be transferred to cost of sales",
+      "All supplier payments should be made before receipt of goods"
+    ],
+    answer: 1,
+    reason: "The fixed asset transaction control objectives state that fixed asset acquisitions should be recorded in the appropriate period and that all acquisitions should be recorded."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch9_39",
+    case_chapter: "chapter9",
+    question: "An organisation's General Ledger system does not flag exceptional-amount journal entries for review after month-end. Which control objective best addresses this risk?",
+    options: [
+      "All journal entries should be accepted without review",
+      "All General Ledger accounts should be accessible to every employee",
+      "All journal entries should be processed only through the HR module",
+      "Exceptional-amount journal entries should be flagged and reviewed for accuracy and approval by the controller or CFO after month-end"
+    ],
+    answer: 3,
+    reason: "The General Ledger control objectives state that journal entries of exceptional amounts posted during the month should be flagged and subsequently reviewed for accuracy and approved by the controller or CFO after month-end."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch9_40",
+    case_chapter: "chapter9",
+    question: "An auditor is classifying business processes and identifies governance, strategic planning, budgeting and infrastructure or capacity management. Under the chapter's classification, these activities are examples of:",
+    options: [
+      "Operational or primary processes only",
+      "Management processes",
+      "Customer collection transactions",
+      "Inventory receipt transactions"
+    ],
+    answer: 1,
+    reason: "The chapter describes management processes as activities that measure, monitor and control business procedures and systems. Examples include internal communications, governance, strategic planning, budgeting and infrastructure or capacity management."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch9_41",
+    case_chapter: "chapter9",
+    question: "The auditor evaluates whether an information system reports information in a way that helps users make decisions and meets their requirements. Which Information Systems Auditing objective is being assessed?",
+    options: [
+      "Improved system effectiveness",
+      "Improved system efficiency only",
+      "Improved safeguarding of assets only",
+      "Removal of all application controls"
+    ],
+    answer: 0,
+    reason: "Improved system effectiveness concerns matching user needs and evaluating whether the system reports information in a way that facilitates users' decision-making."
+  },
+
+  // =========================================================
+  // HARD — ecosys_ch9_42 to ecosys_ch9_51
+  // =========================================================
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch9_42",
+    case_chapter: "chapter9",
+    question: "An insurance auditor is concerned that claims may have been paid even when the date of service occurred after the policy termination date. A traditional approach based on a small randomly selected sample may not identify every such claim. Which approach best matches the chapter's illustration?",
+    options: [
+      "Use auditing around the computer without examining the underlying data",
+      "Create a fictitious branch and process only test transactions through it",
+      "Use CAATs to select every claim with a date of service after the policy termination date",
+      "Use transaction tagging solely to change the policy termination date"
+    ],
+    answer: 2,
+    reason: "The chapter's insurance-company illustration explains that CAATs can be used to select every claim with a date of service after the policy termination date and identify the claims paid and the exact amount incorrectly paid."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch9_43",
+    case_chapter: "chapter9",
+    question: "An auditor uses an Integrated Test Facility (ITF) by processing test transactions against a fictitious entity alongside normal production transactions. The test entries are not reversed at the defined cut-off date. What is the principal reporting concern identified by the chapter?",
+    options: [
+      "The test transactions may be included in the financial reports instead of being excluded through reversal at the defined cut-off date",
+      "Parallel Simulation will automatically remove the ITF entries",
+      "The application will no longer process any normal production transactions",
+      "The absence of transaction tags will automatically reverse every test entry"
+    ],
+    answer: 0,
+    reason: "In the ITF example, transactions are posted to a fictitious entity alongside regular transactions, and the entries should be reversed at defined cut-off dates to ensure they are not included in the financial reports."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch9_44",
+    case_chapter: "chapter9",
+    question: "An auditor develops an independent simulation of the client's invoice-processing logic and processes the same invoices through both the client's application and the simulation. Several accounting entries differ. What is the most appropriate next step based on the chapter's Parallel Simulation example?",
+    options: [
+      "Treat all differences as proof of fraud without further work",
+      "Replace the client's production program immediately without investigation",
+      "Reverse all actual invoices and accept the simulation output as conclusive",
+      "Perform additional test procedures to identify the impact of the exceptions"
+    ],
+    answer: 3,
+    reason: "The chapter explains that in Parallel Simulation, simulated invoice-processing results are compared with the client's system output. If exceptions arise, additional test procedures should be performed to identify their impact."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch9_45",
+    case_chapter: "chapter9",
+    question: "An auditor wants to monitor transactions in a host application that exceed a specified limit, involve inactive accounts or deviate from company policy. The selected information must be retained for subsequent examination in a special audit file. Which technique best matches these requirements?",
+    options: [
+      "Test Data processed exclusively on a copy of the application",
+      "Auditing around the computer",
+      "Parallel Simulation using two sets of programs",
+      "System Control Audit Review File (SCARF)"
+    ],
+    answer: 3,
+    reason: "SCARF is a real-time technique that embeds audit software modules within a host application. It can collect transactions meeting predetermined patterns, including transactions exceeding specified limits, involving inactive accounts or deviating from company policy, and record them in the SCARF master file."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch9_46",
+    case_chapter: "chapter9",
+    question: "A CIS technique simulates application instruction execution while transactions are processed through a Database Management System (DBMS). A discrepancy is detected between the result produced by the simulation and the application's result. Which statement best reflects the chapter's description of this technique?",
+    options: [
+      "Every discrepancy must be ignored because CIS cannot examine database updates",
+      "The exception can be written to an exception log file, and a serious exception may prevent the DBMS from executing the update",
+      "The discrepancy must be treated as a valid transaction and posted to the General Ledger",
+      "The only permissible response is to create a fictitious branch and stop using the DBMS"
+    ],
+    answer: 1,
+    reason: "The chapter explains that CIS checks selected transactions and the resulting database updates for discrepancies. Exceptions identified by CIS are written to an exception log file, and serious exceptions may prevent the DBMS from executing the update."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch9_47",
+    case_chapter: "chapter9",
+    question: "A machine is taken out of service because it is obsolete and is disposed of. The organisation continues charging depreciation on the machine and does not record the difference between its book value and the amount realised on disposal. Which treatment is consistent with the chapter?",
+    options: [
+      "Continue depreciation indefinitely and exclude the disposal from the records",
+      "Transfer the machine to inventory and charge depreciation to customer accounts",
+      "Stop charging depreciation once the asset is taken out of service and report the difference between book value and realised value as a gain or loss",
+      "Delete the entire fixed asset register and record no disposal information"
+    ],
+    answer: 2,
+    reason: "The chapter states that when an asset is taken out of service, depreciation cannot be charged on it. Any difference between the book value and the realised value on disposal is reported as a gain or loss."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch9_48",
+    case_chapter: "chapter9",
+    question: "A General Ledger master file change report is generated by the system. The organisation's procedure requires the report to be reviewed by an individual who did not enter the changes. Which control objective is being applied?",
+    options: [
+      "General Ledger master file change reports should be reviewed as necessary by an individual who did not input the changes",
+      "The person entering a master change should always be the only reviewer",
+      "All General Ledger master changes should be permitted without review",
+      "General Ledger master file changes should be combined with customer collections"
+    ],
+    answer: 0,
+    reason: "The chapter's General Ledger master control objectives state that master file change reports should be generated and reviewed as necessary by an individual who did not input the changes."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch9_49",
+    case_chapter: "chapter9",
+    question: "A bank sets up a credit line in its Core Banking System (CBS). The auditor finds that the credit limit was authorised by an employee without the required authority, and the credit assessment did not follow the bank's Credit Risk Policy. Which combination of controls most directly addresses these risks?",
+    options: [
+      "Allow any CBS user to set up and approve the credit line if the customer has an account",
+      "Restrict all credit lines to zero and discontinue credit assessments",
+      "Rely exclusively on the customer's address and ignore financial information",
+      "Have the credit committee check relevant financial ratios, net worth, risk factors and mitigating factors against the Credit Risk Policy, and restrict credit-limit authorisation access to authorised personnel"
+    ],
+    answer: 3,
+    reason: "The chapter's CASA controls state that the credit committee checks financial ratios, net worth, risk factors and mitigating factors, the credit line offered and the credit amount against the Credit Risk Policy. Access rights to authorise credit limits in CBS should be restricted to authorised personnel."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch9_50",
+    case_chapter: "chapter9",
+    question: "During a P2P audit, an invoice has been posted to accounts payable even though the goods have not been received. Later, a disbursement is made to a supplier who is not the appropriate supplier for the transaction. Which pair of control objectives most directly addresses the two risks?",
+    options: [
+      "All supplier master changes should be delayed, and all disbursements should be made before receipt of goods",
+      "Amounts posted to accounts payable should represent goods or services received, and disbursements should be distributed to the appropriate suppliers",
+      "All purchase orders should be entered without authorisation, and all credit notes should be excluded",
+      "All customer master changes should be processed, and all inventory transfers should be omitted"
+    ],
+    answer: 1,
+    reason: "The P2P transaction control objectives state that amounts posted to accounts payable should represent goods or services received and that disbursements should be distributed to the appropriate suppliers."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch9_51",
+    case_chapter: "chapter9",
+    question: "An auditor reconciles source documents with the output generated by a simple application but does not examine how the inputs are processed. Management then asks whether the same procedure proves that the application's program logic and embedded controls are correct. Which response best reflects the chapter's distinction between auditing around and auditing through the computer?",
+    options: [
+      "Yes; auditing around the computer always validates the application's internal program logic",
+      "Yes; reconciling source documents with outputs is identical to testing embedded application controls",
+      "No; auditing around the computer does not validate whether the program logic is correct, whereas auditing through the computer evaluates application processing and embedded controls",
+      "No; neither approach can examine application controls or processing"
+    ],
+    answer: 2,
+    reason: "The chapter distinguishes auditing around the computer (Blackbox approach), which reconciles source documents with output without examining input processing, from auditing through the computer (Whitebox approach), which evaluates how applications and embedded controls respond to different transactions. A major weakness of auditing around the computer is that it does not verify whether the application's program logic is correct."
   }
+
 
 ]
