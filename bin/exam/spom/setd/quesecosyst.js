@@ -17876,6 +17876,1922 @@ const caseStudies = [
     ],
     answer: 2,
     reason: "The chapter distinguishes auditing around the computer (Blackbox approach), which reconciles source documents with output without examining input processing, from auditing through the computer (Whitebox approach), which evaluates how applications and embedded controls respond to different transactions. A major weakness of auditing around the computer is that it does not verify whether the application's program logic is correct."
+  },
+  // Chapter10
+  {
+    case_id: "ecosys_ch10_CS01",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Aviation Connect operates reservation systems, digital air traffic controls, navigation systems, passenger management applications and other interconnected Information Technology systems. The organisation maintains sensitive passenger information, including passport and payment information. It also uses services provided by third-party vendors and Commercial Off-The-Shelf (COTS) software. Management recognises that a cyberattack on any interconnected system could cause operational disruption and compromise personal data. Accordingly, the organisation plans to strengthen encryption, key management and authentication controls.</p>
+    `,
+    questions: [
+      {
+        question: "Why is the aviation industry particularly vulnerable to cyberattacks, as discussed in the chapter?",
+        options: [
+          "Aviation organisations maintain only paper-based passenger records",
+          "The interconnected network creates multiple potential entry points for attackers",
+          "Aviation systems do not process sensitive personal information",
+          "Third-party vendors eliminate all information security risks"
+        ],
+        answer: 1,
+        reason: "The chapter explains that the aviation industry is a largely interconnected network spanning various sectors and stakeholders, each of which may be a potential entry point for attackers."
+      },
+      {
+        question: "What risk is associated with the use of third-party systems and software?",
+        options: [
+          "Third-party systems always prevent unauthorised access",
+          "Third-party software eliminates the need for encryption",
+          "Third-party systems and software may not have reliable and robust security",
+          "Third-party software prevents all operational disruptions"
+        ],
+        answer: 2,
+        reason: "The chapter states that third-party systems and Commercial Off-The-Shelf (COTS) software do not always have reliable and robust security, leaving them more prone to attacks."
+      },
+      {
+        question: "Which measure should Aviation Connect implement to protect data stored in its databases?",
+        options: [
+          "Encrypt data while it is at rest in databases",
+          "Encrypt data only after a security breach",
+          "Allow third-party processors to access all readable data",
+          "Store sensitive data without encryption"
+        ],
+        answer: 0,
+        reason: "The chapter recommends that data remain encrypted while at rest in databases to prevent unauthorised parties from accessing unencrypted data."
+      },
+      {
+        question: "Which measure should be adopted regarding the Hardware Security Module (HSM) and encryption keys?",
+        options: [
+          "The third-party data processor should retain all encryption keys",
+          "Encryption keys should be shared with every service provider",
+          "The HSM should be accessible to every third-party processor",
+          "The HSM must not be accessible by the third-party data processor, and encryption keys should remain stored in the company's vaulted data centre"
+        ],
+        answer: 3,
+        reason: "The chapter states that HSMs must not be accessible by the third-party data processor and that encryption keys must remain stored in the company's vaulted data centre rather than being held by the third-party data processor."
+      },
+      {
+        question: "Why should Aviation Connect implement mandatory multifactor authentication for clients?",
+        options: [
+          "To permit all passengers to view one another's personal data",
+          "To generally limit access to data to authorised persons",
+          "To eliminate the requirement for encryption",
+          "To allow third-party vendors unrestricted access to passenger information"
+        ],
+        answer: 1,
+        reason: "The chapter recommends mandatory multifactor authentication to generally limit access to data to authorised persons, such as passengers who can view their own personal data."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS02",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Orchid Digital Services collects and processes personal data through its online portal. Management establishes procedures to determine what information may be collected, the purposes for which it may be used and the persons authorised to access it. The organisation also provides individuals with a means of obtaining information about their personal data and requesting correction or erasure. The management team recognises that protecting data requires appropriate privacy practices, security measures and accountability throughout the data life cycle.</p>
+    `,
+    questions: [
+      {
+        question: "What does Data Privacy primarily address?",
+        options: [
+          "The preparation of financial statements",
+          "The physical maintenance of computer equipment",
+          "The generation of business reports only",
+          "Guidelines for how data should be collected or handled based on its sensitivity and importance"
+        ],
+        answer: 3,
+        reason: "The chapter defines Data Privacy as a guideline for how data should be collected or handled based on its sensitivity and importance."
+      },
+      {
+        question: "Which statement best describes Data Security?",
+        options: [
+          "It focuses on protecting personal data from unauthorised third-party access, malicious attacks and exploitation",
+          "It deals exclusively with analysing customer preferences",
+          "It refers only to the deletion of outdated reports",
+          "It concerns only the preparation of data visualisations"
+        ],
+        answer: 0,
+        reason: "The chapter explains that Data Security focuses on protecting personal data from unauthorised third-party access, malicious attacks and exploitation, while helping ensure data integrity."
+      },
+      {
+        question: "Which statement best describes Data Protection?",
+        options: [
+          "It is limited to the collection of customer feedback",
+          "It concerns only marketing analytics",
+          "It comprises strategies and processes used to secure the privacy, availability and integrity of data",
+          "It is restricted to controlling incoming network traffic"
+        ],
+        answer: 2,
+        reason: "The chapter describes Data Protection as a set of strategies and processes used to secure the privacy, availability and integrity of data."
+      },
+      {
+        question: "Orchid decides that it should collect only the personal data necessary for its activities and standardise data collection procedures across business processes. Which Fair Information Practice is being followed?",
+        options: [
+          "Data Quality",
+          "Collection Limitation",
+          "Individual Participation",
+          "Accountability"
+        ],
+        answer: 1,
+        reason: "Collection Limitation requires limits on how much personal data can be collected and recommends standardising data collection procedures across business processes while considering stakeholders."
+      },
+      {
+        question: "An individual requests information about who holds their personal data and asks the organisation to correct an inaccurate record. Which Fair Information Practice is most directly relevant?",
+        options: [
+          "Purpose Specification",
+          "Security Safeguards",
+          "Collection Limitation",
+          "Individual Participation"
+        ],
+        answer: 3,
+        reason: "Individual Participation includes the right to know who has an individual's personal data, to have the data communicated to them and to request correction or erasure, among other rights."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS03",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Meridian Finance maintains customer and transaction information in its business systems. The organisation implements encryption to protect information, firewalls to monitor network traffic, two-factor authentication to strengthen user verification and access controls to restrict system access. It also deploys Data Loss Prevention (DLP) systems to monitor data usage and detect suspicious activities that may lead to the leakage of confidential business information.</p>
+    `,
+    questions: [
+      {
+        question: "How does encryption protect business information?",
+        options: [
+          "It makes information publicly readable",
+          "It removes the requirement for access controls",
+          "It automatically deletes every duplicate record",
+          "It scrambles information so that only parties with the appropriate encryption key can decrypt it"
+        ],
+        answer: 3,
+        reason: "The chapter explains that encryption conceals information by scrambling it. Only parties with the encryption key can unscramble the information."
+      },
+      {
+        question: "What is the primary role of a firewall in Meridian Finance?",
+        options: [
+          "To monitor incoming and outgoing network traffic and provide a line of defence against external cyber threats",
+          "To combine customer records from different databases",
+          "To prepare financial reports from transaction data",
+          "To determine the purpose for collecting personal data"
+        ],
+        answer: 0,
+        reason: "The chapter explains that firewalls monitor network traffic and act as a first line of defence against external cyber threats. It also discusses third-generation firewalls that can detect and block sophisticated attacks using in-line deep packet inspection."
+      },
+      {
+        question: "Which example illustrates Two-factor Authentication (2FA)?",
+        options: [
+          "Entering only a username",
+          "Allowing multiple users to share one password",
+          "Entering a username and password followed by an authentication code sent to a mobile device",
+          "Storing a customer report in a spreadsheet"
+        ],
+        answer: 2,
+        reason: "The chapter identifies the use of a username and password along with a mobile-based One-Time Password (OTP) as a widely used example of two-factor authentication."
+      },
+      {
+        question: "How do access controls help protect Meridian Finance's systems?",
+        options: [
+          "They permit all employees to access every file",
+          "They use authentication and authorisation to determine whether users may access selected corporate resources",
+          "They replace the need to identify users",
+          "They ensure that data is automatically suitable for statistical analysis"
+        ],
+        answer: 1,
+        reason: "Access controls ensure that only authorised parties access systems and data. They perform authentication and authorisation to verify whether a user is allowed to access particular resources."
+      },
+      {
+        question: "What is the principal purpose of Data Loss Prevention (DLP) systems?",
+        options: [
+          "To increase the amount of unnecessary data collected",
+          "To predict customer demand only",
+          "To prepare building plans and blueprints",
+          "To monitor data usage, detect suspicious activities and help prevent confidential business information from leaking"
+        ],
+        answer: 3,
+        reason: "The chapter explains that DLP systems monitor data usage and detect suspicious activities to prevent leakage of confidential business information. They also help protect data against unwanted copying or deletion."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS04",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Nova Retail collects information from its business transactions, customer records, market publications, social media interactions and customer interviews. Its management analyses transaction records to understand business performance, uses market publications to study competitors and suppliers, and examines customer behaviour to improve marketing activities. The organisation also uses building plans when redesigning its physical infrastructure and reviews both numerical sales figures and descriptive customer feedback.</p>
+    `,
+    questions: [
+      {
+        question: "Nova Retail analyses its point-of-sale transactions and customer records to understand its operations and financial condition. What type of data is it using?",
+        options: [
+          "External Data",
+          "Structural Data",
+          "Internal Data",
+          "Marketing Data only"
+        ],
+        answer: 2,
+        reason: "The chapter explains that Internal Data comes from business transactions such as point-of-sales and customer records and provides insight into how an enterprise operates and its financial condition."
+      },
+      {
+        question: "The organisation obtains market trends from trade associations, government agencies and trade publications. These are examples of:",
+        options: [
+          "Internal Data",
+          "External Data",
+          "Structural Data",
+          "Employee authentication data"
+        ],
+        answer: 1,
+        reason: "External Data focuses on trends relating to consumers, competitors, markets and suppliers. Sources include trade associations, government agencies and trade publications."
+      },
+      {
+        question: "Nova Retail analyses customer behaviour, preferences, social media activity and web cookies to target individuals with tailored messages. This is:",
+        options: [
+          "Marketing Data",
+          "Structural Data",
+          "Data Governance",
+          "Master Data Management"
+        ],
+        answer: 0,
+        reason: "Marketing Data relates to customer information, behaviour and preferences used to target individuals with tailored messages. It may include social media activity, web cookies and advertising retargeting."
+      },
+      {
+        question: "Which type of data is used when Nova Retail examines building plans and blueprints for redesigning its physical infrastructure?",
+        options: [
+          "Internal Data",
+          "Marketing Data",
+          "External Data",
+          "Structural Data"
+        ],
+        answer: 3,
+        reason: "The chapter describes Structural Data as data used to design or redesign physical infrastructure, such as building plans and blueprints showing how structural elements should be configured."
+      },
+      {
+        question: "Which statement correctly distinguishes Qualitative Data from Quantitative Data?",
+        options: [
+          "Qualitative Data consists only of measurable numbers, whereas Quantitative Data consists only of descriptions",
+          "Qualitative Data is descriptive and non-statistical, whereas Quantitative Data consists of numerical values that can be measured",
+          "Both types consist exclusively of numerical values",
+          "Both types consist exclusively of interviews and documents"
+        ],
+        answer: 1,
+        reason: "The chapter describes Qualitative Data as descriptive and non-statistical, often generated through texts, interviews, observations and recordings. Quantitative Data consists of numbers and values and is statistical, conclusive and measurable."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS05",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Summit Enterprises wants to improve its sales and customer service using data analysis. The management team first identifies the business questions it needs to answer and determines its data requirements. It then collects relevant information from appropriate sources, removes duplicate and anomalous records, analyses the resulting dataset to identify patterns, and presents its findings through charts and graphs for management review.</p>
+    `,
+    questions: [
+      {
+        question: "What should Summit Enterprises do first in the Data Analysis process?",
+        options: [
+          "Define its data requirements, establish clear objectives and determine the questions it wants to answer",
+          "Immediately produce charts without identifying business objectives",
+          "Delete all historical business information",
+          "Publish the raw dataset without reviewing it"
+        ],
+        answer: 0,
+        reason: "The first stage is Data Requirement and Gathering. Businesses should establish a long-term plan, define clear objectives and determine why particular types of data are required and what they hope to achieve."
+      },
+      {
+        question: "After defining its data requirements, which activity should Summit Enterprises undertake?",
+        options: [
+          "Delete the entire database",
+          "Prepare the final report before obtaining any information",
+          "Determine suitable data sources and collect relevant data points",
+          "Ignore the purpose for which the data is required"
+        ],
+        answer: 2,
+        reason: "Once the purpose of data analytics is clear, businesses need to determine which data sources to use, which data points to concentrate on and how to collect the data."
+      },
+      {
+        question: "The organisation identifies and removes duplicate records, anomalous data and inconsistencies that could distort its results. Which stage is being performed?",
+        options: [
+          "Data Visualization",
+          "Cleaning the Data",
+          "Data Requirement and Gathering",
+          "Final presentation of recommendations"
+        ],
+        answer: 1,
+        reason: "Data Cleaning involves identifying and removing duplicate data, anomalous data and other inconsistencies that could skew the analysis and affect the accuracy of the results."
+      },
+      {
+        question: "Summit Enterprises uses clustering analysis and anomaly detection to discover previously hidden patterns in its database. Which technique is being used?",
+        options: [
+          "Data Erasure",
+          "Two-factor Authentication",
+          "Data Governance",
+          "Data Mining"
+        ],
+        answer: 3,
+        reason: "The chapter describes Data Mining as knowledge discovery within databases and identifies clustering analysis, anomaly detection and association rule mining as techniques that can reveal hidden patterns."
+      },
+      {
+        question: "The organisation presents its findings in charts and graphs to help management interpret the results. Which stage does this illustrate?",
+        options: [
+          "Data Collection",
+          "Data Matching",
+          "Data Visualization",
+          "Access Control"
+        ],
+        answer: 2,
+        reason: "Data Visualization presents analysis results in forms such as charts and graphs. The chapter identifies tools such as Tableau for generating visual representations that help users interpret and understand results."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS06",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Horizon Consulting analyses business data to support management decisions. It prepares reports showing past performance, investigates reasons for changes in employee performance, forecasts future sales using historical data and recommends suitable actions based on business objectives. The organisation also uses digital tools to create interactive visualisations and communicate its findings to decision-makers.</p>
+    `,
+    questions: [
+      {
+        question: "Horizon Consulting prepares a report describing total sales and average revenue per customer for the previous quarter. Which type of Data Analytics is illustrated?",
+        options: [
+          "Descriptive Analytics",
+          "Diagnostic Analytics",
+          "Predictive Analytics",
+          "Prescriptive Analytics"
+        ],
+        answer: 0,
+        reason: "Descriptive Analytics provides an objective, fact-based description of what happened in the past. It can use summary statistics such as average revenue per customer to describe business performance."
+      },
+      {
+        question: "The organisation investigates why employee performance declined and examines possible relationships between absenteeism and overtime hours. Which type of Data Analytics is appropriate?",
+        options: [
+          "Descriptive Analytics",
+          "Prescriptive Analytics",
+          "Data Visualization",
+          "Diagnostic Analytics"
+        ],
+        answer: 3,
+        reason: "Diagnostic Analytics aims to answer why something happened. It investigates issues, root causes, patterns and relationships among variables. The chapter gives employee performance, absenteeism and overtime as an example of factors that may be analysed."
+      },
+      {
+        question: "Horizon Consulting uses historical and current data to forecast what is likely to happen to sales in the next quarter. This is an example of:",
+        options: [
+          "Data Matching",
+          "Predictive Analytics",
+          "Descriptive Analytics",
+          "Prescriptive Analytics"
+        ],
+        answer: 1,
+        reason: "Predictive Analytics uses previous data, along with mathematical models and historical and current data, to forecast trends and predict what is likely to happen in the future."
+      },
+      {
+        question: "The organisation evaluates relevant factors and recommends the best course of action to achieve a selected business goal. Which type of Data Analytics does this describe?",
+        options: [
+          "Descriptive Analytics",
+          "Diagnostic Analytics",
+          "Prescriptive Analytics",
+          "Data Profiling"
+        ],
+        answer: 2,
+        reason: "Prescriptive Analytics uses data to identify the best possible solution by considering significant factors. It aims to provide actionable steps towards a chosen goal."
+      },
+      {
+        question: "Which software is described in the chapter as an interactive data visualization product developed by Microsoft with a primary focus on business intelligence?",
+        options: [
+          "Microsoft Power BI",
+          "Microsoft Word",
+          "A firewall",
+          "A Hardware Security Module"
+        ],
+        answer: 0,
+        reason: "The chapter identifies Microsoft Power BI as an interactive data visualization software product developed by Microsoft, with a primary focus on business intelligence."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS07",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Evergreen Industries depends on accurate, complete and consistent business information for operational reporting and management decisions. It establishes internal standards and policies for managing data, examines datasets to identify quality issues, compares records from different databases to find records relating to the same entity, and combines customer information from multiple databases into a more usable form. Management also monitors data quality indicators to identify and address information quality issues.</p>
+    `,
+    questions: [
+      {
+        question: "What is the primary focus of Data Assurance?",
+        options: [
+          "Increasing the volume of data regardless of quality",
+          "Eliminating the need for management reports",
+          "Restricting all business information to printed documents",
+          "Ensuring data quality so that accurate and timely information is available for management and accountability"
+        ],
+        answer: 3,
+        reason: "The chapter explains that Data Assurance focuses on data quality. It supports accurate and timely information for managing services and accountability, assessing service effectiveness and prioritising resources."
+      },
+      {
+        question: "Evergreen establishes policies to manage the availability, usability, integrity and security of data in its enterprise systems. Which discipline is being implemented?",
+        options: [
+          "Data Visualization",
+          "Data Governance",
+          "Predictive Analytics",
+          "Marketing Data Collection"
+        ],
+        answer: 1,
+        reason: "Data Governance is the process of managing the availability, usability, integrity and security of data in enterprise systems based on internal data standards and policies that also control data usage."
+      },
+      {
+        question: "The organisation examines and analyses its datasets and prepares useful summaries to identify data quality issues, risks and trends. This process is known as:",
+        options: [
+          "Data Profiling",
+          "Data Encryption",
+          "Data Erasure",
+          "Two-factor Authentication"
+        ],
+        answer: 0,
+        reason: "Data Profiling involves examining, analysing and creating useful summaries of data. It provides a high-level overview that helps identify data quality issues, risks and overall trends."
+      },
+      {
+        question: "Evergreen compares two datasets to identify records that refer to the same entity and to detect duplicates. Which process is being performed?",
+        options: [
+          "Data Visualization",
+          "Prescriptive Analytics",
+          "Data Matching",
+          "Data Collection Limitation"
+        ],
+        answer: 2,
+        reason: "Data Matching involves comparing two different datasets and matching them to identify data relating to the same entity. It can also be used to detect duplicate data within a database."
+      },
+      {
+        question: "Evergreen combines customer information from different databases into a single, more usable and accessible form to improve its analytical capabilities. Which process is illustrated?",
+        options: [
+          "Product Information Management (PIM)",
+          "Data Quality Reporting",
+          "Digital Asset Management (DAM)",
+          "Customer Data Integration (CDI)"
+        ],
+        answer: 3,
+        reason: "Customer Data Integration (CDI) is the process of combining and organising customer data from different databases into a single, more usable and accessible form to enhance analytical capabilities."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS08",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Meridian Solutions conducts business electronically and maintains customer information, digital records and computerised transaction data. The organisation relies on electronic communication for business activities and processes sensitive personal information. Its management reviews the Information Technology Act, 2000, to understand the legal recognition of electronic transactions, digital signatures and electronic records, as well as the consequences of certain unauthorised activities and failure to protect sensitive personal data.</p>
+    `,
+    questions: [
+      {
+        question: "What is one of the principal objectives of the Information Technology Act, 2000, as described in the chapter?",
+        options: [
+          "To prohibit all electronic transactions",
+          "To replace every computerised record with a paper document",
+          "To provide legal recognition to transactions carried out through electronic data interchange and other means of electronic communication",
+          "To prevent the electronic filing of documents with government agencies"
+        ],
+        answer: 2,
+        reason: "The chapter explains that the Information Technology Act, 2000, was enacted to provide legal recognition to transactions carried out through electronic data interchange and other means of electronic communication, commonly referred to as electronic commerce."
+      },
+      {
+        question: "Which of the following is an objective of the Information Technology Act, 2000?",
+        options: [
+          "To give legal recognition to digital signatures and facilitate electronic filing of documents with government departments",
+          "To eliminate electronic storage of data",
+          "To prohibit electronic fund transfers between banks and financial institutions",
+          "To restrict all business communication to physical documents"
+        ],
+        answer: 0,
+        reason: "The chapter lists the legal recognition of digital signatures, electronic filing of documents with government departments, electronic storage of data and electronic fund transfers among the objectives of the Act."
+      },
+      {
+        question: "Under Section 2(o) of the Information Technology Act, 2000, which statement best describes the term 'Data'?",
+        options: [
+          "Only printed reports approved by management",
+          "Only financial statements stored on paper",
+          "Only information visible on a computer screen",
+          "A representation of information, knowledge, facts, concepts or instructions prepared in a formalised manner and intended to be processed, being processed or having been processed in a computer system or network"
+        ],
+        answer: 3,
+        reason: "Section 2(o), as reproduced in the chapter, defines Data as a representation of information, knowledge, facts, concepts or instructions prepared in a formalised manner and intended to be processed, being processed or having been processed in a computer system or computer network. It may be in various forms or stored in computer memory."
+      },
+      {
+        question: "A body corporate handling sensitive personal data negligently fails to implement and maintain reasonable security practices and thereby causes wrongful loss or wrongful gain. Which provision is discussed in the chapter in this context?",
+        options: [
+          "Section 65, relating to tampering with computer source documents",
+          "Section 43A, relating to compensation for failure to protect data",
+          "Section 66C, relating to identity theft",
+          "Section 67, relating to publishing or transmitting obscene material in electronic form"
+        ],
+        answer: 1,
+        reason: "Section 43A, as reproduced in the chapter, addresses compensation where a body corporate handling sensitive personal data or information is negligent in implementing and maintaining reasonable security practices and thereby causes wrongful loss or wrongful gain."
+      },
+      {
+        question: "A person fraudulently uses another individual's password or other unique identification feature. Which provision listed in the chapter specifically addresses identity theft?",
+        options: [
+          "Section 43",
+          "Section 65",
+          "Section 66C",
+          "Section 67A"
+        ],
+        answer: 2,
+        reason: "Section 66C of the Information Technology Act, 2000, as reproduced in the chapter, deals with punishment for identity theft through fraudulent or dishonest use of another person's electronic signature, password or other unique identification feature."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS09",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>BrightPath Services processes digital personal data collected through its website and from offline forms that are subsequently digitised. The organisation determines the purposes for which the information will be processed and provides individuals with a notice describing the personal data to be collected and the purpose of processing before seeking consent. It also establishes procedures for handling requests from individuals and for meeting its obligations when personal data is processed.</p>
+    `,
+    questions: [
+      {
+        question: "Which statement best describes the applicability of the Digital Personal Data Protection Act, 2023, as outlined in the chapter?",
+        options: [
+          "It applies only to printed documents that are never digitised",
+          "It applies only to data collected by private companies outside India",
+          "It applies only to financial data and excludes other personal data",
+          "It applies to digital personal data processed within India, including offline data that is digitised, and to processing outside India when connected with offering goods or services in India"
+        ],
+        answer: 3,
+        reason: "The chapter states that the Act applies to digital personal data processed within India where the data is collected online or collected offline and digitised. It also applies to processing outside India when it is for offering goods or services in India."
+      },
+      {
+        question: "Under the Digital Personal Data Protection Act, 2023, what must generally occur before personal data is processed for a lawful purpose on the basis of consent?",
+        options: [
+          "The organisation must publish every individual's personal data",
+          "A notice describing the personal data to be collected and the purpose of processing must be provided before seeking consent",
+          "The organisation must retain the data indefinitely",
+          "The organisation must allow all third parties to access the information"
+        ],
+        answer: 1,
+        reason: "The chapter states that personal data may be processed only for a lawful purpose after obtaining the individual's consent. A notice containing details of the personal data to be collected and the purpose of processing must be given before seeking consent."
+      },
+      {
+        question: "Who must provide consent for processing the personal data of an individual below 18 years of age, according to the chapter?",
+        options: [
+          "The parent or legal guardian",
+          "Any employee of the organisation",
+          "Any third-party data processor",
+          "The organisation's marketing department"
+        ],
+        answer: 0,
+        reason: "The chapter states that, for individuals below 18 years of age, consent will be provided by the parent or legal guardian."
+      },
+      {
+        question: "Which of the following is a right of a data principal under the Digital Personal Data Protection Act, 2023, as outlined in the chapter?",
+        options: [
+          "The right to require an organisation to retain all personal data permanently",
+          "The right to use another person's identity without permission",
+          "The right to seek information about processing, request correction of inaccurate or incomplete data, and seek erasure of data no longer required for processing",
+          "The right to access every other individual's personal records"
+        ],
+        answer: 2,
+        reason: "The chapter identifies rights of the data principal that include obtaining information about the processing of personal data, correcting inaccurate or incomplete data, erasing data that is no longer required for processing, registering grievances and nominating another individual to exercise these rights in specified circumstances."
+      },
+      {
+        question: "Which obligation of a data fiduciary is specified in the chapter?",
+        options: [
+          "To share personal data with every third party without restriction",
+          "To retain personal data even when its purpose has been met and retention is not legally necessary",
+          "To allow personal data to be altered without appropriate controls",
+          "To make reasonable efforts to ensure accuracy and completeness, implement reasonable security safeguards, and inform the Data Protection Board of India and affected persons in the event of a data breach"
+        ],
+        answer: 3,
+        reason: "The chapter states that data fiduciaries must make reasonable efforts to ensure accuracy and completeness, build reasonable security safeguards to prevent data breaches, inform the Data Protection Board of India and affected persons in the event of a breach, and erase personal data when the purpose has been met and retention is not necessary for legal purposes."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS10",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Northstar Digital Services reviews its data protection arrangements with reference to the Digital Personal Data Protection Act, 2023, and the General Data Protection Regulation (GDPR). The organisation identifies the entity responsible for determining the purposes and means of processing personal data, reviews the functions of the Data Protection Board of India and adopts principles for collecting, using, retaining and protecting personal information. Management also compares the scope of the two regulatory frameworks when processing personal data.</p>
+    `,
+    questions: [
+      {
+        question: "Under the Digital Personal Data Protection Act, 2023, what is a data fiduciary?",
+        options: [
+          "An entity that determines the purpose and means of processing personal data",
+          "An individual whose personal data is being processed",
+          "A tool used exclusively for data visualisation",
+          "A software programme used only for encryption"
+        ],
+        answer: 0,
+        reason: "The chapter describes a data fiduciary as the entity that determines the purpose and means of processing personal data."
+      },
+      {
+        question: "Which of the following is a key function of the Data Protection Board of India described in the chapter?",
+        options: [
+          "Preparing the financial statements of every data fiduciary",
+          "Replacing all organisations' internal data governance teams",
+          "Monitoring compliance, imposing penalties, directing necessary measures in the event of a data breach and hearing grievances from affected persons",
+          "Prohibiting all processing of digital personal data"
+        ],
+        answer: 2,
+        reason: "The chapter states that the Data Protection Board of India will monitor compliance and impose penalties, direct data fiduciaries to take necessary measures in the event of a data breach, and hear grievances made by affected persons."
+      },
+      {
+        question: "Under the GDPR principles described in the chapter, an organisation collects only the smallest amount of personal data necessary for a specific purpose. Which principle is being followed?",
+        options: [
+          "Storage Limitation",
+          "Data Minimization",
+          "Accountability",
+          "Data Visualization"
+        ],
+        answer: 1,
+        reason: "The GDPR principle of Data Minimization requires personal data to be collected in the smallest amount absolutely necessary for the specific purpose. The chapter explains that organisations should not collect personal data merely because it might be useful later."
+      },
+      {
+        question: "An organisation maintains evidence of the measures it has taken to ensure that its processing of personal data complies with applicable GDPR requirements. Which GDPR principle is most directly illustrated?",
+        options: [
+          "Purpose Limitation",
+          "Data Minimization",
+          "Storage Limitation",
+          "Accountability"
+        ],
+        answer: 3,
+        reason: "The chapter explains that Accountability requires the data controller to be responsible for compliance with the GDPR and indicates that organisations should be able to provide evidence of the measures they have taken to ensure compliance."
+      },
+      {
+        question: "Which distinction between the Digital Personal Data Protection Act, 2023, and the GDPR is stated in the chapter?",
+        options: [
+          "The DPDP Act applies exclusively to paper records, while the GDPR applies only to electronic records",
+          "The two frameworks have identical scope in every respect, including digitisation",
+          "The chapter describes the DPDP Act as applicable to digitised personal data, whereas the GDPR applies to personal data whether digitised or not",
+          "The GDPR does not contain data protection principles"
+        ],
+        answer: 2,
+        reason: "In its comparison of the two frameworks, the chapter states that the DPDP Act applies to personal digitised data, whereas the GDPR applies to personal data whether digitised or not."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch10_CS11",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Aviation Connect operates reservation systems, passenger management applications, digital air traffic controls and navigation systems. The organisation maintains sensitive passenger information, including passport and payment information. It relies on third-party vendors and Commercial Off-The-Shelf (COTS) software for certain operations. Management recognises that the interconnected nature of the aviation industry creates potential entry points for cyberattacks and decides to strengthen its data protection arrangements through encryption, appropriate key management and multifactor authentication.</p>
+    `,
+    questions: [
+      {
+        question: "Why is the aviation industry particularly vulnerable to cyberattacks, as explained in the chapter?",
+        options: [
+          "It uses only paper-based systems for passenger management",
+          "Its interconnected network spans several sectors and stakeholders, each of which may be a potential entry point for attackers",
+          "It does not maintain sensitive passenger information",
+          "Its digital systems eliminate the possibility of operational disruption"
+        ],
+        answer: 1,
+        reason: "The chapter explains that the aviation industry is a largely interconnected network spanning various sectors and stakeholders, and each one is a potential entry point for attackers."
+      },
+      {
+        question: "Which risk is associated with the use of third-party systems and Commercial Off-The-Shelf (COTS) software?",
+        options: [
+          "They eliminate all information security risks",
+          "They ensure that data cannot be accessed by unauthorised persons",
+          "They may not always have reliable and robust security, leaving systems more prone to attacks",
+          "They remove the need for operational security procedures"
+        ],
+        answer: 2,
+        reason: "The chapter states that third-party systems and software do not always have reliable and robust security, leaving them more prone to attacks."
+      },
+      {
+        question: "Which measure should Aviation Connect adopt to protect data stored in its databases?",
+        options: [
+          "Ensure that data remains encrypted while at rest",
+          "Encrypt data only after a security incident",
+          "Allow third-party processors unrestricted access to readable data",
+          "Store sensitive data without encryption"
+        ],
+        answer: 0,
+        reason: "The chapter recommends ensuring that data remains encrypted while at rest in databases to prevent unauthorised parties from accessing unencrypted data."
+      },
+      {
+        question: "Which arrangement concerning the Hardware Security Module (HSM) and encryption keys is consistent with the chapter?",
+        options: [
+          "The third-party processor should retain all encryption keys",
+          "Encryption keys should be shared with every vendor",
+          "The HSM should be accessible to all third-party processors",
+          "The HSM must not be accessible by the third-party data processor, and encryption keys should remain stored in the company's vaulted data centre"
+        ],
+        answer: 3,
+        reason: "The chapter specifies that HSMs must not be accessible by the third-party data processor and that encryption keys must remain stored in the company's vaulted data centre."
+      },
+      {
+        question: "Why should Aviation Connect implement multifactor authentication for clients?",
+        options: [
+          "To permit passengers to view one another's personal data",
+          "To generally limit access to data to authorised persons",
+          "To eliminate the need for encryption",
+          "To allow vendors unrestricted access to customer records"
+        ],
+        answer: 1,
+        reason: "The chapter recommends mandatory multifactor authentication to generally limit access to data to authorised persons, such as passengers who can view their personal data."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS12",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Orchid Digital Services collects personal data from customers through its online portal. The organisation establishes procedures to determine what information may be collected, the purposes for which it may be used and the persons authorised to access it. It checks whether collected information is accurate and relevant to its intended purpose. Customers may request information about their personal data and seek correction or erasure wherever applicable. Management also assigns responsibility for implementing the organisation's data protection practices.</p>
+    `,
+    questions: [
+      {
+        question: "Which concept provides guidelines for how data should be collected or handled based on its sensitivity and importance?",
+        options: [
+          "Data Mining",
+          "Data Visualization",
+          "Data Profiling",
+          "Data Privacy"
+        ],
+        answer: 3,
+        reason: "The chapter defines Data Privacy as a guideline for how data should be collected or handled based on its sensitivity and importance."
+      },
+      {
+        question: "Orchid limits the personal data collected and standardises collection procedures across its business processes. Which Fair Information Practice does this illustrate?",
+        options: [
+          "Individual Participation",
+          "Collection Limitation",
+          "Data Visualization",
+          "Data Matching"
+        ],
+        answer: 1,
+        reason: "Collection Limitation requires limits on how much personal data can be collected and recommends standardising data collection procedures across business processes."
+      },
+      {
+        question: "Orchid checks whether personal data is accurate and directly relevant to its intended purpose. Which Fair Information Practice is being followed?",
+        options: [
+          "Data Quality",
+          "Use Limitation",
+          "Accountability",
+          "Individual Participation"
+        ],
+        answer: 0,
+        reason: "The Data Quality principle requires personal data to be accurate and directly relevant to its intended purpose. Appropriate controls should maintain data quality during collection, processing and storage."
+      },
+      {
+        question: "Orchid specifies the purpose for which personal data is collected and restricts its use to that specified purpose. Which Fair Information Practice is most directly illustrated?",
+        options: [
+          "Security Safeguards",
+          "Individual Participation",
+          "Purpose Specification",
+          "Data Profiling"
+        ],
+        answer: 2,
+        reason: "Purpose Specification requires the use of personal data to be specified and the data to be used only for that specified purpose."
+      },
+      {
+        question: "An individual asks Orchid who holds their personal data and requests correction of an inaccurate record. Which Fair Information Practice is most directly relevant?",
+        options: [
+          "Collection Limitation",
+          "Security Safeguards",
+          "Purpose Specification",
+          "Individual Participation"
+        ],
+        answer: 3,
+        reason: "Individual Participation includes the right to know who has personal data, to have the data communicated to the individual, to know why a request is denied and to have personal data corrected or erased."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS13",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Meridian Finance maintains customer records and transaction information in its business systems. The organisation encrypts sensitive information, monitors network traffic, verifies users through two-factor authentication and restricts access to corporate resources. It also monitors data usage to identify suspicious activities that could result in unauthorised copying, deletion or leakage of confidential information. Management assigns appropriate security responsibilities to the Information Technology team.</p>
+    `,
+    questions: [
+      {
+        question: "How does encryption protect business information?",
+        options: [
+          "It makes sensitive information publicly readable",
+          "It automatically removes all duplicate records",
+          "It conceals information by scrambling it so that parties with the appropriate encryption key can decrypt it",
+          "It eliminates the need for user authentication"
+        ],
+        answer: 2,
+        reason: "The chapter explains that encryption conceals information by scrambling it. Only parties with the encryption key can unscramble the information."
+      },
+      {
+        question: "What is the primary role of a firewall?",
+        options: [
+          "To monitor network traffic and provide a line of defence against external cyber threats",
+          "To combine customer data from different databases",
+          "To prepare financial statements",
+          "To determine the purpose for collecting personal data"
+        ],
+        answer: 0,
+        reason: "The chapter explains that firewalls monitor incoming and outgoing network traffic and act as a first line of defence against external cyber threats."
+      },
+      {
+        question: "Which example illustrates Two-factor Authentication (2FA)?",
+        options: [
+          "Entering only a username",
+          "Allowing multiple users to share a password",
+          "Saving a customer report in a spreadsheet",
+          "Entering a username and password followed by an authentication code sent to a mobile device"
+        ],
+        answer: 3,
+        reason: "The chapter identifies a username and password combined with a mobile-based One-Time Password (OTP) as a widely used example of two-factor authentication."
+      },
+      {
+        question: "How do access controls help protect Meridian Finance's systems?",
+        options: [
+          "They permit every employee to access every file",
+          "They use authentication and authorisation to determine whether users may access selected corporate resources",
+          "They replace the need to verify users",
+          "They automatically convert qualitative data into quantitative data"
+        ],
+        answer: 1,
+        reason: "Access controls ensure that only authorised parties access systems and data. They perform authentication and authorisation to verify whether a user is allowed to access particular resources."
+      },
+      {
+        question: "Which activity is a principal function of Data Loss Prevention (DLP) systems?",
+        options: [
+          "Forecasting future sales only",
+          "Preparing physical building plans",
+          "Monitoring data usage and detecting suspicious activities to help prevent leakage of confidential business information",
+          "Determining the market value of digital assets"
+        ],
+        answer: 2,
+        reason: "DLP systems help secure data against unwanted copying or deletion. They monitor the use of data and detect suspicious activities to prevent leakage of confidential business information."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS14",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Nova Retail collects information from business transactions, customer records, trade publications, social media interactions and customer interviews. Management analyses transaction records to understand the organisation's financial condition and studies external publications to identify market trends. Customer behaviour and preferences are examined for marketing purposes. The organisation also uses building plans when redesigning its physical infrastructure and analyses both numerical sales figures and descriptive customer feedback.</p>
+    `,
+    questions: [
+      {
+        question: "Nova Retail analyses point-of-sale transactions and customer records to understand its operations and financial condition. What type of data is being used?",
+        options: [
+          "External Data",
+          "Structural Data",
+          "Marketing Data only",
+          "Internal Data"
+        ],
+        answer: 3,
+        reason: "Internal Data comes from business transactions such as point-of-sale records and customer records. It provides insight into how the enterprise operates and its financial condition."
+      },
+      {
+        question: "Nova Retail obtains market trends from trade associations, government agencies and trade publications. These are examples of:",
+        options: [
+          "Internal Data",
+          "External Data",
+          "Structural Data",
+          "Data Quality Reporting"
+        ],
+        answer: 1,
+        reason: "External Data focuses on trends relating to consumers, competitors, markets and suppliers. Sources include trade associations, government agencies and trade publications."
+      },
+      {
+        question: "The organisation analyses customer behaviour, preferences, social media activity and web cookies to target individuals with tailored messages. This is:",
+        options: [
+          "Marketing Data",
+          "Structural Data",
+          "Data Governance",
+          "Master Data Management"
+        ],
+        answer: 0,
+        reason: "Marketing Data pertains to information about customers, their behaviour and preferences. It may include social media activity, web cookies and advertising retargeting."
+      },
+      {
+        question: "Nova Retail examines building plans and blueprints when redesigning its physical infrastructure. Which type of data is involved?",
+        options: [
+          "Internal Data",
+          "Marketing Data",
+          "External Data",
+          "Structural Data"
+        ],
+        answer: 3,
+        reason: "Structural Data is used to design or redesign physical infrastructure, such as building plans and blueprints that show how structural elements should be configured."
+      },
+      {
+        question: "Which statement correctly distinguishes Qualitative Data from Quantitative Data?",
+        options: [
+          "Qualitative Data consists exclusively of numerical values, whereas Quantitative Data consists only of descriptions",
+          "Qualitative Data is descriptive and non-statistical, whereas Quantitative Data consists of numerical values and is measurable",
+          "Both types consist exclusively of numerical values",
+          "Both types consist exclusively of interviews and documents"
+        ],
+        answer: 1,
+        reason: "The chapter describes Qualitative Data as descriptive and non-statistical, often generated through texts, interviews, observations and recordings. Quantitative Data consists of numbers and values and is statistical, conclusive and measurable."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS15",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Summit Enterprises intends to improve its business decisions through data analysis. Management first identifies the business questions it needs to answer and determines its data requirements. It then identifies suitable data sources and collects relevant information. The collected records are reviewed to remove duplicates, anomalous data and inconsistencies. The organisation analyses the resulting data to identify patterns and presents its findings through charts and graphs for management review.</p>
+    `,
+    questions: [
+      {
+        question: "What should Summit Enterprises do first in the Data Analysis process?",
+        options: [
+          "Define its data requirements, establish clear objectives and determine the questions it wants to answer",
+          "Prepare charts without identifying its objectives",
+          "Delete all historical business information",
+          "Publish unreviewed data"
+        ],
+        answer: 0,
+        reason: "The first stage is Data Requirement and Gathering. Businesses should establish clear objectives, determine why data is required and define the questions to be answered."
+      },
+      {
+        question: "After determining its data requirements, which activity should Summit Enterprises undertake?",
+        options: [
+          "Delete the entire database",
+          "Prepare the final report before collecting information",
+          "Determine suitable data sources and collect relevant data",
+          "Ignore the purpose of the analysis"
+        ],
+        answer: 2,
+        reason: "Once the purpose of data analytics is clear, businesses determine which data sources to use, which data points to concentrate on and how to collect that data."
+      },
+      {
+        question: "Summit Enterprises identifies and removes duplicate records, anomalous data and inconsistencies that could distort its results. Which stage is being performed?",
+        options: [
+          "Data Visualization",
+          "Cleaning the Data",
+          "Data Requirement and Gathering",
+          "Presentation of recommendations"
+        ],
+        answer: 1,
+        reason: "Data Cleaning involves identifying and removing duplicate data, anomalous data and other inconsistencies that could skew analysis and affect the accuracy of results."
+      },
+      {
+        question: "The organisation applies clustering analysis and anomaly detection to discover hidden patterns in its database. Which technique is being used?",
+        options: [
+          "Data Erasure",
+          "Two-factor Authentication",
+          "Data Governance",
+          "Data Mining"
+        ],
+        answer: 3,
+        reason: "The chapter describes Data Mining as knowledge discovery within databases and identifies clustering analysis and anomaly detection as techniques for unveiling hidden patterns."
+      },
+      {
+        question: "Summit Enterprises presents its findings in charts and graphs to help management interpret the results. Which stage does this illustrate?",
+        options: [
+          "Data Collection",
+          "Data Matching",
+          "Data Visualization",
+          "Access Control"
+        ],
+        answer: 2,
+        reason: "Data Visualization presents the results of analysis through charts and graphs. The chapter identifies tools such as Tableau for generating visual representations that help users interpret and understand results."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS16",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Horizon Consulting uses digital data to support business decisions. It prepares reports showing past performance, investigates the reasons for changes in employee performance, forecasts future sales using historical data and recommends suitable actions to achieve business objectives. The organisation also uses digital tools to prepare reports, dashboards and visual representations that can be understood by decision-makers.</p>
+    `,
+    questions: [
+      {
+        question: "Horizon Consulting prepares a report describing sales and average revenue per customer for the previous quarter. Which type of Data Analytics is illustrated?",
+        options: [
+          "Descriptive Analytics",
+          "Diagnostic Analytics",
+          "Predictive Analytics",
+          "Prescriptive Analytics"
+        ],
+        answer: 0,
+        reason: "Descriptive Analytics provides an objective, fact-based description of what happened in the past. It may use summary statistics, such as average revenue per customer, to describe business performance."
+      },
+      {
+        question: "The organisation investigates why employee performance declined and examines possible relationships between absenteeism and overtime hours. Which type of Data Analytics is appropriate?",
+        options: [
+          "Descriptive Analytics",
+          "Prescriptive Analytics",
+          "Data Visualization",
+          "Diagnostic Analytics"
+        ],
+        answer: 3,
+        reason: "Diagnostic Analytics aims to answer why something happened. It investigates issues, root causes, patterns and relationships among variables. The chapter discusses employee performance, absenteeism and overtime hours as factors that may be analysed."
+      },
+      {
+        question: "Horizon Consulting uses historical and current data to forecast future sales trends. Which type of Data Analytics is being applied?",
+        options: [
+          "Data Matching",
+          "Predictive Analytics",
+          "Descriptive Analytics",
+          "Prescriptive Analytics"
+        ],
+        answer: 1,
+        reason: "Predictive Analytics uses previous data, mathematical models and historical and current data to forecast trends and predict what is likely to happen in the future."
+      },
+      {
+        question: "The organisation evaluates significant factors and recommends the best course of action to achieve a selected business goal. Which type of Data Analytics does this describe?",
+        options: [
+          "Descriptive Analytics",
+          "Diagnostic Analytics",
+          "Prescriptive Analytics",
+          "Data Profiling"
+        ],
+        answer: 2,
+        reason: "Prescriptive Analytics uses data to identify the best possible solution by considering significant factors. It aims to provide actionable steps towards a chosen goal."
+      },
+      {
+        question: "Which software is described in the chapter as an interactive data visualization product developed by Microsoft with a primary focus on business intelligence?",
+        options: [
+          "Microsoft Power BI",
+          "Microsoft Word",
+          "A firewall",
+          "A Hardware Security Module"
+        ],
+        answer: 0,
+        reason: "The chapter identifies Microsoft Power BI as an interactive data visualization software product developed by Microsoft, with a primary focus on business intelligence."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS17",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Evergreen Industries relies on accurate, complete and consistent information for business reporting and management decisions. It establishes standards and policies for managing data, examines datasets to identify quality issues, compares records from different databases to identify records relating to the same entity and reviews reports of data quality exceptions. The organisation also maintains shared master data assets to support uniformity and consistency across its business systems.</p>
+    `,
+    questions: [
+      {
+        question: "What is the primary focus of Data Assurance?",
+        options: [
+          "Increasing the volume of data regardless of its quality",
+          "Eliminating the requirement for management reports",
+          "Restricting all business information to printed documents",
+          "Focusing on data quality to support accurate and timely information for management and accountability"
+        ],
+        answer: 3,
+        reason: "The chapter explains that Data Assurance focuses on data quality and supports accurate and timely information for managing services and accountability, assessing service effectiveness and prioritising resources."
+      },
+      {
+        question: "Evergreen establishes internal standards and policies to manage the availability, usability, integrity and security of data. Which discipline is being implemented?",
+        options: [
+          "Data Visualization",
+          "Data Governance",
+          "Predictive Analytics",
+          "Marketing Data Collection"
+        ],
+        answer: 1,
+        reason: "Data Governance is the process of managing the availability, usability, integrity and security of data in enterprise systems based on internal data standards and policies that also control data usage."
+      },
+      {
+        question: "The organisation examines and analyses datasets to create useful summaries that reveal data quality issues, risks and trends. This process is known as:",
+        options: [
+          "Data Profiling",
+          "Data Encryption",
+          "Data Erasure",
+          "Two-factor Authentication"
+        ],
+        answer: 0,
+        reason: "Data Profiling involves examining, analysing and creating useful summaries of data. The process provides a high-level overview that helps discover data quality issues, risks and overall trends."
+      },
+      {
+        question: "Evergreen compares two datasets to identify records that refer to the same entity and to detect duplicate data. Which process is being performed?",
+        options: [
+          "Data Visualization",
+          "Prescriptive Analytics",
+          "Data Matching",
+          "Collection Limitation"
+        ],
+        answer: 2,
+        reason: "Data Matching involves comparing two different datasets and matching them to identify data relating to the same entity. It can also be used to detect duplicate data within a database."
+      },
+      {
+        question: "Evergreen manages official shared master data assets to ensure uniformity, accuracy, stewardship and semantic consistency. Which discipline does this illustrate?",
+        options: [
+          "Customer Data Integration (CDI)",
+          "Product Information Management (PIM)",
+          "Digital Asset Management (DAM)",
+          "Master Data Management (MDM)"
+        ],
+        answer: 3,
+        reason: "Master Data Management is a technology-enabled discipline in which business and IT work together to ensure the uniformity, accuracy, stewardship, semantic consistency and accountability of the enterprise's official shared master data assets."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS18",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Meridian Solutions conducts business electronically and maintains computerised transaction records, customer information and digital documents. Its management reviews the Information Technology Act, 2000, to understand the legal recognition of electronic transactions and digital signatures. The organisation also reviews the legal provisions relating to unauthorised access to computer resources, damage to computer systems and failure to protect sensitive personal data. It maintains documented security procedures to protect the information it handles.</p>
+    `,
+    questions: [
+      {
+        question: "Which of the following is a principal objective of the Information Technology Act, 2000?",
+        options: [
+          "To prohibit all electronic transactions",
+          "To replace every computerised record with a paper document",
+          "To provide legal recognition to transactions carried out through electronic data interchange and other means of electronic communication",
+          "To prohibit the electronic filing of documents with government agencies"
+        ],
+        answer: 2,
+        reason: "The chapter explains that the Information Technology Act, 2000, was enacted to provide legal recognition to transactions carried out through electronic data interchange and other means of electronic communication, commonly referred to as electronic commerce."
+      },
+      {
+        question: "Which objective of the Information Technology Act, 2000, is specifically identified in the chapter?",
+        options: [
+          "To give legal recognition to digital signatures and facilitate electronic filing of documents with government departments",
+          "To eliminate electronic storage of data",
+          "To prohibit electronic fund transfers between banks and financial institutions",
+          "To restrict business communication to physical documents"
+        ],
+        answer: 0,
+        reason: "The chapter identifies legal recognition of digital signatures, electronic filing of documents with government departments, electronic storage of data and electronic fund transfers among the objectives of the Act."
+      },
+      {
+        question: "Which provision of the Information Technology Act, 2000, addresses compensation for damage to a computer, computer system or computer network through specified unauthorised acts?",
+        options: [
+          "Section 65",
+          "Section 66C",
+          "Section 67A",
+          "Section 43"
+        ],
+        answer: 3,
+        reason: "Section 43, as reproduced in the chapter, addresses penalty and compensation for damage to a computer, computer system or computer network. The listed acts include unauthorised access, copying or extracting data, introducing a computer contaminant, damaging systems and deleting or altering information."
+      },
+      {
+        question: "A body corporate handling sensitive personal data negligently fails to implement and maintain reasonable security practices and thereby causes wrongful loss or wrongful gain. Which provision addresses this situation in the chapter?",
+        options: [
+          "Section 65, relating to tampering with computer source documents",
+          "Section 43A, relating to compensation for failure to protect data",
+          "Section 66C, relating to identity theft",
+          "Section 67, relating to publishing or transmitting obscene material in electronic form"
+        ],
+        answer: 1,
+        reason: "Section 43A, as reproduced in the chapter, addresses compensation where a body corporate handling sensitive personal data or information is negligent in implementing and maintaining reasonable security practices and thereby causes wrongful loss or wrongful gain."
+      },
+      {
+        question: "Which of the following is included in Sensitive Personal Information (SPI), as listed in the chapter's discussion of the Information Technology Rules?",
+        options: [
+          "A publicly available product catalogue",
+          "A general advertisement",
+          "Passwords and financial information",
+          "A public timetable"
+        ],
+        answer: 2,
+        reason: "The chapter lists passwords, financial information, credit card and debit card details, physical, physiological and mental health conditions, sexual orientation, medical records and history, and biometric information among Sensitive Personal Information."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS19",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>BrightPath Services processes digital personal data collected through its website and from offline forms that are subsequently digitised. Before seeking consent, the organisation provides individuals with a notice describing the personal data to be collected and the purpose of processing. Management also establishes procedures for receiving requests from individuals, correcting inaccurate or incomplete data and erasing personal data when it is no longer required for processing and retention is not necessary for legal purposes. The organisation reviews its obligations when a data breach occurs.</p>
+    `,
+    questions: [
+      {
+        question: "Which statement best describes the applicability of the Digital Personal Data Protection Act, 2023, as outlined in the chapter?",
+        options: [
+          "It applies only to paper documents that are never digitised",
+          "It applies only to financial information collected by private companies outside India",
+          "It applies only to government records maintained on paper",
+          "It applies to digital personal data processed within India, including offline data that is digitised, and to processing outside India when connected with offering goods or services in India"
+        ],
+        answer: 3,
+        reason: "The chapter states that the Act applies to digital personal data processed within India where the data is collected online or collected offline and digitised. It also applies to processing outside India when it is for offering goods or services in India."
+      },
+      {
+        question: "What must generally be provided before seeking an individual's consent for processing personal data under the Act, as described in the chapter?",
+        options: [
+          "A list of all employees' personal records",
+          "A notice describing the personal data to be collected and the purpose of processing",
+          "A guarantee that data will never be erased",
+          "Unrestricted access for all third-party service providers"
+        ],
+        answer: 1,
+        reason: "The chapter states that personal data may be processed only for a lawful purpose after obtaining the individual's consent. A notice describing the personal data to be collected and the purpose of processing must be given before seeking consent."
+      },
+      {
+        question: "Who must provide consent for processing the personal data of an individual below 18 years of age, according to the chapter?",
+        options: [
+          "The parent or legal guardian",
+          "Any employee of the organisation",
+          "Any third-party data processor",
+          "The marketing department"
+        ],
+        answer: 0,
+        reason: "The chapter states that, for individuals below 18 years of age, consent will be provided by the parent or legal guardian."
+      },
+      {
+        question: "Which of the following is a right of a data principal under the Act, as outlined in the chapter?",
+        options: [
+          "The right to require an organisation to retain all personal data permanently",
+          "The right to access every other individual's personal records",
+          "The right to seek information about processing, request correction of inaccurate or incomplete data, and seek erasure of data that is no longer required for processing",
+          "The right to use another person's identity without permission"
+        ],
+        answer: 2,
+        reason: "The chapter identifies rights of data principals that include obtaining information about processing, correcting inaccurate or incomplete data, erasing data that is no longer required, registering grievances and nominating another individual to exercise these rights in specified circumstances."
+      },
+      {
+        question: "Which obligation of a data fiduciary is specified in the chapter?",
+        options: [
+          "To share all personal data without restriction",
+          "To retain all personal data permanently",
+          "To allow data to be changed without appropriate controls",
+          "To make reasonable efforts to ensure accuracy and completeness, implement reasonable security safeguards and inform the Data Protection Board of India and affected persons in the event of a data breach"
+        ],
+        answer: 3,
+        reason: "The chapter states that data fiduciaries must make reasonable efforts to ensure accuracy and completeness, build reasonable security safeguards to prevent data breaches, and inform the Data Protection Board of India and affected persons in the event of a breach. They must also erase personal data when the purpose has been met and retention is not necessary for legal purposes."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch10_CS20",
+    difficulty: "Easy",
+    chapter: "Chapter10",
+    caseText: `
+      <p>Northstar Digital Services reviews its data protection arrangements with reference to the Digital Personal Data Protection Act, 2023, and the General Data Protection Regulation (GDPR). Management identifies the entity that determines the purposes and means of processing personal data and reviews the functions of the Data Protection Board of India. The organisation also adopts principles for collecting, using, retaining and protecting personal information and compares the scope of the two regulatory frameworks.</p>
+    `,
+    questions: [
+      {
+        question: "Under the Digital Personal Data Protection Act, 2023, what is a data fiduciary?",
+        options: [
+          "An entity that determines the purpose and means of processing personal data",
+          "An individual whose personal data is being processed",
+          "A tool used exclusively for data visualisation",
+          "A software programme used only for encryption"
+        ],
+        answer: 0,
+        reason: "The chapter describes a data fiduciary as the entity that determines the purpose and means of processing personal data."
+      },
+      {
+        question: "Which of the following is a key function of the Data Protection Board of India described in the chapter?",
+        options: [
+          "Preparing the financial statements of every data fiduciary",
+          "Replacing every organisation's internal data governance team",
+          "Monitoring compliance, imposing penalties, directing necessary measures in the event of a data breach and hearing grievances made by affected persons",
+          "Prohibiting all processing of digital personal data"
+        ],
+        answer: 2,
+        reason: "The chapter states that the Data Protection Board of India will monitor compliance and impose penalties, direct data fiduciaries to take necessary measures in the event of a data breach, and hear grievances made by affected persons."
+      },
+      {
+        question: "An organisation collects only the smallest amount of personal data necessary for a specific purpose. Which GDPR principle is being followed?",
+        options: [
+          "Storage Limitation",
+          "Data Minimization",
+          "Accountability",
+          "Data Visualization"
+        ],
+        answer: 1,
+        reason: "The GDPR principle of Data Minimization requires personal data to be collected in the smallest amount absolutely necessary for the specific purpose. The chapter explains that organisations should not collect personal data merely because it might be useful later."
+      },
+      {
+        question: "An organisation maintains evidence of measures taken to ensure that its processing of personal data complies with GDPR requirements. Which GDPR principle is most directly illustrated?",
+        options: [
+          "Purpose Limitation",
+          "Data Minimization",
+          "Storage Limitation",
+          "Accountability"
+        ],
+        answer: 3,
+        reason: "Accountability requires the data controller to be responsible for ensuring compliance with the GDPR. The chapter states that organisations should be able to provide evidence of the measures taken to ensure compliance."
+      },
+      {
+        question: "Which distinction between the Digital Personal Data Protection Act, 2023, and the GDPR is stated in the chapter?",
+        options: [
+          "The DPDP Act applies exclusively to paper records, while the GDPR applies only to electronic records",
+          "Neither framework contains data protection principles",
+          "The chapter describes the DPDP Act as applicable to digitised personal data, whereas the GDPR applies to personal data whether digitised or not",
+          "Both frameworks prohibit the processing of all personal data"
+        ],
+        answer: 2,
+        reason: "In its comparison of the two frameworks, the chapter states that the DPDP Act applies to personal digitised data, whereas the GDPR applies to personal data whether digitised or not."
+      }
+    ]
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_01",
+    case_chapter: "chapter10",
+    question: "An organisation establishes strategies and processes to secure the privacy, availability and integrity of its data. Which concept is being implemented?",
+    options: [
+      "Data Analytics",
+      "Data Mining",
+      "Data Protection",
+      "Data Visualization"
+    ],
+    answer: 2,
+    reason: "Data Protection is a set of strategies and processes used to secure the privacy, availability and integrity of data. It helps prevent data loss, theft or corruption and minimises damage caused by a breach or disaster."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_02",
+    case_chapter: "chapter10",
+    question: "An organisation establishes guidelines regarding how personal data should be collected and handled based on its sensitivity and importance. Which concept does this illustrate?",
+    options: [
+      "Data Mining",
+      "Data Security",
+      "Data Assurance",
+      "Data Privacy"
+    ],
+    answer: 3,
+    reason: "Data Privacy provides guidelines for how data should be collected or handled based on its sensitivity and importance. It helps ensure that sensitive data is accessible only to approved parties and that organisations meet regulatory requirements."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_03",
+    case_chapter: "chapter10",
+    question: "A company implements measures to protect personal data against unauthorised third-party access, malicious attacks and exploitation. Which concept primarily addresses these measures?",
+    options: [
+      "Data Security",
+      "Data Visualization",
+      "Data Profiling",
+      "Data Analysis"
+    ],
+    answer: 0,
+    reason: "Data Security focuses on protecting personal data from unauthorised third-party access, malicious attacks and exploitation. It helps ensure the integrity of data, meaning that data is accurate, reliable and available to authorised parties."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_04",
+    case_chapter: "chapter10",
+    question: "An organisation introduces a policy that limits the amount of personal data collected and standardises its data collection procedures across business processes. Which Fair Information Practice is being followed?",
+    options: [
+      "Accountability",
+      "Collection Limitation",
+      "Individual Participation",
+      "Data Visualization"
+    ],
+    answer: 1,
+    reason: "Collection Limitation requires limits on how much personal data can be collected. Further, data collection procedures should be standardised across business processes, covering the concerns of the related stakeholders."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_05",
+    case_chapter: "chapter10",
+    question: "An organisation specifies the purpose for which personal data is collected and informs individuals about the intended use of their data. Which Fair Information Practice is most directly relevant?",
+    options: [
+      "Data Matching",
+      "Security Safeguards",
+      "Accountability",
+      "Purpose Specification"
+    ],
+    answer: 3,
+    reason: "Purpose Specification requires the use of personal data to be specified and the data to be used only for the specified purpose. The chapter also discusses encryption during and after usage to protect confidentiality."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_06",
+    case_chapter: "chapter10",
+    question: "A company converts its business information into a coded format so that only authorised persons possessing the appropriate security key can recover the original information. Which data security tool is being used?",
+    options: [
+      "Data Profiling",
+      "Firewall",
+      "Encryption",
+      "Data Matching"
+    ],
+    answer: 2,
+    reason: "Encryption conceals information by scrambling it so that it appears to be random data. Only parties with the encryption key can unscramble the information."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_07",
+    case_chapter: "chapter10",
+    question: "A company monitors incoming and outgoing network traffic to provide a first line of defence against external cyber threats. Which tool performs this function?",
+    options: [
+      "Master Data Management",
+      "Firewall",
+      "Data Mining",
+      "Customer Data Integration"
+    ],
+    answer: 1,
+    reason: "Firewalls monitor network traffic and act as a first line of defence against external cyber threats attempting to enter business networks."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_08",
+    case_chapter: "chapter10",
+    question: "A user enters a username and password and then enters an authentication code received on a mobile device before accessing an application. Which security mechanism is illustrated?",
+    options: [
+      "Two-factor Authentication (2FA)",
+      "Data Profiling",
+      "Data Matching",
+      "Data Visualization"
+    ],
+    answer: 0,
+    reason: "Two-factor Authentication (2FA) verifies users through a two-step process. The chapter identifies the use of a username and password together with a mobile-based One-Time Password (OTP) as a widely used example."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_09",
+    case_chapter: "chapter10",
+    question: "An organisation implements a system to monitor data usage, detect suspicious activities and prevent confidential business information from being copied or deleted without authorisation. Which tool is being used?",
+    options: [
+      "Business Intelligence",
+      "Data Visualization",
+      "Data Profiling",
+      "Data Loss Prevention (DLP)"
+    ],
+    answer: 3,
+    reason: "Data Loss Prevention (DLP) systems help protect data against unwanted copying or deletion. They monitor data usage and detect suspicious activities to prevent the leakage of confidential business information."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_10",
+    case_chapter: "chapter10",
+    question: "A business analyses point-of-sale transactions and customer records to understand its operations and financial condition. Which category of data is being analysed?",
+    options: [
+      "External Data",
+      "Structural Data",
+      "Internal Data",
+      "Marketing Data only"
+    ],
+    answer: 2,
+    reason: "Internal Data comes from business transactions, such as point-of-sale transactions and customer records. It provides insight into how an enterprise operates and the financial condition of the organisation."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_11",
+    case_chapter: "chapter10",
+    question: "An organisation analyses interview transcripts, observations, documents and customer feedback to understand characteristics and attributes that cannot be adequately represented by numerical measurements alone. Which type of data is primarily involved?",
+    options: [
+      "Quantitative Data",
+      "Qualitative Data",
+      "Internal Data only",
+      "Structural Data only"
+    ],
+    answer: 1,
+    reason: "Qualitative Data is descriptive and non-statistical. It may be generated through texts and documents, audio and video recordings, interview transcripts, focus groups, observations and notes."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_12",
+    case_chapter: "chapter10",
+    question: "During data analysis, an organisation identifies duplicate records, anomalous data and inconsistencies that could distort its results. Which stage of the Data Analysis process is being performed?",
+    options: [
+      "Data Visualization",
+      "Data Requirement and Gathering",
+      "Data Collection",
+      "Cleaning the Data"
+    ],
+    answer: 3,
+    reason: "Data Cleaning involves identifying and removing duplicate data, anomalous data and other inconsistencies that could skew the analysis and affect the accuracy of the results."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_13",
+    case_chapter: "chapter10",
+    question: "An organisation analyses past sales transactions and prepares summary statistics to understand what happened during the previous quarter. Which type of Data Analytics is being used?",
+    options: [
+      "Descriptive Analytics",
+      "Diagnostic Analytics",
+      "Predictive Analytics",
+      "Prescriptive Analytics"
+    ],
+    answer: 0,
+    reason: "Descriptive Analytics provides an objective, fact-based description of what happened in the past. It often uses basic mathematical operations to produce summary statistics that help an organisation understand its current business position."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_14",
+    case_chapter: "chapter10",
+    question: "A company's sales declined during a particular quarter. Management investigates the reasons for the decline and examines relationships among relevant business variables. Which type of Data Analytics is most appropriate?",
+    options: [
+      "Descriptive Analytics",
+      "Predictive Analytics",
+      "Diagnostic Analytics",
+      "Prescriptive Analytics"
+    ],
+    answer: 2,
+    reason: "Diagnostic Analytics focuses on answering the question, 'Why did this happen?' It investigates issues, possible root causes, patterns and correlations to understand the reasons behind an observed outcome."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_15",
+    case_chapter: "chapter10",
+    question: "A retailer uses historical and current sales data with mathematical models to forecast sales trends for the coming quarter. Which type of Data Analytics is illustrated?",
+    options: [
+      "Descriptive Analytics",
+      "Predictive Analytics",
+      "Diagnostic Analytics",
+      "Prescriptive Analytics"
+    ],
+    answer: 1,
+    reason: "Predictive Analytics uses historical and current data and mathematical models to forecast trends and estimate what is likely to happen in the future."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_16",
+    case_chapter: "chapter10",
+    question: "A bank analyses transaction data and recommends blocking a transaction when the analysis indicates possible fraud. Which type of Data Analytics is illustrated by the recommendation of an appropriate course of action?",
+    options: [
+      "Descriptive Analytics",
+      "Diagnostic Analytics",
+      "Predictive Analytics",
+      "Prescriptive Analytics"
+    ],
+    answer: 3,
+    reason: "Prescriptive Analytics uses data to identify the best possible solution by considering significant factors and provides actionable steps towards a chosen goal. The chapter gives detecting and flagging bank fraud and recommending that a transaction be blocked as an example."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_17",
+    case_chapter: "chapter10",
+    question: "An organisation focuses on ensuring that information is accurate and timely so that it can manage services, assess service effectiveness and prioritise resources. Which concept is primarily concerned with these objectives?",
+    options: [
+      "Data Assurance",
+      "Data Encryption",
+      "Data Visualization",
+      "Two-factor Authentication"
+    ],
+    answer: 0,
+    reason: "Data Assurance focuses on data quality. It supports the availability of accurate and timely information for managing services and accountability, assessing service effectiveness and ensuring the best use of resources."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_18",
+    case_chapter: "chapter10",
+    question: "An organisation establishes internal standards and policies to manage the availability, usability, integrity and security of data in its enterprise systems. Which discipline does this describe?",
+    options: [
+      "Predictive Analytics",
+      "Data Matching",
+      "Data Governance",
+      "Data Visualization"
+    ],
+    answer: 2,
+    reason: "Data Governance is the process of managing the availability, usability, integrity and security of data in enterprise systems, based on internal data standards and policies that also control data usage."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_19",
+    case_chapter: "chapter10",
+    question: "An organisation conducts electronic transactions and maintains business records electronically. Which of the following is a principal objective of the Information Technology Act, 2000, as described in the chapter?",
+    options: [
+      "To prohibit electronic storage of information",
+      "To prevent electronic filing of documents with government departments",
+      "To restrict all business transactions to paper-based methods",
+      "To provide legal recognition to electronic transactions and facilitate electronic filing of documents with government agencies"
+    ],
+    answer: 3,
+    reason: "The chapter identifies providing legal recognition to transactions carried out through electronic data interchange and other electronic communication, along with facilitating electronic filing of documents with government agencies, among the objectives of the Information Technology Act, 2000."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch10_20",
+    case_chapter: "chapter10",
+    question: "An organisation intends to process the digital personal data of an individual who is below 18 years of age. According to the Digital Personal Data Protection Act, 2023, as described in the chapter, who will provide consent?",
+    options: [
+      "Any employee of the organisation",
+      "The parent or legal guardian",
+      "Any third-party data processor",
+      "The organisation's marketing department"
+    ],
+    answer: 1,
+    reason: "The chapter states that under the Digital Personal Data Protection Act, 2023, consent for individuals below 18 years of age will be provided by the parent or legal guardian."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch10_21",
+    case_chapter: "chapter10",
+    question: "An organisation encrypts its customer information while it is stored in databases but leaves the information unencrypted while it is being processed and transmitted. Which Fair Information Practice is not being fully satisfied?",
+    options: [
+      "Collection Limitation",
+      "Individual Participation",
+      "Accountability",
+      "Security Safeguards"
+    ],
+    answer: 3,
+    reason: "The Security Safeguards principle requires data to be secured through encryption at all three stages: processing, transmission and storage. Encrypting data only while it is stored does not address the other two stages."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch10_22",
+    case_chapter: "chapter10",
+    question: "A financial services organisation collects customer information for a specified service. During collection and storage, it discovers that some records contain inaccurate information and other records contain information unrelated to the intended purpose. Which Fair Information Practice most directly addresses these deficiencies?",
+    options: [
+      "Individual Participation",
+      "Data Quality",
+      "Use Limitation",
+      "Security Safeguards"
+    ],
+    answer: 1,
+    reason: "The Data Quality principle requires personal data to be accurate and directly relevant to its intended purpose. Adequate controls should maintain data quality during collection, processing and storage to preserve data integrity."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch10_23",
+    case_chapter: "chapter10",
+    question: "A retailer examines customer preferences, web cookies and social media activity to develop tailored advertising messages for selected customer segments. Which category of business data is most directly involved?",
+    options: [
+      "Internal Data",
+      "Structural Data",
+      "Marketing Data",
+      "External Data"
+    ],
+    answer: 2,
+    reason: "Marketing Data pertains to information about customers, their behaviours and preferences. It may include social media activity, web cookies and advertising retargeting and is used to target individuals with tailored messages."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch10_24",
+    case_chapter: "chapter10",
+    question: "An organisation has completed the collection and cleaning of its relevant data. It now applies clustering analysis and anomaly detection to discover hidden patterns that were not previously visible. Which activity is it performing?",
+    options: [
+      "Data Analysis using Data Mining techniques",
+      "Data Requirement and Gathering",
+      "Collection Limitation",
+      "Data Erasure"
+    ],
+    answer: 0,
+    reason: "Data Mining is described as knowledge discovery within databases. Techniques such as clustering analysis and anomaly detection can reveal hidden patterns in data. These techniques form part of the data analysis activity."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch10_25",
+    case_chapter: "chapter10",
+    question: "A management team uses data and digital tools to evaluate business performance, understand customer behaviour and make informed business decisions. Within this broader activity, it undertakes specific processes such as collecting, filtering, analysing and visualising data. Which statement best describes the relationship between Data Analytics and Data Analysis?",
+    options: [
+      "Data Analysis is broader than Data Analytics and includes every business decision",
+      "Data Analytics and Data Analysis are unrelated activities",
+      "Data Analytics deals exclusively with historical financial data",
+      "Data Analytics is the broader field of using data and tools for business decisions, while Data Analysis is a subset involving specific processes"
+    ],
+    answer: 3,
+    reason: "The chapter describes Data Analytics as the broad field of using data and tools to make business decisions. Data Analysis is a subset of Data Analytics that includes specific processes."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch10_26",
+    case_chapter: "chapter10",
+    question: "A company examines its datasets, analyses their characteristics and prepares useful summaries to obtain a high-level overview of data quality issues, risks and overall trends. Which Data Assurance discipline is being applied?",
+    options: [
+      "Data Matching",
+      "Data Profiling",
+      "Customer Data Integration",
+      "Digital Asset Management"
+    ],
+    answer: 1,
+    reason: "Data Profiling involves examining, analysing and creating useful summaries of data. It provides a high-level overview that helps discover data quality issues, risks and overall trends."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch10_27",
+    case_chapter: "chapter10",
+    question: "An organisation identifies records that fail its data quality rules. It records the exceptions and aggregates them to identify recurring quality patterns. Which discipline is most directly associated with this activity?",
+    options: [
+      "Master Data Management",
+      "Data Profiling",
+      "Data Quality Reporting",
+      "Predictive Analytics"
+    ],
+    answer: 2,
+    reason: "Data Quality Reporting involves removing and recording compromising data in accordance with a process of data rule enforcement. Identified exceptions should be aggregated so that quality patterns can be identified."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch10_28",
+    case_chapter: "chapter10",
+    question: "An organisation maintains customer information in several databases. It combines and organises the information into a single, more usable and accessible form to enhance its analytical capabilities and identify engaged customers for a marketing campaign. Which discipline best describes this activity?",
+    options: [
+      "Customer Data Integration (CDI)",
+      "Product Information Management (PIM)",
+      "Digital Asset Management (DAM)",
+      "Data Quality Reporting"
+    ],
+    answer: 0,
+    reason: "Customer Data Integration (CDI) is the process of combining and organising customer data from different databases into a single, more usable and accessible form to enhance analytical capabilities. The chapter also gives targeted advertising to engaged customers as an example."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch10_29",
+    case_chapter: "chapter10",
+    question: "An auditor considers whether the definition of a computer under Section 2(i) of the Information Technology Act, 2000, is limited to desktop computers and laptops. Which conclusion is consistent with the chapter?",
+    options: [
+      "The definition covers only desktop computers used for accounting",
+      "The definition excludes devices that perform data processing automatically",
+      "The definition covers only computer software and excludes hardware",
+      "The definition is broad and includes qualifying electronic, magnetic, optical or other high-speed data processing devices or systems, along with connected or related facilities"
+    ],
+    answer: 3,
+    reason: "Section 2(i), as reproduced in the chapter, defines a computer broadly to include electronic, magnetic, optical or other high-speed data processing devices or systems performing logical, arithmetic and memory functions. It also includes connected or related input, output, processing, storage, software and communication facilities. The chapter notes that this definition extends beyond ordinary desktop computers and laptops."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch10_30",
+    case_chapter: "chapter10",
+    question: "An individual whose personal data is being processed makes arrangements for another individual to exercise their rights in the event of their death or incapacity. Which right of the data principal under the Digital Personal Data Protection Act, 2023, is illustrated?",
+    options: [
+      "The right to unrestricted access to other people's personal data",
+      "The right to nominate another individual to exercise specified rights",
+      "The right to prevent every lawful purpose of data processing",
+      "The right to require permanent retention of personal data"
+    ],
+    answer: 1,
+    reason: "The chapter states that data principals can nominate another individual to exercise their rights in the event of death or incapacity."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch10_31",
+    case_chapter: "chapter10",
+    question: "A company specifies the purpose for collecting customer information and grants an employee access to that information for the intended service. The employee subsequently uses the same information for an unrelated activity that was not specified. Which Fair Information Practice is most directly violated?",
+    options: [
+      "Collection Limitation, because all collection of personal data is prohibited",
+      "Data Quality, because every secondary use automatically makes data inaccurate",
+      "Use Limitation, because data should not be used for purposes other than those specified",
+      "Individual Participation, because individuals must approve every internal business activity"
+    ],
+    answer: 2,
+    reason: "The Use Limitation principle states that data should not be used for purposes other than those specified. The chapter also explains that multifactor authentication and authorisation mechanisms can support need-to-know and need-to-do access control. Merely having access to data does not justify an unrelated use."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch10_32",
+    case_chapter: "chapter10",
+    question: "An airline outsources passenger management to a third-party data processor. Management wants to protect passenger information while preventing the processor from obtaining readable data or control over the company's encryption keys. Which control arrangement best reflects the recommendations in the chapter?",
+    options: [
+      "Encrypt data at rest and in transit, prevent the third-party processor from accessing the HSM, retain encryption keys in the company's vaulted data centre and prevent third-party access to readable data",
+      "Encrypt data only while stored, but permit the processor to retain the encryption keys",
+      "Give the processor access to the HSM and rely exclusively on contractual confidentiality obligations",
+      "Encrypt data in transit but leave stored passenger information readable by third parties"
+    ],
+    answer: 0,
+    reason: "The chapter recommends encryption while data is at rest and in transit, preventing third-party access to HSMs, retaining encryption keys in the company's vaulted data centre and ensuring that third parties do not have access to readable data. These controls reduce the risk of unauthorised access to passenger information."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch10_33",
+    case_chapter: "chapter10",
+    question: "A retailer has already described its past sales performance, investigated the reasons for an increase in product returns and forecast the likely number of future returns. Management now wants data-driven recommendations about which actions should be taken to achieve its business objective. Which type of Data Analytics is required for this final requirement?",
+    options: [
+      "Descriptive Analytics, because it summarises what happened",
+      "Diagnostic Analytics, because it investigates why something happened",
+      "Predictive Analytics, because it forecasts what is likely to happen",
+      "Prescriptive Analytics, because it identifies a suitable course of action"
+    ],
+    answer: 3,
+    reason: "The four types of Data Analytics address different questions. Descriptive Analytics explains what happened, Diagnostic Analytics investigates why it happened, Predictive Analytics estimates what is likely to happen, and Prescriptive Analytics identifies the best possible solution and actionable steps towards a chosen goal."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch10_34",
+    case_chapter: "chapter10",
+    question: "An organisation has introduced rules for data quality. It identifies records that violate those rules, records the exceptions and aggregates the exceptions to identify recurring patterns. Management does not primarily require a high-level profile of the entire dataset or matching of records from separate datasets. Which discipline most directly meets its requirement?",
+    options: [
+      "Data Profiling",
+      "Data Quality Reporting",
+      "Data Matching",
+      "Customer Data Integration"
+    ],
+    answer: 1,
+    reason: "Data Quality Reporting records compromising data and captures exceptions according to data quality rules. Aggregating the exceptions helps identify quality patterns. Data Profiling instead provides a high-level overview of data quality issues, risks and trends, while Data Matching compares datasets to identify records relating to the same entity."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch10_35",
+    case_chapter: "chapter10",
+    question: "An organisation's business and IT teams jointly manage official shared master data relating to parties, products, financial structures and locations. Their objective is to ensure uniformity, accuracy, stewardship, semantic consistency and accountability. Which discipline most directly describes this arrangement?",
+    options: [
+      "Customer Data Integration (CDI), because all master data consists exclusively of customer records",
+      "Product Information Management (PIM), because the objective is limited to product distribution information",
+      "Master Data Management (MDM), because business and IT jointly maintain official shared master data assets",
+      "Digital Asset Management (DAM), because the objective is to store and distribute media assets"
+    ],
+    answer: 2,
+    reason: "Master Data Management (MDM) is a technology-enabled discipline in which business and IT work together to ensure uniformity, accuracy, stewardship, semantic consistency and accountability of official shared master data assets. The chapter identifies parties, products, financial structures and locational concepts as common categories of master data."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch10_36",
+    case_chapter: "chapter10",
+    question: "An individual dishonestly uses another person's password or other unique identification feature. In a separate incident, a person cheats by impersonating someone through a computer resource. Which option correctly distinguishes the provisions identified in the chapter?",
+    options: [
+      "The first incident relates to Section 66C on identity theft, while the second relates to Section 66D on cheating by personation using a computer resource",
+      "Both incidents relate exclusively to Section 43A on failure to protect data",
+      "The first incident relates to Section 65 on tampering with computer source documents, while the second relates to Section 67A",
+      "The first incident relates to Section 66E on violation of privacy, while the second relates to Section 43"
+    ],
+    answer: 0,
+    reason: "Section 66C addresses fraudulent or dishonest use of another person's electronic signature, password or other unique identification feature and is identified as the provision on identity theft. Section 66D addresses cheating by personation using a communication device or computer resource."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch10_37",
+    case_chapter: "chapter10",
+    question: "A body corporate handles sensitive personal data in a computer resource that it owns, controls or operates. Due to negligence in implementing and maintaining reasonable security practices and procedures, it causes wrongful loss or wrongful gain to a person. Which provision specifically addresses this situation in the chapter?",
+    options: [
+      "Section 43, which addresses specified unauthorised acts causing damage to computer resources",
+      "Section 65, which addresses tampering with computer source documents required to be maintained by law",
+      "Section 66C, which addresses identity theft",
+      "Section 43A, which addresses compensation for failure to protect sensitive personal data or information"
+    ],
+    answer: 3,
+    reason: "Section 43A, as reproduced in the chapter, provides for compensation where a body corporate handling sensitive personal data or information is negligent in implementing and maintaining reasonable security practices and thereby causes wrongful loss or wrongful gain. Section 43 separately addresses specified unauthorised acts causing damage to computer resources."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch10_38",
+    case_chapter: "chapter10",
+    question: "A data fiduciary processes personal data in a specified case involving the prevention and investigation of an offence. The organisation argues that the exemption described in the chapter removes every obligation, including data security. Which response is most consistent with the chapter's discussion of the Digital Personal Data Protection Act, 2023?",
+    options: [
+      "The exemption automatically removes every data security obligation in all circumstances",
+      "The chapter identifies specified exemptions from data principal rights and data fiduciary obligations, but expressly excludes data security from that exemption",
+      "The exemption permits the organisation to disclose all personal data publicly",
+      "The exemption means that no provisions of the Act can apply to any data fiduciary"
+    ],
+    answer: 1,
+    reason: "The chapter states that data principal rights and data fiduciary obligations, except data security, will not apply in specified cases, including the prevention and investigation of offences and enforcement of legal rights or claims. It does not state that data security obligations are also removed by this exemption."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch10_39",
+    case_chapter: "chapter10",
+    question: "An organisation processes an employee's digital personal data for an employment-related purpose. Its compliance team argues that consent is always mandatory for every instance of personal data processing and that the chapter recognises no exceptions. Which response is consistent with the chapter's description of the Digital Personal Data Protection Act, 2023?",
+    options: [
+      "Consent is never required for any processing by a private organisation",
+      "Employment is not mentioned among the legitimate uses in the chapter",
+      "The chapter identifies employment among the legitimate uses for which consent will not be required, subject to the stated framework",
+      "The organisation may use the employee's personal data for any unrelated purpose without restriction"
+    ],
+    answer: 2,
+    reason: "The chapter states that personal data may generally be processed for a lawful purpose after obtaining consent, but it identifies certain legitimate uses for which consent will not be required. These include specified purposes for which data has been voluntarily provided, provision of a government benefit or service, medical emergencies and employment. This does not authorise unrestricted unrelated use."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch10_40",
+    case_chapter: "chapter10",
+    question: "An organisation compares the scope of the Digital Personal Data Protection Act, 2023, and the GDPR as presented in the chapter. It considers personal data that has not been digitised. Which conclusion follows from the chapter's stated distinction?",
+    options: [
+      "The DPDP Act and GDPR both apply only to digitised personal data",
+      "The DPDP Act applies to all non-digitised personal data, whereas the GDPR applies only to digitised data",
+      "Neither framework addresses the processing of personal data",
+      "The chapter describes the DPDP Act as applying to personal digitised data, whereas the GDPR applies to personal data whether digitised or not"
+    ],
+    answer: 3,
+    reason: "In its comparison of the two frameworks, the chapter states that the DPDP Act applies to personal digitised data, whereas the GDPR applies to personal data whether digitised or not. The distinction concerns the type of personal data covered, as described in the supplied chapter."
   }
 
 
