@@ -139,6 +139,27 @@ window.timerReset = function() {
   updateTimerDisplayFromInputs();
 };
 
+/* ── AUTO-SYNC TIMER FROM PLANNING MODE ── */
+window.syncAndStartTimer = function(estimatedHHMM) {
+  if (timerRunning) return; // Prevent double-triggering if already running
+  
+  // Set the timer to the 'Estimated Time' from the Planning Mode table
+  if (estimatedHHMM) {
+     const parts = estimatedHHMM.split(":");
+     const h = parseInt(parts[0], 10) || 0;
+     const m = parts.length > 1 ? parseInt(parts[1], 10) || 0 : 0;
+     
+     document.getElementById("tH").value = String(h).padStart(2, '0');
+     document.getElementById("tM").value = String(m).padStart(2, '0');
+     document.getElementById("tS").value = "00";
+     
+     updateTimerDisplayFromInputs();
+  }
+  
+  // Automatically click the start button
+  timerToggle();
+};
+
 /* ── 4. STOPWATCH ── */
 let swInterval = null;
 let swStartTime = 0;

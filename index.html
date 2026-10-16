@@ -812,6 +812,20 @@ setInterval(() => {
               if (c !== sourceConn && c && c.open) c.send(payload);
             });
           }
+        } else if (payload.type === "START_SHARED_FOCUS") {
+          // 1. Force screen to Reading Mode
+          switchToReadMode();
+          // 2. Start timer in the iframe
+          const readIframe = document.getElementById("readModeIframe");
+          if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.syncAndStartTimer === "function") {
+             readIframe.contentWindow.syncAndStartTimer(payload.estimatedTime);
+          }
+          // 3. If Host receives this from a guest, relay it to other guests
+          if (isRoomHost) {
+            hostConnections.forEach(c => {
+              if (c !== sourceConn && c && c.open) c.send(payload);
+            });
+          }
         } else if (payload.type === "PLAN_SYNC" && payload.plan) {
           const allData = JSON.parse(localStorage.getItem("calcium_ca_data_v5") || "{}");
           const cloned = JSON.parse(JSON.stringify(payload.plan)).map(item => ({
@@ -1129,6 +1143,28 @@ setInterval(() => {
           ta.remove();
         }
         document.getElementById("shareActionToast").textContent = "✅ Study Wrap caption copied to clipboard!";
+      };
+
+      /* =========================================
+         SHARED FOCUS SESSION TRIGGER
+      ========================================= */
+      window.triggerSharedFocusSession = function(estimatedTime) {
+        // 1. Switch local screen to Reading Mode
+        switchToReadMode();
+        
+        // 2. Start local reading room timer inside the iframe
+        const readIframe = document.getElementById("readModeIframe");
+        if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.syncAndStartTimer === "function") {
+           readIframe.contentWindow.syncAndStartTimer(estimatedTime);
+        }
+
+        // 3. Broadcast to all peers in the Live Study Squad via PeerJS
+        const msg = { type: "START_SHARED_FOCUS", estimatedTime: estimatedTime };
+        if (isRoomHost) {
+          hostConnections.forEach(c => { if (c && c.open) c.send(msg); });
+        } else if (guestHostConn && guestHostConn.open) {
+          guestHostConn.send(msg);
+        }
       };
 
       /* =========================================

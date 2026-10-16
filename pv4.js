@@ -329,6 +329,11 @@ window.toggleTimer = function(idx) {
     item.timerState = true;
     item.timerStart = Date.now();
     item.accumulatedMs = hhmmToDecimal(item.actual) * 3600000;
+
+    // --- NEW: Trigger Reading Mode & Sync to Squad ---
+    if (window.parent && typeof window.parent.triggerSharedFocusSession === "function") {
+      window.parent.triggerSharedFocusSession(item.estimated);
+    }
   }
 
   savePlanForDate(dStr, plan);
