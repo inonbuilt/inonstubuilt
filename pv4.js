@@ -1,6 +1,6 @@
 /* =========================================
    STUDY REACTOR SCRIPT (pv4.js)
-   Precision CA Planner & Squad Integration
+   Flicker-Free Precision CA Planner & Squad Integration
 ========================================= */
 
 const CA_SUBJECTS = {
@@ -187,7 +187,7 @@ function renderTimelineEvents() {
 }
 
 /* =========================================
-   TABLE & VARIANCE ENGINE
+   TABLE & VARIANCE ENGINE (FLICKER-FREE)
 ========================================= */
 function renderTable() {
   const tbody = document.getElementById("planner-body");
@@ -204,24 +204,25 @@ function renderTable() {
     const actStr = decimalToHHMM(hhmmToDecimal(item.actual));
 
     const tr = document.createElement("tr");
+    tr.id = `planner-row-${idx}`;
     tr.innerHTML = `
       <td>
-        <input type="time" class="time-picker" value="${item.startTime}" onchange="updateRow(${idx}, 'startTime', this.value)" />
+        <input type="time" class="time-picker start-time-input" value="${item.startTime}" onchange="updateRow(${idx}, 'startTime', this.value)" />
         <span class="time-separator">-</span>
-        <input type="time" class="time-picker" value="${item.endTime}" onchange="updateRow(${idx}, 'endTime', this.value)" />
+        <input type="time" class="time-picker end-time-input" value="${item.endTime}" onchange="updateRow(${idx}, 'endTime', this.value)" />
       </td>
       <td>
         <select class="subject-select ${sub.class || 'sub-fr'}" onchange="updateRow(${idx}, 'id', this.value)">
           ${opts}
         </select>
       </td>
-      <td><input class="time-input" value="${estStr}" readonly style="color:#94a3b8;" /></td>
+      <td><input class="time-input est-time-display" value="${estStr}" readonly style="color:#94a3b8;" /></td>
       <td>
         <div class="actual-flex">
           <button class="timer-btn ${item.timerState ? 'timer-btn-pause' : 'timer-btn-play'}" onclick="toggleTimer(${idx})">
             ${item.timerState ? '⏸' : '▶'}
           </button>
-          <input class="time-input" value="${actStr}" onchange="updateRow(${idx}, 'actual', this.value)" style="display:${item.timerState ? 'none' : 'inline-block'};" />
+          <input class="time-input actual-time-input" value="${actStr}" onchange="updateRow(${idx}, 'actual', this.value)" style="display:${item.timerState ? 'none' : 'inline-block'};" />
           <span id="pv4-live-timer-${idx}" class="live-timer-text" style="display:${item.timerState ? 'inline-block' : 'none'};">00:00:00</span>
         </div>
       </td>
@@ -235,9 +236,12 @@ function renderTable() {
   renderTimelineEvents();
 }
 
+// In-place updates without destroying inputs while the user is typing/clicking
 window.updateRow = function(idx, field, val) {
   const dStr = toDateKey(selectedDate);
   const plan = getPlanForDate(dStr);
+  if (!plan[idx]) return;
+
   plan[idx][field] = val;
 
   if (field === "startTime" || field === "endTime") {
@@ -245,13 +249,34 @@ window.updateRow = function(idx, field, val) {
     let e = timeToMinutes(plan[idx].endTime);
     if (e <= s) e += 1440;
     plan[idx].estimated = decimalToHHMM((e - s) / 60);
+
+    // Update estimated cell in place
+    const row = document.getElementById(`planner-row-${idx}`);
+    if (row) {
+      const estInput = row.querySelector(".est-time-display");
+      if (estInput) estInput.value = plan[idx].estimated;
+    }
   }
+
   if (field === "actual") {
     plan[idx].accumulatedMs = hhmmToDecimal(val) * 3600000;
   }
 
   savePlanForDate(dStr, plan);
-  renderTable();
+
+  if (field === "id") {
+    // Subject changed, update CSS class
+    const subs = CA_SUBJECTS[currentLevel] || CA_SUBJECTS.final;
+    const sub = subs.find(s => s.id === val) || subs[0];
+    const row = document.getElementById(`planner-row-${idx}`);
+    if (row) {
+      const sel = row.querySelector(".subject-select");
+      if (sel) sel.className = `subject-select ${sub.class || 'sub-fr'}`;
+    }
+  }
+
+  calculateAnalytics();
+  renderTimelineEvents();
 };
 
 window.deleteRow = function(idx) {
@@ -468,7 +493,7 @@ function renderSquadStripFromStorage() {
 }
 
 /* =========================================
-   INITIALIZATION & 1-SECOND TICK
+   INITIALIZATION & 1-SECOND TICK (STABLE)
 ========================================= */
 window.addEventListener("DOMContentLoaded", () => {
   const savedName = localStorage.getItem("calcium_user_name") || "CA Aspirant";
@@ -483,17 +508,20 @@ window.addEventListener("DOMContentLoaded", () => {
   renderDateDisplay();
   renderTable();
 
-  // 1-second interval for clock, red timeline line & live timers
+  // 1-second interval ONLY updates clock, timeline line & running timers (DOES NOT TOUCH INPUTS)
   setInterval(() => {
     const now = new Date();
-    document.getElementById("current-time-display").textContent = now.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+    const timeEl = document.getElementById("current-time-display");
+    if (timeEl) {
+      timeEl.textContent = now.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+    }
 
     // Timeline red line
     const mins = now.getHours() * 60 + now.getMinutes();
     const line = document.getElementById("current-time-line");
     if (line) line.style.top = `${mins * MINUTE_MULTIPLIER}px`;
 
-    // Live slot timers
+    // Live running timer text (only updates text, never re-renders table)
     const dStr = toDateKey(selectedDate);
     const plan = getPlanForDate(dStr);
     plan.forEach((slot, idx) => {
@@ -514,7 +542,9 @@ window.addEventListener("DOMContentLoaded", () => {
   }, 1000);
 });
 
-window.addEventListener("storage", () => {
-  renderTable();
-  renderSquadStripFromStorage();
+// ONLY update squad strip on storage event; NEVER re-render table while user is editing
+window.addEventListener("storage", (e) => {
+  if (e.key === "calcium_squad_roster" || e.key === "calcium_active_room") {
+    renderSquadStripFromStorage();
+  }
 });
