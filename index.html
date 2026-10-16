@@ -4,22 +4,23 @@
     <link rel="canonical" href="https://www.calciumnotes.com/" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calcium Notes | CA Final </title>
+    <title>Calcium Notes | CA Final &amp; Live Co-Study Squad</title>
 
-    <!-- External Assets: Link to your local CSS and Model Viewer for 3D elements -->
+    <!-- External Assets -->
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./fevicol.png" type="image/png" />
     <script
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
+    <!-- PeerJS WebRTC Library for Unlimited Live Study Rooms & Chat -->
+    <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
 
-    <!-- Google Analytics: Tracking user engagement -->
+    <!-- Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"
     ></script>
-    <!-- Added add sense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
     crossorigin="anonymous"></script>
     <script>
@@ -31,35 +32,37 @@
       gtag("config", "G-YYJ8R39EXM");
     </script>
 
-    <!-- Metadata for planning -->
     <meta
       name="description"
-      content="Calcium Notes & Study Reactor: A precision-engineered dashboard and planner for CA Foundation, Inter, and Final students."
+      content="Calcium Notes & Study Reactor: A precision-engineered dashboard, co-study room, and planner for CA Foundation, Inter, and Final students."
     />
     <meta name="author" content="Calcium Notes" />
-
     <meta name="theme-color" content="#050a10" />
     <meta name="mobile-web-app-capable" content="yes" />
     <link rel="icon" sizes="192x192" href="./fevicol.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Calcium" />
     <link rel="apple-touch-icon" href="./fevicol.png" />
     <meta property="og:title" content="Study Reactor | Calcium Notes" />
-    <meta
-      property="og:description"
-      content="Precision study tracking, 24-hour timeline, and variance intelligence for CA students."
-    />
+    <meta property="og:description" content="Precision study tracking, live co-study rooms, and social progress cards for CA students." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="./fevicol.png" />
   </head>
 
   <body>
-    <!-- Top Navigation: Entry points for the specialized study overlays -->
+    <!-- Top Navigation: Entry points for Read Mode, Planning Mode, Co-Study Squad & Social Share -->
     <div class="mode-toggles">
+      <div style="display:flex; align-items:center; gap:6px; background:rgba(15,23,42,0.85); border:1px solid rgba(56,189,248,0.4); padding:6px 12px; border-radius:10px;">
+        <span style="font-size:12px; font-weight:700; color:#7dd3fc;">👤 Name:</span>
+        <input type="text" id="topBarUserName" placeholder="Your Name..." oninput="saveDisplayName(this.value)" style="background:rgba(255,255,255,0.08); border:1px solid rgba(56,189,248,0.3); color:white; padding:5px 8px; border-radius:6px; font-size:12px; font-weight:700; width:130px; outline:none;" />
+      </div>
+      <button class="squad-trigger-btn" onclick="openSquadModal()">
+        <span>👥</span> Study Squad <span class="squad-count-pill" id="topSquadCount">1</span>
+      </button>
+      <button class="share-trigger-btn" onclick="openShareModal()">
+        <span>📸</span> Share Study Wrap
+      </button>
       <button class="read-mode-trigger" onclick="openReadMode()">
         <span>📖</span> Read Mode
       </button>
@@ -69,7 +72,6 @@
     </div>
 
     <div class="page">
-      <!-- Hero Section: Featuring the 3D .glb Logo -->
       <div class="logo">
         <model-viewer
           class="floating-logo"
@@ -86,7 +88,6 @@
         </model-viewer>
       </div>
 
-      <!-- Main Navigation Links -->
       <div class="button">
         <a href="./semag/semag.html">GAMES</a>
         <a href="./bin/exam/examcover.html">EXAM</a>
@@ -94,7 +95,6 @@
         <a href="./bin/Resources/resources.html">RESOURCES</a>
       </div>
 
-      <!-- Dynamic Motivation Quote Box -->
       <div class="motivation-box">
         <p id="motivationText">
           <span id="quote"></span><br />
@@ -102,31 +102,28 @@
         </p>
       </div>
 
-      <!-- Dynamic Update Banner: Slides in via JS -->
       <div class="update-banner" id="updateBanner">
         <div class="update-left">
           <span class="update-badge">NEW</span>
           <span class="update-message" id="updateMessage">
-            SPOM Set C & D Updates Released!
+            SPOM Set C &amp; D Updates Released!
           </span>
         </div>
         <div class="update-actions">
-          <a href="#" id="updateLink" class="update-link">View Update</a>
+          <a href="#noticeSection" id="updateLink" class="update-link">View Update</a>
           <span class="update-close" onclick="closeUpdate()">✕</span>
         </div>
       </div>
 
-      <!-- Legal and Educational Notice Section -->
-      <div class="notice">
+      <div class="notice" id="noticeSection">
         <h1 class="in">IMPORTANT NOTICE</h1>
         <p>
           <strong>Calcium Notes</strong> is a website designed to provide lucid
           and focused workbooks that assist students in understanding the
           subject matter. It covers all important topics to enhance the quality
           of learning in
-          <strong
-            >Financial Reporting, Financial Management, and Taxation</strong
-          >, including the fundamental concepts of these subjects.
+          <strong>Financial Reporting, Financial Management, and Taxation</strong>,
+          including the fundamental concepts of these subjects.
         </p>
 
         <h2 class="dis">DISCLAIMER</h2>
@@ -175,7 +172,6 @@
         </div>
       </div>
 
-      <!-- Precision Engineering Box: Branding for CA Students -->
       <div
         class="motivation-box"
         style="
@@ -250,11 +246,17 @@
       </div>
     </footer>
 
-    <!-- READ MODE OVERLAY: Iframe to load reading module -->
+    <!-- READ MODE OVERLAY -->
     <div id="readModeOverlay">
       <div class="rm-header">
         <div class="rm-brand">📖 Calcium <span>Read Mode</span></div>
-        <div style="display: flex; gap: 10px;">
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button class="rm-exit-btn" style="background: rgba(124, 58, 237, 0.2); color: #ddd6fe; border-color: rgba(167, 139, 250, 0.45);" onclick="openSquadModal()">
+            👥 Study Squad (<span id="rmHeaderSquadCount">1</span>)
+          </button>
+          <button class="rm-exit-btn" style="background: rgba(236, 72, 153, 0.2); color: #fbcfe8; border-color: rgba(244, 114, 182, 0.45);" onclick="openShareModal()">
+            📸 Share Wrap
+          </button>
           <button class="rm-exit-btn" style="background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border-color: rgba(59, 130, 246, 0.4);" onclick="switchToPlanMode()">
             📅 Switch to Plan
           </button>
@@ -265,17 +267,24 @@
       </div>
       <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
         <iframe
+          id="readModeIframe"
           src="./readmode.html"
           style="width: 100%; height: 100%; border: none"
         ></iframe>
       </div>
     </div>
 
-    <!-- PLANNING MODE OVERLAY: Iframe to load planning module -->
+    <!-- PLANNING MODE OVERLAY -->
     <div id="planningModeOverlay">
       <div class="rm-header">
         <div class="rm-brand">📅 Calcium <span>Planning Mode</span></div>
-        <div style="display: flex; gap: 10px;">
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button class="rm-exit-btn" style="background: rgba(124, 58, 237, 0.2); color: #ddd6fe; border-color: rgba(167, 139, 250, 0.45);" onclick="openSquadModal()">
+            👥 Study Squad (<span id="planHeaderSquadCount">1</span>)
+          </button>
+          <button class="rm-exit-btn" style="background: rgba(236, 72, 153, 0.2); color: #fbcfe8; border-color: rgba(244, 114, 182, 0.45);" onclick="openShareModal()">
+            📸 Share Wrap
+          </button>
           <button class="rm-exit-btn" style="background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border-color: rgba(59, 130, 246, 0.4);" onclick="switchToReadMode()">
             📖 Switch to Read
           </button>
@@ -286,9 +295,109 @@
       </div>
       <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
         <iframe
+          id="planModeIframe"
           src="./pv4.html"
           style="width: 100%; height: 100%; border: none"
         ></iframe>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         MODAL 1: UNLIMITED PEERJS LIVE STUDY SQUAD ROOM & CHAT
+    ═══════════════════════════════════════════════════════════════════ -->
+    <div class="cn-modal-backdrop" id="squadModal">
+      <div class="cn-modal-card">
+        <div class="cn-modal-header">
+          <h3>👥 Live Co-Study Room (Unlimited Members via PeerJS)</h3>
+          <button class="cn-close-btn" onclick="closeSquadModal()">✕ Close</button>
+        </div>
+
+        <!-- Profile Row -->
+        <div class="cn-input-row">
+          <input type="text" id="myDisplayName" class="cn-input" placeholder="Your Name (e.g. Rahul - CA Final)" oninput="saveDisplayName(this.value)" />
+          <button class="cn-btn" onclick="createPeerRoom()">🚀 Create Unlimited Room</button>
+        </div>
+
+        <!-- Join Existing Room Row -->
+        <div class="cn-input-row">
+          <input type="text" id="joinRoomInput" class="cn-input" placeholder="Paste Room Code (e.g. CA-8492) or open invite link" />
+          <button class="cn-btn" onclick="joinPeerRoomFromInput()">🔗 Join Room</button>
+          <button class="cn-btn secondary" onclick="leavePeerRoom()">🚪 Reset / Leave</button>
+        </div>
+
+        <!-- Shareable Invite Link Box -->
+        <div id="inviteLinkBox" style="background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 12px; padding: 12px; margin-bottom: 14px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; flex-wrap:wrap; gap:6px;">
+            <span style="font-size:12px; font-weight:700; color:#93c5fd;" id="squadStatusText">Status: Ready to Create or Join Room</span>
+            <span style="font-size:11px; color:#38bdf8; font-weight:700;" id="squadOnlineCounter">1 Member Active</span>
+          </div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <input type="text" id="shareInviteUrl" class="cn-input" readonly value="Click 'Create Unlimited Room' to generate your invite link" style="font-family:monospace; font-size:12px;" />
+            <button class="cn-btn" onclick="copyInviteLink()">📋 Copy Link</button>
+            <button class="cn-btn whatsapp" onclick="shareInviteWhatsApp()">💬 WhatsApp Invite</button>
+          </div>
+        </div>
+
+        <!-- Unlimited Seats Grid -->
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span style="font-size:12px; font-weight:700; color:#cbd5e1;">LIVE ROOM ROSTER (AUTO-SYNCED ACROSS READ &amp; PLAN MODES)</span>
+          <button class="cn-btn secondary" style="padding:5px 10px; font-size:11px;" onclick="pushCurrentLocalPlanToSquad()">📤 Sync My Timetable to All Members</button>
+        </div>
+        <div class="squad-seats-grid" id="modalSquadGrid"></div>
+
+        <!-- LIVE ROOM CHAT -->
+        <div style="margin-top:18px; border-top:1px solid rgba(255,255,255,0.1); padding-top:14px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <span style="font-size:12px; font-weight:700; color:#7dd3fc; display:flex; align-items:center; gap:6px;">
+              <span>💬 Live Room Study Chat</span>
+              <span id="chatRoomBadge" style="font-size:10px; background:rgba(59,130,246,0.25); padding:2px 7px; border-radius:99px; color:#93c5fd;">Active</span>
+            </span>
+            <span style="font-size:11px; color:#94a3b8;">Chat with everyone currently in this room</span>
+          </div>
+          <div id="squadChatMessages" style="height:140px; overflow-y:auto; background:rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:10px; display:flex; flex-direction:column; gap:6px; font-size:12px; margin-bottom:8px;">
+            <div style="color:#64748b; font-style:italic; text-align:center; margin:auto 0;">Room study chat connected. Say hi to your study partners! 👋</div>
+          </div>
+          <div class="cn-input-row" style="margin-bottom:0;">
+            <input type="text" id="squadChatInput" class="cn-input" placeholder="Type a message or doubt... (Press Enter to send)" onkeydown="if(event.key==='Enter'){event.preventDefault();sendSquadChatMessage();}" />
+            <button class="cn-btn" onclick="sendSquadChatMessage()">💬 Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         MODAL 2: END-OF-DAY SOCIAL MEDIA STUDY WRAP GENERATOR
+    ═══════════════════════════════════════════════════════════════════ -->
+    <div class="cn-modal-backdrop" id="shareModal">
+      <div class="cn-modal-card">
+        <div class="cn-modal-header">
+          <h3>📸 End-of-Day Social Media Study Wrap</h3>
+          <button class="cn-close-btn" onclick="closeShareModal()">✕ Close</button>
+        </div>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:space-between; align-items:center;">
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button class="cn-btn" id="cardModeSquadBtn" onclick="setCardMode('squad')">👥 Squad Leaderboard Card</button>
+            <button class="cn-btn secondary" id="cardModeSoloBtn" onclick="setCardMode('solo')">👤 Personal Solo Card</button>
+          </div>
+          <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+            <input type="text" id="shareBarUserName" class="cn-input" placeholder="👤 Your Name on Card" oninput="saveDisplayName(this.value)" style="max-width:190px;" />
+            <input type="text" id="customShareTagline" class="cn-input" placeholder="Custom status (e.g. Day 42 of CA Final Grind 🔥)" oninput="renderStudyWrapCanvas()" style="min-width:220px;" />
+          </div>
+        </div>
+
+        <div class="share-preview-wrap">
+          <canvas id="studyWrapCanvas" width="1080" height="1350"></canvas>
+        </div>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-top:14px;">
+          <button class="cn-btn insta" onclick="nativeShareStudyWrap()">📱 Share to Instagram / Apps</button>
+          <button class="cn-btn" onclick="downloadStudyWrapPng()">⬇️ Download HD Image (.PNG)</button>
+          <button class="cn-btn whatsapp" onclick="shareWrapToWhatsApp()">💬 Share on WhatsApp</button>
+          <button class="cn-btn twitter" onclick="shareWrapToTwitter()">🐦 Post on X (Twitter)</button>
+          <button class="cn-btn secondary" onclick="copyWrapTextSummary()">📋 Copy Caption</button>
+        </div>
+        <div id="shareActionToast" style="text-align:center; color:#4ade80; font-size:12px; font-weight:700; margin-top:10px; min-height:18px;"></div>
       </div>
     </div>
 
@@ -323,6 +432,7 @@
         }, 500);
 
         showRandomQuote();
+        initSquadEngine();
       });
 
       function showUpdate() {
@@ -401,40 +511,674 @@
 
       // --- ADDED: CROSSFADE TRANSITIONS ---
       window.switchToReadMode = function() {
-        // 1. Start fading out Planning Mode smoothly
         planOverlay.classList.remove("rm-visible");
         
         setTimeout(() => {
-          // 2. Hide Planning Mode completely
           planOverlay.classList.remove("rm-active");
-          
-          // 3. Immediately show Read Mode container
           readOverlay.classList.add("rm-active");
           
-          // 4. Trigger Read Mode smooth slide-in animation
           setTimeout(() => {
             readOverlay.classList.add("rm-visible");
-          }, 20); // slight delay forces the browser to apply the CSS transition
-        }, 350); // wait exactly 350ms to match the CSS animation duration of closePlanningMode
+          }, 20);
+        }, 350);
       };
 
       window.switchToPlanMode = function() {
-        // 1. Start fading out Read Mode smoothly
         readOverlay.classList.remove("rm-visible");
         
         setTimeout(() => {
-          // 2. Hide Read Mode completely
           readOverlay.classList.remove("rm-active");
-          
-          // 3. Immediately show Planning Mode container
           planOverlay.classList.add("rm-active");
           
-          // 4. Trigger Planning Mode smooth slide-in animation
           setTimeout(() => {
             planOverlay.classList.add("rm-visible");
           }, 20); 
         }, 350); 
       };
+
+      /* =========================================
+         UNLIMITED PEERJS LIVE STUDY SQUAD ENGINE
+      ========================================= */
+      const SUBJECT_LABELS = {
+        f_acc: "ACC", f_law: "LAW", f_qa: "QA", f_eco: "ECO",
+        i_adv: "ADV ACC", i_law: "LAW", i_tax: "TAX", i_cma: "CMA", i_aud: "AUDIT", i_fm: "FM-SM",
+        fr: "FR", afm: "AFM", audit: "AUDIT", dt: "DT", idt: "IDT", ibs: "IBS"
+      };
+
+      let peerInstance = null;
+      let isRoomHost = false;
+      let activeRoomCode = "";
+      let hostConnections = [];
+      let guestHostConn = null;
+      let squadMembersMap = {};
+      let myClientId = "me-" + Math.random().toString(36).substring(2, 8);
+
+      function getTodayKey() {
+        const d = new Date();
+        return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+      }
+
+      function hhmmToDec(val) {
+        if (!val) return 0;
+        const s = val.toString();
+        if (s.includes("h") || (!s.includes(":") && s.includes("."))) return parseFloat(s.replace(/[^0-9.]/g, "")) || 0;
+        const p = s.replace(/[^0-9:]/g, "").split(":");
+        return (parseInt(p[0], 10) || 0) + ((parseInt(p[1], 10) || 0) / 60);
+      }
+
+      function decToHHMM(dec) {
+        if (isNaN(dec) || dec < 0) dec = 0;
+        let h = Math.floor(dec);
+        let m = Math.round((dec - h) * 60);
+        if (m === 60) { h += 1; m = 0; }
+        return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
+      }
+
+      function buildMyMemberState() {
+        const myName = localStorage.getItem("calcium_user_name") || "CA Aspirant";
+        const level = localStorage.getItem("calcium_ca_level") || "final";
+        const allData = JSON.parse(localStorage.getItem("calcium_ca_data_v5") || "{}");
+        const todayPlan = allData[getTodayKey()] || [];
+        const tasks = JSON.parse(localStorage.getItem("cn_tasks") || "[]");
+
+        let totalEst = 0;
+        let totalAct = 0;
+        let activeSub = "Planning";
+        let isStudying = false;
+        let activeTimerStr = "00:00:00";
+        const subjectBreakdown = [];
+
+        todayPlan.forEach((slot) => {
+          const est = hhmmToDec(slot.estimated);
+          let act = hhmmToDec(slot.actual);
+          const sName = SUBJECT_LABELS[slot.id] || (slot.id || "FR").toUpperCase();
+
+          if (slot.timerState) {
+            isStudying = true;
+            activeSub = sName;
+            const elapsedMs = Date.now() - (slot.timerStart || Date.now());
+            const totalMs = (slot.accumulatedMs || 0) + elapsedMs;
+            act = totalMs / 3600000;
+            const totSec = Math.floor(totalMs / 1000);
+            const h = Math.floor(totSec / 3600);
+            const m = Math.floor((totSec % 3600) / 60);
+            const s = totSec % 60;
+            activeTimerStr = `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+          }
+          totalEst += est;
+          totalAct += act;
+          subjectBreakdown.push({ subject: sName, estimated: decToHHMM(est), actual: decToHHMM(act), active: !!slot.timerState });
+        });
+
+        const efficiency = totalEst > 0 ? Math.min(100, Math.round((totalAct / totalEst) * 100)) : 0;
+        return {
+          peerId: myClientId,
+          name: myName,
+          level: level,
+          activeSubject: activeSub,
+          isStudying: isStudying,
+          activeTimerStr: activeTimerStr,
+          totalActualHours: decToHHMM(totalAct),
+          totalActualDecimal: totalAct,
+          totalEstHours: decToHHMM(totalEst),
+          efficiency: efficiency,
+          tasksDone: tasks.filter(t => t.done).length,
+          tasksTotal: tasks.length,
+          subjects: subjectBreakdown,
+          updatedAt: Date.now()
+        };
+      }
+
+      function initSquadEngine() {
+        const savedName = localStorage.getItem("calcium_user_name") || "CA Aspirant";
+        ["myDisplayName", "topBarUserName", "shareBarUserName"].forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.value = savedName;
+        });
+
+        const me = buildMyMemberState();
+        squadMembersMap[myClientId] = me;
+        syncSquadToStorage();
+
+        // Check URL for ?room=CA-XXXX auto-join
+        const params = new URLSearchParams(window.location.search);
+        const roomParam = params.get("room");
+        if (roomParam) {
+          document.getElementById("joinRoomInput").value = roomParam;
+          openSquadModal();
+          setTimeout(() => joinPeerRoom(roomParam), 400);
+        }
+
+        setInterval(() => {
+          squadMembersMap[myClientId] = buildMyMemberState();
+          broadcastMyState();
+          syncSquadToStorage();
+        }, 1000);
+      }
+
+      window.saveDisplayName = function(val) {
+        const clean = val.trim() || "CA Aspirant";
+        localStorage.setItem("calcium_user_name", clean);
+        ["myDisplayName", "topBarUserName", "shareBarUserName"].forEach(id => {
+          const el = document.getElementById(id);
+          if (el && document.activeElement !== el) el.value = val;
+        });
+        squadMembersMap[myClientId] = buildMyMemberState();
+        broadcastMyState();
+        syncSquadToStorage();
+        if (typeof renderStudyWrapCanvas === "function") renderStudyWrapCanvas();
+      };
+
+      function getSortedSquadList() {
+        return Object.values(squadMembersMap).sort((a, b) => (b.totalActualDecimal || 0) - (a.totalActualDecimal || 0));
+      }
+
+      function syncSquadToStorage() {
+        const list = getSortedSquadList();
+        localStorage.setItem("calcium_squad_roster", JSON.stringify(list));
+        localStorage.setItem("calcium_active_room", activeRoomCode);
+
+        const count = list.length;
+        ["topSquadCount", "rmHeaderSquadCount", "planHeaderSquadCount"].forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.textContent = count;
+        });
+        const counterEl = document.getElementById("squadOnlineCounter");
+        if (counterEl) counterEl.textContent = `${count} Member${count === 1 ? "" : "s"} Active (No Limit)`;
+
+        renderModalSquadGrid(list);
+      }
+
+      function renderModalSquadGrid(list) {
+        const grid = document.getElementById("modalSquadGrid");
+        if (!grid) return;
+        grid.innerHTML = list.map((m, idx) => {
+          const initials = (m.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
+          return `
+            <div class="squad-seat-card ${m.isStudying ? 'studying' : ''}">
+              <div class="seat-avatar">${initials}</div>
+              <div class="seat-name">#${idx + 1} ${m.name}</div>
+              <div class="seat-sub">${m.activeSubject || 'Planning'} • ${(m.level || 'final').toUpperCase()}</div>
+              <div class="seat-timer">${m.isStudying ? '▶ ' + m.activeTimerStr : '⏸ ' + m.totalActualHours + ' hrs'}</div>
+              <div class="seat-meta">Total: ${m.totalActualHours}h • Eff: ${m.efficiency}%</div>
+            </div>
+          `;
+        }).join("");
+      }
+
+      window.createPeerRoom = function() {
+        const code = "CA-" + Math.floor(1000 + Math.random() * 9000);
+        activeRoomCode = code;
+        isRoomHost = true;
+
+        const baseUrl = window.location.origin && window.location.origin !== "null"
+          ? window.location.origin + window.location.pathname
+          : "https://www.calciumnotes.com/";
+        const inviteUrl = `${baseUrl}?room=${code}`;
+        document.getElementById("shareInviteUrl").value = inviteUrl;
+        document.getElementById("squadStatusText").textContent = `Hosting Room ${code} (Unlimited Members Allowed)`;
+
+        if (typeof Peer !== "undefined") {
+          try {
+            if (peerInstance) peerInstance.destroy();
+            peerInstance = new Peer("calcium-notes-room-" + code);
+            peerInstance.on("open", () => {
+              document.getElementById("squadStatusText").textContent = `🟢 Live Room ${code} Ready — Share Link with Any Number of Friends!`;
+            });
+            peerInstance.on("connection", (conn) => {
+              hostConnections.push(conn);
+              conn.on("data", (payload) => handleIncomingPeerData(payload, conn));
+              conn.on("open", () => {
+                conn.send({ type: "ROSTER_SYNC", roster: squadMembersMap, roomCode: activeRoomCode });
+              });
+              conn.on("close", () => {
+                hostConnections = hostConnections.filter(c => c !== conn);
+              });
+            });
+          } catch (e) {
+            console.warn("PeerJS fallback:", e);
+          }
+        }
+        syncSquadToStorage();
+      };
+
+      window.joinPeerRoomFromInput = function() {
+        const raw = document.getElementById("joinRoomInput").value.trim();
+        if (!raw) return;
+        let code = raw;
+        if (raw.includes("room=")) {
+          try {
+            code = new URL(raw).searchParams.get("room") || raw;
+          } catch (e) {
+            code = raw.split("room=")[1].split("&")[0];
+          }
+        }
+        joinPeerRoom(code.toUpperCase());
+      };
+
+      function joinPeerRoom(code) {
+        activeRoomCode = code;
+        isRoomHost = false;
+        const baseUrl = window.location.origin && window.location.origin !== "null"
+          ? window.location.origin + window.location.pathname
+          : "https://www.calciumnotes.com/";
+        document.getElementById("shareInviteUrl").value = `${baseUrl}?room=${code}`;
+        document.getElementById("squadStatusText").textContent = `Connecting to Room ${code}...`;
+
+        if (typeof Peer !== "undefined") {
+          try {
+            if (peerInstance) peerInstance.destroy();
+            peerInstance = new Peer();
+            peerInstance.on("open", () => {
+              guestHostConn = peerInstance.connect("calcium-notes-room-" + code);
+              guestHostConn.on("open", () => {
+                document.getElementById("squadStatusText").textContent = `🟢 Connected to Live Room ${code}`;
+                guestHostConn.send({ type: "MEMBER_UPDATE", member: buildMyMemberState() });
+              });
+              guestHostConn.on("data", (payload) => handleIncomingPeerData(payload, guestHostConn));
+            });
+          } catch (e) {
+            console.warn("PeerJS join error:", e);
+          }
+        }
+        syncSquadToStorage();
+      }
+
+      function handleIncomingPeerData(payload, sourceConn) {
+        if (!payload || !payload.type) return;
+        if (payload.type === "MEMBER_UPDATE" && payload.member) {
+          squadMembersMap[payload.member.peerId] = payload.member;
+          if (isRoomHost) {
+            hostConnections.forEach(c => {
+              if (c && c.open) c.send({ type: "ROSTER_SYNC", roster: squadMembersMap, roomCode: activeRoomCode });
+            });
+          }
+          syncSquadToStorage();
+        } else if (payload.type === "ROSTER_SYNC" && payload.roster) {
+          Object.assign(squadMembersMap, payload.roster);
+          squadMembersMap[myClientId] = buildMyMemberState();
+          syncSquadToStorage();
+        } else if (payload.type === "CHAT_MESSAGE") {
+          appendChatMessage(payload, false);
+          if (isRoomHost) {
+            hostConnections.forEach(c => {
+              if (c !== sourceConn && c && c.open) c.send(payload);
+            });
+          }
+        } else if (payload.type === "PLAN_SYNC" && payload.plan) {
+          const allData = JSON.parse(localStorage.getItem("calcium_ca_data_v5") || "{}");
+          const cloned = JSON.parse(JSON.stringify(payload.plan)).map(item => ({
+            ...item,
+            actual: "00:00",
+            timerState: false,
+            timerStart: null,
+            accumulatedMs: 0,
+            manualLock: false
+          }));
+          allData[getTodayKey()] = cloned;
+          localStorage.setItem("calcium_ca_data_v5", JSON.stringify(allData));
+          if (payload.level) localStorage.setItem("calcium_ca_level", payload.level);
+          window.dispatchEvent(new Event("storage"));
+        }
+      }
+
+      function broadcastMyState() {
+        const me = squadMembersMap[myClientId];
+        if (isRoomHost && hostConnections.length > 0) {
+          hostConnections.forEach(c => {
+            if (c && c.open) c.send({ type: "ROSTER_SYNC", roster: squadMembersMap, roomCode: activeRoomCode });
+          });
+        } else if (!isRoomHost && guestHostConn && guestHostConn.open) {
+          guestHostConn.send({ type: "MEMBER_UPDATE", member: me });
+        }
+      }
+
+      window.pushPlanToSquad = function(plan, level) {
+        const msg = { type: "PLAN_SYNC", plan, level };
+        if (isRoomHost) {
+          hostConnections.forEach(c => { if (c && c.open) c.send(msg); });
+        } else if (guestHostConn && guestHostConn.open) {
+          guestHostConn.send(msg);
+        }
+        document.getElementById("squadStatusText").textContent = "✅ Synced your timetable with all room members!";
+      };
+
+      window.pushCurrentLocalPlanToSquad = function() {
+        const allData = JSON.parse(localStorage.getItem("calcium_ca_data_v5") || "{}");
+        const todayPlan = allData[getTodayKey()] || [];
+        const level = localStorage.getItem("calcium_ca_level") || "final";
+        window.pushPlanToSquad(todayPlan, level);
+      };
+
+      window.leavePeerRoom = function() {
+        if (peerInstance) {
+          try { peerInstance.destroy(); } catch (e) {}
+          peerInstance = null;
+        }
+        hostConnections = [];
+        guestHostConn = null;
+        activeRoomCode = "";
+        squadMembersMap = {};
+        squadMembersMap[myClientId] = buildMyMemberState();
+        document.getElementById("squadStatusText").textContent = "Left room — currently in Solo mode.";
+        syncSquadToStorage();
+      };
+
+      window.copyInviteLink = function() {
+        const input = document.getElementById("shareInviteUrl");
+        if (!activeRoomCode) window.createPeerRoom();
+        input.select();
+        try {
+          navigator.clipboard.writeText(input.value);
+        } catch (e) {
+          document.execCommand("copy");
+        }
+        document.getElementById("squadStatusText").textContent = "✅ Invite link copied! Send it to any number of study partners.";
+      };
+
+      window.shareInviteWhatsApp = function() {
+        if (!activeRoomCode) window.createPeerRoom();
+        const url = document.getElementById("shareInviteUrl").value;
+        const text = `Hey! Join our live CA Study Squad on Calcium Notes Study Reactor 📚🔥 Let's plan, run live timers, and track our hours together: ${url}`;
+        window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, "_blank");
+      };
+
+      window.openSquadModal = function() {
+        document.getElementById("squadModal").classList.add("active");
+        syncSquadToStorage();
+      };
+      window.closeSquadModal = function() {
+        document.getElementById("squadModal").classList.remove("active");
+      };
+
+      /* =========================================
+         END-OF-DAY SOCIAL MEDIA SCORECARD ENGINE
+      ========================================= */
+      let currentCardMode = "squad"; // 'squad' or 'solo'
+
+      window.openShareModal = function() {
+        document.getElementById("shareModal").classList.add("active");
+        renderStudyWrapCanvas();
+      };
+      window.closeShareModal = function() {
+        document.getElementById("shareModal").classList.remove("active");
+      };
+
+      window.setCardMode = function(mode) {
+        currentCardMode = mode;
+        document.getElementById("cardModeSquadBtn").className = mode === "squad" ? "cn-btn" : "cn-btn secondary";
+        document.getElementById("cardModeSoloBtn").className = mode === "solo" ? "cn-btn" : "cn-btn secondary";
+        renderStudyWrapCanvas();
+      };
+
+      window.renderStudyWrapCanvas = function() {
+        const canvas = document.getElementById("studyWrapCanvas");
+        if (!canvas) return;
+        const ctx = canvas.getContext("2d");
+        const W = canvas.width;
+        const H = canvas.height;
+
+        const me = buildMyMemberState();
+        squadMembersMap[myClientId] = me;
+        const squadList = getSortedSquadList();
+        const tagline = document.getElementById("customShareTagline").value.trim() || "Consistency Over Intensity • CA Exam Grind 🔥";
+
+        // 1. Deep Dark Reactor Background
+        const bgGrad = ctx.createLinearGradient(0, 0, W, H);
+        bgGrad.addColorStop(0, "#050a14");
+        bgGrad.addColorStop(0.5, "#0f172a");
+        bgGrad.addColorStop(1, "#1e1b4b");
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, W, H);
+
+        // Decorative Glow Orbs
+        const radGrad = ctx.createRadialGradient(W * 0.8, 180, 20, W * 0.8, 180, 420);
+        radGrad.addColorStop(0, "rgba(56, 189, 248, 0.22)");
+        radGrad.addColorStop(1, "rgba(56, 189, 248, 0)");
+        ctx.fillStyle = radGrad;
+        ctx.fillRect(0, 0, W, H);
+
+        // Outer Frame Border
+        ctx.strokeStyle = "rgba(56, 189, 248, 0.35)";
+        ctx.lineWidth = 3;
+        ctx.strokeRect(36, 36, W - 72, H - 72);
+
+        // 2. Top Brand Header
+        ctx.fillStyle = "#38bdf8";
+        ctx.font = "bold 28px Inter, Segoe UI, sans-serif";
+        ctx.fillText("⚡ CALCIUM NOTES  |  STUDY REACTOR WRAP", 76, 105);
+
+        const dateStr = new Date().toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" });
+        ctx.fillStyle = "#f8fafc";
+        ctx.font = "bold 25px Inter, Segoe UI, sans-serif";
+        ctx.fillText(`👤 ${me.name}  •  CA ${(me.level || "FINAL").toUpperCase()}  •  ${dateStr}`, 76, 148);
+
+        // Tagline Banner
+        ctx.fillStyle = "rgba(59, 130, 246, 0.14)";
+        ctx.fillRect(76, 175, W - 152, 64);
+        ctx.strokeStyle = "rgba(59, 130, 246, 0.4)";
+        ctx.lineWidth = 1.5;
+        ctx.strokeRect(76, 175, W - 152, 64);
+        ctx.fillStyle = "#e2e8f0";
+        ctx.font = "bold 25px Inter, Segoe UI, sans-serif";
+        ctx.fillText(tagline, 100, 216);
+
+        // 3. Personal Hero Metrics Row
+        const boxY = 270;
+        const boxH = 190;
+        const colW = (W - 152 - 36) / 3;
+
+        const heroStats = [
+          { label: "MY ACTUAL STUDY", val: `${me.totalActualHours} HRS`, color: "#38bdf8" },
+          { label: "DAILY EFFICIENCY", val: `${me.efficiency}%`, color: "#4ade80" },
+          { label: "SQUAD SIZE", val: `${squadList.length} MEMBER${squadList.length > 1 ? "S" : ""}`, color: "#c084fc" }
+        ];
+
+        heroStats.forEach((st, i) => {
+          const bx = 76 + i * (colW + 18);
+          ctx.fillStyle = "rgba(255, 255, 255, 0.05)";
+          ctx.fillRect(bx, boxY, colW, boxH);
+          ctx.strokeStyle = "rgba(255, 255, 255, 0.12)";
+          ctx.strokeRect(bx, boxY, colW, boxH);
+
+          ctx.fillStyle = "#94a3b8";
+          ctx.font = "bold 20px Inter, Segoe UI, sans-serif";
+          ctx.fillText(st.label, bx + 24, boxY + 55);
+
+          ctx.fillStyle = st.color;
+          ctx.font = "bold 52px Courier New, monospace";
+          ctx.fillText(st.val, bx + 24, boxY + 135);
+        });
+
+        // 4. Middle Section: Squad Leaderboard or Detailed Subject Breakdown
+        let curY = 515;
+        if (currentCardMode === "squad" && squadList.length >= 1) {
+          const totalGroupHours = squadList.reduce((acc, m) => acc + (m.totalActualDecimal || 0), 0);
+          ctx.fillStyle = "#f8fafc";
+          ctx.font = "bold 30px Inter, Segoe UI, sans-serif";
+          ctx.fillText(`🏆 STUDY SQUAD LEADERBOARD (GROUP TOTAL: ${decToHHMM(totalGroupHours)} HRS)`, 76, curY);
+          curY += 28;
+
+          const maxRows = Math.min(squadList.length, 7);
+          for (let i = 0; i < maxRows; i++) {
+            const m = squadList[i];
+            const rowY = curY + i * 86;
+            ctx.fillStyle = i === 0 ? "rgba(56, 189, 248, 0.14)" : "rgba(255, 255, 255, 0.04)";
+            ctx.fillRect(76, rowY, W - 152, 72);
+            ctx.strokeStyle = i === 0 ? "rgba(56, 189, 248, 0.5)" : "rgba(255, 255, 255, 0.08)";
+            ctx.strokeRect(76, rowY, W - 152, 72);
+
+            ctx.fillStyle = i === 0 ? "#facc15" : "#93c5fd";
+            ctx.font = "bold 26px Inter, Segoe UI, sans-serif";
+            ctx.fillText(`#${i + 1}  ${m.name}`, 100, rowY + 45);
+
+            ctx.fillStyle = "#cbd5e1";
+            ctx.font = "600 22px Inter, Segoe UI, sans-serif";
+            ctx.fillText(`${m.activeSubject || "CA Study"} (${(m.level || "FINAL").toUpperCase()})`, 520, rowY + 45);
+
+            ctx.fillStyle = "#4ade80";
+            ctx.font = "bold 28px Courier New, monospace";
+            ctx.fillText(`${m.totalActualHours}h  •  ${m.efficiency}%`, W - 310, rowY + 45);
+          }
+
+          if (squadList.length > maxRows) {
+            ctx.fillStyle = "#94a3b8";
+            ctx.font = "italic 21px Inter, Segoe UI, sans-serif";
+            ctx.fillText(`+ ${squadList.length - maxRows} more study squad members in this session`, 76, curY + maxRows * 86 + 30);
+          }
+          curY += maxRows * 86 + 65;
+        }
+
+        // 5. Today's Subject Breakdown Strip
+        if (curY < H - 220) {
+          ctx.fillStyle = "#f8fafc";
+          ctx.font = "bold 28px Inter, Segoe UI, sans-serif";
+          ctx.fillText("📚 TODAY'S SUBJECT BREAKDOWN", 76, curY);
+          curY += 25;
+
+          const subs = me.subjects && me.subjects.length ? me.subjects : [{ subject: "FR", estimated: "02:00", actual: me.totalActualHours }];
+          subs.slice(0, 4).forEach((s, idx) => {
+            const sy = curY + idx * 64;
+            if (sy + 55 < H - 110) {
+              ctx.fillStyle = "rgba(255, 255, 255, 0.04)";
+              ctx.fillRect(76, sy, W - 152, 52);
+              ctx.fillStyle = "#7dd3fc";
+              ctx.font = "bold 23px Inter, Segoe UI, sans-serif";
+              ctx.fillText(`${s.subject}`, 100, sy + 34);
+              ctx.fillStyle = "#cbd5e1";
+              ctx.font = "22px Courier New, monospace";
+              ctx.fillText(`Planned: ${s.estimated}h   |   Actual: ${s.actual}h`, 360, sy + 34);
+            }
+          });
+        }
+
+        // 6. Footer Branding
+        ctx.fillStyle = "rgba(15, 23, 42, 0.9)";
+        ctx.fillRect(38, H - 105, W - 76, 67);
+        ctx.fillStyle = "#7dd3fc";
+        ctx.font = "bold 23px Inter, Segoe UI, sans-serif";
+        ctx.fillText("www.calciumnotes.com  •  Study Together, Clear CA Together", 76, H - 62);
+      };
+
+      function buildShareTextSummary() {
+        const me = buildMyMemberState();
+        const squad = getSortedSquadList();
+        const roomPart = activeRoomCode ? `\n🔗 Join our live Study Squad (${squad.length} members): https://www.calciumnotes.com/?room=${activeRoomCode}` : "\n🌐 Track on https://www.calciumnotes.com/";
+        const subLines = (me.subjects || []).map(s => `• ${s.subject}: ${s.actual}h (Est ${s.estimated}h)`).join("\n");
+        return `⚡ CALCIUM NOTES DAILY STUDY WRAP ⚡\n📅 ${new Date().toDateString()}\n🎯 Level: CA ${(me.level || "final").toUpperCase()}\n⏱ Total Studied: ${me.totalActualHours} hrs (${me.efficiency}% Efficiency)${subLines ? "\n" + subLines : ""}${roomPart}\n#CAFinal #CAStudyReactor #CalciumNotes #ICAI`;
+      }
+
+      window.downloadStudyWrapPng = function() {
+        renderStudyWrapCanvas();
+        const canvas = document.getElementById("studyWrapCanvas");
+        const link = document.createElement("a");
+        link.download = `calcium-study-wrap-${getTodayKey()}.png`;
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+        document.getElementById("shareActionToast").textContent = "✅ Downloaded HD Scorecard PNG! Ready to post on Instagram Stories or Status.";
+      };
+
+      window.nativeShareStudyWrap = function() {
+        renderStudyWrapCanvas();
+        const canvas = document.getElementById("studyWrapCanvas");
+        canvas.toBlob(async (blob) => {
+          const file = new File([blob], `calcium-study-wrap-${getTodayKey()}.png`, { type: "image/png" });
+          const summary = buildShareTextSummary();
+          if (navigator.canShare && navigator.canShare({ files: [file] })) {
+            try {
+              await navigator.share({
+                title: "My Calcium Notes Study Wrap",
+                text: summary,
+                files: [file]
+              });
+              document.getElementById("shareActionToast").textContent = "✅ Shared successfully!";
+              return;
+            } catch (err) {}
+          }
+          window.downloadStudyWrapPng();
+        }, "image/png");
+      };
+
+      window.shareWrapToWhatsApp = function() {
+        const text = buildShareTextSummary();
+        window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, "_blank");
+      };
+
+      window.shareWrapToTwitter = function() {
+        const text = buildShareTextSummary();
+        window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, "_blank");
+      };
+
+      window.copyWrapTextSummary = function() {
+        const text = buildShareTextSummary();
+        try {
+          navigator.clipboard.writeText(text);
+        } catch (e) {
+          const ta = document.createElement("textarea");
+          ta.value = text;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand("copy");
+          ta.remove();
+        }
+        document.getElementById("shareActionToast").textContent = "✅ Study Wrap caption copied to clipboard!";
+      };
+
+      /* =========================================
+         LIVE ROOM CHAT LOGIC (PEERJS WEBRTC)
+      ========================================= */
+      let roomChatMessages = [];
+
+      window.sendSquadChatMessage = function() {
+        const inp = document.getElementById("squadChatInput");
+        const txt = inp.value.trim();
+        if (!txt) return;
+        inp.value = "";
+
+        const me = buildMyMemberState();
+        const now = new Date();
+        const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const msg = {
+          type: "CHAT_MESSAGE",
+          id: Date.now() + "-" + Math.random().toString(36).substring(2, 6),
+          sender: me.name,
+          text: txt,
+          time: timeStr
+        };
+
+        appendChatMessage(msg, true);
+
+        // Broadcast to squad
+        if (isRoomHost && hostConnections.length > 0) {
+          hostConnections.forEach(c => { if (c && c.open) c.send(msg); });
+        } else if (!isRoomHost && guestHostConn && guestHostConn.open) {
+          guestHostConn.send(msg);
+        }
+      };
+
+      function appendChatMessage(msg, isSelf) {
+        roomChatMessages.push(msg);
+        const container = document.getElementById("squadChatMessages");
+        if (!container) return;
+        const msgDiv = document.createElement("div");
+        msgDiv.style.display = "flex";
+        msgDiv.style.flexDirection = "column";
+        msgDiv.style.alignItems = isSelf ? "flex-end" : "flex-start";
+        msgDiv.innerHTML = `
+          <div style="font-size:10px; color:#94a3b8; margin-bottom:2px;">${isSelf ? 'You' : msg.sender} • ${msg.time}</div>
+          <div style="background:${isSelf ? 'rgba(59,130,246,0.3)' : 'rgba(255,255,255,0.08)'}; border:1px solid ${isSelf ? 'rgba(59,130,246,0.5)' : 'rgba(255,255,255,0.12)'}; color:#f8fafc; padding:6px 10px; border-radius:8px; max-width:82%; word-break:break-word;">
+            ${escapeHtml(msg.text)}
+          </div>
+        `;
+        container.appendChild(msgDiv);
+        container.scrollTop = container.scrollHeight;
+      }
+
+      function escapeHtml(text) {
+        const div = document.createElement("div");
+        div.textContent = text;
+        return div.innerHTML;
+      }
     </script>
   </body>
 </html>

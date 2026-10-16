@@ -1,40 +1,435 @@
+/* =========================================
+   CALCIUM NOTES — READ MODE STYLES (read.css)
+========================================= */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-body.rm-iframe-body {
-    font-family: 'Inter', sans-serif;
-    background: transparent;
-    color: #e2e8f0;
-    padding: 20px;
-    height: 100vh;
-    overflow-y: auto;
+body {
+  background: #070711;
+  color: #e2e8f0;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
 }
 
-.rm-grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
-    padding-bottom: 30px;
+/* ── Container Grid ── */
+.read-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
-/* Scrollbar styling for the iframe */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 10px; }
-
-/* DELETE BUTTON STYLES FOR TASKS & ALARMS */
-.delete-btn { 
-    background: none; 
-    border: none; 
-    color: rgba(239, 68, 68, 0.6); 
-    font-size: 20px; 
-    cursor: pointer; 
-    transition: 0.2s; 
+/* ── Panels (Glassmorphism) ── */
+.rm-panel {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  border-radius: 16px;
+  padding: 22px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
 }
 
-.delete-btn:hover { 
-    color: #ef4444; 
-    transform: scale(1.2); 
+.rm-panel-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #3b82f6;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rm-panel-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(59, 130, 246, 0.2);
+}
+
+/* ── CLOCK PANEL ── */
+.panel-clock {
+  grid-column: 1;
+}
+.clock-wrap {
+  text-align: center;
+  padding: 10px 0;
+}
+.clock-hm {
+  font-family: "Courier New", monospace;
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #93c5fd;
+  letter-spacing: -2px;
+  text-shadow: 0 0 25px rgba(59, 130, 246, 0.5);
+  line-height: 1;
+}
+.clock-sec {
+  font-family: "Courier New", monospace;
+  font-size: 1.5rem;
+  color: #475569;
+}
+.clock-date-str {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 10px;
+}
+.clock-greeting {
+  font-size: 1rem;
+  color: #93c5fd;
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+/* ── TIMER PANEL ── */
+.panel-timer {
+  grid-column: 2;
+}
+.t-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.t-tab {
+  flex: 1;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.t-tab.on {
+  background: rgba(59, 130, 246, 0.18);
+  color: #93c5fd;
+  border-color: rgba(59, 130, 246, 0.45);
+}
+.t-display {
+  font-family: "Courier New", monospace;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #e2e8f0;
+  margin: 10px 0;
+}
+.t-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.t-num {
+  width: 58px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 6px;
+  font-family: "Courier New", monospace;
+  font-size: 1.2rem;
+  outline: none;
+}
+.t-num:focus {
+  border-color: rgba(59, 130, 246, 0.5);
+}
+.t-sep {
+  color: #475569;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.t-btns {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.t-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+.t-btn.go {
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+  color: #052e16;
+}
+.t-btn.stop {
+  background: rgba(239, 68, 68, 0.18);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+.t-btn.rst {
+  background: rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.t-btn:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+.sw-laps {
+  max-height: 65px;
+  overflow-y: auto;
+  margin-top: 10px;
+  font-family: "Courier New", monospace;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+/* ── ALARM PANEL ── */
+.panel-alarm {
+  grid-column: 3;
+}
+.al-form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 14px;
+}
+.al-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 0.85rem;
+  outline: none;
+  width: 100%;
+  color-scheme: dark;
+}
+.al-input:focus {
+  border-color: rgba(59, 130, 246, 0.5);
+}
+.al-add {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 9px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  transition: all 0.2s;
+}
+.al-add:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+.al-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+.al-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: 8px;
+  padding: 9px 12px;
+}
+.al-time {
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  color: #93c5fd;
+  flex: 1;
+}
+
+/* ── TASKS PANEL ── */
+.panel-tasks {
+  grid-column: 1 / 3;
+}
+.tk-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+.tk-stats b {
+  color: #93c5fd;
+}
+.tk-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.tk-input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  outline: none;
+}
+.tk-pri {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.8rem;
+  outline: none;
+  cursor: pointer;
+  color-scheme: dark;
+}
+.tk-add {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+.tk-add:hover {
+  filter: brightness(1.2);
+  transform: translateY(-1px);
+}
+.tk-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+.tk-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+.tk-item.done span {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+/* ── NOTES PANEL ── */
+.panel-notes {
+  grid-column: 3;
+}
+.note-area {
+  width: 100%;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.84rem;
+  line-height: 1.6;
+  resize: none;
+  outline: none;
+}
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 0.72rem;
+  color: #475569;
+}
+
+/* ── MUSIC PANEL ── */
+.panel-music {
+  grid-column: 1 / 4;
+}
+
+/* ── ALARM TOAST ── */
+.alarm-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(140px);
+  background: rgba(15, 23, 42, 0.98);
+  border: 1px solid #3b82f6;
+  color: #e2e8f0;
+  border-radius: 14px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.alarm-toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+.toast-icon {
+  font-size: 1.8rem;
+}
+.toast-body h4 {
+  font-size: 0.9rem;
+  color: #93c5fd;
+  margin-bottom: 2px;
+}
+.toast-body p {
+  font-size: 0.78rem;
+  color: #64748b;
+}
+.toast-dismiss {
+  margin-left: auto;
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.3);
+  border-radius: 3px;
+}
+
+@media (max-width: 850px) {
+  .read-container {
+    grid-template-columns: 1fr;
+  }
+  .panel-clock,
+  .panel-timer,
+  .panel-alarm,
+  .panel-tasks,
+  .panel-notes,
+  .panel-music {
+    grid-column: 1 !important;
+  }
 }
