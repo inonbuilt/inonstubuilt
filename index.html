@@ -649,11 +649,18 @@
           setTimeout(() => joinPeerRoom(roomParam), 400);
         }
 
-        setInterval(() => {
-          squadMembersMap[myClientId] = buildMyMemberState();
-          broadcastMyState();
-          syncSquadToStorage();
-        }, 1000);
+        // Keep iframe squad rosters synchronized ONLY when data actually changes
+setInterval(() => {
+  try {
+    const newRosterStr = JSON.stringify(getSquadList());
+    if (localStorage.getItem("calcium_squad_roster") !== newRosterStr) {
+      localStorage.setItem("calcium_squad_roster", newRosterStr);
+    }
+    if (localStorage.getItem("calcium_active_room") !== (activeRoomCode || "")) {
+      localStorage.setItem("calcium_active_room", activeRoomCode || "");
+    }
+  } catch (e) {}
+}, 1000);
       }
 
       window.saveDisplayName = function(val) {
