@@ -338,6 +338,11 @@ window.toggleTimer = function(idx) {
 
   savePlanForDate(dStr, plan);
   renderTable();
+
+  // Notify main window to update study status and broadcast to squad
+  if (window.parent && typeof window.parent.updateAndBroadcastMyState === "function") {
+    window.parent.updateAndBroadcastMyState();
+  }
 };
 
 function calculateAnalytics() {

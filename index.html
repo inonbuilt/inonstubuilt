@@ -854,6 +854,12 @@ setInterval(() => {
         }
       }
 
+      window.updateAndBroadcastMyState = function() {
+        squadMembersMap[myClientId] = buildMyMemberState();
+        broadcastMyState();
+        syncSquadToStorage();
+      };
+
       window.pushPlanToSquad = function(plan, level) {
         const msg = { type: "PLAN_SYNC", plan, level };
         if (isRoomHost) {
