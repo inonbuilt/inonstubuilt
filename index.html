@@ -753,7 +753,35 @@ setInterval(() => {
       };
 
       function getSortedSquadList() {
-        return Object.values(squadMembersMap).sort((a, b) => (b.totalActualDecimal || 0) - (a.totalActualDecimal || 0));
+        const myState = buildMyMemberState();
+        const myName = (myState.name || "You").trim().toLowerCase();
+
+        // 1. Clean up temporary solo "me-..." keys
+        Object.keys(squadMembersMap).forEach(k => {
+          if (k.startsWith("me-") && k !== myClientId) {
+            delete squadMembersMap[k];
+          }
+        });
+
+        // 2. Deduplicate roster by student name so no user ever gets 2 cards
+        const unique = {};
+        unique[myName] = myState; // Current user always takes priority
+
+        Object.values(squadMembersMap).forEach(m => {
+          if (!m || !m.name) return;
+          const nameKey = m.name.trim().toLowerCase();
+
+          // Skip duplicate copies of ourselves and temporary IDs
+          if (nameKey === myName) return;
+          if (m.peerId && m.peerId.startsWith("me-")) return;
+
+          // If a student reloaded or reconnected, keep their newest active card
+          if (!unique[nameKey] || (m.updatedAt && m.updatedAt > (unique[nameKey].updatedAt || 0))) {
+            unique[nameKey] = m;
+          }
+        });
+
+        return Object.values(unique).sort((a, b) => (b.totalActualDecimal || 0) - (a.totalActualDecimal || 0));
       }
 
       function syncSquadToStorage() {
@@ -778,7 +806,7 @@ setInterval(() => {
         grid.innerHTML = list.map((m, idx) => {
           const initials = (m.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
           const callBadge = m.isCallActive
-            ? `<div class="seat-call-badge ${m.isVideoOn ? 'cam' : 'mic'}">${m.isVideoOn ? '📹 Video Live' : '🎙️ Mic Live'}</div>`
+            ? `<div class="seat-call-badge ${m.isVideoOn ? 'cam' : 'mic'}">${m.isScreenSharing ? '🖥️ Screen Live' : (m.isVideoOn ? '📹 Video Live' : '🎙️ Mic Live')}</div>`
             : '';
           return `
             <div class="squad-seat-card ${m.isStudying ? 'studying' : ''} ${m.isCallActive ? 'in-call' : ''}">
@@ -810,7 +838,13 @@ setInterval(() => {
             if (peerInstance) peerInstance.destroy();
             peerInstance = new Peer("calcium-notes-room-" + code);
             peerInstance.on("open", (assignedId) => {
+              // Delete old temporary solo ID before registering official room ID
+              if (myClientId !== assignedId) {
+                delete squadMembersMap[myClientId];
+              }
               myClientId = assignedId;
+              squadMembersMap[myClientId] = buildMyMemberState();
+
               document.getElementById("squadStatusText").textContent = `🟢 Live Room ${code} Ready — Share Link with Any Number of Friends!`;
               updateAndBroadcastMyState();
               if (isCallActive) connectCallsWithRoomMembers();
@@ -823,6 +857,17 @@ setInterval(() => {
               });
               conn.on("close", () => {
                 hostConnections = hostConnections.filter(c => c !== conn);
+                if (conn.peer) {
+                  delete squadMembersMap[conn.peer];
+                  syncSquadToStorage();
+                  if (typeof removeRemoteVideoTile === "function") {
+                    removeRemoteVideoTile(conn.peer);
+                  }
+                  // Broadcast refreshed roster so all members remove departed card
+                  hostConnections.forEach(c => {
+                    if (c && c.open) c.send({ type: "ROSTER_SYNC", roster: squadMembersMap, roomCode: activeRoomCode });
+                  });
+                }
               });
             });
             peerInstance.on("call", handleIncomingMediaCall);
@@ -861,7 +906,13 @@ setInterval(() => {
             if (peerInstance) peerInstance.destroy();
             peerInstance = new Peer();
             peerInstance.on("open", (assignedId) => {
+              // Delete old temporary solo ID before registering official guest ID
+              if (myClientId !== assignedId) {
+                delete squadMembersMap[myClientId];
+              }
               myClientId = assignedId;
+              squadMembersMap[myClientId] = buildMyMemberState();
+
               guestHostConn = peerInstance.connect("calcium-notes-room-" + code);
               guestHostConn.on("open", () => {
                 document.getElementById("squadStatusText").textContent = `🟢 Connected to Live Room ${code}`;
@@ -880,8 +931,21 @@ setInterval(() => {
 
       function handleIncomingPeerData(payload, sourceConn) {
         if (!payload || !payload.type) return;
+
         if (payload.type === "MEMBER_UPDATE" && payload.member) {
-          squadMembersMap[payload.member.peerId] = payload.member;
+          const incoming = payload.member;
+          const incomingName = (incoming.name || "").trim().toLowerCase();
+
+          // Remove any stale entry matching this person's name or temporary "me-" ID
+          Object.keys(squadMembersMap).forEach(k => {
+            if (k !== myClientId) {
+              if (k.startsWith("me-") || (squadMembersMap[k].name && squadMembersMap[k].name.trim().toLowerCase() === incomingName)) {
+                delete squadMembersMap[k];
+              }
+            }
+          });
+          squadMembersMap[incoming.peerId] = incoming;
+
           if (isRoomHost) {
             hostConnections.forEach(c => {
               if (c && c.open) c.send({ type: "ROSTER_SYNC", roster: squadMembersMap, roomCode: activeRoomCode });
@@ -889,8 +953,18 @@ setInterval(() => {
           }
           syncSquadToStorage();
         } else if (payload.type === "ROSTER_SYNC" && payload.roster) {
-          Object.assign(squadMembersMap, payload.roster);
-          squadMembersMap[myClientId] = buildMyMemberState();
+          const cleanRoster = {};
+          const myName = (localStorage.getItem("calcium_user_name") || "CA Aspirant").trim().toLowerCase();
+
+          Object.entries(payload.roster).forEach(([k, member]) => {
+            if (k.startsWith("me-") && k !== myClientId) return;
+            // Prevent remote cached state from overwriting local state
+            if (k === myClientId || (member.name && member.name.trim().toLowerCase() === myName)) return;
+            cleanRoster[k] = member;
+          });
+
+          cleanRoster[myClientId] = buildMyMemberState();
+          squadMembersMap = cleanRoster;
           syncSquadToStorage();
           if (isCallActive) {
             connectCallsWithRoomMembers();
@@ -905,14 +979,11 @@ setInterval(() => {
             });
           }
         } else if (payload.type === "START_SHARED_FOCUS") {
-          // 1. Force screen to Reading Mode
           switchToReadMode();
-          // 2. Start timer in the iframe
           const readIframe = document.getElementById("readModeIframe");
           if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.syncAndStartTimer === "function") {
              readIframe.contentWindow.syncAndStartTimer(payload.estimatedTime);
           }
-          // 3. If Host receives this from a guest, relay it to other guests
           if (isRoomHost) {
             hostConnections.forEach(c => {
               if (c !== sourceConn && c && c.open) c.send(payload);

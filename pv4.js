@@ -481,7 +481,15 @@ window.broadcastMyPlanToSquad = function() {
 };
 
 function renderSquadStripFromStorage() {
-  const list = JSON.parse(localStorage.getItem("calcium_squad_roster") || "[]");
+  const rawList = JSON.parse(localStorage.getItem("calcium_squad_roster") || "[]");
+  const seen = new Set();
+  const list = rawList.filter(m => {
+    const key = (m.name || "").trim().toLowerCase();
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
   const countEl = document.getElementById("pv4-squad-count");
   if (countEl) countEl.textContent = list.length || 1;
 
