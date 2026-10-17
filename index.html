@@ -338,6 +338,78 @@
           </div>
         </div>
 
+        <!-- ═══════════════════════════════════════════════════════════════════
+             LIVE AUDIO & VIDEO CALL STAGE + FUN FILTERS (WEBRTC PEERJS)
+        ═══════════════════════════════════════════════════════════════════ -->
+        <div id="callStageContainer" class="call-stage-card">
+          <div class="call-stage-header">
+            <div class="call-header-info">
+              <span class="call-badge" id="callStatusBadge">
+                <span class="status-dot"></span>
+                <span id="callStatusText">Call Inactive</span>
+              </span>
+              <span class="call-count-text" id="callCountText">0 on call</span>
+            </div>
+            <!-- Call Action Controls -->
+            <div class="call-action-btns">
+              <button id="btnToggleAudio" class="call-btn btn-audio off" onclick="toggleAudio()" title="Turn Audio On/Off">
+                <span class="btn-icon">🔇</span>
+                <span class="btn-label" id="lblToggleAudio">Mic Off</span>
+              </button>
+              <button id="btnToggleVideo" class="call-btn btn-video off" onclick="toggleVideo()" title="Turn Video On/Off">
+                <span class="btn-icon">📷</span>
+                <span class="btn-label" id="lblToggleVideo">Video Off</span>
+              </button>
+              <button id="btnShareScreen" class="call-btn btn-screen off" onclick="toggleScreenShare()" title="Share Study Screen">
+                <span class="btn-icon">🖥️</span>
+                <span class="btn-label" id="lblShareScreen">Screen</span>
+              </button>
+              <button id="btnJoinLeaveCall" class="call-btn btn-join" onclick="toggleJoinLeaveCall()" title="Join or Leave Call">
+                <span class="btn-icon">📞</span>
+                <span class="btn-label" id="lblJoinLeave">Join Call</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Fun Video Filters Selector Bar -->
+          <div class="video-filter-bar" id="videoFilterBar">
+            <span class="filter-bar-label">🎨 Video Filter:</span>
+            <button class="filter-pill-btn active" data-filter="none" onclick="setVideoFilter('none')">✨ Normal</button>
+            <button class="filter-pill-btn" data-filter="cyberpunk" onclick="setVideoFilter('cyberpunk')">🟣 Cyberpunk</button>
+            <button class="filter-pill-btn" data-filter="retro" onclick="setVideoFilter('retro')">📼 Retro 90s</button>
+            <button class="filter-pill-btn" data-filter="noir" onclick="setVideoFilter('noir')">🕵️ Noir</button>
+            <button class="filter-pill-btn" data-filter="anime" onclick="setVideoFilter('anime')">🌸 Anime Pop</button>
+            <button class="filter-pill-btn" data-filter="warm" onclick="setVideoFilter('warm')">🌅 Warm</button>
+            <button class="filter-pill-btn" data-filter="matrix" onclick="setVideoFilter('matrix')">💻 Matrix</button>
+            <button class="filter-pill-btn" data-filter="xray" onclick="setVideoFilter('xray')">👻 X-Ray</button>
+            <button class="filter-pill-btn" data-filter="blur" onclick="setVideoFilter('blur')">🌫️ Blur</button>
+          </div>
+
+          <!-- Alert banner if permissions denied -->
+          <div id="callMediaAlert" class="call-media-alert" style="display:none;"></div>
+
+          <!-- Video Tiles Gallery -->
+          <div id="videoGallery" class="video-gallery-grid">
+            <!-- Local User Tile -->
+            <div id="localVideoTile" class="video-tile local-tile camera-off">
+              <video id="localVideoFeed" class="v-filter-none" autoplay playsinline muted></video>
+              <div class="tile-avatar" id="localTileAvatar">CA</div>
+              <span class="tile-filter-tag" id="localFilterBadge" style="display:none;"></span>
+              <div class="tile-overlay">
+                <span class="tile-name" id="localTileName">You (Solo)</span>
+                <div class="tile-indicators">
+                  <span id="localAudioIndicator" class="indicator-icon muted" title="Microphone Muted">🔇</span>
+                  <span id="localVideoIndicator" class="indicator-icon camera-off" title="Camera Off">📷</span>
+                </div>
+              </div>
+              <div class="speaking-ring"></div>
+            </div>
+
+            <!-- Remote Video Tiles container -->
+            <div id="remoteVideosContainer" class="remote-videos-wrapper"></div>
+          </div>
+        </div>
+
         <!-- Unlimited Seats Grid -->
         <div style="display:flex; justify-content:space-between; align-items:center;">
           <span style="font-size:12px; font-weight:700; color:#cbd5e1;">LIVE ROOM ROSTER (AUTO-SYNCED ACROSS READ &amp; PLAN MODES)</span>
@@ -625,7 +697,11 @@
           tasksDone: tasks.filter(t => t.done).length,
           tasksTotal: tasks.length,
           subjects: subjectBreakdown,
-          updatedAt: Date.now()
+          updatedAt: Date.now(),
+          isCallActive: typeof isCallActive !== "undefined" ? !!isCallActive : false,
+          isAudioOn: typeof isAudioOn !== "undefined" ? !!isAudioOn : false,
+          isVideoOn: typeof isVideoOn !== "undefined" ? !!isVideoOn : false,
+          videoFilter: typeof currentVideoFilter !== "undefined" ? currentVideoFilter : "none"
         };
       }
 
@@ -652,7 +728,7 @@
         // Keep iframe squad rosters synchronized ONLY when data actually changes
 setInterval(() => {
   try {
-    const newRosterStr = JSON.stringify(getSquadList());
+    const newRosterStr = JSON.stringify(getSortedSquadList());
     if (localStorage.getItem("calcium_squad_roster") !== newRosterStr) {
       localStorage.setItem("calcium_squad_roster", newRosterStr);
     }
@@ -701,11 +777,15 @@ setInterval(() => {
         if (!grid) return;
         grid.innerHTML = list.map((m, idx) => {
           const initials = (m.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
+          const callBadge = m.isCallActive
+            ? `<div class="seat-call-badge ${m.isVideoOn ? 'cam' : 'mic'}">${m.isVideoOn ? '📹 Video Live' : '🎙️ Mic Live'}</div>`
+            : '';
           return `
-            <div class="squad-seat-card ${m.isStudying ? 'studying' : ''}">
+            <div class="squad-seat-card ${m.isStudying ? 'studying' : ''} ${m.isCallActive ? 'in-call' : ''}">
               <div class="seat-avatar">${initials}</div>
-              <div class="seat-name">#${idx + 1} ${m.name}</div>
+              <div class="seat-name">#${idx + 1} ${escapeHtml(m.name)}</div>
               <div class="seat-sub">${m.activeSubject || 'Planning'} • ${(m.level || 'final').toUpperCase()}</div>
+              ${callBadge}
               <div class="seat-timer">${m.isStudying ? '▶ ' + m.activeTimerStr : '⏸ ' + m.totalActualHours + ' hrs'}</div>
               <div class="seat-meta">Total: ${m.totalActualHours}h • Eff: ${m.efficiency}%</div>
             </div>
@@ -729,8 +809,11 @@ setInterval(() => {
           try {
             if (peerInstance) peerInstance.destroy();
             peerInstance = new Peer("calcium-notes-room-" + code);
-            peerInstance.on("open", () => {
+            peerInstance.on("open", (assignedId) => {
+              myClientId = assignedId;
               document.getElementById("squadStatusText").textContent = `🟢 Live Room ${code} Ready — Share Link with Any Number of Friends!`;
+              updateAndBroadcastMyState();
+              if (isCallActive) connectCallsWithRoomMembers();
             });
             peerInstance.on("connection", (conn) => {
               hostConnections.push(conn);
@@ -742,6 +825,7 @@ setInterval(() => {
                 hostConnections = hostConnections.filter(c => c !== conn);
               });
             });
+            peerInstance.on("call", handleIncomingMediaCall);
           } catch (e) {
             console.warn("PeerJS fallback:", e);
           }
@@ -776,14 +860,17 @@ setInterval(() => {
           try {
             if (peerInstance) peerInstance.destroy();
             peerInstance = new Peer();
-            peerInstance.on("open", () => {
+            peerInstance.on("open", (assignedId) => {
+              myClientId = assignedId;
               guestHostConn = peerInstance.connect("calcium-notes-room-" + code);
               guestHostConn.on("open", () => {
                 document.getElementById("squadStatusText").textContent = `🟢 Connected to Live Room ${code}`;
                 guestHostConn.send({ type: "MEMBER_UPDATE", member: buildMyMemberState() });
+                if (isCallActive) connectCallsWithRoomMembers();
               });
               guestHostConn.on("data", (payload) => handleIncomingPeerData(payload, guestHostConn));
             });
+            peerInstance.on("call", handleIncomingMediaCall);
           } catch (e) {
             console.warn("PeerJS join error:", e);
           }
@@ -805,6 +892,11 @@ setInterval(() => {
           Object.assign(squadMembersMap, payload.roster);
           squadMembersMap[myClientId] = buildMyMemberState();
           syncSquadToStorage();
+          if (isCallActive) {
+            connectCallsWithRoomMembers();
+          }
+        } else if (payload.type === "MEDIA_STATE_UPDATE") {
+          handleIncomingMediaStateUpdate(payload, sourceConn);
         } else if (payload.type === "CHAT_MESSAGE") {
           appendChatMessage(payload, false);
           if (isRoomHost) {
@@ -878,6 +970,9 @@ setInterval(() => {
       };
 
       window.leavePeerRoom = function() {
+        if (typeof isCallActive !== "undefined" && isCallActive) {
+          window.leaveCall();
+        }
         if (peerInstance) {
           try { peerInstance.destroy(); } catch (e) {}
           peerInstance = null;
@@ -917,6 +1012,726 @@ setInterval(() => {
       window.closeSquadModal = function() {
         document.getElementById("squadModal").classList.remove("active");
       };
+
+      /* =========================================================================
+         LIVE AUDIO & VIDEO CALLING + FUN FILTERS ENGINE (PEERJS WEBRTC)
+      ========================================================================= */
+      const VIDEO_FILTER_LIST = [
+        { id: "none", label: "✨ Normal" },
+        { id: "cyberpunk", label: "🟣 Cyberpunk" },
+        { id: "retro", label: "📼 Retro 90s" },
+        { id: "noir", label: "🕵️ Noir" },
+        { id: "anime", label: "🌸 Anime Pop" },
+        { id: "warm", label: "🌅 Warm" },
+        { id: "matrix", label: "💻 Matrix" },
+        { id: "xray", label: "👻 X-Ray" },
+        { id: "blur", label: "🌫️ Blur" }
+      ];
+
+      let isCallActive = false;
+      let isAudioOn = false;
+      let isVideoOn = false;
+      let isScreenSharing = false;
+      let currentVideoFilter = "none";
+
+      let localStream = null;
+      let screenStream = null;
+      let activeMediaCalls = {};    // remotePeerId -> MediaConnection
+      let remoteStreams = {};       // remotePeerId -> MediaStream
+      let remoteMediaStates = {};   // remotePeerId -> { isCallActive, isAudioOn, isVideoOn, videoFilter }
+      let audioAnalyzers = {};      // peerId -> { source, analyser, interval }
+
+      window.setVideoFilter = function(filterId) {
+        currentVideoFilter = filterId || "none";
+        document.querySelectorAll(".filter-pill-btn").forEach(btn => {
+          btn.classList.toggle("active", btn.getAttribute("data-filter") === currentVideoFilter);
+        });
+        updateLocalVideoDisplay();
+        broadcastMediaState();
+      };
+
+      window.cycleVideoFilter = function() {
+        const idx = VIDEO_FILTER_LIST.findIndex(f => f.id === currentVideoFilter);
+        const next = VIDEO_FILTER_LIST[(idx + 1) % VIDEO_FILTER_LIST.length];
+        window.setVideoFilter(next.id);
+      };
+
+      function getFilterLabel(filterId) {
+        const found = VIDEO_FILTER_LIST.find(f => f.id === filterId);
+        return found && found.id !== "none" ? found.label : "";
+      }
+
+      window.toggleJoinLeaveCall = function() {
+        if (isCallActive) {
+          window.leaveCall();
+        } else {
+          joinCall(false, true); // default join: mic on, video off
+        }
+      };
+
+      window.toggleAudio = function() {
+        if (!isCallActive) {
+          joinCall(false, true);
+          return;
+        }
+        setAudioState(!isAudioOn);
+      };
+
+      window.toggleVideo = function() {
+        if (!isCallActive) {
+          joinCall(true, isAudioOn);
+          return;
+        }
+        setVideoState(!isVideoOn);
+      };
+
+      async function joinCall(wantVideo = false, wantAudio = true) {
+        const alertEl = document.getElementById("callMediaAlert");
+        if (alertEl) alertEl.style.display = "none";
+
+        if (!activeRoomCode) {
+          window.createPeerRoom();
+        }
+
+        try {
+          try {
+            localStream = await navigator.mediaDevices.getUserMedia({
+              audio: {
+                echoCancellation: true,
+                noiseSuppression: true,
+                autoGainControl: true
+              },
+              video: {
+                width: { ideal: 640 },
+                height: { ideal: 480 },
+                facingMode: "user"
+              }
+            });
+          } catch (err1) {
+            console.warn("Dual camera+mic request failed, attempting fallback:", err1);
+            try {
+              localStream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+            } catch (err2) {
+              try {
+                localStream = await navigator.mediaDevices.getUserMedia({ audio: false, video: true });
+              } catch (err3) {
+                throw new Error("Could not access microphone or camera. Please check your browser device permissions.");
+              }
+            }
+          }
+
+          isCallActive = true;
+          isAudioOn = wantAudio && localStream.getAudioTracks().length > 0;
+          isVideoOn = wantVideo && localStream.getVideoTracks().length > 0;
+
+          localStream.getAudioTracks().forEach(t => t.enabled = isAudioOn);
+          localStream.getVideoTracks().forEach(t => t.enabled = isVideoOn);
+
+          const localVideo = document.getElementById("localVideoFeed");
+          if (localVideo) {
+            localVideo.srcObject = localStream;
+            localVideo.muted = true;
+            localVideo.play().catch(e => console.log("Local video play err:", e));
+          }
+
+          setupAudioMonitoring("local", localStream, (speaking) => {
+            const tile = document.getElementById("localVideoTile");
+            if (tile) tile.classList.toggle("is-speaking", speaking && isAudioOn);
+            updateFloatingSpeakingStatus();
+          });
+
+          updateMediaControlsUI();
+          updateLocalVideoDisplay();
+          broadcastMediaState();
+          connectCallsWithRoomMembers();
+
+          const me = squadMembersMap[myClientId] || { name: "You" };
+          appendChatMessage({
+            type: "CHAT_MESSAGE",
+            sender: "System",
+            text: `📞 ${me.name} joined the audio/video call`,
+            time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+          }, false);
+
+        } catch (err) {
+          console.error("Error joining call:", err);
+          if (alertEl) {
+            alertEl.textContent = `⚠️ ${err.message || "Failed to start media devices"}`;
+            alertEl.style.display = "block";
+          }
+          isCallActive = false;
+          updateMediaControlsUI();
+        }
+      }
+
+      async function setAudioState(enabled) {
+        if (!localStream) return;
+        const audioTracks = localStream.getAudioTracks();
+        if (audioTracks.length === 0 && enabled) {
+          try {
+            const newAudioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            const newTrack = newAudioStream.getAudioTracks()[0];
+            localStream.addTrack(newTrack);
+            replaceSenderTrack("audio", newTrack);
+            setupAudioMonitoring("local", localStream, (speaking) => {
+              const tile = document.getElementById("localVideoTile");
+              if (tile) tile.classList.toggle("is-speaking", speaking && isAudioOn);
+              updateFloatingSpeakingStatus();
+            });
+          } catch (e) {
+            alert("Microphone not available: " + e.message);
+            return;
+          }
+        }
+        isAudioOn = enabled;
+        localStream.getAudioTracks().forEach(t => t.enabled = isAudioOn);
+        updateMediaControlsUI();
+        updateLocalVideoDisplay();
+        broadcastMediaState();
+      }
+
+      async function setVideoState(enabled) {
+        if (!localStream) return;
+        const videoTracks = localStream.getVideoTracks();
+        if (videoTracks.length === 0 && enabled) {
+          try {
+            const newVideoStream = await navigator.mediaDevices.getUserMedia({
+              video: { width: { ideal: 640 }, height: { ideal: 480 }, facingMode: "user" }
+            });
+            const newTrack = newVideoStream.getVideoTracks()[0];
+            localStream.addTrack(newTrack);
+            replaceSenderTrack("video", newTrack);
+          } catch (e) {
+            alert("Camera not available: " + e.message);
+            return;
+          }
+        }
+        isVideoOn = enabled;
+        localStream.getVideoTracks().forEach(t => t.enabled = isVideoOn);
+        updateMediaControlsUI();
+        updateLocalVideoDisplay();
+        broadcastMediaState();
+      }
+
+      function replaceSenderTrack(kind, newTrack) {
+        Object.values(activeMediaCalls).forEach(call => {
+          try {
+            if (call.peerConnection) {
+              const senders = call.peerConnection.getSenders();
+              const sender = senders.find(s => s.track && s.track.kind === kind);
+              if (sender) {
+                sender.replaceTrack(newTrack);
+              } else if (localStream) {
+                call.peerConnection.addTrack(newTrack, localStream);
+              }
+            }
+          } catch (e) {
+            console.warn("Error replacing sender track:", e);
+          }
+        });
+      }
+
+      window.leaveCall = function() {
+        if (localStream) {
+          localStream.getTracks().forEach(t => t.stop());
+          localStream = null;
+        }
+        if (screenStream) {
+          screenStream.getTracks().forEach(t => t.stop());
+          screenStream = null;
+        }
+        stopAudioMonitoring("local");
+
+        Object.entries(activeMediaCalls).forEach(([peerId, call]) => {
+          try { call.close(); } catch (e) {}
+          stopAudioMonitoring(peerId);
+        });
+        activeMediaCalls = {};
+        remoteStreams = {};
+        remoteMediaStates = {};
+
+        const localVideo = document.getElementById("localVideoFeed");
+        if (localVideo) localVideo.srcObject = null;
+
+        const container = document.getElementById("remoteVideosContainer");
+        if (container) container.innerHTML = "";
+
+        isCallActive = false;
+        isAudioOn = false;
+        isVideoOn = false;
+        isScreenSharing = false;
+
+        updateMediaControlsUI();
+        updateLocalVideoDisplay();
+        broadcastMediaState();
+
+        const me = squadMembersMap[myClientId] || { name: "You" };
+        appendChatMessage({
+          type: "CHAT_MESSAGE",
+          sender: "System",
+          text: `📞 ${me.name} left the audio/video call`,
+          time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+        }, false);
+      };
+
+      window.toggleScreenShare = async function() {
+        if (!isCallActive) {
+          alert("Please join the call first before sharing your screen.");
+          return;
+        }
+        if (isScreenSharing) {
+          stopScreenShare();
+          return;
+        }
+        try {
+          screenStream = await navigator.mediaDevices.getDisplayMedia({ video: true });
+          const screenTrack = screenStream.getVideoTracks()[0];
+          isScreenSharing = true;
+
+          replaceSenderTrack("video", screenTrack);
+
+          const localVideo = document.getElementById("localVideoFeed");
+          if (localVideo) {
+            localVideo.srcObject = screenStream;
+            localVideo.style.transform = "none";
+          }
+
+          screenTrack.onended = () => {
+            stopScreenShare();
+          };
+
+          updateMediaControlsUI();
+        } catch (err) {
+          console.warn("Screen share cancelled or failed:", err);
+          isScreenSharing = false;
+          updateMediaControlsUI();
+        }
+      };
+
+      function stopScreenShare() {
+        if (screenStream) {
+          screenStream.getTracks().forEach(t => t.stop());
+          screenStream = null;
+        }
+        isScreenSharing = false;
+
+        const camTrack = localStream ? localStream.getVideoTracks()[0] : null;
+        if (camTrack) {
+          replaceSenderTrack("video", camTrack);
+        }
+        const localVideo = document.getElementById("localVideoFeed");
+        if (localVideo) {
+          localVideo.srcObject = localStream;
+          localVideo.style.transform = "scaleX(-1)";
+        }
+        updateMediaControlsUI();
+      }
+
+      function connectCallsWithRoomMembers() {
+        if (!peerInstance || !isCallActive || !localStream) return;
+        Object.values(squadMembersMap).forEach(m => {
+          if (m.peerId && m.peerId !== myClientId) {
+            if (myClientId > m.peerId && !activeMediaCalls[m.peerId]) {
+              initiateMediaCallToPeer(m.peerId);
+            }
+          }
+        });
+      }
+
+      function initiateMediaCallToPeer(remotePeerId) {
+        if (!peerInstance || !localStream) return;
+        if (activeMediaCalls[remotePeerId]) return;
+
+        try {
+          const call = peerInstance.call(remotePeerId, localStream);
+          activeMediaCalls[remotePeerId] = call;
+          bindCallEvents(call, remotePeerId);
+        } catch (e) {
+          console.warn("Failed to call peer " + remotePeerId, e);
+        }
+      }
+
+      function handleIncomingMediaCall(call) {
+        const remotePeerId = call.peer;
+        activeMediaCalls[remotePeerId] = call;
+
+        if (localStream) {
+          call.answer(localStream);
+        } else {
+          call.answer();
+        }
+        bindCallEvents(call, remotePeerId);
+      }
+
+      function bindCallEvents(call, remotePeerId) {
+        call.on("stream", (remoteStream) => {
+          remoteStreams[remotePeerId] = remoteStream;
+          renderRemoteVideoTile(remotePeerId, remoteStream);
+        });
+        call.on("close", () => {
+          removeRemoteVideoTile(remotePeerId);
+        });
+        call.on("error", (err) => {
+          console.warn("Call error with " + remotePeerId, err);
+          removeRemoteVideoTile(remotePeerId);
+        });
+      }
+
+      function renderRemoteVideoTile(remotePeerId, remoteStream) {
+        let container = document.getElementById("remoteVideosContainer");
+        if (!container) return;
+
+        let tile = document.getElementById(`video-tile-${remotePeerId}`);
+        const member = squadMembersMap[remotePeerId] || { name: "Study Partner", level: "Final" };
+        const initials = (member.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
+        const state = remoteMediaStates[remotePeerId] || { isAudioOn: true, isVideoOn: true, videoFilter: member.videoFilter || "none" };
+        const filterId = state.videoFilter || "none";
+        const filterLbl = getFilterLabel(filterId);
+
+        if (!tile) {
+          tile = document.createElement("div");
+          tile.id = `video-tile-${remotePeerId}`;
+          tile.className = `video-tile ${state.isVideoOn ? '' : 'camera-off'}`;
+          tile.innerHTML = `
+            <video id="video-feed-${remotePeerId}" class="v-filter-${filterId}" autoplay playsinline></video>
+            <div class="tile-avatar">${initials}</div>
+            <span id="filter-tag-${remotePeerId}" class="tile-filter-tag" style="display:${filterLbl && state.isVideoOn ? 'inline-block' : 'none'};">${filterLbl}</span>
+            <div class="tile-overlay">
+              <span class="tile-name">${escapeHtml(member.name)}</span>
+              <div class="tile-indicators">
+                <span id="audio-ind-${remotePeerId}" class="indicator-icon ${state.isAudioOn ? 'unmuted' : 'muted'}">${state.isAudioOn ? '🎤' : '🔇'}</span>
+                <span id="video-ind-${remotePeerId}" class="indicator-icon ${state.isVideoOn ? '' : 'camera-off'}">${state.isVideoOn ? '📹' : '📷'}</span>
+              </div>
+            </div>
+            <div class="speaking-ring"></div>
+          `;
+          container.appendChild(tile);
+        }
+
+        const videoEl = document.getElementById(`video-feed-${remotePeerId}`);
+        if (videoEl) {
+          videoEl.className = `v-filter-${filterId}`;
+          if (videoEl.srcObject !== remoteStream) {
+            videoEl.srcObject = remoteStream;
+            videoEl.play().catch(e => console.log("Remote play err:", e));
+          }
+        }
+
+        setupAudioMonitoring(remotePeerId, remoteStream, (speaking) => {
+          const t = document.getElementById(`video-tile-${remotePeerId}`);
+          if (t) {
+            const audioActive = remoteMediaStates[remotePeerId] ? remoteMediaStates[remotePeerId].isAudioOn : true;
+            t.classList.toggle("is-speaking", speaking && audioActive);
+          }
+          updateFloatingSpeakingStatus();
+        });
+
+        updateCallHeaderCount();
+      }
+
+      function removeRemoteVideoTile(remotePeerId) {
+        stopAudioMonitoring(remotePeerId);
+        delete activeMediaCalls[remotePeerId];
+        delete remoteStreams[remotePeerId];
+        delete remoteMediaStates[remotePeerId];
+
+        const tile = document.getElementById(`video-tile-${remotePeerId}`);
+        if (tile) tile.remove();
+        updateCallHeaderCount();
+      }
+
+      function broadcastMediaState() {
+        const payload = {
+          type: "MEDIA_STATE_UPDATE",
+          peerId: myClientId,
+          isCallActive: isCallActive,
+          isAudioOn: isAudioOn,
+          isVideoOn: isVideoOn,
+          videoFilter: currentVideoFilter
+        };
+
+        if (squadMembersMap[myClientId]) {
+          squadMembersMap[myClientId].isCallActive = isCallActive;
+          squadMembersMap[myClientId].isAudioOn = isAudioOn;
+          squadMembersMap[myClientId].isVideoOn = isVideoOn;
+          squadMembersMap[myClientId].videoFilter = currentVideoFilter;
+        }
+
+        if (isRoomHost) {
+          hostConnections.forEach(c => {
+            if (c && c.open) c.send(payload);
+          });
+        } else if (guestHostConn && guestHostConn.open) {
+          guestHostConn.send(payload);
+        }
+
+        syncSquadToStorage();
+        updateCallHeaderCount();
+      }
+
+      function handleIncomingMediaStateUpdate(payload, sourceConn) {
+        const filterId = payload.videoFilter || "none";
+        remoteMediaStates[payload.peerId] = {
+          isCallActive: payload.isCallActive,
+          isAudioOn: payload.isAudioOn,
+          isVideoOn: payload.isVideoOn,
+          videoFilter: filterId
+        };
+
+        if (squadMembersMap[payload.peerId]) {
+          squadMembersMap[payload.peerId].isCallActive = payload.isCallActive;
+          squadMembersMap[payload.peerId].isAudioOn = payload.isAudioOn;
+          squadMembersMap[payload.peerId].isVideoOn = payload.isVideoOn;
+          squadMembersMap[payload.peerId].videoFilter = filterId;
+        }
+
+        const tile = document.getElementById(`video-tile-${payload.peerId}`);
+        if (tile) {
+          tile.classList.toggle("camera-off", !payload.isVideoOn);
+          const videoEl = document.getElementById(`video-feed-${payload.peerId}`);
+          if (videoEl) {
+            videoEl.className = `v-filter-${filterId}`;
+          }
+          const filterTag = document.getElementById(`filter-tag-${payload.peerId}`);
+          if (filterTag) {
+            const lbl = getFilterLabel(filterId);
+            filterTag.textContent = lbl;
+            filterTag.style.display = (lbl && payload.isVideoOn) ? "inline-block" : "none";
+          }
+          const audioInd = document.getElementById(`audio-ind-${payload.peerId}`);
+          if (audioInd) {
+            audioInd.textContent = payload.isAudioOn ? '🎤' : '🔇';
+            audioInd.className = `indicator-icon ${payload.isAudioOn ? 'unmuted' : 'muted'}`;
+          }
+          const videoInd = document.getElementById(`video-ind-${payload.peerId}`);
+          if (videoInd) {
+            videoInd.textContent = payload.isVideoOn ? '📹' : '📷';
+            videoInd.className = `indicator-icon ${payload.isVideoOn ? '' : 'camera-off'}`;
+          }
+          if (!payload.isCallActive) {
+            removeRemoteVideoTile(payload.peerId);
+          }
+        }
+
+        if (isRoomHost) {
+          hostConnections.forEach(c => {
+            if (c !== sourceConn && c && c.open) c.send(payload);
+          });
+        }
+
+        if (isCallActive && payload.isCallActive && payload.peerId !== myClientId) {
+          if (myClientId > payload.peerId) {
+            initiateMediaCallToPeer(payload.peerId);
+          }
+        }
+
+        syncSquadToStorage();
+        updateCallHeaderCount();
+      }
+
+      function updateMediaControlsUI() {
+        const btnAudio = document.getElementById("btnToggleAudio");
+        const btnVideo = document.getElementById("btnToggleVideo");
+        const btnScreen = document.getElementById("btnShareScreen");
+        const btnJoin = document.getElementById("btnJoinLeaveCall");
+        const badge = document.getElementById("callStatusBadge");
+        const badgeText = document.getElementById("callStatusText");
+
+        const floatingWidget = document.getElementById("floatingCallWidget");
+        const floatingMic = document.getElementById("floatingMicBtn");
+        const floatingCam = document.getElementById("floatingCamBtn");
+        const floatingLabel = document.getElementById("floatingRoomLabel");
+
+        if (isCallActive) {
+          if (btnAudio) {
+            btnAudio.className = `call-btn btn-audio ${isAudioOn ? 'on' : 'off'}`;
+            btnAudio.querySelector(".btn-icon").textContent = isAudioOn ? '🎤' : '🔇';
+            document.getElementById("lblToggleAudio").textContent = isAudioOn ? 'Mic Live' : 'Mic Muted';
+          }
+          if (btnVideo) {
+            btnVideo.className = `call-btn btn-video ${isVideoOn ? 'on' : 'off'}`;
+            btnVideo.querySelector(".btn-icon").textContent = isVideoOn ? '📹' : '📷';
+            document.getElementById("lblToggleVideo").textContent = isVideoOn ? 'Cam Live' : 'Cam Off';
+          }
+          if (btnScreen) {
+            btnScreen.className = `call-btn btn-screen ${isScreenSharing ? 'on' : 'off'}`;
+            document.getElementById("lblShareScreen").textContent = isScreenSharing ? 'Sharing' : 'Screen';
+          }
+          if (btnJoin) {
+            btnJoin.className = "call-btn btn-join in-call";
+            btnJoin.querySelector(".btn-icon").textContent = '🔴';
+            document.getElementById("lblJoinLeave").textContent = 'Leave Call';
+          }
+          if (badge) badge.className = "call-badge active";
+          if (badgeText) badgeText.textContent = "Call Live";
+
+          if (floatingWidget) floatingWidget.style.display = "flex";
+          if (floatingMic) {
+            floatingMic.textContent = isAudioOn ? '🎤' : '🔇';
+            floatingMic.className = `floating-btn ${isAudioOn ? 'active' : 'muted'}`;
+          }
+          if (floatingCam) {
+            floatingCam.textContent = isVideoOn ? '📹' : '📷';
+            floatingCam.className = `floating-btn ${isVideoOn ? 'active' : 'off'}`;
+          }
+          if (floatingLabel) {
+            floatingLabel.textContent = activeRoomCode ? `Room ${activeRoomCode}` : 'Study Call';
+          }
+        } else {
+          if (btnAudio) {
+            btnAudio.className = "call-btn btn-audio off";
+            btnAudio.querySelector(".btn-icon").textContent = '🔇';
+            document.getElementById("lblToggleAudio").textContent = 'Mic Off';
+          }
+          if (btnVideo) {
+            btnVideo.className = "call-btn btn-video off";
+            btnVideo.querySelector(".btn-icon").textContent = '📷';
+            document.getElementById("lblToggleVideo").textContent = 'Video Off';
+          }
+          if (btnScreen) {
+            btnScreen.className = "call-btn btn-screen off";
+            document.getElementById("lblShareScreen").textContent = 'Screen';
+          }
+          if (btnJoin) {
+            btnJoin.className = "call-btn btn-join";
+            btnJoin.querySelector(".btn-icon").textContent = '📞';
+            document.getElementById("lblJoinLeave").textContent = 'Join Call';
+          }
+          if (badge) badge.className = "call-badge";
+          if (badgeText) badgeText.textContent = "Call Inactive";
+
+          if (floatingWidget) floatingWidget.style.display = "none";
+        }
+      }
+
+      function updateLocalVideoDisplay() {
+        const tile = document.getElementById("localVideoTile");
+        const localVideo = document.getElementById("localVideoFeed");
+        const avatar = document.getElementById("localTileAvatar");
+        const nameEl = document.getElementById("localTileName");
+        const audioInd = document.getElementById("localAudioIndicator");
+        const videoInd = document.getElementById("localVideoIndicator");
+        const filterBadge = document.getElementById("localFilterBadge");
+
+        const myName = localStorage.getItem("calcium_user_name") || "You";
+        if (nameEl) nameEl.textContent = `${myName} (You)`;
+        if (avatar) avatar.textContent = myName.split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
+
+        if (tile) {
+          tile.classList.toggle("camera-off", !isVideoOn);
+        }
+        if (localVideo) {
+          localVideo.style.display = isVideoOn ? "block" : "none";
+          localVideo.className = `v-filter-${currentVideoFilter}`;
+        }
+        if (filterBadge) {
+          const lbl = getFilterLabel(currentVideoFilter);
+          filterBadge.textContent = lbl;
+          filterBadge.style.display = (lbl && isVideoOn) ? "inline-block" : "none";
+        }
+        if (audioInd) {
+          audioInd.textContent = isAudioOn ? '🎤' : '🔇';
+          audioInd.className = `indicator-icon ${isAudioOn ? 'unmuted' : 'muted'}`;
+        }
+        if (videoInd) {
+          videoInd.textContent = isVideoOn ? '📹' : '📷';
+          videoInd.className = `indicator-icon ${isVideoOn ? '' : 'camera-off'}`;
+        }
+      }
+
+      function updateCallHeaderCount() {
+        const countEl = document.getElementById("callCountText");
+        if (!countEl) return;
+        let count = isCallActive ? 1 : 0;
+        Object.values(remoteMediaStates).forEach(st => {
+          if (st && st.isCallActive) count++;
+        });
+        countEl.textContent = `${count} on call`;
+      }
+
+      function updateFloatingSpeakingStatus() {
+        const statusEl = document.getElementById("floatingSpeakingStatus");
+        if (!statusEl) return;
+
+        const speakingList = [];
+        const localTile = document.getElementById("localVideoTile");
+        if (localTile && localTile.classList.contains("is-speaking")) {
+          speakingList.push("You");
+        }
+        Object.keys(activeMediaCalls).forEach(peerId => {
+          const tile = document.getElementById(`video-tile-${peerId}`);
+          if (tile && tile.classList.contains("is-speaking")) {
+            const m = squadMembersMap[peerId];
+            speakingList.push(m ? m.name : "Partner");
+          }
+        });
+
+        if (speakingList.length > 0) {
+          statusEl.textContent = `🗣️ ${speakingList.join(", ")} speaking`;
+          statusEl.style.color = "#4ade80";
+        } else {
+          statusEl.textContent = "";
+        }
+      }
+
+      function setupAudioMonitoring(id, stream, onSpeakingChange) {
+        stopAudioMonitoring(id);
+        if (!stream) return;
+        const tracks = stream.getAudioTracks();
+        if (tracks.length === 0) return;
+
+        try {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (!AudioContextClass) return;
+
+          if (!window._sharedAudioCtx) {
+            window._sharedAudioCtx = new AudioContextClass();
+          }
+          const ctx = window._sharedAudioCtx;
+          if (ctx.state === "suspended") {
+            ctx.resume().catch(() => {});
+          }
+
+          const source = ctx.createMediaStreamSource(stream);
+          const analyser = ctx.createAnalyser();
+          analyser.fftSize = 256;
+          analyser.smoothingTimeConstant = 0.3;
+          source.connect(analyser);
+
+          const dataArray = new Uint8Array(analyser.frequencyBinCount);
+          let wasSpeaking = false;
+
+          const interval = setInterval(() => {
+            if (!stream.active) {
+              stopAudioMonitoring(id);
+              return;
+            }
+            analyser.getByteFrequencyData(dataArray);
+            let sum = 0;
+            for (let i = 0; i < dataArray.length; i++) sum += dataArray[i];
+            const avg = sum / dataArray.length;
+            const isSpeaking = avg > 14;
+
+            if (isSpeaking !== wasSpeaking) {
+              wasSpeaking = isSpeaking;
+              onSpeakingChange(isSpeaking);
+            }
+          }, 120);
+
+          audioAnalyzers[id] = { source, analyser, interval };
+        } catch (e) {
+          console.warn("Audio monitoring setup error for " + id, e);
+        }
+      }
+
+      function stopAudioMonitoring(id) {
+        if (audioAnalyzers[id]) {
+          clearInterval(audioAnalyzers[id].interval);
+          try { audioAnalyzers[id].source.disconnect(); } catch (e) {}
+          try { audioAnalyzers[id].analyser.disconnect(); } catch (e) {}
+          delete audioAnalyzers[id];
+        }
+      }
 
       /* =========================================
          END-OF-DAY SOCIAL MEDIA SCORECARD ENGINE
@@ -1229,5 +2044,20 @@ setInterval(() => {
         return div.innerHTML;
       }
     </script>
+    <!-- FLOATING CALL CONTROLS (Active while studying in Read/Plan Mode) -->
+    <div id="floatingCallWidget" class="floating-call-widget" style="display: none;">
+      <div class="floating-call-info" onclick="openSquadModal()" title="Click to view Video Room">
+        <span class="floating-pulse-dot"></span>
+        <span id="floatingRoomLabel" style="font-weight:700; color:#7dd3fc; font-size:12px;">Live Call</span>
+        <span id="floatingSpeakingStatus" style="font-size:11px; color:#94a3b8; max-width:140px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;"></span>
+      </div>
+      <div class="floating-call-btns">
+        <button id="floatingMicBtn" class="floating-btn muted" onclick="toggleAudio()" title="Toggle Mic">🔇</button>
+        <button id="floatingCamBtn" class="floating-btn off" onclick="toggleVideo()" title="Toggle Camera">📷</button>
+        <button id="floatingFilterBtn" class="floating-btn filter-cycle" onclick="cycleVideoFilter()" title="Cycle Fun Video Filter">🎨</button>
+        <button class="floating-btn expand" onclick="openSquadModal()" title="Open Video Room">👥 View</button>
+        <button class="floating-btn leave" onclick="leaveCall()" title="Leave Call">✕</button>
+      </div>
+    </div>
   </body>
 </html>

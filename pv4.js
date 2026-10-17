@@ -492,11 +492,12 @@ function renderSquadStripFromStorage() {
   const container = document.getElementById("pv4-squad-list");
   if (!container) return;
   container.innerHTML = list.map(m => `
-    <div class="pv4-member-chip ${m.isStudying ? 'live' : ''}">
+    <div class="pv4-member-chip ${m.isStudying ? 'live' : ''} ${m.isCallActive ? 'in-call' : ''}" onclick="openParentSquadModal()" style="cursor:pointer;" title="${m.isCallActive ? 'In Audio/Video Call - Click to join' : 'Click to open room'}">
       <div style="font-weight:700; font-size:12px; color:#f8fafc; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${m.name}</div>
       <div style="font-size:10px; color:#7dd3fc; font-weight:700;">${m.activeSubject} • ${(m.level || 'final').toUpperCase()}</div>
-      <div style="font-family:'Roboto Mono',monospace; font-size:11px; color:${m.isStudying ? '#4ade80' : '#cbd5e1'};">
-        ${m.isStudying ? '▶ ' + m.activeTimerStr : m.totalActualHours + 'h'}
+      <div style="font-family:'Roboto Mono',monospace; font-size:11px; color:${m.isStudying ? '#4ade80' : '#cbd5e1'}; display:flex; justify-content:space-between; align-items:center;">
+        <span>${m.isStudying ? '▶ ' + m.activeTimerStr : m.totalActualHours + 'h'}</span>
+        ${m.isCallActive ? `<span style="font-size:10px; color:#38bdf8; font-weight:700; margin-left:4px;">${m.isVideoOn ? '📹 Cam' : '🎙️ Mic'}</span>` : ''}
       </div>
     </div>
   `).join("");
