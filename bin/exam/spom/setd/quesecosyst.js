@@ -19792,7 +19792,1870 @@ const caseStudies = [
     ],
     answer: 3,
     reason: "In its comparison of the two frameworks, the chapter states that the DPDP Act applies to personal digitised data, whereas the GDPR applies to personal data whether digitised or not. The distinction concerns the type of personal data covered, as described in the supplied chapter."
+  },
+  // Chapter11
+  {
+  case_id: "ecosys_ch11_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter11",
+  caseText: `
+    <p>Bright Retail operates several stores and maintains large amounts of sales, customer, marketing and financial data. Management wants to use this data to understand market trends, consumer behaviour and financial performance. The organisation plans to use Business Intelligence (BI) tools to analyse its data and present the findings through reports, dashboards, graphs and charts to support business decisions.</p>
+  `,
+  questions: [
+    {
+      question: "What is the primary purpose of Business Intelligence (BI) at Bright Retail?",
+      options: [
+        "To replace all business decisions with manual data entry",
+        "To turn an organisation's data into insights that can inform business decisions",
+        "To store business data without analysing it",
+        "To eliminate the need for business reports"
+      ],
+      answer: 1,
+      reason: "Business Intelligence is about turning an organisation's data into insights that can be used to inform business decisions."
+    },
+    {
+      question: "Which of the following may be used to present the findings obtained by BI analysts?",
+      options: [
+        "Only handwritten registers",
+        "Only unprocessed database records",
+        "Reports, summaries, dashboards, graphs, charts or maps",
+        "Only customer invoices"
+      ],
+      answer: 2,
+      reason: "BI analysts translate their findings into reports, summaries, dashboards, graphs, charts or maps."
+    },
+    {
+      question: "Which area can Bright Retail understand more deeply by using Business Intelligence?",
+      options: [
+        "Market trends and consumer behaviour",
+        "Only the physical location of its stores",
+        "Only the number of computers in its offices",
+        "Only the personal preferences of its employees"
+      ],
+      answer: 0,
+      reason: "Business Intelligence enables organisations to gain a deeper understanding of market trends, consumer behaviour, marketing strategies and financial performance."
+    },
+    {
+      question: "Which of the following describes the Analytics functionality of BI?",
+      options: [
+        "Deleting historical business information",
+        "Preparing only printed financial statements",
+        "Preventing users from examining current data",
+        "Exploring historical and current data to extract trends and insights"
+      ],
+      answer: 3,
+      reason: "Analytics explores data to extract trends and insights from historical and current findings, facilitating valuable data-driven decisions."
+    },
+    {
+      question: "What is the expected outcome of using BI to support business decisions?",
+      options: [
+        "Decisions based entirely on assumptions",
+        "More informed and data-driven decisions",
+        "Elimination of all business risks",
+        "Removal of the need to understand customers"
+      ],
+      answer: 1,
+      reason: "Business Intelligence ultimately aims to assist organisations in making more educated and data-driven decisions."
+    }
+  ]
+},
+{
+  case_id: "ecosys_ch11_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter11",
+  caseText: `
+    <p>Prime Manufacturing has introduced a Business Intelligence solution to monitor its business performance. The management dashboard displays Key Performance Indicators (KPIs), analytics metrics and other relevant data in visual form. Separate scorecards are used to measure progress towards business goals. Managers can generate reports, access information through mobile devices and share relevant findings with stakeholders inside and outside the organisation.</p>
+  `,
+  questions: [
+    {
+      question: "Which BI functionality provides an interactive collection of role-relevant data, visualisations, KPIs and analytics metrics?",
+      options: [
+        "Dashboards",
+        "Data mining",
+        "Physical schema",
+        "Data warehouse"
+      ],
+      answer: 0,
+      reason: "Dashboards provide interactive collections of role-relevant data, typically containing intuitive data visualisations, KPIs, analytics metrics and other data points that support decision-making."
+    },
+    {
+      question: "Which BI functionality enables Prime Manufacturing to measure KPIs and assess progress towards its goals?",
+      options: [
+        "Extract Transfer Load (ETL)",
+        "Scorecards",
+        "Data modelling",
+        "Data cleansing"
+      ],
+      answer: 1,
+      reason: "BI solutions provide industry-standard scorecards to measure Key Performance Indicators (KPIs) and indicate how a company is progressing towards its goals."
+    },
+    {
+      question: "Which BI functionality involves gathering data, identifying insights and presenting observations and suggestions about trends?",
+      options: [
+        "Mobile Business Intelligence",
+        "Online Analytical Processing",
+        "Reporting",
+        "Physical schema design"
+      ],
+      answer: 2,
+      reason: "Reporting involves gathering data using various tools and software to mine insights and provides observations and suggestions about trends to simplify decision-making."
+    },
+    {
+      question: "Which functionality makes reports, dashboards and monitoring information accessible through mobile devices?",
+      options: [
+        "Collaborative Business Intelligence",
+        "Predictive modelling",
+        "Data mining",
+        "Mobile Business Intelligence"
+      ],
+      answer: 3,
+      reason: "Mobile Business Intelligence offers functionality to make information such as reports, dashboards and monitoring accessible on mobile devices."
+    },
+    {
+      question: "Which BI functionality supports sharing information with stakeholders within and outside the organisation?",
+      options: [
+        "Collaborative Business Intelligence",
+        "Online Analytical Processing",
+        "Model visualisation",
+        "Predictive modelling"
+      ],
+      answer: 0,
+      reason: "Collaborative Business Intelligence provides capabilities to collaboratively share information with different stakeholders within the organisation and outside."
+    }
+  ]
+},
+{
+  case_id: "ecosys_ch11_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter11",
+  caseText: `
+    <p>DataSmart Ltd. collects information from multiple databases and business systems. Before preparing reports, its team extracts data from different sources, transforms and cleans it, and loads it into a data warehouse. The team also uses statistical techniques to uncover patterns, examines data across multiple dimensions, develops trend models and monitors operational data in real time.</p>
+  `,
+  questions: [
+    {
+      question: "Which BI functionality extracts data from sources, transforms and cleans it, and loads it into a data warehouse?",
+      options: [
+        "Scorecards",
+        "Extract Transfer Load (ETL)",
+        "Mobile Business Intelligence",
+        "Collaborative Business Intelligence"
+      ],
+      answer: 1,
+      reason: "ETL extracts data from data sources, transforms and cleans it in preparation for reports and analysis, and loads it into a data warehouse."
+    },
+    {
+      question: "Which technique uses statistics, database systems and machine learning to uncover patterns in large datasets?",
+      options: [
+        "Reporting",
+        "Dashboards",
+        "Data mining",
+        "Scorecards"
+      ],
+      answer: 2,
+      reason: "Data mining uses statistics, database systems and machine learning to uncover patterns in large datasets. It also requires pre-processing of data."
+    },
+    {
+      question: "Which technique is useful for solving analytical problems involving multiple dimensions and perspectives?",
+      options: [
+        "Online Analytical Processing (OLAP)",
+        "Mobile Business Intelligence",
+        "Reporting",
+        "Scorecards"
+      ],
+      answer: 0,
+      reason: "OLAP is a technique for solving analytical problems with multiple dimensions from various perspectives. It is useful for activities such as CRM data analysis, financial forecasting and budgets."
+    },
+    {
+      question: "Which BI technique uses statistical methods to generate probabilities and trend models?",
+      options: [
+        "Data cleansing",
+        "Collaborative Business Intelligence",
+        "Dashboards",
+        "Predictive modelling"
+      ],
+      answer: 3,
+      reason: "Predictive modelling utilises statistical methods to generate probabilities and trend models and can predict values for specific datasets and attributes."
+    },
+    {
+      question: "Which BI functionality analyses operational data in real time, up to the limit of seconds, to support quick decisions?",
+      options: [
+        "Scorecards",
+        "Real-time monitoring",
+        "Physical schema design",
+        "Metadata creation"
+      ],
+      answer: 1,
+      reason: "Real-time monitoring provides tools to analyse operational data in real time, up to the limit of seconds, enabling businesses to make quick and informed decisions."
+    }
+  ]
+},
+{
+  case_id: "ecosys_ch11_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter11",
+  caseText: `
+    <p>FreshMart, a retail company, wants to introduce a Business Intelligence system to analyse its sales performance. The management first identifies the information required to determine the products that sell the most and the least. After identifying the requirements, the team prepares a logical model showing the relationships between products, customers and sales data. It then plans the physical structure and content of the data warehouse before building it and loading data from the source systems.</p>
+  `,
+  questions: [
+    {
+      question: "Which is the first phase of the Business Intelligence Life Cycle?",
+      options: [
+        "Build the Data Warehouse",
+        "Develop the BI Objects",
+        "Analyse Business Requirements",
+        "Administer and Maintain the Project"
+      ],
+      answer: 2,
+      reason: "The first phase of the Business Intelligence Life Cycle is to analyse business requirements and identify the type of analysis that needs to be performed."
+    },
+    {
+      question: "After identifying the business requirements, which phase involves preparing a logical model showing relationships between data entities?",
+      options: [
+        "Design Data Model",
+        "Create BI Project Structure",
+        "Develop BI Objects",
+        "Administer and Maintain the Project"
+      ],
+      answer: 0,
+      reason: "In the Design Data Model phase, the user prepares a logical model according to the requirements to analyse relationships among data entities."
+    },
+    {
+      question: "Which phase follows the design of the logical data model?",
+      options: [
+        "Administer and Maintain the Project",
+        "Develop the BI Objects",
+        "Analyse Business Requirements",
+        "Design the Physical Schema"
+      ],
+      answer: 3,
+      reason: "Once the logical model is prepared, the next phase is to design the physical schema, which describes the structure and content of the data warehouse."
+    },
+    {
+      question: "During which phase is the data warehouse built and data from source systems loaded into it?",
+      options: [
+        "Design Data Model",
+        "Build the Data Warehouse",
+        "Create BI Project Structure",
+        "Develop BI Objects"
+      ],
+      answer: 1,
+      reason: "After the logical model and physical schema are designed, the data warehouse is built and data from the source systems is loaded into it."
+    },
+    {
+      question: "Which sequence correctly represents the first four phases of the Business Intelligence Life Cycle?",
+      options: [
+        "Design Data Model → Analyse Business Requirements → Build the Data Warehouse → Design the Physical Schema",
+        "Build the Data Warehouse → Design the Physical Schema → Analyse Business Requirements → Design Data Model",
+        "Analyse Business Requirements → Design Data Model → Design the Physical Schema → Build the Data Warehouse",
+        "Analyse Business Requirements → Develop BI Objects → Design Data Model → Administer and Maintain"
+      ],
+      answer: 2,
+      reason: "The first four phases are: Analyse Business Requirements, Design Data Model, Design the Physical Schema, and Build the Data Warehouse."
+    }
+  ]
+},
+{
+  case_id: "ecosys_ch11_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter11",
+  caseText: `
+    <p>After building its data warehouse, GreenMart proceeds with the remaining phases of its Business Intelligence project. The team creates a project structure containing metadata to make the mapping of tables and data easier. It then develops metrics, attributes, dashboards, reports and facts to analyse the warehouse data. Management also ensures that the project is continuously monitored so that changes, security and system performance can be maintained.</p>
+  `,
+  questions: [
+    {
+      question: "Which phase of the Business Intelligence Life Cycle involves creating the project structure, also known as metadata?",
+      options: [
+        "Design the Physical Schema",
+        "Create BI Project Structure",
+        "Design Data Model",
+        "Build the Data Warehouse"
+      ],
+      answer: 1,
+      reason: "The fifth phase is Create BI Project Structure (Metadata). The project structure makes the mapping of the tables and data in the data warehouse easier."
+    },
+    {
+      question: "Which of the following is an example of a BI object developed after creating the BI project structure?",
+      options: [
+        "Business requirements identified at the beginning",
+        "The initial logical model only",
+        "Metrics, attributes, dashboards, reports and facts",
+        "The physical schema alone"
+      ],
+      answer: 2,
+      reason: "The Develop the BI Objects phase involves developing objects such as metrics, attributes, dashboards, reports and facts for analysing data in the data warehouse."
+    },
+    {
+      question: "Which phase follows the creation of the BI project structure?",
+      options: [
+        "Develop the BI Objects",
+        "Analyse Business Requirements",
+        "Design Data Model",
+        "Design the Physical Schema"
+      ],
+      answer: 0,
+      reason: "After the BI project structure or metadata is created, the next phase is to develop BI objects such as metrics, attributes, dashboards, reports and facts."
+    },
+    {
+      question: "Which is the final phase of the Business Intelligence Life Cycle?",
+      options: [
+        "Build the Data Warehouse",
+        "Create BI Project Structure",
+        "Develop the BI Objects",
+        "Administer and Maintain the Project"
+      ],
+      answer: 3,
+      reason: "The seventh and final phase is Administer and Maintain the Project. The project is monitored continuously to maintain changes, security and system performance."
+    },
+    {
+      question: "Why must GreenMart continuously administer and maintain its BI project?",
+      options: [
+        "To avoid using reports and dashboards",
+        "To monitor changes, security and system performance",
+        "To remove all data from the warehouse",
+        "To prevent business requirements from being identified"
+      ],
+      answer: 1,
+      reason: "The project needs continuous monitoring to maintain changes, security and performance as it undergoes changes."
+    }
+  ]
+},
+{
+  case_id: "ecosys_ch11_CS06",
+  difficulty: "Easy",
+  chapter: "Chapter11",
+  caseText: `
+    <p>Heathrow Airport needs to coordinate its operations despite changes in weather, delayed flights and sudden increases in passenger traffic. The airport uses operational data from check-in counters, baggage tracking systems, flight schedules, weather tracking systems and cargo tracking systems. Microsoft Azure services help extract, clean and prepare operational data in real time, while Microsoft Power BI transforms the prepared data into visual reports, graphics and dashboards that airport employees can use to manage passenger flow and airport operations.</p>
+  `,
+  questions: [
+    {
+      question: "Which of the following is an example of an operational data source used by Heathrow Airport?",
+      options: [
+        "Only handwritten personal diaries of passengers",
+        "Only employee attendance registers",
+        "Baggage tracking systems and flight schedules",
+        "Only printed advertisements"
+      ],
+      answer: 2,
+      reason: "The Heathrow Airport illustration identifies check-in counters, baggage tracking systems, flight schedules, weather tracking systems and cargo tracking systems as operational data sources."
+    },
+    {
+      question: "Which services are mentioned in the chapter as being used to extract, clean and prepare operational data in real time?",
+      options: [
+        "Azure Stream Analytics, Azure Data Lake Analytics and Azure SQL Database",
+        "Microsoft Word, Microsoft Paint and Notepad",
+        "Only Excel and PowerPoint",
+        "Only Facebook and Google Analytics"
+      ],
+      answer: 0,
+      reason: "The chapter states that Azure Stream Analytics, Azure Data Lake Analytics and Azure SQL Database are used to extract, clean and prepare operational data in real time."
+    },
+    {
+      question: "What is the role of Power BI in the Heathrow Airport illustration?",
+      options: [
+        "To replace every operational system at the airport",
+        "To stop employees from accessing operational information",
+        "To eliminate the collection of airport data",
+        "To transform operational data into meaningful insights through visual reports, graphics and dashboards"
+      ],
+      answer: 3,
+      reason: "Power BI uses data from the Azure services for analysis and interpretation, transforming operational data into meaningful insights through visual reports, graphics and dashboards."
+    },
+    {
+      question: "How can BI help airport employees respond to probable flight delays and sudden passenger rushes?",
+      options: [
+        "By preventing the airport from monitoring passenger traffic",
+        "By providing advance information that supports suitable action, such as increasing ground staff or adding passenger buses",
+        "By requiring employees to wait until every disruption has ended",
+        "By removing the need for coordination between departments"
+      ],
+      answer: 1,
+      reason: "The chapter explains that BI can notify airport staff in advance about probable delays and sudden passenger rushes, helping them take suitable action, such as increasing ground staff or adding extra passenger buses."
+    },
+    {
+      question: "What further application was Heathrow Airport exploring to reduce unexpected passenger disruptions?",
+      options: [
+        "Stopping the use of operational data",
+        "Replacing all dashboards with paper reports",
+        "Anticipating passenger flow at the airport",
+        "Restricting access to all operational information"
+      ],
+      answer: 2,
+      reason: "The chapter states that Heathrow was extending Power BI applications by trying to anticipate passenger flow to avoid unexpected disruptions for passengers."
+    }
+  ]
+},
+{
+  case_id: "ecosys_ch11_CS07",
+  difficulty: "Easy",
+  chapter: "Chapter11",
+  caseText: `
+    <p>Insight Solutions is evaluating popular Business Intelligence tools for its clients. The team reviews Microsoft Power BI for its data integration and reporting capabilities, Tableau for visual analytics, Qlik Sense for self-service analytics, Dundas BI for browser-based analysis and Sisense for data processing and embedded analytics. The company wants to understand the principal features of each tool before recommending a suitable solution to clients.</p>
+  `,
+  questions: [
+    {
+      question: "Which BI tool is described in the chapter as offering built-in AI capabilities, Excel integration and data connectors?",
+      options: [
+        "Dundas BI",
+        "Microsoft Power BI",
+        "Sisense",
+        "Qlik Sense"
+      ],
+      answer: 1,
+      reason: "Microsoft Power BI provides built-in AI capabilities, Excel integration and data connectors, and supports data analysis, integration and visualisation."
+    },
+    {
+      question: "Which BI tool is known for live visual analytics and a drag-and-drop interface that helps users spot trends in data quickly?",
+      options: [
+        "Tableau",
+        "Sisense",
+        "Dundas BI",
+        "Qlik Sense"
+      ],
+      answer: 0,
+      reason: "Tableau is known for its user-friendly data visualisation capabilities and live visual analytics, including an interface that allows users to drag and drop to spot trends quickly."
+    },
+    {
+      question: "Which BI tool emphasises self-service analytics, associative exploration, search and conversational analytics?",
+      options: [
+        "Microsoft Power BI",
+        "Dundas BI",
+        "Sisense",
+        "Qlik Sense"
+      ],
+      answer: 3,
+      reason: "Qlik Sense emphasises a self-service approach and provides associative exploration, search and conversational analytics to help users uncover actionable insights."
+    },
+    {
+      question: "Which BI tool is browser-based and provides a drag-and-drop function for users to analyse data without involving their IT team?",
+      options: [
+        "Tableau",
+        "Microsoft Power BI",
+        "Dundas BI",
+        "Sisense"
+      ],
+      answer: 2,
+      reason: "Dundas BI is a browser-based BI tool featuring drag-and-drop functionality that allows users to analyse data on their own without involving their IT team."
+    },
+    {
+      question: "Which BI tool is described as using in-chip technology for faster data processing and supporting embedded white-label analytics?",
+      options: [
+        "Qlik Sense",
+        "Sisense",
+        "Tableau",
+        "Dundas BI"
+      ],
+      answer: 1,
+      reason: "Sisense uses in-chip technology for faster data processing and supports embedded white-label analytics, allowing a company to customise the services to its needs."
+    }
+  ]
+},
+{
+  case_id: "ecosys_ch11_CS08",
+  difficulty: "Easy",
+  chapter: "Chapter11",
+  caseText: `
+    <p>Vision Traders uses Microsoft Power BI to present its business data through different charts. The sales team wants to monitor monthly trends, while the finance team wants to display absolute values, percentage distributions and components of a final value. The human resources team also wants to visualise how applications move through successive stages of its recruitment process. The BI analyst selects chart types according to the purpose for which the data needs to be presented.</p>
+  `,
+  questions: [
+    {
+      question: "Which chart type should Vision Traders use to measure sales trends over a period such as months or years?",
+      options: [
+        "Pie chart",
+        "Funnel chart",
+        "Line chart",
+        "Doughnut chart"
+      ],
+      answer: 2,
+      reason: "Line charts should be used to measure trends over a period, such as dates, months and years."
+    },
+    {
+      question: "Which chart type is useful for displaying absolute data, including negative values that can be positioned above and below the x-axis?",
+      options: [
+        "Bar chart",
+        "Pie chart",
+        "Doughnut chart",
+        "Funnel chart"
+      ],
+      answer: 0,
+      reason: "Bar charts represent absolute data and are useful when the data includes negative values because bars can be positioned above and below the x-axis."
+    },
+    {
+      question: "Which chart shows a whole dataset divided into parts, with each portion representing a percentage and all portions adding up to 100%?",
+      options: [
+        "Line chart",
+        "Bar chart",
+        "Funnel chart",
+        "Pie chart"
+      ],
+      answer: 3,
+      reason: "A pie chart represents the whole data in parts. Each portion represents a percentage, and the sum of all parts should equal 100%."
+    },
+    {
+      question: "Which chart is particularly useful for displaying various proportions that make up a final value?",
+      options: [
+        "Line chart",
+        "Doughnut chart",
+        "Bar chart",
+        "Funnel chart"
+      ],
+      answer: 1,
+      reason: "Doughnut charts are useful when various proportions that make up the final value need to be displayed."
+    },
+    {
+      question: "Which chart type should the human resources team use to visualise data flowing from one recruitment stage to another?",
+      options: [
+        "Pie chart",
+        "Line chart",
+        "Funnel chart",
+        "Bar chart"
+      ],
+      answer: 2,
+      reason: "A funnel chart visualises data that flows from one phase to another phase. The chapter uses recruitment stages in relation to the total number of applications as an example."
+    }
+  ]
+},
+{
+  case_id: "ecosys_ch11_CS09",
+  difficulty: "Easy",
+  chapter: "Chapter11",
+  caseText: `
+    <p>SkullCandy, a supplier of headphones, earbuds and other audio devices, previously managed more than 100 million rows of data spread across multiple source locations. Its earlier system sometimes missed data, resulting in inaccurate reports. The company implemented Sisense across its departments, allowing teams to add data, access automated reports and share results. Data is refreshed immediately, helping departments obtain information when required. In the retail sector, the company also recognises the value of predictive modelling, improved customer experience and price optimisation based on supply, demand and upcoming trends.</p>
+  `,
+  questions: [
+    {
+      question: "What was one of the challenges SkullCandy faced with its earlier data management system?",
+      options: [
+        "All data was already available in one accurate and unified system",
+        "The company had no business data to analyse",
+        "Its reports were always generated immediately without errors",
+        "Data was spread across multiple source locations, and some information was missed or inaccurate"
+      ],
+      answer: 3,
+      reason: "The chapter explains that SkullCandy's data covered more than 100 million rows across multiple source locations, and its previous system sometimes missed data, leading to inaccurate results."
+    },
+    {
+      question: "Which BI tool did SkullCandy implement across its departments?",
+      options: [
+        "Sisense",
+        "Dundas BI",
+        "Qlik Sense",
+        "Tableau"
+      ],
+      answer: 0,
+      reason: "The chapter states that SkullCandy implemented Sisense across its organisation, including its IT and HR departments."
+    },
+    {
+      question: "What improvement followed the implementation of the BI solution?",
+      options: [
+        "Departments could no longer share information",
+        "Departments could add data, access automated reports and share results more easily",
+        "The company stopped refreshing its data",
+        "Every report had to be manually prepared from separate documents"
+      ],
+      answer: 1,
+      reason: "With Sisense, each department could add new data, access automated reports and send results from one sector to another without having to examine hundreds of different documents."
+    },
+    {
+      question: "How can predictive modelling benefit a retail business?",
+      options: [
+        "By preventing the analysis of sales opportunities",
+        "By eliminating the need to examine customer-related information",
+        "By helping identify new sales opportunities, upcoming trends and items customers are likely to buy",
+        "By ensuring that customer demand never changes"
+      ],
+      answer: 2,
+      reason: "The chapter explains that retail predictive analytics can combine current data with relevant statistics to identify sales opportunities, upcoming trends and the items customers are most likely to buy."
+    },
+    {
+      question: "How can Business Intelligence help retailers optimise prices?",
+      options: [
+        "By fixing all prices permanently, regardless of market conditions",
+        "By ignoring changes in supply and demand",
+        "By using only handwritten records for price decisions",
+        "By using relevant data to update prices in real time in line with supply, demand and upcoming trends"
+      ],
+      answer: 3,
+      reason: "Access to relevant data can enable retail brands to update prices in real time to coincide with current supply, demand and upcoming trends."
+    }
+  ]
+},
+{
+  case_id: "ecosys_ch11_CS10",
+  difficulty: "Easy",
+  chapter: "Chapter11",
+  caseText: `
+    <p>DecisionPoint Ltd. uses Business Intelligence to prepare dashboards and reports from structured historical data stored in its data warehouse. Its leadership team uses these reports to understand organisational performance and support high-level strategic decisions. Separately, the company's data analysts examine raw datasets, clean and organise data, investigate specific business questions, and use data mining, algorithm development, modelling and simulations to obtain insights and explore what might occur in the future.</p>
+  `,
+  questions: [
+    {
+      question: "According to the chapter, what is the primary purpose of Business Intelligence?",
+      options: [
+        "To support business decision-making using actionable insights",
+        "To modify raw data without considering business needs",
+        "To focus only on algorithm development",
+        "To avoid preparing dashboards and reports"
+      ],
+      answer: 0,
+      reason: "Business Intelligence refers to the information required to enhance business decision-making activities. Its purpose is to support decisions using actionable insights and help organisations grow their business."
+    },
+    {
+      question: "Which group is primarily associated with using Business Intelligence information in the chapter's comparison?",
+      options: [
+        "Only database technicians who prepare algorithms",
+        "Leadership teams and non-technical personnel",
+        "Only computer programmers working on simulations",
+        "Only data scientists who clean raw datasets"
+      ],
+      answer: 1,
+      reason: "The chapter states that Business Intelligence is primarily used by leadership teams and non-technical personnel, such as chief executives, financial directors and chief information officers."
+    },
+    {
+      question: "Which activity is more closely associated with Data Analytics in the chapter's comparison?",
+      options: [
+        "Presenting information exclusively through high-level dashboards",
+        "Measuring KPIs only through scorecards",
+        "Cleaning and ordering data, developing algorithms, modelling and simulations",
+        "Creating only visual reports for leadership teams"
+      ],
+      answer: 2,
+      reason: "Data Analytics goes 'under the hood' with data, carrying out tasks such as data mining, algorithm development, modelling and simulations. Data analysts also clean and order data before storing it for future analysis."
+    },
+    {
+      question: "How does the chapter distinguish the data commonly used for Business Intelligence from the data often encountered in Data Analytics?",
+      options: [
+        "Business Intelligence uses only images, while Data Analytics uses only printed reports",
+        "Business Intelligence never uses structured data",
+        "Data Analytics can use only historical data stored in data warehouses",
+        "Business Intelligence utilises structured data, while Data Analytics also uses structured data but usually begins with unstructured, real-time data"
+      ],
+      answer: 3,
+      reason: "The chapter states that Business Intelligence utilises structured data stored in warehouses, tabulated databases or other systems. Data Analytics also uses structured data but usually begins with unstructured, real-time data, which analysts clean and order."
+    },
+    {
+      question: "Which statement correctly describes the difference in focus between Business Intelligence and Data Analytics?",
+      options: [
+        "Business Intelligence often addresses high-level strategic questions, while Data Analytics tends to focus on a specific issue or question",
+        "Business Intelligence focuses only on algorithms, while Data Analytics focuses only on scorecards",
+        "Business Intelligence never examines past data, while Data Analytics never examines future possibilities",
+        "Both are limited to preparing identical reports for non-technical personnel"
+      ],
+      answer: 0,
+      reason: "The chapter explains that Business Intelligence often asks high-level strategic questions about an organisation's overall direction, whereas Data Analytics tends to focus on a specific issue or question, such as why sales of a particular product are declining."
+    }
+  ]
+},
+  {
+    case_id: "ecosys_ch11_CS11",
+    difficulty: "Medium",
+    chapter: "Chapter11",
+    caseText: `
+      <p>Insight Retail collects sales, customer and inventory information from different business systems. Its BI team cleans and loads data into a data warehouse, identifies patterns in large datasets, prepares statistical trend models and analyses financial information from multiple perspectives. Management also requires visual representations of facts to interpret business information correctly.</p>
+    `,
+    questions: [
+      {
+        question: "Which BI functionality extracts data from different sources, transforms and cleans it, and loads it into the data warehouse?",
+        options: [
+          "Data mining",
+          "Extract Transfer Load (ETL)",
+          "Online Analytical Processing (OLAP)",
+          "Predictive modelling"
+        ],
+        answer: 1,
+        reason: "ETL extracts data from data sources, transforms and cleans it in preparation for reports and analysis, and loads it into a data warehouse."
+      },
+      {
+        question: "The BI team uses statistics, database systems and machine learning to uncover patterns in large datasets. Which technique is being used?",
+        options: [
+          "Reporting",
+          "Scorecards",
+          "Data mining",
+          "Mobile Business Intelligence"
+        ],
+        answer: 2,
+        reason: "Data mining uses statistics, database systems and machine learning to uncover patterns in large datasets. It also requires pre-processing of data."
+      },
+      {
+        question: "The team develops statistical models to generate probabilities and identify trends that may help predict values. Which technique does this represent?",
+        options: [
+          "Dashboards",
+          "Online Analytical Processing",
+          "Extract Transfer Load",
+          "Predictive modelling"
+        ],
+        answer: 3,
+        reason: "Predictive modelling utilises statistical methods to generate probabilities and trend models and can predict values for specific datasets and attributes."
+      },
+      {
+        question: "Management needs to examine financial forecasting and budgets from multiple analytical dimensions. Which technique is most appropriate?",
+        options: [
+          "Online Analytical Processing (OLAP)",
+          "Mobile Business Intelligence",
+          "Scorecards",
+          "Collaborative Business Intelligence"
+        ],
+        answer: 0,
+        reason: "OLAP solves analytical problems involving multiple dimensions and perspectives. The chapter identifies financial forecasting and budgets as applications of OLAP."
+      },
+      {
+        question: "The team transforms facts into charts, histograms and other visuals to support correct interpretation. Which BI functionality does this describe?",
+        options: [
+          "Data mining",
+          "Model visualisation",
+          "Real-time monitoring",
+          "Extract Transfer Load"
+        ],
+        answer: 1,
+        reason: "Model visualisation transforms facts into charts, histograms and other visuals to support correct insight interpretation."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch11_CS12",
+    difficulty: "Medium",
+    chapter: "Chapter11",
+    caseText: `
+      <p>Metro Stores is developing a Business Intelligence project. After identifying its reporting needs, the team prepares a logical model of products, customers and sales. It then defines the physical structure and content of the data warehouse, builds the warehouse and loads source data. The team subsequently creates metadata, develops reports and dashboards, and establishes ongoing monitoring of the project.</p>
+    `,
+    questions: [
+      {
+        question: "Which phase identifies the business requirements and determines the type of analysis that needs to be performed?",
+        options: [
+          "Design Data Model",
+          "Design the Physical Schema",
+          "Analyse Business Requirements",
+          "Develop the BI Objects"
+        ],
+        answer: 2,
+        reason: "The first phase of the BI Life Cycle is to analyse business requirements so that the user can determine the type of analysis required."
+      },
+      {
+        question: "Preparing a logical model that represents relationships among products, customers and sales data belongs to which phase?",
+        options: [
+          "Design Data Model",
+          "Build the Data Warehouse",
+          "Create BI Project Structure",
+          "Administer and Maintain the Project"
+        ],
+        answer: 0,
+        reason: "The Design Data Model phase prepares a logical model according to the identified requirements and helps analyse relationships among data entities."
+      },
+      {
+        question: "After the logical model is prepared, which phase describes the structure and content of the data warehouse?",
+        options: [
+          "Develop the BI Objects",
+          "Create BI Project Structure",
+          "Build the Data Warehouse",
+          "Design the Physical Schema"
+        ],
+        answer: 3,
+        reason: "The Design the Physical Schema phase follows the logical model and describes the structure and content of the data warehouse."
+      },
+      {
+        question: "The team creates metadata to facilitate mapping of the tables and data in the data warehouse. Which phase does this represent?",
+        options: [
+          "Design Data Model",
+          "Create BI Project Structure",
+          "Build the Data Warehouse",
+          "Analyse Business Requirements"
+        ],
+        answer: 1,
+        reason: "The fifth phase, Create BI Project Structure (Metadata), makes the mapping of tables and data in the data warehouse easier."
+      },
+      {
+        question: "Which sequence correctly represents the final three phases of the BI Life Cycle?",
+        options: [
+          "Build the Data Warehouse → Design Data Model → Analyse Business Requirements",
+          "Develop the BI Objects → Create BI Project Structure → Design the Physical Schema",
+          "Create BI Project Structure → Develop the BI Objects → Administer and Maintain the Project",
+          "Administer and Maintain the Project → Build the Data Warehouse → Create BI Project Structure"
+        ],
+        answer: 2,
+        reason: "The final three phases are Create BI Project Structure, Develop the BI Objects, and Administer and Maintain the Project."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch11_CS13",
+    difficulty: "Medium",
+    chapter: "Chapter11",
+    caseText: `
+      <p>Northstar Enterprises uses Power BI to prepare visual reports for different business requirements. The sales manager studies monthly performance trends, the finance team compares absolute values and percentage distributions, and the human resources department examines the movement of applications through successive recruitment stages. The BI analyst selects chart types based on the information to be communicated.</p>
+    `,
+    questions: [
+      {
+        question: "Which chart should be selected to measure sales trends over months and years?",
+        options: [
+          "Pie chart",
+          "Funnel chart",
+          "Line chart",
+          "Doughnut chart"
+        ],
+        answer: 2,
+        reason: "Line charts are used to measure trends over a period, such as dates, months and years."
+      },
+      {
+        question: "The finance team needs to display absolute data that includes negative values positioned above and below the x-axis. Which chart is appropriate?",
+        options: [
+          "Bar chart",
+          "Pie chart",
+          "Funnel chart",
+          "Doughnut chart"
+        ],
+        answer: 0,
+        reason: "Bar charts represent absolute data and are useful for displaying negative values because bars can be positioned above and below the x-axis."
+      },
+      {
+        question: "Which chart represents a whole dataset as percentage-based portions whose total equals 100%?",
+        options: [
+          "Line chart",
+          "Bar chart",
+          "Funnel chart",
+          "Pie chart"
+        ],
+        answer: 3,
+        reason: "A pie chart divides the whole data into portions representing percentages, and the sum of all parts should equal 100%."
+      },
+      {
+        question: "The finance team wants to show various proportions that make up a final value. Which chart type is specifically described for this purpose?",
+        options: [
+          "Bar chart",
+          "Doughnut chart",
+          "Line chart",
+          "Funnel chart"
+        ],
+        answer: 1,
+        reason: "Doughnut charts are useful when various proportions that make up the final value need to be displayed."
+      },
+      {
+        question: "Which chart is most appropriate for showing how applications flow through successive recruitment stages?",
+        options: [
+          "Pie chart",
+          "Line chart",
+          "Funnel chart",
+          "Bar chart"
+        ],
+        answer: 2,
+        reason: "A funnel chart visualises data that flows from one phase to another. The chapter illustrates this with stages of the recruitment process in relation to total applications."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch11_CS14",
+    difficulty: "Medium",
+    chapter: "Chapter11",
+    caseText: `
+      <p>DataBridge Consulting evaluates BI tools for different clients. One client needs a tool with Excel integration, data connectors and built-in AI capabilities. Another requires live visual analytics to identify trends quickly. A third prefers self-service analytics with associative exploration, while another wants browser-based drag-and-drop analysis. A final client prioritises faster data processing and embedded white-label analytics.</p>
+    `,
+    questions: [
+      {
+        question: "Which BI tool matches the requirement for Excel integration, data connectors and built-in AI capabilities?",
+        options: [
+          "Dundas BI",
+          "Microsoft Power BI",
+          "Sisense",
+          "Qlik Sense"
+        ],
+        answer: 1,
+        reason: "Microsoft Power BI offers built-in AI capabilities, Excel integration and data connectors, along with data integration, analysis and visualisation capabilities."
+      },
+      {
+        question: "Which BI tool is known for live visual analytics and an interface that helps users spot data trends quickly?",
+        options: [
+          "Tableau",
+          "Dundas BI",
+          "Sisense",
+          "Qlik Sense"
+        ],
+        answer: 0,
+        reason: "Tableau is known for user-friendly data visualisation and live visual analytics, including an interface that allows users to drag and drop to spot trends quickly."
+      },
+      {
+        question: "Which tool emphasises self-service analytics, associative exploration, search and conversational analytics?",
+        options: [
+          "Microsoft Power BI",
+          "Sisense",
+          "Dundas BI",
+          "Qlik Sense"
+        ],
+        answer: 3,
+        reason: "Qlik Sense emphasises a self-service approach and provides associative exploration, search and conversational analytics to help uncover actionable insights."
+      },
+      {
+        question: "Which tool is browser-based and enables users to analyse data through drag-and-drop functionality without involving their IT team?",
+        options: [
+          "Tableau",
+          "Microsoft Power BI",
+          "Dundas BI",
+          "Sisense"
+        ],
+        answer: 2,
+        reason: "Dundas BI is a browser-based BI tool with drag-and-drop functionality that allows users to analyse data on their own without involving their IT team."
+      },
+      {
+        question: "Which tool is associated with in-chip technology and embedded white-label analytics?",
+        options: [
+          "Tableau",
+          "Sisense",
+          "Qlik Sense",
+          "Dundas BI"
+        ],
+        answer: 1,
+        reason: "Sisense uses in-chip technology for faster data processing and supports embedded white-label analytics that can be customised to a company's needs."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch11_CS15",
+    difficulty: "Medium",
+    chapter: "Chapter11",
+    caseText: `
+      <p>Summit Enterprises receives business information from multiple departments and systems. Managers want to consolidate data, generate reports without repeatedly entering information into spreadsheets, export findings into formats suitable for meetings, and integrate analysis with existing applications. The organisation also wants to use historical and current data to make evidence-based decisions and respond to changing business conditions.</p>
+    `,
+    questions: [
+      {
+        question: "Which benefit of BI tools allows information from numerous sources to be brought together in one place?",
+        options: [
+          "Elimination of all data analysis",
+          "Centralised data",
+          "Removal of all business requirements",
+          "Replacement of every operational system"
+        ],
+        answer: 1,
+        reason: "BI tools bring data together in one place and provide views such as issues, trends and analytics based on users' queries."
+      },
+      {
+        question: "Which benefit helps managers avoid repeatedly entering data manually into spreadsheets to prepare reports?",
+        options: [
+          "Physical schema design",
+          "Data modelling",
+          "Manual data collection",
+          "Automatic reports"
+        ],
+        answer: 3,
+        reason: "Many BI tools automate reporting and allow data from different sources to be integrated and formatted, improving efficiency and productivity."
+      },
+      {
+        question: "Which set of formats is specifically identified in the chapter for exporting BI reports?",
+        options: [
+          "Excel, PDF and PowerPoint",
+          "Only handwritten registers",
+          "Only database tables",
+          "Only image files"
+        ],
+        answer: 0,
+        reason: "BI reports can be exported in user-defined formats such as Excel, PDF or PowerPoint presentations."
+      },
+      {
+        question: "Which benefit supports collaboration between departments and the integration of BI visualisations with existing customised applications?",
+        options: [
+          "Predictive modelling alone",
+          "Real-time monitoring alone",
+          "Compatibility and integration",
+          "Scorecards alone"
+        ],
+        answer: 2,
+        reason: "Compatibility and integration promote collaboration between departments, reduce duplication of resources and allow BI charts, graphs and visualisations to be integrated with existing customised applications."
+      },
+      {
+        question: "The organisation uses past and present performance data to forecast trends and identify anomalies when business conditions change. Which BI benefit does this illustrate?",
+        options: [
+          "Elimination of reporting",
+          "Making predictions",
+          "Manual data entry",
+          "Physical schema design"
+        ],
+        answer: 1,
+        reason: "Predictive analytics and forecasting use historical and current data to generate evidence-based insights. Intelligent tools may also identify anomalies when business conditions change."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch11_CS16",
+    difficulty: "Hard",
+    chapter: "Chapter11",
+    caseText: `
+      <p>Vertex Retail is building a BI solution to analyse sales performance. The team first identifies the required business analysis, prepares a logical model, defines the data warehouse structure and builds the warehouse using data from source systems. It then prepares metadata for mapping warehouse tables, develops analytical reports and dashboards, and establishes continuous project monitoring.</p>
+    `,
+    questions: [
+      {
+        question: "Management first determines which sales information must be analysed before deciding how the data should be structured. Which phase addresses this requirement?",
+        options: [
+          "Analyse Business Requirements",
+          "Design Data Model",
+          "Design the Physical Schema",
+          "Build the Data Warehouse"
+        ],
+        answer: 0,
+        reason: "The BI Life Cycle begins with Analyse Business Requirements. Identifying the requirements enables users to determine the type of analysis that needs to be performed."
+      },
+      {
+        question: "The team next defines relationships among the product, customer and sales data entities. Which phase is being performed?",
+        options: [
+          "Create BI Project Structure",
+          "Design the Physical Schema",
+          "Design Data Model",
+          "Develop the BI Objects"
+        ],
+        answer: 2,
+        reason: "Design Data Model involves preparing a logical model and analysing the relationships that exist among data entities."
+      },
+      {
+        question: "The logical model is complete, and the team now describes the structure and content of the proposed data warehouse. Which phase applies?",
+        options: [
+          "Build the Data Warehouse",
+          "Design the Physical Schema",
+          "Administer and Maintain the Project",
+          "Create BI Project Structure"
+        ],
+        answer: 1,
+        reason: "Design the Physical Schema follows the logical model and describes the structure and content of the data warehouse."
+      },
+      {
+        question: "The warehouse structure has been designed. The team now develops the warehouse and loads data from the source systems. Which phase does this represent?",
+        options: [
+          "Develop the BI Objects",
+          "Design Data Model",
+          "Create BI Project Structure",
+          "Build the Data Warehouse"
+        ],
+        answer: 3,
+        reason: "After the logical and physical schemas are designed, the data warehouse is built and the data and content from source systems are loaded into it."
+      },
+      {
+        question: "After the warehouse is built, which sequence correctly represents the remaining phases described in the case?",
+        options: [
+          "Develop the BI Objects → Design the Physical Schema → Create BI Project Structure",
+          "Create BI Project Structure → Develop the BI Objects → Administer and Maintain the Project",
+          "Administer and Maintain the Project → Create BI Project Structure → Develop the BI Objects",
+          "Design Data Model → Build the Data Warehouse → Analyse Business Requirements"
+        ],
+        answer: 1,
+        reason: "The fifth, sixth and seventh phases are Create BI Project Structure (Metadata), Develop the BI Objects, and Administer and Maintain the Project, respectively."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch11_CS17",
+    difficulty: "Hard",
+    chapter: "Chapter11",
+    caseText: `
+      <p>Meridian Finance uses BI to support different management requirements. Its managers study seasonal patterns and what-if scenarios, measure progress against KPIs, examine financial information across multiple dimensions, and generate statistical trend models. Operations staff also require immediate analysis of changing operational data.</p>
+    `,
+    questions: [
+      {
+        question: "Which BI functionality covers seasonal and trend analysis, what-if scenarios and modelling to extract insights from historical and current findings?",
+        options: [
+          "Scorecards",
+          "Real-time monitoring",
+          "Analytics",
+          "Mobile Business Intelligence"
+        ],
+        answer: 2,
+        reason: "Analytics explores historical and current data to extract trends and insights. Its techniques include seasonal and trend analysis, what-if scenarios and data modelling."
+      },
+      {
+        question: "Managers need a visual tool that measures KPIs and indicates progress towards the organisation's goals. Which functionality is most directly relevant?",
+        options: [
+          "Scorecards",
+          "Data mining",
+          "Extract Transfer Load",
+          "Online Analytical Processing"
+        ],
+        answer: 0,
+        reason: "Scorecards enable businesses to measure KPIs and indicate how a company is progressing towards its goals."
+      },
+      {
+        question: "The finance team examines information from several analytical dimensions to support financial forecasting and budgeting. Which technique best fits this requirement?",
+        options: [
+          "Reporting",
+          "Predictive modelling",
+          "Model visualisation",
+          "Online Analytical Processing (OLAP)"
+        ],
+        answer: 3,
+        reason: "OLAP addresses analytical problems involving multiple dimensions and perspectives and is useful for financial forecasting and budgets."
+      },
+      {
+        question: "A manager requires probabilities and trend models generated through statistical methods to predict values for particular data attributes. Which technique should be used?",
+        options: [
+          "Collaborative Business Intelligence",
+          "Predictive modelling",
+          "Scorecards",
+          "Data visualisation"
+        ],
+        answer: 1,
+        reason: "Predictive modelling uses statistical methods to generate probabilities and trend models and can predict values for specific datasets and attributes."
+      },
+      {
+        question: "Operations staff need to analyse operational data as it changes, with analysis available up to the limit of seconds. Which functionality meets this requirement?",
+        options: [
+          "Reporting",
+          "Scorecards",
+          "Real-time monitoring",
+          "Design Data Model"
+        ],
+        answer: 2,
+        reason: "Real-time monitoring provides tools to analyse operational data in real time, up to the limit of seconds, enabling quick and informed decisions."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch11_CS18",
+    difficulty: "Hard",
+    chapter: "Chapter11",
+    caseText: `
+      <p>Heathrow Airport receives operational data from flight schedules, baggage tracking, weather tracking and other airport systems. Microsoft Azure services prepare operational data in real time, and Power BI converts it into visual reports and dashboards. Airport staff use the resulting insights to anticipate delays and passenger surges and make suitable operational arrangements.</p>
+    `,
+    questions: [
+      {
+        question: "Which combination consists of operational data sources identified in the Heathrow Airport illustration?",
+        options: [
+          "Only BI scorecards and financial dashboards",
+          "Only exported PowerPoint reports and printed charts",
+          "Flight schedules and weather tracking systems",
+          "Only manually prepared management summaries"
+        ],
+        answer: 2,
+        reason: "The Heathrow illustration identifies flight schedules and weather tracking systems, along with check-in counters, baggage tracking and cargo tracking systems, as operational data sources."
+      },
+      {
+        question: "Which combination of Azure services is specifically mentioned for extracting, cleaning and preparing operational data in real time?",
+        options: [
+          "Azure Stream Analytics, Azure Data Lake Analytics and Azure SQL Database",
+          "Tableau, Qlik Sense and Sisense",
+          "Microsoft Power BI, Excel and PowerPoint only",
+          "Dundas BI, Tableau and Microsoft Azure"
+        ],
+        answer: 0,
+        reason: "The chapter identifies Azure Stream Analytics, Azure Data Lake Analytics and Azure SQL Database as services used to extract, clean and prepare operational data in real time."
+      },
+      {
+        question: "Which statement most accurately describes the role of Power BI in the airport's BI arrangement?",
+        options: [
+          "It eliminates the need for operational data sources.",
+          "It replaces all airport operational systems with one database.",
+          "It prevents airport staff from accessing operational information.",
+          "It analyses and interprets data from Azure services and presents meaningful insights through visual reports, graphics and dashboards."
+        ],
+        answer: 3,
+        reason: "Power BI uses data from Azure services for analysis and interpretation, transforming operational data from different sources into meaningful visual reports, graphics and dashboards."
+      },
+      {
+        question: "A likely flight delay and an unexpected passenger rush are identified. Which response is consistent with the benefits described in the case?",
+        options: [
+          "Discontinue monitoring operational data until the disruption occurs.",
+          "Take suitable advance action, such as increasing ground staff or adding extra passenger buses.",
+          "Stop sharing operational information with airport employees.",
+          "Wait until all passenger movement has ended before making arrangements."
+        ],
+        answer: 1,
+        reason: "The Heathrow illustration explains that advance information about probable delays and sudden passenger rushes enables suitable action, including increasing ground staff or adding extra passenger buses."
+      },
+      {
+        question: "Which further application was Heathrow Airport exploring to reduce unexpected passenger disruptions?",
+        options: [
+          "Removing all visual reports from the airport's systems",
+          "Using only historical printed records for passenger management",
+          "Anticipating passenger flow at the airport",
+          "Discontinuing the use of operational data"
+        ],
+        answer: 2,
+        reason: "The chapter states that Heathrow was extending Power BI applications by trying to anticipate passenger flow to avoid unexpected disruptions for passengers."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch11_CS19",
+    difficulty: "Hard",
+    chapter: "Chapter11",
+    caseText: `
+      <p>Northstar Group gathers information from internal and external systems, including databases, CRM systems, ERP systems and documents. Its BI solution consolidates information, supports automated and ad-hoc reporting, allows results to be exported into common business formats and facilitates collaboration between departments. Management expects these capabilities to improve business efficiency and support informed decisions.</p>
+    `,
+    questions: [
+      {
+        question: "Which description most accurately reflects the role of a BI tool in Northstar Group?",
+        options: [
+          "It collects, processes and analyses structured and unstructured data from internal and external systems.",
+          "It only stores data without providing analytical functionality.",
+          "It uses only handwritten records from internal departments.",
+          "It restricts business information to a single operational system."
+        ],
+        answer: 0,
+        reason: "A BI tool collects, processes and analyses large amounts of structured and unstructured data from both internal and external systems, presenting information in user-friendly formats."
+      },
+      {
+        question: "Managers require reporting that can be customised for different users and can be generated for particular information needs. Which capability best addresses this requirement?",
+        options: [
+          "Designing the physical schema only",
+          "Replacing all data sources",
+          "Automatic reporting and the ability to run ad-hoc reports",
+          "Eliminating data integration"
+        ],
+        answer: 2,
+        reason: "BI tools support automated reporting, customised reporting and ad-hoc reports using data integrated and formatted from different sources."
+      },
+      {
+        question: "Which set of export formats is identified in the chapter as available for BI reports?",
+        options: [
+          "Only handwritten registers and printed ledgers",
+          "Excel, PDF and PowerPoint",
+          "Only raw database files",
+          "Only images and videos"
+        ],
+        answer: 1,
+        reason: "The chapter states that resulting BI reports can be exported in user-defined formats such as Excel, PDF or PowerPoint presentations."
+      },
+      {
+        question: "Northstar wants the reports to be accessible quickly despite the location of decision-makers. Which statement is consistent with the chapter?",
+        options: [
+          "BI information is available only through locally printed reports.",
+          "Cloud services prevent users from accessing data remotely.",
+          "BI tools cannot provide access to information outside the office.",
+          "Cloud availability of BI tools enables fast and real-time access to crucial data despite location."
+        ],
+        answer: 3,
+        reason: "The chapter explains that the availability of BI tools on cloud enables fast and real-time access to crucial data despite location."
+      },
+      {
+        question: "Which benefit most directly explains why integrating the company's database can improve collaboration among departments?",
+        options: [
+          "It prevents all departments from using analytical filters.",
+          "Centralisation promotes collaboration and helps eliminate duplication of resources.",
+          "It requires every report to be manually prepared.",
+          "It removes the need to integrate visualisations with existing applications."
+        ],
+        answer: 1,
+        reason: "Centralisation of the company's database promotes collaboration between departments while eliminating duplication of resources. BI visualisations can also be integrated with existing customised applications."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch11_CS20",
+    difficulty: "Hard",
+    chapter: "Chapter11",
+    caseText: `
+      <p>Atlas Industries uses structured historical data stored in a data warehouse to prepare management dashboards and reports about organisational performance. Separately, its analysts investigate why sales of a particular product are declining despite positive reviews. They clean and organise raw data, examine patterns, and use analytical techniques to develop insights relevant to the specific question.</p>
+    `,
+    questions: [
+      {
+        question: "Atlas management uses dashboards and reports to consider the organisation's overall direction. Which approach most closely matches the chapter's description?",
+        options: [
+          "Business Intelligence, which commonly communicates insights through dashboards, reports and monitoring techniques",
+          "Data Analytics, which is limited to the preparation of scorecards",
+          "ETL, which independently makes all strategic decisions",
+          "Data mining, which is exclusively a reporting format"
+        ],
+        answer: 0,
+        reason: "Business Intelligence supports decision-making through clear dashboards, reports and other monitoring techniques and often addresses high-level strategic questions about an organisation's overall direction."
+      },
+      {
+        question: "The analysts investigate a specific question: why are sales of one product declining despite positive reviews? Which approach matches the chapter's comparison?",
+        options: [
+          "Business Intelligence concerned only with overall organisational direction",
+          "Scorecards focused exclusively on measuring KPIs",
+          "Data Analytics, which tends to focus on a single issue or question",
+          "Mobile Business Intelligence, which makes the question unnecessary"
+        ],
+        answer: 2,
+        reason: "The chapter describes Data Analytics as tending to focus on a single issue or question and gives the example of investigating why sales of a product are dropping despite positive reviews."
+      },
+      {
+        question: "Which data description best matches the Business Intelligence approach used by Atlas management in the case?",
+        options: [
+          "Unprocessed, real-time data that must always be analysed before any structured data exists",
+          "Structured data stored in data warehouses, tabulated databases or other systems",
+          "Only emails, videos and social media posts without structured information",
+          "Data that cannot be used to prepare dashboards or reports"
+        ],
+        answer: 1,
+        reason: "The chapter states that Business Intelligence utilises structured data stored in warehouses, tabulated databases or other systems to produce dashboards and reports."
+      },
+      {
+        question: "The analysts clean and order unstructured, real-time data before storing it for future analysis. Which statement best reflects the chapter's distinction?",
+        options: [
+          "This activity can be performed only by BI scorecards.",
+          "This activity represents physical schema design alone.",
+          "This activity excludes the use of data mining and modelling.",
+          "This activity is consistent with Data Analytics, which usually begins with unstructured, real-time data and may involve cleaning and ordering it."
+        ],
+        answer: 3,
+        reason: "The chapter explains that Data Analytics usually begins with unstructured, real-time data, which analysts clean and order before storing it for future analysis."
+      },
+      {
+        question: "Which statement correctly reflects the chapter's comparison of BI tools and Data Analytics?",
+        options: [
+          "Data Analytics can never be implemented using BI tools.",
+          "Data Analytics can also be implemented using BI tools, depending on the approach or strategy designed by an organisation.",
+          "Business Intelligence and Data Analytics have identical purposes in every situation.",
+          "Data Analytics is restricted to historical data stored in data warehouses or data marts."
+        ],
+        answer: 1,
+        reason: "The chapter states that Data Analytics can also be implemented using BI tools, depending on the approach or strategy designed by an organisation."
+      }
+    ]
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_01",
+    case_chapter: "chapter11",
+    question: "A retail organisation has large amounts of sales and customer data. Management wants to convert this data into useful insights for business decisions. Which concept best describes this requirement?",
+    options: [
+      "Data storage",
+      "Business Intelligence",
+      "Manual reporting",
+      "Physical schema design"
+    ],
+    answer: 1,
+    reason: "Business Intelligence (BI) is about turning an organisation's data into insights that can be used to inform business decisions."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_02",
+    case_chapter: "chapter11",
+    question: "A company's managers require an interactive collection of role-relevant data, KPIs, analytics metrics and visualisations to monitor business performance. Which BI functionality should be used?",
+    options: [
+      "Data mining",
+      "Extract Transfer Load (ETL)",
+      "Dashboards",
+      "Physical schema design"
+    ],
+    answer: 2,
+    reason: "Dashboards provide interactive collections of role-relevant data, including visualisations, KPIs, analytics metrics and other data points that support decision-making."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_03",
+    case_chapter: "chapter11",
+    question: "An organisation uses statistics, database systems and machine learning to uncover patterns in large datasets. Which BI technique does this illustrate?",
+    options: [
+      "Data mining",
+      "Scorecards",
+      "Mobile Business Intelligence",
+      "Reporting"
+    ],
+    answer: 0,
+    reason: "Data mining uses statistics, database systems and machine learning to uncover patterns in large datasets. It also requires pre-processing of data."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_04",
+    case_chapter: "chapter11",
+    question: "A BI team extracts data from different sources, transforms and cleans it, and loads it into a data warehouse for reporting and analysis. Which functionality is being performed?",
+    options: [
+      "Predictive modelling",
+      "Online Analytical Processing (OLAP)",
+      "Model visualisation",
+      "Extract Transfer Load (ETL)"
+    ],
+    answer: 3,
+    reason: "Extract Transfer Load (ETL) extracts data from data sources, transforms and cleans it in preparation for reports and analysis, and loads it into a data warehouse."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_05",
+    case_chapter: "chapter11",
+    question: "A finance team needs to analyse financial forecasting and budgets from multiple analytical dimensions and perspectives. Which BI technique is appropriate?",
+    options: [
+      "Mobile Business Intelligence",
+      "Online Analytical Processing (OLAP)",
+      "Scorecards",
+      "Collaborative Business Intelligence"
+    ],
+    answer: 1,
+    reason: "OLAP is a technique for solving analytical problems with multiple dimensions from various perspectives. The chapter identifies financial forecasting and budgets as applications of OLAP."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_06",
+    case_chapter: "chapter11",
+    question: "A company uses statistical methods to generate probabilities and trend models for predicting values associated with specific datasets and attributes. Which BI technique is being used?",
+    options: [
+      "Reporting",
+      "Data mining",
+      "Predictive modelling",
+      "Real-time monitoring"
+    ],
+    answer: 2,
+    reason: "Predictive modelling utilises statistical methods to generate probabilities and trend models and can be used to predict values for specific datasets and attributes."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_07",
+    case_chapter: "chapter11",
+    question: "A retail company begins its BI project by identifying the information required to determine its best-selling and least-selling products. Which phase of the Business Intelligence Life Cycle is being performed?",
+    options: [
+      "Analyse Business Requirements",
+      "Build the Data Warehouse",
+      "Develop the BI Objects",
+      "Administer and Maintain the Project"
+    ],
+    answer: 0,
+    reason: "The first phase of the Business Intelligence Life Cycle is Analyse Business Requirements. Identifying requirements helps determine the type of analysis that needs to be performed."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_08",
+    case_chapter: "chapter11",
+    question: "After identifying its business requirements, a company prepares a logical model showing relationships between products, customers and sales data. Which phase does this represent?",
+    options: [
+      "Design the Physical Schema",
+      "Design Data Model",
+      "Create BI Project Structure",
+      "Administer and Maintain the Project"
+    ],
+    answer: 1,
+    reason: "The Design Data Model phase prepares a logical model according to the identified requirements and helps analyse the relationships that exist among data entities."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_09",
+    case_chapter: "chapter11",
+    question: "A BI team has completed its logical data model. It now describes the structure and content of the proposed data warehouse. Which phase should the team perform?",
+    options: [
+      "Develop the BI Objects",
+      "Analyse Business Requirements",
+      "Design the Physical Schema",
+      "Administer and Maintain the Project"
+    ],
+    answer: 2,
+    reason: "Once the logical model is prepared, the next phase is Design the Physical Schema, which describes the structure and content of the data warehouse."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_10",
+    case_chapter: "chapter11",
+    question: "A retail company has designed its logical model and physical schema. It now develops the data warehouse and loads data from the source systems. Which phase does this illustrate?",
+    options: [
+      "Create BI Project Structure",
+      "Build the Data Warehouse",
+      "Design Data Model",
+      "Develop the BI Objects"
+    ],
+    answer: 1,
+    reason: "After the logical and physical schemas are designed, the data warehouse is built and the data and content from source systems are loaded into it for further steps."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_11",
+    case_chapter: "chapter11",
+    question: "After building its data warehouse, a company creates a project structure that helps map the tables and data stored in the warehouse. This project structure is also known as what?",
+    options: [
+      "Predictive modelling",
+      "Scorecards",
+      "Operational monitoring",
+      "Metadata"
+    ],
+    answer: 3,
+    reason: "The fifth phase is Create BI Project Structure (Metadata). This project structure makes the mapping of tables and data in the data warehouse easier."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_12",
+    case_chapter: "chapter11",
+    question: "A BI team develops metrics, attributes, dashboards, reports and facts to analyse the data in its warehouse. Which phase of the Business Intelligence Life Cycle is being performed?",
+    options: [
+      "Develop the BI Objects",
+      "Design Data Model",
+      "Analyse Business Requirements",
+      "Design the Physical Schema"
+    ],
+    answer: 0,
+    reason: "The Develop the BI Objects phase involves developing objects such as metrics, attributes, dashboards, reports and facts for analysing the data in the data warehouse."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_13",
+    case_chapter: "chapter11",
+    question: "An organisation continuously monitors its BI project to address changes and maintain the security and performance of the system. Which phase does this describe?",
+    options: [
+      "Build the Data Warehouse",
+      "Create BI Project Structure",
+      "Administer and Maintain the Project",
+      "Design Data Model"
+    ],
+    answer: 2,
+    reason: "Administer and Maintain the Project is the final phase of the BI Life Cycle. The project needs continuous monitoring to maintain changes, security and system performance."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_14",
+    case_chapter: "chapter11",
+    question: "A BI analyst must choose charts for two requirements: measuring monthly sales trends and presenting absolute data that may include negative values. Which combination correctly matches each requirement?",
+    options: [
+      "Pie chart for trends and funnel chart for absolute data",
+      "Doughnut chart for trends and pie chart for absolute data",
+      "Funnel chart for trends and line chart for absolute data",
+      "Line chart for trends and bar chart for absolute data"
+    ],
+    answer: 3,
+    reason: "Line charts are used to measure trends over a period, such as months and years. Bar charts represent absolute data and are useful when the data includes negative values."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_15",
+    case_chapter: "chapter11",
+    question: "A company wants to display the percentage distribution of its products, with every portion representing part of the whole and all portions adding up to 100%. Which chart type should be selected?",
+    options: [
+      "Line chart",
+      "Pie chart",
+      "Funnel chart",
+      "Bar chart"
+    ],
+    answer: 1,
+    reason: "A pie chart shows the whole data in parts. Each portion represents a percentage, and the sum of all parts should equal 100%."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_16",
+    case_chapter: "chapter11",
+    question: "A finance team needs to display various proportions that make up a final value, such as cost price, profit, margin and tax distribution. Which Power BI chart type is suitable?",
+    options: [
+      "Line chart",
+      "Funnel chart",
+      "Doughnut chart",
+      "Bar chart"
+    ],
+    answer: 2,
+    reason: "Doughnut charts are useful when various proportions that make up a final value need to be displayed. The chapter illustrates this with cost price, profit, margin and tax distribution."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_17",
+    case_chapter: "chapter11",
+    question: "A human resources department wants to visualise the movement of applications through successive stages of its recruitment process in relation to the total number of applications. Which chart type is appropriate?",
+    options: [
+      "Funnel chart",
+      "Pie chart",
+      "Line chart",
+      "Doughnut chart"
+    ],
+    answer: 0,
+    reason: "A funnel chart visualises data flowing from one phase to another. The chapter uses the stages of the recruitment process in relation to the total number of applications as an example."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_18",
+    case_chapter: "chapter11",
+    question: "An organisation uses dashboards and reports to answer high-level strategic questions about its overall direction. Its analysts separately investigate a specific question by examining data, developing models and carrying out simulations. Which statement best reflects the chapter's distinction?",
+    options: [
+      "Business Intelligence focuses exclusively on algorithm development.",
+      "Data Analytics is limited to presenting dashboards to leadership teams.",
+      "Business Intelligence and Data Analytics have no role in decision-making.",
+      "Business Intelligence commonly communicates insights through dashboards and reports, while Data Analytics examines data more deeply and often focuses on specific questions."
+    ],
+    answer: 3,
+    reason: "The chapter describes Business Intelligence as supporting high-level strategic decisions through dashboards, reporting and monitoring techniques. Data Analytics tends to focus on specific issues and uses activities such as data mining, algorithm development, modelling and simulations."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_19",
+    case_chapter: "chapter11",
+    question: "Heathrow Airport uses operational data from flight schedules, baggage tracking and weather tracking systems. Azure services prepare this data in real time, and Power BI presents visual reports and dashboards. What is the principal benefit of this BI arrangement?",
+    options: [
+      "It eliminates the need to collect operational data.",
+      "It provides meaningful insights that help staff anticipate delays and passenger surges and take suitable action.",
+      "It prevents different airport departments from coordinating their activities.",
+      "It replaces all operational systems with printed reports."
+    ],
+    answer: 1,
+    reason: "The Heathrow illustration explains that Azure services prepare operational data and Power BI transforms it into meaningful visual insights. Advance information about probable delays and passenger surges helps airport staff take suitable action."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch11_20",
+    case_chapter: "chapter11",
+    question: "An organisation is evaluating BI tools and requires built-in AI capabilities, Excel integration, data connectors and data visualisation functionality. Which tool described in the chapter most directly matches these requirements?",
+    options: [
+      "Microsoft Power BI",
+      "Dundas BI",
+      "Qlik Sense",
+      "Sisense"
+    ],
+    answer: 0,
+    reason: "Microsoft Power BI provides data analysis, integration and visualisation capabilities and comes with built-in AI capabilities, Excel integration and data connectors."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch11_21",
+    case_chapter: "chapter11",
+    question: "A company processes raw data into a meaningful format to generate actionable insights according to its business needs. Which concept most directly describes this activity in the chapter's comparison?",
+    options: [
+      "Business Intelligence",
+      "Scorecards",
+      "Data Analytics",
+      "Real-time monitoring"
+    ],
+    answer: 2,
+    reason: "The chapter describes Data Analytics as modifying raw data into a meaningful format. Its purpose includes cleansing, modelling, predicting and transforming raw data into actionable insights according to business needs."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch11_22",
+    case_chapter: "chapter11",
+    question: "An organisation primarily examines historical business information to understand what has already occurred and uses the findings to inform future strategy. Which approach best matches this description in the chapter's comparison?",
+    options: [
+      "Online Analytical Processing (OLAP)",
+      "Business Intelligence",
+      "Predictive modelling",
+      "Data mining"
+    ],
+    answer: 1,
+    reason: "The chapter describes Business Intelligence as primarily concerned with looking back to see what has already occurred and using this information to inform future strategy."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch11_23",
+    case_chapter: "chapter11",
+    question: "A company's chief executive and financial director use dashboards and reports to understand overall organisational performance and make strategic decisions. Which statement best reflects the chapter's description of Business Intelligence?",
+    options: [
+      "It is primarily used by leadership teams and non-technical personnel.",
+      "It is exclusively used by computer programmers developing algorithms.",
+      "It is restricted to cleaning unstructured, real-time data.",
+      "It is concerned only with developing statistical models and simulations."
+    ],
+    answer: 0,
+    reason: "The chapter states that Business Intelligence is primarily used by leadership teams and non-technical personnel, such as chief executives, financial directors and chief information officers."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch11_24",
+    case_chapter: "chapter11",
+    question: "A data analyst receives unstructured, real-time data, cleans and orders it, and stores it for future analysis. Which statement is consistent with the chapter's comparison?",
+    options: [
+      "This is exclusively the function of BI scorecards.",
+      "This activity represents only the development of BI dashboards.",
+      "This activity eliminates the need for data analysis.",
+      "This activity is consistent with Data Analytics, which usually begins with unstructured, real-time data."
+    ],
+    answer: 3,
+    reason: "The chapter states that Data Analytics also uses structured data but usually begins with unstructured, real-time data. Analysts clean and order these data before storing them for future analysis."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch11_25",
+    case_chapter: "chapter11",
+    question: "Management wants a visual tool to measure Key Performance Indicators (KPIs) and indicate how the organisation is progressing towards its goals. Which BI functionality best meets this requirement?",
+    options: [
+      "Extract Transfer Load (ETL)",
+      "Scorecards",
+      "Data mining",
+      "Model visualisation"
+    ],
+    answer: 1,
+    reason: "BI solutions provide industry-standard scorecards to measure KPIs and indicate how a company is progressing towards its goals."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch11_26",
+    case_chapter: "chapter11",
+    question: "A company consolidates information from different databases into a centralised arrangement so that employees can examine trends, analytics and issues based on their queries. Which benefit of BI tools is primarily demonstrated?",
+    options: [
+      "Elimination of all business risks",
+      "Removal of the need for reporting",
+      "Centralised data",
+      "Replacement of the data warehouse with dashboards"
+    ],
+    answer: 2,
+    reason: "BI tools bring data together in one place and provide views of issues, trends and analytics based on users' queries, helping employees make better decisions."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch11_27",
+    case_chapter: "chapter11",
+    question: "A manager needs to export a BI report for a presentation and also retain a document version for reference. Which set of formats is specifically mentioned in the chapter as available for exporting BI reports?",
+    options: [
+      "Excel, PDF and PowerPoint",
+      "Only plain-text database queries",
+      "Only handwritten registers",
+      "Only audio and video files"
+    ],
+    answer: 0,
+    reason: "The chapter explains that BI reports can be exported in various user-defined formats, including Excel, PDF and PowerPoint presentations."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch11_28",
+    case_chapter: "chapter11",
+    question: "A recruitment department wants to represent the flow of applications through successive recruitment stages, with each stage showing a proportion of the total applications. Which Power BI chart type is most appropriate?",
+    options: [
+      "Line chart",
+      "Pie chart",
+      "Bar chart",
+      "Funnel chart"
+    ],
+    answer: 3,
+    reason: "A funnel chart visualises data flowing from one phase to another. The chapter gives the stages of the recruitment process in relation to the total number of applications as an example."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch11_29",
+    case_chapter: "chapter11",
+    question: "A BI team converts facts into charts, histograms and other visual forms so that users can interpret the insights correctly. Which BI functionality does this describe?",
+    options: [
+      "Predictive modelling",
+      "Model visualisation",
+      "Collaborative Business Intelligence",
+      "Real-time monitoring"
+    ],
+    answer: 1,
+    reason: "Model visualisation transforms facts into charts, histograms and other visuals to support correct insight interpretation."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch11_30",
+    case_chapter: "chapter11",
+    question: "A company is preparing its BI project. The logical model and physical schema are complete, and the data warehouse has been built. The team now creates a project structure to facilitate the mapping of tables and data. Which phase is being performed?",
+    options: [
+      "Analyse Business Requirements",
+      "Design Data Model",
+      "Create BI Project Structure",
+      "Design the Physical Schema"
+    ],
+    answer: 2,
+    reason: "Create BI Project Structure (Metadata) is the fifth phase of the BI Life Cycle. The project structure makes the mapping of tables and data in the data warehouse easier."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch11_31",
+    case_chapter: "chapter11",
+    question: "A BI team has completed its data warehouse and created the project structure containing metadata. It now needs to develop metrics, attributes, dashboards, reports and facts. Which phase follows?",
+    options: [
+      "Design the Physical Schema",
+      "Analyse Business Requirements",
+      "Build the Data Warehouse",
+      "Develop the BI Objects"
+    ],
+    answer: 3,
+    reason: "The sixth phase is Develop the BI Objects. It involves developing metrics, attributes, dashboards, reports and facts to analyse data in the data warehouse."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch11_32",
+    case_chapter: "chapter11",
+    question: "A chief executive asks whether the organisation is achieving its overall strategic objectives. Separately, an analyst investigates why sales of a particular product are declining despite positive reviews. Which interpretation best matches the chapter's comparison?",
+    options: [
+      "Both questions represent only the Data Analytics approach.",
+      "The first reflects the high-level strategic focus of Business Intelligence, while the second reflects the issue-specific focus of Data Analytics.",
+      "The first represents ETL, while the second represents scorecards.",
+      "Both questions are restricted to designing the physical schema."
+    ],
+    answer: 1,
+    reason: "The chapter describes Business Intelligence as addressing high-level strategic questions about an organisation's overall direction, whereas Data Analytics tends to focus on a single issue or question. The example of declining sales despite positive reviews is specifically used to illustrate the latter."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch11_33",
+    case_chapter: "chapter11",
+    question: "Heathrow Airport collects operational data from flight schedules, baggage tracking and weather tracking systems. Azure services prepare the data in real time, and Power BI presents the findings through visual reports and dashboards. Which statement correctly describes this arrangement?",
+    options: [
+      "Azure services prepare operational data, while Power BI analyses and interprets the data to present meaningful insights.",
+      "Power BI replaces all operational systems and removes the need for source data.",
+      "Azure services are used only to create pie charts and doughnut charts.",
+      "Power BI prevents the sharing of operational information with airport employees."
+    ],
+    answer: 0,
+    reason: "The Heathrow illustration explains that Azure Stream Analytics, Azure Data Lake Analytics and Azure SQL Database are used to extract, clean and prepare operational data in real time. Power BI uses data from these services for analysis and interpretation through visual reports, graphics and dashboards."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch11_34",
+    case_chapter: "chapter11",
+    question: "Three organisations evaluate BI tools. The first prioritises live visual analytics and identifying trends quickly; the second requires self-service analytics and associative exploration; the third needs faster data processing through in-chip technology and embedded white-label analytics. Which sequence correctly matches the tools to the organisations?",
+    options: [
+      "Qlik Sense → Tableau → Dundas BI",
+      "Sisense → Dundas BI → Tableau",
+      "Tableau → Qlik Sense → Sisense",
+      "Dundas BI → Sisense → Qlik Sense"
+    ],
+    answer: 2,
+    reason: "Tableau is known for live visual analytics and identifying trends quickly. Qlik Sense emphasises self-service analytics and associative exploration. Sisense uses in-chip technology for faster data processing and supports embedded white-label analytics."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch11_35",
+    case_chapter: "chapter11",
+    question: "A BI team uses statistics, database systems and machine learning to uncover patterns in a large dataset. Another team uses statistical methods to generate probabilities and trend models for predicting specific values. Which sequence correctly identifies these techniques?",
+    options: [
+      "OLAP followed by scorecards",
+      "Data mining followed by predictive modelling",
+      "Reporting followed by ETL",
+      "Model visualisation followed by dashboards"
+    ],
+    answer: 1,
+    reason: "Data mining uses statistics, database systems and machine learning to uncover patterns in large datasets. Predictive modelling uses statistical methods to generate probabilities and trend models and to predict values for specific datasets and attributes."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch11_36",
+    case_chapter: "chapter11",
+    question: "A company must present the percentage composition of a whole, with all portions adding up to 100%. It separately needs to display various proportions that make up a final value. Which combination correctly matches the chart types to these requirements?",
+    options: [
+      "Line chart followed by bar chart",
+      "Funnel chart followed by line chart",
+      "Bar chart followed by pie chart",
+      "Pie chart followed by doughnut chart"
+    ],
+    answer: 3,
+    reason: "A pie chart divides the whole data into percentage-based portions whose sum should equal 100%. A doughnut chart is useful when various proportions that make up a final value need to be displayed."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch11_37",
+    case_chapter: "chapter11",
+    question: "An organisation integrates data from databases, CRM systems, ERP systems and documents. It wants the BI tool to collect, process and analyse the information and present findings in user-friendly formats. Which statement best describes the role of the BI tool?",
+    options: [
+      "It exclusively stores structured data without analysing it.",
+      "It collects, processes and analyses structured and unstructured data from internal and external systems, presenting findings through reports, dashboards, charts and graphs.",
+      "It only prepares metadata for mapping warehouse tables.",
+      "It eliminates the need to interpret business information."
+    ],
+    answer: 1,
+    reason: "The chapter defines a BI tool as application software that collects, processes and analyses large amounts of structured and unstructured data from internal and external systems. It presents information in user-friendly formats such as reports, dashboards, charts and graphs."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch11_38",
+    case_chapter: "chapter11",
+    question: "A retailer combines current data with relevant statistics to identify upcoming sales opportunities and trends. It also uses relevant data to revise prices in line with current supply and demand. Which interpretation is consistent with the chapter?",
+    options: [
+      "Predictive modelling can help identify sales opportunities and upcoming trends, while BI can support price optimisation using supply, demand and trends.",
+      "BI requires all prices to remain unchanged, irrespective of supply and demand.",
+      "Predictive modelling eliminates the need to examine product performance history.",
+      "Price optimisation is achieved by preventing access to current business data."
+    ],
+    answer: 0,
+    reason: "The chapter states that retail predictive analytics can help identify sales opportunities and upcoming trends. It also explains that access to relevant data can enable brands to update prices in real time in line with supply, demand and upcoming trends."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch11_39",
+    case_chapter: "chapter11",
+    question: "A manager uses data stored in a data warehouse to review organisational performance through dashboards. An analyst separately cleans and orders unstructured, real-time data before storing it for future investigation. Which statement best reflects the chapter's comparison?",
+    options: [
+      "Both activities relate exclusively to scorecard preparation.",
+      "The first activity represents Data Analytics, while the second can only represent Business Intelligence.",
+      "The first is consistent with BI's use of structured data and dashboards, while the second is consistent with Data Analytics' treatment of unstructured, real-time data.",
+      "Neither activity is associated with data-driven decision-making."
+    ],
+    answer: 2,
+    reason: "The chapter describes BI as using structured data stored in warehouses, tabulated databases or other systems to produce dashboards and reports. Data Analytics also uses structured data but usually begins with unstructured, real-time data, which analysts clean and order before storing it for future analysis."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch11_40",
+    case_chapter: "chapter11",
+    question: "A company wants to share BI information with internal and external stakeholders, make reports and dashboards accessible on mobile devices, and analyse operational data in real time. Which sequence correctly identifies the relevant BI functionalities?",
+    options: [
+      "Predictive modelling → Data mining → Scorecards",
+      "Collaborative Business Intelligence → Mobile Business Intelligence → Real-time monitoring",
+      "ETL → Physical schema design → Data model design",
+      "Model visualisation → OLAP → Scorecards"
+    ],
+    answer: 1,
+    reason: "Collaborative Business Intelligence supports sharing information with stakeholders within and outside the organisation. Mobile Business Intelligence makes reports, dashboards and monitoring accessible on mobile devices. Real-time monitoring analyses operational data in real time to support quick and informed decisions."
   }
+
+
 
 
 ]
