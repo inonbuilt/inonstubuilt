@@ -21653,7 +21653,2855 @@ const caseStudies = [
     ],
     answer: 1,
     reason: "Collaborative Business Intelligence supports sharing information with stakeholders within and outside the organisation. Mobile Business Intelligence makes reports, dashboards and monitoring accessible on mobile devices. Real-time monitoring analyses operational data in real time to support quick and informed decisions."
+  },
+  // Chapter12
+  {
+    case_id: "ecosys_ch12_CS01",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>FinServe is a digital financial services platform. It connects individuals who need loans with people willing to lend, allows entrepreneurs to raise funds from multiple investors through an internet-based platform, and offers an automated investment service. The investment service asks users about their financial situation and future goals before using an algorithm to provide advice and invest on their behalf.</p>
+    `,
+    questions: [
+      {
+        question: "What does the term FinTech refer to?",
+        options: [
+          "The use of technology only for preparing paper-based accounts",
+          "The innovative use of technology in the design and delivery of financial services and products",
+          "The replacement of every financial service with physical cash",
+          "The storage of business documents without providing financial services"
+        ],
+        answer: 1,
+        reason: "FinTech is the abbreviation for Financial Technology and refers to the innovative use of technology in designing and delivering financial services and products."
+      },
+      {
+        question: "Which FinTech service connects people who need loans with people willing to lend?",
+        options: [
+          "Peer-to-Peer (P2P) lending",
+          "Cloud resource pooling",
+          "Software as a Service (SaaS)",
+          "Blockchain hashing"
+        ],
+        answer: 0,
+        reason: "Peer-to-Peer (P2P) lending platforms connect lenders and borrowers and use technology to speed up loan acceptance."
+      },
+      {
+        question: "How does the internet-based crowdfunding platform help entrepreneurs?",
+        options: [
+          "By preventing multiple investors from contributing",
+          "By providing only traditional paper records",
+          "By raising debt or equity from multiple investors",
+          "By replacing every business plan with a digital signature"
+        ],
+        answer: 2,
+        reason: "The chapter describes crowdfunding as a way of raising debt or equity from multiple investors through an internet-based platform."
+      },
+      {
+        question: "Which service is being offered when FinServe asks about a user's financial situation and future goals and then provides algorithm-driven investment services?",
+        options: [
+          "A payment gateway",
+          "A data centre",
+          "A public blockchain",
+          "A robo-advisor"
+        ],
+        answer: 3,
+        reason: "A robo-advisor is a digital platform that provides automated, algorithm-driven financial planning and investment services, usually after collecting information about the user's situation and goals."
+      },
+      {
+        question: "Which is a primary objective of FinTech?",
+        options: [
+          "To make financial transactions accessible only through desktop computers",
+          "To assist businesses and consumers in the efficient administration of financial transactions",
+          "To remove technology from financial services",
+          "To ensure that every transaction requires a physical intermediary"
+        ],
+        answer: 1,
+        reason: "The chapter identifies the primary objective of FinTech as assisting businesses and consumers in the efficient administration of financial transactions."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS02",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>BrightPay offers a mobile payment facility that allows users to send money directly to a desired bank account at any time. Its payment application supports digital authentication and uses security features such as biometric authentication and tokenization. The service helps customers who may not be able to visit a physical bank, although management recognises that people with limited digital skills or unreliable access to technology may face difficulties.</p>
+    `,
+    questions: [
+      {
+        question: "Which Indian digital payment interface is described in the chapter as enabling users to send funds directly to a desired bank account at any time?",
+        options: [
+          "Unified Payment Interface (UPI)",
+          "Robotic Process Automation (RPA)",
+          "Platform as a Service (PaaS)",
+          "Deep Learning (DL)"
+        ],
+        answer: 0,
+        reason: "The chapter explains that the Unified Payment Interface (UPI) allows users to pay others at any time by sending funds directly to the desired bank account."
+      },
+      {
+        question: "Which of the following is identified as a security feature used by mobile payment applications?",
+        options: [
+          "Manual reconciliation only",
+          "A paper-only ledger",
+          "Biometric authentication and tokenization",
+          "Removing all digital authentication"
+        ],
+        answer: 2,
+        reason: "The chapter notes that mobile payment applications can provide additional security features such as biometric authentication and tokenization."
+      },
+      {
+        question: "How can FinTech help improve financial inclusion?",
+        options: [
+          "By limiting financial services to people who visit bank branches",
+          "By creating more accessible ways to obtain formal financial services",
+          "By preventing people from using mobile financial services",
+          "By making financial information unavailable to customers"
+        ],
+        answer: 1,
+        reason: "The chapter states that FinTech can help include more people in the financial system by improving access to financial services, including through mobile financial services."
+      },
+      {
+        question: "Which consumer challenge may arise as FinTech becomes more common?",
+        options: [
+          "Every customer automatically understands all complex products",
+          "Digital services eliminate every possibility of fraud",
+          "Consumers never need internet connectivity",
+          "Some people may be digitally or financially excluded"
+        ],
+        answer: 3,
+        reason: "The chapter identifies the risk that some consumers may be digitally or financially excluded and may struggle to participate fully as FinTech becomes the norm."
+      },
+      {
+        question: "What is one risk when a financial service depends heavily on technology?",
+        options: [
+          "A technology failure may prevent consumers from completing transactions",
+          "The service is guaranteed to operate without interruption",
+          "All transaction information becomes automatically correct",
+          "Consumers no longer need to understand the service"
+        ],
+        answer: 0,
+        reason: "The chapter discusses issues that arise when technology fails, noting that malfunctions in the technology behind FinTech can cause problems for consumers."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS03",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>Nova Finance uses different artificial intelligence systems. One system is designed only to identify suspicious emails. Another system uses present information and some past observations to assist with driving decisions. A separate chess-playing system evaluates the available moves and selects a strategy but does not retain past experiences to make future decisions. The technology team is also studying how machine learning and deep learning relate to Artificial Intelligence (AI).</p>
+    `,
+    questions: [
+      {
+        question: "An AI system designed to perform only a specific task, such as identifying suspicious emails, is an example of which type based on capabilities?",
+        options: [
+          "Super AI",
+          "General AI",
+          "Weak/Narrow AI",
+          "Self-aware AI"
+        ],
+        answer: 2,
+        reason: "Weak/Narrow AI is designed to perform a dedicated task and cannot operate beyond its field or limitations. The chapter gives a spam filter as an example of machine learning."
+      },
+      {
+        question: "The driving-related system uses present data and past observations to make decisions. Which type of AI based on functionalities does this most closely describe?",
+        options: [
+          "Self-aware AI",
+          "Limited Memory AI",
+          "Reactive AI",
+          "Theory-of-mind AI"
+        ],
+        answer: 1,
+        reason: "Limited Memory AI uses past experiences and present data to make decisions, and the chapter gives self-driving cars as an example."
+      },
+      {
+        question: "The chess-playing system selects moves using current inputs and does not use memories of past experiences. Which type of AI is described?",
+        options: [
+          "Limited Memory AI",
+          "General AI",
+          "Self-aware AI",
+          "Reactive AI"
+        ],
+        answer: 3,
+        reason: "Reactive AI optimizes outputs based on a set of inputs and does not have the ability to form memories or use past experiences. Chess-playing AI is given as an example."
+      },
+      {
+        question: "Which statement best describes Machine Learning (ML) as presented in the chapter?",
+        options: [
+          "It creates algorithms whose performance improves as they are exposed to more data over time",
+          "It is a type of physical storage device",
+          "It refers only to manually entered accounting records",
+          "It is a cloud deployment model used by one organisation"
+        ],
+        answer: 0,
+        reason: "The chapter describes Machine Learning as creating algorithms whose performance improves as they are exposed to more data over time."
+      },
+      {
+        question: "How does Deep Learning (DL) relate to Machine Learning?",
+        options: [
+          "Deep Learning is unrelated to Artificial Intelligence",
+          "Deep Learning is a replacement term for cloud computing",
+          "Deep Learning is a subset of Machine Learning that uses artificial neural networks",
+          "Deep Learning means storing every transaction in a paper ledger"
+        ],
+        answer: 2,
+        reason: "The chapter describes Deep Learning as a subset of Machine Learning that uses artificial neural networks to reach conclusions without human intervention."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS04",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>AccountsPro handles a large volume of structured and repetitive accounting work, including data entry and reconciliation. It introduces software bots to perform these tasks unattended. Its finance team also uses AI to analyse transactional data, identify unusual activities, generate reports automatically and trigger checks when customer behaviour differs from established spending patterns.</p>
+    `,
+    questions: [
+      {
+        question: "Which technology is suitable for automating large volumes of structured and repetitive accounting processes such as data entry and reconciliation?",
+        options: [
+          "Crowdfunding",
+          "Robotic Process Automation (RPA)",
+          "A public blockchain",
+          "Community cloud"
+        ],
+        answer: 1,
+        reason: "The chapter explains that Robotic Process Automation (RPA) can run unattended to automate large volumes of specific, structured and repetitive accounting processes, including data entry and reconciliation."
+      },
+      {
+        question: "How can AI assist the finance team with large quantities of data?",
+        options: [
+          "By preventing the analysis of transactional data",
+          "By ensuring no data is ever updated",
+          "By replacing all source records with estimates",
+          "By analysing data at speed and helping detect anomalies"
+        ],
+        answer: 3,
+        reason: "The chapter states that AI can analyse large quantities of data at speed and at scale, detect anomalies in systems and optimise workflows."
+      },
+      {
+        question: "An automated system identifies a purchase that conflicts with a customer's established spending pattern and triggers a security mechanism. What is the system helping to achieve?",
+        options: [
+          "Fraud prevention",
+          "Cloud deployment",
+          "Crowdfunding",
+          "Data variety"
+        ],
+        answer: 0,
+        reason: "The chapter explains that fraud detection systems may analyse client behaviour, location and buying habits and trigger a security mechanism when activity appears unusual."
+      },
+      {
+        question: "Which activity can AI support by capturing business activity in real time and making adjustments throughout the month?",
+        options: [
+          "Removing the need for financial records",
+          "Restricting all analysis to year-end",
+          "Continuous reconciliation and adjustments such as accruals",
+          "Preventing accounting data from being reviewed"
+        ],
+        answer: 2,
+        reason: "The chapter states that AI can capture business activity in real time, perform continuous reconciliation and make adjustments such as accruals throughout the month."
+      },
+      {
+        question: "Which is a possible benefit of using AI-enabled software to verify data and generate reports automatically?",
+        options: [
+          "It makes every risk disappear permanently",
+          "It supports process automation and can improve productivity",
+          "It prevents finance professionals from using insights",
+          "It requires every report to be prepared by hand"
+        ],
+        answer: 1,
+        reason: "The chapter identifies process automation as a benefit of AI-enabled software, including verifying data and generating reports automatically according to given parameters."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS05",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>LedgerLink is testing blockchain for recording transactions between independent participants. When a participant requests a transaction, the network validates it before it is added to a block. The block is linked to earlier blocks using a hash, and copies of the ledger are maintained across network nodes. Participants want a record that is transparent and difficult to alter without relying on a trusted third party to settle every transaction.</p>
+    `,
+    questions: [
+      {
+        question: "Which description best matches blockchain in the chapter?",
+        options: [
+          "A paper register managed by one clerk",
+          "A service for renting physical office space",
+          "A shared, decentralised and open ledger of transactions",
+          "A tool used only to create presentation slides"
+        ],
+        answer: 2,
+        reason: "The chapter describes blockchain as a shared, decentralised and open ledger of transactions that can be shared among a network of independent parties."
+      },
+      {
+        question: "What does the hash do in the structure of a blockchain?",
+        options: [
+          "It links one block to another and acts like a digital fingerprint of data",
+          "It removes the need to record any transactions",
+          "It converts every transaction into a paper document",
+          "It gives one participant automatic control over all nodes"
+        ],
+        answer: 0,
+        reason: "The chapter explains that a hash links one block to another and acts as a digital fingerprint of data, helping to lock blocks in order and time."
+      },
+      {
+        question: "In the scenario, what happens before a proposed transaction is added to a block?",
+        options: [
+          "The record is deleted from every node",
+          "The transaction is sent to a central bank for every type of blockchain",
+          "The transaction is automatically accepted without checks",
+          "The network validates the transaction"
+        ],
+        answer: 3,
+        reason: "The chapter's description of blockchain working states that the transaction request is transmitted to the network and the network validates the transaction before it is added to the current block."
+      },
+      {
+        question: "Which blockchain feature helps participants reach agreement about which transaction blocks are valid?",
+        options: [
+          "Measured service",
+          "Distributed consensus",
+          "On-demand self-service",
+          "Customer segmentation"
+        ],
+        answer: 1,
+        reason: "Distributed consensus enables the network to reach agreement about which blocks of transactions are valid and which are not."
+      },
+      {
+        question: "Why is it difficult to change information already recorded in a blockchain?",
+        options: [
+          "Because the data is kept only in a handwritten register",
+          "Because blockchain has no transaction records",
+          "Because entries are cryptographically linked and distributed across network nodes",
+          "Because every entry must be removed after settlement"
+        ],
+        answer: 2,
+        reason: "The chapter explains that transactions are cryptographically bound through hashes and distributed to nodes; once recorded, information is extremely difficult to change or remove."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS06",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>CoBank is considering a blockchain network for a group of participating financial organisations. Only the member organisations should take part in validating transactions. In a separate project, the bank is studying an open network in which anyone can participate, as well as a design that keeps selected information private while allowing other information to be made public.</p>
+    `,
+    questions: [
+      {
+        question: "Which type of blockchain is controlled by a group of organisations, with participation limited to consortium members?",
+        options: [
+          "Consortium blockchain",
+          "Public blockchain",
+          "Permissionless blockchain only",
+          "A cloud service model"
+        ],
+        answer: 0,
+        reason: "The chapter states that consortium blockchains are controlled by a group of organisations and participation is limited to members of the consortium."
+      },
+      {
+        question: "Which type of blockchain is open for anyone to participate at any level?",
+        options: [
+          "Private blockchain",
+          "Public blockchain",
+          "On-premises private cloud",
+          "Community cloud"
+        ],
+        answer: 1,
+        reason: "The chapter describes public blockchains, such as Bitcoin, as large distributed networks that are open for anyone to participate."
+      },
+      {
+        question: "Which type of blockchain combines features of private and public blockchains and can allow selected data to be made public?",
+        options: [
+          "Private blockchain only",
+          "Consortium blockchain only",
+          "Permissionless blockchain only",
+          "Hybrid blockchain"
+        ],
+        answer: 3,
+        reason: "The chapter explains that a hybrid blockchain has features of both private and public blockchain and allows an organisation to choose who can access certain data and which data can be public."
+      },
+      {
+        question: "Which statement best describes a permissioned blockchain?",
+        options: [
+          "It must always allow every member of the public to join",
+          "It cannot use cryptography",
+          "It restricts which nodes may access the network and their potential access rights",
+          "It is another name for Software as a Service"
+        ],
+        answer: 2,
+        reason: "The chapter states that permissioned blockchain restricts the number of nodes that may access the network and the access rights available to them."
+      },
+      {
+        question: "Which is a stated application of blockchain technology?",
+        options: [
+          "Cross-border payments that may reduce intermediaries, delays and costs",
+          "Preventing all digital records from being created",
+          "Providing only handwritten loan applications",
+          "Replacing every financial service with local storage"
+        ],
+        answer: 0,
+        reason: "The chapter lists cross-border payments as a blockchain application and explains that a decentralised, transparent ledger can reduce reliance on intermediaries, delays and costs."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS07",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>SmallBiz uses cloud computing to access applications and store business data over the Internet. The organisation can request additional computing resources when demand rises and reduce them when demand falls. The service provider measures resource usage for billing. SmallBiz appreciates that it need not buy all the underlying infrastructure in advance, but management is also aware that a lost Internet connection may prevent access to cloud applications and data.</p>
+    `,
+    questions: [
+      {
+        question: "What does cloud computing generally mean in the chapter?",
+        options: [
+          "Owning and operating every computing resource locally at all times",
+          "Using computing resources as a service through networks, typically the Internet",
+          "Recording transactions only in a handwritten register",
+          "Using a computer without any network connection"
+        ],
+        answer: 1,
+        reason: "The chapter defines cloud computing as the use of computing resources as a service through networks, typically the Internet."
+      },
+      {
+        question: "Which essential characteristic allows SmallBiz to increase or reduce resources as demand changes?",
+        options: [
+          "Immutability",
+          "Customer segmentation",
+          "Wide elasticity",
+          "Crowdfunding"
+        ],
+        answer: 2,
+        reason: "Wide elasticity allows cloud resources to be provisioned to scale up quickly or released rapidly to scale down."
+      },
+      {
+        question: "When the cloud provider measures resource use for billing, which characteristic is being demonstrated?",
+        options: [
+          "Measured service",
+          "Theory-of-mind AI",
+          "Distributed consensus",
+          "Peer-to-peer lending"
+        ],
+        answer: 0,
+        reason: "Measured service means resource utilisation is measured and monitored, supporting reporting and billing based on the type and amount of service used."
+      },
+      {
+        question: "Which cloud characteristic allows a user to provision resources as needed without interacting with a human administrator?",
+        options: [
+          "Private blockchain",
+          "Reactive AI",
+          "Crowdfunding",
+          "On-demand self-service"
+        ],
+        answer: 3,
+        reason: "On-demand self-service allows a client to provision computing resources automatically as needed without requiring human interaction with the service vendor."
+      },
+      {
+        question: "Which drawback of cloud computing is directly illustrated if SmallBiz loses its Internet connection?",
+        options: [
+          "The data automatically becomes a public blockchain",
+          "Access to cloud data and applications may be lost",
+          "The organisation gains complete control over the provider's resources",
+          "The provider no longer measures resource use"
+        ],
+        answer: 1,
+        reason: "The chapter identifies loss of the Internet connection as a drawback because the link to cloud data and applications may also be lost."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS08",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>CloudWorks offers three different services to customers. The first provides virtual machines, processing power, storage and networks. The second gives developers an online environment with programming languages, databases and tools to build and deploy applications. The third provides users with completed applications over the Internet, with the service provider managing the applications and underlying infrastructure.</p>
+    `,
+    questions: [
+      {
+        question: "Which cloud service model provides computing resources such as processing power, memory, storage and networks?",
+        options: [
+          "Software as a Service (SaaS)",
+          "Infrastructure as a Service (IaaS)",
+          "Platform as a Service (PaaS)",
+          "Robotic Process Automation (RPA)"
+        ],
+        answer: 1,
+        reason: "Infrastructure as a Service (IaaS) provides computing resources such as processing power, memory, storage and networks for users to run applications on demand."
+      },
+      {
+        question: "Which service model provides developers with an environment to develop and deploy applications, including programming languages, databases and testing tools?",
+        options: [
+          "Platform as a Service (PaaS)",
+          "Public blockchain",
+          "Software as a Service (SaaS)",
+          "Peer-to-Peer (P2P) lending"
+        ],
+        answer: 0,
+        reason: "Platform as a Service (PaaS) provides a development platform that may include programming languages, databases, testing tools and other tools for developing and deploying applications."
+      },
+      {
+        question: "Which model provides an already-developed application over the Internet to end users?",
+        options: [
+          "IaaS",
+          "PaaS",
+          "Blockchain as a ledger",
+          "Software as a Service (SaaS)"
+        ],
+        answer: 3,
+        reason: "Software as a Service (SaaS) allows end users to access an application over the Internet that is hosted and managed by the service provider."
+      },
+      {
+        question: "What is the main difference between PaaS and SaaS described in the chapter?",
+        options: [
+          "PaaS is only for storing paper records, while SaaS is only for physical servers",
+          "PaaS is a public blockchain, while SaaS is a private blockchain",
+          "PaaS provides a platform for application development, while SaaS provides online applications that are already developed",
+          "There is no distinction between PaaS and SaaS"
+        ],
+        answer: 2,
+        reason: "The chapter distinguishes PaaS as a platform for application development and SaaS as a way to access applications that have already been developed."
+      },
+      {
+        question: "Under SaaS, who manages the hosted application and the underlying infrastructure?",
+        options: [
+          "The service provider",
+          "Every end user individually, in all cases",
+          "Only the customer's physical hardware supplier",
+          "The developer's local computer automatically"
+        ],
+        answer: 0,
+        reason: "The chapter states that SaaS applications are hosted and managed by the service provider, so end users are not responsible for managing the application, development platform or underlying infrastructure."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS09",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>GroupOne is comparing cloud deployment models. One option would be used exclusively within the organisation. Another is provided over the Internet by a third-party provider on a pay-per-use basis. A third option would keep critical activities in the organisation's private environment while using a public cloud for additional capacity. The organisation is also considering a cloud shared by several organisations with common concerns and requirements.</p>
+    `,
+    questions: [
+      {
+        question: "Which deployment model is used exclusively for the benefit of one organisation and resides within its boundaries or is managed for it?",
+        options: [
+          "Public cloud",
+          "Community cloud",
+          "Private cloud",
+          "Hybrid cloud"
+        ],
+        answer: 2,
+        reason: "The chapter describes a private cloud as a cloud environment used exclusively for one organisation's benefit."
+      },
+      {
+        question: "Which deployment model is typically offered by third-party providers over the Internet on a pay-per-use basis?",
+        options: [
+          "Public cloud",
+          "Private cloud only",
+          "Community cloud only",
+          "Reactive AI"
+        ],
+        answer: 0,
+        reason: "The chapter explains that public clouds are typically administered by third parties or vendors over the Internet, with services offered on a pay-per-use basis."
+      },
+      {
+        question: "Which deployment model combines private and public cloud environments, such as keeping critical activities private and using public cloud for additional resources?",
+        options: [
+          "Private cloud",
+          "Public blockchain",
+          "Community cloud",
+          "Hybrid cloud"
+        ],
+        answer: 3,
+        reason: "The chapter describes hybrid cloud as a combination of private and public cloud environments and notes that organisations may use public clouds for non-critical activities and private clouds for critical activities."
+      },
+      {
+        question: "Which deployment model is intended for exclusive use by a specific community of organisations with shared concerns?",
+        options: [
+          "Public cloud",
+          "Community cloud",
+          "IaaS",
+          "SaaS"
+        ],
+        answer: 1,
+        reason: "The chapter defines a community cloud as infrastructure provisioned for exclusive use by a specific community of consumers from organisations that have shared concerns."
+      },
+      {
+        question: "Which is a key advantage of a community cloud mentioned in the chapter?",
+        options: [
+          "It guarantees complete autonomy for each organisation",
+          "It prevents organisations from collaborating",
+          "It allows organisations to share responsibilities and collaborate on the cloud",
+          "It requires every organisation to maintain a separate private cloud"
+        ],
+        answer: 2,
+        reason: "The chapter lists collaborative work and sharing responsibilities among organisations as advantages of community cloud."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS10",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>DataWise, a financial technology company, collects large amounts of structured and unstructured data from transactions, websites and customer interactions. It wants to understand customer behaviour, personalise services, identify unusual transactions and improve risk assessments. The team also learns that adopting analytics can be difficult where software is outdated, suitable specialists are unavailable or short-term results are not immediately visible.</p>
+    `,
+    questions: [
+      {
+        question: "What is Big Data, as described in the chapter?",
+        options: [
+          "A collection of data that is always small enough for traditional databases to process easily",
+          "A paper-based filing method used only by banks",
+          "A type of blockchain that stores no information",
+          "A collection of data so large that traditional databases and data-processing applications may find it difficult to store and process"
+        ],
+        answer: 3,
+        reason: "The chapter defines Big Data as a collection of data so large that it becomes difficult to store and process using traditional databases and data-processing applications."
+      },
+      {
+        question: "Which of the following correctly identifies the three Vs of Big Data described in the chapter?",
+        options: [
+          "Volume, Variety and Velocity",
+          "Value, Verification and Visibility",
+          "Virtualisation, Validation and Volume",
+          "Velocity, Visualisation and Vendor"
+        ],
+        answer: 0,
+        reason: "The chapter describes the three Vs of Big Data as Volume, Variety and Velocity. It also notes that some organisations add Veracity as another V."
+      },
+      {
+        question: "In the context of Big Data, what does Variety refer to?",
+        options: [
+          "The speed at which data changes",
+          "The wide variety of data that can come from various sources",
+          "Only the number of computers in a data centre",
+          "The period for which cloud resources are rented"
+        ],
+        answer: 1,
+        reason: "The chapter explains that Variety refers to the wide variety of data that can come from various sources."
+      },
+      {
+        question: "How can Big Data help a FinTech company improve security?",
+        options: [
+          "By preventing all transaction data from being reviewed",
+          "By replacing all risk assessments with guesses",
+          "By detecting unusual transactions and supporting fraud detection systems",
+          "By ensuring that customer services cannot be personalised"
+        ],
+        answer: 2,
+        reason: "The chapter states that Big Data can help FinTech develop accurate fraud detection systems by detecting unusual transactions."
+      },
+      {
+        question: "Which is identified in the chapter as an obstacle to adopting analytics in financial institutions?",
+        options: [
+          "The availability of accurate data always eliminates all costs",
+          "Immediate short-term results from every solution",
+          "The absence of any need for specialist resources",
+          "Outdated software and a lack of necessary resources such as data specialists"
+        ],
+        answer: 3,
+        reason: "The chapter lists outdated software and lack of needed resources, including specialist expertise and suitable infrastructure, among the obstacles to adopting analytics."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch12_CS11",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>StyleSphere wants to offer products that better match customers' preferences. Its digital store allows customers to design their own shoes, and the company uses the resulting customer information to inform future product designs and personalised recommendations. A coffee retailer also analyses information from its mobile app and loyalty card, including the place and time of purchases, to send relevant messages and recommendations to customers.</p>
+    `,
+    questions: [
+      {
+        question: "How can customer information collected during product customisation help StyleSphere?",
+        options: [
+          "It automatically removes the need to understand customer preferences",
+          "It can inform future product designs and personalised recommendations",
+          "It prevents the business from analysing customer behaviour",
+          "It requires every customer to purchase the same product"
+        ],
+        answer: 1,
+        reason: "The chapter's Nike illustration explains that information collected when customers design their own sneakers can be used by Machine Learning algorithms to inform future designs and personalised recommendations."
+      },
+      {
+        question: "Which technique does the coffee retailer use to process customer information and provide relevant recommendations?",
+        options: [
+          "Distributed consensus",
+          "Resource pooling",
+          "Predictive Analytics",
+          "Crowdfunding"
+        ],
+        answer: 2,
+        reason: "In the Starbucks illustration, Predictive Analytics is used to process information collected through the mobile app and loyalty card and to provide personalised messages and recommendations."
+      },
+      {
+        question: "Which of the following is an example of information mentioned in the Starbucks illustration?",
+        options: [
+          "The place and time of a product purchase",
+          "Only the physical size of the company's servers",
+          "Only the number of cloud vendors in the market",
+          "The private encryption key of every customer"
+        ],
+        answer: 0,
+        reason: "The chapter says Starbucks collects and analyses customer information including the place and time of product purchases and sales."
+      },
+      {
+        question: "What is the purpose of using customer information to make personalised recommendations?",
+        options: [
+          "To make all customer interactions identical",
+          "To stop the company from learning about customer preferences",
+          "To eliminate the need for digital services",
+          "To make recommendations more relevant to individual customers"
+        ],
+        answer: 3,
+        reason: "The chapter's illustrations show AI, Machine Learning and Predictive Analytics being used to understand customer information and provide personalised recommendations."
+      },
+      {
+        question: "Which statement best reflects the use of AI in these examples?",
+        options: [
+          "AI is used only for physical storage of products",
+          "AI can help analyse customer information and support business decisions",
+          "AI prevents companies from using customer data",
+          "AI replaces all products with digital currencies"
+        ],
+        answer: 1,
+        reason: "The chapter explains that AI can help businesses analyse customer behaviour and information to support personalised services and business decisions."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS12",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>Insight Labs is developing a Deep Learning solution to classify images and process customer speech. The team has access to large datasets and is considering the computing resources needed to train the model. During testing, the team finds that it is difficult to explain why the model produced a particular result, and that training requires substantial time and specialised hardware.</p>
+    `,
+    questions: [
+      {
+        question: "Which problem describes the 'black box' issue associated with Deep Learning?",
+        options: [
+          "The model cannot receive any data",
+          "The model must store all output on paper",
+          "It can be difficult to determine why the model reached a particular conclusion",
+          "The model can only be used without a computer"
+        ],
+        answer: 2,
+        reason: "The chapter explains that it can be almost impossible to determine why a Deep Learning system reached a certain conclusion; this is called the 'black box' problem."
+      },
+      {
+        question: "Which resource may be required to train Deep Learning networks, according to the chapter?",
+        options: [
+          "Only a handwritten ledger",
+          "Specific hardware such as Graphics Processing Units (GPUs), along with computing resources",
+          "A physical cash register in every case",
+          "A central authority to approve each image"
+        ],
+        answer: 1,
+        reason: "The chapter notes that Deep Learning networks may require new computational methods and specific hardware such as Graphics Processing Units (GPUs), in addition to clusters of compute nodes."
+      },
+      {
+        question: "For which type of task does the chapter state that Deep Learning often performs well?",
+        options: [
+          "Image classification, natural language processing and speech recognition",
+          "Only manual filing of paper vouchers",
+          "Only the physical transport of goods",
+          "Only the preparation of handwritten ledgers"
+        ],
+        answer: 0,
+        reason: "The chapter states that Deep Learning often performs well in image classification, natural language processing and speech recognition."
+      },
+      {
+        question: "Which is a limitation of Deep Learning described in the chapter?",
+        options: [
+          "It never uses data",
+          "It cannot be applied to unstructured data",
+          "It is always easy to explain every conclusion",
+          "It may require extensive training time and large amounts of data"
+        ],
+        answer: 3,
+        reason: "The chapter notes that Deep Learning can require extensive training times, a lot of data and specific hardware requirements."
+      },
+      {
+        question: "What does the chapter conclude about choosing an algorithm for a problem?",
+        options: [
+          "The same algorithm must be used for every problem",
+          "There is no single algorithm that fits or solves all problems; suitability depends on the problem and the available data",
+          "Algorithms should never be evaluated against the problem being solved",
+          "Only the newest algorithm can ever be appropriate"
+        ],
+        answer: 1,
+        reason: "The chapter concludes that there is no one algorithm that fits or solves all problems; success depends on the problem to be solved and the data available."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS13",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>FarmLink supplies food products to retailers. Different participants record the movement of goods at each stage, from the farm to the retailer. The participants want a shared record that helps them trace the origin and journey of products, improve transparency and identify where a problem occurred if a product's safety or authenticity is questioned.</p>
+    `,
+    questions: [
+      {
+        question: "Which blockchain application is most directly relevant to recording the movement of goods through FarmLink's supply chain?",
+        options: [
+          "Cloud resource pooling",
+          "Theory-of-mind AI",
+          "Supply Chain Management",
+          "Software as a Service"
+        ],
+        answer: 2,
+        reason: "The chapter explains that blockchain can improve transparency and traceability in supply chains by recording transactions and the movement of goods."
+      },
+      {
+        question: "How can blockchain help FarmLink trace food products?",
+        options: [
+          "By recording the origin and journey of food products from farm to table",
+          "By removing all records of product movement",
+          "By making product origins impossible to check",
+          "By replacing the supply chain with manual telephone calls only"
+        ],
+        answer: 0,
+        reason: "The chapter identifies food safety as a blockchain application and explains that blockchain can trace the origin and journey of food products from farm to table."
+      },
+      {
+        question: "Which benefit of blockchain is especially useful when participants need to identify the history of an item?",
+        options: [
+          "The deletion of previous transaction records",
+          "The removal of all participants from the network",
+          "The prevention of any record sharing",
+          "Transparency and traceability of recorded transactions"
+        ],
+        answer: 3,
+        reason: "The chapter explains that blockchain's transparent ledger and record of transactions can provide traceability of assets and the history of their movement."
+      },
+      {
+        question: "According to the chapter, improving supply-chain transparency can help reduce which of the following?",
+        options: [
+          "The existence of product records",
+          "Fraud, errors and inefficiencies",
+          "The ability to trace goods",
+          "The number of recorded transactions to zero"
+        ],
+        answer: 1,
+        reason: "The chapter states that blockchain-supported supply-chain management can reduce fraud, errors and inefficiencies through improved transparency and traceability."
+      },
+      {
+        question: "If a retailer questions the authenticity of a food product, what can the blockchain record help the participants examine?",
+        options: [
+          "Only the brand's advertising budget",
+          "Only the cloud provider's billing rate",
+          "The recorded journey and origin of the product",
+          "The private thoughts of each participant"
+        ],
+        answer: 2,
+        reason: "Blockchain-based traceability can help participants examine the origin and journey of food products recorded along the supply chain."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS14",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>CareRecord wants to improve the secure sharing and integrity of healthcare records. PropertyLedger is separately exploring a shared record of property ownership that authorised participants can inspect to trace the history of a property and reduce the risk of disputes. Both organisations are considering blockchain because they want reliable digital records that are difficult to alter without detection.</p>
+    `,
+    questions: [
+      {
+        question: "Which blockchain application is relevant to CareRecord's goal of securely storing and sharing healthcare records?",
+        options: [
+          "Healthcare Data Management",
+          "Measured service",
+          "Crowdfunding",
+          "Infrastructure as a Service"
+        ],
+        answer: 0,
+        reason: "The chapter identifies healthcare data management as a blockchain application for securing the storage and sharing of healthcare records and supporting data integrity."
+      },
+      {
+        question: "How can blockchain support healthcare data management, as described in the chapter?",
+        options: [
+          "By guaranteeing that healthcare records must be publicly editable by anyone",
+          "By preventing all sharing of healthcare information in every situation",
+          "By removing the need to maintain any records",
+          "By supporting secure sharing and data integrity, with patients able to grant access to their data"
+        ],
+        answer: 3,
+        reason: "The chapter explains that blockchain can secure the storage and sharing of healthcare records, with patients able to grant access securely and support interoperability and data integrity."
+      },
+      {
+        question: "Which blockchain application is relevant to PropertyLedger?",
+        options: [
+          "Robo-advisory services only",
+          "Real Estate",
+          "Communication as a Service",
+          "Deep Learning hardware management"
+        ],
+        answer: 1,
+        reason: "The chapter describes real estate as a blockchain application because transparent and unalterable property-ownership records can help reduce fraud and disputes."
+      },
+      {
+        question: "Which objective can blockchain-based property records support?",
+        options: [
+          "Making property ownership records impossible to trace",
+          "Replacing ownership information with guesses",
+          "Providing transparent and unalterable records of property ownership",
+          "Preventing authorised participants from examining recorded history"
+        ],
+        answer: 2,
+        reason: "The chapter states that blockchain can simplify and secure real estate transactions by providing transparent and unalterable records of property ownership."
+      },
+      {
+        question: "What shared characteristic makes blockchain relevant to both organisations?",
+        options: [
+          "It can support reliable digital records that are difficult to alter once recorded",
+          "It requires every record to be maintained only on paper",
+          "It eliminates all need for access controls in every application",
+          "It ensures every organisation uses the same cloud deployment model"
+        ],
+        answer: 0,
+        reason: "The chapter explains that blockchain records are cryptographically linked and distributed, making recorded information extremely difficult to change or remove."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS15",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>PayLink is exploring blockchain-based payments for merchants. The merchants want to reduce payment-processing costs, receive quicker confirmation of valid transactions and improve the security and traceability of payments. A local election team is also considering a blockchain-based voting process to help ensure that only eligible voters vote and that votes are not tampered with.</p>
+    `,
+    questions: [
+      {
+        question: "How may blockchain-based payments help merchants with payment-processing fees?",
+        options: [
+          "They always require additional intermediaries for every transfer",
+          "They can reduce or eliminate fees by streamlining the transfer process",
+          "They prevent merchants from receiving payments",
+          "They require all transactions to be performed with physical cash"
+        ],
+        answer: 1,
+        reason: "The chapter states that blockchain payments may reduce or eliminate fees by streamlining the transfer process."
+      },
+      {
+        question: "How can blockchain payments help reduce the risk associated with insufficient funds?",
+        options: [
+          "By relying only on handwritten cheques",
+          "By preventing transaction validation",
+          "By removing the record of the payment",
+          "By providing assurance of a valid transaction within seconds or minutes"
+        ],
+        answer: 3,
+        reason: "The chapter explains that blockchain-based payments can provide merchants with assurance of a valid transaction within seconds or minutes, reducing the risk and inconvenience associated with insufficient funds."
+      },
+      {
+        question: "Which feature can improve confidence in blockchain-based payments?",
+        options: [
+          "Improved payment security and traceability",
+          "The complete absence of transaction records",
+          "The removal of all transaction checks",
+          "The use of non-verifiable records only"
+        ],
+        answer: 0,
+        reason: "The chapter lists improved payment security as a benefit of blockchain-based payments and describes blockchain records as transparent and traceable."
+      },
+      {
+        question: "What is one objective of the proposed blockchain voting process?",
+        options: [
+          "Allowing an eligible voter to cast unlimited votes",
+          "Making votes editable by any unauthorised person",
+          "Helping ensure that eligible voters vote and votes cannot be tampered with",
+          "Removing the need to establish voter eligibility"
+        ],
+        answer: 2,
+        reason: "The chapter's blockchain voting illustration explains that identity information can be held on blocks to help ensure that eligible voters can vote, nobody votes twice and votes cannot be tampered with."
+      },
+      {
+        question: "Which general benefit of blockchain supports both payment records and voting records?",
+        options: [
+          "It guarantees that no computer network is ever needed",
+          "It can provide records that are transparent and difficult to alter",
+          "It requires a single central party to rewrite each entry",
+          "It prevents participants from verifying recorded information"
+        ],
+        answer: 1,
+        reason: "The chapter describes blockchain as a transparent ledger in which recorded information is extremely difficult to change or remove."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS16",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>Northstar Ltd. experiences seasonal increases in demand for its business applications. Rather than buying servers and software for the highest expected demand, management wants to obtain computing resources when required and pay for actual usage. The company also hopes to reduce technology infrastructure spending and allow employees in different locations to access business applications.</p>
+    `,
+    questions: [
+      {
+        question: "Which cloud computing advantage helps Northstar avoid purchasing all computing infrastructure in advance?",
+        options: [
+          "Mandatory ownership of every physical server",
+          "The removal of all Internet access",
+          "The need to maintain separate hardware for every user",
+          "Reduced spending on technology infrastructure through a pay-as-you-go approach"
+        ],
+        answer: 3,
+        reason: "The chapter explains that cloud computing can reduce spending on technology infrastructure because resources can be accessed with minimal upfront spending and paid for based on demand."
+      },
+      {
+        question: "How can cloud computing help Northstar manage seasonal demand?",
+        options: [
+          "By preventing the company from changing resource levels",
+          "By allowing resources to scale up or down according to demand",
+          "By requiring the company to buy capacity for peak demand permanently",
+          "By storing applications only on individual employee devices"
+        ],
+        answer: 1,
+        reason: "The chapter identifies wide elasticity and improved flexibility as cloud characteristics and advantages that allow resources to be scaled to fit changing needs."
+      },
+      {
+        question: "Which advantage arises when computing resources and services are shared among multiple customers?",
+        options: [
+          "Economies of scale and more efficient resource utilisation",
+          "The guarantee that no resource will ever be shared",
+          "The removal of all operating costs in every situation",
+          "The elimination of the need to manage business processes"
+        ],
+        answer: 0,
+        reason: "The chapter explains that sharing computing resources, storage and services between multiple customers can improve utilisation and achieve economies of scale at reduced cost."
+      },
+      {
+        question: "How can cloud computing help employees working in different locations?",
+        options: [
+          "By requiring them to use a single office computer only",
+          "By preventing access outside the company's main office",
+          "By allowing access to information and applications over the Internet using smart computing devices",
+          "By making all applications available only through paper files"
+        ],
+        answer: 2,
+        reason: "The chapter states that cloud computing provides easy and pervasive access to information and applications anytime and anywhere through Internet-connected smart devices."
+      },
+      {
+        question: "Which business-process benefit is associated with cloud service providers managing the underlying infrastructure?",
+        options: [
+          "The company must maintain every physical server itself",
+          "The company can focus more on application development using fewer resources and less time",
+          "The company is prohibited from developing applications",
+          "The company must buy a separate data centre for each application"
+        ],
+        answer: 1,
+        reason: "The chapter notes that cloud service providers manage the underlying infrastructure, enabling organisations to focus on application development in less time and with fewer resources."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS17",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>CloudCare stores business data with a cloud provider. Management wants data to remain available if a storage device fails, and wants workloads to be distributed across several servers so that one server does not become overloaded. Employees also need to access applications from different locations using laptops and smartphones.</p>
+    `,
+    questions: [
+      {
+        question: "Which cloud computing advantage is most relevant to CloudCare's need to restore data after a storage failure?",
+        options: [
+          "Backup and Recovery",
+          "Crowdfunding",
+          "Distributed consensus only",
+          "Narrow AI"
+        ],
+        answer: 0,
+        reason: "The chapter identifies backup and recovery as an advantage of cloud computing and notes that data stored in the cloud can be easier to back up and restore."
+      },
+      {
+        question: "What is load balancing?",
+        options: [
+          "Deleting workloads from every server",
+          "Assigning all workloads to one overloaded server",
+          "Distributing workloads across multiple servers to prevent any one server from becoming overloaded",
+          "Making cloud applications available only on desktop computers"
+        ],
+        answer: 2,
+        reason: "The chapter defines load balancing as distributing workloads across multiple servers to prevent a single server from becoming overloaded and possibly breaking down."
+      },
+      {
+        question: "Why does load balancing matter for cloud-based applications?",
+        options: [
+          "It prevents users from accessing the application",
+          "It helps maintain application availability and reliability",
+          "It guarantees that no server will ever require maintenance",
+          "It removes the need for an Internet connection in every case"
+        ],
+        answer: 1,
+        reason: "The chapter explains that load balancing plays an important role in maintaining the availability of cloud-based applications and making them more reliable."
+      },
+      {
+        question: "Which cloud advantage supports employees who use laptops and smartphones from different locations?",
+        options: [
+          "Restricted access to a single physical terminal",
+          "Mandatory local installation of all infrastructure",
+          "The absence of network connectivity",
+          "Pervasive accessibility"
+        ],
+        answer: 3,
+        reason: "Pervasive accessibility means data and applications can be accessed anytime and anywhere using smart computing devices."
+      },
+      {
+        question: "If one hard disk fails but the data remains available through another storage resource, which benefit does this illustrate?",
+        options: [
+          "Cloud backup and recovery support",
+          "The black box problem",
+          "Blockchain token creation",
+          "The absence of resource pooling"
+        ],
+        answer: 0,
+        reason: "The chapter explains that cloud backup and recovery can help keep data available if one hard disk fails, with data continuing to be available through another one."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS18",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>Meridian Finance plans to move an existing application to a cloud provider. During planning, the team discovers that the application may not behave in the cloud exactly as it did in the company's own data centre. The provider also uses proprietary APIs and data formats, and the finance team has identified possible extra network charges and concerns about the confidentiality of remotely stored data.</p>
+    `,
+    questions: [
+      {
+        question: "Why should Meridian test the application's performance in the cloud before obtaining the service?",
+        options: [
+          "An application that works internally is guaranteed to perform identically in the cloud",
+          "Cloud applications cannot use computing resources",
+          "The application's behaviour and resource allocation may differ in the cloud",
+          "Testing is prohibited before cloud adoption"
+        ],
+        answer: 2,
+        reason: "The chapter explains that an application performing well in an internal data centre may not perform the same way in the cloud, so its cloud performance and resource allocation should be tested."
+      },
+      {
+        question: "Which cloud computing issue arises when applications or data formats from two cloud vendors do not work together?",
+        options: [
+          "Interoperability",
+          "Pervasive accessibility",
+          "Predictive Analytics",
+          "Distributed consensus"
+        ],
+        answer: 0,
+        reason: "The chapter identifies interoperability as an issue when applications need to share data or resources but do not cooperate across different cloud vendors or formats."
+      },
+      {
+        question: "What is an example of a hidden cost of cloud computing mentioned in the chapter?",
+        options: [
+          "The ability to access data from multiple devices",
+          "Higher network charges for storage and database applications",
+          "Automatic resource measurement only",
+          "The use of a web browser to access applications"
+        ],
+        answer: 1,
+        reason: "The chapter lists higher network charges for storage and database applications and latency for users far from the provider as examples of hidden costs."
+      },
+      {
+        question: "Why is confidentiality a concern when information is stored in a cloud environment?",
+        options: [
+          "Cloud data is always stored only on the customer's local computer",
+          "Cloud systems never share resources",
+          "Remote data cannot be accessed by any service provider",
+          "Information is stored remotely and may be accessible to the service provider, so protection is needed"
+        ],
+        answer: 3,
+        reason: "The chapter states that cloud data is stored at a remote location that may be accessed by the service provider, making confidentiality an important issue."
+      },
+      {
+        question: "Which measure does the chapter mention for preserving data confidentiality in cloud systems?",
+        options: [
+          "Publishing all customer records openly",
+          "Removing all access controls",
+          "Encrypting data",
+          "Disabling all backups"
+        ],
+        answer: 2,
+        reason: "The chapter states that data confidentiality in cloud systems can be preserved by encrypting data."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS19",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>SecureFinTech holds personal and sensitive information about its customers. Management wants to protect the data throughout its lifecycle, classify information according to sensitivity, retain useful audit trails, and establish clear procedures for responding to cyber incidents. The team also needs to ensure that transactions do not suffer from loss of confidentiality, integrity or availability.</p>
+    `,
+    questions: [
+      {
+        question: "Which three security properties are referred to as the Security Triad or CIA Triad in the chapter?",
+        options: [
+          "Confidentiality, Integrity and Availability",
+          "Cloud, Internet and Analytics",
+          "Control, Inspection and Automation",
+          "Classification, Identification and Accounting"
+        ],
+        answer: 0,
+        reason: "The chapter identifies Confidentiality, Integrity and Availability as the Security Triad or CIA Triad."
+      },
+      {
+        question: "Under the chapter's discussion of Customer Data Protection (CDP), what responsibility do FinTech entities have regarding customer data?",
+        options: [
+          "Protect data only when it is stored on their own computers, never when it is in transit",
+          "Ensure data protection across its lifecycle, including preservation, confidentiality, integrity and availability",
+          "Allow all third parties to use sensitive data without safeguards",
+          "Keep no systems or processes for protecting data"
+        ],
+        answer: 1,
+        reason: "The chapter says FinTech entities act as owners or custodians of customer data and have responsibility for its preservation, confidentiality, integrity and availability, whether stored or in transit."
+      },
+      {
+        question: "Why should SecureFinTech classify customer information according to sensitivity?",
+        options: [
+          "To ensure that every type of data receives no protection",
+          "To make all information public by default",
+          "To determine appropriate management and protection based on the information's sensitivity and risk",
+          "To avoid considering how data is stored, transmitted, processed or accessed"
+        ],
+        answer: 2,
+        reason: "The chapter states that Customer Organization Data should be classified based on information classification or sensitivity criteria, taking into account how data is stored, transmitted, processed, accessed and used and the level of risk."
+      },
+      {
+        question: "What is the purpose of an Audit Log Management System (ALMS), as described in the chapter?",
+        options: [
+          "To delete all event records immediately",
+          "To prevent devices from generating any audit trail",
+          "To replace incident response procedures entirely",
+          "To validate logging settings and ensure useful audit trails are captured"
+        ],
+        answer: 3,
+        reason: "The chapter says FinTech entities should implement ALMS to validate settings for capturing appropriate logs or audit trails, including useful details such as dates, timestamps and source and destination addresses."
+      },
+      {
+        question: "What should an Incident Response and Management Framework (IRMF) provide?",
+        options: [
+          "Clear procedures for responding to cyber incidents and a mechanism for recovery from cyber threats",
+          "A guarantee that cyber incidents can never occur",
+          "Only a list of customer product preferences",
+          "A replacement for protecting customer information"
+        ],
+        answer: 0,
+        reason: "The chapter states that FinTech entities need clear procedures for responding to cyber incidents and a mechanism for dynamically recovering from cyber threats."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS20",
+    difficulty: "Easy",
+    chapter: "Chapter12",
+    caseText: `
+      <p>FinScope analyses data from digital transactions, mobile applications and customer interactions. The organisation creates customer profiles to tailor services, monitors unusual transactions to help detect fraud, combines information from different sources to improve risk assessments, and uses customer financial behaviour to identify suitable products and provide consistent assistance.</p>
+    `,
+    questions: [
+      {
+        question: "How can Big Data support customer orientation in FinTech?",
+        options: [
+          "By preventing customer segmentation",
+          "By developing user profiles and customer segmentation strategies to tailor services",
+          "By requiring every customer to receive the same service",
+          "By excluding information from different sources"
+        ],
+        answer: 1,
+        reason: "The chapter explains that Big Data can support customer orientation by developing thorough user profiles and precise customer segmentation strategies so services can be tailored to specific demands."
+      },
+      {
+        question: "How can Big Data help enhance security in FinTech?",
+        options: [
+          "By ignoring unusual transactions",
+          "By removing all customer notifications about security",
+          "By helping develop fraud detection systems that identify unusual transactions",
+          "By preventing the use of digital applications"
+        ],
+        answer: 2,
+        reason: "The chapter states that Big Data may help FinTech develop accurate fraud detection systems by detecting unusual transactions and may also be used to keep consumers informed about security concerns."
+      },
+      {
+        question: "How can combining data from a variety of sources improve risk assessments?",
+        options: [
+          "It can give FinTech businesses a more complete basis for assessing risk and managing cash flow",
+          "It prevents financial organisations from evaluating risk",
+          "It requires risk assessments to be based only on guesses",
+          "It ensures that all customers have identical financial circumstances"
+        ],
+        answer: 0,
+        reason: "The chapter explains that integrating data from a variety of sources can improve risk assessments, support financial certainty and help FinTech businesses manage cash flow and offer competitive rates."
+      },
+      {
+        question: "How can Big Data support customer service in FinTech?",
+        options: [
+          "By preventing businesses from tracking customer financial behaviour",
+          "By removing all assistance after a transaction",
+          "By ensuring that recommendations do not consider spending habits",
+          "By helping identify potential problems and suggest products or services based on spending habits"
+        ],
+        answer: 3,
+        reason: "The chapter states that Big Data can help create a digital trail of a customer's financial behaviour, identify potential problems and suggest suitable products or services based on spending habits."
+      },
+      {
+        question: "Which statement best summarises the role of Big Data in these FinTech activities?",
+        options: [
+          "It is useful only for storing paper documents",
+          "It can support customer-oriented services, security, risk assessment and customer support",
+          "It prevents the use of real-time data",
+          "It eliminates the need to analyse information"
+        ],
+        answer: 1,
+        reason: "The chapter describes four ways Big Data can benefit FinTech: customer orientation, enhanced security, improved risk assessments and better customer service."
+      }
+    ]
+  },
+  // MEDIUM CASE SCENARIOS
+  {
+    case_id: "ecosys_ch12_CS21",
+    difficulty: "Medium",
+    chapter: "Chapter12",
+    caseText: `
+      <p>MarketBridge offers several digital financial services. One facility connects people seeking loans with lenders. Another lets a business raise debt or equity from multiple investors through an internet-based platform. A separate network allows its members to keep identical copies of a shared ledger and record transactions without relying on a middleman. MarketBridge also offers automated investment guidance after collecting information about a user's financial situation and future goals.</p>
+    `,
+    questions: [
+      {
+        question: "Which service is specifically designed to connect lenders and borrowers and speed up access to credit?",
+        options: [
+          "Peer-to-Peer (P2P) lending",
+          "Crowdfunding",
+          "Data as a Service (DaaS)",
+          "Robotic Process Automation (RPA)"
+        ],
+        answer: 0,
+        reason: "The chapter describes Peer-to-Peer (P2P) lending platforms as connecting lenders and borrowers and using technology to speed up loan acceptance and access to credit."
+      },
+      {
+        question: "Which description best distinguishes the crowdfunding facility from the P2P lending facility?",
+        options: [
+          "It only stores a copy of an existing ledger",
+          "It provides computing resources such as storage and networks",
+          "It raises debt or equity from multiple investors through an internet-based platform",
+          "It automatically invests for a user after an online survey"
+        ],
+        answer: 2,
+        reason: "The chapter defines crowdfunding as a way of raising debt or equity from multiple investors through an internet-based platform."
+      },
+      {
+        question: "Which characteristic of Distributed Ledger Technology (DLT) is illustrated by the network maintaining identical copies of a shared ledger?",
+        options: [
+          "All records must be updated by one central authority",
+          "Multiple members maintain their own identical copy of a shared ledger",
+          "Only one user can view the records",
+          "The ledger is designed solely for handwritten entries"
+        ],
+        answer: 1,
+        reason: "The chapter explains that distributed ledger technologies enable multiple members to maintain their own identical copy of a shared ledger and verify, execute and record transactions without relying on a middleman."
+      },
+      {
+        question: "Which service is described when MarketBridge uses an online survey about financial circumstances and goals to provide algorithm-driven investment services?",
+        options: [
+          "A payment gateway",
+          "A community cloud",
+          "A crowdfunding platform",
+          "A robo-advisor"
+        ],
+        answer: 3,
+        reason: "A robo-advisor is a digital platform providing automated, algorithm-driven financial planning and investment services, typically using information gathered about the user's financial situation and goals."
+      },
+      {
+        question: "The chapter says FinTech companies may broadly be classified as Business-to-Consumer (B2C) or Business-to-Business (B2B) depending on which factor?",
+        options: [
+          "Who their customer is",
+          "The number of blocks in a blockchain",
+          "Whether they use only private cloud infrastructure",
+          "The amount of paper stored in their offices"
+        ],
+        answer: 0,
+        reason: "The chapter explains that FinTech products and services can be split into Business-to-Consumer (B2C) and Business-to-Business (B2B) categories depending on who the customer is."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS22",
+    difficulty: "Medium",
+    chapter: "Chapter12",
+    caseText: `
+      <p>FinSight is evaluating several AI applications. One system performs a dedicated task and cannot operate beyond its defined limits. Another is intended to perform intellectual tasks with efficiency comparable to a human, although such a system is not currently available as described in the chapter. The research team also studies a hypothetical level of intelligence that would surpass human intelligence, while distinguishing systems that react only to present inputs from systems that use past observations.</p>
+    `,
+    questions: [
+      {
+        question: "Which classification of AI is intended to perform a dedicated task and cannot perform beyond its field or limitations?",
+        options: [
+          "General AI",
+          "Super AI",
+          "Weak/Narrow AI",
+          "Self-aware AI"
+        ],
+        answer: 2,
+        reason: "The chapter describes Weak/Narrow AI as AI designed to perform a dedicated task and unable to operate beyond its field or limitations."
+      },
+      {
+        question: "Which capability-based category describes a system intended to perform any intellectual task with efficiency like a human?",
+        options: [
+          "Reactive AI",
+          "General AI",
+          "Limited Memory AI",
+          "Weak/Narrow AI"
+        ],
+        answer: 1,
+        reason: "General AI is described as a type of intelligence that could perform any intellectual task efficiently like a human; the chapter notes that no such system currently exists as described."
+      },
+      {
+        question: "The hypothetical system that surpasses human intelligence and can perform tasks better than humans is classified as which type based on capabilities?",
+        options: [
+          "Reactive AI",
+          "Limited Memory AI",
+          "Weak/Narrow AI",
+          "Super AI"
+        ],
+        answer: 3,
+        reason: "The chapter describes Super AI as a hypothetical level at which machines can surpass human intelligence and perform tasks better than humans."
+      },
+      {
+        question: "A system produces an output based on the current input and does not use past experiences to make decisions. Which functional type of AI best fits this description?",
+        options: [
+          "Reactive AI",
+          "Limited Memory AI",
+          "Theory-of-mind AI",
+          "Self-aware AI"
+        ],
+        answer: 0,
+        reason: "Reactive AI optimises outputs based on inputs and does not form memories or use past experiences to make decisions."
+      },
+      {
+        question: "Which statement correctly describes Deep Learning (DL) in relation to Machine Learning (ML)?",
+        options: [
+          "DL is a cloud deployment model unrelated to AI",
+          "DL is the same as a public blockchain",
+          "DL is a subset of ML that uses artificial neural networks to reach conclusions without human intervention",
+          "DL means that all data must be manually entered by an accountant"
+        ],
+        answer: 2,
+        reason: "The chapter describes Deep Learning as a subset of Machine Learning that uses artificial neural networks to reach accurate conclusions without human intervention."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS23",
+    difficulty: "Medium",
+    chapter: "Chapter12",
+    caseText: `
+      <p>LedgerPoint is implementing a blockchain-based transaction system. When a user proposes a transaction, the request is sent to the network for validation. Valid transactions are collected into a block, which is linked cryptographically to earlier blocks. Network nodes maintain copies of the ledger, and participants need a way to agree on which transaction blocks are valid and to trace the history of recorded assets.</p>
+    `,
+    questions: [
+      {
+        question: "Which sequence most closely matches the chapter's description of how a blockchain transaction is processed?",
+        options: [
+          "Transaction is confirmed, deleted, and then sent to the network",
+          "A user requests a transaction, the network receives and validates it, it is added to a block, the block is chained to older blocks, and the transaction is confirmed",
+          "A block is deleted before the transaction is requested",
+          "A central intermediary rewrites all nodes before validation begins"
+        ],
+        answer: 1,
+        reason: "The chapter's working sequence is: transaction request, transmission to the network, validation, addition to the current block, chaining to older blocks, and confirmation."
+      },
+      {
+        question: "In the blockchain structure, what does a block represent?",
+        options: [
+          "A list of transactions recorded into a ledger over a given period",
+          "A cloud provider's billing statement only",
+          "A system for classifying AI by capabilities",
+          "A physical server that controls every participant"
+        ],
+        answer: 0,
+        reason: "The chapter describes a block as a list of transactions recorded into a ledger over a given period."
+      },
+      {
+        question: "What is the role of the hash in the chain?",
+        options: [
+          "It removes the need for a transaction history",
+          "It converts the blockchain into a centralised spreadsheet",
+          "It authorises every person to alter prior records",
+          "It links one block to another and acts as a digital fingerprint of data"
+        ],
+        answer: 3,
+        reason: "The chapter explains that a hash links one block to another and acts as a digital fingerprint of data, locking blocks in order and time."
+      },
+      {
+        question: "What enables a blockchain network to agree on which blocks of transactions are valid?",
+        options: [
+          "On-demand self-service",
+          "Customer segmentation",
+          "Distributed consensus",
+          "Measured service"
+        ],
+        answer: 2,
+        reason: "Distributed consensus enables the network to reach agreement about which blocks of transactions are valid and which are not."
+      },
+      {
+        question: "Which blockchain feature allows participants to trace an asset's history through recorded transactions?",
+        options: [
+          "Limited Memory AI",
+          "Transparency",
+          "Resource pooling",
+          "Wide elasticity"
+        ],
+        answer: 1,
+        reason: "The chapter explains that the distributed ledger contains the history of transactions, supporting traceability of assets and their past and current states."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS24",
+    difficulty: "Medium",
+    chapter: "Chapter12",
+    caseText: `
+      <p>CloudServe offers specialised cloud services to financial institutions. Its identity service provides authentication infrastructure and single sign-on. A separate offering supplies security services on a pay-per-use basis. Another service provides virtual storage for off-site backups and synchronisation, while its network offering supplies additional data communication capacity during periods of heavy traffic. The company also offers software testing capabilities for a usage-based fee.</p>
+    `,
+    questions: [
+      {
+        question: "Which cloud service model provides access to authentication infrastructure, including services such as single sign-on and identity management?",
+        options: [
+          "Testing as a Service (TaaS)",
+          "Identity as a Service (IDaaS)",
+          "Storage as a Service (STaaS)",
+          "Network as a Service (NaaS)"
+        ],
+        answer: 1,
+        reason: "The chapter describes Identity as a Service (IDaaS) as access to authentication infrastructure provided by a third-party service provider, often including directory, authentication, monitoring, single sign-on and identity-management services."
+      },
+      {
+        question: "Which model offers access to security services from a provider on a pay-per-use basis?",
+        options: [
+          "Security as a Service (SECaaS)",
+          "Data as a Service (DaaS)",
+          "Backend as a Service (BaaS)",
+          "Desktop as a Service (DTaaS)"
+        ],
+        answer: 0,
+        reason: "The chapter defines Security as a Service (SECaaS) as the ability to access a security service provided by a service provider on a pay-per-use basis."
+      },
+      {
+        question: "Which model is most directly relevant to virtual storage, data synchronisation across devices and off-site backups?",
+        options: [
+          "Communication as a Service (CaaS)",
+          "API as a Service (APIaaS)",
+          "Database as a Service (DBaaS)",
+          "Storage as a Service (STaaS)"
+        ],
+        answer: 3,
+        reason: "The chapter explains that Storage as a Service (STaaS) provides subscription-based storage, data synchronisation, off-site backups and support for disaster recovery."
+      },
+      {
+        question: "Which model provides virtual network services and can accommodate bursts in data communication capacity?",
+        options: [
+          "Email as a Service (EaaS)",
+          "Identity as a Service (IDaaS)",
+          "Network as a Service (NaaS)",
+          "Testing as a Service (TaaS)"
+        ],
+        answer: 2,
+        reason: "The chapter states that Network as a Service (NaaS) provides virtual network services and needed data communication capacity for bursts in traffic, such as during video conferencing or large downloads."
+      },
+      {
+        question: "Which cloud service model provides software testing capabilities such as generating test data and test cases, executing test cases and evaluating results on a pay-per-use basis?",
+        options: [
+          "Testing as a Service (TaaS)",
+          "Data as a Service (DaaS)",
+          "Software as a Service (SaaS)",
+          "Communication as a Service (CaaS)"
+        ],
+        answer: 0,
+        reason: "The chapter describes Testing as a Service (TaaS) as providing software testing capabilities, including test-data and test-case generation, execution and test-result evaluation, on a pay-per-use basis."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS25",
+    difficulty: "Medium",
+    chapter: "Chapter12",
+    caseText: `
+      <p>FinMetric gathers information from internal transaction systems, mobile applications and online customer interactions. The organisation wants to combine structured and unstructured information to understand customers, update its analysis as information changes and ensure that the information used for decision-making is accurate. Management is also assessing whether it has the specialists and software needed to implement its analytics plans.</p>
+    `,
+    questions: [
+      {
+        question: "According to the chapter, which description best matches structured data?",
+        options: [
+          "Information that can never be maintained within a company",
+          "Information maintained within a company to provide crucial decision-making insights",
+          "Information that is necessarily false or inaccurate",
+          "Information that consists only of audio and video files"
+        ],
+        answer: 1,
+        reason: "The chapter describes structured data as information maintained within a company to provide crucial decision-making insights."
+      },
+      {
+        question: "Which description best matches unstructured data in the chapter?",
+        options: [
+          "Information that is always held in a single fixed table",
+          "Information that is never generated outside a company",
+          "Information that consists only of manually approved accounting entries",
+          "Information accumulating from a variety of sources in increasing numbers"
+        ],
+        answer: 3,
+        reason: "The chapter explains that unstructured data accumulates from a variety of sources in increasing numbers, providing considerable analytical potential."
+      },
+      {
+        question: "FinMetric's data changes regularly and needs continual updating. Which of the Big Data 'Vs' does this primarily illustrate?",
+        options: [
+          "Velocity",
+          "Volume",
+          "Variety",
+          "Veracity"
+        ],
+        answer: 0,
+        reason: "The chapter defines Velocity as data that is likely to change regularly and needs to be continually updated."
+      },
+      {
+        question: "Management wants to ensure the data used in analysis is accurate and truthful. Which Big Data 'V' is most relevant?",
+        options: [
+          "Volume",
+          "Variety",
+          "Veracity",
+          "Velocity"
+        ],
+        answer: 2,
+        reason: "Veracity refers to truthfulness or accuracy of data; the chapter notes that failure to gather accurate data makes analysis meaningless."
+      },
+      {
+        question: "Which obstacle to analytics adoption would directly arise if FinMetric lacked data scientists and robust, scalable infrastructure?",
+        options: [
+          "Broad network access",
+          "Lack of needed resources",
+          "Distributed consensus",
+          "The existence of structured data"
+        ],
+        answer: 1,
+        reason: "The chapter identifies lack of needed resources, including specialists such as data scientists and suitable infrastructure, as an obstacle to analytics adoption."
+      }
+    ]
+  },
+
+  // HARD CASE SCENARIOS — complexity, not length
+  {
+    case_id: "ecosys_ch12_CS26",
+    difficulty: "Hard",
+    chapter: "Chapter12",
+    caseText: `
+      <p>TrustPay collects sensitive customer information and shares necessary data with service providers supporting its applications. After a security incident, management reviews protection across storage and transmission, transaction confidentiality, integrity and availability, audit trails, patch status, and response procedures. The compliance team also reviews the chapter's discussion of Sections 43A and 72A of the Information Technology Act, 2000.</p>
+    `,
+    questions: [
+      {
+        question: "Which requirement most completely reflects Customer Data Protection (CDP) as described in the chapter?",
+        options: [
+          "Protecting data only while it is stored inside TrustPay's own premises",
+          "Protecting only data that is entered manually, excluding data in transit",
+          "Allowing third-party vendors to decide whether customer data needs protection",
+          "Protecting preservation, confidentiality, integrity and availability of customer data throughout the data lifecycle, including when stored or in transit and when handled by third parties"
+        ],
+        answer: 3,
+        reason: "The chapter places responsibility for Customer Data Protection on FinTech entities as data owners or custodians and describes preservation, confidentiality, integrity and availability obligations regardless of whether data is stored or in transit within the entity, with customers or with third-party vendors."
+      },
+      {
+        question: "A transaction is deemed unsuccessful under the chapter's Safe Transaction Principles if it suffers a loss of which set of properties?",
+        options: [
+          "Confidentiality, Integrity and Availability",
+          "Volume, Variety and Velocity",
+          "Processing, Storage and Bandwidth",
+          "Preservation, Scalability and Elasticity"
+        ],
+        answer: 0,
+        reason: "The chapter states that a transaction is successful if it does not suffer loss of Confidentiality, Integrity and Availability, collectively referred to as the Security Triad or CIA Triad."
+      },
+      {
+        question: "Under the chapter's description of Section 43A of the Information Technology Act, 2000, which situation is relevant to compensation by a body corporate?",
+        options: [
+          "Any cloud service is used for an ordinary transaction, regardless of loss or negligence",
+          "A body corporate is negligent in implementing reasonable security practices and procedures for sensitive personal data, resulting in wrongful loss to a person",
+          "A customer changes a password voluntarily without any loss",
+          "An organisation uses a public cloud with no security incident"
+        ],
+        answer: 1,
+        reason: "The chapter states that Section 43A provides for compensation by a body corporate in case of negligence in implementing reasonable security practices and procedures in handling sensitive personal data or information, resulting in wrongful loss to a person."
+      },
+      {
+        question: "Which situation corresponds to the chapter's description of Section 72A of the Information Technology Act, 2000?",
+        options: [
+          "A system automatically measures resource utilisation for cloud billing",
+          "An authorised employee updates a patch using an approved process",
+          "Information is disclosed knowingly and intentionally without the person's consent and in breach of a lawful contract",
+          "A user performs a permitted read operation on a cloud database"
+        ],
+        answer: 2,
+        reason: "The chapter describes Section 72A in relation to knowingly and intentionally disclosing information without the concerned person's consent and in breach of a lawful contract, and notes that this is punishable as described in the source."
+      },
+      {
+        question: "TrustPay needs to periodically validate log settings and confirm that audit trails contain dates, timestamps, source addresses and destination addresses. Which framework is most directly relevant?",
+        options: [
+          "Audit Log Management System (ALMS)",
+          "Customer Orientation Strategy",
+          "Wide Elasticity Management",
+          "Robo-advisory Service Model"
+        ],
+        answer: 0,
+        reason: "The chapter says an Audit Log Management System (ALMS) should validate settings for capturing appropriate logs or audit trails, including dates, timestamps, source addresses and destination addresses."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS27",
+    difficulty: "Hard",
+    chapter: "Chapter12",
+    caseText: `
+      <p>FinAlliance is comparing blockchain designs for a network of financial organisations. In one design, the identities of participating users are known and access rights are restricted. In another, no central authority grants access and anyone can participate. A third design is controlled by a group of organisations and is limited to their members. The alliance is also considering a design that lets it choose which information remains restricted and which information can be made public.</p>
+    `,
+    questions: [
+      {
+        question: "Which statement most accurately describes a permissioned blockchain in the chapter?",
+        options: [
+          "It is necessarily open for everyone to participate at every level",
+          "It has no access restrictions and no defined access rights",
+          "It restricts the nodes that may access the network and their access rights, and users know the identities of other users on that blockchain",
+          "It is a cloud service model for application development"
+        ],
+        answer: 2,
+        reason: "The chapter explains that permissioned blockchains restrict which nodes may access the network and their potential access rights, and users know the identities of other users on the blockchain."
+      },
+      {
+        question: "Which description best fits a permissionless blockchain as contrasted with a permissioned blockchain?",
+        options: [
+          "Access requires authorisation from a single central administrator",
+          "There is no central authority that grants permission to access the network; the chapter notes that such networks may have slower transaction processing rates due to the number of nodes and extent of transactions",
+          "Participation is limited to a consortium's member organisations in every case",
+          "Only the organisation owning the network can read or write data"
+        ],
+        answer: 1,
+        reason: "The chapter states that permissionless blockchains have no central authority granting access and notes that large numbers of nodes and transactions may result in slower transaction processing rates."
+      },
+      {
+        question: "A blockchain is controlled by a group of organisations, and participation is limited to members of that group. Which type best matches this arrangement?",
+        options: [
+          "Public blockchain",
+          "Private cloud",
+          "Permissionless blockchain",
+          "Consortium blockchain"
+        ],
+        answer: 3,
+        reason: "The chapter describes consortium blockchains as controlled by a group of organisations, with participation limited to members of the consortium."
+      },
+      {
+        question: "Which blockchain type is most appropriate when an organisation wants to combine features of permissioned and permissionless blockchains and choose which data may be public?",
+        options: [
+          "Hybrid blockchain",
+          "Private blockchain only",
+          "Public blockchain only",
+          "A centralised network"
+        ],
+        answer: 0,
+        reason: "The chapter states that hybrid blockchain combines features of permissioned and permissionless blockchain and allows an organisation to choose who can access certain data and which data can be made public."
+      },
+      {
+        question: "In the chapter's description of blockchain structure, which component is the network of full nodes, each containing a complete record of the transactions recorded on that blockchain?",
+        options: [
+          "The block period",
+          "The hash alone",
+          "The network",
+          "The transaction request only"
+        ],
+        answer: 2,
+        reason: "The chapter describes the network as being composed of full nodes, with each node containing a complete record of all transactions recorded on that blockchain."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS28",
+    difficulty: "Hard",
+    chapter: "Chapter12",
+    caseText: `
+      <p>MedData Consortium includes several organisations with common compliance and security concerns. It wants to share cloud infrastructure rather than each building a private cloud, but it cannot rely entirely on a public cloud. Another business unit needs additional capacity for non-critical processing while keeping critical activities in a private environment. The management team is also reviewing the costs, control, security and service-level implications of the available deployment models.</p>
+    `,
+    questions: [
+      {
+        question: "Which deployment model best fits the consortium's shared requirements, common concerns and need to share responsibilities among several organisations?",
+        options: [
+          "Public cloud, with unrestricted public use as the defining requirement",
+          "Community cloud",
+          "A single-user private cloud with no collaboration",
+          "Software as a Service (SaaS)"
+        ],
+        answer: 1,
+        reason: "The chapter defines a community cloud as infrastructure for exclusive use by a community of organisations with shared concerns. It also identifies cost effectiveness, collaborative work and shared responsibilities as advantages."
+      },
+      {
+        question: "Which deployment approach best fits the business unit that keeps critical activities in a private cloud but uses a public cloud for additional resources and non-critical activities?",
+        options: [
+          "Public cloud only",
+          "Community cloud only",
+          "Private cloud only, with no external extension",
+          "Hybrid cloud"
+        ],
+        answer: 3,
+        reason: "The chapter describes hybrid cloud as combining at least one private and one public cloud environment; organisations may use public clouds for non-critical activities and private clouds for critical activities or additional capacity."
+      },
+      {
+        question: "Which limitation is specifically associated with a private cloud in the chapter?",
+        options: [
+          "The organisation may need to invest in buying, building and managing the cloud independently and may require skilled employees",
+          "The organisation has no control over the private cloud under any circumstances",
+          "The private cloud is necessarily open to the entire public",
+          "The private cloud can only be used for email services"
+        ],
+        answer: 0,
+        reason: "The chapter notes that private cloud users may have to invest in buying, building and managing the cloud independently and may need more skilled and expert employees. It also notes limitations such as less cost-effectiveness than public clouds and weak SLAs."
+      },
+      {
+        question: "Which concern does the chapter associate with the public cloud because resources are shared and controlled by a third-party provider?",
+        options: [
+          "It cannot scale resources at all",
+          "It cannot be accessed over the Internet",
+          "Security assurance, privacy and organisational autonomy may be concerns",
+          "It always requires every customer to maintain its own physical data centre"
+        ],
+        answer: 2,
+        reason: "The chapter notes concerns about security assurance and trust because public-cloud resources are shared, and states that privacy and organisational autonomy are not possible in the same way as with a private cloud."
+      },
+      {
+        question: "When reviewing a cloud service agreement, why should the organisation clearly document the services it requires?",
+        options: [
+          "Because every cloud provider must deliver services that are not mentioned in any agreement",
+          "Because the chapter notes that no standard SLA format exists and services not documented in the SLA may not cover future requirements",
+          "Because a Service Level Agreement cannot contain service details",
+          "Because cloud services are exempt from all legal and regulatory requirements"
+        ],
+        answer: 1,
+        reason: "The chapter's discussion of threshold policy says the SLA is the legal document between the customer and provider, there is no standard SLA format, and services not documented may not be covered when required in future."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS29",
+    difficulty: "Hard",
+    chapter: "Chapter12",
+    caseText: `
+      <p>National Finance has accumulated substantial transaction records, website histories, social-media interactions and financial-market information. The data arrives from multiple sources, changes continuously and includes both structured and unstructured information. The institution wants to use analytics for risk assessment and fraud detection, but its existing software is outdated, data-science expertise is limited, and management expects clear short-term returns before approving major investment.</p>
+    `,
+    questions: [
+      {
+        question: "The institution's large amount of data that is difficult to store and process with traditional databases most directly fits which term?",
+        options: [
+          "Big Data",
+          "Software as a Service",
+          "A permissioned blockchain",
+          "Reactive AI"
+        ],
+        answer: 0,
+        reason: "The chapter defines Big Data as a collection of data so large that storing and processing it with traditional databases and data-processing applications becomes difficult."
+      },
+      {
+        question: "Which set of characteristics corresponds to Gartner's three Vs of Big Data as set out in the chapter?",
+        options: [
+          "Verification, Visibility and Virtualisation",
+          "Volume, Variety and Velocity",
+          "Value, Validation and Vendor",
+          "Velocity, Visualisation and Verifiability"
+        ],
+        answer: 1,
+        reason: "The chapter gives Gartner's three Vs of Big Data as Volume, Variety and Velocity. It separately notes that some organisations add Veracity as another V."
+      },
+      {
+        question: "National Finance wants to ensure that data used for analytics is accurate, because inaccurate data would make analysis meaningless. Which concept is most directly relevant?",
+        options: [
+          "Volume",
+          "Wide elasticity",
+          "Veracity",
+          "Resource pooling"
+        ],
+        answer: 2,
+        reason: "The chapter describes Veracity as truthfulness and says that data accuracy matters because failure to gather accurate data makes analysis meaningless."
+      },
+      {
+        question: "Which adoption obstacle is most directly illustrated by the institution's outdated software, which may need redesign to become compatible with a new analytics solution?",
+        options: [
+          "The availability of more data sources",
+          "The use of customer segmentation",
+          "The high velocity of data only",
+          "Outdated software"
+        ],
+        answer: 3,
+        reason: "The chapter identifies outdated software as a reason financial organisations may hesitate to adopt analytics, as redesigning existing systems for compatibility can take significant time and resources."
+      },
+      {
+        question: "Which two additional obstacles to adopting analytics are directly reflected in the case?",
+        options: [
+          "Lack of needed resources and lack of short-term results",
+          "Broad network access and resource pooling",
+          "Transparency and distributed consensus",
+          "Customer orientation and improved customer service"
+        ],
+        answer: 0,
+        reason: "The chapter lists lack of needed resources, including data specialists and suitable infrastructure, and lack of short-term results as obstacles to analytics adoption."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch12_CS30",
+    difficulty: "Hard",
+    chapter: "Chapter12",
+    caseText: `
+      <p>CreditReach uses automated decision-making to assess applications for financial services. Some applicants have limited digital skills and connectivity, while others cannot easily understand complex product terms. Consumer advocates are concerned that automated decisions could produce biased outcomes for certain groups, that customers may not know how their personal data is being processed, and that service failures could prevent customers from completing transactions.</p>
+    `,
+    questions: [
+      {
+        question: "Which concern in the case most directly corresponds to 'algorithmic discrimination' in the chapter?",
+        options: [
+          "Cloud resources can scale up and down quickly",
+          "Automated decision-making may lead to biased decisions against certain groups",
+          "Users can access applications through a browser",
+          "A blockchain hash links one block to another"
+        ],
+        answer: 1,
+        reason: "The chapter identifies concerns that algorithmic discrimination could lead to biases in automated decision-making against certain groups."
+      },
+      {
+        question: "Which response best addresses the chapter's concern that some consumers may be digitally or financially excluded?",
+        options: [
+          "Require every customer to use complex digital services immediately",
+          "Remove support for users with limited digital experience",
+          "Improve digital skills, connectivity and financial inclusion across society",
+          "Prevent consumers from accessing formal financial services"
+        ],
+        answer: 2,
+        reason: "The chapter says society may need improved digital skills, connectivity and financial inclusion to address the risk that some consumers are left behind as FinTech becomes more common."
+      },
+      {
+        question: "Applicants do not understand which organisations access their personal data or how it is used. Which consumer challenge does this most directly illustrate?",
+        options: [
+          "Loss of consumer control over data",
+          "Wide elasticity",
+          "Improved financial inclusion",
+          "Distributed consensus"
+        ],
+        answer: 0,
+        reason: "The chapter identifies loss of consumer control over data as a challenge when consumers cannot readily understand which organisations have access to their data and what processing takes place."
+      },
+      {
+        question: "Some customers find it difficult to understand the complex financial products they are signing up for. Which challenge identified in the chapter is most directly involved?",
+        options: [
+          "Improved payment security",
+          "Resource pooling",
+          "Customer Orientation",
+          "Limited consumer understanding"
+        ],
+        answer: 3,
+        reason: "The chapter notes that as financial products become more technologically complex, consumers may find it harder to fully understand what they are signing up to; it identifies this as limited consumer understanding."
+      },
+      {
+        question: "If an underlying service malfunctions and customers cannot complete transactions, which consumer challenge from the chapter is illustrated?",
+        options: [
+          "More competition and choice",
+          "Issues when technology fails",
+          "Improved risk assessments",
+          "Better insights equal better products"
+        ],
+        answer: 1,
+        reason: "The chapter identifies issues when technology fails as a consumer challenge because malfunctions in the technology behind FinTech can prevent or disrupt transactions."
+      }
+    ]
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_01",
+    case_chapter: "chapter12",
+    question: "What does the term FinTech refer to?",
+    options: [
+      "The innovative use of technology in the design and delivery of financial services and products",
+      "The use of technology only for preparing paper-based accounts",
+      "The elimination of all digital financial transactions",
+      "The storage of documents without providing financial services"
+    ],
+    answer: 0,
+    reason: "FinTech is the abbreviation for Financial Technology. The chapter describes it as the innovative use of technology in the design and delivery of financial services and products."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_02",
+    case_chapter: "chapter12",
+    question: "Which FinTech service connects lenders and borrowers using technology to speed up loan acceptance?",
+    options: [
+      "Crowdfunding",
+      "Peer-to-Peer (P2P) lending",
+      "Software as a Service (SaaS)",
+      "Robotic Process Automation (RPA)"
+    ],
+    answer: 1,
+    reason: "Peer-to-Peer (P2P) lending platforms connect lenders and borrowers and use technology to increase efficiency and reduce the time involved in accessing credit."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_03",
+    case_chapter: "chapter12",
+    question: "Which of the following best describes crowdfunding as discussed in the chapter?",
+    options: [
+      "Automating repetitive accounting processes",
+      "Providing computing resources over a network",
+      "Raising debt or equity from multiple investors through an internet-based platform",
+      "Maintaining an identical ledger copy on every network node"
+    ],
+    answer: 2,
+    reason: "The chapter describes crowdfunding as a way of raising debt or equity from multiple investors through an internet-based platform."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_04",
+    case_chapter: "chapter12",
+    question: "What is the primary function of a robo-advisor?",
+    options: [
+      "To validate all transactions through a blockchain network",
+      "To provide only physical banking services",
+      "To maintain cloud infrastructure for an organisation",
+      "To provide automated, algorithm-driven financial planning and investment services"
+    ],
+    answer: 3,
+    reason: "A robo-advisor is a digital platform that provides automated, algorithm-driven financial planning and investment services with little to no human supervision."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_05",
+    case_chapter: "chapter12",
+    question: "Which digital payment interface is described in the chapter as allowing users to send funds directly to a desired bank account at any time?",
+    options: [
+      "Unified Payment Interface (UPI)",
+      "Platform as a Service (PaaS)",
+      "Deep Learning (DL)",
+      "Data as a Service (DaaS)"
+    ],
+    answer: 0,
+    reason: "The chapter explains that the Unified Payment Interface (UPI) allows users to make payments at any time by sending funds directly to the desired bank account."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_06",
+    case_chapter: "chapter12",
+    question: "Which type of Artificial Intelligence is designed to perform a dedicated task and cannot perform beyond its field or limitations?",
+    options: [
+      "General AI",
+      "Weak/Narrow AI",
+      "Super AI",
+      "Self-aware AI"
+    ],
+    answer: 1,
+    reason: "The chapter states that Weak/Narrow AI performs a dedicated task and cannot perform beyond its field or limitations."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_07",
+    case_chapter: "chapter12",
+    question: "Which statement best describes Machine Learning (ML) as presented in the chapter?",
+    options: [
+      "A cloud deployment model for shared infrastructure",
+      "A method for recording transactions only on paper",
+      "A branch of computing that creates algorithms whose performance improves as they are exposed to more data over time",
+      "A service that provides virtual storage only"
+    ],
+    answer: 2,
+    reason: "The chapter describes Machine Learning as creating algorithms whose performance improves as they are exposed to more data over time."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_08",
+    case_chapter: "chapter12",
+    question: "Deep Learning (DL) is described in the chapter as a subset of which technology?",
+    options: [
+      "Cloud Computing",
+      "Distributed Ledger Technology",
+      "Crowdfunding",
+      "Machine Learning"
+    ],
+    answer: 3,
+    reason: "The chapter describes Deep Learning as a subset of Machine Learning that uses artificial neural networks to reach conclusions without human intervention."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_09",
+    case_chapter: "chapter12",
+    question: "Which type of AI uses present inputs but does not form memories or use past experiences to make decisions?",
+    options: [
+      "Reactive AI",
+      "Limited Memory AI",
+      "Theory-of-mind AI",
+      "Self-aware AI"
+    ],
+    answer: 0,
+    reason: "Reactive AI optimises outputs based on a set of inputs and does not have the ability to form memories or use past experiences to make decisions."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_10",
+    case_chapter: "chapter12",
+    question: "Which description best matches blockchain in the chapter?",
+    options: [
+      "A centralised database that can be freely rewritten by one administrator",
+      "A shared, decentralised and open ledger of transactions",
+      "A service used only for sending emails",
+      "A system for measuring cloud resource consumption"
+    ],
+    answer: 1,
+    reason: "The chapter describes blockchain as a shared, decentralised and open ledger of transactions that can be shared among a network of independent parties."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_11",
+    case_chapter: "chapter12",
+    question: "What is the role of a hash in the structure of a blockchain?",
+    options: [
+      "It deletes previous blocks after every transaction",
+      "It provides unlimited access to every network participant",
+      "It links one block to another and acts as a digital fingerprint of data",
+      "It replaces the need to validate transactions"
+    ],
+    answer: 2,
+    reason: "The chapter explains that a hash links one block to another and acts as a digital fingerprint of data, locking blocks in order and time."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_12",
+    case_chapter: "chapter12",
+    question: "Which type of blockchain is open for anyone to participate at any level, as described in the chapter?",
+    options: [
+      "Private blockchain",
+      "Consortium blockchain",
+      "Permissioned blockchain only",
+      "Public blockchain"
+    ],
+    answer: 3,
+    reason: "The chapter describes public blockchains, such as Bitcoin, as distributed networks that are open for anyone to participate."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_13",
+    case_chapter: "chapter12",
+    question: "What does cloud computing generally mean in the chapter?",
+    options: [
+      "Using computing resources as a service through networks, typically the Internet",
+      "Maintaining all computing resources only on a local computer",
+      "Recording financial transactions in a paper ledger",
+      "Using artificial intelligence without any computing resources"
+    ],
+    answer: 0,
+    reason: "The chapter defines cloud computing as the use of computing resources as a service through networks, typically the Internet."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_14",
+    case_chapter: "chapter12",
+    question: "Which essential characteristic of cloud computing allows a client to provision computing resources automatically as needed without interacting with a human administrator?",
+    options: [
+      "Distributed consensus",
+      "On-demand self-service",
+      "Tamper-proof immutability",
+      "Customer segmentation"
+    ],
+    answer: 1,
+    reason: "On-demand self-service allows a client to provision computing resources automatically as needed without requiring human interaction with the service vendor."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_15",
+    case_chapter: "chapter12",
+    question: "Which cloud service model provides computing resources such as processing power, memory, storage and networks?",
+    options: [
+      "Software as a Service (SaaS)",
+      "Testing as a Service (TaaS)",
+      "Infrastructure as a Service (IaaS)",
+      "Identity as a Service (IDaaS)"
+    ],
+    answer: 2,
+    reason: "Infrastructure as a Service (IaaS) provides computing resources such as processing power, memory, storage and networks for cloud users to run applications on demand."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_16",
+    case_chapter: "chapter12",
+    question: "Which cloud service model provides a development platform with facilities such as programming languages, databases and testing tools?",
+    options: [
+      "Software as a Service (SaaS)",
+      "Storage as a Service (STaaS)",
+      "Network as a Service (NaaS)",
+      "Platform as a Service (PaaS)"
+    ],
+    answer: 3,
+    reason: "Platform as a Service (PaaS) provides a platform for developing and deploying applications, which may include programming languages, databases, testing tools and other development tools."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_17",
+    case_chapter: "chapter12",
+    question: "Which cloud deployment model combines at least one private cloud and at least one public cloud environment?",
+    options: [
+      "Hybrid cloud",
+      "Community cloud",
+      "Private cloud only",
+      "Software as a Service"
+    ],
+    answer: 0,
+    reason: "The chapter describes hybrid cloud as a combination of at least one private and at least one public cloud computing environment."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_18",
+    case_chapter: "chapter12",
+    question: "Which set represents the three Vs of Big Data given in the chapter?",
+    options: [
+      "Verification, Visibility and Virtualisation",
+      "Volume, Variety and Velocity",
+      "Value, Validation and Vendor",
+      "Velocity, Visualisation and Verifiability"
+    ],
+    answer: 1,
+    reason: "The chapter gives the three Vs of Big Data as Volume, Variety and Velocity. It also notes that some organisations add Veracity as another V."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_19",
+    case_chapter: "chapter12",
+    question: "In the context of Big Data, what does Variety refer to?",
+    options: [
+      "The need to continually update data that changes regularly",
+      "The amount of data that an organisation stores and processes",
+      "The wide variety of data that can come from various sources",
+      "The truthfulness or accuracy of the data"
+    ],
+    answer: 2,
+    reason: "The chapter explains that Variety refers to the wide variety of data that can come from various sources."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_20",
+    case_chapter: "chapter12",
+    question: "Which is identified in the chapter as an obstacle to adopting analytics in financial institutions?",
+    options: [
+      "The existence of data from different sources",
+      "The ability to tailor customer services",
+      "The use of transaction information for risk assessment",
+      "Outdated software and a lack of needed resources such as data specialists"
+    ],
+    answer: 3,
+    reason: "The chapter identifies outdated software and a lack of needed resources, including specialists such as data scientists and suitable infrastructure, as obstacles to analytics adoption."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_21",
+    case_chapter: "chapter12",
+    question: "Which benefit of FinTech enables services that previously took days to be completed within seconds?",
+    options: [
+      "Improved speed and efficiency",
+      "Limited consumer understanding",
+      "Loss of consumer control over data",
+      "Reduced digital accessibility"
+    ],
+    answer: 0,
+    reason: "The chapter explains that digitising and automating finance can enable services that previously took days to be processed to be completed within seconds, improving speed and efficiency."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_22",
+    case_chapter: "chapter12",
+    question: "Which of the following is identified as a potential benefit of FinTech for consumers?",
+    options: [
+      "Mandatory dependence on physical bank branches",
+      "The elimination of every financial risk",
+      "Improved financial inclusion through greater access to financial services",
+      "The removal of all digital financial services"
+    ],
+    answer: 2,
+    reason: "The chapter explains that FinTech can help include more people in the financial system by improving access to financial services, particularly through mobile financial services."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_23",
+    case_chapter: "chapter12",
+    question: "Which consumer challenge arises when different financial service providers may not offer the same level of regulatory protection or complaint-resolution rights?",
+    options: [
+      "Improved financial inclusion",
+      "Limited consumer understanding",
+      "Wide elasticity",
+      "Lack of regulatory protection"
+    ],
+    answer: 3,
+    reason: "The chapter identifies lack of regulatory protection as a consumer challenge because the regulatory protections and complaint-resolution rights available may differ between financial service providers."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_24",
+    case_chapter: "chapter12",
+    question: "Which combination of characteristics of cryptocurrencies is identified in the chapter as potentially assisting fraudsters?",
+    options: [
+      "Measured service, resource pooling and broad network access",
+      "Market volatility, complex concepts, decentralised control, anonymity and ease of cross-border payments",
+      "On-demand self-service, wide elasticity and backup recovery",
+      "Structured data, data verification and customer segmentation"
+    ],
+    answer: 1,
+    reason: "The chapter identifies market volatility, complex concepts, decentralised control, anonymity and ease of cross-border payments as characteristics of cryptocurrencies that can assist fraudsters."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_25",
+    case_chapter: "chapter12",
+    question: "Which technologies have contributed to the expansion of mobile payments, as discussed in the chapter?",
+    options: [
+      "Digital authentication, Near Field Communication (NFC) and mobile wallet technologies",
+      "Physical ledgers, paper registers and manual calculations only",
+      "Private clouds, community clouds and hybrid clouds only",
+      "Data mining, database normalisation and physical schema design only"
+    ],
+    answer: 0,
+    reason: "The chapter identifies digital authentication, Near Field Communication (NFC) and mobile wallet technologies as notable advancements that have fuelled the expansion of mobile payments."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_26",
+    case_chapter: "chapter12",
+    question: "What does the term InsurTech represent?",
+    options: [
+      "The integration of Insurance and Traditional Accounting",
+      "The use of Blockchain and Cloud Computing exclusively",
+      "The combination of Insurance and Technology to create, distribute and aggregate digital insurance products",
+      "The use of technology only for processing bank cheques"
+    ],
+    answer: 2,
+    reason: "The chapter explains that InsurTech combines 'Insurance' and 'Technology', with businesses concentrating on creating, distributing and aggregating digital insurance products."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_27",
+    case_chapter: "chapter12",
+    question: "How can FinTech solutions support retail or consumer banking?",
+    options: [
+      "By requiring all customers to use only physical banking services",
+      "By eliminating access to alternative financial products",
+      "By preventing improvements in the affordability of financial services",
+      "By providing alternative consumer banking products that improve the affordability and accessibility of financial services"
+    ],
+    answer: 3,
+    reason: "The chapter explains that consumer banking platforms and FinTech solutions can improve the affordability and accessibility of financial services and provide alternatives to address access difficulties."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_28",
+    case_chapter: "chapter12",
+    question: "Which description best matches the Bitcoin network as presented in the chapter?",
+    options: [
+      "A decentralised Peer-to-Peer (P2P) digital currency network designed for verification and processing of transactions",
+      "A centralised cloud platform used only for data backup",
+      "A digital service that requires a trusted third party to record every transaction",
+      "A private cloud deployment model for financial institutions"
+    ],
+    answer: 0,
+    reason: "The chapter describes Bitcoin as a decentralised Peer-to-Peer (P2P) digital currency network designed for the verification and processing of transactions."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_29",
+    case_chapter: "chapter12",
+    question: "Which statement concerning Bitcoin is correct according to the chapter?",
+    options: [
+      "Bitcoin is a fiat currency issued by a central government",
+      "Bitcoin is backed as legal tender by a physical commodity",
+      "Bitcoin is not a fiat currency issued by a central government or its authorised agents",
+      "Bitcoin can operate only through a single central server controlling the entire network"
+    ],
+    answer: 2,
+    reason: "The chapter states that Bitcoin is not a fiat currency issued by a central government or its authorised agents and is not backed as legal tender by any physical commodity."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_30",
+    case_chapter: "chapter12",
+    question: "Which statement best distinguishes a centralised network from a decentralised network?",
+    options: [
+      "Both necessarily depend on a single server that controls the entire network",
+      "A centralised network uses a single or central server, whereas a decentralised network has no single entity controlling the network",
+      "A decentralised network cannot distribute computing power",
+      "A centralised network never stores communications or user account information"
+    ],
+    answer: 1,
+    reason: "The chapter describes a centralised network as one in which users connect to a single or central server. A decentralised network has no single entity controlling the network and distributes computing power."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_31",
+    case_chapter: "chapter12",
+    question: "What is the genesis block in the context of blockchain?",
+    options: [
+      "The block containing only cloud billing information",
+      "The final block that must always be deleted after settlement",
+      "A block that prevents the recording of transactions",
+      "The first block created in the blockchain"
+    ],
+    answer: 3,
+    reason: "The chapter describes each blockchain node as containing a record of transactions from the first block created, called the genesis block, through to the most recent block."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_32",
+    case_chapter: "chapter12",
+    question: "According to the chapter's description of blockchain transaction security, which key is kept only by the signer and used to digitally sign a transaction?",
+    options: [
+      "The private encryption key",
+      "The public key",
+      "The cloud provider's billing key",
+      "The network bandwidth key"
+    ],
+    answer: 0,
+    reason: "The chapter explains that each transaction must be digitally signed using the participant's private encryption key, which is kept only by the signer. The corresponding public key can be used to validate the signature."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_33",
+    case_chapter: "chapter12",
+    question: "How does the distributed nature of a blockchain contribute to its resilience?",
+    options: [
+      "It stores the complete ledger only on one central computer",
+      "It requires every node to remain online for the system to function",
+      "Each node maintains a copy of the ledger, helping the system continue functioning when some nodes go offline",
+      "It deletes the transaction history whenever one node fails"
+    ],
+    answer: 2,
+    reason: "The chapter explains that each node contains a complete copy of the ledger. This distributed approach increases resilience because the system can continue to function if a node or a collection of nodes goes offline."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_34",
+    case_chapter: "chapter12",
+    question: "Which essential characteristic of cloud computing makes ICT capabilities available over standard networks and accessible through devices such as mobile phones and laptops?",
+    options: [
+      "Distributed consensus",
+      "Broad network access",
+      "Tamper-proof immutability",
+      "Customer segmentation"
+    ],
+    answer: 1,
+    reason: "Broad network access means cloud computing resources are delivered over standard networks and can be accessed through heterogeneous devices, including mobile phones, laptops and smartphones."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_35",
+    case_chapter: "chapter12",
+    question: "Which essential characteristic of cloud computing describes resources being dynamically assigned and reassigned to clients according to demand in a multitenant model?",
+    options: [
+      "Limited Memory AI",
+      "Distributed consensus",
+      "Veracity",
+      "Resource pooling"
+    ],
+    answer: 3,
+    reason: "Resource pooling allows ICT resource vendors to serve clients using a multitenant model, with physical and virtual resources dynamically assigned and reassigned according to client demand."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_36",
+    case_chapter: "chapter12",
+    question: "What does the Measured Service characteristic of cloud computing involve?",
+    options: [
+      "Measuring and monitoring resource utilisation to support reporting and billing",
+      "Allowing resources to be accessed only by physical inspection",
+      "Preventing users from monitoring their service consumption",
+      "Replacing resource usage measurements with fixed manual estimates in every case"
+    ],
+    answer: 0,
+    reason: "Measured service involves measuring and monitoring ICT resource utilisation. Resource consumption can be monitored and reported, providing visibility to both the vendor and the client."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_37",
+    case_chapter: "chapter12",
+    question: "Which cloud computing issue may make it difficult for an organisation to move its infrastructure from one provider to another because of proprietary APIs and different data formats?",
+    options: [
+      "Pervasive accessibility",
+      "Wide elasticity",
+      "Interoperability",
+      "Distributed consensus"
+    ],
+    answer: 2,
+    reason: "The chapter identifies interoperability as an issue where applications or data formats may not cooperate between cloud vendors. Proprietary APIs and differing import and export formats can make moving infrastructure difficult."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_38",
+    case_chapter: "chapter12",
+    question: "Which cloud service model provides an outsourced enterprise communication solution on a pay-as-you-go, as-needed basis?",
+    options: [
+      "Data as a Service (DaaS)",
+      "Communication as a Service (CaaS)",
+      "Identity as a Service (IDaaS)",
+      "Database as a Service (DBaaS)"
+    ],
+    answer: 1,
+    reason: "The chapter describes Communication as a Service (CaaS) as an outsourced enterprise communication solution that can be leased from a single vendor on a pay-as-you-go, as-needed basis."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_39",
+    case_chapter: "chapter12",
+    question: "Which statement best describes Data as a Service (DaaS) in the chapter?",
+    options: [
+      "It gives users complete ownership of all the provider's physical infrastructure",
+      "It provides only a platform for developing application code",
+      "It provides data solely through handwritten records",
+      "It provides data on demand to users, systems or applications, and users may be limited to read operations because the provider owns the data"
+    ],
+    answer: 3,
+    reason: "The chapter describes Data as a Service (DaaS) as providing data on demand to diverse users, systems or applications. It notes that because the data is owned by providers, users can only perform read operations on the data."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch12_40",
+    case_chapter: "chapter12",
+    question: "Which statement correctly distinguishes Chatbots from Robotic Process Automation (RPA) as discussed in the chapter?",
+    options: [
+      "Chatbots use AI for 24x7 interaction, while RPA enables bots to perform repetitive, labour-intensive tasks without human interaction",
+      "Chatbots are a cloud deployment model, while RPA is a blockchain consensus mechanism",
+      "Chatbots are used only to store data, while RPA prevents process automation",
+      "Chatbots require every interaction to be handled manually, while RPA is used only for digital signatures"
+    ],
+    answer: 0,
+    reason: "The chapter explains that Chatbots use AI to enable 24x7 interaction and can assist with transactions and information. RPA allows bots to perform repetitive, labour-intensive tasks without human interaction, reducing mistakes and freeing team members for more complex issues."
+  },
+  // ============================
+  // MEDIUM MCQs (41–50)
+  // ============================
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch12_41",
+    case_chapter: "chapter12",
+    question: "A finance department uses software bots to perform repetitive data-entry and reconciliation activities without continuous human interaction. Which technology is most directly associated with this activity?",
+    options: [
+      "Robotic Process Automation (RPA)",
+      "Distributed Ledger Technology (DLT)",
+      "Platform as a Service (PaaS)",
+      "Distributed consensus"
+    ],
+    answer: 0,
+    reason: "The chapter explains that Robotic Process Automation (RPA) can run unattended to automate large volumes of specific, structured and repetitive accounting processes, including data entry and reconciliation."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch12_42",
+    case_chapter: "chapter12",
+    question: "Which limitation of Deep Learning makes it difficult for professionals to determine why a system has reached a particular conclusion?",
+    options: [
+      "Resource pooling",
+      "The black box problem",
+      "On-demand self-service",
+      "Distributed consensus"
+    ],
+    answer: 1,
+    reason: "The chapter identifies the difficulty of determining why a Deep Learning system reached a particular conclusion as the 'black box' problem. It also notes that techniques are available that can increase insights into a model's inner workings."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch12_43",
+    case_chapter: "chapter12",
+    question: "Which statement best explains why information recorded on a blockchain is extremely difficult to change or remove?",
+    options: [
+      "Every transaction is stored exclusively on a central server controlled by one administrator",
+      "Blockchain records are routinely deleted after transaction settlement",
+      "Transactions are cryptographically linked through hashes and the accepted blocks are distributed across network nodes",
+      "Blockchain participants can modify previous transactions without validation"
+    ],
+    answer: 2,
+    reason: "The chapter explains that validated transactions are cryptographically bound through hashes, collected into blocks and distributed to network nodes. Consequently, recorded information is extremely difficult to change or remove."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch12_44",
+    case_chapter: "chapter12",
+    question: "A blockchain network is controlled by several organisations, and participation is restricted to members of those organisations. Which type of blockchain is most appropriate?",
+    options: [
+      "Public blockchain",
+      "Permissionless blockchain",
+      "Hybrid blockchain",
+      "Consortium blockchain"
+    ],
+    answer: 3,
+    reason: "The chapter describes consortium blockchains as being controlled by a group of organisations, with participation limited to members of the consortium."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch12_45",
+    case_chapter: "chapter12",
+    question: "According to the chapter's description of blockchain transaction security, which statement correctly distinguishes a participant's private key from the corresponding public key?",
+    options: [
+      "The private key is kept only by the signer, while the corresponding public key can be shared and used to validate the transaction signature",
+      "The public key must be kept secret by the signer, while the private key is published to every node",
+      "Both keys are used only to measure cloud resource consumption",
+      "The private key is a substitute for the blockchain's complete transaction ledger"
+    ],
+    answer: 0,
+    reason: "The chapter states that a transaction is digitally signed using the participant's private encryption key, which is kept only by the signer. The corresponding public key is designed to be shared and can be used to validate the signature."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch12_46",
+    case_chapter: "chapter12",
+    question: "A developer wants an online environment containing programming languages, databases and testing tools to develop and deploy applications without managing the underlying hardware and software. Which cloud service model best meets this requirement?",
+    options: [
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Security as a Service (SECaaS)"
+    ],
+    answer: 1,
+    reason: "Platform as a Service (PaaS) provides a development platform that may include programming languages, databases, testing tools and other tools for developing and deploying applications without the developer having to acquire and manage the underlying infrastructure."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch12_47",
+    case_chapter: "chapter12",
+    question: "An organisation uses an application hosted and managed by a cloud service provider. Its employees access the application through the Internet and are not responsible for managing its development platform or underlying infrastructure. Which service model is being used?",
+    options: [
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Network as a Service (NaaS)"
+    ],
+    answer: 2,
+    reason: "Software as a Service (SaaS) enables end users to access an application over the Internet that is hosted and managed by the provider. End users are exempted from managing the application, development platform and underlying infrastructure."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch12_48",
+    case_chapter: "chapter12",
+    question: "An organisation retains critical activities in its private cloud but uses a public cloud to obtain additional capacity for non-critical activities. Which deployment model does this illustrate?",
+    options: [
+      "Community cloud",
+      "Private cloud",
+      "Public cloud only",
+      "Hybrid cloud"
+    ],
+    answer: 3,
+    reason: "The chapter describes hybrid cloud as a combination of private and public cloud environments. Organisations may retain critical activities in private clouds and use public clouds for non-critical activities or additional resources."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch12_49",
+    case_chapter: "chapter12",
+    question: "A financial institution receives data from transactions, mobile applications and social networks. It needs to process the large volume of information, handle different types of data and continually update its analysis as the data changes. Which set of Big Data characteristics is most relevant?",
+    options: [
+      "Volume, Variety and Velocity",
+      "Confidentiality, Integrity and Availability",
+      "Processing, Storage and Bandwidth",
+      "Authentication, Authorisation and Accounting"
+    ],
+    answer: 0,
+    reason: "The chapter identifies Volume as the significant amount of data, Variety as the wide range of data from different sources, and Velocity as data that changes regularly and needs continual updating."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch12_50",
+    case_chapter: "chapter12",
+    question: "A FinTech company uses data from several sources to develop customer profiles, identify unusual transactions and make improved financial risk assessments. Which statement best reflects the role of Big Data in these activities?",
+    options: [
+      "Big Data is useful only for storing data and cannot support analysis",
+      "Big Data can support customer orientation, enhanced security and improved risk assessments",
+      "Big Data prevents the use of customer information for personalised services",
+      "Big Data replaces the need to evaluate financial risks"
+    ],
+    answer: 1,
+    reason: "The chapter identifies customer orientation, enhanced security and improved risk assessments as key ways in which Big Data can benefit the FinTech industry."
+  },
+
+  // ============================
+  // HARD MCQs (51–60)
+  // ============================
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch12_51",
+    case_chapter: "chapter12",
+    question: "An AI system performs a dedicated task and cannot operate beyond its defined limitations. A separate system can use past experiences and present data to make decisions. Which sequence correctly identifies the two systems?",
+    options: [
+      "General AI → Reactive AI",
+      "Super AI → Self-aware AI",
+      "Weak/Narrow AI → Limited Memory AI",
+      "Theory-of-mind AI → General AI"
+    ],
+    answer: 2,
+    reason: "Weak/Narrow AI performs a dedicated task and cannot operate beyond its limitations. Limited Memory AI uses past experiences and present data to make decisions. These classifications are based on different dimensions: capabilities and functionalities, respectively."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch12_52",
+    case_chapter: "chapter12",
+    question: "Which sequence correctly distinguishes Theory-of-mind AI from Self-aware AI according to the chapter?",
+    options: [
+      "Theory-of-mind AI is a cloud service model, while Self-aware AI is a blockchain network",
+      "Theory-of-mind AI is designed to understand human emotions and social behaviour, while Self-aware AI is described as becoming aware of its own existence",
+      "Theory-of-mind AI only reacts to present inputs, while Self-aware AI is defined as a system for measuring cloud usage",
+      "Theory-of-mind AI is the same as Weak/Narrow AI, while Self-aware AI means that every system uses historical transaction data"
+    ],
+    answer: 1,
+    reason: "The chapter describes Theory-of-mind AI as capable of understanding human emotions and social behaviour. Self-aware AI is described as a future concept involving awareness of its own existence. The chapter notes that these advanced AI capabilities have not been developed as described."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch12_53",
+    case_chapter: "chapter12",
+    question: "A blockchain transaction has been digitally signed using the participant's private key. After validation, the transaction is cryptographically linked to other transactions and accepted into a block that is distributed to network nodes. Which sequence correctly identifies the security mechanisms involved?",
+    options: [
+      "Public key secrecy → resource pooling → measured service",
+      "Hash creation → deletion of the prior ledger → unrestricted modification",
+      "Distributed consensus → cloud elasticity → application deployment",
+      "Digital signature validation → hashing and block linkage → distribution across network nodes"
+    ],
+    answer: 3,
+    reason: "The chapter describes digital signatures as being validated using the corresponding public key. The transaction is then cryptographically bound through a hash, included in a block, and distributed to network nodes after the block is accepted."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch12_54",
+    case_chapter: "chapter12",
+    question: "Which combination correctly reflects the chapter's description of Bitcoin?",
+    options: [
+      "A decentralised Peer-to-Peer digital currency network that uses cryptographic proof-of-work to verify transactions and records them in a decentralised ledger",
+      "A fiat currency issued by a central government and backed by a physical commodity",
+      "A centralised network in which one trusted third party independently authorises every Bitcoin transaction",
+      "A cloud deployment model that provides computing resources on a measured-service basis"
+    ],
+    answer: 0,
+    reason: "The chapter describes Bitcoin as a decentralised Peer-to-Peer digital currency network. It uses cryptographic proof-of-work to verify the legitimacy of transactions and records them in a decentralised ledger. The chapter also states that Bitcoin is not a fiat currency issued by a central government or its authorised agents."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch12_55",
+    case_chapter: "chapter12",
+    question: "A financial network has a central administrator that grants access to identified participants. The participants' access rights are restricted. According to the chapter's blockchain classification, which conclusion is most appropriate?",
+    options: [
+      "It is necessarily a permissionless public blockchain because all participants are identified",
+      "It is a hybrid cloud because it has restricted access",
+      "It follows the permissioned blockchain category; the described access restriction alone does not establish whether it is private or consortium",
+      "It is necessarily a public blockchain because it uses cryptography"
+    ],
+    answer: 2,
+    reason: "The chapter defines permissioned blockchains by restrictions on the nodes that may access the network and their access rights. It further identifies private and consortium blockchains as categories of permissioned blockchain. The facts given do not establish which of those two subtypes applies."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch12_56",
+    case_chapter: "chapter12",
+    question: "A company evaluating a cloud provider identifies three issues: (i) its application may perform differently in the cloud than in its internal data centre; (ii) proprietary APIs may make migration to another provider difficult; and (iii) additional network charges may arise. Which sequence correctly identifies these issues?",
+    options: [
+      "Resource pooling → Wide elasticity → On-demand self-service",
+      "Unexpected behaviour → Interoperability → Hidden costs",
+      "Measured service → Distributed consensus → Veracity",
+      "Broad network access → Customer orientation → Data variety"
+    ],
+    answer: 1,
+    reason: "The chapter associates different performance in the cloud with unexpected behaviour, proprietary APIs and incompatible data formats with interoperability issues, and additional network charges with hidden costs."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch12_57",
+    case_chapter: "chapter12",
+    question: "A cloud service agreement does not clearly specify a service that the customer later requires. The customer also finds that the provider's proprietary APIs and data formats make migration to another provider difficult. Which sequence correctly identifies the two concerns discussed in the chapter?",
+    options: [
+      "Wide elasticity → Resource pooling",
+      "Veracity → Volume",
+      "Distributed consensus → Tamper-proof immutability",
+      "The threshold policy/SLA issue → Interoperability"
+    ],
+    answer: 3,
+    reason: "The chapter explains that the SLA contains the agreed services and that services not documented may not cover future requirements. It separately identifies interoperability issues when proprietary APIs and different data formats make migration or cooperation between providers difficult."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch12_58",
+    case_chapter: "chapter12",
+    question: "A company selects different cloud models for three requirements: (i) provide authentication infrastructure and single sign-on; (ii) supply data on demand where users may only perform read operations because the data is owned by the provider; and (iii) provide virtual storage for off-site backups and data synchronisation. Which sequence is correct?",
+    options: [
+      "Identity as a Service (IDaaS) → Data as a Service (DaaS) → Storage as a Service (STaaS)",
+      "Database as a Service (DBaaS) → Network as a Service (NaaS) → Communication as a Service (CaaS)",
+      "Platform as a Service (PaaS) → Software as a Service (SaaS) → Infrastructure as a Service (IaaS)",
+      "Testing as a Service (TaaS) → Backend as a Service (BaaS) → Email as a Service (EaaS)"
+    ],
+    answer: 0,
+    reason: "The chapter describes IDaaS as providing authentication infrastructure, DaaS as providing data on demand with users limited to read operations because the provider owns the data, and STaaS as providing virtual storage that supports synchronisation and off-site backups."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch12_59",
+    case_chapter: "chapter12",
+    question: "A FinTech company wants to tailor services to customer profiles, detect unusual transactions, improve risk assessments using information from several sources, and identify suitable products based on customers' financial behaviour. Which sequence correctly matches the relevant Big Data benefits described in the chapter?",
+    options: [
+      "Improved risk assessment → Resource pooling → Customer orientation → Measured service",
+      "Customer orientation → Enhanced security → Improved risk assessments → Unmatched customer service",
+      "Cloud elasticity → Customer orientation → Blockchain immutability → Broad network access",
+      "Distributed consensus → Enhanced security → Cloud deployment → Customer segmentation"
+    ],
+    answer: 1,
+    reason: "The chapter identifies customer orientation through user profiles and segmentation, enhanced security through detection of unusual transactions, improved risk assessments using data from multiple sources, and unmatched customer service through understanding customer behaviour and suggesting appropriate products."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch12_60",
+    case_chapter: "chapter12",
+    question: "A FinTech company faces three problems: (i) some customers cannot fully participate because they lack digital skills or connectivity; (ii) automated decisions may disadvantage certain groups; and (iii) customers cannot easily understand which organisations access their personal data. Which sequence correctly identifies these consumer challenges?",
+    options: [
+      "Limited consumer understanding → Hidden costs → Lack of interoperability",
+      "Technology failure → Improved financial inclusion → Resource pooling",
+      "Digital or financial exclusion → Algorithmic discrimination → Loss of consumer control over data",
+      "Lack of short-term results → Distributed consensus → Measured service"
+    ],
+    answer: 2,
+    reason: "The chapter identifies the risk that some consumers may be digitally or financially excluded, concerns that algorithmic discrimination may produce biased decisions against certain groups, and loss of consumer control over data when individuals cannot understand which organisations access or process their data."
   }
+
 
 
 
