@@ -71,7 +71,51 @@
       <div class="al-list" id="alarmList"></div>
     </div>
 
-    <!-- 4. REVISION TASKS -->
+    <!-- 4. NEW: INTEGRATED PLANNING MODE VARIANCE & ACTUAL HOURS TRACKER -->
+    <div class="rm-panel panel-variance" id="planVariancePanel">
+      <div class="vr-top-bar">
+        <div class="rm-panel-label" style="margin-bottom:0; flex:1;">
+          <span>📊 Planned Timetable &amp; Actual Hours Tracker</span>
+        </div>
+        <div class="vr-top-actions">
+          <span class="vr-level-pill" id="vrLevelBadge">CA FINAL</span>
+          <button class="vr-plan-btn" onclick="openPlanningFromRead()">📅 Edit Timetable in Plan Mode</button>
+        </div>
+      </div>
+
+      <div class="vr-summary-grid">
+        <div class="vr-stat-card">
+          <div class="vr-stat-label">PLANNED TODAY</div>
+          <div class="vr-stat-value" id="vrTotalPlanned">00:00h</div>
+        </div>
+        <div class="vr-stat-card">
+          <div class="vr-stat-label">ACTUAL STUDIED</div>
+          <div class="vr-stat-value" id="vrTotalActual" style="color:#4ade80;">00:00h</div>
+        </div>
+        <div class="vr-stat-card">
+          <div class="vr-stat-label">DAILY EFFICIENCY</div>
+          <div class="vr-stat-value" id="vrEfficiency">0%</div>
+          <div class="vr-purity-meter"><div class="vr-purity-fill" id="vrPurityBar"></div></div>
+        </div>
+      </div>
+
+      <div class="vr-table-scroll">
+        <table class="vr-table">
+          <thead>
+            <tr>
+              <th>TIME SLOT (FROM - TO)</th>
+              <th>CA SUBJECT</th>
+              <th>EST. (HRS)</th>
+              <th>ACTUAL (HRS) — START / STOP HERE</th>
+              <th>VARIANCE</th>
+            </tr>
+          </thead>
+          <tbody id="vrTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 5. REVISION TASKS -->
     <div class="rm-panel panel-tasks">
       <div class="rm-panel-label">Chapter Revision Tasks</div>
       <div class="tk-stats">
@@ -91,7 +135,7 @@
       <div class="tk-list" id="taskList"></div>
     </div>
 
-    <!-- 5. QUICK FORMULA & ADJUSTMENT NOTES -->
+    <!-- 6. QUICK FORMULA & ADJUSTMENT NOTES -->
     <div class="rm-panel panel-notes">
       <div class="rm-panel-label">Quick Formula &amp; Section Notes</div>
       <textarea
@@ -106,7 +150,7 @@
       </div>
     </div>
 
-    <!-- 6. AMBIENT LO-FI & FOCUS SOUNDS -->
+    <!-- 7. AMBIENT LO-FI & FOCUS SOUNDS -->
     <div class="rm-panel panel-music">
       <div class="rm-panel-label">Ambient Study Focus</div>
       <p style="font-size:0.8rem; color:#94a3b8; margin-bottom:12px; line-height:1.4;">

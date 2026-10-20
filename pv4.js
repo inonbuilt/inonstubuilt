@@ -45,21 +45,76 @@ function saveAllData(data) {
   localStorage.setItem("calcium_ca_data_v5", JSON.stringify(data));
 }
 
+function cloneSlotsForNewDay(slots, isAutoCarried = true) {
+  return slots.map(slot => ({
+    id: slot.id,
+    startTime: slot.startTime,
+    endTime: slot.endTime,
+    estimated: slot.estimated,
+    actual: "00:00",
+    timerState: false,
+    timerStart: null,
+    accumulatedMs: 0,
+    manualLock: false,
+    autoCarried: isAutoCarried
+  }));
+}
+
 function getPlanForDate(dStr) {
   const all = getAllData();
   if (all[dStr] && all[dStr].length > 0) return all[dStr];
+
+  // Carry over timetable from the most recent previous date (or latest template)
+  const existingDates = Object.keys(all)
+    .filter(k => Array.isArray(all[k]) && all[k].length > 0)
+    .sort();
+
+  let sourcePlan = null;
+  const prevDates = existingDates.filter(k => k < dStr);
+  if (prevDates.length > 0) {
+    sourcePlan = all[prevDates[prevDates.length - 1]];
+  } else if (existingDates.length > 0) {
+    sourcePlan = all[existingDates[existingDates.length - 1]];
+  } else {
+    const savedTemplate = JSON.parse(localStorage.getItem("calcium_default_timetable") || "null");
+    if (Array.isArray(savedTemplate) && savedTemplate.length > 0) {
+      sourcePlan = savedTemplate;
+    }
+  }
+
+  if (sourcePlan) {
+    const continuedPlan = cloneSlotsForNewDay(sourcePlan, true);
+    all[dStr] = continuedPlan;
+    saveAllData(all);
+    return continuedPlan;
+  }
+
   const subs = CA_SUBJECTS[currentLevel] || CA_SUBJECTS.final;
   const starter = [
-    { id: subs[0].id, startTime: "06:00", endTime: "08:00", estimated: "02:00", actual: "00:00", timerState: false, timerStart: null, accumulatedMs: 0, manualLock: false },
-    { id: subs[1] ? subs[1].id : subs[0].id, startTime: "09:00", endTime: "11:00", estimated: "02:00", actual: "00:00", timerState: false, timerStart: null, accumulatedMs: 0, manualLock: false }
+    { id: subs[0].id, startTime: "06:00", endTime: "08:00", estimated: "02:00", actual: "00:00", timerState: false, timerStart: null, accumulatedMs: 0, manualLock: false, autoCarried: true },
+    { id: subs[1] ? subs[1].id : subs[0].id, startTime: "09:00", endTime: "11:00", estimated: "02:00", actual: "00:00", timerState: false, timerStart: null, accumulatedMs: 0, manualLock: false, autoCarried: true }
   ];
   all[dStr] = starter;
   saveAllData(all);
   return starter;
 }
 
-function savePlanForDate(dStr, plan) {
+function savePlanForDate(dStr, plan, isScheduleEdit = false) {
   const all = getAllData();
+  if (isScheduleEdit) {
+    plan.forEach(s => { s.autoCarried = false; });
+    localStorage.setItem("calcium_default_timetable", JSON.stringify(cloneSlotsForNewDay(plan, true)));
+
+    // Propagate updated timetable to any future dates that haven't been manually edited or studied yet
+    Object.keys(all).forEach(k => {
+      if (k > dStr && Array.isArray(all[k])) {
+        const isUneditedFuture = all[k].every(s => s.autoCarried !== false && hhmmToDecimal(s.actual) === 0 && !s.timerState);
+        if (isUneditedFuture) {
+          all[k] = cloneSlotsForNewDay(plan, true);
+        }
+      }
+    });
+  }
   all[dStr] = plan;
   saveAllData(all);
 }
@@ -91,6 +146,16 @@ function timeToMinutes(t) {
   if (!t) return 0;
   const [h, m] = t.split(":").map(Number);
   return (h * 60) + (m || 0);
+}
+
+function formatSlotLiveHMS(slot) {
+  const el = slot.timerState ? (Date.now() - (slot.timerStart || Date.now())) : 0;
+  const totMs = (slot.accumulatedMs || 0) + el;
+  const totSec = Math.floor(totMs / 1000);
+  const h = Math.floor(totSec / 3600);
+  const m = Math.floor((totSec % 3600) / 60);
+  const s = totSec % 60;
+  return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
 }
 
 /* =========================================
@@ -188,6 +253,7 @@ function renderTimelineEvents() {
 
 /* =========================================
    TABLE & VARIANCE ENGINE (FLICKER-FREE)
+   Actual Hours are controlled in Reading Room only
 ========================================= */
 function renderTable() {
   const tbody = document.getElementById("planner-body");
@@ -222,8 +288,8 @@ function renderTable() {
           <button class="timer-btn ${item.timerState ? 'timer-btn-pause' : 'timer-btn-play'}" onclick="toggleTimer(${idx})">
             ${item.timerState ? '⏸' : '▶'}
           </button>
-          <input class="time-input actual-time-input" value="${actStr}" onchange="updateRow(${idx}, 'actual', this.value)" style="display:${item.timerState ? 'none' : 'inline-block'};" />
-          <span id="pv4-live-timer-${idx}" class="live-timer-text" style="display:${item.timerState ? 'inline-block' : 'none'};">00:00:00</span>
+          <input class="time-input actual-time-input" value="${actStr}" readonly style="display:${item.timerState ? 'none' : 'inline-block'}; color:#cbd5e1;" />
+          <span id="pv4-live-timer-${idx}" class="live-timer-text" style="display:${item.timerState ? 'inline-block' : 'none'};">${formatSlotLiveHMS(item)}</span>
         </div>
       </td>
       <td><span class="variance-cell" style="font-family:'Roboto Mono',monospace; font-weight:700;">00:00</span></td>
@@ -235,6 +301,49 @@ function renderTable() {
   calculateAnalytics();
   renderTimelineEvents();
 }
+
+window.toggleTimer = function(idx) {
+  const dStr = toDateKey(selectedDate);
+  const plan = getPlanForDate(dStr);
+  const item = plan[idx];
+  if (!item) return;
+
+  if (item.timerState) {
+    const elapsed = Date.now() - (item.timerStart || Date.now());
+    item.accumulatedMs = (item.accumulatedMs || 0) + elapsed;
+    item.timerState = false;
+    item.timerStart = null;
+    item.actual = decimalToHHMM(item.accumulatedMs / 3600000);
+  } else {
+    // Pause any other running timer first
+    plan.forEach((other, i) => {
+      if (i !== idx && other.timerState) {
+        const el = Date.now() - (other.timerStart || Date.now());
+        other.accumulatedMs = (other.accumulatedMs || 0) + el;
+        other.timerState = false;
+        other.timerStart = null;
+        other.actual = decimalToHHMM(other.accumulatedMs / 3600000);
+      }
+    });
+    item.accumulatedMs = item.accumulatedMs || (hhmmToDecimal(item.actual) * 3600000);
+    item.timerState = true;
+    item.timerStart = Date.now();
+
+    // Switch to Reading Room & show the integrated Variance Tracker box (without starting stopwatch)
+    if (window.parent && typeof window.parent.openReadRoomTracker === "function") {
+      window.parent.openReadRoomTracker();
+    } else if (window.parent && typeof window.parent.switchToReadMode === "function") {
+      window.parent.switchToReadMode();
+    }
+  }
+
+  savePlanForDate(dStr, plan, false);
+  renderTable();
+
+  if (window.parent && typeof window.parent.updateAndBroadcastMyState === "function") {
+    window.parent.updateAndBroadcastMyState();
+  }
+};
 
 // In-place updates without destroying inputs while the user is typing/clicking
 window.updateRow = function(idx, field, val) {
@@ -258,11 +367,7 @@ window.updateRow = function(idx, field, val) {
     }
   }
 
-  if (field === "actual") {
-    plan[idx].accumulatedMs = hhmmToDecimal(val) * 3600000;
-  }
-
-  savePlanForDate(dStr, plan);
+  savePlanForDate(dStr, plan, true);
 
   if (field === "id") {
     // Subject changed, update CSS class
@@ -283,7 +388,7 @@ window.deleteRow = function(idx) {
   const dStr = toDateKey(selectedDate);
   const plan = getPlanForDate(dStr);
   plan.splice(idx, 1);
-  savePlanForDate(dStr, plan);
+  savePlanForDate(dStr, plan, true);
   renderTable();
 };
 
@@ -300,50 +405,12 @@ document.querySelector(".add-row-btn").addEventListener("click", () => {
     timerState: false,
     timerStart: null,
     accumulatedMs: 0,
-    manualLock: false
+    manualLock: false,
+    autoCarried: false
   });
-  savePlanForDate(dStr, plan);
+  savePlanForDate(dStr, plan, true);
   renderTable();
 });
-
-window.toggleTimer = function(idx) {
-  const dStr = toDateKey(selectedDate);
-  const plan = getPlanForDate(dStr);
-  const item = plan[idx];
-
-  if (item.timerState) {
-    const elapsed = Date.now() - (item.timerStart || Date.now());
-    item.accumulatedMs = (item.accumulatedMs || 0) + elapsed;
-    item.timerState = false;
-    item.actual = decimalToHHMM(item.accumulatedMs / 3600000);
-  } else {
-    // Pause any other running timer
-    plan.forEach((other, i) => {
-      if (i !== idx && other.timerState) {
-        const el = Date.now() - (other.timerStart || Date.now());
-        other.accumulatedMs = (other.accumulatedMs || 0) + el;
-        other.timerState = false;
-        other.actual = decimalToHHMM(other.accumulatedMs / 3600000);
-      }
-    });
-    item.timerState = true;
-    item.timerStart = Date.now();
-    item.accumulatedMs = hhmmToDecimal(item.actual) * 3600000;
-
-    // --- NEW: Trigger Reading Mode & Sync to Squad ---
-    if (window.parent && typeof window.parent.triggerSharedFocusSession === "function") {
-      window.parent.triggerSharedFocusSession(item.estimated);
-    }
-  }
-
-  savePlanForDate(dStr, plan);
-  renderTable();
-
-  // Notify main window to update study status and broadcast to squad
-  if (window.parent && typeof window.parent.updateAndBroadcastMyState === "function") {
-    window.parent.updateAndBroadcastMyState();
-  }
-};
 
 function calculateAnalytics() {
   const dStr = toDateKey(selectedDate);
@@ -355,7 +422,11 @@ function calculateAnalytics() {
 
   plan.forEach((item, i) => {
     const est = hhmmToDecimal(item.estimated);
-    const act = hhmmToDecimal(item.actual);
+    let act = hhmmToDecimal(item.actual);
+    if (item.timerState) {
+      const el = Date.now() - (item.timerStart || Date.now());
+      act = ((item.accumulatedMs || 0) + el) / 3600000;
+    }
     totalEst += est;
     totalAct += act;
 
@@ -414,7 +485,11 @@ window.updateChart = function() {
     if (allData[key]) {
       allData[key].forEach(slot => {
         e += hhmmToDecimal(slot.estimated);
-        a += hhmmToDecimal(slot.actual);
+        let slotAct = hhmmToDecimal(slot.actual);
+        if (slot.timerState) {
+          slotAct = ((slot.accumulatedMs || 0) + (Date.now() - (slot.timerStart || Date.now()))) / 3600000;
+        }
+        a += slotAct;
       });
     }
     estArr.push(Number(e.toFixed(2)));
@@ -511,6 +586,10 @@ function renderSquadStripFromStorage() {
   `).join("");
 }
 
+window.refreshPlannerFromStorage = function() {
+  renderTable();
+};
+
 /* =========================================
    INITIALIZATION & 1-SECOND TICK (STABLE)
 ========================================= */
@@ -527,7 +606,7 @@ window.addEventListener("DOMContentLoaded", () => {
   renderDateDisplay();
   renderTable();
 
-  // 1-second interval ONLY updates clock, timeline line & running timers (DOES NOT TOUCH INPUTS)
+  // 1-second interval updates clock, timeline line & live actual timers from Read Mode
   setInterval(() => {
     const now = new Date();
     const timeEl = document.getElementById("current-time-display");
@@ -540,30 +619,58 @@ window.addEventListener("DOMContentLoaded", () => {
     const line = document.getElementById("current-time-line");
     if (line) line.style.top = `${mins * MINUTE_MULTIPLIER}px`;
 
-    // Live running timer text (only updates text, never re-renders table)
+    // Sync live running timer text & variance from Read Mode without re-rendering inputs
     const dStr = toDateKey(selectedDate);
     const plan = getPlanForDate(dStr);
+    let anyRunning = false;
+    let totalEst = 0;
+    let totalAct = 0;
+    const tbody = document.getElementById("planner-body");
+
     plan.forEach((slot, idx) => {
+      const est = hhmmToDecimal(slot.estimated);
+      let act = hhmmToDecimal(slot.actual);
+      const span = document.getElementById(`pv4-live-timer-${idx}`);
+
       if (slot.timerState) {
+        anyRunning = true;
         const el = Date.now() - (slot.timerStart || Date.now());
         const totMs = (slot.accumulatedMs || 0) + el;
-        const totSec = Math.floor(totMs / 1000);
-        const h = Math.floor(totSec / 3600);
-        const m = Math.floor((totSec % 3600) / 60);
-        const s = totSec % 60;
-        const tStr = `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
-        const span = document.getElementById(`pv4-live-timer-${idx}`);
-        if (span) span.textContent = tStr;
+        act = totMs / 3600000;
+        if (span) {
+          span.textContent = formatSlotLiveHMS(slot);
+        }
+      }
+
+      totalEst += est;
+      totalAct += act;
+
+      const row = tbody ? tbody.children[idx] : null;
+      if (row) {
+        const diff = act - est;
+        const vCell = row.querySelector(".variance-cell");
+        if (vCell) {
+          vCell.textContent = decimalToHHMM(diff, true);
+          vCell.style.color = diff < 0 ? "#f87171" : diff > 0 ? "#4ade80" : "#94a3b8";
+        }
       }
     });
+
+    if (anyRunning) {
+      const eff = totalEst > 0 ? Math.min(100, Math.round((totalAct / totalEst) * 100)) : 0;
+      document.getElementById("efficiency-val").textContent = `${eff}%`;
+      document.getElementById("purity-bar").style.width = `${eff}%`;
+      document.getElementById("total-actual-val").textContent = `${decimalToHHMM(totalAct)}h`;
+    }
 
     renderSquadStripFromStorage();
   }, 1000);
 });
 
-// ONLY update squad strip on storage event; NEVER re-render table while user is editing
 window.addEventListener("storage", (e) => {
   if (e.key === "calcium_squad_roster" || e.key === "calcium_active_room") {
     renderSquadStripFromStorage();
+  } else if (e.key === "calcium_ca_data_v5") {
+    renderTable();
   }
 });

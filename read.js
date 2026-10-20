@@ -1,6 +1,274 @@
 /* =========================================
    CALCIUM NOTES — READ MODE ENGINE (read.js)
+   Includes Integrated Planning Mode Variance & Actual Hours Tracker
 ========================================= */
+
+const CA_SUBJECTS = {
+  foundation: [
+    { id: "f_acc", name: "ACC", class: "sub-fr" },
+    { id: "f_law", name: "LAW", class: "sub-afm" },
+    { id: "f_qa",  name: "QA",  class: "sub-audit" },
+    { id: "f_eco", name: "ECO", class: "sub-dt" }
+  ],
+  inter: [
+    { id: "i_adv", name: "ADV ACC", class: "sub-fr" },
+    { id: "i_law", name: "LAW",     class: "sub-afm" },
+    { id: "i_tax", name: "TAX",     class: "sub-dt" },
+    { id: "i_cma", name: "CMA",     class: "sub-ibs" },
+    { id: "i_aud", name: "AUDIT",   class: "sub-audit" },
+    { id: "i_fm",  name: "FM-SM",   class: "sub-idt" }
+  ],
+  final: [
+    { id: "fr",    name: "FR",    class: "sub-fr" },
+    { id: "afm",   name: "AFM",   class: "sub-afm" },
+    { id: "audit", name: "AUDIT", class: "sub-audit" },
+    { id: "dt",    name: "DT",    class: "sub-dt" },
+    { id: "idt",   name: "IDT",   class: "sub-idt" },
+    { id: "ibs",   name: "IBS",   class: "sub-ibs" }
+  ]
+};
+
+function toDateKey(d) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+function hhmmToDecimal(val) {
+  if (!val) return 0;
+  const str = val.toString();
+  if (str.includes("h") || (!str.includes(":") && str.includes("."))) {
+    return parseFloat(str.replace(/[^0-9.]/g, "")) || 0;
+  }
+  const parts = str.replace(/[^0-9:]/g, "").split(":");
+  const h = parseInt(parts[0], 10) || 0;
+  const m = parts.length > 1 ? parseInt(parts[1], 10) || 0 : 0;
+  return h + (m / 60);
+}
+
+function decimalToHHMM(decimalHours, includeSign = false) {
+  if (isNaN(decimalHours)) return "00:00";
+  const isNeg = decimalHours < 0;
+  const absVal = Math.abs(decimalHours);
+  let h = Math.floor(absVal);
+  let m = Math.round((absVal - h) * 60);
+  if (m === 60) { h += 1; m = 0; }
+  const sign = isNeg ? "-" : (includeSign && (h > 0 || m > 0) ? "+" : "");
+  return `${sign}${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
+}
+
+function cloneSlotsForNewDay(slots, isAutoCarried = true) {
+  return slots.map(slot => ({
+    id: slot.id,
+    startTime: slot.startTime,
+    endTime: slot.endTime,
+    estimated: slot.estimated,
+    actual: "00:00",
+    timerState: false,
+    timerStart: null,
+    accumulatedMs: 0,
+    manualLock: false,
+    autoCarried: isAutoCarried
+  }));
+}
+
+function getTodayPlanData() {
+  const dStr = toDateKey(new Date());
+  const all = JSON.parse(localStorage.getItem("calcium_ca_data_v5") || "{}");
+  if (all[dStr] && all[dStr].length > 0) return all[dStr];
+
+  // Carry over timetable from most recent previous date if today has none yet
+  const existingDates = Object.keys(all)
+    .filter(k => Array.isArray(all[k]) && all[k].length > 0)
+    .sort();
+
+  let sourcePlan = null;
+  const prevDates = existingDates.filter(k => k < dStr);
+  if (prevDates.length > 0) {
+    sourcePlan = all[prevDates[prevDates.length - 1]];
+  } else if (existingDates.length > 0) {
+    sourcePlan = all[existingDates[existingDates.length - 1]];
+  } else {
+    const savedTemplate = JSON.parse(localStorage.getItem("calcium_default_timetable") || "null");
+    if (Array.isArray(savedTemplate) && savedTemplate.length > 0) {
+      sourcePlan = savedTemplate;
+    }
+  }
+
+  const level = localStorage.getItem("calcium_ca_level") || "final";
+  const subs = CA_SUBJECTS[level] || CA_SUBJECTS.final;
+  const todayPlan = sourcePlan
+    ? cloneSlotsForNewDay(sourcePlan, true)
+    : [
+        { id: subs[0].id, startTime: "06:00", endTime: "08:00", estimated: "02:00", actual: "00:00", timerState: false, timerStart: null, accumulatedMs: 0, manualLock: false, autoCarried: true },
+        { id: subs[1] ? subs[1].id : subs[0].id, startTime: "09:00", endTime: "11:00", estimated: "02:00", actual: "00:00", timerState: false, timerStart: null, accumulatedMs: 0, manualLock: false, autoCarried: true }
+      ];
+
+  all[dStr] = todayPlan;
+  localStorage.setItem("calcium_ca_data_v5", JSON.stringify(all));
+  return todayPlan;
+}
+
+function saveTodayPlanData(todayPlan) {
+  const dStr = toDateKey(new Date());
+  const all = JSON.parse(localStorage.getItem("calcium_ca_data_v5") || "{}");
+  all[dStr] = todayPlan;
+  localStorage.setItem("calcium_ca_data_v5", JSON.stringify(all));
+}
+
+function formatSlotLiveHMS(slot) {
+  const el = slot.timerState ? (Date.now() - (slot.timerStart || Date.now())) : 0;
+  const totMs = (slot.accumulatedMs || 0) + el;
+  const totSec = Math.floor(totMs / 1000);
+  const h = Math.floor(totSec / 3600);
+  const m = Math.floor((totSec % 3600) / 60);
+  const s = totSec % 60;
+  return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+}
+
+/* ── INTEGRATED VARIANCE & ACTUAL HOURS TRACKER (START/STOP IN READ MODE ONLY) ── */
+window.renderVarianceTrackerInReadMode = function() {
+  const tbody = document.getElementById("vrTableBody");
+  if (!tbody) return;
+
+  const level = localStorage.getItem("calcium_ca_level") || "final";
+  const subs = CA_SUBJECTS[level] || CA_SUBJECTS.final;
+  const levelBadge = document.getElementById("vrLevelBadge");
+  if (levelBadge) levelBadge.textContent = `CA ${level.toUpperCase()}`;
+
+  const plan = getTodayPlanData();
+  if (plan.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:#64748b; padding:18px;">No study slots planned for today. Click "Edit Timetable in Plan Mode" to add slots.</td></tr>`;
+    updateVarianceSummaryAndRows(plan);
+    return;
+  }
+
+  tbody.innerHTML = plan.map((item, idx) => {
+    const sub = subs.find(s => s.id === item.id) || subs[0];
+    const estStr = decimalToHHMM(hhmmToDecimal(item.estimated));
+    const actStr = decimalToHHMM(hhmmToDecimal(item.actual));
+    const isRunning = !!item.timerState;
+
+    return `
+      <tr>
+        <td><span class="vr-time-badge">${item.startTime} - ${item.endTime}</span></td>
+        <td><span class="vr-sub-pill ${sub.class}">${sub.name}</span></td>
+        <td><span class="vr-est-text">${estStr}h</span></td>
+        <td>
+          <div class="vr-actual-controls">
+            <button class="vr-action-btn ${isRunning ? 'pause' : 'play'}" onclick="toggleReadRoomSlotTimer(${idx})">
+              ${isRunning ? '⏸ Stop' : '▶ Start'}
+            </button>
+            <span id="vr-live-readout-${idx}" class="vr-actual-readout ${isRunning ? 'live' : ''}">
+              ${isRunning ? formatSlotLiveHMS(item) : actStr + 'h'}
+            </span>
+          </div>
+        </td>
+        <td><span id="vr-variance-${idx}" class="vr-variance-val">00:00</span></td>
+      </tr>
+    `;
+  }).join("");
+
+  updateVarianceSummaryAndRows(plan);
+};
+
+function updateVarianceSummaryAndRows(plan) {
+  let totalEst = 0;
+  let totalAct = 0;
+
+  plan.forEach((slot, idx) => {
+    const est = hhmmToDecimal(slot.estimated);
+    let act = hhmmToDecimal(slot.actual);
+
+    if (slot.timerState) {
+      const elapsed = Date.now() - (slot.timerStart || Date.now());
+      const totMs = (slot.accumulatedMs || 0) + elapsed;
+      act = totMs / 3600000;
+      const readoutEl = document.getElementById(`vr-live-readout-${idx}`);
+      if (readoutEl) {
+        readoutEl.textContent = formatSlotLiveHMS(slot);
+      }
+    }
+
+    totalEst += est;
+    totalAct += act;
+
+    const diff = act - est;
+    const varEl = document.getElementById(`vr-variance-${idx}`);
+    if (varEl) {
+      varEl.textContent = decimalToHHMM(diff, true);
+      varEl.style.color = diff < 0 ? "#f87171" : diff > 0 ? "#4ade80" : "#94a3b8";
+    }
+  });
+
+  const eff = totalEst > 0 ? Math.min(100, Math.round((totalAct / totalEst) * 100)) : 0;
+  const plannedEl = document.getElementById("vrTotalPlanned");
+  const actualEl = document.getElementById("vrTotalActual");
+  const effEl = document.getElementById("vrEfficiency");
+  const barEl = document.getElementById("vrPurityBar");
+
+  if (plannedEl) plannedEl.textContent = `${decimalToHHMM(totalEst)}h`;
+  if (actualEl) actualEl.textContent = `${decimalToHHMM(totalAct)}h`;
+  if (effEl) effEl.textContent = `${eff}%`;
+  if (barEl) barEl.style.width = `${eff}%`;
+}
+
+window.toggleReadRoomSlotTimer = function(idx) {
+  initAudio();
+  const plan = getTodayPlanData();
+  const item = plan[idx];
+  if (!item) return;
+
+  if (item.timerState) {
+    // Stop / Pause this slot's actual hours timer
+    const elapsed = Date.now() - (item.timerStart || Date.now());
+    item.accumulatedMs = (item.accumulatedMs || 0) + elapsed;
+    item.timerState = false;
+    item.timerStart = null;
+    item.actual = decimalToHHMM(item.accumulatedMs / 3600000);
+  } else {
+    // Pause any other running slot first
+    plan.forEach((other, i) => {
+      if (i !== idx && other.timerState) {
+        const el = Date.now() - (other.timerStart || Date.now());
+        other.accumulatedMs = (other.accumulatedMs || 0) + el;
+        other.timerState = false;
+        other.timerStart = null;
+        other.actual = decimalToHHMM(other.accumulatedMs / 3600000);
+      }
+    });
+    item.accumulatedMs = item.accumulatedMs || (hhmmToDecimal(item.actual) * 3600000);
+    item.timerState = true;
+    item.timerStart = Date.now();
+  }
+
+  saveTodayPlanData(plan);
+  renderVarianceTrackerInReadMode();
+
+  // Notify parent & Planning Mode iframe
+  if (window.parent) {
+    if (typeof window.parent.updateAndBroadcastMyState === "function") {
+      window.parent.updateAndBroadcastMyState();
+    }
+    if (typeof window.parent.syncPlanIframeFromReadRoom === "function") {
+      window.parent.syncPlanIframeFromReadRoom();
+    }
+  }
+};
+
+window.openPlanningFromRead = function() {
+  if (window.parent && typeof window.parent.switchToPlanMode === "function") {
+    window.parent.switchToPlanMode();
+  }
+};
+
+window.highlightVarianceTracker = function() {
+  renderVarianceTrackerInReadMode();
+  const panel = document.getElementById("planVariancePanel");
+  if (panel) {
+    panel.scrollIntoView({ behavior: "smooth", block: "center" });
+    panel.classList.add("highlight-pulse");
+    setTimeout(() => panel.classList.remove("highlight-pulse"), 1800);
+  }
+};
 
 /* ── 1. CLOCK ENGINE ── */
 function updateClock() {
@@ -137,27 +405,6 @@ window.timerReset = function() {
   btn.textContent = "Start";
   btn.className = "t-btn go";
   updateTimerDisplayFromInputs();
-};
-
-/* ── AUTO-SYNC TIMER FROM PLANNING MODE ── */
-window.syncAndStartTimer = function(estimatedHHMM) {
-  if (timerRunning) return; // Prevent double-triggering if already running
-  
-  // Set the timer to the 'Estimated Time' from the Planning Mode table
-  if (estimatedHHMM) {
-     const parts = estimatedHHMM.split(":");
-     const h = parseInt(parts[0], 10) || 0;
-     const m = parts.length > 1 ? parseInt(parts[1], 10) || 0 : 0;
-     
-     document.getElementById("tH").value = String(h).padStart(2, '0');
-     document.getElementById("tM").value = String(m).padStart(2, '0');
-     document.getElementById("tS").value = "00";
-     
-     updateTimerDisplayFromInputs();
-  }
-  
-  // Automatically click the start button
-  timerToggle();
 };
 
 /* ── 4. STOPWATCH ── */
@@ -401,8 +648,14 @@ function escapeHtml(str) {
 /* ── INITIALIZATION ── */
 window.addEventListener("DOMContentLoaded", () => {
   updateClock();
-  setInterval(updateClock, 1000);
-  setInterval(checkAlarms, 1000);
+  renderVarianceTrackerInReadMode();
+
+  setInterval(() => {
+    updateClock();
+    checkAlarms();
+    const plan = getTodayPlanData();
+    updateVarianceSummaryAndRows(plan);
+  }, 1000);
 
   updateTimerDisplayFromInputs();
   renderAlarms();
@@ -410,4 +663,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const savedNotes = localStorage.getItem("cn_notes") || "";
   document.getElementById("quickNotes").value = savedNotes;
+});
+
+window.addEventListener("storage", (e) => {
+  if (e.key === "calcium_ca_data_v5" || e.key === "calcium_ca_level") {
+    renderVarianceTrackerInReadMode();
+  }
 });

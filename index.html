@@ -553,7 +553,22 @@
       const readOverlay = document.getElementById("readModeOverlay");
       const planOverlay = document.getElementById("planningModeOverlay");
 
+      function syncReadIframeTracker() {
+        const readIframe = document.getElementById("readModeIframe");
+        if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.renderVarianceTrackerInReadMode === "function") {
+          readIframe.contentWindow.renderVarianceTrackerInReadMode();
+        }
+      }
+
+      window.syncPlanIframeFromReadRoom = function() {
+        const planIframe = document.getElementById("planModeIframe");
+        if (planIframe && planIframe.contentWindow && typeof planIframe.contentWindow.refreshPlannerFromStorage === "function") {
+          planIframe.contentWindow.refreshPlannerFromStorage();
+        }
+      };
+
       function openReadMode() {
+        syncReadIframeTracker();
         readOverlay.classList.add("rm-active");
         setTimeout(() => readOverlay.classList.add("rm-visible"), 10);
         document.body.style.overflow = "hidden"; // Prevent background scroll
@@ -568,6 +583,7 @@
       }
 
       function openPlanningMode() {
+        window.syncPlanIframeFromReadRoom();
         planOverlay.classList.add("rm-active");
         setTimeout(() => planOverlay.classList.add("rm-visible"), 10);
         document.body.style.overflow = "hidden";
@@ -583,6 +599,7 @@
 
       // --- ADDED: CROSSFADE TRANSITIONS ---
       window.switchToReadMode = function() {
+        syncReadIframeTracker();
         planOverlay.classList.remove("rm-visible");
         
         setTimeout(() => {
@@ -595,7 +612,18 @@
         }, 350);
       };
 
+      window.openReadRoomTracker = function() {
+        window.switchToReadMode();
+        setTimeout(() => {
+          const readIframe = document.getElementById("readModeIframe");
+          if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.highlightVarianceTracker === "function") {
+            readIframe.contentWindow.highlightVarianceTracker();
+          }
+        }, 420);
+      };
+
       window.switchToPlanMode = function() {
+        window.syncPlanIframeFromReadRoom();
         readOverlay.classList.remove("rm-visible");
         
         setTimeout(() => {
@@ -2040,23 +2068,9 @@ setInterval(() => {
       /* =========================================
          SHARED FOCUS SESSION TRIGGER
       ========================================= */
-      window.triggerSharedFocusSession = function(estimatedTime) {
-        // 1. Switch local screen to Reading Mode
-        switchToReadMode();
-        
-        // 2. Start local reading room timer inside the iframe
-        const readIframe = document.getElementById("readModeIframe");
-        if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.syncAndStartTimer === "function") {
-           readIframe.contentWindow.syncAndStartTimer(estimatedTime);
-        }
-
-        // 3. Broadcast to all peers in the Live Study Squad via PeerJS
-        const msg = { type: "START_SHARED_FOCUS", estimatedTime: estimatedTime };
-        if (isRoomHost) {
-          hostConnections.forEach(c => { if (c && c.open) c.send(msg); });
-        } else if (guestHostConn && guestHostConn.open) {
-          guestHostConn.send(msg);
-        }
+      window.triggerSharedFocusSession = function() {
+        // Open Reading Mode and highlight the integrated Variance & Actual Hours Tracker box
+        window.openReadRoomTracker();
       };
 
       /* =========================================
