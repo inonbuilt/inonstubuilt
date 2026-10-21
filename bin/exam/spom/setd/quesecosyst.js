@@ -24500,6 +24500,2891 @@ const caseStudies = [
     ],
     answer: 2,
     reason: "The chapter identifies the risk that some consumers may be digitally or financially excluded, concerns that algorithmic discrimination may produce biased decisions against certain groups, and loss of consumer control over data when individuals cannot understand which organisations access or process their data."
+  },
+  // CHapter 13
+  {
+    case_id: "ecosys_ch13_CS01",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>ShopBridge operates an online marketplace and physical retail stores. It allows customers to make payments through a mobile application using Unified Payments Interface (UPI). Customers use the service both to transfer money to other individuals and to pay merchants. ShopBridge maintains transaction records automatically and makes its digital payment facility available to customers throughout the day.</p>
+    `,
+    questions: [
+      {
+        question: "Which digital payment system is ShopBridge using for instant transactions through a mobile application?",
+        options: [
+          "A purpose-specific digital voucher",
+          "Unified Payments Interface (UPI)",
+          "A traditional paper-based payment system",
+          "A regulatory reporting system"
+        ],
+        answer: 1,
+        reason: "Unified Payments Interface (UPI) supports instant transactions through mobile applications, including person-to-person (P2P) and person-to-merchant (P2M) payments."
+      },
+      {
+        question: "When a customer uses UPI to pay ShopBridge for a purchase, what type of transaction is this?",
+        options: [
+          "Person-to-person (P2P) transaction",
+          "Regulatory compliance transaction",
+          "Person-to-merchant (P2M) transaction",
+          "Paper-based fund transfer"
+        ],
+        answer: 2,
+        reason: "A payment made by a customer to a merchant is a person-to-merchant (P2M) transaction."
+      },
+      {
+        question: "What is one benefit of automatically maintaining transaction records?",
+        options: [
+          "It supports automatic maintenance of transaction logs",
+          "It eliminates the need for every form of payment security",
+          "It converts every digital transaction into a cash transaction",
+          "It prevents customers from making electronic payments"
+        ],
+        answer: 0,
+        reason: "Automatic log maintenance is a benefit of digital payments because transaction records can be maintained electronically."
+      },
+      {
+        question: "Which benefit is demonstrated when ShopBridge makes its digital payment facility available throughout the day?",
+        options: [
+          "Elimination of every possible transaction risk",
+          "Removal of the need for payment records",
+          "Restriction of transactions to business hours",
+          "24/7 accessibility"
+        ],
+        answer: 3,
+        reason: "Digital payments provide 24/7 accessibility, allowing transactions to be made at different times rather than only during conventional business hours."
+      },
+      {
+        question: "What is the purpose of using a PIN or MPIN in a digital payment transaction?",
+        options: [
+          "To replace the bank account used for payment",
+          "To provide a security measure for the transaction",
+          "To convert UPI into a physical payment instrument",
+          "To eliminate the need for transaction authentication"
+        ],
+        answer: 1,
+        reason: "PINs and MPINs are security measures used in digital payment transactions."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS02",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>A bank wants to extend digital payment facilities to customers in a rural area. Some customers use basic mobile phones and do not have internet access. At a nearby banking service point, customers can also use Aadhaar-based payment services. The bank additionally offers a real-time electronic fund transfer service and distributes purpose-specific digital vouchers through QR codes or SMS.</p>
+    `,
+    questions: [
+      {
+        question: "Which digital payment facility is suitable for customers who do not have a smartphone or internet access?",
+        options: [
+          "Mobile wallet",
+          "A payment facility requiring an internet-based smartphone application",
+          "Unstructured Supplementary Service Data (USSD)",
+          "A paper-based accounting system"
+        ],
+        answer: 2,
+        reason: "Unstructured Supplementary Service Data (USSD) supports digital payments without requiring a smartphone or internet access."
+      },
+      {
+        question: "What is the full form of USSD?",
+        options: [
+          "Unstructured Supplementary Service Data",
+          "Unified Secure Service Database",
+          "Universal System for Secure Deposits",
+          "Unified Supplementary Software Design"
+        ],
+        answer: 0,
+        reason: "USSD stands for Unstructured Supplementary Service Data."
+      },
+      {
+        question: "Which service is based on Aadhaar-enabled transactions and supports fund transfer and KYC verification?",
+        options: [
+          "Bharat Interface for Money (BHIM)",
+          "Aadhaar Enabled Payment System (AEPS)",
+          "RuPay Cards",
+          "e-RUPI"
+        ],
+        answer: 1,
+        reason: "The Aadhaar Enabled Payment System (AEPS) supports Aadhaar-based payment services, including fund transfers and KYC-related verification."
+      },
+      {
+        question: "Which service provides real-time electronic fund transfers and is available 24/7?",
+        options: [
+          "A paper-based cheque register",
+          "A purpose-specific voucher",
+          "A customer loyalty programme",
+          "Immediate Payment Service (IMPS)"
+        ],
+        answer: 3,
+        reason: "Immediate Payment Service (IMPS) provides real-time electronic fund transfers and is available 24/7."
+      },
+      {
+        question: "Which facility uses a QR code or SMS to deliver a digital voucher for a specific purpose?",
+        options: [
+          "USSD",
+          "RuPay",
+          "e-RUPI",
+          "Mobile computing"
+        ],
+        answer: 2,
+        reason: "e-RUPI is a digital payment voucher delivered through a QR code or SMS for a specific purpose."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS03",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>Seva Foundation runs a programme to distribute benefits for a specified purpose through digital vouchers. Its payment arrangements also allow customers to use the BHIM application, make ATM withdrawals and point-of-sale (PoS) payments using RuPay cards, pay directly from their bank accounts using debit cards, and use mobile wallets for electronic payments.</p>
+    `,
+    questions: [
+      {
+        question: "Which facility is most directly suited to distributing a purpose-specific digital voucher through a QR code or SMS?",
+        options: [
+          "Immediate Payment Service (IMPS)",
+          "A debit card",
+          "e-RUPI",
+          "Mobile communication"
+        ],
+        answer: 2,
+        reason: "e-RUPI is a purpose-specific digital payment voucher delivered through a QR code or SMS."
+      },
+      {
+        question: "What does BHIM stand for?",
+        options: [
+          "Bharat Interface for Money",
+          "Banking Hub for Immediate Management",
+          "Business Handling and Investment Mechanism",
+          "Basic Hardware for Internet Management"
+        ],
+        answer: 0,
+        reason: "BHIM stands for Bharat Interface for Money and is a UPI-based application for digital transactions."
+      },
+      {
+        question: "Which payment instrument supports ATM withdrawals and point-of-sale (PoS) transactions in the case?",
+        options: [
+          "e-RUPI voucher only",
+          "RuPay card",
+          "RegTech software",
+          "An IoT sensor"
+        ],
+        answer: 1,
+        reason: "RuPay cards support digital payment activities that include ATM withdrawals and point-of-sale (PoS) transactions."
+      },
+      {
+        question: "How does a debit card generally settle a purchase made by a customer?",
+        options: [
+          "By issuing a purpose-specific digital voucher",
+          "By creating a regulatory compliance report",
+          "By storing the transaction exclusively as a paper record",
+          "By deducting the funds directly from the linked bank account"
+        ],
+        answer: 3,
+        reason: "A debit card deducts funds directly from the customer's linked bank account when a transaction is completed."
+      },
+      {
+        question: "Which statement best describes a mobile wallet?",
+        options: [
+          "It is a physical cash-only payment arrangement",
+          "It is a system used exclusively to prepare regulatory reports",
+          "It securely stores payment information and may offer cashback or discounts",
+          "It is a device used only to monitor bank branch visits"
+        ],
+        answer: 2,
+        reason: "Mobile wallets securely store payment information and may provide customer offers such as cashback or discounts."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS04",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>GreenBasket traditionally sold groceries only through its physical store. It has now introduced a website through which customers can purchase goods electronically. Customers can compare products, place orders at convenient times, and access the store outside its physical business hours. GreenBasket expects the website to reach more customers and improve operational efficiency.</p>
+    `,
+    questions: [
+      {
+        question: "Which term describes GreenBasket's electronic sale of goods through its website?",
+        options: [
+          "e-business",
+          "Quantum computing",
+          "RegTech",
+          "Internet of Things (IoT)"
+        ],
+        answer: 0,
+        reason: "e-business includes the electronic sale and purchase of goods and services."
+      },
+      {
+        question: "Which is a business benefit GreenBasket expects from selling through its website?",
+        options: [
+          "A guaranteed elimination of every security risk",
+          "Increased market reach",
+          "A requirement to serve customers only during physical store hours",
+          "A complete prohibition on electronic transactions"
+        ],
+        answer: 1,
+        reason: "e-business can increase a business's market reach by making its goods and services available through electronic channels."
+      },
+      {
+        question: "Which benefit is associated with customers being able to compare products and shop at convenient times?",
+        options: [
+          "Increased dependence on physical paperwork",
+          "Restriction of product information",
+          "Elimination of all customer choices",
+          "Convenience and time-saving"
+        ],
+        answer: 3,
+        reason: "e-business can provide customer convenience, save time, and allow customers to compare available products."
+      },
+      {
+        question: "Customers can place orders even when the physical store is closed. Which benefit does this demonstrate?",
+        options: [
+          "Mandatory face-to-face service",
+          "Restricted market access",
+          "24/7 accessibility",
+          "Removal of electronic records"
+        ],
+        answer: 2,
+        reason: "Electronic business channels can provide customers with 24/7 accessibility, beyond the opening hours of a physical store."
+      },
+      {
+        question: "Which business outcome is GreenBasket seeking by moving some operations online?",
+        options: [
+          "Higher dependence on manual transactions",
+          "Reduced costs and improved operational efficiency",
+          "Reduced access to customers",
+          "An increase in paper-based processing as the main objective"
+        ],
+        answer: 1,
+        reason: "e-business can help businesses reduce costs and improve operational efficiency."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS05",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>QuickCart operates an online store that maintains customer details and accepts electronic orders. An internal review identifies weaknesses in access restrictions, occasional service downtime, and concerns about the privacy of customer information. Management also needs to ensure that the business follows applicable requirements. The company plans to strengthen its policies and prepare for service disruptions.</p>
+    `,
+    questions: [
+      {
+        question: "What risk arises when unauthorised persons can access QuickCart's online systems?",
+        options: [
+          "Unauthorised access risk",
+          "Improved customer convenience",
+          "Increased market reach",
+          "Reduced operating costs"
+        ],
+        answer: 0,
+        reason: "Unauthorised access is a risk associated with e-business and should be addressed through suitable security policies and controls."
+      },
+      {
+        question: "Which issue is most directly associated with concerns about how QuickCart handles customer information?",
+        options: [
+          "Mobile hardware performance",
+          "Data privacy risk",
+          "Portfolio optimisation",
+          "Capacity planning for ATMs"
+        ],
+        answer: 1,
+        reason: "Data privacy is an important risk in e-business because customer information must be appropriately protected and handled."
+      },
+      {
+        question: "Which measure is specifically relevant to preparing for unexpected service disruptions?",
+        options: [
+          "Discontinuing transaction records",
+          "Increasing the website's product range only",
+          "Removing all digital payment options",
+          "Preparing a disaster recovery plan"
+        ],
+        answer: 3,
+        reason: "A disaster recovery plan helps an organisation prepare to restore systems and services after a disruption."
+      },
+      {
+        question: "Which approach best supports the management of unauthorised access, data privacy and compliance risks in e-business?",
+        options: [
+          "Ignoring customer information after collecting it",
+          "Removing all transaction monitoring",
+          "Establishing robust policies to address the identified risks",
+          "Allowing unrestricted access to business systems"
+        ],
+        answer: 2,
+        reason: "Robust policies are an important part of addressing e-business risks, including unauthorised access, data privacy and compliance."
+      },
+      {
+        question: "Which of the following is a disadvantage that may be encountered when establishing an e-business?",
+        options: [
+          "The ability to offer electronic sales",
+          "High start-up costs",
+          "The opportunity to reach more customers",
+          "Convenience for customers"
+        ],
+        answer: 1,
+        reason: "High start-up costs are one of the disadvantages associated with establishing an e-business."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS06",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>MetroBank is considering interconnected devices that collect and transmit data over a network. The bank wants to use connected devices to help secure point-of-sale (PoS) systems, support activities involving debt collection, tailor rewards based on consumer behaviour, and monitor activity at branches and ATMs so that operational resources can be planned appropriately.</p>
+    `,
+    questions: [
+      {
+        question: "Which emerging technology involves interconnected devices that collect and transmit data over networks?",
+        options: [
+          "e-business",
+          "RegTech",
+          "Internet of Things (IoT)",
+          "e-RUPI"
+        ],
+        answer: 2,
+        reason: "The Internet of Things (IoT) refers to interconnected devices that collect and transmit data over networks."
+      },
+      {
+        question: "Which IoT application is relevant when MetroBank uses connected devices to support monitoring activities involving debtors?",
+        options: [
+          "Debt collection",
+          "e-RUPI voucher distribution",
+          "Mobile wallet management only",
+          "Electronic product comparison"
+        ],
+        answer: 0,
+        reason: "IoT-enabled devices can be used in debt collection by monitoring debtor-related activities."
+      },
+      {
+        question: "Which application is relevant when connected devices are used to help secure PoS systems?",
+        options: [
+          "Mobile computing",
+          "Fraud prevention",
+          "e-business product comparison",
+          "Compliance reporting"
+        ],
+        answer: 1,
+        reason: "Fraud prevention is an IoT application in finance and accounting; connected devices can be used to help secure PoS systems."
+      },
+      {
+        question: "MetroBank uses customer behaviour information to tailor rewards and offers. Which IoT application does this illustrate?",
+        options: [
+          "Hardware compatibility",
+          "Disaster recovery planning",
+          "Regulatory reporting",
+          "Personalized rewards"
+        ],
+        answer: 3,
+        reason: "IoT-related customer information can support personalized rewards by helping organisations tailor offers based on consumer behaviour."
+      },
+      {
+        question: "Which IoT application helps MetroBank plan branch operations and ATM resources?",
+        options: [
+          "Purpose-specific vouchers",
+          "Cryptographic protocol replacement",
+          "Capacity planning",
+          "Electronic product comparison"
+        ],
+        answer: 2,
+        reason: "Capacity planning is an IoT application that can help optimise branch and ATM operations."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS07",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>MetroBank begins installing IoT devices at selected locations. Some new devices are incompatible with the bank's existing systems. Other devices experience unreliable network connections, and a faulty sensor supplies incorrect readings. The security team is also concerned that connected devices may expose data to unauthorised access or cyber-attacks.</p>
+    `,
+    questions: [
+      {
+        question: "The new IoT devices cannot work properly with MetroBank's existing systems. Which implementation challenge does this illustrate?",
+        options: [
+          "Hardware compatibility issues",
+          "24/7 accessibility",
+          "Personalized rewards",
+          "Compliance reporting"
+        ],
+        answer: 0,
+        reason: "Hardware compatibility issues can arise when IoT devices do not work properly with existing systems."
+      },
+      {
+        question: "Which challenge is illustrated when an IoT device cannot reliably communicate with the network?",
+        options: [
+          "Improved customer service",
+          "Connectivity issues",
+          "Reduced start-up costs",
+          "Automated compliance reporting"
+        ],
+        answer: 1,
+        reason: "Connectivity is an important implementation consideration for IoT because connected devices rely on communication to transmit data."
+      },
+      {
+        question: "The faulty sensor provides readings that do not correctly represent the situation being monitored. Which challenge is most directly involved?",
+        options: [
+          "Increased market reach",
+          "24/7 payment accessibility",
+          "Mobile communication",
+          "Incorrect data capture"
+        ],
+        answer: 3,
+        reason: "Incorrect data capture can occur when IoT sensors provide inaccurate readings, potentially affecting subsequent analysis."
+      },
+      {
+        question: "What type of concern arises when connected IoT devices may expose data to cyber-attacks?",
+        options: [
+          "Time-saving",
+          "Customer convenience",
+          "Data security",
+          "Operational efficiency"
+        ],
+        answer: 2,
+        reason: "Data security is a challenge in IoT implementation because connected devices and the data they handle may be exposed to security threats."
+      },
+      {
+        question: "Which group contains the main IoT implementation challenges identified in MetroBank's review?",
+        options: [
+          "Convenience, market reach, and time-saving",
+          "Hardware compatibility, connectivity, data accuracy, and data security",
+          "P2P payments, P2M payments, and voucher delivery",
+          "Portfolio optimisation, trading, and risk profiling"
+        ],
+        answer: 1,
+        reason: "IoT implementation challenges include hardware compatibility, connectivity, incorrect data capture or data accuracy, and data security concerns."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS08",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>A financial organisation is exploring quantum computing for complex financial calculations. Its investment team wants to evaluate portfolio strategies, its risk team wants to simulate risk scenarios more quickly, and its fraud team is interested in improving fraud detection. The organisation also recognises that quantum computing may create challenges for existing cryptographic protocols.</p>
+    `,
+    questions: [
+      {
+        question: "Which concept is associated with quantum computing?",
+        options: [
+          "Paper-based data processing",
+          "Mobile wallets",
+          "Quantum bits (qubits) and principles such as superposition",
+          "Electronic vouchers delivered by SMS"
+        ],
+        answer: 2,
+        reason: "Quantum computing uses quantum-mechanical principles, including superposition, and operates with quantum bits known as qubits."
+      },
+      {
+        question: "Which application is most directly relevant to the investment team's evaluation of portfolio strategies?",
+        options: [
+          "Trading optimisation and portfolio management",
+          "e-RUPI voucher distribution",
+          "Hardware compatibility testing for IoT devices",
+          "Electronic product comparisons"
+        ],
+        answer: 0,
+        reason: "Quantum computing may be applied to trading optimisation and portfolio management by helping evaluate complex scenarios."
+      },
+      {
+        question: "The risk team wants to simulate different risk scenarios more quickly. Which financial application is relevant?",
+        options: [
+          "Mobile wallet management",
+          "Customer convenience",
+          "e-business market reach",
+          "Risk profiling"
+        ],
+        answer: 3,
+        reason: "Quantum computing may support risk profiling through faster simulations for risk assessment."
+      },
+      {
+        question: "Which potential benefit is relevant to the organisation's fraud team?",
+        options: [
+          "Eliminating every possible financial risk",
+          "Improving fraud detection",
+          "Replacing all data with paper records",
+          "Removing the need for financial analysis"
+        ],
+        answer: 1,
+        reason: "Quantum computing may improve targeting models and support fraud detection in financial organisations."
+      },
+      {
+        question: "What is a potential cybersecurity threat associated with advances in quantum computing?",
+        options: [
+          "An inability to perform any calculations",
+          "The end of all digital payments",
+          "The potential to break existing cryptographic protocols",
+          "The automatic elimination of every network connection"
+        ],
+        answer: 2,
+        reason: "A potential threat associated with quantum computing is that it could break cryptographic protocols used to protect information and communications."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS09",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>FinTrust, a financial services organisation, is introducing Regulatory Technology (RegTech) to support its compliance activities. The system can help generate regulatory reports, monitor transactions for unusual patterns, identify potential fraud, and strengthen the organisation's processes for preventing money laundering. Management also expects technology-supported compliance activities to reduce the effort involved in meeting regulatory obligations.</p>
+    `,
+    questions: [
+      {
+        question: "What does RegTech stand for?",
+        options: [
+          "Regional Transaction Technology",
+          "Regulatory Technology",
+          "Registered Technical Tools",
+          "Reliable Transfer Technology"
+        ],
+        answer: 1,
+        reason: "RegTech stands for Regulatory Technology and involves using technology to support regulatory compliance."
+      },
+      {
+        question: "What is the principal role of RegTech in FinTrust's activities?",
+        options: [
+          "To manage only physical cash",
+          "To replace all financial services with mobile hardware",
+          "To prevent organisations from preparing reports",
+          "To support regulatory compliance, monitoring, and reporting"
+        ],
+        answer: 3,
+        reason: "RegTech uses technology to support compliance, monitoring, and reporting in the financial sector."
+      },
+      {
+        question: "Which RegTech application is illustrated by the automated preparation of reports required by regulators?",
+        options: [
+          "Compliance reporting",
+          "Personalized rewards",
+          "Capacity planning",
+          "Mobile communication"
+        ],
+        answer: 0,
+        reason: "Compliance reporting is a RegTech application that can automate the generation of regulatory reports."
+      },
+      {
+        question: "The system monitors transactions to identify unusual patterns that may indicate fraud. Which application does this demonstrate?",
+        options: [
+          "e-business product comparison",
+          "Mobile hardware management",
+          "Fraud detection",
+          "Digital voucher distribution"
+        ],
+        answer: 2,
+        reason: "RegTech can support fraud detection by monitoring transactions and identifying anomalies."
+      },
+      {
+        question: "Which RegTech activity is directly relevant to preventing the use of financial services for money laundering?",
+        options: [
+          "Capacity planning",
+          "Strengthening Anti-Money Laundering (AML) processes",
+          "Increasing start-up costs",
+          "Managing mobile operating systems"
+        ],
+        answer: 1,
+        reason: "RegTech can strengthen Anti-Money Laundering (AML) processes as part of regulatory compliance in financial services."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS10",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>AccountAssist allows its employees to access work information and applications while travelling or working away from the office. Employees use smartphones and laptops to access the service. The organisation relies on communication technologies such as WLAN and GSM, together with mobile applications and operating systems. Management expects the arrangement to improve flexibility, productivity, communication, and customer service.</p>
+    `,
+    questions: [
+      {
+        question: "Which concept describes accessing information and applications remotely through mobile devices?",
+        options: [
+          "e-RUPI",
+          "RegTech",
+          "Quantum computing",
+          "Mobile computing"
+        ],
+        answer: 3,
+        reason: "Mobile computing enables users to access information and applications from different locations using mobile devices."
+      },
+      {
+        question: "Which component of mobile computing includes technologies such as WLAN, satellite communication, and GSM?",
+        options: [
+          "Mobile software",
+          "Mobile communication",
+          "Digital voucher management",
+          "Regulatory reporting"
+        ],
+        answer: 1,
+        reason: "Mobile communication includes communication technologies such as WLAN, satellite communication, and GSM."
+      },
+      {
+        question: "Which of the following is an example of mobile hardware used by AccountAssist employees?",
+        options: [
+          "A regulatory compliance report",
+          "A purpose-specific voucher",
+          "A financial risk profile",
+          "A smartphone or laptop"
+        ],
+        answer: 3,
+        reason: "Smartphones and laptops are examples of mobile hardware used to access information and applications."
+      },
+      {
+        question: "Which component includes mobile applications and operating systems such as Android and iOS?",
+        options: [
+          "Mobile software",
+          "Mobile communication",
+          "Digital payment vouchers",
+          "Hardware compatibility controls"
+        ],
+        answer: 0,
+        reason: "Mobile software includes applications and operating systems such as Android and iOS."
+      },
+      {
+        question: "Which is a benefit of mobile computing that AccountAssist expects to achieve?",
+        options: [
+          "The elimination of all cybersecurity risks",
+          "The restriction of work to the office",
+          "Improved flexibility, productivity, and real-time communication",
+          "The removal of mobile applications"
+        ],
+        answer: 2,
+        reason: "Mobile computing can enhance flexibility and productivity, support real-time communication, and improve operational efficiency and customer service."
+      }
+    ]
+  },
+  {
+    case_id: "ecosys_ch13_CS11",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>CityMart accepts electronic payments from customers purchasing goods at its stores. Some customers use debit cards linked to their bank accounts, while others use credit cards that provide a credit facility. The store also accepts card payments through point-of-sale (PoS) terminals. Management wants its employees to understand the differences between these payment instruments.</p>
+    `,
+    questions: [
+      {
+        question: "When a customer pays using a debit card, from where are the funds generally deducted?",
+        options: [
+          "From a purpose-specific digital voucher",
+          "From the customer's linked bank account",
+          "From a regulatory reporting account",
+          "From an IoT device"
+        ],
+        answer: 1,
+        reason: "A debit card generally deducts the transaction amount directly from the customer's linked bank account."
+      },
+      {
+        question: "Which statement best describes a credit card?",
+        options: [
+          "It can be used only to withdraw money deposited in a savings account",
+          "It is a digital voucher that can be redeemed only for a specified purpose",
+          "It is a device used to collect sensor data",
+          "It allows the customer to make payments using a credit facility, subject to the applicable terms"
+        ],
+        answer: 3,
+        reason: "A credit card provides a credit facility that enables a cardholder to make purchases and settle the amount according to the applicable repayment terms."
+      },
+      {
+        question: "What is the role of a point-of-sale (PoS) terminal in CityMart?",
+        options: [
+          "To provide a facility for accepting electronic payments at the point of purchase",
+          "To issue quantum computing instructions",
+          "To prepare regulatory laws",
+          "To replace all customer payment instruments with cash"
+        ],
+        answer: 0,
+        reason: "A point-of-sale (PoS) terminal is used by merchants to accept electronic payments at the point of purchase."
+      },
+      {
+        question: "Which of the following is a payment card associated with India's domestic card payment network?",
+        options: [
+          "USSD",
+          "e-RUPI",
+          "RuPay",
+          "RegTech"
+        ],
+        answer: 2,
+        reason: "RuPay is a card payment network in India and is associated with payment cards used for electronic transactions."
+      },
+      {
+        question: "Which statement correctly distinguishes a debit card from a credit card?",
+        options: [
+          "Both can be used only for purpose-specific vouchers",
+          "A debit card generally uses funds from the linked bank account, whereas a credit card provides a credit facility",
+          "A credit card is exclusively used for collecting IoT sensor readings",
+          "A debit card is a regulatory compliance technology"
+        ],
+        answer: 1,
+        reason: "A debit card generally uses funds available in the linked bank account, whereas a credit card enables payments through a credit facility."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS12",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>PayPocket provides a mobile wallet through which customers can make electronic payments. Customers use their mobile devices instead of carrying cash for every purchase. The company promotes convenient payment processing and offers eligible customers cashback and discounts. Management also advises users to protect access to their devices and payment applications.</p>
+    `,
+    questions: [
+      {
+        question: "Which payment facility is PayPocket providing?",
+        options: [
+          "Quantum computing",
+          "Mobile computing hardware manufacturing",
+          "A regulatory reporting framework",
+          "A mobile wallet"
+        ],
+        answer: 3,
+        reason: "A mobile wallet is a digital payment facility that allows users to make electronic payments through a mobile device."
+      },
+      {
+        question: "Which benefit is demonstrated when customers can pay through PayPocket rather than carrying cash for every purchase?",
+        options: [
+          "Convenience in making payments",
+          "Elimination of every possible security threat",
+          "Removal of all electronic transaction records",
+          "A requirement to visit a physical bank for each purchase"
+        ],
+        answer: 0,
+        reason: "Mobile wallets provide convenience by enabling electronic payments through mobile devices."
+      },
+      {
+        question: "Why might PayPocket offer cashback and discounts to eligible customers?",
+        options: [
+          "To prevent the use of mobile devices",
+          "To make every payment a paper-based transaction",
+          "To provide customer offers associated with mobile wallet usage",
+          "To eliminate the need for payment processing"
+        ],
+        answer: 2,
+        reason: "Mobile wallets may provide customer offers such as cashback and discounts as part of their payment services."
+      },
+      {
+        question: "Which action best supports the security of a mobile wallet?",
+        options: [
+          "Sharing payment credentials with unknown persons",
+          "Protecting access to the mobile device and payment application",
+          "Ignoring suspicious activity on the account",
+          "Allowing unrestricted access to the payment application"
+        ],
+        answer: 1,
+        reason: "Protecting access to the device and payment application is a sensible security measure for reducing the risk of unauthorised use."
+      },
+      {
+        question: "Which statement best describes the role of a mobile wallet in digital payments?",
+        options: [
+          "It is used only for regulatory reporting",
+          "It is a replacement for every banking and financial service",
+          "It can operate only as a physical payment card",
+          "It provides a mobile-based facility for electronic payments"
+        ],
+        answer: 3,
+        reason: "A mobile wallet provides a mobile-based facility for making electronic payments."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS13",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>CraftWorld is a small business that previously sold handmade products only to customers visiting its local shop. It introduces an e-business platform through which customers can view product information, compare available items and place orders online. The business hopes to reach customers beyond its local area and receive orders outside the shop's normal opening hours.</p>
+    `,
+    questions: [
+      {
+        question: "Which feature allows CraftWorld to offer products through an electronic platform?",
+        options: [
+          "Quantum computing",
+          "Regulatory reporting",
+          "e-business",
+          "IoT sensor calibration"
+        ],
+        answer: 2,
+        reason: "e-business involves conducting business activities electronically, including offering and selling products through online platforms."
+      },
+      {
+        question: "Which advantage is demonstrated when CraftWorld can reach customers outside its local area?",
+        options: [
+          "Increased market reach",
+          "Mandatory restriction to local customers",
+          "Elimination of electronic transactions",
+          "Dependence exclusively on physical visits"
+        ],
+        answer: 0,
+        reason: "An e-business platform can expand a business's market reach beyond the geographical area served by its physical shop."
+      },
+      {
+        question: "Which benefit is illustrated by the ability to receive orders outside normal shop opening hours?",
+        options: [
+          "Removal of customer choice",
+          "Restriction of all activities to business hours",
+          "A requirement to handle every order manually",
+          "Greater accessibility through electronic business channels"
+        ],
+        answer: 3,
+        reason: "An online business platform can allow customers to access products and place orders beyond the opening hours of a physical store."
+      },
+      {
+        question: "How does displaying product information online benefit CraftWorld's customers?",
+        options: [
+          "It prevents customers from reviewing products",
+          "It enables customers to examine available information and compare products",
+          "It requires customers to visit the shop before viewing any products",
+          "It removes the need for product information"
+        ],
+        answer: 1,
+        reason: "Electronic business platforms can make product information available online, helping customers review and compare products."
+      },
+      {
+        question: "Which outcome can CraftWorld reasonably expect from using an e-business platform?",
+        options: [
+          "A guarantee that no competitor can enter the market",
+          "A complete elimination of every operating expense",
+          "Opportunities to reach more customers and provide greater convenience",
+          "The removal of all electronic communication"
+        ],
+        answer: 2,
+        reason: "e-business can help businesses reach a broader customer base and provide greater convenience through online access."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS14",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>StylePoint sells clothing through an online store. Customers appreciate being able to place orders remotely, but some want to examine products physically before purchasing. During a promotional campaign, a technical failure makes the website unavailable for several hours. Management also receives complaints about concerns over the privacy and security of customer information.</p>
+    `,
+    questions: [
+      {
+        question: "A customer wants to examine a garment physically before purchasing it. Which limitation of e-business is illustrated?",
+        options: [
+          "Inability to reach customers outside the local area",
+          "A requirement that all products be sold in physical shops",
+          "Automatic elimination of online product information",
+          "Customers may be unable to physically examine products before purchasing"
+        ],
+        answer: 3,
+        reason: "Unlike a physical store, an online platform does not normally allow customers to physically examine a product before placing an order."
+      },
+      {
+        question: "What is the immediate business concern when StylePoint's website becomes unavailable during a promotional campaign?",
+        options: [
+          "Customers may be unable to access the online store and place orders",
+          "The website automatically becomes available to all customers",
+          "All digital transactions are converted into cash",
+          "The business no longer needs to manage its online operations"
+        ],
+        answer: 0,
+        reason: "Website downtime can interrupt customer access to an e-business platform and prevent customers from placing orders during the disruption."
+      },
+      {
+        question: "Customer complaints about the handling of personal information relate most directly to which risk?",
+        options: [
+          "Market reach",
+          "Data privacy risk",
+          "Convenience",
+          "Reduced physical paperwork"
+        ],
+        answer: 1,
+        reason: "Data privacy risk concerns the appropriate handling and protection of customers' personal information."
+      },
+      {
+        question: "Which risk is most directly associated with threats to the security of StylePoint's online systems?",
+        options: [
+          "Greater customer accessibility",
+          "Increased convenience",
+          "Cybersecurity risk",
+          "Improved product comparison"
+        ],
+        answer: 2,
+        reason: "Cybersecurity risk includes threats that may compromise the security of online systems and the information processed by them."
+      },
+      {
+        question: "Which approach would best help StylePoint address the identified e-business concerns?",
+        options: [
+          "Ignore customer complaints and technical failures",
+          "Remove all online product information",
+          "Allow unrestricted access to customer information",
+          "Strengthen security and privacy controls and prepare for service interruptions"
+        ],
+        answer: 3,
+        reason: "Appropriate security and privacy controls, together with preparations for service interruptions, can help address important risks associated with e-business."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS15",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>OfficeSource procures office supplies from vendors and sells them through an online business platform. Its managers want to reduce the time spent processing orders, keep reliable transaction records and improve the movement of information between the purchasing and sales teams. They also recognise that the business must manage technology-related risks as its dependence on electronic operations increases.</p>
+    `,
+    questions: [
+      {
+        question: "Which business approach is OfficeSource using when it conducts purchasing and sales activities electronically?",
+        options: [
+          "Quantum computing",
+          "e-business",
+          "RegTech only",
+          "Mobile hardware production"
+        ],
+        answer: 1,
+        reason: "e-business involves carrying out business activities electronically, including relevant purchasing, sales and operational activities."
+      },
+      {
+        question: "How can electronic processing of orders help OfficeSource?",
+        options: [
+          "By requiring every order to be rewritten manually",
+          "By removing the need to record transactions",
+          "By preventing information from moving between teams",
+          "By improving processing efficiency and reducing manual effort"
+        ],
+        answer: 3,
+        reason: "Electronic business processes can improve efficiency by reducing manual processing and helping information flow through business operations."
+      },
+      {
+        question: "Why are reliable electronic transaction records useful to OfficeSource?",
+        options: [
+          "They support the recording and review of business transactions",
+          "They make all business risks impossible",
+          "They eliminate the need for any business procedures",
+          "They prevent management from reviewing orders"
+        ],
+        answer: 0,
+        reason: "Reliable transaction records support the recording and review of activities carried out through electronic business systems."
+      },
+      {
+        question: "What should OfficeSource consider as it becomes more dependent on electronic operations?",
+        options: [
+          "Discontinuing all security procedures",
+          "Allowing unrestricted access to all systems",
+          "Managing technology-related risks through suitable controls",
+          "Ignoring operational interruptions"
+        ],
+        answer: 2,
+        reason: "Greater dependence on electronic operations makes it important to identify and manage technology-related risks through appropriate controls."
+      },
+      {
+        question: "Which is a reasonable benefit of improving information flow between purchasing and sales?",
+        options: [
+          "Increased duplication of every record",
+          "Better coordination of business activities",
+          "Elimination of all customer service activities",
+          "Mandatory use of paper for every transaction"
+        ],
+        answer: 1,
+        reason: "Improved information flow can support coordination between business functions and help them process activities more efficiently."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS16",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>FinTrack uses connected devices to collect information about the operation of selected financial service locations. The devices transmit readings to a central system, where staff can review operating conditions and use the information for planning. Management expects this approach to provide more timely information than relying entirely on occasional manual observations.</p>
+    `,
+    questions: [
+      {
+        question: "Which technology is illustrated by the connected devices collecting and transmitting information?",
+        options: [
+          "e-business",
+          "Mobile wallet technology only",
+          "Internet of Things (IoT)",
+          "RegTech reporting only"
+        ],
+        answer: 2,
+        reason: "The Internet of Things (IoT) involves interconnected devices that collect and transmit data through communication networks."
+      },
+      {
+        question: "What is the role of the devices' sensors in the case?",
+        options: [
+          "To collect information about the conditions being monitored",
+          "To eliminate the need for any information",
+          "To replace all financial regulations",
+          "To issue credit cards automatically"
+        ],
+        answer: 0,
+        reason: "Sensors in connected devices collect information about the conditions or activities being monitored."
+      },
+      {
+        question: "How does transmitting the readings to a central system help FinTrack?",
+        options: [
+          "It ensures that information can never be incorrect",
+          "It prevents staff from reviewing data",
+          "It converts the information into physical cash",
+          "It makes collected information available for review and analysis"
+        ],
+        answer: 3,
+        reason: "Transmitting collected data to a system allows it to be reviewed and used for analysis and operational decisions."
+      },
+      {
+        question: "Which operational benefit does FinTrack expect from receiving data more frequently?",
+        options: [
+          "A guarantee that every risk disappears",
+          "More timely information for operational monitoring and planning",
+          "A requirement to rely only on occasional manual observations",
+          "The elimination of all network communication"
+        ],
+        answer: 1,
+        reason: "Connected devices can provide more timely data, supporting operational monitoring and planning."
+      },
+      {
+        question: "What is an important consideration when FinTrack relies on data collected by connected devices?",
+        options: [
+          "All sensor readings must be accepted without review",
+          "The organisation should stop monitoring device performance",
+          "The accuracy and reliability of collected data should be considered",
+          "Collected information should never be reviewed"
+        ],
+        answer: 2,
+        reason: "The usefulness of IoT information depends in part on the accuracy and reliability of the data collected by connected devices."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS17",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>SecureLedger plans to introduce additional IoT devices to support its financial operations. Before deployment, the project team discovers that devices from different suppliers may not work with all existing systems. The team also needs dependable network connectivity, reliable data and appropriate protection against unauthorised access. Management asks the team to assess these matters before expanding the deployment.</p>
+    `,
+    questions: [
+      {
+        question: "What issue arises when IoT devices from different suppliers do not work with existing systems?",
+        options: [
+          "Improved 24/7 accessibility",
+          "Hardware or system compatibility issues",
+          "Increased customer convenience",
+          "Greater market reach"
+        ],
+        answer: 1,
+        reason: "Compatibility problems can arise when IoT devices do not work properly with existing hardware, software or systems."
+      },
+      {
+        question: "Why is dependable network connectivity important to SecureLedger's IoT deployment?",
+        options: [
+          "It eliminates the need to collect data",
+          "It ensures that every sensor reading is correct",
+          "It removes the need for device security",
+          "Connected devices need communication links to transmit data"
+        ],
+        answer: 3,
+        reason: "IoT devices rely on communication links to transmit collected data, making network connectivity an important implementation consideration."
+      },
+      {
+        question: "Which matter should be considered when assessing the reliability of IoT data?",
+        options: [
+          "Whether the collected readings accurately represent the monitored conditions",
+          "Whether the devices can avoid collecting any data",
+          "Whether network communication can be permanently disabled",
+          "Whether management can ignore the collected information"
+        ],
+        answer: 0,
+        reason: "Reliable IoT-based decisions depend on whether the collected information accurately represents the conditions being monitored."
+      },
+      {
+        question: "Which risk is associated with unauthorised access to connected devices and their data?",
+        options: [
+          "Increased convenience",
+          "Operational flexibility",
+          "Data security risk",
+          "Market expansion"
+        ],
+        answer: 2,
+        reason: "Unauthorised access can threaten the security of connected devices and the data they process or transmit."
+      },
+      {
+        question: "What is the most appropriate approach before SecureLedger expands its IoT deployment?",
+        options: [
+          "Deploy every device without any assessment",
+          "Assess compatibility, connectivity, data reliability and security",
+          "Ignore device and network failures",
+          "Remove all procedures for managing access"
+        ],
+        answer: 1,
+        reason: "Assessing compatibility, connectivity, data reliability and security helps identify IoT implementation challenges before deployment."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS18",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>A financial institution is studying quantum computing to evaluate computationally demanding financial problems. Its research team is examining possible applications in portfolio optimisation, trading strategies and risk analysis. The team also recognises that quantum computing is based on quantum-mechanical principles and may have implications for cryptographic methods used to protect information.</p>
+    `,
+    questions: [
+      {
+        question: "Which computing approach is the institution studying?",
+        options: [
+          "Mobile wallet processing",
+          "e-business order management",
+          "Regulatory reporting",
+          "Quantum computing"
+        ],
+        answer: 3,
+        reason: "Quantum computing is a computing approach based on quantum-mechanical principles and is being explored for computationally demanding problems."
+      },
+      {
+        question: "Which concept is directly associated with quantum computing?",
+        options: [
+          "Paper-based transaction processing",
+          "Quantum bits, also known as qubits",
+          "Purpose-specific payment vouchers",
+          "Mobile operating systems only"
+        ],
+        answer: 1,
+        reason: "Quantum bits, or qubits, are the basic units of information used in quantum computing."
+      },
+      {
+        question: "Which financial activity is relevant to the team's study of portfolio optimisation?",
+        options: [
+          "Preparing mobile devices for retail sale",
+          "Distributing e-RUPI vouchers",
+          "Evaluating alternative investment allocations",
+          "Resolving hardware compatibility issues in IoT"
+        ],
+        answer: 2,
+        reason: "Portfolio optimisation involves evaluating investment allocations, making it a relevant potential financial application of quantum computing."
+      },
+      {
+        question: "How may quantum computing be relevant to complex risk analysis?",
+        options: [
+          "It may help evaluate computationally demanding financial scenarios",
+          "It guarantees that financial risks will never occur",
+          "It eliminates the need for financial data",
+          "It converts every risk assessment into a paper record"
+        ],
+        answer: 0,
+        reason: "Quantum computing is being explored for computationally demanding problems, including potential applications in financial risk analysis."
+      },
+      {
+        question: "Which security concern is associated with advances in quantum computing?",
+        options: [
+          "It makes all electronic records unnecessary",
+          "It prevents financial institutions from using computers",
+          "It guarantees that every existing encryption method will remain secure",
+          "It may threaten cryptographic methods used to protect information"
+        ],
+        answer: 3,
+        reason: "Advances in quantum computing may threaten certain existing cryptographic methods, making the security implications an important consideration."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS19",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>ComplyFirst provides technology-supported compliance services to financial institutions. Its platform helps organisations organise compliance information, monitor relevant activities and prepare information needed for regulatory obligations. The institutions hope to reduce repetitive manual work and improve the efficiency of their compliance processes.</p>
+    `,
+    questions: [
+      {
+        question: "Which technology area is ComplyFirst supporting?",
+        options: [
+          "Mobile computing hardware",
+          "Internet of Things device manufacturing",
+          "Regulatory Technology (RegTech)",
+          "Digital voucher distribution only"
+        ],
+        answer: 2,
+        reason: "Regulatory Technology (RegTech) involves using technology to support regulatory compliance activities."
+      },
+      {
+        question: "Which activity is an example of technology-supported compliance work?",
+        options: [
+          "Removing all compliance records",
+          "Organising compliance information and preparing regulatory information",
+          "Preventing institutions from monitoring activities",
+          "Replacing all financial services with physical products"
+        ],
+        answer: 1,
+        reason: "RegTech can support compliance information management, monitoring and the preparation of information required for regulatory obligations."
+      },
+      {
+        question: "How can RegTech help reduce the effort involved in repetitive compliance tasks?",
+        options: [
+          "By requiring every task to be completed manually",
+          "By removing the need to follow applicable requirements",
+          "By ignoring data received from the institution",
+          "By automating suitable compliance activities"
+        ],
+        answer: 3,
+        reason: "Technology-supported automation can reduce repetitive manual effort in suitable compliance activities."
+      },
+      {
+        question: "Which benefit is ComplyFirst seeking by improving the efficiency of compliance processes?",
+        options: [
+          "More efficient use of resources for compliance activities",
+          "Guaranteed elimination of all regulatory obligations",
+          "A complete end to regulatory monitoring",
+          "Removal of all records relating to compliance"
+        ],
+        answer: 0,
+        reason: "RegTech can help improve the efficiency of compliance processes and the use of resources involved in meeting regulatory obligations."
+      },
+      {
+        question: "Which statement best describes the relationship between RegTech and regulatory obligations?",
+        options: [
+          "RegTech replaces all laws and regulations",
+          "RegTech allows organisations to ignore compliance requirements",
+          "RegTech uses technology to assist organisations in meeting compliance requirements",
+          "RegTech is used only for managing mobile hardware"
+        ],
+        answer: 2,
+        reason: "RegTech assists organisations in managing and meeting regulatory compliance requirements; it does not replace the obligations themselves."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS20",
+    difficulty: "Easy",
+    chapter: "Chapter13",
+    caseText: `
+      <p>AccountConnect enables employees to access work applications while travelling or working outside the office. Employees use smartphones and laptops, communication networks provide connectivity, and mobile operating systems and applications provide access to the required services. The organisation expects this arrangement to support flexible working, timely information exchange and improved responsiveness to customers.</p>
+    `,
+    questions: [
+      {
+        question: "Which technology enables employees to access applications and information while working away from the office?",
+        options: [
+          "e-RUPI",
+          "RegTech",
+          "Quantum computing",
+          "Mobile computing"
+        ],
+        answer: 3,
+        reason: "Mobile computing enables users to access information and applications while moving between locations or working away from a fixed workplace."
+      },
+      {
+        question: "Which items in the case are examples of mobile hardware?",
+        options: [
+          "Smartphones and laptops",
+          "Regulatory reports",
+          "Digital payment vouchers",
+          "Compliance procedures"
+        ],
+        answer: 0,
+        reason: "Smartphones and laptops are examples of mobile hardware used to access applications and information."
+      },
+      {
+        question: "What role do communication networks play in AccountConnect?",
+        options: [
+          "They replace mobile software entirely",
+          "They provide connectivity for accessing and exchanging information",
+          "They eliminate the need for mobile hardware",
+          "They ensure that no security controls are required"
+        ],
+        answer: 1,
+        reason: "Communication networks provide the connectivity needed for mobile devices to access services and exchange information."
+      },
+      {
+        question: "Which items are examples of mobile software?",
+        options: [
+          "Network towers only",
+          "Physical laptop components only",
+          "Mobile operating systems and applications",
+          "Digital payment cards only"
+        ],
+        answer: 2,
+        reason: "Mobile software includes mobile operating systems and applications used to provide functionality on mobile devices."
+      },
+      {
+        question: "Which expected benefit is most directly associated with AccountConnect?",
+        options: [
+          "The elimination of every operational and security risk",
+          "A requirement that employees work only from the office",
+          "The removal of communication between employees",
+          "Greater flexibility and more timely information exchange"
+        ],
+        answer: 3,
+        reason: "Mobile computing can support flexible working, timely communication and information exchange, and improved responsiveness to customers."
+      }
+    ]
+  },
+  // ============================================================
+  // MEDIUM CASE SCENARIOS
+  // ============================================================
+
+  {
+    case_id: "ecosys_ch13_CS21",
+    difficulty: "Medium",
+    chapter: "Chapter13",
+    caseText: `
+      <p>Meridian Finance operates an online platform for customer transactions. An internal review identifies phishing attempts, unauthorised access to employee accounts, unpatched software, accidental deletion of records, and service interruptions during software updates. Management wants each risk to be addressed through an appropriate control.</p>
+    `,
+    questions: [
+      {
+        question: "Employees have received phishing messages that may expose customer information to malicious actors. Which control most directly addresses this risk?",
+        options: [
+          "Implement a Disaster Recovery Plan only",
+          "Establish a strong data privacy and online security policy and train employees in data security",
+          "Replace data backup procedures with password updates",
+          "Reduce the number of products available on the platform"
+        ],
+        answer: 1,
+        reason: "ICAI identifies phishing, malware and ransomware as online security risks and recommends a strong data privacy and online security policy together with employee training."
+      },
+      {
+        question: "An employee can access customer records that are unnecessary for the employee's role. Which control combination is most appropriate?",
+        options: [
+          "Install additional sensors and analyse customer queues",
+          "Maintain a backup without restricting system access",
+          "Choose a different mobile wallet provider",
+          "Restrict employee access, use two-factor authentication and update passwords regularly"
+        ],
+        answer: 3,
+        reason: "For unauthorised access, ICAI identifies restricted employee access, two-factor authentication for login and regular password updates as relevant controls."
+      },
+      {
+        question: "The platform contains unpatched software and incompatible plugins that may be exploited by malicious actors. Which response best matches the risk?",
+        options: [
+          "Update the system, remove incompatible plugins, use firewall and anti-virus software, and conduct periodic security audits",
+          "Use only a data recovery solution after information has been lost",
+          "Increase the platform's advertising expenditure",
+          "Allow employees to retain unrestricted access to legacy systems"
+        ],
+        answer: 0,
+        reason: "ICAI's controls for exploitation of vulnerabilities include regular system updates, removal of incompatible plugins, firewall and anti-virus software, and periodic security audits."
+      },
+      {
+        question: "A staff member accidentally deletes important transaction records. Which control is most directly relevant to this incident?",
+        options: [
+          "A personalized reward system",
+          "A two-factor login procedure as the sole response",
+          "A data backup and recovery solution",
+          "A new mobile communication protocol"
+        ],
+        answer: 2,
+        reason: "ICAI identifies human error as a cause of data loss and recommends implementing data backup and data recovery solutions."
+      },
+      {
+        question: "The platform becomes unavailable for an extended period whenever its provider updates the server. Which response is specifically relevant to the platform-downtime risk described in the chapter?",
+        options: [
+          "Use biometric verification for all customer payments",
+          "Choose an efficient SaaS provider and reduce dependency on third parties for software updates",
+          "Use IoT sensors to assess borrowers' expenditure",
+          "Replace all online transactions with digital vouchers"
+        ],
+        answer: 1,
+        reason: "For platform downtime, ICAI recommends choosing efficient SaaS providers and reducing dependency on third parties for software updates."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS22",
+    difficulty: "Medium",
+    chapter: "Chapter13",
+    caseText: `
+      <p>A bank serves customers with different payment requirements. One customer uses the *99# service on a basic phone; another needs Aadhaar-authenticated banking through a banking correspondent; a business requires an instant transfer using account number and IFSC; and another customer wants to link several bank accounts to a single payment address.</p>
+    `,
+    questions: [
+      {
+        question: "The customer using *99# wants to check a balance and transfer money without internet access. Which payment mode is being used?",
+        options: [
+          "Mobile wallet",
+          "Aadhaar Enabled Payment System (AEPS)",
+          "Unstructured Supplementary Service Data (USSD) banking",
+          "RuPay card"
+        ],
+        answer: 2,
+        reason: "USSD banking, also referred to as *99# banking, permits specified mobile banking services without requiring a smartphone or internet connection. The chapter also describes a daily transfer limit of ₹5,000 and one transaction per session for this service."
+      },
+      {
+        question: "The second customer visits a banking correspondent, provides an Aadhaar number linked to the bank account and completes biometric authentication without presenting a debit card or signing a document. Which service is most appropriate?",
+        options: [
+          "Aadhaar Enabled Payment System (AEPS)",
+          "Mobile wallet",
+          "Immediate Payment Service (IMPS)",
+          "e-RUPI"
+        ],
+        answer: 0,
+        reason: "AEPS is an Aadhaar-based payment mode. Transactions are carried out through a banking correspondent based on Aadhaar verification, without requiring a debit or credit card or a signature on a document."
+      },
+      {
+        question: "The business wants to transfer funds instantly using either mobile number with MMID or account number with IFSC, at any time. Which service meets this requirement?",
+        options: [
+          "USSD only",
+          "e-RUPI",
+          "Mobile wallet",
+          "Immediate Payment Service (IMPS)"
+        ],
+        answer: 3,
+        reason: "IMPS provides an instant, real-time, 24x7 inter-bank electronic fund transfer service. The chapter identifies mobile number with MMID and account number with IFSC as transfer methods."
+      },
+      {
+        question: "The final customer wants to use a single payment address while linking multiple bank accounts to a UPI application. Which statement is correct?",
+        options: [
+          "UPI only supports cash withdrawals through a banking correspondent",
+          "UPI uses a Virtual Payment Address (VPA), and multiple bank accounts can be linked to that address",
+          "UPI permits only transfers between mobile wallets",
+          "UPI requires every transaction to be completed using a physical smart card"
+        ],
+        answer: 1,
+        reason: "The chapter explains that a UPI user can create a Virtual Payment Address (VPA) and link multiple bank accounts to it."
+      },
+      {
+        question: "A customer asks whether a mobile wallet permits a transfer to a different wallet provider's wallet. Which answer follows the chapter's distinction?",
+        options: [
+          "Mobile wallets must support transfers to every other wallet",
+          "Mobile wallets can be used only for cash withdrawals at ATMs",
+          "The chapter describes mobile wallets as permitting intra-wallet transfers, not inter-wallet transfers",
+          "A mobile wallet is the same as IMPS using account number and IFSC"
+        ],
+        answer: 2,
+        reason: "The chapter specifically distinguishes mobile wallets from inter-bank transfer services by stating that only intra-wallet transfers are allowed, not inter-wallet transfers."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS23",
+    difficulty: "Medium",
+    chapter: "Chapter13",
+    caseText: `
+      <p>A financial institution uses IoT-connected devices to observe debtor business activity, monitor customer queues at branches, and collect information about customer spending. During the pilot, some legacy machines cannot accept the required sensors, while management has not yet identified measurable targets for the initiative.</p>
+    `,
+    questions: [
+      {
+        question: "The institution analyses debtor business activity and related transaction information to assess readiness and ability to repay. Which IoT application does this illustrate?",
+        options: [
+          "Capacity building",
+          "Personalized reward systems",
+          "Collection of debts",
+          "Regulatory reporting"
+        ],
+        answer: 2,
+        reason: "ICAI describes the use of IoT sensors and information about debtors' business operations and supply chain activities to help financial institutions assess readiness and ability to repay."
+      },
+      {
+        question: "The institution measures daily customer visits and average queue time to determine appropriate staffing levels. Which application is demonstrated?",
+        options: [
+          "Capacity building",
+          "Collection of debts",
+          "Risk scenario simulation",
+          "Digital voucher management"
+        ],
+        answer: 0,
+        reason: "IoT-enabled systems can monitor customer visits and average queue time to help determine the appropriate number of employees or personnel."
+      },
+      {
+        question: "The institution wants to provide rewards that correspond to customers' shopping activity and demographics. Which use of technology best matches this objective?",
+        options: [
+          "A Disaster Recovery Plan",
+          "A USSD transfer service",
+          "A quantum cryptographic protocol",
+          "IoT combined with Artificial Intelligence for personalized offerings and rewards"
+        ],
+        answer: 3,
+        reason: "ICAI describes IoT combined with Artificial Intelligence as a way to provide relevant redeemable rewards based on shopping activity or demographics."
+      },
+      {
+        question: "Existing machines lack the sensors required to collect data, and adding external sensors is difficult. Which IoT implementation challenge is illustrated?",
+        options: [
+          "Regulatory non-compliance",
+          "Hardware compatibility issues",
+          "A mobile wallet transfer restriction",
+          "Platform downtime during a SaaS update"
+        ],
+        answer: 1,
+        reason: "ICAI identifies hardware compatibility as an IoT implementation challenge when legacy machines do not have the required sensors and external sensors are difficult to add."
+      },
+      {
+        question: "Management has not defined what the IoT project should improve or how the improvement will be measured. What should it address first?",
+        options: [
+          "Increasing the quantity of collected data without a defined purpose",
+          "Replacing all sensors with payment cards",
+          "Clearly defining the problem statement and key performance indicators",
+          "Discontinuing all monitoring of operational performance"
+        ],
+        answer: 2,
+        reason: "ICAI states that IoT implementation should begin with a clear problem statement and identify key performance indicators for measuring effects on efficiency, customer satisfaction and productivity."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS24",
+    difficulty: "Medium",
+    chapter: "Chapter13",
+    caseText: `
+      <p>A bank is studying quantum computing for three financial problems: reducing false positives in customer targeting and fraud prediction, improving portfolio diversification as markets change, and speeding up the simulation of risk scenarios. The security team separately warns that future quantum computers may threaten cryptographic protocols used to protect payments.</p>
+    `,
+    questions: [
+      {
+        question: "The bank wants to improve models that identify relevant customers and reduce false positives that delay customer onboarding. Which application is most directly relevant?",
+        options: [
+          "Mobile communication",
+          "Targeting and prediction modelling",
+          "e-business disaster recovery",
+          "Regulatory website updating"
+        ],
+        answer: 1,
+        reason: "ICAI identifies targeting and prediction modelling as a potential financial application of quantum computing, including addressing complex data structures and inaccurate predictions that can generate false positives."
+      },
+      {
+        question: "Which quantum computing application best addresses the investment team's requirement to improve diversification and rebalance portfolios in changing market conditions?",
+        options: [
+          "USSD banking",
+          "Data backup and recovery",
+          "Mobile wallet processing",
+          "Trading optimisation"
+        ],
+        answer: 3,
+        reason: "ICAI states that quantum computing may support trading optimisation by improving portfolio diversification and enabling better portfolio rebalancing as market conditions change."
+      },
+      {
+        question: "The risk team needs to evaluate potential outcomes involving risk management, derivatives pricing and liquidity management. Which benefit is most relevant?",
+        options: [
+          "Faster and potentially more accurate risk-scenario simulations",
+          "Automatic elimination of all financial risk",
+          "The removal of the need for financial data",
+          "Replacing digital transactions with physical cards"
+        ],
+        answer: 0,
+        reason: "ICAI explains that faster data processing through quantum computing can speed up risk-scenario simulations and improve the accuracy of testing potential outcomes."
+      },
+      {
+        question: "Why is the security team's warning relevant to the bank's existing systems?",
+        options: [
+          "Quantum computing makes authentication unnecessary",
+          "Quantum computing prevents all forms of cyber-attack",
+          "Powerful quantum computers may compromise cryptographic protocols used for authentication, encryption and decryption",
+          "Quantum computing affects only branch staffing"
+        ],
+        answer: 2,
+        reason: "ICAI identifies a potential threat that powerful quantum computers may break existing protocols and compromise cryptographic algorithms used to secure authentication, encryption and decryption."
+      },
+      {
+        question: "Which statement best explains why quantum computing differs from traditional binary computing?",
+        options: [
+          "Traditional bits and qubits must both remain permanently in the OFF state",
+          "Qubits can exist in a quantum superposition, unlike a traditional bit that represents either 0 or 1",
+          "Qubits are physical debit cards that store a fixed balance",
+          "Quantum computers use only manual transaction records"
+        ],
+        answer: 1,
+        reason: "ICAI explains that traditional bits represent ON or OFF states, while quantum bits or qubits can exist in a quantum superposition of these states."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS25",
+    difficulty: "Medium",
+    chapter: "Chapter13",
+    caseText: `
+      <p>A regulated financial institution plans to automate compliance reporting, improve the assessment of customer risk during credit decisions and KYC screening, and detect suspicious activity in large volumes of financial information. The regulator also wants technology-supported methods to monitor compliance and assess whether automated lending systems operate reliably and fairly.</p>
+    `,
+    questions: [
+      {
+        question: "Which technology area most directly covers the institution's use of IT for regulatory monitoring, reporting and compliance?",
+        options: [
+          "Internet of Things (IoT)",
+          "Mobile computing",
+          "Quantum computing",
+          "Regulatory Technology (RegTech)"
+        ],
+        answer: 3,
+        reason: "ICAI defines RegTech as the use of Information Technology in the context of regulation, monitoring, reporting and compliance in financial organisations."
+      },
+      {
+        question: "The institution wants technology to evaluate customer risk profiles during credit decisioning and KYC screening. Which approach is described in the chapter?",
+        options: [
+          "Using Big Data and Machine Learning to refine risk assessment, while evaluating reliability and fairness",
+          "Using only physical signatures instead of customer information",
+          "Disabling all screening and monitoring activities",
+          "Replacing credit decisions with ATM capacity data"
+        ],
+        answer: 0,
+        reason: "ICAI explains that Big Data and Machine Learning can refine customer risk profiles in credit decisioning and KYC screening, while the reliability and fairness of such systems need to be evaluated."
+      },
+      {
+        question: "Why can RegTech contribute to financial inclusion?",
+        options: [
+          "It eliminates the need for compliance",
+          "It restricts access to financial services to existing customers only",
+          "It can help make risk assessment and compliance more efficient, potentially making financial services more affordable and widely available",
+          "It prevents financial institutions from using digital identification"
+        ],
+        answer: 2,
+        reason: "ICAI explains that RegTech can reduce compliance costs and risks, helping services become more affordable and widely available and supporting financial inclusion."
+      },
+      {
+        question: "The institution needs to identify patterns of suspicious financial activity from large volumes of information containing irrelevant data. Which RegTech application is most directly relevant?",
+        options: [
+          "Capacity building in bank branches",
+          "Anti-Money Laundering (AML) analysis",
+          "Mobile hardware management",
+          "Intra-wallet fund transfers"
+        ],
+        answer: 1,
+        reason: "Anti-Money Laundering (AML) is a key RegTech application. The chapter discusses using technology to identify crime patterns from information received by financial organisations and law enforcement."
+      },
+      {
+        question: "The regulator itself deploys technology to improve the performance of its regulatory functions. How does the chapter describe this use?",
+        options: [
+          "As an example of mobile computing hardware",
+          "As a customer reward programme",
+          "As a form of e-commerce unrelated to regulation",
+          "As RegTech for regulators"
+        ],
+        answer: 3,
+        reason: "ICAI distinguishes technology used by industry to comply with regulations from RegTech for regulators, where regulatory bodies themselves use new technology."
+      }
+    ]
+  },
+
+  // ============================================================
+  // HARD CASE SCENARIOS
+  // ============================================================
+
+  {
+    case_id: "ecosys_ch13_CS26",
+    difficulty: "Hard",
+    chapter: "Chapter13",
+    caseText: `
+      <p>OrderSphere sells goods online. A review finds phishing attempts, excessive employee access to customer data, unpatched software, accidental record deletion and long outages during provider updates. Management must select controls that address each risk rather than applying the same control to every incident.</p>
+    `,
+    questions: [
+      {
+        question: "The security team wants to reduce exposure arising from phishing, malware and ransomware. Which proposed action most closely matches the chapter's specific control for data privacy and online security risks?",
+        options: [
+          "Apply a recovery solution only after records are deleted",
+          "Use restricted access as the sole response to every online security risk",
+          "Establish a strong data privacy and online security policy and train employees in data security",
+          "Choose a disaster recovery site without addressing employee awareness"
+        ],
+        answer: 2,
+        reason: "ICAI connects phishing, malware and ransomware with data privacy and online security risks, for which it recommends a strong policy and employee training in data security."
+      },
+      {
+        question: "The investigation finds that employees can access customer records beyond their duties. Which control combination is specifically aligned with the chapter's treatment of unauthorised access?",
+        options: [
+          "Restricted access, two-factor authentication and regular password updates",
+          "Website updates, advertising review and reduced inventories",
+          "Customer queue monitoring and capacity building",
+          "Data recovery and a disaster recovery site only"
+        ],
+        answer: 0,
+        reason: "The chapter's controls for unauthorised access include restricting employee access, using two-factor authentication for login and regularly updating passwords."
+      },
+      {
+        question: "Unpatched software and incompatible plugins expose OrderSphere to exploitation. Which proposal most completely addresses this vulnerability risk?",
+        options: [
+          "Improve customer rewards and monitor queue lengths",
+          "Update the website only to address non-compliance and take no security action",
+          "Recover deleted files and leave vulnerable software unchanged",
+          "Update systems, remove incompatible plugins, use firewall and anti-virus software, and conduct periodic security audits"
+        ],
+        answer: 3,
+        reason: "ICAI's controls for exploitation of vulnerabilities include regular system updates, removal of incompatible plugins, firewall and anti-virus software, and periodic security audits."
+      },
+      {
+        question: "A user error causes the loss of transaction records. Which control directly addresses the risk described, rather than the separate risk of unauthorised access?",
+        options: [
+          "A two-factor login procedure only",
+          "A data backup and recovery solution",
+          "More customer-facing payment options",
+          "An IoT-based personalized reward system"
+        ],
+        answer: 1,
+        reason: "The chapter identifies data backup and recovery as controls for data loss caused by human error."
+      },
+      {
+        question: "OrderSphere also suffers lengthy downtime whenever its service provider updates the server. Which response is more directly aligned with the chapter's platform-downtime controls than with its controls for loss due to disaster?",
+        options: [
+          "Implement a Disaster Recovery Plan as the sole response to all software updates",
+          "Require customers to use biometric authentication",
+          "Choose an efficient SaaS provider and reduce dependency on third parties for software updates",
+          "Use a backup of deleted records without addressing provider-related downtime"
+        ],
+        answer: 2,
+        reason: "The chapter associates platform downtime with selecting efficient SaaS providers and reducing dependency on third parties for software updates. A Disaster Recovery Plan is separately identified as a control for loss due to disaster."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS27",
+    difficulty: "Hard",
+    chapter: "Chapter13",
+    caseText: `
+      <p>A rural banking initiative must support four distinct needs: short-code banking on a basic phone without internet, Aadhaar-authenticated transactions through a banking correspondent, instant account-to-account transfers using account number and IFSC, and a smartphone user who wants several bank accounts accessible through one payment address. A separate user asks whether one wallet can transfer funds directly to another wallet provider's wallet.</p>
+    `,
+    questions: [
+      {
+        question: "The first customer uses *99# on a normal feature phone. Under the chapter's description, which statement about this service is correct?",
+        options: [
+          "It requires an Aadhaar-linked account and biometric authentication at a banking correspondent for every transaction",
+          "It is IMPS and must be performed using account number and IFSC",
+          "It is a mobile wallet service that allows inter-wallet transfers",
+          "It is USSD banking, which does not require a smartphone or internet; the chapter states a ₹5,000 daily transfer limit and one transaction per session"
+        ],
+        answer: 3,
+        reason: "The chapter identifies *99# as USSD banking, usable without a smartphone or internet connection, and specifies a maximum transfer of ₹5,000 per day and one transaction per session."
+      },
+      {
+        question: "The second customer completes a transaction using an Aadhaar-linked bank account and biometric authentication through a banking correspondent, without a card or signature. Which option is correct?",
+        options: [
+          "AEPS supports Aadhaar-authenticated banking transactions, including cash withdrawal and balance enquiry",
+          "IMPS requires an Aadhaar biometric in place of account number and IFSC",
+          "USSD requires the customer to use a smartphone connected to the internet",
+          "A mobile wallet enables inter-wallet transfers through biometric authentication"
+        ],
+        answer: 0,
+        reason: "AEPS supports banking transactions based on Aadhaar authentication through a banking correspondent. The chapter lists services such as cash withdrawal, cash deposit, fund transfer and balance checking."
+      },
+      {
+        question: "The third customer requires an instant transfer using account number and IFSC, with availability at any time. Which service should be selected?",
+        options: [
+          "e-RUPI",
+          "USSD only",
+          "IMPS",
+          "A mobile wallet transfer between different wallet providers"
+        ],
+        answer: 2,
+        reason: "IMPS provides an instant, real-time, 24x7 inter-bank electronic fund transfer service and supports transfers using account number with IFSC."
+      },
+      {
+        question: "The smartphone user wants to link several bank accounts to one payment address and make payments through a UPI application. Which statement is correct?",
+        options: [
+          "The payment address is a physical smart card that stores the transaction amount",
+          "A UPI Virtual Payment Address (VPA) can be associated with multiple bank accounts",
+          "UPI permits only intra-wallet transfers and cannot transfer money between bank accounts",
+          "UPI works only through a banking correspondent and requires no mobile application"
+        ],
+        answer: 1,
+        reason: "The chapter states that users can create a Virtual Payment Address (VPA) and link many bank accounts to it for UPI transactions."
+      },
+      {
+        question: "The final user wants to move balance directly from a wallet issued by Provider A to a wallet issued by Provider B. Which conclusion follows the chapter's description?",
+        options: [
+          "All mobile wallets must support inter-wallet transfers",
+          "The transfer must be treated as AEPS because a bank account exists",
+          "IMPS and mobile wallets have identical transfer arrangements",
+          "The chapter states that mobile wallets allow intra-wallet transfers but not inter-wallet transfers"
+        ],
+        answer: 3,
+        reason: "The chapter's mobile-wallet section distinguishes intra-wallet transfers from inter-wallet transfers and states that inter-wallet transfers are not allowed."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS28",
+    difficulty: "Hard",
+    chapter: "Chapter13",
+    caseText: `
+      <p>A bank connects legacy equipment and branch systems to an IoT platform. Some machines lack the required sensors, different devices use incompatible transport and data formats, a software anomaly records incorrect readings, and the security team identifies a risk of data theft. Management also needs evidence that the project improves service efficiency and customer satisfaction.</p>
+    `,
+    questions: [
+      {
+        question: "Legacy machines cannot capture the required readings because they lack suitable sensors, and adding external sensors is difficult. Which challenge is most directly indicated?",
+        options: [
+          "Data privacy non-compliance",
+          "Customer reward design",
+          "Hardware compatibility issues",
+          "Quantum computing limitations"
+        ],
+        answer: 2,
+        reason: "ICAI identifies hardware compatibility issues where legacy machines do not have the required sensors and adding external sensors becomes challenging."
+      },
+      {
+        question: "Different devices use transport and data-format protocols that the IoT platform cannot directly process. Which response best matches the chapter's discussion of data connectivity?",
+        options: [
+          "Use a suitable edge layer to translate transport and data-format protocols before sending data to the IoT platform",
+          "Apply data backup as the only way to translate the protocols",
+          "Replace all network communication with manual records",
+          "Use a mobile wallet to convert sensor readings into bank transfers"
+        ],
+        answer: 0,
+        reason: "ICAI explains that a suitable edge layer may be needed to translate transport and data-format protocols so that data can be sent to the IoT platform."
+      },
+      {
+        question: "A software anomaly results in incorrect sensor readings being recorded, causing unreliable output from later analysis. Which implementation challenge is illustrated?",
+        options: [
+          "Increased market reach",
+          "Hardware compatibility only",
+          "Mobile communication",
+          "Incorrect data capture difficulties"
+        ],
+        answer: 3,
+        reason: "ICAI states that incidents or software's inability to handle certain anomalies may cause incorrect data to be recorded, resulting in inaccurate analytics."
+      },
+      {
+        question: "The security team is concerned that connected devices could enable ransomware attacks, data breaches or theft of intellectual property. Which challenge is most directly involved?",
+        options: [
+          "Capacity building",
+          "Data security issues",
+          "Personalized offerings",
+          "Customer queue measurement"
+        ],
+        answer: 1,
+        reason: "The chapter specifically identifies data security issues, including ransomware, data breaches and theft of intellectual property, as challenges in IoT implementation."
+      },
+      {
+        question: "Management cannot justify the project because it has not specified what should improve or how success will be measured. Which action best addresses this challenge?",
+        options: [
+          "Collect more data without defining an intended result",
+          "Add sensors without identifying the operational problem",
+          "Define the problem clearly and identify key performance indicators for efficiency, customer satisfaction and productivity",
+          "Stop measuring the performance of the IoT implementation"
+        ],
+        answer: 2,
+        reason: "ICAI emphasises a clearly defined problem statement and key performance indicators to determine how an IoT implementation affects efficiency, customer satisfaction and productivity."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS29",
+    difficulty: "Hard",
+    chapter: "Chapter13",
+    caseText: `
+      <p>A financial group is evaluating quantum computing for customer targeting, portfolio rebalancing and risk simulations. Existing fraud models sometimes flag legitimate customers, slowing onboarding. At the same time, the security team is assessing how more powerful quantum computers could affect the cryptographic methods protecting authentication and payment information.</p>
+    `,
+    questions: [
+      {
+        question: "The group wants to address inaccurate prediction models that generate false positives and delay customer onboarding. Which potential quantum computing application is most directly relevant?",
+        options: [
+          "Disaster recovery planning",
+          "Mobile wallet processing",
+          "Capacity building at branches",
+          "Targeting and prediction modelling"
+        ],
+        answer: 3,
+        reason: "ICAI discusses targeting and prediction modelling as an application of quantum computing and notes that false positives from inaccurate fraud detection can delay customer onboarding."
+      },
+      {
+        question: "The investment team must evaluate many investment options and rebalance portfolios as market conditions change. Which application is best aligned with this requirement?",
+        options: [
+          "Trading optimisation, including improved portfolio diversification and rebalancing",
+          "AEPS-based balance enquiry",
+          "Data backup and recovery",
+          "Regulatory website updates"
+        ],
+        answer: 0,
+        reason: "ICAI explains that quantum computing may help investment managers improve portfolio diversification, rebalance investments under changing market conditions and streamline trading settlement."
+      },
+      {
+        question: "The risk team needs to model the possible outcomes of complex trades involving risk management, derivatives pricing and liquidity management. What benefit is most directly relevant?",
+        options: [
+          "Eliminating the need for risk management",
+          "Replacing all complex calculations with manual procedures",
+          "Faster processing for risk-scenario simulations and potentially more accurate testing of possible outcomes",
+          "Guaranteeing that all market movements can be predicted correctly"
+        ],
+        answer: 2,
+        reason: "The chapter connects quantum computing's faster data-processing capabilities with faster risk-scenario simulations and more accurate testing of potential outcomes."
+      },
+      {
+        question: "Why might the group's existing cryptographic protection require attention as quantum computing develops?",
+        options: [
+          "Quantum computing means financial institutions no longer need to authenticate users",
+          "A sufficiently powerful quantum computer may compromise cryptographic algorithms used for authentication, encryption and decryption",
+          "Quantum computing affects only customer queue management",
+          "Cryptographic algorithms are used exclusively for mobile wallet rewards"
+        ],
+        answer: 1,
+        reason: "ICAI identifies a threat that powerful quantum computers could break protocols and compromise cryptographic algorithms used to secure authentication, encryption and decryption."
+      },
+      {
+        question: "Which technical explanation best supports the chapter's distinction between traditional computing and quantum computing?",
+        options: [
+          "Traditional bits can always hold every possible state simultaneously",
+          "Qubits are simply names for debit and credit card balances",
+          "Quantum computers use no units of information",
+          "Traditional bits represent 0 or 1, whereas qubits can exist in a superposition and may be linked together"
+        ],
+        answer: 3,
+        reason: "ICAI describes traditional bits as representing ON or OFF states and explains that qubits can exist in superposition and may be inseparably linked, allowing many combinations to be considered."
+      }
+    ]
+  },
+
+  {
+    case_id: "ecosys_ch13_CS30",
+    difficulty: "Hard",
+    chapter: "Chapter13",
+    caseText: `
+      <p>A financial institution adopts RegTech to review loan applications, screen customers for KYC and Anti-Money Laundering (AML) purposes, and monitor securities-market activity. The system flags applications that may combine genuine customer information with fabricated details, lending patterns that may be unfair, and unusual broker behaviour that may indicate misconduct.</p>
+    `,
+    questions: [
+      {
+        question: "An application combines real customer information with fabricated data to create an identity that may evade ordinary detection systems. Which fraud type is most directly described?",
+        options: [
+          "Platform downtime",
+          "Hardware compatibility failure",
+          "Intra-wallet transfer failure",
+          "Synthetic identity fraud"
+        ],
+        answer: 3,
+        reason: "ICAI describes synthetic identity fraud as the creation of fake identities by combining real customer information with fabricated data. RegTech analysis and Machine Learning may help identify such cases."
+      },
+      {
+        question: "The system identifies lending patterns that may show systematic bias or unfair treatment. Which regulatory concern is most directly relevant?",
+        options: [
+          "Credit discrimination and UDAAP non-compliance",
+          "Mobile computing communication protocols",
+          "Hardware compatibility issues in IoT",
+          "Platform downtime during a SaaS update"
+        ],
+        answer: 0,
+        reason: "ICAI discusses the use of technology to identify credit discrimination and UDAAP non-compliance and to help monitor lending practices for fairness."
+      },
+      {
+        question: "The AML team receives large quantities of financial information, much of which is not useful. It wants to identify patterns matching known crime typologies and alert the appropriate authorities. Which approach best fits the chapter?",
+        options: [
+          "Replace AML screening with customer reward points",
+          "Use only mobile hardware inventory records",
+          "Use RegTech-supported analytical techniques to identify suspicious patterns and trigger appropriate due-process steps",
+          "Treat every transaction as confirmed money laundering without analysis"
+        ],
+        answer: 2,
+        reason: "ICAI explains that RegTech can help identify patterns matching crime typologies and alert authorities, triggering the necessary due-process steps for disclosure of complete data."
+      },
+      {
+        question: "The securities-market monitoring system examines unusual broker behaviour to identify possible insider trading. Which RegTech application is most directly illustrated?",
+        options: [
+          "Mobile computing for remote work",
+          "Market surveillance to monitor conduct risk and illegal practices",
+          "Capacity building using IoT footfall data",
+          "UPI-based bank-account linking"
+        ],
+        answer: 1,
+        reason: "ICAI describes the use of AI-based market surveillance and Big Data or algorithmic techniques to identify signs of misconduct, including insider trading and unusual broker behaviour."
+      },
+      {
+        question: "Which statement best describes the purpose of RegTech in the institution's combined activities?",
+        options: [
+          "It replaces all regulatory obligations and makes compliance unnecessary",
+          "It is limited to mobile-device communication and cannot support reporting",
+          "It guarantees that every flagged customer has committed fraud",
+          "It applies technology to regulatory monitoring, reporting and compliance, helping identify risks without treating every alert as proof of wrongdoing"
+        ],
+        answer: 3,
+        reason: "ICAI describes RegTech as the use of IT for regulatory monitoring, reporting and compliance. Analytical alerts help identify matters for review; they do not automatically establish that a person has committed misconduct."
+      }
+    ]
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_01",
+    case_chapter: "chapter13",
+    question: "Which benefit of digital payments helps users track their spending and plan their budgets?",
+    options: [
+      "Elimination of the need for transaction records",
+      "Automatic log maintenance",
+      "Removal of all authentication requirements",
+      "Restriction of payments to banking hours"
+    ],
+    answer: 1,
+    reason: "ICAI explains that digital payments are automatically recorded in a passbook or e-wallet application. These records help users track spending and plan their budgets."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_02",
+    case_chapter: "chapter13",
+    question: "Which statement correctly describes a Virtual Payment Address (VPA) under the Unified Payments Interface (UPI)?",
+    options: [
+      "It is a physical card used only for ATM withdrawals",
+      "It is a mobile wallet that cannot be linked to bank accounts",
+      "It acts as a payment address and allows a user to link multiple bank accounts",
+      "It is a device used to collect IoT sensor data"
+    ],
+    answer: 2,
+    reason: "ICAI explains that a user can create a Virtual Payment Address (VPA), also called a UPI ID, which acts as a payment address. Multiple bank accounts can be linked to one VPA."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_03",
+    case_chapter: "chapter13",
+    question: "Which two factors are described in the chapter's explanation of UPI's two-factor authentication protocol?",
+    options: [
+      "Device-specific technical information or fingerprint and the UPI PIN",
+      "Account number and IFSC code only",
+      "A physical signature and a printed receipt",
+      "A mobile wallet balance and a QR code"
+    ],
+    answer: 0,
+    reason: "ICAI describes UPI's two-factor authentication protocol as using device-specific technical information, such as a fingerprint, as the first factor and the UPI PIN as the second factor."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_04",
+    case_chapter: "chapter13",
+    question: "Which digital payment mode allows a user to perform mobile banking through a normal feature phone without an internet connection?",
+    options: [
+      "A mobile wallet that requires its application to connect online",
+      "A credit card used at a PoS terminal",
+      "An e-RUPI voucher",
+      "Unstructured Supplementary Service Data (USSD) banking"
+    ],
+    answer: 3,
+    reason: "USSD banking, also known as *99# banking, allows users to access specified mobile banking services through a normal feature phone without requiring a smartphone or internet connection."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_05",
+    case_chapter: "chapter13",
+    question: "Which facility enables Aadhaar-based banking transactions through a banking correspondent using Aadhaar verification?",
+    options: [
+      "Immediate Payment Service (IMPS)",
+      "Aadhaar Enabled Payment System (AEPS)",
+      "A mobile wallet",
+      "A credit card"
+    ],
+    answer: 1,
+    reason: "The Aadhaar Enabled Payment System (AEPS) is an Aadhaar-based digital payment mode. Transactions are carried out through a banking correspondent based on Aadhaar verification."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_06",
+    case_chapter: "chapter13",
+    question: "According to the chapter, which type of transfer is permitted through a mobile wallet?",
+    options: [
+      "Only transfers between unrelated bank accounts using account number and IFSC",
+      "Only international inward remittances",
+      "Intra-wallet transfers, but not inter-wallet transfers",
+      "Only transfers made through a banking correspondent"
+    ],
+    answer: 2,
+    reason: "ICAI states that mobile wallets allow intra-wallet transfers but not inter-wallet transfers."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_07",
+    case_chapter: "chapter13",
+    question: "Which pair of details can be used to transfer funds through Immediate Payment Service (IMPS), as described in the chapter?",
+    options: [
+      "Aadhaar number and physical signature only",
+      "VPA and smart-card chip number only",
+      "Debit-card number and e-RUPI voucher code only",
+      "Mobile number with MMID, or account number with IFSC"
+    ],
+    answer: 3,
+    reason: "ICAI identifies two IMPS fund-transfer methods: mobile number with Mobile Money Identifier (MMID), and account number with IFSC."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_08",
+    case_chapter: "chapter13",
+    question: "Who developed the Bharat Interface for Money (BHIM) mobile application, and on which payment system is it based?",
+    options: [
+      "National Payments Corporation of India (NPCI), based on UPI",
+      "Aadhaar Enabled Payment System, based on biometric hardware only",
+      "Reserve Bank of India, based exclusively on credit cards",
+      "A mobile wallet provider, based exclusively on inter-wallet transfers"
+    ],
+    answer: 0,
+    reason: "BHIM is a mobile application developed by the National Payments Corporation of India (NPCI) and is based on the Unified Payments Interface (UPI)."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_09",
+    case_chapter: "chapter13",
+    question: "Which statement correctly describes e-RUPI?",
+    options: [
+      "It is a physical debit card issued for unrestricted cash withdrawals",
+      "It is a person- and purpose-specific digital voucher delivered through a QR code or SMS",
+      "It is a mobile communication protocol used by IoT sensors",
+      "It is a system used exclusively for regulatory reporting"
+    ],
+    answer: 1,
+    reason: "ICAI describes e-RUPI as a cashless, contactless digital payment mode that uses person- and purpose-specific e-vouchers delivered through QR codes or SMS."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_10",
+    case_chapter: "chapter13",
+    question: "Which characteristic distinguishes a smart card as described in the chapter?",
+    options: [
+      "It must be linked to a bank account and cannot store information",
+      "It is used only for online regulatory reporting",
+      "It has an embedded microprocessor chip and can store information, including a loaded monetary value",
+      "It is a software application that requires an internet connection for every function"
+    ],
+    answer: 2,
+    reason: "ICAI describes smart cards as prepaid cards with an embedded microprocessor chip. They can store information and a loaded amount, and they are not necessarily linked to a bank account."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_11",
+    case_chapter: "chapter13",
+    question: "What is e-commerce, as defined in Chapter 13?",
+    options: [
+      "The use of connected sensors to monitor financial transactions",
+      "The transfer of information only between mobile devices",
+      "The use of technology exclusively for preparing internal reports",
+      "The sale or purchase of goods or services through electronic mode"
+    ],
+    answer: 3,
+    reason: "ICAI defines e-commerce as the sale or purchase of goods or services through electronic mode."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_12",
+    case_chapter: "chapter13",
+    question: "Which of the following is a benefit of e-business to customers or individuals?",
+    options: [
+      "The ability to compare products and services offered by different sellers",
+      "A requirement to visit a physical shop before viewing product information",
+      "The restriction of product access to conventional business hours",
+      "The elimination of customer reviews"
+    ],
+    answer: 0,
+    reason: "ICAI identifies the availability of various options for comparison as a benefit of e-business to customers. Online customer reviews can also provide useful feedback."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_13",
+    case_chapter: "chapter13",
+    question: "How can e-commerce help a business increase its customer base?",
+    options: [
+      "By restricting sales to customers who visit its physical premises",
+      "By reaching customers across geographical areas through internet-enabled devices",
+      "By making product information available only to local customers",
+      "By preventing the business from entering new markets"
+    ],
+    answer: 1,
+    reason: "ICAI explains that e-commerce can help businesses reach a wider customer base, including geographically scattered market segments, through internet-enabled devices."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_14",
+    case_chapter: "chapter13",
+    question: "Which is a disadvantage of e-business specifically identified in the chapter?",
+    options: [
+      "Customers can compare different products",
+      "Businesses can reach geographically remote markets",
+      "Online transactions require internet connectivity, which may be unavailable in rural or remote areas",
+      "Electronic processing can reduce the time needed to complete transactions"
+    ],
+    answer: 2,
+    reason: "ICAI identifies internet connection as a prerequisite for online transactions and notes that connectivity may be unavailable in rural or remote areas."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_15",
+    case_chapter: "chapter13",
+    question: "Which control group does ICAI recommend for addressing unauthorised access and data privacy risks in e-business?",
+    options: [
+      "Customer queue monitoring, capacity building and personalized rewards",
+      "Data backup only, without any access restrictions",
+      "A Disaster Recovery Plan only, without login controls",
+      "Restricted employee access, two-factor authentication for login and regular password updates"
+    ],
+    answer: 3,
+    reason: "The chapter recommends restricted employee access, two-factor authentication for login and regular password updates as controls addressing unauthorised access within e-business."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_16",
+    case_chapter: "chapter13",
+    question: "Which statement best describes the Internet of Things (IoT)?",
+    options: [
+      "It connects devices or objects so that they can collect and exchange information through communication technologies",
+      "It is a digital voucher limited to a specified purpose",
+      "It is a system used exclusively for processing credit-card repayments",
+      "It refers only to software for preparing online regulatory reports"
+    ],
+    answer: 0,
+    reason: "ICAI describes IoT as connecting devices or objects and using sensors and communication technologies to collect and provide relevant information to users."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_17",
+    case_chapter: "chapter13",
+    question: "How can IoT-enabled systems support capacity building in a bank?",
+    options: [
+      "By automatically replacing all bank employees",
+      "By monitoring customer visits and average queue time to help determine appropriate staffing levels",
+      "By preventing the monitoring of ATM usage",
+      "By converting every customer transaction into a digital voucher"
+    ],
+    answer: 1,
+    reason: "ICAI explains that IoT-enabled systems can monitor daily customer visits and average queue time. This information helps determine the appropriate number of employees and supports decisions concerning branch or ATM locations."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_18",
+    case_chapter: "chapter13",
+    question: "What is a key distinction between a traditional binary bit and a quantum bit (qubit), according to the chapter?",
+    options: [
+      "Both can represent only a fixed OFF state",
+      "A qubit is a physical payment card containing a bank account number",
+      "A qubit can assume quantum states associated with both ON and OFF, unlike a traditional bit that represents 1 or 0",
+      "Traditional bits are used only for mobile communication"
+    ],
+    answer: 2,
+    reason: "ICAI explains that traditional computers use binary bits representing 1 (ON) or 0 (OFF), while quantum computing uses qubits that can assume quantum states associated with both ON and OFF."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_19",
+    case_chapter: "chapter13",
+    question: "Which activity is a use of Regulatory Technology (RegTech) in Anti-Money Laundering (AML)?",
+    options: [
+      "Monitoring the average queue time at bank branches",
+      "Providing customers with discounts through mobile wallets",
+      "Improving hardware compatibility between legacy machines and sensors",
+      "Using technology to improve customer identification, monitor transactions for crime patterns and support investigations"
+    ],
+    answer: 3,
+    reason: "ICAI identifies AML as a main use of RegTech. Technology can improve customer identification through Know Your Customer (KYC), strengthen the monitoring of transactions for crime patterns and automate or simplify investigation processes."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_20",
+    case_chapter: "chapter13",
+    question: "Which set contains the three key components of mobile computing identified in the chapter?",
+    options: [
+      "Mobile hardware, mobile software and mobile communication",
+      "Digital vouchers, credit cards and regulatory reports",
+      "Quantum bits, distributed ledgers and e-commerce",
+      "Data backups, anti-virus software and Disaster Recovery Plans"
+    ],
+    answer: 0,
+    reason: "ICAI identifies mobile hardware, mobile software and mobile communication as the three key components of mobile computing."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_21",
+    case_chapter: "chapter13",
+    question: "Which statement correctly describes the National Payments Corporation of India (NPCI)?",
+    options: [
+      "It is an organisation established exclusively to issue credit cards",
+      "It is a private mobile wallet provider that permits only intra-wallet transfers",
+      "It is an umbrella organisation for operating retail payments and settlement systems in India, initiated by the RBI and Indian Banks' Association (IBA)",
+      "It is a financial regulator responsible only for monitoring e-business websites"
+    ],
+    answer: 2,
+    reason: "ICAI describes NPCI as an umbrella organisation for operating retail payments and settlement systems in India. It was an initiative of the Reserve Bank of India (RBI) and the Indian Banks' Association (IBA) under the Payment and Settlement Systems Act, 2007."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_22",
+    case_chapter: "chapter13",
+    question: "Which digital payment facility was launched by NPCI in 2022 to enable feature-phone users to utilise UPI?",
+    options: [
+      "e-RUPI",
+      "UPI123Pay",
+      "Aadhaar Enabled Payment System (AEPS)",
+      "Immediate Payment Service (IMPS)"
+    ],
+    answer: 1,
+    reason: "ICAI states that NPCI launched UPI123Pay in 2022 as an instant payment system designed for feature-phone users, helping extend UPI usage to people who may not own smartphones."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_23",
+    case_chapter: "chapter13",
+    question: "Which of the following is a non-financial transaction or facility supported through UPI, as described in the chapter?",
+    options: [
+      "Generating a One-Time Password (OTP) or checking UPI transaction status",
+      "Issuing a physical smart card without any payment system",
+      "Monitoring the average queue time at bank branches through IoT sensors",
+      "Simulating investment portfolios using quantum computing"
+    ],
+    answer: 0,
+    reason: "ICAI explains that UPI supports non-financial activities such as mobile banking registration, OTP generation, setting or changing the UPI PIN, and checking UPI transaction status."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_24",
+    case_chapter: "chapter13",
+    question: "According to the chapter, through which arrangement can a government agency or corporation generate e-RUPI vouchers?",
+    options: [
+      "Only by issuing a credit card to every beneficiary",
+      "Through an IoT gateway connected to a bank's sensors",
+      "By converting every voucher into an unrestricted mobile wallet balance",
+      "Through its partner banks"
+    ],
+    answer: 3,
+    reason: "ICAI states that government agencies and corporations can generate e-RUPI vouchers through their partner banks."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_25",
+    case_chapter: "chapter13",
+    question: "Which feature of RuPay cards is described in the chapter in relation to a disputed transaction?",
+    options: [
+      "A transaction reversal may be supported within the applicable banking time frame",
+      "Every disputed transaction must remain permanently unchangeable",
+      "A card can be used only to make online purchases and not at ATMs",
+      "A transaction cannot be cancelled before its completion under any circumstances"
+    ],
+    answer: 0,
+    reason: "ICAI explains that RuPay supports reversal of a transaction where it is disputed within the applicable banking time frame. The chapter also states that a merchant can make a transaction null and void before the payment transaction is completed."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_26",
+    case_chapter: "chapter13",
+    question: "Which statement correctly describes a smart card as discussed in the chapter?",
+    options: [
+      "It is necessarily linked to a bank account and cannot store a monetary value",
+      "It has an embedded microprocessor chip and can store information, including a loaded monetary value, without necessarily being linked to a bank account",
+      "It is a UPI application that works exclusively through a smartphone",
+      "It is a RegTech system used to monitor securities-market conduct"
+    ],
+    answer: 1,
+    reason: "ICAI describes smart cards as prepaid cards with an embedded microprocessor chip. They can store personal and financial information and a loaded monetary value, and they are not necessarily linked to a bank account."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_27",
+    case_chapter: "chapter13",
+    question: "Which statement best describes the information stored by a mobile wallet, according to the chapter?",
+    options: [
+      "Only physical bank statements that cannot be accessed electronically",
+      "Only customer queue information collected by IoT sensors",
+      "Payment details and transaction history stored in one secure place",
+      "Only regulatory reports issued by financial regulators"
+    ],
+    answer: 2,
+    reason: "ICAI explains that a mobile wallet allows users to store payment details and transaction history in one secure place. Authenticated login details are required to make transactions."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_28",
+    case_chapter: "chapter13",
+    question: "Which additional service is available through Immediate Payment Service (IMPS), apart from fund transfers?",
+    options: [
+      "Directly determining the appropriate number of bank branch employees from customer queue data",
+      "Creating a quantum superposition of payment records",
+      "Automatically converting every mobile wallet into a credit card",
+      "Providing facilities such as checking transaction status or beneficiary name, and foreign inward remittance"
+    ],
+    answer: 3,
+    reason: "ICAI describes IMPS as supporting non-financial services such as checking transaction status and beneficiary name. It also provides a foreign inward remittance facility for beneficiary customers."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_29",
+    case_chapter: "chapter13",
+    question: "How can e-business improve the efficiency of information processing within an organisation?",
+    options: [
+      "By reducing errors and processing time through elimination of repeated data entry",
+      "By requiring information to be entered separately into every system",
+      "By preventing business processes from exchanging information",
+      "By requiring every transaction to be completed using paper documents"
+    ],
+    answer: 0,
+    reason: "ICAI explains that e-business can improve efficiency by reducing errors and information-processing time through elimination of the requirement to re-enter data."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_30",
+    case_chapter: "chapter13",
+    question: "Which benefit of e-business is associated with the recurring payments and homogeneous operations of a business?",
+    options: [
+      "It prevents the business from standardising its processes",
+      "It requires each recurring payment to follow an entirely different manual procedure",
+      "It makes recurring payments easier and supports uniformity in scaled operations",
+      "It restricts transactions to customers visiting a physical location"
+    ],
+    answer: 2,
+    reason: "ICAI identifies easier recurring payments as a benefit of e-business and explains that homogeneous business operations support uniformity in scaled operations."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_31",
+    case_chapter: "chapter13",
+    question: "How can an electronically open marketplace reduce costs for buyers?",
+    options: [
+      "By restricting the number of suppliers that may participate",
+      "By increasing competition in procurement as more suppliers can compete electronically",
+      "By requiring suppliers to submit every bid physically",
+      "By preventing buyers from comparing available suppliers"
+    ],
+    answer: 1,
+    reason: "ICAI explains that electronically open marketplaces can reduce buyers' costs through increased competition in procurement, as more suppliers are able to compete."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_32",
+    case_chapter: "chapter13",
+    question: "How can e-business help reduce the risk of obsolete inventories?",
+    options: [
+      "By requiring businesses to store all products indefinitely",
+      "By disconnecting inventory decisions from customer demand",
+      "By increasing manual delays in the manufacturing process",
+      "By electronically linking demand through just-in-time inventory and integrated manufacturing techniques"
+    ],
+    answer: 3,
+    reason: "ICAI explains that electronically linking demand through just-in-time inventory and integrated manufacturing techniques can reduce inventories and the risk of obsolete inventories."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_33",
+    case_chapter: "chapter13",
+    question: "Which benefit of e-commerce to the Government is linked in the chapter to the Information Technology Act, 2000?",
+    options: [
+      "It eliminates every legal requirement for electronic transactions",
+      "It makes all online transactions exempt from regulatory oversight",
+      "It can act as an instrument to fight corruption, supported by legal recognition of electronic records and digital signatures",
+      "It requires all government transactions to use mobile wallets"
+    ],
+    answer: 2,
+    reason: "ICAI describes e-commerce as an instrument that can help fight corruption. The chapter states that the Information Technology Act, 2000 provides a legal framework for electronic governance by recognising electronic records and digital signatures."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_34",
+    case_chapter: "chapter13",
+    question: "Which group of activities contributes to the high start-up costs associated with e-business, as explained in the chapter?",
+    options: [
+      "Internet connection, hardware and software, system set-up, and maintenance",
+      "Customer reviews, online comparison and coupon use only",
+      "IoT-based rewards, market surveillance and risk profiling only",
+      "UPI transaction history and UPI PIN generation only"
+    ],
+    answer: 0,
+    reason: "ICAI explains that e-business start-up costs may arise from internet connection costs, hardware and software, employee work involved in system set-up, and maintenance, including employee training and webpage maintenance."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_35",
+    case_chapter: "chapter13",
+    question: "Which type of product may be particularly challenging to sell through e-commerce because it can be difficult to inspect adequately from a remote location?",
+    options: [
+      "An electronically delivered e-book",
+      "Perishable food or high-cost items such as jewellery and antiques",
+      "A mobile recharge delivered online",
+      "A digital document available for immediate download"
+    ],
+    answer: 1,
+    reason: "ICAI notes that some business processes may never be fully suitable for e-commerce. Perishable foods and high-cost items such as jewellery and antiques can be challenging to inspect adequately from a remote location."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_36",
+    case_chapter: "chapter13",
+    question: "Before implementing e-business across the organisation, what approach does ICAI recommend?",
+    options: [
+      "Implement the system immediately without considering organisational requirements",
+      "Avoid creating a team responsible for implementation",
+      "Focus exclusively on acquiring hardware, without an overall plan",
+      "Develop an e-business strategy and organise a corporate-wide team to implement it"
+    ],
+    answer: 3,
+    reason: "ICAI advises organisations not to adopt e-business blindly. They should first develop an e-business strategy and then organise a corporate-wide team to implement that strategy."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_37",
+    case_chapter: "chapter13",
+    question: "Which characteristic is included in ICAI's definition of the Internet of Things (IoT)?",
+    options: [
+      "All connected devices must require continuous human-to-human interaction to exchange data",
+      "IoT refers exclusively to mobile payment applications",
+      "Interrelated devices or objects can have unique identifiers and transfer data over a network without requiring human-to-human or human-to-computer interaction",
+      "IoT devices cannot be monitored or controlled remotely"
+    ],
+    answer: 2,
+    reason: "ICAI defines IoT as a system of interrelated computing devices, machines, objects, animals or people with unique identifiers and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_38",
+    case_chapter: "chapter13",
+    question: "How can IoT-related information support product planning and management in financial services?",
+    options: [
+      "By helping determine which products or services to launch, who the target customers should be and when to launch them",
+      "By automatically eliminating the need to understand customer reactions",
+      "By preventing financial organisations from evaluating previous service offerings",
+      "By restricting product decisions to hardware specifications only"
+    ],
+    answer: 0,
+    reason: "ICAI explains that data gathered from mobile applications, banks and other financial organisations can help product planning and management address what products or services to launch, who to target and when to launch them."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_39",
+    case_chapter: "chapter13",
+    question: "What does the term 'phoenixing' refer to in the chapter's discussion of RegTech?",
+    options: [
+      "The use of qubits to improve portfolio diversification",
+      "A mobile computing application used to manage branch queues",
+      "The issue of a digital payment voucher for a specified purpose",
+      "A barred or illegal entity resuming business under a new name after being shut down"
+    ],
+    answer: 3,
+    reason: "ICAI describes phoenixing as a situation where entities that have been shut down or barred from operating may resurface under a new name and resume illegal activities. RegTech can help regulators track such entities."
+  },
+
+  {
+    difficulty: "Easy",
+    case_id: "ecosys_ch13_40",
+    case_chapter: "chapter13",
+    question: "Which set consists of communication technologies identified in the chapter as components used in mobile computing?",
+    options: [
+      "Credit cards, smart cards and prepaid vouchers",
+      "Wireless Local Area Networks (WLANs), satellite communication, Global System for Mobile Communications (GSM) and the Internet",
+      "Just-in-time inventory, integrated manufacturing and electronic bidding",
+      "Quantum bits, payment vouchers and transaction logs"
+    ],
+    answer: 1,
+    reason: "ICAI identifies mobile communication as a component of mobile computing and lists technologies such as WLANs, satellite communication, Cellular Digital Packet Data (CDPD), Personal Communications Systems (PCS), GSM and the Internet."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch13_41",
+    case_chapter: "chapter13",
+    question: "A business records electronic transactions automatically and reduces the use of paper-based payment records. Which benefits of digital payments are demonstrated?",
+    options: [
+      "Automatic log maintenance and Green Computing",
+      "Elimination of all transaction risks and connectivity requirements",
+      "Removal of authentication requirements and unlimited access to funds",
+      "Restriction of transactions to banking hours and increased paper usage"
+    ],
+    answer: 0,
+    reason: "ICAI identifies automatic transaction recording as log maintenance, which helps track spending and plan budgets. Digital payments also reduce the need for paper, supporting environmentally friendly practices known as Green Computing."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch13_42",
+    case_chapter: "chapter13",
+    question: "A customer wants to use UPI with multiple bank accounts but also wants to link a mobile wallet directly to the UPI application. Which statement follows the chapter?",
+    options: [
+      "UPI supports only one bank account and requires every payment to use a credit card",
+      "Multiple bank accounts can be linked through a VPA, but a wallet cannot be linked to UPI under the chapter's description",
+      "UPI supports only transfers between mobile wallets",
+      "UPI can be used only for non-financial transactions such as OTP generation"
+    ],
+    answer: 1,
+    reason: "ICAI states that a Virtual Payment Address (VPA) can be used as a payment address and multiple bank accounts can be linked to it. The chapter also states that users cannot link a wallet to UPI; UPI provides inter-bank and intra-bank account transfers."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch13_43",
+    case_chapter: "chapter13",
+    question: "A payment instrument has an embedded microprocessor chip, stores information and loaded monetary value, and does not necessarily require a linked bank account. Which instrument is being described?",
+    options: [
+      "Debit card",
+      "Credit card",
+      "Smart card",
+      "UPI Virtual Payment Address (VPA)"
+    ],
+    answer: 2,
+    reason: "ICAI describes a smart card as having an embedded microprocessor chip and the ability to store information and a loaded monetary value. It is not necessarily linked to a bank account."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch13_44",
+    case_chapter: "chapter13",
+    question: "A sponsoring organisation wants to distribute a benefit that can be redeemed only by the intended beneficiary for a specified purpose. Which digital payment mode best matches this requirement?",
+    options: [
+      "IMPS, because it is an unrestricted inter-bank transfer service",
+      "A debit card, because it deducts money from a linked bank account",
+      "A mobile wallet, because it supports inter-wallet transfers",
+      "e-RUPI, because its vouchers are person-specific and purpose-specific"
+    ],
+    answer: 3,
+    reason: "ICAI describes e-RUPI as a cashless and contactless digital payment mode using person-specific and purpose-specific e-vouchers delivered through a QR code or SMS."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch13_45",
+    case_chapter: "chapter13",
+    question: "An electronically open marketplace enables more suppliers to access online bid opportunities and submit bids electronically. Which benefit of e-business is most directly illustrated for suppliers?",
+    options: [
+      "Reduced costs through electronic access to bid opportunities and online bid submission",
+      "Elimination of all competition among suppliers",
+      "Removal of the need to review bid opportunities",
+      "Restriction of procurement to local suppliers"
+    ],
+    answer: 0,
+    reason: "ICAI identifies reduced supplier costs through electronic access to online bid opportunities, online bid submission and online review of awards."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch13_46",
+    case_chapter: "chapter13",
+    question: "An online business faces uncertainty about conflicting laws applicable to its transactions. There is also concern that customer-sensitive data may fall into the hands of strangers. Which disadvantage of e-business is most directly implicated?",
+    options: [
+      "Improved market reach",
+      "Legal issues associated with conducting business on the Internet",
+      "Reduced information-processing time",
+      "Uniformity through automation"
+    ],
+    answer: 1,
+    reason: "ICAI identifies legal issues as a disadvantage of e-business because online commerce may involve unclear or conflicting laws, and legal problems may arise if customer-sensitive data reaches unauthorised persons."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch13_47",
+    case_chapter: "chapter13",
+    question: "A bank uses connected devices to identify a possible service fault early and takes action before the fault becomes serious. Which change brought by IoT in financial services does this illustrate?",
+    options: [
+      "Capacity building",
+      "Collection of debts",
+      "Proactive service",
+      "Trading optimisation"
+    ],
+    answer: 2,
+    reason: "ICAI explains that IoT can help control service faults and identify concerns before they become more serious, allowing an organisation to take preventive action. This is described as proactive service."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch13_48",
+    case_chapter: "chapter13",
+    question: "A bank uses past service offerings and customer reactions to decide which new service to launch, which customers to target and when to launch it. Which IoT-related application is most directly involved?",
+    options: [
+      "Fraud prevention",
+      "Capacity building",
+      "Collection of debts",
+      "Product planning and management"
+    ],
+    answer: 3,
+    reason: "ICAI explains that information collected from mobile applications, banks and other financial organisations can support product planning and management by helping determine what to launch, whom to target and when to launch."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch13_49",
+    case_chapter: "chapter13",
+    question: "IoT devices use communication and data-format protocols that cannot be processed directly by the receiving platform. Which solution is described in the chapter?",
+    options: [
+      "Use a suitable edge layer to translate transport and data-format protocols",
+      "Replace sensor readings with digital payment vouchers",
+      "Use customer rewards instead of connecting the devices",
+      "Disable data transmission from all IoT devices"
+    ],
+    answer: 0,
+    reason: "ICAI identifies data connectivity as an IoT implementation challenge and explains that a suitable edge layer may translate transport and data-format protocols so data can be sent to the IoT platform."
+  },
+
+  {
+    difficulty: "Medium",
+    case_id: "ecosys_ch13_50",
+    case_chapter: "chapter13",
+    question: "An organisation is designing a mobile computing solution and must specify communication protocols, data formats and the technologies used to establish reliable connectivity. Which component is responsible for these elements?",
+    options: [
+      "Mobile software",
+      "Mobile communication",
+      "Mobile hardware",
+      "e-RUPI"
+    ],
+    answer: 1,
+    reason: "ICAI describes mobile communication as the infrastructure that enables reliable communication, including communication properties, protocols, data formats and technologies such as WLAN, satellite communication and GSM."
+  }
+];
+
+const chapter13HardIndividualMcqs = [
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch13_51",
+    case_chapter: "chapter13",
+    question: "An online business identifies phishing attempts involving malware and ransomware. Its team proposes restricting employee access, updating passwords and backing up records, but does not plan any staff awareness or security-policy measures. Which additional measure most directly addresses the risk category identified in the chapter?",
+    options: [
+      "Monitor customer queues to calculate staffing requirements",
+      "Use a suitable edge layer to translate IoT data formats",
+      "Establish a strong data privacy and online security policy and train employees in data security",
+      "Use a mobile wallet to store customer transaction histories"
+    ],
+    answer: 2,
+    reason: "ICAI links phishing, malware and ransomware with data privacy and online security risks. The specified control is a strong data privacy and online security policy together with staff training and encouragement to learn about data security. Access restrictions and password updates address the separate unauthorised-access risk."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch13_52",
+    case_chapter: "chapter13",
+    question: "An online retailer plans to sell both downloadable software and high-value antiques. Customers can access the software immediately, but they cannot readily inspect the antiques physically before purchase. Which conclusion best reflects ICAI's discussion of e-business limitations?",
+    options: [
+      "Some business processes or products, such as antiques, may not be fully suitable for e-commerce because remote inspection can be difficult",
+      "Both products are unsuitable for e-commerce because every online purchase requires physical inspection",
+      "High-value antiques are automatically suitable for e-commerce whenever the retailer accepts UPI",
+      "The limitation can be classified only as a mobile communication issue"
+    ],
+    answer: 0,
+    reason: "ICAI notes that some processes may never be fully suitable for e-commerce. Perishable foods and high-cost items such as jewellery and antiques may be difficult to inspect adequately from a remote location."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch13_53",
+    case_chapter: "chapter13",
+    question: "A sponsoring organisation wants to send beneficiaries a contactless voucher through a feature-phone-compatible channel. Each voucher must be digitally validated at redemption and may be revoked at the sponsor's request. Which statement most accurately identifies the relevant payment mode and its distinguishing features?",
+    options: [
+      "IMPS; it is a general instant transfer service using mobile number with MMID or account number with IFSC",
+      "AEPS; every voucher must be redeemed through biometric authentication by a banking correspondent",
+      "A mobile wallet; it permits inter-wallet transfers between different providers",
+      "e-RUPI; it uses person-specific and purpose-specific vouchers, can be delivered through QR code or SMS, and the sponsor may request creation or revocation"
+    ],
+    answer: 3,
+    reason: "ICAI describes e-RUPI as a contactless voucher-based payment mode with person-specific and purpose-specific vouchers delivered through QR code or SMS. The chapter states that vouchers can be created or revoked at the sponsor's request and are digitally validated at redemption."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch13_54",
+    case_chapter: "chapter13",
+    question: "A customer compares three card instruments: Card P permits purchases on credit with payment to the issuer at the end of the billing cycle; Card Q deducts the amount immediately from a linked bank account; Card R contains an embedded microprocessor chip and stores a loaded amount without necessarily being linked to a bank account. Which classification is correct?",
+    options: [
+      "P is a debit card, Q is a smart card and R is a credit card",
+      "P is a credit card, Q is a debit card and R is a smart card",
+      "P is a smart card, Q is a credit card and R is a debit card",
+      "P, Q and R are all credit cards because each can be used for electronic payments"
+    ],
+    answer: 1,
+    reason: "ICAI distinguishes credit cards by their credit facility and payment at the end of a billing cycle; debit cards deduct funds immediately from the linked bank account; and smart cards contain an embedded microprocessor chip and can store a loaded monetary value without necessarily being linked to a bank account."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch13_55",
+    case_chapter: "chapter13",
+    question: "An IoT deployment faces three separate problems: (i) legacy equipment lacks the required sensors; (ii) connected devices use protocols the platform cannot process; and (iii) software anomalies cause inaccurate readings to be recorded. Which sequence correctly classifies the challenges?",
+    options: [
+      "Data security issues → Delivering value to the customer → Hardware compatibility issues",
+      "Incorrect data capture difficulties → Hardware compatibility issues → Data connectivity issues",
+      "Hardware compatibility issues → Data connectivity issues → Incorrect data capture difficulties",
+      "Capacity building → Proactive service → Product planning and management"
+    ],
+    answer: 2,
+    reason: "ICAI classifies missing sensors on legacy equipment as hardware compatibility issues, incompatible transport or data-format protocols as data connectivity issues, and inaccurate readings caused by incidents or software anomalies as incorrect data capture difficulties."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch13_56",
+    case_chapter: "chapter13",
+    question: "A bank uses two IoT-related initiatives. Initiative X analyses past service offerings and customer reactions to decide what to launch, whom to target and when. Initiative Y uses customers' economic conditions, buying behaviour and individual needs to offer a solution specific to each client. Which classification is correct?",
+    options: [
+      "X is product planning and management; Y is tailored marketing",
+      "X is data backup and recovery; Y is mobile communication",
+      "X is capacity building; Y is collection of debts",
+      "X is tailored marketing; Y is product planning and management"
+    ],
+    answer: 0,
+    reason: "ICAI describes product planning and management as using information about previous offerings and customer reactions to decide what, who and when to launch. Tailored marketing uses information about the customer's economic condition, buying behaviour and individual needs to provide a specific solution."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch13_57",
+    case_chapter: "chapter13",
+    question: "A financial institution has two computational problems: Model X generates false positives in fraud detection and delays customer onboarding; Model Y requires many calculations to rebalance portfolios under rapidly changing market conditions. Which pairing best follows ICAI's applications of Quantum Computing?",
+    options: [
+      "X is trading optimisation; Y is RegTech for regulators",
+      "X is targeting and prediction modelling; Y is trading optimisation",
+      "X is risk profiling; Y is mobile computing",
+      "X is e-business compliance; Y is fraud prevention through IoT"
+    ],
+    answer: 1,
+    reason: "ICAI discusses targeting and prediction modelling in connection with inaccurate fraud detection and false positives that delay customer onboarding. It describes trading optimisation as supporting portfolio diversification and rebalancing under changing market conditions."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch13_58",
+    case_chapter: "chapter13",
+    question: "A bank's current security protocols protect payment information against traditional computers. A risk assessment considers whether future quantum computers could undermine those protections. Which concern is most consistent with the chapter?",
+    options: [
+      "Quantum computing primarily prevents banks from monitoring customer queues",
+      "Quantum computing can only affect mobile hardware, not payment security",
+      "Quantum computing guarantees that current cryptographic algorithms will remain secure",
+      "Powerful quantum computers may break existing protocols and compromise cryptographic algorithms used for authentication, encryption and decryption"
+    ],
+    answer: 3,
+    reason: "ICAI warns that future quantum computers may be able to break protocols that protect data against traditional computers. The chapter specifically identifies the potential compromise of cryptographic algorithms used for authentication, encryption and decryption of payments."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch13_59",
+    case_chapter: "chapter13",
+    question: "A financial regulator discovers that a company barred from the financial system has resumed illegal activities under a new name. Which RegTech application most directly addresses this situation?",
+    options: [
+      "Synthetic identity fraud",
+      "Market surveillance for unusual broker behaviour",
+      "Avoiding phoenixing",
+      "IoT-enabled capacity building"
+    ],
+    answer: 2,
+    reason: "ICAI describes phoenixing as the re-emergence of barred or shut-down entities under a new name to resume illegal activities. RegTech can help regulators track such entities and address this problem."
+  },
+
+  {
+    difficulty: "Hard",
+    case_id: "ecosys_ch13_60",
+    case_chapter: "chapter13",
+    question: "An organisation discovers that a mobile application may expose personal information, introduce malware and create risks relating to the flow of data. The concern specifically relates to the program running on the mobile device rather than its physical specifications or network infrastructure. Which component is involved?",
+    options: [
+      "Mobile software",
+      "Mobile hardware",
+      "Mobile communication",
+      "e-RUPI voucher management"
+    ],
+    answer: 0,
+    reason: "ICAI defines mobile software as the programs running on mobile hardware, including the operating system and applications. The chapter notes that mobile applications may create risks involving data flow, personal identification, malware and access to personal information."
   }
 
 
