@@ -521,6 +521,14 @@ window.updateChart = function() {
 window.changeLevel = function(lvl) {
   currentLevel = lvl;
   localStorage.setItem("calcium_ca_level", currentLevel);
+  try {
+    const prof = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}");
+    prof.level = currentLevel;
+    localStorage.setItem("calcium_user_profile_v1", JSON.stringify(prof));
+    if (window.parent && typeof window.parent.syncTopBarProfileFromSturm === "function") {
+      window.parent.syncTopBarProfileFromSturm(prof);
+    }
+  } catch (e) {}
   renderTable();
 };
 

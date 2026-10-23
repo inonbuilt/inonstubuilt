@@ -51,10 +51,20 @@
   <body>
     <!-- Top Navigation: Entry points for Read Mode, Planning Mode, Co-Study Squad & Social Share -->
     <div class="mode-toggles">
-      <div style="display:flex; align-items:center; gap:6px; background:rgba(15,23,42,0.85); border:1px solid rgba(56,189,248,0.4); padding:6px 12px; border-radius:10px;">
-        <span style="font-size:12px; font-weight:700; color:#7dd3fc;">👤 Name:</span>
-        <input type="text" id="topBarUserName" placeholder="Your Name..." oninput="saveDisplayName(this.value)" style="background:rgba(255,255,255,0.08); border:1px solid rgba(56,189,248,0.3); color:white; padding:5px 8px; border-radius:6px; font-size:12px; font-weight:700; width:130px; outline:none;" />
-      </div>
+      <button type="button" class="profile-trigger-btn" id="topBarProfileBtn" onclick="openProfileModal()" title="Click to open CA Student Profile, Level, Mood, Bio & Backup/Restore" style="display:flex; align-items:center; gap:8px; background:rgba(15,23,42,0.9); border:1px solid rgba(56,189,248,0.45); padding:5px 12px; border-radius:10px; cursor:pointer; color:white; transition:all 0.25s ease; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+        <div id="topBarAvatarWrap" style="width:28px; height:28px; border-radius:50%; background:linear-gradient(135deg,#2563eb,#06b6d4); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; overflow:hidden; flex-shrink:0; border:1.5px solid rgba(125,211,252,0.6); pointer-events:none;">
+          <img id="topBarAvatarImg" src="" alt="" style="width:100%; height:100%; object-fit:cover; display:none;" />
+          <span id="topBarAvatarInitials">👤</span>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.15; text-align:left; pointer-events:none;">
+          <div style="display:flex; align-items:center; gap:5px;">
+            <span id="topBarProfileName" style="font-size:12px; font-weight:700; color:#f8fafc; max-width:115px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Fill Your profile</span>
+            <span id="topBarProfileMood" style="font-size:12px;" title="Current Study Mood">🔥</span>
+          </div>
+          <span id="topBarProfileLevel" style="font-size:9px; font-weight:800; color:#7dd3fc; letter-spacing:0.6px; text-transform:uppercase;"></span>
+        </div>
+      </button>
+      <input type="hidden" id="topBarUserName" value="CA Aspirant" />
       <button class="squad-trigger-btn" onclick="openSquadModal(true)">
         <span>👥</span> Study Squad <span class="squad-count-pill" id="topSquadCount">1</span>
       </button>
@@ -516,24 +526,49 @@
       ========================================= */
       const sturmOverlay = document.getElementById("sturmOverlay");
       const sturmIframe = document.getElementById("sturmIframe");
+      let sturmIframeLoaded = false;
+
+      if (sturmIframe) {
+        sturmIframe.addEventListener("load", () => {
+          sturmIframeLoaded = true;
+        });
+      }
 
       function callSturm(fnName, ...args) {
         if (!sturmIframe) return;
-        const win = sturmIframe.contentWindow;
-        if (win && typeof win[fnName] === "function") {
-          win[fnName](...args);
+        const invoke = () => {
+          const win = sturmIframe.contentWindow;
+          if (!win) return;
+          try {
+            if (typeof win[fnName] === "function") {
+              win[fnName](...args);
+              return;
+            }
+          } catch (err) {
+            // Fallback to postMessage when running over local file:// protocol
+          }
+          try {
+            win.postMessage({ __calciumSturmCall: true, fn: fnName, args: args }, "*");
+          } catch (err2) {}
+        };
+
+        if (sturmIframeLoaded) {
+          invoke();
         } else {
-          sturmIframe.addEventListener(
-            "load",
-            () => {
-              if (sturmIframe.contentWindow && typeof sturmIframe.contentWindow[fnName] === "function") {
-                sturmIframe.contentWindow[fnName](...args);
-              }
-            },
-            { once: true }
-          );
+          invoke();
+          sturmIframe.addEventListener("load", invoke, { once: true });
         }
       }
+
+      // Listen for messages sent back from sturm.html iframe
+      window.addEventListener("message", (event) => {
+        const data = event.data;
+        if (!data || !data.__calciumParentCall) return;
+        const fn = window[data.fn];
+        if (typeof fn === "function") {
+          fn(...(data.args || []));
+        }
+      });
 
       window.showSturmOverlay = function() {
         if (!sturmOverlay) return;
@@ -608,17 +643,92 @@
         callSturm("closeShareModal");
       };
 
+      window.openProfileModal = function() {
+        window.showSturmOverlay();
+        callSturm("openProfileModal");
+      };
+
+      window.closeProfileModal = function() {
+        callSturm("closeProfileModal");
+        window.hideSturmOverlay();
+      };
+
+      window.syncTopBarProfileFromSturm = function(profile) {
+        const p = profile || {};
+        if (p.name) localStorage.setItem("calcium_user_name", p.name);
+        if (p.level) localStorage.setItem("calcium_ca_level", p.level);
+        if (Object.keys(p).length > 0) {
+          localStorage.setItem("calcium_user_profile_v1", JSON.stringify(p));
+        }
+
+        const name = (p.name || localStorage.getItem("calcium_user_name") || "CA Aspirant").trim() || "CA Aspirant";
+        const level = (p.level || localStorage.getItem("calcium_ca_level") || "final").toUpperCase();
+        const mood = p.moodEmoji || "🔥";
+        const avatar = p.avatar || "";
+
+        const topInput = document.getElementById("topBarUserName");
+        if (topInput) topInput.value = name;
+        const nameEl = document.getElementById("topBarProfileName");
+        if (nameEl) nameEl.textContent = name;
+        const lvlEl = document.getElementById("topBarProfileLevel");
+        if (lvlEl) lvlEl.textContent = `CA ${level}`;
+        const moodEl = document.getElementById("topBarProfileMood");
+        if (moodEl) moodEl.textContent = mood;
+
+        const imgEl = document.getElementById("topBarAvatarImg");
+        const initEl = document.getElementById("topBarAvatarInitials");
+        if (imgEl && initEl) {
+          if (avatar) {
+            imgEl.src = avatar;
+            imgEl.style.display = "block";
+            initEl.style.display = "none";
+          } else {
+            imgEl.style.display = "none";
+            initEl.style.display = "block";
+            initEl.textContent = name.split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase() || "👤";
+          }
+        }
+
+        syncReadIframeTracker();
+        window.syncPlanIframeFromReadRoom();
+      };
+
+      window.refreshAllIframesAfterImport = function(importedStorage) {
+        try {
+          if (importedStorage && typeof importedStorage === "object") {
+            Object.entries(importedStorage).forEach(([k, v]) => {
+              if (v !== null && v !== undefined) {
+                localStorage.setItem(k, typeof v === "string" ? v : JSON.stringify(v));
+              }
+            });
+          }
+          let storedProf = {};
+          try { storedProf = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}"); } catch (e) {}
+          window.syncTopBarProfileFromSturm(storedProf);
+
+          const readIframe = document.getElementById("readModeIframe");
+          if (readIframe && readIframe.contentWindow) readIframe.contentWindow.location.reload();
+          const planIframe = document.getElementById("planModeIframe");
+          if (planIframe && planIframe.contentWindow) planIframe.contentWindow.location.reload();
+        } catch (e) {}
+      };
+
       window.saveDisplayName = function(val) {
         const clean = (val || "").trim() || "CA Aspirant";
         localStorage.setItem("calcium_user_name", clean);
         const topInput = document.getElementById("topBarUserName");
-        if (topInput && document.activeElement !== topInput) topInput.value = val;
-        callSturm("saveDisplayName", val);
+        if (topInput && document.activeElement !== topInput) topInput.value = clean;
+        const nameEl = document.getElementById("topBarProfileName");
+        if (nameEl) nameEl.textContent = clean;
+        callSturm("saveDisplayName", clean);
       };
 
       window.syncTopBarNameFromSturm = function(val) {
+        const clean = (val || "").trim() || "CA Aspirant";
         const topInput = document.getElementById("topBarUserName");
-        if (topInput && document.activeElement !== topInput) topInput.value = val;
+        if (topInput && document.activeElement !== topInput) topInput.value = clean;
+        const nameEl = document.getElementById("topBarProfileName");
+        if (nameEl) nameEl.textContent = clean;
       };
 
       window.syncSquadCountBadges = function(count) {
@@ -681,14 +791,16 @@
       };
 
       function initSquadEngine() {
-        const savedName = localStorage.getItem("calcium_user_name") || "CA Aspirant";
-        const topInput = document.getElementById("topBarUserName");
-        if (topInput) topInput.value = savedName;
+        let savedProf = {};
+        try {
+          savedProf = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}");
+        } catch (e) {}
+        window.syncTopBarProfileFromSturm(savedProf);
 
         const params = new URLSearchParams(window.location.search);
         if (params.get("room")) {
           window.showSturmOverlay();
-          callSturm("openSquadModal", false); // Do not attempt fullscreen on initial page load
+          callSturm("openSquadModal", false);
         }
       }
     </script>

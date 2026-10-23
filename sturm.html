@@ -217,6 +217,119 @@
       </div>
     </div>
 
+    <!-- ═══════════════════════════════════════════════════════════════════
+         MODAL 3: STUDENT PROFILE, CA LEVEL & FULL DATA BACKUP / RESTORE
+    ═══════════════════════════════════════════════════════════════════ -->
+    <div class="cn-modal-backdrop" id="profileModal">
+      <div class="cn-modal-card" style="max-width: 780px;">
+        <div class="cn-modal-header">
+          <h3>👤 CA Student Profile &amp; Universal Data Hub</h3>
+          <button class="cn-close-btn" onclick="closeProfileModal()">✕ Close</button>
+        </div>
+
+        <!-- TOP PROFILE HERO: Avatar + Name + CA Course Level -->
+        <div style="display:flex; gap:20px; align-items:center; flex-wrap:wrap; background:rgba(255,255,255,0.03); border:1px solid rgba(56,189,248,0.22); border-radius:14px; padding:18px; margin-bottom:16px;">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+            <div id="profileAvatarPreviewWrap" onclick="document.getElementById('profilePicInput').click()" title="Click to upload profile photo" style="width:86px; height:86px; border-radius:50%; background:linear-gradient(135deg,#2563eb,#06b6d4); display:flex; align-items:center; justify-content:center; font-size:28px; font-weight:800; color:white; cursor:pointer; overflow:hidden; border:2.5px solid #38bdf8; box-shadow:0 8px 25px rgba(56,189,248,0.3);">
+              <img id="profileAvatarPreviewImg" src="" alt="Avatar" style="width:100%; height:100%; object-fit:cover; display:none;" />
+              <span id="profileAvatarPreviewInitials">CA</span>
+            </div>
+            <input type="file" id="profilePicInput" accept="image/*" style="display:none;" onchange="handleProfilePicUpload(event)" />
+            <div style="display:flex; gap:6px;">
+              <button type="button" class="cn-btn secondary" style="padding:4px 9px; font-size:11px;" onclick="document.getElementById('profilePicInput').click()">📷 Photo</button>
+              <button type="button" class="cn-btn secondary" style="padding:4px 9px; font-size:11px; color:#fca5a5;" onclick="removeProfilePic()">🗑️</button>
+            </div>
+          </div>
+
+          <div style="flex:1; min-width:230px; display:flex; flex-direction:column; gap:10px;">
+            <div>
+              <label style="font-size:11px; font-weight:700; color:#93c5fd; display:block; margin-bottom:4px;">STUDENT DISPLAY NAME</label>
+              <input type="text" id="profNameInput" class="cn-input" placeholder="Enter your full name or nickname..." style="width:100%;" oninput="saveProfileFormLive()" />
+            </div>
+
+            <div>
+              <label style="font-size:11px; font-weight:700; color:#93c5fd; display:block; margin-bottom:6px;">SELECT YOUR CA LEVEL (SYNCS PLANNER &amp; READ MODE)</label>
+              <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:8px;">
+                <button type="button" id="profLvlFoundation" class="cn-btn secondary" onclick="selectProfileCaLevel('foundation')" style="padding:9px; font-size:12px;">🌱 CA Foundation</button>
+                <button type="button" id="profLvlInter" class="cn-btn secondary" onclick="selectProfileCaLevel('inter')" style="padding:9px; font-size:12px;">⚡ CA Inter</button>
+                <button type="button" id="profLvlFinal" class="cn-btn" onclick="selectProfileCaLevel('final')" style="padding:9px; font-size:12px;">🏆 CA Final</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MOOD SELECTOR -->
+        <div style="margin-bottom:14px;">
+          <label style="font-size:11px; font-weight:700; color:#93c5fd; display:block; margin-bottom:6px;">CURRENT STUDY MOOD &amp; STATUS</label>
+          <div id="profMoodBar" style="display:flex; gap:7px; flex-wrap:wrap;">
+            <button type="button" class="filter-pill-btn active" data-mood="🔥|Locked In" onclick="selectProfileMood('🔥','Locked In')">🔥 Locked In</button>
+            <button type="button" class="filter-pill-btn" data-mood="📚|Deep Revision" onclick="selectProfileMood('📚','Deep Revision')">📚 Deep Revision</button>
+            <button type="button" class="filter-pill-btn" data-mood="☕|Coffee &amp; Concepts" onclick="selectProfileMood('☕','Coffee &amp; Concepts')">☕ Coffee &amp; Concepts</button>
+            <button type="button" class="filter-pill-btn" data-mood="⚡|Solving RTP / MTP" onclick="selectProfileMood('⚡','Solving RTP / MTP')">⚡ Solving RTP / MTP</button>
+            <button type="button" class="filter-pill-btn" data-mood="🦉|Night Owl Grind" onclick="selectProfileMood('🦉','Night Owl Grind')">🦉 Night Owl Grind</button>
+            <button type="button" class="filter-pill-btn" data-mood="🧘|Calm &amp; Focused" onclick="selectProfileMood('🧘','Calm &amp; Focused')">🧘 Calm &amp; Focused</button>
+            <button type="button" class="filter-pill-btn" data-mood="🏆|AIR Target Mode" onclick="selectProfileMood('🏆','AIR Target Mode')">🏆 AIR Target Mode</button>
+          </div>
+        </div>
+
+        <!-- BIO & EXAM GOAL DETAILS -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(165px, 1fr)); gap:10px; margin-bottom:14px;">
+          <div>
+            <label style="font-size:11px; font-weight:700; color:#94a3b8; display:block; margin-bottom:4px;">📅 TARGET ATTEMPT</label>
+            <input type="text" id="profAttemptInput" class="cn-input" placeholder="e.g. May 2027 / Nov 2026" style="width:100%;" oninput="saveProfileFormLive()" />
+          </div>
+          <div>
+            <label style="font-size:11px; font-weight:700; color:#94a3b8; display:block; margin-bottom:4px;">🎯 TARGET GROUP</label>
+            <select id="profGroupInput" class="cn-input" style="width:100%; color-scheme:dark;" onchange="saveProfileFormLive()">
+              <option value="Both Groups">Both Groups</option>
+              <option value="Group 1">Group 1 Only</option>
+              <option value="Group 2">Group 2 Only</option>
+              <option value="SPOM + Final">SPOM + Final</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size:11px; font-weight:700; color:#94a3b8; display:block; margin-bottom:4px;">⏱️ DAILY GOAL (HRS)</label>
+            <input type="number" id="profDailyGoalInput" class="cn-input" min="1" max="18" value="10" style="width:100%;" oninput="saveProfileFormLive()" />
+          </div>
+          <div>
+            <label style="font-size:11px; font-weight:700; color:#94a3b8; display:block; margin-bottom:4px;">📍 CITY / ICAI REGION</label>
+            <input type="text" id="profCityInput" class="cn-input" placeholder="e.g. Mumbai / WIRC" style="width:100%;" oninput="saveProfileFormLive()" />
+          </div>
+        </div>
+
+        <div style="margin-bottom:18px;">
+          <label style="font-size:11px; font-weight:700; color:#93c5fd; display:block; margin-bottom:4px;">✍️ STUDENT BIO / MOTIVATION MANTRA</label>
+          <textarea id="profBioInput" class="cn-input" rows="2" placeholder="Write your CA goal, target exemption subjects, or personal study mantra..." style="width:100%; resize:vertical; font-family:inherit;" oninput="saveProfileFormLive()"></textarea>
+        </div>
+
+        <!-- PORTABLE CROSS-PC BACKUP & RESTORE (EXPORT / IMPORT ALL WEBSITE DATA) -->
+        <div style="background:linear-gradient(135deg, rgba(15,23,42,0.9), rgba(30,58,138,0.25)); border:1px solid rgba(56,189,248,0.35); border-radius:14px; padding:16px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+            <h4 style="margin:0; color:#7dd3fc; font-size:14px; display:flex; align-items:center; gap:8px;">
+              💾 Portable Cross-PC Data Backup &amp; Restore (.JSON)
+            </h4>
+            <span id="profDataStatsBadge" style="font-size:11px; color:#4ade80; font-weight:700;">All Plans + Read Mode Ready</span>
+          </div>
+          <p style="margin:0 0 12px 0; font-size:12px; color:#cbd5e1; line-height:1.45; text-align:left;">
+            Switching to another PC or browser? Export your entire <strong>Calcium Notes</strong> workspace (Profile, CA Level, all Planning Mode dates &amp; actual hours, Read Mode revision tasks, alarms, and quick notes) into a single JSON file and import it anywhere.
+          </p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+            <button type="button" class="cn-btn" onclick="exportAllCalciumDataJson()" style="background:linear-gradient(135deg,#059669,#10b981);">
+              ⬇️ Export All Data (.JSON)
+            </button>
+            <button type="button" class="cn-btn secondary" onclick="document.getElementById('importCalciumJsonInput').click()" style="border-color:rgba(56,189,248,0.5); color:#7dd3fc;">
+              ⬆️ Import Data File (.JSON)
+            </button>
+            <input type="file" id="importCalciumJsonInput" accept=".json,application/json" style="display:none;" onchange="importAllCalciumDataJson(event)" />
+            <button type="button" class="cn-btn" style="margin-left:auto;" onclick="saveAndCloseProfileModal()">
+              ✅ Save &amp; Done
+            </button>
+          </div>
+          <div id="profileBackupToast" style="margin-top:10px; font-size:12px; font-weight:700; color:#4ade80; min-height:16px;"></div>
+        </div>
+      </div>
+    </div>
+
     <!-- FLOATING CALL CONTROLS (Active while studying in Read/Plan Mode) -->
     <div id="floatingCallWidget" class="floating-call-widget" style="display: none;">
       <div class="floating-call-info" onclick="openSquadModal(true)" title="Click to view Video Room">
@@ -743,19 +856,334 @@
         window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, "_blank");
       };
 
-      function notifyParentOverlayVisibility() {
+      function callParent(fnName, ...args) {
+        if (!window.parent || window.parent === window) return;
         try {
-          if (window.parent && window.parent !== window) {
-            const sqActive = document.getElementById("squadModal").classList.contains("active");
-            const shActive = document.getElementById("shareModal").classList.contains("active");
-            if (sqActive || shActive) {
-              if (typeof window.parent.showSturmOverlay === "function") window.parent.showSturmOverlay();
-            } else {
-              if (typeof window.parent.hideSturmOverlay === "function") window.parent.hideSturmOverlay();
-            }
+          if (typeof window.parent[fnName] === "function") {
+            window.parent[fnName](...args);
+            return;
           }
         } catch (e) {}
+        try {
+          window.parent.postMessage({ __calciumParentCall: true, fn: fnName, args: args }, "*");
+        } catch (e2) {}
       }
+
+      window.addEventListener("message", (event) => {
+        const data = event.data;
+        if (!data || !data.__calciumSturmCall) return;
+        const fn = window[data.fn];
+        if (typeof fn === "function") {
+          fn(...(data.args || []));
+        }
+      });
+
+      function notifyParentOverlayVisibility() {
+        const sqActive = document.getElementById("squadModal").classList.contains("active");
+        const shActive = document.getElementById("shareModal").classList.contains("active");
+        const prModal = document.getElementById("profileModal");
+        const prActive = prModal && prModal.classList.contains("active");
+        if (sqActive || shActive || prActive) {
+          callParent("showSturmOverlay");
+        } else {
+          callParent("hideSturmOverlay");
+        }
+      }
+
+      /* =========================================================================
+         STUDENT PROFILE, CA LEVEL, BIO, MOOD & CROSS-PC BACKUP / RESTORE
+      ========================================================================= */
+      const PROFILE_STORAGE_KEY = "calcium_user_profile_v1";
+
+      function getSavedUserProfile() {
+        let p = {};
+        try {
+          p = JSON.parse(localStorage.getItem(PROFILE_STORAGE_KEY) || "{}");
+        } catch (e) {}
+        return {
+          name: p.name || localStorage.getItem("calcium_user_name") || "CA Aspirant",
+          level: p.level || localStorage.getItem("calcium_ca_level") || "final",
+          moodEmoji: p.moodEmoji || "🔥",
+          moodText: p.moodText || "Locked In",
+          attempt: p.attempt || "May 2027",
+          group: p.group || "Both Groups",
+          dailyGoal: p.dailyGoal || 10,
+          city: p.city || "",
+          bio: p.bio || "",
+          avatar: p.avatar || ""
+        };
+      }
+
+      function persistUserProfile(profile) {
+        localStorage.setItem(PROFILE_STORAGE_KEY, JSON.stringify(profile));
+        localStorage.setItem("calcium_user_name", profile.name || "CA Aspirant");
+        localStorage.setItem("calcium_ca_level", profile.level || "final");
+
+        ["myDisplayName", "shareBarUserName"].forEach(id => {
+          const el = document.getElementById(id);
+          if (el && document.activeElement !== el) el.value = profile.name;
+        });
+
+        callParent("syncTopBarProfileFromSturm", profile);
+        squadMembersMap[myClientId] = buildMyMemberState();
+        broadcastMyState();
+        syncSquadToStorage();
+      }
+
+      window.openProfileModal = function() {
+        populateProfileModalUI();
+        const modal = document.getElementById("profileModal");
+        if (modal) modal.classList.add("active");
+        notifyParentOverlayVisibility();
+      };
+
+      window.closeProfileModal = function() {
+        const modal = document.getElementById("profileModal");
+        if (modal) modal.classList.remove("active");
+        notifyParentOverlayVisibility();
+      };
+
+      window.saveAndCloseProfileModal = function() {
+        window.saveProfileFormLive();
+        const toast = document.getElementById("profileBackupToast");
+        if (toast) toast.textContent = "✅ Profile saved & synced across Read Mode and Planning Mode!";
+        setTimeout(() => {
+          window.closeProfileModal();
+        }, 300);
+      };
+
+      function populateProfileModalUI() {
+        const p = getSavedUserProfile();
+        const nameInp = document.getElementById("profNameInput");
+        if (nameInp) nameInp.value = p.name;
+        const attInp = document.getElementById("profAttemptInput");
+        if (attInp) attInp.value = p.attempt;
+        const grpInp = document.getElementById("profGroupInput");
+        if (grpInp) grpInp.value = p.group;
+        const goalInp = document.getElementById("profDailyGoalInput");
+        if (goalInp) goalInp.value = p.dailyGoal;
+        const cityInp = document.getElementById("profCityInput");
+        if (cityInp) cityInp.value = p.city;
+        const bioInp = document.getElementById("profBioInput");
+        if (bioInp) bioInp.value = p.bio;
+
+        updateProfileLevelButtonsUI(p.level);
+        updateProfileMoodButtonsUI(p.moodEmoji, p.moodText);
+        updateProfileAvatarPreviewUI(p.avatar, p.name);
+        updateProfileDataStatsBadge();
+      }
+
+      function updateProfileLevelButtonsUI(level) {
+        const lvl = (level || "final").toLowerCase();
+        const btnF = document.getElementById("profLvlFoundation");
+        const btnI = document.getElementById("profLvlInter");
+        const btnFi = document.getElementById("profLvlFinal");
+        if (btnF) btnF.className = lvl === "foundation" ? "cn-btn" : "cn-btn secondary";
+        if (btnI) btnI.className = lvl === "inter" ? "cn-btn" : "cn-btn secondary";
+        if (btnFi) btnFi.className = lvl === "final" ? "cn-btn" : "cn-btn secondary";
+      }
+
+      function updateProfileMoodButtonsUI(emoji, text) {
+        const key = `${emoji || "🔥"}|${text || "Locked In"}`;
+        document.querySelectorAll("#profMoodBar .filter-pill-btn").forEach(btn => {
+          btn.classList.toggle("active", btn.getAttribute("data-mood") === key);
+        });
+      }
+
+      function updateProfileAvatarPreviewUI(avatarDataUrl, name) {
+        const img = document.getElementById("profileAvatarPreviewImg");
+        const init = document.getElementById("profileAvatarPreviewInitials");
+        if (!img || !init) return;
+        if (avatarDataUrl) {
+          img.src = avatarDataUrl;
+          img.style.display = "block";
+          init.style.display = "none";
+        } else {
+          img.style.display = "none";
+          init.style.display = "block";
+          init.textContent = (name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase() || "CA";
+        }
+      }
+
+      function updateProfileDataStatsBadge() {
+        const badge = document.getElementById("profDataStatsBadge");
+        if (!badge) return;
+        let plans = {};
+        let tasks = [];
+        let alarms = [];
+        try { plans = JSON.parse(localStorage.getItem("calcium_ca_data_v5") || "{}"); } catch (e) {}
+        try { tasks = JSON.parse(localStorage.getItem("cn_tasks") || "[]"); } catch (e) {}
+        try { alarms = JSON.parse(localStorage.getItem("cn_alarms") || "[]"); } catch (e) {}
+        const dayCount = Object.keys(plans).length;
+        badge.textContent = `📊 ${dayCount} Planned Day${dayCount === 1 ? "" : "s"} • ${tasks.length} Tasks • ${alarms.length} Alarms`;
+      }
+
+      window.selectProfileCaLevel = function(level) {
+        const p = getSavedUserProfile();
+        p.level = level;
+        updateProfileLevelButtonsUI(level);
+        persistUserProfile(p);
+        window.dispatchEvent(new Event("storage"));
+      };
+
+      window.selectProfileMood = function(emoji, text) {
+        const p = getSavedUserProfile();
+        p.moodEmoji = emoji;
+        p.moodText = text;
+        updateProfileMoodButtonsUI(emoji, text);
+        persistUserProfile(p);
+      };
+
+      window.saveProfileFormLive = function() {
+        const p = getSavedUserProfile();
+        const nameInp = document.getElementById("profNameInput");
+        const attInp = document.getElementById("profAttemptInput");
+        const grpInp = document.getElementById("profGroupInput");
+        const goalInp = document.getElementById("profDailyGoalInput");
+        const cityInp = document.getElementById("profCityInput");
+        const bioInp = document.getElementById("profBioInput");
+
+        if (nameInp) p.name = nameInp.value.trim() || "CA Aspirant";
+        if (attInp) p.attempt = attInp.value.trim();
+        if (grpInp) p.group = grpInp.value;
+        if (goalInp) p.dailyGoal = parseFloat(goalInp.value) || 10;
+        if (cityInp) p.city = cityInp.value.trim();
+        if (bioInp) p.bio = bioInp.value;
+
+        updateProfileAvatarPreviewUI(p.avatar, p.name);
+        persistUserProfile(p);
+      };
+
+      window.handleProfilePicUpload = function(event) {
+        const file = event.target && event.target.files ? event.target.files[0] : null;
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const img = new Image();
+          img.onload = function() {
+            const canvas = document.createElement("canvas");
+            const SIZE = 160;
+            canvas.width = SIZE;
+            canvas.height = SIZE;
+            const ctx = canvas.getContext("2d");
+            const minSide = Math.min(img.width, img.height);
+            const sx = (img.width - minSide) / 2;
+            const sy = (img.height - minSide) / 2;
+            ctx.drawImage(img, sx, sy, minSide, minSide, 0, 0, SIZE, SIZE);
+            const compressedDataUrl = canvas.toDataURL("image/jpeg", 0.82);
+
+            const p = getSavedUserProfile();
+            p.avatar = compressedDataUrl;
+            updateProfileAvatarPreviewUI(p.avatar, p.name);
+            persistUserProfile(p);
+
+            const toast = document.getElementById("profileBackupToast");
+            if (toast) toast.textContent = "✅ Profile photo updated!";
+          };
+          img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      };
+
+      window.removeProfilePic = function() {
+        const p = getSavedUserProfile();
+        p.avatar = "";
+        updateProfileAvatarPreviewUI("", p.name);
+        persistUserProfile(p);
+      };
+
+      window.exportAllCalciumDataJson = function() {
+        window.saveProfileFormLive();
+        const profile = getSavedUserProfile();
+        const exportPayload = {
+          app: "Calcium Notes Study Reactor",
+          version: "2.0",
+          exportedAt: new Date().toISOString(),
+          profile: profile,
+          storage: {
+            calcium_user_profile_v1: localStorage.getItem("calcium_user_profile_v1") || JSON.stringify(profile),
+            calcium_user_name: localStorage.getItem("calcium_user_name") || profile.name,
+            calcium_ca_level: localStorage.getItem("calcium_ca_level") || profile.level,
+            calcium_ca_data_v5: localStorage.getItem("calcium_ca_data_v5") || "{}",
+            calcium_default_timetable: localStorage.getItem("calcium_default_timetable") || "null",
+            cn_alarms: localStorage.getItem("cn_alarms") || "[]",
+            cn_tasks: localStorage.getItem("cn_tasks") || "[]",
+            cn_notes: localStorage.getItem("cn_notes") || ""
+          }
+        };
+
+        const blob = new Blob([JSON.stringify(exportPayload, null, 2)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        const safeName = (profile.name || "ca-student").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+        a.href = url;
+        a.download = `calcium-notes-backup-${safeName}-${getTodayKey()}.json`;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+
+        const toast = document.getElementById("profileBackupToast");
+        if (toast) {
+          toast.style.color = "#4ade80";
+          toast.textContent = "✅ Full backup JSON downloaded! Copy this file to your other PC to import.";
+        }
+      };
+
+      window.importAllCalciumDataJson = function(event) {
+        const file = event.target && event.target.files ? event.target.files[0] : null;
+        if (!file) return;
+        const toast = document.getElementById("profileBackupToast");
+
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          try {
+            const parsed = JSON.parse(e.target.result);
+            if (!parsed || (!parsed.storage && !parsed.profile && !parsed.calcium_ca_data_v5)) {
+              throw new Error("Invalid Calcium Notes backup file format.");
+            }
+
+            const store = parsed.storage || parsed;
+            const keysToRestore = [
+              "calcium_user_profile_v1",
+              "calcium_user_name",
+              "calcium_ca_level",
+              "calcium_ca_data_v5",
+              "calcium_default_timetable",
+              "cn_alarms",
+              "cn_tasks",
+              "cn_notes"
+            ];
+
+            keysToRestore.forEach(k => {
+              if (store[k] !== undefined && store[k] !== null) {
+                const val = typeof store[k] === "string" ? store[k] : JSON.stringify(store[k]);
+                localStorage.setItem(k, val);
+              }
+            });
+
+            if (parsed.profile && typeof parsed.profile === "object") {
+              persistUserProfile(parsed.profile);
+            }
+
+            populateProfileModalUI();
+            window.dispatchEvent(new Event("storage"));
+            callParent("refreshAllIframesAfterImport", store);
+
+            if (toast) {
+              toast.style.color = "#4ade80";
+              toast.textContent = "✅ All Profile, Planning Mode & Read Mode data restored successfully!";
+            }
+          } catch (err) {
+            if (toast) {
+              toast.style.color = "#f87171";
+              toast.textContent = "⚠️ Import failed: " + (err.message || "Invalid JSON file.");
+            }
+          }
+          event.target.value = "";
+        };
+        reader.readAsText(file);
+      };
 
       window.openSquadModal = function(attemptFullscreen = false) {
         document.getElementById("squadModal").classList.add("active");
