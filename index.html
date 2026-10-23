@@ -246,13 +246,16 @@
       </div>
     </footer>
 
-    <!-- READ MODE OVERLAY -->
+<!-- READ MODE OVERLAY (FULL SCREEN IFRAME) -->
     <div id="readModeOverlay">
       <div class="rm-header">
         <div class="rm-brand">📖 Calcium <span>Read Mode</span></div>
         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button class="rm-exit-btn" style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.45);" onclick="toggleBrowserFullscreen()">
+            ⛶ Full Screen
+          </button>
           <button class="rm-exit-btn" style="background: rgba(124, 58, 237, 0.2); color: #ddd6fe; border-color: rgba(167, 139, 250, 0.45);" onclick="openSquadModal()">
-            👥 Study Squad (<span id="rmHeaderSquadCount">1</span>)
+            📹 Study Meet (<span id="rmHeaderSquadCount">1</span>)
           </button>
           <button class="rm-exit-btn" style="background: rgba(236, 72, 153, 0.2); color: #fbcfe8; border-color: rgba(244, 114, 182, 0.45);" onclick="openShareModal()">
             📸 Share Wrap
@@ -269,18 +272,23 @@
         <iframe
           id="readModeIframe"
           src="./readmode.html"
+          allow="fullscreen; autoplay; microphone; camera; display-capture"
+          allowfullscreen
           style="width: 100%; height: 100%; border: none"
         ></iframe>
       </div>
     </div>
 
-    <!-- PLANNING MODE OVERLAY -->
+    <!-- PLANNING MODE OVERLAY (FULL SCREEN IFRAME) -->
     <div id="planningModeOverlay">
       <div class="rm-header">
         <div class="rm-brand">📅 Calcium <span>Planning Mode</span></div>
         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button class="rm-exit-btn" style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.45);" onclick="toggleBrowserFullscreen()">
+            ⛶ Full Screen
+          </button>
           <button class="rm-exit-btn" style="background: rgba(124, 58, 237, 0.2); color: #ddd6fe; border-color: rgba(167, 139, 250, 0.45);" onclick="openSquadModal()">
-            👥 Study Squad (<span id="planHeaderSquadCount">1</span>)
+            📹 Study Meet (<span id="planHeaderSquadCount">1</span>)
           </button>
           <button class="rm-exit-btn" style="background: rgba(236, 72, 153, 0.2); color: #fbcfe8; border-color: rgba(244, 114, 182, 0.45);" onclick="openShareModal()">
             📸 Share Wrap
@@ -297,143 +305,181 @@
         <iframe
           id="planModeIframe"
           src="./pv4.html"
+          allow="fullscreen; autoplay; microphone; camera; display-capture"
+          allowfullscreen
           style="width: 100%; height: 100%; border: none"
         ></iframe>
       </div>
     </div>
 
     <!-- ═══════════════════════════════════════════════════════════════════
-         MODAL 1: UNLIMITED PEERJS LIVE STUDY SQUAD ROOM & CHAT
+         MODAL 1: GOOGLE MEET FULLSCREEN LIVE STUDY ROOM (WEBRTC PEERJS)
     ═══════════════════════════════════════════════════════════════════ -->
-    <div class="cn-modal-backdrop" id="squadModal">
-      <div class="cn-modal-card">
-        <div class="cn-modal-header">
-          <h3>👥 Live Co-Study Room (Unlimited Members via PeerJS)</h3>
-          <button class="cn-close-btn" onclick="closeSquadModal()">✕ Close</button>
-        </div>
+    <div class="cn-modal-backdrop gmeet-fullscreen-backdrop" id="squadModal">
+      <div class="gmeet-shell">
 
-        <!-- Profile Row -->
-        <div class="cn-input-row">
-          <input type="text" id="myDisplayName" class="cn-input" placeholder="Your Name (e.g. Rahul - CA Final)" oninput="saveDisplayName(this.value)" />
-          <button class="cn-btn" onclick="createPeerRoom()">🚀 Create Unlimited Room</button>
-        </div>
-
-        <!-- Join Existing Room Row -->
-        <div class="cn-input-row">
-          <input type="text" id="joinRoomInput" class="cn-input" placeholder="Paste Room Code (e.g. CA-8492) or open invite link" />
-          <button class="cn-btn" onclick="joinPeerRoomFromInput()">🔗 Join Room</button>
-          <button class="cn-btn secondary" onclick="leavePeerRoom()">🚪 Reset / Leave</button>
-        </div>
-
-        <!-- Shareable Invite Link Box -->
-        <div id="inviteLinkBox" style="background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 12px; padding: 12px; margin-bottom: 14px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; flex-wrap:wrap; gap:6px;">
-            <span style="font-size:12px; font-weight:700; color:#93c5fd;" id="squadStatusText">Status: Ready to Create or Join Room</span>
-            <span style="font-size:11px; color:#38bdf8; font-weight:700;" id="squadOnlineCounter">1 Member Active</span>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <input type="text" id="shareInviteUrl" class="cn-input" readonly value="Click 'Create Unlimited Room' to generate your invite link" style="font-family:monospace; font-size:12px;" />
-            <button class="cn-btn" onclick="copyInviteLink()">📋 Copy Link</button>
-            <button class="cn-btn whatsapp" onclick="shareInviteWhatsApp()">💬 WhatsApp Invite</button>
-          </div>
-        </div>
-
-        <!-- ═══════════════════════════════════════════════════════════════════
-             LIVE AUDIO & VIDEO CALL STAGE + FUN FILTERS (WEBRTC PEERJS)
-        ═══════════════════════════════════════════════════════════════════ -->
-        <div id="callStageContainer" class="call-stage-card">
-          <div class="call-stage-header">
-            <div class="call-header-info">
-              <span class="call-badge" id="callStatusBadge">
-                <span class="status-dot"></span>
-                <span id="callStatusText">Call Inactive</span>
-              </span>
-              <span class="call-count-text" id="callCountText">0 on call</span>
-            </div>
-            <!-- Call Action Controls -->
-            <div class="call-action-btns">
-              <button id="btnToggleAudio" class="call-btn btn-audio off" onclick="toggleAudio()" title="Turn Audio On/Off">
-                <span class="btn-icon">🔇</span>
-                <span class="btn-label" id="lblToggleAudio">Mic Off</span>
-              </button>
-              <button id="btnToggleVideo" class="call-btn btn-video off" onclick="toggleVideo()" title="Turn Video On/Off">
-                <span class="btn-icon">📷</span>
-                <span class="btn-label" id="lblToggleVideo">Video Off</span>
-              </button>
-              <button id="btnShareScreen" class="call-btn btn-screen off" onclick="toggleScreenShare()" title="Share Study Screen">
-                <span class="btn-icon">🖥️</span>
-                <span class="btn-label" id="lblShareScreen">Screen</span>
-              </button>
-              <button id="btnJoinLeaveCall" class="call-btn btn-join" onclick="toggleJoinLeaveCall()" title="Join or Leave Call">
-                <span class="btn-icon">📞</span>
-                <span class="btn-label" id="lblJoinLeave">Join Call</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Fun Video Filters Selector Bar -->
-          <div class="video-filter-bar" id="videoFilterBar">
-            <span class="filter-bar-label">🎨 Video Filter:</span>
-            <button class="filter-pill-btn active" data-filter="none" onclick="setVideoFilter('none')">✨ Normal</button>
-            <button class="filter-pill-btn" data-filter="cyberpunk" onclick="setVideoFilter('cyberpunk')">🟣 Cyberpunk</button>
-            <button class="filter-pill-btn" data-filter="retro" onclick="setVideoFilter('retro')">📼 Retro 90s</button>
-            <button class="filter-pill-btn" data-filter="noir" onclick="setVideoFilter('noir')">🕵️ Noir</button>
-            <button class="filter-pill-btn" data-filter="anime" onclick="setVideoFilter('anime')">🌸 Anime Pop</button>
-            <button class="filter-pill-btn" data-filter="warm" onclick="setVideoFilter('warm')">🌅 Warm</button>
-            <button class="filter-pill-btn" data-filter="matrix" onclick="setVideoFilter('matrix')">💻 Matrix</button>
-            <button class="filter-pill-btn" data-filter="xray" onclick="setVideoFilter('xray')">👻 X-Ray</button>
-            <button class="filter-pill-btn" data-filter="blur" onclick="setVideoFilter('blur')">🌫️ Blur</button>
-          </div>
-
-          <!-- Alert banner if permissions denied -->
-          <div id="callMediaAlert" class="call-media-alert" style="display:none;"></div>
-
-          <!-- Video Tiles Gallery -->
-          <div id="videoGallery" class="video-gallery-grid">
-            <!-- Local User Tile -->
-            <div id="localVideoTile" class="video-tile local-tile camera-off">
-              <video id="localVideoFeed" class="v-filter-none" autoplay playsinline muted></video>
-              <div class="tile-avatar" id="localTileAvatar">CA</div>
-              <span class="tile-filter-tag" id="localFilterBadge" style="display:none;"></span>
-              <div class="tile-overlay">
-                <span class="tile-name" id="localTileName">You (Solo)</span>
-                <div class="tile-indicators">
-                  <span id="localAudioIndicator" class="indicator-icon muted" title="Microphone Muted">🔇</span>
-                  <span id="localVideoIndicator" class="indicator-icon camera-off" title="Camera Off">📷</span>
-                </div>
-              </div>
-              <div class="speaking-ring"></div>
-            </div>
-
-            <!-- Remote Video Tiles container -->
-            <div id="remoteVideosContainer" class="remote-videos-wrapper"></div>
-          </div>
-        </div>
-
-        <!-- Unlimited Seats Grid -->
-        <div style="display:flex; justify-content:space-between; align-items:center;">
-          <span style="font-size:12px; font-weight:700; color:#cbd5e1;">LIVE ROOM ROSTER (AUTO-SYNCED ACROSS READ &amp; PLAN MODES)</span>
-          <button class="cn-btn secondary" style="padding:5px 10px; font-size:11px;" onclick="pushCurrentLocalPlanToSquad()">📤 Sync My Timetable to All Members</button>
-        </div>
-        <div class="squad-seats-grid" id="modalSquadGrid"></div>
-
-        <!-- LIVE ROOM CHAT -->
-        <div style="margin-top:18px; border-top:1px solid rgba(255,255,255,0.1); padding-top:14px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-            <span style="font-size:12px; font-weight:700; color:#7dd3fc; display:flex; align-items:center; gap:6px;">
-              <span>💬 Live Room Study Chat</span>
-              <span id="chatRoomBadge" style="font-size:10px; background:rgba(59,130,246,0.25); padding:2px 7px; border-radius:99px; color:#93c5fd;">Active</span>
+        <!-- TOP BAR: Room Controls, Join/Create & Invite Actions -->
+        <div class="gmeet-top-bar">
+          <div class="gmeet-brand-left">
+            <span class="gmeet-logo-badge">📹 Calcium Meet</span>
+            <span class="call-badge" id="callStatusBadge">
+              <span class="status-dot"></span>
+              <span id="callStatusText">Call Inactive</span>
             </span>
-            <span style="font-size:11px; color:#94a3b8;">Chat with everyone currently in this room</span>
+            <span class="call-count-text" id="callCountText">0 on call</span>
+            <span class="gmeet-status-pill" id="squadStatusText">Ready to Start or Join</span>
+            <span class="gmeet-member-pill" id="squadOnlineCounter">1 Active</span>
           </div>
-          <div id="squadChatMessages" style="height:140px; overflow-y:auto; background:rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:10px; display:flex; flex-direction:column; gap:6px; font-size:12px; margin-bottom:8px;">
-            <div style="color:#64748b; font-style:italic; text-align:center; margin:auto 0;">Room study chat connected. Say hi to your study partners! 👋</div>
-          </div>
-          <div class="cn-input-row" style="margin-bottom:0;">
-            <input type="text" id="squadChatInput" class="cn-input" placeholder="Type a message or doubt... (Press Enter to send)" onkeydown="if(event.key==='Enter'){event.preventDefault();sendSquadChatMessage();}" />
-            <button class="cn-btn" onclick="sendSquadChatMessage()">💬 Send</button>
+
+          <div class="gmeet-top-Controls">
+            <input type="text" id="myDisplayName" class="gmeet-top-input" placeholder="Your Name" oninput="saveDisplayName(this.value)" style="width: 130px;" />
+            <button class="gmeet-top-btn primary" onclick="startOrCreateMeetRoom()">🚀 Start Meet</button>
+            <input type="text" id="joinRoomInput" class="gmeet-top-input" placeholder="Room Code (CA-XXXX)" style="width: 145px;" />
+            <button class="gmeet-top-btn" onclick="joinMeetRoomAndAutoCall()">🔗 Join</button>
+
+            <div id="inviteLinkBox" style="display:flex; align-items:center; gap:6px;">
+              <input type="text" id="shareInviteUrl" readonly value="" style="display:none;" />
+              <button class="gmeet-top-btn" onclick="copyInviteLink()" title="Copy Room Invite Link">📋 Copy Link</button>
+              <button class="gmeet-top-btn whatsapp" onclick="shareInviteWhatsApp()" title="Invite via WhatsApp">💬 WhatsApp</button>
+            </div>
           </div>
         </div>
+
+        <!-- Alert Banner if Camera/Mic Permissions Denied -->
+        <div id="callMediaAlert" class="call-media-alert" style="display:none; margin: 8px 16px 0;"></div>
+
+        <!-- MAIN WORKSPACE: Fullscreen Adaptive Video Stage + Collapsible Side Drawer -->
+        <div class="gmeet-main-workspace">
+
+          <!-- VIDEO STAGE -->
+          <div id="callStageContainer" class="gmeet-video-stage">
+
+            <!-- Floating Video Filter Bar (Toggled from Bottom Dock) -->
+            <div class="video-filter-bar gmeet-floating-filters" id="videoFilterBar" style="display:none;">
+              <span class="filter-bar-label">🎨 Video Filter:</span>
+              <button class="filter-pill-btn active" data-filter="none" onclick="setVideoFilter('none')">✨ Normal</button>
+              <button class="filter-pill-btn" data-filter="cyberpunk" onclick="setVideoFilter('cyberpunk')">🟣 Cyberpunk</button>
+              <button class="filter-pill-btn" data-filter="retro" onclick="setVideoFilter('retro')">📼 Retro 90s</button>
+              <button class="filter-pill-btn" data-filter="noir" onclick="setVideoFilter('noir')">🕵️ Noir</button>
+              <button class="filter-pill-btn" data-filter="anime" onclick="setVideoFilter('anime')">🌸 Anime Pop</button>
+              <button class="filter-pill-btn" data-filter="warm" onclick="setVideoFilter('warm')">🌅 Warm</button>
+              <button class="filter-pill-btn" data-filter="matrix" onclick="setVideoFilter('matrix')">💻 Matrix</button>
+              <button class="filter-pill-btn" data-filter="xray" onclick="setVideoFilter('xray')">👻 X-Ray</button>
+              <button class="filter-pill-btn" data-filter="blur" onclick="setVideoFilter('blur')">🌫️ Blur</button>
+            </div>
+
+            <!-- GOOGLE MEET ADAPTIVE VIDEO GRID -->
+            <div id="videoGallery" class="video-gallery-grid gmeet-grid" data-tile-count="1">
+              <!-- Local User Tile -->
+              <div id="localVideoTile" class="video-tile local-tile camera-off">
+                <video id="localVideoFeed" class="v-filter-none" autoplay playsinline muted></video>
+                <div class="tile-avatar" id="localTileAvatar">CA</div>
+                <span class="tile-filter-tag" id="localFilterBadge" style="display:none;"></span>
+                <button class="gmeet-pin-btn" onclick="togglePinVideoTile('localVideoTile')" title="Pin/Unpin Screen">📌</button>
+                <div class="tile-overlay">
+                  <span class="tile-name" id="localTileName">You</span>
+                  <div class="tile-indicators">
+                    <span id="localAudioIndicator" class="indicator-icon muted" title="Microphone Muted">🔇</span>
+                    <span id="localVideoIndicator" class="indicator-icon camera-off" title="Camera Off">📷</span>
+                  </div>
+                </div>
+                <div class="speaking-ring"></div>
+              </div>
+
+              <!-- Remote Video Tiles Container -->
+              <div id="remoteVideosContainer" class="remote-videos-wrapper"></div>
+            </div>
+          </div>
+
+          <!-- COLLAPSIBLE RIGHT SIDE DRAWER (People Roster & In-Call Chat) -->
+          <aside id="gmeetSideDrawer" class="gmeet-side-drawer">
+            <div class="gmeet-drawer-tabs">
+              <button id="tabBtnRoster" class="gmeet-drawer-tab active" onclick="switchMeetDrawerTab('roster')">👥 Study Roster</button>
+              <button id="tabBtnChat" class="gmeet-drawer-tab" onclick="switchMeetDrawerTab('chat')">💬 Live Chat</button>
+              <button class="gmeet-drawer-close" onclick="toggleMeetDrawer()">✕</button>
+            </div>
+
+            <!-- TAB 1: Live Study Squad Roster -->
+            <div id="drawerPanelRoster" class="gmeet-drawer-body">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <span style="font-size:11px; font-weight:700; color:#94a3b8;">LIVE TIMETABLE &amp; STATUS</span>
+                <button class="cn-btn secondary" style="padding:4px 8px; font-size:11px;" onclick="pushCurrentLocalPlanToSquad()">📤 Sync My Plan</button>
+              </div>
+              <div class="squad-seats-grid gmeet-roster-list" id="modalSquadGrid"></div>
+            </div>
+
+            <!-- TAB 2: Live Room Chat -->
+            <div id="drawerPanelChat" class="gmeet-drawer-body" style="display:none; flex-direction:column; height:100%;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span style="font-size:11px; color:#94a3b8;">Messages are visible to everyone in the call</span>
+                <span id="chatRoomBadge" style="font-size:10px; background:rgba(59,130,246,0.25); padding:2px 7px; border-radius:99px; color:#93c5fd;">Active</span>
+              </div>
+              <div id="squadChatMessages" style="flex:1; overflow-y:auto; background:rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:10px; display:flex; flex-direction:column; gap:6px; font-size:12px; margin-bottom:10px;">
+                <div style="color:#64748b; font-style:italic; text-align:center; margin:auto 0;">Room study chat connected. Say hi to your study partners! 👋</div>
+              </div>
+              <div class="cn-input-row" style="margin-bottom:0;">
+                <input type="text" id="squadChatInput" class="cn-input" placeholder="Send a message..." onkeydown="if(event.key==='Enter'){event.preventDefault();sendSquadChatMessage();}" />
+                <button class="cn-btn" onclick="sendSquadChatMessage()">Send</button>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+
+        <!-- BOTTOM GOOGLE MEET CONTROL DOCK -->
+        <div class="gmeet-bottom-dock">
+          <!-- Left: Time & Room Code -->
+          <div class="gmeet-dock-left">
+            <span id="gmeetLiveClock">00:00</span>
+            <span class="gmeet-divider">|</span>
+            <span id="gmeetRoomCodeLabel">Study Meet</span>
+          </div>
+
+          <!-- Center: Audio, Video, Screen Share, Filters, Fullscreen, End Call -->
+          <div class="call-action-btns gmeet-dock-center">
+            <button id="btnToggleAudio" class="call-btn btn-audio off" onclick="toggleAudio()" title="Turn Microphone On/Off">
+              <span class="btn-icon">🔇</span>
+              <span class="btn-label" id="lblToggleAudio">Mic Off</span>
+            </button>
+            <button id="btnToggleVideo" class="call-btn btn-video off" onclick="toggleVideo()" title="Turn Camera On/Off">
+              <span class="btn-icon">📷</span>
+              <span class="btn-label" id="lblToggleVideo">Video Off</span>
+            </button>
+            <button id="btnShareScreen" class="call-btn btn-screen off" onclick="toggleScreenShare()" title="Present Screen">
+              <span class="btn-icon">🖥️</span>
+              <span class="btn-label" id="lblShareScreen">Present</span>
+            </button>
+            <button class="call-btn gmeet-ctrl-btn" onclick="toggleFilterPopup()" title="Video Filters & Effects">
+              <span class="btn-icon">🎨</span>
+              <span class="btn-label">Filters</span>
+            </button>
+            <button class="call-btn gmeet-ctrl-btn" onclick="toggleBrowserFullscreen()" title="Toggle Fullscreen">
+              <span class="btn-icon">⛶</span>
+              <span class="btn-label">Fullscreen</span>
+            </button>
+            <button id="btnJoinLeaveCall" class="call-btn btn-join" onclick="toggleJoinLeaveCall()" title="Join or Leave Call">
+              <span class="btn-icon">📞</span>
+              <span class="btn-label" id="lblJoinLeave">Join Call</span>
+            </button>
+          </div>
+
+          <!-- Right: Side Drawer Toggles & Minimize/Exit -->
+          <div class="gmeet-dock-right">
+            <button class="gmeet-icon-btn" onclick="openMeetDrawerTab('roster')" title="Show Participants & Timetable">
+              👥
+            </button>
+            <button class="gmeet-icon-btn" onclick="openMeetDrawerTab('chat')" title="Show In-Call Chat">
+              💬
+            </button>
+            <button class="gmeet-icon-btn" onclick="leavePeerRoom()" title="Reset / Disconnect Room">
+              🚪
+            </button>
+            <button class="gmeet-minimize-btn" onclick="closeSquadModal()" title="Minimize to Study Mode (Call stays active)">
+              X Close
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -2128,6 +2174,163 @@ setInterval(() => {
         div.textContent = text;
         return div.innerHTML;
       }
+
+      /* =========================================================================
+         GOOGLE MEET FULLSCREEN & ADAPTIVE GRID CONTROLLER
+      ========================================================================= */
+      window.toggleBrowserFullscreen = function() {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen().catch(() => {});
+        } else {
+          if (document.exitFullscreen) document.exitFullscreen().catch(() => {});
+        }
+      };
+
+      function requestFullscreenSafe() {
+        if (!document.fullscreenElement && document.documentElement.requestFullscreen) {
+          document.documentElement.requestFullscreen().catch(() => {});
+        }
+      }
+
+      // Upgrade Read Mode, Planning Mode & Study Squad to open in Fullscreen
+      const _origOpenReadMode = openReadMode;
+      window.openReadMode = function() {
+        _origOpenReadMode();
+        requestFullscreenSafe();
+      };
+
+      const _origOpenPlanningMode = openPlanningMode;
+      window.openPlanningMode = function() {
+        _origOpenPlanningMode();
+        requestFullscreenSafe();
+      };
+
+      const _origOpenSquadModal = window.openSquadModal;
+      window.openSquadModal = function() {
+        _origOpenSquadModal();
+        requestFullscreenSafe();
+        updateMeetGridLayout();
+      };
+
+      // Auto-start camera & microphone when creating or joining a Study Meet room
+      window.startOrCreateMeetRoom = function() {
+        window.createPeerRoom();
+        if (!isCallActive) {
+          joinCall(true, true); // Auto-enable Video + Audio like Google Meet
+        } else if (!isVideoOn) {
+          setVideoState(true);
+        }
+        updateMeetRoomLabel();
+      };
+
+      window.joinMeetRoomAndAutoCall = function() {
+        window.joinPeerRoomFromInput();
+        if (!isCallActive) {
+          joinCall(true, true); // Auto-enable Video + Audio on room join
+        } else if (!isVideoOn) {
+          setVideoState(true);
+        }
+        updateMeetRoomLabel();
+      };
+
+      function updateMeetRoomLabel() {
+        const lbl = document.getElementById("gmeetRoomCodeLabel");
+        if (lbl) lbl.textContent = activeRoomCode ? `Room: ${activeRoomCode}` : "Study Meet";
+      }
+
+      // Toggle Filter Bar Popup
+      window.toggleFilterPopup = function() {
+        const bar = document.getElementById("videoFilterBar");
+        if (!bar) return;
+        bar.style.display = bar.style.display === "none" ? "flex" : "none";
+      };
+
+      // Collapsible Right Drawer Controls (Roster & Chat)
+      window.toggleMeetDrawer = function() {
+        const drawer = document.getElementById("gmeetSideDrawer");
+        if (drawer) drawer.classList.toggle("collapsed");
+      };
+
+      window.switchMeetDrawerTab = function(tab) {
+        const rosterPanel = document.getElementById("drawerPanelRoster");
+        const chatPanel = document.getElementById("drawerPanelChat");
+        const btnRoster = document.getElementById("tabBtnRoster");
+        const btnChat = document.getElementById("tabBtnChat");
+
+        if (tab === "chat") {
+          if (rosterPanel) rosterPanel.style.display = "none";
+          if (chatPanel) chatPanel.style.display = "flex";
+          if (btnRoster) btnRoster.classList.remove("active");
+          if (btnChat) btnChat.classList.add("active");
+        } else {
+          if (rosterPanel) rosterPanel.style.display = "block";
+          if (chatPanel) chatPanel.style.display = "none";
+          if (btnRoster) btnRoster.classList.add("active");
+          if (btnChat) btnChat.classList.remove("active");
+        }
+      };
+
+      window.openMeetDrawerTab = function(tab) {
+        const drawer = document.getElementById("gmeetSideDrawer");
+        if (drawer && drawer.classList.contains("collapsed")) {
+          drawer.classList.remove("collapsed");
+        }
+        window.switchMeetDrawerTab(tab);
+      };
+
+      // Pin / Spotlight any video tile
+      window.togglePinVideoTile = function(tileId) {
+        const gallery = document.getElementById("videoGallery");
+        const tile = document.getElementById(tileId);
+        if (!gallery || !tile) return;
+
+        const alreadyPinned = tile.classList.contains("pinned-tile");
+        gallery.querySelectorAll(".video-tile").forEach(t => t.classList.remove("pinned-tile"));
+        gallery.classList.toggle("has-pinned-tile", !alreadyPinned);
+        if (!alreadyPinned) {
+          tile.classList.add("pinned-tile");
+        }
+      };
+
+      // Automatically recalculate Google Meet grid layout when participants join/leave
+      function updateMeetGridLayout() {
+        const gallery = document.getElementById("videoGallery");
+        const remoteContainer = document.getElementById("remoteVideosContainer");
+        if (!gallery || !remoteContainer) return;
+
+        const remoteTiles = remoteContainer.querySelectorAll(".video-tile");
+        const totalTiles = 1 + remoteTiles.length;
+        gallery.setAttribute("data-tile-count", String(Math.min(totalTiles, 9)));
+
+        // Inject Pin button on new remote video tiles
+        remoteTiles.forEach(tile => {
+          if (!tile.querySelector(".gmeet-pin-btn")) {
+            const btn = document.createElement("button");
+            btn.className = "gmeet-pin-btn";
+            btn.title = "Pin/Unpin Screen";
+            btn.textContent = "📌";
+            btn.onclick = () => window.togglePinVideoTile(tile.id);
+            tile.appendChild(btn);
+          }
+        });
+        updateMeetRoomLabel();
+      }
+
+      // Observe remote video container for automatic layout updates
+      window.addEventListener("DOMContentLoaded", () => {
+        const remoteContainer = document.getElementById("remoteVideosContainer");
+        if (remoteContainer && typeof MutationObserver !== "undefined") {
+          const observer = new MutationObserver(() => updateMeetGridLayout());
+          observer.observe(remoteContainer, { childList: true });
+        }
+        setInterval(() => {
+          const clk = document.getElementById("gmeetLiveClock");
+          if (clk) {
+            clk.textContent = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+          }
+          updateMeetRoomLabel();
+        }, 1000);
+      });
     </script>
     <!-- FLOATING CALL CONTROLS (Active while studying in Read/Plan Mode) -->
     <div id="floatingCallWidget" class="floating-call-widget" style="display: none;">

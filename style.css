@@ -1122,3 +1122,373 @@ footer {
 .squad-seat-card.in-call {
     border-color: rgba(56, 189, 248, 0.5);
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   GOOGLE MEET FULLSCREEN VIDEO ROOM OVERHAUL
+═══════════════════════════════════════════════════════════════════ */
+.gmeet-fullscreen-backdrop {
+    padding: 0 !important;
+    background: #111318 !important;
+}
+
+.gmeet-shell {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #111318;
+    color: #f8fafc;
+    overflow: hidden;
+}
+
+/* Top Meet Bar */
+.gmeet-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    background: #181b22;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.gmeet-brand-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gmeet-logo-badge {
+    font-size: 15px;
+    font-weight: 800;
+    color: #7dd3fc;
+    letter-spacing: 0.4px;
+}
+
+.gmeet-status-pill {
+    font-size: 12px;
+    color: #cbd5e1;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+.gmeet-member-pill {
+    font-size: 11px;
+    font-weight: 700;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.14);
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+.gmeet-top-Controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.gmeet-top-input {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    outline: none;
+}
+
+.gmeet-top-btn {
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: #f8fafc;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.gmeet-top-btn:hover { background: rgba(255, 255, 255, 0.18); }
+.gmeet-top-btn.primary { background: #2563eb; border-color: #3b82f6; }
+.gmeet-top-btn.whatsapp { background: #16a34a; border-color: #22c55e; }
+
+/* Main Center Stage + Side Drawer */
+.gmeet-main-workspace {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    min-height: 0;
+}
+
+.gmeet-video-stage {
+    flex: 1;
+    height: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: #111318;
+    border: none;
+    margin: 0;
+}
+
+.gmeet-floating-filters {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30;
+    background: rgba(15, 23, 42, 0.95) !important;
+    border: 1px solid rgba(56, 189, 248, 0.4) !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65);
+    margin-bottom: 0 !important;
+}
+
+/* Google Meet Adaptive Video Grid */
+.gmeet-grid {
+    width: 100%;
+    height: 100%;
+    max-height: none !important;
+    display: grid;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gmeet-grid[data-tile-count="1"] {
+    grid-template-columns: minmax(300px, 1080px);
+    grid-template-rows: 1fr;
+}
+
+.gmeet-grid[data-tile-count="2"] {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.gmeet-grid[data-tile-count="3"],
+.gmeet-grid[data-tile-count="4"] {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.gmeet-grid[data-tile-count="5"],
+.gmeet-grid[data-tile-count="6"] {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.gmeet-grid[data-tile-count="7"],
+.gmeet-grid[data-tile-count="8"],
+.gmeet-grid[data-tile-count="9"] {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: 1fr;
+}
+
+.gmeet-grid .video-tile {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    aspect-ratio: auto !important;
+    border-radius: 16px;
+    background: #202124;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.gmeet-grid .tile-avatar {
+    width: 88px;
+    height: 88px;
+    font-size: 30px;
+}
+
+.gmeet-grid .tile-name {
+    font-size: 13px;
+    padding: 5px 12px;
+}
+
+/* Pin / Spotlight Support */
+.gmeet-pin-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.video-tile:hover .gmeet-pin-btn { opacity: 1; }
+
+.gmeet-grid.has-pinned-tile {
+    grid-template-columns: 3fr 1fr !important;
+    grid-auto-rows: minmax(120px, 1fr) !important;
+}
+.gmeet-grid.has-pinned-tile .video-tile.pinned-tile {
+    grid-column: 1;
+    grid-row: 1 / span 4;
+    border-color: #38bdf8;
+}
+
+/* Collapsible Side Drawer (Roster & Chat) */
+.gmeet-side-drawer {
+    width: 340px;
+    height: 100%;
+    background: #181b22;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: margin-right 0.3s ease, width 0.3s ease;
+    flex-shrink: 0;
+}
+.gmeet-side-drawer.collapsed {
+    display: none;
+}
+
+.gmeet-drawer-tabs {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    gap: 6px;
+}
+
+.gmeet-drawer-tab {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.gmeet-drawer-tab.active {
+    background: rgba(59, 130, 246, 0.18);
+    color: #7dd3fc;
+}
+
+.gmeet-drawer-close {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.gmeet-drawer-body {
+    flex: 1;
+    padding: 14px;
+    overflow-y: auto;
+}
+
+.gmeet-roster-list {
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-height: none !important;
+}
+
+/* Google Meet Bottom Control Bar */
+.gmeet-bottom-dock {
+    height: 74px;
+    background: #181b22;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    gap: 12px;
+}
+
+.gmeet-dock-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #e2e8f0;
+}
+.gmeet-divider { color: #475569; }
+
+.gmeet-dock-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gmeet-bottom-dock .call-btn {
+    border-radius: 999px;
+    padding: 10px 18px;
+    font-size: 13px;
+}
+
+.gmeet-ctrl-btn {
+    background: #2b2f3a;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #f8fafc;
+}
+
+.gmeet-dock-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gmeet-icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: #2b2f3a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.gmeet-icon-btn:hover { background: #3b404e; }
+
+.gmeet-minimize-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #cbd5e1;
+    padding: 9px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.gmeet-minimize-btn:hover { background: rgba(255, 255, 255, 0.16); color: white; }
+
+@media (max-width: 900px) {
+    .gmeet-grid[data-tile-count="2"],
+    .gmeet-grid[data-tile-count="3"],
+    .gmeet-grid[data-tile-count="4"] {
+        grid-template-columns: 1fr;
+    }
+    .gmeet-side-drawer {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 40;
+        width: 100%;
+        max-width: 340px;
+    }
+    .gmeet-dock-left { display: none; }
+    .gmeet-bottom-dock { justify-content: center; padding: 0 10px; }
+}
