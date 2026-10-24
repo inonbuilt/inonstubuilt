@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calcium Study Friends | Unique ID &amp; Let's Study Hub</title>
+  <title>Calcium Study Friends | Auto-Connect Hub</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
   <!-- PeerJS WebRTC Library with STUN server configuration for GitHub Pages -->
   <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
@@ -298,19 +298,6 @@
       box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
     }
 
-    .search-result-card {
-      margin-top: 12px;
-      padding: 12px 14px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(56, 189, 248, 0.3);
-      display: none;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
     /* Main Workspace Split */
     .friends-workspace {
       display: grid;
@@ -323,6 +310,7 @@
       display: flex;
       flex-direction: column;
       gap: 18px;
+      height: 100%;
     }
 
     .section-header {
@@ -351,24 +339,21 @@
       border-radius: 999px;
     }
 
-    .requests-list, .friends-list {
+    .friends-list {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      max-height: 440px;
+      max-height: 600px;
       overflow-y: auto;
       padding-right: 4px;
     }
 
-    .req-card, .friend-item-card {
+    .friend-item-card {
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 12px;
       padding: 12px;
       transition: all 0.2s ease;
-    }
-
-    .friend-item-card {
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -765,7 +750,7 @@
       <div class="frid-brand-icon">🤝</div>
       <div>
         <h1>Calcium <span>Study Friends</span></h1>
-        <div class="frid-brand-sub">Unique User ID Discovery • "Let's Study" Requests • Live Texting &amp; Calling Hub</div>
+        <div class="frid-brand-sub">Auto-Connect P2P Hub • Instant Timetable Sharing &amp; Live Chat</div>
       </div>
     </div>
 
@@ -803,7 +788,7 @@
         </div>
 
         <p style="font-size:12px; color:#cbd5e1; line-height:1.45;">
-          Share your Unique ID with study partners across different PCs. When they send a <strong>"Let's Study"</strong> request, accept it to unlock live chat, audio/video calls, timetables, and revision tasks.
+          Share your Unique ID with study partners. When they enter your ID, you will <strong>instantly connect</strong> without needing to accept requests. You'll unlock live chat, audio/video calls, timetables, and revision tasks immediately.
         </p>
 
         <div class="uid-actions-row">
@@ -813,12 +798,12 @@
         </div>
       </div>
 
-      <!-- Card 2: Find Friends by Unique ID -->
+      <!-- Card 2: Auto-Connect by Unique ID -->
       <div class="glass-box">
-        <div class="box-tag">🔍 FIND STUDY PARTNER BY UNIQUE ID</div>
-        <h3 style="font-size:16px; font-weight:800; color:#f8fafc; margin-bottom:4px;">Send a "Let's Study" Request</h3>
+        <div class="box-tag">⚡ INSTANT CONNECT BY UNIQUE ID</div>
+        <h3 style="font-size:16px; font-weight:800; color:#f8fafc; margin-bottom:4px;">Add a Study Partner</h3>
         <p style="font-size:12px; color:#94a3b8; margin-bottom:10px;">
-          Enter your friend's Unique ID (e.g. <code style="color:#7dd3fc;">CN-482910</code>) or try demo study partners <code style="color:#86efac; cursor:pointer;" onclick="fillDemoId('CN-100108')">CN-100108</code> or <code style="color:#86efac; cursor:pointer;" onclick="fillDemoId('CN-204999')">CN-204999</code>.
+          Enter your friend's Unique ID (e.g. <code style="color:#7dd3fc;">CN-482910</code>). You will instantly connect. Try demo study partners <code style="color:#86efac; cursor:pointer;" onclick="fillDemoId('CN-100108')">CN-100108</code> or <code style="color:#86efac; cursor:pointer;" onclick="fillDemoId('CN-204999')">CN-204999</code>.
         </p>
 
         <div class="search-input-group">
@@ -831,55 +816,28 @@
             onkeydown="if(event.key==='Enter') searchAndSendStudyRequest()"
           />
           <button class="f-btn emerald" onclick="searchAndSendStudyRequest()">
-            🚀 Send "Let's Study" Request
+            🚀 Connect Instantly
           </button>
-          <button class="f-btn ghost" onclick="lookupUserByIdPreview()">
-            🔎 Find User
-          </button>
-        </div>
-
-        <!-- Search Preview Result -->
-        <div class="search-result-card" id="searchPreviewCard">
-          <div style="display:flex; align-items:center; gap:10px;">
-            <div class="avatar-circle" id="previewAvatar" style="width:40px; height:40px; font-size:14px;">CA</div>
-            <div>
-              <div style="font-size:13px; font-weight:800; color:#f8fafc;" id="previewName">Student Name</div>
-              <div style="font-size:11px; color:#7dd3fc; font-weight:700;" id="previewMeta">CN-100108 • CA FINAL</div>
-            </div>
-          </div>
-          <button class="f-btn emerald" id="previewSendBtn" onclick="searchAndSendStudyRequest()">🤝 Send Let's Study Request</button>
         </div>
       </div>
 
     </div>
 
-    <!-- ROW 2: FRIENDS LIST + REQUESTS SIDEBAR & FRIEND INSPECTOR -->
+    <!-- ROW 2: FRIENDS LIST & FRIEND INSPECTOR -->
     <div class="friends-workspace">
 
-      <!-- LEFT COLUMN: Incoming/Outgoing Requests & Friends Roster -->
+      <!-- LEFT COLUMN: Friends Roster -->
       <div class="sidebar-column">
 
-        <!-- Let's Study Requests Box -->
-        <div class="glass-box">
-          <div class="section-header">
-            <div class="section-title">
-              <span>📩 "Let's Study" Requests</span>
-              <span class="count-badge" id="requestsCountBadge">0</span>
-            </div>
-            <button class="f-btn ghost" style="padding:4px 8px; font-size:10px;" onclick="simulateIncomingRequest()" title="Test receiving an incoming Let's Study request">+ Simulate Request</button>
-          </div>
-          <div class="requests-list" id="requestsListContainer"></div>
-        </div>
-
         <!-- Accepted Study Friends Roster -->
-        <div class="glass-box">
+        <div class="glass-box" style="flex:1;">
           <div class="section-header">
             <div class="section-title">
               <span>👥 My Study Friends</span>
               <span class="count-badge" id="friendsCountBadge">0</span>
             </div>
           </div>
-          <div class="friends-list" id="friendsListContainer"></div>
+          <div class="friends-list" id="friendsListContainer" style="max-height: 520px;"></div>
         </div>
 
       </div>
@@ -898,9 +856,9 @@
 
   <script>
     /* =========================================================================
-       CALCIUM STUDY FRIENDS & P2P CROSS-PC ENGINE (frid.html)
-       - Uses PeerJS WebRTC P2P + Google STUN + Cross-Tab BroadcastChannel + localStorage polling
-       - Fully Canvas-safe & GitHub Pages compatible
+       CALCIUM STUDY FRIENDS & P2P AUTO-CONNECT ENGINE (frid.html)
+       - Uses PeerJS WebRTC P2P + Google STUN + Cross-Tab BroadcastChannel
+       - NO ACCEPTANCE REQUIRED. Instant adding + background sync.
     ========================================================================= */
 
     const SUBJECT_LABELS = {
@@ -1117,26 +1075,6 @@
       } catch (e) {}
     }
 
-    function getSavedRequests() {
-      try {
-        const raw = localStorage.getItem(`calcium_friend_requests_${myUniqueId}`);
-        if (!raw) {
-          const starterReqs = [];
-          localStorage.setItem(`calcium_friend_requests_${myUniqueId}`, JSON.stringify(starterReqs));
-          return starterReqs;
-        }
-        return JSON.parse(raw);
-      } catch (e) {
-        return [];
-      }
-    }
-
-    function saveRequests(list) {
-      try {
-        localStorage.setItem(`calcium_friend_requests_${myUniqueId}`, JSON.stringify(list));
-      } catch (e) {}
-    }
-
     function getChatHistory(friendUid) {
       if (!chatHistories[friendUid]) {
         try {
@@ -1219,7 +1157,7 @@
         }
       } catch (e) {}
 
-      // 2. localStorage Cross-PC fallback storage polling & request delivery
+      // 2. localStorage Cross-PC fallback storage polling
       try {
         const envelope = {
           targetUid: cleanTarget,
@@ -1228,24 +1166,6 @@
         };
         localStorage.setItem(`calcium_p2p_envelope_${cleanTarget}`, JSON.stringify(envelope));
         setTimeout(() => localStorage.removeItem(`calcium_p2p_envelope_${cleanTarget}`), 1000);
-
-        if (payload.type === "LETS_STUDY_REQUEST" && payload.snapshot) {
-          const targetReqKey = `calcium_friend_requests_${cleanTarget}`;
-          const targetReqsRaw = localStorage.getItem(targetReqKey);
-          let targetReqs = [];
-          try { targetReqs = targetReqsRaw ? JSON.parse(targetReqsRaw) : []; } catch (err) {}
-          
-          if (!targetReqs.some(r => r.uid === payload.snapshot.uid)) {
-            targetReqs.unshift({
-              uid: payload.snapshot.uid,
-              direction: "incoming",
-              status: "pending",
-              timestamp: Date.now(),
-              snapshot: payload.snapshot
-            });
-            localStorage.setItem(targetReqKey, JSON.stringify(targetReqs));
-          }
-        }
       } catch (e) {}
 
       // 3. PeerJS WebRTC
@@ -1256,8 +1176,16 @@
             existing.send(payload);
             return;
           }
-          const conn = peerNode.connect(toPeerId(cleanTarget));
+          const conn = peerNode.connect(toPeerId(cleanTarget), { reliable: true });
+
+          let connTimeout = setTimeout(() => {
+            if (!conn.open && payload.type === "AUTO_ADD_FRIEND") {
+              // Notification removed per request, connection attempt happens silently in background
+            }
+          }, 6000);
+
           conn.on("open", () => {
+            clearTimeout(connTimeout);
             activeFriendConns[cleanTarget] = conn;
             conn.send(payload);
           });
@@ -1278,7 +1206,7 @@
           }
         } catch (e) {}
       }
-      if (ev.key === `calcium_friend_requests_${myUniqueId}` || ev.key === `calcium_friends_list_${myUniqueId}`) {
+      if (ev.key === `calcium_friends_list_${myUniqueId}`) {
         renderSidebarLists();
         renderSelectedFriendInspector();
       }
@@ -1287,37 +1215,8 @@
     function handleIncomingFriendProtocol(payload, conn) {
       if (!payload || !payload.type) return;
 
-      if (payload.type === "LOOKUP_PING" && payload.fromUid) {
-        const reply = {
-          type: "LOOKUP_PONG",
-          fromUid: myUniqueId,
-          snapshot: buildMyFullSnapshot()
-        };
-        if (conn && conn.open) conn.send(reply);
-        sendPacketToUser(payload.fromUid, reply);
-      }
-      else if (payload.type === "LOOKUP_PONG" && payload.snapshot) {
-        showPreviewCard(payload.snapshot);
-      }
-      else if (payload.type === "LETS_STUDY_REQUEST" && payload.snapshot) {
-        const sender = payload.snapshot;
-        const reqs = getSavedRequests();
-        const existingIdx = reqs.findIndex(r => r.uid === sender.uid);
-        const newReq = {
-          uid: sender.uid,
-          direction: "incoming",
-          status: "pending",
-          timestamp: Date.now(),
-          snapshot: sender
-        };
-        if (existingIdx >= 0) reqs[existingIdx] = newReq;
-        else reqs.unshift(newReq);
-        saveRequests(reqs);
-        renderSidebarLists();
-        notifyParentBadgeCount();
-        showToast(`📩 Incoming "Let's Study" request from ${sender.name} (${sender.uid})!`);
-      }
-      else if (payload.type === "LETS_STUDY_ACCEPTED" && payload.snapshot) {
+      // Handle Instant Auto-Add
+      if (payload.type === "AUTO_ADD_FRIEND" && payload.snapshot) {
         const friendSnap = payload.snapshot;
         friendSnap.online = true;
         friendSnap.lastSeen = Date.now();
@@ -1325,14 +1224,18 @@
         friendsMap[friendSnap.uid] = friendSnap;
         saveFriendsMap(friendsMap);
 
-        const reqs = getSavedRequests().filter(r => r.uid !== friendSnap.uid);
-        saveRequests(reqs);
-
-        selectedFriendUid = friendSnap.uid;
         renderSidebarLists();
-        renderSelectedFriendInspector();
+        if (selectedFriendUid === friendSnap.uid) renderSelectedFriendInspector();
         notifyParentBadgeCount();
-        showToast(`🎉 ${friendSnap.name} accepted your "Let's Study" request!`);
+
+        // Send our data back so they get our real profile instead of the placeholder
+        const reply = {
+          type: "FRIEND_SYNC_DATA",
+          fromUid: myUniqueId,
+          snapshot: buildMyFullSnapshot()
+        };
+        if (conn && conn.open) conn.send(reply);
+        else sendPacketToUser(payload.fromUid, reply);
       }
       else if (payload.type === "FRIEND_SYNC_REQUEST" && payload.fromUid) {
         const friendsMap = getSavedFriendsMap();
@@ -1349,7 +1252,7 @@
             snapshot: buildMyFullSnapshot()
           };
           if (conn && conn.open) conn.send(reply);
-          sendPacketToUser(payload.fromUid, reply);
+          else sendPacketToUser(payload.fromUid, reply);
         }
       }
       else if (payload.type === "FRIEND_SYNC_DATA" && payload.snapshot) {
@@ -1422,45 +1325,7 @@
     window.fillDemoId = function(uid) {
       const inp = document.getElementById("findFriendIdInput");
       if (inp) inp.value = uid;
-      window.lookupUserByIdPreview();
     };
-
-    window.lookupUserByIdPreview = function() {
-      const inp = document.getElementById("findFriendIdInput");
-      const raw = (inp ? inp.value : "").trim().toUpperCase();
-      if (!raw) {
-        showToast("⚠️ Please enter a Unique ID (e.g. CN-100108)");
-        return;
-      }
-      if (raw === myUniqueId) {
-        showToast("ℹ️ That is your own Unique ID!");
-        return;
-      }
-
-      if (DEMO_DIRECTORY[raw]) {
-        showPreviewCard(DEMO_DIRECTORY[raw]);
-        return;
-      }
-
-      sendPacketToUser(raw, { type: "LOOKUP_PING", fromUid: myUniqueId });
-      showPreviewCard({
-        uid: raw,
-        name: `CA Student (${raw})`,
-        level: "final",
-        moodEmoji: "🔥",
-        moodText: "Ready to Study"
-      });
-    };
-
-    function showPreviewCard(userSnap) {
-      const card = document.getElementById("searchPreviewCard");
-      if (!card) return;
-      card.style.display = "flex";
-      const initials = (userSnap.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
-      document.getElementById("previewAvatar").textContent = initials;
-      document.getElementById("previewName").textContent = `${userSnap.name} ${userSnap.moodEmoji || "🔥"}`;
-      document.getElementById("previewMeta").textContent = `${userSnap.uid} • CA ${(userSnap.level || "final").toUpperCase()}`;
-    }
 
     window.searchAndSendStudyRequest = function() {
       const inp = document.getElementById("findFriendIdInput");
@@ -1474,7 +1339,7 @@
         if (inp) inp.value = targetUid;
       }
       if (targetUid === myUniqueId) {
-        showToast("⚠️ You cannot send a study request to your own Unique ID.");
+        showToast("⚠️ You cannot connect with your own Unique ID.");
         return;
       }
 
@@ -1490,80 +1355,42 @@
       const mySnap = buildMyFullSnapshot();
       const targetDemo = DEMO_DIRECTORY[targetUid];
 
+      // Instant Add locally with placeholder or demo data
+      const newFriend = targetDemo || {
+        uid: targetUid,
+        name: `CA Partner (${targetUid})`,
+        level: "final",
+        moodEmoji: "⏳",
+        moodText: "Connecting...",
+        attempt: "May 2027",
+        group: "Both Groups",
+        dailyGoal: 10,
+        city: "India",
+        bio: "Connecting over P2P Network...",
+        totalActualHours: "00:00",
+        totalEstHours: "00:00",
+        efficiency: 0,
+        timetable: [],
+        tasks: [],
+        online: false
+      };
+
+      friendsMap[targetUid] = newFriend;
+      saveFriendsMap(friendsMap);
+      selectedFriendUid = targetUid;
+
+      // Dispatch auto-add packet over PeerJS / BroadcastChannel
       sendPacketToUser(targetUid, {
-        type: "LETS_STUDY_REQUEST",
+        type: "AUTO_ADD_FRIEND",
         fromUid: myUniqueId,
         snapshot: mySnap
       });
 
-      const reqs = getSavedRequests();
-      const outgoingReq = {
-        uid: targetUid,
-        direction: "outgoing",
-        status: "pending",
-        timestamp: Date.now(),
-        snapshot: targetDemo || {
-          uid: targetUid,
-          name: `CA Partner (${targetUid})`,
-          level: "final",
-          moodEmoji: "🔥",
-          moodText: "Invited to Study",
-          attempt: "May 2027",
-          group: "Both Groups",
-          dailyGoal: 10,
-          city: "India",
-          bio: "Connected via Unique ID on Calcium Study Reactor.",
-          totalActualHours: "00:00",
-          totalEstHours: "08:00",
-          efficiency: 0,
-          timetable: [],
-          tasks: []
-        }
-      };
-
-      const existingIdx = reqs.findIndex(r => r.uid === targetUid);
-      if (existingIdx >= 0) reqs[existingIdx] = outgoingReq;
-      else reqs.unshift(outgoingReq);
-      saveRequests(reqs);
-      renderSidebarLists();
-
-      showToast(`🚀 Sent "Let's Study" request to ${targetUid}! Awaiting acceptance.`);
-    };
-
-    window.acceptStudyRequest = function(uid) {
-      const reqs = getSavedRequests();
-      const req = reqs.find(r => r.uid === uid);
-      if (!req) return;
-
-      const remaining = reqs.filter(r => r.uid !== uid);
-      saveRequests(remaining);
-
-      const friendsMap = getSavedFriendsMap();
-      const snap = req.snapshot || { uid: uid, name: `Partner ${uid}`, level: "final", timetable: [], tasks: [] };
-      snap.online = true;
-      snap.lastSeen = Date.now();
-      friendsMap[uid] = snap;
-      saveFriendsMap(friendsMap);
-
-      sendPacketToUser(uid, {
-        type: "LETS_STUDY_ACCEPTED",
-        fromUid: myUniqueId,
-        snapshot: buildMyFullSnapshot()
-      });
-
-      selectedFriendUid = uid;
       renderSidebarLists();
       renderSelectedFriendInspector();
       notifyParentBadgeCount();
-      showToast(`🤝 Accepted! You can now view ${snap.name}'s Profile, Timetable & Tasks.`);
-    };
 
-    window.declineOrCancelRequest = function(uid) {
-      const reqs = getSavedRequests().filter(r => r.uid !== uid);
-      saveRequests(reqs);
-      renderSidebarLists();
-      notifyParentBadgeCount();
-      showToast(`Removed request for ${uid}.`);
+      showToast(`⚡ Instantly added ${targetUid}! Waiting for their live data to sync...`);
     };
 
     window.removeFriend = function(uid) {
@@ -1577,52 +1404,6 @@
       renderSelectedFriendInspector();
       notifyParentBadgeCount();
       showToast(`Removed ${name} from your friends list.`);
-    };
-
-    window.simulateIncomingRequest = function() {
-      const randomNum = Math.floor(300000 + Math.random() * 600000);
-      const simUid = `CN-${randomNum}`;
-      const names = ["Rohan Mehta", "Priya Nair", "Kabir Verma", "Sneha Kulkarni", "Vikramaditya Rao"];
-      const randomName = names[Math.floor(Math.random() * names.length)];
-      const simSnap = {
-        uid: simUid,
-        name: randomName,
-        level: "final",
-        moodEmoji: "⚡",
-        moodText: "Solving RTP / MTP",
-        attempt: "May 2027",
-        group: "Both Groups",
-        dailyGoal: 10,
-        city: "Delhi / NIRC",
-        bio: "Looking for an accountability partner for daily morning 6 AM FR & DT slots!",
-        online: true,
-        isStudying: true,
-        activeSubject: "DT",
-        totalActualHours: "04:30",
-        totalEstHours: "09:00",
-        efficiency: 85,
-        timetable: [
-          { id: "fr", subject: "FR", startTime: "06:00", endTime: "08:30", estimated: "02:30", actual: "02:30", timerState: false },
-          { id: "dt", subject: "DT", startTime: "09:30", endTime: "12:00", estimated: "02:30", actual: "02:00", timerState: true }
-        ],
-        tasks: [
-          { text: "Complete Capital Gains & Business Trust Questions", pri: "high", done: true }
-        ],
-        lastSeen: Date.now()
-      };
-
-      const reqs = getSavedRequests();
-      reqs.unshift({
-        uid: simUid,
-        direction: "incoming",
-        status: "pending",
-        timestamp: Date.now(),
-        snapshot: simSnap
-      });
-      saveRequests(reqs);
-      renderSidebarLists();
-      notifyParentBadgeCount();
-      showToast(`📩 Incoming "Let's Study" request from ${randomName} (${simUid})!`);
     };
 
     function renderMyHeaderInfo() {
@@ -1640,43 +1421,13 @@
     }
 
     function renderSidebarLists() {
-      const reqs = getSavedRequests();
       const friendsMap = getSavedFriendsMap();
       const friendList = Object.values(friendsMap);
-
-      document.getElementById("requestsCountBadge").textContent = reqs.length;
       document.getElementById("friendsCountBadge").textContent = friendList.length;
-
-      const reqContainer = document.getElementById("requestsListContainer");
-      if (reqs.length === 0) {
-        reqContainer.innerHTML = `<div style="font-size:12px; color:#64748b; text-align:center; padding:14px 0;">No pending "Let's Study" requests.</div>`;
-      } else {
-        reqContainer.innerHTML = reqs.map(r => {
-          const s = r.snapshot || { name: r.uid, level: "final" };
-          const isIncoming = r.direction === "incoming";
-          return `
-            <div class="req-card">
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-                <div>
-                  <div style="font-size:13px; font-weight:800; color:#f8fafc;">${escapeHtml(s.name)} <span style="font-size:11px; color:#38bdf8; font-family:'Roboto Mono',monospace;">(${r.uid})</span></div>
-                  <div style="font-size:11px; color:#94a3b8;">CA ${(s.level || 'final').toUpperCase()} • ${isIncoming ? '📩 Wants to study with you!' : '🚀 Outgoing request — awaiting accept'}</div>
-                </div>
-              </div>
-              <div style="display:flex; gap:8px;">
-                ${isIncoming
-                  ? `<button class="f-btn emerald" style="padding:6px 12px; font-size:11px; flex:1; justify-content:center;" onclick="acceptStudyRequest('${r.uid}')">✅ Accept Let's Study</button>`
-                  : ``
-                }
-                <button class="f-btn danger" style="padding:6px 10px; font-size:11px;" onclick="declineOrCancelRequest('${r.uid}')" title="Dismiss Request">✕ Dismiss</button>
-              </div>
-            </div>
-          `;
-        }).join("");
-      }
 
       const friendsContainer = document.getElementById("friendsListContainer");
       if (friendList.length === 0) {
-        friendsContainer.innerHTML = `<div style="font-size:12px; color:#64748b; text-align:center; padding:20px 0;">No friends added yet. Enter a Unique ID above to send a "Let's Study" request!</div>`;
+        friendsContainer.innerHTML = `<div style="font-size:12px; color:#64748b; text-align:center; padding:20px 0;">No friends added yet. Enter a Unique ID above to instantly connect!</div>`;
         return;
       }
 
@@ -1744,7 +1495,7 @@
           <div style="margin:auto; text-align:center; padding:40px 20px; color:#94a3b8;">
             <div style="font-size:44px; margin-bottom:12px;">🤝</div>
             <h3 style="color:#f8fafc; font-size:18px; margin-bottom:6px;">Select or Add a Study Friend</h3>
-            <p style="font-size:13px; max-width:420px; margin:0 auto;">Enter your study partner's Unique ID above and send a <strong>"Let's Study"</strong> request. Once accepted, you can inspect their full Profile, Timetable, Tasks, Text Chat, and Start Audio/Video Calls here.</p>
+            <p style="font-size:13px; max-width:420px; margin:0 auto;">Enter your study partner's Unique ID above to instantly connect. You can inspect their full Profile, Timetable, Tasks, Text Chat, and Start Audio/Video Calls here.</p>
           </div>
         `;
         return;
@@ -2089,8 +1840,8 @@
       try {
         if (window.parent && window.parent !== window && typeof window.parent.syncFriendsCountBadge === "function") {
           const friendsCount = Object.keys(getSavedFriendsMap()).length;
-          const reqCount = getSavedRequests().filter(r => r.direction === "incoming").length;
-          window.parent.syncFriendsCountBadge(friendsCount, reqCount);
+          // We removed requests, so req count is always 0
+          window.parent.syncFriendsCountBadge(friendsCount, 0);
         }
       } catch (e) {}
     }
