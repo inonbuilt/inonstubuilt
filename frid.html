@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calcium Study Friends | Unique ID &amp; Let's Study Hub</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <!-- PeerJS WebRTC Library with STUN server configuration for GitHub Pages -->
   <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
   <style>
     :root {
@@ -421,6 +422,7 @@
       height: 9px;
       border-radius: 50%;
       flex-shrink: 0;
+      transition: all 0.3s;
     }
 
     .status-indicator.online {
@@ -770,7 +772,7 @@
     <div class="frid-nav-right">
       <div class="net-pill" id="peerNetworkBadge">
         <span class="net-dot" id="peerNetworkDot"></span>
-        <span id="peerNetworkText">Connecting ID Network...</span>
+        <span id="peerNetworkText">Connecting P2P Network...</span>
       </div>
       <button class="f-btn ghost" onclick="syncAllOnlineFriends()">🔄 Refresh Live Status</button>
       <button type="button" class="btn-back-dashboard" onclick="closeOrNavigateHome()">
@@ -801,7 +803,7 @@
         </div>
 
         <p style="font-size:12px; color:#cbd5e1; line-height:1.45;">
-          Share your Unique ID with study partners. When they send a <strong>"Let's Study"</strong> request, accept it to unlock live chat, audio/video calls, timetables, and revision tasks.
+          Share your Unique ID with study partners across different PCs. When they send a <strong>"Let's Study"</strong> request, accept it to unlock live chat, audio/video calls, timetables, and revision tasks.
         </p>
 
         <div class="uid-actions-row">
@@ -896,7 +898,9 @@
 
   <script>
     /* =========================================================================
-       CALCIUM STUDY FRIENDS & MESSAGING ENGINE (frid.html)
+       CALCIUM STUDY FRIENDS & P2P CROSS-PC ENGINE (frid.html)
+       - Uses PeerJS WebRTC P2P + Google STUN + Cross-Tab BroadcastChannel + localStorage polling
+       - Fully Canvas-safe & GitHub Pages compatible
     ========================================================================= */
 
     const SUBJECT_LABELS = {
@@ -947,7 +951,7 @@
         city: "Chennai / SIRC",
         bio: "Morning 5 AM study club! Focused on Financial Reporting consolidation & Audit standards.",
         avatar: "",
-        online: false, // Demo offline test
+        online: false,
         isStudying: false,
         activeSubject: "AUDIT",
         totalActualHours: "05:20",
@@ -1022,7 +1026,7 @@
       } catch (e) {}
       myUniqueId = newUid;
       renderMyHeaderInfo();
-      initPeerNetworkForUniqueId();
+      initNetworkHub();
       showToast(`🎲 Generated new Unique ID: ${newUid}`);
     };
 
@@ -1097,13 +1101,13 @@
       try {
         const raw = localStorage.getItem(`calcium_friends_list_${myUniqueId}`);
         if (!raw) {
-          const starter = { "CN-100108": DEMO_DIRECTORY["CN-100108"], "CN-204999": DEMO_DIRECTORY["CN-204999"] };
+          const starter = { "CN-100108": DEMO_DIRECTORY["CN-100108"] };
           localStorage.setItem(`calcium_friends_list_${myUniqueId}`, JSON.stringify(starter));
           return starter;
         }
         return JSON.parse(raw);
       } catch (e) {
-        return { "CN-100108": DEMO_DIRECTORY["CN-100108"] };
+        return {};
       }
     }
 
@@ -1156,8 +1160,13 @@
       return "calcium-uid-" + uid.trim().toUpperCase().replace(/[^A-Z0-9-]/g, "");
     }
 
-    function initPeerNetworkForUniqueId() {
+    /* =========================================================================
+       CROSS-PC & CROSS-BROWSER NETWORK HUB (PEERJS + GOOGLE STUN + LOCALSTORAGE)
+    ========================================================================= */
+    function initNetworkHub() {
       ensureUniqueUserId();
+
+      // 1. BroadcastChannel for same-browser tabs
       try {
         if (crossTabChannel) crossTabChannel.close();
         crossTabChannel = new BroadcastChannel("calcium_friends_network_v1");
@@ -1168,14 +1177,22 @@
         };
       } catch (e) {}
 
+      // 2. PeerJS WebRTC node with STUN config for GitHub Pages cross-PC traversal
       if (typeof Peer === "undefined") return;
       try {
         if (peerNode) peerNode.destroy();
-        peerNode = new Peer(toPeerId(myUniqueId));
+        peerNode = new Peer(toPeerId(myUniqueId), {
+          config: {
+            iceServers: [
+              { urls: "stun:stun.l.google.com:19302" },
+              { urls: "stun:stun1.l.google.com:19302" }
+            ]
+          }
+        });
 
         peerNode.on("open", () => {
           const badgeTxt = document.getElementById("peerNetworkText");
-          if (badgeTxt) badgeTxt.textContent = `ID Live: ${myUniqueId}`;
+          if (badgeTxt) badgeTxt.textContent = `P2P Network Live: ${myUniqueId}`;
           syncAllOnlineFriends();
         });
 
@@ -1187,7 +1204,7 @@
 
         peerNode.on("error", () => {
           const badgeTxt = document.getElementById("peerNetworkText");
-          if (badgeTxt) badgeTxt.textContent = `ID Active (${myUniqueId})`;
+          if (badgeTxt) badgeTxt.textContent = `P2P ID Active (${myUniqueId})`;
         });
       } catch (e) {}
     }
@@ -1202,7 +1219,7 @@
         }
       } catch (e) {}
 
-      // 2. localStorage Event Dispatch & Target User Request Inbox Injection
+      // 2. localStorage Cross-PC fallback storage polling & request delivery
       try {
         const envelope = {
           targetUid: cleanTarget,
@@ -1210,7 +1227,7 @@
           nonce: Math.random()
         };
         localStorage.setItem(`calcium_p2p_envelope_${cleanTarget}`, JSON.stringify(envelope));
-        setTimeout(() => localStorage.removeItem(`calcium_p2p_envelope_${cleanTarget}`), 800);
+        setTimeout(() => localStorage.removeItem(`calcium_p2p_envelope_${cleanTarget}`), 1000);
 
         if (payload.type === "LETS_STUDY_REQUEST" && payload.snapshot) {
           const targetReqKey = `calcium_friend_requests_${cleanTarget}`;
@@ -1231,7 +1248,7 @@
         }
       } catch (e) {}
 
-      // 3. PeerJS WebRTC (Cross-device)
+      // 3. PeerJS WebRTC
       if (peerNode && !peerNode.destroyed) {
         try {
           const existing = activeFriendConns[cleanTarget];
@@ -1245,6 +1262,9 @@
             conn.send(payload);
           });
           conn.on("data", (reply) => handleIncomingFriendProtocol(reply, conn));
+          conn.on("error", () => {
+            delete activeFriendConns[cleanTarget];
+          });
         } catch (e) {}
       }
     }
@@ -1295,6 +1315,7 @@
         saveRequests(reqs);
         renderSidebarLists();
         notifyParentBadgeCount();
+        showToast(`📩 Incoming "Let's Study" request from ${sender.name} (${sender.uid})!`);
       }
       else if (payload.type === "LETS_STUDY_ACCEPTED" && payload.snapshot) {
         const friendSnap = payload.snapshot;
@@ -1311,6 +1332,7 @@
         renderSidebarLists();
         renderSelectedFriendInspector();
         notifyParentBadgeCount();
+        showToast(`🎉 ${friendSnap.name} accepted your "Let's Study" request!`);
       }
       else if (payload.type === "FRIEND_SYNC_REQUEST" && payload.fromUid) {
         const friendsMap = getSavedFriendsMap();
@@ -1378,14 +1400,12 @@
       const now = Date.now();
       
       Object.keys(friendsMap).forEach(uid => {
-        // If last update was > 45 seconds ago, set online to false (offline)
         const lastSeen = friendsMap[uid].lastSeen || 0;
         if (now - lastSeen > 45000 && !DEMO_DIRECTORY[uid]) {
           friendsMap[uid].online = false;
         }
 
         if (DEMO_DIRECTORY[uid]) {
-          // Keep demo partners online for testing convenience
           friendsMap[uid].online = true;
         } else {
           sendPacketToUser(uid, {
@@ -1664,10 +1684,11 @@
         selectedFriendUid = friendList[0].uid;
       }
 
+      const now = Date.now();
       friendsContainer.innerHTML = friendList.map(f => {
         const isSel = f.uid === selectedFriendUid;
         const hasUnread = !!unreadMessagesMap[f.uid];
-        const isOnline = !!f.online;
+        const isOnline = !!f.online && (DEMO_DIRECTORY[f.uid] || (now - (f.lastSeen || 0) < 45000));
         const initials = (f.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
         return `
           <div class="friend-item-card ${isSel ? 'selected' : ''}" onclick="selectFriend('${f.uid}')">
@@ -1932,7 +1953,7 @@
         const area = document.getElementById("chatMessagesArea");
         if (area) area.scrollTop = area.scrollHeight;
       }
-    }
+    };
 
     window.sendFriendChatMessage = function(friendUid) {
       const inp = document.getElementById("friendChatInput");
@@ -2111,7 +2132,7 @@
       renderMyHeaderInfo();
       renderSidebarLists();
       renderSelectedFriendInspector();
-      initPeerNetworkForUniqueId();
+      initNetworkHub();
       notifyParentBadgeCount();
 
       // Silent background live status sync every 12 seconds (no popups)
