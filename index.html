@@ -1,329 +1,346 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <link rel="canonical" href="https://www.calciumnotes.com/" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calcium Notes | CA Final &amp; Live Co-Study Squad</title>
 
-    <!-- External Assets -->
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./fevicol.png" type="image/png" />
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
+<head>
+  <link rel="canonical" href="https://www.calciumnotes.com/" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calcium Notes | CA Final &amp; Live Co-Study Squad</title>
 
-    <!-- Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"
-    ></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
+  <!-- External Assets -->
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./fevicol.png" type="image/png" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
     crossorigin="anonymous"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-YYJ8R39EXM");
-    </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-YYJ8R39EXM");
+  </script>
 
-    <meta
-      name="description"
-      content="Calcium Notes & Study Reactor: A precision-engineered dashboard, co-study room, and planner for CA Foundation, Inter, and Final students."
-    />
-    <meta name="author" content="Calcium Notes" />
-    <meta name="theme-color" content="#050a10" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <link rel="icon" sizes="192x192" href="./fevicol.png" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Calcium" />
-    <link rel="apple-touch-icon" href="./fevicol.png" />
-    <meta property="og:title" content="Study Reactor | Calcium Notes" />
-    <meta property="og:description" content="Precision study tracking, live co-study rooms, and social progress cards for CA students." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="./fevicol.png" />
-  </head>
+  <meta name="description"
+    content="Calcium Notes & Study Reactor: A precision-engineered dashboard, co-study room, and planner for CA Foundation, Inter, and Final students." />
+  <meta name="author" content="Calcium Notes" />
+  <meta name="theme-color" content="#050a10" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="icon" sizes="192x192" href="./fevicol.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Calcium" />
+  <link rel="apple-touch-icon" href="./fevicol.png" />
+  <meta property="og:title" content="Study Reactor | Calcium Notes" />
+  <meta property="og:description"
+    content="Precision study tracking, live co-study rooms, and social progress cards for CA students." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./fevicol.png" />
+</head>
 
-  <body>
-    <!-- Top Navigation: Entry points for Read Mode, Planning Mode, Co-Study Squad & Social Share -->
-    <div class="mode-toggles">
-      <button type="button" class="profile-trigger-btn" id="topBarProfileBtn" onclick="openProfileModal()" title="Click to open CA Student Profile, Level, Mood, Bio & Backup/Restore" style="display:flex; align-items:center; gap:8px; background:rgba(15,23,42,0.9); border:1px solid rgba(56,189,248,0.45); padding:5px 12px; border-radius:10px; cursor:pointer; color:white; transition:all 0.25s ease; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
-        <div id="topBarAvatarWrap" style="width:28px; height:28px; border-radius:50%; background:linear-gradient(135deg,#2563eb,#06b6d4); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; overflow:hidden; flex-shrink:0; border:1.5px solid rgba(125,211,252,0.6); pointer-events:none;">
-          <img id="topBarAvatarImg" src="" alt="" style="width:100%; height:100%; object-fit:cover; display:none;" />
-          <span id="topBarAvatarInitials">👤</span>
+<body>
+  <!-- Top Navigation: Entry points for Read Mode, Planning Mode, Co-Study Squad & Social Share -->
+  <div class="mode-toggles">
+    <button type="button" class="profile-trigger-btn" id="topBarProfileBtn" onclick="openProfileModal()"
+      title="Click to open CA Student Profile, Level, Mood, Bio & Backup/Restore"
+      style="display:flex; align-items:center; gap:8px; background:rgba(15,23,42,0.9); border:1px solid rgba(56,189,248,0.45); padding:5px 12px; border-radius:10px; cursor:pointer; color:white; transition:all 0.25s ease; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+      <div id="topBarAvatarWrap"
+        style="width:28px; height:28px; border-radius:50%; background:linear-gradient(135deg,#2563eb,#06b6d4); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; overflow:hidden; flex-shrink:0; border:1.5px solid rgba(125,211,252,0.6); pointer-events:none;">
+        <img id="topBarAvatarImg" src="" alt="" style="width:100%; height:100%; object-fit:cover; display:none;" />
+        <span id="topBarAvatarInitials">👤</span>
+      </div>
+      <div
+        style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.15; text-align:left; pointer-events:none;">
+        <div style="display:flex; align-items:center; gap:5px;">
+          <span id="topBarProfileName"
+            style="font-size:12px; font-weight:700; color:#f8fafc; max-width:115px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Fill
+            Your profile</span>
+          <span id="topBarProfileMood" style="font-size:12px;" title="Current Study Mood">🔥</span>
         </div>
-        <div style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.15; text-align:left; pointer-events:none;">
-          <div style="display:flex; align-items:center; gap:5px;">
-            <span id="topBarProfileName" style="font-size:12px; font-weight:700; color:#f8fafc; max-width:115px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Fill Your profile</span>
-            <span id="topBarProfileMood" style="font-size:12px;" title="Current Study Mood">🔥</span>
-          </div>
-          <span id="topBarProfileLevel" style="font-size:9px; font-weight:800; color:#7dd3fc; letter-spacing:0.6px; text-transform:uppercase;"></span>
+        <div style="display:flex; align-items:center; gap:5px;">
+          <span id="topBarProfileLevel"
+            style="font-size:9px; font-weight:800; color:#7dd3fc; letter-spacing:0.6px; text-transform:uppercase;"></span>
+          <span id="topBarUniqueId"
+            style="font-size:9px; font-weight:800; color:#34d399; font-family:monospace; background:rgba(16,185,129,0.15); padding:1px 5px; border-radius:4px; border:1px solid rgba(16,185,129,0.35);">CN-000000</span>
         </div>
-      </button>
-      <input type="hidden" id="topBarUserName" value="CA Aspirant" />
-      <button class="squad-trigger-btn" onclick="openSquadModal(true)">
-        <span>👥</span> Study Squad <span class="squad-count-pill" id="topSquadCount">1</span>
-      </button>
-      <button class="share-trigger-btn" onclick="openShareModal()">
-        <span>📸</span> Share Study Wrap
-      </button>
-      <button class="read-mode-trigger" onclick="openReadMode()">
-        <span>📖</span> Read Mode
-      </button>
-      <button class="plan-mode-trigger" onclick="openPlanningMode()">
-        <span>📅</span> Planning Mode
-      </button>
+      </div>
+    </button>
+    <button type="button" class="friends-trigger-btn" id="topBarFriendsBtn"
+      onclick="(function(e){ e.preventDefault(); if (typeof window.openFriendsModal === 'function') { window.openFriendsModal(); } })(event)"
+      title="Find Friends by Unique ID &amp; Send Let's Study Requests">
+      <span>🤝</span> Friends <span class="squad-count-pill" id="topFriendsCount">1</span>
+    </button>
+    <input type="hidden" id="topBarUserName" value="CA Aspirant" />
+    <button class="squad-trigger-btn" onclick="openSquadModal(true)">
+      <span>👥</span> Study Squad <span class="squad-count-pill" id="topSquadCount">1</span>
+    </button>
+    <button class="share-trigger-btn" onclick="openShareModal()">
+      <span>📸</span> Share Study Wrap
+    </button>
+    <button class="read-mode-trigger" onclick="openReadMode()">
+      <span>📖</span> Read Mode
+    </button>
+    <button class="plan-mode-trigger" onclick="openPlanningMode()">
+      <span>📅</span> Planning Mode
+    </button>
+  </div>
+
+  <div class="page">
+    <div class="logo">
+      <model-viewer class="floating-logo" src="./logo.glb" auto-rotate auto-rotate-delay="0" rotation-per-second="20deg"
+        camera-controls disable-zoom exposure="1.4" shadow-intensity="1.5" style="width: 650px; height: 400px">
+      </model-viewer>
     </div>
 
-    <div class="page">
-      <div class="logo">
-        <model-viewer
-          class="floating-logo"
-          src="./logo.glb"
-          auto-rotate
-          auto-rotate-delay="0"
-          rotation-per-second="20deg"
-          camera-controls
-          disable-zoom
-          exposure="1.4"
-          shadow-intensity="1.5"
-          style="width: 650px; height: 400px"
-        >
-        </model-viewer>
+    <div class="button">
+      <a href="./semag/semag.html">GAMES</a>
+      <a href="./bin/exam/examcover.html">EXAM</a>
+      <a href="./bin/notes/notes.html">NOTES</a>
+      <a href="./bin/Resources/resources.html">RESOURCES</a>
+    </div>
+
+    <div class="motivation-box">
+      <p id="motivationText">
+        <span id="quote"></span><br />
+        <span id="motivationAuthor"></span>
+      </p>
+    </div>
+
+    <div class="update-banner" id="updateBanner">
+      <div class="update-left">
+        <span class="update-badge">NEW</span>
+        <span class="update-message" id="updateMessage">
+          SPOM Set C &amp; D Updates Released!
+        </span>
       </div>
-
-      <div class="button">
-        <a href="./semag/semag.html">GAMES</a>
-        <a href="./bin/exam/examcover.html">EXAM</a>
-        <a href="./bin/notes/notes.html">NOTES</a>
-        <a href="./bin/Resources/resources.html">RESOURCES</a>
+      <div class="update-actions">
+        <a href="#noticeSection" id="updateLink" class="update-link">View Update</a>
+        <span class="update-close" onclick="closeUpdate()">✕</span>
       </div>
+    </div>
 
-      <div class="motivation-box">
-        <p id="motivationText">
-          <span id="quote"></span><br />
-          <span id="motivationAuthor"></span>
-        </p>
+    <div class="notice" id="noticeSection">
+      <h1 class="in">IMPORTANT NOTICE</h1>
+      <p>
+        <strong>Calcium Notes</strong> is a website designed to provide lucid
+        and focused workbooks that assist students in understanding the
+        subject matter. It covers all important topics to enhance the quality
+        of learning in
+        <strong>Financial Reporting, Financial Management, and Taxation</strong>,
+        including the fundamental concepts of these subjects.
+      </p>
+
+      <h2 class="dis">DISCLAIMER</h2>
+      <p>
+        The contents of this publication do not necessarily constitute or
+        imply endorsement, recommendation, or favouring by any institution.
+      </p>
+      <p>
+        This publication is intended solely for general reading and
+        educational purposes.
+      </p>
+      <p>
+        The statements, explanations, and concepts presented are of a general
+        nature and may not take into account the specific objectives, needs,
+        circumstances, or situations of any individual user, reader,
+        organization, or institution. Accordingly, Calcium Notes shall not be
+        responsible for any decision, action, or outcome arising from reliance
+        on the information contained herein.
+      </p>
+      <p>
+        This publication may include information, statements, opinions,
+        statistics, and materials obtained from sources believed to be
+        reliable. While every effort has been made to ensure accuracy and
+        avoid errors, no guarantees or warranties of any kind are provided
+        regarding the completeness or correctness of the content.
+      </p>
+      <p>
+        As continuous research and updates are taking place across these
+        knowledge streams, Calcium Notes does not warrant the absolute
+        accuracy, adequacy, or completeness of the information and expressly
+        disclaims any liability for errors or omissions.
+      </p>
+      <p>
+        Calcium Notes shall not accept any legal liability whatsoever arising
+        from the use of the information contained in this publication.
+      </p>
+      <p>
+        While the content of Calcium Notes is largely based on ICAI study
+        material, Calcium Notes does not guarantee that all topics of ICAI
+        material are fully or completely covered.
+      </p>
+
+      <div class="footer-note">
+        © Calcium Notes. Rights Reserved. Content may be used freely for
+        educational purposes.
       </div>
+    </div>
 
-      <div class="update-banner" id="updateBanner">
-        <div class="update-left">
-          <span class="update-badge">NEW</span>
-          <span class="update-message" id="updateMessage">
-            SPOM Set C &amp; D Updates Released!
-          </span>
-        </div>
-        <div class="update-actions">
-          <a href="#noticeSection" id="updateLink" class="update-link">View Update</a>
-          <span class="update-close" onclick="closeUpdate()">✕</span>
-        </div>
-      </div>
-
-      <div class="notice" id="noticeSection">
-        <h1 class="in">IMPORTANT NOTICE</h1>
-        <p>
-          <strong>Calcium Notes</strong> is a website designed to provide lucid
-          and focused workbooks that assist students in understanding the
-          subject matter. It covers all important topics to enhance the quality
-          of learning in
-          <strong>Financial Reporting, Financial Management, and Taxation</strong>,
-          including the fundamental concepts of these subjects.
-        </p>
-
-        <h2 class="dis">DISCLAIMER</h2>
-        <p>
-          The contents of this publication do not necessarily constitute or
-          imply endorsement, recommendation, or favouring by any institution.
-        </p>
-        <p>
-          This publication is intended solely for general reading and
-          educational purposes.
-        </p>
-        <p>
-          The statements, explanations, and concepts presented are of a general
-          nature and may not take into account the specific objectives, needs,
-          circumstances, or situations of any individual user, reader,
-          organization, or institution. Accordingly, Calcium Notes shall not be
-          responsible for any decision, action, or outcome arising from reliance
-          on the information contained herein.
-        </p>
-        <p>
-          This publication may include information, statements, opinions,
-          statistics, and materials obtained from sources believed to be
-          reliable. While every effort has been made to ensure accuracy and
-          avoid errors, no guarantees or warranties of any kind are provided
-          regarding the completeness or correctness of the content.
-        </p>
-        <p>
-          As continuous research and updates are taking place across these
-          knowledge streams, Calcium Notes does not warrant the absolute
-          accuracy, adequacy, or completeness of the information and expressly
-          disclaims any liability for errors or omissions.
-        </p>
-        <p>
-          Calcium Notes shall not accept any legal liability whatsoever arising
-          from the use of the information contained in this publication.
-        </p>
-        <p>
-          While the content of Calcium Notes is largely based on ICAI study
-          material, Calcium Notes does not guarantee that all topics of ICAI
-          material are fully or completely covered.
-        </p>
-
-        <div class="footer-note">
-          © Calcium Notes. Rights Reserved. Content may be used freely for
-          educational purposes.
-        </div>
-      </div>
-
-      <div
-        class="motivation-box"
-        style="
+    <div class="motivation-box" style="
           margin-top: 30px;
           border: 1px solid rgba(59, 130, 246, 0.4);
           background: rgba(59, 130, 246, 0.08);
-        "
-      >
-        <h2 style="color: #93c5fd; font-size: 1.4rem; margin-bottom: 10px">
-          Precision-Engineered for CA Success
-        </h2>
-        <p
-          style="
+        ">
+      <h2 style="color: #93c5fd; font-size: 1.4rem; margin-bottom: 10px">
+        Precision-Engineered for CA Success
+      </h2>
+      <p style="
             text-align: center;
             font-size: 0.9rem;
             line-height: 1.5;
             color: #e2e8f0;
             margin-bottom: 15px;
-          "
-        >
-          Specialized lab for CA Final students under the New Scheme.
-          Bridging the gap between ICAI material and exam precision.
-        </p>
-        <a
-          href="./aboutca.html"
-          style="
+          ">
+        Specialized lab for CA Final students under the New Scheme.
+        Bridging the gap between ICAI material and exam precision.
+      </p>
+      <a href="./aboutca.html" style="
             color: #3b82f6;
             font-weight: 700;
             text-decoration: none;
             border-bottom: 2px solid #3b82f6;
             padding-bottom: 2px;
             font-size: 0.85rem;
-          "
-        >
-          Learn More About the CA Journey →
-        </a>
-      </div>
+          ">
+        Learn More About the CA Journey →
+      </a>
     </div>
+  </div>
 
-    <footer>
-      <a href="./contract.html">Contact Us</a> <br />
-      EMAIL: <a href="mailto:calciumnotes@gmail.com">calciumnotes@gmail.com</a>
-      <div
-        class="social-container"
-        style="
+  <footer>
+    <a href="./contract.html">Contact Us</a> <br />
+    EMAIL: <a href="mailto:calciumnotes@gmail.com">calciumnotes@gmail.com</a>
+    <div class="social-container" style="
           text-align: center;
           margin-top: 10px;
           align-items: center;
           justify-content: center;
           display: flex;
           gap: 15px;
-        "
-      >
-        <a
-          href="https://www.instagram.com/calciumnotes"
-          class="btn instagram"
-          target="_blank"
-        >
-          Instagram
-        </a>
-        <a
-          href="https://www.twitter.com/@Calciumnotes"
-          class="btn twitter"
-          target="_blank"
-        >
-          X
-        </a>
-      </div>
-      <div>
-        <a href="./about-us.html">About US</a>
-        <a href="./privacy-policy.html">Privacy Policy</a>
-      </div>
-    </footer>
+        ">
+      <a href="https://www.instagram.com/calciumnotes" class="btn instagram" target="_blank">
+        Instagram
+      </a>
+      <a href="https://www.twitter.com/@Calciumnotes" class="btn twitter" target="_blank">
+        X
+      </a>
+    </div>
+    <div>
+      <a href="./about-us.html">About US</a>
+      <a href="./privacy-policy.html">Privacy Policy</a>
+    </div>
+  </footer>
 
-    <!-- READ MODE OVERLAY (FULL SCREEN IFRAME) -->
-    <div id="readModeOverlay">
-      <div class="rm-header">
-        <div class="rm-brand">📖 Calcium <span>Read Mode</span></div>
-        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <button class="rm-exit-btn" style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.45);" onclick="toggleBrowserFullscreen()">
-            ⛶ Full Screen
-          </button>
-          <button class="rm-exit-btn" style="background: rgba(124, 58, 237, 0.2); color: #ddd6fe; border-color: rgba(167, 139, 250, 0.45);" onclick="openSquadModal(true)">
-            📹 Study Meet (<span id="rmHeaderSquadCount">1</span>)
-          </button>
-          <button class="rm-exit-btn" style="background: rgba(236, 72, 153, 0.2); color: #fbcfe8; border-color: rgba(244, 114, 182, 0.45);" onclick="openShareModal()">
-            📸 Share Wrap
-          </button>
-          <button class="rm-exit-btn" style="background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border-color: rgba(59, 130, 246, 0.4);" onclick="switchToPlanMode()">
-            📅 Switch to Plan
-          </button>
-          <button class="rm-exit-btn" onclick="closeReadMode()">
-            ✕ Exit Read Mode
-          </button>
-        </div>
-      </div>
-      <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
-        <iframe
-          id="readModeIframe"
-          src="./readmode.html"
-          allow="fullscreen; autoplay; microphone; camera; display-capture"
-          allowfullscreen
-          style="width: 100%; height: 100%; border: none"
-        ></iframe>
+  <!-- READ MODE OVERLAY (FULL SCREEN IFRAME) -->
+  <div id="readModeOverlay">
+    <div class="rm-header">
+      <div class="rm-brand">📖 Calcium <span>Read Mode</span></div>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <button class="rm-exit-btn"
+          style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.45);"
+          onclick="toggleBrowserFullscreen()">
+          ⛶ Full Screen
+        </button>
+        <button class="rm-exit-btn"
+          style="background: rgba(124, 58, 237, 0.2); color: #ddd6fe; border-color: rgba(167, 139, 250, 0.45);"
+          onclick="openSquadModal(true)">
+          📹 Study Meet (<span id="rmHeaderSquadCount">1</span>)
+        </button>
+        <button class="rm-exit-btn"
+          style="background: rgba(236, 72, 153, 0.2); color: #fbcfe8; border-color: rgba(244, 114, 182, 0.45);"
+          onclick="openShareModal()">
+          📸 Share Wrap
+        </button>
+        <button class="rm-exit-btn"
+          style="background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border-color: rgba(59, 130, 246, 0.4);"
+          onclick="switchToPlanMode()">
+          📅 Switch to Plan
+        </button>
+        <button class="rm-exit-btn" onclick="closeReadMode()">
+          ✕ Exit Read Mode
+        </button>
       </div>
     </div>
+    <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
+      <iframe id="readModeIframe" src="./readmode.html"
+        allow="fullscreen; autoplay; microphone; camera; display-capture" allowfullscreen
+        style="width: 100%; height: 100%; border: none"></iframe>
+    </div>
+  </div>
 
-    <!-- PLANNING MODE OVERLAY (FULL SCREEN IFRAME) -->
-    <div id="planningModeOverlay">
-      <div class="rm-header">
-        <div class="rm-brand">📅 Calcium <span>Planning Mode</span></div>
-        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <button class="rm-exit-btn" style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.45);" onclick="toggleBrowserFullscreen()">
-            ⛶ Full Screen
-          </button>
-          <button class="rm-exit-btn" style="background: rgba(124, 58, 237, 0.2); color: #ddd6fe; border-color: rgba(167, 139, 250, 0.45);" onclick="openSquadModal(true)">
-            📹 Study Meet (<span id="planHeaderSquadCount">1</span>)
-          </button>
-          <button class="rm-exit-btn" style="background: rgba(236, 72, 153, 0.2); color: #fbcfe8; border-color: rgba(244, 114, 182, 0.45);" onclick="openShareModal()">
-            📸 Share Wrap
-          </button>
-          <button class="rm-exit-btn" style="background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border-color: rgba(59, 130, 246, 0.4);" onclick="switchToReadMode()">
-            📖 Switch to Read
-          </button>
-          <button class="rm-exit-btn" onclick="closePlanningMode()">
-            ✕ Exit Planning Mode
-          </button>
-        </div>
-      </div>
-      <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
-        <iframe
-          id="planModeIframe"
-          src="./pv4.html"
-          allow="fullscreen; autoplay; microphone; camera; display-capture"
-          allowfullscreen
-          style="width: 100%; height: 100%; border: none"
-        ></iframe>
+  <!-- PLANNING MODE OVERLAY (FULL SCREEN IFRAME) -->
+  <div id="planningModeOverlay">
+    <div class="rm-header">
+      <div class="rm-brand">📅 Calcium <span>Planning Mode</span></div>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <button class="rm-exit-btn"
+          style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.45);"
+          onclick="toggleBrowserFullscreen()">
+          ⛶ Full Screen
+        </button>
+        <button class="rm-exit-btn"
+          style="background: rgba(124, 58, 237, 0.2); color: #ddd6fe; border-color: rgba(167, 139, 250, 0.45);"
+          onclick="openSquadModal(true)">
+          📹 Study Meet (<span id="planHeaderSquadCount">1</span>)
+        </button>
+        <button class="rm-exit-btn"
+          style="background: rgba(236, 72, 153, 0.2); color: #fbcfe8; border-color: rgba(244, 114, 182, 0.45);"
+          onclick="openShareModal()">
+          📸 Share Wrap
+        </button>
+        <button class="rm-exit-btn"
+          style="background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border-color: rgba(59, 130, 246, 0.4);"
+          onclick="switchToReadMode()">
+          📖 Switch to Read
+        </button>
+        <button class="rm-exit-btn" onclick="closePlanningMode()">
+          ✕ Exit Planning Mode
+        </button>
       </div>
     </div>
+    <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
+      <iframe id="planModeIframe" src="./pv4.html" allow="fullscreen; autoplay; microphone; camera; display-capture"
+        allowfullscreen style="width: 100%; height: 100%; border: none"></iframe>
+    </div>
+  </div>
 
-    <!-- STUDY SQUAD & SOCIAL WRAP OVERLAY (OFFLOADED TO sturm.html) -->
-    <div
-      id="sturmOverlay"
-      style="
+  <!-- FRIENDS & UNIQUE ID HUB OVERLAY (frid.html) -->
+  <div id="friendsModeOverlay">
+    <div class="rm-header">
+      <div class="rm-brand">🤝 Calcium <span>Friends &amp; Unique ID Hub</span></div>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <button class="rm-exit-btn"
+          style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.45);"
+          onclick="toggleBrowserFullscreen()">
+          ⛶ Full Screen
+        </button>
+        <button class="rm-exit-btn"
+          style="background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border-color: rgba(59, 130, 246, 0.4);"
+          onclick="closeFriendsModal(); openReadMode();">
+          📖 Read Mode
+        </button>
+        <button class="rm-exit-btn"
+          style="background: rgba(6, 182, 212, 0.15); color: #67e8f9; border-color: rgba(6, 182, 212, 0.4);"
+          onclick="closeFriendsModal(); openPlanningMode();">
+          📅 Planning Mode
+        </button>
+        <button class="rm-exit-btn" onclick="closeFriendsModal()">
+          ✕ Close Friends
+        </button>
+      </div>
+    </div>
+    <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
+      <iframe id="friendsModeIframe" src="./frid.html" allow="fullscreen; clipboard-read; clipboard-write"
+        style="width: 100%; height: 100%; border: none"></iframe>
+    </div>
+  </div>
+
+  <!-- STUDY SQUAD & SOCIAL WRAP OVERLAY (OFFLOADED TO sturm.html) -->
+  <div id="sturmOverlay" style="
         position: fixed;
         inset: 0;
         z-index: 100000;
@@ -331,478 +348,537 @@
         visibility: hidden;
         pointer-events: none;
         transition: opacity 0.25s ease;
-      "
-    >
-      <iframe
-        id="sturmIframe"
-        src="./sturm.html"
-        allow="fullscreen; autoplay; microphone; camera; display-capture"
-        allowfullscreen
-        style="width: 100%; height: 100%; border: none; background: transparent"
-      ></iframe>
+      ">
+    <iframe id="sturmIframe" src="./sturm.html" allow="fullscreen; autoplay; microphone; camera; display-capture"
+      allowfullscreen style="width: 100%; height: 100%; border: none; background: transparent"></iframe>
+  </div>
+
+  <!-- FLOATING CALL CONTROLS (Active while studying in Read/Plan Mode) -->
+  <div id="floatingCallWidget" class="floating-call-widget" style="display: none;">
+    <div class="floating-call-info" onclick="openSquadModal(true)" title="Click to view Video Room">
+      <span class="floating-pulse-dot"></span>
+      <span id="floatingRoomLabel" style="font-weight:700; color:#7dd3fc; font-size:12px;">Live Call</span>
+      <span id="floatingSpeakingStatus"
+        style="font-size:11px; color:#94a3b8; max-width:140px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;"></span>
     </div>
-
-    <!-- FLOATING CALL CONTROLS (Active while studying in Read/Plan Mode) -->
-    <div id="floatingCallWidget" class="floating-call-widget" style="display: none;">
-      <div class="floating-call-info" onclick="openSquadModal(true)" title="Click to view Video Room">
-        <span class="floating-pulse-dot"></span>
-        <span id="floatingRoomLabel" style="font-weight:700; color:#7dd3fc; font-size:12px;">Live Call</span>
-        <span id="floatingSpeakingStatus" style="font-size:11px; color:#94a3b8; max-width:140px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;"></span>
-      </div>
-      <div class="floating-call-btns">
-        <button id="floatingMicBtn" class="floating-btn muted" onclick="toggleAudio()" title="Toggle Mic">🔇</button>
-        <button id="floatingCamBtn" class="floating-btn off" onclick="toggleVideo()" title="Toggle Camera">📷</button>
-        <button id="floatingFilterBtn" class="floating-btn filter-cycle" onclick="cycleVideoFilter()" title="Cycle Fun Video Filter">🎨</button>
-        <button class="floating-btn expand" onclick="openSquadModal(true)" title="Open Video Room">👥 View</button>
-        <button class="floating-btn leave" onclick="leaveCall()" title="Leave Call">✕</button>
-      </div>
+    <div class="floating-call-btns">
+      <button id="floatingMicBtn" class="floating-btn muted" onclick="toggleAudio()" title="Toggle Mic">🔇</button>
+      <button id="floatingCamBtn" class="floating-btn off" onclick="toggleVideo()" title="Toggle Camera">📷</button>
+      <button id="floatingFilterBtn" class="floating-btn filter-cycle" onclick="cycleVideoFilter()"
+        title="Cycle Fun Video Filter">🎨</button>
+      <button class="floating-btn expand" onclick="openSquadModal(true)" title="Open Video Room">👥 View</button>
+      <button class="floating-btn leave" onclick="leaveCall()" title="Leave Call">✕</button>
     </div>
+  </div>
 
-    <script>
-      /* =========================================
-         STATE & INITIALIZATION
-      ========================================= */
-      const banner = document.getElementById("updateBanner");
-      const message = document.getElementById("updateMessage");
-      const link = document.getElementById("updateLink");
+  <script>
+    /* =========================================
+       STATE & INITIALIZATION
+    ========================================= */
+    const banner = document.getElementById("updateBanner");
+    const message = document.getElementById("updateMessage");
+    const link = document.getElementById("updateLink");
 
-      const updates = [
-        {
-          text: "SPOM Set A & B - AI Integrated Prefinal Exams Are Now Available!",
-          url: "./bin/exam/spom/espom.html",
-        },
-        {
-          text: "🔥 CA Final 100-Mark Prefinal Mock Exams (New Scheme) Are Now Available!",
-          url: "./bin/exam/examcover.html",
-        },
-      ];
-      let currentIndex = 0;
+    const updates = [
+      {
+        text: "SPOM Set A & B - AI Integrated Prefinal Exams Are Now Available!",
+        url: "./bin/exam/spom/espom.html",
+      },
+      {
+        text: "🔥 CA Final 100-Mark Prefinal Mock Exams (New Scheme) Are Now Available!",
+        url: "./bin/exam/examcover.html",
+      },
+    ];
+    let currentIndex = 0;
 
-      // Load data on window startup
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          banner.classList.add("show");
-          showUpdate();
-          if (updates.length > 1) {
-            setInterval(showUpdate, 3000);
-          }
-        }, 500);
-
-        showRandomQuote();
-        initSquadEngine();
-      });
-
-      function showUpdate() {
-        message.textContent = updates[currentIndex].text;
-        link.href = updates[currentIndex].url;
-        currentIndex = (currentIndex + 1) % updates.length;
-      }
-      function closeUpdate() {
-        banner.classList.remove("show");
-      }
-
-      /* =========================================
-         MOTIVATION LOGIC
-      ========================================= */
-      const quotes = [
-        {
-          text: "Of the Adityas I am Visnu, of lights i am the radiant sun...",
-          author: "Sri Krishna",
-        },
-        {
-          text: "Success doesn't come from what you do occasionally, it comes from consistency.",
-          author: "Marie Forleo",
-        },
-        {
-          text: "Discipline is choosing between what you want now and what you want most.",
-          author: "Abraham Lincoln",
-        },
-        { text: "You can sleep When you are Dead.", author: "Max Verstappen" },
-        { text: "How you do anything is how you do everything.", author: "T. Harv Eker" },
-        { text: "veni, vidi, vici", author: "Julius Caesar" },
-        { text: "when going through hell - keep going", author: "Winston Churchill" },
-        { text: "Action in the mode of passion brings misery; action in the mode of ignorance yields only foolishness.", author: "Bhagavad Gita 14.16" },
-        { text: "Nothing is easy when your lazy and everything is easy when you are crazy", author: "Swami Vivekananda" },
-      ];
-
-      function showRandomQuote() {
-        const randomIndex = Math.floor(Math.random() * quotes.length);
-        document.getElementById("quote").textContent = quotes[randomIndex].text;
-        document.getElementById("motivationAuthor").textContent =
-          " — " + quotes[randomIndex].author;
-      }
-
-      /* =========================================
-         OVERLAY CONTROLS
-      ========================================= */
-      const readOverlay = document.getElementById("readModeOverlay");
-      const planOverlay = document.getElementById("planningModeOverlay");
-
-      function syncReadIframeTracker() {
-        const readIframe = document.getElementById("readModeIframe");
-        if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.renderVarianceTrackerInReadMode === "function") {
-          readIframe.contentWindow.renderVarianceTrackerInReadMode();
+    // Load data on window startup
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        banner.classList.add("show");
+        showUpdate();
+        if (updates.length > 1) {
+          setInterval(showUpdate, 3000);
         }
+      }, 500);
+
+      showRandomQuote();
+      initSquadEngine();
+    });
+
+    function showUpdate() {
+      message.textContent = updates[currentIndex].text;
+      link.href = updates[currentIndex].url;
+      currentIndex = (currentIndex + 1) % updates.length;
+    }
+    function closeUpdate() {
+      banner.classList.remove("show");
+    }
+
+    /* =========================================
+       MOTIVATION LOGIC
+    ========================================= */
+    const quotes = [
+      {
+        text: "Of the Adityas I am Visnu, of lights i am the radiant sun...",
+        author: "Sri Krishna",
+      },
+      {
+        text: "Success doesn't come from what you do occasionally, it comes from consistency.",
+        author: "Marie Forleo",
+      },
+      {
+        text: "Discipline is choosing between what you want now and what you want most.",
+        author: "Abraham Lincoln",
+      },
+      { text: "You can sleep When you are Dead.", author: "Max Verstappen" },
+      { text: "How you do anything is how you do everything.", author: "T. Harv Eker" },
+      { text: "veni, vidi, vici", author: "Julius Caesar" },
+      { text: "when going through hell - keep going", author: "Winston Churchill" },
+      { text: "Action in the mode of passion brings misery; action in the mode of ignorance yields only foolishness.", author: "Bhagavad Gita 14.16" },
+      { text: "Nothing is easy when your lazy and everything is easy when you are crazy", author: "Swami Vivekananda" },
+    ];
+
+    function showRandomQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quote").textContent = quotes[randomIndex].text;
+      document.getElementById("motivationAuthor").textContent =
+        " — " + quotes[randomIndex].author;
+    }
+
+    /* =========================================
+       OVERLAY CONTROLS
+    ========================================= */
+    const readOverlay = document.getElementById("readModeOverlay");
+    const planOverlay = document.getElementById("planningModeOverlay");
+    const friendsOverlay = document.getElementById("friendsModeOverlay");
+
+    function ensureGlobalUniqueUserId() {
+      let uid = localStorage.getItem("calcium_unique_user_id") || "";
+      let prof = {};
+      try { prof = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}"); } catch (e) { }
+      if (!uid && prof.uniqueId) uid = prof.uniqueId;
+      if (!uid) {
+        uid = "CN-" + Math.floor(100000 + Math.random() * 900000);
       }
+      localStorage.setItem("calcium_unique_user_id", uid);
+      prof.uniqueId = uid;
+      localStorage.setItem("calcium_user_profile_v1", JSON.stringify(prof));
+      const uidEl = document.getElementById("topBarUniqueId");
+      if (uidEl) uidEl.textContent = uid;
+      return uid;
+    }
 
-      window.syncPlanIframeFromReadRoom = function() {
-        const planIframe = document.getElementById("planModeIframe");
-        if (planIframe && planIframe.contentWindow && typeof planIframe.contentWindow.refreshPlannerFromStorage === "function") {
-          planIframe.contentWindow.refreshPlannerFromStorage();
-        }
-      };
-
-      function openReadMode() {
-        syncReadIframeTracker();
-        readOverlay.classList.add("rm-active");
-        setTimeout(() => readOverlay.classList.add("rm-visible"), 10);
-        document.body.style.overflow = "hidden"; // Prevent background scroll
+    window.openFriendsModal = function () {
+      ensureGlobalUniqueUserId();
+      const frIframe = document.getElementById("friendsModeIframe");
+      if (frIframe && frIframe.contentWindow && typeof frIframe.contentWindow.refreshFriendsHubFromParent === "function") {
+        frIframe.contentWindow.refreshFriendsHubFromParent();
       }
-
-      function closeReadMode() {
-        readOverlay.classList.remove("rm-visible");
-        setTimeout(() => {
-          readOverlay.classList.remove("rm-active");
-          document.body.style.overflow = "";
-        }, 350);
-      }
-
-      function openPlanningMode() {
-        window.syncPlanIframeFromReadRoom();
-        planOverlay.classList.add("rm-active");
-        setTimeout(() => planOverlay.classList.add("rm-visible"), 10);
+      if (friendsOverlay) {
+        friendsOverlay.classList.add("rm-active");
+        setTimeout(() => friendsOverlay.classList.add("rm-visible"), 10);
         document.body.style.overflow = "hidden";
       }
+    };
 
-      function closePlanningMode() {
-        planOverlay.classList.remove("rm-visible");
-        setTimeout(() => {
-          planOverlay.classList.remove("rm-active");
-          document.body.style.overflow = "";
-        }, 350);
-      }
+    window.closeFriendsModal = function () {
+      if (!friendsOverlay) return;
+      window.exitFullscreenIfNeeded && window.exitFullscreenIfNeeded();
+      friendsOverlay.classList.remove("rm-visible");
+      setTimeout(() => {
+        friendsOverlay.classList.remove("rm-active");
+        document.body.style.overflow = "";
+      }, 350);
+    };
 
-      // --- CROSSFADE TRANSITIONS ---
-      window.switchToReadMode = function() {
-        syncReadIframeTracker();
-        planOverlay.classList.remove("rm-visible");
-        
-        setTimeout(() => {
-          planOverlay.classList.remove("rm-active");
-          readOverlay.classList.add("rm-active");
-          
-          setTimeout(() => {
-            readOverlay.classList.add("rm-visible");
-          }, 20);
-        }, 350);
-      };
-
-      window.openReadRoomTracker = function() {
-        window.switchToReadMode();
-        setTimeout(() => {
-          const readIframe = document.getElementById("readModeIframe");
-          if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.highlightVarianceTracker === "function") {
-            readIframe.contentWindow.highlightVarianceTracker();
-          }
-        }, 420);
-      };
-
-      window.switchToPlanMode = function() {
-        window.syncPlanIframeFromReadRoom();
-        readOverlay.classList.remove("rm-visible");
-        
-        setTimeout(() => {
-          readOverlay.classList.remove("rm-active");
-          planOverlay.classList.add("rm-active");
-          
-          setTimeout(() => {
-            planOverlay.classList.add("rm-visible");
-          }, 20); 
-        }, 350); 
-      };
-
-      /* =========================================
-         LIGHTWEIGHT BRIDGE TO sturm.html (STUDY SQUAD)
-      ========================================= */
-      const sturmOverlay = document.getElementById("sturmOverlay");
-      const sturmIframe = document.getElementById("sturmIframe");
-      let sturmIframeLoaded = false;
-
-      if (sturmIframe) {
-        sturmIframe.addEventListener("load", () => {
-          sturmIframeLoaded = true;
-        });
-      }
-
-      function callSturm(fnName, ...args) {
-        if (!sturmIframe) return;
-        const invoke = () => {
-          const win = sturmIframe.contentWindow;
-          if (!win) return;
-          try {
-            if (typeof win[fnName] === "function") {
-              win[fnName](...args);
-              return;
-            }
-          } catch (err) {
-            // Fallback to postMessage when running over local file:// protocol
-          }
-          try {
-            win.postMessage({ __calciumSturmCall: true, fn: fnName, args: args }, "*");
-          } catch (err2) {}
-        };
-
-        if (sturmIframeLoaded) {
-          invoke();
-        } else {
-          invoke();
-          sturmIframe.addEventListener("load", invoke, { once: true });
-        }
-      }
-
-      // Listen for messages sent back from sturm.html iframe
-      window.addEventListener("message", (event) => {
-        const data = event.data;
-        if (!data || !data.__calciumParentCall) return;
-        const fn = window[data.fn];
-        if (typeof fn === "function") {
-          fn(...(data.args || []));
-        }
+    window.syncFriendsCountBadge = function (friendsCount, pendingReqCount) {
+      const label = pendingReqCount > 0 ? `${friendsCount} • ${pendingReqCount}📩` : `${friendsCount}`;
+      ["topFriendsCount", "rmHeaderFriendsCount", "planHeaderFriendsCount"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = label;
       });
+    };
 
-      window.showSturmOverlay = function() {
-        if (!sturmOverlay) return;
-        sturmOverlay.style.visibility = "visible";
-        sturmOverlay.style.opacity = "1";
-        sturmOverlay.style.pointerEvents = "auto";
-      };
+    function syncReadIframeTracker() {
+      const readIframe = document.getElementById("readModeIframe");
+      if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.renderVarianceTrackerInReadMode === "function") {
+        readIframe.contentWindow.renderVarianceTrackerInReadMode();
+      }
+    }
 
-      window.hideSturmOverlay = function() {
-        if (!sturmOverlay) return;
-        sturmOverlay.style.opacity = "0";
-        sturmOverlay.style.pointerEvents = "none";
+    window.syncPlanIframeFromReadRoom = function () {
+      const planIframe = document.getElementById("planModeIframe");
+      if (planIframe && planIframe.contentWindow && typeof planIframe.contentWindow.refreshPlannerFromStorage === "function") {
+        planIframe.contentWindow.refreshPlannerFromStorage();
+      }
+    };
+
+    function openReadMode() {
+      syncReadIframeTracker();
+      readOverlay.classList.add("rm-active");
+      setTimeout(() => readOverlay.classList.add("rm-visible"), 10);
+      document.body.style.overflow = "hidden"; // Prevent background scroll
+    }
+
+    function closeReadMode() {
+      window.exitFullscreenIfNeeded && window.exitFullscreenIfNeeded();
+      readOverlay.classList.remove("rm-visible");
+      setTimeout(() => {
+        readOverlay.classList.remove("rm-active");
+        document.body.style.overflow = "";
+      }, 350);
+    }
+
+    function openPlanningMode() {
+      window.syncPlanIframeFromReadRoom();
+      planOverlay.classList.add("rm-active");
+      setTimeout(() => planOverlay.classList.add("rm-visible"), 10);
+      document.body.style.overflow = "hidden";
+    }
+
+    function closePlanningMode() {
+      window.exitFullscreenIfNeeded && window.exitFullscreenIfNeeded();
+      planOverlay.classList.remove("rm-visible");
+      setTimeout(() => {
+        planOverlay.classList.remove("rm-active");
+        document.body.style.overflow = "";
+      }, 350);
+    }
+
+    // --- CROSSFADE TRANSITIONS ---
+    window.switchToReadMode = function () {
+      syncReadIframeTracker();
+      planOverlay.classList.remove("rm-visible");
+
+      setTimeout(() => {
+        planOverlay.classList.remove("rm-active");
+        readOverlay.classList.add("rm-active");
+
         setTimeout(() => {
-          if (sturmOverlay.style.opacity === "0") {
-            sturmOverlay.style.visibility = "hidden";
-          }
-        }, 250);
-      };
+          readOverlay.classList.add("rm-visible");
+        }, 20);
+      }, 350);
+    };
 
-      window.toggleBrowserFullscreen = function() {
-        try {
-          if (!document.fullscreenElement) {
-            const p = document.documentElement.requestFullscreen();
-            if (p && typeof p.catch === "function") p.catch(() => {});
-          } else if (document.exitFullscreen) {
-            const p = document.exitFullscreen();
-            if (p && typeof p.catch === "function") p.catch(() => {});
-          }
-        } catch (e) {}
-      };
-
-      function requestFullscreenSafe() {
-        try {
-          if (!document.fullscreenElement && document.documentElement.requestFullscreen) {
-            const p = document.documentElement.requestFullscreen();
-            if (p && typeof p.catch === "function") p.catch(() => {});
-          }
-        } catch (e) {}
-      }
-
-      const _origOpenReadMode = openReadMode;
-      window.openReadMode = function() {
-        _origOpenReadMode();
-        requestFullscreenSafe();
-      };
-
-      const _origOpenPlanningMode = openPlanningMode;
-      window.openPlanningMode = function() {
-        _origOpenPlanningMode();
-        requestFullscreenSafe();
-      };
-
-      window.openSquadModal = function(fromUserGesture = true) {
-        window.showSturmOverlay();
-        if (fromUserGesture) {
-          requestFullscreenSafe();
-        }
-        callSturm("openSquadModal", fromUserGesture);
-      };
-
-      window.closeSquadModal = function() {
-        callSturm("closeSquadModal");
-        window.hideSturmOverlay();
-      };
-
-      window.openShareModal = function() {
-        window.showSturmOverlay();
-        callSturm("openShareModal");
-      };
-
-      window.closeShareModal = function() {
-        callSturm("closeShareModal");
-      };
-
-      window.openProfileModal = function() {
-        window.showSturmOverlay();
-        callSturm("openProfileModal");
-      };
-
-      window.closeProfileModal = function() {
-        callSturm("closeProfileModal");
-        window.hideSturmOverlay();
-      };
-
-      window.syncTopBarProfileFromSturm = function(profile) {
-        const p = profile || {};
-        if (p.name) localStorage.setItem("calcium_user_name", p.name);
-        if (p.level) localStorage.setItem("calcium_ca_level", p.level);
-        if (Object.keys(p).length > 0) {
-          localStorage.setItem("calcium_user_profile_v1", JSON.stringify(p));
-        }
-
-        const name = (p.name || localStorage.getItem("calcium_user_name") || "CA Aspirant").trim() || "CA Aspirant";
-        const level = (p.level || localStorage.getItem("calcium_ca_level") || "final").toUpperCase();
-        const mood = p.moodEmoji || "🔥";
-        const avatar = p.avatar || "";
-
-        const topInput = document.getElementById("topBarUserName");
-        if (topInput) topInput.value = name;
-        const nameEl = document.getElementById("topBarProfileName");
-        if (nameEl) nameEl.textContent = name;
-        const lvlEl = document.getElementById("topBarProfileLevel");
-        if (lvlEl) lvlEl.textContent = `CA ${level}`;
-        const moodEl = document.getElementById("topBarProfileMood");
-        if (moodEl) moodEl.textContent = mood;
-
-        const imgEl = document.getElementById("topBarAvatarImg");
-        const initEl = document.getElementById("topBarAvatarInitials");
-        if (imgEl && initEl) {
-          if (avatar) {
-            imgEl.src = avatar;
-            imgEl.style.display = "block";
-            initEl.style.display = "none";
-          } else {
-            imgEl.style.display = "none";
-            initEl.style.display = "block";
-            initEl.textContent = name.split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase() || "👤";
-          }
-        }
-
-        syncReadIframeTracker();
-        window.syncPlanIframeFromReadRoom();
-      };
-
-      window.refreshAllIframesAfterImport = function(importedStorage) {
-        try {
-          if (importedStorage && typeof importedStorage === "object") {
-            Object.entries(importedStorage).forEach(([k, v]) => {
-              if (v !== null && v !== undefined) {
-                localStorage.setItem(k, typeof v === "string" ? v : JSON.stringify(v));
-              }
-            });
-          }
-          let storedProf = {};
-          try { storedProf = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}"); } catch (e) {}
-          window.syncTopBarProfileFromSturm(storedProf);
-
-          const readIframe = document.getElementById("readModeIframe");
-          if (readIframe && readIframe.contentWindow) readIframe.contentWindow.location.reload();
-          const planIframe = document.getElementById("planModeIframe");
-          if (planIframe && planIframe.contentWindow) planIframe.contentWindow.location.reload();
-        } catch (e) {}
-      };
-
-      window.saveDisplayName = function(val) {
-        const clean = (val || "").trim() || "CA Aspirant";
-        localStorage.setItem("calcium_user_name", clean);
-        const topInput = document.getElementById("topBarUserName");
-        if (topInput && document.activeElement !== topInput) topInput.value = clean;
-        const nameEl = document.getElementById("topBarProfileName");
-        if (nameEl) nameEl.textContent = clean;
-        callSturm("saveDisplayName", clean);
-      };
-
-      window.syncTopBarNameFromSturm = function(val) {
-        const clean = (val || "").trim() || "CA Aspirant";
-        const topInput = document.getElementById("topBarUserName");
-        if (topInput && document.activeElement !== topInput) topInput.value = clean;
-        const nameEl = document.getElementById("topBarProfileName");
-        if (nameEl) nameEl.textContent = clean;
-      };
-
-      window.syncSquadCountBadges = function(count) {
-        ["topSquadCount", "rmHeaderSquadCount", "planHeaderSquadCount"].forEach(id => {
-          const el = document.getElementById(id);
-          if (el) el.textContent = count;
-        });
-      };
-
-      window.updateAndBroadcastMyState = function() {
-        callSturm("updateAndBroadcastMyState");
-      };
-
-      window.pushPlanToSquad = function(plan, level) {
-        callSturm("pushPlanToSquad", plan, level);
-      };
-
-      window.handleSharedFocusFromSturm = function(estimatedTime) {
-        window.hideSturmOverlay();
-        window.switchToReadMode();
+    window.openReadRoomTracker = function () {
+      window.switchToReadMode();
+      setTimeout(() => {
         const readIframe = document.getElementById("readModeIframe");
-        if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.syncAndStartTimer === "function") {
-          readIframe.contentWindow.syncAndStartTimer(estimatedTime);
+        if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.highlightVarianceTracker === "function") {
+          readIframe.contentWindow.highlightVarianceTracker();
         }
-      };
+      }, 420);
+    };
 
-      window.toggleAudio = function() { callSturm("toggleAudio"); };
-      window.toggleVideo = function() { callSturm("toggleVideo"); };
-      window.cycleVideoFilter = function() { callSturm("cycleVideoFilter"); };
-      window.leaveCall = function() { callSturm("leaveCall"); };
+    window.switchToPlanMode = function () {
+      window.syncPlanIframeFromReadRoom();
+      readOverlay.classList.remove("rm-visible");
 
-      window.syncFloatingCallWidget = function(state) {
-        const floatingWidget = document.getElementById("floatingCallWidget");
-        const floatingMic = document.getElementById("floatingMicBtn");
-        const floatingCam = document.getElementById("floatingCamBtn");
-        const floatingLabel = document.getElementById("floatingRoomLabel");
-        const statusEl = document.getElementById("floatingSpeakingStatus");
-        if (!floatingWidget) return;
+      setTimeout(() => {
+        readOverlay.classList.remove("rm-active");
+        planOverlay.classList.add("rm-active");
 
-        if (state && state.isCallActive) {
-          floatingWidget.style.display = "flex";
-          if (floatingMic) {
-            floatingMic.textContent = state.isAudioOn ? "🎤" : "🔇";
-            floatingMic.className = `floating-btn ${state.isAudioOn ? "active" : "muted"}`;
-          }
-          if (floatingCam) {
-            floatingCam.textContent = state.isVideoOn ? "📹" : "📷";
-            floatingCam.className = `floating-btn ${state.isVideoOn ? "active" : "off"}`;
-          }
-          if (floatingLabel) {
-            floatingLabel.textContent = state.activeRoomCode ? `Room ${state.activeRoomCode}` : "Study Call";
-          }
-          if (statusEl) {
-            statusEl.textContent = state.speakingText || "";
-            statusEl.style.color = "#4ade80";
-          }
-        } else {
-          floatingWidget.style.display = "none";
-        }
-      };
+        setTimeout(() => {
+          planOverlay.classList.add("rm-visible");
+        }, 20);
+      }, 350);
+    };
 
-      function initSquadEngine() {
-        let savedProf = {};
+    /* =========================================
+       LIGHTWEIGHT BRIDGE TO sturm.html (STUDY SQUAD)
+    ========================================= */
+    const sturmOverlay = document.getElementById("sturmOverlay");
+    const sturmIframe = document.getElementById("sturmIframe");
+    let sturmIframeLoaded = false;
+
+    if (sturmIframe) {
+      sturmIframe.addEventListener("load", () => {
+        sturmIframeLoaded = true;
+      });
+    }
+
+    function callSturm(fnName, ...args) {
+      if (!sturmIframe) return;
+      const invoke = () => {
+        const win = sturmIframe.contentWindow;
+        if (!win) return;
         try {
-          savedProf = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}");
-        } catch (e) {}
-        window.syncTopBarProfileFromSturm(savedProf);
+          if (typeof win[fnName] === "function") {
+            win[fnName](...args);
+            return;
+          }
+        } catch (err) {
+          // Fallback to postMessage when running over local file:// protocol
+        }
+        try {
+          win.postMessage({ __calciumSturmCall: true, fn: fnName, args: args }, "*");
+        } catch (err2) { }
+      };
 
-        const params = new URLSearchParams(window.location.search);
-        if (params.get("room")) {
-          window.showSturmOverlay();
-          callSturm("openSquadModal", false);
+      if (sturmIframeLoaded) {
+        invoke();
+      } else {
+        invoke();
+        sturmIframe.addEventListener("load", invoke, { once: true });
+      }
+    }
+
+    // Listen for messages sent back from sturm.html iframe
+    window.addEventListener("message", (event) => {
+      const data = event.data;
+      if (!data || !data.__calciumParentCall) return;
+      const fn = window[data.fn];
+      if (typeof fn === "function") {
+        fn(...(data.args || []));
+      }
+    });
+
+    window.showSturmOverlay = function () {
+      if (!sturmOverlay) return;
+      sturmOverlay.style.visibility = "visible";
+      sturmOverlay.style.opacity = "1";
+      sturmOverlay.style.pointerEvents = "auto";
+    };
+
+    window.hideSturmOverlay = function () {
+      if (!sturmOverlay) return;
+      sturmOverlay.style.opacity = "0";
+      sturmOverlay.style.pointerEvents = "none";
+      setTimeout(() => {
+        if (sturmOverlay.style.opacity === "0") {
+          sturmOverlay.style.visibility = "hidden";
+        }
+      }, 250);
+    };
+
+    window.toggleBrowserFullscreen = function () {
+      try {
+        if (!document.fullscreenElement) {
+          const p = document.documentElement.requestFullscreen();
+          if (p && typeof p.catch === "function") p.catch(() => { });
+        } else if (document.exitFullscreen) {
+          const p = document.exitFullscreen();
+          if (p && typeof p.catch === "function") p.catch(() => { });
+        }
+      } catch (e) { }
+    };
+
+    function requestFullscreenSafe() {
+      try {
+        if (!document.fullscreenElement && document.documentElement.requestFullscreen) {
+          const p = document.documentElement.requestFullscreen();
+          if (p && typeof p.catch === "function") p.catch(() => { });
+        }
+      } catch (e) { }
+    }
+
+    window.exitFullscreenIfNeeded = function () {
+      try {
+        if (document.fullscreenElement && document.exitFullscreen) {
+          const p = document.exitFullscreen();
+          if (p && typeof p.catch === "function") p.catch(() => { });
+        }
+      } catch (e) { }
+    };
+
+    const _origOpenReadMode = openReadMode;
+    window.openReadMode = function () {
+      _origOpenReadMode();
+      requestFullscreenSafe();
+    };
+
+    const _origOpenPlanningMode = openPlanningMode;
+    window.openPlanningMode = function () {
+      _origOpenPlanningMode();
+      requestFullscreenSafe();
+    };
+
+    window.openSquadModal = function (fromUserGesture = true) {
+      window.showSturmOverlay();
+      if (fromUserGesture) {
+        requestFullscreenSafe();
+      }
+      callSturm("openSquadModal", fromUserGesture);
+    };
+
+    window.closeSquadModal = function () {
+      window.exitFullscreenIfNeeded && window.exitFullscreenIfNeeded();
+      callSturm("closeSquadModal");
+      window.hideSturmOverlay();
+    };
+
+    window.openShareModal = function () {
+      window.showSturmOverlay();
+      callSturm("openShareModal");
+    };
+
+    window.closeShareModal = function () {
+      window.exitFullscreenIfNeeded && window.exitFullscreenIfNeeded();
+      callSturm("closeShareModal");
+    };
+
+    window.openProfileModal = function () {
+      window.showSturmOverlay();
+      callSturm("openProfileModal");
+    };
+
+    window.closeProfileModal = function () {
+      window.exitFullscreenIfNeeded && window.exitFullscreenIfNeeded();
+      callSturm("closeProfileModal");
+      window.hideSturmOverlay();
+    };
+
+    window.syncTopBarProfileFromSturm = function (profile) {
+      const p = profile || {};
+      if (p.name) localStorage.setItem("calcium_user_name", p.name);
+      if (p.level) localStorage.setItem("calcium_ca_level", p.level);
+      if (Object.keys(p).length > 0) {
+        localStorage.setItem("calcium_user_profile_v1", JSON.stringify(p));
+      }
+
+      const name = (p.name || localStorage.getItem("calcium_user_name") || "CA Aspirant").trim() || "CA Aspirant";
+      const level = (p.level || localStorage.getItem("calcium_ca_level") || "final").toUpperCase();
+      const mood = p.moodEmoji || "🔥";
+      const avatar = p.avatar || "";
+
+      const topInput = document.getElementById("topBarUserName");
+      if (topInput) topInput.value = name;
+      const nameEl = document.getElementById("topBarProfileName");
+      if (nameEl) nameEl.textContent = name;
+      const lvlEl = document.getElementById("topBarProfileLevel");
+      if (lvlEl) lvlEl.textContent = `CA ${level}`;
+      const moodEl = document.getElementById("topBarProfileMood");
+      if (moodEl) moodEl.textContent = mood;
+
+      const imgEl = document.getElementById("topBarAvatarImg");
+      const initEl = document.getElementById("topBarAvatarInitials");
+      if (imgEl && initEl) {
+        if (avatar) {
+          imgEl.src = avatar;
+          imgEl.style.display = "block";
+          initEl.style.display = "none";
+        } else {
+          imgEl.style.display = "none";
+          initEl.style.display = "block";
+          initEl.textContent = name.split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase() || "👤";
         }
       }
-    </script>
-  </body>
+
+      syncReadIframeTracker();
+      window.syncPlanIframeFromReadRoom();
+    };
+
+    window.refreshAllIframesAfterImport = function (importedStorage) {
+      try {
+        if (importedStorage && typeof importedStorage === "object") {
+          Object.entries(importedStorage).forEach(([k, v]) => {
+            if (v !== null && v !== undefined) {
+              localStorage.setItem(k, typeof v === "string" ? v : JSON.stringify(v));
+            }
+          });
+        }
+        let storedProf = {};
+        try { storedProf = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}"); } catch (e) { }
+        window.syncTopBarProfileFromSturm(storedProf);
+
+        const readIframe = document.getElementById("readModeIframe");
+        if (readIframe && readIframe.contentWindow) readIframe.contentWindow.location.reload();
+        const planIframe = document.getElementById("planModeIframe");
+        if (planIframe && planIframe.contentWindow) planIframe.contentWindow.location.reload();
+      } catch (e) { }
+    };
+
+    window.saveDisplayName = function (val) {
+      const clean = (val || "").trim() || "CA Aspirant";
+      localStorage.setItem("calcium_user_name", clean);
+      const topInput = document.getElementById("topBarUserName");
+      if (topInput && document.activeElement !== topInput) topInput.value = clean;
+      const nameEl = document.getElementById("topBarProfileName");
+      if (nameEl) nameEl.textContent = clean;
+      callSturm("saveDisplayName", clean);
+    };
+
+    window.syncTopBarNameFromSturm = function (val) {
+      const clean = (val || "").trim() || "CA Aspirant";
+      const topInput = document.getElementById("topBarUserName");
+      if (topInput && document.activeElement !== topInput) topInput.value = clean;
+      const nameEl = document.getElementById("topBarProfileName");
+      if (nameEl) nameEl.textContent = clean;
+    };
+
+    window.syncSquadCountBadges = function (count) {
+      ["topSquadCount", "rmHeaderSquadCount", "planHeaderSquadCount"].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = count;
+      });
+    };
+
+    window.updateAndBroadcastMyState = function () {
+      callSturm("updateAndBroadcastMyState");
+    };
+
+    window.pushPlanToSquad = function (plan, level) {
+      callSturm("pushPlanToSquad", plan, level);
+    };
+
+    window.handleSharedFocusFromSturm = function (estimatedTime) {
+      window.hideSturmOverlay();
+      window.switchToReadMode();
+      const readIframe = document.getElementById("readModeIframe");
+      if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.syncAndStartTimer === "function") {
+        readIframe.contentWindow.syncAndStartTimer(estimatedTime);
+      }
+    };
+
+    window.toggleAudio = function () { callSturm("toggleAudio"); };
+    window.toggleVideo = function () { callSturm("toggleVideo"); };
+    window.cycleVideoFilter = function () { callSturm("cycleVideoFilter"); };
+    window.leaveCall = function () { callSturm("leaveCall"); };
+
+    window.syncFloatingCallWidget = function (state) {
+      const floatingWidget = document.getElementById("floatingCallWidget");
+      const floatingMic = document.getElementById("floatingMicBtn");
+      const floatingCam = document.getElementById("floatingCamBtn");
+      const floatingLabel = document.getElementById("floatingRoomLabel");
+      const statusEl = document.getElementById("floatingSpeakingStatus");
+      if (!floatingWidget) return;
+
+      if (state && state.isCallActive) {
+        floatingWidget.style.display = "flex";
+        if (floatingMic) {
+          floatingMic.textContent = state.isAudioOn ? "🎤" : "🔇";
+          floatingMic.className = `floating-btn ${state.isAudioOn ? "active" : "muted"}`;
+        }
+        if (floatingCam) {
+          floatingCam.textContent = state.isVideoOn ? "📹" : "📷";
+          floatingCam.className = `floating-btn ${state.isVideoOn ? "active" : "off"}`;
+        }
+        if (floatingLabel) {
+          floatingLabel.textContent = state.activeRoomCode ? `Room ${state.activeRoomCode}` : "Study Call";
+        }
+        if (statusEl) {
+          statusEl.textContent = state.speakingText || "";
+          statusEl.style.color = "#4ade80";
+        }
+      } else {
+        floatingWidget.style.display = "none";
+      }
+    };
+
+    function initSquadEngine() {
+      let savedProf = {};
+      try {
+        savedProf = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}");
+      } catch (e) { }
+      window.syncTopBarProfileFromSturm(savedProf);
+
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("room")) {
+        window.showSturmOverlay();
+        callSturm("openSquadModal", false);
+      }
+    }
+  </script>
+</body>
+
 </html>

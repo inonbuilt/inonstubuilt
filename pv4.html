@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Study Reactor | Universal CA Planner</title>
     <link rel="stylesheet" href="./pv4.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YYJ8R39EXM');
-    </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-YYJ8R39EXM");
+    </script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body style="background: #050a10; color-scheme: dark;">
 
     <div class="dashboard-container">
@@ -30,22 +38,29 @@
                     <div class="cal-days" id="cal-days"></div>
                 </div>
             </div>
-            
+
             <div class="header-right-group">
                 <div class="header-card center-section">
                     <h1>Study Reactor</h1>
-                    <div style="display:flex; gap:8px; align-items:center; margin-top:6px; flex-wrap:wrap; justify-content:center;">
-                        <input type="text" id="pv4-user-name" class="time-input" placeholder="👤 Your Name..." oninput="updatePv4UserName(this.value)" style="width:140px; height:34px; font-family:'Inter',sans-serif; font-weight:700; color:#f8fafc; border-color:rgba(56,189,248,0.4);" />
-                        <select id="ca-level-select" class="subject-select" style="width: 120px; height: 34px; padding: 0 10px; font-size: 14px; font-weight: 700; background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border: 1px solid rgba(59, 130, 246, 0.4); border-radius: 8px; cursor: pointer; text-align: center;" onchange="changeLevel(this.value)">
+                    <div
+                        style="display:flex; gap:8px; align-items:center; margin-top:6px; flex-wrap:wrap; justify-content:center;">
+                        <input type="text" id="pv4-user-name" class="time-input" placeholder="👤 Your Name..."
+                            oninput="updatePv4UserName(this.value)"
+                            style="width:140px; height:34px; font-family:'Inter',sans-serif; font-weight:700; color:#f8fafc; border-color:rgba(56,189,248,0.4);" />
+                        <select id="ca-level-select" class="subject-select"
+                            style="width: 120px; height: 34px; padding: 0 10px; font-size: 14px; font-weight: 700; background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border: 1px solid rgba(59, 130, 246, 0.4); border-radius: 8px; cursor: pointer; text-align: center;"
+                            onchange="changeLevel(this.value)">
                             <option value="foundation">Foundation</option>
                             <option value="inter">Inter</option>
                             <option value="final">Final</option>
                         </select>
-                        <button class="pv4-action-btn" onclick="openParentSquadModal()">👥 Invite &amp; Co-Study (<span id="pv4-squad-count">1</span>)</button>
-                        <button class="pv4-action-btn pink" onclick="openParentShareModal()">📸 Share Study Wrap</button>
+                        <button class="pv4-action-btn" onclick="openParentSquadModal()">👥 Invite &amp; Co-Study (<span
+                                id="pv4-squad-count">1</span>)</button>
+                        <button class="pv4-action-btn pink" onclick="openParentShareModal()">📸 Share Study
+                            Wrap</button>
                     </div>
                 </div>
-                
+
                 <div class="header-card right-section">
                     <div id="current-date-display" class="date-hero"></div>
                     <div id="current-time-display" class="time-hero"></div>
@@ -68,12 +83,18 @@
                     <div class="pv4-squad-header">
                         <div class="card-title" style="margin:0; display:flex; align-items:center; gap:8px;">
                             <span>👥 Live Study Squad</span>
-                            <span id="pv4-room-badge" style="font-size:11px; padding:2px 8px; border-radius:99px; background:rgba(59,130,246,0.18); color:#7dd3fc;">Solo Mode</span>
+                            <span id="pv4-room-badge"
+                                style="font-size:11px; padding:2px 8px; border-radius:99px; background:rgba(59,130,246,0.18); color:#7dd3fc;">Solo
+                                Mode</span>
                         </div>
                         <div class="pv4-squad-actions">
-                            <button class="pv4-action-btn" onclick="broadcastMyPlanToSquad()" title="Share your current timetable with everyone in the room">📤 Push My Plan to Room</button>
-                            <button class="pv4-action-btn" onclick="openParentSquadModal()">🔗 Copy Invite Link &amp; Chat</button>
-                            <button class="pv4-action-btn pink" onclick="openParentShareModal()">🏆 End-of-Day Social Card</button>
+                            <button class="pv4-action-btn" onclick="broadcastMyPlanToSquad()"
+                                title="Share your current timetable with everyone in the room">📤 Push My Plan to
+                                Room</button>
+                            <button class="pv4-action-btn" onclick="openParentSquadModal()">🔗 Copy Invite Link &amp;
+                                Chat</button>
+                            <button class="pv4-action-btn pink" onclick="openParentShareModal()">🏆 End-of-Day Social
+                                Card</button>
                         </div>
                     </div>
                     <div id="pv4-squad-list" class="pv4-squad-members"></div>
@@ -95,7 +116,7 @@
                             </thead>
                             <tbody id="planner-body"></tbody>
                         </table>
-                        
+
                         <button class="add-row-btn" title="Add Study Block">+ Add New Study Slot</button>
                     </div>
                 </div>
@@ -104,7 +125,9 @@
                     <div class="glass-card stat-card">
                         <div class="summary-label">DAILY EFFICIENCY</div>
                         <div class="summary-value" id="efficiency-val">0%</div>
-                        <div class="purity-meter"><div class="purity-fill" id="purity-bar"></div></div>
+                        <div class="purity-meter">
+                            <div class="purity-fill" id="purity-bar"></div>
+                        </div>
                     </div>
                     <div class="glass-card stat-card">
                         <div class="summary-label">TOTAL ACTUAL STUDY</div>
@@ -115,7 +138,8 @@
                 <div class="glass-card chart-section">
                     <div class="chart-header">
                         <div class="card-title" style="margin:0;">Performance Trends</div>
-                        <select id="chart-timeframe" class="subject-select" style="width: 140px;" onchange="updateChart()">
+                        <select id="chart-timeframe" class="subject-select" style="width: 140px;"
+                            onchange="updateChart()">
                             <option value="days">Last 7 Days</option>
                             <option value="weeks">Last 4 Weeks</option>
                             <option value="months">Last 6 Months</option>
@@ -131,4 +155,5 @@
 
     <script src="./pv4.js"></script>
 </body>
+
 </html>
