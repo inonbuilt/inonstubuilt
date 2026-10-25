@@ -1782,6 +1782,120 @@ footer {
 }
 .gmeet-minimize-btn:hover { background: rgba(255, 255, 255, 0.16); color: white; }
 
+@media (max-width: 1100px) {
+    .gmeet-shell { height: 100dvh; }
+    .gmeet-top-bar { padding: 10px 14px; }
+    .gmeet-top-Controls { width: 100%; justify-content: space-between; }
+    .gmeet-side-drawer { width: 290px; }
+}
+
+@media (max-width: 860px) {
+    .gmeet-top-bar {
+        align-items: flex-start;
+        padding: 10px 12px;
+    }
+    .gmeet-brand-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .gmeet-top-Controls {
+        width: 100%;
+        gap: 8px;
+    }
+    .gmeet-top-input,
+    .gmeet-top-btn {
+        flex: 1 1 140px;
+        min-width: 0;
+    }
+    .gmeet-main-workspace { position: relative; }
+    .gmeet-video-stage { padding: 10px; }
+    .gmeet-floating-filters {
+        left: 12px;
+        right: 12px;
+        bottom: 88px;
+        transform: none;
+        width: auto;
+    }
+    .video-filter-bar { justify-content: center; }
+}
+
+@media (max-width: 620px) {
+    .gmeet-top-bar { padding: 8px 10px; }
+    .gmeet-logo-badge { font-size: 14px; }
+    .call-count-text,
+    .gmeet-status-pill,
+    .gmeet-member-pill { display: none; }
+    .gmeet-top-Controls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+    }
+    .gmeet-top-input,
+    .gmeet-top-btn {
+        flex: 1 1 calc(50% - 8px);
+    }
+    #inviteLinkBox {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #inviteLinkBox .gmeet-top-btn {
+        flex: 1 1 120px;
+    }
+    .gmeet-video-stage { padding: 8px; }
+    .gmeet-grid { gap: 8px; }
+    .gmeet-grid[data-tile-count="1"],
+    .gmeet-grid[data-tile-count="2"],
+    .gmeet-grid[data-tile-count="3"],
+    .gmeet-grid[data-tile-count="4"],
+    .gmeet-grid[data-tile-count="5"],
+    .gmeet-grid[data-tile-count="6"] {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .gmeet-grid .video-tile { border-radius: 12px; }
+    .gmeet-side-drawer {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 40;
+        width: 100%;
+        max-width: 100%;
+    }
+    .gmeet-drawer-tabs { padding: 8px 10px; }
+    .gmeet-drawer-body { padding: 10px; }
+    .gmeet-bottom-dock {
+        height: auto;
+        padding: 10px 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gmeet-dock-center {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .gmeet-bottom-dock .call-btn {
+        min-width: 52px;
+        padding: 9px 10px;
+    }
+    .gmeet-bottom-dock .call-btn .btn-label { display: none; }
+    .gmeet-dock-right {
+        width: 100%;
+        justify-content: center;
+        gap: 6px;
+    }
+    .gmeet-icon-btn {
+        width: 36px;
+        height: 36px;
+    }
+    .gmeet-minimize-btn {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+}
+
 @media (max-width: 900px) {
     .gmeet-grid[data-tile-count="2"],
     .gmeet-grid[data-tile-count="3"],
