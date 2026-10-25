@@ -266,9 +266,7 @@
       </div>
     </div>
     <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
-      <iframe id="readModeIframe" src="./readmode.html" scrolling="yes"
-        allow="fullscreen; autoplay; microphone; camera; display-capture" allowfullscreen
-        style="width: 100%; height: 100%; border: none; background: #070711;"></iframe>
+      <div id="readModeContent" class="overlay-content-shell" aria-live="polite"></div>
     </div>
   </div>
 
@@ -303,9 +301,7 @@
       </div>
     </div>
     <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
-      <iframe id="planModeIframe" src="./pv4.html" scrolling="yes"
-        allow="fullscreen; autoplay; microphone; camera; display-capture" allowfullscreen
-        style="width: 100%; height: 100%; border: none; background: #070711;"></iframe>
+      <div id="planModeContent" class="overlay-content-shell" aria-live="polite"></div>
     </div>
   </div>
 
@@ -335,9 +331,7 @@
       </div>
     </div>
     <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
-      <iframe id="friendsModeIframe" src="./frid.html" scrolling="yes"
-        allow="fullscreen; clipboard-read; clipboard-write"
-        style="width: 100%; height: 100%; border: none; background: #070711;"></iframe>
+      <div id="friendsModeContent" class="overlay-content-shell" aria-live="polite"></div>
     </div>
   </div>
 
@@ -469,11 +463,11 @@
       return uid;
     }
 
-    window.openFriendsModal = function () {
+    window.openFriendsModal = async function () {
       ensureGlobalUniqueUserId();
-      const frIframe = document.getElementById("friendsModeIframe");
-      if (frIframe && frIframe.contentWindow && typeof frIframe.contentWindow.refreshFriendsHubFromParent === "function") {
-        frIframe.contentWindow.refreshFriendsHubFromParent();
+      await loadEmbeddedPage("friendsModeContent", "./frid.html");
+      if (typeof window.refreshFriendsHubFromParent === "function") {
+        window.refreshFriendsHubFromParent();
       }
       if (friendsOverlay) {
         friendsOverlay.classList.add("rm-active");
@@ -502,21 +496,60 @@
       });
     };
 
+    async function loadEmbeddedPage(containerId, pageUrl) {
+      const target = document.getElementById(containerId);
+      if (!target) return;
+
+      if (window.location.protocol === "file:") {
+        target.innerHTML = `<object data="${pageUrl}" type="text/html" style="width:100%; height:100%; border:none; display:block; background:#070711;"></object>`;
+        return;
+      }
+
+      try {
+        const response = await fetch(pageUrl);
+        const text = await response.text();
+        const doc = new DOMParser().parseFromString(text, "text/html");
+        const styles = Array.from(doc.head.querySelectorAll("link[rel='stylesheet'], style"));
+        styles.forEach((node) => {
+          if (node.tagName === "LINK") {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = node.href || node.getAttribute("href");
+            if (!document.head.querySelector(`link[href="${link.href}"]`)) {
+              document.head.appendChild(link);
+            }
+          }
+        });
+        const scriptTags = Array.from(doc.body.querySelectorAll("script"));
+        const sanitizedBody = doc.body.innerHTML.replace(/<script[\s\S]*?<\/script>/gi, "");
+        target.innerHTML = sanitizedBody;
+        scriptTags.forEach((script) => {
+          const clone = document.createElement("script");
+          clone.async = false;
+          if (script.src) clone.src = script.src;
+          if (script.textContent) clone.textContent = script.textContent;
+          target.appendChild(clone);
+        });
+      } catch (error) {
+        console.error("Failed to load page:", pageUrl, error);
+        target.innerHTML = `<object data="${pageUrl}" type="text/html" style="width:100%; height:100%; border:none; display:block; background:#070711;"></object>`;
+      }
+    }
+
     function syncReadIframeTracker() {
-      const readIframe = document.getElementById("readModeIframe");
-      if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.renderVarianceTrackerInReadMode === "function") {
-        readIframe.contentWindow.renderVarianceTrackerInReadMode();
+      if (typeof window.renderVarianceTrackerInReadMode === "function") {
+        window.renderVarianceTrackerInReadMode();
       }
     }
 
     window.syncPlanIframeFromReadRoom = function () {
-      const planIframe = document.getElementById("planModeIframe");
-      if (planIframe && planIframe.contentWindow && typeof planIframe.contentWindow.refreshPlannerFromStorage === "function") {
-        planIframe.contentWindow.refreshPlannerFromStorage();
+      if (typeof window.refreshPlannerFromStorage === "function") {
+        window.refreshPlannerFromStorage();
       }
     };
 
-    function openReadMode() {
+    async function openReadMode() {
+      await loadEmbeddedPage("readModeContent", "./readmode.html");
       syncReadIframeTracker();
       readOverlay.classList.add("rm-active");
       setTimeout(() => readOverlay.classList.add("rm-visible"), 10);
@@ -534,7 +567,8 @@
       }, 350);
     }
 
-    function openPlanningMode() {
+    async function openPlanningMode() {
+      await loadEmbeddedPage("planModeContent", "./pv4.html");
       window.syncPlanIframeFromReadRoom();
       planOverlay.classList.add("rm-active");
       setTimeout(() => planOverlay.classList.add("rm-visible"), 10);
@@ -570,9 +604,8 @@
     window.openReadRoomTracker = function () {
       window.switchToReadMode();
       setTimeout(() => {
-        const readIframe = document.getElementById("readModeIframe");
-        if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.highlightVarianceTracker === "function") {
-          readIframe.contentWindow.highlightVarianceTracker();
+        if (typeof window.highlightVarianceTracker === "function") {
+          window.highlightVarianceTracker();
         }
       }, 420);
     };
@@ -775,7 +808,7 @@
       window.syncPlanIframeFromReadRoom();
     };
 
-    window.refreshAllIframesAfterImport = function (importedStorage) {
+    window.refreshAllIframesAfterImport = async function (importedStorage) {
       try {
         if (importedStorage && typeof importedStorage === "object") {
           Object.entries(importedStorage).forEach(([k, v]) => {
@@ -788,10 +821,10 @@
         try { storedProf = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}"); } catch (e) { }
         window.syncTopBarProfileFromSturm(storedProf);
 
-        const readIframe = document.getElementById("readModeIframe");
-        if (readIframe && readIframe.contentWindow) readIframe.contentWindow.location.reload();
-        const planIframe = document.getElementById("planModeIframe");
-        if (planIframe && planIframe.contentWindow) planIframe.contentWindow.location.reload();
+        await loadEmbeddedPage("readModeContent", "./readmode.html");
+        await loadEmbeddedPage("planModeContent", "./pv4.html");
+        syncReadIframeTracker();
+        window.syncPlanIframeFromReadRoom();
       } catch (e) { }
     };
 
@@ -831,9 +864,8 @@
     window.handleSharedFocusFromSturm = function (estimatedTime) {
       window.hideSturmOverlay();
       window.switchToReadMode();
-      const readIframe = document.getElementById("readModeIframe");
-      if (readIframe && readIframe.contentWindow && typeof readIframe.contentWindow.syncAndStartTimer === "function") {
-        readIframe.contentWindow.syncAndStartTimer(estimatedTime);
+      if (typeof window.syncAndStartTimer === "function") {
+        window.syncAndStartTimer(estimatedTime);
       }
     };
 
