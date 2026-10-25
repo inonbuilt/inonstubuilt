@@ -264,7 +264,12 @@ footer {
     height: 100dvh;
     z-index: 9999;
     background: #070711;
-    display: none;
+    /* Keep iframe documents laid out from page load. Mobile browsers can
+       leave an iframe non-scrollable when its first layout happens after a
+       `display: none` → `display: flex` transition. */
+    display: flex;
+    visibility: hidden;
+    pointer-events: none;
     flex-direction: column;
     opacity: 0;
     transition: opacity 0.35s ease;
@@ -305,7 +310,10 @@ footer {
     transition: all 0.3s ease;
     box-shadow: 0 4px 20px rgba(16, 185, 129, 0.35);
 }
-#readModeOverlay.rm-active, #planningModeOverlay.rm-active, #friendsModeOverlay.rm-active { display: flex; }
+#readModeOverlay.rm-active, #planningModeOverlay.rm-active, #friendsModeOverlay.rm-active {
+    visibility: visible;
+    pointer-events: auto;
+}
 #readModeOverlay.rm-visible, #planningModeOverlay.rm-visible, #friendsModeOverlay.rm-visible { opacity: 1; }
 
 /* ── Header ── */
