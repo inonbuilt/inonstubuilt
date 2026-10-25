@@ -5,16 +5,31 @@
 }
 
 /* Dark Premium Background */
-html { overflow-y: auto; -webkit-text-size-adjust: 100%; }
+html {
+    height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+    overscroll-behavior-y: contain;
+}
 
 body {
     margin: 0;
     padding: 0;
+    min-height: 100%;
     color: #e2e8f0;
     background: radial-gradient(circle at 20% 30%, #1e3a8a, #0f172a 60%);
-    overflow-x: clip;
+    overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+    overscroll-behavior-y: contain;
+}
+
+input, textarea, select, button {
+    touch-action: pan-y;
 }
 
 /* Page Layout */
