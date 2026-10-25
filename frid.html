@@ -1668,11 +1668,8 @@
           </div>
 
           <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <button class="f-btn primary" onclick="startAudioCallWithFriend('${friend.uid}')" title="Start Audio Call">
-              🎙️ Call
-            </button>
-            <button class="f-btn emerald" onclick="startCoStudyRoomWithFriend('${friend.uid}')" title="Start Co-Study Video Room">
-              📹 Video Meet
+            <button class="f-btn primary" onclick="switchInspectorTab('chat')" title="Open Text Chat">
+              💬 Message
             </button>
             <button class="f-btn danger" onclick="removeFriend('${friend.uid}')" title="Remove Friend">
               🗑️
@@ -1744,7 +1741,7 @@
       }
     };
 
-    window.startAudioCallWithFriend = function(uid) {
+    window.startCoStudyRoomWithFriend = function(uid) {
       const roomCode = "CA-" + uid.replace(/[^0-9]/g, "").slice(-4).padStart(4, "8");
       if (window.parent && window.parent !== window && typeof window.parent.openSquadModal === "function") {
         window.parent.closeFriendsModal();
