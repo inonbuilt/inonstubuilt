@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Calcium Study Friends | Auto-Connect Hub</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;700&display=swap"
+    rel="stylesheet" />
   <!-- PeerJS WebRTC Library with STUN server configuration for GitHub Pages -->
   <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
   <style>
@@ -29,13 +32,20 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
+    html,
+    body {
+      height: 100%;
+      min-height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto !important;
+      -webkit-overflow-scrolling: touch;
+      touch-action: pan-y;
+    }
+
     body {
       background: radial-gradient(circle at 15% 20%, #1e3a8a 0%, #070b16 55%, #04070e 100%);
       color: var(--text-main);
-      min-height: 100vh;
-      overflow-x: clip;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
+      min-height: 100%;
     }
 
     /* Top Header */
@@ -119,8 +129,17 @@
     }
 
     @keyframes pulseNet {
-      0%, 100% { transform: scale(1); opacity: 0.85; }
-      50% { transform: scale(1.3); opacity: 1; }
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 0.85;
+      }
+
+      50% {
+        transform: scale(1.3);
+        opacity: 1;
+      }
     }
 
     .btn-back-dashboard {
@@ -265,11 +284,29 @@
       transform: translateY(-1px);
     }
 
-    .f-btn.primary { background: linear-gradient(135deg, #2563eb, #06b6d4); }
-    .f-btn.emerald { background: linear-gradient(135deg, #059669, #10b981); }
-    .f-btn.purple  { background: linear-gradient(135deg, #7c3aed, #6366f1); }
-    .f-btn.ghost   { background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.18); color: #cbd5e1; }
-    .f-btn.danger  { background: rgba(244, 63, 94, 0.18); border: 1px solid rgba(244, 63, 94, 0.45); color: #fda4af; }
+    .f-btn.primary {
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+    }
+
+    .f-btn.emerald {
+      background: linear-gradient(135deg, #059669, #10b981);
+    }
+
+    .f-btn.purple {
+      background: linear-gradient(135deg, #7c3aed, #6366f1);
+    }
+
+    .f-btn.ghost {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #cbd5e1;
+    }
+
+    .f-btn.danger {
+      background: rgba(244, 63, 94, 0.18);
+      border: 1px solid rgba(244, 63, 94, 0.45);
+      color: #fda4af;
+    }
 
     /* Find Friend Box */
     .search-input-group {
@@ -433,8 +470,17 @@
     }
 
     @keyframes pulseUnread {
-      0%, 100% { transform: scale(1); opacity: 0.9; }
-      50% { transform: scale(1.35); opacity: 1; }
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 0.9;
+      }
+
+      50% {
+        transform: scale(1.35);
+        opacity: 1;
+      }
     }
 
     /* Right Inspector Panel */
@@ -589,26 +635,27 @@
 
     /* Timetable Table */
     /* Timetable scrolling inside Friends iframe */
-.friend-tt-scroll-wrap {
-  width: 100%;
-  max-height: min(60vh, 520px);
-  overflow: auto;
-  overscroll-behavior: contain;
-  -webkit-overflow-scrolling: touch;
-}
+    .friend-tt-scroll-wrap {
+      width: 100%;
+      max-height: min(60vh, 520px);
+      overflow: auto;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+      touch-action: pan-y;
+    }
 
-.friend-tt-table {
-  width: 100%;
-  min-width: 700px;
-  border-collapse: collapse;
-}
+    .friend-tt-table {
+      width: 100%;
+      min-width: 700px;
+      border-collapse: collapse;
+    }
 
-.friend-tt-table thead th {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background: #0f172a;
-}
+    .friend-tt-table thead th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: #0f172a;
+    }
 
     .friend-tt-table th {
       text-align: left;
@@ -755,76 +802,149 @@
     }
 
     @media (max-width: 980px) {
-      .top-discovery-grid, .friends-workspace {
+
+      .top-discovery-grid,
+      .friends-workspace {
         grid-template-columns: 1fr;
       }
     }
+
     /* ===== MOBILE UX (phones) ===== */
 
     @media (max-width: 700px) {
 
-      input, select, textarea { font-size: 16px !important; }
+      input,
+      select,
+      textarea {
+        font-size: 16px !important;
+      }
 
-      .frid-navbar { padding: 10px 12px; padding-top: calc(10px + env(safe-area-inset-top, 0px)); gap: 8px; }
+      .frid-navbar {
+        padding: 10px 12px;
+        padding-top: calc(10px + env(safe-area-inset-top, 0px));
+        gap: 8px;
+      }
 
-      .frid-brand-sub { display: none; }
+      .frid-brand-sub {
+        display: none;
+      }
 
-      .frid-nav-right { width: 100%; justify-content: space-between; }
+      .frid-nav-right {
+        width: 100%;
+        justify-content: space-between;
+      }
 
-      .btn-back-dashboard { padding: 10px 14px; }
+      .btn-back-dashboard {
+        padding: 10px 14px;
+      }
 
-      .frid-container { padding: 12px 12px calc(30px + env(safe-area-inset-bottom, 0px)); gap: 14px; }
+      .frid-container {
+        padding: 12px 12px calc(30px + env(safe-area-inset-bottom, 0px));
+        gap: 14px;
+      }
 
-      .glass-box { padding: 14px; border-radius: 14px; }
+      .glass-box {
+        padding: 14px;
+        border-radius: 14px;
+      }
 
-      .top-discovery-grid, .friends-workspace { gap: 14px; }
-
-
-
-      .uid-actions-row { flex-wrap: wrap; }
-
-      .f-btn { min-height: 44px; }
-
-      .search-input-group { flex-wrap: wrap; }
-
-      .uid-search-input { min-height: 44px; }
-
-
-
-      .friends-list { max-height: 340px; -webkit-overflow-scrolling: touch; }
-
-      .friend-item-card { padding: 12px; min-height: 56px; }
-
-
-
-      .inspector-panel { min-height: 0; }
-
-      .friend-hero-banner { flex-direction: column; align-items: flex-start; gap: 12px; }
-
-      .inspector-tabs { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
-
-      .insp-tab-btn { flex-shrink: 0; white-space: nowrap; padding: 10px 14px; }
-
-      .profile-stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .top-discovery-grid,
+      .friends-workspace {
+        gap: 14px;
+      }
 
 
 
-      .friend-tt-scroll-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .uid-actions-row {
+        flex-wrap: wrap;
+      }
 
-      .chat-box-container { height: 60vh; height: 60dvh; min-height: 320px; }
+      .f-btn {
+        min-height: 44px;
+      }
 
-      .chat-input-row { padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px)); }
+      .search-input-group {
+        flex-wrap: wrap;
+      }
 
-      .chat-input { min-height: 44px; }
+      .uid-search-input {
+        min-height: 44px;
+      }
 
 
 
-      .frid-toast { left: 12px; right: 12px; max-width: none; }
+      .friends-list {
+        max-height: 340px;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .friend-item-card {
+        padding: 12px;
+        min-height: 56px;
+      }
+
+
+
+      .inspector-panel {
+        min-height: 0;
+      }
+
+      .friend-hero-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .inspector-tabs {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .insp-tab-btn {
+        flex-shrink: 0;
+        white-space: nowrap;
+        padding: 10px 14px;
+      }
+
+      .profile-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+
+
+      .friend-tt-scroll-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .chat-box-container {
+        height: 60vh;
+        height: 60dvh;
+        min-height: 320px;
+      }
+
+      .chat-input-row {
+        padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+      }
+
+      .chat-input {
+        min-height: 44px;
+      }
+
+
+
+      .frid-toast {
+        left: 12px;
+        right: 12px;
+        max-width: none;
+      }
 
     }
-
   </style>
 </head>
+
 <body>
 
   <!-- TOP NAVIGATION -->
@@ -863,7 +983,8 @@
               <div class="avatar-circle" id="myAvatarBox">CA</div>
               <div>
                 <div style="font-size:15px; font-weight:800; color:#f8fafc;" id="myDisplayNameLabel">CA Aspirant</div>
-                <div style="font-size:11px; color:#7dd3fc; font-weight:700;" id="myLevelAndMoodLabel">CA FINAL • 🔥 Locked In</div>
+                <div style="font-size:11px; color:#7dd3fc; font-weight:700;" id="myLevelAndMoodLabel">CA FINAL • 🔥
+                  Locked In</div>
               </div>
             </div>
             <div class="uid-badge-display" id="myUniqueIdDisplay">CN-000000000</div>
@@ -871,13 +992,16 @@
         </div>
 
         <p style="font-size:12px; color:#cbd5e1; line-height:1.45;">
-          Share your Unique ID with study partners. When both users are online with the Friends hub open, the app can connect automatically without an acceptance step. If a friend is offline, ask them to add your ID too when they return; this browser-only version cannot deliver messages to an offline user.
+          Share your Unique ID with study partners. When both users are online with the Friends hub open, the app can
+          connect automatically without an acceptance step. If a friend is offline, ask them to add your ID too when
+          they return; this browser-only version cannot deliver messages to an offline user.
         </p>
 
         <div class="uid-actions-row">
           <button class="f-btn primary" onclick="copyMyUniqueId()">📋 Copy My Unique ID</button>
           <button class="f-btn emerald" onclick="shareMyUniqueIdWhatsApp()">💬 Share ID on WhatsApp</button>
-          <button class="f-btn ghost" onclick="regenerateUniqueId()" title="Generate a brand new Unique ID">🎲 New ID</button>
+          <button class="f-btn ghost" onclick="regenerateUniqueId()" title="Generate a brand new Unique ID">🎲 New
+            ID</button>
         </div>
       </div>
 
@@ -886,18 +1010,14 @@
         <div class="box-tag">⚡ INSTANT CONNECT BY UNIQUE ID</div>
         <h3 style="font-size:16px; font-weight:800; color:#f8fafc; margin-bottom:4px;">Add a Study Partner</h3>
         <p style="font-size:12px; color:#94a3b8; margin-bottom:10px;">
-          Enter your friend's Unique ID (e.g. <code style="color:#7dd3fc;">CN-482910573</code>). Live connection works when your friend is online with the Friends hub open.
+          Enter your friend's Unique ID (e.g. <code style="color:#7dd3fc;">CN-482910573</code>). Live connection works
+          when your friend is online with the Friends hub open.
         </p>
 
         <div class="search-input-group">
-          <input
-            type="text"
-            id="findFriendIdInput"
-            class="uid-search-input"
-            placeholder="ENTER UNIQUE ID (e.g. CN-482910573)"
-            maxlength="15"
-            onkeydown="if(event.key==='Enter') searchAndSendStudyRequest()"
-          />
+          <input type="text" id="findFriendIdInput" class="uid-search-input"
+            placeholder="ENTER UNIQUE ID (e.g. CN-482910573)" maxlength="15"
+            onkeydown="if(event.key==='Enter') searchAndSendStudyRequest()" />
           <button class="f-btn emerald" onclick="searchAndSendStudyRequest()">
             🚀 Connect Instantly
           </button>
@@ -1073,7 +1193,7 @@
       });
     }
 
-    window.regenerateUniqueId = function() {
+    window.regenerateUniqueId = function () {
       const oldUid = ensureUniqueUserId();
       if (!window.confirm("Generate a new ID? Your saved friends and chats will be kept locally, but friends may need to add your new ID to reconnect.")) return;
 
@@ -1713,7 +1833,7 @@
       }
     }
 
-    window.syncAllOnlineFriends = function() {
+    window.syncAllOnlineFriends = function () {
       if (!myUniqueId) ensureUniqueUserId();
       const friendsMap = getSavedFriendsMap();
       const mySnap = buildMyFullSnapshot();
@@ -1740,12 +1860,12 @@
       notifyParentBadgeCount();
     };
 
-    window.fillDemoId = function(uid) {
+    window.fillDemoId = function (uid) {
       const inp = document.getElementById("findFriendIdInput");
       if (inp) inp.value = uid;
     };
 
-    window.searchAndSendStudyRequest = function() {
+    window.searchAndSendStudyRequest = function () {
       const inp = document.getElementById("findFriendIdInput");
       const enteredValue = (inp ? inp.value : "").trim();
       if (!enteredValue) {
@@ -1818,7 +1938,7 @@
       showToast(`✅ Added ${targetUid}. Live sync needs your friend to be online with the Friends hub open.`);
     };
 
-    window.removeFriend = function(uid) {
+    window.removeFriend = function (uid) {
       const cleanUid = (uid || "").trim().toUpperCase();
       const friendsMap = getSavedFriendsMap();
       const name = friendsMap[cleanUid] ? friendsMap[cleanUid].name : cleanUid;
@@ -1831,7 +1951,7 @@
       if (activeFriendConns[cleanUid]) {
         const oldConn = activeFriendConns[cleanUid];
         delete activeFriendConns[cleanUid];
-        setTimeout(() => { try { oldConn.close(); } catch (e) {} }, 1500);
+        setTimeout(() => { try { oldConn.close(); } catch (e) { } }, 1500);
       }
 
       delete friendsMap[cleanUid];
@@ -1916,14 +2036,14 @@
       }).join("");
     }
 
-    window.selectFriend = function(uid) {
+    window.selectFriend = function (uid) {
       selectedFriendUid = uid;
       unreadMessagesMap[uid] = false;
       renderSidebarLists();
       renderSelectedFriendInspector();
     };
 
-    window.switchInspectorTab = function(tab) {
+    window.switchInspectorTab = function (tab) {
       currentInspectorTab = tab;
       if (tab === 'chat' && selectedFriendUid) {
         unreadMessagesMap[selectedFriendUid] = false;
@@ -2026,9 +2146,9 @@
                         <td style="font-family:'Roboto Mono',monospace; font-weight:700; color:#4ade80;">${escapeHtml(slot.actual)}h</td>
                         <td>
                           ${slot.timerState
-                            ? `<span class="pill-tag green">▶ Live Studying Now</span>`
-                            : (hhmmToDec(slot.actual) > 0 ? `<span class="pill-tag">✅ Logged</span>` : `<span style="font-size:11px; color:#64748b;">Scheduled</span>`)
-                          }
+                ? `<span class="pill-tag green">▶ Live Studying Now</span>`
+                : (hhmmToDec(slot.actual) > 0 ? `<span class="pill-tag">✅ Logged</span>` : `<span style="font-size:11px; color:#64748b;">Scheduled</span>`)
+              }
                         </td>
                       </tr>
                     `).join("")}
@@ -2077,14 +2197,14 @@
           <div class="chat-box-container">
             <div class="chat-messages-area" id="chatMessagesArea">
               ${chatList.length === 0
-                ? `<div style="margin:auto; text-align:center; color:#64748b; font-size:12px; font-style:italic;">No messages yet. Send a greeting or ask a study question! 👋</div>`
-                : chatList.map(m => `
+            ? `<div style="margin:auto; text-align:center; color:#64748b; font-size:12px; font-style:italic;">No messages yet. Send a greeting or ask a study question! 👋</div>`
+            : chatList.map(m => `
                     <div class="chat-bubble ${m.sender === 'me' ? 'outgoing' : 'incoming'}">
                       <div style="font-size:10px; opacity:0.75; margin-bottom:2px;">${m.sender === 'me' ? 'You' : escapeHtml(friend.name)} • ${escapeHtml(m.time)}</div>
                       <div>${escapeHtml(m.text)}</div>
                     </div>
                   `).join("")
-              }
+          }
             </div>
             <div class="chat-input-row">
               <input type="text" id="friendChatInput" class="chat-input" placeholder="Type a message to ${escapeHtml(friend.name)}..." onkeydown="if(event.key==='Enter') sendFriendChatMessage('${friend.uid}')" />
@@ -2109,9 +2229,9 @@
                 <span class="pill-tag">${escapeHtml(friend.moodEmoji || '🔥')} ${escapeHtml(friend.moodText || 'Locked In')}</span>
                 <span class="pill-tag purple">CA ${(friend.level || 'final').toUpperCase()}</span>
                 ${friend.isStudying
-                  ? `<span class="pill-tag green">▶ Studying ${escapeHtml(friend.activeSubject || 'Now')}</span>`
-                  : `<span class="pill-tag">⏱️ ${escapeHtml(friend.totalActualHours || '00:00')}h Today</span>`
-                }
+          ? `<span class="pill-tag green">▶ Studying ${escapeHtml(friend.activeSubject || 'Now')}</span>`
+          : `<span class="pill-tag">⏱️ ${escapeHtml(friend.totalActualHours || '00:00')}h Today</span>`
+        }
               </div>
             </div>
           </div>
@@ -2152,7 +2272,7 @@
       }
     };
 
-    window.sendFriendChatMessage = function(friendUid) {
+    window.sendFriendChatMessage = function (friendUid) {
       const cleanUid = normalizeUniqueUserId(friendUid);
       const inp = document.getElementById("friendChatInput");
       if (!inp || !cleanUid || cleanUid === myUniqueId) return;
@@ -2192,7 +2312,7 @@
       }
     };
 
-    window.startCoStudyRoomWithFriend = function(uid) {
+    window.startCoStudyRoomWithFriend = function (uid) {
       const cleanUid = normalizeUniqueUserId(uid);
       if (!cleanUid || cleanUid === myUniqueId) return;
       const roomCode = "CA-" + cleanUid.replace(/[^0-9]/g, "").slice(-4).padStart(4, "8");
@@ -2204,7 +2324,7 @@
       window.location.href = `./index.html?room=${roomCode}`;
     };
 
-    window.copyFriendTimetableToMyPlanner = function(uid) {
+    window.copyFriendTimetableToMyPlanner = function (uid) {
       const friendsMap = getSavedFriendsMap();
       const friend = friendsMap[uid];
       if (!friend || !Array.isArray(friend.timetable) || friend.timetable.length === 0) return;
@@ -2229,10 +2349,10 @@
           window.parent.syncPlanIframeFromReadRoom();
         }
         showToast(`✅ Copied ${friend.name}'s timetable into your Planning Mode for today!`);
-      } catch (e) {}
+      } catch (e) { }
     };
 
-    window.importFriendTasksToMyReadMode = function(uid) {
+    window.importFriendTasksToMyReadMode = function (uid) {
       const friendsMap = getSavedFriendsMap();
       const friend = friendsMap[uid];
       if (!friend || !Array.isArray(friend.tasks) || friend.tasks.length === 0) return;
@@ -2253,10 +2373,10 @@
         });
         localStorage.setItem("cn_tasks", JSON.stringify(myTasks));
         showToast(`✅ Imported ${added} revision task${added === 1 ? "" : "s"} into your Read Mode!`);
-      } catch (e) {}
+      } catch (e) { }
     };
 
-    window.copyMyUniqueId = async function() {
+    window.copyMyUniqueId = async function () {
       try {
         if (navigator.clipboard && navigator.clipboard.writeText) {
           await navigator.clipboard.writeText(myUniqueId);
@@ -2279,7 +2399,7 @@
       }
     };
 
-    window.shareMyUniqueIdWhatsApp = function() {
+    window.shareMyUniqueIdWhatsApp = function () {
       const snap = buildMyFullSnapshot();
       const text = `Hey! Let's study together on Calcium Notes Study Reactor 📚🔥\nAdd me on the Friends tab using my Unique User ID: *${myUniqueId}* (${snap.name} - CA ${(snap.level || 'final').toUpperCase()}) so we can chat, call, and share our live timetables!`;
       window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
@@ -2292,7 +2412,7 @@
           // We removed requests, so req count is always 0
           window.parent.syncFriendsCountBadge(friendsCount, 0);
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     let toastTimer = null;
@@ -2311,7 +2431,7 @@
       return d.innerHTML;
     }
 
-    window.closeOrNavigateHome = function() {
+    window.closeOrNavigateHome = function () {
       if (window.parent && window.parent !== window && typeof window.parent.closeFriendsModal === "function") {
         window.parent.closeFriendsModal();
         return;
@@ -2319,7 +2439,7 @@
       window.location.assign("index.html");
     };
 
-    window.refreshFriendsHubFromParent = function() {
+    window.refreshFriendsHubFromParent = function () {
       ensureUniqueUserId();
       renderMyHeaderInfo();
       renderSidebarLists();
@@ -2357,4 +2477,5 @@
     });
   </script>
 </body>
+
 </html>

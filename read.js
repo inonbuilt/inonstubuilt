@@ -645,6 +645,14 @@ function escapeHtml(str) {
   return d.innerHTML;
 }
 
+const musicPanel = document.querySelector(".panel-music");
+if (musicPanel) {
+  musicPanel.addEventListener("touchstart", () => musicPanel.classList.add("active"), {
+    once: true,
+    passive: true
+  });
+}
+
 /* ── INITIALIZATION ── */
 window.addEventListener("DOMContentLoaded", () => {
   updateClock();

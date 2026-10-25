@@ -9,17 +9,21 @@
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
+html, body {
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  -webkit-text-size-adjust: 100%;
+}
 body {
   background: #070711;
   color: #e2e8f0;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 20px;
-  overflow-x: clip;          /* clip doesn't break iOS vertical scroll */
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-y;
 }
-html { overflow-y: auto; -webkit-text-size-adjust: 100%; }
 
 /* ── Container Grid ── */
 .read-container {
@@ -641,15 +645,10 @@ html { overflow-y: auto; -webkit-text-size-adjust: 100%; }
 }
 .vr-table { min-width: 620px; }
 
-/* OPTIONAL: stops Spotify iframe from swallowing swipes.
-   Needs this JS at the bottom of read.js:
-   const mp = document.querySelector('.panel-music');
-   if (mp) mp.addEventListener('touchstart', () => mp.classList.add('active'), { once: true });
-@media (pointer: coarse) {
+@media (pointer: coarse), (any-pointer: coarse), (max-width: 1180px) {
   .panel-music iframe { pointer-events: none; }
   .panel-music.active iframe { pointer-events: auto; }
 }
-*/
 
 
 /* ===== MOBILE UX (phones) ===== */
