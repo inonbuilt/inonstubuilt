@@ -28,6 +28,19 @@ body {
     overscroll-behavior-y: contain;
 }
 
+/* The mode panels are fixed, but mobile browsers can still scroll the page
+   underneath an iframe when the iframe is waiting for its first layout. */
+html.mode-overlay-open {
+    overflow: hidden;
+}
+body.mode-overlay-open {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
 input, textarea, select, button {
     touch-action: pan-y;
 }
