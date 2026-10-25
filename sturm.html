@@ -442,13 +442,40 @@
       fr: "FR", afm: "AFM", audit: "AUDIT", dt: "DT", idt: "IDT", ibs: "IBS"
     };
 
+const PEER_CONFIG = {
+      debug: 1,
+      config: {
+        iceServers: [
+          { urls: "stun:stun.l.google.com:19302" },
+          { urls: "stun:stun1.l.google.com:19302" },
+          { urls: "stun:stun2.l.google.com:19302" },
+          { urls: "stun:global.stun.twilio.com:3478" }
+        ],
+        iceCandidatePoolSize: 10
+      }
+    };
+
     let peerInstance = null;
+    let prewarmedGuestPeer = null;
     let isRoomHost = false;
     let activeRoomCode = "";
     let hostConnections = [];
     let guestHostConn = null;
     let squadMembersMap = {};
     let myClientId = "me-" + Math.random().toString(36).substring(2, 8);
+
+    function prewarmGuestPeerInstance() {
+      if (typeof Peer === "undefined" || prewarmedGuestPeer) return;
+      try {
+        const p = new Peer(PEER_CONFIG);
+        p.on("open", () => {
+          prewarmedGuestPeer = p;
+        });
+        p.on("error", () => {
+          prewarmedGuestPeer = null;
+        });
+      } catch (e) { }
+    }
 
     function getTodayKey() {
       const d = new Date();
@@ -553,10 +580,13 @@
       if (roomParam) {
         document.getElementById("joinRoomInput").value = roomParam;
         openSquadModal(false); // Do not force fullscreen without direct user gesture
-        setTimeout(() => joinPeerRoom(roomParam), 400);
-      } else if (window.parent === window) {
-        document.body.style.background = "radial-gradient(circle at 20% 30%, #1e3a8a, #0f172a 60%)";
-        openSquadModal(false);
+        joinPeerRoom(roomParam.toUpperCase());
+      } else {
+        prewarmGuestPeerInstance();
+        if (window.parent === window) {
+          document.body.style.background = "radial-gradient(circle at 20% 30%, #1e3a8a, #0f172a 60%)";
+          openSquadModal(false);
+        }
       }
 
       // Keep iframe squad rosters synchronized ONLY when data actually changes
@@ -685,8 +715,12 @@
 
       if (typeof Peer !== "undefined") {
         try {
+          if (prewarmedGuestPeer) {
+            try { prewarmedGuestPeer.destroy(); } catch (e) { }
+            prewarmedGuestPeer = null;
+          }
           if (peerInstance) peerInstance.destroy();
-          peerInstance = new Peer("calcium-notes-room-" + code);
+          peerInstance = new Peer("calcium-notes-room-" + code, PEER_CONFIG);
           peerInstance.on("open", (assignedId) => {
             // Delete old temporary solo ID before registering official room ID
             if (myClientId !== assignedId) {
@@ -743,6 +777,15 @@
     };
 
     function joinPeerRoom(code) {
+      if (!code) return;
+      if (activeRoomCode === code && guestHostConn && guestHostConn.open) {
+        document.getElementById("squadStatusText").textContent = `🟢 Connected to Live Room ${code}`;
+        if (isCallActive) {
+          broadcastMediaState();
+          connectCallsWithRoomMembers();
+        }
+        return;
+      }
       activeRoomCode = code;
       isRoomHost = false;
       let locObj = window.location;
@@ -759,9 +802,7 @@
 
       if (typeof Peer !== "undefined") {
         try {
-          if (peerInstance) peerInstance.destroy();
-          peerInstance = new Peer();
-          peerInstance.on("open", (assignedId) => {
+          const connectToHost = (assignedId) => {
             // Delete old temporary solo ID before registering official guest ID
             if (myClientId !== assignedId) {
               delete squadMembersMap[myClientId];
@@ -769,15 +810,48 @@
             myClientId = assignedId;
             squadMembersMap[myClientId] = buildMyMemberState();
 
-            guestHostConn = peerInstance.connect("calcium-notes-room-" + code);
+            if (guestHostConn) {
+              try { guestHostConn.close(); } catch (e) { }
+            }
+            guestHostConn = peerInstance.connect("calcium-notes-room-" + code, { reliable: true });
             guestHostConn.on("open", () => {
               document.getElementById("squadStatusText").textContent = `🟢 Connected to Live Room ${code}`;
               guestHostConn.send({ type: "MEMBER_UPDATE", member: buildMyMemberState() });
-              if (isCallActive) connectCallsWithRoomMembers();
+              if (isCallActive) {
+                broadcastMediaState();
+                connectCallsWithRoomMembers();
+              }
             });
             guestHostConn.on("data", (payload) => handleIncomingPeerData(payload, guestHostConn));
+            guestHostConn.on("error", (err) => {
+              console.warn("Host data connection error:", err);
+              document.getElementById("squadStatusText").textContent = `⚠️ Could not reach Room ${code} — check room code.`;
+            });
+          };
+
+          if (peerInstance && !peerInstance.destroyed && peerInstance.open && !peerInstance.id.startsWith("calcium-notes-room-")) {
+            connectToHost(peerInstance.id);
+          } else if (prewarmedGuestPeer && !prewarmedGuestPeer.destroyed && prewarmedGuestPeer.open) {
+            if (peerInstance && peerInstance !== prewarmedGuestPeer) {
+              try { peerInstance.destroy(); } catch (e) { }
+            }
+            peerInstance = prewarmedGuestPeer;
+            prewarmedGuestPeer = null;
+            peerInstance.on("call", handleIncomingMediaCall);
+            connectToHost(peerInstance.id);
+          } else {
+            if (peerInstance) peerInstance.destroy();
+            peerInstance = new Peer(PEER_CONFIG);
+            peerInstance.on("open", connectToHost);
+            peerInstance.on("call", handleIncomingMediaCall);
+          }
+
+          peerInstance.on("error", (err) => {
+            console.warn("PeerJS error:", err);
+            if (err && err.type === "peer-unavailable") {
+              document.getElementById("squadStatusText").textContent = `⚠️ Room ${code} not found or host offline.`;
+            }
           });
-          peerInstance.on("call", handleIncomingMediaCall);
         } catch (e) {
           console.warn("PeerJS join error:", e);
         }
@@ -917,6 +991,7 @@
       squadMembersMap[myClientId] = buildMyMemberState();
       document.getElementById("squadStatusText").textContent = "Left room — currently in Solo mode.";
       syncSquadToStorage();
+      prewarmGuestPeerInstance();
     };
 
     window.copyInviteLink = function () {
@@ -1332,6 +1407,10 @@
       document.querySelectorAll(".filter-pill-btn").forEach(btn => {
         btn.classList.toggle("active", btn.getAttribute("data-filter") === currentVideoFilter);
       });
+      if (isCallActive && !isVideoOn) {
+        setVideoState(true);
+        return;
+      }
       updateLocalVideoDisplay();
       broadcastMediaState();
     };
@@ -1351,7 +1430,7 @@
       if (isCallActive) {
         window.leaveCall();
       } else {
-        joinCall(false, true); // default join: mic on, video off
+        joinCall(true, true); // default join: both camera & mic on
       }
     };
 
@@ -1413,11 +1492,36 @@
         localStream.getAudioTracks().forEach(t => t.enabled = isAudioOn);
         localStream.getVideoTracks().forEach(t => t.enabled = isVideoOn);
 
+        // Make video tile & element visible BEFORE attaching stream and calling play() (critical for mobile browsers)
+        updateMediaControlsUI();
+        updateLocalVideoDisplay();
+
         const localVideo = document.getElementById("localVideoFeed");
         if (localVideo) {
-          localVideo.srcObject = localStream;
           localVideo.muted = true;
-          localVideo.play().catch(e => console.log("Local video play err:", e));
+          localVideo.defaultMuted = true;
+          localVideo.playsInline = true;
+          localVideo.setAttribute("muted", "");
+          localVideo.setAttribute("playsinline", "");
+          localVideo.setAttribute("webkit-playsinline", "");
+          localVideo.setAttribute("autoplay", "");
+          if (localVideo.srcObject !== localStream) {
+            localVideo.srcObject = localStream;
+          }
+          const startLocalPlayback = () => {
+            updateLocalVideoDisplay();
+            const playPromise = localVideo.play();
+            if (playPromise && typeof playPromise.then === "function") {
+              playPromise.then(() => {
+                // Force mobile GPU compositor repaint (same effect that clicking a filter triggered)
+                localVideo.style.transform = isScreenSharing ? "none" : "scaleX(-1) translateZ(0)";
+              }).catch(e => console.log("Local video play err:", e));
+            }
+          };
+          localVideo.onloadedmetadata = startLocalPlayback;
+          startLocalPlayback();
+          requestAnimationFrame(startLocalPlayback);
+          setTimeout(startLocalPlayback, 150);
         }
 
         setupAudioMonitoring("local", localStream, (speaking) => {
@@ -1426,8 +1530,6 @@
           updateFloatingSpeakingStatus();
         });
 
-        updateMediaControlsUI();
-        updateLocalVideoDisplay();
         broadcastMediaState();
         connectCallsWithRoomMembers();
 
@@ -1494,6 +1596,17 @@
       localStream.getVideoTracks().forEach(t => t.enabled = isVideoOn);
       updateMediaControlsUI();
       updateLocalVideoDisplay();
+      if (isVideoOn) {
+        const localVideo = document.getElementById("localVideoFeed");
+        if (localVideo) {
+          if (localVideo.srcObject !== localStream) {
+            localVideo.srcObject = localStream;
+          }
+          localVideo.muted = true;
+          localVideo.playsInline = true;
+          localVideo.play().catch(() => { });
+        }
+      }
       broadcastMediaState();
     }
 
@@ -1613,8 +1726,8 @@
     function connectCallsWithRoomMembers() {
       if (!peerInstance || !isCallActive || !localStream) return;
       Object.values(squadMembersMap).forEach(m => {
-        if (m.peerId && m.peerId !== myClientId) {
-          if (myClientId > m.peerId && !activeMediaCalls[m.peerId]) {
+        if (m.peerId && m.peerId !== myClientId && !m.peerId.startsWith("me-")) {
+          if (!activeMediaCalls[m.peerId]) {
             initiateMediaCallToPeer(m.peerId);
           }
         }
@@ -1803,7 +1916,7 @@
       }
 
       if (isCallActive && payload.isCallActive && payload.peerId !== myClientId) {
-        if (myClientId > payload.peerId) {
+        if (!activeMediaCalls[payload.peerId]) {
           initiateMediaCallToPeer(payload.peerId);
         }
       }
@@ -1916,8 +2029,13 @@
         tile.classList.toggle("camera-off", !isVideoOn);
       }
       if (localVideo) {
-        localVideo.style.display = isVideoOn ? "block" : "none";
+        localVideo.style.opacity = isVideoOn ? "1" : "0";
+        localVideo.style.pointerEvents = isVideoOn ? "auto" : "none";
         localVideo.className = `v-filter-${currentVideoFilter}`;
+        localVideo.style.transform = isScreenSharing ? "none" : "scaleX(-1) translateZ(0)";
+        if (isVideoOn && localStream && localVideo.paused) {
+          localVideo.play().catch(() => { });
+        }
       }
       if (filterBadge) {
         const lbl = getFilterLabel(currentVideoFilter);
