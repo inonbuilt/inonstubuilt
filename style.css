@@ -28,6 +28,19 @@ body {
     overscroll-behavior-y: contain;
 }
 
+/* The mode panels are fixed, but mobile browsers can still scroll the page
+   underneath an iframe when the iframe is waiting for its first layout. */
+html.mode-overlay-open {
+    overflow: hidden;
+}
+body.mode-overlay-open {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
 input, textarea, select, button {
     touch-action: pan-y;
 }
@@ -251,11 +264,20 @@ footer {
     height: 100dvh;
     z-index: 9999;
     background: #070711;
-    display: none;
+    /* Keep iframe documents laid out from page load. Mobile browsers can
+       leave an iframe non-scrollable when its first layout happens after a
+       `display: none` → `display: flex` transition. */
+    display: flex;
+    visibility: hidden;
+    pointer-events: none;
     flex-direction: column;
     opacity: 0;
     transition: opacity 0.35s ease;
     font-family: "Segoe UI", Arial, sans-serif;
+    /* Keep touch scrolling owned by the document inside the iframe.  A
+       scrollable wrapper around an iframe captures mobile swipe gestures
+       before the iframe can receive them. */
+    overflow: hidden;
     min-height: 0;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
@@ -289,7 +311,8 @@ footer {
     box-shadow: 0 4px 20px rgba(16, 185, 129, 0.35);
 }
 #readModeOverlay.rm-active, #planningModeOverlay.rm-active, #friendsModeOverlay.rm-active {
-    display: flex;
+    visibility: visible;
+    pointer-events: auto;
 }
 #readModeOverlay.rm-visible, #planningModeOverlay.rm-visible, #friendsModeOverlay.rm-visible { opacity: 1; }
 
@@ -331,14 +354,16 @@ footer {
     align-content: start;
 }
 .rm-body.rm-iframe-wrap {
-    flex: 1 1 auto;
+    /* `height: 100%` here made the body compete with its iframe for scroll
+       events on mobile.  A zero flex basis gives the iframe its exact
+       remaining viewport height below the mode header. */
+    flex: 1 1 0;
     min-height: 0;
-    height: 100%;
+    height: auto;
     padding: 0 !important;
     display: block !important;
     position: relative;
-    overflow-y: auto !important;
-    -webkit-overflow-scrolling: touch;
+    overflow: hidden !important;
     overscroll-behavior: contain;
     touch-action: pan-y;
 }

@@ -455,52 +455,101 @@
     const readOverlay = document.getElementById("readModeOverlay");
     const planOverlay = document.getElementById("planningModeOverlay");
     const friendsOverlay = document.getElementById("friendsModeOverlay");
-    const readModeFrame = document.getElementById("readModeIframe");
-    const planModeFrame = document.getElementById("planModeIframe");
-    const friendsModeFrame = document.getElementById("friendsModeIframe");
+    const modeFrames = [
+      { overlay: readOverlay, frame: document.getElementById("readModeIframe") },
+      { overlay: planOverlay, frame: document.getElementById("planModeIframe") },
+      { overlay: friendsOverlay, frame: document.getElementById("friendsModeIframe") }
+    ];
+    let modePageScrollY = 0;
+    let modePageIsLocked = false;
 
-    // A tap in an iframe gives that browsing context focus, which is why the
-    // alarm label made swiping work. Give the iframe that focus on open,
-    // without focusing an input or showing the keyboard.
-    function focusModeFrame(frame) {
-      if (!frame) return;
-      const focusFrame = () => {
-        try {
-          if (frame.contentWindow) frame.contentWindow.focus();
-        } catch (e) { }
-      };
-      focusFrame();
-      requestAnimationFrame(focusFrame);
-      setTimeout(focusFrame, 60);
+    function lockPageBehindMode() {
+      if (modePageIsLocked) return;
+      modePageScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+      document.documentElement.classList.add("mode-overlay-open");
+      document.body.classList.add("mode-overlay-open");
+      document.body.style.top = `-${modePageScrollY}px`;
+      modePageIsLocked = true;
     }
 
-    function openModeOverlay(overlay, frame) {
+    function unlockPageBehindModeIfNeeded() {
+      const hasOpenMode = modeFrames.some(({ overlay }) => overlay && overlay.classList.contains("rm-active"));
+      if (hasOpenMode || !modePageIsLocked) return;
+      document.documentElement.classList.remove("mode-overlay-open");
+      document.body.classList.remove("mode-overlay-open");
+      document.body.style.top = "";
+      modePageIsLocked = false;
+      window.scrollTo(0, modePageScrollY);
+    }
+
+    function refreshModeFrameLayout() {
+      modeFrames.forEach(({ overlay, frame }) => {
+        if (!overlay || !frame || !overlay.classList.contains("rm-active")) return;
+        const header = overlay.querySelector(".rm-header");
+        const frameHeight = Math.max(0, overlay.getBoundingClientRect().height - (header ? header.getBoundingClientRect().height : 0));
+        if (frameHeight) frame.style.height = `${Math.round(frameHeight)}px`;
+        try {
+          const frameWindow = frame.contentWindow;
+          if (frameWindow) frameWindow.dispatchEvent(new frameWindow.Event("resize"));
+        } catch (e) { }
+      });
+    }
+
+    // Some mobile browsers do not activate an iframe's scrolling layer until
+    // it receives focus or its scroll position changes (typing in Read Mode
+    // and opening Share Wrap both happened to trigger that refresh).
+    function activateModeFrameScroll(overlay) {
+      const item = modeFrames.find(({ overlay: candidate }) => candidate === overlay);
+      if (!item || !item.frame || !overlay.classList.contains("rm-active")) return;
+      const frame = item.frame;
+      try {
+        frame.focus({ preventScroll: true });
+        const frameWindow = frame.contentWindow;
+        if (!frameWindow) return;
+        const scrollTop = frameWindow.scrollY || 0;
+        frameWindow.scrollTo(0, scrollTop + 1);
+        requestAnimationFrame(() => {
+          try { frameWindow.scrollTo(0, scrollTop); } catch (e) { }
+        });
+      } catch (e) { }
+    }
+
+    function scheduleModeFrameLayout() {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(refreshModeFrameLayout);
+      });
+      setTimeout(refreshModeFrameLayout, 80);
+    }
+
+    function openModeOverlay(overlay) {
+      lockPageBehindMode();
       overlay.classList.add("rm-active");
-      focusModeFrame(frame);
       setTimeout(() => {
         overlay.classList.add("rm-visible");
-        focusModeFrame(frame);
+        scheduleModeFrameLayout();
+        activateModeFrameScroll(overlay);
       }, 10);
-      document.body.style.overflow = "hidden";
-      document.documentElement.style.overflow = "hidden";
+      scheduleModeFrameLayout();
+      setTimeout(() => activateModeFrameScroll(overlay), 120);
     }
 
     function closeModeOverlay(overlay) {
       overlay.classList.remove("rm-visible");
       setTimeout(() => {
         if (!overlay.classList.contains("rm-visible")) overlay.classList.remove("rm-active");
-        const modeStillOpen = [readOverlay, planOverlay, friendsOverlay]
-          .some(mode => mode.classList.contains("rm-active"));
-        if (!modeStillOpen) {
-          document.body.style.overflow = "";
-          document.documentElement.style.overflow = "";
-        }
+        unlockPageBehindModeIfNeeded();
       }, 350);
     }
 
-    [readModeFrame, planModeFrame, friendsModeFrame].forEach(frame => {
-      if (frame) frame.addEventListener("load", () => focusModeFrame(frame));
+    modeFrames.forEach(({ overlay, frame }) => {
+      if (frame) frame.addEventListener("load", () => {
+        scheduleModeFrameLayout();
+        activateModeFrameScroll(overlay);
+      });
     });
+    window.addEventListener("resize", scheduleModeFrameLayout);
+    window.addEventListener("orientationchange", () => setTimeout(scheduleModeFrameLayout, 120));
+    if (window.visualViewport) window.visualViewport.addEventListener("resize", scheduleModeFrameLayout);
 
     function ensureGlobalUniqueUserId() {
       let uid = localStorage.getItem("calcium_unique_user_id") || "";
@@ -525,7 +574,7 @@
         frIframe.contentWindow.refreshFriendsHubFromParent();
       }
       if (friendsOverlay) {
-        openModeOverlay(friendsOverlay, friendsModeFrame);
+        openModeOverlay(friendsOverlay);
       }
     };
 
@@ -559,7 +608,7 @@
 
     function openReadMode() {
       syncReadIframeTracker();
-      openModeOverlay(readOverlay, readModeFrame);
+      openModeOverlay(readOverlay);
     }
 
     function closeReadMode() {
@@ -569,7 +618,7 @@
 
     function openPlanningMode() {
       window.syncPlanIframeFromReadRoom();
-      openModeOverlay(planOverlay, planModeFrame);
+      openModeOverlay(planOverlay);
     }
 
     function closePlanningMode() {
@@ -579,6 +628,7 @@
 
     // --- CROSSFADE TRANSITIONS ---
     window.switchToReadMode = function () {
+      lockPageBehindMode();
       syncReadIframeTracker();
       planOverlay.classList.remove("rm-visible");
 
@@ -588,7 +638,7 @@
 
         setTimeout(() => {
           readOverlay.classList.add("rm-visible");
-          focusModeFrame(readModeFrame);
+          scheduleModeFrameLayout();
         }, 20);
       }, 350);
     };
@@ -604,6 +654,7 @@
     };
 
     window.switchToPlanMode = function () {
+      lockPageBehindMode();
       window.syncPlanIframeFromReadRoom();
       readOverlay.classList.remove("rm-visible");
 
@@ -613,7 +664,7 @@
 
         setTimeout(() => {
           planOverlay.classList.add("rm-visible");
-          focusModeFrame(planModeFrame);
+          scheduleModeFrameLayout();
         }, 20);
       }, 350);
     };
