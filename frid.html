@@ -586,10 +586,27 @@
     }
 
     /* Timetable Table */
-    .friend-tt-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+    /* Timetable scrolling inside Friends iframe */
+.friend-tt-scroll-wrap {
+  width: 100%;
+  max-height: min(60vh, 520px);
+  overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.friend-tt-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+}
+
+.friend-tt-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #0f172a;
+}
 
     .friend-tt-table th {
       text-align: left;
@@ -1923,7 +1940,7 @@
 
           ${ttList.length === 0
             ? `<div style="padding:30px; text-align:center; color:#64748b; font-size:13px;">No study slots recorded for today yet.</div>`
-            : `<div style="overflow-x:auto;">
+            : `<div class="friend-tt-scroll-wrap">
                 <table class="friend-tt-table">
                   <thead>
                     <tr>
