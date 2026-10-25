@@ -859,6 +859,8 @@
        CALCIUM STUDY FRIENDS & P2P AUTO-CONNECT ENGINE (frid.html)
        - Uses PeerJS WebRTC P2P + Google STUN + Cross-Tab BroadcastChannel
        - NO ACCEPTANCE REQUIRED. Instant adding + background sync.
+       - FIXED: delete mirrored on both sides, reliable reconnect with retry,
+                PeerJS error handling, mySnap ReferenceError.
     ========================================================================= */
 
     const SUBJECT_LABELS = {
@@ -1118,7 +1120,8 @@
       // 2. PeerJS WebRTC node with STUN config for GitHub Pages cross-PC traversal
       if (typeof Peer === "undefined") return;
       try {
-        if (peerNode) peerNode.destroy();
+        if (peerNode) { try { peerNode.destroy(); } catch (e) {} }
+        activeFriendConns = {};
         peerNode = new Peer(toPeerId(myUniqueId), {
           config: {
             iceServers: [
@@ -1129,6 +1132,7 @@
         });
 
         peerNode.on("open", () => {
+          window._peerRetry = 0;
           const badgeTxt = document.getElementById("peerNetworkText");
           if (badgeTxt) badgeTxt.textContent = `P2P Network Live: ${myUniqueId}`;
           syncAllOnlineFriends();
@@ -1140,61 +1144,80 @@
           });
         });
 
-        peerNode.on("error", () => {
+        peerNode.on("error", (err) => {
           const badgeTxt = document.getElementById("peerNetworkText");
+          if (err && err.type === "unavailable-id") {
+            // Old session still holding our ID on the signaling server: retry shortly
+            if (badgeTxt) badgeTxt.textContent = "Reconnecting P2P...";
+            window._peerRetry = (window._peerRetry || 0) + 1;
+            if (window._peerRetry <= 10) setTimeout(initNetworkHub, 3000);
+            return;
+          }
+          if (err && err.type === "peer-unavailable") return; // friend is offline right now
           if (badgeTxt) badgeTxt.textContent = `P2P ID Active (${myUniqueId})`;
+        });
+
+        peerNode.on("disconnected", () => {
+          try { peerNode.reconnect(); } catch (e) {}
         });
       } catch (e) {}
     }
 
-    function sendPacketToUser(targetUid, payload) {
+    function sendPacketToUser(targetUid, payload, forceFresh = false, attempt = 0) {
       const cleanTarget = targetUid.trim().toUpperCase();
 
-      // 1. BroadcastChannel (Same browser tabs)
-      try {
-        if (crossTabChannel) {
-          crossTabChannel.postMessage({ targetUid: cleanTarget, payload: payload });
-        }
-      } catch (e) {}
-
-      // 2. localStorage Cross-PC fallback storage polling
-      try {
-        const envelope = {
-          targetUid: cleanTarget,
-          payload: payload,
-          nonce: Math.random()
-        };
-        localStorage.setItem(`calcium_p2p_envelope_${cleanTarget}`, JSON.stringify(envelope));
-        setTimeout(() => localStorage.removeItem(`calcium_p2p_envelope_${cleanTarget}`), 1000);
-      } catch (e) {}
-
-      // 3. PeerJS WebRTC
-      if (peerNode && !peerNode.destroyed) {
+      // Same-browser + same-origin fallbacks (only on first attempt)
+      if (attempt === 0) {
         try {
-          const existing = activeFriendConns[cleanTarget];
-          if (existing && existing.open) {
-            existing.send(payload);
-            return;
-          }
-          const conn = peerNode.connect(toPeerId(cleanTarget), { reliable: true });
-
-          let connTimeout = setTimeout(() => {
-            if (!conn.open && payload.type === "AUTO_ADD_FRIEND") {
-              // Notification removed per request, connection attempt happens silently in background
-            }
-          }, 6000);
-
-          conn.on("open", () => {
-            clearTimeout(connTimeout);
-            activeFriendConns[cleanTarget] = conn;
-            conn.send(payload);
-          });
-          conn.on("data", (reply) => handleIncomingFriendProtocol(reply, conn));
-          conn.on("error", () => {
-            delete activeFriendConns[cleanTarget];
-          });
+          if (crossTabChannel) crossTabChannel.postMessage({ targetUid: cleanTarget, payload: payload });
+        } catch (e) {}
+        try {
+          const envelope = { targetUid: cleanTarget, payload: payload, nonce: Math.random() };
+          localStorage.setItem(`calcium_p2p_envelope_${cleanTarget}`, JSON.stringify(envelope));
+          setTimeout(() => localStorage.removeItem(`calcium_p2p_envelope_${cleanTarget}`), 1000);
         } catch (e) {}
       }
+
+      if (!peerNode || peerNode.destroyed) return;
+      if (peerNode.disconnected) { try { peerNode.reconnect(); } catch (e) {} }
+
+      const existing = activeFriendConns[cleanTarget];
+      if (forceFresh && existing) {
+        delete activeFriendConns[cleanTarget];
+        try { existing.close(); } catch (e) {}
+      } else if (existing && existing.open) {
+        try { existing.send(payload); return; }
+        catch (e) { delete activeFriendConns[cleanTarget]; }
+      }
+
+      const critical = ["AUTO_ADD_FRIEND", "FRIEND_REMOVED", "FRIEND_CHAT_MSG"].includes(payload.type);
+      let conn;
+      try {
+        conn = peerNode.connect(toPeerId(cleanTarget), { reliable: true });
+      } catch (e) { return; }
+
+      let opened = false;
+      const retryTimer = setTimeout(() => {
+        if (opened) return;
+        try { conn.close(); } catch (e) {}
+        if (critical && attempt < 3) {
+          setTimeout(() => sendPacketToUser(cleanTarget, payload, true, attempt + 1), 1500);
+        }
+      }, 8000);
+
+      conn.on("open", () => {
+        opened = true;
+        clearTimeout(retryTimer);
+        activeFriendConns[cleanTarget] = conn;
+        try { conn.send(payload); } catch (e) {}
+      });
+      conn.on("data", (reply) => handleIncomingFriendProtocol(reply, conn));
+      conn.on("close", () => {
+        if (activeFriendConns[cleanTarget] === conn) delete activeFriendConns[cleanTarget];
+      });
+      conn.on("error", () => {
+        if (activeFriendConns[cleanTarget] === conn) delete activeFriendConns[cleanTarget];
+      });
     }
 
     window.addEventListener("storage", (ev) => {
@@ -1235,7 +1258,7 @@
           snapshot: buildMyFullSnapshot()
         };
         if (conn && conn.open) conn.send(reply);
-        else sendPacketToUser(payload.fromUid, reply);
+        else sendPacketToUser(payload.fromUid || friendSnap.uid, reply);
       }
       else if (payload.type === "FRIEND_SYNC_REQUEST" && payload.fromUid) {
         const friendsMap = getSavedFriendsMap();
@@ -1266,11 +1289,33 @@
           }
         }
       }
+      else if (payload.type === "FRIEND_REMOVED" && payload.fromUid) {
+        const friendsMap = getSavedFriendsMap();
+        const gone = payload.fromUid.trim().toUpperCase();
+        if (friendsMap[gone] && !DEMO_DIRECTORY[gone]) {
+          const nm = friendsMap[gone].name;
+          delete friendsMap[gone];
+          delete unreadMessagesMap[gone];
+          saveFriendsMap(friendsMap);
+          if (activeFriendConns[gone]) {
+            try { activeFriendConns[gone].close(); } catch (e) {}
+            delete activeFriendConns[gone];
+          }
+          if (selectedFriendUid === gone) {
+            const keys = Object.keys(friendsMap);
+            selectedFriendUid = keys.length ? keys[0] : null;
+          }
+          renderSidebarLists();
+          renderSelectedFriendInspector();
+          notifyParentBadgeCount();
+          showToast(`${nm} removed you from their friends list.`);
+        }
+      }
       else if (payload.type === "FRIEND_CHAT_MSG" && payload.fromUid && payload.message) {
         const history = getChatHistory(payload.fromUid);
         history.push(payload.message);
         saveChatHistory(payload.fromUid, history);
-        
+
         if (selectedFriendUid !== payload.fromUid || currentInspectorTab !== "chat") {
           unreadMessagesMap[payload.fromUid] = true;
         }
@@ -1301,7 +1346,7 @@
       const friendsMap = getSavedFriendsMap();
       const mySnap = buildMyFullSnapshot();
       const now = Date.now();
-      
+
       Object.keys(friendsMap).forEach(uid => {
         const lastSeen = friendsMap[uid].lastSeen || 0;
         if (now - lastSeen > 45000 && !DEMO_DIRECTORY[uid]) {
@@ -1344,20 +1389,21 @@
       }
 
       const friendsMap = getSavedFriendsMap();
-      if (friendsMap[targetUid]) {
-  selectedFriendUid = targetUid;
-  sendPacketToUser(targetUid, {
-    type: "AUTO_ADD_FRIEND",
-    fromUid: myUniqueId,
-    snapshot: mySnap
-  }, true); // forceFreshConn = true
-  renderSidebarLists();
-  renderSelectedFriendInspector();
-  showToast(`🔄 Re-synced connection with ${friendsMap[targetUid].name}!`);
-  return;
-}
+      const mySnap = buildMyFullSnapshot();   // declared BEFORE use (fixes the crash)
 
-      const mySnap = buildMyFullSnapshot();
+      if (friendsMap[targetUid]) {
+        selectedFriendUid = targetUid;
+        sendPacketToUser(targetUid, {
+          type: "AUTO_ADD_FRIEND",
+          fromUid: myUniqueId,
+          snapshot: mySnap
+        }, true);
+        renderSidebarLists();
+        renderSelectedFriendInspector();
+        showToast(`🔄 Re-synced connection with ${friendsMap[targetUid].name}!`);
+        return;
+      }
+
       const targetDemo = DEMO_DIRECTORY[targetUid];
 
       // Instant Add locally with placeholder or demo data
@@ -1384,42 +1430,37 @@
       saveFriendsMap(friendsMap);
       selectedFriendUid = targetUid;
 
-      // Dispatch auto-add packet over PeerJS / BroadcastChannel
+      // forceFresh = true so a stale cached channel is never reused after a delete
       sendPacketToUser(targetUid, {
         type: "AUTO_ADD_FRIEND",
         fromUid: myUniqueId,
         snapshot: mySnap
-      });
+      }, true);
 
       renderSidebarLists();
       renderSelectedFriendInspector();
       notifyParentBadgeCount();
-
       showToast(`⚡ Instantly added ${targetUid}! Waiting for their live data to sync...`);
     };
 
     window.removeFriend = function(uid) {
-  const cleanUid = (uid || "").trim().toUpperCase();
-  const friendsMap = getSavedFriendsMap();
-  const name = friendsMap[cleanUid] ? friendsMap[cleanUid].name : cleanUid;
+      const cleanUid = (uid || "").trim().toUpperCase();
+      const friendsMap = getSavedFriendsMap();
+      const name = friendsMap[cleanUid] ? friendsMap[cleanUid].name : cleanUid;
 
-  // Notify the other user so the friend is deleted on BOTH sides immediately
-  if (cleanUid && !DEMO_DIRECTORY[cleanUid]) {
-    sendPacketToUser(cleanUid, {
-      type: "FRIEND_REMOVED",
-      fromUid: myUniqueId
-    });
-  }
+      if (cleanUid && !DEMO_DIRECTORY[cleanUid]) {
+        sendPacketToUser(cleanUid, { type: "FRIEND_REMOVED", fromUid: myUniqueId });
+      }
 
-  // Close and purge cached P2P connection so future re-connects open a fresh channel
-  if (activeFriendConns[cleanUid]) {
-    const oldConn = activeFriendConns[cleanUid];
-    delete activeFriendConns[cleanUid];
-    setTimeout(() => { try { oldConn.close(); } catch (e) {} }, 350);
-  }
+      // Give the removal packet time to be delivered before closing the channel
+      if (activeFriendConns[cleanUid]) {
+        const oldConn = activeFriendConns[cleanUid];
+        delete activeFriendConns[cleanUid];
+        setTimeout(() => { try { oldConn.close(); } catch (e) {} }, 1500);
+      }
 
-  delete friendsMap[cleanUid];
-  delete unreadMessagesMap[cleanUid];
+      delete friendsMap[cleanUid];
+      delete unreadMessagesMap[cleanUid];
       saveFriendsMap(friendsMap);
       const remainingKeys = Object.keys(friendsMap);
       selectedFriendUid = remainingKeys.length > 0 ? remainingKeys[0] : null;
@@ -1824,16 +1865,6 @@
         localStorage.setItem("cn_tasks", JSON.stringify(myTasks));
         showToast(`✅ Imported ${added} revision task${added === 1 ? "" : "s"} into your Read Mode!`);
       } catch (e) {}
-    };
-
-    window.startCoStudyRoomWithFriend = function(uid) {
-      const roomCode = "CA-" + uid.replace(/[^0-9]/g, "").slice(-4).padStart(4, "8");
-      if (window.parent && window.parent !== window && typeof window.parent.openSquadModal === "function") {
-        window.parent.closeFriendsModal();
-        window.parent.openSquadModal(true);
-        return;
-      }
-      window.location.href = `./index.html?room=${roomCode}`;
     };
 
     window.copyMyUniqueId = function() {
