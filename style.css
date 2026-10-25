@@ -673,9 +673,9 @@ footer {
 
 @media (max-width: 900px) {
     #readModeOverlay, #planningModeOverlay, #friendsModeOverlay {
-        overflow-x: auto;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
+        overflow: hidden;
+
+
     }
 
     .rm-header {

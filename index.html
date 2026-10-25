@@ -265,7 +265,7 @@
         </button>
       </div>
     </div>
-    <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
+    <div class="rm-body" style="padding: 0; overflow: hidden; display: block; -webkit-overflow-scrolling: touch;">
       <iframe id="readModeIframe" src="./readmode.html"
         allow="fullscreen; autoplay; microphone; camera; display-capture" allowfullscreen
         style="width: 100%; height: 100%; border: none"></iframe>
@@ -302,7 +302,7 @@
         </button>
       </div>
     </div>
-    <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
+    <div class="rm-body" style="padding: 0; overflow: hidden; display: block; -webkit-overflow-scrolling: touch;">
       <iframe id="planModeIframe" src="./pv4.html" allow="fullscreen; autoplay; microphone; camera; display-capture"
         allowfullscreen style="width: 100%; height: 100%; border: none"></iframe>
     </div>
@@ -333,7 +333,7 @@
         </button>
       </div>
     </div>
-    <div class="rm-body" style="padding: 0; overflow: hidden; display: block">
+    <div class="rm-body" style="padding: 0; overflow: hidden; display: block; -webkit-overflow-scrolling: touch;">
       <iframe id="friendsModeIframe" src="./frid.html" allow="fullscreen; clipboard-read; clipboard-write"
         style="width: 100%; height: 100%; border: none"></iframe>
     </div>
@@ -346,10 +346,11 @@
         z-index: 100000;
         opacity: 0;
         pointer-events: none;
+        visibility: hidden;
         transition: opacity 0.2s ease;
       ">
     <iframe id="sturmIframe" src="./sturm.html" allow="fullscreen; autoplay; microphone; camera; display-capture"
-      allowfullscreen style="width: 100%; height: 100%; border: none; background: transparent"></iframe>
+      allowfullscreen style="width: 100%; height: 100%; border: none; background: transparent; pointer-events: none;"></iframe>
   </div>
 
   <!-- FLOATING CALL CONTROLS (Active while studying in Read/Plan Mode) -->
@@ -514,6 +515,7 @@
 
     function openReadMode() {
       syncReadIframeTracker();
+      if (typeof window.hideSturmOverlay === "function") window.hideSturmOverlay();
       readOverlay.classList.add("rm-active");
       setTimeout(() => readOverlay.classList.add("rm-visible"), 10);
       document.body.style.overflow = "hidden"; // Prevent background scroll
@@ -530,6 +532,7 @@
 
     function openPlanningMode() {
       window.syncPlanIframeFromReadRoom();
+      if (typeof window.hideSturmOverlay === "function") window.hideSturmOverlay();
       planOverlay.classList.add("rm-active");
       setTimeout(() => planOverlay.classList.add("rm-visible"), 10);
       document.body.style.overflow = "hidden";
@@ -551,7 +554,8 @@
 
       setTimeout(() => {
         planOverlay.classList.remove("rm-active");
-        readOverlay.classList.add("rm-active");
+        if (typeof window.hideSturmOverlay === "function") window.hideSturmOverlay();
+      readOverlay.classList.add("rm-active");
 
         setTimeout(() => {
           readOverlay.classList.add("rm-visible");
@@ -575,7 +579,8 @@
 
       setTimeout(() => {
         readOverlay.classList.remove("rm-active");
-        planOverlay.classList.add("rm-active");
+        if (typeof window.hideSturmOverlay === "function") window.hideSturmOverlay();
+      planOverlay.classList.add("rm-active");
 
         setTimeout(() => {
           planOverlay.classList.add("rm-visible");
@@ -637,18 +642,23 @@
       sturmOverlay.style.visibility = "visible";
       sturmOverlay.style.opacity = "1";
       sturmOverlay.style.pointerEvents = "auto";
+      if (sturmIframe) sturmIframe.style.pointerEvents = "auto";
     };
 
     window.hideSturmOverlay = function () {
       if (!sturmOverlay) return;
       sturmOverlay.style.opacity = "0";
       sturmOverlay.style.pointerEvents = "none";
+      if (sturmIframe) sturmIframe.style.pointerEvents = "none";
       setTimeout(() => {
         if (sturmOverlay.style.opacity === "0") {
           sturmOverlay.style.visibility = "hidden";
         }
       }, 250);
     };
+
+    // Ensure sturm overlay is completely dormant and non-blocking on startup
+    window.hideSturmOverlay();
 
     window.toggleBrowserFullscreen = function () {
       try {
@@ -714,6 +724,7 @@
     window.closeShareModal = function () {
       window.exitFullscreenIfNeeded && window.exitFullscreenIfNeeded();
       callSturm("closeShareModal");
+      window.hideSturmOverlay();
     };
 
     window.openProfileModal = function () {

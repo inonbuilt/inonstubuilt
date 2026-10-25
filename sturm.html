@@ -2620,6 +2620,7 @@ const PEER_CONFIG = {
     window.addEventListener("DOMContentLoaded", () => {
       const remoteContainer = document.getElementById("remoteVideosContainer");
       if (remoteContainer && typeof MutationObserver !== "undefined") {
+        notifyParentOverlayVisibility();
         const observer = new MutationObserver(() => updateMeetGridLayout());
         observer.observe(remoteContainer, { childList: true });
       }
