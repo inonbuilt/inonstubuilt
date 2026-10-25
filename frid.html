@@ -1345,12 +1345,17 @@
 
       const friendsMap = getSavedFriendsMap();
       if (friendsMap[targetUid]) {
-        selectedFriendUid = targetUid;
-        renderSidebarLists();
-        renderSelectedFriendInspector();
-        showToast(`✅ You are already connected with ${friendsMap[targetUid].name}!`);
-        return;
-      }
+  selectedFriendUid = targetUid;
+  sendPacketToUser(targetUid, {
+    type: "AUTO_ADD_FRIEND",
+    fromUid: myUniqueId,
+    snapshot: mySnap
+  }, true); // forceFreshConn = true
+  renderSidebarLists();
+  renderSelectedFriendInspector();
+  showToast(`🔄 Re-synced connection with ${friendsMap[targetUid].name}!`);
+  return;
+}
 
       const mySnap = buildMyFullSnapshot();
       const targetDemo = DEMO_DIRECTORY[targetUid];
@@ -1394,9 +1399,27 @@
     };
 
     window.removeFriend = function(uid) {
-      const friendsMap = getSavedFriendsMap();
-      const name = friendsMap[uid] ? friendsMap[uid].name : uid;
-      delete friendsMap[uid];
+  const cleanUid = (uid || "").trim().toUpperCase();
+  const friendsMap = getSavedFriendsMap();
+  const name = friendsMap[cleanUid] ? friendsMap[cleanUid].name : cleanUid;
+
+  // Notify the other user so the friend is deleted on BOTH sides immediately
+  if (cleanUid && !DEMO_DIRECTORY[cleanUid]) {
+    sendPacketToUser(cleanUid, {
+      type: "FRIEND_REMOVED",
+      fromUid: myUniqueId
+    });
+  }
+
+  // Close and purge cached P2P connection so future re-connects open a fresh channel
+  if (activeFriendConns[cleanUid]) {
+    const oldConn = activeFriendConns[cleanUid];
+    delete activeFriendConns[cleanUid];
+    setTimeout(() => { try { oldConn.close(); } catch (e) {} }, 350);
+  }
+
+  delete friendsMap[cleanUid];
+  delete unreadMessagesMap[cleanUid];
       saveFriendsMap(friendsMap);
       const remainingKeys = Object.keys(friendsMap);
       selectedFriendUid = remainingKeys.length > 0 ? remainingKeys[0] : null;
