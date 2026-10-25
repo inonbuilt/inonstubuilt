@@ -28,19 +28,6 @@ body {
     overscroll-behavior-y: contain;
 }
 
-/* The mode panels are fixed, but mobile browsers can still scroll the page
-   underneath an iframe when the iframe is waiting for its first layout. */
-html.mode-overlay-open {
-    overflow: hidden;
-}
-body.mode-overlay-open {
-    position: fixed;
-    left: 0;
-    right: 0;
-    width: 100%;
-    overflow: hidden;
-}
-
 input, textarea, select, button {
     touch-action: pan-y;
 }
@@ -264,20 +251,19 @@ footer {
     height: 100dvh;
     z-index: 9999;
     background: #070711;
-    /* Keep iframe documents laid out from page load. Mobile browsers can
-       leave an iframe non-scrollable when its first layout happens after a
-       `display: none` → `display: flex` transition. */
+    /* Match the working Study Squad/Share Wrap layer: it is always laid out,
+       transparent, and non-interactive until it is opened. */
     display: flex;
-    visibility: hidden;
     pointer-events: none;
     flex-direction: column;
     opacity: 0;
     transition: opacity 0.35s ease;
+    will-change: opacity;
     font-family: "Segoe UI", Arial, sans-serif;
     /* Keep touch scrolling owned by the document inside the iframe.  A
        scrollable wrapper around an iframe captures mobile swipe gestures
        before the iframe can receive them. */
-    overflow: hidden;
+    overflow: auto;
     min-height: 0;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
@@ -311,7 +297,6 @@ footer {
     box-shadow: 0 4px 20px rgba(16, 185, 129, 0.35);
 }
 #readModeOverlay.rm-active, #planningModeOverlay.rm-active, #friendsModeOverlay.rm-active {
-    visibility: visible;
     pointer-events: auto;
 }
 #readModeOverlay.rm-visible, #planningModeOverlay.rm-visible, #friendsModeOverlay.rm-visible { opacity: 1; }
@@ -363,7 +348,8 @@ footer {
     padding: 0 !important;
     display: block !important;
     position: relative;
-    overflow: hidden !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
     touch-action: pan-y;
 }

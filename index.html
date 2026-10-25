@@ -460,28 +460,6 @@
       { overlay: planOverlay, frame: document.getElementById("planModeIframe") },
       { overlay: friendsOverlay, frame: document.getElementById("friendsModeIframe") }
     ];
-    let modePageScrollY = 0;
-    let modePageIsLocked = false;
-
-    function lockPageBehindMode() {
-      if (modePageIsLocked) return;
-      modePageScrollY = window.scrollY || document.documentElement.scrollTop || 0;
-      document.documentElement.classList.add("mode-overlay-open");
-      document.body.classList.add("mode-overlay-open");
-      document.body.style.top = `-${modePageScrollY}px`;
-      modePageIsLocked = true;
-    }
-
-    function unlockPageBehindModeIfNeeded() {
-      const hasOpenMode = modeFrames.some(({ overlay }) => overlay && overlay.classList.contains("rm-active"));
-      if (hasOpenMode || !modePageIsLocked) return;
-      document.documentElement.classList.remove("mode-overlay-open");
-      document.body.classList.remove("mode-overlay-open");
-      document.body.style.top = "";
-      modePageIsLocked = false;
-      window.scrollTo(0, modePageScrollY);
-    }
-
     function refreshModeFrameLayout() {
       modeFrames.forEach(({ overlay, frame }) => {
         if (!overlay || !frame || !overlay.classList.contains("rm-active")) return;
@@ -522,7 +500,6 @@
     }
 
     function openModeOverlay(overlay) {
-      lockPageBehindMode();
       overlay.classList.add("rm-active");
       setTimeout(() => {
         overlay.classList.add("rm-visible");
@@ -537,7 +514,6 @@
       overlay.classList.remove("rm-visible");
       setTimeout(() => {
         if (!overlay.classList.contains("rm-visible")) overlay.classList.remove("rm-active");
-        unlockPageBehindModeIfNeeded();
       }, 350);
     }
 
@@ -547,6 +523,13 @@
         activateModeFrameScroll(overlay);
       });
     });
+    // Events originating inside an iframe stay inside that document. If a
+    // swipe starts on a mode header or its frame wrapper instead, keep it
+    // from reaching the dashboard behind the active mode.
+    document.addEventListener("touchmove", (event) => {
+      const activeMode = modeFrames.find(({ overlay }) => overlay && overlay.classList.contains("rm-active"));
+      if (activeMode && event.target !== activeMode.frame) event.preventDefault();
+    }, { passive: false });
     window.addEventListener("resize", scheduleModeFrameLayout);
     window.addEventListener("orientationchange", () => setTimeout(scheduleModeFrameLayout, 120));
     if (window.visualViewport) window.visualViewport.addEventListener("resize", scheduleModeFrameLayout);
@@ -628,7 +611,6 @@
 
     // --- CROSSFADE TRANSITIONS ---
     window.switchToReadMode = function () {
-      lockPageBehindMode();
       syncReadIframeTracker();
       planOverlay.classList.remove("rm-visible");
 
@@ -654,7 +636,6 @@
     };
 
     window.switchToPlanMode = function () {
-      lockPageBehindMode();
       window.syncPlanIframeFromReadRoom();
       readOverlay.classList.remove("rm-visible");
 
