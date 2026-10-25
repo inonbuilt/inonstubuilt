@@ -194,6 +194,73 @@ body {
   margin-left: auto;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .dashboard-container {
+        height: auto;
+        min-height: 100vh;
+        padding: 12px;
+    }
+
+    .top-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .header-right-group {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .header-card {
+        min-height: 74px;
+    }
+
+    .main-layout {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        overflow: visible;
+    }
+
+    .timeline-sidebar {
+        padding: 12px;
+    }
+
+    .timeline-container {
+        max-height: 210px;
+    }
+
+    .reactor-main {
+        gap: 12px;
+    }
+
+    .analytics-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .table-scroll {
+        border-radius: 12px;
+    }
+
+    .time-table {
+        min-width: 660px;
+    }
+
+    .pv4-squad-header {
+        align-items: flex-start;
+    }
+
+    .pv4-squad-members {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 900px) {
     body {
         overflow-y: auto;

@@ -246,6 +246,96 @@ footer {
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .page {
+        gap: 24px;
+        padding: 26px 0 40px;
+    }
+
+    .logo {
+        margin-top: 14px;
+    }
+
+    .floating-logo {
+        width: min(64vw, 560px);
+        height: auto;
+        aspect-ratio: 1.7;
+        filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.45));
+    }
+
+    .button {
+        width: min(84vw, 720px);
+        gap: 14px;
+    }
+
+    .button a {
+        flex: 1 1 175px;
+        padding: 14px 18px;
+        font-size: 15px;
+        border-radius: 12px;
+        box-shadow: 0 10px 22px rgba(37, 99, 235, 0.24);
+    }
+
+    .notice,
+    .motivation-box {
+        width: min(90vw, 900px);
+    }
+
+    .notice {
+        padding: 26px 22px;
+        border-radius: 18px;
+        background: rgba(15, 23, 42, 0.66);
+    }
+
+    .motivation-box {
+        padding: 14px 18px;
+        font-size: 16px;
+        border-radius: 18px;
+        background: linear-gradient(135deg, rgba(59,130,246,0.18), rgba(15,23,42,0.7));
+    }
+
+    .mode-toggles {
+        position: static;
+        width: min(90vw, 900px);
+        margin: 8px auto 0;
+        padding: 8px 10px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        background: rgba(7, 11, 18, 0.18);
+        border-radius: 14px;
+        backdrop-filter: blur(10px);
+    }
+
+    .mode-toggles > * {
+        flex: 1 1 160px;
+        min-width: 0;
+        justify-content: center;
+        padding: 10px 14px;
+    }
+
+    .read-mode-trigger,
+    .plan-mode-trigger,
+    .friends-trigger-btn,
+    .squad-trigger-btn,
+    .share-trigger-btn,
+    .profile-trigger-btn {
+        border-radius: 12px;
+        padding: 10px 14px;
+        font-size: 13px;
+        box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+    }
+
+    footer {
+        padding: 18px 16px 28px;
+    }
+
+    .social-container {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width: 768px) {
     .page {
         padding: 20px 0 32px;
@@ -1787,6 +1877,63 @@ footer {
     .gmeet-top-bar { padding: 10px 14px; }
     .gmeet-top-Controls { width: 100%; justify-content: space-between; }
     .gmeet-side-drawer { width: 290px; }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body { overflow-x: hidden; }
+    .page {
+        gap: 24px;
+        padding: 18px 0 36px;
+    }
+    .floating-logo {
+        width: min(68vw, 540px);
+        height: auto;
+    }
+    .button {
+        width: min(82vw, 700px);
+        gap: 14px;
+    }
+    .button a {
+        flex: 1 1 180px;
+        text-align: center;
+    }
+    .notice,
+    .motivation-box {
+        width: min(92vw, 920px);
+    }
+    .mode-toggles {
+        position: static;
+        width: min(92vw, 900px);
+        margin: 10px auto 0;
+        justify-content: center;
+    }
+    .mode-toggles > * {
+        flex: 1 1 180px;
+        justify-content: center;
+    }
+    .gmeet-top-bar {
+        padding: 10px 14px;
+        border-radius: 0;
+    }
+    .gmeet-top-Controls {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .gmeet-video-stage {
+        padding: 12px;
+    }
+    .gmeet-floating-filters {
+        bottom: 92px;
+    }
+    .gmeet-side-drawer {
+        width: 300px;
+    }
+    .gmeet-bottom-dock {
+        padding: 0 12px;
+    }
+    .gmeet-bottom-dock .call-btn {
+        padding: 9px 12px;
+    }
 }
 
 @media (max-width: 860px) {
