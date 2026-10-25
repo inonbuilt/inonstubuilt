@@ -481,8 +481,6 @@
       if (friendsOverlay) {
         friendsOverlay.classList.add("rm-active");
         setTimeout(() => friendsOverlay.classList.add("rm-visible"), 10);
-        document.body.style.overflow = "hidden";
-        document.documentElement.style.overflow = "hidden";
       }
     };
 
@@ -492,8 +490,6 @@
       friendsOverlay.classList.remove("rm-visible");
       setTimeout(() => {
         friendsOverlay.classList.remove("rm-active");
-        document.body.style.overflow = "";
-        document.documentElement.style.overflow = "";
       }, 350);
     };
 
@@ -523,8 +519,6 @@
       syncReadIframeTracker();
       readOverlay.classList.add("rm-active");
       setTimeout(() => readOverlay.classList.add("rm-visible"), 10);
-      document.body.style.overflow = "hidden";
-      document.documentElement.style.overflow = "hidden";
     }
 
     function closeReadMode() {
@@ -532,8 +526,6 @@
       readOverlay.classList.remove("rm-visible");
       setTimeout(() => {
         readOverlay.classList.remove("rm-active");
-        document.body.style.overflow = "";
-        document.documentElement.style.overflow = "";
       }, 350);
     }
 
@@ -541,8 +533,6 @@
       window.syncPlanIframeFromReadRoom();
       planOverlay.classList.add("rm-active");
       setTimeout(() => planOverlay.classList.add("rm-visible"), 10);
-      document.body.style.overflow = "hidden";
-      document.documentElement.style.overflow = "hidden";
     }
 
     function closePlanningMode() {
@@ -550,8 +540,6 @@
       planOverlay.classList.remove("rm-visible");
       setTimeout(() => {
         planOverlay.classList.remove("rm-active");
-        document.body.style.overflow = "";
-        document.documentElement.style.overflow = "";
       }, 350);
     }
 
@@ -689,18 +677,6 @@
           if (p && typeof p.catch === "function") p.catch(() => { });
         }
       } catch (e) { }
-    };
-
-    const _origOpenReadMode = openReadMode;
-    window.openReadMode = function () {
-      _origOpenReadMode();
-      requestFullscreenSafe();
-    };
-
-    const _origOpenPlanningMode = openPlanningMode;
-    window.openPlanningMode = function () {
-      _origOpenPlanningMode();
-      requestFullscreenSafe();
     };
 
     window.openSquadModal = function (fromUserGesture = true) {

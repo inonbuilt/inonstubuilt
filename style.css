@@ -256,8 +256,14 @@ footer {
     opacity: 0;
     transition: opacity 0.35s ease;
     font-family: "Segoe UI", Arial, sans-serif;
+    /* Keep touch scrolling owned by the document inside the iframe.  A
+       scrollable wrapper around an iframe captures mobile swipe gestures
+       before the iframe can receive them. */
+    overflow: hidden;
+    min-height: 0;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
 }
 #readModeOverlay iframe, #planningModeOverlay iframe, #friendsModeOverlay iframe {
     display: block;
@@ -327,14 +333,17 @@ footer {
     align-content: start;
 }
 .rm-body.rm-iframe-wrap {
-    flex: 1 1 auto;
+    /* `height: 100%` here made the body compete with its iframe for scroll
+       events on mobile.  A zero flex basis gives the iframe its exact
+       remaining viewport height below the mode header. */
+    flex: 1 1 0;
     min-height: 0;
-    height: 100%;
+    height: auto;
     padding: 0 !important;
     display: block !important;
     position: relative;
-    overflow-y: auto !important;
-    -webkit-overflow-scrolling: touch;
+    overflow: hidden !important;
+    overscroll-behavior: contain;
     touch-action: pan-y;
 }
 
