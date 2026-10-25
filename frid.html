@@ -774,7 +774,7 @@
       <!-- Card 1: My Unique ID -->
       <div class="glass-box my-id-card">
         <div>
-          <div class="box-tag">🆔 YOUR PERMANENT CALCIUM USER ID</div>
+          <div class="box-tag">🆔 YOUR CALCIUM USER ID</div>
           <div class="my-id-top">
             <div class="my-profile-mini">
               <div class="avatar-circle" id="myAvatarBox">CA</div>
@@ -783,12 +783,12 @@
                 <div style="font-size:11px; color:#7dd3fc; font-weight:700;" id="myLevelAndMoodLabel">CA FINAL • 🔥 Locked In</div>
               </div>
             </div>
-            <div class="uid-badge-display" id="myUniqueIdDisplay">CN-000000</div>
+            <div class="uid-badge-display" id="myUniqueIdDisplay">CN-000000000</div>
           </div>
         </div>
 
         <p style="font-size:12px; color:#cbd5e1; line-height:1.45;">
-          Share your Unique ID with study partners. When they enter your ID, you will <strong>instantly connect</strong> without needing to accept requests. You'll unlock live chat, audio/video calls, timetables, and revision tasks immediately.
+          Share your Unique ID with study partners. When both users are online with the Friends hub open, the app can connect automatically without an acceptance step. If a friend is offline, ask them to add your ID too when they return; this browser-only version cannot deliver messages to an offline user.
         </p>
 
         <div class="uid-actions-row">
@@ -803,7 +803,7 @@
         <div class="box-tag">⚡ INSTANT CONNECT BY UNIQUE ID</div>
         <h3 style="font-size:16px; font-weight:800; color:#f8fafc; margin-bottom:4px;">Add a Study Partner</h3>
         <p style="font-size:12px; color:#94a3b8; margin-bottom:10px;">
-          Enter your friend's Unique ID (e.g. <code style="color:#7dd3fc;">CN-482910</code>). You will instantly connect.
+          Enter your friend's Unique ID (e.g. <code style="color:#7dd3fc;">CN-482910573</code>). Live connection works when your friend is online with the Friends hub open.
         </p>
 
         <div class="search-input-group">
@@ -811,8 +811,8 @@
             type="text"
             id="findFriendIdInput"
             class="uid-search-input"
-            placeholder="ENTER UNIQUE ID (e.g. CN-482910)"
-            maxlength="14"
+            placeholder="ENTER UNIQUE ID (e.g. CN-482910573)"
+            maxlength="15"
             onkeydown="if(event.key==='Enter') searchAndSendStudyRequest()"
           />
           <button class="f-btn emerald" onclick="searchAndSendStudyRequest()">
@@ -881,6 +881,12 @@
     let crossTabChannel = null;
     let chatHistories = {};
     let unreadMessagesMap = {};
+    const seenChatMessageIds = new Set();
+    const registeredConnections = new WeakSet();
+    const connectingByUid = new Map();
+    const deferredPackets = new Map();
+    const MAX_CHAT_HISTORY = 1000;
+    const MAX_DEFERRED_PACKETS_PER_FRIEND = 50;
 
     function getTodayDateKey() {
       const d = new Date();
@@ -903,50 +909,224 @@
       return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
     }
 
+    const CALCIUM_UID_KEY = "calcium_unique_user_id";
+    const CALCIUM_PROFILE_KEY = "calcium_user_profile_v1";
+
+    function normalizeUniqueUserId(value) {
+      const raw = String(value == null ? "" : value).trim().toUpperCase();
+      const candidate = /^\d{6,12}$/.test(raw) ? `CN-${raw}` : raw;
+      return /^CN-\d{6,12}$/.test(candidate) ? candidate : "";
+    }
+
+    function createUniqueUserId() {
+      // Nine-digit IDs reduce accidental collisions while preserving existing six-digit IDs.
+      const range = 900000000;
+      try {
+        if (window.crypto && window.crypto.getRandomValues) {
+          const limit = Math.floor(0x100000000 / range) * range;
+          const values = new Uint32Array(1);
+          let value;
+          do {
+            window.crypto.getRandomValues(values);
+            value = values[0];
+          } while (value >= limit);
+          return `CN-${100000000 + (value % range)}`;
+        }
+      } catch (e) { }
+      return `CN-${100000000 + Math.floor(Math.random() * range)}`;
+    }
+
+    function syncParentUniqueId(uid) {
+      try {
+        if (window.parent && window.parent !== window) {
+          const el = window.parent.document.getElementById("topBarUniqueId");
+          if (el) el.textContent = uid;
+        }
+      } catch (e) { /* Parent may be cross-origin; local Friends ID remains valid. */ }
+    }
+
     function ensureUniqueUserId() {
       let uid = "";
+      let prof = {};
       try {
-        uid = localStorage.getItem("calcium_unique_user_id") || "";
-        const prof = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}");
-        if (!uid && prof.uniqueId) uid = prof.uniqueId;
-        if (!uid) {
-          uid = "CN-" + Math.floor(100000 + Math.random() * 900000);
-        }
-        localStorage.setItem("calcium_unique_user_id", uid);
+        const parsed = JSON.parse(localStorage.getItem(CALCIUM_PROFILE_KEY) || "{}");
+        if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) prof = parsed;
+        uid = normalizeUniqueUserId(localStorage.getItem(CALCIUM_UID_KEY)) ||
+          normalizeUniqueUserId(prof.uniqueId) || createUniqueUserId();
+        localStorage.setItem(CALCIUM_UID_KEY, uid);
+        // Preserve existing profile fields (including fields written by older app pages).
         prof.uniqueId = uid;
-        localStorage.setItem("calcium_user_profile_v1", JSON.stringify(prof));
+        localStorage.setItem(CALCIUM_PROFILE_KEY, JSON.stringify(prof));
       } catch (e) {
-        uid = "CN-108420";
+        // Do not use a shared hard-coded fallback when storage is blocked.
+        uid = uid || normalizeUniqueUserId(prof.uniqueId) || createUniqueUserId();
       }
       myUniqueId = uid;
+      syncParentUniqueId(uid);
       return uid;
     }
 
+    function enqueueDeferredPacket(targetUid, payload) {
+      const uid = normalizeUniqueUserId(targetUid);
+      if (!uid || !payload || !payload.type) return;
+      const list = deferredPackets.get(uid) || [];
+      const signature = payload.type === "FRIEND_CHAT_MSG"
+        ? `FRIEND_CHAT_MSG:${payload.message && payload.message.messageId || ""}`
+        : `${payload.type}:${payload.type === "FRIEND_SYNC_REQUEST" ? (payload.fromUid || "") : ""}`;
+      const existing = list.findIndex(item => item.signature === signature && signature !== "FRIEND_CHAT_MSG:");
+      const record = { payload, signature, attempt: 0 };
+      if (existing >= 0) list[existing] = record;
+      else list.push(record);
+      while (list.length > MAX_DEFERRED_PACKETS_PER_FRIEND) list.shift();
+      deferredPackets.set(uid, list);
+    }
+
+    function flushDeferredPackets() {
+      if (!peerNode || !peerNode.open || peerNode.destroyed) return;
+      const pending = Array.from(deferredPackets.entries());
+      deferredPackets.clear();
+      pending.forEach(([uid, records]) => {
+        records.forEach(record => sendPacketToUser(uid, record.payload, record.attempt || 0, true));
+      });
+    }
+
     window.regenerateUniqueId = function() {
-      const newUid = "CN-" + Math.floor(100000 + Math.random() * 900000);
+      const oldUid = ensureUniqueUserId();
+      if (!window.confirm("Generate a new ID? Your saved friends and chats will be kept locally, but friends may need to add your new ID to reconnect.")) return;
+
+      let newUid = createUniqueUserId();
+      while (newUid === oldUid) newUid = createUniqueUserId();
       try {
-        localStorage.setItem("calcium_unique_user_id", newUid);
-        const prof = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}");
+        const oldFriendsKey = `calcium_friends_list_${oldUid}`;
+        const newFriendsKey = `calcium_friends_list_${newUid}`;
+        const existingFriends = localStorage.getItem(oldFriendsKey);
+        if (existingFriends && !localStorage.getItem(newFriendsKey)) localStorage.setItem(newFriendsKey, existingFriends);
+
+        const chatPrefix = `calcium_chat_${oldUid}_`;
+        const keysToMove = [];
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key && key.startsWith(chatPrefix)) keysToMove.push(key);
+        }
+        keysToMove.forEach(oldKey => {
+          const newKey = `calcium_chat_${newUid}_` + oldKey.slice(chatPrefix.length);
+          const value = localStorage.getItem(oldKey);
+          if (value !== null && !localStorage.getItem(newKey)) localStorage.setItem(newKey, value);
+        });
+
+        const prof = JSON.parse(localStorage.getItem(CALCIUM_PROFILE_KEY) || "{}");
         prof.uniqueId = newUid;
-        localStorage.setItem("calcium_user_profile_v1", JSON.stringify(prof));
-      } catch (e) {}
+        localStorage.setItem(CALCIUM_UID_KEY, newUid);
+        localStorage.setItem(CALCIUM_PROFILE_KEY, JSON.stringify(prof));
+      } catch (e) { }
+
+      Object.values(activeFriendConns).forEach(conn => { try { conn.close(); } catch (e) { } });
+      activeFriendConns = {};
+      connectingByUid.forEach(record => {
+        clearTimeout(record.retryTimer);
+        try { record.conn.close(); } catch (e) { }
+      });
+      connectingByUid.clear();
+      deferredPackets.clear(); // Packets created under the old ID must not be sent with stale sender IDs.
+      try { if (crossTabChannel) crossTabChannel.close(); } catch (e) { }
+      crossTabChannel = null;
+      try { if (peerNode) peerNode.destroy(); } catch (e) { }
+      peerNode = null;
       myUniqueId = newUid;
+      syncParentUniqueId(newUid);
       renderMyHeaderInfo();
-      initNetworkHub();
-      showToast(`🎲 Generated new Unique ID: ${newUid}`);
+      renderSidebarLists();
+      renderSelectedFriendInspector();
+      setTimeout(initNetworkHub, 500);
+      showToast(`🎲 New ID generated: ${newUid}. Ask friends to update your ID to reconnect.`);
     };
+
+    function safeText(value, fallback = "", maxLength = 500) {
+      if (typeof value !== "string" && typeof value !== "number") return fallback;
+      return String(value).replace(/[\u0000-\u001F\u007F]/g, " ").trim().slice(0, maxLength) || fallback;
+    }
+
+    function safeNumber(value, fallback = 0, min = 0, max = 1000000) {
+      if (value === null || value === undefined || value === "") return fallback;
+      const number = Number(value);
+      return Number.isFinite(number) ? Math.min(max, Math.max(min, number)) : fallback;
+    }
+
+    function safeAvatar(value) {
+      if (typeof value !== "string") return "";
+      const src = value.trim();
+      // App profile photos are compressed to base64 image data URLs. Exclude SVG and executable URLs.
+      return /^data:image\/(?:png|jpeg|webp|gif);base64,[a-z0-9+/=\s]+$/i.test(src) && src.length <= 2_000_000 ? src : "";
+    }
+
+    function sanitizeFriendSnapshot(input, fallbackUid = "") {
+      const source = input && typeof input === "object" && !Array.isArray(input) ? input : {};
+      const uid = normalizeUniqueUserId(source.uid) || normalizeUniqueUserId(fallbackUid);
+      if (!uid) return null;
+      const timetableSource = Array.isArray(source.timetable) ? source.timetable : [];
+      const tasksSource = Array.isArray(source.tasks) ? source.tasks : [];
+      const timetable = timetableSource.slice(0, 100).filter(slot => slot && typeof slot === "object").map(slot => ({
+        id: safeText(slot.id, "fr", 40),
+        subject: safeText(slot.subject, "", 80),
+        startTime: safeText(slot.startTime, "06:00", 20),
+        endTime: safeText(slot.endTime, "08:00", 20),
+        estimated: safeText(slot.estimated, "00:00", 20),
+        actual: safeText(slot.actual, "00:00", 20),
+        timerState: Boolean(slot.timerState)
+      }));
+      const tasks = tasksSource.slice(0, 500).filter(task => task && typeof task === "object").map(task => ({
+        text: safeText(task.text, "", 500),
+        pri: ["high", "med", "low"].includes(task.pri) ? task.pri : "med",
+        done: Boolean(task.done),
+        id: safeText(task.id, "", 80)
+      })).filter(task => task.text);
+
+      return {
+        uid,
+        name: safeText(source.name, `CA Partner (${uid})`, 80),
+        level: ["foundation", "inter", "final"].includes(String(source.level || "").toLowerCase()) ? String(source.level).toLowerCase() : "final",
+        moodEmoji: safeText(source.moodEmoji, "🔥", 12),
+        moodText: safeText(source.moodText, "Locked In", 80),
+        attempt: safeText(source.attempt, "", 80),
+        group: safeText(source.group, "Both Groups", 80),
+        dailyGoal: safeNumber(source.dailyGoal, 10, 0, 24),
+        city: safeText(source.city, "India", 100),
+        bio: safeText(source.bio, "", 1000),
+        avatar: safeAvatar(source.avatar),
+        online: Boolean(source.online),
+        isStudying: Boolean(source.isStudying),
+        activeSubject: safeText(source.activeSubject, "Planning", 80),
+        totalActualHours: safeText(source.totalActualHours, "00:00", 20),
+        totalEstHours: safeText(source.totalEstHours, "00:00", 20),
+        efficiency: safeNumber(source.efficiency, 0, 0, 100),
+        timetable,
+        tasks,
+        lastSeen: safeNumber(source.lastSeen, 0, 0, Number.MAX_SAFE_INTEGER),
+        updatedAt: safeNumber(source.updatedAt, 0, 0, Number.MAX_SAFE_INTEGER)
+      };
+    }
 
     function buildMyFullSnapshot() {
       let prof = {};
       let allPlans = {};
       let tasks = [];
-      try { prof = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}"); } catch (e) {}
-      try { allPlans = JSON.parse(localStorage.getItem("calcium_ca_data_v5") || "{}"); } catch (e) {}
-      try { tasks = JSON.parse(localStorage.getItem("cn_tasks") || "[]"); } catch (e) {}
+      try {
+        const parsed = JSON.parse(localStorage.getItem("calcium_user_profile_v1") || "{}");
+        if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) prof = parsed;
+      } catch (e) { }
+      try {
+        const parsedPlans = JSON.parse(localStorage.getItem("calcium_ca_data_v5") || "{}");
+        if (parsedPlans && typeof parsedPlans === "object" && !Array.isArray(parsedPlans)) allPlans = parsedPlans;
+      } catch (e) { }
+      try {
+        const parsedTasks = JSON.parse(localStorage.getItem("cn_tasks") || "[]");
+        if (Array.isArray(parsedTasks)) tasks = parsedTasks;
+      } catch (e) { }
 
-      const name = prof.name || localStorage.getItem("calcium_user_name") || "CA Aspirant";
-      const level = prof.level || localStorage.getItem("calcium_ca_level") || "final";
-      const todaySlots = allPlans[getTodayDateKey()] || [];
+      const name = safeText(prof.name || localStorage.getItem("calcium_user_name"), "CA Aspirant", 80);
+      const level = safeText(prof.level || localStorage.getItem("calcium_ca_level"), "final", 20).toLowerCase();
+      const slotsRaw = allPlans[getTodayDateKey()];
+      const todaySlots = Array.isArray(slotsRaw) ? slotsRaw.filter(slot => slot && typeof slot === "object") : [];
 
       let totalEst = 0;
       let totalAct = 0;
@@ -956,64 +1136,76 @@
       const normalizedSlots = todaySlots.map(slot => {
         const est = hhmmToDec(slot.estimated);
         let act = hhmmToDec(slot.actual);
-        const sLabel = SUBJECT_LABELS[slot.id] || (slot.id || "FR").toUpperCase();
+        const sLabel = SUBJECT_LABELS[slot.id] || safeText(slot.id, "FR", 40).toUpperCase();
         if (slot.timerState) {
           isStudying = true;
           activeSubject = sLabel;
-          const elapsed = Date.now() - (slot.timerStart || Date.now());
-          act = ((slot.accumulatedMs || 0) + elapsed) / 3600000;
+          const elapsed = Math.max(0, Date.now() - safeNumber(slot.timerStart, Date.now(), 0, Number.MAX_SAFE_INTEGER));
+          act = (safeNumber(slot.accumulatedMs, 0, 0, Number.MAX_SAFE_INTEGER) + elapsed) / 3600000;
         }
         totalEst += est;
         totalAct += act;
         return {
-          id: slot.id,
+          id: safeText(slot.id, "fr", 40),
           subject: sLabel,
-          startTime: slot.startTime || "06:00",
-          endTime: slot.endTime || "08:00",
+          startTime: safeText(slot.startTime, "06:00", 20),
+          endTime: safeText(slot.endTime, "08:00", 20),
           estimated: decToHHMM(est),
           actual: decToHHMM(act),
-          timerState: !!slot.timerState
+          timerState: Boolean(slot.timerState)
         };
       });
 
       const efficiency = totalEst > 0 ? Math.min(100, Math.round((totalAct / totalEst) * 100)) : 0;
-
-      return {
+      const snapshot = {
         uid: myUniqueId,
-        name: name,
-        level: level,
-        moodEmoji: prof.moodEmoji || "🔥",
-        moodText: prof.moodText || "Locked In",
-        attempt: prof.attempt || "May 2027",
-        group: prof.group || "Both Groups",
-        dailyGoal: prof.dailyGoal || 10,
-        city: prof.city || "ICAI India",
-        bio: prof.bio || "Focused on clearing CA exams with consistency!",
-        avatar: prof.avatar || "",
+        name,
+        level: ["foundation", "inter", "final"].includes(level) ? level : "final",
+        moodEmoji: safeText(prof.moodEmoji, "🔥", 12),
+        moodText: safeText(prof.moodText, "Locked In", 80),
+        attempt: safeText(prof.attempt, "May 2027", 80),
+        group: safeText(prof.group, "Both Groups", 80),
+        dailyGoal: safeNumber(prof.dailyGoal, 10, 0, 24) || 10,
+        city: safeText(prof.city, "ICAI India", 100),
+        bio: safeText(prof.bio, "Focused on clearing CA exams with consistency!", 1000),
+        avatar: safeAvatar(prof.avatar),
         online: true,
-        isStudying: isStudying,
-        activeSubject: activeSubject,
+        isStudying,
+        activeSubject,
         totalActualHours: decToHHMM(totalAct),
         totalEstHours: decToHHMM(totalEst),
-        efficiency: efficiency,
+        efficiency,
         timetable: normalizedSlots,
-        tasks: tasks,
+        tasks: tasks.slice(0, 500).filter(t => t && typeof t === "object").map(t => ({
+          text: safeText(t.text, "", 500),
+          pri: ["high", "med", "low"].includes(t.pri) ? t.pri : "med",
+          done: Boolean(t.done),
+          id: safeText(t.id, "", 80)
+        })).filter(t => t.text),
         lastSeen: Date.now(),
         updatedAt: Date.now()
       };
+      return snapshot;
     }
 
     function getSavedFriendsMap() {
       try {
         const raw = localStorage.getItem(`calcium_friends_list_${myUniqueId}`);
         if (!raw) return {};
-        const map = JSON.parse(raw) || {};
-        let changed = false;
-        REMOVED_DEMO_IDS.forEach(id => {
-          if (map[id]) { delete map[id]; changed = true; }
+        const parsed = JSON.parse(raw);
+        if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
+        const normalized = {};
+        Object.entries(parsed).forEach(([key, value]) => {
+          const uid = normalizeUniqueUserId((value && value.uid) || key);
+          if (!uid || uid === myUniqueId || REMOVED_DEMO_IDS.includes(uid)) return;
+          const friend = sanitizeFriendSnapshot(value, uid);
+          if (!friend) return;
+          normalized[uid] = friend;
         });
-        if (changed) localStorage.setItem(`calcium_friends_list_${myUniqueId}`, JSON.stringify(map));
-        return map;
+        if (JSON.stringify(normalized) !== JSON.stringify(parsed)) {
+          localStorage.setItem(`calcium_friends_list_${myUniqueId}`, JSON.stringify(normalized));
+        }
+        return normalized;
       } catch (e) {
         return {};
       }
@@ -1021,27 +1213,44 @@
 
     function saveFriendsMap(map) {
       try {
-        localStorage.setItem(`calcium_friends_list_${myUniqueId}`, JSON.stringify(map));
-      } catch (e) {}
+        const safeMap = {};
+        Object.entries(map && typeof map === "object" ? map : {}).forEach(([key, value]) => {
+          const uid = normalizeUniqueUserId((value && value.uid) || key);
+          const friend = sanitizeFriendSnapshot(value, uid);
+          if (friend && uid !== myUniqueId && !REMOVED_DEMO_IDS.includes(uid)) safeMap[uid] = friend;
+        });
+        localStorage.setItem(`calcium_friends_list_${myUniqueId}`, JSON.stringify(safeMap));
+      } catch (e) { }
     }
 
     function getChatHistory(friendUid) {
-      if (!chatHistories[friendUid]) {
+      const uid = normalizeUniqueUserId(friendUid);
+      if (!uid) return [];
+      if (!Array.isArray(chatHistories[uid])) {
         try {
-          const raw = localStorage.getItem(`calcium_chat_${myUniqueId}_${friendUid}`);
-          chatHistories[friendUid] = raw ? JSON.parse(raw) : [];
+          const raw = localStorage.getItem(`calcium_chat_${myUniqueId}_${uid}`);
+          const parsed = raw ? JSON.parse(raw) : [];
+          chatHistories[uid] = Array.isArray(parsed) ? parsed.filter(m => m && typeof m === "object").slice(-MAX_CHAT_HISTORY).map(m => ({
+            messageId: safeText(m.messageId, "", 100),
+            sender: m.sender === "me" ? "me" : "friend",
+            text: safeText(m.text, "", 4000),
+            time: safeText(m.time, "", 40)
+          })) : [];
         } catch (e) {
-          chatHistories[friendUid] = [];
+          chatHistories[uid] = [];
         }
       }
-      return chatHistories[friendUid];
+      return chatHistories[uid];
     }
 
     function saveChatHistory(friendUid, list) {
-      chatHistories[friendUid] = list;
+      const uid = normalizeUniqueUserId(friendUid);
+      if (!uid) return;
+      const safeList = (Array.isArray(list) ? list : []).filter(m => m && typeof m === "object").slice(-MAX_CHAT_HISTORY);
+      chatHistories[uid] = safeList;
       try {
-        localStorage.setItem(`calcium_chat_${myUniqueId}_${friendUid}`, JSON.stringify(list));
-      } catch (e) {}
+        localStorage.setItem(`calcium_chat_${myUniqueId}_${uid}`, JSON.stringify(safeList));
+      } catch (e) { }
     }
 
     function toPeerId(uid) {
@@ -1051,24 +1260,62 @@
     /* =========================================================================
        CROSS-PC & CROSS-BROWSER NETWORK HUB (PEERJS + GOOGLE STUN + LOCALSTORAGE)
     ========================================================================= */
+    function uidFromPeerId(peerId) {
+      const raw = String(peerId || "");
+      const prefix = "calcium-uid-";
+      if (!raw.toLowerCase().startsWith(prefix)) return "";
+      return normalizeUniqueUserId(raw.slice(prefix.length));
+    }
+
+    function registerPeerConnection(conn, knownUid = "") {
+      if (!conn || (typeof conn !== "object" && typeof conn !== "function")) return;
+      const remoteFromConn = uidFromPeerId(conn.peer);
+      const requestedUid = normalizeUniqueUserId(knownUid);
+      const remoteUid = requestedUid || remoteFromConn;
+      if (!remoteUid || remoteUid === myUniqueId) return;
+      // For inbound connections, trust the ID encoded in the PeerJS connection, not payload text.
+      if (remoteFromConn && requestedUid && remoteFromConn !== requestedUid) return;
+      if (registeredConnections.has(conn)) return;
+      registeredConnections.add(conn);
+
+      const remember = () => { activeFriendConns[remoteUid] = conn; };
+      if (conn.open) remember();
+      conn.on("open", remember);
+      conn.on("data", payload => handleIncomingFriendProtocol(payload, conn));
+      conn.on("close", () => {
+        if (activeFriendConns[remoteUid] === conn) delete activeFriendConns[remoteUid];
+      });
+      conn.on("error", () => {
+        if (activeFriendConns[remoteUid] === conn) delete activeFriendConns[remoteUid];
+      });
+    }
+
     function initNetworkHub() {
       ensureUniqueUserId();
 
-      // 1. BroadcastChannel for same-browser tabs
+      // Same-browser tabs can exchange envelopes; remote devices use PeerJS/WebRTC.
       try {
         if (crossTabChannel) crossTabChannel.close();
         crossTabChannel = new BroadcastChannel("calcium_friends_network_v1");
         crossTabChannel.onmessage = (ev) => {
           const data = ev.data;
-          if (!data || data.targetUid !== myUniqueId) return;
+          if (!data || normalizeUniqueUserId(data.targetUid) !== myUniqueId) return;
           handleIncomingFriendProtocol(data.payload, null);
         };
-      } catch (e) {}
+      } catch (e) { crossTabChannel = null; }
 
-      // 2. PeerJS WebRTC node with STUN config for GitHub Pages cross-PC traversal
-      if (typeof Peer === "undefined") return;
+      if (typeof Peer === "undefined") {
+        const badgeTxt = document.getElementById("peerNetworkText");
+        if (badgeTxt) badgeTxt.textContent = "PeerJS failed to load — check your internet connection.";
+        return;
+      }
       try {
-        if (peerNode) { try { peerNode.destroy(); } catch (e) {} }
+        connectingByUid.forEach(record => {
+          clearTimeout(record.retryTimer);
+          try { record.conn.close(); } catch (e) { }
+        });
+        connectingByUid.clear();
+        if (peerNode) { try { peerNode.destroy(); } catch (e) { } }
         activeFriendConns = {};
         peerNode = new Peer(toPeerId(myUniqueId), {
           config: {
@@ -1080,173 +1327,252 @@
         });
 
         peerNode.on("open", () => {
-          window._peerRetry = 0;
           const badgeTxt = document.getElementById("peerNetworkText");
-          if (badgeTxt) badgeTxt.textContent = `P2P Network Live: ${myUniqueId}`;
-          syncAllOnlineFriends();
+          if (badgeTxt) badgeTxt.textContent = `P2P ready — your ID is ${myUniqueId}`;
+          flushDeferredPackets();
+          window.syncAllOnlineFriends();
         });
 
-        peerNode.on("connection", (conn) => {
-          conn.on("data", (payload) => {
-            handleIncomingFriendProtocol(payload, conn);
-          });
-        });
+        peerNode.on("connection", conn => registerPeerConnection(conn));
 
-        peerNode.on("error", (err) => {
+        peerNode.on("error", err => {
           const badgeTxt = document.getElementById("peerNetworkText");
-          if (err && err.type === "unavailable-id") {
-            // Old session still holding our ID on the signaling server: retry shortly
-            if (badgeTxt) badgeTxt.textContent = "Reconnecting P2P...";
-            window._peerRetry = (window._peerRetry || 0) + 1;
-            if (window._peerRetry <= 10) setTimeout(initNetworkHub, 3000);
+          const type = err && err.type ? err.type : "network-error";
+          if (type === "unavailable-id") {
+            if (badgeTxt) badgeTxt.textContent = "This ID is already active in another tab/session. Close duplicate Friends tabs, or use New ID if the issue persists.";
             return;
           }
-          if (err && err.type === "peer-unavailable") return; // friend is offline right now
-          if (badgeTxt) badgeTxt.textContent = `P2P ID Active (${myUniqueId})`;
+          if (type === "peer-unavailable") return;
+          if (badgeTxt) badgeTxt.textContent = `P2P connection issue (${type}). Check your internet and reload.`;
         });
 
         peerNode.on("disconnected", () => {
-          try { peerNode.reconnect(); } catch (e) {}
+          const badgeTxt = document.getElementById("peerNetworkText");
+          if (badgeTxt) badgeTxt.textContent = "P2P reconnecting…";
+          try { if (peerNode && !peerNode.destroyed) peerNode.reconnect(); } catch (e) { }
         });
-      } catch (e) {}
+      } catch (e) {
+        const badgeTxt = document.getElementById("peerNetworkText");
+        if (badgeTxt) badgeTxt.textContent = "Could not start P2P. Check internet access and reload.";
+      }
     }
 
-    function sendPacketToUser(targetUid, payload, forceFresh = false, attempt = 0) {
-      const cleanTarget = targetUid.trim().toUpperCase();
+    function packetIsCritical(payload) {
+      return !!payload && ["AUTO_ADD_FRIEND", "FRIEND_REMOVED", "FRIEND_CHAT_MSG", "FRIEND_SYNC_DATA"].includes(payload.type);
+    }
 
-      // Same-browser + same-origin fallbacks (only on first attempt)
-      if (attempt === 0) {
+    function queuePayloadOnce(list, payload, attempt) {
+      const signature = payload && payload.type === "FRIEND_CHAT_MSG"
+        ? `FRIEND_CHAT_MSG:${payload.message && payload.message.messageId || ""}`
+        : `${payload && payload.type || "unknown"}:${payload && payload.fromUid || ""}`;
+      if (payload && payload.type === "FRIEND_CHAT_MSG" && (!payload.message || !payload.message.messageId)) {
+        list.push({ payload, attempt });
+        return;
+      }
+      const existing = list.findIndex(item => {
+        const itemSig = item.payload && item.payload.type === "FRIEND_CHAT_MSG"
+          ? `FRIEND_CHAT_MSG:${item.payload.message && item.payload.message.messageId || ""}`
+          : `${item.payload && item.payload.type || "unknown"}:${item.payload && item.payload.fromUid || ""}`;
+        return itemSig === signature;
+      });
+      const entry = { payload, attempt };
+      if (existing >= 0) list[existing] = entry;
+      else list.push(entry);
+    }
+
+    function sendPacketToUser(targetUid, payload, attempt = 0, skipLocalFallback = false) {
+      const cleanTarget = normalizeUniqueUserId(targetUid);
+      if (!cleanTarget || cleanTarget === myUniqueId || !payload || typeof payload !== "object" || !payload.type) return;
+
+      // Same-origin fallback. Unique keys prevent rapid messages from overwriting each other.
+      if (attempt === 0 && !skipLocalFallback) {
         try {
-          if (crossTabChannel) crossTabChannel.postMessage({ targetUid: cleanTarget, payload: payload });
-        } catch (e) {}
+          if (crossTabChannel) crossTabChannel.postMessage({ targetUid: cleanTarget, payload });
+        } catch (e) { }
         try {
-          const envelope = { targetUid: cleanTarget, payload: payload, nonce: Math.random() };
-          localStorage.setItem(`calcium_p2p_envelope_${cleanTarget}`, JSON.stringify(envelope));
-          setTimeout(() => localStorage.removeItem(`calcium_p2p_envelope_${cleanTarget}`), 1000);
-        } catch (e) {}
+          const nonce = (window.crypto && window.crypto.randomUUID)
+            ? window.crypto.randomUUID()
+            : `${Date.now()}_${Math.random().toString(36).slice(2)}`;
+          const key = `calcium_p2p_envelope_${cleanTarget}_${nonce}`;
+          localStorage.setItem(key, JSON.stringify({ targetUid: cleanTarget, payload, nonce }));
+          setTimeout(() => { try { localStorage.removeItem(key); } catch (e) { } }, 10000);
+        } catch (e) { }
       }
 
-      if (!peerNode || peerNode.destroyed) return;
-      if (peerNode.disconnected) { try { peerNode.reconnect(); } catch (e) {} }
+      if (!peerNode || peerNode.destroyed) {
+        if (packetIsCritical(payload)) enqueueDeferredPacket(cleanTarget, payload);
+        return;
+      }
+      if (!peerNode.open) {
+        if (packetIsCritical(payload)) enqueueDeferredPacket(cleanTarget, payload);
+        return;
+      }
+      if (peerNode.disconnected) {
+        try { peerNode.reconnect(); } catch (e) { }
+        if (packetIsCritical(payload)) enqueueDeferredPacket(cleanTarget, payload);
+        return;
+      }
 
       const existing = activeFriendConns[cleanTarget];
-      if (forceFresh && existing) {
-        delete activeFriendConns[cleanTarget];
-        try { existing.close(); } catch (e) {}
-      } else if (existing && existing.open) {
+      if (existing && existing.open) {
         try { existing.send(payload); return; }
-        catch (e) { delete activeFriendConns[cleanTarget]; }
+        catch (e) { if (activeFriendConns[cleanTarget] === existing) delete activeFriendConns[cleanTarget]; }
       }
 
-      const critical = ["AUTO_ADD_FRIEND", "FRIEND_REMOVED", "FRIEND_CHAT_MSG"].includes(payload.type);
+      const pending = connectingByUid.get(cleanTarget);
+      if (pending) {
+        queuePayloadOnce(pending.payloads, payload, attempt);
+        return;
+      }
+
       let conn;
       try {
         conn = peerNode.connect(toPeerId(cleanTarget), { reliable: true });
-      } catch (e) { return; }
-
-      let opened = false;
-      const retryTimer = setTimeout(() => {
-        if (opened) return;
-        try { conn.close(); } catch (e) {}
-        if (critical && attempt < 3) {
-          setTimeout(() => sendPacketToUser(cleanTarget, payload, true, attempt + 1), 1500);
+      } catch (e) {
+        if (packetIsCritical(payload) && attempt < 3) {
+          setTimeout(() => sendPacketToUser(cleanTarget, payload, attempt + 1, true), 1200);
         }
-      }, 8000);
+        return;
+      }
 
+      const record = { conn, payloads: [{ payload, attempt }], retryTimer: null };
+      connectingByUid.set(cleanTarget, record);
+      registerPeerConnection(conn, cleanTarget);
+
+      const failPending = () => {
+        if (connectingByUid.get(cleanTarget) !== record) return;
+        connectingByUid.delete(cleanTarget);
+        clearTimeout(record.retryTimer);
+        const retryList = record.payloads.filter(item => packetIsCritical(item.payload) && item.attempt < 3);
+        try { conn.close(); } catch (e) { }
+        if (retryList.length) {
+          setTimeout(() => {
+            retryList.forEach(item => sendPacketToUser(cleanTarget, item.payload, item.attempt + 1, true));
+          }, 1200);
+        }
+      };
+
+      record.retryTimer = setTimeout(failPending, 8000);
       conn.on("open", () => {
-        opened = true;
-        clearTimeout(retryTimer);
+        if (connectingByUid.get(cleanTarget) !== record) return;
+        connectingByUid.delete(cleanTarget);
+        clearTimeout(record.retryTimer);
         activeFriendConns[cleanTarget] = conn;
-        try { conn.send(payload); } catch (e) {}
+        record.payloads.forEach(item => {
+          try { conn.send(item.payload); }
+          catch (e) {
+            if (packetIsCritical(item.payload) && item.attempt < 3) {
+              setTimeout(() => sendPacketToUser(cleanTarget, item.payload, item.attempt + 1, true), 1200);
+            }
+          }
+        });
       });
-      conn.on("data", (reply) => handleIncomingFriendProtocol(reply, conn));
-      conn.on("close", () => {
-        if (activeFriendConns[cleanTarget] === conn) delete activeFriendConns[cleanTarget];
-      });
-      conn.on("error", () => {
-        if (activeFriendConns[cleanTarget] === conn) delete activeFriendConns[cleanTarget];
-      });
+      conn.on("close", failPending);
+      conn.on("error", failPending);
     }
 
     window.addEventListener("storage", (ev) => {
       if (ev.key && ev.key.startsWith("calcium_p2p_envelope_") && ev.newValue) {
         try {
           const parsed = JSON.parse(ev.newValue);
-          if (parsed && parsed.targetUid === myUniqueId && parsed.payload) {
+          if (parsed && normalizeUniqueUserId(parsed.targetUid) === myUniqueId && parsed.payload) {
             handleIncomingFriendProtocol(parsed.payload, null);
           }
-        } catch (e) {}
+        } catch (e) { }
       }
       if (ev.key === `calcium_friends_list_${myUniqueId}`) {
         renderSidebarLists();
         renderSelectedFriendInspector();
+        notifyParentBadgeCount();
+      }
+      if (ev.key === CALCIUM_UID_KEY || ev.key === CALCIUM_PROFILE_KEY) {
+        ensureUniqueUserId();
+        renderMyHeaderInfo();
       }
     });
 
-    function handleIncomingFriendProtocol(payload, conn) {
-      if (!payload || !payload.type) return;
+    function verifiedSenderUid(rawUid, conn) {
+      const uid = normalizeUniqueUserId(rawUid);
+      if (!uid) return "";
+      if (conn) {
+        const transportUid = uidFromPeerId(conn.peer);
+        if (!transportUid || transportUid !== uid) return "";
+      }
+      return uid;
+    }
 
-      // Handle Instant Auto-Add
+    function handleIncomingFriendProtocol(payload, conn) {
+      if (!payload || typeof payload !== "object" || !payload.type) return;
+
       if (payload.type === "AUTO_ADD_FRIEND" && payload.snapshot) {
-        const friendSnap = payload.snapshot;
+        const fromUid = verifiedSenderUid(payload.fromUid || payload.snapshot.uid, conn);
+        const friendSnap = sanitizeFriendSnapshot(payload.snapshot, fromUid);
+        if (!fromUid || !friendSnap || friendSnap.uid !== fromUid || friendSnap.uid === myUniqueId) return;
         friendSnap.online = true;
         friendSnap.lastSeen = Date.now();
         const friendsMap = getSavedFriendsMap();
         friendsMap[friendSnap.uid] = friendSnap;
         saveFriendsMap(friendsMap);
-
         renderSidebarLists();
         if (selectedFriendUid === friendSnap.uid) renderSelectedFriendInspector();
         notifyParentBadgeCount();
 
-        // Send our data back so they get our real profile instead of the placeholder
-        const reply = {
-          type: "FRIEND_SYNC_DATA",
-          fromUid: myUniqueId,
-          snapshot: buildMyFullSnapshot()
-        };
-        if (conn && conn.open) conn.send(reply);
-        else sendPacketToUser(payload.fromUid || friendSnap.uid, reply);
+        const reply = { type: "FRIEND_SYNC_DATA", fromUid: myUniqueId, snapshot: buildMyFullSnapshot() };
+        if (conn && conn.open) {
+          try { conn.send(reply); } catch (e) { sendPacketToUser(friendSnap.uid, reply); }
+        } else {
+          sendPacketToUser(friendSnap.uid, reply);
+        }
       }
       else if (payload.type === "FRIEND_SYNC_REQUEST" && payload.fromUid) {
+        const fromUid = verifiedSenderUid(payload.fromUid, conn);
+        if (!fromUid || fromUid === myUniqueId) return;
         const friendsMap = getSavedFriendsMap();
-        if (friendsMap[payload.fromUid]) {
-          if (payload.snapshot) {
-            friendsMap[payload.fromUid] = { ...payload.snapshot, online: true, lastSeen: Date.now() };
+        if (friendsMap[fromUid]) {
+          const incomingSnapshot = payload.snapshot ? sanitizeFriendSnapshot(payload.snapshot, fromUid) : null;
+          if (incomingSnapshot && incomingSnapshot.uid === fromUid) {
+            incomingSnapshot.online = true;
+            incomingSnapshot.lastSeen = Date.now();
+            friendsMap[fromUid] = incomingSnapshot;
             saveFriendsMap(friendsMap);
             renderSidebarLists();
-            if (selectedFriendUid === payload.fromUid) renderSelectedFriendInspector();
+            if (selectedFriendUid === fromUid) renderSelectedFriendInspector();
           }
-          const reply = {
-            type: "FRIEND_SYNC_DATA",
-            fromUid: myUniqueId,
-            snapshot: buildMyFullSnapshot()
-          };
-          if (conn && conn.open) conn.send(reply);
-          else sendPacketToUser(payload.fromUid, reply);
+          const reply = { type: "FRIEND_SYNC_DATA", fromUid: myUniqueId, snapshot: buildMyFullSnapshot() };
+          if (conn && conn.open) {
+            try { conn.send(reply); } catch (e) { sendPacketToUser(fromUid, reply); }
+          } else {
+            sendPacketToUser(fromUid, reply);
+          }
         }
       }
       else if (payload.type === "FRIEND_SYNC_DATA" && payload.snapshot) {
+        const snapshotUid = verifiedSenderUid(payload.fromUid || payload.snapshot.uid, conn);
+        if (!snapshotUid || snapshotUid !== normalizeUniqueUserId(payload.snapshot.uid) || snapshotUid === myUniqueId) return;
+        const snapshot = sanitizeFriendSnapshot(payload.snapshot, snapshotUid);
+        if (!snapshot) return;
         const friendsMap = getSavedFriendsMap();
-        if (friendsMap[payload.snapshot.uid]) {
-          friendsMap[payload.snapshot.uid] = { ...payload.snapshot, online: true, lastSeen: Date.now() };
+        if (friendsMap[snapshotUid]) {
+          snapshot.online = true;
+          snapshot.lastSeen = Date.now();
+          friendsMap[snapshotUid] = snapshot;
           saveFriendsMap(friendsMap);
           renderSidebarLists();
-          if (selectedFriendUid === payload.snapshot.uid) {
-            renderSelectedFriendInspector();
-          }
+          if (selectedFriendUid === snapshotUid) renderSelectedFriendInspector();
         }
       }
       else if (payload.type === "FRIEND_REMOVED" && payload.fromUid) {
+        const gone = verifiedSenderUid(payload.fromUid, conn);
+        if (!gone) return;
         const friendsMap = getSavedFriendsMap();
-        const gone = payload.fromUid.trim().toUpperCase();
         if (friendsMap[gone] && !DEMO_DIRECTORY[gone]) {
           const nm = friendsMap[gone].name;
           delete friendsMap[gone];
           delete unreadMessagesMap[gone];
+          delete chatHistories[gone];
           saveFriendsMap(friendsMap);
           if (activeFriendConns[gone]) {
-            try { activeFriendConns[gone].close(); } catch (e) {}
+            try { activeFriendConns[gone].close(); } catch (e) { }
             delete activeFriendConns[gone];
           }
           if (selectedFriendUid === gone) {
@@ -1260,15 +1586,29 @@
         }
       }
       else if (payload.type === "FRIEND_CHAT_MSG" && payload.fromUid && payload.message) {
-        const history = getChatHistory(payload.fromUid);
-        history.push(payload.message);
-        saveChatHistory(payload.fromUid, history);
+        const fromUid = verifiedSenderUid(payload.fromUid, conn);
+        if (!fromUid || fromUid === myUniqueId) return;
+        const incomingMessageId = safeText(payload.message.messageId, "", 100);
+        const history = getChatHistory(fromUid);
+        if (incomingMessageId && (seenChatMessageIds.has(incomingMessageId) || history.some(message => message.messageId === incomingMessageId))) return;
+        if (incomingMessageId) {
+          seenChatMessageIds.add(incomingMessageId);
+          if (seenChatMessageIds.size > 1000) seenChatMessageIds.delete(seenChatMessageIds.values().next().value);
+        }
+        const message = {
+          messageId: incomingMessageId,
+          sender: "friend",
+          text: safeText(payload.message.text, "", 4000),
+          time: safeText(payload.message.time, new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }), 40)
+        };
+        history.push(message);
+        saveChatHistory(fromUid, history);
 
-        if (selectedFriendUid !== payload.fromUid || currentInspectorTab !== "chat") {
-          unreadMessagesMap[payload.fromUid] = true;
+        if (selectedFriendUid !== fromUid || currentInspectorTab !== "chat") {
+          unreadMessagesMap[fromUid] = true;
         }
 
-        if (selectedFriendUid === payload.fromUid && currentInspectorTab === "chat") {
+        if (selectedFriendUid === fromUid && currentInspectorTab === "chat") {
           const activeEl = document.activeElement;
           const isTyping = activeEl && activeEl.id === "friendChatInput";
           if (!isTyping) {
@@ -1277,10 +1617,10 @@
             const area = document.getElementById("chatMessagesArea");
             if (area) {
               const friendsMap = getSavedFriendsMap();
-              const fName = friendsMap[payload.fromUid] ? friendsMap[payload.fromUid].name : payload.fromUid;
+              const fName = friendsMap[fromUid] ? friendsMap[fromUid].name : fromUid;
               const msgDiv = document.createElement("div");
               msgDiv.className = "chat-bubble incoming";
-              msgDiv.innerHTML = `<div style="font-size:10px; opacity:0.75; margin-bottom:2px;">${escapeHtml(fName)} • ${payload.message.time}</div><div>${escapeHtml(payload.message.text)}</div>`;
+              msgDiv.innerHTML = `<div style="font-size:10px; opacity:0.75; margin-bottom:2px;">${escapeHtml(fName)} • ${escapeHtml(message.time)}</div><div>${escapeHtml(message.text)}</div>`;
               area.appendChild(msgDiv);
               area.scrollTop = area.scrollHeight;
             }
@@ -1291,18 +1631,19 @@
     }
 
     window.syncAllOnlineFriends = function() {
+      if (!myUniqueId) ensureUniqueUserId();
       const friendsMap = getSavedFriendsMap();
       const mySnap = buildMyFullSnapshot();
       const now = Date.now();
 
       Object.keys(friendsMap).forEach(uid => {
-        const lastSeen = friendsMap[uid].lastSeen || 0;
-        if (now - lastSeen > 45000 && !DEMO_DIRECTORY[uid]) {
-          friendsMap[uid].online = false;
-        }
+        const friend = friendsMap[uid];
+        if (!friend) return;
+        const lastSeen = safeNumber(friend.lastSeen, 0, 0, Number.MAX_SAFE_INTEGER);
+        if (now - lastSeen > 45000 && !DEMO_DIRECTORY[uid]) friend.online = false;
 
         if (DEMO_DIRECTORY[uid]) {
-          friendsMap[uid].online = true;
+          friend.online = true;
         } else {
           sendPacketToUser(uid, {
             type: "FRIEND_SYNC_REQUEST",
@@ -1313,6 +1654,7 @@
       });
       saveFriendsMap(friendsMap);
       renderSidebarLists();
+      notifyParentBadgeCount();
     };
 
     window.fillDemoId = function(uid) {
@@ -1322,15 +1664,17 @@
 
     window.searchAndSendStudyRequest = function() {
       const inp = document.getElementById("findFriendIdInput");
-      let targetUid = (inp ? inp.value : "").trim().toUpperCase();
-      if (!targetUid) {
+      const enteredValue = (inp ? inp.value : "").trim();
+      if (!enteredValue) {
         showToast("⚠️ Enter a friend's Unique ID first!");
         return;
       }
-      if (!targetUid.startsWith("CN-") && /^\d+$/.test(targetUid)) {
-        targetUid = "CN-" + targetUid;
-        if (inp) inp.value = targetUid;
+      const targetUid = normalizeUniqueUserId(enteredValue);
+      if (!targetUid) {
+        showToast("⚠️ Invalid ID. Enter CN- followed by 6–12 digits.");
+        return;
       }
+      if (inp) inp.value = targetUid;
       if (targetUid === myUniqueId) {
         showToast("⚠️ You cannot connect with your own Unique ID.");
         return;
@@ -1345,10 +1689,10 @@
           type: "AUTO_ADD_FRIEND",
           fromUid: myUniqueId,
           snapshot: mySnap
-        }, true);
+        });
         renderSidebarLists();
         renderSelectedFriendInspector();
-        showToast(`🔄 Re-synced connection with ${friendsMap[targetUid].name}!`);
+        showToast(`🔄 Re-synced connection with ${friendsMap[targetUid].name || targetUid}!`);
         return;
       }
 
@@ -1378,17 +1722,17 @@
       saveFriendsMap(friendsMap);
       selectedFriendUid = targetUid;
 
-      // forceFresh = true so a stale cached channel is never reused after a delete
+      // Reuse an existing healthy connection when possible; otherwise PeerJS creates one.
       sendPacketToUser(targetUid, {
         type: "AUTO_ADD_FRIEND",
         fromUid: myUniqueId,
         snapshot: mySnap
-      }, true);
+      });
 
       renderSidebarLists();
       renderSelectedFriendInspector();
       notifyParentBadgeCount();
-      showToast(`⚡ Instantly added ${targetUid}! Waiting for their live data to sync...`);
+      showToast(`✅ Added ${targetUid}. Live sync needs your friend to be online with the Friends hub open.`);
     };
 
     window.removeFriend = function(uid) {
@@ -1420,13 +1764,21 @@
 
     function renderMyHeaderInfo() {
       const snap = buildMyFullSnapshot();
-      document.getElementById("myUniqueIdDisplay").textContent = myUniqueId;
-      document.getElementById("myDisplayNameLabel").textContent = snap.name;
-      document.getElementById("myLevelAndMoodLabel").textContent = `CA ${(snap.level || "final").toUpperCase()} • ${snap.moodEmoji} ${snap.moodText}`;
+      const uidEl = document.getElementById("myUniqueIdDisplay");
+      const nameEl = document.getElementById("myDisplayNameLabel");
+      const moodEl = document.getElementById("myLevelAndMoodLabel");
+      if (uidEl) uidEl.textContent = myUniqueId;
+      if (nameEl) nameEl.textContent = snap.name;
+      if (moodEl) moodEl.textContent = `CA ${(snap.level || "final").toUpperCase()} • ${snap.moodEmoji} ${snap.moodText}`;
 
       const avatarBox = document.getElementById("myAvatarBox");
+      if (!avatarBox) return;
+      avatarBox.replaceChildren();
       if (snap.avatar) {
-        avatarBox.innerHTML = `<img src="${snap.avatar}" alt="Me" />`;
+        const img = document.createElement("img");
+        img.src = snap.avatar;
+        img.alt = "Me";
+        avatarBox.appendChild(img);
       } else {
         avatarBox.textContent = (snap.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
       }
@@ -1434,40 +1786,41 @@
 
     function renderSidebarLists() {
       const friendsMap = getSavedFriendsMap();
-      const friendList = Object.values(friendsMap);
-      document.getElementById("friendsCountBadge").textContent = friendList.length;
+      const friendList = Object.entries(friendsMap).map(([uid, item]) => sanitizeFriendSnapshot(item, uid)).filter(Boolean);
+      const countEl = document.getElementById("friendsCountBadge");
+      if (countEl) countEl.textContent = friendList.length;
 
       const friendsContainer = document.getElementById("friendsListContainer");
+      if (!friendsContainer) return;
       if (friendList.length === 0) {
-        friendsContainer.innerHTML = `<div style="font-size:12px; color:#64748b; text-align:center; padding:20px 0;">No friends added yet. Enter a Unique ID above to instantly connect!</div>`;
+        selectedFriendUid = null;
+        friendsContainer.innerHTML = `<div style="font-size:12px; color:#64748b; text-align:center; padding:20px 0;">No friends added yet. Enter a Unique ID above to add a study partner.</div>`;
         return;
       }
 
-      if (!selectedFriendUid || !friendsMap[selectedFriendUid]) {
-        selectedFriendUid = friendList[0].uid;
-      }
-
+      if (!selectedFriendUid || !friendsMap[selectedFriendUid]) selectedFriendUid = friendList[0].uid;
       const now = Date.now();
       friendsContainer.innerHTML = friendList.map(f => {
         const isSel = f.uid === selectedFriendUid;
         const hasUnread = !!unreadMessagesMap[f.uid];
         const isOnline = !!f.online && (DEMO_DIRECTORY[f.uid] || (now - (f.lastSeen || 0) < 45000));
         const initials = (f.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
+        const avatar = safeAvatar(f.avatar);
         return `
           <div class="friend-item-card ${isSel ? 'selected' : ''}" onclick="selectFriend('${f.uid}')">
             <div class="friend-meta">
               <div class="avatar-circle" style="width:40px; height:40px; font-size:13px;">
-                ${f.avatar ? `<img src="${f.avatar}" alt="" />` : initials}
+                ${avatar ? `<img src="${escapeHtml(avatar)}" alt="" />` : escapeHtml(initials)}
               </div>
               <div style="min-width:0; flex:1;">
                 <div class="friend-name-row">
                   <span>${escapeHtml(f.name)}</span>
-                  <span>${f.moodEmoji || '🔥'}</span>
+                  <span>${escapeHtml(f.moodEmoji || '🔥')}</span>
                 </div>
                 <div class="friend-sub-row">
                   <span style="font-family:'Roboto Mono',monospace; color:#38bdf8; font-weight:700;">${f.uid}</span>
                   <span>•</span>
-                  <span>${f.isStudying ? '▶ Studying ' + (f.activeSubject || 'CA') : (f.totalActualHours || '00:00') + 'h today'}</span>
+                  <span>${f.isStudying ? '▶ Studying ' + escapeHtml(f.activeSubject || 'CA') : escapeHtml(f.totalActualHours || '00:00') + 'h today'}</span>
                 </div>
               </div>
             </div>
@@ -1500,14 +1853,15 @@
       if (!panel) return;
 
       const friendsMap = getSavedFriendsMap();
-      const friend = selectedFriendUid ? friendsMap[selectedFriendUid] : null;
+      const rawFriend = selectedFriendUid ? friendsMap[normalizeUniqueUserId(selectedFriendUid)] : null;
+      const friend = rawFriend ? sanitizeFriendSnapshot(rawFriend, selectedFriendUid) : null;
 
       if (!friend) {
         panel.innerHTML = `
           <div style="margin:auto; text-align:center; padding:40px 20px; color:#94a3b8;">
             <div style="font-size:44px; margin-bottom:12px;">🤝</div>
             <h3 style="color:#f8fafc; font-size:18px; margin-bottom:6px;">Select or Add a Study Friend</h3>
-            <p style="font-size:13px; max-width:420px; margin:0 auto;">Enter your study partner's Unique ID above to instantly connect. You can inspect their full Profile, Timetable, Tasks, Text Chat, and Start Audio/Video Calls here.</p>
+            <p style="font-size:13px; max-width:420px; margin:0 auto;">Enter your study partner's Unique ID above. When they are online, you can inspect their Profile, Timetable, Tasks, Text Chat, and start Audio/Video Calls here.</p>
           </div>
         `;
         return;
@@ -1530,7 +1884,7 @@
             </div>
             <div class="stat-tile">
               <div class="stat-tile-label">TODAY'S ACTUAL STUDY</div>
-              <div class="stat-tile-value" style="color:#4ade80;">${friend.totalActualHours || "00:00"} hrs</div>
+              <div class="stat-tile-value" style="color:#4ade80;">${escapeHtml(friend.totalActualHours || "00:00")} hrs</div>
             </div>
             <div class="stat-tile">
               <div class="stat-tile-label">DAILY EFFICIENCY</div>
@@ -1560,7 +1914,7 @@
           <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px;">
             <div>
               <div class="box-tag" style="margin-bottom:2px;">📅 ${escapeHtml(friend.name.toUpperCase())}'S DAILY TIMETABLE</div>
-              <div style="font-size:12px; color:#94a3b8;">Planned: <strong style="color:#f8fafc;">${friend.totalEstHours || "00:00"}h</strong> • Actual Studied: <strong style="color:#4ade80;">${friend.totalActualHours || "00:00"}h</strong> (${friend.efficiency || 0}% Efficiency)</div>
+              <div style="font-size:12px; color:#94a3b8;">Planned: <strong style="color:#f8fafc;">${escapeHtml(friend.totalEstHours || "00:00")}h</strong> • Actual Studied: <strong style="color:#4ade80;">${escapeHtml(friend.totalActualHours || "00:00")}h</strong> (${friend.efficiency || 0}% Efficiency)</div>
             </div>
             <button class="f-btn primary" onclick="copyFriendTimetableToMyPlanner('${friend.uid}')">
               📥 Copy This Timetable to My Planner
@@ -1583,10 +1937,10 @@
                   <tbody>
                     ${ttList.map(slot => `
                       <tr>
-                        <td style="font-family:'Roboto Mono',monospace; font-weight:700; color:#e2e8f0;">${slot.startTime} - ${slot.endTime}</td>
+                        <td style="font-family:'Roboto Mono',monospace; font-weight:700; color:#e2e8f0;">${escapeHtml(slot.startTime)} - ${escapeHtml(slot.endTime)}</td>
                         <td><span class="sub-badge">${escapeHtml(slot.subject || (slot.id || "FR").toUpperCase())}</span></td>
-                        <td style="font-family:'Roboto Mono',monospace; color:#94a3b8;">${slot.estimated}h</td>
-                        <td style="font-family:'Roboto Mono',monospace; font-weight:700; color:#4ade80;">${slot.actual}h</td>
+                        <td style="font-family:'Roboto Mono',monospace; color:#94a3b8;">${escapeHtml(slot.estimated)}h</td>
+                        <td style="font-family:'Roboto Mono',monospace; font-weight:700; color:#4ade80;">${escapeHtml(slot.actual)}h</td>
                         <td>
                           ${slot.timerState
                             ? `<span class="pill-tag green">▶ Live Studying Now</span>`
@@ -1643,7 +1997,7 @@
                 ? `<div style="margin:auto; text-align:center; color:#64748b; font-size:12px; font-style:italic;">No messages yet. Send a greeting or ask a study question! 👋</div>`
                 : chatList.map(m => `
                     <div class="chat-bubble ${m.sender === 'me' ? 'outgoing' : 'incoming'}">
-                      <div style="font-size:10px; opacity:0.75; margin-bottom:2px;">${m.sender === 'me' ? 'You' : escapeHtml(friend.name)} • ${m.time}</div>
+                      <div style="font-size:10px; opacity:0.75; margin-bottom:2px;">${m.sender === 'me' ? 'You' : escapeHtml(friend.name)} • ${escapeHtml(m.time)}</div>
                       <div>${escapeHtml(m.text)}</div>
                     </div>
                   `).join("")
@@ -1661,7 +2015,7 @@
         <div class="friend-hero-banner">
           <div class="friend-hero-left">
             <div class="hero-avatar">
-              ${friend.avatar ? `<img src="${friend.avatar}" alt="" />` : initials}
+              ${safeAvatar(friend.avatar) ? `<img src="${escapeHtml(safeAvatar(friend.avatar))}" alt="" />` : escapeHtml(initials)}
             </div>
             <div>
               <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
@@ -1669,11 +2023,11 @@
                 <span style="font-family:'Roboto Mono',monospace; font-size:12px; font-weight:700; background:rgba(6,182,212,0.18); color:#7dd3fc; padding:3px 10px; border-radius:8px; border:1px solid rgba(56,189,248,0.4);">${friend.uid}</span>
               </div>
               <div class="hero-badges">
-                <span class="pill-tag">${friend.moodEmoji || '🔥'} ${escapeHtml(friend.moodText || 'Locked In')}</span>
+                <span class="pill-tag">${escapeHtml(friend.moodEmoji || '🔥')} ${escapeHtml(friend.moodText || 'Locked In')}</span>
                 <span class="pill-tag purple">CA ${(friend.level || 'final').toUpperCase()}</span>
                 ${friend.isStudying
                   ? `<span class="pill-tag green">▶ Studying ${escapeHtml(friend.activeSubject || 'Now')}</span>`
-                  : `<span class="pill-tag">⏱️ ${friend.totalActualHours || '00:00'}h Today</span>`
+                  : `<span class="pill-tag">⏱️ ${escapeHtml(friend.totalActualHours || '00:00')}h Today</span>`
                 }
               </div>
             </div>
@@ -1716,45 +2070,49 @@
     };
 
     window.sendFriendChatMessage = function(friendUid) {
+      const cleanUid = normalizeUniqueUserId(friendUid);
       const inp = document.getElementById("friendChatInput");
-      if (!inp) return;
-      const txt = inp.value.trim();
+      if (!inp || !cleanUid || cleanUid === myUniqueId) return;
+      const friendsMap = getSavedFriendsMap();
+      if (!friendsMap[cleanUid]) {
+        showToast("⚠️ This friend is no longer in your friends list.");
+        return;
+      }
+      const txt = inp.value.trim().slice(0, 4000);
       if (!txt) return;
       inp.value = "";
 
-      const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-      const msgObj = {
-        sender: 'me',
-        text: txt,
-        time: timeStr
-      };
-
-      const history = getChatHistory(friendUid);
+      const timeStr = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      const messageId = (window.crypto && window.crypto.randomUUID)
+        ? window.crypto.randomUUID()
+        : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+      const msgObj = { messageId, sender: "me", text: txt, time: timeStr };
+      const history = getChatHistory(cleanUid);
       history.push(msgObj);
-      saveChatHistory(friendUid, history);
+      saveChatHistory(cleanUid, history);
+      seenChatMessageIds.add(messageId);
+      if (seenChatMessageIds.size > 1000) seenChatMessageIds.delete(seenChatMessageIds.values().next().value);
 
-      sendPacketToUser(friendUid, {
+      sendPacketToUser(cleanUid, {
         type: "FRIEND_CHAT_MSG",
         fromUid: myUniqueId,
-        message: {
-          sender: 'friend',
-          text: txt,
-          time: timeStr
-        }
+        message: { messageId, sender: "friend", text: txt, time: timeStr }
       });
 
       const area = document.getElementById("chatMessagesArea");
       if (area) {
         const msgDiv = document.createElement("div");
         msgDiv.className = "chat-bubble outgoing";
-        msgDiv.innerHTML = `<div style="font-size:10px; opacity:0.75; margin-bottom:2px;">You • ${timeStr}</div><div>${escapeHtml(txt)}</div>`;
+        msgDiv.innerHTML = `<div style="font-size:10px; opacity:0.75; margin-bottom:2px;">You • ${escapeHtml(timeStr)}</div><div>${escapeHtml(txt)}</div>`;
         area.appendChild(msgDiv);
         area.scrollTop = area.scrollHeight;
       }
     };
 
     window.startCoStudyRoomWithFriend = function(uid) {
-      const roomCode = "CA-" + uid.replace(/[^0-9]/g, "").slice(-4).padStart(4, "8");
+      const cleanUid = normalizeUniqueUserId(uid);
+      if (!cleanUid || cleanUid === myUniqueId) return;
+      const roomCode = "CA-" + cleanUid.replace(/[^0-9]/g, "").slice(-4).padStart(4, "8");
       if (window.parent && window.parent !== window && typeof window.parent.openSquadModal === "function") {
         window.parent.closeFriendsModal();
         window.parent.openSquadModal(true);
@@ -1815,24 +2173,33 @@
       } catch (e) {}
     };
 
-    window.copyMyUniqueId = function() {
+    window.copyMyUniqueId = async function() {
       try {
-        navigator.clipboard.writeText(myUniqueId);
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(myUniqueId);
+        } else {
+          throw new Error("Clipboard API unavailable");
+        }
+        showToast(`📋 Copied your Unique ID: ${myUniqueId}`);
       } catch (e) {
         const ta = document.createElement("textarea");
         ta.value = myUniqueId;
+        ta.setAttribute("readonly", "");
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
         document.body.appendChild(ta);
         ta.select();
-        document.execCommand("copy");
+        let copied = false;
+        try { copied = document.execCommand("copy"); } catch (copyError) { }
         ta.remove();
+        showToast(copied ? `📋 Copied your Unique ID: ${myUniqueId}` : `Copy failed. Select and copy ${myUniqueId}`);
       }
-      showToast(`📋 Copied your Unique ID: ${myUniqueId}`);
     };
 
     window.shareMyUniqueIdWhatsApp = function() {
       const snap = buildMyFullSnapshot();
       const text = `Hey! Let's study together on Calcium Notes Study Reactor 📚🔥\nAdd me on the Friends tab using my Unique User ID: *${myUniqueId}* (${snap.name} - CA ${(snap.level || 'final').toUpperCase()}) so we can chat, call, and share our live timetables!`;
-      window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, "_blank");
+      window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
     };
 
     function notifyParentBadgeCount() {
