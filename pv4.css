@@ -296,3 +296,39 @@ body {
     .analytics-grid { grid-template-columns: 1fr; }
     .pv4-squad-members { touch-action: pan-y; }
 }
+
+
+/* ===== MOBILE UX (phones) ===== */
+@media (max-width: 700px) {
+    .dashboard-container { padding: 10px; padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px)); }
+    .glass-card, .header-card { padding: 12px; border-radius: 14px; }
+    .center-section h1 { font-size: 18px; }
+    .center-section > div { width: 100%; }
+    .center-section input, .center-section select { flex: 1 1 100%; width: 100% !important; }
+    .center-section .pv4-action-btn { flex: 1 1 100%; padding: 10px; font-size: 12px; }
+    .time-hero { font-size: 22px; }
+
+    /* iOS zooms in on inputs under 16px */
+    .time-picker, .time-input, .subject-select { font-size: 16px; min-height: 40px; }
+    .time-input { width: 80px; }
+    .subject-select { width: 100px; }
+
+    /* bigger tap targets */
+    .timer-btn { height: 38px; width: 38px; font-size: 14px; }
+    .delete-btn { font-size: 26px; padding: 4px 8px; }
+    .add-row-btn { padding: 14px; font-size: 14px; }
+    .cal-days span { padding: 7px 0; font-size: 12px; }
+
+    .timeline-sidebar { max-height: 260px; }
+    .timeline-event { left: 52px; }
+
+    .pv4-squad-actions { width: 100%; }
+    .pv4-squad-actions .pv4-action-btn { flex: 1 1 100%; padding: 10px; font-size: 12px; }
+    .pv4-squad-members { grid-template-columns: repeat(2, 1fr); max-height: 200px; }
+
+    .summary-value { font-size: 20px; }
+    .canvas-wrapper { height: 160px; }
+    .chart-header { flex-wrap: wrap; gap: 8px; }
+
+    .alarm-toast { left: 10px; right: 10px; bottom: calc(10px + env(safe-area-inset-bottom, 0px)); }
+}

@@ -650,3 +650,46 @@ html { overflow-y: auto; -webkit-text-size-adjust: 100%; }
   .panel-music.active iframe { pointer-events: auto; }
 }
 */
+
+
+/* ===== MOBILE UX (phones) ===== */
+@media (max-width: 700px) {
+  body { padding: 12px; padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px)); }
+  .read-container { gap: 12px; }
+  .rm-panel { padding: 16px; border-radius: 14px; }
+
+  .clock-hm { font-size: 3rem; letter-spacing: -1px; }
+  .t-display { font-size: 2.3rem; }
+
+  /* iOS zooms in on inputs under 16px */
+  .t-num, .al-input, .tk-input, .tk-pri, .note-area { font-size: 16px; }
+  .t-num { width: 64px; padding: 10px 6px; }
+  .al-input, .tk-input, .tk-pri { padding: 12px; }
+
+  /* bigger tap targets */
+  .t-btns { flex-wrap: wrap; }
+  .t-btn { flex: 1 1 28%; padding: 12px 14px; font-size: 0.88rem; }
+  .t-tab { padding: 10px; font-size: 0.85rem; }
+  .al-add { padding: 12px; font-size: 0.9rem; }
+  .tk-add { padding: 10px 18px; }
+  .tk-form { flex-wrap: wrap; }
+  .tk-input { flex: 1 1 100%; }
+  .tk-pri { flex: 1; }
+  .tk-item { padding: 12px; }
+  .tk-list, .al-list { max-height: 320px; }
+
+  .note-area { height: 180px; }
+
+  .vr-top-bar { flex-direction: column; align-items: stretch; }
+  .vr-top-actions { justify-content: space-between; }
+  .vr-plan-btn { padding: 10px 14px; font-size: 0.8rem; }
+  .vr-action-btn { padding: 10px 16px; font-size: 0.85rem; }
+  .vr-stat-value { font-size: 1.2rem; }
+
+  .alarm-toast {
+    left: 12px; right: 12px; width: auto;
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    transform: translateY(140px);
+  }
+  .alarm-toast.show { transform: translateY(0); }
+}

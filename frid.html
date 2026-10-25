@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Calcium Study Friends | Auto-Connect Hub</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
   <!-- PeerJS WebRTC Library with STUN server configuration for GitHub Pages -->
@@ -33,7 +33,9 @@
       background: radial-gradient(circle at 15% 20%, #1e3a8a 0%, #070b16 55%, #04070e 100%);
       color: var(--text-main);
       min-height: 100vh;
-      overflow-x: hidden;
+      overflow-x: clip;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
     /* Top Header */
@@ -757,6 +759,70 @@
         grid-template-columns: 1fr;
       }
     }
+    /* ===== MOBILE UX (phones) ===== */
+
+    @media (max-width: 700px) {
+
+      input, select, textarea { font-size: 16px !important; }
+
+      .frid-navbar { padding: 10px 12px; padding-top: calc(10px + env(safe-area-inset-top, 0px)); gap: 8px; }
+
+      .frid-brand-sub { display: none; }
+
+      .frid-nav-right { width: 100%; justify-content: space-between; }
+
+      .btn-back-dashboard { padding: 10px 14px; }
+
+      .frid-container { padding: 12px 12px calc(30px + env(safe-area-inset-bottom, 0px)); gap: 14px; }
+
+      .glass-box { padding: 14px; border-radius: 14px; }
+
+      .top-discovery-grid, .friends-workspace { gap: 14px; }
+
+
+
+      .uid-actions-row { flex-wrap: wrap; }
+
+      .f-btn { min-height: 44px; }
+
+      .search-input-group { flex-wrap: wrap; }
+
+      .uid-search-input { min-height: 44px; }
+
+
+
+      .friends-list { max-height: 340px; -webkit-overflow-scrolling: touch; }
+
+      .friend-item-card { padding: 12px; min-height: 56px; }
+
+
+
+      .inspector-panel { min-height: 0; }
+
+      .friend-hero-banner { flex-direction: column; align-items: flex-start; gap: 12px; }
+
+      .inspector-tabs { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+
+      .insp-tab-btn { flex-shrink: 0; white-space: nowrap; padding: 10px 14px; }
+
+      .profile-stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+
+
+      .friend-tt-scroll-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+      .chat-box-container { height: 60vh; height: 60dvh; min-height: 320px; }
+
+      .chat-input-row { padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px)); }
+
+      .chat-input { min-height: 44px; }
+
+
+
+      .frid-toast { left: 12px; right: 12px; max-width: none; }
+
+    }
+
   </style>
 </head>
 <body>
