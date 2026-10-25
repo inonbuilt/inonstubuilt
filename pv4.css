@@ -257,3 +257,42 @@ body {
     border-color: rgba(56, 189, 248, 0.6);
     background: rgba(56, 189, 248, 0.08);
 }
+
+
+/* ===== TOUCH / SMALL SCREEN SCROLL FIX ===== */
+@media (max-width: 1100px), (pointer: coarse) {
+    html, body {
+        height: auto;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .dashboard-container {
+        height: auto;
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
+    .top-grid { grid-template-columns: 1fr; }
+    .header-right-group { flex-direction: column; }
+    .right-section { align-items: center; min-width: 0; }
+
+    .main-layout {
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        min-height: auto;
+    }
+    .reactor-main { overflow: visible; }
+
+    .timeline-sidebar { max-height: 380px; }
+    .timeline-container {
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-y;
+    }
+
+    .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .time-table { min-width: 560px; }
+    .analytics-grid { grid-template-columns: 1fr; }
+    .pv4-squad-members { touch-action: pan-y; }
+}
