@@ -803,7 +803,7 @@
         <div class="box-tag">⚡ INSTANT CONNECT BY UNIQUE ID</div>
         <h3 style="font-size:16px; font-weight:800; color:#f8fafc; margin-bottom:4px;">Add a Study Partner</h3>
         <p style="font-size:12px; color:#94a3b8; margin-bottom:10px;">
-          Enter your friend's Unique ID (e.g. <code style="color:#7dd3fc;">CN-482910</code>). You will instantly connect. Try demo study partners <code style="color:#86efac; cursor:pointer;" onclick="fillDemoId('CN-100108')">CN-100108</code> or <code style="color:#86efac; cursor:pointer;" onclick="fillDemoId('CN-204999')">CN-204999</code>.
+          Enter your friend's Unique ID (e.g. <code style="color:#7dd3fc;">CN-482910</code>). You will instantly connect.
         </p>
 
         <div class="search-input-group">
@@ -811,7 +811,7 @@
             type="text"
             id="findFriendIdInput"
             class="uid-search-input"
-            placeholder="ENTER UNIQUE ID (e.g. CN-100108)"
+            placeholder="ENTER UNIQUE ID (e.g. CN-482910)"
             maxlength="14"
             onkeydown="if(event.key==='Enter') searchAndSendStudyRequest()"
           />
@@ -869,63 +869,9 @@
       fr: "FR", afm: "AFM", audit: "AUDIT", dt: "DT", idt: "IDT", ibs: "IBS"
     };
 
-    const DEMO_DIRECTORY = {
-      "CN-100108": {
-        uid: "CN-100108",
-        name: "Aarav Sharma (AIR Target)",
-        level: "final",
-        moodEmoji: "🔥",
-        moodText: "Locked In",
-        attempt: "May 2027",
-        group: "Both Groups",
-        dailyGoal: 11,
-        city: "Mumbai / WIRC",
-        bio: "Targeting Exemption in FR, AFM & DT. Studying 11 hours daily with strict ICAI study material + RTP coverage.",
-        avatar: "",
-        online: true,
-        isStudying: true,
-        activeSubject: "FR",
-        totalActualHours: "06:45",
-        totalEstHours: "10:00",
-        efficiency: 88,
-        timetable: [
-          { id: "fr", subject: "FR", startTime: "06:00", endTime: "09:00", estimated: "03:00", actual: "03:00", timerState: false },
-          { id: "afm", subject: "AFM", startTime: "10:00", endTime: "13:00", estimated: "03:00", actual: "02:30", timerState: false },
-          { id: "dt", subject: "DT", startTime: "15:00", endTime: "17:00", estimated: "02:00", actual: "01:15", timerState: true }
-        ],
-        tasks: [
-          { text: "Ind AS 115 Revenue 12 Illustration Questions", pri: "high", done: true },
-          { text: "AFM Forex & Derivatives Past 3 RTPs", pri: "high", done: true }
-        ],
-        lastSeen: Date.now()
-      },
-      "CN-204999": {
-        uid: "CN-204999",
-        name: "Ananya Iyer",
-        level: "final",
-        moodEmoji: "📚",
-        moodText: "Deep Revision",
-        attempt: "Nov 2026",
-        group: "Group 1 Only",
-        dailyGoal: 9,
-        city: "Chennai / SIRC",
-        bio: "Morning 5 AM study club! Focused on Financial Reporting consolidation & Audit standards.",
-        avatar: "",
-        online: false,
-        isStudying: false,
-        activeSubject: "AUDIT",
-        totalActualHours: "05:20",
-        totalEstHours: "08:00",
-        efficiency: 82,
-        timetable: [
-          { id: "audit", subject: "AUDIT", startTime: "05:30", endTime: "08:30", estimated: "03:00", actual: "02:50", timerState: false }
-        ],
-        tasks: [
-          { text: "Ind AS 103 Business Combinations MTP Series 1", pri: "high", done: true }
-        ],
-        lastSeen: Date.now() - 3600000
-      }
-    };
+    // Demo/fake friends removed. Kept empty so existing checks keep working.
+    const DEMO_DIRECTORY = {};
+    const REMOVED_DEMO_IDS = ["CN-100108", "CN-204999"];
 
     let myUniqueId = "";
     let peerNode = null;
@@ -1060,12 +1006,14 @@
     function getSavedFriendsMap() {
       try {
         const raw = localStorage.getItem(`calcium_friends_list_${myUniqueId}`);
-        if (!raw) {
-          const starter = { "CN-100108": DEMO_DIRECTORY["CN-100108"] };
-          localStorage.setItem(`calcium_friends_list_${myUniqueId}`, JSON.stringify(starter));
-          return starter;
-        }
-        return JSON.parse(raw);
+        if (!raw) return {};
+        const map = JSON.parse(raw) || {};
+        let changed = false;
+        REMOVED_DEMO_IDS.forEach(id => {
+          if (map[id]) { delete map[id]; changed = true; }
+        });
+        if (changed) localStorage.setItem(`calcium_friends_list_${myUniqueId}`, JSON.stringify(map));
+        return map;
       } catch (e) {
         return {};
       }
