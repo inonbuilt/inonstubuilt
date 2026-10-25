@@ -165,8 +165,21 @@ footer {
 .update-close:hover{ opacity:1; }
 
 @media(max-width:600px){
-    .update-banner{ top:auto; bottom:-120px; flex-direction:column; gap:10px; text-align:center; }
-    .update-banner.show{ bottom:20px; }
+    .update-banner{
+        width: calc(100% - 20px);
+        max-width: 420px;
+        padding: 12px 14px;
+        top:auto;
+        bottom:-120px;
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+        border-radius: 12px;
+    }
+    .update-banner.show{ bottom: 16px; }
+    .update-message{ font-size: 0.72rem; letter-spacing: 0.4px; }
+    .update-actions{ width: 100%; justify-content: center; }
+    .update-link{ padding: 7px 10px; font-size: 0.7rem; }
 }
 
 /* ===== RESPONSIVE UI FOR MOBILE & TABLETS ===== */
