@@ -4,7 +4,8 @@ body {
     font-family: 'Inter', sans-serif;
     color: #e2e8f0;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .dashboard-container {
@@ -74,7 +75,7 @@ body {
     grid-template-columns: 220px 1fr; 
     gap: 15px;
     flex-grow: 1;
-    overflow: hidden; 
+    overflow: hidden auto;
     min-height: 0;
 }
 
@@ -99,10 +100,10 @@ body {
 .event-ibs { background: rgba(6, 182, 212, 0.15); border-left-color: #06b6d4; color: #67e8f9; }
 
 /* --- REACTOR TABLE --- */
-.reactor-main { display: flex; flex-direction: column; gap: 15px; overflow-y: auto; padding-right: 5px; min-height: 0;}
-.table-scroll { position: relative; width: 100%; }
+.reactor-main { display: flex; flex-direction: column; gap: 15px; overflow-y: auto; overflow-x: auto; padding-right: 5px; min-height: 0;}
+.table-scroll { position: relative; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
-.time-table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+.time-table { width: 100%; min-width: 760px; border-collapse: collapse; margin-bottom: 10px; }
 .time-table th { color: #64748b; font-size: 10px; text-align: left; padding: 8px; font-weight: 700; }
 .time-table td { padding: 4px 8px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
 
@@ -191,6 +192,108 @@ body {
   border-radius: 6px;
   cursor: pointer;
   margin-left: auto;
+}
+
+@media (max-width: 900px) {
+    body {
+        overflow-y: auto;
+        overflow-x: auto;
+        height: auto;
+    }
+
+    .dashboard-container {
+        height: auto;
+        min-height: 100vh;
+        padding: 12px;
+    }
+
+    .top-grid,
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .header-right-group {
+        flex-direction: column;
+    }
+
+    .center-section {
+        width: 100%;
+    }
+
+    .center-section h1 {
+        font-size: 18px;
+    }
+
+    .right-section {
+        align-items: flex-start;
+        min-width: 0;
+    }
+
+    .main-layout {
+        overflow-x: auto;
+    }
+
+    .timeline-sidebar,
+    .reactor-main {
+        overflow: visible;
+        overflow-x: auto;
+    }
+
+    .table-scroll,
+    .glass-card {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .time-table {
+        min-width: 760px;
+    }
+
+    .analytics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pv4-squad-actions {
+        width: 100%;
+    }
+
+    .pv4-action-btn {
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .top-grid,
+    .main-layout {
+        gap: 10px;
+    }
+
+    .header-card,
+    .glass-card {
+        border-radius: 12px;
+        padding: 12px;
+    }
+
+    .center-section > div {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .center-section input,
+    .center-section select,
+    .pv4-action-btn {
+        width: 100%;
+    }
+
+    .pv4-squad-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pv4-squad-members {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* --- LIVE SQUAD STRIP IN PLANNING MODE --- */

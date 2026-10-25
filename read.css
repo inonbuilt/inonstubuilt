@@ -14,16 +14,19 @@ body {
   color: #e2e8f0;
   min-height: 100vh;
   padding: 20px;
-  overflow-x: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 /* ── Container Grid ── */
 .read-container {
   max-width: 1400px;
+  min-width: 760px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
   gap: 18px;
+  overflow-x: auto;
 }
 
 /* ── Panels (Glassmorphism) ── */
@@ -612,9 +615,16 @@ body {
 }
 
 @media (max-width: 850px) {
+  body {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
   .read-container {
+    min-width: 100%;
     grid-template-columns: 1fr;
   }
+
   .panel-clock,
   .panel-timer,
   .panel-alarm,
@@ -624,6 +634,7 @@ body {
   .panel-music {
     grid-column: 1 !important;
   }
+
   .vr-summary-grid {
     grid-template-columns: 1fr;
   }
