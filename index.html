@@ -478,8 +478,8 @@
       if (friendsOverlay) {
         friendsOverlay.classList.add("rm-active");
         setTimeout(() => friendsOverlay.classList.add("rm-visible"), 10);
-        document.body.style.overflow = "hidden";
-        document.documentElement.style.overflow = "hidden";
+        document.body.classList.add("modal-open");
+        document.documentElement.classList.add("modal-open");
       }
     };
 
@@ -489,8 +489,8 @@
       friendsOverlay.classList.remove("rm-visible");
       setTimeout(() => {
         friendsOverlay.classList.remove("rm-active");
-        document.body.style.overflow = "";
-        document.documentElement.style.overflow = "";
+        document.body.classList.remove("modal-open");
+        document.documentElement.classList.remove("modal-open");
       }, 350);
     };
 
@@ -520,8 +520,8 @@
       syncReadIframeTracker();
       readOverlay.classList.add("rm-active");
       setTimeout(() => readOverlay.classList.add("rm-visible"), 10);
-      document.body.style.overflow = "hidden";
-      document.documentElement.style.overflow = "hidden";
+      document.body.classList.add("modal-open");
+      document.documentElement.classList.add("modal-open");
     }
 
     function closeReadMode() {
@@ -529,8 +529,8 @@
       readOverlay.classList.remove("rm-visible");
       setTimeout(() => {
         readOverlay.classList.remove("rm-active");
-        document.body.style.overflow = "";
-        document.documentElement.style.overflow = "";
+        document.body.classList.remove("modal-open");
+        document.documentElement.classList.remove("modal-open");
       }, 350);
     }
 
@@ -538,8 +538,8 @@
       window.syncPlanIframeFromReadRoom();
       planOverlay.classList.add("rm-active");
       setTimeout(() => planOverlay.classList.add("rm-visible"), 10);
-      document.body.style.overflow = "hidden";
-      document.documentElement.style.overflow = "hidden";
+      document.body.classList.add("modal-open");
+      document.documentElement.classList.add("modal-open");
     }
 
     function closePlanningMode() {
@@ -547,8 +547,8 @@
       planOverlay.classList.remove("rm-visible");
       setTimeout(() => {
         planOverlay.classList.remove("rm-active");
-        document.body.style.overflow = "";
-        document.documentElement.style.overflow = "";
+        document.body.classList.remove("modal-open");
+        document.documentElement.classList.remove("modal-open");
       }, 350);
     }
 

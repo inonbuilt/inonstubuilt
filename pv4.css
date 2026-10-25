@@ -3,14 +3,19 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #e2e8f0;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
 }
 
 .dashboard-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     padding: 15px; 
     max-width: 1600px;
     margin: 0 auto;
@@ -74,7 +79,7 @@ body {
     grid-template-columns: 220px 1fr; 
     gap: 15px;
     flex-grow: 1;
-    overflow: hidden; 
+    overflow: visible; 
     min-height: 0;
 }
 
