@@ -455,84 +455,52 @@
     const readOverlay = document.getElementById("readModeOverlay");
     const planOverlay = document.getElementById("planningModeOverlay");
     const friendsOverlay = document.getElementById("friendsModeOverlay");
-    const modeFrames = [
-      { overlay: readOverlay, frame: document.getElementById("readModeIframe") },
-      { overlay: planOverlay, frame: document.getElementById("planModeIframe") },
-      { overlay: friendsOverlay, frame: document.getElementById("friendsModeIframe") }
-    ];
-    function refreshModeFrameLayout() {
-      modeFrames.forEach(({ overlay, frame }) => {
-        if (!overlay || !frame || !overlay.classList.contains("rm-active")) return;
-        const header = overlay.querySelector(".rm-header");
-        const frameHeight = Math.max(0, overlay.getBoundingClientRect().height - (header ? header.getBoundingClientRect().height : 0));
-        if (frameHeight) frame.style.height = `${Math.round(frameHeight)}px`;
+    const readModeFrame = document.getElementById("readModeIframe");
+    const planModeFrame = document.getElementById("planModeIframe");
+    const friendsModeFrame = document.getElementById("friendsModeIframe");
+
+    // A tap in an iframe gives that browsing context focus, which is why the
+    // alarm label made swiping work. Give the iframe that focus on open,
+    // without focusing an input or showing the keyboard.
+    function focusModeFrame(frame) {
+      if (!frame) return;
+      const focusFrame = () => {
         try {
-          const frameWindow = frame.contentWindow;
-          if (frameWindow) frameWindow.dispatchEvent(new frameWindow.Event("resize"));
+          if (frame.contentWindow) frame.contentWindow.focus();
         } catch (e) { }
-      });
+      };
+      focusFrame();
+      requestAnimationFrame(focusFrame);
+      setTimeout(focusFrame, 60);
     }
 
-    // Some mobile browsers do not activate an iframe's scrolling layer until
-    // it receives focus or its scroll position changes (typing in Read Mode
-    // and opening Share Wrap both happened to trigger that refresh).
-    function activateModeFrameScroll(overlay) {
-      const item = modeFrames.find(({ overlay: candidate }) => candidate === overlay);
-      if (!item || !item.frame || !overlay.classList.contains("rm-active")) return;
-      const frame = item.frame;
-      try {
-        frame.focus({ preventScroll: true });
-        const frameWindow = frame.contentWindow;
-        if (!frameWindow) return;
-        const scrollTop = frameWindow.scrollY || 0;
-        frameWindow.scrollTo(0, scrollTop + 1);
-        requestAnimationFrame(() => {
-          try { frameWindow.scrollTo(0, scrollTop); } catch (e) { }
-        });
-      } catch (e) { }
-    }
-
-    function scheduleModeFrameLayout() {
-      requestAnimationFrame(() => {
-        requestAnimationFrame(refreshModeFrameLayout);
-      });
-      setTimeout(refreshModeFrameLayout, 80);
-    }
-
-    function openModeOverlay(overlay) {
+    function openModeOverlay(overlay, frame) {
       overlay.classList.add("rm-active");
+      focusModeFrame(frame);
       setTimeout(() => {
         overlay.classList.add("rm-visible");
-        scheduleModeFrameLayout();
-        activateModeFrameScroll(overlay);
+        focusModeFrame(frame);
       }, 10);
-      scheduleModeFrameLayout();
-      setTimeout(() => activateModeFrameScroll(overlay), 120);
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
     }
 
     function closeModeOverlay(overlay) {
       overlay.classList.remove("rm-visible");
       setTimeout(() => {
         if (!overlay.classList.contains("rm-visible")) overlay.classList.remove("rm-active");
+        const modeStillOpen = [readOverlay, planOverlay, friendsOverlay]
+          .some(mode => mode.classList.contains("rm-active"));
+        if (!modeStillOpen) {
+          document.body.style.overflow = "";
+          document.documentElement.style.overflow = "";
+        }
       }, 350);
     }
 
-    modeFrames.forEach(({ overlay, frame }) => {
-      if (frame) frame.addEventListener("load", () => {
-        scheduleModeFrameLayout();
-        activateModeFrameScroll(overlay);
-      });
+    [readModeFrame, planModeFrame, friendsModeFrame].forEach(frame => {
+      if (frame) frame.addEventListener("load", () => focusModeFrame(frame));
     });
-    // Events originating inside an iframe stay inside that document. If a
-    // swipe starts on a mode header or its frame wrapper instead, keep it
-    // from reaching the dashboard behind the active mode.
-    document.addEventListener("touchmove", (event) => {
-      const activeMode = modeFrames.find(({ overlay }) => overlay && overlay.classList.contains("rm-active"));
-      if (activeMode && event.target !== activeMode.frame) event.preventDefault();
-    }, { passive: false });
-    window.addEventListener("resize", scheduleModeFrameLayout);
-    window.addEventListener("orientationchange", () => setTimeout(scheduleModeFrameLayout, 120));
-    if (window.visualViewport) window.visualViewport.addEventListener("resize", scheduleModeFrameLayout);
 
     function ensureGlobalUniqueUserId() {
       let uid = localStorage.getItem("calcium_unique_user_id") || "";
@@ -557,7 +525,7 @@
         frIframe.contentWindow.refreshFriendsHubFromParent();
       }
       if (friendsOverlay) {
-        openModeOverlay(friendsOverlay);
+        openModeOverlay(friendsOverlay, friendsModeFrame);
       }
     };
 
@@ -591,7 +559,7 @@
 
     function openReadMode() {
       syncReadIframeTracker();
-      openModeOverlay(readOverlay);
+      openModeOverlay(readOverlay, readModeFrame);
     }
 
     function closeReadMode() {
@@ -601,7 +569,7 @@
 
     function openPlanningMode() {
       window.syncPlanIframeFromReadRoom();
-      openModeOverlay(planOverlay);
+      openModeOverlay(planOverlay, planModeFrame);
     }
 
     function closePlanningMode() {
@@ -620,7 +588,7 @@
 
         setTimeout(() => {
           readOverlay.classList.add("rm-visible");
-          scheduleModeFrameLayout();
+          focusModeFrame(readModeFrame);
         }, 20);
       }, 350);
     };
@@ -645,7 +613,7 @@
 
         setTimeout(() => {
           planOverlay.classList.add("rm-visible");
-          scheduleModeFrameLayout();
+          focusModeFrame(planModeFrame);
         }, 20);
       }, 350);
     };
