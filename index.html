@@ -495,6 +495,25 @@
       });
     }
 
+    // Some mobile browsers do not activate an iframe's scrolling layer until
+    // it receives focus or its scroll position changes (typing in Read Mode
+    // and opening Share Wrap both happened to trigger that refresh).
+    function activateModeFrameScroll(overlay) {
+      const item = modeFrames.find(({ overlay: candidate }) => candidate === overlay);
+      if (!item || !item.frame || !overlay.classList.contains("rm-active")) return;
+      const frame = item.frame;
+      try {
+        frame.focus({ preventScroll: true });
+        const frameWindow = frame.contentWindow;
+        if (!frameWindow) return;
+        const scrollTop = frameWindow.scrollY || 0;
+        frameWindow.scrollTo(0, scrollTop + 1);
+        requestAnimationFrame(() => {
+          try { frameWindow.scrollTo(0, scrollTop); } catch (e) { }
+        });
+      } catch (e) { }
+    }
+
     function scheduleModeFrameLayout() {
       requestAnimationFrame(() => {
         requestAnimationFrame(refreshModeFrameLayout);
@@ -508,8 +527,10 @@
       setTimeout(() => {
         overlay.classList.add("rm-visible");
         scheduleModeFrameLayout();
+        activateModeFrameScroll(overlay);
       }, 10);
       scheduleModeFrameLayout();
+      setTimeout(() => activateModeFrameScroll(overlay), 120);
     }
 
     function closeModeOverlay(overlay) {
@@ -520,8 +541,11 @@
       }, 350);
     }
 
-    modeFrames.forEach(({ frame }) => {
-      if (frame) frame.addEventListener("load", scheduleModeFrameLayout);
+    modeFrames.forEach(({ overlay, frame }) => {
+      if (frame) frame.addEventListener("load", () => {
+        scheduleModeFrameLayout();
+        activateModeFrameScroll(overlay);
+      });
     });
     window.addEventListener("resize", scheduleModeFrameLayout);
     window.addEventListener("orientationchange", () => setTimeout(scheduleModeFrameLayout, 120));
