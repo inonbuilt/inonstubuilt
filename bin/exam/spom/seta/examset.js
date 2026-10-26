@@ -73,9 +73,67 @@ function initExam() {
         return extracted;
     }
 
-    // Extract AI questions
+    // Helper to extract AI questions with difficulty distribution:
+    // 50% Easy, 30% Medium, 20% Hard
+    function extractAIQuestionsWithDifficulty(casesArray, maxCount) {
+        if (!casesArray || !Array.isArray(casesArray) || maxCount <= 0) return [];
+
+        // Separate case studies by difficulty
+        const easyCases = casesArray.filter(cs => cs && (cs.difficulty || "").toLowerCase() === "easy");
+        const mediumCases = casesArray.filter(cs => cs && (cs.difficulty || "").toLowerCase() === "medium");
+        const hardCases = casesArray.filter(cs => cs && (cs.difficulty || "").toLowerCase() === "hard");
+
+        // Calculate target counts per difficulty: 50% easy, 30% medium, 20% hard
+        let targetEasy = Math.round(maxCount * 0.50);
+        let targetMedium = Math.round(maxCount * 0.30);
+        let targetHard = maxCount - targetEasy - targetMedium; // remainder goes to hard
+
+        // Extract from each difficulty pool
+        let easyQs = extractQuestionsFromCases(easyCases, targetEasy);
+        let mediumQs = extractQuestionsFromCases(mediumCases, targetMedium);
+        let hardQs = extractQuestionsFromCases(hardCases, targetHard);
+
+        // If any pool didn't have enough, fill the shortfall from other pools
+        let total = easyQs.length + mediumQs.length + hardQs.length;
+        if (total < maxCount) {
+            const shortfall = maxCount - total;
+            const usedQuestions = new Set(
+                [...easyQs, ...mediumQs, ...hardQs].map(q => q.question)
+            );
+
+            // Try to fill from pools that have leftover questions
+            const fallbackOrder = [easyCases, mediumCases, hardCases];
+            let extra = [];
+            for (let pool of fallbackOrder) {
+                if (extra.length >= shortfall) break;
+                let shuffledPool = [...pool];
+                shuffleArray(shuffledPool);
+                for (let cs of shuffledPool) {
+                    if (!cs || !cs.questions) continue;
+                    for (let q of cs.questions) {
+                        if (extra.length >= shortfall) break;
+                        if (!q.question || !q.options || q.answer === undefined) continue;
+                        if (usedQuestions.has(q.question)) continue;
+                        usedQuestions.add(q.question);
+                        extra.push({
+                            caseContent: cs.caseText || "",
+                            question: q.question,
+                            options: q.options,
+                            correct: q.answer,
+                            solution: q.reason || q.solution || "No reason provided"
+                        });
+                    }
+                }
+            }
+            return [...easyQs, ...mediumQs, ...hardQs, ...extra];
+        }
+
+        return [...easyQs, ...mediumQs, ...hardQs];
+    }
+
+    // Extract AI questions with difficulty-based selection (50% easy, 30% medium, 20% hard)
     const aiCases = (typeof AICaseStudies !== 'undefined' && Array.isArray(AICaseStudies)) ? AICaseStudies : [];
-    let aiQuestions = extractQuestionsFromCases(aiCases, targetAI);
+    let aiQuestions = extractAIQuestionsWithDifficulty(aiCases, targetAI);
 
     // Extract Standard questions (needed = TOTAL_QUESTIONS - aiQuestions.length)
     const stdCases = (typeof caseStudies !== 'undefined' && Array.isArray(caseStudies)) ? caseStudies : [];
