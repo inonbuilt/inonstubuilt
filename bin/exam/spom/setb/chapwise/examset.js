@@ -86,6 +86,32 @@ function inferCaseChapter(cs) {
 }
 
 // ==============================================================
+// DIFFICULTY HELPER
+// ==============================================================
+function normalizeDifficulty(val) {
+    if (!val || typeof val !== 'string') return 'medium';
+    const v = val.trim().toLowerCase();
+    if (v.includes('easy')) return 'easy';
+    if (v.includes('med') || v.includes('mod')) return 'medium';
+    if (v.includes('hard') || v.includes('tough') || v.includes('extreme')) return 'hard';
+    return 'medium';
+}
+
+function getCaseDifficulty(cs) {
+    if (cs.difficulty) return normalizeDifficulty(cs.difficulty);
+    if (cs.questions && Array.isArray(cs.questions)) {
+        let counts = { easy: 0, medium: 0, hard: 0 };
+        for (let q of cs.questions) {
+            if (q.difficulty) counts[normalizeDifficulty(q.difficulty)]++;
+        }
+        if (counts.hard > counts.medium && counts.hard > counts.easy) return 'hard';
+        if (counts.medium > counts.easy && counts.medium >= counts.hard) return 'medium';
+        if (counts.easy > 0) return 'easy';
+    }
+    return 'medium';
+}
+
+// ==============================================================
 // INIT EXAM & CENTRIFUGE
 // ==============================================================
 function initExam() {
@@ -141,9 +167,57 @@ function initExam() {
         }
     }
 
-    // 4. Shuffle and Select up to MAX_CASES
-    shuffleArray(filteredCases);
-    let finalCases = filteredCases.slice(0, MAX_CASES);
+    // 4. Select Case Scenarios based on Difficulty (30% Easy, 40% Medium, 30% Hard)
+    const targetCases = Math.min(filteredCases.length, MAX_CASES);
+    const targetEasy = Math.round(targetCases * 0.30);
+    const targetMedium = Math.round(targetCases * 0.40);
+    const targetHard = targetCases - targetEasy - targetMedium;
+
+    let casePools = { easy: [], medium: [], hard: [] };
+    for (let cs of filteredCases) {
+        const diff = getCaseDifficulty(cs);
+        casePools[diff].push(cs);
+    }
+
+    shuffleArray(casePools.easy);
+    shuffleArray(casePools.medium);
+    shuffleArray(casePools.hard);
+
+    let finalCases = [];
+    let usedCaseSet = new Set();
+
+    function pickFromPool(pool, count) {
+        let picked = 0;
+        for (let cs of pool) {
+            if (picked >= count) break;
+            if (usedCaseSet.has(cs)) continue;
+            usedCaseSet.add(cs);
+            finalCases.push(cs);
+            picked++;
+        }
+        return picked;
+    }
+
+    let easyPicked = pickFromPool(casePools.easy, targetEasy);
+    let medPicked = pickFromPool(casePools.medium, targetMedium);
+    let hardPicked = pickFromPool(casePools.hard, targetHard);
+
+    let totalPicked = easyPicked + medPicked + hardPicked;
+
+    // Fallback: If any difficulty pool is short, fill remaining slots from other pools
+    if (totalPicked < targetCases) {
+        const fallbackOrder = [...casePools.medium, ...casePools.easy, ...casePools.hard];
+        for (let cs of fallbackOrder) {
+            if (totalPicked >= targetCases) break;
+            if (usedCaseSet.has(cs)) continue;
+            usedCaseSet.add(cs);
+            finalCases.push(cs);
+            totalPicked++;
+        }
+    }
+
+    // Shuffle the final selected case studies so presentation order is randomized
+    shuffleArray(finalCases);
 
     // 5. Extract Questions with robust sanitization
     let extractedQuestions = [];
