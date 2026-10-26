@@ -64,6 +64,64 @@
       <!-- Alert Banner if Camera/Mic Permissions Denied -->
       <div id="callMediaAlert" class="call-media-alert" style="display:none; margin: 8px 16px 0;"></div>
 
+      <!-- GOOGLE MEET CONTROL BAR (ABOVE VIDEO) -->
+      <div class="gmeet-bottom-dock gmeet-top-dock">
+        <!-- Left: Time & Room Code -->
+        <div class="gmeet-dock-left">
+          <span id="gmeetLiveClock">00:00</span>
+          <span class="gmeet-divider">|</span>
+          <span id="gmeetRoomCodeLabel">Study Meet</span>
+        </div>
+
+        <!-- Center: Audio, Video, Screen Share, Join/Leave Call, Filters, Fullscreen -->
+        <div class="call-action-btns gmeet-dock-center">
+          <button id="btnToggleAudio" class="call-btn btn-audio off" onclick="toggleAudio()"
+            title="Turn Microphone On/Off">
+            <span class="btn-icon">🔇</span>
+            <span class="btn-label" id="lblToggleAudio">Mic Off</span>
+          </button>
+          <button id="btnToggleVideo" class="call-btn btn-video off" onclick="toggleVideo()" title="Turn Camera On/Off">
+            <span class="btn-icon">📷</span>
+            <span class="btn-label" id="lblToggleVideo">Video Off</span>
+          </button>
+          <button id="btnShareScreen" class="call-btn btn-screen off" onclick="toggleScreenShare()"
+            title="Present Screen">
+            <span class="btn-icon">🖥️</span>
+            <span class="btn-label" id="lblShareScreen">Screen</span>
+          </button>
+          <button id="btnJoinLeaveCall" class="call-btn btn-join" onclick="toggleJoinLeaveCall()"
+            title="Join or Leave Call">
+            <span class="btn-icon">📞</span>
+            <span class="btn-label" id="lblJoinLeave">Join Call</span>
+          </button>
+          <button class="call-btn gmeet-ctrl-btn" onclick="toggleFilterPopup()" title="Video Filters & Effects">
+            <span class="btn-icon">🎨</span>
+            <span class="btn-label">Filters</span>
+          </button>
+          <button class="call-btn gmeet-ctrl-btn" onclick="toggleBrowserFullscreen()" title="Toggle Fullscreen">
+            <span class="btn-icon">⛶</span>
+            <span class="btn-label">Fullscreen</span>
+          </button>
+        </div>
+
+        <!-- Right: Side Drawer Toggles & Minimize -->
+        <div class="gmeet-dock-right">
+          <button class="gmeet-icon-btn" onclick="openMeetDrawerTab('roster')" title="Show Participants & Timetable">
+            👥
+          </button>
+          <button class="gmeet-icon-btn" onclick="openMeetDrawerTab('chat')" title="Show In-Call Chat">
+            💬
+          </button>
+          <button class="gmeet-icon-btn" onclick="leavePeerRoom()" title="Reset / Disconnect Room">
+            🚪
+          </button>
+          <button class="gmeet-minimize-btn" onclick="closeSquadModal()"
+            title="Minimize to Study Mode (Call stays active)">
+            🗕 Min & Close
+          </button>
+        </div>
+      </div>
+
       <!-- MAIN WORKSPACE: Fullscreen Adaptive Video Stage + Collapsible Side Drawer -->
       <div class="gmeet-main-workspace">
 
@@ -163,64 +221,6 @@
           </div>
         </aside>
 
-      </div>
-
-      <!-- BOTTOM GOOGLE MEET CONTROL DOCK -->
-      <div class="gmeet-bottom-dock">
-        <!-- Left: Time & Room Code -->
-        <div class="gmeet-dock-left">
-          <span id="gmeetLiveClock">00:00</span>
-          <span class="gmeet-divider">|</span>
-          <span id="gmeetRoomCodeLabel">Study Meet</span>
-        </div>
-
-        <!-- Center: Audio, Video, Screen Share, Filters, Fullscreen, End Call -->
-        <div class="call-action-btns gmeet-dock-center">
-          <button id="btnToggleAudio" class="call-btn btn-audio off" onclick="toggleAudio()"
-            title="Turn Microphone On/Off">
-            <span class="btn-icon">🔇</span>
-            <span class="btn-label" id="lblToggleAudio">Mic Off</span>
-          </button>
-          <button id="btnToggleVideo" class="call-btn btn-video off" onclick="toggleVideo()" title="Turn Camera On/Off">
-            <span class="btn-icon">📷</span>
-            <span class="btn-label" id="lblToggleVideo">Video Off</span>
-          </button>
-          <button id="btnShareScreen" class="call-btn btn-screen off" onclick="toggleScreenShare()"
-            title="Present Screen">
-            <span class="btn-icon">🖥️</span>
-            <span class="btn-label" id="lblShareScreen">Present</span>
-          </button>
-          <button class="call-btn gmeet-ctrl-btn" onclick="toggleFilterPopup()" title="Video Filters & Effects">
-            <span class="btn-icon">🎨</span>
-            <span class="btn-label">Filters</span>
-          </button>
-          <button class="call-btn gmeet-ctrl-btn" onclick="toggleBrowserFullscreen()" title="Toggle Fullscreen">
-            <span class="btn-icon">⛶</span>
-            <span class="btn-label">Fullscreen</span>
-          </button>
-          <button id="btnJoinLeaveCall" class="call-btn btn-join" onclick="toggleJoinLeaveCall()"
-            title="Join or Leave Call">
-            <span class="btn-icon">📞</span>
-            <span class="btn-label" id="lblJoinLeave">Join Call</span>
-          </button>
-        </div>
-
-        <!-- Right: Side Drawer Toggles & Minimize/Exit -->
-        <div class="gmeet-dock-right">
-          <button class="gmeet-icon-btn" onclick="openMeetDrawerTab('roster')" title="Show Participants & Timetable">
-            👥
-          </button>
-          <button class="gmeet-icon-btn" onclick="openMeetDrawerTab('chat')" title="Show In-Call Chat">
-            💬
-          </button>
-          <button class="gmeet-icon-btn" onclick="leavePeerRoom()" title="Reset / Disconnect Room">
-            🚪
-          </button>
-          <button class="gmeet-minimize-btn" onclick="closeSquadModal()"
-            title="Minimize to Study Mode (Call stays active)">
-            X Close
-          </button>
-        </div>
       </div>
 
     </div>
