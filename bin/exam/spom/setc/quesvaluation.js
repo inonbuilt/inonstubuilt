@@ -2820,7 +2820,2857 @@ const caseStudies = [
     ],
     answer: 3,
     reason: "The chapter explains that value can exist even if an asset is not generating cash flows today but has the potential to generate future cash flows. It also states that value need not be monetary in nature and may not involve a monetary transaction."
-  }
+  },
+  // chapter2
+  {
+  case_id: "valu_ch2_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>ABC Limited is considering acquiring another business. Before proceeding, its management wants to assess the appropriate price for the acquisition and evaluate whether the transaction would be beneficial. At the same time, the company needs to determine the value of certain assets and liabilities for financial reporting and is considering raising additional capital through the issue of securities.</p>
+    <p>The management also intends to use valuation information to evaluate investment opportunities, support strategic decisions and comply with applicable taxation and regulatory requirements.</p>
+  `,
+  questions: [
+    {
+      question: "How does valuation assist an investor in making an investment decision?",
+      options: [
+        "By guaranteeing the return from every investment",
+        "By evaluating the potential return relative to the perceived risk and assessing whether the investment aligns with financial objectives",
+        "By eliminating all risks associated with an investment",
+        "By determining only the historical purchase price of an investment"
+      ],
+      answer: 1,
+      reason: "Valuation assists investors in assessing whether an investment opportunity aligns with their financial objectives by evaluating its potential return relative to its perceived risk."
+    },
+    {
+      question: "Which of the following is a relevant purpose of valuation in financial reporting?",
+      options: [
+        "Determining the value of assets and liabilities for balance sheets and assessing goodwill in mergers and acquisitions",
+        "Guaranteeing that the company will report profits in every financial year",
+        "Determining only the selling price of inventory",
+        "Eliminating the need to comply with accounting standards"
+      ],
+      answer: 0,
+      reason: "The chapter explains that valuation is essential for financial reporting, including determining asset and liability values for balance sheets, assessing goodwill in mergers and acquisitions, and complying with accounting standards and regulatory requirements."
+    },
+    {
+      question: "What is the primary relevance of valuation in a merger or acquisition?",
+      options: [
+        "To eliminate the need for negotiations between the parties",
+        "To ensure that the acquiring company always pays the lowest possible price",
+        "To determine the historical cost of every asset of the target company",
+        "To establish an appropriate price for acquiring a business or merging with another entity"
+      ],
+      answer: 3,
+      reason: "In mergers and acquisitions, valuation helps establish the appropriate price to be paid for acquiring a business or merging with another entity, ensuring that the transaction is beneficial to the parties involved."
+    },
+    {
+      question: "How can valuation support ABC Limited's corporate finance activities?",
+      options: [
+        "By removing all uncertainty from financial decisions",
+        "By determining only the company's annual tax liability",
+        "By supporting capital raising, the issue of stocks or bonds, and decisions regarding capital allocation",
+        "By replacing every strategic decision made by management"
+      ],
+      answer: 2,
+      reason: "Valuation supports corporate finance activities such as raising capital, issuing stocks or bonds, and making strategic decisions regarding capital allocation and investment opportunities."
+    },
+    {
+      question: "Which of the following is a taxation-related purpose of valuation mentioned in the chapter?",
+      options: [
+        "Guaranteeing exemption from all taxes",
+        "Estate planning, gift taxation, transfer pricing and determining asset values for tax assessment and compliance",
+        "Determining the personal preferences of an investor",
+        "Eliminating the requirement to comply with tax laws"
+      ],
+      answer: 1,
+      reason: "Valuation is relevant for taxation and compliance, including estate planning, gift taxation, transfer pricing, and determining asset values for tax assessment and compliance."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>ADP Limited, a conglomerate, is considering acquiring JPA Private Limited, which operates in the Media and Entertainment industry. Before estimating the value of the proposed transaction, ADP Limited's valuation team studies publicly available information about similar acquisitions completed by other companies.</p>
+    <p>The team considers the industry, financial characteristics of the companies, size and type of the transactions, buyer characteristics, transaction values and dates of announcement. It gives particular attention to more recent transactions that are relevant to the proposed acquisition.</p>
+  `,
+  questions: [
+    {
+      question: "What does transaction analysis primarily use to derive a reasoned estimate of multiples or premiums paid for publicly traded companies?",
+      options: [
+        "Only the personal opinions of the acquiring company's management",
+        "Publicly available data relating to relevant transactions",
+        "Only the historical purchase cost of the target company's assets",
+        "Only the target company's annual tax return"
+      ],
+      answer: 1,
+      reason: "Transaction analysis utilizes publicly available data to derive a reasoned estimate of multiples or premiums paid for publicly traded companies."
+    },
+    {
+      question: "Which companies should ADP Limited generally consider when identifying comparable transactions?",
+      options: [
+        "Companies operating in unrelated industries with completely different financial characteristics",
+        "Companies selected only because their transaction values are the highest",
+        "Companies having similar financial characteristics and operating in the same industry",
+        "Companies whose transactions occurred only during the earliest available period"
+      ],
+      answer: 2,
+      reason: "The chapter states that companies should be chosen based on having similar financial characteristics and operating in the same industry when identifying relevant transactions."
+    },
+    {
+      question: "Which additional factors should the valuation team consider when selecting comparable transactions?",
+      options: [
+        "Similarity in transaction size, type of transaction and characteristics of the buyer",
+        "Only the name of the acquiring company",
+        "Only whether the target company has the oldest incorporation date",
+        "Only the number of employees working in the acquiring company"
+      ],
+      answer: 0,
+      reason: "The chapter explains that the transaction size should be similar to the transaction being considered, and the type of transaction and characteristics of the buyer should also be similar."
+    },
+    {
+      question: "Why may a more recently completed transaction be considered more useful for transaction analysis?",
+      options: [
+        "Because every recent transaction necessarily has the highest valuation multiple",
+        "Because recent transactions eliminate the need to compare industries",
+        "Because recent transactions cannot be affected by market conditions",
+        "Because transactions that occurred more recently are considered more valuable in terms of usefulness for analysis"
+      ],
+      answer: 3,
+      reason: "The chapter states that transactions that occurred more recently are considered more valuable in terms of their usefulness for analysis."
+    },
+    {
+      question: "Which set of criteria is consistent with the filtering process described in the chapter's example of comparable transaction analysis?",
+      options: [
+        "Only the personal preferences of the target company's shareholders",
+        "Acquisition of majority stake, industry, date of announcement and transaction value",
+        "Only the number of directors in the acquiring company",
+        "Only the target company's original incorporation cost"
+      ],
+      answer: 1,
+      reason: "In the example involving ADP Limited and JPA Private Limited, the valuer filters transactions using qualitative and quantitative criteria such as acquisition of majority stake, industry, date of announcement and transaction value."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>A valuation professional uses comparable acquisition transactions to estimate a reasonable valuation range for a business. The analysis provides information about market demand and the multiples observed in earlier transactions.</p>
+    <p>However, some transactions provide limited information, and the market conditions prevailing when earlier transactions occurred differ from current conditions. Changes in competitors, business cycles, exchange rates and geopolitical influences may also affect the usefulness of the comparison.</p>
+  `,
+  questions: [
+    {
+      question: "Which of the following is an advantage of transaction analysis?",
+      options: [
+        "It guarantees that all comparable transactions have identical characteristics",
+        "It eliminates every uncertainty involved in estimating value",
+        "It provides a broad evaluation of market demand for a specific asset and an approximate valuation",
+        "It ensures that past transaction multiples will remain unchanged in the future"
+      ],
+      answer: 2,
+      reason: "The chapter explains that transaction analysis helps provide a broad evaluation of market demand for a specific asset and an approximate valuation, although the assessment involves generalizations."
+    },
+    {
+      question: "Which limitation can affect the usefulness of transaction analysis?",
+      options: [
+        "Limitations in the quantity and quality of transaction-related information",
+        "The automatic availability of complete information for every transaction",
+        "The absence of any differences between historical and current transactions",
+        "The certainty that all transactions involve the same buyer and target"
+      ],
+      answer: 0,
+      reason: "The chapter identifies limitations in the quantity and quality of transaction-related information as factors that can hinder conclusive insights from transaction analysis."
+    },
+    {
+      question: "Why should a valuer consider differences between the market conditions of past transactions and the current situation?",
+      options: [
+        "Because a past transaction always determines the present value exactly",
+        "Because market conditions are irrelevant to transaction analysis",
+        "Because the size of every transaction automatically remains constant over time",
+        "Because differences in market conditions may affect the usefulness of earlier transaction information"
+      ],
+      answer: 3,
+      reason: "The chapter explains that differences in market conditions between past transactions and the present scenario compound the limitations of transaction analysis."
+    },
+    {
+      question: "Which group contains factors identified in the chapter that may affect transaction comparisons?",
+      options: [
+        "Only the names of the companies involved",
+        "Competitor dynamics, business cycle phases, exchange rate fluctuations and geopolitical influences",
+        "Only the personal preferences of the valuation professional",
+        "Only the date on which the valuer prepared the report"
+      ],
+      answer: 1,
+      reason: "The chapter identifies competitor dynamics, market demand fluctuations, business cycle phases, exchange rate fluctuations and geopolitical influences as factors that may affect transaction analysis."
+    },
+    {
+      question: "Why do conclusions from transaction analysis inherently involve generalizations?",
+      options: [
+        "Because publicly available information is never useful",
+        "Because transaction analysis does not consider the target company",
+        "Because every transaction is unique and involves numerous variables",
+        "Because all transactions necessarily produce the same valuation"
+      ],
+      answer: 2,
+      reason: "Although transaction analysis assists in estimating market demand and approximate value, each transaction is unique and involves numerous variables. Therefore, the resulting assessments inherently entail generalizations."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>XYZ Limited proposes to issue new shares and undertake a corporate restructuring. The company requires a valuation of the relevant shares and other assets under the Companies Act, 2013.</p>
+    <p>The company's audit committee considers the appointment of a registered valuer. The proposed valuer is expected to carry out an impartial valuation, exercise due diligence and comply with the prescribed rules. The company also checks whether the valuer has any direct or indirect interest in the assets being valued.</p>
+  `,
+  questions: [
+    {
+      question: "Who is required to value property, stocks, shares, debentures, securities, goodwill or other assets or net worth of a company when valuation is required under the Companies Act, 2013?",
+      options: [
+        "A registered valuer",
+        "Any employee selected by the company's marketing department",
+        "Only the company's largest shareholder",
+        "Any person without regard to the applicable valuation requirements"
+      ],
+      answer: 0,
+      reason: "The chapter states that where valuation is required under the Companies Act, 2013 in respect of specified property, securities, goodwill, other assets, net worth or liabilities, it shall be valued by a registered valuer."
+    },
+    {
+      question: "Who appoints the valuer under the process described in the chapter?",
+      options: [
+        "Only the company's customers",
+        "The audit committee or, in its absence, the Board of Directors of the company",
+        "Only the employees of the company",
+        "The company's competitors"
+      ],
+      answer: 1,
+      reason: "The chapter explains that the valuation is to be undertaken on the prescribed terms and conditions, with the valuer appointed by the audit committee or, in its absence, by the Board of Directors."
+    },
+    {
+      question: "Which of the following correctly describes the responsibilities of a valuer under the Companies Act, 2013, as presented in the chapter?",
+      options: [
+        "Use any valuation method without considering prescribed rules",
+        "Provide a valuation designed exclusively to favour the appointing company's management",
+        "Make an impartial, true and fair valuation, exercise due diligence and care, and follow the prescribed rules",
+        "Ignore information relevant to the assets being valued"
+      ],
+      answer: 2,
+      reason: "The chapter states that a valuer must make an impartial, true and fair valuation, exercise due diligence and care, and undertake the valuation in accordance with the prescribed rules."
+    },
+    {
+      question: "When is a valuer prohibited from undertaking a valuation under the responsibilities described in the chapter?",
+      options: [
+        "Whenever the company has more than one shareholder",
+        "Whenever the valuation concerns a proposed acquisition",
+        "Whenever the company has assets and liabilities",
+        "When the valuer has a direct or indirect interest in the assets or becomes interested at any time during or after their valuation"
+      ],
+      answer: 3,
+      reason: "The chapter states that a valuer is prohibited from undertaking the valuation of assets in which the valuer has a direct or indirect interest or becomes interested at any time during or after the valuation."
+    },
+    {
+      question: "According to the chapter, which of the following has not been prescribed as a mandatory valuation under the Companies Act, 2013?",
+      options: [
+        "Valuation in respect of the issue of new shares",
+        "Buy-back of shares, reduction of capital and consolidation of capital with consequential payment for fractional entitlements",
+        "Valuation in respect of the issue of sweat equity",
+        "Valuation in respect of compromise arrangements, mergers and amalgamations"
+      ],
+      answer: 1,
+      reason: "The chapter specifically notes that the Companies Act has not prescribed mandatory valuation in respect of buy-back of shares, reduction of capital, and consolidation of capital and consequential payment for fractional entitlements."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>LMN Limited is undertaking several transactions that require consideration of valuation for income-tax purposes. The company proposes to issue shares at a premium, while another transaction involves the transfer of an undertaking as a whole. Separately, an individual receives shares for consideration exceeding their fair market value, and a taxpayer proposes to transfer immovable property for consideration below its stamp duty value.</p>
+    <p>The company's tax adviser reviews the relevant provisions of the Income Tax Act, 1961, including the provisions dealing with share valuation, slump sale, immovable property and transfer pricing.</p>
+  `,
+  questions: [
+    {
+      question: "What is the relevance of valuation under Section 56(2)(viib) of the Income Tax Act, 1961, as explained in the chapter?",
+      options: [
+        "It determines the stamp duty value of every immovable property",
+        "It determines the liquidation value of an insolvent company",
+        "It determines the value of all foreign exchange derivatives",
+        "It helps substantiate the premium on the issue of shares by certain companies, with the discounted cash flow method being one valuation option"
+      ],
+      answer: 3,
+      reason: "The chapter explains that Section 56(2)(viib) addresses taxation of income arising from the issuance of shares at a premium by certain companies. A valuation is required to substantiate the premium, and one option is fair market value determination using the discounted cash flow method."
+    },
+    {
+      question: "What does Rule 11UA of the Income Tax Rules, 1962, provide in the context described in the chapter?",
+      options: [
+        "Guidelines for determining the liquidation value of all corporate debtors",
+        "Guidelines for determining the fair market value of unquoted equity shares",
+        "Rules for calculating the net asset value of every REIT",
+        "Guidelines for selecting comparable acquisition transactions"
+      ],
+      answer: 1,
+      reason: "The chapter states that Section 56(2)(x) deals with income arising from the receipt of shares at consideration exceeding their fair market value. Rule 11UA provides guidelines for determining the fair market value of unquoted equity shares."
+    },
+    {
+      question: "Which transaction is addressed by Section 50B of the Income Tax Act, 1961?",
+      options: [
+        "A slump sale involving the transfer of an undertaking or business as a whole",
+        "The valuation of employee stock options under SEBI regulations",
+        "The valuation of assets of an Infrastructure Investment Trust",
+        "The determination of the fair value of a company's assets under Ind AS 113"
+      ],
+      answer: 0,
+      reason: "The chapter explains that Section 50B pertains to capital gains arising from slump sale transactions. The consideration received or accruing from the transfer of an undertaking or business as a whole is deemed to be the full value of consideration for computing capital gains."
+    },
+    {
+      question: "Under the provision described in the chapter, what happens when the actual sale consideration for an immovable property is lower than its stamp duty value?",
+      options: [
+        "The actual sale consideration is always accepted without further consideration",
+        "The property must automatically be treated as an insolvent company's asset",
+        "Section 50C mandates the adoption of stamp duty value as deemed consideration, as described in the chapter",
+        "The transaction automatically becomes a preferential allotment"
+      ],
+      answer: 2,
+      reason: "The chapter states that Section 50C mandates the adoption of stamp duty value as deemed consideration for the transfer of immovable property when the actual sale consideration is lower than the stamp duty value."
+    },
+    {
+      question: "What is the valuation-related purpose of Section 92C of the Income Tax Act, 1961?",
+      options: [
+        "Determining the fair value of REIT units for secondary-market trading",
+        "Determining arm's length prices for transactions between associated enterprises",
+        "Determining the liquidation value of a corporate debtor",
+        "Determining the exercise price of employee stock options under SEBI regulations"
+      ],
+      answer: 1,
+      reason: "The chapter explains that Section 92C deals with transfer pricing for transactions between associated enterprises. Such transactions must be conducted at arm's length prices, determined based on the fair market value of the goods, services or intangible property transferred."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS06",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>PQR Limited, an Indian company, proposes to issue or transfer shares to a non-resident investor. It also considers an overseas investment and a foreign exchange derivative transaction.</p>
+    <p>The company's advisers review the valuation requirements under the Foreign Exchange Management Act and associated regulations. They consider fair market value, arm's length pricing, Reserve Bank of India pricing guidelines, valuation methodologies and compliance requirements for cross-border transactions.</p>
+  `,
+  questions: [
+    {
+      question: "What is a key valuation consideration for transactions between residents and non-residents under the FEMA discussion in the chapter?",
+      options: [
+        "Transactions must always be conducted at the historical cost of the assets",
+        "Transactions must be conducted at any price selected without reference to value",
+        "Transactions must be conducted at arm's length prices based on fair market value",
+        "Transactions are exempt from every valuation consideration"
+      ],
+      answer: 2,
+      reason: "The chapter states that transactions between residents and non-residents must be conducted at arm's length prices determined based on fair market value, necessitating valuation of the assets involved."
+    },
+    {
+      question: "Which valuation methodologies does the chapter identify in the context of shares issued or transferred to non-residents?",
+      options: [
+        "The discounted cash flow method or the net asset value method, in accordance with the applicable pricing guidelines",
+        "Only the historical purchase cost method, without regard to pricing guidelines",
+        "Only the depreciation method",
+        "Only the method used to calculate annual tax deductions"
+      ],
+      answer: 0,
+      reason: "The chapter explains that valuation of shares issued or transferred to non-residents must adhere to prescribed methodologies, such as the discounted cash flow method or the net asset value method, to ensure compliance with pricing norms specified by the Reserve Bank of India."
+    },
+    {
+      question: "Which of the following is an example of a foreign exchange derivative identified in the chapter?",
+      options: [
+        "Goodwill",
+        "An undertaking transferred under a slump sale",
+        "An unquoted equity share valued under Rule 11UA",
+        "An option, forward or swap"
+      ],
+      answer: 3,
+      reason: "The chapter identifies options, forwards and swaps as examples of foreign exchange derivatives for which valuation may be required."
+    },
+    {
+      question: "Which overseas transactions may give rise to valuation requirements under the FEMA discussion in the chapter?",
+      options: [
+        "Only the purchase of domestic office furniture",
+        "Overseas investments and disinvestments in foreign securities, joint ventures or subsidiaries",
+        "Only the appointment of a company's audit committee",
+        "Only the valuation of employee performance"
+      ],
+      answer: 1,
+      reason: "The chapter states that valuation requirements may apply to overseas investments and disinvestments by Indian residents. Valuation of investments and divestments in foreign securities, joint ventures or subsidiaries must comply with FEMA guidelines."
+    },
+    {
+      question: "What is the overall objective of valuation requirements under FEMA, as described in the chapter?",
+      options: [
+        "To ensure that cross-border transactions are always completed at the highest possible price",
+        "To remove the need for compliance with foreign exchange regulations",
+        "To promote transparency, fairness and compliance and mitigate the risk of underreporting or mispricing assets and liabilities",
+        "To ensure that all foreign exchange derivative transactions generate profits"
+      ],
+      answer: 2,
+      reason: "The chapter explains that FEMA valuation requirements promote transparency, fairness and compliance in cross-border transactions. Adherence to valuation norms helps ensure arm's length pricing and mitigates the risk of underreporting or mispricing assets and liabilities."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS07",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>RST Limited is considering a preferential allotment of shares and an employee stock option plan. Separately, an Infrastructure Investment Trust (InVIT) and a Real Estate Investment Trust (REIT) hold assets that require valuation.</p>
+    <p>The companies and investment trusts review the applicable SEBI regulations. Their objective is to support fair treatment of investors, transparent disclosure, appropriate valuation of assets and the determination of the net asset value of investment trust units.</p>
+  `,
+  questions: [
+    {
+      question: "What is the role of valuation under the SEBI Takeover Code, as explained in the chapter?",
+      options: [
+        "To establish the historical cost of all assets of the acquirer",
+        "To support determination of the offer price and a fair exit opportunity for minority shareholders",
+        "To guarantee that an acquisition will always be completed",
+        "To eliminate the need to disclose the offer price"
+      ],
+      answer: 1,
+      reason: "The chapter explains that valuation is important under the Takeover Code. Acquirers are required to disclose the offer price and provide a fair exit opportunity to minority shareholders, with independent valuers conducting assessments to determine the offer price."
+    },
+    {
+      question: "Why is fair valuation relevant to preferential allotments under SEBI regulations?",
+      options: [
+        "It removes all rights of existing shareholders",
+        "It ensures that valuation reports need not be disclosed",
+        "It guarantees that the company will never issue additional shares",
+        "It helps prevent dilution of existing shareholders' interests and supports transparent disclosure through detailed valuation reports"
+      ],
+      answer: 3,
+      reason: "The chapter states that preferential allotments require fair valuation to prevent dilution of existing shareholders' interests. SEBI mandates disclosure of detailed valuation reports to ensure transparency and safeguard investors' rights."
+    },
+    {
+      question: "What is the role of valuation under SEBI regulations governing employee stock option plans (ESOPs)?",
+      options: [
+        "To determine the exercise price of employee stock options using prescribed fair valuation methodologies",
+        "To determine the liquidation value of every company issuing ESOPs",
+        "To calculate the stamp duty value of all company properties",
+        "To determine the offer price under every takeover transaction"
+      ],
+      answer: 0,
+      reason: "The chapter states that SEBI regulations governing ESOPs require fair valuation methodologies to determine the exercise price of employee stock options."
+    },
+    {
+      question: "Why is valuation of InVIT assets important under the SEBI regulations described in the chapter?",
+      options: [
+        "It establishes that infrastructure assets can never change in value",
+        "It removes the requirement to determine the value of investment trust units",
+        "It supports assessment of fair value and the determination of the net asset value of InVIT units",
+        "It eliminates the need for independent valuation"
+      ],
+      answer: 2,
+      reason: "The chapter explains that InVIT assets are valued by independent valuers accredited by recognized bodies. The valuation process is crucial for determining the net asset value of InVIT units, which affects investor returns and unit pricing in the secondary market."
+    },
+    {
+      question: "Which valuation requirement applies to REIT assets according to the chapter?",
+      options: [
+        "REIT assets must be valued only when the trust is liquidated",
+        "REIT assets undergo periodic valuation by independent valuers, supporting fair value assessment and determination of the net asset value of REIT units",
+        "REIT assets are valued solely by the trust's customers",
+        "REIT valuation is unrelated to investor confidence or unit pricing"
+      ],
+      answer: 1,
+      reason: "The chapter states that REIT assets undergo periodic valuation by independent valuers. Valuation reports provide insights into fair value and support accurate determination of the net asset value of REIT units."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS08",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>UVW Limited enters the corporate insolvency resolution process under the Insolvency and Bankruptcy Code, 2016. The professionals involved need information about the company's assets and liabilities to assist the resolution process and the determination of proceeds available to creditors.</p>
+    <p>In another situation, a company is placed into liquidation, while a separate review considers potentially undervalued transactions. The valuation team also notes that other laws and regulations may require valuation in circumstances such as certain mergers, de-mergers and transactions involving thinly traded shares.</p>
+  `,
+  questions: [
+    {
+      question: "What values are required to be ascertained for the assets of a corporate debtor during the corporate insolvency resolution process, as described in the chapter?",
+      options: [
+        "Fair value and liquidation value",
+        "Only the original historical cost of every asset",
+        "Only the annual depreciation of each asset",
+        "Only the amount of tax previously paid by the company"
+      ],
+      answer: 0,
+      reason: "The chapter states that when a company is placed under the corporate insolvency resolution process, valuation is prescribed to ascertain the fair value and liquidation value of the assets of the corporate debtor."
+    },
+    {
+      question: "In which situation does the chapter identify valuation requirements under the Insolvency and Bankruptcy Code?",
+      options: [
+        "Only when a company launches an employee stock option plan",
+        "Only when an investor purchases shares in a listed company",
+        "When the company is placed into liquidation, including voluntary liquidation",
+        "Only when a company prepares a marketing plan"
+      ],
+      answer: 2,
+      reason: "The chapter explains that valuation is required when a company is placed into liquidation, including voluntary liquidation."
+    },
+    {
+      question: "How does valuation assist the resolution process under the Insolvency and Bankruptcy Code?",
+      options: [
+        "It guarantees that every creditor receives the entire amount claimed",
+        "It eliminates the need to assess the assets and liabilities of the corporate debtor",
+        "It determines only the value of shares issued to non-residents",
+        "It facilitates resolution plans and helps determine the distribution of proceeds among creditors"
+      ],
+      answer: 3,
+      reason: "The chapter states that valuation of the assets and liabilities of an insolvent company is integral to the resolution process, facilitating resolution plans and determining the distribution of proceeds among creditors."
+    },
+    {
+      question: "Which situation may trigger valuation requirements when potentially avoidable transactions are reviewed?",
+      options: [
+        "A routine employee performance appraisal",
+        "An undervalued transaction covered in the review of avoidable transactions in the relevant period",
+        "A decision to enter a new product market",
+        "The ordinary preparation of an investor presentation"
+      ],
+      answer: 1,
+      reason: "The chapter explains that valuation requirements may arise for undervalued transactions covered in the review of avoidable transactions in the relevant period."
+    },
+    {
+      question: "Which of the following is an example of valuation requirements arising under other laws and regulations, as mentioned in the chapter?",
+      options: [
+        "Determining the personal preferences of the company's directors",
+        "Guaranteeing a return to all investors",
+        "Valuation requirements under the Stamp Duty Act of certain states for mergers or de-mergers, and valuation relating to thinly traded shares",
+        "Determining the annual leave entitlement of every employee"
+      ],
+      answer: 2,
+      reason: "The chapter notes that other valuation requirements may arise under laws and regulations such as the Stamp Duty Act of certain states in the case of a merger or de-merger, and requirements relating to thinly traded shares."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS09",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>LMN Limited is preparing its financial statements and considering expansion into new markets. It needs fair value information for certain assets and liabilities, including items for which active markets may not exist. The company is also examining a proposed scheme of arrangement and wants to ensure that its shareholders receive transparent information.</p>
+    <p>The board uses valuation information to assess strategic alternatives, allocate resources and evaluate the company's financial position. It also seeks to strengthen corporate governance through objective valuation assessments and transparent disclosure of methodologies and assumptions.</p>
+  `,
+  questions: [
+    {
+      question: "Which Indian Accounting Standard is identified in the chapter as dealing with fair value measurement for financial reporting purposes?",
+      options: [
+        "Ind AS 113",
+        "Ind AS 16",
+        "Ind AS 105",
+        "None of the above"
+      ],
+      answer: 0,
+      reason: "The chapter identifies Ind AS 113, Fair Value Measurement, as the standard that mandates entities to measure and disclose fair value for financial reporting purposes."
+    },
+    {
+      question: "For which types of assets and liabilities may business valuation be particularly important when active markets are unavailable?",
+      options: [
+        "Only assets that have already been sold",
+        "Only assets that have no relevance to financial reporting",
+        "Goodwill, intangible assets and certain financial instruments",
+        "Only the company's historical operating expenses"
+      ],
+      answer: 2,
+      reason: "The chapter explains that valuation techniques are used to determine fair values, especially for assets and liabilities that lack active markets, such as goodwill, intangible assets and certain financial instruments."
+    },
+    {
+      question: "According to the chapter, what does Section 230 of the Companies Act require in the context of schemes of arrangement, amalgamations or corporate restructuring?",
+      options: [
+        "Valuation only of employee salaries",
+        "Valuation of shares, assets or liabilities",
+        "Valuation only of foreign exchange derivatives",
+        "Valuation only of the company's advertising expenditure"
+      ],
+      answer: 1,
+      reason: "The chapter states that Section 230 of the Companies Act requires valuation of shares, assets or liabilities in cases involving schemes of arrangement, amalgamations or corporate restructuring."
+    },
+    {
+      question: "How can valuation assist LMN Limited in strategic planning?",
+      options: [
+        "By guaranteeing that every strategic decision will be successful",
+        "By eliminating all risks associated with expansion",
+        "By removing the need to allocate resources",
+        "By evaluating strategic alternatives, assessing investment opportunities and supporting effective resource allocation"
+      ],
+      answer: 3,
+      reason: "The chapter explains that valuation assists strategic planning by evaluating strategic alternatives, such as entering new markets, diversifying product offerings or pursuing strategic alliances through mergers and acquisitions. It also supports capital allocation decisions."
+    },
+    {
+      question: "How does valuation contribute to corporate governance?",
+      options: [
+        "By ensuring that management never has to disclose financial information",
+        "By removing the need to consider shareholder interests",
+        "By supporting fair assessment of share value, transparency, accountability and informed shareholder decisions",
+        "By ensuring that all shareholders have identical investment objectives"
+      ],
+      answer: 2,
+      reason: "The chapter explains that valuation supports corporate governance by providing objective assessments, helping evaluate the fair value of shares and promoting transparency, accountability, protection of shareholder interests and long-term value creation."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS10",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>ABC Enterprises is evaluating a potential fundraising proposal and reviewing its financial performance. At the same time, a disagreement has arisen among shareholders regarding the value of their equity interests. Management also wants to assess business risks and explain the company's financial position to investors and employees.</p>
+    <p>The company considers valuation as a tool for dispute resolution, risk management, capital raising, performance evaluation and stakeholder communication. It intends to use objective valuation assessments to support decision-making and communicate relevant valuation information transparently.</p>
+  `,
+  questions: [
+    {
+      question: "How can valuation assist in resolving a dispute among shareholders?",
+      options: [
+        "By ensuring that one party automatically receives the entire business",
+        "By removing the need to determine the value of the disputed equity interests",
+        "By guaranteeing that a dispute will never proceed to legal proceedings",
+        "By providing an objective and independent assessment of the value of the disputed assets or interests"
+      ],
+      answer: 3,
+      reason: "The chapter explains that valuation serves as a critical tool in dispute resolution by providing an objective and independent assessment of disputed assets or interests. Valuation reports may also assist in court proceedings, arbitration or mediation."
+    },
+    {
+      question: "How does valuation support risk management?",
+      options: [
+        "By helping identify and assess risks, quantify their financial implications and evaluate the risk-return profile of investment opportunities",
+        "By ensuring that a business faces no market, financial or operational risks",
+        "By eliminating the need to assess counterparties",
+        "By guaranteeing that every investment produces a profit"
+      ],
+      answer: 0,
+      reason: "The chapter explains that valuation helps identify and assess market, financial, operational and strategic risks. It also supports evaluation of investment risk-return profiles and assessment of counterparties to mitigate potential losses."
+    },
+    {
+      question: "What is a primary use of valuation in capital raising?",
+      options: [
+        "To ensure that all fundraising occurs without any negotiations",
+        "To guarantee that investors will accept any proposed price",
+        "To determine a realistic valuation range for equity or assets and support decisions about financing options",
+        "To eliminate the need to consider the company's capital requirements"
+      ],
+      answer: 2,
+      reason: "The chapter explains that valuation in capital raising helps determine the fair value of a company's equity or assets, establish a realistic valuation range, support appropriate pricing and assess financing options such as equity, debt or hybrid instruments."
+    },
+    {
+      question: "How can valuation be used in performance evaluation?",
+      options: [
+        "By measuring only the number of employees in the company",
+        "By comparing actual market value with estimated intrinsic value and identifying opportunities to improve value creation",
+        "By ensuring that market value and intrinsic value are always identical",
+        "By eliminating the need to evaluate financial performance"
+      ],
+      answer: 1,
+      reason: "The chapter explains that valuation can help management compare the actual market value of a business with its estimated intrinsic value, assess value creation initiatives and identify areas for strategic realignment or operational improvement."
+    },
+    {
+      question: "How does valuation support stakeholder communication?",
+      options: [
+        "By removing all financial information from investor presentations",
+        "By ensuring that valuation assumptions are never disclosed",
+        "By limiting communication exclusively to the board of directors",
+        "By providing transparent and credible information about valuation methodologies, assumptions, financial performance and value creation potential"
+      ],
+      answer: 3,
+      reason: "The chapter explains that valuation supports stakeholder communication through transparent and credible insights into value drivers, financial performance and growth prospects. Disclosure of methodologies, assumptions and key metrics can enhance investor understanding, confidence and stakeholder relationships."
+    }
+  ]
+},
+{
+  case_id: "valu_ch2_CS11",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>A business owner wants to understand the intrinsic worth of an investment before making a financial decision. The owner understands that the cost originally paid for an asset and its current market price may differ from its intrinsic value.</p>
+    <p>A valuation professional explains that intrinsic worth may reflect the perceived value of a security based on future earnings or other non-market-related attributes. The professional also explains that fair value is related to a transaction in which both parties act voluntarily, and that the circumstances and objectives of the valuation influence the process.</p>
+  `,
+  questions: [
+    {
+      question: "What is valuation primarily concerned with, according to the chapter?",
+      options: [
+        "Determining only the historical purchase cost of an asset",
+        "Determining only the current market price of an asset",
+        "Determining the intrinsic value of a company, investment or asset",
+        "Calculating only the tax payable by an investor"
+      ],
+      answer: 2,
+      reason: "The chapter defines valuation as the process of determining the intrinsic value of a company, investment or asset, as opposed to its cost or current market value."
+    },
+    {
+      question: "What does intrinsic worth of a security pertain to, as explained in the chapter?",
+      options: [
+        "Its original purchase cost alone",
+        "Its perceived value based on future earnings or other non-market-related attributes",
+        "Its annual depreciation alone",
+        "Its stamp duty value in every circumstance"
+      ],
+      answer: 1,
+      reason: "The chapter explains that intrinsic worth pertains to the perceived value of a security based on future earnings or other non-market-related attributes."
+    },
+    {
+      question: "How is fair value described in the introductory discussion of the chapter?",
+      options: [
+        "The price fixed unilaterally by the seller",
+        "The historical cost recorded in the books of account",
+        "The lowest price that a buyer can negotiate",
+        "The price a buyer is willing to pay and a seller is willing to accept when both parties engage voluntarily"
+      ],
+      answer: 3,
+      reason: "The chapter describes fair value as the price a buyer is willing to pay and a seller is willing to accept in a transaction, provided both parties engage voluntarily."
+    },
+    {
+      question: "Which approach is required when conducting a valuation?",
+      options: [
+        "A comprehensive grasp of factors influencing value, informed professional judgment and a methodical approach",
+        "Exclusive reliance on the original purchase price",
+        "Use of the same value for every asset regardless of circumstances",
+        "Consideration of only the seller's expectations"
+      ],
+      answer: 0,
+      reason: "The chapter explains that conducting a valuation requires a comprehensive grasp of diverse factors influencing value, informed professional judgment and a methodical approach."
+    },
+    {
+      question: "Which factors influence the need for valuation?",
+      options: [
+        "Only the incorporation date of the company",
+        "Only the number of shareholders",
+        "Prevailing market conditions, the objectives of the involved parties and the circumstances underlying the valuation",
+        "Only the historical cost of the asset"
+      ],
+      answer: 2,
+      reason: "The chapter states that the need for valuation depends upon prevailing market conditions, the objectives of the involved parties and the circumstances underlying the valuation endeavour."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS12",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>ADP Limited is evaluating a possible acquisition of JPA Private Limited, a Media and Entertainment company. Its valuation team examines comparable transactions and prepares a table showing transaction values, implied Enterprise Value (EV) to EBITDA multiples and implied EV to Revenue multiples.</p>
+    <p>The analysis contains a minimum, maximum, average and median for the selected transactions. After considering the findings, the team estimates a reasonable range of multiples for the proposed acquisition.</p>
+  `,
+  questions: [
+    {
+      question: "What is the principal use of the publicly available information in transaction analysis?",
+      options: [
+        "To derive a reasoned estimate of multiples or premiums paid for publicly traded companies",
+        "To guarantee the future profitability of the target company",
+        "To determine only the annual depreciation of the target company's assets",
+        "To eliminate the need to analyse comparable transactions"
+      ],
+      answer: 0,
+      reason: "The chapter explains that transaction analysis utilizes publicly available data to derive a reasoned estimate of multiples or premiums paid for publicly traded companies."
+    },
+    {
+      question: "In the chapter's comparable transaction table, which target company corresponds to the total implied transaction value of INR 22,29,228.73 million?",
+      options: [
+        "Betches Media, LLC",
+        "Getty Images Holdings, Inc.",
+        "DISH Network Corporation",
+        "System Era Softworks, Inc."
+      ],
+      answer: 2,
+      reason: "In the comparable transaction table provided in the chapter, DISH Network Corporation has the total implied transaction value of INR 22,29,228.73 million."
+    },
+    {
+      question: "What is the median implied EV/EBITDA multiple shown in the chapter's comparable transaction table?",
+      options: [
+        "12.16x",
+        "10.53x",
+        "8.83x",
+        "17.94x"
+      ],
+      answer: 1,
+      reason: "The comparable transaction table reports the median implied EV/EBITDA multiple as 10.53x."
+    },
+    {
+      question: "What is the average implied EV/Revenue multiple shown in the chapter's comparable transaction table?",
+      options: [
+        "5.88x",
+        "0.84x",
+        "3.70x",
+        "3.54x"
+      ],
+      answer: 3,
+      reason: "The comparable transaction table reports the average implied EV/Revenue multiple as 3.54x."
+    },
+    {
+      question: "What valuation ranges does the chapter's example indicate ADP Limited can expect for its proposed transaction?",
+      options: [
+        "EV/Revenue of 3.0x–4.0x and EV/EBITDA of 10.5x–12.5x",
+        "EV/Revenue of 8.0x–10.0x and EV/EBITDA of 1.0x–2.0x",
+        "EV/Revenue of 0.5x–1.0x and EV/EBITDA of 3.0x–4.0x",
+        "EV/Revenue of 10.5x–12.5x and EV/EBITDA of 3.0x–4.0x"
+      ],
+      answer: 0,
+      reason: "After considering the comparable transactions, the chapter states that ADP Limited can expect an implied EV/Revenue multiple in the range of 3.0x–4.0x and an implied EV/EBITDA multiple in the range of 10.5x–12.5x."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS13",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>ABC Limited proposes to issue sweat equity shares and enter into a compromise arrangement. It requires valuation in accordance with the Companies Act, 2013.</p>
+    <p>The audit committee considers appointing a registered valuer. Before proceeding, the company reviews the valuer's responsibilities, including impartiality, due diligence, compliance with prescribed rules and the absence of a prohibited interest in the assets being valued.</p>
+  `,
+  questions: [
+    {
+      question: "Who is required to value the relevant property, shares, securities, goodwill or other assets where valuation is required under the Companies Act, 2013, as described in the chapter?",
+      options: [
+        "Only the company's largest shareholder",
+        "A registered valuer",
+        "Only an employee from the company's finance department",
+        "Any person selected without regard to the applicable requirements"
+      ],
+      answer: 1,
+      reason: "The chapter states that where valuation is required under the Companies Act, 2013 in respect of the specified property, securities, goodwill, other assets, net worth or liabilities, it shall be valued by a registered valuer."
+    },
+    {
+      question: "Who appoints the valuer under the appointment process described in the chapter?",
+      options: [
+        "The company's customers",
+        "The company's competitors",
+        "The audit committee or, in its absence, the Board of Directors of the company",
+        "The company's employees collectively"
+      ],
+      answer: 2,
+      reason: "The chapter explains that the valuer is appointed by the audit committee or, in its absence, by the Board of Directors of the company."
+    },
+    {
+      question: "Which of the following is a responsibility of a valuer under the Companies Act, 2013, as described in the chapter?",
+      options: [
+        "Making an impartial, true and fair valuation, exercising due diligence and care, and following the prescribed rules",
+        "Using only the valuation figure requested by the company's management",
+        "Ignoring circumstances that may influence value",
+        "Undertaking valuation without regard to applicable rules"
+      ],
+      answer: 0,
+      reason: "The chapter states that a valuer must make an impartial, true and fair valuation, exercise due diligence and care, and make the valuation in accordance with the prescribed rules."
+    },
+    {
+      question: "Which of the following is among the transactions for which the Companies Act, 2013 specifically requires valuation, according to the chapter?",
+      options: [
+        "Every routine purchase of office stationery",
+        "Every annual employee performance appraisal",
+        "Every ordinary payment of electricity bills",
+        "Issue of new shares, issue of sweat equity, non-cash transactions involving directors, compromise arrangements, mergers and amalgamations"
+      ],
+      answer: 3,
+      reason: "The chapter identifies the issue of new shares, issue of sweat equity, non-cash transactions involving directors, compromise arrangements, mergers and amalgamations, acquisition of minority shareholding, and winding up or liquidation among situations requiring valuation."
+    },
+    {
+      question: "When is a valuer prohibited from undertaking the valuation of an asset?",
+      options: [
+        "Whenever the company has several classes of shares",
+        "When the valuer has a direct or indirect interest in the asset or becomes interested at any time during or after the valuation",
+        "Whenever the valuation concerns a proposed merger",
+        "Whenever the company has assets and liabilities"
+      ],
+      answer: 1,
+      reason: "The chapter states that a valuer is prohibited from undertaking valuation of assets in which the valuer has a direct or indirect interest or becomes interested at any time during or after the valuation of the asset."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS14",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>XYZ Limited and its shareholders are involved in transactions that require valuation for income-tax purposes. One transaction concerns the receipt of shares for consideration exceeding fair market value. Another concerns a slump sale involving the transfer of an undertaking as a whole.</p>
+    <p>A separate property transfer involves actual consideration below the stamp duty value. The tax adviser also reviews transfer pricing requirements for transactions between associated enterprises and the valuation requirements associated with the issue of shares at a premium by certain companies.</p>
+  `,
+  questions: [
+    {
+      question: "Under Section 56(2)(x) of the Income Tax Act, 1961, as described in the chapter, what is the tax treatment of the excess consideration when shares are received at a consideration exceeding their fair market value?",
+      options: [
+        "It is automatically exempt from taxation",
+        "It is treated exclusively as a capital reserve",
+        "The excess consideration is taxed as income under the head 'Income from Other Sources'",
+        "It is automatically treated as a liquidation distribution"
+      ],
+      answer: 2,
+      reason: "The chapter explains that Section 56(2)(x) deals with taxation of income arising from the receipt of shares at consideration exceeding fair market value. The excess consideration is taxed as income under the head 'Income from Other Sources'."
+    },
+    {
+      question: "Which provision of the Income Tax Act, 1961, pertains to capital gains arising from slump sale transactions?",
+      options: [
+        "Section 92C",
+        "Section 50B",
+        "Section 50C",
+        "Section 56(2)(x)"
+      ],
+      answer: 1,
+      reason: "The chapter identifies Section 50B as the provision pertaining to taxation of capital gains arising from slump sale transactions."
+    },
+    {
+      question: "What does Section 50C provide for when the actual sale consideration for an immovable property is lower than its stamp duty value, as described in the chapter?",
+      options: [
+        "The property is automatically exempt from tax",
+        "The transaction is treated as an issue of sweat equity",
+        "The property must be valued only under SEBI regulations",
+        "The stamp duty value is adopted as deemed consideration"
+      ],
+      answer: 3,
+      reason: "The chapter explains that Section 50C mandates adoption of stamp duty value as deemed consideration for the transfer of immovable property if the actual sale consideration is lower than the stamp duty value."
+    },
+    {
+      question: "What is the principal valuation-related requirement under Section 92C of the Income Tax Act, 1961?",
+      options: [
+        "Transactions between associated enterprises must be conducted at arm's length prices",
+        "Every company must value its assets only at historical cost",
+        "All shares issued to employees must be valued under the Takeover Code",
+        "Every corporate debtor must determine the net asset value of REIT units"
+      ],
+      answer: 0,
+      reason: "The chapter explains that Section 92C deals with transfer pricing regulations for transactions between associated enterprises. Such transactions must be conducted at arm's length prices determined based on the fair market value of the goods, services or intangible property transferred."
+    },
+    {
+      question: "Why is valuation relevant under Section 56(2)(viib) of the Income Tax Act, 1961, as explained in the chapter?",
+      options: [
+        "To determine the net asset value of an InVIT",
+        "To calculate the liquidation value of a corporate debtor",
+        "To substantiate the premium on the issue of shares by certain companies",
+        "To determine the offer price under the SEBI Takeover Code"
+      ],
+      answer: 2,
+      reason: "The chapter states that Section 56(2)(viib) addresses taxation of income arising from the issue of shares at a premium by certain companies. Valuation is required to substantiate the premium, and one of the options described is a fair market value determination using the discounted cash flow method."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS15",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>PQR Limited is planning a cross-border investment involving a non-resident investor. The company is also considering a transaction involving foreign exchange derivatives and an investment in an overseas subsidiary.</p>
+    <p>The company's advisers review the valuation requirements discussed under the Foreign Exchange Management Act, 1999 (FEMA), and the associated regulations. They consider fair market value, arm's length pricing, pricing guidelines specified by the Reserve Bank of India, and compliance requirements relating to overseas investments and derivatives.</p>
+  `,
+  questions: [
+    {
+      question: "What pricing principle applies to transactions between residents and non-residents in the FEMA discussion in the chapter?",
+      options: [
+        "Transactions must be undertaken only at the historical cost of assets",
+        "Transactions must be conducted at arm's length prices based on fair market value",
+        "Transactions must always be conducted at the lowest possible price",
+        "Transactions are exempt from valuation considerations"
+      ],
+      answer: 1,
+      reason: "The chapter explains that FEMA mandates arm's length pricing based on fair market value for transactions between residents and non-residents, requiring valuation of assets involved in such transactions."
+    },
+    {
+      question: "Which pricing guidelines are relevant when valuing shares issued or transferred to non-residents, as described in the chapter?",
+      options: [
+        "Only guidelines prepared by the target company's customers",
+        "Only internal pricing preferences of the company's directors",
+        "Only the original purchase price of the shares",
+        "Pricing guidelines specified by the Reserve Bank of India"
+      ],
+      answer: 3,
+      reason: "The chapter states that valuation of shares issued or transferred to non-residents must adhere to pricing guidelines specified by the Reserve Bank of India and prescribed valuation methodologies."
+    },
+    {
+      question: "Which of the following is identified in the chapter as a foreign exchange derivative that may require valuation?",
+      options: [
+        "An option, forward or swap",
+        "An ordinary annual employee appraisal",
+        "A scheme of arrangement under the Companies Act",
+        "A share premium under Section 56(2)(viib)"
+      ],
+      answer: 0,
+      reason: "The chapter identifies options, forwards and swaps as examples of foreign exchange derivatives for which valuation may be required."
+    },
+    {
+      question: "Which overseas transactions may be subject to FEMA valuation requirements, according to the chapter?",
+      options: [
+        "Only the purchase of domestic office furniture",
+        "Only the appointment of a registered valuer under the Companies Act",
+        "Investments and disinvestments in foreign securities, joint ventures or subsidiaries",
+        "Only a routine domestic sale of inventory"
+      ],
+      answer: 2,
+      reason: "The chapter explains that valuation requirements may apply to overseas investments and disinvestments by Indian residents. Valuation of investments and divestments in foreign securities, joint ventures or subsidiaries must comply with FEMA guidelines."
+    },
+    {
+      question: "What is the overall purpose of FEMA-related valuation requirements described in the chapter?",
+      options: [
+        "To guarantee that every cross-border investment earns a profit",
+        "To promote transparency, fairness and compliance in cross-border transactions and mitigate the risk of underreporting or mispricing",
+        "To eliminate all foreign exchange risks",
+        "To remove the need to comply with foreign exchange regulations"
+      ],
+      answer: 1,
+      reason: "The chapter explains that valuation requirements under FEMA promote transparency, fairness and compliance in cross-border transactions, mitigate the risk of underreporting or mispricing assets and liabilities, and support investor confidence."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS16",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>An Infrastructure Investment Trust (InVIT) holds infrastructure projects, including roads and power plants. Separately, a Real Estate Investment Trust (REIT) holds income-generating real estate properties.</p>
+    <p>The trusts require valuation information for their assets and units. They engage independent valuers in accordance with the regulatory framework described in the chapter. The valuation information helps investors understand the value of the underlying assets and the net asset value of the units.</p>
+  `,
+  questions: [
+    {
+      question: "Who conducts valuation of InVIT assets under the SEBI regulations described in the chapter?",
+      options: [
+        "Only the trust's customers",
+        "Only the investors holding the largest number of units",
+        "Only the contractors who constructed the infrastructure projects",
+        "Independent valuers accredited by recognized bodies"
+      ],
+      answer: 3,
+      reason: "The chapter states that SEBI mandates valuation of InVIT assets by independent valuers accredited by recognized bodies, using appropriate methodologies to assess fair value."
+    },
+    {
+      question: "Which of the following is an example of an infrastructure project mentioned in the chapter in the context of InVIT asset valuation?",
+      options: [
+        "Roads, ports and power plants",
+        "Only employee incentive plans",
+        "Only residential rent agreements",
+        "Only shares received under Section 56(2)(x)"
+      ],
+      answer: 0,
+      reason: "The chapter identifies infrastructure projects such as roads, ports and power plants as examples of assets included in InVIT valuation."
+    },
+    {
+      question: "Why is valuation of InVIT assets important for investors?",
+      options: [
+        "It guarantees that infrastructure projects will always earn profits",
+        "It eliminates the need for investors to consider risk",
+        "It supports determination of the net asset value of InVIT units, which impacts investor returns and secondary-market pricing",
+        "It ensures that unit prices cannot fluctuate"
+      ],
+      answer: 2,
+      reason: "The chapter explains that InVIT valuation is crucial for determining the net asset value of units, which directly impacts investors' returns and the pricing of units in the secondary market."
+    },
+    {
+      question: "Which information may be provided by valuation reports for REIT properties, as described in the chapter?",
+      options: [
+        "Only the names of the company's directors",
+        "Fair value of properties, rental incomes and potential appreciation",
+        "Only the historical purchase price of every property",
+        "Only the number of REIT unit holders"
+      ],
+      answer: 1,
+      reason: "The chapter explains that REIT valuation reports provide insights into the fair value of properties, rental incomes and potential appreciation, assisting investors in making informed decisions."
+    },
+    {
+      question: "What is a common objective of valuation requirements for InVITs and REITs under the SEBI regulations discussed in the chapter?",
+      options: [
+        "To eliminate independent valuation",
+        "To guarantee identical returns for all investors",
+        "To replace the net asset value of units with historical cost",
+        "To support transparency, investor protection and fair determination of unit values"
+      ],
+      answer: 3,
+      reason: "The chapter explains that compliance with valuation requirements for InVITs and REITs supports integrity, fairness and efficiency in these investment markets, fostering investor trust and market development."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS17",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>A company enters the corporate insolvency resolution process under the Insolvency and Bankruptcy Code, 2016. The professionals involved require valuation information to understand the assets and liabilities of the corporate debtor and assist in the resolution process.</p>
+    <p>In a separate matter, another company is placed into voluntary liquidation. A review of transactions also identifies a potentially undervalued transaction. The advisers note that valuation requirements may additionally arise under other laws, including certain state Stamp Duty Acts in cases involving mergers or de-mergers.</p>
+  `,
+  questions: [
+    {
+      question: "Which values are required to be ascertained for the assets of a corporate debtor when it is placed under the corporate insolvency resolution process, as described in the chapter?",
+      options: [
+        "Fair value and liquidation value",
+        "Only historical purchase cost",
+        "Only the annual depreciation amount",
+        "Only the amount of income tax previously paid"
+      ],
+      answer: 0,
+      reason: "The chapter states that valuation is prescribed when a company enters the corporate insolvency resolution process to ascertain the fair value and liquidation value of the corporate debtor's assets."
+    },
+    {
+      question: "Why is valuation of an insolvent company's assets and liabilities important under the Insolvency and Bankruptcy Code, 2016?",
+      options: [
+        "It guarantees that all creditors will receive their entire claims",
+        "It removes the need for resolution plans",
+        "It facilitates resolution plans and helps determine the distribution of proceeds among creditors",
+        "It is used only to determine the exercise price of employee stock options"
+      ],
+      answer: 2,
+      reason: "The chapter explains that valuation of assets and liabilities is integral to the resolution process, facilitating resolution plans and determining the distribution of proceeds among creditors."
+    },
+    {
+      question: "In which situation does the chapter identify valuation requirements during liquidation?",
+      options: [
+        "Only when a company launches a new product",
+        "When a company is placed into liquidation, including voluntary liquidation",
+        "Only when an employee receives an incentive",
+        "Only when a company prepares its annual marketing plan"
+      ],
+      answer: 1,
+      reason: "The chapter states that there is a requirement to determine the valuation of assets when a company is placed into liquidation, including voluntary liquidation."
+    },
+    {
+      question: "How may valuation requirements arise during the review of avoidable transactions under the Insolvency and Bankruptcy Code framework discussed in the chapter?",
+      options: [
+        "Only when the company introduces a new employee incentive plan",
+        "Only when the company issues a routine invoice",
+        "Only when a shareholder attends a meeting",
+        "Through the review of potentially undervalued transactions covered in the relevant period"
+      ],
+      answer: 3,
+      reason: "The chapter explains that valuation requirements may be triggered in respect of undervalued transactions covered in the review of avoidable transactions in the relevant period."
+    },
+    {
+      question: "Which is an example of valuation requirements under other laws and regulations mentioned in the chapter?",
+      options: [
+        "Valuation requirements under the Stamp Duty Act of certain states in the case of mergers or de-mergers, and requirements relating to thinly traded shares",
+        "Determining the personal preferences of directors",
+        "Calculating only annual employee leave",
+        "Determining the number of customers in a marketing campaign"
+      ],
+      answer: 0,
+      reason: "The chapter identifies valuation requirements under the Stamp Duty Act of some states in cases of mergers or de-mergers and valuation requirements relating to thinly traded shares."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS18",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>LMN Limited is preparing its financial statements under the applicable financial reporting framework. Certain assets and liabilities do not have active markets, so the company needs valuation techniques to determine fair values.</p>
+    <p>The company also reviews a proposed scheme of arrangement and plans to disclose the valuation methodologies, assumptions and key inputs used in its financial statements. Management wants the reported information to be transparent, reliable and useful to stakeholders.</p>
+  `,
+  questions: [
+    {
+      question: "Which Indian Accounting Standard is specifically identified in the chapter as dealing with fair value measurement?",
+      options: [
+        "Ind AS 113",
+        "Ind AS 16",
+        "Ind AS 105",
+        "None of the above"
+      ],
+      answer: 0,
+      reason: "The chapter identifies Ind AS 113, Fair Value Measurement, as mandating entities to measure and disclose fair value for financial reporting purposes."
+    },
+    {
+      question: "Which international reporting framework is identified in the chapter as being aligned with Indian Accounting Standards?",
+      options: [
+        "The Companies Act alone",
+        "The Insolvency and Bankruptcy Code alone",
+        "International Financial Reporting Standards (IFRS)",
+        "The Foreign Exchange Management Act alone"
+      ],
+      answer: 2,
+      reason: "The chapter explains that the adoption of Indian Accounting Standards (Ind AS) forms a primary driver of business valuation in financial reporting and that Ind AS align with International Financial Reporting Standards (IFRS)."
+    },
+    {
+      question: "For which types of items may valuation techniques be used when active markets are unavailable?",
+      options: [
+        "Only items that have already been sold",
+        "Goodwill, intangible assets and certain financial instruments",
+        "Only the number of company employees",
+        "Only the company's historical advertising expenses"
+      ],
+      answer: 1,
+      reason: "The chapter explains that valuation techniques are employed to determine fair values, particularly for items without active markets, such as goodwill, intangible assets and certain financial instruments."
+    },
+    {
+      question: "According to the chapter, what valuation may be required under Section 230 of the Companies Act in a scheme of arrangement or amalgamation?",
+      options: [
+        "Only valuation of employee salaries",
+        "Only valuation of foreign exchange derivatives",
+        "Only valuation of a company's marketing expenses",
+        "Valuation of shares, assets or liabilities"
+      ],
+      answer: 3,
+      reason: "The chapter states that Section 230 of the Companies Act requires valuation of shares, assets or liabilities in cases involving schemes of arrangement, amalgamations or corporate restructuring."
+    },
+    {
+      question: "Why should the company transparently disclose its valuation methodologies, assumptions and key inputs?",
+      options: [
+        "To ensure that the valuation cannot be reviewed",
+        "To remove the need for financial statements",
+        "To help stakeholders understand the underlying value drivers and strengthen trust and confidence",
+        "To guarantee that its market price will never change"
+      ],
+      answer: 2,
+      reason: "The chapter explains that transparent disclosure of valuation methodologies, assumptions and key inputs helps stakeholders understand the underlying value drivers of the business, fostering trust and confidence and mitigating the risks of misinterpretation or manipulation of financial information."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS19",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>Two shareholders of a family-owned business disagree about the value of their equity interests. The disagreement may affect a proposed buyout arrangement. The company appoints valuation professionals to provide an objective assessment and assist the parties in reaching an equitable resolution.</p>
+    <p>At the same time, the board reviews its corporate governance practices. It wants to protect shareholder interests, fulfil its responsibilities and use valuation insights when making decisions about capital allocation, mergers and acquisitions, and long-term value creation.</p>
+  `,
+  questions: [
+    {
+      question: "How does valuation assist in disputes involving shareholders or family members?",
+      options: [
+        "By providing an objective and independent assessment of the value of disputed assets or interests",
+        "By ensuring that one party automatically receives the entire business",
+        "By eliminating the need to determine the value of the disputed interests",
+        "By guaranteeing that every dispute is resolved without any discussion"
+      ],
+      answer: 0,
+      reason: "The chapter explains that disputes may arise among shareholders, partners or family members regarding the value of assets, equity interests or businesses. Valuation provides an objective and independent assessment of the disputed assets or interests."
+    },
+    {
+      question: "Which of the following may be a context in which business valuation disputes arise?",
+      options: [
+        "Only routine payment of utility bills",
+        "Only the preparation of a marketing brochure",
+        "Shareholder disputes, divorce proceedings, estate settlements or corporate restructuring",
+        "Only routine employee attendance records"
+      ],
+      answer: 2,
+      reason: "The chapter identifies shareholder disputes, divorce proceedings, estate settlements and corporate restructuring among the contexts in which business valuation disputes may arise."
+    },
+    {
+      question: "How may valuation reports assist in dispute resolution proceedings?",
+      options: [
+        "They guarantee that every party will receive the amount demanded",
+        "They may serve as valuable evidence in court proceedings, arbitration or mediation",
+        "They remove the need to follow legal and regulatory standards",
+        "They make it unnecessary to assess the disputed assets"
+      ],
+      answer: 1,
+      reason: "The chapter explains that valuation opinions prepared by qualified professionals serve as valuable evidence in court proceedings, arbitration or mediation and help parties present their cases effectively."
+    },
+    {
+      question: "How does valuation support corporate governance by protecting shareholder interests?",
+      options: [
+        "By ensuring that all shareholders have identical financial objectives",
+        "By removing the need for management accountability",
+        "By ensuring that the company never undertakes an acquisition",
+        "By helping evaluate the fair value of shares and holding management accountable for value creation"
+      ],
+      answer: 3,
+      reason: "The chapter explains that valuation helps evaluate the fair value of shares, enables shareholders to make informed investment decisions and holds management accountable for value creation."
+    },
+    {
+      question: "How can valuation assist boards of directors and management in fulfilling their responsibilities?",
+      options: [
+        "By providing insights into intrinsic value and identifying areas for improvement to support strategic decisions",
+        "By guaranteeing success in every merger or acquisition",
+        "By eliminating the need to consider shareholder interests",
+        "By replacing every decision made by the board"
+      ],
+      answer: 0,
+      reason: "The chapter explains that valuation assists boards of directors and management in fulfilling their fiduciary duties by providing insights into the company's intrinsic value and identifying areas for improvement. It also guides decisions involving capital allocation, mergers and acquisitions, and dividend policy."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS20",
+  difficulty: "Easy",
+  chapter: "Chapter2",
+  caseText: `
+    <p>ABC Enterprises is evaluating a capital-raising proposal and reviewing its operational and financial performance. The company wants to determine an appropriate valuation range for discussions with potential investors and lenders.</p>
+    <p>Management also examines risks affecting the business, compares performance with industry peers and plans to communicate valuation information to investors and employees. The company intends to use valuation to identify important value drivers, support informed decisions and improve transparency.</p>
+  `,
+  questions: [
+    {
+      question: "Which of the following is a key purpose of valuation in capital raising?",
+      options: [
+        "To guarantee that every fundraising proposal will be accepted",
+        "To eliminate all discussions with investors and lenders",
+        "To establish a realistic valuation range and support appropriate pricing for equity offerings, private placements or debt issuances",
+        "To ensure that financing decisions do not involve risk"
+      ],
+      answer: 2,
+      reason: "The chapter explains that valuation in capital raising helps determine the fair value of a company's equity or assets and establish a realistic valuation range to support pricing for equity offerings, private placements or debt issuances."
+    },
+    {
+      question: "Which set of risks is identified in the chapter in the context of business risk management?",
+      options: [
+        "Only administrative risks",
+        "Market risk, financial risk, operational risk and strategic risk",
+        "Only risks relating to employee attendance",
+        "Only risks relating to office maintenance"
+      ],
+      answer: 1,
+      reason: "The chapter explains that valuation helps identify and assess the various risks faced by businesses, including market risk, financial risk, operational risk and strategic risk."
+    },
+    {
+      question: "How can valuation support performance evaluation against industry peers?",
+      options: [
+        "By ensuring that every company has the same market value",
+        "By eliminating the need for comparative analysis",
+        "By comparing only the number of directors in each company",
+        "By comparing valuation metrics such as price-to-earnings ratios, enterprise value multiples and market capitalization against industry benchmarks"
+      ],
+      answer: 3,
+      reason: "The chapter explains that comparative valuation analysis helps management assess valuation metrics, such as price-to-earnings ratios, enterprise value multiples and market capitalization, against industry benchmarks to identify competitive positioning and performance gaps."
+    },
+    {
+      question: "Which of the following are examples of value drivers that valuation methodologies may help identify?",
+      options: [
+        "Revenue growth, profitability and capital efficiency",
+        "Only the number of company branches",
+        "Only the age of the company's directors",
+        "Only the historical date of incorporation"
+      ],
+      answer: 0,
+      reason: "The chapter explains that valuation methodologies, such as discounted cash flow analysis or economic value-added models, help identify key value drivers such as revenue growth, profitability and capital efficiency."
+    },
+    {
+      question: "How can valuation support effective stakeholder communication?",
+      options: [
+        "By preventing disclosure of relevant financial information",
+        "By limiting valuation information exclusively to the board",
+        "By transparently communicating valuation methodologies, assumptions and key metrics to improve understanding and confidence",
+        "By guaranteeing that every stakeholder has identical expectations"
+      ],
+      answer: 2,
+      reason: "The chapter explains that transparent disclosure of valuation methodologies, assumptions and key metrics in financial reports and investor presentations enhances stakeholder understanding of the company's financial performance and value creation potential, helping build trust and confidence."
+    }
+  ]
+},
+{
+  case_id: "valu_ch2_CS21",
+  difficulty: "Medium",
+  chapter: "Chapter2",
+  caseText: `
+    <p>ADP Limited, a conglomerate, is evaluating the proposed acquisition of JPA Private Limited, a Media and Entertainment company. The valuation team studies publicly available information about comparable transactions and considers the financial characteristics of the companies, the industry, the size and type of transactions, the characteristics of buyers and the dates of announcements.</p>
+    <p>The team also reviews the comparable transaction data, including the minimum, maximum, average and median multiples. It recognises that recent transactions may be more useful, but that transaction analysis provides an approximate valuation rather than a conclusive assessment in every circumstance.</p>
+  `,
+  questions: [
+    {
+      question: "Which companies should the valuation team primarily consider when identifying comparable transactions?",
+      options: [
+        "Companies selected only because they have the highest transaction values",
+        "Companies having similar financial characteristics and operating in the same industry",
+        "Companies operating in unrelated industries regardless of their financial characteristics",
+        "Companies selected only on the basis of their incorporation dates"
+      ],
+      answer: 1,
+      reason: "The chapter states that companies should be chosen based on having similar financial characteristics and being in the same industry when identifying relevant transactions."
+    },
+    {
+      question: "In addition to the industry and financial characteristics of the companies, which factors should be considered when selecting comparable transactions?",
+      options: [
+        "Only the number of employees of the buyer",
+        "Only the original purchase cost of the target company's assets",
+        "Only the geographical location of the buyer, without considering the transaction",
+        "The similarity of transaction size, type of transaction and characteristics of the buyer"
+      ],
+      answer: 3,
+      reason: "The chapter explains that the size of the transactions should be similar to the transaction being considered, and the type of transaction and characteristics of the buyer should also be similar."
+    },
+    {
+      question: "Why are transactions that occurred more recently generally considered more useful for transaction analysis?",
+      options: [
+        "Because the chapter considers more recent transactions more valuable in terms of usefulness for analysis",
+        "Because every recent transaction necessarily has the highest implied EV/EBITDA multiple",
+        "Because recent transactions eliminate differences between buyers and target companies",
+        "Because recent transactions cannot be affected by changes in market conditions"
+      ],
+      answer: 0,
+      reason: "The chapter expressly states that transactions that occurred more recently are considered more valuable in terms of usefulness for analysis."
+    },
+    {
+      question: "Which implied EV/EBITDA multiple is the maximum shown in the chapter's comparable transaction table?",
+      options: [
+        "8.83x",
+        "10.53x",
+        "17.94x",
+        "12.16x"
+      ],
+      answer: 2,
+      reason: "The comparable transaction table reports the minimum implied EV/EBITDA multiple as 8.83x, the maximum as 17.94x, the average as 12.16x and the median as 10.53x."
+    },
+    {
+      question: "Based on the conclusions stated in the chapter's example, which valuation ranges can ADP Limited expect for the proposed transaction?",
+      options: [
+        "Implied EV/Revenue of 10.5x–12.5x and implied EV/EBITDA of 3.0x–4.0x",
+        "Implied EV/Revenue of 0.84x–1.57x and implied EV/EBITDA of 3.0x–4.0x",
+        "Implied EV/Revenue of 8.83x–17.94x and implied EV/EBITDA of 3.54x–5.88x",
+        "Implied EV/Revenue of 3.0x–4.0x and implied EV/EBITDA of 10.5x–12.5x"
+      ],
+      answer: 3,
+      reason: "The chapter concludes that ADP Limited can expect an implied EV/Revenue multiple in the range of 3.0x–4.0x and an implied EV/EBITDA multiple in the range of 10.5x–12.5x."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS22",
+  difficulty: "Medium",
+  chapter: "Chapter2",
+  caseText: `
+    <p>XYZ Limited proposes to issue new shares, issue sweat equity and enter into a compromise arrangement. The company requires valuation in connection with these transactions under the Companies Act, 2013. Its audit committee considers appointing a registered valuer.</p>
+    <p>During the appointment process, the company examines whether the proposed valuer has any direct or indirect interest in the assets being valued. It also reviews the valuer's responsibilities and distinguishes transactions for which the chapter identifies specific valuation requirements from those for which it states that mandatory valuation has not been prescribed.</p>
+  `,
+  questions: [
+    {
+      question: "When valuation is required under the Companies Act, 2013 for the assets or other specified items described in the chapter, who should undertake the valuation?",
+      options: [
+        "Only the company's largest shareholder",
+        "A registered valuer",
+        "Only an employee selected by the company's marketing department",
+        "Any person without regard to the applicable valuation requirements"
+      ],
+      answer: 1,
+      reason: "The chapter states that where valuation is required under the Companies Act, 2013 in respect of property, stocks, shares, debentures, securities, goodwill, other assets, net worth or liabilities, it shall be valued by a registered valuer."
+    },
+    {
+      question: "Who appoints the valuer under the appointment process described in the chapter?",
+      options: [
+        "Only the company's creditors",
+        "The company's customers",
+        "The audit committee or, in its absence, the Board of Directors of the company",
+        "The company's competitors"
+      ],
+      answer: 2,
+      reason: "The chapter states that the valuer is appointed by the audit committee or, in its absence, by the Board of Directors of the company."
+    },
+    {
+      question: "During the appointment process, it is discovered that the proposed valuer has an indirect interest in the assets being valued. Which statement is consistent with the responsibilities described in the chapter?",
+      options: [
+        "The valuer is prohibited from undertaking the valuation of those assets",
+        "The valuer may proceed provided the transaction involves new shares",
+        "The valuer may proceed because only direct interests are relevant",
+        "The valuer may proceed if the transaction relates to a compromise arrangement"
+      ],
+      answer: 0,
+      reason: "The chapter states that a valuer is prohibited from undertaking the valuation of assets in which the valuer has a direct or indirect interest or becomes interested at any time during or after the valuation."
+    },
+    {
+      question: "Which combination contains transactions specifically identified in the chapter as requiring valuation under the Companies Act, 2013?",
+      options: [
+        "Routine purchases of office supplies and payments of electricity bills",
+        "Ordinary employee attendance records and marketing expenditure",
+        "Only routine transactions involving the company's customers",
+        "Issue of new shares, issue of sweat equity, non-cash transactions involving directors, compromise arrangements, mergers and amalgamations"
+      ],
+      answer: 3,
+      reason: "The chapter specifically identifies the issue of new shares, issue of sweat equity, non-cash transactions involving directors, compromise arrangements, mergers and amalgamations, acquisition of minority shareholding, and winding up or liquidation."
+    },
+    {
+      question: "Which combination does the chapter identify as not having mandatory valuation prescribed under the Companies Act, 2013?",
+      options: [
+        "Issue of new shares and issue of sweat equity",
+        "Buy-back of shares, reduction of capital, and consolidation of capital with consequential payment for fractional entitlements",
+        "Compromise arrangements, mergers and amalgamations",
+        "Acquisition of minority shareholding and winding up or liquidation"
+      ],
+      answer: 1,
+      reason: "The chapter specifically notes that mandatory valuation has not been prescribed in respect of buy-back of shares, reduction of capital, and consolidation of capital and consequential payment for fractional entitlements."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS23",
+  difficulty: "Medium",
+  chapter: "Chapter2",
+  caseText: `
+    <p>A company's tax adviser reviews several transactions involving the issue and receipt of shares, the transfer of an undertaking as a whole, the transfer of immovable property and transactions between associated enterprises.</p>
+    <p>The adviser considers the valuation requirements described under Sections 56(2)(viib), 56(2)(x), 50B, 50C and 92C of the Income Tax Act, 1961, together with the associated rules mentioned in the chapter. The objective is to identify the relevant valuation treatment for each transaction.</p>
+  `,
+  questions: [
+    {
+      question: "A company covered by Section 56(2)(viib) issues shares at a premium and requires valuation to substantiate that premium. Which valuation approach is specifically identified as one of the options in the chapter?",
+      options: [
+        "Determination of the liquidation value of a corporate debtor",
+        "Periodic valuation of REIT assets",
+        "Fair market value determination using the discounted cash flow method",
+        "Determination of the fair exit price under the SEBI Takeover Code"
+      ],
+      answer: 2,
+      reason: "The chapter states that Section 56(2)(viib) addresses taxation of income arising from issuance of shares at a premium by certain companies. One valuation option described is determining fair market value using the discounted cash flow method."
+    },
+    {
+      question: "An individual receives shares at a consideration exceeding their fair market value. Which treatment and related rule are described in the chapter?",
+      options: [
+        "The excess consideration is taxed as income under the head 'Income from Other Sources', and Rule 11UA provides guidelines for determining the fair market value of unquoted equity shares",
+        "The transaction is governed exclusively by Section 50C, and Rule 11UA determines stamp duty value",
+        "The transaction is governed by Section 92C and requires valuation of REIT units",
+        "The excess consideration is treated as the liquidation value of a corporate debtor"
+      ],
+      answer: 0,
+      reason: "The chapter explains that Section 56(2)(x) deals with income arising from receipt of shares at consideration exceeding fair market value, with the excess taxed under 'Income from Other Sources'. It also states that Rule 11UA provides guidelines for determining the fair market value of unquoted equity shares."
+    },
+    {
+      question: "An undertaking or business is transferred as a whole in a slump sale. Which provision and associated rules does the chapter identify for this situation?",
+      options: [
+        "Section 50C and Rule 11UA alone",
+        "Section 92C and the SEBI Takeover Code",
+        "Section 56(2)(viib) and the Companies Act provisions on sweat equity",
+        "Section 50B, with valuation conducted as per the provisions of Rule 11U and Rule 11UA, as stated in the chapter"
+      ],
+      answer: 3,
+      reason: "The chapter identifies Section 50B as dealing with capital gains arising from slump sale transactions and states that valuation of the undertaking or business transferred is conducted as per the provisions of Rule 11U and Rule 11UA."
+    },
+    {
+      question: "A taxpayer transfers immovable property for actual consideration lower than its stamp duty value. Which provision addresses this situation in the chapter?",
+      options: [
+        "Section 56(2)(viib)",
+        "Section 50C",
+        "Section 92C",
+        "Section 50B"
+      ],
+      answer: 1,
+      reason: "The chapter explains that Section 50C mandates adoption of stamp duty value as deemed consideration for the transfer of immovable property if the actual sale consideration is lower than the stamp duty value."
+    },
+    {
+      question: "A transaction takes place between associated enterprises. What valuation-related requirement is associated with Section 92C in the chapter?",
+      options: [
+        "The transaction must be valued as an InVIT asset",
+        "The transaction must be valued exclusively using the method applicable to REIT assets",
+        "The transaction must be conducted at arm's length prices determined based on the fair market value of the goods, services or intangible property transferred",
+        "The transaction must be valued solely at the historical purchase cost"
+      ],
+      answer: 2,
+      reason: "The chapter states that Section 92C deals with transfer pricing regulations for transactions between associated enterprises, which must be conducted at arm's length prices determined based on the fair market value of the goods, services or intangible property transferred."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS24",
+  difficulty: "Medium",
+  chapter: "Chapter2",
+  caseText: `
+    <p>PQR Limited proposes to issue shares to a non-resident investor and is also considering an overseas investment. Its advisers examine valuation requirements under the Foreign Exchange Management Act, 1999 (FEMA), and associated regulations.</p>
+    <p>Separately, another company is considering an acquisition covered by the SEBI Takeover Code and a preferential allotment. Both companies need to understand how valuation supports pricing, transparency, fair treatment and compliance in these different regulatory situations.</p>
+  `,
+  questions: [
+    {
+      question: "Under the FEMA discussion in the chapter, what principle applies to transactions between residents and non-residents?",
+      options: [
+        "Transactions must always be conducted at historical cost",
+        "Transactions are exempt from valuation whenever a non-resident is involved",
+        "Transactions must be conducted at whatever price is selected by the seller",
+        "Transactions must be conducted at arm's length prices based on fair market value"
+      ],
+      answer: 3,
+      reason: "The chapter states that transactions between residents and non-residents must be conducted at arm's length prices, which are determined based on fair market value."
+    },
+    {
+      question: "Which valuation methodologies are identified in the chapter for shares issued or transferred to non-residents?",
+      options: [
+        "The discounted cash flow method or the net asset value method, in accordance with the applicable pricing guidelines",
+        "Only the method used for valuing goodwill in financial reporting",
+        "Only the method used to calculate the liquidation value of a corporate debtor",
+        "Only the comparison of employee stock option exercise prices"
+      ],
+      answer: 0,
+      reason: "The chapter explains that valuation of shares issued or transferred to non-residents must adhere to prescribed methodologies such as the discounted cash flow method or the net asset value method, in accordance with pricing guidelines specified by the Reserve Bank of India."
+    },
+    {
+      question: "What is the valuation-related purpose of the SEBI Takeover Code as explained in the chapter?",
+      options: [
+        "To determine the stamp duty value of immovable property",
+        "To determine the net asset value of every REIT",
+        "To support determination of the offer price and provide a fair exit opportunity to minority shareholders",
+        "To determine the liquidation value of an insolvent company's assets"
+      ],
+      answer: 2,
+      reason: "The chapter states that under the Takeover Code, acquirers must disclose the offer price and provide a fair exit opportunity to minority shareholders, with independent valuers conducting valuation assessments to determine the offer price."
+    },
+    {
+      question: "Why does valuation matter in a preferential allotment under the SEBI discussion in the chapter?",
+      options: [
+        "It guarantees that the company will never issue additional shares",
+        "It helps prevent dilution of existing shareholders' interests and supports transparency through detailed valuation reports",
+        "It eliminates the need to safeguard investor rights",
+        "It determines only the liquidation value of the company"
+      ],
+      answer: 1,
+      reason: "The chapter explains that preferential allotments require fair valuation to prevent dilution of existing shareholders' interests. SEBI mandates disclosure of detailed valuation reports to ensure transparency and safeguard investors' rights."
+    },
+    {
+      question: "Which statement best describes the overall objective of valuation requirements in the FEMA discussion?",
+      options: [
+        "To guarantee that overseas investments produce profits",
+        "To eliminate every risk from foreign exchange transactions",
+        "To ensure that every transaction has the same valuation",
+        "To promote transparency, fairness and compliance in cross-border transactions and help mitigate the risk of underreporting or mispricing assets and liabilities"
+      ],
+      answer: 3,
+      reason: "The chapter explains that valuation requirements under FEMA aim to promote transparency, fairness and compliance in cross-border transactions and mitigate the risk of underreporting or mispricing assets and liabilities."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS25",
+  difficulty: "Medium",
+  chapter: "Chapter2",
+  caseText: `
+    <p>LMN Limited is preparing its financial statements and evaluating opportunities to expand into new markets. Some assets and liabilities require fair value measurement, including items for which active markets may not exist.</p>
+    <p>The board also intends to strengthen corporate governance, protect shareholder interests and disclose relevant valuation methodologies and assumptions. Management considers valuation information when evaluating strategic alternatives, allocating resources and making decisions intended to support long-term value creation.</p>
+  `,
+  questions: [
+    {
+      question: "Which Indian Accounting Standard is identified in the chapter as dealing with fair value measurement for financial reporting purposes?",
+      options: [
+        "Ind AS 105",
+        "Ind AS 16",
+        "Ind AS 113",
+        "None of the above"
+      ],
+      answer: 2,
+      reason: "The chapter identifies Ind AS 113, 'Fair Value Measurement', as the standard that mandates entities to measure and disclose fair value for financial reporting purposes."
+    },
+    {
+      question: "Which combination includes examples of assets or liabilities for which valuation techniques may be important when active markets are unavailable?",
+      options: [
+        "Goodwill, intangible assets and certain financial instruments",
+        "Only office stationery and routine operating expenses",
+        "Only employee attendance records",
+        "Only the historical number of company shareholders"
+      ],
+      answer: 0,
+      reason: "The chapter explains that business valuation techniques are employed to determine fair values, especially for assets and liabilities that lack active markets, such as goodwill, intangible assets and certain financial instruments."
+    },
+    {
+      question: "How can valuation support strategic planning at LMN Limited?",
+      options: [
+        "By ensuring that all proposed strategic alternatives will be successful",
+        "By eliminating the need to assess investment opportunities",
+        "By preventing management from allocating resources",
+        "By evaluating alternatives such as entering new markets, diversifying product offerings or pursuing mergers and acquisitions, and supporting capital allocation decisions"
+      ],
+      answer: 3,
+      reason: "The chapter explains that valuation assists businesses in evaluating strategic alternatives, such as expansion into new markets, diversification of product offerings and strategic alliances through mergers and acquisitions. It also supports capital allocation decisions."
+    },
+    {
+      question: "How does valuation contribute to corporate governance?",
+      options: [
+        "By eliminating the need to consider shareholder interests",
+        "By supporting fair assessment of share value, informed shareholder decisions, transparency and management accountability",
+        "By ensuring that the company never undertakes mergers and acquisitions",
+        "By removing the need to disclose relevant financial information"
+      ],
+      answer: 1,
+      reason: "The chapter explains that valuation supports corporate governance by helping evaluate the fair value of shares, enabling informed investment decisions, holding management accountable for value creation and promoting transparent disclosure."
+    },
+    {
+      question: "What is the purpose of disclosing valuation methodologies, assumptions and key inputs in financial statements, as described in the chapter?",
+      options: [
+        "To ensure that stakeholders cannot question any valuation",
+        "To eliminate the need to comply with financial reporting requirements",
+        "To help stakeholders understand the underlying value drivers of the business and foster trust and confidence",
+        "To guarantee that the company's market value will always equal its intrinsic value"
+      ],
+      answer: 2,
+      reason: "The chapter explains that transparent disclosure of valuation methodologies, assumptions and key inputs helps stakeholders understand the underlying value drivers of the business, fostering trust and confidence and mitigating risks associated with misinterpretation or manipulation of financial information."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS26",
+  difficulty: "Hard",
+  chapter: "Chapter2",
+  caseText: `
+    <p>ADP Limited is evaluating the acquisition of JPA Private Limited, a Media and Entertainment company. Its valuation team reviews the comparable transaction table presented in the chapter and considers transaction values, implied EV/EBITDA multiples and implied EV/Revenue multiples.</p>
+    <p>The table reports minimum, maximum, average and median figures for the selected transactions. The team also recognises that each transaction is unique and that differences in market conditions, competitor dynamics, business cycle phases, exchange rates and geopolitical influences may affect the usefulness of past transactions.</p>
+  `,
+  questions: [
+    {
+      question: "Which combination correctly states the average and median implied EV/EBITDA multiples in the chapter's comparable transaction table?",
+      options: [
+        "Average 10.53x and median 12.16x",
+        "Average 17.94x and median 8.83x",
+        "Average 3.54x and median 3.70x",
+        "Average 12.16x and median 10.53x"
+      ],
+      answer: 3,
+      reason: "The chapter's comparable transaction table reports an average implied EV/EBITDA multiple of 12.16x and a median implied EV/EBITDA multiple of 10.53x."
+    },
+    {
+      question: "Which combination correctly states the average and median implied EV/Revenue multiples in the chapter's comparable transaction table?",
+      options: [
+        "Average 3.54x and median 3.70x",
+        "Average 3.70x and median 3.54x",
+        "Average 5.88x and median 0.84x",
+        "Average 12.16x and median 10.53x"
+      ],
+      answer: 0,
+      reason: "The chapter's table reports an average implied EV/Revenue multiple of 3.54x and a median implied EV/Revenue multiple of 3.70x."
+    },
+    {
+      question: "Which transaction in the table has the minimum implied EV/Revenue multiple, and what is that multiple?",
+      options: [
+        "Getty Images Holdings, Inc.; 5.88x",
+        "DISH Network Corporation; 1.57x",
+        "Schiefer Chopshop; 0.84x",
+        "Betches Media, LLC; 3.70x"
+      ],
+      answer: 2,
+      reason: "The table reports an implied EV/Revenue multiple of 0.84x for Schiefer Chopshop, which is also the minimum implied EV/Revenue multiple in the table."
+    },
+    {
+      question: "Which valuation ranges does the chapter derive for ADP Limited after considering the comparable transactions?",
+      options: [
+        "EV/Revenue of 10.5x–12.5x and EV/EBITDA of 3.0x–4.0x",
+        "EV/Revenue of 3.0x–4.0x and EV/EBITDA of 10.5x–12.5x",
+        "EV/Revenue of 0.84x–5.88x and EV/EBITDA of 8.83x–17.94x as the stated expected deal ranges",
+        "EV/Revenue of 8.83x–17.94x and EV/EBITDA of 0.84x–5.88x"
+      ],
+      answer: 1,
+      reason: "The chapter states that ADP Limited can expect an implied EV/Revenue multiple in the range of 3.0x–4.0x and an implied EV/EBITDA multiple in the range of 10.5x–12.5x."
+    },
+    {
+      question: "The valuation team finds that some past transactions occurred under different market conditions and that information about certain transactions is limited. Which conclusion is most consistent with the chapter?",
+      options: [
+        "Every past transaction must be treated as conclusive evidence of present value",
+        "Transaction analysis eliminates the influence of competitor dynamics and business cycles",
+        "Past transaction multiples can be applied without considering the circumstances of the transactions",
+        "Limitations in transaction information and differences in market conditions can hinder conclusive insights, so transaction analysis provides a broad evaluation and approximate valuation"
+      ],
+      answer: 3,
+      reason: "The chapter explains that limitations in the quantity and quality of transaction-related information, together with differences between past and present market conditions, can hinder conclusive insights. Transaction analysis provides a broad evaluation of market demand and an approximate valuation, while each transaction remains unique."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS27",
+  difficulty: "Hard",
+  chapter: "Chapter2",
+  caseText: `
+    <p>XYZ Limited is undertaking transactions for which valuation is required under the Companies Act, 2013. It also needs a fair valuation of plan assets for financial reporting under the applicable Indian Accounting Standards.</p>
+    <p>The company considers whether the valuation should be undertaken by a registered valuer. It notes the chapter's explanation that the more appropriate interpretation for valuations required under Ind AS is that the Companies Act requirements apply because the Accounting Standards are mandated by that Act. The chapter also mentions another interpretation under which an expert acceptable from an accounting perspective may provide the valuation, giving actuaries valuing plan assets as an example.</p>
+  `,
+  questions: [
+    {
+      question: "What does the chapter identify as the more appropriate interpretation for valuation required under Ind AS?",
+      options: [
+        "The Companies Act, 2013 requirements apply because the Accounting Standards are mandated by that Act, and the valuation should be undertaken by a registered valuer",
+        "Every valuation under Ind AS is exempt from the Companies Act, 2013",
+        "All valuations required under Ind AS must be undertaken exclusively by the company's directors",
+        "The chapter states that registered valuers can never undertake valuations required under Ind AS"
+      ],
+      answer: 0,
+      reason: "The chapter states that the more appropriate interpretation is that, as the valuation is required under Accounting Standards mandated by the Companies Act, 2013, the requirements of the Companies Act apply and the valuation should be undertaken by a registered valuer."
+    },
+    {
+      question: "Which alternative interpretation of valuation required under Ind AS is acknowledged in the chapter?",
+      options: [
+        "The valuation must always be conducted by the company's largest shareholder",
+        "No valuation is required for plan assets",
+        "The valuation may be obtained from an expert acceptable from an accounting perspective",
+        "The valuation must use only publicly available acquisition transactions"
+      ],
+      answer: 2,
+      reason: "The chapter acknowledges another interpretation under which valuation may be provided by an expert acceptable from an accounting perspective."
+    },
+    {
+      question: "Which example does the chapter use when describing an expert acceptable from an accounting perspective?",
+      options: [
+        "A buyer determining the offer price under the Takeover Code",
+        "Actuaries undertaking fair valuation of plan assets",
+        "A creditor determining the value of a corporate debtor's assets for liquidation",
+        "An investor selecting comparable acquisition transactions"
+      ],
+      answer: 1,
+      reason: "The chapter gives fair valuation of plan assets by actuaries as an example when discussing the alternative interpretation relating to experts acceptable from an accounting perspective."
+    },
+    {
+      question: "Which of the following correctly combines the valuer's responsibilities stated under the Companies Act, 2013?",
+      options: [
+        "Use any method requested by management without considering the prescribed rules",
+        "Provide a valuation that favours one party regardless of the assets being valued",
+        "Undertake valuation even when the valuer has an interest in the assets, provided the transaction is important",
+        "Make an impartial, true and fair valuation, exercise due diligence and care, and comply with the prescribed rules"
+      ],
+      answer: 3,
+      reason: "The chapter states that a valuer must make an impartial, true and fair valuation, exercise due diligence and care, and make the valuation in accordance with the prescribed rules."
+    },
+    {
+      question: "Which statement correctly distinguishes the transactions specifically requiring valuation from those for which mandatory valuation is stated not to have been prescribed under the Companies Act, 2013?",
+      options: [
+        "Valuation is specifically required for issue of new shares and issue of sweat equity, whereas mandatory valuation is stated not to have been prescribed for buy-back of shares, reduction of capital and consolidation of capital with consequential payment for fractional entitlements",
+        "Mandatory valuation is not prescribed for issue of new shares, but is prescribed for every buy-back of shares",
+        "The chapter identifies no transaction under the Companies Act that requires valuation",
+        "The chapter states that all transactions, without distinction, require valuation"
+      ],
+      answer: 0,
+      reason: "The chapter identifies the issue of new shares and issue of sweat equity among transactions for which valuation is specifically required. It separately states that mandatory valuation has not been prescribed for buy-back of shares, reduction of capital, and consolidation of capital with consequential payment for fractional entitlements."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS28",
+  difficulty: "Hard",
+  chapter: "Chapter2",
+  caseText: `
+    <p>A tax adviser reviews five separate matters for a company and its investors. The first concerns the issue of shares at a premium by a company covered by the relevant provision. The second concerns an individual receiving shares for consideration exceeding fair market value. The third involves the transfer of an undertaking as a whole. The fourth involves immovable property whose actual sale consideration is lower than its stamp duty value. The fifth concerns a transaction between associated enterprises.</p>
+    <p>The adviser must distinguish the relevant provisions and valuation requirements described in the supplied chapter of the Income Tax Act, 1961.</p>
+  `,
+  questions: [
+    {
+      question: "Which provision and valuation method does the chapter associate with the issue of shares at a premium by certain companies?",
+      options: [
+        "Section 50C and adoption of stamp duty value",
+        "Section 92C and arm's length pricing",
+        "Section 56(2)(viib), with fair market value determination using the discounted cash flow method as one option",
+        "Section 50B and valuation of an undertaking transferred as a whole"
+      ],
+      answer: 2,
+      reason: "The chapter states that Section 56(2)(viib) addresses taxation of income arising from the issue of shares at a premium by certain companies. It identifies fair market value determination using the discounted cash flow method as one of the valuation options."
+    },
+    {
+      question: "Which provision and rule are associated in the chapter with the receipt of shares at consideration exceeding fair market value and the determination of the fair market value of unquoted equity shares?",
+      options: [
+        "Section 50B and the provisions for valuing a corporate debtor",
+        "Section 56(2)(x) and Rule 11UA",
+        "Section 92C and the SEBI Takeover Code",
+        "Section 50C and the provisions for valuing REIT assets"
+      ],
+      answer: 1,
+      reason: "The chapter states that Section 56(2)(x) deals with income arising from receipt of shares at consideration exceeding fair market value. Rule 11UA provides guidelines for determining the fair market value of unquoted equity shares."
+    },
+    {
+      question: "The company transfers an undertaking or business as a whole in a slump sale. Which treatment is described in the chapter?",
+      options: [
+        "Section 92C applies because every transfer is a transaction between associated enterprises",
+        "Section 50C automatically applies to every transfer of a business undertaking",
+        "Section 56(2)(viib) applies because a premium is always involved",
+        "Section 50B deals with capital gains arising from slump sale transactions, and the consideration received or accruing is deemed the full value of consideration for computing capital gains"
+      ],
+      answer: 3,
+      reason: "The chapter explains that Section 50B pertains to taxation of capital gains arising from slump sale transactions. The consideration received or accruing from the transfer of an undertaking or business as a whole is deemed the full value of consideration for computing capital gains tax."
+    },
+    {
+      question: "The actual sale consideration for immovable property is lower than its stamp duty value. Which approach does the chapter associate with this situation?",
+      options: [
+        "Section 50C mandates adoption of stamp duty value as the deemed consideration",
+        "Section 92C mandates adoption of the median transaction multiple",
+        "Section 56(2)(viib) mandates the use of the discounted cash flow method for the property",
+        "Section 50B requires the property to be treated as an undertaking transferred in a slump sale"
+      ],
+      answer: 0,
+      reason: "The chapter states that Section 50C mandates adoption of stamp duty value as deemed consideration for the transfer of immovable property if the actual sale consideration is lower than the stamp duty value."
+    },
+    {
+      question: "Which provision applies to transfer pricing regulations for transactions between associated enterprises, according to the chapter?",
+      options: [
+        "Section 50C, which addresses stamp duty value",
+        "Section 50B, which addresses slump sale transactions",
+        "Section 92C, which requires transactions between associated enterprises to be conducted at arm's length prices",
+        "Section 56(2)(x), which addresses receipt of shares at consideration exceeding fair market value"
+      ],
+      answer: 2,
+      reason: "The chapter identifies Section 92C as dealing with transfer pricing regulations for transactions between associated enterprises. Such transactions must be conducted at arm's length prices based on fair market value."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS29",
+  difficulty: "Hard",
+  chapter: "Chapter2",
+  caseText: `
+    <p>A group of companies is dealing with several regulatory valuation matters. One company is involved in an acquisition covered by the SEBI Takeover Code and is considering a preferential allotment and an employee stock option plan. An investment trust holds infrastructure assets, while another trust holds income-generating real estate properties.</p>
+    <p>Separately, a corporate debtor enters the corporate insolvency resolution process. The companies review the valuation purposes described in the chapter under SEBI regulations, the Insolvency and Bankruptcy Code, 2016, and other laws and regulations.</p>
+  `,
+  questions: [
+    {
+      question: "Which statement correctly describes valuation under the SEBI Takeover Code as presented in the chapter?",
+      options: [
+        "Valuation is used only to determine the historical cost of a target company's assets",
+        "Acquirers must disclose the offer price and provide a fair exit opportunity to minority shareholders, with independent valuers conducting assessments to determine the offer price",
+        "Valuation is required only after a company enters liquidation",
+        "Valuation replaces the requirement to disclose the offer price"
+      ],
+      answer: 1,
+      reason: "The chapter explains that valuation is important under the Takeover Code to ensure equitable treatment of shareholders. Acquirers are required to disclose the offer price and provide a fair exit opportunity to minority shareholders, with independent valuers conducting assessments to determine the offer price."
+    },
+    {
+      question: "Why does SEBI require fair valuation in preferential allotments, according to the chapter?",
+      options: [
+        "To ensure that existing shareholders are excluded from all future corporate decisions",
+        "To ensure that valuation reports are never disclosed",
+        "To guarantee that a company will not issue any further shares",
+        "To help prevent dilution of existing shareholders' interests and support transparency and investor protection"
+      ],
+      answer: 3,
+      reason: "The chapter explains that preferential allotments require fair valuation to prevent dilution of existing shareholders' interests. SEBI requires detailed valuation report disclosures to ensure transparency and safeguard investors' rights."
+    },
+    {
+      question: "Which pair of purposes correctly distinguishes valuation of ESOPs from valuation of InVIT assets under the SEBI discussion in the chapter?",
+      options: [
+        "ESOP valuation helps determine the exercise price of employee stock options; InVIT asset valuation supports determination of the net asset value of InVIT units",
+        "ESOP valuation determines the stamp duty value of property; InVIT valuation determines arm's length prices between associated enterprises",
+        "ESOP valuation determines the liquidation value of a corporate debtor; InVIT valuation determines the exercise price of employee stock options",
+        "ESOP valuation determines the offer price under every takeover; InVIT valuation eliminates the need for an asset valuation"
+      ],
+      answer: 0,
+      reason: "The chapter states that SEBI regulations governing ESOPs require fair valuation methodologies to determine the exercise price of employee stock options. It also explains that InVIT asset valuation is crucial for determining the net asset value of InVIT units."
+    },
+    {
+      question: "When a company enters the corporate insolvency resolution process, which values are required to be ascertained for its assets under the IBC discussion in the chapter?",
+      options: [
+        "Only the original purchase cost of each asset",
+        "Only the net asset value of REIT units",
+        "Fair value and liquidation value",
+        "Only the implied EV/Revenue multiple of comparable acquisitions"
+      ],
+      answer: 2,
+      reason: "The chapter states that valuation is prescribed when a company is placed under the corporate insolvency resolution process to ascertain the fair value and liquidation value of the assets of the corporate debtor."
+    },
+    {
+      question: "Which of the following is identified in the chapter as a possible valuation requirement under other laws and regulations?",
+      options: [
+        "Valuation of every employee's annual performance appraisal",
+        "Valuation under the Stamp Duty Act of certain states in the case of mergers or de-mergers, and valuation requirements relating to thinly traded shares",
+        "Valuation of all office supplies at the time of purchase",
+        "Valuation of every marketing campaign under the SEBI Takeover Code"
+      ],
+      answer: 1,
+      reason: "The chapter notes that other valuation requirements may arise under laws and regulations such as the Stamp Duty Act of some states in the case of a merger or de-merger, and valuation requirements relating to thinly traded shares."
+    }
+  ]
+},
+
+{
+  case_id: "valu_ch2_CS30",
+  difficulty: "Hard",
+  chapter: "Chapter2",
+  caseText: `
+    <p>ABC Enterprises is considering raising capital, assessing its financial performance and reviewing risks affecting its business. Management wants to use valuation to establish an appropriate valuation range for fundraising discussions, assess investment opportunities, identify value drivers and compare its performance with industry peers.</p>
+    <p>The company also needs to explain valuation results to investors and employees. Its management recognises that valuation has different purposes in capital raising, risk management, performance evaluation and stakeholder communication, as explained in the chapter.</p>
+  `,
+  questions: [
+    {
+      question: "Which statement best describes the role of valuation in capital raising, according to the chapter?",
+      options: [
+        "It guarantees that potential investors will accept the proposed terms",
+        "It eliminates the need to evaluate the company's capital requirements",
+        "It ensures that the company must use only equity financing",
+        "It helps determine the fair value of equity or assets, establish a realistic valuation range and evaluate financing options such as equity, debt or hybrid instruments"
+      ],
+      answer: 3,
+      reason: "The chapter explains that valuation in capital raising helps determine fair value, establish a realistic valuation range, and support capital structure decisions involving equity financing, debt financing or hybrid instruments while considering cost of capital, risk and shareholder interests."
+    },
+    {
+      question: "Management is evaluating the creditworthiness of suppliers, customers and business partners. How does valuation support this activity, according to the chapter?",
+      options: [
+        "Due diligence and evaluation of counterparties' creditworthiness help mitigate counterparty risk and potential losses arising from default or insolvency",
+        "It guarantees that suppliers and customers will never default",
+        "It replaces all due diligence relating to business transactions",
+        "It ensures that all counterparties have identical financial positions"
+      ],
+      answer: 0,
+      reason: "The chapter explains that valuation supports assessment of the financial health and stability of counterparties. By conducting due diligence and evaluating their creditworthiness, businesses can mitigate counterparty risk and avoid potential losses arising from default or insolvency."
+    },
+    {
+      question: "Which approach does the chapter identify for evaluating a company's performance relative to its intrinsic value?",
+      options: [
+        "Comparing only the number of employees with the number employed in the previous year",
+        "Comparing the company's original incorporation date with those of its competitors",
+        "Comparing the actual market value of the business with its estimated intrinsic value derived from valuation analysis",
+        "Assuming that actual market value must always equal intrinsic value"
+      ],
+      answer: 2,
+      reason: "The chapter explains that valuation can measure financial performance relative to intrinsic value by comparing the actual market value of the business with its estimated intrinsic value. Discrepancies may signal opportunities for strategic realignment or operational enhancements."
+    },
+    {
+      question: "Which combination includes valuation metrics identified in the chapter for comparing a company with industry peers and competitors?",
+      options: [
+        "Only the number of directors and the date of incorporation",
+        "Price-to-earnings ratios, enterprise value multiples and market capitalization",
+        "Only the original purchase cost of land and buildings",
+        "Only the company's annual expenditure on office supplies"
+      ],
+      answer: 1,
+      reason: "The chapter states that comparative valuation analysis may use metrics such as price-to-earnings ratios, enterprise value multiples and market capitalization against industry benchmarks to identify competitive positioning and performance gaps."
+    },
+    {
+      question: "Management wishes to communicate valuation results to investors and employees. Which approach best reflects the chapter's discussion of stakeholder communication?",
+      options: [
+        "Keep all valuation methodologies and assumptions undisclosed in every circumstance",
+        "Communicate valuation information only to the board of directors",
+        "Use valuation information only to determine the company's historical purchase cost",
+        "Disclose valuation methodologies, assumptions and key metrics transparently, and explain implications for financial performance, value creation and employee-related matters where relevant"
+      ],
+      answer: 3,
+      reason: "The chapter explains that transparent disclosure of valuation methodologies, assumptions and key metrics helps investors understand financial performance and value creation potential. It also explains that communication of valuation results and their implications for employee compensation, incentive plans and performance targets can foster ownership and alignment with organisational goals."
+    }
+  ]
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_61",
+  case_chapter: "chapter2",
+  question: "A company wants to determine the intrinsic value of an investment rather than relying solely on its cost or current market value. Which statement most accurately reflects the chapter's explanation of valuation?",
+  options: [
+    "Valuation is limited to determining the historical cost of an asset",
+    "Valuation is the process of determining intrinsic value, as opposed to cost or current market value",
+    "Valuation always establishes a value identical to the current market price",
+    "Valuation is relevant only when an asset is transferred to another person"
+  ],
+  answer: 1,
+  reason: "The chapter defines valuation as the process of determining the intrinsic value of a company, investment or asset, as opposed to its cost or current market value."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_62",
+  case_chapter: "chapter2",
+  question: "A company is preparing its balance sheet and is also evaluating a proposed acquisition. Which combination correctly reflects the purposes of valuation identified in the chapter?",
+  options: [
+    "Determining only the historical cost of assets and eliminating acquisition negotiations",
+    "Determining only taxation liabilities and employee compensation",
+    "Determining only the transaction value of publicly traded companies",
+    "Determining asset and liability values for financial reporting and establishing an appropriate price for acquiring a business"
+  ],
+  answer: 3,
+  reason: "The chapter identifies determining asset and liability values for balance sheets and assessing goodwill in mergers and acquisitions as financial reporting purposes. It also explains that valuation helps establish the appropriate price for acquiring a business or merging with another entity."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_63",
+  case_chapter: "chapter2",
+  question: "A valuer is selecting comparable acquisition transactions for a proposed business acquisition. Which selection approach is most consistent with the chapter?",
+  options: [
+    "Select transactions involving companies with similar financial characteristics in the same industry, comparable transaction sizes and types, similar buyer characteristics, and more recent transaction dates",
+    "Select transactions exclusively on the basis of the highest transaction values",
+    "Select transactions involving companies in unrelated industries, irrespective of financial characteristics",
+    "Select only the oldest transactions because they establish the historical market value"
+  ],
+  answer: 0,
+  reason: "The chapter explains that relevant transactions should be selected by considering the companies' financial characteristics, industry, transaction size, type of transaction, buyer characteristics and recency. More recent transactions are considered more useful for analysis."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_64",
+  case_chapter: "chapter2",
+  question: "A valuer uses publicly available information about past acquisitions but finds that the information is incomplete and the prevailing market conditions differ from those at the time of the earlier transactions. Which conclusion is most consistent with the chapter's discussion of transaction analysis?",
+  options: [
+    "The limitations have no effect because transaction analysis always produces a conclusive valuation",
+    "The valuer should disregard the financial characteristics of the companies involved",
+    "Limitations in the quantity and quality of transaction information, together with changes in market conditions and other variables, may hinder conclusive insights",
+    "The valuer must assume that every transaction produces an identical valuation multiple"
+  ],
+  answer: 2,
+  reason: "The chapter explains that limitations in the quantity and quality of transaction-related information and differences between past and present market conditions can hinder conclusive insights. Competitor dynamics, market demand, business cycle phases, exchange rates and geopolitical influences may also affect the analysis."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_65",
+  case_chapter: "chapter2",
+  question: "A company requires valuation of its shares under the Companies Act, 2013. Which statement correctly combines the appointment and qualification requirements described in the chapter?",
+  options: [
+    "The valuer must always be appointed by the company's largest shareholder, irrespective of the audit committee",
+    "The valuation must be undertaken by a registered valuer appointed by the audit committee or, in its absence, by the Board of Directors",
+    "The company's finance manager must undertake every valuation without regard to registration",
+    "The appointment of a registered valuer is unnecessary whenever the company has an audit committee"
+  ],
+  answer: 1,
+  reason: "The chapter states that valuations required under the Companies Act, 2013 are to be undertaken by a registered valuer. The valuer is appointed by the audit committee or, in its absence, by the Board of Directors, subject to the prescribed manner, terms and conditions."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_66",
+  case_chapter: "chapter2",
+  question: "A registered valuer is appointed to value an asset but has an indirect interest in that asset. Which statement is consistent with the valuer's responsibilities described in the chapter?",
+  options: [
+    "The valuer is prohibited from undertaking the valuation because the prohibition covers direct or indirect interests",
+    "The valuer may proceed because only a direct interest is relevant",
+    "The valuer may proceed provided the valuation concerns an issue of new shares",
+    "The valuer may proceed if the asset belongs to a company with an audit committee"
+  ],
+  answer: 0,
+  reason: "The chapter states that a valuer is prohibited from undertaking valuation of assets in which the valuer has a direct or indirect interest or becomes interested at any time during or after the valuation. The valuer must also make an impartial, true and fair valuation, exercise due diligence and care, and comply with prescribed rules."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_67",
+  case_chapter: "chapter2",
+  question: "Which combination correctly identifies transactions for which the chapter states that mandatory valuation has not been prescribed under the Companies Act, 2013?",
+  options: [
+    "Issue of new shares, issue of sweat equity and non-cash transactions involving directors",
+    "Compromise arrangements, mergers and amalgamations, and acquisition of minority shareholding",
+    "Buy-back of shares, reduction of capital, and consolidation of capital with consequential payment for fractional entitlements",
+    "Winding up, liquidation and issue of sweat equity"
+  ],
+  answer: 2,
+  reason: "The chapter specifically states that mandatory valuation has not been prescribed under the Companies Act, 2013 in respect of buy-back of shares, reduction of capital, and consolidation of capital and consequential payment for fractional entitlements."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_68",
+  case_chapter: "chapter2",
+  question: "A company covered by the relevant provision issues shares at a premium and needs to substantiate the premium for income-tax purposes. Which statement is consistent with the chapter?",
+  options: [
+    "Section 50C applies and always requires the discounted cash flow method for immovable property",
+    "Section 92C applies because every issue of shares is a transaction between associated enterprises",
+    "Section 50B applies because every share issue constitutes a slump sale",
+    "Section 56(2)(viib) addresses taxation of income arising from the issue of shares at a premium, and fair market value determination using the discounted cash flow method is one valuation option identified"
+  ],
+  answer: 3,
+  reason: "The chapter explains that Section 56(2)(viib) addresses taxation of income arising from issuance of shares at a premium by certain companies. A valuation is required to substantiate the premium, and one option is fair market value determination using the discounted cash flow method."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_69",
+  case_chapter: "chapter2",
+  question: "An individual receives shares for consideration exceeding their fair market value. Which combination correctly identifies the provision and valuation guidance described in the chapter?",
+  options: [
+    "Section 50B applies, and the net asset value method is mandatory for every transaction",
+    "Section 56(2)(x) addresses the income arising from such receipt, with the excess consideration taxed under 'Income from Other Sources'; Rule 11UA provides guidelines for determining the fair market value of unquoted equity shares",
+    "Section 50C applies, and Rule 11UA determines the liquidation value of a corporate debtor",
+    "Section 92C applies, and Rule 11UA determines the net asset value of REIT units"
+  ],
+  answer: 1,
+  reason: "The chapter states that Section 56(2)(x) deals with taxation of income arising from receipt of shares at consideration exceeding fair market value. The excess consideration is taxed under 'Income from Other Sources', and Rule 11UA provides guidelines for determining the fair market value of unquoted equity shares."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_70",
+  case_chapter: "chapter2",
+  question: "An undertaking or business is transferred as a whole in a slump sale. Which statement correctly reflects the treatment described in the chapter?",
+  options: [
+    "Section 50B pertains to taxation of capital gains arising from slump sale transactions, and the consideration received or accruing from the transfer is deemed the full value of consideration for computing capital gains; the chapter refers to Rules 11U and 11UA for valuation",
+    "Section 50C applies exclusively, and the stamp duty value must be used for every slump sale",
+    "Section 56(2)(x) applies because the undertaking must be treated as unquoted equity shares",
+    "Section 92C applies because every slump sale is necessarily a transaction between associated enterprises"
+  ],
+  answer: 0,
+  reason: "The chapter explains that Section 50B pertains to taxation of capital gains arising from slump sale transactions. The consideration received or accruing from the transfer of an undertaking or business as a whole is deemed the full value of consideration for computing capital gains tax. The chapter states that valuation is conducted as per the provisions of Rule 11U and Rule 11UA."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_71",
+  case_chapter: "chapter2",
+  question: "The actual sale consideration for an immovable property is lower than its stamp duty value. Which statement correctly identifies the provision and its purpose as explained in the chapter?",
+  options: [
+    "Section 92C requires the property to be valued at the median multiple of comparable acquisitions",
+    "Section 56(2)(viib) requires fair market value to be determined using the discounted cash flow method in every property transfer",
+    "Section 50C mandates adoption of stamp duty value as deemed consideration, preventing undervaluation of immovable properties for tax evasion purposes",
+    "Section 50B requires the property to be treated as a business transferred in a slump sale"
+  ],
+  answer: 2,
+  reason: "The chapter explains that Section 50C mandates adoption of stamp duty value as deemed consideration for transfer of immovable property when the actual sale consideration is lower than the stamp duty value. This provision aims to prevent undervaluation for tax evasion purposes and ensure fair taxation based on deemed market value."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_72",
+  case_chapter: "chapter2",
+  question: "Two associated enterprises enter into a transaction involving goods, services or intangible property. Which statement correctly reflects the valuation-related requirement described under Section 92C of the Income Tax Act, 1961?",
+  options: [
+    "The transaction must be valued as a REIT asset by an independent valuer",
+    "The transaction must be conducted at arm's length prices determined based on the fair market value of the goods, services or intangible property transferred",
+    "The transaction must be valued exclusively at the historical cost of the assets transferred",
+    "The transaction must be valued using the same method as a corporate debtor's liquidation valuation"
+  ],
+  answer: 1,
+  reason: "The chapter explains that Section 92C deals with transfer pricing regulations for transactions between associated enterprises. Such transactions must be conducted at arm's length prices based on the fair market value of the goods, services or intangible property transferred, with adherence to prescribed valuation methodologies and documentation requirements."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_73",
+  case_chapter: "chapter2",
+  question: "An Indian company proposes to issue shares to a non-resident and also reviews an overseas investment. Which statement best reflects the FEMA valuation requirements described in the chapter?",
+  options: [
+    "Valuation is required only when an immovable property is transferred under Section 50C",
+    "All transactions with non-residents must be conducted at the historical cost of the shares",
+    "Valuation methodologies under FEMA apply only to REIT assets",
+    "Transactions between residents and non-residents must be conducted at arm's length prices based on fair market value; share valuation may use the discounted cash flow method or net asset value method in accordance with the prescribed pricing guidelines"
+  ],
+  answer: 3,
+  reason: "The chapter explains that FEMA requires transactions between residents and non-residents to be conducted at arm's length prices based on fair market value. Valuation of shares issued or transferred to non-residents must follow prescribed methodologies, such as the discounted cash flow method or net asset value method, and the pricing guidelines specified by the Reserve Bank of India."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_74",
+  case_chapter: "chapter2",
+  question: "A valuer is reviewing regulatory valuation requirements for an Infrastructure Investment Trust (InVIT) and a Real Estate Investment Trust (REIT). Which statement correctly distinguishes the requirements described in the chapter?",
+  options: [
+    "InVIT assets are valued by independent valuers accredited by recognized bodies; REIT assets undergo periodic valuation by independent valuers, with valuation reports providing information about fair value, rental incomes and potential appreciation",
+    "InVIT assets are valued only when the trust is liquidated, whereas REIT assets are valued exclusively using Section 92C",
+    "Both InVIT and REIT valuations are described exclusively as determining the exercise price of employee stock options",
+    "The chapter states that independent valuation is unnecessary for both InVITs and REITs"
+  ],
+  answer: 0,
+  reason: "The chapter explains that InVIT assets must be valued by independent valuers accredited by recognized bodies and that the valuation supports determination of the net asset value of InVIT units. It also states that REIT assets undergo periodic valuation by independent valuers, with reports providing insights into fair value, rental incomes and potential appreciation."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_75",
+  case_chapter: "chapter2",
+  question: "A corporate debtor enters the corporate insolvency resolution process under the Insolvency and Bankruptcy Code, 2016. Which statement most accurately combines the valuation requirements and purpose described in the chapter?",
+  options: [
+    "Only the company's historical purchase cost is relevant, and valuation has no connection with resolution plans",
+    "The only requirement is to determine the net asset value of REIT units",
+    "Valuation is prescribed to ascertain fair value and liquidation value of the corporate debtor's assets, supporting resolution plans and distribution of proceeds among creditors",
+    "Valuation is required solely to determine the exercise price of employee stock options"
+  ],
+  answer: 2,
+  reason: "The chapter states that valuation under the IBC is integral to the resolution process. It provides for determining fair value and liquidation value of the corporate debtor's assets during the corporate insolvency resolution process and supports resolution plans and the distribution of proceeds among creditors. The chapter also identifies valuation requirements during liquidation, including voluntary liquidation."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_76",
+  case_chapter: "chapter2",
+  question: "A company needs fair value measurements for goodwill, intangible assets and certain financial instruments that lack active markets. Which statement is consistent with the chapter's discussion of financial reporting requirements?",
+  options: [
+    "Ind AS 16 is identified as the standard governing all fair value measurements in the chapter",
+    "Ind AS 113, 'Fair Value Measurement', mandates entities to measure and disclose fair value for financial reporting purposes",
+    "Ind AS 105 is identified as the standard governing all valuation requirements under the Income Tax Act",
+    "The chapter states that fair value measurement is unnecessary when active markets are unavailable"
+  ],
+  answer: 1,
+  reason: "The chapter identifies Ind AS 113, 'Fair Value Measurement', as mandating entities to measure and disclose fair value for financial reporting purposes. It explains that valuation techniques are employed particularly for items without active markets, including goodwill, intangible assets and certain financial instruments."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_77",
+  case_chapter: "chapter2",
+  question: "Management is evaluating expansion into new markets, diversification of product offerings and strategic alliances through mergers and acquisitions. It also needs to decide how to allocate resources among potential investments. Which statement best reflects the role of valuation in strategic planning described in the chapter?",
+  options: [
+    "Valuation guarantees the success of every strategic alternative and eliminates investment risk",
+    "Valuation is limited to determining the company's historical cost and does not support resource allocation",
+    "Valuation is useful only after strategic decisions have been implemented",
+    "Valuation helps evaluate strategic alternatives, quantify the value impact of different options, and support capital allocation decisions by assessing potential returns relative to risk"
+  ],
+  answer: 3,
+  reason: "The chapter explains that valuation helps businesses evaluate strategic alternatives, including expansion into new markets, diversification and strategic alliances through mergers and acquisitions. It also supports capital allocation by identifying investment opportunities offering the highest potential returns relative to their risk profile."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_78",
+  case_chapter: "chapter2",
+  question: "A business wants to assess market, financial, operational and strategic risks, evaluate investment opportunities and review the financial stability of its counterparties. Which statement most accurately describes the role of valuation in risk management in the supplied chapter?",
+  options: [
+    "Valuation helps identify and assess risks, quantify their financial implications, evaluate risk-return profiles and assess counterparties' creditworthiness to mitigate potential losses",
+    "Valuation guarantees that the business will not encounter market or financial risks",
+    "Valuation eliminates the need to assess counterparties before entering business transactions",
+    "Valuation is relevant only for determining capital gains on immovable property"
+  ],
+  answer: 0,
+  reason: "The chapter explains that valuation helps identify and assess market, financial, operational and strategic risks, quantify their financial implications, and assess the risk-return profile of investment opportunities. It also assists in evaluating the financial health and creditworthiness of counterparties to mitigate counterparty risk and potential losses from default or insolvency."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_79",
+  case_chapter: "chapter2",
+  question: "Management compares the actual market value of a business with its estimated intrinsic value and also benchmarks its valuation metrics against industry peers. Which approach is consistent with the performance evaluation discussion in the chapter?",
+  options: [
+    "Assume that actual market value and intrinsic value must always be identical",
+    "Consider only the number of employees when assessing value creation",
+    "Use valuation analysis to assess value creation and identify improvement opportunities, and compare metrics such as price-to-earnings ratios, enterprise value multiples and market capitalization against industry benchmarks",
+    "Disregard discrepancies between market value and intrinsic value because they cannot inform management decisions"
+  ],
+  answer: 2,
+  reason: "The chapter explains that management can compare actual market value with estimated intrinsic value to assess value creation initiatives and identify areas for improvement. Comparative valuation analysis can use price-to-earnings ratios, enterprise value multiples and market capitalization against industry benchmarks to identify competitive positioning and performance gaps."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_80",
+  case_chapter: "chapter2",
+  question: "A company wants to communicate valuation results to investors, employees and other stakeholders. Which approach best reflects the stakeholder communication purposes described in the chapter?",
+  options: [
+    "Withhold all valuation assumptions from investors and employees",
+    "Disclose valuation methodologies, assumptions and key metrics transparently, and explain relevant implications for financial performance, value creation, employee compensation, incentive plans and performance targets",
+    "Restrict valuation information exclusively to the board of directors in every circumstance",
+    "Use valuation only to determine the historical purchase cost of company assets"
+  ],
+  answer: 1,
+  reason: "The chapter explains that transparent disclosure of valuation methodologies, assumptions and key metrics enhances stakeholder understanding of financial performance and value creation potential. It also explains that communicating valuation results and their implications for employee compensation, incentive plans and performance targets can foster ownership and alignment with organisational goals."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_81",
+  case_chapter: "chapter2",
+  question: "How does valuation assist investors in making investment decisions?",
+  options: [
+    "By guaranteeing a profit from every investment",
+    "By evaluating potential return relative to perceived risk and assessing alignment with financial objectives",
+    "By determining only the historical purchase price of an investment",
+    "By eliminating every risk associated with an investment"
+  ],
+  answer: 1,
+  reason: "The chapter explains that valuation assists investors in assessing whether an investment opportunity aligns with their financial objectives by evaluating its potential return relative to its perceived risk."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_82",
+  case_chapter: "chapter2",
+  question: "Which of the following is a purpose of valuation in financial reporting?",
+  options: [
+    "Guaranteeing that a company reports profits every year",
+    "Eliminating the need to comply with accounting standards",
+    "Determining the value of assets and liabilities for balance sheets and assessing goodwill in mergers and acquisitions",
+    "Determining only the annual sales revenue of a company"
+  ],
+  answer: 2,
+  reason: "The chapter explains that valuation is essential for financial reporting, including determining asset and liability values for balance sheets, assessing goodwill in mergers and acquisitions, and complying with accounting standards and regulatory requirements."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_83",
+  case_chapter: "chapter2",
+  question: "What is the principal purpose of valuation in mergers and acquisitions?",
+  options: [
+    "To establish an appropriate price for acquiring a business or merging with another entity",
+    "To ensure that every acquisition produces a profit",
+    "To eliminate the need for financial analysis",
+    "To determine only the historical purchase cost of the target company's assets"
+  ],
+  answer: 0,
+  reason: "The chapter explains that valuation in mergers and acquisitions helps establish the appropriate price to be paid for acquiring a business or merging with another entity, ensuring that the transaction is beneficial to the parties involved."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_84",
+  case_chapter: "chapter2",
+  question: "In which of the following situations can valuation assist in dispute resolution, according to the chapter?",
+  options: [
+    "Determining only the annual advertising expenditure of a business",
+    "Guaranteeing that shareholders will never disagree",
+    "Eliminating the need to assess disputed assets",
+    "Assessing the value of assets or interests involved in shareholder disputes, divorce settlements or insurance claims"
+  ],
+  answer: 3,
+  reason: "The chapter explains that valuation provides an objective assessment of the value of assets and liabilities in matters such as shareholder disputes, divorce settlements, insurance claims and other legal matters."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_85",
+  case_chapter: "chapter2",
+  question: "What type of information does transaction analysis utilize to estimate multiples or premiums paid for publicly traded companies?",
+  options: [
+    "Only the personal opinions of the acquiring company's management",
+    "Publicly available data relating to transactions",
+    "Only the historical cost of the target company's assets",
+    "Only the annual tax payments of the acquiring company"
+  ],
+  answer: 1,
+  reason: "The chapter explains that transaction analysis utilizes publicly available data to derive a reasoned estimate of multiples or premiums paid for publicly traded companies."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_86",
+  case_chapter: "chapter2",
+  question: "Which of the following is an important consideration when identifying comparable transactions?",
+  options: [
+    "Selecting companies only because they have the largest number of employees",
+    "Selecting transactions without considering the industry or financial characteristics",
+    "Considering similar financial characteristics, the same industry, comparable transaction size and type, buyer characteristics and transaction recency",
+    "Selecting only transactions with the highest transaction value"
+  ],
+  answer: 2,
+  reason: "The chapter explains that relevant transactions should be selected by considering similar financial characteristics and industry, transaction size and type, buyer characteristics and the date of the transaction. More recent transactions are considered more useful for analysis."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_87",
+  case_chapter: "chapter2",
+  question: "Which of the following is a limitation of transaction analysis identified in the chapter?",
+  options: [
+    "Limitations in the quantity and quality of transaction-related information and differences in market conditions may hinder conclusive insights",
+    "Transaction analysis guarantees a conclusive valuation in every situation",
+    "Every past transaction takes place under identical market conditions",
+    "Transaction analysis eliminates the effect of exchange rate fluctuations"
+  ],
+  answer: 0,
+  reason: "The chapter explains that limitations in the quantity and quality of transaction-related information, together with differences in market conditions between past transactions and the present scenario, can hinder conclusive insights."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_88",
+  case_chapter: "chapter2",
+  question: "Who is required to undertake a valuation when valuation is required under the Companies Act, 2013, as described in the chapter?",
+  options: [
+    "Only the largest shareholder of the company",
+    "Only an employee from the marketing department",
+    "Any person selected without regard to the applicable requirements",
+    "A registered valuer"
+  ],
+  answer: 3,
+  reason: "The chapter states that where valuation is required under the Companies Act, 2013 in respect of specified property, shares, securities, goodwill, other assets, net worth or liabilities, it shall be valued by a registered valuer."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_89",
+  case_chapter: "chapter2",
+  question: "Which of the following is a responsibility of a valuer under the Companies Act, 2013, as described in the chapter?",
+  options: [
+    "Using only the valuation figure requested by management",
+    "Making an impartial, true and fair valuation, exercising due diligence and care, and following prescribed rules",
+    "Ignoring the circumstances affecting the value of the assets",
+    "Undertaking valuation without considering prescribed rules"
+  ],
+  answer: 1,
+  reason: "The chapter states that a valuer must make an impartial, true and fair valuation, exercise due diligence and care, and undertake valuation in accordance with the prescribed rules."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_90",
+  case_chapter: "chapter2",
+  question: "Which provision of the Income Tax Act, 1961, addresses taxation of income arising from the issue of shares at a premium by certain companies?",
+  options: [
+    "Section 50C",
+    "Section 92C",
+    "Section 56(2)(viib)",
+    "Section 50B"
+  ],
+  answer: 2,
+  reason: "The chapter explains that Section 56(2)(viib) addresses taxation of income arising from the issuance of shares at a premium by certain companies. Valuation is required to substantiate the premium, and fair market value determination using the discounted cash flow method is one of the options described."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_91",
+  case_chapter: "chapter2",
+  question: "What does Rule 11UA of the Income Tax Rules, 1962, provide in the context explained in the chapter?",
+  options: [
+    "Guidelines for determining the fair market value of unquoted equity shares",
+    "Guidelines for determining the net asset value of every InVIT",
+    "Rules for selecting comparable acquisition transactions",
+    "Guidelines for determining the exercise price of employee stock options"
+  ],
+  answer: 0,
+  reason: "The chapter explains that Rule 11UA provides guidelines for determining the fair market value of unquoted equity shares in the context of Section 56(2)(x)."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_92",
+  case_chapter: "chapter2",
+  question: "Which provision of the Income Tax Act, 1961, pertains to taxation of capital gains arising from slump sale transactions?",
+  options: [
+    "Section 92C",
+    "Section 50C",
+    "Section 56(2)(x)",
+    "Section 50B"
+  ],
+  answer: 3,
+  reason: "The chapter states that Section 50B pertains to taxation of capital gains arising from slump sale transactions involving the transfer of an undertaking or business as a whole."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_93",
+  case_chapter: "chapter2",
+  question: "Under Section 50C of the Income Tax Act, 1961, what is the treatment described in the chapter when the actual sale consideration for immovable property is lower than its stamp duty value?",
+  options: [
+    "The actual consideration must always be accepted without further consideration",
+    "The stamp duty value is adopted as deemed consideration",
+    "The property must be valued under the SEBI Takeover Code",
+    "The transaction is automatically treated as a slump sale"
+  ],
+  answer: 1,
+  reason: "The chapter explains that Section 50C mandates adoption of stamp duty value as deemed consideration for the transfer of immovable property if the actual sale consideration is lower than the stamp duty value."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_94",
+  case_chapter: "chapter2",
+  question: "What is the valuation-related purpose of Section 92C of the Income Tax Act, 1961?",
+  options: [
+    "Determining the fair value of REIT properties",
+    "Determining the liquidation value of an insolvent company",
+    "Ensuring that transactions between associated enterprises are conducted at arm's length prices",
+    "Determining the exercise price of employee stock options"
+  ],
+  answer: 2,
+  reason: "The chapter explains that Section 92C deals with transfer pricing regulations for transactions between associated enterprises. Such transactions must be conducted at arm's length prices based on the fair market value of the goods, services or intangible property transferred."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_95",
+  case_chapter: "chapter2",
+  question: "Which valuation methodologies are identified in the chapter for shares issued or transferred to non-residents under the FEMA discussion?",
+  options: [
+    "The discounted cash flow method or the net asset value method, in accordance with prescribed pricing guidelines",
+    "Only the historical purchase cost method",
+    "Only the method used to calculate annual depreciation",
+    "Only the method used to determine the median acquisition multiple"
+  ],
+  answer: 0,
+  reason: "The chapter explains that valuation of shares issued or transferred to non-residents must adhere to prescribed methodologies, such as the discounted cash flow method or the net asset value method, in accordance with pricing guidelines specified by the Reserve Bank of India."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_96",
+  case_chapter: "chapter2",
+  question: "What is the role of valuation under SEBI regulations governing employee stock option plans (ESOPs), as described in the chapter?",
+  options: [
+    "To determine stamp duty value for immovable property",
+    "To determine the liquidation value of a corporate debtor",
+    "To determine the net asset value of InVIT units",
+    "To determine the exercise price of employee stock options using prescribed fair valuation methodologies"
+  ],
+  answer: 3,
+  reason: "The chapter states that SEBI regulations governing ESOPs require fair valuation methodologies to determine the exercise price of employee stock options."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_97",
+  case_chapter: "chapter2",
+  question: "Which statement correctly describes the valuation of REIT assets under the SEBI regulations discussed in the chapter?",
+  options: [
+    "REIT assets are valued only when the trust is liquidated",
+    "REIT assets are valued exclusively using Section 50B of the Income Tax Act",
+    "REIT assets undergo periodic valuation by independent valuers, with reports providing insights into fair value, rental incomes and potential appreciation",
+    "Valuation of REIT assets is unrelated to the determination of the net asset value of units"
+  ],
+  answer: 2,
+  reason: "The chapter explains that SEBI mandates periodic valuation of REIT assets by independent valuers. Valuation reports provide insights into the fair value of properties, rental incomes and potential appreciation, and support accurate determination of the net asset value of REIT units."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_98",
+  case_chapter: "chapter2",
+  question: "Which values are required to be ascertained for the assets of a corporate debtor during the corporate insolvency resolution process, according to the chapter?",
+  options: [
+    "Only historical purchase cost",
+    "Fair value and liquidation value",
+    "Only the net asset value of REIT units",
+    "Only the implied EV/Revenue multiple"
+  ],
+  answer: 1,
+  reason: "The chapter states that valuation is prescribed when a company enters the corporate insolvency resolution process to ascertain the fair value and liquidation value of the assets of the corporate debtor."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_99",
+  case_chapter: "chapter2",
+  question: "Which Indian Accounting Standard is identified in the chapter as dealing with fair value measurement for financial reporting purposes?",
+  options: [
+    "Ind AS 105",
+    "Ind AS 16",
+    "None of the above",
+    "Ind AS 113"
+  ],
+  answer: 3,
+  reason: "The chapter identifies Ind AS 113, 'Fair Value Measurement', as the standard that mandates entities to measure and disclose fair value for financial reporting purposes."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch2_100",
+  case_chapter: "chapter2",
+  question: "How does valuation assist businesses in capital raising, according to the chapter?",
+  options: [
+    "By helping determine the fair value of equity or assets, establish a realistic valuation range and support appropriate pricing for fundraising transactions",
+    "By guaranteeing that every fundraising proposal will be accepted",
+    "By eliminating the need to consider the company's capital requirements",
+    "By ensuring that every company uses only equity financing"
+  ],
+  answer: 0,
+  reason: "The chapter explains that valuation in capital raising helps determine the fair value of a company's equity or assets, establish a realistic valuation range, support appropriate pricing for equity offerings, private placements or debt issuances, and enhance investor confidence."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch2_101",
+  case_chapter: "chapter2",
+  question: "A company is preparing financial statements and needs to determine the fair value of goodwill and certain financial instruments for which active markets are unavailable. Which statement is consistent with the chapter?",
+  options: [
+    "Valuation is relevant only when an asset is sold to another entity",
+    "Financial reporting requires only the historical purchase cost of goodwill",
+    "Ind AS 113, Fair Value Measurement, mandates entities to measure and disclose fair value for financial reporting purposes",
+    "Valuation is unnecessary for assets and liabilities that lack active markets"
+  ],
+  answer: 2,
+  reason: "The chapter identifies Ind AS 113, 'Fair Value Measurement', as mandating entities to measure and disclose fair value for financial reporting purposes. It also explains that valuation techniques are used for items lacking active markets, including goodwill, intangible assets and certain financial instruments."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch2_102",
+  case_chapter: "chapter2",
+  question: "A valuer is identifying transactions comparable to a proposed acquisition. Several transactions involve companies in the same industry, but their financial characteristics, transaction sizes and buyer characteristics differ. Which approach is consistent with the chapter?",
+  options: [
+    "Consider the similarity of financial characteristics, industry, transaction size and type, buyer characteristics, and the recency of transactions",
+    "Select transactions only on the basis of their total transaction values",
+    "Select transactions exclusively because they involve companies in the same geographical location",
+    "Disregard the characteristics of the buyer because transaction analysis uses publicly available data"
+  ],
+  answer: 0,
+  reason: "The chapter explains that relevant comparable transactions should be selected by considering similar financial characteristics and industry, transaction size, type of transaction, buyer characteristics and recency. The selection of relevant transactions is an important component of transaction analysis."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch2_103",
+  case_chapter: "chapter2",
+  question: "In the comparable transaction table provided in the chapter, which target company has an implied EV/Revenue multiple of 0.84x?",
+  options: [
+    "Getty Images Holdings, Inc.",
+    "Betches Media, LLC",
+    "DISH Network Corporation",
+    "Schiefer Chopshop"
+  ],
+  answer: 3,
+  reason: "The chapter's comparable transaction table reports an implied EV/Revenue multiple of 0.84x for Schiefer Chopshop, acquired by PopReach Corporation."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch2_104",
+  case_chapter: "chapter2",
+  question: "A valuer uses past acquisition transactions but observes changes in competitor dynamics, exchange rates and business cycle phases. Why should these factors be considered?",
+  options: [
+    "They guarantee that all previous transaction multiples are invalid",
+    "They may affect the usefulness of past transactions and limit the conclusiveness of transaction analysis",
+    "They establish that the highest historical transaction multiple must always be adopted",
+    "They eliminate the need to consider the quantity and quality of transaction information"
+  ],
+  answer: 1,
+  reason: "The chapter explains that transaction analysis may be affected by differences in market conditions, competitor dynamics, market demand fluctuations, business cycle phases, exchange rate fluctuations and geopolitical influences. These factors may hinder conclusive insights."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch2_105",
+  case_chapter: "chapter2",
+  question: "A company requires valuation under the Companies Act, 2013, but does not have an audit committee. According to the chapter, who appoints the valuer?",
+  options: [
+    "The company's largest shareholder",
+    "The company's customers",
+    "The Board of Directors of the company",
+    "The company's competitors"
+  ],
+  answer: 2,
+  reason: "The chapter states that the valuer is appointed by the audit committee or, in its absence, by the Board of Directors of the company, in the prescribed manner and subject to the prescribed terms and conditions."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch2_106",
+  case_chapter: "chapter2",
+  question: "Which of the following transactions is specifically identified in the chapter as not having mandatory valuation prescribed under the Companies Act, 2013?",
+  options: [
+    "Issue of sweat equity",
+    "Non-cash transactions involving directors",
+    "Acquisition of minority shareholding",
+    "Buy-back of shares"
+  ],
+  answer: 3,
+  reason: "The chapter specifically notes that mandatory valuation has not been prescribed in respect of buy-back of shares, reduction of capital, and consolidation of capital with consequential payment for fractional entitlements."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch2_107",
+  case_chapter: "chapter2",
+  question: "A company transfers an undertaking or business as a whole and needs to assess the capital gains arising from the transaction. Which provision is identified in the chapter?",
+  options: [
+    "Section 50B of the Income Tax Act, 1961",
+    "Section 56(2)(viib) of the Income Tax Act, 1961",
+    "Section 50C of the Income Tax Act, 1961",
+    "Section 92C of the Income Tax Act, 1961"
+  ],
+  answer: 0,
+  reason: "The chapter explains that Section 50B pertains to taxation of capital gains arising from slump sale transactions. In a slump sale, the consideration received or accruing from transferring an undertaking or business as a whole is deemed the full value of consideration for computing capital gains."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch2_108",
+  case_chapter: "chapter2",
+  question: "An Indian resident undertakes a transaction involving a foreign exchange derivative. Which group contains the examples of derivatives identified in the chapter?",
+  options: [
+    "Goodwill, intangible assets and unquoted equity shares",
+    "Options, forwards and swaps",
+    "Shares, debentures and sweat equity",
+    "Roads, ports and power plants"
+  ],
+  answer: 1,
+  reason: "The chapter identifies options, forwards and swaps as examples of foreign exchange derivatives for which valuation may be required under FEMA-related requirements."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch2_109",
+  case_chapter: "chapter2",
+  question: "A company issues employee stock options under an ESOP. What is the role of valuation under the SEBI regulations described in the chapter?",
+  options: [
+    "To determine the stamp duty value of immovable property",
+    "To determine the fair and liquidation values of a corporate debtor",
+    "To determine the exercise price of employee stock options using prescribed fair valuation methodologies",
+    "To determine the full value of consideration in a slump sale"
+  ],
+  answer: 2,
+  reason: "The chapter explains that SEBI regulations governing ESOPs require fair valuation methodologies to determine the exercise price of employee stock options."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch2_110",
+  case_chapter: "chapter2",
+  question: "A company enters the corporate insolvency resolution process under the Insolvency and Bankruptcy Code, 2016. What is the purpose of determining fair value and liquidation value of its assets?",
+  options: [
+    "To determine the exercise price of employee stock options",
+    "To calculate the implied EV/Revenue multiple of previous acquisitions",
+    "To determine only the historical purchase cost of the assets",
+    "To support the resolution process, including resolution plans and distribution of proceeds among creditors"
+  ],
+  answer: 3,
+  reason: "The chapter explains that valuation of assets and liabilities of an insolvent company is integral to the resolution process. Fair value and liquidation value of the corporate debtor's assets are ascertained to facilitate resolution plans and determine the distribution of proceeds among creditors."
+},
+
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_111",
+  case_chapter: "chapter2",
+  question: "The comparable transaction table in the chapter reports the minimum, maximum, average and median implied EV/EBITDA multiples. Which combination correctly states the average and median?",
+  options: [
+    "Average 10.53x and median 12.16x",
+    "Average 12.16x and median 10.53x",
+    "Average 17.94x and median 8.83x",
+    "Average 8.83x and median 17.94x"
+  ],
+  answer: 1,
+  reason: "The chapter's comparable transaction table reports an average implied EV/EBITDA multiple of 12.16x and a median implied EV/EBITDA multiple of 10.53x."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_112",
+  case_chapter: "chapter2",
+  question: "A valuation team uses the comparable transaction table from the chapter to estimate a possible deal valuation for ADP Limited. Which conclusion matches the ranges stated in the chapter?",
+  options: [
+    "Implied EV/Revenue of 3.0x–4.0x and implied EV/EBITDA of 10.5x–12.5x",
+    "Implied EV/Revenue of 10.5x–12.5x and implied EV/EBITDA of 3.0x–4.0x",
+    "Implied EV/Revenue of 0.84x–5.88x and implied EV/EBITDA of 3.54x–5.88x",
+    "Implied EV/Revenue of 8.83x–17.94x and implied EV/EBITDA of 0.84x–5.88x"
+  ],
+  answer: 0,
+  reason: "The chapter states that, based on the comparable transactions, ADP Limited can expect an implied EV/Revenue multiple in the range of 3.0x–4.0x and an implied EV/EBITDA multiple in the range of 10.5x–12.5x."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_113",
+  case_chapter: "chapter2",
+  question: "A company needs valuation under Ind AS and considers whether a registered valuer or another expert acceptable from an accounting perspective may undertake it. Which statement accurately reflects the discussion in the supplied chapter?",
+  options: [
+    "The chapter states that registered valuers are prohibited from undertaking valuation under Ind AS",
+    "The chapter states that no valuation is needed for fair valuation of plan assets",
+    "The chapter identifies the more appropriate interpretation as applying the Companies Act requirements and using a registered valuer, while also acknowledging another interpretation involving an expert acceptable from an accounting perspective, such as an actuary valuing plan assets",
+    "The chapter states that all valuations under Ind AS must be undertaken by the company's Board of Directors"
+  ],
+  answer: 2,
+  reason: "The chapter explains that the more appropriate interpretation is that, because the Accounting Standards are mandated by the Companies Act, 2013, the Act's requirements apply and a registered valuer should be used. It also acknowledges another interpretation allowing an expert acceptable from an accounting perspective, giving actuaries valuing plan assets as an example."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_114",
+  case_chapter: "chapter2",
+  question: "An Indian company is reviewing transactions involving a non-resident, an overseas subsidiary and a foreign exchange derivative. Which statement best combines the valuation matters described under FEMA in the chapter?",
+  options: [
+    "FEMA-related valuation applies only to immovable property sold below stamp duty value",
+    "Valuation is required only for the issuance of sweat equity shares",
+    "FEMA valuation concerns only the determination of the net asset value of REIT units",
+    "Valuation requirements may concern transactions between residents and non-residents, shares issued or transferred to non-residents, foreign exchange derivatives, and overseas investments or disinvestments"
+  ],
+  answer: 3,
+  reason: "The chapter describes FEMA-related valuation requirements for transactions involving non-residents, shares issued or transferred to non-residents, foreign exchange derivatives such as options, forwards and swaps, and overseas investments or disinvestments involving foreign securities, joint ventures or subsidiaries."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_115",
+  case_chapter: "chapter2",
+  question: "A company is considering a takeover transaction, a preferential allotment and an ESOP. Which combination correctly matches each transaction with the valuation purpose described in the chapter?",
+  options: [
+    "Takeover: fair exit opportunity and offer price; preferential allotment: prevent dilution and support transparency; ESOP: determine the exercise price of employee stock options",
+    "Takeover: determine the liquidation value of a corporate debtor; preferential allotment: determine the exercise price of ESOPs; ESOP: determine the offer price for minority shareholders",
+    "Takeover: determine stamp duty value; preferential allotment: determine the net asset value of REIT units; ESOP: determine a slump sale consideration",
+    "Takeover: assess rental income of infrastructure projects; preferential allotment: determine capital gains from a slump sale; ESOP: determine arm's length prices between associated enterprises"
+  ],
+  answer: 0,
+  reason: "The chapter explains that the SEBI Takeover Code involves disclosure of the offer price and a fair exit opportunity for minority shareholders. Preferential allotment valuation helps prevent dilution of existing shareholders' interests and supports transparency. ESOP valuation helps determine the exercise price of employee stock options."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_116",
+  case_chapter: "chapter2",
+  question: "Five valuation situations arise: shares issued at a premium by a company covered by the relevant provision; shares received for consideration exceeding fair market value; a slump sale; transfer of immovable property for consideration below stamp duty value; and a transaction between associated enterprises. Which sequence correctly matches the provisions in the order listed?",
+  options: [
+    "Sections 50C, 50B, 92C, 56(2)(x), 56(2)(viib)",
+    "Sections 56(2)(viib), 56(2)(x), 50B, 50C, 92C",
+    "Sections 92C, 50C, 56(2)(viib), 50B, 56(2)(x)",
+    "Sections 50B, 56(2)(viib), 50C, 92C, 56(2)(x)"
+  ],
+  answer: 1,
+  reason: "The supplied chapter associates Section 56(2)(viib) with the issue of shares at a premium by certain companies, Section 56(2)(x) with receipt of shares at consideration exceeding fair market value, Section 50B with slump sale transactions, Section 50C with the adoption of stamp duty value for certain transfers of immovable property, and Section 92C with transfer pricing for transactions between associated enterprises."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_117",
+  case_chapter: "chapter2",
+  question: "A listed company is preparing financial statements and undertaking a scheme of arrangement. It also needs to provide reliable valuation information to its investors. Which statement best combines the reporting-related requirements discussed in the chapter?",
+  options: [
+    "Ind AS 113 applies only to transactions between associated enterprises, and valuation is unnecessary for corporate restructuring",
+    "Section 230 of the Companies Act concerns only the valuation of foreign exchange derivatives",
+    "Ind AS 113 addresses fair value measurement and disclosure; the chapter also identifies valuation under Section 230 of the Companies Act for shares, assets or liabilities in schemes of arrangement, amalgamations or corporate restructuring",
+    "Financial reporting valuation is limited to determining the liquidation value of a corporate debtor"
+  ],
+  answer: 2,
+  reason: "The chapter identifies Ind AS 113, 'Fair Value Measurement', as a standard requiring fair value measurement and disclosure. It also states that Section 230 of the Companies Act requires valuation of shares, assets or liabilities in cases involving schemes of arrangement, amalgamations or corporate restructuring."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_118",
+  case_chapter: "chapter2",
+  question: "Management uses valuation to assess a new-market expansion, evaluate financial risks, compare the company's performance with industry peers and identify factors contributing to value creation. Which combination correctly matches these activities with the purposes described in the chapter?",
+  options: [
+    "New-market expansion: strategic planning; financial risk assessment: risk management; comparison with industry peers: performance evaluation; identification of revenue growth and profitability as value drivers: performance evaluation",
+    "New-market expansion: dispute resolution; financial risk assessment: stakeholder communication; comparison with peers: taxation; value drivers: liquidation",
+    "New-market expansion: financial reporting only; financial risk assessment: capital raising only; comparison with peers: dispute resolution; value drivers: corporate governance only",
+    "New-market expansion: risk management only; financial risk assessment: financial reporting only; comparison with peers: capital raising; value drivers: stakeholder communication only"
+  ],
+  answer: 0,
+  reason: "The chapter explains that valuation supports strategic planning by evaluating expansion and other strategic alternatives; risk management by identifying and assessing risks; performance evaluation by comparing valuation metrics with industry benchmarks; and performance evaluation by identifying value drivers such as revenue growth, profitability and capital efficiency."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_119",
+  case_chapter: "chapter2",
+  question: "A company is evaluating its capital structure and negotiating with investors and lenders. Which statement correctly reflects the capital-raising purposes of valuation described in the chapter?",
+  options: [
+    "Valuation guarantees that the company can raise funds without disclosing information to investors",
+    "Valuation eliminates the need to consider cost of capital, risk considerations or shareholder interests",
+    "Valuation requires the company to use equity financing exclusively",
+    "Valuation supports a realistic valuation range, pricing of fundraising transactions, evaluation of equity, debt or hybrid instruments, and negotiations with investors and lenders"
+  ],
+  answer: 3,
+  reason: "The chapter explains that valuation in capital raising helps establish a realistic valuation range and appropriate pricing for equity offerings, private placements or debt issuances. It also supports capital structure decisions involving equity, debt or hybrid instruments and provides objective evidence for negotiations with investors and lenders."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch2_120",
+  case_chapter: "chapter2",
+  question: "A business is resolving a dispute over the value of shares, communicating financial performance to investors and explaining the implications of valuation results for employee incentive plans. Which statement correctly reflects the chapter's discussion of dispute resolution and stakeholder communication?",
+  options: [
+    "Valuation reports are relevant only to transactions under the Income Tax Act and cannot assist dispute resolution",
+    "An objective valuation can assist in resolving disputes and may provide evidence in court proceedings, arbitration or mediation; transparent communication of valuation results can also help stakeholders understand financial performance and employee-related implications",
+    "Valuation can assist only shareholders and has no role in communication with employees or other stakeholders",
+    "Stakeholder communication requires valuation methodologies and assumptions to remain undisclosed"
+  ],
+  answer: 1,
+  reason: "The chapter explains that valuation provides an objective assessment of disputed assets or interests and that valuation reports prepared by qualified professionals may serve as evidence in court proceedings, arbitration or mediation. It also explains that transparent valuation communication can improve stakeholder understanding and that communicating implications for employee compensation, incentive plans and performance targets can foster ownership and alignment with organisational goals."
+}
+
 
 
 
