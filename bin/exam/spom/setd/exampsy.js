@@ -32,7 +32,34 @@ function shuffleArray(array) {
 }
 
 // ==========================
+// DIFFICULTY HELPER
+// ==========================
+function normalizeDifficulty(val) {
+    if (!val || typeof val !== 'string') return 'medium';
+    const v = val.trim().toLowerCase();
+    if (v.includes('easy')) return 'easy';
+    if (v.includes('med') || v.includes('mod')) return 'medium';
+    if (v.includes('hard') || v.includes('tough') || v.includes('extreme')) return 'hard';
+    return 'medium';
+}
+
+function getCaseBlockDifficulty(block) {
+    if (block.difficulty) return normalizeDifficulty(block.difficulty);
+    if (block.questions && Array.isArray(block.questions)) {
+        let counts = { easy: 0, medium: 0, hard: 0 };
+        for (let q of block.questions) {
+            if (q.difficulty) counts[normalizeDifficulty(q.difficulty)]++;
+        }
+        if (counts.hard > counts.medium && counts.hard > counts.easy) return 'hard';
+        if (counts.medium > counts.easy && counts.medium >= counts.hard) return 'medium';
+        if (counts.easy > 0) return 'easy';
+    }
+    return 'medium';
+}
+
+// ==========================
 // INIT EXAM (Mixed format: 25 Case Scenario Questions [2m] + 50 Individual MCQs [1m] = 75 Questions / 100 Marks / 2 Hours)
+// Difficulty Distribution: 50% Easy, 30% Medium, 20% Hard for both Case Scenarios & Individual MCQs
 // Each case scenario's sub-questions stay together as a contiguous block.
 // ==========================
 function initExam() {
@@ -51,59 +78,181 @@ function initExam() {
             }
         }
 
-        // Shuffle candidate pools
-        shuffleArray(caseBlocks);
-        shuffleArray(standaloneList);
-
         let questionUnits = [];
 
-        // 1. Select Case Scenario blocks (Target: 25 sub-questions total)
-        // Keep each case scenario's sub-questions grouped together in a contiguous array unit
-        let caseQuestionsCount = 0;
-        for (let block of caseBlocks) {
-            if (caseQuestionsCount >= TARGET_CASE_QUESTIONS) break;
+        // -------------------------------------------------------------
+        // 1. SELECT CASE SCENARIO BLOCKS (Target: 25 sub-questions total)
+        // Distribution: 50% Easy (13 qs), 30% Medium (7 qs), 20% Hard (5 qs)
+        // -------------------------------------------------------------
+        const targetCaseEasy = Math.round(TARGET_CASE_QUESTIONS * 0.50);   // 13
+        const targetCaseMedium = Math.round(TARGET_CASE_QUESTIONS * 0.30); // 7
+        const targetCaseHard = TARGET_CASE_QUESTIONS - targetCaseEasy - targetCaseMedium; // 5
 
-            let cText = block.caseText || "";
-            let blockUnit = [];
-            for (let q of block.questions) {
-                if (caseQuestionsCount + blockUnit.length >= TARGET_CASE_QUESTIONS) break;
+        let casePools = { easy: [], medium: [], hard: [] };
+        for (let block of caseBlocks) {
+            const diff = getCaseBlockDifficulty(block);
+            casePools[diff].push(block);
+        }
+
+        shuffleArray(casePools.easy);
+        shuffleArray(casePools.medium);
+        shuffleArray(casePools.hard);
+
+        let selectedCaseUnits = [];
+        let usedCaseBlocks = new Set();
+
+        function pickCaseBlocksFromPool(pool, maxQs) {
+            let count = 0;
+            for (let block of pool) {
+                if (count >= maxQs) break;
+                if (usedCaseBlocks.has(block)) continue;
+
+                let cText = block.caseText || "";
+                let blockUnit = [];
+                for (let q of block.questions) {
+                    if (count + blockUnit.length >= maxQs) break;
+                    if (!q.question || !q.options || q.answer === undefined) continue;
+
+                    blockUnit.push({
+                        caseContent: cText,
+                        question: q.question,
+                        options: q.options,
+                        correct: q.answer,
+                        solution: q.reason || q.solution || q.solution_html || "No reason provided",
+                        marks: 2,
+                        questionType: "Case Scenario",
+                        difficulty: block.difficulty || q.difficulty || "Medium"
+                    });
+                }
+
+                if (blockUnit.length > 0) {
+                    usedCaseBlocks.add(block);
+                    count += blockUnit.length;
+                    selectedCaseUnits.push(blockUnit);
+                }
+            }
+            return count;
+        }
+
+        let caseEasyCount = pickCaseBlocksFromPool(casePools.easy, targetCaseEasy);
+        let caseMedCount = pickCaseBlocksFromPool(casePools.medium, targetCaseMedium);
+        let caseHardCount = pickCaseBlocksFromPool(casePools.hard, targetCaseHard);
+
+        let totalCaseCount = caseEasyCount + caseMedCount + caseHardCount;
+
+        // Fallback: if any difficulty pool fell short of 25, top up from remaining blocks
+        if (totalCaseCount < TARGET_CASE_QUESTIONS) {
+            const caseFallbackOrder = [...casePools.easy, ...casePools.medium, ...casePools.hard];
+            for (let block of caseFallbackOrder) {
+                if (totalCaseCount >= TARGET_CASE_QUESTIONS) break;
+                if (usedCaseBlocks.has(block)) continue;
+
+                let cText = block.caseText || "";
+                let blockUnit = [];
+                for (let q of block.questions) {
+                    if (totalCaseCount + blockUnit.length >= TARGET_CASE_QUESTIONS) break;
+                    if (!q.question || !q.options || q.answer === undefined) continue;
+
+                    blockUnit.push({
+                        caseContent: cText,
+                        question: q.question,
+                        options: q.options,
+                        correct: q.answer,
+                        solution: q.reason || q.solution || q.solution_html || "No reason provided",
+                        marks: 2,
+                        questionType: "Case Scenario",
+                        difficulty: block.difficulty || q.difficulty || "Medium"
+                    });
+                }
+
+                if (blockUnit.length > 0) {
+                    usedCaseBlocks.add(block);
+                    totalCaseCount += blockUnit.length;
+                    selectedCaseUnits.push(blockUnit);
+                }
+            }
+        }
+
+        questionUnits.push(...selectedCaseUnits);
+
+        // -------------------------------------------------------------
+        // 2. SELECT INDIVIDUAL MCQS (Target: 50 questions total)
+        // Distribution: 50% Easy (25 qs), 30% Medium (15 qs), 20% Hard (10 qs)
+        // -------------------------------------------------------------
+        const targetIndEasy = Math.round(TARGET_INDIVIDUAL_QUESTIONS * 0.50);   // 25
+        const targetIndMedium = Math.round(TARGET_INDIVIDUAL_QUESTIONS * 0.30); // 15
+        const targetIndHard = TARGET_INDIVIDUAL_QUESTIONS - targetIndEasy - targetIndMedium; // 10
+
+        let indPools = { easy: [], medium: [], hard: [] };
+        for (let q of standaloneList) {
+            const diff = normalizeDifficulty(q.difficulty);
+            indPools[diff].push(q);
+        }
+
+        shuffleArray(indPools.easy);
+        shuffleArray(indPools.medium);
+        shuffleArray(indPools.hard);
+
+        let selectedIndUnits = [];
+        let usedIndSet = new Set();
+
+        function pickIndQuestionsFromPool(pool, maxQs) {
+            let count = 0;
+            for (let q of pool) {
+                if (count >= maxQs) break;
+                if (usedIndSet.has(q)) continue;
                 if (!q.question || !q.options || q.answer === undefined) continue;
 
-                blockUnit.push({
-                    caseContent: cText,
+                usedIndSet.add(q);
+                selectedIndUnits.push([{
+                    caseContent: "",
                     question: q.question,
                     options: q.options,
                     correct: q.answer,
                     solution: q.reason || q.solution || q.solution_html || "No reason provided",
-                    marks: 2,
-                    questionType: "Case Scenario"
-                });
+                    marks: 1,
+                    questionType: "Individual MCQ",
+                    difficulty: q.difficulty || "Medium"
+                }]);
+                count++;
             }
+            return count;
+        }
 
-            if (blockUnit.length > 0) {
-                caseQuestionsCount += blockUnit.length;
-                questionUnits.push(blockUnit);
+        let indEasyCount = pickIndQuestionsFromPool(indPools.easy, targetIndEasy);
+        let indMedCount = pickIndQuestionsFromPool(indPools.medium, targetIndMedium);
+        let indHardCount = pickIndQuestionsFromPool(indPools.hard, targetIndHard);
+
+        let totalIndCount = indEasyCount + indMedCount + indHardCount;
+
+        // Fallback: if any difficulty pool fell short of 50, top up from remaining questions
+        if (totalIndCount < TARGET_INDIVIDUAL_QUESTIONS) {
+            const indFallbackOrder = [...indPools.easy, ...indPools.medium, ...indPools.hard];
+            for (let q of indFallbackOrder) {
+                if (totalIndCount >= TARGET_INDIVIDUAL_QUESTIONS) break;
+                if (usedIndSet.has(q)) continue;
+                if (!q.question || !q.options || q.answer === undefined) continue;
+
+                usedIndSet.add(q);
+                selectedIndUnits.push([{
+                    caseContent: "",
+                    question: q.question,
+                    options: q.options,
+                    correct: q.answer,
+                    solution: q.reason || q.solution || q.solution_html || "No reason provided",
+                    marks: 1,
+                    questionType: "Individual MCQ",
+                    difficulty: q.difficulty || "Medium"
+                }]);
+                totalIndCount++;
             }
         }
 
-        // 2. Select 50 Individual MCQs (each as a 1-item array unit)
-        let individualCount = 0;
-        for (let q of standaloneList) {
-            if (individualCount >= TARGET_INDIVIDUAL_QUESTIONS) break;
+        questionUnits.push(...selectedIndUnits);
 
-            questionUnits.push([{
-                caseContent: "",
-                question: q.question,
-                options: q.options,
-                correct: q.answer,
-                solution: q.reason || q.solution || q.solution_html || "No reason provided",
-                marks: 1,
-                questionType: "Individual MCQ"
-            }]);
-            individualCount++;
-        }
-
-        // 3. Shuffle all units together (intersperses case scenario blocks and individual MCQs randomly)
+        // -------------------------------------------------------------
+        // 3. Shuffle all units together (intersperses case blocks & MCQs randomly)
+        // -------------------------------------------------------------
         shuffleArray(questionUnits);
 
         // 4. Flatten mixed units into selectedQuestions
