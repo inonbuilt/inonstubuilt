@@ -458,13 +458,28 @@
     };
 
 const PEER_CONFIG = {
-      debug: 1,
+      host: '0.peerjs.com',
+      port: 443,
+      secure: true,
+      key: 'peerjs',
+      path: '/',
+      debug: 2,
       config: {
         iceServers: [
           { urls: "stun:stun.l.google.com:19302" },
           { urls: "stun:stun1.l.google.com:19302" },
           { urls: "stun:stun2.l.google.com:19302" },
-          { urls: "stun:global.stun.twilio.com:3478" }
+          { urls: "stun:global.stun.twilio.com:3478" },
+          {
+            urls: "turn:openrelay.metered.ca:80",
+            username: "openrelayproject",
+            credential: "openrelayproject"
+          },
+          {
+            urls: "turn:openrelay.metered.ca:443",
+            username: "openrelayproject",
+            credential: "openrelayproject"
+          }
         ],
         iceCandidatePoolSize: 10
       }
@@ -813,7 +828,18 @@ const PEER_CONFIG = {
         ? locObj.origin + locObj.pathname
         : "https://www.calciumnotes.com/";
       document.getElementById("shareInviteUrl").value = `${baseUrl}?room=${code}`;
-      document.getElementById("squadStatusText").textContent = `Connecting to Room ${code}...`;
+      document.getElementById("squadStatusText").textContent = `Connecting to Room ${code}... (please wait)`;
+      // Auto-retry connection after 10 seconds if still not connected
+      if (window._peerJoinTimeout) clearTimeout(window._peerJoinTimeout);
+      window._peerJoinTimeout = setTimeout(() => {
+        if (!guestHostConn || !guestHostConn.open) {
+          document.getElementById("squadStatusText").textContent = `⚠️ Connection to Room ${code} is taking too long. Retrying...`;
+          // Destroy current peer and retry
+          if (peerInstance) { try { peerInstance.destroy(); } catch(e){} peerInstance = null; }
+          prewarmedGuestPeer = null;
+          joinPeerRoom(code);
+        }
+      }, 10000);
 
       if (typeof Peer !== "undefined") {
         try {
@@ -862,7 +888,7 @@ const PEER_CONFIG = {
           }
 
           peerInstance.on("error", (err) => {
-            console.warn("PeerJS error:", err);
+            console.warn("PeerJS error:", err.type, err.message, err);
             if (err && err.type === "peer-unavailable") {
               document.getElementById("squadStatusText").textContent = `⚠️ Room ${code} not found or host offline.`;
             }
