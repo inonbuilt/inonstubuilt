@@ -22,7 +22,7 @@ const AICaseStudies = [
         "It gives excessive importance to product differentiation",
         "It focuses primarily on external environmental factors"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Traditional cost management places excessive emphasis on cost reduction. The case demonstrates that reducing preventive maintenance cost resulted in higher corrective costs, disruption and lower profitability."
     },
     {
@@ -34,7 +34,7 @@ const AICaseStudies = [
         "Align cost management decisions with business strategy and customer value",
         "Ignore competitors because cost information is internally generated"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Strategic Cost Management involves measuring and managing costs while aligning them with business strategy. It considers both quantitative and qualitative information and the broader business environment."
     },
     {
@@ -46,7 +46,7 @@ const AICaseStudies = [
         "Relevant cost drivers associated with activities",
         "Only direct labour hours in every situation"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Strategic Cost Management recognises that appropriate cost drivers should be identified according to the nature of the supporting cost and activity rather than relying exclusively on production volume."
     },
     {
@@ -58,7 +58,7 @@ const AICaseStudies = [
         "Cost reduction must be considered together with customer value, quality and strategic position",
         "Traditional costing automatically measures customer satisfaction"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Strategic Cost Management recognises that cost reduction alone may damage quality or customer value. Competitive advantage may arise through cost leadership or differentiation."
     },
     {
@@ -70,7 +70,7 @@ const AICaseStudies = [
         "Financial accounting, auditing and taxation",
         "Pricing, advertising and distribution"
       ],
-      answer: 2,
+      answer: 1,
       reason: "The three important pillars of Strategic Cost Management are strategic positioning analysis, cost driver analysis and value chain analysis."
     }]
   },
@@ -96,7 +96,7 @@ const AICaseStudies = [
         "Delivering finished products to retailers",
         "Training production supervisors"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Inbound logistics cover receiving, storing and handling raw material inputs."
     },
     {
@@ -108,7 +108,7 @@ const AICaseStudies = [
         "Outbound logistics",
         "Firm infrastructure"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Outbound logistics cover storing, distributing and delivering finished goods to customers."
     },
     {
@@ -120,7 +120,7 @@ const AICaseStudies = [
         "Outbound logistics",
         "Marketing activity"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Human resource management is a support activity in Porter's Value Chain."
     },
     {
@@ -132,7 +132,7 @@ const AICaseStudies = [
         "Increase every activity's budget",
         "Ignore activities that do not directly generate revenue"
       ],
-      answer: 2,
+      answer: 1,
       reason: "The three broad steps of Value Chain Analysis are identifying activities, determining their cost and value, and identifying opportunities for competitive advantage."
     },
     {
@@ -144,7 +144,7 @@ const AICaseStudies = [
         "Customer segmentation only",
         "Revenue stream analysis"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Technology development is a support activity and can improve the effectiveness of primary activities such as inventory management and operations."
     }]
   },
@@ -170,7 +170,7 @@ const AICaseStudies = [
         "Key Partners",
         "Revenue Streams"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Customer Segments describe who the customers of the business are and why they buy from it."
     },
     {
@@ -182,7 +182,7 @@ const AICaseStudies = [
         "Key Activities",
         "Channels"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Value Proposition deals with the products or services offered to a target customer segment to solve their problems or satisfy their needs."
     },
     {
@@ -194,7 +194,7 @@ const AICaseStudies = [
         "Key Resources only",
         "Revenue Streams"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Channels deal with the distribution mechanisms through which products or services are promoted, sold and delivered to customers."
     },
     {
@@ -206,7 +206,7 @@ const AICaseStudies = [
         "Question database",
         "Payment gateway"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Revenue Streams describe how the business earns money from its value propositions. Subscription is specifically recognised as a revenue model."
     },
     {
@@ -218,7 +218,7 @@ const AICaseStudies = [
         "All customers must be treated as one segment",
         "Key partners must determine the value proposition"
       ],
-      answer: 1,
+      answer: 0,
       reason: "A business's value proposition should be oriented to customers' needs and problems rather than merely reflecting the capabilities of the business."
     }]
   },
@@ -245,7 +245,7 @@ const AICaseStudies = [
         "Pain Reliever",
         "Revenue Stream"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Customer Jobs describe the important tasks, needs or problems customers are trying to get done or resolve."
     },
     {
@@ -257,7 +257,7 @@ const AICaseStudies = [
         "Key Resource",
         "Channel"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Pains describe anything that annoys customers before, during or after getting a job done, including unwanted costs, situations, negative emotions or risks."
     },
     {
@@ -269,7 +269,7 @@ const AICaseStudies = [
         "Key Partner",
         "Cost Driver"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Gains describe outcomes or benefits that customers require, expect or desire."
     },
     {
@@ -281,7 +281,7 @@ const AICaseStudies = [
         "Key Partners",
         "Structural Cost Drivers"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Pain relievers explain how products and services alleviate specific customer pains."
     },
     {
@@ -293,7 +293,7 @@ const AICaseStudies = [
         "Cost leadership automatically",
         "Industry equilibrium"
       ],
-      answer: 1,
+      answer: 0,
       reason: "A business achieves problem-solution fit when the features of its value proposition map perfectly match the characteristics of the customer segment profile."
     }]
   },
@@ -319,7 +319,7 @@ const AICaseStudies = [
         "Low threat of substitutes",
         "Low rivalry"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Low switching costs strengthen the bargaining power of buyers because customers can move easily between suppliers."
     },
     {
@@ -331,7 +331,7 @@ const AICaseStudies = [
         "Existing employees",
         "Key resources"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Alternatives satisfying the same underlying customer need, even when coming from another segment or industry, are substitutes."
     },
     {
@@ -343,7 +343,7 @@ const AICaseStudies = [
         "Bargaining power of buyers",
         "Internal differentiation"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Potential competitors entering an industry constitute the threat of new entrants."
     },
     {
@@ -355,7 +355,7 @@ const AICaseStudies = [
         "Low substitution threat",
         "High supplier concentration"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Competitive moves and countermoves among existing firms indicate rivalry. Greater rivalry generally reduces industry profitability."
     },
     {
@@ -367,7 +367,7 @@ const AICaseStudies = [
         "Competition disappears",
         "Switching costs automatically increase"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Higher intensity of the five competitive forces generally results in lower potential industry profitability."
     }]
   },
@@ -395,7 +395,7 @@ const AICaseStudies = [
         "Strategic positioning is limited to analysing historical financial statements",
         "Strategic positioning requires charging the highest possible price in every market"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Strategic positioning reflects choices regarding the kind of value a company creates and how that value is created differently from rivals. It should translate into differentiation or lower cost."
     },
     {
@@ -407,7 +407,7 @@ const AICaseStudies = [
         "Market segmentation only",
         "Vertical linkage"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Cost leadership involves driving down costs while balancing price with acceptable quality and becoming the lowest-cost producer in the industry."
     },
     {
@@ -419,7 +419,7 @@ const AICaseStudies = [
         "Traditional cost management",
         "Backward integration only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Differentiation involves delivering distinctive value that customers perceive and are willing to pay for, with sources including innovation, quality and customer response."
     },
     {
@@ -431,7 +431,7 @@ const AICaseStudies = [
         "Cutting strategically important after-sales activities merely to meet short-term cost targets",
         "Analysing the cost drivers of manufacturing"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Strategic Cost Management does not advocate indiscriminate cost reduction. Cutting strategically important activities can reduce customer value and damage long-term competitive advantage."
     },
     {
@@ -443,7 +443,7 @@ const AICaseStudies = [
         "Only international competitors are relevant",
         "Internal cost data is sufficient for strategic positioning"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Strategic Positioning Analysis examines the company's relative position within the strategic segment of the industry that matters for setting performance targets and attaining competitive advantage."
     }]
   },
@@ -471,7 +471,7 @@ const AICaseStudies = [
         "Machine hours are always qualitative",
         "Strategic Cost Management does not analyse overhead costs"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Strategic Cost Management recognises that relevant cost drivers should reflect the activities causing supporting costs. Products with similar machine hours may consume other supporting activities very differently."
     },
     {
@@ -483,7 +483,7 @@ const AICaseStudies = [
         "Scale of operations",
         "Supplier relationship management"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Structural cost drivers arise from strategic choices concerning the underlying economic structure, such as scale, scope, technology and product complexity."
     },
     {
@@ -495,7 +495,7 @@ const AICaseStudies = [
         "Product complexity",
         "Employee involvement"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Executional cost drivers relate to how business activities are executed and include employee involvement, quality service, product design and manufacturing, and links with suppliers and clients."
     },
     {
@@ -507,7 +507,7 @@ const AICaseStudies = [
         "A customer gain",
         "A channel decision"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Complexity of products is specifically identified as a structural cost driver."
     },
     {
@@ -519,7 +519,7 @@ const AICaseStudies = [
         "Allocate every cost equally among products",
         "Replace strategic positioning analysis"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Cost Driver Analysis involves examination, quantification and explanation of the monetary effects of cost drivers associated with an activity."
     }]
   },
@@ -552,7 +552,7 @@ const AICaseStudies = [
         "Threat of substitutes only",
         "Exit barriers"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Buyers purchasing large volumes relative to seller sales can possess significant bargaining power, particularly when they are concentrated and have access to information."
     },
     {
@@ -564,7 +564,7 @@ const AICaseStudies = [
         "Rivalry among buyers",
         "Threat of new entrants only"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Supplier bargaining power is higher when replacement or alternate suppliers are not readily available and the supplier's product is an important input."
     },
     {
@@ -576,7 +576,7 @@ const AICaseStudies = [
         "Customer relationships",
         "Executional cost drivers"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Substitutes may come from different segments or industries if they satisfy the underlying customer need. They can put pressure on revenue or increase retention costs."
     },
     {
@@ -588,7 +588,7 @@ const AICaseStudies = [
         "Availability of substitute treatments",
         "Large number of existing competitors"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Capital requirements, government policy, access to distribution channels, switching costs, economies of scale and other barriers can restrict entry."
     },
     {
@@ -600,7 +600,7 @@ const AICaseStudies = [
         "Industry profitability automatically becomes zero",
         "Only internal cost analysis is required"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Porter's model recognises that all five forces jointly determine industry competition and profitability, but the strongest force or forces can govern and become crucial for strategy formulation."
     }]
   },
@@ -628,7 +628,7 @@ const AICaseStudies = [
         "Segmentation requires only geographic differences",
         "Segments must always have equal sizes"
       ],
-      answer: 2,
+      answer: 1,
       reason: "A market segment is a category of customers with similar likes and dislikes internally and which is different from other segments."
     },
     {
@@ -640,7 +640,7 @@ const AICaseStudies = [
         "Geographic segmentation",
         "Product segmentation"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Psychographic segmentation is based on personality traits, values, attitudes, interests, lifestyles, beliefs, motivations and priorities."
     },
     {
@@ -652,7 +652,7 @@ const AICaseStudies = [
         "Customer Pains",
         "Structural Cost Drivers"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Key Success Factors are factors critical to the success of an organisation in generating and sustaining competitive advantage in an industry or segment."
     },
     {
@@ -664,7 +664,7 @@ const AICaseStudies = [
         "A substitute",
         "A value proposition"
       ],
-      answer: 1,
+      answer: 0,
       reason: "KPIs are attached to Key Success Factors to measure the performance of the business organisation regarding the relevant CSF."
     },
     {
@@ -676,7 +676,7 @@ const AICaseStudies = [
         "KPIs cannot be changed",
         "Segmentation becomes unnecessary after the first analysis"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Under a dynamic business environment, Key Success Factors may change over time as industry conditions, technology, customer behaviour and competitive dynamics change."
     }]
   },
@@ -710,7 +710,7 @@ const AICaseStudies = [
         "It is used by every company in the industry",
         "It requires a large administrative department"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Core competency should provide meaningful customer value and be difficult to imitate, allowing the organisation to sustain its competitive position."
     },
     {
@@ -722,7 +722,7 @@ const AICaseStudies = [
         "Breadth of application",
         "Cost containment"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Breadth of application means the competence should open up a good number of potential markets rather than being restricted to a small niche."
     },
     {
@@ -734,7 +734,7 @@ const AICaseStudies = [
         "Cost driver test",
         "Supplier power test"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Relevance requires that the competence give customers something that strongly influences their choice of the product or service."
     },
     {
@@ -746,7 +746,7 @@ const AICaseStudies = [
         "It can be applied across several potential markets",
         "The company spends a large amount of money maintaining it"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The three tests of core competency are relevance, difficulty of imitation and breadth of application. High expenditure alone does not establish core competency."
     },
     {
@@ -758,7 +758,7 @@ const AICaseStudies = [
         "Eliminating the competency from the current business",
         "Reducing all research expenditure"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Core competencies can be exploited by validating them in the current business, leveraging them in other segments, reconfiguring existing value chains or using them to create new value chains."
     }]
   },
@@ -790,7 +790,7 @@ const AICaseStudies = [
         "Market segmentation",
         "Value shop strategy"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Cost leadership involves driving down costs and becoming the lowest-cost producer while maintaining acceptable quality."
     },
     {
@@ -802,7 +802,7 @@ const AICaseStudies = [
         "Short-term cost containment",
         "Reduction of customer value"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Differentiation allows a company to command a premium price by providing distinctive value to customers."
     },
     {
@@ -814,7 +814,7 @@ const AICaseStudies = [
         "Additional cost may be justified if it creates customer value and strengthens strategic position",
         "Strategic Cost Management ignores customer preferences"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Strategic Cost Management does not mean simply reducing expenditure. Costs must be aligned with strategy, and additional expenditure may be justified where it creates sufficient customer value."
     },
     {
@@ -826,7 +826,7 @@ const AICaseStudies = [
         "Human resource management",
         "Operations"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Human resource management is a support activity. Primary activities include inbound logistics, operations, outbound logistics, marketing and sales, and after-sales service."
     },
     {
@@ -838,7 +838,7 @@ const AICaseStudies = [
         "Historical cost",
         "Financial reporting standards"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The basis of competition refers to the reason customers choose one business over its competitors and may involve price, features, quality, availability, style and other factors."
     }]
   },
@@ -865,7 +865,7 @@ const AICaseStudies = [
         "Increase selling price",
         "Calculate only total profit"
       ],
-      answer: 2,
+      answer: 1,
       reason: "The first step in Value Chain Analysis is to identify the primary and support activities involved in creating the product or service."
     },
     {
@@ -877,7 +877,7 @@ const AICaseStudies = [
         "STEEPLE analysis",
         "Core competency testing"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Internal Cost Analysis includes determining the portion of total product cost attributed to each value-creating process."
     },
     {
@@ -889,7 +889,7 @@ const AICaseStudies = [
         "Eliminate all support activities",
         "Avoid customer analysis"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Internal Cost Analysis includes identifying links between processes, while value chain analysis considers how activities interact to create cost and value."
     },
     {
@@ -901,7 +901,7 @@ const AICaseStudies = [
         "Psychographic segmentation",
         "Revenue stream analysis"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Vertical Linkage Analysis creates an extendable organisation by extending the value chain across suppliers and users."
     },
     {
@@ -913,7 +913,7 @@ const AICaseStudies = [
         "A revenue stream",
         "A stakeholder group"
       ],
-      answer: 2,
+      answer: 1,
       reason: "A cost driver is the unit of an activity that causes costs to be incurred and acts as a trigger for changes in cost."
     }]
   },
@@ -940,7 +940,7 @@ const AICaseStudies = [
         "Customer relationship",
         "Key resources"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Political and government-related factors form part of the remote external environment and may create opportunities or threats."
     },
     {
@@ -952,7 +952,7 @@ const AICaseStudies = [
         "VRIO",
         "BCG Matrix"
       ],
-      answer: 2,
+      answer: 1,
       reason: "STEEPLE includes Social, Technological, Economic, Environmental, Political, Legal and Ethical factors."
     },
     {
@@ -964,7 +964,7 @@ const AICaseStudies = [
         "A key resource",
         "A customer gain"
       ],
-      answer: 2,
+      answer: 1,
       reason: "External factors can create opportunities or threats. Technology can threaten an existing product if the firm fails to adapt."
     },
     {
@@ -976,7 +976,7 @@ const AICaseStudies = [
         "Internal analysis is relevant only for accounting purposes",
         "External analysis eliminates the need for strategy"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Strategic position is understood through the impact of the external environment, internal resources and competences, and stakeholder expectations."
     },
     {
@@ -988,7 +988,7 @@ const AICaseStudies = [
         "A customer gain",
         "A support activity"
       ],
-      answer: 1,
+      answer: 0,
       reason: "External environmental factors are beyond the control of an individual organisation but can influence its performance and strategic position."
     }]
   },
@@ -1015,7 +1015,7 @@ const AICaseStudies = [
         "Geographic segmentation",
         "Psychographic segmentation"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Demographic segmentation uses characteristics such as age, gender, family situation and education."
     },
     {
@@ -1027,7 +1027,7 @@ const AICaseStudies = [
         "Behavioural segmentation",
         "Psychographic segmentation"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Geographic segmentation is based on factors such as city, country, climate, ZIP code and urban/rural characteristics."
     },
     {
@@ -1039,7 +1039,7 @@ const AICaseStudies = [
         "Product segmentation",
         "Demographic segmentation"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Behavioural segmentation considers purchasing habits, spending habits, status and brand interactions."
     },
     {
@@ -1051,7 +1051,7 @@ const AICaseStudies = [
         "Unlimited size",
         "Non-responsiveness"
       ],
-      answer: 1,
+      answer: 0,
       reason: "A segment should be homogeneous internally in terms of its relevant characteristics."
     },
     {
@@ -1063,7 +1063,7 @@ const AICaseStudies = [
         "Because responsiveness eliminates the need for targeting",
         "Because every segment must have the same profitability"
       ],
-      answer: 1,
+      answer: 0,
       reason: "A segment must be responsive, meaning it should react to marketing offerings, so that specific marketing efforts can be meaningfully directed toward it."
     }]
   },
@@ -1090,7 +1090,7 @@ const AICaseStudies = [
         "Revenue Streams",
         "Channels only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Key Resources describe the most important assets required for the business model, including man, material, machine, method and money."
     },
     {
@@ -1102,7 +1102,7 @@ const AICaseStudies = [
         "Revenue Streams",
         "Customer Segments"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Key Activities describe the most important things a business must do to deliver its value proposition and operate its business model."
     },
     {
@@ -1114,7 +1114,7 @@ const AICaseStudies = [
         "Value Proposition",
         "Cost Drivers only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Key Partners include suppliers and channel partners who make the business model work."
     },
     {
@@ -1126,7 +1126,7 @@ const AICaseStudies = [
         "Value Proposition",
         "Channel"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Cost Structure includes the expenses required to operate the business, perform activities, host partners and own resources."
     },
     {
@@ -1138,7 +1138,7 @@ const AICaseStudies = [
         "Deals only with accounting records",
         "Eliminates the need for strategic analysis"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The Business Model Canvas connects cost-related elements such as key partners, activities, resources and cost structure with revenue-related elements through the value proposition."
     }]
   },
@@ -1167,7 +1167,7 @@ const AICaseStudies = [
         "Customers never value convenience",
         "A business should always minimise technology expenditure"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The Value Proposition should be oriented to customers' needs and problems rather than merely reflecting what the business is capable of producing."
     },
     {
@@ -1179,7 +1179,7 @@ const AICaseStudies = [
         "Gain Creator",
         "Cost Structure"
       ],
-      answer: 1,
+      answer: 0,
       reason: "A Customer Job is an important issue, task or need that customers are trying to solve or complete."
     },
     {
@@ -1191,7 +1191,7 @@ const AICaseStudies = [
         "Key Activity",
         "Revenue Stream"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Pains include negative situations, emotions, risks and other aspects that annoy customers before, during or after getting a job done."
     },
     {
@@ -1203,7 +1203,7 @@ const AICaseStudies = [
         "Key Resources",
         "Channels"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Pain Relievers explain how products and services alleviate specific customer pains."
     },
     {
@@ -1215,7 +1215,7 @@ const AICaseStudies = [
         "Cost leadership automatically",
         "A core competency automatically"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Problem-solution fit occurs when the value proposition map matches the customer segment profile. Product-market fit requires market validation and traction with real customers."
     }]
   },
@@ -1249,7 +1249,7 @@ const AICaseStudies = [
         "Revenue streams",
         "Executional cost drivers"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Economies of scale and capital requirements are important sources of barriers to entry."
     },
     {
@@ -1261,7 +1261,7 @@ const AICaseStudies = [
         "Low rivalry",
         "High exit barriers only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Low switching costs and concentrated buyers purchasing significant volumes can increase bargaining power."
     },
     {
@@ -1273,7 +1273,7 @@ const AICaseStudies = [
         "Lower threat of substitutes",
         "Lower rivalry"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Supplier power is stronger where suppliers are concentrated and buyers have limited alternatives."
     },
     {
@@ -1285,7 +1285,7 @@ const AICaseStudies = [
         "Key partners",
         "Support activities"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Substitutes are alternative products or services that satisfy the underlying customer need and may come from another industry or segment."
     },
     {
@@ -1297,7 +1297,7 @@ const AICaseStudies = [
         "Only suppliers determine profitability",
         "Only customer segmentation determines profitability"
       ],
-      answer: 1,
+      answer: 0,
       reason: "All five competitive forces jointly determine industry competition and profitability. A strong force such as buyers, suppliers, substitutes or rivalry can limit returns despite high entry barriers."
     }]
   },
@@ -1326,7 +1326,7 @@ const AICaseStudies = [
         "It is necessarily owned by suppliers",
         "It represents a financial liability"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Core competencies can arise from resources and capabilities. Capabilities refer to the ability to coordinate resources and make optimal use of them."
     },
     {
@@ -1338,7 +1338,7 @@ const AICaseStudies = [
         "Cost allocation",
         "Supplier concentration"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The relevance test requires that the competence give customers something that strongly influences their choice."
     },
     {
@@ -1350,7 +1350,7 @@ const AICaseStudies = [
         "Revenue stream",
         "Customer relationship"
       ],
-      answer: 1,
+      answer: 0,
       reason: "A core competence should be difficult to imitate, enabling the organisation to sustain its competitive position."
     },
     {
@@ -1362,7 +1362,7 @@ const AICaseStudies = [
         "Cost leadership",
         "Customer pain"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Breadth of application requires the competence to open up a good number of potential markets."
     },
     {
@@ -1374,7 +1374,7 @@ const AICaseStudies = [
         "Using competencies to reconfigure existing value chains",
         "Automatically eliminating all existing value chains"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Core competencies can be validated in the current business, leveraged in other segments, used to reconfigure existing value chains, or used to create new value chains."
     }]
   },
@@ -1408,7 +1408,7 @@ const AICaseStudies = [
         "Key Partners",
         "Cost Structure"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Customer Segments identify the customers of the business and the reasons they buy from it."
     },
     {
@@ -1420,7 +1420,7 @@ const AICaseStudies = [
         "Key Activity",
         "Revenue Stream"
       ],
-      answer: 1,
+      answer: 0,
       reason: "A customer pain is anything that annoys the customer or creates an unwanted situation, cost, negative emotion or risk."
     },
     {
@@ -1432,7 +1432,7 @@ const AICaseStudies = [
         "A value proposition",
         "A key partner"
       ],
-      answer: 1,
+      answer: 0,
       reason: "A cost driver is an activity unit that causes costs to be incurred. Greater frequency of the relevant activity can result in higher cost."
     },
     {
@@ -1444,7 +1444,7 @@ const AICaseStudies = [
         "All support costs are structural cost drivers",
         "Cost reduction always reduces profitability"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Strategic Cost Management requires costs to be aligned with strategy. Reducing an activity that customers value can weaken the firm's strategic position."
     },
     {
@@ -1456,7 +1456,7 @@ const AICaseStudies = [
         "Increase every cost driver",
         "Remove customer segmentation"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Strategic Cost Management aims to reduce costs while maintaining or improving customer value and strategic position. Redesigning processes can reduce avoidable support costs without blindly cutting valuable service."
     }]
   },
@@ -1490,7 +1490,7 @@ const AICaseStudies = [
         "Less important than marketing costs in every situation",
         "Unrelated to cost leadership"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Under cost leadership, the role of standard performance costs in assessing performance is very important."
     },
     {
@@ -1502,7 +1502,7 @@ const AICaseStudies = [
         "Only competitor cost analysis",
         "Only production volume"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Marketing cost analysis is critical to success under product differentiation because customer perception and value creation are important."
     },
     {
@@ -1514,7 +1514,7 @@ const AICaseStudies = [
         "Relevant only to service firms",
         "Prohibited"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Competitor cost analysis is highly important under cost leadership because the firm seeks to compete through lower cost."
     },
     {
@@ -1526,7 +1526,7 @@ const AICaseStudies = [
         "Differentiation and cost leadership are identical strategies",
         "Cost information has no strategic relevance"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Strategic emphasis differs between product differentiation and cost leadership. The relevance of standard costs, flexible budgets, marketing cost analysis and competitor cost analysis varies with the strategy."
     },
     {
@@ -1538,7 +1538,7 @@ const AICaseStudies = [
         "Customer value is unrelated to differentiation",
         "After-sales service is never part of the value chain"
       ],
-      answer: 1,
+      answer: 0,
       reason: "After-sales service is a primary value-chain activity and can be a source of differentiation. Cutting it solely for short-term cost reduction may weaken customer value and strategic position."
     }]
   },
@@ -1573,7 +1573,7 @@ const AICaseStudies = [
         "Inbound logistics",
         "Exit barrier creation"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Customer data warehousing and mining involves collecting and storing large volumes of customer information and extracting relevant data for direct and targeted marketing."
     },
     {
@@ -1585,7 +1585,7 @@ const AICaseStudies = [
         "Create barriers to physical production",
         "Eliminate substitutes"
       ],
-      answer: 1,
+      answer: 0,
       reason: "IT can be used to retain customers through rewards, loyalty bonuses, cashback and premium status."
     },
     {
@@ -1597,7 +1597,7 @@ const AICaseStudies = [
         "Lower buyer bargaining power",
         "Higher exit barriers"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Buyer bargaining power is high where switching suppliers is easy or switching costs are low."
     },
     {
@@ -1609,7 +1609,7 @@ const AICaseStudies = [
         "Increasing threat of new entrants",
         "Increasing threat of substitutes"
       ],
-      answer: 1,
+      answer: 0,
       reason: "IT can be used to lock customers by increasing switching costs or creating compatibility and loyalty arrangements that make customers less willing to change suppliers."
     },
     {
@@ -1621,7 +1621,7 @@ const AICaseStudies = [
         "Customer loyalty programmes increase buyer power in every case",
         "IT can counter only the threat of new entrants"
       ],
-      answer: 1,
+      answer: 0,
       reason: "IT can counter buyer bargaining power through improved customer service, customer data warehousing and mining, targeted marketing, and mechanisms that retain or lock customers."
     }]
   },
@@ -1659,7 +1659,7 @@ const AICaseStudies = [
         "Electronic tendering – Outbound Logistics",
         "Applicant tracking – Inbound Logistics"
       ],
-      answer: 1,
+      answer: 0,
       reason: "RFID can be used to track items throughout the supply chain and directly supports receiving, storing and handling of inputs in inbound logistics."
     },
     {
@@ -1671,7 +1671,7 @@ const AICaseStudies = [
         "Human Resource Management",
         "Procurement"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Outbound logistics includes storing, distributing and delivering finished goods. IT can be used for vehicle scheduling and automated warehousing."
     },
     {
@@ -1683,7 +1683,7 @@ const AICaseStudies = [
         "Inbound Logistics",
         "Firm Infrastructure"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Marketing and sales includes market research and marketing activities. Digital customer databases facilitate segmentation, analysis of customer habits and CRM."
     },
     {
@@ -1695,7 +1695,7 @@ const AICaseStudies = [
         "Human resource management",
         "Operations"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Human resource management is a secondary/support activity. Primary activities include inbound logistics, operations, outbound logistics, marketing and sales, and after-sales service."
     },
     {
@@ -1707,7 +1707,7 @@ const AICaseStudies = [
         "After-sales service",
         "Operations only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Procurement includes purchasing activities and techniques such as EDI for exchanging information with vendors for auto-supply and e-procurement/e-tendering."
     }]
   },
@@ -1735,7 +1735,7 @@ const AICaseStudies = [
         "Cost driver analysis",
         "Customer profiling"
       ],
-      answer: 1,
+      answer: 0,
       reason: "MBWA involves managers wandering around the workplace in an unstructured manner to interact with employees, equipment and ongoing work."
     },
     {
@@ -1747,7 +1747,7 @@ const AICaseStudies = [
         "Capital budgeting only",
         "Procurement"
       ],
-      answer: 1,
+      answer: 0,
       reason: "MBWA supports informal but effective communication, employee interaction, morale and TQM."
     },
     {
@@ -1759,7 +1759,7 @@ const AICaseStudies = [
         "Customer lock-in",
         "Supplier integration"
       ],
-      answer: 1,
+      answer: 0,
       reason: "A rational decision is objective, fully informed, conscious, explicit, deliberate, consistent, logical and directed toward end goals."
     },
     {
@@ -1771,7 +1771,7 @@ const AICaseStudies = [
         "Testing forecasts",
         "Considering alternative solutions"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The material identifies readily agreeing with a leader's proposal, superficial understanding of facts, forecasting errors and pre-notions as possible causes of irrational decisions."
     },
     {
@@ -1783,7 +1783,7 @@ const AICaseStudies = [
         "Two-way communication eliminates the need for strategy",
         "Communication should always be one-directional"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Communication is more than sending a message. Feedback creates dialogue and helps management understand resistance and the nature of that resistance."
     }]
   },
@@ -1818,7 +1818,7 @@ const AICaseStudies = [
         "Supplier bargaining analysis",
         "Market segmentation"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Lifecycle cost considers costs over the entire life of a project/product, including relevant costs such as site cleaning at the end of a project."
     },
     {
@@ -1830,7 +1830,7 @@ const AICaseStudies = [
         "Triple bottom line",
         "Lifecycle management"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The material explains that an overriding focus on efficiency and profit can create ethical issues such as environmental damage and unequal distribution of income."
     },
     {
@@ -1842,7 +1842,7 @@ const AICaseStudies = [
         "Value Chain",
         "Business Model Canvas"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The management accountant may use the Triple Bottom Line as a framework for performance evaluation, considering economic, social and environmental dimensions."
     },
     {
@@ -1854,7 +1854,7 @@ const AICaseStudies = [
         "Business ethics requires maximisation of profit regardless of consequences",
         "Business ethics applies only to external regulators"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Business ethics is a form of applied or professional ethics examining ethical principles and moral problems arising in a business environment and applies to individuals and organisations."
     },
     {
@@ -1866,7 +1866,7 @@ const AICaseStudies = [
         "Only government authorities should consider environmental effects",
         "Shareholder wealth must always override stakeholder considerations"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The socio-economic approach recognises that sustainable organisations need to balance economic motives with the social costs of their actions and consider stakeholders."
     }]
   },
@@ -1905,7 +1905,7 @@ const AICaseStudies = [
         "Information Technology only",
         "Business ethics"
       ],
-      answer: 1,
+      answer: 0,
       reason: "An Information System is a collection of multiple information resources used to gather, process, store and disseminate information."
     },
     {
@@ -1917,7 +1917,7 @@ const AICaseStudies = [
         "IS strategy",
         "Marketing strategy"
       ],
-      answer: 1,
+      answer: 0,
       reason: "IM strategy defines the role and structure of IT activities and deals with management controls, responsibilities, performance measurement and management processes."
     },
     {
@@ -1929,7 +1929,7 @@ const AICaseStudies = [
         "Buyer bargaining power",
         "Exit barriers"
       ],
-      answer: 1,
+      answer: 0,
       reason: "IT can reduce supplier bargaining power by helping organisations identify new suppliers, compare prices and use e-procurement or tendering systems."
     },
     {
@@ -1941,7 +1941,7 @@ const AICaseStudies = [
         "Procurement and HR",
         "After-sales service and marketing only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "RFID can track items throughout the supply chain and therefore positively influence both inbound and outbound logistics."
     },
     {
@@ -1953,7 +1953,7 @@ const AICaseStudies = [
         "Exit barriers and HR",
         "Operations and procurement only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Customer data warehousing and mining can be used for targeted marketing and can help counter buyer bargaining power by improving customer service and understanding customer preferences."
     }]
   },
@@ -1985,7 +1985,7 @@ const AICaseStudies = [
         "Information Technology strategy",
         "Strategic positioning"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Information Systems are collections of multiple information resources used to gather, process, store and disseminate information."
     },
     {
@@ -1997,7 +1997,7 @@ const AICaseStudies = [
         "IM strategy",
         "Marketing strategy"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Information Management concerns acquisition, custodianship and distribution of information and includes management controls, responsibilities and decisions regarding who can access data."
     },
     {
@@ -2009,7 +2009,7 @@ const AICaseStudies = [
         "Customer segmentation",
         "Value proposition"
       ],
-      answer: 1,
+      answer: 0,
       reason: "IT strategy is a comprehensive plan outlining how technology should be used to meet IT and business goals and decides the layout of IT use cases in the organisation."
     },
     {
@@ -2021,7 +2021,7 @@ const AICaseStudies = [
         "IS – Where; IT – What; IM – How",
         "IS – How; IT – What; IM – Where"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Under Michael J. Earl's framework, IS strategy resolves 'What', IT strategy resolves 'How', and IM strategy resolves 'Where'."
     },
     {
@@ -2033,7 +2033,7 @@ const AICaseStudies = [
         "IM strategy",
         "Value chain strategy"
       ],
-      answer: 3,
+      answer: 2,
       reason: "IM strategy is formulated at organisation-wide level and deals with control over the layout of IT uses, management responsibilities, performance measurement and management processes."
     }]
   },
@@ -2060,7 +2060,7 @@ const AICaseStudies = [
         "Buyer bargaining power",
         "A customer gain"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Capital requirements and access to distribution channels can operate as barriers to entry."
     },
     {
@@ -2072,7 +2072,7 @@ const AICaseStudies = [
         "Increase buyer bargaining power",
         "Create substitutes"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Sophisticated IT applications can be expensive, technically challenging and time-consuming to develop or imitate, thereby creating barriers to entry."
     },
     {
@@ -2084,7 +2084,7 @@ const AICaseStudies = [
         "IT eliminates rivalry",
         "IT eliminates substitutes"
       ],
-      answer: 1,
+      answer: 0,
       reason: "IT can be used by new entrants as a weapon to bypass traditional barriers. Internet and mobile banking can reduce the need for extensive physical branch networks."
     },
     {
@@ -2096,7 +2096,7 @@ const AICaseStudies = [
         "IT is relevant only to internal activities",
         "IT has no strategic relevance"
       ],
-      answer: 2,
+      answer: 1,
       reason: "The material specifically explains two possible roles of IT in relation to new entrants: creating barriers for existing players and breaking down barriers for new entrants."
     },
     {
@@ -2108,7 +2108,7 @@ const AICaseStudies = [
         "Buyer information",
         "Exit barriers"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Traditional branch networks can act as distribution channels. Digital channels may allow new entrants to bypass this traditional barrier."
     }]
   },
@@ -2135,7 +2135,7 @@ const AICaseStudies = [
         "Eliminate supplier power",
         "Increase buyer switching costs only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Supplier concentration and a limited number of suppliers can increase suppliers' bargaining power."
     },
     {
@@ -2147,7 +2147,7 @@ const AICaseStudies = [
         "Prevent customer segmentation",
         "Increase exit barriers"
       ],
-      answer: 1,
+      answer: 0,
       reason: "E-procurement and tendering can help identify new suppliers, compare prices and prevent supplier cartelisation."
     },
     {
@@ -2159,7 +2159,7 @@ const AICaseStudies = [
         "Increase supplier uniqueness",
         "Create customer lock-in"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Commercial databases can help organisations identify potential suppliers and compare prices from a number of suppliers."
     },
     {
@@ -2171,7 +2171,7 @@ const AICaseStudies = [
         "Threat of substitutes",
         "Market penetration"
       ],
-      answer: 1,
+      answer: 0,
       reason: "IT is intensively used to make the concept of an integrated supply chain a reality, including extending ERP access to vendors."
     },
     {
@@ -2183,7 +2183,7 @@ const AICaseStudies = [
         "Technology cannot influence supplier power",
         "Supplier bargaining power is unrelated to information"
       ],
-      answer: 1,
+      answer: 0,
       reason: "IT/IS can influence supplier bargaining power by helping identify suppliers, compare prices, facilitate e-procurement and integrate suppliers into the wider supply chain."
     }]
   },
@@ -2218,7 +2218,7 @@ const AICaseStudies = [
         "After-sales service",
         "Human resource management"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Inbound logistics deals with receiving, storing and handling raw materials and other inputs. RFID can automate identification and tracking of items."
     },
     {
@@ -2230,7 +2230,7 @@ const AICaseStudies = [
         "Procurement",
         "Technology development only"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Outbound logistics covers storing, distributing and delivering finished goods to customers. RFID can support tracking throughout this process."
     },
     {
@@ -2242,7 +2242,7 @@ const AICaseStudies = [
         "CRM and RFID only",
         "EDI and CAD"
       ],
-      answer: 1,
+      answer: 0,
       reason: "MRP and ERP can be used for resource planning, while JIT can be used for stock control."
     },
     {
@@ -2254,7 +2254,7 @@ const AICaseStudies = [
         "After-sales service",
         "Outbound logistics"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Operations include transformation of raw materials into finished goods. CAD assists design and CAM assists material, capacity and production control."
     },
     {
@@ -2266,7 +2266,7 @@ const AICaseStudies = [
         "All IT applications affect only procurement",
         "All IT applications affect only operations"
       ],
-      answer: 1,
+      answer: 0,
       reason: "IT/IS can affect every value-chain activity differently. RFID can improve logistics, while CAD/CAM directly support operations."
     }]
   },
@@ -2293,7 +2293,7 @@ const AICaseStudies = [
         "Procurement",
         "Information disposal"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Analysis involves using financial and non-financial information to uncover the meaning of numbers and offer new insights and vision."
     },
     {
@@ -2305,7 +2305,7 @@ const AICaseStudies = [
         "Procurement",
         "Customer segmentation"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Management accountants use forecasting and budgeting skills to assist senior leaders in making business and financial decisions and developing long-term plans."
     },
     {
@@ -2317,7 +2317,7 @@ const AICaseStudies = [
         "Inbound logistics",
         "Market segmentation"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Innovation involves the management accountant acting as an initiator or change advocate for technological innovation."
     },
     {
@@ -2329,7 +2329,7 @@ const AICaseStudies = [
         "Procurement",
         "Customer profiling"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Leadership involves moving from planning to execution, including decision-making and communication across departments."
     },
     {
@@ -2341,7 +2341,7 @@ const AICaseStudies = [
         "The management accountant's role is restricted to financial reporting",
         "The management accountant should avoid participation in strategic decisions"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The modern management accountant operates at the crossroads of technology, financial analysis, strategy and leadership rather than merely reporting financial figures."
     }]
   },
@@ -2372,7 +2372,7 @@ const AICaseStudies = [
         "Determining procedures for deletion of obsolete information only",
         "Determining the technical specifications of computers used by employees"
       ],
-      answer: 1,
+      answer: 0,
       reason: "IS strategy is business-driven and focuses on what information systems are required to support business needs."
     },
     {
@@ -2384,7 +2384,7 @@ const AICaseStudies = [
         "Information Systems strategy",
         "Value Proposition strategy"
       ],
-      answer: 2,
+      answer: 1,
       reason: "IT strategy is technology-focused and concerned with how technology will be used to achieve IT and business objectives."
     },
     {
@@ -2396,7 +2396,7 @@ const AICaseStudies = [
         "Information Management",
         "Inbound logistics"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Information Management deals with acquisition, custodianship, distribution and disposal/archiving of information together with responsibilities and access controls."
     },
     {
@@ -2408,7 +2408,7 @@ const AICaseStudies = [
         "IS – Where; IT – What; IM – How",
         "IS – How; IT – What; IM – Where"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Michael J. Earl's framework associates IS with What, IT with How and IM with Where."
     },
     {
@@ -2420,7 +2420,7 @@ const AICaseStudies = [
         "Supplier bargaining power will necessarily become zero",
         "The company's fixed costs will automatically disappear"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Technology investment must be aligned with business requirements; otherwise significant IT expenditure may not generate strategic advantage."
     }]
   },
@@ -2452,7 +2452,7 @@ const AICaseStudies = [
         "After-sales service",
         "Human resource management"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Inbound logistics covers receiving, storing and handling inputs/raw materials."
     },
     {
@@ -2464,7 +2464,7 @@ const AICaseStudies = [
         "Procurement",
         "Firm infrastructure"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Operations involve transforming inputs into finished products, and CAM supports production and capacity control."
     },
     {
@@ -2476,7 +2476,7 @@ const AICaseStudies = [
         "Outbound logistics",
         "Technology development"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Outbound logistics includes storing, distributing and delivering finished goods."
     },
     {
@@ -2488,7 +2488,7 @@ const AICaseStudies = [
         "Technology can only affect secondary activities",
         "RFID can only be classified as procurement"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The classification depends upon the business activity being supported, not merely the technology being used."
     },
     {
@@ -2500,7 +2500,7 @@ const AICaseStudies = [
         "Human resource management",
         "Customer relationship management"
       ],
-      answer: 1,
+      answer: 0,
       reason: "When RFID is used for finished-goods storage and dispatch, it supports outbound logistics."
     }]
   },
@@ -2527,7 +2527,7 @@ const AICaseStudies = [
         "Bookkeeping",
         "External auditing"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Modern management accountants analyse both financial and non-financial information to generate insights."
     },
     {
@@ -2539,7 +2539,7 @@ const AICaseStudies = [
         "After-sales service",
         "Inbound logistics"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Planning involves forecasting, budgeting and supporting business and financial decisions."
     },
     {
@@ -2551,7 +2551,7 @@ const AICaseStudies = [
         "Supplier bargaining power",
         "Customer segmentation"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The modern management accountant can act as an initiator and advocate of technological innovation."
     },
     {
@@ -2563,7 +2563,7 @@ const AICaseStudies = [
         "Structural cost management",
         "Product differentiation"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Communication is a key leadership dimension and involves two-way exchange, including feedback and listening."
     },
     {
@@ -2575,7 +2575,7 @@ const AICaseStudies = [
         "Because management accountants should never prepare budgets",
         "Because automation is always profitable"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Strategic analysis requires broader information, including non-financial factors and expected future consequences."
     }]
   },
@@ -2601,7 +2601,7 @@ const AICaseStudies = [
         "Written communication is always ineffective",
         "Employees should never receive formal communication"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Communication is a two-way process. Feedback helps determine whether the message was understood and reveals resistance or concerns."
     },
     {
@@ -2613,7 +2613,7 @@ const AICaseStudies = [
         "Value engineering",
         "Activity-based costing"
       ],
-      answer: 1,
+      answer: 0,
       reason: "MBWA involves managers moving around the workplace in an unstructured or random manner to observe and interact with employees."
     },
     {
@@ -2625,7 +2625,7 @@ const AICaseStudies = [
         "Informal communication automatically replaces all formal systems",
         "Employees are never included in formal reports"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Direct informal interaction can reveal operational issues and employee concerns that may not appear in formal reporting systems."
     },
     {
@@ -2637,7 +2637,7 @@ const AICaseStudies = [
         "Stopping communication until employees accept the change",
         "Allowing only senior managers to discuss the system"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Two-way communication, listening and feedback help reduce resistance during organisational change."
     },
     {
@@ -2649,7 +2649,7 @@ const AICaseStudies = [
         "Supplier concentration",
         "Product differentiation"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Effective communication requires active listening and an attempt to understand the receiver's concerns."
     }]
   },
@@ -2680,7 +2680,7 @@ const AICaseStudies = [
         "Supplier concentration",
         "Market penetration"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Lifecycle costing considers costs throughout the life of a project/product, including relevant end-of-life costs."
     },
     {
@@ -2692,7 +2692,7 @@ const AICaseStudies = [
         "Cost-plus pricing",
         "Inbound logistics"
       ],
-      answer: 2,
+      answer: 1,
       reason: "The socio-economic approach considers economic objectives together with social costs and stakeholder interests."
     },
     {
@@ -2704,7 +2704,7 @@ const AICaseStudies = [
         "Profit, productivity and purchasing",
         "People, procurement and patents"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Triple bottom line evaluates performance across economic, social and environmental dimensions."
     },
     {
@@ -2716,7 +2716,7 @@ const AICaseStudies = [
         "Lifecycle costs become irrelevant",
         "The company can no longer prepare budgets"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Excessive focus on financial efficiency can overlook social and environmental consequences."
     },
     {
@@ -2728,7 +2728,7 @@ const AICaseStudies = [
         "To approve the project independently of the board",
         "To focus only on reducing current-year expenditure"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Modern management accountants contribute broader analysis and should incorporate ethical and relevant non-financial considerations."
     }]
   },
@@ -2760,7 +2760,7 @@ const AICaseStudies = [
         "Technology can increase or decrease barriers depending on how it changes infrastructure requirements and competitive capabilities",
         "Technology has no relationship with entry barriers"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Sophisticated technology can create technical and capital barriers, while digital channels can simultaneously reduce the need for traditional infrastructure."
     },
     {
@@ -2772,7 +2772,7 @@ const AICaseStudies = [
         "Guarantee that no substitute will ever arise",
         "Eliminate supplier bargaining power"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Capital requirements and technically challenging applications can act as barriers to new entrants."
     },
     {
@@ -2784,7 +2784,7 @@ const AICaseStudies = [
         "Banks must use physical branches to compete",
         "Digital channels eliminate competition"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Internet and mobile technologies can reduce the need for extensive physical distribution networks."
     },
     {
@@ -2796,7 +2796,7 @@ const AICaseStudies = [
         "A complete measure of technology barriers",
         "A measure of customer switching costs only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The digital environment changes the nature of entry barriers, so physical infrastructure alone cannot adequately assess the threat."
     },
     {
@@ -2808,7 +2808,7 @@ const AICaseStudies = [
         "Threat of new entrants",
         "Bargaining power of buyers"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The central strategic issue is whether technology makes it easier or harder for new competitors to enter the banking industry."
     }]
   },
@@ -2839,7 +2839,7 @@ const AICaseStudies = [
         "Reducing the number of supplier quotations",
         "Eliminating supplier performance records"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Commercial databases and price comparisons provide procurement managers with better market information."
     },
     {
@@ -2851,7 +2851,7 @@ const AICaseStudies = [
         "Because electronic procurement prevents negotiation",
         "Because supplier power depends only on the number of employees"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Supplier uniqueness, lack of substitutes and switching costs are important determinants of supplier bargaining power."
     },
     {
@@ -2863,7 +2863,7 @@ const AICaseStudies = [
         "Customer loyalty",
         "Economies of scope"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Forward integration occurs when a supplier moves toward activities performed by its customers."
     },
     {
@@ -2875,7 +2875,7 @@ const AICaseStudies = [
         "After-sales service only",
         "Firm infrastructure only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "EDI/electronic integration with suppliers can support procurement and improve supply-chain coordination."
     },
     {
@@ -2887,7 +2887,7 @@ const AICaseStudies = [
         "It makes all suppliers interchangeable",
         "It guarantees that supplier prices will always fall"
       ],
-      answer: 2,
+      answer: 1,
       reason: "IT can strengthen procurement and negotiation capabilities, but structural factors such as uniqueness, substitutes and switching costs may continue to create supplier power."
     }]
   },
@@ -2920,7 +2920,7 @@ const AICaseStudies = [
         "Students' difficulty in identifying weak areas",
         "Performance analytics introduced by the company"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Customer Profile contains jobs, pains and gains. Difficulty in identifying weak areas is a customer pain."
     },
     {
@@ -2932,7 +2932,7 @@ const AICaseStudies = [
         "Customer gain",
         "Customer segment"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Pain relievers are business-side elements designed to reduce or remove customer pains."
     },
     {
@@ -2944,7 +2944,7 @@ const AICaseStudies = [
         "A product/service",
         "A key resource"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Desired benefits and outcomes from the customer's perspective are gains."
     },
     {
@@ -2956,7 +2956,7 @@ const AICaseStudies = [
         "Backward integration",
         "Cost leadership"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Problem-solution fit exists when the Value Map corresponds with the Customer Profile."
     },
     {
@@ -2968,7 +2968,7 @@ const AICaseStudies = [
         "Because a value proposition can never contain services",
         "Because product-market fit occurs before identifying customer needs"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Product-market fit is reached after the market validates the offering and meaningful traction is achieved."
     }]
   },
@@ -3002,7 +3002,7 @@ const AICaseStudies = [
         "Customer gain",
         "Resource driver only"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Scale, scope, experience, technology and complexity are structural cost-driver factors."
     },
     {
@@ -3014,7 +3014,7 @@ const AICaseStudies = [
         "Customer pains",
         "Revenue drivers"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Plant layout and supplier/customer linkages are examples of executional cost drivers."
     },
     {
@@ -3026,7 +3026,7 @@ const AICaseStudies = [
         "Number of different product lines",
         "Electricity consumed by a machine per hour"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Number of setups is a batch-level driver because setup activities are generally incurred for batches rather than individual units."
     },
     {
@@ -3038,7 +3038,7 @@ const AICaseStudies = [
         "Number of engineering change orders",
         "Kilowatt-hours consumed"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Engineering change orders are identified as product-level operational cost drivers."
     },
     {
@@ -3050,7 +3050,7 @@ const AICaseStudies = [
         "Management should identify the underlying structural, executional and operational drivers before deciding how costs should be managed",
         "Only unit-level costs are strategically relevant"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Strategic cost management requires understanding why costs arise through appropriate cost-driver analysis rather than merely cutting individual expenditures."
     }]
   },
@@ -3086,7 +3086,7 @@ const AICaseStudies = [
         "Eliminating competitive rivalry",
         "Creating a monopoly"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Trying to pursue conflicting strategic positions without a clear basis of competition can result in being 'stuck in the middle'."
     },
     {
@@ -3098,7 +3098,7 @@ const AICaseStudies = [
         "Eliminate all differentiation activities",
         "Ignore customer preferences"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Value-chain analysis identifies value-added and non-value-added activities so that NVA activities can be reduced/eliminated and resources focused on value creation."
     },
     {
@@ -3110,7 +3110,7 @@ const AICaseStudies = [
         "Cost Structure",
         "Key Resources"
       ],
-      answer: 2,
+      answer: 1,
       reason: "The Customer Profile contains customer jobs, pains and gains."
     },
     {
@@ -3122,7 +3122,7 @@ const AICaseStudies = [
         "Supplier analysis",
         "PESTEL analysis"
       ],
-      answer: 2,
+      answer: 1,
       reason: "The Value Map consists of products/services, pain relievers and gain creators."
     },
     {
@@ -3134,7 +3134,7 @@ const AICaseStudies = [
         "Because customer segments determine all internal activities automatically",
         "Because a company can never change its business model"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The business model explains how the business works and includes the value proposition together with key resources, processes/activities, partners and the profit/cost logic needed to deliver it."
     }]
   },
@@ -3161,7 +3161,7 @@ const AICaseStudies = [
         "Pull system to push system",
         "Downstream to upstream management"
       ],
-      answer: 2,
+      answer: 1,
       reason: "The modern business environment is characterised by a transition from a seller’s market to a buyer’s market."
     },
     {
@@ -3173,7 +3173,7 @@ const AICaseStudies = [
         "The company determines delivery schedules without considering customers",
         "Prices are always based on cost plus margin"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Global competition, availability of information and greater customer choice strengthen the buyer’s position."
     },
     {
@@ -3185,7 +3185,7 @@ const AICaseStudies = [
         "Internal failure cost",
         "External failure cost"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Training undertaken to prevent quality problems is a prevention cost."
     },
     {
@@ -3197,7 +3197,7 @@ const AICaseStudies = [
         "Internal failure cost",
         "External failure cost"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Inspection and testing to determine conformity with quality requirements are appraisal costs."
     },
     {
@@ -3209,7 +3209,7 @@ const AICaseStudies = [
         "Inspection is always an external failure cost",
         "Inspection automatically creates customer loyalty"
       ],
-      answer: 2,
+      answer: 1,
       reason: "A stronger quality approach focuses on prevention and continuous improvement rather than merely detecting defects after they occur."
     }]
   },
@@ -3241,7 +3241,7 @@ const AICaseStudies = [
         "Internal failure cost",
         "External failure cost"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Quality training is undertaken to prevent quality problems and is therefore a prevention cost."
     },
     {
@@ -3253,7 +3253,7 @@ const AICaseStudies = [
         "Internal failure",
         "External failure"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Inspection and evaluation of materials for conformity are appraisal activities."
     },
     {
@@ -3265,7 +3265,7 @@ const AICaseStudies = [
         "Internal failure cost",
         "External failure cost"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Defects discovered and remedied before delivery to customers constitute internal failure costs."
     },
     {
@@ -3277,7 +3277,7 @@ const AICaseStudies = [
         "Internal failure cost",
         "External failure cost"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Warranty costs arising from defects discovered after delivery are external failure costs."
     },
     {
@@ -3289,7 +3289,7 @@ const AICaseStudies = [
         "Training itself is an external failure cost",
         "Failure costs cannot be measured"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Investment in prevention and appraisal can reduce internal and external failure costs."
     }]
   },
@@ -3315,7 +3315,7 @@ const AICaseStudies = [
         "Push supply chain management",
         "Offshoring"
       ],
-      answer: 1,
+      answer: 0,
       reason: "TQM recognises the role of everyone in the organisation and requires total employee involvement."
     },
     {
@@ -3327,7 +3327,7 @@ const AICaseStudies = [
         "Customer focus",
         "Co-operation"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Commitment requires clear support from top management."
     },
     {
@@ -3339,7 +3339,7 @@ const AICaseStudies = [
         "Appraisal",
         "Downsizing"
       ],
-      answer: 1,
+      answer: 0,
       reason: "TQM requires cooperation and involvement of employees across functions."
     },
     {
@@ -3351,7 +3351,7 @@ const AICaseStudies = [
         "TQM applies only when quality is poor",
         "TQM is a one-time inspection programme"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Continuous improvement is a core principle of TQM."
     },
     {
@@ -3363,7 +3363,7 @@ const AICaseStudies = [
         "Offshore customers",
         "Financial creditors"
       ],
-      answer: 1,
+      answer: 0,
       reason: "TQM's customer focus includes internal customers as well as external customers."
     }]
   },
@@ -3389,7 +3389,7 @@ const AICaseStudies = [
         "Returns management",
         "Gain sharing"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Production in anticipation of forecasted demand represents the push model."
     },
     {
@@ -3401,7 +3401,7 @@ const AICaseStudies = [
         "The company has no storage capacity",
         "Customers directly control every production decision"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Accurate forecasting, economies of scale, storage capacity and working capital support a push model."
     },
     {
@@ -3413,7 +3413,7 @@ const AICaseStudies = [
         "Single-supplier model",
         "Downsizing model"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Highly customised products based on actual customer requirements are more suitable for a pull model."
     },
     {
@@ -3425,7 +3425,7 @@ const AICaseStudies = [
         "No requirement for storage",
         "Complete elimination of working capital"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Push systems produce in anticipation of demand and therefore carry the risk of overstocking if actual demand differs from forecasts."
     },
     {
@@ -3437,7 +3437,7 @@ const AICaseStudies = [
         "Pull systems are always cheaper",
         "Push systems cannot be used by profitable companies"
       ],
-      answer: 2,
+      answer: 1,
       reason: "The appropriate supply-chain model depends upon demand characteristics, customisation, production economics and other circumstances."
     }]
   },
@@ -3463,7 +3463,7 @@ const AICaseStudies = [
         "Offshoring",
         "Gain sharing"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Downsizing involves reducing workforce to manage costs or survive economic difficulties."
     },
     {
@@ -3475,7 +3475,7 @@ const AICaseStudies = [
         "Offshoring only",
         "Pull supply chain"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Outsourcing is the transfer of non-core functions to an external third-party service provider."
     },
     {
@@ -3487,7 +3487,7 @@ const AICaseStudies = [
         "Downsizing",
         "Gain sharing"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Offshoring involves relocating business functions to another country; it does not necessarily involve transferring the function to an external party."
     },
     {
@@ -3499,7 +3499,7 @@ const AICaseStudies = [
         "Outsourcing involves transfer to an external organisation, while offshoring involves relocation to another country",
         "There is no difference between them"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Outsourcing concerns ownership/provider of the function, while offshoring concerns geographical relocation."
     },
     {
@@ -3511,7 +3511,7 @@ const AICaseStudies = [
         "Downsizing and offshoring are identical",
         "Outsourcing can never occur domestically"
       ],
-      answer: 1,
+      answer: 0,
       reason: "A business can offshore a function while continuing to perform it internally."
     }]
   },
@@ -3544,7 +3544,7 @@ const AICaseStudies = [
         "Prevention is an external failure cost and inspection is internal failure cost",
         "Both are external failure costs"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Prevention and appraisal are the two major conformance categories in the PAF model."
     },
     {
@@ -3556,7 +3556,7 @@ const AICaseStudies = [
         "Internal failure costs",
         "External failure costs"
       ],
-      answer: 3,
+      answer: 2,
       reason: "Defects discovered after delivery result in external failure costs."
     },
     {
@@ -3568,7 +3568,7 @@ const AICaseStudies = [
         "Customer loss is always an appraisal cost",
         "Lost market share cannot be associated with quality"
       ],
-      answer: 2,
+      answer: 1,
       reason: "The TQM view of COQ includes hidden consequences such as lost customers, market share and foregone opportunities."
     },
     {
@@ -3580,7 +3580,7 @@ const AICaseStudies = [
         "Failure costs always become zero before prevention costs increase",
         "Zero defects are impossible under TQM"
       ],
-      answer: 2,
+      answer: 1,
       reason: "There can be an optimum quality level where total quality costs are minimised; achieving zero defects may require very high conformance expenditure."
     },
     {
@@ -3592,7 +3592,7 @@ const AICaseStudies = [
         "Replace all prevention activities with inspection",
         "Increase external failure costs"
       ],
-      answer: 2,
+      answer: 1,
       reason: "TQM emphasises continuous improvement, waste elimination and doing things right the first time."
     }]
   },
@@ -3625,7 +3625,7 @@ const AICaseStudies = [
         "Returns management",
         "Gain sharing"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Push supply chains produce stock based on anticipated or forecast demand."
     },
     {
@@ -3637,7 +3637,7 @@ const AICaseStudies = [
         "Downsizing",
         "External failure"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Pull systems respond to actual customer demand rather than producing solely in anticipation of forecast demand."
     },
     {
@@ -3649,7 +3649,7 @@ const AICaseStudies = [
         "Returns Management",
         "Customer Service Management"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Supplier Relationship Management deals with developing and maintaining supplier relationships and evaluating supplier capabilities."
     },
     {
@@ -3661,7 +3661,7 @@ const AICaseStudies = [
         "Supplier Relationship Management",
         "Production forecasting only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Customer Account Profitability measures profitability at the customer level by considering costs associated with serving individual customers."
     },
     {
@@ -3673,7 +3673,7 @@ const AICaseStudies = [
         "Pull systems cannot use electronic connections",
         "Pull systems are based entirely on inaccurate forecasts"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Pull systems can reduce inventory and improve responsiveness but do not eliminate all supply-chain risks."
     }]
   },
@@ -3707,7 +3707,7 @@ const AICaseStudies = [
         "Customer-level costs are irrelevant",
         "Only manufacturing costs matter in a service business"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Customer profitability requires consideration of the costs incurred to serve each customer, not merely revenue."
     },
     {
@@ -3719,7 +3719,7 @@ const AICaseStudies = [
         "Supplier Relationship Management",
         "Market segmentation only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Customer Account Profitability measures profit at the customer level by considering relevant revenues and costs."
     },
     {
@@ -3731,7 +3731,7 @@ const AICaseStudies = [
         "ABC measures only total company profit",
         "ABC eliminates the need to calculate revenue"
       ],
-      answer: 1,
+      answer: 0,
       reason: "ABC can associate activities and their costs with customers, improving the accuracy of customer profitability analysis."
     },
     {
@@ -3743,7 +3743,7 @@ const AICaseStudies = [
         "Appraisal cost",
         "Supplier Relationship Management"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Customer Lifetime Value is the present value of projected future cash flows from the lifetime customer relationship."
     },
     {
@@ -3755,7 +3755,7 @@ const AICaseStudies = [
         "Acquire only customers with the highest current revenue",
         "Stop analysing customers once they have been acquired"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Customer profitability analysis helps the organisation determine which customers to retain, acquire more of, develop or potentially stop servicing."
     }]
   },
@@ -3788,7 +3788,7 @@ const AICaseStudies = [
         "Downsizing",
         "Traditional fixed-price purchase only"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Gain sharing adjusts contractual rewards so that benefits arising from successful performance are shared between parties."
     },
     {
@@ -3800,7 +3800,7 @@ const AICaseStudies = [
         "The provider cannot benefit from savings",
         "The provider has no involvement in improvement"
       ],
-      answer: 2,
+      answer: 1,
       reason: "In gain-sharing arrangements, supplier payment may depend on benefits achieved, creating risk for the supplier."
     },
     {
@@ -3812,7 +3812,7 @@ const AICaseStudies = [
         "Only the supplier's costs need to be known",
         "Only revenue is relevant"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Both parties need relevant cost information to establish the basis for assessing benefits and calculating the sharing arrangement."
     },
     {
@@ -3824,7 +3824,7 @@ const AICaseStudies = [
         "The supplier has employees",
         "The customer pays for services"
       ],
-      answer: 1,
+      answer: 0,
       reason: "The defining feature is alignment of payment with benefits generated through successful performance."
     },
     {
@@ -3836,7 +3836,7 @@ const AICaseStudies = [
         "Creates rewards for adversarial behaviour",
         "Removes the need for performance measurement"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Gain-sharing arrangements are intended to align interests and create a win-win relationship based on improvement benefits."
     }]
   },
@@ -3864,7 +3864,7 @@ const AICaseStudies = [
         "Maximising inspection",
         "Short-term reaction rather than long-term planning"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Deming emphasised continuous process improvement and criticised approaches that blame employees without improving the underlying system."
     },
     {
@@ -3876,7 +3876,7 @@ const AICaseStudies = [
         "Institute training",
         "Break down barriers between departments"
       ],
-      answer: 1,
+      answer: 0,
       reason: "Deming specifically advocated driving out fear because fear prevents employees from acting in the organisation's best interests."
     },
     {
@@ -3888,7 +3888,7 @@ const AICaseStudies = [
         "Six Markets model",
         "Customer profitability cycle"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Plan–Do–Check–Act is Deming's continuous improvement cycle."
     },
     {
@@ -3900,7 +3900,7 @@ const AICaseStudies = [
         "Only external failure control",
         "Only final product inspection"
       ],
-      answer: 2,
+      answer: 1,
       reason: "TQM integrates functions, employees and suppliers around continuous improvement and customer satisfaction."
     },
     {
@@ -3912,7 +3912,7 @@ const AICaseStudies = [
         "TQM eliminates the need for suppliers",
         "TQM is limited to manufacturing inspection"
       ],
-      answer: 2,
+      answer: 1,
       reason: "TQM is a comprehensive management philosophy involving commitment, culture, continuous improvement, cooperation, customer focus and control."
     }]
   },
@@ -5957,7 +5957,7 @@ const AICaseStudies = [
       question_id: "AI_c23_cs_001_3",
       question: "The removal of obsolete tools and broken equipment from the workplace most closely corresponds to which 5S activity?",
       options: ["Set in Order", "Shine", "Sort", "Sustain"],
-      answer: 2,
+      answer: 0,
       reason: "Sort involves identifying and removing items that are not required. Set in Order deals with arranging required items systematically, while Shine focuses on cleanliness and inspection."
     },
     {
@@ -7679,7 +7679,7 @@ const AICaseStudies = [
       question_id: "SCM_c04_cs_002_2",
       question: "What is the initial estimated cost per unit?",
       options: ["₹6,200", "₹6,400", "₹7,200", "₹8,000"],
-      answer: 2,
+      answer: 0,
       reason: "Initial cost = ₹3,200 + ₹1,100 + ₹1,400 + ₹500 = ₹6,200. Therefore, the correct answer is ₹6,200.",
       note: "The correct option is ₹6,200."
     },
@@ -8024,7 +8024,7 @@ const AICaseStudies = [
       question_id: "SCM_c04_cs_008_2",
       question: "Which product has the highest contribution per bottleneck minute based on the facts given?",
       options: ["Product A", "Product B", "Product C", "All three are equal"],
-      answer: 1,
+      answer: 0,
       reason: "A = ₹42/10 = ₹4.20 per minute; B = ₹45/12 = ₹3.75; C = ₹50/20 = ₹2.50. Therefore Product A actually has the highest throughput per bottleneck minute. The correct option is Product A.",
       note: "Correct answer: Product A."
     },
@@ -8351,7 +8351,7 @@ const AICaseStudies = [
         "₹1.20 crore",
         "₹1.40 crore"
       ],
-      answer: 2,
+      answer: 1,
       reason: "4,000 × ₹2,500 = ₹1 crore. Therefore the correct option is ₹1.00 crore, which is option 1."
     },
     {
@@ -8430,7 +8430,7 @@ const AICaseStudies = [
         "₹55",
         "₹60"
       ],
-      answer: 3,
+      answer: 1,
       reason: "₹450 ÷ 9 minutes = ₹50 per minute, so the correct option is ₹50, which is option 1. The listed answer index should be corrected."
     },
     {
@@ -8697,7 +8697,7 @@ const AICaseStudies = [
         "₹14.70 lakh",
         "₹15.00 lakh"
       ],
-      answer: 2,
+      answer: 1,
       reason: "₹4.20 + ₹3.10 + ₹2.00 + ₹1.60 + ₹1.40 + ₹1.30 + ₹0.90 = ₹14.50 lakh. Therefore the correct option is ₹14.50 lakh, option 1. The answer index should be corrected."
     },
     {
@@ -8709,7 +8709,7 @@ const AICaseStudies = [
         "₹0.25 lakh",
         "₹0.30 lakh"
       ],
-      answer: 0,
+      answer: 1,
       reason: "Gross saving = ₹1.20 − ₹0.95 = ₹0.25 lakh. Less additional testing cost ₹0.05 lakh gives net saving of ₹0.20 lakh. Correct option is option 1."
     },
     {
@@ -8721,7 +8721,7 @@ const AICaseStudies = [
         "₹0.310 lakh",
         "₹0.380 lakh"
       ],
-      answer: 0,
+      answer: 1,
       reason: "8% × ₹3.10 lakh = ₹0.248 lakh. Therefore option 1 is correct."
     },
     {
@@ -8831,7 +8831,7 @@ const AICaseStudies = [
         "480 minutes",
         "720 minutes"
       ],
-      answer: 3,
+      answer: 2,
       reason: "A requires 60 × 12 = 720 minutes. Available capacity = 1,200 minutes. Remaining = 480 minutes. Correct option is option 2."
     },
     {
@@ -8843,7 +8843,7 @@ const AICaseStudies = [
         "32 units",
         "36 units"
       ],
-      answer: 1,
+      answer: 2,
       reason: "Remaining capacity = 480 minutes. B requires 15 minutes per unit. Therefore 480 ÷ 15 = 32 units. Correct option is option 2."
     },
     {
@@ -9148,7 +9148,7 @@ const AICaseStudies = [
         "18 units",
         "20 units"
       ],
-      answer: 2,
+      answer: 1,
       reason: "R maximum demand = 40 units × 15 minutes = 600 minutes. Remaining capacity = 900 − 600 = 300 minutes. S requires 20 minutes per unit, so 300 ÷ 20 = 15 units. Correct option is option 1."
     }]
   },
@@ -9408,7 +9408,7 @@ const AICaseStudies = [
         "₹40",
         "₹45"
       ],
-      answer: 2,
+      answer: 1,
       reason: "₹560 ÷ 16 = ₹35 per bottleneck minute. Therefore the correct option is ₹35, option 1."
     },
     {
@@ -9511,7 +9511,7 @@ const AICaseStudies = [
         "₹750",
         "₹800"
       ],
-      answer: 2,
+      answer: 1,
       reason: "₹1,250 − ₹550 = ₹700. Therefore the correct option is ₹700, option 1."
     },
     {
@@ -9815,7 +9815,7 @@ const AICaseStudies = [
         "₹720",
         "₹780"
       ],
-      answer: 0,
+      answer: 2,
       reason: "Throughput = ₹1,200 − ₹480 = ₹720. Therefore the correct option is ₹720, option 2."
     },
     {
@@ -10165,7 +10165,7 @@ const AICaseStudies = [
         "500 minutes",
         "600 minutes"
       ],
-      answer: 2,
+      answer: 1,
       reason: "X demand = 30 units × 20 minutes = 600 minutes. Available capacity = 1,000 minutes. Remaining = 400 minutes. Therefore option 1 is correct."
     }]
   },
@@ -16971,7 +16971,7 @@ const AICaseStudies = [
         "₹430",
         "₹500"
       ],
-      answer: 1,
+      answer: 2,
       reason: "Relevant variable manufacturing cost = ₹180 material + ₹150 labour = ₹330. The ₹100 stated factory overhead is also described as variable, so strictly the total relevant variable manufacturing cost is ₹430. Therefore the correct option is ₹430.",
     },
     {
@@ -17280,7 +17280,7 @@ const AICaseStudies = [
         "600 hours",
         "900 hours"
       ],
-      answer: 2,
+      answer: 1,
       reason: "8,000 X units × 0.30 = 2,400 hours. Remaining = 2,700 − 2,400 = 300 hours. Therefore the mathematically correct answer is 300 hours."
     }]
   },
@@ -17411,7 +17411,7 @@ const AICaseStudies = [
         "₹400",
         "₹8"
       ],
-      answer: 1,
+      answer: 2,
       reason: "Contribution per standard bottle = ₹18 − ₹10 = ₹8. Machine hours = 0.025. Contribution per machine hour = ₹8 ÷ 0.025 = ₹320. Therefore the correct option is ₹320, not ₹400."
     },
     {
@@ -19951,7 +19951,7 @@ const AICaseStudies = [
         "₹4.20 crore",
         "₹10.80 crore"
       ],
-      answer: 2,
+      answer: 0,
       reason: "Contribution per unit = ₹18,000 − ₹8,000 − ₹1,000 = ₹9,000. Total contribution = 6,000 × ₹9,000 = ₹5.40 crore. Therefore option 0 is mathematically correct."
     },
     {
@@ -30588,7 +30588,7 @@ const AICaseStudies = [
         "₹134 lakh",
         "₹138 lakh"
       ],
-      answer: 1,
+      answer: 2,
       reason: "42 + 30 + 24 + 18 + 12 + 8 = ₹134 lakh. Therefore option 2 is correct."
     },
     {
@@ -30612,7 +30612,7 @@ const AICaseStudies = [
         "₹26.14 lakh",
         "₹27.14 lakh"
       ],
-      answer: 1,
+      answer: 2,
       reason: "5.04 + 7.50 + 4.80 + 3.60 + 3.60 + 1.60 = ₹26.14 lakh. Therefore option 2 is correct."
     },
     {
@@ -30826,7 +30826,7 @@ const AICaseStudies = [
         "₹105 lakh",
         "₹110 lakh"
       ],
-      answer: 1,
+      answer: 2,
       reason: "35 + 27 + 18 + 12 + 8 + 5 = ₹105 lakh. Therefore option 2 is correct."
     },
     {
@@ -30850,7 +30850,7 @@ const AICaseStudies = [
         "₹62 lakh",
         "₹64 lakh"
       ],
-      answer: 0,
+      answer: 2,
       reason: "₹35 lakh + ₹27 lakh = ₹62 lakh."
     },
     {
@@ -31806,7 +31806,7 @@ const AICaseStudies = [
         "₹105 lakh",
         "₹110 lakh"
       ],
-      answer: 1,
+      answer: 2,
       reason: "45 + 30 + 15 + 8 + 5 + 2 = ₹105 lakh. Therefore option 3 is correct."
     },
     {
@@ -32041,7 +32041,7 @@ const AICaseStudies = [
         "₹104 lakh",
         "₹108 lakh"
       ],
-      answer: 2,
+      answer: 1,
       reason: "32 + 24 + 18 + 12 + 8 + 6 = ₹100 lakh. Therefore option 1 is correct."
     },
     {
@@ -37556,7 +37556,7 @@ const AICaseStudies = [
             chapter_name: ["ROCE"],
             question: "What is the company's average capital employed for the current year?",
             options: ["₹215 lakh", "₹220 lakh", "₹230 lakh", "₹240 lakh"],
-            answer: 2,
+            answer: 1,
             reason: "Opening capital employed = ₹250 − ₹40 = ₹210 lakh. Closing = ₹280 − ₹50 = ₹230 lakh. Average = (₹210 + ₹230)/2 = ₹220 lakh. Therefore the mathematically correct answer is ₹220 lakh; the option set contains an inconsistency."
         },
         {
@@ -37752,7 +37752,7 @@ const AICaseStudies = [
             chapter_name: ["Residual Income"],
             question: "What is the residual income from Project P alone?",
             options: ["₹0.60 crore", "₹0.90 crore", "₹1.20 crore", "₹1.80 crore"],
-            answer: 2,
+            answer: 0,
             reason: "Project RI = ₹4.2 crore − (12% × ₹30 crore) = ₹4.2 crore − ₹3.6 crore = ₹0.6 crore. Therefore the correct answer is ₹0.60 crore; the provided option set contains an inconsistency."
         },
         {
@@ -38054,7 +38054,7 @@ const AICaseStudies = [
             chapter_name: ["Operating Profit"],
             question: "What is Oakwood's operating profit for the current year based on the information given?",
             options: ["₹43 lakh", "₹53 lakh", "₹57 lakh", "₹63 lakh"],
-            answer: 0,
+            answer: 1,
             reason: "Gross profit ₹135 lakh − administrative/distribution expenses ₹82 lakh = ₹53 lakh. Therefore the mathematically correct answer is ₹53 lakh; the option set contains an inconsistency."
         },
         {
@@ -38242,7 +38242,7 @@ const AICaseStudies = [
             chapter_name: ["Residual Income"],
             question: "What is the residual income generated by Project X?",
             options: ["₹0.40 crore", "₹0.60 crore", "₹0.80 crore", "₹1.20 crore"],
-            answer: 1,
+            answer: 2,
             reason: "RI = Project profit − required return × investment = ₹5.2 crore − (11% × ₹40 crore) = ₹5.2 crore − ₹4.4 crore = ₹0.8 crore. Therefore the correct answer is ₹0.80 crore; the options contain an inconsistency."
         },
         {
@@ -38536,7 +38536,7 @@ const AICaseStudies = [
             chapter_name: ["Residual Income"],
             question: "What is the residual income generated by North's proposed project at the 10% required return?",
             options: ["₹0.80 crore", "₹1.00 crore", "₹1.20 crore", "₹1.40 crore"],
-            answer: 0,
+            answer: 2,
             reason: "RI = Project profit − capital charge = ₹5.2 crore − (10% × ₹40 crore) = ₹5.2 crore − ₹4 crore = ₹1.2 crore. Therefore the mathematically correct answer is ₹1.20 crore; the option set contains an inconsistency."
         },
         {
@@ -38732,7 +38732,7 @@ const AICaseStudies = [
             chapter_name: ["Residual Income"],
             question: "What is the residual income generated by Project A at the corporate required return of 11%?",
             options: ["₹1.20 crore", "₹1.40 crore", "₹1.80 crore", "₹2.40 crore"],
-            answer: 1,
+            answer: 2,
             reason: "RI = ₹8.4 crore − (11% × ₹60 crore) = ₹8.4 crore − ₹6.6 crore = ₹1.8 crore. Therefore the correct answer is ₹1.80 crore; the listed option positions contain an inconsistency."
         },
         {
@@ -39233,7 +39233,7 @@ const AICaseStudies = [
       chapter_name: ["Building Block Model"],
       question: "Which of the following is NOT one of the stated requirements for standards in the Building Block Model?",
       options: ["Equity", "Ownership", "Achievable", "Unlimited"],
-      answer: 3,
+      answer: 0,
       reason: "The three standards requirements stated in the model are Equity, Ownership and Achievable."
     },
     {
@@ -39757,7 +39757,7 @@ const AICaseStudies = [
       chapter_name: ["Efficiency"],
       question: "What is the commercial organisation's approximate day-to-day repair cost per property?",
       options: ["₹3,750", "₹4,000", "₹4,286", "₹5,250"],
-      answer: 2,
+      answer: 0,
       reason: "Repair cost per property = ₹10,50,000 / 280 = ₹3,750. Therefore the correct answer is ₹3,750, which is option index 0."
     },
     {
@@ -43010,7 +43010,7 @@ answer: 2,
           "₹1,800",
           "₹2,020"
         ],
-        answer: 2,
+        answer: 1,
         reason: "₹1,900 − ₹120 = ₹1,780. Therefore the correct option is ₹1,780."
       },
       {
@@ -44587,7 +44587,7 @@ answer: 2,
         chapter_name: ["Capacity", "Opportunity Cost"],
         question: "How many machine hours would be required to satisfy all stated external demand before considering the internal Beta requirement?",
         options: ["13,600 hours", "14,800 hours", "15,600 hours", "16,400 hours"],
-        answer: 2,
+        answer: 0,
         reason: "Alpha 1,000×6 = 6,000; Beta 800×5 = 4,000; Gamma 1,200×3 = 3,600. Total = 13,600 hours. Correct answer is index 0."
       },
       {
@@ -44663,7 +44663,7 @@ answer: 2,
         chapter_name: ["International Transfer Pricing", "Capacity"],
         question: "How much spare capacity does BCW have after satisfying the expected 34,000 external units?",
         options: ["8,000 units", "12,000 units", "16,000 units", "18,000 units"],
-        answer: 1,
+        answer: 2,
         reason: "Spare capacity = 50,000 − 34,000 = 16,000 units. Correct answer index is 2."
       },
       {
@@ -44763,7 +44763,7 @@ answer: 2,
         chapter_name: ["Capacity", "Transfer Pricing"],
         question: "How much capacity remains after Energy Division satisfies its normal external demand of 38,000 units?",
         options: ["12,000 units", "18,000 units", "22,000 units", "28,000 units"],
-        answer: 1,
+        answer: 2,
         reason: "60,000 − 38,000 = 22,000 units. Correct answer index is 2."
       },
       {
@@ -45136,7 +45136,7 @@ answer: 2,
         chapter_name: ["Capacity", "Different Demand Levels"],
         question: "If Compressor Division's requirement rises to 27,000 units, what total demand would arise from normal external customers, internal requirements and the special order?",
         options: ["57,000 units", "63,000 units", "69,000 units", "74,000 units"],
-        answer: 1,
+        answer: 2,
         reason: "30,000 + 27,000 + 12,000 = 69,000 units. Therefore the correct answer is option index 2."
       },
       {
@@ -46184,7 +46184,7 @@ answer: 2,
         chapter_name: ["Market Based Transfer Pricing"],
         question: "What is the adjusted market-based transfer price in rupees if the ₹250 external selling and distribution cost is avoided but ₹50 export packing/documentation cost is incurred on an internal transfer?",
         options: ["₹7,750", "₹7,800", "₹7,850", "₹8,000"],
-        answer: 2,
+        answer: 1,
         reason: "Adjusted market price = ₹8,000 − ₹250 + ₹50 = ₹7,800. Therefore the correct option is ₹7,800, which is option 1."
       },
       {

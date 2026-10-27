@@ -12,7 +12,7 @@ const caseStudies = [
         question:
           "What triggers insolvency proceedings under the Insolvency and Bankruptcy Code, 2016?",
         options: ["Default", "Debt", "Claim", "Dispute"],
-        answer: 1,
+        answer: 0,
       },
 
       {
@@ -24,14 +24,14 @@ const caseStudies = [
           "Only Operational Creditor",
           "Only Corporate Debtor",
         ],
-        answer: 2,
+        answer: 1,
       },
 
       {
         question:
           "The Insolvency and Bankruptcy Code, 2016 came into force on:",
         options: ["28 May 2016", "1 April 2016", "28 May 2015", "1 July 2017"],
-        answer: 1,
+        answer: 0,
       },
 
       {
@@ -43,7 +43,7 @@ const caseStudies = [
           "Reserve Bank of India",
           "Ministry of Corporate Affairs",
         ],
-        answer: 2,
+        answer: 1,
       },
 
       {
@@ -55,7 +55,7 @@ const caseStudies = [
           "The SARFAESI Act overrides the Code",
           "The Income-tax Act overrides the Code",
         ],
-        answer: 1,
+        answer: 0,
       },
     ],
   },
@@ -77,14 +77,14 @@ const caseStudies = [
           "Justice Rohinton F. Nariman",
           "Arun Jaitley",
         ],
-        answer: 2,
+        answer: 1,
       },
 
       {
         question:
           "The maximum period within which Corporate Insolvency Resolution Process (including extension and legal proceedings) must ordinarily be completed is:",
         options: ["180 days", "270 days", "330 days", "365 days"],
-        answer: 3,
+        answer: 2,
       },
 
       {
@@ -96,7 +96,7 @@ const caseStudies = [
           "Circulars issued by RBI",
           "Directions issued by NCLT",
         ],
-        answer: 2,
+        answer: 1,
       },
 
       {
@@ -108,14 +108,14 @@ const caseStudies = [
           "Committee of Creditors",
           "Insolvency and Bankruptcy Board of India",
         ],
-        answer: 3,
+        answer: 2,
       },
 
       {
         question:
           "The minimum default prescribed for initiating the Pre-Packaged Insolvency Resolution Process (PPIRP) for MSMEs is:",
         options: ["₹1 lakh", "₹10 lakh", "₹50 lakh", "₹1 crore"],
-        answer: 2,
+        answer: 1,
       },
     ],
   },
@@ -137,7 +137,7 @@ const caseStudies = [
           "It is available to every individual irrespective of income.",
           "It is available only to partnership firms.",
         ],
-        answer: 2,
+        answer: 1,
       },
 
       {
@@ -149,7 +149,7 @@ const caseStudies = [
           "He is not eligible for Fresh Start Process.",
           "He becomes eligible after obtaining creditor consent.",
         ],
-        answer: 3,
+        answer: 2,
       },
 
       {
@@ -161,7 +161,7 @@ const caseStudies = [
           "It applies only to codified laws.",
           "It contains only procedural provisions.",
         ],
-        answer: 2,
+        answer: 1,
       },
 
       {
@@ -173,7 +173,7 @@ const caseStudies = [
           "Both Corporate Person and Individual → Liquidation",
           "Both Corporate Person and Individual → Bankruptcy",
         ],
-        answer: 2,
+        answer: 1,
       },
 
       {
@@ -185,7 +185,7 @@ const caseStudies = [
           "Complete recovery of all creditor dues in every case.",
           "Mandatory restructuring of every defaulting company.",
         ],
-        answer: 2,
+        answer: 1,
       },
     ],
   },
@@ -193,7 +193,7 @@ const caseStudies = [
     question:
       "What triggers insolvency proceedings under the Insolvency and Bankruptcy Code, 2016?",
     options: ["Default", "Debt", "Claim", "Dispute"],
-    answer: 1,
+    answer: 0,
   },
   {
     question:
@@ -204,12 +204,12 @@ const caseStudies = [
       "Financial Creditor, Operational Creditor or Corporate Debtor",
       "Only Corporate Debtor",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     question: "The Insolvency and Bankruptcy Code, 2016 was enacted on:",
     options: ["28 May 2016", "28 May 2015", "1 April 2016", "1 July 2017"],
-    answer: 1,
+    answer: 0,
   },
   {
     question:
@@ -220,7 +220,7 @@ const caseStudies = [
       "Insolvency and Bankruptcy Board of India",
       "Ministry of Corporate Affairs",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     question:
@@ -231,7 +231,7 @@ const caseStudies = [
       "Dissolution by Registrar",
       "Compounding",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -242,7 +242,7 @@ const caseStudies = [
       "Justice Rohinton F. Nariman",
       "Arun Jaitley",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -253,7 +253,7 @@ const caseStudies = [
       "Directions issued by RBI",
       "Circulars issued by MCA",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -264,19 +264,19 @@ const caseStudies = [
       "Information Utilities",
       "Insolvency and Bankruptcy Board of India",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
       "The Corporate Insolvency Resolution Process (CIRP) must ordinarily be completed within:",
     options: ["180 days", "270 days", "330 days", "365 days"],
-    answer: 3,
+    answer: 2,
   },
   {
     question:
       "Which one of the following correctly states the minimum default required to initiate a Pre-Packaged Insolvency Resolution Process (PPIRP)?",
     options: ["₹1 lakh", "₹10 lakh", "₹50 lakh", "₹1 crore"],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -287,7 +287,7 @@ const caseStudies = [
       "Only qualifying debts not exceeding ₹35,000",
       "Annual income not exceeding ₹60,000 irrespective of assets owned",
     ],
-    answer: 1,
+    answer: 0,
   },
   {
     question:
@@ -298,7 +298,7 @@ const caseStudies = [
       "Is not eligible for Fresh Start Process",
       "Can apply after obtaining approval of creditors",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     question:
@@ -309,7 +309,7 @@ const caseStudies = [
       "Because it contains only procedural provisions",
       "Because it applies only to codified laws",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -320,7 +320,7 @@ const caseStudies = [
       "Bankruptcy and Liquidation are identical concepts.",
       "Liquidation applies to both corporates and individuals.",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -331,7 +331,7 @@ const caseStudies = [
       "Full recovery of debts in every insolvency proceeding",
       "Elimination of all secured lending",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     caseText:
@@ -346,7 +346,7 @@ const caseStudies = [
           "Bankruptcy",
           "Liquidation",
         ],
-        answer: 2,
+        answer: 1,
       },
       {
         question:
@@ -357,7 +357,7 @@ const caseStudies = [
           "The contention is incorrect because a persistent mismatch between payments and receivables, despite generation of revenue, may constitute financial failure leading to insolvency.",
           "The contention is incorrect only if ZCL has already been declared bankrupt.",
         ],
-        answer: 3,
+        answer: 2,
       },
       {
         question:
@@ -368,7 +368,7 @@ const caseStudies = [
           "CIRP cannot be initiated until ZCL's assets are completely exhausted.",
           "CIRP can be initiated only by ZCL itself because its business continues to generate revenue.",
         ],
-        answer: 2,
+        answer: 1,
       },
       {
         question:
@@ -379,7 +379,7 @@ const caseStudies = [
           "90 days, extension up to 45 days, and mandatory completion within 180 days",
           "270 days without any extension and excluding time taken in legal proceedings",
         ],
-        answer: 1,
+        answer: 0,
       },
       {
         question:
@@ -390,7 +390,7 @@ const caseStudies = [
           "NCLT and DRAT",
           "DRT and NCLAT",
         ],
-        answer: 2,
+        answer: 1,
       },
     ],
   },
@@ -407,7 +407,7 @@ const caseStudies = [
           "Does not satisfy the requirement because the minimum default is ₹50 lakh.",
           "Satisfies the requirement only because every MSME default above ₹1 lakh automatically results in PPIRP.",
         ],
-        answer: 2,
+        answer: 1,
       },
       {
         question:
@@ -418,7 +418,7 @@ const caseStudies = [
           "His assets are valued at ₹19,000.",
           "He owns a dwelling unit, even though it is encumbered.",
         ],
-        answer: 4,
+        answer: 3,
       },
       {
         question:
@@ -429,7 +429,7 @@ const caseStudies = [
           "A previous fresh start order was made in relation to him within the preceding 12 months.",
           "His annual income exceeds the permitted limit.",
         ],
-        answer: 3,
+        answer: 2,
       },
       {
         question:
@@ -440,7 +440,7 @@ const caseStudies = [
           "Both expressions refer exclusively to Regulations issued by IBBI.",
           "Both expressions refer exclusively to Rules notified by the Central Government.",
         ],
-        answer: 2,
+        answer: 1,
       },
       {
         question:
@@ -451,7 +451,7 @@ const caseStudies = [
           "The IBC has overriding effect over other laws by virtue of Section 238.",
           "The conflicting provisions automatically become void without application of Section 238.",
         ],
-        answer: 3,
+        answer: 2,
       },
     ],
   },
@@ -464,7 +464,7 @@ const caseStudies = [
       "II, III and IV only",
       "I, II, III and IV",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -475,7 +475,7 @@ const caseStudies = [
       "Financial Failure — assets necessarily become less than liabilities; Business Failure — default exceeding ₹1 crore",
       "Financial Failure — inability to obtain additional finance; Business Failure — commencement of liquidation",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -486,7 +486,7 @@ const caseStudies = [
       "I, III and IV only",
       "I, II, III and IV",
     ],
-    answer: 4,
+    answer: 3,
   },
   {
     question:
@@ -497,7 +497,7 @@ const caseStudies = [
       "An automatic extension of 90 days is available upon expiry of 180 days without approval of NCLT.",
       "A one-time extension of 45 days is available where the CoC approves it by 66% voting share, subject to an overall period of 270 days.",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -508,7 +508,7 @@ const caseStudies = [
       "CIRP — 180 days with unlimited extensions; Fast Track CIRP — 90 days without any extension",
       "CIRP — mandatory 270 days in every case; Fast Track CIRP — mandatory 135 days in every case",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -519,7 +519,7 @@ const caseStudies = [
       "He is not eligible because a previous fresh start order was made in relation to him within the preceding 12 months.",
       "He is not eligible because the monetary limits must be strictly below ₹60,000, ₹20,000 and ₹35,000 respectively.",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     question:
@@ -530,7 +530,7 @@ const caseStudies = [
       "II, III and IV only",
       "I, II, III and IV",
     ],
-    answer: 4,
+    answer: 3,
   },
   {
     question:
@@ -541,7 +541,7 @@ const caseStudies = [
       "NCLT and NCLAT have jurisdiction over all individuals, while DRT and DRAT deal only with partnership firms.",
       "DRT has jurisdiction over personal guarantors to corporate debtors while appeals are made to NCLAT.",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -552,7 +552,7 @@ const caseStudies = [
       "Part II — Regulation of Insolvency Professionals; Part III — Corporate liquidation only; Part IV — Individual bankruptcy",
       "Part II — Corporate insolvency only; Part III — Voluntary liquidation; Part IV — Adjudicating Authorities",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -563,7 +563,7 @@ const caseStudies = [
       "II and IV only",
       "I, II, III and IV",
     ],
-    answer: 1,
+    answer: 0,
   },
 
   // Chapter 2 - Preliminary
@@ -576,7 +576,7 @@ const caseStudies = [
       "Personal guarantor to corporate debtor",
       "Partnership firm",
     ],
-    answer: 2,
+    answer: 1,
   },
 
   {
@@ -587,7 +587,7 @@ const caseStudies = [
       "Insolvency, liquidation, voluntary liquidation or bankruptcy of entities",
       "Insolvency or voluntary liquidation of entities",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     question: "Creditor as defined under the Code, includes:",
@@ -597,7 +597,7 @@ const caseStudies = [
       "Financial creditor, operational creditor, decree holder",
       "Financial creditor, operational creditor, secured creditor, unsecured creditor, decree holder",
     ],
-    answer: 4,
+    answer: 3,
   },
   {
     question: "Financial debt includes:",
@@ -607,7 +607,7 @@ const caseStudies = [
       "Money borrowed against the payment of interest",
       "Payment of dues in respect of services provided",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     question:
@@ -618,7 +618,7 @@ const caseStudies = [
       "PQR Housing Finance Company with asset size of ₹1000 crore",
       "MNO Housing Finance Company with asset size of ₹750 crore",
     ],
-    answer: 1,
+    answer: 0,
   },
   {
     question:
@@ -629,7 +629,7 @@ const caseStudies = [
       "PQR Housing Finance Company with asset size of ₹1000 crore",
       "MNO Housing Finance Company with asset size of ₹750 crore",
     ],
-    answer: 1,
+    answer: 0,
   },
   {
     caseText:
@@ -644,7 +644,7 @@ const caseStudies = [
           "Insolvency professional",
           "Information utility",
         ],
-        answer: 2,
+        answer: 1,
       },
       {
         question:
@@ -655,7 +655,7 @@ const caseStudies = [
           "National Company Law Tribunal",
           "Insolvency Professional Agency",
         ],
-        answer: 1,
+        answer: 0,
       },
       {
         question:
@@ -666,7 +666,7 @@ const caseStudies = [
           "Effecting contracts of insurance",
           "Providing employment to workers",
         ],
-        answer: 3,
+        answer: 2,
       },
       {
         question:
@@ -677,7 +677,7 @@ const caseStudies = [
           "BFSL is correct provided its paid-up capital exceeds ₹1 crore.",
           "BFSL is incorrect because no company engaged in finance can ever be incorporated under the Companies Act.",
         ],
-        answer: 2,
+        answer: 1,
       },
       {
         question:
@@ -688,7 +688,7 @@ const caseStudies = [
           "It cannot be covered unless its asset size exceeds ₹1,000 crore.",
           "It is covered solely because it is incorporated under the Companies Act, irrespective of section 227.",
         ],
-        answer: 2,
+        answer: 1,
       },
     ],
   },
@@ -705,7 +705,7 @@ const caseStudies = [
           "Core service",
           "Financial information only",
         ],
-        answer: 1,
+        answer: 0,
       },
       {
         question:
@@ -716,7 +716,7 @@ const caseStudies = [
           "Government dues",
           "Core services",
         ],
-        answer: 2,
+        answer: 1,
       },
       {
         question:
@@ -727,7 +727,7 @@ const caseStudies = [
           "Secured creditor",
           "Insolvency professional",
         ],
-        answer: 3,
+        answer: 2,
       },
       {
         question:
@@ -738,7 +738,7 @@ const caseStudies = [
           "Receivables sold on a non-recourse basis",
           "Receivables sold where the transaction has financing characteristics",
         ],
-        answer: 3,
+        answer: 2,
       },
       {
         question:
@@ -749,7 +749,7 @@ const caseStudies = [
           "Amount raised from an allottee is deemed to have the commercial effect of borrowing, and the Supreme Court has also held that an interest-free loan may fall within the definition of financial debt.",
           "Only (II) constitutes financial debt because amounts received from real estate allottees are operational debts.",
         ],
-        answer: 3,
+        answer: 2,
       },
     ],
   },
@@ -762,7 +762,7 @@ const caseStudies = [
       "Debt Recovery Tribunal",
       "Insolvency Professional Agency",
     ],
-    answer: 1,
+    answer: 0,
   },
   {
     question: "A 'Corporate Debtor' under section 3(8) means:",
@@ -772,7 +772,7 @@ const caseStudies = [
       "Any person who has committed a default",
       "A company undergoing liquidation",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -783,7 +783,7 @@ const caseStudies = [
       "A decree holder",
       "Only operational creditors",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     question:
@@ -794,7 +794,7 @@ const caseStudies = [
       "Issue of debentures only",
       "Derivative transactions only",
     ],
-    answer: 1,
+    answer: 0,
   },
   {
     question:
@@ -805,7 +805,7 @@ const caseStudies = [
       "Secured creditor",
       "Decree holder",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     question:
@@ -816,7 +816,7 @@ const caseStudies = [
       "A person incorporated with limited liability under any law for the time being in force",
       "A financial service provider",
     ],
-    answer: 4,
+    answer: 3,
   },
   {
     question:
@@ -827,7 +827,7 @@ const caseStudies = [
       "A right to payment may constitute a claim whether fixed, disputed, undisputed, secured or unsecured",
       "A right arising from breach of contract can never constitute a claim",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     question:
@@ -838,7 +838,7 @@ const caseStudies = [
       "Receivables sold on a non-recourse basis",
       "Liability in respect of a finance or capital lease as specified",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     question:
@@ -849,7 +849,7 @@ const caseStudies = [
       "Excluded from both financial and operational debt",
       "Treated as financial debt only when the allottee receives interest",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -860,13 +860,13 @@ const caseStudies = [
       "Non-payment of the whole or any part or instalment of debt when it has become due and payable",
       "Non-payment only of financial debt and not operational debt",
     ],
-    answer: 3,
+    answer: 2,
   },
   {
     question:
       "Consider the following statements: (I) A claim may exist even though the right to payment is disputed. (II) A claim gives rise to debt only when it is due. (III) Default occurs when debt becomes due and payable and is not paid. Which of the following is correct?",
     options: ["I only", "I and II only", "II and III only", "I, II and III"],
-    answer: 4,
+    answer: 3,
   },
   {
     question:
@@ -877,7 +877,7 @@ const caseStudies = [
       "I, III and IV only",
       "I, II, III and IV",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -888,7 +888,7 @@ const caseStudies = [
       "It is outside the notified framework because its assets must exceed ₹500 crore",
       "It automatically becomes a corporate person under section 3(7) merely because its asset size reaches ₹500 crore",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -899,7 +899,7 @@ const caseStudies = [
       "II, III and IV only",
       "I, II, III and IV",
     ],
-    answer: 2,
+    answer: 1,
   },
   {
     question:
@@ -910,7 +910,7 @@ const caseStudies = [
       "I, II and IV only",
       "I, II, III and IV",
     ],
-    answer: 3,
+    answer: 2,
   },
 
   //  Chapter 2 - confusing questions
@@ -924,7 +924,7 @@ const caseStudies = [
       "Any liability or obligation whether due or not, provided it is secured",
       "A right to payment only when such right has resulted in default",
     ],
-    answer: 2,
+    answer: 1,
   },
 
   {
@@ -936,7 +936,7 @@ const caseStudies = [
       "A debt first becomes a claim when payable, and non-payment converts the claim into default",
       "A claim and debt arise simultaneously in every case, whereas default arises only after adjudication",
     ],
-    answer: 1,
+    answer: 0,
   },
 
   {
@@ -948,7 +948,7 @@ const caseStudies = [
       "A financial service provider",
       "A person incorporated with limited liability under another law",
     ],
-    answer: 3,
+    answer: 2,
   },
 
   {
@@ -960,7 +960,7 @@ const caseStudies = [
       "Amount raised by issue of debentures",
       "Liability arising under a finance lease",
     ],
-    answer: 2,
+    answer: 1,
   },
 
   {
@@ -972,7 +972,7 @@ const caseStudies = [
       "Default occurs whenever a claim is raised against the debtor, irrespective of whether it is due",
       "Default occurs only when the Adjudicating Authority determines the amount of debt",
     ],
-    answer: 2,
+    answer: 1,
   },
 
   {
@@ -984,7 +984,7 @@ const caseStudies = [
       "Receivables sold on a non-recourse basis",
       "Amount raised pursuant to issue of bonds or debentures",
     ],
-    answer: 3,
+    answer: 2,
   },
 
   {
@@ -996,7 +996,7 @@ const caseStudies = [
       "Security interest is narrower than charge because it excludes mortgage and assignment",
       "Charge applies only to movable property whereas security interest applies only to immovable property",
     ],
-    answer: 1,
+    answer: 0,
   },
 
   {
@@ -1008,7 +1008,7 @@ const caseStudies = [
       "He becomes an Insolvency Professional automatically after enrolment for 30 days",
       "He is an Insolvency Professional if authorised by the corporate debtor even without registration with the Board",
     ],
-    answer: 2,
+    answer: 1,
   },
 
   {
@@ -1020,7 +1020,7 @@ const caseStudies = [
       "It regulates Insolvency Professionals and Insolvency Professional Agencies",
       "It approves resolution plans submitted during the Corporate Insolvency Resolution Process",
     ],
-    answer: 2,
+    answer: 1,
   },
 
   {
@@ -1032,7 +1032,7 @@ const caseStudies = [
       "It falls within the notified framework because every housing finance company is covered irrespective of asset size",
       "It falls within the notified framework only because housing finance companies are not financial service providers",
     ],
-    answer: 2,
+    answer: 1,
   },
 
   // Chapter 3
