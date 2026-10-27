@@ -51,7 +51,7 @@ const caseStudies = [
         "Value is independent of the valuation date",
         "Value is an estimate of the likely price at a given time in accordance with a particular definition of value"
       ],
-      answer: 3,
+      answer: 2,
       reason: "According to the description of value under ICAI Valuation Standards 2018, value is an economic concept and an estimate of the likely price at a given time in accordance with a particular definition of value. It is not a fact."
     },
     {
@@ -106,7 +106,7 @@ const caseStudies = [
         "Only a routine meeting schedule",
         "Internally generated software"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter identifies internally generated assets such as proprietary processes and software as assets for which valuation may be required."
     },
     {
@@ -161,7 +161,7 @@ const caseStudies = [
         "It has made valuation relevant only to start-ups",
         "It has increased the emphasis on valuation"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that with the introduction and subsequent adoption of Ind AS by many Indian companies, the emphasis on valuation has increased."
     },
     {
@@ -216,7 +216,7 @@ const caseStudies = [
         "Only the person who originally purchased the asset",
         "A valuer specified under the applicable statute"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that valuation must be undertaken by a valuer specified in the statute and that each statute defines who can act as a valuer under that Act."
     },
     {
@@ -260,7 +260,7 @@ const caseStudies = [
         "Passing an examination conducted by the employer",
         "Passing the valuation examination under Rule 5 within the three years preceding the registration application"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The eligibility criteria reproduced in the chapter state that the applicant must have passed the valuation examination under Rule 5 within three years preceding the date of making an application for registration under Rule 6."
     }
   ]
@@ -315,7 +315,7 @@ const caseStudies = [
         "No market under any circumstances",
         "The most advantageous market"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that in the absence of a principal market, the most advantageous market may be considered."
     },
     {
@@ -359,7 +359,7 @@ const caseStudies = [
         "₹380",
         "₹20"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The Intrinsic Value is ₹200 and the market price is ₹180. The difference is ₹200 − ₹180 = ₹20. Since Intrinsic Value exceeds Market Value, the share is considered undervalued according to the chapter's explanation."
     },
     {
@@ -447,7 +447,7 @@ const caseStudies = [
         "Participant Specific Value",
         "Marriage Value"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explicitly states that Synergistic Value is also referred to as Marriage Value."
     },
     {
@@ -502,7 +502,7 @@ const caseStudies = [
         "Value is always equal to the price paid",
         "Value differs according to the perceived utility of the product to the respective buyer"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that price is the same for all, whereas value differs according to the perceived utility of the product to the respective buyer."
     },
     {
@@ -579,7 +579,7 @@ const caseStudies = [
         "The seller is given no reasonable period to find a purchaser",
         "Considerable marketing efforts are made and a reasonable period is allowed to find a purchaser in a liquidation situation"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter describes Orderly Liquidation Value as the realizable value of an asset at liquidation where considerable efforts have been made to market the asset and a reasonable period is given to find a purchaser."
     },
     {
@@ -634,7 +634,7 @@ const caseStudies = [
         "The value specific to one investor's individual expectations",
         "The amount realised on the sale of an asset or group of assets when actual or hypothetical termination of the business is contemplated or assumed"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter defines Liquidation Value as the amount that will be realised on the sale of an asset or a group of assets when an actual or hypothetical termination of the business is contemplated or assumed."
     },
     {
@@ -711,7 +711,7 @@ const caseStudies = [
         "That future cash flows need not be estimated",
         "The competitive edge of the company and better insights into its prospects"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that proper analysis of the macro and micro economic environment helps an investor understand the company's competitive edge and provides better insight into its prospects."
     },
     {
@@ -744,7 +744,7 @@ const caseStudies = [
         "An assembled workforce",
         "Land and building"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter identifies land and building, and plant and machinery, as examples of tangible assets that can be valued."
     },
     {
@@ -777,7 +777,7 @@ const caseStudies = [
         "A statutory section number",
         "An assembled workforce or customer list"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that intangibles such as an assembled workforce and customer lists can add to the worth of a business."
     },
     {
@@ -832,7 +832,7 @@ const caseStudies = [
         "As the amount of tax paid in the preceding year",
         "As the current worth of the business"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that economic value is the current worth of the business."
     },
     {
@@ -898,7 +898,7 @@ const caseStudies = [
         "Section 232(2)(d)",
         "Section 236(2)"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter lists Section 236(2) in connection with the valuation of equity shares held by minority shareholders."
     },
     {
@@ -953,7 +953,7 @@ const caseStudies = [
         "At least one year after membership",
         "At least three years of experience after membership of a qualifying professional institute established by an Act of Parliament"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter identifies membership of a professional institute established by an Act of Parliament for regulating a profession, with at least three years of experience after such membership, as one qualification route."
     },
     {
@@ -1008,7 +1008,7 @@ const caseStudies = [
         "A qualification unrelated to the asset class without any specified technical background",
         "A graduate qualification in a listed engineering discipline, such as Mechanical or Electrical Engineering, or a degree in Valuation of Plant and Machinery or equivalent"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter's Annexure IV lists specified engineering disciplines, including Mechanical and Electrical Engineering, as well as graduation in Valuation of Plant and Machinery or equivalent, among the qualifications for that asset class."
     },
     {
@@ -1052,7 +1052,7 @@ const caseStudies = [
         "It excludes equivalent qualifications",
         "It means a qualification obtained from a recognised Indian University or equivalent, whether in India or abroad"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter's note states that the eligibility qualification means a qualification obtained from a recognised Indian University or equivalent, whether in India or abroad."
     }
   ]
@@ -1107,7 +1107,7 @@ const caseStudies = [
         "Residence does not matter for an individual applicant",
         "The applicant must be a person resident in India, as defined in the rules reproduced in the chapter"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter lists being a person resident in India as an eligibility condition and refers to the meaning given under the Foreign Exchange Management Act, 1999, as far as applicable to an individual."
     },
     {
@@ -1151,7 +1151,7 @@ const caseStudies = [
         "Only personal investment activities",
         "Rendering professional or financial services, including valuation services"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter's eligibility criteria state that an entity set up for objects other than rendering professional or financial services, including valuation services, is not eligible under the conditions reproduced there."
     },
     {
@@ -1206,7 +1206,7 @@ const caseStudies = [
         "Only the historical depreciation charged",
         "The conditions or circumstances under which an asset is used or deployed"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter defines the premise of value as the conditions or circumstances under which an asset is used or deployed."
     },
     {
@@ -1250,7 +1250,7 @@ const caseStudies = [
         "To choose a use that is always physically possible, irrespective of legal restrictions",
         "To identify the use that fetches maximum value, subject to being physically possible, financially feasible and legally allowed"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that Highest and Best Use from a market perspective is the use that fetches maximum value. It must be physically possible, financially feasible and legally allowed."
     }
   ]
@@ -1305,7 +1305,7 @@ const caseStudies = [
         "A sale in which the seller is necessarily under compulsion",
         "A competitive and open market under the conditions required for a fair sale"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter's reproduced definition refers to a competitive and open market under all conditions required for a fair sale."
     },
     {
@@ -1360,7 +1360,7 @@ const caseStudies = [
         "Only the owner's opinion and original purchase price",
         "Both firm-specific information and market-wide information"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that valuation of a business or asset requires firm-specific information as well as market-wide information."
     },
     {
@@ -1415,7 +1415,7 @@ const caseStudies = [
         "The original purchase price only",
         "Fair Value"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter illustrates that when a manufacturing company approaches a bank for a loan with plant and machinery as collateral, the bank would lend based on the Fair Value of the asset rather than its historical value stated in the Balance Sheet."
     },
     {
@@ -1503,7 +1503,7 @@ const caseStudies = [
         "The premise of value refers only to the original cost of an asset",
         "The choice of valuation base helps determine the premise of value to be considered"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that valuation bases represent the type of value used in an engagement, while a premise of value describes the conditions or circumstances under which an asset is used or deployed. The choice of valuation base determines the premise to be considered."
     },
     {
@@ -1558,7 +1558,7 @@ const caseStudies = [
         "Section 281(1)",
         "Section 54(1), read with Rule 8 of the Companies (Share Capital and Debentures) Rules, 2014"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter associates Section 54(1), read with Rule 8 of the Companies (Share Capital and Debentures) Rules, 2014, with the issue of Sweat Equity Shares."
     },
     {
@@ -1613,7 +1613,7 @@ const caseStudies = [
         "Estimating only the value of an assembled workforce",
         "Deriving the value of a security"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter defines equity valuation as deriving the value of a security."
     },
     {
@@ -1690,7 +1690,7 @@ const caseStudies = [
         "It must be a market in which the asset has never been traded",
         "It must have the highest volume and level of activity for the subject asset or liability"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter defines the principal market as the market with the highest volume and level of activity for the subject asset or liability."
     },
     {
@@ -1745,7 +1745,7 @@ const caseStudies = [
         "Any use that produces the highest gross amount without considering conversion costs",
         "The use that fetches maximum value, provided it is physically possible, financially feasible and legally allowed"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that Highest and Best Use from a market perspective is the use that fetches maximum value. It must be physically possible, financially feasible and legally allowed."
     },
     {
@@ -1833,7 +1833,7 @@ const caseStudies = [
         "Whether the original purchase price is available",
         "The marketing efforts and time available to find a purchaser, together with the circumstances of the sale"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter distinguishes Orderly Liquidation by considerable marketing efforts and a reasonable period to find a purchaser, whereas Forced Sale involves constraints and a lack of proper marketing efforts or sufficient time."
     },
     {
@@ -1888,7 +1888,7 @@ const caseStudies = [
         "Whether the applicant has purchased shares in the past",
         "The applicant's integrity, reputation and character, absence of convictions and restraint orders, competence and financial solvency"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter lists integrity, reputation and character; absence of convictions and restraint orders; and competence and financial solvency as considerations that may be taken into account when determining whether an individual is a fit and proper person."
     },
     {
@@ -1943,7 +1943,7 @@ const caseStudies = [
         "Any amount paid above market value is necessarily a forced-sale amount",
         "The plot may provide a unique parking facility and strategic benefits that make its Investment Value higher for the mall owner"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter's illustration of land near a mall explains that the mall owner may be willing to pay more because the land can provide parking space and increase the number of people visiting the mall. This illustrates higher Investment Value to that particular investor."
     },
     {
@@ -2861,7 +2861,7 @@ const caseStudies = [
         "To determine the historical cost of every asset of the target company",
         "To establish an appropriate price for acquiring a business or merging with another entity"
       ],
-      answer: 3,
+      answer: 2,
       reason: "In mergers and acquisitions, valuation helps establish the appropriate price to be paid for acquiring a business or merging with another entity, ensuring that the transaction is beneficial to the parties involved."
     },
     {
@@ -2939,7 +2939,7 @@ const caseStudies = [
         "Because recent transactions cannot be affected by market conditions",
         "Because transactions that occurred more recently are considered more valuable in terms of usefulness for analysis"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that transactions that occurred more recently are considered more valuable in terms of their usefulness for analysis."
     },
     {
@@ -2995,7 +2995,7 @@ const caseStudies = [
         "Because the size of every transaction automatically remains constant over time",
         "Because differences in market conditions may affect the usefulness of earlier transaction information"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that differences in market conditions between past transactions and the present scenario compound the limitations of transaction analysis."
     },
     {
@@ -3073,7 +3073,7 @@ const caseStudies = [
         "Whenever the company has assets and liabilities",
         "When the valuer has a direct or indirect interest in the assets or becomes interested at any time during or after their valuation"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that a valuer is prohibited from undertaking the valuation of assets in which the valuer has a direct or indirect interest or becomes interested at any time during or after the valuation."
     },
     {
@@ -3107,7 +3107,7 @@ const caseStudies = [
         "It determines the value of all foreign exchange derivatives",
         "It helps substantiate the premium on the issue of shares by certain companies, with the discounted cash flow method being one valuation option"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that Section 56(2)(viib) addresses taxation of income arising from the issuance of shares at a premium by certain companies. A valuation is required to substantiate the premium, and one option is fair market value determination using the discounted cash flow method."
     },
     {
@@ -3196,7 +3196,7 @@ const caseStudies = [
         "An unquoted equity share valued under Rule 11UA",
         "An option, forward or swap"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter identifies options, forwards and swaps as examples of foreign exchange derivatives for which valuation may be required."
     },
     {
@@ -3252,7 +3252,7 @@ const caseStudies = [
         "It guarantees that the company will never issue additional shares",
         "It helps prevent dilution of existing shareholders' interests and supports transparent disclosure through detailed valuation reports"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that preferential allotments require fair valuation to prevent dilution of existing shareholders' interests. SEBI mandates disclosure of detailed valuation reports to ensure transparency and safeguard investors' rights."
     },
     {
@@ -3330,7 +3330,7 @@ const caseStudies = [
         "It determines only the value of shares issued to non-residents",
         "It facilitates resolution plans and helps determine the distribution of proceeds among creditors"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that valuation of the assets and liabilities of an insolvent company is integral to the resolution process, facilitating resolution plans and determining the distribution of proceeds among creditors."
     },
     {
@@ -3408,7 +3408,7 @@ const caseStudies = [
         "By removing the need to allocate resources",
         "By evaluating strategic alternatives, assessing investment opportunities and supporting effective resource allocation"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that valuation assists strategic planning by evaluating strategic alternatives, such as entering new markets, diversifying product offerings or pursuing strategic alliances through mergers and acquisitions. It also supports capital allocation decisions."
     },
     {
@@ -3442,7 +3442,7 @@ const caseStudies = [
         "By guaranteeing that a dispute will never proceed to legal proceedings",
         "By providing an objective and independent assessment of the value of the disputed assets or interests"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that valuation serves as a critical tool in dispute resolution by providing an objective and independent assessment of disputed assets or interests. Valuation reports may also assist in court proceedings, arbitration or mediation."
     },
     {
@@ -3486,7 +3486,7 @@ const caseStudies = [
         "By limiting communication exclusively to the board of directors",
         "By providing transparent and credible information about valuation methodologies, assumptions, financial performance and value creation potential"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that valuation supports stakeholder communication through transparent and credible insights into value drivers, financial performance and growth prospects. Disclosure of methodologies, assumptions and key metrics can enhance investor understanding, confidence and stakeholder relationships."
     }
   ]
@@ -3530,7 +3530,7 @@ const caseStudies = [
         "The lowest price that a buyer can negotiate",
         "The price a buyer is willing to pay and a seller is willing to accept when both parties engage voluntarily"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter describes fair value as the price a buyer is willing to pay and a seller is willing to accept in a transaction, provided both parties engage voluntarily."
     },
     {
@@ -3608,7 +3608,7 @@ const caseStudies = [
         "3.70x",
         "3.54x"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The comparable transaction table reports the average implied EV/Revenue multiple as 3.54x."
     },
     {
@@ -3675,7 +3675,7 @@ const caseStudies = [
         "Every ordinary payment of electricity bills",
         "Issue of new shares, issue of sweat equity, non-cash transactions involving directors, compromise arrangements, mergers and amalgamations"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter identifies the issue of new shares, issue of sweat equity, non-cash transactions involving directors, compromise arrangements, mergers and amalgamations, acquisition of minority shareholding, and winding up or liquidation among situations requiring valuation."
     },
     {
@@ -3731,7 +3731,7 @@ const caseStudies = [
         "The property must be valued only under SEBI regulations",
         "The stamp duty value is adopted as deemed consideration"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that Section 50C mandates adoption of stamp duty value as deemed consideration for the transfer of immovable property if the actual sale consideration is lower than the stamp duty value."
     },
     {
@@ -3787,7 +3787,7 @@ const caseStudies = [
         "Only the original purchase price of the shares",
         "Pricing guidelines specified by the Reserve Bank of India"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that valuation of shares issued or transferred to non-residents must adhere to pricing guidelines specified by the Reserve Bank of India and prescribed valuation methodologies."
     },
     {
@@ -3843,7 +3843,7 @@ const caseStudies = [
         "Only the contractors who constructed the infrastructure projects",
         "Independent valuers accredited by recognized bodies"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that SEBI mandates valuation of InVIT assets by independent valuers accredited by recognized bodies, using appropriate methodologies to assess fair value."
     },
     {
@@ -3887,7 +3887,7 @@ const caseStudies = [
         "To replace the net asset value of units with historical cost",
         "To support transparency, investor protection and fair determination of unit values"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that compliance with valuation requirements for InVITs and REITs supports integrity, fairness and efficiency in these investment markets, fostering investor trust and market development."
     }
   ]
@@ -3943,7 +3943,7 @@ const caseStudies = [
         "Only when a shareholder attends a meeting",
         "Through the review of potentially undervalued transactions covered in the relevant period"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that valuation requirements may be triggered in respect of undervalued transactions covered in the review of avoidable transactions in the relevant period."
     },
     {
@@ -4010,7 +4010,7 @@ const caseStudies = [
         "Only valuation of a company's marketing expenses",
         "Valuation of shares, assets or liabilities"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that Section 230 of the Companies Act requires valuation of shares, assets or liabilities in cases involving schemes of arrangement, amalgamations or corporate restructuring."
     },
     {
@@ -4077,7 +4077,7 @@ const caseStudies = [
         "By ensuring that the company never undertakes an acquisition",
         "By helping evaluate the fair value of shares and holding management accountable for value creation"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that valuation helps evaluate the fair value of shares, enables shareholders to make informed investment decisions and holds management accountable for value creation."
     },
     {
@@ -4133,7 +4133,7 @@ const caseStudies = [
         "By comparing only the number of directors in each company",
         "By comparing valuation metrics such as price-to-earnings ratios, enterprise value multiples and market capitalization against industry benchmarks"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that comparative valuation analysis helps management assess valuation metrics, such as price-to-earnings ratios, enterprise value multiples and market capitalization, against industry benchmarks to identify competitive positioning and performance gaps."
     },
     {
@@ -4188,7 +4188,7 @@ const caseStudies = [
         "Only the geographical location of the buyer, without considering the transaction",
         "The similarity of transaction size, type of transaction and characteristics of the buyer"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that the size of the transactions should be similar to the transaction being considered, and the type of transaction and characteristics of the buyer should also be similar."
     },
     {
@@ -4221,7 +4221,7 @@ const caseStudies = [
         "Implied EV/Revenue of 8.83x–17.94x and implied EV/EBITDA of 3.54x–5.88x",
         "Implied EV/Revenue of 3.0x–4.0x and implied EV/EBITDA of 10.5x–12.5x"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter concludes that ADP Limited can expect an implied EV/Revenue multiple in the range of 3.0x–4.0x and an implied EV/EBITDA multiple in the range of 10.5x–12.5x."
     }
   ]
@@ -4277,7 +4277,7 @@ const caseStudies = [
         "Only routine transactions involving the company's customers",
         "Issue of new shares, issue of sweat equity, non-cash transactions involving directors, compromise arrangements, mergers and amalgamations"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter specifically identifies the issue of new shares, issue of sweat equity, non-cash transactions involving directors, compromise arrangements, mergers and amalgamations, acquisition of minority shareholding, and winding up or liquidation."
     },
     {
@@ -4333,7 +4333,7 @@ const caseStudies = [
         "Section 56(2)(viib) and the Companies Act provisions on sweat equity",
         "Section 50B, with valuation conducted as per the provisions of Rule 11U and Rule 11UA, as stated in the chapter"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter identifies Section 50B as dealing with capital gains arising from slump sale transactions and states that valuation of the undertaking or business transferred is conducted as per the provisions of Rule 11U and Rule 11UA."
     },
     {
@@ -4378,7 +4378,7 @@ const caseStudies = [
         "Transactions must be conducted at whatever price is selected by the seller",
         "Transactions must be conducted at arm's length prices based on fair market value"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that transactions between residents and non-residents must be conducted at arm's length prices, which are determined based on fair market value."
     },
     {
@@ -4422,7 +4422,7 @@ const caseStudies = [
         "To ensure that every transaction has the same valuation",
         "To promote transparency, fairness and compliance in cross-border transactions and help mitigate the risk of underreporting or mispricing assets and liabilities"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that valuation requirements under FEMA aim to promote transparency, fairness and compliance in cross-border transactions and mitigate the risk of underreporting or mispricing assets and liabilities."
     }
   ]
@@ -4467,7 +4467,7 @@ const caseStudies = [
         "By preventing management from allocating resources",
         "By evaluating alternatives such as entering new markets, diversifying product offerings or pursuing mergers and acquisitions, and supporting capital allocation decisions"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that valuation assists businesses in evaluating strategic alternatives, such as expansion into new markets, diversification of product offerings and strategic alliances through mergers and acquisitions. It also supports capital allocation decisions."
     },
     {
@@ -4512,7 +4512,7 @@ const caseStudies = [
         "Average 3.54x and median 3.70x",
         "Average 12.16x and median 10.53x"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter's comparable transaction table reports an average implied EV/EBITDA multiple of 12.16x and a median implied EV/EBITDA multiple of 10.53x."
     },
     {
@@ -4556,7 +4556,7 @@ const caseStudies = [
         "Past transaction multiples can be applied without considering the circumstances of the transactions",
         "Limitations in transaction information and differences in market conditions can hinder conclusive insights, so transaction analysis provides a broad evaluation and approximate valuation"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that limitations in the quantity and quality of transaction-related information, together with differences between past and present market conditions, can hinder conclusive insights. Transaction analysis provides a broad evaluation of market demand and an approximate valuation, while each transaction remains unique."
     }
   ]
@@ -4612,7 +4612,7 @@ const caseStudies = [
         "Undertake valuation even when the valuer has an interest in the assets, provided the transaction is important",
         "Make an impartial, true and fair valuation, exercise due diligence and care, and comply with the prescribed rules"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter states that a valuer must make an impartial, true and fair valuation, exercise due diligence and care, and make the valuation in accordance with the prescribed rules."
     },
     {
@@ -4668,7 +4668,7 @@ const caseStudies = [
         "Section 56(2)(viib) applies because a premium is always involved",
         "Section 50B deals with capital gains arising from slump sale transactions, and the consideration received or accruing is deemed the full value of consideration for computing capital gains"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that Section 50B pertains to taxation of capital gains arising from slump sale transactions. The consideration received or accruing from the transfer of an undertaking or business as a whole is deemed the full value of consideration for computing capital gains tax."
     },
     {
@@ -4724,7 +4724,7 @@ const caseStudies = [
         "To guarantee that a company will not issue any further shares",
         "To help prevent dilution of existing shareholders' interests and support transparency and investor protection"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that preferential allotments require fair valuation to prevent dilution of existing shareholders' interests. SEBI requires detailed valuation report disclosures to ensure transparency and safeguard investors' rights."
     },
     {
@@ -4780,7 +4780,7 @@ const caseStudies = [
         "It ensures that the company must use only equity financing",
         "It helps determine the fair value of equity or assets, establish a realistic valuation range and evaluate financing options such as equity, debt or hybrid instruments"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that valuation in capital raising helps determine fair value, establish a realistic valuation range, and support capital structure decisions involving equity financing, debt financing or hybrid instruments while considering cost of capital, risk and shareholder interests."
     },
     {
@@ -4824,7 +4824,7 @@ const caseStudies = [
         "Use valuation information only to determine the company's historical purchase cost",
         "Disclose valuation methodologies, assumptions and key metrics transparently, and explain implications for financial performance, value creation and employee-related matters where relevant"
       ],
-      answer: 3,
+      answer: 2,
       reason: "The chapter explains that transparent disclosure of valuation methodologies, assumptions and key metrics helps investors understand financial performance and value creation potential. It also explains that communication of valuation results and their implications for employee compensation, incentive plans and performance targets can foster ownership and alignment with organisational goals."
     }
   ]
@@ -5669,7 +5669,3769 @@ const caseStudies = [
   ],
   answer: 1,
   reason: "The chapter explains that valuation provides an objective assessment of disputed assets or interests and that valuation reports prepared by qualified professionals may serve as evidence in court proceedings, arbitration or mediation. It also explains that transparent valuation communication can improve stakeholder understanding and that communicating implications for employee compensation, incentive plans and performance targets can foster ownership and alignment with organisational goals."
-}
+},
+// chapter3
+{
+  case_id: "valu_ch3_CS01",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>XYZ Limited is evaluating the value of a business for a proposed acquisition. The valuation professional considers the prices paid for comparable businesses, the future cash flows expected from the business and the value of its underlying assets and liabilities.</p>
+    <p>The professional reviews the purpose of the valuation, the nature of the business, the availability of reliable information and the strengths and limitations of the available valuation methods before selecting the appropriate approach.</p>
+  `,
+  questions: [
+    {
+      question: "Which of the following represents the three principal valuation approaches discussed in the chapter?",
+      options: [
+        "Market approach, income approach and asset-based approach",
+        "Historical approach, prospective approach and statutory approach",
+        "Cost approach, taxation approach and audit approach",
+        "Equity approach, debt approach and dividend approach"
+      ],
+      answer: 0,
+      reason: "The chapter discusses three principal valuation approaches: the market approach, the income approach and the asset-based approach."
+    },
+    {
+      question: "Which factor should be considered when selecting an appropriate valuation approach?",
+      options: [
+        "Only the historical purchase price of the business",
+        "Only the preference of the person commissioning the valuation",
+        "The purpose of valuation, the nature of the asset and the availability of reliable inputs",
+        "Only the number of employees employed by the business"
+      ],
+      answer: 2,
+      reason: "The selection of a valuation approach depends on factors including the background and purpose of the valuation, the nature of the asset, the availability of reliable inputs, and the strengths and limitations of the approaches."
+    },
+    {
+      question: "Which approach primarily uses prices and valuation information relating to comparable assets or businesses?",
+      options: [
+        "Income approach",
+        "Market approach",
+        "Asset-based approach",
+        "Dividend capitalization method exclusively"
+      ],
+      answer: 1,
+      reason: "The market approach uses prices and other relevant information generated by market transactions involving identical or comparable assets or businesses."
+    },
+    {
+      question: "Which valuation approach focuses on the present value of future economic benefits expected from an asset or business?",
+      options: [
+        "Market approach",
+        "Historical cost approach",
+        "Asset-based approach exclusively",
+        "Income approach"
+      ],
+      answer: 2,
+      reason: "The income approach estimates value by converting future economic benefits, such as earnings or cash flows, into a present value."
+    },
+    {
+      question: "Why might a valuation professional consider more than one valuation approach?",
+      options: [
+        "To eliminate the need for professional judgment",
+        "To ensure that every approach produces the same value",
+        "To consider different relevant indications of value and exercise professional judgment in evaluating them",
+        "To avoid considering the purpose of the valuation"
+      ],
+      answer: 2,
+      reason: "Where appropriate, more than one valuation approach may be used. The resulting indications of value may be considered and weighted using professional judgment, having regard to the circumstances of the valuation."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS02",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>PQR Limited is listed on a stock exchange. A valuation professional is estimating the value of its equity shares and examines the prices at which the shares have traded over a reasonable period.</p>
+    <p>The professional also considers the market in which the shares are principally traded and examines trading-volume information to understand whether the observed prices provide a meaningful indication of value.</p>
+  `,
+  questions: [
+    {
+      question: "Which valuation method is particularly relevant when valuing listed shares using their observed market prices?",
+      options: [
+        "Market Price Method",
+        "Discounted Cash Flow Method exclusively",
+        "Net asset method exclusively",
+        "Salvage value method"
+      ],
+      answer: 0,
+      reason: "The Market Price Method uses observed market prices of securities as a basis for valuation, subject to consideration of the relevant trading information and circumstances."
+    },
+    {
+      question: "Why should the valuation professional examine share prices over a reasonable period?",
+      options: [
+        "To ensure that the highest price ever recorded is always selected",
+        "To eliminate the need to examine trading activity",
+        "To establish the historical cost of the company's fixed assets",
+        "To consider the trading-price information over a reasonable period rather than relying automatically on an isolated price"
+      ],
+      answer: 2,
+      reason: "The chapter discusses considering market prices over a reasonable period. The valuation professional should assess relevant trading information rather than automatically relying on a single isolated observation."
+    },
+    {
+      question: "Where the shares trade on more than one market, which market is relevant to consider under the Market Price Method?",
+      options: [
+        "The market with the lowest recorded price in every case",
+        "The market with the highest transaction price in every case",
+        "The market in which the shares have the highest trading volume, as relevant to the method",
+        "A market selected without reference to trading activity"
+      ],
+      answer: 2,
+      reason: "The chapter refers to considering the market with the highest trading volume when applying the Market Price Method, rather than selecting a market solely because it records a particular price."
+    },
+    {
+      question: "Which measure gives consideration to the volume of shares traded at different prices?",
+      options: [
+        "Historical cost",
+        "Volume-weighted average price",
+        "Book value of fixed assets",
+        "Terminal value"
+      ],
+      answer: 1,
+      reason: "A volume-weighted average price gives weight to traded prices according to the corresponding trading volumes."
+    },
+    {
+      question: "Which statement best describes the use of market prices in valuing listed shares?",
+      options: [
+        "Observed prices should be considered with relevant trading information and the circumstances of the valuation",
+        "The lowest observed price must always be adopted",
+        "Market prices are never relevant when valuing listed shares",
+        "The highest observed price must always be adopted regardless of trading volume"
+      ],
+      answer: 0,
+      reason: "The Market Price Method requires consideration of relevant market-price and trading information. A price should not automatically be selected merely because it is the highest or lowest observed price."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS03",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>LMN Limited is not listed on a stock exchange. A valuation professional identifies listed companies operating in a similar business and examines their enterprise values and financial measures, including revenue, EBITDA and profit after tax.</p>
+    <p>The professional compares the companies' business characteristics and considers adjustments for differences between the comparable companies and LMN Limited before applying a suitable valuation multiple.</p>
+  `,
+  questions: [
+    {
+      question: "Which method is commonly used to estimate the value of LMN Limited by reference to comparable listed companies?",
+      options: [
+        "Market Price Method applied directly to LMN Limited's unlisted shares",
+        "Salvage value method",
+        "Comparable Companies Multiple (CCM) Method",
+        "Liquidation value method exclusively"
+      ],
+      answer: 2,
+      reason: "The Comparable Companies Multiple (CCM) Method uses valuation multiples derived from comparable publicly traded companies to estimate the value of the subject company."
+    },
+    {
+      question: "Which of the following is a financial measure that may be used in deriving a comparable-company valuation multiple?",
+      options: [
+        "Number of office chairs",
+        "EBITDA",
+        "Number of pages in the annual report",
+        "Age of the company's registered office"
+      ],
+      answer: 1,
+      reason: "EBITDA is one of the financial measures that may be used to derive comparable-company valuation multiples. Other measures discussed in the chapter include revenue, profit after tax, earnings per share and book value."
+    },
+    {
+      question: "Which consideration is relevant when selecting comparable companies?",
+      options: [
+        "Whether the companies have identical registered-office addresses",
+        "Whether the companies have the same number of directors, irrespective of their businesses",
+        "Whether the companies use identical company names",
+        "Whether the companies have sufficiently comparable business and financial characteristics"
+      ],
+      answer: 2,
+      reason: "Comparable companies should be selected after considering relevant similarities and differences in their business and financial characteristics, among other factors relevant to the valuation."
+    },
+    {
+      question: "Why may an adjustment to a comparable company's valuation multiple be necessary?",
+      options: [
+        "To account for relevant differences between the comparable company and the subject company",
+        "To ensure that all comparable companies have the same reported revenue",
+        "To eliminate the need to select appropriate financial measures",
+        "To ensure that the subject company is valued at book value in every case"
+      ],
+      answer: 0,
+      reason: "Adjustments may be required to account for relevant differences between the comparable companies and the subject company so that the selected multiple can be applied appropriately."
+    },
+    {
+      question: "Which statement correctly describes the CCM Method?",
+      options: [
+        "It values a company solely by adding its historical purchase costs",
+        "It requires every comparable company to have the same share price",
+        "It uses relevant multiples from comparable publicly traded companies, with appropriate consideration of differences",
+        "It can only be used when the subject company is itself listed"
+      ],
+      answer: 2,
+      reason: "The CCM Method uses valuation multiples from comparable publicly traded companies. It may be applied to a subject company that is not listed, provided appropriate comparables and relevant adjustments can be identified."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS04",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>RST Limited is considering the acquisition of a business. The valuation professional reviews information about previous transactions involving comparable businesses and examines the consideration paid and the financial measures of the businesses acquired.</p>
+    <p>The professional selects relevant transaction multiples, considers differences between the transactions and the subject business, and reviews whether any control premium or other transaction-related adjustment is appropriate.</p>
+  `,
+  questions: [
+    {
+      question: "Which method estimates value using multiples derived from transactions involving comparable businesses?",
+      options: [
+        "Market Price Method",
+        "Comparable Transaction Multiple (CTM) Method",
+        "Dividend capitalization method exclusively",
+        "Historical cost method"
+      ],
+      answer: 1,
+      reason: "The Comparable Transaction Multiple (CTM) Method, also referred to as the Guideline Transaction approach, uses valuation information from comparable transactions involving businesses."
+    },
+    {
+      question: "Which source of information is central to the CTM Method?",
+      options: [
+        "Only the historical cost of the subject company's machinery",
+        "Only the current market price of the subject company's listed shares",
+        "Only the expected salvage value of its assets",
+        "Prices and relevant financial information from comparable business transactions"
+      ],
+      answer: 2,
+      reason: "The CTM Method derives relevant valuation multiples from comparable transactions and applies them after considering the characteristics and circumstances of the transactions and the subject business."
+    },
+    {
+      question: "What should the valuation professional consider when selecting comparable transactions?",
+      options: [
+        "The relevance and comparability of the transactions to the subject business and valuation",
+        "Only the alphabetical order of the acquired companies",
+        "Only the number of transactions, regardless of their relevance",
+        "Only the oldest transaction available"
+      ],
+      answer: 0,
+      reason: "The selection of comparable transactions requires consideration of their relevance and comparability, including the characteristics of the businesses and the circumstances of the transactions."
+    },
+    {
+      question: "Why might a control premium be relevant in a transaction-based valuation?",
+      options: [
+        "It represents the annual depreciation of all tangible assets",
+        "It is another name for the company's tax rate",
+        "It may reflect the value associated with obtaining control, where relevant to the valuation",
+        "It must always be added to every valuation multiple, regardless of the transaction"
+      ],
+      answer: 2,
+      reason: "A control premium may be relevant where the transaction or valuation involves a controlling interest. Its applicability depends on the circumstances; it should not automatically be applied to every valuation."
+    },
+    {
+      question: "What is an important consideration when applying premiums or discounts in a CTM valuation?",
+      options: [
+        "Premiums must always be applied twice to transaction multiples",
+        "The professional should avoid double counting a premium or discount already reflected in the transaction multiple",
+        "Discounts are prohibited in all transaction-based valuations",
+        "Transaction multiples never reflect transaction-specific circumstances"
+      ],
+      answer: 1,
+      reason: "The chapter cautions against double counting premiums or discounts. The valuation professional should consider whether the relevant transaction multiple already reflects the circumstances for which an additional adjustment is proposed."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS05",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>UVW Limited expects to generate cash flows from its business over the coming years. A valuation professional prepares forecasts using the available business information and estimates the present value of the expected cash flows using an appropriate discount rate.</p>
+    <p>The professional also considers the explicit forecast period, capital expenditure, working capital requirements, taxation and the value attributable to periods beyond the explicit forecast period.</p>
+  `,
+  questions: [
+    {
+      question: "Which valuation method estimates value by discounting expected future cash flows to their present value?",
+      options: [
+        "Market Price Method",
+        "Comparable Transaction Multiple Method exclusively",
+        "Historical cost method",
+        "Discounted Cash Flow (DCF) Method"
+      ],
+      answer: 2,
+      reason: "The Discounted Cash Flow Method estimates value by discounting expected future cash flows to their present value using an appropriate discount rate."
+    },
+    {
+      question: "What is the purpose of applying a discount rate to projected future cash flows?",
+      options: [
+        "To convert future cash flows into their present value",
+        "To convert every forecast into historical revenue",
+        "To eliminate all uncertainty from the projections",
+        "To ensure that every future cash flow has the same nominal amount"
+      ],
+      answer: 0,
+      reason: "The discount rate is used to calculate the present value of future cash flows, reflecting the time value of money and the relevant risks associated with those cash flows."
+    },
+    {
+      question: "Which of the following should be considered when preparing cash flow projections for a DCF valuation?",
+      options: [
+        "Only the company's registered-office address",
+        "Only the number of shareholders",
+        "Capital expenditure, working capital requirements and taxation",
+        "Only the historical issue price of the company's shares"
+      ],
+      answer: 2,
+      reason: "The chapter identifies factors such as capital expenditure, working capital requirements and taxation as relevant to the preparation of cash flow projections."
+    },
+    {
+      question: "What does the explicit forecast period represent in a DCF valuation?",
+      options: [
+        "The period before the business commenced operations",
+        "The period for which cash flows are specifically projected",
+        "The period during which no discount rate is required",
+        "The period in which terminal value must be zero"
+      ],
+      answer: 1,
+      reason: "The explicit forecast period is the period for which cash flows are specifically projected. Its length depends on relevant factors concerning the business and the valuation."
+    },
+    {
+      question: "What is the purpose of terminal value in a DCF valuation?",
+      options: [
+        "To replace all cash flows in the explicit forecast period",
+        "To represent only the historical cost of the business",
+        "To eliminate the need for an appropriate discount rate",
+        "To estimate value attributable to cash flows beyond the explicit forecast period"
+      ],
+      answer: 2,
+      reason: "Terminal value estimates the value attributable to periods beyond the explicit forecast period and is an important component of many DCF valuations."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS06",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>ABC Limited is estimating its equity value using a discounted cash flow model. The valuation professional considers whether the model uses cash flows available to equity shareholders or cash flows available to all providers of capital.</p>
+    <p>The professional also reviews the discount rate appropriate to the selected cash flows and considers the adjustments required when deriving equity value from enterprise value.</p>
+  `,
+  questions: [
+    {
+      question: "Which cash flow measure represents cash flows available to equity shareholders?",
+      options: [
+        "Free Cash Flow to the Firm (FCFF)",
+        "Enterprise value",
+        "Free Cash Flow to Equity (FCFE)",
+        "Weighted Average Cost of Capital (WACC)"
+      ],
+      answer: 2,
+      reason: "Free Cash Flow to Equity (FCFE) represents cash flows available to equity shareholders after accounting for relevant operating requirements and financing cash flows."
+    },
+    {
+      question: "Which cash flow measure is associated with cash flows available to all providers of capital?",
+      options: [
+        "Free Cash Flow to the Firm (FCFF)",
+        "Dividend per share exclusively",
+        "Earnings per share exclusively",
+        "Free Cash Flow to Equity (FCFE) exclusively"
+      ],
+      answer: 0,
+      reason: "Free Cash Flow to the Firm (FCFF) represents cash flows available to all providers of capital before payments attributable to the financing claims of debt and equity providers."
+    },
+    {
+      question: "Which discount rate is generally associated with discounting FCFE?",
+      options: [
+        "Cost of debt only",
+        "Weighted Average Cost of Capital in every case",
+        "The historical interest rate on every borrowing, without adjustment",
+        "Cost of equity"
+      ],
+      answer: 2,
+      reason: "FCFE is generally discounted at the cost of equity because the cash flows are available to equity shareholders."
+    },
+    {
+      question: "Which discount rate is generally associated with discounting FCFF?",
+      options: [
+        "Dividend yield only",
+        "Weighted Average Cost of Capital (WACC)",
+        "Cost of equity in every case, irrespective of the cash flow measure",
+        "Historical cost of fixed assets"
+      ],
+      answer: 1,
+      reason: "FCFF is generally discounted at the Weighted Average Cost of Capital (WACC), which reflects the relevant costs of the firm's sources of capital."
+    },
+    {
+      question: "When deriving equity value from enterprise value, which adjustment is generally relevant?",
+      options: [
+        "Adding all operating expenses to enterprise value",
+        "Replacing enterprise value with annual revenue",
+        "Adjusting for debt and cash, together with other relevant non-equity claims or non-operating items, as appropriate",
+        "Ignoring the company's financing position"
+      ],
+      answer: 2,
+      reason: "Enterprise value and equity value are different measures. Deriving equity value from enterprise value generally requires relevant adjustments for debt, cash and other applicable claims or non-operating items."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS07",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>A valuation professional is estimating the cost of equity of DEF Limited using the Capital Asset Pricing Model (CAPM). The professional considers the risk-free rate, the equity risk premium and the company's beta.</p>
+    <p>The professional also reviews whether the beta of a comparable company should be adjusted to reflect differences in capital structure before it is used to estimate the beta relevant to DEF Limited.</p>
+  `,
+  questions: [
+    {
+      question: "Which of the following is a component used in the Capital Asset Pricing Model to estimate the cost of equity?",
+      options: [
+        "Risk-free rate",
+        "Historical cost of inventory",
+        "Annual depreciation of all assets",
+        "Book value of revenue"
+      ],
+      answer: 0,
+      reason: "The Capital Asset Pricing Model uses the risk-free rate, beta and the equity risk premium to estimate the cost of equity."
+    },
+    {
+      question: "What does beta measure in the context of CAPM?",
+      options: [
+        "The company's total annual revenue",
+        "The historical cost of the company's assets",
+        "The company's statutory tax rate",
+        "The sensitivity of the security's returns to movements in the relevant market returns"
+      ],
+      answer: 2,
+      reason: "Beta measures the sensitivity of a security's returns to movements in the relevant market returns and is used as an indicator of systematic risk in CAPM."
+    },
+    {
+      question: "What is the purpose of unlevering a comparable company's beta?",
+      options: [
+        "To convert beta directly into the company's annual revenue",
+        "To remove the effect of the comparable company's capital structure from its beta",
+        "To calculate the company's historical share price",
+        "To eliminate all business risk from the comparable company"
+      ],
+      answer: 1,
+      reason: "Unlevering beta removes the effect of financial leverage, allowing the underlying business risk to be considered separately from the comparable company's capital structure."
+    },
+    {
+      question: "Why might a valuation professional relever an unlevered beta?",
+      options: [
+        "To eliminate the need to estimate the cost of equity",
+        "To convert the beta into an accounting profit",
+        "To reflect the relevant capital structure of the subject company",
+        "To calculate the risk-free rate from the company's revenue"
+      ],
+      answer: 2,
+      reason: "Relevering beta adjusts the unlevered beta to reflect the relevant capital structure of the subject company when estimating its cost of equity."
+    },
+    {
+      question: "Which expression represents the CAPM relationship for estimating the cost of equity?",
+      options: [
+        "Cost of equity = Risk-free rate + Beta × Equity risk premium",
+        "Cost of equity = Revenue − Operating expenses",
+        "Cost of equity = Total assets ÷ Total liabilities",
+        "Cost of equity = Tax rate + Annual depreciation"
+      ],
+      answer: 0,
+      reason: "Under CAPM, the cost of equity is calculated as the risk-free rate plus beta multiplied by the equity risk premium."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS08",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>GHI Limited is determining its Weighted Average Cost of Capital (WACC) for use in a valuation. The professional estimates the cost of equity and the cost of debt and considers the relative weights of the company's sources of capital.</p>
+    <p>The professional also examines whether market values or book values are appropriate for determining the capital weights and considers the tax implications associated with the cost of debt.</p>
+  `,
+  questions: [
+    {
+      question: "What does WACC represent?",
+      options: [
+        "The company's average historical sales growth",
+        "The total book value of all assets",
+        "The weighted average cost of the relevant sources of capital",
+        "The company's annual dividend per share"
+      ],
+      answer: 2,
+      reason: "Weighted Average Cost of Capital represents the weighted average cost of the relevant sources of capital, including equity and debt."
+    },
+    {
+      question: "Which of the following is a relevant component when calculating WACC?",
+      options: [
+        "The number of customers only",
+        "The cost of equity and the cost of debt, together with their relevant capital weights",
+        "The company's registered-office address",
+        "The historical cost of inventory only"
+      ],
+      answer: 1,
+      reason: "WACC incorporates the relevant costs of equity and debt and weights them according to the respective proportions of the sources of capital."
+    },
+    {
+      question: "Which cost of debt is generally relevant when tax deductibility of interest is considered in WACC?",
+      options: [
+        "The cost of debt before any consideration of tax in every case",
+        "The company's dividend yield",
+        "The historical purchase cost of debt-financed assets",
+        "The after-tax cost of debt"
+      ],
+      answer: 2,
+      reason: "When the tax effect of interest is considered in WACC, the after-tax cost of debt is generally used to reflect the tax benefit associated with deductible interest, where applicable."
+    },
+    {
+      question: "Which statement regarding capital weights is consistent with the chapter's discussion of WACC?",
+      options: [
+        "The professional should consider whether market-value or book-value weights are appropriate",
+        "Book-value weights must always be used, irrespective of the valuation circumstances",
+        "Market values are never relevant to capital weights",
+        "Capital weights are unnecessary when calculating WACC"
+      ],
+      answer: 0,
+      reason: "The chapter discusses market-value and book-value weights. The valuation professional should consider the appropriate basis for weighting the sources of capital in the circumstances."
+    },
+    {
+      question: "Which statement best describes the role of WACC in a DCF valuation using FCFF?",
+      options: [
+        "It is used to calculate the historical purchase price of the company's assets",
+        "It replaces the need to project future cash flows",
+        "It is generally used as the discount rate for FCFF",
+        "It is identical to the company's annual revenue"
+      ],
+      answer: 2,
+      reason: "WACC is generally used to discount Free Cash Flow to the Firm because FCFF represents cash flows available to all providers of capital."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS09",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>JKL Limited is applying an income-based valuation method. The valuation professional estimates the value of the business using projected cash flows and evaluates the period beyond the explicit forecast period using a terminal value approach.</p>
+    <p>The professional considers the constant-growth model and an exit-multiple approach, while reviewing the sustainability of the expected growth rate and its relationship with the discount rate.</p>
+  `,
+  questions: [
+    {
+      question: "Which of the following is a terminal value method discussed in the chapter?",
+      options: [
+        "Historical invoice method",
+        "Constant-growth model",
+        "Employee-count method",
+        "Registered-office method"
+      ],
+      answer: 1,
+      reason: "The chapter discusses methods of estimating terminal value, including the Gordon constant-growth model, the exit-multiple method and salvage or liquidation value where relevant."
+    },
+    {
+      question: "What is an important consideration when estimating terminal value using a constant-growth model?",
+      options: [
+        "The growth rate must always be higher than the discount rate",
+        "The discount rate is unnecessary",
+        "The terminal value must equal the book value of fixed assets",
+        "The growth rate must be considered in relation to the discount rate and the long-term growth assumptions"
+      ],
+      answer: 2,
+      reason: "The constant-growth model requires a sustainable long-term growth assumption that is considered in relation to the discount rate. The relationship between these rates materially affects the result."
+    },
+    {
+      question: "What happens to the constant-growth terminal value formula when the growth rate approaches the discount rate from below, assuming positive cash flows?",
+      options: [
+        "The denominator approaches zero and the calculated terminal value can increase sharply",
+        "The terminal value necessarily becomes zero",
+        "The terminal value necessarily becomes equal to annual revenue",
+        "The discount rate ceases to affect the valuation"
+      ],
+      answer: 0,
+      reason: "In the constant-growth model, terminal value is calculated using a denominator equal to the discount rate less the growth rate. As the growth rate approaches the discount rate from below, that denominator approaches zero and the calculated terminal value can increase sharply."
+    },
+    {
+      question: "Which of the following is another method of estimating terminal value?",
+      options: [
+        "Selecting the oldest available share price without analysis",
+        "Using the number of employees as terminal value without a valuation basis",
+        "Applying an appropriate exit multiple to a relevant financial measure",
+        "Adding the company's historical incorporation expenses to revenue"
+      ],
+      answer: 2,
+      reason: "The exit-multiple method estimates terminal value by applying an appropriate valuation multiple to a relevant financial measure at the end of the explicit forecast period."
+    },
+    {
+      question: "Why should a valuation professional carefully assess the long-term growth rate used in the constant-growth model?",
+      options: [
+        "Because the growth rate determines the historical cost of the company's assets",
+        "Because the growth assumption must be sustainable and consistent with the relevant long-term economic context",
+        "Because the growth rate must always be zero",
+        "Because the growth rate replaces the need to estimate cash flows"
+      ],
+      answer: 1,
+      reason: "The chapter highlights the importance of the long-term growth assumption and its relationship with broader economic growth and the discount rate. An inappropriate growth assumption can materially distort terminal value."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS10",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>MNO Limited is being valued using information from the market and its underlying assets. The valuation professional reviews market transactions involving comparable businesses and considers whether the observed information relates to active markets and orderly transactions.</p>
+    <p>The professional distinguishes between observable and unobservable inputs and considers whether any discounts or premiums are relevant to the interest being valued, including a possible discount for lack of marketability.</p>
+  `,
+  questions: [
+    {
+      question: "What is an observable input in a valuation context?",
+      options: [
+        "An input developed exclusively from the valuation professional's unsupported assumptions",
+        "An input that is never available from market information",
+        "An input that must always be based on the subject company's historical cost",
+        "An input developed using market data, such as information from actual transactions or other observable market information"
+      ],
+      answer: 2,
+      reason: "Observable inputs are developed using market data, including information from actual transactions or other market information that is available for use in the valuation."
+    },
+    {
+      question: "Which statement best describes an unobservable input?",
+      options: [
+        "An input for which relevant market data is not available and which is developed using the best information available in the circumstances",
+        "An input that is always equal to the latest quoted share price",
+        "An input that cannot be used in any valuation under any circumstances",
+        "An input that must be taken only from a stock exchange"
+      ],
+      answer: 0,
+      reason: "Unobservable inputs are inputs for which relevant market data is unavailable and which are developed using the best information available in the circumstances, consistent with the valuation objective."
+    },
+    {
+      question: "What is an active market, in general valuation terminology?",
+      options: [
+        "A market in which no transactions take place",
+        "A market where prices are determined solely by one company's management",
+        "A market in which transactions for the asset or liability occur with sufficient frequency and volume to provide pricing information on an ongoing basis",
+        "A market where all assets must have identical historical costs"
+      ],
+      answer: 2,
+      reason: "An active market is generally one in which transactions for the asset or liability occur with sufficient frequency and volume to provide pricing information on an ongoing basis."
+    },
+    {
+      question: "Which statement best describes an orderly transaction?",
+      options: [
+        "A transaction that occurs only between related parties",
+        "A transaction that assumes exposure to the market for a period customary for transactions involving such assets or liabilities, rather than a forced liquidation or distress sale",
+        "A transaction that must occur immediately, regardless of market exposure",
+        "A transaction in which the seller is always compelled to accept any price"
+      ],
+      answer: 1,
+      reason: "An orderly transaction assumes exposure to the market for a period customary for transactions involving such assets or liabilities. It is distinguished from a forced transaction, such as a forced liquidation or distress sale."
+    },
+    {
+      question: "What should be considered before applying a discount for lack of marketability (DLOM)?",
+      options: [
+        "A DLOM must always be applied to every asset and every valuation",
+        "A DLOM is identical to the company's income tax rate",
+        "Marketability discounts are prohibited in all valuations",
+        "Whether a discount is appropriate for the interest being valued and whether the relevant lack of marketability is already reflected in the valuation"
+      ],
+      answer: 2,
+      reason: "A discount for lack of marketability may be relevant depending on the interest and valuation circumstances. The professional should assess its appropriateness and avoid double counting a factor already reflected in the valuation."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS11",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>LMN Limited is valuing a business for which information about comparable companies and transactions is available. The valuation professional considers whether the available market information is relevant and sufficiently reliable for the purpose of valuation.</p>
+    <p>The professional also examines differences between the subject business and the comparable businesses and considers the strengths and limitations of relying on market evidence.</p>
+  `,
+  questions: [
+    {
+      question: "When is the market approach particularly relevant?",
+      options: [
+        "When the valuation must be based exclusively on historical expenditure",
+        "When future cash flows are the only information considered",
+        "When relevant market information relating to comparable assets or businesses is available",
+        "When no market information can be obtained"
+      ],
+      answer: 2,
+      reason: "The market approach is relevant when market prices and other information relating to identical or comparable assets or businesses are available and can be used appropriately in the valuation."
+    },
+    {
+      question: "Which is an important advantage of the market approach?",
+      options: [
+        "It uses market evidence that can reflect the pricing of market participants",
+        "It guarantees that the valuation will equal the eventual selling price",
+        "It eliminates the need to examine comparable transactions",
+        "It does not require consideration of market conditions"
+      ],
+      answer: 0,
+      reason: "The market approach uses market evidence that can reflect the pricing and expectations of market participants. However, the resulting indication of value is not a guarantee of the eventual transaction price."
+    },
+    {
+      question: "Which of the following is a potential limitation of the market approach?",
+      options: [
+        "It always requires a detailed forecast of the subject company's cash flows",
+        "It cannot use information from transactions",
+        "It is based solely on the accounting policies of the subject company",
+        "Relevant comparable companies or transactions may be limited, or differences may require adjustments"
+      ],
+      answer: 2,
+      reason: "The usefulness of the market approach can be limited by a lack of relevant comparable information and by differences between the subject asset or business and the available comparables."
+    },
+    {
+      question: "What should the valuation professional do when significant differences exist between the subject business and comparable businesses?",
+      options: [
+        "Ignore the differences because market multiples are always directly transferable",
+        "Evaluate the differences and consider appropriate adjustments when applying the valuation evidence",
+        "Automatically adopt the lowest available market multiple",
+        "Replace the market approach with historical cost in every case"
+      ],
+      answer: 1,
+      reason: "Relevant differences between the subject business and comparables must be considered. Appropriate adjustments may be necessary before market multiples are applied."
+    },
+    {
+      question: "Which principle should guide the valuation professional when considering valuation inputs?",
+      options: [
+        "Use unobservable inputs exclusively in every valuation",
+        "Ignore relevant market information whenever management forecasts are available",
+        "Maximise the use of relevant observable inputs and minimise the use of unobservable inputs, where appropriate",
+        "Select inputs solely because they produce the highest valuation"
+      ],
+      answer: 2,
+      reason: "The chapter emphasises maximising the use of relevant observable inputs and minimising the use of unobservable inputs, consistent with the valuation objective and the circumstances."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS12",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>ABC Limited is evaluating the value of a business using an enterprise-value-based multiple. The valuation professional examines the value attributable to the business operations and separately reviews the company's debt, cash balances and non-operating assets.</p>
+    <p>The professional must determine the enterprise value and then consider the adjustments required to estimate the value attributable to equity shareholders.</p>
+  `,
+  questions: [
+    {
+      question: "What does enterprise value generally represent in a business valuation?",
+      options: [
+        "The historical cost of all assets recorded in the balance sheet",
+        "The value attributable exclusively to ordinary equity shareholders, without considering debt",
+        "The company's annual revenue",
+        "The value of the business attributable to its providers of capital, before the relevant adjustments to derive equity value"
+      ],
+      answer: 2,
+      reason: "Enterprise value represents the value of the business attributable to its providers of capital. Relevant adjustments are generally required to derive the value attributable to equity shareholders."
+    },
+    {
+      question: "Which of the following is an example of an equity-value-based valuation multiple?",
+      options: [
+        "Enterprise value divided by EBITDA",
+        "Price-to-earnings (P/E) ratio",
+        "Enterprise value divided by revenue",
+        "Enterprise value divided by EBIT"
+      ],
+      answer: 1,
+      reason: "The price-to-earnings ratio is an equity-value-based multiple, relating the market price of equity to earnings attributable to equity shareholders."
+    },
+    {
+      question: "When deriving equity value from enterprise value, what should be considered?",
+      options: [
+        "Relevant adjustments for debt, cash and other applicable claims or non-operating items",
+        "Only the number of employees",
+        "Only annual sales growth",
+        "The historical cost of every expense, without considering the financing position"
+      ],
+      answer: 0,
+      reason: "The reconciliation from enterprise value to equity value generally considers debt, cash and other relevant claims or non-operating items, as applicable to the valuation."
+    },
+    {
+      question: "Which of the following is an enterprise-value-based multiple?",
+      options: [
+        "Price-to-earnings ratio",
+        "Price-to-book-value ratio",
+        "Enterprise value to EBITDA",
+        "Price-to-earnings-per-share ratio"
+      ],
+      answer: 2,
+      reason: "Enterprise value to EBITDA is an enterprise-value-based multiple. It relates enterprise value to a measure of operating performance."
+    },
+    {
+      question: "Why is it important to distinguish between enterprise value and equity value?",
+      options: [
+        "Both values must always be identical",
+        "Equity value always excludes the company's operating business",
+        "Enterprise value represents only cash held by the company",
+        "The two measures relate to different claims on value and require appropriate reconciliation"
+      ],
+      answer: 2,
+      reason: "Enterprise value and equity value represent different measures of business value. Appropriate adjustments for financing claims and other relevant items are necessary when moving from one measure to the other."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS13",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>DEF Limited is being valued using information from previous acquisitions of comparable businesses. The valuation professional reviews the consideration paid in those transactions, the financial measures used to derive transaction multiples and the circumstances under which the transactions occurred.</p>
+    <p>The professional also considers whether transaction-specific factors, including the acquisition of control, are already reflected in the available valuation evidence.</p>
+  `,
+  questions: [
+    {
+      question: "Which method is most directly associated with using multiples from comparable business acquisitions?",
+      options: [
+        "Market Price Method based exclusively on listed share prices",
+        "Comparable Transaction Multiple (CTM) Method",
+        "Dividend capitalization method exclusively",
+        "Historical cost method"
+      ],
+      answer: 1,
+      reason: "The Comparable Transaction Multiple Method uses relevant valuation multiples derived from transactions involving comparable businesses."
+    },
+    {
+      question: "Which factor is relevant when assessing a transaction for use as a comparable transaction?",
+      options: [
+        "The alphabetical order of the acquired company's name",
+        "The number of pages in the transaction agreement, considered alone",
+        "Whether the target company has the same registered-office address as the subject company",
+        "The similarity of the businesses and the circumstances of the transactions"
+      ],
+      answer: 2,
+      reason: "The relevance of a comparable transaction depends on the comparability of the businesses and the circumstances of the transaction, among other valuation-related factors."
+    },
+    {
+      question: "What does a transaction multiple generally relate?",
+      options: [
+        "The consideration or transaction value to a relevant financial measure of the business",
+        "The number of employees to the number of shareholders",
+        "The historical cost of assets to the age of the business",
+        "The company's registered capital to the number of offices"
+      ],
+      answer: 0,
+      reason: "A transaction multiple relates the value or consideration associated with a transaction to an appropriate financial measure of the business, such as revenue or EBITDA."
+    },
+    {
+      question: "What should the valuation professional consider before applying an additional control premium?",
+      options: [
+        "Whether the control premium must be added twice",
+        "Whether every transaction requires an identical control premium",
+        "Whether the transaction evidence already reflects control-related value, to avoid double counting",
+        "Whether control premiums can replace the need for comparable transactions"
+      ],
+      answer: 2,
+      reason: "A control premium should not be applied automatically. The valuation professional should assess the nature of the interest being valued and whether control-related value is already reflected in the transaction evidence."
+    },
+    {
+      question: "Why should the circumstances of a comparable transaction be reviewed?",
+      options: [
+        "To ensure that all transactions are assigned the same multiple",
+        "To assess whether the transaction provides relevant valuation evidence for the subject business",
+        "To eliminate the need to consider financial measures",
+        "To ensure that the oldest transaction is always selected"
+      ],
+      answer: 1,
+      reason: "Reviewing transaction circumstances helps determine whether the transaction is sufficiently relevant and comparable to provide a useful indication of value."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS14",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>GHI Limited is comparing its valuation multiples with those of companies operating in the same industry. The valuation professional examines the price-to-earnings ratio, price-to-cash-flow ratio, price-to-sales ratio and price-to-book-value ratio.</p>
+    <p>The professional checks the financial measure underlying each multiple and evaluates whether the selected industry comparisons are relevant to GHI Limited.</p>
+  `,
+  questions: [
+    {
+      question: "What does the price-to-earnings (P/E) ratio generally compare?",
+      options: [
+        "Market price per share with earnings per share",
+        "Enterprise value with EBITDA",
+        "Total assets with total liabilities",
+        "Revenue with capital expenditure"
+      ],
+      answer: 0,
+      reason: "The P/E ratio is generally calculated by dividing the market price per share by earnings per share."
+    },
+    {
+      question: "Which financial measure is used in the price-to-cash-flow (P/CF) ratio?",
+      options: [
+        "Total liabilities only",
+        "Enterprise value only",
+        "Cash flow per share",
+        "Historical cost of fixed assets"
+      ],
+      answer: 2,
+      reason: "The P/CF ratio relates the market price per share to cash flow per share, using an appropriately defined cash flow measure."
+    },
+    {
+      question: "Which measure is associated with the price-to-sales (P/S) ratio?",
+      options: [
+        "Debt divided by the tax rate",
+        "Market price per share relative to sales per share",
+        "Enterprise value divided by interest expense",
+        "Book value per share relative to earnings per share"
+      ],
+      answer: 1,
+      reason: "The P/S ratio relates the market price per share to sales per share."
+    },
+    {
+      question: "What does the price-to-book-value (P/B) ratio generally compare?",
+      options: [
+        "Annual revenue with EBITDA",
+        "Enterprise value with total debt",
+        "Cash flow with capital expenditure",
+        "Market price per share with book value per share"
+      ],
+      answer: 2,
+      reason: "The P/B ratio generally compares the market price per share with the book value per share."
+    },
+    {
+      question: "What should be considered when comparing GHI Limited's multiples with industry multiples?",
+      options: [
+        "The comparability of the companies, their financial measures and relevant differences",
+        "Only whether the industry has more companies than GHI Limited",
+        "Whether the highest multiple produces the highest valuation, irrespective of relevance",
+        "Whether all companies have identical share prices"
+      ],
+      answer: 0,
+      reason: "Industry multiples should be interpreted with due regard to the comparability of the companies, the financial measures used and relevant differences that may affect valuation."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS15",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>JKL Limited has prepared business plans containing estimates of future earnings and cash flows. A valuation professional evaluates the reliability of the projections and considers whether they can reasonably be used to estimate the value of the business.</p>
+    <p>The professional also reviews the purpose of the valuation and considers whether an income-based approach should be used alone or together with other appropriate valuation approaches.</p>
+  `,
+  questions: [
+    {
+      question: "What is the fundamental principle of the income approach?",
+      options: [
+        "Valuing a business solely by its incorporation cost",
+        "Selecting the highest available market price",
+        "Converting expected future economic benefits into a present value",
+        "Ignoring the timing of future cash flows"
+      ],
+      answer: 2,
+      reason: "The income approach estimates value by converting future economic benefits, such as earnings or cash flows, into a present value."
+    },
+    {
+      question: "Which condition supports the use of an income-based valuation method?",
+      options: [
+        "The business has no potential to generate any economic benefits",
+        "Future earnings or cash flows can be reasonably projected using the available information",
+        "The valuation professional must disregard all business forecasts",
+        "Historical costs are the only available information in every case"
+      ],
+      answer: 1,
+      reason: "An income-based approach is particularly relevant when future earnings or cash flows can be reasonably projected and can support a meaningful valuation."
+    },
+    {
+      question: "Why should a valuation professional evaluate the reliability of management's projections?",
+      options: [
+        "To ensure that forecasts always increase every year",
+        "To eliminate the need for a discount rate",
+        "To make the projections equal to historical costs",
+        "To assess whether the projections provide a reasonable basis for estimating future economic benefits"
+      ],
+      answer: 2,
+      reason: "The reasonableness and reliability of projected earnings or cash flows are important because the income approach depends on estimates of future economic benefits."
+    },
+    {
+      question: "Which of the following is a relevant consideration when applying an income-based approach?",
+      options: [
+        "The timing and risk associated with expected future economic benefits",
+        "Only the company's registered-office address",
+        "Only the number of pages in its financial statements",
+        "The historical price of the company's stationery"
+      ],
+      answer: 0,
+      reason: "An income-based valuation requires consideration of the timing of expected future economic benefits and the risks relevant to those benefits, which are reflected in the valuation assumptions and discount rate."
+    },
+    {
+      question: "Which statement about using the income approach together with other valuation approaches is correct?",
+      options: [
+        "The income approach must always be the only approach used",
+        "Other valuation approaches are prohibited when forecasts are available",
+        "More than one appropriate approach may be considered, depending on the valuation circumstances",
+        "Every approach must produce an identical indication of value"
+      ],
+      answer: 2,
+      reason: "Depending on the valuation circumstances, purpose and availability of reliable information, a valuation professional may consider more than one approach and use professional judgment in evaluating the resulting indications of value."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS16",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>MNO Limited is preparing a discounted cash flow valuation. The valuation professional reviews the company's operating forecasts, planned capital expenditure, working capital requirements and expected tax payments.</p>
+    <p>The professional also conducts appropriate due diligence on the underlying assumptions and determines a suitable explicit forecast period before estimating the value of cash flows beyond that period.</p>
+  `,
+  questions: [
+    {
+      question: "Why is due diligence relevant when preparing a DCF valuation?",
+      options: [
+        "It ensures that the company will achieve every forecast",
+        "It removes the need to estimate future cash flows",
+        "It guarantees that the selected discount rate is correct",
+        "It helps assess the information and assumptions supporting the projected cash flows"
+      ],
+      answer: 2,
+      reason: "Due diligence helps the valuation professional evaluate the available information and the reasonableness of assumptions used in preparing cash flow projections."
+    },
+    {
+      question: "Which item should be considered when projecting free cash flows?",
+      options: [
+        "Only the number of shareholders",
+        "Capital expenditure and changes in working capital",
+        "Only the historical market price of the company's shares",
+        "Only the cost of incorporating the company"
+      ],
+      answer: 1,
+      reason: "Capital expenditure and working capital requirements are relevant considerations in estimating future free cash flows."
+    },
+    {
+      question: "How should taxation be treated when preparing projected cash flows?",
+      options: [
+        "It should always be ignored because taxation does not affect cash flow",
+        "It should be replaced by the company's total assets",
+        "Relevant tax payments should be considered in estimating the applicable cash flows",
+        "It should be added to revenue without further analysis"
+      ],
+      answer: 2,
+      reason: "Taxation is a relevant element of projected cash flows and should be considered in accordance with the cash flow measure and the assumptions used in the valuation."
+    },
+    {
+      question: "What is the explicit forecast period in a DCF valuation?",
+      options: [
+        "The period for which the cash flows are specifically projected",
+        "The period before the business was incorporated",
+        "The period for which cash flows are assumed to have no risk",
+        "The period after terminal value has been calculated"
+      ],
+      answer: 0,
+      reason: "The explicit forecast period is the period for which the valuation professional prepares specific projections of future cash flows."
+    },
+    {
+      question: "Which statement about determining the explicit forecast period is most appropriate?",
+      options: [
+        "It must always be exactly one year for every business",
+        "It must always equal the remaining legal life of the company",
+        "It is determined solely by the number of shareholders",
+        "It should be determined by considering the relevant characteristics of the business and the reliability and nature of the forecasts"
+      ],
+      answer: 2,
+      reason: "The explicit forecast period should be selected with reference to relevant factors affecting the business, its expected development and the availability and reliability of projections."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS17",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>PQR Limited is estimating its cost of equity using a dividend capitalization approach. The valuation professional reviews the expected dividend, the current market price of the equity share and the assumption regarding long-term dividend growth.</p>
+    <p>The professional considers whether the assumptions are reasonable and whether this method is appropriate for the company's dividend policy and the purpose of the valuation.</p>
+  `,
+  questions: [
+    {
+      question: "Which information is relevant when estimating the cost of equity using a dividend capitalization approach?",
+      options: [
+        "Only the historical cost of the company's fixed assets",
+        "Expected dividends, the current market price of equity and, where applicable, the expected dividend growth rate",
+        "Only the number of employees",
+        "Only the company's total liabilities"
+      ],
+      answer: 1,
+      reason: "The dividend capitalization approach relates expected dividends to the market price of equity. Under a constant-growth formulation, the expected dividend growth rate is also relevant."
+    },
+    {
+      question: "Under the constant-growth dividend capitalization model, which expression represents the cost of equity?",
+      options: [
+        "Cost of equity = Revenue minus operating expenses",
+        "Cost of equity = Total assets divided by total liabilities",
+        "Cost of equity = Expected next dividend divided by current market price, plus the expected growth rate",
+        "Cost of equity = Tax rate plus depreciation"
+      ],
+      answer: 2,
+      reason: "Under the constant-growth dividend capitalization model, the cost of equity is estimated as the expected dividend for the next period divided by the current market price, plus the expected constant dividend growth rate."
+    },
+    {
+      question: "In the constant-growth dividend capitalization model, which dividend is generally used in the dividend-yield component?",
+      options: [
+        "The expected dividend for the next period",
+        "The company's total annual revenue",
+        "The book value of equity",
+        "The company's total capital expenditure"
+      ],
+      answer: 0,
+      reason: "The constant-growth model uses the expected dividend for the next period in the dividend-yield component, commonly expressed as D1 divided by the current market price P0."
+    },
+    {
+      question: "Why should the expected dividend growth rate be assessed carefully?",
+      options: [
+        "It is always equal to the tax rate",
+        "It replaces the need to consider the market price",
+        "It has no effect on the cost of equity under the model",
+        "The model depends on a reasonable and sustainable growth assumption"
+      ],
+      answer: 2,
+      reason: "The constant-growth dividend capitalization model depends on a reasonable long-term growth assumption. An inappropriate growth rate can lead to an unreliable estimate of the cost of equity."
+    },
+    {
+      question: "Which statement about the dividend capitalization approach is most appropriate?",
+      options: [
+        "It guarantees a particular future market price for the shares",
+        "Its usefulness depends on the suitability of the dividend information and the assumptions used",
+        "It requires no information about expected dividends",
+        "It is identical to the Comparable Transaction Multiple Method"
+      ],
+      answer: 1,
+      reason: "The dividend capitalization approach depends on the expected dividends and the assumptions underlying the model. The professional should assess whether the method is appropriate for the company and the valuation circumstances."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS18",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>RST Limited operates in a particular functional currency and prepares projected cash flows in that currency. A valuation professional estimates the cost of equity using the Capital Asset Pricing Model (CAPM).</p>
+    <p>In determining the discount rate, the professional considers the risk-free rate, the equity risk premium and beta, while ensuring that the selected inputs are consistent with the currency and assumptions underlying the projected cash flows.</p>
+  `,
+  questions: [
+    {
+      question: "What does the risk-free rate represent in the CAPM framework?",
+      options: [
+        "The company's expected annual revenue growth",
+        "The return on the company's ordinary equity shares",
+        "The company's average cost of inventory",
+        "A return used as the risk-free reference point in estimating the cost of equity"
+      ],
+      answer: 2,
+      reason: "In CAPM, the risk-free rate provides the risk-free reference return used with beta and the equity risk premium to estimate the cost of equity."
+    },
+    {
+      question: "When selecting a risk-free rate for a valuation, why is currency consistency important?",
+      options: [
+        "The currency of the discount-rate assumptions should be consistent with the currency of the projected cash flows",
+        "The risk-free rate must always be expressed in the company's number of shares",
+        "The currency does not matter in any valuation",
+        "The risk-free rate must always be the same for every currency"
+      ],
+      answer: 0,
+      reason: "The currency assumptions used in the discount rate should be consistent with the currency in which the projected cash flows are expressed. Using inconsistent currencies can distort the valuation."
+    },
+    {
+      question: "What does the equity risk premium represent in CAPM?",
+      options: [
+        "The company's total book value",
+        "The annual depreciation rate",
+        "The additional return expected from the market over the risk-free rate",
+        "The difference between total assets and total liabilities"
+      ],
+      answer: 2,
+      reason: "The equity risk premium represents the additional return expected from the market over the risk-free rate and is multiplied by beta in the CAPM relationship."
+    },
+    {
+      question: "Which expression is consistent with CAPM?",
+      options: [
+        "Cost of equity = Revenue divided by total assets",
+        "Cost of equity = Risk-free rate + Beta multiplied by the equity risk premium",
+        "Cost of equity = Total debt plus depreciation",
+        "Cost of equity = Tax rate multiplied by annual sales"
+      ],
+      answer: 1,
+      reason: "CAPM estimates the cost of equity as the risk-free rate plus beta multiplied by the equity risk premium."
+    },
+    {
+      question: "What should the valuation professional consider when selecting inputs for the cost of equity?",
+      options: [
+        "Only the assumptions that produce the highest valuation",
+        "Only the company's historical purchase price",
+        "Only the company's total number of shareholders",
+        "Whether the inputs are relevant and consistent with the valuation circumstances and the projected cash flows"
+      ],
+      answer: 2,
+      reason: "The inputs used to estimate the cost of equity should be relevant to the valuation circumstances and consistent with the assumptions underlying the projected cash flows."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS19",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>UVW Limited is calculating its Weighted Average Cost of Capital (WACC). The professional estimates the cost of equity and cost of debt and determines the appropriate weights for the company's sources of capital.</p>
+    <p>The professional also considers the relevant tax effect on debt financing and evaluates whether market-value weights or book-value weights are appropriate for the valuation.</p>
+  `,
+  questions: [
+    {
+      question: "What does the cost of debt represent in a valuation?",
+      options: [
+        "The expected dividend yield on ordinary equity shares",
+        "The company's average annual revenue growth",
+        "The historical cost of all tangible assets",
+        "The cost incurred by the company for its debt financing"
+      ],
+      answer: 2,
+      reason: "The cost of debt represents the cost incurred by the company for its debt financing and is an important component of WACC."
+    },
+    {
+      question: "Why may the after-tax cost of debt be used in calculating WACC?",
+      options: [
+        "To reflect the tax effect associated with interest deductibility, where applicable",
+        "To ensure that all debt is treated as equity",
+        "To eliminate the need to calculate the cost of equity",
+        "To replace the company's capital weights with its annual revenue"
+      ],
+      answer: 0,
+      reason: "Where interest is tax-deductible, the after-tax cost of debt reflects the tax effect associated with debt financing for purposes of calculating WACC."
+    },
+    {
+      question: "Which sources of capital are commonly considered when calculating WACC?",
+      options: [
+        "Revenue and operating expenses",
+        "Inventory and receivables",
+        "Equity and debt",
+        "Depreciation and capital expenditure"
+      ],
+      answer: 2,
+      reason: "WACC commonly considers the cost of equity and the cost of debt, weighted according to the relevant proportions of these sources of capital."
+    },
+    {
+      question: "Which statement about the weights used in WACC is correct?",
+      options: [
+        "Weights are never required in a WACC calculation",
+        "The valuation professional should consider whether market-value or book-value weights are appropriate",
+        "Book-value weights must always be used, irrespective of circumstances",
+        "The weights must always be based on the company's annual revenue"
+      ],
+      answer: 1,
+      reason: "The chapter discusses market-value and book-value weights. The appropriate basis should be considered in light of the valuation circumstances and the purpose of the calculation."
+    },
+    {
+      question: "Which discount rate is generally appropriate for discounting FCFF in a DCF valuation?",
+      options: [
+        "The dividend yield alone",
+        "The historical cost of the company's fixed assets",
+        "The company's revenue growth rate alone",
+        "Weighted Average Cost of Capital (WACC)"
+      ],
+      answer: 2,
+      reason: "FCFF represents cash flows available to all providers of capital and is generally discounted using WACC."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS20",
+  difficulty: "Easy",
+  chapter: "Chapter3",
+  caseText: `
+    <p>XYZ Limited is being valued using a discounted cash flow model. The valuation professional has prepared cash flow projections for the explicit forecast period and must estimate the value attributable to periods beyond that period.</p>
+    <p>The professional examines alternative methods of estimating terminal value, including the constant-growth model, an exit multiple and, where appropriate, a salvage or liquidation value approach.</p>
+  `,
+  questions: [
+    {
+      question: "Why is terminal value estimated in a DCF valuation?",
+      options: [
+        "To replace all projected cash flows with historical costs",
+        "To establish the company's historical share issue price",
+        "To estimate the value attributable to periods beyond the explicit forecast period",
+        "To eliminate the need to discount future cash flows"
+      ],
+      answer: 2,
+      reason: "Terminal value estimates the value attributable to periods beyond the explicit forecast period in a DCF valuation."
+    },
+    {
+      question: "Which of the following is a recognised method of estimating terminal value?",
+      options: [
+        "Applying an appropriate exit multiple to a relevant financial measure",
+        "Using the number of employees as the only valuation input",
+        "Selecting the highest historical share price without analysis",
+        "Adding all historical operating expenses to revenue"
+      ],
+      answer: 0,
+      reason: "The exit-multiple method estimates terminal value by applying an appropriate valuation multiple to a relevant financial measure at the end of the explicit forecast period."
+    },
+    {
+      question: "Which statement describes the constant-growth model for terminal value?",
+      options: [
+        "It values the business solely using the historical cost of its assets",
+        "It requires the growth rate to equal the discount rate",
+        "It ignores cash flows beyond the explicit forecast period",
+        "It estimates value using a future-period cash flow, a sustainable growth rate and a discount rate"
+      ],
+      answer: 2,
+      reason: "The constant-growth model estimates terminal value using a future-period cash flow and a sustainable growth assumption in relation to the discount rate."
+    },
+    {
+      question: "Under the standard constant-growth terminal value formula, which relationship is generally necessary for a finite positive terminal value when future cash flows are positive?",
+      options: [
+        "The growth rate must always exceed the discount rate",
+        "The discount rate must exceed the growth rate",
+        "The discount rate must always be zero",
+        "The growth rate must be equal to the discount rate"
+      ],
+      answer: 1,
+      reason: "The standard constant-growth model uses the difference between the discount rate and the growth rate in the denominator. For a finite positive terminal value with positive future cash flows, the discount rate must exceed the growth rate."
+    },
+    {
+      question: "When may a salvage or liquidation value approach be relevant?",
+      options: [
+        "Whenever a company has positive annual revenue, regardless of its circumstances",
+        "Only when the company has no assets",
+        "When the relevant valuation circumstances call for estimating value based on salvage or liquidation of assets",
+        "Whenever the valuation professional wants to avoid considering any assets"
+      ],
+      answer: 2,
+      reason: "Salvage or liquidation value may be relevant where the circumstances of the valuation call for an estimate based on the value realised from the relevant assets, rather than relying solely on continuing-operation cash flows."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS21",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+  caseText: `
+    <p>ABC Limited is a diversified business with several operating divisions. The valuation professional has access to information about comparable listed companies, projected cash flows and the company's assets and liabilities. However, the reliability of some forecasts differs across the divisions.</p>
+    <p>The professional considers the purpose of valuation, the nature of the business, the availability of reliable inputs and the strengths and limitations of the available valuation approaches. Relevant observable inputs are preferred wherever appropriate, while the use of unobservable inputs is carefully assessed.</p>
+  `,
+  questions: [
+    {
+      question: "Which factor provides the most appropriate basis for selecting the valuation approach for ABC Limited?",
+      options: [
+        "Selecting the approach that produces the highest value, irrespective of the purpose of valuation",
+        "Selecting the approach that requires the least analysis in every circumstance",
+        "Considering the valuation purpose, nature of the business, reliability of inputs and the strengths and limitations of the approaches",
+        "Using the asset-based approach exclusively because every business has assets"
+      ],
+      answer: 2,
+      reason: "The selection of a valuation approach depends on the purpose and circumstances of the valuation, the nature of the asset or business, the availability of reliable inputs and the respective strengths and limitations of the approaches."
+    },
+    {
+      question: "The projected cash flows of one division cannot be reasonably estimated, but relevant transaction information for comparable businesses is available. Which approach may provide a useful indication of value for that division?",
+      options: [
+        "The market approach, subject to the relevance and comparability of the available market information",
+        "The income approach using unsupported cash flow forecasts",
+        "The DCF method without requiring cash flow projections",
+        "A method selected solely because it produces the highest enterprise value"
+      ],
+      answer: 0,
+      reason: "Where relevant and sufficiently reliable market information is available, the market approach may provide a useful indication of value. Comparability and relevant differences must still be assessed."
+    },
+    {
+      question: "Which treatment of valuation inputs is consistent with the chapter's guidance?",
+      options: [
+        "All unobservable inputs must be disregarded, even when relevant market information is unavailable",
+        "Observable inputs should be avoided whenever management projections are available",
+        "Unobservable inputs should be selected solely to produce a consistent increase in value",
+        "Maximise the use of relevant observable inputs and minimise the use of unobservable inputs, where appropriate"
+      ],
+      answer: 2,
+      reason: "The chapter emphasises maximising the use of relevant observable inputs and minimising the use of unobservable inputs, consistent with the valuation objective and circumstances."
+    },
+    {
+      question: "The market approach and income approach produce different indications of value. What is the most appropriate response?",
+      options: [
+        "Automatically adopt the higher indication of value",
+        "Evaluate the reliability and relevance of each indication and apply professional judgment, including appropriate weighting where justified",
+        "Always calculate the simple average of the two indications, regardless of their reliability",
+        "Discard both indications and use historical cost in every case"
+      ],
+      answer: 1,
+      reason: "When multiple valuation approaches are appropriate, the professional evaluates the resulting indications of value using professional judgment. Weighting may be appropriate depending on the circumstances; a mechanical average is not mandatory."
+    },
+    {
+      question: "Why is the orderly nature of a comparable transaction relevant when evaluating its use in a market approach?",
+      options: [
+        "An orderly transaction must always represent the highest transaction price in the market",
+        "A transaction is orderly only if the buyer and seller are related parties",
+        "A transaction involving forced liquidation must always be treated as the best evidence of market value",
+        "The circumstances of the transaction should be assessed to determine whether it provides relevant market evidence rather than reflecting a forced or distress sale"
+      ],
+      answer: 2,
+      reason: "An orderly transaction assumes market exposure for a period customary for transactions involving such assets or liabilities. A forced liquidation or distress sale may not provide equivalent evidence of an orderly transaction."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS22",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+  caseText: `
+    <p>RST Limited has listed equity shares that trade on more than one market. A valuation professional examines trading information for a reasonable period and identifies the following transactions in the relevant market on a particular day: 100 shares traded at ₹80 per share and 300 shares traded at ₹90 per share.</p>
+    <p>The professional considers the trading volume, the relevant market and whether the available prices provide an appropriate indication of value under the Market Price Method.</p>
+  `,
+  questions: [
+    {
+      question: "Based only on the two transactions stated in the case, what is the volume-weighted average price per share?",
+      options: [
+        "₹85.00",
+        "₹87.50",
+        "₹88.00",
+        "₹90.00"
+      ],
+      answer: 1,
+      reason: "The volume-weighted average price is calculated as [(100 × ₹80) + (300 × ₹90)] ÷ (100 + 300) = ₹35,000 ÷ 400 = ₹87.50 per share."
+    },
+    {
+      question: "If the shares trade on multiple markets, which consideration is specifically relevant under the Market Price Method discussed in the chapter?",
+      options: [
+        "Selecting the market with the highest transaction price in every case",
+        "Selecting the market with the lowest transaction price in every case",
+        "Considering the market with the highest trading volume, as relevant to the method",
+        "Ignoring trading volume and selecting a market at random"
+      ],
+      answer: 2,
+      reason: "The chapter discusses considering the market with the highest trading volume when applying the Market Price Method. The selection should not be based solely on the highest or lowest isolated price."
+    },
+    {
+      question: "Why is volume-weighted average price different from a simple average of ₹80 and ₹90 in this case?",
+      options: [
+        "The ₹90 price receives greater weight because 300 shares traded at that price compared with 100 shares at ₹80",
+        "The lower price must always receive the greater weight",
+        "Trading volume does not affect a volume-weighted average price",
+        "A volume-weighted average price is calculated using the company's total assets"
+      ],
+      answer: 0,
+      reason: "A volume-weighted average price weights each observed price according to the number of shares traded at that price. Here, more shares traded at ₹90 than at ₹80."
+    },
+    {
+      question: "Which additional consideration is relevant before adopting the observed market price as an indication of value?",
+      options: [
+        "Whether the selected price is necessarily the highest price ever recorded",
+        "Whether the company has the largest number of employees in its industry",
+        "Whether the historical cost of all assets equals the market capitalisation",
+        "Whether the observed prices and trading information are relevant over a reasonable period and in the circumstances of the valuation"
+      ],
+      answer: 2,
+      reason: "The Market Price Method requires consideration of relevant price and trading information, including the trading period and market circumstances. An isolated observed price should not automatically be treated as conclusive."
+    },
+    {
+      question: "Which statement best describes the Market Price Method?",
+      options: [
+        "It guarantees that the shares will be sold at the calculated value",
+        "It uses relevant observed market prices to estimate value, subject to the circumstances and trading information",
+        "It determines value exclusively by discounting future cash flows",
+        "It estimates value only by adding the book values of the company's assets"
+      ],
+      answer: 1,
+      reason: "The Market Price Method uses observed market prices as a basis for valuation, with appropriate consideration of the relevant market, trading information and circumstances. It does not guarantee a future selling price."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS23",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+  caseText: `
+    <p>DEF Limited is an unlisted company. A valuation professional selects three comparable publicly traded companies whose relevant enterprise value to EBITDA multiples are 7 times, 8 times and 9 times, respectively. After evaluating the comparability of the companies, the professional selects the median multiple.</p>
+    <p>DEF Limited has EBITDA of ₹12 crore, interest-bearing debt of ₹20 crore, cash of ₹5 crore and a separately identified non-operating asset worth ₹2 crore. Assume that no other adjustments are required and that the selected multiple is appropriate for DEF Limited.</p>
+  `,
+  questions: [
+    {
+      question: "What is the median enterprise value to EBITDA multiple of the three comparable companies?",
+      options: [
+        "7 times",
+        "9 times",
+        "8 times",
+        "24 times"
+      ],
+      answer: 2,
+      reason: "Arranging the multiples in ascending order gives 7 times, 8 times and 9 times. The middle observation, and therefore the median, is 8 times."
+    },
+    {
+      question: "Using the selected multiple, what is the indicated enterprise value of DEF Limited?",
+      options: [
+        "₹96 crore",
+        "₹83 crore",
+        "₹120 crore",
+        "₹48 crore"
+      ],
+      answer: 0,
+      reason: "Enterprise value = selected EV/EBITDA multiple × EBITDA = 8 × ₹12 crore = ₹96 crore."
+    },
+    {
+      question: "Using the information in the case, what is the indicated equity value of DEF Limited after the relevant adjustments?",
+      options: [
+        "₹96 crore",
+        "₹76 crore",
+        "₹101 crore",
+        "₹83 crore"
+      ],
+      answer: 2,
+      reason: "Equity value = enterprise value − debt + cash + separately identified non-operating asset = ₹96 crore − ₹20 crore + ₹5 crore + ₹2 crore = ₹83 crore."
+    },
+    {
+      question: "Why is the EV/EBITDA multiple generally applied to EBITDA to estimate enterprise value rather than directly to profit after tax to estimate equity value?",
+      options: [
+        "EBITDA is always equal to cash available to equity shareholders",
+        "The multiple relates an enterprise-value measure to an operating earnings measure, whereas profit after tax is after interest and relates to equity holders",
+        "Profit after tax cannot be used in any valuation multiple",
+        "Enterprise value and equity value are always identical"
+      ],
+      answer: 1,
+      reason: "An EV/EBITDA multiple relates enterprise value to an operating earnings measure before interest. Profit after tax is after interest and is generally associated with equity-based valuation multiples such as P/E."
+    },
+    {
+      question: "Before applying the selected multiple to DEF Limited, which step is most appropriate?",
+      options: [
+        "Apply the multiple without reviewing differences because all listed companies are comparable",
+        "Select the highest multiple automatically, regardless of the valuation purpose",
+        "Assess relevant differences between the comparable companies and DEF Limited and make appropriate adjustments where justified",
+        "Replace EBITDA with the book value of debt in every case"
+      ],
+      answer: 2,
+      reason: "The CCM Method requires the professional to assess the comparability of the selected companies and consider relevant differences before applying the multiple to the subject company."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS24",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+  caseText: `
+    <p>GHI Limited is valuing an unlisted equity interest using the Comparable Companies Multiple (CCM) Method. The comparable companies are listed and have different sizes, growth prospects and capital structures. The professional has derived a multiple from relevant financial information and is assessing whether further adjustments are justified.</p>
+    <p>The professional also considers the level of control represented by the interest being valued, its marketability and whether any relevant factor is already reflected in the selected multiple or other valuation inputs.</p>
+  `,
+  questions: [
+    {
+      question: "Which factor is relevant when selecting comparable publicly traded companies for GHI Limited?",
+      options: [
+        "The similarity of their business activities, financial characteristics and other relevant valuation factors",
+        "The requirement that all companies have identical market capitalisations",
+        "The requirement that all companies have identical capital structures in every case",
+        "The alphabetical order of the companies' names"
+      ],
+      answer: 0,
+      reason: "The selection of comparable companies involves evaluating relevant factors such as business activities, financial characteristics, growth prospects, risk and other differences that affect comparability."
+    },
+    {
+      question: "The interest being valued is a minority interest in an unlisted company. Which statement about a discount for lack of marketability (DLOM) is most appropriate?",
+      options: [
+        "A DLOM must be applied at the same percentage to every unlisted interest",
+        "A DLOM is always identical to a control premium",
+        "A DLOM should be added to the valuation rather than deducted in every case",
+        "The professional should assess whether a DLOM is appropriate to the interest and circumstances, including whether lack of marketability is already reflected"
+      ],
+      answer: 2,
+      reason: "A DLOM may be relevant depending on the interest being valued and the valuation circumstances. Its application should be evaluated carefully, including whether the same factor is already reflected in the selected evidence or other adjustments."
+    },
+    {
+      question: "Why should the valuation professional consider the level of control represented by the interest being valued?",
+      options: [
+        "Control is relevant only when valuing tangible assets",
+        "The interest's control characteristics may affect the applicability of a control premium or other adjustments",
+        "Every equity interest must receive a control premium regardless of its characteristics",
+        "Control characteristics automatically determine the company's EBITDA"
+      ],
+      answer: 1,
+      reason: "The interest being valued and the level of control it represents may affect whether a control premium or other adjustment is appropriate. Such adjustments should not be applied automatically."
+    },
+    {
+      question: "A proposed premium would compensate for a factor already reflected in the selected comparable-company multiple. What should the professional do?",
+      options: [
+        "Apply the premium twice to increase the valuation",
+        "Ignore the existing multiple and add every available premium",
+        "Avoid double counting the factor when determining the indicated value",
+        "Replace the multiple with the historical cost of assets without analysis"
+      ],
+      answer: 2,
+      reason: "The valuation professional should consider which factors are already reflected in the comparable evidence and avoid double counting them through additional premiums or discounts."
+    },
+    {
+      question: "Which statement best describes the application of a valuation multiple derived from listed comparable companies to an unlisted company?",
+      options: [
+        "The multiple may be used after assessing comparability and making appropriate adjustments for relevant differences",
+        "A multiple from a listed company can never be used to value an unlisted company",
+        "The unlisted company must have the same share price as every comparable company",
+        "Any difference between the companies can be ignored if the multiple is a median"
+      ],
+      answer: 0,
+      reason: "The CCM Method can be used to value an unlisted subject company by reference to comparable publicly traded companies, provided the comparability of the evidence and relevant adjustments are carefully assessed."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS25",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+  caseText: `
+    <p>JKL Limited is valuing a business using comparable acquisition transactions. The valuation professional identifies three relevant transactions with enterprise value to EBITDA multiples of 8 times, 9 times and 10 times. After considering their comparability, the professional selects the median multiple.</p>
+    <p>The subject business has EBITDA of ₹15 crore, debt of ₹25 crore and cash of ₹10 crore. Assume that the selected multiple is appropriate and that no other enterprise-value-to-equity-value adjustments are required.</p>
+  `,
+  questions: [
+    {
+      question: "Which valuation method is most directly represented by the use of multiples from the three acquisition transactions?",
+      options: [
+        "Market Price Method",
+        "Comparable Transaction Multiple (CTM) Method",
+        "Dividend capitalization method",
+        "Historical cost method"
+      ],
+      answer: 1,
+      reason: "The Comparable Transaction Multiple Method uses valuation multiples derived from transactions involving comparable businesses."
+    },
+    {
+      question: "What is the median transaction multiple in the case?",
+      options: [
+        "8 times",
+        "10 times",
+        "27 times",
+        "9 times"
+      ],
+      answer: 2,
+      reason: "The multiples in ascending order are 8 times, 9 times and 10 times. The median is therefore 9 times."
+    },
+    {
+      question: "What is the indicated enterprise value of the subject business using the selected multiple?",
+      options: [
+        "₹135 crore",
+        "₹120 crore",
+        "₹150 crore",
+        "₹45 crore"
+      ],
+      answer: 0,
+      reason: "Enterprise value = EV/EBITDA multiple × EBITDA = 9 × ₹15 crore = ₹135 crore."
+    },
+    {
+      question: "What is the indicated equity value after adjusting for debt and cash?",
+      options: [
+        "₹135 crore",
+        "₹100 crore",
+        "₹120 crore",
+        "₹170 crore"
+      ],
+      answer: 2,
+      reason: "Equity value = enterprise value − debt + cash = ₹135 crore − ₹25 crore + ₹10 crore = ₹120 crore."
+    },
+    {
+      question: "Why should the circumstances of the comparable acquisitions be assessed before using their multiples?",
+      options: [
+        "All acquisition transactions reflect identical circumstances, so no assessment is required",
+        "Transaction circumstances and business differences may affect the relevance of the observed multiples and any required adjustments",
+        "The oldest transaction must always be selected",
+        "Transaction circumstances are relevant only when calculating depreciation"
+      ],
+      answer: 1,
+      reason: "The relevance of a comparable transaction depends on the comparability of the businesses and the circumstances of the transactions. These factors should be considered before applying the selected multiple."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS26",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+  caseText: `
+    <p>MNO Limited is preparing a DCF valuation. The company reports projected EBIT of ₹100 crore, a tax rate of 25%, depreciation and amortisation of ₹10 crore, capital expenditure of ₹20 crore and an increase in working capital of ₹5 crore for the relevant period.</p>
+    <p>For this question, assume that these items are the only adjustments required to calculate FCFF from EBIT and that the figures relate to the same forecast period.</p>
+  `,
+  questions: [
+    {
+      question: "What is the after-tax operating profit based on the projected EBIT and tax rate?",
+      options: [
+        "₹100 crore",
+        "₹125 crore",
+        "₹25 crore",
+        "₹75 crore"
+      ],
+      answer: 2,
+      reason: "After-tax operating profit = EBIT × (1 − tax rate) = ₹100 crore × (1 − 25%) = ₹75 crore."
+    },
+    {
+      question: "Using the information in the case, what is FCFF for the relevant period?",
+      options: [
+        "₹60 crore",
+        "₹75 crore",
+        "₹65 crore",
+        "₹90 crore"
+      ],
+      answer: 0,
+      reason: "FCFF = EBIT × (1 − tax rate) + depreciation and amortisation − capital expenditure − increase in working capital = ₹75 crore + ₹10 crore − ₹20 crore − ₹5 crore = ₹60 crore."
+    },
+    {
+      question: "Why is depreciation and amortisation added back when calculating FCFF from after-tax operating profit?",
+      options: [
+        "Because depreciation and amortisation are always cash inflows from customers",
+        "Because depreciation and amortisation are non-cash expenses already deducted in arriving at operating profit",
+        "Because depreciation and amortisation must always be equal to capital expenditure",
+        "Because depreciation and amortisation represent cash paid to debt holders"
+      ],
+      answer: 1,
+      reason: "Depreciation and amortisation are non-cash expenses. When deriving free cash flow from earnings, they are added back because they reduced accounting profit without representing a cash outflow in the period."
+    },
+    {
+      question: "Why is the increase in working capital deducted when calculating FCFF in this case?",
+      options: [
+        "An increase in working capital always increases free cash flow by the same amount",
+        "Working capital is unrelated to the cash generated by operations",
+        "An increase in working capital represents a use of cash in the business",
+        "Working capital should always be added to enterprise value rather than considered in cash flow"
+      ],
+      answer: 2,
+      reason: "An increase in working capital generally represents a use of cash that must be funded by the business. It is therefore deducted in calculating free cash flow."
+    },
+    {
+      question: "Which discount rate is generally appropriate for discounting the FCFF calculated in the case?",
+      options: [
+        "The dividend yield alone",
+        "The historical cost of the company's fixed assets",
+        "The cost of equity in every case, regardless of the type of cash flow",
+        "Weighted Average Cost of Capital (WACC)"
+      ],
+      answer: 2,
+      reason: "FCFF represents cash flows available to all providers of capital and is generally discounted using WACC."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS27",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+  caseText: `
+    <p>PQR Limited is being valued using a DCF model. The valuation professional estimates FCFF for the forecast periods, discounts the cash flows using WACC and estimates terminal value at the end of the explicit forecast period.</p>
+    <p>The professional separately identifies debt, cash and a non-operating investment when reconciling enterprise value to equity value. The forecasts and all other inputs are assumed to be internally consistent with the valuation.</p>
+  `,
+  questions: [
+    {
+      question: "Which sequence is consistent with a DCF valuation based on FCFF?",
+      options: [
+        "Estimate FCFF, discount it using an appropriate rate, include the present value of terminal value and determine enterprise value",
+        "Calculate equity value directly from revenue without considering cash flows",
+        "Add debt to every annual cash flow and disregard terminal value",
+        "Use historical asset cost as the only input, irrespective of projected cash flows"
+      ],
+      answer: 0,
+      reason: "In an FCFF-based DCF valuation, the present values of forecast FCFF and terminal value are generally combined to estimate enterprise value, subject to the assumptions and adjustments of the valuation."
+    },
+    {
+      question: "Assume enterprise value is ₹200 crore, debt is ₹40 crore, cash is ₹15 crore and a separately identified non-operating investment is worth ₹5 crore. If no other adjustments apply, what is the indicated equity value?",
+      options: [
+        "₹200 crore",
+        "₹160 crore",
+        "₹180 crore",
+        "₹170 crore"
+      ],
+      answer: 2,
+      reason: "Equity value = enterprise value − debt + cash + non-operating investment = ₹200 crore − ₹40 crore + ₹15 crore + ₹5 crore = ₹180 crore."
+    },
+    {
+      question: "Which statement best explains why terminal value is included in a DCF valuation?",
+      options: [
+        "It replaces the need to forecast cash flows during the explicit forecast period",
+        "It estimates the value attributable to periods beyond the explicit forecast period",
+        "It represents the historical cost of the company's equity",
+        "It eliminates the effect of the discount rate"
+      ],
+      answer: 1,
+      reason: "Terminal value estimates the value attributable to periods beyond the explicit forecast period and is incorporated into the DCF valuation through discounting."
+    },
+    {
+      question: "Which statement correctly distinguishes FCFF from FCFE?",
+      options: [
+        "FCFF represents cash flows available only to equity shareholders after debt servicing, while FCFE is available to all capital providers",
+        "FCFF and FCFE are always identical, regardless of the company's financing",
+        "FCFF represents cash flows available to all providers of capital, while FCFE represents cash flows available to equity shareholders",
+        "FCFE is an enterprise-value multiple rather than a cash flow measure"
+      ],
+      answer: 2,
+      reason: "FCFF represents cash flows available to all providers of capital, whereas FCFE represents cash flows available to equity shareholders after relevant operating and financing cash flows."
+    },
+    {
+      question: "Why must the discount rate match the cash flow measure used in the valuation?",
+      options: [
+        "Because using inconsistent cash flow and discount-rate bases can produce an inappropriate valuation",
+        "Because the discount rate must always equal the company's revenue growth rate",
+        "Because FCFF can only be valued using the historical cost of debt",
+        "Because the discount rate has no effect on present value"
+      ],
+      answer: 0,
+      reason: "Consistency between the cash flow measure and discount rate is necessary. FCFF is generally discounted using WACC, while FCFE is generally discounted using the cost of equity."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS28",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+  caseText: `
+    <p>DEF Limited is estimating its cost of equity using CAPM. The risk-free rate is 4% and the equity risk premium is 6%. A listed comparable company has a levered beta of 1.20, a debt-to-equity ratio of 0.50 and a tax rate of 25%.</p>
+    <p>For the beta adjustment, assume debt beta is zero and use the relationship: unlevered beta = levered beta ÷ [1 + (1 − tax rate) × debt-to-equity ratio].</p>
+  `,
+  questions: [
+    {
+      question: "Using the comparable company's levered beta of 1.20, what is the cost of equity under CAPM?",
+      options: [
+        "7.20%",
+        "10.00%",
+        "12.00%",
+        "11.20%"
+      ],
+      answer: 2,
+      reason: "Cost of equity = risk-free rate + beta × equity risk premium = 4% + 1.20 × 6% = 11.20%."
+    },
+    {
+      question: "Using the stated relationship, what is the approximate unlevered beta of the comparable company?",
+      options: [
+        "0.87",
+        "1.20",
+        "1.65",
+        "0.60"
+      ],
+      answer: 0,
+      reason: "Unlevered beta = 1.20 ÷ [1 + (1 − 0.25) × 0.50] = 1.20 ÷ 1.375 ≈ 0.87."
+    },
+    {
+      question: "What is the primary purpose of unlevering the comparable company's beta?",
+      options: [
+        "To remove all operating risk from the comparable company",
+        "To convert the beta into a direct measure of annual revenue",
+        "To separate the effect of financial leverage from the underlying business risk",
+        "To calculate the company's after-tax cost of debt"
+      ],
+      answer: 2,
+      reason: "Unlevering beta removes the effect of financial leverage under the assumed relationship, allowing the underlying business risk to be considered separately."
+    },
+    {
+      question: "If the unlevered beta is subsequently relevered for DEF Limited, what is the purpose of that adjustment?",
+      options: [
+        "To eliminate the risk-free rate from CAPM",
+        "To reflect DEF Limited's relevant capital structure in the beta used to estimate its cost of equity",
+        "To make DEF Limited's beta equal to the comparable company's levered beta in every case",
+        "To calculate EBITDA from net income"
+      ],
+      answer: 1,
+      reason: "Relevering adjusts the unlevered beta to reflect the relevant capital structure of the subject company before using beta in the cost-of-equity estimate."
+    },
+    {
+      question: "Which input in CAPM represents the additional return expected from the market over the risk-free rate?",
+      options: [
+        "The debt-to-equity ratio",
+        "The tax rate",
+        "The unlevered beta",
+        "The equity risk premium"
+      ],
+      answer: 2,
+      reason: "The equity risk premium represents the additional return expected from the market over the risk-free rate. In CAPM it is multiplied by beta."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS29",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+  caseText: `
+    <p>GHI Limited estimates its WACC using market-value weights. Equity represents 60% of the capital structure and debt represents 40%. The cost of equity is 12%, the pre-tax cost of debt is 8% and the applicable tax rate is 25%.</p>
+    <p>Assume that interest is tax-deductible and that no other sources of capital or adjustments need to be considered for this calculation.</p>
+  `,
+  questions: [
+    {
+      question: "What is the after-tax cost of debt under the assumptions in the case?",
+      options: [
+        "8.00%",
+        "6.00%",
+        "2.00%",
+        "10.00%"
+      ],
+      answer: 1,
+      reason: "After-tax cost of debt = pre-tax cost of debt × (1 − tax rate) = 8% × (1 − 25%) = 6%."
+    },
+    {
+      question: "Using the stated weights and after-tax cost of debt, what is the WACC of GHI Limited?",
+      options: [
+        "9.60%",
+        "10.40%",
+        "12.00%",
+        "6.00%"
+      ],
+      answer: 0,
+      reason: "WACC = (equity weight × cost of equity) + (debt weight × after-tax cost of debt) = (60% × 12%) + (40% × 6%) = 7.2% + 2.4% = 9.6%."
+    },
+    {
+      question: "Why is the after-tax cost of debt used in this WACC calculation?",
+      options: [
+        "Because the cost of equity is always tax-deductible",
+        "Because debt has no cost when interest is deductible",
+        "Because the tax effect associated with deductible interest is reflected in the after-tax cost of debt",
+        "Because WACC excludes equity from the capital structure"
+      ],
+      answer: 2,
+      reason: "Where interest is tax-deductible, the after-tax cost of debt reflects the tax effect of interest deductibility and is used for the debt component of WACC."
+    },
+    {
+      question: "Why are capital weights relevant in calculating WACC?",
+      options: [
+        "They ensure that the cost of debt is ignored",
+        "They convert every source of capital into annual revenue",
+        "They require the debt and equity weights to be equal in every case",
+        "They reflect the relative proportions of the relevant sources of capital in the weighted average"
+      ],
+      answer: 2,
+      reason: "WACC is a weighted average of the costs of relevant sources of capital. The weights represent the respective proportions of those sources under the selected weighting basis."
+    },
+    {
+      question: "If GHI Limited uses FCFF in a DCF valuation, how is the calculated WACC generally used?",
+      options: [
+        "As the discount rate for FCFF",
+        "As the company's annual revenue growth rate",
+        "As the multiple applied directly to book value",
+        "As a replacement for projected cash flows"
+      ],
+      answer: 0,
+      reason: "FCFF represents cash flows available to all providers of capital and is generally discounted using WACC to estimate enterprise value."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS30",
+  difficulty: "Medium",
+  chapter: "Chapter3",
+  caseText: `
+    <p>JKL Limited is preparing a DCF valuation using the constant-growth model to estimate terminal value. The FCFF expected for the first year after the explicit forecast period is ₹10 crore. The appropriate WACC is 10% and the assumed perpetual growth rate is 3%.</p>
+    <p>The valuation professional also considers the exit-multiple method and the sustainability of the perpetual growth assumption. Assume that the constant-growth model is appropriate and the figures are consistent in timing and currency.</p>
+  `,
+  questions: [
+    {
+      question: "Using the constant-growth model, what is the terminal value at the end of the explicit forecast period?",
+      options: [
+        "₹100 crore",
+        "₹142.86 crore approximately",
+        "₹70 crore",
+        "₹13 crore"
+      ],
+      answer: 1,
+      reason: "Terminal value = FCFF in the first year after the explicit forecast period ÷ (WACC − perpetual growth rate) = ₹10 crore ÷ (10% − 3%) = ₹10 crore ÷ 7% ≈ ₹142.86 crore."
+    },
+    {
+      question: "Which relationship between WACC and the perpetual growth rate is required for the standard constant-growth formula to produce a finite positive terminal value when the future cash flow is positive?",
+      options: [
+        "The perpetual growth rate must exceed WACC",
+        "The perpetual growth rate must equal WACC",
+        "WACC must exceed the perpetual growth rate",
+        "WACC must be zero"
+      ],
+      answer: 2,
+      reason: "The standard constant-growth formula has WACC minus the growth rate in the denominator. For a finite positive terminal value with positive future cash flows, WACC must exceed the perpetual growth rate."
+    },
+    {
+      question: "What would be the principal concern if the perpetual growth rate were increased to approach WACC from below, with FCFF otherwise positive and unchanged?",
+      options: [
+        "Terminal value would necessarily become zero",
+        "Terminal value would become equal to EBITDA",
+        "The terminal value formula would no longer depend on the growth rate",
+        "The denominator would approach zero and the calculated terminal value could increase sharply"
+      ],
+      answer: 2,
+      reason: "As the perpetual growth rate approaches WACC from below, the difference between WACC and the growth rate becomes smaller. This can cause the calculated terminal value to increase sharply."
+    },
+    {
+      question: "Which statement best describes the exit-multiple method for estimating terminal value?",
+      options: [
+        "It applies an appropriate valuation multiple to a relevant financial measure at the end of the explicit forecast period",
+        "It always equates terminal value to the historical cost of assets",
+        "It discounts only the first year's cash flow and ignores all later periods",
+        "It requires the perpetual growth rate to equal WACC"
+      ],
+      answer: 0,
+      reason: "The exit-multiple method estimates terminal value by applying an appropriate valuation multiple to a relevant financial measure at the end of the explicit forecast period."
+    },
+    {
+      question: "Why must the perpetual growth rate be supported by a reasonable long-term assumption?",
+      options: [
+        "Because the growth rate must always be equal to the current year's revenue growth",
+        "Because an unsustainable growth assumption can materially distort terminal value and the overall DCF valuation",
+        "Because the growth rate replaces the need for a discount rate",
+        "Because terminal value is independent of the assumed growth rate"
+      ],
+      answer: 1,
+      reason: "Terminal value can represent a substantial part of a DCF valuation. The perpetual growth rate should therefore be sustainable and consistent with the relevant long-term economic context and the discount rate."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS31",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+  caseText: `
+    <p>ABC Limited is being valued for a proposed acquisition. One comparable transaction involved a forced liquidation, while another involved an orderly transaction between market participants. Reliable market data is available, but the company's long-term cash flow projections are uncertain.</p>
+    <p>The valuation professional evaluates the purpose of valuation, the reliability of the available inputs and the relevance of each valuation approach before forming an opinion of value.</p>
+  `,
+  questions: [
+    {
+      question: "How should the professional treat the price observed in the forced-liquidation transaction?",
+      options: [
+        "Adopt it automatically because every completed transaction represents an orderly transaction",
+        "Use it without adjustment because forced liquidation always reflects normal market conditions",
+        "Assess the circumstances carefully because a forced-liquidation price may not represent an orderly transaction",
+        "Reject all market evidence because one transaction involved forced liquidation"
+      ],
+      answer: 2,
+      reason: "An orderly transaction assumes exposure to the market for a period customary for transactions involving the relevant asset or liability. A forced-liquidation transaction may not provide equivalent evidence of an orderly transaction."
+    },
+    {
+      question: "Which input is most directly an observable input?",
+      options: [
+        "An unsupported assumption developed solely to obtain a desired valuation",
+        "A price obtained from relevant market transactions involving comparable assets",
+        "A management estimate with no supporting information, treated as market evidence",
+        "A forecast selected without evaluating the available information"
+      ],
+      answer: 1,
+      reason: "Observable inputs are developed using market data, including information from actual transactions and other relevant market information."
+    },
+    {
+      question: "Given the uncertainty in the cash flow projections but the availability of relevant comparable-market information, which approach may provide a useful indication of value?",
+      options: [
+        "The market approach, provided the comparables and market evidence are sufficiently relevant",
+        "The income approach using unsupported forecasts without further assessment",
+        "The DCF method without estimating future cash flows",
+        "A method selected solely because it produces the highest value"
+      ],
+      answer: 0,
+      reason: "Where relevant and sufficiently reliable comparable-market information is available, the market approach may provide a useful indication of value. The comparability and limitations of the evidence must be considered."
+    },
+    {
+      question: "The market approach and income approach produce different indications of value. Which response is most appropriate?",
+      options: [
+        "Always adopt the higher indication of value",
+        "Always calculate a simple average, regardless of reliability",
+        "Reject both approaches whenever their indications differ",
+        "Evaluate the relevance and reliability of each indication and use professional judgment, including appropriate weighting where justified"
+      ],
+      answer: 2,
+      reason: "When more than one valuation approach is appropriate, the resulting indications should be evaluated using professional judgment. Weighting may be appropriate depending on the circumstances; a mechanical average is not mandatory."
+    },
+    {
+      question: "Which basis is most consistent with a market-participant perspective in valuation?",
+      options: [
+        "Use only the acquiring company's unique expectations, regardless of market evidence",
+        "Consider assumptions that market participants would use under the relevant market circumstances",
+        "Use only the historical cost recorded by management",
+        "Assume every market participant would pay the highest possible price"
+      ],
+      answer: 1,
+      reason: "A market-participant perspective considers assumptions that market participants would use when pricing the asset or business under the relevant circumstances, rather than relying exclusively on entity-specific assumptions."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS32",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+  caseText: `
+    <p>DEF Limited is unlisted. Three comparable listed companies have enterprise value to EBITDA multiples of 6 times, 8 times and 10 times. The valuation professional selects the median multiple. DEF Limited has EBITDA of ₹15 crore, debt of ₹25 crore and cash of ₹8 crore. A separately identified non-operating asset is worth ₹4 crore and is excluded from the operating enterprise value derived from EBITDA.</p>
+    <p>Assume that the selected multiple is appropriate and no other adjustments are required.</p>
+  `,
+  questions: [
+    {
+      question: "What is the median enterprise value to EBITDA multiple?",
+      options: [
+        "6 times",
+        "10 times",
+        "8 times",
+        "9 times"
+      ],
+      answer: 2,
+      reason: "Arranging the multiples in ascending order gives 6 times, 8 times and 10 times. The median is 8 times."
+    },
+    {
+      question: "What is the indicated operating enterprise value of DEF Limited?",
+      options: [
+        "₹120 crore",
+        "₹150 crore",
+        "₹107 crore",
+        "₹96 crore"
+      ],
+      answer: 0,
+      reason: "Operating enterprise value = EBITDA × EV/EBITDA multiple = ₹15 crore × 8 = ₹120 crore."
+    },
+    {
+      question: "What is the indicated equity value after accounting for debt, cash and the separately identified non-operating asset?",
+      options: [
+        "₹103 crore",
+        "₹115 crore",
+        "₹127 crore",
+        "₹107 crore"
+      ],
+      answer: 2,
+      reason: "Equity value = operating enterprise value − debt + cash + non-operating asset = ₹120 crore − ₹25 crore + ₹8 crore + ₹4 crore = ₹107 crore."
+    },
+    {
+      question: "Why is EV/EBITDA an appropriate pairing of a valuation measure and a financial measure?",
+      options: [
+        "It compares equity value with earnings per share",
+        "It relates enterprise value to an operating earnings measure",
+        "It compares the company's market price with book value per share",
+        "It directly measures the company's annual dividend yield"
+      ],
+      answer: 1,
+      reason: "EV/EBITDA relates enterprise value to EBITDA, an operating earnings measure. It is therefore an enterprise-value-based multiple."
+    },
+    {
+      question: "Why is the non-operating asset added separately in this case?",
+      options: [
+        "Every non-operating asset must be included in EBITDA",
+        "Non-operating assets must always be deducted from equity value",
+        "It is excluded from the operating enterprise value derived from the selected multiple and must therefore be considered separately in the equity-value reconciliation",
+        "It must be added to debt before calculating enterprise value"
+      ],
+      answer: 2,
+      reason: "The case specifies that the non-operating asset is excluded from the operating enterprise value derived using EBITDA. It is therefore added separately in the reconciliation, subject to the stated assumptions and other relevant adjustments."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS33",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+  caseText: `
+    <p>GHI Limited is being valued using comparable acquisition transactions. The relevant transaction multiples are 7 times, 8 times and 11 times EV/EBITDA. The professional selects the median multiple. GHI Limited has EBITDA of ₹20 crore, debt of ₹30 crore and cash of ₹5 crore.</p>
+    <p>The selected transactions involve acquisitions of controlling interests. Assume that the selected multiple is appropriate and already reflects the relevant transaction circumstances.</p>
+  `,
+  questions: [
+    {
+      question: "What is the median transaction multiple?",
+      options: [
+        "7 times",
+        "11 times",
+        "9 times",
+        "8 times"
+      ],
+      answer: 2,
+      reason: "The multiples in ascending order are 7 times, 8 times and 11 times. The median is 8 times."
+    },
+    {
+      question: "What is the indicated enterprise value of GHI Limited?",
+      options: [
+        "₹180 crore",
+        "₹160 crore",
+        "₹140 crore",
+        "₹200 crore"
+      ],
+      answer: 1,
+      reason: "Enterprise value = EBITDA × selected EV/EBITDA multiple = ₹20 crore × 8 = ₹160 crore."
+    },
+    {
+      question: "What is the indicated equity value after adjusting for debt and cash?",
+      options: [
+        "₹135 crore",
+        "₹125 crore",
+        "₹165 crore",
+        "₹95 crore"
+      ],
+      answer: 0,
+      reason: "Equity value = enterprise value − debt + cash = ₹160 crore − ₹30 crore + ₹5 crore = ₹135 crore."
+    },
+    {
+      question: "Because the comparable transactions involve controlling interests, what should the professional consider before adding a further control premium?",
+      options: [
+        "A control premium must always be added twice",
+        "A control premium must be applied at the same percentage in every transaction",
+        "Whether the transaction multiple already reflects control-related value, to avoid double counting",
+        "A control premium replaces the need to calculate enterprise value"
+      ],
+      answer: 2,
+      reason: "The professional should assess whether control-related value is already reflected in the transaction evidence. Applying an additional premium without considering this may result in double counting."
+    },
+    {
+      question: "Why must the circumstances of the comparable acquisition transactions be assessed?",
+      options: [
+        "All acquisition transactions automatically provide identical valuation evidence",
+        "Only the oldest transaction is relevant",
+        "Transaction circumstances matter only for calculating depreciation",
+        "The relevance of each transaction depends on the comparability of the businesses and the circumstances of the transactions"
+      ],
+      answer: 2,
+      reason: "Comparable transaction multiples should be selected after evaluating the comparability of the businesses and the relevant transaction circumstances."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS34",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+  caseText: `
+    <p>JKL Limited reports projected EBIT of ₹120 crore, a tax rate of 25%, depreciation and amortisation of ₹15 crore, capital expenditure of ₹28 crore and an increase in working capital of ₹7 crore for the forecast period.</p>
+    <p>Assume that these are the only adjustments required to calculate FCFF from EBIT and that all figures relate to the same period.</p>
+  `,
+  questions: [
+    {
+      question: "What is FCFF for the forecast period?",
+      options: [
+        "₹60 crore",
+        "₹75 crore",
+        "₹65 crore",
+        "₹70 crore"
+      ],
+      answer: 2,
+      reason: "FCFF = EBIT × (1 − tax rate) + depreciation and amortisation − capital expenditure − increase in working capital = ₹120 crore × 75% + ₹15 crore − ₹28 crore − ₹7 crore = ₹90 crore + ₹15 crore − ₹28 crore − ₹7 crore = ₹70 crore."
+    },
+    {
+      question: "Which discount rate is generally appropriate for discounting this FCFF?",
+      options: [
+        "Cost of equity in every case, regardless of the cash flow measure",
+        "Weighted Average Cost of Capital (WACC)",
+        "The pre-tax cost of debt alone",
+        "The price-to-earnings multiple"
+      ],
+      answer: 1,
+      reason: "FCFF represents cash flows available to all providers of capital and is generally discounted using WACC."
+    },
+    {
+      question: "Why is depreciation and amortisation added back in the calculation of FCFF?",
+      options: [
+        "Because depreciation and amortisation are always cash receipts from customers",
+        "Because depreciation and amortisation equal the amount of new debt raised",
+        "Because they are non-cash expenses deducted in arriving at accounting profit",
+        "Because they represent an increase in working capital"
+      ],
+      answer: 2,
+      reason: "Depreciation and amortisation are non-cash expenses. They reduce accounting profit but do not represent a cash outflow in the period, so they are added back in the FCFF calculation."
+    },
+    {
+      question: "If capital expenditure increases from ₹28 crore to ₹32 crore, with all other inputs unchanged, what is the revised FCFF?",
+      options: [
+        "₹66 crore",
+        "₹74 crore",
+        "₹70 crore",
+        "₹62 crore"
+      ],
+      answer: 0,
+      reason: "The additional capital expenditure of ₹4 crore reduces FCFF by ₹4 crore. Revised FCFF = ₹70 crore − ₹4 crore = ₹66 crore."
+    },
+    {
+      question: "If the increase in working capital were ₹11 crore instead of ₹7 crore, with all other inputs unchanged, what would FCFF be?",
+      options: [
+        "₹74 crore",
+        "₹70 crore",
+        "₹62 crore",
+        "₹66 crore"
+      ],
+      answer: 2,
+      reason: "The increase in working capital rises by ₹4 crore, which reduces FCFF by ₹4 crore. Revised FCFF = ₹70 crore − ₹4 crore = ₹66 crore."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS35",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+  caseText: `
+    <p>MNO Limited reports net income of ₹50 crore, depreciation and amortisation of ₹8 crore, capital expenditure of ₹15 crore and an increase in working capital of ₹4 crore. Net borrowing during the period is ₹6 crore.</p>
+    <p>Assume that these are the only adjustments required to calculate FCFE from net income and that the figures relate to the same forecast period.</p>
+  `,
+  questions: [
+    {
+      question: "What is FCFE for the forecast period?",
+      options: [
+        "₹45 crore",
+        "₹39 crore",
+        "₹51 crore",
+        "₹33 crore"
+      ],
+      answer: 0,
+      reason: "FCFE = net income + depreciation and amortisation − capital expenditure − increase in working capital + net borrowing = ₹50 crore + ₹8 crore − ₹15 crore − ₹4 crore + ₹6 crore = ₹45 crore."
+    },
+    {
+      question: "Which discount rate is generally appropriate for discounting the FCFE calculated in the case?",
+      options: [
+        "WACC in every case, irrespective of the cash flow measure",
+        "The pre-tax cost of debt",
+        "Cost of equity",
+        "The price-to-sales multiple"
+      ],
+      answer: 2,
+      reason: "FCFE represents cash flows available to equity shareholders and is generally discounted at the cost of equity."
+    },
+    {
+      question: "Why is net borrowing added in the FCFE calculation in this case?",
+      options: [
+        "Borrowing is always treated as operating revenue",
+        "Net borrowing is a financing cash flow that contributes to the cash flow available to equity after relevant debt-related cash flows",
+        "Borrowing replaces the deduction for capital expenditure",
+        "Net borrowing must be added to FCFF in every calculation"
+      ],
+      answer: 1,
+      reason: "In the stated FCFE formulation, net borrowing is added after considering the relevant operating cash flows and investment requirements because it represents a financing cash flow available to equity after net debt financing."
+    },
+    {
+      question: "If net borrowing were zero, with all other inputs unchanged, what would FCFE be?",
+      options: [
+        "₹45 crore",
+        "₹33 crore",
+        "₹51 crore",
+        "₹39 crore"
+      ],
+      answer: 2,
+      reason: "Without net borrowing, FCFE = ₹50 crore + ₹8 crore − ₹15 crore − ₹4 crore = ₹39 crore."
+    },
+    {
+      question: "Which statement correctly distinguishes FCFE from FCFF?",
+      options: [
+        "FCFE represents cash flows available to equity shareholders, whereas FCFF represents cash flows available to all providers of capital",
+        "FCFE is always equal to revenue less tax, while FCFF is always equal to net income",
+        "FCFF represents cash flows available only to equity shareholders",
+        "FCFE and FCFF must be identical regardless of financing"
+      ],
+      answer: 0,
+      reason: "FCFE represents cash flows available to equity shareholders, whereas FCFF represents cash flows available to all providers of capital."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS36",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+  caseText: `
+    <p>DEF Limited estimates its cost of equity using CAPM. A comparable company has a levered beta of 1.50, a debt-to-equity ratio of 0.40 and a tax rate of 25%. DEF Limited's target debt-to-equity ratio is 0.60. The risk-free rate is 5% and the equity risk premium is 6.5%.</p>
+    <p>Assume a debt beta of zero and use the following relationships: unlevered beta = levered beta ÷ [1 + (1 − tax rate) × debt-to-equity ratio]; relevered beta = unlevered beta × [1 + (1 − tax rate) × target debt-to-equity ratio].</p>
+  `,
+  questions: [
+    {
+      question: "What is the approximate unlevered beta of the comparable company?",
+      options: [
+        "1.30",
+        "1.15",
+        "1.67",
+        "1.50"
+      ],
+      answer: 1,
+      reason: "Unlevered beta = 1.50 ÷ [1 + (1 − 0.25) × 0.40] = 1.50 ÷ 1.30 ≈ 1.15."
+    },
+    {
+      question: "What is the approximate beta relevered using DEF Limited's target debt-to-equity ratio?",
+      options: [
+        "1.15",
+        "1.30",
+        "1.67",
+        "1.45"
+      ],
+      answer: 2,
+      reason: "Relevered beta ≈ 1.1538 × [1 + (1 − 0.25) × 0.60] = 1.1538 × 1.45 ≈ 1.67."
+    },
+    {
+      question: "Using the relevered beta, what is the approximate cost of equity under CAPM?",
+      options: [
+        "11.50%",
+        "15.88%",
+        "14.00%",
+        "16.70%"
+      ],
+      answer: 1,
+      reason: "Cost of equity = risk-free rate + beta × equity risk premium ≈ 5% + 1.6731 × 6.5% ≈ 15.88%."
+    },
+    {
+      question: "What does beta represent in the CAPM framework?",
+      options: [
+        "The sensitivity of the security's returns to movements in relevant market returns",
+        "The company's total annual revenue",
+        "The company's cost of debt after tax",
+        "The ratio of capital expenditure to depreciation"
+      ],
+      answer: 0,
+      reason: "Beta measures the sensitivity of a security's returns to movements in the relevant market returns and is used as an indicator of systematic risk in CAPM."
+    },
+    {
+      question: "Why is the comparable company's levered beta not automatically adopted as DEF Limited's beta?",
+      options: [
+        "Levered beta cannot be used in CAPM under any circumstances",
+        "The risk-free rate must be equal to the debt-to-equity ratio",
+        "The equity risk premium replaces beta in every case",
+        "The comparable and subject company may have different capital structures, requiring consideration of unlevering and relevering beta"
+      ],
+      answer: 2,
+      reason: "Financial leverage affects levered beta. Unlevering and relevering can be used to separate the comparable company's underlying business risk from its capital structure and then reflect the subject company's relevant capital structure."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS37",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+  caseText: `
+    <p>GHI Limited has market-value equity of ₹300 crore and market-value debt of ₹100 crore. Its cost of equity is 14%, its pre-tax cost of debt is 8% and the applicable tax rate is 25%.</p>
+    <p>Assume that interest is tax-deductible and that equity and debt are the only sources of capital to be considered in the WACC calculation.</p>
+  `,
+  questions: [
+    {
+      question: "What is the after-tax cost of debt?",
+      options: [
+        "8%",
+        "4%",
+        "10%",
+        "6%"
+      ],
+      answer: 2,
+      reason: "After-tax cost of debt = pre-tax cost of debt × (1 − tax rate) = 8% × (1 − 25%) = 6%."
+    },
+    {
+      question: "What are the market-value weights of equity and debt, respectively?",
+      options: [
+        "60% equity and 40% debt",
+        "75% equity and 25% debt",
+        "25% equity and 75% debt",
+        "70% equity and 30% debt"
+      ],
+      answer: 1,
+      reason: "Total market value of capital = ₹300 crore + ₹100 crore = ₹400 crore. Equity weight = ₹300 crore ÷ ₹400 crore = 75%; debt weight = ₹100 crore ÷ ₹400 crore = 25%."
+    },
+    {
+      question: "What is GHI Limited's WACC using the stated market-value weights?",
+      options: [
+        "12%",
+        "10%",
+        "11%",
+        "9.5%"
+      ],
+      answer: 0,
+      reason: "WACC = (75% × 14%) + (25% × 6%) = 10.5% + 1.5% = 12%."
+    },
+    {
+      question: "Why are market-value weights used in the calculation in this case?",
+      options: [
+        "Market-value weights must always equal book-value weights",
+        "Debt is excluded from WACC when market values are available",
+        "The case specifies market values for the relevant capital sources, which determine the weights used here",
+        "Market-value weights are calculated using annual revenue"
+      ],
+      answer: 2,
+      reason: "The case provides market values of equity and debt and asks for WACC using market-value weights. The respective proportions of these market values determine the weights in the calculation."
+    },
+    {
+      question: "Which pairing of cash flow measure and discount rate is generally consistent with a DCF valuation?",
+      options: [
+        "FCFE discounted using WACC and FCFF discounted using the cost of equity",
+        "FCFE discounted using the cost of equity and FCFF discounted using WACC",
+        "Both FCFE and FCFF discounted exclusively using the pre-tax cost of debt",
+        "Both FCFE and FCFF discounted using the price-to-earnings ratio"
+      ],
+      answer: 1,
+      reason: "FCFE is generally discounted using the cost of equity, while FCFF is generally discounted using WACC, because the two cash flow measures relate to different providers of capital."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS38",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+  caseText: `
+    <p>JKL Limited is valued using a DCF model. The explicit forecast period ends in Year 5. FCFF expected in Year 6 is ₹18 crore, WACC is 11% and the sustainable perpetual growth rate is 3%.</p>
+    <p>Assume the constant-growth model is appropriate and the cash flow and discount rate assumptions are consistent.</p>
+  `,
+  questions: [
+    {
+      question: "What is the terminal value at the end of Year 5 under the constant-growth model?",
+      options: [
+        "₹225 crore",
+        "₹180 crore",
+        "₹150 crore",
+        "₹250 crore"
+      ],
+      answer: 0,
+      reason: "Terminal value at the end of Year 5 = Year 6 FCFF ÷ (WACC − growth rate) = ₹18 crore ÷ (11% − 3%) = ₹18 crore ÷ 8% = ₹225 crore."
+    },
+    {
+      question: "If the perpetual growth rate increases to 10%, with Year 6 FCFF and WACC unchanged, what terminal value results under the same formula?",
+      options: [
+        "₹225 crore",
+        "₹900 crore",
+        "₹1,800 crore",
+        "₹180 crore"
+      ],
+      answer: 2,
+      reason: "Terminal value = ₹18 crore ÷ (11% − 10%) = ₹18 crore ÷ 1% = ₹1,800 crore."
+    },
+    {
+      question: "What is the principal mathematical issue if the perpetual growth rate equals WACC in the constant-growth formula?",
+      options: [
+        "Terminal value must equal the book value of equity",
+        "The denominator becomes zero, so the standard formula does not produce a finite terminal value",
+        "Terminal value must equal annual revenue",
+        "The formula automatically produces a terminal value of zero"
+      ],
+      answer: 1,
+      reason: "The denominator of the constant-growth formula is WACC minus the perpetual growth rate. If the rates are equal, the denominator is zero and the formula does not produce a finite terminal value."
+    },
+    {
+      question: "Which cash flow should be used in the numerator when calculating terminal value at the end of Year 5 under this model?",
+      options: [
+        "Year 1 FCFF, irrespective of the other forecast periods",
+        "The average of Year 1 to Year 5 FCFF in every case",
+        "Year 5 FCFF without considering the next period",
+        "Year 6 FCFF, the cash flow for the first period after the explicit forecast period"
+      ],
+      answer: 2,
+      reason: "Under the constant-growth model, terminal value at the end of the explicit forecast period uses the cash flow expected in the first period after that period, which is Year 6 in this case."
+    },
+    {
+      question: "Which alternative method for estimating terminal value is discussed in the chapter?",
+      options: [
+        "Applying an appropriate exit multiple to a relevant financial measure",
+        "Selecting the highest historical share price without analysis",
+        "Using the number of employees as the only input",
+        "Adding all historical operating expenses to the book value of equity"
+      ],
+      answer: 0,
+      reason: "The chapter discusses the exit-multiple method as an alternative to the constant-growth model for estimating terminal value. The selected multiple and financial measure must be appropriate to the valuation."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS39",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+  caseText: `
+    <p>MNO Limited has a market price per share of ₹180. Its earnings per share are ₹15, cash flow per share is ₹20, sales per share are ₹120 and book value per share is ₹90.</p>
+    <p>A valuation professional calculates the company's P/E, P/CF, P/S and P/B ratios and considers how to interpret them in comparison with relevant industry multiples.</p>
+  `,
+  questions: [
+    {
+      question: "What is MNO Limited's price-to-earnings (P/E) ratio?",
+      options: [
+        "12 times",
+        "9 times",
+        "1.5 times",
+        "2 times"
+      ],
+      answer: 0,
+      reason: "P/E = market price per share ÷ earnings per share = ₹180 ÷ ₹15 = 12 times."
+    },
+    {
+      question: "What is MNO Limited's price-to-cash-flow (P/CF) ratio?",
+      options: [
+        "12 times",
+        "1.5 times",
+        "9 times",
+        "2 times"
+      ],
+      answer: 2,
+      reason: "P/CF = market price per share ÷ cash flow per share = ₹180 ÷ ₹20 = 9 times."
+    },
+    {
+      question: "What is MNO Limited's price-to-sales (P/S) ratio?",
+      options: [
+        "12 times",
+        "1.5 times",
+        "9 times",
+        "2 times"
+      ],
+      answer: 1,
+      reason: "P/S = market price per share ÷ sales per share = ₹180 ÷ ₹120 = 1.5 times."
+    },
+    {
+      question: "What is MNO Limited's price-to-book-value (P/B) ratio?",
+      options: [
+        "9 times",
+        "12 times",
+        "1.5 times",
+        "2 times"
+      ],
+      answer: 2,
+      reason: "P/B = market price per share ÷ book value per share = ₹180 ÷ ₹90 = 2 times."
+    },
+    {
+      question: "MNO Limited's P/E ratio is lower than that of a comparable company. Which conclusion is most appropriate?",
+      options: [
+        "MNO Limited is necessarily undervalued, without considering any other factor",
+        "The comparable company must have incorrect financial statements",
+        "The difference should be evaluated in light of comparability, growth, risk and relevant financial characteristics before drawing a valuation conclusion",
+        "P/E ratios cannot be used in comparing companies"
+      ],
+      answer: 2,
+      reason: "A difference in P/E ratios does not by itself establish that one company is undervalued. The professional should consider relevant differences in the businesses, growth prospects, risk and financial measures before drawing a conclusion."
+    }
+  ]
+},
+{
+  case_id: "valu_ch3_CS40",
+  difficulty: "Hard",
+  chapter: "Chapter3",
+  caseText: `
+    <p>PQR Limited is valued using FCFF. The projected FCFF is ₹40 crore in Year 1, ₹50 crore in Year 2 and ₹60 crore in Year 3. FCFF expected in Year 4 is ₹66 crore. WACC is 10% and the sustainable perpetual growth rate is 2%.</p>
+    <p>The explicit forecast period ends in Year 3. Use discount factors of 0.9091 for Year 1, 0.8264 for Year 2 and 0.7513 for Year 3. Assume that the enterprise value excludes debt of ₹100 crore, cash of ₹20 crore and a separately identified non-operating asset worth ₹5 crore. No other adjustments are required.</p>
+  `,
+  questions: [
+    {
+      question: "What is the terminal value at the end of Year 3 using the constant-growth model?",
+      options: [
+        "₹660 crore",
+        "₹825 crore",
+        "₹800 crore",
+        "₹750 crore"
+      ],
+      answer: 1,
+      reason: "Terminal value = Year 4 FCFF ÷ (WACC − growth rate) = ₹66 crore ÷ (10% − 2%) = ₹66 crore ÷ 8% = ₹825 crore."
+    },
+    {
+      question: "What is the approximate present value of the terminal value at the end of Year 3?",
+      options: [
+        "₹620.3 crore",
+        "₹825 crore",
+        "₹743.1 crore",
+        "₹668.1 crore"
+      ],
+      answer: 0,
+      reason: "Present value of terminal value = ₹825 crore × 0.7513 = approximately ₹620.32 crore, or ₹620.3 crore rounded to one decimal place."
+    },
+    {
+      question: "What is the approximate enterprise value of PQR Limited?",
+      options: [
+        "₹668.1 crore",
+        "₹763.1 crore",
+        "₹743.1 crore",
+        "₹825 crore"
+      ],
+      answer: 2,
+      reason: "Present value of forecast FCFF = (₹40 crore × 0.9091) + (₹50 crore × 0.8264) + (₹60 crore × 0.7513) = ₹36.364 crore + ₹41.320 crore + ₹45.078 crore = ₹122.762 crore. Adding the present value of terminal value of approximately ₹620.323 crore gives an enterprise value of approximately ₹743.1 crore."
+    },
+    {
+      question: "What is the approximate equity value after the specified adjustments?",
+      options: [
+        "₹648.1 crore",
+        "₹668.1 crore",
+        "₹743.1 crore",
+        "₹688.1 crore"
+      ],
+      answer: 1,
+      reason: "Equity value = enterprise value − debt + cash + non-operating asset = ₹743.1 crore − ₹100 crore + ₹20 crore + ₹5 crore = approximately ₹668.1 crore."
+    },
+    {
+      question: "Why is Year 4 FCFF used to calculate terminal value at the end of Year 3?",
+      options: [
+        "Because it is the expected cash flow for the first period after the explicit forecast period in the constant-growth model",
+        "Because the explicit forecast period should always be ignored",
+        "Because Year 4 FCFF is always equal to enterprise value",
+        "Because terminal value is based solely on historical operating cash flows"
+      ],
+      answer: 0,
+      reason: "The constant-growth model uses the cash flow expected in the first period after the explicit forecast period. Since the explicit forecast period ends in Year 3, Year 4 FCFF is used in the terminal value calculation."
+    }
+  ]
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_001",
+  case_chapter: "chapter3",
+  question: "Which of the following represents the three principal valuation approaches discussed in the chapter?",
+  options: [
+    "Market approach, income approach and asset-based approach",
+    "Historical approach, taxation approach and audit approach",
+    "Cost approach, taxation approach and liquidation approach",
+    "Income approach, depreciation approach and budgeting approach"
+  ],
+  answer: 0,
+  reason: "The chapter discusses three principal valuation approaches: the market approach, the income approach and the asset-based approach, also referred to as the cost approach."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_002",
+  case_chapter: "chapter3",
+  question: "What is the primary basis of the market approach to valuation?",
+  options: [
+    "The historical expenditure incurred by the owner",
+    "The present value of future cash flows alone",
+    "Prices and other relevant information generated by market transactions involving comparable assets or businesses",
+    "The amount of tax paid by the entity in the previous year"
+  ],
+  answer: 2,
+  reason: "The market approach uses prices and other relevant information generated by market transactions involving identical or comparable assets, liabilities or businesses."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_003",
+  case_chapter: "chapter3",
+  question: "Which valuation approach is based primarily on converting future earnings or cash flows into a present value?",
+  options: [
+    "Market approach",
+    "Income approach",
+    "Asset-based approach",
+    "Market Price Method only"
+  ],
+  answer: 1,
+  reason: "The income approach determines value by converting expected future earnings or cash flows into a present value using an appropriate discount rate."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_004",
+  case_chapter: "chapter3",
+  question: "Which of the following is an important consideration when selecting a valuation approach?",
+  options: [
+    "Selecting the approach that always produces the highest value",
+    "Using the same approach for every asset and business",
+    "Ignoring the purpose for which the valuation is undertaken",
+    "Considering the purpose of valuation, the nature of the asset and the availability of reliable inputs"
+  ],
+  answer: 3,
+  reason: "The selection of a valuation approach depends on factors such as the purpose of valuation, the nature of the asset or business, the availability of reliable inputs, and the strengths and limitations of the approaches."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_005",
+  case_chapter: "chapter3",
+  question: "What are observable inputs in the context of valuation?",
+  options: [
+    "Inputs developed using available market data and other information reflecting market activity",
+    "Inputs based exclusively on unsupported personal opinions",
+    "Inputs that must always be estimated by management without reference to markets",
+    "Inputs that exclude information from actual transactions"
+  ],
+  answer: 0,
+  reason: "Observable inputs are developed using market data, including information from actual transactions and other relevant market information."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_006",
+  case_chapter: "chapter3",
+  question: "Which statement best describes unobservable inputs?",
+  options: [
+    "Inputs that are always quoted directly on an active market",
+    "Inputs derived only from published share prices",
+    "Inputs for which relevant market data is not available and which are developed using the best information available in the circumstances",
+    "Inputs that cannot be considered in any valuation"
+  ],
+  answer: 2,
+  reason: "Unobservable inputs are used when relevant observable inputs are unavailable. They are developed using the best information available in the circumstances, including assumptions that market participants would use."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_007",
+  case_chapter: "chapter3",
+  question: "Who are market participants for valuation purposes?",
+  options: [
+    "Only the directors of the entity being valued",
+    "Buyers and sellers in the principal or most advantageous market who are independent, knowledgeable, able and willing to transact",
+    "Only government authorities responsible for taxation",
+    "Only investors who already own shares in the entity"
+  ],
+  answer: 1,
+  reason: "Market participants are independent, knowledgeable, able and willing buyers and sellers who transact in the principal market or, in its absence, the most advantageous market."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_008",
+  case_chapter: "chapter3",
+  question: "Which statement best describes an orderly transaction?",
+  options: [
+    "A transaction in which the seller must immediately dispose of the asset regardless of market conditions",
+    "A transaction between related parties in every circumstance",
+    "A transaction conducted without considering market exposure",
+    "A transaction that assumes exposure to the market for a period customary for transactions involving the relevant asset or liability"
+  ],
+  answer: 3,
+  reason: "An orderly transaction assumes exposure to the market for a period customary for transactions involving the relevant asset or liability; it is not a forced transaction."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_009",
+  case_chapter: "chapter3",
+  question: "Which method is directly associated with the market approach when valuing shares that are actively traded?",
+  options: [
+    "Market Price Method",
+    "Dividend capitalization method only",
+    "Salvage value method",
+    "Discounted cash flow method only"
+  ],
+  answer: 0,
+  reason: "The Market Price Method is a market approach method that considers the market price of shares, subject to the relevance and reliability of the available trading information."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_010",
+  case_chapter: "chapter3",
+  question: "When applying the Market Price Method, which consideration is relevant when selecting the market price of a traded security?",
+  options: [
+    "The personal preference of the majority shareholder alone",
+    "The historical cost recorded when the shares were first issued",
+    "The relevant trading market and the trading information over a reasonable period",
+    "The highest price ever recorded, regardless of its relevance"
+  ],
+  answer: 2,
+  reason: "The Market Price Method considers relevant trading information over a reasonable period and the relevant market in which the security is traded. The selected price should reflect the circumstances of the valuation."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_011",
+  case_chapter: "chapter3",
+  question: "What does CCM stand for in the context of valuation?",
+  options: [
+    "Capital Cost Measurement",
+    "Comparable Companies Multiple",
+    "Cash Conversion Method",
+    "Current Capital Management"
+  ],
+  answer: 1,
+  reason: "CCM stands for Comparable Companies Multiple. It is a market approach method that uses valuation multiples derived from comparable companies."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_012",
+  case_chapter: "chapter3",
+  question: "Which of the following is a commonly used comparable-company valuation multiple?",
+  options: [
+    "Tax paid divided by number of directors",
+    "Employee count divided by share capital",
+    "Historical capital expenditure divided by years in business",
+    "Enterprise value to EBITDA"
+  ],
+  answer: 3,
+  reason: "Enterprise value to EBITDA is a commonly used comparable-company multiple. Other multiples discussed in the chapter include revenue, profit after tax, earnings per share and book value-based multiples."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_013",
+  case_chapter: "chapter3",
+  question: "What is the primary basis of the Comparable Transaction Multiple (CTM) method?",
+  options: [
+    "Multiples derived from relevant comparable transactions involving businesses or interests",
+    "The historical cost of the subject company's fixed assets alone",
+    "The personal investment objectives of the valuer",
+    "The subject company's budget without reference to comparable transactions"
+  ],
+  answer: 0,
+  reason: "The Comparable Transaction Multiple method uses valuation multiples derived from relevant comparable transactions, after considering the comparability of the businesses and the circumstances of the transactions."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_014",
+  case_chapter: "chapter3",
+  question: "What is the purpose of adjusting comparable-company multiples before applying them to the subject company?",
+  options: [
+    "To ensure that every comparable company has identical financial statements",
+    "To eliminate the need to examine the subject company's financial information",
+    "To account for relevant differences between the comparable companies and the subject company",
+    "To guarantee that the subject company's value equals its book value"
+  ],
+  answer: 2,
+  reason: "Adjustments may be required to reflect relevant differences between comparable companies and the subject company, including differences in growth, risk, profitability and other factors affecting the appropriateness of the multiple."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_015",
+  case_chapter: "chapter3",
+  question: "What does DCF stand for in valuation?",
+  options: [
+    "Debt Capital Forecast",
+    "Discounted Cash Flow",
+    "Depreciated Cost Formula",
+    "Direct Capital Financing"
+  ],
+  answer: 1,
+  reason: "DCF stands for Discounted Cash Flow. The method estimates value by discounting expected future cash flows to their present value using an appropriate discount rate."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_016",
+  case_chapter: "chapter3",
+  question: "Which discount rate is generally used to discount Free Cash Flow to Equity (FCFE)?",
+  options: [
+    "The pre-tax cost of debt in every case",
+    "The weighted average selling price of the company's products",
+    "The price-to-sales multiple",
+    "The cost of equity"
+  ],
+  answer: 3,
+  reason: "FCFE represents cash flows available to equity shareholders and is generally discounted using the cost of equity."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_017",
+  case_chapter: "chapter3",
+  question: "Which discount rate is generally used to discount Free Cash Flow to Firm (FCFF)?",
+  options: [
+    "Weighted Average Cost of Capital (WACC)",
+    "The dividend yield alone",
+    "The pre-tax cost of debt alone in every case",
+    "The price-to-earnings ratio"
+  ],
+  answer: 0,
+  reason: "FCFF represents cash flows available to all providers of capital and is generally discounted using the Weighted Average Cost of Capital (WACC)."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_018",
+  case_chapter: "chapter3",
+  question: "Which of the following is a component used in the Capital Asset Pricing Model (CAPM) to estimate the cost of equity?",
+  options: [
+    "Book value per share multiplied by the tax rate",
+    "Annual revenue divided by total assets",
+    "Risk-free rate, beta and equity risk premium",
+    "Depreciation divided by capital expenditure"
+  ],
+  answer: 2,
+  reason: "Under CAPM, the cost of equity is estimated as the risk-free rate plus beta multiplied by the equity risk premium."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_019",
+  case_chapter: "chapter3",
+  question: "What is the general purpose of terminal value in a DCF valuation?",
+  options: [
+    "To replace all cash flows during the explicit forecast period",
+    "To represent the value attributable to cash flows beyond the explicit forecast period under the selected terminal value method",
+    "To record only the historical cost of fixed assets",
+    "To measure the company's annual tax payment"
+  ],
+  answer: 1,
+  reason: "Terminal value represents the value attributable to cash flows beyond the explicit forecast period. The chapter discusses methods such as the constant-growth model and the exit-multiple method."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch3_EI_020",
+  case_chapter: "chapter3",
+  question: "Under the constant-growth model, which relationship is used to calculate terminal value at the end of the explicit forecast period?",
+  options: [
+    "Current assets minus current liabilities",
+    "Book value of equity multiplied by the tax rate",
+    "Enterprise value divided by the number of employees",
+    "Expected cash flow for the next period divided by the discount rate minus the perpetual growth rate"
+  ],
+  answer: 3,
+  reason: "Under the constant-growth model, terminal value is calculated as the expected cash flow for the first period after the explicit forecast period divided by the difference between the discount rate and the perpetual growth rate, provided the assumptions make the formula appropriate."
+},
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_021",
+    case_chapter: "chapter3",
+    question: "Under the Market Price Method, the valuation of an asset is primarily based on:",
+    options: [
+      "The trading prices of the asset over a reasonable period",
+      "The historical cost of the asset only",
+      "The replacement cost of the asset only",
+      "The management's budgeted expenditure on the asset"
+    ],
+    answer: 0,
+    reason: "The Market Price Method considers the trading prices of the asset over a reasonable period as the basis for valuation."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_022",
+    case_chapter: "chapter3",
+    question: "Where an asset is traded in more than one market, which market is relevant under the Market Price Method when applying the highest-volume market principle?",
+    options: [
+      "The market with the lowest transaction volume",
+      "The market selected solely by management preference",
+      "The market with the highest trading volume",
+      "The market in which the asset was first issued, irrespective of trading activity"
+    ],
+    answer: 2,
+    reason: "The Market Price Method considers the market with the highest trading volume when applying the highest-volume market principle."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_023",
+    case_chapter: "chapter3",
+    question: "In a volume-weighted average price calculation, the weighting is based on:",
+    options: [
+      "The age of the asset",
+      "The trading volume at the relevant prices",
+      "The book value of the asset",
+      "The number of years remaining in the asset's useful life"
+    ],
+    answer: 1,
+    reason: "A volume-weighted average price gives weight to prices according to the relevant trading volumes."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_024",
+    case_chapter: "chapter3",
+    question: "Which of the following is an example of a multiple commonly used under the market approach?",
+    options: [
+      "Cost of equity divided by cost of debt",
+      "Working capital divided by useful life",
+      "Tax rate divided by depreciation",
+      "Enterprise Value divided by EBITDA"
+    ],
+    answer: 3,
+    reason: "Enterprise Value to EBITDA is a commonly used valuation multiple under the market approach."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_025",
+    case_chapter: "chapter3",
+    question: "CCM is also associated with which valuation terminology?",
+    options: [
+      "Guideline Public Company (GPC) method",
+      "Dividend Payment Schedule method",
+      "Historical Cost Recognition method",
+      "Replacement Cost Allocation method"
+    ],
+    answer: 0,
+    reason: "Comparable Companies Multiple (CCM) is also referred to using terms such as Guideline Public Company (GPC) and Guideline Publicly Traded Comparable (GPTC)."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_026",
+    case_chapter: "chapter3",
+    question: "While selecting comparable companies for the CCM method, the valuer should primarily consider:",
+    options: [
+      "Whether the companies have identical names",
+      "Whether the companies have similar relevant business and economic characteristics",
+      "Whether the companies were incorporated in the same year only",
+      "Whether the companies have the same number of shareholders only"
+    ],
+    answer: 1,
+    reason: "Comparable companies should have relevant similarities to the subject company. Differences that affect the multiple may require appropriate adjustments."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_027",
+    case_chapter: "chapter3",
+    question: "Which of the following is an advantage of the market approach?",
+    options: [
+      "It eliminates the need to consider market conditions",
+      "It guarantees that every comparable transaction is identical",
+      "It can use observable market prices and transaction information",
+      "It removes the need for professional judgement in every valuation"
+    ],
+    answer: 2,
+    reason: "The market approach can draw on observable market prices and transaction information, although comparability and other relevant factors still require evaluation."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_028",
+    case_chapter: "chapter3",
+    question: "Which of the following is a limitation of the market approach?",
+    options: [
+      "It can use actual market information",
+      "It can provide indications based on comparable companies",
+      "It can consider prices from comparable transactions",
+      "Suitable comparables may be unavailable, or differences may require adjustments"
+    ],
+    answer: 3,
+    reason: "The market approach may be difficult to apply when suitable comparables are unavailable or when material differences require adjustments."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_029",
+    case_chapter: "chapter3",
+    question: "A control premium generally relates to:",
+    options: [
+      "The cost of maintaining inventory",
+      "The additional value associated with obtaining control",
+      "The discount arising from a lack of marketability",
+      "The annual depreciation charged on an asset"
+    ],
+    answer: 1,
+    reason: "A control premium reflects the additional value associated with obtaining control, where relevant to the interest being valued."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_030",
+    case_chapter: "chapter3",
+    question: "The discount for lack of marketability (DLOM) relates to:",
+    options: [
+      "The increase in value arising from control",
+      "The effect of a change in the tax rate only",
+      "The lack of marketability of the interest being valued",
+      "The difference between revenue and EBITDA"
+    ],
+    answer: 2,
+    reason: "DLOM refers to a discount associated with a lack of marketability. Its relevance and amount depend on the valuation circumstances."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_031",
+    case_chapter: "chapter3",
+    question: "The Comparable Transaction Multiple (CTM) method primarily uses:",
+    options: [
+      "Pricing multiples derived from comparable transactions",
+      "Only the historical cost recorded in the balance sheet",
+      "Only the subject company's original incorporation cost",
+      "Only the future cash flows of the subject company"
+    ],
+    answer: 0,
+    reason: "The CTM method uses multiples derived from comparable transactions to arrive at an indication of value."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_032",
+    case_chapter: "chapter3",
+    question: "Why may a valuer need to adjust the multiples derived from comparable companies or transactions?",
+    options: [
+      "To ensure that every multiple becomes identical",
+      "To eliminate all observable market information",
+      "To replace the valuation approach with historical cost",
+      "To account for relevant differences between the subject and the comparables"
+    ],
+    answer: 3,
+    reason: "Relevant differences between the subject and the comparables may affect the multiples and may require appropriate adjustments."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_033",
+    case_chapter: "chapter3",
+    question: "When applying comparable transaction multiples, the valuer should be careful to avoid:",
+    options: [
+      "Considering comparable transaction information",
+      "Double counting a premium or discount",
+      "Reviewing differences between transactions",
+      "Examining the multiples derived from transactions"
+    ],
+    answer: 1,
+    reason: "A premium or discount already reflected in a transaction multiple should not be counted again through a separate adjustment without appropriate justification."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_034",
+    case_chapter: "chapter3",
+    question: "The multiple EV/EBITDA expresses the relationship between:",
+    options: [
+      "Equity value and earnings per share",
+      "Revenue and book value",
+      "Enterprise Value and EBITDA",
+      "Cost of equity and cost of debt"
+    ],
+    answer: 2,
+    reason: "EV/EBITDA is calculated by relating Enterprise Value to Earnings Before Interest, Taxes, Depreciation and Amortisation (EBITDA)."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_035",
+    case_chapter: "chapter3",
+    question: "The Price-to-Earnings (P/E) ratio generally relates:",
+    options: [
+      "Market price per share to earnings per share",
+      "Enterprise Value to total assets",
+      "Revenue to working capital",
+      "Cost of debt to cost of equity"
+    ],
+    answer: 0,
+    reason: "The P/E ratio generally expresses the market price per share in relation to earnings per share."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_036",
+    case_chapter: "chapter3",
+    question: "An active market is generally characterised by:",
+    options: [
+      "The absence of transactions in the asset",
+      "Prices determined exclusively by the entity's management",
+      "Transactions that occur only once and provide no ongoing pricing information",
+      "Transactions occurring with sufficient frequency and volume to provide ongoing pricing information"
+    ],
+    answer: 3,
+    reason: "An active market has transactions with sufficient frequency and volume to provide pricing information on an ongoing basis."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_037",
+    case_chapter: "chapter3",
+    question: "An orderly transaction generally assumes that:",
+    options: [
+      "The asset must be sold immediately in every circumstance",
+      "The transaction must occur under forced liquidation conditions",
+      "The asset has been exposed to the market for a period before the measurement date, allowing usual and customary marketing activities",
+      "The transaction price must be equal to historical cost"
+    ],
+    answer: 2,
+    reason: "An orderly transaction assumes exposure to the market for a period before the measurement date, allowing marketing activities usual and customary for transactions involving such assets or liabilities. It is not a forced liquidation."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_038",
+    case_chapter: "chapter3",
+    question: "Observable inputs are generally inputs that are:",
+    options: [
+      "Based solely on the entity's internal estimates",
+      "Developed using market data, such as publicly available information from sources independent of the reporting entity",
+      "Always unrelated to market activity",
+      "Selected without considering information available to market participants"
+    ],
+    answer: 1,
+    reason: "Observable inputs reflect market data obtained from sources independent of the reporting entity and are consistent with information available to market participants."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_039",
+    case_chapter: "chapter3",
+    question: "Where relevant unobservable inputs are used in a valuation, they should reflect:",
+    options: [
+      "The assumptions that market participants would use, based on the best information available in the circumstances",
+      "Only the original purchase price of the asset",
+      "An assumption that market information must never be considered",
+      "Only the personal preference of the valuer"
+    ],
+    answer: 0,
+    reason: "Unobservable inputs should reflect the assumptions market participants would use, based on the best information available in the circumstances."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_EI_040",
+    case_chapter: "chapter3",
+    question: "Market participants are generally assumed to be:",
+    options: [
+      "Related parties required to transact with each other",
+      "Uninformed parties that cannot assess the asset",
+      "Parties that are unable to enter into the transaction",
+      "Independent of each other, knowledgeable, able and willing to transact"
+    ],
+    answer: 3,
+    reason: "Market participants are independent of each other, knowledgeable, able to enter into the transaction, and willing to do so."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_001",
+    case_chapter: "chapter3",
+    question: "A valuer is deciding which valuation approach to apply to an asset. Which consideration is most appropriate when making this decision?",
+    options: [
+      "Selecting the approach that always produces the highest value",
+      "Using the same approach for every asset, irrespective of its characteristics",
+      "Considering the purpose, basis and premise of valuation, the nature of the asset, availability of reliable inputs, and the strengths and weaknesses of the approaches",
+      "Selecting an approach solely because it was used in the entity's previous valuation"
+    ],
+    answer: 2,
+    reason: "The selection of a valuation approach depends on relevant valuation circumstances, including the purpose, basis and premise of valuation, the nature of the asset, the availability of reliable inputs, and the strengths and weaknesses of the approaches. Applicable statutory requirements must also be considered."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_002",
+    case_chapter: "chapter3",
+    question: "A valuer has access to relevant observable market inputs and also needs to use certain unobservable inputs. Which practice is consistent with the valuation principles described in the chapter?",
+    options: [
+      "Use only unobservable inputs because they provide greater flexibility",
+      "Maximise the use of observable inputs and minimise the use of unobservable inputs, where appropriate",
+      "Exclude all market data whenever an estimate is required",
+      "Treat observable and unobservable inputs as interchangeable in every situation"
+    ],
+    answer: 1,
+    reason: "The valuation principles call for maximising the use of relevant observable inputs and minimising the use of unobservable inputs, consistent with the circumstances of the valuation."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_003",
+    case_chapter: "chapter3",
+    question: "A share trades at ₹100 for a volume of 10,000 shares and at ₹110 for a volume of 30,000 shares during the relevant period. What is the volume-weighted average price?",
+    options: [
+      "₹105.00",
+      "₹110.00",
+      "₹107.50",
+      "₹102.50"
+    ],
+    answer: 2,
+    reason: "Volume-weighted average price = [(₹100 × 10,000) + (₹110 × 30,000)] ÷ 40,000 = ₹107.50."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_004",
+    case_chapter: "chapter3",
+    question: "An asset is traded in multiple markets. In applying the highest-volume market principle under the Market Price Method, which market should be considered?",
+    options: [
+      "The market with the highest trading volume for the asset",
+      "The market with the lowest quoted price, irrespective of trading activity",
+      "The market selected solely by the entity's management",
+      "The market with the fewest transactions"
+    ],
+    answer: 0,
+    reason: "Under the highest-volume market principle described for the Market Price Method, the market with the highest trading volume is relevant."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_005",
+    case_chapter: "chapter3",
+    question: "A valuer identifies several publicly traded companies as potential comparables. Which factor is most relevant when evaluating their suitability under the Comparable Companies Multiple (CCM) method?",
+    options: [
+      "Whether every comparable has the same incorporation date as the subject company",
+      "Whether every comparable has exactly the same number of shareholders",
+      "Whether the companies operate in the same country, without considering other factors",
+      "Whether the companies have sufficiently comparable business and economic characteristics, with relevant differences evaluated"
+    ],
+    answer: 3,
+    reason: "The CCM method requires the valuer to assess the comparability of companies and consider relevant differences that may affect the valuation multiple."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_006",
+    case_chapter: "chapter3",
+    question: "Comparable companies indicate an EV/EBITDA multiple of 7.5 times. If the subject company's relevant EBITDA is ₹24 crore, what Enterprise Value is indicated before any further adjustments?",
+    options: [
+      "₹180 crore",
+      "₹31.5 crore",
+      "₹168 crore",
+      "₹204 crore"
+    ],
+    answer: 0,
+    reason: "Indicated Enterprise Value = EV/EBITDA multiple × EBITDA = 7.5 × ₹24 crore = ₹180 crore."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_007",
+    case_chapter: "chapter3",
+    question: "A valuation analysis indicates an Enterprise Value of ₹500 crore. Interest-bearing debt is ₹120 crore and excess cash is ₹20 crore. Assuming there are no other adjustments, what is the indicated equity value?",
+    options: [
+      "₹600 crore",
+      "₹400 crore",
+      "₹380 crore",
+      "₹520 crore"
+    ],
+    answer: 1,
+    reason: "Equity Value = Enterprise Value − interest-bearing debt + excess cash = ₹500 crore − ₹120 crore + ₹20 crore = ₹400 crore."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_008",
+    case_chapter: "chapter3",
+    question: "A valuer uses a comparable transaction multiple that already reflects a control premium. What should the valuer consider before applying a separate control premium adjustment?",
+    options: [
+      "A control premium must always be added, irrespective of the transaction multiple",
+      "The multiple must be replaced with historical cost",
+      "The premium should be added twice to ensure sufficient value is recognised",
+      "Whether the premium is already reflected in the transaction multiple, to avoid double counting"
+    ],
+    answer: 3,
+    reason: "The valuer should consider whether a premium or discount is already reflected in the comparable transaction multiple. Applying it again without justification may result in double counting."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_009",
+    case_chapter: "chapter3",
+    question: "When a valuer uses unobservable inputs, which assumptions should those inputs seek to reflect?",
+    options: [
+      "Assumptions that market participants would use, based on the best information available in the circumstances",
+      "Only the personal preferences of the entity's management",
+      "Only the original cost recorded in the books",
+      "Assumptions that deliberately disregard relevant market participant considerations"
+    ],
+    answer: 0,
+    reason: "Unobservable inputs should reflect the assumptions that market participants would use, based on the best information available in the circumstances."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_010",
+    case_chapter: "chapter3",
+    question: "A valuer considers the market approach and the income approach, and both provide relevant indications of value. Which statement is most appropriate?",
+    options: [
+      "The valuer must always select the higher indication of value",
+      "The income approach must always be disregarded when market data exists",
+      "The valuer may consider multiple approaches and apply professional judgement, including appropriate weighting where justified",
+      "The indications must always be averaged equally, without considering their reliability"
+    ],
+    answer: 2,
+    reason: "Where appropriate, more than one valuation approach may be considered. The valuer uses professional judgement in evaluating the indications and determining whether weighting is justified."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_011",
+    case_chapter: "chapter3",
+    question: "Under the Discounted Cash Flow (DCF) method, Free Cash Flow to the Firm (FCFF) is generally discounted using which rate to estimate Enterprise Value?",
+    options: [
+      "The dividend growth rate alone",
+      "The Weighted Average Cost of Capital (WACC)",
+      "The cost of equity in every circumstance",
+      "The historical rate of return on the entity's assets, without further analysis"
+    ],
+    answer: 1,
+    reason: "FCFF represents cash flows available to the providers of capital and is generally discounted at WACC to estimate Enterprise Value."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_012",
+    case_chapter: "chapter3",
+    question: "A valuer projects Free Cash Flow to Equity (FCFE) for a company. Which discount rate is generally appropriate for estimating equity value using these cash flows?",
+    options: [
+      "The after-tax cost of debt alone",
+      "The risk-free rate in every circumstance",
+      "WACC, irrespective of the cash flow being valued",
+      "The cost of equity"
+    ],
+    answer: 3,
+    reason: "FCFE represents cash flows available to equity holders and is generally discounted at the cost of equity to estimate equity value."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_013",
+    case_chapter: "chapter3",
+    question: "Under the constant-growth method, the expected cash flow for the next period is ₹12 crore, the discount rate is 10%, and the perpetual growth rate is 4%. What is the terminal value at the end of the forecast period?",
+    options: [
+      "₹200 crore",
+      "₹120 crore",
+      "₹300 crore",
+      "₹72 crore"
+    ],
+    answer: 0,
+    reason: "Terminal Value = Cash Flow for the next period ÷ (Discount Rate − Perpetual Growth Rate) = ₹12 crore ÷ (10% − 4%) = ₹200 crore. The formula requires the growth rate to be below the discount rate."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_014",
+    case_chapter: "chapter3",
+    question: "Under the Capital Asset Pricing Model (CAPM), the risk-free rate is 6%, beta is 1.2, and the equity risk premium is 5%. What is the indicated cost of equity?",
+    options: [
+      "11%",
+      "6%",
+      "12%",
+      "13.2%"
+    ],
+    answer: 2,
+    reason: "Cost of Equity = Risk-free Rate + Beta × Equity Risk Premium = 6% + (1.2 × 5%) = 12%."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_015",
+    case_chapter: "chapter3",
+    question: "When estimating WACC, which treatment of the cost of debt is generally appropriate where interest is tax-deductible and the relevant tax effect is applicable?",
+    options: [
+      "Use the cost of debt before tax without considering the tax effect",
+      "Use the after-tax cost of debt and apply appropriate capital structure weights",
+      "Replace the cost of debt with the dividend growth rate",
+      "Exclude the cost of equity from the calculation"
+    ],
+    answer: 1,
+    reason: "WACC generally incorporates the after-tax cost of debt, where the tax effect is applicable, and the relevant weights for debt and equity."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_016",
+    case_chapter: "chapter3",
+    question: "A company's pre-tax cost of debt is 8% and its applicable tax rate is 25%. Assuming the interest tax shield is available, what is the after-tax cost of debt?",
+    options: [
+      "8%",
+      "10%",
+      "4%",
+      "6%"
+    ],
+    answer: 3,
+    reason: "After-tax cost of debt = Pre-tax cost of debt × (1 − Tax Rate) = 8% × (1 − 25%) = 6%."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_017",
+    case_chapter: "chapter3",
+    question: "A valuer estimates beta using comparable companies but needs to reflect the subject company's target capital structure. Which process is generally relevant?",
+    options: [
+      "Unlever the comparable companies' betas and then relever beta to reflect the subject company's target capital structure",
+      "Use the highest observed share price as beta",
+      "Replace beta with the company's book value",
+      "Add the cost of debt directly to the equity risk premium"
+    ],
+    answer: 0,
+    reason: "The comparable companies' betas may be unlevered to remove the effect of their capital structures and then relevered to reflect the subject company's target capital structure."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_018",
+    case_chapter: "chapter3",
+    question: "Under a constant-growth dividend capitalisation model, the expected dividend for the next period is ₹4 per share, the cost of equity is 12%, and the perpetual dividend growth rate is 4%. What is the indicated value per share?",
+    options: [
+      "₹32",
+      "₹48",
+      "₹50",
+      "₹100"
+    ],
+    answer: 2,
+    reason: "Value per share = Expected dividend for the next period ÷ (Cost of Equity − Growth Rate) = ₹4 ÷ (12% − 4%) = ₹50. The growth rate must be below the cost of equity for this formula."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_019",
+    case_chapter: "chapter3",
+    question: "All other relevant factors remaining unchanged, which change would generally reduce FCFF in a DCF forecast?",
+    options: [
+      "A decrease in capital expenditure",
+      "An increase in investment in working capital",
+      "A decrease in investment in working capital",
+      "An increase in operating cash flow before capital expenditure and working capital changes"
+    ],
+    answer: 1,
+    reason: "An increase in investment in working capital generally represents an additional use of cash and reduces FCFF, all other relevant factors remaining unchanged."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_MI_020",
+    case_chapter: "chapter3",
+    question: "Why does the constant-growth terminal value model become problematic when the perpetual growth rate approaches or exceeds the discount rate?",
+    options: [
+      "Because the model automatically converts Enterprise Value into book value",
+      "Because a higher growth rate always produces a lower terminal value",
+      "Because the formula no longer requires an estimate of future cash flow",
+      "Because the denominator, discount rate minus growth rate, approaches zero or becomes negative, making the result unsuitable or unstable"
+    ],
+    answer: 3,
+    reason: "The constant-growth formula uses the discount rate minus the perpetual growth rate as its denominator. When growth approaches the discount rate, the result becomes unstable; when growth equals or exceeds the discount rate, the formula is not appropriate in its usual form."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_001",
+    case_chapter: "chapter3",
+    question: "A company has EBITDA of ₹36 crore. The selected EV/EBITDA multiple is 7.5 times. Interest-bearing debt is ₹55 crore, excess cash is ₹12 crore, and a separate non-operating asset is valued at ₹8 crore. Assuming the non-operating asset is not included in the operating Enterprise Value and there are no other adjustments, what is the indicated equity value?",
+    options: [
+      "₹245 crore",
+      "₹235 crore",
+      "₹223 crore",
+      "₹270 crore"
+    ],
+    answer: 1,
+    reason: "Enterprise Value = ₹36 crore × 7.5 = ₹270 crore. Equity Value = Enterprise Value − Debt + Excess Cash + Non-operating Assets = ₹270 − ₹55 + ₹12 + ₹8 = ₹235 crore."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_002",
+    case_chapter: "chapter3",
+    question: "The market value of equity is ₹240 crore and the market value of debt is ₹160 crore. The cost of equity is 15%, the pre-tax cost of debt is 9%, and the applicable tax rate is 30%. Assuming the interest tax shield is available, what is the Weighted Average Cost of Capital (WACC)?",
+    options: [
+      "12.60%",
+      "11.52%",
+      "13.20%",
+      "10.80%"
+    ],
+    answer: 1,
+    reason: "Equity weight = 240/400 = 60%; debt weight = 160/400 = 40%. After-tax cost of debt = 9% × (1 − 30%) = 6.3%. WACC = (60% × 15%) + (40% × 6.3%) = 11.52%."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_003",
+    case_chapter: "chapter3",
+    question: "Under the Capital Asset Pricing Model (CAPM), the risk-free rate is 4.5%, the beta of the equity is 1.3, and the equity risk premium is 6.5%. What is the indicated cost of equity?",
+    options: [
+      "12.95%",
+      "10.95%",
+      "13.45%",
+      "8.45%"
+    ],
+    answer: 0,
+    reason: "Cost of Equity = Risk-free Rate + Beta × Equity Risk Premium = 4.5% + (1.3 × 6.5%) = 12.95%."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_004",
+    case_chapter: "chapter3",
+    question: "A DCF valuation estimates FCFF of ₹50 crore, ₹60 crore, and ₹70 crore for Years 1, 2, and 3, respectively. The terminal value at the end of Year 3 is ₹1,260 crore. At a discount rate of 10%, the discount factors for Years 1, 2, and 3 are 0.9091, 0.8264, and 0.7513, respectively. What is the approximate Enterprise Value?",
+    options: [
+      "₹1,041.7 crore",
+      "₹1,094.3 crore",
+      "₹1,146.9 crore",
+      "₹1,260.0 crore"
+    ],
+    answer: 1,
+    reason: "Enterprise Value = (₹50 × 0.9091) + (₹60 × 0.8264) + (₹70 × 0.7513) + (₹1,260 × 0.7513) = approximately ₹1,094.3 crore. The terminal value is discounted from the end of Year 3 to the valuation date."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_005",
+    case_chapter: "chapter3",
+    question: "At the end of Year 4, FCFF is ₹80 crore. FCFF is expected to grow at 3% per annum in perpetuity from Year 5 onward. If WACC is 11%, what is the terminal value at the end of Year 4 under the constant-growth method?",
+    options: [
+      "₹1,030 crore",
+      "₹1,000 crore",
+      "₹824 crore",
+      "₹1,200 crore"
+    ],
+    answer: 0,
+    reason: "FCFF for Year 5 = ₹80 crore × 1.03 = ₹82.4 crore. Terminal Value at the end of Year 4 = FCFF for Year 5 ÷ (WACC − Growth Rate) = ₹82.4 crore ÷ (11% − 3%) = ₹1,030 crore."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_006",
+    case_chapter: "chapter3",
+    question: "An entity reports EBIT of ₹100 crore. The applicable tax rate is 25%, depreciation and amortisation are ₹12 crore, capital expenditure is ₹20 crore, and the increase in working capital is ₹8 crore. Assuming no other adjustments, what is FCFF?",
+    options: [
+      "₹55 crore",
+      "₹59 crore",
+      "₹67 crore",
+      "₹75 crore"
+    ],
+    answer: 1,
+    reason: "FCFF = EBIT × (1 − Tax Rate) + Depreciation and Amortisation − Capital Expenditure − Increase in Working Capital = ₹100 × 75% + ₹12 − ₹20 − ₹8 = ₹59 crore."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_007",
+    case_chapter: "chapter3",
+    question: "An entity has net income of ₹72 crore, depreciation and amortisation of ₹10 crore, capital expenditure of ₹18 crore, an increase in working capital of ₹6 crore, and net borrowing of ₹8 crore. Assuming no other adjustments, what is FCFE?",
+    options: [
+      "₹58 crore",
+      "₹66 crore",
+      "₹72 crore",
+      "₹82 crore"
+    ],
+    answer: 1,
+    reason: "FCFE = Net Income + Depreciation and Amortisation − Capital Expenditure − Increase in Working Capital + Net Borrowing = ₹72 + ₹10 − ₹18 − ₹6 + ₹8 = ₹66 crore."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_008",
+    case_chapter: "chapter3",
+    question: "Using the formulas βU = βL ÷ [1 + (1 − T) × (D/E)] and βL = βU × [1 + (1 − T) × (D/E)], a comparable company has a levered beta of 1.50, a tax rate of 25%, and a debt-to-equity ratio of 0.50. The subject company has a target debt-to-equity ratio of 0.80. What is the approximate beta relevered to the subject company's target capital structure?",
+    options: [
+      "1.60",
+      "1.75",
+      "1.91",
+      "1.09"
+    ],
+    answer: 1,
+    reason: "Unlevered beta = 1.50 ÷ [1 + (1 − 0.25) × 0.50] = 1.50 ÷ 1.375 ≈ 1.0909. Relevered beta = 1.0909 × [1 + 0.75 × 0.80] ≈ 1.75."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_009",
+    case_chapter: "chapter3",
+    question: "A valuer has forecast FCFE and intends to estimate equity value directly using the DCF method. Which combination of cash flow and discount rate is conceptually appropriate?",
+    options: [
+      "FCFE discounted at WACC to estimate Enterprise Value",
+      "FCFF discounted at the cost of equity to estimate equity value",
+      "FCFE discounted at the cost of equity to estimate equity value",
+      "FCFF discounted at the after-tax cost of debt to estimate equity value"
+    ],
+    answer: 2,
+    reason: "FCFE represents cash flow available to equity holders and is generally discounted at the cost of equity to estimate equity value. FCFF is generally discounted at WACC to estimate Enterprise Value."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_010",
+    case_chapter: "chapter3",
+    question: "Under the Market Price Method, an asset trades at ₹102 for 12,000 units, ₹108 for 18,000 units, and ₹105 for 10,000 units during the relevant period. What is the volume-weighted average price for the period?",
+    options: [
+      "₹104.85",
+      "₹105.45",
+      "₹106.20",
+      "₹107.25"
+    ],
+    answer: 1,
+    reason: "Volume-weighted average price = [(₹102 × 12,000) + (₹108 × 18,000) + (₹105 × 10,000)] ÷ 40,000 = ₹105.45."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_011",
+    case_chapter: "chapter3",
+    question: "Under the Comparable Companies Multiple (CCM) method, a valuer selects an EV/EBITDA multiple of 8.0 times after evaluating the comparables and relevant differences. The subject company's EBITDA is ₹30 crore, interest-bearing debt is ₹60 crore, excess cash is ₹15 crore, and a separate non-operating asset is worth ₹10 crore. Assuming the non-operating asset is not included in operating Enterprise Value and no other adjustments apply, what is the indicated equity value?",
+    options: [
+      "₹190 crore",
+      "₹205 crore",
+      "₹225 crore",
+      "₹240 crore"
+    ],
+    answer: 1,
+    reason: "Enterprise Value = ₹30 crore × 8.0 = ₹240 crore. Equity Value = ₹240 − ₹60 + ₹15 + ₹10 = ₹205 crore."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_012",
+    case_chapter: "chapter3",
+    question: "After evaluating the comparability of listed companies and making relevant adjustments, a valuer selects a P/E multiple of 15 times for the subject company. Its normalised earnings per share are ₹9. What is the indicated value per share under the P/E method, assuming no further adjustments?",
+    options: [
+      "₹120",
+      "₹135",
+      "₹144",
+      "₹171"
+    ],
+    answer: 1,
+    reason: "Indicated value per share = Selected P/E Multiple × Normalised Earnings per Share = 15 × ₹9 = ₹135."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_013",
+    case_chapter: "chapter3",
+    question: "A valuer is estimating the value of a non-controlling equity interest that may also have limited marketability. Which approach to control premiums and discounts for lack of marketability (DLOM) is most appropriate?",
+    options: [
+      "Always add a control premium and a DLOM to every equity valuation",
+      "Treat a control premium and DLOM as interchangeable adjustments",
+      "Assess whether each adjustment is relevant to the interest being valued and whether it is already reflected in the valuation data",
+      "Apply both adjustments solely according to the size of the subject company"
+    ],
+    answer: 2,
+    reason: "The relevance of a control premium or DLOM depends on the interest being valued and the valuation circumstances. The valuer should also check whether the selected valuation data already reflects the relevant factor, avoiding unsupported or duplicate adjustments."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_014",
+    case_chapter: "chapter3",
+    question: "A comparable transaction multiple reflects a control premium and buyer-specific synergies. The valuer is assessing a subject company using market participant assumptions. What is the most appropriate treatment?",
+    options: [
+      "Always add another control premium to the transaction multiple",
+      "Accept all buyer-specific synergies as value available to every market participant",
+      "Disregard all transaction information whenever a control premium is present",
+      "Evaluate the relevance of the transaction, consider whether buyer-specific synergies are representative of market participant assumptions, and avoid double counting premiums or adjustments"
+    ],
+    answer: 3,
+    reason: "Comparable transaction data must be assessed for relevance and comparability. Buyer-specific synergies may not represent assumptions of market participants generally, and a premium already reflected in the transaction multiple should not be counted again without justification."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_015",
+    case_chapter: "chapter3",
+    question: "A valuer has determined that weighting two valuation indications is justified. The market approach indicates ₹460 crore and receives a weight of 40%; the income approach indicates ₹520 crore and receives a weight of 60%. What is the weighted indication of value?",
+    options: [
+      "₹488 crore",
+      "₹496 crore",
+      "₹502 crore",
+      "₹520 crore"
+    ],
+    answer: 1,
+    reason: "Weighted indication = (₹460 crore × 40%) + (₹520 crore × 60%) = ₹184 crore + ₹312 crore = ₹496 crore."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_016",
+    case_chapter: "chapter3",
+    question: "A valuer estimates terminal value using the constant-growth method. The perpetual growth rate is 12% while the discount rate is 10%. Which conclusion is most appropriate?",
+    options: [
+      "The negative denominator should be accepted as producing a reliable terminal value",
+      "The constant-growth formula is not appropriate in its usual form under these assumptions; the assumptions or terminal value method need reconsideration",
+      "The terminal value must automatically be zero",
+      "The growth rate should automatically be substituted for the discount rate"
+    ],
+    answer: 1,
+    reason: "The constant-growth formula divides the next-period cash flow by the discount rate minus the perpetual growth rate. If growth exceeds the discount rate, the denominator is negative and the model is not appropriate in its usual form. The assumptions or method require reconsideration."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_017",
+    case_chapter: "chapter3",
+    question: "An asset has a recent quoted price based on one small transaction in a market with very low trading volume. The asset has traded at different prices over a reasonable period. Under the Market Price Method, what should the valuer do?",
+    options: [
+      "Use the most recent quoted price automatically, irrespective of trading activity",
+      "Use the historical purchase price instead of considering market evidence",
+      "Assess trading prices over a reasonable period, trading volume, and the relevance of the market information rather than treating one small trade as automatically conclusive",
+      "Select the highest recorded price without considering volume"
+    ],
+    answer: 2,
+    reason: "The Market Price Method considers trading prices over a reasonable period. Trading volume and the relevance of the market evidence should be assessed; one small transaction does not automatically establish a conclusive indication of value."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_018",
+    case_chapter: "chapter3",
+    question: "The market value of equity is ₹360 crore and the market value of interest-bearing debt is ₹90 crore. Their respective book values are ₹250 crore and ₹100 crore. If market-value weights are considered appropriate for calculating WACC, what weights should be applied to equity and debt?",
+    options: [
+      "Equity 70%; debt 30%",
+      "Equity 80%; debt 20%",
+      "Equity approximately 71.4%; debt approximately 28.6%",
+      "Equity 75%; debt 25%"
+    ],
+    answer: 1,
+    reason: "Total market value of capital = ₹360 crore + ₹90 crore = ₹450 crore. Equity weight = ₹360/₹450 = 80%; debt weight = ₹90/₹450 = 20%. The book values are not used when market-value weights have been selected."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_019",
+    case_chapter: "chapter3",
+    question: "A valuer forecasts nominal FCFF denominated in Indian rupees using assumptions that incorporate Indian rupee inflation. Which discount-rate treatment is conceptually consistent?",
+    options: [
+      "Use a nominal WACC consistent with the Indian-rupee-denominated cash flows and their assumptions",
+      "Use an unadjusted US-dollar nominal WACC solely because a comparable company is based in the United States",
+      "Use a real discount rate in any currency without considering the cash flow assumptions",
+      "Use only the cost of debt because the cash flows are denominated in Indian rupees"
+    ],
+    answer: 0,
+    reason: "The currency and nominal or real basis of the discount rate should be consistent with the projected cash flows. Nominal Indian-rupee cash flows should generally be discounted using a nominal rate consistent with those cash flows."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_HI_020",
+    case_chapter: "chapter3",
+    question: "A valuation assignment concerns an entity whose value is primarily driven by its underlying assets. Reliable future cash flow forecasts are not available, and suitable comparable market data is limited. The purpose and basis of valuation permit consideration of an asset-based approach. Which conclusion is most appropriate?",
+    options: [
+      "The income approach must always be selected, irrespective of the reliability of its inputs",
+      "The market approach must always be selected, even where suitable comparable data is unavailable",
+      "An asset-based approach may be relevant, but its suitability should be evaluated in the context of the valuation purpose, basis and premise, asset characteristics, available inputs, and applicable requirements",
+      "The asset-based approach must be selected solely because comparable market data is limited"
+    ],
+    answer: 2,
+    reason: "Approach selection requires consideration of the purpose, basis and premise of valuation, the nature of the asset, the reliability of available inputs, the strengths and weaknesses of each approach, and applicable requirements. Limited data alone does not automatically determine the appropriate approach."
+  },
+
 
 
 
