@@ -397,6 +397,12 @@ function showResult(score, percentage, grade, correctCount, wrongCount, unanswer
             </div>
         </div>
 
+        <div class="result-disclaimer-box" style="background: #fef2f2; border: 1.5px solid #ef4444; border-radius: 8px; padding: 12px 18px; margin: 0 auto 24px auto; text-align: center; max-width: 720px;">
+            <p style="color: #dc2626; font-size: 14px; font-weight: 600; margin: 0; line-height: 1.5;">
+                ⚠️ <strong>Disclaimer:</strong> The model is good at making questions but is not good in validating the answers, so the result may not be accurate. This is only for practice.
+            </p>
+        </div>
+
         <h2>Exam Result</h2>
         <p><strong>Total Marks:</strong> ${score} / ${selectedQuestions.length * MARK_PER_QUESTION}</p>
         <p><strong>Percentage:</strong> ${percentage}%</p>

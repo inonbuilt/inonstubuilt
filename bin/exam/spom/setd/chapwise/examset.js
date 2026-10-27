@@ -382,6 +382,20 @@ function submitExam() {
     resultArea.style.display = "block";
 
     let html = `
+        <div class="social-updates-box" style="background: #ffffff; border: 2px dashed #e5e7eb; border-radius: 10px; padding: 20px; text-align: center; margin-bottom: 20px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+            <p style="font-size: 16px; font-weight: 600; color: #374151; margin-bottom: 12px;">No need to follow us. Just drop by Calcium Notes whenever you need the latest updates!</p>
+            <div class="social-btn-group" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href="https://www.instagram.com/calciumnotes" class="social-btn instagram-btn" target="_blank" rel="noopener" style="display: inline-block; padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; color: white; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);">Instagram</a>
+                <a href="https://x.com/Calciumnotes" class="social-btn twitter-btn" target="_blank" rel="noopener" style="display: inline-block; padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; color: white; background: #000000;">Twitter</a>
+            </div>
+        </div>
+
+        <div class="result-disclaimer-box" style="background: #fef2f2; border: 1.5px solid #ef4444; border-radius: 8px; padding: 12px 18px; margin: 0 auto 24px auto; text-align: center; max-width: 720px;">
+            <p style="color: #dc2626; font-size: 14px; font-weight: 600; margin: 0; line-height: 1.5;">
+                ⚠️ <strong>Disclaimer:</strong> The model is good at making questions but is not good in validating the answers, so the result may not be accurate. This is only for practice.
+            </p>
+        </div>
+
         <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 30px; text-align: center;">
             <h2 style="font-size: 26px; color: ${passed ? '#16a34a' : '#dc2626'}; margin-bottom: 10px;">
                 ${passed ? '🎉 Congratulations! You Passed' : '⚠️ Keep Practicing! Needs Improvement'}

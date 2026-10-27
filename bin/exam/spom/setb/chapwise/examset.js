@@ -1,5 +1,5 @@
 // ==============================================================
-// CALCIUM NOTES - SPOM SET B CHAPTER PRACTICE ENGINE
+// CALCIUM NOTES - SPOM SET A CHAPTER PRACTICE ENGINE
 // ==============================================================
 
 // CONFIG
@@ -17,21 +17,24 @@ let lastCase = null;
 let currentChapterTitle = "";
 
 // CHAPTER METADATA
-const SET_B_CHAPTER_TITLES = {
-    'chapter1': 'Chapter 1: Introduction to Strategic Cost Management',
-    'chapter2': 'Chapter 2: Modern Business Environment',
-    'chapter3': 'Chapter 3: Lean System and Innovation',
-    'chapter4': 'Chapter 4: Specialist Cost Management Techniques',
-    'chapter5': 'Chapter 5: Cost Management for Emerging Business Models',
-    'chapter6': 'Chapter 6: Strategic Revenue Management',
-    'chapter7': 'Chapter 7: Strategic Profit Management',
-    'chapter8': 'Chapter 8: Introduction to Strategic Performance Management',
-    'chapter9': 'Chapter 9: Strategic Performance Measures in Private Sector',
-    'chapter10': 'Chapter 10: Performance Measures in Not-for-Profit Organisations',
-    'chapter11': 'Chapter 11: Preparation of Performance Reports',
-    'chapter12': 'Chapter 12: Divisional Transfer Pricing',
-    'chapter13': 'Chapter 13: Standard Costing & Advanced Variances',
-    'chapter14': 'Chapter 14: Comprehensive Case Studies & Integrated Applications'
+const SET_A_CHAPTER_TITLES = {
+    'chapter1': 'Chapter 1: Appointment & Qualifications of Directors',
+    'chapter2': 'Chapter 2: Appointment & Remuneration of Managerial Personnel',
+    'chapter3': 'Chapter 3: Meetings of Board and its Powers',
+    'chapter4': 'Chapter 4: Inspection, Inquiry and Investigation',
+    'chapter5': 'Chapter 5: Compromises, Arrangements and Amalgamations',
+    'chapter6': 'Chapter 6: Prevention of Oppression and Mismanagement',
+    'chapter7': 'Chapter 7: Winding Up',
+    'chapter8': 'Chapter 8: Miscellaneous Provisions',
+    'chapter9': 'Chapter 9: Adjudication, Special Courts, NCLT & NCLAT',
+    'chapter10': 'Chapter 10: e-Filing & XBRL Compliance',
+    'sebi': 'Securities Laws - Chapter 1: The SEBI Act, 1992',
+    'sebilodr': 'Securities Laws - Chapter 2: SEBI (LODR) Regulations, 2015',
+    'sebiicdr': 'Securities Laws - Chapter 3: SEBI (ICDR) Regulations, 2018',
+    'sebisast': 'Securities Laws - Chapter 4: SEBI (SAST) & Insider Trading (PIT)',
+    'fema': 'Economic Laws - Chapter 1: Foreign Exchange Management Act (FEMA), 1999',
+    'fcra': 'Economic Laws - Chapter 2: Foreign Contribution Regulation Act (FCRA), 2010',
+    'ibc': 'Economic Laws - Chapter 3: Insolvency and Bankruptcy Code (IBC), 2016'
 };
 
 // SHUFFLE UTILITY (Fisher-Yates)
@@ -43,46 +46,53 @@ function shuffleArray(array) {
 }
 
 // CHAPTER NORMALIZATION
-function normalizeChapterKey(chap) {
+function normalizeSetAChapterKey(chap) {
     if (!chap) return '';
     let c = chap.toLowerCase().trim().replace(/[^a-z0-9]/g, '');
-    if (c === '1' || c === 'ch1' || c === 'chapter1' || c === 'scm' || c.includes('introductiontostrategiccost')) return 'chapter1';
-    if (c === '2' || c === 'ch2' || c === 'chapter2' || c === 'mbe' || c.includes('modernbusinessenvironment')) return 'chapter2';
-    if (c === '3' || c === 'ch3' || c === 'chapter3' || c === 'lean' || c.includes('leansystem') || c.includes('innovation')) return 'chapter3';
-    if (c === '4' || c === 'ch4' || c === 'chapter4' || c === 'specialist' || c.includes('specialistcost')) return 'chapter4';
-    if (c === '5' || c === 'ch5' || c === 'chapter5' || c === 'ebm' || c.includes('emerging') || c.includes('businessmodel')) return 'chapter5';
-    if (c === '6' || c === 'ch6' || c === 'chapter6' || c === 'srm' || c.includes('revenue') || c.includes('revenuemanagement')) return 'chapter6';
-    if (c === '7' || c === 'ch7' || c === 'chapter7' || c === 'profit' || c.includes('profitmanagement')) return 'chapter7';
-    if (c === '8' || c === 'ch8' || c === 'chapter8' || c === 'spm' || c.includes('strategicperformance') || c.includes('spmintro')) return 'chapter8';
-    if (c === '9' || c === 'ch9' || c === 'chapter9' || c === 'private' || c.includes('privatesector') || c.includes('balancedscorecard')) return 'chapter9';
-    if (c === '10' || c === 'ch10' || c === 'chapter10' || c === 'npo' || c.includes('notforprofit') || c.includes('nonprofit')) return 'chapter10';
-    if (c === '11' || c === 'ch11' || c === 'chapter11' || c === 'report' || c.includes('performancereport')) return 'chapter11';
-    if (c === '12' || c === 'ch12' || c === 'chapter12' || c === 'tp' || c.includes('transferprice') || c.includes('transferpricing') || c.includes('divisional')) return 'chapter12';
-    if (c === '13' || c === 'ch13' || c === 'chapter13' || c === 'standardcosting' || c.includes('variance')) return 'chapter13';
-    if (c === '14' || c === 'ch14' || c === 'chapter14' || c.includes('casestudy') || c.includes('integrated')) return 'chapter14';
+    if (c === '1' || c === 'ch1' || c === 'chapter1' || c.includes('director')) return 'chapter1';
+    if (c === '2' || c === 'ch2' || c === 'chapter2' || c.includes('managerial') || c.includes('remuneration')) return 'chapter2';
+    if (c === '3' || c === 'ch3' || c === 'chapter3' || c.includes('boardmeeting') || c.includes('meetingsofboard')) return 'chapter3';
+    if (c === '4' || c === 'ch4' || c === 'chapter4' || c.includes('inspection') || c.includes('investigation')) return 'chapter4';
+    if (c === '5' || c === 'ch5' || c === 'chapter5' || c.includes('compromise') || c.includes('amalgamation')) return 'chapter5';
+    if (c === '6' || c === 'ch6' || c === 'chapter6' || c.includes('oppression') || c.includes('mismanagement')) return 'chapter6';
+    if (c === '7' || c === 'ch7' || c === 'chapter7' || c.includes('windingup')) return 'chapter7';
+    if (c === '8' || c === 'ch8' || c === 'chapter8' || c.includes('miscellaneous')) return 'chapter8';
+    if (c === '9' || c === 'ch9' || c === 'chapter9' || c.includes('adjudication') || c.includes('nclt') || c.includes('specialcourt')) return 'chapter9';
+    if (c === '10' || c === 'ch10' || c === 'chapter10' || c.includes('efiling') || c.includes('xbrl')) return 'chapter10';
+    if (c === 'sebilodr' || c.includes('lodr') || c.includes('listingobligation')) return 'sebilodr';
+    if (c === 'sebiicdr' || c.includes('icdr') || c.includes('issueofcapital')) return 'sebiicdr';
+    if (c === 'sebisast' || c.includes('sast') || c.includes('insidertrading') || c.includes('pit')) return 'sebisast';
+    if (c === 'sebi' || c.includes('sebiact')) return 'sebi';
+    if (c === 'fema' || c.includes('foreignexchange')) return 'fema';
+    if (c === 'fcra' || c.includes('foreigncontribution')) return 'fcra';
+    if (c === 'ibc' || c.includes('insolvency') || c.includes('bankruptcy')) return 'ibc';
     return c;
 }
 
-// Fallback topic classifier for cases without explicit case_chapter
-function inferCaseChapter(cs) {
-    if (cs.case_chapter) return normalizeChapterKey(cs.case_chapter);
+// Fallback topic classifier for cases without case_chapter
+function inferSetACaseChapter(cs) {
+    if (cs.case_chapter) return normalizeSetAChapterKey(cs.case_chapter);
     const text = ((cs.caseText || '') + ' ' + (cs.questions ? cs.questions.map(q => q.question || '').join(' ') : '')).toLowerCase();
-    
-    if (text.includes('transfer price') || text.includes('transfer pricing') || text.includes('divisions of the shenzhen')) return 'chapter12';
-    if (text.includes('sales volume contribution') || text.includes('planning variance') || text.includes('sales mix variance') || text.includes('standard and marginal costing')) return 'chapter13';
-    if (text.includes('akanksha foundation') || text.includes('caregiver hospital') || text.includes('not-for-profit') || text.includes('non-profit')) return 'chapter10';
-    if (text.includes('fitzgerald') || text.includes('building block') || text.includes('balanced scorecard') || text.includes('residual income') || text.includes('bhatia & sharma') || text.includes('power gym')) return 'chapter9';
-    if (text.includes('profitability per customer') || text.includes('sunrise footwear') || text.includes('direct product profitability') || text.includes('dpp') || text.includes('customer profitability')) return 'chapter7';
-    if (text.includes('performance report') || text.includes('division and performance tracking') || text.includes('division a division b') || text.includes('reporting framework')) return 'chapter11';
-    if (text.includes('customer profit') || text.includes('oxford medical') || text.includes('xyz electronics') || text.includes('pareto') || text.includes('revenue management')) return 'chapter6';
-    if (text.includes('readers diary') || text.includes('business canvas') || text.includes('kuber') || text.includes('yoyo') || text.includes('vserveu') || text.includes('be informed') || text.includes('buymore') || text.includes('business model canvas') || text.includes('freemium')) return 'chapter5';
-    if (text.includes('mckinsey') || text.includes('7-s') || text.includes('speed auto-mobile') || text.includes('luxemart')) return 'chapter8';
-    if (text.includes('kaizen') || text.includes('5s') || text.includes('jit') || text.includes('nimbus') || text.includes('tpm') || text.includes('oee') || text.includes('single-minute exchange') || text.includes('dubai uni') || text.includes('made to order')) return 'chapter3';
-    if (text.includes('target price') || text.includes('target cost') || text.includes('lifecycle') || text.includes('life cycle') || text.includes('cellwell') || text.includes('environmental') || text.includes('flow cost') || text.includes('ema') || text.includes('learning curve') || text.includes('activity based') || text.includes('durable limited') || text.includes('volt hydro') || text.includes('b-parts') || text.includes('boeing')) return 'chapter4';
-    if (text.includes('cost of quality') || text.includes('conformance cost') || text.includes('7 star sports') || text.includes('prevention costs') || text.includes('hindustan bikes') || text.includes('total quality')) return 'chapter2';
-    if (text.includes('value chain') || text.includes('royal tea') || text.includes('critical success factor') || text.includes('traditional cost') || text.includes('fresh milk enterprises')) return 'chapter1';
-    
-    return 'chapter14';
+
+    if (text.includes('foreign exchange') || text.includes('fema') || text.includes('current account transaction') || text.includes('capital account transaction')) return 'fema';
+    if (text.includes('foreign contribution') || text.includes('fcra')) return 'fcra';
+    if (text.includes('insolvency') || text.includes('cirp') || text.includes('operational creditor') || text.includes('financial creditor') || text.includes('resolution professional')) return 'ibc';
+    if (text.includes('takeover') || text.includes('sast') || text.includes('insider trading') || text.includes('upsi')) return 'sebisast';
+    if (text.includes('icdr') || text.includes('issue of capital') || text.includes('anchor investor')) return 'sebiicdr';
+    if (text.includes('lodr') || text.includes('listing obligation') || text.includes('audit committee')) return 'sebilodr';
+    if (text.includes('sebi act') || text.includes('sebi')) return 'sebi';
+    if (text.includes('e-filing') || text.includes('xbrl') || text.includes('mca21')) return 'chapter10';
+    if (text.includes('nclt') || text.includes('special court') || text.includes('appellate tribunal')) return 'chapter9';
+    if (text.includes('dormant company') || text.includes('registered valuer') || text.includes('miscellaneous')) return 'chapter8';
+    if (text.includes('winding up') || text.includes('liquidator') || text.includes('official liquidator')) return 'chapter7';
+    if (text.includes('oppression') || text.includes('mismanagement') || text.includes('class action')) return 'chapter6';
+    if (text.includes('amalgamation') || text.includes('compromise') || text.includes('arrangement') || text.includes('merger')) return 'chapter5';
+    if (text.includes('investigation') || text.includes('sfio') || text.includes('serious fraud') || text.includes('inspection') || text.includes('inquiry')) return 'chapter4';
+    if (text.includes('board meeting') || text.includes('audit committee') || text.includes('powers of board') || text.includes('section 186') || text.includes('section 185')) return 'chapter3';
+    if (text.includes('managerial personnel') || text.includes('managing director') || text.includes('schedule v') || text.includes('managerial remuneration')) return 'chapter2';
+    if (text.includes('director') || text.includes('din') || text.includes('independent director') || text.includes('women director')) return 'chapter1';
+
+    return 'chapter1';
 }
 
 // ==============================================================
@@ -112,59 +122,43 @@ function getCaseDifficulty(cs) {
 }
 
 // ==============================================================
-// INIT EXAM & CENTRIFUGE
+// INIT EXAM
 // ==============================================================
 function initExam() {
     // 1. Read Chapter from URL
     const urlParams = new URLSearchParams(window.location.search);
     const selectedChapter = urlParams.get('chapter');
-    const targetNorm = normalizeChapterKey(selectedChapter);
+    const targetNorm = normalizeSetAChapterKey(selectedChapter);
 
     // 2. Set dynamic title in header
-    currentChapterTitle = SET_B_CHAPTER_TITLES[targetNorm] || (selectedChapter ? selectedChapter : "Chapter Practice");
+    currentChapterTitle = SET_A_CHAPTER_TITLES[targetNorm] || (selectedChapter ? selectedChapter : "Chapter Practice");
     const headerEl = document.getElementById("examHeader");
     if (headerEl) {
-        headerEl.innerHTML = `Calcium Notes - Premium Chapter Practice (Set B)<div class="header-sub">${currentChapterTitle}</div>`;
+        headerEl.innerHTML = `Calcium Notes - Premium Chapter Practice (Set A)<div class="header-sub">${currentChapterTitle}</div>`;
     }
 
-    // 3. Prioritized Source Selection:
-    // Priority 1: questionsetbAI.js (AICaseStudies)
-    // Priority 2: quessetb.js (caseStudies) fallback
+    // 3. Prioritized Source Selection
     let filteredCases = [];
 
-    // Step 1: Check Priority 1 (questionsetbAI.js)
+    // Priority 1: quessetaAI.js (AICaseStudies)
     if (typeof AICaseStudies !== 'undefined' && Array.isArray(AICaseStudies)) {
-        filteredCases = AICaseStudies.filter(cs => inferCaseChapter(cs) === targetNorm);
+        filteredCases = AICaseStudies.filter(cs => {
+            const c = cs.case_chapter ? normalizeSetAChapterKey(cs.case_chapter) : inferSetACaseChapter(cs);
+            return c === targetNorm;
+        });
+
         if (filteredCases.length === 0 && selectedChapter) {
             const rawLower = selectedChapter.toLowerCase();
             filteredCases = AICaseStudies.filter(cs => cs.case_chapter && cs.case_chapter.toLowerCase().includes(rawLower));
         }
     }
 
-    // Step 2: Fallback to Priority 2 (quessetb.js) if no questions in AICaseStudies
+    // Priority 2: quesseta.js (caseStudies) fallback
     if (filteredCases.length === 0 && typeof caseStudies !== 'undefined' && Array.isArray(caseStudies)) {
-        filteredCases = caseStudies.filter(cs => inferCaseChapter(cs) === targetNorm);
-
-        // Substring / partial check
-        if (filteredCases.length === 0 && selectedChapter) {
-            const rawLower = selectedChapter.toLowerCase();
-            filteredCases = caseStudies.filter(cs => cs.case_chapter && cs.case_chapter.toLowerCase().includes(rawLower));
-        }
-
-        // Related module fallback for chapters without isolated cases
-        if (filteredCases.length === 0) {
-            if (targetNorm === 'chapter7') {
-                filteredCases = caseStudies.filter(cs => {
-                    const c = inferCaseChapter(cs);
-                    return c === 'chapter6' || c === 'chapter4' || c === 'chapter7';
-                });
-            } else if (targetNorm === 'chapter11') {
-                filteredCases = caseStudies.filter(cs => {
-                    const c = inferCaseChapter(cs);
-                    return c === 'chapter8' || c === 'chapter9' || c === 'chapter11';
-                });
-            }
-        }
+        filteredCases = caseStudies.filter(cs => {
+            const c = cs.case_chapter ? normalizeSetAChapterKey(cs.case_chapter) : inferSetACaseChapter(cs);
+            return c === targetNorm;
+        });
     }
 
     // 4. Select Case Scenarios based on Difficulty (30% Easy, 40% Medium, 30% Hard)
@@ -446,6 +440,12 @@ function showResult(score, totalPossibleMarks, percentage, grade, isPass, correc
                 <a href="https://www.instagram.com/calciumnotes" class="social-btn instagram-btn" target="_blank" rel="noopener">Instagram</a>
                 <a href="https://x.com/Calciumnotes" class="social-btn twitter-btn" target="_blank" rel="noopener">Twitter / X</a>
             </div>
+        </div>
+
+        <div class="result-disclaimer-box" style="background: #fef2f2; border: 1.5px solid #ef4444; border-radius: 8px; padding: 12px 18px; margin: 0 auto 24px auto; text-align: center; max-width: 720px;">
+            <p style="color: #dc2626; font-size: 14px; font-weight: 600; margin: 0; line-height: 1.5;">
+                ⚠️ <strong>Disclaimer:</strong> The model is good at making questions but is not good in validating the answers, so the result may not be accurate. This is only for practice.
+            </p>
         </div>
 
         <div class="result-stats-card">
