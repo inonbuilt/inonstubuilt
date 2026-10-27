@@ -2555,14 +2555,11 @@
       window.joinMeetRoomAndAutoCall();
       updateMeetRoomLabel();
     };
-    window.openSquadModal = function (attemptFullscreen = false) {
+    window.openSquadModal = function () {
       document.getElementById("squadModal").classList.add("active");
       syncSquadToStorage();
       notifyParentOverlayVisibility();
       updateMeetGridLayout();
-      if (attemptFullscreen) {
-        requestFullscreenSafe();
-      }
     };
     window.closeSquadModal = function () {
       window.exitFullscreenIfNeeded && window.exitFullscreenIfNeeded();

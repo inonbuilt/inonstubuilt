@@ -628,10 +628,10 @@
         z-index: 100000;
         opacity: 0;
         pointer-events: none;
-        visibility: hidden;
         transition: opacity 0.2s ease;
       ">
-    <iframe id="sturmIframe" src="./sturm.html" allow="fullscreen; autoplay; microphone; camera; display-capture"
+    <iframe id="sturmIframe" src="./sturm.html"
+      allow="camera *; microphone *; autoplay *; display-capture *; fullscreen *; camera; microphone; autoplay; fullscreen"
       allowfullscreen
       style="width: 100%; height: 100%; border: none; background: transparent; pointer-events: none;"></iframe>
   </div>
@@ -922,7 +922,6 @@
 
     window.showSturmOverlay = function () {
       if (!sturmOverlay) return;
-      sturmOverlay.style.visibility = "visible";
       sturmOverlay.style.opacity = "1";
       sturmOverlay.style.pointerEvents = "auto";
       if (sturmIframe) sturmIframe.style.pointerEvents = "auto";
@@ -933,11 +932,6 @@
       sturmOverlay.style.opacity = "0";
       sturmOverlay.style.pointerEvents = "none";
       if (sturmIframe) sturmIframe.style.pointerEvents = "none";
-      setTimeout(() => {
-        if (sturmOverlay.style.opacity === "0") {
-          sturmOverlay.style.visibility = "hidden";
-        }
-      }, 250);
     };
 
     // Ensure sturm overlay is completely dormant and non-blocking on startup
@@ -976,13 +970,11 @@
     const _origOpenReadMode = openReadMode;
     window.openReadMode = function () {
       _origOpenReadMode();
-      requestFullscreenSafe();
     };
 
     const _origOpenPlanningMode = openPlanningMode;
     window.openPlanningMode = function () {
       _origOpenPlanningMode();
-      requestFullscreenSafe();
     };
 
     window._calciumCurrentRoomCode = (localStorage.getItem("calcium_active_room") || "").trim();
@@ -1024,10 +1016,7 @@
       if (window.isUserAlreadyInRoom()) {
         hideLobby();
         window.showSturmOverlay();
-        if (fromUserGesture) {
-          requestFullscreenSafe();
-        }
-        callSturm("openSquadModal", fromUserGesture);
+        callSturm("openSquadModal", false);
       } else {
         showLobby();
       }
@@ -1254,8 +1243,7 @@
       hideLobby();
       // Show sturm overlay and fire start
       window.showSturmOverlay();
-      requestFullscreenSafe();
-      callSturm('openSquadModal', true);
+      callSturm('openSquadModal', false);
       callSturm('startOrCreateMeetRoom');
     };
 
@@ -1290,9 +1278,8 @@
 
       hideLobby();
       window.showSturmOverlay();
-      requestFullscreenSafe();
       // Push code into sturm's hidden joinRoomInput then trigger join
-      callSturm('openSquadModal', true);
+      callSturm('openSquadModal', false);
       setTimeout(() => {
         callSturm('setLobbyJoinCode', code);
         callSturm('joinMeetRoomAndAutoCall');
