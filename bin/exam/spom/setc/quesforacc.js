@@ -18848,7 +18848,7 @@ reason:"Modified electronic records may require additional scrutiny, while unmat
     `,
     questions: [
       {
-        question_id: "DF_CS_05_9_1",
+        question_id: "DF_CS_05_9_1_1",
         chapter_name: ["Writing a Forensic Investigation Report"],
         question: "Which approach adopted by the professional would best help the reader understand how the procurement irregularities developed?",
         options: [
@@ -18861,7 +18861,7 @@ reason:"Modified electronic records may require additional scrutiny, while unmat
         solution_html: "<p>Findings should generally be presented in a logical and chronological order so that the sequence of events can be understood clearly.</p>"
       },
       {
-        question_id: "DF_CS_05_9_2",
+        question_id: "DF_CS_05_9_1_2",
         chapter_name: ["Writing a Forensic Investigation Report"],
         question: "Why is it appropriate for the professional to quantify the excess amount paid to the vendor?",
         options: [
@@ -18874,7 +18874,7 @@ reason:"Modified electronic records may require additional scrutiny, while unmat
         solution_html: "<p>Where possible, findings should be quantified to communicate their financial impact. The amounts should be supported by reliable evidence.</p>"
       },
       {
-        question_id: "DF_CS_05_9_3",
+        question_id: "DF_CS_05_9_1_3",
         chapter_name: ["Writing a Forensic Investigation Report"],
         question: "Which section of the report would primarily explain the procedures performed by the professional?",
         options: [
@@ -18887,7 +18887,7 @@ reason:"Modified electronic records may require additional scrutiny, while unmat
         solution_html: "<p>The approach and broad work procedures section documents the procedures performed to gather evidence and determine the facts reported.</p>"
       },
       {
-        question_id: "DF_CS_05_9_4",
+        question_id: "DF_CS_05_9_1_4",
         chapter_name: ["Writing a Forensic Investigation Report"],
         question: "The professional included management's response to the draft findings. This is consistent with the principle that:",
         options: [
@@ -18900,7 +18900,7 @@ reason:"Modified electronic records may require additional scrutiny, while unmat
         solution_html: "<p>Where the mandate requires discussion of findings with the subject party, the responses received should also be included in the written report.</p>"
       },
       {
-        question_id: "DF_CS_05_9_5",
+        question_id: "DF_CS_05_9_1_5",
         chapter_name: ["Writing a Forensic Investigation Report"],
         question: "Which of the following should NOT be stated by the professional merely because employees approved the transactions?",
         options: [
@@ -18932,7 +18932,7 @@ reason:"Modified electronic records may require additional scrutiny, while unmat
     `,
     questions: [
       {
-        question_id: "DF_CS_05_9_2",
+        question_id: "DF_CS_05_9_2_1",
         chapter_name: ["Writing a Forensic Investigation Report"],
         question: "Which information is particularly relevant when reporting the use of digital evidence in this case?",
         options: [
