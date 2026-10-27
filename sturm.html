@@ -22,44 +22,923 @@
     gtag("config", "G-YYJ8R39EXM");
   </script>
 
+
+  <style>
+    /* ═══════════════════════════════════════
+       STUDY SQUAD LOBBY OVERLAY
+    ═══════════════════════════════════════ */
+    .squad-lobby-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(7, 15, 33, 0.88);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .squad-lobby-card {
+      position: relative;
+      background: linear-gradient(145deg, #0f1f3d 0%, #0d1a2e 100%);
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      border-radius: 24px;
+      padding: 40px 36px 36px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(56, 189, 248, 0.1);
+      text-align: center;
+      animation: lobbyCardIn 0.35s cubic-bezier(.22, 1, .36, 1);
+    }
+
+    @keyframes lobbyCardIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .squad-lobby-close {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      background: rgba(255, 255, 255, 0.07);
+      border: none;
+      color: #94a3b8;
+      font-size: 15px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .squad-lobby-close:hover {
+      background: rgba(239, 68, 68, 0.2);
+      color: #fca5a5;
+    }
+
+    .squad-lobby-logo {
+      font-size: 48px;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+
+    .squad-lobby-title {
+      margin: 0 0 6px;
+      font-size: 22px;
+      font-weight: 800;
+      color: #f0f9ff;
+      letter-spacing: -0.3px;
+    }
+
+    .squad-lobby-subtitle {
+      margin: 0 0 24px;
+      font-size: 13px;
+      color: #64748b;
+      line-height: 1.5;
+    }
+
+    .squad-lobby-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .squad-lobby-input {
+      width: 100%;
+      padding: 11px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.06);
+      color: #e2e8f0;
+      font-size: 14px;
+      outline: none;
+      box-sizing: border-box;
+      transition: border-color 0.2s;
+    }
+
+    .squad-lobby-input:focus {
+      border-color: rgba(56, 189, 248, 0.6);
+      background: rgba(56, 189, 248, 0.07);
+    }
+
+    .squad-lobby-input::placeholder {
+      color: #4b5563;
+    }
+
+    .squad-lobby-btn {
+      width: 100%;
+      padding: 13px 18px;
+      border-radius: 12px;
+      border: none;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.15s, opacity 0.2s, box-shadow 0.2s;
+      background: rgba(255, 255, 255, 0.08);
+      color: #cbd5e1;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .squad-lobby-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .squad-lobby-btn.primary {
+      background: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+      color: white;
+      border: none;
+      box-shadow: 0 4px 18px rgba(37, 99, 235, 0.4);
+    }
+
+    .squad-lobby-btn.primary:hover {
+      box-shadow: 0 8px 28px rgba(37, 99, 235, 0.55);
+    }
+
+    .squad-lobby-divider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 2px 0;
+    }
+
+    .squad-lobby-divider::before,
+    .squad-lobby-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .squad-lobby-divider span {
+      font-size: 11px;
+      color: #475569;
+      white-space: nowrap;
+    }
+
+    .btn-leave-room:hover {
+      background: rgba(239, 68, 68, 0.22) !important;
+      border-color: rgba(239, 68, 68, 0.5) !important;
+      color: #fca5a5 !important;
+    }
+
+    /* ── Prominent Room Code Badge in control bar ── */
+    .room-code-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.25), rgba(6, 182, 212, 0.2));
+      border: 1.5px solid rgba(56, 189, 248, 0.55);
+      border-radius: 10px;
+      padding: 5px 10px 5px 8px;
+      cursor: default;
+      box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+      animation: roomCodePulse 2.5s ease-in-out 0.5s 3;
+    }
+
+    @keyframes roomCodePulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+      }
+
+      50% {
+        box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.2);
+      }
+    }
+
+    .room-code-label {
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      color: #7dd3fc;
+      text-transform: uppercase;
+    }
+
+    .room-code-value {
+      font-size: 16px;
+      font-weight: 800;
+      color: #f0f9ff;
+      font-family: 'Courier New', monospace;
+      letter-spacing: 1.5px;
+      user-select: all;
+    }
+
+    .room-code-copy-btn {
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 6px;
+      color: #7dd3fc;
+      font-size: 13px;
+      padding: 2px 6px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      line-height: 1;
+    }
+
+    .room-code-copy-btn:hover {
+      background: rgba(56, 189, 248, 0.3);
+      transform: scale(1.08);
+    }
+
+    .room-code-idle {
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    /* ── Side Drawer: Room Hub & Invite Section ── */
+    .drawer-room-hub {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .drawer-room-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .drawer-brand-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #7dd3fc;
+      letter-spacing: 0.3px;
+    }
+
+    .drawer-name-field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .drawer-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: #94a3b8;
+      letter-spacing: 0.6px;
+    }
+
+    .drawer-name-input {
+      width: 100%;
+      box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 12px;
+      color: #f8fafc;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .drawer-name-input:focus {
+      border-color: rgba(56, 189, 248, 0.6);
+      background: rgba(56, 189, 248, 0.06);
+    }
+
+    .drawer-link-field {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .drawer-code-pill {
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      border-radius: 6px;
+      padding: 1px 7px;
+      font-size: 11px;
+      font-weight: 800;
+      color: #7dd3fc;
+      font-family: 'Courier New', monospace;
+      letter-spacing: 0.8px;
+    }
+
+    .drawer-link-input-wrap {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .drawer-link-input {
+      flex: 1;
+      min-width: 0;
+      box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.38);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 11px;
+      color: #93c5fd;
+      outline: none;
+      cursor: pointer;
+      font-family: inherit;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .drawer-link-input:focus,
+    .drawer-link-input:hover {
+      border-color: rgba(56, 189, 248, 0.5);
+      background: rgba(56, 189, 248, 0.05);
+    }
+
+    .drawer-link-copy-btn {
+      background: rgba(56, 189, 248, 0.16);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 8px;
+      color: #7dd3fc;
+      font-size: 13px;
+      padding: 0 10px;
+      height: 32px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      flex-shrink: 0;
+    }
+
+    .drawer-link-copy-btn:hover {
+      background: rgba(56, 189, 248, 0.3);
+      transform: scale(1.05);
+    }
+
+    .drawer-share-actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .drawer-btn {
+      flex: 1;
+      min-width: 80px;
+      padding: 7px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.07);
+      color: #cbd5e1;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+    }
+
+    .drawer-btn:hover {
+      background: rgba(255, 255, 255, 0.14);
+      color: white;
+    }
+
+    .drawer-btn.primary {
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+      border: none;
+      color: white;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    }
+
+    .drawer-btn.whatsapp {
+      background: rgba(34, 197, 94, 0.18);
+      border-color: rgba(34, 197, 94, 0.4);
+      color: #86efac;
+    }
+
+    .drawer-btn.whatsapp:hover {
+      background: rgba(34, 197, 94, 0.3);
+    }
+
+    .drawer-btn.secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: #94a3b8;
+    }
+
+    .gmeet-floating-toast {
+      position: fixed;
+      top: 76px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(15, 23, 42, 0.94);
+      border: 1px solid rgba(56, 189, 248, 0.45);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      color: #4ade80;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 999px;
+      z-index: 10000;
+      pointer-events: none;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       COMPACT, NO-OVERFLOW GOOGLE MEET CONTROL BAR (PREVENTS BEZEL CLIPPING)
+    ═══════════════════════════════════════════════════════════════════ */
+    .gmeet-bottom-dock,
+    .gmeet-top-dock {
+      height: 52px !important;
+      min-height: 52px !important;
+      max-height: 52px !important;
+      background: #14171f !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+      border-top: none !important;
+      padding: 0 14px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      flex-wrap: nowrap !important;
+      gap: 8px !important;
+      z-index: 30 !important;
+      box-sizing: border-box !important;
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      scrollbar-width: none !important;
+    }
+
+    .gmeet-bottom-dock::-webkit-scrollbar {
+      display: none !important;
+    }
+
+    .gmeet-dock-left {
+      display: flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+      font-size: 12px !important;
+      font-weight: 700 !important;
+      color: #cbd5e1 !important;
+      white-space: nowrap !important;
+      flex-shrink: 0 !important;
+    }
+
+    .gmeet-divider {
+      color: #475569 !important;
+      margin: 0 2px !important;
+    }
+
+    .call-action-btns,
+    .gmeet-dock-center {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 6px !important;
+      flex-wrap: nowrap !important;
+      flex-shrink: 0 !important;
+    }
+
+    .gmeet-dock-right {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: flex-end !important;
+      gap: 6px !important;
+      flex-wrap: nowrap !important;
+      flex-shrink: 0 !important;
+    }
+
+    /* Compact Pill Buttons - Never wrap icons over text vertically */
+    .call-btn {
+      display: inline-flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 6px !important;
+      border: none !important;
+      padding: 6px 12px !important;
+      height: 36px !important;
+      min-height: 36px !important;
+      max-height: 36px !important;
+      border-radius: 999px !important;
+      font-size: 12px !important;
+      font-weight: 700 !important;
+      cursor: pointer !important;
+      white-space: nowrap !important;
+      flex-shrink: 0 !important;
+      box-sizing: border-box !important;
+      transition: all 0.18s ease !important;
+      line-height: 1 !important;
+    }
+
+    .call-btn .btn-icon {
+      font-size: 14px !important;
+      line-height: 1 !important;
+      display: inline-block !important;
+      flex-shrink: 0 !important;
+    }
+
+    .call-btn .btn-label {
+      font-size: 11.5px !important;
+      white-space: nowrap !important;
+      display: inline-block !important;
+      line-height: 1 !important;
+    }
+
+    .gmeet-ctrl-btn {
+      background: #252831 !important;
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      color: #e2e8f0 !important;
+    }
+
+    .gmeet-ctrl-btn:hover {
+      background: #323744 !important;
+      color: #ffffff !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .gmeet-minimize-btn {
+      display: inline-flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 4px !important;
+      background: rgba(255, 255, 255, 0.08) !important;
+      border: 1px solid rgba(255, 255, 255, 0.18) !important;
+      color: #cbd5e1 !important;
+      padding: 6px 12px !important;
+      height: 36px !important;
+      min-height: 36px !important;
+      max-height: 36px !important;
+      border-radius: 999px !important;
+      font-size: 11.5px !important;
+      font-weight: 700 !important;
+      cursor: pointer !important;
+      white-space: nowrap !important;
+      flex-shrink: 0 !important;
+      box-sizing: border-box !important;
+      transition: all 0.18s ease !important;
+      line-height: 1 !important;
+    }
+
+    .gmeet-minimize-btn:hover {
+      background: rgba(255, 255, 255, 0.15) !important;
+      color: #ffffff !important;
+    }
+
+    /* Room code badge in dock */
+    .room-code-badge {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 5px !important;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.22), rgba(6, 182, 212, 0.18)) !important;
+      border: 1px solid rgba(56, 189, 248, 0.5) !important;
+      border-radius: 8px !important;
+      padding: 3px 8px !important;
+      height: 28px !important;
+      box-sizing: border-box !important;
+      white-space: nowrap !important;
+      flex-shrink: 0 !important;
+    }
+
+    .room-code-label {
+      font-size: 9px !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.8px !important;
+      color: #7dd3fc !important;
+    }
+
+    .room-code-value {
+      font-size: 12.5px !important;
+      font-weight: 800 !important;
+      color: #f0f9ff !important;
+      font-family: 'Courier New', monospace !important;
+      letter-spacing: 1px !important;
+    }
+
+    .room-code-copy-btn {
+      padding: 2px 5px !important;
+      font-size: 11px !important;
+      border-radius: 4px !important;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       UNIVERSAL RESPONSIVE STYLES (MOBILE, TABLET, DESKTOP)
+    ═══════════════════════════════════════════════════════════════ */
+
+    /* ── 1. Tablets & Small Laptops (769px to 1250px) ── */
+    @media (max-width: 1250px) {
+
+      .gmeet-bottom-dock,
+      .gmeet-top-dock {
+        height: 50px !important;
+        padding: 0 10px !important;
+        gap: 6px !important;
+      }
+
+      .gmeet-dock-center .btn-label,
+      .gmeet-dock-right .btn-label {
+        display: none !important;
+      }
+
+      .call-btn,
+      .gmeet-ctrl-btn {
+        width: 36px !important;
+        height: 36px !important;
+        padding: 0 !important;
+        min-width: 36px !important;
+      }
+
+      .gmeet-minimize-btn {
+        padding: 0 10px !important;
+        height: 36px !important;
+        font-size: 11px !important;
+      }
+
+      .gmeet-side-drawer {
+        width: 300px !important;
+      }
+    }
+
+    /* ── 2. Tablets Portrait & Large Mobiles (481px to 768px) ── */
+    @media (max-width: 768px) {
+
+      .gmeet-bottom-dock,
+      .gmeet-top-dock {
+        height: 48px !important;
+        min-height: 48px !important;
+        max-height: 48px !important;
+        padding: 0 8px !important;
+        gap: 4px !important;
+      }
+
+      .call-btn .btn-label,
+      .gmeet-minimize-btn .btn-label {
+        display: none !important;
+      }
+
+      .call-btn {
+        width: 34px !important;
+        height: 34px !important;
+        min-width: 34px !important;
+        padding: 0 !important;
+      }
+
+      .gmeet-minimize-btn {
+        padding: 0 8px !important;
+        height: 34px !important;
+        font-size: 11px !important;
+      }
+
+      .gmeet-dock-left {
+        gap: 6px !important;
+        font-size: 11px !important;
+      }
+
+      #gmeetLiveClock,
+      .gmeet-divider {
+        display: none !important;
+      }
+
+      .room-code-badge {
+        height: 26px !important;
+        padding: 2px 6px !important;
+      }
+
+      .room-code-value {
+        font-size: 11.5px !important;
+      }
+
+      .room-code-label {
+        display: none !important;
+      }
+
+      /* Side Drawer becomes an overlay panel */
+      .gmeet-side-drawer {
+        position: absolute !important;
+        right: 0 !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        width: min(100%, 360px) !important;
+        z-index: 100 !important;
+        box-shadow: -8px 0 30px rgba(0, 0, 0, 0.8) !important;
+        background: #141720 !important;
+      }
+
+      /* Video Stage & Grid adjustments */
+      .gmeet-video-stage {
+        padding: 8px !important;
+      }
+
+      .gmeet-grid {
+        gap: 8px !important;
+      }
+
+      .gmeet-grid[data-tile-count="2"] {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+      }
+
+      .gmeet-grid[data-tile-count="3"],
+      .gmeet-grid[data-tile-count="4"] {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(auto-fit, minmax(0, 1fr)) !important;
+      }
+
+      /* Floating Filters horizontal swipe */
+      .gmeet-floating-filters {
+        left: 8px !important;
+        right: 8px !important;
+        bottom: 12px !important;
+        width: auto !important;
+        transform: none !important;
+        padding: 6px 8px !important;
+        overflow-x: auto !important;
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+        scrollbar-width: none !important;
+      }
+
+      .gmeet-floating-filters::-webkit-scrollbar {
+        display: none !important;
+      }
+    }
+
+    /* ── 3. Small Mobile Phones (up to 480px) ── */
+    @media (max-width: 480px) {
+
+      .gmeet-bottom-dock,
+      .gmeet-top-dock {
+        height: 46px !important;
+        min-height: 46px !important;
+        max-height: 46px !important;
+        padding: 0 4px !important;
+        gap: 2px !important;
+      }
+
+      .call-action-btns,
+      .gmeet-dock-center,
+      .gmeet-dock-right {
+        gap: 3px !important;
+      }
+
+      .call-btn {
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+        font-size: 11px !important;
+      }
+
+      .call-btn .btn-icon {
+        font-size: 13px !important;
+      }
+
+      .gmeet-minimize-btn {
+        height: 32px !important;
+        padding: 0 6px !important;
+        font-size: 10px !important;
+      }
+
+      .room-code-badge {
+        height: 24px !important;
+        padding: 2px 4px !important;
+      }
+
+      .room-code-value {
+        font-size: 11px !important;
+        letter-spacing: 0.5px !important;
+      }
+
+      .room-code-copy-btn {
+        padding: 1px 3px !important;
+        font-size: 10px !important;
+      }
+
+      /* Full width drawer on small mobile */
+      .gmeet-side-drawer {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      /* Drawer Room Hub on small mobile */
+      .drawer-room-hub {
+        padding: 10px !important;
+        gap: 8px !important;
+      }
+
+      .drawer-share-actions {
+        flex-direction: column !important;
+        gap: 6px !important;
+      }
+
+      .drawer-btn {
+        width: 100% !important;
+        min-height: 36px !important;
+      }
+
+      .squad-seats-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      /* Floating status toast */
+      .gmeet-floating-toast {
+        top: 54px !important;
+        max-width: calc(100vw - 20px) !important;
+        padding: 5px 12px !important;
+        font-size: 11.5px !important;
+      }
+    }
+
+    /* ── 4. Mobile Landscape (max-height: 520px) ── */
+    @media (max-height: 520px) {
+
+      .gmeet-bottom-dock,
+      .gmeet-top-dock {
+        height: 42px !important;
+        min-height: 42px !important;
+        max-height: 42px !important;
+        padding: 0 8px !important;
+      }
+
+      .call-btn {
+        height: 30px !important;
+        width: 30px !important;
+        min-width: 30px !important;
+      }
+
+      .call-btn .btn-label {
+        display: none !important;
+      }
+
+      .gmeet-minimize-btn {
+        height: 30px !important;
+        padding: 0 8px !important;
+        font-size: 10px !important;
+      }
+
+      .gmeet-video-stage {
+        padding: 4px !important;
+      }
+
+      .gmeet-grid[data-tile-count="2"] {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        grid-template-rows: 1fr !important;
+      }
+    }
+  </style>
 </head>
 
 <body style="background: transparent; margin: 0; padding: 0; overflow: hidden;">
+  <!-- STUDY SQUAD LOBBY POPUP -->
+  <div id="squadLobbyOverlay" class="squad-lobby-overlay" style="display:none;">
+    <div class="squad-lobby-card">
+      <button class="squad-lobby-close" onclick="closeSquadModal()" title="Close">&#x2715;</button>
+      <div class="squad-lobby-logo">&#x1F4F9;</div>
+      <h2 class="squad-lobby-title">Calcium Study Squad</h2>
+      <p class="squad-lobby-subtitle">Study together, stay accountable.<br>Start a new room or join one.</p>
+      <div class="squad-lobby-actions">
+        <label for="lobbyDisplayName"
+          style="font-size:11px; font-weight:800; color:#7dd3fc; text-align:left; display:block; margin-bottom:-4px; letter-spacing:0.8px;">&#x1F464;
+          YOUR NAME</label>
+        <input type="text" id="lobbyDisplayName" class="squad-lobby-input" placeholder="Type your name..."
+          oninput="saveDisplayName(this.value)" />
+        <button class="squad-lobby-btn primary" onclick="lobbyStartMeeting()">&#x1F680; Start Meeting</button>
+        <div class="squad-lobby-divider"><span>or join an existing room</span></div>
+        <label for="lobbyJoinCode"
+          style="font-size:11px; font-weight:800; color:#7dd3fc; text-align:left; display:block; margin-bottom:-4px; letter-spacing:0.8px;">&#x1F511;
+          ROOM CODE</label>
+        <input type="text" id="lobbyJoinCode" class="squad-lobby-input" placeholder="Room Code (e.g. CA-1234)"
+          onkeydown="if(event.key==='Enter') lobbyJoinMeeting()" />
+        <button class="squad-lobby-btn" onclick="lobbyJoinMeeting()">&#x1F517; Join Meeting</button>
+      </div>
+    </div>
+  </div>
+
   <!-- ═══════════════════════════════════════════════════════════════════
          MODAL 1: GOOGLE MEET FULLSCREEN LIVE STUDY ROOM (WEBRTC PEERJS)
     ═══════════════════════════════════════════════════════════════════ -->
   <div class="cn-modal-backdrop gmeet-fullscreen-backdrop" id="squadModal">
     <div class="gmeet-shell">
 
-      <!-- TOP BAR: Room Controls, Join/Create & Invite Actions -->
-      <div class="gmeet-top-bar">
-        <div class="gmeet-brand-left">
-          <span class="gmeet-logo-badge">📹 Calcium Meet</span>
-          <span class="call-badge" id="callStatusBadge">
-            <span class="status-dot"></span>
-            <span id="callStatusText">Call Inactive</span>
-          </span>
-          <span class="call-count-text" id="callCountText">0 on call</span>
-          <span class="gmeet-status-pill" id="squadStatusText">Ready to Start or Join</span>
-          <span class="gmeet-member-pill" id="squadOnlineCounter">1 Active</span>
-        </div>
-
-        <div class="gmeet-top-Controls">
-          <input type="text" id="myDisplayName" class="gmeet-top-input" placeholder="Your Name"
-            oninput="saveDisplayName(this.value)" style="width: 130px;" />
-          <button class="gmeet-top-btn primary" onclick="startOrCreateMeetRoom()">🚀 Start Meet</button>
-          <input type="text" id="joinRoomInput" class="gmeet-top-input" placeholder="Room Code (CA-XXXX)"
-            style="width: 145px;" />
-          <button class="gmeet-top-btn" onclick="joinMeetRoomAndAutoCall()">🔗 Join</button>
-
-          <div id="inviteLinkBox" style="display:flex; align-items:center; gap:6px;">
-            <input type="text" id="shareInviteUrl" readonly value="" style="display:none;" />
-            <button class="gmeet-top-btn" onclick="copyInviteLink()" title="Copy Room Invite Link">📋 Copy Link</button>
-            <button class="gmeet-top-btn whatsapp" onclick="shareInviteWhatsApp()" title="Invite via WhatsApp">💬
-              WhatsApp</button>
-          </div>
-        </div>
+      <!-- Floating Toast Notification (takes 0 space, auto-fades) -->
+      <div id="squadStatusToast" class="gmeet-floating-toast" style="display:none; opacity:0;">
+        <span id="squadStatusText"></span>
       </div>
+      <!-- Hidden input for JS compat -->
+      <input type="text" id="joinRoomInput" style="display:none;" />
 
       <!-- Alert Banner if Camera/Mic Permissions Denied -->
       <div id="callMediaAlert" class="call-media-alert" style="display:none; margin: 8px 16px 0;"></div>
@@ -70,7 +949,15 @@
         <div class="gmeet-dock-left">
           <span id="gmeetLiveClock">00:00</span>
           <span class="gmeet-divider">|</span>
-          <span id="gmeetRoomCodeLabel">Study Meet</span>
+          <!-- Prominent Room Code Badge -->
+          <div class="room-code-badge" id="roomCodeBadgeWrap" style="display:none;">
+            <span class="room-code-label">ROOM</span>
+            <span class="room-code-value" id="gmeetRoomCodeLabel">CA-0000</span>
+            <button class="room-code-copy-btn" onclick="copyRoomCodeOnly()" title="Copy room code">
+              <span id="roomCodeCopyIcon">📋</span>
+            </button>
+          </div>
+          <span class="room-code-idle" id="roomCodeIdleLabel">Study Meet</span>
         </div>
 
         <!-- Center: Audio, Video, Screen Share, Join/Leave Call, Filters, Fullscreen -->
@@ -106,14 +993,19 @@
 
         <!-- Right: Side Drawer Toggles & Minimize -->
         <div class="gmeet-dock-right">
-          <button class="gmeet-icon-btn" onclick="openMeetDrawerTab('roster')" title="Show Participants & Timetable">
-            👥
+          <button class="call-btn gmeet-ctrl-btn" onclick="openMeetDrawerTab('roster')"
+            title="Show Participants & Timetable">
+            <span class="btn-icon">&#x1F465;</span>
+            <span class="btn-label">People (<span id="squadOnlineCounter">1</span>)</span>
           </button>
-          <button class="gmeet-icon-btn" onclick="openMeetDrawerTab('chat')" title="Show In-Call Chat">
-            💬
+          <button class="call-btn gmeet-ctrl-btn" onclick="openMeetDrawerTab('chat')" title="Show In-Call Chat">
+            <span class="btn-icon">💬</span>
+            <span class="btn-label">Chat</span>
           </button>
-          <button class="gmeet-icon-btn" onclick="leavePeerRoom()" title="Reset / Disconnect Room">
-            🚪
+          <button class="call-btn gmeet-ctrl-btn btn-leave-room" onclick="leavePeerRoom()"
+            title="Leave / Disconnect Room">
+            <span class="btn-icon">🚪</span>
+            <span class="btn-label">Leave</span>
           </button>
           <button class="gmeet-minimize-btn" onclick="closeSquadModal()"
             title="Minimize to Study Mode (Call stays active)">
@@ -130,33 +1022,25 @@
 
           <!-- Floating Video Filter Bar (Toggled from Bottom Dock) -->
           <div class="video-filter-bar gmeet-floating-filters" id="videoFilterBar" style="display:none;">
-  <span class="filter-bar-label">🎨 Video Filter:</span>
+            <span class="filter-bar-label">🎨 Video Filter:</span>
 
-  <button class="filter-pill-btn active" data-filter="none"
-    onclick="setVideoFilter('none')">✨ Normal</button>
+            <button class="filter-pill-btn active" data-filter="none" onclick="setVideoFilter('none')">✨ Normal</button>
 
-  <button class="filter-pill-btn" data-filter="retro"
-    onclick="setVideoFilter('retro')">📼 Retro 90s</button>
+            <button class="filter-pill-btn" data-filter="retro" onclick="setVideoFilter('retro')">📼 Retro 90s</button>
 
-  <button class="filter-pill-btn" data-filter="noir"
-    onclick="setVideoFilter('noir')">🕵️ Noir</button>
+            <button class="filter-pill-btn" data-filter="noir" onclick="setVideoFilter('noir')">🕵️ Noir</button>
 
-  <button class="filter-pill-btn" data-filter="anime"
-    onclick="setVideoFilter('anime')">🌸 Anime Pop</button>
+            <button class="filter-pill-btn" data-filter="anime" onclick="setVideoFilter('anime')">🌸 Anime Pop</button>
 
-  <button class="filter-pill-btn" data-filter="warm"
-    onclick="setVideoFilter('warm')">🌅 Warm</button>
+            <button class="filter-pill-btn" data-filter="warm" onclick="setVideoFilter('warm')">🌅 Warm</button>
 
-  <button class="filter-pill-btn" data-filter="xray"
-    onclick="setVideoFilter('xray')">👻 X-Ray</button>
+            <button class="filter-pill-btn" data-filter="xray" onclick="setVideoFilter('xray')">👻 X-Ray</button>
 
-  <button class="filter-pill-btn" data-filter="blur"
-    onclick="setVideoFilter('blur')">🌫️ Blur</button>
-  
-  <button class="filter-pill-btn" data-filter="beauty"
-    onclick="setVideoFilter('beauty')">✨ Beauty Glow
-</button>
-</div>
+            <button class="filter-pill-btn" data-filter="blur" onclick="setVideoFilter('blur')">🌫️ Blur</button>
+
+            <button class="filter-pill-btn" data-filter="beauty" onclick="setVideoFilter('beauty')">✨ Beauty Glow
+            </button>
+          </div>
 
           <!-- GOOGLE MEET ADAPTIVE VIDEO GRID -->
           <div id="videoGallery" class="video-gallery-grid gmeet-grid" data-tile-count="1">
@@ -193,6 +1077,49 @@
 
           <!-- TAB 1: Live Study Squad Roster -->
           <div id="drawerPanelRoster" class="gmeet-drawer-body">
+            <!-- Room Info & Sharing Card -->
+            <div class="drawer-room-hub">
+              <div class="drawer-room-header">
+                <span class="drawer-brand-title">&#x1F4F9; Calcium Meet</span>
+                <div style="display:flex; align-items:center; gap:6px;">
+                  <span class="call-badge" id="callStatusBadge">
+                    <span class="status-dot"></span>
+                    <span id="callStatusText">Call Inactive</span>
+                  </span>
+                  <span class="call-count-text" id="callCountText">0 on call</span>
+                </div>
+              </div>
+
+              <div class="drawer-name-field">
+                <label class="drawer-label">&#x1F464; YOUR DISPLAY NAME</label>
+                <input type="text" id="myDisplayName" class="drawer-name-input" placeholder="Your Name"
+                  oninput="saveDisplayName(this.value)" />
+              </div>
+
+              <!-- Visible Room Invite Link & Code -->
+              <div class="drawer-link-field">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2px;">
+                  <label class="drawer-label">&#x1F517; ROOM INVITE LINK</label>
+                  <span class="drawer-code-pill" id="drawerRoomCodeTag">CA-XXXX</span>
+                </div>
+                <div class="drawer-link-input-wrap">
+                  <input type="text" id="shareInviteUrl" class="drawer-link-input" readonly value=""
+                    placeholder="Link generates when room starts..." onclick="this.select()"
+                    title="Click to select room link" />
+                  <button type="button" class="drawer-link-copy-btn" onclick="copyInviteLink()"
+                    title="Copy Room Link">&#x1F4CB;</button>
+                </div>
+              </div>
+
+              <div class="drawer-share-actions">
+                <button class="drawer-btn primary" onclick="copyInviteLink()" title="Copy Room Invite Link">&#x1F4CB;
+                  Copy Link</button>
+                <button class="drawer-btn whatsapp" onclick="shareInviteWhatsApp()"
+                  title="Invite via WhatsApp">&#x1F4AC; WhatsApp</button>
+                <button class="drawer-btn secondary" onclick="showSquadLobby()" title="Change Room">&#x1F6AA; Change
+                  Room</button>
+              </div>
+            </div>
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
               <span style="font-size:11px; font-weight:700; color:#94a3b8;">LIVE TIMETABLE &amp; STATUS</span>
               <button class="cn-btn secondary" style="padding:4px 8px; font-size:11px;"
@@ -457,7 +1384,7 @@
       fr: "FR", afm: "AFM", audit: "AUDIT", dt: "DT", idt: "IDT", ibs: "IBS"
     };
 
-const PEER_CONFIG = {
+    const PEER_CONFIG = {
       host: '0.peerjs.com',
       port: 443,
       secure: true,
@@ -589,7 +1516,7 @@ const PEER_CONFIG = {
 
     function initSquadEngine() {
       const savedName = localStorage.getItem("calcium_user_name") || "CA Aspirant";
-      ["myDisplayName", "topBarUserName", "shareBarUserName"].forEach(id => {
+      ["myDisplayName", "topBarUserName", "shareBarUserName", "lobbyDisplayName"].forEach(id => {
         const el = document.getElementById(id);
         if (el) el.value = savedName;
       });
@@ -633,10 +1560,31 @@ const PEER_CONFIG = {
       }, 1000);
     }
 
+
+    /* Show a temporary floating status toast that auto-clears after 2.5s */
+    let _toastTimer = null;
+    function showStatusToast(msg, durationMs) {
+      durationMs = durationMs || 2500;
+      const wrap = document.getElementById('squadStatusToast');
+      const el = document.getElementById('squadStatusText');
+      if (!el) return;
+      el.textContent = msg;
+      if (wrap) {
+        wrap.style.display = 'flex';
+        wrap.style.opacity = '1';
+      }
+      if (_toastTimer) clearTimeout(_toastTimer);
+      _toastTimer = setTimeout(() => {
+        if (wrap) {
+          wrap.style.opacity = '0';
+          setTimeout(() => { if (wrap) wrap.style.display = 'none'; }, 300);
+        }
+      }, durationMs);
+    }
     window.saveDisplayName = function (val) {
       const clean = val.trim() || "CA Aspirant";
       localStorage.setItem("calcium_user_name", clean);
-      ["myDisplayName", "topBarUserName", "shareBarUserName"].forEach(id => {
+      ["myDisplayName", "topBarUserName", "shareBarUserName", "lobbyDisplayName"].forEach(id => {
         const el = document.getElementById(id);
         if (el && document.activeElement !== el) el.value = val;
       });
@@ -699,7 +1647,7 @@ const PEER_CONFIG = {
         }
       } catch (e) { }
       const counterEl = document.getElementById("squadOnlineCounter");
-      if (counterEl) counterEl.textContent = `${count} Member${count === 1 ? "" : "s"} Active (No Limit)`;
+      if (counterEl) counterEl.textContent = count;
 
       renderModalSquadGrid(list);
     }
@@ -741,7 +1689,7 @@ const PEER_CONFIG = {
         : "https://www.calciumnotes.com/";
       const inviteUrl = `${baseUrl}?room=${code}`;
       document.getElementById("shareInviteUrl").value = inviteUrl;
-      document.getElementById("squadStatusText").textContent = `Hosting Room ${code} (Unlimited Members Allowed)`;
+      showStatusToast(`Hosting Room ${code} (Unlimited Members Allowed)`);
 
       if (typeof Peer !== "undefined") {
         try {
@@ -759,7 +1707,7 @@ const PEER_CONFIG = {
             myClientId = assignedId;
             squadMembersMap[myClientId] = buildMyMemberState();
 
-            document.getElementById("squadStatusText").textContent = `🟢 Live Room ${code} Ready — Share Link with Any Number of Friends!`;
+            showStatusToast(`🟢 Live Room ${code} Ready — Share Link with Any Number of Friends!`);
             updateAndBroadcastMyState();
             if (isCallActive) connectCallsWithRoomMembers();
           });
@@ -809,7 +1757,7 @@ const PEER_CONFIG = {
     function joinPeerRoom(code) {
       if (!code) return;
       if (activeRoomCode === code && guestHostConn && guestHostConn.open) {
-        document.getElementById("squadStatusText").textContent = `🟢 Connected to Live Room ${code}`;
+        showStatusToast(`🟢 Connected to Live Room ${code}`);
         if (isCallActive) {
           broadcastMediaState();
           connectCallsWithRoomMembers();
@@ -828,14 +1776,14 @@ const PEER_CONFIG = {
         ? locObj.origin + locObj.pathname
         : "https://www.calciumnotes.com/";
       document.getElementById("shareInviteUrl").value = `${baseUrl}?room=${code}`;
-      document.getElementById("squadStatusText").textContent = `Connecting to Room ${code}... (please wait)`;
+      showStatusToast(`Connecting to Room ${code}... (please wait)`);
       // Auto-retry connection after 10 seconds if still not connected
       if (window._peerJoinTimeout) clearTimeout(window._peerJoinTimeout);
       window._peerJoinTimeout = setTimeout(() => {
         if (!guestHostConn || !guestHostConn.open) {
-          document.getElementById("squadStatusText").textContent = `⚠️ Connection to Room ${code} is taking too long. Retrying...`;
+          showStatusToast(`⚠️ Connection to Room ${code} is taking too long. Retrying...`);
           // Destroy current peer and retry
-          if (peerInstance) { try { peerInstance.destroy(); } catch(e){} peerInstance = null; }
+          if (peerInstance) { try { peerInstance.destroy(); } catch (e) { } peerInstance = null; }
           prewarmedGuestPeer = null;
           joinPeerRoom(code);
         }
@@ -856,7 +1804,7 @@ const PEER_CONFIG = {
             }
             guestHostConn = peerInstance.connect("calcium-notes-room-" + code, { reliable: true });
             guestHostConn.on("open", () => {
-              document.getElementById("squadStatusText").textContent = `🟢 Connected to Live Room ${code}`;
+              showStatusToast(`🟢 Connected to Live Room ${code}`);
               guestHostConn.send({ type: "MEMBER_UPDATE", member: buildMyMemberState() });
               if (isCallActive) {
                 broadcastMediaState();
@@ -866,7 +1814,7 @@ const PEER_CONFIG = {
             guestHostConn.on("data", (payload) => handleIncomingPeerData(payload, guestHostConn));
             guestHostConn.on("error", (err) => {
               console.warn("Host data connection error:", err);
-              document.getElementById("squadStatusText").textContent = `⚠️ Could not reach Room ${code} — check room code.`;
+              showStatusToast(`⚠️ Could not reach Room ${code} — check room code.`);
             });
           };
 
@@ -890,7 +1838,7 @@ const PEER_CONFIG = {
           peerInstance.on("error", (err) => {
             console.warn("PeerJS error:", err.type, err.message, err);
             if (err && err.type === "peer-unavailable") {
-              document.getElementById("squadStatusText").textContent = `⚠️ Room ${code} not found or host offline.`;
+              showStatusToast(`⚠️ Room ${code} not found or host offline.`);
             }
           });
         } catch (e) {
@@ -1007,7 +1955,7 @@ const PEER_CONFIG = {
       } else if (guestHostConn && guestHostConn.open) {
         guestHostConn.send(msg);
       }
-      document.getElementById("squadStatusText").textContent = "✅ Synced your timetable with all room members!";
+      showStatusToast("✅ Synced your timetable with all room members!");
     };
 
     window.pushCurrentLocalPlanToSquad = function () {
@@ -1030,7 +1978,7 @@ const PEER_CONFIG = {
       activeRoomCode = "";
       squadMembersMap = {};
       squadMembersMap[myClientId] = buildMyMemberState();
-      document.getElementById("squadStatusText").textContent = "Left room — currently in Solo mode.";
+      showStatusToast("Left room — currently in Solo mode.");
       syncSquadToStorage();
       prewarmGuestPeerInstance();
     };
@@ -1044,7 +1992,7 @@ const PEER_CONFIG = {
       } catch (e) {
         document.execCommand("copy");
       }
-      document.getElementById("squadStatusText").textContent = "✅ Invite link copied! Send it to any number of study partners.";
+      showStatusToast("✅ Invite link copied! Send it to any number of study partners.");
     };
 
     window.shareInviteWhatsApp = function () {
@@ -1400,6 +2348,54 @@ const PEER_CONFIG = {
       reader.readAsText(file);
     };
 
+
+    /* ═══════════════════════════════════════════════════
+       STUDY SQUAD LOBBY — helper functions
+    ═══════════════════════════════════════════════════ */
+    function showSquadLobby() {
+      // Delegate to parent index.html lobby
+      try {
+        if (window.parent && window.parent !== window && typeof window.parent.showSquadLobby === 'function') {
+          window.parent.showSquadLobby();
+          return;
+        }
+      } catch (e) { }
+      // postMessage fallback for file:// protocol
+      try { window.parent.postMessage({ __calciumParentCall: true, fn: 'showSquadLobby', args: [] }, '*'); } catch (e) { }
+    }
+
+    function hideSquadLobby() {
+      const overlay = document.getElementById('squadLobbyOverlay');
+      if (overlay) overlay.style.display = 'none';
+    }
+
+    window.lobbyStartMeeting = function () {
+      // Sync name if entered in lobby
+      const nameEl = document.getElementById('lobbyDisplayName');
+      if (nameEl && nameEl.value.trim()) saveDisplayName(nameEl.value.trim());
+      hideSquadLobby();
+      window.startOrCreateMeetRoom();
+      updateMeetRoomLabel();
+    };
+
+    window.lobbyJoinMeeting = function () {
+      const nameEl = document.getElementById('lobbyDisplayName');
+      if (nameEl && nameEl.value.trim()) saveDisplayName(nameEl.value.trim());
+      const codeEl = document.getElementById('lobbyJoinCode');
+      const code = codeEl ? codeEl.value.trim() : '';
+      if (!code) {
+        codeEl && codeEl.focus();
+        codeEl && (codeEl.style.borderColor = 'rgba(239,68,68,0.7)');
+        setTimeout(() => { if (codeEl) codeEl.style.borderColor = ''; }, 1500);
+        return;
+      }
+      // Sync code to the hidden joinRoomInput so joinMeetRoomAndAutoCall works
+      const hidden = document.getElementById('joinRoomInput');
+      if (hidden) hidden.value = code;
+      hideSquadLobby();
+      window.joinMeetRoomAndAutoCall();
+      updateMeetRoomLabel();
+    };
     window.openSquadModal = function (attemptFullscreen = false) {
       document.getElementById("squadModal").classList.add("active");
       syncSquadToStorage();
@@ -1411,7 +2407,8 @@ const PEER_CONFIG = {
     };
     window.closeSquadModal = function () {
       window.exitFullscreenIfNeeded && window.exitFullscreenIfNeeded();
-      document.getElementById("squadModal").classList.remove("active");
+      document.getElementById('squadModal').classList.remove('active');
+      hideSquadLobby();
       notifyParentOverlayVisibility();
     };
 
@@ -1419,15 +2416,15 @@ const PEER_CONFIG = {
        LIVE AUDIO & VIDEO CALLING + FUN FILTERS ENGINE (PEERJS WEBRTC)
     ========================================================================= */
     const VIDEO_FILTER_LIST = [
-  { id: "none", label: "✨ Normal" },
-  { id: "retro", label: "📼 Retro 90s" },
-  { id: "noir", label: "🕵️ Noir" },
-  { id: "anime", label: "🌸 Anime Pop" },
-  { id: "warm", label: "🌅 Warm" },
-  { id: "xray", label: "👻 X-Ray" },
-  { id: "blur", label: "🌫️ Blur" },
-  { id: "beauty", label: "✨ Beauty Glow" }
-];
+      { id: "none", label: "✨ Normal" },
+      { id: "retro", label: "📼 Retro 90s" },
+      { id: "noir", label: "🕵️ Noir" },
+      { id: "anime", label: "🌸 Anime Pop" },
+      { id: "warm", label: "🌅 Warm" },
+      { id: "xray", label: "👻 X-Ray" },
+      { id: "blur", label: "🌫️ Blur" },
+      { id: "beauty", label: "✨ Beauty Glow" }
+    ];
 
     let isCallActive = false;
     let isAudioOn = false;
@@ -2549,6 +3546,11 @@ const PEER_CONFIG = {
       updateMeetRoomLabel();
     };
 
+    // Called by index.html lobby to pre-fill room code before joining
+    window.setLobbyJoinCode = function (code) {
+      const el = document.getElementById('joinRoomInput');
+      if (el) el.value = code;
+    };
     window.joinMeetRoomAndAutoCall = function () {
       window.joinPeerRoomFromInput();
       if (!isCallActive) {
@@ -2559,9 +3561,52 @@ const PEER_CONFIG = {
       updateMeetRoomLabel();
     };
 
+
+    window.copyRoomCodeOnly = function () {
+      if (!activeRoomCode) return;
+      try {
+        navigator.clipboard.writeText(activeRoomCode);
+      } catch (e) {
+        const el = document.createElement('textarea');
+        el.value = activeRoomCode;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+      }
+      const icon = document.getElementById('roomCodeCopyIcon');
+      if (icon) {
+        icon.textContent = '✅';
+        setTimeout(() => { icon.textContent = '📋'; }, 1800);
+      }
+      showStatusToast('✅ Room code copied! Share CA-' + activeRoomCode.replace('CA-', '') + ' with your friends.');
+    };
     function updateMeetRoomLabel() {
-      const lbl = document.getElementById("gmeetRoomCodeLabel");
-      if (lbl) lbl.textContent = activeRoomCode ? `Room: ${activeRoomCode}` : "Study Meet";
+      const lbl = document.getElementById('gmeetRoomCodeLabel');
+      const badge = document.getElementById('roomCodeBadgeWrap');
+      const idle = document.getElementById('roomCodeIdleLabel');
+      const drawerTag = document.getElementById('drawerRoomCodeTag');
+      const shareInput = document.getElementById('shareInviteUrl');
+      if (activeRoomCode) {
+        if (lbl) lbl.textContent = activeRoomCode;
+        if (badge) badge.style.display = 'flex';
+        if (idle) idle.style.display = 'none';
+        if (drawerTag) drawerTag.textContent = activeRoomCode;
+        if (shareInput && !shareInput.value) {
+          let locObj = window.location;
+          try {
+            if (window.parent && window.parent !== window && window.parent.location.origin !== 'null') {
+              locObj = window.parent.location;
+            }
+          } catch (e) { }
+          const baseUrl = locObj.origin && locObj.origin !== 'null' ? locObj.origin + locObj.pathname : 'https://www.calciumnotes.com/';
+          shareInput.value = `${baseUrl}?room=${activeRoomCode}`;
+        }
+      } else {
+        if (badge) badge.style.display = 'none';
+        if (idle) idle.style.display = '';
+        if (drawerTag) drawerTag.textContent = 'CA-XXXX';
+      }
     }
 
     // Toggle Filter Bar Popup

@@ -40,6 +40,275 @@
     content="Precision study tracking, live co-study rooms, and social progress cards for CA students." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="./fevicol.png" />
+
+  <style>
+    /* ═══════════════════════════════════════════════
+       STUDY SQUAD LOBBY POPUP  (lives in index.html)
+    ═══════════════════════════════════════════════ */
+    #squadLobbyOverlay {
+      position: fixed;
+      inset: 0;
+      z-index: 200000;
+      /* above sturmOverlay (100000) */
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: rgba(5, 10, 22, 0.92);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+    }
+
+    #squadLobbyOverlay.lobby-visible {
+      display: flex;
+      animation: lobbyFadeIn 0.25s ease;
+    }
+
+    @keyframes lobbyFadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .sq-lobby-card {
+      position: relative;
+      background: linear-gradient(160deg, #0d1b35 0%, #0a1628 100%);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 26px;
+      padding: 44px 40px 38px;
+      width: 100%;
+      max-width: 420px;
+      margin: 16px;
+      box-shadow:
+        0 40px 100px rgba(0, 0, 0, 0.7),
+        0 0 0 1px rgba(56, 189, 248, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      text-align: center;
+      animation: lobbyCardPop 0.35s cubic-bezier(.22, 1, .36, 1);
+    }
+
+    @keyframes lobbyCardPop {
+      from {
+        opacity: 0;
+        transform: scale(0.88) translateY(24px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .sq-lobby-close {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #64748b;
+      font-size: 16px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, color 0.2s;
+      line-height: 1;
+    }
+
+    .sq-lobby-close:hover {
+      background: rgba(239, 68, 68, 0.18);
+      color: #fca5a5;
+    }
+
+    .sq-lobby-emoji {
+      font-size: 52px;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .sq-lobby-title {
+      margin: 0 0 6px;
+      font-size: 24px;
+      font-weight: 800;
+      color: #f0f9ff;
+      letter-spacing: -0.4px;
+    }
+
+    .sq-lobby-sub {
+      margin: 0 0 28px;
+      font-size: 13px;
+      color: #475569;
+      line-height: 1.55;
+    }
+
+    .sq-lobby-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .sq-lobby-field {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      width: 100%;
+      text-align: left;
+    }
+    .sq-lobby-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      color: #7dd3fc;
+      text-transform: uppercase;
+      padding-left: 2px;
+    }
+        .sq-lobby-input {
+      width: 100%;
+      padding: 12px 15px;
+      border-radius: 11px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      background: rgba(255, 255, 255, 0.05);
+      color: #e2e8f0;
+      font-size: 14px;
+      outline: none;
+      box-sizing: border-box;
+      transition: border-color 0.2s, background 0.2s;
+      font-family: inherit;
+    }
+
+    .sq-lobby-input:focus {
+      border-color: rgba(56, 189, 248, 0.55);
+      background: rgba(56, 189, 248, 0.06);
+    }
+
+    .sq-lobby-input::placeholder {
+      color: #334155;
+    }
+
+    .sq-lobby-input.sq-error {
+      border-color: rgba(239, 68, 68, 0.65) !important;
+      background: rgba(239, 68, 68, 0.06) !important;
+    }
+
+    .sq-lobby-btn {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 13px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.07);
+      color: #94a3b8;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      transition: transform 0.14s, opacity 0.18s, box-shadow 0.18s, background 0.18s;
+    }
+
+    .sq-lobby-btn:hover {
+      background: rgba(255, 255, 255, 0.12);
+      transform: translateY(-1px);
+    }
+
+    .sq-lobby-btn:active {
+      transform: translateY(0);
+    }
+
+    .sq-lobby-btn.start {
+      background: linear-gradient(135deg, #1d4ed8 0%, #0891b2 100%);
+      color: #fff;
+      border: none;
+      box-shadow: 0 6px 22px rgba(29, 78, 216, 0.42);
+    }
+
+    .sq-lobby-btn.start:hover {
+      box-shadow: 0 10px 32px rgba(29, 78, 216, 0.58);
+    }
+
+    .sq-lobby-sep {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 4px 0;
+    }
+
+    .sq-lobby-sep::before,
+    .sq-lobby-sep::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .sq-lobby-sep span {
+      font-size: 11px;
+      color: #334155;
+      white-space: nowrap;
+    }
+  
+    /* ── Responsive Study Squad Lobby (Mobile, Tablet, Landscape) ── */
+    @media (max-width: 540px) {
+      .sq-lobby-card {
+        padding: 28px 18px 22px !important;
+        border-radius: 20px !important;
+        margin: 10px !important;
+        max-width: calc(100vw - 20px) !important;
+      }
+      .sq-lobby-emoji {
+        font-size: 40px !important;
+        margin-bottom: 8px !important;
+      }
+      .sq-lobby-title {
+        font-size: 20px !important;
+      }
+      .sq-lobby-sub {
+        font-size: 12px !important;
+        margin-bottom: 18px !important;
+      }
+      .sq-lobby-input {
+        padding: 10px 12px !important;
+        font-size: 13.5px !important;
+      }
+      .sq-lobby-btn {
+        padding: 12px 14px !important;
+        font-size: 14px !important;
+      }
+      .sq-lobby-close {
+        top: 10px !important;
+        right: 12px !important;
+        width: 30px !important;
+        height: 30px !important;
+      }
+    }
+
+    @media (max-height: 600px) {
+      #squadLobbyOverlay {
+        overflow-y: auto !important;
+        align-items: flex-start !important;
+        padding: 12px 6px !important;
+      }
+      .sq-lobby-card {
+        padding: 18px 20px 16px !important;
+        margin: auto !important;
+      }
+      .sq-lobby-emoji {
+        display: none !important;
+      }
+      .sq-lobby-title {
+        font-size: 18px !important;
+        margin-bottom: 4px !important;
+      }
+      .sq-lobby-sub {
+        font-size: 11px !important;
+        margin-bottom: 12px !important;
+      }
+    }</style>
 </head>
 
 <body>
@@ -350,7 +619,8 @@
         transition: opacity 0.2s ease;
       ">
     <iframe id="sturmIframe" src="./sturm.html" allow="fullscreen; autoplay; microphone; camera; display-capture"
-      allowfullscreen style="width: 100%; height: 100%; border: none; background: transparent; pointer-events: none;"></iframe>
+      allowfullscreen
+      style="width: 100%; height: 100%; border: none; background: transparent; pointer-events: none;"></iframe>
   </div>
 
   <!-- FLOATING CALL CONTROLS (Active while studying in Read/Plan Mode) -->
@@ -555,7 +825,7 @@
       setTimeout(() => {
         planOverlay.classList.remove("rm-active");
         if (typeof window.hideSturmOverlay === "function") window.hideSturmOverlay();
-      readOverlay.classList.add("rm-active");
+        readOverlay.classList.add("rm-active");
 
         setTimeout(() => {
           readOverlay.classList.add("rm-visible");
@@ -580,7 +850,7 @@
       setTimeout(() => {
         readOverlay.classList.remove("rm-active");
         if (typeof window.hideSturmOverlay === "function") window.hideSturmOverlay();
-      planOverlay.classList.add("rm-active");
+        planOverlay.classList.add("rm-active");
 
         setTimeout(() => {
           planOverlay.classList.add("rm-visible");
@@ -703,17 +973,14 @@
     };
 
     window.openSquadModal = function (fromUserGesture = true) {
-      window.showSturmOverlay();
-      if (fromUserGesture) {
-        requestFullscreenSafe();
-      }
-      callSturm("openSquadModal", fromUserGesture);
+      showLobby();
     };
 
     window.closeSquadModal = function () {
       window.exitFullscreenIfNeeded && window.exitFullscreenIfNeeded();
       callSturm("closeSquadModal");
       window.hideSturmOverlay();
+      hideLobby();
     };
 
     window.openShareModal = function () {
@@ -875,6 +1142,83 @@
       }
     };
 
+
+    /* ═══════════════════════════════════════════════════════════════
+       STUDY SQUAD LOBBY — Index.html parent-side logic
+    ═══════════════════════════════════════════════════════════════════ */
+
+    function showLobby() {
+      const overlay = document.getElementById('squadLobbyOverlay');
+      if (!overlay) return;
+      // Pre-fill saved name
+      const savedName = localStorage.getItem('calcium_user_name') || '';
+      const nameEl = document.getElementById('sqLobbyName');
+      if (nameEl && savedName) nameEl.value = savedName;
+      // Clear previous join code error
+      const codeEl = document.getElementById('sqLobbyCode');
+      if (codeEl) codeEl.classList.remove('sq-error');
+      overlay.classList.add('lobby-visible');
+      // Focus name field if empty, else focus code field
+      setTimeout(() => {
+        if (nameEl && !nameEl.value) nameEl.focus();
+        else if (codeEl) codeEl.focus();
+      }, 80);
+    }
+
+    function hideLobby() {
+      const overlay = document.getElementById('squadLobbyOverlay');
+      if (overlay) overlay.classList.remove('lobby-visible');
+    }
+
+    function sqLobbyNameChange(val) {
+      // Sync name to localStorage immediately (same as saveDisplayName in sturm)
+      const clean = (val || '').trim() || 'CA Aspirant';
+      localStorage.setItem('calcium_user_name', clean);
+      callSturm('saveDisplayName', val);
+    }
+
+    window.sqLobbyStart = function () {
+      const nameEl = document.getElementById('sqLobbyName');
+      if (nameEl && nameEl.value.trim()) {
+        sqLobbyNameChange(nameEl.value.trim());
+      }
+      hideLobby();
+      // Show sturm overlay and fire start
+      window.showSturmOverlay();
+      requestFullscreenSafe();
+      callSturm('openSquadModal', true);
+      callSturm('startOrCreateMeetRoom');
+    };
+
+    window.sqLobbyJoin = function () {
+      const nameEl = document.getElementById('sqLobbyName');
+      if (nameEl && nameEl.value.trim()) sqLobbyNameChange(nameEl.value.trim());
+
+      const codeEl = document.getElementById('sqLobbyCode');
+      const code = (codeEl ? codeEl.value.trim() : '').toUpperCase();
+
+      if (!code) {
+        if (codeEl) {
+          codeEl.classList.add('sq-error');
+          codeEl.focus();
+          setTimeout(() => codeEl.classList.remove('sq-error'), 1600);
+        }
+        return;
+      }
+
+      hideLobby();
+      window.showSturmOverlay();
+      requestFullscreenSafe();
+      // Push code into sturm's hidden joinRoomInput then trigger join
+      callSturm('openSquadModal', true);
+      setTimeout(() => {
+        callSturm('setLobbyJoinCode', code);
+        callSturm('joinMeetRoomAndAutoCall');
+      }, 120);
+    };
+
+    // Allow sturm to re-open the lobby (e.g. "Change Room" button)
+    window.showSquadLobby = function () { showLobby(); };
     function initSquadEngine() {
       let savedProf = {};
       try {
@@ -889,6 +1233,48 @@
       }
     }
   </script>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       STUDY SQUAD LOBBY  –  lives in index.html (parent)
+       Shown BEFORE the sturm iframe opens, so it works over everything
+  ═══════════════════════════════════════════════════════════════════ -->
+  <div id="squadLobbyOverlay" role="dialog" aria-modal="true" aria-label="Study Squad Lobby">
+    <div class="sq-lobby-card">
+      <button class="sq-lobby-close" onclick="hideLobby()" title="Close">&#x2715;</button>
+
+      <div class="sq-lobby-emoji">&#x1F4F9;</div>
+      <h2 class="sq-lobby-title">Study Squad</h2>
+      <p class="sq-lobby-sub">Study together. Stay accountable.<br>Start a room or join your friends.</p>
+
+      <div class="sq-lobby-form">
+        <!-- Name field with clear Name label above -->
+        <div class="sq-lobby-field">
+          <label for="sqLobbyName" class="sq-lobby-label">&#x1F464; YOUR NAME</label>
+          <input id="sqLobbyName" class="sq-lobby-input" type="text"
+            placeholder="Type your name (e.g. Rahul, Priya)..." oninput="sqLobbyNameChange(this.value)" />
+        </div>
+
+        <!-- START -->
+        <button class="sq-lobby-btn start" onclick="sqLobbyStart()">
+          &#x1F680;&nbsp; Start Meeting
+        </button>
+
+        <!-- Divider -->
+        <div class="sq-lobby-sep"><span>or join an existing room</span></div>
+
+        <!-- JOIN with Room Code label above -->
+        <div class="sq-lobby-field">
+          <label for="sqLobbyCode" class="sq-lobby-label">&#x1F511; ROOM CODE</label>
+          <input id="sqLobbyCode" class="sq-lobby-input" type="text"
+            placeholder="e.g. CA-1234"
+            onkeydown="if(event.key==='Enter') sqLobbyJoin()" />
+        </div>
+        <button class="sq-lobby-btn" onclick="sqLobbyJoin()">
+          &#x1F517;&nbsp; Join Meeting
+        </button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
