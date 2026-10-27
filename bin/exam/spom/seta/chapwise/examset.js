@@ -435,10 +435,28 @@ function showResult(score, totalPossibleMarks, percentage, grade, isPass, correc
 
     let html = `
         <div class="social-updates-box">
-            <p>For more updates, join the Calcium Notes community:</p>
+            <p style="font-size: 15px; font-weight: 500; color: #374151; line-height: 1.6; margin-bottom: 10px;">
+                If you notice any errors, bugs, incorrect answers, outdated information, or anything that needs improvement, please let us know through our social media channels.
+            </p>
+            <p style="font-size: 14px; font-weight: 500; color: #4b5563; line-height: 1.6; margin-bottom: 10px;">
+                Your feedback helps us improve the accuracy, quality, and learning experience of Calcium Notes for all CA students.
+            </p>
+            <p style="font-size: 15px; font-weight: 600; color: #1f2937; margin-bottom: 6px;">
+                Together, let's make Calcium Notes better!
+            </p>
+            <p style="font-size: 15px; font-weight: 600; color: #2563eb; margin-bottom: 16px;">
+                Thank you for being a part of Calcium Notes. 🙌
+            </p>
             <div class="social-btn-group">
-                <a href="https://www.instagram.com/calciumnotes" class="social-btn instagram-btn" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://x.com/Calciumnotes" class="social-btn twitter-btn" target="_blank" rel="noopener">Twitter / X</a>
+                <a href="https://www.instagram.com/calciumnotes" class="social-btn instagram-btn" target="_blank" rel="noopener">
+                    Instagram
+                </a>
+                <a href="https://x.com/Calciumnotes" class="social-btn twitter-btn" target="_blank" rel="noopener">
+                    Twitter
+                </a>
+                <a href="mailto:calciumnotes@gmail.com" class="social-btn email-btn" target="_blank" rel="noopener" style="background: #ea4335;">
+                    Email
+                </a>
             </div>
         </div>
 

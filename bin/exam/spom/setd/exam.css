@@ -229,3 +229,11 @@ button {
 .instagram-btn:hover {
     opacity: 0.9;
 }
+
+.email-btn {
+    background: #ea4335;
+}
+
+.email-btn:hover {
+    background: #d93025;
+}

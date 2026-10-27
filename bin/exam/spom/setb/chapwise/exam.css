@@ -124,6 +124,8 @@ button:hover { opacity: 0.9; transform: translateY(-1px); }
 .social-btn { display: inline-block; padding: 10px 20px; font-weight: 600; color: white; text-decoration: none; border-radius: 6px; }
 .twitter-btn { background: #000000; }
 .instagram-btn { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.email-btn { background: #ea4335; }
+.email-btn:hover { background: #d93025; }
 
 /* Responsive */
 @media (max-width: 900px) {
