@@ -24,7 +24,7 @@ const AICaseStudies = [
           "Only the private limited company",
           "The Chartered Accountant who signed the Memorandum",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Where no provision is made in the Articles for appointment of first directors, the individual subscribers to the Memorandum are deemed to be the first directors. A body corporate cannot become a director.",
       },
@@ -33,7 +33,7 @@ const AICaseStudies = [
         question:
           "What is the minimum number of directors required for Sunrise Engineering Limited as a public company?",
         options: ["1", "2", "3", "5"],
-        answer: 2,
+        answer: 3,
         reason:
           "Under Section 149(1), a public company must have a minimum of 3 directors.",
       },
@@ -42,7 +42,7 @@ const AICaseStudies = [
         question:
           "What is the general maximum number of directors that Sunrise Engineering Limited may have without passing a special resolution?",
         options: ["10", "12", "15", "20"],
-        answer: 2,
+        answer: 3,
         reason:
           "The maximum number of directors is 15. A company may appoint more than 15 directors only after passing a special resolution.",
       },
@@ -56,7 +56,7 @@ const AICaseStudies = [
           "Passing of a special resolution",
           "Approval of the Central Government in every case",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "A company can appoint more than 15 directors after passing a special resolution.",
       },
@@ -70,7 +70,7 @@ const AICaseStudies = [
           "A person cannot be appointed as director unless the required DIN has been allotted",
           "Written consent is required only from an independent director",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 152(3) requires the person to have a DIN before appointment. Further, under Section 152(5), a person appointed as director cannot act unless written consent to hold office has been furnished.",
       },
@@ -100,36 +100,36 @@ const AICaseStudies = [
           "Both independent directors and nominee directors",
           "All non-executive directors",
         ],
-        answer: 2,
+        answer: 1,
         reason:
-          "Independent directors are excluded from the total number of directors for retirement by rotation. A nominee director nominated by an institution in pursuance of law or agreement is also not considered liable to retire by rotation.",
+          "Section 152(6) excludes independent directors from the total-number calculation. A nominee director is not automatically excluded from the denominator merely because the director is a nominee.",
       },
       {
         question_id: "seta_AI_cs_002_2",
         question:
           "What is the number of directors to be considered for calculating the rotational directors in Alpha Manufacturing Limited?",
         options: ["12", "11", "10", "9"],
-        answer: 3,
+        answer: 2,
         reason:
-          "There are 12 directors in total. The 2 independent directors and 1 nominee director are excluded. Therefore, 12 − 3 = 9 directors are considered.",
+          "The company has 12 directors. For the Section 152(6) calculation, independent directors are excluded. Therefore, 12 - 2 = 10 directors. A nominee director is not automatically excluded from this denominator.",
       },
       {
         question_id: "seta_AI_cs_002_3",
         question:
-          "What is the minimum number of directors liable to retire by rotation out of the 9 directors considered for this purpose?",
-        options: ["3", "5", "6", "9"],
+          "Under Section 152(6), if the total number of directors for this calculation is 10 after excluding independent directors, what is the minimum number whose office must be liable to retirement by rotation?",
+        options: ["3", "5", "7", "9"],
         answer: 2,
         reason:
-          "Not less than two-thirds of the relevant total number of directors must be liable to retire by rotation. Two-thirds of 9 is 6.",
+          "Two-thirds of 10 is 6.67. Since not less than two-thirds must be liable to retirement by rotation, at least 7 directors are required.",
       },
       {
         question_id: "seta_AI_cs_002_4",
         question:
-          "How many of the rotational directors will actually retire at the forthcoming AGM?",
+          "Given that the nine ordinary directors in the case are liable to retire by rotation, how many directors will ordinarily retire at the AGM?",
         options: ["1", "2", "3", "4"],
-        answer: 1,
+        answer: 2,
         reason:
-          "Once 6 directors are identified as liable to retire by rotation, one-third of those directors retire at the AGM. One-third of 6 is 2.",
+          "Section 152(6)(c) provides for one-third of the directors liable to retire by rotation to retire at the AGM. One-third of 9 is 3.",
       },
       {
         question_id: "seta_AI_cs_002_5",
@@ -141,7 +141,7 @@ const AICaseStudies = [
           "Those who have been longest in office since their last appointment",
           "The independent directors",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Among directors liable to retire by rotation, those who have been longest in office since their last appointment retire first. Independent directors are not liable to retire by rotation.",
       },
@@ -171,7 +171,7 @@ const AICaseStudies = [
           "The Registrar",
           "The Central Government",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Under Section 161(1), where the Articles confer the power, the Board may appoint an additional director.",
       },
@@ -185,7 +185,7 @@ const AICaseStudies = [
           "Until the next AGM or the last date on which the AGM should have been held, whichever is earlier",
           "Until the next Board meeting",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "An additional director holds office up to the date of the next AGM or the last date on which the AGM should have been held, whichever is earlier.",
       },
@@ -199,7 +199,7 @@ const AICaseStudies = [
           "No, because the power of appointment rests with the Board, subject to the required authorisation",
           "No, because an alternate director can only be appointed for six months' absence",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The Board has the authority to appoint an alternate director, provided the Articles or a general meeting resolution authorises it. The original director cannot appoint his own alternate.",
       },
@@ -213,7 +213,7 @@ const AICaseStudies = [
           "Yes, because the absence from India is for not less than three months",
           "Yes, but only if the absence is for one year",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "An alternate director may be appointed where the original director is absent from India for a period of not less than three months.",
       },
@@ -227,7 +227,7 @@ const AICaseStudies = [
           "The vacancy must remain unfilled until the next AGM",
           "The Registrar must appoint the replacement",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Under Section 161(4), a casual vacancy arising from the premature vacation of office by a director appointed in general meeting may be filled by the Board at a Board meeting, subject to approval by members at the immediate next general meeting.",
       },
@@ -253,7 +253,7 @@ const AICaseStudies = [
         question:
           "Based on the company's paid-up share capital and turnover, what is the minimum number of independent directors required for Orion Infrastructure Limited?",
         options: ["One", "Two", "Three", "Four"],
-        answer: 1,
+        answer: 2,
         reason:
           "An unlisted public company having paid-up share capital of ₹10 crore or more, or turnover of ₹100 crore or more, is required to have at least two independent directors.",
       },
@@ -262,7 +262,7 @@ const AICaseStudies = [
         question:
           "If Orion Infrastructure Limited were a listed public company with 13 directors, what would be the minimum number of independent directors required?",
         options: ["3", "4", "5", "6"],
-        answer: 2,
+        answer: 3,
         reason:
           "A listed public company must have at least one-third of its total number of directors as independent directors. One-third of 13 is 4.33, and any fraction is rounded off as one. Therefore, 5 independent directors are required.",
       },
@@ -276,7 +276,7 @@ const AICaseStudies = [
           "The indebtedness does not cross the ₹50 lakh threshold specified under the relevant rule",
           "The threshold applies only to indebtedness of the proposed independent director himself",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "For the relevant independence condition, a relative's indebtedness to the company, its holding, subsidiary or associate company, or their promoters/directors, exceeding ₹50 lakh during the specified period is restricted. ₹48 lakh does not cross that stated threshold.",
       },
@@ -290,7 +290,7 @@ const AICaseStudies = [
           "Employment in a subsidiary is irrelevant if the person has sufficient professional experience",
           "Only employment of a relative creates a disqualification",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 149(6) provides that neither the proposed independent director nor, subject to the stated exception, the relevant persons covered by the provision should have held employment/KMP positions in the company or its holding, subsidiary or associate company during the three financial years immediately preceding the financial year of proposed appointment.",
       },
@@ -304,7 +304,7 @@ const AICaseStudies = [
           "Three consecutive years",
           "Five consecutive years",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "A company that was required to appoint independent directors is not required to make such appointment if it ceases to fulfill any of the prescribed conditions for three consecutive years. It becomes required again if it starts meeting any such condition.",
       },
@@ -335,7 +335,7 @@ const AICaseStudies = [
           "Section 164(2)",
           "Section 171",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 164(2) provides disqualification where a company has not filed financial statements or annual returns for any continuous period of three financial years.",
       },
@@ -349,7 +349,7 @@ const AICaseStudies = [
           "The director is disqualified permanently",
           "Only the company becomes disqualified from appointing directors",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 164(2)(b) covers failure to repay deposits or interest, among other specified defaults, where the failure continues for one year or more. The director becomes ineligible for appointment or reappointment for five years from the date on which the company committed the default.",
       },
@@ -363,7 +363,7 @@ const AICaseStudies = [
           "He must vacate Delta immediately but can continue in all other companies",
           "The disqualification has no effect on his existing directorships",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Under the proviso to Section 167(1)(a), where a director incurs disqualification under Section 164(2), his office becomes vacant in all companies other than the company which is in default.",
       },
@@ -377,7 +377,7 @@ const AICaseStudies = [
           "No, because he is not eligible to be appointed as a director in another company during the prescribed period",
           "Yes, provided Zenith passes an ordinary resolution",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 164(2) makes the person ineligible for appointment as a director of another company for five years from the date of the relevant default. The fact that the proposed appointment is as an additional director does not override the disqualification.",
       },
@@ -391,7 +391,7 @@ const AICaseStudies = [
           "Only the 10 public companies are counted",
           "Only private companies are counted",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "For the 20-company limit, directorship in a dormant company is excluded. A directorship in a Section 8 company is also excluded where the applicable exemption conditions are satisfied. Thus, 10 public + 9 ordinary private = 19 counted companies.",
       },
@@ -403,6 +403,7 @@ const AICaseStudies = [
   ========================================================= */
   {
     case_id: "dir_mcq_cs1",
+    difficulty: "Medium",
     case_topic: ["Appointment of Directors", "Section 152", "DIN"],
     case_chapter: "Chapter1",
     caseText: `
@@ -508,6 +509,7 @@ const AICaseStudies = [
   ========================================================= */
   {
     case_id: "dir_mcq_cs2",
+    difficulty: "Medium",
     case_topic: [
       "Appointment of Directors",
       "Section 152",
@@ -516,8 +518,8 @@ const AICaseStudies = [
     case_chapter: "Chapter1",
     caseText: `
       <p>Orion Manufacturing Limited is a public company having 12 directors. Out of these, 2 are independent directors and 1 is a nominee director appointed pursuant to an agreement with a financial institution.</p>
-      <p>The Articles of the company do not provide that all directors shall retire at every AGM. The remaining directors have been appointed by the shareholders at different general meetings.</p>
-      <p>The Company Secretary informed the Board that independent directors and nominee directors should not be included while determining the total number of directors for the purpose of retirement by rotation.</p>
+      <p>The Articles of the company do not provide that all directors shall retire at every AGM. Nine directors are liable to retire by rotation, having been appointed by the shareholders at different general meetings.</p>
+      <p>The Company Secretary informed the Board that independent directors are excluded while determining the total number of directors for the purpose of retirement by rotation under Section 152(6).</p>
       <p>Among the rotational directors, some directors were appointed on different dates, while two directors were appointed on the same date.</p>
     `,
     questions: [
@@ -527,12 +529,9 @@ const AICaseStudies = [
         question:
           "For determining the total number of directors for retirement by rotation, how many directors will be considered?",
         options: ["12", "11", "10", "9"],
-        answer: 3,
-        reason: `
-          <p><strong>Correct Answer: 9.</strong></p>
-          <p>Independent directors and nominee directors are excluded.</p>
-          <p>12 − 2 independent directors − 1 nominee director = <strong>9 directors</strong>.</p>
-        `,
+        answer: 2,
+        reason:
+          "There are 12 directors, including 2 independent directors. Independent directors are excluded from the statutory denominator under Section 152(6). Therefore, 12 - 2 = 10 directors are considered.",
       },
       {
         question_id: "dir_mcq_cs2_2",
@@ -540,25 +539,19 @@ const AICaseStudies = [
         question:
           "What is the minimum number of directors liable to retirement by rotation?",
         options: ["5", "6", "7", "9"],
-        answer: 1,
-        reason: `
-          <p><strong>Correct Answer: 6.</strong></p>
-          <p>Two-thirds of 9 = 6.</p>
-          <p>Therefore, 6 directors shall be liable to retire by rotation.</p>
-        `,
+        answer: 2,
+        reason:
+          "The statutory denominator is 10 after excluding the 2 independent directors. Two-thirds of 10 is 6.67, so at least 7 directors must have offices liable to retirement by rotation.",
       },
       {
         question_id: "dir_mcq_cs2_3",
         chapter_name: ["Section 152"],
         question:
-          "How many of the rotational directors will actually retire at the AGM?",
+          "Assuming that nine directors are liable to retire by rotation, how many will ordinarily retire at the AGM?",
         options: ["1", "2", "3", "6"],
-        answer: 1,
-        reason: `
-          <p><strong>Correct Answer: 2.</strong></p>
-          <p>One-third of the 6 directors liable to retire by rotation
-          = 2 directors.</p>
-        `,
+        answer: 2,
+        reason:
+          "One-third of the nine directors liable to retire by rotation is 3. Therefore, three directors will ordinarily retire at the AGM.",
       },
       {
         question_id: "dir_mcq_cs2_4",
@@ -599,11 +592,12 @@ const AICaseStudies = [
     ],
   },
   /* =========================================================
-     CASE SCENARIO 3
-     DEEMED RE-APPOINTMENT
+    CASE SCENARIO 3
+    DEEMED RE-APPOINTMENT
   ========================================================= */
   {
     case_id: "dir_mcq_cs3",
+    difficulty: "Medium",
     case_topic: [
       "Section 152",
       "Retirement of Directors",
@@ -713,11 +707,12 @@ const AICaseStudies = [
     ],
   },
   /* =========================================================
-     CASE SCENARIO 4
-     DIN ALLOTMENT AND DUPLICATE DIN
+    CASE SCENARIO 4
+    DIN ALLOTMENT AND DUPLICATE DIN
   ========================================================= */
   {
     case_id: "dir_mcq_cs4",
+    difficulty: "Medium",
     case_topic: ["DIN", "Sections 153 to 159"],
     case_chapter: "Chapter1",
     caseText: `
@@ -810,6 +805,7 @@ const AICaseStudies = [
   ========================================================= */
   {
     case_id: "dir_mcq_cs5",
+    difficulty: "Medium",
     case_topic: ["DIN", "Sections 156 to 159"],
     case_chapter: "Chapter1",
     caseText: `
@@ -897,6 +893,7 @@ const AICaseStudies = [
   ========================================================= */
   {
     case_id: "dir_mcq_cs6",
+    difficulty: "Medium",
     case_topic: ["Section 160", "Appointment of Directors"],
     case_chapter: "Chapter1",
     caseText: `
@@ -994,6 +991,7 @@ const AICaseStudies = [
   ========================================================= */
   {
     case_id: "dir_mcq_cs7",
+    difficulty: "Medium",
     case_topic: ["Section 151", "Small Shareholders' Director"],
     case_chapter: "Chapter1",
     caseText: `
@@ -1028,14 +1026,8 @@ const AICaseStudies = [
           "Where there are 8,000 small shareholders, what is the lower threshold based on the number of shareholders?",
         options: ["800", "1,000", "1,500", "2,000"],
         answer: 0,
-        reason: `
-          <p><strong>Correct Answer: 1,000.</strong></p>
-          <p>The prescribed threshold is 1,000 small shareholders or
-          one-tenth of the total number of such shareholders, whichever is lower.</p>
-
-          <p>One-tenth of 8,000 = 800.</p>
-          <p>Therefore, the lower threshold is actually <strong>800</strong>.</p>
-        `,
+        reason:
+          "Under Rule 7 of the Companies (Appointment and Qualification of Directors) Rules, 2014, the threshold is 1,000 small shareholders or one-tenth of the total number, whichever is lower. One-tenth of 8,000 is 800. The lower threshold is therefore 800.",
       },
       {
         question_id: "dir_mcq_cs7_3",
@@ -1095,6 +1087,7 @@ const AICaseStudies = [
   ========================================================= */
   {
     case_id: "dir_mcq_cs8",
+    difficulty: "Medium",
     case_topic: ["Section 161", "Additional Director", "Alternate Director"],
     case_chapter: "Chapter1",
     caseText: `
@@ -1202,6 +1195,7 @@ const AICaseStudies = [
   ========================================================= */
   {
     case_id: "dir_mcq_cs9",
+    difficulty: "Medium",
     case_topic: ["Section 161", "Nominee Director", "Casual Vacancy"],
     case_chapter: "Chapter1",
     caseText: `
@@ -1310,6 +1304,7 @@ const AICaseStudies = [
   ========================================================= */
   {
     case_id: "dir_mcq_cs10",
+    difficulty: "Medium",
     case_topic: ["Section 162", "Appointment of Directors"],
     case_chapter: "Chapter1",
     caseText: `
@@ -1416,11 +1411,11 @@ const AICaseStudies = [
     ],
   },
   /* =========================================================
-     CASE SCENARIO 1 - SECTION 163
-     PROPORTIONAL REPRESENTATION
+    CASE SCENARIO 1 - SECTION 163
+    PROPORTIONAL REPRESENTATION
   ========================================================= */
   {
-    case_id: "seta_AI_cs_001",
+    case_id: "seta_AI_cs_001_zenith",
     difficulty: "Easy",
     case_chapter: "Chapter1",
     caseText: `
@@ -1505,7 +1500,7 @@ const AICaseStudies = [
      DISQUALIFICATION OF DIRECTORS
   ========================================================= */
   {
-    case_id: "seta_AI_cs_002",
+    case_id: "seta_AI_cs_002_prime",
     difficulty: "Medium",
     case_chapter: "Chapter1",
     caseText: `
@@ -1592,7 +1587,7 @@ const AICaseStudies = [
      MAXIMUM NUMBER OF DIRECTORSHIPS
   ========================================================= */
   {
-    case_id: "seta_AI_cs_003",
+    case_id: "seta_AI_cs_003_karan",
     difficulty: "Medium",
     case_chapter: "Chapter1",
     caseText: `
@@ -1675,7 +1670,7 @@ const AICaseStudies = [
      SECTIONS 149 AND 150
   ========================================================= */
   {
-    case_id: "seta_AI_cs_004",
+    case_id: "seta_AI_cs_004_galaxy",
     difficulty: "Hard",
     case_chapter: "Chapter1",
     caseText: `
@@ -1758,7 +1753,7 @@ const AICaseStudies = [
      DUTIES AND VACATION OF OFFICE
   ========================================================= */
   {
-    case_id: "seta_AI_cs_005",
+    case_id: "seta_AI_cs_005_nova",
     difficulty: "Hard",
     case_chapter: "Chapter1",
     caseText: `
@@ -1821,7 +1816,7 @@ const AICaseStudies = [
           "Only in companies having independent directors",
           "Only in private companies",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Where a director incurs disqualification under Section 164(2), the office becomes vacant in all companies other than the company which is in default under that sub-section.",
       },
@@ -2243,7 +2238,7 @@ const AICaseStudies = [
         question:
           "Mr. Varun knowingly continues to act as a director after his office has become vacant under Section 167(1). What is the maximum fine prescribed under Section 167(2)?",
         options: ["₹50,000", "₹1,00,000", "₹5,00,000", "₹10,00,000"],
-        answer: 1,
+        answer: 2,
         reason:
           "A person who functions as a director knowing that his office has become vacant under Section 167(1) is punishable with fine of not less than ₹1,00,000, which may extend to ₹5,00,000.",
       },
@@ -2479,7 +2474,7 @@ const AICaseStudies = [
           "Only the Registrar can remove the director",
           "Only the auditor can recommend removal",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Under Section 242, the Tribunal may remove a director where an application has been made under Section 241 for prevention of oppression and mismanagement.",
       },
@@ -6185,7 +6180,7 @@ const AICaseStudies = [
    TOPIC: MANAGING DIRECTOR VS MANAGER - SECTIONS 2(53), 2(54), 196
 ========================================================= */
   {
-    case_id: "CEL_CH2_MEDIUM_CS41",
+    case_id: "CEL_CH2_MEDIUM_CS41_B",
     difficulty: "Medium",
     case_chapter: "Chapter2",
     case_topic: [
@@ -6202,7 +6197,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_CH2_MEDIUM_CS41_Q01",
+        question_id: "CEL_CH2_MEDIUM_CS41_B_Q01",
         difficulty: "Medium",
         question: "A 'manager' under Section 2(53) must have management of:",
         options: [
@@ -6216,7 +6211,7 @@ const AICaseStudies = [
           "The correct answer is The whole or substantially the whole of the affairs of the company. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS41_Q02",
+        question_id: "CEL_CH2_MEDIUM_CS41_B_Q02",
         difficulty: "Medium",
         question:
           "Mr. Raghav, who is proposed to manage only manufacturing and logistics, would:",
@@ -6231,7 +6226,7 @@ const AICaseStudies = [
           "The correct answer is Not be a manager under Section 2(53) merely because his designation contains the word 'Manager'. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS41_Q03",
+        question_id: "CEL_CH2_MEDIUM_CS41_B_Q03",
         difficulty: "Medium",
         question:
           "Can Royal Consumer Products Limited simultaneously have Mr. Karan as MD and Mr. Raghav as departmental Manager – Operations in the circumstances given?",
@@ -6246,7 +6241,7 @@ const AICaseStudies = [
           "The correct answer is Yes, because Mr. Raghav does not manage the whole or substantially the whole of the company's affairs. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS41_Q04",
+        question_id: "CEL_CH2_MEDIUM_CS41_B_Q04",
         difficulty: "Medium",
         question:
           "If instead Mr. Raghav were entrusted with management of substantially the whole of the company's affairs, while Mr. Karan continued as MD, the arrangement would:",
@@ -6261,7 +6256,7 @@ const AICaseStudies = [
           "The correct answer is Contravene Section 196(1). This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS41_Q05",
+        question_id: "CEL_CH2_MEDIUM_CS41_B_Q05",
         difficulty: "Medium",
         question: "Which combination is permissible under Section 196(1)?",
         options: [
@@ -6282,7 +6277,7 @@ const AICaseStudies = [
    TOPIC: SITTING FEES - SECTION 197(5)
 ========================================================= */
   {
-    case_id: "CEL_CH2_MEDIUM_CS42",
+    case_id: "CEL_CH2_MEDIUM_CS42_B",
     difficulty: "Medium",
     case_chapter: "Chapter2",
     case_topic: [
@@ -6299,7 +6294,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_CH2_MEDIUM_CS42_Q01",
+        question_id: "CEL_CH2_MEDIUM_CS42_B_Q01",
         difficulty: "Medium",
         question:
           "The maximum sitting fee that may be paid to a director for each meeting of the Board or committee thereof is:",
@@ -6309,7 +6304,7 @@ const AICaseStudies = [
           "The correct answer is ₹1,00,000. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS42_Q02",
+        question_id: "CEL_CH2_MEDIUM_CS42_B_Q02",
         difficulty: "Medium",
         question:
           "The proposed sitting fee of ₹90,000 per meeting for ordinary non-executive directors is:",
@@ -6324,7 +6319,7 @@ const AICaseStudies = [
           "The correct answer is Within the prescribed ceiling. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS42_Q03",
+        question_id: "CEL_CH2_MEDIUM_CS42_B_Q03",
         difficulty: "Medium",
         question:
           "Can independent directors be paid ₹75,000 when other directors are paid ₹90,000 per meeting?",
@@ -6339,7 +6334,7 @@ const AICaseStudies = [
           "The correct answer is No, because sitting fees payable to independent directors cannot be less than those payable to other directors. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS42_Q04",
+        question_id: "CEL_CH2_MEDIUM_CS42_B_Q04",
         difficulty: "Medium",
         question:
           "Can Ms. Kavya, the Woman Director, be paid ₹70,000 when other directors receive ₹90,000 per meeting?",
@@ -6354,7 +6349,7 @@ const AICaseStudies = [
           "The correct answer is No, because sitting fees payable to Women Directors shall not be less than those payable to other directors. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS42_Q05",
+        question_id: "CEL_CH2_MEDIUM_CS42_B_Q05",
         difficulty: "Medium",
         question:
           "For the purpose of the percentage ceilings under Section 197(1), sitting fees payable under Section 197(5) are:",
@@ -6376,7 +6371,7 @@ const AICaseStudies = [
    TOPIC: PROFESSIONAL REMUNERATION TO DIRECTOR - SECTION 197(4)
 ========================================================= */
   {
-    case_id: "CEL_CH2_MEDIUM_CS43",
+    case_id: "CEL_CH2_MEDIUM_CS43_B",
     difficulty: "Medium",
     case_chapter: "Chapter2",
     case_topic: [
@@ -6392,7 +6387,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_CH2_MEDIUM_CS43_Q01",
+        question_id: "CEL_CH2_MEDIUM_CS43_B_Q01",
         difficulty: "Medium",
         question:
           "As a general rule, remuneration payable to a director for services rendered in another capacity is:",
@@ -6407,7 +6402,7 @@ const AICaseStudies = [
           "The correct answer is Included in the remuneration payable to him as director. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS43_Q02",
+        question_id: "CEL_CH2_MEDIUM_CS43_B_Q02",
         difficulty: "Medium",
         question:
           "Professional fees paid to Dr. Aryan may be excluded from managerial remuneration if:",
@@ -6422,7 +6417,7 @@ const AICaseStudies = [
           "The correct answer is The services are professional in nature and he possesses the requisite qualification. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS43_Q03",
+        question_id: "CEL_CH2_MEDIUM_CS43_B_Q03",
         difficulty: "Medium",
         question:
           "Since Medistar Hospitals Limited is covered under Section 178(1), who should form the opinion regarding Dr. Aryan's requisite professional qualification?",
@@ -6437,7 +6432,7 @@ const AICaseStudies = [
           "The correct answer is Nomination and Remuneration Committee. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS43_Q04",
+        question_id: "CEL_CH2_MEDIUM_CS43_B_Q04",
         difficulty: "Medium",
         question:
           "If the professional-services exception is satisfied, the ₹3 lakh fee per surgery:",
@@ -6452,7 +6447,7 @@ const AICaseStudies = [
           "The correct answer is Need not be included in managerial remuneration. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS43_Q05",
+        question_id: "CEL_CH2_MEDIUM_CS43_B_Q05",
         difficulty: "Medium",
         question:
           "If the company were not covered under Section 178(1), the opinion regarding requisite professional qualification would be formed by:",
@@ -6474,7 +6469,7 @@ const AICaseStudies = [
    TOPIC: D&O INSURANCE PREMIUM - SECTION 197(13)
 ========================================================= */
   {
-    case_id: "CEL_CH2_MEDIUM_CS44",
+    case_id: "CEL_CH2_MEDIUM_CS44_B",
     difficulty: "Medium",
     case_chapter: "Chapter2",
     case_topic: [
@@ -6490,7 +6485,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_CH2_MEDIUM_CS44_Q01",
+        question_id: "CEL_CH2_MEDIUM_CS44_B_Q01",
         difficulty: "Medium",
         question:
           "When insurance is initially taken for indemnifying managerial personnel and they have not been proved guilty, the premium paid is:",
@@ -6505,7 +6500,7 @@ const AICaseStudies = [
           "The correct answer is Not treated as part of remuneration. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS44_Q02",
+        question_id: "CEL_CH2_MEDIUM_CS44_B_Q02",
         difficulty: "Medium",
         question:
           "Section 197(13) specifically covers insurance taken on behalf of persons including:",
@@ -6520,7 +6515,7 @@ const AICaseStudies = [
           "The correct answer is MD, WTD, Manager, CEO, CFO or CS. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS44_Q03",
+        question_id: "CEL_CH2_MEDIUM_CS44_B_Q03",
         difficulty: "Medium",
         question:
           "After the CFO is proved guilty of breach of duty, the premium paid on such insurance in relation to him shall be:",
@@ -6535,7 +6530,7 @@ const AICaseStudies = [
           "The correct answer is Treated as part of his remuneration. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS44_Q04",
+        question_id: "CEL_CH2_MEDIUM_CS44_B_Q04",
         difficulty: "Medium",
         question:
           "Which of the following liabilities is contemplated by Section 197(13)?",
@@ -6550,7 +6545,7 @@ const AICaseStudies = [
           "The correct answer is All of the above. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS44_Q05",
+        question_id: "CEL_CH2_MEDIUM_CS44_B_Q05",
         difficulty: "Medium",
         question:
           "The decisive event which changes the treatment of the insurance premium into remuneration is:",
@@ -6572,7 +6567,7 @@ const AICaseStudies = [
    TOPIC: RECOVERY OF REMUNERATION - SECTION 199
 ========================================================= */
   {
-    case_id: "CEL_CH2_MEDIUM_CS45",
+    case_id: "CEL_CH2_MEDIUM_CS45_B",
     difficulty: "Medium",
     case_chapter: "Chapter2",
     case_topic: [
@@ -6588,7 +6583,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_CH2_MEDIUM_CS45_Q01",
+        question_id: "CEL_CH2_MEDIUM_CS45_B_Q01",
         difficulty: "Medium",
         question:
           "Section 199 may apply where financial statements are required to be restated because of:",
@@ -6603,7 +6598,7 @@ const AICaseStudies = [
           "The correct answer is Fraud or non-compliance with requirements under the Act and Rules. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS45_Q02",
+        question_id: "CEL_CH2_MEDIUM_CS45_B_Q02",
         difficulty: "Medium",
         question:
           "Can recovery under Section 199 be made from a past Managing Director?",
@@ -6618,7 +6613,7 @@ const AICaseStudies = [
           "The correct answer is Yes, past as well as present specified managerial personnel may be covered. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS45_Q03",
+        question_id: "CEL_CH2_MEDIUM_CS45_B_Q03",
         difficulty: "Medium",
         question:
           "Based on the figures given, the excess remuneration recoverable from Mr. Vishal is:",
@@ -6628,7 +6623,7 @@ const AICaseStudies = [
           "The correct answer is ₹12 lakh. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS45_Q04",
+        question_id: "CEL_CH2_MEDIUM_CS45_B_Q04",
         difficulty: "Medium",
         question: "The amount recoverable under Section 199 is essentially:",
         options: [
@@ -6642,7 +6637,7 @@ const AICaseStudies = [
           "The correct answer is The difference between remuneration actually received and remuneration payable based on the restated financial statements. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "CEL_CH2_MEDIUM_CS45_Q05",
+        question_id: "CEL_CH2_MEDIUM_CS45_B_Q05",
         difficulty: "Medium",
         question: "Recovery of excess remuneration under Section 199:",
         options: [
@@ -7847,7 +7842,7 @@ const AICaseStudies = [
                 of reserves and surplus should be considered from the given data?
             `,
         options: ["₹120 lakh", "₹90 lakh", "₹30 lakh", "Nil"],
-        answer: 0,
+        answer: 1,
         reason: `
                 Revaluation reserve is specifically excluded from reserves and
                 surplus for the purpose of effective capital. Therefore:
@@ -8336,7 +8331,7 @@ const AICaseStudies = [
         question:
           "What is the normal minimum notice period for a Board Meeting?",
         options: ["3 days", "5 days", "7 days", "15 days"],
-        answer: 0,
+        answer: 2,
         reason:
           "Section 173(3) generally requires at least seven days' notice in writing to every director.",
       },
@@ -9222,7 +9217,7 @@ const AICaseStudies = [
           "Only if its turnover exceeds ₹100 crore",
           "Only if it has more than 2,000 shareholders",
         ],
-        answer: 3,
+        answer: 1,
         reason:
           "The company has more than 1,000 specified security holders during the financial year.",
       },
@@ -10012,7 +10007,7 @@ const AICaseStudies = [
           "Only if the director is independent",
           "Only if the contract is below ₹1 crore",
         ],
-        answer: 3,
+        answer: 1,
         reason:
           "General disclosure under Section 184(1) does not replace the specific disclosure required under Section 184(2) for a particular contract or arrangement.",
       },
@@ -10445,16 +10440,16 @@ const AICaseStudies = [
       {
         question_id: "CEL_CH3_T_CS10_Q02",
         question:
-          "Does the proposed Audit Committee satisfy the minimum requirement regarding independent directors?",
+          "Apex proposes a four-member Audit Committee with two independent directors. Does this composition meet Section 177's requirement that independent directors form a majority?",
         options: [
           "No, because all members must be independent",
           "Yes, because independent directors form a majority",
-          "No, because at least three independent directors are mandatory",
+          "No, because two independent directors out of four constitute exactly half, not a majority",
           "Yes, only because it has four members",
         ],
-        answer: 1,
+        answer: 2,
         reason:
-          "The Audit Committee must have at least three directors with independent directors forming a majority. Two independent directors out of four do not technically constitute a majority, so the correct conclusion is that the proposed composition does NOT satisfy the requirement.",
+          "Section 177 requires an Audit Committee consisting of at least three directors, with independent directors forming a majority. Two out of four is exactly half, not a majority. At least three of four members would need to be independent.",
       },
       {
         question_id: "CEL_CH3_T_CS10_Q03",
@@ -11148,7 +11143,7 @@ const AICaseStudies = [
           "Only when the company is listed",
           "Only when complaints exceed 1,000",
         ],
-        answer: 3,
+        answer: 1,
         reason:
           "Where the company has more than 1,000 shareholders, debenture-holders, deposit-holders and other security holders at any time during a financial year, the Board shall constitute a Stakeholders Relationship Committee.",
       },
@@ -13105,7 +13100,7 @@ const AICaseStudies = [
    SECTION 186 — LIMIT + WOS + PFI + BOARD APPROVAL
 ========================================================= */
   {
-    case_id: "CEL_HARD_186_01",
+    case_id: "CEL_HARD_186_01_B",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["Section 186", "Loans and Investments"],
@@ -13116,7 +13111,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_HARD_186_01_1",
+        question_id: "CEL_HARD_186_01_B_1",
         question:
           "What is the monetary limit applicable to Trident Engineering Limited under Section 186(2)?",
         options: ["₹20 crore", "₹30 crore", "₹24 crore", "₹50 crore"],
@@ -13127,7 +13122,7 @@ const AICaseStudies = [
           "60% of paid-up share capital + free reserves + securities premium = 60% of ₹50 crore = ₹30 crore. 100% of free reserves + securities premium = ₹20 crore. The higher amount, ₹30 crore, is the Section 186(2) limit.",
       },
       {
-        question_id: "CEL_HARD_186_01_2",
+        question_id: "CEL_HARD_186_01_B_2",
         question:
           "Before the new proposals, how much of the Section 186(2) limit has already been utilised?",
         options: ["₹16 crore", "₹20 crore", "₹24 crore", "₹30 crore"],
@@ -13138,7 +13133,7 @@ const AICaseStudies = [
           "Existing investments of ₹16 crore plus guarantees of ₹8 crore aggregate to ₹24 crore.",
       },
       {
-        question_id: "CEL_HARD_186_01_3",
+        question_id: "CEL_HARD_186_01_B_3",
         question:
           "Which statement regarding the proposed ₹10 crore loan to the wholly owned subsidiary is most appropriate?",
         options: [
@@ -13154,7 +13149,7 @@ const AICaseStudies = [
           "The first proviso to Section 186(3) provides exemption from the special resolution requirement where a loan or guarantee is given or security provided to a wholly owned subsidiary or joint venture. Applicable Board and disclosure requirements continue.",
       },
       {
-        question_id: "CEL_HARD_186_01_4",
+        question_id: "CEL_HARD_186_01_B_4",
         question:
           "Is the vote of five out of six directors present sufficient to sanction the transactions under Section 186(5)?",
         options: [
@@ -13170,7 +13165,7 @@ const AICaseStudies = [
           "Section 186(5) requires the resolution sanctioning the transaction to be passed at a Board meeting with the consent of all directors present. One director voting against means the statutory requirement is not satisfied.",
       },
       {
-        question_id: "CEL_HARD_186_01_5",
+        question_id: "CEL_HARD_186_01_B_5",
         question:
           "Which circumstance would permit Trident to dispense with prior approval of the public financial institution under the proviso to Section 186(5)?",
         options: [
@@ -13192,7 +13187,7 @@ const AICaseStudies = [
    SECTION 186 — INVESTMENT LAYERS + FOREIGN COMPANY
 ========================================================= */
   {
-    case_id: "CEL_HARD_186_02",
+    case_id: "CEL_HARD_186_02_B",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["Section 186", "Investment Layers"],
@@ -13203,7 +13198,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_HARD_186_02_1",
+        question_id: "CEL_HARD_186_02_B_1",
         question:
           "Under the general rule contained in Section 186(1), Orion may make investments through a maximum of:",
         options: [
@@ -13219,7 +13214,7 @@ const AICaseStudies = [
           "Section 186(1) generally prohibits investment through more than two layers of investment companies.",
       },
       {
-        question_id: "CEL_HARD_186_02_2",
+        question_id: "CEL_HARD_186_02_B_2",
         question:
           "On the stated facts, A, B and C can fall within the meaning of 'investment company' because:",
         options: [
@@ -13235,7 +13230,7 @@ const AICaseStudies = [
           "A company is deemed principally engaged in acquisition of securities where investments constitute not less than 50% of total assets or investment income constitutes not less than 50% of gross income.",
       },
       {
-        question_id: "CEL_HARD_186_02_3",
+        question_id: "CEL_HARD_186_02_B_3",
         question:
           "Can Orion acquire the foreign company merely because it already has investment subsidiaries beyond two layers?",
         options: [
@@ -13251,7 +13246,7 @@ const AICaseStudies = [
           "Section 186(1) contains an exception permitting acquisition of a company incorporated outside India having investment subsidiaries beyond two layers as permitted under the law of that country.",
       },
       {
-        question_id: "CEL_HARD_186_02_4",
+        question_id: "CEL_HARD_186_02_B_4",
         question:
           "What is the position regarding Orion's Indian subsidiary establishing an investment subsidiary to comply with a sector-specific law?",
         options: [
@@ -13267,7 +13262,7 @@ const AICaseStudies = [
           "The two-layer restriction does not prevent a subsidiary from having an investment subsidiary for meeting requirements under any law, rule or regulation.",
       },
       {
-        question_id: "CEL_HARD_186_02_5",
+        question_id: "CEL_HARD_186_02_B_5",
         question:
           "Which is the most accurate conclusion regarding Orion → A → B → C under the ordinary rule, assuming no exception applies?",
         options: [
@@ -13289,7 +13284,7 @@ const AICaseStudies = [
    SECTION 186 — DEFAULT + INTEREST + REGISTER
 ========================================================= */
   {
-    case_id: "CEL_HARD_186_03",
+    case_id: "CEL_HARD_186_03_B",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["Section 186", "Interest", "Default", "Register"],
@@ -13300,7 +13295,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_HARD_186_03_1",
+        question_id: "CEL_HARD_186_03_B_1",
         question:
           "While the deposit default continues, can Apex grant the proposed loan?",
         options: [
@@ -13316,7 +13311,7 @@ const AICaseStudies = [
           "A company in default in repayment of deposits or payment of interest thereon cannot give any loan, guarantee, security or make an acquisition while the default subsists.",
       },
       {
-        question_id: "CEL_HARD_186_03_2",
+        question_id: "CEL_HARD_186_03_B_2",
         question:
           "Would obtaining a special resolution by itself cure the restriction arising from the continuing deposit default?",
         options: [
@@ -13332,7 +13327,7 @@ const AICaseStudies = [
           "Section 186(8) imposes an independent restriction during the subsistence of deposit default. A special resolution does not override it.",
       },
       {
-        question_id: "CEL_HARD_186_03_3",
+        question_id: "CEL_HARD_186_03_B_3",
         question:
           "For purposes of Section 186(7), the minimum interest rate should be linked to:",
         options: [
@@ -13348,7 +13343,7 @@ const AICaseStudies = [
           "Section 186(7) uses the prevailing yield of the 1-year, 3-year, 5-year or 10-year Government Security closest to the tenor of the loan.",
       },
       {
-        question_id: "CEL_HARD_186_03_4",
+        question_id: "CEL_HARD_186_03_B_4",
         question: "The register required under Section 186 is maintained in:",
         options: ["MBP-1", "MBP-2", "MBP-3", "MBP-4"],
         answer: 1,
@@ -13358,7 +13353,7 @@ const AICaseStudies = [
           "Rule 12 requires the register of loans, guarantees, securities and acquisitions under Section 186 to be maintained in Form MBP-2.",
       },
       {
-        question_id: "CEL_HARD_186_03_5",
+        question_id: "CEL_HARD_186_03_B_5",
         question:
           "Was entering the transaction in MBP-2 nine days after the investment compliant with the prescribed timeline?",
         options: [
@@ -13380,7 +13375,7 @@ const AICaseStudies = [
    SECTION 187 — OWN NAME + BANKER + DEPOSITORY
 ========================================================= */
   {
-    case_id: "CEL_HARD_187_04",
+    case_id: "CEL_HARD_187_04_B",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["Section 187", "Investment in Own Name"],
@@ -13391,7 +13386,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_HARD_187_04_1",
+        question_id: "CEL_HARD_187_04_B_1",
         question:
           "Which of the following holdings is clearly permitted as an exception under Section 187?",
         options: [
@@ -13407,7 +13402,7 @@ const AICaseStudies = [
           "Section 187(2) specifically permits shares or securities to be deposited with bankers for collection of dividend or interest.",
       },
       {
-        question_id: "CEL_HARD_187_04_2",
+        question_id: "CEL_HARD_187_04_B_2",
         question:
           "What should Mercury generally do with the securities remaining in the bank's name after seven months without any transfer taking place?",
         options: [
@@ -13423,7 +13418,7 @@ const AICaseStudies = [
           "Where securities are placed in the banker's name to facilitate transfer and no transfer occurs within six months, they should as soon as practicable be re-transferred to the company or again held in its own name.",
       },
       {
-        question_id: "CEL_HARD_187_04_3",
+        question_id: "CEL_HARD_187_04_B_3",
         question:
           "Holding dematerialised securities in the name of a depository while Mercury remains beneficial owner is:",
         options: [
@@ -13439,7 +13434,7 @@ const AICaseStudies = [
           "Section 187(2)(d) permits investments in the name of a depository where the securities are held by the company as beneficial owner.",
       },
       {
-        question_id: "CEL_HARD_187_04_4",
+        question_id: "CEL_HARD_187_04_B_4",
         question:
           "The register for investments beneficially held by the company but not held in its own name is:",
         options: ["MBP-1", "MBP-2", "MBP-3", "MBP-4"],
@@ -13449,7 +13444,7 @@ const AICaseStudies = [
         explanation: "Rule 14 requires maintenance of Form MBP-3.",
       },
       {
-        question_id: "CEL_HARD_187_04_5",
+        question_id: "CEL_HARD_187_04_B_5",
         question:
           "What is the position regarding shares of the subsidiary held through nominees solely to maintain the statutory minimum number of members?",
         options: [
@@ -13471,7 +13466,7 @@ const AICaseStudies = [
    SECTION 188 — RELATED PARTY + ARM'S LENGTH + THRESHOLDS
 ========================================================= */
   {
-    case_id: "CEL_HARD_188_05",
+    case_id: "CEL_HARD_188_05_B",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["Section 188", "Related Party Transactions"],
@@ -13482,7 +13477,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_HARD_188_05_1",
+        question_id: "CEL_HARD_188_05_B_1",
         question:
           "Prime Distribution Private Limited is a related party because:",
         options: [
@@ -13498,7 +13493,7 @@ const AICaseStudies = [
           "Section 2(76) covers a private company in which a director or manager or his relative is a member or director.",
       },
       {
-        question_id: "CEL_HARD_188_05_2",
+        question_id: "CEL_HARD_188_05_B_2",
         question:
           "Does the fact that purchase of goods is in the ordinary course of business by itself take the transaction outside Section 188(1)?",
         options: [
@@ -13514,7 +13509,7 @@ const AICaseStudies = [
           "The exemption applies where the transaction is both in the ordinary course of business and on an arm's length basis.",
       },
       {
-        question_id: "CEL_HARD_188_05_3",
+        question_id: "CEL_HARD_188_05_B_3",
         question:
           "What is 10% of Vertex's turnover for purposes of the goods transaction threshold?",
         options: ["₹12 crore", "₹20 crore", "₹30 crore", "₹32 crore"],
@@ -13524,7 +13519,7 @@ const AICaseStudies = [
         explanation: "10% of ₹300 crore is ₹30 crore.",
       },
       {
-        question_id: "CEL_HARD_188_05_4",
+        question_id: "CEL_HARD_188_05_B_4",
         question:
           "The ₹32 crore purchase transaction, being not at arm's length, would:",
         options: [
@@ -13540,7 +13535,7 @@ const AICaseStudies = [
           "₹32 crore exceeds 10% of ₹300 crore, i.e. ₹30 crore. The prescribed shareholder approval is an ordinary resolution.",
       },
       {
-        question_id: "CEL_HARD_188_05_5",
+        question_id: "CEL_HARD_188_05_B_5",
         question:
           "What is the correct position regarding the ₹20 crore lease transaction?",
         options: [
@@ -13562,7 +13557,7 @@ const AICaseStudies = [
    SECTION 188 — OFFICE OF PROFIT + UNDERWRITING + VOTING
 ========================================================= */
   {
-    case_id: "CEL_HARD_188_06",
+    case_id: "CEL_HARD_188_06_B",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: [
@@ -13577,7 +13572,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_HARD_188_06_1",
+        question_id: "CEL_HARD_188_06_B_1",
         question:
           "The appointment of the director's son at ₹3,20,000 per month:",
         options: [
@@ -13593,7 +13588,7 @@ const AICaseStudies = [
           "Appointment to an office or place of profit at monthly remuneration exceeding ₹2.5 lakh attracts the prescribed shareholder approval requirement.",
       },
       {
-        question_id: "CEL_HARD_188_06_2",
+        question_id: "CEL_HARD_188_06_B_2",
         question:
           "What is 1% of Emerald's net worth for purposes of underwriting remuneration?",
         options: ["₹1 crore", "₹1.5 crore", "₹1.8 crore", "₹15 crore"],
@@ -13603,7 +13598,7 @@ const AICaseStudies = [
         explanation: "1% of ₹150 crore is ₹1.5 crore.",
       },
       {
-        question_id: "CEL_HARD_188_06_3",
+        question_id: "CEL_HARD_188_06_B_3",
         question: "The proposed underwriting remuneration of ₹1.8 crore:",
         options: [
           "Does not cross the threshold",
@@ -13618,7 +13613,7 @@ const AICaseStudies = [
           "₹1.8 crore exceeds 1% of net worth, which is ₹1.5 crore. Underwriting subscription of securities or derivatives is expressly covered by Section 188.",
       },
       {
-        question_id: "CEL_HARD_188_06_4",
+        question_id: "CEL_HARD_188_06_B_4",
         question:
           "What type of shareholder resolution is prescribed for the transactions crossing the Rule 15(3) limits?",
         options: [
@@ -13634,7 +13629,7 @@ const AICaseStudies = [
           "The prescribed shareholder approval under the first proviso to Section 188(1) read with Rule 15(3) is an ordinary resolution.",
       },
       {
-        question_id: "CEL_HARD_188_06_5",
+        question_id: "CEL_HARD_188_06_B_5",
         question:
           "Can the shareholder who is a related party in the context of the first transaction vote on the resolution approving that transaction?",
         options: [
@@ -13656,7 +13651,7 @@ const AICaseStudies = [
    SECTION 188 — UNAUTHORISED RPT + RATIFICATION
 ========================================================= */
   {
-    case_id: "CEL_HARD_188_07",
+    case_id: "CEL_HARD_188_07_B",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["Section 188", "Ratification", "Voidable Transaction"],
@@ -13667,7 +13662,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_HARD_188_07_1",
+        question_id: "CEL_HARD_188_07_B_1",
         question:
           "Under Section 188(3), an unauthorised related party contract should generally be ratified within:",
         options: [
@@ -13683,7 +13678,7 @@ const AICaseStudies = [
           "Section 188(3) provides a three-month period for ratification by the Board or shareholders, as the case may be.",
       },
       {
-        question_id: "CEL_HARD_188_07_2",
+        question_id: "CEL_HARD_188_07_B_2",
         question:
           "On the facts given, was the approval obtained on 15 August within three months of the contract entered on 1 April?",
         options: [
@@ -13699,7 +13694,7 @@ const AICaseStudies = [
           "Three months from 1 April expires before 15 August. Merely beginning consideration within the period does not amount to ratification.",
       },
       {
-        question_id: "CEL_HARD_188_07_3",
+        question_id: "CEL_HARD_188_07_B_3",
         question:
           "Where the required ratification is not obtained within the statutory period, the contract is:",
         options: [
@@ -13715,7 +13710,7 @@ const AICaseStudies = [
           "Section 188(3) makes such a contract or arrangement voidable at the option of the Board or shareholders, as the case may be.",
       },
       {
-        question_id: "CEL_HARD_188_07_4",
+        question_id: "CEL_HARD_188_07_B_4",
         question:
           "Since the contract is with a related party to the director who authorised it, what additional consequence may arise?",
         options: [
@@ -13731,7 +13726,7 @@ const AICaseStudies = [
           "Where the contract is with a related party to any director or is authorised by any other director, the directors concerned shall indemnify the company against loss incurred.",
       },
       {
-        question_id: "CEL_HARD_188_07_5",
+        question_id: "CEL_HARD_188_07_B_5",
         question:
           "Can Pioneer independently proceed against the director or employee responsible for the contravention to recover loss?",
         options: [
@@ -13753,7 +13748,7 @@ const AICaseStudies = [
    SECTION 189 — REGISTER + DISCLOSURE + AGM
 ========================================================= */
   {
-    case_id: "CEL_HARD_189_08",
+    case_id: "CEL_HARD_189_08_B",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["Section 189", "Register of Contracts"],
@@ -13764,7 +13759,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_HARD_189_08_1",
+        question_id: "CEL_HARD_189_08_B_1",
         question:
           "Did Mr. K comply with the time limit for disclosure after his appointment?",
         options: [
@@ -13780,7 +13775,7 @@ const AICaseStudies = [
           "Section 189(2) requires every director or KMP to make the specified disclosure within 30 days of appointment or relinquishment of office.",
       },
       {
-        question_id: "CEL_HARD_189_08_2",
+        question_id: "CEL_HARD_189_08_B_2",
         question:
           "What is the correct position regarding the ₹4.80 lakh service contract for purposes of Section 189(1)?",
         options: [
@@ -13796,7 +13791,7 @@ const AICaseStudies = [
           "Section 189(5) excludes specified contracts for goods, materials or services where the relevant value/cost does not exceed ₹5 lakh in aggregate in any year.",
       },
       {
-        question_id: "CEL_HARD_189_08_3",
+        question_id: "CEL_HARD_189_08_B_3",
         question:
           "Is the proposal to enter all transactions in MBP-4 at year-end compliant?",
         options: [
@@ -13812,7 +13807,7 @@ const AICaseStudies = [
           "Rule 16 requires entries in MBP-4 to be made at once and in chronological order.",
       },
       {
-        question_id: "CEL_HARD_189_08_4",
+        question_id: "CEL_HARD_189_08_B_4",
         question:
           "After the register has been duly filled and updated, it should be:",
         options: [
@@ -13828,7 +13823,7 @@ const AICaseStudies = [
           "Section 189(1) requires the register to be placed before the next Board meeting and signed by all directors present.",
       },
       {
-        question_id: "CEL_HARD_189_08_5",
+        question_id: "CEL_HARD_189_08_B_5",
         question:
           "Can a proxy inspect the register when it is produced at the AGM?",
         options: [
@@ -13946,7 +13941,7 @@ const AICaseStudies = [
    SECTIONS 192 & 193 — NON-CASH TRANSACTION + OPC
 ========================================================= */
   {
-    case_id: "CEL_HARD_192_193_10",
+    case_id: "CEL_HARD_192_193_10_B",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["Section 192", "Section 193", "Non-Cash Transactions", "OPC"],
@@ -13957,7 +13952,7 @@ const AICaseStudies = [
     `,
     questions: [
       {
-        question_id: "CEL_HARD_192_193_10_1",
+        question_id: "CEL_HARD_192_193_10_B_1",
         question:
           "Does Section 192 potentially apply merely because Mr. D is a director of Silverline's holding company rather than Silverline itself?",
         options: [
@@ -13973,7 +13968,7 @@ const AICaseStudies = [
           "Section 192 expressly extends to a director of the company or its holding, subsidiary or associate company and persons connected with such director.",
       },
       {
-        question_id: "CEL_HARD_192_193_10_2",
+        question_id: "CEL_HARD_192_193_10_B_2",
         question:
           "Which approvals are relevant because Mr. D is a director of Silverline's holding company?",
         options: [
@@ -13989,7 +13984,7 @@ const AICaseStudies = [
           "The company must obtain prior approval in general meeting. Where the director/connected person is a director of its holding company, approval of the holding company in general meeting is also required.",
       },
       {
-        question_id: "CEL_HARD_192_193_10_3",
+        question_id: "CEL_HARD_192_193_10_B_3",
         question: "What defect exists in Silverline's notice to shareholders?",
         options: [
           "No defect exists",
@@ -14004,7 +13999,7 @@ const AICaseStudies = [
           "The notice seeking approval under Section 192 must contain particulars of the arrangement and the value of assets involved, duly calculated by a registered valuer.",
       },
       {
-        question_id: "CEL_HARD_192_193_10_4",
+        question_id: "CEL_HARD_192_193_10_B_4",
         question:
           "What is the normal consequence of an arrangement entered into in contravention of Section 192?",
         options: [
@@ -14020,7 +14015,7 @@ const AICaseStudies = [
           "An arrangement entered into in contravention of Section 192 is voidable at the instance of the company, subject to exceptions such as impossibility of restitution with indemnification or bona fide rights acquired for value without notice.",
       },
       {
-        question_id: "CEL_HARD_192_193_10_5",
+        question_id: "CEL_HARD_192_193_10_B_5",
         question:
           "Has Alpha One Private Limited complied with Section 193 regarding intimation to the Registrar?",
         options: [
@@ -16105,7 +16100,7 @@ const AICaseStudies = [
           "All public information",
           "Company's published annual report",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "<p>Section 227 protects privileged communications made to a legal adviser in that capacity, although the name and address of the client are not protected by this provision.</p>",
       },
@@ -16280,7 +16275,7 @@ const AICaseStudies = [
           "Incorrect where the Registrar finds the explanation inadequate",
           "Correct because Section 206 permits only one notice",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "<p>Section 206(3) specifically contemplates a further notice where the earlier information or explanation is inadequate.</p>",
       },
@@ -17604,7 +17599,7 @@ const AICaseStudies = [
           "Publicly filed documents",
           "Published financial statements",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "<p>Section 227 protects privileged communications made to a legal adviser in that capacity, while the name and address of the client are not protected by this provision.</p>",
       },
@@ -18963,68 +18958,8 @@ const AICaseStudies = [
           "Section 230 permits an application by the company, creditor, member or liquidator in case of voluntary liquidation.",
         explanation:
           "Section 230 permits an application by the company, creditor, member or liquidator in case of voluntary liquidation.",
-      },
-      {
-        id: "CAA_EASY_01_2",
-        question: "A compromise generally involves:",
-        options: [
-          "A dispute between parties and mutual concessions",
-          "Only a transfer of shares",
-          "Only an increase in share capital",
-          "Compulsory winding up",
-        ],
-        answer: 0,
-        reason:
-          "A compromise assumes a dispute and generally involves mutual adjustments and concessions by the parties.",
-        explanation:
-          "A compromise assumes a dispute and generally involves mutual adjustments and concessions by the parties.",
-      },
-      {
-        id: "CAA_EASY_01_3",
-        question: "An arrangement may include:",
-        options: [
-          "Only settlement of disputes",
-          "Reorganisation of share capital",
-          "Only liquidation of a company",
-          "Only acquisition of another company",
-        ],
-        answer: 1,
-        reason:
-          "The term arrangement is wide and includes reorganisation of share capital.",
-        explanation:
-          "The term arrangement is wide and includes reorganisation of share capital.",
-      },
-      {
-        id: "CAA_EASY_01_4",
-        question:
-          "Which authority has the power to order the meeting under Section 230?",
-        options: [
-          "Registrar of Companies",
-          "NCLT",
-          "Income-tax Department",
-          "SEBI in every case",
-        ],
-        answer: 1,
-        reason:
-          "The NCLT may order a meeting of creditors, members or the relevant class thereof.",
-        explanation:
-          "The NCLT may order a meeting of creditors, members or the relevant class thereof.",
-      },
-      {
-        id: "CAA_EASY_01_5",
-        question: "A scheme under Section 230 may be proposed between:",
-        options: [
-          "A company and its creditors or members",
-          "Only two unrelated companies",
-          "Only a company and the Central Government",
-          "Only shareholders and directors",
-        ],
-        answer: 0,
-        reason:
-          "Section 230 covers compromises or arrangements between a company and its creditors or members or classes thereof.",
-        explanation:
-          "Section 230 covers compromises or arrangements between a company and its creditors or members or classes thereof.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -19119,69 +19054,8 @@ const AICaseStudies = [
           "Arrangement expressly includes reorganisation of share capital by consolidation or division of shares of different classes.",
         explanation:
           "Arrangement expressly includes reorganisation of share capital by consolidation or division of shares of different classes.",
-      },
-      {
-        id: "CAA_EASY_02_2",
-        question:
-          "Notice of a Tribunal-ordered meeting is required to be sent individually to:",
-        options: [
-          "Only directors",
-          "Creditors, members and debenture-holders as applicable",
-          "Only promoters",
-          "Only employees",
-        ],
-        answer: 1,
-        reason:
-          "Section 230(3) requires notices to the relevant creditors, members and debenture-holders individually.",
-        explanation:
-          "Section 230(3) requires notices to the relevant creditors, members and debenture-holders individually.",
-      },
-      {
-        id: "CAA_EASY_02_3",
-        question: "The notice should generally be sent to members at:",
-        options: [
-          "The company's registered office only",
-          "The address registered with the company",
-          "The address of the director",
-          "Any address selected by the company",
-        ],
-        answer: 1,
-        reason:
-          "The notice is sent individually at the address registered with the company.",
-        explanation:
-          "The notice is sent individually at the address registered with the company.",
-      },
-      {
-        id: "CAA_EASY_02_4",
-        question:
-          "The statement accompanying the notice may explain the effect of the scheme on:",
-        options: [
-          "Only shareholders",
-          "Only creditors",
-          "Various stakeholders including creditors, KMPs, promoters and members",
-          "Only directors",
-        ],
-        answer: 2,
-        reason:
-          "The accompanying statement contains disclosures regarding the effect of the compromise or arrangement on relevant stakeholders.",
-        explanation:
-          "The accompanying statement contains disclosures regarding the effect of the compromise or arrangement on relevant stakeholders.",
-      },
-      {
-        id: "CAA_EASY_02_5",
-        question: "The Tribunal involved in schemes under Section 230 is:",
-        options: [
-          "NCLT",
-          "NCLAT as the first authority",
-          "SEBI",
-          "Registrar of Companies",
-        ],
-        answer: 0,
-        reason:
-          "Applications under Section 230 are made to the National Company Law Tribunal.",
-        explanation:
-          "Applications under Section 230 are made to the National Company Law Tribunal.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -19268,60 +19142,8 @@ const AICaseStudies = [
           "Persons receiving the notice may vote personally, through proxies or by postal ballot.",
         explanation:
           "Persons receiving the notice may vote personally, through proxies or by postal ballot.",
-      },
-      {
-        id: "CAA_EASY_03_2",
-        question:
-          "Sectoral regulators receiving notice under Section 230(5) generally have how much time to make representations?",
-        options: ["15 days", "30 days", "45 days", "60 days"],
-        answer: 1,
-        reason:
-          "Representations are required to be made within 30 days from receipt of the notice.",
-        explanation:
-          "Representations are required to be made within 30 days from receipt of the notice.",
-      },
-      {
-        id: "CAA_EASY_03_3",
-        question:
-          "If the relevant authority does not make a representation within the prescribed 30 days:",
-        options: [
-          "The scheme automatically fails",
-          "It is presumed that the authority has no representation to make",
-          "The company must withdraw the scheme",
-          "The Tribunal loses jurisdiction",
-        ],
-        answer: 1,
-        reason:
-          "Failure to make a representation within 30 days is presumed to mean that the authority has no representation to make.",
-        explanation:
-          "Failure to make a representation within 30 days is presumed to mean that the authority has no representation to make.",
-      },
-      {
-        id: "CAA_EASY_03_4",
-        question:
-          "Which of the following may receive notice under Section 230(5)?",
-        options: ["Income-tax authorities", "RBI", "SEBI", "All of the above"],
-        answer: 3,
-        reason:
-          "The provision includes several sectoral authorities including the Income-tax authorities, RBI and SEBI.",
-        explanation:
-          "The provision includes several sectoral authorities including the Income-tax authorities, RBI and SEBI.",
-      },
-      {
-        id: "CAA_EASY_03_5",
-        question: "The notice to sectoral regulators is intended mainly to:",
-        options: [
-          "Give them an opportunity to make representations",
-          "Transfer management to them",
-          "Obtain automatic approval",
-          "Cancel the scheme",
-        ],
-        answer: 0,
-        reason:
-          "The notice allows authorities likely to be affected by the scheme to make representations.",
-        explanation:
-          "The notice allows authorities likely to be affected by the scheme to make representations.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -19407,64 +19229,8 @@ const AICaseStudies = [
           "The compromise or arrangement requires approval by persons representing three-fourths in value of those voting, along with the required majority in number.",
         explanation:
           "The compromise or arrangement requires approval by persons representing three-fourths in value of those voting, along with the required majority in number.",
-      },
-      {
-        id: "CAA_EASY_04_2",
-        question:
-          "After sanction by the Tribunal, the compromise or arrangement becomes binding on:",
-        options: [
-          "Only the persons who voted in favour",
-          "The company and the relevant creditors or members as specified",
-          "Only directors",
-          "Only dissenting members",
-        ],
-        answer: 1,
-        reason:
-          "Once sanctioned by the Tribunal after the requisite approval, the scheme becomes binding on the company and relevant stakeholders covered by Section 230(6).",
-        explanation:
-          "Once sanctioned by the Tribunal after the requisite approval, the scheme becomes binding on the company and relevant stakeholders covered by Section 230(6).",
-      },
-      {
-        id: "CAA_EASY_04_3",
-        question: "The order sanctioning the scheme is made by:",
-        options: ["NCLT", "Registrar", "Central Government only", "SEBI"],
-        answer: 0,
-        reason:
-          "The NCLT sanctions the compromise or arrangement under Section 230.",
-        explanation:
-          "The NCLT sanctions the compromise or arrangement under Section 230.",
-      },
-      {
-        id: "CAA_EASY_04_4",
-        question:
-          "A compromise or arrangement sanctioned by the Tribunal may be binding on:",
-        options: [
-          "Creditors or members of the relevant class",
-          "Only employees",
-          "Only directors",
-          "Only the auditors",
-        ],
-        answer: 0,
-        reason:
-          "The sanctioned scheme is binding on the company and the relevant creditors, members or classes thereof.",
-        explanation:
-          "The sanctioned scheme is binding on the company and the relevant creditors, members or classes thereof.",
-      },
-      {
-        id: "CAA_EASY_04_5",
-        question: "The majority requirement under Section 230(6) involves:",
-        options: [
-          "Only number",
-          "Only value",
-          "Majority in number and three-fourths in value of those voting",
-          "Nine-tenths in number only",
-        ],
-        answer: 2,
-        reason:
-          "The requirement is a simple majority in number of those voting together with representation of three-fourths in value of those voting.",
-        explanation:
-          "The requirement is a simple majority in number of those voting together with representation of three-fourths in value of those voting.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -19551,65 +19317,8 @@ const AICaseStudies = [
           "Section 231 deals with the Tribunal's power to enforce and supervise implementation of a compromise or arrangement.",
         explanation:
           "Section 231 deals with the Tribunal's power to enforce and supervise implementation of a compromise or arrangement.",
-      },
-      {
-        id: "CAA_EASY_05_2",
-        question: "Under Section 231, the Tribunal may:",
-        options: [
-          "Supervise implementation of the scheme",
-          "Give necessary directions",
-          "Make necessary modifications",
-          "All of the above",
-        ],
-        answer: 3,
-        reason:
-          "The Tribunal may supervise implementation and give directions or modifications necessary for proper implementation.",
-        explanation:
-          "The Tribunal may supervise implementation and give directions or modifications necessary for proper implementation.",
-      },
-      {
-        id: "CAA_EASY_05_3",
-        question:
-          "If the sanctioned compromise cannot be implemented satisfactorily and the company is unable to pay its debts under the scheme, the Tribunal may:",
-        options: [
-          "Order winding up",
-          "Automatically cancel all debts",
-          "Transfer the company to SEBI",
-          "Remove all directors",
-        ],
-        answer: 0,
-        reason:
-          "Section 231 permits the Tribunal to make an order for winding up in the specified circumstances.",
-        explanation:
-          "Section 231 permits the Tribunal to make an order for winding up in the specified circumstances.",
-      },
-      {
-        id: "CAA_EASY_05_4",
-        question:
-          "The power under Section 231 is exercised in relation to a compromise or arrangement sanctioned under:",
-        options: ["Section 230", "Section 235", "Section 238", "Section 240"],
-        answer: 0,
-        reason:
-          "Section 231 applies where the Tribunal has made an order under Section 230 sanctioning a compromise or arrangement.",
-        explanation:
-          "Section 231 applies where the Tribunal has made an order under Section 230 sanctioning a compromise or arrangement.",
-      },
-      {
-        id: "CAA_EASY_05_5",
-        question:
-          "The main purpose of Tribunal supervision under Section 231 is to:",
-        options: [
-          "Ensure proper implementation of the sanctioned scheme",
-          "Increase the company's authorised capital",
-          "Conduct the company's audit",
-          "Appoint statutory auditors",
-        ],
-        answer: 0,
-        reason:
-          "The Tribunal supervises implementation to ensure that the sanctioned compromise or arrangement is properly carried out.",
-        explanation:
-          "The Tribunal supervises implementation to ensure that the sanctioned compromise or arrangement is properly carried out.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -19698,63 +19407,8 @@ const AICaseStudies = [
           "The company whose undertaking, property and liabilities are transferred is called the transferor company.",
         explanation:
           "The company whose undertaking, property and liabilities are transferred is called the transferor company.",
-      },
-      {
-        id: "CAA_EASY_06_2",
-        question: "Beta Components Limited is the:",
-        options: [
-          "Transferor company",
-          "Transferee company",
-          "Liquidator",
-          "Official Liquidator",
-        ],
-        answer: 1,
-        reason:
-          "The company receiving the undertaking, property and liabilities is the transferee company.",
-        explanation:
-          "The company receiving the undertaking, property and liabilities is the transferee company.",
-      },
-      {
-        id: "CAA_EASY_06_3",
-        question:
-          "Which section primarily deals with merger and amalgamation of companies?",
-        options: ["Section 230", "Section 231", "Section 232", "Section 240"],
-        answer: 2,
-        reason: "Section 232 deals with merger and amalgamation of companies.",
-        explanation:
-          "Section 232 deals with merger and amalgamation of companies.",
-      },
-      {
-        id: "CAA_EASY_06_4",
-        question: "Under Section 232, a transferor company may be dissolved:",
-        options: [
-          "Only after winding up",
-          "Without winding up",
-          "Only by the Registrar",
-          "Only by shareholders without Tribunal involvement",
-        ],
-        answer: 1,
-        reason:
-          "The Tribunal's order may provide for dissolution of the transferor company without winding up.",
-        explanation:
-          "The Tribunal's order may provide for dissolution of the transferor company without winding up.",
-      },
-      {
-        id: "CAA_EASY_06_5",
-        question:
-          "Under a merger scheme, pending legal proceedings of the transferor company may:",
-        options: [
-          "Automatically terminate",
-          "Continue by or against the transferee company",
-          "Always be transferred to SEBI",
-          "Be transferred to the shareholders",
-        ],
-        answer: 1,
-        reason:
-          "Section 232 permits continuation of legal proceedings by or against the transferee company.",
-        explanation:
-          "Section 232 permits continuation of legal proceedings by or against the transferee company.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -19849,69 +19503,8 @@ const AICaseStudies = [
           "Section 233 provides the fast-track merger mechanism for a holding company and its wholly-owned subsidiary.",
         explanation:
           "Section 233 provides the fast-track merger mechanism for a holding company and its wholly-owned subsidiary.",
-      },
-      {
-        id: "CAA_EASY_07_2",
-        question: "The fast-track merger procedure is generally intended for:",
-        options: [
-          "Specified classes of companies",
-          "Only listed companies",
-          "Only foreign companies",
-          "Only companies under liquidation",
-        ],
-        answer: 0,
-        reason:
-          "Section 233 applies to specified classes such as small companies and holding company-wholly-owned subsidiary combinations.",
-        explanation:
-          "Section 233 applies to specified classes such as small companies and holding company-wholly-owned subsidiary combinations.",
-      },
-      {
-        id: "CAA_EASY_07_3",
-        question:
-          "Under the fast-track procedure, the scheme is approved by members holding at least:",
-        options: [
-          "51% of total shares",
-          "75% of total shares",
-          "90% of total number of shares",
-          "100% of total shares",
-        ],
-        answer: 2,
-        reason:
-          "The scheme must be approved by members or the relevant class holding at least 90% of the total number of shares.",
-        explanation:
-          "The scheme must be approved by members or the relevant class holding at least 90% of the total number of shares.",
-      },
-      {
-        id: "CAA_EASY_07_4",
-        question:
-          "The fast-track merger requires creditor approval by a majority representing:",
-        options: [
-          "One-half in value",
-          "Two-thirds in value",
-          "Three-fourths in value",
-          "Nine-tenths in value",
-        ],
-        answer: 3,
-        reason:
-          "Section 233 requires approval by a majority representing nine-tenths in value of the creditors or relevant class.",
-        explanation:
-          "Section 233 requires approval by a majority representing nine-tenths in value of the creditors or relevant class.",
-      },
-      {
-        id: "CAA_EASY_07_5",
-        question: "The provisions of Section 233 are:",
-        options: [
-          "Always compulsory for eligible companies",
-          "Optional; an eligible company may use Section 232 instead",
-          "Applicable only to foreign companies",
-          "Applicable only after winding up",
-        ],
-        answer: 1,
-        reason:
-          "Eligible companies may use the fast-track mechanism, but they can also opt for the normal procedure under Sections 230 to 232.",
-        explanation:
-          "Eligible companies may use the fast-track mechanism, but they can also opt for the normal procedure under Sections 230 to 232.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -20008,70 +19601,8 @@ const AICaseStudies = [
           "Section 236 applies when the acquirer or specified person/group becomes registered holder of 90% or more of the issued equity share capital.",
         explanation:
           "Section 236 applies when the acquirer or specified person/group becomes registered holder of 90% or more of the issued equity share capital.",
-      },
-      {
-        id: "CAA_EASY_08_2",
-        question:
-          "The price for purchase of minority shares is determined on the basis of valuation by:",
-        options: [
-          "Statutory auditor",
-          "Company secretary",
-          "Registered valuer",
-          "Registrar of Companies",
-        ],
-        answer: 2,
-        reason:
-          "Section 236 requires valuation by a registered valuer in accordance with Rule 27.",
-        explanation:
-          "Section 236 requires valuation by a registered valuer in accordance with Rule 27.",
-      },
-      {
-        id: "CAA_EASY_08_3",
-        question:
-          "The majority shareholders are required to deposit the amount for acquisition in:",
-        options: [
-          "The personal account of the promoter",
-          "A separate bank account operated by the company",
-          "The account of the Registrar",
-          "The account of the Central Government",
-        ],
-        answer: 1,
-        reason:
-          "The amount equal to the value of shares to be acquired is deposited in a separate bank account operated by the company.",
-        explanation:
-          "The amount equal to the value of shares to be acquired is deposited in a separate bank account operated by the company.",
-      },
-      {
-        id: "CAA_EASY_08_4",
-        question: "The company whose shares are being transferred acts as:",
-        options: [
-          "Transfer agent",
-          "Registered valuer",
-          "Liquidator",
-          "Tribunal",
-        ],
-        answer: 0,
-        reason:
-          "Under Section 236, the company whose shares are transferred acts as the transfer agent for receiving and paying the price and handling the shares.",
-        explanation:
-          "Under Section 236, the company whose shares are transferred acts as the transfer agent for receiving and paying the price and handling the shares.",
-      },
-      {
-        id: "CAA_EASY_08_5",
-        question:
-          "The main purpose of Section 236 is to provide a mechanism for:",
-        options: [
-          "Purchase of minority shareholding after the 90% threshold is reached",
-          "Appointment of auditors",
-          "Reduction of share capital",
-          "Voluntary liquidation",
-        ],
-        answer: 0,
-        reason:
-          "Section 236 provides the mechanism for purchase of minority shareholding once the prescribed 90% threshold is reached.",
-        explanation:
-          "Section 236 provides the mechanism for purchase of minority shareholding once the prescribed 90% threshold is reached.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -20158,65 +19689,8 @@ const AICaseStudies = [
           "Section 237 empowers the Central Government to provide for amalgamation of companies in public interest.",
         explanation:
           "Section 237 empowers the Central Government to provide for amalgamation of companies in public interest.",
-      },
-      {
-        id: "CAA_EASY_09_2",
-        question:
-          "The Central Government's order under Section 237 is notified in:",
-        options: [
-          "A newspaper only",
-          "The Official Gazette",
-          "The company's annual report only",
-          "The stock exchange bulletin only",
-        ],
-        answer: 1,
-        reason: "The amalgamation order is notified in the Official Gazette.",
-        explanation:
-          "The amalgamation order is notified in the Official Gazette.",
-      },
-      {
-        id: "CAA_EASY_09_3",
-        question:
-          "Members and creditors of transferor companies should generally have:",
-        options: [
-          "No rights after amalgamation",
-          "The same or substantially similar interests or rights in the transferee company",
-          "Only voting rights",
-          "Only dividend rights",
-        ],
-        answer: 1,
-        reason:
-          "Section 237 seeks to preserve, as nearly as may be, the interests or rights of members and creditors.",
-        explanation:
-          "Section 237 seeks to preserve, as nearly as may be, the interests or rights of members and creditors.",
-      },
-      {
-        id: "CAA_EASY_09_4",
-        question:
-          "If the interest or rights of a member or creditor become less, the person may be entitled to:",
-        options: [
-          "Compensation",
-          "Automatic winding up",
-          "Additional voting rights only",
-          "Appointment as director",
-        ],
-        answer: 0,
-        reason:
-          "Where the rights or interests are reduced, the person is entitled to compensation to that extent.",
-        explanation:
-          "Where the rights or interests are reduced, the person is entitled to compensation to that extent.",
-      },
-      {
-        id: "CAA_EASY_09_5",
-        question:
-          "An aggrieved person may appeal against the compensation assessment to:",
-        options: ["Registrar", "NCLT", "SEBI", "RBI"],
-        answer: 1,
-        reason:
-          "An aggrieved person may appeal to the Tribunal against the assessment of compensation.",
-        explanation:
-          "An aggrieved person may appeal to the Tribunal against the assessment of compensation.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -20299,61 +19773,8 @@ const AICaseStudies = [
           "Section 239 deals with preservation of books and papers of amalgamated companies or companies whose shares have been acquired.",
         explanation:
           "Section 239 deals with preservation of books and papers of amalgamated companies or companies whose shares have been acquired.",
-      },
-      {
-        id: "CAA_EASY_10_2",
-        question:
-          "Books and papers covered by Section 239 cannot generally be disposed of without prior permission of:",
-        options: ["Central Government", "SEBI", "RBI", "NCLAT"],
-        answer: 0,
-        reason:
-          "Prior permission of the Central Government is required for disposal of such books and papers.",
-        explanation:
-          "Prior permission of the Central Government is required for disposal of such books and papers.",
-      },
-      {
-        id: "CAA_EASY_10_3",
-        question:
-          "Which section deals with liability of officers for offences committed before merger or amalgamation?",
-        options: ["Section 230", "Section 232", "Section 239", "Section 240"],
-        answer: 3,
-        reason:
-          "Section 240 provides that liability for offences committed before merger, amalgamation or acquisition continues.",
-        explanation:
-          "Section 240 provides that liability for offences committed before merger, amalgamation or acquisition continues.",
-      },
-      {
-        id: "CAA_EASY_10_4",
-        question:
-          "Under Section 240, liability for an offence committed before merger:",
-        options: [
-          "Automatically disappears",
-          "Continues after the merger or amalgamation",
-          "Transfers only to shareholders",
-          "Applies only if the company is listed",
-        ],
-        answer: 1,
-        reason:
-          "Section 240 expressly provides for continuation of liability of officers in default for offences committed before merger, amalgamation or acquisition.",
-        explanation:
-          "Section 240 expressly provides for continuation of liability of officers in default for offences committed before merger, amalgamation or acquisition.",
-      },
-      {
-        id: "CAA_EASY_10_5",
-        question:
-          "The purpose of preserving books and papers under Section 239 includes enabling examination for evidence of:",
-        options: [
-          "Only tax payments",
-          "Offences connected with promotion, formation or management of the company",
-          "Only dividend calculations",
-          "Only employee records",
-        ],
-        answer: 1,
-        reason:
-          "The Central Government may appoint a person to examine the books and papers to ascertain evidence of offences connected with promotion, formation, management, amalgamation or acquisition.",
-        explanation:
-          "The Central Government may appoint a person to examine the books and papers to ascertain evidence of offences connected with promotion, formation, management, amalgamation or acquisition.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -20457,71 +19878,8 @@ const AICaseStudies = [
           "Section 230(2) requires disclosure by affidavit of all material facts relating to the company, including its latest financial position, latest auditor's report and pending investigations or proceedings.",
         explanation:
           "Section 230(2) requires disclosure by affidavit of all material facts relating to the company, including its latest financial position, latest auditor's report and pending investigations or proceedings.",
-      },
-      {
-        id: "CAA_MEDIUM_01_2",
-        question:
-          "Which of the following is specifically required to be disclosed under Section 230(2)?",
-        options: [
-          "Pending investigation or proceedings against the company",
-          "Personal assets of every director",
-          "Income of every employee",
-          "Future dividend policy only",
-        ],
-        answer: 0,
-        reason:
-          "Pending investigation or proceedings against the company form part of the material facts required to be disclosed.",
-        explanation:
-          "Pending investigation or proceedings against the company form part of the material facts required to be disclosed.",
-      },
-      {
-        id: "CAA_MEDIUM_01_3",
-        question:
-          "A valuation report relating to shares and assets under the relevant scheme is generally prepared by:",
-        options: [
-          "A registered valuer",
-          "The Registrar of Companies",
-          "The Official Liquidator",
-          "The company's bankers",
-        ],
-        answer: 0,
-        reason:
-          "The Act requires a valuation report in the circumstances specified under Section 230, with valuation by a registered valuer.",
-        explanation:
-          "The Act requires a valuation report in the circumstances specified under Section 230, with valuation by a registered valuer.",
-      },
-      {
-        id: "CAA_MEDIUM_01_4",
-        question:
-          "If a reduction of share capital is included in the compromise or arrangement, the application should disclose:",
-        options: [
-          "The proposed reduction",
-          "Only the number of directors",
-          "Only the company's registered office",
-          "Only the amount of authorised capital",
-        ],
-        answer: 0,
-        reason:
-          "Section 230(2) specifically requires disclosure of reduction of share capital, if any, included in the compromise or arrangement.",
-        explanation:
-          "Section 230(2) specifically requires disclosure of reduction of share capital, if any, included in the compromise or arrangement.",
-      },
-      {
-        id: "CAA_MEDIUM_01_5",
-        question:
-          "The failure to disclose a pending investigation is most directly relevant to:",
-        options: [
-          "Disclosure requirements under Section 230(2)",
-          "Purchase of minority shares under Section 236",
-          "Public interest amalgamation under Section 237",
-          "Preservation of books under Section 239",
-        ],
-        answer: 0,
-        reason:
-          "Pending investigations are material facts that must be disclosed to the Tribunal under Section 230(2).",
-        explanation:
-          "Pending investigations are material facts that must be disclosed to the Tribunal under Section 230(2).",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -20559,16 +19917,16 @@ const AICaseStudies = [
         question:
           "The value of shares represented by members voting in favour is ₹62 lakh against ₹80 lakh represented by all members voting. Has the three-fourths value requirement been satisfied?",
         options: [
-          "Yes, because ₹62 lakh is more than three-fourths of ₹80 lakh",
-          "Yes, because attendance exceeds 50%",
-          "No, because ₹62 lakh is less than ₹60 lakh",
-          "No, because ₹62 lakh is less than three-fourths of ₹80 lakh",
+          "Yes; ₹62 lakh divided by ₹80 lakh is 77.5%, which exceeds 75%.",
+          "Yes; because 460 members voted in favour regardless of the value represented.",
+          "No; three-fourths of ₹80 lakh is ₹66 lakh.",
+          "No; the threshold is calculated using all 1,000 members.",
         ],
         answer: 0,
         reason:
-          "Three-fourths of ₹80 lakh is ₹60 lakh. Since ₹62 lakh exceeds ₹60 lakh, the value requirement is actually satisfied. However, the option stating that it is not satisfied is incorrect. Therefore this question tests the calculation: the correct conclusion is that the value requirement IS satisfied.",
+          "Three-fourths of ₹80 lakh is ₹60 lakh. The value represented by members voting in favour is ₹62 lakh, which exceeds ₹60 lakh. Therefore, the three-fourths value requirement is satisfied.",
         explanation:
-          "Three-fourths of ₹80 lakh is ₹60 lakh. Since ₹62 lakh exceeds ₹60 lakh, the value requirement is actually satisfied. However, the option stating that it is not satisfied is incorrect. Therefore this question tests the calculation: the correct conclusion is that the value requirement IS satisfied.",
+          "Three-fourths of ₹80 lakh is ₹60 lakh. The value represented by members voting in favour is ₹62 lakh, which exceeds ₹60 lakh. Therefore, the three-fourths value requirement is satisfied.",
       },
       {
         id: "CAA_MEDIUM_02_3",
@@ -20614,75 +19972,9 @@ const AICaseStudies = [
         ],
         answer: 1,
         reason:
-          "The three-fourths value is computed with reference to the value represented by members present and voting.",
-        reason:
-          "The three-fourths value is computed with reference to the value represented by members present and voting.",
+          "For the three-fourths value requirement, the relevant base is the value represented by members present and voting, not all 1,000 members.",
         explanation:
-          "The three-fourths value is computed with reference to the value represented by members present and voting.",
-      },
-      {
-        id: "CAA_MEDIUM_02_2",
-        question:
-          "The value of shares represented by members voting in favour is ₹62 lakh against ₹80 lakh represented by all members voting. Has the three-fourths value requirement been satisfied?",
-        options: [
-          "Yes, because ₹62 lakh is more than three-fourths of ₹80 lakh",
-          "Yes, because attendance exceeds 50%",
-          "No, because ₹62 lakh is less than ₹60 lakh",
-          "No, because ₹62 lakh is less than three-fourths of ₹80 lakh",
-        ],
-        answer: 0,
-        reason:
-          "Three-fourths of â¹80 lakh is â¹60 lakh. Since â¹62 lakh exceeds â¹60 lakh, the value requirement is actually satisfied. However, the option stating that it is not satisfied is incorrect. Therefore this question tests the calculation: the correct conclusion is that the value requirement IS satisfied.",
-        explanation:
-          "Three-fourths of ₹80 lakh is ₹60 lakh. Since ₹62 lakh exceeds ₹60 lakh, the value requirement is actually satisfied. However, the option stating that it is not satisfied is incorrect. Therefore this question tests the calculation: the correct conclusion is that the value requirement IS satisfied.",
-      },
-      {
-        id: "CAA_MEDIUM_02_3",
-        question:
-          "If 600 members voted and 460 voted in favour, the simple majority in number is:",
-        options: [
-          "Satisfied",
-          "Not satisfied",
-          "Exactly 50%",
-          "Irrelevant under Section 230",
-        ],
-        answer: 0,
-        reason:
-          "460 members voting in favour is more than half of 600 members who voted, so the simple majority in number is satisfied.",
-        explanation:
-          "460 members voting in favour is more than half of 600 members who voted, so the simple majority in number is satisfied.",
-      },
-      {
-        id: "CAA_MEDIUM_02_4",
-        question:
-          "The approval requirement under Section 230(6) is best described as:",
-        options: [
-          "Three-fourths majority in number only",
-          "Simple majority in number plus three-fourths in value of those voting",
-          "Nine-tenths majority in number only",
-          "Unanimous approval",
-        ],
-        answer: 1,
-        reason:
-          "The requirement involves a majority in number of persons voting and persons representing three-fourths in value of those voting.",
-        explanation:
-          "The requirement involves a majority in number of persons voting and persons representing three-fourths in value of those voting.",
-      },
-      {
-        id: "CAA_MEDIUM_02_5",
-        question:
-          "The management's statement that the value must be calculated using all 1,000 members is:",
-        options: [
-          "Correct",
-          "Incorrect",
-          "Correct only for creditors",
-          "Correct only for listed companies",
-        ],
-        answer: 1,
-        reason:
-          "For the three-fourths value requirement, the relevant base is the value represented by members present and voting.",
-        explanation:
-          "For the three-fourths value requirement, the relevant base is the value represented by members present and voting.",
+          "For the three-fourths value requirement, the relevant base is the value represented by members present and voting, not all 1,000 members.",
       },
     ],
   },
@@ -20772,62 +20064,8 @@ const AICaseStudies = [
           "An objection may be made only by persons holding not less than 10% of the shareholding.",
         explanation:
           "An objection may be made only by persons holding not less than 10% of the shareholding.",
-      },
-      {
-        id: "CAA_MEDIUM_03_2",
-        question:
-          "A member holding 12% shareholding satisfies the statutory shareholding threshold for objection.",
-        options: [
-          "True",
-          "False",
-          "Only if holding is in preference shares",
-          "Only if the member is a director",
-        ],
-        answer: 0,
-        reason: "The statutory threshold is not less than 10% of shareholding.",
-        explanation:
-          "The statutory threshold is not less than 10% of shareholding.",
-      },
-      {
-        id: "CAA_MEDIUM_03_3",
-        question:
-          "A creditor holding 4% of the total outstanding debt satisfies the debt threshold for objection.",
-        options: ["Yes", "No", "Only if unsecured", "Only if secured"],
-        answer: 1,
-        reason:
-          "The threshold is outstanding debt amounting to not less than 5% of the total outstanding debt.",
-        explanation:
-          "The threshold is outstanding debt amounting to not less than 5% of the total outstanding debt.",
-      },
-      {
-        id: "CAA_MEDIUM_03_4",
-        question:
-          "A creditor holding 6% of the total outstanding debt satisfies the threshold.",
-        options: [
-          "Yes",
-          "No",
-          "Only with Tribunal permission",
-          "Only with Central Government permission",
-        ],
-        answer: 0,
-        reason: "Six per cent exceeds the statutory minimum of 5%.",
-        explanation: "Six per cent exceeds the statutory minimum of 5%.",
-      },
-      {
-        id: "CAA_MEDIUM_03_5",
-        question: "The thresholds for objections under Section 230(4) are:",
-        options: [
-          "10% shareholding or 5% outstanding debt",
-          "5% shareholding or 10% outstanding debt",
-          "25% shareholding or 10% outstanding debt",
-          "51% shareholding or 25% outstanding debt",
-        ],
-        answer: 0,
-        reason:
-          "The proviso permits objections by persons holding not less than 10% shareholding or having outstanding debt of not less than 5% of total outstanding debt.",
-        explanation:
-          "The proviso permits objections by persons holding not less than 10% shareholding or having outstanding debt of not less than 5% of total outstanding debt.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -20919,65 +20157,8 @@ const AICaseStudies = [
           "Section 230(7) provides for an option to preference shareholders to obtain arrears of dividend in cash or accept equity shares equal to the value of the dividend payable.",
         explanation:
           "Section 230(7) provides for an option to preference shareholders to obtain arrears of dividend in cash or accept equity shares equal to the value of the dividend payable.",
-      },
-      {
-        id: "CAA_MEDIUM_04_2",
-        question: "The Tribunal's order may provide for:",
-        options: [
-          "Protection of any class of creditors",
-          "Cancellation of all creditor rights",
-          "Automatic liquidation",
-          "Removal of all shareholders",
-        ],
-        answer: 0,
-        reason:
-          "Protection of any class of creditors is one of the matters that may be provided for in the Tribunal's order.",
-        explanation:
-          "Protection of any class of creditors is one of the matters that may be provided for in the Tribunal's order.",
-      },
-      {
-        id: "CAA_MEDIUM_04_3",
-        question:
-          "If the compromise results in variation of shareholders' rights, such variation is given effect to under:",
-        options: ["Section 48", "Section 68", "Section 90", "Section 236"],
-        answer: 0,
-        reason:
-          "Section 230(7) provides that variation of shareholders' rights shall be given effect under Section 48.",
-        explanation:
-          "Section 230(7) provides that variation of shareholders' rights shall be given effect under Section 48.",
-      },
-      {
-        id: "CAA_MEDIUM_04_4",
-        question:
-          "Before sanctioning the scheme, the Tribunal requires an auditor's certificate regarding:",
-        options: [
-          "Compliance of proposed accounting treatment with applicable accounting standards",
-          "Payment of all taxes",
-          "Profitability of the company",
-          "Future share price",
-        ],
-        answer: 0,
-        reason:
-          "The auditor must certify that the proposed accounting treatment is in conformity with the accounting standards prescribed under Section 133.",
-        explanation:
-          "The auditor must certify that the proposed accounting treatment is in conformity with the accounting standards prescribed under Section 133.",
-      },
-      {
-        id: "CAA_MEDIUM_04_5",
-        question:
-          "Which of the following may also be included in the Tribunal's order?",
-        options: [
-          "Exit offer to dissenting shareholders",
-          "Appointment of all creditors as directors",
-          "Automatic exemption from all laws",
-          "Cancellation of all liabilities",
-        ],
-        answer: 0,
-        reason:
-          "The Tribunal may provide for matters including an exit offer to dissenting shareholders where necessary for implementation.",
-        explanation:
-          "The Tribunal may provide for matters including an exit offer to dissenting shareholders where necessary for implementation.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -21062,58 +20243,8 @@ const AICaseStudies = [
           "Section 230(8) requires the company to file the Tribunal's order with the Registrar within 30 days of receipt of the order.",
         explanation:
           "Section 230(8) requires the company to file the Tribunal's order with the Registrar within 30 days of receipt of the order.",
-      },
-      {
-        id: "CAA_MEDIUM_05_2",
-        question:
-          "If the certified order is received on 1 June, the normal statutory filing period ends after:",
-        options: ["15 days", "30 days", "45 days", "90 days"],
-        answer: 1,
-        reason: "The order must be filed within 30 days from receipt.",
-        explanation: "The order must be filed within 30 days from receipt.",
-      },
-      {
-        id: "CAA_MEDIUM_05_3",
-        question:
-          "A compromise relating to buy-back of securities may be sanctioned only if the buy-back complies with:",
-        options: ["Section 68", "Section 90", "Section 148", "Section 236"],
-        answer: 0,
-        reason:
-          "Section 230(10) states that a buy-back under a compromise or arrangement must comply with Section 68.",
-        explanation:
-          "Section 230(10) states that a buy-back under a compromise or arrangement must comply with Section 68.",
-      },
-      {
-        id: "CAA_MEDIUM_05_4",
-        question: "Which authority receives the filed order for registration?",
-        options: [
-          "Registrar of Companies",
-          "RBI",
-          "SEBI only",
-          "Income-tax Department",
-        ],
-        answer: 0,
-        reason:
-          "The Tribunal's order is filed with the Registrar for registration.",
-        explanation:
-          "The Tribunal's order is filed with the Registrar for registration.",
-      },
-      {
-        id: "CAA_MEDIUM_05_5",
-        question:
-          "The directors' proposal to wait until the end of the financial year is:",
-        options: [
-          "Correct",
-          "Incorrect",
-          "Correct only for listed companies",
-          "Correct only where creditors consent",
-        ],
-        answer: 1,
-        reason:
-          "The Act specifically prescribes a 30-day period from receipt of the order.",
-        explanation:
-          "The Act specifically prescribes a 30-day period from receipt of the order.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -21209,69 +20340,8 @@ const AICaseStudies = [
           "Under Section 232(3), the transferee company remains unlisted until it becomes a listed company.",
         explanation:
           "Under Section 232(3), the transferee company remains unlisted until it becomes a listed company.",
-      },
-      {
-        id: "CAA_MEDIUM_06_2",
-        question:
-          "Shareholders of the listed transferor company may be provided an option to:",
-        options: [
-          "Opt out and receive the value of their shares as provided under the scheme",
-          "Cancel the merger themselves",
-          "Appoint the Tribunal",
-          "Avoid all tax liabilities",
-        ],
-        answer: 0,
-        reason:
-          "Where the transferor is listed and transferee is unlisted, provision may be made for shareholders to opt out and receive the value of their shares according to the prescribed arrangement.",
-        explanation:
-          "Where the transferor is listed and transferee is unlisted, provision may be made for shareholders to opt out and receive the value of their shares according to the prescribed arrangement.",
-      },
-      {
-        id: "CAA_MEDIUM_06_3",
-        question:
-          "The amount payable under the exit arrangement should not be less than:",
-        options: [
-          "The minimum specified by SEBI regulations",
-          "The face value in every case",
-          "The book value only",
-          "The amount decided by directors alone",
-        ],
-        answer: 0,
-        reason:
-          "The payment or valuation should not be less than the amount specified by SEBI under applicable regulations.",
-        explanation:
-          "The payment or valuation should not be less than the amount specified by SEBI under applicable regulations.",
-      },
-      {
-        id: "CAA_MEDIUM_06_4",
-        question: "Pending legal proceedings of Fusion may continue:",
-        options: [
-          "By or against Innovate",
-          "Only against shareholders",
-          "Only against directors",
-          "They must automatically terminate",
-        ],
-        answer: 0,
-        reason:
-          "The Tribunal's order may provide for continuation of pending legal proceedings by or against the transferee company.",
-        explanation:
-          "The Tribunal's order may provide for continuation of pending legal proceedings by or against the transferee company.",
-      },
-      {
-        id: "CAA_MEDIUM_06_5",
-        question: "Employees of the transferor company may be:",
-        options: [
-          "Transferred to the transferee company under the scheme",
-          "Automatically dismissed",
-          "Transferred to the Registrar",
-          "Transferred to the Central Government",
-        ],
-        answer: 0,
-        reason:
-          "Section 232 permits provision for transfer of employees of the transferor company to the transferee company.",
-        explanation:
-          "Section 232 permits provision for transfer of employees of the transferor company to the transferee company.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -21367,70 +20437,8 @@ const AICaseStudies = [
           "Section 232(2) requires circulation of the draft proposed terms drawn up and adopted by the directors of the merging company.",
         explanation:
           "Section 232(2) requires circulation of the draft proposed terms drawn up and adopted by the directors of the merging company.",
-      },
-      {
-        id: "CAA_MEDIUM_07_2",
-        question:
-          "The directors' report should explain the effect of the compromise on:",
-        options: [
-          "Shareholders and other specified stakeholders",
-          "Only directors",
-          "Only creditors",
-          "Only employees",
-        ],
-        answer: 0,
-        reason:
-          "The directors' report explains the effect on classes of shareholders, KMPs, promoters and non-promoter shareholders and includes the share exchange ratio.",
-        explanation:
-          "The directors' report explains the effect on classes of shareholders, KMPs, promoters and non-promoter shareholders and includes the share exchange ratio.",
-      },
-      {
-        id: "CAA_MEDIUM_07_3",
-        question: "A valuation report may be prepared by:",
-        options: [
-          "An expert concerning valuation",
-          "Only the Registrar",
-          "Only the Tribunal",
-          "Only the creditors",
-        ],
-        answer: 0,
-        reason:
-          "Section 232(2) requires circulation of the report of the expert with regard to valuation, if any.",
-        explanation:
-          "Section 232(2) requires circulation of the report of the expert with regard to valuation, if any.",
-      },
-      {
-        id: "CAA_MEDIUM_07_4",
-        question:
-          "Where the last annual accounts relate to a financial year ending more than six months before the first meeting, the company should provide:",
-        options: [
-          "A supplementary accounting statement",
-          "A winding-up petition",
-          "A new memorandum",
-          "A new certificate of incorporation",
-        ],
-        answer: 0,
-        reason:
-          "A supplementary accounting statement is required in such circumstances.",
-        explanation:
-          "A supplementary accounting statement is required in such circumstances.",
-      },
-      {
-        id: "CAA_MEDIUM_07_5",
-        question:
-          "The purpose of the directors' report on the scheme includes explaining:",
-        options: [
-          "The share exchange ratio",
-          "Only employee salaries",
-          "Only tax rates",
-          "Only authorised capital",
-        ],
-        answer: 0,
-        reason:
-          "The directors' report specifically lays out the share exchange ratio and any special valuation difficulties.",
-        explanation:
-          "The directors' report specifically lays out the share exchange ratio and any special valuation difficulties.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -21517,60 +20525,8 @@ const AICaseStudies = [
           "Section 232 restricts such holdings and provides that such shares are to be cancelled or extinguished.",
         explanation:
           "Section 232 restricts such holdings and provides that such shares are to be cancelled or extinguished.",
-      },
-      {
-        id: "CAA_MEDIUM_08_2",
-        question: "Shares held contrary to the above requirement are:",
-        options: [
-          "Cancelled or extinguished",
-          "Automatically converted into debentures",
-          "Transferred to the Registrar",
-          "Transferred to employees",
-        ],
-        answer: 0,
-        reason:
-          "The Act provides that such shares shall be cancelled or extinguished.",
-        explanation:
-          "The Act provides that such shares shall be cancelled or extinguished.",
-      },
-      {
-        id: "CAA_MEDIUM_08_3",
-        question: "The restriction is mainly intended to prevent:",
-        options: [
-          "The transferee company from indirectly holding its own shares through the merger scheme",
-          "Payment of dividends",
-          "Issue of preference shares",
-          "Appointment of auditors",
-        ],
-        answer: 0,
-        reason:
-          "The provision prevents the transferee company from holding its own shares, directly or through specified structures, as a consequence of the scheme.",
-        explanation:
-          "The provision prevents the transferee company from holding its own shares, directly or through specified structures, as a consequence of the scheme.",
-      },
-      {
-        id: "CAA_MEDIUM_08_4",
-        question: "The relevant provision is contained in:",
-        options: ["Section 232", "Section 234", "Section 237", "Section 240"],
-        answer: 0,
-        reason: "The restriction appears in Section 232(3)(b).",
-        explanation: "The restriction appears in Section 232(3)(b).",
-      },
-      {
-        id: "CAA_MEDIUM_08_5",
-        question: "The cancellation of such shares is connected with:",
-        options: [
-          "Implementation of the merger or amalgamation scheme",
-          "Annual audit",
-          "Tax assessment",
-          "Appointment of directors",
-        ],
-        answer: 0,
-        reason:
-          "The cancellation or extinguishment is a consequence of the merger or amalgamation scheme.",
-        explanation:
-          "The cancellation or extinguishment is a consequence of the merger or amalgamation scheme.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -21662,70 +20618,8 @@ const AICaseStudies = [
           "Section 234 deals with merger or amalgamation of an Indian company with a foreign company.",
         explanation:
           "Section 234 deals with merger or amalgamation of an Indian company with a foreign company.",
-      },
-      {
-        id: "CAA_MEDIUM_09_2",
-        question:
-          "A foreign company merging with an Indian company requires prior approval of:",
-        options: [
-          "RBI",
-          "Only SEBI",
-          "Only ROC",
-          "Only the Income-tax Department",
-        ],
-        answer: 0,
-        reason:
-          "Section 234 provides for prior approval of the Reserve Bank of India in the relevant cross-border merger.",
-        explanation:
-          "Section 234 provides for prior approval of the Reserve Bank of India in the relevant cross-border merger.",
-      },
-      {
-        id: "CAA_MEDIUM_09_3",
-        question:
-          "Consideration to shareholders of the merging foreign company may be provided in:",
-        options: [
-          "Cash",
-          "Depository Receipts",
-          "Partly cash and partly Depository Receipts",
-          "All of the above",
-        ],
-        answer: 3,
-        reason:
-          "The scheme may provide consideration in cash, depository receipts, or partly in cash and partly in depository receipts.",
-        explanation:
-          "The scheme may provide consideration in cash, depository receipts, or partly in cash and partly in depository receipts.",
-      },
-      {
-        id: "CAA_MEDIUM_09_4",
-        question: "The Indian company and foreign company must comply with:",
-        options: [
-          "Applicable provisions of Sections 230 to 232 and relevant rules",
-          "Only Section 236",
-          "Only Section 239",
-          "Only the Income-tax Act",
-        ],
-        answer: 0,
-        reason:
-          "Cross-border mergers must comply with Sections 230 to 232 and the applicable rules, in addition to the RBI requirements.",
-        explanation:
-          "Cross-border mergers must comply with Sections 230 to 232 and the applicable rules, in addition to the RBI requirements.",
-      },
-      {
-        id: "CAA_MEDIUM_09_5",
-        question:
-          "The detailed procedural requirements for cross-border mergers are prescribed under:",
-        options: [
-          "Rule 25A of the Companies (Compromises, Arrangements and Amalgamations) Rules, 2016",
-          "Rule 27 only",
-          "Section 68 rules",
-          "SEBI Listing Regulations only",
-        ],
-        answer: 0,
-        reason:
-          "Rule 25A prescribes the relevant procedure for cross-border mergers.",
-        explanation:
-          "Rule 25A prescribes the relevant procedure for cross-border mergers.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -21808,64 +20702,8 @@ const AICaseStudies = [
         reason: "The notice invites objections or suggestions within 30 days.",
         explanation:
           "The notice invites objections or suggestions within 30 days.",
-      },
-      {
-        id: "CAA_MEDIUM_10_2",
-        question: "The creditors' meeting is convened by giving a notice of:",
-        options: ["7 days", "15 days", "21 days", "30 days"],
-        answer: 2,
-        reason:
-          "Section 233 provides for a 21-day notice to creditors for the meeting.",
-        explanation:
-          "Section 233 provides for a 21-day notice to creditors for the meeting.",
-      },
-      {
-        id: "CAA_MEDIUM_10_3",
-        question: "Approval by creditors requires a majority representing:",
-        options: [
-          "51% in value",
-          "75% in value",
-          "90% in value",
-          "100% in value",
-        ],
-        answer: 2,
-        reason:
-          "The fast-track scheme requires approval by a majority representing nine-tenths in value of the creditors or relevant class.",
-        explanation:
-          "The fast-track scheme requires approval by a majority representing nine-tenths in value of the creditors or relevant class.",
-      },
-      {
-        id: "CAA_MEDIUM_10_4",
-        question:
-          "Each company involved in the fast-track merger is required to file:",
-        options: [
-          "Declaration of solvency",
-          "Winding-up petition",
-          "Tax exemption certificate",
-          "SEBI registration certificate",
-        ],
-        answer: 0,
-        reason:
-          "Each company involved in the merger is required to file a declaration of solvency.",
-        explanation:
-          "Each company involved in the merger is required to file a declaration of solvency.",
-      },
-      {
-        id: "CAA_MEDIUM_10_5",
-        question:
-          "The fast-track merger scheme is filed by the transferee company with:",
-        options: [
-          "Central Government, Registrar and Official Liquidator",
-          "Only SEBI",
-          "Only RBI",
-          "Only NCLAT",
-        ],
-        answer: 0,
-        reason:
-          "The approved scheme is filed with the Central Government, Registrar and Official Liquidators in the prescribed manner.",
-        explanation:
-          "The approved scheme is filed with the Central Government, Registrar and Official Liquidators in the prescribed manner.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -21953,61 +20791,8 @@ const AICaseStudies = [
           "Objections or suggestions are communicated in writing to the Central Government.",
         explanation:
           "Objections or suggestions are communicated in writing to the Central Government.",
-      },
-      {
-        id: "CAA_MEDIUM_11_2",
-        question:
-          "If no objection or suggestion is communicated within the prescribed period, it is presumed that:",
-        options: [
-          "The scheme is rejected",
-          "There is no objection or suggestion",
-          "The company must be wound up",
-          "The scheme automatically becomes void",
-        ],
-        answer: 1,
-        reason:
-          "If no communication is made within the prescribed period, it is presumed that there is no objection.",
-        explanation:
-          "If no communication is made within the prescribed period, it is presumed that there is no objection.",
-      },
-      {
-        id: "CAA_MEDIUM_11_3",
-        question:
-          "If the Central Government considers the scheme not to be in public interest or creditors' interest, it may approach:",
-        options: ["NCLT", "SEBI", "RBI", "High Court only"],
-        answer: 0,
-        reason:
-          "The Central Government may file an application before the Tribunal requesting consideration under Section 232.",
-        explanation:
-          "The Central Government may file an application before the Tribunal requesting consideration under Section 232.",
-      },
-      {
-        id: "CAA_MEDIUM_11_4",
-        question:
-          "The Central Government may file such application before the Tribunal within:",
-        options: [
-          "30 days of receipt of the scheme",
-          "45 days of receipt",
-          "60 days of receipt",
-          "90 days of receipt",
-        ],
-        answer: 2,
-        reason:
-          "The application may be filed before the Tribunal within 60 days of receipt of the scheme.",
-        explanation:
-          "The application may be filed before the Tribunal within 60 days of receipt of the scheme.",
-      },
-      {
-        id: "CAA_MEDIUM_11_5",
-        question:
-          "If the Tribunal considers that the scheme should follow the normal procedure, it may direct consideration under:",
-        options: ["Section 232", "Section 236", "Section 239", "Section 240"],
-        answer: 0,
-        reason:
-          "The Tribunal may direct that the scheme be considered under the procedure laid down in Section 232.",
-        explanation:
-          "The Tribunal may direct that the scheme be considered under the procedure laid down in Section 232.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -22098,64 +20883,8 @@ const AICaseStudies = [
           "Section 235 requires approval by holders of not less than nine-tenths in value of the shares whose transfer is involved.",
         explanation:
           "Section 235 requires approval by holders of not less than nine-tenths in value of the shares whose transfer is involved.",
-      },
-      {
-        id: "CAA_MEDIUM_12_2",
-        question: "The 90% approval must generally be received within:",
-        options: [
-          "One month of the offer",
-          "Two months of the offer",
-          "Four months after making the offer",
-          "One year after the offer",
-        ],
-        answer: 2,
-        reason:
-          "The approval must be received within four months after making the offer.",
-        explanation:
-          "The approval must be received within four months after making the offer.",
-      },
-      {
-        id: "CAA_MEDIUM_12_3",
-        question:
-          "After expiry of the four-month period, the transferee company must express its desire to acquire the remaining shares within:",
-        options: ["15 days", "One month", "Two months", "Six months"],
-        answer: 2,
-        reason:
-          "The transferee company must express its desire to acquire the remaining shares within two months after expiry of the four-month period.",
-        explanation:
-          "The transferee company must express its desire to acquire the remaining shares within two months after expiry of the four-month period.",
-      },
-      {
-        id: "CAA_MEDIUM_12_4",
-        question: "A dissenting shareholder may approach the Tribunal within:",
-        options: [
-          "One month from the notice",
-          "Two months from the notice",
-          "Four months from the notice",
-          "One year from the notice",
-        ],
-        answer: 0,
-        reason:
-          "A dissenting shareholder may apply to the Tribunal within one month from the date on which the notice was given.",
-        explanation:
-          "A dissenting shareholder may apply to the Tribunal within one month from the date on which the notice was given.",
-      },
-      {
-        id: "CAA_MEDIUM_12_5",
-        question:
-          "If the Tribunal does not order otherwise, the transferee company is:",
-        options: [
-          "Entitled but not bound to acquire the shares",
-          "Bound and entitled to acquire the dissenting shareholders' shares",
-          "Prohibited from acquiring the shares",
-          "Required to buy only half of the shares",
-        ],
-        answer: 1,
-        reason:
-          "Subject to the Tribunal's order, the transferee company is entitled to and bound to acquire the dissenting shareholders' shares on the applicable terms.",
-        explanation:
-          "Subject to the Tribunal's order, the transferee company is entitled to and bound to acquire the dissenting shareholders' shares on the applicable terms.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -22252,70 +20981,8 @@ const AICaseStudies = [
           "Section 236 covers situations where 90% majority is achieved by amalgamation, share exchange, conversion of securities or other specified reasons.",
         explanation:
           "Section 236 covers situations where 90% majority is achieved by amalgamation, share exchange, conversion of securities or other specified reasons.",
-      },
-      {
-        id: "CAA_MEDIUM_13_2",
-        question:
-          "The minority purchase price must be determined on the basis of valuation by:",
-        options: [
-          "Registered valuer",
-          "Company secretary alone",
-          "Board of directors alone",
-          "Registrar",
-        ],
-        answer: 0,
-        reason:
-          "The purchase price is determined on the basis of valuation by a registered valuer.",
-        explanation:
-          "The purchase price is determined on the basis of valuation by a registered valuer.",
-      },
-      {
-        id: "CAA_MEDIUM_13_3",
-        question: "The amount for purchase of minority shares is deposited in:",
-        options: [
-          "A separate bank account operated by the company",
-          "The personal account of the majority shareholder",
-          "The account of the Tribunal",
-          "The account of SEBI",
-        ],
-        answer: 0,
-        reason:
-          "Section 236(4) requires the majority shareholders to deposit the amount in a separate bank account operated by the company.",
-        explanation:
-          "Section 236(4) requires the majority shareholders to deposit the amount in a separate bank account operated by the company.",
-      },
-      {
-        id: "CAA_MEDIUM_13_4",
-        question:
-          "If minority shareholders fail to physically deliver share certificates within the specified period:",
-        options: [
-          "The share certificates may be deemed cancelled subject to the statutory mechanism",
-          "The acquisition automatically fails",
-          "The majority loses its 90% status",
-          "The company must be wound up",
-        ],
-        answer: 0,
-        reason:
-          "Section 236 provides a mechanism whereby certificates may be deemed cancelled and the company may issue shares in lieu and complete the transfer according to law.",
-        explanation:
-          "Section 236 provides a mechanism whereby certificates may be deemed cancelled and the company may issue shares in lieu and complete the transfer according to law.",
-      },
-      {
-        id: "CAA_MEDIUM_13_5",
-        question:
-          "The company whose shares are being transferred acts as transfer agent mainly for:",
-        options: [
-          "Receiving and paying the price and taking/delivering shares",
-          "Conducting the merger",
-          "Determining the valuation",
-          "Approving the scheme",
-        ],
-        answer: 0,
-        reason:
-          "The company acts as transfer agent for receiving and paying the price and taking delivery and delivering the shares.",
-        explanation:
-          "The company acts as transfer agent for receiving and paying the price and taking delivery and delivering the shares.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -22408,66 +21075,8 @@ const AICaseStudies = [
           "Section 238 requires such circular to be presented to the Registrar for registration.",
         explanation:
           "Section 238 requires such circular to be presented to the Registrar for registration.",
-      },
-      {
-        id: "CAA_MEDIUM_14_2",
-        question:
-          "The circular should contain a statement by or on behalf of the transferee company regarding:",
-        options: [
-          "Steps taken to ensure necessary cash will be available",
-          "Future dividend rate",
-          "Number of employees",
-          "Future market price",
-        ],
-        answer: 0,
-        reason:
-          "Section 238 requires disclosure of steps taken to ensure that necessary cash will be available.",
-        explanation:
-          "Section 238 requires disclosure of steps taken to ensure that necessary cash will be available.",
-      },
-      {
-        id: "CAA_MEDIUM_14_3",
-        question:
-          "Can the circular be issued before registration by the Registrar?",
-        options: [
-          "Yes",
-          "No",
-          "Yes, if directors approve",
-          "Yes, if 90% shareholders agree",
-        ],
-        answer: 1,
-        reason:
-          "The circular cannot be issued until it has been presented to and registered by the Registrar.",
-        explanation:
-          "The circular cannot be issued until it has been presented to and registered by the Registrar.",
-      },
-      {
-        id: "CAA_MEDIUM_14_4",
-        question:
-          "An appeal against refusal by the Registrar to register the circular lies to:",
-        options: ["NCLT", "RBI", "SEBI", "Central Government only"],
-        answer: 0,
-        reason:
-          "Section 238(2) provides for an appeal to the Tribunal against refusal by the Registrar.",
-        explanation:
-          "Section 238(2) provides for an appeal to the Tribunal against refusal by the Registrar.",
-      },
-      {
-        id: "CAA_MEDIUM_14_5",
-        question:
-          "A director issuing an unregistered circular in contravention of Section 238 is liable to:",
-        options: [
-          "A penalty of ₹1 lakh",
-          "A penalty of ₹10,000",
-          "A penalty of ₹5 lakh",
-          "No penalty",
-        ],
-        answer: 0,
-        reason:
-          "Section 238(3) provides a penalty of â¹1 lakh for a director who issues a circular that has not been presented for and registered by the Registrar.",
-        explanation:
-          "Section 238(3) provides a penalty of ₹1 lakh for a director who issues a circular that has not been presented for and registered by the Registrar.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -22553,59 +21162,8 @@ const AICaseStudies = [
           "A copy of the proposed order must be sent in draft to each of the companies concerned.",
         explanation:
           "A copy of the proposed order must be sent in draft to each of the companies concerned.",
-      },
-      {
-        id: "CAA_MEDIUM_15_2",
-        question:
-          "The period fixed by the Central Government for suggestions and objections from companies cannot be less than:",
-        options: ["15 days", "30 days", "Two months", "Six months"],
-        answer: 2,
-        reason:
-          "The period fixed for suggestions and objections from the companies must not be less than two months.",
-        explanation:
-          "The period fixed for suggestions and objections from the companies must not be less than two months.",
-      },
-      {
-        id: "CAA_MEDIUM_15_3",
-        question:
-          "An aggrieved person may appeal against the compensation assessment within:",
-        options: [
-          "15 days from publication",
-          "30 days from publication",
-          "60 days from publication",
-          "90 days from publication",
-        ],
-        answer: 1,
-        reason:
-          "Section 237(4) provides a 30-day period from the date of publication of the assessment in the Official Gazette.",
-        explanation:
-          "Section 237(4) provides a 30-day period from the date of publication of the assessment in the Official Gazette.",
-      },
-      {
-        id: "CAA_MEDIUM_15_4",
-        question: "The appeal against compensation assessment is made to:",
-        options: ["NCLT", "Registrar", "SEBI", "RBI"],
-        answer: 0,
-        reason: "An aggrieved person may prefer an appeal to the Tribunal.",
-        explanation:
-          "An aggrieved person may prefer an appeal to the Tribunal.",
-      },
-      {
-        id: "CAA_MEDIUM_15_5",
-        question:
-          "The Central Government may order amalgamation under Section 237 when it is satisfied that the amalgamation is:",
-        options: [
-          "Essential in the public interest",
-          "Requested by every employee",
-          "Approved unanimously by creditors",
-          "Required only for tax savings",
-        ],
-        answer: 0,
-        reason:
-          "The fundamental requirement under Section 237 is the Central Government's satisfaction that amalgamation is essential in the public interest.",
-        explanation:
-          "The fundamental requirement under Section 237 is the Central Government's satisfaction that amalgamation is essential in the public interest.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -22703,70 +21261,8 @@ const AICaseStudies = [
           "For a compromise or arrangement, classification is based on similarity or dissimilarity of rights and interests. Creditors having materially different rights may constitute separate classes.",
         explanation:
           "For a compromise or arrangement, classification is based on similarity or dissimilarity of rights and interests. Creditors having materially different rights may constitute separate classes.",
-      },
-      {
-        id: "CAA_HARD_01_2",
-        question:
-          "A creditor holding 6% of the total outstanding debt would satisfy the statutory threshold for raising an objection under Section 230(4), assuming all other requirements are met.",
-        options: [
-          "Yes",
-          "No",
-          "Only if the creditor is secured",
-          "Only if the creditor is a debenture holder",
-        ],
-        answer: 0,
-        reason:
-          "The threshold for creditors is outstanding debt amounting to not less than 5% of the total outstanding debt.",
-        explanation:
-          "The threshold for creditors is outstanding debt amounting to not less than 5% of the total outstanding debt.",
-      },
-      {
-        id: "CAA_HARD_01_3",
-        question: "The creditor representing 8% of total outstanding debt:",
-        options: [
-          "Cannot object because the threshold is 10%",
-          "Can object because the threshold is 5%",
-          "Can object only if all shareholders consent",
-          "Cannot object because only secured creditors can object",
-        ],
-        answer: 1,
-        reason:
-          "The statutory threshold is not less than 5% of total outstanding debt.",
-        explanation:
-          "The statutory threshold is not less than 5% of total outstanding debt.",
-      },
-      {
-        id: "CAA_HARD_01_4",
-        question:
-          "The omission of the pending investigation is most directly relevant to:",
-        options: [
-          "Disclosure of material facts accompanying the application",
-          "The requirement relating to minority acquisition",
-          "The fast-track merger procedure",
-          "The preservation of books after amalgamation",
-        ],
-        answer: 0,
-        reason:
-          "Pending investigations and proceedings constitute material facts that must be disclosed in connection with the compromise or arrangement.",
-        explanation:
-          "Pending investigations and proceedings constitute material facts that must be disclosed in connection with the compromise or arrangement.",
-      },
-      {
-        id: "CAA_HARD_01_5",
-        question:
-          "If the secured lenders, unsecured creditors and debenture holders have materially different rights under the scheme, treating all of them as one class is:",
-        options: [
-          "Always mandatory",
-          "Potentially improper because separate classes may be required",
-          "Mandatory only where the company is listed",
-          "Correct because Section 230 permits only one creditor meeting",
-        ],
-        answer: 1,
-        reason:
-          "Where rights are sufficiently different, creditors may need to be placed in separate classes so that persons with a common interest vote together.",
-        explanation:
-          "Where rights are sufficiently different, creditors may need to be placed in separate classes so that persons with a common interest vote together.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -22857,63 +21353,8 @@ const AICaseStudies = [
           "The three-fourths value requirement is measured with reference to the value represented by members present and voting.",
         explanation:
           "The three-fourths value requirement is measured with reference to the value represented by members present and voting.",
-      },
-      {
-        id: "CAA_HARD_02_2",
-        question: "₹13.8 crore represents what percentage of ₹18 crore?",
-        options: ["70%", "75%", "76.67%", "82%"],
-        answer: 2,
-        reason: "â¹13.8 crore Ã· â¹18 crore Ã 100 = 76.67% approximately.",
-        explanation: "₹13.8 crore ÷ ₹18 crore × 100 = 76.67% approximately.",
-      },
-      {
-        id: "CAA_HARD_02_3",
-        question:
-          "On the value test alone, the scheme satisfies the three-fourths requirement.",
-        options: [
-          "True",
-          "False",
-          "Only if all 2,500 members consent",
-          "Only if abstaining members are included",
-        ],
-        answer: 0,
-        reason:
-          "76.67% is greater than 75%, so the three-fourths value requirement is satisfied.",
-        explanation:
-          "76.67% is greater than 75%, so the three-fourths value requirement is satisfied.",
-      },
-      {
-        id: "CAA_HARD_02_4",
-        question:
-          "The 820 members voting in favour out of 1,200 members voting represent:",
-        options: [
-          "Less than a majority",
-          "A majority in number",
-          "Exactly three-fourths",
-          "Exactly 90%",
-        ],
-        answer: 1,
-        reason:
-          "820 out of 1,200 is approximately 68.33%, which is more than 50% and therefore constitutes a majority in number.",
-        explanation:
-          "820 out of 1,200 is approximately 68.33%, which is more than 50% and therefore constitutes a majority in number.",
-      },
-      {
-        id: "CAA_HARD_02_5",
-        question:
-          "The shareholder holding 11% shareholding meets the statutory minimum threshold for objecting to the scheme.",
-        options: [
-          "Yes",
-          "No",
-          "Only if holding preference shares",
-          "Only if also a creditor",
-        ],
-        answer: 0,
-        reason:
-          "A member holding not less than 10% of the shareholding meets the statutory threshold under Section 230(4).",
-        explanation:
-          "A member holding not less than 10% of the shareholding meets the statutory threshold under Section 230(4).",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -23007,66 +21448,8 @@ const AICaseStudies = [
           "Classification depends on similarity of rights and interests, not merely the common label 'preference shareholder'.",
         explanation:
           "Classification depends on similarity of rights and interests, not merely the common label 'preference shareholder'.",
-      },
-      {
-        id: "CAA_HARD_03_2",
-        question:
-          "Where variation of shareholders' rights is involved in a scheme, the relevant statutory provision specifically referred to in Section 230 is:",
-        options: ["Section 48", "Section 68", "Section 90", "Section 236"],
-        answer: 0,
-        reason:
-          "Section 230(7) provides that variation of shareholders' rights shall be given effect in accordance with Section 48.",
-        explanation:
-          "Section 230(7) provides that variation of shareholders' rights shall be given effect in accordance with Section 48.",
-      },
-      {
-        id: "CAA_HARD_03_3",
-        question:
-          "The proposed reduction of share capital as part of the arrangement:",
-        options: [
-          "Need never be disclosed",
-          "Is a matter that should be disclosed in the application",
-          "Can only be disclosed after the merger",
-          "Is relevant only to creditors",
-        ],
-        answer: 1,
-        reason:
-          "Where reduction of share capital is included in the compromise or arrangement, it is a material matter requiring disclosure.",
-        explanation:
-          "Where reduction of share capital is included in the compromise or arrangement, it is a material matter requiring disclosure.",
-      },
-      {
-        id: "CAA_HARD_03_4",
-        question:
-          "The Board's argument that all preference shareholders must necessarily vote together is:",
-        options: [
-          "Correct in every case",
-          "Incorrect if their rights are sufficiently different to require separate classification",
-          "Correct only if the company is listed",
-          "Correct only if dividends are cumulative",
-        ],
-        answer: 1,
-        reason:
-          "The legal classification depends on the similarity of rights and interests rather than merely the security type.",
-        explanation:
-          "The legal classification depends on the similarity of rights and interests rather than merely the security type.",
-      },
-      {
-        id: "CAA_HARD_03_5",
-        question:
-          "The conversion of preference shares into equity shares under a scheme may require consideration of:",
-        options: [
-          "The rights and interests of the preference shareholders",
-          "Only the company's authorised capital",
-          "Only the Registrar's opinion",
-          "Only the tax department's approval",
-        ],
-        answer: 0,
-        reason:
-          "The Tribunal must consider the rights of affected classes while evaluating the scheme.",
-        explanation:
-          "The Tribunal must consider the rights of affected classes while evaluating the scheme.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -23164,70 +21547,8 @@ const AICaseStudies = [
           "The Tribunal's order may provide for continuation of legal proceedings by or against the transferee company.",
         explanation:
           "The Tribunal's order may provide for continuation of legal proceedings by or against the transferee company.",
-      },
-      {
-        id: "CAA_HARD_04_2",
-        question: "The transfer of employees under an amalgamation scheme is:",
-        options: [
-          "A matter that may be provided for in the scheme",
-          "Prohibited",
-          "Possible only after winding up",
-          "Possible only if all employees resign first",
-        ],
-        answer: 0,
-        reason:
-          "The scheme may provide for transfer of employees of the transferor company to the transferee company.",
-        explanation:
-          "The scheme may provide for transfer of employees of the transferor company to the transferee company.",
-      },
-      {
-        id: "CAA_HARD_04_3",
-        question:
-          "Shares held by the transferee company in itself as a result of the scheme are generally:",
-        options: [
-          "Allowed indefinitely",
-          "Cancelled or extinguished",
-          "Converted into debentures",
-          "Transferred to the Registrar",
-        ],
-        answer: 1,
-        reason:
-          "Section 232 contains restrictions concerning the transferee company holding its own shares as a result of the scheme.",
-        explanation:
-          "Section 232 contains restrictions concerning the transferee company holding its own shares as a result of the scheme.",
-      },
-      {
-        id: "CAA_HARD_04_4",
-        question:
-          "The continuation of the arbitration after amalgamation primarily illustrates:",
-        options: [
-          "Succession of legal proceedings under the scheme",
-          "Reduction of capital",
-          "Minority squeeze-out",
-          "Fast-track merger",
-        ],
-        answer: 0,
-        reason:
-          "A merger scheme may provide for continuation of pending legal proceedings by or against the transferee company.",
-        explanation:
-          "A merger scheme may provide for continuation of pending legal proceedings by or against the transferee company.",
-      },
-      {
-        id: "CAA_HARD_04_5",
-        question:
-          "The fact that Metro Components is a wholly-owned subsidiary is particularly relevant to:",
-        options: [
-          "The possibility of using the simplified merger mechanism where statutory conditions are met",
-          "Automatic dissolution without statutory procedure",
-          "Avoiding all creditor rights",
-          "Avoiding Tribunal jurisdiction in every case",
-        ],
-        answer: 0,
-        reason:
-          "Certain mergers involving wholly-owned subsidiaries may qualify for the fast-track procedure under Section 233, subject to statutory conditions.",
-        explanation:
-          "Certain mergers involving wholly-owned subsidiaries may qualify for the fast-track procedure under Section 233, subject to statutory conditions.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -23325,70 +21646,8 @@ const AICaseStudies = [
           "The unlisted transferee company does not automatically become listed merely because of the merger.",
         explanation:
           "The unlisted transferee company does not automatically become listed merely because of the merger.",
-      },
-      {
-        id: "CAA_HARD_05_2",
-        question:
-          "The exit option for dissenting shareholders is primarily intended to address:",
-        options: [
-          "The consequences of moving from a listed to an unlisted security",
-          "Appointment of auditors",
-          "Payment of employee bonuses",
-          "Reduction in authorised capital",
-        ],
-        answer: 0,
-        reason:
-          "The statutory framework recognizes the need to protect shareholders where a listed transferor merges into an unlisted transferee.",
-        explanation:
-          "The statutory framework recognizes the need to protect shareholders where a listed transferor merges into an unlisted transferee.",
-      },
-      {
-        id: "CAA_HARD_05_3",
-        question:
-          "The valuation report in the circumstances described should be prepared by:",
-        options: [
-          "A registered valuer",
-          "The Registrar",
-          "The Official Liquidator",
-          "The company's internal auditor",
-        ],
-        answer: 0,
-        reason:
-          "Valuation required under the merger provisions is undertaken by a registered valuer.",
-        explanation:
-          "Valuation required under the merger provisions is undertaken by a registered valuer.",
-      },
-      {
-        id: "CAA_HARD_05_4",
-        question:
-          "The Board's argument that majority approval eliminates all statutory protections is:",
-        options: [
-          "Correct",
-          "Incorrect",
-          "Correct only for listed companies",
-          "Correct only where 90% approve",
-        ],
-        answer: 1,
-        reason:
-          "Approval of the scheme does not eliminate statutory safeguards applicable to affected shareholders.",
-        explanation:
-          "Approval of the scheme does not eliminate statutory safeguards applicable to affected shareholders.",
-      },
-      {
-        id: "CAA_HARD_05_5",
-        question: "The exchange ratio should primarily be supported by:",
-        options: [
-          "An appropriate valuation exercise",
-          "A resolution of employees",
-          "The Registrar's personal estimate",
-          "The company's previous dividend",
-        ],
-        answer: 0,
-        reason:
-          "The share exchange ratio should be supported by an appropriate valuation exercise and relevant expert report.",
-        explanation:
-          "The share exchange ratio should be supported by an appropriate valuation exercise and relevant expert report.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -23486,70 +21745,8 @@ const AICaseStudies = [
           "Nine-tenths in value is the relevant creditor approval threshold for the fast-track mechanism.",
         explanation:
           "Nine-tenths in value is the relevant creditor approval threshold for the fast-track mechanism.",
-      },
-      {
-        id: "CAA_HARD_06_2",
-        question:
-          "The fact that one creditor holding 4% objects automatically prevents approval of the fast-track scheme.",
-        options: [
-          "Yes",
-          "No",
-          "Yes, regardless of its voting rights",
-          "Yes, because every secured creditor has a veto",
-        ],
-        answer: 1,
-        reason:
-          "The statutory approval requirement is based on the prescribed majority in value; an individual creditor does not automatically possess a veto merely because it objects.",
-        explanation:
-          "The statutory approval requirement is based on the prescribed majority in value; an individual creditor does not automatically possess a veto merely because it objects.",
-      },
-      {
-        id: "CAA_HARD_06_3",
-        question: "The Registrar's objection is relevant because:",
-        options: [
-          "Objections and suggestions are considered in the prescribed fast-track process",
-          "The Registrar can independently sanction every merger",
-          "The Registrar becomes a shareholder",
-          "The Registrar replaces the Tribunal in every merger",
-        ],
-        answer: 0,
-        reason:
-          "The Registrar and Official Liquidator have a statutory role in examining and communicating objections or suggestions.",
-        explanation:
-          "The Registrar and Official Liquidator have a statutory role in examining and communicating objections or suggestions.",
-      },
-      {
-        id: "CAA_HARD_06_4",
-        question:
-          "If the Central Government considers the scheme not to be in public interest or creditors' interest, it may:",
-        options: [
-          "Apply to the Tribunal for consideration under the normal merger procedure",
-          "Automatically dissolve both companies",
-          "Transfer the matter to SEBI",
-          "Cancel all creditor claims",
-        ],
-        answer: 0,
-        reason:
-          "The Central Government may refer the scheme to the Tribunal if it considers that the scheme should not proceed through the fast-track route.",
-        explanation:
-          "The Central Government may refer the scheme to the Tribunal if it considers that the scheme should not proceed through the fast-track route.",
-      },
-      {
-        id: "CAA_HARD_06_5",
-        question:
-          "The contingent liabilities raised by the Official Liquidator are relevant to:",
-        options: [
-          "Whether the scheme adequately addresses liabilities and protects stakeholders",
-          "Only employee remuneration",
-          "Only dividend declaration",
-          "Only share certificate printing",
-        ],
-        answer: 0,
-        reason:
-          "Potential liabilities are material when assessing the fairness and implementation of a merger scheme.",
-        explanation:
-          "Potential liabilities are material when assessing the fairness and implementation of a merger scheme.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -23641,70 +21838,8 @@ const AICaseStudies = [
           "Section 234 specifically deals with merger or amalgamation of an Indian company with a foreign company.",
         explanation:
           "Section 234 specifically deals with merger or amalgamation of an Indian company with a foreign company.",
-      },
-      {
-        id: "CAA_HARD_07_2",
-        question:
-          "The statement that the Companies Act cannot apply merely because one company is foreign is:",
-        options: [
-          "Correct",
-          "Incorrect",
-          "Correct only where the foreign company owns no assets",
-          "Correct only where the Indian company is private",
-        ],
-        answer: 1,
-        reason:
-          "Section 234 provides a statutory framework for cross-border mergers.",
-        explanation:
-          "Section 234 provides a statutory framework for cross-border mergers.",
-      },
-      {
-        id: "CAA_HARD_07_3",
-        question:
-          "Prior approval of which authority is relevant under the cross-border merger framework?",
-        options: [
-          "RBI",
-          "Only Registrar",
-          "Only Official Liquidator",
-          "Only Competition Commission",
-        ],
-        answer: 0,
-        reason:
-          "The cross-border merger framework requires compliance with RBI requirements, including prior approval where prescribed.",
-        explanation:
-          "The cross-border merger framework requires compliance with RBI requirements, including prior approval where prescribed.",
-      },
-      {
-        id: "CAA_HARD_07_4",
-        question:
-          "Consideration to foreign shareholders may, subject to applicable requirements, be structured as:",
-        options: [
-          "Cash only",
-          "Depository receipts only",
-          "Cash and/or depository receipts as permitted",
-          "Only preference shares",
-        ],
-        answer: 2,
-        reason:
-          "Section 234 permits consideration in cash, depository receipts, or a combination, subject to applicable provisions.",
-        explanation:
-          "Section 234 permits consideration in cash, depository receipts, or a combination, subject to applicable provisions.",
-      },
-      {
-        id: "CAA_HARD_07_5",
-        question: "A cross-border merger must be examined together with:",
-        options: [
-          "Companies Act provisions and applicable RBI/foreign exchange requirements",
-          "Only the Companies Act",
-          "Only income-tax provisions",
-          "Only foreign company law",
-        ],
-        answer: 0,
-        reason:
-          "Cross-border mergers involve both the Companies Act framework and applicable foreign exchange/RBI requirements.",
-        explanation:
-          "Cross-border mergers involve both the Companies Act framework and applicable foreign exchange/RBI requirements.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -23802,71 +21937,8 @@ const AICaseStudies = [
           "The directors' report contains prescribed information concerning the effect of the scheme on specified stakeholders.",
         explanation:
           "The directors' report contains prescribed information concerning the effect of the scheme on specified stakeholders.",
-      },
-      {
-        id: "CAA_HARD_08_2",
-        question:
-          "A special valuation difficulty encountered by the valuer should:",
-        options: [
-          "Be disclosed where required in the directors' report",
-          "Always be ignored",
-          "Be disclosed only after merger",
-          "Be disclosed only to employees",
-        ],
-        answer: 0,
-        reason:
-          "Special valuation difficulties, if any, are among the matters to be disclosed in the directors' report.",
-        explanation:
-          "Special valuation difficulties, if any, are among the matters to be disclosed in the directors' report.",
-      },
-      {
-        id: "CAA_HARD_08_3",
-        question:
-          "Where the last annual accounts relate to a financial year ending more than six months before the first meeting, the company is required to provide:",
-        options: [
-          "A supplementary accounting statement",
-          "A fresh certificate of incorporation",
-          "A winding-up order",
-          "A new memorandum",
-        ],
-        answer: 0,
-        reason:
-          "A supplementary accounting statement is required in the circumstances prescribed by the Act.",
-        explanation:
-          "A supplementary accounting statement is required in the circumstances prescribed by the Act.",
-      },
-      {
-        id: "CAA_HARD_08_4",
-        question:
-          "The statement that audited annual accounts automatically eliminate the need for the supplementary accounting statement is:",
-        options: [
-          "Correct",
-          "Incorrect",
-          "Correct only for listed companies",
-          "Correct only if shareholders consent",
-        ],
-        answer: 1,
-        reason:
-          "The statutory requirement is triggered by the timing of the latest annual accounts relative to the first meeting.",
-        explanation:
-          "The statutory requirement is triggered by the timing of the latest annual accounts relative to the first meeting.",
-      },
-      {
-        id: "CAA_HARD_08_5",
-        question:
-          "The directors' report concerning the scheme is intended primarily to:",
-        options: [
-          "Provide stakeholders with prescribed information necessary to evaluate the scheme",
-          "Replace the valuation report",
-          "Replace the Tribunal",
-          "Determine tax liability",
-        ],
-        answer: 0,
-        reason:
-          "The directors' report facilitates informed consideration of the proposed scheme by explaining its effects and relevant valuation matters.",
-        explanation:
-          "The directors' report facilitates informed consideration of the proposed scheme by explaining its effects and relevant valuation matters.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -23953,65 +22025,8 @@ const AICaseStudies = [
           "Section 230 requires filing of the Tribunal's order with the Registrar within 30 days of receipt.",
         explanation:
           "Section 230 requires filing of the Tribunal's order with the Registrar within 30 days of receipt.",
-      },
-      {
-        id: "CAA_HARD_09_2",
-        question:
-          "The CFO's proposal to wait until the next financial year is:",
-        options: [
-          "Permitted",
-          "Not permitted merely because the scheme becomes operational later",
-          "Permitted if creditors agree",
-          "Permitted if the company is private",
-        ],
-        answer: 1,
-        reason:
-          "The statutory filing period runs from receipt of the order and is not postponed merely because implementation occurs later.",
-        explanation:
-          "The statutory filing period runs from receipt of the order and is not postponed merely because implementation occurs later.",
-      },
-      {
-        id: "CAA_HARD_09_3",
-        question:
-          "A buy-back included in a compromise or arrangement must comply with:",
-        options: ["Section 68", "Section 48", "Section 90", "Section 234"],
-        answer: 0,
-        reason:
-          "Section 230(10) requires compliance with Section 68 for a buy-back undertaken under a compromise or arrangement.",
-        explanation:
-          "Section 230(10) requires compliance with Section 68 for a buy-back undertaken under a compromise or arrangement.",
-      },
-      {
-        id: "CAA_HARD_09_4",
-        question:
-          "Tribunal sanction of a compromise automatically overrides the requirements of Section 68.",
-        options: [
-          "True",
-          "False",
-          "True only for listed companies",
-          "True only where creditors approve",
-        ],
-        answer: 1,
-        reason:
-          "The specific statutory requirements applicable to buy-back continue to apply.",
-        explanation:
-          "The specific statutory requirements applicable to buy-back continue to apply.",
-      },
-      {
-        id: "CAA_HARD_09_5",
-        question: "The filing requirement primarily ensures:",
-        options: [
-          "Registration and statutory record of the Tribunal's order",
-          "Automatic tax exemption",
-          "Automatic listing of shares",
-          "Cancellation of creditor claims",
-        ],
-        answer: 0,
-        reason:
-          "Filing the order with the Registrar ensures the order is placed on the statutory record.",
-        explanation:
-          "Filing the order with the Registrar ensures the order is placed on the statutory record.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -24107,68 +22122,8 @@ const AICaseStudies = [
           "A merger scheme may provide for transfer and vesting of property, liabilities and other matters specified by law.",
         explanation:
           "A merger scheme may provide for transfer and vesting of property, liabilities and other matters specified by law.",
-      },
-      {
-        id: "CAA_HARD_10_2",
-        question: "Pending legal proceedings against the transferor may:",
-        options: [
-          "Continue by or against the transferee company",
-          "Always terminate automatically",
-          "Continue only against former directors",
-          "Be transferred to the Registrar",
-        ],
-        answer: 0,
-        reason:
-          "The scheme may provide for continuation of pending proceedings by or against the transferee company.",
-        explanation:
-          "The scheme may provide for continuation of pending proceedings by or against the transferee company.",
-      },
-      {
-        id: "CAA_HARD_10_3",
-        question: "Transfer of employees under the merger scheme is:",
-        options: [
-          "Permissible subject to the scheme and applicable requirements",
-          "Automatically prohibited",
-          "Possible only after employee dismissal",
-          "Possible only after liquidation",
-        ],
-        answer: 0,
-        reason:
-          "Transfer of employees is a recognized matter that may be dealt with in a merger scheme.",
-        explanation:
-          "Transfer of employees is a recognized matter that may be dealt with in a merger scheme.",
-      },
-      {
-        id: "CAA_HARD_10_4",
-        question: "The shares held by Alpha in Prime create a problem because:",
-        options: [
-          "The transferee company should not end up holding its own shares through the merger structure",
-          "All shares automatically become preference shares",
-          "The shares must be transferred to employees",
-          "The shares must be listed separately",
-        ],
-        answer: 0,
-        reason:
-          "The merger provisions prevent the transferee company from holding its own shares, directly or through specified structures, as a consequence of the scheme.",
-        explanation:
-          "The merger provisions prevent the transferee company from holding its own shares, directly or through specified structures, as a consequence of the scheme.",
-      },
-      {
-        id: "CAA_HARD_10_5",
-        question:
-          "The lender's objection concerning a contractual clause is primarily relevant to:",
-        options: [
-          "The rights and liabilities affected by the scheme",
-          "The company's registered office",
-          "Appointment of the statutory auditor",
-          "The authorised share capital only",
-        ],
-        answer: 0,
-        reason:
-          "Contractual liabilities and creditor rights are material considerations in evaluating a scheme.",
-        explanation:
-          "Contractual liabilities and creditor rights are material considerations in evaluating a scheme.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -24267,71 +22222,8 @@ const AICaseStudies = [
           "The statutory threshold is not less than nine-tenths in value.",
         explanation:
           "The statutory threshold is not less than nine-tenths in value.",
-      },
-      {
-        id: "CAA_HARD_11_2",
-        question:
-          "The four-month period is relevant because approval must be obtained within:",
-        options: [
-          "Four months after the offer",
-          "Six months after the offer",
-          "One year after the offer",
-          "30 days after the offer",
-        ],
-        answer: 0,
-        reason:
-          "Section 235 provides a four-month period for obtaining the requisite approval.",
-        explanation:
-          "Section 235 provides a four-month period for obtaining the requisite approval.",
-      },
-      {
-        id: "CAA_HARD_11_3",
-        question:
-          "The dissenting shareholder's application within one month of the notice is:",
-        options: [
-          "Within the statutory period",
-          "Too late",
-          "Permitted only after six months",
-          "Automatically invalid",
-        ],
-        answer: 0,
-        reason:
-          "A dissenting shareholder may apply to the Tribunal within one month from the date of the notice.",
-        explanation:
-          "A dissenting shareholder may apply to the Tribunal within one month from the date of the notice.",
-      },
-      {
-        id: "CAA_HARD_11_4",
-        question:
-          "The majority shareholders are required to deposit the purchase consideration in:",
-        options: [
-          "A separate bank account operated by the company",
-          "The personal account of the transferee's managing director",
-          "The account of the Registrar",
-          "The account of the Tribunal",
-        ],
-        answer: 0,
-        reason:
-          "Section 235 requires the purchase consideration to be deposited in the prescribed separate bank account.",
-        explanation:
-          "Section 235 requires the purchase consideration to be deposited in the prescribed separate bank account.",
-      },
-      {
-        id: "CAA_HARD_11_5",
-        question:
-          "The statement that 90% approval completely removes the dissenting shareholder's right to approach the Tribunal is:",
-        options: [
-          "Correct",
-          "Incorrect",
-          "Correct only for listed companies",
-          "Correct only for preference shares",
-        ],
-        answer: 1,
-        reason:
-          "The statute specifically preserves the right of a dissenting shareholder to apply to the Tribunal within the prescribed period.",
-        explanation:
-          "The statute specifically preserves the right of a dissenting shareholder to apply to the Tribunal within the prescribed period.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -24429,70 +22321,8 @@ const AICaseStudies = [
           "The threshold is 90% or more of the issued equity share capital.",
         explanation:
           "The threshold is 90% or more of the issued equity share capital.",
-      },
-      {
-        id: "CAA_HARD_12_2",
-        question:
-          "Section 236 can apply where the 90% holding is acquired through:",
-        options: [
-          "Amalgamation, share exchange, conversion of securities or other specified means",
-          "Only cash purchase",
-          "Only inheritance",
-          "Only rights issue",
-        ],
-        answer: 0,
-        reason:
-          "Section 236 expressly covers acquisition by virtue of amalgamation, share exchange, conversion of securities or other specified means.",
-        explanation:
-          "Section 236 expressly covers acquisition by virtue of amalgamation, share exchange, conversion of securities or other specified means.",
-      },
-      {
-        id: "CAA_HARD_12_3",
-        question:
-          "The minority shareholder's argument that only cash acquisition can trigger Section 236 is:",
-        options: [
-          "Correct",
-          "Incorrect",
-          "Correct only for listed companies",
-          "Correct only for private companies",
-        ],
-        answer: 1,
-        reason: "The provision is not restricted to a simple cash acquisition.",
-        explanation:
-          "The provision is not restricted to a simple cash acquisition.",
-      },
-      {
-        id: "CAA_HARD_12_4",
-        question:
-          "The purchase price under Section 236 is determined on the basis of:",
-        options: [
-          "Valuation by a registered valuer",
-          "Face value alone",
-          "The original issue price alone",
-          "The majority shareholder's unilateral estimate",
-        ],
-        answer: 0,
-        reason:
-          "The fair value is determined in accordance with the statutory valuation mechanism involving a registered valuer.",
-        explanation:
-          "The fair value is determined in accordance with the statutory valuation mechanism involving a registered valuer.",
-      },
-      {
-        id: "CAA_HARD_12_5",
-        question:
-          "The separate bank account mechanism is primarily intended to:",
-        options: [
-          "Secure the consideration payable for acquisition of minority shares",
-          "Pay employee salaries",
-          "Pay income tax",
-          "Fund future expansion",
-        ],
-        answer: 0,
-        reason:
-          "The deposit ensures availability of consideration for the minority shareholders.",
-        explanation:
-          "The deposit ensures availability of consideration for the minority shareholders.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -24581,66 +22411,8 @@ const AICaseStudies = [
           "Section 230 contains provisions concerning treatment of preference shareholders and dividend arrears in the relevant scheme.",
         explanation:
           "Section 230 contains provisions concerning treatment of preference shareholders and dividend arrears in the relevant scheme.",
-      },
-      {
-        id: "CAA_HARD_13_2",
-        question:
-          "The fact that a scheme has received majority approval means that:",
-        options: [
-          "All statutory requirements become irrelevant",
-          "The Tribunal may still examine fairness, statutory compliance and class treatment",
-          "All dissenting shareholders automatically lose their rights",
-          "The Registrar must automatically approve it",
-        ],
-        answer: 1,
-        reason:
-          "Majority approval is necessary but does not eliminate the Tribunal's statutory role in examining the scheme.",
-        explanation:
-          "Majority approval is necessary but does not eliminate the Tribunal's statutory role in examining the scheme.",
-      },
-      {
-        id: "CAA_HARD_13_3",
-        question:
-          "Variation of rights attached to preference shares is connected with:",
-        options: ["Section 48", "Section 68", "Section 90", "Section 236"],
-        answer: 0,
-        reason:
-          "Variation of shareholders' rights is dealt with under Section 48.",
-        explanation:
-          "Variation of shareholders' rights is dealt with under Section 48.",
-      },
-      {
-        id: "CAA_HARD_13_4",
-        question:
-          "The central issue in deciding whether Class I and Class II should be treated as one class is:",
-        options: [
-          "Similarity of their rights and interests",
-          "The colour of their share certificates",
-          "The date on which dividends were declared",
-          "The location of the shareholders",
-        ],
-        answer: 0,
-        reason:
-          "Class constitution depends on similarity of legal rights and interests.",
-        explanation:
-          "Class constitution depends on similarity of legal rights and interests.",
-      },
-      {
-        id: "CAA_HARD_13_5",
-        question:
-          "The issuance of equity shares to implement the arrangement is:",
-        options: [
-          "A matter that can form part of the scheme, subject to applicable statutory requirements",
-          "Always prohibited",
-          "Possible only after liquidation",
-          "Outside the scope of any scheme",
-        ],
-        answer: 0,
-        reason:
-          "Schemes may provide for issue or allotment of securities to implement the arrangement, subject to applicable law.",
-        explanation:
-          "Schemes may provide for issue or allotment of securities to implement the arrangement, subject to applicable law.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -24739,71 +22511,8 @@ const AICaseStudies = [
           "Where the statutory time condition is met, a supplementary accounting statement is required.",
         explanation:
           "Where the statutory time condition is met, a supplementary accounting statement is required.",
-      },
-      {
-        id: "CAA_HARD_14_2",
-        question:
-          "The valuation difficulty concerning the foreign subsidiary should be:",
-        options: [
-          "Appropriately disclosed as required",
-          "Ignored",
-          "Disclosed only after completion",
-          "Disclosed only to creditors",
-        ],
-        answer: 0,
-        reason:
-          "Special valuation difficulties are relevant information for stakeholders evaluating the scheme.",
-        explanation:
-          "Special valuation difficulties are relevant information for stakeholders evaluating the scheme.",
-      },
-      {
-        id: "CAA_HARD_14_3",
-        question:
-          "The effect of the scheme on promoters and non-promoter shareholders is:",
-        options: [
-          "Relevant information in the directors' report",
-          "Never required",
-          "Relevant only after merger",
-          "Relevant only to creditors",
-        ],
-        answer: 0,
-        reason:
-          "The directors' report contains information concerning the effect of the scheme on specified shareholder groups.",
-        explanation:
-          "The directors' report contains information concerning the effect of the scheme on specified shareholder groups.",
-      },
-      {
-        id: "CAA_HARD_14_4",
-        question:
-          "Member approval does not automatically eliminate the Tribunal's power to:",
-        options: [
-          "Examine statutory compliance and stakeholder protection",
-          "Ignore all objections",
-          "Cancel the Companies Act",
-          "Replace the Registrar permanently",
-        ],
-        answer: 0,
-        reason:
-          "The Tribunal must consider the statutory requirements and relevant stakeholder interests before sanctioning the scheme.",
-        explanation:
-          "The Tribunal must consider the statutory requirements and relevant stakeholder interests before sanctioning the scheme.",
-      },
-      {
-        id: "CAA_HARD_14_5",
-        question:
-          "The strongest legal characterization of the Board's argument is:",
-        options: [
-          "Incorrect because compliance and disclosure requirements remain relevant despite majority approval",
-          "Correct in every circumstance",
-          "Correct only for private companies",
-          "Correct only where creditors approve",
-        ],
-        answer: 0,
-        reason:
-          "Majority approval does not cure substantive statutory non-compliance or material disclosure deficiencies.",
-        explanation:
-          "Majority approval does not cure substantive statutory non-compliance or material disclosure deficiencies.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -24891,70 +22600,8 @@ const AICaseStudies = [
         reason: "90.2% exceeds the nine-tenths threshold.",
         reason: "90.2% exceeds the nine-tenths threshold.",
         explanation: "90.2% exceeds the nine-tenths threshold.",
-      },
-      {
-        id: "CAA_HARD_15_2",
-        question:
-          "The fact that creditors representing 90.2% approved the scheme does not necessarily resolve:",
-        options: [
-          "Whether creditors were correctly classified",
-          "Whether the percentage exceeds 90%",
-          "Whether the scheme exists",
-          "Whether the companies have creditors",
-        ],
-        answer: 0,
-        reason:
-          "Correct class constitution remains important. A numerical majority cannot cure improper classification.",
-        explanation:
-          "Correct class constitution remains important. A numerical majority cannot cure improper classification.",
-      },
-      {
-        id: "CAA_HARD_15_3",
-        question:
-          "The Official Liquidator's concern regarding environmental liability is:",
-        options: [
-          "Relevant to the assessment of liabilities under the scheme",
-          "Irrelevant because environmental matters are never considered",
-          "Relevant only to employees",
-          "Relevant only after dissolution",
-        ],
-        answer: 0,
-        reason:
-          "Outstanding or contingent liabilities are relevant to determining the fairness and implementation of a scheme.",
-        explanation:
-          "Outstanding or contingent liabilities are relevant to determining the fairness and implementation of a scheme.",
-      },
-      {
-        id: "CAA_HARD_15_4",
-        question: "The declaration of solvency is:",
-        options: [
-          "A requirement in the fast-track merger procedure",
-          "Required only for creditors",
-          "Required only after merger",
-          "Not connected with Section 233",
-        ],
-        answer: 0,
-        reason:
-          "The companies involved in the fast-track merger procedure are required to file declarations of solvency.",
-        explanation:
-          "The companies involved in the fast-track merger procedure are required to file declarations of solvency.",
-      },
-      {
-        id: "CAA_HARD_15_5",
-        question:
-          "If creditors with materially different rights have been improperly grouped together, the principal concern is:",
-        options: [
-          "Whether the voting process fairly represents the relevant class",
-          "Whether the company has a registered office",
-          "Whether the company has employees",
-          "Whether the company is profitable",
-        ],
-        answer: 0,
-        reason:
-          "Proper constitution of classes is fundamental because approval must be obtained from the persons whose rights are being compromised.",
-        explanation:
-          "Proper constitution of classes is fundamental because approval must be obtained from the persons whose rights are being compromised.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -25046,65 +22693,8 @@ const AICaseStudies = [
           "Section 237 deals with amalgamation of companies in the public interest.",
         explanation:
           "Section 237 deals with amalgamation of companies in the public interest.",
-      },
-      {
-        id: "CAA_HARD_16_2",
-        question: "Before making the final order, the Central Government must:",
-        options: [
-          "Send a draft order to the companies concerned and provide an opportunity for suggestions and objections",
-          "Obtain unanimous employee consent",
-          "Obtain approval from every creditor",
-          "Obtain approval from every shareholder",
-        ],
-        answer: 0,
-        reason:
-          "The companies concerned must be given an opportunity to make representations on the draft order.",
-        explanation:
-          "The companies concerned must be given an opportunity to make representations on the draft order.",
-      },
-      {
-        id: "CAA_HARD_16_3",
-        question:
-          "The statutory minimum period for suggestions and objections under the relevant provision is:",
-        options: ["15 days", "30 days", "Two months", "Six months"],
-        answer: 2,
-        reason:
-          "The period specified for representations cannot be less than two months.",
-        explanation:
-          "The period specified for representations cannot be less than two months.",
-      },
-      {
-        id: "CAA_HARD_16_4",
-        question:
-          "An aggrieved person may challenge the compensation assessment before:",
-        options: [
-          "The Tribunal",
-          "The Registrar",
-          "The RBI",
-          "The Official Liquidator only",
-        ],
-        answer: 0,
-        reason:
-          "Section 237 provides an appeal mechanism to the Tribunal against the compensation assessment.",
-        explanation:
-          "Section 237 provides an appeal mechanism to the Tribunal against the compensation assessment.",
-      },
-      {
-        id: "CAA_HARD_16_5",
-        question:
-          "The argument that compensation cannot be challenged merely because the amalgamation order has been issued is:",
-        options: [
-          "Incorrect",
-          "Correct",
-          "Correct only where the shareholder holds less than 1%",
-          "Correct only for listed companies",
-        ],
-        answer: 0,
-        reason:
-          "The statute specifically provides a mechanism for challenging the compensation assessment.",
-        explanation:
-          "The statute specifically provides a mechanism for challenging the compensation assessment.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -25203,71 +22793,8 @@ const AICaseStudies = [
           "The exchange ratio should be supported by an appropriate valuation methodology considering relevant assets, liabilities and business prospects.",
         explanation:
           "The exchange ratio should be supported by an appropriate valuation methodology considering relevant assets, liabilities and business prospects.",
-      },
-      {
-        id: "CAA_HARD_17_2",
-        question:
-          "A recently acquired patent may be relevant to valuation even if:",
-        options: [
-          "Its value is not fully reflected in historical-cost-based financial statements",
-          "It has no legal ownership",
-          "It is unrelated to the business",
-          "It has already expired",
-        ],
-        answer: 0,
-        reason:
-          "Valuation is not necessarily limited to historical accounting carrying values; relevant intangible assets may affect economic value.",
-        explanation:
-          "Valuation is not necessarily limited to historical accounting carrying values; relevant intangible assets may affect economic value.",
-      },
-      {
-        id: "CAA_HARD_17_3",
-        question:
-          "Shares held by the transferee company in itself as a consequence of the scheme should generally be:",
-        options: [
-          "Cancelled or extinguished",
-          "Retained indefinitely",
-          "Transferred to directors",
-          "Converted into government securities",
-        ],
-        answer: 0,
-        reason:
-          "The merger provisions address and generally require cancellation or extinguishment of such self-held shares.",
-        explanation:
-          "The merger provisions address and generally require cancellation or extinguishment of such self-held shares.",
-      },
-      {
-        id: "CAA_HARD_17_4",
-        question:
-          "The principal purpose of an expert valuation report in this context is to:",
-        options: [
-          "Support a fair and reasoned basis for the share exchange ratio",
-          "Replace the Tribunal",
-          "Determine income-tax liability conclusively",
-          "Approve employee salaries",
-        ],
-        answer: 0,
-        reason:
-          "The valuation report provides an expert basis for the proposed exchange ratio.",
-        explanation:
-          "The valuation report provides an expert basis for the proposed exchange ratio.",
-      },
-      {
-        id: "CAA_HARD_17_5",
-        question:
-          "The Board's statement that only historical cost should determine the exchange ratio is:",
-        options: [
-          "Too narrow",
-          "Always correct",
-          "Mandatory under Section 232",
-          "Mandatory for all registered valuers",
-        ],
-        answer: 0,
-        reason:
-          "A merger valuation generally considers economic value and appropriate valuation methodologies rather than historical cost alone.",
-        explanation:
-          "A merger valuation generally considers economic value and appropriate valuation methodologies rather than historical cost alone.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -25364,70 +22891,8 @@ const AICaseStudies = [
           "The statutory framework permits comprehensive provisions concerning property, liabilities, undertaking and other matters necessary for implementation.",
         explanation:
           "The statutory framework permits comprehensive provisions concerning property, liabilities, undertaking and other matters necessary for implementation.",
-      },
-      {
-        id: "CAA_HARD_18_2",
-        question:
-          "Where a revised scheme materially changes the rights of a class of creditors, the principal concern is:",
-        options: [
-          "Whether the affected class has been given the appropriate statutory opportunity to consider the revised arrangement",
-          "Whether the company has enough directors",
-          "Whether the registered office changes",
-          "Whether the auditor resigns",
-        ],
-        answer: 0,
-        reason:
-          "Material changes affecting a class can raise issues concerning proper class approval and stakeholder consent.",
-        explanation:
-          "Material changes affecting a class can raise issues concerning proper class approval and stakeholder consent.",
-      },
-      {
-        id: "CAA_HARD_18_3",
-        question:
-          "Contracts containing assignment restrictions are relevant because:",
-        options: [
-          "The scheme must properly address contractual rights and obligations",
-          "Contracts automatically disappear on a scheme",
-          "All contracts are irrelevant to mergers",
-          "Only employee contracts matter",
-        ],
-        answer: 0,
-        reason:
-          "Contractual rights and liabilities are relevant to implementation and must be appropriately dealt with in the scheme.",
-        explanation:
-          "Contractual rights and liabilities are relevant to implementation and must be appropriately dealt with in the scheme.",
-      },
-      {
-        id: "CAA_HARD_18_4",
-        question: "The Tribunal's role includes consideration of:",
-        options: [
-          "Whether the scheme complies with statutory requirements and adequately addresses stakeholder interests",
-          "Only the company's profit",
-          "Only the directors' wishes",
-          "Only the tax consequences",
-        ],
-        answer: 0,
-        reason:
-          "The Tribunal considers statutory compliance and relevant stakeholder interests while exercising its jurisdiction.",
-        explanation:
-          "The Tribunal considers statutory compliance and relevant stakeholder interests while exercising its jurisdiction.",
-      },
-      {
-        id: "CAA_HARD_18_5",
-        question:
-          "The strongest reason for clearly identifying transferred liabilities is:",
-        options: [
-          "To establish the legal and financial consequences of the scheme",
-          "To determine employee attendance",
-          "To calculate directors' remuneration",
-          "To decide the registered office",
-        ],
-        answer: 0,
-        reason:
-          "Clear allocation of liabilities is essential for implementation and protection of creditors and other stakeholders.",
-        explanation:
-          "Clear allocation of liabilities is essential for implementation and protection of creditors and other stakeholders.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -25522,68 +22987,8 @@ const AICaseStudies = [
           "The application requires disclosure of the latest financial position and auditor's report among other material facts.",
         explanation:
           "The application requires disclosure of the latest financial position and auditor's report among other material facts.",
-      },
-      {
-        id: "CAA_HARD_19_2",
-        question:
-          "A pending proceeding involving a subsidiary may be relevant where:",
-        options: [
-          "It constitutes a material fact affecting the company's affairs or the proposed arrangement",
-          "It is never relevant",
-          "It involves no monetary amount",
-          "Only shareholders request disclosure",
-        ],
-        answer: 0,
-        reason:
-          "Material pending proceedings and investigations must be appropriately disclosed where relevant to the company's affairs and scheme.",
-        explanation:
-          "Material pending proceedings and investigations must be appropriately disclosed where relevant to the company's affairs and scheme.",
-      },
-      {
-        id: "CAA_HARD_19_3",
-        question: "Creditors holding more than 5% of outstanding debt:",
-        options: [
-          "Meet the statutory threshold for raising objections",
-          "Never have standing to object",
-          "Need 50% of debt",
-          "Need 90% of debt",
-        ],
-        answer: 0,
-        reason:
-          "The statutory threshold is not less than 5% of the total outstanding debt.",
-        explanation:
-          "The statutory threshold is not less than 5% of the total outstanding debt.",
-      },
-      {
-        id: "CAA_HARD_19_4",
-        question: "Reduction of share capital included in the scheme is:",
-        options: [
-          "A matter requiring appropriate disclosure and compliance with applicable law",
-          "Completely irrelevant",
-          "Automatically valid merely because the scheme exists",
-          "Relevant only to employees",
-        ],
-        answer: 0,
-        reason:
-          "A reduction of share capital included in the scheme must be disclosed and implemented in accordance with the applicable statutory framework.",
-        explanation:
-          "A reduction of share capital included in the scheme must be disclosed and implemented in accordance with the applicable statutory framework.",
-      },
-      {
-        id: "CAA_HARD_19_5",
-        question: "The principal issue with an outdated valuation date is:",
-        options: [
-          "Whether the valuation appropriately reflects the relevant circumstances for the proposed transaction",
-          "Whether the company has enough employees",
-          "Whether the registered office is correct",
-          "Whether the company has filed annual returns",
-        ],
-        answer: 0,
-        reason:
-          "A valuation must be appropriate to the transaction and its relevant circumstances; an outdated valuation may require examination.",
-        explanation:
-          "A valuation must be appropriate to the transaction and its relevant circumstances; an outdated valuation may require examination.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -25683,70 +23088,8 @@ const AICaseStudies = [
           "The majority and three-fourths value requirements operate within the properly constituted class. Incorrect class constitution can undermine the validity of the voting process.",
         explanation:
           "The majority and three-fourths value requirements operate within the properly constituted class. Incorrect class constitution can undermine the validity of the voting process.",
-      },
-      {
-        id: "CAA_HARD_20_2",
-        question:
-          "The pending investigation should have been considered for disclosure because:",
-        options: [
-          "Material investigations or proceedings are relevant disclosures under Section 230",
-          "Investigations are never relevant to schemes",
-          "Only investigations involving current directors are disclosed",
-          "Only criminal investigations require disclosure",
-        ],
-        answer: 0,
-        reason:
-          "Section 230 requires disclosure of material facts, including pending investigations or proceedings relevant to the company.",
-        explanation:
-          "Section 230 requires disclosure of material facts, including pending investigations or proceedings relevant to the company.",
-      },
-      {
-        id: "CAA_HARD_20_3",
-        question:
-          "The company's decision to delay filing the Tribunal's order until contractual transfers are completed is:",
-        options: [
-          "Not justified merely on that basis because the Act prescribes a filing period",
-          "Always correct",
-          "Correct only where creditors agree",
-          "Correct only for listed companies",
-        ],
-        answer: 0,
-        reason:
-          "The Tribunal's order must be filed with the Registrar within the statutory period from receipt of the order.",
-        explanation:
-          "The Tribunal's order must be filed with the Registrar within the statutory period from receipt of the order.",
-      },
-      {
-        id: "CAA_HARD_20_4",
-        question: "The buy-back component of the scheme must comply with:",
-        options: [
-          "Section 68",
-          "Section 48 only",
-          "Section 234 only",
-          "Section 237 only",
-        ],
-        answer: 0,
-        reason:
-          "A buy-back under a compromise or arrangement must comply with Section 68.",
-        explanation:
-          "A buy-back under a compromise or arrangement must comply with Section 68.",
-      },
-      {
-        id: "CAA_HARD_20_5",
-        question:
-          "The objection of shareholders of the listed transferor concerning receipt of shares in an unlisted transferee is primarily addressed by:",
-        options: [
-          "The statutory protections applicable where a listed company merges with an unlisted company",
-          "Automatic cancellation of the merger",
-          "Section 236 minority purchase only",
-          "The provisions relating to investigation of ownership only",
-        ],
-        answer: 0,
-        reason:
-          "Where a listed transferor merges with an unlisted transferee, the merger framework provides safeguards including an appropriate exit mechanism for dissenting shareholders in the prescribed circumstances.",
-        explanation:
-          "Where a listed transferor merges with an unlisted transferee, the merger framework provides safeguards including an appropriate exit mechanism for dissenting shareholders in the prescribed circumstances.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -25845,71 +23188,8 @@ const AICaseStudies = [
           "The decisive issue is similarity of rights and interests. Creditors whose rights are sufficiently different may need to constitute separate classes.",
         explanation:
           "The decisive issue is similarity of rights and interests. Creditors whose rights are sufficiently different may need to constitute separate classes.",
-      },
-      {
-        id: "CAA_VH_01_2",
-        question:
-          "Assuming the 5.2% creditor satisfies all other statutory conditions, the creditor:",
-        options: [
-          "Fails because the threshold is 10%",
-          "Fails because the threshold is 7.5%",
-          "Meets the statutory 5% debt threshold for objecting",
-          "Can object only if secured",
-        ],
-        answer: 2,
-        reason:
-          "A creditor holding not less than 5% of the total outstanding debt can object, subject to the statutory requirements.",
-        explanation:
-          "A creditor holding not less than 5% of the total outstanding debt can object, subject to the statutory requirements.",
-      },
-      {
-        id: "CAA_VH_01_3",
-        question:
-          "If the classes were incorrectly combined, the fact that 78% of total debt approved the scheme would:",
-        options: [
-          "Automatically cure the defect",
-          "Not necessarily cure the defect because approval must be considered class-wise where separate classes are required",
-          "Make the scheme binding regardless of the rights of Class C",
-          "Make Tribunal scrutiny unnecessary",
-        ],
-        answer: 1,
-        reason:
-          "A numerical majority cannot cure an improperly constituted class. The statutory voting process depends on proper classification.",
-        explanation:
-          "A numerical majority cannot cure an improperly constituted class. The statutory voting process depends on proper classification.",
-      },
-      {
-        id: "CAA_VH_01_4",
-        question:
-          "Which fact most strongly supports separate treatment of Class C?",
-        options: [
-          "Class C has smaller claims individually",
-          "Class C creditors are geographically dispersed",
-          "Class C creditors have materially different rights and substantially different treatment under the scheme",
-          "Class C creditors are trade creditors by name",
-        ],
-        answer: 2,
-        reason:
-          "The relevant consideration is the nature of the rights and interests and the treatment under the scheme.",
-        explanation:
-          "The relevant consideration is the nature of the rights and interests and the treatment under the scheme.",
-      },
-      {
-        id: "CAA_VH_01_5",
-        question:
-          "The company's argument that an overall 78% approval prevents consideration of individual objections is:",
-        options: [
-          "Correct in all cases",
-          "Incorrect because statutory objection rights and proper class constitution remain relevant",
-          "Correct where secured creditors approve",
-          "Correct if the company is financially distressed",
-        ],
-        answer: 1,
-        reason:
-          "Majority approval does not extinguish statutory rights of eligible objectors or eliminate the requirement of proper class constitution.",
-        explanation:
-          "Majority approval does not extinguish statutory rights of eligible objectors or eliminate the requirement of proper class constitution.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -26008,70 +23288,8 @@ const AICaseStudies = [
           "The prescribed majority is necessary but does not eliminate other statutory conditions, including proper procedure and consideration of objections.",
         explanation:
           "The prescribed majority is necessary but does not eliminate other statutory conditions, including proper procedure and consideration of objections.",
-      },
-      {
-        id: "CAA_VH_02_2",
-        question:
-          "The disputed and rejected claim included in the denominator creates a potential issue concerning:",
-        options: [
-          "Proper determination of the relevant creditor class and voting entitlement",
-          "The authorised share capital only",
-          "Appointment of directors",
-          "The company's registered office",
-        ],
-        answer: 0,
-        reason:
-          "Determination of the relevant creditors and their voting rights is fundamental to calculating the statutory approval.",
-        explanation:
-          "Determination of the relevant creditors and their voting rights is fundamental to calculating the statutory approval.",
-      },
-      {
-        id: "CAA_VH_02_3",
-        question:
-          "The Central Government may refuse to allow the matter to proceed under the fast-track route where:",
-        options: [
-          "The scheme raises issues requiring consideration by the Tribunal under the statutory framework",
-          "Any single creditor objects",
-          "The company has intellectual property",
-          "The subsidiary is wholly owned",
-        ],
-        answer: 0,
-        reason:
-          "The Central Government can refer the scheme to the Tribunal where statutory conditions warrant consideration under the regular procedure.",
-        explanation:
-          "The Central Government can refer the scheme to the Tribunal where statutory conditions warrant consideration under the regular procedure.",
-      },
-      {
-        id: "CAA_VH_02_4",
-        question:
-          "The Official Liquidator's environmental-liability objection is significant because:",
-        options: [
-          "Environmental liabilities are automatically extinguished on merger",
-          "The scheme must adequately address liabilities transferred or assumed under the merger",
-          "Only financial liabilities matter in a merger",
-          "Environmental liabilities can be ignored if members approve",
-        ],
-        answer: 1,
-        reason:
-          "Liabilities form an important part of the scheme and cannot simply be disregarded because the transaction is a merger.",
-        explanation:
-          "Liabilities form an important part of the scheme and cannot simply be disregarded because the transaction is a merger.",
-      },
-      {
-        id: "CAA_VH_02_5",
-        question: "The fact that the transferee is a wholly-owned subsidiary:",
-        options: [
-          "May make the transaction eligible for the fast-track framework, subject to statutory conditions",
-          "Automatically eliminates every statutory requirement",
-          "Automatically dissolves the subsidiary without a scheme",
-          "Makes creditor approval unnecessary",
-        ],
-        answer: 0,
-        reason:
-          "Wholly-owned subsidiary mergers may qualify for the simplified procedure, but the prescribed statutory conditions still apply.",
-        explanation:
-          "Wholly-owned subsidiary mergers may qualify for the simplified procedure, but the prescribed statutory conditions still apply.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -26170,70 +23388,8 @@ const AICaseStudies = [
           "A listed transferor merging into an unlisted transferee raises specific statutory protection and exit considerations.",
         explanation:
           "A listed transferor merging into an unlisted transferee raises specific statutory protection and exit considerations.",
-      },
-      {
-        id: "CAA_VH_03_2",
-        question:
-          "The fact that the economic valuation is equivalent necessarily means that no exit protection can apply.",
-        options: [
-          "True",
-          "False",
-          "True only where institutional investors approve",
-          "True only where the exchange ratio is certified",
-        ],
-        answer: 1,
-        reason:
-          "Economic valuation and statutory shareholder protection are separate considerations. Equal valuation does not automatically eliminate statutory safeguards.",
-        explanation:
-          "Economic valuation and statutory shareholder protection are separate considerations. Equal valuation does not automatically eliminate statutory safeguards.",
-      },
-      {
-        id: "CAA_VH_03_3",
-        question: "The shareholder holding 11.5% is significant because:",
-        options: [
-          "The shareholder exceeds the statutory shareholding threshold for raising an objection",
-          "Any shareholder above 1% automatically controls the scheme",
-          "Only institutional shareholders may object",
-          "The shareholder becomes a creditor",
-        ],
-        answer: 0,
-        reason:
-          "A member holding not less than 10% of the shareholding satisfies the prescribed threshold for objecting, subject to other conditions.",
-        explanation:
-          "A member holding not less than 10% of the shareholding satisfies the prescribed threshold for objecting, subject to other conditions.",
-      },
-      {
-        id: "CAA_VH_03_4",
-        question:
-          "If Meridian's market price is ₹480 but its valuation is ₹520, which value is necessarily required to determine the exchange ratio?",
-        options: [
-          "Only ₹480",
-          "Only ₹520",
-          "Neither figure alone; the prescribed valuation methodology and relevant circumstances must be considered",
-          "The face value of the shares",
-        ],
-        answer: 2,
-        reason:
-          "A merger exchange ratio is not determined mechanically by market price or a single valuation figure; the appropriate valuation exercise must be considered.",
-        explanation:
-          "A merger exchange ratio is not determined mechanically by market price or a single valuation figure; the appropriate valuation exercise must be considered.",
-      },
-      {
-        id: "CAA_VH_03_5",
-        question:
-          "The Board's statement that majority approval eliminates the shareholders' statutory protection is:",
-        options: [
-          "Correct",
-          "Incorrect",
-          "Correct only if 90% approve",
-          "Correct only if the valuer agrees",
-        ],
-        answer: 1,
-        reason:
-          "Statutory protections applicable to affected shareholders are not automatically waived by majority approval.",
-        explanation:
-          "Statutory protections applicable to affected shareholders are not automatically waived by majority approval.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -26327,70 +23483,8 @@ const AICaseStudies = [
           "Section 234 specifically governs merger or amalgamation of an Indian company with a foreign company.",
         explanation:
           "Section 234 specifically governs merger or amalgamation of an Indian company with a foreign company.",
-      },
-      {
-        id: "CAA_VH_04_2",
-        question:
-          "The director's statement that RBI requirements can simply be ignored until after Tribunal sanction is:",
-        options: [
-          "Correct",
-          "Incorrect",
-          "Correct where the foreign company has no Indian assets",
-          "Correct where both boards approve",
-        ],
-        answer: 1,
-        reason:
-          "Cross-border mergers must comply with applicable RBI and foreign exchange requirements.",
-        explanation:
-          "Cross-border mergers must comply with applicable RBI and foreign exchange requirements.",
-      },
-      {
-        id: "CAA_VH_04_3",
-        question:
-          "The proposed consideration to foreign shareholders may, subject to applicable conditions, include:",
-        options: [
-          "Cash and/or depository receipts",
-          "Only Indian currency",
-          "Only ordinary shares",
-          "Only preference shares",
-        ],
-        answer: 0,
-        reason:
-          "The statutory framework permits consideration through cash, depository receipts or a combination, subject to applicable requirements.",
-        explanation:
-          "The statutory framework permits consideration through cash, depository receipts or a combination, subject to applicable requirements.",
-      },
-      {
-        id: "CAA_VH_04_4",
-        question:
-          "The presence of overseas contractual rights means that the scheme should:",
-        options: [
-          "Address transfer, vesting and enforceability of relevant rights and liabilities",
-          "Automatically terminate all foreign contracts",
-          "Ignore foreign law",
-          "Transfer all contracts to the RBI",
-        ],
-        answer: 0,
-        reason:
-          "A cross-border scheme must properly address assets, liabilities, contracts and other legal rights affected by the merger.",
-        explanation:
-          "A cross-border scheme must properly address assets, liabilities, contracts and other legal rights affected by the merger.",
-      },
-      {
-        id: "CAA_VH_04_5",
-        question: "Board approval of both companies:",
-        options: [
-          "Is sufficient by itself to complete the cross-border merger",
-          "Does not replace the statutory and regulatory approval framework",
-          "Automatically constitutes Tribunal sanction",
-          "Automatically constitutes RBI approval",
-        ],
-        answer: 1,
-        reason:
-          "Board approval is only one step and does not replace statutory, Tribunal and regulatory requirements.",
-        explanation:
-          "Board approval is only one step and does not replace statutory, Tribunal and regulatory requirements.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -26490,70 +23584,8 @@ const AICaseStudies = [
           "Section 236 expressly covers acquisition through amalgamation, share exchange, conversion of securities and other specified means.",
         explanation:
           "Section 236 expressly covers acquisition through amalgamation, share exchange, conversion of securities and other specified means.",
-      },
-      {
-        id: "CAA_VH_05_2",
-        question:
-          "The 93% holding is sufficient to cross the statutory threshold because:",
-        options: [
-          "The threshold is 75%",
-          "The threshold is 80%",
-          "The threshold is 90% or more of the issued equity share capital",
-          "The threshold is 95%",
-        ],
-        answer: 2,
-        reason:
-          "Section 236 applies where the acquirer becomes the registered holder of 90% or more of the issued equity share capital.",
-        explanation:
-          "Section 236 applies where the acquirer becomes the registered holder of 90% or more of the issued equity share capital.",
-      },
-      {
-        id: "CAA_VH_05_3",
-        question:
-          "The argument that the original issue price must necessarily determine the purchase price is:",
-        options: [
-          "Correct",
-          "Incorrect because statutory valuation involves fair value determined through the prescribed valuation mechanism",
-          "Correct if minority shareholders agree",
-          "Correct for all unlisted companies",
-        ],
-        answer: 1,
-        reason:
-          "The statutory mechanism relies on fair value determined by a registered valuer rather than simply the historical issue price.",
-        explanation:
-          "The statutory mechanism relies on fair value determined by a registered valuer rather than simply the historical issue price.",
-      },
-      {
-        id: "CAA_VH_05_4",
-        question:
-          "The deposit of consideration into a separate bank account primarily serves to:",
-        options: [
-          "Secure the amount payable to minority shareholders",
-          "Create additional share capital",
-          "Pay the company's taxes",
-          "Finance the acquirer's future investments",
-        ],
-        answer: 0,
-        reason:
-          "The deposit mechanism protects the payment obligation to minority shareholders.",
-        explanation:
-          "The deposit mechanism protects the payment obligation to minority shareholders.",
-      },
-      {
-        id: "CAA_VH_05_5",
-        question:
-          "The strongest legal basis for rejecting the minority shareholders' cash-only threshold argument is:",
-        options: [
-          "Section 236 expressly includes specified non-cash modes of acquisition",
-          "All shares must always be purchased for cash",
-          "Only listed shares qualify",
-          "Only preference shares qualify",
-        ],
-        answer: 0,
-        reason: "The statutory wording extends beyond a simple cash purchase.",
-        explanation:
-          "The statutory wording extends beyond a simple cash purchase.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -26651,70 +23683,8 @@ const AICaseStudies = [
           "The statutory shareholding threshold is not less than 10% of the shareholding.",
         explanation:
           "The statutory shareholding threshold is not less than 10% of the shareholding.",
-      },
-      {
-        id: "CAA_VH_06_2",
-        question: "The creditor holding 5.1% of outstanding debt:",
-        options: [
-          "Meets the 5% threshold for objecting",
-          "Fails because the threshold is 10%",
-          "Fails because only secured creditors can object",
-          "Needs unanimous creditor support",
-        ],
-        answer: 0,
-        reason:
-          "A creditor holding not less than 5% of total outstanding debt meets the statutory threshold, subject to the other conditions.",
-        explanation:
-          "A creditor holding not less than 5% of total outstanding debt meets the statutory threshold, subject to the other conditions.",
-      },
-      {
-        id: "CAA_VH_06_3",
-        question:
-          "The shareholder who supported the scheme but later alleges unfair treatment:",
-        options: [
-          "Can never raise any issue",
-          "May still raise issues where otherwise legally entitled, but the specific statutory objection threshold and procedural requirements must be satisfied",
-          "Automatically becomes a creditor",
-          "Automatically invalidates the scheme",
-        ],
-        answer: 1,
-        reason:
-          "Voting position and statutory standing are distinct questions. The relevant statutory requirements must still be satisfied.",
-        explanation:
-          "Voting position and statutory standing are distinct questions. The relevant statutory requirements must still be satisfied.",
-      },
-      {
-        id: "CAA_VH_06_4",
-        question:
-          "Where reduction of share capital forms part of the arrangement:",
-        options: [
-          "The applicable statutory requirements concerning reduction must still be considered",
-          "Section 230 automatically overrides every reduction requirement",
-          "No disclosure is required",
-          "Only creditors need to know",
-        ],
-        answer: 0,
-        reason:
-          "Inclusion of reduction in a scheme does not mean that all statutory safeguards relating to reduction cease to apply.",
-        explanation:
-          "Inclusion of reduction in a scheme does not mean that all statutory safeguards relating to reduction cease to apply.",
-      },
-      {
-        id: "CAA_VH_06_5",
-        question:
-          "The company's assertion that only a person voting against the scheme can object is:",
-        options: [
-          "An overstatement of the statutory position",
-          "Always correct",
-          "Mandatory under Section 230",
-          "Correct where creditors approve",
-        ],
-        answer: 0,
-        reason:
-          "The Act specifies eligibility and thresholds for objections; the issue cannot be reduced simply to whether the person voted against.",
-        explanation:
-          "The Act specifies eligibility and thresholds for objections; the issue cannot be reduced simply to whether the person voted against.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -26811,69 +23781,8 @@ const AICaseStudies = [
           "The statutory period for filing the order runs from receipt of the certified copy by the company.",
         explanation:
           "The statutory period for filing the order runs from receipt of the certified copy by the company.",
-      },
-      {
-        id: "CAA_VH_07_2",
-        question:
-          "If the certified copy was received on 7 September, filing on 5 October would be:",
-        options: [
-          "Within 30 days",
-          "Outside the 30-day statutory period",
-          "Valid because the order was made on 3 September",
-          "Valid automatically because the delay is administrative",
-        ],
-        answer: 1,
-        reason:
-          "The statutory period is calculated from receipt of the order, not from the date the Tribunal pronounced it.",
-        explanation:
-          "The statutory period is calculated from receipt of the order, not from the date the Tribunal pronounced it.",
-      },
-      {
-        id: "CAA_VH_07_3",
-        question: "The CFO's calculation beginning on 3 September is:",
-        options: [
-          "Correct",
-          "Incorrect",
-          "Correct only where the company is listed",
-          "Correct only where no creditor objects",
-        ],
-        answer: 1,
-        reason:
-          "The statutory trigger is receipt of the certified copy by the company.",
-        explanation:
-          "The statutory trigger is receipt of the certified copy by the company.",
-      },
-      {
-        id: "CAA_VH_07_4",
-        question: "The buy-back component of the scheme:",
-        options: [
-          "Must comply with Section 68",
-          "Automatically overrides Section 68",
-          "Is governed only by Section 234",
-          "Requires no statutory compliance after Tribunal sanction",
-        ],
-        answer: 0,
-        reason:
-          "Section 230(10) specifically requires compliance with Section 68 where a buy-back is provided under a compromise or arrangement.",
-        explanation:
-          "Section 230(10) specifically requires compliance with Section 68 where a buy-back is provided under a compromise or arrangement.",
-      },
-      {
-        id: "CAA_VH_07_5",
-        question:
-          "The directors' assumption that Tribunal sanction automatically validates a non-compliant buy-back is:",
-        options: [
-          "Correct",
-          "Incorrect",
-          "Correct if 75% of creditors approve",
-          "Correct if the company is profitable",
-        ],
-        answer: 1,
-        reason:
-          "Specific statutory requirements applicable to the buy-back continue to apply.",
-        explanation:
-          "Specific statutory requirements applicable to the buy-back continue to apply.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -26972,70 +23881,8 @@ const AICaseStudies = [
           "Material liabilities and stakeholder consequences should be appropriately identified and addressed. A general phrase does not necessarily cure inadequate disclosure or uncertainty.",
         explanation:
           "Material liabilities and stakeholder consequences should be appropriately identified and addressed. A general phrase does not necessarily cure inadequate disclosure or uncertainty.",
-      },
-      {
-        id: "CAA_VH_08_2",
-        question:
-          "Contractual clauses requiring consent before assignment are relevant because:",
-        options: [
-          "The scheme must consider the legal consequences of transferring contractual rights and obligations",
-          "All contracts automatically terminate on merger",
-          "Contracts are outside the scope of a scheme",
-          "Only employment contracts require consideration",
-        ],
-        answer: 0,
-        reason:
-          "Contractual rights and restrictions can materially affect implementation of the scheme.",
-        explanation:
-          "Contractual rights and restrictions can materially affect implementation of the scheme.",
-      },
-      {
-        id: "CAA_VH_08_3",
-        question: "Transfer of employees may be specifically provided for in:",
-        options: [
-          "The scheme of merger or arrangement",
-          "Only the articles of the transferee",
-          "Only the annual return",
-          "Only the auditor's report",
-        ],
-        answer: 0,
-        reason:
-          "The statutory merger framework permits the scheme to provide for transfer of employees.",
-        explanation:
-          "The statutory merger framework permits the scheme to provide for transfer of employees.",
-      },
-      {
-        id: "CAA_VH_08_4",
-        question:
-          "Pending legal proceedings can, subject to the scheme and statutory order:",
-        options: [
-          "Continue by or against the transferee company",
-          "Never continue",
-          "Continue only against former employees",
-          "Automatically become tax proceedings",
-        ],
-        answer: 0,
-        reason:
-          "A merger order may provide for continuation of legal proceedings by or against the transferee company.",
-        explanation:
-          "A merger order may provide for continuation of legal proceedings by or against the transferee company.",
-      },
-      {
-        id: "CAA_VH_08_5",
-        question:
-          "The Tribunal's concern regarding contingent liabilities is primarily connected with:",
-        options: [
-          "Protection of creditors and clarity of the scheme's legal and financial consequences",
-          "Appointment of directors",
-          "Determination of dividend",
-          "Registration of trademarks only",
-        ],
-        answer: 0,
-        reason:
-          "Liabilities and their allocation are central to the rights of creditors and the effective implementation of the scheme.",
-        explanation:
-          "Liabilities and their allocation are central to the rights of creditors and the effective implementation of the scheme.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -27120,67 +23967,8 @@ const AICaseStudies = [
         reason: "â¹80 crore Ã· â¹100 crore Ã 100 = 80%.",
         reason: "â¹80 crore Ã· â¹100 crore Ã 100 = 80%.",
         explanation: "₹80 crore ÷ ₹100 crore × 100 = 80%.",
-      },
-      {
-        id: "CAA_VH_09_2",
-        question: "On the value test alone, the three-fourths requirement is:",
-        options: [
-          "Not satisfied",
-          "Satisfied",
-          "Satisfied only if 90% approve",
-          "Satisfied only if every shareholder approves",
-        ],
-        answer: 1,
-        reason: "80% exceeds the required three-fourths (75%) value threshold.",
-        explanation:
-          "80% exceeds the required three-fourths (75%) value threshold.",
-      },
-      {
-        id: "CAA_VH_09_3",
-        question:
-          "The shareholder holding 12% satisfies the statutory shareholding threshold for objection, assuming other conditions are met.",
-        options: [
-          "Yes",
-          "No",
-          "Only if the shareholder voted against",
-          "Only if the shareholder is a promoter",
-        ],
-        answer: 0,
-        reason: "The shareholder exceeds the 10% threshold.",
-        explanation: "The shareholder exceeds the 10% threshold.",
-      },
-      {
-        id: "CAA_VH_09_4",
-        question:
-          "The Board's claim that voting in favour permanently prevents any issue from being raised is:",
-        options: [
-          "Too broad",
-          "Always correct",
-          "Mandatory under Section 230",
-          "Correct where the scheme has 75% approval",
-        ],
-        answer: 0,
-        reason:
-          "The statutory framework does not simply equate voting in favour with an absolute waiver of all legal concerns.",
-        explanation:
-          "The statutory framework does not simply equate voting in favour with an absolute waiver of all legal concerns.",
-      },
-      {
-        id: "CAA_VH_09_5",
-        question:
-          "The newly developed medical technology is potentially relevant to:",
-        options: [
-          "The fairness and methodology of valuation",
-          "Only employee benefits",
-          "Only the registered office",
-          "Only the company's authorised capital",
-        ],
-        answer: 0,
-        reason:
-          "Material intangible assets and business prospects can be relevant to a valuation used to determine treatment under a scheme.",
-        explanation:
-          "Material intangible assets and business prospects can be relevant to a valuation used to determine treatment under a scheme.",
-      },
+      }
+    
     ],
   },
   /* =========================================================
@@ -27280,70 +24068,8 @@ const AICaseStudies = [
           "Class constitution depends on similarity of legal rights and interests. Retention-of-title rights may materially affect creditor rights.",
         explanation:
           "Class constitution depends on similarity of legal rights and interests. Retention-of-title rights may materially affect creditor rights.",
-      },
-      {
-        id: "CAA_VH_10_2",
-        question:
-          "The 77% approval of the combined trade creditor class is potentially insufficient to validate the scheme if:",
-        options: [
-          "The class itself was improperly constituted",
-          "The company has more than 1,000 creditors",
-          "The creditors are trade creditors",
-          "The scheme includes an amalgamation",
-        ],
-        answer: 0,
-        reason:
-          "If creditors with materially different rights were improperly combined, the voting result may not represent the approval of the properly constituted class.",
-        explanation:
-          "If creditors with materially different rights were improperly combined, the voting result may not represent the approval of the properly constituted class.",
-      },
-      {
-        id: "CAA_VH_10_3",
-        question: "The creditor holding 6% of total debt:",
-        options: [
-          "Meets the statutory debt threshold for raising an objection",
-          "Fails because 10% is required",
-          "Cannot object because the creditor is unsecured",
-          "Can object only after the scheme is implemented",
-        ],
-        answer: 0,
-        reason:
-          "The statutory threshold is not less than 5% of total outstanding debt.",
-        explanation:
-          "The statutory threshold is not less than 5% of total outstanding debt.",
-      },
-      {
-        id: "CAA_VH_10_4",
-        question:
-          "The omission of the investigation involving former directors is potentially material because:",
-        options: [
-          "Pending investigations or proceedings constitute information relevant to the scheme and stakeholder assessment",
-          "Only investigations involving current directors are relevant",
-          "Investigations are never disclosed in schemes",
-          "Only criminal convictions must be disclosed",
-        ],
-        answer: 0,
-        reason:
-          "Material pending investigations and proceedings are among the matters requiring disclosure under the scheme framework.",
-        explanation:
-          "Material pending investigations and proceedings are among the matters requiring disclosure under the scheme framework.",
-      },
-      {
-        id: "CAA_VH_10_5",
-        question:
-          "The company's subsequent implementation of a buy-back provision contained in the sanctioned scheme:",
-        options: [
-          "Automatically avoids the requirements of Section 68",
-          "Must still comply with Section 68",
-          "Requires compliance only with Section 236",
-          "Requires no statutory compliance once the Tribunal sanctions the scheme",
-        ],
-        answer: 1,
-        reason:
-          "Section 230(10) specifically requires a buy-back under a compromise or arrangement to comply with Section 68.",
-        explanation:
-          "Section 230(10) specifically requires a buy-back under a compromise or arrangement to comply with Section 68.",
-      },
+      }
+    
     ],
   },
   // Chapter 6
@@ -27424,7 +24150,7 @@ const AICaseStudies = [
         question:
           "Which section primarily deals with the right to apply for relief against oppression and mismanagement?",
         options: ["Section 241", "Section 242", "Section 244", "Section 245"],
-        answer: 0,
+        answer: 2,
         reason:
           "Section 244 specifies the eligibility of members to make an application under Section 241.",
       },
@@ -27624,7 +24350,7 @@ const AICaseStudies = [
           "Restrictions on transfer or allotment of shares",
           "All of the above",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 242 provides several specific remedies including regulation of affairs, purchase of shares and restrictions on transfer or allotment.",
       },
@@ -28048,7 +24774,7 @@ const AICaseStudies = [
           "Intent to defraud creditors or members",
           "All of the above",
         ],
-        answer: 0,
+        answer: 3,
         reason:
           "Section 241(3) recognizes several circumstances including fraud, misfeasance, persistent negligence, unsound business practices and fraudulent or unlawful purposes.",
       },
@@ -29015,7 +25741,7 @@ const AICaseStudies = [
           "Any shareholder of the company",
           "The Central Government directly",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "A registered valuer is appointed by the Audit Committee or, in its absence, by the Board of Directors of the company.",
       },
@@ -29029,7 +25755,7 @@ const AICaseStudies = [
           "No, because the restriction covers the three years prior to appointment",
           "Yes, provided the interest is disclosed after completion of valuation",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "A registered valuer must not undertake valuation of an asset in which he has a direct or indirect interest at any time during three years prior to appointment or three years after the valuation.",
       },
@@ -29043,7 +25769,7 @@ const AICaseStudies = [
           "To follow only the instructions of the company's directors",
           "To prepare a valuation favourable to the appointing authority",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The valuer must make an impartial, true and fair valuation and exercise due diligence while performing valuation functions.",
       },
@@ -29057,7 +25783,7 @@ const AICaseStudies = [
           "Internationally accepted valuation standards or standards adopted by a registered valuers organisation",
           "Only standards issued by the Registrar of Companies",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Until valuation standards are notified or modified by the Central Government, valuations may be made according to internationally accepted valuation standards or valuation standards adopted by a registered valuers organisation.",
       },
@@ -29071,7 +25797,7 @@ const AICaseStudies = [
           "Liability for the resultant valuation remains with Mr. Mehta, and he must disclose the details of the inputs and other valuer",
           "Responsibility automatically shifts to the Audit Committee",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "A registered valuer may obtain inputs or a separate valuation from another registered valuer, but must fully disclose the details. Liability for the resultant valuation remains with the first-mentioned valuer.",
       },
@@ -29102,7 +25828,7 @@ const AICaseStudies = [
           "It has appointed an auditor",
           "It has maintained accounting records",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "An application under Section 248 cannot be made if, during the previous three months, the company has changed its name or shifted its registered office from one State to another.",
       },
@@ -29116,7 +25842,7 @@ const AICaseStudies = [
           "The application is restricted until the Tribunal matter is finally concluded",
           "Only the Registrar can decide whether the restriction applies",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "An application under Section 248 is restricted where an application to the Tribunal for sanctioning a compromise or arrangement has been made and the matter has not been finally concluded.",
       },
@@ -29125,7 +25851,7 @@ const AICaseStudies = [
         question:
           "For how long does the restriction relating to the specified activities apply before an application under Section 248?",
         options: ["30 days", "60 days", "Three months", "One year"],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 249 examines whether the specified circumstances existed at any time during the previous three months.",
       },
@@ -29139,7 +25865,7 @@ const AICaseStudies = [
           "Fine up to ₹1 lakh",
           "Imprisonment up to one year only",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Where an application is filed in violation of the restrictions under Section 249, the company shall be punishable with fine which may extend to ₹1 lakh.",
       },
@@ -29153,7 +25879,7 @@ const AICaseStudies = [
           "It must be converted into a dormant company application",
           "It must be referred to the Central Government",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "An application filed in violation of Section 249 shall be withdrawn by the company or rejected by the Registrar as soon as the conditions are brought to his notice.",
       },
@@ -29179,7 +25905,7 @@ const AICaseStudies = [
         question:
           "What is the maximum ratio of Net Owned Funds to deposits permitted for a Nidhi?",
         options: ["1:10", "1:15", "1:20", "1:25"],
-        answer: 2,
+        answer: 3,
         reason:
           "A Nidhi shall not accept deposits exceeding twenty times its Net Owned Funds. Thus, the ratio is not more than 1:20.",
       },
@@ -29193,7 +25919,7 @@ const AICaseStudies = [
           "No, Nidhis can accept deposits only from their members",
           "Yes, if the deposit is below ₹1 lakh",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "A Nidhi cannot accept deposits from or lend to any person other than its members.",
       },
@@ -29207,7 +25933,7 @@ const AICaseStudies = [
           "No, such activity is prohibited",
           "Yes, if the securities are listed",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "A Nidhi shall not acquire or purchase securities of any other company or control its Board composition or enter into arrangements for change of management.",
       },
@@ -29220,7 +25946,7 @@ const AICaseStudies = [
           "Yes, subject to the applicable conditions, including rental income not exceeding 20% of gross income",
           "Only to non-members",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "A Nidhi complying with the applicable provisions may provide locker facilities on rent to members, provided rental income does not exceed 20% of its gross income at any point during the financial year.",
       },
@@ -29234,7 +25960,7 @@ const AICaseStudies = [
           "A minor cannot be admitted as a member, although deposits may be accepted in the minor's name when made by a member who is the natural or legal guardian",
           "A minor can become a member if the deposit exceeds ₹1 lakh",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "A minor cannot be admitted as a member of a Nidhi. However, deposits may be accepted in the name of a minor if made by the natural or legal guardian who is a member of the Nidhi.",
       },
@@ -29260,7 +25986,7 @@ const AICaseStudies = [
         question:
           "What percentage of paid-up share capital must generally be held by the Central Government, State Government(s), or both for a company to fall within the definition of a Government company?",
         options: ["25%", "40%", "51%", "75%"],
-        answer: 2,
+        answer: 3,
         reason:
           "A Government company is one in which not less than 51% of the paid-up share capital is held by the Central Government, State Government(s), or partly by the Central and partly by State Governments.",
       },
@@ -29274,7 +26000,7 @@ const AICaseStudies = [
           "It is added only if the Central Government approves",
           "It is counted as 20%",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The chapter's example states that the holding of a government company in another company cannot be taken into account while counting the prescribed 51% direct government holding.",
       },
@@ -29288,7 +26014,7 @@ const AICaseStudies = [
           "The State Government alone",
           "The Tribunal",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Under Section 394, where the Central Government is a member of a Government company, the Central Government shall cause the annual report on its working and affairs to be prepared.",
       },
@@ -29297,7 +26023,7 @@ const AICaseStudies = [
         question:
           "The annual report under Section 394 is to be prepared within what period after the relevant annual general meeting?",
         options: ["30 days", "60 days", "Three months", "Six months"],
-        answer: 2,
+        answer: 3,
         reason:
           "The annual report is to be prepared within three months of the annual general meeting before which the CAG's comments and audit report are placed.",
       },
@@ -29311,7 +26037,7 @@ const AICaseStudies = [
           "Send the report only to the Registrar",
           "Approve the audit report before Parliament",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Where, in addition to the Central Government, a State Government is also a member, that State Government shall cause a copy of the annual report to be laid before the House or both Houses of the State Legislature along with the audit report and CAG comments or supplement.",
       },
@@ -29342,7 +26068,7 @@ const AICaseStudies = [
           "No, these transactions are specifically excluded",
           "Only payment of Registrar fees is excluded",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Payment of fees to the Registrar and payments for maintenance of office and records are excluded from the definition of significant accounting transaction.",
       },
@@ -29356,7 +26082,7 @@ const AICaseStudies = [
           "Yes, without informing the lender",
           "Only after converting the loan into equity",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "A company having an outstanding unsecured loan may apply for dormant status after obtaining concurrence of the lender and enclosing it with Form MSC-1.",
       },
@@ -29370,7 +26096,7 @@ const AICaseStudies = [
           "Only approval of the Registrar",
           "Approval of the Central Government",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The company may apply after passing a special resolution in general meeting or after issuing notice to all shareholders and obtaining consent of at least three-fourths shareholders in value.",
       },
@@ -29379,7 +26105,7 @@ const AICaseStudies = [
         question:
           "Which form is used for applying to the Registrar for obtaining dormant company status?",
         options: ["MSC-1", "MSC-2", "MSC-3", "MSC-4"],
-        answer: 0,
+        answer: 1,
         reason:
           "Form MSC-1 is used for making the application to the Registrar for obtaining dormant company status.",
       },
@@ -29388,7 +26114,7 @@ const AICaseStudies = [
         question:
           "Which form is used for the annual Return of Dormant Company?",
         options: ["MSC-1", "MSC-2", "MSC-3", "MSC-5"],
-        answer: 2,
+        answer: 3,
         reason:
           "A dormant company is required to file the Return of Dormant Company annually in Form MSC-3.",
       },
@@ -29425,7 +26151,7 @@ const AICaseStudies = [
           "Only a partner or director who is a registered valuer for the relevant asset class",
           "Only an employee authorised by Omega Industries",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Where a partnership entity or company is the registered valuer, only the partner or director who is a registered valuer for the relevant asset class may sign and act on its behalf.",
       },
@@ -29439,7 +26165,7 @@ const AICaseStudies = [
           "No, liability for the resultant valuation remains with Vertex as the first-mentioned valuer",
           "Yes, if Omega Industries consents",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The first-mentioned registered valuer remains liable for the resultant valuation even when inputs or a separate valuation are obtained from another registered valuer. The details must also be fully disclosed.",
       },
@@ -29453,7 +26179,7 @@ const AICaseStudies = [
           "Obtain approval from the client only",
           "Obtain approval from the Registrar of Companies only",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "One of the conditions of registration is that a registered valuer must take prior permission of the authority for shifting membership from one registered valuers organisation to another.",
       },
@@ -29467,7 +26193,7 @@ const AICaseStudies = [
           "At least three years from completion of the assignment",
           "Permanently in every case",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The conditions of registration require the registered valuer to maintain records of each assignment for at least three years from completion of that assignment.",
       },
@@ -29481,7 +26207,7 @@ const AICaseStudies = [
           "The report should be signed and acted upon only by a director registered for the relevant asset class",
           "The client can sign the report instead",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The registered valuer entity can act through only the partner or director who is registered for the relevant asset class. General experience does not substitute for the required registration.",
       },
@@ -29514,7 +26240,7 @@ const AICaseStudies = [
           "Maintaining accounting records",
           "Having no business for several years",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Changing the registered office from one State to another within the previous three months is one of the statutory restrictions on an application under Section 248.",
       },
@@ -29528,7 +26254,7 @@ const AICaseStudies = [
           "Joint and several liability for loss or damage and punishment for fraud under Section 447",
           "Automatic immunity after dissolution",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Persons in charge of management who fraudulently apply for removal to evade liabilities or deceive creditors may be jointly and severally liable for resulting loss or damage and may be punished for fraud under Section 447.",
       },
@@ -29542,7 +26268,7 @@ const AICaseStudies = [
           "Three years from the date of the Registrar's order",
           "Twenty years",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Any person aggrieved by the Registrar's order may file an appeal to the Tribunal within three years from the date of the Registrar's order.",
       },
@@ -29556,7 +26282,7 @@ const AICaseStudies = [
           "The company, member, creditor or workman, before expiry of twenty years from publication in the Official Gazette",
           "Any person whatsoever without restriction",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The company, member, creditor or workman may apply before expiry of twenty years from publication in the Official Gazette if the statutory conditions for restoration are satisfied.",
       },
@@ -29570,7 +26296,7 @@ const AICaseStudies = [
           "Such person can apply within three years without restriction",
           "Such person can apply only with Registrar approval",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The chapter's case law states that a person who is neither the company nor a member nor a creditor cannot claim to be an aggrieved person for restoration merely on that basis and lacks locus standi.",
       },
@@ -29598,7 +26324,7 @@ const AICaseStudies = [
         question:
           "Based on deposits of ₹60 crore, what is the maximum ordinary loan amount that may be granted to a member under the prescribed deposit-based limits?",
         options: ["₹7.50 lakh", "₹12 lakh", "₹15 lakh", "₹20 lakh"],
-        answer: 2,
+        answer: 3,
         reason:
           "Where total deposits from members exceed ₹50 crore, the prescribed maximum loan is ₹15 lakh.",
       },
@@ -29612,7 +26338,7 @@ const AICaseStudies = [
           "50% of the prescribed maximum",
           "75% of the prescribed maximum",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Where a Nidhi has not made profits continuously in the three preceding financial years, it shall not make fresh loans exceeding 50% of the applicable maximum loan amounts.",
       },
@@ -29621,7 +26347,7 @@ const AICaseStudies = [
         question:
           "Even if the property offered as security is worth ₹50 lakh, what is the maximum individual loan against immovable property based on the prescribed percentage of property value?",
         options: ["₹15 lakh", "₹20 lakh", "₹25 lakh", "₹30 lakh"],
-        answer: 2,
+        answer: 3,
         reason:
           "An individual loan against immovable property shall not exceed 50% of the value of the property offered as security. Fifty per cent of ₹50 lakh is ₹25 lakh. However, other applicable loan limits must also be considered.",
       },
@@ -29630,7 +26356,7 @@ const AICaseStudies = [
         question:
           "What is the maximum spread permitted for the rate of interest charged by a Nidhi on a loan over the highest rate of interest offered on deposits?",
         options: ["5%", "6%", "7.5%", "10%"],
-        answer: 2,
+        answer: 3,
         reason:
           "The rate of interest charged on a loan shall not exceed 7.5% above the highest rate of interest offered on deposits by the Nidhi and is calculated on the reducing balance method.",
       },
@@ -29644,7 +26370,7 @@ const AICaseStudies = [
           "No, reappointment is possible only after expiration of two years from ceasing to be a director",
           "No, he can never be reappointed",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "A Nidhi director may hold office for up to 10 consecutive years and is eligible for reappointment only after the expiration of two years from ceasing to be a director.",
       },
@@ -29672,7 +26398,7 @@ const AICaseStudies = [
         question:
           "A person knowingly omitting a material fact in a report required under the Companies Act may attract liability under which provision mentioned in the chapter?",
         options: ["Section 249", "Section 406", "Section 448", "Section 455"],
-        answer: 2,
+        answer: 3,
         reason:
           "Rule 21 provides that where a person makes a false statement in material particulars knowing it to be false or omits a material fact knowing it to be material, he shall be liable under Section 448.",
       },
@@ -29686,7 +26412,7 @@ const AICaseStudies = [
           "Knowingly omitting a material fact constitutes a serious contravention and may attract statutory liability",
           "Only the company can be liable; the valuer cannot be liable",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "A knowingly false statement or knowing omission of a material fact in a report attracts liability under Section 448 as stated in Rule 21.",
       },
@@ -29700,7 +26426,7 @@ const AICaseStudies = [
           "Payment of fees to the Registrar and maintenance of office and records",
           "Payment to a new supplier for business operations",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Payment of fees to the Registrar, payments to fulfil statutory requirements, allotment of shares to fulfil Companies Act requirements, and payments for maintenance of office and records are excluded from significant accounting transactions.",
       },
@@ -29714,7 +26440,7 @@ const AICaseStudies = [
           "No, a company is not eligible to apply if an inspection, inquiry or investigation has been ordered, taken up or carried out against it",
           "Yes, if the Registrar permits it informally",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "One of the eligibility conditions for applying for dormant status is that no inspection, inquiry or investigation has been ordered, taken up or carried out against the company.",
       },
@@ -29723,7 +26449,7 @@ const AICaseStudies = [
         question:
           "Which form is required for the subsidiary's application for dormant status, assuming all eligibility conditions are satisfied?",
         options: ["MSC-1", "MSC-2", "MSC-3", "MSC-5"],
-        answer: 0,
+        answer: 1,
         reason:
           "The application for obtaining dormant company status is made to the Registrar in Form MSC-1.",
       },
@@ -29756,7 +26482,7 @@ const AICaseStudies = [
           "Only a subsidiary with 100% Central Government holding qualifies",
           "A subsidiary can never qualify independently",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The definition of Government company expressly includes a company which is a subsidiary company of such a Government company; the chapter notes that wholly owned status is not specifically required.",
       },
@@ -29765,7 +26491,7 @@ const AICaseStudies = [
         question:
           "With Net Owned Funds of ₹40 lakh, what is the maximum amount of deposits that a Nidhi may ordinarily accept based on the 1:20 ratio?",
         options: ["₹4 crore", "₹6 crore", "₹8 crore", "₹10 crore"],
-        answer: 2,
+        answer: 3,
         reason:
           "A Nidhi shall not accept deposits exceeding twenty times its Net Owned Funds. ₹40 lakh × 20 = ₹8 crore.",
       },
@@ -29779,7 +26505,7 @@ const AICaseStudies = [
           "No, the 1:20 deposit-to-NOF ceiling must still be complied with",
           "Yes, if the Regional Director is informed",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The requirement to maintain unencumbered term deposits is separate from the ceiling that deposits cannot exceed twenty times Net Owned Funds. Compliance with one does not override the other.",
       },
@@ -29793,7 +26519,7 @@ const AICaseStudies = [
           "₹10 lakh or 10% of turnover, whichever is higher",
           "₹50 lakh in every case",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The higher punishment under Section 447 applies where fraud involves an amount of at least ₹10 lakh or 1% of the turnover of the company, whichever is lower.",
       },
@@ -29807,7 +26533,7 @@ const AICaseStudies = [
           "1% is ₹9 lakh; fraud exactly equals the threshold",
           "1% is ₹10 lakh; fraud is automatically outside Section 447",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "1% of ₹5 crore is ₹5 lakh. Since Section 447 uses ₹10 lakh or 1% of turnover, whichever is lower, the applicable threshold is ₹5 lakh. A ₹9 lakh fraud therefore exceeds the threshold, assuming the other statutory conditions are satisfied.",
       },
@@ -30096,7 +26822,7 @@ const AICaseStudies = [
         ],
         answer: 1,
         reason:
-          "The adjudicating officer may, for reasons recorded in writing, extend the period by a further period not exceeding 15 days where sufficient cause or the specified circumstances exist.",
+          "The adjudicating officer may, for reasons recorded in writing, extend the period by a further period not exceeding 15 days where sufficient cause or the specified circCEL_HARD_188_06_B.",
       },
       {
         question_id: "seta_AI_cs_9_04_3",
@@ -30136,7 +26862,7 @@ const AICaseStudies = [
           "Nature of the default",
           "Personal wealth of the directors",
         ],
-        answer: 1,
+        answer: 3,
         reason:
           "The Rules require consideration of factors including size of company, nature of business, injury to public interest, nature and repetition of default, disproportionate gain and loss caused. Personal wealth of directors is not listed.",
       },
@@ -30667,7 +27393,7 @@ const AICaseStudies = [
           "It digitally signs the form on behalf of the company",
           "It automatically makes payment of the filing fee",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The pre-fill facility enables certain fields to be populated automatically from information available in the electronic registry. It does not itself authenticate, certify or submit the form.",
       },
@@ -30681,7 +27407,7 @@ const AICaseStudies = [
           "No, submission must be made through the prescribed functionality of the MCA21 portal",
           "No, because all e-forms must first be printed and physically submitted",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Sending an e-form by email does not constitute e-filing. The e-form must be submitted through the prescribed functionality available on the MCA21 portal.",
       },
@@ -30695,7 +27421,7 @@ const AICaseStudies = [
           "The document may become invalid because the contents should not be altered after digital signing",
           "The system automatically revalidates all signatures after every alteration",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Where multiple signatures are applied, the contents of the e-form must not be altered thereafter. Alteration can render the document invalid and lead to rejection during filing.",
       },
@@ -30709,7 +27435,7 @@ const AICaseStudies = [
           "It guarantees that the information contained in the form is legally correct",
           "It constitutes final approval by the Registrar",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Automated pre-scrutiny is a computerized check of the form for matters that can be electronically verified. It does not replace professional certification or constitute final approval by the Registrar.",
       },
@@ -30723,7 +27449,7 @@ const AICaseStudies = [
           "The filing is automatically treated as complete once the form reaches the portal",
           "The company must abandon the e-form and file only a physical form",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Where defects such as incorrect data or missing/invalid digital signatures are identified, the e-form may be rejected or returned with details of the defect. The defect can then be corrected and the form resubmitted.",
       },
@@ -30760,7 +27486,7 @@ const AICaseStudies = [
           "Turnover of ₹100 crore or above only where the company has foreign shareholders",
           "Paid-up capital of ₹10 crore or above and turnover of ₹200 crore or above",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The prescribed classes include companies having paid-up capital of ₹5 crore or above and companies having turnover of ₹100 crore or above. These are independent specified criteria; listing is not required for these particular thresholds.",
       },
@@ -30774,7 +27500,7 @@ const AICaseStudies = [
           "A digital signature used to authenticate XBRL documents",
           "A software program used only to calculate filing fees",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Under the XBRL Rules, taxonomy means an electronic dictionary for reporting business data. It defines relevant elements and their relationships for reporting.",
       },
@@ -30788,7 +27514,7 @@ const AICaseStudies = [
           "Both terms refer to exactly the same electronic document",
           "Taxonomy is used for payment while the Instance Document is used for authentication",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The taxonomy defines the reporting concepts and relationships. The company maps its financial information to the relevant taxonomy elements and generates an XBRL Instance Document containing the reported information.",
       },
@@ -30802,7 +27528,7 @@ const AICaseStudies = [
           "It is required to continue filing its financial statements and other documents in XBRL format",
           "It can stop XBRL filing only after approval from its statutory auditor",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "A company which has once filed its financial statements in XBRL format is required to continue filing in XBRL format even if it subsequently does not fall within the specified classes.",
       },
@@ -30816,7 +27542,7 @@ const AICaseStudies = [
           "Non-banking financial companies",
           "Every company having turnover below ₹100 crore",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The second proviso to Rule 3(1) exempts specified categories including non-banking financial companies, housing finance companies and companies engaged in banking and insurance business.",
       },
@@ -30853,7 +27579,7 @@ const AICaseStudies = [
           "6 times the normal filing fee",
           "10 times the normal filing fee",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "A delay of more than 30 days and up to 60 days attracts additional fees at 4 times the normal filing fee under the general table.",
       },
@@ -30862,7 +27588,7 @@ const AICaseStudies = [
         question:
           "Vertex's ordinary filing carrying a normal fee of ₹5,000 was delayed by 120 days. What additional fee is payable under the general table?",
         options: ["₹20,000", "₹30,000", "₹50,000", "₹60,000"],
-        answer: 2,
+        answer: 3,
         reason:
           "A delay of more than 90 days and up to 180 days attracts additional fees at 10 times the normal filing fee. ₹5,000 × 10 = ₹50,000.",
       },
@@ -30876,7 +27602,7 @@ const AICaseStudies = [
           "₹100 per day",
           "Ten times the normal filing fee",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "For forms under section 92 or section 137, the chapter specifically states an additional fee of ₹100 per day for delay beyond the prescribed period.",
       },
@@ -30890,7 +27616,7 @@ const AICaseStudies = [
           "The company and officers in default may still be liable for penalty or punishment for the default",
           "Payment of additional fee converts the default into a valid filing from the original due date",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 403(2) provides that payment of fee/additional fee does not prevent liability for the penalty or punishment provided under the Act for the failure or default.",
       },
@@ -30904,7 +27630,7 @@ const AICaseStudies = [
           "Higher additional fee applies only to annual returns under section 92",
           "Higher additional fee is applicable only where payment is made through physical challan",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The rules provide for higher additional fees in certain specified circumstances, including repeated belated filing of INC-22 or PAS-3 within the prescribed period.",
       },
@@ -30936,7 +27662,7 @@ const AICaseStudies = [
         question:
           "Which e-form is generally associated with notice of alteration of share capital to the Registrar?",
         options: ["CHG-1", "SH-7", "DIR-12", "PAS-3"],
-        answer: 1,
+        answer: 2,
         reason:
           "Form SH-7 is used for notice to the Registrar regarding alteration of share capital.",
       },
@@ -30945,7 +27671,7 @@ const AICaseStudies = [
         question:
           "Nova proposes to register creation of a charge other than a charge relating to debentures. Which form is appropriate?",
         options: ["CHG-1", "CHG-4", "CHG-6", "CHG-9"],
-        answer: 0,
+        answer: 1,
         reason:
           "Form CHG-1 is used for registration of creation or modification of charge other than charges related to debentures, subject to the prescribed particulars.",
       },
@@ -30954,7 +27680,7 @@ const AICaseStudies = [
         question:
           "Which form is used for filing particulars of appointment of directors and KMP and changes among them?",
         options: ["DIR-3", "DIR-5", "DIR-12", "DIR-6"],
-        answer: 2,
+        answer: 3,
         reason:
           "Form DIR-12 is used for particulars of appointment of directors and key managerial personnel and changes among them, including specified changes such as resignation.",
       },
@@ -30968,7 +27694,7 @@ const AICaseStudies = [
           "The authorised signatory and professional, where applicable, have responsibility for correctness of contents and relevant enclosures",
           "Once a form is pre-scrutinized, nobody can be held responsible for incorrect information",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Rule 8 places responsibility on the authorised signatory and, where applicable, the professional certifying the e-form for correctness of contents and relevant enclosures.",
       },
@@ -30981,7 +27707,7 @@ const AICaseStudies = [
           "INC-23 — Application for removal of company name",
           "PAS-3 — Application for obtaining dormant company status",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "STK-2 is the application by a company to the ROC for removing its name from the Register of Companies. MSC-1 relates to obtaining dormant company status, INC-23 relates to shifting registered office from one state to another or as specified, and PAS-3 relates to return of allotment.",
       },
@@ -31064,7 +27790,7 @@ const AICaseStudies = [
           "Subject to specified exceptions, event-based information or changes may not be accepted until overdue Balance Sheet, Profit and Loss Account and Annual Return filings are made",
           "Only physical filings can be accepted from a defaulting company",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The chapter states that, subject to specified exceptions, event-based information or changes will not be accepted from defaulting companies unless their updated Balance Sheet, Profit and Loss Account and Annual Return are filed.",
       },
@@ -31078,7 +27804,7 @@ const AICaseStudies = [
           "Compliance Management System",
           "e-Adjudication",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The Compliance Management System (CMS) is designed to assist MCA in identifying non-compliant companies/LLPs, issuing e-notices and undertaking rule-based compliance checks and enforcement drives.",
       },
@@ -31113,7 +27839,7 @@ const AICaseStudies = [
           "It eliminates the need for authentication of e-forms",
           "It is available only to listed companies",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "MCA21 provides an SRN (Service Request Number), which enables stakeholders to track their service requests.",
       },
@@ -31122,7 +27848,7 @@ const AICaseStudies = [
         question:
           "Which facility enables certain information already available in the MCA database to be automatically populated in an e-form?",
         options: ["Pre-scrutiny", "Pre-fill", "SRN", "Back Office"],
-        answer: 1,
+        answer: 2,
         reason:
           "The pre-fill facility automatically captures available information from the MCA electronic registry, reducing repetitive data entry.",
       },
@@ -31136,7 +27862,7 @@ const AICaseStudies = [
           "The alteration can render the digitally signed document invalid and may result in rejection during e-filing",
           "The alteration is irrelevant because digital signatures authenticate only the identity of the signatories",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Multiple digital signatures may be applied to an e-form, but the contents must not be altered after signing. If the contents are altered, the document becomes invalid and may be rejected during the e-filing process.",
       },
@@ -31150,7 +27876,7 @@ const AICaseStudies = [
           "Not constitute e-filing because submission must be made through the MCA21 portal using the prescribed functionality",
           "Constitute valid e-filing if the RoC officer opens the attachment",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Sending an e-form by e-mail does not constitute e-filing. The e-form must be submitted through the MCA21 portal using the prescribed functionality.",
       },
@@ -31164,7 +27890,7 @@ const AICaseStudies = [
           "Taxonomy and instance document are interchangeable terms used for the same electronic file",
           "Instance documents are prepared first and the taxonomy is subsequently created by the company",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Taxonomy defines the reporting concepts, elements and relationships. The company maps its financial information to the taxonomy and generates the XBRL instance document, which contains the relevant reported information along with details such as reporting period and unit of measurement.",
       },
@@ -31199,7 +27925,7 @@ const AICaseStudies = [
           "It automatically incorporates a company",
           "It replaces the requirement to file statutory forms",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Registration is a one-time process through which a user creates a personalised login ID for accessing MCA21 services.",
       },
@@ -31213,7 +27939,7 @@ const AICaseStudies = [
           "The new DSC must be registered again",
           "A new company registration is required",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The process of registration of DSC is repeated whenever the user procures a new DSC or renews the existing DSC.",
       },
@@ -31227,7 +27953,7 @@ const AICaseStudies = [
           "No, the user must ensure that the latest notified e-form is used",
           "Yes, if the professional subsequently certifies it",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Users must ensure that they use the latest notified e-forms made available through the MCA21 portal.",
       },
@@ -31241,7 +27967,7 @@ const AICaseStudies = [
           "Offline filling eliminates the need for digital signatures",
           "Offline filling itself constitutes e-filing",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "E-forms may be filled online or offline. Offline filling does not require the user to remain connected to the internet, but the completed form must subsequently be submitted through the prescribed MCA portal.",
       },
@@ -31254,7 +27980,7 @@ const AICaseStudies = [
           "Only when the necessary payment is remitted through the applicable payment method",
           "When the form is printed",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "E-filing is completed once the necessary payment is remitted either through electronic payment means or through the challan-based method.",
       },
@@ -31291,7 +28017,7 @@ const AICaseStudies = [
           "Four times of normal filing fee",
           "Six times of normal filing fee",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "For delay of more than 15 days and up to 30 days, the additional fee is generally two times the normal filing fee.",
       },
@@ -31305,7 +28031,7 @@ const AICaseStudies = [
           "Six times normal fee",
           "Ten times normal fee",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "For delay of more than 60 days and up to 90 days, the prescribed additional fee is six times the normal filing fee.",
       },
@@ -31319,7 +28045,7 @@ const AICaseStudies = [
           "₹100 per day",
           "No additional fee is payable",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "For documents under section 92 or 137, the additional fee for delay beyond the prescribed period is ₹100 per day.",
       },
@@ -31333,7 +28059,7 @@ const AICaseStudies = [
           "No fee because the company has already paid earlier",
           "Only inspection fee",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Higher additional fees may apply where the prescribed repeated-default conditions are satisfied for forms such as INC-22 or PAS-3.",
       },
@@ -31347,7 +28073,7 @@ const AICaseStudies = [
           "MGT-7A only",
           "AOC-4 XBRL",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Rule 12(2) provides that where no e-form is prescribed, the document or application is filed through Form GNL-1 or GNL-2 along with the applicable fee.",
       },
@@ -31384,7 +28110,7 @@ const AICaseStudies = [
           "₹5 crore or above",
           "₹10 crore or above",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Companies having paid-up capital of ₹5 crore or above are included in the specified class of companies required to file financial statements in XBRL, subject to applicable exemptions.",
       },
@@ -31407,7 +28133,7 @@ const AICaseStudies = [
           "It is automatically exempt because its turnover is below ₹100 crore",
           "Only listed companies can file XBRL",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Companies required to prepare their financial statements in accordance with the Companies (Indian Accounting Standards) Rules, 2015 are included in the specified class for XBRL filing.",
       },
@@ -31421,7 +28147,7 @@ const AICaseStudies = [
           "Housing Finance Companies",
           "Companies having paid-up capital above ₹5 crore",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Non-banking financial companies, Housing Finance Companies and companies engaged in banking and insurance sectors are exempted from filing financial statements under these XBRL Rules.",
       },
@@ -31435,7 +28161,7 @@ const AICaseStudies = [
           "It must obtain fresh approval from the RoC before every XBRL filing",
           "It must revert to physical filing",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "A company which has once filed its financial statements in XBRL format shall continue to file its financial statements and other documents in XBRL format even if it subsequently does not fall within the specified class.",
       },
@@ -31467,7 +28193,7 @@ const AICaseStudies = [
         question:
           "Which form is generally used for notice of situation or change of situation of registered office?",
         options: ["INC-22", "INC-27", "SH-7", "DIR-12"],
-        answer: 0,
+        answer: 1,
         reason:
           "Form INC-22 is used for notice of situation or change of situation of registered office to be filed with the Registrar of Companies.",
       },
@@ -31476,7 +28202,7 @@ const AICaseStudies = [
         question:
           "Which form is generally used for filing notice of alteration of share capital?",
         options: ["PAS-3", "SH-7", "MGT-14", "CHG-1"],
-        answer: 1,
+        answer: 2,
         reason:
           "Form SH-7 is used for filing notice to the Registrar of any alteration of share capital.",
       },
@@ -31489,7 +28215,7 @@ const AICaseStudies = [
           "Both forms are exclusively used for alteration of share capital",
           "DIR-6 is used for XBRL filing and DIR-12 for annual return",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "DIR-6 is used for intimation of change in particulars of a director, whereas DIR-12 is used for particulars of appointment of directors and KMP and changes among them, including resignation.",
       },
@@ -31498,7 +28224,7 @@ const AICaseStudies = [
         question:
           "Which form is generally used for registration of creation or modification of a charge other than charges relating to debentures?",
         options: ["CHG-1", "CHG-4", "CHG-6", "CHG-9"],
-        answer: 0,
+        answer: 1,
         reason:
           "Form CHG-1 is used for registration of creation or modification of a charge other than charges related to debentures. CHG-4 relates to satisfaction of charge.",
       },
@@ -31512,7 +28238,7 @@ const AICaseStudies = [
           "The authorised signatory and professional certifying the e-form are responsible for correctness of contents and relevant attachments, and scanned documents should represent original signed documents",
           "Once the MCA system accepts a form, false or misleading information can never attract further consequences",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The authorised signatory and professional certifying the e-form are responsible for the correctness of its contents and attachments. Scanned document images should be of original signed documents and should bear the actual signature of the authorised person. False or misleading information or omission of material facts may attract action under the Companies Act.",
       },
@@ -31548,7 +28274,7 @@ const AICaseStudies = [
           "The company has failed to pay income tax",
           "The company has changed its registered office",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11C permits investigation where SEBI has reasonable grounds to believe that securities transactions are being dealt with in a manner detrimental to investors or the securities market, or an intermediary/person associated with the securities market has violated the Act, rules, regulations or directions.",
       },
@@ -31563,7 +28289,7 @@ const AICaseStudies = [
           "Managers, managing directors, officers, employees and relevant intermediaries/persons associated with the securities market",
           "Only shareholders holding more than 10% shares",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 11C places the duty to preserve and produce relevant books, registers, documents and records on the specified managers, managing directors, officers, employees and persons associated with the securities market.",
       },
@@ -31578,7 +28304,7 @@ const AICaseStudies = [
           "One year",
           "Until the company requests them back",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Under Section 11C, documents produced may ordinarily be kept in the custody of the Investigating Authority for six months. They may thereafter be called for again if required.",
       },
@@ -31593,7 +28319,7 @@ const AICaseStudies = [
           "Only cancellation of PAN",
           "Only civil damages",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11C provides imprisonment up to one year, or fine up to ₹1 crore, or both, together with a further fine up to ₹5 lakh for every day after the first during which the failure or refusal continues.",
       },
@@ -31608,7 +28334,7 @@ const AICaseStudies = [
           "The Magistrate or Judge of the designated court",
           "The statutory auditor",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Under Section 11C, where there are reasonable grounds for believing that relevant records may be destroyed, mutilated, altered, falsified or secreted, the Investigating Authority may apply to the Magistrate or Judge of the designated court for an order authorising seizure.",
       },
@@ -31643,7 +28369,7 @@ const AICaseStudies = [
           "Holding shares for investment purposes",
           "Opening a demat account",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 12A prohibits the use of manipulative or deceptive devices, fraudulent schemes and practices in connection with securities covered by the provision.",
       },
@@ -31658,7 +28384,7 @@ const AICaseStudies = [
           "Compulsorily liquidate every company under investigation",
           "Cancel all shareholder rights",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11B permits SEBI to take measures including suspension of trading and restraining persons from accessing the securities market where necessary in the interests of investors or the securities market.",
       },
@@ -31668,7 +28394,7 @@ const AICaseStudies = [
         question:
           "SEBI may attach a bank account or other property under the specified power for a period not exceeding:",
         options: ["30 days", "60 days", "90 days", "180 days"],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 11B permits attachment of a bank account or other property for a period not exceeding 90 days, subject to the prescribed requirement of obtaining confirmation from the Special Court within that period.",
       },
@@ -31683,7 +28409,7 @@ const AICaseStudies = [
           "The Investor Protection and Education Fund established by SEBI",
           "The account of the person against whom proceedings were initiated",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The amount disgorged pursuant to the specified directions is credited to the Investor Protection and Education Fund established by SEBI and utilised in accordance with the applicable regulations.",
       },
@@ -31698,7 +28424,7 @@ const AICaseStudies = [
           "Holding securities for more than one year",
           "Receiving dividend from listed securities",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 12A prohibits dealing in securities while in possession of material non-public information and communicating such information in contravention of the Act or regulations.",
       },
@@ -31728,7 +28454,7 @@ const AICaseStudies = [
         question:
           "Failure by a registered intermediary to enter into an agreement with its client, where such agreement is required under the Act or regulations, attracts penalty under:",
         options: ["Section 15A", "Section 15B", "Section 15G", "Section 15HB"],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15B specifically deals with failure by a registered intermediary to enter into an agreement with its client where required.",
       },
@@ -31738,7 +28464,7 @@ const AICaseStudies = [
         question:
           "A listed company or registered intermediary failing to redress investor grievances after being called upon by SEBI is covered under:",
         options: ["Section 15A", "Section 15C", "Section 15E", "Section 15H"],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15C provides penalty for failure by a listed company or registered intermediary to redress investor grievances within the time specified by SEBI after being called upon to do so.",
       },
@@ -31753,7 +28479,7 @@ const AICaseStudies = [
           "Section 15F",
           "Section 15HA",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15EB specifically deals with defaults by investment advisers and research analysts.",
       },
@@ -31763,7 +28489,7 @@ const AICaseStudies = [
         question:
           "An insider who communicates unpublished price-sensitive information to another person, except as permitted in the ordinary course of business or under law, may attract penalty under:",
         options: ["Section 15C", "Section 15F", "Section 15G", "Section 15HB"],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 15G covers insider trading-related defaults, including communication of unpublished price-sensitive information in circumstances prohibited by law.",
       },
@@ -31778,7 +28504,7 @@ const AICaseStudies = [
           "Disproportionate gain or unfair advantage, loss caused to investors and repetitive nature of the default",
           "Only the number of employees of the company",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 15J requires due regard to the amount of disproportionate gain or unfair advantage, the amount of loss caused to investors or a group of investors, and the repetitive nature of the default.",
       },
@@ -31811,7 +28537,7 @@ const AICaseStudies = [
           "Only one investor must participate",
           "No profits or income may be expected",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Pooling of contributions or payments of investors and utilisation thereof for the purposes of the scheme is one of the statutory conditions.",
       },
@@ -31841,7 +28567,7 @@ const AICaseStudies = [
           "An unregistered investment arrangement meeting all four statutory conditions",
           "A scheme involving pooled contributions managed for investors",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11AA(3) specifically excludes a contract of insurance to which the Insurance Act, 1938 applies.",
       },
@@ -31856,7 +28582,7 @@ const AICaseStudies = [
           "Any scheme involving pooled money",
           "Any scheme managed by a professional",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "A scheme under which contributions are in the nature of subscription to a mutual fund is specifically excluded under Section 11AA(3).",
       },
@@ -31871,7 +28597,7 @@ const AICaseStudies = [
           "Obtain approval only from the stock exchange",
           "File an income-tax return before commencing the scheme",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Under Section 12, persons intending to sponsor or carry on collective investment schemes must obtain a certificate of registration from SEBI in accordance with the applicable regulations.",
       },
@@ -31906,7 +28632,7 @@ const AICaseStudies = [
           "45 days from receipt of the order",
           "90 days from receipt of the order",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 15T provides that an appeal to SAT shall ordinarily be filed within 45 days from the date on which the copy of the order is received.",
       },
@@ -31921,7 +28647,7 @@ const AICaseStudies = [
           "Only if the appellant is a listed company",
           "Only if SEBI gives written consent",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The proviso to Section 15T permits SAT to entertain an appeal after 45 days if it is satisfied that there was sufficient cause for not filing the appeal within that period.",
       },
@@ -31936,7 +28662,7 @@ const AICaseStudies = [
           "SAT can decide matters only through criminal procedure",
           "SAT cannot regulate its own procedure",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Under Section 15U, SAT is not bound by the procedure laid down by the CPC, but is guided by principles of natural justice and may regulate its own procedure.",
       },
@@ -31951,7 +28677,7 @@ const AICaseStudies = [
           "A Chartered Accountant, Company Secretary, Cost Accountant, legal practitioner or certain officers, as permitted",
           "Only a SEBI officer",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 15V permits an appellant to appear in person or authorise one or more Chartered Accountants, Company Secretaries, Cost Accountants, legal practitioners or its officers to present the case.",
       },
@@ -31966,7 +28692,7 @@ const AICaseStudies = [
           "Within 60 days on any question of law arising out of the order",
           "Within 180 days only with SEBI's approval",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 15Z provides for an appeal to the Supreme Court within 60 days from communication of the SAT decision or order, on any question of law arising out of such order. The Supreme Court may allow a further period not exceeding 60 days where sufficient cause is shown.",
       },
@@ -32011,7 +28737,7 @@ const AICaseStudies = [
           "A department of the Reserve Bank of India",
           "A statutory committee without separate legal identity",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 3 establishes SEBI as a body corporate having perpetual succession and a common seal, with power to acquire, hold and dispose of property and to sue or be sued.",
       },
@@ -32026,7 +28752,7 @@ const AICaseStudies = [
           "A member chosen by the members present from amongst themselves",
           "The senior-most officer of SEBI",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Under Section 7, where the Chairman is unable to attend, any member chosen by the members present from amongst themselves shall preside over the meeting.",
       },
@@ -32041,7 +28767,7 @@ const AICaseStudies = [
           "Two additional votes",
           "Power to refer the matter only to the Central Government",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 7 provides that the Chairman or presiding member has a second or casting vote in the event of equality of votes.",
       },
@@ -32056,7 +28782,7 @@ const AICaseStudies = [
           "Disclose the nature of his interest and not take part in deliberation or decision on that matter",
           "Resign permanently from SEBI",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 7A requires disclosure of the nature of the interest, recording of the disclosure in the proceedings and prohibits the member from participating in deliberation or decision concerning that matter.",
       },
@@ -32071,7 +28797,7 @@ const AICaseStudies = [
           "The Board must immediately cease functioning",
           "All previous orders automatically become void",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 8 provides that a vacancy in the Board does not invalidate any act or proceeding of the Board. Similar protection applies to specified defects and irregularities that do not affect the merits.",
       },
@@ -32115,7 +28841,7 @@ const AICaseStudies = [
           "Regulating income-tax assessments",
           "Appointing directors of every listed company",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11 specifically includes registration and regulation of stock brokers, merchant bankers, underwriters, portfolio managers, investment advisers and other intermediaries associated with the securities market.",
       },
@@ -32129,7 +28855,7 @@ const AICaseStudies = [
           "Imposing imprisonment directly in every case",
           "Dissolving companies",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11 provides SEBI with specified powers of a civil court, including summoning and enforcing attendance, discovery and production of books and documents, examination on oath and issuing commissions.",
       },
@@ -32144,7 +28870,7 @@ const AICaseStudies = [
           "Only failure to pay dividends",
           "Only labour-law violations",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The Act permits SEBI to undertake such inspection where it has reasonable grounds to believe that the company has been indulging in insider trading or fraudulent and unfair trade practices relating to the securities market.",
       },
@@ -32159,7 +28885,7 @@ const AICaseStudies = [
           "Approval of every listed company",
           "Approval of every investor",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11 permits information exchange with similar authorities, subject to applicable law. For furnishing information to an authority outside India, SEBI may enter into an arrangement, agreement or understanding with prior approval of the Central Government.",
       },
@@ -32216,7 +28942,7 @@ const AICaseStudies = [
           "Only appointment of directors",
           "Only employee salaries",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11A empowers SEBI to specify matters relating to issue of capital, transfer of securities and other matters incidental thereto, along with the manner of disclosure.",
       },
@@ -32231,7 +28957,7 @@ const AICaseStudies = [
           "Only internal management reports",
           "Only dividend warrants",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11A permits SEBI to prohibit issuance of prospectus, offer document or advertisement soliciting money from the public for an issue of securities.",
       },
@@ -32246,7 +28972,7 @@ const AICaseStudies = [
           "Appoint the company's auditors",
           "Fix the company's employee salaries",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11A permits SEBI to specify conditions subject to which a prospectus, offer document or advertisement may be issued.",
       },
@@ -32260,7 +28986,7 @@ const AICaseStudies = [
           "Only employment contracts",
           "Only bank lending rates",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11A expressly empowers SEBI to specify requirements for listing and transfer of securities and related matters.",
       },
@@ -32275,7 +29001,7 @@ const AICaseStudies = [
           "To control monetary policy",
           "To replace stock exchanges",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11A empowers SEBI to take measures for the protection of investors in relation to issue of securities and related disclosures.",
       },
@@ -32319,7 +29045,7 @@ const AICaseStudies = [
           "Appoint directors of private companies",
           "Set monetary policy",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11B enables SEBI to issue directions in the interests of investors, orderly development of the securities market, prevention of detrimental conduct and proper management of intermediaries/persons covered by the provision.",
       },
@@ -32334,7 +29060,7 @@ const AICaseStudies = [
           "Transfer the gain to the company only",
           "Pay the gain to another investor chosen by him",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11B clarifies that the power to issue directions includes the power to direct a person who made profit or averted loss through contravention to disgorge an amount equivalent to the wrongful gain or loss averted.",
       },
@@ -32349,7 +29075,7 @@ const AICaseStudies = [
           "Has changed its registered office",
           "Has declared a dividend",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11D allows SEBI, after inquiry, to pass an order requiring a person to cease and desist where the person has violated or is likely to violate the Act, rules or regulations.",
       },
@@ -32364,7 +29090,7 @@ const AICaseStudies = [
           "A decline in sales",
           "A change in auditors",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11D contains a special restriction for listed public companies and public companies intending to list, unless SEBI has reasonable grounds to believe that the company has indulged in insider trading or market manipulation.",
       },
@@ -32379,7 +29105,7 @@ const AICaseStudies = [
           "The personal account of the investor",
           "The company's share capital account",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The amount disgorged pursuant to the relevant directions is credited to the Investor Protection and Education Fund established by SEBI and utilised in accordance with applicable regulations.",
       },
@@ -32423,7 +29149,7 @@ const AICaseStudies = [
           "Obtain approval only from RBI",
           "Obtain approval only from shareholders",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 12 requires specified securities-market intermediaries, including merchant bankers, to obtain a certificate of registration from SEBI.",
       },
@@ -32438,7 +29164,7 @@ const AICaseStudies = [
           "Employees of listed companies generally",
           "All shareholders",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Stock brokers are expressly included among the intermediaries required to obtain a certificate of registration under Section 12.",
       },
@@ -32453,7 +29179,7 @@ const AICaseStudies = [
           "Every individual investor",
           "Every creditor of a company",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 12 also covers depositories, participants, custodians of securities, foreign institutional investors, credit rating agencies and other intermediaries specified by SEBI through notification.",
       },
@@ -32467,7 +29193,7 @@ const AICaseStudies = [
           "Only through the stock exchange",
           "Without any fee",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 12 provides that every application for registration shall be made in the prescribed manner and on payment of fees determined by regulations.",
       },
@@ -32482,7 +29208,7 @@ const AICaseStudies = [
           "Automatic immunity",
           "Permission from every investor",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 12 provides that no order of suspension or cancellation shall be made unless the person concerned has been given a reasonable opportunity of being heard.",
       },
@@ -32527,7 +29253,7 @@ const AICaseStudies = [
           "Only investment in listed securities",
           "Only receipt of fixed interest from a bank",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11AA(2) requires the specified conditions, including pooling of contributions, expectation of profits/income/produce/property, management on behalf of investors and absence of day-to-day control.",
       },
@@ -32542,7 +29268,7 @@ const AICaseStudies = [
           "Not by itself determine whether it is a CIS",
           "Make SEBI's jurisdiction impossible",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The statutory test depends on the nature and substance of the scheme and satisfaction of the prescribed conditions, not merely the name given to it.",
       },
@@ -32557,7 +29283,7 @@ const AICaseStudies = [
           "Every agricultural scheme",
           "Every real estate arrangement",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11AA(3) specifically excludes a contract of insurance to which the Insurance Act, 1938 applies.",
       },
@@ -32572,7 +29298,7 @@ const AICaseStudies = [
           "Investors received certificates",
           "The company used the word 'agriculture'",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Absence of day-to-day control by investors and management of the property/investment on behalf of investors are express statutory conditions.",
       },
@@ -32587,7 +29313,7 @@ const AICaseStudies = [
           "Automatically exempt from SEBI",
           "Treated as a bank deposit",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11AA provides that an unregistered or otherwise uncovered pooling arrangement involving a corpus of ₹100 crore or more shall be deemed to be a collective investment scheme.",
       },
@@ -32637,7 +29363,7 @@ const AICaseStudies = [
           "A company has changed its auditor",
           "A shareholder has sold shares",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11C permits investigation where SEBI has reasonable grounds to believe that securities transactions are being dealt with detrimentally to investors/securities market or an intermediary/person associated with the securities market has violated applicable provisions.",
       },
@@ -32652,7 +29378,7 @@ const AICaseStudies = [
           "Produce records only after criminal conviction",
           "Produce only physical documents",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11C requires specified persons to preserve and produce books, registers, documents and records in their custody or power. The obligation is not limited merely to physical records.",
       },
@@ -32667,7 +29393,7 @@ const AICaseStudies = [
           "Six months, subject to the statutory provision for calling them again",
           "An unlimited period in every case",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 11C provides that the Investigating Authority may keep such records in custody for six months, after which they should be returned, though they may be called for again if needed.",
       },
@@ -32682,7 +29408,7 @@ const AICaseStudies = [
           "Only after a court convicts the person",
           "Only with shareholder approval",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11C specifically empowers the person directed to make an investigation to examine relevant persons on oath and require them to appear personally.",
       },
@@ -32697,7 +29423,7 @@ const AICaseStudies = [
           "A Magistrate or Judge of the designated court, upon application",
           "The stock exchange's compliance officer",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Under Section 11C, where the prescribed grounds exist, the Investigating Authority may apply to the Magistrate or Judge of the designated court for an order authorising entry, search and seizure.",
       },
@@ -32735,7 +29461,7 @@ const AICaseStudies = [
         question:
           "Failure to furnish a required document, return or report, or furnishing false/incomplete information, may attract penalty under:",
         options: ["Section 15A", "Section 15Z", "Section 26A", "Section 32"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15A deals with failure to furnish documents, returns or reports, filing false/incorrect/incomplete information and failure to maintain books and records.",
       },
@@ -32745,7 +29471,7 @@ const AICaseStudies = [
         question:
           "Failure by a registered intermediary to enter into an agreement with its client, where such agreement is required, attracts penalty under:",
         options: ["Section 15B", "Section 15C", "Section 15G", "Section 15H"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15B specifically provides penalty for failure by a registered intermediary to enter into the required agreement with clients.",
       },
@@ -32755,7 +29481,7 @@ const AICaseStudies = [
         question:
           "Where a listed company or registered intermediary fails to redress investor grievances after being called upon by SEBI in writing, the relevant provision is:",
         options: ["Section 15A", "Section 15C", "Section 15E", "Section 15HB"],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15C deals specifically with failure to redress investor grievances within the time specified by SEBI after being called upon in writing.",
       },
@@ -32765,7 +29491,7 @@ const AICaseStudies = [
         question:
           "A stock broker failing to deliver securities or make payment due to an investor in the manner prescribed may attract penalty under:",
         options: ["Section 15F", "Section 15G", "Section 15H", "Section 15J"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15F provides penalties for specified defaults by stock brokers, including failure to deliver securities or make payment due to investors.",
       },
@@ -32780,7 +29506,7 @@ const AICaseStudies = [
           "₹1,000 only",
           "Three times the broker's annual turnover",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15F provides that for charging excess brokerage, the penalty may extend to five times the amount of brokerage charged in excess of the specified brokerage, subject to the statutory provision.",
       },
@@ -32828,7 +29554,7 @@ const AICaseStudies = [
           "Holding shares purchased years earlier",
           "Attending an ordinary board meeting",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15G covers communication of unpublished price-sensitive information except where permitted in the ordinary course of business or under law. Personal trading by the insider is not the only prohibited conduct.",
       },
@@ -32843,7 +29569,7 @@ const AICaseStudies = [
           "Correct if the recipient is a friend",
           "Correct if no profit is made",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15G includes communication of UPSI to any person, except as required in the ordinary course of business or under law.",
       },
@@ -32858,7 +29584,7 @@ const AICaseStudies = [
           "Only a tax penalty",
           "No consequence if the insider does not personally trade",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15G expressly covers counselling or procuring another person to deal in securities on the basis of unpublished price-sensitive information.",
       },
@@ -32873,7 +29599,7 @@ const AICaseStudies = [
           "₹25 crore or three times the profits made from insider trading, whichever is higher",
           "₹50,000 per transaction",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 15G provides a penalty of not less than ₹10 lakh, extendable to ₹25 crore or three times the amount of profits made from insider trading, whichever is higher.",
       },
@@ -32883,7 +29609,7 @@ const AICaseStudies = [
         question:
           "Which statutory provision generally prohibits dealing in securities while in possession of material or non-public information in contravention of the Act or regulations?",
         options: ["Section 12A", "Section 15C", "Section 26A", "Section 29"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 12A prohibits, among other things, dealing in securities while in possession of material or non-public information in contravention of the Act, rules or regulations.",
       },
@@ -32927,7 +29653,7 @@ const AICaseStudies = [
           "Income-tax assessment",
           "Corporate insolvency",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The facts concern acquisition of shares, crossing takeover-related thresholds, public announcement, public offer and related disclosures.",
       },
@@ -32941,7 +29667,7 @@ const AICaseStudies = [
           "Selling shares through a stock exchange",
           "Buying government securities",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 12A prohibits acquiring control of a company or securities beyond the prescribed percentage of equity share capital in contravention of regulations made under the Act.",
       },
@@ -32955,7 +29681,7 @@ const AICaseStudies = [
           "Failure to appoint an internal auditor",
           "Failure to pay GST",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15H covers failure to make a required public announcement to acquire shares at the minimum price, among other takeover-related defaults.",
       },
@@ -32970,7 +29696,7 @@ const AICaseStudies = [
           "Only the Income-tax Act",
           "Only the contract between Vertex and its broker",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Takeover obligations are determined with reference to the applicable regulatory framework, including relevant aggregate acquisition and shareholding requirements, rather than simply isolating transactions.",
       },
@@ -32984,7 +29710,7 @@ const AICaseStudies = [
           "₹50,000 only",
           "The amount of share capital of the target company",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15H provides a minimum penalty of ₹10 lakh and a maximum linked to ₹25 crore or three times the amount of profits made out of the failure, whichever is higher.",
       },
@@ -33023,7 +29749,7 @@ const AICaseStudies = [
         question:
           "Failure by an asset management company of a mutual fund to comply with regulations providing restrictions on its activities is primarily covered by:",
         options: ["Section 15E", "Section 15G", "Section 15H", "Section 15Z"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15E specifically deals with failure by an asset management company of a mutual fund to comply with regulations providing restrictions on its activities.",
       },
@@ -33037,7 +29763,7 @@ const AICaseStudies = [
           "Only listed companies",
           "Only mutual funds",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15EA deals with failures to comply with regulations or directions relating to alternative investment funds, infrastructure investment trusts and real estate investment trusts.",
       },
@@ -33052,7 +29778,7 @@ const AICaseStudies = [
           "₹1 crore or three times the gains made out of the failure, whichever is higher, subject to the statutory formulation",
           "₹10,000",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 15EA provides a penalty which may extend to ₹1 lakh per day subject to a maximum of ₹1 crore or three times the amount of gains made out of such failure, whichever is higher.",
       },
@@ -33062,7 +29788,7 @@ const AICaseStudies = [
         question:
           "Failure by an investment adviser to comply with SEBI regulations or directions is covered by:",
         options: ["Section 15EB", "Section 15B", "Section 15F", "Section 15J"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15EB specifically covers defaults by investment advisers and research analysts.",
       },
@@ -33077,7 +29803,7 @@ const AICaseStudies = [
           "Incorrect, because the relevant penalty provisions may apply upon contravention of the specified regulatory requirements",
           "Correct, unless the company is listed",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The statutory penalty provisions are triggered by specified regulatory defaults; an investor complaint or actual investor loss is not necessarily a prerequisite.",
       },
@@ -33116,7 +29842,7 @@ const AICaseStudies = [
         question:
           "Knowingly altering, destroying, mutilating, concealing or falsifying records to impede an investigation may attract:",
         options: ["Section 15HAA", "Section 15C", "Section 15F", "Section 24A"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15HAA specifically covers specified acts involving information, records and documents, including electronic records, when done knowingly to impede, obstruct or influence investigation, inquiry, audit or inspection.",
       },
@@ -33130,7 +29856,7 @@ const AICaseStudies = [
           "Information, records and documents including electronic records, as specified",
           "Only share certificates",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 15HAA expressly includes electronic records within its scope.",
       },
@@ -33145,7 +29871,7 @@ const AICaseStudies = [
           "A matter exclusively under company law",
           "A takeover violation under Section 15H",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15HAA expressly covers unauthorised downloading, extraction, copying or reproduction of regulatory data maintained in the system database.",
       },
@@ -33160,7 +29886,7 @@ const AICaseStudies = [
           "Covered only if all investors lose money",
           "Covered only under Section 15G",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15HAA specifically covers knowingly introducing a computer virus or other computer contaminant into the system database and bringing out a trading halt.",
       },
@@ -33174,7 +29900,7 @@ const AICaseStudies = [
           "₹25 crore only",
           "₹5 lakh only",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15HAA provides a penalty which may extend to ₹10 crore or three times the amount of profits made out of such act, whichever is higher.",
       },
@@ -33216,7 +29942,7 @@ const AICaseStudies = [
         question:
           "Where a person fails to comply with a provision of the SEBI Act, rules, regulations or directions for which no separate penalty is provided, the relevant provision is:",
         options: ["Section 15HB", "Section 15G", "Section 15H", "Section 15T"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15HB provides the residual penalty where a person fails to comply with a provision for which no separate penalty has been provided.",
       },
@@ -33231,7 +29957,7 @@ const AICaseStudies = [
           "Only a High Court judge",
           "Only a stock broker",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15-I provides that the Board may appoint an officer not below the rank of Division Chief as an adjudicating officer.",
       },
@@ -33245,7 +29971,7 @@ const AICaseStudies = [
           "Impose imprisonment directly",
           "Dissolve the company",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15-I empowers the adjudicating officer to summon persons acquainted with the facts and circumstances and require production of relevant documents.",
       },
@@ -33260,7 +29986,7 @@ const AICaseStudies = [
           "Number of directors unrelated to the default",
           "Age of the company's website",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15J requires due regard to the disproportionate gain or unfair advantage, loss caused to an investor or group of investors, and repetitive nature of the default.",
       },
@@ -33275,7 +30001,7 @@ const AICaseStudies = [
           "Market capitalisation, dividend rate, auditor's tenure",
           "Share price, promoter age, office location",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15J expressly requires consideration of the amount of disproportionate gain or unfair advantage, loss caused to investors or a group of investors, and repetitive nature of the default.",
       },
@@ -33322,7 +30048,7 @@ const AICaseStudies = [
           "Filing directly before the Supreme Court",
           "Obtaining approval from all shareholders",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15JB permits a person against whom specified proceedings have been initiated or may be initiated to file a written application with the Board proposing settlement.",
       },
@@ -33337,7 +30063,7 @@ const AICaseStudies = [
           "Only the number of shareholders",
           "Only the market price",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15JB specifically provides that the Board may consider the nature, gravity and impact of defaults while agreeing to a settlement proposal.",
       },
@@ -33351,7 +30077,7 @@ const AICaseStudies = [
           "Appealable only to a civil court",
           "Appealable only to the stock exchange",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15JB expressly provides that no appeal shall lie under Section 15T against an order passed by the Board or adjudicating officer under that section.",
       },
@@ -33366,7 +30092,7 @@ const AICaseStudies = [
           "The stock exchange's reserve",
           "The company's general reserve",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15JB provides that settlement amounts, excluding disgorgement amount and legal costs, realised under the Act are credited to the Consolidated Fund of India.",
       },
@@ -33381,7 +30107,7 @@ const AICaseStudies = [
           "Correct only for listed companies",
           "Correct only when SEBI conducts an investigation",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15JB specifically distinguishes settlement amounts from disgorgement amounts and legal costs for purposes of crediting the amount to the Consolidated Fund of India.",
       },
@@ -33422,7 +30148,7 @@ const AICaseStudies = [
         question:
           "An appeal against an order of SEBI or an adjudicating officer under Section 15T is ordinarily required to be filed within:",
         options: ["15 days", "30 days", "45 days", "180 days"],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 15T provides that an appeal shall be filed within 45 days from the date on which the copy of the relevant order is received.",
       },
@@ -33436,7 +30162,7 @@ const AICaseStudies = [
           "The appellant requests an extension without reason",
           "The stock exchange approves the delay",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15T permits SAT to entertain an appeal after 45 days if it is satisfied that there was sufficient cause for not filing within the prescribed period.",
       },
@@ -33450,7 +30176,7 @@ const AICaseStudies = [
           "A criminal court only",
           "A stock exchange committee",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15U states that SAT is not bound by the procedure laid down by the CPC but shall be guided by principles of natural justice, subject to the Act and rules.",
       },
@@ -33465,7 +30191,7 @@ const AICaseStudies = [
           "Only a stock broker",
           "Only a SEBI officer",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15V permits an appellant to appear personally or authorise one or more Chartered Accountants, Company Secretaries, Cost Accountants, legal practitioners or officers to present the case.",
       },
@@ -33480,7 +30206,7 @@ const AICaseStudies = [
           "Only with permission of the stock exchange",
           "Only when the penalty exceeds ₹25 crore",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15Z provides for an appeal to the Supreme Court within the prescribed period on any question of law arising out of the decision or order of SAT.",
       },
@@ -33524,7 +30250,7 @@ const AICaseStudies = [
           "The senior-most officer of SEBI",
           "The RBI representative compulsorily",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Under Section 7, where the Chairman is unable to attend a meeting, any member chosen by the members present from amongst themselves shall preside over the meeting.",
       },
@@ -33539,7 +30265,7 @@ const AICaseStudies = [
           "Two ordinary votes",
           "A right to refer the matter only to the Central Government",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 7 provides that in case of equality of votes, the Chairman or the presiding member has a second or casting vote.",
       },
@@ -33554,7 +30280,7 @@ const AICaseStudies = [
           "He only needs to disclose the interest after the meeting",
           "He must automatically resign from SEBI",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 7A requires disclosure of the nature of the interest and prohibits the member from taking part in deliberation or decision concerning that matter.",
       },
@@ -33569,7 +30295,7 @@ const AICaseStudies = [
           "No, a vacancy does not invalidate acts or proceedings of the Board",
           "Only the Chairman can decide whether proceedings remain valid",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 8 provides that a vacancy in the Board does not invalidate any act or proceeding of the Board.",
       },
@@ -33584,7 +30310,7 @@ const AICaseStudies = [
           "For life unless removed",
           "Only for 1 year and never eligible for reappointment",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The Chairman and whole-time members hold office for the period specified in the appointment order, not exceeding five years, and are eligible for reappointment, subject to the statutory age limit.",
       },
@@ -33630,7 +30356,7 @@ const AICaseStudies = [
           "Only tax evasion",
           "Only labour law violations",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11 empowers SEBI to undertake inspection of books and records of a listed public company where it has reasonable grounds to believe that the company has been indulging in insider trading or fraudulent and unfair trade practices.",
       },
@@ -33645,7 +30371,7 @@ const AICaseStudies = [
           "A stock exchange committee",
           "A private arbitrator",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11(3) gives SEBI powers similar to those of a civil court under the Code of Civil Procedure, 1908 in specified matters.",
       },
@@ -33675,7 +30401,7 @@ const AICaseStudies = [
           "Cancel all shareholder rights permanently",
           "Transfer ownership of the company to SEBI",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11B empowers SEBI to take measures such as suspension of trading of a security, restraint from accessing the securities market and other specified measures.",
       },
@@ -33685,7 +30411,7 @@ const AICaseStudies = [
         question:
           "Where SEBI attaches a bank account under the relevant power, the attachment by SEBI is initially for a period not exceeding:",
         options: ["30 days", "60 days", "90 days", "180 days"],
-        answer: 2,
+        answer: 3,
         reason:
           "The relevant provision permits SEBI to attach, for a period not exceeding 90 days, bank accounts or other property of specified persons involved in violations, subject to the statutory requirement of confirmation by the Special Court within the prescribed period.",
       },
@@ -33732,7 +30458,7 @@ const AICaseStudies = [
           "Only payment of dividends and appointment of directors",
           "Only investment in listed shares",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11AA(2) specifies the relevant conditions relating to pooling of contributions, expectation of profits/income/produce/property, management on behalf of investors and absence of day-to-day control.",
       },
@@ -33746,7 +30472,7 @@ const AICaseStudies = [
           "Whether investors are wealthy",
           "Whether the arrangement uses a private contract",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The statutory classification depends on whether the conditions specified under Section 11AA are satisfied, rather than merely the label used by the operator.",
       },
@@ -33761,7 +30487,7 @@ const AICaseStudies = [
           "Automatically treated as a mutual fund",
           "Outside the SEBI Act",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11AA provides that pooling of funds under an unregistered scheme or arrangement not covered by the specified exceptions involving a corpus of ₹100 crore or more shall be deemed to be a collective investment scheme.",
       },
@@ -33776,7 +30502,7 @@ const AICaseStudies = [
           "Every company receiving equity capital",
           "Every listed company",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "A contract of insurance to which the Insurance Act, 1938 applies is one of the statutory exceptions under Section 11AA(3).",
       },
@@ -33791,7 +30517,7 @@ const AICaseStudies = [
           "Every venture capital investment",
           "Every partnership firm",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "A scheme falling within the meaning of 'chit business' under the Chit Fund Act, 1982 is excluded from the definition of collective investment scheme.",
       },
@@ -33837,7 +30563,7 @@ const AICaseStudies = [
           "A shareholder disagrees with management",
           "A company's share price has increased",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11C provides the grounds for investigation where transactions are being dealt with in a manner detrimental to investors or the securities market, or where specified persons have violated applicable provisions.",
       },
@@ -33852,7 +30578,7 @@ const AICaseStudies = [
           "Two years in every case",
           "Permanently",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11C provides that the investigating authority may keep the books, registers and other documents and records in its custody for six months, after which they are to be returned, subject to the authority's power to call for them again when needed.",
       },
@@ -33867,7 +30593,7 @@ const AICaseStudies = [
           "Must destroy the originals",
           "Must transfer the documents to the stock exchange",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11C provides for furnishing certified copies of documents produced before the investigating authority where the person concerned requires them.",
       },
@@ -33882,7 +30608,7 @@ const AICaseStudies = [
           "Only after SAT approval",
           "Only if the stock exchange gives permission",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11C permits the investigating authority to examine on oath managers, managing directors, officers and other employees or persons associated with the securities market in relation to the affairs of the business.",
       },
@@ -33897,7 +30623,7 @@ const AICaseStudies = [
           "A shareholder resolution",
           "An order of the company's auditor",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 11C provides for an application to the Magistrate or Judge of the designated court for an order authorising entry, search and seizure in the specified circumstances.",
       },
@@ -33945,7 +30671,7 @@ const AICaseStudies = [
           "Only incorporate a company",
           "Only obtain permission from one investor",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 12 requires specified intermediaries such as stock brokers to obtain a certificate of registration from SEBI and comply with the conditions of registration.",
       },
@@ -33960,7 +30686,7 @@ const AICaseStudies = [
           "A takeover only",
           "A CIS activity",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 12A prohibits insider trading and dealing in securities while in possession of material or non-public information in contravention of the Act and regulations.",
       },
@@ -33975,7 +30701,7 @@ const AICaseStudies = [
           "The recipient promises not to tell anyone",
           "The communication occurs after market hours",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 12A prohibits dealing with or communicating material/non-public information in contravention of the Act or regulations, subject to the statutory exceptions.",
       },
@@ -33990,7 +30716,7 @@ const AICaseStudies = [
           "Correct if the trades are profitable",
           "Correct only for promoters",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 12A prohibits manipulative or deceptive devices and schemes intended to defraud or operate as fraud or deceit in connection with securities.",
       },
@@ -34005,7 +30731,7 @@ const AICaseStudies = [
           "Section 24A only",
           "Section 29",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 12A prohibits acquiring control of a company or securities beyond the prescribed percentage in contravention of the regulations made under the SEBI Act.",
       },
@@ -34047,7 +30773,7 @@ const AICaseStudies = [
         question:
           "Where a listed company, after being called upon by SEBI in writing, fails to redress investor grievances within the specified time, which provision is primarily attracted?",
         options: ["Section 15A", "Section 15C", "Section 15G", "Section 24A"],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15C provides a penalty where a listed company or registered intermediary, after being called upon by SEBI in writing, fails to redress investor grievances within the specified time.",
       },
@@ -34057,7 +30783,7 @@ const AICaseStudies = [
         question:
           "SEBI's power to direct a person who made a profit or averted a loss through a contravention to disgorge an amount equivalent to the wrongful gain or loss averted arises under:",
         options: ["Section 11B", "Section 15I", "Section 15T", "Section 29"],
-        answer: 0,
+        answer: 1,
         reason:
           "The power to issue directions under Section 11B includes the power to direct a person who made profit or averted loss by contravening the Act or regulations to disgorge an amount equivalent to the wrongful gain or loss averted.",
       },
@@ -34072,7 +30798,7 @@ const AICaseStudies = [
           "Obtain an order from a civil court in every case",
           "Obtain approval from the stock exchange",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 11D permits SEBI, after causing an inquiry to be made, to pass a cease and desist order where it finds that a person has violated or is likely to violate the Act, rules or regulations.",
       },
@@ -34082,7 +30808,7 @@ const AICaseStudies = [
         question:
           "An intermediary that fails to furnish a required document, return or report, or furnishes false, incorrect or incomplete information, may attract:",
         options: ["Section 15A", "Section 15C", "Section 15H", "Section 15Z"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15A covers failure to furnish required documents, returns or reports and furnishing false, incorrect or incomplete information, subject to the prescribed penalty.",
       },
@@ -34092,7 +30818,7 @@ const AICaseStudies = [
         question:
           "Where a person contravenes a provision of the SEBI Act or regulations for which no separate penalty is provided, the applicable provision is generally:",
         options: ["Section 15HB", "Section 15G", "Section 15C", "Section 11AA"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15HB provides a residual penalty for failure to comply with a provision of the Act, rules, regulations or directions of SEBI where no separate penalty has been provided.",
       },
@@ -34132,7 +30858,7 @@ const AICaseStudies = [
         question:
           "The finance head's dealing in securities while possessing unpublished price-sensitive information may attract:",
         options: ["Section 15G", "Section 15C", "Section 15P", "Section 15V"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15G provides a penalty for insider trading, including dealing in securities on the basis of unpublished price-sensitive information.",
       },
@@ -34147,7 +30873,7 @@ const AICaseStudies = [
           "Trading through a personal account is always exempt",
           "The information was received verbally",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The statutory prohibition covers dealing in securities on the basis of unpublished price-sensitive information; the mere fact that the information was received verbally or through an associate does not make the conduct permissible.",
       },
@@ -34157,7 +30883,7 @@ const AICaseStudies = [
         question:
           "Failure to comply with specified disclosure/public announcement requirements relating to acquisition of shares or takeover may attract:",
         options: ["Section 15H", "Section 15A", "Section 15E", "Section 15X"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15H provides penalties for specified failures relating to disclosure of shareholding, public announcement, public offer and payment of consideration under takeover requirements.",
       },
@@ -34172,7 +30898,7 @@ const AICaseStudies = [
           "Board appointment",
           "Registration of SAT members",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Transactions designed to create a false or misleading appearance in the securities market may constitute fraudulent and unfair trade practices, attracting Section 15HA.",
       },
@@ -34182,7 +30908,7 @@ const AICaseStudies = [
         question:
           "Unauthorised access, downloading or alteration of regulatory data maintained in the SEBI system may attract:",
         options: ["Section 15HAA", "Section 15B", "Section 15T", "Section 20A"],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15HAA specifically covers unauthorised access, downloading, extraction, copying, alteration, destruction and other specified acts relating to regulatory data and records.",
       },
@@ -34229,7 +30955,7 @@ const AICaseStudies = [
           "Only a High Court judge",
           "Only an external auditor",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15-I provides that SEBI may appoint an officer not below the rank of Division Chief as an adjudicating officer.",
       },
@@ -34243,7 +30969,7 @@ const AICaseStudies = [
           "Cancel Parliament's legislation",
           "Appoint directors of the company",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15-I empowers the adjudicating officer to summon and enforce attendance of persons acquainted with the facts and circumstances and require production of relevant documents.",
       },
@@ -34258,7 +30984,7 @@ const AICaseStudies = [
           "Repetitive nature of the default",
           "Educational qualification of the person committing the default",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 15J specifically requires consideration of disproportionate gain/unfair advantage, loss caused to investors and repetitive nature of the default.",
       },
@@ -34273,7 +30999,7 @@ const AICaseStudies = [
           "The stock exchange's general fund",
           "The defaulting company's reserve account",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15JA provides that sums realised by way of penalties under the SEBI Act shall be credited to the Consolidated Fund of India.",
       },
@@ -34288,7 +31014,7 @@ const AICaseStudies = [
           "Appealable only to the Central Government",
           "Automatically appealable to a civil court",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15JB specifically provides that no appeal shall lie under Section 15T against an order passed by the Board or adjudicating officer under the settlement provision.",
       },
@@ -34335,7 +31061,7 @@ const AICaseStudies = [
           "Three Technical Members",
           "One SEBI officer and one shareholder",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15L provides that every Bench constituted shall include at least one Judicial Member and one Technical Member.",
       },
@@ -34345,7 +31071,7 @@ const AICaseStudies = [
         question:
           "An appeal against an order of SEBI under Section 15T is generally required to be filed within:",
         options: ["15 days", "30 days", "45 days", "90 days"],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 15T provides a period of 45 days from the date on which the copy of the order is received. SAT may entertain a delayed appeal where sufficient cause is established.",
       },
@@ -34360,7 +31086,7 @@ const AICaseStudies = [
           "SEBI Chairman only",
           "Recovery Officer only",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 15M provides that a person who is or has been a Judge of a High Court for at least five years qualifies for appointment as a Judicial Member of SAT, subject to the statutory framework.",
       },
@@ -34375,7 +31101,7 @@ const AICaseStudies = [
           "Only being a shareholder of a listed company",
           "Being a company director for one year",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15M provides a qualification route for a Technical Member based on proven ability, integrity and standing with special knowledge and professional experience of not less than fifteen years in the financial sector, including securities market and specified areas.",
       },
@@ -34390,7 +31116,7 @@ const AICaseStudies = [
           "The next general election",
           "The Central Government dissolves SAT",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15Q provides that a Presiding Officer or Member ordinarily continues until expiry of three months from receipt of resignation notice, appointment of successor, or expiry of term, whichever is earliest, unless permitted to relinquish earlier.",
       },
@@ -34437,7 +31163,7 @@ const AICaseStudies = [
           "A criminal court",
           "A private arbitration tribunal",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15U provides that SAT shall not be bound by the procedure laid down by the CPC but shall be guided by principles of natural justice.",
       },
@@ -34452,7 +31178,7 @@ const AICaseStudies = [
           "Only a SEBI officer",
           "Only a judge",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15V permits an appellant to appear personally or authorise one or more Chartered Accountants, Company Secretaries, Cost Accountants, legal practitioners or specified officers to present the case.",
       },
@@ -34467,7 +31193,7 @@ const AICaseStudies = [
           "Only district courts are barred",
           "Only High Courts are barred",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15Y bars civil court jurisdiction in matters which an adjudicating officer or SAT is empowered to determine under the SEBI Act.",
       },
@@ -34482,7 +31208,7 @@ const AICaseStudies = [
           "Only with permission of the stock exchange",
           "Only where the penalty exceeds ₹25 crore",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 15Z provides for an appeal to the Supreme Court on any question of law arising out of the decision or order of SAT.",
       },
@@ -34497,7 +31223,7 @@ const AICaseStudies = [
           "60 days, with a further period not exceeding 60 days where sufficient cause is established",
           "One year in every case",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Section 15Z provides a period of 60 days from communication of the SAT decision or order, with the Supreme Court empowered to allow a further period not exceeding 60 days if sufficient cause is shown.",
       },
@@ -34545,7 +31271,7 @@ const AICaseStudies = [
           "Two-thirds of the Board",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "Where the Chairperson of the Board is a non-executive director, at least one-third of the Board shall comprise independent directors, subject to the specified conditions.",
@@ -34564,7 +31290,7 @@ const AICaseStudies = [
           "Permitted if approved by the Audit Committee",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "The Board shall meet at least four times in a financial year and the maximum time gap between any two consecutive meetings shall not exceed 120 days.",
@@ -34583,7 +31309,7 @@ const AICaseStudies = [
           "Approval of SEBI only",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "A listed entity shall not appoint or continue a non-executive director who has attained 75 years of age unless a special resolution is passed and the explanatory statement contains justification.",
@@ -34601,7 +31327,7 @@ const AICaseStudies = [
           "Required only once every three years",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "The Board is required to periodically review compliance reports of all laws applicable to the company and the steps taken to rectify instances of non-compliance.",
@@ -34620,7 +31346,7 @@ const AICaseStudies = [
           "They are responsible only when SEBI specifically asks for information",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "KMPs, directors, promoters and other persons dealing with the listed entity must disclose information relevant and necessary for the listed entity to ensure compliance with applicable laws.",
@@ -34664,7 +31390,7 @@ const AICaseStudies = [
 
         options: ["Five", "Seven", "Ten", "Twelve"],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "A person shall not be a director in more than seven listed entities, subject to the provisions and explanations under Regulation 17A.",
@@ -34683,7 +31409,7 @@ const AICaseStudies = [
           "Seven listed entities",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "A person serving as a whole-time director or managing director in any listed entity shall serve as an independent director in not more than three listed entities.",
@@ -34702,7 +31428,7 @@ const AICaseStudies = [
           "Only Risk Management Committee",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "For determination of the limit under Regulation 26, chairpersonship and membership of the Audit Committee and Stakeholders' Relationship Committee alone are considered.",
@@ -34720,7 +31446,7 @@ const AICaseStudies = [
           "15 committees",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "A director shall not be a member in more than ten committees or act as chairperson of more than five committees across all listed entities in which he or she is a director, subject to the specified method of counting.",
@@ -34739,7 +31465,7 @@ const AICaseStudies = [
           "Correct only for Audit Committee positions",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "Every director shall inform the listed entity about committee positions occupied in other listed entities and notify changes as and when they take place.",
@@ -34788,7 +31514,7 @@ const AICaseStudies = [
           "50% of consolidated turnover",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "A material subsidiary is a subsidiary whose turnover or net worth exceeds 20% of the consolidated turnover or net worth respectively of the listed entity and its subsidiaries in the immediately preceding accounting year.",
@@ -34806,7 +31532,7 @@ const AICaseStudies = [
           "Only the statutory auditor must be independent",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "At least one independent director on the Board of the listed entity shall be a director on the Board of an unlisted material subsidiary, whether incorporated in India or not.",
@@ -34824,7 +31550,7 @@ const AICaseStudies = [
           "Review only the tax returns of the subsidiary",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "The Audit Committee of the listed company shall review the financial statements of the unlisted subsidiary, particularly the investments made by the subsidiary.",
@@ -34842,7 +31568,7 @@ const AICaseStudies = [
           "Placed only before shareholders",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "The minutes of the Board meetings of the unlisted subsidiary shall be placed at the meeting of the Board of the listed entity.",
@@ -34861,7 +31587,7 @@ const AICaseStudies = [
           "A transaction requiring approval only from shareholders of the subsidiary",
         ],
 
-        answer: 0,
+        answer: 1,
 
         reason:
           "An individual transaction or arrangement exceeding or likely to exceed 10% of the total assets, revenues, expenses or liabilities, as applicable, of the unlisted subsidiary is treated as significant and should be brought to the notice of the listed entity's Board.",
@@ -34910,7 +31636,7 @@ const AICaseStudies = [
           "45 days from the end of the quarter",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "Under Regulation 31, the shareholding pattern is required to be filed on a quarterly basis within 21 days from the end of each quarter.",
@@ -34928,7 +31654,7 @@ const AICaseStudies = [
           "Only when SEBI asks",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "Under Regulation 13(3), the listed entity shall file a statement detailing the redressal of investor grievances with the recognised stock exchanges on a quarterly basis.",
@@ -34942,7 +31668,7 @@ const AICaseStudies = [
 
         options: ["3 days", "7 days", "10 days", "21 days"],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "Regulation 31 requires filing within 10 days of any capital restructuring resulting in a change exceeding 2% of the total paid-up share capital.",
@@ -34961,7 +31687,7 @@ const AICaseStudies = [
           "90 days from the end of the financial year",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "Annual audited standalone financial results, along with the audit report and applicable Statement on Impact of Audit Qualifications, are required within 60 days from the end of the financial year.",
@@ -34980,7 +31706,7 @@ const AICaseStudies = [
           "Only if requested by shareholders",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "Under Regulation 34, the listed entity shall submit to the stock exchange and publish on its website a copy of the annual report sent to shareholders along with the AGM notice, on or before commencement of dispatch.",
@@ -35029,7 +31755,7 @@ const AICaseStudies = [
           "7 working days in advance",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "Regulation 29 requires prior intimation of at least two working days, excluding the date of intimation and the date of the Board meeting, for specified proposals.",
@@ -35048,7 +31774,7 @@ const AICaseStudies = [
           "Ordinary payment of electricity bills",
         ],
 
-        answer: 0,
+        answer: 1,
 
         reason:
           "A proposal for buy-back of securities is specifically covered by the prior-intimation requirement under Regulation 29.",
@@ -35067,7 +31793,7 @@ const AICaseStudies = [
           "10 working days",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "Regulation 42 requires at least three working days' prior notice of the record date, excluding the date of intimation and the record date.",
@@ -35085,7 +31811,7 @@ const AICaseStudies = [
           "All of the above",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "Record dates may be fixed for dividend, rights or bonus shares, conversion of securities and corporate actions such as mergers, de-mergers and splits, among other specified purposes.",
@@ -35099,7 +31825,7 @@ const AICaseStudies = [
 
         options: ["24 hours", "2 working days", "7 working days", "15 days"],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "Under Regulation 46, the listed entity shall update any change in the content of its website within two working days from the date of such change.",
@@ -35150,7 +31876,7 @@ const AICaseStudies = [
           "A government company",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "Under the amended definition, a person or entity holding equity shares of 10% or more, directly or on a beneficial interest basis, during the immediately preceding financial year is deemed to be a related party, subject to the regulation.",
@@ -35169,7 +31895,7 @@ const AICaseStudies = [
           "A transaction outside the scope of LODR",
         ],
 
-        answer: 0,
+        answer: 1,
 
         reason:
           "A related party transaction includes a transaction with any other person or entity where the purpose and effect is to benefit a related party of the listed entity or its subsidiaries.",
@@ -35188,7 +31914,7 @@ const AICaseStudies = [
           "Ignored if each individual transaction is small",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "Materiality is determined by considering the transaction individually or together with previous transactions during the financial year.",
@@ -35207,7 +31933,7 @@ const AICaseStudies = [
           "Only the Compliance Officer",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "All related party transactions and subsequent material modifications require prior Audit Committee approval, and only those Audit Committee members who are independent directors shall approve related party transactions.",
@@ -35226,7 +31952,7 @@ const AICaseStudies = [
           "Can vote if the Audit Committee approves",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "Material related party transactions require prior shareholder approval through resolution, and no related party shall vote to approve such resolutions, whether or not the related party is a related party to the particular transaction.",
@@ -35274,7 +32000,7 @@ const AICaseStudies = [
           "Seven directors",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "The Audit Committee shall have a minimum of three directors as members.",
@@ -35293,7 +32019,7 @@ const AICaseStudies = [
           "Only the Chairperson must be present",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "The quorum for an Audit Committee meeting is two members or one-third of the members, whichever is greater, with at least two independent directors.",
@@ -35312,7 +32038,7 @@ const AICaseStudies = [
           "No independent director is required",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "The Chairperson of the listed entity, whether executive or non-executive, may be appointed as a member of the Nomination and Remuneration Committee but shall not chair the committee.",
@@ -35331,7 +32057,7 @@ const AICaseStudies = [
           "The statutory auditor",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "The Chairperson of the Stakeholders Relationship Committee shall be a non-executive director.",
@@ -35349,7 +32075,7 @@ const AICaseStudies = [
           "Once every three years",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "The Risk Management Committee shall meet at least twice in a financial year, with not more than 210 days between two consecutive meetings.",
@@ -35399,7 +32125,7 @@ const AICaseStudies = [
           "Only an advocate",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "Every listed entity and its material unlisted subsidiaries incorporated in India shall undertake Secretarial Audit by a Secretarial Auditor who shall be a Peer Reviewed Company Secretary.",
@@ -35418,7 +32144,7 @@ const AICaseStudies = [
           "One year only",
         ],
 
-        answer: 0,
+        answer: 1,
 
         reason:
           "On the recommendation of the Board, a listed entity shall appoint or reappoint an individual as Secretarial Auditor for not more than one term of five consecutive years, with shareholder approval.",
@@ -35436,7 +32162,7 @@ const AICaseStudies = [
           "Needs only internal audit",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "Every listed entity and its material unlisted subsidiaries incorporated in India are required to undertake Secretarial Audit in accordance with Regulation 24A.",
@@ -35454,7 +32180,7 @@ const AICaseStudies = [
           "Only the name of the statutory auditor",
         ],
 
-        answer: 0,
+        answer: 1,
 
         reason:
           "The Corporate Governance Report includes disclosures regarding composition and category of directors, attendance at Board meetings and the last AGM, among other specified matters.",
@@ -35473,7 +32199,7 @@ const AICaseStudies = [
           "Only related party transactions",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "The Corporate Governance Report includes the name of the non-executive director heading the committee, compliance officer details, complaints received, complaints not resolved to shareholders' satisfaction and pending complaints.",
@@ -35517,7 +32243,7 @@ const AICaseStudies = [
 
         options: ["FPO", "IPO", "Rights issue", "QIP"],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "An Initial Public Offer means an offer of specified securities by an unlisted issuer to the public for subscription, including an offer for sale by existing holders in the unlisted issuer.",
@@ -35535,7 +32261,7 @@ const AICaseStudies = [
           "Any issuer only to employees",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "A rights issue means an offer of specified securities by a listed issuer to its shareholders as on the record date fixed for that purpose.",
@@ -35549,7 +32275,7 @@ const AICaseStudies = [
 
         options: ["IPO", "Preferential issue", "Rights issue", "Bonus issue"],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "A preferential issue is an issue of specified securities by a listed issuer to any select person or group of persons on a private placement basis in accordance with Chapter V of the ICDR Regulations.",
@@ -35568,7 +32294,7 @@ const AICaseStudies = [
           "Rights issue",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "Qualified Institutions Placement or QIP means issue of eligible securities by a listed issuer to qualified institutional buyers on a private placement basis, subject to the applicable ICDR provisions.",
@@ -35587,7 +32313,7 @@ const AICaseStudies = [
           "Preferential option",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "Green Shoe Option means an option of allotting equity shares in excess of the equity shares offered in a public issue as a post-listing price stabilising mechanism.",
@@ -35637,7 +32363,7 @@ const AICaseStudies = [
           "Not relevant for an IPO",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "The issuer must have net tangible assets of at least ₹3 crore in each of the preceding three full years, of which not more than 50% should be held in monetary assets, subject to the specified exception where excess monetary assets are utilised or firmly committed for utilisation in the business or project.",
@@ -35655,7 +32381,7 @@ const AICaseStudies = [
           "Irrelevant for IPO eligibility",
         ],
 
-        answer: 2,
+        answer: 3,
 
         reason:
           "The issuer is generally required to have an average operating profit of at least ₹15 crore, calculated on a restated and consolidated basis, during the preceding three years, with operating profit in each of those years.",
@@ -35674,7 +32400,7 @@ const AICaseStudies = [
           "Requires approval from the stock exchange",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "The restrictions relating to persons debarred by SEBI do not apply where the period of debarment was already over as on the date of filing of the draft offer document.",
@@ -35693,7 +32419,7 @@ const AICaseStudies = [
           "Only affects post-listing compliance",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "An issuer is not eligible for an IPO where any promoter or director is a promoter or director of another company which is debarred from accessing the capital market by SEBI, subject to the specified exception relating to expired debarment.",
@@ -35712,7 +32438,7 @@ const AICaseStudies = [
           "Only affect the issue price",
         ],
 
-        answer: 1,
+        answer: 2,
 
         reason:
           "An issuer shall not be eligible to make an IPO if there are outstanding convertible securities or other rights which would entitle a person to receive equity shares, subject to specified exceptions such as qualifying employee stock options and certain securities converted before the relevant filing.",
@@ -35754,7 +32480,7 @@ const AICaseStudies = [
           "Only the Chief Financial Officer",
           "Only an advocate",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Regulation 6 requires a listed entity to appoint a qualified Company Secretary as the Compliance Officer, who must be in whole-time employment and satisfy the prescribed organisational-level requirements.",
       },
@@ -35769,7 +32495,7 @@ const AICaseStudies = [
           "The Chief Executive Officer, Manager or person heading day-to-day affairs",
           "The Chairperson of the Audit Committee",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Where there is no Managing Director or Whole-time Director, the Compliance Officer cannot be more than one level below the CEO, Manager or other person heading the day-to-day affairs of the listed entity.",
       },
@@ -35784,7 +32510,7 @@ const AICaseStudies = [
           "At the earliest and not later than three months from the vacancy",
           "Only at the next AGM",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Any vacancy in the office of the Compliance Officer shall be filled at the earliest and in any case not later than three months from the date of vacancy.",
       },
@@ -35799,7 +32525,7 @@ const AICaseStudies = [
           "Approving all loans granted by the company",
           "Conducting the AGM",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The Compliance Officer is responsible for ensuring conformity with regulatory provisions applicable to the listed entity, coordinating and reporting to the Board, ensuring correctness of information filed and monitoring the grievance redressal email address.",
       },
@@ -35814,7 +32540,7 @@ const AICaseStudies = [
           "The Nomination and Remuneration Committee",
           "The shareholders",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Monitoring the email address of the grievance redressal division is specifically one of the responsibilities of the Compliance Officer.",
       },
@@ -35855,7 +32581,7 @@ const AICaseStudies = [
           "Only approval of the statutory auditor",
           "No approval",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Selling, disposing or leasing of assets amounting to more than 20% of the assets of a material subsidiary on an aggregate basis during a financial year requires prior shareholder approval by special resolution, subject to specified exceptions.",
       },
@@ -35870,7 +32596,7 @@ const AICaseStudies = [
           "Applicable only if holding falls below 25%",
           "Applicable only to foreign subsidiaries",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Special resolution is required where disposal of shares results in reduction of the listed entity's shareholding, either alone or together with its subsidiaries, to less than or equal to 50%, or cessation of control.",
       },
@@ -35885,7 +32611,7 @@ const AICaseStudies = [
           "Any transaction with a promoter",
           "Any transaction below ₹1 crore",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The special resolution requirement does not apply where the divestment is made under a scheme of arrangement duly approved by a Court/Tribunal or under a resolution plan approved under section 31 of the Insolvency Code, subject to the prescribed disclosure.",
       },
@@ -35900,7 +32626,7 @@ const AICaseStudies = [
           "Valid only with SEBI approval",
           "Valid only after an IPO",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The special resolution requirement for sale, disposal or lease of assets of the material subsidiary does not apply where such sale, disposal or lease is between two wholly-owned subsidiaries of the listed entity.",
       },
@@ -35915,7 +32641,7 @@ const AICaseStudies = [
           "Is below every applicable threshold",
           "Can never require listed-company shareholder approval",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The proposed disposal exceeds 20% of the material subsidiary's assets on an aggregate basis and therefore attracts the special resolution requirement, subject to applicable exceptions.",
       },
@@ -35956,7 +32682,7 @@ const AICaseStudies = [
           "Only one-time transactions",
           "Unrelated to the company",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The Audit Committee may grant omnibus approval subject to prescribed conditions, including that the approval is applicable to transactions which are repetitive in nature.",
       },
@@ -35970,7 +32696,7 @@ const AICaseStudies = [
           "Only the annual profit of the company",
           "Only the number of directors",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The omnibus approval should specify the name(s) of the related party, nature and period of transaction and maximum amount of transactions, along with the indicative base/current contracted price and price variation formula.",
       },
@@ -35985,7 +32711,7 @@ const AICaseStudies = [
           "₹2 crore per transaction",
           "₹5 crore per transaction",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Where the need for a related party transaction cannot be foreseen and the prescribed details are unavailable, omnibus approval may be granted provided the value does not exceed ₹1 crore per transaction.",
       },
@@ -36000,7 +32726,7 @@ const AICaseStudies = [
           "Only at the AGM",
           "Only when SEBI asks",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The Audit Committee shall review, at least on a quarterly basis, the details of related party transactions entered into pursuant to each omnibus approval.",
       },
@@ -36010,7 +32736,7 @@ const AICaseStudies = [
         question:
           "An omnibus approval is generally valid for a period not exceeding:",
         options: ["Six months", "One year", "Three years", "Five years"],
-        answer: 1,
+        answer: 2,
         reason:
           "Omnibus approvals shall be valid for a period not exceeding one year and fresh approval is required after expiry of one year.",
       },
@@ -36051,7 +32777,7 @@ const AICaseStudies = [
           "Approval of every shareholder",
           "Approval of the statutory auditor",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The issuer must make an application to one or more stock exchanges with the intent to seek in-principle approval for listing of its specified securities.",
       },
@@ -36065,7 +32791,7 @@ const AICaseStudies = [
           "Transferred to the government",
           "Cancelled before the IPO",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The issuer must ensure that all specified securities held by promoters are in dematerialised form prior to filing the offer document.",
       },
@@ -36080,7 +32806,7 @@ const AICaseStudies = [
           "Converted into debt automatically",
           "Transferred to employees",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "All existing partly paid-up equity shares must have either been fully paid-up or forfeited.",
       },
@@ -36090,7 +32816,7 @@ const AICaseStudies = [
         question:
           "The issuer generally needs firm arrangements through verifiable means towards at least what percentage of the stated means of finance for a specified project, excluding the specified sources?",
         options: ["50%", "60%", "75%", "90%"],
-        answer: 2,
+        answer: 3,
         reason:
           "The issuer must have firm arrangements of finance through verifiable means towards 75% of the stated means of finance for the specific project, excluding the amount to be raised through the proposed public issue and existing identifiable internal accruals.",
       },
@@ -36105,7 +32831,7 @@ const AICaseStudies = [
           "25% of the amount raised",
           "50% of the amount raised",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The amount for general corporate purposes shall generally not exceed 25% of the amount being raised by the issuer.",
       },
@@ -36146,7 +32872,7 @@ const AICaseStudies = [
           "At least one year prior to filing the draft offer document",
           "At least five years",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Only fully paid-up equity shares held by the sellers for at least one year prior to filing the draft offer document may generally be offered for sale.",
       },
@@ -36161,7 +32887,7 @@ const AICaseStudies = [
           "The holding period of the convertible securities together with the resultant equity shares",
           "Only the date of IPO",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "For shares received on conversion or exchange of fully paid-up compulsorily convertible securities, the holding period of the convertible securities and the resultant equity shares together is considered.",
       },
@@ -36176,7 +32902,7 @@ const AICaseStudies = [
           "A private agreement with an employee",
           "A loan agreement",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The one-year requirement does not apply in specified cases where equity shares were acquired pursuant to a scheme approved by a High Court, Tribunal or Central Government under the applicable provisions.",
       },
@@ -36191,7 +32917,7 @@ const AICaseStudies = [
           "Unrealised profits only",
           "Borrowed funds",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "For the specified bonus-share exception, the securities should have been held for at least one year and the bonus shares should be issued out of free reserves and share premium existing in the books at the end of the preceding financial year, subject to the stated conditions.",
       },
@@ -36206,7 +32932,7 @@ const AICaseStudies = [
           "Automatically qualify because the shares are fully paid",
           "Qualify only if the company is profitable",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Fully paid-up equity shares offered for sale generally need to have been held by the sellers for at least one year prior to filing the draft offer document.",
       },
@@ -36247,7 +32973,7 @@ const AICaseStudies = [
           "One-half of the Board",
           "Two-thirds of the Board",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "Where the regular non-executive Chairperson is a promoter or is related to a promoter or certain management persons, at least half of the Board shall consist of independent directors.",
       },
@@ -36277,7 +33003,7 @@ const AICaseStudies = [
           "Only three executive directors",
           "All independent directors",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The quorum for every Board meeting of the top 2000 listed entities is one-third of total strength or three directors, whichever is higher, including at least one independent director.",
       },
@@ -36287,7 +33013,7 @@ const AICaseStudies = [
         question:
           "For a Board of 15 directors, one-third is 5. Therefore, the minimum quorum under the specified rule would be:",
         options: ["3 directors", "4 directors", "5 directors", "6 directors"],
-        answer: 2,
+        answer: 3,
         reason:
           "One-third of 15 is 5, which is higher than three. Therefore, five directors would constitute the numerical quorum, subject to the requirement that at least one independent director be present.",
       },
@@ -36302,7 +33028,7 @@ const AICaseStudies = [
           "Shall not participate in the evaluation",
           "Must conduct the evaluation alone",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The evaluation of independent directors is undertaken by the entire Board, but the directors who are subject to evaluation shall not participate in the evaluation.",
       },
@@ -36345,7 +33071,7 @@ const AICaseStudies = [
           "The lower of ₹1,000 crore and 10% of annual consolidated turnover",
           "₹2,000 crore only",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "A related party transaction is material where transactions individually or together with previous transactions during the financial year exceed ₹1,000 crore or 10% of annual consolidated turnover, whichever is lower. Here 10% of ₹8,000 crore is ₹800 crore, so ₹800 crore is the applicable threshold.",
       },
@@ -36360,7 +33086,7 @@ const AICaseStudies = [
           "10% of annual consolidated turnover only",
           "₹1,000 crore only",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Transactions involving payments made to a related party with respect to brand usage or royalty are considered material if they exceed 5% of annual consolidated turnover, subject to the regulation.",
       },
@@ -36375,7 +33101,7 @@ const AICaseStudies = [
           "Only promoter directors",
           "The Compliance Officer",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Related party transactions require prior Audit Committee approval, and only those members of the Audit Committee who are independent directors shall approve such transactions.",
       },
@@ -36390,7 +33116,7 @@ const AICaseStudies = [
           "Cannot vote to approve the resolution",
           "May vote only if it holds less than 10%",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "No related party shall vote to approve a resolution relating to a material related party transaction, whether or not the related party is a related party to the particular transaction.",
       },
@@ -36405,7 +33131,7 @@ const AICaseStudies = [
           "The transaction is always below ₹1 crore",
           "The subsidiary has no directors",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The Audit Committee and shareholder approval requirements do not apply to transactions between a holding company and its wholly-owned subsidiary whose accounts are consolidated with the holding company and placed before shareholders at the general meeting.",
       },
@@ -36448,7 +33174,7 @@ const AICaseStudies = [
           "Bonus issue",
           "Rights issue",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "An issuer not satisfying the conditions under the normal eligibility route may be eligible if the issue is made through the book-building process and the other prescribed conditions are satisfied.",
       },
@@ -36458,7 +33184,7 @@ const AICaseStudies = [
         question:
           "Under the alternative eligibility route, at least what percentage of the net offer must be allotted to qualified institutional buyers?",
         options: ["50%", "60%", "75%", "90%"],
-        answer: 2,
+        answer: 3,
         reason:
           "The alternative route requires the issuer to undertake to allot at least 75% of the net offer to qualified institutional buyers and to refund the full subscription money if it fails to do so.",
       },
@@ -36473,7 +33199,7 @@ const AICaseStudies = [
           "Sufficient only with SEBI approval",
           "Irrelevant",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The alternative route requires at least 75% of the net offer to be allotted to qualified institutional buyers. Therefore, a proposed 70% allocation would not satisfy the requirement.",
       },
@@ -36488,7 +33214,7 @@ const AICaseStudies = [
           "Minimum 5:1 and maximum 20:1",
           "Any ratio decided by promoters",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "SR equity shares may have voting rights in a ratio of minimum 2:1 up to a maximum of 10:1 compared with ordinary shares, with the ratio in whole numbers.",
       },
@@ -36503,7 +33229,7 @@ const AICaseStudies = [
           "Permitted if approved by the CFO",
           "Permitted only for foreign promoters",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The voting-right ratio of SR equity shares must be between 2:1 and 10:1 compared with ordinary shares. A 12:1 ratio exceeds the permitted maximum.",
       },
@@ -36544,7 +33270,7 @@ const AICaseStudies = [
           "Are external consultants",
           "Are statutory auditors",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The SR equity shares should be issued only to promoters/founders who hold an executive position in the issuer company.",
       },
@@ -36554,7 +33280,7 @@ const AICaseStudies = [
         question:
           "The SR equity shares should have been issued prior to filing the draft red herring prospectus and held for at least:",
         options: ["One month", "Two months", "Three months", "One year"],
-        answer: 2,
+        answer: 3,
         reason:
           "The SR equity shares must have been issued prior to filing of the draft red herring prospectus and held for a period of at least three months prior to such filing.",
       },
@@ -36564,7 +33290,7 @@ const AICaseStudies = [
         question:
           "The net worth of an SR shareholder, as determined by a Registered Valuer, should not be more than:",
         options: ["₹500 crore", "₹750 crore", "₹1,000 crore", "₹2,000 crore"],
-        answer: 2,
+        answer: 3,
         reason:
           "The net worth of the SR shareholder, as determined by a Registered Valuer, should not be more than ₹1,000 crore.",
       },
@@ -36579,7 +33305,7 @@ const AICaseStudies = [
           "Compliant if approved by the CFO",
           "Compliant only after listing",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "SR equity shares are required to be issued only to promoters/founders who hold an executive position in the issuer company.",
       },
@@ -36594,7 +33320,7 @@ const AICaseStudies = [
           "Existence of the company",
           "Number of shareholders",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "SR equity shares should be equivalent to ordinary equity shares in all respects except for having superior voting rights.",
       },
@@ -36635,7 +33361,7 @@ const AICaseStudies = [
           "35% of the amount being raised",
           "50% of the amount being raised",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The amount for general corporate purposes as mentioned in the draft offer document and offer document shall generally not exceed 25% of the amount being raised.",
       },
@@ -36650,7 +33376,7 @@ const AICaseStudies = [
           "35% of the amount being raised",
           "50% of the amount being raised",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Where the issuer has not identified the acquisition or investment target, the amount raised for such objects shall not exceed 25% of the amount being raised, subject to the prescribed conditions.",
       },
@@ -36665,7 +33391,7 @@ const AICaseStudies = [
           "35% of the amount being raised",
           "60% of the amount being raised",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "The amount for general corporate purposes and objects where the acquisition or investment target has not been identified shall not exceed 35% of the amount being raised, while the unidentified acquisition/investment component itself is subject to the 25% ceiling.",
       },
@@ -36680,7 +33406,7 @@ const AICaseStudies = [
           "Automatically reduce to 10%",
           "Require cancellation of the IPO",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The specified limits do not apply if the proposed acquisition or strategic investment object has been identified and suitable specific disclosures regarding such acquisition or investment are made in the draft offer document and offer document.",
       },
@@ -36690,7 +33416,7 @@ const AICaseStudies = [
         question:
           "If BluePeak raises ₹1,000 crore, the maximum amount that may generally be allocated to general corporate purposes is:",
         options: ["₹100 crore", "₹200 crore", "₹250 crore", "₹350 crore"],
-        answer: 2,
+        answer: 3,
         reason:
           "The general corporate purpose ceiling is 25% of the amount raised. Therefore, for ₹1,000 crore, the general corporate purpose amount can generally be up to ₹250 crore.",
       },
@@ -36798,7 +33524,7 @@ const AICaseStudies = [
           "The price band is invalid because the cap must be less than 120% of the floor price.",
           "The price band is valid only if the floor price is below the face value.",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The cap of the price band may be less than or equal to 120% of the floor price, and must be at least 105% of the floor price. ₹120 is exactly 120% of ₹100.",
       },
@@ -37037,7 +33763,7 @@ const AICaseStudies = [
         question:
           "What is the maximum amount ZCL may normally allocate to general corporate purposes out of ₹800 crore?",
         options: ["₹80 crore", "₹160 crore", "₹200 crore", "₹280 crore"],
-        answer: 2,
+        answer: 1,
         reason:
           "General corporate purposes shall not exceed 25% of the amount being raised. 25% of ₹800 crore is ₹200 crore. Therefore, option 2 is correct.",
       },
@@ -40506,7 +37232,7 @@ const AICaseStudies = [
           "Only takeover regulations",
           "No regulation",
         ],
-        answer: 3,
+        answer: 1,
         reason:
           "Regulation 3 prohibits procuring UPSI or causing its communication by an insider except for legitimate purposes, performance of duties or discharge of legal obligations.",
       },
@@ -42552,7 +39278,7 @@ const AICaseStudies = [
     ],
   },
   {
-    case_id: "fema_cs_medium_05",
+    case_id: "fema_cs_medium_05_B",
     case_chapter: "fema",
     case_topic: ["FEMA", "Overseas Direct Investment", "Financial Commitment"],
     difficulty: "medium",
@@ -42563,7 +39289,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_05_1",
+        question_id: "fema_cs_medium_05_B_1",
         question:
           "Which of the following is a recognised manner in which an Indian entity may make or hold ODI?",
         options: [
@@ -42577,7 +39303,7 @@ const AICaseStudies = [
           "The correct answer is By subscription or purchase of equity capital, including listed or unlisted equity. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_05_2",
+        question_id: "fema_cs_medium_05_B_2",
         question:
           "Can an Indian entity make ODI by capitalising an amount due from a foreign entity?",
         options: [
@@ -42591,7 +39317,7 @@ const AICaseStudies = [
           "The correct answer is Yes, where the amount is otherwise permitted to be remitted or does not require prior permission. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_05_3",
+        question_id: "fema_cs_medium_05_B_3",
         question:
           "Which of the following is also recognised as a possible mode of ODI?",
         options: [
@@ -42605,7 +39331,7 @@ const AICaseStudies = [
           "The correct answer is Swap of securities. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_05_4",
+        question_id: "fema_cs_medium_05_B_4",
         question:
           "While determining the financial commitment limit, what broad principle should Arvind Global Industries Limited follow?",
         options: [
@@ -42619,7 +39345,7 @@ const AICaseStudies = [
           "The correct answer is Consider total financial commitment in all foreign entities taken together. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_05_5",
+        question_id: "fema_cs_medium_05_B_5",
         question:
           "Which of the following transactions is specifically recognised as a mode of making or holding ODI under Schedule I?",
         options: [
@@ -42636,7 +39362,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_medium_06",
+    case_id: "fema_cs_medium_06_B",
     case_chapter: "fema",
     case_topic: ["FEMA", "Overseas Direct Investment", "Debt and Guarantee"],
     difficulty: "medium",
@@ -42647,7 +39373,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_06_1",
+        question_id: "fema_cs_medium_06_B_1",
         question:
           "Before an Indian entity makes financial commitment by lending to a foreign entity, which condition is relevant under the regulations?",
         options: [
@@ -42661,7 +39387,7 @@ const AICaseStudies = [
           "The correct answer is The Indian entity must be eligible to make ODI and have made ODI in the foreign entity. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_06_2",
+        question_id: "fema_cs_medium_06_B_2",
         question:
           "A loan given by an Indian entity to its foreign entity should be backed by:",
         options: [
@@ -42675,7 +39401,7 @@ const AICaseStudies = [
           "The correct answer is A duly executed loan agreement. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_06_3",
+        question_id: "fema_cs_medium_06_B_3",
         question:
           "What is the requirement regarding the interest rate on such loan?",
         options: [
@@ -42689,7 +39415,7 @@ const AICaseStudies = [
           "The correct answer is It must be charged on an arm's-length basis. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_06_4",
+        question_id: "fema_cs_medium_06_B_4",
         question:
           "Can a guarantee issued as financial commitment be open-ended?",
         options: [
@@ -42703,7 +39429,7 @@ const AICaseStudies = [
           "The correct answer is No, a guarantee shall not be open-ended. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_06_5",
+        question_id: "fema_cs_medium_06_5_B",
         question:
           "When a guarantee is invoked to the extent of the amount invoked, how is that amount treated?",
         options: [
@@ -42720,7 +39446,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_medium_07",
+    case_id: "fema_cs_medium_07_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -42735,7 +39461,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_07_1",
+        question_id: "fema_cs_medium_07_B_1",
         question:
           "Who obtains the Unique Identification Number for the foreign entity in which ODI is intended to be made?",
         options: [
@@ -42749,7 +39475,7 @@ const AICaseStudies = [
           "The correct answer is The person resident in India through its designated AD bank from RBI. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_07_2",
+        question_id: "fema_cs_medium_07_B_2",
         question: "The UIN should generally be obtained before which event?",
         options: [
           "Before sending outward remittance or acquisition of equity capital, whichever is earlier",
@@ -42762,7 +39488,7 @@ const AICaseStudies = [
           "The correct answer is Before sending outward remittance or acquisition of equity capital, whichever is earlier. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_07_3",
+        question_id: "fema_cs_medium_07_B_3",
         question:
           "Within what period should evidence of investment generally be submitted to the AD bank?",
         options: ["30 days", "60 days", "Six months", "Three years"],
@@ -42771,7 +39497,7 @@ const AICaseStudies = [
           "The correct answer is Six months. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_07_4",
+        question_id: "fema_cs_medium_07_B_4",
         question:
           "Disinvestment by a person resident in India is generally required to be reported within:",
         options: [
@@ -42785,7 +39511,7 @@ const AICaseStudies = [
           "The correct answer is Thirty days of receipt of disinvestment proceeds. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_07_5",
+        question_id: "fema_cs_medium_07_5_B",
         question:
           "An Indian entity which has made ODI is required to submit which additional annual return to the RBI's Department of Statistics and Information Management?",
         options: [
@@ -42802,7 +39528,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_medium_08",
+    case_id: "fema_cs_medium_08_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -42817,7 +39543,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_08_1",
+        question_id: "fema_cs_medium_08_B_1",
         question:
           "Where the full export value of goods is ascertainable at the time of export, the exporter should declare:",
         options: [
@@ -42831,7 +39557,7 @@ const AICaseStudies = [
           "The correct answer is The full export value of the goods. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_08_2",
+        question_id: "fema_cs_medium_08_B_2",
         question:
           "For software exported in a form other than physical form, the date of export is generally deemed to be:",
         options: [
@@ -42845,7 +39571,7 @@ const AICaseStudies = [
           "The correct answer is The date of invoice covering such export. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_08_3",
+        question_id: "fema_cs_medium_08_B_3",
         question:
           "Where advance payment is received against exports, shipment should ordinarily be made within:",
         options: ["Three months", "Six months", "One year", "Five years"],
@@ -42854,7 +39580,7 @@ const AICaseStudies = [
           "The correct answer is One year. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_08_4",
+        question_id: "fema_cs_medium_08_B_4",
         question:
           "Where advance payment is received through an authorised dealer, the shipment documents should generally be routed through:",
         options: [
@@ -42868,7 +39594,7 @@ const AICaseStudies = [
           "The correct answer is The authorised dealer through whom the advance payment was received. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_08_5",
+        question_id: "fema_cs_medium_08_5_B",
         question:
           "What is the general requirement regarding export proceeds under FEMA?",
         options: [
@@ -42885,7 +39611,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_medium_09",
+    case_id: "fema_cs_medium_09_B",
     case_chapter: "fema",
     case_topic: ["FEMA", "Authorised Person", "Reserve Bank of India"],
     difficulty: "medium",
@@ -42896,7 +39622,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_09_1",
+        question_id: "fema_cs_medium_09_B_1",
         question:
           "Before undertaking a foreign exchange transaction on behalf of a customer, an authorised person may require the customer to:",
         options: [
@@ -42910,7 +39636,7 @@ const AICaseStudies = [
           "The correct answer is Make a declaration and furnish required information. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_09_2",
+        question_id: "fema_cs_medium_09_B_2",
         question:
           "If the customer refuses to comply with the authorised person's reasonable information requirements, the authorised person should:",
         options: [
@@ -42924,7 +39650,7 @@ const AICaseStudies = [
           "The correct answer is Refuse the transaction in writing. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_09_3",
+        question_id: "fema_cs_medium_09_B_3",
         question:
           "If an authorised person has reason to believe that a transaction is designed to contravene or evade FEMA, the matter should be:",
         options: [
@@ -42938,7 +39664,7 @@ const AICaseStudies = [
           "The correct answer is Reported to RBI. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_09_4",
+        question_id: "fema_cs_medium_09_B_4",
         question:
           "The RBI may inspect an authorised person's business for which of the following purposes?",
         options: [
@@ -42952,7 +39678,7 @@ const AICaseStudies = [
           "The correct answer is To verify correctness of statements or information furnished to RBI. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_09_5",
+        question_id: "fema_cs_medium_09_5_B",
         question: "An authorised person must generally comply with:",
         options: [
           "Only instructions of its customers",
@@ -42968,7 +39694,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_01",
+    case_id: "fema_cs_hard_01_B",
     case_chapter: "fema",
     case_topic: ["FEMA", "Overseas Direct Investment", "Financial Services"],
     difficulty: "hard",
@@ -42980,7 +39706,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_01_1",
+        question_id: "fema_cs_hard_01_B_1",
         question:
           "For determining whether the foreign entity is engaged in financial services activity, which test is relevant?",
         options: [
@@ -42994,7 +39720,7 @@ const AICaseStudies = [
           "The correct answer is Whether the activity, if undertaken in India, requires registration with or is regulated by a financial sector regulator in India. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_01_2",
+        question_id: "fema_cs_hard_01_B_2",
         question:
           "For an Indian entity engaged in financial services activity in India, which profitability condition is ordinarily relevant for ODI in a foreign financial-services entity?",
         options: [
@@ -43008,7 +39734,7 @@ const AICaseStudies = [
           "The correct answer is Net profits during the preceding three financial years. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_01_3",
+        question_id: "fema_cs_hard_01_B_3",
         question:
           "Where the Indian entity fails to meet the required profitability condition due to the impact of COVID-19 during FY 2020-21 and FY 2021-22, what may be done under the specific relaxation?",
         options: [
@@ -43022,7 +39748,7 @@ const AICaseStudies = [
           "The correct answer is The COVID-affected period may be excluded for considering the three-year profitability requirement. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_01_4",
+        question_id: "fema_cs_hard_01_B_4",
         question:
           "Which additional regulatory requirement is relevant where an Indian financial-services entity proposes such ODI?",
         options: [
@@ -43036,7 +39762,7 @@ const AICaseStudies = [
           "The correct answer is The entity should be registered with or regulated by a financial services regulator in India. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_01_5",
+        question_id: "fema_cs_hard_01_B_5",
         question:
           "Which statement best reflects the requirement concerning regulatory approvals for financial-services ODI?",
         options: [
@@ -43053,7 +39779,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_02",
+    case_id: "fema_cs_hard_02_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -43070,7 +39796,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_02_1",
+        question_id: "fema_cs_hard_02_B_1",
         question:
           "A holding company holding at least 51% stake in the Indian entity may issue which type of guarantee under the specified framework?",
         options: [
@@ -43084,7 +39810,7 @@ const AICaseStudies = [
           "The correct answer is Corporate or performance guarantee. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_02_2",
+        question_id: "fema_cs_hard_02_B_2",
         question:
           "Where a resident individual promoter gives a personal guarantee for the overseas financial commitment, it is generally counted towards:",
         options: [
@@ -43098,7 +39824,7 @@ const AICaseStudies = [
           "The correct answer is The financial commitment limit of the Indian entity. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_02_3",
+        question_id: "fema_cs_hard_02_B_3",
         question:
           "Can the proposed guarantee remain open-ended until repayment of the foreign loan?",
         options: [
@@ -43112,7 +39838,7 @@ const AICaseStudies = [
           "The correct answer is No, a guarantee issued under the relevant provision shall not be open-ended. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_02_4",
+        question_id: "fema_cs_hard_02_B_4",
         question:
           "Where a guarantee is extended jointly and severally by two or more Indian entities, how much is generally reckoned towards the individual financial commitment limit of each such Indian entity?",
         options: [
@@ -43126,7 +39852,7 @@ const AICaseStudies = [
           "The correct answer is 100% of the amount of the guarantee. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_02_5",
+        question_id: "fema_cs_hard_02_B_5",
         question:
           "Which statement regarding a guarantee issued by a group company is correct?",
         options: [
@@ -43143,7 +39869,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_03",
+    case_id: "fema_cs_hard_03_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -43160,7 +39886,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_03_1",
+        question_id: "fema_cs_hard_03_B_1",
         question:
           "An Indian entity which has made ODI by way of equity capital may pledge such equity capital for:",
         options: [
@@ -43174,7 +39900,7 @@ const AICaseStudies = [
           "The correct answer is Availing fund-based or non-fund-based facilities, subject to applicable conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_03_2",
+        question_id: "fema_cs_hard_03_B_2",
         question:
           "For determining the amount reckoned towards financial commitment in case of pledge or charge, the relevant measure is generally:",
         options: [
@@ -43188,7 +39914,7 @@ const AICaseStudies = [
           "The correct answer is The value of the pledge or charge or the amount of the facility, whichever is less, subject to specified conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_03_3",
+        question_id: "fema_cs_hard_03_B_3",
         question:
           "Can an overseas lender in whose favour the pledge or charge is created be located in any jurisdiction whatsoever?",
         options: [
@@ -43202,7 +39928,7 @@ const AICaseStudies = [
           "The correct answer is No, the overseas lender should not be from a country or jurisdiction in which financial commitment is not permissible. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_03_4",
+        question_id: "fema_cs_hard_03_B_4",
         question:
           "What is the treatment of a negative pledge created in accordance with the regulations for participation in a bidding or tender procedure for acquisition of a foreign entity?",
         options: [
@@ -43216,7 +39942,7 @@ const AICaseStudies = [
           "The correct answer is It is not reckoned towards the financial commitment limit. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_03_5",
+        question_id: "fema_cs_hard_03_5_B",
         question: "The creation or enforcement of pledge or charge should be:",
         options: [
           "Only according to the foreign lender's internal policy",
@@ -43232,7 +39958,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_04",
+    case_id: "fema_cs_hard_04_B",
     case_chapter: "fema",
     case_topic: ["FEMA", "Overseas Investment", "APR", "Reporting and Delay"],
     difficulty: "hard",
@@ -43244,7 +39970,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_04_1",
+        question_id: "fema_cs_hard_04_B_1",
         question:
           "Is an APR required where a person resident in India holds less than 10% equity in a foreign entity without control and has no other financial commitment except equity capital?",
         options: [
@@ -43258,7 +39984,7 @@ const AICaseStudies = [
           "The correct answer is No, such holding falls within the specified exemption from APR reporting. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_04_2",
+        question_id: "fema_cs_hard_04_B_2",
         question:
           "Where the foreign entity's law does not require audit and the Indian investor does not have control, the APR may be based on:",
         options: [
@@ -43272,7 +39998,7 @@ const AICaseStudies = [
           "The correct answer is Unaudited financial statements certified as prescribed. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_04_3",
+        question_id: "fema_cs_hard_04_B_3",
         question:
           "Where multiple persons resident in India have made ODI in the same foreign entity, who is generally required to submit the APR?",
         options: [
@@ -43286,7 +40012,7 @@ const AICaseStudies = [
           "The correct answer is The person holding the highest stake. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_04_4",
+        question_id: "fema_cs_hard_04_B_4",
         question:
           "Within what maximum period may the facility for delayed submission of evidence or filing through Late Submission Fee generally be availed?",
         options: [
@@ -43300,7 +40026,7 @@ const AICaseStudies = [
           "The correct answer is Three years from the due date. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_04_5",
+        question_id: "fema_cs_hard_04_5_B",
         question:
           "Until a delay in reporting is regularised, a person resident in India who has made financial commitment in the foreign entity is generally restricted from:",
         options: [
@@ -43317,7 +40043,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_05",
+    case_id: "fema_cs_hard_05_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -43335,7 +40061,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_05_1",
+        question_id: "fema_cs_hard_05_B_1",
         question:
           "Where an exporter receives advance payment against exports, what is the normal shipment requirement?",
         options: [
@@ -43349,7 +40075,7 @@ const AICaseStudies = [
           "The correct answer is Shipment within one year from receipt of advance payment. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_05_2",
+        question_id: "fema_cs_hard_05_B_2",
         question:
           "If the export agreement itself duly provides for shipment extending beyond one year from receipt of advance payment, which statement is correct?",
         options: [
@@ -43363,7 +40089,7 @@ const AICaseStudies = [
           "The correct answer is Such advance payment can be received notwithstanding the ordinary one-year requirement. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_05_3",
+        question_id: "fema_cs_hard_05_B_3",
         question:
           "Where the export involves a turnkey project or civil construction contract, the exporter should generally seek prior approval:",
         options: [
@@ -43377,7 +40103,7 @@ const AICaseStudies = [
           "The correct answer is Before entering into the export arrangement. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_05_4",
+        question_id: "fema_cs_hard_05_B_4",
         question:
           "For the purpose of the project-export regulation, the approving authority includes:",
         options: [
@@ -43391,7 +40117,7 @@ const AICaseStudies = [
           "The correct answer is EXIM Bank of India or the Authorised Dealer, as applicable. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_05_5",
+        question_id: "fema_cs_hard_05_B_5",
         question:
           "Where a guarantee is required before post-award approval in connection with execution of a project outside India, which statement is most appropriate?",
         options: [
@@ -43407,7 +40133,7 @@ const AICaseStudies = [
     ],
   },
   {
-    case_id: "fema_cs_medium_10",
+    case_id: "fema_cs_medium_10_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -43424,7 +40150,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_10_1",
+        question_id: "fema_cs_medium_10_B_1",
         question:
           "Which of the following best describes a current account transaction under FEMA?",
         options: [
@@ -43438,7 +40164,7 @@ const AICaseStudies = [
           "The correct answer is A transaction other than a capital account transaction. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_10_2",
+        question_id: "fema_cs_medium_10_B_2",
         question:
           "Payment in connection with foreign trade, other current business and services would generally fall within:",
         options: [
@@ -43452,7 +40178,7 @@ const AICaseStudies = [
           "The correct answer is Current account transactions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_10_3",
+        question_id: "fema_cs_medium_10_B_3",
         question:
           "Foreign exchange required for expenses connected with ordinary business travel abroad would generally be associated with:",
         options: [
@@ -43466,7 +40192,7 @@ const AICaseStudies = [
           "The correct answer is A current account transaction. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_10_4",
+        question_id: "fema_cs_medium_10_B_4",
         question:
           "Why may acquisition of immovable property outside India require examination as a capital account transaction?",
         options: [
@@ -43480,7 +40206,7 @@ const AICaseStudies = [
           "The correct answer is Because it may alter the assets or liabilities outside India of a person resident in India. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_10_5",
+        question_id: "fema_cs_medium_10_B_5",
         question:
           "Which statement is correct regarding classification of a transaction under FEMA?",
         options: [
@@ -43849,7 +40575,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_06",
+    case_id: "fema_cs_hard_06_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -43866,7 +40592,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_06_1",
+        question_id: "fema_cs_hard_06_B_1",
         question:
           "Is every overseas investment structure involving a foreign entity which invests back into India absolutely prohibited under the current framework?",
         options: [
@@ -43880,7 +40606,7 @@ const AICaseStudies = [
           "The correct answer is No, the permissibility must be examined with reference to the prescribed conditions including subsidiary layers. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_06_2",
+        question_id: "fema_cs_hard_06_B_2",
         question:
           "The relevant restriction applies where the structure resulting from such financial commitment has:",
         options: [
@@ -43894,7 +40620,7 @@ const AICaseStudies = [
           "The correct answer is More than two layers of subsidiaries, subject to the applicable rule and exemptions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_06_3",
+        question_id: "fema_cs_hard_06_B_3",
         question:
           "For application of the relevant overseas investment restriction, investment into India by the foreign entity may be:",
         options: [
@@ -43908,7 +40634,7 @@ const AICaseStudies = [
           "The correct answer is Direct or indirect. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_06_4",
+        question_id: "fema_cs_hard_06_B_4",
         question:
           "Which statement best describes the compliance analysis required for Orion's proposed structure?",
         options: [
@@ -43922,7 +40648,7 @@ const AICaseStudies = [
           "The correct answer is The resulting subsidiary structure should be mapped to determine whether the permissible layer restriction is breached. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_06_5",
+        question_id: "fema_cs_hard_06_5_B",
         question:
           "The rule concerning layers in such overseas investment structures is linked to the restriction contemplated under:",
         options: [
@@ -43939,7 +40665,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_07",
+    case_id: "fema_cs_hard_07_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -43956,7 +40682,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_07_1",
+        question_id: "fema_cs_hard_07_B_1",
         question:
           "Under the overseas investment framework, restructuring involving diminution in the value of outstanding dues may be permitted where the foreign entity:",
         options: [
@@ -43970,7 +40696,7 @@ const AICaseStudies = [
           "The correct answer is Has been incurring losses for the prescribed previous period. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_07_2",
+        question_id: "fema_cs_hard_07_B_2",
         question:
           "Which of the following may form part of the restructuring contemplated in the case?",
         options: [
@@ -43984,7 +40710,7 @@ const AICaseStudies = [
           "The correct answer is Diminution in the total value of outstanding dues towards the Indian investor. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_07_3",
+        question_id: "fema_cs_hard_07_B_3",
         question:
           "Where the diminution exceeds the prescribed monetary amount or percentage of the Indian entity's total investment, the diminution should generally be:",
         options: [
@@ -43998,7 +40724,7 @@ const AICaseStudies = [
           "The correct answer is Duly certified on an arm's-length basis by the prescribed professional. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_07_4",
+        question_id: "fema_cs_hard_07_B_4",
         question:
           "Which statement is correct regarding reporting of restructuring?",
         options: [
@@ -44012,7 +40738,7 @@ const AICaseStudies = [
           "The correct answer is The restructuring must be reported through the designated AD bank within the prescribed period. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_07_5",
+        question_id: "fema_cs_hard_07_B_5",
         question:
           "The regulatory treatment of diminution in value demonstrates that:",
         options: [
@@ -44029,7 +40755,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_08",
+    case_id: "fema_cs_hard_08_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -44047,7 +40773,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_08_1",
+        question_id: "fema_cs_hard_08_B_1",
         question:
           "Can equity capital of a foreign entity be acquired by an Indian investor on a deferred-payment basis under the overseas investment framework?",
         options: [
@@ -44061,7 +40787,7 @@ const AICaseStudies = [
           "The correct answer is Yes, subject to the applicable conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_08_2",
+        question_id: "fema_cs_hard_08_B_2",
         question:
           "For regulatory purposes, the deferred part of the consideration in such an acquisition is generally treated as:",
         options: [
@@ -44075,7 +40801,7 @@ const AICaseStudies = [
           "The correct answer is A non-fund-based commitment until it is paid. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_08_3",
+        question_id: "fema_cs_hard_08_B_3",
         question:
           "Does deferred payment necessarily prevent transfer of the agreed equity capital at completion?",
         options: [
@@ -44089,7 +40815,7 @@ const AICaseStudies = [
           "The correct answer is No, acquisition or transfer may be structured on a deferred-payment basis subject to the applicable framework. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_08_4",
+        question_id: "fema_cs_hard_08_B_4",
         question:
           "Can deferred consideration also arise where an Indian investor transfers equity capital of a foreign entity?",
         options: [
@@ -44103,7 +40829,7 @@ const AICaseStudies = [
           "The correct answer is Yes, subject to applicable conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_08_5",
+        question_id: "fema_cs_hard_08_5_B",
         question:
           "Which statement best reflects the treatment of the USD 15 million deferred acquisition consideration?",
         options: [
@@ -44120,7 +40846,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_09",
+    case_id: "fema_cs_hard_09_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -44138,7 +40864,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_09_1",
+        question_id: "fema_cs_hard_09_B_1",
         question:
           "Is acquisition of equity capital through a bidding or tender procedure recognised as a mode of ODI?",
         options: [
@@ -44152,7 +40878,7 @@ const AICaseStudies = [
           "The correct answer is Yes. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_09_2",
+        question_id: "fema_cs_hard_09_B_2",
         question:
           "Can earnest money deposit connected with an overseas bidding process be remitted in accordance with the applicable ODI framework?",
         options: [
@@ -44166,7 +40892,7 @@ const AICaseStudies = [
           "The correct answer is Yes, subject to the prescribed conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_09_3",
+        question_id: "fema_cs_hard_09_B_3",
         question:
           "A bid bond or guarantee required in connection with the overseas bidding process may generally be issued:",
         options: [
@@ -44180,7 +40906,7 @@ const AICaseStudies = [
           "The correct answer is Subject to the applicable overseas investment and banking conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_09_4",
+        question_id: "fema_cs_hard_09_B_4",
         question:
           "If National Engineering wins the bid, do subsequent acquisition payments become automatically exempt from ODI requirements?",
         options: [
@@ -44194,7 +40920,7 @@ const AICaseStudies = [
           "The correct answer is No, the acquisition and financial commitment must continue to satisfy the applicable framework. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_09_5",
+        question_id: "fema_cs_hard_09_B_5",
         question:
           "Which statement best describes the regulatory character of the initial earnest money remittance?",
         options: [
@@ -44211,7 +40937,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_10",
+    case_id: "fema_cs_hard_10_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -44230,7 +40956,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_10_1",
+        question_id: "fema_cs_hard_10_B_1",
         question:
           "Which of the following persons may be required to obtain an NOC before making financial commitment under the overseas investment framework?",
         options: [
@@ -44244,7 +40970,7 @@ const AICaseStudies = [
           "The correct answer is A person classified as a wilful defaulter. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_10_2",
+        question_id: "fema_cs_hard_10_B_2",
         question:
           "A person under investigation by a financial sector regulator may:",
         options: [
@@ -44258,7 +40984,7 @@ const AICaseStudies = [
           "The correct answer is Be subject to the NOC requirement before undertaking specified overseas investment transactions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_10_3",
+        question_id: "fema_cs_hard_10_B_3",
         question:
           "If the concerned lender, regulator or investigative agency does not communicate any objection within the prescribed period after receiving the NOC application, what is the general regulatory consequence?",
         options: [
@@ -44272,7 +40998,7 @@ const AICaseStudies = [
           "The correct answer is The NOC may be deemed to have been granted. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_10_4",
+        question_id: "fema_cs_hard_10_B_4",
         question:
           "What is the prescribed period relevant for deemed NOC where no objection is communicated?",
         options: [
@@ -44286,7 +41012,7 @@ const AICaseStudies = [
           "The correct answer is Sixty calendar days. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_10_5",
+        question_id: "fema_cs_hard_10_5_B",
         question:
           "Is the NOC requirement in the specified circumstances relevant only for making a new ODI?",
         options: [
@@ -44302,7 +41028,7 @@ const AICaseStudies = [
     ],
   },
   {
-    case_id: "fema_cs_medium_10",
+    case_id: "fema_cs_medium_10_C",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -44319,7 +41045,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_10_1",
+        question_id: "fema_cs_medium_10_C_1",
         question:
           "Which of the following best describes a current account transaction under FEMA?",
         options: [
@@ -44333,7 +41059,7 @@ const AICaseStudies = [
           "The correct answer is A transaction other than a capital account transaction. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_10_2",
+        question_id: "fema_cs_medium_10_C_2",
         question:
           "Payment in connection with foreign trade, other current business and services would generally fall within:",
         options: [
@@ -44347,7 +41073,7 @@ const AICaseStudies = [
           "The correct answer is Current account transactions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_10_3",
+        question_id: "fema_cs_medium_10_C_3",
         question:
           "Foreign exchange required for expenses connected with ordinary business travel abroad would generally be associated with:",
         options: [
@@ -44361,7 +41087,7 @@ const AICaseStudies = [
           "The correct answer is A current account transaction. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_10_4",
+        question_id: "fema_cs_medium_10_C_4",
         question:
           "Why may acquisition of immovable property outside India require examination as a capital account transaction?",
         options: [
@@ -44375,7 +41101,7 @@ const AICaseStudies = [
           "The correct answer is Because it may alter the assets or liabilities outside India of a person resident in India. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_10_5",
+        question_id: "fema_cs_medium_10_5_B",
         question:
           "Which statement is correct regarding classification of a transaction under FEMA?",
         options: [
@@ -44392,7 +41118,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_medium_11",
+    case_id: "fema_cs_medium_11_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -44409,7 +41135,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_11_1",
+        question_id: "fema_cs_medium_11_B_1",
         question:
           "Where the full export value of goods is ascertainable at the time of export, the exporter is generally required to specify:",
         options: [
@@ -44423,7 +41149,7 @@ const AICaseStudies = [
           "The correct answer is The full export value. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_11_2",
+        question_id: "fema_cs_medium_11_B_2",
         question:
           "Where the full export value is not ascertainable at the time of export, the exporter should generally declare:",
         options: [
@@ -44437,7 +41163,7 @@ const AICaseStudies = [
           "The correct answer is The value which the exporter, having regard to prevailing market conditions, expects to receive. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_11_3",
+        question_id: "fema_cs_medium_11_B_3",
         question:
           "Which party bears the primary obligation to take steps for realisation and repatriation of the export value?",
         options: [
@@ -44451,7 +41177,7 @@ const AICaseStudies = [
           "The correct answer is The exporter. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_11_4",
+        question_id: "fema_cs_medium_11_B_4",
         question: "A delay by the foreign buyer in making payment:",
         options: [
           "Automatically extinguishes the exporter's obligations under FEMA",
@@ -44464,7 +41190,7 @@ const AICaseStudies = [
           "The correct answer is Does not by itself eliminate the requirement concerning realisation and repatriation. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_11_5",
+        question_id: "fema_cs_medium_11_5_B",
         question:
           "Which institution plays an important role in monitoring export transactions and realisation of export proceeds under the FEMA framework?",
         options: [
@@ -44481,7 +41207,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_medium_12",
+    case_id: "fema_cs_medium_12_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -44499,7 +41225,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_12_1",
+        question_id: "fema_cs_medium_12_B_1",
         question:
           "After foreign exchange is remitted for import of goods, what should the Authorised Dealer generally ensure?",
         options: [
@@ -44513,7 +41239,7 @@ const AICaseStudies = [
           "The correct answer is That appropriate evidence of import is obtained or available. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_12_2",
+        question_id: "fema_cs_medium_12_B_2",
         question:
           "Which system is relevant for monitoring import transactions?",
         options: ["IDPMS", "MCA21 only", "GSTN only", "Depository system only"],
@@ -44522,7 +41248,7 @@ const AICaseStudies = [
           "The correct answer is IDPMS. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_12_3",
+        question_id: "fema_cs_medium_12_B_3",
         question:
           "The normal period referred to for settlement of import dues is generally:",
         options: [
@@ -44536,7 +41262,7 @@ const AICaseStudies = [
           "The correct answer is Six months from shipment. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_12_4",
+        question_id: "fema_cs_medium_12_B_4",
         question:
           "Can an Authorised Dealer permit extension of the period for settlement of import dues?",
         options: [
@@ -44550,7 +41276,7 @@ const AICaseStudies = [
           "The correct answer is Yes, in specified circumstances subject to applicable conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_12_5",
+        question_id: "fema_cs_medium_12_5_B",
         question:
           "Which circumstance in the case may justify consideration of an extension by the Authorised Dealer?",
         options: [
@@ -44567,7 +41293,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_medium_13",
+    case_id: "fema_cs_medium_13_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -44584,7 +41310,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_13_1",
+        question_id: "fema_cs_medium_13_B_1",
         question:
           "Does a transfer of equity capital of a foreign entity by an Indian investor remain subject to the overseas investment framework?",
         options: [
@@ -44598,7 +41324,7 @@ const AICaseStudies = [
           "The correct answer is Yes. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_13_2",
+        question_id: "fema_cs_medium_13_B_2",
         question:
           "Which factor may be relevant while transferring equity capital of a foreign entity?",
         options: [
@@ -44612,7 +41338,7 @@ const AICaseStudies = [
           "The correct answer is Applicable pricing or valuation requirements. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_13_3",
+        question_id: "fema_cs_medium_13_B_3",
         question: "The proceeds arising from disinvestment are:",
         options: [
           "Subject to applicable realisation requirements",
@@ -44625,7 +41351,7 @@ const AICaseStudies = [
           "The correct answer is Subject to applicable realisation requirements. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_13_4",
+        question_id: "fema_cs_medium_13_B_4",
         question: "Disinvestment should generally be reported through:",
         options: [
           "The designated Authorised Dealer bank",
@@ -44638,7 +41364,7 @@ const AICaseStudies = [
           "The correct answer is The designated Authorised Dealer bank. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_13_5",
+        question_id: "fema_cs_medium_13_5_B",
         question:
           "The reporting of disinvestment is generally required within:",
         options: [
@@ -44655,7 +41381,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_medium_14",
+    case_id: "fema_cs_medium_14_B",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -44672,7 +41398,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_14_1",
+        question_id: "fema_cs_medium_14_B_1",
         question: "An Indian entity having ODI may be required to submit:",
         options: [
           "Annual Performance Report",
@@ -44685,7 +41411,7 @@ const AICaseStudies = [
           "The correct answer is Annual Performance Report. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_14_2",
+        question_id: "fema_cs_medium_14_B_2",
         question:
           "BluePeak's 65% holding and control over the foreign entity is relevant particularly for:",
         options: [
@@ -44699,7 +41425,7 @@ const AICaseStudies = [
           "The correct answer is Compliance and financial statement requirements associated with APR. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_14_3",
+        question_id: "fema_cs_medium_14_B_3",
         question:
           "Does completion of initial ODI reporting necessarily eliminate subsequent annual reporting obligations?",
         options: [
@@ -44713,7 +41439,7 @@ const AICaseStudies = [
           "The correct answer is No. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_14_4",
+        question_id: "fema_cs_medium_14_B_4",
         question:
           "Where required overseas investment reporting has not been completed, further financial commitment may:",
         options: [
@@ -44727,7 +41453,7 @@ const AICaseStudies = [
           "The correct answer is Be subject to restriction until the delay is regularised. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_14_5",
+        question_id: "fema_cs_medium_14_5_B",
         question:
           "A reporting delay may generally be regularised under the applicable framework through:",
         options: [
@@ -44744,7 +41470,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_06",
+    case_id: "fema_cs_hard_06_C",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -44761,7 +41487,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_06_1",
+        question_id: "fema_cs_hard_06_C_1",
         question:
           "Is every overseas investment structure involving a foreign entity which invests back into India absolutely prohibited under the current framework?",
         options: [
@@ -44775,7 +41501,7 @@ const AICaseStudies = [
           "The correct answer is No, the permissibility must be examined with reference to the prescribed conditions including subsidiary layers. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_06_2",
+        question_id: "fema_cs_hard_06_C_2",
         question:
           "The relevant restriction applies where the structure resulting from such financial commitment has:",
         options: [
@@ -44789,7 +41515,7 @@ const AICaseStudies = [
           "The correct answer is More than two layers of subsidiaries, subject to the applicable rule and exemptions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_06_3",
+        question_id: "fema_cs_hard_06_C_3",
         question:
           "For application of the relevant overseas investment restriction, investment into India by the foreign entity may be:",
         options: [
@@ -44803,7 +41529,7 @@ const AICaseStudies = [
           "The correct answer is Direct or indirect. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_06_4",
+        question_id: "fema_cs_hard_06_C_4",
         question:
           "Which statement best describes the compliance analysis required for Orion's proposed structure?",
         options: [
@@ -44817,7 +41543,7 @@ const AICaseStudies = [
           "The correct answer is The resulting subsidiary structure should be mapped to determine whether the permissible layer restriction is breached. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_06_5",
+        question_id: "fema_cs_hard_06_5_C",
         question:
           "The rule concerning layers in such overseas investment structures is linked to the restriction contemplated under:",
         options: [
@@ -44834,7 +41560,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_07",
+    case_id: "fema_cs_hard_07_C",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -44851,7 +41577,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_07_1",
+        question_id: "fema_cs_hard_07_C_1",
         question:
           "Under the overseas investment framework, restructuring involving diminution in the value of outstanding dues may be permitted where the foreign entity:",
         options: [
@@ -44865,7 +41591,7 @@ const AICaseStudies = [
           "The correct answer is Has been incurring losses for the prescribed previous period. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_07_2",
+        question_id: "fema_cs_hard_07_C_2",
         question:
           "Which of the following may form part of the restructuring contemplated in the case?",
         options: [
@@ -44879,7 +41605,7 @@ const AICaseStudies = [
           "The correct answer is Diminution in the total value of outstanding dues towards the Indian investor. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_07_3",
+        question_id: "fema_cs_hard_07_C_3",
         question:
           "Where the diminution exceeds the prescribed monetary amount or percentage of the Indian entity's total investment, the diminution should generally be:",
         options: [
@@ -44893,7 +41619,7 @@ const AICaseStudies = [
           "The correct answer is Duly certified on an arm's-length basis by the prescribed professional. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_07_4",
+        question_id: "fema_cs_hard_07_C_4",
         question:
           "Which statement is correct regarding reporting of restructuring?",
         options: [
@@ -44907,7 +41633,7 @@ const AICaseStudies = [
           "The correct answer is The restructuring must be reported through the designated AD bank within the prescribed period. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_07_5",
+        question_id: "fema_cs_hard_07_5_B",
         question:
           "The regulatory treatment of diminution in value demonstrates that:",
         options: [
@@ -44924,7 +41650,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_08",
+    case_id: "fema_cs_hard_08_C",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -44942,7 +41668,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_08_1",
+        question_id: "fema_cs_hard_08_C_1",
         question:
           "Can equity capital of a foreign entity be acquired by an Indian investor on a deferred-payment basis under the overseas investment framework?",
         options: [
@@ -44956,7 +41682,7 @@ const AICaseStudies = [
           "The correct answer is Yes, subject to the applicable conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_08_2",
+        question_id: "fema_cs_hard_08_C_2",
         question:
           "For regulatory purposes, the deferred part of the consideration in such an acquisition is generally treated as:",
         options: [
@@ -44970,7 +41696,7 @@ const AICaseStudies = [
           "The correct answer is A non-fund-based commitment until it is paid. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_08_3",
+        question_id: "fema_cs_hard_08_C_3",
         question:
           "Does deferred payment necessarily prevent transfer of the agreed equity capital at completion?",
         options: [
@@ -44984,7 +41710,7 @@ const AICaseStudies = [
           "The correct answer is No, acquisition or transfer may be structured on a deferred-payment basis subject to the applicable framework. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_08_4",
+        question_id: "fema_cs_hard_08_C_4",
         question:
           "Can deferred consideration also arise where an Indian investor transfers equity capital of a foreign entity?",
         options: [
@@ -44998,7 +41724,7 @@ const AICaseStudies = [
           "The correct answer is Yes, subject to applicable conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_08_5",
+        question_id: "fema_cs_hard_08_5_C",
         question:
           "Which statement best reflects the treatment of the USD 15 million deferred acquisition consideration?",
         options: [
@@ -45015,7 +41741,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_09",
+    case_id: "fema_cs_hard_09_C",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -45033,7 +41759,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_09_1",
+        question_id: "fema_cs_hard_09_C_1",
         question:
           "Is acquisition of equity capital through a bidding or tender procedure recognised as a mode of ODI?",
         options: [
@@ -45047,7 +41773,7 @@ const AICaseStudies = [
           "The correct answer is Yes. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_09_2",
+        question_id: "fema_cs_hard_09_C_2",
         question:
           "Can earnest money deposit connected with an overseas bidding process be remitted in accordance with the applicable ODI framework?",
         options: [
@@ -45061,7 +41787,7 @@ const AICaseStudies = [
           "The correct answer is Yes, subject to the prescribed conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_09_3",
+        question_id: "fema_cs_hard_09_C_3",
         question:
           "A bid bond or guarantee required in connection with the overseas bidding process may generally be issued:",
         options: [
@@ -45075,7 +41801,7 @@ const AICaseStudies = [
           "The correct answer is Subject to the applicable overseas investment and banking conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_09_4",
+        question_id: "fema_cs_hard_09_C_4",
         question:
           "If National Engineering wins the bid, do subsequent acquisition payments become automatically exempt from ODI requirements?",
         options: [
@@ -45089,7 +41815,7 @@ const AICaseStudies = [
           "The correct answer is No, the acquisition and financial commitment must continue to satisfy the applicable framework. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_09_5",
+        question_id: "fema_cs_hard_09_C_5",
         question:
           "Which statement best describes the regulatory character of the initial earnest money remittance?",
         options: [
@@ -45106,7 +41832,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_10",
+    case_id: "fema_cs_hard_10_C",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -45125,7 +41851,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_10_1",
+        question_id: "fema_cs_hard_10_C_1",
         question:
           "Which of the following persons may be required to obtain an NOC before making financial commitment under the overseas investment framework?",
         options: [
@@ -45139,7 +41865,7 @@ const AICaseStudies = [
           "The correct answer is A person classified as a wilful defaulter. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_10_2",
+        question_id: "fema_cs_hard_10_C_2",
         question:
           "A person under investigation by a financial sector regulator may:",
         options: [
@@ -45153,7 +41879,7 @@ const AICaseStudies = [
           "The correct answer is Be subject to the NOC requirement before undertaking specified overseas investment transactions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_10_3",
+        question_id: "fema_cs_hard_10_C_3",
         question:
           "If the concerned lender, regulator or investigative agency does not communicate any objection within the prescribed period after receiving the NOC application, what is the general regulatory consequence?",
         options: [
@@ -45167,7 +41893,7 @@ const AICaseStudies = [
           "The correct answer is The NOC may be deemed to have been granted. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_10_4",
+        question_id: "fema_cs_hard_10_C_4",
         question:
           "What is the prescribed period relevant for deemed NOC where no objection is communicated?",
         options: [
@@ -45181,7 +41907,7 @@ const AICaseStudies = [
           "The correct answer is Sixty calendar days. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_10_5",
+        question_id: "fema_cs_hard_10_5_C_5",
         question:
           "Is the NOC requirement in the specified circumstances relevant only for making a new ODI?",
         options: [
@@ -45197,7 +41923,7 @@ const AICaseStudies = [
     ],
   },
   {
-    case_id: "fema_cs_medium_10",
+    case_id: "fema_cs_medium_10_D",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -45217,7 +41943,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_10_1",
+        question_id: "fema_cs_medium_10_D_1",
         question:
           "The Liberalised Remittance Scheme is primarily available to:",
         options: [
@@ -45231,7 +41957,7 @@ const AICaseStudies = [
           "The correct answer is Resident individuals. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_10_2",
+        question_id: "fema_cs_medium_10_D_2",
         question: "Can a minor resident individual make remittance under LRS?",
         options: [
           "No, LRS is available only after attaining 21 years of age",
@@ -45244,7 +41970,7 @@ const AICaseStudies = [
           "The correct answer is Yes, resident individuals including minors are covered, subject to applicable procedural requirements. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_10_3",
+        question_id: "fema_cs_medium_10_D_3",
         question: "LRS may generally be used for:",
         options: [
           "Only current account transactions",
@@ -45257,7 +41983,7 @@ const AICaseStudies = [
           "The correct answer is Permissible current account transactions, capital account transactions, or a combination of both. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_10_4",
+        question_id: "fema_cs_medium_10_D_4",
         question:
           "Does availability of an unused amount within the LRS monetary ceiling make an otherwise prohibited transaction permissible?",
         options: [
@@ -45271,7 +41997,7 @@ const AICaseStudies = [
           "The correct answer is No, prohibited transactions remain prohibited notwithstanding availability of the LRS limit. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_10_5",
+        question_id: "fema_cs_medium_10_5_C",
         question:
           "Which of the following proposed uses should raise a prohibition issue under the applicable foreign exchange framework?",
         options: [
@@ -45288,7 +42014,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_medium_11",
+    case_id: "fema_cs_medium_11_C",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -45308,7 +42034,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_11_1",
+        question_id: "fema_cs_medium_11_C_1",
         question:
           "Can export proceeds in an eligible case be received from a third party instead of directly from the overseas buyer?",
         options: [
@@ -45322,7 +42048,7 @@ const AICaseStudies = [
           "The correct answer is Yes, subject to compliance with prescribed conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_11_2",
+        question_id: "fema_cs_medium_11_C_2",
         question:
           "Which feature is particularly important in a permitted third-party payment arrangement?",
         options: [
@@ -45336,7 +42062,7 @@ const AICaseStudies = [
           "The correct answer is The transaction should be supported by appropriate documentation. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_11_3",
+        question_id: "fema_cs_medium_11_C_3",
         question:
           "Which statement made by Aster's finance director is incorrect?",
         options: [
@@ -45350,7 +42076,7 @@ const AICaseStudies = [
           "The correct answer is Every third-party receipt against an export is automatically prohibited under FEMA. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_11_4",
+        question_id: "fema_cs_medium_11_C_4",
         question: "The principal regulatory concern in the facts is whether:",
         options: [
           "Payment from a person other than the buyer can qualify as an acceptable third-party export receipt",
@@ -45363,7 +42089,7 @@ const AICaseStudies = [
           "The correct answer is Payment from a person other than the buyer can qualify as an acceptable third-party export receipt. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_11_5",
+        question_id: "fema_cs_medium_11_5_C",
         question:
           "Which approach should Aster adopt before accepting the proposed payment?",
         options: [
@@ -45380,7 +42106,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_medium_12",
+    case_id: "fema_cs_medium_12_C",
     case_chapter: "fema",
     case_topic: ["FEMA", "Overseas Investment", "Transfer of Equity Capital"],
     difficulty: "medium",
@@ -45396,7 +42122,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_12_1",
+        question_id: "fema_cs_medium_12_C_1",
         question:
           "The transfer by Zenith of its equity capital in the foreign entity is primarily governed by:",
         options: [
@@ -45410,7 +42136,7 @@ const AICaseStudies = [
           "The correct answer is The applicable overseas investment framework under FEMA. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_12_2",
+        question_id: "fema_cs_medium_12_C_2",
         question:
           "Is Zenith correct in assuming that shares held outside India may be transferred at any price without regard to FEMA merely because the original remittance was permitted?",
         options: [
@@ -45424,7 +42150,7 @@ const AICaseStudies = [
           "The correct answer is No, the transfer remains subject to applicable overseas investment requirements. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_12_3",
+        question_id: "fema_cs_medium_12_C_3",
         question:
           "Can consideration for transfer of equity capital of a foreign entity potentially be deferred?",
         options: [
@@ -45438,7 +42164,7 @@ const AICaseStudies = [
           "The correct answer is Yes, subject to the prescribed conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_12_4",
+        question_id: "fema_cs_medium_12_C_4",
         question:
           "Before completing the transfer, Zenith should particularly examine:",
         options: [
@@ -45452,7 +42178,7 @@ const AICaseStudies = [
           "The correct answer is Whether there are outstanding reporting or other regulatory defaults affecting the transaction. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_12_5",
+        question_id: "fema_cs_medium_12_5_C",
         question: "Which statement best describes the proposed transaction?",
         options: [
           "It is completely outside FEMA because the shares are situated abroad",
@@ -45468,7 +42194,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_medium_13",
+    case_id: "fema_cs_medium_13_C",
     case_chapter: "fema",
     case_topic: ["FEMA", "Foreign Currency Accounts", "Exporters"],
     difficulty: "medium",
@@ -45484,7 +42210,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_13_1",
+        question_id: "fema_cs_medium_13_C_1",
         question:
           "The principal purpose of an EEFC account is to enable eligible persons to:",
         options: [
@@ -45498,7 +42224,7 @@ const AICaseStudies = [
           "The correct answer is Retain eligible foreign exchange earnings in foreign currency. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_13_2",
+        question_id: "fema_cs_medium_13_C_2",
         question: "An EEFC account is generally maintained with:",
         options: [
           "An Authorised Dealer",
@@ -45511,7 +42237,7 @@ const AICaseStudies = [
           "The correct answer is An Authorised Dealer. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_13_3",
+        question_id: "fema_cs_medium_13_C_3",
         question:
           "Which statement concerning use of EEFC balances is most appropriate?",
         options: [
@@ -45525,7 +42251,7 @@ const AICaseStudies = [
           "The correct answer is They may be used for permissible current and capital account transactions subject to applicable requirements. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_13_4",
+        question_id: "fema_cs_medium_13_C_4",
         question:
           "The accountant's proposal to automatically treat the EEFC balance as an ordinary two-year fixed deposit is:",
         options: [
@@ -45539,7 +42265,7 @@ const AICaseStudies = [
           "The correct answer is Incorrect because EEFC accounts are subject to specific operational restrictions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_13_5",
+        question_id: "fema_cs_medium_13_5_C",
         question: "Before borrowing against the EEFC balance, BlueWave should:",
         options: [
           "Assume that unrestricted borrowing is permitted",
@@ -45555,7 +42281,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_medium_14",
+    case_id: "fema_cs_medium_14_C",
     case_chapter: "fema",
     case_topic: ["FEMA", "Realisation and Repatriation", "Foreign Exchange"],
     difficulty: "medium",
@@ -45571,7 +42297,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_medium_14_1",
+        question_id: "fema_cs_medium_14_C_1",
         question: "Under FEMA, 'repatriate to India' broadly involves:",
         options: [
           "Merely receiving foreign exchange from a foreign debtor",
@@ -45584,7 +42310,7 @@ const AICaseStudies = [
           "The correct answer is Bringing realised foreign exchange into India and dealing with it in the prescribed manner. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_14_2",
+        question_id: "fema_cs_medium_14_C_2",
         question:
           "Is Prakash correct that once the foreign client pays him outside India, no repatriation obligation can arise?",
         options: [
@@ -45598,7 +42324,7 @@ const AICaseStudies = [
           "The correct answer is No, receipt or realisation and repatriation are distinct concepts. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_14_3",
+        question_id: "fema_cs_medium_14_C_3",
         question: "Repatriation may include retaining the realised amount:",
         options: [
           "In an account with an authorised dealer in India to the extent permitted",
@@ -45611,7 +42337,7 @@ const AICaseStudies = [
           "The correct answer is In an account with an authorised dealer in India to the extent permitted. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_14_4",
+        question_id: "fema_cs_medium_14_C_4",
         question:
           "Which statement is most appropriate regarding utilisation of foreign exchange outside India?",
         options: [
@@ -45625,7 +42351,7 @@ const AICaseStudies = [
           "The correct answer is Permissible utilisation may be recognised in specified circumstances, subject to FEMA. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_medium_14_5",
+        question_id: "fema_cs_medium_14_5_C",
         question: "The principal error in Prakash's reasoning is that he:",
         options: [
           "Treats receipt of foreign exchange as automatically satisfying every possible repatriation requirement",
@@ -45641,7 +42367,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_06",
+    case_id: "fema_cs_hard_06_D",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -45664,7 +42390,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_06_1",
+        question_id: "fema_cs_hard_06_D_1",
         question:
           "Is ODI in a foreign entity that subsequently invests into India automatically prohibited in every case?",
         options: [
@@ -45678,7 +42404,7 @@ const AICaseStudies = [
           "The correct answer is No, such a structure may be permissible subject to the applicable restriction on layers and other conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_06_2",
+        question_id: "fema_cs_hard_06_D_2",
         question:
           "For the purpose of determining a subsidiary or step-down subsidiary under the overseas investment framework, which factor is particularly relevant?",
         options: [
@@ -45692,7 +42418,7 @@ const AICaseStudies = [
           "The correct answer is Control. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_06_3",
+        question_id: "fema_cs_hard_06_D_3",
         question:
           "The principal regulatory concern where the foreign entity invests directly or indirectly back into India is:",
         options: [
@@ -45706,7 +42432,7 @@ const AICaseStudies = [
           "The correct answer is Whether the resulting structure breaches the permissible subsidiary-layer restriction. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_06_4",
+        question_id: "fema_cs_hard_06_D_4",
         question:
           "Which statement best reflects the correct approach to Nova Global's proposed investment into India?",
         options: [
@@ -45720,7 +42446,7 @@ const AICaseStudies = [
           "The correct answer is Examine the resulting ownership and control structure, including the number of subsidiary layers. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_06_5",
+        question_id: "fema_cs_hard_06_5_D",
         question:
           "If Nova Global merely holds an investment in another foreign entity without control, that entity is:",
         options: [
@@ -45737,7 +42463,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_07",
+    case_id: "fema_cs_hard_07_D",
     case_chapter: "fema",
     case_topic: ["FEMA", "Overseas Investment", "Write-off", "Disinvestment"],
     difficulty: "hard",
@@ -45755,7 +42481,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_07_1",
+        question_id: "fema_cs_hard_07_D_1",
         question:
           "A sale of overseas investment for consideration lower than the original investment amount should be analysed primarily under:",
         options: [
@@ -45769,7 +42495,7 @@ const AICaseStudies = [
           "The correct answer is The applicable provisions governing transfer or disinvestment of overseas investment. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_07_2",
+        question_id: "fema_cs_hard_07_D_2",
         question:
           "Is the finance director correct that every overseas disinvestment involving a loss automatically requires prior RBI approval?",
         options: [
@@ -45783,7 +42509,7 @@ const AICaseStudies = [
           "The correct answer is No, the transaction must be tested against the applicable overseas investment provisions and conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_07_3",
+        question_id: "fema_cs_hard_07_D_3",
         question:
           "What additional issue arises because Orion failed to file a required overseas investment report?",
         options: [
@@ -45797,7 +42523,7 @@ const AICaseStudies = [
           "The correct answer is The reporting delay may restrict transfer until regularised. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_07_4",
+        question_id: "fema_cs_hard_07_D_4",
         question:
           "Can Orion simply complete the transfer first and assume that the reporting default can always be regularised afterwards?",
         options: [
@@ -45811,7 +42537,7 @@ const AICaseStudies = [
           "The correct answer is No, the existing delay should be regularised in accordance with the applicable framework before undertaking a restricted transfer. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_07_5",
+        question_id: "fema_cs_hard_07_5_C",
         question: "Which distinction is most important in the case?",
         options: [
           "Commercial loss on disinvestment and regulatory non-compliance are separate issues requiring separate analysis",
@@ -45827,7 +42553,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_08",
+    case_id: "fema_cs_hard_08_D",
     case_chapter: "fema",
     case_topic: ["FEMA", "Overseas Investment", "Resident Individual", "ODI"],
     difficulty: "hard",
@@ -45845,7 +42571,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_08_1",
+        question_id: "fema_cs_hard_08_D_1",
         question:
           "Can a resident individual make ODI under the overseas investment framework?",
         options: [
@@ -45859,7 +42585,7 @@ const AICaseStudies = [
           "The correct answer is Yes, subject to the applicable conditions and limits. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_08_2",
+        question_id: "fema_cs_hard_08_D_2",
         question:
           "The rights given to Ananya concerning appointment of directors and significant management decisions are particularly relevant for determining:",
         options: [
@@ -45873,7 +42599,7 @@ const AICaseStudies = [
           "The correct answer is Control. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_08_3",
+        question_id: "fema_cs_hard_08_D_3",
         question:
           "If the Canadian company becomes engaged in financial services activity, Ananya should:",
         options: [
@@ -45887,7 +42613,7 @@ const AICaseStudies = [
           "The correct answer is Examine the specific restrictions applicable to ODI by resident individuals in financial services activity. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_08_4",
+        question_id: "fema_cs_hard_08_D_4",
         question:
           "Can Ananya assume that she may make a standalone loan to the foreign entity exactly as an Indian entity can make financial commitment by debt?",
         options: [
@@ -45901,7 +42627,7 @@ const AICaseStudies = [
           "The correct answer is No, the specific framework applicable to resident individuals must be examined and such debt-based financial commitment cannot simply be assumed. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_08_5",
+        question_id: "fema_cs_hard_08_5_D",
         question:
           "Which factor is least relevant to determining whether Ananya's acquisition constitutes ODI?",
         options: [
@@ -45918,7 +42644,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_09",
+    case_id: "fema_cs_hard_09_D",
     case_chapter: "fema",
     case_topic: [
       "FEMA",
@@ -45941,7 +42667,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_09_1",
+        question_id: "fema_cs_hard_09_D_1",
         question:
           "Can export receivables potentially be set off against import payables under the FEMA framework?",
         options: [
@@ -45955,7 +42681,7 @@ const AICaseStudies = [
           "The correct answer is Yes, subject to satisfaction of the prescribed conditions. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_09_2",
+        question_id: "fema_cs_hard_09_D_2",
         question:
           "Is Meridian's finance director correct that set-off is automatically permissible merely because the same parties are involved?",
         options: [
@@ -45969,7 +42695,7 @@ const AICaseStudies = [
           "The correct answer is No, the prescribed conditions and banking requirements must also be satisfied. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_09_3",
+        question_id: "fema_cs_hard_09_D_3",
         question:
           "What is the correct treatment of the export receivable whose permitted realisation period has already expired?",
         options: [
@@ -45983,7 +42709,7 @@ const AICaseStudies = [
           "The correct answer is The existing delay must be separately examined and appropriately regularised. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_09_4",
+        question_id: "fema_cs_hard_09_D_4",
         question:
           "Which role does Meridian's Authorised Dealer perform in the proposed set-off?",
         options: [
@@ -45997,7 +42723,7 @@ const AICaseStudies = [
           "The correct answer is Examining compliance with the applicable conditions and reporting requirements. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_09_5",
+        question_id: "fema_cs_hard_09_5_B",
         question: "Which statement best captures the regulatory position?",
         options: [
           "Set-off is a recognised mechanism but cannot be used merely to conceal or automatically regularise an existing FEMA default",
@@ -46013,7 +42739,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "fema_cs_hard_10",
+    case_id: "fema_cs_hard_10_D",
     case_chapter: "fema",
     case_topic: ["FEMA", "Contravention", "Penalties", "Compounding"],
     difficulty: "hard",
@@ -46031,7 +42757,7 @@ const AICaseStudies = [
 
     questions: [
       {
-        question_id: "fema_cs_hard_10_1",
+        question_id: "fema_cs_hard_10_D_1",
         question:
           "Where a person contravenes FEMA and the amount involved is quantifiable, the penalty under Section 13 may extend to:",
         options: [
@@ -46045,7 +42771,7 @@ const AICaseStudies = [
           "The correct answer is Three times the sum involved in such contravention. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_10_2",
+        question_id: "fema_cs_hard_10_D_2",
         question:
           "Where the amount involved in the contravention is not quantifiable, the penalty may extend to:",
         options: [
@@ -46059,7 +42785,7 @@ const AICaseStudies = [
           "The correct answer is ₹2 lakh. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_10_3",
+        question_id: "fema_cs_hard_10_D_3",
         question:
           "In case of a continuing contravention, an additional penalty may extend to:",
         options: [
@@ -46073,7 +42799,7 @@ const AICaseStudies = [
           "The correct answer is ₹5,000 for every day after the first day during which the contravention continues. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_10_4",
+        question_id: "fema_cs_hard_10_D_4",
         question: "Which statement concerning compounding is most appropriate?",
         options: [
           "Compounding is an automatic cancellation of every FEMA violation",
@@ -46086,7 +42812,7 @@ const AICaseStudies = [
           "The correct answer is Compounding is a statutory mechanism for dealing with eligible contraventions subject to the prescribed process. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
       {
-        question_id: "fema_cs_hard_10_5",
+        question_id: "fema_cs_hard_10_D_5",
         question:
           "Which statement correctly distinguishes the original FEMA contravention from failure to pay an imposed penalty?",
         options: [
