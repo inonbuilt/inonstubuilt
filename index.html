@@ -1211,7 +1211,7 @@
        STUDY SQUAD LOBBY — Index.html parent-side logic
     ═══════════════════════════════════════════════════════════════════ */
 
-    function showLobby() {
+    function showLobby(focusCode = false) {
       const overlay = document.getElementById('squadLobbyOverlay');
       if (!overlay) return;
       // Pre-fill saved name
@@ -1222,10 +1222,15 @@
       const codeEl = document.getElementById('sqLobbyCode');
       if (codeEl) codeEl.classList.remove('sq-error');
       overlay.classList.add('lobby-visible');
-      // Focus name field if empty, else focus code field
+      // Focus code field if requested or if name is already populated
       setTimeout(() => {
-        if (nameEl && !nameEl.value) nameEl.focus();
-        else if (codeEl) codeEl.focus();
+        if (focusCode && codeEl) {
+          codeEl.focus();
+        } else if (nameEl && !nameEl.value) {
+          nameEl.focus();
+        } else if (codeEl) {
+          codeEl.focus();
+        }
       }, 80);
     }
 
@@ -1259,15 +1264,28 @@
       if (nameEl && nameEl.value.trim()) sqLobbyNameChange(nameEl.value.trim());
 
       const codeEl = document.getElementById('sqLobbyCode');
-      const code = (codeEl ? codeEl.value.trim() : '').toUpperCase();
+      let raw = (codeEl ? codeEl.value.trim() : '');
 
-      if (!code) {
+      if (!raw) {
         if (codeEl) {
           codeEl.classList.add('sq-error');
           codeEl.focus();
           setTimeout(() => codeEl.classList.remove('sq-error'), 1600);
         }
         return;
+      }
+
+      let code = raw;
+      if (raw.includes('room=')) {
+        try {
+          code = new URL(raw).searchParams.get('room') || raw;
+        } catch (e) {
+          code = raw.split('room=')[1].split('&')[0];
+        }
+      }
+      code = code.trim().toUpperCase();
+      if (/^\d{3,6}$/.test(code)) {
+        code = 'CA-' + code;
       }
 
       hideLobby();
@@ -1282,7 +1300,7 @@
     };
 
     // Allow sturm to re-open the lobby (e.g. "Change Room" button)
-    window.showSquadLobby = function () { showLobby(); };
+    window.showSquadLobby = function () { showLobby(true); };
     function initSquadEngine() {
       let savedProf = {};
       try {
