@@ -109,7 +109,7 @@ const AICaseStudies = [
         question:
           "What is the number of directors to be considered for calculating the rotational directors in Alpha Manufacturing Limited?",
         options: ["12", "11", "10", "9"],
-        answer: 2,
+        answer: 3,
         reason:
           "There are 12 directors in total. The 2 independent directors and 1 nominee director are excluded. Therefore, 12 − 3 = 9 directors are considered.",
       },
@@ -1027,7 +1027,7 @@ const AICaseStudies = [
         question:
           "Where there are 8,000 small shareholders, what is the lower threshold based on the number of shareholders?",
         options: ["800", "1,000", "1,500", "2,000"],
-        answer: 1,
+        answer: 0,
         reason: `
           <p><strong>Correct Answer: 1,000.</strong></p>
           <p>The prescribed threshold is 1,000 small shareholders or
@@ -1494,7 +1494,7 @@ const AICaseStudies = [
           "To eliminate voting rights of shareholders",
           "To increase the number of independent directors",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Section 163 provides a mechanism for proportional representation so that shareholders holding substantial minority voting rights can obtain fair representation on the Board.",
       },
@@ -1553,7 +1553,7 @@ const AICaseStudies = [
           "He is eligible only as an independent director",
           "He is eligible if the Board approves his appointment",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "A person who has applied to be adjudicated as an insolvent and whose application is pending is disqualified under Section 164(1).",
       },
@@ -1581,7 +1581,7 @@ const AICaseStudies = [
           "The directors are disqualified permanently",
           "Only the company secretary is disqualified",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Failure to repay deposits accepted by the company or interest thereon, or to redeem debentures or pay interest thereon, or to pay dividend declared, where the failure continues for one year or more, attracts disqualification under Section 164(2) for five years.",
       },
@@ -1664,7 +1664,7 @@ const AICaseStudies = [
           "Yes, only by an ordinary resolution",
           "Yes, only with approval of the Central Government",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Under Section 165(2), members of a company may, by special resolution, specify a lesser number of companies in which a director of that company may act as director.",
       },
@@ -1835,7 +1835,7 @@ const AICaseStudies = [
           "He automatically becomes an independent director",
           "The Board must immediately appoint a replacement",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "For vacation arising from conviction or an order of disqualification, Section 167 provides statutory periods during which the office is not vacated, including where an appeal or petition is preferred within the prescribed period.",
       },
@@ -1917,7 +1917,7 @@ const AICaseStudies = [
           "Single transferable vote, cumulative voting or another transparent and effective method ensuring fair minority representation may be used",
           "Only ordinary majority voting may be used",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 163 permits single transferable vote, cumulative voting, or otherwise another transparent and effective method of voting that ensures fair representation of minority interests.",
       },
@@ -2068,7 +2068,7 @@ const AICaseStudies = [
           "Only private companies",
           "The dormant company and the ordinary private companies",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The 10-company public-company limit includes directorships in private companies that are holding or subsidiary companies of a public company.",
       },
@@ -2077,7 +2077,7 @@ const AICaseStudies = [
         question:
           "If Arvind accepts the additional public-company directorship, what is the number of counted public-company directorships for the purpose of the statutory limit?",
         options: ["9", "10", "11", "12"],
-        answer: 1,
+        answer: 2,
         reason:
           "Arvind already has 9 public companies plus 1 private company that is a subsidiary of a public company, making 10 for the public-company limit. The additional public company takes the total to 11.",
       },
@@ -2118,7 +2118,7 @@ const AICaseStudies = [
         question:
           "Vertex Healthcare Limited has 11 directors. What is the minimum number of independent directors required?",
         options: ["2", "3", "4", "5"],
-        answer: 1,
+        answer: 2,
         reason:
           "A listed public company must have at least one-third of its total number of directors as independent directors. One-third of 11 is 3.67, and any fraction is rounded off as one, resulting in 4 independent directors.",
       },
@@ -2282,7 +2282,7 @@ const AICaseStudies = [
         question_id: "seta_AI_cs_11_67",
         question: "From which date will Raj's resignation take effect?",
         options: ["10th August", "12th August", "14th August", "20th August"],
-        answer: 2,
+        answer: 3,
         reason:
           "A director's resignation takes effect from the date on which the notice is received by the company or from the date specified by the director in the notice, whichever is later. Here, receipt is on 12th August and the specified date is 20th August. Therefore, resignation takes effect from 20th August.",
       },
@@ -2369,7 +2369,7 @@ const AICaseStudies = [
           "No, members must hold at least 10% voting power",
           "Yes, but only if all members consent",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Special notice under Section 115 may be given by members holding not less than 1% of the total voting power or holding shares on which an aggregate sum of at least ₹5 lakh has been paid.",
       },
@@ -2383,7 +2383,7 @@ const AICaseStudies = [
           "Send it only to the Registrar",
           "Send it only to the Board members",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "Where the director makes a written representation and requests its notification to members, and time permits, the company shall state the fact of the representation in the notice and send the representation to every member to whom the meeting notice is sent.",
       },
@@ -2534,7 +2534,7 @@ const AICaseStudies = [
           "Yes, members have a right to inspect it during business hours",
           "Yes, but only with Tribunal permission",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "Section 171 gives members the right to inspect the register of directors and key managerial personnel during business hours.",
       },
@@ -3237,7 +3237,7 @@ const AICaseStudies = [
           "Not be less than that payable to other directors",
           "Be fixed only by the Central Government",
         ],
-        answer: 1,
+        answer: 2,
         reason:
           "The correct answer is Not be less than that payable to other directors. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
@@ -4401,7 +4401,7 @@ const AICaseStudies = [
           "Automatically a Managing Director",
           "Automatically a Whole-time Director",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The correct answer is Not a Manager under Section 2(53). This option follows from the facts stated in the case and the applicable rule or concept.",
       },
@@ -4441,7 +4441,7 @@ const AICaseStudies = [
           "A KMP automatically",
           "A Managing Director automatically",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The correct answer is Not a Manager under Section 2(53). This option follows from the facts stated in the case and the applicable rule or concept.",
       },
@@ -6748,7 +6748,7 @@ const AICaseStudies = [
           "Correct only for listed companies",
           "Correct only where profits are inadequate",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The correct answer is Incorrect because prescribed companies must comply with the KMP requirements. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
@@ -6787,7 +6787,7 @@ const AICaseStudies = [
           "Company Secretary",
           "CFO",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The correct answer is Managing Director or CEO. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
@@ -8178,7 +8178,7 @@ const AICaseStudies = [
           "Only one meeting every two years",
           "No Board Meeting is required",
         ],
-        answer: 3,
+        answer: 1,
         reason:
           "A small company is required to conduct at least one Board Meeting in each half of a calendar year, with the gap between the two meetings not being less than 90 days.",
       },
@@ -8734,7 +8734,7 @@ const AICaseStudies = [
         question:
           "In the proposed three-member NRC, how many members should be independent directors under the Companies Act requirement?",
         options: ["At least 1", "At least 2", "All 3", "None"],
-        answer: 0,
+        answer: 1,
         reason:
           "Not less than one-half of the members should be independent directors. For three members, this means at least two when applying the numerical composition requirement; however, the supplied text states 'not less than one-half', which requires at least two members.",
       },
@@ -8960,7 +8960,7 @@ const AICaseStudies = [
         question:
           "How many directors constitute one-third of Orion Limited's total number of directors?",
         options: ["2", "2.67, treated as 3", "4", "5"],
-        answer: 0,
+        answer: 1,
         reason:
           "One-third of eight is 2.67. For determining the one-third threshold, the requirement is at least one-third; in practical whole-number terms, three directors would satisfy or exceed that threshold.",
       },
@@ -16613,7 +16613,7 @@ const AICaseStudies = [
           "Public interest",
           "Ordinary resolution of employees",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "<p>Section 212(1) recognises a report under Section 208, special resolution, public interest and request from a Central or State Government department as specified grounds.</p>",
       },
@@ -20559,12 +20559,12 @@ const AICaseStudies = [
         question:
           "The value of shares represented by members voting in favour is ₹62 lakh against ₹80 lakh represented by all members voting. Has the three-fourths value requirement been satisfied?",
         options: [
-          "Yes, because ₹62 lakh is more than half",
+          "Yes, because ₹62 lakh is more than three-fourths of ₹80 lakh",
           "Yes, because attendance exceeds 50%",
           "No, because ₹62 lakh is less than ₹60 lakh",
           "No, because ₹62 lakh is less than three-fourths of ₹80 lakh",
         ],
-        answer: 3,
+        answer: 0,
         reason:
           "Three-fourths of ₹80 lakh is ₹60 lakh. Since ₹62 lakh exceeds ₹60 lakh, the value requirement is actually satisfied. However, the option stating that it is not satisfied is incorrect. Therefore this question tests the calculation: the correct conclusion is that the value requirement IS satisfied.",
         explanation:
@@ -20625,12 +20625,12 @@ const AICaseStudies = [
         question:
           "The value of shares represented by members voting in favour is ₹62 lakh against ₹80 lakh represented by all members voting. Has the three-fourths value requirement been satisfied?",
         options: [
-          "Yes, because ₹62 lakh is more than half",
+          "Yes, because ₹62 lakh is more than three-fourths of ₹80 lakh",
           "Yes, because attendance exceeds 50%",
           "No, because ₹62 lakh is less than ₹60 lakh",
           "No, because ₹62 lakh is less than three-fourths of ₹80 lakh",
         ],
-        answer: 3,
+        answer: 0,
         reason:
           "Three-fourths of â¹80 lakh is â¹60 lakh. Since â¹62 lakh exceeds â¹60 lakh, the value requirement is actually satisfied. However, the option stating that it is not satisfied is incorrect. Therefore this question tests the calculation: the correct conclusion is that the value requirement IS satisfied.",
         explanation:
@@ -31050,7 +31050,7 @@ const AICaseStudies = [
           "No document is required once a scanned copy is uploaded",
           "Only an email copy is sufficient",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Where documents are required to be filed on non-judicial stamp paper, physical submission is required in addition to electronic submission, unless the applicable stamp duty has been paid electronically through the notified portal.",
       },
@@ -32174,7 +32174,7 @@ const AICaseStudies = [
           "Examining persons on oath",
           "Sentencing a person to imprisonment as a criminal court",
         ],
-        answer: 2,
+        answer: 3,
         reason:
           "SEBI has specified civil-court-like procedural powers but does not thereby become a criminal court with general power to impose criminal sentences.",
       },
@@ -40579,7 +40579,7 @@ const AICaseStudies = [
           "Remain confidential",
           "Be changed every month",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "A trading plan must not overlap with any period for which another trading plan is already in existence.",
       },
@@ -41899,7 +41899,7 @@ const AICaseStudies = [
           "Schedule III",
           "Only capital account regulations",
         ],
-        answer: 0,
+        answer: 2,
         reason:
           "The correct answer is Schedule III. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
@@ -50569,7 +50569,7 @@ const AICaseStudies = [
           "Can vote only on liquidation",
           "Can vote only on appointment of RP",
         ],
-        answer: 0,
+        answer: 1,
         reason:
           "The correct answer is Do not have voting rights. This option follows from the facts stated in the case and the applicable rule or concept.",
       },
