@@ -1649,6 +1649,10 @@
       const counterEl = document.getElementById("squadOnlineCounter");
       if (counterEl) counterEl.textContent = count;
 
+      try {
+        callParent("notifyActiveRoomState", activeRoomCode || "");
+      } catch (e) { }
+
       renderModalSquadGrid(list);
     }
 
@@ -1976,11 +1980,13 @@
       hostConnections = [];
       guestHostConn = null;
       activeRoomCode = "";
+      try { localStorage.setItem("calcium_active_room", ""); } catch (e) { }
       squadMembersMap = {};
       squadMembersMap[myClientId] = buildMyMemberState();
       showStatusToast("Left room — currently in Solo mode.");
       syncSquadToStorage();
       prewarmGuestPeerInstance();
+      closeSquadModal();
     };
 
     window.copyInviteLink = function () {

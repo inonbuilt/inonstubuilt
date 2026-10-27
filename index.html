@@ -161,6 +161,7 @@
       width: 100%;
       text-align: left;
     }
+
     .sq-lobby-label {
       font-size: 11px;
       font-weight: 800;
@@ -169,7 +170,8 @@
       text-transform: uppercase;
       padding-left: 2px;
     }
-        .sq-lobby-input {
+
+    .sq-lobby-input {
       width: 100%;
       padding: 12px 15px;
       border-radius: 11px;
@@ -251,7 +253,7 @@
       color: #334155;
       white-space: nowrap;
     }
-  
+
     /* ── Responsive Study Squad Lobby (Mobile, Tablet, Landscape) ── */
     @media (max-width: 540px) {
       .sq-lobby-card {
@@ -260,25 +262,31 @@
         margin: 10px !important;
         max-width: calc(100vw - 20px) !important;
       }
+
       .sq-lobby-emoji {
         font-size: 40px !important;
         margin-bottom: 8px !important;
       }
+
       .sq-lobby-title {
         font-size: 20px !important;
       }
+
       .sq-lobby-sub {
         font-size: 12px !important;
         margin-bottom: 18px !important;
       }
+
       .sq-lobby-input {
         padding: 10px 12px !important;
         font-size: 13.5px !important;
       }
+
       .sq-lobby-btn {
         padding: 12px 14px !important;
         font-size: 14px !important;
       }
+
       .sq-lobby-close {
         top: 10px !important;
         right: 12px !important;
@@ -293,22 +301,27 @@
         align-items: flex-start !important;
         padding: 12px 6px !important;
       }
+
       .sq-lobby-card {
         padding: 18px 20px 16px !important;
         margin: auto !important;
       }
+
       .sq-lobby-emoji {
         display: none !important;
       }
+
       .sq-lobby-title {
         font-size: 18px !important;
         margin-bottom: 4px !important;
       }
+
       .sq-lobby-sub {
         font-size: 11px !important;
         margin-bottom: 12px !important;
       }
-    }</style>
+    }
+  </style>
 </head>
 
 <body>
@@ -972,8 +985,52 @@
       requestFullscreenSafe();
     };
 
+    window._calciumCurrentRoomCode = (localStorage.getItem("calcium_active_room") || "").trim();
+
+    window.notifyActiveRoomState = function (roomCode) {
+      window._calciumCurrentRoomCode = (roomCode || "").trim();
+      try {
+        localStorage.setItem("calcium_active_room", window._calciumCurrentRoomCode);
+      } catch (e) { }
+    };
+
+    window.isUserAlreadyInRoom = function () {
+      if (window._calciumCurrentRoomCode && window._calciumCurrentRoomCode.trim()) {
+        return true;
+      }
+      try {
+        const stIframe = document.getElementById("sturmIframe");
+        if (stIframe && stIframe.contentWindow) {
+          const w = stIframe.contentWindow;
+          if (w.activeRoomCode && typeof w.activeRoomCode === "string" && w.activeRoomCode.trim()) {
+            window._calciumCurrentRoomCode = w.activeRoomCode.trim();
+            return true;
+          }
+          if (w.isCallActive) {
+            return true;
+          }
+        }
+      } catch (e) { }
+
+      const storedRoom = (localStorage.getItem("calcium_active_room") || "").trim();
+      if (storedRoom) {
+        window._calciumCurrentRoomCode = storedRoom;
+        return true;
+      }
+      return false;
+    };
+
     window.openSquadModal = function (fromUserGesture = true) {
-      showLobby();
+      if (window.isUserAlreadyInRoom()) {
+        hideLobby();
+        window.showSturmOverlay();
+        if (fromUserGesture) {
+          requestFullscreenSafe();
+        }
+        callSturm("openSquadModal", fromUserGesture);
+      } else {
+        showLobby();
+      }
     };
 
     window.closeSquadModal = function () {
@@ -1120,6 +1177,13 @@
       const statusEl = document.getElementById("floatingSpeakingStatus");
       if (!floatingWidget) return;
 
+      if (state) {
+        if (typeof state.activeRoomCode === "string" && state.activeRoomCode.trim()) {
+          window._calciumCurrentRoomCode = state.activeRoomCode.trim();
+          try { localStorage.setItem("calcium_active_room", window._calciumCurrentRoomCode); } catch (e) { }
+        }
+      }
+
       if (state && state.isCallActive) {
         floatingWidget.style.display = "flex";
         if (floatingMic) {
@@ -1230,6 +1294,9 @@
       if (params.get("room")) {
         window.showSturmOverlay();
         callSturm("openSquadModal", false);
+      } else {
+        try { localStorage.setItem("calcium_active_room", ""); } catch (e) { }
+        window._calciumCurrentRoomCode = "";
       }
     }
   </script>
@@ -1250,8 +1317,8 @@
         <!-- Name field with clear Name label above -->
         <div class="sq-lobby-field">
           <label for="sqLobbyName" class="sq-lobby-label">&#x1F464; YOUR NAME</label>
-          <input id="sqLobbyName" class="sq-lobby-input" type="text"
-            placeholder="Type your name (e.g. Rahul, Priya)..." oninput="sqLobbyNameChange(this.value)" />
+          <input id="sqLobbyName" class="sq-lobby-input" type="text" placeholder="Type your name (e.g. Rahul, Priya)..."
+            oninput="sqLobbyNameChange(this.value)" />
         </div>
 
         <!-- START -->
@@ -1265,8 +1332,7 @@
         <!-- JOIN with Room Code label above -->
         <div class="sq-lobby-field">
           <label for="sqLobbyCode" class="sq-lobby-label">&#x1F511; ROOM CODE</label>
-          <input id="sqLobbyCode" class="sq-lobby-input" type="text"
-            placeholder="e.g. CA-1234"
+          <input id="sqLobbyCode" class="sq-lobby-input" type="text" placeholder="e.g. CA-1234"
             onkeydown="if(event.key==='Enter') sqLobbyJoin()" />
         </div>
         <button class="sq-lobby-btn" onclick="sqLobbyJoin()">
