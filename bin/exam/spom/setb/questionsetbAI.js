@@ -486,18 +486,18 @@ const AICaseStudies = [
       answer: 2,
       reason: "Structural cost drivers arise from strategic choices concerning the underlying economic structure, such as scale, scope, technology and product complexity."
     },
-    {
-      question_id: "SCM_c12_cs_007_3",
-      question: "Which factor is most appropriately classified as an executional cost driver?",
-      options: [
+          {
+        question_id: "SCM_c12_cs_007_3",
+        question: "Which factor is most appropriately classified as an executional cost driver?",
+        options: [
         "Scope of operations",
         "Scale of operations",
         "Product complexity",
         "Employee involvement"
       ],
-      answer: 2,
-      reason: "Executional cost drivers relate to how business activities are executed and include employee involvement, quality service, product design and manufacturing, and links with suppliers and clients."
-    },
+        answer: 3,
+        reason: "Executional cost drivers relate to how business activities are executed and include employee involvement, quality service, product design and manufacturing, and links with suppliers and clients."
+      },
     {
       question_id: "SCM_c12_cs_007_4",
       question: "A product becoming increasingly complex due to the strategic decision to offer many variants is primarily associated with:",
@@ -3268,18 +3268,18 @@ const AICaseStudies = [
       answer: 2,
       reason: "Defects discovered and remedied before delivery to customers constitute internal failure costs."
     },
-    {
-      question_id: "AI_c22_cs_002_4",
-      question: "Warranty repairs performed after customers receive defective equipment represent:",
-      options: [
+          {
+        question_id: "AI_c22_cs_002_4",
+        question: "Warranty repairs performed after customers receive defective equipment represent:",
+        options: [
         "Prevention cost",
         "Appraisal cost",
         "Internal failure cost",
         "External failure cost"
       ],
-      answer: 2,
-      reason: "Warranty costs arising from defects discovered after delivery are external failure costs."
-    },
+        answer: 3,
+        reason: "Warranty costs arising from defects discovered after delivery are external failure costs."
+      },
     {
       question_id: "AI_c22_cs_002_5",
       question: "The management accountant's concern about eliminating training and inspection is justified because:",
@@ -3547,18 +3547,18 @@ const AICaseStudies = [
       answer: 1,
       reason: "Prevention and appraisal are the two major conformance categories in the PAF model."
     },
-    {
-      question_id: "AI_c22_cs_006_2",
-      question: "Warranty claims and product returns incurred after customers receive products are:",
-      options: [
+          {
+        question_id: "AI_c22_cs_006_2",
+        question: "Warranty claims and product returns incurred after customers receive products are:",
+        options: [
         "Prevention costs",
         "Appraisal costs",
         "Internal failure costs",
         "External failure costs"
       ],
-      answer: 2,
-      reason: "Defects discovered after delivery result in external failure costs."
-    },
+        answer: 3,
+        reason: "Defects discovered after delivery result in external failure costs."
+      },
     {
       question_id: "AI_c22_cs_006_3",
       question: "The quality director's warning about customers who stop purchasing due to poor quality is important because:",
@@ -5922,7 +5922,7 @@ const AICaseStudies = [
   // 5 MEDIUM + 5 HARD CASE STUDIES
   // ============================================================
   {
-    case_id: "AI_c23_cs_001",
+    case_id: "AI_c23_cs_030",
     difficulty: "medium",
     case_chapter: "Chapter3",
     case_topic: ["Lean System", "Seven Wastes", "5S", "Kaizen", "Continuous Improvement"],
@@ -5940,35 +5940,35 @@ const AICaseStudies = [
 
     questions: [
     {
-      question_id: "AI_c23_cs_001_1",
+      question_id: "AI_c23_cs_030_1",
       question: "The production manager's decision to manufacture substantially more components than immediately required most directly represents which type of waste?",
       options: ["Waiting", "Overproduction", "Motion", "Defects"],
       answer: 1,
       reason: "Producing ahead of actual demand creates excess output and is classified as overproduction. Waiting concerns products remaining idle before the next operation, while motion concerns unnecessary movement of people or equipment."
     },
     {
-      question_id: "AI_c23_cs_001_2",
+      question_id: "AI_c23_cs_030_2",
       question: "When operators repeatedly searched for gauges and tools before beginning their work, which lean waste was primarily being experienced?",
       options: ["Motion", "Transportation", "Overproduction", "Inventory"],
       answer: 0,
       reason: "Unnecessary movement of employees in searching for tools is motion waste. Transportation relates to unnecessary movement of products or materials."
     },
     {
-      question_id: "AI_c23_cs_001_3",
+      question_id: "AI_c23_cs_030_3",
       question: "The removal of obsolete tools and broken equipment from the workplace most closely corresponds to which 5S activity?",
       options: ["Set in Order", "Shine", "Sort", "Sustain"],
       answer: 0,
       reason: "Sort involves identifying and removing items that are not required. Set in Order deals with arranging required items systematically, while Shine focuses on cleanliness and inspection."
     },
     {
-      question_id: "AI_c23_cs_001_4",
+      question_id: "AI_c23_cs_030_4",
       question: "The weekly improvement meetings primarily reflect which feature of Kaizen?",
       options: ["One-time radical restructuring", "Continuous small improvements involving employees", "Replacement of all existing machinery", "Centralised improvement by the finance department"],
       answer: 1,
       reason: "Kaizen focuses on continuous, incremental improvements and encourages participation across organisational levels rather than depending exclusively on major capital expenditure."
     },
     {
-      question_id: "AI_c23_cs_001_5",
+      question_id: "AI_c23_cs_030_5",
       question: "Why did the lean manager consider the reduction of unnecessary movement and waiting important even though customers did not directly observe these activities?",
       options: ["They automatically increase selling prices", "They are non-value-added activities that consume resources without creating customer value", "They are required under Six Sigma", "They increase finished goods inventory"],
       answer: 1,
@@ -5977,7 +5977,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "AI_c23_cs_002",
+    case_id: "AI_c23_cs_031",
     difficulty: "medium",
     case_chapter: "Chapter3",
     case_topic: ["JIT", "Kanban", "Cellular Manufacturing", "Multi-skilled Workforce"],
@@ -5995,35 +5995,35 @@ const AICaseStudies = [
 
     questions: [
     {
-      question_id: "AI_c23_cs_002_1",
+      question_id: "AI_c23_cs_031_1",
       question: "The authorisation card sent by assembly to machining is most consistent with which JIT mechanism?",
       options: ["Standard costing", "Kanban", "Backflush accounting", "Value engineering"],
       answer: 1,
       reason: "Kanban uses a downstream signal or card to authorise an upstream process to produce only the required quantity, thereby supporting a pull system."
     },
     {
-      question_id: "AI_c23_cs_002_2",
+      question_id: "AI_c23_cs_031_2",
       question: "Why was reducing machine setup time particularly important to Orbit after adopting the new system?",
       options: ["It permits smaller batches without making production economically impractical", "It increases the amount of safety inventory required", "It eliminates the need for quality control", "It allows the company to return to push production"],
       answer: 0,
       reason: "JIT production seeks smaller batches and reduced setup time makes frequent changeovers more practical."
     },
     {
-      question_id: "AI_c23_cs_002_3",
+      question_id: "AI_c23_cs_031_3",
       question: "The operator moving components through several machines within a small group of machines illustrates:",
       options: ["Cellular manufacturing", "Over-processing", "Traditional functional layout", "Batch costing"],
       answer: 0,
       reason: "Cellular manufacturing groups machines into a small cell through which an operator can move the product, improving flow and visibility."
     },
     {
-      question_id: "AI_c23_cs_002_4",
+      question_id: "AI_c23_cs_031_4",
       question: "The decision to allow operators to stop the machine when a defect is identified primarily reflects which JIT/lean principle?",
       options: ["Produce more than demand to protect utilisation", "Do it right first time and prevent defects from moving downstream", "Increase inventory before inspection", "Maximise batch size"],
       answer: 1,
       reason: "Lean emphasises first-time quality and immediate problem resolution rather than allowing defects to flow into subsequent operations."
     },
     {
-      question_id: "AI_c23_cs_002_5",
+      question_id: "AI_c23_cs_031_5",
       question: "What is the major risk created by Orbit's reduction in inventory buffers?",
       options: ["Higher unnecessary storage cost", "Greater exposure to supply-chain disruptions", "More overproduction automatically", "Elimination of employee responsibility"],
       answer: 1,
@@ -6032,7 +6032,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "AI_c23_cs_003",
+    case_id: "AI_c23_cs_032",
     difficulty: "medium",
     case_chapter: "Chapter3",
     case_topic: ["Kaizen Costing", "Standard Costing", "Target Setting", "Employee Participation"],
@@ -6050,35 +6050,35 @@ const AICaseStudies = [
 
     questions: [
     {
-      question_id: "AI_c23_cs_003_1",
+      question_id: "AI_c23_cs_032_1",
       question: "Which feature most clearly distinguishes Zenith's proposed Kaizen costing system from its previous standard costing approach?",
       options: ["Comparison of actual results with predetermined standards", "Continuous cost reduction through incremental improvements", "Use of financial information", "Preparation of budgets"],
       answer: 1,
       reason: "Kaizen costing focuses on continuous reduction of actual costs through small improvements, whereas traditional standard costing primarily focuses on cost control against established standards."
     },
     {
-      question_id: "AI_c23_cs_003_2",
+      question_id: "AI_c23_cs_032_2",
       question: "The cutting team's reduction of waste from 8% to 7.4% without replacing the machine is an example of:",
       options: ["Radical business process re-engineering", "Kaizen improvement", "Overproduction", "Process abandonment"],
       answer: 1,
       reason: "The improvement is small, incremental and achieved through changes in working methods rather than a radical restructuring."
     },
     {
-      question_id: "AI_c23_cs_003_3",
+      question_id: "AI_c23_cs_032_3",
       question: "Why did the CEO consider employee participation important in target setting?",
       options: ["Employees must approve all financial statements", "Employees close to the process can identify practical sources of waste and improvement", "It eliminates the need for management", "It prevents the use of quantitative targets"],
       answer: 1,
       reason: "Kaizen encourages bottom-up participation because employees working directly with processes are often best positioned to identify small improvement opportunities."
     },
     {
-      question_id: "AI_c23_cs_003_4",
+      question_id: "AI_c23_cs_032_4",
       question: "If management investigates why the team failed to achieve a monthly Kaizen target, the primary purpose is to:",
       options: ["Abandon the target permanently", "Understand the reasons for the gap and formulate corrective improvement actions", "Increase inventory automatically", "Replace Kaizen with traditional budgeting"],
       answer: 1,
       reason: "Kaizen costing uses the gap between actual performance and the improvement target to understand causes and encourage further cost reduction."
     },
     {
-      question_id: "AI_c23_cs_003_5",
+      question_id: "AI_c23_cs_032_5",
       question: "Which statement best describes the underlying philosophy reflected in Zenith's approach?",
       options: ["Once a standard is achieved, no further improvement is required", "Cost reduction is possible only through major capital investment", "There is no final point at which improvement opportunities disappear", "Only finance personnel can identify operational waste"],
       answer: 2,
@@ -6087,7 +6087,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "AI_c23_cs_004",
+    case_id: "AI_c23_cs_033",
     difficulty: "medium",
     case_chapter: "Chapter3",
     case_topic: ["TPM", "OEE", "Six Big Losses", "Maintenance"],
@@ -6105,35 +6105,35 @@ const AICaseStudies = [
 
     questions: [
     {
-      question_id: "AI_c23_cs_004_1",
+      question_id: "AI_c23_cs_033_1",
       question: "Which two broad OEE dimensions are directly affected by machine breakdowns and setup/adjustment losses?",
       options: ["Performance and quality", "Availability and time loss", "Quality and inventory", "Performance and inventory"],
       answer: 1,
       reason: "Equipment failure/breakdown and setup/adjustment losses are classified among the time/availability losses in the six big losses."
     },
     {
-      question_id: "AI_c23_cs_004_2",
+      question_id: "AI_c23_cs_033_2",
       question: "What is the operating time of the machine for the shift described in the case?",
       options: ["564 minutes", "600 minutes", "636 minutes", "525 minutes"],
       answer: 0,
       reason: "Operating time = planned production time − unplanned downtime = 600 − 36 = 564 minutes."
     },
     {
-      question_id: "AI_c23_cs_004_3",
+      question_id: "AI_c23_cs_033_3",
       question: "Which OEE component is primarily examined when actual output is compared with what could theoretically have been produced during operating time at the ideal cycle rate?",
       options: ["Availability", "Performance", "Quality", "Inventory"],
       answer: 1,
       reason: "Performance measures how closely the machine operates to its ideal production speed during operating time."
     },
     {
-      question_id: "AI_c23_cs_004_4",
+      question_id: "AI_c23_cs_033_4",
       question: "The 75 rejected units primarily affect which OEE component?",
       options: ["Availability", "Performance", "Quality", "Planned production time"],
       answer: 2,
       reason: "Quality is calculated using good count relative to total count. Rejected units therefore reduce the quality component."
     },
     {
-      question_id: "AI_c23_cs_004_5",
+      question_id: "AI_c23_cs_033_5",
       question: "The training of operators to clean, lubricate and visually inspect machines most directly reflects which TPM pillar?",
       options: ["Autonomous Maintenance", "Early Management", "Office TPM", "Safety, Health and Environment"],
       answer: 0,
@@ -6142,7 +6142,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "AI_c23_cs_005",
+    case_id: "AI_c23_cs_034",
     difficulty: "medium",
     case_chapter: "Chapter3",
     case_topic: ["Six Sigma", "DMAIC", "Customer Satisfaction", "Process Improvement"],
@@ -6160,35 +6160,35 @@ const AICaseStudies = [
 
     questions: [
     {
-      question_id: "AI_c23_cs_005_1",
+      question_id: "AI_c23_cs_034_1",
       question: "Which DMAIC stage is represented by the team's initial collection of measurable data about processing time and errors?",
       options: ["Define", "Measure", "Improve", "Control"],
       answer: 1,
       reason: "The Measure stage involves collecting quantitative data about the existing process so that its performance can be assessed objectively."
     },
     {
-      question_id: "AI_c23_cs_005_2",
+      question_id: "AI_c23_cs_034_2",
       question: "The investigation into why applications were delayed between branches and the central processing unit primarily belongs to:",
       options: ["Define", "Measure", "Analyse", "Verify"],
       answer: 2,
       reason: "Analyse focuses on understanding the causes of the measured problems and identifying root causes."
     },
     {
-      question_id: "AI_c23_cs_005_3",
+      question_id: "AI_c23_cs_034_3",
       question: "Developing a common document checklist and reducing duplicate data entry are examples of actions under:",
       options: ["Improve", "Define", "Measure", "Analyse"],
       answer: 0,
       reason: "The Improve stage involves implementing corrective measures based on the causes identified during analysis."
     },
     {
-      question_id: "AI_c23_cs_005_4",
+      question_id: "AI_c23_cs_034_4",
       question: "Why did the bank establish continuing monitoring after implementing the improvements?",
       options: ["To create additional inventory", "To ensure that improved process performance is maintained", "To replace customer feedback", "To eliminate the need for data"],
       answer: 1,
       reason: "Control ensures that improvements are sustained through ongoing monitoring and measurement."
     },
     {
-      question_id: "AI_c23_cs_005_5",
+      question_id: "AI_c23_cs_034_5",
       question: "If the loan-processing process already existed and the bank was trying to improve its performance rather than create a new process, which Six Sigma methodology was more appropriate?",
       options: ["DMADV", "DMAIC", "5S only", "BPR only"],
       answer: 1,
@@ -6201,7 +6201,7 @@ const AICaseStudies = [
   // ============================================================
 
   {
-    case_id: "AI_c23_cs_006",
+    case_id: "AI_c23_cs_035",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["JIT", "Backflush Accounting", "Kanban", "Supply Chain Risk", "Management Accounting"],
@@ -6221,35 +6221,35 @@ const AICaseStudies = [
 
     questions: [
     {
-      question_id: "AI_c23_cs_006_1",
+      question_id: "AI_c23_cs_035_1",
       question: "Vertex's proposed backflush system calculates component consumption primarily after finished production is reported. What makes this approach particularly vulnerable to inaccurate employee reporting?",
       options: ["Backflush accounting is independent of production quantities", "Incorrect finished production data leads to incorrect calculated component consumption", "Supplier quality becomes irrelevant", "Inventory is always physically counted after every unit"],
       answer: 1,
       reason: "Backflushing relies on production completion information and the BOM to infer component consumption. If production reporting is inaccurate, the resulting inventory records can also be inaccurate."
     },
     {
-      question_id: "AI_c23_cs_006_2",
+      question_id: "AI_c23_cs_035_2",
       question: "Why would abnormal scrap create a particular problem under the proposed backflush approach?",
       options: ["It may not be correctly reflected by normal BOM-based consumption unless separately identified", "It automatically increases customer demand", "It eliminates all inventory records", "It reduces the need for production reporting"],
       answer: 0,
       reason: "Backflush calculations generally derive expected component usage from finished output and the BOM. Abnormal scrap must be separately identified to avoid distorting inventory and cost information."
     },
     {
-      question_id: "AI_c23_cs_006_3",
+      question_id: "AI_c23_cs_035_3",
       question: "The purchasing director's concern that a supplier delay could stop an entire production cell illustrates which major JIT disadvantage?",
       options: ["Excess warehouse space", "Exposure to supply-chain disruption because inventory buffers are reduced", "Increased obsolete inventory", "Higher traditional receiving paperwork"],
       answer: 1,
       reason: "JIT deliberately reduces inventory buffers. Therefore, supply interruptions, late deliveries or supplier quality problems can have a more immediate operational impact."
     },
     {
-      question_id: "AI_c23_cs_006_4",
+      question_id: "AI_c23_cs_035_4",
       question: "The purchasing department's argument that the supplier's low price justified continuing the relationship is weakest because:",
       options: ["JIT evaluates only supplier distance", "JIT requires suppliers to be reliable in quality and delivery, not merely cheap", "JIT eliminates suppliers entirely", "Purchase price has no relevance under any circumstances"],
       answer: 1,
       reason: "JIT purchasing depends on reliable suppliers capable of delivering the required quantity, quality and timing. A low purchase price may be outweighed by disruption, defects, inspection and rework costs."
     },
     {
-      question_id: "AI_c23_cs_006_5",
+      question_id: "AI_c23_cs_035_5",
       question: "Which combination best explains why Vertex should treat the accounting change and operational JIT implementation as interconnected?",
       options: ["Backflush accounting can work effectively only when production reporting and operational processes are reliable", "Accounting always determines supplier quality", "JIT eliminates the need for operational controls", "Backflush accounting automatically guarantees zero defects"],
       answer: 0,
@@ -6258,7 +6258,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "AI_c23_cs_007",
+    case_id: "AI_c23_cs_036",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["TPM", "OEE", "Six Big Losses", "Performance Analysis", "Quality"],
@@ -6278,35 +6278,35 @@ const AICaseStudies = [
 
     questions: [
     {
-      question_id: "AI_c23_cs_007_1",
+      question_id: "AI_c23_cs_036_1",
       question: "Why was the production manager's reliance on total units produced insufficient for evaluating the machine?",
       options: ["Production quantity cannot be measured", "Total output can hide downtime, reduced speed and defective production", "OEE ignores production quantity", "Quality has no effect on machine performance"],
       answer: 1,
       reason: "OEE separates availability, performance and quality, allowing losses that are hidden within total production figures to be identified."
     },
     {
-      question_id: "AI_c23_cs_007_2",
+      question_id: "AI_c23_cs_036_2",
       question: "The repeated short interruptions caused by incorrectly positioned components are classified primarily as:",
       options: ["Equipment failure/breakdown", "Setup and adjustment", "Idling and minor stoppages", "Quality defects only"],
       answer: 2,
       reason: "Repeated short interruptions that prevent normal operation are minor stoppages, one of the performance-related six big losses."
     },
     {
-      question_id: "AI_c23_cs_007_3",
+      question_id: "AI_c23_cs_036_3",
       question: "Operators deliberately running the machine below its designed speed primarily reduces:",
       options: ["Availability", "Performance", "Quality only", "Planned production time"],
       answer: 1,
       reason: "Performance reflects the relationship between ideal cycle time and actual production during operating time. Running below ideal speed reduces performance."
     },
     {
-      question_id: "AI_c23_cs_007_4",
+      question_id: "AI_c23_cs_036_4",
       question: "Which TPM pillar is most directly represented by engineers investigating repeated stoppages and implementing small improvements to remove losses?",
       options: ["Focused Improvement", "Office TPM", "Education and Training only", "Early Management"],
       answer: 0,
       reason: "Focused Improvement uses continuous improvement techniques to identify and reduce losses, often supported by root-cause analysis and Kaizen."
     },
     {
-      question_id: "AI_c23_cs_007_5",
+      question_id: "AI_c23_cs_036_5",
       question: "If availability improves substantially but performance remains weak because the process must still be operated slowly, the most appropriate conclusion is:",
       options: ["The TPM programme has completely solved the problem", "The remaining loss is primarily associated with process speed/stability rather than machine availability", "Quality must automatically be 100%", "Inventory must be increased"],
       answer: 1,
@@ -6315,7 +6315,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "AI_c23_cs_008",
+    case_id: "AI_c23_cs_037",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["Cellular Manufacturing", "Production Flow Analysis", "Machine-Part Families", "Flexibility"],
@@ -6335,35 +6335,35 @@ const AICaseStudies = [
 
     questions: [
     {
-      question_id: "AI_c23_cs_008_1",
+      question_id: "AI_c23_cs_037_1",
       question: "Why did Beta's existing functional layout contribute to long flow distances?",
       options: ["Similar machines were concentrated together rather than arranged according to product flow", "Each product used only one machine", "There was no production process", "All machines were automatically connected"],
       answer: 0,
       reason: "In a functional layout, similar machines are grouped by function. A product requiring several different processes therefore travels between departments."
     },
     {
-      question_id: "AI_c23_cs_008_2",
+      question_id: "AI_c23_cs_037_2",
       question: "What was the purpose of the machine-part incidence matrix in the case?",
       options: ["To calculate employee salaries", "To identify relationships between parts and machines for forming manufacturing families/cells", "To determine customer selling prices", "To calculate inventory holding cost only"],
       answer: 1,
       reason: "Production flow analysis and clustering examine which parts use which machines so that related parts and equipment can be grouped into cells."
     },
     {
-      question_id: "AI_c23_cs_008_3",
+      question_id: "AI_c23_cs_037_3",
       question: "The machine appearing in several otherwise distinct groups is an example of what practical difficulty?",
       options: ["Exceptional element/shared machine problem", "Perfect one-piece flow", "Zero inventory", "Standard costing variance"],
       answer: 0,
       reason: "Exceptional machines or elements can prevent completely independent cells because certain parts require equipment outside their primary family."
     },
     {
-      question_id: "AI_c23_cs_008_4",
+      question_id: "AI_c23_cs_037_4",
       question: "Why did management retain limited shared resources instead of forcing every operation into a separate cell?",
       options: ["Cellular manufacturing requires every machine to be duplicated", "Exceptional operations and bottleneck/resource constraints can make complete cell independence impractical", "Cells cannot contain operators", "Functional layouts always have lower flow time"],
       answer: 1,
       reason: "Exceptional elements, bottleneck machines, varying demand and resource constraints can make complete cellular separation impractical or uneconomic."
     },
     {
-      question_id: "AI_c23_cs_008_5",
+      question_id: "AI_c23_cs_037_5",
       question: "What is the key limitation illustrated by Beta's changing product mix?",
       options: ["Cellular manufacturing can reduce flexibility if demand and product mix change significantly", "Cellular manufacturing always increases inventory", "Cells eliminate the need for employee training", "Cellular manufacturing prevents defect detection"],
       answer: 0,
@@ -6372,7 +6372,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "AI_c23_cs_009",
+    case_id: "AI_c23_cs_038",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["Six Sigma", "DMAIC", "DMADV", "Process Innovation", "Lean Six Sigma"],
@@ -6392,35 +6392,35 @@ const AICaseStudies = [
 
     questions: [
     {
-      question_id: "AI_c23_cs_009_1",
+      question_id: "AI_c23_cs_038_1",
       question: "Why was DMAIC appropriate for the existing loan-processing project?",
       options: ["The bank was improving an existing process", "The bank was creating a completely new product", "Customer behaviour was irrelevant", "No process measurements were available"],
       answer: 0,
       reason: "DMAIC is designed for continuous improvement of existing processes. The bank measured and improved an already operating loan process."
     },
     {
-      question_id: "AI_c23_cs_009_2",
+      question_id: "AI_c23_cs_038_2",
       question: "Which fact most strongly supports using DMADV for the proposed real-time lending service?",
       options: ["The existing process already operates", "The new service and associated processes do not yet exist and require design", "The bank wants to calculate existing defects", "The bank is only reducing processing time"],
       answer: 1,
       reason: "DMADV is appropriate when developing a new product or process, particularly where existing processes cannot simply be improved to meet the required design."
     },
     {
-      question_id: "AI_c23_cs_009_3",
+      question_id: "AI_c23_cs_038_3",
       question: "The discovery that inconsistent checking procedures, rather than technology alone, caused much of the delay demonstrates the importance of which DMAIC stage?",
       options: ["Define", "Measure", "Analyse", "Control"],
       answer: 2,
       reason: "The Analyse stage examines collected data to identify root causes of process problems."
     },
     {
-      question_id: "AI_c23_cs_009_4",
+      question_id: "AI_c23_cs_038_4",
       question: "The common checklist and elimination of duplicate data entry were primarily actions taken during:",
       options: ["Improve", "Define", "Measure", "Control"],
       answer: 0,
       reason: "These were corrective actions implemented after the causes of delay and errors had been identified."
     },
     {
-      question_id: "AI_c23_cs_009_5",
+      question_id: "AI_c23_cs_038_5",
       question: "Why could Lean Six Sigma be particularly relevant to the bank's process improvement effort?",
       options: ["It focuses only on purchasing", "It combines defect reduction with elimination of process waste and improved speed", "It requires all processes to be replaced", "It eliminates the need for customer feedback"],
       answer: 1,
@@ -6429,7 +6429,7 @@ const AICaseStudies = [
   },
 
   {
-    case_id: "AI_c23_cs_010",
+    case_id: "AI_c23_cs_039",
     difficulty: "hard",
     case_chapter: "Chapter3",
     case_topic: ["Process Innovation", "BPR", "Lean", "Six Sigma", "Innovation Strategy"],
@@ -6451,35 +6451,35 @@ const AICaseStudies = [
 
     questions: [
     {
-      question_id: "AI_c23_cs_010_1",
+      question_id: "AI_c23_cs_039_1",
       question: "Omega's earlier rearrangement of tools and work sequences without changing the fundamental production architecture is most consistent with:",
       options: ["Incremental Lean/Kaizen improvement", "Complete process innovation", "DMADV", "Elimination of the production process"],
       answer: 0,
       reason: "The company made small, incremental improvements to the existing process without fundamentally redesigning the production system, which is consistent with Kaizen/Lean improvement."
     },
     {
-      question_id: "AI_c23_cs_010_2",
+      question_id: "AI_c23_cs_039_2",
       question: "If Omega merely automates repetitive activities on the existing continuous production line while retaining the basic process structure, this would most closely resemble:",
       options: ["Improvement/re-engineering of the existing process", "A completely new process by definition", "Kaizen costing only", "Six Sigma measurement only"],
       answer: 0,
       reason: "Automating or streamlining activities within an existing process structure is closer to improving/re-engineering the existing process than implementing an entirely new production method."
     },
     {
-      question_id: "AI_c23_cs_010_3",
+      question_id: "AI_c23_cs_039_3",
       question: "Why could redesigning the production system around specialist teams and flexible equipment qualify as process innovation?",
       options: ["It merely changes the selling price", "It potentially implements a significantly different production method and structure", "It is only a seasonal production adjustment", "It involves no change in production technique"],
       answer: 1,
       reason: "Process innovation involves implementing a new or significantly improved production or delivery method, including significant changes in techniques, equipment or software."
     },
     {
-      question_id: "AI_c23_cs_010_4",
+      question_id: "AI_c23_cs_039_4",
       question: "The quality team's focus on incorrect assembly instructions and inconsistent testing procedures is most closely associated with which Six Sigma objective?",
       options: ["Reducing defects and process variation", "Increasing unnecessary inventory", "Increasing transportation", "Maximising production batch size"],
       answer: 0,
       reason: "Six Sigma focuses on identifying and eliminating defects and reducing process variation through data-driven analysis and improvement."
     },
     {
-      question_id: "AI_c23_cs_010_5",
+      question_id: "AI_c23_cs_039_5",
       question: "Which proposed change would NOT automatically qualify as process innovation under the facts given?",
       options: ["Implementing a substantially new production method", "Introducing significantly different production equipment and techniques", "Replacing an old machine with a similar machine without significant process change", "Implementing a significantly improved delivery method using new technology"],
       answer: 2,
@@ -8354,18 +8354,18 @@ const AICaseStudies = [
       answer: 1,
       reason: "4,000 × ₹2,500 = ₹1 crore. Therefore the correct option is ₹1.00 crore, which is option 1."
     },
-    {
-      question_id: "SCM_C4_MED_002_5",
-      question: "What is the approximate total life-cycle profit based on the information provided?",
-      options: [
+          {
+        question_id: "SCM_C4_MED_002_5",
+        question: "What is the approximate total life-cycle profit based on the information provided?",
+        options: [
+        "₹3.56 crore",
         "₹4.60 crore",
         "₹5.00 crore",
-        "₹5.40 crore",
-        "₹6.00 crore"
+        "₹5.40 crore"
       ],
-      answer: 0,
-      reason: "Revenue = 4,000 × ₹45,000 = ₹18 crore. Costs = ₹12 lakh + ₹11.2 crore + ₹1.6 crore + ₹1 crore + ₹32 lakh = ₹14.44 crore. Profit = ₹18 crore − ₹14.44 crore = ₹3.56 crore. None of the listed options matches; the correct figure should be ₹3.56 crore. This question should therefore be corrected before use."
-    }]
+        answer: 0,
+        reason: "Revenue = 4,000 × ₹45,000 = ₹18 crore. Total costs = ₹12 lakh + ₹11.2 crore + ₹1.6 crore + ₹1 crore + ₹32 lakh = ₹14.44 crore. Life-cycle profit = ₹18 crore − ₹14.44 crore = ₹3.56 crore."
+      }]
   },
   // =========================================================
   // MEDIUM CASE 3 — TOC
@@ -9001,18 +9001,18 @@ const AICaseStudies = [
       answer: 2,
       reason: "Saleable output = 16,500 tonnes ÷ 20,000 tonnes × 100 = 82.5%."
     },
-    {
-      question_id: "SCM_C4_HARD_009_2",
-      question: "What is the purchase value of the total 3,500 tonnes of material that did not become saleable product?",
-      options: [
-        "₹1.00 crore",
-        "₹1.20 crore",
-        "₹1.40 crore",
-        "₹1.60 crore"
+          {
+        question_id: "SCM_C4_HARD_009_2",
+        question: "What is the purchase value of the total 3,500 tonnes of material that did not become saleable product?",
+        options: [
+        "₹10.00 crore",
+        "₹12.00 crore",
+        "₹14.00 crore",
+        "₹16.00 crore"
       ],
-      answer: 2,
-      reason: "3,500 tonnes × ₹40,000 = ₹14 crore. Therefore none of the listed options is correct. The correct answer should be ₹14 crore."
-    },
+        answer: 2,
+        reason: "3,500 tonnes × ₹40,000 per tonne = ₹14,00,00,000 (₹14.00 crore)."
+      },
     {
       question_id: "SCM_C4_HARD_009_3",
       question: "Which technique specifically records material losses at different stages together with quantities and values?",
@@ -9725,18 +9725,18 @@ const AICaseStudies = [
       answer: 2,
       reason: "Gross module saving = ₹8,000 − ₹6,400 = ₹1,600. Less additional testing cost of ₹300 gives net saving of ₹1,300. Therefore option 0 is correct."
     },
-    {
-      question_id: "SCM_C4_HARD_011_5",
-      question: "Ignoring the electronic-module change for a moment, what is the combined net saving from the casing change and removal of the cosmetic feature?",
-      options: [
+          {
+        question_id: "SCM_C4_HARD_011_5",
+        question: "Ignoring the electronic-module change for a moment, what is the combined net saving from the casing change and removal of the cosmetic feature?",
+        options: [
         "₹900",
         "₹1,000",
-        "₹1,100",
+        "₹1,900",
         "₹2,100"
       ],
-      answer: 2,
-      reason: "Casing saving = ₹1,200 − ₹200 additional packaging = ₹1,000. Removing cosmetic feature saves ₹900. Combined saving = ₹1,900. Therefore the correct option is not listed; the option set should be corrected to include ₹1,900."
-    }]
+        answer: 2,
+        reason: "Casing saving (₹1,200 − ₹200 = ₹1,000) + cosmetic feature removal saving (₹900) = ₹1,900 combined net saving."
+      }]
   },
   // ============================================================
   // HARD CASE 12
@@ -9928,18 +9928,18 @@ const AICaseStudies = [
       answer: 1,
       reason: "6,000 × ₹5.10 lakh = ₹306 crore."
     },
-    {
-      question_id: "SCM_C4_HARD_013_3",
-      question: "What is the total per-unit saving of Design B over Design A from manufacturing, warranty and end-of-life costs?",
-      options: [
+          {
+        question_id: "SCM_C4_HARD_013_3",
+        question: "What is the total per-unit saving of Design B over Design A from manufacturing, warranty and end-of-life costs?",
+        options: [
         "₹0.85 lakh",
-        "₹1.00 lakh",
+        "₹0.95 lakh",
         "₹1.15 lakh",
         "₹1.25 lakh"
       ],
-      answer: 2,
-      reason: "Manufacturing saving = ₹5.80 − ₹5.10 = ₹0.70 lakh. Warranty saving = ₹0.40 − ₹0.25 = ₹0.15 lakh. End-of-life saving = ₹0.20 − ₹0.10 = ₹0.10 lakh. Total = ₹0.95 lakh. Therefore the correct option is not listed."
-    },
+        answer: 1,
+        reason: "Manufacturing saving (₹0.70 lakh) + warranty saving (₹0.15 lakh) + end-of-life saving (₹0.10 lakh) = ₹0.95 lakh total saving per unit."
+      },
     {
       question_id: "SCM_C4_HARD_013_4",
       question: "Which additional consideration is particularly important when comparing the two designs using life cycle costing?",
@@ -20385,7 +20385,7 @@ const AICaseStudies = [
     }]
   },
   {
-    case_id: "SRM_C6_HARD_021",
+    case_id: "SRM_C6_HARD_021b",
     difficulty: "hard",
     case_chapter: "Chapter6",
     case_topic: [
@@ -20439,7 +20439,7 @@ const AICaseStudies = [
   `,
     questions: [
     {
-      question_id: "SRM_C6_HARD_021_1",
+      question_id: "SRM_C6_HARD_021b_1",
       question: "At the base selling price of ₹1,20,000, what is the contribution per unit before fixed costs?",
       options: [
         "₹32,000",
@@ -20451,7 +20451,7 @@ const AICaseStudies = [
       reason: "Contribution = ₹1,20,000 − ₹72,000 − ₹8,000 = ₹40,000."
     },
     {
-      question_id: "SRM_C6_HARD_021_2",
+      question_id: "SRM_C6_HARD_021b_2",
       question: "What is the total contribution at the base price and expected demand?",
       options: [
         "₹12 crore",
@@ -20475,7 +20475,7 @@ const AICaseStudies = [
       reason: "Contribution per unit = ₹1,30,000 − ₹72,000 − ₹8,000 = ₹50,000. Therefore total contribution = 3,200 × ₹50,000 = ₹16 crore."
     },
     {
-      question_id: "SRM_C6_HARD_021_4",
+      question_id: "SRM_C6_HARD_021b_4",
       question: "At ₹1,10,000 and demand of 5,000 units, what is total contribution?",
       options: [
         "₹12 crore",
@@ -20487,7 +20487,7 @@ const AICaseStudies = [
       reason: "Contribution per unit = ₹1,10,000 − ₹72,000 − ₹8,000 = ₹30,000. Total contribution = ₹30,000 × 5,000 = ₹15 crore."
     },
     {
-      question_id: "SRM_C6_HARD_021_5",
+      question_id: "SRM_C6_HARD_021b_5",
       question: "What is the most appropriate conclusion from the three demand-price experiments before considering fixed costs?",
       options: [
         "The highest price necessarily gives the lowest total contribution",
@@ -20500,7 +20500,7 @@ const AICaseStudies = [
     }]
   },
   {
-    case_id: "SRM_C6_HARD_022",
+    case_id: "SRM_C6_HARD_022b",
     difficulty: "hard",
     case_chapter: "Chapter6",
     case_topic: [
@@ -20541,7 +20541,7 @@ const AICaseStudies = [
   `,
     questions: [
     {
-      question_id: "SRM_C6_HARD_022_1",
+      question_id: "SRM_C6_HARD_022b_1",
       question: "What is the relevant incremental cost per unit for the special order, assuming sufficient spare capacity?",
       options: [
         "₹590",
@@ -20553,7 +20553,7 @@ const AICaseStudies = [
       reason: "Relevant cost = ₹320 + ₹180 + ₹90 + ₹25 = ₹615. Allocated fixed overhead is unchanged and therefore irrelevant."
     },
     {
-      question_id: "SRM_C6_HARD_022_2",
+      question_id: "SRM_C6_HARD_022b_2",
       question: "What is the contribution per unit from accepting the special order?",
       options: [
         "₹125",
@@ -20565,7 +20565,7 @@ const AICaseStudies = [
       reason: "Contribution = ₹780 − ₹615 = ₹165."
     },
     {
-      question_id: "SRM_C6_HARD_022_3",
+      question_id: "SRM_C6_HARD_022b_3",
       question: "What total short-term contribution would the order generate?",
       options: [
         "₹49,50,000",
@@ -20577,7 +20577,7 @@ const AICaseStudies = [
       reason: "30,000 × ₹165 = ₹49,50,000."
     },
     {
-      question_id: "SRM_C6_HARD_022_4",
+      question_id: "SRM_C6_HARD_022b_4",
       question: "Why can selling below total cost still be rational during a recession?",
       options: [
         "Because fixed costs disappear immediately",
@@ -20589,7 +20589,7 @@ const AICaseStudies = [
       reason: "When capacity is idle, a price above relevant marginal cost can generate positive contribution and help absorb fixed costs."
     },
     {
-      question_id: "SRM_C6_HARD_022_5",
+      question_id: "SRM_C6_HARD_022b_5",
       question: "Which factor presents the most significant long-term pricing risk in this case?",
       options: [
         "The special order uses idle capacity",
@@ -20602,7 +20602,7 @@ const AICaseStudies = [
     }]
   },
   {
-    case_id: "SRM_C6_HARD_023",
+    case_id: "SRM_C6_HARD_023b",
     difficulty: "hard",
     case_chapter: "Chapter6",
     case_topic: [
@@ -20641,7 +20641,7 @@ const AICaseStudies = [
   `,
     questions: [
     {
-      question_id: "SRM_C6_HARD_023_1",
+      question_id: "SRM_C6_HARD_023b_1",
       question: "Before considering the proposed subsidy, what is FreshKart's contribution per basket at the campaign selling price?",
       options: [
         "₹30",
@@ -20653,7 +20653,7 @@ const AICaseStudies = [
       reason: "Contribution before subsidy = ₹360 − ₹300 = ₹60."
     },
     {
-      question_id: "SRM_C6_HARD_023_2",
+      question_id: "SRM_C6_HARD_023b_2",
       question: "After the ₹90 subsidy, what is the effective contribution per basket?",
       options: [
         "₹30 loss",
@@ -20665,7 +20665,7 @@ const AICaseStudies = [
       reason: "Effective contribution = ₹60 − ₹90 = negative ₹30 per basket."
     },
     {
-      question_id: "SRM_C6_HARD_023_3",
+      question_id: "SRM_C6_HARD_023b_3",
       question: "What is the total campaign loss attributable to the ₹30 loss per basket over 18 months at 2,00,000 baskets per month?",
       options: [
         "₹10.8 crore",
@@ -20677,7 +20677,7 @@ const AICaseStudies = [
       reason: "Monthly loss = 2,00,000 × ₹30 = ₹60,00,000. Over 18 months = ₹10.80 crore."
     },
     {
-      question_id: "SRM_C6_HARD_023_4",
+      question_id: "SRM_C6_HARD_023b_4",
       question: "Which fact most strongly distinguishes the proposed strategy from ordinary penetration pricing?",
       options: [
         "The company wants to increase market share",
@@ -20689,7 +20689,7 @@ const AICaseStudies = [
       reason: "Penetration pricing uses low prices to enter or develop a mass market, whereas deliberate below-cost pricing intended to eliminate competitors is associated with predatory pricing."
     },
     {
-      question_id: "SRM_C6_HARD_023_5",
+      question_id: "SRM_C6_HARD_023b_5",
       question: "Which non-financial consideration is most directly relevant to the board's concern?",
       options: [
         "Historical depreciation",
@@ -20702,7 +20702,7 @@ const AICaseStudies = [
     }]
   },
   {
-    case_id: "SRM_C6_HARD_024",
+    case_id: "SRM_C6_HARD_024b",
     difficulty: "hard",
     case_chapter: "Chapter6",
     case_topic: [
@@ -20742,7 +20742,7 @@ const AICaseStudies = [
   `,
     questions: [
     {
-      question_id: "SRM_C6_HARD_024_1",
+      question_id: "SRM_C6_HARD_024b_1",
       question: "What is the contribution per unit of Alpha?",
       options: [
         "₹600",
@@ -20754,7 +20754,7 @@ const AICaseStudies = [
       reason: "Contribution = ₹2,000 − ₹1,200 = ₹800."
     },
     {
-      question_id: "SRM_C6_HARD_024_2",
+      question_id: "SRM_C6_HARD_024b_2",
       question: "Which product has the highest contribution per assembly hour?",
       options: [
         "Alpha",
@@ -20778,7 +20778,7 @@ const AICaseStudies = [
       reason: "Alpha contribution/hour = ₹800 ÷ 2 = ₹400. Beta = ₹1,000 ÷ 2.5 = ₹400. Gamma = ₹1,200 ÷ 4 = ₹300. Alpha and Beta jointly rank above Gamma."
     },
     {
-      question_id: "SRM_C6_HARD_024_3",
+      question_id: "SRM_C6_HARD_024b_3",
       question: "If the company produces the full maximum demand of Alpha, how many assembly hours remain?",
       options: [
         "1,000 hours",
@@ -20790,7 +20790,7 @@ const AICaseStudies = [
       reason: "Alpha requires 2,000 × 2 = 4,000 hours. Available hours = 6,000. Remaining = 2,000 hours."
     },
     {
-      question_id: "SRM_C6_HARD_024_4",
+      question_id: "SRM_C6_HARD_024b_4",
       question: "Using contribution per assembly hour and assuming demand limits must be respected, which product should be considered next after Alpha?",
       options: [
         "Beta",
@@ -20802,7 +20802,7 @@ const AICaseStudies = [
       reason: "Alpha and Beta both generate ₹400 contribution per assembly hour. Gamma generates only ₹300."
     },
     {
-      question_id: "SRM_C6_HARD_024_5",
+      question_id: "SRM_C6_HARD_024b_5",
       question: "Charging different prices according to whether a customer orders early or late is most closely associated with which form of price adaptation?",
       options: [
         "Time differential pricing",
@@ -20815,7 +20815,7 @@ const AICaseStudies = [
     }]
   },
   {
-    case_id: "SRM_C6_HARD_025",
+    case_id: "SRM_C6_HARD_025b",
     difficulty: "hard",
     case_chapter: "Chapter6",
     case_topic: [
@@ -20869,7 +20869,7 @@ const AICaseStudies = [
   `,
     questions: [
     {
-      question_id: "SRM_C6_HARD_025_1",
+      question_id: "SRM_C6_HARD_025b_1",
       question: "Which feature should management regard as essential before considering optional customer delight features?",
       options: [
         "Customisable notification sounds",
@@ -20881,7 +20881,7 @@ const AICaseStudies = [
       reason: "A threshold attribute is a must-be quality. Its absence causes dissatisfaction even if customers may not explicitly mention it."
     },
     {
-      question_id: "SRM_C6_HARD_025_2",
+      question_id: "SRM_C6_HARD_025b_2",
       question: "Which feature most directly represents a performance attribute?",
       options: [
         "Battery backup duration",
@@ -20893,7 +20893,7 @@ const AICaseStudies = [
       reason: "Performance attributes create proportionate increases in satisfaction as performance improves."
     },
     {
-      question_id: "SRM_C6_HARD_025_3",
+      question_id: "SRM_C6_HARD_025b_3",
       question: "Which feature is an excitement attribute?",
       options: [
         "Basic door-lock reliability",
@@ -20905,7 +20905,7 @@ const AICaseStudies = [
       reason: "The emergency voice assistant is not normally expected but produces substantial satisfaction when provided, making it an excitement/delight attribute."
     },
     {
-      question_id: "SRM_C6_HARD_025_4",
+      question_id: "SRM_C6_HARD_025b_4",
       question: "If LuminaSmart funds the threshold, performance and excitement features, what total development cost will be incurred?",
       options: [
         "₹39 lakh",
@@ -20917,7 +20917,7 @@ const AICaseStudies = [
       reason: "₹18 lakh + ₹12 lakh + ₹15 lakh = ₹45 lakh, exactly equal to the available development budget."
     },
     {
-      question_id: "SRM_C6_HARD_025_5",
+      question_id: "SRM_C6_HARD_025b_5",
       question: "Which feature should generally be excluded from the first release when the objective is to maximise customer value under the stated constraints?",
       options: [
         "Reliable basic door-lock operation",
@@ -31210,18 +31210,18 @@ const AICaseStudies = [
       answer: 2,
       reason: "150,000 units × 2.5 kg = 375,000 kg."
     },
-    {
-      question_id: "SPM_C7_HARD_047_4",
-      question: "What is the productivity saving measured at the current-year polymer price?",
-      options: [
+          {
+        question_id: "SPM_C7_HARD_047_4",
+        question: "What is the productivity saving measured at the current-year polymer price?",
+        options: [
         "₹27.00 lakh F",
         "₹30.00 lakh F",
         "₹33.75 lakh F",
-        "₹37.50 lakh F"
+        "₹40.50 lakh F"
       ],
-      answer: 2,
-      reason: "Actual input = 150,000 × 2.2 = 330,000 kg. Saving = 45,000 kg × ₹90 = ₹40.50 lakh F. Therefore none of the first three options. The correct option should be ₹40.50 lakh."
-    },
+        answer: 3,
+        reason: "Actual input = 150,000 × 2.2 = 330,000 kg. Productivity saving = 45,000 kg × ₹90 = ₹40.50 lakh F."
+      },
     {
       question_id: "SPM_C7_HARD_047_5",
       question: "Which statement best describes the purpose of strategic profitability analysis?",
@@ -31435,18 +31435,18 @@ const AICaseStudies = [
       answer: 1,
       reason: "80 deliveries × ₹2,500 = ₹2,00,000 = ₹2.00 lakh."
     },
-    {
-      question_id: "SPM_C7_HARD_049_3",
-      question: "What is the total Activity Based Budget for the month?",
-      options: [
+          {
+        question_id: "SPM_C7_HARD_049_3",
+        question: "What is the total Activity Based Budget for the month?",
+        options: [
         "₹7.90 lakh",
-        "₹8.30 lakh",
+        "₹8.28 lakh",
         "₹8.70 lakh",
         "₹9.10 lakh"
       ],
-      answer: 2,
-      reason: "Purchase orders ₹1.20 lakh + deliveries ₹2.00 lakh + shelf stocking ₹1.08 lakh + customer support ₹4.00 lakh = ₹8.28 lakh. Therefore the correct option should be ₹8.28 lakh."
-    },
+        answer: 1,
+        reason: "Total Activity Based Budget = ₹1.20 lakh + ₹2.00 lakh + ₹1.08 lakh + ₹4.00 lakh = ₹8.28 lakh."
+      },
     {
       question_id: "SPM_C7_HARD_049_4",
       question: "If every activity cost rate falls by 1% next month and activity levels remain unchanged, what will happen to the total activity-based budget?",
@@ -32559,18 +32559,18 @@ const AICaseStudies = [
       answer: 1,
       reason: "300 × ₹500 = ₹1,50,000 = ₹1.50 lakh."
     },
-    {
-      question_id: "SPM_C7_HARD_058_4",
-      question: "What is the total Activity Based Budget for the month?",
-      options: [
+          {
+        question_id: "SPM_C7_HARD_058_4",
+        question: "What is the total Activity Based Budget for the month?",
+        options: [
         "₹6.50 lakh",
-        "₹7.00 lakh",
         "₹7.50 lakh",
-        "₹8.00 lakh"
+        "₹9.10 lakh",
+        "₹9.80 lakh"
       ],
-      answer: 2,
-      reason: "₹1.20 lakh + ₹2.40 lakh + ₹1.50 lakh + ₹4.00 lakh = ₹9.10 lakh. Therefore none of the first three options is correct; the correct option should be ₹9.10 lakh."
-    },
+        answer: 2,
+        reason: "Total Activity Based Budget = ₹1.20 lakh + ₹2.40 lakh + ₹1.50 lakh + ₹4.00 lakh = ₹9.10 lakh."
+      },
     {
       question_id: "SPM_C7_HARD_058_5",
       question: "If every activity rate falls by 2% and activity volumes remain unchanged, what will be the new total budget?",
@@ -37755,14 +37755,19 @@ const AICaseStudies = [
             answer: 0,
             reason: "Project RI = ₹4.2 crore − (12% × ₹30 crore) = ₹4.2 crore − ₹3.6 crore = ₹0.6 crore. Therefore the correct answer is ₹0.60 crore; the provided option set contains an inconsistency."
         },
-        {
-            question_id: "spm_ch9_016_4",
-            chapter_name: ["Residual Income"],
-            question: "What is Division C's current residual income?",
-            options: ["₹1.20 crore", "₹2.40 crore", "₹3.20 crore", "₹4.80 crore"],
-            answer: 1,
-            reason: "RI = ₹8 crore − (12% × ₹80 crore) = ₹8 crore − ₹9.6 crore = −₹1.6 crore. Thus the mathematically correct answer is negative ₹1.6 crore, and none of the listed options is correct."
-        },
+              {
+        question_id: "spm_ch9_016_4",
+        chapter_name: ["Residual Income"],
+        question: "What is Division C's current residual income?",
+        options: [
+        "-₹1.60 crore",
+        "₹1.20 crore",
+        "₹2.40 crore",
+        "₹3.20 crore"
+      ],
+        answer: 0,
+        reason: "Residual Income = ₹8 crore − (12% × ₹80 crore) = ₹8 crore − ₹9.6 crore = -₹1.60 crore."
+      },
         {
             question_id: "spm_ch9_016_5",
             chapter_name: ["Performance Evaluation"],
@@ -37951,14 +37956,19 @@ const AICaseStudies = [
             answer: 1,
             reason: "Project RI = ₹12 crore − (10% × ₹100 crore) = ₹2 crore."
         },
-        {
-            question_id: "spm_ch9_020_4",
-            chapter_name: ["EVA", "WACC"],
-            question: "What is the WACC of National Precision Systems based on the stated capital structure?",
-            options: ["9.20%", "10.08%", "11.20%", "12.40%"],
-            answer: 2,
-            reason: "WACC = 60% × 14% + 40% × 7% × 70% = 8.40% + 1.96% = 10.36%. Therefore the correct mathematical result is 10.36%; none of the listed options matches exactly."
-        },
+              {
+        question_id: "spm_ch9_020_4",
+        chapter_name: ["EVA", "WACC"],
+        question: "What is the WACC of National Precision Systems based on the stated capital structure?",
+        options: [
+        "9.20%",
+        "10.36%",
+        "11.20%",
+        "12.40%"
+      ],
+        answer: 1,
+        reason: "WACC = 60% × 14% + 40% × 7% × (1 − 0.30) = 8.40% + 1.96% = 10.36%."
+      },
         {
             question_id: "spm_ch9_020_5",
             chapter_name: ["Balanced Scorecard", "Short-termism"],
@@ -38278,22 +38288,32 @@ const AICaseStudies = [
             answer: 1,
             reason: "NOPAT = Operating profit before tax × (1 − tax rate) = ₹160 crore × 70% = ₹112 crore."
         },
-        {
-            question_id: "spm_ch9_027_2",
-            chapter_name: ["WACC"],
-            question: "What is ZenCore's WACC based on the stated market-value capital structure?",
-            options: ["10.36%", "11.08%", "11.72%", "12.40%"],
-            answer: 2,
-            reason: "WACC = 70% × 14% + 30% × 8% × 70% = 9.80% + 1.68% = 11.48%. Therefore the mathematically correct WACC is 11.48%; none of the listed options matches exactly."
-        },
-        {
-            question_id: "spm_ch9_027_3",
-            chapter_name: ["EVA"],
-            question: "Using the basic NOPAT of ₹112 crore and opening invested capital of ₹1,000 crore, what is EVA before EVA-specific adjustments, using the correctly calculated WACC of 11.48%?",
-            options: ["₹0.20 crore", "₹2.00 crore", "₹4.00 crore", "₹6.80 crore"],
-            answer: 1,
-            reason: "Capital charge = ₹1,000 crore × 11.48% = ₹114.8 crore. EVA = ₹112 crore − ₹114.8 crore = −₹2.8 crore. Therefore the correct result is negative ₹2.8 crore and none of the listed options is correct."
-        },
+              {
+        question_id: "spm_ch9_027_2",
+        chapter_name: ["WACC"],
+        question: "What is ZenCore's WACC based on the stated market-value capital structure?",
+        options: [
+        "10.36%",
+        "11.08%",
+        "11.48%",
+        "12.40%"
+      ],
+        answer: 2,
+        reason: "WACC = 70% × 14% + 30% × 8% × (1 − 0.30) = 9.80% + 1.68% = 11.48%."
+      },
+              {
+        question_id: "spm_ch9_027_3",
+        chapter_name: ["EVA"],
+        question: "Using the basic NOPAT of ₹112 crore and opening invested capital of ₹1,000 crore, what is EVA before EVA-specific adjustments, using the correctly calculated WACC of 11.48%?",
+        options: [
+        "-₹2.80 crore",
+        "₹0.20 crore",
+        "₹2.00 crore",
+        "₹4.00 crore"
+      ],
+        answer: 0,
+        reason: "Capital charge = ₹1,000 crore × 11.48% = ₹114.80 crore. EVA = ₹112 crore − ₹114.80 crore = -₹2.80 crore."
+      },
         {
             question_id: "spm_ch9_027_4",
             chapter_name: ["EVA", "Depreciation"],
@@ -38441,14 +38461,19 @@ const AICaseStudies = [
             answer: 2,
             reason: "Project RI = ₹10.4 crore − (10% × ₹80 crore) = ₹10.4 crore − ₹8 crore = ₹2.4 crore."
         },
-        {
-            question_id: "spm_ch9_030_4",
-            chapter_name: ["EVA", "WACC"],
-            question: "What is NovaMed's WACC based on the information provided?",
-            options: ["10.05%", "10.36%", "11.16%", "12.40%"],
-            answer: 1,
-            reason: "WACC = 65% × 14% + 35% × 8% × 70% = 9.10% + 1.96% = 11.06%. Therefore the mathematically correct WACC is 11.06%; none of the listed options matches exactly."
-        },
+              {
+        question_id: "spm_ch9_030_4",
+        chapter_name: ["EVA", "WACC"],
+        question: "What is NovaMed's WACC based on the information provided?",
+        options: [
+        "10.05%",
+        "10.36%",
+        "11.06%",
+        "11.85%"
+      ],
+        answer: 2,
+        reason: "WACC = 65% × 14% + 35% × 8% × (1 − 0.30) = 9.10% + 1.96% = 11.06%."
+      },
         {
             question_id: "spm_ch9_030_5",
             chapter_name: ["Balanced Scorecard", "Short-termism", "Quality"],
@@ -38768,22 +38793,32 @@ const AICaseStudies = [
             answer: 1,
             reason: "NOPAT = Operating profit before tax × (1 − tax rate) = ₹125 crore × 70% = ₹87.50 crore."
         },
-        {
-            question_id: "spm_ch9_037_2",
-            chapter_name: ["WACC"],
-            question: "What is Atlas's WACC based on the stated market-value proportions?",
-            options: ["9.24%", "10.24%", "11.24%", "12.24%"],
-            answer: 2,
-            reason: "WACC = 60% × 15% + 40% × 7% × 70% = 9.00% + 1.96% = 10.96%. Therefore the mathematically correct answer is 10.96%; none of the listed options matches exactly."
-        },
-        {
-            question_id: "spm_ch9_037_3",
-            chapter_name: ["EVA"],
-            question: "Using basic NOPAT of ₹87.50 crore and opening invested capital of ₹800 crore, what is the basic EVA before other EVA adjustments?",
-            options: ["₹0.00 crore", "₹1.82 crore", "₹4.50 crore", "₹7.50 crore"],
-            answer: 0,
-            reason: "Capital charge = ₹800 crore × 10.96% = ₹87.68 crore. Basic EVA = ₹87.50 − ₹87.68 = −₹0.18 crore. Therefore the correct result is approximately negative ₹0.18 crore and none of the listed options matches."
-        },
+              {
+        question_id: "spm_ch9_037_2",
+        chapter_name: ["WACC"],
+        question: "What is Atlas's WACC based on the stated market-value proportions?",
+        options: [
+        "9.80%",
+        "10.40%",
+        "10.96%",
+        "12.10%"
+      ],
+        answer: 2,
+        reason: "WACC = 60% × 15% + 40% × 7% × (1 − 0.30) = 9.00% + 1.96% = 10.96%."
+      },
+              {
+        question_id: "spm_ch9_037_3",
+        chapter_name: ["EVA"],
+        question: "Using basic NOPAT of ₹87.50 crore and opening invested capital of ₹800 crore, what is the basic EVA before other EVA adjustments?",
+        options: [
+        "-₹0.18 crore",
+        "₹0.00 crore",
+        "₹1.50 crore",
+        "₹2.80 crore"
+      ],
+        answer: 0,
+        reason: "Capital charge = ₹800 crore × 10.96% = ₹87.68 crore. Basic EVA = ₹87.50 crore − ₹87.68 crore = -₹0.18 crore."
+      },
         {
             question_id: "spm_ch9_037_4",
             chapter_name: ["EVA", "Depreciation"],
@@ -38923,14 +38958,19 @@ const AICaseStudies = [
             answer: 1,
             reason: "Project RI = ₹13 crore − (10% × ₹100 crore) = ₹13 crore − ₹10 crore = ₹3 crore."
         },
-        {
-            question_id: "spm_ch9_040_3",
-            chapter_name: ["EVA", "WACC"],
-            question: "What is NovaSphere's WACC based on the stated market-value capital structure?",
-            options: ["10.36%", "11.06%", "11.96%", "12.40%"],
-            answer: 1,
-            reason: "WACC = 70% × 14% + 30% × 8% × 70% = 9.80% + 1.68% = 11.48%. Therefore the mathematically correct WACC is 11.48%; none of the listed options matches exactly."
-        },
+              {
+        question_id: "spm_ch9_040_3",
+        chapter_name: ["EVA", "WACC"],
+        question: "What is NovaSphere's WACC based on the stated market-value capital structure?",
+        options: [
+        "10.20%",
+        "11.48%",
+        "11.80%",
+        "12.50%"
+      ],
+        answer: 1,
+        reason: "WACC = 70% × 14% + 30% × 8% × (1 − 0.30) = 9.80% + 1.68% = 11.48%."
+      },
         {
             question_id: "spm_ch9_040_4",
             chapter_name: ["Balanced Scorecard", "Learning and Growth"],
@@ -41709,18 +41749,18 @@ const AICaseStudies = [
         answer: 2,
         reason: "P contribution = ₹90 ÷ 5 = ₹18/hour. Q = ₹90 ÷ 7 ≈ ₹12.86/hour. R = ₹90 ÷ 3 = ₹30/hour. R is highest."
       },
-      {
+            {
         question_id: "spm_ch12_006_2",
         chapter_name: ["Capacity Constraints"],
         question: "How many machine hours are required to satisfy all external demand before considering Division B's internal requirement?",
         options: [
-  "10,500 hours",
-  "12,300 hours",
-  "15,300 hours",
-  "16,200 hours"
-],
-answer: 2,
-        reason: "P: 1,200 × 5 = 6,000 hours. Q: 900 × 7 = 6,300 hours. R: 1,000 × 3 = 3,000 hours. Total = 15,300 hours. Therefore none of the listed answers is correct."
+        "10,500 hours",
+        "12,300 hours",
+        "15,300 hours",
+        "16,200 hours"
+      ],
+        answer: 2,
+        reason: "P: 1,200 × 5 = 6,000 hours. Q: 900 × 7 = 6,300 hours. R: 1,000 × 3 = 3,000 hours. Total = 15,300 hours."
       },
       {
         question_id: "spm_ch12_006_3",
@@ -44316,13 +44356,18 @@ answer: 2,
         answer: 2,
         reason: "Spare capacity = 40,000 − 27,000 = 13,000 modules."
       },
-      {
+            {
         question_id: "spm_ch12_041_2",
         chapter_name: ["Transfer Pricing", "Opportunity Cost"],
         question: "What is PCD's opportunity cost per internally transferred module, assuming the 8,000-module internal requirement can be met entirely from spare capacity?",
-        options: ["₹590", "₹680", "₹770", "₹1,120"],
+        options: [
+        "₹0",
+        "₹590",
+        "₹680",
+        "₹770"
+      ],
         answer: 0,
-        reason: "Because sufficient spare capacity exists, PCD does not sacrifice an external sale. Opportunity cost is therefore zero; the minimum relevant transfer cost is the marginal/additional outlay. Among the options, ₹590 is not the opportunity cost either, so the correct conceptual value is ₹0. The option set intentionally does not contain ₹0; therefore this question is invalid."
+        reason: "Because sufficient spare capacity exists, PCD does not sacrifice any external sales. The opportunity cost per internally transferred module is therefore ₹0."
       },
       {
         question_id: "spm_ch12_041_3",
@@ -44616,13 +44661,18 @@ answer: 2,
         answer: 2,
         reason: "P contribution ₹700 ÷ 4 = ₹175/hour; Q ₹700 ÷ 5 = ₹140/hour; R ₹750 ÷ 3 = ₹250/hour. R is highest."
       },
-      {
+            {
         question_id: "spm_ch12_047_2",
         chapter_name: ["Capacity"],
         question: "How many machine hours would be needed to satisfy all external demand?",
-        options: ["13,200 hours", "14,800 hours", "15,400 hours", "16,000 hours"],
-        answer: 2,
-        reason: "P = 1,500×4 = 6,000; Q = 1,200×5 = 6,000; R = 1,400×3 = 4,200. Total = 16,200 hours. Therefore the correct option should be 16,200; the listed options are invalid."
+        options: [
+        "13,200 hours",
+        "14,800 hours",
+        "15,400 hours",
+        "16,200 hours"
+      ],
+        answer: 3,
+        reason: "P = 1,500 × 4 = 6,000; Q = 1,200 × 5 = 6,000; R = 1,400 × 3 = 4,200. Total machine hours = 16,200 hours."
       },
       {
         question_id: "spm_ch12_047_3",
@@ -44666,13 +44716,18 @@ answer: 2,
         answer: 2,
         reason: "Spare capacity = 50,000 − 34,000 = 16,000 units. Correct answer index is 2."
       },
-      {
+            {
         question_id: "spm_ch12_048_2",
         chapter_name: ["International Transfer Pricing", "Foreign Exchange"],
         question: "What is the euro equivalent of the proposed ₹6,700 internal transfer price at ₹90 per euro?",
-        options: ["€67.00", "€72.22", "€74.44", "€80.00"],
-        answer: 1,
-        reason: "₹6,700 ÷ ₹90 = €74.44. Correct answer index is 2."
+        options: [
+        "€67.00",
+        "€72.22",
+        "€74.44",
+        "€80.00"
+      ],
+        answer: 2,
+        reason: "₹6,700 ÷ ₹90 per euro = €74.44."
       },
       {
         question_id: "spm_ch12_048_3",
@@ -44732,13 +44787,18 @@ answer: 2,
         answer: 2,
         reason: "₹58,000 − ₹43,500 = ₹14,500 available before the drive cost."
       },
-      {
+            {
         question_id: "spm_ch12_049_4",
         chapter_name: ["External Buy-in Price", "Transfer Pricing"],
         question: "What is the effective external cost of the drive to Robotic Assembly?",
-        options: ["₹8,000", "₹8,400", "₹8,600", "₹8,880"],
-        answer: 1,
-        reason: "₹8,000 + ₹600 integration/testing = ₹8,600. Correct answer index is 2."
+        options: [
+        "₹8,000",
+        "₹8,400",
+        "₹8,600",
+        "₹8,880"
+      ],
+        answer: 2,
+        reason: "₹8,000 external quotation + ₹600 integration/testing = ₹8,600."
       },
       {
         question_id: "spm_ch12_049_5",
@@ -44774,13 +44834,18 @@ answer: 2,
         answer: 2,
         reason: "₹5,450 + ₹220 = ₹5,670."
       },
-      {
+            {
         question_id: "spm_ch12_050_3",
         chapter_name: ["Market Based Transfer Pricing"],
         question: "What is the adjusted market-based reference price for an internal transfer, after removing the ₹160 external selling and distribution cost avoided by Energy Division?",
-        options: ["₹5,580", "₹5,740", "₹5,900", "₹6,060"],
-        answer: 0,
-        reason: "₹5,900 − ₹160 = ₹5,740. Correct answer index is 1."
+        options: [
+        "₹5,580",
+        "₹5,740",
+        "₹5,900",
+        "₹6,060"
+      ],
+        answer: 1,
+        reason: "₹5,900 market price − ₹160 avoided selling/distribution cost = ₹5,740."
       },
       {
         question_id: "spm_ch12_050_4",
@@ -45081,13 +45146,18 @@ answer: 2,
         answer: 2,
         reason: "Contribution C = ₹2,400 − ₹1,200 = ₹1,200. Per furnace hour = ₹1,200 ÷ 3 = ₹400."
       },
-      {
+            {
         question_id: "spm_ch12_056_4",
         chapter_name: ["Capacity", "Limiting Factor"],
         question: "How many furnace hours would be required to satisfy all stated external demand?",
-        options: ["22,500 hours", "24,000 hours", "25,500 hours", "27,000 hours"],
-        answer: 2,
-        reason: "A = 1,200×8 = 9,600 hours; B = 1,500×5 = 7,500 hours; C = 2,000×3 = 6,000 hours. Total = 23,100 hours. Therefore none of the listed options is correct."
+        options: [
+        "23,100 hours",
+        "24,000 hours",
+        "25,500 hours",
+        "27,000 hours"
+      ],
+        answer: 0,
+        reason: "A = 1,200 × 8 = 9,600 hours; B = 1,500 × 5 = 7,500 hours; C = 2,000 × 3 = 6,000 hours. Total furnace hours = 23,100 hours."
       },
       {
         question_id: "spm_ch12_056_5",
@@ -45580,13 +45650,18 @@ answer: 2,
         answer: 2,
         reason: "Gamma contribution = ₹2,100 − ₹900 = ₹1,200; ₹1,200 ÷ 3 = ₹400."
       },
-      {
+            {
         question_id: "spm_ch12_066_4",
         chapter_name: ["Capacity", "Limiting Factor"],
         question: "How many machine hours would be required to satisfy all external demand?",
-        options: ["17,600 hours", "18,800 hours", "20,000 hours", "21,200 hours"],
-        answer: 3,
-        reason: "Alpha = 1,200×6 = 7,200; Beta = 1,400×5 = 7,000; Gamma = 1,600×3 = 4,800. Total = 19,000 hours, so the correct option is not listed. This question is invalid."
+        options: [
+        "17,600 hours",
+        "19,000 hours",
+        "20,000 hours",
+        "21,200 hours"
+      ],
+        answer: 1,
+        reason: "Alpha = 1,200 × 6 = 7,200; Beta = 1,400 × 5 = 7,000; Gamma = 1,600 × 3 = 4,800. Total machine hours = 19,000 hours."
       },
       {
         question_id: "spm_ch12_066_5",
@@ -46113,13 +46188,18 @@ answer: 2,
         answer: 1,
         reason: "The marginal component of the two-part transfer price is the marginal production cost of ₹2,500."
       },
-      {
+            {
         question_id: "spm_ch12_077_2",
         chapter_name: ["Two-Part Transfer Pricing"],
         question: "What is the equivalent per-drive amount of the ₹45 lakh lump-sum charge over 30,000 drives?",
-        options: ["₹1,000", "₹1,250", "₹1,500", "₹1,800"],
-        answer: 2,
-        reason: "₹45,00,000 ÷ 30,000 = ₹150 per drive. Therefore the correct option should be ₹150; since it is not listed, the case's proposed charge should not be treated as a per-unit transfer component in the question. The lump sum remains a separate charge.",
+        options: [
+        "₹150",
+        "₹1,000",
+        "₹1,250",
+        "₹1,500"
+      ],
+        answer: 0,
+        reason: "₹45,00,000 ÷ 30,000 drives = ₹150 per drive."
       },
       {
         question_id: "spm_ch12_077_3",
@@ -46221,13 +46301,18 @@ answer: 2,
         answer: 0,
         reason: "The receiving division records the marginal cost of ₹3,200 under the proposed dual-rate arrangement."
       },
-      {
+            {
         question_id: "spm_ch12_079_3",
         chapter_name: ["External Buy-in Price"],
         question: "What is Robotics' effective external cost per drive if it buys externally?",
-        options: ["₹5,100", "₹5,400", "₹5,520", "₹5,900"],
-        answer: 1,
-        reason: "External quotation ₹5,100 + testing/integration ₹400 = ₹5,500. Therefore the correct option should be ₹5,500; the options intentionally do not contain that value and this question should not be used without correction."
+        options: [
+        "₹5,100",
+        "₹5,400",
+        "₹5,500",
+        "₹5,900"
+      ],
+        answer: 2,
+        reason: "External quotation ₹5,100 + testing/integration ₹400 = ₹5,500 effective cost per drive."
       },
       {
         question_id: "spm_ch12_079_4",
