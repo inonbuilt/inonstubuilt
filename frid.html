@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Calcium Study Friends | Auto-Connect Hub</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <title>Calcium Study Friends | Public Lobby &amp; Auto-Connect Hub</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;700&display=swap"
+    rel="stylesheet" />
   <!-- PeerJS WebRTC Library with STUN server configuration for GitHub Pages -->
   <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+  <!-- Option 2: Lightweight MQTT over WebSockets Relay for Instant Global Public Presence -->
+  <script src="https://unpkg.com/mqtt@5.10.3/dist/mqtt.min.js"></script>
   <style>
     :root {
       --bg-deep: #050a14;
@@ -108,6 +113,12 @@
       color: #6ee7b7;
     }
 
+    .net-pill.lobby-pill {
+      background: rgba(56, 189, 248, 0.14);
+      border-color: rgba(56, 189, 248, 0.4);
+      color: #7dd3fc;
+    }
+
     .net-dot {
       width: 8px;
       height: 8px;
@@ -117,9 +128,24 @@
       animation: pulseNet 1.6s infinite;
     }
 
+    .net-dot.offline {
+      background: #64748b;
+      box-shadow: none;
+      animation: none;
+    }
+
     @keyframes pulseNet {
-      0%, 100% { transform: scale(1); opacity: 0.85; }
-      50% { transform: scale(1.3); opacity: 1; }
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 0.85;
+      }
+
+      50% {
+        transform: scale(1.3);
+        opacity: 1;
+      }
     }
 
     .btn-back-dashboard {
@@ -157,7 +183,7 @@
     /* Top Discovery & Unique ID Grid */
     .top-discovery-grid {
       display: grid;
-      grid-template-columns: 1fr 1.25fr;
+      grid-template-columns: 1fr 1.1fr 1fr;
       gap: 18px;
     }
 
@@ -220,6 +246,11 @@
       flex-shrink: 0;
     }
 
+    .avatar-circle.public-avatar {
+      background: linear-gradient(135deg, #059669, #0ea5e9);
+      border-color: #34d399;
+    }
+
     .avatar-circle img {
       width: 100%;
       height: 100%;
@@ -228,12 +259,12 @@
 
     .uid-badge-display {
       font-family: 'Roboto Mono', monospace;
-      font-size: 1.45rem;
+      font-size: 1.35rem;
       font-weight: 700;
       color: #7dd3fc;
       background: rgba(6, 182, 212, 0.14);
       border: 1.5px dashed rgba(56, 189, 248, 0.55);
-      padding: 8px 16px;
+      padding: 8px 14px;
       border-radius: 12px;
       letter-spacing: 1px;
       user-select: all;
@@ -264,11 +295,153 @@
       transform: translateY(-1px);
     }
 
-    .f-btn.primary { background: linear-gradient(135deg, #2563eb, #06b6d4); }
-    .f-btn.emerald { background: linear-gradient(135deg, #059669, #10b981); }
-    .f-btn.purple  { background: linear-gradient(135deg, #7c3aed, #6366f1); }
-    .f-btn.ghost   { background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.18); color: #cbd5e1; }
-    .f-btn.danger  { background: rgba(244, 63, 94, 0.18); border: 1px solid rgba(244, 63, 94, 0.45); color: #fda4af; }
+    .f-btn.primary {
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+    }
+
+    .f-btn.emerald {
+      background: linear-gradient(135deg, #059669, #10b981);
+    }
+
+    .f-btn.purple {
+      background: linear-gradient(135deg, #7c3aed, #6366f1);
+    }
+
+    .f-btn.ghost {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #cbd5e1;
+    }
+
+    .f-btn.danger {
+      background: rgba(244, 63, 94, 0.18);
+      border: 1px solid rgba(244, 63, 94, 0.45);
+      color: #fda4af;
+    }
+
+    /* Public Visibility & Online/Offline Control Card */
+    .visibility-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(6, 95, 70, 0.28));
+      border-color: rgba(52, 211, 153, 0.35);
+    }
+
+    .vis-control-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .vis-group {
+      background: rgba(5, 10, 20, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 10px;
+    }
+
+    .vis-group-label {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #94a3b8;
+      margin-bottom: 7px;
+      display: block;
+    }
+
+    .seg-row {
+      display: flex;
+      gap: 6px;
+    }
+
+    .seg-btn {
+      flex: 1;
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04);
+      color: #cbd5e1;
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transition: all 0.2s ease;
+    }
+
+    .seg-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .seg-btn.active-public {
+      background: linear-gradient(135deg, #059669, #10b981);
+      border-color: #34d399;
+      color: white;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+    }
+
+    .seg-btn.active-private {
+      background: linear-gradient(135deg, #334155, #1e293b);
+      border-color: #64748b;
+      color: #f8fafc;
+    }
+
+    .seg-btn.active-online {
+      background: rgba(34, 197, 94, 0.22);
+      border-color: #22c55e;
+      color: #86efac;
+    }
+
+    .seg-btn.active-offline {
+      background: rgba(100, 116, 139, 0.25);
+      border-color: #94a3b8;
+      color: #cbd5e1;
+    }
+
+    .preset-pills-row {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .preset-chip {
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.05);
+      color: #cbd5e1;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .preset-chip:hover {
+      border-color: #38bdf8;
+      color: white;
+    }
+
+    .preset-chip.active {
+      background: rgba(56, 189, 248, 0.2);
+      border-color: #38bdf8;
+      color: #7dd3fc;
+    }
+
+    .privacy-guarantee-strip {
+      font-size: 11px;
+      color: #a7f3d0;
+      background: rgba(6, 95, 70, 0.35);
+      border: 1px solid rgba(52, 211, 153, 0.3);
+      border-radius: 9px;
+      padding: 8px 11px;
+      line-height: 1.4;
+    }
 
     /* Find Friend Box */
     .search-input-group {
@@ -280,7 +453,7 @@
 
     .uid-search-input {
       flex: 1;
-      min-width: 200px;
+      min-width: 180px;
       background: rgba(5, 10, 20, 0.75);
       border: 1.5px solid rgba(56, 189, 248, 0.4);
       border-radius: 10px;
@@ -302,7 +475,7 @@
     /* Main Workspace Split */
     .friends-workspace {
       display: grid;
-      grid-template-columns: 380px 1fr;
+      grid-template-columns: 390px 1fr;
       gap: 20px;
       align-items: start;
     }
@@ -318,7 +491,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+      gap: 8px;
+      flex-wrap: wrap;
     }
 
     .section-title {
@@ -340,11 +515,42 @@
       border-radius: 999px;
     }
 
+    .count-badge.emerald {
+      background: rgba(16, 185, 129, 0.2);
+      border-color: rgba(16, 185, 129, 0.45);
+      color: #6ee7b7;
+    }
+
+    .pub-filter-tabs {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+
+    .pub-filter-btn {
+      flex: 1;
+      padding: 5px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      border-radius: 7px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.04);
+      color: #94a3b8;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .pub-filter-btn.active {
+      background: rgba(16, 185, 129, 0.18);
+      border-color: rgba(52, 211, 153, 0.45);
+      color: #6ee7b7;
+    }
+
     .friends-list {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      max-height: 600px;
+      gap: 9px;
+      max-height: 290px;
       overflow-y: auto;
       padding-right: 4px;
     }
@@ -353,7 +559,7 @@
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 12px;
-      padding: 12px;
+      padding: 11px 12px;
       transition: all 0.2s ease;
       cursor: pointer;
       display: flex;
@@ -372,6 +578,12 @@
       background: rgba(37, 99, 235, 0.18);
       border-color: #38bdf8;
       box-shadow: 0 0 20px rgba(56, 189, 248, 0.18);
+    }
+
+    .friend-item-card.public-card.selected {
+      background: rgba(5, 150, 105, 0.2);
+      border-color: #34d399;
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.18);
     }
 
     .friend-meta {
@@ -432,8 +644,17 @@
     }
 
     @keyframes pulseUnread {
-      0%, 100% { transform: scale(1); opacity: 0.9; }
-      50% { transform: scale(1.35); opacity: 1; }
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 0.9;
+      }
+
+      50% {
+        transform: scale(1.35);
+        opacity: 1;
+      }
     }
 
     /* Right Inspector Panel */
@@ -456,6 +677,11 @@
       border: 1px solid rgba(56, 189, 248, 0.35);
     }
 
+    .friend-hero-banner.public-banner {
+      background: linear-gradient(135deg, rgba(6, 95, 70, 0.45), rgba(15, 23, 42, 0.92));
+      border-color: rgba(52, 211, 153, 0.4);
+    }
+
     .friend-hero-left {
       display: flex;
       align-items: center;
@@ -476,6 +702,11 @@
       font-weight: 800;
       color: white;
       overflow: hidden;
+    }
+
+    .hero-avatar.public-hero {
+      background: linear-gradient(135deg, #059669, #0ea5e9);
+      border-color: #34d399;
     }
 
     .hero-avatar img {
@@ -513,6 +744,12 @@
       color: #d8b4fe;
     }
 
+    .pill-tag.amber {
+      background: rgba(245, 158, 11, 0.16);
+      border-color: rgba(245, 158, 11, 0.4);
+      color: #fde68a;
+    }
+
     /* Inspector Tabs */
     .inspector-tabs {
       display: flex;
@@ -543,6 +780,13 @@
       border-color: #38bdf8;
       color: white;
       box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
+    }
+
+    .insp-tab-btn.locked {
+      opacity: 0.48;
+      cursor: not-allowed;
+      background: rgba(15, 23, 42, 0.6);
+      border-style: dashed;
     }
 
     /* Profile Grid */
@@ -650,7 +894,7 @@
     .chat-box-container {
       display: flex;
       flex-direction: column;
-      height: 380px;
+      height: 390px;
       background: rgba(5, 10, 20, 0.65);
       border: 1px solid rgba(56, 189, 248, 0.25);
       border-radius: 12px;
@@ -667,7 +911,7 @@
     }
 
     .chat-bubble {
-      max-width: 75%;
+      max-width: 78%;
       padding: 9px 14px;
       border-radius: 12px;
       font-size: 13px;
@@ -688,16 +932,31 @@
       align-self: flex-end;
     }
 
+    .uid-Action-card-in-chat {
+      margin-top: 8px;
+      padding: 8px 10px;
+      border-radius: 9px;
+      background: rgba(5, 10, 20, 0.55);
+      border: 1px solid rgba(52, 211, 153, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
     .chat-input-row {
       display: flex;
       gap: 8px;
       padding: 12px;
       background: rgba(15, 23, 42, 0.95);
       border-top: 1px solid rgba(56, 189, 248, 0.2);
+      flex-wrap: wrap;
     }
 
     .chat-input {
       flex: 1;
+      min-width: 180px;
       background: rgba(5, 10, 20, 0.8);
       border: 1px solid rgba(56, 189, 248, 0.35);
       border-radius: 9px;
@@ -709,6 +968,33 @@
 
     .chat-input:focus {
       border-color: #38bdf8;
+    }
+
+    /* In-Page Confirm Modal (Sandbox Safe) */
+    .confirm-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 7, 14, 0.82);
+      backdrop-filter: blur(8px);
+      z-index: 9500;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .confirm-modal-backdrop.open {
+      display: flex;
+    }
+
+    .confirm-modal-card {
+      background: #0f172a;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      border-radius: 16px;
+      max-width: 420px;
+      width: 100%;
+      padding: 22px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
     }
 
     /* Toast Notification */
@@ -736,13 +1022,24 @@
       transform: translateY(0);
     }
 
+    @media (max-width: 1180px) {
+      .top-discovery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (max-width: 980px) {
-      .top-discovery-grid, .friends-workspace {
+      .friends-workspace {
+        grid-template-columns: 1fr;
+      }
+
+      .vis-control-grid {
         grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
+
 <body>
 
   <!-- TOP NAVIGATION -->
@@ -750,12 +1047,19 @@
     <div class="frid-brand">
       <div class="frid-brand-icon">🤝</div>
       <div>
-        <h1>Calcium <span>Study Friends</span></h1>
-        <div class="frid-brand-sub">Auto-Connect P2P Hub • Instant Timetable Sharing &amp; Live Chat</div>
+        <h1>Calcium <span>Study Friends &amp; Public Lobby</span></h1>
+        <div class="frid-brand-sub">Public/Private Presence • Name-Only Public Privacy • Instant Unique ID Friend
+          Connect</div>
       </div>
     </div>
 
     <div class="frid-nav-right">
+      <span id="topBarUniqueId" style="display:none;">CN-000000000</span>
+      <div class="net-pill lobby-pill" id="publicLobbyBadge"
+        title="Option 2 Global WebSocket + PeerJS Public Directory">
+        <span class="net-dot" id="publicLobbyDot"></span>
+        <span id="publicLobbyText">Public Relay: Connecting...</span>
+      </div>
       <div class="net-pill" id="peerNetworkBadge">
         <span class="net-dot" id="peerNetworkDot"></span>
         <span id="peerNetworkText">Connecting P2P Network...</span>
@@ -769,19 +1073,20 @@
 
   <div class="frid-container">
 
-    <!-- ROW 1: MY UNIQUE USER ID + FIND FRIENDS BY ID -->
+    <!-- ROW 1: MY UNIQUE USER ID + PUBLIC VISIBILITY CONTROLS + FIND FRIENDS BY ID -->
     <div class="top-discovery-grid">
 
       <!-- Card 1: My Unique ID -->
       <div class="glass-box my-id-card">
         <div>
-          <div class="box-tag">🆔 YOUR CALCIUM USER ID</div>
+          <div class="box-tag">🆔 YOUR PRIVATE CALCIUM USER ID</div>
           <div class="my-id-top">
             <div class="my-profile-mini">
               <div class="avatar-circle" id="myAvatarBox">CA</div>
               <div>
                 <div style="font-size:15px; font-weight:800; color:#f8fafc;" id="myDisplayNameLabel">CA Aspirant</div>
-                <div style="font-size:11px; color:#7dd3fc; font-weight:700;" id="myLevelAndMoodLabel">CA FINAL • 🔥 Locked In</div>
+                <div style="font-size:11px; color:#7dd3fc; font-weight:700;" id="myLevelAndMoodLabel">CA FINAL • 🔥
+                  Locked In</div>
               </div>
             </div>
             <div class="uid-badge-display" id="myUniqueIdDisplay">CN-000000000</div>
@@ -789,61 +1094,153 @@
         </div>
 
         <p style="font-size:12px; color:#cbd5e1; line-height:1.45;">
-          Share your Unique ID with study partners. When both users are online with the Friends hub open, the app can connect automatically without an acceptance step. If a friend is offline, ask them to add your ID too when they return; this browser-only version cannot deliver messages to an offline user.
+          Your Unique ID is <strong>never</strong> shown in the Public Directory. Share it inside Public Text Chat or
+          with trusted partners to become Friends and unlock your Timetable &amp; Tasks.
         </p>
 
         <div class="uid-actions-row">
           <button class="f-btn primary" onclick="copyMyUniqueId()">📋 Copy My Unique ID</button>
           <button class="f-btn emerald" onclick="shareMyUniqueIdWhatsApp()">💬 Share ID on WhatsApp</button>
-          <button class="f-btn ghost" onclick="regenerateUniqueId()" title="Generate a brand new Unique ID">🎲 New ID</button>
+          <button class="f-btn ghost" onclick="regenerateUniqueId()" title="Generate a brand new Unique ID">🎲 New
+            ID</button>
         </div>
       </div>
 
-      <!-- Card 2: Auto-Connect by Unique ID -->
+      <!-- Card 2: Public / Private & Online / Offline Controls (NEW) -->
+      <div class="glass-box visibility-card">
+        <div>
+          <div class="box-tag" style="color:#34d399;">🌐 PUBLIC DIRECTORY VISIBILITY &amp; STATUS</div>
+          <div
+            style="display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:10px;">
+            <h3 style="font-size:15px; font-weight:800; color:#f8fafc;">Who Can See You Right Now?</h3>
+            <span id="myVisibilityStatusBadge" class="pill-tag green">🔒 Private • Online</span>
+          </div>
+
+          <div class="vis-control-grid">
+            <!-- Visibility Mode: Public vs Private -->
+            <div class="vis-group">
+              <span class="vis-group-label">1. Visibility Mode</span>
+              <div class="seg-row">
+                <button type="button" id="btnVisPublic" class="seg-btn" onclick="setMyVisibilityMode('public')">
+                  🌐 Public
+                </button>
+                <button type="button" id="btnVisPrivate" class="seg-btn active-private"
+                  onclick="setMyVisibilityMode('private')">
+                  🔒 Private
+                </button>
+              </div>
+            </div>
+
+            <!-- Presence Status: Online vs Offline -->
+            <div class="vis-group">
+              <span class="vis-group-label">2. Presence Status</span>
+              <div class="seg-row">
+                <button type="button" id="btnPresOnline" class="seg-btn active-online"
+                  onclick="setMyPresenceStatus('online')">
+                  🟢 Online
+                </button>
+                <button type="button" id="btnPresOffline" class="seg-btn" onclick="setMyPresenceStatus('offline')">
+                  ⚫ Offline
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:10px;">
+            <span class="vis-group-label" style="margin-bottom:5px;">Quick Select Mode:</span>
+            <div class="preset-pills-row">
+              <button type="button" id="presetPubOnline" class="preset-chip"
+                onclick="applyVisibilityPreset('public', 'online')">🌐 Public Online</button>
+              <button type="button" id="presetPubOffline" class="preset-chip"
+                onclick="applyVisibilityPreset('public', 'offline')">🌐 Public Offline</button>
+              <button type="button" id="presetPrivOnline" class="preset-chip active"
+                onclick="applyVisibilityPreset('private', 'online')">🔒 Private Online</button>
+              <button type="button" id="presetPrivOffline" class="preset-chip"
+                onclick="applyVisibilityPreset('private', 'offline')">🔒 Private Offline</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="privacy-guarantee-strip" id="privacyGuaranteeText">
+          🛡️ <strong>Strict Public Privacy:</strong> When Public, other users see <strong>ONLY your Name</strong> and
+          Online/Offline status. No Unique ID, no Timetable, and no Tasks are ever exposed—only Text Chat is active so
+          you can share your Unique ID if you choose to become Friends.
+        </div>
+      </div>
+
+      <!-- Card 3: Auto-Connect by Unique ID -->
       <div class="glass-box">
-        <div class="box-tag">⚡ INSTANT CONNECT BY UNIQUE ID</div>
-        <h3 style="font-size:16px; font-weight:800; color:#f8fafc; margin-bottom:4px;">Add a Study Partner</h3>
+        <div class="box-tag">⚡ BECOME FRIENDS VIA UNIQUE ID</div>
+        <h3 style="font-size:16px; font-weight:800; color:#f8fafc; margin-bottom:4px;">Add a Friend by Unique ID</h3>
         <p style="font-size:12px; color:#94a3b8; margin-bottom:10px;">
-          Enter your friend's Unique ID (e.g. <code style="color:#7dd3fc;">CN-482910573</code>). Live connection works when your friend is online with the Friends hub open.
+          Received a friend's Unique ID (<code style="color:#7dd3fc;">CN-482910573</code>) in Public Text Chat? Enter it
+          below or click their in-chat ID button to become Friends and unlock full timetables!
         </p>
 
         <div class="search-input-group">
-          <input
-            type="text"
-            id="findFriendIdInput"
-            class="uid-search-input"
-            placeholder="ENTER UNIQUE ID (e.g. CN-482910573)"
-            maxlength="15"
-            onkeydown="if(event.key==='Enter') searchAndSendStudyRequest()"
-          />
+          <input type="text" id="findFriendIdInput" class="uid-search-input"
+            placeholder="ENTER UNIQUE ID (e.g. CN-482910573)" maxlength="15"
+            onkeydown="if(event.key==='Enter') searchAndSendStudyRequest()" />
           <button class="f-btn emerald" onclick="searchAndSendStudyRequest()">
             🚀 Connect Instantly
           </button>
+        </div>
+
+        <div
+          style="margin-top:12px; padding-top:10px; border-top:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;">
+          <span style="font-size:11px; color:#94a3b8;">Your Public Display Name:</span>
+          <div style="display:flex; gap:6px; flex:1; min-width:180px;">
+            <input type="text" id="quickPublicNameInput" class="chat-input" style="padding:6px 10px; font-size:12px;"
+              placeholder="Your Name..." oninput="updateMyPublicDisplayName(this.value)" />
+          </div>
         </div>
       </div>
 
     </div>
 
-    <!-- ROW 2: FRIENDS LIST & FRIEND INSPECTOR -->
+    <!-- ROW 2: PUBLIC DIRECTORY + FRIENDS LIST & INSPECTOR -->
     <div class="friends-workspace">
 
-      <!-- LEFT COLUMN: Friends Roster -->
+      <!-- LEFT COLUMN: Public Users Directory + Friends Roster -->
       <div class="sidebar-column">
 
-        <!-- Accepted Study Friends Roster -->
+        <!-- Section 1: Publicly Visible Users Directory (Name & Text Only) -->
+        <div class="glass-box" style="border-color: rgba(52, 211, 153, 0.35);">
+          <div class="section-header">
+            <div class="section-title">
+              <span>🌐 Public Users Directory</span>
+              <span class="count-badge emerald" id="publicUsersCountBadge">0</span>
+            </div>
+            <span style="font-size:10px; color:#6ee7b7; font-weight:700;">Name &amp; Text Only</span>
+          </div>
+
+          <div class="pub-filter-tabs">
+            <button type="button" id="pubFilterAll" class="pub-filter-btn active"
+              onclick="setPublicDirectoryFilter('all')">All Public</button>
+            <button type="button" id="pubFilterOnline" class="pub-filter-btn"
+              onclick="setPublicDirectoryFilter('online')">🟢 Online</button>
+            <button type="button" id="pubFilterOffline" class="pub-filter-btn"
+              onclick="setPublicDirectoryFilter('offline')">⚫ Offline</button>
+          </div>
+
+          <div class="friends-list" id="publicUsersListContainer"></div>
+        </div>
+
+        <!-- Section 2: Accepted Study Friends Roster (Full Access) -->
         <div class="glass-box" style="flex:1;">
           <div class="section-header">
             <div class="section-title">
               <span>👥 My Study Friends</span>
               <span class="count-badge" id="friendsCountBadge">0</span>
             </div>
+            <span style="font-size:10px; color:#7dd3fc; font-weight:700;">Full Timetable &amp; Tasks</span>
           </div>
-          <div class="friends-list" id="friendsListContainer" style="max-height: 520px;"></div>
+          <div class="friends-list" id="friendsListContainer" style="max-height: 310px;"></div>
         </div>
 
       </div>
 
-      <!-- RIGHT COLUMN: SELECTED FRIEND PROFILE, TIMETABLE, TASKS, CHAT & CALL -->
+      <!-- RIGHT COLUMN: SELECTED PUBLIC USER (TEXT ONLY) OR SELECTED FRIEND (FULL ACCESS) -->
       <div class="glass-box inspector-panel" id="friendInspectorPanel">
         <!-- Dynamically populated by renderSelectedFriendInspector() -->
       </div>
@@ -852,16 +1249,33 @@
 
   </div>
 
+  <!-- In-Page Regenerate ID Confirmation Modal -->
+  <div class="confirm-modal-backdrop" id="regenConfirmModal">
+    <div class="confirm-modal-card">
+      <h3 style="font-size:16px; font-weight:800; color:#f8fafc; margin-bottom:8px;">🎲 Generate a New Unique ID?</h3>
+      <p style="font-size:13px; color:#cbd5e1; line-height:1.5; margin-bottom:16px;">
+        Your saved friends and chat history will be kept locally, but existing friends will need your new Unique ID to
+        reconnect with you.
+      </p>
+      <div style="display:flex; justify-content:flex-end; gap:10px;">
+        <button type="button" class="f-btn ghost" onclick="closeRegenConfirmModal()">Cancel</button>
+        <button type="button" class="f-btn primary" onclick="confirmRegenerateUniqueId()">Yes, Generate New ID</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Toast Notification -->
   <div class="frid-toast" id="fridToast"></div>
 
   <script>
     /* =========================================================================
-       CALCIUM STUDY FRIENDS & P2P AUTO-CONNECT ENGINE (frid.html)
-       - Uses PeerJS WebRTC P2P + Google STUN + Cross-Tab BroadcastChannel
-       - NO ACCEPTANCE REQUIRED. Instant adding + background sync.
-       - FIXED: delete mirrored on both sides, reliable reconnect with retry,
-                PeerJS error handling, mySnap ReferenceError.
+       CALCIUM STUDY FRIENDS & OPTION 2 PUBLIC LOBBY ENGINE (frid.html)
+       - Option 2 Hybrid: Global MQTT over WebSockets Relay + PeerJS WebRTC P2P
+       - Public/Private + Online/Offline controls
+       - Strict Public Privacy: Only Name & Online/Offline visible in Public Mode.
+         No Unique ID, No Timetable, No Tasks, No Bio exposed in Public Mode.
+       - Text Chat enabled for Public users so they can share Unique IDs and
+         become Friends with 1 click!
     ========================================================================= */
 
     const SUBJECT_LABELS = {
@@ -870,21 +1284,52 @@
       fr: "FR", afm: "AFM", audit: "AUDIT", dt: "DT", idt: "IDT", ibs: "IBS"
     };
 
-    // Demo/fake friends removed. Kept empty so existing checks keep working.
     const DEMO_DIRECTORY = {};
     const REMOVED_DEMO_IDS = ["CN-100108", "CN-204999"];
 
     let myUniqueId = "";
+    let myPublicAnonId = "";
+    let myVisibilityMode = "private"; // 'public' | 'private'
+    let myPresenceStatus = "online";  // 'online' | 'offline'
+    let publicDirectoryFilter = "all"; // 'all' | 'online' | 'offline'
+
     let peerNode = null;
+    let publicPeerNode = null;
     let activeFriendConns = {};
+    let activePublicConns = {};
+
+    // Selection state: either inspecting a Friend (by UID) or a Public user (by pubId)
+    let currentInspectorMode = "friend"; // 'friend' | 'public'
     let selectedFriendUid = null;
+    let selectedPublicPubId = null;
     let currentInspectorTab = "profile";
+
     let crossTabChannel = null;
+    let publicLobbyChannel = null;
+
+    // Option 2 MQTT WebSocket Client & Public Directory Map
+    let mqttClient = null;
+    let mqttBrokerIndex = 0;
+    const MQTT_BROKERS = [
+      "wss://broker.emqx.io:8084/mqtt",
+      "wss://broker.hivemq.com:8884/mqtt",
+      "wss://test.mosquitto.org:8081/mqtt"
+    ];
+    const PUBLIC_LOBBY_TOPIC_PRESENCE = "calcium_notes/study_reactor/v2/public_presence";
+    const PUBLIC_LOBBY_TOPIC_CHAT_PREFIX = "calcium_notes/study_reactor/v2/public_chat/";
+
+    // Map of pubId -> { pubId, name, visibility: 'public', status: 'online'|'offline', lastSeen }
+    let publicUsersDirectory = {};
+    let publicChatHistories = {};
+    let publicUnreadMap = {};
+
     let chatHistories = {};
     let unreadMessagesMap = {};
     const seenChatMessageIds = new Set();
     const registeredConnections = new WeakSet();
+    const registeredPublicConnections = new WeakSet();
     const connectingByUid = new Map();
+    const connectingByPubId = new Map();
     const deferredPackets = new Map();
     const MAX_CHAT_HISTORY = 1000;
     const MAX_DEFERRED_PACKETS_PER_FRIEND = 50;
@@ -911,6 +1356,9 @@
     }
 
     const CALCIUM_UID_KEY = "calcium_unique_user_id";
+    const CALCIUM_PUB_ANON_KEY = "calcium_public_anon_id_v2";
+    const CALCIUM_VIS_MODE_KEY = "calcium_visibility_mode_v2";
+    const CALCIUM_PRES_STATUS_KEY = "calcium_presence_status_v2";
     const CALCIUM_PROFILE_KEY = "calcium_user_profile_v1";
 
     function normalizeUniqueUserId(value) {
@@ -919,8 +1367,12 @@
       return /^CN-\d{6,12}$/.test(candidate) ? candidate : "";
     }
 
+    function normalizePublicAnonId(value) {
+      const raw = String(value == null ? "" : value).trim().toUpperCase();
+      return /^PUB-[A-Z0-9]{6,12}$/.test(raw) ? raw : "";
+    }
+
     function createUniqueUserId() {
-      // Nine-digit IDs reduce accidental collisions while preserving existing six-digit IDs.
       const range = 900000000;
       try {
         if (window.crypto && window.crypto.getRandomValues) {
@@ -937,17 +1389,29 @@
       return `CN-${100000000 + Math.floor(Math.random() * range)}`;
     }
 
+    function createPublicAnonId() {
+      const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+      let token = "";
+      for (let i = 0; i < 8; i++) {
+        token += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return `PUB-${token}`;
+    }
+
     function syncParentUniqueId(uid) {
+      const localTopEl = document.getElementById("topBarUniqueId");
+      if (localTopEl) localTopEl.textContent = uid;
       try {
         if (window.parent && window.parent !== window) {
           const el = window.parent.document.getElementById("topBarUniqueId");
           if (el) el.textContent = uid;
         }
-      } catch (e) { /* Parent may be cross-origin; local Friends ID remains valid. */ }
+      } catch (e) { }
     }
 
     function ensureUniqueUserId() {
       let uid = "";
+      let pubId = "";
       let prof = {};
       try {
         const parsed = JSON.parse(localStorage.getItem(CALCIUM_PROFILE_KEY) || "{}");
@@ -955,18 +1419,598 @@
         uid = normalizeUniqueUserId(localStorage.getItem(CALCIUM_UID_KEY)) ||
           normalizeUniqueUserId(prof.uniqueId) || createUniqueUserId();
         localStorage.setItem(CALCIUM_UID_KEY, uid);
-        // Preserve existing profile fields (including fields written by older app pages).
         prof.uniqueId = uid;
         localStorage.setItem(CALCIUM_PROFILE_KEY, JSON.stringify(prof));
+
+        pubId = normalizePublicAnonId(localStorage.getItem(CALCIUM_PUB_ANON_KEY)) || createPublicAnonId();
+        localStorage.setItem(CALCIUM_PUB_ANON_KEY, pubId);
+
+        const savedVis = localStorage.getItem(CALCIUM_VIS_MODE_KEY);
+        if (savedVis === "public" || savedVis === "private") myVisibilityMode = savedVis;
+
+        const savedPres = localStorage.getItem(CALCIUM_PRES_STATUS_KEY);
+        if (savedPres === "online" || savedPres === "offline") myPresenceStatus = savedPres;
       } catch (e) {
-        // Do not use a shared hard-coded fallback when storage is blocked.
         uid = uid || normalizeUniqueUserId(prof.uniqueId) || createUniqueUserId();
+        pubId = pubId || createPublicAnonId();
       }
       myUniqueId = uid;
+      myPublicAnonId = pubId;
       syncParentUniqueId(uid);
       return uid;
     }
 
+    /* =========================================================================
+       VISIBILITY (PUBLIC / PRIVATE) & PRESENCE (ONLINE / OFFLINE) CONTROLS
+    ========================================================================= */
+    window.setMyVisibilityMode = function (mode) {
+      myVisibilityMode = mode === "public" ? "public" : "private";
+      try { localStorage.setItem(CALCIUM_VIS_MODE_KEY, myVisibilityMode); } catch (e) { }
+      updateVisibilityControlsUI();
+      if (myVisibilityMode === "public") {
+        publishMyPublicPresence();
+        showToast(`🌐 You are now Publicly Visible (${myPresenceStatus.toUpperCase()}). Only your Name is shown!`);
+      } else {
+        publishMyPublicLeave();
+        showToast("🔒 Switched to Private Mode. You are hidden from the Public Directory.");
+      }
+      renderSidebarLists();
+    };
+
+    window.setMyPresenceStatus = function (status) {
+      myPresenceStatus = status === "offline" ? "offline" : "online";
+      try { localStorage.setItem(CALCIUM_PRES_STATUS_KEY, myPresenceStatus); } catch (e) { }
+      updateVisibilityControlsUI();
+      if (myVisibilityMode === "public") {
+        publishMyPublicPresence();
+      }
+      window.syncAllOnlineFriends();
+      renderSidebarLists();
+      showToast(`${myPresenceStatus === "online" ? "🟢 Status set to Online" : "⚫ Status set to Offline"} (${myVisibilityMode === "public" ? "Public" : "Private"})`);
+    };
+
+    window.applyVisibilityPreset = function (visMode, presStatus) {
+      myVisibilityMode = visMode === "public" ? "public" : "private";
+      myPresenceStatus = presStatus === "offline" ? "offline" : "online";
+      try {
+        localStorage.setItem(CALCIUM_VIS_MODE_KEY, myVisibilityMode);
+        localStorage.setItem(CALCIUM_PRES_STATUS_KEY, myPresenceStatus);
+      } catch (e) { }
+      updateVisibilityControlsUI();
+      if (myVisibilityMode === "public") {
+        publishMyPublicPresence();
+      } else {
+        publishMyPublicLeave();
+      }
+      window.syncAllOnlineFriends();
+      renderSidebarLists();
+      showToast(`✅ Mode set to: ${myVisibilityMode.toUpperCase()} • ${myPresenceStatus.toUpperCase()}`);
+    };
+
+    window.updateMyPublicDisplayName = function (newName) {
+      const clean = safeText(newName, "", 80);
+      try {
+        if (clean) {
+          localStorage.setItem("calcium_user_name", clean);
+          const prof = JSON.parse(localStorage.getItem(CALCIUM_PROFILE_KEY) || "{}");
+          prof.name = clean;
+          localStorage.setItem(CALCIUM_PROFILE_KEY, JSON.stringify(prof));
+          if (window.parent && window.parent !== window && typeof window.parent.saveDisplayName === "function") {
+            window.parent.saveDisplayName(clean);
+          }
+        }
+      } catch (e) { }
+      renderMyHeaderInfo();
+      if (myVisibilityMode === "public") {
+        publishMyPublicPresence();
+      }
+      renderSidebarLists();
+    };
+
+    function updateVisibilityControlsUI() {
+      const btnPub = document.getElementById("btnVisPublic");
+      const btnPriv = document.getElementById("btnVisPrivate");
+      const btnOn = document.getElementById("btnPresOnline");
+      const btnOff = document.getElementById("btnPresOffline");
+      const badge = document.getElementById("myVisibilityStatusBadge");
+      const guarantee = document.getElementById("privacyGuaranteeText");
+
+      if (btnPub) btnPub.className = `seg-btn ${myVisibilityMode === "public" ? "active-public" : ""}`;
+      if (btnPriv) btnPriv.className = `seg-btn ${myVisibilityMode === "private" ? "active-private" : ""}`;
+      if (btnOn) btnOn.className = `seg-btn ${myPresenceStatus === "online" ? "active-online" : ""}`;
+      if (btnOff) btnOff.className = `seg-btn ${myPresenceStatus === "offline" ? "active-offline" : ""}`;
+
+      const pPubOn = document.getElementById("presetPubOnline");
+      const pPubOff = document.getElementById("presetPubOffline");
+      const pPrivOn = document.getElementById("presetPrivOnline");
+      const pPrivOff = document.getElementById("presetPrivOffline");
+      if (pPubOn) pPubOn.className = `preset-chip ${myVisibilityMode === "public" && myPresenceStatus === "online" ? "active" : ""}`;
+      if (pPubOff) pPubOff.className = `preset-chip ${myVisibilityMode === "public" && myPresenceStatus === "offline" ? "active" : ""}`;
+      if (pPrivOn) pPrivOn.className = `preset-chip ${myVisibilityMode === "private" && myPresenceStatus === "online" ? "active" : ""}`;
+      if (pPrivOff) pPrivOff.className = `preset-chip ${myVisibilityMode === "private" && myPresenceStatus === "offline" ? "active" : ""}`;
+
+      if (badge) {
+        const visLabel = myVisibilityMode === "public" ? "🌐 Public" : "🔒 Private";
+        const presLabel = myPresenceStatus === "online" ? "🟢 Online" : "⚫ Offline";
+        badge.textContent = `${visLabel} • ${presLabel}`;
+        badge.className = `pill-tag ${myVisibilityMode === "public" && myPresenceStatus === "online" ? "green" : (myVisibilityMode === "public" ? "amber" : "")}`;
+      }
+
+      const myName = getMyCleanDisplayName();
+      if (guarantee) {
+        if (myVisibilityMode === "public") {
+          guarantee.innerHTML = `🌐 <strong>Publicly Visible as "${escapeHtml(myName)}" (${myPresenceStatus.toUpperCase()}):</strong> Everyone online sees <strong>ONLY your Name</strong>. Your Unique ID (<code>${escapeHtml(myUniqueId)}</code>), Timetable, Tasks &amp; Bio are <strong>hidden</strong>. Only Text Chat is open.`;
+        } else {
+          guarantee.innerHTML = `🔒 <strong>Private Mode Active (${myPresenceStatus.toUpperCase()}):</strong> You are completely hidden from the Public Users Directory. Only Friends who already have your Unique ID can see your status.`;
+        }
+      }
+    }
+
+    function getMyCleanDisplayName() {
+      let prof = {};
+      try { prof = JSON.parse(localStorage.getItem(CALCIUM_PROFILE_KEY) || "{}"); } catch (e) { }
+      return safeText(prof.name || localStorage.getItem("calcium_user_name"), "CA Aspirant", 80);
+    }
+
+    /* =========================================================================
+       OPTION 2: PUBLIC WEBSOCKET RELAY (MQTT) + ANONYMOUS PEERJS CHAT
+       Strictly broadcasts ONLY { pubId, name, visibility, status, updatedAt }
+    ========================================================================= */
+    function buildMyPublicPresencePacket() {
+      return {
+        type: "PUB_PRESENCE",
+        pubId: myPublicAnonId,
+        name: getMyCleanDisplayName(),
+        visibility: myVisibilityMode,
+        status: myPresenceStatus,
+        updatedAt: Date.now()
+      };
+    }
+
+    function initPublicLobbyRelay() {
+      // 1. Local Cross-Tab & LocalStorage Sync for instant multi-tab discovery
+      try {
+        if (publicLobbyChannel) publicLobbyChannel.close();
+        publicLobbyChannel = new BroadcastChannel("calcium_public_lobby_v2");
+        publicLobbyChannel.onmessage = (ev) => {
+          if (ev.data) handleIncomingPublicLobbyPacket(ev.data);
+        };
+      } catch (e) { publicLobbyChannel = null; }
+
+      // Load any cached recent public directory entries from localStorage
+      try {
+        const cached = JSON.parse(localStorage.getItem("calcium_public_directory_cache_v2") || "{}");
+        const now = Date.now();
+        Object.entries(cached).forEach(([pid, entry]) => {
+          if (entry && entry.pubId && now - (entry.lastSeen || 0) < 35000) {
+            publicUsersDirectory[pid] = entry;
+          }
+        });
+      } catch (e) { }
+
+      // 2. Connect to Global MQTT over WebSockets Broker for Worldwide Public Presence
+      connectMqttPublicBroker(0);
+    }
+
+    function connectMqttPublicBroker(index) {
+      const lobbyTxt = document.getElementById("publicLobbyText");
+      const lobbyDot = document.getElementById("publicLobbyDot");
+
+      if (typeof mqtt === "undefined") {
+        if (lobbyTxt) lobbyTxt.textContent = "Public Lobby: Local Mode";
+        return;
+      }
+
+      mqttBrokerIndex = index % MQTT_BROKERS.length;
+      const brokerUrl = MQTT_BROKERS[mqttBrokerIndex];
+
+      try {
+        if (mqttClient) {
+          try { mqttClient.end(true); } catch (e) { }
+        }
+
+        mqttClient = mqtt.connect(brokerUrl, {
+          clientId: `calcium_pub_${myPublicAnonId}_${Math.random().toString(36).slice(2, 6)}`,
+          clean: true,
+          connectTimeout: 7000,
+          reconnectPeriod: 4000
+        });
+
+        mqttClient.on("connect", () => {
+          if (lobbyTxt) lobbyTxt.textContent = "Public Lobby: Live Global";
+          if (lobbyDot) lobbyDot.classList.remove("offline");
+          mqttClient.subscribe(PUBLIC_LOBBY_TOPIC_PRESENCE, { qos: 0 });
+          mqttClient.subscribe(PUBLIC_LOBBY_TOPIC_CHAT_PREFIX + myPublicAnonId, { qos: 0 });
+          if (myVisibilityMode === "public") {
+            publishMyPublicPresence();
+          }
+          // Request active public users to announce themselves
+          publishRawPublicLobbyPacket({ type: "PUB_WHO_IS_HERE", fromPubId: myPublicAnonId });
+        });
+
+        mqttClient.on("message", (topic, messageBuffer) => {
+          try {
+            const parsed = JSON.parse(messageBuffer.toString());
+            handleIncomingPublicLobbyPacket(parsed);
+          } catch (e) { }
+        });
+
+        mqttClient.on("error", () => {
+          // Failover to next public WebSocket broker if needed
+          if (mqttClient && !mqttClient.connected) {
+            try { mqttClient.end(true); } catch (e) { }
+            setTimeout(() => connectMqttPublicBroker(mqttBrokerIndex + 1), 2500);
+          }
+        });
+      } catch (e) {
+        if (lobbyTxt) lobbyTxt.textContent = "Public Lobby: P2P Mode";
+      }
+    }
+
+    function publishRawPublicLobbyPacket(packet, specificTopic = PUBLIC_LOBBY_TOPIC_PRESENCE) {
+      if (!packet) return;
+      try {
+        if (publicLobbyChannel) publicLobbyChannel.postMessage(packet);
+      } catch (e) { }
+      try {
+        const nonce = `${Date.now()}_${Math.random().toString(36).slice(2, 7)}`;
+        const key = `calcium_pub_pkt_${nonce}`;
+        localStorage.setItem(key, JSON.stringify(packet));
+        setTimeout(() => { try { localStorage.removeItem(key); } catch (e) { } }, 6000);
+      } catch (e) { }
+      try {
+        if (mqttClient && mqttClient.connected) {
+          mqttClient.publish(specificTopic, JSON.stringify(packet), { qos: 0 });
+        }
+      } catch (e) { }
+    }
+
+    function publishMyPublicPresence() {
+      if (myVisibilityMode !== "public") {
+        delete publicUsersDirectory[myPublicAnonId];
+        savePublicDirectoryCache();
+        return;
+      }
+      const pkt = buildMyPublicPresencePacket();
+      publicUsersDirectory[myPublicAnonId] = {
+        pubId: myPublicAnonId,
+        name: pkt.name,
+        visibility: "public",
+        status: pkt.status,
+        lastSeen: Date.now(),
+        isMe: true
+      };
+      savePublicDirectoryCache();
+      publishRawPublicLobbyPacket(pkt, PUBLIC_LOBBY_TOPIC_PRESENCE);
+    }
+
+    function publishMyPublicLeave() {
+      delete publicUsersDirectory[myPublicAnonId];
+      savePublicDirectoryCache();
+      publishRawPublicLobbyPacket({
+        type: "PUB_LEAVE",
+        pubId: myPublicAnonId,
+        updatedAt: Date.now()
+      }, PUBLIC_LOBBY_TOPIC_PRESENCE);
+    }
+
+    function savePublicDirectoryCache() {
+      try {
+        localStorage.setItem("calcium_public_directory_cache_v2", JSON.stringify(publicUsersDirectory));
+      } catch (e) { }
+    }
+
+    function handleIncomingPublicLobbyPacket(packet) {
+      if (!packet || typeof packet !== "object" || !packet.type) return;
+
+      if (packet.type === "PUB_WHO_IS_HERE") {
+        if (myVisibilityMode === "public" && packet.fromPubId !== myPublicAnonId) {
+          publishMyPublicPresence();
+        }
+        return;
+      }
+
+      if (packet.type === "PUB_PRESENCE") {
+        const pubId = normalizePublicAnonId(packet.pubId);
+        if (!pubId) return;
+        if (packet.visibility !== "public") {
+          delete publicUsersDirectory[pubId];
+          savePublicDirectoryCache();
+          renderSidebarLists();
+          return;
+        }
+        // Sanitize: ONLY store Name and Online/Offline status. Never store UID or timetable!
+        const cleanName = safeText(packet.name, "CA Student", 60);
+        const cleanStatus = packet.status === "offline" ? "offline" : "online";
+        publicUsersDirectory[pubId] = {
+          pubId,
+          name: cleanName,
+          visibility: "public",
+          status: cleanStatus,
+          lastSeen: Date.now(),
+          isMe: pubId === myPublicAnonId
+        };
+        savePublicDirectoryCache();
+        renderSidebarLists();
+        if (currentInspectorMode === "public" && selectedPublicPubId === pubId) {
+          const activeEl = document.activeElement;
+          const isTyping = activeEl && activeEl.id === "publicChatInput";
+          if (!isTyping) renderSelectedFriendInspector();
+        }
+      }
+      else if (packet.type === "PUB_LEAVE") {
+        const pubId = normalizePublicAnonId(packet.pubId);
+        if (!pubId) return;
+        delete publicUsersDirectory[pubId];
+        savePublicDirectoryCache();
+        renderSidebarLists();
+        if (currentInspectorMode === "public" && selectedPublicPubId === pubId) {
+          renderSelectedFriendInspector();
+        }
+      }
+      else if (packet.type === "PUB_TEXT_MSG" && packet.message) {
+        const toPubId = normalizePublicAnonId(packet.toPubId);
+        const fromPubId = normalizePublicAnonId(packet.fromPubId);
+        if (!fromPubId || fromPubId === myPublicAnonId) return;
+        if (toPubId && toPubId !== myPublicAnonId) return;
+        receivePublicChatMessage(fromPubId, packet.fromName, packet.message);
+      }
+    }
+
+    function receivePublicChatMessage(fromPubId, senderName, rawMsg) {
+      if (!rawMsg || typeof rawMsg !== "object") return;
+      const msgId = safeText(rawMsg.messageId, "", 100);
+      const history = getPublicChatHistory(fromPubId);
+      if (msgId && (seenChatMessageIds.has(msgId) || history.some(m => m.messageId === msgId))) return;
+      if (msgId) {
+        seenChatMessageIds.add(msgId);
+        if (seenChatMessageIds.size > 1000) seenChatMessageIds.delete(seenChatMessageIds.values().next().value);
+      }
+
+      const cleanSenderName = safeText(senderName || (publicUsersDirectory[fromPubId] && publicUsersDirectory[fromPubId].name), "Public User", 60);
+      if (!publicUsersDirectory[fromPubId]) {
+        publicUsersDirectory[fromPubId] = {
+          pubId: fromPubId,
+          name: cleanSenderName,
+          visibility: "public",
+          status: "online",
+          lastSeen: Date.now(),
+          isMe: false
+        };
+      }
+
+      const message = {
+        messageId: msgId,
+        sender: "them",
+        senderName: cleanSenderName,
+        text: safeText(rawMsg.text, "", 4000),
+        time: safeText(rawMsg.time, new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }), 40)
+      };
+
+      history.push(message);
+      savePublicChatHistory(fromPubId, history);
+
+      const isInspectingThisPublicUser = (currentInspectorMode === "public" && selectedPublicPubId === fromPubId);
+      if (!isInspectingThisPublicUser) {
+        publicUnreadMap[fromPubId] = true;
+      }
+
+      if (isInspectingThisPublicUser) {
+        const activeEl = document.activeElement;
+        const isTyping = activeEl && activeEl.id === "publicChatInput";
+        if (!isTyping) {
+          renderSelectedFriendInspector();
+        } else {
+          const area = document.getElementById("publicChatMessagesArea");
+          if (area) {
+            const msgDiv = document.createElement("div");
+            msgDiv.className = "chat-bubble incoming";
+            msgDiv.innerHTML = renderChatBubbleInnerHtml(cleanSenderName, message.time, message.text, false);
+            area.appendChild(msgDiv);
+            area.scrollTop = area.scrollHeight;
+          }
+        }
+      }
+      renderSidebarLists();
+    }
+
+    function getPublicChatHistory(pubId) {
+      const cleanId = normalizePublicAnonId(pubId);
+      if (!cleanId) return [];
+      if (!Array.isArray(publicChatHistories[cleanId])) {
+        try {
+          const raw = localStorage.getItem(`calcium_pubchat_${myPublicAnonId}_${cleanId}`);
+          const parsed = raw ? JSON.parse(raw) : [];
+          publicChatHistories[cleanId] = Array.isArray(parsed) ? parsed.slice(-MAX_CHAT_HISTORY) : [];
+        } catch (e) {
+          publicChatHistories[cleanId] = [];
+        }
+      }
+      return publicChatHistories[cleanId];
+    }
+
+    function savePublicChatHistory(pubId, list) {
+      const cleanId = normalizePublicAnonId(pubId);
+      if (!cleanId) return;
+      const safeList = (Array.isArray(list) ? list : []).slice(-MAX_CHAT_HISTORY);
+      publicChatHistories[cleanId] = safeList;
+      try {
+        localStorage.setItem(`calcium_pubchat_${myPublicAnonId}_${cleanId}`, JSON.stringify(safeList));
+      } catch (e) { }
+    }
+
+    function toPublicPeerId(pubId) {
+      return "calcium-pub-" + String(pubId || "").trim().toUpperCase().replace(/[^A-Z0-9-]/g, "");
+    }
+
+    function pubIdFromPeerId(peerId) {
+      const raw = String(peerId || "");
+      const prefix = "calcium-pub-";
+      if (!raw.toLowerCase().startsWith(prefix)) return "";
+      return normalizePublicAnonId(raw.slice(prefix.length));
+    }
+
+    function registerPublicPeerConnection(conn, knownPubId = "") {
+      if (!conn || (typeof conn !== "object" && typeof conn !== "function")) return;
+      const remotePubId = normalizePublicAnonId(knownPubId) || pubIdFromPeerId(conn.peer);
+      if (!remotePubId || remotePubId === myPublicAnonId) return;
+      if (registeredPublicConnections.has(conn)) return;
+      registeredPublicConnections.add(conn);
+
+      const remember = () => { activePublicConns[remotePubId] = conn; };
+      if (conn.open) remember();
+      conn.on("open", remember);
+      conn.on("data", payload => handleIncomingPublicLobbyPacket(payload));
+      conn.on("close", () => {
+        if (activePublicConns[remotePubId] === conn) delete activePublicConns[remotePubId];
+      });
+      conn.on("error", () => {
+        if (activePublicConns[remotePubId] === conn) delete activePublicConns[remotePubId];
+      });
+    }
+
+    function sendPublicChatPacket(targetPubId, packet) {
+      const cleanPub = normalizePublicAnonId(targetPubId);
+      if (!cleanPub || cleanPub === myPublicAnonId) return;
+
+      // 1. Send via MQTT WebSocket topic + BroadcastChannel for instant delivery
+      publishRawPublicLobbyPacket(packet, PUBLIC_LOBBY_TOPIC_CHAT_PREFIX + cleanPub);
+
+      // 2. Also send via direct PeerJS anonymous P2P channel
+      if (!publicPeerNode || publicPeerNode.destroyed || !publicPeerNode.open) return;
+      const existing = activePublicConns[cleanPub];
+      if (existing && existing.open) {
+        try { existing.send(packet); return; } catch (e) { delete activePublicConns[cleanPub]; }
+      }
+      try {
+        const conn = publicPeerNode.connect(toPublicPeerId(cleanPub), { reliable: true });
+        registerPublicPeerConnection(conn, cleanPub);
+        conn.on("open", () => {
+          try { conn.send(packet); } catch (e) { }
+        });
+      } catch (e) { }
+    }
+
+    window.sendPublicUserChatMessage = function (targetPubId) {
+      const cleanPub = normalizePublicAnonId(targetPubId);
+      const inp = document.getElementById("publicChatInput");
+      if (!inp || !cleanPub || cleanPub === myPublicAnonId) return;
+      const txt = inp.value.trim().slice(0, 4000);
+      if (!txt) return;
+      inp.value = "";
+      dispatchPublicChatMessage(cleanPub, txt);
+    };
+
+    window.shareMyUniqueIdInPublicChat = function (targetPubId) {
+      const cleanPub = normalizePublicAnonId(targetPubId);
+      if (!cleanPub || cleanPub === myPublicAnonId) return;
+      const text = `🤝 Here is my Calcium Unique ID: ${myUniqueId} — click "Add as Friend" below to connect and unlock my Timetable & Tasks!`;
+      dispatchPublicChatMessage(cleanPub, text);
+      showToast(`🆔 Sent your Unique ID (${myUniqueId}) in chat!`);
+    };
+
+    function dispatchPublicChatMessage(cleanPub, txt) {
+      const timeStr = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      const messageId = (window.crypto && window.crypto.randomUUID)
+        ? window.crypto.randomUUID()
+        : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+      const myName = getMyCleanDisplayName();
+      const msgObj = { messageId, sender: "me", senderName: myName, text: txt, time: timeStr };
+      const history = getPublicChatHistory(cleanPub);
+      history.push(msgObj);
+      savePublicChatHistory(cleanPub, history);
+      seenChatMessageIds.add(messageId);
+
+      sendPublicChatPacket(cleanPub, {
+        type: "PUB_TEXT_MSG",
+        fromPubId: myPublicAnonId,
+        fromName: myName,
+        toPubId: cleanPub,
+        message: { messageId, text: txt, time: timeStr }
+      });
+
+      const area = document.getElementById("publicChatMessagesArea");
+      if (area) {
+        const emptyHint = area.querySelector(".empty-chat-hint");
+        if (emptyHint) emptyHint.remove();
+        const msgDiv = document.createElement("div");
+        msgDiv.className = "chat-bubble outgoing";
+        msgDiv.innerHTML = renderChatBubbleInnerHtml("You", timeStr, txt, true);
+        area.appendChild(msgDiv);
+        area.scrollTop = area.scrollHeight;
+      }
+    }
+
+    function renderChatBubbleInnerHtml(senderLabel, timeStr, text, isMe) {
+      const safeMsg = escapeHtml(text);
+      const idMatches = String(text || "").toUpperCase().match(/CN-\d{6,12}/g) || [];
+      const uniqueIds = Array.from(new Set(idMatches)).filter(id => id !== myUniqueId);
+
+      let actionButtonsHtml = "";
+      if (uniqueIds.length > 0) {
+        const friendsMap = getSavedFriendsMap();
+        actionButtonsHtml = uniqueIds.map(foundUid => {
+          const alreadyFriend = !!friendsMap[foundUid];
+          return `
+            <div class="uid-Action-card-in-chat">
+              <div>
+                <div style="font-size:10px; color:#6ee7b7; font-weight:800;">🆔 UNIQUE ID SHARED</div>
+                <div style="font-family:'Roboto Mono',monospace; font-weight:800; font-size:13px; color:#f8fafc;">${escapeHtml(foundUid)}</div>
+              </div>
+              <button type="button" class="f-btn emerald" style="padding:6px 11px; font-size:11px;" onclick="connectFriendFromChatId('${escapeHtml(foundUid)}')">
+                ${alreadyFriend ? "🔄 Open Friend Profile" : "🤝 Add as Friend"}
+              </button>
+            </div>
+          `;
+        }).join("");
+      }
+
+      return `
+        <div style="font-size:10px; opacity:0.75; margin-bottom:2px;">${escapeHtml(senderLabel)} • ${escapeHtml(timeStr)}</div>
+        <div>${safeMsg}</div>
+        ${actionButtonsHtml}
+      `;
+    }
+
+    window.connectFriendFromChatId = function (uid) {
+      const cleanUid = normalizeUniqueUserId(uid);
+      if (!cleanUid) return;
+      const inp = document.getElementById("findFriendIdInput");
+      if (inp) inp.value = cleanUid;
+      currentInspectorMode = "friend";
+      currentInspectorTab = "profile";
+      window.searchAndSendStudyRequest();
+    };
+
+    window.setPublicDirectoryFilter = function (filter) {
+      publicDirectoryFilter = ["all", "online", "offline"].includes(filter) ? filter : "all";
+      const btnAll = document.getElementById("pubFilterAll");
+      const btnOn = document.getElementById("pubFilterOnline");
+      const btnOff = document.getElementById("pubFilterOffline");
+      if (btnAll) btnAll.className = `pub-filter-btn ${publicDirectoryFilter === "all" ? "active" : ""}`;
+      if (btnOn) btnOn.className = `pub-filter-btn ${publicDirectoryFilter === "online" ? "active" : ""}`;
+      if (btnOff) btnOff.className = `pub-filter-btn ${publicDirectoryFilter === "offline" ? "active" : ""}`;
+      renderSidebarLists();
+    };
+
+    window.selectPublicUser = function (pubId) {
+      const cleanPub = normalizePublicAnonId(pubId);
+      if (!cleanPub) return;
+      currentInspectorMode = "public";
+      selectedPublicPubId = cleanPub;
+      publicUnreadMap[cleanPub] = false;
+      renderSidebarLists();
+      renderSelectedFriendInspector();
+    };
+
+    window.notifyLockedPublicTab = function (tabLabel) {
+      showToast(`🔒 ${tabLabel} is hidden in Public Mode. Ask for their Unique ID in Text Chat to become Friends!`);
+    };
+
+    /* =========================================================================
+       EXISTING FRIEND P2P ENGINE (FULL ACCESS AFTER UNIQUE ID EXCHANGE)
+    ========================================================================= */
     function enqueueDeferredPacket(targetUid, payload) {
       const uid = normalizeUniqueUserId(targetUid);
       if (!uid || !payload || !payload.type) return;
@@ -991,9 +2035,19 @@
       });
     }
 
-    window.regenerateUniqueId = function() {
+    window.regenerateUniqueId = function () {
+      const modal = document.getElementById("regenConfirmModal");
+      if (modal) modal.classList.add("open");
+    };
+
+    window.closeRegenConfirmModal = function () {
+      const modal = document.getElementById("regenConfirmModal");
+      if (modal) modal.classList.remove("open");
+    };
+
+    window.confirmRegenerateUniqueId = function () {
+      closeRegenConfirmModal();
       const oldUid = ensureUniqueUserId();
-      if (!window.confirm("Generate a new ID? Your saved friends and chats will be kept locally, but friends may need to add your new ID to reconnect.")) return;
 
       let newUid = createUniqueUserId();
       while (newUid === oldUid) newUid = createUniqueUserId();
@@ -1028,7 +2082,7 @@
         try { record.conn.close(); } catch (e) { }
       });
       connectingByUid.clear();
-      deferredPackets.clear(); // Packets created under the old ID must not be sent with stale sender IDs.
+      deferredPackets.clear();
       try { if (crossTabChannel) crossTabChannel.close(); } catch (e) { }
       crossTabChannel = null;
       try { if (peerNode) peerNode.destroy(); } catch (e) { }
@@ -1056,7 +2110,6 @@
     function safeAvatar(value) {
       if (typeof value !== "string") return "";
       const src = value.trim();
-      // App profile photos are compressed to base64 image data URLs. Exclude SVG and executable URLs.
       return /^data:image\/(?:png|jpeg|webp|gif);base64,[a-z0-9+/=\s]+$/i.test(src) && src.length <= 2_000_000 ? src : "";
     }
 
@@ -1170,7 +2223,7 @@
         city: safeText(prof.city, "ICAI India", 100),
         bio: safeText(prof.bio, "Focused on clearing CA exams with consistency!", 1000),
         avatar: safeAvatar(prof.avatar),
-        online: true,
+        online: myPresenceStatus !== "offline",
         isStudying,
         activeSubject,
         totalActualHours: decToHHMM(totalAct),
@@ -1258,9 +2311,6 @@
       return "calcium-uid-" + uid.trim().toUpperCase().replace(/[^A-Z0-9-]/g, "");
     }
 
-    /* =========================================================================
-       CROSS-PC & CROSS-BROWSER NETWORK HUB (PEERJS + GOOGLE STUN + LOCALSTORAGE)
-    ========================================================================= */
     function uidFromPeerId(peerId) {
       const raw = String(peerId || "");
       const prefix = "calcium-uid-";
@@ -1274,7 +2324,6 @@
       const requestedUid = normalizeUniqueUserId(knownUid);
       const remoteUid = requestedUid || remoteFromConn;
       if (!remoteUid || remoteUid === myUniqueId) return;
-      // For inbound connections, trust the ID encoded in the PeerJS connection, not payload text.
       if (remoteFromConn && requestedUid && remoteFromConn !== requestedUid) return;
       if (registeredConnections.has(conn)) return;
       registeredConnections.add(conn);
@@ -1291,10 +2340,28 @@
       });
     }
 
+    const ICE_SERVERS_CONFIG = {
+      iceServers: [
+        { urls: "stun:stun.l.google.com:19302" },
+        { urls: "stun:stun1.l.google.com:19302" },
+        { urls: "stun:stun2.l.google.com:19302" },
+        { urls: "stun:global.stun.twilio.com:3478" },
+        {
+          urls: "turn:openrelay.metered.ca:80",
+          username: "openrelayproject",
+          credential: "openrelayproject"
+        },
+        {
+          urls: "turn:openrelay.metered.ca:443",
+          username: "openrelayproject",
+          credential: "openrelayproject"
+        }
+      ]
+    };
+
     function initNetworkHub() {
       ensureUniqueUserId();
 
-      // Same-browser tabs can exchange envelopes; remote devices use PeerJS/WebRTC.
       try {
         if (crossTabChannel) crossTabChannel.close();
         crossTabChannel = new BroadcastChannel("calcium_friends_network_v1");
@@ -1307,9 +2374,11 @@
 
       if (typeof Peer === "undefined") {
         const badgeTxt = document.getElementById("peerNetworkText");
-        if (badgeTxt) badgeTxt.textContent = "PeerJS failed to load — check your internet connection.";
+        if (badgeTxt) badgeTxt.textContent = "PeerJS failed to load — check internet.";
         return;
       }
+
+      // 1. Private Friend PeerNode (by Unique ID)
       try {
         connectingByUid.forEach(record => {
           clearTimeout(record.retryTimer);
@@ -1324,30 +2393,13 @@
           secure: true,
           key: 'peerjs',
           path: '/',
-          debug: 2,
-          config: {
-            iceServers: [
-              { urls: "stun:stun.l.google.com:19302" },
-              { urls: "stun:stun1.l.google.com:19302" },
-              { urls: "stun:stun2.l.google.com:19302" },
-              { urls: "stun:global.stun.twilio.com:3478" },
-              {
-                urls: "turn:openrelay.metered.ca:80",
-                username: "openrelayproject",
-                credential: "openrelayproject"
-              },
-              {
-                urls: "turn:openrelay.metered.ca:443",
-                username: "openrelayproject",
-                credential: "openrelayproject"
-              }
-            ]
-          }
+          debug: 1,
+          config: ICE_SERVERS_CONFIG
         });
 
         peerNode.on("open", () => {
           const badgeTxt = document.getElementById("peerNetworkText");
-          if (badgeTxt) badgeTxt.textContent = `P2P ready — your ID is ${myUniqueId}`;
+          if (badgeTxt) badgeTxt.textContent = `P2P Ready (${myUniqueId})`;
           flushDeferredPackets();
           window.syncAllOnlineFriends();
         });
@@ -1358,22 +2410,36 @@
           const badgeTxt = document.getElementById("peerNetworkText");
           const type = err && err.type ? err.type : "network-error";
           if (type === "unavailable-id") {
-            if (badgeTxt) badgeTxt.textContent = "This ID is already active in another tab/session. Close duplicate Friends tabs, or use New ID if the issue persists.";
+            if (badgeTxt) badgeTxt.textContent = "ID active in another tab";
             return;
           }
           if (type === "peer-unavailable") return;
-          if (badgeTxt) badgeTxt.textContent = `P2P connection issue (${type}). Check your internet and reload.`;
+          if (badgeTxt) badgeTxt.textContent = `P2P issue (${type})`;
         });
 
         peerNode.on("disconnected", () => {
-          const badgeTxt = document.getElementById("peerNetworkText");
-          if (badgeTxt) badgeTxt.textContent = "P2P reconnecting…";
           try { if (peerNode && !peerNode.destroyed) peerNode.reconnect(); } catch (e) { }
         });
-      } catch (e) {
-        const badgeTxt = document.getElementById("peerNetworkText");
-        if (badgeTxt) badgeTxt.textContent = "Could not start P2P. Check internet access and reload.";
-      }
+      } catch (e) { }
+
+      // 2. Anonymous Public PeerNode (by PUB-xxxx ID so Unique ID is never exposed in Public Chat)
+      try {
+        if (publicPeerNode) { try { publicPeerNode.destroy(); } catch (e) { } }
+        activePublicConns = {};
+        publicPeerNode = new Peer(toPublicPeerId(myPublicAnonId), {
+          host: '0.peerjs.com',
+          port: 443,
+          secure: true,
+          key: 'peerjs',
+          path: '/',
+          debug: 1,
+          config: ICE_SERVERS_CONFIG
+        });
+        publicPeerNode.on("connection", conn => registerPublicPeerConnection(conn));
+        publicPeerNode.on("disconnected", () => {
+          try { if (publicPeerNode && !publicPeerNode.destroyed) publicPeerNode.reconnect(); } catch (e) { }
+        });
+      } catch (e) { }
     }
 
     function packetIsCritical(payload) {
@@ -1403,7 +2469,6 @@
       const cleanTarget = normalizeUniqueUserId(targetUid);
       if (!cleanTarget || cleanTarget === myUniqueId || !payload || typeof payload !== "object" || !payload.type) return;
 
-      // Same-origin fallback. Unique keys prevent rapid messages from overwriting each other.
       if (attempt === 0 && !skipLocalFallback) {
         try {
           if (crossTabChannel) crossTabChannel.postMessage({ targetUid: cleanTarget, payload });
@@ -1418,16 +2483,10 @@
         } catch (e) { }
       }
 
-      if (!peerNode || peerNode.destroyed) {
-        if (packetIsCritical(payload)) enqueueDeferredPacket(cleanTarget, payload);
-        return;
-      }
-      if (!peerNode.open) {
-        if (packetIsCritical(payload)) enqueueDeferredPacket(cleanTarget, payload);
-        return;
-      }
-      if (peerNode.disconnected) {
-        try { peerNode.reconnect(); } catch (e) { }
+      if (!peerNode || peerNode.destroyed || !peerNode.open || peerNode.disconnected) {
+        if (peerNode && peerNode.disconnected && !peerNode.destroyed) {
+          try { peerNode.reconnect(); } catch (e) { }
+        }
         if (packetIsCritical(payload)) enqueueDeferredPacket(cleanTarget, payload);
         return;
       }
@@ -1499,6 +2558,12 @@
           }
         } catch (e) { }
       }
+      if (ev.key && ev.key.startsWith("calcium_pub_pkt_") && ev.newValue) {
+        try {
+          const parsed = JSON.parse(ev.newValue);
+          if (parsed) handleIncomingPublicLobbyPacket(parsed);
+        } catch (e) { }
+      }
       if (ev.key === `calcium_friends_list_${myUniqueId}`) {
         renderSidebarLists();
         renderSelectedFriendInspector();
@@ -1527,13 +2592,13 @@
         const fromUid = verifiedSenderUid(payload.fromUid || payload.snapshot.uid, conn);
         const friendSnap = sanitizeFriendSnapshot(payload.snapshot, fromUid);
         if (!fromUid || !friendSnap || friendSnap.uid !== fromUid || friendSnap.uid === myUniqueId) return;
-        friendSnap.online = true;
+        friendSnap.online = Boolean(payload.snapshot.online !== false);
         friendSnap.lastSeen = Date.now();
         const friendsMap = getSavedFriendsMap();
         friendsMap[friendSnap.uid] = friendSnap;
         saveFriendsMap(friendsMap);
         renderSidebarLists();
-        if (selectedFriendUid === friendSnap.uid) renderSelectedFriendInspector();
+        if (currentInspectorMode === "friend" && selectedFriendUid === friendSnap.uid) renderSelectedFriendInspector();
         notifyParentBadgeCount();
 
         const reply = { type: "FRIEND_SYNC_DATA", fromUid: myUniqueId, snapshot: buildMyFullSnapshot() };
@@ -1550,12 +2615,12 @@
         if (friendsMap[fromUid]) {
           const incomingSnapshot = payload.snapshot ? sanitizeFriendSnapshot(payload.snapshot, fromUid) : null;
           if (incomingSnapshot && incomingSnapshot.uid === fromUid) {
-            incomingSnapshot.online = true;
+            incomingSnapshot.online = Boolean(payload.snapshot.online !== false);
             incomingSnapshot.lastSeen = Date.now();
             friendsMap[fromUid] = incomingSnapshot;
             saveFriendsMap(friendsMap);
             renderSidebarLists();
-            if (selectedFriendUid === fromUid) renderSelectedFriendInspector();
+            if (currentInspectorMode === "friend" && selectedFriendUid === fromUid) renderSelectedFriendInspector();
           }
           const reply = { type: "FRIEND_SYNC_DATA", fromUid: myUniqueId, snapshot: buildMyFullSnapshot() };
           if (conn && conn.open) {
@@ -1572,12 +2637,12 @@
         if (!snapshot) return;
         const friendsMap = getSavedFriendsMap();
         if (friendsMap[snapshotUid]) {
-          snapshot.online = true;
+          snapshot.online = Boolean(payload.snapshot.online !== false);
           snapshot.lastSeen = Date.now();
           friendsMap[snapshotUid] = snapshot;
           saveFriendsMap(friendsMap);
           renderSidebarLists();
-          if (selectedFriendUid === snapshotUid) renderSelectedFriendInspector();
+          if (currentInspectorMode === "friend" && selectedFriendUid === snapshotUid) renderSelectedFriendInspector();
         }
       }
       else if (payload.type === "FRIEND_REMOVED" && payload.fromUid) {
@@ -1623,11 +2688,11 @@
         history.push(message);
         saveChatHistory(fromUid, history);
 
-        if (selectedFriendUid !== fromUid || currentInspectorTab !== "chat") {
+        if (currentInspectorMode !== "friend" || selectedFriendUid !== fromUid || currentInspectorTab !== "chat") {
           unreadMessagesMap[fromUid] = true;
         }
 
-        if (selectedFriendUid === fromUid && currentInspectorTab === "chat") {
+        if (currentInspectorMode === "friend" && selectedFriendUid === fromUid && currentInspectorTab === "chat") {
           const activeEl = document.activeElement;
           const isTyping = activeEl && activeEl.id === "friendChatInput";
           if (!isTyping) {
@@ -1649,8 +2714,11 @@
       }
     }
 
-    window.syncAllOnlineFriends = function() {
+    window.syncAllOnlineFriends = function () {
       if (!myUniqueId) ensureUniqueUserId();
+      if (myVisibilityMode === "public") {
+        publishMyPublicPresence();
+      }
       const friendsMap = getSavedFriendsMap();
       const mySnap = buildMyFullSnapshot();
       const now = Date.now();
@@ -1676,12 +2744,12 @@
       notifyParentBadgeCount();
     };
 
-    window.fillDemoId = function(uid) {
+    window.fillDemoId = function (uid) {
       const inp = document.getElementById("findFriendIdInput");
       if (inp) inp.value = uid;
     };
 
-    window.searchAndSendStudyRequest = function() {
+    window.searchAndSendStudyRequest = function () {
       const inp = document.getElementById("findFriendIdInput");
       const enteredValue = (inp ? inp.value : "").trim();
       if (!enteredValue) {
@@ -1700,7 +2768,8 @@
       }
 
       const friendsMap = getSavedFriendsMap();
-      const mySnap = buildMyFullSnapshot();   // declared BEFORE use (fixes the crash)
+      const mySnap = buildMyFullSnapshot();
+      currentInspectorMode = "friend";
 
       if (friendsMap[targetUid]) {
         selectedFriendUid = targetUid;
@@ -1716,8 +2785,6 @@
       }
 
       const targetDemo = DEMO_DIRECTORY[targetUid];
-
-      // Instant Add locally with placeholder or demo data
       const newFriend = targetDemo || {
         uid: targetUid,
         name: `CA Partner (${targetUid})`,
@@ -1741,7 +2808,6 @@
       saveFriendsMap(friendsMap);
       selectedFriendUid = targetUid;
 
-      // Reuse an existing healthy connection when possible; otherwise PeerJS creates one.
       sendPacketToUser(targetUid, {
         type: "AUTO_ADD_FRIEND",
         fromUid: myUniqueId,
@@ -1751,10 +2817,10 @@
       renderSidebarLists();
       renderSelectedFriendInspector();
       notifyParentBadgeCount();
-      showToast(`✅ Added ${targetUid}. Live sync needs your friend to be online with the Friends hub open.`);
+      showToast(`✅ Added ${targetUid} as a Friend! Syncing profile & timetable...`);
     };
 
-    window.removeFriend = function(uid) {
+    window.removeFriend = function (uid) {
       const cleanUid = (uid || "").trim().toUpperCase();
       const friendsMap = getSavedFriendsMap();
       const name = friendsMap[cleanUid] ? friendsMap[cleanUid].name : cleanUid;
@@ -1763,11 +2829,10 @@
         sendPacketToUser(cleanUid, { type: "FRIEND_REMOVED", fromUid: myUniqueId });
       }
 
-      // Give the removal packet time to be delivered before closing the channel
       if (activeFriendConns[cleanUid]) {
         const oldConn = activeFriendConns[cleanUid];
         delete activeFriendConns[cleanUid];
-        setTimeout(() => { try { oldConn.close(); } catch (e) {} }, 1500);
+        setTimeout(() => { try { oldConn.close(); } catch (e) { } }, 1500);
       }
 
       delete friendsMap[cleanUid];
@@ -1786,24 +2851,119 @@
       const uidEl = document.getElementById("myUniqueIdDisplay");
       const nameEl = document.getElementById("myDisplayNameLabel");
       const moodEl = document.getElementById("myLevelAndMoodLabel");
+      const quickNameInp = document.getElementById("quickPublicNameInput");
       if (uidEl) uidEl.textContent = myUniqueId;
       if (nameEl) nameEl.textContent = snap.name;
       if (moodEl) moodEl.textContent = `CA ${(snap.level || "final").toUpperCase()} • ${snap.moodEmoji} ${snap.moodText}`;
+      if (quickNameInp && document.activeElement !== quickNameInp) {
+        quickNameInp.value = snap.name;
+      }
 
       const avatarBox = document.getElementById("myAvatarBox");
-      if (!avatarBox) return;
-      avatarBox.replaceChildren();
-      if (snap.avatar) {
-        const img = document.createElement("img");
-        img.src = snap.avatar;
-        img.alt = "Me";
-        avatarBox.appendChild(img);
-      } else {
-        avatarBox.textContent = (snap.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
+      if (avatarBox) {
+        avatarBox.replaceChildren();
+        if (snap.avatar) {
+          const img = document.createElement("img");
+          img.src = snap.avatar;
+          img.alt = "Me";
+          avatarBox.appendChild(img);
+        } else {
+          avatarBox.textContent = (snap.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
+        }
       }
+      updateVisibilityControlsUI();
+    }
+
+    function getActivePublicUsersList() {
+      const now = Date.now();
+      const list = [];
+
+      // Always keep our own public card updated if we are in Public mode
+      if (myVisibilityMode === "public") {
+        publicUsersDirectory[myPublicAnonId] = {
+          pubId: myPublicAnonId,
+          name: getMyCleanDisplayName(),
+          visibility: "public",
+          status: myPresenceStatus,
+          lastSeen: now,
+          isMe: true
+        };
+      } else {
+        delete publicUsersDirectory[myPublicAnonId];
+      }
+
+      Object.entries(publicUsersDirectory).forEach(([pid, item]) => {
+        if (!item || item.visibility !== "public") return;
+        const isMe = pid === myPublicAnonId;
+        if (!isMe && (now - (item.lastSeen || 0) > 32000)) {
+          delete publicUsersDirectory[pid];
+          return;
+        }
+        if (publicDirectoryFilter === "online" && item.status !== "online") return;
+        if (publicDirectoryFilter === "offline" && item.status !== "offline") return;
+        list.push(item);
+      });
+
+      // Sort: other online users first, then self, then offline
+      list.sort((a, b) => {
+        if (a.isMe !== b.isMe) return a.isMe ? 1 : -1;
+        if (a.status !== b.status) return a.status === "online" ? -1 : 1;
+        return String(a.name || "").localeCompare(String(b.name || ""));
+      });
+      return list;
     }
 
     function renderSidebarLists() {
+      // 1. Render Public Users Directory (Name & Online/Offline ONLY)
+      const pubList = getActivePublicUsersList();
+      const pubCountEl = document.getElementById("publicUsersCountBadge");
+      if (pubCountEl) pubCountEl.textContent = pubList.length;
+
+      const pubContainer = document.getElementById("publicUsersListContainer");
+      if (pubContainer) {
+        if (pubList.length === 0) {
+          pubContainer.innerHTML = `
+            <div style="font-size:12px; color:#94a3b8; text-align:center; padding:16px 10px; line-height:1.5;">
+              ${myVisibilityMode === "private"
+              ? `No public users matching this filter right now.<br/><span style="color:#6ee7b7; font-weight:700; cursor:pointer; text-decoration:underline;" onclick="setMyVisibilityMode('public')">Switch yourself to Public Mode</span> so others online can see your name!`
+              : `No other public users matching this filter right now.`}
+            </div>
+          `;
+        } else {
+          pubContainer.innerHTML = pubList.map(u => {
+            const isSel = currentInspectorMode === "public" && selectedPublicPubId === u.pubId;
+            const hasUnread = !!publicUnreadMap[u.pubId];
+            const isOnline = u.status === "online";
+            const initials = (u.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
+            return `
+              <div class="friend-item-card public-card ${isSel ? 'selected' : ''}" onclick="selectPublicUser('${escapeHtml(u.pubId)}')">
+                <div class="friend-meta">
+                  <div class="avatar-circle public-avatar" style="width:38px; height:38px; font-size:13px;">
+                    ${escapeHtml(initials)}
+                  </div>
+                  <div style="min-width:0; flex:1;">
+                    <div class="friend-name-row">
+                      <span>${escapeHtml(u.name)}</span>
+                      ${u.isMe ? `<span style="font-size:10px; color:#6ee7b7; font-weight:800;">(You)</span>` : ''}
+                    </div>
+                    <div class="friend-sub-row">
+                      <span style="color:${isOnline ? '#4ade80' : '#94a3b8'}; font-weight:700;">${isOnline ? '🟢 Online' : '⚫ Offline'}</span>
+                      <span>•</span>
+                      <span>💬 Text Only (ID Hidden)</span>
+                    </div>
+                  </div>
+                </div>
+                <div style="display:flex; align-items:center; gap:6px;">
+                  ${hasUnread ? `<span class="unread-dot" title="New unread public message"></span>` : ''}
+                  <span class="status-indicator ${isOnline ? 'online' : 'offline'}" title="${isOnline ? 'Public Online' : 'Public Offline'}"></span>
+                </div>
+              </div>
+            `;
+          }).join("");
+        }
+      }
+
+      // 2. Render Saved Friends Roster
       const friendsMap = getSavedFriendsMap();
       const friendList = Object.entries(friendsMap).map(([uid, item]) => sanitizeFriendSnapshot(item, uid)).filter(Boolean);
       const countEl = document.getElementById("friendsCountBadge");
@@ -1812,15 +2972,17 @@
       const friendsContainer = document.getElementById("friendsListContainer");
       if (!friendsContainer) return;
       if (friendList.length === 0) {
-        selectedFriendUid = null;
-        friendsContainer.innerHTML = `<div style="font-size:12px; color:#64748b; text-align:center; padding:20px 0;">No friends added yet. Enter a Unique ID above to add a study partner.</div>`;
+        if (currentInspectorMode === "friend") selectedFriendUid = null;
+        friendsContainer.innerHTML = `<div style="font-size:12px; color:#64748b; text-align:center; padding:18px 8px;">No friends added yet. Chat with someone in the Public Directory above to exchange Unique IDs!</div>`;
         return;
       }
 
-      if (!selectedFriendUid || !friendsMap[selectedFriendUid]) selectedFriendUid = friendList[0].uid;
+      if (currentInspectorMode === "friend" && (!selectedFriendUid || !friendsMap[selectedFriendUid])) {
+        selectedFriendUid = friendList[0].uid;
+      }
       const now = Date.now();
       friendsContainer.innerHTML = friendList.map(f => {
-        const isSel = f.uid === selectedFriendUid;
+        const isSel = currentInspectorMode === "friend" && f.uid === selectedFriendUid;
         const hasUnread = !!unreadMessagesMap[f.uid];
         const isOnline = !!f.online && (DEMO_DIRECTORY[f.uid] || (now - (f.lastSeen || 0) < 45000));
         const initials = (f.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
@@ -1852,14 +3014,15 @@
       }).join("");
     }
 
-    window.selectFriend = function(uid) {
+    window.selectFriend = function (uid) {
+      currentInspectorMode = "friend";
       selectedFriendUid = uid;
       unreadMessagesMap[uid] = false;
       renderSidebarLists();
       renderSelectedFriendInspector();
     };
 
-    window.switchInspectorTab = function(tab) {
+    window.switchInspectorTab = function (tab) {
       currentInspectorTab = tab;
       if (tab === 'chat' && selectedFriendUid) {
         unreadMessagesMap[selectedFriendUid] = false;
@@ -1867,9 +3030,100 @@
       renderSelectedFriendInspector();
     };
 
+    function renderPublicUserInspector(panel, pubUser) {
+      const initials = (pubUser.name || "CA").split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
+      const isOnline = pubUser.status === "online";
+      const chatList = getPublicChatHistory(pubUser.pubId);
+
+      panel.innerHTML = `
+        <div class="friend-hero-banner public-banner">
+          <div class="friend-hero-left">
+            <div class="hero-avatar public-hero">
+              ${escapeHtml(initials)}
+            </div>
+            <div>
+              <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                <h2 style="font-size:1.35rem; font-weight:800; color:#f8fafc;">${escapeHtml(pubUser.name)} ${pubUser.isMe ? '(You - Public Preview)' : ''}</h2>
+                <span class="pill-tag ${isOnline ? 'green' : 'amber'}">${isOnline ? '🟢 Public Online' : '⚫ Public Offline'}</span>
+              </div>
+              <div class="hero-badges">
+                <span class="pill-tag">🔒 Unique ID Hidden</span>
+                <span class="pill-tag">🔒 Timetable &amp; Tasks Hidden</span>
+                <span class="pill-tag green">💬 Text Chat Enabled</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            ${!pubUser.isMe ? `
+              <button type="button" class="f-btn emerald" onclick="shareMyUniqueIdInPublicChat('${escapeHtml(pubUser.pubId)}')" title="Send your Unique ID in chat so you can become Friends">
+                🆔 Send My Unique ID in Chat
+              </button>
+            ` : ''}
+          </div>
+        </div>
+
+        <div class="inspector-tabs">
+          <button type="button" class="insp-tab-btn active">
+            💬 Public Text Chat
+          </button>
+          <button type="button" class="insp-tab-btn locked" onclick="notifyLockedPublicTab('Profile & Bio')">
+            🔒 Profile &amp; Bio (Friends Only)
+          </button>
+          <button type="button" class="insp-tab-btn locked" onclick="notifyLockedPublicTab('Time Table')">
+            🔒 Time Table (Friends Only)
+          </button>
+          <button type="button" class="insp-tab-btn locked" onclick="notifyLockedPublicTab('Tasks')">
+            🔒 Tasks (Friends Only)
+          </button>
+        </div>
+
+        <div style="flex:1; display:flex; flex-direction:column; gap:10px;">
+          <div style="background:rgba(6, 95, 70, 0.25); border:1px solid rgba(52, 211, 153, 0.35); border-radius:10px; padding:10px 14px; font-size:12px; color:#d1fae5; display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">
+            <span>🛡️ <strong>Public Privacy Mode:</strong> Only <strong>${escapeHtml(pubUser.name)}</strong>'s name is visible. Send a text or exchange Unique IDs below to become Friends and unlock timetables!</span>
+          </div>
+
+          <div class="chat-box-container">
+            <div class="chat-messages-area" id="publicChatMessagesArea">
+              ${chatList.length === 0
+          ? `<div class="empty-chat-hint" style="margin:auto; text-align:center; color:#94a3b8; font-size:12.5px; max-width:380px; line-height:1.5;">
+                    ${pubUser.isMe
+            ? `This is a preview of how other public users see you: <strong>Only your Name (${escapeHtml(pubUser.name)})</strong> and your <strong>${isOnline ? 'Online' : 'Offline'}</strong> status are visible.`
+            : `Say hi to <strong>${escapeHtml(pubUser.name)}</strong>! 👋<br/>When you're ready to study together, click <strong>"🆔 Send My Unique ID in Chat"</strong> to share your ID and become Friends.`}
+                  </div>`
+          : chatList.map(m => `
+                    <div class="chat-bubble ${m.sender === 'me' ? 'outgoing' : 'incoming'}">
+                      ${renderChatBubbleInnerHtml(m.sender === 'me' ? 'You' : (m.senderName || pubUser.name), m.time, m.text, m.sender === 'me')}
+                    </div>
+                  `).join("")
+        }
+            </div>
+            ${!pubUser.isMe ? `
+              <div class="chat-input-row">
+                <input type="text" id="publicChatInput" class="chat-input" placeholder="Message ${escapeHtml(pubUser.name)} (or paste Unique ID)..." onkeydown="if(event.key==='Enter') sendPublicUserChatMessage('${escapeHtml(pubUser.pubId)}')" />
+                <button type="button" class="f-btn primary" onclick="sendPublicUserChatMessage('${escapeHtml(pubUser.pubId)}')">Send 💬</button>
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      `;
+
+      const area = document.getElementById("publicChatMessagesArea");
+      if (area) area.scrollTop = area.scrollHeight;
+    }
+
     function renderSelectedFriendInspector() {
       const panel = document.getElementById("friendInspectorPanel");
       if (!panel) return;
+
+      // Check if inspecting a Public User first
+      if (currentInspectorMode === "public" && selectedPublicPubId) {
+        const pubUser = publicUsersDirectory[selectedPublicPubId];
+        if (pubUser) {
+          renderPublicUserInspector(panel, pubUser);
+          return;
+        }
+      }
 
       const friendsMap = getSavedFriendsMap();
       const rawFriend = selectedFriendUid ? friendsMap[normalizeUniqueUserId(selectedFriendUid)] : null;
@@ -1878,9 +3132,12 @@
       if (!friend) {
         panel.innerHTML = `
           <div style="margin:auto; text-align:center; padding:40px 20px; color:#94a3b8;">
-            <div style="font-size:44px; margin-bottom:12px;">🤝</div>
-            <h3 style="color:#f8fafc; font-size:18px; margin-bottom:6px;">Select or Add a Study Friend</h3>
-            <p style="font-size:13px; max-width:420px; margin:0 auto;">Enter your study partner's Unique ID above. When they are online, you can inspect their Profile, Timetable, Tasks, Text Chat, and start Audio/Video Calls here.</p>
+            <div style="font-size:44px; margin-bottom:12px;">🌐</div>
+            <h3 style="color:#f8fafc; font-size:18px; margin-bottom:6px;">Select Someone in the Public Directory or Add a Friend</h3>
+            <p style="font-size:13px; max-width:460px; margin:0 auto; line-height:1.55;">
+              • Click <strong>🌐 Public</strong> above to appear in the <strong>Public Users Directory</strong> (only your Name is shown).<br/>
+              • Click any Public user on the left to start a <strong>Text Chat</strong>, share your <strong>Unique ID</strong>, and become Friends to unlock Timetables &amp; Tasks!
+            </p>
           </div>
         `;
         return;
@@ -1962,9 +3219,9 @@
                         <td style="font-family:'Roboto Mono',monospace; font-weight:700; color:#4ade80;">${escapeHtml(slot.actual)}h</td>
                         <td>
                           ${slot.timerState
-                            ? `<span class="pill-tag green">▶ Live Studying Now</span>`
-                            : (hhmmToDec(slot.actual) > 0 ? `<span class="pill-tag">✅ Logged</span>` : `<span style="font-size:11px; color:#64748b;">Scheduled</span>`)
-                          }
+                ? `<span class="pill-tag green">▶ Live Studying Now</span>`
+                : (hhmmToDec(slot.actual) > 0 ? `<span class="pill-tag">✅ Logged</span>` : `<span style="font-size:11px; color:#64748b;">Scheduled</span>`)
+              }
                         </td>
                       </tr>
                     `).join("")}
@@ -2013,14 +3270,14 @@
           <div class="chat-box-container">
             <div class="chat-messages-area" id="chatMessagesArea">
               ${chatList.length === 0
-                ? `<div style="margin:auto; text-align:center; color:#64748b; font-size:12px; font-style:italic;">No messages yet. Send a greeting or ask a study question! 👋</div>`
-                : chatList.map(m => `
+            ? `<div style="margin:auto; text-align:center; color:#64748b; font-size:12px; font-style:italic;">No messages yet. Send a greeting or ask a study question! 👋</div>`
+            : chatList.map(m => `
                     <div class="chat-bubble ${m.sender === 'me' ? 'outgoing' : 'incoming'}">
                       <div style="font-size:10px; opacity:0.75; margin-bottom:2px;">${m.sender === 'me' ? 'You' : escapeHtml(friend.name)} • ${escapeHtml(m.time)}</div>
                       <div>${escapeHtml(m.text)}</div>
                     </div>
                   `).join("")
-              }
+          }
             </div>
             <div class="chat-input-row">
               <input type="text" id="friendChatInput" class="chat-input" placeholder="Type a message to ${escapeHtml(friend.name)}..." onkeydown="if(event.key==='Enter') sendFriendChatMessage('${friend.uid}')" />
@@ -2045,9 +3302,9 @@
                 <span class="pill-tag">${escapeHtml(friend.moodEmoji || '🔥')} ${escapeHtml(friend.moodText || 'Locked In')}</span>
                 <span class="pill-tag purple">CA ${(friend.level || 'final').toUpperCase()}</span>
                 ${friend.isStudying
-                  ? `<span class="pill-tag green">▶ Studying ${escapeHtml(friend.activeSubject || 'Now')}</span>`
-                  : `<span class="pill-tag">⏱️ ${escapeHtml(friend.totalActualHours || '00:00')}h Today</span>`
-                }
+          ? `<span class="pill-tag green">▶ Studying ${escapeHtml(friend.activeSubject || 'Now')}</span>`
+          : `<span class="pill-tag">⏱️ ${escapeHtml(friend.totalActualHours || '00:00')}h Today</span>`
+        }
               </div>
             </div>
           </div>
@@ -2088,7 +3345,7 @@
       }
     };
 
-    window.sendFriendChatMessage = function(friendUid) {
+    window.sendFriendChatMessage = function (friendUid) {
       const cleanUid = normalizeUniqueUserId(friendUid);
       const inp = document.getElementById("friendChatInput");
       if (!inp || !cleanUid || cleanUid === myUniqueId) return;
@@ -2128,7 +3385,7 @@
       }
     };
 
-    window.startCoStudyRoomWithFriend = function(uid) {
+    window.startCoStudyRoomWithFriend = function (uid) {
       const cleanUid = normalizeUniqueUserId(uid);
       if (!cleanUid || cleanUid === myUniqueId) return;
       const roomCode = "CA-" + cleanUid.replace(/[^0-9]/g, "").slice(-4).padStart(4, "8");
@@ -2140,7 +3397,7 @@
       window.location.href = `./index.html?room=${roomCode}`;
     };
 
-    window.copyFriendTimetableToMyPlanner = function(uid) {
+    window.copyFriendTimetableToMyPlanner = function (uid) {
       const friendsMap = getSavedFriendsMap();
       const friend = friendsMap[uid];
       if (!friend || !Array.isArray(friend.timetable) || friend.timetable.length === 0) return;
@@ -2165,10 +3422,10 @@
           window.parent.syncPlanIframeFromReadRoom();
         }
         showToast(`✅ Copied ${friend.name}'s timetable into your Planning Mode for today!`);
-      } catch (e) {}
+      } catch (e) { }
     };
 
-    window.importFriendTasksToMyReadMode = function(uid) {
+    window.importFriendTasksToMyReadMode = function (uid) {
       const friendsMap = getSavedFriendsMap();
       const friend = friendsMap[uid];
       if (!friend || !Array.isArray(friend.tasks) || friend.tasks.length === 0) return;
@@ -2189,10 +3446,10 @@
         });
         localStorage.setItem("cn_tasks", JSON.stringify(myTasks));
         showToast(`✅ Imported ${added} revision task${added === 1 ? "" : "s"} into your Read Mode!`);
-      } catch (e) {}
+      } catch (e) { }
     };
 
-    window.copyMyUniqueId = async function() {
+    window.copyMyUniqueId = async function () {
       try {
         if (navigator.clipboard && navigator.clipboard.writeText) {
           await navigator.clipboard.writeText(myUniqueId);
@@ -2215,7 +3472,7 @@
       }
     };
 
-    window.shareMyUniqueIdWhatsApp = function() {
+    window.shareMyUniqueIdWhatsApp = function () {
       const snap = buildMyFullSnapshot();
       const text = `Hey! Let's study together on Calcium Notes Study Reactor 📚🔥\nAdd me on the Friends tab using my Unique User ID: *${myUniqueId}* (${snap.name} - CA ${(snap.level || 'final').toUpperCase()}) so we can chat, call, and share our live timetables!`;
       window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
@@ -2225,10 +3482,9 @@
       try {
         if (window.parent && window.parent !== window && typeof window.parent.syncFriendsCountBadge === "function") {
           const friendsCount = Object.keys(getSavedFriendsMap()).length;
-          // We removed requests, so req count is always 0
           window.parent.syncFriendsCountBadge(friendsCount, 0);
         }
-      } catch (e) {}
+      } catch (e) { }
     }
 
     let toastTimer = null;
@@ -2247,7 +3503,7 @@
       return d.innerHTML;
     }
 
-    window.closeOrNavigateHome = function() {
+    window.closeOrNavigateHome = function () {
       if (window.parent && window.parent !== window && typeof window.parent.closeFriendsModal === "function") {
         window.parent.closeFriendsModal();
         return;
@@ -2255,7 +3511,7 @@
       window.location.assign("index.html");
     };
 
-    window.refreshFriendsHubFromParent = function() {
+    window.refreshFriendsHubFromParent = function () {
       ensureUniqueUserId();
       renderMyHeaderInfo();
       renderSidebarLists();
@@ -2263,18 +3519,37 @@
       notifyParentBadgeCount();
     };
 
+    window.addEventListener("beforeunload", () => {
+      if (myVisibilityMode === "public") {
+        publishMyPublicLeave();
+      }
+    });
+
     window.addEventListener("DOMContentLoaded", () => {
       ensureUniqueUserId();
       renderMyHeaderInfo();
+      initPublicLobbyRelay();
+      initNetworkHub();
       renderSidebarLists();
       renderSelectedFriendInspector();
-      initNetworkHub();
       notifyParentBadgeCount();
 
-      // Silent background live status sync every 12 seconds (no popups)
+      // Heartbeat for Public Lobby Presence every 6 seconds
+      setInterval(() => {
+        if (myVisibilityMode === "public") {
+          publishMyPublicPresence();
+        }
+        const activeEl = document.activeElement;
+        const isTyping = activeEl && (activeEl.id === "friendChatInput" || activeEl.id === "publicChatInput" || activeEl.id === "findFriendIdInput" || activeEl.id === "quickPublicNameInput");
+        if (!isTyping) {
+          renderSidebarLists();
+        }
+      }, 6000);
+
+      // Silent background Friend sync every 12 seconds
       setInterval(() => {
         const activeEl = document.activeElement;
-        const isTyping = activeEl && (activeEl.id === "friendChatInput" || activeEl.id === "findFriendIdInput");
+        const isTyping = activeEl && (activeEl.id === "friendChatInput" || activeEl.id === "publicChatInput" || activeEl.id === "findFriendIdInput" || activeEl.id === "quickPublicNameInput");
         if (!isTyping) {
           syncAllOnlineFriends();
         }
@@ -2283,7 +3558,7 @@
 
     window.addEventListener("storage", () => {
       const activeEl = document.activeElement;
-      const isTyping = activeEl && activeEl.id === "friendChatInput";
+      const isTyping = activeEl && (activeEl.id === "friendChatInput" || activeEl.id === "publicChatInput" || activeEl.id === "quickPublicNameInput");
       if (!isTyping) {
         renderMyHeaderInfo();
         renderSidebarLists();
@@ -2293,4 +3568,5 @@
     });
   </script>
 </body>
+
 </html>
