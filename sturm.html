@@ -1933,9 +1933,12 @@
           <!-- TAB 2: Live Room Chat -->
           <div id="drawerPanelChat" class="gmeet-drawer-body" style="display:none; flex-direction:column; height:100%;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-              <span style="font-size:11px; color:#94a3b8;">Messages are visible to everyone in the call</span>
-              <span id="chatRoomBadge"
-                style="font-size:10px; background:rgba(59,130,246,0.25); padding:2px 7px; border-radius:99px; color:#93c5fd;">Active</span>
+              <span style="font-size:11px; color:#94a3b8;">Visible to everyone in call</span>
+              <div style="display:flex; align-items:center; gap:6px;">
+                <button type="button" class="chat-action-link" onclick="clearSquadChat()" title="Clear room chat messages">🗑️ Clear Chat</button>
+                <span id="chatRoomBadge"
+                  style="font-size:10px; background:rgba(59,130,246,0.25); padding:2px 7px; border-radius:99px; color:#93c5fd;">Active</span>
+              </div>
             </div>
             <div id="squadChatMessages"
               style="flex:1; overflow-y:auto; background:rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:10px; display:flex; flex-direction:column; gap:6px; font-size:12px; margin-bottom:10px;">
@@ -4278,6 +4281,14 @@
        LIVE ROOM CHAT LOGIC (PEERJS WEBRTC)
     ========================================= */
     let roomChatMessages = [];
+
+    window.clearSquadChat = function () {
+      roomChatMessages = [];
+      const container = document.getElementById("squadChatMessages");
+      if (container) {
+        container.innerHTML = `<div style="color:#64748b; font-style:italic; text-align:center; margin:auto 0;">Room study chat cleared. Say hi to your study partners! 👋</div>`;
+      }
+    };
 
     window.sendSquadChatMessage = function () {
       const inp = document.getElementById("squadChatInput");

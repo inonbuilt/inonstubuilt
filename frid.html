@@ -828,6 +828,28 @@
       cursor: not-allowed;
     }
 
+    .chat-action-link {
+      background: rgba(239, 68, 68, 0.12);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #fca5a5;
+      border-radius: 6px;
+      padding: 3px 9px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .chat-action-link:hover {
+      background: rgba(239, 68, 68, 0.25);
+      color: #ffffff;
+      border-color: rgba(239, 68, 68, 0.6);
+      transform: translateY(-1px);
+    }
+
     /* Chat & Content Stage Structure */
     .chat-stage-wrapper {
       flex: 1;
@@ -2290,6 +2312,42 @@
       } catch (e) { }
     }
 
+    
+    /* Clear Chat Handlers */
+    window.clearPublicChat = function (targetPubId) {
+      const cleanPub = normalizePublicAnonId(targetPubId);
+      if (!cleanPub) return;
+      if (!confirm("Are you sure you want to clear your chat conversation with this user?")) return;
+      publicChatHistories[cleanPub] = [];
+      try {
+        localStorage.removeItem(`calcium_pubchat_${myPublicAnonId}_${cleanPub}`);
+      } catch (e) { }
+      const area = document.getElementById("publicChatMessagesArea");
+      if (area) {
+        area.innerHTML = `<div class="empty-chat-hint" style="margin:auto; text-align:center; color:#94a3b8; font-size:12.5px; max-width:380px; line-height:1.5;">
+          Conversation cleared. Say hi to start fresh! 👋
+        </div>`;
+      }
+      showToast("🧹 Chat conversation cleared.");
+    };
+
+    window.clearFriendChat = function (friendUid) {
+      const cleanUid = normalizeUniqueUserId(friendUid);
+      if (!cleanUid) return;
+      if (!confirm("Are you sure you want to clear your chat history with this friend?")) return;
+      chatHistories[cleanUid] = [];
+      try {
+        localStorage.removeItem(`calcium_chat_${myUniqueId}_${cleanUid}`);
+      } catch (e) { }
+      const area = document.getElementById("chatMessagesArea");
+      if (area) {
+        area.innerHTML = `<div style="margin:auto; text-align:center; color:#64748b; font-size:12px; font-style:italic;">
+          Chat history cleared. Send a greeting or ask a study question! 👋
+        </div>`;
+      }
+      showToast("🧹 Friend chat history cleared.");
+    };
+
     window.sendPublicUserChatMessage = function (targetPubId) {
       const cleanPub = normalizePublicAnonId(targetPubId);
       const inp = document.getElementById("publicChatInput");
@@ -3462,10 +3520,13 @@
             </div>
           </div>
 
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
             ${!pubUser.isMe ? `
               <button type="button" class="f-btn emerald" onclick="shareMyUniqueIdInPublicChat('${escapeHtml(pubUser.pubId)}')" title="Send your Unique ID in chat so you can become Friends">
                 🆔 Send My Unique ID in Chat
+              </button>
+              <button type="button" class="f-btn danger" onclick="clearPublicChat('${escapeHtml(pubUser.pubId)}')" title="Clear chat conversation with this user">
+                🗑️ Clear Chat
               </button>
             ` : ''}
           </div>
@@ -3489,6 +3550,11 @@
         <div class="chat-stage-wrapper">
           <div class="public-privacy-banner">
             <span>🛡️ <strong>Public Privacy Mode:</strong> Only <strong>${escapeHtml(pubUser.name)}</strong>'s name is visible. Send a text or exchange Unique IDs below to become Friends and unlock timetables!</span>
+            ${!pubUser.isMe ? `
+              <button type="button" class="chat-action-link" onclick="clearPublicChat('${escapeHtml(pubUser.pubId)}')" title="Clear conversation messages">
+                🗑️ Clear Chat
+              </button>
+            ` : ''}
           </div>
 
           <div class="chat-box-container">
@@ -3682,7 +3748,12 @@
         const chatList = getChatHistory(friend.uid);
         tabBodyHtml = `
           <div class="chat-stage-wrapper">
-            <div class="box-tag" style="margin-bottom:8px; flex-shrink:0;">💬 LIVE CHAT WITH ${escapeHtml(friend.name.toUpperCase())}</div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-shrink:0;">
+              <div class="box-tag" style="margin:0;">💬 LIVE CHAT WITH ${escapeHtml(friend.name.toUpperCase())}</div>
+              <button type="button" class="chat-action-link" onclick="clearFriendChat('${friend.uid}')" title="Clear chat messages">
+                🗑️ Clear Chat
+              </button>
+            </div>
             <div class="chat-box-container">
               <div class="chat-messages-area" id="chatMessagesArea">
                 ${chatList.length === 0
@@ -3726,12 +3797,15 @@
             </div>
           </div>
 
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
             <button class="f-btn primary" onclick="switchInspectorTab('chat')" title="Open Text Chat">
               💬 Message
             </button>
-            <button class="f-btn danger" onclick="removeFriend('${friend.uid}')" title="Remove Friend">
-              🗑️
+            <button class="f-btn danger" onclick="clearFriendChat('${friend.uid}')" title="Clear chat history with this friend">
+              🗑️ Clear Chat
+            </button>
+            <button class="f-btn ghost danger-hover" onclick="removeFriend('${friend.uid}')" title="Remove Friend">
+              ✕
             </button>
           </div>
         </div>
