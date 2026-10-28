@@ -2153,11 +2153,7 @@
         };
         savePublicDirectoryCache();
         renderSidebarLists();
-        if (currentInspectorMode === "public" && selectedPublicPubId === pubId) {
-          const activeEl = document.activeElement;
-          const isTyping = activeEl && activeEl.id === "publicChatInput";
-          if (!isTyping) renderSelectedFriendInspector();
-        }
+        // Do not re-render the inspector DOM on heartbeats (prevents scroll jumps & text deselect)
       }
       else if (packet.type === "PUB_LEAVE") {
         const pubId = normalizePublicAnonId(packet.pubId);
@@ -2217,19 +2213,15 @@
       }
 
       if (isInspectingThisPublicUser) {
-        const activeEl = document.activeElement;
-        const isTyping = activeEl && activeEl.id === "publicChatInput";
-        if (!isTyping) {
-          renderSelectedFriendInspector();
-        } else {
-          const area = document.getElementById("publicChatMessagesArea");
-          if (area) {
-            const msgDiv = document.createElement("div");
-            msgDiv.className = "chat-bubble incoming";
-            msgDiv.innerHTML = renderChatBubbleInnerHtml(cleanSenderName, message.time, message.text, false);
-            area.appendChild(msgDiv);
-            area.scrollTop = area.scrollHeight;
-          }
+        const area = document.getElementById("publicChatMessagesArea");
+        if (area) {
+          const emptyHint = area.querySelector(".empty-chat-hint");
+          if (emptyHint) emptyHint.remove();
+          const msgDiv = document.createElement("div");
+          msgDiv.className = "chat-bubble incoming";
+          msgDiv.innerHTML = renderChatBubbleInnerHtml(cleanSenderName, message.time, message.text, false);
+          area.appendChild(msgDiv);
+          area.scrollTop = area.scrollHeight;
         }
       }
       renderSidebarLists();
@@ -3025,7 +3017,9 @@
       }
       if (ev.key === `calcium_friends_list_${myUniqueId}`) {
         renderSidebarLists();
-        renderSelectedFriendInspector();
+        if (currentInspectorTab !== "chat") {
+          renderSelectedFriendInspector();
+        }
         notifyParentBadgeCount();
       }
       if (ev.key === CALCIUM_UID_KEY || ev.key === CALCIUM_PROFILE_KEY) {
@@ -3057,7 +3051,7 @@
         friendsMap[friendSnap.uid] = friendSnap;
         saveFriendsMap(friendsMap);
         renderSidebarLists();
-        if (currentInspectorMode === "friend" && selectedFriendUid === friendSnap.uid) renderSelectedFriendInspector();
+        if (currentInspectorMode === "friend" && selectedFriendUid === friendSnap.uid && currentInspectorTab !== "chat") renderSelectedFriendInspector();
         notifyParentBadgeCount();
 
         const reply = { type: "FRIEND_SYNC_DATA", fromUid: myUniqueId, snapshot: buildMyFullSnapshot() };
@@ -3079,7 +3073,7 @@
             friendsMap[fromUid] = incomingSnapshot;
             saveFriendsMap(friendsMap);
             renderSidebarLists();
-            if (currentInspectorMode === "friend" && selectedFriendUid === fromUid) renderSelectedFriendInspector();
+            if (currentInspectorMode === "friend" && selectedFriendUid === fromUid && currentInspectorTab !== "chat") renderSelectedFriendInspector();
           }
           const reply = { type: "FRIEND_SYNC_DATA", fromUid: myUniqueId, snapshot: buildMyFullSnapshot() };
           if (conn && conn.open) {
@@ -3101,7 +3095,7 @@
           friendsMap[snapshotUid] = snapshot;
           saveFriendsMap(friendsMap);
           renderSidebarLists();
-          if (currentInspectorMode === "friend" && selectedFriendUid === snapshotUid) renderSelectedFriendInspector();
+          if (currentInspectorMode === "friend" && selectedFriendUid === snapshotUid && currentInspectorTab !== "chat") renderSelectedFriendInspector();
         }
       }
       else if (payload.type === "FRIEND_REMOVED" && payload.fromUid) {
@@ -3152,21 +3146,17 @@
         }
 
         if (currentInspectorMode === "friend" && selectedFriendUid === fromUid && currentInspectorTab === "chat") {
-          const activeEl = document.activeElement;
-          const isTyping = activeEl && activeEl.id === "friendChatInput";
-          if (!isTyping) {
-            renderSelectedFriendInspector();
-          } else {
-            const area = document.getElementById("chatMessagesArea");
-            if (area) {
-              const friendsMap = getSavedFriendsMap();
-              const fName = friendsMap[fromUid] ? friendsMap[fromUid].name : fromUid;
-              const msgDiv = document.createElement("div");
-              msgDiv.className = "chat-bubble incoming";
-              msgDiv.innerHTML = `<div style="font-size:10px; opacity:0.75; margin-bottom:2px;">${escapeHtml(fName)} • ${escapeHtml(message.time)}</div><div>${escapeHtml(message.text)}</div>`;
-              area.appendChild(msgDiv);
-              area.scrollTop = area.scrollHeight;
-            }
+          const area = document.getElementById("chatMessagesArea");
+          if (area) {
+            const emptyHint = area.querySelector(".empty-chat-hint");
+            if (emptyHint) emptyHint.remove();
+            const friendsMap = getSavedFriendsMap();
+            const fName = friendsMap[fromUid] ? friendsMap[fromUid].name : fromUid;
+            const msgDiv = document.createElement("div");
+            msgDiv.className = "chat-bubble incoming";
+            msgDiv.innerHTML = `<div style="font-size:10px; opacity:0.75; margin-bottom:2px;">${escapeHtml(fName)} • ${escapeHtml(message.time)}</div><div>${escapeHtml(message.text)}</div>`;
+            area.appendChild(msgDiv);
+            area.scrollTop = area.scrollHeight;
           }
         }
         renderSidebarLists();
@@ -3548,14 +3538,7 @@
         </div>
 
         <div class="chat-stage-wrapper">
-          <div class="public-privacy-banner">
-            <span>🛡️ <strong>Public Privacy Mode:</strong> Only <strong>${escapeHtml(pubUser.name)}</strong>'s name is visible. Send a text or exchange Unique IDs below to become Friends and unlock timetables!</span>
-            ${!pubUser.isMe ? `
-              <button type="button" class="chat-action-link" onclick="clearPublicChat('${escapeHtml(pubUser.pubId)}')" title="Clear conversation messages">
-                🗑️ Clear Chat
-              </button>
-            ` : ''}
-          </div>
+
 
           <div class="chat-box-container">
             <div class="chat-messages-area" id="publicChatMessagesArea">
@@ -4048,16 +4031,7 @@
       }, 12000);
     });
 
-    window.addEventListener("storage", () => {
-      const activeEl = document.activeElement;
-      const isTyping = activeEl && (activeEl.id === "friendChatInput" || activeEl.id === "publicChatInput" || activeEl.id === "quickPublicNameInput");
-      if (!isTyping) {
-        renderMyHeaderInfo();
-        renderSidebarLists();
-        renderSelectedFriendInspector();
-        notifyParentBadgeCount();
-      }
-    });
+
   </script>
 </body>
 
