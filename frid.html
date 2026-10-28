@@ -15,240 +15,528 @@
   <script src="https://unpkg.com/mqtt@5.10.3/dist/mqtt.min.js"></script>
   <style>
     :root {
-      --bg-deep: #050a14;
-      --bg-panel: rgba(15, 23, 42, 0.78);
-      --border-cyan: rgba(56, 189, 248, 0.28);
-      --accent-blue: #2563eb;
-      --accent-cyan: #06b6d4;
+      --bg-body: #0b0f19;
+      --bg-sidebar: rgba(15, 23, 42, 0.85);
+      --bg-card: rgba(30, 41, 59, 0.65);
+      --bg-card-hover: rgba(30, 41, 59, 0.9);
+      --bg-active: rgba(56, 189, 248, 0.12);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-focus: rgba(56, 189, 248, 0.5);
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-dim: #64748b;
+      --accent-blue: #38bdf8;
       --accent-emerald: #10b981;
-      --accent-purple: #8b5cf6;
+      --accent-purple: #a855f7;
       --accent-amber: #f59e0b;
       --accent-rose: #f43f5e;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     body {
-      background: radial-gradient(circle at 15% 20%, #1e3a8a 0%, #070b16 55%, #04070e 100%);
-      color: var(--text-main);
-      min-height: 100vh;
-      overflow-x: hidden;
+      background-color: var(--bg-body);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.07) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.06) 0px, transparent 50%);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
 
-    /* Top Header */
+    /* Custom high-performance scrollbars */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.22);
+    }
+
+    /* =========================================================================
+       1. TOP APP BAR (Real Social Media Header)
+       ========================================================================= */
     .frid-navbar {
+      height: 56px;
+      background: rgba(11, 15, 25, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 14px 24px;
-      background: rgba(7, 11, 22, 0.92);
-      border-bottom: 1px solid var(--border-cyan);
-      backdrop-filter: blur(20px);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      flex-wrap: wrap;
-      gap: 12px;
+      justify-content: space-between;
+      padding: 0 16px;
+      z-index: 50;
+      flex-shrink: 0;
     }
 
     .frid-brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
+      text-decoration: none;
     }
 
     .frid-brand-icon {
-      width: 38px;
-      height: 38px;
+      width: 34px;
+      height: 34px;
       border-radius: 10px;
-      background: linear-gradient(135deg, #059669, #06b6d4);
+      background: linear-gradient(135deg, #0ea5e9, #10b981);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 20px;
-      box-shadow: 0 4px 15px rgba(16, 185, 129, 0.35);
+      font-size: 18px;
+      box-shadow: 0 2px 10px rgba(16, 185, 129, 0.25);
     }
 
-    .frid-brand h1 {
-      font-size: 1.15rem;
+    .frid-brand-title {
+      font-size: 15px;
       font-weight: 800;
-      color: #f8fafc;
-      letter-spacing: -0.3px;
+      color: var(--text-primary);
+      letter-spacing: -0.2px;
+      line-height: 1.2;
     }
 
-    .frid-brand h1 span {
-      color: #38bdf8;
+    .frid-brand-title .highlight {
+      background: linear-gradient(90deg, #38bdf8, #34d399);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
     }
 
     .frid-brand-sub {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      letter-spacing: 0.2px;
+    }
+
+    .frid-nav-center {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .net-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 9999px;
       font-size: 11px;
-      color: var(--text-muted);
-      font-weight: 500;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      transition: all 0.2s;
+    }
+
+    .net-pill.lobby-pill {
+      border-color: rgba(52, 211, 153, 0.25);
+      color: #a7f3d0;
+    }
+
+    .net-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.7);
+      display: inline-block;
+      animation: pulseDot 2s infinite;
+    }
+
+    .net-dot.offline {
+      background: #ef4444;
+      box-shadow: 0 0 6px #ef4444;
+      animation: none;
+    }
+
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
     }
 
     .frid-nav-right {
       display: flex;
       align-items: center;
       gap: 10px;
-      flex-wrap: wrap;
     }
 
-    .net-pill {
-      display: inline-flex;
+    .user-status-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      padding: 4px 10px;
+      display: flex;
       align-items: center;
-      gap: 7px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 11px;
-      font-weight: 700;
-      background: rgba(16, 185, 129, 0.14);
-      border: 1px solid rgba(16, 185, 129, 0.4);
-      color: #6ee7b7;
+      gap: 6px;
+      cursor: pointer;
+      color: var(--text-primary);
+      transition: all 0.2s;
     }
 
-    .net-pill.lobby-pill {
-      background: rgba(56, 189, 248, 0.14);
-      border-color: rgba(56, 189, 248, 0.4);
-      color: #7dd3fc;
-    }
-
-    .net-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #10b981;
-      box-shadow: 0 0 8px #10b981;
-      animation: pulseNet 1.6s infinite;
-    }
-
-    .net-dot.offline {
-      background: #64748b;
-      box-shadow: none;
-      animation: none;
-    }
-
-    @keyframes pulseNet {
-
-      0%,
-      100% {
-        transform: scale(1);
-        opacity: 0.85;
-      }
-
-      50% {
-        transform: scale(1.3);
-        opacity: 1;
-      }
+    .user-status-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
     }
 
     .btn-back-dashboard {
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: #e2e8f0;
-      padding: 8px 16px;
-      border-radius: 9px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 7px 12px;
+      color: var(--text-primary);
       font-size: 12px;
       font-weight: 700;
       cursor: pointer;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
       transition: all 0.2s;
     }
 
     .btn-back-dashboard:hover {
-      background: rgba(56, 189, 248, 0.2);
-      border-color: #38bdf8;
-      color: white;
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--accent-blue);
     }
 
-    /* Main Container */
-    .frid-container {
-      max-width: 1480px;
-      margin: 0 auto;
-      padding: 20px 24px 40px;
+    /* Buttons */
+    .f-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .f-btn.primary {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+    }
+    .f-btn.primary:hover {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      transform: translateY(-1px);
+    }
+
+    .f-btn.emerald {
+      background: linear-gradient(135deg, #059669, #047857);
+      color: white;
+      box-shadow: 0 2px 8px rgba(5, 150, 105, 0.3);
+    }
+    .f-btn.emerald:hover {
+      background: linear-gradient(135deg, #10b981, #059669);
+      transform: translateY(-1px);
+    }
+
+    .f-btn.purple {
+      background: linear-gradient(135deg, #7c3aed, #6d28d9);
+      color: white;
+      box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+    }
+    .f-btn.purple:hover {
+      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      transform: translateY(-1px);
+    }
+
+    .f-btn.ghost {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+    }
+    .f-btn.ghost:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-primary);
+    }
+
+    .f-btn.danger {
+      background: rgba(239, 68, 68, 0.15);
+      color: #fca5a5;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+    .f-btn.danger:hover {
+      background: rgba(239, 68, 68, 0.25);
+    }
+
+    .f-btn.icon-btn {
+      padding: 7px 10px;
+      font-size: 14px;
+    }
+
+    /* =========================================================================
+       2. MAIN APP CONTAINER (Split View: Sidebar + Stage)
+       ========================================================================= */
+    .social-app-container {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Left Sidebar: Friends & Public Lobby */
+    .social-sidebar {
+      width: 380px;
+      min-width: 330px;
+      max-width: 420px;
+      background: var(--bg-sidebar);
+      backdrop-filter: blur(20px);
+      border-right: 1px solid var(--border);
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      overflow: hidden;
+      flex-shrink: 0;
+      z-index: 10;
     }
 
-    /* Top Discovery & Unique ID Grid */
-    .top-discovery-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.1fr 1fr;
-      gap: 18px;
+    /* Top Sidebar Navigation Tabs */
+    .sidebar-top-tabs {
+      display: flex;
+      gap: 8px;
+      padding: 12px 14px 10px 14px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(11, 15, 25, 0.4);
     }
 
-    .glass-box {
-      background: var(--bg-panel);
-      border: 1px solid var(--border-cyan);
-      border-radius: 16px;
-      padding: 20px;
-      backdrop-filter: blur(16px);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
-    }
-
-    .box-tag {
-      font-size: 10px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: #38bdf8;
-      margin-bottom: 8px;
+    .sidebar-tab-btn {
+      flex: 1;
       display: flex;
       align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-secondary);
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-tab-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-primary);
+    }
+
+    .sidebar-tab-btn.active {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border-color: rgba(56, 189, 248, 0.35);
+      box-shadow: 0 2px 8px rgba(56, 189, 248, 0.1);
+    }
+
+    .count-badge {
+      padding: 2px 7px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 800;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-primary);
+    }
+
+    .count-badge.emerald {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+    }
+
+    /* Sidebar Quick Search */
+    .sidebar-search-box {
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(15, 23, 42, 0.5);
+    }
+
+    .search-icon {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    .social-search-input {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 7px 12px;
+      color: var(--text-primary);
+      font-size: 12.5px;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .social-search-input:focus {
+      border-color: var(--accent-blue);
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.15);
+    }
+
+    /* Sidebar Scroll Area */
+    .sidebar-scroll-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
       gap: 6px;
     }
 
-    .my-id-card {
+    .social-list-view {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      gap: 14px;
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 58, 138, 0.35));
+      gap: 4px;
     }
 
-    .my-id-top {
+    .list-subhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--text-dim);
+      margin: 4px 6px 8px 6px;
+    }
+
+    .mini-add-link {
+      background: none;
+      border: none;
+      color: var(--accent-emerald);
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 0;
+    }
+    .mini-add-link:hover {
+      text-decoration: underline;
+    }
+
+    .privacy-mini-pill {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(16, 185, 129, 0.15);
+      color: #6ee7b7;
+      font-weight: 700;
+    }
+
+    /* Public Directory Filter Tabs */
+    .pub-filter-tabs {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 8px;
+      padding: 0 2px;
+    }
+
+    .pub-filter-btn {
+      flex: 1;
+      padding: 5px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .pub-filter-btn:hover {
+      background: rgba(255, 255, 255, 0.07);
+      color: var(--text-primary);
+    }
+
+    .pub-filter-btn.active {
+      background: rgba(16, 185, 129, 0.15);
+      border-color: rgba(16, 185, 129, 0.4);
+      color: #34d399;
+    }
+
+    /* Contact Cards */
+    .friends-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .friend-item-card {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .my-profile-mini {
+    .friend-item-card:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.1);
+      transform: translateX(3px);
+    }
+
+    .friend-item-card.selected {
+      background: rgba(56, 189, 248, 0.12);
+      border-color: rgba(56, 189, 248, 0.4);
+      box-shadow: 0 4px 14px rgba(56, 189, 248, 0.1);
+    }
+
+    .friend-item-card.public-card.selected {
+      background: rgba(16, 185, 129, 0.12);
+      border-color: rgba(16, 185, 129, 0.4);
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.1);
+    }
+
+    .friend-meta {
       display: flex;
       align-items: center;
       gap: 12px;
+      min-width: 0;
+      flex: 1;
     }
 
     .avatar-circle {
-      width: 48px;
-      height: 48px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #2563eb, #06b6d4);
-      border: 2px solid #38bdf8;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 800;
-      font-size: 16px;
+      font-size: 13.5px;
       color: white;
-      overflow: hidden;
       flex-shrink: 0;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      overflow: hidden;
     }
 
     .avatar-circle.public-avatar {
-      background: linear-gradient(135deg, #059669, #0ea5e9);
-      border-color: #34d399;
+      background: linear-gradient(135deg, #059669, #0d9488);
     }
 
     .avatar-circle img {
@@ -257,99 +545,552 @@
       object-fit: cover;
     }
 
-    .uid-badge-display {
-      font-family: 'Roboto Mono', monospace;
-      font-size: 1.35rem;
+    .friend-name-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13.5px;
       font-weight: 700;
-      color: #7dd3fc;
-      background: rgba(6, 182, 212, 0.14);
-      border: 1.5px dashed rgba(56, 189, 248, 0.55);
-      padding: 8px 14px;
-      border-radius: 12px;
-      letter-spacing: 1px;
-      user-select: all;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    .uid-actions-row {
+    .friend-sub-row {
+      font-size: 11px;
+      color: var(--text-secondary);
       display: flex;
-      gap: 8px;
+      align-items: center;
+      gap: 6px;
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .status-indicator {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .status-indicator.online {
+      background: #10b981;
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+    }
+
+    .status-indicator.offline {
+      background: #64748b;
+    }
+
+    .unread-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #f43f5e;
+      box-shadow: 0 0 6px #f43f5e;
+      flex-shrink: 0;
+    }
+
+    /* Bottom User Profile Dock (Discord-Style) */
+    .social-user-dock {
+      height: 64px;
+      background: rgba(11, 15, 25, 0.95);
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 12px;
+      flex-shrink: 0;
+    }
+
+    .user-dock-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      min-width: 0;
+      flex: 1;
+      padding: 4px;
+      border-radius: 8px;
+      transition: background 0.15s;
+    }
+
+    .user-dock-left:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .dock-avatar {
+      width: 36px;
+      height: 36px;
+      font-size: 12.5px;
+    }
+
+    .user-dock-info {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .user-dock-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .user-dock-mood {
+      font-size: 10.5px;
+      color: var(--accent-blue);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .user-dock-right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .dock-action-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 8px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      color: var(--text-secondary);
+      font-size: 11px;
+      transition: all 0.15s;
+    }
+
+    .dock-action-btn:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--text-primary);
+      border-color: var(--accent-blue);
+    }
+
+    .dock-uid {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 10px;
+      color: #7dd3fc;
+      font-weight: 700;
+    }
+
+    .dock-icon-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13.5px;
+      transition: all 0.15s;
+    }
+
+    .dock-icon-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-primary);
+    }
+
+    /* =========================================================================
+       3. RIGHT MAIN STAGE: Chat & Inspector Hub
+       ========================================================================= */
+    .social-main-stage {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: rgba(11, 15, 25, 0.95);
+      position: relative;
+    }
+
+    .social-inspector-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .friend-hero-banner {
+      padding: 14px 24px;
+      background: rgba(15, 23, 42, 0.85);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+    }
+
+    .friend-hero-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 800;
+      color: white;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-avatar.public-hero {
+      background: linear-gradient(135deg, #059669, #0d9488);
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 6px;
+      margin-top: 4px;
       flex-wrap: wrap;
     }
 
-    .f-btn {
-      border: none;
-      border-radius: 9px;
-      padding: 9px 14px;
-      font-size: 12px;
-      font-weight: 700;
-      cursor: pointer;
+    .pill-tag {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      transition: all 0.2s ease;
-      color: white;
-    }
-
-    .f-btn:hover {
-      filter: brightness(1.12);
-      transform: translateY(-1px);
-    }
-
-    .f-btn.primary {
-      background: linear-gradient(135deg, #2563eb, #06b6d4);
-    }
-
-    .f-btn.emerald {
-      background: linear-gradient(135deg, #059669, #10b981);
-    }
-
-    .f-btn.purple {
-      background: linear-gradient(135deg, #7c3aed, #6366f1);
-    }
-
-    .f-btn.ghost {
+      gap: 4px;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
       background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      color: #cbd5e1;
+      color: var(--text-secondary);
     }
 
-    .f-btn.danger {
-      background: rgba(244, 63, 94, 0.18);
-      border: 1px solid rgba(244, 63, 94, 0.45);
-      color: #fda4af;
+    .pill-tag.green {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
     }
 
-    /* Public Visibility & Online/Offline Control Card */
-    .visibility-card {
+    .pill-tag.amber {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .inspector-tabs {
+      display: flex;
+      gap: 4px;
+      padding: 4px 24px 0 24px;
+      background: rgba(15, 23, 42, 0.5);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .insp-tab-btn {
+      padding: 9px 16px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 13px;
+      font-weight: 700;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .insp-tab-btn:hover {
+      color: var(--text-primary);
+    }
+
+    .insp-tab-btn.active {
+      color: var(--accent-blue);
+      border-bottom-color: var(--accent-blue);
+    }
+
+    .insp-tab-btn.locked {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* Chat Area */
+    .chat-box-container {
+      flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      min-height: 0;
+      overflow: hidden;
+      background: rgba(11, 15, 25, 0.5);
+    }
+
+    .chat-messages-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
       gap: 12px;
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(6, 95, 70, 0.28));
-      border-color: rgba(52, 211, 153, 0.35);
     }
 
-    .vis-control-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    .chat-bubble {
+      max-width: 70%;
+      padding: 10px 14px;
+      font-size: 13.5px;
+      line-height: 1.5;
+      word-break: break-word;
+      position: relative;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .chat-bubble.incoming {
+      align-self: flex-start;
+      background: rgba(30, 41, 59, 0.85);
+      color: var(--text-primary);
+      border-radius: 16px 16px 16px 4px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .chat-bubble.outgoing {
+      align-self: flex-end;
+      background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
+      color: #ffffff;
+      border-radius: 16px 16px 4px 16px;
+      border: 1px solid rgba(52, 211, 153, 0.3);
+    }
+
+    .chat-input-row {
+      padding: 12px 20px;
+      background: rgba(15, 23, 42, 0.85);
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
       gap: 10px;
+      flex-shrink: 0;
     }
 
-    .vis-group {
-      background: rgba(5, 10, 20, 0.55);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+    .chat-input {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 10px 18px;
+      color: var(--text-primary);
+      font-size: 13.5px;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .chat-input:focus {
+      border-color: var(--accent-blue);
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+    }
+
+    /* Timetable, Tasks & Profile Views */
+    .profile-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .stat-tile {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 10px;
+      padding: 14px;
+      text-align: center;
+    }
+
+    .stat-tile-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .stat-tile-value {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+
+    .bio-card {
+      background: rgba(30, 41, 59, 0.4);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: #e2e8f0;
+      font-style: italic;
+    }
+
+    .box-tag {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+
+    .friend-tt-grid, .friend-task-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .friend-tt-row, .friend-task-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(30, 41, 59, 0.45);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 13px;
+    }
+
+    .friend-tt-row.active {
+      border-color: var(--accent-emerald);
+      background: rgba(16, 185, 129, 0.1);
+    }
+
+    .friend-task-row.done {
+      opacity: 0.6;
+      text-decoration: line-through;
+    }
+
+    /* Social Welcoming Empty State */
+    .social-empty-state {
+      margin: auto;
+      text-align: center;
+      padding: 40px 24px;
+      max-width: 520px;
+    }
+
+    .empty-state-icon {
+      font-size: 52px;
+      margin-bottom: 16px;
+      animation: floatIcon 3s ease-in-out infinite;
+    }
+
+    @keyframes floatIcon {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .empty-state-title {
+      color: var(--text-primary);
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -0.3px;
+    }
+
+    .empty-state-desc {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .empty-state-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* =========================================================================
+       4. MODALS & SETTINGS
+       ========================================================================= */
+    .confirm-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.72);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+
+    .confirm-modal-backdrop.active {
+      display: flex;
+    }
+
+    .confirm-modal-card {
+      background: #111827;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 24px;
+      width: 100%;
+      max-width: 480px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      position: relative;
+      animation: modalPop 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .confirm-modal-card.visibility-modal-card {
+      max-width: 540px;
+    }
+
+    @keyframes modalPop {
+      from { opacity: 0; transform: scale(0.96) translateY(8px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .modal-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .modal-close-btn {
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 16px;
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    .modal-close-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-primary);
+    }
+
+    .vis-control-section {
+      margin-bottom: 14px;
     }
 
     .vis-group-label {
-      font-size: 10px;
-      font-weight: 800;
+      font-size: 11px;
+      font-weight: 700;
+      color: #cbd5e1;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
-      color: #94a3b8;
-      margin-bottom: 7px;
-      display: block;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
     }
 
     .seg-row {
@@ -359,894 +1100,441 @@
 
     .seg-btn {
       flex: 1;
-      padding: 8px 10px;
+      padding: 8px 12px;
       border-radius: 8px;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      background: rgba(255, 255, 255, 0.04);
-      color: #cbd5e1;
-      font-size: 11.5px;
+      font-size: 12px;
       font-weight: 700;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
       cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      transition: all 0.2s ease;
+      transition: all 0.15s;
     }
 
     .seg-btn:hover {
-      background: rgba(255, 255, 255, 0.1);
-      color: white;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-primary);
     }
 
     .seg-btn.active-public {
-      background: linear-gradient(135deg, #059669, #10b981);
-      border-color: #34d399;
-      color: white;
-      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+      background: rgba(16, 185, 129, 0.2);
+      border-color: #10b981;
+      color: #34d399;
     }
 
     .seg-btn.active-private {
-      background: linear-gradient(135deg, #334155, #1e293b);
-      border-color: #64748b;
-      color: #f8fafc;
+      background: rgba(59, 130, 246, 0.2);
+      border-color: #3b82f6;
+      color: #60a5fa;
     }
 
     .seg-btn.active-online {
-      background: rgba(34, 197, 94, 0.22);
-      border-color: #22c55e;
-      color: #86efac;
+      background: rgba(16, 185, 129, 0.2);
+      border-color: #10b981;
+      color: #34d399;
     }
 
     .seg-btn.active-offline {
-      background: rgba(100, 116, 139, 0.25);
-      border-color: #94a3b8;
+      background: rgba(100, 116, 139, 0.2);
+      border-color: #64748b;
       color: #cbd5e1;
     }
 
-    .preset-pills-row {
-      display: flex;
+    .preset-chips-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 6px;
-      flex-wrap: wrap;
     }
 
     .preset-chip {
-      padding: 5px 10px;
-      border-radius: 999px;
+      padding: 8px 10px;
+      border-radius: 8px;
       font-size: 11px;
       font-weight: 700;
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      background: rgba(255, 255, 255, 0.05);
-      color: #cbd5e1;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
       cursor: pointer;
-      transition: all 0.2s;
+      transition: all 0.15s;
+      text-align: center;
     }
 
     .preset-chip:hover {
-      border-color: #38bdf8;
-      color: white;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-primary);
     }
 
     .preset-chip.active {
-      background: rgba(56, 189, 248, 0.2);
-      border-color: #38bdf8;
+      background: rgba(56, 189, 248, 0.15);
+      border-color: var(--accent-blue);
       color: #7dd3fc;
     }
 
-    .privacy-guarantee-strip {
-      font-size: 11px;
-      color: #a7f3d0;
-      background: rgba(6, 95, 70, 0.35);
-      border: 1px solid rgba(52, 211, 153, 0.3);
-      border-radius: 9px;
-      padding: 8px 11px;
-      line-height: 1.4;
+    .privacy-guarantee-box {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px dashed rgba(52, 211, 153, 0.35);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-size: 11.5px;
+      line-height: 1.5;
+      color: #d1fae5;
     }
 
-    /* Find Friend Box */
+    .uid-actions-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
     .search-input-group {
       display: flex;
-      gap: 10px;
-      margin-top: 8px;
-      flex-wrap: wrap;
+      gap: 8px;
     }
 
     .uid-search-input {
       flex: 1;
-      min-width: 180px;
-      background: rgba(5, 10, 20, 0.75);
-      border: 1.5px solid rgba(56, 189, 248, 0.4);
-      border-radius: 10px;
-      padding: 11px 15px;
-      color: #f8fafc;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 9px 14px;
+      color: var(--text-primary);
       font-family: 'Roboto Mono', monospace;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
       outline: none;
+      transition: all 0.2s;
     }
 
     .uid-search-input:focus {
-      border-color: #38bdf8;
-      box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
+      border-color: var(--accent-emerald);
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
     }
 
-    /* Main Workspace Split */
-    .friends-workspace {
-      display: grid;
-      grid-template-columns: 390px 1fr;
-      gap: 20px;
-      align-items: start;
-    }
-
-    .sidebar-column {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-      height: 100%;
-    }
-
-    .section-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .section-title {
-      font-size: 14px;
-      font-weight: 800;
-      color: #f8fafc;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .count-badge {
-      background: rgba(56, 189, 248, 0.2);
-      border: 1px solid rgba(56, 189, 248, 0.45);
-      color: #7dd3fc;
-      font-size: 11px;
-      font-weight: 800;
-      padding: 2px 8px;
-      border-radius: 999px;
-    }
-
-    .count-badge.emerald {
-      background: rgba(16, 185, 129, 0.2);
-      border-color: rgba(16, 185, 129, 0.45);
-      color: #6ee7b7;
-    }
-
-    .pub-filter-tabs {
-      display: flex;
-      gap: 5px;
-      margin-bottom: 10px;
-    }
-
-    .pub-filter-btn {
-      flex: 1;
-      padding: 5px 8px;
-      font-size: 11px;
-      font-weight: 700;
-      border-radius: 7px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(255, 255, 255, 0.04);
-      color: #94a3b8;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .pub-filter-btn.active {
-      background: rgba(16, 185, 129, 0.18);
-      border-color: rgba(52, 211, 153, 0.45);
-      color: #6ee7b7;
-    }
-
-    .friends-list {
-      display: flex;
-      flex-direction: column;
-      gap: 9px;
-      max-height: 290px;
-      overflow-y: auto;
-      padding-right: 4px;
-    }
-
-    .friend-item-card {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
-      padding: 11px 12px;
-      transition: all 0.2s ease;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      position: relative;
-    }
-
-    .friend-item-card:hover {
-      background: rgba(56, 189, 248, 0.08);
-      border-color: rgba(56, 189, 248, 0.4);
-    }
-
-    .friend-item-card.selected {
-      background: rgba(37, 99, 235, 0.18);
-      border-color: #38bdf8;
-      box-shadow: 0 0 20px rgba(56, 189, 248, 0.18);
-    }
-
-    .friend-item-card.public-card.selected {
-      background: rgba(5, 150, 105, 0.2);
-      border-color: #34d399;
-      box-shadow: 0 0 20px rgba(16, 185, 129, 0.18);
-    }
-
-    .friend-meta {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      min-width: 0;
-      flex: 1;
-    }
-
-    .friend-name-row {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-weight: 700;
-      font-size: 13px;
-      color: #f8fafc;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .friend-sub-row {
-      font-size: 11px;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      margin-top: 2px;
-    }
-
-    .status-indicator {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      flex-shrink: 0;
-      transition: all 0.3s;
-    }
-
-    .status-indicator.online {
-      background: #22c55e;
-      box-shadow: 0 0 8px #22c55e;
-    }
-
-    .status-indicator.offline {
-      background: #64748b;
-      box-shadow: none;
-    }
-
-    .unread-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #f43f5e;
-      box-shadow: 0 0 10px #f43f5e;
-      flex-shrink: 0;
-      animation: pulseUnread 1.4s infinite;
-    }
-
-    @keyframes pulseUnread {
-
-      0%,
-      100% {
-        transform: scale(1);
-        opacity: 0.9;
-      }
-
-      50% {
-        transform: scale(1.35);
-        opacity: 1;
-      }
-    }
-
-    /* Right Inspector Panel */
-    .inspector-panel {
-      min-height: 620px;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .friend-hero-banner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-      padding: 18px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, rgba(30, 58, 138, 0.45), rgba(15, 23, 42, 0.9));
-      border: 1px solid rgba(56, 189, 248, 0.35);
-    }
-
-    .friend-hero-banner.public-banner {
-      background: linear-gradient(135deg, rgba(6, 95, 70, 0.45), rgba(15, 23, 42, 0.92));
-      border-color: rgba(52, 211, 153, 0.4);
-    }
-
-    .friend-hero-left {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .hero-avatar {
-      width: 68px;
-      height: 68px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #2563eb, #06b6d4);
-      border: 2.5px solid #38bdf8;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      font-weight: 800;
-      color: white;
-      overflow: hidden;
-    }
-
-    .hero-avatar.public-hero {
-      background: linear-gradient(135deg, #059669, #0ea5e9);
-      border-color: #34d399;
-    }
-
-    .hero-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .hero-badges {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 6px;
-    }
-
-    .pill-tag {
-      font-size: 11px;
-      font-weight: 700;
-      padding: 3px 10px;
-      border-radius: 999px;
-      background: rgba(56, 189, 248, 0.16);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      color: #7dd3fc;
-    }
-
-    .pill-tag.green {
-      background: rgba(34, 197, 94, 0.16);
-      border-color: rgba(34, 197, 94, 0.4);
-      color: #86efac;
-    }
-
-    .pill-tag.purple {
-      background: rgba(168, 85, 247, 0.16);
-      border-color: rgba(168, 85, 247, 0.4);
-      color: #d8b4fe;
-    }
-
-    .pill-tag.amber {
-      background: rgba(245, 158, 11, 0.16);
-      border-color: rgba(245, 158, 11, 0.4);
-      color: #fde68a;
-    }
-
-    /* Inspector Tabs */
-    .inspector-tabs {
-      display: flex;
-      gap: 10px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      padding-bottom: 12px;
-      flex-wrap: wrap;
-    }
-
-    .insp-tab-btn {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      color: #94a3b8;
-      padding: 9px 18px;
-      border-radius: 10px;
-      font-size: 13px;
-      font-weight: 700;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.2s;
-      position: relative;
-    }
-
-    .insp-tab-btn.active {
-      background: linear-gradient(135deg, rgba(37, 99, 235, 0.35), rgba(6, 182, 212, 0.35));
-      border-color: #38bdf8;
-      color: white;
-      box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
-    }
-
-    .insp-tab-btn.locked {
-      opacity: 0.48;
-      cursor: not-allowed;
-      background: rgba(15, 23, 42, 0.6);
-      border-style: dashed;
-    }
-
-    /* Profile Grid */
-    .profile-stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-
-    .stat-tile {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 12px;
-      padding: 14px;
-    }
-
-    .stat-tile-label {
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      color: var(--text-muted);
-      margin-bottom: 4px;
-    }
-
-    .stat-tile-value {
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: #f8fafc;
-      font-family: 'Roboto Mono', monospace;
-    }
-
-    .bio-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(56, 189, 248, 0.2);
-      border-radius: 12px;
-      padding: 16px;
-      line-height: 1.6;
-      font-size: 13px;
-      color: #e2e8f0;
-    }
-
-    /* Timetable Table */
-    .friend-tt-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .friend-tt-table th {
-      text-align: left;
-      font-size: 11px;
-      color: #64748b;
-      padding: 10px 12px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-    }
-
-    .friend-tt-table td {
-      padding: 12px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      font-size: 13px;
-    }
-
-    .sub-badge {
-      display: inline-block;
-      padding: 4px 10px;
-      border-radius: 6px;
-      font-size: 11px;
-      font-weight: 800;
-      background: rgba(59, 130, 246, 0.2);
-      color: #93c5fd;
-      border: 1px solid rgba(59, 130, 246, 0.4);
-    }
-
-    /* Tasks List */
-    .friend-task-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .friend-task-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 14px;
-      border-radius: 10px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      font-size: 13px;
-    }
-
-    .friend-task-row.done {
-      opacity: 0.65;
-    }
-
-    .friend-task-row.done .task-title-txt {
-      text-decoration: line-through;
-      color: #64748b;
-    }
-
-    /* Chat Section */
-    .chat-box-container {
-      display: flex;
-      flex-direction: column;
-      height: 390px;
-      background: rgba(5, 10, 20, 0.65);
-      border: 1px solid rgba(56, 189, 248, 0.25);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    .chat-messages-area {
-      flex: 1;
-      padding: 14px;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .chat-bubble {
-      max-width: 78%;
-      padding: 9px 14px;
-      border-radius: 12px;
-      font-size: 13px;
-      line-height: 1.45;
-      word-break: break-word;
-    }
-
-    .chat-bubble.incoming {
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      color: #f8fafc;
-      align-self: flex-start;
-    }
-
-    .chat-bubble.outgoing {
-      background: linear-gradient(135deg, #2563eb, #06b6d4);
-      color: white;
-      align-self: flex-end;
-    }
-
-    .uid-Action-card-in-chat {
-      margin-top: 8px;
-      padding: 8px 10px;
-      border-radius: 9px;
-      background: rgba(5, 10, 20, 0.55);
-      border: 1px solid rgba(52, 211, 153, 0.5);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .chat-input-row {
-      display: flex;
-      gap: 8px;
-      padding: 12px;
-      background: rgba(15, 23, 42, 0.95);
-      border-top: 1px solid rgba(56, 189, 248, 0.2);
-      flex-wrap: wrap;
-    }
-
-    .chat-input {
-      flex: 1;
-      min-width: 180px;
-      background: rgba(5, 10, 20, 0.8);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      border-radius: 9px;
-      padding: 10px 14px;
-      color: white;
-      font-size: 13px;
-      outline: none;
-    }
-
-    .chat-input:focus {
-      border-color: #38bdf8;
-    }
-
-    /* In-Page Confirm Modal (Sandbox Safe) */
-    .confirm-modal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(4, 7, 14, 0.82);
-      backdrop-filter: blur(8px);
-      z-index: 9500;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 16px;
-    }
-
-    .confirm-modal-backdrop.open {
-      display: flex;
-    }
-
-    .confirm-modal-card {
-      background: #0f172a;
-      border: 1px solid rgba(56, 189, 248, 0.4);
-      border-radius: 16px;
-      max-width: 420px;
-      width: 100%;
-      padding: 22px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
-    }
-
-    /* Toast Notification */
+    /* Toast */
     .frid-toast {
       position: fixed;
       bottom: 24px;
       right: 24px;
-      background: rgba(15, 23, 42, 0.96);
-      border: 1.5px solid #38bdf8;
+      background: #1e293b;
       color: white;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
       padding: 12px 18px;
-      border-radius: 12px;
+      border-radius: 10px;
       font-size: 13px;
       font-weight: 600;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
       z-index: 9999;
+      transform: translateY(100px);
       opacity: 0;
-      transform: translateY(20px);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       pointer-events: none;
-      transition: all 0.25s ease;
     }
 
     .frid-toast.show {
-      opacity: 1;
       transform: translateY(0);
+      opacity: 1;
     }
 
-    @media (max-width: 1180px) {
-      .top-discovery-grid {
-        grid-template-columns: 1fr;
+    .mobile-back-to-sidebar-btn {
+      display: none;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .mobile-back-to-sidebar-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+    @media (max-width: 768px) {
+      .mobile-back-to-sidebar-btn {
+        display: inline-flex;
+        align-items: center;
+      }
+    }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .social-sidebar {
+        width: 100%;
+        max-width: none;
+      }
+      .social-main-stage {
+        display: none;
+      }
+      .social-app-container.show-inspector .social-sidebar {
+        display: none;
+      }
+      .social-app-container.show-inspector .social-main-stage {
+        display: flex;
       }
     }
 
-    @media (max-width: 980px) {
-      .friends-workspace {
-        grid-template-columns: 1fr;
-      }
-
-      .vis-control-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <!-- TOP NAVIGATION -->
+  <!-- TOP APP NAVIGATION BAR (Real Social Media Header) -->
   <nav class="frid-navbar">
     <div class="frid-brand">
       <div class="frid-brand-icon">🤝</div>
-      <div>
-        <h1>Calcium <span>Study Friends &amp; Public Lobby</span></h1>
-        <div class="frid-brand-sub">Public/Private Presence • Name-Only Public Privacy • Instant Unique ID Friend
-          Connect</div>
+      <div class="frid-brand-text">
+        <h1 class="frid-brand-title">Calcium <span class="highlight">Social</span></h1>
+        <div class="frid-brand-sub">Study Squad &amp; Peer Lounge</div>
       </div>
     </div>
 
-    <div class="frid-nav-right">
-      <span id="topBarUniqueId" style="display:none;">CN-000000000</span>
-      <div class="net-pill lobby-pill" id="publicLobbyBadge"
-        title="Option 2 Global WebSocket + PeerJS Public Directory">
+    <!-- Network Indicators (Sleek Pills) -->
+    <div class="frid-nav-center">
+      <div class="net-pill lobby-pill" id="publicLobbyBadge" title="Global Real-Time Public Relay">
         <span class="net-dot" id="publicLobbyDot"></span>
         <span id="publicLobbyText">Public Relay: Connecting...</span>
       </div>
-      <div class="net-pill" id="peerNetworkBadge">
+      <div class="net-pill" id="peerNetworkBadge" title="End-to-End P2P Network">
         <span class="net-dot" id="peerNetworkDot"></span>
-        <span id="peerNetworkText">Connecting P2P Network...</span>
+        <span id="peerNetworkText">Connecting P2P...</span>
       </div>
-      <button class="f-btn ghost" onclick="syncAllOnlineFriends()">🔄 Refresh Live Status</button>
+      <span id="topBarUniqueId" style="display:none;">CN-000000000</span>
+    </div>
+
+    <!-- Right Controls -->
+    <div class="frid-nav-right">
+      <button type="button" class="user-status-btn" onclick="openVisibilityModal()" title="Change Your Social Visibility &amp; Status">
+        <span id="myVisibilityStatusBadge" class="pill-tag green">🔒 Private • Online</span>
+        <span style="font-size:12px;">⚙️</span>
+      </button>
+
+      <button type="button" class="f-btn emerald" onclick="openAddFriendModal()">
+        ➕ Add Friend
+      </button>
+
+      <button type="button" class="f-btn ghost icon-btn" onclick="syncAllOnlineFriends()" title="Refresh Live Peer Status">
+        🔄
+      </button>
+
       <button type="button" class="btn-back-dashboard" onclick="closeOrNavigateHome()">
-        ← Back to Dashboard
+        ← Dashboard
       </button>
     </div>
   </nav>
 
-  <div class="frid-container">
+  <!-- MAIN APP CONTAINER (Full Viewport Split View) -->
+  <div class="social-app-container" id="socialAppContainer">
 
-    <!-- ROW 1: MY UNIQUE USER ID + PUBLIC VISIBILITY CONTROLS + FIND FRIENDS BY ID -->
-    <div class="top-discovery-grid">
-
-      <!-- Card 1: My Unique ID -->
-      <div class="glass-box my-id-card">
-        <div>
-          <div class="box-tag">🆔 YOUR PRIVATE CALCIUM USER ID</div>
-          <div class="my-id-top">
-            <div class="my-profile-mini">
-              <div class="avatar-circle" id="myAvatarBox">CA</div>
-              <div>
-                <div style="font-size:15px; font-weight:800; color:#f8fafc;" id="myDisplayNameLabel">CA Aspirant</div>
-                <div style="font-size:11px; color:#7dd3fc; font-weight:700;" id="myLevelAndMoodLabel">CA FINAL • 🔥
-                  Locked In</div>
-              </div>
-            </div>
-            <div class="uid-badge-display" id="myUniqueIdDisplay">CN-000000000</div>
-          </div>
-        </div>
-
-        <p style="font-size:12px; color:#cbd5e1; line-height:1.45;">
-          Your Unique ID is <strong>never</strong> shown in the Public Directory. Share it inside Public Text Chat or
-          with trusted partners to become Friends and unlock your Timetable &amp; Tasks.
-        </p>
-
-        <div class="uid-actions-row">
-          <button class="f-btn primary" onclick="copyMyUniqueId()">📋 Copy My Unique ID</button>
-          <button class="f-btn emerald" onclick="shareMyUniqueIdWhatsApp()">💬 Share ID on WhatsApp</button>
-          <button class="f-btn ghost" onclick="regenerateUniqueId()" title="Generate a brand new Unique ID">🎲 New
-            ID</button>
-        </div>
+    <!-- LEFT SIDEBAR: Friends & Public Lobby -->
+    <aside class="social-sidebar">
+      
+      <!-- Top Sidebar Nav Tabs -->
+      <div class="sidebar-top-tabs">
+        <button type="button" id="tabBtnFriends" class="sidebar-tab-btn active" onclick="switchSocialSidebarTab('friends')">
+          <span>👥 My Friends</span>
+          <span class="count-badge" id="friendsCountBadge">0</span>
+        </button>
+        <button type="button" id="tabBtnPublic" class="sidebar-tab-btn" onclick="switchSocialSidebarTab('public')">
+          <span>🌐 Public Lobby</span>
+          <span class="count-badge emerald" id="publicUsersCountBadge">0</span>
+        </button>
       </div>
 
-      <!-- Card 2: Public / Private & Online / Offline Controls (NEW) -->
-      <div class="glass-box visibility-card">
-        <div>
-          <div class="box-tag" style="color:#34d399;">🌐 PUBLIC DIRECTORY VISIBILITY &amp; STATUS</div>
-          <div
-            style="display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:10px;">
-            <h3 style="font-size:15px; font-weight:800; color:#f8fafc;">Who Can See You Right Now?</h3>
-            <span id="myVisibilityStatusBadge" class="pill-tag green">🔒 Private • Online</span>
-          </div>
-
-          <div class="vis-control-grid">
-            <!-- Visibility Mode: Public vs Private -->
-            <div class="vis-group">
-              <span class="vis-group-label">1. Visibility Mode</span>
-              <div class="seg-row">
-                <button type="button" id="btnVisPublic" class="seg-btn" onclick="setMyVisibilityMode('public')">
-                  🌐 Public
-                </button>
-                <button type="button" id="btnVisPrivate" class="seg-btn active-private"
-                  onclick="setMyVisibilityMode('private')">
-                  🔒 Private
-                </button>
-              </div>
-            </div>
-
-            <!-- Presence Status: Online vs Offline -->
-            <div class="vis-group">
-              <span class="vis-group-label">2. Presence Status</span>
-              <div class="seg-row">
-                <button type="button" id="btnPresOnline" class="seg-btn active-online"
-                  onclick="setMyPresenceStatus('online')">
-                  🟢 Online
-                </button>
-                <button type="button" id="btnPresOffline" class="seg-btn" onclick="setMyPresenceStatus('offline')">
-                  ⚫ Offline
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div style="margin-top:10px;">
-            <span class="vis-group-label" style="margin-bottom:5px;">Quick Select Mode:</span>
-            <div class="preset-pills-row">
-              <button type="button" id="presetPubOnline" class="preset-chip"
-                onclick="applyVisibilityPreset('public', 'online')">🌐 Public Online</button>
-              <button type="button" id="presetPubOffline" class="preset-chip"
-                onclick="applyVisibilityPreset('public', 'offline')">🌐 Public Offline</button>
-              <button type="button" id="presetPrivOnline" class="preset-chip active"
-                onclick="applyVisibilityPreset('private', 'online')">🔒 Private Online</button>
-              <button type="button" id="presetPrivOffline" class="preset-chip"
-                onclick="applyVisibilityPreset('private', 'offline')">🔒 Private Offline</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="privacy-guarantee-strip" id="privacyGuaranteeText">
-          🛡️ <strong>Strict Public Privacy:</strong> When Public, other users see <strong>ONLY your Name</strong> and
-          Online/Offline status. No Unique ID, no Timetable, and no Tasks are ever exposed—only Text Chat is active so
-          you can share your Unique ID if you choose to become Friends.
-        </div>
+      <!-- Quick Search Bar -->
+      <div class="sidebar-search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="socialSearchInput" class="social-search-input" placeholder="Search friends or public users..." oninput="handleSocialSearch(this.value)" />
       </div>
 
-      <!-- Card 3: Auto-Connect by Unique ID -->
-      <div class="glass-box">
-        <div class="box-tag">⚡ BECOME FRIENDS VIA UNIQUE ID</div>
-        <h3 style="font-size:16px; font-weight:800; color:#f8fafc; margin-bottom:4px;">Add a Friend by Unique ID</h3>
-        <p style="font-size:12px; color:#94a3b8; margin-bottom:10px;">
-          Received a friend's Unique ID (<code style="color:#7dd3fc;">CN-482910573</code>) in Public Text Chat? Enter it
-          below or click their in-chat ID button to become Friends and unlock full timetables!
-        </p>
+      <!-- Scrollable User Lists Area -->
+      <div class="sidebar-scroll-area">
 
-        <div class="search-input-group">
-          <input type="text" id="findFriendIdInput" class="uid-search-input"
-            placeholder="ENTER UNIQUE ID (e.g. CN-482910573)" maxlength="15"
-            onkeydown="if(event.key==='Enter') searchAndSendStudyRequest()" />
-          <button class="f-btn emerald" onclick="searchAndSendStudyRequest()">
-            🚀 Connect Instantly
-          </button>
-        </div>
-
-        <div
-          style="margin-top:12px; padding-top:10px; border-top:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;">
-          <span style="font-size:11px; color:#94a3b8;">Your Public Display Name:</span>
-          <div style="display:flex; gap:6px; flex:1; min-width:180px;">
-            <input type="text" id="quickPublicNameInput" class="chat-input" style="padding:6px 10px; font-size:12px;"
-              placeholder="Your Name..." oninput="updateMyPublicDisplayName(this.value)" />
+        <!-- 1. Friends List Wrapper -->
+        <div id="friendsListWrapper" class="social-list-view">
+          <div class="list-subhead">
+            <span>SAVED STUDY FRIENDS</span>
+            <button type="button" class="mini-add-link" onclick="openAddFriendModal()">+ Add by ID</button>
           </div>
+          <div class="friends-list" id="friendsListContainer"></div>
         </div>
-      </div>
 
-    </div>
-
-    <!-- ROW 2: PUBLIC DIRECTORY + FRIENDS LIST & INSPECTOR -->
-    <div class="friends-workspace">
-
-      <!-- LEFT COLUMN: Public Users Directory + Friends Roster -->
-      <div class="sidebar-column">
-
-        <!-- Section 1: Publicly Visible Users Directory (Name & Text Only) -->
-        <div class="glass-box" style="border-color: rgba(52, 211, 153, 0.35);">
-          <div class="section-header">
-            <div class="section-title">
-              <span>🌐 Public Users Directory</span>
-              <span class="count-badge emerald" id="publicUsersCountBadge">0</span>
-            </div>
-            <span style="font-size:10px; color:#6ee7b7; font-weight:700;">Name &amp; Text Only</span>
+        <!-- 2. Public Directory Wrapper -->
+        <div id="publicListWrapper" class="social-list-view" style="display:none;">
+          <div class="list-subhead">
+            <span>PUBLIC DIRECTORY (NAME ONLY)</span>
+            <span class="privacy-mini-pill">🔒 ID Hidden</span>
           </div>
 
           <div class="pub-filter-tabs">
-            <button type="button" id="pubFilterAll" class="pub-filter-btn active"
-              onclick="setPublicDirectoryFilter('all')">All Public</button>
-            <button type="button" id="pubFilterOnline" class="pub-filter-btn"
-              onclick="setPublicDirectoryFilter('online')">🟢 Online</button>
-            <button type="button" id="pubFilterOffline" class="pub-filter-btn"
-              onclick="setPublicDirectoryFilter('offline')">⚫ Offline</button>
+            <button type="button" id="pubFilterAll" class="pub-filter-btn active" onclick="setPublicDirectoryFilter('all')">All Public</button>
+            <button type="button" id="pubFilterOnline" class="pub-filter-btn" onclick="setPublicDirectoryFilter('online')">🟢 Online</button>
+            <button type="button" id="pubFilterOffline" class="pub-filter-btn" onclick="setPublicDirectoryFilter('offline')">⚫ Offline</button>
           </div>
 
           <div class="friends-list" id="publicUsersListContainer"></div>
         </div>
 
-        <!-- Section 2: Accepted Study Friends Roster (Full Access) -->
-        <div class="glass-box" style="flex:1;">
-          <div class="section-header">
-            <div class="section-title">
-              <span>👥 My Study Friends</span>
-              <span class="count-badge" id="friendsCountBadge">0</span>
-            </div>
-            <span style="font-size:10px; color:#7dd3fc; font-weight:700;">Full Timetable &amp; Tasks</span>
+      </div>
+
+      <!-- Bottom User Profile Dock (Discord-Style) -->
+      <div class="social-user-dock">
+        <div class="user-dock-left" onclick="openVisibilityModal()" title="Click to edit visibility &amp; presence">
+          <div class="avatar-circle dock-avatar" id="myAvatarBox">CA</div>
+          <div class="user-dock-info">
+            <div class="user-dock-name" id="myDisplayNameLabel">CA Aspirant</div>
+            <div class="user-dock-mood" id="myLevelAndMoodLabel">CA FINAL • 🔥 Locked In</div>
           </div>
-          <div class="friends-list" id="friendsListContainer" style="max-height: 310px;"></div>
         </div>
-
+        <div class="user-dock-right">
+          <button type="button" class="dock-action-btn" onclick="copyMyUniqueId()" title="Copy Your Unique ID">
+            <span id="myUniqueIdDisplay" class="dock-uid">CN-000000000</span>
+            <span style="font-size:11px;">📋</span>
+          </button>
+          <button type="button" class="dock-icon-btn" onclick="shareMyUniqueIdWhatsApp()" title="Share ID on WhatsApp">
+            💬
+          </button>
+          <button type="button" class="dock-icon-btn" onclick="openVisibilityModal()" title="Visibility Settings">
+            ⚙️
+          </button>
+        </div>
       </div>
 
-      <!-- RIGHT COLUMN: SELECTED PUBLIC USER (TEXT ONLY) OR SELECTED FRIEND (FULL ACCESS) -->
-      <div class="glass-box inspector-panel" id="friendInspectorPanel">
-        <!-- Dynamically populated by renderSelectedFriendInspector() -->
+    </aside>
+
+    <!-- RIGHT MAIN WORKSPACE: Chat / Timetable / Tasks Inspector -->
+    <main class="social-main-stage">
+      <div class="social-inspector-wrapper" id="friendInspectorPanel">
+        <!-- Dynamically rendered by renderSelectedFriendInspector() -->
+      </div>
+    </main>
+
+  </div>
+
+  <!-- MODAL 1: ADD FRIEND BY UNIQUE ID -->
+  <div class="confirm-modal-backdrop" id="addFriendModal" onclick="if(event.target===this) closeAddFriendModal()">
+    <div class="confirm-modal-card">
+      <div class="modal-header-row">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:22px;">🤝</span>
+          <div>
+            <h3 style="font-size:17px; font-weight:800; color:#f8fafc; margin:0;">Add Study Friend</h3>
+            <p style="font-size:12px; color:#94a3b8; margin:2px 0 0 0;">Connect via Unique ID to unlock each other's Timetable &amp; Tasks</p>
+          </div>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeAddFriendModal()">✕</button>
       </div>
 
+      <div style="margin:16px 0;">
+        <label style="font-size:11px; font-weight:700; color:#cbd5e1; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:6px;">
+          Friend's Unique ID
+        </label>
+        <div class="search-input-group">
+          <input type="text" id="findFriendIdInput" class="uid-search-input"
+            placeholder="e.g. CN-482910573" maxlength="15"
+            onkeydown="if(event.key==='Enter') searchAndSendStudyRequest()" />
+          <button type="button" class="f-btn emerald" onclick="searchAndSendStudyRequest()">
+            🚀 Connect
+          </button>
+        </div>
+        <p style="font-size:11.5px; color:#94a3b8; margin:8px 0 0 0; line-height:1.4;">
+          💡 <em>Tip: Your study partner can find their Unique ID in the bottom-left corner of their screen or in chat.</em>
+        </p>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:14px; margin-top:14px;">
+        <label style="font-size:11px; font-weight:700; color:#cbd5e1; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:6px;">
+          Your Public Display Name (how others see you)
+        </label>
+        <input type="text" id="quickPublicNameInput" class="chat-input" style="padding:8px 12px; font-size:13px; width:100%; box-sizing:border-box;"
+          placeholder="Your Display Name..." oninput="updateMyPublicDisplayName(this.value)" />
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:20px;">
+        <button type="button" class="f-btn ghost" onclick="closeAddFriendModal()">Close</button>
+      </div>
     </div>
+  </div>
 
+  <!-- MODAL 2: VISIBILITY & PRESENCE SETTINGS -->
+  <div class="confirm-modal-backdrop" id="visibilityModal" onclick="if(event.target===this) closeVisibilityModal()">
+    <div class="confirm-modal-card visibility-modal-card">
+      <div class="modal-header-row">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:22px;">⚙️</span>
+          <div>
+            <h3 style="font-size:17px; font-weight:800; color:#f8fafc; margin:0;">Social Visibility &amp; Presence</h3>
+            <p style="font-size:12px; color:#94a3b8; margin:2px 0 0 0;">Control who can discover and see you in the Calcium network</p>
+          </div>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeVisibilityModal()">✕</button>
+      </div>
+
+      <!-- Visibility Mode: Public vs Private -->
+      <div class="vis-control-section" style="margin-top:16px;">
+        <div class="vis-group-label">1. Social Visibility Mode</div>
+        <div class="seg-row">
+          <button type="button" id="btnVisPublic" class="seg-btn" onclick="setMyVisibilityMode('public')">
+            🌐 Public (Listed by Name Only)
+          </button>
+          <button type="button" id="btnVisPrivate" class="seg-btn active-private" onclick="setMyVisibilityMode('private')">
+            🔒 Private (Only Friends See You)
+          </button>
+        </div>
+      </div>
+
+      <!-- Presence Status: Online vs Offline -->
+      <div class="vis-control-section" style="margin-top:14px;">
+        <div class="vis-group-label">2. Presence Status</div>
+        <div class="seg-row">
+          <button type="button" id="btnPresOnline" class="seg-btn active-online" onclick="setMyPresenceStatus('online')">
+            🟢 Online
+          </button>
+          <button type="button" id="btnPresOffline" class="seg-btn" onclick="setMyPresenceStatus('offline')">
+            ⚫ Offline
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Presets -->
+      <div class="vis-control-section" style="margin-top:14px;">
+        <div class="vis-group-label">3. One-Click Quick Presets</div>
+        <div class="preset-chips-row">
+          <button type="button" id="presetPubOnline" class="preset-chip" onclick="applyVisibilityPreset('public', 'online')">
+            🌐 Live Public Peer
+          </button>
+          <button type="button" id="presetPubOffline" class="preset-chip" onclick="applyVisibilityPreset('public', 'offline')">
+            😴 Public Offline
+          </button>
+          <button type="button" id="presetPrivOnline" class="preset-chip" onclick="applyVisibilityPreset('private', 'online')">
+            🕵️ Private with Friends
+          </button>
+          <button type="button" id="presetPrivOffline" class="preset-chip" onclick="applyVisibilityPreset('private', 'offline')">
+            🛑 Full Incognito
+          </button>
+        </div>
+      </div>
+
+      <!-- Privacy Guarantee Box -->
+      <div id="privacyGuaranteeText" class="privacy-guarantee-box" style="margin-top:14px;">
+        🔒 <strong>Private Mode Active:</strong> You are hidden from the Public Directory. Only accepted Friends can see your timetable &amp; tasks.
+      </div>
+
+      <!-- Your Unique ID Actions -->
+      <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:14px; margin-top:16px;">
+        <div class="vis-group-label">4. Your Calcium Unique ID (Private)</div>
+        <p style="font-size:12px; color:#cbd5e1; margin:4px 0 10px 0;">
+          Share this with trusted friends to connect directly:
+        </p>
+        <div class="uid-actions-row">
+          <button type="button" class="f-btn primary" onclick="copyMyUniqueId()">📋 Copy ID</button>
+          <button type="button" class="f-btn emerald" onclick="shareMyUniqueIdWhatsApp()">💬 WhatsApp</button>
+          <button type="button" class="f-btn ghost" onclick="regenerateUniqueId()" title="Generate brand new ID">🎲 New ID</button>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:18px;">
+        <button type="button" class="f-btn primary" onclick="closeVisibilityModal()">Done</button>
+      </div>
+    </div>
   </div>
 
   <!-- In-Page Regenerate ID Confirmation Modal -->
@@ -1254,8 +1542,7 @@
     <div class="confirm-modal-card">
       <h3 style="font-size:16px; font-weight:800; color:#f8fafc; margin-bottom:8px;">🎲 Generate a New Unique ID?</h3>
       <p style="font-size:13px; color:#cbd5e1; line-height:1.5; margin-bottom:16px;">
-        Your saved friends and chat history will be kept locally, but existing friends will need your new Unique ID to
-        reconnect with you.
+        Your saved friends and chat history will be kept locally, but existing friends will need your new Unique ID to reconnect with you.
       </p>
       <div style="display:flex; justify-content:flex-end; gap:10px;">
         <button type="button" class="f-btn ghost" onclick="closeRegenConfirmModal()">Cancel</button>
@@ -1268,6 +1555,73 @@
   <div class="frid-toast" id="fridToast"></div>
 
   <script>
+
+    /* =========================================================================
+       SOCIAL UI/UX MODAL & TAB CONTROLLERS
+       ========================================================================= */
+    
+    window.mobileBackToSidebar = function () {
+      const container = document.getElementById("socialAppContainer");
+      if (container) container.classList.remove("show-inspector");
+    };
+
+    window.switchSocialSidebarTab = function (tab) {
+      const btnFriends = document.getElementById("tabBtnFriends");
+      const btnPublic = document.getElementById("tabBtnPublic");
+      const friendsWrap = document.getElementById("friendsListWrapper");
+      const publicWrap = document.getElementById("publicListWrapper");
+
+      if (tab === 'public') {
+        if (btnPublic) btnPublic.classList.add('active');
+        if (btnFriends) btnFriends.classList.remove('active');
+        if (publicWrap) publicWrap.style.display = 'flex';
+        if (friendsWrap) friendsWrap.style.display = 'none';
+      } else {
+        if (btnFriends) btnFriends.classList.add('active');
+        if (btnPublic) btnPublic.classList.remove('active');
+        if (friendsWrap) friendsWrap.style.display = 'flex';
+        if (publicWrap) publicWrap.style.display = 'none';
+      }
+    };
+
+    window.openAddFriendModal = function () {
+      const m = document.getElementById("addFriendModal");
+      if (m) m.classList.add("active");
+      const inp = document.getElementById("findFriendIdInput");
+      if (inp) setTimeout(() => inp.focus(), 150);
+    };
+
+    window.closeAddFriendModal = function () {
+      const m = document.getElementById("addFriendModal");
+      if (m) m.classList.remove("active");
+    };
+
+    window.openVisibilityModal = function () {
+      const m = document.getElementById("visibilityModal");
+      if (m) m.classList.add("active");
+      if (typeof updateVisibilityControlsUI === "function") {
+        updateVisibilityControlsUI();
+      }
+    };
+
+    window.closeVisibilityModal = function () {
+      const m = document.getElementById("visibilityModal");
+      if (m) m.classList.remove("active");
+    };
+
+    window.handleSocialSearch = function (query) {
+      const q = (query || "").trim().toLowerCase();
+      const cards = document.querySelectorAll(".friend-item-card");
+      cards.forEach(card => {
+        const text = (card.textContent || "").toLowerCase();
+        if (!q || text.includes(q)) {
+          card.style.display = "flex";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    };
+
     /* =========================================================================
        CALCIUM STUDY FRIENDS & OPTION 2 PUBLIC LOBBY ENGINE (frid.html)
        - Option 2 Hybrid: Global MQTT over WebSockets Relay + PeerJS WebRTC P2P
@@ -1995,6 +2349,8 @@
     };
 
     window.selectPublicUser = function (pubId) {
+      const container = document.getElementById("socialAppContainer");
+      if (container && window.innerWidth <= 768) container.classList.add("show-inspector");
       const cleanPub = normalizePublicAnonId(pubId);
       if (!cleanPub) return;
       currentInspectorMode = "public";
@@ -2780,6 +3136,8 @@
         });
         renderSidebarLists();
         renderSelectedFriendInspector();
+        if (typeof switchSocialSidebarTab === "function") switchSocialSidebarTab('friends');
+        if (typeof closeAddFriendModal === "function") closeAddFriendModal();
         showToast(`🔄 Re-synced connection with ${friendsMap[targetUid].name || targetUid}!`);
         return;
       }
@@ -2817,6 +3175,8 @@
       renderSidebarLists();
       renderSelectedFriendInspector();
       notifyParentBadgeCount();
+      if (typeof switchSocialSidebarTab === "function") switchSocialSidebarTab('friends');
+      if (typeof closeAddFriendModal === "function") closeAddFriendModal();
       showToast(`✅ Added ${targetUid} as a Friend! Syncing profile & timetable...`);
     };
 
@@ -3015,6 +3375,8 @@
     }
 
     window.selectFriend = function (uid) {
+      const container = document.getElementById("socialAppContainer");
+      if (container && window.innerWidth <= 768) container.classList.add("show-inspector");
       currentInspectorMode = "friend";
       selectedFriendUid = uid;
       unreadMessagesMap[uid] = false;
@@ -3038,6 +3400,7 @@
       panel.innerHTML = `
         <div class="friend-hero-banner public-banner">
           <div class="friend-hero-left">
+            <button type="button" class="mobile-back-to-sidebar-btn" onclick="mobileBackToSidebar()" title="Back to Chats">←</button>
             <div class="hero-avatar public-hero">
               ${escapeHtml(initials)}
             </div>
@@ -3131,13 +3494,20 @@
 
       if (!friend) {
         panel.innerHTML = `
-          <div style="margin:auto; text-align:center; padding:40px 20px; color:#94a3b8;">
-            <div style="font-size:44px; margin-bottom:12px;">🌐</div>
-            <h3 style="color:#f8fafc; font-size:18px; margin-bottom:6px;">Select Someone in the Public Directory or Add a Friend</h3>
-            <p style="font-size:13px; max-width:460px; margin:0 auto; line-height:1.55;">
-              • Click <strong>🌐 Public</strong> above to appear in the <strong>Public Users Directory</strong> (only your Name is shown).<br/>
-              • Click any Public user on the left to start a <strong>Text Chat</strong>, share your <strong>Unique ID</strong>, and become Friends to unlock Timetables &amp; Tasks!
+          <div class="social-empty-state">
+            <div class="empty-state-icon">🤝</div>
+            <h2 class="empty-state-title">Welcome to Calcium Study Social</h2>
+            <p class="empty-state-desc">
+              Connect with fellow CA students across India, share revision timetables, check study tasks, and stay locked in together.
             </p>
+            <div class="empty-state-actions">
+              <button type="button" class="f-btn emerald" onclick="switchSocialSidebarTab('public')">
+                🌐 Browse Public Lobby
+              </button>
+              <button type="button" class="f-btn primary" onclick="openAddFriendModal()">
+                ➕ Connect by Unique ID
+              </button>
+            </div>
           </div>
         `;
         return;

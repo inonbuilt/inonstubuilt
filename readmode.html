@@ -165,20 +165,53 @@
 
     <!-- 7. AMBIENT LO-FI & FOCUS SOUNDS -->
     <div class="rm-panel panel-music">
-      <div class="rm-panel-label">Ambient Study Focus</div>
-      <p style="font-size:0.8rem; color:#94a3b8; margin-bottom:12px; line-height:1.4;">
-        Instrumental focus stream designed for high-intensity CA reading blocks:
-      </p>
-      <iframe
-        style="border-radius:12px; margin-bottom:8px;"
-        src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator&theme=0"
-        width="100%"
-        height="152"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
+      <div class="music-header-row">
+        <div class="rm-panel-label" style="margin-bottom:0;">Ambient Study Focus</div>
+        <span class="spotify-status-badge" id="spotifyStatusBadge">
+          <span class="spotify-dot"></span> Spotify Connected
+        </span>
+      </div>
+
+      <!-- Quick Curated Study Presets -->
+      <div class="spotify-presets">
+        <button class="sp-preset-btn active" id="spPresetLofi" onclick="loadSpotifyPreset('lofi')">🎧 Lo-Fi</button>
+        <button class="sp-preset-btn" id="spPresetDeep" onclick="loadSpotifyPreset('deep')">🧠 Deep Focus</button>
+        <button class="sp-preset-btn" id="spPresetPiano" onclick="loadSpotifyPreset('piano')">🌧️ Rain &amp; Piano</button>
+        <button class="sp-preset-btn" id="spPresetClassical" onclick="loadSpotifyPreset('classical')">🎻 Classical</button>
+      </div>
+
+      <!-- Spotify Player Iframe Container -->
+      <div class="spotify-iframe-wrap">
+        <iframe
+          id="spotifyPlayerIframe"
+          src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <!-- Custom Spotify Link / Profile Connect Form -->
+      <div class="spotify-connect-box">
+        <div class="spotify-input-row">
+          <input
+            type="text"
+            id="spotifyCustomUrl"
+            class="spotify-input"
+            placeholder="Paste your Spotify playlist, album, or track link..."
+            onkeydown="if(event.key==='Enter')applyCustomSpotifyUrl()"
+          />
+          <button class="spotify-apply-btn" onclick="applyCustomSpotifyUrl()" title="Load your Spotify music">Connect</button>
+          <button class="spotify-clear-btn" onclick="clearCustomSpotifyUrl()" title="Reset to default preset">✕</button>
+        </div>
+        <div class="spotify-tip-row">
+          <span id="spotifyTipText">💡 Tip: Log into Spotify inside the player to stream your full personal library.</span>
+          <a href="https://open.spotify.com" target="_blank" rel="noopener" class="spotify-web-link">Open Spotify ↗</a>
+        </div>
+      </div>
     </div>
 
   </div>

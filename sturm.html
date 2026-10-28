@@ -1027,7 +1027,657 @@
         grid-template-rows: 1fr !important;
       }
     }
-  </style>
+  
+    /* ═══════════════════════════════════════
+       SOCIAL MEDIA STUDENT PROFILE ID CARD
+    ═══════════════════════════════════════ */
+    .social-profile-modal-card {
+      max-width: 780px !important;
+      padding: 0 !important;
+      overflow: hidden !important;
+      border-radius: 20px !important;
+      background: #0f172a !important;
+      border: 1px solid rgba(56, 189, 248, 0.35) !important;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8), 0 0 35px rgba(56, 189, 248, 0.15) !important;
+    }
+
+    .social-cover-banner {
+      height: 110px;
+      background: linear-gradient(135deg, #1e3a8a 0%, #0369a1 40%, #0d9488 80%, #065f46 100%);
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 16px 20px;
+      overflow: hidden;
+    }
+
+    .social-cover-overlay {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+      background-size: 16px 16px;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    .social-passport-chip {
+      position: relative;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 9999px;
+      padding: 5px 12px;
+      font-size: 11px;
+      font-weight: 800;
+      color: #f8fafc;
+      letter-spacing: 0.5px;
+    }
+
+    .passport-badge {
+      background: #10b981;
+      color: #064e3b;
+      font-size: 9px;
+      font-weight: 900;
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+
+    .social-modal-close-btn {
+      position: relative;
+      z-index: 2;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #cbd5e1;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      transition: all 0.2s;
+    }
+
+    .social-modal-close-btn:hover {
+      background: #ef4444;
+      color: white;
+      border-color: #ef4444;
+      transform: scale(1.05);
+    }
+
+    .social-profile-header {
+      padding: 0 24px 16px 24px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      margin-top: -46px;
+      position: relative;
+      z-index: 3;
+    }
+
+    .social-avatar-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .social-profile-avatar {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 800;
+      color: white;
+      cursor: pointer;
+      overflow: hidden;
+      border: 3.5px solid #0f172a;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 0 2px #38bdf8;
+      position: relative;
+      transition: transform 0.2s;
+    }
+
+    .social-profile-avatar:hover {
+      transform: scale(1.03);
+    }
+
+    .social-profile-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .avatar-camera-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .social-profile-avatar:hover .avatar-camera-overlay {
+      opacity: 1;
+    }
+
+    .avatar-action-links {
+      display: flex;
+      gap: 6px;
+    }
+
+    .avatar-mini-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #94a3b8;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .avatar-mini-btn:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: #f8fafc;
+    }
+
+    .avatar-mini-btn.danger:hover {
+      background: rgba(239, 68, 68, 0.2);
+      color: #fca5a5;
+      border-color: rgba(239, 68, 68, 0.4);
+    }
+
+    .social-profile-info {
+      flex: 1;
+      min-width: 260px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 48px;
+    }
+
+    .field-label-pill {
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #7dd3fc;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+
+    .name-input-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .social-name-input {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 10px;
+      padding: 8px 14px;
+      color: #f8fafc;
+      font-size: 16px;
+      font-weight: 800;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .social-name-input:focus {
+      border-color: #38bdf8;
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+    }
+
+    .verified-student-check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #0284c7;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 900;
+      box-shadow: 0 0 10px rgba(2, 132, 199, 0.5);
+      flex-shrink: 0;
+    }
+
+    .ca-level-buttons-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .ca-role-btn {
+      padding: 8px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.03);
+      color: #94a3b8;
+      transition: all 0.2s;
+      text-align: center;
+    }
+
+    .ca-role-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #f8fafc;
+    }
+
+    .ca-role-btn.cn-btn {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: white;
+      border-color: #38bdf8;
+      box-shadow: 0 2px 10px rgba(2, 132, 199, 0.35);
+    }
+
+    .social-section-block {
+      padding: 0 24px;
+      margin-bottom: 14px;
+    }
+
+    .social-section-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #7dd3fc;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .social-mood-pills-row {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .social-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      padding: 0 24px;
+      margin-bottom: 14px;
+    }
+
+    .social-stat-card {
+      background: rgba(30, 41, 59, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 12px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .stat-card-label {
+      font-size: 10px;
+      font-weight: 800;
+      color: #94a3b8;
+      letter-spacing: 0.4px;
+    }
+
+    .social-stat-input, .social-stat-select {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      padding: 6px 10px;
+      color: #f8fafc;
+      font-size: 12.5px;
+      font-weight: 700;
+      outline: none;
+      width: 100%;
+      box-sizing: border-box;
+      transition: border-color 0.2s;
+    }
+
+    .social-stat-input:focus, .social-stat-select:focus {
+      border-color: #38bdf8;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .social-bio-wrapper {
+      position: relative;
+    }
+
+    .bio-quote-icon {
+      position: absolute;
+      top: 6px;
+      left: 12px;
+      font-size: 24px;
+      font-family: Georgia, serif;
+      color: rgba(56, 189, 248, 0.4);
+      pointer-events: none;
+    }
+
+    .social-bio-textarea {
+      width: 100%;
+      background: rgba(30, 41, 59, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 10px 14px 10px 32px;
+      color: #f8fafc;
+      font-size: 13px;
+      line-height: 1.5;
+      font-family: inherit;
+      resize: vertical;
+      box-sizing: border-box;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .social-bio-textarea:focus {
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+    }
+
+    .social-vault-card {
+      margin: 0 24px 20px 24px;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 58, 138, 0.3));
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 14px;
+      padding: 14px 18px;
+    }
+
+    .vault-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .vault-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .vault-icon {
+      font-size: 20px;
+    }
+
+    .vault-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #7dd3fc;
+    }
+
+    .vault-desc {
+      font-size: 11px;
+      color: #94a3b8;
+    }
+
+    .vault-stats-pill {
+      font-size: 11px;
+      color: #4ade80;
+      font-weight: 700;
+      background: rgba(74, 222, 128, 0.1);
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(74, 222, 128, 0.25);
+    }
+
+    .vault-actions-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .cn-btn.emerald-glow {
+      background: linear-gradient(135deg, #059669, #10b981);
+      color: white;
+      box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+    }
+
+    .cn-btn.primary-glow {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: white;
+      box-shadow: 0 2px 10px rgba(2, 132, 199, 0.3);
+    }
+
+    .vault-toast-msg {
+      margin-top: 8px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #4ade80;
+      min-height: 16px;
+    }
+
+    @media (max-width: 640px) {
+      .social-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .social-profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: -46px;
+      }
+      .social-profile-info {
+        padding-top: 0;
+        width: 100%;
+      }
+      .name-input-row {
+        justify-content: center;
+      }
+    }
+
+
+    /* ═══════════════════════════════════════
+       ELEVATED SOCIAL SHARE STUDY WRAP MODAL
+    ═══════════════════════════════════════ */
+    .social-share-modal-card {
+      max-width: 820px !important;
+      border-radius: 20px !important;
+      background: #0f172a !important;
+      border: 1px solid rgba(244, 114, 182, 0.35) !important;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8), 0 0 40px rgba(236, 72, 153, 0.15) !important;
+      overflow-y: auto !important;
+      max-height: 94vh !important;
+      padding: 24px !important;
+    }
+
+    .share-modal-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+    }
+
+    .share-modal-title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .share-modal-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #ec4899, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.35);
+      flex-shrink: 0;
+    }
+
+    .share-modal-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #f8fafc;
+      margin: 0;
+      letter-spacing: -0.2px;
+    }
+
+    .share-modal-sub {
+      font-size: 11.5px;
+      color: #94a3b8;
+      margin-top: 2px;
+    }
+
+    .share-controls-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 12px 14px;
+      margin-bottom: 16px;
+    }
+
+    .share-mode-pills {
+      display: flex;
+      gap: 6px;
+    }
+
+    .share-custom-inputs {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .share-user-input {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      padding: 7px 12px;
+      color: #f8fafc;
+      font-size: 12.5px;
+      font-weight: 700;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .share-user-input:focus {
+      border-color: #ec4899;
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.2);
+    }
+
+    .share-story-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: radial-gradient(circle at 50% 50%, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.9) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 18px;
+      position: relative;
+    }
+
+    .share-stage-badge {
+      position: absolute;
+      top: 10px;
+      left: 16px;
+      font-size: 10.5px;
+      font-weight: 800;
+      color: #f472b6;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #studyWrapCanvas {
+      max-width: 100%;
+      height: auto;
+      max-height: 450px;
+      border-radius: 14px;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.12);
+      transition: transform 0.2s;
+    }
+
+    .share-actions-hub {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      color: white;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .social-share-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    }
+
+    .social-share-btn.insta-gradient {
+      background: linear-gradient(45deg, #f09433, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888);
+    }
+
+    .social-share-btn.hd-download {
+      background: linear-gradient(135deg, #059669, #10b981);
+    }
+
+    .social-share-btn.whatsapp-green {
+      background: #25D366;
+      color: #052e16;
+    }
+
+    .social-share-btn.x-dark {
+      background: #000000;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .social-share-btn.copy-caption {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #e2e8f0;
+    }
+    .social-share-btn.copy-caption:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+    }
+
+</style>
 </head>
 
 <body style="background: transparent; margin: 0; padding: 0; overflow: hidden;">
@@ -1308,41 +1958,61 @@
   <!-- ═══════════════════════════════════════════════════════════════════
          MODAL 2: END-OF-DAY SOCIAL MEDIA STUDY WRAP GENERATOR
     ═══════════════════════════════════════════════════════════════════ -->
-  <div class="cn-modal-backdrop" id="shareModal">
-    <div class="cn-modal-card">
-      <div class="cn-modal-header">
-        <h3>📸 End-of-Day Social Media Study Wrap</h3>
+    <div class="cn-modal-backdrop" id="shareModal">
+    <div class="cn-modal-card social-share-modal-card">
+      <div class="share-modal-top">
+        <div class="share-modal-title-group">
+          <div class="share-modal-icon">📸</div>
+          <div>
+            <h3 class="share-modal-title">End-of-Day Social Study Wrap</h3>
+            <div class="share-modal-sub">Generate your verified study scorecard for Instagram Stories, WhatsApp Status &amp; X</div>
+          </div>
+        </div>
         <button class="cn-close-btn" onclick="closeShareModal()">✕ Close</button>
       </div>
 
-      <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:space-between; align-items:center;">
-        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      <!-- Controls Row: Card Mode + Custom Name & Tagline -->
+      <div class="share-controls-row">
+        <div class="share-mode-pills">
           <button class="cn-btn" id="cardModeSquadBtn" onclick="setCardMode('squad')">👥 Squad Leaderboard Card</button>
-          <button class="cn-btn secondary" id="cardModeSoloBtn" onclick="setCardMode('solo')">👤 Personal Solo
-            Card</button>
+          <button class="cn-btn secondary" id="cardModeSoloBtn" onclick="setCardMode('solo')">👤 Personal Solo Card</button>
         </div>
-        <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-          <input type="text" id="shareBarUserName" class="cn-input" placeholder="👤 Your Name on Card"
-            oninput="saveDisplayName(this.value)" style="max-width:190px;" />
-          <input type="text" id="customShareTagline" class="cn-input"
-            placeholder="Custom status (e.g. Day 42 of CA Final Grind 🔥)" oninput="renderStudyWrapCanvas()"
-            style="min-width:220px;" />
+        <div class="share-custom-inputs">
+          <input type="text" id="shareBarUserName" class="share-user-input" placeholder="👤 Your Name on Card"
+            oninput="saveDisplayName(this.value)" style="max-width:180px;" />
+          <input type="text" id="customShareTagline" class="share-user-input"
+            placeholder="Custom status (e.g. Day 45 of CA Final Grind 🔥)" oninput="renderStudyWrapCanvas()"
+            style="min-width:240px;" />
         </div>
       </div>
 
-      <div class="share-preview-wrap">
+      <!-- Smartphone Story Canvas Stage -->
+      <div class="share-story-stage">
+        <div class="share-stage-badge">📱 9:16 STORY READY HD CANVAS</div>
         <canvas id="studyWrapCanvas" width="1080" height="1350"></canvas>
       </div>
 
-      <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-top:14px;">
-        <button class="cn-btn insta" onclick="nativeShareStudyWrap()">📱 Share to Instagram / Apps</button>
-        <button class="cn-btn" onclick="downloadStudyWrapPng()">⬇️ Download HD Image (.PNG)</button>
-        <button class="cn-btn whatsapp" onclick="shareWrapToWhatsApp()">💬 Share on WhatsApp</button>
-        <button class="cn-btn twitter" onclick="shareWrapToTwitter()">🐦 Post on X (Twitter)</button>
-        <button class="cn-btn secondary" onclick="copyWrapTextSummary()">📋 Copy Caption</button>
+      <!-- Social Actions Hub -->
+      <div class="share-actions-hub">
+        <button class="social-share-btn insta-gradient" onclick="nativeShareStudyWrap()">
+          📱 Share to Instagram / Apps
+        </button>
+        <button class="social-share-btn hd-download" onclick="downloadStudyWrapPng()">
+          ⬇️ Download HD Image (.PNG)
+        </button>
+        <button class="social-share-btn whatsapp-green" onclick="shareWrapToWhatsApp()">
+          💬 Share on WhatsApp
+        </button>
+        <button class="social-share-btn x-dark" onclick="shareWrapToTwitter()">
+          🐦 Post on X (Twitter)
+        </button>
+        <button class="social-share-btn copy-caption" onclick="copyWrapTextSummary()">
+          📋 Copy Caption
+        </button>
       </div>
+
       <div id="shareActionToast"
-        style="text-align:center; color:#4ade80; font-size:12px; font-weight:700; margin-top:10px; min-height:18px;">
+        style="text-align:center; color:#4ade80; font-size:12px; font-weight:700; margin-top:12px; min-height:18px;">
       </div>
     </div>
   </div>
@@ -1350,63 +2020,72 @@
   <!-- ═══════════════════════════════════════════════════════════════════
          MODAL 3: STUDENT PROFILE, CA LEVEL & FULL DATA BACKUP / RESTORE
     ═══════════════════════════════════════════════════════════════════ -->
-  <div class="cn-modal-backdrop" id="profileModal">
-    <div class="cn-modal-card" style="max-width: 780px;">
-      <div class="cn-modal-header">
-        <h3>👤 CA Student Profile &amp; Universal Data Hub</h3>
-        <button class="cn-close-btn" onclick="closeProfileModal()">✕ Close</button>
+    <div class="cn-modal-backdrop" id="profileModal">
+    <div class="cn-modal-card social-profile-modal-card">
+      
+      <!-- TOP SOCIAL COVER BANNER -->
+      <div class="social-cover-banner">
+        <div class="social-cover-overlay"></div>
+        <div class="social-passport-chip">
+          <span class="passport-icon">🛡️</span>
+          <span>CALCIUM DIGITAL STUDENT PASS</span>
+          <span class="passport-badge">ACTIVE</span>
+        </div>
+        <button type="button" class="social-modal-close-btn" onclick="closeProfileModal()" title="Close Profile">✕</button>
       </div>
 
-      <!-- TOP PROFILE HERO: Avatar + Name + CA Course Level -->
-      <div
-        style="display:flex; gap:20px; align-items:center; flex-wrap:wrap; background:rgba(255,255,255,0.03); border:1px solid rgba(56,189,248,0.22); border-radius:14px; padding:18px; margin-bottom:16px;">
-        <div style="display:flex; flex-direction:column; align-items:center; gap:8px;">
+      <!-- PROFILE HEADER: Overlapping Avatar + Name + Level Roles -->
+      <div class="social-profile-header">
+        <div class="social-avatar-wrapper">
           <div id="profileAvatarPreviewWrap" onclick="document.getElementById('profilePicInput').click()"
-            title="Click to upload profile photo"
-            style="width:86px; height:86px; border-radius:50%; background:linear-gradient(135deg,#2563eb,#06b6d4); display:flex; align-items:center; justify-content:center; font-size:28px; font-weight:800; color:white; cursor:pointer; overflow:hidden; border:2.5px solid #38bdf8; box-shadow:0 8px 25px rgba(56,189,248,0.3);">
-            <img id="profileAvatarPreviewImg" src="" alt="Avatar"
-              style="width:100%; height:100%; object-fit:cover; display:none;" />
+            title="Click to change profile photo" class="social-profile-avatar">
+            <img id="profileAvatarPreviewImg" src="" alt="Avatar" style="display:none;" />
             <span id="profileAvatarPreviewInitials">CA</span>
+            <div class="avatar-camera-overlay">📷</div>
           </div>
           <input type="file" id="profilePicInput" accept="image/*" style="display:none;"
             onchange="handleProfilePicUpload(event)" />
-          <div style="display:flex; gap:6px;">
-            <button type="button" class="cn-btn secondary" style="padding:4px 9px; font-size:11px;"
-              onclick="document.getElementById('profilePicInput').click()">📷 Photo</button>
-            <button type="button" class="cn-btn secondary" style="padding:4px 9px; font-size:11px; color:#fca5a5;"
-              onclick="removeProfilePic()">🗑️</button>
+          <div class="avatar-action-links">
+            <button type="button" class="avatar-mini-btn" onclick="document.getElementById('profilePicInput').click()">
+              📷 Photo
+            </button>
+            <button type="button" class="avatar-mini-btn danger" onclick="removeProfilePic()">
+              🗑️ Remove
+            </button>
           </div>
         </div>
 
-        <div style="flex:1; min-width:230px; display:flex; flex-direction:column; gap:10px;">
-          <div>
-            <label style="font-size:11px; font-weight:700; color:#93c5fd; display:block; margin-bottom:4px;">STUDENT
-              DISPLAY NAME</label>
-            <input type="text" id="profNameInput" class="cn-input" placeholder="Enter your full name or nickname..."
-              style="width:100%;" oninput="saveProfileFormLive()" />
+        <div class="social-profile-info">
+          <div class="profile-name-edit-wrap">
+            <div class="field-label-pill">STUDENT DISPLAY NAME</div>
+            <div class="name-input-row">
+              <input type="text" id="profNameInput" class="social-name-input" placeholder="Your Name or Nickname..."
+                oninput="saveProfileFormLive()" />
+              <span class="verified-student-check" title="Verified CA Aspirant">✓</span>
+            </div>
           </div>
 
-          <div>
-            <label style="font-size:11px; font-weight:700; color:#93c5fd; display:block; margin-bottom:6px;">SELECT YOUR
-              CA LEVEL (SYNCS PLANNER &amp; READ MODE)</label>
-            <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:8px;">
-              <button type="button" id="profLvlFoundation" class="cn-btn secondary"
-                onclick="selectProfileCaLevel('foundation')" style="padding:9px; font-size:12px;">🌱 CA
-                Foundation</button>
-              <button type="button" id="profLvlInter" class="cn-btn secondary" onclick="selectProfileCaLevel('inter')"
-                style="padding:9px; font-size:12px;">⚡ CA Inter</button>
-              <button type="button" id="profLvlFinal" class="cn-btn" onclick="selectProfileCaLevel('final')"
-                style="padding:9px; font-size:12px;">🏆 CA Final</button>
+          <div class="ca-level-role-selector">
+            <div class="field-label-pill">CA COURSE LEVEL (ROLE)</div>
+            <div class="ca-level-buttons-row">
+              <button type="button" id="profLvlFoundation" class="ca-role-btn" onclick="selectProfileCaLevel('foundation')">
+                🌱 CA Foundation
+              </button>
+              <button type="button" id="profLvlInter" class="ca-role-btn" onclick="selectProfileCaLevel('inter')">
+                ⚡ CA Inter
+              </button>
+              <button type="button" id="profLvlFinal" class="ca-role-btn" onclick="selectProfileCaLevel('final')">
+                🏆 CA Final
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- MOOD SELECTOR -->
-      <div style="margin-bottom:14px;">
-        <label style="font-size:11px; font-weight:700; color:#93c5fd; display:block; margin-bottom:6px;">CURRENT STUDY
-          MOOD &amp; STATUS</label>
-        <div id="profMoodBar" style="display:flex; gap:7px; flex-wrap:wrap;">
+      <!-- STUDY MOOD / SOCIAL VIBE SELECTOR -->
+      <div class="social-section-block">
+        <div class="social-section-label">⚡ CURRENT STUDY MOOD &amp; VIBE</div>
+        <div id="profMoodBar" class="social-mood-pills-row">
           <button type="button" class="filter-pill-btn active" data-mood="🔥|Locked In"
             onclick="selectProfileMood('🔥','Locked In')">🔥 Locked In</button>
           <button type="button" class="filter-pill-btn" data-mood="📚|Deep Revision"
@@ -1417,90 +2096,84 @@
             onclick="selectProfileMood('⚡','Solving RTP / MTP')">⚡ Solving RTP / MTP</button>
           <button type="button" class="filter-pill-btn" data-mood="🦉|Night Owl Grind"
             onclick="selectProfileMood('🦉','Night Owl Grind')">🦉 Night Owl Grind</button>
-          <button type="button" class="filter-pill-btn" data-mood="🧘|Calm &amp; Focused"
-            onclick="selectProfileMood('🧘','Calm &amp; Focused')">🧘 Calm &amp; Focused</button>
-          <button type="button" class="filter-pill-btn" data-mood="🏆|AIR Target Mode"
-            onclick="selectProfileMood('🏆','AIR Target Mode')">🏆 AIR Target Mode</button>
+          <button type="button" class="filter-pill-btn" data-mood="🎯|Exam Countdown"
+            onclick="selectProfileMood('🎯','Exam Countdown')">🎯 Exam Countdown</button>
+          <button type="button" class="filter-pill-btn" data-mood="🏖️|Chill Break"
+            onclick="selectProfileMood('🏖️','Chill Break')">🏖️ Chill Break</button>
         </div>
       </div>
 
-      <!-- BIO & EXAM GOAL DETAILS -->
-      <div
-        style="display:grid; grid-template-columns:repeat(auto-fit, minmax(165px, 1fr)); gap:10px; margin-bottom:14px;">
-        <div>
-          <label style="font-size:11px; font-weight:700; color:#94a3b8; display:block; margin-bottom:4px;">📅 TARGET
-            ATTEMPT</label>
-          <input type="text" id="profAttemptInput" class="cn-input" placeholder="e.g. May 2027 / Nov 2026"
-            style="width:100%;" oninput="saveProfileFormLive()" />
+      <!-- SOCIAL PROFILE STATS / PASSPORT GRID -->
+      <div class="social-stats-grid">
+        <div class="social-stat-card">
+          <div class="stat-card-label">🎯 TARGET ATTEMPT</div>
+          <input type="text" id="profAttemptInput" class="social-stat-input" placeholder="e.g. May 2027"
+            oninput="saveProfileFormLive()" />
         </div>
-        <div>
-          <label style="font-size:11px; font-weight:700; color:#94a3b8; display:block; margin-bottom:4px;">🎯 TARGET
-            GROUP</label>
-          <select id="profGroupInput" class="cn-input" style="width:100%; color-scheme:dark;"
-            onchange="saveProfileFormLive()">
+
+        <div class="social-stat-card">
+          <div class="stat-card-label">📚 EXAM GROUP</div>
+          <select id="profGroupInput" class="social-stat-select" onchange="saveProfileFormLive()">
             <option value="Both Groups">Both Groups</option>
             <option value="Group 1">Group 1 Only</option>
             <option value="Group 2">Group 2 Only</option>
             <option value="SPOM + Final">SPOM + Final</option>
           </select>
         </div>
-        <div>
-          <label style="font-size:11px; font-weight:700; color:#94a3b8; display:block; margin-bottom:4px;">⏱️ DAILY GOAL
-            (HRS)</label>
-          <input type="number" id="profDailyGoalInput" class="cn-input" min="1" max="18" value="10" style="width:100%;"
+
+        <div class="social-stat-card">
+          <div class="stat-card-label">⏱️ DAILY TARGET (HRS)</div>
+          <input type="number" id="profDailyGoalInput" class="social-stat-input" min="1" max="18" value="10"
             oninput="saveProfileFormLive()" />
         </div>
-        <div>
-          <label style="font-size:11px; font-weight:700; color:#94a3b8; display:block; margin-bottom:4px;">📍 CITY /
-            ICAI REGION</label>
-          <input type="text" id="profCityInput" class="cn-input" placeholder="e.g. Mumbai / WIRC" style="width:100%;"
+
+        <div class="social-stat-card">
+          <div class="stat-card-label">📍 CITY / ICAI REGION</div>
+          <input type="text" id="profCityInput" class="social-stat-input" placeholder="e.g. Mumbai / WIRC"
             oninput="saveProfileFormLive()" />
         </div>
       </div>
 
-      <div style="margin-bottom:18px;">
-        <label style="font-size:11px; font-weight:700; color:#93c5fd; display:block; margin-bottom:4px;">✍️ STUDENT BIO
-          / MOTIVATION MANTRA</label>
-        <textarea id="profBioInput" class="cn-input" rows="2"
-          placeholder="Write your CA goal, target exemption subjects, or personal study mantra..."
-          style="width:100%; resize:vertical; font-family:inherit;" oninput="saveProfileFormLive()"></textarea>
+      <!-- SOCIAL BIO / MANIFESTATION CARD -->
+      <div class="social-section-block">
+        <div class="social-section-label">✍️ STUDENT BIO &amp; STUDY MANTRA</div>
+        <div class="social-bio-wrapper">
+          <span class="bio-quote-icon">“</span>
+          <textarea id="profBioInput" class="social-bio-textarea" rows="2"
+            placeholder="Write your CA goal, target exemption subjects, or personal study mantra..."
+            oninput="saveProfileFormLive()"></textarea>
+        </div>
       </div>
 
-      <!-- PORTABLE CROSS-PC BACKUP & RESTORE (EXPORT / IMPORT ALL WEBSITE DATA) -->
-      <div
-        style="background:linear-gradient(135deg, rgba(15,23,42,0.9), rgba(30,58,138,0.25)); border:1px solid rgba(56,189,248,0.35); border-radius:14px; padding:16px;">
-        <div
-          style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
-          <h4 style="margin:0; color:#7dd3fc; font-size:14px; display:flex; align-items:center; gap:8px;">
-            💾 Portable Cross-PC Data Backup &amp; Restore (.JSON)
-          </h4>
-          <span id="profDataStatsBadge" style="font-size:11px; color:#4ade80; font-weight:700;">All Plans + Read Mode
-            Ready</span>
+      <!-- UNIVERSAL DATA VAULT & CROSS-PC BACKUP -->
+      <div class="social-vault-card">
+        <div class="vault-header-row">
+          <div class="vault-title-group">
+            <span class="vault-icon">💾</span>
+            <div>
+              <div class="vault-title">Universal Data Vault &amp; Cross-PC Sync (.JSON)</div>
+              <div class="vault-desc">Export or import your complete Calcium Notes workspace (Plans, Tasks, Notes, Alarms)</div>
+            </div>
+          </div>
+          <span id="profDataStatsBadge" class="vault-stats-pill">All Plans + Read Mode Ready</span>
         </div>
-        <p style="margin:0 0 12px 0; font-size:12px; color:#cbd5e1; line-height:1.45; text-align:left;">
-          Switching to another PC or browser? Export your entire <strong>Calcium Notes</strong> workspace (Profile, CA
-          Level, all Planning Mode dates &amp; actual hours, Read Mode revision tasks, alarms, and quick notes) into a
-          single JSON file and import it anywhere.
-        </p>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
-          <button type="button" class="cn-btn" onclick="exportAllCalciumDataJson()"
-            style="background:linear-gradient(135deg,#059669,#10b981);">
-            ⬇️ Export All Data (.JSON)
+
+        <div class="vault-actions-row">
+          <button type="button" class="cn-btn emerald-glow" onclick="exportAllCalciumDataJson()">
+            ⬇️ Export Workspace (.JSON)
           </button>
-          <button type="button" class="cn-btn secondary"
-            onclick="document.getElementById('importCalciumJsonInput').click()"
-            style="border-color:rgba(56,189,248,0.5); color:#7dd3fc;">
-            ⬆️ Import Data File (.JSON)
+          <button type="button" class="cn-btn secondary" onclick="document.getElementById('importCalciumJsonInput').click()">
+            ⬆️ Import File (.JSON)
           </button>
           <input type="file" id="importCalciumJsonInput" accept=".json,application/json" style="display:none;"
             onchange="importAllCalciumDataJson(event)" />
-          <button type="button" class="cn-btn" style="margin-left:auto;" onclick="saveAndCloseProfileModal()">
-            ✅ Save &amp; Done
+          <button type="button" class="cn-btn primary-glow" style="margin-left:auto;" onclick="saveAndCloseProfileModal()">
+            ✅ Save Profile &amp; Done
           </button>
         </div>
-        <div id="profileBackupToast"
-          style="margin-top:10px; font-size:12px; font-weight:700; color:#4ade80; min-height:16px;"></div>
+        <div id="profileBackupToast" class="vault-toast-msg"></div>
       </div>
+
     </div>
   </div>
 
@@ -2301,9 +2974,9 @@
       const btnF = document.getElementById("profLvlFoundation");
       const btnI = document.getElementById("profLvlInter");
       const btnFi = document.getElementById("profLvlFinal");
-      if (btnF) btnF.className = lvl === "foundation" ? "cn-btn" : "cn-btn secondary";
-      if (btnI) btnI.className = lvl === "inter" ? "cn-btn" : "cn-btn secondary";
-      if (btnFi) btnFi.className = lvl === "final" ? "cn-btn" : "cn-btn secondary";
+      if (btnF) btnF.className = lvl === "foundation" ? "ca-role-btn cn-btn" : "ca-role-btn";
+      if (btnI) btnI.className = lvl === "inter" ? "ca-role-btn cn-btn" : "ca-role-btn";
+      if (btnFi) btnFi.className = lvl === "final" ? "ca-role-btn cn-btn" : "ca-role-btn";
     }
 
     function updateProfileMoodButtonsUI(emoji, text) {

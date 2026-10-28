@@ -645,6 +645,145 @@ function escapeHtml(str) {
   return d.innerHTML;
 }
 
+/* =========================================
+   SPOTIFY PROFILE & PLAYLIST CONNECT ENGINE
+========================================= */
+const SPOTIFY_PRESETS = {
+  lofi: "https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator&theme=0",
+  deep: "https://open.spotify.com/embed/playlist/37i9dQZF1DX8Uebhn9wzrS?utm_source=generator&theme=0",
+  piano: "https://open.spotify.com/embed/playlist/37i9dQZF1DX4sWSpwq3LiO?utm_source=generator&theme=0",
+  classical: "https://open.spotify.com/embed/playlist/37i9dQZF1DWZeKCadgRdKQ?utm_source=generator&theme=0"
+};
+
+function parseSpotifyEmbedUrl(url) {
+  const raw = (url || "").trim();
+  if (!raw) return { url: null, kind: "empty" };
+
+  if (raw.includes("open.spotify.com/embed/")) {
+    return { url: raw, kind: "embed" };
+  }
+
+  const m = raw.match(/open\.spotify\.com\/(playlist|album|track|artist|show|episode)\/([a-zA-Z0-9]+)/);
+  if (m) {
+    return {
+      url: `https://open.spotify.com/embed/${m[1]}/${m[2]}?utm_source=generator&theme=0`,
+      kind: m[1]
+    };
+  }
+
+  const m2 = raw.match(/spotify:(playlist|album|track|artist|show|episode):([a-zA-Z0-9]+)/);
+  if (m2) {
+    return {
+      url: `https://open.spotify.com/embed/${m2[1]}/${m2[2]}?utm_source=generator&theme=0`,
+      kind: m2[1]
+    };
+  }
+
+  const m3 = raw.match(/open\.spotify\.com\/user\/([a-zA-Z0-9_.-]+)/);
+  if (m3) {
+    return {
+      url: null,
+      kind: "user_profile",
+      userId: m3[1]
+    };
+  }
+
+  return { url: null, kind: "invalid" };
+}
+
+window.loadSpotifyPreset = function(presetKey) {
+  const embedUrl = SPOTIFY_PRESETS[presetKey] || SPOTIFY_PRESETS.lofi;
+  const iframe = document.getElementById("spotifyPlayerIframe");
+  if (iframe) iframe.src = embedUrl;
+
+  localStorage.removeItem("cn_spotify_custom_embed");
+  localStorage.removeItem("cn_spotify_user_input");
+  localStorage.setItem("cn_spotify_active_preset", presetKey);
+
+  const input = document.getElementById("spotifyCustomUrl");
+  if (input) input.value = "";
+
+  document.querySelectorAll(".sp-preset-btn").forEach(b => b.classList.remove("active"));
+  const btn = document.getElementById(`spPreset${presetKey.charAt(0).toUpperCase() + presetKey.slice(1)}`);
+  if (btn) btn.classList.add("active");
+
+  const badge = document.getElementById("spotifyStatusBadge");
+  if (badge) {
+    badge.innerHTML = `<span class="spotify-dot"></span> Preset: ${presetKey.toUpperCase()}`;
+  }
+};
+
+window.applyCustomSpotifyUrl = function() {
+  const input = document.getElementById("spotifyCustomUrl");
+  const tip = document.getElementById("spotifyTipText");
+  const badge = document.getElementById("spotifyStatusBadge");
+  const iframe = document.getElementById("spotifyPlayerIframe");
+  if (!input) return;
+
+  const raw = input.value.trim();
+  if (!raw) {
+    if (tip) tip.textContent = "⚠️ Please paste a valid Spotify playlist, album, or track link.";
+    return;
+  }
+
+  const res = parseSpotifyEmbedUrl(raw);
+  if (res.kind === "user_profile") {
+    if (tip) {
+      tip.innerHTML = `👤 User profile <b>${escapeHtml(res.userId)}</b> recognized! Open your profile and copy any playlist link to play here.`;
+    }
+    return;
+  }
+
+  if (!res.url) {
+    if (tip) tip.textContent = "❌ Invalid Spotify link. Please paste a link like https://open.spotify.com/playlist/...";
+    return;
+  }
+
+  if (iframe) iframe.src = res.url;
+  localStorage.setItem("cn_spotify_custom_embed", res.url);
+  localStorage.setItem("cn_spotify_user_input", raw);
+  localStorage.removeItem("cn_spotify_active_preset");
+
+  document.querySelectorAll(".sp-preset-btn").forEach(b => b.classList.remove("active"));
+
+  if (badge) {
+    badge.innerHTML = `<span class="spotify-dot" style="background:#38bdf8; box-shadow:0 0 8px #38bdf8;"></span> Custom: ${res.kind.toUpperCase()}`;
+  }
+  if (tip) {
+    tip.textContent = "✅ Connected! Spotify music updated and saved.";
+  }
+};
+
+window.clearCustomSpotifyUrl = function() {
+  localStorage.removeItem("cn_spotify_custom_embed");
+  localStorage.removeItem("cn_spotify_user_input");
+  const input = document.getElementById("spotifyCustomUrl");
+  if (input) input.value = "";
+  loadSpotifyPreset("lofi");
+  const tip = document.getElementById("spotifyTipText");
+  if (tip) tip.textContent = "💡 Reset to default study Lo-Fi stream.";
+};
+
+function initSpotifyPlayer() {
+  const customEmbed = localStorage.getItem("cn_spotify_custom_embed");
+  const customInput = localStorage.getItem("cn_spotify_user_input");
+  const activePreset = localStorage.getItem("cn_spotify_active_preset") || "lofi";
+  const iframe = document.getElementById("spotifyPlayerIframe");
+  const input = document.getElementById("spotifyCustomUrl");
+  const badge = document.getElementById("spotifyStatusBadge");
+
+  if (customEmbed && iframe) {
+    iframe.src = customEmbed;
+    if (input && customInput) input.value = customInput;
+    document.querySelectorAll(".sp-preset-btn").forEach(b => b.classList.remove("active"));
+    if (badge) {
+      badge.innerHTML = `<span class="spotify-dot" style="background:#38bdf8; box-shadow:0 0 8px #38bdf8;"></span> Custom Music Connected`;
+    }
+  } else {
+    loadSpotifyPreset(activePreset);
+  }
+}
+
 /* ── INITIALIZATION ── */
 window.addEventListener("DOMContentLoaded", () => {
   updateClock();
@@ -663,6 +802,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const savedNotes = localStorage.getItem("cn_notes") || "";
   document.getElementById("quickNotes").value = savedNotes;
+  initSpotifyPlayer();
 });
 
 window.addEventListener("storage", (e) => {
