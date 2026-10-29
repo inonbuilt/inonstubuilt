@@ -1355,27 +1355,36 @@
     ];
     let currentIndex = 0;
 
-    // Load data on window startup
+    // Load data on window startup (in-flow banner, no distracting fly-in)
     window.addEventListener("load", () => {
-      setTimeout(() => {
-        banner.classList.add("show");
-        showUpdate();
-        if (updates.length > 1) {
-          setInterval(showUpdate, 3000);
-        }
-      }, 500);
+      showUpdate();
+      if (updates.length > 1) {
+        setInterval(showUpdate, 3500);
+      }
 
       showRandomQuote();
       initSquadEngine();
     });
 
     function showUpdate() {
-      message.textContent = updates[currentIndex].text;
-      link.href = updates[currentIndex].url;
+      if (!updates || updates.length === 0 || !message || !link) return;
+      const cur = updates[currentIndex];
+      message.style.opacity = "0";
+      setTimeout(() => {
+        message.textContent = cur.text;
+        link.href = cur.url;
+        message.style.opacity = "1";
+      }, 160);
       currentIndex = (currentIndex + 1) % updates.length;
     }
     function closeUpdate() {
-      banner.classList.remove("show");
+      if (!banner) return;
+      banner.style.transition = "opacity 0.25s ease, transform 0.25s ease, margin 0.25s ease";
+      banner.style.opacity = "0";
+      banner.style.transform = "scale(0.96)";
+      setTimeout(() => {
+        banner.style.display = "none";
+      }, 250);
     }
 
     /* =========================================
@@ -2519,29 +2528,26 @@
         if (icon) icon.textContent = "☰";
         if (text) text.textContent = "Menu";
         if (btn) btn.title = "Click to unhide menu (☰)";
-        try { localStorage.setItem("calcium_menu_hidden", "1"); } catch (e) { }
       } else {
         if (icon) icon.textContent = "✕";
         if (text) text.textContent = "Menu";
         if (btn) btn.title = "Click to hide menu (✕)";
-        try { localStorage.setItem("calcium_menu_hidden", "0"); } catch (e) { }
       }
     };
 
-    // Restore user menu preference on startup (Laptop, PC, Tablet, Mobile)
+    // Ensure menu is OPEN by default on every page visit (PC, Laptop, Tablet, Mobile)
     try {
-      if (localStorage.getItem("calcium_menu_hidden") === "1") {
-        const bar = document.getElementById("mainModeToggles");
-        if (bar) {
-          bar.classList.add("menu-hidden");
-          const icon = document.getElementById("menuToggleIcon");
-          const text = document.getElementById("menuToggleText");
-          const btn = document.getElementById("menuToggleBtn");
-          if (icon) icon.textContent = "☰";
-          if (text) text.textContent = "Menu";
-          if (btn) btn.title = "Click to unhide menu (☰)";
-        }
+      const bar = document.getElementById("mainModeToggles");
+      if (bar) {
+        bar.classList.remove("menu-hidden");
+        const icon = document.getElementById("menuToggleIcon");
+        const text = document.getElementById("menuToggleText");
+        const btn = document.getElementById("menuToggleBtn");
+        if (icon) icon.textContent = "✕";
+        if (text) text.textContent = "Menu";
+        if (btn) btn.title = "Click to hide menu (✕)";
       }
+      localStorage.removeItem("calcium_menu_hidden");
     } catch (e) { }
     </script>
 
