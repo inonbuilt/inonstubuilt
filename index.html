@@ -596,6 +596,17 @@
       font-size: 12px;
       color: #fff;
       outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .sq-card-pwd-inline input:focus {
+      border-color: #38bdf8 !important;
+      box-shadow: 0 0 8px rgba(56, 189, 248, 0.45) !important;
+    }
+
+    .sq-card-pwd-inline input.sq-error {
+      border-color: #ef4444 !important;
+      box-shadow: 0 0 10px rgba(239, 68, 68, 0.5) !important;
     }
 
     .sq-card-pwd-inline button {
@@ -607,6 +618,12 @@
       font-size: 11.5px;
       font-weight: 700;
       cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .sq-card-pwd-inline button:hover {
+      background: #1d4ed8;
+      transform: translateY(-1px);
     }
 
     .sq-knock-waiting-box {
@@ -1974,6 +1991,8 @@
     function hideLobby() {
       const overlay = document.getElementById('squadLobbyOverlay');
       if (overlay) overlay.classList.remove('lobby-visible');
+      if (window.activePublicCardPwds) window.activePublicCardPwds.clear();
+      clearTimeout(window._pendingLobbyRefreshTimer);
     }
 
     function sqLobbyNameChange(val) {
@@ -2131,16 +2150,18 @@
       }
     }
 
-    function pruneStalePublicRooms() {
+    function pruneStalePublicRooms(autoRefresh = true) {
       const now = Date.now();
       let changed = false;
       Object.keys(sqLivePublicRooms).forEach(code => {
         if (now - (sqLivePublicRooms[code].updatedAt || 0) > 11000) {
           delete sqLivePublicRooms[code];
+          if (window.activePublicCardPwds) window.activePublicCardPwds.delete(code);
           changed = true;
         }
       });
-      if (changed) refreshPublicRoomsUI();
+      if (changed && autoRefresh) refreshPublicRoomsUI();
+      return changed;
     }
 
     window.copyPublicRoomCode = function (code, btn) {
@@ -2154,11 +2175,49 @@
       } catch (e) { }
     };
 
-    window.refreshPublicRoomsUI = function () {
-      pruneStalePublicRooms();
+    window.refreshPublicRoomsUI = function (force = false) {
       const listEl = document.getElementById('sqPublicRoomsList');
       const countEl = document.getElementById('sqPublicRoomsCount');
       if (!listEl) return;
+
+      window.activePublicCardPwds = window.activePublicCardPwds || new Set();
+
+      const activeEl = document.activeElement;
+      const isInputActive = activeEl && (
+        (activeEl.id && activeEl.id.startsWith('sqCardPwdInput_')) ||
+        (listEl.contains(activeEl) && activeEl.tagName === 'INPUT')
+      );
+
+      // If user is currently focused or typing in a password input, defer background auto-refresh
+      if (!force && isInputActive) {
+        clearTimeout(window._pendingLobbyRefreshTimer);
+        window._pendingLobbyRefreshTimer = setTimeout(() => {
+          refreshPublicRoomsUI(false);
+        }, 3000);
+        return;
+      }
+
+      pruneStalePublicRooms(false);
+
+      // Collect any currently typed values across all room password inputs
+      const currentInputValues = {};
+      listEl.querySelectorAll('input[id^="sqCardPwdInput_"]').forEach(inp => {
+        const c = inp.id.replace('sqCardPwdInput_', '');
+        if (inp.value) {
+          currentInputValues[c] = inp.value;
+        }
+      });
+
+      // Capture active focus and cursor selection if user was focused on an input
+      let focusedId = null;
+      let selStart = null, selEnd = null;
+      if (isInputActive && activeEl && activeEl.id) {
+        focusedId = activeEl.id;
+        try {
+          selStart = activeEl.selectionStart;
+          selEnd = activeEl.selectionEnd;
+        } catch (e) { }
+      }
 
       const roomCodes = Object.keys(sqLivePublicRooms);
       if (countEl) countEl.textContent = roomCodes.length;
@@ -2199,6 +2258,9 @@
             </div>
           `;
         } else {
+          const isPwdOpen = !!(window.activePublicCardPwds && window.activePublicCardPwds.has(code));
+          const savedVal = currentInputValues[code] || '';
+          const savedValSafe = escapeHtml(savedVal);
           actionHtml = `
             <div class="sq-room-card-actions">
               <button type="button" class="sq-btn-pwd-join" onclick="togglePublicCardPwd('${code}')">
@@ -2208,8 +2270,9 @@
                 🙋 Ask to Join
               </button>
             </div>
-            <div id="sqCardPwd_${code}" class="sq-card-pwd-inline" style="display:none;">
+            <div id="sqCardPwd_${code}" class="sq-card-pwd-inline" style="display:${isPwdOpen ? 'flex' : 'none'};">
               <input type="password" id="sqCardPwdInput_${code}" placeholder="Enter room password..."
+                value="${savedValSafe}"
                 onkeydown="if(event.key==='Enter') submitPublicCardPwd('${code}')" />
               <button type="button" onclick="submitPublicCardPwd('${code}')">Enter</button>
             </div>
@@ -2239,6 +2302,25 @@
       });
 
       listEl.innerHTML = html;
+
+      // Restore typed password values to inputs
+      Object.keys(currentInputValues).forEach(c => {
+        const inp = document.getElementById('sqCardPwdInput_' + c);
+        if (inp && currentInputValues[c]) {
+          inp.value = currentInputValues[c];
+        }
+      });
+
+      // Restore active focus and cursor selection if user was typing
+      if (focusedId) {
+        const toFocus = document.getElementById(focusedId);
+        if (toFocus) {
+          toFocus.focus();
+          if (selStart !== null && selEnd !== null) {
+            try { toFocus.setSelectionRange(selStart, selEnd); } catch (e) { }
+          }
+        }
+      }
     };
 
     function escapeHtml(str) {
@@ -2266,13 +2348,23 @@
     };
 
     window.togglePublicCardPwd = function (code) {
+      window.activePublicCardPwds = window.activePublicCardPwds || new Set();
       const box = document.getElementById('sqCardPwd_' + code);
       if (!box) return;
       const isOpen = (box.style.display !== 'none');
-      box.style.display = isOpen ? 'none' : 'flex';
-      if (!isOpen) {
+      if (isOpen) {
+        box.style.display = 'none';
+        window.activePublicCardPwds.delete(code);
+      } else {
+        box.style.display = 'flex';
+        window.activePublicCardPwds.add(code);
         const inp = document.getElementById('sqCardPwdInput_' + code);
-        if (inp) inp.focus();
+        if (inp) {
+          setTimeout(() => {
+            inp.focus();
+            try { inp.select(); } catch (e) { }
+          }, 30);
+        }
       }
     };
 
@@ -2280,8 +2372,15 @@
       const inp = document.getElementById('sqCardPwdInput_' + code);
       const pwd = inp ? inp.value.trim() : '';
       if (!pwd) {
-        if (inp) inp.focus();
+        if (inp) {
+          inp.classList.add('sq-error');
+          inp.focus();
+          setTimeout(() => inp.classList.remove('sq-error'), 1200);
+        }
         return;
+      }
+      if (window.activePublicCardPwds) {
+        window.activePublicCardPwds.delete(code);
       }
       const nameEl = document.getElementById('sqLobbyName');
       if (nameEl && nameEl.value.trim()) sqLobbyNameChange(nameEl.value.trim());
@@ -2303,7 +2402,7 @@
       sqLobbyNameChange(myName);
 
       window.activeKnockingRoom = code;
-      refreshPublicRoomsUI();
+      refreshPublicRoomsUI(true);
 
       // Transmit knock request via sturm WebRTC engine
       callSturm('requestKnockRoom', code, myName);
@@ -2312,7 +2411,7 @@
     window.cancelKnockFromLobby = function () {
       window.activeKnockingRoom = null;
       callSturm('cancelKnockRequest');
-      refreshPublicRoomsUI();
+      refreshPublicRoomsUI(true);
     };
 
     window.onKnockAccepted = function (roomCode) {
@@ -2324,8 +2423,13 @@
 
     window.onKnockDeclined = function (roomCode) {
       window.activeKnockingRoom = null;
-      refreshPublicRoomsUI();
+      refreshPublicRoomsUI(true);
       alert(`The host of room ${roomCode} declined your join request.`);
+    };
+
+    window.onKnockRequestReceived = function (guestName, roomCode) {
+      window.showSturmOverlay();
+      callSturm('openSquadModal', false);
     };
 
     // Allow sturm to re-open the lobby (e.g. "Change Room" button)
@@ -2434,7 +2538,7 @@
             <span class="sq-pub-header-title">LIVE PUBLIC ROOMS</span>
             <span id="sqPublicRoomsCount" class="sq-pub-count-pill">0</span>
           </div>
-          <button type="button" class="sq-pub-refresh-btn" onclick="refreshPublicRoomsUI()"
+          <button type="button" class="sq-pub-refresh-btn" onclick="refreshPublicRoomsUI(true)"
             title="Refresh public rooms">↻</button>
         </div>
 
