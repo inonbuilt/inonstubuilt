@@ -172,6 +172,17 @@ function initTimeline() {
     block.innerHTML = `<div class="hour-label">${label}</div>`;
     container.appendChild(block);
   }
+
+  // Auto-scroll timeline to center on the current hour on load
+  setTimeout(() => {
+    const scrollContainer = document.getElementById("timeline-container");
+    if (scrollContainer) {
+      const now = new Date();
+      const currentMins = (now.getHours() * 60) + now.getMinutes();
+      const targetScroll = Math.max(0, (currentMins * MINUTE_MULTIPLIER) - 70);
+      scrollContainer.scrollTop = targetScroll;
+    }
+  }, 100);
 }
 
 function renderCalendar() {
