@@ -100,25 +100,29 @@
     /* ═══════════════════════════════════════════════
        STUDY SQUAD LOBBY POPUP  (lives in index.html)
     ═══════════════════════════════════════════════ */
+    /* ═════════════════════════════════════════════════════════════════════
+       PREMIUM STUDY SQUAD LOBBY (UPSIDE LIVE PUBLIC ROOMS + ACTION TABS)
+       ═════════════════════════════════════════════════════════════════════ */
     #squadLobbyOverlay {
       position: fixed;
       inset: 0;
       z-index: 200000;
-      /* above sturmOverlay (100000) */
       display: none;
       align-items: center;
       justify-content: center;
-      background: rgba(5, 10, 22, 0.92);
-      backdrop-filter: blur(22px);
-      -webkit-backdrop-filter: blur(22px);
+      background: rgba(3, 7, 18, 0.94);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      padding: 16px;
+      box-sizing: border-box;
     }
 
     #squadLobbyOverlay.lobby-visible {
       display: flex;
-      animation: lobbyFadeIn 0.25s ease;
+      animation: sqLobbyFadeIn 0.25s ease;
     }
 
-    @keyframes lobbyFadeIn {
+    @keyframes sqLobbyFadeIn {
       from {
         opacity: 0;
       }
@@ -130,25 +134,48 @@
 
     .sq-lobby-card {
       position: relative;
-      background: linear-gradient(160deg, #0d1b35 0%, #0a1628 100%);
-      border: 1px solid rgba(56, 189, 248, 0.3);
-      border-radius: 26px;
-      padding: 44px 40px 38px;
+      background: linear-gradient(165deg, #0e1c36 0%, #071120 100%);
+      border: 1px solid rgba(56, 189, 248, 0.32);
+      border-radius: 24px;
+      padding: 24px 22px 20px;
       width: 100%;
-      max-width: 420px;
-      margin: 16px;
+      max-width: 450px;
+      max-height: 92vh;
+      overflow-y: auto;
+      box-sizing: border-box;
       box-shadow:
-        0 40px 100px rgba(0, 0, 0, 0.7),
-        0 0 0 1px rgba(56, 189, 248, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.04);
-      text-align: center;
-      animation: lobbyCardPop 0.35s cubic-bezier(.22, 1, .36, 1);
+        0 30px 90px rgba(0, 0, 0, 0.85),
+        0 0 35px rgba(14, 165, 233, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      animation: sqLobbyPop 0.32s cubic-bezier(.16, 1, .3, 1);
     }
 
-    @keyframes lobbyCardPop {
+    .sq-lobby-card::-webkit-scrollbar,
+    .sq-public-rooms-list::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .sq-lobby-card::-webkit-scrollbar-track,
+    .sq-public-rooms-list::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.4);
+      border-radius: 6px;
+    }
+
+    .sq-lobby-card::-webkit-scrollbar-thumb,
+    .sq-public-rooms-list::-webkit-scrollbar-thumb {
+      background: rgba(56, 189, 248, 0.25);
+      border-radius: 6px;
+    }
+
+    .sq-lobby-card::-webkit-scrollbar-thumb:hover,
+    .sq-public-rooms-list::-webkit-scrollbar-thumb:hover {
+      background: rgba(56, 189, 248, 0.45);
+    }
+
+    @keyframes sqLobbyPop {
       from {
         opacity: 0;
-        transform: scale(0.88) translateY(24px);
+        transform: scale(0.92) translateY(18px);
       }
 
       to {
@@ -160,54 +187,531 @@
     .sq-lobby-close {
       position: absolute;
       top: 14px;
-      right: 16px;
+      right: 14px;
       background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: #64748b;
-      font-size: 16px;
-      width: 32px;
-      height: 32px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #94a3b8;
+      font-size: 15px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background 0.2s, color 0.2s;
+      transition: all 0.2s;
       line-height: 1;
     }
 
     .sq-lobby-close:hover {
-      background: rgba(239, 68, 68, 0.18);
+      background: rgba(239, 68, 68, 0.2);
       color: #fca5a5;
+      border-color: rgba(239, 68, 68, 0.4);
     }
 
-    .sq-lobby-emoji {
-      font-size: 52px;
-      line-height: 1;
-      margin-bottom: 12px;
+    /* ── Compact Header ── */
+    .sq-lobby-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+      text-align: left;
+    }
+
+    .sq-lobby-header-icon {
+      font-size: 26px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 14px;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.18);
+      flex-shrink: 0;
+    }
+
+    .sq-lobby-header-text {
+      display: flex;
+      flex-direction: column;
     }
 
     .sq-lobby-title {
-      margin: 0 0 6px;
-      font-size: 24px;
+      margin: 0;
+      font-size: 20px;
       font-weight: 800;
       color: #f0f9ff;
-      letter-spacing: -0.4px;
+      letter-spacing: -0.3px;
     }
 
     .sq-lobby-sub {
-      margin: 0 0 28px;
-      font-size: 13px;
-      color: #475569;
-      line-height: 1.55;
+      margin: 2px 0 0;
+      font-size: 12px;
+      color: #94a3b8;
     }
 
-    .sq-lobby-form {
+    /* ── Quick Name Bar ── */
+    .sq-name-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 7px 12px;
+      margin-bottom: 14px;
+      text-align: left;
+      transition: border-color 0.2s;
+    }
+
+    .sq-name-bar:focus-within {
+      border-color: rgba(56, 189, 248, 0.45);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .sq-name-icon {
+      font-size: 16px;
+      color: #38bdf8;
+      flex-shrink: 0;
+    }
+
+    .sq-name-info {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .sq-name-label {
+      font-size: 9.5px;
+      font-weight: 800;
+      color: #7dd3fc;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 1px;
+    }
+
+    .sq-name-input {
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #f8fafc;
+      padding: 0;
+      font-family: inherit;
+      width: 100%;
+    }
+
+    .sq-name-input::placeholder {
+      color: #475569;
+      font-weight: 400;
+    }
+
+    /* ── UPSIDE: Live Public Rooms Directory (Featured Hero) ── */
+    .sq-public-rooms-section {
+      margin-bottom: 16px;
+      padding: 12px 14px;
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(56, 189, 248, 0.24);
+      border-radius: 16px;
       display: flex;
       flex-direction: column;
       gap: 10px;
+      text-align: left;
     }
 
+    .sq-public-rooms-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sq-pub-header-left {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .sq-live-pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 10px #22c55e;
+      animation: sqLivePulse 1.8s infinite;
+    }
+
+    @keyframes sqLivePulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.4;
+        transform: scale(0.85);
+      }
+    }
+
+    .sq-pub-header-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #38bdf8;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .sq-pub-count-pill {
+      font-size: 10px;
+      font-weight: 800;
+      padding: 1px 7px;
+      border-radius: 10px;
+      background: rgba(56, 189, 248, 0.18);
+      color: #7dd3fc;
+      border: 1px solid rgba(56, 189, 248, 0.32);
+    }
+
+    .sq-pub-refresh-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #94a3b8;
+      border-radius: 6px;
+      font-size: 12px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+
+    .sq-pub-refresh-btn:hover {
+      background: rgba(56, 189, 248, 0.18);
+      color: #38bdf8;
+      transform: rotate(45deg);
+    }
+
+    .sq-public-rooms-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 180px;
+      overflow-y: auto;
+      padding-right: 2px;
+    }
+
+    .sq-no-rooms-card {
+      padding: 16px 12px;
+      border-radius: 12px;
+      background: rgba(15, 23, 42, 0.45);
+      border: 1px dashed rgba(255, 255, 255, 0.08);
+      text-align: center;
+    }
+
+    .sq-no-rooms-icon {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    .sq-no-rooms-txt {
+      font-size: 11.5px;
+      color: #64748b;
+      line-height: 1.45;
+    }
+
+    .sq-room-card {
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 12px;
+      padding: 10px 12px;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .sq-room-card:hover {
+      border-color: rgba(56, 189, 248, 0.5);
+      background: rgba(30, 41, 59, 0.95);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4), 0 0 14px rgba(56, 189, 248, 0.12);
+    }
+
+    .sq-room-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sq-room-card-host {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #f1f5f9;
+    }
+
+    .sq-room-card-code-wrap {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .sq-room-card-code {
+      font-size: 11px;
+      font-weight: 800;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.12);
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-family: monospace;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    .sq-room-card-copy-btn {
+      background: none;
+      border: none;
+      color: #94a3b8;
+      cursor: pointer;
+      font-size: 12px;
+      padding: 2px 4px;
+      border-radius: 4px;
+      transition: color 0.15s, background 0.15s;
+    }
+
+    .sq-room-card-copy-btn:hover {
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.15);
+    }
+
+    .sq-room-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: #94a3b8;
+    }
+
+    .sq-room-badge-free {
+      color: #4ade80;
+      background: rgba(74, 222, 128, 0.12);
+      border: 1px solid rgba(74, 222, 128, 0.28);
+      padding: 1px 7px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 10px;
+    }
+
+    .sq-room-badge-locked {
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.12);
+      border: 1px solid rgba(251, 191, 36, 0.28);
+      padding: 1px 7px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 10px;
+    }
+
+    .sq-room-card-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sq-btn-direct-join {
+      flex: 1;
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.15s, opacity 0.15s, box-shadow 0.15s;
+      font-family: inherit;
+      box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+    }
+
+    .sq-btn-direct-join:hover {
+      opacity: 0.95;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.45);
+    }
+
+    .sq-btn-ask-join {
+      flex: 1;
+      background: rgba(14, 165, 233, 0.18);
+      border: 1px solid rgba(56, 189, 248, 0.38);
+      color: #38bdf8;
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: inherit;
+    }
+
+    .sq-btn-ask-join:hover {
+      background: rgba(14, 165, 233, 0.32);
+      color: #fff;
+    }
+
+    .sq-btn-pwd-join {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #e2e8f0;
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: inherit;
+    }
+
+    .sq-btn-pwd-join:hover {
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .sq-card-pwd-inline {
+      display: flex;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .sq-card-pwd-inline input {
+      flex: 1;
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 6px;
+      padding: 6px 9px;
+      font-size: 12px;
+      color: #fff;
+      outline: none;
+    }
+
+    .sq-card-pwd-inline button {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .sq-knock-waiting-box {
+      width: 100%;
+      padding: 8px 10px;
+      background: rgba(14, 165, 233, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 8px;
+      font-size: 11.5px;
+      color: #7dd3fc;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      animation: sqPulseSlow 2s infinite;
+    }
+
+    @keyframes sqPulseSlow {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
+    }
+
+    .sq-knock-cancel-btn {
+      background: none;
+      border: none;
+      color: #f87171;
+      font-weight: 700;
+      font-size: 11px;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 2px 4px;
+    }
+
+    /* ── ACTION TABS (Host Room vs Join by Code) ── */
+    .sq-action-tabs {
+      display: flex;
+      gap: 6px;
+      background: rgba(15, 23, 42, 0.75);
+      padding: 4px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 12px;
+    }
+
+    .sq-action-tab {
+      flex: 1;
+      padding: 9px 12px;
+      font-size: 12.5px;
+      font-weight: 700;
+      border-radius: 9px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: #94a3b8;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .sq-action-tab:hover {
+      color: #e2e8f0;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .sq-action-tab.active {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.32), rgba(14, 165, 233, 0.32));
+      color: #38bdf8;
+      border-color: rgba(56, 189, 248, 0.45);
+      box-shadow: 0 2px 10px rgba(56, 189, 248, 0.15);
+    }
+
+    .sq-tab-pane {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      animation: sqTabFadeIn 0.2s ease;
+    }
+
+    .sq-tab-pane.active {
+      display: flex;
+    }
+
+    @keyframes sqTabFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(4px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ── Form Controls & Buttons ── */
     .sq-lobby-field {
       display: flex;
       flex-direction: column;
@@ -228,12 +732,12 @@
 
     .sq-lobby-input {
       width: 100%;
-      padding: 12px 15px;
+      padding: 11px 14px;
       border-radius: 11px;
       border: 1px solid rgba(255, 255, 255, 0.09);
       background: rgba(255, 255, 255, 0.05);
       color: #e2e8f0;
-      font-size: 14px;
+      font-size: 13.5px;
       outline: none;
       box-sizing: border-box;
       transition: border-color 0.2s, background 0.2s;
@@ -246,7 +750,7 @@
     }
 
     .sq-lobby-input::placeholder {
-      color: #334155;
+      color: #475569;
     }
 
     .sq-lobby-input.sq-error {
@@ -254,27 +758,73 @@
       background: rgba(239, 68, 68, 0.06) !important;
     }
 
+    .sq-privacy-seg-row {
+      display: flex;
+      gap: 6px;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.65);
+      padding: 4px;
+      border-radius: 11px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-sizing: border-box;
+    }
+
+    .sq-seg-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: #94a3b8;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    .sq-seg-btn:hover {
+      color: #e2e8f0;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .sq-seg-btn.active {
+      background: linear-gradient(135deg, rgba(14, 165, 233, 0.28), rgba(59, 130, 246, 0.28));
+      color: #38bdf8;
+      border-color: rgba(56, 189, 248, 0.45);
+      box-shadow: 0 2px 10px rgba(56, 189, 248, 0.15);
+    }
+
+    .sq-privacy-hint {
+      font-size: 11px;
+      color: #64748b;
+      margin-top: 2px;
+      line-height: 1.4;
+      text-align: left;
+    }
+
     .sq-lobby-btn {
       width: 100%;
-      padding: 14px 18px;
-      border-radius: 13px;
+      padding: 13px 16px;
+      border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.1);
       background: rgba(255, 255, 255, 0.07);
       color: #94a3b8;
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       cursor: pointer;
       font-family: inherit;
       transition: transform 0.14s, opacity 0.18s, box-shadow 0.18s, background 0.18s;
+      margin-top: 4px;
     }
 
     .sq-lobby-btn:hover {
       background: rgba(255, 255, 255, 0.12);
       transform: translateY(-1px);
-    }
-
-    .sq-lobby-btn:active {
-      transform: translateY(0);
     }
 
     .sq-lobby-btn.start {
@@ -285,28 +835,7 @@
     }
 
     .sq-lobby-btn.start:hover {
-      box-shadow: 0 10px 32px rgba(29, 78, 216, 0.58);
-    }
-
-    .sq-lobby-sep {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin: 4px 0;
-    }
-
-    .sq-lobby-sep::before,
-    .sq-lobby-sep::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: rgba(255, 255, 255, 0.07);
-    }
-
-    .sq-lobby-sep span {
-      font-size: 11px;
-      color: #334155;
-      white-space: nowrap;
+      box-shadow: 0 10px 30px rgba(29, 78, 216, 0.58);
     }
 
     /* ── Responsive Study Squad Lobby (Mobile, Tablet, Landscape) ── */
@@ -376,13 +905,48 @@
         margin-bottom: 12px !important;
       }
     }
+
+    /* iPad / iOS WebKit Fullscreen Overlay Scroll Fix */
+    .rm-iframe-wrapper {
+      flex: 1 1 auto !important;
+      width: 100% !important;
+      height: calc(100vh - 56px) !important;
+      height: calc(100dvh - 56px) !important;
+      min-height: 0 !important;
+      overflow-y: auto !important;
+      overflow-x: auto !important;
+      -webkit-overflow-scrolling: touch !important;
+      touch-action: pan-y pinch-zoom !important;
+      position: relative !important;
+      display: block !important;
+    }
+
+    .rm-iframe-wrapper iframe {
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 100% !important;
+      border: none !important;
+      display: block !important;
+      -webkit-overflow-scrolling: touch !important;
+    }
   </style>
+  <script src="https://unpkg.com/mqtt@5.10.3/dist/mqtt.min.js"></script>
 </head>
 
 <body>
   <!-- Top Navigation: Entry points for Read Mode, Planning Mode, Co-Study Squad & Social Share -->
-  <div class="mode-toggles">
-    <button type="button" class="profile-trigger-btn" id="topBarProfileBtn" onclick="openProfileModal()"
+  <div class="mode-toggles" id="mainModeToggles">
+    <!-- Universal Menu Toggle for Laptop, PC, Tablets, and Mobiles -->
+    <div class="top-menu-bar-header" id="topMenuBarHeader">
+      <span class="top-menu-bar-title">⚡ Menu</span>
+      <button type="button" class="menu-toggle-btn" id="menuToggleBtn" onclick="toggleTopMenu()" title="Click to hide menu (✕)">
+        <span id="menuToggleIcon" class="menu-toggle-icon">✕</span>
+        <span id="menuToggleText" class="menu-toggle-text">Menu</span>
+      </button>
+    </div>
+
+    <div class="mode-toggles-items" id="modeTogglesItems">
+      <button type="button" class="profile-trigger-btn" id="topBarProfileBtn" onclick="openProfileModal()"
       title="Click to open CA Student Profile, Level, Mood, Bio & Backup/Restore"
       style="display:flex; align-items:center; gap:8px; background:rgba(15,23,42,0.9); border:1px solid rgba(56,189,248,0.45); padding:5px 12px; border-radius:10px; cursor:pointer; color:white; transition:all 0.25s ease; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
       <div id="topBarAvatarWrap"
@@ -424,6 +988,7 @@
     <button class="plan-mode-trigger" onclick="openPlanningMode()">
       <span>📅</span> Planning Mode
     </button>
+    </div>
   </div>
 
   <div class="page">
@@ -576,7 +1141,7 @@
   <div id="readModeOverlay">
     <div class="rm-header">
       <div class="rm-brand">📖 Calcium <span>Read Mode</span></div>
-      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <div class="rm-header-btns" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
         <button class="rm-exit-btn"
           style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.45);"
           onclick="toggleBrowserFullscreen()">
@@ -597,15 +1162,15 @@
           onclick="switchToPlanMode()">
           📅 Switch to Plan
         </button>
-        <button class="rm-exit-btn" onclick="closeReadMode()">
+        <button class="rm-exit-btn rm-primary-exit" onclick="closeReadMode()">
           ✕ Exit Read Mode
         </button>
       </div>
     </div>
-    <div class="rm-body" style="padding: 0; overflow: hidden; display: block; -webkit-overflow-scrolling: touch;">
-      <iframe id="readModeIframe" src="./readmode.html"
+    <div class="rm-body rm-iframe-wrapper" style="padding: 0; overflow: auto; -webkit-overflow-scrolling: touch; display: block; width: 100%; height: calc(100% - 56px); flex: 1 1 auto;">
+      <iframe id="readModeIframe" src="./readmode.html" scrolling="yes"
         allow="fullscreen; autoplay; microphone; camera; display-capture" allowfullscreen
-        style="width: 100%; height: 100%; border: none"></iframe>
+        style="width: 100%; height: 100%; min-height: 100%; border: none; display: block;"></iframe>
     </div>
   </div>
 
@@ -613,7 +1178,7 @@
   <div id="planningModeOverlay">
     <div class="rm-header">
       <div class="rm-brand">📅 Calcium <span>Planning Mode</span></div>
-      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <div class="rm-header-btns" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
         <button class="rm-exit-btn"
           style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.45);"
           onclick="toggleBrowserFullscreen()">
@@ -634,14 +1199,14 @@
           onclick="switchToReadMode()">
           📖 Switch to Read
         </button>
-        <button class="rm-exit-btn" onclick="closePlanningMode()">
+        <button class="rm-exit-btn rm-primary-exit" onclick="closePlanningMode()">
           ✕ Exit Planning Mode
         </button>
       </div>
     </div>
-    <div class="rm-body" style="padding: 0; overflow: hidden; display: block; -webkit-overflow-scrolling: touch;">
-      <iframe id="planModeIframe" src="./pv4.html" allow="fullscreen; autoplay; microphone; camera; display-capture"
-        allowfullscreen style="width: 100%; height: 100%; border: none"></iframe>
+    <div class="rm-body rm-iframe-wrapper" style="padding: 0; overflow: auto; -webkit-overflow-scrolling: touch; display: block; width: 100%; height: calc(100% - 56px); flex: 1 1 auto;">
+      <iframe id="planModeIframe" src="./pv4.html" scrolling="yes" allow="fullscreen; autoplay; microphone; camera; display-capture"
+        allowfullscreen style="width: 100%; height: 100%; min-height: 100%; border: none; display: block;"></iframe>
     </div>
   </div>
 
@@ -649,7 +1214,7 @@
   <div id="friendsModeOverlay">
     <div class="rm-header">
       <div class="rm-brand">🤝 Calcium <span>Friends &amp; Unique ID Hub</span></div>
-      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <div class="rm-header-btns" style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
         <button class="rm-exit-btn"
           style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.45);"
           onclick="toggleBrowserFullscreen()">
@@ -665,14 +1230,14 @@
           onclick="closeFriendsModal(); openPlanningMode();">
           📅 Planning Mode
         </button>
-        <button class="rm-exit-btn" onclick="closeFriendsModal()">
+        <button class="rm-exit-btn rm-primary-exit" onclick="closeFriendsModal()">
           ✕ Close Friends
         </button>
       </div>
     </div>
-    <div class="rm-body" style="padding: 0; overflow: hidden; display: block; -webkit-overflow-scrolling: touch;">
-      <iframe id="friendsModeIframe" src="./frid.html" allow="fullscreen; clipboard-read; clipboard-write"
-        style="width: 100%; height: 100%; border: none"></iframe>
+    <div class="rm-body rm-iframe-wrapper" style="padding: 0; overflow: auto; -webkit-overflow-scrolling: touch; display: block; width: 100%; height: calc(100% - 56px); flex: 1 1 auto;">
+      <iframe id="friendsModeIframe" src="./frid.html" scrolling="yes" allow="fullscreen; clipboard-read; clipboard-write"
+        allowfullscreen style="width: 100%; height: 100%; min-height: 100%; border: none; display: block;"></iframe>
     </div>
   </div>
 
@@ -692,7 +1257,7 @@
   </div>
 
   <!-- FLOATING CALL CONTROLS (Active while studying in Read/Plan Mode) -->
-  <div id="floatingCallWidget" class="floating-call-widget" style="display: none;">
+  <div id="floatingCallWidget" class="floating-call-widget" style="display: none; z-index: 99999;">
     <div class="floating-call-info" onclick="openSquadModal(true)" title="Click to view Video Room">
       <span class="floating-pulse-dot"></span>
       <span id="floatingRoomLabel" style="font-weight:700; color:#7dd3fc; font-size:12px;">Live Call</span>
@@ -1034,46 +1599,96 @@
 
     window._calciumCurrentRoomCode = (localStorage.getItem("calcium_active_room") || "").trim();
 
-    window.notifyActiveRoomState = function (roomCode) {
-      window._calciumCurrentRoomCode = (roomCode || "").trim();
+    window.clearRoomUrlParams = function () {
       try {
-        localStorage.setItem("calcium_active_room", window._calciumCurrentRoomCode);
+        const url = new URL(window.location.href);
+        if (url.searchParams.has("room") || url.searchParams.has("pwd")) {
+          url.searchParams.delete("room");
+          url.searchParams.delete("pwd");
+          window.history.replaceState({}, document.title, url.pathname + (url.search || "") + url.hash);
+        }
       } catch (e) { }
     };
 
+    window.notifyActiveRoomState = function (roomCode) {
+      window._calciumCurrentRoomCode = (roomCode || "").trim();
+      const floatingWidget = document.getElementById("floatingCallWidget");
+      const floatingLabel = document.getElementById("floatingRoomLabel");
+      try {
+        localStorage.setItem("calcium_active_room", window._calciumCurrentRoomCode);
+      } catch (e) { }
+      if (!window._calciumCurrentRoomCode) {
+        window.clearRoomUrlParams();
+        if (floatingWidget) floatingWidget.style.display = "none";
+      } else {
+        if (floatingLabel) floatingLabel.textContent = `Room ${window._calciumCurrentRoomCode}`;
+      }
+    };
+
     window.isUserAlreadyInRoom = function () {
-      if (window._calciumCurrentRoomCode && window._calciumCurrentRoomCode.trim()) {
+      // 1. Check in-memory active room code
+      if (window._calciumCurrentRoomCode && typeof window._calciumCurrentRoomCode === "string" && window._calciumCurrentRoomCode.trim()) {
         return true;
       }
+      // 2. Check persistent storage
+      try {
+        const stored = localStorage.getItem("calcium_active_room");
+        if (stored && typeof stored === "string" && stored.trim() && stored.trim().startsWith("CA-")) {
+          window._calciumCurrentRoomCode = stored.trim();
+          return true;
+        }
+      } catch (e) { }
+      // 3. Check sturm iframe state safely
       try {
         const stIframe = document.getElementById("sturmIframe");
         if (stIframe && stIframe.contentWindow) {
           const w = stIframe.contentWindow;
-          if (w.activeRoomCode && typeof w.activeRoomCode === "string" && w.activeRoomCode.trim()) {
+          if (w && w.activeRoomCode && typeof w.activeRoomCode === "string" && w.activeRoomCode.trim()) {
             window._calciumCurrentRoomCode = w.activeRoomCode.trim();
-            return true;
-          }
-          if (w.isCallActive) {
             return true;
           }
         }
       } catch (e) { }
-
-      const storedRoom = (localStorage.getItem("calcium_active_room") || "").trim();
-      if (storedRoom) {
-        window._calciumCurrentRoomCode = storedRoom;
-        return true;
-      }
       return false;
     };
 
-    window.openSquadModal = function (fromUserGesture = true) {
+    window.joinStudyRoomWithFriend = function (roomCode) {
+      if (!roomCode) return;
+      window.closeFriendsModal();
+      window.quickJoinPublicRoom(roomCode);
+    };
+
+    window.openSquadModal = function (fromUserGesture = true, targetRoomCode = "") {
+      if (targetRoomCode && typeof targetRoomCode === "string" && targetRoomCode.trim()) {
+        window.quickJoinPublicRoom(targetRoomCode.trim());
+        return;
+      }
       if (window.isUserAlreadyInRoom()) {
         hideLobby();
         window.showSturmOverlay();
         callSturm("openSquadModal", false);
+        const floatingWidget = document.getElementById("floatingCallWidget");
+        if (floatingWidget) floatingWidget.style.display = "none";
       } else {
         showLobby();
+      }
+    };
+
+    window.onRoomMinimized = function (info) {
+      window.hideSturmOverlay();
+      const floatingWidget = document.getElementById("floatingCallWidget");
+      const floatingLabel = document.getElementById("floatingRoomLabel");
+      const statusEl = document.getElementById("floatingSpeakingStatus");
+      if (info && info.activeRoomCode) {
+        window._calciumCurrentRoomCode = info.activeRoomCode.trim();
+        try { localStorage.setItem("calcium_active_room", window._calciumCurrentRoomCode); } catch (e) { }
+        if (floatingLabel) floatingLabel.textContent = `Room ${window._calciumCurrentRoomCode}`;
+      }
+      if (statusEl && info) {
+        statusEl.textContent = info.count ? `👥 ${info.count} studying` : `Live Study Room`;
+      }
+      if (floatingWidget) {
+        floatingWidget.style.display = "flex";
       }
     };
 
@@ -1211,7 +1826,14 @@
     window.toggleAudio = function () { callSturm("toggleAudio"); };
     window.toggleVideo = function () { callSturm("toggleVideo"); };
     window.cycleVideoFilter = function () { callSturm("cycleVideoFilter"); };
-    window.leaveCall = function () { callSturm("leaveCall"); };
+    window.leaveCall = function () {
+      callSturm("leavePeerRoom");
+      window._calciumCurrentRoomCode = "";
+      try { localStorage.setItem("calcium_active_room", ""); } catch (e) { }
+      window.clearRoomUrlParams();
+      const floatingWidget = document.getElementById("floatingCallWidget");
+      if (floatingWidget) floatingWidget.style.display = "none";
+    };
 
     window.syncFloatingCallWidget = function (state) {
       const floatingWidget = document.getElementById("floatingCallWidget");
@@ -1222,27 +1844,33 @@
       if (!floatingWidget) return;
 
       if (state) {
-        if (typeof state.activeRoomCode === "string" && state.activeRoomCode.trim()) {
+        if (typeof state.activeRoomCode === "string") {
           window._calciumCurrentRoomCode = state.activeRoomCode.trim();
           try { localStorage.setItem("calcium_active_room", window._calciumCurrentRoomCode); } catch (e) { }
+          if (!window._calciumCurrentRoomCode) {
+            window.clearRoomUrlParams();
+            floatingWidget.style.display = "none";
+            return;
+          }
         }
       }
 
-      if (state && state.isCallActive) {
+      const activeCode = (state && state.activeRoomCode) || window._calciumCurrentRoomCode;
+      if (activeCode && activeCode.startsWith("CA-")) {
         floatingWidget.style.display = "flex";
-        if (floatingMic) {
+        if (floatingMic && state) {
           floatingMic.textContent = state.isAudioOn ? "🎤" : "🔇";
           floatingMic.className = `floating-btn ${state.isAudioOn ? "active" : "muted"}`;
         }
-        if (floatingCam) {
+        if (floatingCam && state) {
           floatingCam.textContent = state.isVideoOn ? "📹" : "📷";
           floatingCam.className = `floating-btn ${state.isVideoOn ? "active" : "off"}`;
         }
         if (floatingLabel) {
-          floatingLabel.textContent = state.activeRoomCode ? `Room ${state.activeRoomCode}` : "Study Call";
+          floatingLabel.textContent = `Room ${activeCode}`;
         }
-        if (statusEl) {
-          statusEl.textContent = state.speakingText || "";
+        if (statusEl && state) {
+          statusEl.textContent = state.speakingText || (state.count ? `👥 ${state.count} online` : "");
           statusEl.style.color = "#4ade80";
         }
       } else {
@@ -1250,10 +1878,55 @@
       }
     };
 
-
     /* ═══════════════════════════════════════════════════════════════
        STUDY SQUAD LOBBY — Index.html parent-side logic
     ═══════════════════════════════════════════════════════════════════ */
+
+    let sqRoomPrivacyMode = 'public';
+    let sqLivePublicRooms = {};
+    let sqPublicRoomsChannel = null;
+    let sqPublicRoomsMqtt = null;
+    let activeKnockingRoom = null;
+
+    window.switchSqLobbyTab = function (tab) {
+      const tabHost = document.getElementById('sqTabHost');
+      const tabJoin = document.getElementById('sqTabJoin');
+      const paneHost = document.getElementById('sqPaneHost');
+      const paneJoin = document.getElementById('sqPaneJoin');
+      if (!tabHost || !tabJoin || !paneHost || !paneJoin) return;
+
+      if (tab === 'join') {
+        tabJoin.classList.add('active');
+        tabHost.classList.remove('active');
+        paneJoin.classList.add('active');
+        paneHost.classList.remove('active');
+        const codeEl = document.getElementById('sqLobbyCode');
+        if (codeEl) setTimeout(() => codeEl.focus(), 60);
+      } else {
+        tabHost.classList.add('active');
+        tabJoin.classList.remove('active');
+        paneHost.classList.add('active');
+        paneJoin.classList.remove('active');
+      }
+    };
+
+    window.setSqRoomPrivacy = function (mode) {
+      sqRoomPrivacyMode = (mode === 'private') ? 'private' : 'public';
+      const btnPub = document.getElementById('sqPrivacyBtnPublic');
+      const btnPriv = document.getElementById('sqPrivacyBtnPrivate');
+      const hintEl = document.getElementById('sqPrivacyHint');
+      if (btnPub && btnPriv) {
+        if (sqRoomPrivacyMode === 'public') {
+          btnPub.classList.add('active');
+          btnPriv.classList.remove('active');
+          if (hintEl) hintEl.innerHTML = '🌐 Listed in public rooms above for any CA student to discover.';
+        } else {
+          btnPriv.classList.add('active');
+          btnPub.classList.remove('active');
+          if (hintEl) hintEl.innerHTML = '🔒 Hidden from public directory. Only friends with direct code/link can join.';
+        }
+      }
+    };
 
     function showLobby(focusCode = false) {
       const overlay = document.getElementById('squadLobbyOverlay');
@@ -1262,18 +1935,38 @@
       const savedName = localStorage.getItem('calcium_user_name') || '';
       const nameEl = document.getElementById('sqLobbyName');
       if (nameEl && savedName) nameEl.value = savedName;
-      // Clear previous join code error
+      // Clear previous join code & passwords
       const codeEl = document.getElementById('sqLobbyCode');
-      if (codeEl) codeEl.classList.remove('sq-error');
+      if (codeEl) {
+        codeEl.value = '';
+        codeEl.classList.remove('sq-error');
+      }
+      const pwdJoinEl = document.getElementById('sqLobbyJoinPassword');
+      if (pwdJoinEl) pwdJoinEl.value = '';
+      const pwdCreateEl = document.getElementById('sqLobbyCreatePassword');
+      if (pwdCreateEl) pwdCreateEl.value = '';
+
+      // Reset privacy mode to Public by default
+      window.setSqRoomPrivacy('public');
+      activeKnockingRoom = null;
+
+      // Switch to proper tab based on focusCode request
+      if (focusCode) {
+        window.switchSqLobbyTab('join');
+      } else {
+        window.switchSqLobbyTab('host');
+      }
+
       overlay.classList.add('lobby-visible');
-      // Focus code field if requested or if name is already populated
+      initSqPublicRoomsDiscovery();
+      refreshPublicRoomsUI();
+
+      // Focus appropriate field
       setTimeout(() => {
         if (focusCode && codeEl) {
           codeEl.focus();
         } else if (nameEl && !nameEl.value) {
           nameEl.focus();
-        } else if (codeEl) {
-          codeEl.focus();
         }
       }, 80);
     }
@@ -1295,10 +1988,14 @@
       if (nameEl && nameEl.value.trim()) {
         sqLobbyNameChange(nameEl.value.trim());
       }
+      const pwdEl = document.getElementById('sqLobbyCreatePassword');
+      const pwd = (pwdEl ? pwdEl.value.trim() : '');
+
       hideLobby();
-      // Show sturm overlay and fire start
       window.showSturmOverlay();
       callSturm('openSquadModal', false);
+      callSturm('setLobbyRoomPassword', pwd);
+      callSturm('setLobbyRoomPrivacy', sqRoomPrivacyMode);
       callSturm('startOrCreateMeetRoom');
     };
 
@@ -1308,6 +2005,8 @@
 
       const codeEl = document.getElementById('sqLobbyCode');
       let raw = (codeEl ? codeEl.value.trim() : '');
+      const pwdEl = document.getElementById('sqLobbyJoinPassword');
+      let pwd = (pwdEl ? pwdEl.value.trim() : '');
 
       if (!raw) {
         if (codeEl) {
@@ -1321,7 +2020,11 @@
       let code = raw;
       if (raw.includes('room=')) {
         try {
-          code = new URL(raw).searchParams.get('room') || raw;
+          const u = new URL(raw);
+          code = u.searchParams.get('room') || raw;
+          if (!pwd && u.searchParams.get('pwd')) {
+            pwd = u.searchParams.get('pwd');
+          }
         } catch (e) {
           code = raw.split('room=')[1].split('&')[0];
         }
@@ -1331,14 +2034,298 @@
         code = 'CA-' + code;
       }
 
+      window._calciumCurrentRoomCode = code;
+      try { localStorage.setItem("calcium_active_room", code); } catch (e) { }
+
       hideLobby();
       window.showSturmOverlay();
-      // Push code into sturm's hidden joinRoomInput then trigger join
       callSturm('openSquadModal', false);
       setTimeout(() => {
-        callSturm('setLobbyJoinCode', code);
-        callSturm('joinMeetRoomAndAutoCall');
-      }, 120);
+        callSturm('joinPeerRoomDirect', code, pwd);
+      }, 60);
+    };
+
+    // ── Public Rooms Directory Logic for Lobby ──
+    function initSqPublicRoomsDiscovery() {
+      // 1. Sync from localStorage cache
+      try {
+        const cached = JSON.parse(localStorage.getItem('calcium_public_rooms_v1') || '{}');
+        const now = Date.now();
+        Object.keys(cached).forEach(k => {
+          if (cached[k] && (now - (cached[k].updatedAt || 0) < 12000)) {
+            sqLivePublicRooms[k] = cached[k];
+          }
+        });
+      } catch (e) { }
+
+      // 2. BroadcastChannel for local instant tab-to-tab sync
+      if (!sqPublicRoomsChannel && typeof BroadcastChannel !== 'undefined') {
+        try {
+          sqPublicRoomsChannel = new BroadcastChannel('calcium_public_study_rooms');
+          sqPublicRoomsChannel.onmessage = (evt) => {
+            handlePublicRoomBroadcast(evt.data);
+          };
+        } catch (e) { }
+      }
+
+      // 3. Storage event listener for window-to-window sync
+      if (!window._sqPublicStorageAttached) {
+        window._sqPublicStorageAttached = true;
+        window.addEventListener('storage', (e) => {
+          if (e.key === 'calcium_public_rooms_v1') {
+            try {
+              const fresh = JSON.parse(e.newValue || '{}');
+              sqLivePublicRooms = Object.assign({}, fresh);
+              refreshPublicRoomsUI();
+            } catch (err) { }
+          }
+        });
+      }
+
+      // 4. Global MQTT Relay for multi-device discovery
+      if (!sqPublicRoomsMqtt && typeof mqtt !== 'undefined') {
+        try {
+          const brokerUrl = 'wss://broker.emqx.io:8084/mqtt';
+          sqPublicRoomsMqtt = mqtt.connect(brokerUrl, {
+            clientId: 'calcium_lobby_' + Math.random().toString(36).substring(2, 9),
+            clean: true,
+            connectTimeout: 6000,
+            reconnectPeriod: 5000
+          });
+          sqPublicRoomsMqtt.on('connect', () => {
+            sqPublicRoomsMqtt.subscribe('calcium_notes/study_squad/v1/public_rooms', { qos: 0 });
+          });
+          sqPublicRoomsMqtt.on('message', (topic, message) => {
+            try {
+              const payload = JSON.parse(message.toString());
+              handlePublicRoomBroadcast(payload);
+            } catch (err) { }
+          });
+        } catch (e) {
+          console.warn('MQTT init notice:', e);
+        }
+      }
+
+      // 5. Periodic pruning of stale rooms (10s TTL)
+      if (!window._sqPublicPruneTimer) {
+        window._sqPublicPruneTimer = setInterval(() => {
+          pruneStalePublicRooms();
+        }, 3000);
+      }
+    }
+
+    function handlePublicRoomBroadcast(payload) {
+      if (!payload || !payload.roomCode) return;
+      if (payload.type === 'PUBLIC_ROOM_PULSE') {
+        sqLivePublicRooms[payload.roomCode] = {
+          roomCode: payload.roomCode,
+          hostName: payload.hostName || 'CA Aspirant',
+          hasPassword: !!payload.hasPassword,
+          memberCount: payload.memberCount || 1,
+          updatedAt: Date.now()
+        };
+        refreshPublicRoomsUI();
+      } else if (payload.type === 'PUBLIC_ROOM_REMOVE') {
+        delete sqLivePublicRooms[payload.roomCode];
+        refreshPublicRoomsUI();
+      }
+    }
+
+    function pruneStalePublicRooms() {
+      const now = Date.now();
+      let changed = false;
+      Object.keys(sqLivePublicRooms).forEach(code => {
+        if (now - (sqLivePublicRooms[code].updatedAt || 0) > 11000) {
+          delete sqLivePublicRooms[code];
+          changed = true;
+        }
+      });
+      if (changed) refreshPublicRoomsUI();
+    }
+
+    window.copyPublicRoomCode = function (code, btn) {
+      try {
+        navigator.clipboard.writeText(code);
+        if (btn) {
+          const orig = btn.innerHTML;
+          btn.innerHTML = '✓';
+          setTimeout(() => { btn.innerHTML = orig; }, 1200);
+        }
+      } catch (e) { }
+    };
+
+    window.refreshPublicRoomsUI = function () {
+      pruneStalePublicRooms();
+      const listEl = document.getElementById('sqPublicRoomsList');
+      const countEl = document.getElementById('sqPublicRoomsCount');
+      if (!listEl) return;
+
+      const roomCodes = Object.keys(sqLivePublicRooms);
+      if (countEl) countEl.textContent = roomCodes.length;
+
+      if (roomCodes.length === 0) {
+        listEl.innerHTML = `
+          <div class="sq-no-rooms-card">
+            <div class="sq-no-rooms-icon">📡</div>
+            <div class="sq-no-rooms-txt">No public study rooms live right now.<br>Host one below to study with peers!</div>
+          </div>
+        `;
+        return;
+      }
+
+      let html = '';
+      roomCodes.forEach(code => {
+        const room = sqLivePublicRooms[code];
+        const isKnocking = (window.activeKnockingRoom === code);
+        const hostNameSafe = escapeHtml(room.hostName || 'Host');
+        const badgeHtml = room.hasPassword
+          ? `<span class="sq-room-badge-locked">🔒 Protected</span>`
+          : `<span class="sq-room-badge-free">🔓 Open</span>`;
+
+        let actionHtml = '';
+        if (!room.hasPassword) {
+          actionHtml = `
+            <div class="sq-room-card-actions">
+              <button type="button" class="sq-btn-direct-join" onclick="quickJoinPublicRoom('${code}')">
+                🚀 Join Room
+              </button>
+            </div>
+          `;
+        } else if (isKnocking) {
+          actionHtml = `
+            <div class="sq-knock-waiting-box">
+              <span>⏳ Request sent... Waiting for host</span>
+              <button type="button" class="sq-knock-cancel-btn" onclick="cancelKnockFromLobby()">Cancel</button>
+            </div>
+          `;
+        } else {
+          actionHtml = `
+            <div class="sq-room-card-actions">
+              <button type="button" class="sq-btn-pwd-join" onclick="togglePublicCardPwd('${code}')">
+                🔑 Password
+              </button>
+              <button type="button" class="sq-btn-ask-join" onclick="quickKnockPublicRoom('${code}', '${hostNameSafe}')">
+                🙋 Ask to Join
+              </button>
+            </div>
+            <div id="sqCardPwd_${code}" class="sq-card-pwd-inline" style="display:none;">
+              <input type="password" id="sqCardPwdInput_${code}" placeholder="Enter room password..."
+                onkeydown="if(event.key==='Enter') submitPublicCardPwd('${code}')" />
+              <button type="button" onclick="submitPublicCardPwd('${code}')">Enter</button>
+            </div>
+          `;
+        }
+
+        html += `
+          <div class="sq-room-card" id="sqCard_${code}">
+            <div class="sq-room-card-top">
+              <div class="sq-room-card-host">
+                <span>👤</span>
+                <span>${hostNameSafe}</span>
+              </div>
+              <div class="sq-room-card-code-wrap">
+                <span class="sq-room-card-code">${code}</span>
+                <button type="button" class="sq-room-card-copy-btn" onclick="copyPublicRoomCode('${code}', this)" title="Copy Room Code">📋</button>
+              </div>
+            </div>
+            <div class="sq-room-card-meta">
+              <span>👥 ${room.memberCount || 1} online</span>
+              <span>•</span>
+              ${badgeHtml}
+            </div>
+            ${actionHtml}
+          </div>
+        `;
+      });
+
+      listEl.innerHTML = html;
+    };
+
+    function escapeHtml(str) {
+      return (str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    window.quickJoinPublicRoom = function (code) {
+      const nameEl = document.getElementById('sqLobbyName');
+      if (nameEl && nameEl.value.trim()) sqLobbyNameChange(nameEl.value.trim());
+
+      window._calciumCurrentRoomCode = code;
+      try { localStorage.setItem("calcium_active_room", code); } catch (e) { }
+
+      hideLobby();
+      window.showSturmOverlay();
+      callSturm('openSquadModal', false);
+      setTimeout(() => {
+        callSturm('joinPeerRoomDirect', code, '');
+      }, 60);
+    };
+
+    window.togglePublicCardPwd = function (code) {
+      const box = document.getElementById('sqCardPwd_' + code);
+      if (!box) return;
+      const isOpen = (box.style.display !== 'none');
+      box.style.display = isOpen ? 'none' : 'flex';
+      if (!isOpen) {
+        const inp = document.getElementById('sqCardPwdInput_' + code);
+        if (inp) inp.focus();
+      }
+    };
+
+    window.submitPublicCardPwd = function (code) {
+      const inp = document.getElementById('sqCardPwdInput_' + code);
+      const pwd = inp ? inp.value.trim() : '';
+      if (!pwd) {
+        if (inp) inp.focus();
+        return;
+      }
+      const nameEl = document.getElementById('sqLobbyName');
+      if (nameEl && nameEl.value.trim()) sqLobbyNameChange(nameEl.value.trim());
+
+      window._calciumCurrentRoomCode = code;
+      try { localStorage.setItem("calcium_active_room", code); } catch (e) { }
+
+      hideLobby();
+      window.showSturmOverlay();
+      callSturm('openSquadModal', false);
+      setTimeout(() => {
+        callSturm('joinPeerRoomDirect', code, pwd);
+      }, 60);
+    };
+
+    window.quickKnockPublicRoom = function (code, hostName) {
+      const nameEl = document.getElementById('sqLobbyName');
+      const myName = (nameEl && nameEl.value.trim()) ? nameEl.value.trim() : (localStorage.getItem('calcium_user_name') || 'CA Aspirant');
+      sqLobbyNameChange(myName);
+
+      window.activeKnockingRoom = code;
+      refreshPublicRoomsUI();
+
+      // Transmit knock request via sturm WebRTC engine
+      callSturm('requestKnockRoom', code, myName);
+    };
+
+    window.cancelKnockFromLobby = function () {
+      window.activeKnockingRoom = null;
+      callSturm('cancelKnockRequest');
+      refreshPublicRoomsUI();
+    };
+
+    window.onKnockAccepted = function (roomCode) {
+      window.activeKnockingRoom = null;
+      hideLobby();
+      window.showSturmOverlay();
+      callSturm('openSquadModal', false);
+    };
+
+    window.onKnockDeclined = function (roomCode) {
+      window.activeKnockingRoom = null;
+      refreshPublicRoomsUI();
+      alert(`The host of room ${roomCode} declined your join request.`);
     };
 
     // Allow sturm to re-open the lobby (e.g. "Change Room" button)
@@ -1351,15 +2338,64 @@
       window.syncTopBarProfileFromSturm(savedProf);
 
       const params = new URLSearchParams(window.location.search);
-      if (params.get("room")) {
+      const rParam = params.get("room");
+      const pParam = params.get("pwd");
+      if (rParam) {
         window.showSturmOverlay();
         callSturm("openSquadModal", false);
+        if (pParam) {
+          setTimeout(() => {
+            callSturm('setLobbyJoinPassword', pParam);
+          }, 150);
+        }
       } else {
         try { localStorage.setItem("calcium_active_room", ""); } catch (e) { }
         window._calciumCurrentRoomCode = "";
       }
     }
-  </script>
+  
+    /* ==========================================================
+       GLOBAL TOP MENU TOGGLE (✕ for Hide / ☰ for Unhide)
+       Works across: Laptop, PC, Tablets, and Mobiles
+       Controls: Profile, Friends, Study Squad, Share Wrap, Read Mode, Planning Mode
+       Does NOT touch: GAMES, EXAMS, NOTES, RESOURCES
+       ========================================================== */
+    window.toggleTopMenu = function () {
+      const bar = document.getElementById("mainModeToggles");
+      if (!bar) return;
+      const isHidden = bar.classList.toggle("menu-hidden");
+      const icon = document.getElementById("menuToggleIcon");
+      const text = document.getElementById("menuToggleText");
+      const btn = document.getElementById("menuToggleBtn");
+      if (isHidden) {
+        if (icon) icon.textContent = "☰";
+        if (text) text.textContent = "Menu";
+        if (btn) btn.title = "Click to unhide menu (☰)";
+        try { localStorage.setItem("calcium_menu_hidden", "1"); } catch (e) { }
+      } else {
+        if (icon) icon.textContent = "✕";
+        if (text) text.textContent = "Menu";
+        if (btn) btn.title = "Click to hide menu (✕)";
+        try { localStorage.setItem("calcium_menu_hidden", "0"); } catch (e) { }
+      }
+    };
+
+    // Restore user menu preference on startup (Laptop, PC, Tablet, Mobile)
+    try {
+      if (localStorage.getItem("calcium_menu_hidden") === "1") {
+        const bar = document.getElementById("mainModeToggles");
+        if (bar) {
+          bar.classList.add("menu-hidden");
+          const icon = document.getElementById("menuToggleIcon");
+          const text = document.getElementById("menuToggleText");
+          const btn = document.getElementById("menuToggleBtn");
+          if (icon) icon.textContent = "☰";
+          if (text) text.textContent = "Menu";
+          if (btn) btn.title = "Click to unhide menu (☰)";
+        }
+      }
+    } catch (e) { }
+    </script>
 
   <!-- ═══════════════════════════════════════════════════════════════
        STUDY SQUAD LOBBY  –  lives in index.html (parent)
@@ -1369,34 +2405,111 @@
     <div class="sq-lobby-card">
       <button class="sq-lobby-close" onclick="hideLobby()" title="Close">&#x2715;</button>
 
-      <div class="sq-lobby-emoji">&#x1F4F9;</div>
-      <h2 class="sq-lobby-title">Study Squad</h2>
-      <p class="sq-lobby-sub">Study together. Stay accountable.<br>Start a room or join your friends.</p>
+      <!-- Compact Header -->
+      <div class="sq-lobby-header">
+        <div class="sq-lobby-header-icon">&#x1F4F9;</div>
+        <div class="sq-lobby-header-text">
+          <h2 class="sq-lobby-title">Study Squad</h2>
+          <p class="sq-lobby-sub">Live Peer Study &amp; Accountability</p>
+        </div>
+      </div>
 
-      <div class="sq-lobby-form">
-        <!-- Name field with clear Name label above -->
-        <div class="sq-lobby-field">
-          <label for="sqLobbyName" class="sq-lobby-label">&#x1F464; YOUR NAME</label>
-          <input id="sqLobbyName" class="sq-lobby-input" type="text" placeholder="Type your name (e.g. Rahul, Priya)..."
+      <!-- Quick Name Bar -->
+      <div class="sq-name-bar">
+        <span class="sq-name-icon">&#x1F464;</span>
+        <div class="sq-name-info">
+          <label for="sqLobbyName" class="sq-name-label">STUDYING AS</label>
+          <input id="sqLobbyName" class="sq-name-input" type="text" placeholder="Type your name (e.g. Rahul, Priya)..."
             oninput="sqLobbyNameChange(this.value)" />
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════════════
+           UPSIDE: LIVE PUBLIC ROOMS SECTION (FEATURED AT TOP)
+           ═══════════════════════════════════════════════════════════ -->
+      <div class="sq-public-rooms-section">
+        <div class="sq-public-rooms-header">
+          <div class="sq-pub-header-left">
+            <span class="sq-live-pulse-dot"></span>
+            <span class="sq-pub-header-title">LIVE PUBLIC ROOMS</span>
+            <span id="sqPublicRoomsCount" class="sq-pub-count-pill">0</span>
+          </div>
+          <button type="button" class="sq-pub-refresh-btn" onclick="refreshPublicRoomsUI()"
+            title="Refresh public rooms">↻</button>
+        </div>
+
+        <div id="sqPublicRoomsList" class="sq-public-rooms-list">
+          <div class="sq-no-rooms-card">
+            <div class="sq-no-rooms-icon">📡</div>
+            <div class="sq-no-rooms-txt">No public study rooms live right now.<br>Host one below to study with peers!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════════════════════
+           ACTION TABS: HOST ROOM vs JOIN BY CODE
+           ═══════════════════════════════════════════════════════════ -->
+      <div class="sq-action-tabs">
+        <button type="button" id="sqTabHost" class="sq-action-tab active" onclick="switchSqLobbyTab('host')">
+          🚀 Host Room
+        </button>
+        <button type="button" id="sqTabJoin" class="sq-action-tab" onclick="switchSqLobbyTab('join')">
+          🔗 Join by Code
+        </button>
+      </div>
+
+      <!-- Tab Pane 1: Host Room -->
+      <div id="sqPaneHost" class="sq-tab-pane active">
+        <!-- Room Privacy Mode (Public vs Private) -->
+        <div class="sq-lobby-field">
+          <label class="sq-lobby-label">🛡️ ROOM VISIBILITY</label>
+          <div class="sq-privacy-seg-row">
+            <button type="button" id="sqPrivacyBtnPublic" class="sq-seg-btn active"
+              onclick="setSqRoomPrivacy('public')">
+              🌐 Public (Listed)
+            </button>
+            <button type="button" id="sqPrivacyBtnPrivate" class="sq-seg-btn" onclick="setSqRoomPrivacy('private')">
+              🔒 Private (Hidden)
+            </button>
+          </div>
+          <div id="sqPrivacyHint" class="sq-privacy-hint">
+            🌐 Listed in public rooms above for any CA student to discover.
+          </div>
+        </div>
+
+        <!-- Optional Room Password for Host -->
+        <div class="sq-lobby-field">
+          <label for="sqLobbyCreatePassword" class="sq-lobby-label">🔒 ROOM PASSWORD (OPTIONAL)</label>
+          <input id="sqLobbyCreatePassword" class="sq-lobby-input" type="password"
+            placeholder="Leave blank for free entry, or set password..." autocomplete="off" />
         </div>
 
         <!-- START -->
         <button class="sq-lobby-btn start" onclick="sqLobbyStart()">
-          &#x1F680;&nbsp; Start Meeting
+          🚀&nbsp; Start Study Meeting
         </button>
+      </div>
 
-        <!-- Divider -->
-        <div class="sq-lobby-sep"><span>or join an existing room</span></div>
-
+      <!-- Tab Pane 2: Join by Code -->
+      <div id="sqPaneJoin" class="sq-tab-pane">
         <!-- JOIN with Room Code label above -->
         <div class="sq-lobby-field">
-          <label for="sqLobbyCode" class="sq-lobby-label">&#x1F511; ROOM CODE</label>
-          <input id="sqLobbyCode" class="sq-lobby-input" type="text" placeholder="e.g. CA-1234"
+          <label for="sqLobbyCode" class="sq-lobby-label">🔑 ROOM CODE</label>
+          <input id="sqLobbyCode" class="sq-lobby-input" type="text" placeholder="e.g. CA-1234 or paste invite link..."
             onkeydown="if(event.key==='Enter') sqLobbyJoin()" />
         </div>
+
+        <!-- Password field if joining a protected room -->
+        <div class="sq-lobby-field">
+          <label for="sqLobbyJoinPassword" class="sq-lobby-label">🔒 PASSWORD (IF PROTECTED)</label>
+          <input id="sqLobbyJoinPassword" class="sq-lobby-input" type="password"
+            placeholder="Enter password (if required)..." autocomplete="off"
+            onkeydown="if(event.key==='Enter') sqLobbyJoin()" />
+        </div>
+
         <button class="sq-lobby-btn" onclick="sqLobbyJoin()">
-          &#x1F517;&nbsp; Join Meeting
+          🔗&nbsp; Join Study Meeting
         </button>
       </div>
     </div>

@@ -237,12 +237,42 @@ footer {
         margin: 14px auto 0;
         padding: 0 10px;
         justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .mode-toggles > * {
+    .top-menu-bar-header {
+        display: flex;
+    }
+
+    .mode-toggles-items {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .mode-toggles-items > * {
         flex: 1 1 auto;
         min-width: 120px;
         justify-content: center;
+    }
+
+    .mode-toggles.menu-hidden .mode-toggles-items {
+        max-height: 0 !important;
+        opacity: 0 !important;
+        transform: translateY(-10px) scale(0.96) !important;
+        filter: blur(3px) !important;
+        pointer-events: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .mode-toggles.menu-hidden .top-menu-bar-header {
+        margin-bottom: 0 !important;
     }
 }
 
@@ -307,7 +337,15 @@ footer {
         backdrop-filter: blur(10px);
     }
 
-    .mode-toggles > * {
+    .mode-toggles-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mode-toggles-items > * {
         flex: 1 1 160px;
         min-width: 0;
         justify-content: center;
@@ -392,17 +430,30 @@ footer {
         border-bottom: 1px solid rgba(59, 130, 246, 0.15);
         padding: 10px 12px 8px;
         margin-top: 0;
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .mode-toggles > * {
+    .mode-toggles-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .mode-toggles-items > * {
         flex: 1 1 calc(50% - 8px);
         min-width: 0;
     }
 
-    .profile-trigger-btn {
+    .mode-toggles-items .profile-trigger-btn {
         flex-basis: 100%;
         width: 100%;
         justify-content: center;
+    }
+
+    .mode-toggles.menu-hidden {
+        padding: 8px 12px !important;
     }
 
     .floating-logo {
@@ -440,7 +491,11 @@ footer {
         gap: 8px;
     }
 
-    .mode-toggles > * {
+    .mode-toggles-items {
+        gap: 8px;
+    }
+
+    .mode-toggles-items > * {
         flex-basis: 100%;
     }
 
@@ -490,7 +545,9 @@ footer {
     top: 20px;
     right: 24px;
     display: flex;
-    gap: 12px;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
     z-index: 8000;
 }
 
@@ -526,6 +583,32 @@ footer {
     opacity: 0;
     transition: opacity 0.35s ease;
     font-family: "Segoe UI", Arial, sans-serif;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y pinch-zoom;
+}
+
+/* iPad / iOS WebKit Fullscreen Overlay Scroll Fix */
+.rm-iframe-wrapper {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    height: calc(100vh - 56px) !important;
+    height: calc(100dvh - 56px) !important;
+    min-height: 0 !important;
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-y pinch-zoom !important;
+    position: relative !important;
+    display: block !important;
+}
+
+.rm-iframe-wrapper iframe {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    border: none !important;
+    display: block !important;
+    -webkit-overflow-scrolling: touch !important;
 }
 .friends-trigger-btn {
     background: linear-gradient(135deg, #059669, #10b981);
@@ -956,7 +1039,7 @@ footer {
     padding-right: 4px;
 }
 @media (max-width: 768px) {
-    .mode-toggles { flex-wrap: wrap; right: 12px; left: 12px; justify-content: flex-end; }
+    .mode-toggles { right: 12px; left: 12px; }
 }
 .squad-seat-card {
     background: rgba(255, 255, 255, 0.04);
@@ -1877,6 +1960,8 @@ footer {
     flex: 1;
     padding: 14px;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
 }
 
 .gmeet-roster-list {
@@ -2008,7 +2093,7 @@ footer {
         margin: 10px auto 0;
         justify-content: center;
     }
-    .mode-toggles > * {
+    .mode-toggles-items > * {
         flex: 1 1 180px;
         justify-content: center;
     }
@@ -2175,4 +2260,273 @@ video.v-filter-beauty {
     sepia(0.10)
     hue-rotate(-7deg)
     blur(0.25px) !important;
+}
+
+/* ═════════════════════════════════════════════════════════════════════
+   UNIVERSAL TOP MENU CONTROLS (Buttery-Smooth 60fps Transition)
+   Works on: Laptop, PC, Tablets, and Mobiles
+   Controls: Profile, Friends, Squad, Share, Read Mode, Planning Mode
+   ═════════════════════════════════════════════════════════════════════ */
+.top-menu-bar-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.top-menu-bar-title {
+    display: none;
+}
+
+.menu-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(30, 41, 59, 0.96));
+    color: #7dd3fc;
+    border: 1.5px solid rgba(56, 189, 248, 0.45);
+    padding: 7px 15px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 0 12px rgba(56, 189, 248, 0.12);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition: 
+        background 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+        color 0.25s ease;
+    user-select: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.menu-toggle-btn:hover {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.98), rgba(56, 189, 248, 0.22));
+    border-color: rgba(125, 211, 252, 0.85);
+    color: #ffffff;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.5), 0 0 20px rgba(56, 189, 248, 0.4);
+    transform: translateY(-1px);
+}
+
+.menu-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.menu-toggle-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+    color: #38bdf8;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s ease;
+}
+
+.menu-toggle-btn:hover .menu-toggle-icon {
+    transform: scale(1.18);
+}
+
+/* Active cyber-glow style when menu is hidden */
+.mode-toggles.menu-hidden .menu-toggle-btn {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.22), rgba(15, 23, 42, 0.98));
+    border-color: rgba(56, 189, 248, 0.75);
+    color: #38bdf8;
+    box-shadow: 0 0 22px rgba(56, 189, 248, 0.32), 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.mode-toggles.menu-hidden .menu-toggle-icon {
+    font-size: 14px;
+    color: #7dd3fc;
+}
+
+/* =====================================================================
+   DESKTOP / LAPTOP FLUID HORIZONTAL DRAWER TRANSITION
+   ===================================================================== */
+.mode-toggles {
+    transition: gap 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.35s ease;
+}
+
+.mode-toggles.menu-hidden {
+    gap: 0;
+}
+
+.mode-toggles-items {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 1300px;
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    filter: blur(0px);
+    overflow: hidden;
+    transform-origin: right center;
+    transition: 
+        max-width 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+        opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+        filter 0.3s ease,
+        gap 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        margin 0.35s ease,
+        padding 0.35s ease;
+    will-change: max-width, opacity, transform;
+}
+
+.mode-toggles-items > * {
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    transition: 
+        transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+        opacity 0.3s ease,
+        box-shadow 0.25s ease;
+}
+
+/* DESKTOP WHEN MENU IS HIDDEN: Glide smoothly to right and fade */
+.mode-toggles.menu-hidden .mode-toggles-items {
+    max-width: 0 !important;
+    opacity: 0 !important;
+    transform: translateX(20px) scale(0.92) !important;
+    filter: blur(4px) !important;
+    pointer-events: none !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+}
+
+.mode-toggles.menu-hidden .mode-toggles-items > * {
+    opacity: 0 !important;
+    transform: scale(0.88) !important;
+}
+
+/* =====================================================================
+   TABLETS & MOBILE RESPONSIVE ACCORDION TRANSITION (<= 980px)
+   ===================================================================== */
+@media (max-width: 980px) {
+    .mode-toggles {
+        position: static;
+        width: min(94vw, 960px);
+        margin: 14px auto 0;
+        padding: 0 10px;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        transition: padding 0.38s cubic-bezier(0.16, 1, 0.3, 1), background 0.35s ease, border-color 0.35s ease;
+    }
+
+    .top-menu-bar-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin-bottom: 8px;
+        transition: margin 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .top-menu-bar-title {
+        display: inline-flex !important;
+        align-items: center;
+        gap: 6px;
+        font-size: 11.5px;
+        font-weight: 700;
+        color: #7dd3fc;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    .mode-toggles-items {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        max-height: 520px;
+        max-width: 100% !important;
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0px);
+        overflow: hidden;
+        transform-origin: top center;
+        transition: 
+            max-height 0.44s cubic-bezier(0.16, 1, 0.3, 1),
+            opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+            transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+            filter 0.3s ease,
+            margin 0.35s ease,
+            padding 0.35s ease,
+            gap 0.35s ease !important;
+        will-change: max-height, opacity, transform;
+    }
+
+    .mode-toggles-items > * {
+        flex: 1 1 auto;
+        min-width: 120px;
+        justify-content: center;
+    }
+
+    /* WHEN MENU IS HIDDEN ON TABLET / MOBILE: Fluid slide-up accordion */
+    .mode-toggles.menu-hidden .mode-toggles-items {
+        max-height: 0 !important;
+        max-width: 100% !important;
+        opacity: 0 !important;
+        transform: translateY(-12px) scale(0.96) !important;
+        filter: blur(3px) !important;
+        pointer-events: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .mode-toggles.menu-hidden .top-menu-bar-header {
+        margin-bottom: 0 !important;
+    }
+
+    .mode-toggles.menu-hidden {
+        padding: 8px 14px !important;
+    }
+}
+
+/* MOBILE PHONES (<= 560px) */
+@media (max-width: 560px) {
+    .mode-toggles {
+        position: sticky;
+        top: 0;
+        z-index: 60;
+        background: rgba(5, 10, 16, 0.78);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(59, 130, 246, 0.18);
+        padding: 8px 12px;
+        margin-top: 0;
+    }
+
+    .mode-toggles-items {
+        gap: 8px;
+    }
+
+    .mode-toggles-items > * {
+        flex: 1 1 calc(50% - 8px) !important;
+        min-width: 0 !important;
+    }
+
+    .mode-toggles-items .profile-trigger-btn {
+        flex-basis: 100% !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+}
+
+/* ULTRA-COMPACT MOBILE (<= 420px) */
+@media (max-width: 420px) {
+    .mode-toggles-items {
+        gap: 8px;
+    }
+
+    .mode-toggles-items > * {
+        flex-basis: 100% !important;
+    }
 }

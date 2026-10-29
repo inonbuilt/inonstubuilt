@@ -28,6 +28,14 @@
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
 body {
   background-color: var(--bg-deep);
   background-image: 
@@ -35,9 +43,12 @@ body {
     radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.06) 0px, transparent 50%);
   color: var(--text-main);
   min-height: 100vh;
+  min-height: 100dvh;
   padding: 24px;
   overflow-x: auto;
-  overflow-y: auto;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: pan-y pinch-zoom;
 }
 
 /* Custom modern scrollbars */
@@ -352,6 +363,8 @@ body {
   gap: 6px;
   max-height: 180px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
 }
 
 .al-item {
@@ -468,8 +481,11 @@ body {
 }
 
 .vr-table-scroll {
-  max-height: 240px;
+  max-height: 280px;
   overflow-y: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
   border-radius: 10px;
   border: 1px solid var(--border);
 }
@@ -662,6 +678,8 @@ body {
   gap: 6px;
   max-height: 200px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
 }
 
 .tk-item {
@@ -967,18 +985,29 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 1080px) {
+@media (max-width: 1200px), (hover: none) and (pointer: coarse) {
+  body {
+    padding: 16px;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-y pinch-zoom;
+  }
   .read-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
   }
   .panel-variance {
     grid-column: span 2;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
   .read-container {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
   .panel-variance {
     grid-column: span 1;

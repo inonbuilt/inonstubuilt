@@ -45,9 +45,12 @@
       background: linear-gradient(145deg, #0f1f3d 0%, #0d1a2e 100%);
       border: 1px solid rgba(56, 189, 248, 0.28);
       border-radius: 24px;
-      padding: 40px 36px 36px;
+      padding: 34px 32px 30px;
       width: 100%;
-      max-width: 400px;
+      max-width: 410px;
+      max-height: 92vh;
+      overflow-y: auto;
+      box-sizing: border-box;
       box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(56, 189, 248, 0.1);
       text-align: center;
       animation: lobbyCardIn 0.35s cubic-bezier(.22, 1, .36, 1);
@@ -1678,6 +1681,7 @@
     }
 
 </style>
+  <script src="https://unpkg.com/mqtt@5.10.3/dist/mqtt.min.js"></script>
 </head>
 
 <body style="background: transparent; margin: 0; padding: 0; overflow: hidden;">
@@ -1694,6 +1698,24 @@
           YOUR NAME</label>
         <input type="text" id="lobbyDisplayName" class="squad-lobby-input" placeholder="Type your name..."
           oninput="saveDisplayName(this.value)" />
+
+        <!-- Room Privacy Mode (Public vs Private) -->
+        <div style="display:flex; flex-direction:column; gap:4px; text-align:left; width:100%;">
+          <label style="font-size:11px; font-weight:800; color:#7dd3fc; letter-spacing:0.8px;">🛡️ ROOM VISIBILITY</label>
+          <div class="sq-privacy-seg-row">
+            <button type="button" id="sturmPrivacyBtnPublic" class="sq-seg-btn active" onclick="setSturmRoomPrivacy('public')">
+              🌐 Public (Listed)
+            </button>
+            <button type="button" id="sturmPrivacyBtnPrivate" class="sq-seg-btn" onclick="setSturmRoomPrivacy('private')">
+              🔒 Private (Hidden)
+            </button>
+          </div>
+        </div>
+
+        <label for="lobbyCreatePassword"
+          style="font-size:11px; font-weight:800; color:#7dd3fc; text-align:left; display:block; margin-bottom:-4px; letter-spacing:0.8px;">🔒 ROOM PASSWORD (OPTIONAL)</label>
+        <input type="password" id="lobbyCreatePassword" class="squad-lobby-input" placeholder="Set a password for privacy (or leave blank)..." autocomplete="off" />
+
         <button class="squad-lobby-btn primary" onclick="lobbyStartMeeting()">&#x1F680; Start Meeting</button>
         <div class="squad-lobby-divider"><span>or join an existing room</span></div>
         <label for="lobbyJoinCode"
@@ -1701,6 +1723,12 @@
           ROOM CODE</label>
         <input type="text" id="lobbyJoinCode" class="squad-lobby-input" placeholder="Room Code (e.g. CA-1234)"
           onkeydown="if(event.key==='Enter') lobbyJoinMeeting()" />
+
+        <label for="lobbyJoinPassword"
+          style="font-size:11px; font-weight:800; color:#7dd3fc; text-align:left; display:block; margin-bottom:-4px; letter-spacing:0.8px;">🔑 ROOM PASSWORD (IF PROTECTED)</label>
+        <input type="password" id="lobbyJoinPassword" class="squad-lobby-input" placeholder="Enter password (if required)..." autocomplete="off"
+          onkeydown="if(event.key==='Enter') lobbyJoinMeeting()" />
+
         <button class="squad-lobby-btn" onclick="lobbyJoinMeeting()">&#x1F517; Join Meeting</button>
       </div>
     </div>
@@ -1721,6 +1749,25 @@
 
       <!-- Alert Banner if Camera/Mic Permissions Denied -->
       <div id="callMediaAlert" class="call-media-alert" style="display:none; margin: 8px 16px 0;"></div>
+
+      <!-- Knock Request Banner (When someone asks to join) -->
+      <div id="knockRequestBanner" class="knock-request-banner" style="display:none;">
+        <div class="knock-banner-info">
+          <span class="knock-bell-icon">🔔</span>
+          <div class="knock-banner-text">
+            <span class="knock-guest-name" id="knockGuestName">CA Aspirant</span>
+            <span class="knock-sub-text">wants to join this study room</span>
+          </div>
+        </div>
+        <div class="knock-banner-actions">
+          <button type="button" class="knock-btn-admit" onclick="admitKnockingGuest()">
+            ✅ Admit
+          </button>
+          <button type="button" class="knock-btn-decline" onclick="declineKnockingGuest()">
+            ✕ Decline
+          </button>
+        </div>
+      </div>
 
       <!-- GOOGLE MEET CONTROL BAR (ABOVE VIDEO) -->
       <div class="gmeet-bottom-dock gmeet-top-dock">
@@ -1891,6 +1938,8 @@
                 </div>
               </div>
 
+
+
               <!-- Action buttons to share link & code -->
               <div class="drawer-share-actions">
                 <button type="button" class="drawer-btn primary" onclick="copyInviteLink()" title="Copy Full Room Invite Link">&#x1F4CB;
@@ -1917,6 +1966,12 @@
                     onclick="enterRoomViaNumberFromDrawer()" title="Enter / Switch to this Room">
                     &#x27A4; Enter
                   </button>
+                </div>
+                <div class="drawer-join-input-wrap" style="margin-top:6px;">
+                  <input type="password" id="drawerJoinRoomPassword" class="drawer-join-input"
+                    placeholder="🔑 Room Password (if protected)..."
+                    maxlength="32" autocomplete="off" spellcheck="false"
+                    onkeydown="if(event.key==='Enter') enterRoomViaNumberFromDrawer()" />
                 </div>
                 <button type="button" class="drawer-btn secondary drawer-change-room-btn" onclick="showSquadLobby()"
                   title="Open Lobby to change room or start new room">&#x1F6AA; Change Room (Lobby)</button>
@@ -1955,6 +2010,42 @@
 
       </div>
 
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+         MODAL: ROOM PASSWORD PROMPT DIALOG
+    ═══════════════════════════════════════════════════════════════════ -->
+  <div class="cn-modal-backdrop" id="roomPasswordModal" style="z-index:120000;">
+    <div class="cn-modal-card" style="max-width:380px; width:92%; padding:26px 22px; border-radius:18px; background:rgba(15, 23, 42, 0.98); border:1px solid rgba(59, 130, 246, 0.4); box-shadow:0 20px 60px rgba(0,0,0,0.85), 0 0 30px rgba(59,130,246,0.3); text-align:center;">
+      <div style="font-size:36px; margin-bottom:8px; line-height:1;">🔒</div>
+      <h3 style="font-size:18px; font-weight:800; color:#f8fafc; margin:0 0 6px;">Password Protected Room</h3>
+      <p id="roomPasswordModalSubtitle" style="font-size:12px; color:#94a3b8; margin:0 0 14px; line-height:1.5;">
+        This study room requires a host password to join.
+      </p>
+      <div id="roomPasswordModalError" style="display:none; font-size:12px; font-weight:700; color:#ef4444; margin-bottom:12px; background:rgba(239,68,68,0.15); border:1px solid rgba(239,68,68,0.3); border-radius:8px; padding:6px 10px;">
+        Incorrect password. Please try again.
+      </div>
+      <div style="position:relative; margin-bottom:16px;">
+        <input type="password" id="roomModalPasswordInput" placeholder="Enter room password..." autocomplete="off"
+          style="width:100%; box-sizing:border-box; padding:12px 42px 12px 14px; background:rgba(30, 41, 59, 0.9); border:1.5px solid rgba(148, 163, 184, 0.3); border-radius:10px; color:#f8fafc; font-size:14px; outline:none;"
+          onkeydown="if(event.key==='Enter') submitPromptPassword()" />
+        <button type="button" onclick="toggleRoomModalPwdVisibility()" title="Show/Hide Password"
+          style="position:absolute; right:10px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; font-size:16px; color:#94a3b8; padding:4px;">
+          👁️
+        </button>
+      </div>
+      <div style="display:flex; gap:10px; margin-bottom:8px;">
+        <button type="button" class="cn-btn secondary" style="flex:1; padding:10px; font-size:13px; font-weight:600; border-radius:10px;" onclick="cancelPromptPassword()">
+          Cancel
+        </button>
+        <button type="button" class="cn-btn primary-glow" style="flex:1.4; padding:10px; font-size:13px; font-weight:700; border-radius:10px; background:linear-gradient(135deg, #3b82f6, #1d4ed8); color:#fff; border:none; cursor:pointer;" onclick="submitPromptPassword()">
+          🔓 Unlock &amp; Join
+        </button>
+      </div>
+      <button type="button" class="cn-btn" style="width:100%; padding:9px 12px; font-size:12px; font-weight:700; border-radius:10px; background:rgba(14, 165, 233, 0.15); color:#38bdf8; border:1px solid rgba(56, 189, 248, 0.35); cursor:pointer;" onclick="askHostToJoinFromModal()">
+        🙋 Ask Host to Join (No Password)
+      </button>
     </div>
   </div>
 
@@ -2194,7 +2285,7 @@
       <button id="floatingFilterBtn" class="floating-btn filter-cycle" onclick="cycleVideoFilter()"
         title="Cycle Fun Video Filter">🎨</button>
       <button class="floating-btn expand" onclick="openSquadModal(true)" title="Open Video Room">👥 View</button>
-      <button class="floating-btn leave" onclick="leaveCall()" title="Leave Call">✕</button>
+      <button class="floating-btn leave" onclick="leavePeerRoom()" title="Leave Room">✕</button>
     </div>
   </div>
 
@@ -2244,10 +2335,322 @@
     let prewarmedGuestPeer = null;
     let isRoomHost = false;
     let activeRoomCode = "";
+    let activeRoomPassword = "";
+    let activeRoomPrivacy = "public";
+    let publicRoomPulseTimer = null;
+    let activeKnockRequest = null;
+    let sturmPublicRoomsChannel = null;
+    let sturmPublicRoomsMqtt = null;
+    let authenticatedPeers = new Set();
     let hostConnections = [];
     let guestHostConn = null;
     let squadMembersMap = {};
     let myClientId = "me-" + Math.random().toString(36).substring(2, 8);
+
+    window.setLobbyRoomPrivacy = function (mode) {
+      activeRoomPrivacy = (mode === "private") ? "private" : "public";
+      const btnPub = document.getElementById("sturmPrivacyBtnPublic");
+      const btnPriv = document.getElementById("sturmPrivacyBtnPrivate");
+      if (btnPub && btnPriv) {
+        if (activeRoomPrivacy === "public") {
+          btnPub.classList.add("active");
+          btnPriv.classList.remove("active");
+        } else {
+          btnPriv.classList.add("active");
+          btnPub.classList.remove("active");
+        }
+      }
+    };
+    window.setSturmRoomPrivacy = window.setLobbyRoomPrivacy;
+
+    window.setLobbyRoomPassword = function (pwd) {
+      activeRoomPassword = (pwd || "").trim();
+      const el = document.getElementById("lobbyCreatePassword");
+      if (el) el.value = activeRoomPassword;
+    };
+
+    function playKnockChime() {
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+        const ctx = new AudioCtx();
+        const now = ctx.currentTime;
+
+        const osc1 = ctx.createOscillator();
+        const gain1 = ctx.createGain();
+        osc1.type = "sine";
+        osc1.frequency.setValueAtTime(587.33, now); // D5
+        gain1.gain.setValueAtTime(0.22, now);
+        gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+        osc1.connect(gain1);
+        gain1.connect(ctx.destination);
+        osc1.start(now);
+        osc1.stop(now + 0.35);
+
+        const osc2 = ctx.createOscillator();
+        const gain2 = ctx.createGain();
+        osc2.type = "sine";
+        osc2.frequency.setValueAtTime(880, now + 0.18); // A5
+        gain2.gain.setValueAtTime(0.26, now + 0.18);
+        gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+        osc2.connect(gain2);
+        gain2.connect(ctx.destination);
+        osc2.start(now + 0.18);
+        osc2.stop(now + 0.6);
+      } catch (e) {
+        console.log("Knock chime note:", e);
+      }
+    }
+
+    function initSturmPublicRoomsRelay() {
+      if (!sturmPublicRoomsChannel && typeof BroadcastChannel !== "undefined") {
+        try {
+          sturmPublicRoomsChannel = new BroadcastChannel("calcium_public_study_rooms");
+        } catch (e) { }
+      }
+      if (!sturmPublicRoomsMqtt && typeof mqtt !== "undefined") {
+        try {
+          const brokerUrl = "wss://broker.emqx.io:8084/mqtt";
+          sturmPublicRoomsMqtt = mqtt.connect(brokerUrl, {
+            clientId: "calcium_sturm_" + Math.random().toString(36).substring(2, 9),
+            clean: true,
+            connectTimeout: 6000,
+            reconnectPeriod: 5000
+          });
+        } catch (e) {
+          console.warn("Sturm MQTT relay init notice:", e);
+        }
+      }
+    }
+
+    function broadcastPublicRoomPulse() {
+      if (!isRoomHost || !activeRoomCode || activeRoomPrivacy !== "public") return;
+      const pulse = {
+        type: "PUBLIC_ROOM_PULSE",
+        roomCode: activeRoomCode,
+        hostName: (localStorage.getItem("calcium_user_name") || "CA Aspirant").trim(),
+        hasPassword: !!activeRoomPassword,
+        memberCount: Math.max(1, Object.keys(squadMembersMap).length),
+        updatedAt: Date.now()
+      };
+
+      // 1. BroadcastChannel
+      if (!sturmPublicRoomsChannel && typeof BroadcastChannel !== "undefined") {
+        try { sturmPublicRoomsChannel = new BroadcastChannel("calcium_public_study_rooms"); } catch (e) { }
+      }
+      if (sturmPublicRoomsChannel) {
+        try { sturmPublicRoomsChannel.postMessage(pulse); } catch (e) { }
+      }
+
+      // 2. LocalStorage cache
+      try {
+        const cached = JSON.parse(localStorage.getItem("calcium_public_rooms_v1") || "{}");
+        cached[activeRoomCode] = pulse;
+        localStorage.setItem("calcium_public_rooms_v1", JSON.stringify(cached));
+      } catch (e) { }
+
+      // 3. MQTT Relay
+      if (sturmPublicRoomsMqtt && sturmPublicRoomsMqtt.connected) {
+        try {
+          sturmPublicRoomsMqtt.publish("calcium_notes/study_squad/v1/public_rooms", JSON.stringify(pulse), { qos: 0 });
+        } catch (e) { }
+      }
+    }
+
+    function broadcastPublicRoomRemove(roomCode) {
+      if (!roomCode) return;
+      const payload = {
+        type: "PUBLIC_ROOM_REMOVE",
+        roomCode: roomCode
+      };
+
+      if (sturmPublicRoomsChannel) {
+        try { sturmPublicRoomsChannel.postMessage(payload); } catch (e) { }
+      }
+      try {
+        const cached = JSON.parse(localStorage.getItem("calcium_public_rooms_v1") || "{}");
+        delete cached[roomCode];
+        localStorage.setItem("calcium_public_rooms_v1", JSON.stringify(cached));
+      } catch (e) { }
+      if (sturmPublicRoomsMqtt && sturmPublicRoomsMqtt.connected) {
+        try {
+          sturmPublicRoomsMqtt.publish("calcium_notes/study_squad/v1/public_rooms", JSON.stringify(payload), { qos: 0 });
+        } catch (e) { }
+      }
+    }
+
+    window.setLobbyJoinPassword = function (pwd) {
+      activeRoomPassword = (pwd || "").trim();
+      const el = document.getElementById("lobbyJoinPassword");
+      if (el) el.value = activeRoomPassword;
+      const drEl = document.getElementById("drawerJoinRoomPassword");
+      if (drEl) drEl.value = activeRoomPassword;
+    };
+
+    window.openRoomPasswordModal = function (roomCode, isError) {
+      const modal = document.getElementById("roomPasswordModal");
+      if (!modal) return;
+      const sub = document.getElementById("roomPasswordModalSubtitle");
+      if (sub) {
+        sub.innerHTML = `Study Room <strong style="color:#60a5fa;">${roomCode || activeRoomCode}</strong> is password protected.<br>Enter the host password to join:`;
+      }
+      const err = document.getElementById("roomPasswordModalError");
+      if (err) {
+        err.style.display = isError ? "block" : "none";
+      }
+      const input = document.getElementById("roomModalPasswordInput");
+      if (input) {
+        input.value = "";
+        input.type = "password";
+        setTimeout(() => input.focus(), 100);
+      }
+      modal.classList.add("active");
+      notifyParentOverlayVisibility();
+    };
+
+    window.closeRoomPasswordModal = function () {
+      const modal = document.getElementById("roomPasswordModal");
+      if (modal) modal.classList.remove("active");
+      const err = document.getElementById("roomPasswordModalError");
+      if (err) err.style.display = "none";
+      notifyParentOverlayVisibility();
+    };
+
+    window.toggleRoomModalPwdVisibility = function () {
+      const input = document.getElementById("roomModalPasswordInput");
+      if (!input) return;
+      input.type = input.type === "password" ? "text" : "password";
+    };
+
+    window.submitPromptPassword = function () {
+      const input = document.getElementById("roomModalPasswordInput");
+      const pwd = input ? input.value.trim() : "";
+      if (!pwd) {
+        if (input) {
+          input.classList.add("sq-error");
+          input.focus();
+          setTimeout(() => { if (input) input.classList.remove("sq-error"); }, 1500);
+        }
+        return;
+      }
+      activeRoomPassword = pwd;
+      showStatusToast("Verifying room password with host...");
+      if (guestHostConn && guestHostConn.open) {
+        guestHostConn.send({
+          type: "MEMBER_JOIN_REQUEST",
+          member: buildMyMemberState(),
+          password: pwd
+        });
+      } else {
+        joinPeerRoom(activeRoomCode, pwd);
+      }
+    };
+
+    window.cancelPromptPassword = function () {
+      closeRoomPasswordModal();
+      if (guestHostConn) {
+        try { guestHostConn.close(); } catch (e) { }
+        guestHostConn = null;
+      }
+      showStatusToast("⚠️ Room join cancelled (Password required)");
+    };
+
+    window.admitKnockingGuest = function () {
+      const req = activeKnockRequest;
+      if (!req) return;
+      authenticatedPeers.add(req.guestPeerId);
+      if (req.conn && req.conn.open) {
+        req.conn.send({ type: "KNOCK_ACCEPTED", roomCode: activeRoomCode });
+        req.conn.send({ type: "ROSTER_SYNC", roster: squadMembersMap, roomCode: activeRoomCode });
+      }
+      showStatusToast(`✅ Admitted ${req.guestName} to study room`);
+      const banner = document.getElementById("knockRequestBanner");
+      if (banner) banner.style.display = "none";
+      activeKnockRequest = null;
+    };
+
+    window.declineKnockingGuest = function () {
+      const req = activeKnockRequest;
+      if (!req) return;
+      if (req.conn && req.conn.open) {
+        req.conn.send({ type: "KNOCK_DECLINED", roomCode: activeRoomCode });
+        try { req.conn.close(); } catch (e) { }
+      }
+      showStatusToast(`✕ Declined ${req.guestName}`);
+      const banner = document.getElementById("knockRequestBanner");
+      if (banner) banner.style.display = "none";
+      activeKnockRequest = null;
+    };
+
+    window.requestKnockRoom = function (roomCode, guestName) {
+      if (!roomCode) return;
+      const code = roomCode.toUpperCase();
+      const myName = (guestName || localStorage.getItem("calcium_user_name") || "CA Aspirant").trim();
+      showStatusToast(`⏳ Sending join request to Room ${code}...`);
+      activeRoomCode = code;
+
+      const connectAndKnock = (assignedId) => {
+        myClientId = assignedId;
+        if (guestHostConn) {
+          try { guestHostConn.close(); } catch (e) { }
+        }
+        guestHostConn = peerInstance.connect("calcium-notes-room-" + code, { reliable: true });
+        guestHostConn.on("open", () => {
+          guestHostConn.send({
+            type: "ROOM_KNOCK_REQUEST",
+            guestName: myName,
+            guestPeerId: myClientId,
+            roomCode: code
+          });
+          showStatusToast(`⏳ Request sent! Waiting for host to admit you...`);
+        });
+        guestHostConn.on("data", (payload) => handleIncomingPeerData(payload, guestHostConn));
+        guestHostConn.on("error", (err) => {
+          console.warn("Knock conn error:", err);
+          showStatusToast(`⚠️ Could not reach Room ${code} — host may be offline.`);
+          try {
+            if (window.parent && window.parent !== window && typeof window.parent.onKnockDeclined === "function") {
+              window.parent.onKnockDeclined(code);
+            }
+          } catch (e) { }
+          callParent("onKnockDeclined", code);
+        });
+      };
+
+      if (peerInstance && !peerInstance.destroyed && peerInstance.open && !peerInstance.id.startsWith("calcium-notes-room-")) {
+        connectAndKnock(peerInstance.id);
+      } else if (prewarmedGuestPeer && !prewarmedGuestPeer.destroyed && prewarmedGuestPeer.open) {
+        if (peerInstance && peerInstance !== prewarmedGuestPeer) {
+          try { peerInstance.destroy(); } catch (e) { }
+        }
+        peerInstance = prewarmedGuestPeer;
+        prewarmedGuestPeer = null;
+        peerInstance.on("call", handleIncomingMediaCall);
+        connectAndKnock(peerInstance.id);
+      } else {
+        if (peerInstance) peerInstance.destroy();
+        peerInstance = new Peer(PEER_CONFIG);
+        peerInstance.on("open", connectAndKnock);
+        peerInstance.on("call", handleIncomingMediaCall);
+      }
+    };
+
+    window.cancelKnockRequest = function () {
+      if (guestHostConn && guestHostConn.open) {
+        try {
+          guestHostConn.send({ type: "KNOCK_CANCELLED", roomCode: activeRoomCode });
+          guestHostConn.close();
+        } catch (e) { }
+        guestHostConn = null;
+      }
+      showStatusToast("Join request cancelled.");
+    };
+
+    window.askHostToJoinFromModal = function () {
+      const code = activeRoomCode;
+      closeRoomPasswordModal();
+      window.requestKnockRoom(code);
+    };
 
     function prewarmGuestPeerInstance() {
       if (typeof Peer === "undefined" || prewarmedGuestPeer) return;
@@ -2353,7 +2756,7 @@
       squadMembersMap[myClientId] = me;
       syncSquadToStorage();
 
-      // Check URL for ?room=CA-XXXX auto-join
+      // Check URL for ?room=CA-XXXX auto-join and ?pwd=...
       let searchStr = window.location.search;
       try {
         if (!searchStr && window.parent && window.parent !== window) {
@@ -2362,10 +2765,14 @@
       } catch (e) { }
       const params = new URLSearchParams(searchStr);
       const roomParam = params.get("room");
+      const pwdParam = params.get("pwd");
+      if (pwdParam) {
+        activeRoomPassword = pwdParam;
+      }
       if (roomParam) {
         document.getElementById("joinRoomInput").value = roomParam;
         openSquadModal(false); // Do not force fullscreen without direct user gesture
-        joinPeerRoom(roomParam.toUpperCase());
+        joinPeerRoom(roomParam.toUpperCase(), pwdParam || activeRoomPassword);
       } else {
         prewarmGuestPeerInstance();
         if (window.parent === window) {
@@ -2505,10 +2912,54 @@
       }).join("");
     }
 
-    window.createPeerRoom = function () {
+        function clearParentRoomUrlParams() {
+      try {
+        if (window.parent && window.parent !== window) {
+          const url = new URL(window.parent.location.href);
+          if (url.searchParams.has("room") || url.searchParams.has("pwd")) {
+            url.searchParams.delete("room");
+            url.searchParams.delete("pwd");
+            window.parent.history.replaceState({}, window.parent.document.title, url.pathname + (url.search || "") + url.hash);
+          }
+        }
+      } catch (e) { }
+      try {
+        const url = new URL(window.location.href);
+        if (url.searchParams.has("room") || url.searchParams.has("pwd")) {
+          url.searchParams.delete("room");
+          url.searchParams.delete("pwd");
+          window.history.replaceState({}, document.title, url.pathname + (url.search || "") + url.hash);
+        }
+      } catch (e) { }
+    }
+
+    window.createPeerRoom = function (customPassword, privacyMode) {
       const code = "CA-" + Math.floor(1000 + Math.random() * 9000);
       activeRoomCode = code;
       isRoomHost = true;
+      if (privacyMode !== undefined) {
+        activeRoomPrivacy = (privacyMode === "private") ? "private" : "public";
+      }
+      if (customPassword !== undefined) {
+        activeRoomPassword = (customPassword || "").trim();
+      } else {
+        const el = document.getElementById("lobbyCreatePassword");
+        if (el && el.value.trim()) {
+          activeRoomPassword = el.value.trim();
+        }
+      }
+      authenticatedPeers.clear();
+      authenticatedPeers.add(myClientId);
+      try { localStorage.setItem("calcium_active_room", code); } catch (e) { }
+      try {
+        if (window.parent && window.parent !== window) {
+          window.parent._calciumCurrentRoomCode = code;
+          if (typeof window.parent.notifyActiveRoomState === "function") {
+            window.parent.notifyActiveRoomState(code);
+          }
+        }
+      } catch (e) { }
+      callParent("notifyActiveRoomState", code);
       updateMeetRoomLabel();
 
       let locObj = window.location;
@@ -2520,9 +2971,10 @@
       const baseUrl = locObj.origin && locObj.origin !== "null"
         ? locObj.origin + locObj.pathname
         : "https://www.calciumnotes.com/";
-      const inviteUrl = `${baseUrl}?room=${code}`;
+      const pwdParam = activeRoomPassword ? `&pwd=${encodeURIComponent(activeRoomPassword)}` : '';
+      const inviteUrl = `${baseUrl}?room=${code}${pwdParam}`;
       document.getElementById("shareInviteUrl").value = inviteUrl;
-      showStatusToast(`Hosting Room ${code} (Unlimited Members Allowed)`);
+      showStatusToast(activeRoomPassword ? `Hosting Locked Room ${code} 🔒` : `Hosting Room ${code} (Unlimited Members Allowed)`);
 
       if (typeof Peer !== "undefined") {
         try {
@@ -2538,20 +2990,32 @@
               delete squadMembersMap[myClientId];
             }
             myClientId = assignedId;
+            authenticatedPeers.add(assignedId);
             squadMembersMap[myClientId] = buildMyMemberState();
 
-            showStatusToast(`🟢 Live Room ${code} Ready — Share Link with Any Number of Friends!`);
+            showStatusToast(`🟢 Live Room ${code}${activeRoomPassword ? ' 🔒' : ''} Ready — Share Link with Study Partners!`);
             updateAndBroadcastMyState();
             if (isCallActive) connectCallsWithRoomMembers();
           });
           peerInstance.on("connection", (conn) => {
             hostConnections.push(conn);
             conn.on("data", (payload) => handleIncomingPeerData(payload, conn));
-            conn.on("open", () => {
-              conn.send({ type: "ROSTER_SYNC", roster: squadMembersMap, roomCode: activeRoomCode });
-            });
-            conn.on("close", () => {
+            const onConnReady = () => {
+              if (!activeRoomPassword) {
+                authenticatedPeers.add(conn.peer);
+                conn.send({ type: "ROSTER_SYNC", roster: squadMembersMap, roomCode: activeRoomCode });
+              } else {
+                conn.send({ type: "ROOM_PASSWORD_REQUIRED", reason: "PASSWORD_NEEDED", roomCode: activeRoomCode });
+              }
+            };
+            if (conn.open) {
+              onConnReady();
+            } else {
+              conn.on("open", onConnReady);
+            }
+            const onPeerDisconnectOrError = () => {
               hostConnections = hostConnections.filter(c => c !== conn);
+              authenticatedPeers.delete(conn.peer);
               if (conn.peer) {
                 delete squadMembersMap[conn.peer];
                 syncSquadToStorage();
@@ -2560,10 +3024,14 @@
                 }
                 // Broadcast refreshed roster so all members remove departed card
                 hostConnections.forEach(c => {
-                  if (c && c.open) c.send({ type: "ROSTER_SYNC", roster: squadMembersMap, roomCode: activeRoomCode });
+                  if (c && c.open && (!activeRoomPassword || authenticatedPeers.has(c.peer))) {
+                    try { c.send({ type: "ROSTER_SYNC", roster: squadMembersMap, roomCode: activeRoomCode }); } catch (e) { }
+                  }
                 });
               }
-            });
+            };
+            conn.on("close", onPeerDisconnectOrError);
+            conn.on("error", onPeerDisconnectOrError);
           });
           peerInstance.on("call", handleIncomingMediaCall);
         } catch (e) {
@@ -2571,24 +3039,52 @@
         }
       }
       syncSquadToStorage();
+      initSturmPublicRoomsRelay();
+      if (publicRoomPulseTimer) clearInterval(publicRoomPulseTimer);
+      if (activeRoomPrivacy === "public") {
+        broadcastPublicRoomPulse();
+        publicRoomPulseTimer = setInterval(broadcastPublicRoomPulse, 4000);
+      } else {
+        broadcastPublicRoomRemove(code);
+      }
     };
 
     window.joinPeerRoomFromInput = function () {
       const raw = document.getElementById("joinRoomInput").value.trim();
       if (!raw) return;
       let code = raw;
+      let pwd = activeRoomPassword;
       if (raw.includes("room=")) {
         try {
-          code = new URL(raw).searchParams.get("room") || raw;
+          const u = new URL(raw);
+          code = u.searchParams.get("room") || raw;
+          if (u.searchParams.get("pwd")) pwd = u.searchParams.get("pwd");
         } catch (e) {
           code = raw.split("room=")[1].split("&")[0];
+          if (raw.includes("pwd=")) {
+            try { pwd = raw.split("pwd=")[1].split("&")[0]; } catch (e) { }
+          }
         }
       }
-      joinPeerRoom(code.toUpperCase());
+      joinPeerRoom(code.toUpperCase(), pwd);
     };
 
-    function joinPeerRoom(code) {
+    function joinPeerRoom(code, pwd) {
       if (!code) return;
+      if (pwd !== undefined) {
+        activeRoomPassword = (pwd || "").trim();
+      } else {
+        const el = document.getElementById("lobbyJoinPassword");
+        if (el && el.value.trim()) {
+          activeRoomPassword = el.value.trim();
+        } else {
+          const drEl = document.getElementById("drawerJoinRoomPassword");
+          if (drEl && drEl.value.trim()) {
+            activeRoomPassword = drEl.value.trim();
+          }
+        }
+      }
+
       if (activeRoomCode === code && guestHostConn && guestHostConn.open) {
         showStatusToast(`🟢 Connected to Live Room ${code}`);
         if (isCallActive) {
@@ -2599,6 +3095,16 @@
       }
       activeRoomCode = code;
       isRoomHost = false;
+      try { localStorage.setItem("calcium_active_room", code); } catch (e) { }
+      try {
+        if (window.parent && window.parent !== window) {
+          window.parent._calciumCurrentRoomCode = code;
+          if (typeof window.parent.notifyActiveRoomState === "function") {
+            window.parent.notifyActiveRoomState(code);
+          }
+        }
+      } catch (e) { }
+      callParent("notifyActiveRoomState", code);
       updateMeetRoomLabel();
       let locObj = window.location;
       try {
@@ -2609,7 +3115,8 @@
       const baseUrl = locObj.origin && locObj.origin !== "null"
         ? locObj.origin + locObj.pathname
         : "https://www.calciumnotes.com/";
-      document.getElementById("shareInviteUrl").value = `${baseUrl}?room=${code}`;
+      const pwdParam = activeRoomPassword ? `&pwd=${encodeURIComponent(activeRoomPassword)}` : '';
+      document.getElementById("shareInviteUrl").value = `${baseUrl}?room=${code}${pwdParam}`;
       showStatusToast(`Connecting to Room ${code}... (please wait)`);
       // Auto-retry connection after 10 seconds if still not connected
       if (window._peerJoinTimeout) clearTimeout(window._peerJoinTimeout);
@@ -2619,7 +3126,7 @@
           // Destroy current peer and retry
           if (peerInstance) { try { peerInstance.destroy(); } catch (e) { } peerInstance = null; }
           prewarmedGuestPeer = null;
-          joinPeerRoom(code);
+          joinPeerRoom(code, activeRoomPassword);
         }
       }, 10000);
 
@@ -2639,13 +3146,21 @@
             guestHostConn = peerInstance.connect("calcium-notes-room-" + code, { reliable: true });
             guestHostConn.on("open", () => {
               showStatusToast(`🟢 Connected to Live Room ${code}`);
-              guestHostConn.send({ type: "MEMBER_UPDATE", member: buildMyMemberState() });
+              guestHostConn.send({
+                type: "MEMBER_JOIN_REQUEST",
+                member: buildMyMemberState(),
+                password: activeRoomPassword
+              });
               if (isCallActive) {
                 broadcastMediaState();
                 connectCallsWithRoomMembers();
               }
             });
             guestHostConn.on("data", (payload) => handleIncomingPeerData(payload, guestHostConn));
+            guestHostConn.on("close", () => {
+              showStatusToast(`⚠️ Connection to Room ${activeRoomCode || code} ended.`);
+              window.leavePeerRoom();
+            });
             guestHostConn.on("error", (err) => {
               console.warn("Host data connection error:", err);
               showStatusToast(`⚠️ Could not reach Room ${code} — check room code.`);
@@ -2685,41 +3200,169 @@
     function handleIncomingPeerData(payload, sourceConn) {
       if (!payload || !payload.type) return;
 
-      if (payload.type === "MEMBER_UPDATE" && payload.member) {
-        const incoming = payload.member;
-        const incomingName = (incoming.name || "").trim().toLowerCase();
+      if (payload.type === "ROOM_CLOSED_BY_HOST") {
+        showStatusToast(`🚪 Host closed Room ${payload.roomCode || activeRoomCode}. Returned to Solo mode.`);
+        window.leavePeerRoom();
+        return;
+      }
 
-        // Remove any stale entry matching this person's name or temporary "me-" ID
-        Object.keys(squadMembersMap).forEach(k => {
-          if (k !== myClientId) {
-            if (k.startsWith("me-") || (squadMembersMap[k].name && squadMembersMap[k].name.trim().toLowerCase() === incomingName)) {
-              delete squadMembersMap[k];
-            }
+      if (payload.type === "ROOM_KNOCK_REQUEST") {
+        if (!isRoomHost) return;
+        const guestName = (payload.guestName || "CA Aspirant").trim();
+        const guestPeerId = payload.guestPeerId || sourceConn.peer;
+        activeKnockRequest = {
+          conn: sourceConn,
+          guestName: guestName,
+          guestPeerId: guestPeerId,
+          roomCode: payload.roomCode || activeRoomCode,
+          timestamp: Date.now()
+        };
+        const banner = document.getElementById("knockRequestBanner");
+        const nameEl = document.getElementById("knockGuestName");
+        if (nameEl) nameEl.textContent = guestName;
+        if (banner) banner.style.display = "flex";
+        playKnockChime();
+        showStatusToast(`🔔 ${guestName} wants to join this study room`);
+        return;
+      }
+
+      if (payload.type === "KNOCK_ACCEPTED") {
+        closeRoomPasswordModal();
+        showStatusToast(`🎉 Host admitted you! Joining room ${payload.roomCode || activeRoomCode}...`);
+        try {
+          if (window.parent && window.parent !== window && typeof window.parent.onKnockAccepted === "function") {
+            window.parent.onKnockAccepted(payload.roomCode || activeRoomCode);
           }
-        });
-        squadMembersMap[incoming.peerId] = incoming;
-
-        if (isRoomHost) {
-          hostConnections.forEach(c => {
-            if (c && c.open) c.send({ type: "ROSTER_SYNC", roster: squadMembersMap, roomCode: activeRoomCode });
+        } catch (e) { }
+        callParent("onKnockAccepted", payload.roomCode || activeRoomCode);
+        if (sourceConn && sourceConn.open) {
+          sourceConn.send({
+            type: "MEMBER_JOIN_REQUEST",
+            member: buildMyMemberState(),
+            password: activeRoomPassword,
+            isKnockAdmitted: true
           });
         }
-        syncSquadToStorage();
-      } else if (payload.type === "ROSTER_SYNC" && payload.roster) {
+        if (isCallActive) {
+          broadcastMediaState();
+          connectCallsWithRoomMembers();
+        }
+        return;
+      }
+
+      if (payload.type === "KNOCK_DECLINED") {
+        showStatusToast(`❌ Host declined your request to join.`);
+        try {
+          if (window.parent && window.parent !== window && typeof window.parent.onKnockDeclined === "function") {
+            window.parent.onKnockDeclined(payload.roomCode || activeRoomCode);
+          }
+        } catch (e) { }
+        callParent("onKnockDeclined", payload.roomCode || activeRoomCode);
+        if (guestHostConn) {
+          try { guestHostConn.close(); } catch (e) { }
+          guestHostConn = null;
+        }
+        return;
+      }
+
+      if (payload.type === "KNOCK_CANCELLED") {
+        if (activeKnockRequest && activeKnockRequest.guestPeerId === sourceConn.peer) {
+          const banner = document.getElementById("knockRequestBanner");
+          if (banner) banner.style.display = "none";
+          activeKnockRequest = null;
+        }
+        return;
+      }
+
+      if (payload.type === "ROOM_PASSWORD_REQUIRED") {
+        if (payload.reason === "PASSWORD_NEEDED" && activeRoomPassword && sourceConn && sourceConn.open) {
+          sourceConn.send({
+            type: "MEMBER_JOIN_REQUEST",
+            member: buildMyMemberState(),
+            password: activeRoomPassword
+          });
+        } else {
+          const isErr = (payload.reason === "INCORRECT_PASSWORD");
+          openRoomPasswordModal(payload.roomCode || activeRoomCode, isErr);
+        }
+        return;
+      }
+
+      if (payload.type === "PASSWORD_ACCEPTED") {
+        closeRoomPasswordModal();
+        showStatusToast(`🔓 Password accepted! Connected to Room ${payload.roomCode || activeRoomCode}`);
+        updateMeetRoomLabel();
+        if (isCallActive) {
+          broadcastMediaState();
+          connectCallsWithRoomMembers();
+        }
+        return;
+      }
+
+      if (payload.type === "MEMBER_JOIN_REQUEST" || payload.type === "MEMBER_UPDATE") {
+        if (isRoomHost && activeRoomPassword) {
+          const isKnockAdmitted = !!payload.isKnockAdmitted && authenticatedPeers.has(sourceConn.peer);
+          const provided = (payload.password || "").trim();
+          if (!isKnockAdmitted && provided !== activeRoomPassword) {
+            sourceConn.send({
+              type: "ROOM_PASSWORD_REQUIRED",
+              reason: provided ? "INCORRECT_PASSWORD" : "PASSWORD_NEEDED",
+              roomCode: activeRoomCode
+            });
+            return;
+          }
+          authenticatedPeers.add(sourceConn.peer);
+          sourceConn.send({ type: "PASSWORD_ACCEPTED", roomCode: activeRoomCode });
+        } else if (isRoomHost) {
+          authenticatedPeers.add(sourceConn.peer);
+        }
+
+        if (payload.member) {
+          const incoming = payload.member;
+
+          // Remove any stale entry matching this specific peer ID
+          Object.keys(squadMembersMap).forEach(k => {
+            if (k !== myClientId && k === incoming.peerId) {
+              delete squadMembersMap[k];
+            }
+          });
+          squadMembersMap[incoming.peerId] = incoming;
+
+          if (isRoomHost) {
+            hostConnections.forEach(c => {
+              if (c && c.open && (!activeRoomPassword || authenticatedPeers.has(c.peer))) {
+                c.send({ type: "ROSTER_SYNC", roster: squadMembersMap, roomCode: activeRoomCode });
+              }
+            });
+            if (isCallActive && localStream) {
+              connectCallsWithRoomMembers();
+            }
+          }
+          syncSquadToStorage();
+        }
+        return;
+      }
+
+      // If host has password and peer is not authenticated, drop unauthorized actions
+      if (isRoomHost && activeRoomPassword && !authenticatedPeers.has(sourceConn.peer)) {
+        return;
+      }
+
+      if (payload.type === "ROSTER_SYNC" && payload.roster) {
+        closeRoomPasswordModal();
         const cleanRoster = {};
-        const myName = (localStorage.getItem("calcium_user_name") || "CA Aspirant").trim().toLowerCase();
 
         Object.entries(payload.roster).forEach(([k, member]) => {
           if (k.startsWith("me-") && k !== myClientId) return;
-          // Prevent remote cached state from overwriting local state
-          if (k === myClientId || (member.name && member.name.trim().toLowerCase() === myName)) return;
+          // Only filter out local self by client ID! Never drop peers who share the same name (e.g. CA Aspirant)
+          if (k === myClientId || (member && member.peerId === myClientId)) return;
           cleanRoster[k] = member;
         });
 
         cleanRoster[myClientId] = buildMyMemberState();
         squadMembersMap = cleanRoster;
         syncSquadToStorage();
-        if (isCallActive) {
+        if (isCallActive && localStream) {
           connectCallsWithRoomMembers();
         }
       } else if (payload.type === "MEDIA_STATE_UPDATE") {
@@ -2800,21 +3443,91 @@
     };
 
     window.leavePeerRoom = function () {
+      // 1. Notify connected peers if we are host
+      if (isRoomHost && hostConnections.length) {
+        hostConnections.forEach(c => {
+          if (c && c.open) {
+            try {
+              c.send({ type: "ROOM_CLOSED_BY_HOST", roomCode: activeRoomCode });
+            } catch (e) { }
+          }
+        });
+      }
+
+      // 2. Shut down media calls and tracks
       if (typeof isCallActive !== "undefined" && isCallActive) {
         window.leaveCall();
       }
+
+      // 3. Destroy WebRTC peer
       if (peerInstance) {
         try { peerInstance.destroy(); } catch (e) { }
         peerInstance = null;
       }
       hostConnections = [];
       guestHostConn = null;
+
+      // 4. Reset room state variables
+      const prevCode = activeRoomCode;
+      if (publicRoomPulseTimer) {
+        clearInterval(publicRoomPulseTimer);
+        publicRoomPulseTimer = null;
+      }
+      if (isRoomHost && prevCode) {
+        broadcastPublicRoomRemove(prevCode);
+      }
+      const knockEl = document.getElementById("knockRequestBanner");
+      if (knockEl) knockEl.style.display = "none";
+      activeKnockRequest = null;
+      activeRoomPrivacy = "public";
+
       activeRoomCode = "";
+      activeRoomPassword = "";
+      isRoomHost = false;
+      authenticatedPeers.clear();
+
+      // 5. Clear all inputs and local storage
       try { localStorage.setItem("calcium_active_room", ""); } catch (e) { }
+      try { localStorage.removeItem("calcium_room_password"); } catch (e) { }
+
+      const joinIn = document.getElementById("joinRoomInput");
+      if (joinIn) joinIn.value = "";
+      const drawerIn = document.getElementById("drawerJoinRoomCode");
+      if (drawerIn) drawerIn.value = "";
+      const drawerPwd = document.getElementById("drawerJoinRoomPassword");
+      if (drawerPwd) drawerPwd.value = "";
+      const lobbyCode = document.getElementById("lobbyJoinCode");
+      if (lobbyCode) lobbyCode.value = "";
+      const lobbyPwd = document.getElementById("lobbyJoinPassword");
+      if (lobbyPwd) lobbyPwd.value = "";
+      const lobbyCreatePwd = document.getElementById("lobbyCreatePassword");
+      if (lobbyCreatePwd) lobbyCreatePwd.value = "";
+
+      // 6. Reset UI labels
+      updateMeetRoomLabel();
+
+      // 7. Reset parent state and URL parameters
+      try {
+        if (window.parent && window.parent !== window) {
+          window.parent._calciumCurrentRoomCode = "";
+          if (typeof window.parent.notifyActiveRoomState === "function") {
+            window.parent.notifyActiveRoomState("");
+          }
+          if (typeof window.parent.clearRoomUrlParams === "function") {
+            window.parent.clearRoomUrlParams();
+          }
+        }
+      } catch (e) { }
+      callParent("notifyActiveRoomState", "");
+      clearParentRoomUrlParams();
+
+      // 8. Rebuild local solo state
       squadMembersMap = {};
       squadMembersMap[myClientId] = buildMyMemberState();
-      showStatusToast("Left room — currently in Solo mode.");
       syncSquadToStorage();
+
+      // 9. Close modals and notify overlay
+      showStatusToast(prevCode ? `🚪 Left Room ${prevCode} — currently in Solo mode.` : "Currently in Solo mode.");
       prewarmGuestPeerInstance();
       closeSquadModal();
     };
@@ -2865,7 +3578,9 @@
       const shActive = document.getElementById("shareModal").classList.contains("active");
       const prModal = document.getElementById("profileModal");
       const prActive = prModal && prModal.classList.contains("active");
-      if (sqActive || shActive || prActive) {
+      const pwdModal = document.getElementById("roomPasswordModal");
+      const pwdActive = pwdModal && pwdModal.classList.contains("active");
+      if (sqActive || shActive || prActive || pwdActive) {
         callParent("showSturmOverlay");
       } else {
         callParent("hideSturmOverlay");
@@ -3209,8 +3924,14 @@
       // Sync name if entered in lobby
       const nameEl = document.getElementById('lobbyDisplayName');
       if (nameEl && nameEl.value.trim()) saveDisplayName(nameEl.value.trim());
+      const pwdEl = document.getElementById('lobbyCreatePassword');
+      const pwd = (pwdEl ? pwdEl.value.trim() : '');
+      activeRoomPassword = pwd;
       hideSquadLobby();
-      window.startOrCreateMeetRoom();
+      window.createPeerRoom(pwd, activeRoomPrivacy);
+      if (!isCallActive) {
+        joinCall(true, true);
+      }
       updateMeetRoomLabel();
     };
 
@@ -3218,13 +3939,33 @@
       const nameEl = document.getElementById('lobbyDisplayName');
       if (nameEl && nameEl.value.trim()) saveDisplayName(nameEl.value.trim());
       const codeEl = document.getElementById('lobbyJoinCode');
-      const code = codeEl ? codeEl.value.trim() : '';
-      if (!code) {
+      const raw = codeEl ? codeEl.value.trim() : '';
+      const pwdEl = document.getElementById('lobbyJoinPassword');
+      let pwd = pwdEl ? pwdEl.value.trim() : '';
+      if (!raw) {
         codeEl && codeEl.focus();
         codeEl && (codeEl.style.borderColor = 'rgba(239,68,68,0.7)');
         setTimeout(() => { if (codeEl) codeEl.style.borderColor = ''; }, 1500);
         return;
       }
+      let code = raw;
+      if (raw.includes('room=')) {
+        try {
+          const u = new URL(raw);
+          code = u.searchParams.get('room') || raw;
+          if (!pwd && u.searchParams.get('pwd')) pwd = u.searchParams.get('pwd');
+        } catch (e) {
+          code = raw.split('room=')[1].split('&')[0];
+          if (!pwd && raw.includes('pwd=')) {
+            try { pwd = raw.split('pwd=')[1].split('&')[0]; } catch (e) { }
+          }
+        }
+      }
+      code = code.trim().toUpperCase();
+      if (/^\d{3,6}$/.test(code)) {
+        code = 'CA-' + code;
+      }
+      activeRoomPassword = pwd;
       // Sync code to the hidden joinRoomInput so joinMeetRoomAndAutoCall works
       const hidden = document.getElementById('joinRoomInput');
       if (hidden) hidden.value = code;
@@ -3243,6 +3984,16 @@
       document.getElementById('squadModal').classList.remove('active');
       hideSquadLobby();
       notifyParentOverlayVisibility();
+      if (activeRoomCode) {
+        callParent("onRoomMinimized", {
+          activeRoomCode: activeRoomCode,
+          isCallActive: isCallActive,
+          isAudioOn: isAudioOn,
+          isVideoOn: isVideoOn,
+          count: Math.max(1, Object.keys(squadMembersMap).length)
+        });
+        showStatusToast("🗕 Room minimized. Audio/study stays active.");
+      }
     };
 
     /* =========================================================================
@@ -3298,7 +4049,7 @@
 
     window.toggleJoinLeaveCall = function () {
       if (isCallActive) {
-        window.leaveCall();
+        window.leavePeerRoom();
       } else {
         joinCall(true, true); // default join: both camera & mic on
       }
@@ -3399,6 +4150,12 @@
           if (tile) tile.classList.toggle("is-speaking", speaking && isAudioOn);
           updateFloatingSpeakingStatus();
         });
+
+        // Ensure newly acquired tracks are attached to any existing calls that were answered receive-only
+        if (localStream) {
+          localStream.getAudioTracks().forEach(t => replaceSenderTrack("audio", t));
+          localStream.getVideoTracks().forEach(t => replaceSenderTrack("video", t));
+        }
 
         broadcastMediaState();
         connectCallsWithRoomMembers();
@@ -3597,7 +4354,10 @@
       if (!peerInstance || !isCallActive || !localStream) return;
       Object.values(squadMembersMap).forEach(m => {
         if (m.peerId && m.peerId !== myClientId && !m.peerId.startsWith("me-")) {
-          if (!activeMediaCalls[m.peerId]) {
+          // Tie-breaker: Host initiates calls to all guests, or peer with lexicographically greater ID initiates.
+          // This prevents dual-call glare (simultaneous SDP offers collision in WebRTC)!
+          const shouldInitiate = isRoomHost || (myClientId > m.peerId);
+          if (shouldInitiate && !activeMediaCalls[m.peerId]) {
             initiateMediaCallToPeer(m.peerId);
           }
         }
@@ -3605,20 +4365,33 @@
     }
 
     function initiateMediaCallToPeer(remotePeerId) {
-      if (!peerInstance || !localStream) return;
-      if (activeMediaCalls[remotePeerId]) return;
+      if (!peerInstance || !peerInstance.open || !localStream) return;
+      if (activeMediaCalls[remotePeerId]) {
+        const existingCall = activeMediaCalls[remotePeerId];
+        if (existingCall.peerConnection && (existingCall.peerConnection.connectionState === "failed" || existingCall.peerConnection.connectionState === "closed")) {
+          delete activeMediaCalls[remotePeerId];
+        } else {
+          return;
+        }
+      }
 
       try {
         const call = peerInstance.call(remotePeerId, localStream);
         activeMediaCalls[remotePeerId] = call;
         bindCallEvents(call, remotePeerId);
       } catch (e) {
+        delete activeMediaCalls[remotePeerId];
         console.warn("Failed to call peer " + remotePeerId, e);
       }
     }
 
     function handleIncomingMediaCall(call) {
       const remotePeerId = call.peer;
+      if (isRoomHost && activeRoomPassword && !authenticatedPeers.has(remotePeerId)) {
+        console.warn("Rejected incoming media call from unauthenticated peer:", remotePeerId);
+        try { call.close(); } catch (e) { }
+        return;
+      }
       activeMediaCalls[remotePeerId] = call;
 
       if (localStream) {
@@ -3697,6 +4470,9 @@
 
     function removeRemoteVideoTile(remotePeerId) {
       stopAudioMonitoring(remotePeerId);
+      if (activeMediaCalls[remotePeerId]) {
+        try { activeMediaCalls[remotePeerId].close(); } catch (e) { }
+      }
       delete activeMediaCalls[remotePeerId];
       delete remoteStreams[remotePeerId];
       delete remoteMediaStates[remotePeerId];
@@ -3869,16 +4645,14 @@
         if (floatingWidget) floatingWidget.style.display = "none";
       }
       try {
-        if (window.parent && window.parent !== window && typeof window.parent.syncFloatingCallWidget === "function") {
-          const statusEl = document.getElementById("floatingSpeakingStatus");
-          window.parent.syncFloatingCallWidget({
-            isCallActive,
-            isAudioOn,
-            isVideoOn,
-            activeRoomCode,
-            speakingText: statusEl ? statusEl.textContent : ""
-          });
-        }
+        const statusEl = document.getElementById("floatingSpeakingStatus");
+        callParent("syncFloatingCallWidget", {
+          isCallActive: isCallActive,
+          isAudioOn: isAudioOn,
+          isVideoOn: isVideoOn,
+          activeRoomCode: activeRoomCode,
+          speakingText: statusEl ? statusEl.textContent : ""
+        });
       } catch (e) { }
     }
 
@@ -4378,7 +5152,7 @@
 
     // Auto-start camera & microphone when creating or joining a Study Meet room
     window.startOrCreateMeetRoom = function () {
-      window.createPeerRoom();
+      window.createPeerRoom(activeRoomPassword, activeRoomPrivacy);
       if (!isCallActive) {
         joinCall(true, true); // Auto-enable Video + Audio like Google Meet
       } else if (!isVideoOn) {
@@ -4392,6 +5166,22 @@
       const el = document.getElementById('joinRoomInput');
       if (el) el.value = code;
     };
+    window.joinPeerRoomDirect = function (code, pwd) {
+      if (!code) return;
+      const cleanCode = code.trim().toUpperCase();
+      const inEl = document.getElementById("joinRoomInput");
+      if (inEl) inEl.value = cleanCode;
+      activeRoomCode = cleanCode;
+      activeRoomPassword = (pwd || "").trim();
+      joinPeerRoom(cleanCode, activeRoomPassword);
+      if (!isCallActive) {
+        joinCall(true, true);
+      } else if (!isVideoOn) {
+        setVideoState(true);
+      }
+      updateMeetRoomLabel();
+    };
+
     window.joinMeetRoomAndAutoCall = function () {
       window.joinPeerRoomFromInput();
       if (!isCallActive) {
@@ -4430,6 +5220,9 @@
       const input = document.getElementById("drawerJoinRoomCode");
       if (!input) return;
       let raw = (input.value || "").trim();
+      const pwdInput = document.getElementById("drawerJoinRoomPassword");
+      let pwd = pwdInput ? pwdInput.value.trim() : "";
+
       if (!raw) {
         input.classList.add("sq-error");
         input.focus();
@@ -4441,9 +5234,14 @@
       let code = raw;
       if (raw.includes("room=")) {
         try {
-          code = new URL(raw).searchParams.get("room") || raw;
+          const u = new URL(raw);
+          code = u.searchParams.get("room") || raw;
+          if (!pwd && u.searchParams.get("pwd")) pwd = u.searchParams.get("pwd");
         } catch (e) {
           code = raw.split("room=")[1].split("&")[0];
+          if (!pwd && raw.includes("pwd=")) {
+            try { pwd = raw.split("pwd=")[1].split("&")[0]; } catch (e) { }
+          }
         }
       }
       code = code.trim().toUpperCase();
@@ -4451,10 +5249,12 @@
         code = "CA-" + code;
       }
 
-      if (activeRoomCode && activeRoomCode.toUpperCase() === code) {
+      if (activeRoomCode && activeRoomCode.toUpperCase() === code && activeRoomPassword === pwd) {
         showStatusToast(`ℹ️ Already connected to Room ${code}`);
         return;
       }
+
+      activeRoomPassword = pwd;
 
       const nameEl = document.getElementById("myDisplayName");
       if (nameEl && nameEl.value.trim()) {
@@ -4475,6 +5275,7 @@
       if (hidden) hidden.value = code;
 
       input.value = "";
+      if (pwdInput) pwdInput.value = "";
       showStatusToast(`Connecting to Room ${code}...`);
       window.joinMeetRoomAndAutoCall();
       updateMeetRoomLabel();
@@ -4487,12 +5288,16 @@
       const drawerTag = document.getElementById('drawerRoomCodeTag');
       const shareInput = document.getElementById('shareInviteUrl');
       if (activeRoomCode) {
-        if (lbl) lbl.textContent = activeRoomCode;
+        const lockIcon = activeRoomPassword ? ' 🔒' : '';
+        if (lbl) {
+          lbl.textContent = activeRoomCode + lockIcon;
+          lbl.title = activeRoomPassword ? `Password Protected Room (${activeRoomCode})` : `Open Study Room (${activeRoomCode})`;
+        }
         if (badge) badge.style.display = 'flex';
         if (idle) idle.style.display = 'none';
         if (drawerTag) {
-          drawerTag.textContent = activeRoomCode;
-          drawerTag.title = 'Click to copy Room Code (' + activeRoomCode + ')';
+          drawerTag.textContent = activeRoomCode + lockIcon;
+          drawerTag.title = 'Click to copy Room Code (' + activeRoomCode + (activeRoomPassword ? ' [Locked]' : '') + ')';
         }
         let locObj = window.location;
         try {
@@ -4501,10 +5306,15 @@
           }
         } catch (e) { }
         const baseUrl = locObj.origin && locObj.origin !== 'null' ? locObj.origin + locObj.pathname : 'https://www.calciumnotes.com/';
+        const pwdParam = activeRoomPassword ? `&pwd=${encodeURIComponent(activeRoomPassword)}` : '';
         if (shareInput) {
-          shareInput.value = `${baseUrl}?room=${activeRoomCode}`;
+          shareInput.value = `${baseUrl}?room=${activeRoomCode}${pwdParam}`;
         }
       } else {
+        if (lbl) {
+          lbl.textContent = 'CA-0000';
+          lbl.title = 'No active room';
+        }
         if (badge) badge.style.display = 'none';
         if (idle) idle.style.display = '';
         if (drawerTag) {

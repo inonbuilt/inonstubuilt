@@ -401,6 +401,8 @@
       display: flex;
       flex-direction: column;
       gap: 6px;
+      -webkit-overflow-scrolling: touch;
+      touch-action: pan-y;
     }
 
     .social-list-view {
@@ -3741,12 +3743,24 @@
               <div class="chat-messages-area" id="chatMessagesArea">
                 ${chatList.length === 0
               ? `<div style="margin:auto; text-align:center; color:#64748b; font-size:12px; font-style:italic;">No messages yet. Send a greeting or ask a study question! 👋</div>`
-              : chatList.map(m => `
-                      <div class="chat-bubble ${m.sender === 'me' ? 'outgoing' : 'incoming'}">
-                        <div style="font-size:10px; opacity:0.75; margin-bottom:2px;">${m.sender === 'me' ? 'You' : escapeHtml(friend.name)} • ${escapeHtml(m.time)}</div>
+              : chatList.map(m => {
+                  const isMe = m.sender === 'me';
+                  const roomMatch = (m.text || "").match(/CA-\d{4,6}/i);
+                  const rmCode = roomMatch ? roomMatch[0].toUpperCase() : null;
+                  return `
+                      <div class="chat-bubble ${isMe ? 'outgoing' : 'incoming'}">
+                        <div style="font-size:10px; opacity:0.75; margin-bottom:2px;">${isMe ? 'You' : escapeHtml(friend.name)} • ${escapeHtml(m.time)}</div>
                         <div>${escapeHtml(m.text)}</div>
+                        ${rmCode ? `
+                          <div style="margin-top:6px;">
+                            <button type="button" class="f-btn emerald" style="padding:4px 10px; font-size:11px; border-radius:6px;" onclick="startCoStudyRoomWithFriend('${friend.uid}', '${rmCode}')">
+                              👥 Enter Study Room ${rmCode}
+                            </button>
+                          </div>
+                        ` : ''}
                       </div>
-                    `).join("")
+                    `;
+                }).join("")
             }
               </div>
               <div class="chat-input-row">
@@ -3781,6 +3795,9 @@
           </div>
 
           <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+            <button type="button" class="f-btn emerald" onclick="startCoStudyRoomWithFriend('${friend.uid}')" title="Start live Study Squad with ${escapeHtml(friend.name)}">
+              👥 Study Squad
+            </button>
             <button class="f-btn primary" onclick="switchInspectorTab('chat')" title="Open Text Chat">
               💬 Message
             </button>
@@ -3860,13 +3877,56 @@
       }
     };
 
-    window.startCoStudyRoomWithFriend = function (uid) {
+    function callParent(fnName, ...args) {
+      if (!window.parent || window.parent === window) return;
+      try {
+        if (typeof window.parent[fnName] === "function") {
+          window.parent[fnName](...args);
+          return;
+        }
+      } catch (e) { }
+      try {
+        window.parent.postMessage({ __calciumParentCall: true, fn: fnName, args: args }, "*");
+      } catch (e2) { }
+    }
+
+    window.startCoStudyRoomWithFriend = function (uid, specificRoomCode) {
       const cleanUid = normalizeUniqueUserId(uid);
       if (!cleanUid || cleanUid === myUniqueId) return;
-      const roomCode = "CA-" + cleanUid.replace(/[^0-9]/g, "").slice(-4).padStart(4, "8");
-      if (window.parent && window.parent !== window && typeof window.parent.openSquadModal === "function") {
-        window.parent.closeFriendsModal();
-        window.parent.openSquadModal(true);
+
+      let roomCode = specificRoomCode;
+      if (!roomCode) {
+        // Deterministic symmetric room code: both friends always derive the exact same room
+        const pair = [myUniqueId, cleanUid].sort().join("-");
+        let hash = 0;
+        for (let i = 0; i < pair.length; i++) {
+          hash = ((hash << 5) - hash + pair.charCodeAt(i)) | 0;
+        }
+        roomCode = "CA-" + String(Math.abs(hash) % 9000 + 1000);
+      }
+
+      // Send automated study squad invite in friend chat
+      try {
+        const timeStr = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+        const inviteText = `🚀 I've started our Study Squad room: ${roomCode}! Click to join me!`;
+        const messageId = (window.crypto && window.crypto.randomUUID)
+          ? window.crypto.randomUUID()
+          : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+        const history = getChatHistory(cleanUid);
+        history.push({ messageId, sender: "me", text: inviteText, time: timeStr });
+        saveChatHistory(cleanUid, history);
+        seenChatMessageIds.add(messageId);
+
+        sendPacketToUser(cleanUid, {
+          type: "FRIEND_CHAT_MSG",
+          fromUid: myUniqueId,
+          message: { messageId, sender: "friend", text: inviteText, time: timeStr }
+        });
+      } catch (e) { }
+
+      if (window.parent && window.parent !== window) {
+        callParent("joinStudyRoomWithFriend", roomCode);
         return;
       }
       window.location.href = `./index.html?room=${roomCode}`;
@@ -3893,9 +3953,7 @@
         }));
         allData[getTodayDateKey()] = cloned;
         localStorage.setItem("calcium_ca_data_v5", JSON.stringify(allData));
-        if (window.parent && window.parent !== window && typeof window.parent.syncPlanIframeFromReadRoom === "function") {
-          window.parent.syncPlanIframeFromReadRoom();
-        }
+        callParent("syncPlanIframeFromReadRoom");
         showToast(`✅ Copied ${friend.name}'s timetable into your Planning Mode for today!`);
       } catch (e) { }
     };
@@ -3920,6 +3978,8 @@
           }
         });
         localStorage.setItem("cn_tasks", JSON.stringify(myTasks));
+        window.dispatchEvent(new Event("storage"));
+        callParent("syncReadIframeTracker");
         showToast(`✅ Imported ${added} revision task${added === 1 ? "" : "s"} into your Read Mode!`);
       } catch (e) { }
     };
@@ -3955,10 +4015,8 @@
 
     function notifyParentBadgeCount() {
       try {
-        if (window.parent && window.parent !== window && typeof window.parent.syncFriendsCountBadge === "function") {
-          const friendsCount = Object.keys(getSavedFriendsMap()).length;
-          window.parent.syncFriendsCountBadge(friendsCount, 0);
-        }
+        const friendsCount = Object.keys(getSavedFriendsMap()).length;
+        callParent("syncFriendsCountBadge", friendsCount, 0);
       } catch (e) { }
     }
 
@@ -3979,8 +4037,8 @@
     }
 
     window.closeOrNavigateHome = function () {
-      if (window.parent && window.parent !== window && typeof window.parent.closeFriendsModal === "function") {
-        window.parent.closeFriendsModal();
+      if (window.parent && window.parent !== window) {
+        callParent("closeFriendsModal");
         return;
       }
       window.location.assign("index.html");
