@@ -97,8 +97,11 @@
         },
         "featureList": [
           "Live WebRTC audio & video co-studying",
+          "Public live study rooms (Open & Protected) with MQTT discovery",
+          "Host Knock-to-Admit gatekeeping with cyber-banner & chime",
+          "Private 4-digit stealth study rooms (CA-XXXX)",
+          "Calcium Social friend network with live green-dot presence & 1-click teleport",
           "Unlimited study room member capacity",
-          "Instant Room Codes (CA-XXXX) and WhatsApp invite links",
           "Dual countdown study timer & focus stopwatch",
           "Chapter-wise revision tracker for CA Foundation, Inter, and Final",
           "Universal JSON local data backup & cross-device restore",
@@ -133,6 +136,30 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Calcium Notes is a comprehensive digital study ecosystem engineered specifically for CA Foundation, Intermediate, and Final students. It features Calcium Meet—a free, browser-based WebRTC live video and audio co-study room—along with interactive timers, chapter trackers, and 99.2% exam-focused notes tailored to the ICAI 2027 New Scheme."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Public and Private study rooms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Public rooms are broadcasted live to the Study Squad lobby on the homepage via real-time MQTT pulses so any student can discover active study sessions. They can be Open (instant 1-click entry) or Protected (requires host password or host approval). In contrast, Private rooms are completely unlisted and invisible from the public lobby; they can only be accessed by peers who possess the secret 4-digit room code (e.g. CA-4829) or direct WhatsApp invite link."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the 'Ask to Join' (Knock & Admit) feature work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When a public room is marked as Protected, students who don't have the password can click 'Ask to Join'. This sends an instant WebRTC knock request to the room host. The host receives a floating Cyber-Glass banner with a bell chime showing the student's name, with one-tap buttons to Admit or Decline. If admitted, the guest connects automatically without typing a password."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do Public Friends and Private Friends work in Calcium Social?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Inside Calcium Social (frid.html), the Public Community Lobby allows you to discover active CA aspirants across India, view their revision targets and courses, and send study friend requests. Your Private Friends list keeps your accepted accountability partners saved permanently in your browser storage with live green-dot online presence and a 1-click Teleport & Join shortcut into their active study room."
             }
           },
           {
@@ -758,6 +785,283 @@
       color: var(--primary);
     }
 
+    /* ═══════════════════════════════════════════════════════════════
+       PUBLIC & PRIVATE STUDY ROOMS + FRIENDS ARCHITECTURE
+    ═══════════════════════════════════════════════════════════════ */
+    .rooms-friends-section {
+      padding: 20px 0 60px;
+    }
+
+    .rf-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 35px;
+    }
+
+    .rf-card {
+      background: linear-gradient(145deg, rgba(15, 23, 42, 0.85) 0%, rgba(13, 26, 46, 0.95) 100%);
+      border: 1px solid rgba(56, 189, 248, 0.22);
+      border-radius: 18px;
+      padding: 30px 26px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .rf-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.5);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(56, 189, 248, 0.15);
+    }
+
+    .rf-card.emerald {
+      border-color: rgba(16, 185, 129, 0.25);
+    }
+    .rf-card.emerald:hover {
+      border-color: rgba(16, 185, 129, 0.55);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(16, 185, 129, 0.15);
+    }
+
+    .rf-card.purple {
+      border-color: rgba(168, 85, 247, 0.25);
+    }
+    .rf-card.purple:hover {
+      border-color: rgba(168, 85, 247, 0.55);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(168, 85, 247, 0.15);
+    }
+
+    .rf-card.amber {
+      border-color: rgba(245, 158, 11, 0.25);
+    }
+    .rf-card.amber:hover {
+      border-color: rgba(245, 158, 11, 0.55);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(245, 158, 11, 0.15);
+    }
+
+    .rf-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .rf-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      flex-shrink: 0;
+    }
+
+    .rf-card.emerald .rf-icon {
+      background: rgba(16, 185, 129, 0.12);
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+
+    .rf-card.purple .rf-icon {
+      background: rgba(168, 85, 247, 0.12);
+      border-color: rgba(168, 85, 247, 0.3);
+    }
+
+    .rf-card.amber .rf-icon {
+      background: rgba(245, 158, 11, 0.12);
+      border-color: rgba(245, 158, 11, 0.3);
+    }
+
+    .rf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .rf-badge.blue {
+      background: rgba(56, 189, 248, 0.12);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+    }
+
+    .rf-badge.emerald {
+      background: rgba(16, 185, 129, 0.12);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    .rf-badge.purple {
+      background: rgba(168, 85, 247, 0.12);
+      color: #c084fc;
+      border: 1px solid rgba(168, 85, 247, 0.35);
+    }
+
+    .rf-badge.amber {
+      background: rgba(245, 158, 11, 0.12);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+    }
+
+    .rf-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .rf-subtitle {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      line-height: 1.55;
+      margin-bottom: 18px;
+    }
+
+    .rf-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 22px;
+      flex-grow: 1;
+    }
+
+    .rf-list li {
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.5;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .rf-list li strong {
+      color: #f1f5f9;
+      font-weight: 700;
+    }
+
+    .rf-list li .bullet-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    .rf-card.emerald .rf-list li .bullet-dot {
+      background: #10b981;
+    }
+
+    .rf-card.purple .rf-list li .bullet-dot {
+      background: #a855f7;
+    }
+
+    .rf-card.amber .rf-list li .bullet-dot {
+      background: #f59e0b;
+    }
+
+    .rf-footer-tag {
+      font-size: 12px;
+      color: #64748b;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Comparison Matrix Table */
+    .matrix-wrap {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      overflow-x: auto;
+      margin-top: 25px;
+      margin-bottom: 50px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 680px;
+      text-align: left;
+      font-size: 13.5px;
+    }
+
+    .matrix-table th {
+      background: rgba(30, 41, 59, 0.7);
+      padding: 14px 18px;
+      color: #f8fafc;
+      font-weight: 800;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      letter-spacing: 0.3px;
+    }
+
+    .matrix-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: #cbd5e1;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    .matrix-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .matrix-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .matrix-feature-name {
+      font-weight: 700;
+      color: #ffffff;
+      white-space: nowrap;
+    }
+
+    .tag-pill {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      margin-right: 4px;
+    }
+
+    .tag-pill.open {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .tag-pill.locked {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .tag-pill.private {
+      background: rgba(168, 85, 247, 0.15);
+      color: #c084fc;
+      border: 1px solid rgba(168, 85, 247, 0.3);
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       .hero-section {
@@ -786,6 +1090,7 @@
       </a>
       <nav class="nav-links" aria-label="Main Navigation">
         <a href="./index.html" class="nav-btn">Home</a>
+        <a href="#rooms-and-friends" class="nav-btn">Rooms &amp; Friends</a>
         <a href="./aboutca.html" class="nav-btn">CA Blueprint</a>
         <a href="./bin/Resources/resources.html" class="nav-btn">Study Materials</a>
         <a href="./contract.html" class="nav-btn">Contact</a>
@@ -821,7 +1126,8 @@
       <!-- Trust Badges -->
       <div class="trust-bar">
         <div class="trust-pill">🎓 CA Foundation • Intermediate • Final</div>
-        <div class="trust-pill">📹 PeerJS WebRTC Live Video Rooms</div>
+        <div class="trust-pill">🌐 Public &amp; Private Study Rooms</div>
+        <div class="trust-pill">👥 Live Study Friends &amp; Presence</div>
         <div class="trust-pill">🔒 100% Client-Side Privacy (Zero Cloud Selling)</div>
         <div class="trust-pill">💎 100% Free Forever</div>
       </div>
@@ -843,19 +1149,20 @@
         <!-- TILE 1: Calcium Meet / Live Study Squad -->
         <article class="tile-card">
           <div class="tile-icon-wrap">&#x1F4F9;</div>
-          <h3 class="tile-title">Calcium Meet &amp; Live Study Squad</h3>
+          <h3 class="tile-title">Live Study Squad: Public &amp; Private Rooms</h3>
           <p class="tile-desc">
-            Beat CA exam loneliness. Study live with friends or accountability partners in browser-to-browser
-            WebRTC study rooms. Share screens, use subtle video filters, and keep each other accountable in real time.
+            Beat CA exam loneliness. Study live with friends or peer aspirants in browser-to-browser
+            WebRTC study rooms. Jump into open public library rooms, host password-protected sessions with
+            knock-to-admit security, or connect with your personal study friends.
           </p>
           <ul class="tile-features-list">
-            <li>Instant 4-digit room codes (e.g., <code>CA-9735</code>) &amp; direct WhatsApp invites</li>
-            <li>Direct "Enter via Room Number" input for instant room switching</li>
-            <li>Adaptive video grid with speaking indicators &amp; fun filters</li>
-            <li>Zero software or extensions needed — works straight in your browser</li>
+            <li>Public Room Lobby (Open &amp; Protected) with real-time peer discovery</li>
+            <li>Private 4-digit stealth rooms (e.g., <code>CA-9735</code>) &amp; direct WhatsApp invites</li>
+            <li>Host gatekeeping: Instant "🙋 Ask to Join" knock popup with Admit / Decline control</li>
+            <li>Calcium Friends hub with live presence &amp; 1-click room teleporting</li>
           </ul>
-          <a href="./index.html" class="tile-action-link" title="Start a Live Study Room">
-            Launch a Room Now &rarr;
+          <a href="#rooms-and-friends" class="tile-action-link" title="Explore Live Study Rooms & Friends Architecture">
+            Explore Rooms &amp; Friends &rarr;
           </a>
         </article>
 
@@ -957,6 +1264,327 @@
       </div>
     </section>
 
+    <!-- ═══════════════════════════════════════════════════════════════
+         PUBLIC & PRIVATE STUDY ROOMS + FRIENDS ARCHITECTURE
+    ═══════════════════════════════════════════════════════════════ -->
+    <section class="rooms-friends-section" id="rooms-and-friends">
+      <div class="section-header">
+        <div class="section-tag">Collaboration &amp; Social Architecture</div>
+        <h2 class="section-title">Public &amp; Private Study Rooms + Friends Network</h2>
+        <p class="section-subtitle">
+          Designed specifically for CA preparation rhythms: Jump into an open virtual library to beat isolation,
+          host locked rooms with knock-to-admit security, or build a trusted circle of study accountability partners.
+        </p>
+      </div>
+
+      <!-- PART 1: STUDY ROOMS (PUBLIC vs PRIVATE) -->
+      <div style="margin-bottom: 20px;">
+        <h3 style="font-size: 1.4rem; font-weight: 800; color: #f8fafc; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+          <span>🚪</span> Live Study Rooms: Public vs. Private
+        </h3>
+        <p style="font-size: 0.95rem; color: #94a3b8; margin-bottom: 20px;">
+          Choose the exact level of access, security, and visibility your study session needs.
+        </p>
+      </div>
+
+      <div class="rf-grid">
+
+        <!-- CARD 1: PUBLIC STUDY ROOMS -->
+        <article class="rf-card">
+          <div class="rf-header-row">
+            <div class="rf-icon">📡</div>
+            <span class="rf-badge blue">🌐 Live Public Lobby</span>
+          </div>
+          <h4 class="rf-title">Public Study Rooms</h4>
+          <p class="rf-subtitle">
+            Open virtual library rooms broadcasted globally in real time via lightweight MQTT relays so fellow CA
+            aspirants can discover and co-study with you.
+          </p>
+          <ul class="rf-list">
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Open Rooms (<code>🔓 Open</code>):</strong> Direct 1-click <em>"🚀 Join Room"</em> entry without
+                passwords. Ideal for library-style peer pressure, late-night focus, and group Pomodoro sprints.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Protected Rooms (<code>🔒 Protected</code>):</strong> Visible in the lobby to signal an active study session
+                while providing the host complete gatekeeper control.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>🔑 Password Access:</strong> Enter the host's password directly in the lobby card with smooth typing
+                protection and zero focus interruption.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>🙋 "Ask to Join" (Knock &amp; Admit):</strong> Guests without passwords tap to knock; the host instantly receives
+                a floating Cyber-Glass popup with bell chime to <strong>"✅ Admit"</strong> or <strong>"✕ Decline"</strong>.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Live Counter &amp; Auto-Hygiene:</strong> Real-time member counters display active students; offline rooms automatically
+                prune when the host leaves.
+              </div>
+            </li>
+          </ul>
+          <div class="rf-footer-tag">
+            <span>⚡ Best For:</span> Spontaneous study sessions, library ambiance &amp; breaking isolation
+          </div>
+        </article>
+
+        <!-- CARD 2: PRIVATE STUDY ROOMS -->
+        <article class="rf-card purple">
+          <div class="rf-header-row">
+            <div class="rf-icon">🛡️</div>
+            <span class="rf-badge purple">🕶️ Stealth &amp; Invite-Only</span>
+          </div>
+          <h4 class="rf-title">Private Study Rooms</h4>
+          <p class="rf-subtitle">
+            Unlisted, confidential study pods created for close friends, test-series partners, batchmates, and
+            articleship peers who want distraction-free privacy.
+          </p>
+          <ul class="rf-list">
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Zero Public Broadcast:</strong> Completely unlisted. Hidden from the public lobby directory; impossible to find
+                without the unique code.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Unique 4-Digit Codes (e.g. <code>CA-4829</code>):</strong> Ultra-compact room codes designed for quick typing,
+                verbal sharing, or fast room switching.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>1-Click WhatsApp &amp; Direct Invites:</strong> Share pre-formatted invite links with optional prefilled credentials
+                for instantaneous batchmate onboarding.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Optional Host Password:</strong> Add a secondary password gate so even if someone enters the room number, they cannot
+                enter without host clearance.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Direct P2P Encrypted WebRTC:</strong> Video, audio, whiteboard, and timers stream directly peer-to-peer. Zero server
+                transit and zero video cloud recording.
+              </div>
+            </li>
+          </ul>
+          <div class="rf-footer-tag">
+            <span>⚡ Best For:</span> Close study circles, coaching batchmates, articleship peers &amp; mock exams
+          </div>
+        </article>
+
+      </div>
+
+      <!-- PART 2: STUDY FRIENDS (PUBLIC LOBBY vs PRIVATE FRIENDS) -->
+      <div style="margin-top: 30px; margin-bottom: 20px;">
+        <h3 style="font-size: 1.4rem; font-weight: 800; color: #f8fafc; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+          <span>👥</span> Calcium Social: Public Community vs. Private Friends
+        </h3>
+        <p style="font-size: 0.95rem; color: #94a3b8; margin-bottom: 20px;">
+          Connect with new aspirants in the open lounge or maintain your trusted inner circle inside the Calcium Social hub (<code>frid.html</code>).
+        </p>
+      </div>
+
+      <div class="rf-grid">
+
+        <!-- CARD 3: PUBLIC COMMUNITY LOBBY -->
+        <article class="rf-card amber">
+          <div class="rf-header-row">
+            <div class="rf-icon">🤝</div>
+            <span class="rf-badge amber">🌍 Global Peer Radar</span>
+          </div>
+          <h4 class="rf-title">Public Community Lobby</h4>
+          <p class="rf-subtitle">
+            An open social discovery directory inside Calcium Social where CA students across India connect to form
+            high-accountability partnerships.
+          </p>
+          <ul class="rf-list">
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Live Online Peer Radar:</strong> Discover fellow CA aspirants currently seated at their study desks and actively
+                studying in real time.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Course Level &amp; Subject Filtering:</strong> Identify students preparing for the exact same syllabus (CA Foundation,
+                CA Inter Group 1/2, or CA Final).
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Daily Targets &amp; Study Moods:</strong> See what peers are studying (e.g. <em>"FR Ind AS 115"</em>, <em>"Audit Standards"</em>,
+                <em>"DT Capital Gains"</em>) for mutual motivation.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Instant Study Friend Requests:</strong> Connect with dedicated peers with 1 click without needing to share your phone
+                number, email, or Instagram handle.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Safe Privacy Boundaries:</strong> You control your public visibility toggle anytime. Turn it off to study completely
+                incognito whenever you choose.
+              </div>
+            </li>
+          </ul>
+          <div class="rf-footer-tag">
+            <span>⚡ Best For:</span> Finding motivated study partners, subject-specific peers &amp; community momentum
+          </div>
+        </article>
+
+        <!-- CARD 4: PRIVATE FRIENDS CIRCLE -->
+        <article class="rf-card emerald">
+          <div class="rf-header-row">
+            <div class="rf-icon">💚</div>
+            <span class="rf-badge emerald">🔒 Inner Accountability Circle</span>
+          </div>
+          <h4 class="rf-title">Private Friends Circle</h4>
+          <p class="rf-subtitle">
+            Your personal, persistent list of verified study buddies and accountability partners, organized in a sleek
+            Discord-inspired side panel.
+          </p>
+          <ul class="rf-list">
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Permanent Friend IDs:</strong> Connect using your unique Calcium Friend ID. Your friends persist across visits in
+                your private browser vault.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Live Presence (Green Dot):</strong> Instant visual indicators reveal the exact second your study buddy opens their books
+                and sits down to revise.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>1-Click Room Teleporting:</strong> When your friend starts or joins a live study room, their card displays the active
+                code with an instant <em>"Teleport &amp; Join"</em> button.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>Distraction-Free Direct Messages:</strong> Send quick study check-ins, Pomodoro alerts, and doubts peer-to-peer without
+                falling into social media doomscrolling traps.
+              </div>
+            </li>
+            <li>
+              <span class="bullet-dot"></span>
+              <div>
+                <strong>100% Client-Side Privacy:</strong> Your friend list and conversations live in your private browser storage. Back up or
+                restore anytime via single-click JSON export.
+              </div>
+            </li>
+          </ul>
+          <div class="rf-footer-tag">
+            <span>⚡ Best For:</span> Daily accountability partners, best friends, library circles &amp; peer coaching
+          </div>
+        </article>
+
+      </div>
+
+      <!-- COMPARISON MATRIX TABLE -->
+      <div style="margin-top: 35px;">
+        <h3 style="font-size: 1.25rem; font-weight: 800; color: #f8fafc; margin-bottom: 6px;">
+          📊 Quick Comparison Matrix: Rooms &amp; Friends
+        </h3>
+        <p style="font-size: 0.92rem; color: #94a3b8; margin-bottom: 16px;">
+          At-a-glance guide to visibility, security controls, and admission across public and private modes.
+        </p>
+
+        <div class="matrix-wrap">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Feature / Aspect</th>
+                <th>Public Open Rooms</th>
+                <th>Public Protected Rooms</th>
+                <th>Private Stealth Rooms</th>
+                <th>Public Social Lobby</th>
+                <th>Private Friends Circle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="matrix-feature-name">Lobby Visibility</td>
+                <td><span class="tag-pill open">Yes</span> Broadcasted live</td>
+                <td><span class="tag-pill locked">Yes</span> Marked with 🔒</td>
+                <td><span class="tag-pill private">No</span> Completely unlisted</td>
+                <td><span class="tag-pill open">Yes</span> Community tab</td>
+                <td><span class="tag-pill private">No</span> Private sidebar only</td>
+              </tr>
+              <tr>
+                <td class="matrix-feature-name">Admission Method</td>
+                <td>1-Click direct entry (<code>🚀 Join</code>)</td>
+                <td>Host Password OR <em>"🙋 Ask to Join"</em></td>
+                <td>Shared 4-digit code + Host Password</td>
+                <td>Send Friend Request</td>
+                <td>Instant ID Add / Auto-Sync</td>
+              </tr>
+              <tr>
+                <td class="matrix-feature-name">Host Gatekeeping</td>
+                <td>In-room kick &amp; mute</td>
+                <td>Cyber-Glass Admit / Decline popup</td>
+                <td>Full password lock &amp; invite control</td>
+                <td>Visibility toggle (On / Off)</td>
+                <td>Unfriend / Block anytime</td>
+              </tr>
+              <tr>
+                <td class="matrix-feature-name">Presence / Status</td>
+                <td>Live room member counter</td>
+                <td>Live room member counter</td>
+                <td>Active peer roster</td>
+                <td>Course level &amp; study target</td>
+                <td>Real-time green dot &amp; 1-click teleport</td>
+              </tr>
+              <tr>
+                <td class="matrix-feature-name">Primary Goal</td>
+                <td>Break isolation, virtual library</td>
+                <td>Safe group study with screening</td>
+                <td>Close friends, batchmates, mock tests</td>
+                <td>Discover new CA study partners</td>
+                <td>Daily long-term accountability</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <!-- PHILOSOPHY / WHY CALCIUM -->
     <section class="philosophy-card">
       <div class="philosophy-grid">
@@ -1014,10 +1642,10 @@
 
         <div class="step-card">
           <div class="step-badge">2</div>
-          <h3 class="step-title">Start or Join a Live Study Room</h3>
+          <h3 class="step-title">Choose Your Co-Study Arena</h3>
           <p class="step-desc">
-            Launch Calcium Meet with 1 click or enter your friend's 4-digit code (e.g. <code>CA-7926</code>).
-            Connect audio/video or co-study quietly in solo focus mode.
+            Browse the Live Public Lobby for open or password-protected rooms, enter a private 4-digit code (e.g. <code>CA-7926</code>),
+            or 1-click teleport to a study friend. Connect audio/video or co-study quietly with synchronized timers.
           </p>
         </div>
 
@@ -1090,6 +1718,36 @@
 
       <div class="faq-item">
         <button class="faq-question" type="button">
+          <span>What is the difference between Public and Private study rooms?</span>
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <strong>Public rooms</strong> are broadcasted live to the Study Squad lobby on the homepage via real-time MQTT pulses so any student can discover active study sessions. They can be <em>Open</em> (instant 1-click entry) or <em>Protected</em> (requires host password or host approval). In contrast, <strong>Private rooms</strong> are completely unlisted and invisible from the public lobby; they can only be accessed by peers who possess the secret 4-digit room code (e.g. <code>CA-4829</code>) or direct WhatsApp invite link.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>How does the "Ask to Join" (Knock &amp; Admit) feature work?</span>
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          When a public room is marked as <strong>🔒 Protected</strong>, students who don't have the password can click <strong>"🙋 Ask to Join"</strong>. This sends an instant WebRTC knock request to the room host. The host receives a floating Cyber-Glass banner with a bell chime showing the student's name, with one-tap buttons to <strong>"✅ Admit"</strong> or <strong>"✕ Decline"</strong>. If admitted, the guest connects automatically without typing a password.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          <span>How do Public Friends and Private Friends work in Calcium Social?</span>
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Inside Calcium Social (<code>frid.html</code>), the <strong>Public Community Lobby</strong> allows you to discover active CA aspirants across India, view their revision targets and courses, and send study friend requests. Your <strong>Private Friends</strong> list keeps your accepted accountability partners saved permanently in your browser storage with live green-dot online presence and a 1-click <em>"Teleport &amp; Join"</em> shortcut into their active study room.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button">
           <span>Can I use Calcium Notes on my iPad, tablet, or phone?</span>
           <span class="toggle-icon">+</span>
         </button>
@@ -1121,6 +1779,7 @@
     <footer class="site-footer">
       <div class="footer-links">
         <a href="./index.html">Home</a>
+        <a href="#rooms-and-friends">Rooms &amp; Friends</a>
         <a href="./aboutca.html">The CA Blueprint</a>
         <a href="./bin/Resources/resources.html">Resources &amp; Notes</a>
         <a href="./contract.html">Contact Us</a>
