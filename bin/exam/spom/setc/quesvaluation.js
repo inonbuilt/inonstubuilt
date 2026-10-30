@@ -9430,7 +9430,1347 @@ const caseStudies = [
     ],
     answer: 2,
     reason: "Approach selection requires consideration of the purpose, basis and premise of valuation, the nature of the asset, the reliability of available inputs, the strengths and weaknesses of each approach, and applicable requirements. Limited data alone does not automatically determine the appropriate approach."
-  }
+  },
+  {
+    case_id: "valu_ch3_CS41",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>ABC Limited is estimating the value of its business using the Discounted Cash Flow Method. The valuation professional has prepared cash flow projections for an explicit forecast period and is required to estimate the value of the business beyond that period.</p>
+      <p>The professional considers the Gordon Growth Model, the Exit Multiple method and the Salvage or Liquidation Value method. The company is expected to continue operating as a going concern, although the possibility of liquidation is also examined as an alternative situation.</p>
+    `,
+    questions: [
+      {
+        question: "Which method estimates Terminal Value by applying market multiples such as EV/EBITDA or EV/Sales?",
+        options: [
+          "Gordon Growth Model",
+          "Exit Multiple method",
+          "Discounted Future Earnings Method",
+          "Replacement Cost Method"
+        ],
+        answer: 1,
+        reason: "The Exit Multiple method estimates Terminal Value by applying Market Multiples, such as EV/EBITDA and EV/Sales, to the perpetuity earnings or income."
+      },
+      {
+        question: "When is the Salvage or Liquidation Value method generally used to estimate Terminal Value?",
+        options: [
+          "When the company is expected to continue indefinitely as a going concern",
+          "When the company has a consistently increasing market share",
+          "When the company is expected to cease operations and go into liquidation",
+          "When comparable companies have higher EBITDA multiples"
+        ],
+        answer: 2,
+        reason: "The Salvage or Liquidation Value method is used when the relevant Company, Entity or Firm will no longer operate as a going concern and might cease operations and go into liquidation."
+      },
+      {
+        question: "Under the Gordon Growth Model, how is Terminal Value generally calculated?",
+        options: [
+          "Expected FCF (n+1) divided by the difference between the Discount Rate and Expected Growth Rate",
+          "Current Book Value divided by the number of equity shares",
+          "EBITDA multiplied by the historical tax rate",
+          "Total Assets less Current Liabilities"
+        ],
+        answer: 0,
+        reason: "The chapter gives the formula for Terminal Value under the Gordon Growth Model as Expected FCF (n+1) ÷ (Discount Rate – Expected Growth Rate)."
+      },
+      {
+        question: "Under the Salvage or Liquidation Value method, how is Terminal Value determined?",
+        options: [
+          "By multiplying the last year's cash flow by the market share",
+          "By applying the company's P/E multiple to its book value",
+          "By adding all future earnings without discounting",
+          "By determining the Salvage or Realizable Value of Assets less the costs of disposal"
+        ],
+        answer: 3,
+        reason: "The Terminal Value is calculated by determining the Salvage or Realizable Value of all the Assets less the costs to be incurred for disposing of such Assets."
+      },
+      {
+        question: "What may happen when an unrealistic Long-term Growth Rate is assumed while determining Terminal Value?",
+        options: [
+          "It eliminates the need to estimate future cash flows",
+          "It ensures that the business value remains equal to Book Value",
+          "It can imply that the business will continue to grow ad-infinitum, which is almost impossible for a company",
+          "It ensures that the Terminal Value will be lower than the Book Value"
+        ],
+        answer: 2,
+        reason: "The chapter explains that assuming a Growth Rate higher than prevalent Long-term inflationary estimates implies that the business will continue to grow ad-infinitum, which has proven to be almost impossible for any company, entity or firm."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS42",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>LMN Limited is considering a valuation of its business using the Discounted Future Earnings Method. The valuation professional obtains historical financial data, studies industry trends and considers the company's future expectations to prepare earnings projections for the next five years.</p>
+      <p>The professional selects a discount rate after considering the company's risk profile, prevailing interest rates, market conditions and industry benchmarks. The projected future earnings are discounted to their present value and the resulting amounts are aggregated.</p>
+    `,
+    questions: [
+      {
+        question: "What is the primary purpose of the Discounted Future Earnings Method?",
+        options: [
+          "To determine the historical cost of the company's assets",
+          "To estimate the replacement cost of the company's liabilities",
+          "To estimate the present value of a company's future earnings",
+          "To determine only the market price of its equity shares"
+        ],
+        answer: 2,
+        reason: "The Discounted Future Earnings Method is a valuation technique used to estimate the present value of a company's future earnings."
+      },
+      {
+        question: "On what basis are future earnings generally forecast under the Discounted Future Earnings Method?",
+        options: [
+          "Only on the basis of the company's current number of employees",
+          "Historical financial data, industry trends and future expectations",
+          "Only on the basis of the company's historical purchase price",
+          "Only on the basis of the current market price of its shares"
+        ],
+        answer: 1,
+        reason: "The chapter explains that future earnings are forecast based on historical financial data, industry trends and future expectations."
+      },
+      {
+        question: "Which of the following is a factor considered while selecting the discount rate under this method?",
+        options: [
+          "The company's risk profile",
+          "The number of suppliers alone",
+          "The company's registered office address alone",
+          "The historical number of shares issued alone"
+        ],
+        answer: 0,
+        reason: "The discount rate is chosen based on factors such as the company's risk profile, prevailing interest rates, market conditions and industry benchmarks."
+      },
+      {
+        question: "What is done after the projected future earnings have been discounted to their present values?",
+        options: [
+          "Only the highest projected earning is selected",
+          "The present values are ignored and the historical earnings are used",
+          "The projected earnings are added without considering their present values",
+          "The present values of all projected future earnings are summed"
+        ],
+        answer: 3,
+        reason: "Under the Summation step, the present values of all projected future earnings are summed to arrive at the total present value of the company's future earnings."
+      },
+      {
+        question: "Which of the following is a limitation or requirement of the Discounted Future Earnings Method?",
+        options: [
+          "It does not require any earnings forecast",
+          "It requires accurate earnings forecasts and careful consideration of the discount rate",
+          "It can only be used for companies undergoing liquidation",
+          "It does not consider the present value of future earnings"
+        ],
+        answer: 1,
+        reason: "The chapter states that the method requires accurate earnings forecasts and careful consideration of the discount rate to ensure the reliability of the valuation. It also mentions that it should be used in conjunction with other valuation techniques for a more robust analysis."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS43",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>BrandCo Limited owns a well-known brand used in the sale of consumer products. A valuation professional is required to estimate the value of the brand using the Relief From Royalty Method.</p>
+      <p>The professional assumes that the brand is not owned by the business but is licensed from a third party. The professional estimates the revenue attributable to the brand, selects an appropriate royalty rate based on similar intangible asset transactions and discounts the after-tax royalty savings to arrive at the Present Value.</p>
+    `,
+    questions: [
+      {
+        question: "What is the basic assumption underlying the Relief From Royalty Method?",
+        options: [
+          "The intangible asset is always sold separately from the business",
+          "The intangible asset is assumed to be licensed from a third party rather than owned by the business",
+          "The intangible asset has no economic benefit",
+          "The intangible asset is valued only at its historical cost"
+        ],
+        answer: 1,
+        reason: "The Relief From Royalty Method assumes that the Intangible Asset is not owned by the branded business but is licensed from a third party."
+      },
+      {
+        question: "How is the value of an intangible asset generally determined under the Relief From Royalty Method?",
+        options: [
+          "By adding the historical cost of all tangible assets",
+          "By multiplying the number of employees by annual salary",
+          "By determining the Present Value of the royalty payments saved by virtue of owning the intangible asset",
+          "By deducting all liabilities from the Book Value of the business"
+        ],
+        answer: 2,
+        reason: "The Intangible Asset Value is deemed to be the Present Value of the royalty payments saved by virtue of owning the Intangible Asset."
+      },
+      {
+        question: "Which of the following represents the key factors to be considered while using the Relief From Royalty Method?",
+        options: [
+          "Number of employees, office area and electricity consumption",
+          "Book Value, historical cost and proposed dividend",
+          "Market share, number of branches and total liabilities only",
+          "Revenue Projections, Discount Rate and appropriate Royalty Rate"
+        ],
+        answer: 3,
+        reason: "The chapter identifies Revenue Projections, Discount Rate and appropriate Royalty Rate as the key factors to be considered while using the Relief From Royalty Method."
+      },
+      {
+        question: "The Relief From Royalty Method is described in the chapter as a typical combination of which approaches?",
+        options: [
+          "Market Approach and Income Approach",
+          "Asset-Based Approach and Cost Approach only",
+          "Historical Cost Approach and Liquidation Approach",
+          "Income Approach and Book Value Approach only"
+        ],
+        answer: 0,
+        reason: "The chapter describes the Relief From Royalty Method as a typical combination of the Market Approach and Income Approach, where value is determined based on avoided cost."
+      },
+      {
+        question: "Which of the following should be considered while analysing Royalty Rates?",
+        options: [
+          "Only the number of directors of the licensee",
+          "Only the age of the business",
+          "The rights granted, including geography, term and usage",
+          "Only the Book Value of the licensee's fixed assets"
+        ],
+        answer: 2,
+        reason: "The chapter identifies Rights, including geography, term and usage, as a factor to be considered while analysing Royalty Rates."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS44",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>TechNova Limited owns several intangible assets, including customer relationships, technology and intellectual property. One particular intangible asset is considered to be the leading and most significant asset in the group of assets being valued.</p>
+      <p>The valuation professional applies the Multi-Period Excess Earnings Method. The professional obtains projections of future after-tax cash flows, examines the assumptions and deducts Contributory Asset Charges relating to the other operating assets used to generate the earnings.</p>
+    `,
+    questions: [
+      {
+        question: "For which type of intangible asset is the Multi-Period Excess Earnings Method generally used?",
+        options: [
+          "An intangible asset that has no contribution to the business",
+          "An asset that is always valued at historical cost",
+          "An asset that is required to be valued only through liquidation",
+          "A leading or the most significant intangible asset out of a group of intangible assets being valued"
+        ],
+        answer: 3,
+        reason: "The Multi-Period Excess Earnings Method is generally used for valuing an Intangible Asset that is the leading or the most significant Intangible Asset out of a group of Intangible Assets being valued."
+      },
+      {
+        question: "Which approach does the Multi-Period Excess Earnings Method adopt for estimating the income expected to be generated by the intangible asset?",
+        options: [
+          "Historical Cost Approach",
+          "Residual Approach",
+          "Liquidation Approach",
+          "Replacement Cost Approach"
+        ],
+        answer: 1,
+        reason: "The MEEM Method adopts a Residual Approach for estimating the income that an Intangible Asset is expected to generate."
+      },
+      {
+        question: "What is the purpose of Contributory Asset Charges under the MEEM Method?",
+        options: [
+          "To increase the total net after-tax cash flows without adjustment",
+          "To replace the discount rate used in valuation",
+          "To deduct the charges for the use of other assets that contribute to the realization of cash flows",
+          "To calculate only the historical cost of the intangible asset"
+        ],
+        answer: 2,
+        reason: "Contributory Asset Charges or Economic Rents are subtracted from the total net after-tax cash flows estimated for the entity or combined asset group to determine the additional after-tax cash flows due to the intangible asset being valued."
+      },
+      {
+        question: "Which of the following is a Contributory Asset that may be considered while calculating Contributory Asset Charges?",
+        options: [
+          "Working capital",
+          "Proposed dividend only",
+          "Share premium account only",
+          "Historical sales price only"
+        ],
+        answer: 0,
+        reason: "The chapter identifies working capital, fixed assets, assembled workforce and other intangibles as examples of assets for which Contributory Asset Charges may be considered."
+      },
+      {
+        question: "Which of the following intangible assets is frequently valued using the MEEM Method?",
+        options: [
+          "Cash and cash equivalents",
+          "Customer relationship assets",
+          "Trade payables",
+          "Proposed dividends"
+        ],
+        answer: 1,
+        reason: "The chapter states that customer relationship assets, technology and IPR&D are among the Intangible Assets frequently valued using the MEEM Method."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS45",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Prime Ltd is evaluating the value of a non-compete arrangement entered into with a former business owner. The arrangement is expected to remain effective for five years.</p>
+      <p>The valuation professional prepares two sets of projected cash flows. The first relates to the business with all its assets, including the non-compete arrangement. The second relates to the business with all its assets except the non-compete arrangement. The difference between the projected cash flows is discounted to arrive at the Present Value.</p>
+    `,
+    questions: [
+      {
+        question: "Which valuation method is being applied by Prime Ltd for valuing the non-compete arrangement?",
+        options: [
+          "Relief From Royalty Method",
+          "Replacement Cost Method",
+          "With and Without Method",
+          "Multi-Period Excess Earnings Method"
+        ],
+        answer: 2,
+        reason: "The chapter identifies the With and Without Method as a method used for valuing intangible assets and specifically mentions non-compete arrangements as commonly valued using this method."
+      },
+      {
+        question: "Under the With and Without Method, what is compared to determine the value of the intangible asset?",
+        options: [
+          "The projected cash flows of the business with the asset and without the asset",
+          "The historical cost of the asset and its Book Value",
+          "The market price of the business and its liquidation value",
+          "The revenue of two unrelated companies"
+        ],
+        answer: 0,
+        reason: "The With and Without Method determines value through the Present Value of the difference between expected cash flows under two scenarios: a business with the intangible asset and a business without that intangible asset."
+      },
+      {
+        question: "Which two scenarios are required under the With and Without Method?",
+        options: [
+          "Business with only tangible assets and business with only liabilities",
+          "Business before incorporation and business after incorporation",
+          "Business with debt and business without equity",
+          "Business with all assets including the intangible asset, and business with all assets except that intangible asset"
+        ],
+        answer: 3,
+        reason: "The chapter requires comparison between a business that has all its assets in place including the intangible asset being valued, and a business that has all its assets in place but not the intangible asset being valued."
+      },
+      {
+        question: "What is the value of the intangible asset under the With and Without Method based on?",
+        options: [
+          "The Book Value of the asset alone",
+          "The Present Value of the difference between the expected cash flows under the two scenarios",
+          "The total historical expenditure incurred by the company",
+          "The average of the cash flows under the two scenarios"
+        ],
+        answer: 1,
+        reason: "The Present Value of the difference between the expected cash flows under the two scenarios determines the value of the intangible asset under the With and Without Method."
+      },
+      {
+        question: "What is done with the difference between the projected cash flows under the two scenarios?",
+        options: [
+          "It is ignored for valuation purposes",
+          "It is added to the historical cost of all assets",
+          "It is discounted using an appropriate Discount Rate to arrive at the Present Value",
+          "It is multiplied by the number of equity shares"
+        ],
+        answer: 2,
+        reason: "Under the With and Without Method, the difference between the projected cash flows under both scenarios is discounted using an appropriate Discount Rate to arrive at the Present Value."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS46",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>RST Limited is an asset-intensive company holding substantial land, buildings and plant and machinery. Its future profits are difficult to determine because of business fluctuations. The valuer considers applying the Cost Approach to estimate the value of the business.</p>
+      <p>The valuation professional examines the current cost of replacing the service capacity of the assets and considers whether the Cost Approach is appropriate in the circumstances. The professional also evaluates the limitations of this approach when valuing a going concern business.</p>
+    `,
+    questions: [
+      {
+        question: "What does the Cost Approach primarily seek to determine?",
+        options: [
+          "The present value of future dividends alone",
+          "The value of a business based only on its market share",
+          "The value of the business based only on the company's annual sales",
+          "How much would now be needed to replace an asset's service capacity"
+        ],
+        answer: 3,
+        reason: "The Cost Approach, also known as current replacement cost, is a valuation method that shows how much would now be needed to replace an asset's service capacity."
+      },
+      {
+        question: "Which type of entity is identified in the chapter as suitable for the Cost Approach?",
+        options: [
+          "An entity whose value is determined only by its dividend history",
+          "An asset-intensive entity",
+          "An entity whose assets are irrelevant to its operations",
+          "An entity that must always be valued using the P/E ratio"
+        ],
+        answer: 1,
+        reason: "The chapter identifies asset-intensive entities, holding companies, distressed entities and entities that are not worth more than their overall Net Tangible Value as suitable for the Cost Approach."
+      },
+      {
+        question: "Which of the following is an application of the Cost Approach?",
+        options: [
+          "Determining value only by comparing employee salaries",
+          "Estimating value only from the historical growth in sales",
+          "Determining Liquidation Value",
+          "Estimating value only by using the company's dividend payout ratio"
+        ],
+        answer: 2,
+        reason: "The chapter identifies cases where Liquidation Value is to be determined as one of the applications of the Cost Approach."
+      },
+      {
+        question: "Which of the following is a limitation of the Cost Approach?",
+        options: [
+          "It ignores the Amount, Duration and Timing of Future Economic Benefits arising from the Asset",
+          "It always overstates the market value of every asset",
+          "It requires all future cash flows to be discounted",
+          "It considers every risk characteristic of the asset in detail"
+        ],
+        answer: 0,
+        reason: "One of the limitations stated in the chapter is that the Cost Approach ignores the Amount, Duration and Timing of Future Economic Benefits arising from the Asset."
+      },
+      {
+        question: "Which statement about the Cost Approach is correct?",
+        options: [
+          "It is always the most preferred method for estimating Enterprise Value of a going concern business",
+          "It is not the most preferred method for estimating Enterprise Value of a going concern business",
+          "It can be used only for valuing intangible assets",
+          "It does not involve the valuation of assets"
+        ],
+        answer: 1,
+        reason: "The chapter specifically states that the Cost Approach is not the most preferred method for estimating Enterprise Value of a going concern business."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS47",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Delta Engineering Limited owns a specialised machine that is required for its manufacturing operations. The valuer estimates the cost that a Market Participant would incur to recreate an asset having substantially the same utility as the existing machine.</p>
+      <p>In a separate assessment, the valuer considers the cost of creating an exact replica of another asset. The valuer also examines physical deterioration, technological developments and external economic factors that may reduce the value of the assets.</p>
+    `,
+    questions: [
+      {
+        question: "What is the main feature of the Replacement Cost Method?",
+        options: [
+          "It estimates the cost of recreating an asset with substantially the same Utility as the asset being valued",
+          "It estimates the cost of creating an exact replica in every respect",
+          "It considers only the historical purchase price of the asset",
+          "It determines value only by using future dividend projections"
+        ],
+        answer: 0,
+        reason: "The Replacement Cost Method involves valuing an Asset based on the cost that a Market Participant would incur to recreate an Asset with substantially the same Utility, or Comparable Utility, as the Asset being valued, adjusted for Obsolescence."
+      },
+      {
+        question: "What is the main feature of the Reproduction Cost Method?",
+        options: [
+          "It determines the Net Realizable Value of inventory",
+          "It estimates the Present Value of future earnings",
+          "It estimates the cost that a Market Participant would incur to recreate a Replica of the asset being valued",
+          "It estimates the market price of comparable businesses"
+        ],
+        answer: 2,
+        reason: "The Reproduction Cost Method involves valuing an Asset based on the cost that a Market Participant would incur to recreate a Replica of the Asset being valued, adjusted for Obsolescence."
+      },
+      {
+        question: "Which of the following is an example of Physical Obsolescence?",
+        options: [
+          "Loss in value due to a change in environmental regulations",
+          "Loss in value due to the availability of more efficient replacement assets",
+          "Loss in value due to an increase in market interest rates",
+          "Loss in value due to decreased usefulness as the useful life of the asset expires"
+        ],
+        answer: 3,
+        reason: "Physical Obsolescence represents the loss in Value on account of decreased usefulness of the asset as the useful life expires."
+      },
+      {
+        question: "The existing machine becomes inefficient because newer and more efficient technology is available. What type of Obsolescence does this represent?",
+        options: [
+          "Physical Obsolescence",
+          "Functional (technological) Obsolescence",
+          "Economic (external) Obsolescence",
+          "Marketability Obsolescence"
+        ],
+        answer: 1,
+        reason: "Functional (technological) Obsolescence represents the loss in Value on account of new technological developments, whereby the Asset to be Valued becomes inefficient due to the availability of more efficient replacement assets."
+      },
+      {
+        question: "Which sequence represents the major steps in deriving value under the Replacement Cost or Reproduction Cost Method?",
+        options: [
+          "Estimate historical earnings, calculate dividends and determine market capitalisation",
+          "Determine market share, calculate tax and estimate book profits",
+          "Estimate costs, assess physical, functional or economic obsolescence, and adjust for Obsolescence Value",
+          "Calculate future sales, deduct proposed dividends and add reserves"
+        ],
+        answer: 2,
+        reason: "The chapter identifies three major steps: estimating the costs of creating an asset with Comparable Utility or replicating an existing asset, assessing physical, functional or economic obsolescence, and adjusting the estimated costs for the Obsolescence Value, if any."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS48",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>LMN Industries Limited is being valued on a going concern basis. The valuer reviews its fixed assets, inventory, sundry debtors and other assets. The company also has certain preference shares and contingent liabilities that may affect the value attributable to its equity shareholders.</p>
+      <p>The valuer considers the Net Replacement Value of the assets, the appropriate valuation basis for inventory, the recovery risk associated with sundry debtors and the treatment of liabilities before arriving at the value attributable to the equity shareholders.</p>
+    `,
+    questions: [
+      {
+        question: "When an entity is valued on a going concern basis, which value of assets gives a fair measure of their Current Value?",
+        options: [
+          "Historical Purchase Value",
+          "Face Value",
+          "Liquidation Value in every situation",
+          "Net Replacement Value"
+        ],
+        answer: 3,
+        reason: "The chapter states that when an entity is valued on a going concern basis, the Net Replacement Value of the Assets gives a fair measure of their Current Value."
+      },
+      {
+        question: "Where an entity is being wound up, on what basis are its assets best valued?",
+        options: [
+          "Net Replacement Value",
+          "Net Realizable Value",
+          "Historical Cost only",
+          "Original Issue Price"
+        ],
+        answer: 1,
+        reason: "The chapter states that where an entity is being wound up, its Assets are best valued based on their Net Realizable Value."
+      },
+      {
+        question: "Depending on the purpose and need for valuation, how may inventory be valued?",
+        options: [
+          "At cost, with due allowance for obsolete or unusable stocks, at Current Market Prices or at Net Realizable Value",
+          "Only at the original purchase price without any adjustment",
+          "Only at the selling price of the company's shares",
+          "Only at the Book Value of the entire business"
+        ],
+        answer: 0,
+        reason: "The chapter explains that inventory may be valued based on Cost with suitable allowance or adjustment for obsolete, unusable or unmarketable stocks, Current Market Prices, or Net Realizable Value, depending on the purpose and need for valuation."
+      },
+      {
+        question: "While valuing Sundry Debtors, which factors should be considered?",
+        options: [
+          "Only the number of customers",
+          "Only the original invoice value",
+          "The Time Value of recovery and appropriate allowance or adjustment towards credit risk",
+          "Only the market price of the company's equity shares"
+        ],
+        answer: 2,
+        reason: "The chapter states that Sundry Debtors may be valued considering the Time Value of recovery and after making appropriate allowance or adjustment towards credit risk, including bad debts and debts doubtful of recovery."
+      },
+      {
+        question: "While valuing Equity Shares, how should the dues of Preference Shareholders be treated?",
+        options: [
+          "They should always be added to the value attributable to Equity Shareholders",
+          "They should be reduced from Enterprise Value to determine the value attributed to Equity Shareholders",
+          "They should be ignored in every valuation",
+          "They should be treated as revenue from operations"
+        ],
+        answer: 1,
+        reason: "The chapter states that while valuing Equity Shares, the dues of Preference Shareholders have to be reduced from the Enterprise Value to determine the Value attributed to the Equity Shareholders."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS49",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Orion Limited requires a valuation of one of its business assets as at a specified Valuation Date. The valuation professional considers the price that would be received to sell the asset in an orderly transaction between Market Participants.</p>
+      <p>The professional identifies the Principal Market, considers the assumptions of Market Participants and reviews the condition, location and restrictions associated with the asset. The professional also confirms that the assumed transaction is not a forced transaction.</p>
+    `,
+    questions: [
+      {
+        question: "Which statement correctly describes Fair Value as discussed in the chapter?",
+        options: [
+          "The historical cost paid to acquire an asset",
+          "The amount at which an asset is recorded in the books in every circumstance",
+          "The price that would be received to sell an Asset or paid to transfer a Liability in an orderly transaction between Market Participants at the Valuation Date",
+          "The amount of cash originally invested by the owner"
+        ],
+        answer: 2,
+        reason: "The chapter defines Fair Value as the price that would be received to sell an Asset or paid to transfer a Liability in an orderly transaction between Market Participants at the Valuation Date."
+      },
+      {
+        question: "Fair Value is based on which type of price?",
+        options: [
+          "Exit Price",
+          "Historical Purchase Price",
+          "Original Issue Price",
+          "Book Value only"
+        ],
+        answer: 0,
+        reason: "One of the key aspects of Fair Value identified in the chapter is that Fair Value is based on the Exit Price."
+      },
+      {
+        question: "What is an Orderly Transaction?",
+        options: [
+          "A transaction in which the seller is forced to sell immediately",
+          "A transaction in which the buyer is compelled to purchase the asset",
+          "A transaction that takes place without any market exposure",
+          "A transaction that assumes exposure to the market for a period before the Valuation Date and is not a forced transaction"
+        ],
+        answer: 3,
+        reason: "An Orderly Transaction assumes exposure to the market for a period before the Valuation Date to allow for marketing activities that are usual and customary for transactions involving such Assets or Liabilities. It is not a forced transaction."
+      },
+      {
+        question: "Which of the following is a characteristic of Market Participants?",
+        options: [
+          "They must be related parties",
+          "They are knowledgeable and have a reasonable understanding of the Asset or Liability and the transaction",
+          "They must be forced to enter into the transaction",
+          "They are not required to have the ability to enter into a transaction"
+        ],
+        answer: 1,
+        reason: "The chapter explains that Market Participants are independent, knowledgeable, able to enter into a transaction and willing to enter into a transaction, without being forced or otherwise compelled to do so."
+      },
+      {
+        question: "Which of the following is a characteristic of an Asset that may be considered in Fair Value measurement?",
+        options: [
+          "Only the number of employees",
+          "Only the annual turnover of the owner",
+          "Condition, Location and Restrictions associated with Sale or Use",
+          "Only the historical cost of acquisition"
+        ],
+        answer: 2,
+        reason: "The chapter states that Fair Value measurements should consider the characteristics of the Asset or Liabilities being valued, such as Condition, Location and Restrictions associated with Sale or Use."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS50",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>HealthFirst Limited is being valued using the Market-Based Approach. The valuer identifies three companies operating in similar business lines and compares their financial information, including Enterprise Value, EBITDA, Earnings and Sales.</p>
+      <p>The valuer considers the selection of an appropriate peer group, the use of relevant valuation multiples and the importance of using forward estimates of earnings. The valuer also reviews non-operating assets and unusual items to improve the comparability of the multiples.</p>
+    `,
+    questions: [
+      {
+        question: "Why is selecting the appropriate peer group important when using the Market-Based Approach?",
+        options: [
+          "It eliminates the need to examine the financial information of the subject company",
+          "It helps in arriving at a reasonable valuation using multiples by comparing companies operating in relevant or identical business lines",
+          "It ensures that every company will have the same Enterprise Value",
+          "It ensures that all companies will have the same capital structure"
+        ],
+        answer: 1,
+        reason: "The chapter explains that selecting the right peer group is critical to arriving at a reasonable valuation using multiples. The case study considers companies operating in identical business lines and products."
+      },
+      {
+        question: "Which of the following is a commonly used valuation multiple discussed in the market-based case study?",
+        options: [
+          "Number of employees divided by total assets",
+          "Total liabilities divided by number of directors",
+          "Enterprise Value divided by EBITDA",
+          "Inventory divided by number of shareholders"
+        ],
+        answer: 2,
+        reason: "The case study includes EV ÷ EBITDA as one of the valuation multiples used to compare the companies."
+      },
+      {
+        question: "Why may the P/E ratio be a less reliable guide to companies' relative value than EV/EBITDA or NOPAT comparisons?",
+        options: [
+          "Because P/E does not consider the number of shares",
+          "Because P/E can be distorted by capital structure and non-operating or unusual gains and losses",
+          "Because P/E is always equal to EV/EBITDA",
+          "Because P/E can only be used for companies under liquidation"
+        ],
+        answer: 1,
+        reason: "The chapter explains that P/E is distorted by capital structure and non-operating or unusual gains and losses. It also explains that comparing Enterprise Value to EBITDA or NOPAT reduces the chances of multiples being distorted."
+      },
+      {
+        question: "While building forward-looking multiples, what should preferably be used as the denominator?",
+        options: [
+          "A forecast of profits, preferably normalized for unusual items",
+          "Only the original share capital of the company",
+          "Only the historical purchase price of assets",
+          "The total number of employees"
+        ],
+        answer: 0,
+        reason: "The chapter explains that while building multiples, the denominator should preferably be a forecast of profits, normalized for unusual items, rather than historical profits."
+      },
+      {
+        question: "Which item should generally be removed from Enterprise Value when it does not contribute to EBITDA?",
+        options: [
+          "Assets and liabilities that generate EBITDA",
+          "Operating assets that contribute to continuing operations",
+          "Non-operating assets that do not contribute to EBITDA",
+          "All assets used in generating operating earnings"
+        ],
+        answer: 2,
+        reason: "The chapter states that, as a standard procedure, any non-operating asset that does not contribute to EBITDA should be removed from Enterprise Value. It also explains that the Enterprise Value should include the portion of value attributable to assets and liabilities that generate EBITDA."
+      }
+    ]
+  },
+  {
+    case_id: "valu_ch3_CS51",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>ABC Manufacturing Limited owns several fixed assets, including plant and machinery used in its production operations. A valuation professional is required to estimate the value of these assets under the Underlying Asset Approach.</p>
+      <p>The professional estimates the Replacement or Reproduction Cost of each asset, determines its Total Economic Life and Effective Age, and considers the effect of Obsolescence before arriving at the value of the assets.</p>
+    `,
+    questions: [
+      {
+        question: "What should be estimated first while determining the value of fixed assets under the procedure discussed in the chapter?",
+        options: [
+          "The proposed dividend payable by the company",
+          "The Replacement or Reproduction Cost of the Asset",
+          "The future market share of the company",
+          "The number of equity shareholders"
+        ],
+        answer: 1,
+        reason: "The first step for valuing fixed assets is to estimate the Replacement or Reproduction Cost of the Asset."
+      },
+      {
+        question: "Which two factors should be estimated after determining the Replacement or Reproduction Cost of the Asset?",
+        options: [
+          "Market Capitalization and Enterprise Value",
+          "Book Value and Net Realizable Value",
+          "Total Economic Life and Effective Age of the Asset",
+          "Revenue Growth Rate and Tax Rate"
+        ],
+        answer: 2,
+        reason: "The chapter specifies that the Total Economic Life and Effective Age of the Asset should be estimated."
+      },
+      {
+        question: "How is the Replacement or Reproduction Cost adjusted to reflect Obsolescence related to the Effective Age?",
+        options: [
+          "By depreciating the Replacement or Reproduction Cost over the new Economic Life",
+          "By adding the proposed dividend to the Replacement Cost",
+          "By multiplying the cost by the number of equity shares",
+          "By deducting the company's total revenue"
+        ],
+        answer: 0,
+        reason: "The chapter specifies that the Replacement or Reproduction Cost is depreciated over the new Economic Life to reflect Obsolescence related to the Effective Age."
+      },
+      {
+        question: "After estimating depreciation for Obsolescence related to Effective Age, which further adjustment may be required?",
+        options: [
+          "Adjustment for proposed dividends",
+          "Adjustment for share capital",
+          "Adjustment for historical revenue",
+          "Adjustment for Additional Functional or Economic Obsolescence"
+        ],
+        answer: 3,
+        reason: "The final step in the fixed asset procedure is to adjust for Additional Functional or Economic Obsolescence."
+      },
+      {
+        question: "Which of the following correctly represents the sequence for valuing fixed assets?",
+        options: [
+          "Estimate Effective Age, calculate dividends, determine market share and deduct tax",
+          "Estimate Replacement or Reproduction Cost, estimate Total Economic Life and Effective Age, depreciate the cost, and adjust for Additional Functional or Economic Obsolescence",
+          "Determine Book Value, calculate Enterprise Value and add proposed dividends",
+          "Estimate revenue, calculate EBITDA and apply a P/E multiple"
+        ],
+        answer: 1,
+        reason: "The chapter describes the sequence as estimating Replacement or Reproduction Cost, estimating Total Economic Life and Effective Age, depreciating the cost to reflect Obsolescence related to Effective Age, and adjusting for Additional Functional or Economic Obsolescence."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS52",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>LMN Limited holds investments in shares and securities of several companies. Some of these securities are regularly traded on the BSE and NSE, while others are quoted but have only isolated transactions. The company also holds certain unquoted and infrequently traded shares.</p>
+      <p>The valuation professional examines the trading activity of the securities and considers whether quoted prices can be used or whether a Secondary Valuation is necessary. For certain unquoted and illiquid shares, the professional also considers the Relative Valuation Method and Income Approach.</p>
+    `,
+    questions: [
+      {
+        question: "How may shares and securities that are regularly traded on the BSE, NSE or another Stock Exchange be valued?",
+        options: [
+          "Only at their historical purchase cost",
+          "Only at their original issue price",
+          "Based on the prices quoted on the relevant Stock Exchange",
+          "Only by applying the Replacement Cost Method"
+        ],
+        answer: 2,
+        reason: "The chapter states that shares and securities regularly traded on the BSE, NSE or any other Stock Exchange may be valued based on the prices quoted thereat."
+      },
+      {
+        question: "Why should the valuer examine whether shares and securities are regularly traded?",
+        options: [
+          "Because an isolated transaction may lead to erroneous results",
+          "Because regularly traded shares cannot be valued using quoted prices",
+          "Because all securities must be valued at historical cost",
+          "Because trading activity determines the number of equity shares"
+        ],
+        answer: 0,
+        reason: "The chapter states that it must be seen that there is regular trading in those stocks, as an isolated transaction may lead to erroneous results."
+      },
+      {
+        question: "When may a Secondary Valuation be necessary for quoted shares with isolated transactions and unquoted shares?",
+        options: [
+          "Whenever the company has positive revenue",
+          "Only when the shares are traded every day",
+          "In every case, irrespective of the amount involved",
+          "If the amount is material"
+        ],
+        answer: 3,
+        reason: "The chapter states that in the case of quoted shares with isolated transactions and unquoted shares, a Secondary Valuation may be necessary if the amount is material."
+      },
+      {
+        question: "Which valuation methods may be used for unquoted and infrequently traded (illiquid) shares?",
+        options: [
+          "Historical Cost Method only",
+          "Relative Valuation Method or Income Approach",
+          "Salvage Value Method only",
+          "Reproduction Cost Method only"
+        ],
+        answer: 1,
+        reason: "The chapter states that unquoted shares and infrequently traded (illiquid) shares may be valued using the Relative Valuation Method or Income Approach."
+      },
+      {
+        question: "A company holds shares that are quoted on a Stock Exchange but have only isolated transactions. What should the valuer consider?",
+        options: [
+          "Automatically treating the last transaction price as a reliable value",
+          "Ignoring the materiality of the investment",
+          "Considering whether a Secondary Valuation is necessary, particularly where the amount is material",
+          "Valuing the shares only at their face value"
+        ],
+        answer: 2,
+        reason: "The chapter cautions that isolated transactions may lead to erroneous results and states that a Secondary Valuation may be necessary for quoted shares with isolated transactions if the amount is material."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS53",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>XYZ Limited has filed an escalation claim and an insurance claim in relation to its business operations. The company expects that some amount may be recovered from these claims. The valuation professional examines the possibility of recovery and the time frame within which the amounts are likely to be recovered.</p>
+      <p>The company is also executing a new project and plans to expand its existing production lines. The valuer reviews the Development Expenses incurred in connection with completing the project and the proposed expansion.</p>
+    `,
+    questions: [
+      {
+        question: "Which of the following is identified in the chapter as an example of a Contingent Asset?",
+        options: [
+          "An escalation claim made by the entity",
+          "An ordinary trade payable",
+          "A proposed dividend",
+          "A term loan payable"
+        ],
+        answer: 0,
+        reason: "The chapter identifies escalation claims, insurance claims and other similar claims as examples of Contingent Assets."
+      },
+      {
+        question: "How should the possibility of recovery of Contingent Assets be assessed?",
+        options: [
+          "On the assumption that the entire amount will definitely be recovered",
+          "Only based on the historical cost of the claim",
+          "Without considering the likelihood of recovery",
+          "Carefully and on a conservative basis"
+        ],
+        answer: 3,
+        reason: "The chapter states that the possibility of recovery of escalation claims, insurance claims or similar claims should be carefully assessed on a conservative basis."
+      },
+      {
+        question: "Which factor is particularly relevant while assessing the recovery of Contingent Assets?",
+        options: [
+          "The number of directors of the entity",
+          "The time frame within which the claims are likely to be recovered",
+          "The number of equity shares issued",
+          "The depreciation method adopted by the entity"
+        ],
+        answer: 1,
+        reason: "The chapter specifically states that the conservative assessment should have regard to the time frame in which the claims are likely to be recovered."
+      },
+      {
+        question: "In which situation may Development Expenses arise in the case of a new company?",
+        options: [
+          "When the company declares a dividend",
+          "When the company purchases listed shares",
+          "When the company is in the process of executing its project",
+          "When the company transfers its equity shares"
+        ],
+        answer: 2,
+        reason: "The chapter explains that Development Expenses may arise in the case of a new company when it is in the process of executing its project."
+      },
+      {
+        question: "When may Development Expenses arise in the case of an old company?",
+        options: [
+          "When there is an expansion of existing production lines or diversification for entering new business",
+          "Only when the company changes its registered office",
+          "Only when the company declares a dividend",
+          "When the company makes a repayment of equity share capital"
+        ],
+        answer: 0,
+        reason: "The chapter states that in the case of an old company, Development Expenses arise when there is an expansion of existing production lines or diversification for entering new business. The costs incurred for completing the project should be included."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS54",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Sunrise Limited owns several intangible assets, including goodwill, patents, trademarks and copyrights. Some of these assets are reflected in the company's books, while others have not been separately recorded.</p>
+      <p>The valuation professional reviews the intangible assets and considers their Book Value, Net Replacement Cost, Net Realizable Value or Fair Value, as applicable. The professional also examines the relationship between goodwill and the business being valued.</p>
+    `,
+    questions: [
+      {
+        question: "Should Intangible Assets be considered while valuing an entity if they are not reflected in its books?",
+        options: [
+          "No, only intangible assets recorded in the books can be considered",
+          "Only goodwill can be considered if recorded in the books",
+          "No, intangible assets are excluded under the Underlying Asset Approach",
+          "Yes, Intangible Assets should be considered whether or not they are reflected in the books"
+        ],
+        answer: 3,
+        reason: "The chapter states that Intangible Assets of an entity shall be considered, no matter whether they are reflected in the books or not."
+      },
+      {
+        question: "Which of the following is an example of an Intangible Asset identified in the chapter?",
+        options: [
+          "Trade payables",
+          "Patents",
+          "Cash in hand",
+          "Term loans"
+        ],
+        answer: 1,
+        reason: "The chapter identifies Goodwill, Patents, Trademarks and Copyrights as examples of Intangible Assets."
+      },
+      {
+        question: "Which of the following valuation bases may be considered for Intangible Assets?",
+        options: [
+          "Book Value, Net Replacement Cost, Net Realizable Value or Fair Value",
+          "Only the historical cost of tangible assets",
+          "Only the face value of equity shares",
+          "Only the liquidation cost of the entity"
+        ],
+        answer: 0,
+        reason: "The chapter states that the Book Value, Net Replacement Cost, Net Realizable Value or Fair Value of Intangible Assets has to be considered."
+      },
+      {
+        question: "Which statement correctly describes Goodwill as discussed in the chapter?",
+        options: [
+          "Goodwill is always separately identifiable from the business",
+          "Goodwill can always fetch a price even when the business is not sold",
+          "Goodwill is generally inseparable from the business",
+          "Goodwill is always valued at zero under the Underlying Asset Approach"
+        ],
+        answer: 2,
+        reason: "The chapter explains that Goodwill is generally inseparable from the business."
+      },
+      {
+        question: "When can Goodwill generally fetch a price according to the chapter?",
+        options: [
+          "Whenever the company purchases inventory",
+          "Only when the business is sold on a going concern basis",
+          "Whenever the company issues preference shares",
+          "Only when the company is under liquidation"
+        ],
+        answer: 1,
+        reason: "The chapter states that Goodwill is generally inseparable from the business and can fetch a price only if the business is sold on a going concern basis."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS55",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Delta Limited is undergoing valuation under the Underlying Asset Approach. The valuer examines the liabilities reflected in the company's books and identifies certain Contingent Liabilities that may arise from legal claims.</p>
+      <p>The review also identifies taxation liabilities and proposed dividends that have not been provided for in the accounts. Further, the company has set aside certain reserves to meet future losses, and the valuer examines whether these amounts should be treated as provisions.</p>
+    `,
+    questions: [
+      {
+        question: "What should generally be done with the liabilities reflected in the books of an entity?",
+        options: [
+          "They should be ignored in every valuation",
+          "They should automatically be treated as contingent liabilities",
+          "They should be added to the value of assets",
+          "They may generally be accepted after proper scrutiny"
+        ],
+        answer: 3,
+        reason: "The chapter states that the amount of Liabilities reflected in the books of the entity may generally be accepted after proper scrutiny."
+      },
+      {
+        question: "What should the valuer consider while assessing Contingent Liabilities?",
+        options: [
+          "Only the company's annual turnover",
+          "Due consideration to Contingent Liabilities and a legal opinion on the sustainability of the claims",
+          "Only the historical cost of the assets",
+          "Only the number of outstanding equity shares"
+        ],
+        answer: 1,
+        reason: "The chapter states that due consideration should be given to Contingent Liabilities and the necessary legal opinion should be sought for ascertaining the sustainability of such claims or Contingent Liabilities."
+      },
+      {
+        question: "How may a valuer arrive at the Fair Value of a Contingent Liability?",
+        options: [
+          "By applying a probability factor",
+          "By ignoring the possibility of the liability becoming an actual liability",
+          "By adding the liability to the company's revenue",
+          "By multiplying the liability by the number of equity shareholders"
+        ],
+        answer: 0,
+        reason: "The chapter explains that a valuer generally applies a probability factor for Contingent Liabilities to arrive at a Fair Value. It gives the example of a 50% chance of the Contingent Liability getting converted into an actual liability."
+      },
+      {
+        question: "Where a Liability for Taxation has not been provided in the accounts, what should be done?",
+        options: [
+          "It should be ignored until payment is made",
+          "It should be treated as revenue",
+          "An appropriate amount should be included in the Liability",
+          "It should be deducted from the number of equity shares"
+        ],
+        answer: 2,
+        reason: "The chapter states that where Liability for Taxation has not been provided in the accounts, an appropriate amount should be included in the Liability."
+      },
+      {
+        question: "Where a specific reserve is set aside to meet future losses, what should the valuer examine?",
+        options: [
+          "Whether the reserve is added to the market price of shares",
+          "Whether it represents a reserve or a provision; if it is a provision, it should be included in liabilities or deducted from the related assets",
+          "Whether it should always be treated as revenue",
+          "Whether it should be ignored in all cases"
+        ],
+        answer: 1,
+        reason: "The chapter states that the valuer should ascertain whether specific reserves are reserves or provisions. If there is a definite reason to regard them as provisions, they should either be included in liabilities or deducted from the related assets."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS56",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>ABC Limited has Equity Shares and Preference Shares outstanding. The valuation professional is required to determine the value attributable to the Equity Shareholders under the Underlying Asset Approach.</p>
+      <p>The professional examines the terms of issue of the Preference Shares to determine the dues payable to Preference Shareholders. Certain Preference Shareholders also have a right to participate in the surplus of the company.</p>
+    `,
+    questions: [
+      {
+        question: "From where can the valuer ascertain the dues payable to Preference Shareholders?",
+        options: [
+          "From the company's annual sales",
+          "From the market price of its equity shares alone",
+          "From the terms of issue of the Preference Shares",
+          "From the number of employees of the company"
+        ],
+        answer: 2,
+        reason: "The chapter states that the dues of Preference Shareholders can be ascertained from the terms of issue."
+      },
+      {
+        question: "While valuing Equity Shares, how should the dues of Preference Shareholders be treated?",
+        options: [
+          "They should be reduced from Enterprise Value to determine the value attributable to Equity Shareholders",
+          "They should be added to the value attributable to Equity Shareholders",
+          "They should be ignored in every valuation",
+          "They should be treated as revenue from operations"
+        ],
+        answer: 0,
+        reason: "The chapter states that the dues of Preference Shareholders have to be reduced from Enterprise Value to determine the value attributed to Equity Shareholders."
+      },
+      {
+        question: "Where Preference Shareholders have a right to participate in the surplus, what should be included as Liabilities?",
+        options: [
+          "Only the company's annual revenue",
+          "Only the market value of equity shares",
+          "Only the value of goodwill",
+          "The applicable amounts of such surplus together with the paid-up value of the Preference Shares"
+        ],
+        answer: 3,
+        reason: "The chapter states that where Preference Shareholders have a right to participate in the surplus, the applicable amounts of such surplus should be included as Liabilities together with the paid-up value of such Preference Shares."
+      },
+      {
+        question: "Which formula is given in the chapter for calculating Value of Equity Capital per share?",
+        options: [
+          "Value of Assets + Value of Liabilities",
+          "(Value of Assets – Value of Liabilities) ÷ Number of Equity Shares",
+          "Value of Liabilities ÷ Number of Equity Shares",
+          "Value of Assets × Number of Equity Shares"
+        ],
+        answer: 1,
+        reason: "The chapter provides the formula: Value of Equity Capital = (Value of Assets – Value of Liabilities) ÷ No. of Equity Shares."
+      },
+      {
+        question: "A company has a Value of Assets of INR 30 Crores and total Liabilities, including Preference Shareholder dues, of INR 10 Crores. It has 10 lakh Equity Shares outstanding. What is the value per Equity Share?",
+        options: [
+          "INR 100",
+          "INR 150",
+          "INR 200",
+          "INR 300"
+        ],
+        answer: 2,
+        reason: "Value of Equity Capital = INR 30 Crores – INR 10 Crores = INR 20 Crores. Value per Equity Share = INR 20 Crores ÷ 10 lakh shares = INR 200 per share."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS57",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>LMN Limited is being valued under the Underlying Asset Approach. The company is an established manufacturing entity and intends to continue its operations as a going concern. Its Balance Sheet contains several assets recorded at historical cost, including immovable properties and investments.</p>
+      <p>The valuer also considers an alternative situation in which the entity may be wound up. The professional examines the appropriate valuation basis for the assets under both circumstances and considers whether a combination of valuation bases may be appropriate.</p>
+    `,
+    questions: [
+      {
+        question: "What does the Book Value of an asset primarily reflect?",
+        options: [
+          "Its current market price in every situation",
+          "Its future economic benefits",
+          "Its Net Realizable Value",
+          "Its historical cost"
+        ],
+        answer: 3,
+        reason: "The chapter states that Book Value reflects only the historical cost of assets, which in the case of old entities may be much lower than their current Economic Value."
+      },
+      {
+        question: "How are immovable properties and investments generally recognized under the approach described in the chapter?",
+        options: [
+          "Only at historical cost",
+          "Generally at their Market Value, even where other Assets are considered at their Book Value",
+          "Only at their Net Realizable Value",
+          "At zero value where other assets are at Book Value"
+        ],
+        answer: 1,
+        reason: "The chapter states that immovable properties, investments etc. are generally recognized at their Market Value even where other Assets are considered at their Book Value."
+      },
+      {
+        question: "Which valuation basis gives a fair measure of the Current Value of Assets when an entity is valued on a going concern basis?",
+        options: [
+          "Net Realizable Value in every situation",
+          "Historical Cost only",
+          "Net Replacement Value",
+          "Original Issue Price"
+        ],
+        answer: 2,
+        reason: "The chapter states that if an entity is being valued on a going concern basis, the Net Replacement Value of the Assets gives a fair measure of their Current Value."
+      },
+      {
+        question: "Which valuation basis is generally appropriate for assets where an entity is being wound up?",
+        options: [
+          "Net Realizable Value",
+          "Net Replacement Value only",
+          "Historical Cost only",
+          "Original Purchase Price"
+        ],
+        answer: 0,
+        reason: "The chapter states that where an entity is being wound up, its Assets are best valued based on their Net Realizable Value."
+      },
+      {
+        question: "Which statement correctly describes the application of the Underlying Asset Approach in practice?",
+        options: [
+          "Only Book Values are used for every asset in all circumstances",
+          "Only Net Replacement Values are used for every asset in all circumstances",
+          "Only Net Realizable Values are used for every asset in all circumstances",
+          "A combination of Book Values, Replacement Values and Realizable Values may be adopted"
+        ],
+        answer: 3,
+        reason: "The chapter states that in practice, while applying the Underlying Asset Approach, a combination of Book Values, Replacement Values and Realizable Values is often adopted. For example, even when an entity is valued on an ongoing concern basis, excess Assets may be valued at their Net Realizable Values."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS58",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>PQR Limited is preparing a Fair Value measurement of one of its business assets. The valuer considers the current market conditions, the Principal Market and the assumptions that Market Participants would use while pricing the asset.</p>
+      <p>The professional also considers the Highest and Best Use of the asset and determines the Fair Value as at the specified Valuation Date. Certain inputs are not directly observable, and the valuer considers whether another Valuation Technique may be used to estimate the price.</p>
+    `,
+    questions: [
+      {
+        question: "Under the Income Approach, on what basis is Fair Value measurement determined?",
+        options: [
+          "Based only on the historical cost of the asset",
+          "Based on the value indicated by current market expectations about future amounts",
+          "Based only on the original purchase price",
+          "Based only on the number of assets owned by the company"
+        ],
+        answer: 1,
+        reason: "The chapter states that under the Income Approach, Fair Value measurement is determined based on the Value indicated by current market expectations about those future amounts."
+      },
+      {
+        question: "Fair Value under the ICAI Valuation Standards is based on which price?",
+        options: [
+          "Historical Purchase Price",
+          "Book Value",
+          "Exit Price",
+          "Original Issue Price"
+        ],
+        answer: 2,
+        reason: "The chapter identifies Fair Value as the Exit Price in an orderly transaction in the Principal Market (Most Advantageous) at the Valuation Date under Current Market Conditions."
+      },
+      {
+        question: "At which market should the Fair Value transaction generally be considered under the description provided in the chapter?",
+        options: [
+          "The Principal Market (Most Advantageous) at the Valuation Date under Current Market Conditions",
+          "Only the market in which the entity originally purchased the asset",
+          "Only a market selected by the owner without regard to market conditions",
+          "Only a market in which the asset has never been traded"
+        ],
+        answer: 0,
+        reason: "The chapter describes Fair Value as the price in an orderly transaction in the Principal Market (Most Advantageous) at the Valuation Date under Current Market Conditions."
+      },
+      {
+        question: "Can Fair Value be measured where the price is not directly observable?",
+        options: [
+          "No, Fair Value can only be based on directly quoted prices",
+          "No, an asset without a quoted price cannot be valued",
+          "Only by using historical cost",
+          "Yes, it may be estimated using another Valuation Technique"
+        ],
+        answer: 3,
+        reason: "The chapter states that Fair Value is the Exit Price regardless of whether the Price is directly observable or estimated using another Valuation Technique."
+      },
+      {
+        question: "Which concept should be considered while measuring Fair Value of an asset?",
+        options: [
+          "Highest historical cost",
+          "Highest and Best Use (HABU)",
+          "Lowest possible purchase price",
+          "Original purchase date"
+        ],
+        answer: 1,
+        reason: "The chapter identifies Highest and Best Use (HABU) of utilizing the Asset or Liability as one of the key aspects of Fair Value."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS59",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>ABC Healthcare Limited is evaluating one of its business interests using the Market Approach. The valuer identifies assets that are traded in an active market and reviews recent orderly transactions involving identical or comparable assets.</p>
+      <p>The professional also examines whether reliable information is available for the transactions and selects comparable companies based on their operational processes, cash flows, growth potential and risks that are similar to those of the company being valued.</p>
+    `,
+    questions: [
+      {
+        question: "In which situation is the Market Approach relevant according to the chapter?",
+        options: [
+          "Where the asset to be valued is traded in an Active Market",
+          "Where no market information is available",
+          "Where the asset has no comparable transaction information",
+          "Where all liabilities must be ignored"
+        ],
+        answer: 0,
+        reason: "The chapter identifies a situation where the Asset to be Valued is traded in an Active Market as a relevant situation for the Market Approach."
+      },
+      {
+        question: "What type of transactions may support the use of the Market Approach?",
+        options: [
+          "Transactions that are forced and unrelated to market conditions",
+          "Transactions involving only dissimilar assets",
+          "Recent, Orderly Transactions in assets that are identical or comparable in nature",
+          "Transactions for which no information is available"
+        ],
+        answer: 2,
+        reason: "The chapter identifies Recent, Orderly Transactions in the Asset to be Valued which are identical or comparable in nature as a relevant situation for the Market Approach."
+      },
+      {
+        question: "What is required regarding information on recent orderly transactions?",
+        options: [
+          "It must always be confidential",
+          "It must be available and reliable",
+          "It must relate only to historical purchase prices",
+          "It must be based only on management estimates"
+        ],
+        answer: 1,
+        reason: "The chapter identifies the availability and reliability of information on recent orderly transactions as a relevant consideration for the Market Approach."
+      },
+      {
+        question: "Which of the following is a factor considered while selecting comparable companies or assets?",
+        options: [
+          "Only the number of employees",
+          "Only the registered office address",
+          "Only the age of the company",
+          "Operational Processes and Cash Flows"
+        ],
+        answer: 3,
+        reason: "The chapter identifies Operational Processes and Cash Flows, Growth Potential and similar risks as factors in selecting comparable companies or assets."
+      },
+      {
+        question: "Which combination represents relevant factors for selecting comparable companies or assets as listed in the chapter?",
+        options: [
+          "Operational Processes and Cash Flows, Growth Potential, and Risks similar to the Company being Valued",
+          "Historical facts, number of employees, and office location",
+          "Futuristic assumptions, proposed dividend, and book value only",
+          "Number of shareholders, incorporation date, and registered office"
+        ],
+        answer: 0,
+        reason: "The chapter lists Operational Processes and Cash Flows, Growth Potential, and Risks which are similar to the Company being Valued as relevant factors for selecting comparable companies or assets."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS60",
+    difficulty: "Easy",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Vodafone's Indian operations and Idea Cellular were evaluating a merger. The appointed Chartered Accountant firms considered different valuation methods to arrive at a basis for the proposed merger.</p>
+      <p>The valuation exercise included the share price observed on the NSE for a suitable time frame, stock market valuations of comparable companies listed on the BSE and NSE, and the Net Asset Value of the merging entities under the Asset-Based Approach. The managements had not provided projected cash flows and other parameters necessary for a DCF-based valuation.</p>
+    `,
+    questions: [
+      {
+        question: "Which method was used by considering the share price observed on the NSE for a suitable time frame?",
+        options: [
+          "NAV Method",
+          "Market Value Method",
+          "Discounted Future Earnings Method",
+          "Replacement Cost Method"
+        ],
+        answer: 1,
+        reason: "The chapter states that under the Market Value Method, the share price observed on the NSE for a suitable time frame was considered to arrive at the valuation."
+      },
+      {
+        question: "Under the Comparable Company's Multiple Method, what information was considered?",
+        options: [
+          "Only the historical cost of the assets of Vodafone and Idea",
+          "Only the number of employees of the merging entities",
+          "The stock market valuations of comparable companies on the BSE and NSE",
+          "Only the proposed dividend of the merging entities"
+        ],
+        answer: 2,
+        reason: "The chapter states that the Comparable Company's Multiple Method considered the stock market valuations of comparable companies on the BSE and NSE."
+      },
+      {
+        question: "Which approach was used under the NAV Method in the merger valuation?",
+        options: [
+          "The Asset-Based Approach to arrive at the Net Asset Value of the merging entities",
+          "The Income Approach based only on projected dividends",
+          "The Replacement Cost Method for all liabilities",
+          "The Exit Multiple method for Terminal Value"
+        ],
+        answer: 0,
+        reason: "The chapter states that the NAV Method involved the Asset-Based Approach to arrive at the Net Asset Value of the merging entities as of December 31, 2016."
+      },
+      {
+        question: "Why was the DCF Method not used for valuation purposes in the Vodafone-Idea merger case study?",
+        options: [
+          "Because the companies had no assets",
+          "Because the companies had no equity shareholders",
+          "Because the Market Approach cannot be used in a merger",
+          "Because the managements had not provided the projected cash flows and other parameters necessary for DCF-based valuation"
+        ],
+        answer: 3,
+        reason: "The chapter specifically states that the DCF Method was not used because the managements of both Vodafone and Idea had not provided the projected cash flows and other parameters necessary for performing a DCF-based valuation."
+      },
+      {
+        question: "What did the final valuation using the Market Value Method, Comparable Company's Multiple Method and NAV Method provide a basis for?",
+        options: [
+          "A liquidation of the merging entities",
+          "A merger based on the Share Exchange method",
+          "A compulsory buyback of all equity shares",
+          "A new issue of preference shares only"
+        ],
+        answer: 1,
+        reason: "The chapter states that the final valuation using the three methods gave a basis to form a merger based on the Share Exchange method."
+      }
+    ]
+  },
+
+
 
   
 
