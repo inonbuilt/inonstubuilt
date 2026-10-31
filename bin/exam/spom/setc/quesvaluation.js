@@ -10769,7 +10769,2191 @@ const caseStudies = [
       }
     ]
   },
+  {
+    case_id: "valu_ch3_CS61",
+    difficulty: "Medium",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Alpha Limited is being valued using the Discounted Cash Flow Method. The valuation professional has prepared detailed Cash Flow Projections for five years. The estimated Terminal Value represents approximately 55% of the total Business Value derived under the DCF Method.</p>
+      <p>The company expects a Long-term Growth Rate of 6%, although the prevailing Long-term inflationary estimates are approximately 3%. The valuer also observes that the company will require additional Capital Expenditure and Working Capital to support the assumed growth rate. The business operates in a cyclical industry and its capacity utilization is expected to be high at the end of the explicit forecast period.</p>
+    `,
+    questions: [
+      {
+        question: "Why should the valuation professional carefully examine the assumptions used to determine Terminal Value in this case?",
+        options: [
+          "Because Terminal Value is always equal to the Book Value of the company",
+          "Because Terminal Value often constitutes around 50% or more of the entire Business Value derived using the DCF Method, and unrealistic assumptions can profoundly skew the Resulting Present Value",
+          "Because Terminal Value is not relevant when the DCF Method is used",
+          "Because Terminal Value is always lower than the value of current assets"
+        ],
+        answer: 1,
+        reason: "The chapter states that Terminal Value often constitutes around 50% or more of the entire Business Value derived using the DCF Method. An unrealistic assumption associated with Terminal Value can profoundly skew the Resulting Present Value."
+      },
+      {
+        question: "What is the concern associated with assuming a Long-term Growth Rate of 6% when prevailing Long-term inflationary estimates are approximately 3%?",
+        options: [
+          "It implies that the company's assets will have no remaining useful life",
+          "It means that the company will necessarily operate at a loss",
+          "It implies that the company will continue to grow ad-infinitum, which has proven to be almost impossible for any company",
+          "It ensures that Terminal Value will be equal to current revenue"
+        ],
+        answer: 2,
+        reason: "The chapter explains that a Growth Rate higher than prevalent Long-term inflationary estimates implies that the business will continue to grow ad-infinitum, which has proven to be almost impossible for any company, entity or firm."
+      },
+      {
+        question: "Which of the following should the valuer consider while determining the Terminal Growth Rate in this case?",
+        options: [
+          "Capacity utilization at the end of the explicit forecast period",
+          "Only the number of directors of the company",
+          "Only the historical issue price of equity shares",
+          "Only the number of suppliers"
+        ],
+        answer: 0,
+        reason: "Capacity utilization at the end of the explicit forecast period is one of the factors identified in the chapter for determining the Terminal Growth Rate."
+      },
+      {
+        question: "Which of the following may create an issue in the assumptions associated with Terminal Value?",
+        options: [
+          "Adequate maintenance of Capital Expenditure",
+          "Adequate Working Capital Assumptions relative to the Terminal Growth Rate",
+          "Consistency between Depreciation and Capital Expenditure levels",
+          "Inadequate Long-term maintenance of Capital Expenditure"
+        ],
+        answer: 3,
+        reason: "The chapter identifies inadequate Long-term maintenance of Capital Expenditure as one of the issues associated with Terminal Value."
+      },
+      {
+        question: "Since Alpha Limited operates in a cyclical industry, which additional factor should be considered while determining Terminal Value?",
+        options: [
+          "Only the company's historical Book Value",
+          "Whether cyclical impact is considered in the Terminal Value for assets which are cyclical in nature",
+          "Only the current number of employees",
+          "Whether the company has issued bonus shares"
+        ],
+        answer: 1,
+        reason: "The chapter specifically identifies whether cyclical impact is considered to be the Terminal Value for assets which are cyclical in nature as a factor to be considered while determining the Terminal Growth Rate."
+      }
+    ]
+  },
 
+  {
+    case_id: "valu_ch3_CS62",
+    difficulty: "Medium",
+    chapter: "Chapter3",
+    caseText: `
+      <p>MNO Limited is being valued using the DCF Method. The valuation professional has estimated the Terminal Value using the Exit Multiple method. Comparable companies operating in the same industry have an EV/Sales multiple of 2.5 times.</p>
+      <p>MNO Limited has annual sales of INR 10 Crores and its estimated Terminal Value at the end of the explicit forecast period is INR 25 Crores. Another company, PQR Limited, operates in the same industry and has revenue of INR 32 Crores. The valuer considers applying the same multiple to PQR Limited and reviews the implications of using market-based multiples within an Income Approach valuation.</p>
+    `,
+    questions: [
+      {
+        question: "What is the Terminal Value to Sales Multiple of MNO Limited?",
+        options: [
+          "1.5 times",
+          "2.0 times",
+          "2.5 times",
+          "3.5 times"
+        ],
+        answer: 2,
+        reason: "Terminal Value to Sales Multiple = INR 25 Crores ÷ INR 10 Crores = 2.5 times."
+      },
+      {
+        question: "Using the same Terminal Value to Sales Multiple, what would be the estimated Terminal Value of PQR Limited?",
+        options: [
+          "INR 80 Crores",
+          "INR 64 Crores",
+          "INR 50 Crores",
+          "INR 96 Crores"
+        ],
+        answer: 0,
+        reason: "Estimated Terminal Value = Revenue × Terminal Value to Sales Multiple = INR 32 Crores × 2.5 = INR 80 Crores."
+      },
+      {
+        question: "From where is the multiple generally obtained under the Exit Multiple method?",
+        options: [
+          "From the historical cost of the assets of the company",
+          "From the Book Value of the company's equity shares",
+          "From the company's internal depreciation policy",
+          "By examining the Market Multiples at which peer group companies are trading"
+        ],
+        answer: 3,
+        reason: "The chapter explains that the multiple used to estimate Terminal Value under the Exit Multiple method comes from looking at what peer group companies are trading in the market."
+      },
+      {
+        question: "Which valuation approaches are combined when the Exit Multiple method is used to estimate Terminal Value within the DCF Method?",
+        options: [
+          "Cost Approach and Liquidation Approach",
+          "Market Approach and Income Approach",
+          "Historical Cost Approach and Book Value Approach",
+          "Replacement Cost Method and Reproduction Cost Method"
+        ],
+        answer: 1,
+        reason: "The chapter explains that under the Exit Multiple method, the Market Approach is used to compute a major component of Cash Flow in the DCF Method, which falls under the Income Approach. The end result is a mix of both approaches."
+      },
+      {
+        question: "Why is it extremely critical to examine how the Terminal Value multiple is obtained?",
+        options: [
+          "Because the multiple eliminates the need for Cash Flow Projections",
+          "Because all peer group companies must have the same revenue",
+          "Because Terminal Value multiple has a huge impact on Valuation",
+          "Because the Exit Multiple method is based only on historical cost"
+        ],
+        answer: 2,
+        reason: "The chapter states that although the Exit Multiple approach is comparatively simple, the Terminal Value multiple has a huge impact on Valuation, making it extremely critical how the multiple is obtained."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS63",
+    difficulty: "Medium",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Delta Limited is being valued using the Discounted Future Earnings Method. The valuation professional estimates that the company will generate earnings of INR 110 Lakhs in Year 1, INR 121 Lakhs in Year 2 and INR 133.10 Lakhs in Year 3.</p>
+      <p>The professional selects a discount rate of 10% after considering the company's risk profile and market conditions. Each year's projected earnings are discounted to their Present Value using the appropriate discount factor, and the individual Present Values are aggregated to estimate the present value of future earnings.</p>
+    `,
+    questions: [
+      {
+        question: "What is the Present Value of the projected earnings of INR 110 Lakhs in Year 1 using a discount rate of 10%?",
+        options: [
+          "INR 110 Lakhs",
+          "INR 121 Lakhs",
+          "INR 90 Lakhs",
+          "INR 100 Lakhs"
+        ],
+        answer: 3,
+        reason: "Present Value = INR 110 Lakhs ÷ 1.10 = INR 100 Lakhs."
+      },
+      {
+        question: "What is the Present Value of the projected earnings of INR 121 Lakhs in Year 2 using a discount rate of 10%?",
+        options: [
+          "INR 100 Lakhs",
+          "INR 110 Lakhs",
+          "INR 121 Lakhs",
+          "INR 90 Lakhs"
+        ],
+        answer: 0,
+        reason: "Present Value = INR 121 Lakhs ÷ (1.10)^2 = INR 121 Lakhs ÷ 1.21 = INR 100 Lakhs."
+      },
+      {
+        question: "What is the approximate discount factor for Year 3 at a discount rate of 10%?",
+        options: [
+          "0.9091",
+          "0.7513",
+          "0.8264",
+          "1.3310"
+        ],
+        answer: 1,
+        reason: "Year 3 discount factor = 1 ÷ (1.10)^3 = 1 ÷ 1.331 = approximately 0.7513."
+      },
+      {
+        question: "What is the total Present Value of the projected earnings for all three years?",
+        options: [
+          "INR 364.10 Lakhs",
+          "INR 290 Lakhs",
+          "INR 300 Lakhs",
+          "INR 330 Lakhs"
+        ],
+        answer: 2,
+        reason: "Present Value of Year 1 = INR 100 Lakhs; Year 2 = INR 100 Lakhs; Year 3 = INR 133.10 Lakhs ÷ 1.331 = INR 100 Lakhs. Total Present Value = INR 100 + INR 100 + INR 100 = INR 300 Lakhs."
+      },
+      {
+        question: "What does the discount rate represent under the Discounted Future Earnings Method?",
+        options: [
+          "The historical cost of the company's assets",
+          "The annual depreciation rate of the company",
+          "The growth rate of the company's revenue alone",
+          "The investor's required rate of return or the opportunity cost of investing in the company"
+        ],
+        answer: 3,
+        reason: "The chapter explains that the discount rate represents the investor's required rate of return or the opportunity cost of investing in the company."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS64",
+    difficulty: "Medium",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Ruby Limited is a manufacturer of consumer appliances. The company has a stock price of INR 400 and 20,000 shares outstanding. Its market value of long-term debt is INR 10,00,000, while the Book Value of long-term debt is INR 11,00,000. The Book Value of total debt is INR 20,00,000.</p>
+      <p>The company also holds cash and marketable securities of INR 2,00,000 and has EBITDA of INR 15,00,000. The valuation professional assumes that the market value of short-term debt and liabilities is close to their Book Value and calculates the EV/EBITDA multiple for comparison with industry peers.</p>
+    `,
+    questions: [
+      {
+        question: "What is the Book Value of short-term debt and liabilities of Ruby Limited?",
+        options: [
+          "INR 11,00,000",
+          "INR 10,00,000",
+          "INR 9,00,000",
+          "INR 20,00,000"
+        ],
+        answer: 2,
+        reason: "Book Value of short-term debt and liabilities = Book Value of total debt – Book Value of long-term debt = INR 20,00,000 – INR 11,00,000 = INR 9,00,000."
+      },
+      {
+        question: "What is the estimated market value of total debt of Ruby Limited?",
+        options: [
+          "INR 19,00,000",
+          "INR 20,00,000",
+          "INR 21,00,000",
+          "INR 9,00,000"
+        ],
+        answer: 0,
+        reason: "Market Value of total debt = Market Value of long-term debt + estimated market value of short-term debt and liabilities = INR 10,00,000 + INR 9,00,000 = INR 19,00,000."
+      },
+      {
+        question: "What is the Market Value of Equity of Ruby Limited?",
+        options: [
+          "INR 15,00,000",
+          "INR 20,00,000",
+          "INR 19,00,000",
+          "INR 80,00,000"
+        ],
+        answer: 3,
+        reason: "Market Value of Equity = Stock Price × Shares Outstanding = INR 400 × 20,000 = INR 80,00,000."
+      },
+      {
+        question: "What is the Enterprise Value of Ruby Limited?",
+        options: [
+          "INR 97,00,000",
+          "INR 99,00,000",
+          "INR 1,00,00,000",
+          "INR 80,00,000"
+        ],
+        answer: 0,
+        reason: "Enterprise Value = Market Value of total debt + Market Value of Equity – Cash and marketable securities = INR 19,00,000 + INR 80,00,000 – INR 2,00,000 = INR 97,00,000."
+      },
+      {
+        question: "What is the approximate EV/EBITDA multiple of Ruby Limited?",
+        options: [
+          "5.47 times",
+          "6.00 times",
+          "6.47 times",
+          "7.47 times"
+        ],
+        answer: 2,
+        reason: "EV/EBITDA = INR 97,00,000 ÷ INR 15,00,000 = approximately 6.47 times."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS65",
+    difficulty: "Medium",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Global Brands Limited owns a trademark and associated product formulations used in the manufacture of consumer products. A valuation professional is required to estimate the appropriate Royalty Rate using the Relief From Royalty Method.</p>
+      <p>The professional reviews royalty transactions involving standalone trademarks and bundled intangible assets. The professional also examines differences in geographical rights, duration of usage, economic returns and arrangements involving upfront fees or ongoing marketing cost sharing.</p>
+    `,
+    questions: [
+      {
+        question: "A comparable transaction involves a bundled asset consisting of trademarks and product formulations, while the asset being valued is a trademark in isolation. What should the valuation professional consider?",
+        options: [
+          "The royalty rate for the trademark in isolation will likely be lower than that for the bundled asset",
+          "The royalty rate for the trademark in isolation will always be higher",
+          "Both transactions must have exactly the same royalty rate",
+          "The distinction between standalone and bundled assets is irrelevant"
+        ],
+        answer: 0,
+        reason: "The chapter explains that a Royalty Rate paid for a Trademark in isolation will likely be lower than one for a bundled asset, including Trademarks and Product Formulations."
+      },
+      {
+        question: "Two licences relate to the same intangible asset, but one permits use only within a limited geography and for a limited time, while the other grants perpetual rights with unrestricted usage. What should be considered?",
+        options: [
+          "The royalty rate must be identical in both arrangements",
+          "The rights granted, including geography, term and usage, may result in different Royalty Rates",
+          "Only the Book Value of the intangible asset should be considered",
+          "The licence duration has no relevance to Royalty Rates"
+        ],
+        answer: 1,
+        reason: "The chapter states that rights, including geography, term and usage, should be considered while analysing Royalty Rates. A limited geographical or time-bound licence may have a different rate from perpetual rights with unfettered usage."
+      },
+      {
+        question: "What is the general relationship between Economic Returns and Royalty Rates?",
+        options: [
+          "Assets providing higher economic returns always warrant lower Royalty Rates",
+          "Economic Returns have no relationship with Royalty Rates",
+          "Typically, assets providing higher returns will warrant higher Royalty Rates",
+          "Royalty Rates depend only on the age of the licensee"
+        ],
+        answer: 2,
+        reason: "The chapter explains that assets providing higher returns will typically warrant higher Royalty Rates. It also notes that returns on wholesale revenues can differ significantly from those on retail revenues."
+      },
+      {
+        question: "A licensee agrees to pay an Upfront Fee and share future marketing expenses. What may be the consequence for the negotiated Royalty Rate?",
+        options: [
+          "The Royalty Rate must increase",
+          "The Royalty Rate must be equal to the tax rate",
+          "The Upfront Fee must be ignored",
+          "The licensee may be able to negotiate a lower Royalty Rate"
+        ],
+        answer: 3,
+        reason: "The chapter states that licensees willing to pay an Upfront Fee or share in future marketing or advertising expenses may be able to negotiate a lower Royalty Rate."
+      },
+      {
+        question: "Which combination of factors is relevant while analysing Royalty Rates under the Relief From Royalty Method?",
+        options: [
+          "Assets, Rights, Economic Returns and Upfront Fees or Ongoing Cost Sharing",
+          "Only the historical cost and number of employees",
+          "Only the company's share capital and reserves",
+          "Only the registered office and incorporation date"
+        ],
+        answer: 0,
+        reason: "The chapter identifies four factors for analysing Royalty Rates: Assets, Rights, Economic Returns and Upfront Fees or Ongoing Cost Sharing."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS66",
+    difficulty: "Medium",
+    chapter: "Chapter3",
+    caseText: `
+      <p>TechSoft Limited owns a proprietary software intangible asset with an estimated remaining useful life of four years. The software is expected to generate annual revenue of INR 200 Lakhs during the next forecast period. Comparable market transactions indicate an appropriate Royalty Rate of 5% of revenue.</p>
+      <p>The software requires annual maintenance and marketing expenses of INR 2 Lakhs attributable to the intangible asset. The valuation professional applies an appropriate tax rate of 25% and selects a risk-adjusted Discount Rate to determine the Present Value of the after-tax royalty savings.</p>
+    `,
+    questions: [
+      {
+        question: "What is the projected royalty income before associated expenses and tax?",
+        options: [
+          "INR 5 Lakhs",
+          "INR 8 Lakhs",
+          "INR 10 Lakhs",
+          "INR 12 Lakhs"
+        ],
+        answer: 2,
+        reason: "Projected Royalty Income = Revenue × Royalty Rate = INR 200 Lakhs × 5% = INR 10 Lakhs."
+      },
+      {
+        question: "After deducting the annual maintenance and marketing expenses, what is the royalty saving before tax?",
+        options: [
+          "INR 12 Lakhs",
+          "INR 8 Lakhs",
+          "INR 10 Lakhs",
+          "INR 6 Lakhs"
+        ],
+        answer: 1,
+        reason: "Royalty Saving before Tax = Projected Royalty Income – Associated Expenses = INR 10 Lakhs – INR 2 Lakhs = INR 8 Lakhs."
+      },
+      {
+        question: "What is the after-tax royalty saving at a tax rate of 25%?",
+        options: [
+          "INR 8 Lakhs",
+          "INR 5 Lakhs",
+          "INR 7 Lakhs",
+          "INR 6 Lakhs"
+        ],
+        answer: 3,
+        reason: "After-tax Royalty Saving = INR 8 Lakhs × (1 – 25%) = INR 8 Lakhs × 75% = INR 6 Lakhs."
+      },
+      {
+        question: "Why is a Terminal Value generally not required under the Relief From Royalty Method for this software asset?",
+        options: [
+          "Because the useful life of the intangible asset is generally limited and projections are made for the whole useful life period",
+          "Because royalty income is always equal to zero in the final year",
+          "Because the Income Approach does not use Present Value",
+          "Because the Relief From Royalty Method only considers historical expenses"
+        ],
+        answer: 0,
+        reason: "The chapter explains that, in general, the useful life of the intangible would be for a limited period and accordingly Terminal Value will not come into play; projections are generally made for the whole useful life period."
+      },
+      {
+        question: "Which treatment is appropriate for discounting the after-tax royalty savings?",
+        options: [
+          "Use the historical cost of the software as the discount rate",
+          "Use the company's annual revenue growth rate without considering risk",
+          "Discount the after-tax royalty savings using an appropriate risk-adjusted Discount Rate",
+          "Add the after-tax royalty savings to the Book Value without discounting"
+        ],
+        answer: 2,
+        reason: "The chapter states that the after-tax royalty savings should be discounted to arrive at Present Value using an appropriate risk-adjusted Discount Rate."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS67",
+    difficulty: "Medium",
+    chapter: "Chapter3",
+    caseText: `
+      <p>CoreTech Limited is valuing a leading technology intangible asset that is central to its business model. The valuation professional cannot directly measure the future economic benefits generated by the intangible asset, but can determine the revenue and earnings generated by the combined asset group.</p>
+      <p>The estimated total net after-tax cash flows of the combined asset group are INR 40 Lakhs. The professional identifies Contributory Asset Charges of INR 4 Lakhs for working capital, INR 6 Lakhs for fixed assets, INR 3 Lakhs for assembled workforce and INR 2 Lakhs for other intangible assets. The resulting incremental after-tax cash flows are to be discounted using an appropriate Discount Rate.</p>
+    `,
+    questions: [
+      {
+        question: "Which valuation method is most appropriate for valuing the leading intangible asset in this case?",
+        options: [
+          "Salvage or Liquidation Value Method",
+          "Replacement Cost Method",
+          "Discounted Future Earnings Method only",
+          "Multi-Period Excess Earnings Method"
+        ],
+        answer: 3,
+        reason: "The MEEM Method is generally used for valuing an Intangible Asset that is the leading or most significant Intangible Asset out of a group of Intangible Assets being valued."
+      },
+      {
+        question: "What approach does the MEEM Method adopt to estimate the income expected to be generated by the intangible asset?",
+        options: [
+          "Residual Approach",
+          "Historical Cost Approach",
+          "Liquidation Approach",
+          "Reproduction Cost Approach"
+        ],
+        answer: 0,
+        reason: "The chapter states that the MEEM Method adopts a Residual Approach for estimating the income that an Intangible Asset is expected to generate."
+      },
+      {
+        question: "What is the total Contributory Asset Charges in the case?",
+        options: [
+          "INR 10 Lakhs",
+          "INR 15 Lakhs",
+          "INR 20 Lakhs",
+          "INR 25 Lakhs"
+        ],
+        answer: 1,
+        reason: "Total Contributory Asset Charges = INR 4 Lakhs + INR 6 Lakhs + INR 3 Lakhs + INR 2 Lakhs = INR 15 Lakhs."
+      },
+      {
+        question: "What are the incremental after-tax cash flows attributable to the intangible asset after deducting Contributory Asset Charges?",
+        options: [
+          "INR 40 Lakhs",
+          "INR 15 Lakhs",
+          "INR 25 Lakhs",
+          "INR 45 Lakhs"
+        ],
+        answer: 2,
+        reason: "Incremental after-tax cash flows = Total net after-tax cash flows – Contributory Asset Charges = INR 40 Lakhs – INR 15 Lakhs = INR 25 Lakhs."
+      },
+      {
+        question: "Which of the following statements regarding Contributory Asset Charges is correct?",
+        options: [
+          "They are considered only for goodwill",
+          "They are not based on the Fair Values of the relevant assets",
+          "They are applied only to the company's equity shares",
+          "They should be considered for assets, excluding goodwill, that contribute to the realization of cash flows for the intangible asset being valued"
+        ],
+        answer: 3,
+        reason: "The chapter explains that Contributory Asset Charges represent charges for the use of an asset or group of assets based on their respective Fair Values. They should be considered for all assets, excluding goodwill, that contribute to the realization of cash flows for the Intangible Asset being valued."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS68",
+    difficulty: "Medium",
+    chapter: "Chapter3",
+    caseText: `
+      <p>SecureTrade Limited is valuing a non-compete arrangement under the With and Without Method. The valuer prepares two sets of cash flow projections for the remaining useful life of the arrangement.</p>
+      <p>The projected cash flows of the business with the non-compete arrangement are INR 120 Lakhs, INR 140 Lakhs and INR 160 Lakhs for the next three years. The corresponding projected cash flows without the non-compete arrangement are INR 80 Lakhs, INR 100 Lakhs and INR 120 Lakhs. The applicable discount factors are 0.90, 0.80 and 0.70 respectively.</p>
+    `,
+    questions: [
+      {
+        question: "What is the incremental cash flow attributable to the non-compete arrangement in Year 1?",
+        options: [
+          "INR 40 Lakhs",
+          "INR 80 Lakhs",
+          "INR 120 Lakhs",
+          "INR 200 Lakhs"
+        ],
+        answer: 0,
+        reason: "Incremental cash flow in Year 1 = Cash Flow with non-compete – Cash Flow without non-compete = INR 120 Lakhs – INR 80 Lakhs = INR 40 Lakhs."
+      },
+      {
+        question: "What is the incremental cash flow attributable to the non-compete arrangement in Year 3?",
+        options: [
+          "INR 120 Lakhs",
+          "INR 160 Lakhs",
+          "INR 40 Lakhs",
+          "INR 60 Lakhs"
+        ],
+        answer: 2,
+        reason: "Incremental cash flow in Year 3 = INR 160 Lakhs – INR 120 Lakhs = INR 40 Lakhs."
+      },
+      {
+        question: "What is the Present Value of the incremental cash flow for Year 2?",
+        options: [
+          "INR 28 Lakhs",
+          "INR 32 Lakhs",
+          "INR 40 Lakhs",
+          "INR 56 Lakhs"
+        ],
+        answer: 1,
+        reason: "Present Value of Year 2 incremental cash flow = INR 40 Lakhs × 0.80 = INR 32 Lakhs."
+      },
+      {
+        question: "What is the total Present Value of the incremental cash flows for all three years?",
+        options: [
+          "INR 88 Lakhs",
+          "INR 92 Lakhs",
+          "INR 100 Lakhs",
+          "INR 96 Lakhs"
+        ],
+        answer: 3,
+        reason: "Present Value = (INR 40 Lakhs × 0.90) + (INR 40 Lakhs × 0.80) + (INR 40 Lakhs × 0.70) = INR 36 Lakhs + INR 32 Lakhs + INR 28 Lakhs = INR 96 Lakhs."
+      },
+      {
+        question: "Which statement correctly describes the With and Without Method?",
+        options: [
+          "It measures the economic contribution of the asset by calculating the Net Present Value of incremental cash flows derived from its use",
+          "It determines value only from the historical cost of the intangible asset",
+          "It values an intangible asset by considering only the cash flows without the asset",
+          "It estimates value by multiplying the Book Value of the asset by the number of years"
+        ],
+        answer: 0,
+        reason: "The chapter states that the With and Without Method measures the economic contribution of the Asset by calculating the Net Present Value of the incremental cash flows to be derived from the use of the Asset."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS69",
+    difficulty: "Medium",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Precision Engineering Limited owns a specialised production machine. A Market Participant would be able to recreate an asset with substantially the same Utility as the existing machine, although the physical properties and design of the replacement asset may differ.</p>
+      <p>The existing machine has also experienced reduced usefulness due to the expiry of part of its useful life. Further, the availability of more efficient replacement technology and changes in environmental regulations have affected the machine's value. The valuer examines the appropriate Cost Approach method and the nature of the Obsolescence involved.</p>
+    `,
+    questions: [
+      {
+        question: "Which method should be considered where a Market Participant would recreate an asset with substantially the same Utility as the existing machine, without necessarily creating an exact copy?",
+        options: [
+          "Reproduction Cost Method",
+          "Replacement Cost Method",
+          "Discounted Future Earnings Method",
+          "Relief From Royalty Method"
+        ],
+        answer: 1,
+        reason: "The Replacement Cost Method involves valuing an Asset based on the Cost that a Market Participant would incur to recreate an Asset with substantially the same Utility (Comparable Utility) as the Asset being valued, adjusted for Obsolescence."
+      },
+      {
+        question: "Which method requires a Market Participant to recreate a Replica of the asset being valued?",
+        options: [
+          "Replacement Cost Method",
+          "Income Approach",
+          "Market Approach",
+          "Reproduction Cost Method"
+        ],
+        answer: 3,
+        reason: "The Reproduction Cost Method involves valuing an Asset based on the Cost that a Market Participant would incur to recreate a Replica of the Asset being valued, adjusted for Obsolescence."
+      },
+      {
+        question: "The machine has lost value because its usefulness has decreased as its useful life expires. Which type of Obsolescence is involved?",
+        options: [
+          "Physical Obsolescence",
+          "Functional (technological) Obsolescence",
+          "Economic (external) Obsolescence",
+          "Marketability Obsolescence"
+        ],
+        answer: 0,
+        reason: "Physical Obsolescence represents the loss in Value on account of decreased usefulness of the asset as the useful life expires."
+      },
+      {
+        question: "The machine has become inefficient due to the availability of more efficient replacement technology. Which type of Obsolescence is involved?",
+        options: [
+          "Physical Obsolescence",
+          "Economic (external) Obsolescence",
+          "Functional (technological) Obsolescence",
+          "Financial Obsolescence"
+        ],
+        answer: 2,
+        reason: "Functional (technological) Obsolescence represents the loss in Value on account of new technological developments whereby the Asset becomes inefficient due to the availability of more efficient replacement assets."
+      },
+      {
+        question: "The change in environmental regulations has reduced the usefulness of the machine. Which type of Obsolescence is involved?",
+        options: [
+          "Physical Obsolescence",
+          "Functional (technological) Obsolescence",
+          "Replacement Obsolescence",
+          "Economic (external) Obsolescence"
+        ],
+        answer: 3,
+        reason: "Economic (external) Obsolescence represents the loss in Value on account of decreased usefulness of the Asset caused by external economic factors such as change in environmental or other regulations, excess supply and high interest rates."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS70",
+    difficulty: "Medium",
+    chapter: "Chapter3",
+    caseText: `
+      <p>National Healthcare Limited is being valued using the Market Approach. The valuation professional identifies comparable listed companies operating in similar business lines and examines their Enterprise Value, EBITDA, NOPAT and P/E multiples.</p>
+      <p>The professional finds that one comparable company has significant non-operating gains and another holds non-operating assets that do not contribute to EBITDA. One company also has a joint venture whose value is included in Enterprise Value, although the corresponding income or loss is not included in the denominator. The valuer therefore reviews the peer group, the earnings estimates and the adjustments required to improve comparability.</p>
+    `,
+    questions: [
+      {
+        question: "Why is the selection of an appropriate peer group critical when using valuation multiples?",
+        options: [
+          "Because all companies must have the same market capitalization",
+          "Because the correct peer group helps in arriving at a reasonable valuation using multiples",
+          "Because the selection of a peer group eliminates the need to examine financial statements",
+          "Because all companies in an industry must have identical profit margins"
+        ],
+        answer: 1,
+        reason: "The chapter explains that selecting the right peer group is critical to arriving at a reasonable valuation using multiples. It also highlights the relevance of similar business lines, products, size of operations, margins and capital structure."
+      },
+      {
+        question: "Why may a comparison of P/E ratios be a less reliable guide to companies' relative value than a comparison of EV/EBITDA or EV/NOPAT?",
+        options: [
+          "Because P/E does not use market prices",
+          "Because P/E can only be used for companies with no debt",
+          "Because P/E is always equal to EV/EBITDA",
+          "Because P/E is distorted by capital structure and non-operating or unusual gains and losses"
+        ],
+        answer: 3,
+        reason: "The chapter explains that P/E is distorted by capital structure and non-operating or unusual gains and losses. A comparison of Enterprise Value to EBITDA or NOPAT reduces the chances of multiples being distorted."
+      },
+      {
+        question: "While building forward-looking multiples, which denominator should preferably be used?",
+        options: [
+          "A forecast of profits, preferably normalized for unusual items",
+          "Only historical profits without adjustment",
+          "Only the Book Value of the company's equity",
+          "Only the total value of fixed assets"
+        ],
+        answer: 0,
+        reason: "The chapter states that while building multiples, the denominator should preferably be a forecast of profits, normalized for unusual items, rather than historical profits."
+      },
+      {
+        question: "What should generally be done with a non-operating asset that does not contribute to EBITDA?",
+        options: [
+          "It should always be added to EBITDA",
+          "It should be included in the denominator of the multiple",
+          "It should be removed from Enterprise Value",
+          "It should be treated as an operating expense"
+        ],
+        answer: 2,
+        reason: "The chapter states that as a standard procedure, any non-operating asset that does not contribute to EBITDA should be removed from Enterprise Value."
+      },
+      {
+        question: "What is the likely impact of including the value of a joint venture in the numerator of a multiple without including its corresponding income or loss in the denominator?",
+        options: [
+          "It will always reduce the multiple",
+          "It will distort the multiple in an upward direction",
+          "It will have no effect on the multiple",
+          "It will automatically convert EV/EBITDA into P/E"
+        ],
+        answer: 1,
+        reason: "The chapter explains that including the value of joint ventures in the numerator without including the corresponding income or loss in the denominator will distort the multiple in an upward direction."
+      }
+    ]
+  },
+  {
+    case_id: "valu_ch3_CS71",
+    difficulty: "Hard",
+    chapter: "Chapter3",
+    caseText: `
+      <p>ABC Limited is being valued using the Discounted Cash Flow Method. Its Free Cash Flow for Year 5 is estimated at INR 500 Lakhs. The valuer expects a Long-term Growth Rate of 4% and uses a Discount Rate of 12%.</p>
+      <p>The valuer also considers the Exit Multiple method. Comparable companies indicate an EV/EBITDA multiple of 7.5 times, and the estimated EBITDA at the end of the explicit forecast period is INR 600 Lakhs. The Discount Factor applicable at the end of Year 5 is 0.5674.</p>
+      <p>The company is expected to continue operating as a going concern. The valuer examines the implications of the two Terminal Value methods and considers the assumptions affecting the reliability of the resulting Present Value.</p>
+    `,
+    questions: [
+      {
+        question: "What is the Terminal Value under the Gordon Growth Model?",
+        options: [
+          "INR 4,500 Lakhs",
+          "INR 5,000 Lakhs",
+          "INR 6,500 Lakhs",
+          "INR 7,500 Lakhs"
+        ],
+        answer: 2,
+        reason: "Terminal Value = Expected FCF (n+1) ÷ (Discount Rate – Expected Growth Rate). Expected FCF (n+1) = INR 500 Lakhs × 1.04 = INR 520 Lakhs. Terminal Value = INR 520 Lakhs ÷ (12% – 4%) = INR 520 Lakhs ÷ 8% = INR 6,500 Lakhs."
+      },
+      {
+        question: "What is the Terminal Value under the Exit Multiple method?",
+        options: [
+          "INR 4,500 Lakhs",
+          "INR 5,500 Lakhs",
+          "INR 6,000 Lakhs",
+          "INR 6,500 Lakhs"
+        ],
+        answer: 0,
+        reason: "Terminal Value under the Exit Multiple method = EBITDA × EV/EBITDA Multiple = INR 600 Lakhs × 7.5 = INR 4,500 Lakhs."
+      },
+      {
+        question: "What is the Present Value of Terminal Value under the Gordon Growth Model using the given Discount Factor?",
+        options: [
+          "INR 2,553.30 Lakhs",
+          "INR 3,188.10 Lakhs",
+          "INR 4,500.00 Lakhs",
+          "INR 3,688.10 Lakhs"
+        ],
+        answer: 3,
+        reason: "Present Value of Terminal Value = INR 6,500 Lakhs × 0.5674 = INR 3,688.10 Lakhs."
+      },
+      {
+        question: "What is the difference between the Present Values of Terminal Value under the Gordon Growth Model and the Exit Multiple method?",
+        options: [
+          "INR 1,000.00 Lakhs",
+          "INR 1,134.80 Lakhs",
+          "INR 1,500.00 Lakhs",
+          "INR 2,000.00 Lakhs"
+        ],
+        answer: 1,
+        reason: "Present Value under the Gordon Growth Model = INR 3,688.10 Lakhs. Present Value under the Exit Multiple method = INR 4,500 Lakhs × 0.5674 = INR 2,553.30 Lakhs. Difference = INR 3,688.10 Lakhs – INR 2,553.30 Lakhs = INR 1,134.80 Lakhs."
+      },
+      {
+        question: "Which assumption should the valuer examine particularly carefully before accepting the Terminal Value under the Gordon Growth Model?",
+        options: [
+          "Whether the Long-term Growth Rate is supportable, considering the business's future prospects and the prevalent Long-term inflationary estimates",
+          "Whether the number of employees remains unchanged",
+          "Whether the historical purchase price of fixed assets is equal to their Book Value",
+          "Whether the company has issued preference shares in the past"
+        ],
+        answer: 0,
+        reason: "The chapter explains that increasing the Long-term Growth Rate has a significant impact on Terminal Value. A Growth Rate higher than prevalent Long-term inflationary estimates may imply that the business will continue to grow ad-infinitum, which has proven to be almost impossible for any company."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS72",
+    difficulty: "Hard",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Ruby Limited is a manufacturer of consumer appliances. Its stock price is INR 250 and it has 40,000 shares outstanding. The Book Value of its total debt is INR 40,00,000, including long-term debt with a Book Value of INR 25,00,000. The market value of long-term debt is INR 22,00,000.</p>
+      <p>The company has cash and marketable securities of INR 7,00,000 and EBITDA of INR 20,00,000. The valuer assumes that the market value of short-term debt and liabilities is close to their Book Value. Comparable companies have an average EV/EBITDA multiple of 8 times.</p>
+      <p>The valuer is required to estimate Ruby Limited's Enterprise Value and EV/EBITDA multiple and assess its relative valuation against the industry average.</p>
+    `,
+    questions: [
+      {
+        question: "What is the estimated Book Value of Ruby Limited's short-term debt and liabilities?",
+        options: [
+          "INR 22,00,000",
+          "INR 25,00,000",
+          "INR 15,00,000",
+          "INR 40,00,000"
+        ],
+        answer: 2,
+        reason: "Book Value of short-term debt and liabilities = Book Value of total debt – Book Value of long-term debt = INR 40,00,000 – INR 25,00,000 = INR 15,00,000."
+      },
+      {
+        question: "What is the estimated market value of total debt?",
+        options: [
+          "INR 37,00,000",
+          "INR 40,00,000",
+          "INR 47,00,000",
+          "INR 22,00,000"
+        ],
+        answer: 0,
+        reason: "Market Value of total debt = Market Value of long-term debt + estimated market value of short-term debt and liabilities = INR 22,00,000 + INR 15,00,000 = INR 37,00,000."
+      },
+      {
+        question: "What is the Market Value of Equity of Ruby Limited?",
+        options: [
+          "INR 75,00,000",
+          "INR 1,00,00,000",
+          "INR 22,00,000",
+          "INR 1,25,00,000"
+        ],
+        answer: 1,
+        reason: "Market Value of Equity = Stock Price × Shares Outstanding = INR 250 × 40,000 = INR 1,00,00,000."
+      },
+      {
+        question: "What is the Enterprise Value of Ruby Limited?",
+        options: [
+          "INR 1,07,00,000",
+          "INR 1,15,00,000",
+          "INR 1,37,00,000",
+          "INR 1,30,00,000"
+        ],
+        answer: 3,
+        reason: "Enterprise Value = Market Value of Equity + Market Value of total debt – Cash and marketable securities = INR 1,00,00,000 + INR 37,00,000 – INR 7,00,000 = INR 1,30,00,000."
+      },
+      {
+        question: "How should Ruby Limited be viewed relative to the industry average EV/EBITDA multiple of 8 times?",
+        options: [
+          "Relatively overvalued because its EV/EBITDA multiple is below the industry average",
+          "Relatively undervalued because its EV/EBITDA multiple is below the industry average",
+          "Fairly valued because both multiples are identical",
+          "The comparison cannot be made because Enterprise Value includes debt"
+        ],
+        answer: 1,
+        reason: "Ruby Limited's EV/EBITDA = INR 1,30,00,000 ÷ INR 20,00,000 = 6.5 times. The chapter explains that if the competitor or industry average EV/EBITDA is above the company's multiple, the company is relatively undervalued. Here, 8 times is above 6.5 times."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS73",
+    difficulty: "Hard",
+    chapter: "Chapter3",
+    caseText: `
+      <p>BrandTech Limited owns a software brand that has an estimated remaining useful life of three years. The projected revenue attributable to the brand is INR 1,000 Lakhs in Year 1, INR 1,200 Lakhs in Year 2 and INR 1,400 Lakhs in Year 3.</p>
+      <p>The valuation professional selects an appropriate Royalty Rate of 4.5% based on market-based royalty rates for similar intangible assets. Annual maintenance and marketing expenses attributable to the brand are INR 5 Lakhs, INR 6 Lakhs and INR 7 Lakhs respectively. The applicable tax rate is 25%.</p>
+      <p>The after-tax royalty savings are discounted at 10%. The discount factors for the three years are 0.9091, 0.8264 and 0.7513 respectively. The valuer also considers the limited useful life of the intangible asset and whether Terminal Value is required.</p>
+    `,
+    questions: [
+      {
+        question: "What is the projected royalty income before associated expenses and tax for Year 2?",
+        options: [
+          "INR 45 Lakhs",
+          "INR 48 Lakhs",
+          "INR 54 Lakhs",
+          "INR 63 Lakhs"
+        ],
+        answer: 2,
+        reason: "Projected royalty income = Revenue × Royalty Rate = INR 1,200 Lakhs × 4.5% = INR 54 Lakhs."
+      },
+      {
+        question: "What is the after-tax royalty saving for Year 1?",
+        options: [
+          "INR 30 Lakhs",
+          "INR 40 Lakhs",
+          "INR 35 Lakhs",
+          "INR 25 Lakhs"
+        ],
+        answer: 0,
+        reason: "Year 1 royalty income = INR 1,000 Lakhs × 4.5% = INR 45 Lakhs. Royalty saving before tax = INR 45 Lakhs – INR 5 Lakhs maintenance and marketing expenses = INR 40 Lakhs. After-tax royalty saving = INR 40 Lakhs × (1 – 25%) = INR 30 Lakhs."
+      },
+      {
+        question: "What is the Present Value of after-tax royalty savings for Year 3?",
+        options: [
+          "INR 35.00 Lakhs",
+          "INR 42.00 Lakhs",
+          "INR 31.55 Lakhs",
+          "INR 28.00 Lakhs"
+        ],
+        answer: 2,
+        reason: "Year 3 royalty income = INR 1,400 Lakhs × 4.5% = INR 63 Lakhs. Royalty saving before tax = INR 63 Lakhs – INR 7 Lakhs = INR 56 Lakhs. After-tax royalty saving = INR 56 Lakhs × 75% = INR 42 Lakhs. Present Value = INR 42 Lakhs × 0.7513 = INR 31.5546 Lakhs, approximately INR 31.55 Lakhs."
+      },
+      {
+        question: "What is the total Present Value of the after-tax royalty savings for the three years?",
+        options: [
+          "INR 90.00 Lakhs",
+          "INR 88.58 Lakhs",
+          "INR 96.00 Lakhs",
+          "INR 100.00 Lakhs"
+        ],
+        answer: 1,
+        reason: "Year 1 PV = INR 30 Lakhs × 0.9091 = INR 27.273 Lakhs. Year 2 royalty saving before tax = INR 54 Lakhs – INR 6 Lakhs = INR 48 Lakhs; after-tax saving = INR 36 Lakhs; PV = INR 36 Lakhs × 0.8264 = INR 29.7504 Lakhs. Year 3 PV = INR 31.5546 Lakhs. Total Present Value = INR 27.273 + INR 29.7504 + INR 31.5546 = INR 88.578 Lakhs, approximately INR 88.58 Lakhs."
+      },
+      {
+        question: "Which treatment of Terminal Value is generally appropriate under the Relief From Royalty Method for this brand?",
+        options: [
+          "Terminal Value must always be calculated using an Exit Multiple",
+          "Terminal Value must be added irrespective of useful life",
+          "Terminal Value is always equal to the historical cost of the brand",
+          "Terminal Value generally will not come into play because the useful life of the intangible asset is limited and projections are made for the whole useful life period"
+        ],
+        answer: 3,
+        reason: "The chapter explains that in general, the useful life of the intangible would be for a limited period and accordingly Terminal Value will not come into play; projections are generally made for the whole useful life period."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS74",
+    difficulty: "Hard",
+    chapter: "Chapter3",
+    caseText: `
+      <p>CoreTech Limited is valuing a leading technology intangible asset that forms a significant part of its business model. The valuation professional cannot directly measure the future economic benefits generated by the technology asset, but can determine the revenue and earnings of the combined asset group.</p>
+      <p>The estimated annual total net after-tax cash flows of the combined asset group are INR 120 Lakhs for each of the next three years. The valuer identifies Contributory Asset Charges of INR 10 Lakhs for working capital, INR 20 Lakhs for fixed assets, INR 5 Lakhs for assembled workforce and INR 15 Lakhs for other intangible assets.</p>
+      <p>The relevant Discount Factors for the three years are 0.893, 0.797 and 0.712 respectively. The valuer is required to determine the incremental after-tax cash flows attributable to the technology asset and their Present Value.</p>
+    `,
+    questions: [
+      {
+        question: "Which valuation method is appropriate where the intangible asset is the leading or most significant asset in a group of intangible assets being valued?",
+        options: [
+          "Multi-Period Excess Earnings Method",
+          "Replacement Cost Method",
+          "Salvage or Liquidation Value Method",
+          "Exit Multiple method"
+        ],
+        answer: 0,
+        reason: "The chapter states that the Multi-Period Excess Earnings Method is generally used for valuing an Intangible Asset that is the leading or the most significant Intangible Asset out of a group of Intangible Assets being valued."
+      },
+      {
+        question: "What is the total amount of Contributory Asset Charges identified in the case?",
+        options: [
+          "INR 40 Lakhs",
+          "INR 45 Lakhs",
+          "INR 50 Lakhs",
+          "INR 55 Lakhs"
+        ],
+        answer: 2,
+        reason: "Total Contributory Asset Charges = INR 10 Lakhs + INR 20 Lakhs + INR 5 Lakhs + INR 15 Lakhs = INR 50 Lakhs."
+      },
+      {
+        question: "What are the incremental after-tax cash flows attributable to the technology asset for each year?",
+        options: [
+          "INR 120 Lakhs",
+          "INR 50 Lakhs",
+          "INR 170 Lakhs",
+          "INR 70 Lakhs"
+        ],
+        answer: 3,
+        reason: "Incremental after-tax cash flows = Total net after-tax cash flows of combined asset group – Contributory Asset Charges = INR 120 Lakhs – INR 50 Lakhs = INR 70 Lakhs."
+      },
+      {
+        question: "What is the Present Value of the incremental after-tax cash flows for all three years?",
+        options: [
+          "INR 168.14 Lakhs",
+          "INR 150.00 Lakhs",
+          "INR 210.00 Lakhs",
+          "INR 120.00 Lakhs"
+        ],
+        answer: 0,
+        reason: "Present Value = (INR 70 Lakhs × 0.893) + (INR 70 Lakhs × 0.797) + (INR 70 Lakhs × 0.712) = INR 62.51 + INR 55.79 + INR 49.84 = INR 168.14 Lakhs."
+      },
+      {
+        question: "Which of the following statements about Contributory Asset Charges is correct?",
+        options: [
+          "They are calculated only for goodwill",
+          "They represent charges for the use of assets or groups of assets based on their respective Fair Values and should be considered for contributing assets, excluding goodwill",
+          "They are added to the total net after-tax cash flows to increase the excess earnings",
+          "They are considered only when the intangible asset is recorded in the Balance Sheet"
+        ],
+        answer: 1,
+        reason: "The chapter explains that Contributory Asset Charges represent charges for the use of an asset or group of assets based on their respective Fair Values. They should be considered for all assets, excluding goodwill, that contribute to the realization of cash flows for the Intangible Asset being valued."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS75",
+    difficulty: "Hard",
+    chapter: "Chapter3",
+    caseText: `
+      <p>SecureTrade Limited is valuing a non-compete arrangement under the With and Without Method. The arrangement is expected to remain effective for three years.</p>
+      <p>The projected cash flows of the business with the non-compete arrangement are INR 100 Lakhs, INR 130 Lakhs and INR 160 Lakhs for Years 1, 2 and 3 respectively. The corresponding cash flows of the business without the non-compete arrangement are INR 70 Lakhs, INR 80 Lakhs and INR 100 Lakhs.</p>
+      <p>The applicable Discount Factors are 0.90, 0.80 and 0.70 respectively. Based on the engagement assumptions, the probability of competing is assessed at 60%. The valuer is required to calculate the Present Value of incremental cash flows and determine the Fair Value of the non-compete arrangement after applying the stated probability.</p>
+    `,
+    questions: [
+      {
+        question: "What is the incremental cash flow attributable to the non-compete arrangement in Year 2?",
+        options: [
+          "INR 30 Lakhs",
+          "INR 40 Lakhs",
+          "INR 50 Lakhs",
+          "INR 60 Lakhs"
+        ],
+        answer: 2,
+        reason: "Incremental cash flow in Year 2 = Cash Flow with non-compete – Cash Flow without non-compete = INR 130 Lakhs – INR 80 Lakhs = INR 50 Lakhs."
+      },
+      {
+        question: "What is the Present Value of incremental cash flows for all three years before applying the probability of competing?",
+        options: [
+          "INR 109 Lakhs",
+          "INR 96 Lakhs",
+          "INR 120 Lakhs",
+          "INR 100 Lakhs"
+        ],
+        answer: 0,
+        reason: "Incremental cash flows are INR 30 Lakhs, INR 50 Lakhs and INR 60 Lakhs. Present Value = (INR 30 Lakhs × 0.90) + (INR 50 Lakhs × 0.80) + (INR 60 Lakhs × 0.70) = INR 27 Lakhs + INR 40 Lakhs + INR 42 Lakhs = INR 109 Lakhs."
+      },
+      {
+        question: "What is the Fair Value of the non-compete arrangement after applying the probability of competing of 60%?",
+        options: [
+          "INR 109.00 Lakhs",
+          "INR 60.00 Lakhs",
+          "INR 65.40 Lakhs",
+          "INR 70.00 Lakhs"
+        ],
+        answer: 2,
+        reason: "Fair Value after applying the stated probability = Present Value of incremental cash flows × Probability of competing = INR 109 Lakhs × 60% = INR 65.40 Lakhs."
+      },
+      {
+        question: "Which two scenarios are required under the With and Without Method?",
+        options: [
+          "Business with only tangible assets and business with only intangible assets",
+          "Business before acquisition and business after acquisition",
+          "Business with debt and business without equity",
+          "Business with all Assets in place including the intangible asset being valued, and business with all Assets in place except that intangible asset"
+        ],
+        answer: 3,
+        reason: "The chapter requires comparison between a business that has all its assets in place including the intangible asset being valued, and a business that has all its assets in place but not the intangible asset being valued."
+      },
+      {
+        question: "Which of the following best explains the purpose of the With and Without Method?",
+        options: [
+          "It measures the economic contribution of the asset by calculating the Net Present Value of incremental cash flows derived from its use",
+          "It estimates only the historical cost of the intangible asset",
+          "It measures only the total revenue of the business",
+          "It determines value by comparing the Book Value of the two businesses"
+        ],
+        answer: 0,
+        reason: "The chapter explains that the With and Without Method measures the economic contribution of the Asset by calculating the Net Present Value of incremental cash flows derived from the use of the Asset."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS76",
+    difficulty: "Hard",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Delta Industries Limited is being valued on a going concern basis under the Underlying Asset Approach. The valuer determines the following values of its assets: fixed assets at Net Replacement Value of INR 500 Lakhs, immovable properties at Market Value of INR 250 Lakhs and investments at Market Value of INR 100 Lakhs.</p>
+      <p>Inventory has a value of INR 80 Lakhs before an adjustment of INR 10 Lakhs for obsolete stocks. Sundry Debtors amount to INR 120 Lakhs, subject to an allowance of INR 15 Lakhs for bad and doubtful debts. Intangible Assets not reflected in the books are valued at INR 60 Lakhs. An insurance claim has been conservatively assessed at INR 20 Lakhs.</p>
+      <p>The liabilities include recorded liabilities of INR 300 Lakhs, a Contingent Liability of INR 100 Lakhs with a 40% probability of becoming an actual liability, an unprovided taxation liability of INR 30 Lakhs, unprovided proposed dividends of INR 20 Lakhs and Preference Shareholder dues of INR 50 Lakhs. The Preference Shareholders also have a right to participate in a surplus of INR 15 Lakhs. The company has 10 lakh Equity Shares outstanding.</p>
+    `,
+    questions: [
+      {
+        question: "What is the total value of assets after the adjustments specified in the case?",
+        options: [
+          "INR 1,050 Lakhs",
+          "INR 1,105 Lakhs",
+          "INR 1,120 Lakhs",
+          "INR 1,165 Lakhs"
+        ],
+        answer: 1,
+        reason: "Total Assets = Fixed Assets 500 + Immovable Properties 250 + Investments 100 + Adjusted Inventory (80 – 10) 70 + Adjusted Sundry Debtors (120 – 15) 105 + Intangible Assets 60 + Conservatively assessed insurance claim 20 = INR 1,105 Lakhs."
+      },
+      {
+        question: "What amount should be considered for the Contingent Liability after applying the probability factor?",
+        options: [
+          "INR 40 Lakhs",
+          "INR 60 Lakhs",
+          "INR 100 Lakhs",
+          "INR 140 Lakhs"
+        ],
+        answer: 0,
+        reason: "Amount of Contingent Liability = INR 100 Lakhs × 40% probability = INR 40 Lakhs."
+      },
+      {
+        question: "What is the total value of liabilities after considering the specified adjustments?",
+        options: [
+          "INR 400 Lakhs",
+          "INR 440 Lakhs",
+          "INR 455 Lakhs",
+          "INR 500 Lakhs"
+        ],
+        answer: 2,
+        reason: "Total Liabilities = Recorded Liabilities 300 + Contingent Liability 40 + Unprovided Taxation Liability 30 + Unprovided Proposed Dividends 20 + Preference Shareholder dues 50 + Participating surplus 15 = INR 455 Lakhs."
+      },
+      {
+        question: "What is the value of Equity Capital of Delta Industries Limited?",
+        options: [
+          "INR 455 Lakhs",
+          "INR 600 Lakhs",
+          "INR 650 Lakhs",
+          "INR 700 Lakhs"
+        ],
+        answer: 2,
+        reason: "Value of Equity Capital = Value of Assets – Value of Liabilities = INR 1,105 Lakhs – INR 455 Lakhs = INR 650 Lakhs."
+      },
+      {
+        question: "What is the value per Equity Share?",
+        options: [
+          "INR 45",
+          "INR 50",
+          "INR 60",
+          "INR 65"
+        ],
+        answer: 3,
+        reason: "Value per Equity Share = Value of Equity Capital ÷ Number of Equity Shares = INR 650 Lakhs ÷ 10 lakh shares = INR 65 per share."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS77",
+    difficulty: "Hard",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Orion Limited owns a specialised industrial property that is being valued at October 31, 2026. A potential buyer offers to purchase the property, but the seller is under financial pressure and is compelled to complete the transaction immediately. The property has not been exposed to the market for a period that would normally allow usual and customary marketing activities.</p>
+      <p>The valuer identifies the Principal Market and considers the assumptions of Market Participants. The property is located in an industrial zone, has certain restrictions associated with its use and requires consideration of its present condition. The valuer also examines the Highest and Best Use of the property and whether the transaction represents an orderly transaction.</p>
+    `,
+    questions: [
+      {
+        question: "Which statement best describes the Fair Value basis under the ICAI Valuation Standards?",
+        options: [
+          "The historical cost paid by the owner to acquire the property",
+          "The price that would be received to sell an Asset or paid to transfer a Liability in an orderly transaction between Market Participants at the Valuation Date",
+          "The amount that the seller is compelled to accept immediately",
+          "The Book Value of the property as recorded in the Balance Sheet"
+        ],
+        answer: 1,
+        reason: "The chapter defines Fair Value as the price that would be received to sell an Asset or paid to transfer a Liability in an orderly transaction between Market Participants at the Valuation Date."
+      },
+      {
+        question: "Why may the immediate transaction described in the case fail to represent an Orderly Transaction?",
+        options: [
+          "Because the seller is compelled to complete the transaction and the property has not had the usual and customary market exposure",
+          "Because the property is situated in an industrial zone",
+          "Because the valuation is performed on a specific Valuation Date",
+          "Because the property has restrictions associated with its use"
+        ],
+        answer: 0,
+        reason: "An Orderly Transaction assumes exposure to the market for a period before the Valuation Date to allow for usual and customary marketing activities. It is not a forced transaction."
+      },
+      {
+        question: "Which of the following is a required characteristic of Market Participants?",
+        options: [
+          "They must be related parties",
+          "They must be compelled to enter into the transaction",
+          "They must be independent, knowledgeable, able and willing to enter into the transaction",
+          "They must be the existing owners of the asset"
+        ],
+        answer: 2,
+        reason: "The chapter identifies four characteristics of Market Participants: they are independent of each other, knowledgeable, able to enter into a transaction and willing to enter into a transaction without being forced or otherwise compelled."
+      },
+      {
+        question: "Which of the following should be considered as characteristics of the property while measuring Fair Value?",
+        options: [
+          "Only the historical purchase price",
+          "Only the annual revenue of the owner",
+          "Only the number of shareholders",
+          "Condition, Location and Restrictions associated with Sale or Use"
+        ],
+        answer: 3,
+        reason: "The chapter identifies Condition, Location and Restrictions associated with Sale or Use as characteristics of the Asset or Liability that should be considered in Fair Value measurement."
+      },
+      {
+        question: "Which of the following is specifically identified as a key aspect of Fair Value measurement?",
+        options: [
+          "Highest and Best Use (HABU) of utilizing the Asset or Liability",
+          "The lowest historical purchase price",
+          "The compulsory sale price in every circumstance",
+          "The original amount invested by the owner"
+        ],
+        answer: 0,
+        reason: "The chapter identifies Highest and Best Use (HABU) of utilizing the Asset or Liability as one of the key aspects of Fair Value."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS78",
+    difficulty: "Hard",
+    chapter: "Chapter3",
+    caseText: `
+      <p>National Healthcare Limited is being valued using the Market Approach. Its reported Enterprise Value is INR 1,500 Million and reported EBITDA is INR 200 Million. The reported Enterprise Value includes a non-operating asset of INR 100 Million and a joint venture valued at INR 60 Million, while the corresponding income or loss from the joint venture is not included in EBITDA.</p>
+      <p>The Enterprise Value also excludes INR 50 Million attributable to non-controlling interest. Reported EBITDA includes an unusual non-operating gain of INR 20 Million. The valuer considers these items while normalizing the financial information to determine a more comparable EV/EBITDA multiple.</p>
+    `,
+    questions: [
+      {
+        question: "What is the adjusted Enterprise Value after removing the non-operating asset and the joint venture value, and adding the omitted non-controlling interest?",
+        options: [
+          "INR 1,290 Million",
+          "INR 1,340 Million",
+          "INR 1,390 Million",
+          "INR 1,450 Million"
+        ],
+        answer: 2,
+        reason: "Adjusted Enterprise Value = Reported Enterprise Value – Non-operating Asset – Joint Venture value not matched by corresponding income or loss + Non-controlling interest = INR 1,500 Million – INR 100 Million – INR 60 Million + INR 50 Million = INR 1,390 Million."
+      },
+      {
+        question: "What is the normalized EBITDA after removing the unusual non-operating gain?",
+        options: [
+          "INR 180 Million",
+          "INR 200 Million",
+          "INR 220 Million",
+          "INR 160 Million"
+        ],
+        answer: 0,
+        reason: "Normalized EBITDA = Reported EBITDA – Unusual non-operating gain = INR 200 Million – INR 20 Million = INR 180 Million."
+      },
+      {
+        question: "What is the adjusted EV/EBITDA multiple?",
+        options: [
+          "6.50 times",
+          "7.22 times",
+          "8.00 times",
+          "7.72 times"
+        ],
+        answer: 3,
+        reason: "Adjusted EV/EBITDA = INR 1,390 Million ÷ INR 180 Million = approximately 7.72 times."
+      },
+      {
+        question: "What would be the effect of failing to include the value attributable to non-controlling interest in Enterprise Value?",
+        options: [
+          "It would overstate the Enterprise Value and bias the multiple upward",
+          "It would understate the numerator and bias the multiple downward",
+          "It would have no effect on the multiple",
+          "It would increase normalized EBITDA"
+        ],
+        answer: 1,
+        reason: "The chapter explains that failing to recognize a component of Enterprise Value, such as the value of non-controlling interest not added to the value of common equity, will understate the numerator and bias the multiple downward."
+      },
+      {
+        question: "Why is it important to exclude unusual non-operating gains and losses while normalizing earnings?",
+        options: [
+          "Because every unusual item must be included in EBITDA",
+          "Because EBITDA should always equal Net Profit after Tax",
+          "Because items that are not helpful indicators of future cash-generating ability from continuing operations should be excluded from the calculation of the multiple",
+          "Because the Market Approach does not use earnings"
+        ],
+        answer: 2,
+        reason: "The chapter explains that any item that is not a helpful indicator of a company's future cash-generating ability from continuing operations should be excluded from the calculation of the multiple."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS79",
+    difficulty: "Hard",
+    chapter: "Chapter3",
+    caseText: `
+      <p>Precision Engineering Limited owns an industrial machine. A Market Participant would incur INR 800 Lakhs to recreate an asset with substantially the same Utility as the existing machine. The valuer identifies physical deterioration amounting to INR 120 Lakhs, Functional (technological) Obsolescence of INR 80 Lakhs and Economic (external) Obsolescence of INR 50 Lakhs.</p>
+      <p>The company also owns a specialised historical machine for which management requires the valuer to estimate the cost of creating an exact Replica. The professional compares the Replacement Cost Method and Reproduction Cost Method and reviews the steps required to adjust for Obsolescence.</p>
+    `,
+    questions: [
+      {
+        question: "What is the value of the first machine after adjusting for all the identified Obsolescence?",
+        options: [
+          "INR 550 Lakhs",
+          "INR 600 Lakhs",
+          "INR 650 Lakhs",
+          "INR 680 Lakhs"
+        ],
+        answer: 0,
+        reason: "Adjusted Value = Estimated Replacement Cost – Physical Obsolescence – Functional Obsolescence – Economic Obsolescence = INR 800 Lakhs – INR 120 Lakhs – INR 80 Lakhs – INR 50 Lakhs = INR 550 Lakhs."
+      },
+      {
+        question: "Which method should be applied where the requirement is to recreate an asset with substantially the same Utility, rather than an exact copy?",
+        options: [
+          "Reproduction Cost Method",
+          "Replacement Cost Method",
+          "Discounted Future Earnings Method",
+          "Relief From Royalty Method"
+        ],
+        answer: 1,
+        reason: "The Replacement Cost Method involves recreating an Asset with substantially the same Utility (Comparable Utility) as the Asset being valued, adjusted for Obsolescence."
+      },
+      {
+        question: "Which method is appropriate where the requirement is to recreate an exact Replica of the asset?",
+        options: [
+          "Replacement Cost Method",
+          "Market Approach",
+          "Reproduction Cost Method",
+          "Income Approach"
+        ],
+        answer: 2,
+        reason: "The Reproduction Cost Method involves valuing an Asset based on the Cost that a Market Participant would incur to recreate a Replica of the Asset being valued, adjusted for Obsolescence."
+      },
+      {
+        question: "Which type of Obsolescence arises when an asset becomes inefficient due to the availability of more efficient replacement assets?",
+        options: [
+          "Physical Obsolescence",
+          "Economic (external) Obsolescence",
+          "Market Obsolescence",
+          "Functional (technological) Obsolescence"
+        ],
+        answer: 3,
+        reason: "Functional (technological) Obsolescence represents the loss in Value on account of new technological developments, whereby the Asset becomes inefficient due to the availability of more efficient replacement assets."
+      },
+      {
+        question: "Which sequence represents the major steps in deriving value under the Replacement Cost or Reproduction Cost Method?",
+        options: [
+          "Estimate the cost, assess physical, functional or economic Obsolescence, and adjust the estimated cost for Obsolescence Value",
+          "Determine the company's sales, calculate its P/E ratio and deduct dividends",
+          "Estimate the Book Value, add goodwill and deduct preference dividends",
+          "Determine market capitalization, calculate EBITDA and apply a Terminal Growth Rate"
+        ],
+        answer: 0,
+        reason: "The chapter identifies three major steps: estimating the costs incurred by a Market Participant for creating an asset with Comparable Utility or replicating an existing asset; assessing physical, functional or economic Obsolescence; and adjusting the estimated cost for Obsolescence Value, if any."
+      }
+    ]
+  },
+
+  {
+    case_id: "valu_ch3_CS80",
+    difficulty: "Hard",
+    chapter: "Chapter3",
+    caseText: `
+      <p>SD Private Limited is a debt-free company with no outstanding Preference Shares. The company has 29,12,927 Equity Shares of INR 1 each and a cash balance of INR 27 Lakhs. Its Cost of Equity is 12%.</p>
+      <p>The valuer has prepared Free Cash Flow to Equity projections for five years. The Present Value of the projected Free Cash Flow to Equity for the explicit forecast period is INR 264.58 Lakhs. The Present Value of Terminal Value, calculated using the Gordon Growth Model and discounted to the Valuation Date, is INR 1,271.63 Lakhs.</p>
+      <p>The valuation professional includes the cash balance in arriving at Equity Value and then determines the Fair Value per Equity Share. The Terminal Value has been estimated using a perpetual Growth Rate of 5%.</p>
+    `,
+    questions: [
+      {
+        question: "Which discount rate is appropriate for discounting the Free Cash Flow to Equity in the case?",
+        options: [
+          "Weighted Average Cost of Capital of 12%",
+          "Cost of Equity of 12%",
+          "Cost of Debt of 12%",
+          "Historical Dividend Rate of 12%"
+        ],
+        answer: 1,
+        reason: "The source illustration discounts Free Cash Flow to Equity using the Cost of Equity (Ke). The case specifies a Cost of Equity of 12%."
+      },
+      {
+        question: "What is the total Present Value of the Free Cash Flow to Equity for the explicit forecast period?",
+        options: [
+          "INR 1,271.63 Lakhs",
+          "INR 1,563.21 Lakhs",
+          "INR 264.58 Lakhs",
+          "INR 291.58 Lakhs"
+        ],
+        answer: 2,
+        reason: "The case specifies that the Sum of Present Value of Free Cash Flow to Equity for the explicit forecast period is INR 264.58 Lakhs."
+      },
+      {
+        question: "What is the Equity Value after adding the Present Value of Terminal Value and the cash balance?",
+        options: [
+          "INR 1,563.21 Lakhs",
+          "INR 1,536.21 Lakhs",
+          "INR 1,298.63 Lakhs",
+          "INR 1,271.63 Lakhs"
+        ],
+        answer: 0,
+        reason: "Equity Value = Present Value of explicit forecast FCFE + Present Value of Terminal Value + Cash = INR 264.58 Lakhs + INR 1,271.63 Lakhs + INR 27 Lakhs = INR 1,563.21 Lakhs."
+      },
+      {
+        question: "What is the approximate Fair Value per Equity Share?",
+        options: [
+          "INR 50.00",
+          "INR 52.00",
+          "INR 55.00",
+          "INR 53.66"
+        ],
+        answer: 3,
+        reason: "Fair Value per Share = Equity Value ÷ Number of Equity Shares = INR 1,563.21 Lakhs ÷ 29,12,927 shares. Converting Lakhs into Rupees, the value per share is approximately INR 53.66."
+      },
+      {
+        question: "Which three prime factors are identified in the chapter as forming the DCF Method under Business Valuation?",
+        options: [
+          "Book Value, Historical Cost and Number of Employees",
+          "Cash Flow Projections, Discount Rate and Terminal Value",
+          "Cost of Tangible Assets, Historical Income and Dividend Payout",
+          "Market Capitalization, Share Premium and Reserves"
+        ],
+        answer: 1,
+        reason: "The chapter identifies three prime factors in a Discounted Cash Flow under Valuation of Business: Cash Flow Projections, Discount Rate and Terminal Value."
+      }
+    ]
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_61",
+    case_chapter: "chapter3",
+    question: "Which of the following correctly represents the accounting definition of an Intangible Asset?",
+    options: [
+      "An Identifiable Non-Monetary Asset Without Physical Substance",
+      "A Monetary Asset Without Physical Substance",
+      "A Tangible Asset Used in Business Operations",
+      "An Unidentifiable Monetary Asset With Physical Substance"
+    ],
+    answer: 0,
+    reason: "As stated in the chapter, an Intangible Asset is an Identifiable Non-Monetary Asset Without Physical Substance."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_62",
+    case_chapter: "chapter3",
+    question: "Which of the following is an example of an Intangible Asset identified in the chapter?",
+    options: [
+      "Trade Payables",
+      "Cash and Cash Equivalents",
+      "Customer Lists",
+      "Term Loans"
+    ],
+    answer: 2,
+    reason: "The chapter identifies Patents, Copyrights, Customer Lists, Licenses, Franchises, Marketing Rights and Computer Software as common examples of Intangible Assets."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_63",
+    case_chapter: "chapter3",
+    question: "Which valuation method is most widely resorted to for determining the Value of a Brand and certain other Intangibles such as IPs and Software?",
+    options: [
+      "Replacement Cost Method",
+      "Multi-Period Excess Earnings Method",
+      "With and Without Method",
+      "Relief From Royalty Method"
+    ],
+    answer: 3,
+    reason: "The chapter identifies the Relief From Royalty (RFR) Method as the most widely resorted method used to determine the Value of a Brand and certain other Intangibles such as IPs and Software."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_64",
+    case_chapter: "chapter3",
+    question: "What is the fundamental assumption underlying the Relief From Royalty Method?",
+    options: [
+      "The Intangible Asset is always valued at its historical cost",
+      "The Intangible Asset is assumed not to be owned by the branded business but to be licensed from a third party",
+      "The Intangible Asset does not generate any economic benefit",
+      "The Intangible Asset is assumed to be sold immediately"
+    ],
+    answer: 1,
+    reason: "The RFR Method assumes that the Intangible Asset is not owned by the branded business but is licensed from a third party. If it were licensed from a third party, a royalty rate would be charged for the privilege of using the Intangible Asset."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_65",
+    case_chapter: "chapter3",
+    question: "How is the value of an Intangible Asset generally determined under the Relief From Royalty Method?",
+    options: [
+      "By determining the Present Value of royalty payments saved by virtue of owning the Intangible Asset",
+      "By adding the historical cost of all tangible assets",
+      "By deducting total liabilities from Book Value",
+      "By multiplying annual revenue by the number of years of operation"
+    ],
+    answer: 0,
+    reason: "Under the RFR Method, the Intangible Asset Value is deemed to be the Present Value of the royalty payments saved by virtue of owning the Intangible Asset."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_66",
+    case_chapter: "chapter3",
+    question: "The Relief From Royalty Method is described in the chapter as a typical combination of which valuation approaches?",
+    options: [
+      "Cost Approach and Asset-Based Approach",
+      "Historical Cost Approach and Liquidation Approach",
+      "Market Approach and Income Approach",
+      "Replacement Cost Method and Reproduction Cost Method"
+    ],
+    answer: 2,
+    reason: "The chapter describes the RFR Method as a typical combination of Market Approach and Income Approach, where value is determined based on avoided cost."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_67",
+    case_chapter: "chapter3",
+    question: "Which combination represents the key factors to be considered while using the Relief From Royalty Method?",
+    options: [
+      "Book Value, Historical Cost and Market Capitalization",
+      "Revenue Projections, Discount Rate and Appropriate Royalty Rate",
+      "Number of Employees, Total Assets and Share Capital",
+      "Inventory, Trade Receivables and Trade Payables"
+    ],
+    answer: 1,
+    reason: "The chapter identifies Revenue Projections, Discount Rate and Appropriate Royalty Rate as the key factors to be considered while using the RFR Method."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_68",
+    case_chapter: "chapter3",
+    question: "Which of the following sets out the factors to be considered while analysing Royalty Rates under the Relief From Royalty Method?",
+    options: [
+      "Assets, Rights, Economic Returns and Upfront Fees / Ongoing Cost Sharing",
+      "Share Capital, Reserves, Dividends and Borrowings",
+      "Historical Cost, Book Value, Depreciation and Tax Rate",
+      "Employees, Suppliers, Customers and Creditors"
+    ],
+    answer: 0,
+    reason: "The chapter identifies four factors for analysing Royalty Rates: Assets, Rights, Economic Returns and Upfront Fees / Ongoing Cost Sharing."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_69",
+    case_chapter: "chapter3",
+    question: "While selecting an appropriate Royalty Rate under the Relief From Royalty Method, which basis may be considered?",
+    options: [
+      "Only the historical purchase price of the Intangible Asset",
+      "Only the company's dividend payout ratio",
+      "Only the number of years since incorporation",
+      "Market-based royalty rates for similar Intangible Assets, including rates from similar transactions or rates determined using the profit-split method"
+    ],
+    answer: 3,
+    reason: "The chapter states that the appropriate Royalty Rate is selected based on market-based royalty rates for similar Intangible Assets. These may be based on Royalty Rates of similar transactions or determined using the profit-split method."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_70",
+    case_chapter: "chapter3",
+    question: "Over which period should projections generally be obtained under the Relief From Royalty Method?",
+    options: [
+      "Only for the first year of operation",
+      "Over the remaining useful life of the Intangible Asset being valued",
+      "Only for the period before the Intangible Asset was acquired",
+      "For an indefinite period irrespective of the useful life"
+    ],
+    answer: 1,
+    reason: "The chapter states that projections associated with the Intangible Asset should be obtained over its remaining useful life. In general, the useful life of an Intangible Asset is limited and accordingly Terminal Value will not come into play; projections are generally made for the whole useful life period."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_71",
+    case_chapter: "chapter3",
+    question: "Which tax rate should be used under the Relief From Royalty Method to arrive at after-tax royalty savings?",
+    options: [
+      "The historical tax rate applicable when the asset was acquired",
+      "The highest tax rate irrespective of the circumstances",
+      "The appropriate marginal tax rate or such other appropriate tax rate",
+      "The tax rate applicable to the company's shareholders"
+    ],
+    answer: 2,
+    reason: "The chapter states that the appropriate marginal tax rate or such other appropriate tax rate should be used to arrive at after-tax royalty savings."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_72",
+    case_chapter: "chapter3",
+    question: "How should after-tax royalty savings be treated under the Relief From Royalty Method to arrive at Present Value?",
+    options: [
+      "They should be discounted using an appropriate risk-adjusted Discount Rate",
+      "They should be added to historical cost without discounting",
+      "They should be multiplied by the number of equity shares",
+      "They should be treated as the Book Value of the Intangible Asset"
+    ],
+    answer: 0,
+    reason: "The chapter states that after-tax royalty savings should be discounted to arrive at Present Value using an appropriate risk-adjusted Discount Rate."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_73",
+    case_chapter: "chapter3",
+    question: "When should the Tax Amortization Benefit (TAB) be added under the Relief From Royalty Method?",
+    options: [
+      "In every valuation, irrespective of the nature of the asset",
+      "Only when the company has outstanding Preference Shares",
+      "Only where the Intangible Asset has no remaining useful life",
+      "If appropriate, considering the nature of the asset and purpose of the engagement"
+    ],
+    answer: 3,
+    reason: "The chapter states that if appropriate, considering the nature of the asset and purpose of the engagement, the tax amortization benefits should be added to the overall value of the Intangible Asset."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_74",
+    case_chapter: "chapter3",
+    question: "For which type of Intangible Asset is the Multi-Period Excess Earnings Method generally used?",
+    options: [
+      "An Intangible Asset that has no contribution to the business",
+      "A leading or the most significant Intangible Asset out of a group of Intangible Assets being valued",
+      "An asset that is always valued at historical cost",
+      "An asset that is required to be valued only under liquidation"
+    ],
+    answer: 1,
+    reason: "The chapter states that the Multi-Period Excess Earnings Method is generally used for valuing an Intangible Asset that is the leading or the most significant Intangible Asset out of a group of Intangible Assets being valued."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_75",
+    case_chapter: "chapter3",
+    question: "Which statement correctly describes the With and Without Method (WWM)?",
+    options: [
+      "It values an Intangible Asset only on the basis of its historical cost",
+      "It determines value by considering only the future cash flows of a business without the Intangible Asset",
+      "It determines the value of an Intangible Asset using the Present Value of the difference between expected cash flows of a business with the asset and without the asset; non-compete arrangements are commonly valued using this method",
+      "It determines value by comparing the Book Value of two unrelated companies"
+    ],
+    answer: 2,
+    reason: "The chapter explains that the WWM determines the value of an Intangible Asset using the Present Value of the difference between expected cash flows under two scenarios: a business with all assets including the Intangible Asset being valued, and a business with all assets except that Intangible Asset. Non-compete arrangements are commonly valued using this method."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_76",
+    case_chapter: "chapter3",
+    question: "A company has a Free Cash Flow of INR 200 Lakhs in the last year of the explicit forecast period. The expected Perpetuity Growth Rate is 3% and the Discount Rate is 11%. What is the Terminal Value under the Gordon Growth Model?",
+    options: [
+      "INR 2,000 Lakhs",
+      "INR 2,500 Lakhs",
+      "INR 2,575 Lakhs",
+      "INR 2,750 Lakhs"
+    ],
+    answer: 2,
+    reason: "Terminal Value = Expected FCF (n+1) ÷ (Discount Rate – Expected Growth Rate). Expected FCF (n+1) = INR 200 Lakhs × 1.03 = INR 206 Lakhs. Terminal Value = INR 206 Lakhs ÷ (11% – 3%) = INR 206 Lakhs ÷ 8% = INR 2,575 Lakhs."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_77",
+    case_chapter: "chapter3",
+    question: "Which of the following is a factor that a valuer may consider while determining the Terminal Growth Rate?",
+    options: [
+      "The historical purchase price of the company's shares",
+      "Capacity utilization at the end of the explicit forecast period",
+      "The number of directors on the Board",
+      "The amount of share capital originally issued"
+    ],
+    answer: 1,
+    reason: "The chapter identifies capacity utilization at the end of the explicit forecast period as one of the factors that a valuer may consider while determining the Terminal Growth Rate."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_78",
+    case_chapter: "chapter3",
+    question: "Under the Exit Multiple method of estimating Terminal Value, which approach is used to compute a major component of Cash Flow within the DCF Method?",
+    options: [
+      "Only the Cost Approach",
+      "Only the Asset-Based Approach",
+      "Only the Historical Cost Approach",
+      "The Market Approach is used within the Income Approach"
+    ],
+    answer: 3,
+    reason: "The chapter explains that under the Exit Multiple method, Market Multiples such as EV/EBITDA and EV/Sales are applied to perpetuity earnings or income. Consequently, the Market Approach is used to compute a major component of Cash Flow in the DCF Method, which falls under the Income Approach."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_79",
+    case_chapter: "chapter3",
+    question: "An entity is expected to cease operations and go into liquidation. The Salvage or Realizable Value of its assets is estimated at INR 500 Lakhs and the costs of disposal are INR 40 Lakhs. What is the estimated Terminal Value under the Salvage or Liquidation Value method?",
+    options: [
+      "INR 460 Lakhs",
+      "INR 500 Lakhs",
+      "INR 540 Lakhs",
+      "INR 400 Lakhs"
+    ],
+    answer: 0,
+    reason: "Terminal Value under the Salvage or Liquidation Value method = Salvage or Realizable Value of Assets – Costs to be incurred for disposal = INR 500 Lakhs – INR 40 Lakhs = INR 460 Lakhs."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_80",
+    case_chapter: "chapter3",
+    question: "A company expects future earnings of INR 110 Lakhs in Year 1 and INR 121 Lakhs in Year 2. Using a discount rate of 10%, what is the total Present Value of these future earnings under the Discounted Future Earnings Method?",
+    options: [
+      "INR 180 Lakhs",
+      "INR 190.91 Lakhs",
+      "INR 200 Lakhs",
+      "INR 231 Lakhs"
+    ],
+    answer: 1,
+    reason: "Present Value of Year 1 earnings = INR 110 Lakhs ÷ 1.10 = INR 100 Lakhs. Present Value of Year 2 earnings = INR 121 Lakhs ÷ (1.10)^2 = INR 100 Lakhs. Total Present Value = INR 100 Lakhs + INR 100 Lakhs = INR 200 Lakhs. The correct option is INR 200 Lakhs."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_81",
+    case_chapter: "chapter3",
+    question: "Which of the following is an important requirement for applying the Discounted Future Earnings Method?",
+    options: [
+      "The company must have no liabilities",
+      "The company must be undergoing liquidation",
+      "The company must have only tangible assets",
+      "Accurate earnings forecasts and careful consideration of the discount rate"
+    ],
+    answer: 3,
+    reason: "The chapter explains that the Discounted Future Earnings Method requires accurate earnings forecasts and careful consideration of the discount rate to ensure the reliability of the valuation. It also states that the method should be used in conjunction with other valuation techniques for a more robust analysis."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_82",
+    case_chapter: "chapter3",
+    question: "In which of the following situations may the Cost Approach be applied?",
+    options: [
+      "Where the future profits of a company are indeterminable due to newness, dislocation, losses in business or business fluctuations",
+      "Where the company has stable future cash flows and the Income Approach is readily applicable",
+      "Where the only objective is to calculate future dividends",
+      "Where the company has no assets to value"
+    ],
+    answer: 0,
+    reason: "The chapter states that the Cost Approach may be applied where the Income Approach and/or Market Approach cannot be used, including companies whose future profits are indeterminable because of newness, dislocation, losses in business or business fluctuations."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_83",
+    case_chapter: "chapter3",
+    question: "Which of the following is a limitation of the Cost Approach?",
+    options: [
+      "It always requires the use of market-based royalty rates",
+      "It always considers all future economic benefits",
+      "It determines value only by discounting future earnings",
+      "It ignores the Amount, Duration and Timing of Future Economic Benefits arising from the Asset"
+    ],
+    answer: 3,
+    reason: "The chapter identifies as a limitation of the Cost Approach that it ignores the Amount, Duration and Timing of Future Economic Benefits arising from the Asset."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_84",
+    case_chapter: "chapter3",
+    question: "Which statement correctly describes Obsolescence under the Cost Approach?",
+    options: [
+      "Obsolescence is identical to depreciation adopted for financial reporting and tax purposes",
+      "The term Obsolescence connotes a wider meaning than the term depreciation adopted for financial reporting or tax purposes",
+      "Obsolescence relates only to physical deterioration",
+      "Obsolescence relates only to changes in market interest rates"
+    ],
+    answer: 1,
+    reason: "The chapter states that the term Obsolescence connotes a wider meaning than the term depreciation adopted for financial reporting or tax purposes."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_85",
+    case_chapter: "chapter3",
+    question: "Which valuation basis generally gives a fair measure of the Current Value of Assets when an entity is valued on a going concern basis?",
+    options: [
+      "Historical Cost",
+      "Net Realizable Value in every situation",
+      "Net Replacement Value",
+      "Original Issue Price"
+    ],
+    answer: 2,
+    reason: "The chapter explains that if an entity is being valued on a going concern basis, the Net Replacement Value of the Assets gives a fair measure of their Current Value."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_86",
+    case_chapter: "chapter3",
+    question: "How may shares and securities that are regularly traded on the BSE, NSE or another Stock Exchange be valued under the Underlying Asset Approach?",
+    options: [
+      "Based on the prices quoted on the relevant Stock Exchange, after considering whether there is regular trading",
+      "Always at their original purchase cost",
+      "Only by applying the Reproduction Cost Method",
+      "Only at their face value"
+    ],
+    answer: 0,
+    reason: "The chapter states that shares and securities regularly traded on the BSE, NSE or any other Stock Exchange may be valued based on the prices quoted thereat. It must, however, be seen that there is regular trading, as an isolated transaction may lead to erroneous results."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_87",
+    case_chapter: "chapter3",
+    question: "Which of the following is an appropriate basis for valuing Inventory under the Underlying Asset Approach, depending on the purpose and need for valuation?",
+    options: [
+      "Only the original purchase price without any adjustment",
+      "Only the Book Value of the entire business",
+      "Only the market price of the company's equity shares",
+      "Cost with due allowance for obsolete, unusable or unmarketable stocks, Current Market Prices or Net Realizable Value"
+    ],
+    answer: 3,
+    reason: "The chapter states that Inventory may be valued based on Cost with due allowance or adjustment for obsolete, unusable or unmarketable stocks, Current Market Prices or Net Realizable Value, depending on the purpose and need for valuation."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_88",
+    case_chapter: "chapter3",
+    question: "Which factors should be considered while valuing Sundry Debtors?",
+    options: [
+      "Only the original invoice value",
+      "The Time Value of recovery and appropriate allowance or adjustment towards credit risk",
+      "Only the number of customers",
+      "Only the historical cost of the company's fixed assets"
+    ],
+    answer: 1,
+    reason: "The chapter explains that Sundry Debtors may be valued considering the Time Value of recovery and after making appropriate allowance or adjustment towards credit risk, including bad debts and debts doubtful of recovery."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_89",
+    case_chapter: "chapter3",
+    question: "A company has a Contingent Liability of INR 40 Lakhs, and the valuer estimates a 50% probability of it becoming an actual liability. What amount would be considered after applying the probability factor?",
+    options: [
+      "INR 10 Lakhs",
+      "INR 15 Lakhs",
+      "INR 20 Lakhs",
+      "INR 40 Lakhs"
+    ],
+    answer: 2,
+    reason: "The chapter explains that a valuer generally applies a probability factor for Contingent Liabilities to arrive at Fair Value. Amount considered = INR 40 Lakhs × 50% = INR 20 Lakhs."
+  },
+  {
+    difficulty: "Easy",
+    case_id: "valu_ch3_90",
+    case_chapter: "chapter3",
+    question: "Which of the following correctly describes the characteristics of Market Participants under ICAI VS 101?",
+    options: [
+      "They are independent, knowledgeable, able and willing to enter into a transaction without being forced or otherwise compelled",
+      "They must be related parties and must be compelled to enter into the transaction",
+      "They need not have knowledge of the Asset or Liability",
+      "They must be the existing owners of the Asset or Liability"
+    ],
+    answer: 0,
+    reason: "As explained in the chapter with reference to Para 6.24 of ICAI VS 101, Market Participants are independent of each other, knowledgeable, able to enter into a transaction and willing to enter into a transaction; they are motivated but not forced or otherwise compelled to do so."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_91",
+    case_chapter: "chapter3",
+    question: "PQR Ltd. has a Free Cash Flow of INR 2,000 Lakhs in the last year of the explicit forecast period. The Cost of Equity is 12% and the Perpetuity Growth Rate is 4%. Calculate the Terminal Value using the Gordon Growth Model.",
+    options: [
+      "INR 24,000 Lakhs",
+      "INR 26,000 Lakhs",
+      "INR 28,000 Lakhs",
+      "INR 30,000 Lakhs"
+    ],
+    answer: 1,
+    reason: "Terminal Value = Expected FCF (n+1) ÷ (Discount Rate − Expected Growth Rate). Therefore, INR 2,000 × 1.04 ÷ (12% − 4%) = INR 2,080 ÷ 8% = INR 26,000 Lakhs."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_92",
+    case_chapter: "chapter3",
+    question: "A company is expected to generate EBITDA of INR 48 Crores at the end of the explicit forecast period. The selected peer group indicates an EV/EBITDA multiple of 7.5 times. What is the Terminal Value under the Exit Multiple method?",
+    options: [
+      "INR 320 Crores",
+      "INR 340 Crores",
+      "INR 360 Crores",
+      "INR 390 Crores"
+    ],
+    answer: 2,
+    reason: "Under the Exit Multiple method, a relevant market multiple is applied to the earnings or income measure at the end of the explicit forecast period. Terminal Value = INR 48 Crores × 7.5 = INR 360 Crores."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_93",
+    case_chapter: "chapter3",
+    question: "A valuer assumes that a business will grow perpetually at a rate substantially higher than the prevalent long-term inflationary estimates. Which of the following is the most appropriate concern regarding this assumption?",
+    options: [
+      "It establishes that the business has no requirement for future capital investment.",
+      "It ensures that the Terminal Value will reflect only the historical earnings of the business.",
+      "It may imply an unrealistic assumption of perpetual growth and significantly skew the resulting present value.",
+      "It eliminates the need to examine the capacity utilisation at the end of the explicit forecast period."
+    ],
+    answer: 2,
+    reason: "The ICAI material explains that an assumed growth rate higher than prevalent long-term inflationary estimates implies that the business will continue to grow ad infinitum, which is almost impossible for a company or entity. Unrealistic Terminal Value assumptions can profoundly skew the resulting present value."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_94",
+    case_chapter: "chapter3",
+    question: "A company projects future earnings of INR 165 Lakhs in Year 1 and INR 242 Lakhs in Year 2. The appropriate discount rate is 10% per annum. Calculate the total present value of the projected earnings under the Discounted Future Earnings Method.",
+    options: [
+      "INR 340 Lakhs",
+      "INR 350 Lakhs",
+      "INR 360 Lakhs",
+      "INR 375 Lakhs"
+    ],
+    answer: 1,
+    reason: "PV of Year 1 earnings = INR 165 ÷ 1.10 = INR 150 Lakhs. PV of Year 2 earnings = INR 242 ÷ (1.10 × 1.10) = INR 200 Lakhs. Total Present Value = INR 150 + INR 200 = INR 350 Lakhs."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_95",
+    case_chapter: "chapter3",
+    question: "While determining the appropriate Royalty Rate for an intangible asset, a licensee agrees to pay an upfront fee and share future marketing or advertising expenses. All other relevant factors being equal, what may be the likely effect on the Royalty Rate?",
+    options: [
+      "The Royalty Rate will necessarily increase.",
+      "The licensee may be able to negotiate a lower Royalty Rate.",
+      "The Royalty Rate must remain equal to the rate for perpetual rights.",
+      "The Royalty Rate will be determined only by the useful life of the asset."
+    ],
+    answer: 1,
+    reason: "The ICAI material identifies upfront fees and ongoing cost sharing as factors affecting Royalty Rates. Licensees willing to pay an upfront fee or share future marketing or advertising expenses may be able to negotiate a lower Royalty Rate."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_96",
+    case_chapter: "chapter3",
+    question: "Under the Multi-Period Excess Earnings Method, the after-tax cash flows of an entity or combined asset group are INR 90 Lakhs. The Contributory Asset Charges are INR 8 Lakhs for working capital, INR 10 Lakhs for fixed assets, INR 5 Lakhs for assembled workforce, INR 6 Lakhs for another intangible asset and INR 3 Lakhs for goodwill. Calculate the incremental after-tax cash flows attributable to the intangible asset being valued.",
+    options: [
+      "INR 55 Lakhs",
+      "INR 58 Lakhs",
+      "INR 61 Lakhs",
+      "INR 64 Lakhs"
+    ],
+    answer: 2,
+    reason: "CAC should be considered for all assets, excluding goodwill, that contribute to the realisation of cash flows. Total relevant CAC = INR 8 + INR 10 + INR 5 + INR 6 = INR 29 Lakhs. Incremental after-tax cash flows = INR 90 − INR 29 = INR 61 Lakhs."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_97",
+    case_chapter: "chapter3",
+    question: "An intangible asset is valued under the With and Without Method. The projected cash flows with the asset are INR 150 Lakhs in Year 1 and INR 200 Lakhs in Year 2. The projected cash flows without the asset are INR 100 Lakhs in Year 1 and INR 120 Lakhs in Year 2. At a discount rate of 10%, calculate the present value of the differential cash flows.",
+    options: [
+      "INR 105.45 Lakhs",
+      "INR 111.57 Lakhs",
+      "INR 115.70 Lakhs",
+      "INR 130.00 Lakhs"
+    ],
+    answer: 1,
+    reason: "Year 1 differential cash flow = INR 150 − INR 100 = INR 50 Lakhs. Year 2 differential cash flow = INR 200 − INR 120 = INR 80 Lakhs. Present Value = INR 50 ÷ 1.10 + INR 80 ÷ 1.21 = INR 45.45 + INR 66.12 = approximately INR 111.57 Lakhs."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_98",
+    case_chapter: "chapter3",
+    question: "A non-compete arrangement is valued using the With and Without Method. The differential cash flows are INR 100 Lakhs in Year 1 and INR 120 Lakhs in Year 2. The discount rate is 10%, and the probability of competing is estimated at 60%. Applying the probability factor to the present value of differential cash flows, what is the Fair Value of the non-compete arrangement?",
+    options: [
+      "INR 100.00 Lakhs",
+      "INR 108.00 Lakhs",
+      "INR 114.05 Lakhs",
+      "INR 120.00 Lakhs"
+    ],
+    answer: 2,
+    reason: "PV of differential cash flows = INR 100 ÷ 1.10 + INR 120 ÷ 1.21 = INR 90.91 + INR 99.17 = INR 190.08 Lakhs. Fair Value after applying the 60% probability factor = INR 190.08 × 60% = approximately INR 114.05 Lakhs."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_99",
+    case_chapter: "chapter3",
+    question: "A valuer has calculated the present value of after-tax royalty savings under the Relief from Royalty Method. The nature of the intangible asset and the purpose of the engagement make a Tax Amortization Benefit appropriate. What should the valuer do?",
+    options: [
+      "Add the Tax Amortization Benefit to the overall value of the intangible asset.",
+      "Deduct the Tax Amortization Benefit from the projected revenue before calculating royalty.",
+      "Replace the discount rate with the applicable tax rate.",
+      "Ignore the Tax Amortization Benefit because it is not considered under the Relief from Royalty Method."
+    ],
+    answer: 0,
+    reason: "Under the Relief from Royalty Method, if appropriate considering the nature of the asset and the purpose of the engagement, the Tax Amortization Benefits should be added to the overall value of the intangible asset."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_100",
+    case_chapter: "chapter3",
+    question: "A valuer estimates the cost of recreating an existing specialised machine with substantially the same utility. The replacement machine may have different physical properties and a different design, but it performs the same function. Which method is most appropriate?",
+    options: [
+      "Reproduction Cost Method, because an exact replica is required.",
+      "Net Realizable Value Method, because the machine is not identical.",
+      "Discounted Future Earnings Method, because the asset generates economic benefits.",
+      "Replacement Cost Method, because the recreated asset has substantially the same utility."
+    ],
+    answer: 3,
+    reason: "The Replacement Cost Method estimates the cost to recreate an asset with substantially the same utility or comparable utility. The Reproduction Cost Method, in contrast, estimates the cost to recreate a replica of the asset."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_101",
+    case_chapter: "chapter3",
+    question: "A company is being valued under the Underlying Asset Approach. The value of its assets is INR 1,200 Lakhs. Its liabilities, excluding preference share dues and a contingent liability, are INR 450 Lakhs. The contingent liability is INR 50 Lakhs and the valuer applies a 50% probability factor. Preference share dues amount to INR 75 Lakhs. There are 10 Lakhs equity shares. Calculate the value per equity share.",
+    options: [
+      "INR 55",
+      "INR 60",
+      "INR 65",
+      "INR 70"
+    ],
+    answer: 2,
+    reason: "Contingent liability considered = INR 50 × 50% = INR 25 Lakhs. Total liabilities and preference share dues = INR 450 + INR 25 + INR 75 = INR 550 Lakhs. Value attributable to equity shareholders = INR 1,200 − INR 550 = INR 650 Lakhs. Value per equity share = INR 650 Lakhs ÷ 10 Lakhs shares = INR 65."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_102",
+    case_chapter: "chapter3",
+    question: "A company is being valued on a going concern basis under the Underlying Asset Approach. Its Net Replacement Value of individual assets has been determined, but the company also has an internally developed trademark that is not reflected in its books. What is the appropriate treatment?",
+    options: [
+      "Ignore the trademark because it is not recorded in the books.",
+      "Consider and value the intangible asset and add it, where appropriate, to recognise the inherent strength of the entity.",
+      "Replace the Net Replacement Value of all assets with their Net Realizable Value.",
+      "Include the trademark only if the company is being wound up."
+    ],
+    answer: 1,
+    reason: "The ICAI material states that intangible assets shall be considered whether or not they are reflected in the books. It also explains that Net Replacement Value of individual assets does not represent the inherent strength of the entity and intangible assets may need to be valued and added."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_103",
+    case_chapter: "chapter3",
+    question: "While valuing a company's fixed assets under the Underlying Asset Approach, a valuer has estimated the Replacement or Reproduction Cost. Which sequence most appropriately reflects the further steps described in the ICAI material?",
+    options: [
+      "Estimate the Market Capitalisation, determine the discount rate and deduct contingent liabilities.",
+      "Estimate the Net Realizable Value, calculate the Royalty Rate and add the Tax Amortization Benefit.",
+      "Estimate the Total Economic Life and Effective Age, reflect obsolescence by depreciating the Replacement or Reproduction Cost over the new Economic Life, and adjust for additional functional or economic obsolescence.",
+      "Use the historical Book Value without further adjustment and add the value of goodwill."
+    ],
+    answer: 2,
+    reason: "For fixed assets, the stated steps include estimating Replacement or Reproduction Cost, estimating Total Economic Life and Effective Age, depreciating the cost over the new Economic Life to reflect obsolescence related to Effective Age, and adjusting for additional functional or economic obsolescence."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_104",
+    case_chapter: "chapter3",
+    question: "An asset is sold immediately because the owner is under severe financial pressure. The asset is not exposed to the market for the period that is usual and customary for similar transactions. How should this transaction be considered when determining Fair Value?",
+    options: [
+      "It does not represent an Orderly Transaction because it is a forced transaction without the usual market exposure period.",
+      "It necessarily represents an Orderly Transaction because the asset has been sold.",
+      "It represents an Orderly Transaction whenever the sale price is observable.",
+      "It establishes the Fair Value because the seller has accepted the price."
+    ],
+    answer: 0,
+    reason: "An Orderly Transaction assumes exposure to the market for a period before the Valuation Date to allow for usual and customary marketing activities. It is not a forced transaction."
+  },
+  {
+    difficulty: "Medium",
+    case_id: "valu_ch3_105",
+    case_chapter: "chapter3",
+    question: "A valuer is selecting market multiples for a company whose historical EBITDA includes an unusual one-time gain. The company also holds excess cash and a non-operating asset that does not contribute to EBITDA. Which approach is most appropriate for a more meaningful comparison with peer companies?",
+    options: [
+      "Use the historical EBITDA without adjustment and include all assets in Enterprise Value.",
+      "Use the P/E multiple without examining differences in capital structure.",
+      "Use forward earnings normalised for unusual items and remove non-operating assets and excess cash from Enterprise Value, as appropriate.",
+      "Include the non-operating asset in Enterprise Value but exclude its value from the valuation analysis."
+    ],
+    answer: 2,
+    reason: "The ICAI material recommends using forward estimates of earnings, preferably normalised for unusual items. It also explains that non-operating assets that do not contribute to EBITDA and excess cash should be removed from Enterprise Value to avoid distortion of multiples."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_106",
+    case_chapter: "chapter3",
+    question: "A company is expected to generate EBITDA of INR 82 Crores at the end of Year 5. A suitable peer group EV/EBITDA multiple is 6.5 times. The discount factor applicable for Year 5 is 0.5674. Calculate the Present Value of the Terminal Value under the Exit Multiple method.",
+    options: [
+      "INR 283.15 Crores",
+      "INR 302.42 Crores",
+      "INR 320.11 Crores",
+      "INR 346.45 Crores"
+    ],
+    answer: 1,
+    reason: "Terminal Value = EBITDA × EV/EBITDA Multiple = INR 82 × 6.5 = INR 533 Crores. Present Value of Terminal Value = INR 533 × 0.5674 = INR 302.42 Crores. The Exit Multiple method applies market multiples to the earnings or income measure at the end of the explicit forecast period."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_107",
+    case_chapter: "chapter3",
+    question: "A company has Free Cash Flow of INR 600 Lakhs in the last year of the explicit forecast period. The Cost of Equity is 11%, the Perpetuity Growth Rate is 3%, and the discount factor applicable at the end of Year 5 is 0.5935. Calculate the Present Value of the Terminal Value using the Gordon Growth Model.",
+    options: [
+      "INR 4,325.10 Lakhs",
+      "INR 4,584.79 Lakhs",
+      "INR 4,725.00 Lakhs",
+      "INR 5,150.00 Lakhs"
+    ],
+    answer: 1,
+    reason: "Expected FCF for Year 6 = INR 600 × 1.03 = INR 618 Lakhs. Terminal Value = INR 618 ÷ (11% − 3%) = INR 7,725 Lakhs. Present Value of Terminal Value = INR 7,725 × 0.5935 = INR 4,584.79 Lakhs."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_108",
+    case_chapter: "chapter3",
+    question: "A company projects future earnings of INR 180 Lakhs, INR 220 Lakhs and INR 260 Lakhs for the next three years. The respective discount factors are 0.893, 0.797 and 0.712. Calculate the total Present Value of the projected earnings under the Discounted Future Earnings Method.",
+    options: [
+      "INR 501.20 Lakhs",
+      "INR 510.40 Lakhs",
+      "INR 521.20 Lakhs",
+      "INR 540.60 Lakhs"
+    ],
+    answer: 2,
+    reason: "PV of Year 1 = INR 180 × 0.893 = INR 160.74 Lakhs. PV of Year 2 = INR 220 × 0.797 = INR 175.34 Lakhs. PV of Year 3 = INR 260 × 0.712 = INR 185.12 Lakhs. Total Present Value = INR 160.74 + INR 175.34 + INR 185.12 = INR 521.20 Lakhs."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_109",
+    case_chapter: "chapter3",
+    question: "A trademark is valued under the Relief from Royalty Method. Its projected Net Sales for the next three years are INR 1,000 Lakhs, INR 1,200 Lakhs and INR 1,500 Lakhs. The applicable Royalty Rate is 5%. Annual expenses associated with the intangible asset are INR 5 Lakhs, INR 6 Lakhs and INR 7 Lakhs respectively. The applicable tax rate is 25%, and the discount factors are 0.9091, 0.8264 and 0.7513 respectively. Calculate the Present Value of the after-tax royalty savings. Assume the intangible asset has a limited useful life and no terminal value is applicable.",
+    options: [
+      "INR 98.47 Lakhs",
+      "INR 102.47 Lakhs",
+      "INR 108.25 Lakhs",
+      "INR 112.60 Lakhs"
+    ],
+    answer: 1,
+    reason: "Year 1: Royalty = INR 1,000 × 5% = INR 50 Lakhs; after associated expenses = INR 45 Lakhs; after tax = INR 33.75 Lakhs; PV = INR 33.75 × 0.9091 = INR 30.6821 Lakhs. Year 2: Royalty = INR 60 Lakhs; after expenses = INR 54 Lakhs; after tax = INR 40.50 Lakhs; PV = INR 40.50 × 0.8264 = INR 33.4692 Lakhs. Year 3: Royalty = INR 75 Lakhs; after expenses = INR 68 Lakhs; after tax = INR 51 Lakhs; PV = INR 51 × 0.7513 = INR 38.3163 Lakhs. Total Present Value = INR 102.47 Lakhs approximately."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_110",
+    case_chapter: "chapter3",
+    question: "An intangible asset is valued using the Multi-Period Excess Earnings Method. The projected net after-tax cash flows of the combined asset group are INR 100 Lakhs, INR 120 Lakhs and INR 140 Lakhs for the next three years. Annual Contributory Asset Charges are INR 10 Lakhs for working capital, INR 15 Lakhs for fixed assets, INR 5 Lakhs for assembled workforce, INR 8 Lakhs for other intangible assets and INR 20 Lakhs for goodwill. The applicable discount factors are 0.9091, 0.8264 and 0.7513. Calculate the Present Value of the incremental after-tax cash flows attributable to the intangible asset.",
+    options: [
+      "INR 187.61 Lakhs",
+      "INR 196.55 Lakhs",
+      "INR 200.76 Lakhs",
+      "INR 214.32 Lakhs"
+    ],
+    answer: 2,
+    reason: "Contributory Asset Charges are considered for all assets, excluding goodwill, that contribute to the realisation of cash flows. Annual CAC = INR 10 + INR 15 + INR 5 + INR 8 = INR 38 Lakhs. Incremental after-tax cash flows are INR 62 Lakhs, INR 82 Lakhs and INR 102 Lakhs. Present Value = (62 × 0.9091) + (82 × 0.8264) + (102 × 0.7513) = INR 56.3642 + INR 67.7648 + INR 76.6326 = INR 200.76 Lakhs approximately."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_111",
+    case_chapter: "chapter3",
+    question: "A non-compete arrangement is valued using the With and Without Method. The projected cash flows with the non-compete arrangement are INR 220 Lakhs, INR 280 Lakhs and INR 350 Lakhs for the next three years. The corresponding cash flows without the arrangement are INR 140 Lakhs, INR 180 Lakhs and INR 230 Lakhs. The discount factors are 0.9091, 0.8264 and 0.7513 respectively. The probability of competing is estimated at 40%. Calculate the Fair Value after applying the probability factor to the Present Value of differential cash flows.",
+    options: [
+      "INR 90.41 Lakhs",
+      "INR 98.21 Lakhs",
+      "INR 105.12 Lakhs",
+      "INR 112.50 Lakhs"
+    ],
+    answer: 1,
+    reason: "Differential cash flows are INR 80 Lakhs, INR 100 Lakhs and INR 120 Lakhs. Present Value = (80 × 0.9091) + (100 × 0.8264) + (120 × 0.7513) = INR 72.728 + INR 82.64 + INR 90.156 = INR 245.524 Lakhs. Applying the 40% probability factor = INR 245.524 × 40% = INR 98.21 Lakhs approximately."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_112",
+    case_chapter: "chapter3",
+    question: "A Market Participant estimates that INR 500 Lakhs would be required to recreate a specialised asset with substantially the same utility as the asset being valued. The asset is subject to physical obsolescence of INR 40 Lakhs, functional obsolescence of INR 25 Lakhs and economic obsolescence of INR 15 Lakhs. Calculate the value under the Replacement Cost Method after adjusting for obsolescence.",
+    options: [
+      "INR 385 Lakhs",
+      "INR 400 Lakhs",
+      "INR 420 Lakhs",
+      "INR 450 Lakhs"
+    ],
+    answer: 2,
+    reason: "Replacement Cost Method considers the cost to recreate an asset with substantially the same utility, adjusted for obsolescence. Total obsolescence = INR 40 + INR 25 + INR 15 = INR 80 Lakhs. Value of the asset = INR 500 − INR 80 = INR 420 Lakhs."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_113",
+    case_chapter: "chapter3",
+    question: "Under the Underlying Asset Approach, the value of assets of a company is INR 850 Lakhs. Its recorded liabilities are INR 300 Lakhs. A contingent liability of INR 80 Lakhs has a 50% probability of becoming an actual liability. Unprovided taxation amounts to INR 20 Lakhs and unprovided proposed dividend amounts to INR 10 Lakhs. Preference share dues are INR 50 Lakhs. The company has 5 Lakhs equity shares. Calculate the value per equity share.",
+    options: [
+      "INR 82",
+      "INR 84",
+      "INR 86",
+      "INR 88"
+    ],
+    answer: 2,
+    reason: "Contingent liability considered = INR 80 × 50% = INR 40 Lakhs. Total liabilities and preference share dues = INR 300 + INR 40 + INR 20 + INR 10 + INR 50 = INR 420 Lakhs. Value attributable to equity shareholders = INR 850 − INR 420 = INR 430 Lakhs. Value per equity share = INR 430 Lakhs ÷ 5 Lakhs shares = INR 86."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_114",
+    case_chapter: "chapter3",
+    question: "A company is being valued on a winding-up basis. Its assets have a Net Realizable Value of INR 550 Lakhs before considering notional tax on realization. The notional tax applicable on realization is INR 30 Lakhs and the Cost of Liquidation is INR 20 Lakhs. The company's liabilities amount to INR 150 Lakhs. There are 5 Lakhs equity shares. Calculate the value per equity share under the stated assumptions.",
+    options: [
+      "INR 60",
+      "INR 65",
+      "INR 70",
+      "INR 75"
+    ],
+    answer: 2,
+    reason: "Net Realizable Value after notional tax and Cost of Liquidation = INR 550 − INR 30 − INR 20 = INR 500 Lakhs. Value attributable to equity shareholders = INR 500 − INR 150 = INR 350 Lakhs. Value per equity share = INR 350 Lakhs ÷ 5 Lakhs shares = INR 70."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_115",
+    case_chapter: "chapter3",
+    question: "Sundry Debtors of a company amount to INR 200 Lakhs and are expected to be recovered after two years. Based on the credit risk assessment, 10% of the debtors are considered doubtful of recovery. The appropriate discount rate to reflect the Time Value of recovery is 8% per annum. Assuming the expected recoverable amount is discounted for two years, calculate the value of Sundry Debtors.",
+    options: [
+      "INR 148.50 Lakhs",
+      "INR 154.32 Lakhs",
+      "INR 160.00 Lakhs",
+      "INR 166.67 Lakhs"
+    ],
+    answer: 1,
+    reason: "Expected recoverable amount = INR 200 × 90% = INR 180 Lakhs. Present Value = INR 180 ÷ (1.08)² = INR 180 ÷ 1.1664 = INR 154.32 Lakhs approximately. The valuation considers both the Time Value of recovery and an allowance for credit risk."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_116",
+    case_chapter: "chapter3",
+    question: "A valuer selects three comparable companies having Enterprise Values and EBITDA as follows: Company A: EV INR 960 Crores and EBITDA INR 120 Crores; Company B: EV INR 1,170 Crores and EBITDA INR 130 Crores; Company C: EV INR 840 Crores and EBITDA INR 120 Crores. The arithmetic average EV/EBITDA multiple is applied to a target company's normalized EBITDA of INR 150 Crores. The target company has debt of INR 300 Crores and cash of INR 50 Crores. Calculate the value of equity.",
+    options: [
+      "INR 900 Crores",
+      "INR 925 Crores",
+      "INR 950 Crores",
+      "INR 975 Crores"
+    ],
+    answer: 2,
+    reason: "Company A EV/EBITDA = 960 ÷ 120 = 8 times. Company B = 1,170 ÷ 130 = 9 times. Company C = 840 ÷ 120 = 7 times. Average multiple = (8 + 9 + 7) ÷ 3 = 8 times. Target Enterprise Value = INR 150 × 8 = INR 1,200 Crores. Equity Value = Enterprise Value − Debt + Cash = INR 1,200 − INR 300 + INR 50 = INR 950 Crores."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_117",
+    case_chapter: "chapter3",
+    question: "A company's market capitalisation is INR 1,000 Crores, debt is INR 300 Crores and cash is INR 80 Crores. It also holds a non-operating investment of INR 120 Crores that does not contribute to EBITDA. Its normalized EBITDA from continuing operations is INR 150 Crores. After making the relevant adjustments to Enterprise Value, calculate the EV/EBITDA multiple.",
+    options: [
+      "6.83 times",
+      "7.00 times",
+      "7.33 times",
+      "8.13 times"
+    ],
+    answer: 2,
+    reason: "Enterprise Value before adjustment for the non-operating investment = INR 1,000 + INR 300 − INR 80 = INR 1,220 Crores. The non-operating investment that does not contribute to EBITDA is removed: adjusted Enterprise Value = INR 1,220 − INR 120 = INR 1,100 Crores. Adjusted EV/EBITDA = INR 1,100 ÷ INR 150 = 7.33 times approximately."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_118",
+    case_chapter: "chapter3",
+    question: "A company is valued using the Underlying Asset Approach. The Book Values of cash, accounts receivable and inventory are INR 12 Lakhs, INR 25 Lakhs and INR 60 Lakhs respectively. The Book Value of net fixed assets is INR 180 Lakhs, but their market value is estimated at 150% of Book Value. All liabilities are assumed to have market values equal to their Book Values and comprise accounts payable of INR 16 Lakhs, short-term borrowings of INR 52 Lakhs and long-term debt of INR 99 Lakhs. The company has 20,000 equity shares. Calculate the adjusted equity value per share.",
+    options: [
+      "INR 900",
+      "INR 950",
+      "INR 1,000",
+      "INR 1,050"
+    ],
+    answer: 2,
+    reason: "Market Value of net fixed assets = INR 180 × 150% = INR 270 Lakhs. Total market value of assets = INR 12 + INR 25 + INR 60 + INR 270 = INR 367 Lakhs. Total liabilities = INR 16 + INR 52 + INR 99 = INR 167 Lakhs. Adjusted equity value = INR 367 − INR 167 = INR 200 Lakhs. Adjusted equity value per share = INR 200 Lakhs ÷ 20,000 = INR 1,000."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_119",
+    case_chapter: "chapter3",
+    question: "A valuer estimates the Fair Value of an asset on the Valuation Date. No directly observable price is available in the relevant market, so the valuer applies another appropriate valuation technique to estimate the price. Which statement most accurately describes the basis of this Fair Value measurement?",
+    options: [
+      "It must be the historical cost incurred by the present owner to acquire the asset.",
+      "It must be the price accepted in a forced sale, irrespective of market exposure.",
+      "It must be the entity-specific value based only on the present owner's intended use.",
+      "It is the price that would be received to sell the asset in an orderly transaction between market participants at the Valuation Date, under current market conditions, whether directly observable or estimated using another valuation technique."
+    ],
+    answer: 3,
+    reason: "The ICAI definition of Fair Value is the price that would be received to sell an asset or paid to transfer a liability in an orderly transaction between market participants at the Valuation Date. Fair Value is based on the Exit Price under current market conditions, regardless of whether the price is directly observable or estimated using another valuation technique."
+  },
+  {
+    difficulty: "Hard",
+    case_id: "valu_ch3_120",
+    case_chapter: "chapter3",
+    question: "A company has entered into a transaction for an asset with a related party. The valuer is considering whether the transaction price can be used as an input to a Fair Value measurement. Which of the following is correct under the characteristics of Market Participants described in the ICAI material?",
+    options: [
+      "The price in a related party transaction may be used as an input if the entity has evidence that the transaction was entered into at market terms.",
+      "A related party transaction price must always be used because the parties have direct knowledge of the asset.",
+      "A related party transaction price can never be considered under any circumstances.",
+      "The price can be used only when the related parties are forced to enter into the transaction."
+    ],
+    answer: 0,
+    reason: "Market Participants are generally independent of each other and are not related parties. However, the ICAI material specifically states that the price in a related party transaction may be used as an input to a Fair Value measurement if the entity has evidence that the transaction was entered into at market terms."
+  }
 
 
   
