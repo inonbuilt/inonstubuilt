@@ -5673,7 +5673,6 @@ const caseStudies = [
 // chapter3
 {
   case_id: "valu_ch3_CS01",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -5740,7 +5739,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS02",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -5807,7 +5805,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS03",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -5874,7 +5871,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS04",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -5941,7 +5937,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS05",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6008,7 +6003,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS06",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6075,7 +6069,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS07",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6142,7 +6135,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS08",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6209,7 +6201,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS09",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6276,7 +6267,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS10",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6343,7 +6333,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS11",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6410,7 +6399,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS12",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6477,7 +6465,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS13",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6544,7 +6531,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS14",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6611,7 +6597,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS15",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6678,7 +6663,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS16",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6745,7 +6729,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS17",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6812,7 +6795,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS18",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6879,7 +6861,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS19",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -6946,7 +6927,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS20",
-  chapter: "chapter3",
   difficulty: "Easy",
   chapter: "Chapter3",
   caseText: `
@@ -7013,7 +6993,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS21",
-  chapter: "chapter3",
   difficulty: "Medium",
   chapter: "Chapter3",
   caseText: `
@@ -7080,7 +7059,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS22",
-  chapter: "chapter3",
   difficulty: "Medium",
   chapter: "Chapter3",
   caseText: `
@@ -7147,7 +7125,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS23",
-  chapter: "chapter3",
   difficulty: "Medium",
   chapter: "Chapter3",
   caseText: `
@@ -7214,7 +7191,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS24",
-  chapter: "chapter3",
   difficulty: "Medium",
   chapter: "Chapter3",
   caseText: `
@@ -7281,7 +7257,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS25",
-  chapter: "chapter3",
   difficulty: "Medium",
   chapter: "Chapter3",
   caseText: `
@@ -7348,7 +7323,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS26",
-  chapter: "chapter3",
   difficulty: "Medium",
   chapter: "Chapter3",
   caseText: `
@@ -7415,7 +7389,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS27",
-  chapter: "chapter3",
   difficulty: "Medium",
   chapter: "Chapter3",
   caseText: `
@@ -7482,7 +7455,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS28",
-  chapter: "chapter3",
   difficulty: "Medium",
   chapter: "Chapter3",
   caseText: `
@@ -7549,7 +7521,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS29",
-  chapter: "chapter3",
   difficulty: "Medium",
   chapter: "Chapter3",
   caseText: `
@@ -7616,7 +7587,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS30",
-  chapter: "chapter3",
   difficulty: "Medium",
   chapter: "Chapter3",
   caseText: `
@@ -7683,7 +7653,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS31",
-  chapter: "chapter3",
   difficulty: "Hard",
   chapter: "Chapter3",
   caseText: `
@@ -7750,7 +7719,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS32",
-  chapter: "chapter3",
   difficulty: "Hard",
   chapter: "Chapter3",
   caseText: `
@@ -7817,7 +7785,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS33",
-  chapter: "chapter3",
   difficulty: "Hard",
   chapter: "Chapter3",
   caseText: `
@@ -7884,7 +7851,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS34",
-  chapter: "chapter3",
   difficulty: "Hard",
   chapter: "Chapter3",
   caseText: `
@@ -7951,7 +7917,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS35",
-  chapter: "chapter3",
   difficulty: "Hard",
   chapter: "Chapter3",
   caseText: `
@@ -8018,7 +7983,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS36",
-  chapter: "chapter3",
   difficulty: "Hard",
   chapter: "Chapter3",
   caseText: `
@@ -8085,7 +8049,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS37",
-  chapter: "chapter3",
   difficulty: "Hard",
   chapter: "Chapter3",
   caseText: `
@@ -8152,7 +8115,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS38",
-  chapter: "chapter3",
   difficulty: "Hard",
   chapter: "Chapter3",
   caseText: `
@@ -8219,7 +8181,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS39",
-  chapter: "chapter3",
   difficulty: "Hard",
   chapter: "Chapter3",
   caseText: `
@@ -8286,7 +8247,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch3_CS40",
-  chapter: "chapter3",
   difficulty: "Hard",
   chapter: "Chapter3",
   caseText: `
@@ -9473,7 +9433,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch3_CS41",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -9541,7 +9500,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS42",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -9609,7 +9567,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS43",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -9677,7 +9634,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS44",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -9745,7 +9701,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS45",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -9813,7 +9768,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS46",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -9881,7 +9835,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS47",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -9949,7 +9902,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS48",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10017,7 +9969,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS49",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10085,7 +10036,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS50",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10152,7 +10102,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch3_CS51",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10220,7 +10169,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS52",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10288,7 +10236,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS53",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10356,7 +10303,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS54",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10424,7 +10370,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS55",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10492,7 +10437,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS56",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10560,7 +10504,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS57",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10628,7 +10571,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS58",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10696,7 +10638,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS59",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10764,7 +10705,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS60",
-  chapter: "chapter3",
     difficulty: "Easy",
     chapter: "Chapter3",
     caseText: `
@@ -10831,7 +10771,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch3_CS61",
-  chapter: "chapter3",
     difficulty: "Medium",
     chapter: "Chapter3",
     caseText: `
@@ -10899,7 +10838,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS62",
-  chapter: "chapter3",
     difficulty: "Medium",
     chapter: "Chapter3",
     caseText: `
@@ -10967,7 +10905,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS63",
-  chapter: "chapter3",
     difficulty: "Medium",
     chapter: "Chapter3",
     caseText: `
@@ -11035,7 +10972,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS64",
-  chapter: "chapter3",
     difficulty: "Medium",
     chapter: "Chapter3",
     caseText: `
@@ -11103,7 +11039,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS65",
-  chapter: "chapter3",
     difficulty: "Medium",
     chapter: "Chapter3",
     caseText: `
@@ -11171,7 +11106,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS66",
-  chapter: "chapter3",
     difficulty: "Medium",
     chapter: "Chapter3",
     caseText: `
@@ -11239,7 +11173,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS67",
-  chapter: "chapter3",
     difficulty: "Medium",
     chapter: "Chapter3",
     caseText: `
@@ -11307,7 +11240,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS68",
-  chapter: "chapter3",
     difficulty: "Medium",
     chapter: "Chapter3",
     caseText: `
@@ -11375,7 +11307,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS69",
-  chapter: "chapter3",
     difficulty: "Medium",
     chapter: "Chapter3",
     caseText: `
@@ -11443,7 +11374,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS70",
-  chapter: "chapter3",
     difficulty: "Medium",
     chapter: "Chapter3",
     caseText: `
@@ -11510,7 +11440,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch3_CS71",
-  chapter: "chapter3",
     difficulty: "Hard",
     chapter: "Chapter3",
     caseText: `
@@ -11579,7 +11508,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS72",
-  chapter: "chapter3",
     difficulty: "Hard",
     chapter: "Chapter3",
     caseText: `
@@ -11648,7 +11576,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS73",
-  chapter: "chapter3",
     difficulty: "Hard",
     chapter: "Chapter3",
     caseText: `
@@ -11717,7 +11644,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS74",
-  chapter: "chapter3",
     difficulty: "Hard",
     chapter: "Chapter3",
     caseText: `
@@ -11786,7 +11712,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS75",
-  chapter: "chapter3",
     difficulty: "Hard",
     chapter: "Chapter3",
     caseText: `
@@ -11855,7 +11780,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS76",
-  chapter: "chapter3",
     difficulty: "Hard",
     chapter: "Chapter3",
     caseText: `
@@ -11924,7 +11848,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS77",
-  chapter: "chapter3",
     difficulty: "Hard",
     chapter: "Chapter3",
     caseText: `
@@ -11992,7 +11915,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS78",
-  chapter: "chapter3",
     difficulty: "Hard",
     chapter: "Chapter3",
     caseText: `
@@ -12060,7 +11982,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS79",
-  chapter: "chapter3",
     difficulty: "Hard",
     chapter: "Chapter3",
     caseText: `
@@ -12128,7 +12049,6 @@ const caseStudies = [
 
   {
     case_id: "valu_ch3_CS80",
-  chapter: "chapter3",
     difficulty: "Hard",
     chapter: "Chapter3",
     caseText: `
@@ -13104,7 +13024,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS02",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -13306,7 +13225,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS05",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -13373,7 +13291,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS06",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -13441,7 +13358,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS07",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -13509,7 +13425,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS08",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -13577,7 +13492,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS09",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -13645,7 +13559,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS10",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -13712,7 +13625,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS11",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -13780,7 +13692,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS12",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -13848,7 +13759,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS13",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -13916,7 +13826,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS14",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -13984,7 +13893,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS15",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -14051,7 +13959,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS16",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -14119,7 +14026,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS17",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -14187,7 +14093,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS18",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -14255,7 +14160,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS19",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -14323,7 +14227,6 @@ const caseStudies = [
 
 {
   case_id: "valu_ch4_CS20",
-  chapter: "chapter4",
   difficulty: "Easy",
   chapter: "Chapter4",
   caseText: `
@@ -14390,7 +14293,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS21",
-  chapter: "chapter4",
   difficulty: "Medium",
   chapter: "Chapter4",
   caseText: `
@@ -14457,7 +14359,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS22",
-  chapter: "chapter4",
   difficulty: "Medium",
   chapter: "Chapter4",
   caseText: `
@@ -14524,7 +14425,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS23",
-  chapter: "chapter4",
   difficulty: "Medium",
   chapter: "Chapter4",
   caseText: `
@@ -14591,7 +14491,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS24",
-  chapter: "chapter4",
   difficulty: "Medium",
   chapter: "Chapter4",
   caseText: `
@@ -14658,7 +14557,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS25",
-  chapter: "chapter4",
   difficulty: "Medium",
   chapter: "Chapter4",
   caseText: `
@@ -14725,7 +14623,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS26",
-  chapter: "chapter4",
   difficulty: "Medium",
   chapter: "Chapter4",
   caseText: `
@@ -14792,7 +14689,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS27",
-  chapter: "chapter4",
   difficulty: "Medium",
   chapter: "Chapter4",
   caseText: `
@@ -14859,7 +14755,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS28",
-  chapter: "chapter4",
   difficulty: "Medium",
   chapter: "Chapter4",
   caseText: `
@@ -14926,7 +14821,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS29",
-  chapter: "chapter4",
   difficulty: "Medium",
   chapter: "Chapter4",
   caseText: `
@@ -14993,7 +14887,6 @@ const caseStudies = [
 },
 {
   case_id: "valu_ch4_CS30",
-  chapter: "chapter4",
   difficulty: "Medium",
   chapter: "Chapter4",
   caseText: `
@@ -15060,7 +14953,6 @@ const caseStudies = [
 },
   {
     case_id: "valu_ch4_CS31",
-  chapter: "chapter4",
     difficulty: "Hard",
     chapter: "Chapter4",
     caseText: `
@@ -15126,7 +15018,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch4_CS32",
-  chapter: "chapter4",
     difficulty: "Hard",
     chapter: "Chapter4",
     caseText: `
@@ -15192,7 +15083,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch4_CS33",
-  chapter: "chapter4",
     difficulty: "Hard",
     chapter: "Chapter4",
     caseText: `
@@ -15258,7 +15148,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch4_CS34",
-  chapter: "chapter4",
     difficulty: "Hard",
     chapter: "Chapter4",
     caseText: `
@@ -15324,7 +15213,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch4_CS35",
-  chapter: "chapter4",
     difficulty: "Hard",
     chapter: "Chapter4",
     caseText: `
@@ -15390,7 +15278,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch4_CS36",
-  chapter: "chapter4",
     difficulty: "Hard",
     chapter: "Chapter4",
     caseText: `
@@ -15456,7 +15343,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch4_CS37",
-  chapter: "chapter4",
     difficulty: "Hard",
     chapter: "Chapter4",
     caseText: `
@@ -15522,7 +15408,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch4_CS38",
-  chapter: "chapter4",
     difficulty: "Hard",
     chapter: "Chapter4",
     caseText: `
@@ -15588,7 +15473,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch4_CS39",
-  chapter: "chapter4",
     difficulty: "Hard",
     chapter: "Chapter4",
     caseText: `
@@ -15654,7 +15538,6 @@ const caseStudies = [
   },
   {
     case_id: "valu_ch4_CS40",
-  chapter: "chapter4",
     difficulty: "Hard",
     chapter: "Chapter4",
     caseText: `
@@ -19237,8 +19120,8 @@ const caseStudies = [
 },
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_121",
-    chapter: "chapter5",
+    case_id: "valu_ch5_141",
+    chapter: "Chapter5",
     question: "What is the primary purpose of Valuation Standards?",
     options: [
       "To ensure that all assets have identical values",
@@ -19252,8 +19135,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_122",
-    chapter: "chapter5",
+    case_id: "valu_ch5_142",
+    chapter: "Chapter5",
     question: "Who developed the International Valuation Standards (IVS)?",
     options: [
       "The International Valuation Standards Council (IVSC)",
@@ -19267,8 +19150,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_123",
-    chapter: "chapter5",
+    case_id: "valu_ch5_143",
+    chapter: "Chapter5",
     question: "Which ICAI Valuation Standard defines terms used in other valuation standards?",
     options: [
       "ICAI Valuation Standard 102",
@@ -19282,8 +19165,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_124",
-    chapter: "chapter5",
+    case_id: "valu_ch5_144",
+    chapter: "Chapter5",
     question: "Which ICAI Valuation Standard deals with valuation bases and premises underlying a valuation?",
     options: [
       "ICAI Valuation Standard 101",
@@ -19297,8 +19180,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_125",
-    chapter: "chapter5",
+    case_id: "valu_ch5_145",
+    chapter: "Chapter5",
     question: "Which ICAI Valuation Standard deals with valuation approaches and methods?",
     options: [
       "ICAI Valuation Standard 202",
@@ -19312,8 +19195,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_126",
-    chapter: "chapter5",
+    case_id: "valu_ch5_146",
+    chapter: "Chapter5",
     question: "Which ICAI Valuation Standard deals with Scope of Work, Analysis and Evaluation?",
     options: [
       "ICAI Valuation Standard 202",
@@ -19327,8 +19210,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_127",
-    chapter: "chapter5",
+    case_id: "valu_ch5_147",
+    chapter: "Chapter5",
     question: "Which ICAI Valuation Standard deals with Reporting and Documentation?",
     options: [
       "ICAI Valuation Standard 202",
@@ -19342,8 +19225,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_128",
-    chapter: "chapter5",
+    case_id: "valu_ch5_148",
+    chapter: "Chapter5",
     question: "Which ICAI Valuation Standard prescribes guidance for business valuers performing business valuation or business ownership interest valuation engagements?",
     options: [
       "ICAI Valuation Standard 302",
@@ -19357,8 +19240,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_129",
-    chapter: "chapter5",
+    case_id: "valu_ch5_149",
+    chapter: "Chapter5",
     question: "Which ICAI Valuation Standard deals with the valuation of identified intangible assets?",
     options: [
       "ICAI Valuation Standard 101",
@@ -19372,8 +19255,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_130",
-    chapter: "chapter5",
+    case_id: "valu_ch5_150",
+    chapter: "Chapter5",
     question: "Which ICAI Valuation Standard establishes principles and suggests methodologies and considerations for valuation of financial instruments?",
     options: [
       "ICAI Valuation Standard 301",
@@ -19387,8 +19270,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_131",
-    chapter: "chapter5",
+    case_id: "valu_ch5_151",
+    chapter: "Chapter5",
     question: "When is a market considered an Active Market under ICAI Valuation Standard 101?",
     options: [
       "When transactions for the asset or liability take place with sufficient frequency and volume to provide pricing information on an ongoing basis",
@@ -19402,8 +19285,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_132",
-    chapter: "chapter5",
+    case_id: "valu_ch5_152",
+    chapter: "Chapter5",
     question: "When is information in a valuation report considered material?",
     options: [
       "When it is included only for presentation purposes",
@@ -19417,8 +19300,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_133",
-    chapter: "chapter5",
+    case_id: "valu_ch5_153",
+    chapter: "Chapter5",
     question: "Which of the following correctly defines Fair Value under Ind AS 113?",
     options: [
       "The historical cost originally incurred to acquire an asset",
@@ -19432,8 +19315,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_134",
-    chapter: "chapter5",
+    case_id: "valu_ch5_154",
+    chapter: "Chapter5",
     question: "What does the Cost Approach reflect?",
     options: [
       "The present value of expected future cash flows",
@@ -19447,8 +19330,8 @@ const caseStudies = [
 
   {
     difficulty: "Easy",
-    case_id: "valu_ch5_135",
-    chapter: "chapter5",
+    case_id: "valu_ch5_155",
+    chapter: "Chapter5",
     question: "What does valuation documentation include under ICAI Valuation Standard 202?",
     options: [
       "The record of valuation procedures performed, relevant evidence obtained and conclusions reached by the valuer",
@@ -19461,8 +19344,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_136",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_156",
+    "chapter": "Chapter5",
     "question": "Which organisation developed and issued the European Business Valuation Standards (EBVS)?",
     "options": [
       "International Valuation Standards Council (IVSC)",
@@ -19475,8 +19358,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_137",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_157",
+    "chapter": "Chapter5",
     "question": "The ICAI Valuation Standards issued by the Institute are broadly classified into which three categories?",
     "options": [
       "Technical Standards, Reporting Standards and Application Standards",
@@ -19489,8 +19372,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_138",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_158",
+    "chapter": "Chapter5",
     "question": "Which fundamental ethical principle requires a valuer to be straightforward and honest in all professional and business relationships?",
     "options": [
       "Objectivity",
@@ -19503,8 +19386,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_139",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_159",
+    "chapter": "Chapter5",
     "question": "Which fundamental ethical principle requires a valuer not to allow bias, conflict of interest or undue influence of others to override professional or business judgments?",
     "options": [
       "Professional Competence and Due Care",
@@ -19517,8 +19400,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_140",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_160",
+    "chapter": "Chapter5",
     "question": "Which fundamental ethical principle requires a valuer to maintain professional knowledge and skill at the level required to provide competent professional service?",
     "options": [
       "Confidentiality",
@@ -19531,8 +19414,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_141",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_161",
+    "chapter": "Chapter5",
     "question": "Which fundamental ethical principle requires a valuer to respect information acquired through professional and business relationships?",
     "options": [
       "Confidentiality",
@@ -19545,8 +19428,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_142",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_162",
+    "chapter": "Chapter5",
     "question": "Which fundamental ethical principle requires a valuer to comply with relevant laws and regulations and avoid conduct that disreputes the profession?",
     "options": [
       "Objectivity",
@@ -19559,8 +19442,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_143",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_163",
+    "chapter": "Chapter5",
     "question": "What is expected of a valuer when applying professional scepticism during a valuation engagement?",
     "options": [
       "Accepting all information provided by the responsible party without further assessment",
@@ -19573,8 +19456,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_144",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_164",
+    "chapter": "Chapter5",
     "question": "What does the term 'As-is-where-is Basis' consider?",
     "options": [
       "Only the highest and best use of the asset",
@@ -19587,8 +19470,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_145",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_165",
+    "chapter": "Chapter5",
     "question": "According to Valuation Standard 101, who is considered the 'Client' in a valuation engagement?",
     "options": [
       "Any person who receives a copy of the valuation report",
@@ -19601,8 +19484,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_146",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_166",
+    "chapter": "Chapter5",
     "question": "The Comparable Companies Multiple Method is also known as which of the following methods?",
     "options": [
       "Guideline Transaction Method",
@@ -19615,8 +19498,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_147",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_167",
+    "chapter": "Chapter5",
     "question": "What does the term 'Valuation Date' refer to?",
     "options": [
       "The date on which the valuation report is signed",
@@ -19629,8 +19512,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_148",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_168",
+    "chapter": "Chapter5",
     "question": "The Comparable Transaction Multiple Method is also known as which of the following methods?",
     "options": [
       "Guideline Public Company Method",
@@ -19643,8 +19526,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_149",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_169",
+    "chapter": "Chapter5",
     "question": "What is meant by 'Control Premium'?",
     "options": [
       "An amount that a buyer is willing to pay over the current market price of a publicly traded company to acquire a controlling interest in an asset",
@@ -19657,8 +19540,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Easy",
-    "case_id": "valu_ch5_150",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_170",
+    "chapter": "Chapter5",
     "question": "What does the term 'Discount Rate' represent?",
     "options": [
       "The market price paid to acquire a controlling interest in an asset",
@@ -19671,8 +19554,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_151",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_171",
+    "chapter": "Chapter5",
     "question": "An acquirer expects to obtain additional benefits from acquiring a business because of a distribution network that is available only to that particular acquirer. Which basis of value considers such specific advantages available only to the concerned participant?",
     "options": [
       "Fair Value",
@@ -19685,8 +19568,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_152",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_172",
+    "chapter": "Chapter5",
     "question": "A valuer estimates the liquidation value of a group of assets on the assumption that the assets will be sold through a forced transaction with a shortened marketing period. What disclosure is specifically required?",
     "options": [
       "The valuer must disclose that the assets are being valued only on a going concern basis",
@@ -19699,8 +19582,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_153",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_173",
+    "chapter": "Chapter5",
     "question": "An entity holds a contractual right that gives rise to future economic benefits. The right is not transferable and is not separable from the entity. Which statement is correct regarding the identifiability criterion under ICAI Valuation Standard 302?",
     "options": [
       "The right may still be identifiable because it arises from contractual or other legal rights, irrespective of whether those rights are transferable or separable",
@@ -19713,8 +19596,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_154",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_174",
+    "chapter": "Chapter5",
     "question": "A computer-controlled machine tool cannot operate without its specific software. While determining whether the software should be treated as a tangible asset or an intangible asset, what treatment is indicated by the chapter?",
     "options": [
       "The software must always be treated as an intangible asset because it has no physical substance",
@@ -19727,8 +19610,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_155",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_175",
+    "chapter": "Chapter5",
     "question": "An entity has developed non-contractual customer relationships but does not possess enforceable legal rights over them. However, exchange transactions involving the same or similar customer relationships, other than as part of a business combination, are available. What do such transactions provide evidence of?",
     "options": [
       "That the customer relationships automatically constitute goodwill",
@@ -19741,8 +19624,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_156",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_176",
+    "chapter": "Chapter5",
     "question": "A valuer uses the With and Without Method (WWM) to estimate the value of an intangible asset. Which of the following correctly describes the basis of this method?",
     "options": [
       "The historical cost of the intangible asset less accumulated amortisation",
@@ -19755,8 +19638,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_157",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_177",
+    "chapter": "Chapter5",
     "question": "A valuer estimates the value of a specialised asset by considering the cost a market participant would incur to recreate an exact replica of the asset, adjusted for obsolescence. Which valuation method is being applied?",
     "options": [
       "Reproduction Cost Method",
@@ -19769,8 +19652,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_158",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_178",
+    "chapter": "Chapter5",
     "question": "An investor is considering two otherwise similar assets. One asset is readily marketable, while the other requires a longer period and more effort to sell due to restrictions on its ability to be sold. Which valuation adjustment is relevant to reflect this difference?",
     "options": [
       "Control Premium",
@@ -19783,8 +19666,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_159",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_179",
+    "chapter": "Chapter5",
     "question": "While executing a large order in a security, a price concession is required to attract counterparties at the time of order execution. Which component of market impact cost does this represent?",
     "options": [
       "Permanent component",
@@ -19797,8 +19680,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_160",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_180",
+    "chapter": "Chapter5",
     "question": "A valuer is considering the Market Approach for an asset but finds that comparable market information is limited. Which factor should specifically be considered while selecting an appropriate valuation approach?",
     "options": [
       "The number of methods already used in the previous valuation",
@@ -19811,8 +19694,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_161",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_181",
+    "chapter": "Chapter5",
     "question": "A valuer applies different valuation approaches and finds that the values arrived at are significantly different from each other. What should the valuer do before concluding the valuation?",
     "options": [
       "Revisit the analysis before arriving at the conclusion",
@@ -19825,8 +19708,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_162",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_182",
+    "chapter": "Chapter5",
     "question": "An event occurs after the valuation date and is relevant to the valuation of a business interest. The facts and circumstances on the valuation date differ from those existing on the date of the subsequent event. Under which condition may the subsequent event be considered?",
     "options": [
       "Whenever the event results in an increase in the value of the business",
@@ -19839,8 +19722,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_163",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_183",
+    "chapter": "Chapter5",
     "question": "A valuer prepares a Summary Report instead of a detailed report. Which statement correctly describes the requirements of a Summary Report under the chapter?",
     "options": [
       "The valuer may omit procedures necessary to develop a conclusion of value because the report is brief",
@@ -19853,8 +19736,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_164",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_184",
+    "chapter": "Chapter5",
     "question": "Two financial instruments issued by the same entity have different positions in the security hierarchy. One instrument has a lower hierarchy in the security charge. Which instrument would usually have a higher credit risk profile?",
     "options": [
       "The instrument having the higher hierarchy in the security charge",
@@ -19867,8 +19750,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Medium",
-    "case_id": "valu_ch5_165",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_185",
+    "chapter": "Chapter5",
     "question": "A court order specifies the valuation procedures to be followed for a business valuation, and those procedures differ from the requirements of ICAI Valuation Standard 301. Which statement correctly reflects the applicability of VS 301?",
     "options": [
       "The valuation procedures specified by the Court order fall within the stated exception to the application of VS 301",
@@ -19881,8 +19764,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_166",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_186",
+    "chapter": "Chapter5",
     "question": "A valuer estimates the value of a business using Free Cash Flow to Firm (FCFF). The projected FCFF and terminal value are discounted using the Weighted Average Cost of Capital (WACC). The present value of the explicit-period cash flows and terminal value is then determined. What does this amount represent before deducting net debt?",
     "options": [
       "Enterprise Value",
@@ -19895,8 +19778,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_167",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_187",
+    "chapter": "Chapter5",
     "question": "An entity estimates Value in Use under Ind AS 36. Its cash flow projections include expenditure and benefits arising from a future restructuring to which the entity is not yet committed, as well as expected cash inflows from improving the asset's performance. Which treatment is appropriate?",
     "options": [
       "Include both the future restructuring and the improvement because management has approved the projections",
@@ -19909,8 +19792,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_168",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_188",
+    "chapter": "Chapter5",
     "question": "Management prepares cash flow projections for Value in Use covering seven years, although the most recent budgets and forecasts cover only five years. Which circumstance would support using a projection period longer than five years under the guidance discussed in the chapter?",
     "options": [
       "The entity expects its industry to grow faster than the economy, irrespective of the reliability of its forecasts",
@@ -19923,8 +19806,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_169",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_189",
+    "chapter": "Chapter5",
     "question": "A company has entered liquidation, but its business operations are being continued. Which treatment is appropriate under the special considerations for cases of liquidation discussed in the chapter?",
     "options": [
       "All assets must necessarily be valued as if they are sold individually, and no provision for liquidation costs is required",
@@ -19937,8 +19820,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_170",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_190",
+    "chapter": "Chapter5",
     "question": "A company and its business are both being liquidated. Certain fixed assets are expected to be sold for an amount exceeding their original cost. Which treatment is consistent with the special considerations for liquidation in the chapter?",
     "options": [
       "Value the assets on a liquidation basis, provide for liquidation costs, and consider capital gains tax and withdrawal of tax relief allowed in the past, where applicable",
@@ -19951,8 +19834,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_171",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_191",
+    "chapter": "Chapter5",
     "question": "Following an acquisition, the combined entity plans to eliminate excess facilities. The expected benefit is considered highly reliable, but it is not expected to recur after the facilities are eliminated. How should this synergy be characterised?",
     "options": [
       "Revenue synergy that is recurring and highly predictable",
@@ -19965,8 +19848,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_172",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_192",
+    "chapter": "Chapter5",
     "question": "Two companies combine and obtain improved borrowing capacity because their cash flows are less than perfectly correlated. This changes the optimum debt capacity and enables the combined entity to lower its WACC. Which statement best explains whether this represents a financial synergy?",
     "options": [
       "It cannot represent a financial synergy because borrowing capacity is never relevant to valuation",
@@ -19979,8 +19862,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_173",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_193",
+    "chapter": "Chapter5",
     "question": "A property is currently used as a warehouse. A proposed alternative use would generate higher cash flows and is physically possible, but applicable zoning regulations prohibit that use. Can the proposed alternative use qualify as the Highest and Best Use?",
     "options": [
       "Yes, because higher expected cash flows are sufficient to establish Highest and Best Use",
@@ -19993,8 +19876,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_174",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_194",
+    "chapter": "Chapter5",
     "question": "While determining transaction costs for a proposed disposal, a valuer identifies brokerage, commission and taxes payable by the parties directly as a result of the transaction. Which treatment is consistent with the definition of transaction costs in the chapter?",
     "options": [
       "Brokerage and commission may qualify as transaction costs, but no adjustment is made for taxes payable by either party as a direct result of the transaction",
@@ -20007,8 +19890,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_175",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_195",
+    "chapter": "Chapter5",
     "question": "A company reports negative earnings but has a positive book value of equity. The valuer is considering commonly used market multiples. Which statement is consistent with the limitations of multiples discussed in the chapter?",
     "options": [
       "Price/Earnings can be used because negative earnings do not affect the multiple",
@@ -20021,8 +19904,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_176",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_196",
+    "chapter": "Chapter5",
     "question": "A valuer is selecting comparable transactions under the Comparable Transaction Multiple (CTM) Method. Which combination of considerations is consistent with the guidance in the chapter?",
     "options": [
       "Select transactions solely on the basis of the highest transaction multiple, irrespective of the transaction date or source",
@@ -20035,8 +19918,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_177",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_197",
+    "chapter": "Chapter5",
     "question": "A valuer uses a present value technique to value a financial instrument. The selected risk-free security has a maturity period that does not coincide with the period covered by the instrument's projected cash flows. Which statement best identifies the relevant requirement?",
     "options": [
       "The risk-free rate should be represented by a risk-free security having maturity dates or durations that coincide with the period covered by the cash flows and which poses neither uncertainty in timing nor risk of default to the holder",
@@ -20049,8 +19932,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_178",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_198",
+    "chapter": "Chapter5",
     "question": "A financial instrument is collateralised. While measuring credit risk, the valuer estimates expected cash shortfalls from the collateral but considers only situations in which foreclosure is probable. Which approach is consistent with the chapter?",
     "options": [
       "Consider collateral cash flows only when foreclosure has already occurred",
@@ -20063,8 +19946,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_179",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_199",
+    "chapter": "Chapter5",
     "question": "A financial instrument is valued using unobservable inputs and a calculation model prepared internally by the entity that owns the instrument. The valuer intends to place reliance on this internally performed valuation. Which assessment is specifically required under the chapter?",
     "options": [
       "The valuer should accept the model without assessment if the entity has prepared financial statements",
@@ -20077,8 +19960,8 @@ const caseStudies = [
   },
   {
     "difficulty": "Hard",
-    "case_id": "valu_ch5_180",
-    "chapter": "chapter5",
+    "case_id": "valu_ch5_200",
+    "chapter": "Chapter5",
     "question": "An acquirer proposes to purchase a controlling stake in a company. Although the percentage of shares acquired is substantial, the shareholder agreement restricts certain decision-making rights, and the remaining shareholding is widely distributed. Which approach is most appropriate when determining the control premium?",
     "options": [
       "Apply a standard control premium based solely on the percentage of shares acquired",
@@ -20088,7 +19971,3349 @@ const caseStudies = [
     ],
     "answer": 2,
     "reason": "The chapter explains that control rights vary depending on transaction-specific circumstances. The magnitude of the stake acquired must be analysed together with the rights the acquirer will possess after the transaction. Professional judgment should also consider the extent of control, distribution of the remaining interest, statutory protection of minority shareholders and restrictions in the articles, bye-laws or shareholders' agreement."
-  }
+  },{
+  case_id: "valu_ch5_CS51",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>ABC Limited appoints a valuer to determine the value of its business. The valuer completes all procedures necessary to develop a conclusion of value. The client requests a concise report containing the most important information and assumptions used in determining the value.</p>
+    <p>The valuer considers the nature of the engagement and the purpose of the valuation before deciding the form and content of the report.</p>
+  `,
+  questions: [
+    {
+      question: "Which factors determine the form and content of a valuation report?",
+      options: [
+        "Only the size of the business",
+        "The nature of the engagement and purpose of the valuation",
+        "Only the preference of the management",
+        "Only the number of shareholders"
+      ],
+      answer: 1,
+      reason: "The form and content of a valuation report depend on the nature of the engagement and the purpose of the valuation."
+    },
+    {
+      question: "Which type of valuation report is the client requesting?",
+      options: [
+        "Summary report",
+        "Audit report",
+        "Investigation report",
+        "Tax audit report"
+      ],
+      answer: 0,
+      reason: "A Summary Report presents the most critical information and assumptions in a concise form while retaining the procedures necessary to develop the conclusion of value."
+    },
+    {
+      question: "What must be performed even when a Summary Report is prepared?",
+      options: [
+        "Only a review of the final value",
+        "Only discussions with management",
+        "All procedures necessary to develop a conclusion of value",
+        "Only a review of the company's financial statements"
+      ],
+      answer: 2,
+      reason: "A Summary Report includes performing all procedures necessary to develop a conclusion of value."
+    },
+    {
+      question: "How is a Summary Report presented?",
+      options: [
+        "It excludes all assumptions",
+        "It contains only the final value",
+        "It avoids explaining the valuation conclusion",
+        "It is slimmed down while providing the reader with the most critical information and assumptions"
+      ],
+      answer: 3,
+      reason: "A Summary Report is slimmed down as much as possible while still providing the reader with the most critical information and assumptions used to determine value."
+    },
+    {
+      question: "Which ICAI Valuation Standard deals with valuation reports and documentation?",
+      options: [
+        "ICAI VS 101",
+        "ICAI VS 202",
+        "ICAI VS 301",
+        "ICAI VS 302"
+      ],
+      answer: 1,
+      reason: "ICAI Valuation Standard 202 deals with Valuation Report and Documentation."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS52",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>PQR Limited appoints a registered valuer to determine the value of one of its business assets. While preparing the valuation report, the valuer includes information about the asset, the purpose of the valuation and the authority that appointed him.</p>
+    <p>The valuer also records the basis and premise of value adopted for the assignment so that the reader can understand the context in which the valuation was performed.</p>
+  `,
+  questions: [
+    {
+      question: "Which information regarding the asset should be included in the valuation report?",
+      options: [
+        "Background information of the asset being valued",
+        "Only the name of the company's customers",
+        "Only the personal details of the directors",
+        "Only the previous year's tax liability"
+      ],
+      answer: 0,
+      reason: "Background information of the asset being valued is part of the minimum content of a valuation report."
+    },
+    {
+      question: "Which details regarding the assignment should be included in the report?",
+      options: [
+        "Only the amount of fees paid",
+        "Only the expected future selling price",
+        "Purpose of the valuation and appointing authority",
+        "Only the names of competitors"
+      ],
+      answer: 2,
+      reason: "The purpose of the valuation and the appointing authority are required elements of the valuation report."
+    },
+    {
+      question: "Why should the valuer identify the basis of value?",
+      options: [
+        "To avoid mentioning the valuation purpose",
+        "To identify the type of value being used in the engagement",
+        "To replace the valuation methodology",
+        "To avoid documenting assumptions"
+      ],
+      answer: 1,
+      reason: "The valuation base indicates the type of value being used in an engagement and is closely related to the purpose of the valuation exercise."
+    },
+    {
+      question: "Which additional valuation element should be stated in the report along with the basis of value?",
+      options: [
+        "The company's advertising strategy",
+        "The personal investments of employees",
+        "The valuer's preferred selling price",
+        "Premise of value"
+      ],
+      answer: 3,
+      reason: "Premise of value is also included in the minimum content of a valuation report."
+    },
+    {
+      question: "The minimum content of the valuation report includes information about which of the following?",
+      options: [
+        "Only the final value",
+        "Only the company's registered office",
+        "Background information, purpose, appointing authority, basis and premise of value",
+        "Only the names of the company's lenders"
+      ],
+      answer: 2,
+      reason: "The valuation report should contain background information of the asset, purpose of valuation, appointing authority, basis of value and premise of value."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS53",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>LMN Limited appoints a professional valuer to value its shares. During the assignment, the valuer engages another expert to assist with a specific technical aspect of the valuation.</p>
+    <p>The valuer also discovers that he has an interest in the asset being valued. He considers the applicable legal requirements and ensures that the valuation report appropriately discloses the relevant interest or conflict.</p>
+  `,
+  questions: [
+    {
+      question: "Whose identity should be included in the valuation report?",
+      options: [
+        "Only the identity of the company's directors",
+        "The identity of the valuer and any other experts involved in the valuation",
+        "Only the identity of the company's auditors",
+        "Only the identity of the company's shareholders"
+      ],
+      answer: 1,
+      reason: "The identity of the valuer and any other experts involved in the valuation is part of the minimum content of the valuation report."
+    },
+    {
+      question: "What should the valuer do regarding his interest in the asset being valued?",
+      options: [
+        "Keep the interest confidential in all circumstances",
+        "Ignore the interest",
+        "Disclose the interest or conflict in the valuation report",
+        "Mention it only after the valuation is completed"
+      ],
+      answer: 2,
+      reason: "A valuer shall appropriately disclose his interest or conflict of interest, if any, in the assets to be valued in the valuation report."
+    },
+    {
+      question: "When should the identity of other experts involved in the valuation be disclosed?",
+      options: [
+        "When such experts are involved in the valuation",
+        "Only when the client requests it",
+        "Only when the valuation value is disputed",
+        "Only when the experts are employees of the company"
+      ],
+      answer: 0,
+      reason: "The valuation report should include the identity of the valuer and any other experts involved in the valuation."
+    },
+    {
+      question: "What should the valuer do if relevant law prohibits accepting the assignment because of an existing interest or conflict of interest?",
+      options: [
+        "Accept the assignment and disclose the conflict later",
+        "Continue with the assignment without disclosure",
+        "Transfer the assignment to management",
+        "Not accept the valuation engagement"
+      ],
+      answer: 3,
+      reason: "Where relevant law prohibits acceptance of an assignment due to an interest in the asset valued or a conflict of interest, the valuer shall not accept the valuation engagement."
+    },
+    {
+      question: "Disclosure of the valuer's interest or conflict is required in which document?",
+      options: [
+        "Only in the company's annual return",
+        "Valuation report",
+        "Only in the bank statement",
+        "Only in the board attendance register"
+      ],
+      answer: 1,
+      reason: "The valuer's interest or conflict, if any, should be disclosed in the valuation report."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS54",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>DEF Limited appoints a valuer on 1 June. The valuer estimates the value of the company's business as at 30 June and completes the valuation report on 15 July.</p>
+    <p>During the assignment, the valuer carries out inspections and investigations and relies on information obtained from the company's management and other sources. He records the relevant dates and information sources in the valuation report.</p>
+  `,
+  questions: [
+    {
+      question: "Which date represents the date on which the valuer estimates the value of the underlying asset?",
+      options: [
+        "Date of appointment",
+        "Date of the valuation report",
+        "Valuation date",
+        "Date of payment of fees"
+      ],
+      answer: 2,
+      reason: "The valuation date is the specific date at which the valuer estimates the value of the underlying asset."
+    },
+    {
+      question: "Which dates should be included in the valuation report?",
+      options: [
+        "Date of appointment, valuation date and date of the valuation report",
+        "Only the date of appointment",
+        "Only the date of the valuation report",
+        "Only the date on which the client pays the fees"
+      ],
+      answer: 0,
+      reason: "The valuation report should include the date of appointment, valuation date and date of the valuation report."
+    },
+    {
+      question: "Which activities undertaken by the valuer should be disclosed in the report?",
+      options: [
+        "Only discussions with shareholders",
+        "Only preparation of financial statements",
+        "Only payment of professional fees",
+        "Inspections and/or investigations undertaken"
+      ],
+      answer: 3,
+      reason: "The inspections and/or investigations undertaken by the valuer form part of the minimum content of the valuation report."
+    },
+    {
+      question: "What should the valuer disclose about information used in the valuation?",
+      options: [
+        "Only the total number of documents received",
+        "Nature and sources of the information used or relied upon",
+        "Only the name of the company's accountant",
+        "Only the date on which information was received"
+      ],
+      answer: 1,
+      reason: "The valuation report should disclose the nature and sources of the information used or relied upon."
+    },
+    {
+      question: "The valuation date is also sometimes referred to as which of the following?",
+      options: [
+        "Appointment date",
+        "Completion date",
+        "Measurement date",
+        "Submission date"
+      ],
+      answer: 2,
+      reason: "The valuation date is sometimes also referred to as the measurement date."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS55",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>RST Limited appoints a valuer to determine the value of its business. The valuer adopts an income approach and a market approach and uses appropriate valuation methodologies to arrive at the value.</p>
+    <p>While drafting the report, the valuer records the valuation standards followed, the major factors considered and any restrictions on the use of the report. He also includes his conclusion of value.</p>
+  `,
+  questions: [
+    {
+      question: "What should the valuer disclose regarding the valuation approach adopted?",
+      options: [
+        "Only the final value",
+        "Only the name of the client",
+        "Only the amount of professional fees",
+        "The valuation approach adopted and valuation standards followed"
+      ],
+      answer: 3,
+      reason: "The valuation report should include the valuation approach adopted in carrying out the valuation and the valuation standards followed."
+    },
+    {
+      question: "Which of the following should be stated in the valuation report?",
+      options: [
+        "Valuation methodology used",
+        "Only the company's marketing budget",
+        "Only details of employee attendance",
+        "Only the personal assets of directors"
+      ],
+      answer: 0,
+      reason: "The valuation methodology used is part of the minimum content of a valuation report."
+    },
+    {
+      question: "Can a valuer use a combination of methods and approaches to arrive at the value?",
+      options: [
+        "No, only one method is permitted in every case",
+        "Yes, a combination of methods and approaches may be used",
+        "Only the client can combine methods",
+        "Only a statutory auditor can combine methods"
+      ],
+      answer: 1,
+      reason: "A valuer may use a combination of methods and approaches to arrive at the value."
+    },
+    {
+      question: "Which information regarding the use of the report should be included?",
+      options: [
+        "Only the proposed selling price",
+        "Only the names of potential buyers",
+        "Restrictions on use of the valuation report, if any",
+        "Only the number of pages in the report"
+      ],
+      answer: 2,
+      reason: "The minimum content of the valuation report includes restrictions on its use, if any."
+    },
+    {
+      question: "Which of the following should be included towards the conclusion of the valuation report?",
+      options: [
+        "Only the client's expectations",
+        "Only the valuer's personal opinion",
+        "Only the list of documents received",
+        "Major factors considered and the conclusion"
+      ],
+      answer: 3,
+      reason: "The valuation report should include major factors considered during the valuation and the conclusion."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS56",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>UVW Limited receives a valuation report from a professional valuer. The report explains certain limitations faced during the valuation and includes caveats and disclaimers.</p>
+    <p>The valuer also signs the report and provides the required identifying details, registration numbers, date and place of signing. He ensures that the caveats explain the limitations faced without being used to avoid his responsibility for the report.</p>
+  `,
+  questions: [
+    {
+      question: "Why are caveats, limitations and disclaimers included in a valuation report?",
+      options: [
+        "To explain or elucidate the limitations faced by the valuer",
+        "To remove the requirement of valuation procedures",
+        "To avoid disclosing the valuation methodology",
+        "To transfer all responsibility to the client"
+      ],
+      answer: 0,
+      reason: "Caveats, limitations and disclaimers should explain or elucidate the limitations faced by the valuer."
+    },
+    {
+      question: "Can caveats be used for the purpose of limiting the valuer's responsibility for the valuation report?",
+      options: [
+        "Yes, in every valuation assignment",
+        "Yes, whenever the client agrees",
+        "No, they shall not be used for the purpose of limiting the valuer's responsibility",
+        "Only when the valuation involves a business"
+      ],
+      answer: 2,
+      reason: "Caveats, limitations and disclaimers shall not be used for the purpose of limiting the valuer's responsibility for the valuation report."
+    },
+    {
+      question: "How should a valuer use caveats while preparing a valuation report?",
+      options: [
+        "Without any restrictions",
+        "With reasonable restraint",
+        "Only at the request of management",
+        "By using them to replace the conclusion"
+      ],
+      answer: 1,
+      reason: "A valuer shall exercise reasonable restraint in using caveats while writing the valuation report."
+    },
+    {
+      question: "Which details should the valuer's signature contain?",
+      options: [
+        "Only the valuer's first name",
+        "Only the entity's address",
+        "Only the date of appointment",
+        "Name of the valuer vested with signing authority, entity name and relevant registration numbers"
+      ],
+      answer: 3,
+      reason: "The signature shall contain the name of the valuer vested with signing authority, entity name, and individual and entity registration numbers."
+    },
+    {
+      question: "Which additional details should accompany the valuer's signature?",
+      options: [
+        "Date and place where the valuation report is signed",
+        "Only the company's annual turnover",
+        "Only the names of the directors",
+        "Only the date of the previous valuation"
+      ],
+      answer: 0,
+      reason: "The valuation report signature should also contain the date and place where the report is signed."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS57",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>A valuer completes an assignment for MNO Limited. During the assignment, he performs valuation procedures, obtains relevant evidence and reaches conclusions regarding the value of the business.</p>
+    <p>The valuer maintains records of these activities to support the valuation report and to demonstrate that the assignment was planned and performed in accordance with the applicable ICAI Valuation Standards and legal and regulatory requirements.</p>
+  `,
+  questions: [
+    {
+      question: "What does the term documentation include?",
+      options: [
+        "Only the final valuation amount",
+        "Only the engagement letter",
+        "Record of valuation procedures performed, relevant evidence obtained and conclusions reached",
+        "Only correspondence with the client"
+      ],
+      answer: 2,
+      reason: "Documentation includes the record of valuation procedures performed, relevant evidence obtained and conclusions that the valuer has reached."
+    },
+    {
+      question: "What should documentation provide regarding the basis of the valuation report?",
+      options: [
+        "A sufficient and appropriate record of the basis of the valuation report",
+        "Only a summary of the company's assets",
+        "Only the final value without supporting records",
+        "Only the client's approval"
+      ],
+      answer: 0,
+      reason: "A valuer shall maintain documentation that provides a sufficient and appropriate record of the basis of the valuation report."
+    },
+    {
+      question: "What should documentation demonstrate about the valuation assignment?",
+      options: [
+        "That the client selected the highest value",
+        "That the valuation was completed without any assumptions",
+        "That the company approved every working",
+        "That the assignment was planned and performed in accordance with applicable standards and requirements"
+      ],
+      answer: 3,
+      reason: "Documentation should provide evidence that the valuation assignment was planned and performed in accordance with the ICAI Valuation Standards and applicable legal and regulatory requirements."
+    },
+    {
+      question: "Which standards should be followed and evidenced in the valuation documentation?",
+      options: [
+        "Only the company's internal policies",
+        "Relevant ICAI Valuation Standards",
+        "Only the client's preferred procedures",
+        "Only the valuation methods used by competitors"
+      ],
+      answer: 1,
+      reason: "The documentation should provide evidence that the valuation assignment was planned and performed in accordance with the relevant ICAI Valuation Standards."
+    },
+    {
+      question: "Why does a valuer maintain documentation?",
+      options: [
+        "To replace the valuation report",
+        "To avoid recording the evidence obtained",
+        "To support the basis of the valuation report and the work performed",
+        "To eliminate the need for professional judgement"
+      ],
+      answer: 2,
+      reason: "Documentation supports the basis of the valuation report and provides evidence of the valuation procedures, evidence obtained and conclusions reached."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS58",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>ABC Valuation Services is appointed to value the business of DEF Limited. During the assignment, the valuer prepares a tabulation of the data received, records the workings performed and preserves copies of relevant circulars and extracts of legal provisions considered.</p>
+    <p>The valuer also records the bases, approaches and methods used to arrive at the value. These records form part of the minimum documentation maintained for the valuation assignment.</p>
+  `,
+  questions: [
+    {
+      question: "Which appointment-related document should be maintained by the valuer?",
+      options: [
+        "Engagement or appointment letter",
+        "Employee attendance register",
+        "Sales invoice register",
+        "Shareholders' personal bank statements"
+      ],
+      answer: 0,
+      reason: "The engagement or appointment letter appointing the valuer to undertake the valuation is part of the minimum documentation."
+    },
+    {
+      question: "What should the valuer maintain regarding the data obtained during valuation?",
+      options: [
+        "Only an oral summary",
+        "Only the final valuation amount",
+        "A tabulation of data obtained during valuation",
+        "Only the list of company employees"
+      ],
+      answer: 2,
+      reason: "A tabulation of data obtained during valuation is one of the minimum documents or analyses to be maintained."
+    },
+    {
+      question: "Which records should support the process of arriving at the value?",
+      options: [
+        "Only the company's sales advertisements",
+        "Workings undertaken to arrive at the value",
+        "Only the minutes of staff meetings",
+        "Only the previous year's tax challans"
+      ],
+      answer: 1,
+      reason: "The workings undertaken to arrive at the value should be documented."
+    },
+    {
+      question: "Which legal and regulatory materials should be documented, where relevant?",
+      options: [
+        "Only management's verbal instructions",
+        "Only customer complaints",
+        "Only employee contracts",
+        "Copies of relevant circulars and extracts of legal provisions"
+      ],
+      answer: 3,
+      reason: "Copies of relevant circulars and extracts of legal provisions are included in the minimum documentation requirements."
+    },
+    {
+      question: "Which valuation elements should be recorded in the documentation?",
+      options: [
+        "The bases, approaches and methods, or a combination thereof, used to arrive at the value",
+        "Only the valuer's preferred approach",
+        "Only the final value",
+        "Only the company's budget"
+      ],
+      answer: 0,
+      reason: "The bases, approaches and methods, or a combination thereof, used to arrive at the value should be documented."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS59",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>GHI Limited appoints a valuer to determine the value of its business. During the assignment, the valuer identifies certain assumptions that could materially affect the valuation if changed.</p>
+    <p>After completing the work, the valuer preserves the signed valuation report and the management representation letter received from the client as part of the valuation documentation.</p>
+  `,
+  questions: [
+    {
+      question: "Which assumptions should be documented by the valuer?",
+      options: [
+        "Only assumptions that have no impact on value",
+        "Assumptions, a change in which may materially affect the value",
+        "Only assumptions made by the company's employees",
+        "Only assumptions relating to the valuer's fees"
+      ],
+      answer: 1,
+      reason: "The minimum documentation includes assumptions, a change in which may materially affect the value."
+    },
+    {
+      question: "Which report should be retained in the valuation documentation?",
+      options: [
+        "Only a draft report",
+        "Only the client's internal report",
+        "A copy of the signed valuation report issued",
+        "Only the previous year's audit report"
+      ],
+      answer: 2,
+      reason: "A copy of the signed valuation report issued should be included in the valuation documentation."
+    },
+    {
+      question: "Which communication received from management or the client should be documented, if any?",
+      options: [
+        "Management/client representation letter or such communication received",
+        "Only informal telephone messages unrelated to the valuation",
+        "Only employee leave applications",
+        "Only customer feedback forms"
+      ],
+      answer: 0,
+      reason: "The minimum documentation includes the management/client representation letter or such communication received, if any."
+    },
+    {
+      question: "Why should assumptions that may materially affect value be documented?",
+      options: [
+        "To replace all valuation workings",
+        "To avoid identifying the valuation base",
+        "To remove the need for a conclusion",
+        "To maintain a record of significant assumptions relevant to the valuation"
+      ],
+      answer: 3,
+      reason: "The standard requires documentation of assumptions where a change may materially affect the value."
+    },
+    {
+      question: "Which of the following is specifically included in the minimum documentation requirements?",
+      options: [
+        "A copy of the company's marketing plan",
+        "A copy of the signed valuation report issued",
+        "A copy of every employee's personal bank statement",
+        "A copy of the company's advertising material"
+      ],
+      answer: 1,
+      reason: "A copy of the signed valuation report issued is one of the documents required to be maintained."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS60",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>JKL Limited appoints a valuer for the valuation of its business. To avoid misunderstandings, the valuer and the client document the terms of the valuation engagement in writing through an engagement letter.</p>
+    <p>The letter identifies the client, the valuer, the purpose and subject matter of the valuation, the valuation date, the basis and premise of valuation, responsibilities of the parties and the confidentiality obligations. It also records the scope, limitations and fees.</p>
+  `,
+  questions: [
+    {
+      question: "Why should the terms of a valuation engagement be documented in writing?",
+      options: [
+        "To avoid misunderstandings between the valuer and the client",
+        "To avoid identifying the subject matter",
+        "To eliminate the need for a valuation date",
+        "To avoid recording the responsibilities of the parties"
+      ],
+      answer: 0,
+      reason: "The terms of the valuation assignment shall be documented in writing in an engagement letter to ensure clarity and avoid misunderstandings."
+    },
+    {
+      question: "Which of the following details should be included in the engagement letter?",
+      options: [
+        "Only the company's annual profits",
+        "Only the names of its suppliers",
+        "Details of the client and the valuer",
+        "Only details of the company's employees"
+      ],
+      answer: 2,
+      reason: "The engagement letter shall include details of the client and details of the valuer."
+    },
+    {
+      question: "Which valuation-related details should be included in the engagement letter?",
+      options: [
+        "Only the expected selling price",
+        "Purpose of valuation, identification of the subject matter, valuation date, basis and premise of valuation",
+        "Only the company's future dividend policy",
+        "Only the number of shares held by employees"
+      ],
+      answer: 1,
+      reason: "The engagement letter shall include the purpose of valuation, subject matter, valuation date, basis and premise of valuation."
+    },
+    {
+      question: "Which obligations should be specified in the engagement letter?",
+      options: [
+        "Only the responsibilities of the company's directors",
+        "Only the responsibilities of the valuer",
+        "Only the confidentiality obligations of the client",
+        "Responsibilities of the client and valuer, along with their confidentiality obligations"
+      ],
+      answer: 3,
+      reason: "The engagement letter shall include the responsibilities of the client and valuer and the confidentiality obligations of both."
+    },
+    {
+      question: "Which commercial and scope-related details should be included in the engagement letter?",
+      options: [
+        "Scope or limitations and fees",
+        "Only the company's turnover",
+        "Only its list of creditors",
+        "Only the names of its competitors"
+      ],
+      answer: 0,
+      reason: "The minimum contents of the engagement letter include scope or limitations and fees."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS61",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>MNO Valuers is engaged to perform the valuation of a business and its ownership interests. The valuer follows the guidance and basic principles governing the professional responsibilities of business valuers.</p>
+    <p>During the assignment, the valuer identifies that a particular valuation procedure is prescribed by a government authority. The valuer also considers whether any requirement of the applicable standard is inconsistent with a prescribed requirement.</p>
+  `,
+  questions: [
+    {
+      question: "Which ICAI Valuation Standard prescribes guidance for business valuers performing business valuation engagements?",
+      options: [
+        "ICAI VS 101",
+        "ICAI VS 202",
+        "ICAI VS 301",
+        "ICAI VS 302"
+      ],
+      answer: 2,
+      reason: "ICAI VS 301 prescribes guidance for business valuers performing business valuation or business ownership interest valuation engagements."
+    },
+    {
+      question: "What does ICAI VS 301 describe?",
+      options: [
+        "Only the accounting treatment of inventory",
+        "Basic principles governing the valuer's professional responsibilities",
+        "Only the audit procedures for companies",
+        "Only the preparation of income tax returns"
+      ],
+      answer: 1,
+      reason: "ICAI VS 301 describes the basic principles governing the valuer's professional responsibilities in a business valuation engagement."
+    },
+    {
+      question: "To which type of valuation should ICAI VS 301 generally be applied?",
+      options: [
+        "Valuation of business and business interests",
+        "Only valuation of personal household goods",
+        "Only valuation of employee salaries",
+        "Only valuation of inventory for internal stock records"
+      ],
+      answer: 0,
+      reason: "ICAI VS 301 should be applied in valuation for business and business interests, subject to the stated exceptions."
+    },
+    {
+      question: "What is one exception to the application of ICAI VS 301 described in the material?",
+      options: [
+        "Where the client requests a valuation",
+        "Where the business has more than one shareholder",
+        "Where the valuer uses professional judgement",
+        "Where a requirement of the Standard is inconsistent with prescribed requirements"
+      ],
+      answer: 3,
+      reason: "ICAI VS 301 need not be applied where a requirement of the Standard is inconsistent with the requirements prescribed."
+    },
+    {
+      question: "What should be considered when valuation procedures are specified by a government or regulatory authority or a Court order?",
+      options: [
+        "The company's marketing policy",
+        "The valuer's personal preference",
+        "The prescribed valuation procedures",
+        "The preference of the company's employees"
+      ],
+      answer: 2,
+      reason: "The standard identifies valuation procedures specified by law, regulations, rules, directions of government or regulatory authorities, or Court order as an exception."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS62",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>XYZ Limited is considering a merger with another company and is also exploring fund-raising options. Its shareholders are separately involved in a dispute regarding their ownership interests.</p>
+    <p>The company appoints a business valuer to determine the value of the business enterprise and the relevant ownership interests. The valuation is also intended to assist with financial reporting and tax-related matters.</p>
+  `,
+  questions: [
+    {
+      question: "What is business valuation?",
+      options: [
+        "The process of preparing annual financial statements",
+        "The act or process of determining the value of a business enterprise or ownership interest therein",
+        "The process of auditing the company's financial statements",
+        "The process of determining the salaries of employees"
+      ],
+      answer: 1,
+      reason: "Business valuation is the act or process of determining the value of a business enterprise or ownership interest therein."
+    },
+    {
+      question: "Which of the following is a transaction for which business valuation may be required?",
+      options: [
+        "Preparation of employee attendance records",
+        "Payment of monthly electricity bills",
+        "Fund raising and mergers and acquisitions",
+        "Preparation of internal leave records"
+      ],
+      answer: 2,
+      reason: "Business valuation may be required for transactions including fund raising and mergers and acquisitions."
+    },
+    {
+      question: "Business valuation may be required in connection with which of the following?",
+      options: [
+        "Family or shareholders disputes",
+        "Employee recreational activities",
+        "Routine office maintenance",
+        "Preparation of staff duty rosters"
+      ],
+      answer: 0,
+      reason: "Business valuation may be required for strategic business decisions, including family or shareholders disputes."
+    },
+    {
+      question: "Which of the following is a compliance-oriented purpose for business valuation?",
+      options: [
+        "Employee training",
+        "Office renovation",
+        "Customer satisfaction surveys",
+        "Financial reporting and tax matters"
+      ],
+      answer: 3,
+      reason: "Business valuation may be undertaken for compliance-oriented engagements such as financial reporting and tax matters."
+    },
+    {
+      question: "Business valuation may also be undertaken under which legislation mentioned in the material?",
+      options: [
+        "Companies Act only",
+        "Insolvency and Bankruptcy Code",
+        "Negotiable Instruments Act only",
+        "Indian Contract Act only"
+      ],
+      answer: 1,
+      reason: "The material identifies valuation under the Insolvency and Bankruptcy Code as one of the purposes for business valuation."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS63",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>ABC Limited is undergoing a business valuation. The valuer explains to the management that the value of a business may be expressed using different benchmarks, including Enterprise Value, Business Value and Equity Value.</p>
+    <p>The valuer clarifies that Enterprise Value takes account of equity and debt-related components, Business Value is attributable to all shareholders, and Equity Value represents the value attributable to equity shareholders after the relevant obligations have been met.</p>
+  `,
+  questions: [
+    {
+      question: "Which of the following represents one of the benchmarks used to express business value?",
+      options: [
+        "Enterprise Value",
+        "Employee Cost Value",
+        "Operating Expense Value",
+        "Inventory Turnover Value"
+      ],
+      answer: 0,
+      reason: "The material identifies Enterprise Value, Business Value and Equity Value as benchmarks for expressing the value of a business or business ownership interest."
+    },
+    {
+      question: "Enterprise Value includes which of the following components?",
+      options: [
+        "Only the value attributable to equity shareholders",
+        "Only the market value of debt",
+        "Equity value plus debt and debt-like items and other specified components, less non-operating cash and cash equivalents",
+        "Only the value of tangible assets"
+      ],
+      answer: 2,
+      reason: "Enterprise Value includes the value attributable to equity shareholders together with debt and debt-like items, minority interest and preference share components, less specified non-operating cash and cash equivalents."
+    },
+    {
+      question: "Business Value is attributable to which group?",
+      options: [
+        "Only equity shareholders",
+        "All shareholders, including equity and preference shareholders",
+        "Only secured creditors",
+        "Only the company's employees"
+      ],
+      answer: 1,
+      reason: "Business Value is the value of the business attributable to all its shareholders, including equity shareholders and redeemable and cumulative preference shareholders."
+    },
+    {
+      question: "Equity Value represents the value attributable to whom?",
+      options: [
+        "All creditors",
+        "Only preference shareholders",
+        "Only the company's lenders",
+        "Equity shareholders"
+      ],
+      answer: 3,
+      reason: "Equity Value is the value of the business attributable to equity shareholders after all expenses, reinvestments and debt obligations have been met by the company."
+    },
+    {
+      question: "Which value represents the total worth of a company including net debt, as distinguished in the material?",
+      options: [
+        "Enterprise Value",
+        "Equity Value",
+        "Book value of inventory",
+        "Value of employee benefits"
+      ],
+      answer: 0,
+      reason: "The material explains that Enterprise Value represents the total worth of a company including net debt, whereas Equity Value represents the value of outstanding equity stock."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS64",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>PQR Limited appoints a valuer to determine the fair value of an asset. The valuer considers the price that would be received to sell the asset in an orderly transaction between market participants at the measurement date.</p>
+    <p>In a separate valuation, the valuer is asked to consider advantages that are available specifically to an identified acquirer and may not be available to market participants generally.</p>
+  `,
+  questions: [
+    {
+      question: "How is Fair Value defined in the material?",
+      options: [
+        "The price demanded by the existing owner",
+        "The historical cost of the asset",
+        "The price that would be received to sell an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement date",
+        "The amount paid by the original purchaser"
+      ],
+      answer: 2,
+      reason: "Ind AS 113 defines Fair Value as the price that would be received to sell an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement date."
+    },
+    {
+      question: "Which type of transaction is assumed for measuring Fair Value?",
+      options: [
+        "A forced transaction",
+        "An orderly transaction",
+        "A transaction without market exposure",
+        "A transaction between related parties in every case"
+      ],
+      answer: 1,
+      reason: "Fair Value assumes an orderly transaction between market participants at the measurement date."
+    },
+    {
+      question: "Who are the market participants considered in Fair Value measurement?",
+      options: [
+        "Only the existing owner",
+        "Only the company's directors",
+        "Only related parties",
+        "Willing buyers and willing sellers in the principal market"
+      ],
+      answer: 3,
+      reason: "Market participants are willing buyers and willing sellers in the principal market for the asset or liability."
+    },
+    {
+      question: "Which value considers specific advantages or disadvantages of an owner or identified acquirer?",
+      options: [
+        "Participant Specific Value",
+        "Fair Value in every circumstance",
+        "Historical Cost",
+        "Replacement Cost"
+      ],
+      answer: 0,
+      reason: "Participant Specific Value is the estimated value of an asset or liability considering specific advantages or disadvantages of the owner, identified acquirer or identified participants."
+    },
+    {
+      question: "Which of the following may be considered while determining Participant Specific Value?",
+      options: [
+        "Only the general market price",
+        "Only the historical cost of the asset",
+        "Synergies specifically available to the concerned participant",
+        "Only the company's number of employees"
+      ],
+      answer: 2,
+      reason: "Participant Specific Value may consider synergies that are specifically available only to the concerned participant or participants and not to market participants generally."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS65",
+  difficulty: "Easy",
+  chapter: "Chapter5",
+  caseText: `
+    <p>LMN Limited owns a manufacturing business that is expected to continue its operations. The valuer considers the business as a going concern and takes account of intangible elements such as its trained workforce, operational plant, necessary licences and established procedures.</p>
+    <p>The valuer also examines a separate property that may be put to a different use by a market participant. In another assignment, an asset is expected to be sold after an appropriate marketing period, while a different asset must be sold within a limited period because its owner is compelled to sell.</p>
+  `,
+  questions: [
+    {
+      question: "What does Going Concern Value represent?",
+      options: [
+        "The value of an enterprise expected to continue its operations and not be liquidated soon",
+        "The value of an enterprise that has already ceased operations",
+        "The value of an asset sold without any marketing period",
+        "The value of an asset based only on its historical cost"
+      ],
+      answer: 0,
+      reason: "Going Concern Value is the value of an enterprise which is expected to continue its operations and not be liquidated soon."
+    },
+    {
+      question: "Which of the following may form part of Going Concern Value apart from tangible assets?",
+      options: [
+        "Only outstanding bank loans",
+        "Only unpaid employee salaries",
+        "Goodwill arising from a trained workforce, operational plant, necessary licences and systems",
+        "Only the company's tax payments"
+      ],
+      answer: 2,
+      reason: "Going Concern Value may include intangible elements such as goodwill arising from the trained workforce, operational plant, necessary licences, marketing systems and procedures."
+    },
+    {
+      question: "What does the Highest and Best Use premise consider?",
+      options: [
+        "Only the existing use by the current owner",
+        "The value when an asset is used by a market participant for its maximum use",
+        "Only the historical use of the asset",
+        "The lowest possible use of the asset"
+      ],
+      answer: 1,
+      reason: "Under the Highest and Best Use premise, the value of an asset is based on its use by a market participant who puts the asset to its maximum use."
+    },
+    {
+      question: "What is meant by Orderly Liquidation?",
+      options: [
+        "Sale without any marketing efforts",
+        "Sale under compulsion within a very limited period",
+        "Sale without considering market conditions",
+        "Realisation of an asset after appropriate marketing efforts and a reasonable period of time to market it on an as-is, where-is basis"
+      ],
+      answer: 3,
+      reason: "Orderly liquidation refers to the realisable value of an asset in liquidation after allowing appropriate marketing efforts and a reasonable period of time to market the asset on an as-is, where-is basis."
+    },
+    {
+      question: "What characterises a Forced Transaction?",
+      options: [
+        "The seller is compelled to sell within a limited period without adequate marketing efforts or a reasonable marketing period",
+        "The seller allows a reasonable period for marketing",
+        "The seller is under no compulsion to sell",
+        "The asset is necessarily sold at its highest and best use"
+      ],
+      answer: 0,
+      reason: "A Forced Transaction occurs where the seller is forced to sell an asset within a limited period without adequate marketing efforts or a reasonable period of time to market the asset."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS66",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>ABC Limited has shown a significant increase in profits over the last three years. During the valuation assignment, the valuer observes that the company has frequently changed its accounting estimates and policies relating to depreciation and inventory valuation.</p>
+    <p>The valuer also notices that management has used its accounting discretion to present a more favourable financial position. Certain unusual transactions and changes in accounting treatment require further investigation. The valuer decides to perform a detailed accounting analysis before relying on the reported financial figures.</p>
+  `,
+  questions: [
+    {
+      question: "While examining the company's accounting policies and estimates that influence its profits and asset base, which aspect of accounting analysis is the valuer primarily performing?",
+      options: [
+        "Evaluation of accounting values",
+        "Accounting flexibility",
+        "Removal of distortions",
+        "Understandability of financial statements"
+      ],
+      answer: 0,
+      reason: "Evaluation of accounting values requires identifying key accounting policies and estimates used to measure critical success factors and risks, because overestimation or underestimation may distort profits or the asset base."
+    },
+    {
+      question: "The valuer examines the degree of freedom available to management in selecting accounting policies and estimates under accounting rules and conventions. Which aspect is being examined?",
+      options: [
+        "Accounting discretion",
+        "Flexibility",
+        "Removal of distortions",
+        "Evaluation of accounting values"
+      ],
+      answer: 1,
+      reason: "Flexibility involves evaluating the degree of flexibility available to managers in selecting accounting policies and estimates, given the applicable accounting rules and conventions."
+    },
+    {
+      question: "The valuer investigates whether management has used its accounting choices to present a realistic view or to hide the company's true performance. This relates to:",
+      options: [
+        "Understandability of financial statements",
+        "Evaluation of accounting values",
+        "Accounting discretion",
+        "Removal of distortions"
+      ],
+      answer: 2,
+      reason: "Accounting discretion involves assessing whether managers have used their accounting discretion to give a realistic view of the affairs of the company or hide its true performance."
+    },
+    {
+      question: "The valuer examines the adequacy and quality of disclosures about the company's business activities and their economic consequences. Which aspect is involved?",
+      options: [
+        "Accounting flexibility",
+        "Removal of distortions",
+        "Identifying accounting policies and transactions",
+        "Understandability of financial statements"
+      ],
+      answer: 3,
+      reason: "Understandability of financial statements involves assessing the adequacy and quality of disclosures about the company's business activities and their economic consequences."
+    },
+    {
+      question: "After identifying that certain accounting numbers do not reflect the actual situation, the valuer restates those numbers to remove noise and bias. Which aspect of accounting analysis is being applied?",
+      options: [
+        "Removal of distortions",
+        "Accounting discretion",
+        "Understandability of financial statements",
+        "Accounting flexibility"
+      ],
+      answer: 0,
+      reason: "Removal of distortions involves removing distortions where the accounts do not reflect the true situation and restating accounting numbers to remove noise and bias introduced by accounting rules and management decisions."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS67",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>LMN Limited is planning to acquire another company. Before completing the transaction, the valuer and the acquirer identify several matters requiring detailed investigation.</p>
+    <p>The target company has not disclosed a show cause notice that has not yet matured into a demand. Its inventory includes obsolete and slow-moving stock carried above net realisable value. The acquirer also wants to assess whether the proposed merger will create operational synergies, whether the target complies with tax provisions and whether statutory records are properly maintained.</p>
+  `,
+  questions: [
+    {
+      question: "The undisclosed show cause notice, which has not matured into a demand, should be examined as a possible:",
+      options: [
+        "Surplus asset",
+        "Non-operating income",
+        "Hidden liability",
+        "Intangible asset"
+      ],
+      answer: 2,
+      reason: "Undisclosed show cause notices that have not matured into demands are identified in the material as examples of possible hidden liabilities or contingent liabilities."
+    },
+    {
+      question: "How should obsolete and slow-moving stock valued above net realisable value be viewed during due diligence?",
+      options: [
+        "As an example of an overvalued asset",
+        "As an example of a hidden liability",
+        "As a non-operating liability",
+        "As a market comparable"
+      ],
+      answer: 0,
+      reason: "Obsolete, slow-moving or non-moving stock valued above net realisable value is identified as an example of an overvalued asset."
+    },
+    {
+      question: "The acquirer examines whether the proposed merger would create operational synergies from a commercial and strategic perspective. Which type of due diligence is appropriate?",
+      options: [
+        "Tax due diligence",
+        "Financial due diligence",
+        "Legal due diligence",
+        "Commercial or operational due diligence"
+      ],
+      answer: 3,
+      reason: "Commercial or operational due diligence involves an evaluation from a commercial, strategic or operational perspective, including whether a proposed merger would create operational synergies."
+    },
+    {
+      question: "The acquirer examines whether the target company is adhering to tax provisions and considers the tax implications of the proposed transaction. This is:",
+      options: [
+        "Information system due diligence",
+        "Tax due diligence",
+        "Commercial due diligence",
+        "Legal due diligence"
+      ],
+      answer: 1,
+      reason: "Tax due diligence examines adherence to tax provisions, tax benefits available for the target and tax-related implications of the proposed transaction or valuation."
+    },
+    {
+      question: "The acquirer verifies the filing of annual returns, passing of necessary board resolutions and maintenance of minutes books. Which type of due diligence is involved?",
+      options: [
+        "Financial due diligence",
+        "Tax due diligence",
+        "Legal due diligence",
+        "Information system due diligence"
+      ],
+      answer: 2,
+      reason: "Legal due diligence examines whether the company is complying with legal provisions, including filing annual returns, passing necessary board resolutions and maintaining updated minutes books."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS68",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>RST Limited appoints a valuer to estimate the value of its business ownership interest. The valuer collects information about the company's products, key customers, suppliers, competitors and geographical markets.</p>
+    <p>The valuer also examines shareholder agreements, voting rights, historical financial statements, budgets and financial projections. Some information is obtained from public sources, and the valuer evaluates whether the information is sufficiently reliable for the purpose of the assignment.</p>
+  `,
+  questions: [
+    {
+      question: "Information about products, key customers, suppliers, competitors and geographical markets is primarily classified as:",
+      options: [
+        "Non-financial information",
+        "Ownership information",
+        "Financial information",
+        "Management representation"
+      ],
+      answer: 0,
+      reason: "Non-financial information includes the nature of the business, products or services, key customers and suppliers, competition, geographical markets and other relevant business information."
+    },
+    {
+      question: "Why does the valuer examine shareholder agreements and voting rights?",
+      options: [
+        "To calculate the company's depreciation",
+        "To identify the company's non-operating expenses",
+        "To determine the type of ownership interest, control characteristics and rights attached to ownership",
+        "To determine the company's tax depreciation rate"
+      ],
+      answer: 2,
+      reason: "Ownership information enables the valuer to determine the type of ownership interest being valued, ascertain whether it exhibits control characteristics and understand the classes of equity ownership interests and rights attached thereto."
+    },
+    {
+      question: "Historical financial statements, budgets and financial projections are primarily classified as:",
+      options: [
+        "General information",
+        "Financial information",
+        "Non-financial information",
+        "Legal information"
+      ],
+      answer: 1,
+      reason: "Financial information includes historical financial information, prospective financial information such as budgets, forecasts and projections, and other relevant financial data."
+    },
+    {
+      question: "When relying on information available in the public domain, what should the valuer assess?",
+      options: [
+        "Only whether the information is easily downloadable",
+        "Only whether the information is prepared by management",
+        "Only whether the information relates to a listed company",
+        "The credibility and reliability of the information, considering the purpose of valuation and its materiality to the valuation conclusion"
+      ],
+      answer: 3,
+      reason: "A valuer relying on information available in the public domain must assess its credibility and reliability, taking into account the purpose of valuation and materiality vis-à-vis the valuation conclusion."
+    },
+    {
+      question: "What is the appropriate approach when the valuer is uncertain whether the information received is sufficient for the valuation purpose?",
+      options: [
+        "Evaluate the reasonableness and sufficiency of the information and adequately support the judgements made",
+        "Accept all information without examination",
+        "Rely only on management's preferred figures",
+        "Ignore information that is not readily available"
+      ],
+      answer: 0,
+      reason: "The valuer shall read and evaluate information to determine its reasonableness. Judgements, including those concerning the sufficiency of data available to meet the purpose of valuation, must be adequately supported."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS69",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>UVW Limited provides its valuer with a written management representation letter containing information about certain contracts, contingent liabilities and non-operating assets. The valuer considers this representation while preparing the valuation report.</p>
+    <p>During the assignment, the valuer also identifies unusual non-recurring expenses and income from non-operating assets. He determines that certain modifications to the reported financial information are necessary to make the figures appropriate for the valuation methodology selected.</p>
+  `,
+  questions: [
+    {
+      question: "What is the significance of a written management representation obtained by the valuer?",
+      options: [
+        "It replaces all other valuation procedures",
+        "It becomes part of the evidence obtained by the valuer and forms a basis for the valuation report",
+        "It automatically establishes the final value",
+        "It removes the requirement to examine financial information"
+      ],
+      answer: 1,
+      reason: "A written representation obtained from management or those charged with governance becomes part of the evidence obtained by the valuer and forms a basis for the valuation report."
+    },
+    {
+      question: "Does the existence of a management representation letter remove the valuer's responsibility to exercise reasonable skill and care?",
+      options: [
+        "Yes, in all circumstances",
+        "Yes, whenever the representation is signed",
+        "No, the valuer must still exercise reasonable skill and care and carry out the required procedures",
+        "No, because management representations cannot form part of valuation evidence"
+      ],
+      answer: 2,
+      reason: "The existence of a management representation letter shall not preclude the valuer from exercising reasonable skill and care. The valuer shall carry out the required procedures in respect of information included in the letter."
+    },
+    {
+      question: "Why may adjustments be made to the reported financial information of the underlying and comparable companies?",
+      options: [
+        "To present their financial data on a consistent basis",
+        "To ensure that all companies report identical profits",
+        "To eliminate the need for comparable information",
+        "To make the subject company appear more profitable"
+      ],
+      answer: 0,
+      reason: "Adjustments may be made to present financial data of the underlying and comparable companies on a consistent basis."
+    },
+    {
+      question: "The valuer modifies revenues and expenses to reflect levels reasonably representative of continuing operations. This adjustment is intended to:",
+      options: [
+        "Increase reported revenue in every year",
+        "Exclude all operating expenses",
+        "Replace historical financial statements",
+        "Adjust revenues and expenses to levels reasonably representative of continuing operations"
+      ],
+      answer: 3,
+      reason: "The material identifies adjustment of revenues and expenses to levels reasonably representative of continuing operations as one reason for making adjustments."
+    },
+    {
+      question: "How should non-operating and non-recurring items be treated while adjusting financial information?",
+      options: [
+        "They should always be treated as recurring operating items",
+        "Adjust for non-operating or non-recurring assets and liabilities and related revenues and expenses",
+        "They should be ignored in every valuation",
+        "They should be included only in the engagement letter"
+      ],
+      answer: 1,
+      reason: "Adjustments may be appropriate for non-operating or non-recurring assets and liabilities and for revenues and expenses related to those non-operating items."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS70",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>DEF Limited is engaged in evaluating the appropriate valuation approach for three different assignments. The first assignment involves a company that is expected to enter liquidation. The second involves a start-up business for which adequate market comparables are not available. The third assignment is subject to a specific statutory requirement prescribing the valuation procedure.</p>
+    <p>The valuer understands that no single valuation approach is best suited to every situation and considers the nature of each asset, the reliability of available information and the purpose and base of valuation.</p>
+  `,
+  questions: [
+    {
+      question: "Which valuation approach would generally be appropriate when the purpose of valuation is liquidation and the company is not expected to continue as a going concern?",
+      options: [
+        "Cost Approach",
+        "Income Approach",
+        "Discounted Cash Flow Method in every case",
+        "Comparable Companies Multiple Method"
+      ],
+      answer: 0,
+      reason: "For a liquidation purpose, the material indicates that the valuer would use the realisable value of net assets under the Cost Approach rather than the Income Approach, because the company may not continue as a going concern."
+    },
+    {
+      question: "In valuing a start-up company where adequate market comparables are not available, which approach may be considered subject to the availability of adequate observable inputs such as actual cash flows and projected growth?",
+      options: [
+        "Market Approach only",
+        "Cost Approach in every case",
+        "Income Approach",
+        "Market Price Method only"
+      ],
+      answer: 2,
+      reason: "The material states that for a start-up with a lack of adequate market comparables, the Income Approach can be considered subject to the availability of adequate observable inputs such as actual cash flows and projected growth."
+    },
+    {
+      question: "How should valuation approaches and methods be selected in relation to observable and unobservable inputs?",
+      options: [
+        "Maximise the use of unobservable inputs",
+        "Maximise the use of relevant observable inputs and minimise the use of unobservable inputs",
+        "Ignore all observable inputs",
+        "Use projected figures even when reliable actual information is available"
+      ],
+      answer: 1,
+      reason: "The valuation approaches and methods shall be selected in a manner that maximises the use of relevant observable inputs and minimises the use of unobservable inputs."
+    },
+    {
+      question: "Which of the following is a key factor to be considered while selecting an appropriate valuation approach?",
+      options: [
+        "Only the preference of the company's directors",
+        "Only the number of employees",
+        "Only the amount of professional fees",
+        "Nature of the asset, availability and reliability of information, strengths and weaknesses of methods and approaches considered by market participants"
+      ],
+      answer: 3,
+      reason: "The material identifies the nature of the asset, availability and reliability of adequate inputs, strengths and weaknesses of approaches and methods, and valuation approaches or methods considered by market participants as key selection factors."
+    },
+    {
+      question: "Where a statute prescribes a valuation approach or method for a specific requirement, what should the valuer consider?",
+      options: [
+        "The prescribed statutory valuation approach or method",
+        "Only the method preferred by management",
+        "Only the market approach",
+        "Only the method used in the previous valuation"
+      ],
+      answer: 0,
+      reason: "The material explains that statutory requirements may drive the valuation approach where the statute prescribes the approach, method or computation for a specific requirement."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS71",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>GHI Limited is a growing business with reliable projected cash flows for the next several years. The valuer decides to apply the Discounted Cash Flow Method under the Income Approach.</p>
+    <p>The valuer prepares projections of Free Cash Flow to the Firm and separately considers the appropriate discount rate. The valuer also estimates terminal value for the period beyond the explicit projection period and plans to derive the equity value from the enterprise value.</p>
+  `,
+  questions: [
+    {
+      question: "Which discount rate is appropriate when the valuer uses Free Cash Flow to the Firm to calculate Enterprise Value?",
+      options: [
+        "Cost of Equity",
+        "Weighted Average Cost of Capital",
+        "Post-tax return on equity shares only",
+        "Dividend yield"
+      ],
+      answer: 1,
+      reason: "For calculating Enterprise Value using the Free Cash Flow to Firm approach, Weighted Average Cost of Capital (WACC) is used to discount future cash flows."
+    },
+    {
+      question: "If the valuer instead uses Free Cash Flow to Equity to calculate Equity Value, which discount rate should be used?",
+      options: [
+        "Weighted Average Cost of Capital",
+        "Cost of Debt",
+        "Cost of Equity",
+        "Historical return on assets"
+      ],
+      answer: 2,
+      reason: "For calculating Equity Value using Free Cash Flow to Equity, the Cost of Equity is used as the discount rate."
+    },
+    {
+      question: "What does terminal value represent in the DCF Method?",
+      options: [
+        "The value of the business only at the beginning of the forecast period",
+        "The value of historical assets alone",
+        "The value of liabilities due in the next financial year",
+        "The value beyond the explicit projection period, generally extending into perpetuity"
+      ],
+      answer: 3,
+      reason: "Terminal value captures value beyond the explicit projection period into perpetuity and is consistent with a going concern premise."
+    },
+    {
+      question: "What is the term used for the sum of the discounted free cash flows during the explicit projection period?",
+      options: [
+        "Primary value",
+        "Terminal value",
+        "Liquidation value",
+        "Replacement value"
+      ],
+      answer: 0,
+      reason: "Under the DCF steps, the sum of the discounted free cash flows during the projection period is termed the primary value."
+    },
+    {
+      question: "After arriving at Enterprise Value under the DCF Method, how does the valuer derive Equity Value according to the process described in the material?",
+      options: [
+        "Add all operating expenses to Enterprise Value",
+        "Deduct net debt from Enterprise Value",
+        "Deduct revenue from Enterprise Value",
+        "Add the discount rate to Enterprise Value"
+      ],
+      answer: 1,
+      reason: "The DCF process described in the material states that deduction of net debt from Enterprise Value results in Equity Value."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS72",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>JKL Limited is listed and its shares are traded on two active markets. The trading volume on one market is significantly higher than on the other market. During the valuation period, a one-time event causes a sharp movement in the share price on a particular trading day.</p>
+    <p>The valuer decides to use the Market Price Method and considers the traded prices observed over a reasonable period rather than relying solely on the unusual movement on that day.</p>
+  `,
+  questions: [
+    {
+      question: "Which type of market is relevant for applying the Market Price Method as described in the material?",
+      options: [
+        "A market where the asset is not traded",
+        "Only a private transaction between related parties",
+        "An active market in which the business or firm's securities are traded",
+        "A market where only historical book values are available"
+      ],
+      answer: 2,
+      reason: "Under the Market Price Method, the valuer considers the traded price observed over a reasonable period for a business or firm traded in an active market."
+    },
+    {
+      question: "Where the asset is traded in more than one active market, which market should the valuer consider?",
+      options: [
+        "The market where the trading volume of the asset is the highest",
+        "The market with the lowest trading volume",
+        "The market selected by the company's management",
+        "The market in which the asset was first listed, irrespective of trading activity"
+      ],
+      answer: 0,
+      reason: "Where an asset is traded in more than one active market, the valuer should consider the market where the trading volume of the asset is the highest."
+    },
+    {
+      question: "Why may the valuer use a weighted average or volume weighted average of traded prices?",
+      options: [
+        "To eliminate the need for market information",
+        "To replace the valuation date",
+        "To ensure that the final value is always the highest traded price",
+        "To reduce the impact of volatility or any one-time event in the asset"
+      ],
+      answer: 3,
+      reason: "The material states that the valuer should consider using a weighted average or volume weighted average to reduce the impact of volatility or any one-time event in the asset."
+    },
+    {
+      question: "Which price information should the valuer consider under the Market Price Method?",
+      options: [
+        "Only the price on the date of incorporation",
+        "The traded price observed over a reasonable period",
+        "Only the highest price ever recorded",
+        "Only the price requested by the company's management"
+      ],
+      answer: 1,
+      reason: "The Market Price Method considers the traded price observed over a reasonable period while valuing a business or firm traded in an active market."
+    },
+    {
+      question: "What is the most appropriate response to the sharp price movement caused by the one-time event?",
+      options: [
+        "Automatically use that day's highest price",
+        "Ignore the entire market history",
+        "Consider a weighted average or volume weighted average to reduce the impact of the one-time event",
+        "Replace the market price with the company's historical cost"
+      ],
+      answer: 2,
+      reason: "The material specifically identifies weighted average or volume weighted average as a means of reducing the impact of volatility or a one-time event in the asset."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS73",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>MNO Limited is being valued using the Comparable Companies Multiple (CCM) Method. The valuer identifies several companies in the same industry but notices differences in geographical location, size, profitability, growth and stage of business life cycle.</p>
+    <p>The valuer also considers suitable market multiples based on financial parameters and an industry-specific non-financial parameter. After selecting and adjusting the multiple, the valuer applies it to the relevant parameter of the business being valued.</p>
+  `,
+  questions: [
+    {
+      question: "Which combination of factors is relevant when identifying and selecting market comparables under the CCM Method?",
+      options: [
+        "Only the name and incorporation date of the comparable company",
+        "Only the number of directors and employees",
+        "Only the accounting year followed by the comparable company",
+        "Industry, geographical area, similar line of business or economic forces, size, life-cycle stage and profitability"
+      ],
+      answer: 3,
+      reason: "The material identifies industry, geographical area of operations, similar line of business or economic forces, size, stage of life cycle, profitability and diversification as factors for selecting market comparables."
+    },
+    {
+      question: "Which of the following is an example of a financial parameter used in computing market multiples?",
+      options: [
+        "Number of employees",
+        "EBITDA",
+        "Factory location",
+        "Management experience"
+      ],
+      answer: 1,
+      reason: "Market multiples may be computed using financial parameters such as Revenue, EBITDA, PAT, EPS and book value."
+    },
+    {
+      question: "The valuer identifies differences in profitability, geographical location and expected growth between the subject company and comparable companies. What should the valuer consider?",
+      options: [
+        "Adjustments to the market multiple",
+        "Ignoring the differences in every case",
+        "Replacing the CCM Method with the Market Price Method automatically",
+        "Using the same multiple without considering the differences"
+      ],
+      answer: 0,
+      reason: "Differences in size, geographical location, profitability, life-cycle stage, diversification, historical and expected growth and management profile may be considered while adjusting the market multiple."
+    },
+    {
+      question: "Which of the following is an example of a non-financial market multiple mentioned in the material?",
+      options: [
+        "EV/PAT",
+        "EV/EBITDA",
+        "EV/Tonne in the cement industry",
+        "Price/Earnings"
+      ],
+      answer: 2,
+      reason: "The material gives EV/Tower for tower telecom companies, EV/Tonne for cement companies and EV/Oil Barrel for oil companies as examples of multiples based on non-financial metrics."
+    },
+    {
+      question: "After adjusting the market multiple, how should the valuer arrive at the value of the asset?",
+      options: [
+        "Apply the original multiple to the comparable company's revenue",
+        "Use only the subject company's book value",
+        "Apply the adjusted multiple to the relevant parameter and consider a discount or premium for the specifics of the asset",
+        "Multiply the adjusted multiple by the number of employees"
+      ],
+      answer: 2,
+      reason: "The adjusted market multiple is applied to the relevant parameter of the asset being valued, followed by suitable discount or premium adjustments to factor in the specifics of that asset."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS74",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>PQR Limited is being valued using the Comparable Transaction Multiple (CTM) Method. The valuer identifies recent acquisitions and disposals of comparable businesses and considers the transaction multiples implied in those transactions.</p>
+    <p>Some transactions occurred several years before the valuation date, while others were completed recently. The valuer also checks whether the selected transactions were orderly and whether sufficient information is available from reliable sources to understand the transactions and derive the multiples.</p>
+  `,
+  questions: [
+    {
+      question: "What type of multiples does the Comparable Transaction Multiple Method use?",
+      options: [
+        "Only multiples based on the current year's budget",
+        "Only historical accounting ratios",
+        "Transaction multiples implied in recent acquisitions or disposals of comparable businesses",
+        "Only multiples derived from the subject company's own share price"
+      ],
+      answer: 2,
+      reason: "The CTM Method is a variant of the CCM Method and uses transaction multiples in place of trading multiples. These are multiples implied in recent acquisitions or disposals of comparable businesses."
+    },
+    {
+      question: "Why are transactions consummated closer to the valuation date generally considered more representative?",
+      options: [
+        "They are generally more representative of the market conditions prevailing closer to the valuation date",
+        "They automatically have the highest transaction value",
+        "They eliminate the need to assess whether the transaction was orderly",
+        "They are always between related parties"
+      ],
+      answer: 0,
+      reason: "Transactions consummated closer to the valuation date are generally more representative of the market conditions prevailing during that time."
+    },
+    {
+      question: "Which characteristic should the valuer consider while selecting a comparable transaction?",
+      options: [
+        "Whether the transaction involved the highest possible price",
+        "Whether the transaction was arranged by the subject company's management",
+        "Whether the transaction was completed without any documentation",
+        "Whether the selected comparable was an orderly transaction"
+      ],
+      answer: 3,
+      reason: "The material identifies whether the selected comparable transaction is an orderly transaction as a factor to be considered."
+    },
+    {
+      question: "Why is sufficient information about a selected transaction important?",
+      options: [
+        "To avoid identifying the comparable business",
+        "To enable the valuer to reasonably understand the market comparable and derive the transaction multiple",
+        "To eliminate the need for market analysis",
+        "To substitute the valuation report with the transaction agreement"
+      ],
+      answer: 1,
+      reason: "Sufficient information on transactions should be available to enable the valuer to reasonably understand the market comparable and derive the transaction multiple."
+    },
+    {
+      question: "Which of the following is identified as a reliable source of information about comparable transactions?",
+      options: [
+        "Unverified verbal statements",
+        "Personal opinions of employees",
+        "Regulatory filings, industry magazines and Merger & Acquisition databases",
+        "Only informal discussions with the target company's management"
+      ],
+      answer: 2,
+      reason: "The material identifies regulatory filings, industry magazines and Merger & Acquisition databases as examples of reliable sources of transaction information."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS75",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>STU Limited is a loss-making, asset-intensive company that is considering the possibility of liquidation. The valuer believes that the business value should be examined with reference to the value of its underlying assets and liabilities.</p>
+    <p>The valuer examines the balance sheet and other financial records, determines the value of assets and liabilities, and also considers contingent liabilities before arriving at the value attributable to equity shareholders.</p>
+  `,
+  questions: [
+    {
+      question: "Which valuation approach is particularly suitable for a company facing potential liquidation?",
+      options: [
+        "Cost Approach",
+        "Income Approach based entirely on perpetual cash flows",
+        "Market Price Method in every case",
+        "Comparable Companies Multiple Method in every case"
+      ],
+      answer: 0,
+      reason: "The Cost Approach is identified as particularly applicable to a loss-making company, a company making inadequate returns on capital or a company facing potential liquidation."
+    },
+    {
+      question: "Which principle underlies the Cost Approach?",
+      options: [
+        "The value must always be based on forecasted revenue",
+        "No one would pay more for an asset than it costs to replace it",
+        "The value must always be equal to market capitalisation",
+        "The value must be based only on earnings"
+      ],
+      answer: 1,
+      reason: "The Cost Approach is based on the concept of substitution, including the principle that no one would pay more for an asset than it costs to replace it."
+    },
+    {
+      question: "Which type of business is least suitable for the Cost Approach according to the material?",
+      options: [
+        "A loss-making company",
+        "A company facing potential liquidation",
+        "A company with substantial intangible assets",
+        "A real-estate land-stage company"
+      ],
+      answer: 2,
+      reason: "The Cost Approach is least applicable to service industry companies, non-capital-intensive businesses, companies with substantial intangible assets and high-growth companies."
+    },
+    {
+      question: "Which sequence correctly represents the procedure for valuation of an entity under the Cost Approach?",
+      options: [
+        "Prepare projections, calculate WACC and determine terminal value",
+        "Select comparable companies, calculate multiples and apply premiums",
+        "Estimate revenue, calculate EBITDA and determine future growth",
+        "Examine the balance sheet and other financial records, ascertain asset values and ascertain liability values including contingent liabilities"
+      ],
+      answer: 3,
+      reason: "The steps under the Cost Approach are to audit or examine the balance sheet and other financial records, ascertain the value of assets and ascertain the value of liabilities, including contingent liabilities."
+    },
+    {
+      question: "How is value per equity share computed under the formula provided for the Cost Approach?",
+      options: [
+        "(Value of Assets – Value of Liabilities) divided by the number of Equity Shares",
+        "(Revenue – Operating Expenses) divided by total assets",
+        "Enterprise Value divided by total liabilities",
+        "Market Capitalisation divided by total debt"
+      ],
+      answer: 0,
+      reason: "The material provides the formula: Value of Equity Capital = (Value of Assets – Value of Liabilities) / Number of Equity Shares."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS76",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>VWX Limited operates in an industry where reliable market information is limited. The valuer applies the Income Approach and Cost Approach and obtains significantly different indications of value.</p>
+    <p>The valuer considers the reliability of the results under each approach, the applicable premise of value, the purpose and intended use of the valuation and the quality of the underlying data. The valuer also considers whether more than one approach is necessary to reach a reliable conclusion.</p>
+  `,
+  questions: [
+    {
+      question: "Can a valuer adopt a single approach or multiple approaches to arrive at a reliable valuation conclusion?",
+      options: [
+        "Only a single approach is permitted",
+        "Only multiple approaches are permitted",
+        "The valuer may adopt a single approach or multiple approaches",
+        "The client must select all valuation approaches"
+      ],
+      answer: 2,
+      reason: "The material states that the valuer may consider adopting a single approach or multiple approaches to arrive at a reliable conclusion."
+    },
+    {
+      question: "When is the use of more than one valuation approach specifically recommended?",
+      options: [
+        "When there are insufficient factual inputs for a single method to arrive at a reliable value",
+        "When the client insists on a higher value",
+        "When all approaches produce identical values",
+        "Whenever the company has more than one shareholder"
+      ],
+      answer: 0,
+      reason: "Using more than one approach is especially recommended when there are insufficient factual inputs for a single method to arrive at a reliable value."
+    },
+    {
+      question: "What should the valuer do with value indications obtained under different approaches?",
+      options: [
+        "Select the highest value automatically",
+        "Reject all values other than the Income Approach",
+        "Use an equal weighting in every case",
+        "Assess the reliability of the results and assign weights to value indications where appropriate"
+      ],
+      answer: 3,
+      reason: "The valuer shall assess the reliability of the results under different approaches and assign weights to value indications reached based on various methods."
+    },
+    {
+      question: "How should the valuer determine the relative weight to be given to indications of value under different methods?",
+      options: [
+        "By following one prescribed formula in every case",
+        "Through informed professional judgement, rather than a prescribed formula",
+        "Only by following the preference of management",
+        "By selecting the method giving the highest valuation"
+      ],
+      answer: 1,
+      reason: "The selection of and reliance on appropriate methods and procedures depends on the judgement of the valuer and not on any prescribed formula. The valuer must use informed judgement when determining relative weights."
+    },
+    {
+      question: "What should the valuer do if values under the different approaches adopted show significant variance?",
+      options: [
+        "Immediately average the values without investigation",
+        "Ignore the approach producing the lower value",
+        "Revisit the analysis before concluding",
+        "Report only the highest value"
+      ],
+      answer: 2,
+      reason: "The material states that values under different approaches adopted should not be at a significant variance from each other. If the initial workings do not meet this criterion, the valuer should revisit the analysis before concluding."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS77",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>XYZ Limited is valued as at 31 March. On 20 April, the valuer becomes aware that a major customer has entered bankruptcy proceedings. Further examination indicates that the customer's financial difficulties had already existed at the valuation date.</p>
+    <p>In another instance, a new regulatory restriction is introduced on 15 April due to circumstances that arose after the valuation date and were not reasonably foreseeable on 31 March. The valuer evaluates the relevance of both events and considers whether any subsequent event should affect the valuation conclusion.</p>
+  `,
+  questions: [
+    {
+      question: "What is a subsequent event in the context of valuation?",
+      options: [
+        "An event that occurs before the appointment of the valuer",
+        "An event that occurs after the valuation date and could affect the value arrived at by the valuer",
+        "An event that occurs only after the valuation report is signed",
+        "An event that is always excluded from valuation"
+      ],
+      answer: 1,
+      reason: "A subsequent event is an event that occurs after the valuation date and could affect the value arrived at by the valuer."
+    },
+    {
+      question: "What is the general approach of a valuer towards circumstances and events when determining value?",
+      options: [
+        "Consider only events occurring after the report date",
+        "Consider all future events irrespective of their relevance",
+        "Generally consider circumstances existing at the valuation date and events occurring up to the valuation date, while applying professional judgement to relevant later events",
+        "Ignore the valuation date and use only current market conditions"
+      ],
+      answer: 2,
+      reason: "Generally, a valuer considers circumstances existing at the valuation date and events occurring up to that date. Later events may be relevant depending on the basis, premise and purpose of valuation, and the valuer should apply professional judgement."
+    },
+    {
+      question: "A subsequent event was reasonably foreseeable as at the valuation date. How does this affect the consideration of that event?",
+      options: [
+        "It is one of the conditions under which a subsequent event may be taken into consideration",
+        "It must always be ignored",
+        "It automatically changes the valuation date",
+        "It removes the requirement to disclose the event"
+      ],
+      answer: 0,
+      reason: "The material identifies events that were reasonably foreseeable as of the valuation date as one of the conditions under which subsequent events may be considered."
+    },
+    {
+      question: "A subsequent event is relevant to the valuation, but the facts and circumstances at the later date differ from those at the valuation date. What is required for consideration under the stated exception?",
+      options: [
+        "Use the later value without adjustment",
+        "Change the valuation date to the date of the subsequent event",
+        "Ignore the differences between the two dates",
+        "Make appropriate adjustments to consider the differences between the facts and circumstances on the two dates"
+      ],
+      answer: 3,
+      reason: "A subsequent event may be considered where it is relevant to the valuation and appropriate adjustments are made to consider differences between the facts and circumstances on the valuation date and the date of the subsequent event."
+    },
+    {
+      question: "When may a subsequent event be considered without being used to arrive at the valuation?",
+      options: [
+        "When it automatically increases the value",
+        "When it is used only to confirm the value already arrived at",
+        "When it relates to an unrelated business",
+        "When it is not disclosed in the valuation report"
+      ],
+      answer: 1,
+      reason: "The material identifies as an exception a subsequent event that is not used to arrive at the valuation but is used only to confirm the value already arrived at."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS78",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>ABC Limited owns an industrial property currently used as a warehouse. A market participant proposes converting the property into a commercial complex. The valuer examines the property's physical characteristics, applicable zoning regulations and the expected income from the proposed use after considering conversion costs.</p>
+    <p>The valuer also considers the existing use of the property and whether that use represents its Highest and Best Use. The property is being examined for a fair value measurement.</p>
+  `,
+  questions: [
+    {
+      question: "The valuer examines the property's location, size and physical characteristics to determine whether the proposed use is possible. Which feasibility aspect is being considered?",
+      options: [
+        "Physical feasibility",
+        "Legal feasibility",
+        "Financial feasibility",
+        "Participant specific feasibility"
+      ],
+      answer: 0,
+      reason: "Physical feasibility considers the physical characteristics of an asset that market participants would consider when pricing the asset, such as the location or size of a property."
+    },
+    {
+      question: "The valuer examines whether zoning regulations legally permit the proposed commercial use. This relates to:",
+      options: [
+        "Financial feasibility",
+        "Physical feasibility",
+        "Legal feasibility",
+        "Going concern"
+      ],
+      answer: 2,
+      reason: "Legal feasibility considers legal restrictions on the use of an asset that market participants would consider when pricing it, such as zoning regulations applicable to a property."
+    },
+    {
+      question: "The valuer estimates whether the proposed use will generate adequate income or cash flows after considering conversion costs and the required investment return. Which aspect is being examined?",
+      options: [
+        "Legal feasibility",
+        "Physical feasibility",
+        "As-is-where-is value",
+        "Financial feasibility"
+      ],
+      answer: 3,
+      reason: "Financial feasibility considers whether the use generates adequate income or cash flows, taking account of conversion costs, to produce the investment return required by market participants."
+    },
+    {
+      question: "What is the presumption regarding the current use of an asset under the Highest and Best Use premise?",
+      options: [
+        "The current use is always different from the Highest and Best Use",
+        "The current use is presumed to be its Highest and Best Use unless a market or other factor proves to the contrary",
+        "The current use must always be ignored",
+        "The current use is presumed to be its liquidation value"
+      ],
+      answer: 1,
+      reason: "The material states that the current use of an asset is presumed to be its Highest and Best Use unless a market or other factor proves to the contrary."
+    },
+    {
+      question: "What does the As-is-where-is premise represent?",
+      options: [
+        "The maximum possible use of an asset",
+        "The use proposed by a potential acquirer",
+        "The existing use of the asset, which may or may not be its Highest and Best Use",
+        "The realisable value under forced liquidation"
+      ],
+      answer: 2,
+      reason: "As-is-where-is represents the existing use of the asset. This may or may not be the Highest and Best Use of the asset."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS79",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>DEF Limited owns a patent, a software application and a portfolio of customer relationships. The valuer is asked to identify and value the intangible assets separately for a specified valuation purpose.</p>
+    <p>The patent arises from legal rights, and the software application can be sold separately from the hardware with which it is used. However, a separate machine-control software package cannot operate without the specific machine. The company also expects future economic benefits from its customer relationships but does not have legal rights or other means to restrict access to those benefits.</p>
+  `,
+  questions: [
+    {
+      question: "How does ICAI Valuation Standard 302 define an intangible asset?",
+      options: [
+        "An identifiable non-monetary asset without physical substance",
+        "Any physical asset capable of generating revenue",
+        "Any monetary asset without physical substance",
+        "Any asset that cannot generate future economic benefits"
+      ],
+      answer: 0,
+      reason: "ICAI Valuation Standard 302 defines an intangible asset as an identifiable non-monetary asset without physical substance."
+    },
+    {
+      question: "Which combination of attributes is necessary for an item to meet the definition of an intangible asset?",
+      options: [
+        "Physical substance, marketability and historical cost",
+        "Identifiability, control over a resource and existence of future economic benefits",
+        "Ownership, physical possession and current market price",
+        "Legal registration, guaranteed profits and physical existence"
+      ],
+      answer: 1,
+      reason: "The material identifies three necessary attributes: identifiability, control over a resource and existence of future economic benefits."
+    },
+    {
+      question: "Which of the following satisfies the identifiability criterion for an intangible asset?",
+      options: [
+        "An item that cannot be separated and does not arise from legal or contractual rights",
+        "An item that merely increases the number of employees",
+        "An item that is separable or arises from contractual or other legal rights",
+        "An item that has no identifiable economic benefits"
+      ],
+      answer: 2,
+      reason: "An intangible asset is identifiable if it is separable, or if it arises from contractual or other legal rights, irrespective of whether those rights are transferable or separable."
+    },
+    {
+      question: "The company expects customers to continue trading with it because of customer loyalty, but it has no legal rights or other means to control the relationships. What is the appropriate consideration under the material?",
+      options: [
+        "The customer relationships automatically qualify as identifiable intangible assets",
+        "Future customer revenues should always be ignored in business valuation",
+        "Customer relationships can never be valued",
+        "The company usually has insufficient control over the expected economic benefits from those relationships"
+      ],
+      answer: 3,
+      reason: "In the absence of legal rights or other ways to control customer relationships, an entity usually has insufficient control over the expected economic benefits from those relationships."
+    },
+    {
+      question: "How should software that is integral to a computer-controlled machine and without which the machine cannot operate be treated under the example in the material?",
+      options: [
+        "As an intangible asset in every case",
+        "As an integral part of the related hardware and treated as a tangible asset",
+        "As a financial instrument",
+        "As a non-operating liability"
+      ],
+      answer: 1,
+      reason: "Where computer software is an integral part of related hardware and the machine cannot operate without that specific software, it is treated as a tangible asset. Software that is not integral to the related hardware is treated as an intangible asset."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS80",
+  difficulty: "Medium",
+  chapter: "Chapter5",
+  caseText: `
+    <p>GHI Financial Services holds debt instruments and derivative contracts issued by different entities. A valuer is appointed to determine their present values for financial reporting purposes.</p>
+    <p>The valuer considers future cash flows, possible variations in their amount and timing, the time value of money and the risk premium. He also examines the issuer's financial performance, security hierarchy and collateral arrangements. Certain instruments are valued using an internal model based on unobservable inputs prepared by the issuing entity.</p>
+  `,
+  questions: [
+    {
+      question: "What is a financial instrument according to the material?",
+      options: [
+        "Any physical asset held by an entity",
+        "Any contract that gives rise to a financial asset of one entity and a financial liability or equity instrument of another entity",
+        "Any agreement that relates only to the purchase of goods",
+        "Any liability that does not involve a contractual relationship"
+      ],
+      answer: 1,
+      reason: "A financial instrument is any contract that gives rise to a financial asset of one entity and a financial liability or equity instrument of another entity."
+    },
+    {
+      question: "Which of the following elements is considered in determining the present value of a financial instrument using a present value technique?",
+      options: [
+        "Only historical cash flows",
+        "Only the carrying amount of the instrument",
+        "Only the issuer's share capital",
+        "Future cash flows, uncertainty in their amount and timing, time value of money, risk premium and other factors considered by market participants"
+      ],
+      answer: 3,
+      reason: "The present value technique captures estimates of future cash flows, possible variations in their amount and timing, the time value of money represented by a risk-free rate, a risk premium and other factors market participants would consider."
+    },
+    {
+      question: "While assessing counterparty risk, which factors should the valuer consider?",
+      options: [
+        "The present and projected financial performance of the parties and the performance and prospects of the relevant macro industry sector",
+        "Only the age of the financial instrument",
+        "Only the historical issue price",
+        "Only the number of shareholders of the issuer"
+      ],
+      answer: 0,
+      reason: "Counterparty risk is influenced by the financial strength of the issuer or guarantors and involves consideration of present and projected financial performance and the performance and prospects of the macro industry sector."
+    },
+    {
+      question: "What is the usual implication of a lower hierarchy in the security charge of a financial instrument?",
+      options: [
+        "Lower credit risk",
+        "No impact on credit risk",
+        "Higher credit risk profile",
+        "Automatic increase in collateral value"
+      ],
+      answer: 2,
+      reason: "The material states that a lower hierarchy in security charge would usually result in a higher credit risk profile."
+    },
+    {
+      question: "Where a financial instrument is valued using unobservable inputs and an internal valuation model prepared by the issuing entity, what should the valuer consider?",
+      options: [
+        "Only the final value provided by the issuer",
+        "The governance and control procedures, including the adequacy and independence of the control environment",
+        "Only the historical market price of the instrument",
+        "Only the issuer's accounting profit"
+      ],
+      answer: 1,
+      reason: "Where valuation is based on unobservable inputs, the control environment gains enhanced importance. A valuer relying on an internally performed valuation shall consider the control environment, its adequacy and independence."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS81",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+  caseText: `
+    <p>ABC Limited is acquiring a manufacturing facility from another company. ABC Limited already owns an adjacent facility and can use the acquired property together with its existing operations to generate synergies that are unavailable to other market participants. The valuer is asked to determine both Fair Value and Participant Specific Value.</p>
+    <p>The asset is traded in a principal market. The proposed transaction is negotiated between related entities, and the valuer also identifies synergies that would be available to market participants generally.</p>
+  `,
+  questions: [
+    {
+      question: "How should the value arising specifically from ABC Limited's ability to combine the acquired facility with its existing operations be considered?",
+      options: [
+        "It must automatically form part of Fair Value",
+        "It is a Participant Specific consideration",
+        "It must be treated as Liquidation Value",
+        "It must be excluded from every valuation basis"
+      ],
+      answer: 1,
+      reason: "Participant Specific Value considers advantages or disadvantages specific to an identified owner or acquirer. Synergies available only to the concerned participant are participant-specific considerations."
+    },
+    {
+      question: "The valuer is determining Fair Value. How should the synergies available exclusively to ABC Limited be treated?",
+      options: [
+        "They must be included because ABC Limited is the acquirer",
+        "They must be treated as market-wide synergies",
+        "They should not be considered as advantages available to market participants in general",
+        "They must be added to the historical cost of the facility"
+      ],
+      answer: 2,
+      reason: "Fair Value reflects characteristics and advantages available to market participants in general. It does not consider advantages or disadvantages available only to a particular participant."
+    },
+    {
+      question: "The facility is traded in a principal market, and the valuer identifies transaction costs associated with selling it. Which treatment is consistent with Fair Value measurement?",
+      options: [
+        "Use the price in the principal market and do not adjust it for transaction costs",
+        "Always use the lowest price among all markets",
+        "Deduct transaction costs from the principal market price",
+        "Use the price agreed between the related entities without considering the market"
+      ],
+      answer: 0,
+      reason: "Fair Value uses the price in the principal or most advantageous market and the price shall not be adjusted for transaction costs."
+    },
+    {
+      question: "Why does the proposed transaction between the related entities not, by itself, establish a transaction between market participants as described in the Fair Value definition?",
+      options: [
+        "Because market participants must always be listed companies",
+        "Because market participants cannot acquire manufacturing facilities",
+        "Because market participants must always be existing owners",
+        "Because market participants are required to be independent of each other"
+      ],
+      answer: 3,
+      reason: "Market participants are willing buyers and willing sellers who are independent of each other. Related parties do not satisfy this independence characteristic."
+    },
+    {
+      question: "Suppose another synergy is available to all market participants acquiring the facility, rather than only to ABC Limited. How should it be considered?",
+      options: [
+        "It must be excluded because all synergies are participant-specific",
+        "It may be considered in Fair Value because it is available to market participants generally",
+        "It must be considered only under Liquidation Value",
+        "It must be ignored because the facility is used in manufacturing"
+      ],
+      answer: 1,
+      reason: "Fair Value considers synergies available to market participants in general, whereas Participant Specific Value considers synergies specifically available only to the concerned participant or participants."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS82",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+  caseText: `
+    <p>PQR Limited owns a warehouse in an area where commercial redevelopment is permitted. A proposed redevelopment would be physically possible and financially attractive after considering conversion costs. The company currently continues to use the property as a warehouse.</p>
+    <p>Separately, the company is liquidating another asset. One asset can be marketed for a reasonable period, while another must be sold within a severely restricted period because the owner is compelled to sell. The valuer must distinguish the relevant premises of value.</p>
+  `,
+  questions: [
+    {
+      question: "For determining the Highest and Best Use of the warehouse, which combination of feasibility considerations is relevant under Ind AS 113?",
+      options: [
+        "Only physical feasibility",
+        "Only financial feasibility",
+        "Physical, legal and financial feasibility",
+        "Only the current owner's intention"
+      ],
+      answer: 2,
+      reason: "Fair Value measurement of non-financial assets assumes Highest and Best Use by market participants while considering physical, legal and financial feasibility."
+    },
+    {
+      question: "The warehouse is currently used for storage, but evidence indicates that redevelopment is its Highest and Best Use. What is the appropriate conclusion regarding current use?",
+      options: [
+        "Current use is presumed to be Highest and Best Use unless a market or other factor proves to the contrary",
+        "Current use must always be treated as Highest and Best Use",
+        "Current use must always be ignored in every valuation",
+        "Highest and Best Use is determined exclusively by the current owner's preference"
+      ],
+      answer: 0,
+      reason: "The current use of an asset is presumed to be its Highest and Best Use unless a market or other factor proves to the contrary. The existing use may therefore differ from its Highest and Best Use."
+    },
+    {
+      question: "Where the existing use is not the Highest and Best Use, which additional factor should the valuer consider?",
+      options: [
+        "Only the historical purchase price",
+        "Only the existing depreciation policy",
+        "Only the owner's original intention",
+        "The cost of conversion required to put the asset into its Highest and Best Use"
+      ],
+      answer: 3,
+      reason: "Where the current use is not the Highest and Best Use, the valuer shall also consider the cost of conversion required to put the asset from its current position to its Highest and Best Use."
+    },
+    {
+      question: "The first asset is to be sold after appropriate marketing efforts and a reasonable marketing period on an as-is, where-is basis. Which premise is most appropriate?",
+      options: [
+        "Forced Transaction",
+        "Orderly Liquidation",
+        "Going Concern",
+        "Highest and Best Use"
+      ],
+      answer: 1,
+      reason: "Orderly liquidation refers to the realisable value of an asset in liquidation after allowing appropriate marketing efforts and a reasonable period of time to market the asset on an as-is, where-is basis."
+    },
+    {
+      question: "The second asset must be sold within a limited period because the owner is compelled to sell. Which fact distinguishes this from an ordinary sale in an inactive market?",
+      options: [
+        "The asset is not frequently traded",
+        "There are few potential buyers",
+        "The seller is compelled to sell without adequate marketing efforts or a reasonable marketing period",
+        "The asset is subject to a marketing constraint"
+      ],
+      answer: 2,
+      reason: "A Forced Transaction involves compulsion to sell within a limited period without adequate marketing efforts or a reasonable period to market the asset. A marketing constraint or sale in an inactive market alone does not constitute a forced transaction."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS83",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+  caseText: `
+    <p>A valuer receives four assignments. The first is a growing business with a unique business model and reliable long-term cash flow projections. The second is a stable business with a standard business model. The third is a stable business with available peer companies and a short-to-medium-term outlook. The fourth is a nascent project involving high capital expenditure and no significant intangible assets.</p>
+    <p>The valuer must select the most appropriate valuation methodologies and ensure that the choice of approach makes appropriate use of available information.</p>
+  `,
+  questions: [
+    {
+      question: "Which method is generally more appropriate for the first business, considering its growth phase, unique business model and reliable long-term cash flow projections?",
+      options: [
+        "Market Price Method",
+        "Earnings Capitalisation Method",
+        "Discounted Cash Flow Method",
+        "Cost Method"
+      ],
+      answer: 2,
+      reason: "The Discounted Cash Flow Method is generally preferred for growth-phase businesses or new projects where cash flow projections are available and reliable, the business model is unique and a long-term outlook is relevant."
+    },
+    {
+      question: "Which method is generally preferred for the second business, given its stability and standard business model?",
+      options: [
+        "Earnings Capitalisation Method",
+        "Discounted Cash Flow Method in every case",
+        "Comparable Transaction Multiple Method in every case",
+        "Cost Method"
+      ],
+      answer: 0,
+      reason: "The Earnings Capitalisation Method is generally preferred for a stable business with a standard business model."
+    },
+    {
+      question: "Which method is generally suitable for the third business, where a peer group is available and the outlook is short to medium term?",
+      options: [
+        "Cost Method",
+        "Discounted Cash Flow Method only",
+        "Market Price Method only",
+        "Market Multiples Method"
+      ],
+      answer: 3,
+      reason: "The Market Multiples Method is generally preferred for a stable business with available peer group companies, a short-to-medium-term outlook or where revenue or cash flow streams are not determinable."
+    },
+    {
+      question: "Which method is generally preferred for the fourth project?",
+      options: [
+        "Earnings Capitalisation Method",
+        "Cost Method",
+        "Market Price Method",
+        "Comparable Transaction Multiple Method"
+      ],
+      answer: 1,
+      reason: "The Cost Method is generally preferred for nascent-stage projects with high capital expenditure involvement where no significant intangible assets are involved."
+    },
+    {
+      question: "Irrespective of the method selected, which principle should guide the valuer's selection of valuation approaches and methods?",
+      options: [
+        "Maximise the use of unobservable inputs",
+        "Use projected information even where reliable actual information is available",
+        "Maximise the use of relevant observable inputs and minimise the use of unobservable inputs",
+        "Select the approach that produces the highest value"
+      ],
+      answer: 2,
+      reason: "The valuation approaches and methods shall be selected in a manner that maximises the use of relevant observable inputs and minimises the use of unobservable inputs."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS84",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+  caseText: `
+    <p>LMN Limited is preparing a Value in Use calculation under Ind AS 36. Management's cash flow forecasts include savings from a future restructuring to which the company is not yet committed and additional income from a planned enhancement of the asset's performance.</p>
+    <p>The forecasts cover eight years, although management has not demonstrated its ability to forecast reliably over that period. The business operates in a cyclical industry, and management proposes an increasing growth rate beyond the explicit forecast period.</p>
+  `,
+  questions: [
+    {
+      question: "Which cash flows should be excluded from the Value in Use projections based on the circumstances described?",
+      options: [
+        "Cash flows arising from existing operations",
+        "Cash flows supported by reasonable and supportable assumptions",
+        "Cash flows reflecting management's best estimate of economic conditions",
+        "Estimated future cash inflows or outflows from uncommitted future restructuring and improving or enhancing the asset's performance"
+      ],
+      answer: 3,
+      reason: "Under the Ind AS 36 considerations in the material, Value in Use cash flow projections shall exclude estimated future cash inflows or outflows expected to arise from future restructurings to which the entity is not yet committed or from improving or enhancing the asset's performance."
+    },
+    {
+      question: "When preparing cash flow projections under Ind AS 36, what is the required treatment of external evidence?",
+      options: [
+        "Greater weight shall be given to external evidence",
+        "External evidence must be ignored if management has prepared projections",
+        "External evidence is relevant only when the business is listed",
+        "Management's assumptions must always receive greater weight"
+      ],
+      answer: 0,
+      reason: "Cash flow projections shall be based on reasonable and supportable assumptions representing management's best estimate of economic conditions, and greater weight shall be given to external evidence."
+    },
+    {
+      question: "Management proposes an eight-year forecast without demonstrating forecasting reliability over a longer period. What is the relevant requirement for budgets and forecasts under Ind AS 36?",
+      options: [
+        "Forecasts must always cover at least ten years",
+        "Forecasts based on budgets or forecasts shall cover a maximum period of five years unless a longer period can be justified",
+        "Forecasts may extend indefinitely without justification",
+        "Forecasts must always be limited to one year"
+      ],
+      answer: 1,
+      reason: "Projections based on budgets or forecasts shall cover a maximum period of five years unless a longer period can be justified. A longer period requires confidence in reliability and demonstrated forecasting ability based on experience."
+    },
+    {
+      question: "Beyond the period covered by the most recent budgets or forecasts, which growth assumption is generally appropriate?",
+      options: [
+        "An increasing growth rate in every subsequent year",
+        "A growth rate based only on management's desired target",
+        "A steady or declining growth rate, unless an increasing rate can be justified, subject to the stated long-term average growth limitation",
+        "A growth rate unrelated to the products, industry or market"
+      ],
+      answer: 2,
+      reason: "Beyond the period covered by the most recent budgets or forecasts, projections should generally use a steady or declining growth rate unless an increasing rate can be justified. The rate shall not exceed the relevant long-term average growth rate unless a higher rate can be justified."
+    },
+    {
+      question: "What specific consideration is necessary when determining the explicit projection period for a business operating in a cyclical industry?",
+      options: [
+        "The projection period should cover only the current profitable phase",
+        "The projection period should end before the next downturn",
+        "The projection period should cover only the average industry year",
+        "The entire industry cycle must be captured in the projection period"
+      ],
+      answer: 3,
+      reason: "For cyclical industries, the entire cycle must be captured in the projection period. The accuracy of the DCF is heavily dependent on the quality of forecasts."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS85",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+  caseText: `
+    <p>RST Limited is valued using the Income Approach and Market Approach. The initial valuation indications differ significantly because some information required for the market comparison is unavailable, while the income projections contain certain uncertainties.</p>
+    <p>The valuer considers using an additional approach, evaluates the reliability of each indication and determines the relative importance of the methods before arriving at a conclusion. The valuer must also explain the basis for selecting or weighting the methods.</p>
+  `,
+  questions: [
+    {
+      question: "Given the insufficient factual inputs for relying on one method alone, which course of action is particularly recommended?",
+      options: [
+        "Use only the method producing the highest value",
+        "Use multiple valuation approaches to arrive at a reliable conclusion",
+        "Discard all methods and rely on management's estimate",
+        "Use the same weight for each method without analysis"
+      ],
+      answer: 1,
+      reason: "Using more than one approach is especially recommended where there are insufficient factual inputs for a single method to arrive at a reliable value."
+    },
+    {
+      question: "How should the valuer determine the relative importance of the different value indications?",
+      options: [
+        "Use the same weight for every method in all cases",
+        "Select the value preferred by the client",
+        "Select the highest indication of value",
+        "Assess the reliability of results and assign appropriate weights to the value indications"
+      ],
+      answer: 3,
+      reason: "The valuer shall assess the reliability of results under the different approaches and assign weights to value indications reached based on various methods."
+    },
+    {
+      question: "Which statement correctly describes the basis for selecting and relying on valuation methods?",
+      options: [
+        "Selection depends on the valuer's informed professional judgement, not on a prescribed formula, and the rationale should be provided",
+        "A prescribed formula must determine the weight of each approach",
+        "The client alone determines the relative weight of each method",
+        "The highest value indication must always be conclusive"
+      ],
+      answer: 0,
+      reason: "The selection of and reliance on appropriate methods and procedures depends on the judgement of the valuer and not on any prescribed formula. The valuer must use informed judgement and provide the rationale for the selection or weighting of methods."
+    },
+    {
+      question: "Which combination of factors should the valuer consider when assessing the relative importance of the value indications?",
+      options: [
+        "Only the number of employees and directors",
+        "Only the historical cost of the business",
+        "Applicable premise of value, purpose and intended use, nature of the underlying business and quality and reliability of data",
+        "Only the management's preferred valuation method"
+      ],
+      answer: 2,
+      reason: "The material identifies the applicable premise of value, purpose and intended use, nature of the underlying business and quality and reliability of data as relevant factors in assessing the relative importance of value indications."
+    },
+    {
+      question: "The initial valuations under the different approaches show significant variance. What should the valuer do before concluding?",
+      options: [
+        "Automatically average all the indications",
+        "Revisit the analysis before concluding",
+        "Report only the highest indication",
+        "Ignore the indication with the lowest value"
+      ],
+      answer: 1,
+      reason: "Values under different approaches adopted should not be at significant variance from each other. If initial workings do not meet this criterion, the valuer should revisit the analysis before concluding."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS86",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+  caseText: `
+    <p>UVW Limited is valued as at 31 March. A major customer is declared bankrupt on 20 April. Subsequent investigation indicates that the customer's financial difficulties existed at 31 March.</p>
+    <p>Separately, a new regulatory restriction arises on 15 April due to circumstances that were not reasonably foreseeable at the valuation date. The valuer considers the distinction between evidence of conditions already existing at the valuation date and circumstances that arose subsequently.</p>
+  `,
+  questions: [
+    {
+      question: "How should an event occurring after the valuation date that could affect the value arrived at by the valuer be described?",
+      options: [
+        "Subsequent Event",
+        "Valuation Base",
+        "Premise of Value",
+        "Engagement Limitation"
+      ],
+      answer: 0,
+      reason: "A Subsequent Event is an event that occurs after the valuation date and could affect the value arrived at by the valuer."
+    },
+    {
+      question: "The customer's bankruptcy after 31 March provides evidence that the customer's financial difficulties existed at the end of the reporting period. How is this event classified under the Ind AS 10 explanation in the supplied material?",
+      options: [
+        "A non-adjusting event after the reporting period",
+        "A forced transaction",
+        "An adjusting event after the reporting period",
+        "A change in valuation premise"
+      ],
+      answer: 2,
+      reason: "The material identifies bankruptcy of a customer after the reporting period, where it provides evidence of conditions existing at the end of the reporting period, as an adjusting event after the reporting period."
+    },
+    {
+      question: "When considering events arising after the valuation date, which factors should guide the valuer's professional judgement?",
+      options: [
+        "Only the date on which the valuation report is signed",
+        "Only the preferences of management",
+        "Only the amount of the subsequent financial effect",
+        "The basis, premise and purpose of valuation"
+      ],
+      answer: 3,
+      reason: "Events and circumstances occurring after the valuation date may be relevant depending on the basis, premise and purpose of valuation. The valuer should apply professional judgement in considering their relevance."
+    },
+    {
+      question: "A subsequent event is relevant to the valuation, but the facts and circumstances at the event date differ from those at the valuation date. Under which condition may it be considered?",
+      options: [
+        "The later event may be adopted without examining the differences",
+        "Appropriate adjustments are made to consider the differences between the facts and circumstances on the valuation date and the date of the subsequent event",
+        "The valuation date must automatically be changed",
+        "The later event must be ignored in all circumstances"
+      ],
+      answer: 1,
+      reason: "One of the conditions for considering a subsequent event is that it is relevant to the valuation and appropriate adjustments are made to consider differences between the facts and circumstances on the valuation date and the date of the subsequent event."
+    },
+    {
+      question: "If the valuer considers a relevant event arising after the valuation date, what disclosure is specifically required?",
+      options: [
+        "The event or circumstance considered should be explicitly disclosed in the valuation report",
+        "The event should be kept confidential in every case",
+        "Only the final value should be disclosed",
+        "The event should be recorded only in management's internal records"
+      ],
+      answer: 0,
+      reason: "Where subsequent circumstances or events are considered by the valuer, they should be explicitly disclosed in the valuation report."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS87",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+  caseText: `
+    <p>ABC Limited is being valued using the Market Approach. The valuer identifies peer companies operating in the same industry but observes differences in geographical markets, size, profitability and growth.</p>
+    <p>The valuer also examines recent acquisitions of comparable businesses. Some transactions are close to the valuation date and have reliable information, while others are older or do not provide sufficient details to determine whether the transactions were orderly.</p>
+  `,
+  questions: [
+    {
+      question: "Which factors should be considered when selecting comparable companies under the Comparable Companies Multiple Method?",
+      options: [
+        "Only the names of the companies and their incorporation dates",
+        "Only their share capital and number of directors",
+        "Industry, geographical area, similar line of business or economic forces, size, life-cycle stage and profitability",
+        "Only the historical dividend paid by each company"
+      ],
+      answer: 2,
+      reason: "The material identifies industry, geographical area of operations, similar line of business or economic forces, size, stage of life cycle, profitability and diversification as factors relevant to selecting market comparables."
+    },
+    {
+      question: "The subject company has lower profitability and a different growth profile from the comparable companies. What should the valuer consider?",
+      options: [
+        "Use the comparable multiple without any examination",
+        "Adjust the market multiple to reflect relevant differences between the subject company and the comparables",
+        "Ignore the comparable companies",
+        "Use the historical cost of the subject company as the market multiple"
+      ],
+      answer: 1,
+      reason: "Differences in size, geographical location, profitability, life-cycle stage, diversification, historical and expected growth and management profile may be considered when adjusting the market multiple."
+    },
+    {
+      question: "Which statement correctly distinguishes the Comparable Companies Multiple Method from the Comparable Transaction Multiple Method?",
+      options: [
+        "CCM uses transaction multiples, while CTM uses only historical cost",
+        "Both methods use only the subject company's own market price",
+        "CCM uses liquidation multiples, while CTM uses replacement cost",
+        "CCM uses trading multiples, while CTM uses transaction multiples implied in comparable acquisitions or disposals"
+      ],
+      answer: 3,
+      reason: "The Comparable Transaction Multiple Method is a variant of the Comparable Companies Multiple Method and uses transaction multiples in place of trading multiples."
+    },
+    {
+      question: "Why are transactions consummated closer to the valuation date generally preferred when selecting comparable transactions?",
+      options: [
+        "They are generally more representative of the market conditions prevailing near the valuation date",
+        "They always involve a higher value",
+        "They eliminate the need to consider whether the transaction was orderly",
+        "They are necessarily transactions between related parties"
+      ],
+      answer: 0,
+      reason: "Transactions consummated closer to the valuation date are generally more representative of the market conditions prevailing during that time."
+    },
+    {
+      question: "Which combination of conditions should the valuer consider before relying on a comparable transaction?",
+      options: [
+        "The transaction involved the largest company, irrespective of its circumstances",
+        "The transaction price is publicly mentioned, even if no details are available",
+        "The transaction was orderly and sufficient information is available from reliable sources to understand the comparable and derive the multiple",
+        "The transaction occurred at any time in the past, irrespective of market conditions"
+      ],
+      answer: 2,
+      reason: "The material identifies whether the transaction was orderly, whether sufficient information is available to understand the comparable and derive the multiple, and whether information comes from reliable sources as relevant selection factors."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS88",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+  caseText: `
+    <p>A valuer is appointed to prepare two documents. The first is a valuation report specifically required under a Court order. The second is an opinion reviewing a valuation report prepared by another valuer.</p>
+    <p>The valuer must determine the applicability of ICAI Valuation Standard 202 and ensure that the documentation maintained for the relevant assignment supports the basis of the valuation report and the work performed.</p>
+  `,
+  questions: [
+    {
+      question: "What is the primary scope of ICAI Valuation Standard 202?",
+      options: [
+        "To prescribe the accounting policies of the entity being valued",
+        "To provide guidance on the documentation to be maintained for the preparation of a valuation report",
+        "To prescribe the valuation base for every type of asset",
+        "To determine the market price of securities"
+      ],
+      answer: 1,
+      reason: "ICAI VS 202 provides guidance on the documentation to be maintained for the preparation of a valuation report and deals with the minimum content and basis of preparation of the report."
+    },
+    {
+      question: "Is ICAI VS 202 applicable to the valuation report specifically required under the Court order?",
+      options: [
+        "Yes, it applies to every report without exception",
+        "Yes, but only when the valuer uses the Income Approach",
+        "Yes, whenever the client agrees",
+        "No, the supplied material states that it is not applicable to reports specifically required under a statute, law or Court order"
+      ],
+      answer: 3,
+      reason: "The scope of VS 202 in the supplied material states that it is not applicable to reports specifically required under some statute, law or Court order."
+    },
+    {
+      question: "Does ICAI VS 202 apply to the opinion reviewing the valuation report prepared by another valuer?",
+      options: [
+        "Yes, it applies to opinions or review reports of other valuers",
+        "No, it applies only to reports prepared for acquisitions",
+        "No, it applies only to the first valuation of an asset",
+        "Yes, but only when the original valuer is an employee of the client"
+      ],
+      answer: 0,
+      reason: "The supplied material specifically states that although VS 202 does not apply to reports specifically required under statute, law or Court order, it applies to opinions or review reports of other valuers."
+    },
+    {
+      question: "What determines the form and content of a valuation report under VS 202?",
+      options: [
+        "Only the size of the asset",
+        "Only the number of methods used",
+        "The nature of the engagement and the purpose of the valuation",
+        "Only the preference of the appointing authority"
+      ],
+      answer: 2,
+      reason: "The form and content of the valuation report depend on the nature of the engagement and the purpose of the valuation."
+    },
+    {
+      question: "What should relevant valuation documentation provide?",
+      options: [
+        "Only evidence that the client accepted the final value",
+        "Evidence of the valuer's basis for arriving at the value and that the assignment was planned and performed in accordance with relevant ICAI Valuation Standards",
+        "Only a copy of the company's financial statements",
+        "Only the final value without supporting records"
+      ],
+      answer: 1,
+      reason: "Relevant valuation documentation provides evidence of the valuer's basis for arriving at the value and that the valuation was planned and performed in accordance with the relevant ICAI Valuation Standards."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS89",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+  caseText: `
+    <p>XYZ Limited is undergoing a purchase price allocation. It owns a registered patent, a separable software application and a portfolio of non-contractual customer relationships. The customer relationships generate expected future revenues, but the company has no legal rights or other means to restrict others' access to the expected benefits.</p>
+    <p>The valuer also observes that a separate software package is essential for a computer-controlled machine to operate and cannot function independently of that machine. The valuer must distinguish between the presence of economic benefits and the requirements for identifying and recognising separate intangible assets.</p>
+  `,
+  questions: [
+    {
+      question: "Which condition is sufficient for an intangible asset to satisfy the identifiability criterion?",
+      options: [
+        "It must generate revenue in the current year",
+        "It must be legally transferable in every case",
+        "It must have a physical substance",
+        "It must be separable or arise from contractual or other legal rights"
+      ],
+      answer: 3,
+      reason: "An intangible asset is identifiable if it is separable or arises from contractual or other legal rights. The rights need not necessarily be transferable or separable from the entity."
+    },
+    {
+      question: "For the purpose of recognising an intangible asset, what does control over a resource mean?",
+      options: [
+        "The ability to determine the historical cost of the resource",
+        "The power to obtain future economic benefits from the resource and restrict others' access to those benefits",
+        "The ability to generate revenue without any ownership or control",
+        "The right to use the resource only for accounting purposes"
+      ],
+      answer: 1,
+      reason: "An entity controls an asset if it has the power to obtain the future economic benefits flowing from the underlying resource and to restrict the access of others to those benefits."
+    },
+    {
+      question: "The non-contractual customer relationships are not protected by legal rights. However, exchange transactions for the same or similar non-contractual customer relationships, outside a business combination, provide evidence of separability and control. What is the implication?",
+      options: [
+        "Such exchange transactions may provide evidence that the entity controls the expected future economic benefits and that the relationships are separable",
+        "The relationships must always be treated as goodwill",
+        "The relationships cannot be considered for valuation under any approach",
+        "The existence of exchange transactions removes the need to consider future economic benefits"
+      ],
+      answer: 0,
+      reason: "The material states that, in the absence of legal rights to protect customer relationships, exchange transactions for the same or similar non-contractual customer relationships outside a business combination may provide evidence of control and separability."
+    },
+    {
+      question: "How should the valuer distinguish the treatment of customer relationships in a DCF valuation from their identification as separate intangible assets under the Cost Approach or purchase price allocation?",
+      options: [
+        "Customer relationships must always be excluded from DCF projections",
+        "Customer relationships must always be separately recognised under the Cost Approach",
+        "Forecasted revenues under DCF may incorporate customer relationships, while separate identification under the Cost Approach or purchase price allocation requires consideration of identifiability and control",
+        "The same treatment must be applied under every valuation approach without considering identifiability"
+      ],
+      answer: 2,
+      reason: "The material explains that DCF forecasted revenues are likely to incorporate customer relationships, with or without legal rights. However, when identifying customer relationships as separate intangibles under the Cost Approach or for purchase price allocation, the identifiability and control criteria must be considered."
+    },
+    {
+      question: "How should the software that is essential to the operation of the computer-controlled machine and cannot operate independently be treated?",
+      options: [
+        "As a separate intangible asset in every case",
+        "As a financial instrument",
+        "As an artistic-related intangible asset",
+        "As an integral part of the related hardware and treated as a tangible asset"
+      ],
+      answer: 3,
+      reason: "The supplied material explains that computer software which is an integral part of related hardware and without which the machine cannot operate is treated as a tangible asset. Software that is not integral to related hardware is treated as an intangible asset."
+    }
+  ]
+},
+{
+  case_id: "valu_ch5_CS90",
+  difficulty: "Hard",
+  chapter: "Chapter5",
+  caseText: `
+    <p>ABC Financial Limited holds a debt instrument issued by a highly leveraged company. The instrument is secured by collateral, but it has a lower security ranking than certain other instruments issued by the same entity.</p>
+    <p>The valuer applies a present value technique and examines the issuer's financial performance, expected cash flows, collateral arrangements and credit risk. The issuer has also provided an internally prepared valuation model using unobservable inputs, and the valuer considers whether the issuer's control environment is adequate.</p>
+  `,
+  questions: [
+    {
+      question: "Which combination of factors should be captured when using a present value technique to value the financial instrument?",
+      options: [
+        "Only the instrument's historical carrying amount",
+        "Only the issuer's current profits and dividend payments",
+        "Estimated future cash flows, uncertainty in their amount and timing, time value of money, risk premium and other factors market participants would consider",
+        "Only the collateral value and the instrument's face value"
+      ],
+      answer: 2,
+      reason: "The present value technique captures future cash flow estimates, possible variations in the amount and timing of cash flows, time value of money represented by a risk-free rate, a risk premium and other factors market participants would consider."
+    },
+    {
+      question: "Which feature should the valuer consider when selecting the risk-free rate used in the present value technique?",
+      options: [
+        "The risk-free rate should relate to a security with maturity dates or durations coinciding with the period covered by the cash flows and without timing uncertainty or default risk",
+        "The rate should always be the issuer's borrowing rate",
+        "The rate should be selected solely on the basis of the instrument's face value",
+        "The rate should correspond to the shortest available maturity, irrespective of cash flow timing"
+      ],
+      answer: 0,
+      reason: "The risk-free interest rate should be based on a risk-free security whose maturity dates or durations coincide with the period covered by the cash flows and which has neither uncertainty in timing nor risk of default to the holder."
+    },
+    {
+      question: "What is the usual implication of the instrument having a lower hierarchy in the security charge?",
+      options: [
+        "It eliminates the issuer's credit risk",
+        "It automatically increases the collateral value",
+        "It results in a lower credit risk profile",
+        "It usually results in a higher credit risk profile"
+      ],
+      answer: 3,
+      reason: "The material explains that establishing the security hierarchy is important in assessing credit risk and that a lower hierarchy in security charge would usually result in a higher credit risk profile."
+    },
+    {
+      question: "While estimating expected cash shortfalls for the collateralised instrument, which treatment is appropriate?",
+      options: [
+        "Ignore collateral unless foreclosure is certain",
+        "Consider expected cash flows from foreclosure on collateral and other contractual credit enhancements, less the costs of obtaining and selling the collateral, irrespective of whether foreclosure is probable",
+        "Include the gross collateral value without considering disposal costs",
+        "Assume that collateral completely eliminates all credit risk"
+      ],
+      answer: 1,
+      reason: "For a collateralised financial instrument, the estimate of expected cash shortfalls reflects the amount and timing of cash flows expected from foreclosure on collateral less the costs of obtaining and selling the collateral, irrespective of whether foreclosure is probable."
+    },
+    {
+      question: "The valuer is considering reliance on an internally performed valuation model using unobservable inputs. What should be examined?",
+      options: [
+        "Only the final value reported by the issuer",
+        "Only the issuer's annual turnover",
+        "The control environment, including the adequacy and independence of its governance and control procedures",
+        "Only the number of financial instruments held by the issuer"
+      ],
+      answer: 2,
+      reason: "Where valuation is based on unobservable inputs, the control environment gains enhanced importance. A valuer relying on an internally performed valuation shall consider the control environment, its adequacy and independence."
+    }
+  ]
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_91",
+  chapter: "Chapter5",
+  question: "How is Fair Value defined under Ind AS 113?",
+  options: [
+    "The historical cost paid to acquire an asset",
+    "The price that would be received to sell an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement date",
+    "The amount that an existing owner expects to receive from an asset",
+    "The amount realised only when an asset is sold under a forced transaction"
+  ],
+  answer: 1,
+  reason: "Ind AS 113 defines Fair Value as the price that would be received to sell an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement date."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_92",
+  chapter: "Chapter5",
+  question: "A company has entered into a transaction for an asset with a related party. The valuer is considering whether the transaction price can be used as an input to a Fair Value measurement. Which of the following is correct under the qualification provided in the question?",
+  options: [
+    "The price in a related party transaction may be used as an input if the entity has evidence that the transaction was entered into at market terms.",
+    "A related party transaction price must always be used because the parties have direct knowledge of the asset.",
+    "A related party transaction price can never be considered under any circumstances.",
+    "The price can be used only when the related parties are forced to enter into the transaction."
+  ],
+  answer: 0,
+  reason: "The qualification in the supplied example states that a related party transaction price may be used as an input to a Fair Value measurement if the entity has evidence that the transaction was entered into at market terms."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_93",
+  chapter: "Chapter5",
+  question: "Which of the following correctly describes the characteristics of Market Participants under the Fair Value definition?",
+  options: [
+    "They are related parties who are forced to enter into the transaction.",
+    "They are only existing owners of the asset.",
+    "They are independent and knowledgeable parties who can and are willing to enter into the transaction without being forced.",
+    "They are parties who have no knowledge of the asset or liability."
+  ],
+  answer: 2,
+  reason: "Market Participants are willing buyers and willing sellers who are independent of each other, knowledgeable about the asset or liability, capable of entering into the transaction and willing to do so without being forced or compelled."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_94",
+  chapter: "Chapter5",
+  question: "What is an Orderly Transaction under the Fair Value measurement principles?",
+  options: [
+    "A transaction in which the seller is compelled to sell immediately.",
+    "A transaction that assumes sufficient time before the valuation date for usual and necessary marketing activities and is not a forced transaction.",
+    "A transaction without any marketing activities.",
+    "A transaction entered into only between related parties."
+  ],
+  answer: 1,
+  reason: "An Orderly Transaction assumes that there is sufficient period before the valuation date to allow for marketing activities that are usual and necessary for transactions involving the asset or liability. It is not a forced transaction."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_95",
+  chapter: "Chapter5",
+  question: "What does the term Valuation Date represent?",
+  options: [
+    "The date on which the client appoints the valuer",
+    "The date on which the valuation report is signed",
+    "The date on which the asset was originally purchased",
+    "The specific date at which the valuer estimates the value of the underlying asset"
+  ],
+  answer: 3,
+  reason: "Valuation Date is the specific date at which the valuer estimates the value of the underlying asset. It is sometimes also referred to as the measurement date."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_96",
+  chapter: "Chapter5",
+  question: "What is meant by Participant Specific Value?",
+  options: [
+    "The estimated value considering specific advantages or disadvantages of an owner, identified acquirer or identified participants",
+    "The value that is always applicable to all market participants",
+    "The historical cost of the asset",
+    "The value realised only on liquidation of a business"
+  ],
+  answer: 0,
+  reason: "Participant Specific Value is the estimated value of an asset or liability considering specific advantages or disadvantages of the owner, identified acquirer or identified participants."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_97",
+  chapter: "Chapter5",
+  question: "A potential acquirer can use a manufacturing facility together with its existing assets to obtain synergies that are unavailable to market participants generally. This advantage is primarily relevant to:",
+  options: [
+    "Historical Cost",
+    "Orderly Liquidation Value",
+    "Participant Specific Value",
+    "As-is-where-is Value"
+  ],
+  answer: 2,
+  reason: "Synergies that are specifically available only to the concerned participant or participants are Participant Specific considerations."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_98",
+  chapter: "Chapter5",
+  question: "How is Liquidation Value defined in the ICAI material?",
+  options: [
+    "The value of an enterprise expected to continue operations",
+    "The amount that will be realised on sale of an asset or group of assets when actual or hypothetical termination of the business is contemplated or assumed",
+    "The value based only on future earnings",
+    "The price paid by a market participant in an ordinary purchase"
+  ],
+  answer: 1,
+  reason: "Liquidation Value is the amount that will be realised on sale of an asset or a group of assets when an actual or hypothetical termination of the business is contemplated or assumed."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_99",
+  chapter: "Chapter5",
+  question: "What does Valuation Base indicate?",
+  options: [
+    "The physical condition of the asset",
+    "The accounting policy followed by the entity",
+    "The period required to complete the valuation",
+    "The type of value being used in a valuation engagement"
+  ],
+  answer: 3,
+  reason: "Valuation Base means the indication of the type of value being used in an engagement. It is closely related to the purpose of the valuation exercise."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_100",
+  chapter: "Chapter5",
+  question: "How does ICAI Valuation Standard 101 define Premise of Value?",
+  options: [
+    "The conditions and circumstances in which an asset is deployed",
+    "The historical cost at which an asset was purchased",
+    "The amount of debt outstanding against an asset",
+    "The date on which the valuation report is issued"
+  ],
+  answer: 0,
+  reason: "ICAI Valuation Standard 101 defines Premise of Value as the conditions and circumstances in which an asset is deployed. Any reference to an asset also includes a liability."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_101",
+  chapter: "Chapter5",
+  question: "What does the Highest and Best Use premise represent?",
+  options: [
+    "The existing use of the asset in every circumstance",
+    "The use preferred by the existing owner",
+    "The value of an asset when used by a market participant who puts it to its maximum use",
+    "The value of an asset under forced liquidation"
+  ],
+  answer: 2,
+  reason: "Under the Highest and Best Use premise, the value of an asset is based on its use by a market participant who puts the asset to its maximum use."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_102",
+  chapter: "Chapter5",
+  question: "Which three feasibility considerations are relevant when determining the Highest and Best Use of a non-financial asset under Ind AS 113?",
+  options: [
+    "Accounting, operational and managerial feasibility",
+    "Physical, legal and financial feasibility",
+    "Historical, present and future feasibility",
+    "Commercial, tax and accounting feasibility"
+  ],
+  answer: 1,
+  reason: "Ind AS 113 requires consideration of physical, legal and financial feasibility when assuming the Highest and Best Use of a non-financial asset by market participants."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_103",
+  chapter: "Chapter5",
+  question: "Which of the following is an example of Physical Feasibility?",
+  options: [
+    "Whether the proposed use generates adequate cash flows",
+    "Whether zoning regulations permit the proposed use",
+    "Whether conversion costs provide the required investment return",
+    "The physical characteristics of an asset, such as its location or size"
+  ],
+  answer: 3,
+  reason: "Physical Feasibility considers the physical characteristics of an asset that market participants would consider when pricing it, such as the location or size of a property."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_104",
+  chapter: "Chapter5",
+  question: "Which of the following is examined under Legal Feasibility?",
+  options: [
+    "Legal restrictions on the use of an asset, such as applicable zoning regulations",
+    "The physical size of a property",
+    "The expected income from the asset",
+    "The depreciation method followed by the owner"
+  ],
+  answer: 0,
+  reason: "Legal Feasibility considers legal restrictions on the use of an asset that market participants would consider when pricing it, such as zoning regulations."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_105",
+  chapter: "Chapter5",
+  question: "What does Financial Feasibility primarily consider under the Highest and Best Use premise?",
+  options: [
+    "Only the physical characteristics of the asset",
+    "Only the legal ownership documents",
+    "Whether the proposed use generates adequate income or cash flows after considering conversion costs and the required investment return",
+    "Only the current book value of the asset"
+  ],
+  answer: 2,
+  reason: "Financial Feasibility considers whether a use generates adequate income or cash flows, taking into account conversion costs, to produce the investment return market participants would require."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_106",
+  chapter: "Chapter5",
+  question: "What does Going Concern Value represent?",
+  options: [
+    "The value of an enterprise that is expected to be liquidated immediately",
+    "The value of an enterprise expected to continue its operations and not be liquidated soon",
+    "The value of assets sold under a forced transaction",
+    "The value of an asset based only on replacement cost"
+  ],
+  answer: 1,
+  reason: "Going Concern Value is the value of an enterprise which is expected to continue its operations and not be liquidated soon. It may include intangible elements such as goodwill arising from a trained workforce, operational plant, necessary licences and established systems."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_107",
+  chapter: "Chapter5",
+  question: "What does the As-is-where-is premise represent?",
+  options: [
+    "The highest and best use of an asset in every circumstance",
+    "The value of an asset under forced liquidation",
+    "The value of an asset after redevelopment",
+    "The existing use of the asset, which may or may not be its Highest and Best Use"
+  ],
+  answer: 3,
+  reason: "As-is-where-is represents the existing use of the asset. This existing use may or may not be the Highest and Best Use of the asset."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_108",
+  chapter: "Chapter5",
+  question: "What is an Orderly Liquidation?",
+  options: [
+    "Realisation of an asset after appropriate marketing efforts and a reasonable period of time to market it on an as-is, where-is basis",
+    "A sale in which the owner is compelled to sell immediately",
+    "A sale without adequate marketing efforts or a reasonable marketing period",
+    "A sale made only between related parties"
+  ],
+  answer: 0,
+  reason: "Orderly Liquidation refers to the realisable value of an asset in liquidation after allowing appropriate marketing efforts and a reasonable period of time to market the asset on an as-is, where-is basis."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_109",
+  chapter: "Chapter5",
+  question: "Which of the following best describes a Forced Transaction?",
+  options: [
+    "A transaction that allows the usual and necessary marketing period",
+    "A transaction between independent and willing market participants",
+    "A transaction in which the seller is compelled to sell within a limited period without adequate marketing efforts or a reasonable period to market the asset",
+    "A transaction in which the seller has sufficient time to obtain the expected market value"
+  ],
+  answer: 2,
+  reason: "A Forced Transaction occurs where an owner is compelled to sell an asset within a limited period without adequate marketing efforts or a reasonable period of time to market the asset."
+},
+{
+  difficulty: "Easy",
+  case_id: "valu_ch5_110",
+  chapter: "Chapter5",
+  question: "Which statement correctly matches the three globally accepted valuation approaches with their underlying basis?",
+  options: [
+    "Market Approach – historical cost; Income Approach – replacement cost; Cost Approach – future earnings",
+    "Market Approach – market evidence from comparable assets; Income Approach – present value of future earnings; Cost Approach – cost of developing or acquiring a new asset of similar use",
+    "Market Approach – liquidation value; Income Approach – book value; Cost Approach – market capitalisation",
+    "Market Approach – future cash flows; Income Approach – comparable transactions; Cost Approach – dividend yield"
+  ],
+  answer: 1,
+  reason: "The Market Approach is based on market evidence of what third parties have paid for comparable assets. The Income Approach is based on the present value of future earnings from the asset. The Cost Approach is based on the costs of developing or acquiring a new asset that is of similar use as the existing one."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_111",
+  chapter: "Chapter5",
+  question: "While measuring the Fair Value of an asset, which market price should generally be considered under the ICAI material?",
+  options: [
+    "The price in the principal or most advantageous market, without adjustment for transaction costs",
+    "The lowest price available in any inactive market, after deducting transaction costs",
+    "The price negotiated by the existing owner, irrespective of market conditions",
+    "The historical purchase price adjusted for general inflation"
+  ],
+  answer: 0,
+  reason: "Fair Value measurement uses the price in the principal or most advantageous market. The price shall not be adjusted for transaction costs."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_112",
+  chapter: "Chapter5",
+  question: "A company has entered into a transaction for an asset with a related party. The entity provides evidence that the transaction was entered into at market terms. Which statement is correct regarding the use of this transaction price as an input to Fair Value measurement?",
+  options: [
+    "The transaction price must always be rejected because the parties are related",
+    "The transaction price must always be accepted because both parties know the asset",
+    "The transaction price may be used as an input if the entity has evidence that the transaction was entered into at market terms",
+    "The transaction price can be used only if the seller was forced to sell the asset"
+  ],
+  answer: 2,
+  reason: "The related-party transaction qualification supplied in the question states that the price may be used as an input to a Fair Value measurement if the entity has evidence that the transaction was entered into at market terms. Market Participants are generally independent of each other and are not related parties."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_113",
+  chapter: "Chapter5",
+  question: "Which of the following combinations correctly represents the characteristics of Market Participants for Fair Value measurement?",
+  options: [
+    "Independent, knowledgeable, willing but unable to enter into the transaction",
+    "Independent, knowledgeable, able and willing to enter into the transaction without being forced",
+    "Related parties, knowledgeable, able and willing to enter into the transaction",
+    "Independent, uninformed, able and compelled to enter into the transaction"
+  ],
+  answer: 1,
+  reason: "Market Participants are independent of each other, knowledgeable about the asset or liability and transaction, capable of entering into the transaction and willing to do so without being forced or otherwise compelled."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_114",
+  chapter: "Chapter5",
+  question: "A business is valued as at 31 March. Due to changes in the business condition and market conditions, its value differs when assessed as at 30 September. Which principle explains this difference?",
+  options: [
+    "Valuation is independent of the valuation date",
+    "Valuation is based only on the date of appointment",
+    "Valuation always remains unchanged once an asset is acquired",
+    "Valuation is time-specific and may change with changes in the asset's condition or the market"
+  ],
+  answer: 3,
+  reason: "Valuation is time-specific. Its conclusion may differ at different dates due to changes in the condition of the asset being valued and/or the market. The valuation date is sometimes also referred to as the measurement date."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_115",
+  chapter: "Chapter5",
+  question: "A shareholder holding a 2% stake transfers that stake to another shareholder who already holds 49% of the company. The valuation considers the effect of the minority holding and the control position of the acquiring shareholder. Which valuation base is most relevant?",
+  options: [
+    "Fair Value",
+    "Historical Cost",
+    "Participant Specific Value",
+    "Liquidation Value"
+  ],
+  answer: 2,
+  reason: "The ICAI material gives the example of a 2% stake transferred by a minority shareholder to a shareholder holding 49%. Participant Specific Value considers aspects such as minority discount and control premium in valuing the business or business interest."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_116",
+  chapter: "Chapter5",
+  question: "A firm is not expected to revive and is not a going concern. Its assets are estimated to realise ₹80 lakh after deducting transaction and legal costs. Outstanding debt is ₹30 lakh. What is the value of equity under the Liquidation Value approach?",
+  options: [
+    "₹80 lakh",
+    "₹30 lakh",
+    "₹1.10 crore",
+    "₹50 lakh"
+  ],
+  answer: 3,
+  reason: "Value of equity = Liquidation value of assets − Outstanding debt. Therefore, ₹80 lakh − ₹30 lakh = ₹50 lakh. Liquidation Value is appropriate where the entity does not have the potential to revive itself and is not a going concern."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_117",
+  chapter: "Chapter5",
+  question: "An asset is being sold in an inactive market. However, the owner is not compelled to sell within a limited period and usual marketing efforts are possible. Which conclusion is correct?",
+  options: [
+    "The transaction must automatically be classified as a Forced Transaction",
+    "An inactive market alone does not make the transaction a Forced Transaction",
+    "The transaction must automatically be classified as an Orderly Liquidation",
+    "The transaction must always be excluded from valuation"
+  ],
+  answer: 1,
+  reason: "The ICAI material specifically states that a sale in an inactive market cannot, by itself, be construed as a Forced Transaction. A Forced Transaction involves compulsion to sell within a limited period without adequate marketing efforts or a reasonable marketing period."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_118",
+  chapter: "Chapter5",
+  question: "Which statement correctly distinguishes Valuation Base from Premise of Value?",
+  options: [
+    "Valuation Base indicates the type of value used in an engagement, whereas Premise of Value refers to the conditions and circumstances in which an asset is deployed",
+    "Valuation Base refers to the physical condition of an asset, whereas Premise of Value refers only to its historical cost",
+    "Valuation Base determines the valuation date, whereas Premise of Value determines the identity of the valuer",
+    "Valuation Base and Premise of Value have exactly the same meaning"
+  ],
+  answer: 0,
+  reason: "The Valuation Base indicates the type of value being used in an engagement. ICAI Valuation Standard 101 defines Premise of Value as the conditions and circumstances in which an asset is deployed."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_119",
+  chapter: "Chapter5",
+  question: "A property is currently used as a warehouse. Reliable market evidence establishes that its existing use is not its Highest and Best Use. What additional factor should the valuer consider?",
+  options: [
+    "Only the historical purchase price of the warehouse",
+    "Only the depreciation charged by the existing owner",
+    "The cost of conversion required to put the asset into its Highest and Best Use",
+    "Only the existing owner's intention to continue using the property"
+  ],
+  answer: 2,
+  reason: "Where the current use is not the Highest and Best Use, the valuer shall also consider the cost of conversion required to put the asset from its current position to its Highest and Best Use."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_120",
+  chapter: "Chapter5",
+  question: "A valuer relies on financial and operational information obtained from the public domain. Before using it in the valuation analysis, what should the valuer primarily assess?",
+  options: [
+    "Only whether the information is freely available",
+    "The credibility and reliability of the information, considering the purpose of valuation and its materiality to the valuation conclusion",
+    "Only whether the information was published by the entity being valued",
+    "Only whether the information supports management's projections"
+  ],
+  answer: 1,
+  reason: "Where information available in the public domain is relied upon, the valuer must assess its credibility and reliability, taking into account the purpose of valuation and materiality vis-à-vis the valuation conclusion."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_121",
+  chapter: "Chapter5",
+  question: "During accounting analysis, a valuer finds that management has used its accounting discretion to conceal the company's true performance rather than present a realistic view of its affairs. Which aspect of accounting analysis is directly involved?",
+  options: [
+    "Evaluation of accounting values",
+    "Understandability of financial statements",
+    "Accounting flexibility",
+    "Accounting discretion"
+  ],
+  answer: 3,
+  reason: "Accounting discretion involves assessing whether managers have used their accounting discretion to give a realistic view of the affairs of the company or to hide its true performance."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_122",
+  chapter: "Chapter5",
+  question: "During a proposed acquisition, the purchaser appoints professionals to identify undisclosed liabilities and assets that may have been overvalued before the transaction is completed. What is the primary objective of this exercise?",
+  options: [
+    "To identify hidden liabilities and overvalued assets through due diligence",
+    "To guarantee that the acquisition price will increase",
+    "To replace the valuation process with an audit opinion",
+    "To determine only the future dividend policy of the target"
+  ],
+  answer: 0,
+  reason: "The objective of due diligence is to look specifically for hidden liabilities or overvalued assets and assist the purchaser or investor in finding out the facts and figures about the business before completion of the transaction."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_123",
+  chapter: "Chapter5",
+  question: "In an acquisition, the parties have already agreed on a price. The purchaser now investigates the past, present and future aspects of the target business to assess the benefits and costs of the proposed acquisition. Which type of due diligence is being performed?",
+  options: [
+    "Commercial or operational due diligence",
+    "Financial due diligence",
+    "Tax due diligence",
+    "Legal due diligence"
+  ],
+  answer: 1,
+  reason: "Financial due diligence commences after a price has been agreed for the business. Its principal objective is to look behind the initial information provided by the company and assess the benefits and costs of the proposed acquisition or merger by examining relevant past, present and future aspects of the business."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_124",
+  chapter: "Chapter5",
+  question: "A valuer receives a written management representation letter containing information about off-balance-sheet liabilities. Which statement correctly describes the valuer's responsibility?",
+  options: [
+    "The representation letter automatically establishes the completeness of all information",
+    "The valuer may rely entirely on the representation letter without performing further procedures",
+    "The letter forms part of the evidence, but the valuer must still exercise reasonable skill and care and carry out required procedures",
+    "The representation letter cannot form part of the evidence supporting the valuation report"
+  ],
+  answer: 2,
+  reason: "A written representation from management or those charged with governance becomes part of the evidence obtained by the valuer. However, it does not preclude the valuer from exercising reasonable skill and care or carrying out the required procedures in respect of the information included in the letter."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_125",
+  chapter: "Chapter5",
+  question: "While valuing a business ownership interest, the valuer examines shareholder agreements, voting trust agreements, buy-sell agreements and loan covenants. What is the primary purpose of obtaining this information?",
+  options: [
+    "To determine the company's depreciation policy",
+    "To establish the company's current market price",
+    "To identify the expected future tax rate only",
+    "To understand ownership interests, control characteristics, rights and contractual restrictions affecting the subject interest"
+  ],
+  answer: 3,
+  reason: "Ownership information helps the valuer determine the type of ownership interest being valued, ascertain control characteristics, understand classes of equity ownership interests and rights attached thereto, and identify agreements or restrictions affecting the owners and the asset."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_126",
+  chapter: "Chapter5",
+  question: "A company's reported financial information includes substantial non-operating income and expenses arising from non-operating assets and liabilities. The valuer wishes to make the financial information consistent with the valuation method selected. Which adjustment is appropriate?",
+  options: [
+    "Adjust for non-operating or non-recurring assets and liabilities and the related revenues and expenses, where appropriate",
+    "Include every non-operating item as a recurring operating item",
+    "Ignore all historical financial information",
+    "Replace the financial statements with management's expected selling price"
+  ],
+  answer: 0,
+  reason: "Adjustments may be appropriate for non-operating or non-recurring assets and liabilities and any revenues and expenses related to non-operating items. Adjustments should reflect the appropriate asset value, income, cash flows or benefit stream consistently with the valuation method selected."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_127",
+  chapter: "Chapter5",
+  question: "Which sequence correctly identifies the three most important steps in the Discounted Cash Flow Methodology?",
+  options: [
+    "Determining Enterprise Value, calculating book value and estimating liquidation proceeds",
+    "Forecasting cash flow, deriving the discounting factor and considering terminal value",
+    "Selecting comparable companies, calculating market multiples and estimating replacement cost",
+    "Preparing the engagement letter, conducting due diligence and determining the valuation date"
+  ],
+  answer: 1,
+  reason: "The three most important steps in the Discounted Cash Flow Methodology are forecasting cash flow, discounting factor derivation and terminal value consideration."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_128",
+  chapter: "Chapter5",
+  question: "A valuer uses Free Cash Flow to the Firm to estimate Enterprise Value and Free Cash Flow to Equity to estimate Equity Value. Which combination of discount rates is appropriate?",
+  options: [
+    "FCFF – Cost of Equity; FCFE – Weighted Average Cost of Capital",
+    "FCFF – Cost of Debt; FCFE – Cost of Debt",
+    "FCFF – Weighted Average Cost of Capital; FCFE – Cost of Equity",
+    "FCFF – Historical Interest Rate; FCFE – Weighted Average Cost of Capital"
+  ],
+  answer: 2,
+  reason: "For Enterprise Value using FCFF, WACC is used as the discount rate. For Equity Value using FCFE, Cost of Equity is used as the discount rate."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_129",
+  chapter: "Chapter5",
+  question: "Under Ind AS 36, management prepares cash flow projections based on budgets for six years. It has not established confidence in their reliability or demonstrated forecasting ability over a period longer than five years. Which statement is correct?",
+  options: [
+    "The six-year projections are automatically acceptable because management prepared them",
+    "The projections must cover at least ten years",
+    "The projections may be extended indefinitely without justification",
+    "The projections based on budgets or forecasts shall cover a maximum period of five years unless a longer period can be justified"
+  ],
+  answer: 3,
+  reason: "Under the Ind AS 36 considerations in the supplied material, projections based on budgets or forecasts shall cover a maximum period of five years unless a longer period can be justified. For a longer period, management must be confident that the projections are reliable and demonstrate its ability, based on experience, to forecast cash flows accurately over that longer period."
+},
+{
+  difficulty: "Medium",
+  case_id: "valu_ch5_130",
+  chapter: "Chapter5",
+  question: "Which statement correctly distinguishes the Comparable Companies Multiple (CCM) Method from the Comparable Transaction Multiple (CTM) Method?",
+  options: [
+    "CCM uses only replacement costs, whereas CTM uses future cash flows",
+    "CCM uses market trading multiples of comparable companies, whereas CTM uses transaction multiples implied in comparable acquisitions or disposals",
+    "CCM uses liquidation proceeds, whereas CTM uses historical book values",
+    "CCM uses only the subject company's share price, whereas CTM uses only its dividend yield"
+  ],
+  answer: 1,
+  reason: "The Comparable Companies Multiple Method uses market multiples based on comparable companies. The Comparable Transaction Multiple Method is a variant of CCM and uses transaction multiples implied in recent acquisitions or disposals of comparable companies or businesses in place of trading multiples."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch5_131",
+  chapter: "Chapter5",
+  question: "A valuer is estimating Value in Use under Ind AS 36. Management has prepared cash flow projections for five years and has also included expected savings from a future restructuring to which the entity is not yet committed, together with benefits from an enhancement that will improve the asset's performance. Which treatment is consistent with the requirements discussed in the ICAI material?",
+  options: [
+    "Include both restructuring and enhancement cash flows because management considers them probable",
+    "Exclude restructuring cash flows but include enhancement cash flows where the asset is expected to generate additional benefits",
+    "Exclude both categories of cash flows; projections beyond five years require justification, and subsequent extrapolation should generally use a steady or declining growth rate unless an increase is justified",
+    "Include restructuring cash flows but exclude enhancement cash flows, and apply an increasing growth rate after the fifth year"
+  ],
+  answer: 2,
+  reason: "Base cash flow projections used for Value in Use shall exclude estimated future cash inflows or outflows from future restructurings to which the entity is not yet committed and from improving or enhancing the asset's performance. Projections based on budgets or forecasts shall cover a maximum period of five years unless a longer period can be justified. Beyond the budget or forecast period, a steady or declining growth rate should be used unless an increasing rate can be justified. The growth rate should not exceed the relevant long-term average unless a higher rate can be justified."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch5_132",
+  chapter: "Chapter5",
+  question: "A market participant considers converting an existing industrial property into a commercial complex. The conversion is physically possible and is expected to generate adequate returns after conversion costs. However, applicable zoning regulations prohibit the proposed commercial use. Which conclusion is appropriate when assessing Highest and Best Use under Ind AS 113?",
+  options: [
+    "The proposed use qualifies because physical feasibility and financial feasibility are sufficient",
+    "The proposed use qualifies if the existing owner is willing to undertake the conversion",
+    "The proposed use qualifies if it produces higher cash flows than the property's existing use",
+    "The proposed use does not satisfy legal feasibility, even though it may satisfy physical and financial feasibility"
+  ],
+  answer: 3,
+  reason: "Highest and Best Use must consider physical feasibility, legal feasibility and financial feasibility. Legal feasibility considers restrictions on the use of the asset, such as applicable zoning regulations. A proposed use that is legally prohibited cannot qualify merely because it is physically possible and financially attractive."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch5_133",
+  chapter: "Chapter5",
+  question: "A valuer applies the Income Approach and Market Approach to a business. The results show a significant variance. The Income Approach relies on uncertain management projections, while the Market Approach is supported by a limited number of comparables. What should the valuer do before reaching the valuation conclusion?",
+  options: [
+    "Automatically adopt the higher value because it reflects greater future potential",
+    "Revisit the analysis, assess the reliability of the data and value indications, and use informed judgment in selecting or weighting the methods with an appropriate rationale",
+    "Always assign equal weight to both approaches and adopt their arithmetic average",
+    "Discard the approach producing the lower value without examining its underlying assumptions"
+  ],
+  answer: 1,
+  reason: "The valuer shall assess the reliability of the results under different approaches and assign weights to value indications based on informed judgment. The selection and reliance on methods depend on the valuer's judgment, not a prescribed formula. The rationale for selection or weighting must be provided. Values under the different approaches should not be at a significant variance; where this occurs, the valuer should revisit the analysis before concluding."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch5_134",
+  chapter: "Chapter5",
+  question: "A valuation is carried out as at 31 March. On 15 April, a new regulatory restriction is introduced that affects the permitted use of the asset. The restriction was neither known nor knowable as at 31 March and arose after that date. How should this event be classified in the context of the ICAI material?",
+  options: [
+    "It is a Subsequent Event because it occurred after the valuation date and could affect the value, while reflecting a condition that arose after the valuation date",
+    "It is necessarily a condition that existed on the valuation date because it affects the asset's value",
+    "It is not a Subsequent Event because only events occurring before the valuation date can affect valuation",
+    "It automatically changes the valuation date from 31 March to 15 April"
+  ],
+  answer: 0,
+  reason: "A Subsequent Event is an event occurring after the valuation date that could affect the value arrived at by the valuer. Such events are indicative of conditions that were not known or knowable at the valuation date, including conditions that arose after the valuation date. The occurrence of the event does not automatically change the original valuation date."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch5_135",
+  chapter: "Chapter5",
+  question: "A valuer is selecting comparable transactions under the Comparable Transaction Multiple (CTM) Method. Which transaction profile provides the strongest basis for selection under the considerations specified in the ICAI material?",
+  options: [
+    "A very recent acquisition completed under forced circumstances, with limited transaction information",
+    "An orderly acquisition from an unreliable source, with insufficient information to derive the transaction multiple",
+    "An acquisition of a comparable business consummated close to the valuation date, representing an orderly transaction, with sufficient information available from reliable sources",
+    "An acquisition completed several years before the valuation date, with no information to assess the transaction circumstances"
+  ],
+  answer: 2,
+  reason: "Under CTM, the valuer may consider whether transactions were consummated closer to the valuation date, whether the selected comparable represents an orderly transaction, whether sufficient information is available to understand the comparable and derive the transaction multiple, and whether the information is available from reliable sources."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch5_136",
+  chapter: "Chapter5",
+  question: "An entity has developed non-contractual customer relationships. It has no specific legal rights protecting those relationships. However, exchange transactions involving the same or similar non-contractual customer relationships have occurred outside a business combination. The relationships are expected to generate future economic benefits. What is the most appropriate conclusion under the principles of ICAI Valuation Standard 302?",
+  options: [
+    "The relationships cannot qualify as intangible assets because legal rights are an absolute prerequisite for control",
+    "The relationships qualify solely because future economic benefits are expected, irrespective of identifiability and control",
+    "The relationships qualify only if the entity has entered into a written agreement with every customer",
+    "The exchange transactions provide evidence of separability and control, supporting the identification of the customer relationships as intangible assets"
+  ],
+  answer: 3,
+  reason: "Legal enforceability is not an absolute prerequisite for control. In the absence of legal rights protecting customer relationships, exchange transactions involving the same or similar non-contractual customer relationships, other than as part of a business combination, provide evidence that the entity can control the expected future economic benefits. These transactions also provide evidence of separability. Along with the existence of future economic benefits, these facts support the definition of an intangible asset."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch5_137",
+  chapter: "Chapter5",
+  question: "A valuer uses a present value technique to measure a financial instrument from the perspective of market participants at the valuation date. The model incorporates estimated future cash flows and a discount rate based only on a risk-free security. Which additional elements must be considered to reflect the elements identified in the ICAI material?",
+  options: [
+    "Only the instrument's historical purchase price and the issuer's original cost of borrowing",
+    "Possible variations in the amount and timing of cash flows, a risk premium for bearing uncertainty, and other factors market participants would consider",
+    "Only the issuer's expected dividend distribution and its historical accounting profit",
+    "Only the market value of collateral, without considering uncertainty in the contractual cash flows"
+  ],
+  answer: 1,
+  reason: "The present value technique captures estimates of future cash flows; expectations about possible variations in their amount and timing; the time value of money represented by a risk-free rate with maturity dates or durations matching the cash flow period and without timing or default risk; the price for bearing uncertainty in the form of a risk premium; and other factors market participants would consider."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch5_138",
+  chapter: "Chapter5",
+  question: "A financial instrument is secured by collateral. The valuer estimates expected cash shortfalls but excludes cash flows from possible foreclosure because foreclosure is not considered probable. Which treatment is consistent with the credit-risk considerations under ICAI Valuation Standard 303?",
+  options: [
+    "Reflect the expected amount and timing of cash flows from foreclosure on the collateral, less the costs of obtaining and selling the collateral, irrespective of whether foreclosure is probable",
+    "Exclude all collateral-related cash flows unless foreclosure is virtually certain",
+    "Recognise the gross market value of collateral without deducting costs of obtaining or selling it",
+    "Recognise collateral only when the issuer has no other assets available to satisfy its obligations"
+  ],
+  answer: 0,
+  reason: "For a collateralised financial instrument, the estimate of expected cash shortfalls reflects the amount and timing of cash flows expected from foreclosure on the collateral less the costs of obtaining and selling the collateral, irrespective of whether foreclosure is probable. The valuer must also understand whether recourse is available to all assets or only specified assets."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch5_139",
+  chapter: "Chapter5",
+  question: "An entity performs its own valuation of a complex financial instrument using an internal model based substantially on unobservable inputs. The valuer proposes to rely on the entity's valuation without examining its internal governance and control procedures. What is the appropriate consideration under ICAI Valuation Standard 303?",
+  options: [
+    "Internal valuations may always be relied upon where management has approved the model",
+    "The control environment is relevant only when observable market inputs are used",
+    "The valuer should consider the reliance on the control environment, including its adequacy and independence, because the valuation uses unobservable inputs",
+    "The valuer should disregard the internal valuation model in every circumstance, irrespective of the control environment"
+  ],
+  answer: 2,
+  reason: "The control environment gains enhanced importance when valuation of financial instruments is based on unobservable inputs. It consists of governance and control procedures established to increase reliance on the valuation process and conclusion. A valuer relying on an internally performed valuation shall consider reliance on the control environment, its adequacy and independence."
+},
+{
+  difficulty: "Hard",
+  case_id: "valu_ch5_140",
+  chapter: "Chapter5",
+  question: "A business is valued using the FCFF approach. The Year 1 FCFF is ₹100 lakh and Year 2 FCFF is ₹120 lakh. FCFF for Year 3 is expected to grow by 4% over Year 2. WACC is 10% and the perpetual growth rate is 4%. Assuming year-end cash flows and a terminal value calculated at the end of Year 2, the business has surplus assets of ₹50 lakh and debt of ₹300 lakh. What is the Equity Value? (Round to two decimal places.)",
+  options: [
+    "₹1,559.09 lakh",
+    "₹1,659.09 lakh",
+    "₹1,759.09 lakh",
+    "₹1,859.09 lakh"
+  ],
+  answer: 1,
+  reason: "FCFF for Year 3 = ₹120 lakh × 1.04 = ₹124.80 lakh. Terminal Value at the end of Year 2 = ₹124.80 lakh ÷ (10% − 4%) = ₹2,080 lakh. Present value of Year 1 FCFF = ₹100 lakh ÷ 1.10 = ₹90.91 lakh. Present value of Year 2 FCFF plus Terminal Value = (₹120 lakh + ₹2,080 lakh) ÷ 1.10² = ₹1,818.18 lakh. Enterprise Value = ₹90.91 lakh + ₹1,818.18 lakh = ₹1,909.09 lakh. Equity Value = Enterprise Value + Surplus Assets − Debt = ₹1,909.09 lakh + ₹50 lakh − ₹300 lakh = ₹1,659.09 lakh."
+}
+
+
+
 
 
 
