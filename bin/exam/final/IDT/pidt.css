@@ -75,7 +75,15 @@ body {
     position: absolute; width: 100%; height: 100%; backface-visibility: hidden;
     background-color: #faf9f6; 
     padding: var(--page-padding); /* Bound to responsive variable */
-    box-sizing: border-box; overflow: hidden; border: 1px solid #c8d6e5; user-select: none; -webkit-user-select: none;
+    box-sizing: border-box; overflow-x: hidden; overflow-y: auto; border: 1px solid #c8d6e5; user-select: none; -webkit-user-select: none;
+}
+
+.front::-webkit-scrollbar, .back::-webkit-scrollbar {
+    width: 4px;
+}
+.front::-webkit-scrollbar-thumb, .back::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
 }
 
 .front { background: linear-gradient(to right, #e1dfda 0%, #faf9f6 5%, #faf9f6 100%); box-shadow: inset 4px 0 10px rgba(0,0,0,0.05), 4px 4px 10px rgba(0,0,0,0.15); border-radius: 3px 8px 8px 3px; }
@@ -96,9 +104,111 @@ p { line-height: 1.5; text-align: justify; font-size: calc(15px * var(--font-sca
 .correct-ans { background: #dcfce7 !important; border-color: #22c55e !important; }
 .solution-box { display: none; background: #f0fdf4; border: 1px dashed #22c55e; padding: 15px; margin-top: 15px; border-radius: 8px; font-family: Arial, sans-serif; font-size: calc(14px * var(--font-scale)); color:#166534; }
 
-table { width: 100%; border-collapse: collapse; margin: 15px 0; background-color: #ffffff; font-family: Arial, sans-serif; font-size: calc(13px * var(--font-scale)); }
-th, td { border: 1px solid #94a3b8; padding: 6px 10px; text-align: left; vertical-align: top; }
-th { background-color: #f1f5f9; font-weight: bold; color: #1e293b; }
+.table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 6px 0;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    height: 4px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    min-width: 100%;
+    border-collapse: collapse;
+    margin: 4px 0;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: calc(12px * var(--font-scale));
+    table-layout: auto;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+th, td {
+    border: 1px solid #94a3b8;
+    padding: 4px 6px;
+    vertical-align: top;
+    line-height: 1.35;
+    box-sizing: border-box;
+}
+
+th {
+    background-color: #f1f5f9;
+    font-weight: bold;
+    color: #1e293b;
+    font-size: calc(11.5px * var(--font-scale));
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+}
+
+/* Particulars / text narrative column */
+.col-particulars,
+table td.col-particulars,
+table th.col-particulars {
+    width: auto;
+    text-align: left;
+    min-width: 160px;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+/* Serial Number column */
+.col-sno,
+table td.col-sno,
+table th.col-sno {
+    width: 1%;
+    white-space: nowrap !important;
+    text-align: center !important;
+    min-width: 35px;
+}
+
+/* Amount & Numeric columns: strictly prevent vertical stacking/wrapping of digits */
+.col-amount,
+.cell-amount,
+table td.col-amount,
+table td.cell-amount,
+table th.col-amount {
+    white-space: nowrap !important;
+    text-align: right !important;
+    min-width: 80px;
+    width: 1%;
+    font-variant-numeric: tabular-nums;
+}
+
+table th.col-amount {
+    text-align: center !important;
+}
+
+/* Automatic CSS fallback for non-scripted 2-column tables */
+table tr > td:first-child:not(.col-amount):not(.cell-amount) {
+    min-width: 150px;
+    text-align: left;
+}
+table tr > td:nth-child(2):last-child {
+    white-space: nowrap;
+    text-align: right;
+    min-width: 80px;
+}
+
+.table-continued-badge {
+    font-size: 11px;
+    font-style: italic;
+    color: #64748b;
+    margin-bottom: 2px;
+    text-align: right;
+}
 
 /* ==========================================
    CONTROLS & FLOATING BUTTONS

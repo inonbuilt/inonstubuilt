@@ -75,8 +75,151 @@ function splitPlainTextForPagination(text) {
     return chunks.length ? chunks : [text];
 }
 
+function formatTableForDisplay(tableNode) {
+    if (!tableNode || !tableNode.querySelectorAll) return;
+
+    const allRows = Array.from(tableNode.querySelectorAll('tr'));
+    if (allRows.length === 0) return;
+
+    const isAmountContent = (text) => {
+        const clean = text.replace(/<[^>]+>/g, '').trim();
+        if (!clean || clean === '-' || clean === '–' || clean === '—' || /^nil$/i.test(clean) || /^none$/i.test(clean)) return true;
+        const lines = clean.split('\n').map(l => l.trim()).filter(Boolean);
+        if (lines.length === 0) return true;
+        let numCount = 0;
+        for (const line of lines) {
+            if (/^[₹$€£\s\(\)\d,.\-%—–/]+$/.test(line) || /^nil$/i.test(line) || /^none$/i.test(line) || line === '-') {
+                numCount++;
+            }
+        }
+        return numCount > 0 && (numCount / lines.length >= 0.6);
+    };
+
+    const amountPattern = /(\b(amount|rs|inr|usd|value|price|cost|rate|tax|total|dr|cr|lakh|crore|million|cfat|pv|bal)\b|[₹$€£%])/i;
+    const particularsPattern = /\b(particulars?|descs?|details?|narrations?|nature|reasons?|transactions?)\b/i;
+    const snoPattern = /\b(s\.?\s*no|sl\.?\s*no|sr\.?\s*no|item)\b/i;
+
+    const colRoles = {};
+    const firstRowCells = Array.from(allRows[0].children);
+
+    firstRowCells.forEach((cell, cIdx) => {
+        const cleanText = cell.textContent.trim();
+        if (particularsPattern.test(cleanText)) {
+            colRoles[cIdx] = 'particulars';
+        } else if (amountPattern.test(cleanText)) {
+            colRoles[cIdx] = 'amount';
+        } else if (snoPattern.test(cleanText)) {
+            colRoles[cIdx] = 'sno';
+        }
+    });
+
+    const dataCounts = {};
+    allRows.slice(1).forEach(row => {
+        const cells = Array.from(row.children);
+        cells.forEach((cell, cIdx) => {
+            if (cell.getAttribute('colspan') && parseInt(cell.getAttribute('colspan')) > 1) return;
+            if (!dataCounts[cIdx]) dataCounts[cIdx] = { total: 0, numeric: 0 };
+            const text = cell.textContent.trim();
+            if (text) {
+                dataCounts[cIdx].total++;
+                if (isAmountContent(text)) {
+                    dataCounts[cIdx].numeric++;
+                }
+            }
+        });
+    });
+
+    Object.keys(dataCounts).forEach(cIdx => {
+        if (!colRoles[cIdx]) {
+            const counts = dataCounts[cIdx];
+            if (counts.total > 0 && (counts.numeric / counts.total >= 0.5)) {
+                colRoles[cIdx] = 'amount';
+            }
+        }
+    });
+
+    if (firstRowCells.length === 2) {
+        if (!colRoles[0] && !colRoles[1]) {
+            colRoles[0] = 'particulars';
+            colRoles[1] = 'amount';
+        } else if (colRoles[0] === 'particulars' && !colRoles[1]) {
+            colRoles[1] = 'amount';
+        }
+    }
+
+    allRows.forEach(row => {
+        const cells = Array.from(row.children);
+        cells.forEach((cell, cIdx) => {
+            if (cell.getAttribute('colspan') && parseInt(cell.getAttribute('colspan')) > 1) return;
+            const role = colRoles[cIdx];
+            if (role === 'amount') {
+                cell.classList.add('col-amount');
+            } else if (role === 'particulars') {
+                cell.classList.add('col-particulars');
+            } else if (role === 'sno') {
+                cell.classList.add('col-sno');
+            }
+            if (isAmountContent(cell.textContent.trim()) && cell.textContent.trim().length > 0) {
+                cell.classList.add('cell-amount');
+            }
+        });
+    });
+}
+
 function splitTableIntoElements(tableNode) {
-    return [tableNode.outerHTML];
+    formatTableForDisplay(tableNode);
+    const allRows = Array.from(tableNode.querySelectorAll('tr'));
+    if (allRows.length <= 4) {
+        return [`<div class="table-wrapper">${tableNode.outerHTML}</div>`];
+    }
+
+    let headerRows = [];
+    let dataRows = [];
+
+    const thead = tableNode.querySelector('thead');
+    if (thead) {
+        headerRows = Array.from(thead.querySelectorAll('tr'));
+        const tbody = tableNode.querySelector('tbody') || tableNode;
+        dataRows = Array.from(tbody.querySelectorAll('tr')).filter(r => !headerRows.includes(r));
+    } else {
+        let headerDone = false;
+        for (let i = 0; i < allRows.length; i++) {
+            const row = allRows[i];
+            const thCount = row.querySelectorAll('th').length;
+            if (thCount > 0 && !headerDone) {
+                headerRows.push(row);
+            } else {
+                headerDone = true;
+                dataRows.push(row);
+            }
+        }
+        if (headerRows.length === 0 && allRows.length > 0) {
+            headerRows.push(allRows[0]);
+            dataRows = allRows.slice(1);
+        }
+    }
+
+    if (dataRows.length <= 4) {
+        return [`<div class="table-wrapper">${tableNode.outerHTML}</div>`];
+    }
+
+    const headerHtml = headerRows.map(r => r.outerHTML).join('');
+    const rowHtmls = dataRows.map(r => r.outerHTML);
+
+    let attrs = '';
+    if (tableNode.attributes) {
+        for (let i = 0; i < tableNode.attributes.length; i++) {
+            const a = tableNode.attributes[i];
+            attrs += ` ${a.name}="${a.value}"`;
+        }
+    }
+
+    return [{
+        type: 'splittable-table',
+        attrs: attrs,
+        headerHtml: headerHtml,
+        rows: rowHtmls
+    }];
 }
 
 function splitListIntoElements(listNode) {
@@ -110,15 +253,22 @@ function splitHtmlIntoElements(htmlString) {
             } 
             else if (node.tagName === 'TABLE') {
                 elements = elements.concat(splitTableIntoElements(node));
-                elements.push(`<div style="display:block; height:12px; width:100%;"></div>`);
+                elements.push(`<div style="display:block; height:10px; width:100%;"></div>`);
             } 
             else if (node.tagName === 'UL' || node.tagName === 'OL') {
                 elements = elements.concat(splitListIntoElements(node));
-                elements.push(`<div style="display:block; height:12px; width:100%;"></div>`);
+                elements.push(`<div style="display:block; height:10px; width:100%;"></div>`);
             } 
             else if (node.querySelector('table, ul, ol')) {
-                elements.push(node.outerHTML);
-                elements.push(`<div style="display:block; height:12px; width:100%;"></div>`);
+                Array.from(node.childNodes).forEach(child => {
+                    if (child.nodeType === 1) {
+                        elements = elements.concat(splitHtmlIntoElements(child.outerHTML));
+                    } else if (child.nodeType === 3 && child.textContent.trim() !== '') {
+                        splitPlainTextForPagination(child.textContent).forEach(chunk => {
+                            elements.push(`<span style="display:inline;">${chunk.trim()} </span>`);
+                        });
+                    }
+                });
             } 
             else {
                 let safeHtml = node.innerHTML
@@ -322,6 +472,59 @@ function renderBookPages() {
 
     for (let i = 0; i < rawExamElements.length; i++) {
         let el = rawExamElements[i];
+
+        if (typeof el === 'object' && el !== null && el.type === 'splittable-table') {
+            const tableAttrs = el.attrs || '';
+            const headerHtml = el.headerHtml || '';
+            const rows = el.rows || [];
+
+            if (rows.length === 0) continue;
+
+            const buildTableHtml = (rowList, isContd) => {
+                const contdBadge = isContd
+                    ? `<div class="table-continued-badge">(Table continued from previous page)</div>`
+                    : ``;
+                const thead = headerHtml ? `<thead>${headerHtml}</thead>` : ``;
+                return `<div class="table-wrapper">${contdBadge}<table ${tableAttrs}>${thead}<tbody>${rowList.join('')}</tbody></table></div>`;
+            };
+
+            let isContd = false;
+            let currentTableRows = [];
+
+            // If current page is already significantly full, check if header + 2 rows fit
+            if (currentPageHtml.trim() !== "") {
+                const minTestRows = rows.slice(0, Math.min(2, rows.length));
+                tape.innerHTML = currentPageHtml + buildTableHtml(minTestRows, false);
+                if (tape.scrollHeight > SAFE_HEIGHT) {
+                    finalizedPages.push(currentPageHtml);
+                    currentPageHtml = "";
+                }
+            }
+
+            for (let rIdx = 0; rIdx < rows.length; rIdx++) {
+                const row = rows[rIdx];
+                const testRows = [...currentTableRows, row];
+                const testHtml = currentPageHtml + buildTableHtml(testRows, isContd);
+
+                tape.innerHTML = testHtml;
+
+                if (tape.scrollHeight > SAFE_HEIGHT && currentTableRows.length > 0) {
+                    currentPageHtml += buildTableHtml(currentTableRows, isContd);
+                    finalizedPages.push(currentPageHtml);
+                    currentPageHtml = "";
+                    isContd = true;
+                    currentTableRows = [row];
+                } else {
+                    currentTableRows.push(row);
+                }
+            }
+
+            if (currentTableRows.length > 0) {
+                currentPageHtml += buildTableHtml(currentTableRows, isContd);
+            }
+            continue;
+        }
+
         tape.innerHTML = currentPageHtml + el;
 
         if (tape.scrollHeight > SAFE_HEIGHT && currentPageHtml !== "") {
