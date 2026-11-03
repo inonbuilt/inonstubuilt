@@ -57,3 +57,18 @@ function animate() {
 
 init();
 animate();
+
+// Early access waitlist submission handler
+document.addEventListener("DOMContentLoaded", () => {
+  const waitlistForm = document.querySelector(".waitlist-form");
+  if (waitlistForm) {
+    waitlistForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const emailInput = waitlistForm.querySelector(".waitlist-input");
+      if (emailInput && emailInput.value) {
+        alert("Thank you! You have been added to our early access notification list.");
+        emailInput.value = "";
+      }
+    });
+  }
+});

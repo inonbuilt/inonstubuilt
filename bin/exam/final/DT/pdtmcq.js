@@ -228,7 +228,7 @@ const mcqData = [
         "₹ 1,00,000 and 20.8%",
         "₹ 1,30,000 and 20.8%"
       ],
-      answer: 4 // Being a non-resident, the entire dividend of ₹1,30,000 is taxable. TDS on dividend to a non-resident is deductible under section 195 at 20% plus surcharge and health & education cess (effective rate assumed in the question: 20.8%).
+      answer: 3 // Being a non-resident, the entire dividend of ₹1,30,000 is taxable. TDS on dividend to a non-resident is deductible under section 195 at 20% plus surcharge and health & education cess (effective rate assumed in the question: 20.8%).
     },
     {
       question_id: "dt_aprmtp24_II_q2",

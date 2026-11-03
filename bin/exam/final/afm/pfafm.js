@@ -352,7 +352,13 @@ function renderBookPages() {
 
     selectedOptions.forEach(id => {
         const el = document.getElementById(id);
-        if (el) el.style.borderColor = '#2563eb';
+        if (el) {
+            el.style.borderColor = '#2563eb';
+            if (examCompleted && !el.classList.contains('correct-ans')) {
+                el.style.backgroundColor = '#fee2e2';
+                el.style.borderColor = '#ef4444';
+            }
+        }
     });
 
     initBookPhysics();
@@ -381,6 +387,13 @@ function selectOption(el) {
 function revealAnswers() {
     examCompleted = true;
     clearInterval(timerInterval);
+    const timerDiv = document.getElementById("exam-timer");
+    if (timerDiv) {
+        timerDiv.innerText = "SUBMITTED";
+        timerDiv.classList.remove("timer-warning");
+    }
+    const homeBtn = document.getElementById("home-btn");
+    if (homeBtn) homeBtn.style.display = "block";
     
     generateExamData(); 
     renderBookPages(); 
@@ -459,10 +472,17 @@ function initBookPhysics() {
 
     document.addEventListener('pointerdown', (e) => {
         if (!e.target.closest('.book')) return;
+        if (e.target.closest('button, .mcq-option, a, input, select')) return;
         const spineX = book.getBoundingClientRect().left;
 
-        if (e.clientX > spineX) { activePage = pages.find(p => !p.classList.contains('flipped')); } 
-        else { const flippedPages = pages.filter(p => p.classList.contains('flipped')); activePage = flippedPages[flippedPages.length - 1]; }
+        if (e.clientX > spineX) {
+            activePage = pages.find(p => !p.classList.contains('flipped'));
+            currentAngle = 0;
+        } else {
+            const flippedPages = pages.filter(p => p.classList.contains('flipped'));
+            activePage = flippedPages[flippedPages.length - 1];
+            currentAngle = -180;
+        }
 
         if (activePage) { isDragging = true; activePage.style.transition = 'none'; activePage.style.zIndex = pages.length + 5; }
     });

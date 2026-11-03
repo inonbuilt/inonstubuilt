@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Set D Chapter-Wise SPOM Practice | Calcium Notes</title>
     <link rel="stylesheet" href="./exam.css">
-    <link rel="icon" href="../../../../fevicol.png" type="image/png">
+    <link rel="icon" href="../../../../../fevicol.png" type="image/png">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
@@ -57,6 +57,8 @@
         let qFile = '../quespsy.js';
         if (sub.includes('start') || sub.includes('strt')) {
             qFile = '../quesstartup.js';
+        } else if (sub.includes('eco') || sub.includes('innov')) {
+            qFile = '../quesecosyst.js';
         }
         document.write('<script src="' + qFile + '"><\/script>');
     </script>
