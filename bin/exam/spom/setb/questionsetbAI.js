@@ -9722,8 +9722,8 @@ const AICaseStudies = [
         "₹1,900",
         "₹2,000"
       ],
-      answer: 2,
-      reason: "Gross module saving = ₹8,000 − ₹6,400 = ₹1,600. Less additional testing cost of ₹300 gives net saving of ₹1,300. Therefore option 0 is correct."
+      answer: 0,
+      reason: "Gross module saving = ₹8,000 − ₹6,400 = ₹1,600. Less additional testing cost of ₹300 gives net saving of ₹1,300."
     },
           {
         question_id: "SCM_C4_HARD_011_5",
@@ -9839,7 +9839,7 @@ const AICaseStudies = [
         "960 minutes",
         "1,080 minutes"
       ],
-      answer: 2,
+      answer: 1,
       reason: "P requires 80 × 12 = 960 minutes. Remaining capacity = 1,800 − 960 = 840 minutes. Therefore option 1 is correct."
     },
     {
@@ -17323,7 +17323,7 @@ const AICaseStudies = [
         "₹1,040",
         "₹1,180"
       ],
-      answer: 1,
+      answer: 2,
       reason: "Avoidable internal cost = material ₹420 + labour ₹280 + variable overhead ₹180 = ₹880. Only ₹160 of the allocated fixed overhead is also avoidable, so if that is included the total avoidable cost is ₹1,040. Since the case asks for avoidable internal cost before opportunity cost and includes avoidable fixed cost, ₹1,040 is the more complete relevant manufacturing cost."
     },
     {
@@ -17411,7 +17411,7 @@ const AICaseStudies = [
         "₹400",
         "₹8"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Contribution per standard bottle = ₹18 − ₹10 = ₹8. Machine hours = 0.025. Contribution per machine hour = ₹8 ÷ 0.025 = ₹320. Therefore the correct option is ₹320, not ₹400."
     },
     {
@@ -17687,7 +17687,7 @@ const AICaseStudies = [
         "500 patients",
         "600 patients"
       ],
-      answer: 2,
+      answer: 3,
       reason: "Increase = 3% of 20,000 = 600 additional readmissions."
     },
     {
@@ -30838,7 +30838,7 @@ const AICaseStudies = [
         "35.33%",
         "37.33%"
       ],
-      answer: 2,
+      answer: 1,
       reason: "35 ÷ 105 × 100 = 33.33%. Therefore option 1 is correct."
     },
     {
@@ -31100,7 +31100,7 @@ const AICaseStudies = [
         "₹11",
         "₹13"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Gross margin = ₹90 − ₹60 = ₹30. Direct product costs = ₹5 + ₹7 + ₹9 = ₹21. DPP = ₹9. Therefore option 1 is correct."
     },
     {
@@ -31195,7 +31195,7 @@ const AICaseStudies = [
         "₹48.00 lakh F",
         "₹50.50 lakh F"
       ],
-      answer: 2,
+      answer: 1,
       reason: "(₹430 − ₹400) × 150,000 = ₹45 lakh F. Therefore option 1 is correct."
     },
     {
@@ -31326,7 +31326,7 @@ const AICaseStudies = [
         "36%",
         "40%"
       ],
-      answer: 2,
+      answer: 1,
       reason: "MCE = Processing time ÷ MCT = 8 ÷ 25 × 100 = 32%. Therefore option 1 is correct."
     },
     {
@@ -31577,7 +31577,7 @@ const AICaseStudies = [
         "58%",
         "60%"
       ],
-      answer: 2,
+      answer: 1,
       reason: "30 + 24 = 54 service calls out of 100 = 54%. Therefore option 1 is correct."
     },
     {
@@ -31689,7 +31689,7 @@ const AICaseStudies = [
         "390",
         "400"
       ],
-      answer: 1,
+      answer: 2,
       reason: "140 + 90 + 70 + 40 + 25 + 15 + 10 = 390. Therefore option 2 is correct."
     },
     {
@@ -31713,7 +31713,7 @@ const AICaseStudies = [
         "58.97%",
         "60.25%"
       ],
-      answer: 1,
+      answer: 2,
       reason: "(140 + 90) ÷ 390 × 100 = 230 ÷ 390 × 100 = 58.97%. Therefore option 3 is correct."
     },
     {
@@ -31725,7 +31725,7 @@ const AICaseStudies = [
         "76.92%",
         "78.46%"
       ],
-      answer: 1,
+      answer: 2,
       reason: "(140 + 90 + 70) ÷ 390 × 100 = 300 ÷ 390 × 100 = 76.92%. Therefore option 3 is correct."
     },
     {
@@ -32298,7 +32298,7 @@ const AICaseStudies = [
         "82.5%",
         "85%"
       ],
-      answer: 1,
+      answer: 3,
       reason: "160 + 110 + 70 = 340. 340 ÷ 400 × 100 = 85%. Therefore option 4 is correct."
     },
     {
@@ -32426,7 +32426,7 @@ const AICaseStudies = [
         "₹25",
         "₹28"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Gross margin ₹60 − (₹10 + ₹12 + ₹15) = ₹23. Therefore option 1 is correct."
     },
     {
@@ -32438,7 +32438,7 @@ const AICaseStudies = [
         "₹16",
         "₹18"
       ],
-      answer: 2,
+      answer: 1,
       reason: "Gross margin = ₹100 − ₹68 = ₹32. Direct product costs = ₹4 + ₹6 + ₹8 = ₹18. DPP = ₹14. Therefore option 2 is correct."
     },
     {
@@ -32684,7 +32684,7 @@ const AICaseStudies = [
         "43.48%",
         "46.67%"
       ],
-      answer: 2,
+      answer: 1,
       reason: "New MCT = 30 − 5 = 25 hours. MCE = 10 ÷ 25 × 100 = 40%. Therefore option 2 is correct."
     },
     {
@@ -32789,7 +32789,7 @@ const AICaseStudies = [
         "67.89%",
         "70.00%"
       ],
-      answer: 1,
+      answer: 2,
       reason: "55 + 42 + 32 = ₹129 lakh. 129 ÷ 190 × 100 = 67.89%. Therefore option 3 is correct."
     },
     {
@@ -34024,7 +34024,7 @@ const AICaseStudies = [
           "0.60",
           "0.50"
         ],
-        answer: 3,
+        answer: 1,
         solution: "X4 = Market Value of Equity / Total Liabilities = 360 / 300 = 1.20. Therefore the correct option is 1.20.",
       },
 
@@ -43424,7 +43424,7 @@ const AICaseStudies = [
           "₹530",
           "₹610"
         ],
-        answer: 2,
+        answer: 1,
         reason: "₹1,450 − ₹920 − ₹80 = ₹450. Therefore the correct contribution is ₹450, not ₹530."
       },
       {
@@ -44516,7 +44516,7 @@ const AICaseStudies = [
         chapter_name: ["External Buy-in Price"],
         question: "What is Filtration Division's effective cost if it buys externally and performs the required modification?",
         options: ["₹8,900", "₹9,250", "₹9,600", "₹9,850"],
-        answer: 3,
+        answer: 2,
         reason: "₹9,250 + ₹350 = ₹9,600."
       },
       {
@@ -44616,7 +44616,7 @@ const AICaseStudies = [
         chapter_name: ["Opportunity Cost", "Contribution"],
         question: "What is Beta's contribution per machine hour?",
         options: ["₹120", "₹150", "₹180", "₹200"],
-        answer: 0,
+        answer: 1,
         reason: "Beta contribution = ₹2,100 − ₹1,350 = ₹750; per hour = ₹750 ÷ 5 = ₹150. The correct value is ₹150, so answer index should be 1."
       },
       {
@@ -45109,7 +45109,7 @@ const AICaseStudies = [
         chapter_name: ["Foreign Exchange", "External Buy-in"],
         question: "Including the ₹270 equivalent of the €3 integration cost, what is the effective external alternative per controller?",
         options: ["₹8,280", "₹8,460", "₹8,550", "₹8,730"],
-        answer: 1,
+        answer: 2,
         reason: "€3 × ₹90 = ₹270; total external cost = ₹8,280 + ₹270 = ₹8,550. Therefore the correct answer is option index 2."
       }
     ]
@@ -45135,7 +45135,7 @@ const AICaseStudies = [
         chapter_name: ["Limiting Factor", "Contribution"],
         question: "What is the contribution per furnace hour for Alloy B?",
         options: ["₹180", "₹200", "₹220", "₹250"],
-        answer: 1,
+        answer: 3,
         reason: "Contribution B = ₹2,900 − ₹1,650 = ₹1,250. Per furnace hour = ₹1,250 ÷ 5 = ₹250."
       },
       {
@@ -45531,7 +45531,7 @@ const AICaseStudies = [
         chapter_name: ["Market Based Transfer Pricing"],
         question: "What is the adjusted market price after deducting the external selling and distribution costs avoided on an internal transfer?",
         options: ["₹11,280", "₹11,480", "₹11,760", "₹12,000"],
-        answer: 2,
+        answer: 1,
         reason: "₹12,000 − ₹520 = ₹11,480. Therefore the correct option is index 1."
       },
       {
@@ -45631,7 +45631,7 @@ const AICaseStudies = [
         chapter_name: ["Limiting Factor", "Contribution"],
         question: "What is Alpha's contribution per machine hour?",
         options: ["₹150", "₹180", "₹200", "₹240"],
-        answer: 1,
+        answer: 2,
         reason: "Alpha contribution = ₹2,800 − ₹1,600 = ₹1,200; per hour = ₹1,200 ÷ 6 = ₹200. Therefore correct option is index 2."
       },
       {
@@ -45694,7 +45694,7 @@ const AICaseStudies = [
         chapter_name: ["Special Order", "Contribution"],
         question: "What is the contribution per module from the special order?",
         options: ["₹500", "₹600", "₹700", "₹800"],
-        answer: 2,
+        answer: 1,
         reason: "₹3,250 − ₹2,650 = ₹600. Therefore the correct option is index 1."
       },
       {
@@ -45702,7 +45702,7 @@ const AICaseStudies = [
         chapter_name: ["External Buy-in Price"],
         question: "What is Equipment Division's effective external alternative per module?",
         options: ["₹3,750", "₹3,840", "₹3,900", "₹4,000"],
-        answer: 2,
+        answer: 1,
         reason: "₹3,750 + ₹90 = ₹3,840. Therefore the correct option is index 1."
       },
       {

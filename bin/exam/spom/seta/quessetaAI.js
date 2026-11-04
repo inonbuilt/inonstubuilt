@@ -33763,9 +33763,9 @@ const AICaseStudies = [
         question:
           "What is the maximum amount ZCL may normally allocate to general corporate purposes out of ₹800 crore?",
         options: ["₹80 crore", "₹160 crore", "₹200 crore", "₹280 crore"],
-        answer: 1,
+        answer: 2,
         reason:
-          "General corporate purposes shall not exceed 25% of the amount being raised. 25% of ₹800 crore is ₹200 crore. Therefore, option 2 is correct.",
+          "General corporate purposes shall not exceed 25% of the amount being raised. 25% of ₹800 crore is ₹200 crore.",
       },
 
       {

@@ -106,7 +106,7 @@ const caseStudies = [
         "Only a routine meeting schedule",
         "Internally generated software"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter identifies internally generated assets such as proprietary processes and software as assets for which valuation may be required."
     },
     {
@@ -161,7 +161,7 @@ const caseStudies = [
         "It has made valuation relevant only to start-ups",
         "It has increased the emphasis on valuation"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter states that with the introduction and subsequent adoption of Ind AS by many Indian companies, the emphasis on valuation has increased."
     },
     {
@@ -216,7 +216,7 @@ const caseStudies = [
         "Only the person who originally purchased the asset",
         "A valuer specified under the applicable statute"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter states that valuation must be undertaken by a valuer specified in the statute and that each statute defines who can act as a valuer under that Act."
     },
     {
@@ -260,7 +260,7 @@ const caseStudies = [
         "Passing an examination conducted by the employer",
         "Passing the valuation examination under Rule 5 within the three years preceding the registration application"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The eligibility criteria reproduced in the chapter state that the applicant must have passed the valuation examination under Rule 5 within three years preceding the date of making an application for registration under Rule 6."
     }
   ]
@@ -315,7 +315,7 @@ const caseStudies = [
         "No market under any circumstances",
         "The most advantageous market"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter states that in the absence of a principal market, the most advantageous market may be considered."
     },
     {
@@ -359,7 +359,7 @@ const caseStudies = [
         "₹380",
         "₹20"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The Intrinsic Value is ₹200 and the market price is ₹180. The difference is ₹200 − ₹180 = ₹20. Since Intrinsic Value exceeds Market Value, the share is considered undervalued according to the chapter's explanation."
     },
     {
@@ -447,7 +447,7 @@ const caseStudies = [
         "Participant Specific Value",
         "Marriage Value"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explicitly states that Synergistic Value is also referred to as Marriage Value."
     },
     {
@@ -634,7 +634,7 @@ const caseStudies = [
         "The value specific to one investor's individual expectations",
         "The amount realised on the sale of an asset or group of assets when actual or hypothetical termination of the business is contemplated or assumed"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter defines Liquidation Value as the amount that will be realised on the sale of an asset or a group of assets when an actual or hypothetical termination of the business is contemplated or assumed."
     },
     {
@@ -711,7 +711,7 @@ const caseStudies = [
         "That future cash flows need not be estimated",
         "The competitive edge of the company and better insights into its prospects"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that proper analysis of the macro and micro economic environment helps an investor understand the company's competitive edge and provides better insight into its prospects."
     },
     {
@@ -744,7 +744,7 @@ const caseStudies = [
         "An assembled workforce",
         "Land and building"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter identifies land and building, and plant and machinery, as examples of tangible assets that can be valued."
     },
     {
@@ -777,7 +777,7 @@ const caseStudies = [
         "A statutory section number",
         "An assembled workforce or customer list"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that intangibles such as an assembled workforce and customer lists can add to the worth of a business."
     },
     {
@@ -832,7 +832,7 @@ const caseStudies = [
         "As the amount of tax paid in the preceding year",
         "As the current worth of the business"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that economic value is the current worth of the business."
     },
     {
@@ -1052,7 +1052,7 @@ const caseStudies = [
         "It excludes equivalent qualifications",
         "It means a qualification obtained from a recognised Indian University or equivalent, whether in India or abroad"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter's note states that the eligibility qualification means a qualification obtained from a recognised Indian University or equivalent, whether in India or abroad."
     }
   ]
@@ -1151,7 +1151,7 @@ const caseStudies = [
         "Only personal investment activities",
         "Rendering professional or financial services, including valuation services"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter's eligibility criteria state that an entity set up for objects other than rendering professional or financial services, including valuation services, is not eligible under the conditions reproduced there."
     },
     {
@@ -1206,7 +1206,7 @@ const caseStudies = [
         "Only the historical depreciation charged",
         "The conditions or circumstances under which an asset is used or deployed"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter defines the premise of value as the conditions or circumstances under which an asset is used or deployed."
     },
     {
@@ -1360,7 +1360,7 @@ const caseStudies = [
         "Only the owner's opinion and original purchase price",
         "Both firm-specific information and market-wide information"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter states that valuation of a business or asset requires firm-specific information as well as market-wide information."
     },
     {
@@ -1415,7 +1415,7 @@ const caseStudies = [
         "The original purchase price only",
         "Fair Value"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter illustrates that when a manufacturing company approaches a bank for a loan with plant and machinery as collateral, the bank would lend based on the Fair Value of the asset rather than its historical value stated in the Balance Sheet."
     },
     {
@@ -1613,7 +1613,7 @@ const caseStudies = [
         "Estimating only the value of an assembled workforce",
         "Deriving the value of a security"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter defines equity valuation as deriving the value of a security."
     },
     {
@@ -1690,7 +1690,7 @@ const caseStudies = [
         "It must be a market in which the asset has never been traded",
         "It must have the highest volume and level of activity for the subject asset or liability"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter defines the principal market as the market with the highest volume and level of activity for the subject asset or liability."
     },
     {
@@ -1745,7 +1745,7 @@ const caseStudies = [
         "Any use that produces the highest gross amount without considering conversion costs",
         "The use that fetches maximum value, provided it is physically possible, financially feasible and legally allowed"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter states that Highest and Best Use from a market perspective is the use that fetches maximum value. It must be physically possible, financially feasible and legally allowed."
     },
     {
@@ -1888,7 +1888,7 @@ const caseStudies = [
         "Whether the applicant has purchased shares in the past",
         "The applicant's integrity, reputation and character, absence of convictions and restraint orders, competence and financial solvency"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter lists integrity, reputation and character; absence of convictions and restraint orders; and competence and financial solvency as considerations that may be taken into account when determining whether an individual is a fit and proper person."
     },
     {
@@ -2861,7 +2861,7 @@ const caseStudies = [
         "To determine the historical cost of every asset of the target company",
         "To establish an appropriate price for acquiring a business or merging with another entity"
       ],
-      answer: 2,
+      answer: 3,
       reason: "In mergers and acquisitions, valuation helps establish the appropriate price to be paid for acquiring a business or merging with another entity, ensuring that the transaction is beneficial to the parties involved."
     },
     {
@@ -2939,7 +2939,7 @@ const caseStudies = [
         "Because recent transactions cannot be affected by market conditions",
         "Because transactions that occurred more recently are considered more valuable in terms of usefulness for analysis"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter states that transactions that occurred more recently are considered more valuable in terms of their usefulness for analysis."
     },
     {
@@ -3107,7 +3107,7 @@ const caseStudies = [
         "It determines the value of all foreign exchange derivatives",
         "It helps substantiate the premium on the issue of shares by certain companies, with the discounted cash flow method being one valuation option"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that Section 56(2)(viib) addresses taxation of income arising from the issuance of shares at a premium by certain companies. A valuation is required to substantiate the premium, and one option is fair market value determination using the discounted cash flow method."
     },
     {
@@ -3442,7 +3442,7 @@ const caseStudies = [
         "By guaranteeing that a dispute will never proceed to legal proceedings",
         "By providing an objective and independent assessment of the value of the disputed assets or interests"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that valuation serves as a critical tool in dispute resolution by providing an objective and independent assessment of disputed assets or interests. Valuation reports may also assist in court proceedings, arbitration or mediation."
     },
     {
@@ -3675,7 +3675,7 @@ const caseStudies = [
         "Every ordinary payment of electricity bills",
         "Issue of new shares, issue of sweat equity, non-cash transactions involving directors, compromise arrangements, mergers and amalgamations"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter identifies the issue of new shares, issue of sweat equity, non-cash transactions involving directors, compromise arrangements, mergers and amalgamations, acquisition of minority shareholding, and winding up or liquidation among situations requiring valuation."
     },
     {
@@ -3731,7 +3731,7 @@ const caseStudies = [
         "The property must be valued only under SEBI regulations",
         "The stamp duty value is adopted as deemed consideration"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that Section 50C mandates adoption of stamp duty value as deemed consideration for the transfer of immovable property if the actual sale consideration is lower than the stamp duty value."
     },
     {
@@ -3787,7 +3787,7 @@ const caseStudies = [
         "Only the original purchase price of the shares",
         "Pricing guidelines specified by the Reserve Bank of India"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter states that valuation of shares issued or transferred to non-residents must adhere to pricing guidelines specified by the Reserve Bank of India and prescribed valuation methodologies."
     },
     {
@@ -3843,7 +3843,7 @@ const caseStudies = [
         "Only the contractors who constructed the infrastructure projects",
         "Independent valuers accredited by recognized bodies"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter states that SEBI mandates valuation of InVIT assets by independent valuers accredited by recognized bodies, using appropriate methodologies to assess fair value."
     },
     {
@@ -3943,7 +3943,7 @@ const caseStudies = [
         "Only when a shareholder attends a meeting",
         "Through the review of potentially undervalued transactions covered in the relevant period"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that valuation requirements may be triggered in respect of undervalued transactions covered in the review of avoidable transactions in the relevant period."
     },
     {
@@ -4010,7 +4010,7 @@ const caseStudies = [
         "Only valuation of a company's marketing expenses",
         "Valuation of shares, assets or liabilities"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter states that Section 230 of the Companies Act requires valuation of shares, assets or liabilities in cases involving schemes of arrangement, amalgamations or corporate restructuring."
     },
     {
@@ -4077,7 +4077,7 @@ const caseStudies = [
         "By ensuring that the company never undertakes an acquisition",
         "By helping evaluate the fair value of shares and holding management accountable for value creation"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that valuation helps evaluate the fair value of shares, enables shareholders to make informed investment decisions and holds management accountable for value creation."
     },
     {
@@ -4133,7 +4133,7 @@ const caseStudies = [
         "By comparing only the number of directors in each company",
         "By comparing valuation metrics such as price-to-earnings ratios, enterprise value multiples and market capitalization against industry benchmarks"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that comparative valuation analysis helps management assess valuation metrics, such as price-to-earnings ratios, enterprise value multiples and market capitalization, against industry benchmarks to identify competitive positioning and performance gaps."
     },
     {
@@ -4188,7 +4188,7 @@ const caseStudies = [
         "Only the geographical location of the buyer, without considering the transaction",
         "The similarity of transaction size, type of transaction and characteristics of the buyer"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that the size of the transactions should be similar to the transaction being considered, and the type of transaction and characteristics of the buyer should also be similar."
     },
     {
@@ -4277,7 +4277,7 @@ const caseStudies = [
         "Only routine transactions involving the company's customers",
         "Issue of new shares, issue of sweat equity, non-cash transactions involving directors, compromise arrangements, mergers and amalgamations"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter specifically identifies the issue of new shares, issue of sweat equity, non-cash transactions involving directors, compromise arrangements, mergers and amalgamations, acquisition of minority shareholding, and winding up or liquidation."
     },
     {
@@ -4333,7 +4333,7 @@ const caseStudies = [
         "Section 56(2)(viib) and the Companies Act provisions on sweat equity",
         "Section 50B, with valuation conducted as per the provisions of Rule 11U and Rule 11UA, as stated in the chapter"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter identifies Section 50B as dealing with capital gains arising from slump sale transactions and states that valuation of the undertaking or business transferred is conducted as per the provisions of Rule 11U and Rule 11UA."
     },
     {
@@ -4422,7 +4422,7 @@ const caseStudies = [
         "To ensure that every transaction has the same valuation",
         "To promote transparency, fairness and compliance in cross-border transactions and help mitigate the risk of underreporting or mispricing assets and liabilities"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that valuation requirements under FEMA aim to promote transparency, fairness and compliance in cross-border transactions and mitigate the risk of underreporting or mispricing assets and liabilities."
     }
   ]
@@ -4467,7 +4467,7 @@ const caseStudies = [
         "By preventing management from allocating resources",
         "By evaluating alternatives such as entering new markets, diversifying product offerings or pursuing mergers and acquisitions, and supporting capital allocation decisions"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that valuation assists businesses in evaluating strategic alternatives, such as expansion into new markets, diversification of product offerings and strategic alliances through mergers and acquisitions. It also supports capital allocation decisions."
     },
     {
@@ -4556,7 +4556,7 @@ const caseStudies = [
         "Past transaction multiples can be applied without considering the circumstances of the transactions",
         "Limitations in transaction information and differences in market conditions can hinder conclusive insights, so transaction analysis provides a broad evaluation and approximate valuation"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that limitations in the quantity and quality of transaction-related information, together with differences between past and present market conditions, can hinder conclusive insights. Transaction analysis provides a broad evaluation of market demand and an approximate valuation, while each transaction remains unique."
     }
   ]
@@ -4612,7 +4612,7 @@ const caseStudies = [
         "Undertake valuation even when the valuer has an interest in the assets, provided the transaction is important",
         "Make an impartial, true and fair valuation, exercise due diligence and care, and comply with the prescribed rules"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter states that a valuer must make an impartial, true and fair valuation, exercise due diligence and care, and make the valuation in accordance with the prescribed rules."
     },
     {
@@ -4668,7 +4668,7 @@ const caseStudies = [
         "Section 56(2)(viib) applies because a premium is always involved",
         "Section 50B deals with capital gains arising from slump sale transactions, and the consideration received or accruing is deemed the full value of consideration for computing capital gains"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that Section 50B pertains to taxation of capital gains arising from slump sale transactions. The consideration received or accruing from the transfer of an undertaking or business as a whole is deemed the full value of consideration for computing capital gains tax."
     },
     {
@@ -4780,7 +4780,7 @@ const caseStudies = [
         "It ensures that the company must use only equity financing",
         "It helps determine the fair value of equity or assets, establish a realistic valuation range and evaluate financing options such as equity, debt or hybrid instruments"
       ],
-      answer: 2,
+      answer: 3,
       reason: "The chapter explains that valuation in capital raising helps determine fair value, establish a realistic valuation range, and support capital structure decisions involving equity financing, debt financing or hybrid instruments while considering cost of capital, risk and shareholder interests."
     },
     {
@@ -23316,6 +23316,9 @@ const caseStudies = [
 
 
 
+
+
+  
 
 
 
