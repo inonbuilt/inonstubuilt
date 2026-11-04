@@ -2609,7 +2609,19 @@
         timetable,
         tasks,
         lastSeen: safeNumber(source.lastSeen, 0, 0, Number.MAX_SAFE_INTEGER),
-        updatedAt: safeNumber(source.updatedAt, 0, 0, Number.MAX_SAFE_INTEGER)
+        updatedAt: safeNumber(source.updatedAt, 0, 0, Number.MAX_SAFE_INTEGER),
+        examStats: source.examStats && typeof source.examStats === "object" ? {
+          visible: Boolean(source.examStats.visible),
+          totalExams: safeNumber(source.examStats.totalExams, 0, 0, 10000),
+          passedExams: safeNumber(source.examStats.passedExams, 0, 0, 10000),
+          passRate: safeNumber(source.examStats.passRate, 0, 0, 100),
+          avgScore: safeNumber(source.examStats.avgScore, 0, 0, 100),
+          recentScores: Array.isArray(source.examStats.recentScores) ? source.examStats.recentScores.slice(0, 10).map(s => ({
+            pct: safeNumber(s.pct, 0, 0, 100),
+            isPass: Boolean(s.isPass),
+            subject: safeText(s.subject, "SPOM", 40)
+          })) : []
+        } : { visible: false }
       };
     }
 
@@ -2692,6 +2704,40 @@
         lastSeen: Date.now(),
         updatedAt: Date.now()
       };
+
+      let examStats = { visible: false };
+      if (prof.examStatsVisibleToFriends !== false) {
+        let spomResults = [];
+        try {
+          spomResults = JSON.parse(localStorage.getItem("calcium_spom_results") || "[]");
+        } catch (e) {}
+        const total = spomResults.length;
+        let passed = 0;
+        let scoreSum = 0;
+        spomResults.forEach(r => {
+          const pct = Number(r.percentage) || 0;
+          if (r.status === "PASS" || pct >= 50) passed++;
+          scoreSum += pct;
+        });
+        const passRate = total > 0 ? Math.round((passed / total) * 100) : 0;
+        const avg = total > 0 ? Math.round((scoreSum / total) * 10) / 10 : 0;
+        const recentScores = spomResults.slice(0, 6).reverse().map(r => ({
+          pct: Number(r.percentage) || 0,
+          isPass: r.status === "PASS" || (Number(r.percentage) || 0) >= 50,
+          subject: r.subject || r.set || "SPOM"
+        }));
+
+        examStats = {
+          visible: true,
+          totalExams: total,
+          passedExams: passed,
+          passRate: passRate,
+          avgScore: avg,
+          recentScores: recentScores
+        };
+      }
+      snapshot.examStats = examStats;
+
       return snapshot;
     }
 
@@ -3649,6 +3695,55 @@
           <div class="box-tag">✍️ STUDENT BIO &amp; STUDY MANTRA</div>
           <div class="bio-card">
             ${escapeHtml(friend.bio || "Committed to daily CA revision and timetable consistency.")}
+          </div>
+
+          <div class="friend-exam-section" style="margin-top:16px;">
+            <div class="box-tag" style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+              <span>📊 SPOM MOCK EXAM PERFORMANCE</span>
+              ${friend.examStats && friend.examStats.visible
+                ? `<span class="privacy-mini-pill" style="background:rgba(16,185,129,0.2); color:#4ade80;">👥 Visible to Friends</span>`
+                : `<span class="privacy-mini-pill" style="background:rgba(239,68,68,0.2); color:#fca5a5;">🔒 Private</span>`}
+            </div>
+
+            ${friend.examStats && friend.examStats.visible ? `
+              <div class="profile-stats-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom:12px;">
+                <div class="stat-tile">
+                  <div class="stat-tile-label">EXAMS WRITTEN</div>
+                  <div class="stat-tile-value" style="color:#38bdf8;">${friend.examStats.totalExams || 0}</div>
+                </div>
+                <div class="stat-tile">
+                  <div class="stat-tile-label">PASS RATE</div>
+                  <div class="stat-tile-value" style="color:#4ade80;">${friend.examStats.passRate || 0}%</div>
+                </div>
+                <div class="stat-tile">
+                  <div class="stat-tile-label">AVG SCORE</div>
+                  <div class="stat-tile-value" style="color:#c084fc;">${friend.examStats.avgScore || 0}%</div>
+                </div>
+              </div>
+              ${(friend.examStats.recentScores && friend.examStats.recentScores.length > 0) ? `
+                <div style="background:rgba(15,23,42,0.6); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:12px;">
+                  <div style="font-size:10px; font-weight:700; color:#94a3b8; margin-bottom:8px;">Recent Exam Score Trajectory (50% Pass Benchmark)</div>
+                  <div style="position:relative; height:90px; background:rgba(0,0,0,0.25); border-radius:6px; padding:10px 6px 20px 6px; display:flex; align-items:flex-end; justify-content:space-around; gap:6px;">
+                    <div style="position:absolute; bottom:calc(50% + 4px); left:0; width:100%; height:1px; border-top:1px dashed rgba(245,158,11,0.6); pointer-events:none;"></div>
+                    ${friend.examStats.recentScores.map(sc => `
+                      <div style="flex:1; max-width:32px; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; position:relative;">
+                        <span style="position:absolute; top:-14px; font-size:8px; font-weight:800; color:#fff;">${sc.pct}%</span>
+                        <div style="width:100%; min-height:4px; height:${Math.max(10, Math.min(100, sc.pct))}%; border-radius:3px 3px 1px 1px; background:${sc.isPass ? 'linear-gradient(180deg,#10b981,#059669)' : 'linear-gradient(180deg,#ef4444,#dc2626)'};"></div>
+                        <span style="position:absolute; bottom:-16px; font-size:8px; color:#94a3b8; max-width:34px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${escapeHtml(sc.subject.substring(0, 4))}</span>
+                      </div>
+                    `).join("")}
+                  </div>
+                </div>
+              ` : `
+                <div style="background:rgba(30,41,59,0.3); border:1px dashed rgba(255,255,255,0.1); border-radius:10px; padding:12px; text-align:center; color:#94a3b8; font-size:11px;">
+                  📝 0 exams attempted so far.
+                </div>
+              `}
+            ` : `
+              <div style="background:rgba(30,41,59,0.3); border:1px dashed rgba(255,255,255,0.1); border-radius:10px; padding:16px; text-align:center; color:#94a3b8; font-size:12px;">
+                🔒 <em>This student has chosen to keep their SPOM exam performance private.</em>
+              </div>
+            `}
           </div>
         `;
       } else if (currentInspectorTab === "timetable") {

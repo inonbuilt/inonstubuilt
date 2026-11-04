@@ -1036,12 +1036,44 @@
     ═══════════════════════════════════════ */
     .social-profile-modal-card {
       max-width: 780px !important;
+      width: 95% !important;
+      max-height: 90vh !important;
       padding: 0 !important;
-      overflow: hidden !important;
+      overflow-y: auto !important;
+      overflow-x: hidden !important;
       border-radius: 20px !important;
       background: #0f172a !important;
       border: 1px solid rgba(56, 189, 248, 0.35) !important;
       box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8), 0 0 35px rgba(56, 189, 248, 0.15) !important;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(56, 189, 248, 0.45) rgba(15, 23, 42, 0.5);
+    }
+
+    .social-profile-modal-card::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .social-profile-modal-card::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.5);
+      border-radius: 0 20px 20px 0;
+    }
+
+    .social-profile-modal-card::-webkit-scrollbar-thumb {
+      background: rgba(56, 189, 248, 0.4);
+      border-radius: 999px;
+      border: 2px solid #0f172a;
+    }
+
+    .social-profile-modal-card::-webkit-scrollbar-thumb:hover {
+      background: rgba(56, 189, 248, 0.7);
+    }
+
+    #profileModal {
+      overflow-y: auto !important;
+      padding: 20px 12px !important;
+      box-sizing: border-box !important;
     }
 
     .social-cover-banner {
@@ -1053,6 +1085,7 @@
       justify-content: space-between;
       padding: 16px 20px;
       overflow: hidden;
+      border-radius: 20px 20px 0 0;
     }
 
     .social-cover-overlay {
@@ -1396,6 +1429,302 @@
       box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
     }
 
+    
+    /* ================= PROFILE EXAM PERFORMANCE & BAR CHART ================= */
+    .profile-exam-section {
+      padding: 0 24px;
+      margin-bottom: 14px;
+    }
+
+    .profile-exam-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .exam-vis-pill-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      background: rgba(56, 189, 248, 0.12);
+      color: #7dd3fc;
+      transition: all 0.2s ease;
+    }
+
+    .exam-vis-pill-btn:hover {
+      background: rgba(56, 189, 248, 0.25);
+      transform: translateY(-1px);
+    }
+
+    .exam-vis-pill-btn.private-mode {
+      border-color: rgba(239, 68, 68, 0.4);
+      background: rgba(239, 68, 68, 0.12);
+      color: #fca5a5;
+    }
+
+    .profile-exam-wrapper-card {
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .profile-exam-kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .profile-kpi-box {
+      background: rgba(30, 41, 59, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .profile-kpi-label {
+      font-size: 9px;
+      font-weight: 800;
+      color: #94a3b8;
+      letter-spacing: 0.4px;
+    }
+
+    .profile-kpi-val {
+      font-size: 1.15rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .profile-kpi-sub {
+      font-size: 9.5px;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    .profile-chart-container {
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 12px 12px 8px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .profile-chart-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .profile-chart-heading {
+      font-size: 11px;
+      font-weight: 700;
+      color: #cbd5e1;
+    }
+
+    .profile-chart-mode-pills {
+      display: inline-flex;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 999px;
+      padding: 2px;
+      gap: 2px;
+    }
+
+    .profile-chart-tab-btn {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .profile-chart-tab-btn.active {
+      background: #2563eb;
+      color: #ffffff;
+    }
+
+    .profile-plot-area {
+      position: relative;
+      height: 120px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      padding: 16px 8px 24px 8px;
+      display: flex;
+      align-items: flex-end;
+      box-sizing: border-box;
+    }
+
+    .profile-chart-benchmark-line {
+      position: absolute;
+      bottom: calc(50% + 4px);
+      left: 0;
+      width: 100%;
+      height: 1px;
+      border-top: 1px dashed rgba(245, 158, 11, 0.55);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .profile-benchmark-tag {
+      position: absolute;
+      right: 6px;
+      top: -14px;
+      font-size: 8px;
+      font-weight: 700;
+      color: #fbbf24;
+      background: rgba(15, 23, 42, 0.85);
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+
+    .profile-bars-track {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      gap: 6px;
+      position: relative;
+      z-index: 3;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .profile-bars-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .prof-bar-col {
+      flex: 1;
+      max-width: 36px;
+      min-width: 22px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .prof-bar-shape {
+      width: 100%;
+      min-height: 4px;
+      border-radius: 4px 4px 2px 2px;
+      transition: height 0.4s ease;
+    }
+
+    .prof-bar-shape.pass {
+      background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+      box-shadow: 0 0 6px rgba(16, 185, 129, 0.3);
+    }
+
+    .prof-bar-shape.fail {
+      background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%);
+      box-shadow: 0 0 6px rgba(239, 68, 68, 0.3);
+    }
+
+    .prof-bar-top-text {
+      position: absolute;
+      top: -15px;
+      font-size: 8.5px;
+      font-weight: 800;
+      color: #ffffff;
+      white-space: nowrap;
+    }
+
+    .prof-bar-bottom-text {
+      position: absolute;
+      bottom: -18px;
+      font-size: 8.5px;
+      font-weight: 700;
+      color: #94a3b8;
+      white-space: nowrap;
+      max-width: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .profile-chart-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 4px;
+      font-size: 10px;
+      color: #94a3b8;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .profile-chart-legend {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .p-legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 9.5px;
+    }
+
+    .p-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+    .p-dot.pass { background: #10b981; }
+    .p-dot.fail { background: #ef4444; }
+
+    .profile-take-exam-btn {
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(56, 189, 248, 0.1);
+      transition: all 0.2s;
+    }
+    .profile-take-exam-btn:hover {
+      background: rgba(56, 189, 248, 0.2);
+      color: #ffffff;
+    }
+
+    .profile-exam-vis-note {
+      font-size: 10px;
+      line-height: 1.4;
+      color: #94a3b8;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px dashed rgba(255, 255, 255, 0.08);
+    }
+
+
+
     .social-vault-card {
       margin: 0 24px 20px 24px;
       background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 58, 138, 0.3));
@@ -1471,24 +1800,7 @@
       min-height: 16px;
     }
 
-    @media (max-width: 640px) {
-      .social-stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .social-profile-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: -46px;
-      }
-      .social-profile-info {
-        padding-top: 0;
-        width: 100%;
-      }
-      .name-input-row {
-        justify-content: center;
-      }
-    }
+
 
 
     /* ═══════════════════════════════════════
@@ -1855,6 +2167,446 @@
         flex: 1 !important;
         padding: 10px !important;
         font-size: 14px !important;
+      }
+    }
+
+
+    /* =========================================================
+       CALCIUM DIGITAL STUDENT PASS: TABLET & MOBILE UI/UX
+       ========================================================= */
+
+    /* TABLETS & IPADS (641px - 1024px) */
+    @media (min-width: 641px) and (max-width: 1024px) {
+      .social-profile-modal-card {
+        max-width: 720px !important;
+        width: 94% !important;
+        max-height: 88vh !important;
+        border-radius: 20px !important;
+      }
+
+      .social-cover-banner {
+        height: 100px;
+        padding: 14px 18px;
+      }
+
+      .social-profile-header {
+        padding: 0 20px 14px 20px;
+        margin-top: -42px;
+        gap: 16px;
+      }
+
+      .social-profile-avatar {
+        width: 86px;
+        height: 86px;
+      }
+
+      .social-section-block,
+      .profile-exam-section {
+        padding: 0 20px;
+        margin-bottom: 14px;
+      }
+
+      .social-stats-grid {
+        padding: 0 20px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        margin-bottom: 14px;
+      }
+
+      .profile-exam-wrapper-card {
+        padding: 14px;
+      }
+
+      .profile-exam-kpi-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+      }
+
+      .profile-plot-area {
+        height: 125px;
+      }
+
+      .social-vault-card {
+        margin: 0 20px 20px 20px;
+        padding: 14px 16px;
+      }
+    }
+
+    /* MOBILE PHONES (<= 640px) */
+    @media (max-width: 640px) {
+      #profileModal {
+        padding: 8px 6px !important;
+        align-items: center !important;
+      }
+
+      .social-profile-modal-card {
+        width: 100% !important;
+        max-height: 94vh !important;
+        border-radius: 16px !important;
+        margin: auto 0 !important;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9), 0 0 25px rgba(56, 189, 248, 0.2) !important;
+      }
+
+      /* Compact Cover Banner */
+      .social-cover-banner {
+        height: 85px;
+        padding: 12px 14px;
+        border-radius: 16px 16px 0 0;
+      }
+
+      .social-passport-chip {
+        font-size: 10px;
+        padding: 4px 10px;
+        gap: 5px;
+      }
+
+      .passport-badge {
+        font-size: 8px;
+        padding: 1px 5px;
+      }
+
+      .social-modal-close-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
+      }
+
+      /* Profile Header: Centered on mobile */
+      .social-profile-header {
+        padding: 0 14px 12px 14px;
+        margin-top: -38px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+      }
+
+      .social-profile-avatar {
+        width: 78px;
+        height: 78px;
+        border-width: 3px;
+        font-size: 26px;
+      }
+
+      .avatar-action-links {
+        gap: 6px;
+      }
+
+      .avatar-mini-btn {
+        padding: 4px 9px;
+        font-size: 11px;
+      }
+
+      .social-profile-info {
+        padding-top: 0;
+        width: 100%;
+        gap: 8px;
+      }
+
+      .name-input-row {
+        justify-content: center;
+      }
+
+      .social-name-input {
+        font-size: 14px;
+        padding: 7px 12px;
+        text-align: center;
+      }
+
+      .ca-level-buttons-row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+      }
+
+      .ca-role-btn {
+        padding: 8px 4px;
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      /* Study Mood: Touch-Swipeable Horizontal Strip */
+      .social-section-block {
+        padding: 0 14px;
+        margin-bottom: 12px;
+      }
+
+      .social-section-label {
+        font-size: 10px;
+        margin-bottom: 6px;
+      }
+
+      .social-mood-pills-row {
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 4px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .social-mood-pills-row::-webkit-scrollbar {
+        display: none;
+      }
+
+      .social-mood-pills-row .filter-pill-btn {
+        flex-shrink: 0;
+        padding: 5px 11px;
+        font-size: 11px;
+        white-space: nowrap;
+      }
+
+      /* Student Stats: 2x2 Clean Grid */
+      .social-stats-grid {
+        padding: 0 14px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+
+      .social-stat-card {
+        padding: 8px 10px;
+      }
+
+      .stat-card-label {
+        font-size: 9px;
+      }
+
+      .social-stat-input,
+      .social-stat-select {
+        font-size: 12px;
+        padding: 6px 8px;
+      }
+
+      /* Bio Textarea */
+      .social-bio-textarea {
+        font-size: 12px;
+        padding: 8px 10px 8px 28px;
+        min-height: 52px;
+      }
+
+      .bio-quote-icon {
+        top: 8px;
+        left: 8px;
+        font-size: 14px;
+      }
+
+      /* SPOM Mock Exam Performance Card */
+      .profile-exam-section {
+        padding: 0 14px;
+        margin-bottom: 12px;
+      }
+
+      .profile-exam-header-row {
+        gap: 8px;
+        margin-bottom: 6px;
+      }
+
+      .exam-vis-pill-btn {
+        padding: 4px 10px;
+        font-size: 10.5px;
+      }
+
+      .profile-exam-wrapper-card {
+        padding: 12px 10px;
+        gap: 10px;
+        border-radius: 12px;
+      }
+
+      .profile-exam-kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+      }
+
+      .profile-kpi-box {
+        padding: 7px 8px;
+      }
+
+      .profile-kpi-label {
+        font-size: 8.5px;
+      }
+
+      .profile-kpi-val {
+        font-size: 1.05rem;
+      }
+
+      .profile-kpi-sub {
+        font-size: 8.5px;
+      }
+
+      /* Bar Chart on Mobile */
+      .profile-chart-container {
+        padding: 10px 8px 6px 8px;
+        border-radius: 10px;
+      }
+
+      .profile-chart-top-bar {
+        gap: 6px;
+      }
+
+      .profile-chart-heading {
+        font-size: 10.5px;
+      }
+
+      .profile-chart-tab-btn {
+        font-size: 9.5px;
+        padding: 2px 7px;
+      }
+
+      .profile-plot-area {
+        height: 110px;
+        padding: 14px 4px 22px 4px;
+      }
+
+      .profile-benchmark-tag {
+        font-size: 7.5px;
+        padding: 1px 3px;
+        top: -13px;
+        right: 4px;
+      }
+
+      .profile-bars-track {
+        gap: 4px;
+        padding-bottom: 2px;
+      }
+
+      .prof-bar-col {
+        min-width: 20px;
+        max-width: 34px;
+      }
+
+      .prof-bar-top-text {
+        font-size: 7.5px;
+        top: -13px;
+      }
+
+      .prof-bar-bottom-text {
+        font-size: 8px;
+        bottom: -15px;
+      }
+
+      .profile-chart-footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        margin-top: 4px;
+      }
+
+      .profile-chart-legend {
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .p-legend-item {
+        font-size: 9px;
+      }
+
+      .profile-take-exam-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        padding: 5px 8px;
+        font-size: 10.5px;
+        box-sizing: border-box;
+      }
+
+      .profile-exam-vis-note {
+        font-size: 9.5px;
+        padding: 6px 8px;
+      }
+
+      /* Universal Data Vault on Mobile */
+      .social-vault-card {
+        margin: 0 14px 16px 14px;
+        padding: 12px 10px;
+        border-radius: 12px;
+      }
+
+      .vault-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        margin-bottom: 10px;
+      }
+
+      .vault-title {
+        font-size: 12px;
+      }
+
+      .vault-desc {
+        font-size: 10px;
+      }
+
+      .vault-stats-pill {
+        font-size: 9.5px;
+        padding: 2px 6px;
+      }
+
+      /* 3-Button Mobile Grid: Export + Import (Row 1), Save & Done full-width (Row 2) */
+      .vault-actions-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        width: 100%;
+      }
+
+      .vault-actions-row .cn-btn.emerald-glow {
+        grid-column: 1;
+        justify-content: center;
+        text-align: center;
+        font-size: 11px;
+        padding: 8px 6px;
+      }
+
+      .vault-actions-row .cn-btn.secondary {
+        grid-column: 2;
+        justify-content: center;
+        text-align: center;
+        font-size: 11px;
+        padding: 8px 6px;
+      }
+
+      .vault-actions-row .cn-btn.primary-glow {
+        grid-column: 1 / -1;
+        width: 100%;
+        margin-left: 0 !important;
+        justify-content: center;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 800;
+        padding: 10px 14px;
+        box-shadow: 0 4px 16px rgba(2, 132, 199, 0.45);
+      }
+    }
+
+    /* COMPACT NARROW MOBILES (<= 380px) */
+    @media (max-width: 380px) {
+      .social-passport-chip {
+        max-width: 190px;
+      }
+
+      .social-passport-chip span:nth-child(2) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .ca-role-btn {
+        font-size: 9.5px;
+        padding: 6px 2px;
+      }
+
+      .profile-exam-header-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .exam-vis-pill-btn {
+        width: 100%;
+        justify-content: center;
       }
     }
 
@@ -2292,7 +3044,7 @@
   <!-- ═══════════════════════════════════════════════════════════════════
          MODAL 3: STUDENT PROFILE, CA LEVEL & FULL DATA BACKUP / RESTORE
     ═══════════════════════════════════════════════════════════════════ -->
-    <div class="cn-modal-backdrop" id="profileModal">
+    <div class="cn-modal-backdrop" id="profileModal" onclick="if(event.target===this) closeProfileModal()">
     <div class="cn-modal-card social-profile-modal-card">
       
       <!-- TOP SOCIAL COVER BANNER -->
@@ -2414,6 +3166,91 @@
           <textarea id="profBioInput" class="social-bio-textarea" rows="2"
             placeholder="Write your CA goal, target exemption subjects, or personal study mantra..."
             oninput="saveProfileFormLive()"></textarea>
+        </div>
+      </div>
+
+            <!-- ================= SPOM MOCK EXAM PERFORMANCE & BAR CHART ================= -->
+      <div class="profile-exam-section">
+        <div class="profile-exam-header-row">
+          <div class="social-section-label" style="margin-bottom:0;">
+            📊 SPOM MOCK EXAM PERFORMANCE
+          </div>
+
+          <!-- Friend Visibility Toggle: Visible to Friends vs Private -->
+          <div class="exam-friend-vis-wrapper">
+            <button type="button" id="profExamVisibilityBtn" class="exam-vis-pill-btn" onclick="toggleExamStatsVisibility()"
+              title="Toggle whether study friends can see your exam attempts and pass rate">
+              <span id="profExamVisIcon">👥</span>
+              <span id="profExamVisText">Visible to Friends</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="profile-exam-wrapper-card">
+          <!-- Top KPI Grid: Exams Written, Pass %, Avg Score, Best Score -->
+          <div class="profile-exam-kpi-grid">
+            <div class="profile-kpi-box">
+              <div class="profile-kpi-label">📝 EXAMS WRITTEN</div>
+              <div class="profile-kpi-val" id="profExamTotalCount" style="color:#38bdf8;">0</div>
+              <div class="profile-kpi-sub">Total CBT Attempts</div>
+            </div>
+            <div class="profile-kpi-box">
+              <div class="profile-kpi-label">🎯 PASS PERCENTAGE</div>
+              <div class="profile-kpi-val" id="profExamPassRate" style="color:#4ade80;">0%</div>
+              <div class="profile-kpi-sub" id="profExamPassRatio">0 of 0 Passed</div>
+            </div>
+            <div class="profile-kpi-box">
+              <div class="profile-kpi-label">⭐ AVERAGE SCORE</div>
+              <div class="profile-kpi-val" id="profExamAvgScore" style="color:#c084fc;">0%</div>
+              <div class="profile-kpi-sub">Overall Marks Avg</div>
+            </div>
+            <div class="profile-kpi-box">
+              <div class="profile-kpi-label">🏆 BEST SCORE</div>
+              <div class="profile-kpi-val" id="profExamBestScore" style="color:#fbbf24;">0%</div>
+              <div class="profile-kpi-sub">Highest Mock Mark</div>
+            </div>
+          </div>
+
+          <!-- Bar Chart Container -->
+          <div class="profile-chart-container">
+            <div class="profile-chart-top-bar">
+              <span class="profile-chart-heading">Score Trajectory vs 50% Benchmark</span>
+              <div class="profile-chart-mode-pills">
+                <button type="button" id="profChartModeRecent" class="profile-chart-tab-btn active" onclick="switchProfileChartMode('recent')">Recent</button>
+                <button type="button" id="profChartModeSubjects" class="profile-chart-tab-btn" onclick="switchProfileChartMode('subjects')">Sets</button>
+              </div>
+            </div>
+
+            <!-- Chart Plot Area -->
+            <div class="profile-plot-area" id="profPlotArea">
+              <!-- 50% Benchmark Line -->
+              <div class="profile-chart-benchmark-line">
+                <span class="profile-benchmark-tag">50% Pass</span>
+              </div>
+              <!-- Bars Track -->
+              <div class="profile-bars-track" id="profBarsTrack">
+                <!-- Populated dynamically via JS -->
+              </div>
+            </div>
+
+            <!-- Chart Legend & Footer -->
+            <div class="profile-chart-footer">
+              <div class="profile-chart-legend">
+                <span class="p-legend-item"><span class="p-dot pass"></span> Passed (≥50%)</span>
+                <span class="p-legend-item"><span class="p-dot fail"></span> Failed (&lt;50%)</span>
+              </div>
+              <div class="profile-chart-action">
+                <a href="bin/exam/spom/espom.html" target="_blank" class="profile-take-exam-btn" title="Open SPOM Portal to practice mock tests">
+                  <span>Open SPOM Portal ↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Privacy Status Footer Note -->
+          <div class="profile-exam-vis-note" id="profExamVisNote">
+            <span>👥 <strong>Public to Study Friends:</strong> Friends connected on Calcium Notes can view your mock exam count, pass percentage, and score chart.</span>
+          </div>
         </div>
       </div>
 
@@ -3788,7 +4625,8 @@
         dailyGoal: p.dailyGoal || 10,
         city: p.city || "",
         bio: p.bio || "",
-        avatar: p.avatar || ""
+        avatar: p.avatar || "",
+        examStatsVisibleToFriends: (p.examStatsVisibleToFriends !== false)
       };
     }
 
@@ -3847,6 +4685,155 @@
       }, 300);
     };
 
+    
+    // =========================================================
+    // PROFILE EXAM PERFORMANCE & BAR CHART ENGINE
+    // =========================================================
+    let profChartMode = "recent"; // "recent" or "subjects"
+
+    function switchProfileChartMode(mode) {
+      profChartMode = mode;
+      const btnRec = document.getElementById("profChartModeRecent");
+      const btnSub = document.getElementById("profChartModeSubjects");
+      if (btnRec) btnRec.classList.toggle("active", mode === "recent");
+      if (btnSub) btnSub.classList.toggle("active", mode === "subjects");
+      renderProfileExamSection();
+    }
+
+    function toggleExamStatsVisibility() {
+      const p = getSavedUserProfile();
+      p.examStatsVisibleToFriends = (p.examStatsVisibleToFriends !== false) ? false : true;
+      persistUserProfile(p);
+      try {
+        localStorage.setItem("calcium_exam_stats_visible_to_friends", p.examStatsVisibleToFriends ? "true" : "false");
+      } catch (e) {}
+      updateProfileExamVisibilityUI(p.examStatsVisibleToFriends);
+    }
+
+    function updateProfileExamVisibilityUI(isVisible) {
+      const btn = document.getElementById("profExamVisibilityBtn");
+      const icon = document.getElementById("profExamVisIcon");
+      const text = document.getElementById("profExamVisText");
+      const note = document.getElementById("profExamVisNote");
+
+      const visible = (isVisible !== false);
+      if (btn) btn.className = visible ? "exam-vis-pill-btn" : "exam-vis-pill-btn private-mode";
+      if (icon) icon.innerText = visible ? "👥" : "🔒";
+      if (text) text.innerText = visible ? "Visible to Friends" : "Not Visible (Private)";
+      if (note) {
+        note.innerHTML = visible
+          ? `<span>👥 <strong>Public to Study Friends:</strong> Friends connected on Calcium Notes can view your mock exam count, pass percentage, and score chart.</span>`
+          : `<span style="color:#fca5a5;">🔒 <strong>Private Mode Active:</strong> Your SPOM mock exam performance is hidden from friends and study squads.</span>`;
+      }
+    }
+
+    function renderProfileExamSection() {
+      const p = getSavedUserProfile();
+      updateProfileExamVisibilityUI(p.examStatsVisibleToFriends);
+
+      let results = [];
+      try {
+        results = JSON.parse(localStorage.getItem("calcium_spom_results") || "[]");
+      } catch (e) {}
+
+      const totalCountEl = document.getElementById("profExamTotalCount");
+      const passRateEl = document.getElementById("profExamPassRate");
+      const passRatioEl = document.getElementById("profExamPassRatio");
+      const avgScoreEl = document.getElementById("profExamAvgScore");
+      const bestScoreEl = document.getElementById("profExamBestScore");
+      const track = document.getElementById("profBarsTrack");
+
+      const total = results.length;
+      let passed = 0;
+      let scoreSum = 0;
+      let best = 0;
+
+      results.forEach(r => {
+        const pct = Number(r.percentage) || 0;
+        if (r.status === "PASS" || pct >= 50) passed++;
+        scoreSum += pct;
+        if (pct > best) best = pct;
+      });
+
+      const passRate = total > 0 ? Math.round((passed / total) * 100) : 0;
+      const avg = total > 0 ? Math.round((scoreSum / total) * 10) / 10 : 0;
+
+      if (totalCountEl) totalCountEl.innerText = `${total}`;
+      if (passRateEl) passRateEl.innerText = `${passRate}%`;
+      if (passRatioEl) passRatioEl.innerText = `${passed} of ${total} Passed`;
+      if (avgScoreEl) avgScoreEl.innerText = `${avg}%`;
+      if (bestScoreEl) bestScoreEl.innerText = `${best}%`;
+
+      if (!track) return;
+
+      if (total === 0) {
+        track.innerHTML = `
+          <div style="width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; color:#64748b; font-size:11px; text-align:center;">
+            <span style="font-size:1.3rem;">📊</span>
+            <span style="font-weight:700; color:#cbd5e1;">No Exams Written Yet</span>
+            <span style="font-size:9.5px;">Attempt a mock test to track your pass rate & score bars here.</span>
+          </div>
+        `;
+        return;
+      }
+
+      if (profChartMode === "subjects") {
+        const sets = ["SET A", "SET B", "SET C", "SET D"];
+        const setStats = {};
+        sets.forEach(s => setStats[s] = { count: 0, sum: 0 });
+        results.forEach(r => {
+          const s = r.set || "SET A";
+          if (setStats[s]) {
+            setStats[s].count++;
+            setStats[s].sum += Number(r.percentage) || 0;
+          }
+        });
+
+        track.innerHTML = sets.map(s => {
+          const st = setStats[s];
+          const sAvg = st.count > 0 ? Math.round(st.sum / st.count) : 0;
+          const isPass = sAvg >= 50;
+          const hasData = st.count > 0;
+          const h = hasData ? Math.max(10, Math.min(100, sAvg)) : 6;
+          const barCls = hasData ? (isPass ? "pass" : "fail") : "";
+
+          return `
+            <div class="prof-bar-col" title="${s}: ${hasData ? sAvg + '% (' + st.count + ' tests)' : 'No attempts'}">
+              <span class="prof-bar-top-text">${hasData ? sAvg + '%' : '—'}</span>
+              <div class="prof-bar-shape ${barCls}" style="height:${h}%; ${!hasData ? 'background:rgba(255,255,255,0.1);' : ''}"></div>
+              <span class="prof-bar-bottom-text">${s}</span>
+            </div>
+          `;
+        }).join("");
+      } else {
+        const recent = results.slice(0, 8).reverse();
+        track.innerHTML = recent.map(r => {
+          const pct = Number(r.percentage) || 0;
+          const isPass = r.status === "PASS" || pct >= 50;
+          const h = Math.max(10, Math.min(100, pct));
+          let lbl = r.set || "SPOM";
+          const sub = (r.subject || r.title || "").toLowerCase();
+          if (sub.includes("valuation")) lbl = "Val.";
+          else if (sub.includes("ibc") || sub.includes("insolvency")) lbl = "IBC";
+          else if (sub.includes("forensic")) lbl = "For.";
+          else if (sub.includes("arbitration")) lbl = "Arb.";
+          else if (sub.includes("psychology")) lbl = "Psy.";
+          else if (sub.includes("startup")) lbl = "Start";
+          else if (sub.includes("ecosystem")) lbl = "Eco";
+          else if (sub.includes("scpm")) lbl = "SCPM";
+          else if (sub.includes("law")) lbl = "Law";
+
+          return `
+            <div class="prof-bar-col" title="${r.subject || r.title}: ${pct}% (${r.score}/${r.totalMarks}) on ${r.dateStr || ''}">
+              <span class="prof-bar-top-text">${pct}%</span>
+              <div class="prof-bar-shape ${isPass ? 'pass' : 'fail'}" style="height:${h}%;"></div>
+              <span class="prof-bar-bottom-text">${lbl}</span>
+            </div>
+          `;
+        }).join("");
+      }
+    }
+
     function populateProfileModalUI() {
       const p = getSavedUserProfile();
       const nameInp = document.getElementById("profNameInput");
@@ -3866,6 +4853,7 @@
       updateProfileMoodButtonsUI(p.moodEmoji, p.moodText);
       updateProfileAvatarPreviewUI(p.avatar, p.name);
       updateProfileDataStatsBadge();
+      renderProfileExamSection();
     }
 
     function updateProfileLevelButtonsUI(level) {
