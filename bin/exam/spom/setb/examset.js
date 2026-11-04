@@ -1,5 +1,5 @@
 // ==============================================================
-// CALCIUM NOTES - SPOM CBT EXAM ENGINE (ICAI WEIGHTAGE ALIGNED)
+// CALCIUM NOTES - SPOM CBT EXAM ENGINE (BLUEPRINT ALIGNED)
 // Supports SET A (Corporate & Economic Laws) and SET B (SCPM)
 // ==============================================================
 
@@ -312,7 +312,7 @@ function initExam() {
         return [...easyQs, ...mediumQs, ...hardQs];
     }
 
-    // 3. Extract questions per blueprint section adhering strictly to ICAI weightage
+    // 3. Extract questions per blueprint section adhering strictly to blueprint weightage
     let pickedQuestions = [];
 
     blueprint.forEach(bucket => {
@@ -620,7 +620,19 @@ function showResult(score, percentage, grade, correctCount, wrongCount, unanswer
     if (!resultDiv) return;
     resultDiv.style.display = "block";
 
-        // Compute sectional breakdown stats
+    // Detect Set A vs Set B
+    const isSetB = document.title.toLowerCase().includes("set b") ||
+        window.location.pathname.toLowerCase().includes("setb") ||
+        (typeof AICaseStudies !== "undefined" && AICaseStudies.length > 0 && AICaseStudies[0].case_id && AICaseStudies[0].case_id.startsWith("SCM"));
+
+    const setLabel = isSetB ? "SET B" : "SET A";
+    const subjectTitle = isSetB ? "Strategic Cost & Performance Management (SCPM)" : "Corporate and Economic Laws";
+    const totalMarks = selectedQuestions.length * MARK_PER_QUESTION;
+    const isPassed = score >= PASS_MARK;
+    const attemptedCount = correctCount + wrongCount;
+    const accuracyPct = attemptedCount > 0 ? Math.round((correctCount / attemptedCount) * 100) : 0;
+
+    // 1. Compute sectional breakdown stats
     const sectionStats = {};
     selectedQuestions.forEach((q, idx) => {
         const sec = q.sectionName || "General Section";
@@ -634,127 +646,321 @@ function showResult(score, percentage, grade, correctCount, wrongCount, unanswer
         }
     });
 
-    let sectionBreakdownHtml = `
-        <div style="margin: 24px auto; max-width: 720px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 22px; text-align: left; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 1px solid #f1f5f9; padding-bottom: 12px;">
-                <h4 style="color: #0f172a; margin: 0; font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
-                    📊 Blueprint Performance Breakdown
-                </h4>
-                <span style="font-size: 12px; font-weight: 600; color: #64748b; background: #f8fafc; padding: 3px 10px; border-radius: 6px; border: 1px solid #e2e8f0;">Section Analytics</span>
-            </div>
-            <div style="display: grid; gap: 12px;">
-    `;
-
+    let blueprintSectionsHtml = '';
     Object.entries(sectionStats).forEach(([secName, stat]) => {
         const maxMarks = stat.total * MARK_PER_QUESTION;
         const pct = Math.round((stat.correct / stat.total) * 100);
-        const isPassedSec = pct >= 50;
-        const barColor = isPassedSec ? "#10b981" : "#ef4444";
-        const badgeBg = isPassedSec ? "#ecfdf5" : "#fef2f2";
-        const badgeColor = isPassedSec ? "#047857" : "#b91c1c";
-        const badgeBorder = isPassedSec ? "#a7f3d0" : "#fecaca";
+        let proficiency = 'Needs Review ⚠️';
+        let barColor = '#ef4444';
+        let badgeBg = '#fef2f2';
+        let badgeColor = '#b91c1c';
+        let badgeBorder = '#fecaca';
 
-        sectionBreakdownHtml += `
-            <div style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 12px 16px; border-radius: 10px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 13px; font-weight: 600; color: #1e293b; margin-bottom: 8px;">
-                    <span style="display: flex; align-items: center; gap: 6px;">
-                        <span style="color: ${isPassedSec ? '#10b981' : '#f59e0b'}; font-size: 14px;">${isPassedSec ? '✅' : '⚠️'}</span>
-                        ${secName}
+        if (pct >= 65) {
+            proficiency = 'Mastered ✅';
+            barColor = '#10b981';
+            badgeBg = '#ecfdf5';
+            badgeColor = '#047857';
+            badgeBorder = '#a7f3d0';
+        } else if (pct >= 50) {
+            proficiency = 'Passing ⚡';
+            barColor = '#3b82f6';
+            badgeBg = '#eff6ff';
+            badgeColor = '#1d4ed8';
+            badgeBorder = '#bfdbfe';
+        }
+
+        blueprintSectionsHtml += `
+            <div class="blueprint-sec-row">
+                <div class="blueprint-sec-top">
+                    <span class="sec-title-with-icon">
+                        <span>${secName}</span>
                     </span>
-                    <span style="background: ${badgeBg}; color: ${badgeColor}; border: 1px solid ${badgeBorder}; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 700;">
-                        ${stat.marks} / ${maxMarks} Marks (${pct}%)
+                    <span class="sec-marks-badge" style="background: ${badgeBg}; color: ${badgeColor}; border: 1px solid ${badgeBorder};">
+                        ${stat.marks} / ${maxMarks} Marks (${pct}%) • ${proficiency}
                     </span>
                 </div>
-                <div style="background: #e2e8f0; height: 7px; border-radius: 4px; overflow: hidden;">
-                    <div style="background: ${barColor}; width: ${pct}%; height: 100%; border-radius: 4px; transition: width 0.5s ease;"></div>
+                <div class="blueprint-bar-track">
+                    <div class="blueprint-bar-fill" style="background: ${barColor}; width: ${pct}%;"></div>
                 </div>
-                <div style="display: flex; justify-content: space-between; font-size: 11px; color: #64748b; margin-top: 5px;">
-                    <span>${stat.correct} of ${stat.total} MCQs Correct</span>
-                    <span>${stat.total - stat.correct} Missed</span>
+                <div class="blueprint-sec-bottom">
+                    <span>${stat.correct} of ${stat.total} MCQs Answered Correctly</span>
+                    <span>${stat.total - stat.correct} Missed / Unanswered</span>
                 </div>
             </div>
         `;
     });
 
-    sectionBreakdownHtml += `
-            </div>
-        </div>
-    `;
-
-    let html = `
-        <div class="social-updates-box">
-            <p style="font-size: 15px; font-weight: 500; color: #374151; line-height: 1.6; margin-bottom: 10px;">
-                If you notice any errors, bugs, incorrect answers, outdated information, or anything that needs improvement, please let us know through our social media channels.
-            </p>
-            <p style="font-size: 14px; font-weight: 500; color: #4b5563; line-height: 1.6; margin-bottom: 10px;">
-                Your feedback helps us improve the accuracy, quality, and learning experience of Calcium Notes for all CA students.
-            </p>
-            <p style="font-size: 15px; font-weight: 600; color: #1f2937; margin-bottom: 6px;">
-                Together, let's make Calcium Notes better!
-            </p>
-            <p style="font-size: 15px; font-weight: 600; color: #2563eb; margin-bottom: 16px;">
-                Thank you for being a part of Calcium Notes. 🙌
-            </p>
-            <div class="social-btn-group">
-                <a href="https://www.instagram.com/calciumnotes" class="social-btn instagram-btn" target="_blank" rel="noopener">
-                    Instagram
-                </a>
-                <a href="https://x.com/Calciumnotes" class="social-btn twitter-btn" target="_blank" rel="noopener">
-                    Twitter
-                </a>
-                <a href="mailto:calciumnotes@gmail.com" class="social-btn email-btn" target="_blank" rel="noopener" style="background: #ea4335;">
-                    Email
-                </a>
-            </div>
-        </div>
-
-        <div class="result-disclaimer-box" style="background: #fef2f2; border: 1.5px solid #ef4444; border-radius: 8px; padding: 12px 18px; margin: 0 auto 24px auto; text-align: center; max-width: 720px;">
-            <p style="color: #dc2626; font-size: 14px; font-weight: 600; margin: 0; line-height: 1.5;">
-                ⚠️ <strong>Disclaimer:</strong> The model is good at making questions but is not good in validating the answers, so the result may not be accurate. This is only for practice.
-            </p>
-        </div>
-
-        <h2>Exam Result</h2>
-        <p><strong>Total Marks:</strong> ${score} / ${selectedQuestions.length * MARK_PER_QUESTION}</p>
-        <p><strong>Percentage:</strong> ${percentage}%</p>
-        <p><strong>Grade:</strong> ${grade}</p>
-        <p><strong>Status:</strong> ${score >= PASS_MARK ? "PASS ✅" : "FAIL ❌"}</p>
-        <hr>
-        <h3>Performance Analytics</h3>
-        <p>Correct: ${correctCount}</p>
-        <p>Wrong: ${wrongCount}</p>
-        <p>Unanswered: ${unanswered}</p>
-
-        ${sectionBreakdownHtml}
-
-        <div style="margin: 22px 0; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-            <a href="../espom.html#dashboard" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: #2563eb; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; box-shadow: 0 4px 14px rgba(37,99,235,0.4);">📊 View Results on SPOM Dashboard</a>
-            <button onclick="window.location.reload();" style="padding: 12px 24px; background: #374151; color: #ffffff; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 14px;">🔄 Retake Test</button>
-        </div>
-        <hr>
-        <h3>Detailed Solution Review</h3>
-    `;
-
+    // 2. Build Solution Review Cards
+    let solutionsHtml = '';
     selectedQuestions.forEach((q, index) => {
+        const userAns = userAnswers[index];
+        const isCorrect = userAns === q.correct;
+        const isUnanswered = userAns === null;
+
+        let statusType = isCorrect ? 'correct' : (isUnanswered ? 'unanswered' : 'wrong');
+        let cardClass = isCorrect ? 'card-correct' : (isUnanswered ? 'card-unanswered' : 'card-wrong');
+        let statusBadge = isCorrect
+            ? '<span class="sol-status-badge badge-correct">✓ +2 Marks • Correct</span>'
+            : (isUnanswered
+                ? '<span class="sol-status-badge badge-unanswered">⚪ 0 Marks • Not Attempted</span>'
+                : '<span class="sol-status-badge badge-wrong">✗ 0 Marks • Incorrect</span>');
+
         // 🔍 DEBUG: Change '' to (q.sectionName ? ` (${q.sectionName})` : '') to show section in review
         const sectionBadge = '';
 
-        html += `
-            <div class="reviewBox">
-                <p><strong>Q${index + 1}:</strong> ${q.question}${sectionBadge}</p>
-                <p>Your Answer: ${
-                    userAnswers[index] !== null
-                        ? q.options[userAnswers[index]]
-                        : "Not Answered"
-                }</p>
-                <p>Correct Answer: ${q.options[q.correct]}</p>
-                <p><strong>Reason:</strong> ${q.solution}</p>
-                <hr>
+        // Collapsible case scenario excerpt if case exists
+        let caseAccordionHtml = '';
+        if (q.caseContent && q.caseContent.trim().length > 0) {
+            caseAccordionHtml = `
+                <details class="sol-case-accordion">
+                    <summary>📄 View Case Scenario Excerpt</summary>
+                    <div class="sol-case-content">${q.caseContent}</div>
+                </details>
+            `;
+        }
+
+        // Render all options
+        let optionsListHtml = '';
+        q.options.forEach((optText, optIdx) => {
+            const isUserChoice = userAns === optIdx;
+            const isTargetCorrect = q.correct === optIdx;
+
+            let rowClass = '';
+            let tagHtml = '';
+
+            if (isUserChoice && isTargetCorrect) {
+                rowClass = 'opt-user-correct';
+                tagHtml = '<span class="sol-opt-tag tag-correct">✓ Your Choice (Correct)</span>';
+            } else if (isUserChoice && !isTargetCorrect) {
+                rowClass = 'opt-user-wrong';
+                tagHtml = '<span class="sol-opt-tag tag-user-wrong">✗ Your Choice</span>';
+            } else if (isTargetCorrect) {
+                rowClass = 'opt-target-correct';
+                tagHtml = '<span class="sol-opt-tag tag-correct">✓ Correct Answer</span>';
+            }
+
+            const optLetters = ['A', 'B', 'C', 'D', 'E'];
+            const letterPrefix = optLetters[optIdx] ? `<strong>(${optLetters[optIdx]})</strong> ` : '';
+
+            optionsListHtml += `
+                <div class="sol-opt-row ${rowClass}">
+                    <div style="display: flex; gap: 8px; align-items: baseline;">
+                        <span style="color: #64748b; font-size: 12px;">${letterPrefix}</span>
+                        <span>${optText}</span>
+                    </div>
+                    ${tagHtml}
+                </div>
+            `;
+        });
+
+        solutionsHtml += `
+            <div class="solution-card ${cardClass}" data-status="${statusType}">
+                <div class="sol-card-top">
+                    <div class="sol-q-num">
+                        <span>Question ${index + 1} of ${selectedQuestions.length}</span>
+                        ${sectionBadge ? `<span style="font-size:11px; color:#64748b; font-weight:600;">${sectionBadge}</span>` : ''}
+                    </div>
+                    ${statusBadge}
+                </div>
+
+                ${caseAccordionHtml}
+
+                <div class="sol-question-text">
+                    ${q.question}
+                </div>
+
+                <div class="sol-options-list">
+                    ${optionsListHtml}
+                </div>
+
+                <div class="sol-reason-box">
+                    <div class="sol-reason-header">
+                        <span>💡 Reason &amp; Solution:</span>
+                    </div>
+                    <div class="sol-reason-body">
+                        ${q.solution}
+                    </div>
+                </div>
             </div>
         `;
     });
 
+    // 3. Assemble Complete Result Container
+    let html = `
+        <div class="result-container">
+
+            <!-- Social Feedback Section (Top) -->
+            <div class="social-updates-box">
+                <p style="font-size: 15px; font-weight: 500; color: #374151; line-height: 1.6; margin-bottom: 10px;">
+                    If you notice any errors, bugs, incorrect answers, outdated information, or anything that needs improvement, please let us know through our social media channels.
+                </p>
+                <p style="font-size: 14px; font-weight: 500; color: #4b5563; line-height: 1.6; margin-bottom: 10px;">
+                    Your feedback helps us improve the accuracy, quality, and learning experience of Calcium Notes for all CA students.
+                </p>
+                <p style="font-size: 15px; font-weight: 600; color: #1f2937; margin-bottom: 6px;">
+                    Together, let's make Calcium Notes better!
+                </p>
+                <p style="font-size: 15px; font-weight: 600; color: #2563eb; margin-bottom: 16px;">
+                    Thank you for being a part of Calcium Notes. 🙌
+                </p>
+                <div class="social-btn-group">
+                    <a href="https://www.instagram.com/calciumnotes" class="social-btn instagram-btn" target="_blank" rel="noopener">
+                        Instagram
+                    </a>
+                    <a href="https://x.com/Calciumnotes" class="social-btn twitter-btn" target="_blank" rel="noopener">
+                        Twitter
+                    </a>
+                    <a href="mailto:calciumnotes@gmail.com" class="social-btn email-btn" target="_blank" rel="noopener" style="background: #ea4335;">
+                        Email
+                    </a>
+                </div>
+            </div>
+
+            <!-- Disclaimer (Top) -->
+            <div class="result-disclaimer-box" style="background: #fef2f2; border: 1.5px solid #ef4444; border-radius: 12px; padding: 14px 20px; text-align: center; margin-bottom: 6px;">
+                <p style="color: #dc2626; font-size: 13.5px; font-weight: 600; margin: 0; line-height: 1.5;">
+                    ⚠️ <strong>Disclaimer:</strong> The AI model is designed for high-yield practice questions. Answer keys should be cross-verified with study materials.
+                </p>
+            </div>
+
+
+            <!-- Hero Score Banner -->
+            <div class="result-hero-card ${isPassed ? 'passed' : 'failed'}">
+                <div class="result-badge-top">
+                    ${isPassed ? '🏆 Examination Passed' : '📚 Practice & Revision Required'}
+                </div>
+                <h1 class="result-exam-title">Calcium Notes SPOM ${setLabel} Result</h1>
+                <p class="result-exam-subtitle">${subjectTitle} • Blueprint Alignment</p>
+
+                <div class="result-score-block">
+                    <div class="score-main-circle">
+                        <div class="score-number">${score}</div>
+                        <div class="score-denominator">out of ${totalMarks} Marks</div>
+                    </div>
+                    <div class="score-meta-stats">
+                        <div class="meta-pill">
+                            <span>Score:</span>
+                            <span class="meta-pill-pct">${percentage}%</span>
+                            <span class="meta-pill-grade">Grade ${grade}</span>
+                        </div>
+                        <div class="meta-pill">
+                            <span>Result Status:</span>
+                            <span class="meta-pill-status ${isPassed ? 'pass' : 'fail'}">
+                                ${isPassed ? 'PASS ✅' : 'FAIL ❌ (Passing: 50 Marks)'}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KPI Metric Summary Grid -->
+            <div class="result-kpi-grid">
+                <div class="kpi-card kpi-correct">
+                    <div class="kpi-icon-wrap">✅</div>
+                    <div class="kpi-details">
+                        <div class="kpi-val">${correctCount}</div>
+                        <div class="kpi-label">Correct (+${correctCount * MARK_PER_QUESTION} Marks)</div>
+                    </div>
+                </div>
+                <div class="kpi-card kpi-wrong">
+                    <div class="kpi-icon-wrap">❌</div>
+                    <div class="kpi-details">
+                        <div class="kpi-val">${wrongCount}</div>
+                        <div class="kpi-label">Incorrect Answers</div>
+                    </div>
+                </div>
+                <div class="kpi-card kpi-unanswered">
+                    <div class="kpi-icon-wrap">⚪</div>
+                    <div class="kpi-details">
+                        <div class="kpi-val">${unanswered}</div>
+                        <div class="kpi-label">Unanswered / Skipped</div>
+                    </div>
+                </div>
+                <div class="kpi-card kpi-accuracy">
+                    <div class="kpi-icon-wrap">🎯</div>
+                    <div class="kpi-details">
+                        <div class="kpi-val">${accuracyPct}%</div>
+                        <div class="kpi-label">Attempt Accuracy</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blueprint Performance Analytics -->
+            <div class="blueprint-analytics-card">
+                <div class="blueprint-header-row">
+                    <div>
+                        <h3>📊 Blueprint Performance Analytics</h3>
+                        <p>Section-wise weightage performance and chapter mastery</p>
+                    </div>
+                    <span class="blueprint-tag">Blueprint</span>
+                </div>
+                <div class="blueprint-sections-list">
+                    ${blueprintSectionsHtml}
+                </div>
+            </div>
+
+            <!-- Action Toolbar & Interactive Solution Filter Tabs -->
+            <div class="result-toolbar">
+                <div class="main-actions-group">
+                    <a href="../espom.html#dashboard" class="btn-action btn-action-primary">
+                        📊 View Results on SPOM Dashboard
+                    </a>
+                    <button onclick="window.location.reload();" class="btn-action btn-action-secondary">
+                        🔄 Retake Examination
+                    </button>
+                    <button onclick="window.print();" class="btn-action btn-action-outline">
+                        🖨️ Print / Save Result
+                    </button>
+                </div>
+
+                <div class="filter-tabs-row">
+                    <span class="filter-heading">Filter Solutions:</span>
+                    <button class="filter-pill active" onclick="window.filterSolutions('all', this)">
+                        All Questions (${selectedQuestions.length})
+                    </button>
+                    <button class="filter-pill pill-correct" onclick="window.filterSolutions('correct', this)">
+                        ✅ Correct (${correctCount})
+                    </button>
+                    <button class="filter-pill pill-wrong" onclick="window.filterSolutions('wrong', this)">
+                        ❌ Incorrect (${wrongCount})
+                    </button>
+                    <button class="filter-pill pill-unanswered" onclick="window.filterSolutions('unanswered', this)">
+                        ⚪ Skipped (${unanswered})
+                    </button>
+                </div>
+            </div>
+
+            <!-- Solutions Review Section -->
+            <div class="solutions-header-bar">
+                <h3>Detailed Solution &amp; Concept Explanations</h3>
+            </div>
+
+            <div id="solutionsReviewContainer">
+                ${solutionsHtml}
+            </div>
+
+
+        </div>
+    `;
+
     resultDiv.innerHTML = html;
+
+    // Attach interactive filter handler globally
+    window.filterSolutions = function(type, btn) {
+        const tabs = document.querySelectorAll('.filter-pill');
+        tabs.forEach(t => t.classList.remove('active'));
+        if (btn) btn.classList.add('active');
+
+        const cards = document.querySelectorAll('.solution-card');
+        cards.forEach(card => {
+            if (type === 'all' || card.getAttribute('data-status') === type) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    };
 }
 
 // ==========================
