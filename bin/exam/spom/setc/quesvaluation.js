@@ -23318,8 +23318,5 @@ const caseStudies = [
 
 
 
-  
-
-
 
 ]

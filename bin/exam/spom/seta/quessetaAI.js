@@ -24,7 +24,7 @@ const AICaseStudies = [
           "Only the private limited company",
           "The Chartered Accountant who signed the Memorandum",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Where no provision is made in the Articles for appointment of first directors, the individual subscribers to the Memorandum are deemed to be the first directors. A body corporate cannot become a director.",
       },
@@ -33,7 +33,7 @@ const AICaseStudies = [
         question:
           "What is the minimum number of directors required for Sunrise Engineering Limited as a public company?",
         options: ["1", "2", "3", "5"],
-        answer: 3,
+        answer: 2,
         reason:
           "Under Section 149(1), a public company must have a minimum of 3 directors.",
       },
@@ -42,7 +42,7 @@ const AICaseStudies = [
         question:
           "What is the general maximum number of directors that Sunrise Engineering Limited may have without passing a special resolution?",
         options: ["10", "12", "15", "20"],
-        answer: 3,
+        answer: 2,
         reason:
           "The maximum number of directors is 15. A company may appoint more than 15 directors only after passing a special resolution.",
       },
@@ -56,7 +56,7 @@ const AICaseStudies = [
           "Passing of a special resolution",
           "Approval of the Central Government in every case",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "A company can appoint more than 15 directors after passing a special resolution.",
       },
@@ -70,7 +70,7 @@ const AICaseStudies = [
           "A person cannot be appointed as director unless the required DIN has been allotted",
           "Written consent is required only from an independent director",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 152(3) requires the person to have a DIN before appointment. Further, under Section 152(5), a person appointed as director cannot act unless written consent to hold office has been furnished.",
       },
@@ -141,7 +141,7 @@ const AICaseStudies = [
           "Those who have been longest in office since their last appointment",
           "The independent directors",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Among directors liable to retire by rotation, those who have been longest in office since their last appointment retire first. Independent directors are not liable to retire by rotation.",
       },
@@ -171,7 +171,7 @@ const AICaseStudies = [
           "The Registrar",
           "The Central Government",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Under Section 161(1), where the Articles confer the power, the Board may appoint an additional director.",
       },
@@ -185,7 +185,7 @@ const AICaseStudies = [
           "Until the next AGM or the last date on which the AGM should have been held, whichever is earlier",
           "Until the next Board meeting",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "An additional director holds office up to the date of the next AGM or the last date on which the AGM should have been held, whichever is earlier.",
       },
@@ -199,7 +199,7 @@ const AICaseStudies = [
           "No, because the power of appointment rests with the Board, subject to the required authorisation",
           "No, because an alternate director can only be appointed for six months' absence",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The Board has the authority to appoint an alternate director, provided the Articles or a general meeting resolution authorises it. The original director cannot appoint his own alternate.",
       },
@@ -213,7 +213,7 @@ const AICaseStudies = [
           "Yes, because the absence from India is for not less than three months",
           "Yes, but only if the absence is for one year",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "An alternate director may be appointed where the original director is absent from India for a period of not less than three months.",
       },
@@ -227,7 +227,7 @@ const AICaseStudies = [
           "The vacancy must remain unfilled until the next AGM",
           "The Registrar must appoint the replacement",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Under Section 161(4), a casual vacancy arising from the premature vacation of office by a director appointed in general meeting may be filled by the Board at a Board meeting, subject to approval by members at the immediate next general meeting.",
       },
@@ -253,7 +253,7 @@ const AICaseStudies = [
         question:
           "Based on the company's paid-up share capital and turnover, what is the minimum number of independent directors required for Orion Infrastructure Limited?",
         options: ["One", "Two", "Three", "Four"],
-        answer: 2,
+        answer: 1,
         reason:
           "An unlisted public company having paid-up share capital of ₹10 crore or more, or turnover of ₹100 crore or more, is required to have at least two independent directors.",
       },
@@ -262,7 +262,7 @@ const AICaseStudies = [
         question:
           "If Orion Infrastructure Limited were a listed public company with 13 directors, what would be the minimum number of independent directors required?",
         options: ["3", "4", "5", "6"],
-        answer: 3,
+        answer: 2,
         reason:
           "A listed public company must have at least one-third of its total number of directors as independent directors. One-third of 13 is 4.33, and any fraction is rounded off as one. Therefore, 5 independent directors are required.",
       },
@@ -276,7 +276,7 @@ const AICaseStudies = [
           "The indebtedness does not cross the ₹50 lakh threshold specified under the relevant rule",
           "The threshold applies only to indebtedness of the proposed independent director himself",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "For the relevant independence condition, a relative's indebtedness to the company, its holding, subsidiary or associate company, or their promoters/directors, exceeding ₹50 lakh during the specified period is restricted. ₹48 lakh does not cross that stated threshold.",
       },
@@ -290,7 +290,7 @@ const AICaseStudies = [
           "Employment in a subsidiary is irrelevant if the person has sufficient professional experience",
           "Only employment of a relative creates a disqualification",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 149(6) provides that neither the proposed independent director nor, subject to the stated exception, the relevant persons covered by the provision should have held employment/KMP positions in the company or its holding, subsidiary or associate company during the three financial years immediately preceding the financial year of proposed appointment.",
       },
@@ -304,7 +304,7 @@ const AICaseStudies = [
           "Three consecutive years",
           "Five consecutive years",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "A company that was required to appoint independent directors is not required to make such appointment if it ceases to fulfill any of the prescribed conditions for three consecutive years. It becomes required again if it starts meeting any such condition.",
       },
@@ -335,7 +335,7 @@ const AICaseStudies = [
           "Section 164(2)",
           "Section 171",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 164(2) provides disqualification where a company has not filed financial statements or annual returns for any continuous period of three financial years.",
       },
@@ -349,7 +349,7 @@ const AICaseStudies = [
           "The director is disqualified permanently",
           "Only the company becomes disqualified from appointing directors",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 164(2)(b) covers failure to repay deposits or interest, among other specified defaults, where the failure continues for one year or more. The director becomes ineligible for appointment or reappointment for five years from the date on which the company committed the default.",
       },
@@ -363,7 +363,7 @@ const AICaseStudies = [
           "He must vacate Delta immediately but can continue in all other companies",
           "The disqualification has no effect on his existing directorships",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Under the proviso to Section 167(1)(a), where a director incurs disqualification under Section 164(2), his office becomes vacant in all companies other than the company which is in default.",
       },
@@ -377,7 +377,7 @@ const AICaseStudies = [
           "No, because he is not eligible to be appointed as a director in another company during the prescribed period",
           "Yes, provided Zenith passes an ordinary resolution",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 164(2) makes the person ineligible for appointment as a director of another company for five years from the date of the relevant default. The fact that the proposed appointment is as an additional director does not override the disqualification.",
       },
@@ -391,7 +391,7 @@ const AICaseStudies = [
           "Only the 10 public companies are counted",
           "Only private companies are counted",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "For the 20-company limit, directorship in a dormant company is excluded. A directorship in a Section 8 company is also excluded where the applicable exemption conditions are satisfied. Thus, 10 public + 9 ordinary private = 19 counted companies.",
       },
@@ -25741,7 +25741,7 @@ const AICaseStudies = [
           "Any shareholder of the company",
           "The Central Government directly",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "A registered valuer is appointed by the Audit Committee or, in its absence, by the Board of Directors of the company.",
       },
@@ -25755,7 +25755,7 @@ const AICaseStudies = [
           "No, because the restriction covers the three years prior to appointment",
           "Yes, provided the interest is disclosed after completion of valuation",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "A registered valuer must not undertake valuation of an asset in which he has a direct or indirect interest at any time during three years prior to appointment or three years after the valuation.",
       },
@@ -25769,7 +25769,7 @@ const AICaseStudies = [
           "To follow only the instructions of the company's directors",
           "To prepare a valuation favourable to the appointing authority",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The valuer must make an impartial, true and fair valuation and exercise due diligence while performing valuation functions.",
       },
@@ -25783,7 +25783,7 @@ const AICaseStudies = [
           "Internationally accepted valuation standards or standards adopted by a registered valuers organisation",
           "Only standards issued by the Registrar of Companies",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Until valuation standards are notified or modified by the Central Government, valuations may be made according to internationally accepted valuation standards or valuation standards adopted by a registered valuers organisation.",
       },
@@ -25797,7 +25797,7 @@ const AICaseStudies = [
           "Liability for the resultant valuation remains with Mr. Mehta, and he must disclose the details of the inputs and other valuer",
           "Responsibility automatically shifts to the Audit Committee",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "A registered valuer may obtain inputs or a separate valuation from another registered valuer, but must fully disclose the details. Liability for the resultant valuation remains with the first-mentioned valuer.",
       },
@@ -25828,7 +25828,7 @@ const AICaseStudies = [
           "It has appointed an auditor",
           "It has maintained accounting records",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "An application under Section 248 cannot be made if, during the previous three months, the company has changed its name or shifted its registered office from one State to another.",
       },
@@ -25842,7 +25842,7 @@ const AICaseStudies = [
           "The application is restricted until the Tribunal matter is finally concluded",
           "Only the Registrar can decide whether the restriction applies",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "An application under Section 248 is restricted where an application to the Tribunal for sanctioning a compromise or arrangement has been made and the matter has not been finally concluded.",
       },
@@ -25851,7 +25851,7 @@ const AICaseStudies = [
         question:
           "For how long does the restriction relating to the specified activities apply before an application under Section 248?",
         options: ["30 days", "60 days", "Three months", "One year"],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 249 examines whether the specified circumstances existed at any time during the previous three months.",
       },
@@ -25865,7 +25865,7 @@ const AICaseStudies = [
           "Fine up to ₹1 lakh",
           "Imprisonment up to one year only",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Where an application is filed in violation of the restrictions under Section 249, the company shall be punishable with fine which may extend to ₹1 lakh.",
       },
@@ -25879,7 +25879,7 @@ const AICaseStudies = [
           "It must be converted into a dormant company application",
           "It must be referred to the Central Government",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "An application filed in violation of Section 249 shall be withdrawn by the company or rejected by the Registrar as soon as the conditions are brought to his notice.",
       },
@@ -25905,7 +25905,7 @@ const AICaseStudies = [
         question:
           "What is the maximum ratio of Net Owned Funds to deposits permitted for a Nidhi?",
         options: ["1:10", "1:15", "1:20", "1:25"],
-        answer: 3,
+        answer: 2,
         reason:
           "A Nidhi shall not accept deposits exceeding twenty times its Net Owned Funds. Thus, the ratio is not more than 1:20.",
       },
@@ -25919,7 +25919,7 @@ const AICaseStudies = [
           "No, Nidhis can accept deposits only from their members",
           "Yes, if the deposit is below ₹1 lakh",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "A Nidhi cannot accept deposits from or lend to any person other than its members.",
       },
@@ -25933,7 +25933,7 @@ const AICaseStudies = [
           "No, such activity is prohibited",
           "Yes, if the securities are listed",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "A Nidhi shall not acquire or purchase securities of any other company or control its Board composition or enter into arrangements for change of management.",
       },
@@ -25946,7 +25946,7 @@ const AICaseStudies = [
           "Yes, subject to the applicable conditions, including rental income not exceeding 20% of gross income",
           "Only to non-members",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "A Nidhi complying with the applicable provisions may provide locker facilities on rent to members, provided rental income does not exceed 20% of its gross income at any point during the financial year.",
       },
@@ -25960,7 +25960,7 @@ const AICaseStudies = [
           "A minor cannot be admitted as a member, although deposits may be accepted in the minor's name when made by a member who is the natural or legal guardian",
           "A minor can become a member if the deposit exceeds ₹1 lakh",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "A minor cannot be admitted as a member of a Nidhi. However, deposits may be accepted in the name of a minor if made by the natural or legal guardian who is a member of the Nidhi.",
       },
@@ -25986,7 +25986,7 @@ const AICaseStudies = [
         question:
           "What percentage of paid-up share capital must generally be held by the Central Government, State Government(s), or both for a company to fall within the definition of a Government company?",
         options: ["25%", "40%", "51%", "75%"],
-        answer: 3,
+        answer: 2,
         reason:
           "A Government company is one in which not less than 51% of the paid-up share capital is held by the Central Government, State Government(s), or partly by the Central and partly by State Governments.",
       },
@@ -26000,7 +26000,7 @@ const AICaseStudies = [
           "It is added only if the Central Government approves",
           "It is counted as 20%",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The chapter's example states that the holding of a government company in another company cannot be taken into account while counting the prescribed 51% direct government holding.",
       },
@@ -26014,7 +26014,7 @@ const AICaseStudies = [
           "The State Government alone",
           "The Tribunal",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Under Section 394, where the Central Government is a member of a Government company, the Central Government shall cause the annual report on its working and affairs to be prepared.",
       },
@@ -26023,7 +26023,7 @@ const AICaseStudies = [
         question:
           "The annual report under Section 394 is to be prepared within what period after the relevant annual general meeting?",
         options: ["30 days", "60 days", "Three months", "Six months"],
-        answer: 3,
+        answer: 2,
         reason:
           "The annual report is to be prepared within three months of the annual general meeting before which the CAG's comments and audit report are placed.",
       },
@@ -26037,7 +26037,7 @@ const AICaseStudies = [
           "Send the report only to the Registrar",
           "Approve the audit report before Parliament",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Where, in addition to the Central Government, a State Government is also a member, that State Government shall cause a copy of the annual report to be laid before the House or both Houses of the State Legislature along with the audit report and CAG comments or supplement.",
       },
@@ -26068,7 +26068,7 @@ const AICaseStudies = [
           "No, these transactions are specifically excluded",
           "Only payment of Registrar fees is excluded",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Payment of fees to the Registrar and payments for maintenance of office and records are excluded from the definition of significant accounting transaction.",
       },
@@ -26082,7 +26082,7 @@ const AICaseStudies = [
           "Yes, without informing the lender",
           "Only after converting the loan into equity",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "A company having an outstanding unsecured loan may apply for dormant status after obtaining concurrence of the lender and enclosing it with Form MSC-1.",
       },
@@ -26096,7 +26096,7 @@ const AICaseStudies = [
           "Only approval of the Registrar",
           "Approval of the Central Government",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The company may apply after passing a special resolution in general meeting or after issuing notice to all shareholders and obtaining consent of at least three-fourths shareholders in value.",
       },
@@ -26105,7 +26105,7 @@ const AICaseStudies = [
         question:
           "Which form is used for applying to the Registrar for obtaining dormant company status?",
         options: ["MSC-1", "MSC-2", "MSC-3", "MSC-4"],
-        answer: 1,
+        answer: 0,
         reason:
           "Form MSC-1 is used for making the application to the Registrar for obtaining dormant company status.",
       },
@@ -26114,7 +26114,7 @@ const AICaseStudies = [
         question:
           "Which form is used for the annual Return of Dormant Company?",
         options: ["MSC-1", "MSC-2", "MSC-3", "MSC-5"],
-        answer: 3,
+        answer: 2,
         reason:
           "A dormant company is required to file the Return of Dormant Company annually in Form MSC-3.",
       },
@@ -26151,7 +26151,7 @@ const AICaseStudies = [
           "Only a partner or director who is a registered valuer for the relevant asset class",
           "Only an employee authorised by Omega Industries",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Where a partnership entity or company is the registered valuer, only the partner or director who is a registered valuer for the relevant asset class may sign and act on its behalf.",
       },
@@ -26165,7 +26165,7 @@ const AICaseStudies = [
           "No, liability for the resultant valuation remains with Vertex as the first-mentioned valuer",
           "Yes, if Omega Industries consents",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The first-mentioned registered valuer remains liable for the resultant valuation even when inputs or a separate valuation are obtained from another registered valuer. The details must also be fully disclosed.",
       },
@@ -26179,7 +26179,7 @@ const AICaseStudies = [
           "Obtain approval from the client only",
           "Obtain approval from the Registrar of Companies only",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "One of the conditions of registration is that a registered valuer must take prior permission of the authority for shifting membership from one registered valuers organisation to another.",
       },
@@ -26193,7 +26193,7 @@ const AICaseStudies = [
           "At least three years from completion of the assignment",
           "Permanently in every case",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The conditions of registration require the registered valuer to maintain records of each assignment for at least three years from completion of that assignment.",
       },
@@ -26207,7 +26207,7 @@ const AICaseStudies = [
           "The report should be signed and acted upon only by a director registered for the relevant asset class",
           "The client can sign the report instead",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The registered valuer entity can act through only the partner or director who is registered for the relevant asset class. General experience does not substitute for the required registration.",
       },
@@ -26240,7 +26240,7 @@ const AICaseStudies = [
           "Maintaining accounting records",
           "Having no business for several years",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Changing the registered office from one State to another within the previous three months is one of the statutory restrictions on an application under Section 248.",
       },
@@ -26254,7 +26254,7 @@ const AICaseStudies = [
           "Joint and several liability for loss or damage and punishment for fraud under Section 447",
           "Automatic immunity after dissolution",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Persons in charge of management who fraudulently apply for removal to evade liabilities or deceive creditors may be jointly and severally liable for resulting loss or damage and may be punished for fraud under Section 447.",
       },
@@ -26268,7 +26268,7 @@ const AICaseStudies = [
           "Three years from the date of the Registrar's order",
           "Twenty years",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Any person aggrieved by the Registrar's order may file an appeal to the Tribunal within three years from the date of the Registrar's order.",
       },
@@ -26282,7 +26282,7 @@ const AICaseStudies = [
           "The company, member, creditor or workman, before expiry of twenty years from publication in the Official Gazette",
           "Any person whatsoever without restriction",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The company, member, creditor or workman may apply before expiry of twenty years from publication in the Official Gazette if the statutory conditions for restoration are satisfied.",
       },
@@ -26296,7 +26296,7 @@ const AICaseStudies = [
           "Such person can apply within three years without restriction",
           "Such person can apply only with Registrar approval",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The chapter's case law states that a person who is neither the company nor a member nor a creditor cannot claim to be an aggrieved person for restoration merely on that basis and lacks locus standi.",
       },
@@ -26324,7 +26324,7 @@ const AICaseStudies = [
         question:
           "Based on deposits of ₹60 crore, what is the maximum ordinary loan amount that may be granted to a member under the prescribed deposit-based limits?",
         options: ["₹7.50 lakh", "₹12 lakh", "₹15 lakh", "₹20 lakh"],
-        answer: 3,
+        answer: 2,
         reason:
           "Where total deposits from members exceed ₹50 crore, the prescribed maximum loan is ₹15 lakh.",
       },
@@ -26338,7 +26338,7 @@ const AICaseStudies = [
           "50% of the prescribed maximum",
           "75% of the prescribed maximum",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Where a Nidhi has not made profits continuously in the three preceding financial years, it shall not make fresh loans exceeding 50% of the applicable maximum loan amounts.",
       },
@@ -26347,7 +26347,7 @@ const AICaseStudies = [
         question:
           "Even if the property offered as security is worth ₹50 lakh, what is the maximum individual loan against immovable property based on the prescribed percentage of property value?",
         options: ["₹15 lakh", "₹20 lakh", "₹25 lakh", "₹30 lakh"],
-        answer: 3,
+        answer: 2,
         reason:
           "An individual loan against immovable property shall not exceed 50% of the value of the property offered as security. Fifty per cent of ₹50 lakh is ₹25 lakh. However, other applicable loan limits must also be considered.",
       },
@@ -26356,7 +26356,7 @@ const AICaseStudies = [
         question:
           "What is the maximum spread permitted for the rate of interest charged by a Nidhi on a loan over the highest rate of interest offered on deposits?",
         options: ["5%", "6%", "7.5%", "10%"],
-        answer: 3,
+        answer: 2,
         reason:
           "The rate of interest charged on a loan shall not exceed 7.5% above the highest rate of interest offered on deposits by the Nidhi and is calculated on the reducing balance method.",
       },
@@ -26370,7 +26370,7 @@ const AICaseStudies = [
           "No, reappointment is possible only after expiration of two years from ceasing to be a director",
           "No, he can never be reappointed",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "A Nidhi director may hold office for up to 10 consecutive years and is eligible for reappointment only after the expiration of two years from ceasing to be a director.",
       },
@@ -26398,7 +26398,7 @@ const AICaseStudies = [
         question:
           "A person knowingly omitting a material fact in a report required under the Companies Act may attract liability under which provision mentioned in the chapter?",
         options: ["Section 249", "Section 406", "Section 448", "Section 455"],
-        answer: 3,
+        answer: 2,
         reason:
           "Rule 21 provides that where a person makes a false statement in material particulars knowing it to be false or omits a material fact knowing it to be material, he shall be liable under Section 448.",
       },
@@ -26412,7 +26412,7 @@ const AICaseStudies = [
           "Knowingly omitting a material fact constitutes a serious contravention and may attract statutory liability",
           "Only the company can be liable; the valuer cannot be liable",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "A knowingly false statement or knowing omission of a material fact in a report attracts liability under Section 448 as stated in Rule 21.",
       },
@@ -26426,7 +26426,7 @@ const AICaseStudies = [
           "Payment of fees to the Registrar and maintenance of office and records",
           "Payment to a new supplier for business operations",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Payment of fees to the Registrar, payments to fulfil statutory requirements, allotment of shares to fulfil Companies Act requirements, and payments for maintenance of office and records are excluded from significant accounting transactions.",
       },
@@ -26440,7 +26440,7 @@ const AICaseStudies = [
           "No, a company is not eligible to apply if an inspection, inquiry or investigation has been ordered, taken up or carried out against it",
           "Yes, if the Registrar permits it informally",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "One of the eligibility conditions for applying for dormant status is that no inspection, inquiry or investigation has been ordered, taken up or carried out against the company.",
       },
@@ -26449,7 +26449,7 @@ const AICaseStudies = [
         question:
           "Which form is required for the subsidiary's application for dormant status, assuming all eligibility conditions are satisfied?",
         options: ["MSC-1", "MSC-2", "MSC-3", "MSC-5"],
-        answer: 1,
+        answer: 0,
         reason:
           "The application for obtaining dormant company status is made to the Registrar in Form MSC-1.",
       },
@@ -26482,7 +26482,7 @@ const AICaseStudies = [
           "Only a subsidiary with 100% Central Government holding qualifies",
           "A subsidiary can never qualify independently",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The definition of Government company expressly includes a company which is a subsidiary company of such a Government company; the chapter notes that wholly owned status is not specifically required.",
       },
@@ -26491,7 +26491,7 @@ const AICaseStudies = [
         question:
           "With Net Owned Funds of ₹40 lakh, what is the maximum amount of deposits that a Nidhi may ordinarily accept based on the 1:20 ratio?",
         options: ["₹4 crore", "₹6 crore", "₹8 crore", "₹10 crore"],
-        answer: 3,
+        answer: 2,
         reason:
           "A Nidhi shall not accept deposits exceeding twenty times its Net Owned Funds. ₹40 lakh × 20 = ₹8 crore.",
       },
@@ -26505,7 +26505,7 @@ const AICaseStudies = [
           "No, the 1:20 deposit-to-NOF ceiling must still be complied with",
           "Yes, if the Regional Director is informed",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The requirement to maintain unencumbered term deposits is separate from the ceiling that deposits cannot exceed twenty times Net Owned Funds. Compliance with one does not override the other.",
       },
@@ -26519,7 +26519,7 @@ const AICaseStudies = [
           "₹10 lakh or 10% of turnover, whichever is higher",
           "₹50 lakh in every case",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The higher punishment under Section 447 applies where fraud involves an amount of at least ₹10 lakh or 1% of the turnover of the company, whichever is lower.",
       },
@@ -26533,7 +26533,7 @@ const AICaseStudies = [
           "1% is ₹9 lakh; fraud exactly equals the threshold",
           "1% is ₹10 lakh; fraud is automatically outside Section 447",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "1% of ₹5 crore is ₹5 lakh. Since Section 447 uses ₹10 lakh or 1% of turnover, whichever is lower, the applicable threshold is ₹5 lakh. A ₹9 lakh fraud therefore exceeds the threshold, assuming the other statutory conditions are satisfied.",
       },
@@ -27393,7 +27393,7 @@ const AICaseStudies = [
           "It digitally signs the form on behalf of the company",
           "It automatically makes payment of the filing fee",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The pre-fill facility enables certain fields to be populated automatically from information available in the electronic registry. It does not itself authenticate, certify or submit the form.",
       },
@@ -27407,7 +27407,7 @@ const AICaseStudies = [
           "No, submission must be made through the prescribed functionality of the MCA21 portal",
           "No, because all e-forms must first be printed and physically submitted",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Sending an e-form by email does not constitute e-filing. The e-form must be submitted through the prescribed functionality available on the MCA21 portal.",
       },
@@ -27421,7 +27421,7 @@ const AICaseStudies = [
           "The document may become invalid because the contents should not be altered after digital signing",
           "The system automatically revalidates all signatures after every alteration",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Where multiple signatures are applied, the contents of the e-form must not be altered thereafter. Alteration can render the document invalid and lead to rejection during filing.",
       },
@@ -27435,7 +27435,7 @@ const AICaseStudies = [
           "It guarantees that the information contained in the form is legally correct",
           "It constitutes final approval by the Registrar",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Automated pre-scrutiny is a computerized check of the form for matters that can be electronically verified. It does not replace professional certification or constitute final approval by the Registrar.",
       },
@@ -27449,7 +27449,7 @@ const AICaseStudies = [
           "The filing is automatically treated as complete once the form reaches the portal",
           "The company must abandon the e-form and file only a physical form",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Where defects such as incorrect data or missing/invalid digital signatures are identified, the e-form may be rejected or returned with details of the defect. The defect can then be corrected and the form resubmitted.",
       },
@@ -27486,7 +27486,7 @@ const AICaseStudies = [
           "Turnover of ₹100 crore or above only where the company has foreign shareholders",
           "Paid-up capital of ₹10 crore or above and turnover of ₹200 crore or above",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "The prescribed classes include companies having paid-up capital of ₹5 crore or above and companies having turnover of ₹100 crore or above. These are independent specified criteria; listing is not required for these particular thresholds.",
       },
@@ -27500,7 +27500,7 @@ const AICaseStudies = [
           "A digital signature used to authenticate XBRL documents",
           "A software program used only to calculate filing fees",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Under the XBRL Rules, taxonomy means an electronic dictionary for reporting business data. It defines relevant elements and their relationships for reporting.",
       },
@@ -27514,7 +27514,7 @@ const AICaseStudies = [
           "Both terms refer to exactly the same electronic document",
           "Taxonomy is used for payment while the Instance Document is used for authentication",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "The taxonomy defines the reporting concepts and relationships. The company maps its financial information to the relevant taxonomy elements and generates an XBRL Instance Document containing the reported information.",
       },
@@ -27528,7 +27528,7 @@ const AICaseStudies = [
           "It is required to continue filing its financial statements and other documents in XBRL format",
           "It can stop XBRL filing only after approval from its statutory auditor",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "A company which has once filed its financial statements in XBRL format is required to continue filing in XBRL format even if it subsequently does not fall within the specified classes.",
       },
@@ -27542,7 +27542,7 @@ const AICaseStudies = [
           "Non-banking financial companies",
           "Every company having turnover below ₹100 crore",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The second proviso to Rule 3(1) exempts specified categories including non-banking financial companies, housing finance companies and companies engaged in banking and insurance business.",
       },
@@ -27579,7 +27579,7 @@ const AICaseStudies = [
           "6 times the normal filing fee",
           "10 times the normal filing fee",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "A delay of more than 30 days and up to 60 days attracts additional fees at 4 times the normal filing fee under the general table.",
       },
@@ -27588,7 +27588,7 @@ const AICaseStudies = [
         question:
           "Vertex's ordinary filing carrying a normal fee of ₹5,000 was delayed by 120 days. What additional fee is payable under the general table?",
         options: ["₹20,000", "₹30,000", "₹50,000", "₹60,000"],
-        answer: 3,
+        answer: 2,
         reason:
           "A delay of more than 90 days and up to 180 days attracts additional fees at 10 times the normal filing fee. ₹5,000 × 10 = ₹50,000.",
       },
@@ -27602,7 +27602,7 @@ const AICaseStudies = [
           "₹100 per day",
           "Ten times the normal filing fee",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "For forms under section 92 or section 137, the chapter specifically states an additional fee of ₹100 per day for delay beyond the prescribed period.",
       },
@@ -27616,7 +27616,7 @@ const AICaseStudies = [
           "The company and officers in default may still be liable for penalty or punishment for the default",
           "Payment of additional fee converts the default into a valid filing from the original due date",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 403(2) provides that payment of fee/additional fee does not prevent liability for the penalty or punishment provided under the Act for the failure or default.",
       },
@@ -27630,7 +27630,7 @@ const AICaseStudies = [
           "Higher additional fee applies only to annual returns under section 92",
           "Higher additional fee is applicable only where payment is made through physical challan",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The rules provide for higher additional fees in certain specified circumstances, including repeated belated filing of INC-22 or PAS-3 within the prescribed period.",
       },
@@ -27662,7 +27662,7 @@ const AICaseStudies = [
         question:
           "Which e-form is generally associated with notice of alteration of share capital to the Registrar?",
         options: ["CHG-1", "SH-7", "DIR-12", "PAS-3"],
-        answer: 2,
+        answer: 1,
         reason:
           "Form SH-7 is used for notice to the Registrar regarding alteration of share capital.",
       },
@@ -27671,7 +27671,7 @@ const AICaseStudies = [
         question:
           "Nova proposes to register creation of a charge other than a charge relating to debentures. Which form is appropriate?",
         options: ["CHG-1", "CHG-4", "CHG-6", "CHG-9"],
-        answer: 1,
+        answer: 0,
         reason:
           "Form CHG-1 is used for registration of creation or modification of charge other than charges related to debentures, subject to the prescribed particulars.",
       },
@@ -27680,7 +27680,7 @@ const AICaseStudies = [
         question:
           "Which form is used for filing particulars of appointment of directors and KMP and changes among them?",
         options: ["DIR-3", "DIR-5", "DIR-12", "DIR-6"],
-        answer: 3,
+        answer: 2,
         reason:
           "Form DIR-12 is used for particulars of appointment of directors and key managerial personnel and changes among them, including specified changes such as resignation.",
       },
@@ -27694,7 +27694,7 @@ const AICaseStudies = [
           "The authorised signatory and professional, where applicable, have responsibility for correctness of contents and relevant enclosures",
           "Once a form is pre-scrutinized, nobody can be held responsible for incorrect information",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Rule 8 places responsibility on the authorised signatory and, where applicable, the professional certifying the e-form for correctness of contents and relevant enclosures.",
       },
@@ -27707,7 +27707,7 @@ const AICaseStudies = [
           "INC-23 — Application for removal of company name",
           "PAS-3 — Application for obtaining dormant company status",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "STK-2 is the application by a company to the ROC for removing its name from the Register of Companies. MSC-1 relates to obtaining dormant company status, INC-23 relates to shifting registered office from one state to another or as specified, and PAS-3 relates to return of allotment.",
       },
@@ -27790,7 +27790,7 @@ const AICaseStudies = [
           "Subject to specified exceptions, event-based information or changes may not be accepted until overdue Balance Sheet, Profit and Loss Account and Annual Return filings are made",
           "Only physical filings can be accepted from a defaulting company",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The chapter states that, subject to specified exceptions, event-based information or changes will not be accepted from defaulting companies unless their updated Balance Sheet, Profit and Loss Account and Annual Return are filed.",
       },
@@ -27804,7 +27804,7 @@ const AICaseStudies = [
           "Compliance Management System",
           "e-Adjudication",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The Compliance Management System (CMS) is designed to assist MCA in identifying non-compliant companies/LLPs, issuing e-notices and undertaking rule-based compliance checks and enforcement drives.",
       },
@@ -27839,7 +27839,7 @@ const AICaseStudies = [
           "It eliminates the need for authentication of e-forms",
           "It is available only to listed companies",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "MCA21 provides an SRN (Service Request Number), which enables stakeholders to track their service requests.",
       },
@@ -27848,7 +27848,7 @@ const AICaseStudies = [
         question:
           "Which facility enables certain information already available in the MCA database to be automatically populated in an e-form?",
         options: ["Pre-scrutiny", "Pre-fill", "SRN", "Back Office"],
-        answer: 2,
+        answer: 1,
         reason:
           "The pre-fill facility automatically captures available information from the MCA electronic registry, reducing repetitive data entry.",
       },
@@ -27862,7 +27862,7 @@ const AICaseStudies = [
           "The alteration can render the digitally signed document invalid and may result in rejection during e-filing",
           "The alteration is irrelevant because digital signatures authenticate only the identity of the signatories",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Multiple digital signatures may be applied to an e-form, but the contents must not be altered after signing. If the contents are altered, the document becomes invalid and may be rejected during the e-filing process.",
       },
@@ -27876,7 +27876,7 @@ const AICaseStudies = [
           "Not constitute e-filing because submission must be made through the MCA21 portal using the prescribed functionality",
           "Constitute valid e-filing if the RoC officer opens the attachment",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Sending an e-form by e-mail does not constitute e-filing. The e-form must be submitted through the MCA21 portal using the prescribed functionality.",
       },
@@ -27890,7 +27890,7 @@ const AICaseStudies = [
           "Taxonomy and instance document are interchangeable terms used for the same electronic file",
           "Instance documents are prepared first and the taxonomy is subsequently created by the company",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Taxonomy defines the reporting concepts, elements and relationships. The company maps its financial information to the taxonomy and generates the XBRL instance document, which contains the relevant reported information along with details such as reporting period and unit of measurement.",
       },
@@ -27925,7 +27925,7 @@ const AICaseStudies = [
           "It automatically incorporates a company",
           "It replaces the requirement to file statutory forms",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Registration is a one-time process through which a user creates a personalised login ID for accessing MCA21 services.",
       },
@@ -27939,7 +27939,7 @@ const AICaseStudies = [
           "The new DSC must be registered again",
           "A new company registration is required",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The process of registration of DSC is repeated whenever the user procures a new DSC or renews the existing DSC.",
       },
@@ -27953,7 +27953,7 @@ const AICaseStudies = [
           "No, the user must ensure that the latest notified e-form is used",
           "Yes, if the professional subsequently certifies it",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Users must ensure that they use the latest notified e-forms made available through the MCA21 portal.",
       },
@@ -27967,7 +27967,7 @@ const AICaseStudies = [
           "Offline filling eliminates the need for digital signatures",
           "Offline filling itself constitutes e-filing",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "E-forms may be filled online or offline. Offline filling does not require the user to remain connected to the internet, but the completed form must subsequently be submitted through the prescribed MCA portal.",
       },
@@ -27980,7 +27980,7 @@ const AICaseStudies = [
           "Only when the necessary payment is remitted through the applicable payment method",
           "When the form is printed",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "E-filing is completed once the necessary payment is remitted either through electronic payment means or through the challan-based method.",
       },
@@ -28017,7 +28017,7 @@ const AICaseStudies = [
           "Four times of normal filing fee",
           "Six times of normal filing fee",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "For delay of more than 15 days and up to 30 days, the additional fee is generally two times the normal filing fee.",
       },
@@ -28031,7 +28031,7 @@ const AICaseStudies = [
           "Six times normal fee",
           "Ten times normal fee",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "For delay of more than 60 days and up to 90 days, the prescribed additional fee is six times the normal filing fee.",
       },
@@ -28045,7 +28045,7 @@ const AICaseStudies = [
           "₹100 per day",
           "No additional fee is payable",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "For documents under section 92 or 137, the additional fee for delay beyond the prescribed period is ₹100 per day.",
       },
@@ -28059,7 +28059,7 @@ const AICaseStudies = [
           "No fee because the company has already paid earlier",
           "Only inspection fee",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Higher additional fees may apply where the prescribed repeated-default conditions are satisfied for forms such as INC-22 or PAS-3.",
       },
@@ -28073,7 +28073,7 @@ const AICaseStudies = [
           "MGT-7A only",
           "AOC-4 XBRL",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Rule 12(2) provides that where no e-form is prescribed, the document or application is filed through Form GNL-1 or GNL-2 along with the applicable fee.",
       },
@@ -28110,7 +28110,7 @@ const AICaseStudies = [
           "₹5 crore or above",
           "₹10 crore or above",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Companies having paid-up capital of ₹5 crore or above are included in the specified class of companies required to file financial statements in XBRL, subject to applicable exemptions.",
       },
@@ -28133,7 +28133,7 @@ const AICaseStudies = [
           "It is automatically exempt because its turnover is below ₹100 crore",
           "Only listed companies can file XBRL",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Companies required to prepare their financial statements in accordance with the Companies (Indian Accounting Standards) Rules, 2015 are included in the specified class for XBRL filing.",
       },
@@ -28147,7 +28147,7 @@ const AICaseStudies = [
           "Housing Finance Companies",
           "Companies having paid-up capital above ₹5 crore",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Non-banking financial companies, Housing Finance Companies and companies engaged in banking and insurance sectors are exempted from filing financial statements under these XBRL Rules.",
       },
@@ -28161,7 +28161,7 @@ const AICaseStudies = [
           "It must obtain fresh approval from the RoC before every XBRL filing",
           "It must revert to physical filing",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "A company which has once filed its financial statements in XBRL format shall continue to file its financial statements and other documents in XBRL format even if it subsequently does not fall within the specified class.",
       },
@@ -28193,7 +28193,7 @@ const AICaseStudies = [
         question:
           "Which form is generally used for notice of situation or change of situation of registered office?",
         options: ["INC-22", "INC-27", "SH-7", "DIR-12"],
-        answer: 1,
+        answer: 0,
         reason:
           "Form INC-22 is used for notice of situation or change of situation of registered office to be filed with the Registrar of Companies.",
       },
@@ -28202,7 +28202,7 @@ const AICaseStudies = [
         question:
           "Which form is generally used for filing notice of alteration of share capital?",
         options: ["PAS-3", "SH-7", "MGT-14", "CHG-1"],
-        answer: 2,
+        answer: 1,
         reason:
           "Form SH-7 is used for filing notice to the Registrar of any alteration of share capital.",
       },
@@ -28215,7 +28215,7 @@ const AICaseStudies = [
           "Both forms are exclusively used for alteration of share capital",
           "DIR-6 is used for XBRL filing and DIR-12 for annual return",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "DIR-6 is used for intimation of change in particulars of a director, whereas DIR-12 is used for particulars of appointment of directors and KMP and changes among them, including resignation.",
       },
@@ -28224,7 +28224,7 @@ const AICaseStudies = [
         question:
           "Which form is generally used for registration of creation or modification of a charge other than charges relating to debentures?",
         options: ["CHG-1", "CHG-4", "CHG-6", "CHG-9"],
-        answer: 1,
+        answer: 0,
         reason:
           "Form CHG-1 is used for registration of creation or modification of a charge other than charges related to debentures. CHG-4 relates to satisfaction of charge.",
       },
@@ -28238,7 +28238,7 @@ const AICaseStudies = [
           "The authorised signatory and professional certifying the e-form are responsible for correctness of contents and relevant attachments, and scanned documents should represent original signed documents",
           "Once the MCA system accepts a form, false or misleading information can never attract further consequences",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The authorised signatory and professional certifying the e-form are responsible for the correctness of its contents and attachments. Scanned document images should be of original signed documents and should bear the actual signature of the authorised person. False or misleading information or omission of material facts may attract action under the Companies Act.",
       },
@@ -28274,7 +28274,7 @@ const AICaseStudies = [
           "The company has failed to pay income tax",
           "The company has changed its registered office",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11C permits investigation where SEBI has reasonable grounds to believe that securities transactions are being dealt with in a manner detrimental to investors or the securities market, or an intermediary/person associated with the securities market has violated the Act, rules, regulations or directions.",
       },
@@ -28289,7 +28289,7 @@ const AICaseStudies = [
           "Managers, managing directors, officers, employees and relevant intermediaries/persons associated with the securities market",
           "Only shareholders holding more than 10% shares",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 11C places the duty to preserve and produce relevant books, registers, documents and records on the specified managers, managing directors, officers, employees and persons associated with the securities market.",
       },
@@ -28304,7 +28304,7 @@ const AICaseStudies = [
           "One year",
           "Until the company requests them back",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Under Section 11C, documents produced may ordinarily be kept in the custody of the Investigating Authority for six months. They may thereafter be called for again if required.",
       },
@@ -28319,7 +28319,7 @@ const AICaseStudies = [
           "Only cancellation of PAN",
           "Only civil damages",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11C provides imprisonment up to one year, or fine up to ₹1 crore, or both, together with a further fine up to ₹5 lakh for every day after the first during which the failure or refusal continues.",
       },
@@ -28334,7 +28334,7 @@ const AICaseStudies = [
           "The Magistrate or Judge of the designated court",
           "The statutory auditor",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Under Section 11C, where there are reasonable grounds for believing that relevant records may be destroyed, mutilated, altered, falsified or secreted, the Investigating Authority may apply to the Magistrate or Judge of the designated court for an order authorising seizure.",
       },
@@ -28369,7 +28369,7 @@ const AICaseStudies = [
           "Holding shares for investment purposes",
           "Opening a demat account",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 12A prohibits the use of manipulative or deceptive devices, fraudulent schemes and practices in connection with securities covered by the provision.",
       },
@@ -28384,7 +28384,7 @@ const AICaseStudies = [
           "Compulsorily liquidate every company under investigation",
           "Cancel all shareholder rights",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11B permits SEBI to take measures including suspension of trading and restraining persons from accessing the securities market where necessary in the interests of investors or the securities market.",
       },
@@ -28394,7 +28394,7 @@ const AICaseStudies = [
         question:
           "SEBI may attach a bank account or other property under the specified power for a period not exceeding:",
         options: ["30 days", "60 days", "90 days", "180 days"],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 11B permits attachment of a bank account or other property for a period not exceeding 90 days, subject to the prescribed requirement of obtaining confirmation from the Special Court within that period.",
       },
@@ -28409,7 +28409,7 @@ const AICaseStudies = [
           "The Investor Protection and Education Fund established by SEBI",
           "The account of the person against whom proceedings were initiated",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The amount disgorged pursuant to the specified directions is credited to the Investor Protection and Education Fund established by SEBI and utilised in accordance with the applicable regulations.",
       },
@@ -28424,7 +28424,7 @@ const AICaseStudies = [
           "Holding securities for more than one year",
           "Receiving dividend from listed securities",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 12A prohibits dealing in securities while in possession of material non-public information and communicating such information in contravention of the Act or regulations.",
       },
@@ -28454,7 +28454,7 @@ const AICaseStudies = [
         question:
           "Failure by a registered intermediary to enter into an agreement with its client, where such agreement is required under the Act or regulations, attracts penalty under:",
         options: ["Section 15A", "Section 15B", "Section 15G", "Section 15HB"],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15B specifically deals with failure by a registered intermediary to enter into an agreement with its client where required.",
       },
@@ -28464,7 +28464,7 @@ const AICaseStudies = [
         question:
           "A listed company or registered intermediary failing to redress investor grievances after being called upon by SEBI is covered under:",
         options: ["Section 15A", "Section 15C", "Section 15E", "Section 15H"],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15C provides penalty for failure by a listed company or registered intermediary to redress investor grievances within the time specified by SEBI after being called upon to do so.",
       },
@@ -28479,7 +28479,7 @@ const AICaseStudies = [
           "Section 15F",
           "Section 15HA",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15EB specifically deals with defaults by investment advisers and research analysts.",
       },
@@ -28489,7 +28489,7 @@ const AICaseStudies = [
         question:
           "An insider who communicates unpublished price-sensitive information to another person, except as permitted in the ordinary course of business or under law, may attract penalty under:",
         options: ["Section 15C", "Section 15F", "Section 15G", "Section 15HB"],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 15G covers insider trading-related defaults, including communication of unpublished price-sensitive information in circumstances prohibited by law.",
       },
@@ -28504,7 +28504,7 @@ const AICaseStudies = [
           "Disproportionate gain or unfair advantage, loss caused to investors and repetitive nature of the default",
           "Only the number of employees of the company",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 15J requires due regard to the amount of disproportionate gain or unfair advantage, the amount of loss caused to investors or a group of investors, and the repetitive nature of the default.",
       },
@@ -28537,7 +28537,7 @@ const AICaseStudies = [
           "Only one investor must participate",
           "No profits or income may be expected",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Pooling of contributions or payments of investors and utilisation thereof for the purposes of the scheme is one of the statutory conditions.",
       },
@@ -28567,7 +28567,7 @@ const AICaseStudies = [
           "An unregistered investment arrangement meeting all four statutory conditions",
           "A scheme involving pooled contributions managed for investors",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11AA(3) specifically excludes a contract of insurance to which the Insurance Act, 1938 applies.",
       },
@@ -28582,7 +28582,7 @@ const AICaseStudies = [
           "Any scheme involving pooled money",
           "Any scheme managed by a professional",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "A scheme under which contributions are in the nature of subscription to a mutual fund is specifically excluded under Section 11AA(3).",
       },
@@ -28597,7 +28597,7 @@ const AICaseStudies = [
           "Obtain approval only from the stock exchange",
           "File an income-tax return before commencing the scheme",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Under Section 12, persons intending to sponsor or carry on collective investment schemes must obtain a certificate of registration from SEBI in accordance with the applicable regulations.",
       },
@@ -28632,7 +28632,7 @@ const AICaseStudies = [
           "45 days from receipt of the order",
           "90 days from receipt of the order",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 15T provides that an appeal to SAT shall ordinarily be filed within 45 days from the date on which the copy of the order is received.",
       },
@@ -28647,7 +28647,7 @@ const AICaseStudies = [
           "Only if the appellant is a listed company",
           "Only if SEBI gives written consent",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The proviso to Section 15T permits SAT to entertain an appeal after 45 days if it is satisfied that there was sufficient cause for not filing the appeal within that period.",
       },
@@ -28662,7 +28662,7 @@ const AICaseStudies = [
           "SAT can decide matters only through criminal procedure",
           "SAT cannot regulate its own procedure",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Under Section 15U, SAT is not bound by the procedure laid down by the CPC, but is guided by principles of natural justice and may regulate its own procedure.",
       },
@@ -28677,7 +28677,7 @@ const AICaseStudies = [
           "A Chartered Accountant, Company Secretary, Cost Accountant, legal practitioner or certain officers, as permitted",
           "Only a SEBI officer",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 15V permits an appellant to appear in person or authorise one or more Chartered Accountants, Company Secretaries, Cost Accountants, legal practitioners or its officers to present the case.",
       },
@@ -28692,7 +28692,7 @@ const AICaseStudies = [
           "Within 60 days on any question of law arising out of the order",
           "Within 180 days only with SEBI's approval",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 15Z provides for an appeal to the Supreme Court within 60 days from communication of the SAT decision or order, on any question of law arising out of such order. The Supreme Court may allow a further period not exceeding 60 days where sufficient cause is shown.",
       },
@@ -28737,7 +28737,7 @@ const AICaseStudies = [
           "A department of the Reserve Bank of India",
           "A statutory committee without separate legal identity",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 3 establishes SEBI as a body corporate having perpetual succession and a common seal, with power to acquire, hold and dispose of property and to sue or be sued.",
       },
@@ -28752,7 +28752,7 @@ const AICaseStudies = [
           "A member chosen by the members present from amongst themselves",
           "The senior-most officer of SEBI",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Under Section 7, where the Chairman is unable to attend, any member chosen by the members present from amongst themselves shall preside over the meeting.",
       },
@@ -28767,7 +28767,7 @@ const AICaseStudies = [
           "Two additional votes",
           "Power to refer the matter only to the Central Government",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 7 provides that the Chairman or presiding member has a second or casting vote in the event of equality of votes.",
       },
@@ -28782,7 +28782,7 @@ const AICaseStudies = [
           "Disclose the nature of his interest and not take part in deliberation or decision on that matter",
           "Resign permanently from SEBI",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 7A requires disclosure of the nature of the interest, recording of the disclosure in the proceedings and prohibits the member from participating in deliberation or decision concerning that matter.",
       },
@@ -28797,7 +28797,7 @@ const AICaseStudies = [
           "The Board must immediately cease functioning",
           "All previous orders automatically become void",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 8 provides that a vacancy in the Board does not invalidate any act or proceeding of the Board. Similar protection applies to specified defects and irregularities that do not affect the merits.",
       },
@@ -28841,7 +28841,7 @@ const AICaseStudies = [
           "Regulating income-tax assessments",
           "Appointing directors of every listed company",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11 specifically includes registration and regulation of stock brokers, merchant bankers, underwriters, portfolio managers, investment advisers and other intermediaries associated with the securities market.",
       },
@@ -28855,7 +28855,7 @@ const AICaseStudies = [
           "Imposing imprisonment directly in every case",
           "Dissolving companies",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11 provides SEBI with specified powers of a civil court, including summoning and enforcing attendance, discovery and production of books and documents, examination on oath and issuing commissions.",
       },
@@ -28870,7 +28870,7 @@ const AICaseStudies = [
           "Only failure to pay dividends",
           "Only labour-law violations",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The Act permits SEBI to undertake such inspection where it has reasonable grounds to believe that the company has been indulging in insider trading or fraudulent and unfair trade practices relating to the securities market.",
       },
@@ -28885,7 +28885,7 @@ const AICaseStudies = [
           "Approval of every listed company",
           "Approval of every investor",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11 permits information exchange with similar authorities, subject to applicable law. For furnishing information to an authority outside India, SEBI may enter into an arrangement, agreement or understanding with prior approval of the Central Government.",
       },
@@ -28942,7 +28942,7 @@ const AICaseStudies = [
           "Only appointment of directors",
           "Only employee salaries",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11A empowers SEBI to specify matters relating to issue of capital, transfer of securities and other matters incidental thereto, along with the manner of disclosure.",
       },
@@ -28957,7 +28957,7 @@ const AICaseStudies = [
           "Only internal management reports",
           "Only dividend warrants",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11A permits SEBI to prohibit issuance of prospectus, offer document or advertisement soliciting money from the public for an issue of securities.",
       },
@@ -28972,7 +28972,7 @@ const AICaseStudies = [
           "Appoint the company's auditors",
           "Fix the company's employee salaries",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11A permits SEBI to specify conditions subject to which a prospectus, offer document or advertisement may be issued.",
       },
@@ -28986,7 +28986,7 @@ const AICaseStudies = [
           "Only employment contracts",
           "Only bank lending rates",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11A expressly empowers SEBI to specify requirements for listing and transfer of securities and related matters.",
       },
@@ -29001,7 +29001,7 @@ const AICaseStudies = [
           "To control monetary policy",
           "To replace stock exchanges",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11A empowers SEBI to take measures for the protection of investors in relation to issue of securities and related disclosures.",
       },
@@ -29045,7 +29045,7 @@ const AICaseStudies = [
           "Appoint directors of private companies",
           "Set monetary policy",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11B enables SEBI to issue directions in the interests of investors, orderly development of the securities market, prevention of detrimental conduct and proper management of intermediaries/persons covered by the provision.",
       },
@@ -29060,7 +29060,7 @@ const AICaseStudies = [
           "Transfer the gain to the company only",
           "Pay the gain to another investor chosen by him",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11B clarifies that the power to issue directions includes the power to direct a person who made profit or averted loss through contravention to disgorge an amount equivalent to the wrongful gain or loss averted.",
       },
@@ -29075,7 +29075,7 @@ const AICaseStudies = [
           "Has changed its registered office",
           "Has declared a dividend",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11D allows SEBI, after inquiry, to pass an order requiring a person to cease and desist where the person has violated or is likely to violate the Act, rules or regulations.",
       },
@@ -29090,7 +29090,7 @@ const AICaseStudies = [
           "A decline in sales",
           "A change in auditors",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11D contains a special restriction for listed public companies and public companies intending to list, unless SEBI has reasonable grounds to believe that the company has indulged in insider trading or market manipulation.",
       },
@@ -29105,7 +29105,7 @@ const AICaseStudies = [
           "The personal account of the investor",
           "The company's share capital account",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The amount disgorged pursuant to the relevant directions is credited to the Investor Protection and Education Fund established by SEBI and utilised in accordance with applicable regulations.",
       },
@@ -29149,7 +29149,7 @@ const AICaseStudies = [
           "Obtain approval only from RBI",
           "Obtain approval only from shareholders",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 12 requires specified securities-market intermediaries, including merchant bankers, to obtain a certificate of registration from SEBI.",
       },
@@ -29164,7 +29164,7 @@ const AICaseStudies = [
           "Employees of listed companies generally",
           "All shareholders",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Stock brokers are expressly included among the intermediaries required to obtain a certificate of registration under Section 12.",
       },
@@ -29179,7 +29179,7 @@ const AICaseStudies = [
           "Every individual investor",
           "Every creditor of a company",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 12 also covers depositories, participants, custodians of securities, foreign institutional investors, credit rating agencies and other intermediaries specified by SEBI through notification.",
       },
@@ -29193,7 +29193,7 @@ const AICaseStudies = [
           "Only through the stock exchange",
           "Without any fee",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 12 provides that every application for registration shall be made in the prescribed manner and on payment of fees determined by regulations.",
       },
@@ -29208,7 +29208,7 @@ const AICaseStudies = [
           "Automatic immunity",
           "Permission from every investor",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 12 provides that no order of suspension or cancellation shall be made unless the person concerned has been given a reasonable opportunity of being heard.",
       },
@@ -29253,7 +29253,7 @@ const AICaseStudies = [
           "Only investment in listed securities",
           "Only receipt of fixed interest from a bank",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11AA(2) requires the specified conditions, including pooling of contributions, expectation of profits/income/produce/property, management on behalf of investors and absence of day-to-day control.",
       },
@@ -29268,7 +29268,7 @@ const AICaseStudies = [
           "Not by itself determine whether it is a CIS",
           "Make SEBI's jurisdiction impossible",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The statutory test depends on the nature and substance of the scheme and satisfaction of the prescribed conditions, not merely the name given to it.",
       },
@@ -29283,7 +29283,7 @@ const AICaseStudies = [
           "Every agricultural scheme",
           "Every real estate arrangement",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11AA(3) specifically excludes a contract of insurance to which the Insurance Act, 1938 applies.",
       },
@@ -29298,7 +29298,7 @@ const AICaseStudies = [
           "Investors received certificates",
           "The company used the word 'agriculture'",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Absence of day-to-day control by investors and management of the property/investment on behalf of investors are express statutory conditions.",
       },
@@ -29313,7 +29313,7 @@ const AICaseStudies = [
           "Automatically exempt from SEBI",
           "Treated as a bank deposit",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11AA provides that an unregistered or otherwise uncovered pooling arrangement involving a corpus of ₹100 crore or more shall be deemed to be a collective investment scheme.",
       },
@@ -29363,7 +29363,7 @@ const AICaseStudies = [
           "A company has changed its auditor",
           "A shareholder has sold shares",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11C permits investigation where SEBI has reasonable grounds to believe that securities transactions are being dealt with detrimentally to investors/securities market or an intermediary/person associated with the securities market has violated applicable provisions.",
       },
@@ -29378,7 +29378,7 @@ const AICaseStudies = [
           "Produce records only after criminal conviction",
           "Produce only physical documents",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11C requires specified persons to preserve and produce books, registers, documents and records in their custody or power. The obligation is not limited merely to physical records.",
       },
@@ -29393,7 +29393,7 @@ const AICaseStudies = [
           "Six months, subject to the statutory provision for calling them again",
           "An unlimited period in every case",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 11C provides that the Investigating Authority may keep such records in custody for six months, after which they should be returned, though they may be called for again if needed.",
       },
@@ -29408,7 +29408,7 @@ const AICaseStudies = [
           "Only after a court convicts the person",
           "Only with shareholder approval",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11C specifically empowers the person directed to make an investigation to examine relevant persons on oath and require them to appear personally.",
       },
@@ -29423,7 +29423,7 @@ const AICaseStudies = [
           "A Magistrate or Judge of the designated court, upon application",
           "The stock exchange's compliance officer",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Under Section 11C, where the prescribed grounds exist, the Investigating Authority may apply to the Magistrate or Judge of the designated court for an order authorising entry, search and seizure.",
       },
@@ -29461,7 +29461,7 @@ const AICaseStudies = [
         question:
           "Failure to furnish a required document, return or report, or furnishing false/incomplete information, may attract penalty under:",
         options: ["Section 15A", "Section 15Z", "Section 26A", "Section 32"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15A deals with failure to furnish documents, returns or reports, filing false/incorrect/incomplete information and failure to maintain books and records.",
       },
@@ -29471,7 +29471,7 @@ const AICaseStudies = [
         question:
           "Failure by a registered intermediary to enter into an agreement with its client, where such agreement is required, attracts penalty under:",
         options: ["Section 15B", "Section 15C", "Section 15G", "Section 15H"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15B specifically provides penalty for failure by a registered intermediary to enter into the required agreement with clients.",
       },
@@ -29481,7 +29481,7 @@ const AICaseStudies = [
         question:
           "Where a listed company or registered intermediary fails to redress investor grievances after being called upon by SEBI in writing, the relevant provision is:",
         options: ["Section 15A", "Section 15C", "Section 15E", "Section 15HB"],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15C deals specifically with failure to redress investor grievances within the time specified by SEBI after being called upon in writing.",
       },
@@ -29491,7 +29491,7 @@ const AICaseStudies = [
         question:
           "A stock broker failing to deliver securities or make payment due to an investor in the manner prescribed may attract penalty under:",
         options: ["Section 15F", "Section 15G", "Section 15H", "Section 15J"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15F provides penalties for specified defaults by stock brokers, including failure to deliver securities or make payment due to investors.",
       },
@@ -29506,7 +29506,7 @@ const AICaseStudies = [
           "₹1,000 only",
           "Three times the broker's annual turnover",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15F provides that for charging excess brokerage, the penalty may extend to five times the amount of brokerage charged in excess of the specified brokerage, subject to the statutory provision.",
       },
@@ -29554,7 +29554,7 @@ const AICaseStudies = [
           "Holding shares purchased years earlier",
           "Attending an ordinary board meeting",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15G covers communication of unpublished price-sensitive information except where permitted in the ordinary course of business or under law. Personal trading by the insider is not the only prohibited conduct.",
       },
@@ -29569,7 +29569,7 @@ const AICaseStudies = [
           "Correct if the recipient is a friend",
           "Correct if no profit is made",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15G includes communication of UPSI to any person, except as required in the ordinary course of business or under law.",
       },
@@ -29584,7 +29584,7 @@ const AICaseStudies = [
           "Only a tax penalty",
           "No consequence if the insider does not personally trade",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15G expressly covers counselling or procuring another person to deal in securities on the basis of unpublished price-sensitive information.",
       },
@@ -29599,7 +29599,7 @@ const AICaseStudies = [
           "₹25 crore or three times the profits made from insider trading, whichever is higher",
           "₹50,000 per transaction",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 15G provides a penalty of not less than ₹10 lakh, extendable to ₹25 crore or three times the amount of profits made from insider trading, whichever is higher.",
       },
@@ -29609,7 +29609,7 @@ const AICaseStudies = [
         question:
           "Which statutory provision generally prohibits dealing in securities while in possession of material or non-public information in contravention of the Act or regulations?",
         options: ["Section 12A", "Section 15C", "Section 26A", "Section 29"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 12A prohibits, among other things, dealing in securities while in possession of material or non-public information in contravention of the Act, rules or regulations.",
       },
@@ -29653,7 +29653,7 @@ const AICaseStudies = [
           "Income-tax assessment",
           "Corporate insolvency",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "The facts concern acquisition of shares, crossing takeover-related thresholds, public announcement, public offer and related disclosures.",
       },
@@ -29667,7 +29667,7 @@ const AICaseStudies = [
           "Selling shares through a stock exchange",
           "Buying government securities",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 12A prohibits acquiring control of a company or securities beyond the prescribed percentage of equity share capital in contravention of regulations made under the Act.",
       },
@@ -29681,7 +29681,7 @@ const AICaseStudies = [
           "Failure to appoint an internal auditor",
           "Failure to pay GST",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15H covers failure to make a required public announcement to acquire shares at the minimum price, among other takeover-related defaults.",
       },
@@ -29696,7 +29696,7 @@ const AICaseStudies = [
           "Only the Income-tax Act",
           "Only the contract between Vertex and its broker",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Takeover obligations are determined with reference to the applicable regulatory framework, including relevant aggregate acquisition and shareholding requirements, rather than simply isolating transactions.",
       },
@@ -29710,7 +29710,7 @@ const AICaseStudies = [
           "₹50,000 only",
           "The amount of share capital of the target company",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15H provides a minimum penalty of ₹10 lakh and a maximum linked to ₹25 crore or three times the amount of profits made out of the failure, whichever is higher.",
       },
@@ -29749,7 +29749,7 @@ const AICaseStudies = [
         question:
           "Failure by an asset management company of a mutual fund to comply with regulations providing restrictions on its activities is primarily covered by:",
         options: ["Section 15E", "Section 15G", "Section 15H", "Section 15Z"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15E specifically deals with failure by an asset management company of a mutual fund to comply with regulations providing restrictions on its activities.",
       },
@@ -29763,7 +29763,7 @@ const AICaseStudies = [
           "Only listed companies",
           "Only mutual funds",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15EA deals with failures to comply with regulations or directions relating to alternative investment funds, infrastructure investment trusts and real estate investment trusts.",
       },
@@ -29778,7 +29778,7 @@ const AICaseStudies = [
           "₹1 crore or three times the gains made out of the failure, whichever is higher, subject to the statutory formulation",
           "₹10,000",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 15EA provides a penalty which may extend to ₹1 lakh per day subject to a maximum of ₹1 crore or three times the amount of gains made out of such failure, whichever is higher.",
       },
@@ -29788,7 +29788,7 @@ const AICaseStudies = [
         question:
           "Failure by an investment adviser to comply with SEBI regulations or directions is covered by:",
         options: ["Section 15EB", "Section 15B", "Section 15F", "Section 15J"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15EB specifically covers defaults by investment advisers and research analysts.",
       },
@@ -29803,7 +29803,7 @@ const AICaseStudies = [
           "Incorrect, because the relevant penalty provisions may apply upon contravention of the specified regulatory requirements",
           "Correct, unless the company is listed",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The statutory penalty provisions are triggered by specified regulatory defaults; an investor complaint or actual investor loss is not necessarily a prerequisite.",
       },
@@ -29842,7 +29842,7 @@ const AICaseStudies = [
         question:
           "Knowingly altering, destroying, mutilating, concealing or falsifying records to impede an investigation may attract:",
         options: ["Section 15HAA", "Section 15C", "Section 15F", "Section 24A"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15HAA specifically covers specified acts involving information, records and documents, including electronic records, when done knowingly to impede, obstruct or influence investigation, inquiry, audit or inspection.",
       },
@@ -29856,7 +29856,7 @@ const AICaseStudies = [
           "Information, records and documents including electronic records, as specified",
           "Only share certificates",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 15HAA expressly includes electronic records within its scope.",
       },
@@ -29871,7 +29871,7 @@ const AICaseStudies = [
           "A matter exclusively under company law",
           "A takeover violation under Section 15H",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15HAA expressly covers unauthorised downloading, extraction, copying or reproduction of regulatory data maintained in the system database.",
       },
@@ -29886,7 +29886,7 @@ const AICaseStudies = [
           "Covered only if all investors lose money",
           "Covered only under Section 15G",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15HAA specifically covers knowingly introducing a computer virus or other computer contaminant into the system database and bringing out a trading halt.",
       },
@@ -29900,7 +29900,7 @@ const AICaseStudies = [
           "₹25 crore only",
           "₹5 lakh only",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15HAA provides a penalty which may extend to ₹10 crore or three times the amount of profits made out of such act, whichever is higher.",
       },
@@ -29942,7 +29942,7 @@ const AICaseStudies = [
         question:
           "Where a person fails to comply with a provision of the SEBI Act, rules, regulations or directions for which no separate penalty is provided, the relevant provision is:",
         options: ["Section 15HB", "Section 15G", "Section 15H", "Section 15T"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15HB provides the residual penalty where a person fails to comply with a provision for which no separate penalty has been provided.",
       },
@@ -29957,7 +29957,7 @@ const AICaseStudies = [
           "Only a High Court judge",
           "Only a stock broker",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15-I provides that the Board may appoint an officer not below the rank of Division Chief as an adjudicating officer.",
       },
@@ -29971,7 +29971,7 @@ const AICaseStudies = [
           "Impose imprisonment directly",
           "Dissolve the company",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15-I empowers the adjudicating officer to summon persons acquainted with the facts and circumstances and require production of relevant documents.",
       },
@@ -29986,7 +29986,7 @@ const AICaseStudies = [
           "Number of directors unrelated to the default",
           "Age of the company's website",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15J requires due regard to the disproportionate gain or unfair advantage, loss caused to an investor or group of investors, and repetitive nature of the default.",
       },
@@ -30001,7 +30001,7 @@ const AICaseStudies = [
           "Market capitalisation, dividend rate, auditor's tenure",
           "Share price, promoter age, office location",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15J expressly requires consideration of the amount of disproportionate gain or unfair advantage, loss caused to investors or a group of investors, and repetitive nature of the default.",
       },
@@ -30048,7 +30048,7 @@ const AICaseStudies = [
           "Filing directly before the Supreme Court",
           "Obtaining approval from all shareholders",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15JB permits a person against whom specified proceedings have been initiated or may be initiated to file a written application with the Board proposing settlement.",
       },
@@ -30063,7 +30063,7 @@ const AICaseStudies = [
           "Only the number of shareholders",
           "Only the market price",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15JB specifically provides that the Board may consider the nature, gravity and impact of defaults while agreeing to a settlement proposal.",
       },
@@ -30077,7 +30077,7 @@ const AICaseStudies = [
           "Appealable only to a civil court",
           "Appealable only to the stock exchange",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15JB expressly provides that no appeal shall lie under Section 15T against an order passed by the Board or adjudicating officer under that section.",
       },
@@ -30092,7 +30092,7 @@ const AICaseStudies = [
           "The stock exchange's reserve",
           "The company's general reserve",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15JB provides that settlement amounts, excluding disgorgement amount and legal costs, realised under the Act are credited to the Consolidated Fund of India.",
       },
@@ -30107,7 +30107,7 @@ const AICaseStudies = [
           "Correct only for listed companies",
           "Correct only when SEBI conducts an investigation",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15JB specifically distinguishes settlement amounts from disgorgement amounts and legal costs for purposes of crediting the amount to the Consolidated Fund of India.",
       },
@@ -30148,7 +30148,7 @@ const AICaseStudies = [
         question:
           "An appeal against an order of SEBI or an adjudicating officer under Section 15T is ordinarily required to be filed within:",
         options: ["15 days", "30 days", "45 days", "180 days"],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 15T provides that an appeal shall be filed within 45 days from the date on which the copy of the relevant order is received.",
       },
@@ -30162,7 +30162,7 @@ const AICaseStudies = [
           "The appellant requests an extension without reason",
           "The stock exchange approves the delay",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15T permits SAT to entertain an appeal after 45 days if it is satisfied that there was sufficient cause for not filing within the prescribed period.",
       },
@@ -30176,7 +30176,7 @@ const AICaseStudies = [
           "A criminal court only",
           "A stock exchange committee",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15U states that SAT is not bound by the procedure laid down by the CPC but shall be guided by principles of natural justice, subject to the Act and rules.",
       },
@@ -30191,7 +30191,7 @@ const AICaseStudies = [
           "Only a stock broker",
           "Only a SEBI officer",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15V permits an appellant to appear personally or authorise one or more Chartered Accountants, Company Secretaries, Cost Accountants, legal practitioners or officers to present the case.",
       },
@@ -30206,7 +30206,7 @@ const AICaseStudies = [
           "Only with permission of the stock exchange",
           "Only when the penalty exceeds ₹25 crore",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15Z provides for an appeal to the Supreme Court within the prescribed period on any question of law arising out of the decision or order of SAT.",
       },
@@ -30250,7 +30250,7 @@ const AICaseStudies = [
           "The senior-most officer of SEBI",
           "The RBI representative compulsorily",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Under Section 7, where the Chairman is unable to attend a meeting, any member chosen by the members present from amongst themselves shall preside over the meeting.",
       },
@@ -30265,7 +30265,7 @@ const AICaseStudies = [
           "Two ordinary votes",
           "A right to refer the matter only to the Central Government",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 7 provides that in case of equality of votes, the Chairman or the presiding member has a second or casting vote.",
       },
@@ -30280,7 +30280,7 @@ const AICaseStudies = [
           "He only needs to disclose the interest after the meeting",
           "He must automatically resign from SEBI",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 7A requires disclosure of the nature of the interest and prohibits the member from taking part in deliberation or decision concerning that matter.",
       },
@@ -30295,7 +30295,7 @@ const AICaseStudies = [
           "No, a vacancy does not invalidate acts or proceedings of the Board",
           "Only the Chairman can decide whether proceedings remain valid",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 8 provides that a vacancy in the Board does not invalidate any act or proceeding of the Board.",
       },
@@ -30310,7 +30310,7 @@ const AICaseStudies = [
           "For life unless removed",
           "Only for 1 year and never eligible for reappointment",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "The Chairman and whole-time members hold office for the period specified in the appointment order, not exceeding five years, and are eligible for reappointment, subject to the statutory age limit.",
       },
@@ -30356,7 +30356,7 @@ const AICaseStudies = [
           "Only tax evasion",
           "Only labour law violations",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11 empowers SEBI to undertake inspection of books and records of a listed public company where it has reasonable grounds to believe that the company has been indulging in insider trading or fraudulent and unfair trade practices.",
       },
@@ -30371,7 +30371,7 @@ const AICaseStudies = [
           "A stock exchange committee",
           "A private arbitrator",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11(3) gives SEBI powers similar to those of a civil court under the Code of Civil Procedure, 1908 in specified matters.",
       },
@@ -30401,7 +30401,7 @@ const AICaseStudies = [
           "Cancel all shareholder rights permanently",
           "Transfer ownership of the company to SEBI",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11B empowers SEBI to take measures such as suspension of trading of a security, restraint from accessing the securities market and other specified measures.",
       },
@@ -30411,7 +30411,7 @@ const AICaseStudies = [
         question:
           "Where SEBI attaches a bank account under the relevant power, the attachment by SEBI is initially for a period not exceeding:",
         options: ["30 days", "60 days", "90 days", "180 days"],
-        answer: 3,
+        answer: 2,
         reason:
           "The relevant provision permits SEBI to attach, for a period not exceeding 90 days, bank accounts or other property of specified persons involved in violations, subject to the statutory requirement of confirmation by the Special Court within the prescribed period.",
       },
@@ -30458,7 +30458,7 @@ const AICaseStudies = [
           "Only payment of dividends and appointment of directors",
           "Only investment in listed shares",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11AA(2) specifies the relevant conditions relating to pooling of contributions, expectation of profits/income/produce/property, management on behalf of investors and absence of day-to-day control.",
       },
@@ -30472,7 +30472,7 @@ const AICaseStudies = [
           "Whether investors are wealthy",
           "Whether the arrangement uses a private contract",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The statutory classification depends on whether the conditions specified under Section 11AA are satisfied, rather than merely the label used by the operator.",
       },
@@ -30487,7 +30487,7 @@ const AICaseStudies = [
           "Automatically treated as a mutual fund",
           "Outside the SEBI Act",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11AA provides that pooling of funds under an unregistered scheme or arrangement not covered by the specified exceptions involving a corpus of ₹100 crore or more shall be deemed to be a collective investment scheme.",
       },
@@ -30502,7 +30502,7 @@ const AICaseStudies = [
           "Every company receiving equity capital",
           "Every listed company",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "A contract of insurance to which the Insurance Act, 1938 applies is one of the statutory exceptions under Section 11AA(3).",
       },
@@ -30517,7 +30517,7 @@ const AICaseStudies = [
           "Every venture capital investment",
           "Every partnership firm",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "A scheme falling within the meaning of 'chit business' under the Chit Fund Act, 1982 is excluded from the definition of collective investment scheme.",
       },
@@ -30563,7 +30563,7 @@ const AICaseStudies = [
           "A shareholder disagrees with management",
           "A company's share price has increased",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11C provides the grounds for investigation where transactions are being dealt with in a manner detrimental to investors or the securities market, or where specified persons have violated applicable provisions.",
       },
@@ -30578,7 +30578,7 @@ const AICaseStudies = [
           "Two years in every case",
           "Permanently",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11C provides that the investigating authority may keep the books, registers and other documents and records in its custody for six months, after which they are to be returned, subject to the authority's power to call for them again when needed.",
       },
@@ -30593,7 +30593,7 @@ const AICaseStudies = [
           "Must destroy the originals",
           "Must transfer the documents to the stock exchange",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11C provides for furnishing certified copies of documents produced before the investigating authority where the person concerned requires them.",
       },
@@ -30608,7 +30608,7 @@ const AICaseStudies = [
           "Only after SAT approval",
           "Only if the stock exchange gives permission",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11C permits the investigating authority to examine on oath managers, managing directors, officers and other employees or persons associated with the securities market in relation to the affairs of the business.",
       },
@@ -30623,7 +30623,7 @@ const AICaseStudies = [
           "A shareholder resolution",
           "An order of the company's auditor",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 11C provides for an application to the Magistrate or Judge of the designated court for an order authorising entry, search and seizure in the specified circumstances.",
       },
@@ -30671,7 +30671,7 @@ const AICaseStudies = [
           "Only incorporate a company",
           "Only obtain permission from one investor",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 12 requires specified intermediaries such as stock brokers to obtain a certificate of registration from SEBI and comply with the conditions of registration.",
       },
@@ -30686,7 +30686,7 @@ const AICaseStudies = [
           "A takeover only",
           "A CIS activity",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 12A prohibits insider trading and dealing in securities while in possession of material or non-public information in contravention of the Act and regulations.",
       },
@@ -30701,7 +30701,7 @@ const AICaseStudies = [
           "The recipient promises not to tell anyone",
           "The communication occurs after market hours",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 12A prohibits dealing with or communicating material/non-public information in contravention of the Act or regulations, subject to the statutory exceptions.",
       },
@@ -30716,7 +30716,7 @@ const AICaseStudies = [
           "Correct if the trades are profitable",
           "Correct only for promoters",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 12A prohibits manipulative or deceptive devices and schemes intended to defraud or operate as fraud or deceit in connection with securities.",
       },
@@ -30731,7 +30731,7 @@ const AICaseStudies = [
           "Section 24A only",
           "Section 29",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 12A prohibits acquiring control of a company or securities beyond the prescribed percentage in contravention of the regulations made under the SEBI Act.",
       },
@@ -30773,7 +30773,7 @@ const AICaseStudies = [
         question:
           "Where a listed company, after being called upon by SEBI in writing, fails to redress investor grievances within the specified time, which provision is primarily attracted?",
         options: ["Section 15A", "Section 15C", "Section 15G", "Section 24A"],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15C provides a penalty where a listed company or registered intermediary, after being called upon by SEBI in writing, fails to redress investor grievances within the specified time.",
       },
@@ -30783,7 +30783,7 @@ const AICaseStudies = [
         question:
           "SEBI's power to direct a person who made a profit or averted a loss through a contravention to disgorge an amount equivalent to the wrongful gain or loss averted arises under:",
         options: ["Section 11B", "Section 15I", "Section 15T", "Section 29"],
-        answer: 1,
+        answer: 0,
         reason:
           "The power to issue directions under Section 11B includes the power to direct a person who made profit or averted loss by contravening the Act or regulations to disgorge an amount equivalent to the wrongful gain or loss averted.",
       },
@@ -30798,7 +30798,7 @@ const AICaseStudies = [
           "Obtain an order from a civil court in every case",
           "Obtain approval from the stock exchange",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 11D permits SEBI, after causing an inquiry to be made, to pass a cease and desist order where it finds that a person has violated or is likely to violate the Act, rules or regulations.",
       },
@@ -30808,7 +30808,7 @@ const AICaseStudies = [
         question:
           "An intermediary that fails to furnish a required document, return or report, or furnishes false, incorrect or incomplete information, may attract:",
         options: ["Section 15A", "Section 15C", "Section 15H", "Section 15Z"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15A covers failure to furnish required documents, returns or reports and furnishing false, incorrect or incomplete information, subject to the prescribed penalty.",
       },
@@ -30818,7 +30818,7 @@ const AICaseStudies = [
         question:
           "Where a person contravenes a provision of the SEBI Act or regulations for which no separate penalty is provided, the applicable provision is generally:",
         options: ["Section 15HB", "Section 15G", "Section 15C", "Section 11AA"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15HB provides a residual penalty for failure to comply with a provision of the Act, rules, regulations or directions of SEBI where no separate penalty has been provided.",
       },
@@ -30858,7 +30858,7 @@ const AICaseStudies = [
         question:
           "The finance head's dealing in securities while possessing unpublished price-sensitive information may attract:",
         options: ["Section 15G", "Section 15C", "Section 15P", "Section 15V"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15G provides a penalty for insider trading, including dealing in securities on the basis of unpublished price-sensitive information.",
       },
@@ -30873,7 +30873,7 @@ const AICaseStudies = [
           "Trading through a personal account is always exempt",
           "The information was received verbally",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The statutory prohibition covers dealing in securities on the basis of unpublished price-sensitive information; the mere fact that the information was received verbally or through an associate does not make the conduct permissible.",
       },
@@ -30883,7 +30883,7 @@ const AICaseStudies = [
         question:
           "Failure to comply with specified disclosure/public announcement requirements relating to acquisition of shares or takeover may attract:",
         options: ["Section 15H", "Section 15A", "Section 15E", "Section 15X"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15H provides penalties for specified failures relating to disclosure of shareholding, public announcement, public offer and payment of consideration under takeover requirements.",
       },
@@ -30898,7 +30898,7 @@ const AICaseStudies = [
           "Board appointment",
           "Registration of SAT members",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Transactions designed to create a false or misleading appearance in the securities market may constitute fraudulent and unfair trade practices, attracting Section 15HA.",
       },
@@ -30908,7 +30908,7 @@ const AICaseStudies = [
         question:
           "Unauthorised access, downloading or alteration of regulatory data maintained in the SEBI system may attract:",
         options: ["Section 15HAA", "Section 15B", "Section 15T", "Section 20A"],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15HAA specifically covers unauthorised access, downloading, extraction, copying, alteration, destruction and other specified acts relating to regulatory data and records.",
       },
@@ -30955,7 +30955,7 @@ const AICaseStudies = [
           "Only a High Court judge",
           "Only an external auditor",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15-I provides that SEBI may appoint an officer not below the rank of Division Chief as an adjudicating officer.",
       },
@@ -30969,7 +30969,7 @@ const AICaseStudies = [
           "Cancel Parliament's legislation",
           "Appoint directors of the company",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15-I empowers the adjudicating officer to summon and enforce attendance of persons acquainted with the facts and circumstances and require production of relevant documents.",
       },
@@ -30984,7 +30984,7 @@ const AICaseStudies = [
           "Repetitive nature of the default",
           "Educational qualification of the person committing the default",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 15J specifically requires consideration of disproportionate gain/unfair advantage, loss caused to investors and repetitive nature of the default.",
       },
@@ -30999,7 +30999,7 @@ const AICaseStudies = [
           "The stock exchange's general fund",
           "The defaulting company's reserve account",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15JA provides that sums realised by way of penalties under the SEBI Act shall be credited to the Consolidated Fund of India.",
       },
@@ -31014,7 +31014,7 @@ const AICaseStudies = [
           "Appealable only to the Central Government",
           "Automatically appealable to a civil court",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15JB specifically provides that no appeal shall lie under Section 15T against an order passed by the Board or adjudicating officer under the settlement provision.",
       },
@@ -31061,7 +31061,7 @@ const AICaseStudies = [
           "Three Technical Members",
           "One SEBI officer and one shareholder",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15L provides that every Bench constituted shall include at least one Judicial Member and one Technical Member.",
       },
@@ -31071,7 +31071,7 @@ const AICaseStudies = [
         question:
           "An appeal against an order of SEBI under Section 15T is generally required to be filed within:",
         options: ["15 days", "30 days", "45 days", "90 days"],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 15T provides a period of 45 days from the date on which the copy of the order is received. SAT may entertain a delayed appeal where sufficient cause is established.",
       },
@@ -31086,7 +31086,7 @@ const AICaseStudies = [
           "SEBI Chairman only",
           "Recovery Officer only",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Section 15M provides that a person who is or has been a Judge of a High Court for at least five years qualifies for appointment as a Judicial Member of SAT, subject to the statutory framework.",
       },
@@ -31101,7 +31101,7 @@ const AICaseStudies = [
           "Only being a shareholder of a listed company",
           "Being a company director for one year",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15M provides a qualification route for a Technical Member based on proven ability, integrity and standing with special knowledge and professional experience of not less than fifteen years in the financial sector, including securities market and specified areas.",
       },
@@ -31116,7 +31116,7 @@ const AICaseStudies = [
           "The next general election",
           "The Central Government dissolves SAT",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15Q provides that a Presiding Officer or Member ordinarily continues until expiry of three months from receipt of resignation notice, appointment of successor, or expiry of term, whichever is earliest, unless permitted to relinquish earlier.",
       },
@@ -31163,7 +31163,7 @@ const AICaseStudies = [
           "A criminal court",
           "A private arbitration tribunal",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15U provides that SAT shall not be bound by the procedure laid down by the CPC but shall be guided by principles of natural justice.",
       },
@@ -31178,7 +31178,7 @@ const AICaseStudies = [
           "Only a SEBI officer",
           "Only a judge",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15V permits an appellant to appear personally or authorise one or more Chartered Accountants, Company Secretaries, Cost Accountants, legal practitioners or specified officers to present the case.",
       },
@@ -31193,7 +31193,7 @@ const AICaseStudies = [
           "Only district courts are barred",
           "Only High Courts are barred",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15Y bars civil court jurisdiction in matters which an adjudicating officer or SAT is empowered to determine under the SEBI Act.",
       },
@@ -31208,7 +31208,7 @@ const AICaseStudies = [
           "Only with permission of the stock exchange",
           "Only where the penalty exceeds ₹25 crore",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Section 15Z provides for an appeal to the Supreme Court on any question of law arising out of the decision or order of SAT.",
       },
@@ -31223,7 +31223,7 @@ const AICaseStudies = [
           "60 days, with a further period not exceeding 60 days where sufficient cause is established",
           "One year in every case",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Section 15Z provides a period of 60 days from communication of the SAT decision or order, with the Supreme Court empowered to allow a further period not exceeding 60 days if sufficient cause is shown.",
       },
@@ -31271,7 +31271,7 @@ const AICaseStudies = [
           "Two-thirds of the Board",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "Where the Chairperson of the Board is a non-executive director, at least one-third of the Board shall comprise independent directors, subject to the specified conditions.",
@@ -31290,7 +31290,7 @@ const AICaseStudies = [
           "Permitted if approved by the Audit Committee",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "The Board shall meet at least four times in a financial year and the maximum time gap between any two consecutive meetings shall not exceed 120 days.",
@@ -31309,7 +31309,7 @@ const AICaseStudies = [
           "Approval of SEBI only",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "A listed entity shall not appoint or continue a non-executive director who has attained 75 years of age unless a special resolution is passed and the explanatory statement contains justification.",
@@ -31327,7 +31327,7 @@ const AICaseStudies = [
           "Required only once every three years",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "The Board is required to periodically review compliance reports of all laws applicable to the company and the steps taken to rectify instances of non-compliance.",
@@ -31346,7 +31346,7 @@ const AICaseStudies = [
           "They are responsible only when SEBI specifically asks for information",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "KMPs, directors, promoters and other persons dealing with the listed entity must disclose information relevant and necessary for the listed entity to ensure compliance with applicable laws.",
@@ -31390,7 +31390,7 @@ const AICaseStudies = [
 
         options: ["Five", "Seven", "Ten", "Twelve"],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "A person shall not be a director in more than seven listed entities, subject to the provisions and explanations under Regulation 17A.",
@@ -31409,7 +31409,7 @@ const AICaseStudies = [
           "Seven listed entities",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "A person serving as a whole-time director or managing director in any listed entity shall serve as an independent director in not more than three listed entities.",
@@ -31428,7 +31428,7 @@ const AICaseStudies = [
           "Only Risk Management Committee",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "For determination of the limit under Regulation 26, chairpersonship and membership of the Audit Committee and Stakeholders' Relationship Committee alone are considered.",
@@ -31446,7 +31446,7 @@ const AICaseStudies = [
           "15 committees",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "A director shall not be a member in more than ten committees or act as chairperson of more than five committees across all listed entities in which he or she is a director, subject to the specified method of counting.",
@@ -31465,7 +31465,7 @@ const AICaseStudies = [
           "Correct only for Audit Committee positions",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "Every director shall inform the listed entity about committee positions occupied in other listed entities and notify changes as and when they take place.",
@@ -31514,7 +31514,7 @@ const AICaseStudies = [
           "50% of consolidated turnover",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "A material subsidiary is a subsidiary whose turnover or net worth exceeds 20% of the consolidated turnover or net worth respectively of the listed entity and its subsidiaries in the immediately preceding accounting year.",
@@ -31532,7 +31532,7 @@ const AICaseStudies = [
           "Only the statutory auditor must be independent",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "At least one independent director on the Board of the listed entity shall be a director on the Board of an unlisted material subsidiary, whether incorporated in India or not.",
@@ -31550,7 +31550,7 @@ const AICaseStudies = [
           "Review only the tax returns of the subsidiary",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "The Audit Committee of the listed company shall review the financial statements of the unlisted subsidiary, particularly the investments made by the subsidiary.",
@@ -31568,7 +31568,7 @@ const AICaseStudies = [
           "Placed only before shareholders",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "The minutes of the Board meetings of the unlisted subsidiary shall be placed at the meeting of the Board of the listed entity.",
@@ -31587,7 +31587,7 @@ const AICaseStudies = [
           "A transaction requiring approval only from shareholders of the subsidiary",
         ],
 
-        answer: 1,
+        answer: 0,
 
         reason:
           "An individual transaction or arrangement exceeding or likely to exceed 10% of the total assets, revenues, expenses or liabilities, as applicable, of the unlisted subsidiary is treated as significant and should be brought to the notice of the listed entity's Board.",
@@ -31636,7 +31636,7 @@ const AICaseStudies = [
           "45 days from the end of the quarter",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "Under Regulation 31, the shareholding pattern is required to be filed on a quarterly basis within 21 days from the end of each quarter.",
@@ -31654,7 +31654,7 @@ const AICaseStudies = [
           "Only when SEBI asks",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "Under Regulation 13(3), the listed entity shall file a statement detailing the redressal of investor grievances with the recognised stock exchanges on a quarterly basis.",
@@ -31668,7 +31668,7 @@ const AICaseStudies = [
 
         options: ["3 days", "7 days", "10 days", "21 days"],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "Regulation 31 requires filing within 10 days of any capital restructuring resulting in a change exceeding 2% of the total paid-up share capital.",
@@ -31687,7 +31687,7 @@ const AICaseStudies = [
           "90 days from the end of the financial year",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "Annual audited standalone financial results, along with the audit report and applicable Statement on Impact of Audit Qualifications, are required within 60 days from the end of the financial year.",
@@ -31706,7 +31706,7 @@ const AICaseStudies = [
           "Only if requested by shareholders",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "Under Regulation 34, the listed entity shall submit to the stock exchange and publish on its website a copy of the annual report sent to shareholders along with the AGM notice, on or before commencement of dispatch.",
@@ -31755,7 +31755,7 @@ const AICaseStudies = [
           "7 working days in advance",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "Regulation 29 requires prior intimation of at least two working days, excluding the date of intimation and the date of the Board meeting, for specified proposals.",
@@ -31774,7 +31774,7 @@ const AICaseStudies = [
           "Ordinary payment of electricity bills",
         ],
 
-        answer: 1,
+        answer: 0,
 
         reason:
           "A proposal for buy-back of securities is specifically covered by the prior-intimation requirement under Regulation 29.",
@@ -31793,7 +31793,7 @@ const AICaseStudies = [
           "10 working days",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "Regulation 42 requires at least three working days' prior notice of the record date, excluding the date of intimation and the record date.",
@@ -31811,7 +31811,7 @@ const AICaseStudies = [
           "All of the above",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "Record dates may be fixed for dividend, rights or bonus shares, conversion of securities and corporate actions such as mergers, de-mergers and splits, among other specified purposes.",
@@ -31825,7 +31825,7 @@ const AICaseStudies = [
 
         options: ["24 hours", "2 working days", "7 working days", "15 days"],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "Under Regulation 46, the listed entity shall update any change in the content of its website within two working days from the date of such change.",
@@ -31876,7 +31876,7 @@ const AICaseStudies = [
           "A government company",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "Under the amended definition, a person or entity holding equity shares of 10% or more, directly or on a beneficial interest basis, during the immediately preceding financial year is deemed to be a related party, subject to the regulation.",
@@ -31895,7 +31895,7 @@ const AICaseStudies = [
           "A transaction outside the scope of LODR",
         ],
 
-        answer: 1,
+        answer: 0,
 
         reason:
           "A related party transaction includes a transaction with any other person or entity where the purpose and effect is to benefit a related party of the listed entity or its subsidiaries.",
@@ -31914,7 +31914,7 @@ const AICaseStudies = [
           "Ignored if each individual transaction is small",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "Materiality is determined by considering the transaction individually or together with previous transactions during the financial year.",
@@ -31933,7 +31933,7 @@ const AICaseStudies = [
           "Only the Compliance Officer",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "All related party transactions and subsequent material modifications require prior Audit Committee approval, and only those Audit Committee members who are independent directors shall approve related party transactions.",
@@ -31952,7 +31952,7 @@ const AICaseStudies = [
           "Can vote if the Audit Committee approves",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "Material related party transactions require prior shareholder approval through resolution, and no related party shall vote to approve such resolutions, whether or not the related party is a related party to the particular transaction.",
@@ -32000,7 +32000,7 @@ const AICaseStudies = [
           "Seven directors",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "The Audit Committee shall have a minimum of three directors as members.",
@@ -32019,7 +32019,7 @@ const AICaseStudies = [
           "Only the Chairperson must be present",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "The quorum for an Audit Committee meeting is two members or one-third of the members, whichever is greater, with at least two independent directors.",
@@ -32038,7 +32038,7 @@ const AICaseStudies = [
           "No independent director is required",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "The Chairperson of the listed entity, whether executive or non-executive, may be appointed as a member of the Nomination and Remuneration Committee but shall not chair the committee.",
@@ -32057,7 +32057,7 @@ const AICaseStudies = [
           "The statutory auditor",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "The Chairperson of the Stakeholders Relationship Committee shall be a non-executive director.",
@@ -32075,7 +32075,7 @@ const AICaseStudies = [
           "Once every three years",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "The Risk Management Committee shall meet at least twice in a financial year, with not more than 210 days between two consecutive meetings.",
@@ -32125,7 +32125,7 @@ const AICaseStudies = [
           "Only an advocate",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "Every listed entity and its material unlisted subsidiaries incorporated in India shall undertake Secretarial Audit by a Secretarial Auditor who shall be a Peer Reviewed Company Secretary.",
@@ -32144,7 +32144,7 @@ const AICaseStudies = [
           "One year only",
         ],
 
-        answer: 1,
+        answer: 0,
 
         reason:
           "On the recommendation of the Board, a listed entity shall appoint or reappoint an individual as Secretarial Auditor for not more than one term of five consecutive years, with shareholder approval.",
@@ -32162,7 +32162,7 @@ const AICaseStudies = [
           "Needs only internal audit",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "Every listed entity and its material unlisted subsidiaries incorporated in India are required to undertake Secretarial Audit in accordance with Regulation 24A.",
@@ -32180,7 +32180,7 @@ const AICaseStudies = [
           "Only the name of the statutory auditor",
         ],
 
-        answer: 1,
+        answer: 0,
 
         reason:
           "The Corporate Governance Report includes disclosures regarding composition and category of directors, attendance at Board meetings and the last AGM, among other specified matters.",
@@ -32199,7 +32199,7 @@ const AICaseStudies = [
           "Only related party transactions",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "The Corporate Governance Report includes the name of the non-executive director heading the committee, compliance officer details, complaints received, complaints not resolved to shareholders' satisfaction and pending complaints.",
@@ -32243,7 +32243,7 @@ const AICaseStudies = [
 
         options: ["FPO", "IPO", "Rights issue", "QIP"],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "An Initial Public Offer means an offer of specified securities by an unlisted issuer to the public for subscription, including an offer for sale by existing holders in the unlisted issuer.",
@@ -32261,7 +32261,7 @@ const AICaseStudies = [
           "Any issuer only to employees",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "A rights issue means an offer of specified securities by a listed issuer to its shareholders as on the record date fixed for that purpose.",
@@ -32275,7 +32275,7 @@ const AICaseStudies = [
 
         options: ["IPO", "Preferential issue", "Rights issue", "Bonus issue"],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "A preferential issue is an issue of specified securities by a listed issuer to any select person or group of persons on a private placement basis in accordance with Chapter V of the ICDR Regulations.",
@@ -32294,7 +32294,7 @@ const AICaseStudies = [
           "Rights issue",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "Qualified Institutions Placement or QIP means issue of eligible securities by a listed issuer to qualified institutional buyers on a private placement basis, subject to the applicable ICDR provisions.",
@@ -32313,7 +32313,7 @@ const AICaseStudies = [
           "Preferential option",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "Green Shoe Option means an option of allotting equity shares in excess of the equity shares offered in a public issue as a post-listing price stabilising mechanism.",
@@ -32363,7 +32363,7 @@ const AICaseStudies = [
           "Not relevant for an IPO",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "The issuer must have net tangible assets of at least ₹3 crore in each of the preceding three full years, of which not more than 50% should be held in monetary assets, subject to the specified exception where excess monetary assets are utilised or firmly committed for utilisation in the business or project.",
@@ -32381,7 +32381,7 @@ const AICaseStudies = [
           "Irrelevant for IPO eligibility",
         ],
 
-        answer: 3,
+        answer: 2,
 
         reason:
           "The issuer is generally required to have an average operating profit of at least ₹15 crore, calculated on a restated and consolidated basis, during the preceding three years, with operating profit in each of those years.",
@@ -32400,7 +32400,7 @@ const AICaseStudies = [
           "Requires approval from the stock exchange",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "The restrictions relating to persons debarred by SEBI do not apply where the period of debarment was already over as on the date of filing of the draft offer document.",
@@ -32419,7 +32419,7 @@ const AICaseStudies = [
           "Only affects post-listing compliance",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "An issuer is not eligible for an IPO where any promoter or director is a promoter or director of another company which is debarred from accessing the capital market by SEBI, subject to the specified exception relating to expired debarment.",
@@ -32438,7 +32438,7 @@ const AICaseStudies = [
           "Only affect the issue price",
         ],
 
-        answer: 2,
+        answer: 1,
 
         reason:
           "An issuer shall not be eligible to make an IPO if there are outstanding convertible securities or other rights which would entitle a person to receive equity shares, subject to specified exceptions such as qualifying employee stock options and certain securities converted before the relevant filing.",
@@ -32480,7 +32480,7 @@ const AICaseStudies = [
           "Only the Chief Financial Officer",
           "Only an advocate",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Regulation 6 requires a listed entity to appoint a qualified Company Secretary as the Compliance Officer, who must be in whole-time employment and satisfy the prescribed organisational-level requirements.",
       },
@@ -32495,7 +32495,7 @@ const AICaseStudies = [
           "The Chief Executive Officer, Manager or person heading day-to-day affairs",
           "The Chairperson of the Audit Committee",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Where there is no Managing Director or Whole-time Director, the Compliance Officer cannot be more than one level below the CEO, Manager or other person heading the day-to-day affairs of the listed entity.",
       },
@@ -32510,7 +32510,7 @@ const AICaseStudies = [
           "At the earliest and not later than three months from the vacancy",
           "Only at the next AGM",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Any vacancy in the office of the Compliance Officer shall be filled at the earliest and in any case not later than three months from the date of vacancy.",
       },
@@ -32525,7 +32525,7 @@ const AICaseStudies = [
           "Approving all loans granted by the company",
           "Conducting the AGM",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The Compliance Officer is responsible for ensuring conformity with regulatory provisions applicable to the listed entity, coordinating and reporting to the Board, ensuring correctness of information filed and monitoring the grievance redressal email address.",
       },
@@ -32540,7 +32540,7 @@ const AICaseStudies = [
           "The Nomination and Remuneration Committee",
           "The shareholders",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Monitoring the email address of the grievance redressal division is specifically one of the responsibilities of the Compliance Officer.",
       },
@@ -32581,7 +32581,7 @@ const AICaseStudies = [
           "Only approval of the statutory auditor",
           "No approval",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Selling, disposing or leasing of assets amounting to more than 20% of the assets of a material subsidiary on an aggregate basis during a financial year requires prior shareholder approval by special resolution, subject to specified exceptions.",
       },
@@ -32596,7 +32596,7 @@ const AICaseStudies = [
           "Applicable only if holding falls below 25%",
           "Applicable only to foreign subsidiaries",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Special resolution is required where disposal of shares results in reduction of the listed entity's shareholding, either alone or together with its subsidiaries, to less than or equal to 50%, or cessation of control.",
       },
@@ -32611,7 +32611,7 @@ const AICaseStudies = [
           "Any transaction with a promoter",
           "Any transaction below ₹1 crore",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "The special resolution requirement does not apply where the divestment is made under a scheme of arrangement duly approved by a Court/Tribunal or under a resolution plan approved under section 31 of the Insolvency Code, subject to the prescribed disclosure.",
       },
@@ -32626,7 +32626,7 @@ const AICaseStudies = [
           "Valid only with SEBI approval",
           "Valid only after an IPO",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The special resolution requirement for sale, disposal or lease of assets of the material subsidiary does not apply where such sale, disposal or lease is between two wholly-owned subsidiaries of the listed entity.",
       },
@@ -32641,7 +32641,7 @@ const AICaseStudies = [
           "Is below every applicable threshold",
           "Can never require listed-company shareholder approval",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "The proposed disposal exceeds 20% of the material subsidiary's assets on an aggregate basis and therefore attracts the special resolution requirement, subject to applicable exceptions.",
       },
@@ -32682,7 +32682,7 @@ const AICaseStudies = [
           "Only one-time transactions",
           "Unrelated to the company",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "The Audit Committee may grant omnibus approval subject to prescribed conditions, including that the approval is applicable to transactions which are repetitive in nature.",
       },
@@ -32696,7 +32696,7 @@ const AICaseStudies = [
           "Only the annual profit of the company",
           "Only the number of directors",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The omnibus approval should specify the name(s) of the related party, nature and period of transaction and maximum amount of transactions, along with the indicative base/current contracted price and price variation formula.",
       },
@@ -32711,7 +32711,7 @@ const AICaseStudies = [
           "₹2 crore per transaction",
           "₹5 crore per transaction",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Where the need for a related party transaction cannot be foreseen and the prescribed details are unavailable, omnibus approval may be granted provided the value does not exceed ₹1 crore per transaction.",
       },
@@ -32726,7 +32726,7 @@ const AICaseStudies = [
           "Only at the AGM",
           "Only when SEBI asks",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "The Audit Committee shall review, at least on a quarterly basis, the details of related party transactions entered into pursuant to each omnibus approval.",
       },
@@ -32736,7 +32736,7 @@ const AICaseStudies = [
         question:
           "An omnibus approval is generally valid for a period not exceeding:",
         options: ["Six months", "One year", "Three years", "Five years"],
-        answer: 2,
+        answer: 1,
         reason:
           "Omnibus approvals shall be valid for a period not exceeding one year and fresh approval is required after expiry of one year.",
       },
@@ -32777,7 +32777,7 @@ const AICaseStudies = [
           "Approval of every shareholder",
           "Approval of the statutory auditor",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The issuer must make an application to one or more stock exchanges with the intent to seek in-principle approval for listing of its specified securities.",
       },
@@ -32791,7 +32791,7 @@ const AICaseStudies = [
           "Transferred to the government",
           "Cancelled before the IPO",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The issuer must ensure that all specified securities held by promoters are in dematerialised form prior to filing the offer document.",
       },
@@ -32806,7 +32806,7 @@ const AICaseStudies = [
           "Converted into debt automatically",
           "Transferred to employees",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "All existing partly paid-up equity shares must have either been fully paid-up or forfeited.",
       },
@@ -32816,7 +32816,7 @@ const AICaseStudies = [
         question:
           "The issuer generally needs firm arrangements through verifiable means towards at least what percentage of the stated means of finance for a specified project, excluding the specified sources?",
         options: ["50%", "60%", "75%", "90%"],
-        answer: 3,
+        answer: 2,
         reason:
           "The issuer must have firm arrangements of finance through verifiable means towards 75% of the stated means of finance for the specific project, excluding the amount to be raised through the proposed public issue and existing identifiable internal accruals.",
       },
@@ -32831,7 +32831,7 @@ const AICaseStudies = [
           "25% of the amount raised",
           "50% of the amount raised",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The amount for general corporate purposes shall generally not exceed 25% of the amount being raised by the issuer.",
       },
@@ -32872,7 +32872,7 @@ const AICaseStudies = [
           "At least one year prior to filing the draft offer document",
           "At least five years",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Only fully paid-up equity shares held by the sellers for at least one year prior to filing the draft offer document may generally be offered for sale.",
       },
@@ -32887,7 +32887,7 @@ const AICaseStudies = [
           "The holding period of the convertible securities together with the resultant equity shares",
           "Only the date of IPO",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "For shares received on conversion or exchange of fully paid-up compulsorily convertible securities, the holding period of the convertible securities and the resultant equity shares together is considered.",
       },
@@ -32902,7 +32902,7 @@ const AICaseStudies = [
           "A private agreement with an employee",
           "A loan agreement",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The one-year requirement does not apply in specified cases where equity shares were acquired pursuant to a scheme approved by a High Court, Tribunal or Central Government under the applicable provisions.",
       },
@@ -32917,7 +32917,7 @@ const AICaseStudies = [
           "Unrealised profits only",
           "Borrowed funds",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "For the specified bonus-share exception, the securities should have been held for at least one year and the bonus shares should be issued out of free reserves and share premium existing in the books at the end of the preceding financial year, subject to the stated conditions.",
       },
@@ -32932,7 +32932,7 @@ const AICaseStudies = [
           "Automatically qualify because the shares are fully paid",
           "Qualify only if the company is profitable",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Fully paid-up equity shares offered for sale generally need to have been held by the sellers for at least one year prior to filing the draft offer document.",
       },
@@ -32973,7 +32973,7 @@ const AICaseStudies = [
           "One-half of the Board",
           "Two-thirds of the Board",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "Where the regular non-executive Chairperson is a promoter or is related to a promoter or certain management persons, at least half of the Board shall consist of independent directors.",
       },
@@ -33003,7 +33003,7 @@ const AICaseStudies = [
           "Only three executive directors",
           "All independent directors",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The quorum for every Board meeting of the top 2000 listed entities is one-third of total strength or three directors, whichever is higher, including at least one independent director.",
       },
@@ -33013,7 +33013,7 @@ const AICaseStudies = [
         question:
           "For a Board of 15 directors, one-third is 5. Therefore, the minimum quorum under the specified rule would be:",
         options: ["3 directors", "4 directors", "5 directors", "6 directors"],
-        answer: 3,
+        answer: 2,
         reason:
           "One-third of 15 is 5, which is higher than three. Therefore, five directors would constitute the numerical quorum, subject to the requirement that at least one independent director be present.",
       },
@@ -33028,7 +33028,7 @@ const AICaseStudies = [
           "Shall not participate in the evaluation",
           "Must conduct the evaluation alone",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The evaluation of independent directors is undertaken by the entire Board, but the directors who are subject to evaluation shall not participate in the evaluation.",
       },
@@ -33071,7 +33071,7 @@ const AICaseStudies = [
           "The lower of ₹1,000 crore and 10% of annual consolidated turnover",
           "₹2,000 crore only",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "A related party transaction is material where transactions individually or together with previous transactions during the financial year exceed ₹1,000 crore or 10% of annual consolidated turnover, whichever is lower. Here 10% of ₹8,000 crore is ₹800 crore, so ₹800 crore is the applicable threshold.",
       },
@@ -33086,7 +33086,7 @@ const AICaseStudies = [
           "10% of annual consolidated turnover only",
           "₹1,000 crore only",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Transactions involving payments made to a related party with respect to brand usage or royalty are considered material if they exceed 5% of annual consolidated turnover, subject to the regulation.",
       },
@@ -33101,7 +33101,7 @@ const AICaseStudies = [
           "Only promoter directors",
           "The Compliance Officer",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "Related party transactions require prior Audit Committee approval, and only those members of the Audit Committee who are independent directors shall approve such transactions.",
       },
@@ -33116,7 +33116,7 @@ const AICaseStudies = [
           "Cannot vote to approve the resolution",
           "May vote only if it holds less than 10%",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "No related party shall vote to approve a resolution relating to a material related party transaction, whether or not the related party is a related party to the particular transaction.",
       },
@@ -33131,7 +33131,7 @@ const AICaseStudies = [
           "The transaction is always below ₹1 crore",
           "The subsidiary has no directors",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The Audit Committee and shareholder approval requirements do not apply to transactions between a holding company and its wholly-owned subsidiary whose accounts are consolidated with the holding company and placed before shareholders at the general meeting.",
       },
@@ -33174,7 +33174,7 @@ const AICaseStudies = [
           "Bonus issue",
           "Rights issue",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "An issuer not satisfying the conditions under the normal eligibility route may be eligible if the issue is made through the book-building process and the other prescribed conditions are satisfied.",
       },
@@ -33184,7 +33184,7 @@ const AICaseStudies = [
         question:
           "Under the alternative eligibility route, at least what percentage of the net offer must be allotted to qualified institutional buyers?",
         options: ["50%", "60%", "75%", "90%"],
-        answer: 3,
+        answer: 2,
         reason:
           "The alternative route requires the issuer to undertake to allot at least 75% of the net offer to qualified institutional buyers and to refund the full subscription money if it fails to do so.",
       },
@@ -33199,7 +33199,7 @@ const AICaseStudies = [
           "Sufficient only with SEBI approval",
           "Irrelevant",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The alternative route requires at least 75% of the net offer to be allotted to qualified institutional buyers. Therefore, a proposed 70% allocation would not satisfy the requirement.",
       },
@@ -33214,7 +33214,7 @@ const AICaseStudies = [
           "Minimum 5:1 and maximum 20:1",
           "Any ratio decided by promoters",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "SR equity shares may have voting rights in a ratio of minimum 2:1 up to a maximum of 10:1 compared with ordinary shares, with the ratio in whole numbers.",
       },
@@ -33229,7 +33229,7 @@ const AICaseStudies = [
           "Permitted if approved by the CFO",
           "Permitted only for foreign promoters",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The voting-right ratio of SR equity shares must be between 2:1 and 10:1 compared with ordinary shares. A 12:1 ratio exceeds the permitted maximum.",
       },
@@ -33270,7 +33270,7 @@ const AICaseStudies = [
           "Are external consultants",
           "Are statutory auditors",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The SR equity shares should be issued only to promoters/founders who hold an executive position in the issuer company.",
       },
@@ -33280,7 +33280,7 @@ const AICaseStudies = [
         question:
           "The SR equity shares should have been issued prior to filing the draft red herring prospectus and held for at least:",
         options: ["One month", "Two months", "Three months", "One year"],
-        answer: 3,
+        answer: 2,
         reason:
           "The SR equity shares must have been issued prior to filing of the draft red herring prospectus and held for a period of at least three months prior to such filing.",
       },
@@ -33290,7 +33290,7 @@ const AICaseStudies = [
         question:
           "The net worth of an SR shareholder, as determined by a Registered Valuer, should not be more than:",
         options: ["₹500 crore", "₹750 crore", "₹1,000 crore", "₹2,000 crore"],
-        answer: 3,
+        answer: 2,
         reason:
           "The net worth of the SR shareholder, as determined by a Registered Valuer, should not be more than ₹1,000 crore.",
       },
@@ -33305,7 +33305,7 @@ const AICaseStudies = [
           "Compliant if approved by the CFO",
           "Compliant only after listing",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "SR equity shares are required to be issued only to promoters/founders who hold an executive position in the issuer company.",
       },
@@ -33320,7 +33320,7 @@ const AICaseStudies = [
           "Existence of the company",
           "Number of shareholders",
         ],
-        answer: 1,
+        answer: 0,
         reason:
           "SR equity shares should be equivalent to ordinary equity shares in all respects except for having superior voting rights.",
       },
@@ -33361,7 +33361,7 @@ const AICaseStudies = [
           "35% of the amount being raised",
           "50% of the amount being raised",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The amount for general corporate purposes as mentioned in the draft offer document and offer document shall generally not exceed 25% of the amount being raised.",
       },
@@ -33376,7 +33376,7 @@ const AICaseStudies = [
           "35% of the amount being raised",
           "50% of the amount being raised",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "Where the issuer has not identified the acquisition or investment target, the amount raised for such objects shall not exceed 25% of the amount being raised, subject to the prescribed conditions.",
       },
@@ -33391,7 +33391,7 @@ const AICaseStudies = [
           "35% of the amount being raised",
           "60% of the amount being raised",
         ],
-        answer: 3,
+        answer: 2,
         reason:
           "The amount for general corporate purposes and objects where the acquisition or investment target has not been identified shall not exceed 35% of the amount being raised, while the unidentified acquisition/investment component itself is subject to the 25% ceiling.",
       },
@@ -33406,7 +33406,7 @@ const AICaseStudies = [
           "Automatically reduce to 10%",
           "Require cancellation of the IPO",
         ],
-        answer: 2,
+        answer: 1,
         reason:
           "The specified limits do not apply if the proposed acquisition or strategic investment object has been identified and suitable specific disclosures regarding such acquisition or investment are made in the draft offer document and offer document.",
       },
@@ -33416,7 +33416,7 @@ const AICaseStudies = [
         question:
           "If BluePeak raises ₹1,000 crore, the maximum amount that may generally be allocated to general corporate purposes is:",
         options: ["₹100 crore", "₹200 crore", "₹250 crore", "₹350 crore"],
-        answer: 3,
+        answer: 2,
         reason:
           "The general corporate purpose ceiling is 25% of the amount raised. Therefore, for ₹1,000 crore, the general corporate purpose amount can generally be up to ₹250 crore.",
       },
