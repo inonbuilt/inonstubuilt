@@ -3,300 +3,1175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assessment & Audit</title>
-    <link rel="stylesheet" href="../../assets/template.css">
+    <title>Chapter 17: Assessment &amp; Audit under GST (Sections 59-66 &amp; 85-91) | Calcium Notes</title>
+
+    <!-- Primary SEO Meta Tags -->
+    <meta name="title" content="Chapter 17: Assessment &amp; Audit under GST | Calcium Notes">
+    <meta name="description" content="Master CA Final Indirect Tax (IDT) Chapter 17: Self Assessment (Sec 59), Provisional Assessment (Sec 60, ASMT-01 to 09), Scrutiny (Sec 61), Best Judgment (Sec 62-63), Summary (Sec 64), Departmental &amp; Special Audit (Sec 65-66), and Third Party Liabilities (Sec 85-91).">
+    <meta name="keywords" content="GST Assessment, Section 59, Section 60 Provisional Assessment, Section 61 Scrutiny, Section 62 Best Judgment, Section 63 Unregistered, Section 64 Summary Assessment, Section 65 Departmental Audit, Section 66 Special Audit, Forms ASMT-01 to 09, CA Final IDT Notes, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <meta name="robots" content="index, follow">
+
     <link rel="icon" href="../../../../fevicol.png" type="image/png">
+    <link rel="stylesheet" href="../../assets/template.css">
+
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YYJ8R39EXM');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
     </script>
-    <!-- Added add sense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
-    crossorigin="anonymous"></script>
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #eff6ff;
+            --primary-border: #bfdbfe;
+            --success: #059669;
+            --success-light: #ecfdf5;
+            --success-border: #a7f3d0;
+            --danger: #dc2626;
+            --danger-light: #fef2f2;
+            --danger-border: #fecaca;
+            --warning: #d97706;
+            --warning-light: #fffbeb;
+            --warning-border: #fde68a;
+            --purple: #7c3aed;
+            --purple-light: #f5f3ff;
+            --purple-border: #ddd6fe;
+            --slate-900: #0f172a;
+            --slate-800: #1e293b;
+            --slate-700: #334155;
+            --slate-600: #475569;
+            --slate-500: #64748b;
+            --slate-200: #e2e8f0;
+            --slate-100: #f1f5f9;
+            --slate-50: #f8fafc;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 14px -2px rgba(15, 23, 42, 0.08);
+            --shadow-lg: 0 10px 25px -4px rgba(15, 23, 42, 0.1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--slate-800);
+            background: #f8fafc;
+            line-height: 1.6;
+        }
+
+        /* Topbar */
+        .topbar {
+            height: 64px;
+            background: #ffffff;
+            border-bottom: 1px solid var(--slate-200);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+        }
+
+        .topbar-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .back-hub-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: var(--radius-sm);
+            background: var(--slate-100);
+            color: var(--slate-700);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .back-hub-btn:hover {
+            background: var(--slate-200);
+            color: var(--slate-900);
+        }
+
+        .chapter-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--slate-900);
+        }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .progress-container {
+            width: 140px;
+            height: 6px;
+            background: var(--slate-200);
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: var(--primary);
+            border-radius: 999px;
+            transition: width 0.15s ease;
+        }
+
+        .toggle-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            background: var(--slate-100);
+            border: 1px solid var(--slate-200);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--slate-700);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .toggle-btn:hover {
+            background: var(--slate-200);
+            color: var(--slate-900);
+        }
+
+        /* Layout */
+        .layout {
+            display: flex;
+            height: calc(100vh - 64px);
+            overflow: hidden;
+        }
+
+        /* Sidebar Index */
+        .sidebar {
+            width: 270px;
+            background: #ffffff;
+            border-right: 1px solid var(--slate-200);
+            padding: 20px 16px;
+            overflow-y: auto;
+            flex-shrink: 0;
+            transition: width 0.3s ease, padding 0.3s ease;
+        }
+
+        .sidebar.hidden {
+            width: 0;
+            padding: 0;
+            overflow: hidden;
+            border: none;
+        }
+
+        .sidebar-header {
+            font-family: 'Outfit', sans-serif;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--slate-500);
+            margin-bottom: 14px;
+            padding-left: 8px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 12px;
+            border-radius: var(--radius-sm);
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--slate-700);
+            text-decoration: none;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar a:hover {
+            background: var(--slate-100);
+            color: var(--primary);
+            padding-left: 14px;
+        }
+
+        .sidebar a.active {
+            background: var(--primary-light);
+            color: var(--primary);
+            border-left-color: var(--primary);
+            font-weight: 700;
+        }
+
+        .sidebar-subitem {
+            padding-left: 28px !important;
+            font-size: 12.5px !important;
+            color: var(--slate-600) !important;
+        }
+
+        /* Content Area */
+        .content {
+            flex: 1;
+            padding: 32px 40px 80px 40px;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+
+        .content-container {
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+
+        /* Hero Header */
+        .chapter-hero {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 36px 32px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #93c5fd;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .hero-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+
+        .hero-desc {
+            font-size: 14.5px;
+            color: #94a3b8;
+            max-width: 780px;
+            line-height: 1.6;
+        }
+
+        .hero-stats-row {
+            display: flex;
+            gap: 16px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+
+        /* Section Cards */
+        .section-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-lg);
+            padding: 32px 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--slate-900);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--slate-100);
+            padding-bottom: 14px;
+        }
+
+        .sub-heading {
+            font-family: 'Outfit', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--slate-800);
+            margin: 24px 0 12px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Matrix Table */
+        .table-responsive {
+            overflow-x: auto;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            margin: 18px 0;
+            background: #ffffff;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .matrix-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            line-height: 1.5;
+            min-width: 900px;
+        }
+
+        .matrix-table th {
+            background: #1e293b;
+            color: #ffffff;
+            font-weight: 700;
+            padding: 12px 14px;
+            text-align: left;
+            border: 1px solid #334155;
+            font-size: 12.5px;
+            white-space: nowrap;
+        }
+
+        .matrix-table th.col-header {
+            background: #0f172a;
+            color: #93c5fd;
+            text-align: center;
+        }
+
+        .matrix-table td {
+            padding: 12px 14px;
+            border: 1px solid var(--slate-200);
+            vertical-align: top;
+            color: var(--slate-700);
+            background: #ffffff;
+        }
+
+        .matrix-table tr:nth-child(even) td {
+            background: var(--slate-50);
+        }
+
+        .matrix-table tr:hover td {
+            background: #f1f5f9;
+        }
+
+        .matrix-param {
+            font-weight: 700;
+            color: var(--slate-900);
+            background: #f8fafc !important;
+            white-space: nowrap;
+        }
+
+        /* Badges & Pills */
+        .sec-pill {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        .pill-blue { background: var(--primary-light); color: var(--primary); border: 1px solid var(--primary-border); }
+        .pill-green { background: var(--success-light); color: var(--success); border: 1px solid var(--success-border); }
+        .pill-amber { background: var(--warning-light); color: var(--warning); border: 1px solid var(--warning-border); }
+        .pill-red { background: var(--danger-light); color: var(--danger); border: 1px solid var(--danger-border); }
+        .pill-purple { background: var(--purple-light); color: var(--purple); border: 1px solid var(--purple-border); }
+
+        /* Step cards for Provisional Assessment Forms */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 14px;
+            margin: 18px 0;
+        }
+
+        .step-card {
+            background: #ffffff;
+            border: 1.5px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            padding: 16px 18px;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .step-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary-border);
+            box-shadow: var(--shadow-md);
+        }
+
+        .step-form-code {
+            font-family: 'Outfit', sans-serif;
+            font-size: 13px;
+            font-weight: 800;
+            color: var(--primary);
+            background: var(--primary-light);
+            border: 1px solid var(--primary-border);
+            padding: 3px 9px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .step-card-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin-bottom: 4px;
+        }
+
+        .step-card-desc {
+            font-size: 13px;
+            color: var(--slate-600);
+            line-height: 1.5;
+        }
+
+        /* Callouts */
+        .callout {
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            margin: 18px 0;
+            font-size: 14px;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .callout-icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+        .callout-info { background: var(--primary-light); border: 1px solid var(--primary-border); color: #1e3a8a; }
+        .callout-warning { background: var(--warning-light); border: 1px solid var(--warning-border); color: #92400e; }
+        .callout-danger { background: var(--danger-light); border: 1px solid var(--danger-border); color: #991b1b; }
+
+        /* Comparative Cards */
+        .compare-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin: 18px 0;
+        }
+
+        .compare-card {
+            background: #ffffff;
+            border: 1.5px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            padding: 22px;
+            position: relative;
+        }
+
+        .compare-card.dept { border-top: 4px solid var(--primary); }
+        .compare-card.special { border-top: 4px solid var(--purple); }
+
+        .compare-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--slate-900);
+            margin-bottom: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .compare-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .compare-list li {
+            font-size: 13.5px;
+            color: var(--slate-700);
+            line-height: 1.5;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed var(--slate-200);
+        }
+
+        .compare-list li:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        /* Liability Cards (Sec 85 to 91) */
+        .liability-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin: 18px 0;
+        }
+
+        .liability-card {
+            background: #ffffff;
+            border: 1.5px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            transition: all 0.2s;
+        }
+
+        .liability-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary-border);
+            box-shadow: var(--shadow-md);
+        }
+
+        .liability-sec {
+            font-family: 'Outfit', sans-serif;
+            font-size: 13px;
+            font-weight: 800;
+            color: var(--primary);
+            background: var(--primary-light);
+            border: 1px solid var(--primary-border);
+            padding: 2px 8px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .liability-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin-bottom: 8px;
+        }
+
+        .liability-body {
+            font-size: 13.5px;
+            color: var(--slate-600);
+            line-height: 1.5;
+        }
+
+        /* SVG Object Wrappers */
+        .svg-container {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            margin: 16px 0;
+            text-align: center;
+            overflow-x: auto;
+        }
+
+        .svg-container object {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 868px) {
+            .compare-grid, .liability-grid {
+                grid-template-columns: 1fr;
+            }
+            .content {
+                padding: 20px 16px 60px 16px;
+            }
+            .chapter-hero {
+                padding: 24px 20px;
+            }
+            .hero-title {
+                font-size: 22px;
+            }
+        }
+    </style>
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/IDT/assessment_audit.html">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.calciumnotes.com/sitemap.xml">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.calciumnotes.com/bin/notes/final/IDT/assessment_audit.html">
+    <meta property="og:title" content="Chapter 17: Assessment &amp; Audit under GST (Sections 59-66 &amp; 85-91) | Calcium Notes">
+    <meta property="og:description" content="Master CA Final IDT Chapter 17: Self Assessment, Provisional Assessment (ASMT-01 to 09), Scrutiny, Best Judgment, Summary Assessment, Audits, and Third Party Liabilities.">
+    <meta property="og:image" content="https://www.calciumnotes.com/og-image.png">
+    <meta property="og:site_name" content="Calcium Notes">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Calciumnotes">
+    <meta name="twitter:creator" content="@Calciumnotes">
+    <meta name="twitter:url" content="https://www.calciumnotes.com/bin/notes/final/IDT/assessment_audit.html">
+    <meta name="twitter:title" content="Chapter 17: Assessment &amp; Audit under GST | Calcium Notes">
+    <meta name="twitter:description" content="Master CA Final IDT Chapter 17: Self Assessment, Provisional Assessment (ASMT-01 to 09), Scrutiny, Best Judgment, Audits, and Third Party Liabilities.">
+    <meta name="twitter:image" content="https://www.calciumnotes.com/og-image.png">
+
+    <!-- JSON-LD Structured Data: Article, BreadcrumbList & FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Chapter 17: Assessment & Audit under GST (Sections 59-66 & 85-91)",
+      "description": "Comprehensive comparative matrix covering all 6 statutory modes of GST assessment, Provisional Assessment workflow (ASMT-01 to 09), Departmental vs Special Audit, and third party liabilities.",
+      "image": "https://www.calciumnotes.com/og-image.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Calcium Notes"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Calcium Notes",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.calciumnotes.com/fevicol.png"
+        }
+      },
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-11-05",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.calciumnotes.com/bin/notes/final/IDT/assessment_audit.html"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.calciumnotes.com"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "CA Notes Portal",
+        "item": "https://www.calciumnotes.com/bin/notes/notes.html"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Indirect Tax Notes",
+        "item": "https://www.calciumnotes.com/bin/notes/notes/idtnotes.html"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Chapter 17: Assessment & Audit under GST",
+        "item": "https://www.calciumnotes.com/bin/notes/final/IDT/assessment_audit.html"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the 6 statutory assessment frameworks under the CGST Act?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The CGST Act provides 6 statutory modes of assessment: (1) Self-Assessment u/s 59; (2) Provisional Assessment u/s 60; (3) Scrutiny of Returns u/s 61; (4) Best Judgment Assessment of Non-Filers u/s 62; (5) Best Judgment Assessment of Unregistered Persons u/s 63; and (6) Summary Assessment in Special Cases u/s 64."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the statutory time limit for issuing a final assessment order under Section 60?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Proper Officer must pass the final assessment order in Form GST ASMT-07 within 6 months from the date of communication of the provisional order. This period can be extended by the Joint/Additional Commissioner for further 6 months, and by the Commissioner for an additional period up to 4 years (total maximum 5 years)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when a registered person files a valid return after a Best Judgment Order u/s 62?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If the registered person furnishes a valid return within 60 days (or further 60 days with additional late fee) of service of the assessment order in Form ASMT-13, the best judgment order is deemed to have been withdrawn. However, the liability for payment of interest u/s 50(1) and late fees u/s 47 continues."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the key difference between Departmental Audit (Sec 65) and Special Audit (Sec 66)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Departmental Audit under Section 65 is conducted by the Proper Officer at the place of business or departmental office upon prior notice of at least 15 working days, to be completed within 3 months. Special Audit under Section 66 is directed by an officer not below Assistant Commissioner with prior approval of Commissioner, and is conducted by a nominated Chartered Accountant or Cost Accountant within 90 days, with audit expenses determined and paid by the Commissioner."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     
     <!-- Top Bar -->
     <header class="topbar">
-        <button class="toggle-btn" onclick="toggleSidebar()">✖ Close Index</button>
-        <div class="chapter-title">Chapter 17 – Assessment & Audit</div>
-
-        <div class="progress-container">
-            <div class="progress-bar"></div>
+        <div class="topbar-left">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰ Quick Index</button>
+            <a href="../../notes.html" class="back-hub-btn">← Notes Hub</a>
+            <span class="chapter-title">Chapter 17: Assessment &amp; Audit under GST</span>
         </div>
 
-        
+        <div class="topbar-right">
+            <div class="progress-container" title="Reading Progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
     </header>
 
     <!-- Main Layout -->
     <div class="layout">
 
-        <!-- Sidebar -->
+        <!-- Sidebar Navigation -->
         <aside class="sidebar" id="sidebar">
-            <h3>Index</h3>
+            <div class="sidebar-header">Table of Contents</div>
             <ul>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#asment">Assessment</a></li>
-                <li><a href="#audit">Audit</a></li>
-                <li><a href="#misc">Other Provisions</a></li>
+                <li><a href="#overview">📌 Chapter Overview</a></li>
+                <li><a href="#assessment-matrix">1. 6 Types of Assessment</a></li>
+                <li><a href="#provisional-workflow" class="sidebar-subitem">↳ Sec 60: ASMT-01 to 09 Flow</a></li>
+                <li><a href="#interest-illustrations" class="sidebar-subitem">↳ Interest Computation (Sec 50 vs 60)</a></li>
+                <li><a href="#bja-late-fees" class="sidebar-subitem">↳ Sec 62 Late Fee &amp; Order Withdrawal</a></li>
+                <li><a href="#audit-gst">2. Audit Under GST</a></li>
+                <li><a href="#audit-compare" class="sidebar-subitem">↳ Sec 65 Dept vs Sec 66 Special Audit</a></li>
+                <li><a href="#liability-special">3. Liability to Pay in Special Cases</a></li>
+                <li><a href="#sec85-87" class="sidebar-subitem">↳ Sec 85-87: Transfer, Agent &amp; Merger</a></li>
+                <li><a href="#sec89-91" class="sidebar-subitem">↳ Sec 89-91: Directors, Partners &amp; Trusts</a></li>
             </ul>
         </aside>
 
-        <!-- Content -->
+        <!-- Main Content -->
         <main class="content">
+            <div class="content-container">
 
-            <!-- introduction -->
-            <div class="card section" id="intro">
-                <h2>Introduction</h2>
-                <p></p>
+                <!-- Hero Banner -->
+                <div class="chapter-hero" id="overview">
+                    <span class="hero-tag">CA Final Indirect Taxes • Paper 4</span>
+                    <h1 class="hero-title">Chapter 17: Assessment &amp; Audit under GST</h1>
+                    <p class="hero-desc">
+                        A structured reference guide covering all 6 statutory assessment procedures under the CGST Act (Sections 59 to 64), Forms ASMT-01 to 09 workflow, interest computation comparisons, Departmental Audit u/s 65, Special Audit u/s 66, and third-party liabilities u/s 85 to 91.
+                    </p>
+                    <div class="hero-stats-row">
+                        <div class="hero-stat-badge">⚖️ 6 Assessment Frameworks</div>
+                        <div class="hero-stat-badge">📑 Forms ASMT-01 to 09</div>
+                        <div class="hero-stat-badge">🔍 Sec 65 &amp; 66 Audits</div>
+                        <div class="hero-stat-badge">🛡️ Sec 85–91 Liabilities</div>
+                    </div>
+                </div>
+
+                <!-- SECTION 1: ASSESSMENT UNDER GST -->
+                <div class="section-card" id="assessment-matrix">
+                    <h2 class="section-title">1. Assessment Under GST (Sections 59 to 64)</h2>
+                    <p style="font-size: 14.5px; color: var(--slate-600); margin-bottom: 16px;">
+                        Assessment means determination of tax liability under the CGST Act. Below is the master comparative matrix across all 6 statutory modes of assessment:
+                    </p>
+
+                    <!-- Master Comparative Matrix Table -->
+                    <div class="table-responsive">
+                        <table class="matrix-table">
+                            <thead>
+                                <tr>
+                                    <th class="col-header" style="width: 14%;">Parameters</th>
+                                    <th class="col-header" style="width: 14%;">Sec 59<br><span style="font-size:11px; font-weight:normal;">Self Assessment</span></th>
+                                    <th class="col-header" style="width: 15%;">Sec 60<br><span style="font-size:11px; font-weight:normal;">Provisional</span></th>
+                                    <th class="col-header" style="width: 14%;">Sec 61<br><span style="font-size:11px; font-weight:normal;">Scrutiny</span></th>
+                                    <th class="col-header" style="width: 15%;">Sec 62<br><span style="font-size:11px; font-weight:normal;">Best Judgment (Non-Filer)</span></th>
+                                    <th class="col-header" style="width: 14%;">Sec 63<br><span style="font-size:11px; font-weight:normal;">Best Judgment (Unregistered)</span></th>
+                                    <th class="col-header" style="width: 14%;">Sec 64<br><span style="font-size:11px; font-weight:normal;">Summary Assessment</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="matrix-param">Assessed By</td>
+                                    <td><span class="sec-pill pill-blue">Registered Person</span></td>
+                                    <td><span class="sec-pill pill-purple">Proper Officer</span></td>
+                                    <td><span class="sec-pill pill-purple">Proper Officer</span></td>
+                                    <td><span class="sec-pill pill-purple">Proper Officer</span></td>
+                                    <td><span class="sec-pill pill-purple">Proper Officer</span></td>
+                                    <td><span class="sec-pill pill-purple">Proper Officer</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix-param">Trigger / Situation (When)</td>
+                                    <td>Every registered person assesses self tax &amp; furnishes returns.</td>
+                                    <td>When registered person is unable to determine: (i) Value of supply, OR (ii) Tax rate applicable.</td>
+                                    <td>To verify the correctness of the return filed by the taxable person.</td>
+                                    <td>A registered person <strong>fails to furnish return</strong> u/s 39 (Monthly) or u/s 45 (Final) even after notice u/s 46 (Form GSTR-3A).</td>
+                                    <td>A person <strong>liable to register fails to register</strong>, OR person whose registration was cancelled but liable to pay tax.</td>
+                                    <td>To protect revenue interest: Officer has evidence of liability AND grounds that delay will adversely affect revenue.</td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix-param">Statutory Time Limit</td>
+                                    <td>As per return filing due dates u/s 39.</td>
+                                    <td>Within <strong>90 days</strong> from request in ASMT-01. Final order within <strong>6 months</strong> (extendable up to 5 yrs).</td>
+                                    <td>N/A (Standard scrutiny procedure).</td>
+                                    <td colspan="2" style="text-align:center;">
+                                        Within <strong>5 Years</strong> from due date of furnishing annual return for relevant financial year.
+                                    </td>
+                                    <td>N/A (Passed expeditiously).</td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix-param">Opportunity of Being Heard</td>
+                                    <td><span class="sec-pill pill-red">NO</span></td>
+                                    <td><span class="sec-pill pill-red">NO</span></td>
+                                    <td><span class="sec-pill pill-green">YES</span> (Notice in ASMT-10)</td>
+                                    <td>Notice in <strong>Form GSTR-3A</strong> (15 days notice)</td>
+                                    <td><span class="sec-pill pill-green">YES</span> (Notice in ASMT-14)</td>
+                                    <td><span class="sec-pill pill-red">NO</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix-param">Prior Permission Required?</td>
+                                    <td><span class="sec-pill pill-red">NO</span></td>
+                                    <td><span class="sec-pill pill-red">NO</span></td>
+                                    <td><span class="sec-pill pill-red">NO</span></td>
+                                    <td><span class="sec-pill pill-red">NO</span></td>
+                                    <td><span class="sec-pill pill-red">NO</span></td>
+                                    <td><span class="sec-pill pill-amber">YES</span> (From Addl./Joint Commissioner)</td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix-param">Consequences &amp; Outcome</td>
+                                    <td>Pay tax as self-assessed in GSTR-3B.</td>
+                                    <td>
+                                        Interest @ 18% p.a. on differential tax from original due date until payment. Excess refund with interest @ 6% p.a. from 60 days of application.
+                                    </td>
+                                    <td>
+                                        If satisfactory: Drop in ASMT-12.<br>
+                                        If no explanation within 30 days: Initiate Audit u/s 65/66, Inspection u/s 67, or Demand u/s 73/74/74A.
+                                    </td>
+                                    <td>
+                                        Best judgment order in <strong>ASMT-13</strong>. Pay tax + interest u/s 50 + late fee.
+                                    </td>
+                                    <td>
+                                        Best judgment order in <strong>ASMT-15</strong>. Pay tax or file appeal.
+                                    </td>
+                                    <td>
+                                        Summary order in <strong>ASMT-16</strong>. Assessee can apply within 30 days in ASMT-17 to withdraw order and proceed u/s 73/74.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix-param">Withdrawal of Order?</td>
+                                    <td>N/A</td>
+                                    <td><span class="sec-pill pill-red">NO</span></td>
+                                    <td><span class="sec-pill pill-red">NO</span></td>
+                                    <td>
+                                        <span class="sec-pill pill-green">YES</span> (Deemed withdrawn if valid return filed within 60 days with tax, interest &amp; late fee).
+                                    </td>
+                                    <td><span class="sec-pill pill-red">NO</span></td>
+                                    <td>
+                                        <span class="sec-pill pill-green">YES</span> (Proper officer on application or own motion can withdraw).
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Note 1: Provisional Assessment Workflow -->
+                    <div id="provisional-workflow" style="margin-top: 32px;">
+                        <h3 class="sub-heading">Note 1: Procedure &amp; Forms for Provisional Assessment (Sec 60 &amp; Rule 98)</h3>
+                        <p style="font-size: 14px; color: var(--slate-600); margin-bottom: 14px;">
+                            Step-by-step statutory execution from initial application to final assessment and bond release:
+                        </p>
+
+                        <div class="steps-grid">
+                            <div class="step-card">
+                                <span class="step-form-code">Form GST ASMT-01</span>
+                                <div class="step-card-title">Application by Taxable Person</div>
+                                <div class="step-card-desc">Submitted electronically requesting payment of tax on a provisional basis indicating reasons for inability to determine value/rate.</div>
+                            </div>
+
+                            <div class="step-card">
+                                <span class="step-form-code">Form GST ASMT-02</span>
+                                <div class="step-card-title">Notice for Information / Documents</div>
+                                <div class="step-card-desc">Proper Officer issues notice within 15 days seeking additional documents or information from the applicant.</div>
+                            </div>
+
+                            <div class="step-card">
+                                <span class="step-form-code">Form GST ASMT-03</span>
+                                <div class="step-card-title">Reply to Notice</div>
+                                <div class="step-card-desc">Taxable person furnishes reply and requested documents within 15 days of notice receipt.</div>
+                            </div>
+
+                            <div class="step-card">
+                                <span class="step-form-code">Form GST ASMT-04</span>
+                                <div class="step-card-title">Provisional Assessment Order (PAO)</div>
+                                <div class="step-card-desc">Officer issues order within <strong>90 days</strong> from ASMT-01 allowing payment on provisional basis at specified rate/value.</div>
+                            </div>
+
+                            <div class="step-card">
+                                <span class="step-form-code">Form GST ASMT-05</span>
+                                <div class="step-card-title">Execution of Bond with Security</div>
+                                <div class="step-card-desc">Taxable person executes bond with security (bank guarantee up to 25% of bond amount) binding payment of differential tax.</div>
+                            </div>
+
+                            <div class="step-card">
+                                <span class="step-form-code">Form GST ASMT-06</span>
+                                <div class="step-card-title">Notice for Final Assessment</div>
+                                <div class="step-card-desc">Proper Officer issues notice calling for information/records required for finalizing the assessment.</div>
+                            </div>
+
+                            <div class="step-card">
+                                <span class="step-form-code">Form GST ASMT-07</span>
+                                <div class="step-card-title">Final Assessment Order (FAO)</div>
+                                <div class="step-card-desc">Issued within <strong>6 months</strong> from PAO. Extendable by Joint/Addl. Comm. by 6 months, and by Commissioner up to 4 years (Total max: <strong>5 Years</strong>).</div>
+                            </div>
+
+                            <div class="step-card">
+                                <span class="step-form-code">Form GST ASMT-08</span>
+                                <div class="step-card-title">Application for Release of Security</div>
+                                <div class="step-card-desc">Taxable person applies for release of security/bond after payment of differential tax dues as finalized in ASMT-07.</div>
+                            </div>
+
+                            <div class="step-card">
+                                <span class="step-form-code">Form GST ASMT-09</span>
+                                <div class="step-card-title">Order for Release of Security</div>
+                                <div class="step-card-desc">Proper Officer passes order releasing bond and security within <strong>7 working days</strong> of receipt of application.</div>
+                            </div>
+                        </div>
+
+                        <!-- Interest Comparison Illustration -->
+                        <div id="interest-illustrations" style="margin-top: 26px;">
+                            <h4 style="font-size: 16px; font-weight: 700; color: var(--slate-900); margin-bottom: 10px;">
+                                Illustration on Computation of Interest in Provisional Assessment (Sec 50 vs Sec 60)
+                            </h4>
+
+                            <div class="svg-container">
+                                <object data="./interest on PAO.svg" type="image/svg+xml">
+                                    <p>Illustration diagram of interest calculation in Provisional Assessment</p>
+                                </object>
+                            </div>
+
+                            <div class="table-responsive" style="margin-top: 14px;">
+                                <table class="matrix-table" style="min-width: auto;">
+                                    <thead>
+                                        <tr>
+                                            <th>Particulars</th>
+                                            <th>Under Normal Provisions (Sec 50)</th>
+                                            <th>Under Provisional Assessment (Sec 60)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="matrix-param">Tax Amount Involved</td>
+                                            <td>₹4,00,000</td>
+                                            <td>₹2,00,000 (Differential Tax)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="matrix-param">Applicable Interest Rate</td>
+                                            <td><strong>18% p.a.</strong></td>
+                                            <td><strong>18% p.a.</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="matrix-param">Period / Days Count</td>
+                                            <td>From 21/09/20XX to 26/10/20XX = <strong>36 Days</strong></td>
+                                            <td>From 21/09/20XX to 20/01/20XX = <strong>122 Days</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="matrix-param">Interest Amount Computation</td>
+                                            <td>
+                                                $$	ext{₹}4,00,000 	imes 18\% 	imes rac{36}{365} = \mathbf{	ext{₹}7,101}$$
+                                            </td>
+                                            <td>
+                                                $$	ext{₹}2,00,000 	imes 18\% 	imes rac{122}{365} = \mathbf{	ext{₹}12,033}$$
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Note 2: Best Judgment Order Late Fee -->
+                        <div id="bja-late-fees" style="margin-top: 28px;">
+                            <h4 style="font-size: 16px; font-weight: 700; color: var(--slate-900); margin-bottom: 10px;">
+                                Note 2: Return Filing &amp; Order Deemed Withdrawal under Section 62 (Best Judgment)
+                            </h4>
+                            <p style="font-size: 13.5px; color: var(--slate-600); margin-bottom: 12px;">
+                                If a non-filer files a valid return within <strong>60 days</strong> from service of assessment order in ASMT-13, the order is <strong>deemed to have been withdrawn</strong>. However, liability to pay interest u/s 50(1) and late fee u/s 47 continues.
+                            </p>
+
+                            <div class="svg-container">
+                                <object data="./interest on BJA.svg" type="image/svg+xml">
+                                    <p>Illustration diagram of calculation of late fee and interest under Section 62</p>
+                                </object>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SECTION 2: AUDIT UNDER GST -->
+                <div class="section-card" id="audit-gst">
+                    <h2 class="section-title">2. Audit Under GST (Section 65 vs. Section 66)</h2>
+                    <p style="font-size: 14.5px; color: var(--slate-600); margin-bottom: 16px;">
+                        The CGST Act provides two statutory audit frameworks to verify compliance, examine records, and ensure revenue integrity:
+                    </p>
+
+                    <div class="compare-grid" id="audit-compare">
+                        <!-- Departmental Audit -->
+                        <div class="compare-card dept">
+                            <div class="compare-title">
+                                <span>Departmental Audit</span>
+                                <span class="sec-pill pill-blue">Section 65</span>
+                            </div>
+                            <ul class="compare-list">
+                                <li><strong>Conducted By:</strong> Proper Officer (Commissioner or officer authorized by him by general or special order).</li>
+                                <li><strong>Where Conducted:</strong> Place of business of registered person OR in office of the tax authority.</li>
+                                <li><strong>Prior Notice:</strong> Notice in <strong>Form GST ADT-01</strong> issued at least <strong>15 working days</strong> prior to commencement.</li>
+                                <li><strong>Time Limit for Completion:</strong> Within <strong>3 months</strong> from date of commencement; extendable by Commissioner by further period not exceeding <strong>6 months</strong> (Total: 9 Months).</li>
+                                <li><strong>Submission of Report:</strong> Proper Officer informs registered person of findings, grounds, rights &amp; obligations in <strong>Form GST ADT-02</strong> within <strong>30 days</strong> of completion.</li>
+                                <li><strong>Audit Expenses:</strong> Entirely borne by the GST Department.</li>
+                                <li><strong>Scope of Audit:</strong> Books of accounts, turnover, exemptions, deductions, rate of tax, input tax credit availed/utilized, and payment of taxes.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Special Audit -->
+                        <div class="compare-card special">
+                            <div class="compare-title">
+                                <span>Special Audit</span>
+                                <span class="sec-pill pill-purple">Section 66</span>
+                            </div>
+                            <ul class="compare-list">
+                                <li><strong>Directed By:</strong> Assistant / Deputy Commissioner with <strong>prior approval of the Commissioner</strong>.</li>
+                                <li><strong>Conducted By:</strong> A Chartered Accountant (CA) or Cost Accountant (CMA) nominated by the Commissioner.</li>
+                                <li><strong>Statutory Trigger:</strong> At any stage of scrutiny, inquiry, or investigation, if officer is of opinion that: (i) Value not correctly declared, OR (ii) ITC availed not within normal limits.</li>
+                                <li><strong>Direction Notice:</strong> Taxable person directed in <strong>Form GST ADT-03</strong> to get records audited.</li>
+                                <li><strong>Time Limit:</strong> CA/CMA submits report within <strong>90 days</strong>; extendable on application by further <strong>90 days</strong> (Total: 180 Days).</li>
+                                <li><strong>Audit Expenses &amp; Fee:</strong> Determined and <strong>paid entirely by the Commissioner</strong> (not payable by registered person).</li>
+                                <li><strong>Principles of Natural Justice:</strong> Taxable person given opportunity of being heard if any audit material is used in proceedings u/s 73/74/74A.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION 3: OTHER PROVISIONS (SECTIONS 85 TO 91) -->
+                <div class="section-card" id="liability-special">
+                    <h2 class="section-title">3. Liability to Pay Tax in Special Cases (Sections 85 to 91)</h2>
+                    <p style="font-size: 14.5px; color: var(--slate-600); margin-bottom: 16px;">
+                        Statutory rules determining joint, several, and individual tax liabilities in business restructuring, agency, corporate insolvency, and partnership succession:
+                    </p>
+
+                    <div class="liability-grid" id="sec85-87">
+                        <!-- Sec 85 -->
+                        <div class="liability-card">
+                            <span class="liability-sec">Section 85</span>
+                            <div class="liability-title">Transfer of Business (Whole or Part)</div>
+                            <div class="liability-body">
+                                <strong>Dues Before Transfer:</strong> Transferor and transferee are <strong>jointly and severally liable</strong> to pay tax, interest, or penalty determined before or after transfer.<br>
+                                <strong>Dues After Transfer:</strong> Transferee is exclusively liable as if he had carried on the business.
+                            </div>
+                        </div>
+
+                        <!-- Sec 86 -->
+                        <div class="liability-card">
+                            <span class="liability-sec">Section 86</span>
+                            <div class="liability-title">Principal and Agent</div>
+                            <div class="liability-body">
+                                Where an agent supplies or receives any taxable goods on behalf of his principal, such <strong>agent and principal are jointly and severally liable</strong> for the tax payable on such goods.
+                            </div>
+                        </div>
+
+                        <!-- Sec 87 -->
+                        <div class="liability-card">
+                            <span class="liability-sec">Section 87</span>
+                            <div class="liability-title">Amalgamation or Merger of Companies</div>
+                            <div class="liability-body">
+                                Two or more companies amalgamating under High Court / NCLT order are treated as <strong>distinct companies</strong> until date of order. Transactions between them before order date are taxable supplies, and registration continues until order date.
+                            </div>
+                        </div>
+
+                        <!-- Sec 89 -->
+                        <div class="liability-card" id="sec89-91">
+                            <span class="liability-sec">Section 89</span>
+                            <div class="liability-title">Liability of Directors of Private Company</div>
+                            <div class="liability-body">
+                                <strong>Private Company:</strong> Directors during the period tax dues relate are <strong>jointly and severally liable</strong>, unless a director proves non-recovery was not due to gross neglect, misfeasance, or breach of duty.<br>
+                                <strong>Public Company:</strong> Directors are NOT personally liable for company dues.
+                            </div>
+                        </div>
+
+                        <!-- Sec 90 -->
+                        <div class="liability-card">
+                            <span class="liability-sec">Section 90</span>
+                            <div class="liability-title">Partners of a Firm &amp; Retirement</div>
+                            <div class="liability-body">
+                                <strong>Firm &amp; Partners:</strong> Partners are jointly &amp; severally liable for all dues.<br>
+                                <strong>Retirement:</strong> Retiring partner must intimate retirement to Commissioner in writing within <strong>30 days</strong>. If not intimated, liability continues till date of intimation.<br>
+                                <strong>Deceased Partner:</strong> Legal representative liable only to extent of estate received from deceased partner.
+                            </div>
+                        </div>
+
+                        <!-- Sec 91 -->
+                        <div class="liability-card">
+                            <span class="liability-sec">Section 91</span>
+                            <div class="liability-title">Guardians, Trustees &amp; Agents</div>
+                            <div class="liability-body">
+                                Where business of minor, incapacitated person, or trust is conducted by guardian, trustee, or agent, the tax, interest, or penalty is levied upon and recoverable from such guardian/trustee to same extent as from minor/beneficiary.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- Assessment -->
-            <div class="card section" id="asment" >
-                <h2>Assessment Under GST</h2>
-                <table class="table-container">
-                    <tr>
-                        <th>Sec NO</th>
-                        <th>Sec 59</th>
-                        <th>Sec 60</th>
-                        <th>Sec 61</th>
-                        <th>Sec 62</th>
-                        <th>Sec 63</th>
-                        <th>Sec 64</th>
-                    </tr>
-                    <tr>
-                        <th>Type</th>
-                        <th>Self Assessment</th>
-                        <th>Provisional Assessment</th>
-                        <th>Scrutiny Assessment</th>
-                        <th colspan="2">Best Judgement Assessment</th>
-                        <!-- <th>Best Judgement Assessment</th> -->
-                        <th>Summary Assessment</th>
-                    </tr>
-                    <tr>
-                        <th>Assessed by</th>
-                        <td>Registered person</td>
-                        <td>Proper officer</td>
-                        <td>Proper officer</td>
-                        <td>Proper officer</td>
-                        <td>Proper officer</td>
-                        <td>Proper officer</td>
-                    </tr>
-
-                    <tr>
-                        <th>Situation <br> (When)</th>
-                        <td>Every Registered Person has to assess the Tax and furnish the return </td>
-                        <td>When Register person is unable to <br> i. Determine the value of goods or service or goods or both or/& <br>ii. Determine the Tax Rate</td>
-                        <td>To verify Correctness of return</td>
-                        <td>A <strong>Registered Person </strong> Fails to Furnish Return</td>
-                        <td>A person label to get Register still not registered or <br> Whose <strong>Registration has been canceled</strong></td>
-                        <td>To protect the Interest of the Revenue <br> officer <strong>has evidence</strong> that the taxable person has incurred the liability <strong>AND </strong> has <strong>sufficient grounds to believe that delay in passing a assessment order may adverse effect the interest of revenue</strong></td>
-                    </tr>
-
-                    <tr>
-                        <th>Time Limit</th>
-                        <td>Refer Return Chapter</td>
-                        <td>With in 90 days from the receipt of such request by resisted person</td>
-                        <td>N/A</td>
-                        <td colspan="2">With in <strong> 5 Years </strong>from due date of filing of annual return to which tax not paid relates</td>
-                        <td>N/A</td>
-                    </tr>
-
-                    <tr>
-                        <th>opportunity of being heard</th>
-                        <td>NO</td>
-                        <td>NO</td>
-                        <td>Yes</td>
-                        <td>Notice GSTR 3A</td>
-                        <td>YES</td>
-                        <td>NO</td>
-                    </tr>
-
-                    <tr>
-                        <th> Whether Proper Officer Needs Permission</th>
-                        <td>NO</td>
-                        <td>NO</td>
-                        <td>NO</td>
-                        <td>NO</td>
-                        <td>NO</td>
-                        <td>Yes <br>(from commissioner)</td>
-                    </tr>
-
-                    <tr>
-                        <th>OUTCOME</th>
-                        <td>N/A</td>
-                        <td> Interest to be payable for the different in Provisional and final order @ 18% pa. <strong>Refer Note 1 for More </strong> <br> If any excess paid in PAO refund with interest 18% from 61th day From FAO </td>
-                        <td>When assessee fails to reply with in 30 days from notice the PO may initiate <br>Departmental Audit u/s 65 or <br>Specific Audit u/s 66 or <br>Inspection u/s 67 or <br>Demand and recovery u/s 74,74A & 73 </td>
-                        <td>Interest to be paid form due date of filing  to date of filling <strong>Normal interest</strong> + if return of not filed with in 60 Days from date of order u/s 62 <strong> 100 per day <br> (additional interest) </strong> Refer Note 2</td>
-                        <td>Pay as per Assessment order or <br>Go for appeal</td>
-                        <td>Pay as per assessment Order or <br> if order is erroneous - <br> Taxable person may request the PO to follow the procedure  u/s 73,74 & 74A (Demand and recovery) <strong>With in 30 days from receipt of order or <br> </strong> The PO may withdraw such order aan follow the procedure u/s 73,74 & 74A </td>
-                    </tr>
-
-                    <tr>
-                        <th>Withdrawal of Order</th>
-                        <td>N/A</td>
-                        <td>NO</td>
-                        <td>NO</td>
-                        <td>YES</td>
-                        <td>NO</td>
-                        <td>Yes</td>
-                    </tr>
-
-                    
-                </table>
-            <h3>Note 1 :- Procedure for Provisional Registration</h3>
-            <table>
-                <tr>
-                    <th>Form</th>
-                    <th>Procedure</th>
-                </tr>
-                <tr>
-                    <td>Form GST ASMT - 01</td>
-                    <td>Application for Provisional Assessment</td>
-                </tr>
-                <tr>
-                    <td>Form GST ASMT - 02</td>
-                    <td>Notice for Intimation or Documents</td>
-                </tr>
-                <tr>
-                    <td>Form GST ASMT - 03</td>
-                    <td>Reply to Notice</td>
-                </tr>
-                <tr>
-                    <td>Form GST ASMT - 04</td>
-                    <td>Provisional Assessment order with in 90 days from ASMT 01</td>
-                </tr>
-                <tr>
-                    <td>Form GST ASMT - 05</td>
-                    <td>Bond to be executed between Assessee and IT</td>
-                </tr>
-                <tr>
-                    <td>Form GST ASMT - 06</td>
-                    <td>Notice for Final Assessment</td>
-                </tr>
-                <tr>
-                    <td>Form GST ASMT - 07</td>
-                    <td>Final Assessment Order with in 6M from PAO + 6M by Additional/ joint commissioner + 4 Years by commissioner <br> (may take 6m to 5 Years) </td>
-                </tr>
-                <tr>
-                    <td>Form GST ASMT - 08</td>
-                    <td>Application for release of Bond</td>
-                </tr>
-                <tr>
-                    <td>Form GST ASMT - 09</td>
-                    <td>Order for Release of Bons</td>
-                    <td></td>
-                </tr>
-            </table>
-            <h4>Illustration on computation of interest involved in Provisional Registration</h4>
-            <object data="./interest on PAO.svg" type="image/svg+xml"></object>
-            <!-- Interest computation Table -->
-            <table>
-                <tr>
-                    <th>Particulars</th>
-                    <th>Sec 50</th>
-                    <th>Sec 60</th>
-                </tr>
-                <tr>
-                    <td>Amount</td>
-                    <td>4,00,000</td>
-                    <td>2,00,000</td>
-                </tr>
-                <tr>
-                    <td>Rate</td>
-                    <td>18%</td>
-                    <td>18%</td>
-                </tr>
-                <tr>
-                    <td>No of Days</td>
-                    <td>From 21/09/20XX to 26/10/20XX <br> 36 Days</td>
-                    <td>From 21/09/20XX to 20/01/20XX <br> 122 Days</td>
-                </tr>
-                <tr>
-                    <td>Interest Computation</td>
-                    <td>4,00,000 X 18 X 36/365 = <br> RS 7,101</td>
-                    <td>2,00,000 X 18% X 122/365 = <br>RS 12,033</td>
-                </tr>
-                
-            </table>
-            <h3>Note 2 :- Calculation of late fee for filing return after Best Judgement Order</h3>
-            <object data="./interest on BJA.svg" type="image/svg+xml"></object>
-            </div>
-
-            <!-- Audit-->
-            <div class="card section" id="audit">
-                <h2>Audit Under GST</h2>
-                <table>
-                    <tr>
-                        <th>Particulars</th>
-                        <th>Departmental Audit</th>
-                        <th>Special Audit</th>
-                    </tr>
-                    <tr>
-                        <td>Section</td>
-                        <td>65</td>
-                        <td>66</td>
-                    </tr>
-                    <tr>
-                        <td>Applicability</td>
-                        <td>Based on Turnover <br>(Not Notified)</td>
-                        <td>During the inquiry/ investigation, it os to found that <br>i. value nor correctly declared or <br>ii. ITC availed incorrectly  </td>
-                    </tr>
-                    <tr>
-                        <td>Time Limit</td>
-                        <td>With in 3M by PAO + 6M by commissioner from Date of commencement of Audit</td>
-                        <td>With in 90 Days (additional 90 Days by approval form AC/DC) form date of commencement audit</td>
-                    </tr>
-                    <tr>
-                        <td>Submission for audit report </td>
-                        <td> To Register person & commissioner <br>With in 30 days of completion of audit</td>
-                        <td>To AC/DC</td>
-                    </tr>
-                    <tr>
-                        <td>Expenses of audit born by</td>
-                        <td>GST Department</td>
-                        <td>GST Department</td>
-                    </tr>
-                    <tr>
-                        <td>Scope</td>
-                        <td>All Books of Accounts</td>
-                        <td>i. value of taxable supplies made & <br>ii. ITC availed and utilized during the period of Audit</td>
-                    </tr>
-                </table>
-                <p></p>
-            </div>
-            <!-- Misc -->
-            <div class="card section" id="misc">
-                <h2>Other Provisions</h2>
-                <h3>Sec 85 liability in case of transfer of business</h3>
-                <p><i>Dues Before transfer</i>:- <br> Both transferor and transferee are jointly and severally liable <br> <i>Dues After Transfer </i>:- Only Transferee is liable</p>
-
-                <h3>Sec 86 Liability if Agent and Principle</h3>
-                <p>Both Agent and Principle are jointly and severally liable only when agent made supply or received on behalf of principal </p>
-
-                <h3>Sec 87 Liability in case of Amalgamation/ Merger</h3>
-                <p>Due Before Date of Amalgamation - Past company is liable <br> Dues after the Date of amalgamation - New company is liable</p>
-
-                <h3>Sec 89 Liability of Directors</h3>
-                <p>Private Company - Directors are  Joint and severally label</p>
-                <p>Public Company - Directors are not Joint and severally label</p>
-
-                <p>As per <strong>Sec 90</strong> Partners of a firm are joint and severally liable . If any Partner is retired same to be communicated to commissioner with in 30 days form date of retirement</p>
-
-                <p>In case of <strong>death of the partner</strong> the legal representative will still be liable upto the extent of Estate received from Deceased partner</p>
-
-                <h3>Sec 91 Liability of Guardians and trustee </h3>
-                <p>Guardians or trustee of Minor are liable for the dues of Minor</p>
-                
-            </div>
-            
-
         </main>
-
     </div>
-<script src="../../assets/template.js"></script>
+
+    <!-- Scripts -->
+    <script src="../../assets/template.js"></script>
+
+    <script>
+        // Active Sidebar Item on Scroll
+        const sections = document.querySelectorAll('.section-card, #assessment-matrix, #provisional-workflow, #audit-gst, #liability-special');
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        const contentEl = document.querySelector('.content');
+        contentEl.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - contentEl.offsetTop;
+                if (contentEl.scrollTop >= sectionTop - 120) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            sidebarLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

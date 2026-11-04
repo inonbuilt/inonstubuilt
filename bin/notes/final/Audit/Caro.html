@@ -3,557 +3,1893 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 7 - Reporting Under Companies Act, 2013 & CARO, 2020</title>
-    <link rel="stylesheet" href="../../assets/template.css">
+    <title>Chapter 7: Reporting Under Companies Act, 2013 & CARO, 2020 | Calcium Notes</title>
+
+    <!-- Primary SEO Meta Tags -->
+    <meta name="title" content="Chapter 7: Reporting Under Companies Act, 2013 & CARO, 2020 | Calcium Notes">
+    <meta name="description" content="Master CA Final Auditing Chapter 7: Section 143 Auditor Duties, Section 143(12) Fraud Reporting (Form ADT-4), CARO 2020 Applicability Rules, and all 21 Clauses with examples and formats.">
+    <meta name="keywords" content="CARO 2020, Companies Auditor Report Order 2020, CARO 21 Clauses, Section 143 Companies Act, Fraud Reporting Section 143(12), Form ADT-4, CA Final Audit Notes, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <meta name="robots" content="index, follow">
+
     <link rel="icon" href="../../../../fevicol.png" type="image/png">
+    <link rel="stylesheet" href="../../assets/template.css">
+
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YYJ8R39EXM');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
     </script>
-    <!-- Added add sense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
-    crossorigin="anonymous"></script>
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #eff6ff;
+            --primary-border: #bfdbfe;
+            --success: #059669;
+            --success-light: #ecfdf5;
+            --success-border: #a7f3d0;
+            --danger: #dc2626;
+            --danger-light: #fef2f2;
+            --danger-border: #fecaca;
+            --warning: #d97706;
+            --warning-light: #fffbeb;
+            --warning-border: #fde68a;
+            --purple: #7c3aed;
+            --purple-light: #f5f3ff;
+            --purple-border: #ddd6fe;
+            --slate-900: #0f172a;
+            --slate-800: #1e293b;
+            --slate-700: #334155;
+            --slate-600: #475569;
+            --slate-500: #64748b;
+            --slate-200: #e2e8f0;
+            --slate-100: #f1f5f9;
+            --slate-50: #f8fafc;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 14px -2px rgba(15, 23, 42, 0.08);
+            --shadow-lg: 0 10px 25px -4px rgba(15, 23, 42, 0.1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--slate-800);
+            background: #f8fafc;
+            line-height: 1.6;
+        }
+
+        /* Topbar Enhancements */
+        .topbar {
+            height: 64px;
+            background: #ffffff;
+            border-bottom: 1px solid var(--slate-200);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+        }
+
+        .topbar-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .back-hub-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: var(--radius-sm);
+            background: var(--slate-100);
+            color: var(--slate-700);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .back-hub-btn:hover {
+            background: var(--slate-200);
+            color: var(--slate-900);
+        }
+
+        .chapter-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--slate-900);
+        }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .progress-container {
+            width: 140px;
+            height: 6px;
+            background: var(--slate-200);
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: var(--primary);
+            border-radius: 999px;
+            transition: width 0.15s ease;
+        }
+
+        .toggle-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            background: var(--slate-100);
+            border: 1px solid var(--slate-200);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--slate-700);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .toggle-btn:hover {
+            background: var(--slate-200);
+            color: var(--slate-900);
+        }
+
+        /* Layout */
+        .layout {
+            display: flex;
+            height: calc(100vh - 64px);
+            overflow: hidden;
+        }
+
+        /* Sidebar Index */
+        .sidebar {
+            width: 270px;
+            background: #ffffff;
+            border-right: 1px solid var(--slate-200);
+            padding: 20px 16px;
+            overflow-y: auto;
+            flex-shrink: 0;
+            transition: width 0.3s ease, padding 0.3s ease;
+        }
+
+        .sidebar.hidden {
+            width: 0;
+            padding: 0;
+            overflow: hidden;
+            border: none;
+        }
+
+        .sidebar-header {
+            font-family: 'Outfit', sans-serif;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--slate-500);
+            margin-bottom: 14px;
+            padding-left: 8px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 12px;
+            border-radius: var(--radius-sm);
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--slate-700);
+            text-decoration: none;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar a:hover {
+            background: var(--slate-100);
+            color: var(--primary);
+            padding-left: 14px;
+        }
+
+        .sidebar a.active {
+            background: var(--primary-light);
+            color: var(--primary);
+            border-left-color: var(--primary);
+            font-weight: 700;
+        }
+
+        .sidebar-subitem {
+            padding-left: 28px !important;
+            font-size: 12.5px !important;
+            color: var(--slate-600) !important;
+        }
+
+        /* Main Content */
+        .content {
+            flex: 1;
+            padding: 32px 40px 80px 40px;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+
+        .content-container {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        /* Hero Header Banner */
+        .chapter-hero {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 36px 32px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-hero::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: rgba(37, 99, 235, 0.15);
+            pointer-events: none;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #93c5fd;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .hero-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+
+        .hero-desc {
+            font-size: 14.5px;
+            color: #94a3b8;
+            max-width: 760px;
+            line-height: 1.6;
+        }
+
+        .hero-stats-row {
+            display: flex;
+            gap: 20px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+
+        /* Section Cards */
+        .section-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-lg);
+            padding: 32px 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--slate-900);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--slate-100);
+            padding-bottom: 14px;
+        }
+
+        .sub-heading {
+            font-family: 'Outfit', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--slate-800);
+            margin: 26px 0 12px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Cards Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 18px 0;
+        }
+
+        .info-box {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            padding: 18px;
+            transition: all 0.2s;
+        }
+
+        .info-box:hover {
+            background: #ffffff;
+            border-color: var(--primary-border);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .info-box-header {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: var(--slate-900);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .info-box-body {
+            font-size: 13.5px;
+            color: var(--slate-600);
+            line-height: 1.5;
+        }
+
+        /* Callouts */
+        .callout {
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            margin: 18px 0;
+            font-size: 14px;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .callout-icon {
+            font-size: 18px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .callout-info {
+            background: var(--primary-light);
+            border: 1px solid var(--primary-border);
+            color: #1e3a8a;
+        }
+
+        .callout-success {
+            background: var(--success-light);
+            border: 1px solid var(--success-border);
+            color: #065f46;
+        }
+
+        .callout-warning {
+            background: var(--warning-light);
+            border: 1px solid var(--warning-border);
+            color: #92400e;
+        }
+
+        .callout-danger {
+            background: var(--danger-light);
+            border: 1px solid var(--danger-border);
+            color: #991b1b;
+        }
+
+        /* Inquiries Grid (Sec 143(1)) */
+        .inquiry-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin: 18px 0;
+        }
+
+        .inquiry-card {
+            background: #ffffff;
+            border: 1.5px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            padding: 16px 18px;
+            display: flex;
+            gap: 14px;
+        }
+
+        .inquiry-letter {
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .inquiry-text {
+            font-size: 13.5px;
+            color: var(--slate-700);
+            line-height: 1.5;
+        }
+
+        .inquiry-text strong {
+            color: var(--slate-900);
+        }
+
+        /* 3-Point Applicability Cards */
+        .applicability-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .app-card {
+            background: #ffffff;
+            border: 1.5px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        .app-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary);
+        }
+
+        .app-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary);
+        }
+
+        .app-card-limit {
+            font-family: 'Outfit', sans-serif;
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 10px 0 4px 0;
+        }
+
+        .app-card-title {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin-bottom: 6px;
+        }
+
+        .app-card-timing {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 6px;
+            background: var(--slate-100);
+            color: var(--slate-600);
+            display: inline-block;
+        }
+
+        /* Fraud Flowchart */
+        .flowchart-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .flow-col {
+            background: var(--slate-50);
+            border: 1.5px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            padding: 22px;
+        }
+
+        .flow-col.major {
+            border-color: #fca5a5;
+            background: #fffafa;
+        }
+
+        .flow-header {
+            font-size: 16px;
+            font-weight: 800;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .flow-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .flow-step-item {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-sm);
+            padding: 12px 14px;
+            font-size: 13px;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .flow-num {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #1e293b;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* CARO 21 Clauses Interactive Hub */
+        .clauses-control-bar {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .search-input-box {
+            position: relative;
+            width: 100%;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 16px 12px 42px;
+            border-radius: var(--radius-sm);
+            border: 1.5px solid var(--slate-200);
+            font-size: 14px;
+            font-family: inherit;
+            outline: none;
+            transition: all 0.2s;
+            background: #ffffff;
+        }
+
+        .search-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--slate-400);
+            font-size: 16px;
+        }
+
+        .clause-filter-pills {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 12.5px;
+            font-weight: 600;
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            color: var(--slate-700);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover {
+            background: var(--slate-100);
+            color: var(--slate-900);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+
+        /* Clause Cards */
+        .clause-cards-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .clause-item-card {
+            background: #ffffff;
+            border: 1.5px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            padding: 22px 24px;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .clause-item-card:hover {
+            border-color: var(--primary-border);
+            box-shadow: var(--shadow-md);
+        }
+
+        .clause-item-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--primary);
+        }
+
+        .clause-card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .clause-id-badge {
+            font-family: 'Outfit', sans-serif;
+            font-size: 13px;
+            font-weight: 800;
+            color: var(--primary);
+            background: var(--primary-light);
+            border: 1px solid var(--primary-border);
+            padding: 3px 10px;
+            border-radius: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        .clause-category-tag {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--slate-500);
+            background: var(--slate-100);
+            padding: 3px 10px;
+            border-radius: 999px;
+        }
+
+        .clause-heading {
+            font-family: 'Outfit', sans-serif;
+            font-size: 17px;
+            font-weight: 800;
+            color: var(--slate-900);
+            margin-bottom: 12px;
+        }
+
+        .clause-content-text {
+            font-size: 14px;
+            color: var(--slate-700);
+            line-height: 1.6;
+        }
+
+        .sub-clause-box {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            margin-top: 10px;
+            font-size: 13.5px;
+            line-height: 1.5;
+        }
+
+        .sub-clause-tag {
+            font-weight: 700;
+            color: var(--primary);
+            margin-right: 6px;
+        }
+
+        .threshold-pill {
+            display: inline-block;
+            background: #fef3c7;
+            color: #92400e;
+            border: 1px solid #fde68a;
+            padding: 1px 7px;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        /* Clean Modern Tables */
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin: 14px 0;
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+
+        .styled-table th {
+            background: var(--slate-100);
+            color: var(--slate-800);
+            font-weight: 700;
+            text-align: left;
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--slate-200);
+            font-size: 12.5px;
+        }
+
+        .styled-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--slate-200);
+            color: var(--slate-700);
+            text-align: left;
+        }
+
+        .styled-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .inquiry-grid, .applicability-grid, .flowchart-container {
+                grid-template-columns: 1fr;
+            }
+            .content {
+                padding: 20px 16px 60px 16px;
+            }
+            .chapter-hero {
+                padding: 24px 20px;
+            }
+            .hero-title {
+                font-size: 22px;
+            }
+        }
+    </style>
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/Audit/Caro.html">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.calciumnotes.com/sitemap.xml">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.calciumnotes.com/bin/notes/final/Audit/Caro.html">
+    <meta property="og:title" content="Chapter 7: Reporting Under Companies Act, 2013 &amp; CARO, 2020 | Calcium Notes">
+    <meta property="og:description" content="Master CA Final Audit Chapter 7: Section 143 Auditor Duties, Section 143(12) Fraud Reporting (Form ADT-4), CARO 2020 Applicability Rules, and all 21 Clauses.">
+    <meta property="og:image" content="https://www.calciumnotes.com/og-image.png">
+    <meta property="og:site_name" content="Calcium Notes">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Calciumnotes">
+    <meta name="twitter:creator" content="@Calciumnotes">
+    <meta name="twitter:url" content="https://www.calciumnotes.com/bin/notes/final/Audit/Caro.html">
+    <meta name="twitter:title" content="Chapter 7: Reporting Under Companies Act, 2013 &amp; CARO, 2020 | Calcium Notes">
+    <meta name="twitter:description" content="Master CA Final Audit Chapter 7: Section 143 Auditor Duties, Section 143(12) Fraud Reporting (Form ADT-4), CARO 2020 Applicability, and 21 Clauses.">
+    <meta name="twitter:image" content="https://www.calciumnotes.com/og-image.png">
+
+    <!-- JSON-LD Structured Data: Article & BreadcrumbList & FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Chapter 7: Reporting Under Companies Act, 2013 & CARO, 2020",
+      "description": "Master CA Final Auditing Chapter 7: Section 143 Auditor Duties, Section 143(12) Fraud Reporting (Form ADT-4), CARO 2020 Applicability Rules, and all 21 Clauses with examples and formats.",
+      "image": "https://www.calciumnotes.com/og-image.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Calcium Notes"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Calcium Notes",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.calciumnotes.com/fevicol.png"
+        }
+      },
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-11-05",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.calciumnotes.com/bin/notes/final/Audit/Caro.html"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.calciumnotes.com"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "CA Notes Portal",
+        "item": "https://www.calciumnotes.com/bin/notes/notes.html"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Advanced Auditing Notes",
+        "item": "https://www.calciumnotes.com/bin/notes/notes/audnotes.html"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "name": "CARO 2020 & Section 143",
+        "item": "https://www.calciumnotes.com/bin/notes/final/Audit/Caro.html"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which private companies are exempt from CARO 2020 applicability?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A private limited company that is not a subsidiary or holding company of a public company is exempt from CARO 2020 if it meets all three conditions: (1) Paid-up capital plus reserves and surplus does not exceed ₹1 Crore as on balance sheet date; (2) Total borrowings from banks/financial institutions do not exceed ₹1 Crore at any point of time during the financial year; and (3) Total revenue (including revenue from discontinuing operations) does not exceed ₹10 Crore during the financial year as per financial statements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the threshold and procedure for reporting fraud under Section 143(12) in Form ADT-4?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If an auditor has reason to believe that an offence of fraud involving an amount of ₹1 Crore or above has been committed against the company by its officers or employees, the auditor must report the matter to the Board or Audit Committee within 2 days seeking reply within 45 days. Upon receipt of reply or failure to receive reply, the auditor forwards the report in Form ADT-4 to the Central Government (Ministry of Corporate Affairs) within 15 days, making the total timeline 60 days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many reporting clauses are included under CARO 2020?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CARO 2020 contains 21 comprehensive reporting clauses, including property plant and equipment title deeds, inventory physical verification and working capital limits > ₹5 Crore, investments and guarantees, loans to directors, deposits, cost records, statutory dues, unrecorded income surrendered in income tax, defaults in repayment of borrowings, IPO/FPO fund utilisation, fraud reporting, Nidhi companies, related party transactions, internal audit system, non-cash transactions with directors, RBI NBFC registration, cash losses, auditor resignation, CSR unspent amount transfer, and qualifications in subsidiary CARO reports."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     
     <!-- Top Bar -->
     <header class="topbar">
-        <button class="toggle-btn" onclick="toggleSidebar()">✖ Close Index</button>
-        <div class="chapter-title">Chapter 7 – Reporting Under Companies Act, 2013 & CARO, 2020</div>
+        <div class="topbar-left">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰ Quick Index</button>
+            <a href="../../notes.html" class="back-hub-btn">← Notes Hub</a>
+            <span class="chapter-title">Chapter 7: Reporting Under Companies Act &amp; CARO 2020</span>
+        </div>
 
-        <div class="progress-container">
-            <div class="progress-bar"></div>
+        <div class="topbar-right">
+            <div class="progress-container" title="Reading Progress">
+                <div class="progress-bar"></div>
+            </div>
         </div>
     </header>
 
     <!-- Main Layout -->
     <div class="layout">
 
-        <!-- Sidebar -->
+        <!-- Sidebar Navigation -->
         <aside class="sidebar" id="sidebar">
-            <h3>Index</h3>
+            <div class="sidebar-header">Table of Contents</div>
             <ul>
-                <li><a href="#duties">1. Duties of Auditors</a></li>
-                <li><a href="#applicability">2. Applicability of CARO, 2020</a></li>
-                <li><a href="#matters">3. Matters Included in CARO, 2020</a></li>
-                <li><a href="#clauses">4. CARO – 21 Clauses</a></li>
+                <li><a href="#overview">📌 Chapter Overview</a></li>
+                <li><a href="#duties">1. Duties of Auditors (Sec 143)</a></li>
+                <li><a href="#sec143-1" class="sidebar-subitem">↳ Sec 143(1) Duty to Inquire</a></li>
+                <li><a href="#sec143-3" class="sidebar-subitem">↳ Sec 143(3) &amp; Rule 11 Reporting</a></li>
+                <li><a href="#sec143-12" class="sidebar-subitem">↳ Sec 143(12) Fraud Reporting</a></li>
+                <li><a href="#branch-audit" class="sidebar-subitem">↳ Sec 143(8) Branch Audit</a></li>
+                <li><a href="#applicability">2. CARO 2020 Applicability</a></li>
+                <li><a href="#exempted-entities" class="sidebar-subitem">↳ Non-Applicable Entities</a></li>
+                <li><a href="#pvt-limits" class="sidebar-subitem">↳ Private Co. 3-Point Test</a></li>
+                <li><a href="#deep-dive" class="sidebar-subitem">↳ Capital, Borrowing &amp; Revenue Rules</a></li>
+                <li><a href="#clauses-hub">3. CARO 2020 – 21 Clauses</a></li>
+                <li><a href="#summary-21" class="sidebar-subitem">↳ Quick 21 Clauses Map</a></li>
+                <li><a href="#all-clauses" class="sidebar-subitem">↳ Clause-by-Clause Details</a></li>
             </ul>
         </aside>
 
-        <!-- Content -->
+        <!-- Main Content Area -->
         <main class="content">
+            <div class="content-container">
 
-            <!-- 1. Duties of Auditors -->
-            <div class="card section" id="duties">
-                <h2>1. Duties of Auditors</h2>
-                
-                <h3>1. Duty of Auditor to Inquire on certain matters Sec 143(1)</h3>
-                <p>It is the duty of auditor to inquire into the following matters-</p>
-                <ul>
-                    <li>(a) Whether loans & advances made by the co. on the basis of security have been properly secured & whether the terms on which they have been made are prejudicial to the interests of the co. or its members;</li>
-                    <li>(b) Whether transactions of the co. which are represented merely by book entries are prejudicial to the interests of the co.;</li>
-                    <li>(c) Where the co. not being an investment co. or a banking co., whether so much of the assets of the co. as consist of shares, debentures & other securities have been sold at a price less than that at which they were purchased by the co.;</li>
-                    <li>(d) Whether loans & advances made by the co. have been shown as deposits;</li>
-                    <li>(e) Whether personal expenses have been charged to revenue account;</li>
-                    <li>(f) Where it is stated in the books & documents of the co. that any shares have been allotted for cash, whether cash has actually been received in respect of such allotment, & if no cash has actually been so received, whether the position as stated in the account books & the balance sheet is correct, regular & not misleading.</li>
-                </ul>
-                <p>For Section 143(1), it could be said that the auditor should make a report to the members in case he finds answer to any of these matters in adverse.</p>
-
-                <h3>2. Duty to Sign the Audit Report - Sec 145</h3>
-                <p>As per section 145 of the Companies Act, 2013, the person appointed as an auditor of the co. shall sign the auditor's report or sign or certify any other document of the co., in accordance with the provisions of section 141(2) & the qualifications, observations or comments on financial transactions or matters, which have any adverse effect on the functioning of the co. mentioned in the auditors' report shall be read before the co. in general meeting & shall be open to inspection by any member of the co.</p>
-
-                <h3>3. Duty to comply with Auditing Standards-Sec 143(9) & (10)</h3>
-                <p>- As per section 143(9) of the Companies Act, 2013, every auditor shall comply with the auditing standards.</p>
-                <p>Further, as per section 143(10) of the Act, the CG may prescribe the standards of auditing or any addendum thereto, as recommended by the ICAI, constituted u/s 3 of the CA Act, 1949, in consultation with & after examination of the recommendations made by the NFRA.</p>
-                <p>Provided that until any auditing standards are notified, any standard, or standards of auditing specified by the ICAI shall be deemed to be the auditing standards.</p>
-                
-                <h3>4. Duty to Audit Report - Sec 143(3)</h3>
-                <p>As per sub-section (3) of section 143, the auditor's report shall also state-</p>
-                <ol type="a">
-                    <li>Whether he has sought & obtained all the information & explanations which to the best of his knowledge & belief were necessary for the purpose of his audit & if not, the details thereof & the effect of such information on the FS;</li>
-                    <li>Whether, in his opinion, proper books of account as required by law have been kept by the co. so far as appears from his examination of those books & proper returns adequate for the purposes of his audit have been received from branches not visited by him;</li>
-                    <li>Whether the report on the accounts of any branch office of the co. audited under sub-section (8) by a person other than the company's auditors has been sent to him under the proviso to that sub-section & the manner in which he has dealt with it in preparing his report;</li>
-                    <li>Whether the company's balance sheet & profit & loss account dealt with in the report are in agreement with the books of account & returns;</li>
-                    <li>Whether, in his opinion, the FS comply with the accounting standards;</li>
-                    <li>The observations or comments of the auditors on financial transactions or matters which have any adverse effect on the functioning of the co.;</li>
-                    <li>Whether any director is disqualified from being appointed as a director under sub-section (2) of the section 164;</li>
-                    <li>Any qualification, reservation or adverse remark relating to the maintenance of accounts & other matters connected therewith;</li>
-                    <li>Whether the co. has adequate internal financial controls with reference to FS in place & the operating effectiveness of such controls;<br>
-                    <span class="note">(Note: Section143(3)(i) shall not apply to a private co.:-(i) which is a one person co. or a small co.; or(ii) which has turnover less than 50 crores as per latest audited FS & which has aggregate borrowings from banks or financial institutions or anybody corporate at any point of time during the F.Y. less than 25 crore)</span></li>
-                    <li>Such other matters as may be prescribed. Rule 11 of the Companies (Audit & Auditors) Rules, 2014 prescribes the other matters to be included in auditor's report. The auditor's report shall also include their views & comments on the following matters, namely:-
-                        <ol>
-                            <li>Whether the co. has disclosed the impact, if any, of pending litigations on its financial position in its FS;</li>
-                            <li>Whether the co. has made provision, as required under any law or accounting standards, for material foreseeable losses, if any, on long term contracts including derivative contracts;</li>
-                            <li>Whether there has been any delay in transferring amounts, required to be transferred, to the Investor Education & Protection Fund by the co.</li>
-                            <li>(i) Whether the management has represented that, to the best of it's knowledge & belief, other than as disclosed in the notes to the accounts, no funds have been advanced or loaned or invested (either from borrowed funds or share premium or any other sources or kind of funds) by the co. to or in any other person(s) or entity (ies), including foreign entities ("Intermediaries"), with the understanding, whether recorded in writing or otherwise, that the Intermediary shall, whether, directly or indirectly lend or invest in other persons or entities identified in any manner whatsoever by or on behalf of the co. ("Ultimate Beneficiaries") or provide any guarantee, security or the like on behalf of the Ultimate Beneficiaries;<br>
-                            (ii) Whether the management has represented, that, to the best of it's knowledge & belief, other than as disclosed in the notes to the accounts, no funds have been received by the co. from any person(s) or entity(ies), including foreign entities ("Funding Parties"), with the understanding, whether recorded in writing or otherwise, that the co. shall, whether, directly or indirectly, lend or invest in other persons or entities identified in any manner whatsoever by or on behalf of the Funding Party ("Ultimate Beneficiaries") or provide any guarantee, security or the like on behalf of Ultimate Beneficiaries; &<br>
-                            (iii) Based on such audit procedures that the auditor has considered reasonable & appropriate in the circumstances, nothing has come to their notice that has caused them to believe that the representations under sub-clause (i) & (ii) contain any material misstatement.</li>
-                            <li>Whether the dividend declared or paid during the year by the co. is in compliance with section 123 of the Companies Act, 2013.</li>
-                            <li>Whether the co. has used such accounting software for maintaining its books of account which has a feature of recording audit trail (edit log) facility & the same has been operated throughout the year for all transactions recorded in the software & the audit trail feature has not been tampered with & the audit trail has been preserved by the co. as per the statutory requirements for record retention.</li>
-                        </ol>
-                    </li>
-                </ol>
-                <p>Audit Trail means, a step-by-step sequential record which provides evidence of the documented history of financial transactions to its source. An auditor can trace every step of, the financial data of a particular transaction right from the general ledger to its source document with the help of the audit trail.</p>
-
-                <h3>Managerial Remuneration</h3>
-                <p>"The auditor of the co. shall, in his report u/s 143, make a statement as to whether the remuneration paid by the co. to its directors is in accordance with the provisions of this section, whether remuneration paid to any director is in excess of the limit laid down under this section & give such other details as may be prescribed".</p>
-                <p>The aforesaid reporting requirement for auditors of public companies needs to be covered in auditor's report under the Section "Report on Other Legal & Regulatory Requirements".</p>
-
-                <h3>5. Duty to Report on Frauds - Sec 143(12)</h3>
-                <h4>A. Reporting to the Central Government -</h4>
-                <p>As per section 143(12) of the Companies Act, 2013, if an auditor of a co. in the course of the performance of his duties as auditor, has reason to believe that an offence of fraud involving such amount or amounts as may be prescribed, is being or has been committed in the co. by its officers or employees, the auditor shall report the matter to the Central Government within such time & in such manner as may be prescribed.</p>
-                <p>If an auditor of a co., in the course of the performance of his duties as statutory auditor, has reason to believe that an offence of fraud, which involves or is expected to involve individually an amount of 1 crore or above, is being or has been committed against the co. by its officers or employees, the auditor shall report the matter to the Central Government.</p>
-                <p>The manner of reporting the matter to the Central Government is as follows:</p>
-                <ol type="a">
-                    <li>The auditor shall report the matter to the Board or the Audit Committee, as the case may be, immediately but not later than 2 days of his knowledge of the fraud, seeking their reply or observations within 45 days;</li>
-                    <li>On receipt of such reply or observations, the auditor shall forward his report & the reply or observations of the Board or the Audit Committee along with his comments (on such reply or observations of the Board or the Audit Committee) to the CG within 15 days from the date of receipt of such reply or observations;</li>
-                    <li>In case the auditor fails to get any reply or observations from the Board or the Audit Committee within the stipulated period of 45 days, he shall forward his report to the CG along with a note containing the details of his report that was earlier forwarded to Board or Audit Committee for which he has not received any reply or observations;</li>
-                    <li>The report shall be sent to the Secretary, Ministry of Corporate Affairs in a sealed cover by Registered Post with Acknowledgement Due or by Speed Post followed by an e-mail in confirmation of the same;</li>
-                    <li>The report shall be on the letter-head of the auditor containing postal address, e-mail address & contact telephone number or mobile number & be signed by the auditor with his seal & shall indicate his Membership Number; &</li>
-                    <li>The report shall be in the form of a statement as specified in Form ADT-4.</li>
-                </ol>
-
-                <h4>B. Reporting to the Audit Committee or Board -</h4>
-                <p>In case of a fraud involving lesser than the amount specified in sub-rule (1) [i.e. less than 1 crore], the auditor shall report the matter to Audit Committee constituted u/s 177 or to the Board immediately but not later than 2 days of his knowledge of the fraud & he shall report the matter specifying the following:</p>
-                <ol type="a">
-                    <li>Nature of Fraud with description;</li>
-                    <li>Approximate amount involved; &</li>
-                    <li>Parties involved.</li>
-                </ol>
-
-                <h4>C. Disclosure in the Board's Report:</h4>
-                <p>The following details of each of the fraud reported to the Audit Committee or the Board under sub-rule (3) during the year shall be disclosed in the Board's Report: -</p>
-                <ol type="a">
-                    <li>Nature of Fraud with description;</li>
-                    <li>Approximate Amount involved;</li>
-                    <li>Parties involved, if remedial action not taken; &</li>
-                    <li>Remedial actions taken.</li>
-                </ol>
-
-                <p>Section 143(13) of the Companies Act, 2013 states that no duty to which an auditor of a co. may be subject to shall be regarded as having been contravened by reason of his reporting the matter above if it is done in good faith.</p>
-                <p>The provisions regarding fraud reporting shall also apply, mutatis mutandis, to a cost auditor & a secretarial auditor during the performance of his duties u/s 148 & section 204 respectively.</p>
-                <p>If any auditor, cost accountant or company secretary in practice does not comply with the provisions of section 143(12), he shall be liable to a penalty of</p>
-                <ol type="a">
-                    <li>in case of a listed co., be liable to a penalty of 5 lakhs; &</li>
-                    <li>in case of any other co., be liable to a penalty of 1 lakh.</li>
-                </ol>
-                <p>The auditor is also required to report under clause (xi)(a) of paragraph 3 of CARO, 2020 during the year. If yes, the nature & the amount involved is to be indicated.</p>
-                <p>The definition of fraud as per SA 240 & the explanation of fraud as per Section 447 of the 2013 Act are similar, except that u/s 447, fraud includes 'acts with an intent to injure the interests of the co. or its shareholders or its creditors or any other person, whether or not there is any wrongful gain or wrongful loss.' However, an auditor may not be able to detect acts that have intent to injure the interests of the co. or cause wrongful gain or wrongful loss, unless the financial effects of such acts are reflected in the books of account/FS of the co.</p>
-                <p>For example,</p>
-                <ul>
-                    <li>(i) An auditor may not be able to detect if an employee is receiving pay-offs for favoring a specific vendor, which is a fraudulent act, since such pay-offs would not be recorded in the books of account of the co.;</li>
-                    <li>(ii) If the password of a key managerial personnel is stolen & misused to access confidential/restricted information, the effect of the same may not be determinable by the management or by the auditor.</li>
-                </ul>
-
-                <h3>6. Duty To Report On Any Other Matter Specified By CG</h3>
-                <p>The CG may, in consultation with the NFRA, by general or special order, direct, in respect of such class or description of companies, as may be specified in the order, that the auditor's report shall also include a statement on such matters as may be specified therein.</p>
-                <p>Under this power given to CG, the CG has issued CARO, 2020.</p>
-
-                <h3>7. Duties as to Branch Audit - Sec 143(8)</h3>
-                <p>Qualifications of Branch Auditor - Where a co. has a branch office, the accounts of it shall be audited either by the auditor appointed for the co. under this Act or by any other person qualified for appointment as an auditor of the co. under this Act & appointed as such u/s 139, or</p>
-                <p>Where the branch office is situated in a country outside India, the accounts of the branch office shall be audited either by the company's auditor or by an accountant or by any other person duly qualified to act as an auditor of the accounts of the branch office in accordance with the laws of that country.</p>
-                <p>The branch auditor shall prepare a report on the accounts of the branch examined by him & send it to the auditor of the co. who shall deal with it in his report in such manner as he considers necessary.</p>
-                <p>Reporting of fraud by the auditor shall also extend to such branch auditor to the extent it relates to the concerned branch.</p>
-
-                <h3>8. Duty to state the reason for qualification or negative report- Sec 143(4)</h3>
-                <p>As per section 143(4), where any of the matters required to be included in the audit report is answered in the negative or with a qualification, the report shall state the reasons there for.</p>
-            </div>
-
-            <!-- 2. Applicability of CARO, 2020 -->
-            <div class="card section" id="applicability">
-                <h2>2. APPLICABILITY OF COMPANIES (AUDITOR'S REPORT) ORDER, 2020</h2>
-                <ol>
-                    <li>In exercise of the powers conferred by section 143(11) of the Companies Act, 2013 the Central Government hereby makes the COMPANIES (AUDITOR'S REPORT) ORDER, 2020.</li>
-                    <li>It shall apply to every co. including a foreign co. as defined in clause (42) of section 2 of the Companies Act, 2013, except-
-                        <ul style="list-style-type: lower-roman;">
-                            <li>(i) a banking co. as defined in clause (c) of section 5 of the Banking Regulation Act, 1949;</li>
-                            <li>(ii) an insurance co. as defined under the Insurance Act, 1938;</li>
-                            <li>(iii) a co. licensed to operate u/s 8 of the Companies Act;</li>
-                            <li>(iv) a One Person Co. as defined under clause (62) of section 2 of the Companies Act & a small co. as defined under clause (85) of section 2 of the Companies Act; &</li>
-                            <li>(v) a private limited co., not being a subsidiary or holding co. of a public co.,
-                                <ul>
-                                    <li>having a paid up capital & reserves & surplus not more than 1 crore as on the BS date &</li>
-                                    <li>which does not have total borrowings exceeding 1 crore from any bank or financial institution at any point of time during the F.Y. &</li>
-                                    <li>which does not have a total revenue as disclosed in Schedule III to the Companies Act, 2013 (including revenue from discontinuing operations) exceeding 10 crores during the F.Y. as per the FS.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ol>
-                <p>Provided this Order shall not apply to the auditor's report on consolidated financial statements except clause (xxi) of paragraph 3.</p>
-
-                <h3>3. Reasons to be stated for unfavourable or qualified answers. -</h3>
-                <p>Where, in the auditor's report, the answer to any of the questions referred to in paragraph 3 is unfavourable or qualified, the auditor's report shall also state the basis for such unfavourable or qualified answer, as the case may be.</p>
-                <p>Where the auditor is unable to express any opinion on any specified matter, his report shall indicate such fact together with reasons as to why it is not possible for him to give his opinion on the same.</p>
-
-                <h3>Paid-Up Capital & Reserves & Surplus</h3>
-                <ul>
-                    <li>While calculating the paid-up capital, amount of calls unpaid should be deducted from & the amount originally paid-up on forfeited shares should be added to the figure of paid-up capital.</li>
-                    <li>Share application money received should not be considered as part of the paid-up capital.</li>
-                    <li>Convertible instruments whether optionally or fully convertible should be considered in paid up share capital only once the actual shares are issued by the company.</li>
-                    <li>"Reserves & Surplus" consists of: Capital Reserves; Capital Redemption Reserve; Securities Premium; Debenture Redemption Reserve; Revaluation Reserve; Share Options O/s Account; Other Reserves-(specify the nature & purpose of each reserve & the amount in respect thereof); Surplus i.e., balance in statement of profit & loss. (Debit balance of statement of profit & loss shall be shown as a negative figure under the head "Surplus".) Both capital as well as revenue reserves should be taken into consideration.</li>
-                    <li>It is important to note that as per Division II of Schedule III to the Act, equity component of compound financial instrument, revaluation surplus, debt/equity instrument through other comprehensive income (OCI), effective portion of cash flow hedges, exchange difference on translating the FS & other items of OCI are not considered to be part of reserve & surplus.</li>
-                </ul>
-
-                <h3>Borrowings</h3>
-                <ul>
-                    <li>Borrowings from banks or financial institutions can be long term or short term & are normally in the form of term loans, demand loans, export credits, cash credits, overdraft facilities, bills purchased or discounted.</li>
-                    <li>Current maturity of long term borrowings will also form part of borrowings.</li>
-                    <li>O/s dues in respect of credit cards would also be considered.</li>
-                    <li>O/s balances of such borrowings should be considered as borrowing.</li>
-                    <li>There is no stipulation in the Order that it should be a secured borrowing or an unsecured borrowing.</li>
-                    <li>Non-fund based credit facilities, to the extent such facilities have devolved & have been converted into fund based credit facilities, should also be considered as o/s borrowings.</li>
-                    <li>The figures of o/s borrowing would include the amount of bank guarantees issued by the bank on behalf of the co. where such guarantee(s) has been invoked & encashed or where, say, a letter of credit has been devolved on the co.</li>
-                    <li>In case of term loans, interest accrued & due is considered as a borrowing whereas interest accrued but not due is not considered as a borrowing.</li>
-                    <li>In case the co has a cash credit facility, whose balance is fluctuating in nature, the Order would apply to the co. in case on any day during the F.Y. concerned, the amount o/s in the cash credit facility along with other borrowings as per books of the co. exceeds 1 crore.</li>
-                    <li>The condition would also apply notwithstanding the fact that the co. has been granted an overdraft facility against, say, fixed deposits, of the co. with the concerned bank.</li>
-                </ul>
-
-                <h3>Revenue</h3>
-                <ul>
-                    <li>The term, "revenue", for the purpose of this Order shall be total revenue disclosed in Schedule III to the Act for companies required to comply with AS & total income for companies required to comply with Ind AS.</li>
-                    <li>Accordingly, the total revenue/total income would include other income as per Schedule III.</li>
-                </ul>
-
-                <h3>Branch Audit/Liasion Office</h3>
-                <ul>
-                    <li>The Order is also applicable to the audits of branch(es) of a co. since section 143(8) clearly specifies that a branch auditor has the same duties in respect of audit as the company's auditor.</li>
-                    <li>The Order is also applicable to the audits of project office/liaison office established by a co. outside India, to whom the Order applies.</li>
-                </ul>
-            </div>
-
-            <!-- 3. Matters Included in CARO, 2020 -->
-            <div class="card section" id="matters">
-                <h2>3. MATTERS TO BE INCLUDED IN THE AUDITOR'S REPORT AS PER CARO, 2020</h2>
-                
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>CLAUSE</th>
-                                <th>MATTERS TO BE INCLUDED IN THE AUDITOR'S REPORT</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>(i)</td>
-                                <td><strong>PROPERTY, PLANT & EQUIPMENT/INTANGIBLE ASSETS</strong></td>
-                            </tr>
-                            <tr>
-                                <td>(i)(a)(A)</td>
-                                <td>Whether the company is maintaining proper records showing full particulars, including quantitative details & situation of Property, Plant & Equipment;</td>
-                            </tr>
-                            <tr>
-                                <td>(i)(a)(B)</td>
-                                <td>Whether the company is maintaining proper records showing full particulars of intangible assets;</td>
-                            </tr>
-                            <tr>
-                                <td>(i)(b)</td>
-                                <td>Whether these Property, Plant & Equipment have been physically verified by the management at reasonable intervals; whether any material discrepancies were noticed on such verification & if so, whether the same have been properly dealt with in the books of account;</td>
-                            </tr>
-                            <tr>
-                                <td>(i)(c)</td>
-                                <td>Whether the title deeds of all the immovable properties (other than properties where the company is the lessee & the lease agreements are duly executed in favour of the lessee) disclosed in the financial statements are held in the name of the company, if not, provide the details thereof in the format below:<br><br>
-                                    <div class="table-container">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>Description of property</th>
-                                                    <th>Gross carrying value</th>
-                                                    <th>Held in name of company</th>
-                                                    <th>Whether promoter, director or their relative or employee</th>
-                                                    <th>Period held - indicate range, where appropriate</th>
-                                                    <th>Reason for not being held in name of company*<br><span class="note">*also indicate if in dispute</span></th>
-                                                </tr>
-                                            </thead>
-                                        </table>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>(i)(d)</td>
-                                <td>Whether the company has revalued its Property, Plant & Equipment (including Right of Use assets) or intangible assets or both during the year &, if so, whether the revaluation is based on the valuation by a Registered Valuer; specify the amount of change, if change is 10% or more in the aggregate of the net carrying value of each class of Property, Plant & Equipment or intangible assets;</td>
-                            </tr>
-                            <tr>
-                                <td>(i)(e)</td>
-                                <td>Whether any proceedings have been initiated or are pending against the company for holding any benami property under the Benami Transactions (Prohibition) Act, 1988 (45 of 1988) & rules made thereunder, if so, whether the company has appropriately disclosed the details in its financial statements;</td>
-                            </tr>
-                            <tr>
-                                <td>(ii)</td>
-                                <td><strong>INVENTORY/WORKING CAPITAL</strong></td>
-                            </tr>
-                            <tr>
-                                <td>(ii)(a)</td>
-                                <td>Whether physical verification of inventory has been conducted at reasonable intervals by the management & whether, in the opinion of the auditor, the coverage & procedure of such verification by the management is appropriate; whether any discrepancies of 10% or more in the aggregate for each class of inventory were noticed & if so, whether they have been properly dealt with in the books of account;</td>
-                            </tr>
-                            <tr>
-                                <td>(ii)(b)</td>
-                                <td>Whether during any point of time of the year, the company has been sanctioned working capital limits in excess of 5 crores, in aggregate, from banks or financial institutions on the basis of security of current assets; whether the quarterly returns or statements filed by the company with such banks or financial institutions are in agreement with the books of account of the Company, if not, give details;</td>
-                            </tr>
-                            <tr>
-                                <td>(iii)</td>
-                                <td><strong>LOANS/INVESTMENTS/GUARANTEES/SECURITIES - Nature of Transactions</strong><br>
-                                Whether during the year the company has made investments in, provided any guarantee or security or granted any loans or advances in the nature of loans, secured or unsecured, to companies, firms, Limited Liability Partnerships or any other parties, if so,</td>
-                            </tr>
-                            <tr>
-                                <td>(iii)(a)</td>
-                                <td>whether during the year the company has provided loans or provided advances in the nature of loans, or stood guarantee, or provided security to any other entity [not applicable to companies whose principal business is to give loans], if so, indicate -<br>
-                                (A) the aggregate amount during the year, & balance o/s at the balance sheet date with respect to such loans or advances & guarantees or security to subsidiaries, joint ventures & associates;<br>
-                                (B) the aggregate amount during the year, & balance o/s at the balance sheet date with respect to such loans or advances & guarantees or security to parties other than subsidiaries, joint ventures & associates;</td>
-                            </tr>
-                            <tr>
-                                <td>(iii)(b)</td>
-                                <td>whether the investments made, guarantees provided, security given & the terms & conditions of the grant of all loans & advances in the nature of loans & guarantees provided are not prejudicial to the company's interest;</td>
-                            </tr>
-                            <tr>
-                                <td>(iii)(c)</td>
-                                <td>in respect of loans & advances in the nature of loans, whether the schedule of repayment of principal & payment of interest has been stipulated & whether the repayments or receipts are regular;</td>
-                            </tr>
-                            <tr>
-                                <td>(iii)(d)</td>
-                                <td>if the amount is overdue, state the total amount overdue for more than 90 days, & whether reasonable steps have been taken by the company for recovery of the principal & interest;</td>
-                            </tr>
-                            <tr>
-                                <td>(iii)(e)</td>
-                                <td>whether any loan or advance in the nature of loan granted which has fallen due during the year, has been renewed or extended or fresh loans granted to settle the overdues of existing loans given to the same parties, if so, specify the aggregate amount of such dues renewed or extended or settled by fresh loans & the percentage of the aggregate to the total loans or advances in the nature of loans granted during the year [not applicable to companies whose principal business is to give loans];</td>
-                            </tr>
-                            <tr>
-                                <td>(iii)(f)</td>
-                                <td>whether the company has granted any loans or advances in the nature of loans either repayable on demand or without specifying any terms or period of repayment, if so, specify the aggregate amount, percentage thereof to the total loans granted, aggregate amount of loans granted to Promoters, related parties as defined in clause (76) of section 2 of the Companies Act, 2013;</td>
-                            </tr>
-                            <tr>
-                                <td>(iv)</td>
-                                <td><strong>LOANS/INVESTMENTS/GUARANTEES/SECURITIES - Compliance of Sec 185 & 186</strong><br>
-                                In respect of loans, investments, guarantees, & security, whether provisions of section 185 & 186 of the Companies Act have been complied with, if not, provide the details thereof;</td>
-                            </tr>
-                            <tr>
-                                <td>(v)</td>
-                                <td><strong>DEPOSITS</strong><br>
-                                In respect of deposits accepted by the company or amounts which are deemed to be deposits, whether the directives issued by the Reserve Bank of India & the provisions of sections 73 to 76 or any other relevant provisions of the Companies Act & the rules made thereunder, where applicable, have been complied with, if not, the nature of such contraventions be stated; if an order has been passed by Company Law Board or National Company Law Tribunal or Reserve Bank of India or any court or any other tribunal, whether the same has been complied with or not;</td>
-                            </tr>
-                            <tr>
-                                <td>(vi)</td>
-                                <td><strong>COST RECORDS</strong><br>
-                                Whether maintenance of cost records has been specified by the Central Government u/s 148(1) of Companies Act & whether such accounts & records have been so made & maintained;</td>
-                            </tr>
-                            <tr>
-                                <td>(vii)</td>
-                                <td><strong>STATUTORY DUES</strong></td>
-                            </tr>
-                            <tr>
-                                <td>(vii)(a)</td>
-                                <td>Whether the company is regular in depositing undisputed statutory dues including Goods & Services Tax, provident fund, employees' state insurance, income-tax, sales-tax, service tax, duty of customs, duty of excise, value added tax, cess & any other statutory dues to the appropriate authorities & if not, the extent of the arrears of o/s statutory dues as on the last day of the financial year concerned for a period of more than 6 months from the date they became payable, shall be indicated;</td>
-                            </tr>
-                            <tr>
-                                <td>(vii)(b)</td>
-                                <td>Where statutory dues referred to in sub-clause (a) have not been deposited on account of any dispute then the amounts involved & the forum where dispute is pending shall be mentioned (a mere representation to the concerned department shall not be treated as a dispute);</td>
-                            </tr>
-                            <tr>
-                                <td>(viii)</td>
-                                <td><strong>UNDISCLOSED INCOME</strong><br>
-                                Whether any transactions not recorded in the books of account have been surrendered or disclosed as income during the year in the tax assessments under the Income Tax Act, 1961 (43 of 1961), if so, whether the previously unrecorded income has been properly recorded in the books of account during the year;</td>
-                            </tr>
-                            <tr>
-                                <td>(ix)</td>
-                                <td><strong>REPAYMENT OF LOANS OR OTHER BORROWINGS</strong></td>
-                            </tr>
-                            <tr>
-                                <td>(ix)(a)</td>
-                                <td>Whether the company has defaulted in repayment of loans or other borrowings or in the payment of interest thereon to any lender, if yes, the period & the amount of default to be reported as per the format below:<br><br>
-                                    <div class="table-container">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>Nature of borrowing including debt securities</th>
-                                                    <th>Name of lender*</th>
-                                                    <th>Amount not paid on due date</th>
-                                                    <th>Whether principal or interest</th>
-                                                    <th>No. of days delay or unpaid</th>
-                                                    <th>Remarks, if any</th>
-                                                </tr>
-                                            </thead>
-                                        </table>
-                                    </div>
-                                    <span class="note">* lender wise details to be provided in case of defaults to banks, financial institutions & Government.</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>(ix)(b)</td>
-                                <td>Whether the company is a declared wilful defaulter by any bank or financial institution or other lender;</td>
-                            </tr>
-                            <tr>
-                                <td>(ix)(c)</td>
-                                <td>Whether term loans were applied for the purpose for which the loans were obtained; if not, the amount of loan so diverted & the purpose for which it is used may be reported;</td>
-                            </tr>
-                            <tr>
-                                <td>(ix)(d)</td>
-                                <td>Whether funds raised on short term basis have been utilised for long term purposes, if yes, the nature & amount to be indicated;</td>
-                            </tr>
-                            <tr>
-                                <td>(ix)(e)</td>
-                                <td>Whether the company has taken any funds from any entity or person on account of or to meet the obligations of its subsidiaries, associates or joint ventures, if so, details thereof with nature of such transactions & the amount in each case;</td>
-                            </tr>
-                            <tr>
-                                <td>(ix)(f)</td>
-                                <td>Whether the company has raised loans during the year on the pledge of securities held in its subsidiaries, joint ventures or associate companies, if so, give details thereof & also report if the company has defaulted in repayment of such loans raised;</td>
-                            </tr>
-                            <tr>
-                                <td>(x)</td>
-                                <td><strong>ISSUE PROCEEDS</strong></td>
-                            </tr>
-                            <tr>
-                                <td>(x)(a)</td>
-                                <td>Whether moneys raised by way of initial public offer or further public offer (including debt instruments) during the year were applied for the purposes for which those are raised, if not, the details together with delays or default & subsequent rectification, if any, as may be applicable, be reported;</td>
-                            </tr>
-                            <tr>
-                                <td>(x)(b)</td>
-                                <td>Whether the company has made any preferential allotment or private placement of shares or convertible debentures (fully, partially or optionally convertible) during the year & if so, whether the requirements of section 42 & section 62 of the Companies Act, 2013 have been complied with & the funds raised have been used for the purposes for which the funds were raised, if not, provide details in respect of amount involved & nature of non-compliance;</td>
-                            </tr>
-                            <tr>
-                                <td>(xi)</td>
-                                <td><strong>FRAUD</strong></td>
-                            </tr>
-                            <tr>
-                                <td>(xi)(a)</td>
-                                <td>Whether any fraud by the company or any fraud on the company has been noticed or reported during the year, if yes, the nature & the amount involved is to be indicated;</td>
-                            </tr>
-                            <tr>
-                                <td>(xi)(b)</td>
-                                <td>Whether any report u/s 143(12) of the Companies Act has been filed by the auditors in Form ADT-4 as prescribed under rule 13 of Companies (Audit & Auditors) Rules, 2014 with the Central Government;</td>
-                            </tr>
-                            <tr>
-                                <td>(xi)(c)</td>
-                                <td>Whether the auditor has considered whistle-blower complaints, if any, received during the year by the company;</td>
-                            </tr>
-                            <tr>
-                                <td>(xii)</td>
-                                <td><strong>NIDHI COMPANY</strong></td>
-                            </tr>
-                            <tr>
-                                <td>(xii)(a)</td>
-                                <td>Whether the Nidhi Company has complied with the Net Owned Funds to Deposits in the ratio of 1:20 to meet out the liability;</td>
-                            </tr>
-                            <tr>
-                                <td>(xii)(b)</td>
-                                <td>Whether the Nidhi Company is maintaining 10% unencumbered term deposits as specified in the Nidhi Rules, 2014 to meet out the liability;</td>
-                            </tr>
-                            <tr>
-                                <td>(xii)(c)</td>
-                                <td>Whether there has been any default in payment of interest on deposits or repayment thereof for any period & if so, the details thereof;</td>
-                            </tr>
-                            <tr>
-                                <td>(xiii)</td>
-                                <td><strong>RELATED PARTIES</strong><br>
-                                Whether all transactions with the related parties are in compliance with sections 177 & 188 of Companies Act, where applicable & the details have been disclosed in the financial statements etc., as required by the applicable accounting standards;</td>
-                            </tr>
-                            <tr>
-                                <td>(xiv)</td>
-                                <td><strong>INTERNAL AUDIT SYSTEM</strong></td>
-                            </tr>
-                            <tr>
-                                <td>(xiv)(a)</td>
-                                <td>Whether the company has an internal audit system commensurate with the size & nature of its business;</td>
-                            </tr>
-                            <tr>
-                                <td>(xiv)(b)</td>
-                                <td>Whether the reports of the Internal Auditors for the period under audit were considered by the statutory auditor;</td>
-                            </tr>
-                            <tr>
-                                <td>(xv)</td>
-                                <td><strong>NON CASH TRANSACTIONS</strong><br>
-                                Whether the company has entered into any non-cash transactions with directors or persons connected with him & if so, whether the provisions of section 192 of Companies Act have been complied with;</td>
-                            </tr>
-                            <tr>
-                                <td>(xvi)</td>
-                                <td><strong>REGISTRATION WITH RBI & NBFCs</strong></td>
-                            </tr>
-                            <tr>
-                                <td>(xvi)(a)</td>
-                                <td>Whether the company is required to be registered u/s 45-IA of the Reserve Bank of India Act, 1934 & if so, whether the registration has been obtained;</td>
-                            </tr>
-                            <tr>
-                                <td>(xvi)(b)</td>
-                                <td>Whether the company has conducted any Non-Banking Financial or Housing Finance activities without a valid Certificate of Registration (COR) from the RBI as per the Reserve Bank of India Act, 1934;</td>
-                            </tr>
-                            <tr>
-                                <td>(xvi)(c)</td>
-                                <td>Whether the company is a Core Investment Company (CIC) as defined in the regulations made by the Reserve Bank of India, if so, whether it continues to fulfil the criteria of a CIC, & in case the company is an exempted or unregistered CIC, whether it continues to fulfil such criteria;</td>
-                            </tr>
-                            <tr>
-                                <td>(xvi)(d)</td>
-                                <td>Whether the Group has more than one CIC as part of the Group, if yes, indicate the number of CICs which are part of the Group;</td>
-                            </tr>
-                            <tr>
-                                <td>(xvii)</td>
-                                <td><strong>CASH LOSSES</strong><br>
-                                Whether the Company has incurred cash losses in the financial year & in the immediately preceding financial year, if so, state the amount of cash losses;</td>
-                            </tr>
-                            <tr>
-                                <td>(xviii)</td>
-                                <td><strong>RESIGNATION OF STATUTORY AUDITORS</strong><br>
-                                Whether there has been any resignation of the statutory auditors during the year, if so, whether the auditor has taken into consideration the issues, objections or concerns raised by the outgoing auditors;</td>
-                            </tr>
-                            <tr>
-                                <td>(xix)</td>
-                                <td><strong>MATERIAL UNCERTAINTY - ABILITY TO MEET LIABILITIES</strong><br>
-                                On the basis of the financial ratios, ageing & expected dates of realisation of financial assets & payment of financial liabilities, other information accompanying the FS, the auditor's knowledge of the Board of Directors & management plans, whether the auditor is of the opinion that no material uncertainty exists as on the date of the audit report that company is capable of meeting its liabilities existing at the date of balance sheet as & when they fall due within a period of one year from the balance sheet date;</td>
-                            </tr>
-                            <tr>
-                                <td>(xx)</td>
-                                <td><strong>CORPORATE SOCIAL RESPONSIBILITY</strong></td>
-                            </tr>
-                            <tr>
-                                <td>(xx)(a)</td>
-                                <td>Whether, in respect of other than ongoing projects, the company has transferred unspent amount to a Fund specified in Schedule VII to the Companies Act within a period of 6 months of the expiry of the financial year in compliance with second proviso to section 135(5) of the said Act;</td>
-                            </tr>
-                            <tr>
-                                <td>(xx)(b)</td>
-                                <td>Whether any amount remaining unspent u/s 135(5) of Companies Act, pursuant to any ongoing project has been transferred to special account in compliance with provision of section 135(6) of the said Act;</td>
-                            </tr>
-                            <tr>
-                                <td>(xxi)</td>
-                                <td><strong>CARO REMARKS ON CONSOLIDATED FINANCIAL STATEMENTS</strong><br>
-                                Whether there have been any qualifications or adverse remarks by the respective auditors in the CARO reports of the companies included in the consolidated financial statements, if yes, indicate the details of the companies & the paragraph numbers of the CARO report containing the qualifications or adverse remarks.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <!-- Hero Header -->
+                <div class="chapter-hero" id="overview">
+                    <span class="hero-tag">CA Final Advanced Auditing • Paper 3</span>
+                    <h1 class="hero-title">Chapter 7: Reporting Under Companies Act, 2013 &amp; CARO, 2020</h1>
+                    <p class="hero-desc">
+                        A structured, exam-oriented study guide covering Section 143 statutory audit duties, Rule 11 reporting, Form ADT-4 fraud reporting timelines, and exhaustive clause-by-clause coverage of CARO 2020 with practical computation limits.
+                    </p>
+                    <div class="hero-stats-row">
+                        <div class="hero-stat-badge">📑 21 CARO Clauses</div>
+                        <div class="hero-stat-badge">⚖️ Section 143 Provisions</div>
+                        <div class="hero-stat-badge">🚨 Form ADT-4 Fraud Reporting</div>
+                        <div class="hero-stat-badge">🏢 Private Co. Exemption Limits</div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- 4. CARO – 21 Clauses -->
-            <div class="card section" id="clauses">
-                <h2>4. CARO – 21 Clauses</h2>
-                <ol type="i">
-                    <li>Property, Plant & Equipment and Intangible Assets</li>
-                    <li>Inventory and Working Capital</li>
-                    <li>Loans, Investments, Guarantees and Securities – Nature of Transactions</li>
-                    <li>Loans, Investments, Guarantees and Securities – Compliance with Sections 185 and 186</li>
-                    <li>Deposits</li>
-                    <li>Cost Records</li>
-                    <li>Statutory Dues</li>
-                    <li>Undisclosed Income</li>
-                    <li>Repayment of Loans or Other Borrowings</li>
-                    <li>Issue of Securities / Proceeds</li>
-                    <li>Fraud</li>
-                    <li>Nidhi Company</li>
-                    <li>Related Parties</li>
-                    <li>Internal Audit System</li>
-                    <li>Non-cash Transactions</li>
-                    <li>Registration with RBI and NBFCs</li>
-                    <li>Cash Losses</li>
-                    <li>Resignation of Statutory Auditors</li>
-                    <li>Material Uncertainty relating to Ability to Meet Liabilities</li>
-                    <li>Corporate Social Responsibility</li>
-                    <li>CARO Remarks on Consolidated Financial Statements</li>
-                </ol>
-            </div>
+                <!-- SECTION 1: DUTIES OF AUDITORS -->
+                <div class="section-card" id="duties">
+                    <h2 class="section-title">1. Duties of Auditors (Section 143 &amp; Rules)</h2>
 
+                    <!-- 1. Sec 143(1) Duty to Inquire -->
+                    <div id="sec143-1">
+                        <h3 class="sub-heading">1. Duty of Auditor to Inquire on Certain Matters – Sec 143(1)</h3>
+                        <p style="font-size: 14px; color: var(--slate-600); margin-bottom: 14px;">
+                            It is the duty of the statutory auditor to <strong>inquire</strong> into the following 6 specific matters. The auditor is required to report to members <strong>only if his finding on any of these matters is adverse / negative</strong>.
+                        </p>
+
+                        <div class="inquiry-grid">
+                            <div class="inquiry-card">
+                                <div class="inquiry-letter">A</div>
+                                <div class="inquiry-text">
+                                    <strong>Loans &amp; Advances on Security:</strong> Whether loans &amp; advances made by the company on the basis of security have been properly secured and whether the terms are prejudicial to the interests of the company or its members.
+                                </div>
+                            </div>
+                            <div class="inquiry-card">
+                                <div class="inquiry-letter">B</div>
+                                <div class="inquiry-text">
+                                    <strong>Book Entries:</strong> Whether transactions of the company which are represented merely by book entries are prejudicial to the interests of the company.
+                                </div>
+                            </div>
+                            <div class="inquiry-card">
+                                <div class="inquiry-letter">C</div>
+                                <div class="inquiry-text">
+                                    <strong>Sale of Shares / Securities at Loss:</strong> Where the company is not an investment or banking company, whether assets consisting of shares, debentures &amp; securities have been sold at a price less than their purchase cost.
+                                </div>
+                            </div>
+                            <div class="inquiry-card">
+                                <div class="inquiry-letter">D</div>
+                                <div class="inquiry-text">
+                                    <strong>Loans Shown as Deposits:</strong> Whether loans and advances made by the company have been improperly shown as deposits in the books.
+                                </div>
+                            </div>
+                            <div class="inquiry-card">
+                                <div class="inquiry-letter">E</div>
+                                <div class="inquiry-text">
+                                    <strong>Personal Expenses:</strong> Whether personal expenses of directors or employees have been improperly charged to the revenue account.
+                                </div>
+                            </div>
+                            <div class="inquiry-card">
+                                <div class="inquiry-letter">F</div>
+                                <div class="inquiry-text">
+                                    <strong>Shares Allotted for Cash:</strong> Where stated in books that shares were allotted for cash, whether cash has actually been received, and if not, whether the stated position in books and balance sheet is correct and not misleading.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="callout callout-info">
+                            <span class="callout-icon">💡</span>
+                            <div>
+                                <strong>Exam Golden Rule u/s 143(1):</strong> Inquire vs. Report — The auditor does <em>not</em> need to write a report on these 6 matters in the standard audit report unless an inquiry reveals an adverse, irregular, or prejudicial situation!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Sec 145 Signing -->
+                    <div style="margin-top: 26px;">
+                        <h3 class="sub-heading">2. Duty to Sign the Audit Report – Sec 145</h3>
+                        <p style="font-size: 14px; color: var(--slate-700);">
+                            As per Section 145, the person appointed as an auditor of the company shall sign the auditor's report or sign/certify any other document of the company in accordance with Section 141(2). Qualifications, observations, or adverse comments mentioned in the report <strong>shall be read before the company in general meeting</strong> and shall be open to inspection by any member.
+                        </p>
+                    </div>
+
+                    <!-- 3. Sec 143(9) & (10) Auditing Standards -->
+                    <div style="margin-top: 26px;">
+                        <h3 class="sub-heading">3. Duty to Comply with Auditing Standards – Sec 143(9) &amp; (10)</h3>
+                        <div class="info-box">
+                            <p style="font-size: 13.5px; color: var(--slate-700); margin-bottom: 8px;">
+                                • Every auditor <strong>shall comply with the auditing standards</strong> prescribed by the Central Government u/s 143(10).
+                            </p>
+                            <p style="font-size: 13.5px; color: var(--slate-700); margin-bottom: 8px;">
+                                • The CG prescribes standards recommended by the <strong>ICAI</strong> in consultation with and after examination of recommendations by <strong>NFRA</strong>.
+                            </p>
+                            <p style="font-size: 13.5px; color: var(--slate-700);">
+                                • Until standards are notified by the CG, standards of auditing specified by the <strong>ICAI shall be deemed to be the auditing standards</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 4. Sec 143(3) & Rule 11 -->
+                    <div id="sec143-3" style="margin-top: 30px;">
+                        <h3 class="sub-heading">4. Duty to State Matters in Audit Report – Sec 143(3) &amp; Rule 11</h3>
+                        <p style="font-size: 14px; color: var(--slate-600); margin-bottom: 14px;">
+                            Section 143(3) mandates that the statutory auditor's report shall state:
+                        </p>
+
+                        <div class="info-grid">
+                            <div class="info-box">
+                                <div class="info-box-header"><span>(a) Information &amp; Explanations</span></div>
+                                <div class="info-box-body">Whether obtained all information &amp; explanations necessary for audit; if not, details &amp; effect on financial statements.</div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-box-header"><span>(b) Proper Books of Account</span></div>
+                                <div class="info-box-body">Whether proper books of account as required by law have been kept, and proper branch returns received.</div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-box-header"><span>(c) Branch Audit Report</span></div>
+                                <div class="info-box-body">Whether report on branch accounts audited u/s 143(8) by another auditor was sent and how dealt with.</div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-box-header"><span>(d) Agreement with Books</span></div>
+                                <div class="info-box-body">Whether Balance Sheet and Profit &amp; Loss account are in agreement with the books of account and returns.</div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-box-header"><span>(e) Compliance with AS / Ind AS</span></div>
+                                <div class="info-box-body">Whether, in his opinion, the financial statements comply with applicable Accounting Standards.</div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-box-header"><span>(f) Adverse Financial Observations</span></div>
+                                <div class="info-box-body">Observations or comments on financial transactions or matters having any adverse effect on functioning of company.</div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-box-header"><span>(g) Director Disqualification</span></div>
+                                <div class="info-box-body">Whether any director is disqualified from being appointed as director under Section 164(2).</div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-box-header"><span>(h) Qualifications on Maintenance</span></div>
+                                <div class="info-box-body">Any qualification, reservation, or adverse remark relating to the maintenance of accounts.</div>
+                            </div>
+                            <div class="info-box" style="grid-column: 1 / -1;">
+                                <div class="info-box-header"><span>(i) Internal Financial Controls (IFCoFR)</span></div>
+                                <div class="info-box-body">
+                                    Whether company has adequate internal financial controls with reference to financial statements in place &amp; operating effectiveness.<br>
+                                    <span style="display:inline-block; margin-top:6px; font-size:12.5px; color:var(--primary); font-weight:600;">
+                                        ⚡ Exemption for Private Companies: Section 143(3)(i) does NOT apply to: (i) One Person Co. (OPC) or Small Co.; OR (ii) Private co. with Turnover &lt; ₹50 Crores AND aggregate borrowings from banks/FIs/bodies corporate &lt; ₹25 Crores at any point during FY.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Rule 11 Matters -->
+                        <h4 style="font-size: 15px; font-weight: 700; color: var(--slate-900); margin: 22px 0 10px 0;">
+                            Rule 11 Matters Included in Auditor's Report – Section 143(3)(j)
+                        </h4>
+                        
+                        <div class="info-box" style="border-left: 4px solid var(--primary);">
+                            <ul style="padding-left: 20px; font-size: 13.5px; color: var(--slate-700); display: flex; flex-direction: column; gap: 8px;">
+                                <li><strong>(a) Pending Litigations:</strong> Whether company disclosed impact of pending litigations on financial position.</li>
+                                <li><strong>(b) Foreseeable Losses:</strong> Whether provision made for material foreseeable losses on long-term &amp; derivative contracts.</li>
+                                <li><strong>(c) IEPF Delays:</strong> Whether any delay occurred in transferring amounts required to be transferred to Investor Education &amp; Protection Fund.</li>
+                                <li>
+                                    <strong>(d) Intermediary &amp; Funding Party Representations:</strong><br>
+                                    (i) Representation that no funds loaned/invested to Intermediaries to further lend to Ultimate Beneficiaries or provide guarantee.<br>
+                                    (ii) Representation that no funds received from Funding Parties to further lend to Ultimate Beneficiaries.<br>
+                                    (iii) Auditor confirms nothing has come to notice causing belief of material misstatement in these representations.
+                                </li>
+                                <li><strong>(e) Dividend Compliance:</strong> Whether dividend declared or paid during year complies with Section 123 of Companies Act, 2013.</li>
+                                <li>
+                                    <strong>(f) Audit Trail (Edit Log) in Accounting Software:</strong><br>
+                                    Whether company used accounting software with an operating <strong>audit trail (edit log)</strong> facility throughout the year for all transactions, feature not tampered with, and audit trail preserved as per statutory records retention requirements.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="callout callout-info" style="margin-top: 14px;">
+                            <span class="callout-icon">🔍</span>
+                            <div>
+                                <strong>What is Audit Trail?</strong> A step-by-step sequential record providing documented history of financial transactions from source document to general ledger. Enables the auditor to track every alteration, deletion, or modification with date, time, and user ID.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Managerial Remuneration -->
+                    <div style="margin-top: 26px;">
+                        <h3 class="sub-heading">Managerial Remuneration – Section 197(16)</h3>
+                        <p style="font-size: 14px; color: var(--slate-700);">
+                            The statutory auditor of a public company must state in the audit report whether remuneration paid by the company to its directors is in accordance with Section 197, whether any excess was paid, and details of waiver/recovery. Reported under <em>"Report on Other Legal &amp; Regulatory Requirements"</em>.
+                        </p>
+                    </div>
+
+                    <!-- 5. Fraud Reporting Sec 143(12) -->
+                    <div id="sec143-12" style="margin-top: 30px;">
+                        <h3 class="sub-heading">5. Duty to Report on Frauds – Section 143(12) &amp; Rule 13</h3>
+                        <p style="font-size: 14px; color: var(--slate-600); margin-bottom: 16px;">
+                            Statutory obligation on auditors, cost accountants, and secretarial auditors to report fraud committed by officers or employees against the company:
+                        </p>
+
+                        <div class="flowchart-container">
+                            <!-- Major Fraud >= 1 Cr -->
+                            <div class="flow-col major">
+                                <div class="flow-header">
+                                    <span style="color: var(--danger);">🚨 Fraud ≥ ₹1 Crore (Individual)</span>
+                                    <span style="font-size: 12px; background: #fee2e2; color: #991b1b; padding: 2px 8px; border-radius: 4px;">To Central Govt</span>
+                                </div>
+                                <div class="flow-steps">
+                                    <div class="flow-step-item">
+                                        <div class="flow-num">1</div>
+                                        <div><strong>Within 2 Days:</strong> Report to Board or Audit Committee seeking reply/observations within <strong>45 days</strong>.</div>
+                                    </div>
+                                    <div class="flow-step-item">
+                                        <div class="flow-num">2</div>
+                                        <div><strong>Within 15 Days:</strong> On receipt of Board reply, forward report + Board reply + auditor comments to Central Govt (MCA).</div>
+                                    </div>
+                                    <div class="flow-step-item">
+                                        <div class="flow-num">3</div>
+                                        <div><strong>No Reply from Board?</strong> Forward report to CG with note mentioning earlier report was not replied to.</div>
+                                    </div>
+                                    <div class="flow-step-item">
+                                        <div class="flow-num">4</div>
+                                        <div><strong>Format:</strong> In <strong>Form ADT-4</strong> on auditor's letterhead, sealed cover by Speed Post/RPAD + confirmation email.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Minor Fraud < 1 Cr -->
+                            <div class="flow-col">
+                                <div class="flow-header">
+                                    <span style="color: var(--slate-800);">⚠️ Fraud &lt; ₹1 Crore</span>
+                                    <span style="font-size: 12px; background: var(--slate-200); color: var(--slate-700); padding: 2px 8px; border-radius: 4px;">To Board / Audit Comm</span>
+                                </div>
+                                <div class="flow-steps">
+                                    <div class="flow-step-item">
+                                        <div class="flow-num">1</div>
+                                        <div><strong>Within 2 Days:</strong> Report matter to Audit Committee (u/s 177) or Board of Directors.</div>
+                                    </div>
+                                    <div class="flow-step-item">
+                                        <div class="flow-num">2</div>
+                                        <div><strong>Specify 3 Things:</strong> (a) Nature of fraud with description, (b) Approximate amount involved, and (c) Parties involved.</div>
+                                    </div>
+                                    <div class="flow-step-item">
+                                        <div class="flow-num">3</div>
+                                        <div><strong>Disclosure in Board's Report:</strong> Board must disclose details in Board Report (Nature, Amount, Parties, Remedial action taken).</div>
+                                    </div>
+                                    <div class="flow-step-item">
+                                        <div class="flow-num">4</div>
+                                        <div><strong>Good Faith Protection:</strong> Sec 143(13) protects auditor from breach of duty when reporting in good faith.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Penalties Box -->
+                        <div class="callout callout-danger">
+                            <span class="callout-icon">⚖️</span>
+                            <div>
+                                <strong>Penalties for Failure to Report Fraud u/s 143(12):</strong><br>
+                                • <strong>Listed Company Auditor:</strong> Penalty of <strong>₹5 Lakhs</strong>.<br>
+                                • <strong>Other Company Auditor:</strong> Penalty of <strong>₹1 Lakh</strong>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6, 7, 8 Branch & Qualifications -->
+                    <div id="branch-audit" style="margin-top: 26px;">
+                        <h3 class="sub-heading">Branch Audit, Reasons for Negative Report &amp; Sec 143(11)</h3>
+                        <div class="info-grid">
+                            <div class="info-box">
+                                <div class="info-box-header"><span>Sec 143(8) Branch Audit</span></div>
+                                <div class="info-box-body">Accounts of branch audited by company auditor or qualified person appointed u/s 139. Foreign branch audited by company auditor or accountant qualified under foreign country's laws. Branch auditor submits report to company auditor. Fraud reporting extends to branch auditor.</div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-box-header"><span>Sec 143(4) Negative Report</span></div>
+                                <div class="info-box-body">Where any matter required in audit report is answered in negative or with qualification, report must explicitly state reasons therefor.</div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-box-header"><span>Sec 143(11) Power for CARO</span></div>
+                                <div class="info-box-body">Central Government may, in consultation with NFRA, order inclusion of specific reporting matters in audit report for prescribed classes of companies (This powers CARO 2020).</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SECTION 2: APPLICABILITY OF CARO 2020 -->
+                <div class="section-card" id="applicability">
+                    <h2 class="section-title">2. Applicability of CARO, 2020</h2>
+
+                    <p style="font-size: 14.5px; color: var(--slate-700); margin-bottom: 16px;">
+                        The Companies (Auditor's Report) Order, 2020 applies to <strong>every company including a foreign company</strong> u/s 2(42), <strong>EXCEPT</strong> the following categories:
+                    </p>
+
+                    <!-- Exempted Entities -->
+                    <div id="exempted-entities" class="info-grid">
+                        <div class="info-box" style="border-left: 4px solid var(--danger);">
+                            <div class="info-box-header"><span style="color: var(--danger);">🚫 Banking Company</span></div>
+                            <div class="info-box-body">As defined in clause (c) of Section 5 of the Banking Regulation Act, 1949.</div>
+                        </div>
+                        <div class="info-box" style="border-left: 4px solid var(--danger);">
+                            <div class="info-box-header"><span style="color: var(--danger);">🚫 Insurance Company</span></div>
+                            <div class="info-box-body">As defined under the Insurance Act, 1938.</div>
+                        </div>
+                        <div class="info-box" style="border-left: 4px solid var(--danger);">
+                            <div class="info-box-header"><span style="color: var(--danger);">🚫 Section 8 Company</span></div>
+                            <div class="info-box-body">Licensed to operate under Section 8 of the Companies Act, 2013 (Charitable objectives).</div>
+                        </div>
+                        <div class="info-box" style="border-left: 4px solid var(--danger);">
+                            <div class="info-box-header"><span style="color: var(--danger);">🚫 One Person Co. &amp; Small Co.</span></div>
+                            <div class="info-box-body">One Person Company u/s 2(62) and Small Company u/s 2(85).</div>
+                        </div>
+                    </div>
+
+                    <!-- Private Company Exemption Test -->
+                    <div id="pvt-limits" style="margin-top: 26px;">
+                        <h3 class="sub-heading" style="color: var(--primary);">
+                            Private Limited Company Exemption – The 3-Point Threshold Test
+                        </h3>
+                        <p style="font-size: 14px; color: var(--slate-600); margin-bottom: 16px;">
+                            A private limited company (not being a subsidiary or holding of a public company) is <strong>exempted from CARO 2020 only if it satisfies ALL THREE conditions simultaneously</strong>:
+                        </p>
+
+                        <div class="applicability-grid">
+                            <div class="app-card">
+                                <div class="app-card-title">Paid-up Capital + Reserves</div>
+                                <div class="app-card-limit">≤ ₹1 Crore</div>
+                                <div class="app-card-timing">As on Balance Sheet Date</div>
+                                <p style="font-size: 12.5px; color: var(--slate-500); margin-top: 10px;">
+                                    Paid-up share capital plus Reserves &amp; Surplus (including capital, revenue &amp; revaluation reserve).
+                                </p>
+                            </div>
+
+                            <div class="app-card">
+                                <div class="app-card-title">Total Borrowings (Banks/FIs)</div>
+                                <div class="app-card-limit">≤ ₹1 Crore</div>
+                                <div class="app-card-timing">At ANY point of time during FY</div>
+                                <p style="font-size: 12.5px; color: var(--slate-500); margin-top: 10px;">
+                                    Aggregate borrowings from banks &amp; financial institutions (short-term, long-term, CC limit, invoked guarantees).
+                                </p>
+                            </div>
+
+                            <div class="app-card">
+                                <div class="app-card-title">Total Revenue</div>
+                                <div class="app-card-limit">≤ ₹10 Crores</div>
+                                <div class="app-card-timing">During the Financial Year</div>
+                                <p style="font-size: 12.5px; color: var(--slate-500); margin-top: 10px;">
+                                    Total revenue as disclosed in Schedule III (Revenue from operations + Other income + Discontinuing operations).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="callout callout-warning">
+                            <span class="callout-icon">⚠️</span>
+                            <div>
+                                <strong>Consolidated Financial Statements (CFS) Exemption:</strong> CARO 2020 does <strong>NOT</strong> apply to the auditor's report on consolidated financial statements — <strong>EXCEPT Clause 3(xxi)</strong> (which requires reporting on qualifications/adverse remarks in CARO reports of group entities).
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deep Dive Rules on Calculations -->
+                    <div id="deep-dive" style="margin-top: 26px;">
+                        <h3 class="sub-heading">Deep Dive: Rules for Computation of Limits</h3>
+
+                        <div class="info-grid">
+                            <div class="info-box">
+                                <div class="info-box-header"><span>💰 Paid-Up Capital &amp; Reserves</span></div>
+                                <div class="info-box-body">
+                                    <ul style="padding-left: 16px; display:flex; flex-direction:column; gap:6px;">
+                                        <li>Calls unpaid: Deduct from paid-up capital.</li>
+                                        <li>Forfeited shares original amount: Add to paid-up capital.</li>
+                                        <li>Share Application money: <strong>Excluded</strong>.</li>
+                                        <li>Convertible instruments: Counted only once shares are issued.</li>
+                                        <li>Reserves: Capital reserves, Securities Premium, DRR, Revaluation Reserve, Surplus. P&amp;L debit balance deducted from surplus.</li>
+                                        <li><strong>Ind AS / OCI Exclusion:</strong> Equity component of compound instruments, OCI revaluation surplus, cash flow hedge reserves are <strong>excluded</strong>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info-box">
+                                <div class="info-box-header"><span>🏦 Borrowings from Banks / FIs</span></div>
+                                <div class="info-box-body">
+                                    <ul style="padding-left: 16px; display:flex; flex-direction:column; gap:6px;">
+                                        <li>Includes term loans, demand loans, overdrafts, cash credits, bills discounted, and credit card dues.</li>
+                                        <li>Current maturities of long-term borrowings: <strong>Included</strong>.</li>
+                                        <li>Both secured &amp; unsecured borrowings: <strong>Included</strong>.</li>
+                                        <li>Invoked bank guarantees &amp; devolved LCs: <strong>Included</strong>.</li>
+                                        <li>Interest accrued &amp; due: <strong>Included</strong>; Interest accrued but not due: <strong>Excluded</strong>.</li>
+                                        <li><strong>Peak Limit Rule:</strong> If cash credit facility exceeds ₹1 Crore on <em>even a single day</em> during the year, CARO becomes applicable!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SECTION 3: CARO 2020 – 21 CLAUSES INTERACTIVE HUB -->
+                <div class="section-card" id="clauses-hub">
+                    <h2 class="section-title">3. Matters to be Included in Auditor's Report – CARO, 2020 (21 Clauses)</h2>
+
+                    <!-- Quick Summary Map -->
+                    <div id="summary-21" style="margin-bottom: 24px;">
+                        <h3 class="sub-heading">CARO 2020 at a Glance (The 21 Clauses Architecture)</h3>
+                        <div class="info-grid" style="grid-template-columns: repeat(3, 1fr);">
+                            <div class="info-box">
+                                <strong style="color:var(--primary);">Part 1: Assets &amp; Inventory</strong>
+                                <ul style="padding-left: 16px; font-size:12.5px; margin-top:6px; color:var(--slate-600);">
+                                    <li>(i) PPE &amp; Intangibles</li>
+                                    <li>(ii) Inventory &amp; Working Capital</li>
+                                </ul>
+                            </div>
+                            <div class="info-box">
+                                <strong style="color:var(--primary);">Part 2: Loans, Investments &amp; Dues</strong>
+                                <ul style="padding-left: 16px; font-size:12.5px; margin-top:6px; color:var(--slate-600);">
+                                    <li>(iii) Loans, Guarantees &amp; Securities</li>
+                                    <li>(iv) Sec 185 &amp; 186 Compliance</li>
+                                    <li>(v) Deposits u/s 73-76</li>
+                                    <li>(vi) Cost Records u/s 148</li>
+                                    <li>(vii) Statutory Dues</li>
+                                </ul>
+                            </div>
+                            <div class="info-box">
+                                <strong style="color:var(--primary);">Part 3: Borrowings &amp; Capital</strong>
+                                <ul style="padding-left: 16px; font-size:12.5px; margin-top:6px; color:var(--slate-600);">
+                                    <li>(viii) Undisclosed Income</li>
+                                    <li>(ix) Repayment of Borrowings</li>
+                                    <li>(x) IPO / FPO &amp; Private Placement</li>
+                                </ul>
+                            </div>
+                            <div class="info-box">
+                                <strong style="color:var(--primary);">Part 4: Frauds, Nidhi &amp; Related Parties</strong>
+                                <ul style="padding-left: 16px; font-size:12.5px; margin-top:6px; color:var(--slate-600);">
+                                    <li>(xi) Fraud Reporting &amp; ADT-4</li>
+                                    <li>(xii) Nidhi Company Rules</li>
+                                    <li>(xiii) Related Parties (Sec 177/188)</li>
+                                </ul>
+                            </div>
+                            <div class="info-box">
+                                <strong style="color:var(--primary);">Part 5: Internal Audit &amp; NBFCs</strong>
+                                <ul style="padding-left: 16px; font-size:12.5px; margin-top:6px; color:var(--slate-600);">
+                                    <li>(xiv) Internal Audit System</li>
+                                    <li>(xv) Non-cash Transactions (Sec 192)</li>
+                                    <li>(xvi) RBI / NBFC / CIC Registration</li>
+                                </ul>
+                            </div>
+                            <div class="info-box">
+                                <strong style="color:var(--primary);">Part 6: Solvency, CSR &amp; CFS</strong>
+                                <ul style="padding-left: 16px; font-size:12.5px; margin-top:6px; color:var(--slate-600);">
+                                    <li>(xvii) Cash Losses</li>
+                                    <li>(xviii) Auditor Resignation</li>
+                                    <li>(xix) 1-Year Going Concern Solvency</li>
+                                    <li>(xx) CSR Unspent Funds</li>
+                                    <li>(xxi) CARO Remarks in CFS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search & Filter Controls -->
+                    <div id="all-clauses" class="clauses-control-bar">
+                        <div class="search-input-box">
+                            <span class="search-icon">🔍</span>
+                            <input type="text" id="clauseSearchInput" class="search-input" placeholder="Search 21 clauses by keyword (e.g., inventory, working capital, title deeds, fraud, CSR, NBFC, 10%)...">
+                        </div>
+                        <div class="clause-filter-pills">
+                            <button class="filter-btn active" onclick="filterClauses('all', this)">All (21)</button>
+                            <button class="filter-btn" onclick="filterClauses('assets', this)">Assets &amp; Inventory</button>
+                            <button class="filter-btn" onclick="filterClauses('loans', this)">Loans &amp; Investments</button>
+                            <button class="filter-btn" onclick="filterClauses('borrowings', this)">Borrowings &amp; Dues</button>
+                            <button class="filter-btn" onclick="filterClauses('fraud', this)">Fraud &amp; Governance</button>
+                            <button class="filter-btn" onclick="filterClauses('solvency', this)">Solvency, CSR &amp; CFS</button>
+                        </div>
+                    </div>
+
+                    <!-- Clause Cards List -->
+                    <div class="clause-cards-list" id="clausesContainer">
+
+                        <!-- Clause 3(i) -->
+                        <div class="clause-item-card" data-category="assets" data-keywords="property plant equipment ppe intangible assets revaluation benami title deeds registered valuer 10%">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(i)</span>
+                                <span class="clause-category-tag">Fixed Assets</span>
+                            </div>
+                            <h3 class="clause-heading">Property, Plant &amp; Equipment and Intangible Assets</h3>
+                            <div class="clause-content-text">
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(a)(A)</span> Proper records showing full particulars, quantitative details &amp; situation of Property, Plant &amp; Equipment (PPE).
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(a)(B)</span> Proper records showing full particulars of intangible assets.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(b)</span> Whether PPE have been physically verified by management at reasonable intervals; whether any material discrepancies noticed &amp; properly dealt with in books.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(c)</span> Title deeds of all immovable properties (other than properties where company is lessee under duly executed lease) held in the name of company. If not held, disclose in prescribed table format below:
+                                    
+                                    <div class="table-container" style="margin-top:10px;">
+                                        <table class="styled-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Description of Property</th>
+                                                    <th>Gross Carrying Value</th>
+                                                    <th>Held in Name of</th>
+                                                    <th>Whether Promoter / Director / Relative</th>
+                                                    <th>Period Held</th>
+                                                    <th>Reason for Not Being in Name (*dispute)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Land / Building</td>
+                                                    <td>₹ Amount</td>
+                                                    <td>Name of Person / Entity</td>
+                                                    <td>Yes / No</td>
+                                                    <td>Date / Range</td>
+                                                    <td>Pending registration / in dispute</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(d)</span> Whether PPE (including ROU assets) or intangibles revalued during year; whether based on valuation by <strong>Registered Valuer</strong>; specify amount of change if change is <span class="threshold-pill">≥ 10%</span> in net carrying value.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(e)</span> Whether proceedings initiated or pending for holding <strong>Benami Property</strong> under Benami Transactions (Prohibition) Act, 1988; whether appropriately disclosed in financial statements.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(ii) -->
+                        <div class="clause-item-card" data-category="assets" data-keywords="inventory physical verification working capital limits 5 crores bank quarterly returns statements discrepancy 10%">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(ii)</span>
+                                <span class="clause-category-tag">Inventory &amp; Working Capital</span>
+                            </div>
+                            <h3 class="clause-heading">Inventory &amp; Working Capital Limits</h3>
+                            <div class="clause-content-text">
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(a) Physical Verification of Inventory:</span> Whether physical verification conducted at reasonable intervals by management; whether coverage &amp; procedure appropriate; whether discrepancies of <span class="threshold-pill">≥ 10%</span> in aggregate for each class of inventory were noticed and properly dealt with in books.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(b) Sanctioned Working Capital Limits &gt; ₹5 Crores:</span> Whether at any point of time during the year, company sanctioned working capital limits in excess of <span class="threshold-pill">&gt; ₹5 Crores</span> in aggregate from banks/FIs on security of current assets; whether quarterly returns/statements filed with banks agree with books of account.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(iii) -->
+                        <div class="clause-item-card" data-category="loans" data-keywords="loans investments guarantees securities advances nature terms prejudicial overdue 90 days evergreening demand">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(iii)</span>
+                                <span class="clause-category-tag">Loans &amp; Investments</span>
+                            </div>
+                            <h3 class="clause-heading">Loans, Investments, Guarantees &amp; Advances</h3>
+                            <div class="clause-content-text">
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(a) Aggregate Amount &amp; Balance:</span> Disclose aggregate amount during year and balance outstanding at balance sheet date for: (A) Subsidiaries, Joint Ventures &amp; Associates, and (B) Other parties.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(b) Terms Not Prejudicial:</span> Whether investments made, guarantees provided, security given, and terms &amp; conditions of loans/advances are not prejudicial to company's interest.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(c) Repayment Stipulation:</span> Whether schedule of repayment of principal and interest has been stipulated and repayments/receipts are regular.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(d) Overdue &gt; 90 Days:</span> If amount is overdue, state total amount overdue for <span class="threshold-pill">&gt; 90 days</span> and whether reasonable recovery steps have been taken.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(e) Evergreening / Loan Renewal:</span> Whether loans due during year were renewed, extended, or fresh loans granted to settle overdues of existing loans; specify aggregate amount &amp; percentage.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(f) Loans Repayable on Demand / Without Terms:</span> Whether loans granted repayable on demand or without specifying terms; specify aggregate amount, percentage, and amount granted to Promoters / Related Parties.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(iv) -->
+                        <div class="clause-item-card" data-category="loans" data-keywords="section 185 section 186 loans to directors investments limits compliance">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(iv)</span>
+                                <span class="clause-category-tag">Statutory Compliance</span>
+                            </div>
+                            <h3 class="clause-heading">Compliance with Sections 185 &amp; 186</h3>
+                            <div class="clause-content-text">
+                                In respect of loans, investments, guarantees, and security, whether provisions of <strong>Section 185</strong> (Loans to Directors) and <strong>Section 186</strong> (Loan and Investment by Company) have been complied with; if not, provide details thereof.
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(v) -->
+                        <div class="clause-item-card" data-category="borrowings" data-keywords="deposits deemed deposits section 73 section 76 rbi directives nclt clb orders">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(v)</span>
+                                <span class="clause-category-tag">Deposits</span>
+                            </div>
+                            <h3 class="clause-heading">Public Deposits &amp; Deemed Deposits</h3>
+                            <div class="clause-content-text">
+                                In respect of deposits or deemed deposits accepted by the company, whether directives issued by the <strong>RBI</strong> and provisions of <strong>Sections 73 to 76</strong> of the Companies Act have been complied with. If order passed by CLB, NCLT, RBI, or court, whether complied with.
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(vi) -->
+                        <div class="clause-item-card" data-category="borrowings" data-keywords="cost records section 148 maintenance accounts cost audit">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(vi)</span>
+                                <span class="clause-category-tag">Cost Records</span>
+                            </div>
+                            <h3 class="clause-heading">Maintenance of Cost Records</h3>
+                            <div class="clause-content-text">
+                                Whether maintenance of cost records has been specified by the Central Government u/s 148(1) and whether such accounts and records have been made and maintained.
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(vii) -->
+                        <div class="clause-item-card" data-category="borrowings" data-keywords="statutory dues gst provident fund income tax 6 months arrears dispute forum">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(vii)</span>
+                                <span class="clause-category-tag">Statutory Dues</span>
+                            </div>
+                            <h3 class="clause-heading">Payment of Statutory Dues</h3>
+                            <div class="clause-content-text">
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(a) Undisputed Dues &gt; 6 Months:</span> Whether regular in depositing undisputed statutory dues (GST, PF, ESI, Income-tax, Customs, Cess). If not, indicate arrears outstanding on last day of financial year for <span class="threshold-pill">&gt; 6 months</span> from date they became payable.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(b) Disputed Dues:</span> Where statutory dues have not been deposited on account of any dispute, state amounts involved and forum where dispute is pending (mere representation to department is not a dispute).
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(viii) -->
+                        <div class="clause-item-card" data-category="borrowings" data-keywords="undisclosed income tax assessment unrecorded income surrendered">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(viii)</span>
+                                <span class="clause-category-tag">Undisclosed Income</span>
+                            </div>
+                            <h3 class="clause-heading">Undisclosed Income</h3>
+                            <div class="clause-content-text">
+                                Whether any transactions not recorded in books have been surrendered or disclosed as income during the year in tax assessments under the Income Tax Act, 1961; if so, whether previously unrecorded income has been properly recorded in books during the year.
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(ix) -->
+                        <div class="clause-item-card" data-category="borrowings" data-keywords="default repayment borrowings loans wilful defaulter diversion term loans short term long term pledge subsidiaries">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(ix)</span>
+                                <span class="clause-category-tag">Loan Repayments</span>
+                            </div>
+                            <h3 class="clause-heading">Repayment of Loans &amp; Other Borrowings</h3>
+                            <div class="clause-content-text">
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(a) Default in Repayment:</span> Whether company defaulted in repayment of loans/borrowings or interest; if yes, report period and amount as per format below (lender-wise details required for banks/FIs/Govt):
+                                    <div class="table-container" style="margin-top:10px;">
+                                        <table class="styled-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nature of Borrowing</th>
+                                                    <th>Name of Lender</th>
+                                                    <th>Amount Unpaid</th>
+                                                    <th>Principal / Interest</th>
+                                                    <th>Days Delay / Unpaid</th>
+                                                    <th>Remarks</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Term Loan / Debt Security</td>
+                                                    <td>Bank / FI Name</td>
+                                                    <td>₹ Amount</td>
+                                                    <td>Principal / Interest</td>
+                                                    <td>No. of Days</td>
+                                                    <td>Default remarks</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(b)</span> Whether declared a <strong>wilful defaulter</strong> by any bank, FI, or other lender.</div>
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(c)</span> Whether term loans applied for purpose obtained; if not, amount diverted &amp; purpose.</div>
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(d)</span> Whether short-term funds utilized for long-term purposes; nature and amount.</div>
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(e)</span> Whether company took funds to meet obligations of subsidiaries, associates, or JVs.</div>
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(f)</span> Whether company raised loans on pledge of securities held in subsidiaries/JVs.</div>
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(x) -->
+                        <div class="clause-item-card" data-category="borrowings" data-keywords="issue proceeds ipo fpo preferential allotment private placement section 42 section 62 convertible debentures">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(x)</span>
+                                <span class="clause-category-tag">Capital Issue</span>
+                            </div>
+                            <h3 class="clause-heading">Application of Issue Proceeds</h3>
+                            <div class="clause-content-text">
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(a) IPO / FPO Funds:</span> Whether moneys raised by initial public offer or further public offer (including debt instruments) were applied for purposes raised; if not, details of delay/default.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(b) Preferential Allotment / Private Placement:</span> Whether company made preferential allotment or private placement of shares/convertible debentures; whether requirements of <strong>Section 42 &amp; 62</strong> complied with; whether funds used for intended purposes.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(xi) -->
+                        <div class="clause-item-card" data-category="fraud" data-keywords="fraud reported adt-4 section 143(12) whistle blower complaints">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(xi)</span>
+                                <span class="clause-category-tag">Fraud Reporting</span>
+                            </div>
+                            <h3 class="clause-heading">Reporting on Frauds &amp; Whistle-Blowers</h3>
+                            <div class="clause-content-text">
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(a)</span> Whether any fraud <em>by the company</em> or <em>on the company</em> noticed or reported during year; state nature and amount involved.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(b)</span> Whether report u/s 143(12) filed by auditors in <strong>Form ADT-4</strong> with Central Government.
+                                </div>
+                                <div class="sub-clause-box">
+                                    <span class="sub-clause-tag">(c)</span> Whether auditor considered <strong>whistle-blower complaints</strong> received during year.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(xii) -->
+                        <div class="clause-item-card" data-category="fraud" data-keywords="nidhi company net owned funds deposits 1:20 10% unencumbered term deposits default">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(xii)</span>
+                                <span class="clause-category-tag">Nidhi Company</span>
+                            </div>
+                            <h3 class="clause-heading">Nidhi Company Compliance</h3>
+                            <div class="clause-content-text">
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(a)</span> Net Owned Funds to Deposits ratio maintained at <span class="threshold-pill">1:20</span>.</div>
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(b)</span> Maintenance of <span class="threshold-pill">10% unencumbered term deposits</span> as per Nidhi Rules, 2014.</div>
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(c)</span> Any default in payment of interest on deposits or repayment thereof.</div>
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(xiii) -->
+                        <div class="clause-item-card" data-category="fraud" data-keywords="related parties section 177 section 188 disclosures accounting standards as 18 ind as 24">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(xiii)</span>
+                                <span class="clause-category-tag">Related Parties</span>
+                            </div>
+                            <h3 class="clause-heading">Related Party Transactions</h3>
+                            <div class="clause-content-text">
+                                Whether all transactions with related parties are in compliance with <strong>Section 177</strong> (Audit Committee approval) and <strong>Section 188</strong> (Related party contracts) of Companies Act, and details properly disclosed in financial statements as required by applicable Accounting Standards.
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(xiv) -->
+                        <div class="clause-item-card" data-category="fraud" data-keywords="internal audit system size nature business reports considered statutory auditor">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(xiv)</span>
+                                <span class="clause-category-tag">Internal Audit</span>
+                            </div>
+                            <h3 class="clause-heading">Internal Audit System</h3>
+                            <div class="clause-content-text">
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(a)</span> Whether internal audit system commensurate with size and nature of business.</div>
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(b)</span> Whether reports of Internal Auditors for period under audit were considered by statutory auditor.</div>
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(xv) -->
+                        <div class="clause-item-card" data-category="fraud" data-keywords="non-cash transactions directors connected persons section 192">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(xv)</span>
+                                <span class="clause-category-tag">Non-Cash Deals</span>
+                            </div>
+                            <h3 class="clause-heading">Non-Cash Transactions with Directors</h3>
+                            <div class="clause-content-text">
+                                Whether company entered into non-cash transactions with directors or persons connected with them, and if so, whether provisions of <strong>Section 192</strong> have been complied with.
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(xvi) -->
+                        <div class="clause-item-card" data-category="solvency" data-keywords="rbi registration nbfc section 45-ia housing finance certificate of registration cor core investment company cic group">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(xvi)</span>
+                                <span class="clause-category-tag">RBI &amp; NBFC Regulations</span>
+                            </div>
+                            <h3 class="clause-heading">Registration with RBI, NBFC &amp; CIC</h3>
+                            <div class="clause-content-text">
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(a)</span> Required registration u/s 45-IA of RBI Act, 1934 obtained.</div>
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(b)</span> Any NBFC or Housing Finance activities conducted without valid Certificate of Registration (COR).</div>
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(c)</span> Whether company is a Core Investment Company (CIC) and fulfils criteria.</div>
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(d)</span> Whether Group has more than one CIC; indicate total number of CICs in Group.</div>
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(xvii) -->
+                        <div class="clause-item-card" data-category="solvency" data-keywords="cash losses financial year preceding financial year amount">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(xvii)</span>
+                                <span class="clause-category-tag">Financial Health</span>
+                            </div>
+                            <h3 class="clause-heading">Cash Losses</h3>
+                            <div class="clause-content-text">
+                                Whether company incurred cash losses in the financial year AND in immediately preceding financial year; if so, state amount of cash losses.
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(xviii) -->
+                        <div class="clause-item-card" data-category="solvency" data-keywords="resignation statutory auditors outgoing concerns objections issues">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(xviii)</span>
+                                <span class="clause-category-tag">Auditor Resignation</span>
+                            </div>
+                            <h3 class="clause-heading">Resignation of Statutory Auditors</h3>
+                            <div class="clause-content-text">
+                                Whether there has been resignation of statutory auditors during year; if so, whether incoming auditor considered issues, objections, or concerns raised by outgoing auditor.
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(xix) -->
+                        <div class="clause-item-card" data-category="solvency" data-keywords="material uncertainty ability to meet liabilities financial ratios ageing balance sheet 1 year going concern">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(xix)</span>
+                                <span class="clause-category-tag">Going Concern Solvency</span>
+                            </div>
+                            <h3 class="clause-heading">Ability to Meet Liabilities Falling Due in 1 Year</h3>
+                            <div class="clause-content-text">
+                                On basis of financial ratios, ageing and expected realisation of financial assets and liabilities, and management plans, whether auditor is of opinion that <strong>no material uncertainty exists</strong> that company is capable of meeting liabilities existing at balance sheet date as and when they fall due within <span class="threshold-pill">1 Year</span> from balance sheet date.
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(xx) -->
+                        <div class="clause-item-card" data-category="solvency" data-keywords="csr corporate social responsibility unspent amount ongoing projects schedule vii fund section 135 6 months">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(xx)</span>
+                                <span class="clause-category-tag">CSR Compliance</span>
+                            </div>
+                            <h3 class="clause-heading">Corporate Social Responsibility (CSR)</h3>
+                            <div class="clause-content-text">
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(a) Other than Ongoing Projects:</span> Whether unspent CSR amount transferred to a Fund specified in Schedule VII within <span class="threshold-pill">6 Months</span> of expiry of financial year u/s 135(5).</div>
+                                <div class="sub-clause-box"><span class="sub-clause-tag">(b) Ongoing Projects:</span> Whether unspent amount pursuant to ongoing project transferred to special bank account within 30 days u/s 135(6).</div>
+                            </div>
+                        </div>
+
+                        <!-- Clause 3(xxi) -->
+                        <div class="clause-item-card" data-category="solvency" data-keywords="consolidated financial statements cfs caro remarks qualifications adverse group companies">
+                            <div class="clause-card-top">
+                                <span class="clause-id-badge">Clause 3(xxi)</span>
+                                <span class="clause-category-tag">Consolidated Financial Statements</span>
+                            </div>
+                            <h3 class="clause-heading">CARO Remarks in Consolidated Financial Statements</h3>
+                            <div class="clause-content-text">
+                                Whether there have been any qualifications or adverse remarks by respective auditors in the CARO reports of companies included in consolidated financial statements; if yes, indicate details of companies and paragraph numbers of CARO report containing adverse remarks.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </main>
 
     </div>
-<script src="../../assets/template.js"></script>
+
+    <!-- Script Assets -->
+    <script src="../../assets/template.js"></script>
+
+    <script>
+        // Interactive Clause Search & Filtering
+        const searchInput = document.getElementById('clauseSearchInput');
+        const cardsContainer = document.getElementById('clausesContainer');
+        const clauseCards = document.querySelectorAll('.clause-item-card');
+
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.toLowerCase().trim();
+            clauseCards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                const keywords = (card.getAttribute('data-keywords') || '').toLowerCase();
+                if (text.includes(query) || keywords.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        function filterClauses(category, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+
+            clauseCards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                if (category === 'all' || cardCat === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Active Sidebar Item on Scroll
+        const sections = document.querySelectorAll('.section-card, #sec143-1, #sec143-3, #sec143-12, #applicability, #clauses-hub');
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        const contentEl = document.querySelector('.content');
+        contentEl.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - contentEl.offsetTop;
+                if (contentEl.scrollTop >= sectionTop - 120) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            sidebarLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
