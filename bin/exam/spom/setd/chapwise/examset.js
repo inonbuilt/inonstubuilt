@@ -372,6 +372,29 @@ function submitExam() {
     const percentage = totalMarks > 0 ? ((score / totalMarks) * 100).toFixed(1) : 0;
     const passed = percentage >= 50;
 
+        try {
+        const chapName = (typeof chapterTitle !== 'undefined' && chapterTitle) ? chapterTitle : "Set D Chapter Practice";
+        if (typeof saveSpomResult === "function") {
+            saveSpomResult({
+                set: "SET D",
+                title: "SET D - Chapter Practice",
+                subject: chapName,
+                mode: "Chapter-Wise",
+                score: score,
+                totalMarks: totalMarks,
+                percentage: parseFloat(percentage),
+                grade: passed ? "Pass" : "Fail",
+                isPass: passed,
+                passMark: totalMarks * 0.5,
+                correctCount: correctCount,
+                wrongCount: wrongCount,
+                unanswered: skippedCount
+            });
+        }
+    } catch(err) {
+        console.warn("Could not save to dashboard:", err);
+    }
+
     document.getElementById("examArea").style.display = "none";
     const headerEl = document.getElementById("examHeader");
     if (headerEl) {

@@ -420,6 +420,29 @@ function submitExam() {
     else if (percentage >= 50) grade = "B (Qualified)";
     else grade = "Fail (Needs Revision)";
 
+        try {
+        const chapName = (typeof activeChapterTitle !== 'undefined' && activeChapterTitle) ? activeChapterTitle : "Set B Chapter Practice";
+        if (typeof saveSpomResult === "function") {
+            saveSpomResult({
+                set: "SET B",
+                title: "SET B - Chapter Practice",
+                subject: chapName,
+                mode: "Chapter-Wise",
+                score: score,
+                totalMarks: totalPossibleMarks,
+                percentage: parseFloat(percentage),
+                grade: grade,
+                isPass: isPass,
+                passMark: totalPossibleMarks * 0.5,
+                correctCount: correctCount,
+                wrongCount: wrongCount,
+                unanswered: unanswered
+            });
+        }
+    } catch(err) {
+        console.warn("Could not save to dashboard:", err);
+    }
+
     showResult(score, totalPossibleMarks, percentage, grade, isPass, correctCount, wrongCount, unanswered);
 }
 
@@ -434,7 +457,11 @@ function showResult(score, totalPossibleMarks, percentage, grade, isPass, correc
         : `<span class="status-badge badge-fail">FAILED (50% Required)</span>`;
 
     let html = `
-        <div class="social-updates-box">
+                <div style="margin: 22px 0; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <a href="../../espom.html#dashboard" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: #2563eb; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; box-shadow: 0 4px 14px rgba(37,99,235,0.4);">📊 View Results on SPOM Dashboard</a>
+            <button onclick="window.location.reload();" style="padding: 12px 24px; background: #374151; color: #ffffff; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 14px;">🔄 Retake Test</button>
+        </div>
+<div class="social-updates-box">
             <p style="font-size: 15px; font-weight: 500; color: #374151; line-height: 1.6; margin-bottom: 10px;">
                 If you notice any errors, bugs, incorrect answers, outdated information, or anything that needs improvement, please let us know through our social media channels.
             </p>

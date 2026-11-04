@@ -372,6 +372,30 @@ function submitExam() {
     else if (percentage >= 50) grade = "B";
     else grade = "Fail";
 
+        try {
+        const isSetB = document.title.toLowerCase().includes("set b") || window.location.pathname.toLowerCase().includes("setb");
+        const setLabel = isSetB ? "SET B" : "SET A";
+        const subjectTitle = isSetB ? "Strategic Cost & Performance Management (SCPM)" : "Corporate and Economic Laws";
+        if (typeof saveSpomResult === "function") {
+            saveSpomResult({
+                set: setLabel,
+                title: `${setLabel} Mock Exam`,
+                subject: subjectTitle,
+                mode: "Full Mock",
+                score: score,
+                totalMarks: selectedQuestions.length * MARK_PER_QUESTION,
+                percentage: parseFloat(percentage),
+                grade: grade,
+                passMark: PASS_MARK,
+                correctCount: correctCount,
+                wrongCount: wrongCount,
+                unanswered: unanswered
+            });
+        }
+    } catch(err) {
+        console.warn("Could not save to dashboard:", err);
+    }
+
     showResult(score, percentage, grade, correctCount, wrongCount, unanswered);
 }
 
@@ -427,6 +451,10 @@ function showResult(score, percentage, grade, correctCount, wrongCount, unanswer
         <p>Correct: ${correctCount}</p>
         <p>Wrong: ${wrongCount}</p>
         <p>Unanswered: ${unanswered}</p>
+        <div style="margin: 22px 0; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <a href="../espom.html#dashboard" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: #2563eb; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; box-shadow: 0 4px 14px rgba(37,99,235,0.4);">📊 View Results on SPOM Dashboard</a>
+            <button onclick="window.location.reload();" style="padding: 12px 24px; background: #374151; color: #ffffff; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 14px;">🔄 Retake Test</button>
+        </div>
         <hr>
         <h3>Detailed Solution Review</h3>
     `;

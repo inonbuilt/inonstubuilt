@@ -8,8 +8,10 @@
     <!-- Primary SEO Meta Tags -->
     <title>CA SPOM Online Mock Tests & Practice Portal (Set A, B, C, D) | Calcium Notes</title>
     <meta name="title" content="CA SPOM Online Mock Tests & Practice Portal (Set A, B, C, D) | Calcium Notes">
-    <meta name="description" content="Comprehensive portal for ICAI Self-Paced Online Modules (SPOM) exams: Set A Corporate Law, Set B SCPM, Set C Electives, and Set D Electives.">
-    <meta name="keywords" content="CA SPOM Mock Tests, Self Paced Online Modules Exam, SPOM Set A, SPOM Set B, SPOM Practice Tests, Calcium Notes">
+    <meta name="description"
+        content="Comprehensive portal for ICAI Self-Paced Online Modules (SPOM) exams: Set A Corporate Law, Set B SCPM, Set C Electives, and Set D Electives with AI-evaluated mock tests and instant performance tracking.">
+    <meta name="keywords"
+        content="CA SPOM Mock Tests, Self Paced Online Modules Exam, SPOM Set A, SPOM Set B, SPOM Practice Tests, Calcium Notes, SPOM Results Dashboard">
     <meta name="author" content="Calcium Notes Team">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/exam/spom/espom.html">
@@ -18,7 +20,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.calciumnotes.com/bin/exam/spom/espom.html">
     <meta property="og:title" content="CA SPOM Online Mock Tests & Practice Portal (Set A, B, C, D) | Calcium Notes">
-    <meta property="og:description" content="Comprehensive portal for ICAI Self-Paced Online Modules (SPOM) exams: Set A Corporate Law, Set B SCPM, Set C Electives, and Set D Electives.">
+    <meta property="og:description"
+        content="Comprehensive portal for ICAI Self-Paced Online Modules (SPOM) exams: Set A Corporate Law, Set B SCPM, Set C Electives, and Set D Electives.">
     <meta property="og:image" content="https://www.calciumnotes.com/assets/mockpreview.jpg">
     <meta property="og:site_name" content="Calcium Notes">
 
@@ -27,13 +30,18 @@
     <meta name="twitter:site" content="@Calciumnotes">
     <meta name="twitter:url" content="https://www.calciumnotes.com/bin/exam/spom/espom.html">
     <meta name="twitter:title" content="CA SPOM Online Mock Tests & Practice Portal (Set A, B, C, D) | Calcium Notes">
-    <meta name="twitter:description" content="Comprehensive portal for ICAI Self-Paced Online Modules (SPOM) exams: Set A Corporate Law, Set B SCPM, Set C Electives, and Set D Electives.">
+    <meta name="twitter:description"
+        content="Comprehensive portal for ICAI Self-Paced Online Modules (SPOM) exams: Set A Corporate Law, Set B SCPM, Set C Electives, and Set D Electives.">
     <meta name="twitter:image" content="https://www.calciumnotes.com/assets/mockpreview.jpg">
 
-
     <link rel="icon" href="../../../fevicol.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -41,302 +49,2334 @@
         gtag('js', new Date());
         gtag('config', 'G-YYJ8R39EXM');
     </script>
+    <!-- AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 
     <style>
         :root {
-            --bg-dark: #0f172a;
-            --bg-darker: #020617;
-            --card-bg: rgba(255, 255, 255, 0.04);
+            --bg-dark: #090d16;
+            --bg-darker: #04070e;
+            --surface-1: rgba(255, 255, 255, 0.03);
+            --surface-2: rgba(255, 255, 255, 0.06);
             --card-border: rgba(255, 255, 255, 0.08);
+            --card-border-hover: rgba(59, 130, 246, 0.35);
             --accent-blue: #3b82f6;
             --accent-blue-light: #60a5fa;
-            --text-main: #ffffff;
+            --accent-cyan: #06b6d4;
+            --accent-emerald: #10b981;
+            --accent-rose: #ef4444;
+            --accent-amber: #f59e0b;
+            --accent-indigo: #6366f1;
+            --text-main: #f8fafc;
             --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            --glass-bg: rgba(11, 15, 25, 0.82);
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
             -webkit-font-smoothing: antialiased;
         }
 
         body {
-            background: radial-gradient(circle at top left, #1e293b 0%, #0f172a 40%, #020617 100%);
+            background-color: var(--bg-dark);
+            background-image:
+                radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.12) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 50%),
+                radial-gradient(at 50% 50%, rgba(15, 23, 42, 0.5) 0px, transparent 100%);
+            background-attachment: fixed;
             color: var(--text-main);
             min-height: 100vh;
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
 
-        /* ================= HEADER ================= */
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
 
-        .app-header {
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+
+        /* ================= APP NAVBAR ================= */
+        .app-navbar {
             position: sticky;
             top: 0;
-            padding: 25px 20px 15px;
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: var(--glass-bg);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
             z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            text-align: center;
+            padding: 12px 20px;
+            transition: all 0.3s ease;
         }
 
-        .app-header h1 {
-            font-size: 1.8rem;
-            font-weight: 900;
-            letter-spacing: -0.5px;
-            margin-bottom: 4px;
-        }
-
-        .app-header h2 {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--accent-blue);
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .app-header a {
-            color: var(--accent-blue);
-            text-decoration: none;
-        }
-
-        /* ================= MAIN SCENE ================= */
-
-        .scene-wrapper {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px 20px 100px;
-        }
-
-        .list-container {
-            width: 100%;
-            max-width: 650px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* ================= SECTION TITLES ================= */
-
-        .section-title {
-            font-size: 0.9rem;
-            font-weight: 800;
-            color: var(--text-muted);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin: 30px 0 12px 15px;
-        }
-
-        /* ================= ROUNDED EXAM CARDS ================= */
-
-        .card {
-            width: 100%;
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 32px; 
-            padding: 22px 28px;
-            margin-bottom: 16px;
-            
+        .navbar-inner {
+            max-width: 1140px;
+            margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            
+            gap: 16px;
+        }
+
+        .brand-logo-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             text-decoration: none;
-            color: white;
+            color: inherit;
+        }
+
+        .brand-icon-box {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-title {
+            font-size: 1.05rem;
+            font-weight: 800;
+            letter-spacing: -0.3px;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+
+        .brand-badge {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--accent-blue-light);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* View Switcher */
+        .view-switcher-pill {
+            display: inline-flex;
+            background: rgba(2, 6, 23, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 999px;
+            padding: 4px;
+            gap: 4px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .switch-tab-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 8px 18px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             transition: all 0.25s ease;
             -webkit-tap-highlight-color: transparent;
         }
 
-        .card:hover, .card:active {
-            background: rgba(59, 130, 246, 0.08);
-            border-color: var(--accent-blue);
-            transform: scale(0.98);
-            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
+        .switch-tab-btn:hover {
+            color: #ffffff;
         }
 
-        .card-left {
-            display: flex;
-            flex-direction: column;
+        .switch-tab-btn.active {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: #ffffff;
+            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.4);
         }
 
-        .set-label {
-            font-size: 2.2rem;
-            font-weight: 900;
-            letter-spacing: -1px;
-            line-height: 1.1;
-            margin-bottom: 4px;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
+        .tab-counter-badge {
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            font-size: 0.7rem;
+            padding: 1px 7px;
+            border-radius: 999px;
+            font-weight: 800;
+            min-width: 18px;
+            text-align: center;
         }
 
-        .set-tag {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--accent-blue);
+        .switch-tab-btn.active .tab-counter-badge {
+            background: rgba(0, 0, 0, 0.28);
         }
 
-        .exam-desc {
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: var(--text-muted);
-        }
-
-        /* ================= AI BLINKING BADGE (SET C ONLY) ================= */
-
-        .ai-badge {
+        /* Prominent Calcium Notes Home Button */
+        .nav-home-btn {
             display: inline-flex;
             align-items: center;
-            background: rgba(59, 130, 246, 0.12);
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            color: var(--accent-blue-light);
-            font-size: 0.75rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            padding: 4px 10px;
-            border-radius: 100px;
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.1);
-        }
-
-        .ai-dot {
-            width: 6px;
-            height: 6px;
-            background-color: var(--accent-blue-light);
-            border-radius: 50%;
-            margin-right: 6px;
-            box-shadow: 0 0 8px var(--accent-blue-light);
-            animation: pulse-blink 1.2s infinite alternate;
-        }
-
-        @keyframes pulse-blink {
-            0% { opacity: 1; transform: scale(1); }
-            100% { opacity: 0.2; transform: scale(0.8); }
-        }
-
-        /* ================= EXAM ENTRY ARROW ================= */
-
-        .enter-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.3s;
+            gap: 8px;
+            padding: 8px 18px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.22) 0%, rgba(14, 165, 233, 0.18) 100%);
+            border: 1.5px solid rgba(56, 189, 248, 0.6);
+            border-radius: 999px;
+            color: #ffffff;
+            font-size: 0.84rem;
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: -0.1px;
+            box-shadow: 0 2px 14px rgba(37, 99, 235, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
             flex-shrink: 0;
         }
 
-        .card:hover .enter-icon {
-            background: var(--accent-blue);
-            transform: translateX(5px);
+        .nav-home-btn::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.2), transparent 70%);
+            opacity: 0.6;
+            pointer-events: none;
         }
 
-        /* ================= PROGRESS BAR ================= */
+        .nav-home-btn:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #0284c7 100%);
+            border-color: #38bdf8;
+            color: #ffffff;
+            box-shadow: 0 4px 22px rgba(56, 189, 248, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            transform: translateY(-1.5px);
+        }
 
-        .scroll-indicator {
+        .nav-home-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 10px rgba(37, 99, 235, 0.35);
+        }
+
+        .nav-home-icon-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #38bdf8;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .nav-home-btn:hover .nav-home-icon-box {
+            color: #ffffff;
+            transform: scale(1.12);
+        }
+
+        .nav-home-text-full {
+            display: inline;
+        }
+
+        .nav-home-text-tablet,
+        .nav-home-text-mobile {
+            display: none;
+        }
+
+        @media (max-width: 960px) and (min-width: 641px) {
+            .nav-home-text-full {
+                display: none;
+            }
+
+            .nav-home-text-tablet {
+                display: inline;
+            }
+        }
+
+        /* ================= MAIN CONTAINER ================= */
+        .portal-wrapper {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 24px 20px 100px;
+        }
+
+        /* ================= HERO SECTION ================= */
+        .portal-hero {
+            text-align: center;
+            padding: 30px 15px 40px;
+            position: relative;
+        }
+
+        .hero-pill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: var(--accent-blue-light);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .pulse-circle {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-blue);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-blue);
+            animation: pulse-dot 1.8s infinite;
+        }
+
+        @keyframes pulse-dot {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.4;
+                transform: scale(0.85);
+            }
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            letter-spacing: -1px;
+            line-height: 1.15;
+            margin-bottom: 12px;
+            background: linear-gradient(180deg, #ffffff 30%, #94a3b8 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            max-width: 720px;
+            margin: 0 auto 24px;
+            line-height: 1.6;
+        }
+
+        /* Feature Chips */
+        .feature-chips-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .feature-chip {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 999px;
+            padding: 6px 14px;
+            font-size: 0.8rem;
+            color: #cbd5e1;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Search & Filter Bar */
+        .search-filter-box {
+            max-width: 650px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input-wrapper svg {
+            position: absolute;
+            left: 18px;
+            color: var(--text-dim);
+            pointer-events: none;
+        }
+
+        .exam-search-input {
+            width: 100%;
+            background: rgba(15, 23, 42, 0.7);
+            border: 1.5px solid rgba(255, 255, 255, 0.12);
+            border-radius: 999px;
+            padding: 14px 20px 14px 48px;
+            color: #ffffff;
+            font-size: 0.95rem;
+            font-weight: 500;
+            outline: none;
+            transition: all 0.25s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .exam-search-input:focus {
+            border-color: var(--accent-blue);
+            background: rgba(15, 23, 42, 0.95);
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+        }
+
+        .exam-search-input::placeholder {
+            color: var(--text-dim);
+        }
+
+        /* Quick Filter Pills in Hero */
+        .quick-filter-pills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px;
+        }
+
+        .cat-pill {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .cat-pill:hover,
+        .cat-pill.active {
+            background: rgba(59, 130, 246, 0.15);
+            border-color: var(--accent-blue);
+            color: #ffffff;
+        }
+
+        /* Dynamic Catalog Banner */
+        .dash-alert-banner {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.15) 0%, rgba(30, 41, 59, 0.4) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            border-radius: 20px;
+            padding: 16px 22px;
+            margin-bottom: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .dash-alert-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .dash-alert-icon {
+            font-size: 1.6rem;
+            background: rgba(59, 130, 246, 0.2);
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dash-alert-title {
+            font-size: 0.98rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 2px;
+        }
+
+        .dash-alert-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .dash-alert-btn {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 7px 15px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+        }
+
+        .dash-alert-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+        }
+
+        .dash-alert-btn:hover {
+            transform: translateY(-1px);
+            opacity: 0.95;
+        }
+
+        /* ================= SECTION STYLING ================= */
+        .section-header-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px 0 18px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .section-heading-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title-text {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.2px;
+        }
+
+        .section-tag-pill {
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 3px 9px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tag-mandatory {
+            background: rgba(59, 130, 246, 0.15);
+            color: var(--accent-blue-light);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        .tag-elective {
+            background: rgba(168, 85, 247, 0.15);
+            color: #c084fc;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+
+        /* ================= EXAM CARDS GRID ================= */
+        .exam-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .exam-card {
+            background: var(--surface-1);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 18px;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        .exam-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--card-border-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .exam-card-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .set-identifier {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .set-code-badge {
+            font-size: 1.2rem;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+        }
+
+        .set-subtag {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--accent-blue-light);
+            background: rgba(59, 130, 246, 0.12);
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        /* AI Blinking Badge */
+        .ai-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(59, 130, 246, 0.12);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: var(--accent-blue-light);
+            font-size: 0.72rem;
+            font-weight: 800;
+            padding: 3px 8px;
+            border-radius: 999px;
+        }
+
+        .ai-chip-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--accent-blue-light);
+            border-radius: 50%;
+            box-shadow: 0 0 6px var(--accent-blue-light);
+            animation: pulse-dot 1.2s infinite alternate;
+        }
+
+        .exam-title-text {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.3;
+            letter-spacing: -0.3px;
+        }
+
+        .exam-card-main {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Action Buttons Row in Card */
+        .card-action-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-launch-full {
+            width: fit-content;
+            padding: 7px 16px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+        }
+
+        .btn-launch-full:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+        }
+
+        .btn-launch-chap {
+            width: fit-content;
+            padding: 6px 14px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #cbd5e1;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.78rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-launch-chap:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-1px);
+        }
+
+        /* ================= DASHBOARD VIEW ================= */
+        .dash-container {
+            width: 100%;
+        }
+
+        .dash-title-block {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .dash-main-title {
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+
+        .dash-main-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* KPI Cards */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .kpi-card {
+            background: var(--surface-1);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        .kpi-card:hover {
+            border-color: var(--card-border-hover);
+            transform: translateY(-2px);
+        }
+
+        .kpi-icon-glow {
+            position: absolute;
+            right: 14px;
+            top: 14px;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .kpi-label {
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        .kpi-value {
+            font-size: 2.1rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            line-height: 1.1;
+            color: #ffffff;
+        }
+
+        .kpi-subtext {
+            font-size: 0.78rem;
+            color: var(--text-dim);
+        }
+
+        /* Set Progress Strip */
+        .set-progress-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .set-stat-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 14px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .set-stat-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .set-stat-tag {
+            font-weight: 800;
+            font-size: 0.8rem;
+            color: var(--accent-blue-light);
+        }
+
+        .set-stat-attempts {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+        }
+
+        .set-stat-score-row {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+
+        .set-stat-score {
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        .set-stat-pass {
+            font-size: 0.74rem;
+            color: #34d399;
+            font-weight: 600;
+        }
+
+        .progress-bar-bg {
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: var(--accent-blue);
+            border-radius: 999px;
+            transition: width 0.4s ease;
+        }
+
+        /* Dashboard Toolbar */
+        .dash-toolbar-card {
+            background: var(--surface-1);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 14px 20px;
+            margin-bottom: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .filter-buttons-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .filter-pill-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-pill-btn:hover {
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        .filter-pill-btn.active {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: #ffffff;
+        }
+
+        .toolbar-action-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .action-tool-button {
+            padding: 7px 14px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.05);
+            color: #ffffff;
+        }
+
+        .action-tool-button:hover {
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .action-tool-button.danger-btn:hover {
+            background: rgba(239, 68, 68, 0.18);
+            border-color: rgba(239, 68, 68, 0.4);
+            color: #f87171;
+        }
+
+        /* Results Stream */
+        .history-cards-stream {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .history-card {
+            background: var(--surface-1);
+            border: 1px solid var(--card-border);
+            border-radius: 22px;
+            padding: 22px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            transition: all 0.25s ease;
+        }
+
+        .history-card:hover {
+            border-color: rgba(59, 130, 246, 0.35);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .history-card-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .history-info-col {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .history-tag-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .history-set-pill {
+            font-size: 0.72rem;
+            font-weight: 900;
+            color: var(--accent-blue-light);
+            text-transform: uppercase;
+        }
+
+        .history-mode-pill {
+            background: rgba(255, 255, 255, 0.07);
+            color: var(--text-muted);
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-size: 0.68rem;
+            font-weight: 600;
+        }
+
+        .history-subject-name {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.2px;
+        }
+
+        .history-date-row {
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Status Badge */
+        .status-capsule {
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .status-capsule.pass-status {
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            color: #34d399;
+            box-shadow: 0 0 14px rgba(16, 185, 129, 0.15);
+        }
+
+        .status-capsule.fail-status {
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.4);
+            color: #f87171;
+            box-shadow: 0 0 14px rgba(239, 68, 68, 0.15);
+        }
+
+        /* Score & Performance Box */
+        .history-score-strip {
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .score-headline-group {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .score-headline-num {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        .score-headline-pct {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--accent-blue-light);
+        }
+
+        .history-chips-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            font-size: 0.82rem;
+        }
+
+        .chip-stat-correct {
+            color: #34d399;
+            font-weight: 600;
+        }
+
+        .chip-stat-wrong {
+            color: #f87171;
+            font-weight: 600;
+        }
+
+        .chip-stat-skipped {
+            color: var(--text-dim);
+            font-weight: 500;
+        }
+
+        /* History Actions */
+        .history-action-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .history-retake-btn {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.2s;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+        }
+
+        .history-retake-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        .history-retake-btn:hover {
+            background: #2563eb;
+            transform: translateX(2px);
+        }
+
+        .history-delete-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-dim);
+            cursor: pointer;
+            padding: 6px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.2s;
+        }
+
+        .history-delete-btn:hover {
+            color: #f87171;
+        }
+
+        /* Empty State */
+        .dash-empty-card {
+            background: var(--surface-1);
+            border: 1.5px dashed rgba(255, 255, 255, 0.12);
+            border-radius: 28px;
+            padding: 60px 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .dash-empty-icon {
+            font-size: 3.2rem;
+            background: rgba(59, 130, 246, 0.1);
+            width: 72px;
+            height: 72px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dash-empty-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .dash-empty-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            max-width: 500px;
+            line-height: 1.6;
+        }
+
+        .empty-starter-chips {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .starter-btn {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            padding: 9px 18px;
+            border-radius: 999px;
+            font-size: 0.84rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .starter-btn:hover {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+
+        /* ================= INFO & FAQ SECTION ================= */
+        .info-section-wrapper {
+            margin-top: 60px;
+        }
+
+        .info-box-modern {
+            background: var(--surface-1);
+            border: 1px solid var(--card-border);
+            border-radius: 28px;
+            padding: 40px;
+            line-height: 1.8;
+            color: var(--text-muted);
+            font-size: 0.98rem;
+        }
+
+        .info-box-modern h3 {
+            color: #ffffff;
+            font-size: 1.45rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .info-box-modern h4 {
+            color: #ffffff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin: 30px 0 12px;
+        }
+
+        .info-box-modern p {
+            margin-bottom: 16px;
+        }
+
+        .info-learn-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 25px auto 0;
+            padding: 9px 22px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            box-shadow: 0 2px 10px rgba(37, 99, 235, 0.25);
+        }
+
+        .info-learn-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        .info-learn-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        /* ================= SCROLL INDICATOR ================= */
+        .scroll-indicator-bar {
             position: fixed;
-            bottom: 25px;
+            bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            width: 160px;
-            height: 5px;
+            width: 140px;
+            height: 4px;
             border-radius: 10px;
             background: rgba(255, 255, 255, 0.1);
             overflow: hidden;
             z-index: 1000;
         }
 
-        .scroll-progress {
+        .scroll-progress-fill {
             width: 0%;
             height: 100%;
             background: var(--accent-blue);
             border-radius: 10px;
         }
 
-        /* ================= INFO SECTION (EXTENDED WIDTH) ================= */
-        
-        .info-container {
-            width: 100%;
-            max-width: 880px;
-            margin-top: 50px;
+        /* Floating Back to Top Button */
+        .floating-top-btn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 44px;
+            height: 44px;
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.25s ease;
+            z-index: 999;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
         }
 
-        .info-box {
-            background: var(--card-bg);
+        .floating-top-btn.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .floating-top-btn:hover {
+            background: var(--accent-blue);
+            transform: translateY(-3px);
+        }
+
+        /* ================= RESPONSIVE DESIGN (TABLET & MOBILE) ================= */
+
+        /* Tablets (Landscape & Portrait: 641px - 1024px) */
+        @media (max-width: 1024px) {
+            .portal-wrapper {
+                padding: 20px 20px 90px;
+            }
+
+            .exam-cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 14px;
+            }
+
+            .kpi-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .set-progress-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .hero-title {
+                font-size: 2.3rem;
+            }
+        }
+
+        /* Mobile Phones (<= 640px) */
+        @media (max-width: 640px) {
+
+            /* Bar & Line Chart on Mobile */
+            .chart-card-wrapper {
+                padding: 16px 14px;
+                border-radius: 18px;
+                margin-bottom: 18px;
+            }
+
+            .chart-header-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+                margin-bottom: 16px;
+            }
+
+            .chart-controls-group {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .chart-type-toggle,
+            .chart-mode-toggle {
+                width: 100%;
+                display: flex;
+            }
+
+            .chart-toggle-btn {
+                flex: 1;
+                justify-content: center;
+                text-align: center;
+                padding: 6px 10px;
+            }
+
+            .chart-plot-container {
+                height: 185px;
+                padding: 22px 10px 38px 10px;
+            }
+
+            .chart-bars-track,
+            .chart-line-track {
+                overflow-x: auto;
+                padding-bottom: 6px;
+                justify-content: flex-start;
+                gap: 10px;
+                scrollbar-width: none;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .chart-bars-track::-webkit-scrollbar,
+            .chart-line-track::-webkit-scrollbar {
+                display: none;
+            }
+
+            .bar-col-item {
+                flex-shrink: 0;
+                min-width: 44px;
+            }
+
+            .benchmark-label {
+                font-size: 0.62rem;
+                top: -16px;
+                right: 8px;
+            }
+
+            .chart-footer-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            /* App Navbar */
+            .app-navbar {
+                padding: 10px 14px;
+            }
+
+            .navbar-inner {
+                display: grid;
+                grid-template-columns: 1fr auto;
+                row-gap: 10px;
+                align-items: center;
+            }
+
+            .brand-logo-group {
+                grid-column: 1;
+                gap: 10px;
+            }
+
+            .brand-icon-box {
+                width: 34px;
+                height: 34px;
+            }
+
+            .brand-title {
+                font-size: 0.95rem;
+            }
+
+            .brand-badge {
+                font-size: 0.62rem;
+            }
+
+            .nav-home-btn {
+                grid-column: 2;
+                justify-self: end;
+                padding: 7px 14px;
+                font-size: 0.8rem;
+                gap: 6px;
+            }
+
+            .nav-home-text-full,
+            .nav-home-text-tablet {
+                display: none;
+            }
+
+            .nav-home-text-mobile {
+                display: inline;
+                font-weight: 700;
+            }
+
+            .view-switcher-pill {
+                grid-column: 1 / -1;
+                width: 100%;
+                display: flex;
+                padding: 3px;
+                box-sizing: border-box;
+            }
+
+            .switch-tab-btn {
+                flex: 1;
+                justify-content: center;
+                padding: 8px 8px;
+                font-size: 0.8rem;
+                gap: 6px;
+                text-align: center;
+            }
+
+            /* Container & Hero */
+            .portal-wrapper {
+                padding: 14px 12px 85px;
+            }
+
+            .portal-hero {
+                padding: 18px 6px 22px;
+            }
+
+            .hero-pill-badge {
+                font-size: 0.7rem;
+                padding: 4px 10px;
+                margin-bottom: 12px;
+            }
+
+            .hero-title {
+                font-size: 1.65rem;
+                letter-spacing: -0.5px;
+                margin-bottom: 8px;
+                line-height: 1.2;
+            }
+
+            .hero-subtitle {
+                font-size: 0.88rem;
+                margin-bottom: 18px;
+                line-height: 1.5;
+            }
+
+            /* Feature Chips: horizontal swipe on mobile */
+            .feature-chips-row {
+                justify-content: flex-start;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                padding-bottom: 6px;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                gap: 6px;
+                margin-bottom: 20px;
+            }
+
+            .feature-chips-row::-webkit-scrollbar {
+                display: none;
+            }
+
+            .feature-chip {
+                white-space: nowrap;
+                font-size: 0.74rem;
+                padding: 5px 10px;
+                flex-shrink: 0;
+            }
+
+            /* Search Bar */
+            .exam-search-input {
+                padding: 12px 42px 12px 42px;
+                font-size: 0.88rem;
+            }
+
+            .clear-search-btn {
+                right: 12px;
+                width: 28px;
+                height: 28px;
+            }
+
+            /* Quick Filter Pills in Hero: horizontal swipeable */
+            .quick-filter-pills {
+                justify-content: flex-start;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                padding: 4px 0 6px;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                gap: 6px;
+            }
+
+            .quick-filter-pills::-webkit-scrollbar {
+                display: none;
+            }
+
+            .cat-pill {
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-size: 0.74rem;
+                padding: 6px 12px;
+            }
+
+            /* Suggestion Box */
+            .search-suggestion-box {
+                font-size: 0.82rem;
+                padding: 8px 12px;
+            }
+
+            .did-you-mean-btn {
+                font-size: 0.78rem;
+                padding: 3px 10px;
+            }
+
+            /* Section headers */
+            .section-header-row {
+                margin: 28px 0 14px;
+            }
+
+            .section-title-text {
+                font-size: 1.05rem;
+            }
+
+            /* Exam Cards Grid */
+            .exam-cards-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .exam-card {
+                padding: 16px 18px;
+                border-radius: 18px;
+                gap: 14px;
+            }
+
+            .set-code-badge {
+                font-size: 1.1rem;
+            }
+
+            .exam-title-text {
+                font-size: 1.12rem;
+                line-height: 1.35;
+            }
+
+            .card-action-row {
+                display: flex;
+                gap: 8px;
+                width: 100%;
+            }
+
+            .btn-launch-full {
+                flex: 1;
+                justify-content: center;
+                padding: 9px 14px;
+                font-size: 0.82rem;
+                min-height: 38px;
+                text-align: center;
+            }
+
+            .btn-launch-chap {
+                flex: 1;
+                justify-content: center;
+                padding: 9px 12px;
+                font-size: 0.8rem;
+                min-height: 38px;
+                text-align: center;
+            }
+
+            /* Alert Banner */
+            .dash-alert-banner {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 14px 16px;
+                gap: 12px;
+            }
+
+            .dash-alert-btn {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+            }
+
+            /* Dashboard View on Mobile */
+            .dash-main-title {
+                font-size: 1.55rem;
+            }
+
+            .dash-main-subtitle {
+                font-size: 0.85rem;
+            }
+
+            /* KPI Grid on Mobile: 2x2 Clean Grid */
+            .kpi-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                margin-bottom: 18px;
+            }
+
+            .kpi-card {
+                padding: 14px 12px;
+                border-radius: 16px;
+            }
+
+            .kpi-icon-glow {
+                display: none;
+            }
+
+            .kpi-label {
+                font-size: 0.68rem;
+            }
+
+            .kpi-value {
+                font-size: 1.6rem;
+            }
+
+            .kpi-subtext {
+                font-size: 0.7rem;
+            }
+
+            /* Set Progress on Mobile: 2x2 Grid */
+            .set-progress-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+                margin-bottom: 20px;
+            }
+
+            .set-stat-box {
+                padding: 10px 12px;
+                border-radius: 14px;
+            }
+
+            .set-stat-score {
+                font-size: 1.1rem;
+            }
+
+            /* Dashboard Toolbar */
+            .dash-toolbar-card {
+                padding: 12px 14px;
+                border-radius: 16px;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+            }
+
+            .filter-buttons-group {
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                padding-bottom: 4px;
+                scrollbar-width: none;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .filter-buttons-group::-webkit-scrollbar {
+                display: none;
+            }
+
+            .filter-pill-btn {
+                white-space: nowrap;
+                flex-shrink: 0;
+                font-size: 0.74rem;
+                padding: 5px 12px;
+            }
+
+            .toolbar-action-buttons {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                gap: 8px;
+            }
+
+            .action-tool-button {
+                flex: 1;
+                justify-content: center;
+                padding: 7px 10px;
+                font-size: 0.76rem;
+            }
+
+            /* Result Cards */
+            .history-card {
+                padding: 16px 14px;
+                border-radius: 18px;
+                gap: 12px;
+            }
+
+            .history-subject-name {
+                font-size: 1.05rem;
+            }
+
+            .status-capsule {
+                padding: 4px 10px;
+                font-size: 0.74rem;
+            }
+
+            .history-score-strip {
+                padding: 10px 12px;
+                border-radius: 14px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .score-headline-num {
+                font-size: 1.3rem;
+            }
+
+            .history-chips-row {
+                gap: 8px;
+                font-size: 0.76rem;
+            }
+
+            .history-retake-btn {
+                padding: 7px 14px;
+                font-size: 0.78rem;
+            }
+
+            /* Info Box */
+            .info-box-modern {
+                padding: 22px 16px;
+                border-radius: 20px;
+                font-size: 0.9rem;
+            }
+
+            .info-box-modern h3 {
+                font-size: 1.25rem;
+            }
+
+            .info-box-modern h4 {
+                font-size: 1.05rem;
+            }
+
+            /* Floating Button */
+            .floating-top-btn {
+                bottom: 18px;
+                right: 18px;
+                width: 38px;
+                height: 38px;
+            }
+        }
+
+        /* Ultra-compact phones (<= 360px) */
+        @media (max-width: 360px) {
+            .kpi-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .set-progress-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card-action-row {
+                flex-direction: column;
+            }
+
+            .btn-launch-full,
+            .btn-launch-chap {
+                width: 100%;
+            }
+        }
+
+        /* ================= SEARCH & FUZZY SPELL CHECK STYLES ================= */
+        .clear-search-btn {
+            position: absolute;
+            right: 18px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: var(--text-muted);
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.82rem;
+            transition: all 0.2s ease;
+        }
+
+        .clear-search-btn:hover {
+            background: rgba(239, 68, 68, 0.25);
+            color: #f87171;
+            transform: scale(1.1);
+        }
+
+        .search-suggestion-box {
+            margin-top: 12px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.16) 0%, rgba(30, 41, 59, 0.5) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            border-radius: 16px;
+            padding: 10px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            font-size: 0.88rem;
+            color: #e2e8f0;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+            animation: searchFadeIn 0.25s ease;
+        }
+
+        @keyframes searchFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-4px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .suggestion-prompt-text {
+            color: var(--text-muted);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+        }
+
+        .did-you-mean-btn {
+            background: rgba(59, 130, 246, 0.25);
+            border: 1px solid var(--accent-blue);
+            color: #ffffff;
+            font-weight: 800;
+            padding: 4px 14px;
+            border-radius: 999px;
+            cursor: pointer;
+            font-size: 0.84rem;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .did-you-mean-btn:hover {
+            background: var(--accent-blue);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 12px rgba(59, 130, 246, 0.4);
+        }
+
+        .suggestion-auto-note {
+            font-size: 0.78rem;
+            color: var(--accent-blue-light);
+            font-weight: 600;
+        }
+
+        .no-search-results-box {
+            background: var(--surface-1);
+            border: 1.5px dashed rgba(255, 255, 255, 0.14);
+            border-radius: 24px;
+            padding: 45px 25px;
+            text-align: center;
+            margin: 30px 0;
+            animation: searchFadeIn 0.25s ease;
+        }
+
+        .quick-suggestion-chips {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 14px;
+        }
+
+        .chip-suggestion {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #ffffff;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chip-suggestion:hover {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            transform: translateY(-1px);
+        }
+
+
+        /* ================= PERFORMANCE ANALYTICS (BAR & LINE CHARTS) ================= */
+        .chart-card-wrapper {
+            background: var(--surface-1);
             border: 1px solid var(--card-border);
             border-radius: 24px;
-            padding: 35px 40px;
-            text-align: left;
-            line-height: 1.8;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.25s ease;
+        }
+
+        .chart-card-wrapper:hover {
+            border-color: var(--card-border-hover);
+        }
+
+        .chart-header-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 22px;
+        }
+
+        .chart-title-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .chart-icon-box {
+            width: 38px;
+            height: 38px;
+            background: rgba(59, 130, 246, 0.15);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: transform 0.2s ease;
+        }
+
+        .chart-main-title {
+            font-size: 1.18rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.2px;
+        }
+
+        .chart-sub-title {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+        }
+
+        .chart-controls-group {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .chart-type-toggle,
+        .chart-mode-toggle {
+            display: inline-flex;
+            background: rgba(2, 6, 23, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 999px;
+            padding: 3px;
+            gap: 4px;
+        }
+
+        .chart-toggle-btn {
+            background: transparent;
+            border: none;
             color: var(--text-muted);
-            font-size: 1rem;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
         }
 
-        .info-box h3 {
-            color: white;
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: 1.35rem;
-        }
-        
-        .info-box h4 {
-            color: white;
-            margin-top: 30px;
-            margin-bottom: 12px;
-            font-size: 1.15rem;
-        }
-
-        .info-box p {
-            margin-bottom: 16px;
-        }
-
-        .info-box p:last-of-type {
-            margin-bottom: 0;
-        }
-
-        .learn-btn {
-            display: block;
-            margin: 30px auto 0;
-            width: fit-content;
-            padding: 14px 28px;
+        .chart-toggle-btn.active {
             background: var(--accent-blue);
-            color: white;
-            border-radius: 100px;
+            color: #ffffff;
+            box-shadow: 0 2px 10px rgba(59, 130, 246, 0.35);
+        }
+
+        /* Plot Area */
+        .chart-plot-container {
+            position: relative;
+            height: 220px;
+            background: rgba(0, 0, 0, 0.32);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 26px 16px 42px 16px;
+            display: flex;
+            align-items: flex-end;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        /* Benchmark Line at 50% */
+        .chart-benchmark-line {
+            position: absolute;
+            bottom: calc(50% + 8px);
+            left: 0;
+            width: 100%;
+            height: 1px;
+            border-top: 1.5px dashed rgba(245, 158, 11, 0.6);
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .benchmark-label {
+            position: absolute;
+            right: 12px;
+            top: -18px;
+            font-size: 0.68rem;
+            color: var(--accent-amber);
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            background: rgba(15, 23, 42, 0.88);
+            padding: 1px 7px;
+            border-radius: 4px;
+        }
+
+        .chart-top-line {
+            position: absolute;
+            top: 26px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            pointer-events: none;
+        }
+
+        /* Bars track */
+        .chart-bars-track {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            gap: 12px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .bar-col-item {
+            flex: 1;
+            max-width: 58px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .bar-pill-shape {
+            width: 100%;
+            min-height: 8px;
+            border-radius: 8px 8px 4px 4px;
+            position: relative;
+            transition: height 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.2s;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bar-col-item:hover .bar-pill-shape {
+            transform: scaleY(1.03);
+            filter: brightness(1.18);
+        }
+
+        /* Bar Colors */
+        .bar-pill-shape.pass-bar {
+            background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+            box-shadow: 0 0 14px rgba(16, 185, 129, 0.25);
+        }
+
+        .bar-pill-shape.fail-bar {
+            background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%);
+            box-shadow: 0 0 14px rgba(239, 68, 68, 0.25);
+        }
+
+        .bar-pill-shape.neutral-bar {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .bar-score-top-label {
+            position: absolute;
+            top: -22px;
+            font-size: 0.72rem;
+            font-weight: 800;
+            color: #ffffff;
+            white-space: nowrap;
+        }
+
+        .bar-subject-bottom-label {
+            position: absolute;
+            bottom: -30px;
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            font-weight: 700;
+            white-space: nowrap;
+            text-align: center;
+            max-width: 65px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Line Chart Track & SVG */
+        .chart-line-track {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 3;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .chart-line-track::-webkit-scrollbar {
+            display: none;
+        }
+
+        .chart-line-svg {
+            display: block;
+            height: 100%;
+            overflow: visible;
+        }
+
+        .line-point-node {
+            cursor: pointer;
+            outline: none;
+        }
+
+        .line-point-node circle {
+            transition: r 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s ease;
+        }
+
+        .line-point-node:hover circle,
+        .line-point-node:focus circle {
+            filter: brightness(1.25) drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));
+        }
+
+        .line-point-node text {
+            user-select: none;
+        }
+
+        /* Chart Footer */
+        .chart-footer-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 14px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.76rem;
+            color: var(--text-dim);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .chart-legend-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .legend-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .legend-color-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .legend-color-dot.pass-dot {
+            background: #10b981;
+            box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+        }
+
+        .legend-color-dot.fail-dot {
+            background: #ef4444;
+            box-shadow: 0 0 6px rgba(239, 68, 68, 0.6);
+        }
+
+        /* Chart Empty Box */
+        .chart-empty-box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            color: var(--text-dim);
+            text-align: center;
+            font-size: 0.88rem;
+            padding: 20px;
+        }
+
+
+        /* ================= PORTAL FOOTER ================= */
+        .portal-footer {
+            margin-top: 60px;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            background: linear-gradient(180deg, transparent 0%, rgba(2, 6, 23, 0.6) 100%);
+            border-radius: 24px 24px 0 0;
+        }
+
+        .portal-footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-bottom: 24px;
+        }
+
+        .footer-brand-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .footer-brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-brand-title {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.2px;
+        }
+
+        .footer-brand-desc {
+            font-size: 0.78rem;
+            color: var(--text-dim);
+        }
+
+        .footer-home-action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 22px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.3) 0%, rgba(14, 165, 233, 0.25) 100%);
+            border: 1.5px solid rgba(56, 189, 248, 0.6);
+            border-radius: 999px;
+            color: #ffffff;
+            font-size: 0.86rem;
             font-weight: 700;
             text-decoration: none;
-            transition: 0.2s;
+            box-shadow: 0 4px 18px rgba(37, 99, 235, 0.35);
+            transition: all 0.25s ease;
         }
 
-        .learn-btn:hover {
-            opacity: 0.85;
+        .footer-home-action-btn:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #0284c7 100%);
+            border-color: #38bdf8;
+            box-shadow: 0 6px 24px rgba(56, 189, 248, 0.55);
             transform: translateY(-2px);
         }
 
-        @media(max-width:768px) {
-            .app-header h1 {
-                font-size: 1.5rem;
+        .footer-copyright-row {
+            padding-top: 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.74rem;
+            color: var(--text-dim);
+            text-align: center;
+        }
+
+        @media (max-width: 640px) {
+            .portal-footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
             }
-            .card {
-                padding: 20px 24px;
-                border-radius: 28px;
-            }
-            .set-label {
-                font-size: 1.9rem;
-            }
-            .set-tag {
-                font-size: 1.05rem;
-            }
-            .info-box {
-                padding: 25px 20px;
+
+            .footer-home-action-btn {
+                width: 100%;
+                justify-content: center;
             }
         }
     </style>
@@ -344,224 +2384,1564 @@
 
 <body>
 
-    <header class="app-header">
-        <h1>SPOM MOCK EXAMS - Beta Version</h1>
-        <button onclick="window.location.href='https://www.calciumnotes.com';" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Click Here GO TO HOME</button>
+    <!-- ================= NAVBAR ================= -->
+    <header class="app-navbar">
+        <div class="navbar-inner">
+            <a href="https://www.calciumnotes.com" class="brand-logo-group">
+                <div class="brand-icon-box">
+                    <svg width="20" height="20" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">Calcium Notes</span>
+                    <span class="brand-badge">SPOM CBT Portal</span>
+                </div>
+            </a>
+
+            <!-- Segmented View Switcher -->
+            <div class="view-switcher-pill" role="tablist">
+                <button id="tabCatalog" class="switch-tab-btn active" onclick="switchView('catalog')">
+                    <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    </svg>
+                    Mock Exam Catalog
+                </button>
+                <button id="tabDashboard" class="switch-tab-btn" onclick="switchView('dashboard')">
+                    <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                    My Results
+                    <span id="tabCountBadge" class="tab-counter-badge">0</span>
+                </button>
+            </div>
+
+            <a href="https://www.calciumnotes.com" class="nav-home-btn" title="Return to Calcium Notes Main Website">
+                <span class="nav-home-icon-box" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9.5L12 3l9 6.5V20a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9.5z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                </span>
+                <span class="nav-home-text-full">Calcium Notes Home</span>
+                <span class="nav-home-text-tablet">Calcium Home</span>
+                <span class="nav-home-text-mobile">Home</span>
+            </a>
+        </div>
     </header>
 
-    <div class="scene-wrapper">
+    <div class="portal-wrapper">
 
-        <div class="list-container" id="carousel">
+        <!-- ================= CATALOG VIEW ================= -->
+        <main id="catalogView">
 
-            <h2 class="section-title">Mandatory Sets</h2>
-
-            <a href="./seta/setaint.html" class="card">
-                <div class="card-left">
-                    <div class="set-label">SET A
-                        <div class="ai-badge"><div class="ai-dot"></div>AI</div>
-                    </div>
-                    <div class="exam-desc">Corporate and Economic Laws</div>
+            <!-- Hero Header -->
+            <section class="portal-hero">
+                <div class="hero-pill-badge">
+                    <div class="pulse-circle"></div>
+                    ICAI SPOM 2024–2026 Blueprint
                 </div>
-                <div class="enter-icon">
-                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1.5L7.5 8L1.5 14.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </a>
-
-            <a href="./setb/setbint.html" class="card">
-                <div class="card-left">
-                    <div class="set-label">SET B
-                        <div class="ai-badge"><div class="ai-dot"></div>AI</div>
-                    </div>
-                    <div class="exam-desc">Strategic Cost & Performance Management</div>
-                </div>
-                <div class="enter-icon">
-                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1.5L7.5 8L1.5 14.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </a>
-
-            <h2 class="section-title">Set C Subjects</h2>
-
-            <a href="./setc/instibc.html" class="card">
-                <div class="card-left">
-                    <div class="set-label">
-                        IBC 
-                        <span class="set-tag">SET C</span>
-                        <div class="ai-badge"><div class="ai-dot"></div>AI</div>
-                    </div>
-                    <div class="exam-desc">Insolvency & Bankruptcy Code</div>
-                </div>
-                <div class="enter-icon">
-                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1.5L7.5 8L1.5 14.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </a>
-
-            <a href="./setc/instforacc.html" class="card">
-                <div class="card-left">
-                    <div class="set-label" style="font-size: 1.5rem;">
-                        Forensic Accounting
-                        <span class="set-tag">SET C</span>
-                        <div class="ai-badge"><div class="ai-dot"></div>AI</div>
-                    </div>
-                    <div class="exam-desc">Forensic Accounting</div>
-                </div>
-                <div class="enter-icon">
-                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1.5L7.5 8L1.5 14.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </a>
-
-            <a href="./setc/instvaluation.html" class="card">
-                <div class="card-left">
-                    <div class="set-label" style="font-size: 1.5rem;">
-                        Valuation
-                        <span class="set-tag">SET C</span>
-                        <div class="ai-badge"><div class="ai-dot"></div>AI</div>
-                    </div>
-                    <div class="exam-desc">Valuation</div>
-                </div>
-                <div class="enter-icon">
-                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1.5L7.5 8L1.5 14.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </a>
-
-            <a href="./setc/instArbitration.html" class="card">
-                <div class="card-left">
-                    <div class="set-label">
-                        Arbitration
-                        <span class="set-tag">SET C</span>
-                        <div class="ai-badge"><div class="ai-dot"></div>AI</div>
-                    </div>
-                    <div class="exam-desc">Arbitration & Conciliation Act</div>
-                </div>
-                <div class="enter-icon">
-                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1.5L7.5 8L1.5 14.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </a>
-
-            <h2 class="section-title">Set D Subjects</h2>
-
-            <a href="./setd/chppsy.html" class="card">
-                <div class="card-left">
-                    <div class="set-label">
-                        Psychology
-                        <span class="set-tag">SET D</span>
-                        <div class="ai-badge"><div class="ai-dot"></div>AI</div>
-                    </div>
-                    <div class="exam-desc"> Psychology & Philosophy</div>
-                </div>
-                <div class="enter-icon">
-                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1.5L7.5 8L1.5 14.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </a>
-
-            <a href="./setd/inststartup.html" class="card">
-                <div class="card-left">
-                    <div class="set-label">
-                        Start-up
-                        <span class="set-tag">SET D</span>
-                        <div class="ai-badge"><div class="ai-dot"></div>AI</div>
-                    </div>
-                    <div class="exam-desc">Entrepreneurship & Start-up Ecosystem</div>
-                </div>
-                <div class="enter-icon">
-                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1.5L7.5 8L1.5 14.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </a>
-
-            <a href="./setd/instecosyst.html" class="card">
-                <div class="card-left">
-                    <div class="set-label">
-                        ECOSYSTEM
-                        <span class="set-tag">SET D</span>
-                        <div class="ai-badge"><div class="ai-dot"></div>AI</div>
-                    </div>
-                    <div class="exam-desc">Digital Ecosystem and Controls</div>
-                </div>
-                <div class="enter-icon">
-                    <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1.5L7.5 8L1.5 14.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </a>
-
-        </div>
-
-        <div class="info-container">
-            <div class="info-box">
-                <h3>About SPOM Set A, Set B, Set C & Set D Mock Tests</h3>
-                <p>
-                    The Self-Paced Online Module (SPOM) Mock Tests provided by <strong style="color:white;">Calcium Notes</strong> are designed to help CA Final students prepare effectively for the ICAI examination. Our mock tests follow the latest ICAI pattern and provide a real exam experience with objective-type MCQs, instant evaluation, and detailed performance analysis.
-                </p>
-                <p>
-                    Students can practice multiple SPOM Sets and improve their speed, accuracy, conceptual understanding, and confidence before appearing for the actual examination. Every question is carefully prepared based on the latest ICAI syllabus and updated whenever ICAI introduces new concepts or amendments.
-                </p>
-                <p>
-                    Calcium Notes aims to provide completely free, high-quality SPOM preparation resources for CA students including Notes, Mock Tests, Practice Questions, Case Scenario MCQs, and Performance Analysis.
-                </p>
-                
-                <h4>Master the Mandatory Modules: Set A & Set B</h4>
-                <p>
-                    <strong>SPOM Set A (Corporate and Economic Laws):</strong> This mandatory module demands a strong grip on legal provisions and complex case studies. Our Set A mock tests feature intricate case-scenario MCQs that test your application of company law, securities law, and economic regulations, ensuring you can confidently tackle the trickiest questions set by ICAI.
-                </p>
-                <p>
-                    <strong>SPOM Set B (Strategic Cost & Performance Management - SCPM):</strong> Success in SCPM requires analytical thinking and practical decision-making skills. The Calcium Notes Set B practice sets are heavily engineered to test your numerical accuracy, strategic management evaluation, and conceptual clarity under strict time constraints.
+                <h1 class="hero-title">CA SPOM Online Mock Tests</h1>
+                <p class="hero-subtitle">
+                    Full-length CBT mock tests for Set A, Set B, Set C, and Set D. Experience real exam timing,
+                    AI-evaluated case scenarios, instant scoring, and detailed step-by-step reasoning.
                 </p>
 
-                <h4>Conquer the Electives: Set C & Set D</h4>
-                <p>
-                    <strong>SPOM Set C (Elective Modules):</strong> Set C offers a unique challenge by allowing you to specialize in a specific domain. We currently provide highly tailored mock exams for <em>Insolvency & Bankruptcy Code (IBC), Forensic Accounting, and Arbitration</em>. Because these subjects demand a high level of practical application, our mock exams heavily replicate the exact difficulty and environment of the official portal.
-                </p>
-                <p>
-                    <strong>SPOM Set D (Multi-disciplinary Modules):</strong> Set D pushes CA students beyond traditional finance, covering dynamic and diverse fields like <em>Psychology & Philosophy</em> and the <em>Entrepreneurship & Start-up Ecosystem</em>. Our topic-wise quizzes and full-length mock exams break down these vast, multidisciplinary modules into highly digestible, targeted practice sessions.
-                </p>
-                
-                <p style="margin-top: 20px;">
-                    By utilizing our full-length simulated exams across all sets, you can easily identify weak areas, improve your overall score, and confidently secure the required passing criteria for your final CA examinations.
-                </p>
+                <!-- Key Feature Chips -->
+                <div class="feature-chips-row">
+                    <span class="feature-chip">⚡ Real ICAI Pattern</span>
+                    <span class="feature-chip">🤖 AI Case Scenarios</span>
+                    <span class="feature-chip">⏱️ Exact 2h/3h CBT Timer</span>
+                    <span class="feature-chip">📊 Instant Detailed Scorecard</span>
+                    <span class="feature-chip">💯 100% Free</span>
+                </div>
 
-                <a href="./what-is-spom.html" class="learn-btn">Learn More About SPOM</a>
+                <!-- Search Input -->
+                <div class="search-filter-box">
+                    <div class="search-input-wrapper">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
+                        </svg>
+                        <input type="text" id="subjectSearchInput" class="exam-search-input"
+                            placeholder="Search subjects (e.g. Set C, Valuation, IBC, SCPM, Startup, Arbitration)..."
+                            oninput="handleSearch(this.value)">
+                        <button id="clearSearchBtn" class="clear-search-btn" style="display: none;"
+                            onclick="clearSearchInput()" title="Clear search">✕</button>
+                    </div>
+
+                    <!-- 'Did you mean this?' Typo Suggestion Box -->
+                    <div id="searchSuggestionBox" class="search-suggestion-box" style="display: none;"></div>
+
+                    <div class="quick-filter-pills">
+                        <button class="cat-pill active" onclick="filterCategory('all', this)">All Subjects</button>
+                        <button class="cat-pill" onclick="filterCategory('mandatory', this)">Mandatory Sets (A &
+                            B)</button>
+                        <button class="cat-pill" onclick="filterCategory('setc', this)">Set C Electives</button>
+                        <button class="cat-pill" onclick="filterCategory('setd', this)">Set D Electives</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dynamic Alert Banner (shows if user has past test records) -->
+            <div id="catalogBannerAlert" class="dash-alert-banner" style="display: none;">
+                <div class="dash-alert-left">
+                    <div class="dash-alert-icon">📊</div>
+                    <div>
+                        <div class="dash-alert-title" id="bannerAlertTitle">Performance Summary</div>
+                        <div class="dash-alert-desc" id="bannerAlertDesc">You have recorded mock test attempts.</div>
+                    </div>
+                </div>
+                <button class="dash-alert-btn" onclick="switchView('dashboard')">View Results Dashboard →</button>
             </div>
-        </div>
 
+            <!-- Empty Search Results Box -->
+            <div id="catalogNoResults" class="no-search-results-box" style="display: none;">
+                <div style="font-size: 2.4rem; margin-bottom: 10px;">🔍</div>
+                <h3 id="noResultsQueryTitle"
+                    style="color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 6px;">No mock tests
+                    found</h3>
+                <p
+                    style="color: var(--text-muted); font-size: 0.92rem; max-width: 480px; margin: 0 auto 16px; line-height: 1.6;">
+                    We couldn't find an exact match for that keyword. Try one of these popular SPOM subjects:
+                </p>
+                <div class="quick-suggestion-chips">
+                    <button class="chip-suggestion" onclick="applySearchSuggestion('Set A')">Set A: Corporate
+                        Law</button>
+                    <button class="chip-suggestion" onclick="applySearchSuggestion('Set B')">Set B: SCPM</button>
+                    <button class="chip-suggestion" onclick="applySearchSuggestion('Set C')">Set C: Electives</button>
+                    <button class="chip-suggestion" onclick="applySearchSuggestion('Valuation')">Valuation</button>
+                    <button class="chip-suggestion" onclick="applySearchSuggestion('IBC')">IBC</button>
+                    <button class="chip-suggestion" onclick="applySearchSuggestion('Psychology')">Psychology</button>
+                    <button class="chip-suggestion" onclick="applySearchSuggestion('Startup')">Startup</button>
+                </div>
+            </div>
+
+            <!-- SECTION 1: MANDATORY SETS -->
+            <div class="exam-section-block" data-section="mandatory">
+                <div class="section-header-row">
+                    <div class="section-heading-group">
+                        <span class="section-title-text">Mandatory Modules</span>
+                        <span class="section-tag-pill tag-mandatory">Compulsory</span>
+                    </div>
+                    <span style="font-size: 0.8rem; color: var(--text-dim);">Sets A & B</span>
+                </div>
+
+                <div class="exam-cards-grid">
+
+                    <!-- SET A -->
+                    <div class="exam-card"
+                        data-tags="set a seta corporate economic law mandatory company law director directors sebi fema lodr icdr compromises winding up">
+                        <div class="exam-card-main">
+                            <div class="exam-card-top">
+                                <div class="set-identifier">
+                                    <span class="set-code-badge">SET A</span>
+                                    <span class="set-subtag">Mandatory</span>
+                                </div>
+                                <div class="ai-chip">
+                                    <div class="ai-chip-dot"></div>AI
+                                </div>
+                            </div>
+                            <h2 class="exam-title-text">Corporate & Economic Laws</h2>
+                        </div>
+
+                        <div class="card-action-row">
+                            <a href="./seta/setaint.html" class="btn-launch-full">Start Mock Test →</a>
+                            <a href="./seta/chapwise/chapgate.html" class="btn-launch-chap">📚 Chapter Tests</a>
+                        </div>
+                    </div>
+
+                    <!-- SET B -->
+                    <div class="exam-card"
+                        data-tags="set b setb scpm scmpe strategic cost performance management costing pricing transfer pricing value chain mandatory">
+                        <div class="exam-card-main">
+                            <div class="exam-card-top">
+                                <div class="set-identifier">
+                                    <span class="set-code-badge">SET B</span>
+                                    <span class="set-subtag">Mandatory</span>
+                                </div>
+                                <div class="ai-chip">
+                                    <div class="ai-chip-dot"></div>AI
+                                </div>
+                            </div>
+                            <h2 class="exam-title-text">Strategic Cost & Performance Management</h2>
+                        </div>
+
+                        <div class="card-action-row">
+                            <a href="./setb/setbint.html" class="btn-launch-full">Start Mock Test →</a>
+                            <a href="./setb/chapwise/chapgate.html" class="btn-launch-chap">📚 Chapter Tests</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SECTION 2: SET C ELECTIVES -->
+            <div class="exam-section-block" data-section="setc">
+                <div class="section-header-row">
+                    <div class="section-heading-group">
+                        <span class="section-title-text">Set C Electives</span>
+                        <span class="section-tag-pill tag-elective">Elective Specializations</span>
+                    </div>
+                    <span style="font-size: 0.8rem; color: var(--text-dim);">Case Scenarios & MCQs</span>
+                </div>
+
+                <div class="exam-cards-grid">
+
+                    <!-- IBC -->
+                    <div class="exam-card"
+                        data-tags="set c setc ibc insolvency bankruptcy code cirp liquidation fast track adjudicating elective">
+                        <div class="exam-card-main">
+                            <div class="exam-card-top">
+                                <div class="set-identifier">
+                                    <span class="set-code-badge">IBC</span>
+                                    <span class="set-subtag">SET C</span>
+                                </div>
+                                <div class="ai-chip">
+                                    <div class="ai-chip-dot"></div>AI
+                                </div>
+                            </div>
+                            <h2 class="exam-title-text">Insolvency & Bankruptcy Code</h2>
+                        </div>
+
+                        <div class="card-action-row">
+                            <a href="./setc/instibc.html" class="btn-launch-full">Start Mock Test →</a>
+                        </div>
+                    </div>
+
+                    <!-- Valuation -->
+                    <div class="exam-card"
+                        data-tags="set c setc valuation business valuation equity fair value dcf relative valuation intangibles elective">
+                        <div class="exam-card-main">
+                            <div class="exam-card-top">
+                                <div class="set-identifier">
+                                    <span class="set-code-badge">Valuation</span>
+                                    <span class="set-subtag">SET C</span>
+                                </div>
+                                <div class="ai-chip">
+                                    <div class="ai-chip-dot"></div>AI
+                                </div>
+                            </div>
+                            <h2 class="exam-title-text">Valuation</h2>
+                        </div>
+
+                        <div class="card-action-row">
+                            <a href="./setc/instvaluation.html" class="btn-launch-full">Start Mock Test →</a>
+                        </div>
+                    </div>
+
+                    <!-- Forensic Accounting -->
+                    <div class="exam-card"
+                        data-tags="set c setc forensic forensic accounting fraud investigation digital audit financial statement manipulation elective">
+                        <div class="exam-card-main">
+                            <div class="exam-card-top">
+                                <div class="set-identifier">
+                                    <span class="set-code-badge">Forensic Acc.</span>
+                                    <span class="set-subtag">SET C</span>
+                                </div>
+                                <div class="ai-chip">
+                                    <div class="ai-chip-dot"></div>AI
+                                </div>
+                            </div>
+                            <h2 class="exam-title-text">Forensic Accounting & Investigation</h2>
+                        </div>
+
+                        <div class="card-action-row">
+                            <a href="./setc/instforacc.html" class="btn-launch-full">Start Mock Test →</a>
+                        </div>
+                    </div>
+
+                    <!-- Arbitration -->
+                    <div class="exam-card"
+                        data-tags="set c setc arbitration conciliation dispute resolution adr arbitral tribunal foreign awards elective">
+                        <div class="exam-card-main">
+                            <div class="exam-card-top">
+                                <div class="set-identifier">
+                                    <span class="set-code-badge">Arbitration</span>
+                                    <span class="set-subtag">SET C</span>
+                                </div>
+                                <div class="ai-chip">
+                                    <div class="ai-chip-dot"></div>AI
+                                </div>
+                            </div>
+                            <h2 class="exam-title-text">Arbitration & Conciliation</h2>
+                        </div>
+
+                        <div class="card-action-row">
+                            <a href="./setc/instArbitration.html" class="btn-launch-full">Start Mock Test →</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SECTION 3: SET D ELECTIVES -->
+            <div class="exam-section-block" data-section="setd">
+                <div class="section-header-row">
+                    <div class="section-heading-group">
+                        <span class="section-title-text">Set D Multi-Disciplinary Electives</span>
+                        <span class="section-tag-pill tag-elective">Set D Subjects</span>
+                    </div>
+                    <span style="font-size: 0.8rem; color: var(--text-dim);">Multi-Disciplinary</span>
+                </div>
+
+                <div class="exam-cards-grid">
+
+                    <!-- Psychology -->
+                    <div class="exam-card"
+                        data-tags="set d setd psychology philosophy behavioral cognitive ethics skepticism elective">
+                        <div class="exam-card-main">
+                            <div class="exam-card-top">
+                                <div class="set-identifier">
+                                    <span class="set-code-badge">Psychology</span>
+                                    <span class="set-subtag">SET D</span>
+                                </div>
+                                <div class="ai-chip">
+                                    <div class="ai-chip-dot"></div>AI
+                                </div>
+                            </div>
+                            <h2 class="exam-title-text">Psychology & Philosophy</h2>
+                        </div>
+
+                        <div class="card-action-row">
+                            <a href="./setd/chppsy.html" class="btn-launch-full">Start Mock Test →</a>
+                            <a href="./setd/chapwise/chapgate.html" class="btn-launch-chap">📚 Chapter Tests</a>
+                        </div>
+                    </div>
+
+                    <!-- Start-up -->
+                    <div class="exam-card"
+                        data-tags="set d setd startup start-up start up entrepreneurship funding venture capital vc pitch decks angel cap tables elective">
+                        <div class="exam-card-main">
+                            <div class="exam-card-top">
+                                <div class="set-identifier">
+                                    <span class="set-code-badge">Start-up</span>
+                                    <span class="set-subtag">SET D</span>
+                                </div>
+                                <div class="ai-chip">
+                                    <div class="ai-chip-dot"></div>AI
+                                </div>
+                            </div>
+                            <h2 class="exam-title-text">Entrepreneurship & Start-up Ecosystem</h2>
+                        </div>
+
+                        <div class="card-action-row">
+                            <a href="./setd/inststartup.html" class="btn-launch-full">Start Mock Test →</a>
+                        </div>
+                    </div>
+
+                    <!-- Digital Ecosystem -->
+                    <div class="exam-card"
+                        data-tags="set d setd digital ecosystem ecosystem controls it controls itgc cybersecurity cloud fintech data analytics elective">
+                        <div class="exam-card-main">
+                            <div class="exam-card-top">
+                                <div class="set-identifier">
+                                    <span class="set-code-badge">Ecosystem</span>
+                                    <span class="set-subtag">SET D</span>
+                                </div>
+                                <div class="ai-chip">
+                                    <div class="ai-chip-dot"></div>AI
+                                </div>
+                            </div>
+                            <h2 class="exam-title-text">Digital Ecosystem and Controls</h2>
+                        </div>
+
+                        <div class="card-action-row">
+                            <a href="./setd/instecosyst.html" class="btn-launch-full">Start Mock Test →</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SEO & INFO SECTION -->
+            <section class="info-section-wrapper">
+                <div class="info-box-modern">
+                    <h3>About SPOM Set A, Set B, Set C & Set D Mock Tests</h3>
+                    <p>
+                        The Self-Paced Online Module (SPOM) Mock Tests provided by <strong style="color:white;">Calcium
+                            Notes</strong> are designed to help CA Final students prepare effectively for the ICAI
+                        examination. Our mock tests follow the latest ICAI pattern and provide a real exam experience
+                        with objective-type MCQs, instant evaluation, and detailed performance analysis.
+                    </p>
+                    <p>
+                        Students can practice multiple SPOM Sets and improve their speed, accuracy, conceptual
+                        understanding, and confidence before appearing for the actual examination. Every question is
+                        carefully prepared based on the latest ICAI syllabus and updated whenever ICAI introduces new
+                        concepts or amendments.
+                    </p>
+                    <p>
+                        Calcium Notes aims to provide completely free, high-quality SPOM preparation resources for CA
+                        students including Notes, Mock Tests, Practice Questions, Case Scenario MCQs, and Performance
+                        Analysis.
+                    </p>
+
+                    <h4>Master the Mandatory Modules: Set A & Set B</h4>
+                    <p>
+                        <strong>SPOM Set A (Corporate and Economic Laws):</strong> This mandatory module demands a
+                        strong grip on legal provisions and complex case studies. Our Set A mock tests feature intricate
+                        case-scenario MCQs that test your application of company law, securities law, and economic
+                        regulations, ensuring you can confidently tackle the trickiest questions set by ICAI.
+                    </p>
+                    <p>
+                        <strong>SPOM Set B (Strategic Cost & Performance Management - SCPM):</strong> Success in SCPM
+                        requires analytical thinking and practical decision-making skills. The Calcium Notes Set B
+                        practice sets are heavily engineered to test your numerical accuracy, strategic management
+                        evaluation, and conceptual clarity under strict time constraints.
+                    </p>
+
+                    <h4>Conquer the Electives: Set C & Set D</h4>
+                    <p>
+                        <strong>SPOM Set C (Elective Modules):</strong> Set C offers a unique challenge by allowing you
+                        to specialize in a specific domain. We currently provide highly tailored mock exams for
+                        <em>Insolvency & Bankruptcy Code (IBC), Valuation, Forensic Accounting, and Arbitration</em>.
+                        Because these subjects demand a high level of practical application, our mock exams heavily
+                        replicate the exact difficulty and environment of the official portal.
+                    </p>
+                    <p>
+                        <strong>SPOM Set D (Multi-disciplinary Modules):</strong> Set D pushes CA students beyond
+                        traditional finance, covering dynamic and diverse fields like <em>Psychology & Philosophy</em>
+                        and the <em>Entrepreneurship & Start-up Ecosystem</em>. Our topic-wise quizzes and full-length
+                        mock exams break down these vast, multidisciplinary modules into highly digestible, targeted
+                        practice sessions.
+                    </p>
+
+                    <p style="margin-top: 20px;">
+                        By utilizing our full-length simulated exams across all sets, you can easily identify weak
+                        areas, improve your overall score, and confidently secure the required passing criteria for your
+                        final CA examinations.
+                    </p>
+
+                    <div style="text-align: center;">
+                        <a href="./what-is-spom.html" class="info-learn-btn">Learn More About SPOM →</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ================= DASHBOARD VIEW ================= -->
+        <section id="dashboardView" style="display: none;">
+            <div class="dash-container">
+
+                <div class="dash-title-block">
+                    <h2 class="dash-main-title">SPOM Performance Dashboard</h2>
+                    <p class="dash-main-subtitle">Track your mock test scores, passing rates, and accuracy trends across
+                        all SPOM subjects.</p>
+                </div>
+
+                <!-- 4 KPI Cards -->
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-icon-glow">📝</div>
+                        <span class="kpi-label">Tests Written</span>
+                        <span class="kpi-value" id="statTotal">0</span>
+                        <span class="kpi-subtext">Total full mocks & chapters</span>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon-glow">🎯</div>
+                        <span class="kpi-label">Pass Rate</span>
+                        <span class="kpi-value" id="statPassRate" style="color: #34d399;">0%</span>
+                        <span class="kpi-subtext" id="statPassRateSub">0 Passed / 0 Failed</span>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon-glow">⚡</div>
+                        <span class="kpi-label">Average Score</span>
+                        <span class="kpi-value" id="statAvgScore" style="color: #60a5fa;">0%</span>
+                        <span class="kpi-subtext">Cumulative average</span>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon-glow">🏆</div>
+                        <span class="kpi-label">Highest Score</span>
+                        <span class="kpi-value" id="statHighestScore" style="color: #fbbf24;">0</span>
+                        <span class="kpi-subtext">Best score achieved</span>
+                    </div>
+                </div>
+
+                <!-- ================= BAR CHART: SCORE & PERFORMANCE ANALYTICS ================= -->
+                <div class="chart-card-wrapper" id="dashboardChartCard">
+                    <div class="chart-header-row">
+                        <div class="chart-title-group">
+                            <div class="chart-icon-box" id="chartMainIcon">📊</div>
+                            <div>
+                                <h3 class="chart-main-title">Performance Analytics</h3>
+                                <p class="chart-sub-title">Score trajectory vs 50% passing threshold</p>
+                            </div>
+                        </div>
+
+                        <!-- Switch Controls: Chart Type (Bar / Line) & Metric Scope (Recent / Subjects) -->
+                        <div class="chart-controls-group">
+                            <!-- Chart Type Switcher: Bar vs Line -->
+                            <div class="chart-type-toggle" role="tablist" aria-label="Chart Style">
+                                <button id="btnTypeBar" class="chart-toggle-btn active" onclick="switchChartType('bar')"
+                                    title="Switch to Bar Chart">
+                                    <span>📊</span> Bar
+                                </button>
+                                <button id="btnTypeLine" class="chart-toggle-btn" onclick="switchChartType('line')"
+                                    title="Switch to Line Chart">
+                                    <span>📈</span> Line
+                                </button>
+                            </div>
+
+                            <!-- Metric Mode Switcher: Recent vs Subject Averages -->
+                            <div class="chart-mode-toggle" role="tablist" aria-label="Data Scope">
+                                <button id="btnChartRecent" class="chart-toggle-btn active"
+                                    onclick="switchChartMode('recent')">Recent Scores</button>
+                                <button id="btnChartSubject" class="chart-toggle-btn"
+                                    onclick="switchChartMode('subjects')">Subject Averages</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chart Plot Area -->
+                    <div class="chart-plot-container" id="chartPlotContainer">
+                        <!-- 50% Benchmark Line -->
+                        <div class="chart-benchmark-line">
+                            <span class="benchmark-label">50% Passing Benchmark</span>
+                        </div>
+
+                        <!-- 100% Top Line -->
+                        <div class="chart-top-line"></div>
+
+                        <!-- Bars Render Area (Active in Bar mode) -->
+                        <div class="chart-bars-track" id="chartBarsArea">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+
+                        <!-- Line Chart Render Area (Active in Line mode) -->
+                        <div class="chart-line-track" id="chartLineArea" style="display: none;">
+                            <!-- Populated dynamically via SVG in JS -->
+                        </div>
+                    </div>
+
+                    <!-- Chart Legend & Summary Footer -->
+                    <div class="chart-footer-row">
+                        <div class="chart-legend-row">
+                            <span class="legend-chip"><span class="legend-color-dot pass-dot"></span> Passed
+                                (≥50%)</span>
+                            <span class="legend-chip"><span class="legend-color-dot fail-dot"></span> Failed
+                                (&lt;50%)</span>
+                        </div>
+                        <div class="chart-stats-summary" id="chartSummaryText">
+                            <!-- Dynamic summary text -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set Progress Breakdown Strip -->
+                <div class="set-progress-grid" id="setsSummaryGrid">
+                    <!-- Populated via JS -->
+                </div>
+
+                <!-- Toolbar (Filters & Actions) -->
+                <div class="dash-toolbar-card">
+                    <div class="filter-buttons-group">
+                        <button class="filter-pill-btn active" data-filter="all" onclick="applyFilter('all')">All
+                            Attempts</button>
+                        <button class="filter-pill-btn" data-filter="SET A" onclick="applyFilter('SET A')">Set
+                            A</button>
+                        <button class="filter-pill-btn" data-filter="SET B" onclick="applyFilter('SET B')">Set
+                            B</button>
+                        <button class="filter-pill-btn" data-filter="SET C" onclick="applyFilter('SET C')">Set
+                            C</button>
+                        <button class="filter-pill-btn" data-filter="SET D" onclick="applyFilter('SET D')">Set
+                            D</button>
+                        <button class="filter-pill-btn" data-filter="chapter" onclick="applyFilter('chapter')">Chapter
+                            Tests</button>
+                        <button class="filter-pill-btn" data-filter="passed" onclick="applyFilter('passed')">Passed
+                            Only</button>
+                    </div>
+
+                    <div class="toolbar-action-buttons">
+                        <button class="action-tool-button" onclick="exportSpomResultsCSV()">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                            Export CSV
+                        </button>
+                        <button class="action-tool-button danger-btn" onclick="handleClearAll()">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                            Clear History
+                        </button>
+                    </div>
+                </div>
+
+                <!-- History Cards Stream -->
+                <div class="history-cards-stream" id="resultsList">
+                    <!-- Populated via JS -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= PORTAL FOOTER ================= -->
+        <footer class="portal-footer">
+            <div class="portal-footer-inner">
+                <a href="https://www.calciumnotes.com" class="footer-brand-box">
+                    <div class="brand-icon-box">
+                        <svg width="20" height="20" fill="none" stroke="white" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <div class="footer-brand-text">
+                        <span class="footer-brand-title">Calcium Notes</span>
+                        <span class="footer-brand-desc">Free CBT Mock Tests & Study Portal for CA Final SPOM</span>
+                    </div>
+                </a>
+
+                <a href="https://www.calciumnotes.com" class="footer-home-action-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9.5L12 3l9 6.5V20a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9.5z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                    Return to Calcium Notes Home
+                </a>
+            </div>
+            <div class="footer-copyright-row">
+                © 2026 Calcium Notes. Free educational mock exams designed for CA Final students.
+            </div>
+        </footer>
+
+    </div><!-- end .portal-wrapper -->
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator-bar">
+        <div class="scroll-progress-fill" id="scrollProgress"></div>
     </div>
 
-    <div class="scroll-indicator">
-        <div class="scroll-progress" id="scrollProgress"></div>
-    </div>
+    <!-- Floating Back to Top Button -->
+    <button class="floating-top-btn" id="scrollTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        title="Back to top">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
 
+    <!-- SPOM Tracker Library -->
+    <script src="./spom-tracker.js"></script>
+
+    <!-- Dashboard Controller & Interactive Search -->
     <script>
-        const progressBar = document.getElementById("scrollProgress");
+        // Retake URL Resolver
+        function getRetakeUrl(item) {
+            const title = (item.title || "").toLowerCase();
+            const subject = (item.subject || "").toLowerCase();
+            const set = (item.set || "").toUpperCase();
+            const mode = (item.mode || "").toLowerCase();
 
-        function updateProgress() {
-            const scrollTop = window.pageYOffset;
-            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-            if(maxScroll <= 0) {
-                progressBar.style.width = "0%";
-                return;
+            if (mode.includes("chapter")) {
+                if (set.includes("A")) return "./seta/chapwise/chapgate.html";
+                if (set.includes("B")) return "./setb/chapwise/chapgate.html";
+                if (set.includes("D")) return "./setd/chapwise/chapgate.html";
             }
-            const percent = (scrollTop / maxScroll) * 100;
-            progressBar.style.width = percent + "%";
+
+            if (set.includes("A")) return "./seta/setaint.html";
+            if (set.includes("B")) return "./setb/setbint.html";
+            if (set.includes("C")) {
+                if (subject.includes("ibc") || title.includes("ibc") || subject.includes("insolvency")) return "./setc/instibc.html";
+                if (subject.includes("forensic") || title.includes("forensic")) return "./setc/instforacc.html";
+                if (subject.includes("arbitration") || title.includes("arbitration")) return "./setc/instArbitration.html";
+                return "./setc/instvaluation.html";
+            }
+            if (set.includes("D")) {
+                if (subject.includes("psychology") || title.includes("psychology") || subject.includes("philosophy")) return "./setd/chppsy.html";
+                if (subject.includes("startup") || title.includes("startup") || subject.includes("entrepreneurship")) return "./setd/inststartup.html";
+                return "./setd/instecosyst.html";
+            }
+
+            return "./seta/setaint.html";
         }
 
-        window.addEventListener("scroll", updateProgress);
-        updateProgress();
+        let activeDashFilter = "all";
+
+        // View Switcher (Catalog vs Dashboard)
+        function switchView(view) {
+            const catalogView = document.getElementById("catalogView");
+            const dashboardView = document.getElementById("dashboardView");
+            const tabCatalog = document.getElementById("tabCatalog");
+            const tabDashboard = document.getElementById("tabDashboard");
+
+            if (view === "dashboard") {
+                if (catalogView) catalogView.style.display = "none";
+                if (dashboardView) dashboardView.style.display = "block";
+                if (tabCatalog) tabCatalog.classList.remove("active");
+                if (tabDashboard) tabDashboard.classList.add("active");
+                window.location.hash = "dashboard";
+                renderDashboard();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            } else {
+                if (catalogView) catalogView.style.display = "block";
+                if (dashboardView) dashboardView.style.display = "none";
+                if (tabCatalog) tabCatalog.classList.add("active");
+                if (tabDashboard) tabDashboard.classList.remove("active");
+                if (window.location.hash === "#dashboard") {
+                    history.replaceState(null, null, " ");
+                }
+                updateBannerAlert();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+        }
+
+        // =========================================================
+        // SPOM SEARCH & FUZZY SPELL CHECK ENGINE
+        // =========================================================
+        const SPOM_TARGETS = [
+            { key: "set c", label: "Set C (Electives)", tags: ["set c", "setc"], keywords: ["set c", "setc", "set-c", "setc electives", "elective c", "electives c"] },
+            { key: "set a", label: "Set A (Corporate & Economic Laws)", tags: ["set a", "seta"], keywords: ["set a", "seta", "set-a", "corporate", "law", "economic", "directors", "board meetings", "sebi", "fema", "lodr"] },
+            { key: "set b", label: "Set B (SCPM)", tags: ["set b", "setb"], keywords: ["set b", "setb", "set-b", "scpm", "scmpe", "costing", "strategic", "performance", "pricing", "transfer pricing"] },
+            { key: "set d", label: "Set D (Multi-Disciplinary)", tags: ["set d", "setd"], keywords: ["set d", "setd", "set-d", "elective d", "electives d", "multi disciplinary"] },
+            { key: "valuation", label: "Valuation (Set C)", tags: ["valuation", "set c"], keywords: ["valuation", "valuations", "fair value", "dcf", "equity valuation", "business valuation", "intangibles"] },
+            { key: "forensic", label: "Forensic Accounting (Set C)", tags: ["forensic", "set c"], keywords: ["forensic", "forensics", "accounting", "fraud", "investigation", "digital forensics", "manipulation"] },
+            { key: "arbitration", label: "Arbitration & Conciliation (Set C)", tags: ["arbitration", "set c"], keywords: ["arbitration", "conciliation", "dispute", "adr", "arbitral", "tribunal", "foreign awards"] },
+            { key: "ibc", label: "Insolvency & Bankruptcy Code (Set C)", tags: ["ibc", "set c"], keywords: ["ibc", "insolvency", "bankruptcy", "cirp", "liquidation", "insolvent"] },
+            { key: "psychology", label: "Psychology & Philosophy (Set D)", tags: ["psychology", "set d"], keywords: ["psychology", "philosophy", "behavioral", "cognitive", "ethics", "psycho"] },
+            { key: "startup", label: "Entrepreneurship & Start-up (Set D)", tags: ["startup", "set d"], keywords: ["startup", "start-up", "startups", "entrepreneurship", "venture capital", "vc", "pitch deck", "angel"] },
+            { key: "ecosystem", label: "Digital Ecosystem & Controls (Set D)", tags: ["ecosystem", "set d"], keywords: ["ecosystem", "digital ecosystem", "controls", "itgc", "cybersecurity", "cloud", "fintech"] }
+        ];
+
+        // Levenshtein Distance (Edit Distance)
+        function calcLevenshtein(s1, s2) {
+            if (!s1 || !s2) return (s1 || s2).length;
+            let a = s1.toLowerCase();
+            let b = s2.toLowerCase();
+            if (a.length < b.length) {
+                let temp = a; a = b; b = temp;
+            }
+            let prev = [];
+            for (let i = 0; i <= b.length; i++) prev[i] = i;
+
+            for (let i = 0; i < a.length; i++) {
+                let curr = [i + 1];
+                for (let j = 0; j < b.length; j++) {
+                    let ins = prev[j + 1] + 1;
+                    let del = curr[j] + 1;
+                    let sub = prev[j] + (a[i] !== b[j] ? 1 : 0);
+                    curr.push(Math.min(ins, del, sub));
+                }
+                prev = curr;
+            }
+            return prev[b.length];
+        }
+
+        // Check if query is a typo of a known SPOM subject
+        function findSpellSuggestion(rawQuery) {
+            if (!rawQuery || rawQuery.trim().length < 2) return null;
+            const q = rawQuery.toLowerCase().trim();
+
+            // Direct check for compact set names (e.g. setc -> set c)
+            const compact = q.replace(/[\s\-_]/g, '');
+            if (compact === 'setc') return { target: SPOM_TARGETS.find(t => t.key === 'set c'), dist: 0, isDirect: true };
+            if (compact === 'seta') return { target: SPOM_TARGETS.find(t => t.key === 'set a'), dist: 0, isDirect: true };
+            if (compact === 'setb') return { target: SPOM_TARGETS.find(t => t.key === 'set b'), dist: 0, isDirect: true };
+            if (compact === 'setd') return { target: SPOM_TARGETS.find(t => t.key === 'set d'), dist: 0, isDirect: true };
+
+            let bestTarget = null;
+            let minDistance = 999;
+            let matchedWord = "";
+
+            SPOM_TARGETS.forEach(target => {
+                target.keywords.forEach(kw => {
+                    if (q === kw || (kw.length >= 4 && kw.startsWith(q)) || (q.length >= 4 && kw.includes(q))) {
+                        if (0 < minDistance) {
+                            minDistance = 0;
+                            bestTarget = target;
+                            matchedWord = kw;
+                        }
+                    } else {
+                        const dist = calcLevenshtein(q, kw);
+                        if (dist < minDistance) {
+                            minDistance = dist;
+                            bestTarget = target;
+                            matchedWord = kw;
+                        }
+                    }
+                });
+            });
+
+            // Tolerance threshold based on query length
+            const maxAllowed = q.length >= 7 ? 3 : (q.length >= 4 ? 2 : 1);
+            if (minDistance <= maxAllowed && bestTarget) {
+                return {
+                    target: bestTarget,
+                    dist: minDistance,
+                    isDirect: (minDistance === 0),
+                    matchedWord: matchedWord
+                };
+            }
+            return null;
+        }
+
+        // Live Search with Typo Tolerance and "Did you mean this?"
+        function handleSearch(query) {
+            const raw = (query || "").trim();
+            const q = raw.toLowerCase();
+            const cards = document.querySelectorAll(".exam-card");
+            const suggestionBox = document.getElementById("searchSuggestionBox");
+            const noResultsBox = document.getElementById("catalogNoResults");
+            const clearBtn = document.getElementById("clearSearchBtn");
+
+            // Toggle clear button
+            if (clearBtn) {
+                clearBtn.style.display = raw.length > 0 ? "flex" : "none";
+            }
+
+            // If empty search, reset all
+            if (!raw) {
+                if (suggestionBox) suggestionBox.style.display = "none";
+                if (noResultsBox) noResultsBox.style.display = "none";
+                cards.forEach(card => card.style.display = "flex");
+                document.querySelectorAll(".exam-section-block").forEach(sec => sec.style.display = "block");
+                return;
+            }
+
+            // Normalization: e.g. "setc" -> "set c", "seta" -> "set a"
+            let normalizedQuery = q;
+            const compact = q.replace(/[\s\-_]/g, '');
+            if (compact === 'setc') normalizedQuery = 'set c';
+            else if (compact === 'seta') normalizedQuery = 'set a';
+            else if (compact === 'setb') normalizedQuery = 'set b';
+            else if (compact === 'setd') normalizedQuery = 'set d';
+
+            // Step 1: Direct Matching
+            let directCount = 0;
+            cards.forEach(card => {
+                const tags = (card.getAttribute("data-tags") || "").toLowerCase();
+                const text = card.innerText.toLowerCase();
+                if (tags.includes(normalizedQuery) || text.includes(normalizedQuery) || tags.includes(compact)) {
+                    card.style.display = "flex";
+                    directCount++;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+
+            // If direct matches found
+            if (directCount > 0) {
+                if (noResultsBox) noResultsBox.style.display = "none";
+
+                // If user typed "setc", give them a nice confirmation
+                if (compact === 'setc') {
+                    if (suggestionBox) {
+                        suggestionBox.style.display = "flex";
+                        suggestionBox.innerHTML = `
+                            <span class="suggestion-prompt-text">💡 <strong>Set C Electives:</strong></span>
+                            <span class="suggestion-auto-note">Showing all 4 Set C subjects (IBC, Valuation, Forensic Accounting, Arbitration)</span>
+                        `;
+                    }
+                } else if (compact === 'setd') {
+                    if (suggestionBox) {
+                        suggestionBox.style.display = "flex";
+                        suggestionBox.innerHTML = `
+                            <span class="suggestion-prompt-text">💡 <strong>Set D Electives:</strong></span>
+                            <span class="suggestion-auto-note">Showing all Set D subjects (Psychology, Startup, Ecosystem)</span>
+                        `;
+                    }
+                } else {
+                    if (suggestionBox) suggestionBox.style.display = "none";
+                }
+            } else {
+                // Step 2: No direct match -> Run Spell Check & "Did you mean this?"
+                const suggestion = findSpellSuggestion(raw);
+
+                if (suggestion && suggestion.target) {
+                    // We found a likely typo!
+                    const target = suggestion.target;
+                    let fuzzyCount = 0;
+
+                    // Show cards matching the suggested target
+                    cards.forEach(card => {
+                        const tags = (card.getAttribute("data-tags") || "").toLowerCase();
+                        const isMatch = target.tags.some(t => tags.includes(t));
+                        if (isMatch) {
+                            card.style.display = "flex";
+                            fuzzyCount++;
+                        } else {
+                            card.style.display = "none";
+                        }
+                    });
+
+                    if (noResultsBox) noResultsBox.style.display = "none";
+
+                    // Display "Did you mean this?" suggestion banner
+                    if (suggestionBox) {
+                        suggestionBox.style.display = "flex";
+                        suggestionBox.innerHTML = `
+                            <span class="suggestion-prompt-text">💡 Did you mean:</span>
+                            <button class="did-you-mean-btn" onclick="applySearchSuggestion('${target.label.replace(/'/g, "\'")}')">
+                                <strong>${target.label}</strong>
+                            </button>
+                            <span class="suggestion-auto-note">• Showing results for "${target.label}"</span>
+                        `;
+                    }
+                } else {
+                    // Step 3: No match and no close typo
+                    cards.forEach(card => card.style.display = "none");
+                    if (suggestionBox) suggestionBox.style.display = "none";
+                    if (noResultsBox) {
+                        noResultsBox.style.display = "block";
+                        const titleEl = document.getElementById("noResultsQueryTitle");
+                        if (titleEl) {
+                            titleEl.innerText = `No mock tests found for "${raw}"`;
+                        }
+                    }
+                }
+            }
+
+            // Hide empty sections
+            document.querySelectorAll(".exam-section-block").forEach(sec => {
+                const visibleInSec = sec.querySelectorAll('.exam-card[style*="display: flex"], .exam-card:not([style*="display: none"])');
+                sec.style.display = (visibleInSec.length > 0) ? "block" : "none";
+            });
+        }
+
+        // Apply suggestion when user clicks "Did you mean this?" button
+        function applySearchSuggestion(term) {
+            const input = document.getElementById("subjectSearchInput");
+            if (input) {
+                input.value = term;
+                handleSearch(term);
+                input.focus();
+            }
+        }
+
+        // Clear search input
+        function clearSearchInput() {
+            const input = document.getElementById("subjectSearchInput");
+            if (input) {
+                input.value = "";
+                handleSearch("");
+                input.focus();
+            }
+        }
+
+        // Quick Category Filter in Hero
+        function filterCategory(cat, btn) {
+            document.querySelectorAll(".cat-pill").forEach(p => p.classList.remove("active"));
+            if (btn) btn.classList.add("active");
+
+            const sections = document.querySelectorAll(".exam-section-block");
+            sections.forEach(sec => {
+                const sType = sec.getAttribute("data-section");
+                if (cat === "all" || sType === cat) {
+                    sec.style.display = "block";
+                    sec.querySelectorAll(".exam-card").forEach(c => c.style.display = "flex");
+                } else {
+                    sec.style.display = "none";
+                }
+            });
+
+            const searchInput = document.getElementById("subjectSearchInput");
+            if (searchInput) searchInput.value = "";
+        }
+
+        // Banner Alert in Catalog View
+        function updateBannerAlert() {
+            const banner = document.getElementById("catalogBannerAlert");
+            if (!banner || typeof getSpomStats !== "function") return;
+            const stats = getSpomStats();
+            if (stats.total > 0) {
+                banner.style.display = "flex";
+                document.getElementById("bannerAlertTitle").innerText = `Performance Summary: ${stats.total} Exam${stats.total > 1 ? 's' : ''} Completed`;
+                document.getElementById("bannerAlertDesc").innerText = `Overall Pass Rate: ${stats.passRate}% • Average Score: ${stats.avgPercentage}% (Best: ${stats.highestScore} Marks)`;
+            } else {
+                banner.style.display = "none";
+            }
+        }
+
+        // Dashboard Filter
+        function applyFilter(filter) {
+            activeDashFilter = filter;
+            document.querySelectorAll(".filter-pill-btn").forEach(btn => {
+                if (btn.getAttribute("data-filter") === filter) {
+                    btn.classList.add("active");
+                } else {
+                    btn.classList.remove("active");
+                }
+            });
+            renderResultsStream();
+        }
+
+        // =========================================================
+        // PERFORMANCE ANALYTICS ENGINE (BAR & LINE CHARTS)
+        // =========================================================
+        let currentChartType = localStorage.getItem("calcium_spom_chart_type") || "bar"; // "bar" or "line"
+        let currentChartMode = "recent"; // "recent" or "subjects"
+
+        function switchChartType(type) {
+            currentChartType = type;
+            try {
+                localStorage.setItem("calcium_spom_chart_type", type);
+            } catch (e) { }
+
+            const btnBar = document.getElementById("btnTypeBar");
+            const btnLine = document.getElementById("btnTypeLine");
+            const iconBox = document.getElementById("chartMainIcon");
+
+            if (type === "line") {
+                if (btnBar) btnBar.classList.remove("active");
+                if (btnLine) btnLine.classList.add("active");
+                if (iconBox) iconBox.innerText = "📈";
+            } else {
+                if (btnBar) btnBar.classList.add("active");
+                if (btnLine) btnLine.classList.remove("active");
+                if (iconBox) iconBox.innerText = "📊";
+            }
+            renderAnalyticsChart();
+        }
+
+        function switchChartMode(mode) {
+            currentChartMode = mode;
+            const btnRecent = document.getElementById("btnChartRecent");
+            const btnSubject = document.getElementById("btnChartSubject");
+            if (mode === "subjects") {
+                if (btnRecent) btnRecent.classList.remove("active");
+                if (btnSubject) btnSubject.classList.add("active");
+            } else {
+                if (btnRecent) btnRecent.classList.add("active");
+                if (btnSubject) btnSubject.classList.remove("active");
+            }
+            renderAnalyticsChart();
+        }
+
+        // Backward compatibility alias for renderDashboard callers
+        function renderBarChart() {
+            renderAnalyticsChart();
+        }
+
+        function renderAnalyticsChart() {
+            const barContainer = document.getElementById("chartBarsArea");
+            const lineContainer = document.getElementById("chartLineArea");
+            const summaryText = document.getElementById("chartSummaryText");
+
+            if (!barContainer || !lineContainer || typeof getSpomResults !== "function" || typeof getSpomStats !== "function") return;
+
+            // Sync type switcher buttons state with currentChartType
+            const btnBar = document.getElementById("btnTypeBar");
+            const btnLine = document.getElementById("btnTypeLine");
+            const iconBox = document.getElementById("chartMainIcon");
+            if (currentChartType === "line") {
+                if (btnBar) btnBar.classList.remove("active");
+                if (btnLine) btnLine.classList.add("active");
+                if (iconBox) iconBox.innerText = "📈";
+            } else {
+                if (btnBar) btnBar.classList.add("active");
+                if (btnLine) btnLine.classList.remove("active");
+                if (iconBox) iconBox.innerText = "📊";
+            }
+
+            const results = getSpomResults();
+            const stats = getSpomStats();
+
+            // Handle empty results state
+            if (!results || results.length === 0) {
+                const emptyHtml = `
+                    <div class="chart-empty-box">
+                        <div style="font-size: 1.8rem; margin-bottom: 4px;">📈</div>
+                        <div style="font-weight: 700; color: #ffffff;">No Exam Scores Yet</div>
+                        <div style="font-size: 0.78rem;">Take your first mock exam to visualize your score trend ${currentChartType === "line" ? "line" : "bar"} chart here.</div>
+                    </div>
+                `;
+                if (currentChartType === "line") {
+                    barContainer.style.display = "none";
+                    lineContainer.style.display = "block";
+                    lineContainer.innerHTML = emptyHtml;
+                } else {
+                    barContainer.style.display = "flex";
+                    lineContainer.style.display = "none";
+                    barContainer.innerHTML = emptyHtml;
+                }
+                if (summaryText) summaryText.innerText = "No data recorded";
+                return;
+            }
+
+            // Route to active chart renderer
+            if (currentChartType === "line") {
+                barContainer.style.display = "none";
+                lineContainer.style.display = "block";
+                renderLineChart(results, stats, lineContainer, summaryText);
+            } else {
+                barContainer.style.display = "flex";
+                lineContainer.style.display = "none";
+                renderBarChartDirect(results, stats, barContainer, summaryText);
+            }
+        }
+
+        // Direct Bar Chart Render
+        function renderBarChartDirect(results, stats, container, summaryText) {
+            if (currentChartMode === "subjects") {
+                const setKeys = ["SET A", "SET B", "SET C", "SET D"];
+                let totalRendered = 0;
+
+                container.innerHTML = setKeys.map(setKey => {
+                    const data = stats.sets[setKey] || { count: 0, passed: 0, avg: 0 };
+                    const avg = Number(data.avg) || 0;
+                    const hasData = data.count > 0;
+                    const isPass = avg >= 50;
+                    const barClass = hasData ? (isPass ? "pass-bar" : "fail-bar") : "neutral-bar";
+                    const heightPct = hasData ? Math.max(8, Math.min(100, avg)) : 6;
+                    totalRendered += data.count;
+
+                    return `
+                        <div class="bar-col-item" title="${setKey}: ${hasData ? avg + '% Avg (' + data.count + ' tests)' : 'No attempts'}">
+                            <span class="bar-score-top-label">${hasData ? avg + '%' : '—'}</span>
+                            <div class="bar-pill-shape ${barClass}" style="height: ${heightPct}%;"></div>
+                            <span class="bar-subject-bottom-label">${setKey}</span>
+                        </div>
+                    `;
+                }).join("");
+
+                if (summaryText) {
+                    summaryText.innerText = `Average marks across ${setKeys.length} modules (${totalRendered} total attempts)`;
+                }
+            } else {
+                const recentItems = results.slice(0, 10).reverse();
+
+                container.innerHTML = recentItems.map(item => {
+                    const scorePct = Number(item.percentage) || 0;
+                    const isPass = item.status === "PASS" || scorePct >= 50;
+                    const barClass = isPass ? "pass-bar" : "fail-bar";
+                    const heightPct = Math.max(8, Math.min(100, scorePct));
+
+                    let shortName = item.set || "SPOM";
+                    const sub = (item.subject || item.title || "").toLowerCase();
+                    if (sub.includes("valuation")) shortName = "Val.";
+                    else if (sub.includes("ibc") || sub.includes("insolvency")) shortName = "IBC";
+                    else if (sub.includes("forensic")) shortName = "Forensic";
+                    else if (sub.includes("arbitration")) shortName = "Arb.";
+                    else if (sub.includes("psychology")) shortName = "Psy.";
+                    else if (sub.includes("startup")) shortName = "Startup";
+                    else if (sub.includes("ecosystem")) shortName = "Ecosystem";
+                    else if (sub.includes("scpm")) shortName = "SCPM";
+                    else if (sub.includes("corporate") || sub.includes("law")) shortName = "Law";
+
+                    return `
+                        <div class="bar-col-item" title="${item.subject || item.title}: ${item.score}/${item.totalMarks} (${scorePct}%) on ${item.dateStr || ''}">
+                            <span class="bar-score-top-label">${scorePct}%</span>
+                            <div class="bar-pill-shape ${barClass}" style="height: ${heightPct}%;"></div>
+                            <span class="bar-subject-bottom-label">${shortName}</span>
+                        </div>
+                    `;
+                }).join("");
+
+                if (summaryText) {
+                    summaryText.innerText = `Displaying last ${recentItems.length} test attempt${recentItems.length > 1 ? 's' : ''}`;
+                }
+            }
+        }
+
+        // SVG Line Chart Render
+        function renderLineChart(results, stats, container, summaryText) {
+            let pointsData = [];
+            let totalRendered = 0;
+
+            if (currentChartMode === "subjects") {
+                const setKeys = ["SET A", "SET B", "SET C", "SET D"];
+                setKeys.forEach(setKey => {
+                    const data = stats.sets[setKey] || { count: 0, passed: 0, avg: 0 };
+                    const avg = Number(data.avg) || 0;
+                    totalRendered += data.count;
+                    pointsData.push({
+                        label: setKey,
+                        pct: avg,
+                        isPass: avg >= 50,
+                        hasData: data.count > 0,
+                        title: `${setKey}: ${data.count > 0 ? avg + '% Avg (' + data.count + ' tests)' : 'No attempts'}`
+                    });
+                });
+                if (summaryText) {
+                    summaryText.innerText = `Average marks trajectory across ${setKeys.length} modules (${totalRendered} total attempts)`;
+                }
+            } else {
+                const recentItems = results.slice(0, 10).reverse();
+                pointsData = recentItems.map(item => {
+                    const scorePct = Number(item.percentage) || 0;
+                    let shortName = item.set || "SPOM";
+                    const sub = (item.subject || item.title || "").toLowerCase();
+                    if (sub.includes("valuation")) shortName = "Val.";
+                    else if (sub.includes("ibc") || sub.includes("insolvency")) shortName = "IBC";
+                    else if (sub.includes("forensic")) shortName = "Forensic";
+                    else if (sub.includes("arbitration")) shortName = "Arb.";
+                    else if (sub.includes("psychology")) shortName = "Psy.";
+                    else if (sub.includes("startup")) shortName = "Startup";
+                    else if (sub.includes("ecosystem")) shortName = "Ecosystem";
+                    else if (sub.includes("scpm")) shortName = "SCPM";
+                    else if (sub.includes("corporate") || sub.includes("law")) shortName = "Law";
+
+                    return {
+                        label: shortName,
+                        pct: scorePct,
+                        isPass: item.status === "PASS" || scorePct >= 50,
+                        hasData: true,
+                        title: `${item.subject || item.title}: ${item.score}/${item.totalMarks} (${scorePct}%) on ${item.dateStr || ''}`
+                    };
+                });
+                if (summaryText) {
+                    summaryText.innerText = `Displaying score trajectory of last ${pointsData.length} test attempt${pointsData.length > 1 ? 's' : ''}`;
+                }
+            }
+
+            // Dimensions setup
+            const containerWidth = container.clientWidth || 700;
+            const containerHeight = 220;
+            const padTop = 28;
+            const padBottom = 38;
+            const padLeft = 40;
+            const padRight = 40;
+            const plotHeight = containerHeight - padTop - padBottom;
+
+            const n = pointsData.length;
+            const minPointSpacing = 65;
+            const svgWidth = Math.max(containerWidth, n * minPointSpacing);
+            const plotWidth = svgWidth - padLeft - padRight;
+
+            // Calculate SVG coordinates
+            const coords = pointsData.map((pt, i) => {
+                let x = n === 1 ? (padLeft + plotWidth / 2) : (padLeft + i * (plotWidth / (n - 1)));
+                let y = (containerHeight - padBottom) - (Math.max(0, Math.min(100, pt.pct)) / 100.0) * plotHeight;
+                return {
+                    x: Math.round(x * 10) / 10,
+                    y: Math.round(y * 10) / 10,
+                    pct: pt.pct,
+                    isPass: pt.isPass,
+                    hasData: pt.hasData,
+                    label: pt.label,
+                    title: pt.title
+                };
+            });
+
+            // Smooth cubic bezier curve path
+            let pathD = "";
+            coords.forEach((c, idx) => {
+                if (idx === 0) {
+                    pathD += `M ${c.x} ${c.y}`;
+                } else {
+                    const prev = coords[idx - 1];
+                    const cx1 = Math.round((prev.x + (c.x - prev.x) * 0.45) * 10) / 10;
+                    const cy1 = prev.y;
+                    const cx2 = Math.round((prev.x + (c.x - prev.x) * 0.55) * 10) / 10;
+                    const cy2 = c.y;
+                    pathD += ` C ${cx1} ${cy1}, ${cx2} ${cy2}, ${c.x} ${c.y}`;
+                }
+            });
+
+            // Area fill path
+            const yBase = containerHeight - padBottom;
+            let areaD = "";
+            if (n > 1) {
+                areaD = `${pathD} L ${coords[coords.length - 1].x} ${yBase} L ${coords[0].x} ${yBase} Z`;
+            }
+
+            // Build dynamic SVG string
+            let svgHtml = `
+                <svg class="chart-line-svg" width="${svgWidth}" height="${containerHeight}" viewBox="0 0 ${svgWidth} ${containerHeight}" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="chartLineGrad" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#38bdf8" />
+                            <stop offset="50%" stop-color="#60a5fa" />
+                            <stop offset="100%" stop-color="#10b981" />
+                        </linearGradient>
+                        <linearGradient id="chartAreaGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.32" />
+                            <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0" />
+                        </linearGradient>
+                        <filter id="lineNodeGlow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="3" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+            `;
+
+            // Area translucent fill
+            if (areaD) {
+                svgHtml += `<path d="${areaD}" fill="url(#chartAreaGrad)" />`;
+            }
+
+            // Connecting line paths (glow + main)
+            if (pathD && n > 1) {
+                svgHtml += `
+                    <path d="${pathD}" fill="none" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.22" />
+                    <path d="${pathD}" fill="none" stroke="url(#chartLineGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#lineNodeGlow)" />
+                `;
+            }
+
+            // Point nodes & interactive tooltips
+            coords.forEach(pt => {
+                const nodeColor = pt.hasData ? (pt.isPass ? "#10b981" : "#ef4444") : "rgba(255, 255, 255, 0.25)";
+                const displayText = pt.hasData ? `${pt.pct}%` : "—";
+
+                svgHtml += `
+                    <g class="line-point-node" tabindex="0">
+                        <title>${pt.title}</title>
+                        <!-- Vertical drop guide line -->
+                        <line x1="${pt.x}" y1="${padTop}" x2="${pt.x}" y2="${yBase}" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" stroke-dasharray="3 3" />
+                        <!-- Top Score Label -->
+                        <text x="${pt.x}" y="${Math.max(16, pt.y - 12)}" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="800" font-family="Inter, -apple-system, sans-serif">${displayText}</text>
+                        <!-- Node Outer Halo -->
+                        <circle cx="${pt.x}" cy="${pt.y}" r="6.5" fill="#0f172a" stroke="${nodeColor}" stroke-width="2.5" />
+                        <!-- Node Center Dot -->
+                        <circle cx="${pt.x}" cy="${pt.y}" r="2.5" fill="${nodeColor}" />
+                        <!-- Bottom Subject Label -->
+                        <text x="${pt.x}" y="${containerHeight - 12}" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="700" font-family="Inter, -apple-system, sans-serif">${pt.label}</text>
+                    </g>
+                `;
+            });
+
+            svgHtml += `</svg>`;
+            container.innerHTML = svgHtml;
+        }
+
+        // Window resize listener to keep SVG line chart crisp on viewport change
+        let resizeTimer = null;
+        window.addEventListener("resize", function () {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function () {
+                if (currentChartType === "line") {
+                    renderAnalyticsChart();
+                }
+            }, 120);
+        });
+
+        // Render Dashboard KPIs & Sets
+        function renderDashboard() {
+            renderBarChart();
+            if (typeof getSpomStats !== "function" || typeof getSpomResults !== "function") return;
+            const stats = getSpomStats();
+
+            // Update tab badge counter
+            const badge = document.getElementById("tabCountBadge");
+            if (badge) badge.innerText = stats.total;
+
+            // Update KPI cards
+            const totalEl = document.getElementById("statTotal");
+            const passEl = document.getElementById("statPassRate");
+            const passSubEl = document.getElementById("statPassRateSub");
+            const avgEl = document.getElementById("statAvgScore");
+            const highEl = document.getElementById("statHighestScore");
+
+            if (totalEl) totalEl.innerText = stats.total;
+            if (passEl) {
+                passEl.innerText = stats.total > 0 ? stats.passRate + "%" : "0%";
+                passEl.style.color = stats.passRate >= 60 ? "#34d399" : (stats.passRate >= 40 ? "#fbbf24" : "#f87171");
+            }
+            if (passSubEl) passSubEl.innerText = `${stats.passed} Passed / ${stats.failed} Failed`;
+            if (avgEl) avgEl.innerText = stats.total > 0 ? stats.avgPercentage + "%" : "0%";
+            if (highEl) highEl.innerText = stats.highestScore > 0 ? stats.highestScore : "0";
+
+            // Render Set Breakdown Strip
+            const setKeys = ["SET A", "SET B", "SET C", "SET D"];
+            const setsContainer = document.getElementById("setsSummaryGrid");
+            if (setsContainer) {
+                setsContainer.innerHTML = setKeys.map(k => {
+                    const data = stats.sets[k] || { count: 0, passed: 0, avg: 0 };
+                    const passPct = data.count > 0 ? Math.round((data.passed / data.count) * 100) : 0;
+                    return `
+                        <div class="set-stat-box">
+                            <div class="set-stat-header">
+                                <span class="set-stat-tag">${k}</span>
+                                <span class="set-stat-attempts">${data.count} test${data.count === 1 ? '' : 's'}</span>
+                            </div>
+                            <div class="set-stat-score-row">
+                                <span class="set-stat-score">${data.count > 0 ? data.avg + '%' : '—'}</span>
+                                <span class="set-stat-pass">${data.count > 0 ? data.passed + ' passed' : 'No tests'}</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" style="width: ${passPct}%;"></div>
+                            </div>
+                        </div>
+                    `;
+                }).join("");
+            }
+
+            renderResultsStream();
+        }
+
+        // Render Results History Cards
+        function renderResultsStream() {
+            const listContainer = document.getElementById("resultsList");
+            if (!listContainer || typeof getSpomResults !== "function") return;
+
+            const allResults = getSpomResults();
+            let filtered = allResults;
+
+            if (activeDashFilter !== "all") {
+                if (activeDashFilter === "chapter") {
+                    filtered = allResults.filter(r => (r.mode || "").toLowerCase().includes("chapter"));
+                } else if (activeDashFilter === "passed") {
+                    filtered = allResults.filter(r => r.status === "PASS");
+                } else {
+                    filtered = allResults.filter(r => (r.set || "").toUpperCase() === activeDashFilter.toUpperCase());
+                }
+            }
+
+            if (!filtered || filtered.length === 0) {
+                if (allResults.length === 0) {
+                    listContainer.innerHTML = `
+                        <div class="dash-empty-card">
+                            <div class="dash-empty-icon">📊</div>
+                            <h3 class="dash-empty-title">No Mock Exams Attempted Yet</h3>
+                            <p class="dash-empty-desc">
+                                Your personal analytics dashboard is ready! Take any SPOM mock test below, and your scorecards, passing streaks, and question accuracy will automatically appear here.
+                            </p>
+                            <div class="empty-starter-chips">
+                                <a href="./seta/setaint.html" class="starter-btn">Start Set A Mock →</a>
+                                <a href="./setb/setbint.html" class="starter-btn">Start Set B Mock →</a>
+                                <a href="./setc/instvaluation.html" class="starter-btn">Start Valuation Mock →</a>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    listContainer.innerHTML = `
+                        <div class="dash-empty-card">
+                            <div class="dash-empty-icon">🔍</div>
+                            <h3 class="dash-empty-title">No Results for This Filter</h3>
+                            <p class="dash-empty-desc">You have not completed any tests matching "${activeDashFilter}".</p>
+                            <button class="starter-btn" onclick="applyFilter('all')">Show All Results</button>
+                        </div>
+                    `;
+                }
+                return;
+            }
+
+            listContainer.innerHTML = filtered.map(item => {
+                const isPass = item.status === "PASS";
+                const statusClass = isPass ? "pass-status" : "fail-status";
+                const statusLabel = isPass ? "PASS ✅" : "FAIL ❌";
+                const retakeUrl = getRetakeUrl(item);
+                const correct = item.correctCount || 0;
+                const wrong = item.wrongCount || 0;
+                const unanswered = item.unanswered || 0;
+                const totalMarks = item.totalMarks || 100;
+
+                return `
+                    <div class="history-card" id="card_${item.id}">
+                        <div class="history-card-header">
+                            <div class="history-info-col">
+                                <div class="history-tag-row">
+                                    <span class="history-set-pill">${item.set || 'SPOM'}</span>
+                                    <span class="history-mode-pill">${item.mode || 'Full Mock'}</span>
+                                </div>
+                                <h4 class="history-subject-name">${item.subject || item.title || 'SPOM Mock Exam'}</h4>
+                                <div class="history-date-row">
+                                    📅 ${item.dateStr || ''} • ⏰ ${item.timeStr || ''}
+                                </div>
+                            </div>
+                            <div class="status-capsule ${statusClass}">
+                                ${statusLabel}
+                            </div>
+                        </div>
+
+                        <div class="history-score-strip">
+                            <div class="score-headline-group">
+                                <span class="score-headline-num">${item.score} / ${totalMarks}</span>
+                                <span class="score-headline-pct">(${item.percentage}%)</span>
+                                ${item.grade ? `<span style="background: rgba(255,255,255,0.08); padding: 2px 8px; border-radius: 6px; font-size: 0.76rem; font-weight: 700;">${item.grade}</span>` : ''}
+                            </div>
+
+                            <div class="history-chips-row">
+                                <span class="chip-stat-correct">✔ ${correct} Correct</span>
+                                <span class="chip-stat-wrong">✖ ${wrong} Incorrect</span>
+                                <span class="chip-stat-skipped">⚪ ${unanswered} Skipped</span>
+                            </div>
+                        </div>
+
+                        <div class="history-action-footer">
+                            <a href="${retakeUrl}" class="history-retake-btn">
+                                🔄 Retake Test
+                            </a>
+                            <button class="history-delete-btn" onclick="handleDeleteResult('${item.id}')" title="Delete record">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/><path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join("");
+        }
+
+        // Delete Result
+        function handleDeleteResult(id) {
+            if (confirm("Delete this exam result?")) {
+                if (typeof deleteSpomResult === "function") {
+                    deleteSpomResult(id);
+                }
+                renderDashboard();
+                updateBannerAlert();
+            }
+        }
+
+        // Clear All Results
+        function handleClearAll() {
+            if (confirm("Clear all your past exam attempts? This cannot be undone.")) {
+                if (typeof clearSpomResults === "function") {
+                    clearSpomResults();
+                }
+                renderDashboard();
+                updateBannerAlert();
+            }
+        }
+
+        // Scroll Progress & Back to Top logic
+        const progressBar = document.getElementById("scrollProgress");
+        const topBtn = document.getElementById("scrollTopBtn");
+
+        function onScroll() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            if (maxScroll <= 0) {
+                if (progressBar) progressBar.style.width = "0%";
+            } else {
+                const pct = (scrollTop / maxScroll) * 100;
+                if (progressBar) progressBar.style.width = pct + "%";
+            }
+
+            if (scrollTop > 350) {
+                if (topBtn) topBtn.classList.add("visible");
+            } else {
+                if (topBtn) topBtn.classList.remove("visible");
+            }
+        }
+
+        window.addEventListener("scroll", onScroll);
+
+        // Init on DOM ready
+        window.addEventListener("DOMContentLoaded", function () {
+            if (typeof getSpomStats === "function") {
+                const stats = getSpomStats();
+                const badge = document.getElementById("tabCountBadge");
+                if (badge) badge.innerText = stats.total;
+                updateBannerAlert();
+            }
+
+            if (window.location.hash === "#dashboard") {
+                switchView("dashboard");
+            }
+        });
+
+        window.addEventListener("hashchange", function () {
+            if (window.location.hash === "#dashboard") {
+                switchView("dashboard");
+            } else {
+                switchView("catalog");
+            }
+        });
     </script>
 
+    <!-- FAQ Structured Data (JSON-LD) for SEO -->
     <script type="application/ld+json">
     {
         "@context":"https://schema.org",
@@ -572,7 +3952,7 @@
                 "name":"Which SPOM Sets are covered in these mock tests?",
                 "acceptedAnswer":{
                     "@type":"Answer",
-                    "text":"We provide free mock tests and MCQ practice for all SPOM modules: Set A (Corporate & Economic Laws), Set B (SCPM), Set C (Electives like IBC, Forensic Accounting, Arbitration), and Set D (Psychology, Start-up)."
+                    "text":"We provide free mock tests and MCQ practice for all SPOM modules: Set A (Corporate & Economic Laws), Set B (SCPM), Set C (Electives like IBC, Forensic Accounting, Arbitration, Valuation), and Set D (Psychology, Start-up, Digital Ecosystem)."
                 }
             },
             {
@@ -612,4 +3992,5 @@
     </script>
 
 </body>
+
 </html>

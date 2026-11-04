@@ -459,6 +459,27 @@ function submitExam() {
     else if (percentage >= 50) grade = "B";
     else grade = "Fail";
 
+        try {
+        if (typeof saveSpomResult === "function") {
+            saveSpomResult({
+                set: "SET C",
+                title: "SET C - Valuation Mock Exam",
+                subject: "Valuation",
+                mode: "Full Mock",
+                score: score,
+                totalMarks: totalPossibleMarks,
+                percentage: parseFloat(percentage),
+                grade: grade,
+                passMark: PASS_MARK,
+                correctCount: correctCount,
+                wrongCount: wrongCount,
+                unanswered: unanswered
+            });
+        }
+    } catch(err) {
+        console.warn("Could not save to dashboard:", err);
+    }
+
     showResult(score, totalPossibleMarks, percentage, grade, correctCount, wrongCount, unanswered, {
         caseCorrect, caseWrong, caseUnanswered,
         indCorrect, indWrong, indUnanswered
@@ -517,6 +538,10 @@ function showResult(score, totalPossibleMarks, percentage, grade, correctCount, 
         <p><strong>Total Questions:</strong> ${selectedQuestions.length} (Correct: ${correctCount}, Wrong: ${wrongCount}, Unanswered: ${unanswered})</p>
         <p><strong>Case Scenario MCQs (2 Marks each):</strong> Correct: ${breakdown.caseCorrect}/25 | Wrong: ${breakdown.caseWrong} | Unanswered: ${breakdown.caseUnanswered}</p>
         <p><strong>Individual MCQs (1 Mark each):</strong> Correct: ${breakdown.indCorrect}/50 | Wrong: ${breakdown.indWrong} | Unanswered: ${breakdown.indUnanswered}</p>
+        <div style="margin: 22px 0; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <a href="../espom.html#dashboard" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: #2563eb; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; box-shadow: 0 4px 14px rgba(37,99,235,0.4);">📊 View Results on SPOM Dashboard</a>
+            <button onclick="window.location.reload();" style="padding: 12px 24px; background: #374151; color: #ffffff; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 14px;">🔄 Retake Test</button>
+        </div>
         <hr>
         <h3>Detailed Solution Review</h3>
     `;
