@@ -1,620 +1,1242 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
     <!-- Primary Meta Tags -->
+
     <title>SET A Examination - Instructions</title>
+
     <meta name="title" content="SET A Examination - Instructions">
+
     <meta name="description"
+
         content="Important instructions, exam pattern, and guidelines for SET A Examination. Read carefully before starting your test.">
+
     <meta name="author" content="Calcium Notes">
+
+
 
     <link rel="icon" href="../../../../fevicol.png">
 
+
+
     <!-- Modern Professional Font -->
+
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+
         rel="stylesheet">
 
+
+
     <!-- Google Analytics -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+
     <script>
+
         window.dataLayer = window.dataLayer || [];
+
         function gtag() { dataLayer.push(arguments); }
+
         gtag('js', new Date());
+
         gtag('config', 'G-YYJ8R39EXM');
+
     </script>
+
     <!-- Google AdSense -->
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
+
         crossorigin="anonymous"></script>
 
+
+
     <style>
+
         :root {
+
             --bg-color: #f8fafc;
+
             --card-bg: #ffffff;
+
             --primary: #2563eb;
+
             --primary-hover: #1d4ed8;
+
             --text-main: #0f172a;
+
             --text-muted: #64748b;
+
             --border-color: #e2e8f0;
+
             --danger-bg: #fef2f2;
+
             --danger-border: #fca5a5;
+
             --danger-text: #dc2626;
+
             --success-color: #16a34a;
+
             --purple-color: #9333ea;
+
         }
+
+
 
         * {
+
             box-sizing: border-box;
+
             margin: 0;
+
             padding: 0;
+
         }
+
+
 
         body {
+
             background-color: var(--bg-color);
+
             color: var(--text-main);
+
             font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
             display: flex;
+
             justify-content: center;
+
             align-items: center;
+
             min-height: 100vh;
+
             padding: 20px;
+
         }
+
+
 
         /* --- MAIN WRAPPER & CONTAINER --- */
+
         .main-wrapper {
+
             position: relative;
+
             width: 100%;
+
             max-width: 920px;
+
             border-radius: 20px;
+
             background: var(--card-bg);
+
             border: 1px solid var(--border-color);
+
             box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 4px 12px -2px rgba(0, 0, 0, 0.02);
+
             overflow: hidden;
+
         }
+
+
 
         /* --- INNER PANEL (2 COLUMNS) --- */
+
         .main-panel {
+
             display: grid;
+
             grid-template-columns: 1.1fr 2fr;
+
             gap: 36px;
+
             padding: 40px;
+
         }
+
+
 
         /* --- LEFT COLUMN --- */
+
         .left-col {
+
             display: flex;
+
             flex-direction: column;
+
             gap: 28px;
+
         }
+
+
 
         .icon-container {
+
             width: 100%;
+
             aspect-ratio: 1;
+
             display: flex;
+
             justify-content: center;
+
             align-items: center;
+
             background: #f1f5f9;
+
             border: 1px solid var(--border-color);
+
             border-radius: 16px;
+
             padding: 20px;
+
         }
+
+
 
         /* --- RIGHT COLUMN --- */
+
         .right-col {
+
             display: flex;
+
             flex-direction: column;
+
             justify-content: space-between;
+
         }
+
+
 
         .header h1 {
+
             font-size: 1.8rem;
+
             font-weight: 800;
+
             color: var(--text-main);
+
             margin-bottom: 4px;
+
             letter-spacing: -0.5px;
+
         }
+
+
 
         .header p {
+
             color: var(--primary);
+
             font-size: 0.85rem;
+
             font-weight: 600;
+
             text-transform: uppercase;
+
             letter-spacing: 1.5px;
+
             margin-bottom: 20px;
+
         }
+
+
 
         /* --- WARNING BOX --- */
+
         .warning-box {
+
             background: var(--danger-bg);
+
             border: 1px solid var(--danger-border);
+
             border-radius: 12px;
+
             padding: 16px 20px;
+
             margin-bottom: 22px;
+
         }
+
+
 
         .warning-box h3 {
+
             color: var(--danger-text);
+
             font-size: 0.98rem;
+
             font-weight: 700;
+
             margin-bottom: 6px;
+
             display: flex;
+
             align-items: center;
+
             gap: 8px;
+
         }
+
+
 
         .warning-box p {
+
             font-size: 0.88rem;
+
             color: #991b1b;
+
             line-height: 1.5;
+
         }
+
+
 
         /* --- SECTIONS & LISTS --- */
+
         .section-title {
+
             font-size: 1.05rem;
+
             font-weight: 700;
+
             color: var(--text-main);
+
             margin-bottom: 10px;
+
             text-transform: uppercase;
+
             letter-spacing: 0.5px;
+
         }
+
+
 
         ul.clean-list {
+
             list-style: none;
+
             display: flex;
+
             flex-direction: column;
+
             gap: 10px;
+
         }
+
+
 
         ul.clean-list li {
+
             font-size: 0.95rem;
+
             color: #475569;
+
             display: flex;
+
             align-items: flex-start;
+
             gap: 10px;
+
             line-height: 1.4;
+
         }
+
+
 
         ul.clean-list.pattern li::before {
+
             content: '•';
+
             color: var(--primary);
+
             font-size: 1.3rem;
+
             line-height: 1;
+
         }
 
+
+
+        
         /* --- QUESTION MIX CARD --- */
+
         .mix-card {
+
             background: #f8fafc;
+
             border: 1px solid var(--border-color);
+
             border-radius: 14px;
+
             padding: 18px;
+
             margin-bottom: 22px;
+
         }
+
+
 
         .mix-badges {
+
             display: flex;
+
             justify-content: space-between;
+
             gap: 12px;
+
             margin-bottom: 14px;
+
         }
+
+
 
         .mix-badge {
+
             flex: 1;
+
             padding: 8px 12px;
+
             border-radius: 8px;
+
             font-size: 0.85rem;
+
             font-weight: 600;
+
             text-align: center;
+
             border: 1px solid var(--border-color);
+
         }
+
+
 
         .badge-std {
+
             background: #eff6ff;
+
             color: #1e40af;
+
             border-color: #bfdbfe;
+
         }
+
+
 
         .badge-ai {
+
             background: #f3e8ff;
+
             color: #6b21a8;
+
             border-color: #e9d5ff;
+
         }
+
+
 
         .badge-num {
+
             font-size: 1.1rem;
+
             font-weight: 800;
+
             margin-left: 4px;
+
         }
+
+
 
         .slider-wrap {
+
             padding: 6px 0;
+
         }
+
+
 
         input[type=range].clean-slider {
+
             -webkit-appearance: none;
+
             appearance: none;
+
             width: 100%;
+
             background: transparent;
+
         }
+
+
 
         input[type=range].clean-slider:focus {
+
             outline: none;
+
         }
+
+
 
         /* Webkit Track */
+
         input[type=range].clean-slider::-webkit-slider-runnable-track {
+
             width: 100%;
+
             height: 12px;
+
             cursor: pointer;
+
             background: linear-gradient(90deg, #2563eb 0%, #9333ea 100%);
+
             border-radius: 8px;
+
         }
+
+
 
         /* Webkit Thumb */
+
         input[type=range].clean-slider::-webkit-slider-thumb {
+
             -webkit-appearance: none;
+
             appearance: none;
+
             height: 28px;
+
             width: 28px;
+
             border-radius: 50%;
+
             background: #ffffff;
+
             cursor: grab;
+
             margin-top: -8px;
+
             /* (12px - 28px) / 2 */
+
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.08);
+
             border: 3px solid var(--primary);
+
             transition: transform 0.15s ease, background-color 0.15s ease;
+
         }
+
+
 
         input[type=range].clean-slider::-webkit-slider-thumb:hover {
+
             transform: scale(1.15);
+
         }
+
+
 
         input[type=range].clean-slider::-webkit-slider-thumb:active {
+
             cursor: grabbing;
+
             transform: scale(1.2);
+
             background: #eff6ff;
+
         }
+
+
 
         /* Firefox Track & Thumb */
+
         input[type=range].clean-slider::-moz-range-track {
+
             width: 100%;
+
             height: 12px;
+
             cursor: pointer;
+
             background: linear-gradient(90deg, #2563eb 0%, #9333ea 100%);
+
             border-radius: 8px;
+
         }
+
+
 
         input[type=range].clean-slider::-moz-range-thumb {
+
             height: 28px;
+
             width: 28px;
+
             border-radius: 50%;
+
             background: #ffffff;
+
             cursor: grab;
+
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
             border: 3px solid var(--primary);
+
             transition: transform 0.15s ease;
+
         }
+
+
 
         .slider-labels {
+
             display: flex;
+
             justify-content: space-between;
+
             font-size: 0.78rem;
+
             color: var(--text-muted);
+
             margin-top: 6px;
+
             font-weight: 500;
+
         }
+
+
 
         .qs-note {
+
             text-align: center;
+
             font-size: 0.85rem;
+
             color: #1e293b;
+
             margin-top: 10px;
+
             font-weight: 600;
+
         }
+
+
 
         /* NAVIGATION DOTS */
+
         .nav-grid {
+
             display: grid;
+
             grid-template-columns: 1fr;
+
             gap: 10px;
+
             margin-bottom: 20px;
+
         }
+
+
 
         .nav-item {
+
             display: flex;
+
             align-items: center;
+
             gap: 12px;
+
             font-size: 0.92rem;
+
             color: #334155;
+
         }
+
+
 
         .dot {
+
             width: 12px;
+
             height: 12px;
+
             border-radius: 50%;
+
         }
+
+
 
         .dot.green {
+
             background: var(--success-color);
+
         }
+
+
 
         .dot.red {
+
             background: var(--danger-text);
+
         }
+
+
 
         .dot.purple {
+
             background: var(--purple-color);
+
         }
+
+
 
         .text-green {
+
             color: var(--success-color);
+
             font-weight: 600;
+
         }
+
+
 
         .text-red {
+
             color: var(--danger-text);
+
             font-weight: 600;
+
         }
+
+
 
         .text-purple {
+
             color: var(--purple-color);
+
             font-weight: 600;
+
         }
+
+
 
         /* BUTTONS */
+
         .btn-container {
+
             display: flex;
+
             justify-content: flex-end;
+
             gap: 12px;
+
             margin-top: 20px;
+
         }
+
+
 
         .btn {
+
             padding: 12px 24px;
+
             border-radius: 10px;
+
             font-family: inherit;
+
             font-weight: 600;
+
             font-size: 0.95rem;
+
             cursor: pointer;
+
             transition: all 0.2s ease;
+
             text-transform: uppercase;
+
             letter-spacing: 0.5px;
+
         }
+
+
 
         .btn-back {
+
             background: #f1f5f9;
+
             border: 1px solid var(--border-color);
+
             color: #475569;
+
         }
+
+
 
         .btn-back:hover {
+
             background: #e2e8f0;
+
             color: #0f172a;
+
         }
+
+
 
         .btn-start {
+
             background: var(--primary);
+
             border: none;
+
             color: white;
+
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+
         }
+
+
 
         .btn-start:hover {
+
             background: var(--primary-hover);
+
             box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+
             transform: translateY(-1px);
+
         }
+
+
 
         /* RESPONSIVE DESIGN */
+
         @media (max-width: 768px) {
+
             .main-panel {
+
                 grid-template-columns: 1fr;
+
                 padding: 24px;
+
                 gap: 24px;
+
             }
+
+
 
             .icon-container {
+
                 max-width: 220px;
+
                 margin: 0 auto;
+
             }
+
+
 
             .btn-container {
+
                 justify-content: center;
+
                 flex-direction: column;
+
             }
 
+
+
             .btn {
+
                 width: 100%;
+
             }
+
         }
+
     </style>
+
 </head>
+
+
 
 <body>
 
+
+
     <div class="main-wrapper">
+
         <div class="main-panel">
 
+
+
             <!-- LEFT COLUMN -->
+
             <div class="left-col">
+
                 <!-- PROFESSIONAL ILLUSTRATION / ICON -->
+
                 <div class="icon-container">
+
                     <svg viewBox="0 0 200 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+
                         <defs>
+
                             <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+
                                 <stop offset="0%" stop-color="#2563eb" />
+
                                 <stop offset="100%" stop-color="#9333ea" />
+
                             </linearGradient>
+
                         </defs>
+
                         <!-- Background Circle -->
+
                         <circle cx="100" cy="100" r="88" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2" />
+
                         <!-- Outer Ring -->
+
                         <circle cx="100" cy="100" r="72" fill="none" stroke="url(#primary-grad)" stroke-width="3"
+
                             stroke-dasharray="8 6" />
 
+
+
                         <!-- Document Graphic -->
+
                         <rect x="65" y="48" width="70" height="92" rx="8" fill="#ffffff" stroke="#cbd5e1"
+
                             stroke-width="2" />
+
                         <line x1="80" y1="68" x2="120" y2="68" stroke="#2563eb" stroke-width="3"
+
                             stroke-linecap="round" />
+
                         <line x1="80" y1="83" x2="120" y2="83" stroke="#94a3b8" stroke-width="2"
+
                             stroke-linecap="round" />
+
                         <line x1="80" y1="98" x2="105" y2="98" stroke="#94a3b8" stroke-width="2"
+
                             stroke-linecap="round" />
+
+
 
                         <!-- Checkmark Badge -->
+
                         <circle cx="120" cy="122" r="20" fill="#2563eb" />
+
                         <path d="M111 122 L117 129 L129 116" fill="none" stroke="#ffffff" stroke-width="3"
+
                             stroke-linecap="round" stroke-linejoin="round" />
+
                     </svg>
+
                 </div>
+
+
 
                 <!-- PATTERN SECTION -->
+
                 <div>
+
                     <h3 class="section-title">Exam Pattern</h3>
+
                     <ul class="clean-list pattern">
+
                         <li><strong>Questions:</strong> 50 Multiple Choice Questions (MCQs).</li>
+
                         <li><strong>Total Marks:</strong> 100 Marks (2 marks per question).</li>
+
                         <li><strong>Time Limit:</strong> 180 Minutes (3 Hours).</li>
+
+                        <li><strong>Passing Threshold:</strong> 50% (50 Marks) • <em>Zero Negative Marking</em>.</li>
+
                     </ul>
+
                 </div>
-            </div>
+
+
+
+                </div>
 
             <!-- RIGHT COLUMN -->
+
             <div class="right-col">
+
                 <div>
+
                     <div class="header">
+
                         <h1 id="selected-set-title">SET A Examination</h1>
+
                         <p>AI Integrated Mode</p>
+
                     </div>
+
+
 
                     <!-- WARNING BOX -->
+
                     <div class="warning-box">
+
                         <h3>
+
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+
                                 stroke-width="2">
+
                                 <path
+
                                     d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+
                                 </path>
+
                                 <line x1="12" y1="9" x2="12" y2="13"></line>
+
                                 <line x1="12" y1="17" x2="12.01" y2="17"></line>
+
                             </svg>
+
                             IMPORTANT WARNING
+
                         </h3>
+
                         <p>DO NOT REFRESH (F5) OR CLOSE THIS TAB. Your exam progress will be permanently lost.</p>
+
                     </div>
+
+
 
                     <!-- QUESTION SOURCE MIX SECTION -->
+
                     <div>
+
                         <h3 class="section-title">Question Source Mix</h3>
+
                         <div class="mix-card">
+
                             <div class="mix-badges">
+
                                 <div class="mix-badge badge-std">
+
                                     Standard: <span id="std-percent-label" class="badge-num">50%</span>
+
                                 </div>
+
                                 <div class="mix-badge badge-ai">
+
                                     AI Bank: <span id="ai-percent-label" class="badge-num">50%</span>
+
                                 </div>
+
                             </div>
+
+
 
                             <div class="slider-wrap">
+
                                 <input type="range" id="ai-percent-slider" class="clean-slider" min="0" max="100"
+
                                     step="10" value="50">
+
                             </div>
+
+
 
                             <div class="slider-labels">
+
                                 <span>100% Standard</span>
+
                                 <span>50% </span>
+
                                 <span>100% AI</span>
+
                             </div>
+
+
 
                             <div class="qs-note" id="qs-breakdown-note">
+
                                 Mix: 25 Standard Questions + 25 AI Questions
+
                             </div>
+
                         </div>
+
                     </div>
+
+
 
                     <!-- NAVIGATION SECTION -->
+
                     <div>
+
                         <h3 class="section-title">Navigation Legend</h3>
+
                         <div class="nav-grid">
+
                             <div class="nav-item">
+
                                 <div class="dot green"></div>
+
                                 <span>Answered (<span class="text-green">Green</span>)</span>
+
                             </div>
+
                             <div class="nav-item">
+
                                 <div class="dot red"></div>
+
                                 <span>Not Visited (<span class="text-red">Red</span>)</span>
+
                             </div>
+
                             <div class="nav-item">
+
                                 <div class="dot purple"></div>
+
                                 <span>Marked for Review (<span class="text-purple">Purple</span>)</span>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
+
+
 
                 <!-- BUTTONS -->
+
                 <div class="btn-container">
+
                     <button type="button" class="btn btn-back" onclick="closeModal()">Back</button>
+
                     <form action="./exama.html" method="GET" style="margin: 0;">
+
                         <input type="hidden" name="subject" id="subject-hidden-input" value="SET A Examination">
+
                         <input type="hidden" name="aiPercent" id="ai-percent-hidden-input" value="50">
+
                         <button type="submit" class="btn btn-start">Accept & Start Exam</button>
+
                     </form>
+
                 </div>
+
             </div>
 
+
+
         </div>
+
     </div>
 
+
+
     <script>
+
         // Update hidden input automatically so the right subject and AI percentage are passed
+
         document.addEventListener("DOMContentLoaded", function () {
+
             const titleText = document.getElementById('selected-set-title').innerText;
+
             document.getElementById('subject-hidden-input').value = titleText;
 
+
+
             const aiSlider = document.getElementById('ai-percent-slider');
+
             const stdLabel = document.getElementById('std-percent-label');
+
             const aiLabel = document.getElementById('ai-percent-label');
+
             const aiHiddenInput = document.getElementById('ai-percent-hidden-input');
+
             const breakdownNote = document.getElementById('qs-breakdown-note');
 
+
+
             function updateSliderUI(val) {
+
                 const aiVal = parseInt(val, 10);
+
                 const stdVal = 100 - aiVal;
 
+
+
                 stdLabel.innerText = stdVal + '%';
+
                 aiLabel.innerText = aiVal + '%';
+
                 aiHiddenInput.value = aiVal;
 
+
+
                 const aiQs = Math.round(50 * (aiVal / 100));
+
                 const stdQs = 50 - aiQs;
+
                 breakdownNote.innerText = `Mix: ${stdQs} Standard Questions + ${aiQs} AI Questions`;
+
             }
+
+
 
             if (aiSlider) {
+
                 updateSliderUI(aiSlider.value);
+
                 aiSlider.addEventListener('input', function () {
+
                     updateSliderUI(this.value);
+
                 });
+
             }
+
         });
 
+
+
         // Back Button logic
+
         function closeModal() {
+
             window.location.href = "../espom.html";
+
         }
 
+
+
         // Anti-back button security
+
         window.history.pushState(null, null, window.location.href);
+
         window.onpopstate = function () {
+
             window.history.go(1);
+
         };
+
     </script>
+
 </body>
+
+
 
 </html>

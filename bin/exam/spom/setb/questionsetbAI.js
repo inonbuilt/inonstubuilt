@@ -8431,7 +8431,7 @@ const AICaseStudies = [
         "₹60"
       ],
       answer: 1,
-      reason: "₹450 ÷ 9 minutes = ₹50 per minute, so the correct option is ₹50, which is option 1. The listed answer index should be corrected."
+      reason: "₹450 ÷ 9 minutes = ₹50 per minute, so the correct option is ₹50, which is option 1. "
     },
     {
       question_id: "SCM_C4_MED_003_4",
@@ -8698,7 +8698,7 @@ const AICaseStudies = [
         "₹15.00 lakh"
       ],
       answer: 1,
-      reason: "₹4.20 + ₹3.10 + ₹2.00 + ₹1.60 + ₹1.40 + ₹1.30 + ₹0.90 = ₹14.50 lakh. Therefore the correct option is ₹14.50 lakh, option 1. The answer index should be corrected."
+      reason: "₹4.20 + ₹3.10 + ₹2.00 + ₹1.60 + ₹1.40 + ₹1.30 + ₹0.90 = ₹14.50 lakh. Therefore the correct option is ₹14.50 lakh, option 1. "
     },
     {
       question_id: "SCM_C4_HARD_006_3",
@@ -9723,7 +9723,7 @@ const AICaseStudies = [
         "₹2,000"
       ],
       answer: 0,
-      reason: "Gross module saving = ₹8,000 − ₹6,400 = ₹1,600. Less additional testing cost of ₹300 gives net saving of ₹1,300."
+      reason: "Gross module saving = ₹8,000 − ₹6,400 = ₹1,600. Less additional testing cost of ₹300 gives net saving of ₹1,300. Therefore option 0 is correct."
     },
           {
         question_id: "SCM_C4_HARD_011_5",
@@ -31714,7 +31714,7 @@ const AICaseStudies = [
         "60.25%"
       ],
       answer: 2,
-      reason: "(140 + 90) ÷ 390 × 100 = 230 ÷ 390 × 100 = 58.97%. Therefore option 3 is correct."
+      reason: "(140 + 90) ÷ 390 × 100 = 230 ÷ 390 × 100 = 58.97%. Therefore 58.97% is the correct answer."
     },
     {
       question_id: "SPM_C7_MEDIUM_051_4",
@@ -31726,7 +31726,7 @@ const AICaseStudies = [
         "78.46%"
       ],
       answer: 2,
-      reason: "(140 + 90 + 70) ÷ 390 × 100 = 300 ÷ 390 × 100 = 76.92%. Therefore option 3 is correct."
+      reason: "(140 + 90 + 70) ÷ 390 × 100 = 300 ÷ 390 × 100 = 76.92%. Therefore 76.92% is the correct answer."
     },
     {
       question_id: "SPM_C7_MEDIUM_051_5",
@@ -31807,7 +31807,7 @@ const AICaseStudies = [
         "₹110 lakh"
       ],
       answer: 2,
-      reason: "45 + 30 + 15 + 8 + 5 + 2 = ₹105 lakh. Therefore option 3 is correct."
+      reason: "45 + 30 + 15 + 8 + 5 + 2 = ₹105 lakh. Therefore ₹105 lakh is the correct answer."
     },
     {
       question_id: "SPM_C7_MEDIUM_052_2",
@@ -32299,7 +32299,7 @@ const AICaseStudies = [
         "85%"
       ],
       answer: 3,
-      reason: "160 + 110 + 70 = 340. 340 ÷ 400 × 100 = 85%. Therefore option 4 is correct."
+      reason: "160 + 110 + 70 = 340. 340 ÷ 400 × 100 = 85%. Therefore 85% is the correct answer."
     },
     {
       question_id: "SPM_C7_HARD_056_4",
@@ -32439,7 +32439,7 @@ const AICaseStudies = [
         "₹18"
       ],
       answer: 1,
-      reason: "Gross margin = ₹100 − ₹68 = ₹32. Direct product costs = ₹4 + ₹6 + ₹8 = ₹18. DPP = ₹14. Therefore option 2 is correct."
+      reason: "Gross margin = ₹100 − ₹68 = ₹32. Direct product costs = ₹4 + ₹6 + ₹8 = ₹18. DPP = ₹14. Therefore DPP = ₹14 is the correct answer."
     },
     {
       question_id: "SPM_C7_HARD_057_4",
@@ -32685,7 +32685,7 @@ const AICaseStudies = [
         "46.67%"
       ],
       answer: 1,
-      reason: "New MCT = 30 − 5 = 25 hours. MCE = 10 ÷ 25 × 100 = 40%. Therefore option 2 is correct."
+      reason: "New MCT = 30 − 5 = 25 hours. MCE = 10 ÷ 25 × 100 = 40%. Therefore MCE = 40% is the correct answer."
     },
     {
       question_id: "SPM_C7_HARD_059_5",
@@ -32790,7 +32790,7 @@ const AICaseStudies = [
         "70.00%"
       ],
       answer: 2,
-      reason: "55 + 42 + 32 = ₹129 lakh. 129 ÷ 190 × 100 = 67.89%. Therefore option 3 is correct."
+      reason: "55 + 42 + 32 = ₹129 lakh. 129 ÷ 190 × 100 = 67.89%. Therefore 67.89% is the correct answer."
     },
     {
       question_id: "SPM_C7_HARD_060_3",
@@ -44617,7 +44617,7 @@ const AICaseStudies = [
         question: "What is Beta's contribution per machine hour?",
         options: ["₹120", "₹150", "₹180", "₹200"],
         answer: 1,
-        reason: "Beta contribution = ₹2,100 − ₹1,350 = ₹750; per hour = ₹750 ÷ 5 = ₹150. The correct value is ₹150, so answer index should be 1."
+        reason: "Beta contribution = ₹2,100 − ₹1,350 = ₹750; per hour = ₹750 ÷ 5 = ₹150. The correct value is ₹150."
       },
       {
         question_id: "spm_ch12_046_3",
