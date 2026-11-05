@@ -1063,10 +1063,10 @@
     </div>
 
     <div class="button">
-      <a href="./semag/semag.html" target="_blank" rel="noopener noreferrer">GAMES</a>
-      <a href="./bin/exam/examcover.html" target="_blank" rel="noopener noreferrer">EXAM</a>
-      <a href="./bin/notes/notes.html" target="_blank" rel="noopener noreferrer">NOTES</a>
-      <a href="./bin/Resources/resources.html" target="_blank" rel="noopener noreferrer">RESOURCES</a>
+      <a href="./semag/semag.html" target="_blank" rel="noopener noreferrer" onclick="openAppHub(event, './semag/semag.html', '🎮 Calcium <span>Games &amp; Stressbuster</span>')">GAMES</a>
+      <a href="./bin/exam/examcover.html" target="_blank" rel="noopener noreferrer" onclick="openAppHub(event, './bin/exam/examcover.html', '🎯 Calcium <span>Mock Exam Portal</span>')">EXAM</a>
+      <a href="./bin/notes/notes.html" target="_blank" rel="noopener noreferrer" onclick="openAppHub(event, './bin/notes/notes.html', '📖 Calcium <span>Revision Notes Lab</span>')">NOTES</a>
+      <a href="./bin/Resources/resources.html" target="_blank" rel="noopener noreferrer" onclick="openAppHub(event, './bin/Resources/resources.html', '📂 Calcium <span>CA Resources Vault</span>')">RESOURCES</a>
     </div>
 
     <div class="motivation-box">
@@ -1305,6 +1305,38 @@
     </div>
   </div>
 
+  <!-- UNIVERSAL APP & STUDY HUB OVERLAY (GAMES, EXAM, NOTES, RESOURCES) -->
+  <div id="appHubOverlay">
+    <div class="rm-header">
+      <div class="rm-brand" id="appHubBrand">🎯 Calcium <span>Study Portal</span></div>
+      <div class="rm-header-btns" style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+        <button class="rm-exit-btn"
+          style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border-color: rgba(16, 185, 129, 0.45);"
+          onclick="toggleBrowserFullscreen()">
+          ⛶ Full Screen
+        </button>
+        <button class="rm-exit-btn" id="appHubNewTabBtn"
+          style="background: rgba(59, 130, 246, 0.15); color: #7dd3fc; border-color: rgba(59, 130, 246, 0.4);"
+          onclick="openCurrentAppInNewTab()" title="Open this page in a separate tab">
+          ↗ Open in New Tab
+        </button>
+        <button class="rm-exit-btn"
+          style="background: rgba(124, 58, 237, 0.2); color: #ddd6fe; border-color: rgba(167, 139, 250, 0.45);"
+          onclick="openSquadModal(true)">
+          📹 Study Meet (<span id="appHubHeaderSquadCount">1</span>)
+        </button>
+        <button class="rm-exit-btn rm-primary-exit" onclick="closeAppHub()">
+          ✕ Close Portal
+        </button>
+      </div>
+    </div>
+    <div class="rm-body rm-iframe-wrapper" style="padding: 0; overflow: auto; -webkit-overflow-scrolling: touch; display: block; width: 100%; height: calc(100% - 56px); flex: 1 1 auto;">
+      <iframe id="appHubIframe" src="about:blank" scrolling="yes"
+        allow="fullscreen; autoplay; microphone; camera; display-capture" allowfullscreen
+        style="width: 100%; height: 100%; min-height: 100%; border: none; display: block;"></iframe>
+    </div>
+  </div>
+
   <!-- STUDY SQUAD & SOCIAL WRAP OVERLAY (OFFLOADED TO sturm.html) -->
   <div id="sturmOverlay" style="
         position: fixed;
@@ -1429,6 +1461,10 @@
     const readOverlay = document.getElementById("readModeOverlay");
     const planOverlay = document.getElementById("planningModeOverlay");
     const friendsOverlay = document.getElementById("friendsModeOverlay");
+    const appHubOverlay = document.getElementById("appHubOverlay");
+    const appHubIframe = document.getElementById("appHubIframe");
+    const appHubBrand = document.getElementById("appHubBrand");
+    let currentAppHubUrl = "";
 
     function ensureGlobalUniqueUserId() {
       let uid = localStorage.getItem("calcium_unique_user_id") || "";
@@ -1524,6 +1560,43 @@
         document.body.style.overflow = "";
       }, 350);
     }
+
+    /* =========================================
+       UNIVERSAL APP HUB (GAMES, EXAMS, NOTES, RESOURCES)
+       Ensures iPad, Tablets & Mobile calls stay alive
+    ========================================= */
+    window.openAppHub = function (event, url, titleHtml) {
+      if (event && event.preventDefault) event.preventDefault();
+      currentAppHubUrl = url;
+      if (appHubBrand && titleHtml) appHubBrand.innerHTML = titleHtml;
+      if (appHubIframe) {
+        if (!appHubIframe.src || !appHubIframe.src.endsWith(url.replace("./", ""))) {
+          appHubIframe.src = url;
+        }
+      }
+      if (typeof window.hideSturmOverlay === "function") window.hideSturmOverlay();
+      if (appHubOverlay) {
+        appHubOverlay.classList.add("rm-active");
+        setTimeout(() => appHubOverlay.classList.add("rm-visible"), 10);
+        document.body.style.overflow = "hidden";
+      }
+    };
+
+    window.closeAppHub = function () {
+      if (!appHubOverlay) return;
+      window.exitFullscreenIfNeeded && window.exitFullscreenIfNeeded();
+      appHubOverlay.classList.remove("rm-visible");
+      setTimeout(() => {
+        appHubOverlay.classList.remove("rm-active");
+        document.body.style.overflow = "";
+      }, 350);
+    };
+
+    window.openCurrentAppInNewTab = function () {
+      if (currentAppHubUrl) {
+        window.open(currentAppHubUrl, "_blank", "noopener,noreferrer");
+      }
+    };
 
     // --- CROSSFADE TRANSITIONS ---
     window.switchToReadMode = function () {
@@ -1818,6 +1891,18 @@
       }
     });
 
+    // Global touch/tap audio unblocker for iPad, tablets & mobile devices
+    function unblockMobileAudio() {
+      try {
+        const stIframe = document.getElementById("sturmIframe");
+        if (stIframe && stIframe.contentWindow && typeof stIframe.contentWindow.unblockAllAudioForMobile === "function") {
+          stIframe.contentWindow.unblockAllAudioForMobile();
+        }
+      } catch (e) { }
+    }
+    document.addEventListener("touchstart", unblockMobileAudio, { passive: true });
+    document.addEventListener("click", unblockMobileAudio, { passive: true });
+
     /* ==========================================================
        TAB TITLE CALL ALERT (NON-INTRUSIVE BROWSER TAB WARNING)
        ========================================================== */
@@ -2027,7 +2112,7 @@
     };
 
     window.syncSquadCountBadges = function (count) {
-      ["topSquadCount", "rmHeaderSquadCount", "planHeaderSquadCount"].forEach(id => {
+      ["topSquadCount", "rmHeaderSquadCount", "planHeaderSquadCount", "appHubHeaderSquadCount"].forEach(id => {
         const el = document.getElementById(id);
         if (el) el.textContent = count;
       });

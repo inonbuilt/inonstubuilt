@@ -627,7 +627,7 @@ footer {
 /* ═══════════════════════════════════════
    OVERLAYS (Read, Planning & Friends Mode)
 ═══════════════════════════════════════ */
-#readModeOverlay, #planningModeOverlay, #friendsModeOverlay {
+#readModeOverlay, #planningModeOverlay, #friendsModeOverlay, #appHubOverlay {
     position: fixed;
     inset: 0;
     z-index: 9999;
@@ -680,8 +680,8 @@ footer {
     transition: all 0.3s ease;
     box-shadow: 0 4px 20px rgba(16, 185, 129, 0.35);
 }
-#readModeOverlay.rm-active, #planningModeOverlay.rm-active, #friendsModeOverlay.rm-active { display: flex; }
-#readModeOverlay.rm-visible, #planningModeOverlay.rm-visible, #friendsModeOverlay.rm-visible { opacity: 1; }
+#readModeOverlay.rm-active, #planningModeOverlay.rm-active, #friendsModeOverlay.rm-active, #appHubOverlay.rm-active { display: flex; }
+#readModeOverlay.rm-visible, #planningModeOverlay.rm-visible, #friendsModeOverlay.rm-visible, #appHubOverlay.rm-visible { opacity: 1; }
 
 /* ── Header ── */
 .rm-header {
@@ -847,7 +847,7 @@ footer {
 ::-webkit-scrollbar-thumb { background: rgba(59,130,246,0.3); border-radius: 3px; }
 
 @media (max-width: 900px) {
-    #readModeOverlay, #planningModeOverlay, #friendsModeOverlay {
+    #readModeOverlay, #planningModeOverlay, #friendsModeOverlay, #appHubOverlay {
         overflow: hidden;
 
 
@@ -1605,6 +1605,16 @@ footer {
     align-items: center;
     gap: 12px;
     animation: slideUpFloat 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (max-width: 640px) {
+    .floating-call-widget {
+        bottom: 12px;
+        right: 10px;
+        left: 10px;
+        padding: 6px 12px;
+        justify-content: space-between;
+    }
 }
 
 @keyframes slideUpFloat {
